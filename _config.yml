@@ -6,16 +6,18 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: Your awesome title
-email: your-email@domain.com
+title: Storage Performance Development Kit
+#email: your-email@domain.com
 description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  The Storage Performance Development Kit (SPDK) provides a set of tools and libraries
+  for writing high performance, scalable, user-mode storage applications.
+  It achieves high performance by moving all of the necessary drivers into userspace
+  and operating in a polled mode instead of relying on interrupts,
+  which avoids kernel context switches and eliminates interrupt handling overhead.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://yourdomain.com" # the base hostname & protocol for your site
-twitter_username: jekyllrb
-github_username:  jekyll
+url: "https://spdk.github.io" # the base hostname & protocol for your site
+#twitter_username: jekyllrb
+github_username:  spdk
 
 # Build settings
 markdown: kramdown

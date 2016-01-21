@@ -1,15 +1,14 @@
 ---
 layout: page
-title: About
+title: About SPDK
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
+Storage Performance Development Kit
+===================================
 
-You can find the source code for the Jekyll new theme at:
-{% include icon-github.html username="jglovier" %} /
-[jekyll-new](https://github.com/jglovier/jekyll-new)
-
-You can find the source code for Jekyll at
-{% include icon-github.html username="jekyll" %} /
-[jekyll](https://github.com/jekyll/jekyll)
+The Storage Performance Development Kit (SPDK) provides a set of tools and libraries
+for writing high performance, scalable, user-mode storage applications.
+It achieves high performance by moving all of the necessary drivers
+into userspace and operating in a polled mode instead of relying on interrupts,
+which avoids kernel context switches and eliminates interrupt handling overhead.
