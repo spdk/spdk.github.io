@@ -1,21 +1,14 @@
 ---
 layout: post
-title:  "Our Intro of SPDK to the Open Source Community"
+title:  "Introduction to the Storage Performance Development Kit"
 date:   2015-09-21 09:33:19 -0700
 categories: update
 ---
 
-The Storage Performance Development Kit (formerly known as DPDK for Storage or "Waikiki Beach")
-provides a set of tools and libraries for writing high performance, scalable storage applications.
-It achieves high performance by moving all of the necessary drivers into userspace
-and operating in a polled mode instead of relying on interrupts.
-It is primarily designed to be leveraged by OEMs to optimize their storage solutions.
-Part of Intel's storage industry enabling plan is to move from a traditional release model
-to an open source release model.
+The Storage Performance Development Kit (SPDK) provides a set of tools and libraries for writing high performance, scalable storage applications. It achieves high performance by moving all of the necessary drivers into userspace and operating in a polled mode instead of relying on interrupts. It is primarily designed to be leveraged by OEMs and cloud service providers to optimize their storage solutions. Generally, guidelines from the related networking project [DPDK](http://www.dpdk.org) should be followed. Specifically, their [guide for writing efficient code](http://dpdk.org/doc/guides/prog_guide/writing_efficient_code.html) almost all applies to SPDK.
 
-The first component of SPDK released to the open source community is the User-Mode NVMe device driver.
-This specific driver was chosen to help ease architectural transitions to NVMe,
-which helps Intel’s blossoming storage media business.
-The NVMe driver is simply the first component to be generally released;
-the open source SPDK project will continue adding beneficial,
-broadly applicable components to the development kit.
+The first component to be released in SPDK is an NVMe device driver. Others can be expected in the future.
+
+We hope the community will collaborate with us as we build an effective toolkit for high performance storage applications. Pull requests are accepted!
+
+- The SPDK Team
