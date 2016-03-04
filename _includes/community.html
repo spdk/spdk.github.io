@@ -1,0 +1,32 @@
+<section id="community">
+	<div class="community">
+		<div class="container">
+
+			<div class="row">
+				<div class="col-lg-6">
+					<h2>Join Our Community:</h2>
+				</div>
+				<div class="col-lg-6">
+					<ul class="list-inline community-box-buttons">
+						{% for box in site.boxes %}
+						<li>
+							<a href="{{ box.url }}" class="btn btn-default btn-lg">
+								{% if box.ico == null %}
+								<i class="fa fa-{{ box.title }} fa-fw"></i>
+								{% else %}
+								<img class="fa fa-fw" src="{{ box.ico }}"></img>
+								{% endif %}
+								<span class="box-name">{{ box.title }}</span>
+						  </a>
+						</li>
+						{% endfor %}
+					</ul>
+				</div>
+			</div>
+
+		</div>
+		<!-- /.container -->
+
+	</div>
+</section>
+<!-- /.banner -->
