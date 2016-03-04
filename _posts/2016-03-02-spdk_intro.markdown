@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title:  "Introduction to the Storage Performance Development Kit"
 img: p3700-aic.jpg
 categories: news
@@ -10,5 +10,3 @@ The Storage Performance Development Kit (SPDK) provides a set of tools and libra
 The first component to be released in SPDK is an NVMe device driver. Others can be expected in the future.
 
 We hope the community will collaborate with us as we build an effective toolkit for high performance storage applications. Pull requests are accepted!
-
-- The SPDK Team
