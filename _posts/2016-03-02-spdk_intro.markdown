@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Introduction to the Storage Performance Development Kit"
-img: p3700-aic.jpg
+img: p3600-aic.png
 author: Ben Walker
 categories: news
 ---
