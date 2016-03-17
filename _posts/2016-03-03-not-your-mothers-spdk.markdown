@@ -4,7 +4,7 @@ title: "Not Your Mother's SPDK"
 date: 2016-03-03 13:00:00 -0700
 category: update
 author: Jonathan Stern
-img: JBSTMP
+img: SPDK_text.png
 ---
 
 Introduction
