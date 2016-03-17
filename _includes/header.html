@@ -11,7 +11,7 @@
 							{% for box in site.boxes %}
 							<li>
 								<a href="{{ box.url }}" class="btn btn-default btn-lg">
-								<img class="box-ico" src="/{{ box.ico }}"></img>
+								<img class="box-ico" src="{{ site.baseurl }}/{{ box.ico }}"></img>
 								<span class="box-name">{{ box.title }}</span>
 							       </a>
 							</li>
