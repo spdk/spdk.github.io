@@ -10,6 +10,11 @@ title:  "SPDK In The News"
 ### [AliCloud: High-density Multi-tenant Bare-metal Cloud](https://dl.acm.org/doi/pdf/10.1145/3373376.3378507)
 > In this paper, AliCloud proposes the design of a new high-density, multi-tenant, bare-metal Cloud called BM-Hive. BM-Hive features a hardware-software hybrid virtio I/O system that enables the guest to directly access the cloud network and storage services. In BM-Hive, all the I/O requests are handled in the user space with vhost-user protocol interfacing to Cloud infrastructure: the customized DPDK vSwitch and the SPDK Cloud storage.
 
+## Circuit Blvd - Kubernetes and Docker setup for SPDK
+
+### [Using Docker and Kubernetes to containerize and orchestrate SPDK applications](https://www.circuitblvd.com/post/kubernetes-and-docker-setup-for-spdk)
+> In this technote, Circuit Blvd presents an example of how to use Docker and Kubernetes to containerize and orchestrate an SPDK Vhost application that serves virtio block devices to application containers.
+
 ## UCloud - End to End IO Path Optimization with SPDK
 
 ### [Practice sharing of SPDK integration to achieve 1.2M IOPS from cloud disk](https://mp.weixin.qq.com/s?__biz=MzUwOTA1NDg4NQ==&mid=2247485707&idx=1&sn=c6f8e7ebe48a13e7783abc187c588002&chksm=f91953c1ce6edad7c61b267acb0abc1292486ae70cf4883e9f811320f08a596874e12e0f7d72&mpshare=1&scene=1&srcid=0523NZ3tMRR6jvAOYngdBkXB&pass_ticket=wtEIGZYEis9CDCq2bHqr9cZpaldcKOrajkGA0dojARAuGlY%2FloOQcZQ%2FsK0w0KRa#rd)
