@@ -29,7 +29,7 @@ int spdk_nvme_ctrlr_cmd_get_feature(struct spdk_nvme_ctrlr *ctrlr,
 				    spdk_nvme_cmd_cb cb_fn, void *cb_arg);
 ```
 
-Full documentation is available via [Doxygen](https://spdk.github.io/spdk/doc/nvme/nvme_8h.html "NVMe API Documentation"). Some vendor specific log pages and features are supported as well for Intel devices. We'd be happy to accept patches to add similar support for other vendors' devices, if anyone out there is willing to pick up that work.
+Full documentation is available via [Doxygen](http://www.spdk.io/spdk/doc/nvme.html "NVMe API Documentation"). Some vendor specific log pages and features are supported as well for Intel devices. We'd be happy to accept patches to add similar support for other vendors' devices, if anyone out there is willing to pick up that work.
 
 We've added some additional features around reads and writes as well. First, we added support for `Force Unit Access` and `Limited Retry` by adding an `io_flags` parameter to the read and write commands. We also added a write zeroes interface (submitted by a third party - thank you!), for devices that support it. Finally, we added a readv and a writev interface so that I/O can be performed using scatter gather lists. For these interfaces, you simply provide two callbacks to the read or write operation. The first callback resets the scatter gather list to the beginning. The second callback returns the next element in the list each time it is called. We use these callbacks internally to build a PRP list or an SGL as needed for the device.
 
