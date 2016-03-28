@@ -69,7 +69,7 @@ int spdk_nvme_ns_cmd_reservation_report(struct spdk_nvme_ns *ns, void *payload,
 					uint32_t len, spdk_nvme_cmd_cb cb_fn, void *cb_arg);
 ```
 
-Again, check out our [API documentation](https://spdk.github.io/spdk/doc/nvme/nvme_8h.html "NVMe API Documentation") for full documentation on all of these.
+Again, check out our [API documentation](http://www.spdk.io/spdk/doc/nvme.html "NVMe API Documentation") for full documentation on all of these.
 
 Another big change was made to how the driver is attached to devices at start up. Instead of a single `nvme_attach` function, we now have:
 
