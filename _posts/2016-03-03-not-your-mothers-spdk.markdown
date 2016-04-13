@@ -1,22 +1,22 @@
 ---
 layout: post
-title: "Not Your Mother's SPDK"
-date: 2016-03-03 13:00:00 -0700
+title: "Not Your Mother's Storage"
+date: 2016-04-13 13:00:00 -0700
 category: update
 author: Jonathan Stern
-img: SPDK_text.png
+img: SPDK_text_2.png
 ---
 
-Introduction
+Why SPDK? Why now?
 ------------
 
 Solid-state storage media is in the process of taking over the data center. Current-generation flash storage enjoys significant advantages in performance, power consumption, and rack density over rotational media. These advantages will continue to grow as next-generation media enter the marketplace.
 
 Customers integrating solid-state media, such as the [Intel® Data Center SSDs](http://www.intel.com/content/www/us/en/solid-state-drives/data-center-family.html) like the P3700 Series, may also face a major challenge: because both the throughput and latency performance are so much better than that of a spinning disk, their storage software now consumes a larger percentage of the total transaction time. In other words, the performance and efficiency of the storage software stack is increasingly critical to the overall storage system. With upcoming [Intel® Optane® SSDs](http://www.intel.com/content/www/us/en/architecture-and-technology/non-volatile-memory.html), hardware performance risks outstripping the software architectures that use it. In coming years the storage media landscape will continue evolving at an incredible pace.
 
-To help storage OEMs and ISVs address this challenge, Intel has created a set of drivers and components, calling the effort the Storage Performance Development Kit (SPDK). The goal of SPDK is to highlight the outstanding efficiency and performance enabled by using Intel’s processing and storage technologies together. By running software designed from the silicon up, SPDK has demonstrated that millions of I/Os per second are easily attainable using a few processor cores and a few NVMe drives -- no additional offload hardware needed. Intel has open sourced the user mode NVMe driver and Intel® I/O Acceleration Technology (I/OAT) DMA engine (codenamed Crystal Beach DMA) to the community under permissive BSD license. The code is available directly through [the SPDK github page](http://github.com/spdk/spdk), with other elements of the development kit slated to be open sourced throughout 2016. A few additional components used to develop and validate SPDK will remain under Intel license. 
+To help storage OEMs and ISVs address this challenge, Intel has created a growing set of drivers and components, calling the effort the Storage Performance Development Kit (SPDK). The goal of SPDK is to work in an open-source, community-oriented framework to create software components that maximize the outstanding efficiency and performance of Intel’s processing and storage technologies. SPDK has demonstrated that millions of I/Os per second are easily attainable using a few processor cores and a few NVMe drives -- no additional offload hardware needed. Intel has open sourced the user mode NVMe driver and Intel® I/O Acceleration Technology (I/OAT) DMA engine (codenamed Crystal Beach DMA) to the community under permissive BSD license. The code is available directly through [the SPDK github page](http://github.com/spdk/spdk), with other elements of the development kit slated to be open sourced throughout 2016. A few additional components used to initially develop and validate SPDK will remain under Intel license. 
 
-Software Architecture Overview
+What is SPDK? 
 -------------------------------
 
 The extremely high performance is achieved using two key techniques: SPDK runs everything in user space and in polled-mode. Let’s take a closer look at these two software engineering terms.
@@ -29,7 +29,7 @@ Second, we need to understand how Polled Mode Drivers (PMDs) differ from regular
 
 More technically, PMDs save the expense of invoking the kernel interrupt handler by constantly polling for I/O queue completions. This saves a context switch (swapping out the application stack, swapping in the interrupt handler, then swapping back), which has the side effect of preventing displacement of application data from the limited CPU cache space by kernel interrupt handler data (aka cache pollution). It also allows users to determine how much CPU time to allocate to each task in a pipeline instead of allowing the kernel scheduler to decide, giving maximum control to the user instead of the OS. 
 
-The drawback of PMDs is that polling prevents the CPU from going idle during periods of low I/O. In practice, there is very little penalty for using PMDs in dedicated storage systems, as the efficiency gains make the "break-even" point very low for all but the most intermittent workloads. 
+The drawback of PMDs is that polling prevents the CPU from going idle during periods of low I/O. In practice, there is very little penalty for using PMDs in dedicated storage systems, as the efficiency gains make the "break-even" point very low for all but the most intermittent workloads.
 
 SPDK Component Overview
 -----------------------
