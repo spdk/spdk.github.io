@@ -52,4 +52,4 @@ To contact our team for specific questions about SPDK, please fill out a [contac
 
 `*Other names and brands may be claimed as the property of others.`
 
-© 2015 Intel Corporation.
+© 2016 Intel Corporation.
