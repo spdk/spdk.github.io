@@ -1,0 +1,89 @@
+---
+layout: post
+title: "NVMe API Changes"
+img: p3600-u2-iso.png
+author: Ben Walker
+category: feature
+---
+
+Over the last month, the API of the NVMe driver in SPDK has changed significantly. First, on behalf of the SPDK team, I'm sorry for breaking any existing code! SPDK is still in its infancy, so dramatic API changes will be a fact of life for the next few months. By the end of the year, we'd like to have a plan in place to manage future API changes in a more formal way. Second, I'd like to take a few moments to explain what changes were made and why we made them. I'll stick to a mostly high level overview of the API changes for now, but we hope to produce some additional blog posts that detail each one in the future.
+
+The most noticeable API change is that we renamed all of our public functions and structures to include an `spdk_` prefix. This is simply to allow our driver to play nicely in other software packages. As soon as we realized this needed to happen, we decided to get this over with now, before too much code was built on the old interfaces.
+
+We've also added a number of new interfaces. For instance, we now have full support for log pages and features, including the ability to query for support. The new APIs are:
+
+``` c
+bool spdk_nvme_ctrlr_is_log_page_supported(struct spdk_nvme_ctrlr *ctrlr, uint8_t log_page);
+int spdk_nvme_ctrlr_cmd_get_log_page(struct spdk_nvme_ctrlr *ctrlr,
+  				     uint8_t log_page, uint32_t nsid,
+  				     void *payload, uint32_t payload_size,
+  				     spdk_nvme_cmd_cb cb_fn, void *cb_arg);
+bool spdk_nvme_ctrlr_is_feature_supported(struct spdk_nvme_ctrlr *ctrlr, uint8_t feature_code);
+int spdk_nvme_ctrlr_cmd_set_feature(struct spdk_nvme_ctrlr *ctrlr,
+				    uint8_t feature, uint32_t cdw11, uint32_t cdw12,
+				    void *payload, uint32_t payload_size,
+				    spdk_nvme_cmd_cb cb_fn, void *cb_arg);
+int spdk_nvme_ctrlr_cmd_get_feature(struct spdk_nvme_ctrlr *ctrlr,
+				    uint8_t feature, uint32_t cdw11,
+				    void *payload, uint32_t payload_size,
+				    spdk_nvme_cmd_cb cb_fn, void *cb_arg);
+```
+
+Full documentation is available via [Doxygen](http://www.spdk.io/spdk/doc/nvme.html "NVMe API Documentation"). Some vendor specific log pages and features are supported as well for Intel devices. We'd be happy to accept patches to add similar support for other vendors' devices, if anyone out there is willing to pick up that work.
+
+We've added some additional features around reads and writes as well. First, we added support for `Force Unit Access` and `Limited Retry` by adding an `io_flags` parameter to the read and write commands. We also added a write zeroes interface (submitted by a third party - thank you!), for devices that support it. Finally, we added a readv and a writev interface so that I/O can be performed using scatter gather lists. For these interfaces, you simply provide two callbacks to the read or write operation. The first callback resets the scatter gather list to the beginning. The second callback returns the next element in the list each time it is called. We use these callbacks internally to build a PRP list or an SGL as needed for the device.
+
+Namespace management and reservations are a big focus in the NVMe 1.2 specification, so we've begun to add support for devices that implement these features. Support for all four of the namespace management commands have been added:
+
+``` c
+int spdk_nvme_ctrlr_attach_ns(struct spdk_nvme_ctrlr *ctrlr, uint32_t nsid,
+			      struct spdk_nvme_ctrlr_list *payload);
+int spdk_nvme_ctrlr_detach_ns(struct spdk_nvme_ctrlr *ctrlr, uint32_t nsid,
+			      struct spdk_nvme_ctrlr_list *payload);
+int spdk_nvme_ctrlr_create_ns(struct spdk_nvme_ctrlr *ctrlr, struct spdk_nvme_ns_data *payload);
+int spdk_nvme_ctrlr_delete_ns(struct spdk_nvme_ctrlr *ctrlr, uint32_t nsid);
+```
+
+There is also a new example tool called `nvme_manage` that allows you to use all of these new commands from an interactive prompt. As part of this same effort, we also added support for reservations. There are four operations:
+
+``` c
+int spdk_nvme_ns_cmd_reservation_register(struct spdk_nvme_ns *ns,
+		struct spdk_nvme_reservation_register_data *payload,
+		bool ignore_key,
+		enum spdk_nvme_reservation_register_action action,
+		enum spdk_nvme_reservation_register_cptpl cptpl,
+		spdk_nvme_cmd_cb cb_fn, void *cb_arg);
+int spdk_nvme_ns_cmd_reservation_release(struct spdk_nvme_ns *ns,
+		struct spdk_nvme_reservation_key_data *payload,
+		bool ignore_key,
+		enum spdk_nvme_reservation_release_action action,
+		enum spdk_nvme_reservation_type type,
+		spdk_nvme_cmd_cb cb_fn, void *cb_arg);
+int spdk_nvme_ns_cmd_reservation_acquire(struct spdk_nvme_ns *ns,
+		struct spdk_nvme_reservation_acquire_data *payload,
+		bool ignore_key,
+		enum spdk_nvme_reservation_acquire_action action,
+		enum spdk_nvme_reservation_type type,
+		spdk_nvme_cmd_cb cb_fn, void *cb_arg);
+int spdk_nvme_ns_cmd_reservation_report(struct spdk_nvme_ns *ns, void *payload,
+					uint32_t len, spdk_nvme_cmd_cb cb_fn, void *cb_arg);
+```
+
+Again, check out our [API documentation](http://www.spdk.io/spdk/doc/nvme.html "NVMe API Documentation") for full documentation on all of these.
+
+Another big change was made to how the driver is attached to devices at start up. Instead of a single `nvme_attach` function, we now have:
+
+``` c
+typedef bool (*spdk_nvme_probe_cb)(void *cb_ctx, struct spdk_pci_device *pci_dev,
+				    struct spdk_nvme_ctrlr_opts *opts);
+typedef void (*spdk_nvme_attach_cb)(void *cb_ctx, struct spdk_pci_device *pci_dev,
+				    struct spdk_nvme_ctrlr *ctrlr,
+				    const struct spdk_nvme_ctrlr_opts *opts);
+int spdk_nvme_probe(void *cb_ctx, spdk_nvme_probe_cb probe_cb, spdk_nvme_attach_cb attach_cb);
+```
+
+The probe callback will be called once for each NVMe device found on the system that isn't currently owned by the SPDK NVMe driver. Return true from that callback to claim the device. Inside the probe callback you also have the opportunity to change some of the default options by modifying the spdk_nvme_ctrlr_opts structure. The attach callback is called after the NVMe driver has been loaded, and it also provides the final version of spdk_nvme_ctrlr_opts that was used. The change to this interface was made for two reasons. First, we'd like to eventually drop our dependency on libpciaccess and rely solely on DPDK. This interface is more amenable to that. Second, we're working on first-class hot plug support. This interface will allow the user to simply poll `spdk_nvme_probe` for new devices. Hot plug support is not currently available, but this is a step in that direction.
+
+The final, and possibly most important, change we made was to move away from our system of implicit queue allocation based on threads to one of explicit queue allocation. You are no longer expected to call `spdk_nvme_register_io_thread` - instead you call `spdk_nvme_ctrlr_alloc_io_qpair` to create a queue pair and you explicitly pass that queue pair to the read and write interfaces. Note that you, as the user, are responsible for enforcing mutual exclusion around queue pairs - you cannot use them from two threads at the same time! This enables a number of things in SPDK, including the ability to specify queue pair weights for the weighted round robin arbitration method at queue creation time, as well as alternative topologies to one queue pair per thread.
+
+That's what we've been up to for the last couple of months. In hindsight, we've accomplished a lot! As always, we very much appreciate pull requests, and we're open to working with anyone in the community that wants to participate.

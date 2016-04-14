@@ -1,23 +1,22 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely need to edit after that.
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'jekyll serve'. If you change this file, please restart the server process.
-
-# Site settings
+url: "https://spdk.github.io"
+baseurl: "http://www.spdk.io"
 title: Storage Performance Development Kit
-#email: your-email@domain.com
-description: > # this means to ignore newlines until "baseurl:"
+email: benjamin.walker@intel.com
+author: Benjamin Walker
+description: >
   The Storage Performance Development Kit (SPDK) provides a set of tools and libraries
   for writing high performance, scalable, user-mode storage applications.
   It achieves high performance by moving all of the necessary drivers into userspace
   and operating in a polled mode instead of relying on interrupts,
   which avoids kernel context switches and eliminates interrupt handling overhead.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://spdk.github.io" # the base hostname & protocol for your site
-#twitter_username: jekyllrb
-github_username:  spdk
-
-# Build settings
+copyright: 'Copyright &copy; Intel Corporation. All Rights Reserved.'
 markdown: kramdown
+permalink: pretty
+
+boxes:
+  - title: 01.org
+    url: https://01.org/spdk
+    ico: img/ico/01.png
+  - title: github
+    url: https://github.com/spdk/spdk
+    ico: img/ico/github.png
