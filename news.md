@@ -5,6 +5,11 @@ title:  "SPDK In The News"
 
 # News items
 
+## Nutanix .Next 2019 Conference in Copenhagen, Denmark
+
+### [BlockStore and SPDK](https://www.youtube.com/watch?v=ahPKYaRRfHc&feature=youtu.be&t=4443)
+> Nutanix launched a new generation of the Acropolis Operating System (AOS) which has a BlockStore that uses SPDK. Stephen Poitras, Principal Solutions Architect at Nutanix, talked about the work his team did to rearchitect the datapath to take advantage of emerging technologies such as NVMe, RDMA and Memory Class Storage devices like Intel® Optane™ SSDs. They purpose-built a BlockStore for the next generation of storage media that completely eliminated the filesystem overhead by using SPDK to access storage devices in user space. Using SPDK improves performance by driving down latency and increasing efficiency.
+
 ## ASPLOS’20, March 16–20, 2020, Lausanne, Switzerland
 
 ### [AliCloud: High-density Multi-tenant Bare-metal Cloud](https://dl.acm.org/doi/pdf/10.1145/3373376.3378507)
