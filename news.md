@@ -5,6 +5,11 @@ title:  "SPDK In The News"
 
 # News items
 
+## VAST Data Universal Storage 3.0 Webinar
+
+### [Adding SPDK Support in Universal Storage 3.2 Release](https://youtu.be/x8-6aFRqbOw?t=1758)
+> VAST Data announced they will be using the SPDK the upcoming 3.2 release, because they observed "30-40% better latency resulting in 50-100% overall improvement in system IOPs when they bypass the kernel with SPDK for metadata read and write operations which allowed them to improve the system responsiveness".
+
 ## Nutanix .Next 2019 Conference in Copenhagen, Denmark
 
 ### [BlockStore and SPDK](https://www.youtube.com/watch?v=ahPKYaRRfHc&feature=youtu.be&t=4443)
