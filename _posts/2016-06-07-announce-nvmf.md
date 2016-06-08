@@ -20,30 +20,4 @@ To follow up with this announcement, the SPDK team has two additional blog posts
 
 The SPDK community is growing and we are excited to release the NVMf controller code today. Of course, community pull requests are welcome and we would love to hear from users. Please contact us via http://spdk.io or https://github.com/spdk/spdk. 
 
-
-[1]: 
-[2]: 
-[3]: 
-[4]: 
-[5]: 
-[6]: 
-[7]: 
-[8]: 
-[9]: 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-*  Other names and brands may be claimed as the property of others.
+\*  Other names and brands may be claimed as the property of others.
