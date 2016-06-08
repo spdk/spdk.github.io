@@ -16,6 +16,7 @@ The SPDK NVMf target is a __reference__ NVMf protocol implementation designed fo
 The SPDK NVMf target was designed from the outset to support multiple RDMA protocols. This was achieved by building on top of the OpenFabrics Enterprise Distribution (OFED) layer, ensuring interoperability with any RDMA NIC (provided the RDMA NIC vendor supplies drivers compatible with the libibverbs layer). This means InfiniBand, iWARP, and RoCE should all be supported by the SPDK NVMf target, and it means that any RDMA transport can be used interchangeably with the same code base. To date, the SPDK team's testing has focused exclusively on RoCEv2 as an RDMA fabric.
 ![Block diagram at release](../img/blog/SPDK_NVMf_Initial.png)
 
+##Next Steps
 To follow up with this announcement, the SPDK team has two additional blog posts planned: one post to discuss our performance measurements and characterization of the SPDK NVMf target and one post to discuss our future plans and roadmap. Expect those within the next few weeks! 
 
 The SPDK community is growing and we are excited to release the NVMf controller code today. Of course, community pull requests are welcome and we would love to hear from users. Please contact us via http://spdk.io or https://github.com/spdk/spdk. 
