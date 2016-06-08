@@ -22,7 +22,7 @@ There are some next steps that the SPDK team intends to take after the initial c
 In addition, the SPDK team is planning on releasing an initiator which uses the SPDK techniques to further reduce software latency from the initiator side. On the other side of the NVMf device controller is an NVMf host. Think about it this way: the NVMf device controller is running on the storage system, handling many incoming requests from NVMf hosts running on compute resources. Using the kernel initiator works very well indeed, but for very demanding applications it may not be ideal. Just as SPDK reduces latency by bypassing the kernel on the target side, it can provide another improvement in latency by bypassing the kernel on the initiator side as well.
 Finally, we’d like to follow up with a blog post detailing the performance measurements we’ve made during the development of the NVMf controller. While we can't disclose details yet, the initial findings are extremely promising. 
 
-The SPDK community is growing and we are excited to release the NVMf controller code today. Of course, community pull requests are welcome and we would love to hear from users. Please contact us via [http://spdk.io] or [https://github.com/spdk/spdk]. 
+The SPDK community is growing and we are excited to release the NVMf controller code today. Of course, community pull requests are welcome and we would love to hear from users. Please contact us via http://spdk.io or https://github.com/spdk/spdk. 
 
 
 [1]: http://www.nvmexpress.org/wp-content/uploads/NVM_Express_oF-1_2_Press_Release.pdf
