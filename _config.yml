@@ -20,3 +20,6 @@ boxes:
   - title: github
     url: https://github.com/spdk/spdk
     ico: img/ico/github.png
+  - title: documentation
+    url: http://spdk.io/spdk/doc/
+    ico: img/ico/docs.png
