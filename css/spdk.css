@@ -15,6 +15,8 @@ h6 {
     font-weight: 900;
 }
 
+
+
 .lead {
     font-size: 18px;
     font-weight: 400;
@@ -182,10 +184,15 @@ p.copyright {
     position: relative;
 }
 
-.page-title > h1 {
+.page-title h1 {
     margin: 0;
     text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
     font-size: 4em;
+}
+
+.page-title a {
+    text-decoration: none;
+    color: inherit;
 }
 
 .post {
