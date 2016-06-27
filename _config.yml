@@ -14,12 +14,12 @@ markdown: kramdown
 permalink: pretty
 
 boxes:
-  - title: 01.org
-    url: https://01.org/spdk
-    ico: img/ico/01.png
   - title: github
     url: https://github.com/spdk/spdk
     ico: img/ico/github.png
+  - title: mailing list
+    url: https://lists.01.org/mailman/listinfo/spdk
+    ico: img/ico/125a-email-message-solid.svg
   - title: documentation
     url: http://spdk.io/spdk/doc/
-    ico: img/ico/docs.png
+    ico: img/ico/003-instructions.svg

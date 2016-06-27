@@ -82,6 +82,11 @@ h6 {
     letter-spacing: 2px;
 }
 
+.box-ico {
+    height: 16px;
+    width: 16px;
+}
+
 .content-section {
     padding: 50px 0;
 }
