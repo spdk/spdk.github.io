@@ -1,5 +1,5 @@
-url: "https://spdk.github.io"
-baseurl: "http://www.spdk.io"
+url: "https://www.spdk.io"
+baseurl: ""
 title: Storage Performance Development Kit
 email: benjamin.walker@intel.com
 author: Benjamin Walker
