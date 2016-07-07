@@ -23,3 +23,6 @@ boxes:
   - title: documentation
     url: http://spdk.io/spdk/doc/
     ico: img/ico/003-instructions.svg
+
+gems:
+  - jekyll-feed
