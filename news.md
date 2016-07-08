@@ -5,6 +5,11 @@ title:  "SPDK In The News"
 
 # News items
 
+## Radian Memory Systems® Announces Zoned Flash SSD with SPDK
+
+### [Radian Completes Integration and Testing of Zoned Flash SSD with SPDK](https://www.prnewswire.com/news-releases/radian-completes-integration-and-testing-of-zoned-flash-ssd-with-spdk-301096896.html)
+> Radian ported their host Block Translation Layer (BTL) for zoned Flash from the Linux® Kernel to SPDK. The company has posted a [technical deep dive video](https://www.youtube.com/watch?v=ESgrIu0eT3I) that discusses this effort, which includes a comparative, system level analysis between the Linux® Kernel and SPDK implementations. 
+
 ## VAST Data Universal Storage 3.0 Webinar
 
 ### [Adding SPDK Support in Universal Storage 3.2 Release](https://youtu.be/x8-6aFRqbOw?t=1758)
