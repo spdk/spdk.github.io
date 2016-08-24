@@ -4,7 +4,7 @@ title: "Why SPDK?"
 date: 2016-04-13 13:00:00 -0700
 category: update
 author: Jonathan Stern
-img: SPDK_text_2.png
+img: jbod.png
 ---
 
 Solid-state storage media is in the process of taking over the data center. Current-generation flash storage enjoys significant advantages in performance, power consumption, and rack density over rotational media. These advantages will continue to grow as next-generation media enter the marketplace.
