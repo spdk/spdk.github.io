@@ -21,7 +21,7 @@ boxes:
     url: https://lists.01.org/mailman/listinfo/spdk
     ico: img/ico/125a-email-message-solid.svg
   - title: documentation
-    url: http://spdk.io/spdk/doc/
+    url: http://spdk.io/doc/
     ico: img/ico/003-instructions.svg
 
 gems:
