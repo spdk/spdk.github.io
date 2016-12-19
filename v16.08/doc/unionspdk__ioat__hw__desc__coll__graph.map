@@ -1,0 +1,11 @@
+<map id="spdk_ioat_hw_desc" name="spdk_ioat_hw_desc">
+<area shape="rect" id="node2" href="$structspdk__ioat__pq__ext__hw__desc.html" title="spdk_ioat_pq_ext_hw_desc" alt="" coords="7,5,190,32"/>
+<area shape="rect" id="node3" href="$structspdk__ioat__pq__update__hw__desc.html" title="spdk_ioat_pq_update\l_hw_desc" alt="" coords="26,57,171,98"/>
+<area shape="rect" id="node4" href="$structspdk__ioat__fill__hw__desc.html" title="spdk_ioat_fill_hw_desc" alt="" coords="20,123,177,149"/>
+<area shape="rect" id="node5" href="$structspdk__ioat__generic__hw__desc.html" title="spdk_ioat_generic_hw_desc" alt="" coords="5,173,192,200"/>
+<area shape="rect" id="node6" href="$structspdk__ioat__raw__hw__desc.html" title="spdk_ioat_raw_hw_desc" alt="" coords="16,224,181,251"/>
+<area shape="rect" id="node7" href="$structspdk__ioat__pq__hw__desc.html" title="spdk_ioat_pq_hw_desc" alt="" coords="19,275,178,301"/>
+<area shape="rect" id="node8" href="$structspdk__ioat__xor__hw__desc.html" title="spdk_ioat_xor_hw_desc" alt="" coords="17,325,180,352"/>
+<area shape="rect" id="node9" href="$structspdk__ioat__dma__hw__desc.html" title="spdk_ioat_dma_hw_desc" alt="" coords="14,376,183,403"/>
+<area shape="rect" id="node10" href="$structspdk__ioat__xor__ext__hw__desc.html" title="spdk_ioat_xor_ext_hw_desc" alt="" coords="5,427,192,453"/>
+</map>

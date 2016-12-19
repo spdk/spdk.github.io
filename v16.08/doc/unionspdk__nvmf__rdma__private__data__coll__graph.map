@@ -1,0 +1,6 @@
+<map id="spdk_nvmf_rdma_private_data" name="spdk_nvmf_rdma_private_data">
+<area shape="rect" id="node2" href="$structspdk__nvmf__rdma__request__private__data.html" title="spdk_nvmf_rdma_request\l_private_data" alt="" coords="227,5,399,47"/>
+<area shape="rect" id="node3" href="$structspdk__nvmf__rdma__accept__private__data.html" title="spdk_nvmf_rdma_accept\l_private_data" alt="" coords="229,71,397,112"/>
+<area shape="rect" id="node4" href="$structspdk__nvmf__rdma__reject__private__data.html" title="spdk_nvmf_rdma_reject\l_private_data" alt="" coords="232,136,393,177"/>
+<area shape="rect" id="node5" href="$structspdk__nvme__status.html" title="spdk_nvme_status" alt="" coords="5,143,137,170"/>
+</map>
