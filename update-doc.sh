@@ -6,7 +6,7 @@ cd $(dirname $0)
 
 repo=$(dirname $0)/spdk
 
-git clone http://github.com/spdk/spdk $repo
+git clone --depth 1 http://github.com/spdk/spdk $repo
 (cd $repo/doc; make clean; make)
 git rm -rf doc
 cp -R $repo/doc/output/html doc
