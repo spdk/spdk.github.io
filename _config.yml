@@ -14,15 +14,25 @@ markdown: kramdown
 permalink: pretty
 
 boxes:
-  - title: github
-    url: https://github.com/spdk/spdk
-    ico: img/ico/github.png
-  - title: mailing list
-    url: https://lists.01.org/mailman/listinfo/spdk
-    ico: img/ico/125a-email-message-solid.svg
+  - title: home
+    url: http://www.spdk.io/
+    ico: home
+  - title: download
+    url: https://github.com/spdk/spdk/releases/
+    ico: download-alt
   - title: documentation
     url: http://www.spdk.io/doc/
-    ico: img/ico/003-instructions.svg
+    ico: book
+  - title: development
+    url: https://github.com/spdk/spdk/
+    ico: wrench
+  - title: mailing list
+    url: https://lists.01.org/mailman/listinfo/spdk
+    ico: envelope
+  - title: Blog
+    url: http://www.spdk.io/blog/
+    ico: comment
+
 
 gems:
   - jekyll-feed

@@ -1,5 +1,6 @@
 <section id="blog" class="blog">
-{% for post in site.posts %}
+<h1 class="text-center">News</h1>
+{% for post in site.posts limit:3 %}
   {% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}
     {% if thecycle == 'even' %}
     <div class="blog-section-a">
