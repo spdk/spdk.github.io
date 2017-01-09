@@ -1,4 +1,0 @@
-<map id="spdk_nvme_ctrlr_data" name="spdk_nvme_ctrlr_data">
-<area shape="rect" id="node2" href="$unionspdk__nvme__vs__register.html" title="spdk_nvme_vs_register" alt="" coords="5,5,165,32"/>
-<area shape="rect" id="node3" href="$structspdk__nvme__power__state.html" title="spdk_nvme_power_state" alt="" coords="190,5,357,32"/>
-</map>

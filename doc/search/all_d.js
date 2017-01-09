@@ -35,7 +35,6 @@ var searchData=
   ['nvme_5fspec_2eh',['nvme_spec.h',['../nvme__spec_8h.html',1,'']]],
   ['nvme_20over_20fabrics',['NVMe over Fabrics',['../nvmf.html',1,'']]],
   ['nvmf_2eh',['nvmf.h',['../nvmf_8h.html',1,'']]],
-  ['nvme_20over_20fabrics_20target_20getting_20started_20guide',['NVMe over Fabrics Target Getting Started Guide',['../nvmf_getting_started.html',1,'']]],
   ['nvmf_5fspec_2eh',['nvmf_spec.h',['../nvmf__spec_8h.html',1,'']]],
   ['nvmf_5fspecific',['nvmf_specific',['../structspdk__nvme__ctrlr__data.html#aae2dff307042321b06500328ed5be1b9',1,'spdk_nvme_ctrlr_data']]],
   ['nvscc',['nvscc',['../structspdk__nvme__ctrlr__data.html#a9923796b289062d3bc86509f4297c48a',1,'spdk_nvme_ctrlr_data']]]

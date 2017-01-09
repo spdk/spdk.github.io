@@ -1,4 +1,0 @@
-<map id="spdk_nvmf_discovery_log_page" name="spdk_nvmf_discovery_log_page">
-<area shape="rect" id="node2" href="$structspdk__nvmf__discovery__log__page__entry.html" title="Discovery Log Page entry. " alt="" coords="21,109,170,151"/>
-<area shape="rect" id="node3" href="$unionspdk__nvmf__transport__specific__address__subtype.html" title="Transport&#45;specific address subtype. " alt="" coords="5,5,185,47"/>
-</map>

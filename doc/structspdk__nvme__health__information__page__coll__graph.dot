@@ -1,0 +1,8 @@
+digraph "spdk_nvme_health_information_page"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="spdk_nvme_health_information_page",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node2 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" critical_warning" ,fontname="Helvetica"];
+  Node2 [label="spdk_nvme_critical\l_warning_state",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$unionspdk__nvme__critical__warning__state.html"];
+}

@@ -1,0 +1,21 @@
+digraph "spdk_nvme_registers"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="spdk_nvme_registers",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node2 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" cap" ,fontname="Helvetica"];
+  Node2 [label="spdk_nvme_cap_register",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$unionspdk__nvme__cap__register.html"];
+  Node3 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" vs" ,fontname="Helvetica"];
+  Node3 [label="spdk_nvme_vs_register",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$unionspdk__nvme__vs__register.html"];
+  Node4 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" cmbsz" ,fontname="Helvetica"];
+  Node4 [label="spdk_nvme_cmbsz_register",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$unionspdk__nvme__cmbsz__register.html"];
+  Node5 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" csts" ,fontname="Helvetica"];
+  Node5 [label="spdk_nvme_csts_register",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$unionspdk__nvme__csts__register.html"];
+  Node6 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" cc" ,fontname="Helvetica"];
+  Node6 [label="spdk_nvme_cc_register",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$unionspdk__nvme__cc__register.html"];
+  Node7 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" aqa" ,fontname="Helvetica"];
+  Node7 [label="spdk_nvme_aqa_register",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$unionspdk__nvme__aqa__register.html"];
+  Node8 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" cmbloc" ,fontname="Helvetica"];
+  Node8 [label="spdk_nvme_cmbloc_register",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$unionspdk__nvme__cmbloc__register.html"];
+}

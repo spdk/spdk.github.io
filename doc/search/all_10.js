@@ -9,6 +9,7 @@ var searchData=
   ['rdma_5fqptype',['rdma_qptype',['../structspdk__nvmf__rdma__transport__specific__address__subtype.html#a7332600a60a55d05f8573789ce6a2ccf',1,'spdk_nvmf_rdma_transport_specific_address_subtype']]],
   ['rds',['rds',['../unionspdk__nvme__cmbsz__register.html#aa017da4c8e3418285501ca07822bdbf2',1,'spdk_nvme_cmbsz_register']]],
   ['rdy',['rdy',['../unionspdk__nvme__csts__register.html#a86fc572fdd7a9850c188671e682b6ffa',1,'spdk_nvme_csts_register']]],
+  ['ref',['ref',['../structspdk__scsi__lun.html#ab4f0553c3915e8b7dcc07a6b69d09840',1,'spdk_scsi_lun']]],
   ['reserved3',['reserved3',['../structspdk__nvme__ns__data.html#a2c4901dac069f03def8eba3cde6625e0',1,'spdk_nvme_ns_data']]],
   ['reset',['reset',['../unionspdk__nvme__intel__feat__reset__timed__workload__counters.html#a74b5ac6a6ea150d582cc269f6987757b',1,'spdk_nvme_intel_feat_reset_timed_workload_counters']]],
   ['rp',['rp',['../structspdk__nvme__ns__data.html#a4133aa654a2f1e5af881d5293ba965cf',1,'spdk_nvme_ns_data']]],

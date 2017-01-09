@@ -37,7 +37,6 @@ var searchData=
   ['iscsi_5fbhs_5ftask_5fresp',['iscsi_bhs_task_resp',['../structiscsi__bhs__task__resp.html',1,'']]],
   ['iscsi_5fbhs_5ftext_5freq',['iscsi_bhs_text_req',['../structiscsi__bhs__text__req.html',1,'']]],
   ['iscsi_5fbhs_5ftext_5fresp',['iscsi_bhs_text_resp',['../structiscsi__bhs__text__resp.html',1,'']]],
-  ['iscsi_20target_20getting_20started_20guide',['iSCSI Target Getting Started Guide',['../iscsi_getting_started.html',1,'']]],
   ['iscsi_5fspec_2eh',['iscsi_spec.h',['../iscsi__spec_8h.html',1,'']]],
   ['iscsi_5ftext_5fmax_5fsimple_5fval_5flen',['ISCSI_TEXT_MAX_SIMPLE_VAL_LEN',['../iscsi__spec_8h.html#a986978914c003f3149c8b418ad7cab55',1,'iscsi_spec.h']]],
   ['iscsi_5ftext_5fmax_5fval_5flen',['ISCSI_TEXT_MAX_VAL_LEN',['../iscsi__spec_8h.html#a507069bdb66a86eb825aa8a38c51886b',1,'iscsi_spec.h']]],

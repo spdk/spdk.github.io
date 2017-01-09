@@ -1,0 +1,25 @@
+digraph "spdk_ioat_hw_desc"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="spdk_ioat_hw_desc",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node2 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" pq_ext" ,fontname="Helvetica"];
+  Node2 [label="spdk_ioat_pq_ext_hw_desc",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structspdk__ioat__pq__ext__hw__desc.html"];
+  Node3 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" pq_update" ,fontname="Helvetica"];
+  Node3 [label="spdk_ioat_pq_update\l_hw_desc",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structspdk__ioat__pq__update__hw__desc.html"];
+  Node4 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" fill" ,fontname="Helvetica"];
+  Node4 [label="spdk_ioat_fill_hw_desc",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structspdk__ioat__fill__hw__desc.html"];
+  Node5 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" generic" ,fontname="Helvetica"];
+  Node5 [label="spdk_ioat_generic_hw_desc",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structspdk__ioat__generic__hw__desc.html"];
+  Node6 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" raw" ,fontname="Helvetica"];
+  Node6 [label="spdk_ioat_raw_hw_desc",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structspdk__ioat__raw__hw__desc.html"];
+  Node7 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" pq" ,fontname="Helvetica"];
+  Node7 [label="spdk_ioat_pq_hw_desc",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structspdk__ioat__pq__hw__desc.html"];
+  Node8 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" xor_desc" ,fontname="Helvetica"];
+  Node8 [label="spdk_ioat_xor_hw_desc",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structspdk__ioat__xor__hw__desc.html"];
+  Node9 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" dma" ,fontname="Helvetica"];
+  Node9 [label="spdk_ioat_dma_hw_desc",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structspdk__ioat__dma__hw__desc.html"];
+  Node10 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" xor_ext" ,fontname="Helvetica"];
+  Node10 [label="spdk_ioat_xor_ext_hw_desc",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structspdk__ioat__xor__ext__hw__desc.html"];
+}

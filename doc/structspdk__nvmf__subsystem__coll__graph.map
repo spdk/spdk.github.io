@@ -1,5 +1,0 @@
-<map id="spdk_nvmf_subsystem" name="spdk_nvmf_subsystem">
-<area shape="rect" id="node2" href="$structspdk__pci__addr.html" title="spdk_pci_addr" alt="" coords="5,5,112,32"/>
-<area shape="rect" id="node3" href="$structspdk__bdev.html" title="SPDK block device. " alt="" coords="136,5,221,32"/>
-<area shape="rect" id="node4" href="$structspdk__nvmf__ctrlr__ops.html" title="spdk_nvmf_ctrlr_ops" alt="" coords="246,5,389,32"/>
-</map>

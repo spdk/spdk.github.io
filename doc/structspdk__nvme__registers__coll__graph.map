@@ -1,9 +1,0 @@
-<map id="spdk_nvme_registers" name="spdk_nvme_registers">
-<area shape="rect" id="node2" href="$unionspdk__nvme__cap__register.html" title="spdk_nvme_cap_register" alt="" coords="16,5,183,32"/>
-<area shape="rect" id="node3" href="$unionspdk__nvme__vs__register.html" title="spdk_nvme_vs_register" alt="" coords="19,56,179,83"/>
-<area shape="rect" id="node4" href="$unionspdk__nvme__cmbsz__register.html" title="spdk_nvme_cmbsz_register" alt="" coords="7,107,192,133"/>
-<area shape="rect" id="node5" href="$unionspdk__nvme__csts__register.html" title="spdk_nvme_csts_register" alt="" coords="14,157,185,184"/>
-<area shape="rect" id="node6" href="$unionspdk__nvme__cc__register.html" title="spdk_nvme_cc_register" alt="" coords="19,208,179,235"/>
-<area shape="rect" id="node7" href="$unionspdk__nvme__aqa__register.html" title="spdk_nvme_aqa_register" alt="" coords="16,259,183,285"/>
-<area shape="rect" id="node8" href="$unionspdk__nvme__cmbloc__register.html" title="spdk_nvme_cmbloc_register" alt="" coords="5,309,193,336"/>
-</map>

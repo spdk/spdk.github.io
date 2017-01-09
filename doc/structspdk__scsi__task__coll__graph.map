@@ -1,7 +1,0 @@
-<map id="spdk_scsi_task" name="spdk_scsi_task">
-<area shape="rect" id="node2" href="$structspdk__scsi__lun.html" title="Represents a SCSI LUN. " alt="" coords="5,95,111,121"/>
-<area shape="rect" id="node3" href="$structspdk__scsi__dev.html" title="spdk_scsi_dev" alt="" coords="53,184,162,211"/>
-<area shape="rect" id="node4" href="$structspdk__scsi__port.html" title="spdk_scsi_port" alt="" coords="52,275,163,301"/>
-<area shape="rect" id="node5" href="$structspdk__bdev.html" title="SPDK block device. " alt="" coords="15,5,101,32"/>
-<area shape="rect" id="node6" href="$structspdk__event.html" title="An event is a function that is passed to and called on an lcore. " alt="" coords="187,275,276,301"/>
-</map>

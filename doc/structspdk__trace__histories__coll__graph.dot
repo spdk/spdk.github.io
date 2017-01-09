@@ -1,0 +1,16 @@
+digraph "spdk_trace_histories"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="spdk_trace_histories",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node2 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" tpoint" ,fontname="Helvetica"];
+  Node2 [label="spdk_trace_tpoint",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structspdk__trace__tpoint.html"];
+  Node3 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" object" ,fontname="Helvetica"];
+  Node3 [label="spdk_trace_object",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structspdk__trace__object.html"];
+  Node4 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" owner" ,fontname="Helvetica"];
+  Node4 [label="spdk_trace_owner",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structspdk__trace__owner.html"];
+  Node5 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" per_lcore_history" ,fontname="Helvetica"];
+  Node5 [label="spdk_trace_history",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structspdk__trace__history.html"];
+  Node6 -> Node5 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" entries" ,fontname="Helvetica"];
+  Node6 [label="spdk_trace_entry",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structspdk__trace__entry.html"];
+}
