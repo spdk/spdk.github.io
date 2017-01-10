@@ -24,7 +24,7 @@ boxes:
     url: http://www.spdk.io/doc/
     ico: book
   - title: development
-    url: https://github.com/spdk/spdk/
+    url: http://www.spdk.io/development/
     ico: wrench
   - title: mailing list
     url: https://lists.01.org/mailman/listinfo/spdk
