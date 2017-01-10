@@ -18,7 +18,7 @@ boxes:
     url: http://www.spdk.io/
     ico: home
   - title: download
-    url: https://github.com/spdk/spdk/releases/
+    url: http://www.spdk.io/releases/
     ico: download-alt
   - title: documentation
     url: http://www.spdk.io/doc/
