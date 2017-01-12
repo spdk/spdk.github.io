@@ -13,6 +13,8 @@ var searchData=
   ['spdk_5fapp_5fstart',['spdk_app_start',['../event_8h.html#a2d8e75f24bcab29e8a1d6d0e88ae9da7',1,'event.h']]],
   ['spdk_5fapp_5fstart_5fshutdown',['spdk_app_start_shutdown',['../event_8h.html#a0bbbb23263a8ea9c93c3adf8aa3bce8e',1,'event.h']]],
   ['spdk_5fapp_5fstop',['spdk_app_stop',['../event_8h.html#a40f3af1c0340f5c3eb915bc43e3cee83',1,'event.h']]],
+  ['spdk_5fbdev_5fclaim',['spdk_bdev_claim',['../bdev_8h.html#aa064800dc85939a1b601fd73de524586',1,'bdev.h']]],
+  ['spdk_5fbdev_5funclaim',['spdk_bdev_unclaim',['../bdev_8h.html#ae080366bf0d3b59d0bb05f2b3e698dea',1,'bdev.h']]],
   ['spdk_5fbit_5farray_5fcapacity',['spdk_bit_array_capacity',['../bit__array_8h.html#a050b7786c57f20a245db5510691f3f23',1,'bit_array.h']]],
   ['spdk_5fbit_5farray_5fclear',['spdk_bit_array_clear',['../bit__array_8h.html#a64d5256695898daf0b9403c54c47da04',1,'bit_array.h']]],
   ['spdk_5fbit_5farray_5fcreate',['spdk_bit_array_create',['../bit__array_8h.html#ae001c8cd7e32e65b5a109a46647d33a0',1,'bit_array.h']]],

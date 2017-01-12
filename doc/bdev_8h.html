@@ -196,6 +196,12 @@ struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *&#160;</td><td 
 <tr class="memitem:aa1c0b9cb8dde1177df3442206cf87d2d"><td class="memItemLeft" align="right" valign="top"><a id="aa1c0b9cb8dde1177df3442206cf87d2d"></a>
 struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_next</b> (struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *prev)</td></tr>
 <tr class="separator:aa1c0b9cb8dde1177df3442206cf87d2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa064800dc85939a1b601fd73de524586"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev_8h.html#aa064800dc85939a1b601fd73de524586">spdk_bdev_claim</a> (struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *bdev)</td></tr>
+<tr class="memdesc:aa064800dc85939a1b601fd73de524586"><td class="mdescLeft">&#160;</td><td class="mdescRight">Claim ownership of a block device.  <a href="#aa064800dc85939a1b601fd73de524586">More...</a><br /></td></tr>
+<tr class="separator:aa064800dc85939a1b601fd73de524586"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae080366bf0d3b59d0bb05f2b3e698dea"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev_8h.html#ae080366bf0d3b59d0bb05f2b3e698dea">spdk_bdev_unclaim</a> (struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *bdev)</td></tr>
+<tr class="memdesc:ae080366bf0d3b59d0bb05f2b3e698dea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Release claim of ownership of a block device.  <a href="#ae080366bf0d3b59d0bb05f2b3e698dea">More...</a><br /></td></tr>
+<tr class="separator:ae080366bf0d3b59d0bb05f2b3e698dea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7cd5dff692dc162459801d5649fe7655"><td class="memItemLeft" align="right" valign="top"><a id="a7cd5dff692dc162459801d5649fe7655"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_io_type_supported</b> (struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *bdev, enum <a class="el" href="bdev_8h.html#a633029e24ab5ae4a689bffa2565a519f">spdk_bdev_io_type</a> io_type)</td></tr>
 <tr class="separator:a7cd5dff692dc162459801d5649fe7655"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -255,6 +261,63 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_io_set_scsi
 <tr><td class="fieldname"><a id="ae0c63447f343002f128438ab17c67f44a11832ecb8d5a025a236889108dee0f4b"></a>SPDK_BDEV_RESET_SOFT&#160;</td><td class="fielddoc"><p>A soft reset indicates that the blockdev layer should still invoke the completion callback for I/Os issued before the reset is issued but completed after the reset is complete. </p>
 </td></tr>
 </table>
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="aa064800dc85939a1b601fd73de524586"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa064800dc85939a1b601fd73de524586">&sect;&nbsp;</a></span>spdk_bdev_claim()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool spdk_bdev_claim </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *&#160;</td>
+          <td class="paramname"><em>bdev</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Claim ownership of a block device. </p>
+<p>User applications and virtual blockdevs may use this to mediate access to bdevs.</p>
+<p>When the ownership of the bdev is no longer needed, the user should call <a class="el" href="bdev_8h.html#ae080366bf0d3b59d0bb05f2b3e698dea" title="Release claim of ownership of a block device. ">spdk_bdev_unclaim()</a>.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bdev</td><td>Block device to claim. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the caller claimed the bdev, or false if it was already claimed by another user. </dd></dl>
+
+</div>
+</div>
+<a id="ae080366bf0d3b59d0bb05f2b3e698dea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae080366bf0d3b59d0bb05f2b3e698dea">&sect;&nbsp;</a></span>spdk_bdev_unclaim()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_bdev_unclaim </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *&#160;</td>
+          <td class="paramname"><em>bdev</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Release claim of ownership of a block device. </p>
+<p>When a bdev reference acquired with <a class="el" href="bdev_8h.html#aa064800dc85939a1b601fd73de524586" title="Claim ownership of a block device. ">spdk_bdev_claim()</a> is no longer needed, the user should release the claim using <a class="el" href="bdev_8h.html#ae080366bf0d3b59d0bb05f2b3e698dea" title="Release claim of ownership of a block device. ">spdk_bdev_unclaim()</a>.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bdev</td><td>Block device to release. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

@@ -1,0 +1,7 @@
+<map id="spdk_trace_histories" name="spdk_trace_histories">
+<area shape="rect" id="node2" href="$structspdk__trace__tpoint.html" title="spdk_trace_tpoint" alt="" coords="5,95,131,121"/>
+<area shape="rect" id="node3" href="$structspdk__trace__object.html" title="spdk_trace_object" alt="" coords="155,95,283,121"/>
+<area shape="rect" id="node4" href="$structspdk__trace__owner.html" title="spdk_trace_owner" alt="" coords="307,95,435,121"/>
+<area shape="rect" id="node5" href="$structspdk__trace__history.html" title="spdk_trace_history" alt="" coords="459,95,591,121"/>
+<area shape="rect" id="node6" href="$structspdk__trace__entry.html" title="spdk_trace_entry" alt="" coords="464,5,587,32"/>
+</map>

@@ -14,5 +14,6 @@ var searchData=
   ['mqes',['mqes',['../unionspdk__nvme__cap__register.html#a7ca23ffbd756451f561b8972160f8281',1,'spdk_nvme_cap_register']]],
   ['ms',['ms',['../structspdk__nvme__ns__data.html#ae71d2fb221f55dd1bc0981e94e67f49d',1,'spdk_nvme_ns_data']]],
   ['msdbd',['msdbd',['../structspdk__nvme__ctrlr__data.html#a7619e3c0063002fc3820d537b932ec82',1,'spdk_nvme_ctrlr_data']]],
-  ['mtfa',['mtfa',['../structspdk__nvme__ctrlr__data.html#a33d743e0631e477035fdaec206d2964b',1,'spdk_nvme_ctrlr_data']]]
+  ['mtfa',['mtfa',['../structspdk__nvme__ctrlr__data.html#a33d743e0631e477035fdaec206d2964b',1,'spdk_nvme_ctrlr_data']]],
+  ['mutex',['mutex',['../structspdk__bdev.html#a789560198e85f1643f67c59825fdb577',1,'spdk_bdev']]]
 ];
