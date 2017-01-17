@@ -281,6 +281,9 @@ spdk_bdev_io_get_rbuf_cb&#160;</td><td class="memItemRight" valign="bottom"><a c
 enum <a class="el" href="bdev_8h.html#aa35cc1485b6ba4351c2fb4fbd7125c93">spdk_bdev_io_status</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev__io.html#a55d5842220321a8a1b0693ee3baa2f96">status</a></td></tr>
 <tr class="memdesc:a55d5842220321a8a1b0693ee3baa2f96"><td class="mdescLeft">&#160;</td><td class="mdescRight">Status for the IO. <br /></td></tr>
 <tr class="separator:a55d5842220321a8a1b0693ee3baa2f96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5dff9cb8e3b6dbd77f66e576adfb8f59"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev__io.html#a5dff9cb8e3b6dbd77f66e576adfb8f59">in_submit_request</a></td></tr>
+<tr class="memdesc:a5dff9cb8e3b6dbd77f66e576adfb8f59"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set to true while the bdev module submit_request function is in progress.  <a href="#a5dff9cb8e3b6dbd77f66e576adfb8f59">More...</a><br /></td></tr>
+<tr class="separator:a5dff9cb8e3b6dbd77f66e576adfb8f59"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abcd367e4223310572d4a79d140ddfac9"><td class="memItemLeft" align="right" valign="top"><a id="abcd367e4223310572d4a79d140ddfac9"></a>
 struct <a class="el" href="structspdk__bdev__io.html">spdk_bdev_io</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev__io.html#abcd367e4223310572d4a79d140ddfac9">parent</a></td></tr>
 <tr class="memdesc:abcd367e4223310572d4a79d140ddfac9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used in virtual device (e.g., RAID), indicates its parent <a class="el" href="structspdk__bdev__io.html" title="Block device I/O. ">spdk_bdev_io</a>. <br /></td></tr>
@@ -428,6 +431,23 @@ uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="s
 </div><div class="memdoc">
 
 <p>Generation value for each I/O. </p>
+
+</div>
+</div>
+<a id="a5dff9cb8e3b6dbd77f66e576adfb8f59"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5dff9cb8e3b6dbd77f66e576adfb8f59">&sect;&nbsp;</a></span>in_submit_request</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool spdk_bdev_io::in_submit_request</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set to true while the bdev module submit_request function is in progress. </p>
+<p>This is used to decide whether spdk_bdev_io_complete() can complete the I/O directly or if completion must be deferred via an event. </p>
 
 </div>
 </div>
