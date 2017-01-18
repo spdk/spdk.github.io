@@ -8,7 +8,11 @@
   <div class="navbar navbar-default banner-tabs">
     <ul class="nav navbar-nav">
       {% for box in site.boxes %}
+      {% if page.url == box.url %}
+      <li class="active" role="presentation">
+      {% else %}
       <li role="presentation">
+      {% endif %}
         <a href="{{ box.url }}">
           <i class="glyphicon glyphicon-{{ box.ico }}"></i>
           <span class="box-name">{{ box.title }}</span>
