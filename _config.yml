@@ -15,22 +15,22 @@ permalink: pretty
 
 boxes:
   - title: home
-    url: http://www.spdk.io/
+    url: /
     ico: home
   - title: download
-    url: http://www.spdk.io/releases/
+    url: /releases/
     ico: download-alt
   - title: documentation
-    url: http://www.spdk.io/doc/
+    url: /doc/
     ico: book
   - title: development
-    url: http://www.spdk.io/development/
+    url: /development/
     ico: wrench
   - title: mailing list
     url: https://lists.01.org/mailman/listinfo/spdk
     ico: envelope
   - title: Blog
-    url: http://www.spdk.io/blog/
+    url: /blog/
     ico: comment
 
 
