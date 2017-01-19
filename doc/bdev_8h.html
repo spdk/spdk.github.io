@@ -40,7 +40,7 @@
                 </a>
               </li>
               <li class="active" role="presentation">
-                <a href="http://www.spdk.io/doc/">
+                <a href="index.html">
                   <i class="glyphicon glyphicon-book"></i>
                   <span class="box-name">documentation</span>
                 </a>
@@ -209,6 +209,9 @@ struct spdk_io_channel *&#160;</td><td class="memItemRight" valign="bottom"><b>s
 <tr class="memitem:a92481b4beb66410d107cc1670c51f39f"><td class="memItemLeft" align="right" valign="top"><a id="a92481b4beb66410d107cc1670c51f39f"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_io_set_scsi_error</b> (struct <a class="el" href="structspdk__bdev__io.html">spdk_bdev_io</a> *bdev_io, enum spdk_scsi_status sc, enum spdk_scsi_sense sk, uint8_t asc, uint8_t ascq)</td></tr>
 <tr class="separator:a92481b4beb66410d107cc1670c51f39f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe43254747db3cd072dfb596be3bbf2f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev_8h.html#afe43254747db3cd072dfb596be3bbf2f">spdk_bdev_io_get_nvme_status</a> (const struct <a class="el" href="structspdk__bdev__io.html">spdk_bdev_io</a> *bdev_io, int *sct, int *sc)</td></tr>
+<tr class="memdesc:afe43254747db3cd072dfb596be3bbf2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the status of bdev_io as an NVMe status code.  <a href="#afe43254747db3cd072dfb596be3bbf2f">More...</a><br /></td></tr>
+<tr class="separator:afe43254747db3cd072dfb596be3bbf2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Block device abstraction layer. </p>
@@ -262,6 +265,50 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_io_set_scsi
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if the caller claimed the bdev, or false if it was already claimed by another user. </dd></dl>
+
+</div>
+</div>
+<a id="afe43254747db3cd072dfb596be3bbf2f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afe43254747db3cd072dfb596be3bbf2f">&sect;&nbsp;</a></span>spdk_bdev_io_get_nvme_status()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_bdev_io_get_nvme_status </td>
+          <td>(</td>
+          <td class="paramtype">const struct <a class="el" href="structspdk__bdev__io.html">spdk_bdev_io</a> *&#160;</td>
+          <td class="paramname"><em>bdev_io</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>sct</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>sc</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the status of bdev_io as an NVMe status code. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bdev_io</td><td>I/O to get the status from. </td></tr>
+    <tr><td class="paramname">sct</td><td>Status Code Type return value, as defined by the NVMe specification. </td></tr>
+    <tr><td class="paramname">sc</td><td>Status Code return value, as defined by the NVMe specification. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
