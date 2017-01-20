@@ -155,6 +155,9 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:ac37484cc5d14777e4ae1fde031d0edf2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#ac37484cc5d14777e4ae1fde031d0edf2">spdk_nvme_transport_id_parse</a> (struct <a class="el" href="structspdk__nvme__transport__id.html">spdk_nvme_transport_id</a> *trid, const char *str)</td></tr>
+<tr class="memdesc:ac37484cc5d14777e4ae1fde031d0edf2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parse the string representation of a transport ID.  <a href="#ac37484cc5d14777e4ae1fde031d0edf2">More...</a><br /></td></tr>
+<tr class="separator:ac37484cc5d14777e4ae1fde031d0edf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab5735e7600f79c45871b3dc3adb292f2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#ab5735e7600f79c45871b3dc3adb292f2">spdk_nvme_transport_available</a> (enum <a class="el" href="nvme_8h.html#ae87a03c28984a2c0499d50ef5e9d0ece">spdk_nvme_transport_type</a> trtype)</td></tr>
 <tr class="memdesc:ab5735e7600f79c45871b3dc3adb292f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine whether the NVMe library can handle a specific NVMe over Fabrics transport type.  <a href="#ab5735e7600f79c45871b3dc3adb292f2">More...</a><br /></td></tr>
 <tr class="separator:ab5735e7600f79c45871b3dc3adb292f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -2869,6 +2872,60 @@ int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_retry_co
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if trtype is supported or false if it is not supported. </dd></dl>
+
+</div>
+</div>
+<a id="ac37484cc5d14777e4ae1fde031d0edf2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac37484cc5d14777e4ae1fde031d0edf2">&sect;&nbsp;</a></span>spdk_nvme_transport_id_parse()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_nvme_transport_id_parse </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structspdk__nvme__transport__id.html">spdk_nvme_transport_id</a> *&#160;</td>
+          <td class="paramname"><em>trid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>str</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Parse the string representation of a transport ID. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">trid</td><td>Output transport ID structure (must be allocated and initialized by caller). </td></tr>
+    <tr><td class="paramname">str</td><td>Input string representation of a transport ID to parse. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 if parsing was successful and trid is filled out, or negated errno values on failure.</dd></dl>
+<p>str must be a zero-terminated C string containing one or more key:value pairs separated by whitespace.</p>
+<table class="doxtable">
+<tr>
+<th>Key </th><th>Value  </th></tr>
+<tr>
+<td>trtype </td><td>Transport type (e.g. PCIe, RDMA) </td></tr>
+<tr>
+<td>adrfam </td><td>Address family (e.g. IPv4, IPv6) </td></tr>
+<tr>
+<td>traddr </td><td>Transport address (e.g. 0000:04:00.0 for PCIe or 192.168.100.8 for RDMA) </td></tr>
+<tr>
+<td>trsvcid </td><td>Transport service identifier (e.g. 4420) </td></tr>
+<tr>
+<td>subnqn </td><td>Subsystem NQN </td></tr>
+</table>
+<p>Unspecified fields of trid are left unmodified, so the caller must initialize trid (for example, memset() to 0) before calling this function. </p>
 
 </div>
 </div>
