@@ -97,6 +97,9 @@ Data Structures</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
+<tr class="memitem:a3e5247302342025f028c57bc024291b1"><td class="memItemLeft" align="right" valign="top"><a id="a3e5247302342025f028c57bc024291b1"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_ENV_SOCKET_ID_ANY</b>&#160;&#160;&#160;(-1)</td></tr>
+<tr class="separator:a3e5247302342025f028c57bc024291b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a26eb4a0e044f1a5e9515b8c2f96078a4"><td class="memItemLeft" align="right" valign="top"><a id="a26eb4a0e044f1a5e9515b8c2f96078a4"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_VTOPHYS_ERROR</b>&#160;&#160;&#160;(0xFFFFFFFFFFFFFFFFULL)</td></tr>
 <tr class="separator:a26eb4a0e044f1a5e9515b8c2f96078a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -136,9 +139,9 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_8
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_8h.html#a8b47302a948b71f493ae775b53f162e2">spdk_memzone_dump</a> (FILE *f)</td></tr>
 <tr class="memdesc:a8b47302a948b71f493ae775b53f162e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dump debug information about all memzones. <br /></td></tr>
 <tr class="separator:a8b47302a948b71f493ae775b53f162e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5c7619f7b77a68eaceefca26805eaab5"><td class="memItemLeft" align="right" valign="top">struct spdk_mempool *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_8h.html#a5c7619f7b77a68eaceefca26805eaab5">spdk_mempool_create</a> (const char *name, size_t count, size_t ele_size, size_t cache_size)</td></tr>
-<tr class="memdesc:a5c7619f7b77a68eaceefca26805eaab5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a thread-safe memory pool.  <a href="#a5c7619f7b77a68eaceefca26805eaab5">More...</a><br /></td></tr>
-<tr class="separator:a5c7619f7b77a68eaceefca26805eaab5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d4f7842191990b49694495bba10fcbd"><td class="memItemLeft" align="right" valign="top">struct spdk_mempool *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_8h.html#a8d4f7842191990b49694495bba10fcbd">spdk_mempool_create</a> (const char *name, size_t count, size_t ele_size, size_t cache_size, int socket_id)</td></tr>
+<tr class="memdesc:a8d4f7842191990b49694495bba10fcbd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a thread-safe memory pool.  <a href="#a8d4f7842191990b49694495bba10fcbd">More...</a><br /></td></tr>
+<tr class="separator:a8d4f7842191990b49694495bba10fcbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab9d2feacf9f6979db875add06ab06494"><td class="memItemLeft" align="right" valign="top"><a id="ab9d2feacf9f6979db875add06ab06494"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_8h.html#ab9d2feacf9f6979db875add06ab06494">spdk_mempool_free</a> (struct spdk_mempool *mp)</td></tr>
 <tr class="memdesc:ab9d2feacf9f6979db875add06ab06494"><td class="mdescLeft">&#160;</td><td class="mdescRight">Free a memory pool. <br /></td></tr>
@@ -333,8 +336,8 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_pci_device_cfg_wr
 
 </div>
 </div>
-<a id="a5c7619f7b77a68eaceefca26805eaab5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5c7619f7b77a68eaceefca26805eaab5">&#9670;&nbsp;</a></span>spdk_mempool_create()</h2>
+<a id="a8d4f7842191990b49694495bba10fcbd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8d4f7842191990b49694495bba10fcbd">&#9670;&nbsp;</a></span>spdk_mempool_create()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -361,7 +364,13 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_pci_device_cfg_wr
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>cache_size</em>&#160;</td>
+          <td class="paramname"><em>cache_size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>socket_id</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -372,7 +381,13 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_pci_device_cfg_wr
 </div><div class="memdoc">
 
 <p>Create a thread-safe memory pool. </p>
-<p>Cache size is the number of elements in a thread-local cache. Can be 0 for no caching, or -1 for unspecified. </p>
+<p>Cache size is the number of elements in a thread-local cache. Can be 0 for no caching, or -1 for unspecified.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">socket_id</td><td>Socket ID to allocate memory on, or SPDK_ENV_SOCKET_ID_ANY for any socket. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -457,7 +472,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_pci_device_cfg_wr
 </div><div class="memdoc">
 
 <p>Reserve a named, process shared memory zone with the given size, socket_id and flags. </p>
-<p>Return a pointer to the allocated memory address. If the allocation cannot be done, return NULL. Note: to pick any socket id, just set socket_id to -1. </p>
+<p>Return a pointer to the allocated memory address. If the allocation cannot be done, return NULL. Note: to pick any socket id, just set socket_id to SPDK_ENV_SOCKET_ID_ANY. </p>
 
 </div>
 </div>
