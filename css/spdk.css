@@ -200,3 +200,8 @@ p.copyright {
     font-size: 18px;
     font-weight: 400;
 }
+
+.roadmap-head {
+    background-color: #0071C5;
+    color: #FFFFFF;
+}

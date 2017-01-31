@@ -32,6 +32,9 @@ boxes:
   - title: Blog
     url: /blog/
     ico: comment
+  - title: Roadmap
+    url: /roadmap/
+    ico: map-marker
 
 
 gems:
