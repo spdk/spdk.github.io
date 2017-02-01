@@ -227,6 +227,9 @@ uint16_t&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_pci_device_g
 <tr class="memitem:a5c5c2f463bddbce4cc846e04246f6414"><td class="memItemLeft" align="right" valign="top"><a id="a5c5c2f463bddbce4cc846e04246f6414"></a>
 struct <a class="el" href="structspdk__pci__id.html">spdk_pci_id</a>&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_pci_device_get_id</b> (struct spdk_pci_device *dev)</td></tr>
 <tr class="separator:a5c5c2f463bddbce4cc846e04246f6414"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a235f1c632be6dc00aad1cf8fd0314609"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_8h.html#a235f1c632be6dc00aad1cf8fd0314609">spdk_pci_device_get_socket_id</a> (struct spdk_pci_device *dev)</td></tr>
+<tr class="memdesc:a235f1c632be6dc00aad1cf8fd0314609"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the NUMA socket ID of a PCI device.  <a href="#a235f1c632be6dc00aad1cf8fd0314609">More...</a><br /></td></tr>
+<tr class="separator:a235f1c632be6dc00aad1cf8fd0314609"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a69b979316610b357a35d03500c3059af"><td class="memItemLeft" align="right" valign="top"><a id="a69b979316610b357a35d03500c3059af"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_pci_device_get_serial_number</b> (struct spdk_pci_device *dev, char *sn, size_t len)</td></tr>
 <tr class="separator:a69b979316610b357a35d03500c3059af"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -587,6 +590,33 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_pci_device_cfg_wr
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 on success, or a negated errno value on failure. </dd></dl>
+
+</div>
+</div>
+<a id="a235f1c632be6dc00aad1cf8fd0314609"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a235f1c632be6dc00aad1cf8fd0314609">&#9670;&nbsp;</a></span>spdk_pci_device_get_socket_id()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_pci_device_get_socket_id </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_pci_device *&#160;</td>
+          <td class="paramname"><em>dev</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the NUMA socket ID of a PCI device. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dev</td><td>PCI device to get the socket ID of.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Socket ID (&gt;= 0), or negative if unknown. </dd></dl>
 
 </div>
 </div>
