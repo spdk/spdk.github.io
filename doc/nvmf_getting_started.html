@@ -90,7 +90,7 @@ Configuring NVMe over Fabrics Target</h1>
 <div class="fragment"><div class="line">app/nvmf_tgt/nvmf_tgt -c /path/to/nvmf.conf</div></div><!-- fragment --><h1><a class="anchor" id="nvmf_host"></a>
 Configuring NVMe over Fabrics Host</h1>
 <p>Both the Linux kernel and SPDK implemented NVMe over Fabrics host. Users who want to test <code>nvmf_tgt</code> with kernel based host should upgrade to Linux kernel 4.8 or later, or can use Linux distributions Fedora or Ubuntu with Linux 4.8 kernel or later. A client tool nvme-cli is recommended to connect/disconect with NVMe over Fabrics target subsystems. Before connecting to remote subsystems, users should verify nvme-rdma driver is loaded.</p>
-<p>Discovery: </p><div class="fragment"><div class="line">nvme discovery -t rdma -s 192.168.100.8 -s 4420</div></div><!-- fragment --><p>Connect: </p><div class="fragment"><div class="line">nvme connect -t rdma -n &quot;nqn.2016-06.io.spdk:cnode1&quot; -a 192.168.100.8 -s 4420</div></div><!-- fragment --><p>Disconnect: </p><div class="fragment"><div class="line">nvme disconnect -n &quot;nqn.2016-06.io.spdk.cnode1&quot;</div></div><!-- fragment --> </div></div><!-- contents -->
+<p>Discovery: </p><div class="fragment"><div class="line">nvme discover -t rdma -a 192.168.100.8 -s 4420</div></div><!-- fragment --><p>Connect: </p><div class="fragment"><div class="line">nvme connect -t rdma -n &quot;nqn.2016-06.io.spdk:cnode1&quot; -a 192.168.100.8 -s 4420</div></div><!-- fragment --><p>Disconnect: </p><div class="fragment"><div class="line">nvme disconnect -n &quot;nqn.2016-06.io.spdk.cnode1&quot;</div></div><!-- fragment --> </div></div><!-- contents -->
 <section id="community">
   <div class="community">
     <div class="container">
