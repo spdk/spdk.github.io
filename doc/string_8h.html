@@ -108,15 +108,15 @@ Functions</h2></td></tr>
 <tr class="memitem:a3c8f770428a60f0d2836d479c4b1b4e7"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="string_8h.html#a3c8f770428a60f0d2836d479c4b1b4e7">spdk_strlen_pad</a> (const void *str, size_t size, int pad)</td></tr>
 <tr class="memdesc:a3c8f770428a60f0d2836d479c4b1b4e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find the length of a string that has been padded with a specific byte.  <a href="#a3c8f770428a60f0d2836d479c4b1b4e7">More...</a><br /></td></tr>
 <tr class="separator:a3c8f770428a60f0d2836d479c4b1b4e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6128dc8ff2429e599da865fa01099be2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="string_8h.html#a6128dc8ff2429e599da865fa01099be2">spdk_parse_ip_addr</a> (char *ip, const char **host, const char **port)</td></tr>
-<tr class="memdesc:a6128dc8ff2429e599da865fa01099be2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parse an IP address into its hostname and port components.  <a href="#a6128dc8ff2429e599da865fa01099be2">More...</a><br /></td></tr>
-<tr class="separator:a6128dc8ff2429e599da865fa01099be2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad48498f237af5f5c25ca7cbca5300e12"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="string_8h.html#ad48498f237af5f5c25ca7cbca5300e12">spdk_parse_ip_addr</a> (char *ip, char **host, char **port)</td></tr>
+<tr class="memdesc:ad48498f237af5f5c25ca7cbca5300e12"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parse an IP address into its hostname and port components.  <a href="#ad48498f237af5f5c25ca7cbca5300e12">More...</a><br /></td></tr>
+<tr class="separator:ad48498f237af5f5c25ca7cbca5300e12"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>String utility functions. </p>
 </div><h2 class="groupheader">Function Documentation</h2>
-<a id="a6128dc8ff2429e599da865fa01099be2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6128dc8ff2429e599da865fa01099be2">&#9670;&nbsp;</a></span>spdk_parse_ip_addr()</h2>
+<a id="ad48498f237af5f5c25ca7cbca5300e12"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad48498f237af5f5c25ca7cbca5300e12">&#9670;&nbsp;</a></span>spdk_parse_ip_addr()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -130,13 +130,13 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const char **&#160;</td>
+          <td class="paramtype">char **&#160;</td>
           <td class="paramname"><em>host</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const char **&#160;</td>
+          <td class="paramtype">char **&#160;</td>
           <td class="paramname"><em>port</em>&#160;</td>
         </tr>
         <tr>
