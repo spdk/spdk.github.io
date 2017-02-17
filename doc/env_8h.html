@@ -63,6 +63,12 @@
                   <span class="box-name">Blog</span>
                 </a>
               </li>
+              <li role="presentation">
+                <a href="http://www.spdk.io/roadmap/">
+                  <i class="glyphicon glyphicon-map-marker"></i>
+                  <span class="box-name">Roadmap</span>
+                </a>
+              </li>
             </ul>
           </div>
         </section>
@@ -90,6 +96,9 @@
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__env__opts.html">spdk_env_opts</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Environment initialization options.  <a href="structspdk__env__opts.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__pci__addr.html">spdk_pci_addr</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__pci__id.html">spdk_pci_id</a></td></tr>
@@ -112,6 +121,13 @@ typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_pci_enu
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:af3b1a05d3f4dee14ba3f980672c9b3a6"><td class="memItemLeft" align="right" valign="top"><a id="af3b1a05d3f4dee14ba3f980672c9b3a6"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_8h.html#af3b1a05d3f4dee14ba3f980672c9b3a6">spdk_env_opts_init</a> (struct <a class="el" href="structspdk__env__opts.html">spdk_env_opts</a> *opts)</td></tr>
+<tr class="memdesc:af3b1a05d3f4dee14ba3f980672c9b3a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the default value of opts. <br /></td></tr>
+<tr class="separator:af3b1a05d3f4dee14ba3f980672c9b3a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64eecb39affafd001dfddcdf60114906"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_8h.html#a64eecb39affafd001dfddcdf60114906">spdk_env_init</a> (const struct <a class="el" href="structspdk__env__opts.html">spdk_env_opts</a> *opts)</td></tr>
+<tr class="memdesc:a64eecb39affafd001dfddcdf60114906"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the environment library.  <a href="#a64eecb39affafd001dfddcdf60114906">More...</a><br /></td></tr>
+<tr class="separator:a64eecb39affafd001dfddcdf60114906"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8f63fddd291ac3b0b3c4047807d59dc1"><td class="memItemLeft" align="right" valign="top"><a id="a8f63fddd291ac3b0b3c4047807d59dc1"></a>
 void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_8h.html#a8f63fddd291ac3b0b3c4047807d59dc1">spdk_malloc</a> (size_t size, size_t align, uint64_t *phys_addr)</td></tr>
 <tr class="memdesc:a8f63fddd291ac3b0b3c4047807d59dc1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate a pinned, physically contiguous memory buffer with the given size and alignment. <br /></td></tr>
@@ -315,6 +331,27 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_pci_device_cfg_wr
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the return value of cb() </dd></dl>
+
+</div>
+</div>
+<a id="a64eecb39affafd001dfddcdf60114906"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a64eecb39affafd001dfddcdf60114906">&#9670;&nbsp;</a></span>spdk_env_init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_env_init </td>
+          <td>(</td>
+          <td class="paramtype">const struct <a class="el" href="structspdk__env__opts.html">spdk_env_opts</a> *&#160;</td>
+          <td class="paramname"><em>opts</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Initialize the environment library. </p>
+<p>This must be called prior to using any other functions in this library. </p>
 
 </div>
 </div>
@@ -763,43 +800,6 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_pci_device_cfg_wr
 </div>
 </div>
 </div><!-- contents -->
-<section id="community">
-  <div class="community">
-    <div class="container">
-      <div class="col-lg-6">
-        <h2>Join Our Community:</h2>
-      </div>
-      <div class="col-lg-6">
-        <div class="btn-group-vertical" role="group">
-          <a href="http://www.spdk.io/" class="btn btn-default btn-lg">
-            <i class="glyphicon glyphicon-home"></i>
-            <span class="box-name">home</span>
-          </a>
-          <a href="https://github.com/spdk/spdk/releases/" class="btn btn-default btn-lg">
-            <i class="glyphicon glyphicon-download-alt"></i>
-            <span class="box-name">download</span>
-          </a>
-          <a href="http://www.spdk.io/doc/" class="btn btn-default btn-lg">
-            <i class="glyphicon glyphicon-book"></i>
-            <span class="box-name">documentation</span>
-          </a>
-          <a href="https://github.com/spdk/spdk/" class="btn btn-default btn-lg">
-            <i class="glyphicon glyphicon-wrench"></i>
-            <span class="box-name">development</span>
-          </a>
-          <a href="https://lists.01.org/mailman/listinfo/spdk" class="btn btn-default btn-lg">
-            <i class="glyphicon glyphicon-envelope"></i>
-            <span class="box-name">mailing list</span>
-          </a>
-          <a href="http://www.spdk.io/blog/" class="btn btn-default btn-lg">
-            <i class="glyphicon glyphicon-comment"></i>
-            <span class="box-name">Blog</span>
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
 <footer>
   <div class="container text-center">
     <p class="copyright text-muted small">Copyright © Intel Corporation. All Rights Reserved.</p>

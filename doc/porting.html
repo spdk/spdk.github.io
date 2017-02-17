@@ -63,6 +63,12 @@
                   <span class="box-name">Blog</span>
                 </a>
               </li>
+              <li role="presentation">
+                <a href="http://www.spdk.io/roadmap/">
+                  <i class="glyphicon glyphicon-map-marker"></i>
+                  <span class="box-name">Roadmap</span>
+                </a>
+              </li>
             </ul>
           </div>
         </section>
@@ -78,43 +84,6 @@
 <div class="textblock"><p>SPDK is ported to new environments by implementing the <em>env</em> library interface. The <em>env</em> interface provides APIs for drivers to allocate physically contiguous and pinned memory, perform PCI operations (config cycles and mapping BARs), virtual to physical address translation and managing memory pools. The <em>env</em> API is defined in <a class="el" href="env_8h.html" title="Encapsulated third-party dependencies. ">include/spdk/env.h</a>.</p>
 <p>SPDK includes a default implementation of the <em>env</em> library based on the Data Plane Development Kit (<a href="http://dpdk.org/">DPDK</a>). This DPDK implementation can be found in <code>lib/env_dpdk</code>.</p>
 <p>DPDK is currently supported on Linux and FreeBSD only. Users who want to use SPDK on other operating systems, or in userspace driver frameworks other than DPDK, will need to implement a new version of the <em>env</em> library. The new implementation can be integrated into the SPDK build by updating the following line in CONFIG: </p><pre class="fragment">CONFIG_ENV?=$(SPDK_ROOT_DIR)/lib/env_dpdk</pre> </div></div><!-- contents -->
-<section id="community">
-  <div class="community">
-    <div class="container">
-      <div class="col-lg-6">
-        <h2>Join Our Community:</h2>
-      </div>
-      <div class="col-lg-6">
-        <div class="btn-group-vertical" role="group">
-          <a href="http://www.spdk.io/" class="btn btn-default btn-lg">
-            <i class="glyphicon glyphicon-home"></i>
-            <span class="box-name">home</span>
-          </a>
-          <a href="https://github.com/spdk/spdk/releases/" class="btn btn-default btn-lg">
-            <i class="glyphicon glyphicon-download-alt"></i>
-            <span class="box-name">download</span>
-          </a>
-          <a href="http://www.spdk.io/doc/" class="btn btn-default btn-lg">
-            <i class="glyphicon glyphicon-book"></i>
-            <span class="box-name">documentation</span>
-          </a>
-          <a href="https://github.com/spdk/spdk/" class="btn btn-default btn-lg">
-            <i class="glyphicon glyphicon-wrench"></i>
-            <span class="box-name">development</span>
-          </a>
-          <a href="https://lists.01.org/mailman/listinfo/spdk" class="btn btn-default btn-lg">
-            <i class="glyphicon glyphicon-envelope"></i>
-            <span class="box-name">mailing list</span>
-          </a>
-          <a href="http://www.spdk.io/blog/" class="btn btn-default btn-lg">
-            <i class="glyphicon glyphicon-comment"></i>
-            <span class="box-name">Blog</span>
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
 <footer>
   <div class="container text-center">
     <p class="copyright text-muted small">Copyright © Intel Corporation. All Rights Reserved.</p>

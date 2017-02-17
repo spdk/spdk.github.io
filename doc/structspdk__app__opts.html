@@ -63,6 +63,12 @@
                   <span class="box-name">Blog</span>
                 </a>
               </li>
+              <li role="presentation">
+                <a href="http://www.spdk.io/roadmap/">
+                  <i class="glyphicon glyphicon-map-marker"></i>
+                  <span class="box-name">Roadmap</span>
+                </a>
+              </li>
             </ul>
           </div>
         </section>
@@ -98,9 +104,9 @@ const char *&#160;</td><td class="memItemRight" valign="bottom"><b>log_facility<
 <tr class="memitem:a41fa1b1b7c5f2872c5fce6074960bfc5"><td class="memItemLeft" align="right" valign="top"><a id="a41fa1b1b7c5f2872c5fce6074960bfc5"></a>
 const char *&#160;</td><td class="memItemRight" valign="bottom"><b>tpoint_group_mask</b></td></tr>
 <tr class="separator:a41fa1b1b7c5f2872c5fce6074960bfc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9d9e7e18ed3b6ab2eb047a4f8b26d4cb"><td class="memItemLeft" align="right" valign="top"><a id="a9d9e7e18ed3b6ab2eb047a4f8b26d4cb"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>instance_id</b></td></tr>
-<tr class="separator:a9d9e7e18ed3b6ab2eb047a4f8b26d4cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a362c97242a5610d65e51e92183abc8d0"><td class="memItemLeft" align="right" valign="top"><a id="a362c97242a5610d65e51e92183abc8d0"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>shm_id</b></td></tr>
+<tr class="separator:a362c97242a5610d65e51e92183abc8d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a93ac293aa665a3628d0286745799c5a5"><td class="memItemLeft" align="right" valign="top"><a id="a93ac293aa665a3628d0286745799c5a5"></a>
 spdk_app_shutdown_cb&#160;</td><td class="memItemRight" valign="bottom"><b>shutdown_cb</b></td></tr>
 <tr class="separator:a93ac293aa665a3628d0286745799c5a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -110,12 +116,12 @@ spdk_sighandler_t&#160;</td><td class="memItemRight" valign="bottom"><b>usr1_han
 <tr class="memitem:ac21faa67a906aa0e70194b96e7700142"><td class="memItemLeft" align="right" valign="top"><a id="ac21faa67a906aa0e70194b96e7700142"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>enable_coredump</b></td></tr>
 <tr class="separator:ac21faa67a906aa0e70194b96e7700142"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae081b7c01d6281bc4782feba4654941c"><td class="memItemLeft" align="right" valign="top"><a id="ae081b7c01d6281bc4782feba4654941c"></a>
-uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>dpdk_mem_channel</b></td></tr>
-<tr class="separator:ae081b7c01d6281bc4782feba4654941c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adae3df654d6557d31f5cc06c088443ad"><td class="memItemLeft" align="right" valign="top"><a id="adae3df654d6557d31f5cc06c088443ad"></a>
-uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>dpdk_master_core</b></td></tr>
-<tr class="separator:adae3df654d6557d31f5cc06c088443ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf51d1bd3e7372b75ad57e12ae02457f"><td class="memItemLeft" align="right" valign="top"><a id="abf51d1bd3e7372b75ad57e12ae02457f"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>dpdk_mem_channel</b></td></tr>
+<tr class="separator:abf51d1bd3e7372b75ad57e12ae02457f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37676bdf3dc83b3de54c810d8b5bbc71"><td class="memItemLeft" align="right" valign="top"><a id="a37676bdf3dc83b3de54c810d8b5bbc71"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>dpdk_master_core</b></td></tr>
+<tr class="separator:a37676bdf3dc83b3de54c810d8b5bbc71"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abdc861abdda0bb4c409c2ab748d2aea9"><td class="memItemLeft" align="right" valign="top"><a id="abdc861abdda0bb4c409c2ab748d2aea9"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>dpdk_mem_size</b></td></tr>
 <tr class="separator:abdc861abdda0bb4c409c2ab748d2aea9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -129,43 +135,6 @@ uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>max_delay_us</b><
 <li><a class="el" href="event_8h.html">event.h</a></li>
 </ul>
 </div><!-- contents -->
-<section id="community">
-  <div class="community">
-    <div class="container">
-      <div class="col-lg-6">
-        <h2>Join Our Community:</h2>
-      </div>
-      <div class="col-lg-6">
-        <div class="btn-group-vertical" role="group">
-          <a href="http://www.spdk.io/" class="btn btn-default btn-lg">
-            <i class="glyphicon glyphicon-home"></i>
-            <span class="box-name">home</span>
-          </a>
-          <a href="https://github.com/spdk/spdk/releases/" class="btn btn-default btn-lg">
-            <i class="glyphicon glyphicon-download-alt"></i>
-            <span class="box-name">download</span>
-          </a>
-          <a href="http://www.spdk.io/doc/" class="btn btn-default btn-lg">
-            <i class="glyphicon glyphicon-book"></i>
-            <span class="box-name">documentation</span>
-          </a>
-          <a href="https://github.com/spdk/spdk/" class="btn btn-default btn-lg">
-            <i class="glyphicon glyphicon-wrench"></i>
-            <span class="box-name">development</span>
-          </a>
-          <a href="https://lists.01.org/mailman/listinfo/spdk" class="btn btn-default btn-lg">
-            <i class="glyphicon glyphicon-envelope"></i>
-            <span class="box-name">mailing list</span>
-          </a>
-          <a href="http://www.spdk.io/blog/" class="btn btn-default btn-lg">
-            <i class="glyphicon glyphicon-comment"></i>
-            <span class="box-name">Blog</span>
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
 <footer>
   <div class="container text-center">
     <p class="copyright text-muted small">Copyright © Intel Corporation. All Rights Reserved.</p>

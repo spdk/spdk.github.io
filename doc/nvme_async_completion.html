@@ -63,6 +63,12 @@
                   <span class="box-name">Blog</span>
                 </a>
               </li>
+              <li role="presentation">
+                <a href="http://www.spdk.io/roadmap/">
+                  <i class="glyphicon glyphicon-map-marker"></i>
+                  <span class="box-name">Roadmap</span>
+                </a>
+              </li>
             </ul>
           </div>
         </section>
@@ -86,43 +92,6 @@ Admin commands</h1>
 <p>When the application calls <a class="el" href="nvme_8h.html#a10282695461985f58f54de022911745e" title="Process any outstanding completions for admin commands. ">spdk_nvme_ctrlr_process_admin_completions()</a>, if the NVMe driver detects completed admin commands submitted from any thread, it will invote the registered callback function for each command within the context of <a class="el" href="nvme_8h.html#a10282695461985f58f54de022911745e" title="Process any outstanding completions for admin commands. ">spdk_nvme_ctrlr_process_admin_completions()</a>.</p>
 <p>It is the application's responsibility to manage the order of submitted admin commands. If certain admin commands must be submitted while no other commands are outstanding, it is the application's responsibility to enforce this rule using its own synchronization method. </p>
 </div></div><!-- contents -->
-<section id="community">
-  <div class="community">
-    <div class="container">
-      <div class="col-lg-6">
-        <h2>Join Our Community:</h2>
-      </div>
-      <div class="col-lg-6">
-        <div class="btn-group-vertical" role="group">
-          <a href="http://www.spdk.io/" class="btn btn-default btn-lg">
-            <i class="glyphicon glyphicon-home"></i>
-            <span class="box-name">home</span>
-          </a>
-          <a href="https://github.com/spdk/spdk/releases/" class="btn btn-default btn-lg">
-            <i class="glyphicon glyphicon-download-alt"></i>
-            <span class="box-name">download</span>
-          </a>
-          <a href="http://www.spdk.io/doc/" class="btn btn-default btn-lg">
-            <i class="glyphicon glyphicon-book"></i>
-            <span class="box-name">documentation</span>
-          </a>
-          <a href="https://github.com/spdk/spdk/" class="btn btn-default btn-lg">
-            <i class="glyphicon glyphicon-wrench"></i>
-            <span class="box-name">development</span>
-          </a>
-          <a href="https://lists.01.org/mailman/listinfo/spdk" class="btn btn-default btn-lg">
-            <i class="glyphicon glyphicon-envelope"></i>
-            <span class="box-name">mailing list</span>
-          </a>
-          <a href="http://www.spdk.io/blog/" class="btn btn-default btn-lg">
-            <i class="glyphicon glyphicon-comment"></i>
-            <span class="box-name">Blog</span>
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
 <footer>
   <div class="container text-center">
     <p class="copyright text-muted small">Copyright © Intel Corporation. All Rights Reserved.</p>
