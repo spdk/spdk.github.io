@@ -1,21 +1,9 @@
 <section id="blog" class="blog">
 {% for post in site.posts %}
-  {% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}
-    {% if thecycle == 'even' %}
-    <div class="blog-section-a">
+    <div class="blog-section">
         <h2 class="blog-heading">{{ post.title }}</h2>
         <div class="blog-author">By {{ post.author }}</div>
         <div class="lead">{{ post.excerpt }}  <a class="post-link" href="{{ site.baseurl }}{{ post.url }}">Continue...</a></div>
     </div>
-
-    {% else %}
-
-    <div class="blog-section-b">
-        <h2 class="blog-heading">{{ post.title }}</h2>
-        <div class="blog-author">By {{ post.author }}</div>
-        <div class="lead">{{ post.excerpt }}  <a class="post-link" href="{{ site.baseurl }}{{ post.url }}">Continue...</a></div>
-    </div>
-
-    {% endif %}
 {% endfor %}
 </section>

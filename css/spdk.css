@@ -110,15 +110,13 @@ h6 {
 
 }
 
-.blog-section-a {
+.blog-section {
     padding: 25px;
-    background-color: #f8f8f8;
     border-bottom: 1px solid #e7e7e7;
 }
 
-.blog-section-b {
-    padding: 25px;
-    border-bottom: 1px solid #e7e7e7;
+.blog-section:nth-child(odd) {
+    background-color: #f8f8f8;
 }
 
 .blog-heading {
