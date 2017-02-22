@@ -21,10 +21,47 @@ Contributing
 ------------
 
 Everyone is welcome to contribute!
+The following is a typical development work flow decribing the steps to download the SPDK code, make changes and submit a patch for review:
 
-Patches may be submitted using [GitHub pull requests](http://github.com/spdk/spdk/pulls) (PRs). All commits must be signed off by the developer (`--signoff`) which indicates that you agree to the [Developer Certificate of Origin](http://developercertificate.org/).
+1. Log in to github.com and fork the SPDK repository.
+2. Create a new branch in your private copy of the SPDK repository that you forked in the previous step.
+3. Run git clone command on your development box to download the code.
 
-All code is checked for style correctness by running `scripts/check_format.sh`. This script requires `astyle` and optionally `pep8` and will automatically format C, C++, and Python code. 
+  ~~~{.sh}
+  git clone https://github.com/your_github_username/spdk.git
+  ~~~
+
+4. Create a local branch that tracks the remote branch you created in step 2 so that when you push your changes the remote branch will be updated. For example, if the branch you created in step 2 is called bug_fix, run the following git command on your development box in the SPDK directory to create a local branch called bug_fix that tracks the remote branch.
+
+  ~~~{.sh}
+  git checkout --track origin/bug_fix
+  ~~~
+
+5. Make changes on the new branch and commit them on your local repository. Commit as many times as you want because the commits are local and will be combined before pushing to the remote repository. For example:
+
+  ~~~{.sh}
+  git add test.cpp
+  git commit -s -m "nvme: fix I/O corruption with unaligned buffers"
+  ~~~
+
+  Note that all commits must be signed off by the developer (`--signoff`) which indicates that you agree to the [Developer Certificate of  Origin](http://developercertificate.org/). This is done using the -s option when commiting your changes.
+  
+6. Rebase all changes on the local repository branch:
+
+  ~~~{.sh}
+  git rebase -i master
+  ~~~
+
+7. Push the changes to github
+
+  ~~~{.sh}
+  git push https://github.com/your_github_username/spdk.git
+  ~~~
+
+  All code should be checked for style correctness by running `scripts/check_format.sh`. This script requires `astyle` and optionally `pep8` and will automatically format C, C++, and Python code.
+
+8. Submit a pull request using [GitHub pull requests](http://github.com/spdk/spdk/pulls) (PRs)
+9. Github PR will automatically include the commit message. You can edit the commit message and provide more details of the changes you made. Ensure you include the Signed-off-by the developer at the end of pull request description.  
 
 Patch discussion will happen directly on the GitHub PR. Design pre-work and general discussion occurs on the mailing list. Anyone can provide feedback in either location and all discussion is welcome. Decisions on whether to merge patches will be handled by the maintainers:
 
