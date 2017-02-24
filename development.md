@@ -24,7 +24,9 @@ Everyone is welcome to contribute!
 The following is a typical development work flow decribing the steps to download the SPDK code, make changes and submit a patch for review:
 
 *Step 1* - Log in to github.com and fork the SPDK repository.
+
 *Step 2* - Create a new branch in your private copy of the SPDK repository that you forked in the previous step.
+
 *Step 3* - Run git clone command on your development box to download the code.
 
   ~~~{.sh}
@@ -61,6 +63,7 @@ The following is a typical development work flow decribing the steps to download
   All code should be checked for style correctness by running `scripts/check_format.sh`. This script requires `astyle` and optionally `pep8` and will automatically format C, C++, and Python code.
 
 *Step 8* - Submit a pull request using [GitHub pull requests](http://github.com/spdk/spdk/pulls) (PRs)
+
 *Step 9* - Github PR will automatically include the commit message. You can edit the commit message and provide more details of the changes you made. Ensure you include the Signed-off-by the developer at the end of pull request description.  
 
 Patch discussion will happen directly on the GitHub PR. Design pre-work and general discussion occurs on the mailing list. Anyone can provide feedback in either location and all discussion is welcome. Decisions on whether to merge patches will be handled by the maintainers:
