@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="Content-Type" content="text/xhtml; charset=utf-8">
   <meta name="generator" content="Doxygen 1.8.13">
-  <title>SPDK: NVMe Driver</title>
+  <title>SPDK: NVMe over Fabrics Host Support</title>
   <script type="text/javascript" src="jquery.js"></script>
   <script type="text/javascript" src="dynsections.js"></script>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,900" type="text/css">
@@ -78,44 +78,14 @@
 </div><!-- top -->
 <div class="header">
   <div class="headertitle">
-<div class="title">NVMe Driver </div>  </div>
+<div class="title">NVMe over Fabrics Host Support </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h1><a class="anchor" id="nvme_interface"></a>
-Public Interface</h1>
-<ul>
-<li><a class="el" href="nvme_8h.html" title="NVMe driver public API. ">spdk/nvme.h</a></li>
-</ul>
-<h1><a class="anchor" id="nvme_key_functions"></a>
-Key Functions</h1>
-<table class="doxtable">
-<tr>
-<th>Function </th><th>Description  </th></tr>
-<tr>
-<td><a class="el" href="nvme_8h.html#a225bbc386ec518ae21bd5536f21db45d" title="Enumerate the bus indicated by the transport ID and attach the userspace NVMe driver to each device f...">spdk_nvme_probe()</a> </td><td>Enumerate the bus indicated by the transport ID and attach the userspace NVMe driver to each device found if desired. </td></tr>
-<tr>
-<td><a class="el" href="nvme_8h.html#a084c6ecb53bd810fbb5051100b79bec5" title="Submits a read I/O to the specified NVMe namespace. ">spdk_nvme_ns_cmd_read()</a> </td><td>Submits a read I/O to the specified NVMe namespace. </td></tr>
-<tr>
-<td><a class="el" href="nvme_8h.html#a3065f669d8b605efdcadffbf94a50538" title="Submits a write I/O to the specified NVMe namespace. ">spdk_nvme_ns_cmd_write()</a> </td><td>Submits a write I/O to the specified NVMe namespace. </td></tr>
-<tr>
-<td><a class="el" href="nvme_8h.html#ac0c646dd18675c54ffcf834ce699658d" title="Submits a data set management request to the specified NVMe namespace. ">spdk_nvme_ns_cmd_dataset_management()</a> </td><td>Submits a data set management request to the specified NVMe namespace. </td></tr>
-<tr>
-<td><a class="el" href="nvme_8h.html#aed0b134e140121bb9bd8664d4a43a5c6" title="Submits a flush request to the specified NVMe namespace. ">spdk_nvme_ns_cmd_flush()</a> </td><td>Submits a flush request to the specified NVMe namespace. </td></tr>
-<tr>
-<td><a class="el" href="nvme_8h.html#aa331d140870e977722bfbb6826524782" title="Process any outstanding completions for I/O submitted on a queue pair. ">spdk_nvme_qpair_process_completions()</a> </td><td>Process any outstanding completions for I/O submitted on a queue pair. </td></tr>
-<tr>
-<td><a class="el" href="nvme_8h.html#afe2a9d3b715649b4d0a0e89196a13e6d" title="Send the given admin command to the NVMe controller. ">spdk_nvme_ctrlr_cmd_admin_raw()</a> </td><td>Send the given admin command to the NVMe controller. </td></tr>
-<tr>
-<td><a class="el" href="nvme_8h.html#a10282695461985f58f54de022911745e" title="Process any outstanding completions for admin commands. ">spdk_nvme_ctrlr_process_admin_completions()</a> </td><td>Process any outstanding completions for admin commands. </td></tr>
-</table>
-<h1><a class="anchor" id="nvme_key_concepts"></a>
-Key Concepts</h1>
-<ul>
-<li><a class="el" href="nvme_initialization.html">NVMe Initialization</a></li>
-<li><a class="el" href="nvme_io_submission.html">NVMe I/O Submission</a></li>
-<li><a class="el" href="nvme_async_completion.html">NVMe Asynchronous Completion</a></li>
-<li><a class="el" href="nvme_fabrics_host.html">NVMe over Fabrics Host Support</a> </li>
-</ul>
+<div class="textblock"><p>The NVMe driver supports connecting to remote NVMe-oF targets and interacting with them in the same manner as local NVMe controllers.</p>
+<h1><a class="anchor" id="nvme_fabrics_trid"></a>
+Specifying Remote NVMe over Fabrics Targets</h1>
+<p>The method for connecting to a remote NVMe-oF target is very similar to the normal enumeration process for local PCIe-attached NVMe devices. To connect to a remote NVMe over Fabrics subsystem, the user may call <a class="el" href="nvme_8h.html#a225bbc386ec518ae21bd5536f21db45d" title="Enumerate the bus indicated by the transport ID and attach the userspace NVMe driver to each device f...">spdk_nvme_probe()</a> with the <code>trid</code> parameter specifying the address of the NVMe-oF target. The caller may fill out the <a class="el" href="structspdk__nvme__transport__id.html" title="NVMe transport identifier. ">spdk_nvme_transport_id</a> structure manually or use the <a class="el" href="nvme_8h.html#ac37484cc5d14777e4ae1fde031d0edf2" title="Parse the string representation of a transport ID. ">spdk_nvme_transport_id_parse()</a> function to convert a human-readable string representation into the required structure.</p>
+<p>The <a class="el" href="structspdk__nvme__transport__id.html" title="NVMe transport identifier. ">spdk_nvme_transport_id</a> may contain the address of a discovery service or a single NVM subsystem. If a discovery service address is specified, the NVMe library will call the <a class="el" href="nvme_8h.html#a225bbc386ec518ae21bd5536f21db45d" title="Enumerate the bus indicated by the transport ID and attach the userspace NVMe driver to each device f...">spdk_nvme_probe()</a> <code>probe_cb</code> for each discovered NVM subsystem, which allows the user to select the desired subsystems to be attached. Alternatively, if the address specifies a single NVM subsystem directly, the NVMe library will call <code>probe_cb</code> for just that subsystem; this allows the user to skip the discovery step and connect directly to a subsystem with a known address. </p>
 </div></div><!-- contents -->
 <footer>
   <div class="container text-center">
