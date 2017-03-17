@@ -131,6 +131,22 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 <tr class="memitem:afcd21c030a69d9b3fe1a51b6de09f9fe"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__scsi__lun.html#afcd21c030a69d9b3fe1a51b6de09f9fe">name</a> [SPDK_SCSI_LUN_MAX_NAME_LENGTH]</td></tr>
 <tr class="memdesc:afcd21c030a69d9b3fe1a51b6de09f9fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Name for this LUN.  <a href="#afcd21c030a69d9b3fe1a51b6de09f9fe">More...</a><br /></td></tr>
 <tr class="separator:afcd21c030a69d9b3fe1a51b6de09f9fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ec0a9b35ff8fde3fe29f1d349861e00"><td class="memItemLeft" align="right" valign="top"><a id="a8ec0a9b35ff8fde3fe29f1d349861e00"></a>
+struct spdk_poller *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__scsi__lun.html#a8ec0a9b35ff8fde3fe29f1d349861e00">hotplug_poller</a></td></tr>
+<tr class="memdesc:a8ec0a9b35ff8fde3fe29f1d349861e00"><td class="mdescLeft">&#160;</td><td class="mdescRight">Poller to release the resource of the lun when it is hot removed. <br /></td></tr>
+<tr class="separator:a8ec0a9b35ff8fde3fe29f1d349861e00"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a450393439cac1477e799a67fc779d1"><td class="memItemLeft" align="right" valign="top"><a id="a0a450393439cac1477e799a67fc779d1"></a>
+uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__scsi__lun.html#a0a450393439cac1477e799a67fc779d1">lcore</a></td></tr>
+<tr class="memdesc:a0a450393439cac1477e799a67fc779d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">The core hotplug_poller is assigned. <br /></td></tr>
+<tr class="separator:a0a450393439cac1477e799a67fc779d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2b37691eb3b919039a74fe55891bfc2"><td class="memItemLeft" align="right" valign="top"><a id="af2b37691eb3b919039a74fe55891bfc2"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__scsi__lun.html#af2b37691eb3b919039a74fe55891bfc2">removed</a></td></tr>
+<tr class="memdesc:af2b37691eb3b919039a74fe55891bfc2"><td class="mdescLeft">&#160;</td><td class="mdescRight">The LUN is removed. <br /></td></tr>
+<tr class="separator:af2b37691eb3b919039a74fe55891bfc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb32f73857dc9c1fd1fb06bd3c8cf511"><td class="memItemLeft" align="right" valign="top"><a id="aeb32f73857dc9c1fd1fb06bd3c8cf511"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__scsi__lun.html#aeb32f73857dc9c1fd1fb06bd3c8cf511">claimed</a></td></tr>
+<tr class="memdesc:aeb32f73857dc9c1fd1fb06bd3c8cf511"><td class="mdescLeft">&#160;</td><td class="mdescRight">The LUN is clamed. <br /></td></tr>
+<tr class="separator:aeb32f73857dc9c1fd1fb06bd3c8cf511"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Represents a SCSI LUN. </p>

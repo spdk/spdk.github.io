@@ -100,18 +100,21 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:afe30344a78820f41b2a0fc6b492f7d2d"><td class="memItemLeft" align="right" valign="top"><a id="afe30344a78820f41b2a0fc6b492f7d2d"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>TAILQ_HEAD</b> (, spdk_nvmf_session) sessions</td></tr>
 <tr class="separator:afe30344a78820f41b2a0fc6b492f7d2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4fb7647f10edb7fc5eef3896cd8e9630"><td class="memItemLeft" align="right" valign="top"><a id="a4fb7647f10edb7fc5eef3896cd8e9630"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>TAILQ_HEAD</b> (, <a class="el" href="structspdk__nvmf__listen__addr.html">spdk_nvmf_listen_addr</a>) listen_addrs</td></tr>
-<tr class="separator:a4fb7647f10edb7fc5eef3896cd8e9630"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af5f8b3581001253b0face53917cd0101"><td class="memItemLeft" align="right" valign="top"><a id="af5f8b3581001253b0face53917cd0101"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>TAILQ_HEAD</b> (, <a class="el" href="structspdk__nvmf__host.html">spdk_nvmf_host</a>) hosts</td></tr>
 <tr class="separator:af5f8b3581001253b0face53917cd0101"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a980409ee82ff788ef7583648646bd74a"><td class="memItemLeft" align="right" valign="top"><a id="a980409ee82ff788ef7583648646bd74a"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>TAILQ_HEAD</b> (, <a class="el" href="structspdk__nvmf__subsystem__allowed__listener.html">spdk_nvmf_subsystem_allowed_listener</a>) allowed_listeners</td></tr>
+<tr class="separator:a980409ee82ff788ef7583648646bd74a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a60c440237811e44643bf9897415bc785"><td class="memItemLeft" align="right" valign="top"><a id="a60c440237811e44643bf9897415bc785"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>TAILQ_ENTRY</b> (<a class="el" href="structspdk__nvmf__subsystem.html">spdk_nvmf_subsystem</a>) entries</td></tr>
 <tr class="separator:a60c440237811e44643bf9897415bc785"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
+<tr class="memitem:ae4a7c0f8cc61ca2f6c3f0e3487bc7b40"><td class="memItemLeft" align="right" valign="top"><a id="ae4a7c0f8cc61ca2f6c3f0e3487bc7b40"></a>
+uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>id</b></td></tr>
+<tr class="separator:ae4a7c0f8cc61ca2f6c3f0e3487bc7b40"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afa0d096fb8acadb39f4d0046031c8663"><td class="memItemLeft" align="right" valign="top"><a id="afa0d096fb8acadb39f4d0046031c8663"></a>
 uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>lcore</b></td></tr>
 <tr class="separator:afa0d096fb8acadb39f4d0046031c8663"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -124,6 +127,9 @@ enum spdk_nvmf_subsystem_mode&#160;</td><td class="memItemRight" valign="bottom"
 <tr class="memitem:a6e8731b7e90351bef66ecb4b3e691bfd"><td class="memItemLeft" align="right" valign="top"><a id="a6e8731b7e90351bef66ecb4b3e691bfd"></a>
 enum <a class="el" href="nvmf__spec_8h.html#a808272f050cc373f3a90871c1528afd4">spdk_nvmf_subtype</a>&#160;</td><td class="memItemRight" valign="bottom"><b>subtype</b></td></tr>
 <tr class="separator:a6e8731b7e90351bef66ecb4b3e691bfd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a200ec3a548b27adbe15734365a9f1019"><td class="memItemLeft" align="right" valign="top"><a id="a200ec3a548b27adbe15734365a9f1019"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>is_removed</b></td></tr>
+<tr class="separator:a200ec3a548b27adbe15734365a9f1019"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9ad030e82dc19397eebdb87c0d7e6880"><td class="memItemLeft" ><a id="a9ad030e82dc19397eebdb87c0d7e6880"></a>
 union {</td></tr>
 <tr class="memitem:a90050770ffc28d6d407fdcdf1f73bc80"><td class="memItemLeft" >
@@ -137,6 +143,12 @@ union {</td></tr>
 <tr class="memitem:a3784ee26e1cd95f11999a4e9edc8488e"><td class="memItemLeft" >
 &#160;&#160;&#160;&#160;&#160;&#160;struct <a class="el" href="structspdk__pci__addr.html">spdk_pci_addr</a>&#160;&#160;&#160;<b>pci_addr</b></td></tr>
 <tr class="separator:a3784ee26e1cd95f11999a4e9edc8488e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20a79236493e90441bb26c3ea0c9c40b"><td class="memItemLeft" >
+&#160;&#160;&#160;&#160;&#160;&#160;struct spdk_poller *&#160;&#160;&#160;<b>admin_poller</b></td></tr>
+<tr class="separator:a20a79236493e90441bb26c3ea0c9c40b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aabb8b5d0a550fa23da8bf40a805b08fa"><td class="memItemLeft" >
+&#160;&#160;&#160;&#160;&#160;&#160;int32_t&#160;&#160;&#160;<b>outstanding_admin_cmd_count</b></td></tr>
+<tr class="separator:aabb8b5d0a550fa23da8bf40a805b08fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a90050770ffc28d6d407fdcdf1f73bc80"><td class="memItemLeft" valign="top">&#160;&#160;&#160;}&#160;&#160;&#160;<b>direct</b></td></tr>
 <tr class="separator:a90050770ffc28d6d407fdcdf1f73bc80"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6c8ea5b4945320fab31cd225fea14c6e"><td class="memItemLeft" >
@@ -169,9 +181,6 @@ spdk_nvmf_subsystem_connect_fn&#160;</td><td class="memItemRight" valign="bottom
 <tr class="memitem:a5905b718580b4150a18c05c571ebd6f0"><td class="memItemLeft" align="right" valign="top"><a id="a5905b718580b4150a18c05c571ebd6f0"></a>
 spdk_nvmf_subsystem_disconnect_fn&#160;</td><td class="memItemRight" valign="bottom"><b>disconnect_cb</b></td></tr>
 <tr class="separator:a5905b718580b4150a18c05c571ebd6f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aadd1f3fe519b26c7ce6da4c01caa54d8"><td class="memItemLeft" align="right" valign="top"><a id="aadd1f3fe519b26c7ce6da4c01caa54d8"></a>
-uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>num_listen_addrs</b></td></tr>
-<tr class="separator:aadd1f3fe519b26c7ce6da4c01caa54d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae5c78f1338cdbc824d486190290ac920"><td class="memItemLeft" align="right" valign="top"><a id="ae5c78f1338cdbc824d486190290ac920"></a>
 uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>num_hosts</b></td></tr>
 <tr class="separator:ae5c78f1338cdbc824d486190290ac920"><td class="memSeparator" colspan="2">&#160;</td></tr>

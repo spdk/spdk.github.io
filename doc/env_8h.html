@@ -85,6 +85,7 @@
 <a href="#nested-classes">Data Structures</a> &#124;
 <a href="#define-members">Macros</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
+<a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">env.h File Reference</div>  </div>
@@ -118,6 +119,16 @@ Typedefs</h2></td></tr>
 <tr class="memitem:abdbcd903dfa26b4e625bdbef66b6d6a8"><td class="memItemLeft" align="right" valign="top"><a id="abdbcd903dfa26b4e625bdbef66b6d6a8"></a>
 typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_pci_enum_cb</b>) (void *enum_ctx, struct spdk_pci_device *pci_dev)</td></tr>
 <tr class="separator:abdbcd903dfa26b4e625bdbef66b6d6a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a162628a69a5b0a96770580ffbf44462b"><td class="memItemLeft" align="right" valign="top"><a id="a162628a69a5b0a96770580ffbf44462b"></a>
+typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_mem_map_notify_cb</b>) (void *cb_ctx, struct spdk_mem_map *map, enum spdk_mem_map_notify_action action, void *vaddr, size_t size)</td></tr>
+<tr class="separator:a162628a69a5b0a96770580ffbf44462b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:a96af19906abf2a01e9f1f2105f90722c"><td class="memItemLeft" align="right" valign="top"><a id="a96af19906abf2a01e9f1f2105f90722c"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>spdk_mem_map_notify_action</b> { <b>SPDK_MEM_MAP_NOTIFY_REGISTER</b>, 
+<b>SPDK_MEM_MAP_NOTIFY_UNREGISTER</b>
+ }</td></tr>
+<tr class="separator:a96af19906abf2a01e9f1f2105f90722c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -192,12 +203,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_
 <tr class="memitem:ae96a59dc23cf16ed24029ea50598be5b"><td class="memItemLeft" align="right" valign="top"><a id="ae96a59dc23cf16ed24029ea50598be5b"></a>
 uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_vtophys</b> (void *buf)</td></tr>
 <tr class="separator:ae96a59dc23cf16ed24029ea50598be5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4613fa88ca335f651857774bea025db2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_8h.html#a4613fa88ca335f651857774bea025db2">spdk_vtophys_register</a> (void *vaddr, uint64_t len)</td></tr>
-<tr class="memdesc:a4613fa88ca335f651857774bea025db2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register the specified memory region for vtophys address translation.  <a href="#a4613fa88ca335f651857774bea025db2">More...</a><br /></td></tr>
-<tr class="separator:a4613fa88ca335f651857774bea025db2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a89d31d1faa8f36266776e0a7b7573a22"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_8h.html#a89d31d1faa8f36266776e0a7b7573a22">spdk_vtophys_unregister</a> (void *vaddr, uint64_t len)</td></tr>
-<tr class="memdesc:a89d31d1faa8f36266776e0a7b7573a22"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unregister the specified memory region from vtophys address translation.  <a href="#a89d31d1faa8f36266776e0a7b7573a22">More...</a><br /></td></tr>
-<tr class="separator:a89d31d1faa8f36266776e0a7b7573a22"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4fdff13ebe1c7830bee0788d6740d186"><td class="memItemLeft" align="right" valign="top"><a id="a4fdff13ebe1c7830bee0788d6740d186"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_pci_nvme_enumerate</b> (spdk_pci_enum_cb enum_cb, void *enum_ctx)</td></tr>
 <tr class="separator:a4fdff13ebe1c7830bee0788d6740d186"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -291,6 +296,30 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_pci_device_cfg_wr
 <tr class="memitem:abafaea6fc34059237e54e0ab254d0f28"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_8h.html#abafaea6fc34059237e54e0ab254d0f28">spdk_call_unaffinitized</a> (void *cb(void *arg), void *arg)</td></tr>
 <tr class="memdesc:abafaea6fc34059237e54e0ab254d0f28"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call a function with CPU affinity unset.  <a href="#abafaea6fc34059237e54e0ab254d0f28">More...</a><br /></td></tr>
 <tr class="separator:abafaea6fc34059237e54e0ab254d0f28"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a512b5ef37a363a4c8e234c060b734605"><td class="memItemLeft" align="right" valign="top"><a id="a512b5ef37a363a4c8e234c060b734605"></a>
+struct spdk_mem_map *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_8h.html#a512b5ef37a363a4c8e234c060b734605">spdk_mem_map_alloc</a> (uint64_t default_translation, spdk_mem_map_notify_cb notify_cb, void *cb_ctx)</td></tr>
+<tr class="memdesc:a512b5ef37a363a4c8e234c060b734605"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate a virtual memory address translation map. <br /></td></tr>
+<tr class="separator:a512b5ef37a363a4c8e234c060b734605"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af88ed69bd8b9a057f672a1170f7a5b6c"><td class="memItemLeft" align="right" valign="top"><a id="af88ed69bd8b9a057f672a1170f7a5b6c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_8h.html#af88ed69bd8b9a057f672a1170f7a5b6c">spdk_mem_map_free</a> (struct spdk_mem_map **pmap)</td></tr>
+<tr class="memdesc:af88ed69bd8b9a057f672a1170f7a5b6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Free a memory map previously allocated by <a class="el" href="env_8h.html#a512b5ef37a363a4c8e234c060b734605" title="Allocate a virtual memory address translation map. ">spdk_mem_map_alloc()</a> <br /></td></tr>
+<tr class="separator:af88ed69bd8b9a057f672a1170f7a5b6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04929e0a471db7bccfc8fa01dcef87dc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_8h.html#a04929e0a471db7bccfc8fa01dcef87dc">spdk_mem_map_set_translation</a> (struct spdk_mem_map *map, uint64_t vaddr, uint64_t size, uint64_t translation)</td></tr>
+<tr class="memdesc:a04929e0a471db7bccfc8fa01dcef87dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register an address translation for a range of virtual memory.  <a href="#a04929e0a471db7bccfc8fa01dcef87dc">More...</a><br /></td></tr>
+<tr class="separator:a04929e0a471db7bccfc8fa01dcef87dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e15bc53a3efd7236469216079252750"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_8h.html#a1e15bc53a3efd7236469216079252750">spdk_mem_map_clear_translation</a> (struct spdk_mem_map *map, uint64_t vaddr, uint64_t size)</td></tr>
+<tr class="memdesc:a1e15bc53a3efd7236469216079252750"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unregister an address translation.  <a href="#a1e15bc53a3efd7236469216079252750">More...</a><br /></td></tr>
+<tr class="separator:a1e15bc53a3efd7236469216079252750"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa93008c5c5f0c79c286b7edd70343ee1"><td class="memItemLeft" align="right" valign="top"><a id="aa93008c5c5f0c79c286b7edd70343ee1"></a>
+uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_8h.html#aa93008c5c5f0c79c286b7edd70343ee1">spdk_mem_map_translate</a> (const struct spdk_mem_map *map, uint64_t vaddr)</td></tr>
+<tr class="memdesc:aa93008c5c5f0c79c286b7edd70343ee1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Look up the translation of a virtual address in a memory map. <br /></td></tr>
+<tr class="separator:aa93008c5c5f0c79c286b7edd70343ee1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abca606866151a5e9b332dea9886d14d8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_8h.html#abca606866151a5e9b332dea9886d14d8">spdk_mem_register</a> (void *vaddr, size_t len)</td></tr>
+<tr class="memdesc:abca606866151a5e9b332dea9886d14d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register the specified memory region for address translation.  <a href="#abca606866151a5e9b332dea9886d14d8">More...</a><br /></td></tr>
+<tr class="separator:abca606866151a5e9b332dea9886d14d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9276386cda18099d1be51e34a64a4f3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_8h.html#ad9276386cda18099d1be51e34a64a4f3">spdk_mem_unregister</a> (void *vaddr, size_t len)</td></tr>
+<tr class="memdesc:ad9276386cda18099d1be51e34a64a4f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unregister the specified memory region from vtophys address translation.  <a href="#ad9276386cda18099d1be51e34a64a4f3">More...</a><br /></td></tr>
+<tr class="separator:ad9276386cda18099d1be51e34a64a4f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Encapsulated third-party dependencies. </p>
@@ -373,6 +402,157 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_pci_device_cfg_wr
 
 <p>Free a memory buffer previously allocated with spdk_zmalloc. </p>
 <p>This call is never made from the performance path. </p>
+
+</div>
+</div>
+<a id="a1e15bc53a3efd7236469216079252750"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e15bc53a3efd7236469216079252750">&#9670;&nbsp;</a></span>spdk_mem_map_clear_translation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_mem_map_clear_translation </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_mem_map *&#160;</td>
+          <td class="paramname"><em>map</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>vaddr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Unregister an address translation. </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="env_8h.html#a04929e0a471db7bccfc8fa01dcef87dc" title="Register an address translation for a range of virtual memory. ">spdk_mem_map_set_translation()</a> </dd></dl>
+
+</div>
+</div>
+<a id="a04929e0a471db7bccfc8fa01dcef87dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a04929e0a471db7bccfc8fa01dcef87dc">&#9670;&nbsp;</a></span>spdk_mem_map_set_translation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_mem_map_set_translation </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_mem_map *&#160;</td>
+          <td class="paramname"><em>map</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>vaddr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>translation</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Register an address translation for a range of virtual memory. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">map</td><td>Memory map </td></tr>
+    <tr><td class="paramname">vaddr</td><td>Virtual address of the region to register - must be 2 MB aligned. </td></tr>
+    <tr><td class="paramname">size</td><td>Size of the region - must be 2 MB in the current implementation. </td></tr>
+    <tr><td class="paramname">translation</td><td>Translation to store in the map for this address range.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="env_8h.html#a1e15bc53a3efd7236469216079252750" title="Unregister an address translation. ">spdk_mem_map_clear_translation()</a> </dd></dl>
+
+</div>
+</div>
+<a id="abca606866151a5e9b332dea9886d14d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abca606866151a5e9b332dea9886d14d8">&#9670;&nbsp;</a></span>spdk_mem_register()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_mem_register </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>vaddr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Register the specified memory region for address translation. </p>
+<p>The memory region must map to pinned huge pages (2MB or greater). </p>
+
+</div>
+</div>
+<a id="ad9276386cda18099d1be51e34a64a4f3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad9276386cda18099d1be51e34a64a4f3">&#9670;&nbsp;</a></span>spdk_mem_unregister()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_mem_unregister </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>vaddr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Unregister the specified memory region from vtophys address translation. </p>
+<p>The caller must ensure all in-flight DMA operations to this memory region are completed or cancelled before calling this function. </p>
 
 </div>
 </div>
@@ -697,68 +877,6 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_pci_device_cfg_wr
 
 <p>Resize the allocated and pinned memory buffer with the given new size and alignment. </p>
 <p>Existing contents are preserved. </p>
-
-</div>
-</div>
-<a id="a4613fa88ca335f651857774bea025db2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4613fa88ca335f651857774bea025db2">&#9670;&nbsp;</a></span>spdk_vtophys_register()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void spdk_vtophys_register </td>
-          <td>(</td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>vaddr</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint64_t&#160;</td>
-          <td class="paramname"><em>len</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Register the specified memory region for vtophys address translation. </p>
-<p>The memory region must map to pinned huge pages (2MB or greater). </p>
-
-</div>
-</div>
-<a id="a89d31d1faa8f36266776e0a7b7573a22"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a89d31d1faa8f36266776e0a7b7573a22">&#9670;&nbsp;</a></span>spdk_vtophys_unregister()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void spdk_vtophys_unregister </td>
-          <td>(</td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>vaddr</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint64_t&#160;</td>
-          <td class="paramname"><em>len</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Unregister the specified memory region from vtophys address translation. </p>
-<p>The caller must ensure all in-flight DMA operations to this memory region are completed or cancelled before calling this function. </p>
 
 </div>
 </div>

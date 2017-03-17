@@ -141,10 +141,18 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 pthread_mutex_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev.html#a789560198e85f1643f67c59825fdb577">mutex</a></td></tr>
 <tr class="memdesc:a789560198e85f1643f67c59825fdb577"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mutex protecting claimed. <br /></td></tr>
 <tr class="separator:a789560198e85f1643f67c59825fdb577"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a79e445b2f9bd0e358853b62a42add670"><td class="memItemLeft" align="right" valign="top"><a id="a79e445b2f9bd0e358853b62a42add670"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev.html#a79e445b2f9bd0e358853b62a42add670">claimed</a></td></tr>
-<tr class="memdesc:a79e445b2f9bd0e358853b62a42add670"><td class="mdescLeft">&#160;</td><td class="mdescRight">True if another blockdev or a LUN is using this device. <br /></td></tr>
-<tr class="separator:a79e445b2f9bd0e358853b62a42add670"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd867d7c53f77f62fd252e50898d4f9b"><td class="memItemLeft" align="right" valign="top"><a id="acd867d7c53f77f62fd252e50898d4f9b"></a>
+enum <a class="el" href="bdev_8h.html#ad6c166f5d928c2995df57c96a2977862">spdk_bdev_status</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev.html#acd867d7c53f77f62fd252e50898d4f9b">status</a></td></tr>
+<tr class="memdesc:acd867d7c53f77f62fd252e50898d4f9b"><td class="mdescLeft">&#160;</td><td class="mdescRight">The bdev status. <br /></td></tr>
+<tr class="separator:acd867d7c53f77f62fd252e50898d4f9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff20cc1a1d89b6a0e80559363398a1fc"><td class="memItemLeft" align="right" valign="top"><a id="aff20cc1a1d89b6a0e80559363398a1fc"></a>
+spdk_bdev_remove_cb_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev.html#aff20cc1a1d89b6a0e80559363398a1fc">remove_cb</a></td></tr>
+<tr class="memdesc:aff20cc1a1d89b6a0e80559363398a1fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove callback function pointer to upper level stack. <br /></td></tr>
+<tr class="separator:aff20cc1a1d89b6a0e80559363398a1fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e01839f8d258e89e3a8b33b405a6338"><td class="memItemLeft" align="right" valign="top"><a id="a0e01839f8d258e89e3a8b33b405a6338"></a>
+void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev.html#a0e01839f8d258e89e3a8b33b405a6338">remove_ctx</a></td></tr>
+<tr class="memdesc:a0e01839f8d258e89e3a8b33b405a6338"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback context for hot remove the device. <br /></td></tr>
+<tr class="separator:a0e01839f8d258e89e3a8b33b405a6338"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>SPDK block device. </p>
