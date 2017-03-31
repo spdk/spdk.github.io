@@ -4,7 +4,7 @@
     <div class="blog-section">
       <h2 class="blog-heading">{{ post.title }}</h2>
       <div class="blog-author">{{ post.date | date: "%b %-d, %Y" }} • {{ post.author }}</div>
-      <div class="lead">{{ post.excerpt }}  <a class="post-link" href="{{ site.baseurl }}{{ post.url }}">Continue...</a></div>
+      <div class="lead">{{ post.excerpt }}  <a class="post-link" href="{{ baseurl_rel }}{{ post.url }}">Continue...</a></div>
     </div>
   {% endfor %}
 </section>

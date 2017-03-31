@@ -1,4 +1,22 @@
 <head>
+  {% assign url_slash_count = page.url | split: '/' | size %}
+
+  {% if url_slash_count <= 1 %}
+    {% assign baseurl_rel = '.' %}
+  {% elsif url_slash_count == 2 %}
+    {% assign baseurl_rel = '..' %}
+  {% elsif url_slash_count == 3 %}
+    {% assign baseurl_rel = '../..' %}
+  {% elsif url_slash_count == 4 %}
+    {% assign baseurl_rel = '../../..' %}
+  {% elsif url_slash_count == 5 %}
+    {% assign baseurl_rel = '../../../..' %}
+  {% elsif url_slash_count == 6 %}
+    {% assign baseurl_rel = '../../../../..' %}
+  {% else %}
+    {% assign baseurl_rel = site.baseurl %}
+  {% endif %}
+
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,7 +27,7 @@
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link rel="stylesheet" href='https://fonts.googleapis.com/css?family=Roboto:400,900' type='text/css'>
-  <link rel="stylesheet" href="{{ site.baseurl }}/css/spdk.css">
+  <link rel="stylesheet" href="{{ baseurl_rel }}/css/spdk.css">
 
-  <link href="{{ site.baseurl }}/feed.xml" type="application/atom+xml" rel="alternate" title="Atom Feed">
+  <link href="{{ baseurl_rel }}/feed.xml" type="application/atom+xml" rel="alternate" title="Atom Feed">
 </head>
