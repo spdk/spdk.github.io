@@ -13,10 +13,10 @@
       {% else %}
       <li role="presentation">
       {% endif %}
-        {% if box.url | slice: 0 == '/' %}
-        <a href="{{ baseurl_rel }}{{ box.url }}">
-        {% else %}
+        {% if box.url contains 'http' %}
         <a href="{{ box.url }}">
+        {% else %}
+        <a href="{{ baseurl_rel }}{{ box.url }}">
         {% endif %}
           <i class="glyphicon glyphicon-{{ box.ico }}"></i>
           <span class="box-name">{{ box.title }}</span>
