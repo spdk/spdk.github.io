@@ -116,6 +116,9 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 <tr class="memitem:a39d3f0640a4c302aa3ff11544aa6a428"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__ctrlr__opts.html#a39d3f0640a4c302aa3ff11544aa6a428">hostnqn</a> [SPDK_NVMF_NQN_MAX_LEN+1]</td></tr>
 <tr class="memdesc:a39d3f0640a4c302aa3ff11544aa6a428"><td class="mdescLeft">&#160;</td><td class="mdescRight">The host NQN to use when connecting to NVMe over Fabrics controllers.  <a href="#a39d3f0640a4c302aa3ff11544aa6a428">More...</a><br /></td></tr>
 <tr class="separator:a39d3f0640a4c302aa3ff11544aa6a428"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a552e09920f8e8a21243dee31ab05f581"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__ctrlr__opts.html#a552e09920f8e8a21243dee31ab05f581">io_queue_requests</a></td></tr>
+<tr class="memdesc:a552e09920f8e8a21243dee31ab05f581"><td class="mdescLeft">&#160;</td><td class="mdescRight">The number of requests to allocate for each NVMe I/O queue.  <a href="#a552e09920f8e8a21243dee31ab05f581">More...</a><br /></td></tr>
+<tr class="separator:a552e09920f8e8a21243dee31ab05f581"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>NVMe controller initialization options. </p>
@@ -135,6 +138,24 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 
 <p>The host NQN to use when connecting to NVMe over Fabrics controllers. </p>
 <p>Unused for local PCIe-attached NVMe devices. </p>
+
+</div>
+</div>
+<a id="a552e09920f8e8a21243dee31ab05f581"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a552e09920f8e8a21243dee31ab05f581">&#9670;&nbsp;</a></span>io_queue_requests</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t spdk_nvme_ctrlr_opts::io_queue_requests</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The number of requests to allocate for each NVMe I/O queue. </p>
+<p>This should be at least as large as io_queue_size.</p>
+<p>A single I/O may allocate more than one request, since splitting may be necessary to conform to the device's maximum transfer size, PRP list compatibility requirements, or driver-assisted striping. </p>
 
 </div>
 </div>
