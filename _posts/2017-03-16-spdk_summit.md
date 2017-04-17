@@ -19,18 +19,15 @@ Santa Clara, CA  95054
 April 19 - 9 am - 6 pm  
 April 20 - 9 am - 3 pm  
 
-### Registration Deadline
-March 28, 2017  
+### Event Website and Agenda
+[Intel Builders Developer Summit](https://builders.intel.com/events2017/developer-summit-santaclara/event)
 
-[Registration Link](https://starcite.smarteventscloud.com/rsvp/invitation/invitation.asp?id=/m1c9c39f-1UXFLHS0KFU8)
-
-Agenda Topics (Subject to Change)
----------------------------------
+### Agenda Topics
 Blobstore: A local, persistent, power-fail safe block allocator designed to replace filesystem usage in many popular databases.
 
 VM I/O Efficiency: SPDK takes QEMU VM I/O efficiency one big step further with the SPDK vhost-scsi Target.
 
-NVMe over Fabric: A deep-dive into the new flash-native block protocol, covering the use cases and capabilities of the SPDK NVMe-oF ingredients.
+NVMe over Fabrics: A deep-dive into the new flash-native block protocol, covering the use cases and capabilities of the SPDK NVMe-oF ingredients.
 
 Under the Hood: Unpacking the design choices that lead to high-performance storage ingredients.
 
