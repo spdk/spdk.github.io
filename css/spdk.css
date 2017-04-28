@@ -103,6 +103,7 @@ h6 {
 
 .content {
     padding: 50px;
+    padding-top: 0;
     font-size: 18px;
     font-weight: 400;
     text-align: justify;
