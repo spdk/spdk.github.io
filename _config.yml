@@ -26,8 +26,8 @@ boxes:
   - title: development
     url: /development/
     ico: wrench
-  - title: mailing list
-    url: https://lists.01.org/mailman/listinfo/spdk
+  - title: community
+    url: /community/
     ico: envelope
   - title: Blog
     url: /blog/
