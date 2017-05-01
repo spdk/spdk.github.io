@@ -109,16 +109,68 @@ Key Functions</h1>
 <tr>
 <td><a class="el" href="nvme_8h.html#a10282695461985f58f54de022911745e" title="Process any outstanding completions for admin commands. ">spdk_nvme_ctrlr_process_admin_completions()</a> </td><td>Process any outstanding completions for admin commands. </td></tr>
 </table>
-<h1><a class="anchor" id="nvme_key_concepts"></a>
-Key Concepts</h1>
-<ul>
-<li><a class="el" href="nvme_initialization.html">NVMe Initialization</a></li>
-<li><a class="el" href="nvme_io_submission.html">NVMe I/O Submission</a></li>
-<li><a class="el" href="nvme_async_completion.html">NVMe Asynchronous Completion</a></li>
-<li><a class="el" href="nvme_fabrics_host.html">NVMe over Fabrics Host Support</a></li>
-<li><a class="el" href="nvme_multi_process.html">NVMe Multi Process</a></li>
-<li><a class="el" href="nvme_hotplug.html">NVMe Hotplug</a> </li>
-</ul>
+<h1><a class="anchor" id="nvme_initialization"></a>
+NVMe Initialization</h1>
+<div class="mscgraph">
+<img src="msc_inline_mscgraph_1.png" alt="msc_inline_mscgraph_1" border="0" usemap="#msc_inline_mscgraph_1.map"/>
+<map name="msc_inline_mscgraph_1.map" id="msc_inline_mscgraph_1.map"></map>
+</div>
+<h1><a class="anchor" id="nvme_io_submission"></a>
+NVMe I/O Submission</h1>
+<p>I/O is submitted to an NVMe namespace using nvme_ns_cmd_xxx functions defined in nvme_ns_cmd.c. The NVMe driver submits the I/O request as an NVMe submission queue entry on the queue pair specified in the command. The application must poll for I/O completion on each queue pair with outstanding I/O to receive completion callbacks.</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="nvme_8h.html#a084c6ecb53bd810fbb5051100b79bec5" title="Submits a read I/O to the specified NVMe namespace. ">spdk_nvme_ns_cmd_read</a>, <a class="el" href="nvme_8h.html#a3065f669d8b605efdcadffbf94a50538" title="Submits a write I/O to the specified NVMe namespace. ">spdk_nvme_ns_cmd_write</a>, <a class="el" href="nvme_8h.html#ac0c646dd18675c54ffcf834ce699658d" title="Submits a data set management request to the specified NVMe namespace. ">spdk_nvme_ns_cmd_dataset_management</a>, <a class="el" href="nvme_8h.html#aed0b134e140121bb9bd8664d4a43a5c6" title="Submits a flush request to the specified NVMe namespace. ">spdk_nvme_ns_cmd_flush</a>, <a class="el" href="nvme_8h.html#aa331d140870e977722bfbb6826524782" title="Process any outstanding completions for I/O submitted on a queue pair. ">spdk_nvme_qpair_process_completions</a></dd></dl>
+<h1><a class="anchor" id="nvme_async_completion"></a>
+NVMe Asynchronous Completion</h1>
+<p>The userspace NVMe driver follows an asynchronous polled model for I/O completion.</p>
+<h2><a class="anchor" id="nvme_async_io"></a>
+I/O commands</h2>
+<p>The application may submit I/O from one or more threads on one or more queue pairs and must call <a class="el" href="nvme_8h.html#aa331d140870e977722bfbb6826524782" title="Process any outstanding completions for I/O submitted on a queue pair. ">spdk_nvme_qpair_process_completions()</a> for each queue pair that submitted I/O.</p>
+<p>When the application calls <a class="el" href="nvme_8h.html#aa331d140870e977722bfbb6826524782" title="Process any outstanding completions for I/O submitted on a queue pair. ">spdk_nvme_qpair_process_completions()</a>, if the NVMe driver detects completed I/Os that were submitted on that queue, it will invoke the registered callback function for each I/O within the context of <a class="el" href="nvme_8h.html#aa331d140870e977722bfbb6826524782" title="Process any outstanding completions for I/O submitted on a queue pair. ">spdk_nvme_qpair_process_completions()</a>.</p>
+<h2><a class="anchor" id="nvme_async_admin"></a>
+Admin commands</h2>
+<p>The application may submit admin commands from one or more threads and must call <a class="el" href="nvme_8h.html#a10282695461985f58f54de022911745e" title="Process any outstanding completions for admin commands. ">spdk_nvme_ctrlr_process_admin_completions()</a> from at least one thread to receive admin command completions. The thread that processes admin completions need not be the same thread that submitted the admin commands.</p>
+<p>When the application calls <a class="el" href="nvme_8h.html#a10282695461985f58f54de022911745e" title="Process any outstanding completions for admin commands. ">spdk_nvme_ctrlr_process_admin_completions()</a>, if the NVMe driver detects completed admin commands submitted from any thread, it will invote the registered callback function for each command within the context of <a class="el" href="nvme_8h.html#a10282695461985f58f54de022911745e" title="Process any outstanding completions for admin commands. ">spdk_nvme_ctrlr_process_admin_completions()</a>.</p>
+<p>It is the application's responsibility to manage the order of submitted admin commands. If certain admin commands must be submitted while no other commands are outstanding, it is the application's responsibility to enforce this rule using its own synchronization method.</p>
+<h1><a class="anchor" id="nvme_fabrics_host"></a>
+NVMe over Fabrics Host Support</h1>
+<p>The NVMe driver supports connecting to remote NVMe-oF targets and interacting with them in the same manner as local NVMe controllers.</p>
+<h2><a class="anchor" id="nvme_fabrics_trid"></a>
+Specifying Remote NVMe over Fabrics Targets</h2>
+<p>The method for connecting to a remote NVMe-oF target is very similar to the normal enumeration process for local PCIe-attached NVMe devices. To connect to a remote NVMe over Fabrics subsystem, the user may call <a class="el" href="nvme_8h.html#a225bbc386ec518ae21bd5536f21db45d" title="Enumerate the bus indicated by the transport ID and attach the userspace NVMe driver to each device f...">spdk_nvme_probe()</a> with the <code>trid</code> parameter specifying the address of the NVMe-oF target. The caller may fill out the <a class="el" href="structspdk__nvme__transport__id.html" title="NVMe transport identifier. ">spdk_nvme_transport_id</a> structure manually or use the <a class="el" href="nvme_8h.html#ac37484cc5d14777e4ae1fde031d0edf2" title="Parse the string representation of a transport ID. ">spdk_nvme_transport_id_parse()</a> function to convert a human-readable string representation into the required structure.</p>
+<p>The <a class="el" href="structspdk__nvme__transport__id.html" title="NVMe transport identifier. ">spdk_nvme_transport_id</a> may contain the address of a discovery service or a single NVM subsystem. If a discovery service address is specified, the NVMe library will call the <a class="el" href="nvme_8h.html#a225bbc386ec518ae21bd5536f21db45d" title="Enumerate the bus indicated by the transport ID and attach the userspace NVMe driver to each device f...">spdk_nvme_probe()</a> <code>probe_cb</code> for each discovered NVM subsystem, which allows the user to select the desired subsystems to be attached. Alternatively, if the address specifies a single NVM subsystem directly, the NVMe library will call <code>probe_cb</code> for just that subsystem; this allows the user to skip the discovery step and connect directly to a subsystem with a known address.</p>
+<h1><a class="anchor" id="nvme_multi_process"></a>
+NVMe Multi Process</h1>
+<p>This capability enables the SPDK NVMe driver to support multiple processes accessing the same NVMe device. The NVMe driver allocates critical structures from shared memory, so that each process can map that memory and create its own queue pairs or share the admin queue. There is a limited number of I/O queue pairs per NVMe controller.</p>
+<p>The primary motivation for this feature is to support management tools that can attach to long running applications, perform some maintenance work or gather information, and then detach.</p>
+<h2><a class="anchor" id="nvme_multi_process_configuration"></a>
+Configuration</h2>
+<p>DPDK EAL allows different types of processes to be spawned, each with different permissions on the hugepage memory used by the applications.</p>
+<p>There are two types of processes:</p><ol type="1">
+<li>a primary process which initializes the shared memory and has full privileges and</li>
+<li>a secondary process which can attach to the primary process by mapping its shared memory regions and perform NVMe operations including creating queue pairs.</li>
+</ol>
+<p>This feature is enabled by default and is controlled by selecting a value for the shared memory group ID. This ID is a positive integer and two applications with the same shared memory group ID will share memory. The first application with a given shared memory group ID will be considered the primary and all others secondary.</p>
+<p>Example: identical shm_id and non-overlapping core masks </p><div class="fragment"><div class="line">./perf options [AIO device(s)]...</div><div class="line">        [-c core mask for I/O submission/completion]</div><div class="line">        [-i shared memory group ID]</div><div class="line"></div><div class="line">./perf -q 1 -s 4096 -w randread -c 0x1 -t 60 -i 1</div><div class="line">./perf -q 8 -s 131072 -w write -c 0x10 -t 60 -i 1</div></div><!-- fragment --><h2><a class="anchor" id="nvme_multi_process_scalability_performance"></a>
+Scalability and Performance</h2>
+<p>To maximize the I/O bandwidth of an NVMe device, ensure that each application has its own queue pairs.</p>
+<p>The optimal threading model for SPDK is one thread per core, regardless of which processes that thread belongs to in the case of multi-process environment. To achieve maximum performance, each thread should also have its own I/O queue pair. Applications that share memory should be given core masks that do not overlap.</p>
+<p>However, admin commands may have some performance impact as there is only one admin queue pair per NVMe SSD. The NVMe driver will automatically take a cross-process capable lock to enable the sharing of admin queue pair. Further, when each process polls the admin queue for completions, it will only see completions for commands that it originated.</p>
+<h2><a class="anchor" id="nvme_multi_process_limitations"></a>
+Limitations</h2>
+<ol type="1">
+<li>Two processes sharing memory may not share any cores in their core mask.</li>
+<li>If a primary process exits while secondary processes are still running, those processes will continue to run. However, a new primary process cannot be created.</li>
+<li>Applications are responsible for coordinating access to logical blocks.</li>
+</ol>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="nvme_8h.html#a225bbc386ec518ae21bd5536f21db45d" title="Enumerate the bus indicated by the transport ID and attach the userspace NVMe driver to each device f...">spdk_nvme_probe</a>, <a class="el" href="nvme_8h.html#a10282695461985f58f54de022911745e" title="Process any outstanding completions for admin commands. ">spdk_nvme_ctrlr_process_admin_completions</a></dd></dl>
+<h1><a class="anchor" id="nvme_hotplug"></a>
+NVMe Hotplug</h1>
+<p>At the NVMe driver level, we provide the following support for Hotplug:</p>
+<ol type="1">
+<li>Hotplug events detection: The user of the NVMe library can call <a class="el" href="nvme_8h.html#a225bbc386ec518ae21bd5536f21db45d" title="Enumerate the bus indicated by the transport ID and attach the userspace NVMe driver to each device f...">spdk_nvme_probe()</a> periodically to detect hotplug events. The probe_cb, followed by the attach_cb, will be called for each new device detected. The user may optionally also provide a remove_cb that will be called if a previously attached NVMe device is no longer present on the system. All subsequent I/O to the removed device will return an error.</li>
+<li>Hot remove NVMe with IO loads: When a device is hot removed while I/O is occurring, all access to the PCI BAR will result in a SIGBUS error. The NVMe driver automatically handles this case by installing a SIGBUS handler and remapping the PCI BAR to a new, placeholder memory location. This means I/O in flight during a hot remove will complete with an appropriate error code and will not crash the application.</li>
+</ol>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="nvme_8h.html#a225bbc386ec518ae21bd5536f21db45d" title="Enumerate the bus indicated by the transport ID and attach the userspace NVMe driver to each device f...">spdk_nvme_probe</a> </dd></dl>
 </div></div><!-- contents -->
 <footer>
   <div class="container text-center">

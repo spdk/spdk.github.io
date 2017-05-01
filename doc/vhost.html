@@ -82,9 +82,57 @@
 <div class="title">vhost </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><ul>
-<li><a class="el" href="vhost_getting_started.html">vhost Getting Started Guide</a> </li>
+<div class="textblock"><h1><a class="anchor" id="vhost_getting_started"></a>
+vhost Getting Started Guide</h1>
+<p>The Storage Performance Development Kit vhost application is named "vhost". This application extends SPDK to present virtio-scsi controllers to QEMU-based VMs and process I/O submitted to devices attached to those controllers.</p>
+<h1><a class="anchor" id="vhost_prereqs"></a>
+Prerequisites</h1>
+<p>The base SPDK build instructions are located README.md in SPDK main directory. This guide assumes familiarity with building SPDK using the default options.</p>
+<h2>Supported Guest Operating Systems</h2>
+<p>The guest OS must contain virtio drivers. The SPDK vhost target has been tested with Ubuntu 16.04, Fedora 25, Windows 2012 R2.</p>
+<h1>Building</h1>
+<h2>SPDK</h2>
+<p>The vhost target is built by default. To enable/disable building the vhost target, either modify the following line in the CONFIG file in the root directory:</p>
+<div class="fragment"><div class="line">CONFIG_VHOST?=y</div></div><!-- fragment --><p>Or specify on the command line:</p>
+<div class="fragment"><div class="line">make CONFIG_VHOST=y</div></div><!-- fragment --><p>Once built, the binary will be at <code>app/vhost/vhost</code>.</p>
+<h2>QEMU</h2>
+<p>Vhost functionality is dependent on QEMU patches to enable vhost-scsi in userspace - those patches are currently working their way through the QEMU mailing list, but temporary patches to enable this functionality are available in the spdk branch at <a href="https://github.com/spdk/qemu">https://github.com/spdk/qemu</a>.</p>
+<h1><a class="anchor" id="vhost_config"></a>
+Configuration</h1>
+<h2>SPDK</h2>
+<p>A <code>vhost</code> specific configuration file is used to configure the SPDK vhost target. A fully documented example configuration file is located at <code>etc/spdk/vhost.conf.in</code>. This file defines the following:</p>
+<h3>Storage Backends</h3>
+<p>Storage backends are block devices which will be exposed as SCSI LUNs on devices attached to the vhost-scsi controller. SPDK supports several different types of storage backends, including NVMe, Linux AIO, malloc ramdisk and Ceph RBD. Refer to <a class="el" href="bdev.html#bdev_getting_started">SPDK bdev Getting Started Guide</a> for additional information on specifying storage backends in the configuration file.</p>
+<h3>Mappings Between SCSI Controllers and Storage Backends</h3>
+<p>The vhost target is exposing SCSI controllers to the virtual machines. Each device in the vhost controller is associated with an SPDK block device and configuration file defines those associations. The block device to Dev mappings are specified in the configuration file as:</p>
+<div class="fragment"><div class="line">[VhostScsiX]</div><div class="line">  Name vhost.X          # Name of vhost socket</div><div class="line">  Dev 0 BackendX        # &quot;BackendX&quot; is block device name from previous</div><div class="line">                        # sections in config file</div><div class="line">  Dev 1 BackendY</div><div class="line">  ...</div><div class="line">  Dev n BackendN</div><div class="line">  #Cpumask 0x1          # Optional parameter defining which core controller uses</div></div><!-- fragment --><h3>Vhost Sockets</h3>
+<p>Userspace vhost uses UNIX domain sockets for communication between QEMU and the vhost target. Each vhost controller is associated with a UNIX domain socket file with filename equal to the Name argument in configuration file. Sockets are created at current directory when starting the SPDK vhost target.</p>
+<h3>Core Affinity Configuration</h3>
+<p>Vhost target can be restricted to run on certain cores by specifying a ReactorMask. Default is to allow vhost target work on core 0. For NUMA systems it is essential to run vhost with cores on each socket to achieve optimal performance.</p>
+<p>To specify which core each controller should use, it can be defined by optional Cpumask parameter in configuration file. For NUMA systems the Cpumask should specify cores on the same CPU socket as its associated VM.</p>
+<h2>QEMU</h2>
+<p>Userspace vhost-scsi adds the following command line option for QEMU: </p><div class="fragment"><div class="line">-device vhost-user-scsi-pci,id=scsi0,chardev=char0</div></div><!-- fragment --><p>In order to start qemu with vhost you need to specify following options:</p>
+<ul>
+<li>Socket, which QEMU will use for vhost communication with SPDK: <div class="fragment"><div class="line">-chardev socket,id=char0,path=/path/to/vhost/socket</div></div><!-- fragment --></li>
+<li>Hugepages to share memory between vm and vhost target <div class="fragment"><div class="line">-object memory-backend-file,id=mem,size=1G,mem-path=/dev/hugepages,share=on</div></div><!-- fragment --></li>
 </ul>
+<h1>Running Vhost Target</h1>
+<p>To get started, the following example is usually sufficient: </p><div class="fragment"><div class="line">app/vhost/vhost -c /path/to/vhost.conf</div></div><!-- fragment --><p>A full list of command line arguments to vhost can be obtained by: </p><div class="fragment"><div class="line">app/vhost/vhost -h</div></div><!-- fragment --><h2>Example</h2>
+<p>Assume that qemu and spdk are in respectively <code>qemu</code> and <code>spdk</code> directories. </p><div class="fragment"><div class="line">./qemu/build/x86_64-softmmu/qemu-system-x86_64 \</div><div class="line">        -m 1024 \</div><div class="line">        -object memory-backend-file,id=mem,size=1G,mem-path=/dev/hugepages,share=on \</div><div class="line">        -numa node,memdev=mem \</div><div class="line">        -drive file=$PROJECTS/os.qcow2,if=none,id=disk \</div><div class="line">        -device ide-hd,drive=disk,bootindex=0 \</div><div class="line">        -chardev socket,id=char0,path=./spdk/vhost.0 \</div><div class="line">        -device vhost-user-scsi-pci,id=scsi0,chardev=char0 \</div><div class="line">        --enable-kvm</div></div><!-- fragment --><h1><a class="anchor" id="vhost_experimental"></a>
+Experimental features</h1>
+<h2>Multi-Queue Block Layer (blk_mq)</h2>
+<p>It is possible to use multiqueue feature in vhost. To enable it on linux it is required to modify kernel options inside virtual machine.</p>
+<p>Instructions below for Ubuntu OS:</p><ol type="1">
+<li><code>vi /etc/default/grub</code></li>
+<li>Make sure mq is enabled: GRUB_CMDLINE_LINUX="scsi_mod.use_blk_mq=1"</li>
+<li><code>sudo update-grub</code></li>
+<li>Reboot virtual machine</li>
+</ol>
+<p>To achieve better performance make sure to increase number of cores assigned to vm.</p>
+<h1><a class="anchor" id="vhost_bugs"></a>
+Known bugs and limitations</h1>
+<h2>Hot plug is not supported</h2>
+<p>Hot plug is not supported in vhost yet. Event queue path doesn't handle that case. While hot plug will be just ignored, hot removal might cause segmentation fault. </p>
 </div></div><!-- contents -->
 <footer>
   <div class="container text-center">

@@ -82,10 +82,44 @@
 <div class="title">iSCSI Target </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><ul>
-<li><a class="el" href="iscsi_getting_started.html">Getting Started Guide</a></li>
-<li><a class="el" href="iscsi_hotplug.html">iSCSI Hotplug</a> </li>
-</ul>
+<div class="textblock"><h1><a class="anchor" id="iscsi_getting_started"></a>
+Getting Started Guide</h1>
+<p>The Intel(R) Storage Performance Development Kit iSCSI target application is named <code>iscsi_tgt</code>. This following section describes how to run iscsi from your cloned package.</p>
+<h2><a class="anchor" id="iscsi_prereqs"></a>
+Prerequisites</h2>
+<p>This guide starts by assuming that you can already build the standard SPDK distribution on your platform. The SPDK iSCSI target has been known to work on several Linux distributions, namely Ubuntu 14.04, 15.04, and 15.10, Fedora 21, 22, and 23, and CentOS 7.</p>
+<p>Once built, the binary will be in <code>app/iscsi_tgt</code>.</p>
+<h2><a class="anchor" id="iscsi_config"></a>
+Configuring iSCSI Target</h2>
+<p>A <code>iscsi_tgt</code> specific configuration file is used to configure the iSCSI target. A fully documented example configuration file is located at <code>etc/spdk/iscsi.conf.in</code>.</p>
+<p>The configuration file is used to configure the SPDK iSCSI target. This file defines the following: TCP ports to use as iSCSI portals; general iSCSI parameters; initiator names and addresses to allow access to iSCSI target nodes; number and types of storage backends to export over iSCSI LUNs; iSCSI target node mappings between portal groups, initiator groups, and LUNs.</p>
+<p>Each LUN in an iSCSI target node is associated with an SPDK block device. See <a class="el" href="bdev.html#bdev_getting_started">SPDK bdev Getting Started Guide</a> for details on configuring SPDK block devices. The block device to LUN mappings are specified in the configuration file as:</p>
+<div class="fragment"><div class="line">[TargetNodeX]</div><div class="line">  LUN0 Malloc0</div><div class="line">  LUN1 Nvme0n1</div></div><!-- fragment --><p>This exports a malloc'd target. The disk is a RAM disk that is a chunk of memory allocated by iscsi in user space. It will use offload engine to do the copy job instead of memcpy if the system has enough DMA channels.</p>
+<p>You should make a copy of the example configuration file, modify it to suit your environment, and then run the iscsi_tgt application and pass it the configuration file using the -c option. Right now, the target requires elevated privileges (root) to run.</p>
+<div class="fragment"><div class="line">app/iscsi_tgt/iscsi_tgt -c /path/to/iscsi.conf</div></div><!-- fragment --><h2><a class="anchor" id="iscsi_initiator"></a>
+Configuring iSCSI Initiator</h2>
+<p>The Linux initiator is open-iscsi.</p>
+<p>Installing open-iscsi package Fedora: </p><div class="fragment"><div class="line">yum install -y iscsi-initiator-utils</div></div><!-- fragment --><p>Ubuntu: </p><div class="fragment"><div class="line">apt-get install -y open-iscsi</div></div><!-- fragment --><h3>Setup</h3>
+<p>Edit /etc/iscsi/iscsid.conf </p><div class="fragment"><div class="line">node.session.cmds_max = 4096</div><div class="line">node.session.queue_depth = 128</div></div><!-- fragment --><p>iscsid must be restarted or receive SIGHUP for changes to take effect. To send SIGHUP, run: </p><div class="fragment"><div class="line">killall -HUP iscsid</div></div><!-- fragment --><p>Recommended changes to /etc/sysctl.conf </p><div class="fragment"><div class="line">net.ipv4.tcp_timestamps = 1</div><div class="line">net.ipv4.tcp_sack = 0</div><div class="line"></div><div class="line">net.ipv4.tcp_rmem = 10000000 10000000 10000000</div><div class="line">net.ipv4.tcp_wmem = 10000000 10000000 10000000</div><div class="line">net.ipv4.tcp_mem = 10000000 10000000 10000000</div><div class="line">net.core.rmem_default = 524287</div><div class="line">net.core.wmem_default = 524287</div><div class="line">net.core.rmem_max = 524287</div><div class="line">net.core.wmem_max = 524287</div><div class="line">net.core.optmem_max = 524287</div><div class="line">net.core.netdev_max_backlog = 300000</div></div><!-- fragment --><h3>Discovery</h3>
+<p>Assume target is at 192.168.1.5 </p><div class="fragment"><div class="line">iscsiadm -m discovery -t sendtargets -p 192.168.1.5</div></div><!-- fragment --><h3>Connect to target</h3>
+<div class="fragment"><div class="line">iscsiadm -m node --login</div></div><!-- fragment --><p>At this point the iSCSI target should show up as SCSI disks. Check dmesg to see what they came up as.</p>
+<h3>Disconnect from target</h3>
+<div class="fragment"><div class="line">iscsiadm -m node --logout</div></div><!-- fragment --><h3>Deleting target node cache</h3>
+<div class="fragment"><div class="line">iscsiadm -m node -o delete</div></div><!-- fragment --><p>This will cause the initiator to forget all previously discovered iSCSI target nodes.</p>
+<h3>Finding /dev/sdX nodes for iSCSI LUNs</h3>
+<div class="fragment"><div class="line">iscsiadm -m session -P 3 | grep &quot;Attached scsi disk&quot; | awk &#39;{print $4}&#39;</div></div><!-- fragment --><p>This will show the /dev node name for each SCSI LUN in all logged in iSCSI sessions.</p>
+<h3>Tuning</h3>
+<p>After the targets are connected, they can be tuned. For example if /dev/sdc is an iSCSI disk then the following can be done: Set noop to scheduler</p>
+<div class="fragment"><div class="line">echo noop &gt; /sys/block/sdc/queue/scheduler</div></div><!-- fragment --><p>Disable merging/coalescing (can be useful for precise workload measurements)</p>
+<div class="fragment"><div class="line">echo &quot;2&quot; &gt; /sys/block/sdc/queue/nomerges</div></div><!-- fragment --><p>Increase requests for block queue</p>
+<div class="fragment"><div class="line">echo &quot;1024&quot; &gt; /sys/block/sdc/queue/nr_requests</div></div><!-- fragment --><h1><a class="anchor" id="iscsi_hotplug"></a>
+iSCSI Hotplug</h1>
+<p>At the iSCSI level, we provide the following support for Hotplug:</p>
+<ol type="1">
+<li>bdev/nvme: At the bdev/nvme level, we start one hotplug monitor which will call <a class="el" href="nvme_8h.html#a225bbc386ec518ae21bd5536f21db45d" title="Enumerate the bus indicated by the transport ID and attach the userspace NVMe driver to each device f...">spdk_nvme_probe()</a> periodically to get the hotplug events. We provide the private attach_cb and remove_cb for <a class="el" href="nvme_8h.html#a225bbc386ec518ae21bd5536f21db45d" title="Enumerate the bus indicated by the transport ID and attach the userspace NVMe driver to each device f...">spdk_nvme_probe()</a>. For the attach_cb, we will create the block device base on the NVMe device attached, and for the remove_cb, we will unregister the block device, which will also notify the upper level stack (for iSCSI target, the upper level stack is scsi/lun) to handle the hot-remove event.</li>
+<li>scsi/lun: When the LUN receive the hot-remove notification from block device layer, the LUN will be marked as removed, and all the IOs after this point will return with check condition status. Then the LUN starts one poller which will wait for all the commands which have already been submitted to block device to return back; after all the commands return back, the LUN will be deleted.</li>
+</ol>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="nvme_8h.html#a225bbc386ec518ae21bd5536f21db45d" title="Enumerate the bus indicated by the transport ID and attach the userspace NVMe driver to each device f...">spdk_nvme_probe</a> </dd></dl>
 </div></div><!-- contents -->
 <footer>
   <div class="container text-center">
