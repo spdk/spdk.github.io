@@ -17,6 +17,14 @@ h6 {
     font-weight: 900;
 }
 
+code {
+    padding: 0;
+    font-size: 100%;
+    color: #333;
+    background-color: #fff;
+    border-radius: 0;
+}
+
 .row.no-gutters > [class^="col-"],
 .row.no-gutters > [class*=" col-"] {
     padding-right: 0;
@@ -236,8 +244,6 @@ div.fragment {
 
 div.line {
 	font-family: monospace, fixed;
-        font-size: 13px;
-	min-height: 13px;
 	line-height: 1.0;
 	text-wrap: unrestricted;
 	white-space: -moz-pre-wrap; /* Moz */
