@@ -90,7 +90,7 @@ RocksDB Integration</h1>
 <li>Build SPDK as normal.</li>
 <li>Clone the RocksDB git repo from the SPDK github projects. Make sure you check out the spdk branch. <pre class="fragment"> git clone -b spdk https://github.com/spdk/rocksdb.git
 </pre></li>
-<li>Build RocksDB. Note that currently only the db_bench benchmarking tool is integrated with BlobFS. (Note: add "DEBUG_LEVEL=0" for a release build.) <pre class="fragment"> make db_bench DPDK_DIR=path/to/dpdk/x86_64-native-linuxapp-gcc SPDK_DIR=path/to/spdk
+<li>Build RocksDB. Note that currently only the db_bench benchmarking tool is integrated with BlobFS. (Note: add "DEBUG_LEVEL=0" for a release build.) <pre class="fragment"> make db_bench SPDK_DIR=path/to/spdk
 </pre></li>
 <li>Copy etc/spdk/rocksdb.conf.in to /usr/local/etc/spdk/rocksdb.conf.</li>
 <li>Append an NVMe section to the configuration file. <pre class="fragment"> scripts/gen_nvme.sh &gt;&gt; /usr/local/etc/spdk/rocksdb.conf

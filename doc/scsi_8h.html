@@ -103,9 +103,6 @@ Data Structures</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__scsi__dev.html">spdk_scsi_dev</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__scsi__lun.html">spdk_scsi_lun</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents a SCSI LUN.  <a href="structspdk__scsi__lun.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
@@ -174,6 +171,12 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:af5ed1a133f6f137402c0eb7742077f17"><td class="memItemLeft" align="right" valign="top"><a id="af5ed1a133f6f137402c0eb7742077f17"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_scsi_lun_get_id</b> (const struct spdk_scsi_lun *lun)</td></tr>
+<tr class="separator:af5ed1a133f6f137402c0eb7742077f17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f187c3c7c7e26d4045061446a6597bd"><td class="memItemLeft" align="right" valign="top"><a id="a6f187c3c7c7e26d4045061446a6597bd"></a>
+const char *&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_scsi_lun_get_name</b> (const struct spdk_scsi_lun *lun)</td></tr>
+<tr class="separator:a6f187c3c7c7e26d4045061446a6597bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1422193a59bf618ebd6c5415af1cc2be"><td class="memItemLeft" align="right" valign="top"><a id="a1422193a59bf618ebd6c5415af1cc2be"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_scsi_dev_destruct</b> (struct <a class="el" href="structspdk__scsi__dev.html">spdk_scsi_dev</a> *dev)</td></tr>
 <tr class="separator:a1422193a59bf618ebd6c5415af1cc2be"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -202,7 +205,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_scsi_dev_free_io
 <tr class="memdesc:a4059581597daba3a63dcd0c875348025"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a SCSI device object using the given parameters.  <a href="#a4059581597daba3a63dcd0c875348025">More...</a><br /></td></tr>
 <tr class="separator:a4059581597daba3a63dcd0c875348025"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abbacc6adf74a9790630dedda8b97940e"><td class="memItemLeft" align="right" valign="top"><a id="abbacc6adf74a9790630dedda8b97940e"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_scsi_dev_delete_lun</b> (struct <a class="el" href="structspdk__scsi__dev.html">spdk_scsi_dev</a> *dev, struct <a class="el" href="structspdk__scsi__lun.html">spdk_scsi_lun</a> *lun)</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_scsi_dev_delete_lun</b> (struct <a class="el" href="structspdk__scsi__dev.html">spdk_scsi_dev</a> *dev, struct spdk_scsi_lun *lun)</td></tr>
 <tr class="separator:abbacc6adf74a9790630dedda8b97940e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4d523711061361d02e34c9b9f4e1282e"><td class="memItemLeft" align="right" valign="top"><a id="a4d523711061361d02e34c9b9f4e1282e"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_scsi_port_construct</b> (struct <a class="el" href="structspdk__scsi__port.html">spdk_scsi_port</a> *port, uint64_t id, uint16_t index, const char *name)</td></tr>
