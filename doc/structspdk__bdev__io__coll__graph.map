@@ -1,4 +1,0 @@
-<map id="spdk_bdev_io" name="spdk_bdev_io">
-<area shape="rect" id="node2" href="$structspdk__scsi__unmap__bdesc.html" title="spdk_scsi_unmap_bdesc" alt="" coords="5,5,175,32"/>
-<area shape="rect" id="node3" href="$structspdk__bdev.html" title="SPDK block device. " alt="" coords="199,5,285,32"/>
-</map>

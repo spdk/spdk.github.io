@@ -90,8 +90,6 @@ Collaboration diagram for spdk_scsi_task:</div>
 <div class="dyncontent">
 <div class="center"><img src="structspdk__scsi__task__coll__graph.png" border="0" usemap="#spdk__scsi__task_coll__map" alt="Collaboration graph"/></div>
 <map name="spdk__scsi__task_coll__map" id="spdk__scsi__task_coll__map">
-<area shape="rect" id="node2" href="structspdk__scsi__port.html" title="spdk_scsi_port" alt="" coords="151,5,261,32"/>
-<area shape="rect" id="node3" href="structspdk__scsi__dev.html" title="spdk_scsi_dev" alt="" coords="209,109,318,136"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -100,9 +98,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a28ad6cf348a7dba852224daa27e89117"><td class="memItemLeft" align="right" valign="top"><a id="a28ad6cf348a7dba852224daa27e89117"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>TAILQ_ENTRY</b> (<a class="el" href="structspdk__scsi__task.html">spdk_scsi_task</a>) scsi_link</td></tr>
 <tr class="separator:a28ad6cf348a7dba852224daa27e89117"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac296825083e5258017f09de1497aa621"><td class="memItemLeft" align="right" valign="top"><a id="ac296825083e5258017f09de1497aa621"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>TAILQ_HEAD</b> (subtask_list, <a class="el" href="structspdk__scsi__task.html">spdk_scsi_task</a>) subtask_list</td></tr>
-<tr class="separator:ac296825083e5258017f09de1497aa621"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
@@ -125,10 +120,10 @@ struct spdk_scsi_lun *&#160;</td><td class="memItemRight" valign="bottom"><b>lun
 struct spdk_io_channel *&#160;</td><td class="memItemRight" valign="bottom"><b>ch</b></td></tr>
 <tr class="separator:ad164f5402210c39e259109cb808f7214"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af64768a06fe99dea3b1c90791d5970b0"><td class="memItemLeft" align="right" valign="top"><a id="af64768a06fe99dea3b1c90791d5970b0"></a>
-struct <a class="el" href="structspdk__scsi__port.html">spdk_scsi_port</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>target_port</b></td></tr>
+struct spdk_scsi_port *&#160;</td><td class="memItemRight" valign="bottom"><b>target_port</b></td></tr>
 <tr class="separator:af64768a06fe99dea3b1c90791d5970b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a916eecadaca43b7cc5a824199b628f52"><td class="memItemLeft" align="right" valign="top"><a id="a916eecadaca43b7cc5a824199b628f52"></a>
-struct <a class="el" href="structspdk__scsi__port.html">spdk_scsi_port</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>initiator_port</b></td></tr>
+struct spdk_scsi_port *&#160;</td><td class="memItemRight" valign="bottom"><b>initiator_port</b></td></tr>
 <tr class="separator:a916eecadaca43b7cc5a824199b628f52"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a592201504896016b9c9ea36dd056f340"><td class="memItemLeft" align="right" valign="top"><a id="a592201504896016b9c9ea36dd056f340"></a>
 struct spdk_event *&#160;</td><td class="memItemRight" valign="bottom"><b>cb_event</b></td></tr>
@@ -136,24 +131,12 @@ struct spdk_event *&#160;</td><td class="memItemRight" valign="bottom"><b>cb_eve
 <tr class="memitem:a355593ecb799474a678aacecf4878d31"><td class="memItemLeft" align="right" valign="top"><a id="a355593ecb799474a678aacecf4878d31"></a>
 uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>ref</b></td></tr>
 <tr class="separator:a355593ecb799474a678aacecf4878d31"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aed4d434db68c3012f7c843c7f4a00fb8"><td class="memItemLeft" align="right" valign="top"><a id="aed4d434db68c3012f7c843c7f4a00fb8"></a>
-uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>id</b></td></tr>
-<tr class="separator:aed4d434db68c3012f7c843c7f4a00fb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7ea23efe570b37963348ab191cedcd97"><td class="memItemLeft" align="right" valign="top"><a id="a7ea23efe570b37963348ab191cedcd97"></a>
 uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>transfer_len</b></td></tr>
 <tr class="separator:a7ea23efe570b37963348ab191cedcd97"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a80585a4dda6e86d3f23b4b6e8f7010b8"><td class="memItemLeft" align="right" valign="top"><a id="a80585a4dda6e86d3f23b4b6e8f7010b8"></a>
-uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>data_out_cnt</b></td></tr>
-<tr class="separator:a80585a4dda6e86d3f23b4b6e8f7010b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9f47315cf388129c3a93aeebee7daa7c"><td class="memItemLeft" align="right" valign="top"><a id="a9f47315cf388129c3a93aeebee7daa7c"></a>
 uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>dxfer_dir</b></td></tr>
 <tr class="separator:a9f47315cf388129c3a93aeebee7daa7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a50246cd789442a1f38e2666eb746c160"><td class="memItemLeft" align="right" valign="top"><a id="a50246cd789442a1f38e2666eb746c160"></a>
-uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>desired_data_transfer_length</b></td></tr>
-<tr class="separator:a50246cd789442a1f38e2666eb746c160"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aefbdf47bccaa1373448ec91203685891"><td class="memItemLeft" align="right" valign="top"><a id="aefbdf47bccaa1373448ec91203685891"></a>
-uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>bytes_completed</b></td></tr>
-<tr class="separator:aefbdf47bccaa1373448ec91203685891"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a515144ee5e35f8b863d45623c0b9538e"><td class="memItemLeft" align="right" valign="top"><a id="a515144ee5e35f8b863d45623c0b9538e"></a>
 uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>length</b></td></tr>
 <tr class="separator:a515144ee5e35f8b863d45623c0b9538e"><td class="memSeparator" colspan="2">&#160;</td></tr>

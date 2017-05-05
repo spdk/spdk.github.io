@@ -131,45 +131,45 @@ enum <a class="el" href="nvmf__spec_8h.html#a808272f050cc373f3a90871c1528afd4">s
 <tr class="memitem:a200ec3a548b27adbe15734365a9f1019"><td class="memItemLeft" align="right" valign="top"><a id="a200ec3a548b27adbe15734365a9f1019"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>is_removed</b></td></tr>
 <tr class="separator:a200ec3a548b27adbe15734365a9f1019"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9ad030e82dc19397eebdb87c0d7e6880"><td class="memItemLeft" ><a id="a9ad030e82dc19397eebdb87c0d7e6880"></a>
+<tr class="memitem:a406df573ecf234c5232f6bd0616f62fa"><td class="memItemLeft" ><a id="a406df573ecf234c5232f6bd0616f62fa"></a>
 union {</td></tr>
-<tr class="memitem:a90050770ffc28d6d407fdcdf1f73bc80"><td class="memItemLeft" >
+<tr class="memitem:a79ba0ff164d7575f81b789a2f5758f47"><td class="memItemLeft" >
 &#160;&#160;&#160;struct {</td></tr>
-<tr class="memitem:a1649154cc87fa933b4d5a1f9a74a271f"><td class="memItemLeft" >
+<tr class="memitem:aae0e795fe20109ed0eb0c962966bebd0"><td class="memItemLeft" >
 &#160;&#160;&#160;&#160;&#160;&#160;struct spdk_nvme_ctrlr *&#160;&#160;&#160;<b>ctrlr</b></td></tr>
-<tr class="separator:a1649154cc87fa933b4d5a1f9a74a271f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acdd6826c6ff883d90e0085ef90bf8596"><td class="memItemLeft" >
+<tr class="separator:aae0e795fe20109ed0eb0c962966bebd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a2b89da5ff597c7d7502c0fdf7dabb4"><td class="memItemLeft" >
 &#160;&#160;&#160;&#160;&#160;&#160;struct spdk_nvme_qpair *&#160;&#160;&#160;<b>io_qpair</b></td></tr>
-<tr class="separator:acdd6826c6ff883d90e0085ef90bf8596"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3784ee26e1cd95f11999a4e9edc8488e"><td class="memItemLeft" >
+<tr class="separator:a7a2b89da5ff597c7d7502c0fdf7dabb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1225af16883349b858efc8f66b9ad57b"><td class="memItemLeft" >
 &#160;&#160;&#160;&#160;&#160;&#160;struct <a class="el" href="structspdk__pci__addr.html">spdk_pci_addr</a>&#160;&#160;&#160;<b>pci_addr</b></td></tr>
-<tr class="separator:a3784ee26e1cd95f11999a4e9edc8488e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a20a79236493e90441bb26c3ea0c9c40b"><td class="memItemLeft" >
+<tr class="separator:a1225af16883349b858efc8f66b9ad57b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b94dddec311c2e9fc7085947a412b58"><td class="memItemLeft" >
 &#160;&#160;&#160;&#160;&#160;&#160;struct spdk_poller *&#160;&#160;&#160;<b>admin_poller</b></td></tr>
-<tr class="separator:a20a79236493e90441bb26c3ea0c9c40b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aabb8b5d0a550fa23da8bf40a805b08fa"><td class="memItemLeft" >
+<tr class="separator:a0b94dddec311c2e9fc7085947a412b58"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5750803cae55d415166f4425376e3b2d"><td class="memItemLeft" >
 &#160;&#160;&#160;&#160;&#160;&#160;int32_t&#160;&#160;&#160;<b>outstanding_admin_cmd_count</b></td></tr>
-<tr class="separator:aabb8b5d0a550fa23da8bf40a805b08fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a90050770ffc28d6d407fdcdf1f73bc80"><td class="memItemLeft" valign="top">&#160;&#160;&#160;}&#160;&#160;&#160;<b>direct</b></td></tr>
-<tr class="separator:a90050770ffc28d6d407fdcdf1f73bc80"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6c8ea5b4945320fab31cd225fea14c6e"><td class="memItemLeft" >
+<tr class="separator:a5750803cae55d415166f4425376e3b2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79ba0ff164d7575f81b789a2f5758f47"><td class="memItemLeft" valign="top">&#160;&#160;&#160;}&#160;&#160;&#160;<b>direct</b></td></tr>
+<tr class="separator:a79ba0ff164d7575f81b789a2f5758f47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a599f477b28e71e5988ad31758f952b30"><td class="memItemLeft" >
 &#160;&#160;&#160;struct {</td></tr>
-<tr class="memitem:aff2cb485b74c1d0b5af35ddfccc8a5b2"><td class="memItemLeft" >
+<tr class="memitem:aefead1d5afe951088a193dcb5945f7fd"><td class="memItemLeft" >
 &#160;&#160;&#160;&#160;&#160;&#160;char&#160;&#160;&#160;<b>sn</b> [MAX_SN_LEN+1]</td></tr>
-<tr class="separator:aff2cb485b74c1d0b5af35ddfccc8a5b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acfa686098037bebf4404109f5ae5cb88"><td class="memItemLeft" >
+<tr class="separator:aefead1d5afe951088a193dcb5945f7fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78a525091c865eb184bd22c3daf9bd55"><td class="memItemLeft" >
 &#160;&#160;&#160;&#160;&#160;&#160;struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *&#160;&#160;&#160;<b>ns_list</b> [MAX_VIRTUAL_NAMESPACE]</td></tr>
-<tr class="separator:acfa686098037bebf4404109f5ae5cb88"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a372d182f54217d74e718bd3064e5a910"><td class="memItemLeft" >
+<tr class="separator:a78a525091c865eb184bd22c3daf9bd55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07ff84c576cf84e082ec9184b7d1e6f2"><td class="memItemLeft" >
 &#160;&#160;&#160;&#160;&#160;&#160;struct spdk_io_channel *&#160;&#160;&#160;<b>ch</b> [MAX_VIRTUAL_NAMESPACE]</td></tr>
-<tr class="separator:a372d182f54217d74e718bd3064e5a910"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac57cf327091bd0531263655f20fe1e5f"><td class="memItemLeft" >
+<tr class="separator:a07ff84c576cf84e082ec9184b7d1e6f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3cda32b5485930b87041c655a0d3524"><td class="memItemLeft" >
 &#160;&#160;&#160;&#160;&#160;&#160;uint16_t&#160;&#160;&#160;<b>ns_count</b></td></tr>
-<tr class="separator:ac57cf327091bd0531263655f20fe1e5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6c8ea5b4945320fab31cd225fea14c6e"><td class="memItemLeft" valign="top">&#160;&#160;&#160;}&#160;&#160;&#160;<b>virt</b></td></tr>
-<tr class="separator:a6c8ea5b4945320fab31cd225fea14c6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9ad030e82dc19397eebdb87c0d7e6880"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><b>dev</b></td></tr>
-<tr class="separator:a9ad030e82dc19397eebdb87c0d7e6880"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:ac3cda32b5485930b87041c655a0d3524"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a599f477b28e71e5988ad31758f952b30"><td class="memItemLeft" valign="top">&#160;&#160;&#160;}&#160;&#160;&#160;<b>virt</b></td></tr>
+<tr class="separator:a599f477b28e71e5988ad31758f952b30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a406df573ecf234c5232f6bd0616f62fa"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><b>dev</b></td></tr>
+<tr class="separator:a406df573ecf234c5232f6bd0616f62fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3facbe54994c88cdf076c1fa5eee57bd"><td class="memItemLeft" align="right" valign="top"><a id="a3facbe54994c88cdf076c1fa5eee57bd"></a>
 const struct <a class="el" href="structspdk__nvmf__ctrlr__ops.html">spdk_nvmf_ctrlr_ops</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>ops</b></td></tr>
 <tr class="separator:a3facbe54994c88cdf076c1fa5eee57bd"><td class="memSeparator" colspan="2">&#160;</td></tr>

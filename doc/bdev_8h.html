@@ -101,9 +101,6 @@ Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev.html">spdk_bdev</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">SPDK block device.  <a href="structspdk__bdev.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev__io.html">spdk_bdev_io</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Block device I/O.  <a href="structspdk__bdev__io.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
@@ -126,10 +123,10 @@ Typedefs</h2></td></tr>
 typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_remove_cb_t</b>) (void *remove_ctx)</td></tr>
 <tr class="separator:a51a55c97586c2d524fffcabc4d7910d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a81b394dd97f4413c59c41c83d86dfdb9"><td class="memItemLeft" align="right" valign="top"><a id="a81b394dd97f4413c59c41c83d86dfdb9"></a>
-typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_io_completion_cb</b>) (struct <a class="el" href="structspdk__bdev__io.html">spdk_bdev_io</a> *bdev_io, enum <a class="el" href="bdev_8h.html#aa35cc1485b6ba4351c2fb4fbd7125c93">spdk_bdev_io_status</a> status, void *cb_arg)</td></tr>
+typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_io_completion_cb</b>) (struct spdk_bdev_io *bdev_io, enum <a class="el" href="bdev_8h.html#aa35cc1485b6ba4351c2fb4fbd7125c93">spdk_bdev_io_status</a> status, void *cb_arg)</td></tr>
 <tr class="separator:a81b394dd97f4413c59c41c83d86dfdb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5229d5f930aa92b4314c8f6362452f05"><td class="memItemLeft" align="right" valign="top"><a id="a5229d5f930aa92b4314c8f6362452f05"></a>
-typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_io_get_rbuf_cb</b>) (struct <a class="el" href="structspdk__bdev__io.html">spdk_bdev_io</a> *bdev_io)</td></tr>
+typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_io_get_rbuf_cb</b>) (struct spdk_bdev_io *bdev_io)</td></tr>
 <tr class="separator:a5229d5f930aa92b4314c8f6362452f05"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
@@ -197,25 +194,25 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_io_type_sup
 int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_dump_config_json</b> (struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *bdev, struct spdk_json_write_ctx *w)</td></tr>
 <tr class="separator:a84d158f886b7ae2f735a794da420ca55"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a664bd53b425a79f98926fdddd6004ad7"><td class="memItemLeft" align="right" valign="top"><a id="a664bd53b425a79f98926fdddd6004ad7"></a>
-struct <a class="el" href="structspdk__bdev__io.html">spdk_bdev_io</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_read</b> (struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *bdev, struct spdk_io_channel *ch, void *buf, uint64_t offset, uint64_t nbytes, spdk_bdev_io_completion_cb cb, void *cb_arg)</td></tr>
+struct spdk_bdev_io *&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_read</b> (struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *bdev, struct spdk_io_channel *ch, void *buf, uint64_t offset, uint64_t nbytes, spdk_bdev_io_completion_cb cb, void *cb_arg)</td></tr>
 <tr class="separator:a664bd53b425a79f98926fdddd6004ad7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a76c90e1fed97dc8962bd319d12b76a56"><td class="memItemLeft" align="right" valign="top"><a id="a76c90e1fed97dc8962bd319d12b76a56"></a>
-struct <a class="el" href="structspdk__bdev__io.html">spdk_bdev_io</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_readv</b> (struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *bdev, struct spdk_io_channel *ch, struct iovec *iov, int iovcnt, uint64_t offset, uint64_t nbytes, spdk_bdev_io_completion_cb cb, void *cb_arg)</td></tr>
+struct spdk_bdev_io *&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_readv</b> (struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *bdev, struct spdk_io_channel *ch, struct iovec *iov, int iovcnt, uint64_t offset, uint64_t nbytes, spdk_bdev_io_completion_cb cb, void *cb_arg)</td></tr>
 <tr class="separator:a76c90e1fed97dc8962bd319d12b76a56"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab6e9f184fef0d26df877a329db72e21d"><td class="memItemLeft" align="right" valign="top"><a id="ab6e9f184fef0d26df877a329db72e21d"></a>
-struct <a class="el" href="structspdk__bdev__io.html">spdk_bdev_io</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_write</b> (struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *bdev, struct spdk_io_channel *ch, void *buf, uint64_t offset, uint64_t nbytes, spdk_bdev_io_completion_cb cb, void *cb_arg)</td></tr>
+struct spdk_bdev_io *&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_write</b> (struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *bdev, struct spdk_io_channel *ch, void *buf, uint64_t offset, uint64_t nbytes, spdk_bdev_io_completion_cb cb, void *cb_arg)</td></tr>
 <tr class="separator:ab6e9f184fef0d26df877a329db72e21d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a46019368202d3df15876d52e11517389"><td class="memItemLeft" align="right" valign="top"><a id="a46019368202d3df15876d52e11517389"></a>
-struct <a class="el" href="structspdk__bdev__io.html">spdk_bdev_io</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_writev</b> (struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *bdev, struct spdk_io_channel *ch, struct iovec *iov, int iovcnt, uint64_t offset, uint64_t len, spdk_bdev_io_completion_cb cb, void *cb_arg)</td></tr>
+struct spdk_bdev_io *&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_writev</b> (struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *bdev, struct spdk_io_channel *ch, struct iovec *iov, int iovcnt, uint64_t offset, uint64_t len, spdk_bdev_io_completion_cb cb, void *cb_arg)</td></tr>
 <tr class="separator:a46019368202d3df15876d52e11517389"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aef6fb3308d9dca07c5ad18176df12bd1"><td class="memItemLeft" align="right" valign="top"><a id="aef6fb3308d9dca07c5ad18176df12bd1"></a>
-struct <a class="el" href="structspdk__bdev__io.html">spdk_bdev_io</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_unmap</b> (struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *bdev, struct spdk_io_channel *ch, struct <a class="el" href="structspdk__scsi__unmap__bdesc.html">spdk_scsi_unmap_bdesc</a> *unmap_d, uint16_t bdesc_count, spdk_bdev_io_completion_cb cb, void *cb_arg)</td></tr>
+struct spdk_bdev_io *&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_unmap</b> (struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *bdev, struct spdk_io_channel *ch, struct <a class="el" href="structspdk__scsi__unmap__bdesc.html">spdk_scsi_unmap_bdesc</a> *unmap_d, uint16_t bdesc_count, spdk_bdev_io_completion_cb cb, void *cb_arg)</td></tr>
 <tr class="separator:aef6fb3308d9dca07c5ad18176df12bd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2e5ca1848df6b80d4ce81b8a6c366170"><td class="memItemLeft" align="right" valign="top"><a id="a2e5ca1848df6b80d4ce81b8a6c366170"></a>
-struct <a class="el" href="structspdk__bdev__io.html">spdk_bdev_io</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_flush</b> (struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *bdev, struct spdk_io_channel *ch, uint64_t offset, uint64_t length, spdk_bdev_io_completion_cb cb, void *cb_arg)</td></tr>
+struct spdk_bdev_io *&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_flush</b> (struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *bdev, struct spdk_io_channel *ch, uint64_t offset, uint64_t length, spdk_bdev_io_completion_cb cb, void *cb_arg)</td></tr>
 <tr class="separator:a2e5ca1848df6b80d4ce81b8a6c366170"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a536a365e14bc4f3ddf76b9340958ebd8"><td class="memItemLeft" align="right" valign="top"><a id="a536a365e14bc4f3ddf76b9340958ebd8"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_free_io</b> (struct <a class="el" href="structspdk__bdev__io.html">spdk_bdev_io</a> *bdev_io)</td></tr>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_free_io</b> (struct spdk_bdev_io *bdev_io)</td></tr>
 <tr class="separator:a536a365e14bc4f3ddf76b9340958ebd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7a03a3f16c42ad4186e26ef7bba1145e"><td class="memItemLeft" align="right" valign="top"><a id="a7a03a3f16c42ad4186e26ef7bba1145e"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_reset</b> (struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *bdev, enum <a class="el" href="bdev_8h.html#ae0c63447f343002f128438ab17c67f44">spdk_bdev_reset_type</a>, spdk_bdev_io_completion_cb cb, void *cb_arg)</td></tr>
@@ -223,12 +220,15 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_reset</b> (s
 <tr class="memitem:ad52d4d0b0d0d26c6308ad7386a174691"><td class="memItemLeft" align="right" valign="top"><a id="ad52d4d0b0d0d26c6308ad7386a174691"></a>
 struct spdk_io_channel *&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_get_io_channel</b> (struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *bdev, uint32_t priority)</td></tr>
 <tr class="separator:ad52d4d0b0d0d26c6308ad7386a174691"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a92481b4beb66410d107cc1670c51f39f"><td class="memItemLeft" align="right" valign="top"><a id="a92481b4beb66410d107cc1670c51f39f"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_io_set_scsi_error</b> (struct <a class="el" href="structspdk__bdev__io.html">spdk_bdev_io</a> *bdev_io, enum spdk_scsi_status sc, enum spdk_scsi_sense sk, uint8_t asc, uint8_t ascq)</td></tr>
-<tr class="separator:a92481b4beb66410d107cc1670c51f39f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afe43254747db3cd072dfb596be3bbf2f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev_8h.html#afe43254747db3cd072dfb596be3bbf2f">spdk_bdev_io_get_nvme_status</a> (const struct <a class="el" href="structspdk__bdev__io.html">spdk_bdev_io</a> *bdev_io, int *sct, int *sc)</td></tr>
+<tr class="memitem:afe43254747db3cd072dfb596be3bbf2f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev_8h.html#afe43254747db3cd072dfb596be3bbf2f">spdk_bdev_io_get_nvme_status</a> (const struct spdk_bdev_io *bdev_io, int *sct, int *sc)</td></tr>
 <tr class="memdesc:afe43254747db3cd072dfb596be3bbf2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the status of bdev_io as an NVMe status code.  <a href="#afe43254747db3cd072dfb596be3bbf2f">More...</a><br /></td></tr>
 <tr class="separator:afe43254747db3cd072dfb596be3bbf2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3c213b4317d5077197950253af1ac50"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev_8h.html#ac3c213b4317d5077197950253af1ac50">spdk_bdev_io_get_scsi_status</a> (const struct spdk_bdev_io *bdev_io, int *sc, int *sk, int *asc, int *ascq)</td></tr>
+<tr class="memdesc:ac3c213b4317d5077197950253af1ac50"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the status of bdev_io as a SCSI status code.  <a href="#ac3c213b4317d5077197950253af1ac50">More...</a><br /></td></tr>
+<tr class="separator:ac3c213b4317d5077197950253af1ac50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa05d8c0e82bfbcc209af1eb958230ede"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev_8h.html#aa05d8c0e82bfbcc209af1eb958230ede">spdk_bdev_io_get_iovec</a> (struct spdk_bdev_io *bdev_io, struct iovec **iovp, int *iovcntp)</td></tr>
+<tr class="memdesc:aa05d8c0e82bfbcc209af1eb958230ede"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the iovec describing the data buffer of a bdev_io.  <a href="#aa05d8c0e82bfbcc209af1eb958230ede">More...</a><br /></td></tr>
+<tr class="separator:aa05d8c0e82bfbcc209af1eb958230ede"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Block device abstraction layer. </p>
@@ -303,6 +303,50 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_io_set_scsi
 
 </div>
 </div>
+<a id="aa05d8c0e82bfbcc209af1eb958230ede"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa05d8c0e82bfbcc209af1eb958230ede">&#9670;&nbsp;</a></span>spdk_bdev_io_get_iovec()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_bdev_io_get_iovec </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_bdev_io *&#160;</td>
+          <td class="paramname"><em>bdev_io</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct iovec **&#160;</td>
+          <td class="paramname"><em>iovp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>iovcntp</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the iovec describing the data buffer of a bdev_io. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bdev_io</td><td>I/O to describe with iovec. </td></tr>
+    <tr><td class="paramname">iovp</td><td>Pointer to be filled with iovec. </td></tr>
+    <tr><td class="paramname">iovcntp</td><td>Pointer to be filled with number of iovec entries. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="afe43254747db3cd072dfb596be3bbf2f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#afe43254747db3cd072dfb596be3bbf2f">&#9670;&nbsp;</a></span>spdk_bdev_io_get_nvme_status()</h2>
 
@@ -312,7 +356,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_io_set_scsi
         <tr>
           <td class="memname">void spdk_bdev_io_get_nvme_status </td>
           <td>(</td>
-          <td class="paramtype">const struct <a class="el" href="structspdk__bdev__io.html">spdk_bdev_io</a> *&#160;</td>
+          <td class="paramtype">const struct spdk_bdev_io *&#160;</td>
           <td class="paramname"><em>bdev_io</em>, </td>
         </tr>
         <tr>
@@ -341,6 +385,64 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_io_set_scsi
     <tr><td class="paramname">bdev_io</td><td>I/O to get the status from. </td></tr>
     <tr><td class="paramname">sct</td><td>Status Code Type return value, as defined by the NVMe specification. </td></tr>
     <tr><td class="paramname">sc</td><td>Status Code return value, as defined by the NVMe specification. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ac3c213b4317d5077197950253af1ac50"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac3c213b4317d5077197950253af1ac50">&#9670;&nbsp;</a></span>spdk_bdev_io_get_scsi_status()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_bdev_io_get_scsi_status </td>
+          <td>(</td>
+          <td class="paramtype">const struct spdk_bdev_io *&#160;</td>
+          <td class="paramname"><em>bdev_io</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>sc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>sk</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>asc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>ascq</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the status of bdev_io as a SCSI status code. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bdev_io</td><td>I/O to get the status from. </td></tr>
+    <tr><td class="paramname">sc</td><td>SCSI Status Code. </td></tr>
+    <tr><td class="paramname">sk</td><td>SCSI Sense Key. </td></tr>
+    <tr><td class="paramname">asc</td><td>SCSI Additional Sense Code. </td></tr>
+    <tr><td class="paramname">ascq</td><td>SCSI Additional Sense Code Qualifier. </td></tr>
   </table>
   </dd>
 </dl>
