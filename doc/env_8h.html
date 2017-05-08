@@ -146,9 +146,16 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_
 void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_8h.html#a8f63fddd291ac3b0b3c4047807d59dc1">spdk_malloc</a> (size_t size, size_t align, uint64_t *phys_addr)</td></tr>
 <tr class="memdesc:a8f63fddd291ac3b0b3c4047807d59dc1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate a pinned, physically contiguous memory buffer with the given size and alignment. <br /></td></tr>
 <tr class="separator:a8f63fddd291ac3b0b3c4047807d59dc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1dcaff5eed1dcfa4d2969fc30b44553f"><td class="memItemLeft" align="right" valign="top"><a id="a1dcaff5eed1dcfa4d2969fc30b44553f"></a>
+void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_8h.html#a1dcaff5eed1dcfa4d2969fc30b44553f">spdk_malloc_socket</a> (size_t size, size_t align, uint64_t *phys_addr, int socket_id)</td></tr>
+<tr class="memdesc:a1dcaff5eed1dcfa4d2969fc30b44553f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate a pinned, physically contiguous memory buffer with the given size, alignment and socket id. <br /></td></tr>
+<tr class="separator:a1dcaff5eed1dcfa4d2969fc30b44553f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a984f10f9ed752b7fab821c98ca171f63"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_8h.html#a984f10f9ed752b7fab821c98ca171f63">spdk_zmalloc</a> (size_t size, size_t align, uint64_t *phys_addr)</td></tr>
 <tr class="memdesc:a984f10f9ed752b7fab821c98ca171f63"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate a pinned, physically contiguous memory buffer with the given size and alignment.  <a href="#a984f10f9ed752b7fab821c98ca171f63">More...</a><br /></td></tr>
 <tr class="separator:a984f10f9ed752b7fab821c98ca171f63"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee0033f633943e394f1513ae3822dba6"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_8h.html#aee0033f633943e394f1513ae3822dba6">spdk_zmalloc_socket</a> (size_t size, size_t align, uint64_t *phys_addr, int socket_id)</td></tr>
+<tr class="memdesc:aee0033f633943e394f1513ae3822dba6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate a pinned, physically contiguous memory buffer with the given size, alignment and socket id.  <a href="#aee0033f633943e394f1513ae3822dba6">More...</a><br /></td></tr>
+<tr class="separator:aee0033f633943e394f1513ae3822dba6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac48f01e1a2b51c2f7fc1904cd6e59022"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_8h.html#ac48f01e1a2b51c2f7fc1904cd6e59022">spdk_realloc</a> (void *buf, size_t size, size_t align, uint64_t *phys_addr)</td></tr>
 <tr class="memdesc:ac48f01e1a2b51c2f7fc1904cd6e59022"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resize the allocated and pinned memory buffer with the given new size and alignment.  <a href="#ac48f01e1a2b51c2f7fc1904cd6e59022">More...</a><br /></td></tr>
 <tr class="separator:ac48f01e1a2b51c2f7fc1904cd6e59022"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -997,6 +1004,49 @@ uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 </div><div class="memdoc">
 
 <p>Allocate a pinned, physically contiguous memory buffer with the given size and alignment. </p>
+<p>The buffer will be zeroed. </p>
+
+</div>
+</div>
+<a id="aee0033f633943e394f1513ae3822dba6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aee0033f633943e394f1513ae3822dba6">&#9670;&nbsp;</a></span>spdk_zmalloc_socket()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* spdk_zmalloc_socket </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>align</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t *&#160;</td>
+          <td class="paramname"><em>phys_addr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>socket_id</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Allocate a pinned, physically contiguous memory buffer with the given size, alignment and socket id. </p>
 <p>The buffer will be zeroed. </p>
 
 </div>
