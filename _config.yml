@@ -33,7 +33,7 @@ boxes:
     url: /blog/
     ico: comment
   - title: Roadmap
-    url: /roadmap/
+    url: https://github.com/spdk/spdk/wiki/Roadmap
     ico: map-marker
 
 
