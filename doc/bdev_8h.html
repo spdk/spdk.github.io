@@ -65,7 +65,7 @@
                 </a>
               </li>
               <li role="presentation">
-                <a href="http://www.spdk.io/roadmap/">
+                <a href="https://github.com/spdk/spdk/wiki/Roadmap">
                   <i class="glyphicon glyphicon-map-marker"></i>
                   <span class="box-name">Roadmap</span>
                 </a>
@@ -104,12 +104,12 @@ Data Structures</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:ac96155170c665c038ab011b556da8e0b"><td class="memItemLeft" align="right" valign="top"><a id="ac96155170c665c038ab011b556da8e0b"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_BDEV_SMALL_RBUF_MAX_SIZE</b>&#160;&#160;&#160;8192</td></tr>
-<tr class="separator:ac96155170c665c038ab011b556da8e0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a03a5a78294224fd586f88a3a69fcc695"><td class="memItemLeft" align="right" valign="top"><a id="a03a5a78294224fd586f88a3a69fcc695"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_BDEV_LARGE_RBUF_MAX_SIZE</b>&#160;&#160;&#160;(64 * 1024)</td></tr>
-<tr class="separator:a03a5a78294224fd586f88a3a69fcc695"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22219ae3fb084dcb87bcc6d454b415aa"><td class="memItemLeft" align="right" valign="top"><a id="a22219ae3fb084dcb87bcc6d454b415aa"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_BDEV_SMALL_BUF_MAX_SIZE</b>&#160;&#160;&#160;8192</td></tr>
+<tr class="separator:a22219ae3fb084dcb87bcc6d454b415aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9496c34e0fc135e1f309fd586e8e65d0"><td class="memItemLeft" align="right" valign="top"><a id="a9496c34e0fc135e1f309fd586e8e65d0"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_BDEV_LARGE_BUF_MAX_SIZE</b>&#160;&#160;&#160;(64 * 1024)</td></tr>
+<tr class="separator:a9496c34e0fc135e1f309fd586e8e65d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad64e560812515480874af4688dc858da"><td class="memItemLeft" align="right" valign="top"><a id="ad64e560812515480874af4688dc858da"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_BDEV_MAX_NAME_LENGTH</b>&#160;&#160;&#160;16</td></tr>
 <tr class="separator:ad64e560812515480874af4688dc858da"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -125,9 +125,6 @@ typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_r
 <tr class="memitem:a81b394dd97f4413c59c41c83d86dfdb9"><td class="memItemLeft" align="right" valign="top"><a id="a81b394dd97f4413c59c41c83d86dfdb9"></a>
 typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_io_completion_cb</b>) (struct spdk_bdev_io *bdev_io, enum <a class="el" href="bdev_8h.html#aa35cc1485b6ba4351c2fb4fbd7125c93">spdk_bdev_io_status</a> status, void *cb_arg)</td></tr>
 <tr class="separator:a81b394dd97f4413c59c41c83d86dfdb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5229d5f930aa92b4314c8f6362452f05"><td class="memItemLeft" align="right" valign="top"><a id="a5229d5f930aa92b4314c8f6362452f05"></a>
-typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_io_get_rbuf_cb</b>) (struct spdk_bdev_io *bdev_io)</td></tr>
-<tr class="separator:a5229d5f930aa92b4314c8f6362452f05"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
@@ -139,13 +136,12 @@ Enumerations</h2></td></tr>
 </td></tr>
 <tr class="separator:ad6c166f5d928c2995df57c96a2977862"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a633029e24ab5ae4a689bffa2565a519f"><td class="memItemLeft" align="right" valign="top"><a id="a633029e24ab5ae4a689bffa2565a519f"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev_8h.html#a633029e24ab5ae4a689bffa2565a519f">spdk_bdev_io_type</a> { <br />
-&#160;&#160;<b>SPDK_BDEV_IO_TYPE_INVALID</b>, 
-<b>SPDK_BDEV_IO_TYPE_READ</b>, 
+&#160;&#160;<b>SPDK_BDEV_IO_TYPE_READ</b> = 1, 
 <b>SPDK_BDEV_IO_TYPE_WRITE</b>, 
 <b>SPDK_BDEV_IO_TYPE_UNMAP</b>, 
+<b>SPDK_BDEV_IO_TYPE_FLUSH</b>, 
 <br />
-&#160;&#160;<b>SPDK_BDEV_IO_TYPE_FLUSH</b>, 
-<b>SPDK_BDEV_IO_TYPE_RESET</b>
+&#160;&#160;<b>SPDK_BDEV_IO_TYPE_RESET</b>
 <br />
  }<tr class="memdesc:a633029e24ab5ae4a689bffa2565a519f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Blockdev I/O type. <br /></td></tr>
 </td></tr>
