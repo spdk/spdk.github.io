@@ -128,6 +128,9 @@ typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_mem_ma
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
+<tr class="memitem:a88610413d6db3cc0eaafa4bda0f2caa9"><td class="memItemLeft" align="right" valign="top"><a id="a88610413d6db3cc0eaafa4bda0f2caa9"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>spdk_ring_type</b> { <b>SPDK_RING_TYPE_MP_SC</b>
+ }</td></tr>
+<tr class="separator:a88610413d6db3cc0eaafa4bda0f2caa9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a96af19906abf2a01e9f1f2105f90722c"><td class="memItemLeft" align="right" valign="top"><a id="a96af19906abf2a01e9f1f2105f90722c"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>spdk_mem_map_notify_action</b> { <b>SPDK_MEM_MAP_NOTIFY_REGISTER</b>, 
 <b>SPDK_MEM_MAP_NOTIFY_UNREGISTER</b>
  }</td></tr>
@@ -232,6 +235,20 @@ uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_8h.html#ab2e338ce2d6510489ae83bfff226b8b1">spdk_delay_us</a> (unsigned int us)</td></tr>
 <tr class="memdesc:ab2e338ce2d6510489ae83bfff226b8b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delay the given number of microseconds. <br /></td></tr>
 <tr class="separator:ab2e338ce2d6510489ae83bfff226b8b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a431d7024de0b6697b966f5087d53c1ad"><td class="memItemLeft" align="right" valign="top"><a id="a431d7024de0b6697b966f5087d53c1ad"></a>
+struct spdk_ring *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_8h.html#a431d7024de0b6697b966f5087d53c1ad">spdk_ring_create</a> (enum spdk_ring_type type, size_t count, size_t ele_size, int socket_id)</td></tr>
+<tr class="memdesc:a431d7024de0b6697b966f5087d53c1ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a ring. <br /></td></tr>
+<tr class="separator:a431d7024de0b6697b966f5087d53c1ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f1ec5c3714962d4b01ceb5a50571dca"><td class="memItemLeft" align="right" valign="top"><a id="a3f1ec5c3714962d4b01ceb5a50571dca"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_8h.html#a3f1ec5c3714962d4b01ceb5a50571dca">spdk_ring_free</a> (struct spdk_ring *ring)</td></tr>
+<tr class="memdesc:a3f1ec5c3714962d4b01ceb5a50571dca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Free the ring. <br /></td></tr>
+<tr class="separator:a3f1ec5c3714962d4b01ceb5a50571dca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94a5c5e5f14c336e7d64db996c0ed2dc"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_8h.html#a94a5c5e5f14c336e7d64db996c0ed2dc">spdk_ring_enqueue</a> (struct spdk_ring *ring, void **objs, size_t count)</td></tr>
+<tr class="memdesc:a94a5c5e5f14c336e7d64db996c0ed2dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Queue the array of objects (with length count) on the ring.  <a href="#a94a5c5e5f14c336e7d64db996c0ed2dc">More...</a><br /></td></tr>
+<tr class="separator:a94a5c5e5f14c336e7d64db996c0ed2dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a982e1b212d497dbb209902f56b192afb"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_8h.html#a982e1b212d497dbb209902f56b192afb">spdk_ring_dequeue</a> (struct spdk_ring *ring, void **objs, size_t count)</td></tr>
+<tr class="memdesc:a982e1b212d497dbb209902f56b192afb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dequeue count objects from the ring into the array objs.  <a href="#a982e1b212d497dbb209902f56b192afb">More...</a><br /></td></tr>
+<tr class="separator:a982e1b212d497dbb209902f56b192afb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae96a59dc23cf16ed24029ea50598be5b"><td class="memItemLeft" align="right" valign="top"><a id="ae96a59dc23cf16ed24029ea50598be5b"></a>
 uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_vtophys</b> (void *buf)</td></tr>
 <tr class="separator:ae96a59dc23cf16ed24029ea50598be5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -972,6 +989,80 @@ uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 
 <p>Resize the allocated and pinned memory buffer with the given new size and alignment. </p>
 <p>Existing contents are preserved. </p>
+
+</div>
+</div>
+<a id="a982e1b212d497dbb209902f56b192afb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a982e1b212d497dbb209902f56b192afb">&#9670;&nbsp;</a></span>spdk_ring_dequeue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t spdk_ring_dequeue </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_ring *&#160;</td>
+          <td class="paramname"><em>ring</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void **&#160;</td>
+          <td class="paramname"><em>objs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>count</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Dequeue count objects from the ring into the array objs. </p>
+<p>Return the number of objects dequeued. </p>
+
+</div>
+</div>
+<a id="a94a5c5e5f14c336e7d64db996c0ed2dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a94a5c5e5f14c336e7d64db996c0ed2dc">&#9670;&nbsp;</a></span>spdk_ring_enqueue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t spdk_ring_enqueue </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_ring *&#160;</td>
+          <td class="paramname"><em>ring</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void **&#160;</td>
+          <td class="paramname"><em>objs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>count</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Queue the array of objects (with length count) on the ring. </p>
+<p>Return the number of objects enqueued. </p>
 
 </div>
 </div>
