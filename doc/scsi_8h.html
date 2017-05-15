@@ -224,9 +224,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_scsi_port_free</
 <tr class="memitem:ae44f357c4cfc7d60c8fce30c39c637b6"><td class="memItemLeft" align="right" valign="top"><a id="ae44f357c4cfc7d60c8fce30c39c637b6"></a>
 const char *&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_scsi_port_get_name</b> (const struct spdk_scsi_port *port)</td></tr>
 <tr class="separator:ae44f357c4cfc7d60c8fce30c39c637b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa50d6239ecd9e56adbe3c2f63a41b7ea"><td class="memItemLeft" align="right" valign="top"><a id="aa50d6239ecd9e56adbe3c2f63a41b7ea"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_scsi_task_construct</b> (struct <a class="el" href="structspdk__scsi__task.html">spdk_scsi_task</a> *task, uint32_t *owner_task_ctr, struct <a class="el" href="structspdk__scsi__task.html">spdk_scsi_task</a> *parent)</td></tr>
-<tr class="separator:aa50d6239ecd9e56adbe3c2f63a41b7ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e498d7fb2c06a5e4b81fc50ff67f466"><td class="memItemLeft" align="right" valign="top"><a id="a6e498d7fb2c06a5e4b81fc50ff67f466"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_scsi_task_construct</b> (struct <a class="el" href="structspdk__scsi__task.html">spdk_scsi_task</a> *task, void(*free_fn)(struct <a class="el" href="structspdk__scsi__task.html">spdk_scsi_task</a> *task), struct <a class="el" href="structspdk__scsi__task.html">spdk_scsi_task</a> *parent)</td></tr>
+<tr class="separator:a6e498d7fb2c06a5e4b81fc50ff67f466"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab0fc6066d5a615661c85be595a276ed9"><td class="memItemLeft" align="right" valign="top"><a id="ab0fc6066d5a615661c85be595a276ed9"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_scsi_task_put</b> (struct <a class="el" href="structspdk__scsi__task.html">spdk_scsi_task</a> *task)</td></tr>
 <tr class="separator:ab0fc6066d5a615661c85be595a276ed9"><td class="memSeparator" colspan="2">&#160;</td></tr>
