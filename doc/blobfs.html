@@ -104,7 +104,7 @@ RocksDB Integration</h1>
 <p>At this point, RocksDB is ready for testing with SPDK. Three db_bench parameters are used to configure SPDK:</p>
 <ol type="1">
 <li>spdk - Defines the name of the SPDK configuration file. If omitted, RocksDB will use the default PosixEnv implementation instead of SpdkEnv. (Required)</li>
-<li><a class="el" href="structspdk__bdev.html" title="SPDK block device. ">spdk_bdev</a> - Defines the name of the SPDK block device which contains the BlobFS to be used for testing. (Required)</li>
+<li>spdk_bdev - Defines the name of the SPDK block device which contains the BlobFS to be used for testing. (Required)</li>
 <li>spdk_cache_size - Defines the amount of userspace cache memory used by SPDK. Specified in terms of megabytes (MB). Default is 4096 (4GB). (Optional)</li>
 </ol>
 <p>SPDK has a set of scripts which will run db_bench against a variety of workloads and capture performance and profiling data. The primary script is <code>test/blobfs/rocksdb/run_tests.sh</code>.</p>

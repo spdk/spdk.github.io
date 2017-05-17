@@ -91,8 +91,7 @@ Collaboration diagram for spdk_nvmf_subsystem:</div>
 <div class="center"><img src="structspdk__nvmf__subsystem__coll__graph.png" border="0" usemap="#spdk__nvmf__subsystem_coll__map" alt="Collaboration graph"/></div>
 <map name="spdk__nvmf__subsystem_coll__map" id="spdk__nvmf__subsystem_coll__map">
 <area shape="rect" id="node2" href="structspdk__pci__addr.html" title="spdk_pci_addr" alt="" coords="5,5,112,32"/>
-<area shape="rect" id="node3" href="structspdk__bdev.html" title="SPDK block device. " alt="" coords="136,5,221,32"/>
-<area shape="rect" id="node4" href="structspdk__nvmf__ctrlr__ops.html" title="spdk_nvmf_ctrlr_ops" alt="" coords="246,5,389,32"/>
+<area shape="rect" id="node3" href="structspdk__nvmf__ctrlr__ops.html" title="spdk_nvmf_ctrlr_ops" alt="" coords="137,5,279,32"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -158,7 +157,7 @@ union {</td></tr>
 &#160;&#160;&#160;&#160;&#160;&#160;char&#160;&#160;&#160;<b>sn</b> [MAX_SN_LEN+1]</td></tr>
 <tr class="separator:aefead1d5afe951088a193dcb5945f7fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a78a525091c865eb184bd22c3daf9bd55"><td class="memItemLeft" >
-&#160;&#160;&#160;&#160;&#160;&#160;struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *&#160;&#160;&#160;<b>ns_list</b> [MAX_VIRTUAL_NAMESPACE]</td></tr>
+&#160;&#160;&#160;&#160;&#160;&#160;struct spdk_bdev *&#160;&#160;&#160;<b>ns_list</b> [MAX_VIRTUAL_NAMESPACE]</td></tr>
 <tr class="separator:a78a525091c865eb184bd22c3daf9bd55"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a07ff84c576cf84e082ec9184b7d1e6f2"><td class="memItemLeft" >
 &#160;&#160;&#160;&#160;&#160;&#160;struct spdk_io_channel *&#160;&#160;&#160;<b>ch</b> [MAX_VIRTUAL_NAMESPACE]</td></tr>

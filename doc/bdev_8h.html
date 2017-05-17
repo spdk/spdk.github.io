@@ -83,7 +83,6 @@
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Data Structures</a> &#124;
 <a href="#define-members">Macros</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
 <a href="#enum-members">Enumerations</a> &#124;
@@ -96,12 +95,6 @@
 <p>Block device abstraction layer.  
 <a href="#details">More...</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Data Structures</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev.html">spdk_bdev</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">SPDK block device.  <a href="structspdk__bdev.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
 <tr class="memitem:a22219ae3fb084dcb87bcc6d454b415aa"><td class="memItemLeft" align="right" valign="top"><a id="a22219ae3fb084dcb87bcc6d454b415aa"></a>
@@ -110,12 +103,6 @@ Macros</h2></td></tr>
 <tr class="memitem:a9496c34e0fc135e1f309fd586e8e65d0"><td class="memItemLeft" align="right" valign="top"><a id="a9496c34e0fc135e1f309fd586e8e65d0"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_BDEV_LARGE_BUF_MAX_SIZE</b>&#160;&#160;&#160;(64 * 1024)</td></tr>
 <tr class="separator:a9496c34e0fc135e1f309fd586e8e65d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad64e560812515480874af4688dc858da"><td class="memItemLeft" align="right" valign="top"><a id="ad64e560812515480874af4688dc858da"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_BDEV_MAX_NAME_LENGTH</b>&#160;&#160;&#160;16</td></tr>
-<tr class="separator:ad64e560812515480874af4688dc858da"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac0e83fcafa9b1f23758b411990dcef4c"><td class="memItemLeft" align="right" valign="top"><a id="ac0e83fcafa9b1f23758b411990dcef4c"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_BDEV_MAX_PRODUCT_NAME_LENGTH</b>&#160;&#160;&#160;50</td></tr>
-<tr class="separator:ac0e83fcafa9b1f23758b411990dcef4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
@@ -166,73 +153,76 @@ Enumerations</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a89c759c53d028e3e408d19156f0e1eb1"><td class="memItemLeft" align="right" valign="top"><a id="a89c759c53d028e3e408d19156f0e1eb1"></a>
-struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_get_by_name</b> (const char *bdev_name)</td></tr>
+struct spdk_bdev *&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_get_by_name</b> (const char *bdev_name)</td></tr>
 <tr class="separator:a89c759c53d028e3e408d19156f0e1eb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8b044bb1053e99eb9c2830498dc2117d"><td class="memItemLeft" align="right" valign="top"><a id="a8b044bb1053e99eb9c2830498dc2117d"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_unregister</b> (struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *bdev)</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_unregister</b> (struct spdk_bdev *bdev)</td></tr>
 <tr class="separator:a8b044bb1053e99eb9c2830498dc2117d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a578b0a9d444ddbb23c8181d9a5ea4f46"><td class="memItemLeft" align="right" valign="top"><a id="a578b0a9d444ddbb23c8181d9a5ea4f46"></a>
-struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_first</b> (void)</td></tr>
+struct spdk_bdev *&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_first</b> (void)</td></tr>
 <tr class="separator:a578b0a9d444ddbb23c8181d9a5ea4f46"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa1c0b9cb8dde1177df3442206cf87d2d"><td class="memItemLeft" align="right" valign="top"><a id="aa1c0b9cb8dde1177df3442206cf87d2d"></a>
-struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_next</b> (struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *prev)</td></tr>
+struct spdk_bdev *&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_next</b> (struct spdk_bdev *prev)</td></tr>
 <tr class="separator:aa1c0b9cb8dde1177df3442206cf87d2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af5600670a9cb061bb5bd9ed4d8dd7046"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev_8h.html#af5600670a9cb061bb5bd9ed4d8dd7046">spdk_bdev_claim</a> (struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *bdev, spdk_bdev_remove_cb_t remove_cb, void *remove_ctx)</td></tr>
+<tr class="memitem:af5600670a9cb061bb5bd9ed4d8dd7046"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev_8h.html#af5600670a9cb061bb5bd9ed4d8dd7046">spdk_bdev_claim</a> (struct spdk_bdev *bdev, spdk_bdev_remove_cb_t remove_cb, void *remove_ctx)</td></tr>
 <tr class="memdesc:af5600670a9cb061bb5bd9ed4d8dd7046"><td class="mdescLeft">&#160;</td><td class="mdescRight">Claim ownership of a block device.  <a href="#af5600670a9cb061bb5bd9ed4d8dd7046">More...</a><br /></td></tr>
 <tr class="separator:af5600670a9cb061bb5bd9ed4d8dd7046"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae080366bf0d3b59d0bb05f2b3e698dea"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev_8h.html#ae080366bf0d3b59d0bb05f2b3e698dea">spdk_bdev_unclaim</a> (struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *bdev)</td></tr>
+<tr class="memitem:ae080366bf0d3b59d0bb05f2b3e698dea"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev_8h.html#ae080366bf0d3b59d0bb05f2b3e698dea">spdk_bdev_unclaim</a> (struct spdk_bdev *bdev)</td></tr>
 <tr class="memdesc:ae080366bf0d3b59d0bb05f2b3e698dea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Release claim of ownership of a block device.  <a href="#ae080366bf0d3b59d0bb05f2b3e698dea">More...</a><br /></td></tr>
 <tr class="separator:ae080366bf0d3b59d0bb05f2b3e698dea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7cd5dff692dc162459801d5649fe7655"><td class="memItemLeft" align="right" valign="top"><a id="a7cd5dff692dc162459801d5649fe7655"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_io_type_supported</b> (struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *bdev, enum <a class="el" href="bdev_8h.html#a633029e24ab5ae4a689bffa2565a519f">spdk_bdev_io_type</a> io_type)</td></tr>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_io_type_supported</b> (struct spdk_bdev *bdev, enum <a class="el" href="bdev_8h.html#a633029e24ab5ae4a689bffa2565a519f">spdk_bdev_io_type</a> io_type)</td></tr>
 <tr class="separator:a7cd5dff692dc162459801d5649fe7655"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a84d158f886b7ae2f735a794da420ca55"><td class="memItemLeft" align="right" valign="top"><a id="a84d158f886b7ae2f735a794da420ca55"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_dump_config_json</b> (struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *bdev, struct spdk_json_write_ctx *w)</td></tr>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_dump_config_json</b> (struct spdk_bdev *bdev, struct spdk_json_write_ctx *w)</td></tr>
 <tr class="separator:a84d158f886b7ae2f735a794da420ca55"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad97a853dcb945bf004817424b7aa28af"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev_8h.html#ad97a853dcb945bf004817424b7aa28af">spdk_bdev_get_name</a> (const struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *bdev)</td></tr>
+<tr class="memitem:ad97a853dcb945bf004817424b7aa28af"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev_8h.html#ad97a853dcb945bf004817424b7aa28af">spdk_bdev_get_name</a> (const struct spdk_bdev *bdev)</td></tr>
 <tr class="memdesc:ad97a853dcb945bf004817424b7aa28af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get block device name.  <a href="#ad97a853dcb945bf004817424b7aa28af">More...</a><br /></td></tr>
 <tr class="separator:ad97a853dcb945bf004817424b7aa28af"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1cb4d1f8822c30be8c5d9c5dc3e62483"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev_8h.html#a1cb4d1f8822c30be8c5d9c5dc3e62483">spdk_bdev_get_product_name</a> (const struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *bdev)</td></tr>
+<tr class="memitem:a1cb4d1f8822c30be8c5d9c5dc3e62483"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev_8h.html#a1cb4d1f8822c30be8c5d9c5dc3e62483">spdk_bdev_get_product_name</a> (const struct spdk_bdev *bdev)</td></tr>
 <tr class="memdesc:a1cb4d1f8822c30be8c5d9c5dc3e62483"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get block device product name.  <a href="#a1cb4d1f8822c30be8c5d9c5dc3e62483">More...</a><br /></td></tr>
 <tr class="separator:a1cb4d1f8822c30be8c5d9c5dc3e62483"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3ba8c5672c8226b9b63f44543518c527"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev_8h.html#a3ba8c5672c8226b9b63f44543518c527">spdk_bdev_get_block_size</a> (const struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *bdev)</td></tr>
+<tr class="memitem:a3ba8c5672c8226b9b63f44543518c527"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev_8h.html#a3ba8c5672c8226b9b63f44543518c527">spdk_bdev_get_block_size</a> (const struct spdk_bdev *bdev)</td></tr>
 <tr class="memdesc:a3ba8c5672c8226b9b63f44543518c527"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get block device logical block size.  <a href="#a3ba8c5672c8226b9b63f44543518c527">More...</a><br /></td></tr>
 <tr class="separator:a3ba8c5672c8226b9b63f44543518c527"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a86568eca8f0b4d0dc9bc59c5138fc7a5"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev_8h.html#a86568eca8f0b4d0dc9bc59c5138fc7a5">spdk_bdev_get_num_blocks</a> (const struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *bdev)</td></tr>
+<tr class="memitem:a86568eca8f0b4d0dc9bc59c5138fc7a5"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev_8h.html#a86568eca8f0b4d0dc9bc59c5138fc7a5">spdk_bdev_get_num_blocks</a> (const struct spdk_bdev *bdev)</td></tr>
 <tr class="memdesc:a86568eca8f0b4d0dc9bc59c5138fc7a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get size of block device in logical blocks.  <a href="#a86568eca8f0b4d0dc9bc59c5138fc7a5">More...</a><br /></td></tr>
 <tr class="separator:a86568eca8f0b4d0dc9bc59c5138fc7a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a055368a3ce95cb597c99e9920dd025a4"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev_8h.html#a055368a3ce95cb597c99e9920dd025a4">spdk_bdev_get_max_unmap_descriptors</a> (const struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *bdev)</td></tr>
+<tr class="memitem:a055368a3ce95cb597c99e9920dd025a4"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev_8h.html#a055368a3ce95cb597c99e9920dd025a4">spdk_bdev_get_max_unmap_descriptors</a> (const struct spdk_bdev *bdev)</td></tr>
 <tr class="memdesc:a055368a3ce95cb597c99e9920dd025a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get maximum number of descriptors per unmap request.  <a href="#a055368a3ce95cb597c99e9920dd025a4">More...</a><br /></td></tr>
 <tr class="separator:a055368a3ce95cb597c99e9920dd025a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab4d238484b372a77ba130fbb70f83519"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev_8h.html#ab4d238484b372a77ba130fbb70f83519">spdk_bdev_get_buf_align</a> (const struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *bdev)</td></tr>
+<tr class="memitem:ab4d238484b372a77ba130fbb70f83519"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev_8h.html#ab4d238484b372a77ba130fbb70f83519">spdk_bdev_get_buf_align</a> (const struct spdk_bdev *bdev)</td></tr>
 <tr class="memdesc:ab4d238484b372a77ba130fbb70f83519"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get minimum I/O buffer address alignment for a bdev.  <a href="#ab4d238484b372a77ba130fbb70f83519">More...</a><br /></td></tr>
 <tr class="separator:ab4d238484b372a77ba130fbb70f83519"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93f6d6ce09da384501f09a49581caa37"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev_8h.html#a93f6d6ce09da384501f09a49581caa37">spdk_bdev_has_write_cache</a> (const struct spdk_bdev *bdev)</td></tr>
+<tr class="memdesc:a93f6d6ce09da384501f09a49581caa37"><td class="mdescLeft">&#160;</td><td class="mdescRight">Query whether block device has an enabled write cache.  <a href="#a93f6d6ce09da384501f09a49581caa37">More...</a><br /></td></tr>
+<tr class="separator:a93f6d6ce09da384501f09a49581caa37"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a664bd53b425a79f98926fdddd6004ad7"><td class="memItemLeft" align="right" valign="top"><a id="a664bd53b425a79f98926fdddd6004ad7"></a>
-struct spdk_bdev_io *&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_read</b> (struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *bdev, struct spdk_io_channel *ch, void *buf, uint64_t offset, uint64_t nbytes, spdk_bdev_io_completion_cb cb, void *cb_arg)</td></tr>
+struct spdk_bdev_io *&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_read</b> (struct spdk_bdev *bdev, struct spdk_io_channel *ch, void *buf, uint64_t offset, uint64_t nbytes, spdk_bdev_io_completion_cb cb, void *cb_arg)</td></tr>
 <tr class="separator:a664bd53b425a79f98926fdddd6004ad7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a76c90e1fed97dc8962bd319d12b76a56"><td class="memItemLeft" align="right" valign="top"><a id="a76c90e1fed97dc8962bd319d12b76a56"></a>
-struct spdk_bdev_io *&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_readv</b> (struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *bdev, struct spdk_io_channel *ch, struct iovec *iov, int iovcnt, uint64_t offset, uint64_t nbytes, spdk_bdev_io_completion_cb cb, void *cb_arg)</td></tr>
+struct spdk_bdev_io *&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_readv</b> (struct spdk_bdev *bdev, struct spdk_io_channel *ch, struct iovec *iov, int iovcnt, uint64_t offset, uint64_t nbytes, spdk_bdev_io_completion_cb cb, void *cb_arg)</td></tr>
 <tr class="separator:a76c90e1fed97dc8962bd319d12b76a56"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab6e9f184fef0d26df877a329db72e21d"><td class="memItemLeft" align="right" valign="top"><a id="ab6e9f184fef0d26df877a329db72e21d"></a>
-struct spdk_bdev_io *&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_write</b> (struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *bdev, struct spdk_io_channel *ch, void *buf, uint64_t offset, uint64_t nbytes, spdk_bdev_io_completion_cb cb, void *cb_arg)</td></tr>
+struct spdk_bdev_io *&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_write</b> (struct spdk_bdev *bdev, struct spdk_io_channel *ch, void *buf, uint64_t offset, uint64_t nbytes, spdk_bdev_io_completion_cb cb, void *cb_arg)</td></tr>
 <tr class="separator:ab6e9f184fef0d26df877a329db72e21d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a46019368202d3df15876d52e11517389"><td class="memItemLeft" align="right" valign="top"><a id="a46019368202d3df15876d52e11517389"></a>
-struct spdk_bdev_io *&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_writev</b> (struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *bdev, struct spdk_io_channel *ch, struct iovec *iov, int iovcnt, uint64_t offset, uint64_t len, spdk_bdev_io_completion_cb cb, void *cb_arg)</td></tr>
+struct spdk_bdev_io *&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_writev</b> (struct spdk_bdev *bdev, struct spdk_io_channel *ch, struct iovec *iov, int iovcnt, uint64_t offset, uint64_t len, spdk_bdev_io_completion_cb cb, void *cb_arg)</td></tr>
 <tr class="separator:a46019368202d3df15876d52e11517389"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aef6fb3308d9dca07c5ad18176df12bd1"><td class="memItemLeft" align="right" valign="top"><a id="aef6fb3308d9dca07c5ad18176df12bd1"></a>
-struct spdk_bdev_io *&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_unmap</b> (struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *bdev, struct spdk_io_channel *ch, struct <a class="el" href="structspdk__scsi__unmap__bdesc.html">spdk_scsi_unmap_bdesc</a> *unmap_d, uint16_t bdesc_count, spdk_bdev_io_completion_cb cb, void *cb_arg)</td></tr>
+struct spdk_bdev_io *&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_unmap</b> (struct spdk_bdev *bdev, struct spdk_io_channel *ch, struct <a class="el" href="structspdk__scsi__unmap__bdesc.html">spdk_scsi_unmap_bdesc</a> *unmap_d, uint16_t bdesc_count, spdk_bdev_io_completion_cb cb, void *cb_arg)</td></tr>
 <tr class="separator:aef6fb3308d9dca07c5ad18176df12bd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2e5ca1848df6b80d4ce81b8a6c366170"><td class="memItemLeft" align="right" valign="top"><a id="a2e5ca1848df6b80d4ce81b8a6c366170"></a>
-struct spdk_bdev_io *&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_flush</b> (struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *bdev, struct spdk_io_channel *ch, uint64_t offset, uint64_t length, spdk_bdev_io_completion_cb cb, void *cb_arg)</td></tr>
+struct spdk_bdev_io *&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_flush</b> (struct spdk_bdev *bdev, struct spdk_io_channel *ch, uint64_t offset, uint64_t length, spdk_bdev_io_completion_cb cb, void *cb_arg)</td></tr>
 <tr class="separator:a2e5ca1848df6b80d4ce81b8a6c366170"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a536a365e14bc4f3ddf76b9340958ebd8"><td class="memItemLeft" align="right" valign="top"><a id="a536a365e14bc4f3ddf76b9340958ebd8"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_free_io</b> (struct spdk_bdev_io *bdev_io)</td></tr>
 <tr class="separator:a536a365e14bc4f3ddf76b9340958ebd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7a03a3f16c42ad4186e26ef7bba1145e"><td class="memItemLeft" align="right" valign="top"><a id="a7a03a3f16c42ad4186e26ef7bba1145e"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_reset</b> (struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *bdev, enum <a class="el" href="bdev_8h.html#ae0c63447f343002f128438ab17c67f44">spdk_bdev_reset_type</a>, spdk_bdev_io_completion_cb cb, void *cb_arg)</td></tr>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_reset</b> (struct spdk_bdev *bdev, enum <a class="el" href="bdev_8h.html#ae0c63447f343002f128438ab17c67f44">spdk_bdev_reset_type</a>, spdk_bdev_io_completion_cb cb, void *cb_arg)</td></tr>
 <tr class="separator:a7a03a3f16c42ad4186e26ef7bba1145e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad52d4d0b0d0d26c6308ad7386a174691"><td class="memItemLeft" align="right" valign="top"><a id="ad52d4d0b0d0d26c6308ad7386a174691"></a>
-struct spdk_io_channel *&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_get_io_channel</b> (struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *bdev, uint32_t priority)</td></tr>
+struct spdk_io_channel *&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_get_io_channel</b> (struct spdk_bdev *bdev, uint32_t priority)</td></tr>
 <tr class="separator:ad52d4d0b0d0d26c6308ad7386a174691"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afe43254747db3cd072dfb596be3bbf2f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev_8h.html#afe43254747db3cd072dfb596be3bbf2f">spdk_bdev_io_get_nvme_status</a> (const struct spdk_bdev_io *bdev_io, int *sct, int *sc)</td></tr>
 <tr class="memdesc:afe43254747db3cd072dfb596be3bbf2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the status of bdev_io as an NVMe status code.  <a href="#afe43254747db3cd072dfb596be3bbf2f">More...</a><br /></td></tr>
@@ -279,7 +269,7 @@ struct spdk_io_channel *&#160;</td><td class="memItemRight" valign="bottom"><b>s
         <tr>
           <td class="memname">bool spdk_bdev_claim </td>
           <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *&#160;</td>
+          <td class="paramtype">struct spdk_bdev *&#160;</td>
           <td class="paramname"><em>bdev</em>, </td>
         </tr>
         <tr>
@@ -326,7 +316,7 @@ struct spdk_io_channel *&#160;</td><td class="memItemRight" valign="bottom"><b>s
         <tr>
           <td class="memname">uint32_t spdk_bdev_get_block_size </td>
           <td>(</td>
-          <td class="paramtype">const struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *&#160;</td>
+          <td class="paramtype">const struct spdk_bdev *&#160;</td>
           <td class="paramname"><em>bdev</em></td><td>)</td>
           <td></td>
         </tr>
@@ -353,7 +343,7 @@ struct spdk_io_channel *&#160;</td><td class="memItemRight" valign="bottom"><b>s
         <tr>
           <td class="memname">size_t spdk_bdev_get_buf_align </td>
           <td>(</td>
-          <td class="paramtype">const struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *&#160;</td>
+          <td class="paramtype">const struct spdk_bdev *&#160;</td>
           <td class="paramname"><em>bdev</em></td><td>)</td>
           <td></td>
         </tr>
@@ -380,7 +370,7 @@ struct spdk_io_channel *&#160;</td><td class="memItemRight" valign="bottom"><b>s
         <tr>
           <td class="memname">uint32_t spdk_bdev_get_max_unmap_descriptors </td>
           <td>(</td>
-          <td class="paramtype">const struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *&#160;</td>
+          <td class="paramtype">const struct spdk_bdev *&#160;</td>
           <td class="paramname"><em>bdev</em></td><td>)</td>
           <td></td>
         </tr>
@@ -407,7 +397,7 @@ struct spdk_io_channel *&#160;</td><td class="memItemRight" valign="bottom"><b>s
         <tr>
           <td class="memname">const char* spdk_bdev_get_name </td>
           <td>(</td>
-          <td class="paramtype">const struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *&#160;</td>
+          <td class="paramtype">const struct spdk_bdev *&#160;</td>
           <td class="paramname"><em>bdev</em></td><td>)</td>
           <td></td>
         </tr>
@@ -434,7 +424,7 @@ struct spdk_io_channel *&#160;</td><td class="memItemRight" valign="bottom"><b>s
         <tr>
           <td class="memname">uint64_t spdk_bdev_get_num_blocks </td>
           <td>(</td>
-          <td class="paramtype">const struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *&#160;</td>
+          <td class="paramtype">const struct spdk_bdev *&#160;</td>
           <td class="paramname"><em>bdev</em></td><td>)</td>
           <td></td>
         </tr>
@@ -462,7 +452,7 @@ struct spdk_io_channel *&#160;</td><td class="memItemRight" valign="bottom"><b>s
         <tr>
           <td class="memname">const char* spdk_bdev_get_product_name </td>
           <td>(</td>
-          <td class="paramtype">const struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *&#160;</td>
+          <td class="paramtype">const struct spdk_bdev *&#160;</td>
           <td class="paramname"><em>bdev</em></td><td>)</td>
           <td></td>
         </tr>
@@ -477,6 +467,34 @@ struct spdk_io_channel *&#160;</td><td class="memItemRight" valign="bottom"><b>s
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Product name of bdev as a null-terminated string. </dd></dl>
+
+</div>
+</div>
+<a id="a93f6d6ce09da384501f09a49581caa37"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a93f6d6ce09da384501f09a49581caa37">&#9670;&nbsp;</a></span>spdk_bdev_has_write_cache()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool spdk_bdev_has_write_cache </td>
+          <td>(</td>
+          <td class="paramtype">const struct spdk_bdev *&#160;</td>
+          <td class="paramname"><em>bdev</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Query whether block device has an enabled write cache. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bdev</td><td>Block device to query. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if block device has a volatile write cache enabled.</dd></dl>
+<p>If this function returns true, written data may not be persistent until a flush command is issued. </p>
 
 </div>
 </div>
@@ -635,7 +653,7 @@ struct spdk_io_channel *&#160;</td><td class="memItemRight" valign="bottom"><b>s
         <tr>
           <td class="memname">void spdk_bdev_unclaim </td>
           <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *&#160;</td>
+          <td class="paramtype">struct spdk_bdev *&#160;</td>
           <td class="paramname"><em>bdev</em></td><td>)</td>
           <td></td>
         </tr>
