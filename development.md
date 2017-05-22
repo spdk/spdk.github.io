@@ -36,7 +36,14 @@ Now that you're signed in, click the drop down by your user name in the top righ
 * `Preferences`:
   * Set Maximum Page Size to 100 rows per page. Otherwise you'll be hitting 'next' a lot.
   * We highly recommend you set your Email Notifications to None. Gerrit can send a lot of emails, especially if you are involved in lots of code reviews. Instead, most of the developers just check the main overview page for incoming reviews a few times a day (we poll instead of interrupt - sounds familiar!). If you are very occasionally submitting a patch and aren't doing many reviews, you may want to leave your email notifications enabled.
-  * In the `My Menu` section, add the following entry: `Name: SPDK Open Reviews URL: #/dashboard/?Outgoing=projects:spdk+o:self+status:open&Needs%20Review=projects:spdk+r:self+-o:self+status:open&Open=projects:spdk+status:open+-r:self+-o:self`. You can probably also delete the other entries in there. This will add a link at the top of the page under "My" that will show you a nice dashboard of all of the SPDK review activity.
+  * In the `My Menu` section, add the following entry:
+
+  ~~~
+  Name: SPDK Open Reviews
+  URL: #/dashboard/?Outgoing=projects:spdk+o:self+status:open&Needs%20Review=projects:spdk+r:self+-o:self+status:open&Open=projects:spdk+status:open+-r:self+-o:self
+  ~~~
+
+  You can probably also delete the other entries in there. This will add a link at the top of the page under "My" that will show you a nice dashboard of all of the SPDK review activity.
 * `SSH Public Keys`: Upload a public SSH key here. This is only necessary if you need to push reviews over SSH. GerritHub also supports HTTPS, and HTTPS is the recommended method and the method described below.
 * `HTTP Password`: Generate a password here and save it for later. This will be required when creating new code reviews using HTTPS.
 
