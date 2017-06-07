@@ -176,6 +176,9 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_json_decode_int32
 <tr class="memitem:a5ba97519fb4d8431f8b5241379a06b2e"><td class="memItemLeft" align="right" valign="top"><a id="a5ba97519fb4d8431f8b5241379a06b2e"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_json_decode_uint32</b> (const struct <a class="el" href="structspdk__json__val.html">spdk_json_val</a> *val, void *out)</td></tr>
 <tr class="separator:a5ba97519fb4d8431f8b5241379a06b2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96d2603083c8aa2b43a9f26d5d040262"><td class="memItemLeft" align="right" valign="top"><a id="a96d2603083c8aa2b43a9f26d5d040262"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_json_decode_uint64</b> (const struct <a class="el" href="structspdk__json__val.html">spdk_json_val</a> *val, void *out)</td></tr>
+<tr class="separator:a96d2603083c8aa2b43a9f26d5d040262"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae002256312f263ec6082c9f06f135608"><td class="memItemLeft" align="right" valign="top"><a id="ae002256312f263ec6082c9f06f135608"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_json_decode_string</b> (const struct <a class="el" href="structspdk__json__val.html">spdk_json_val</a> *val, void *out)</td></tr>
 <tr class="separator:ae002256312f263ec6082c9f06f135608"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -188,15 +191,15 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_json_decode_strin
 <tr class="memitem:abd03643e1ee9b7de1e784523196ef471"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="json_8h.html#abd03643e1ee9b7de1e784523196ef471">spdk_json_strdup</a> (const struct <a class="el" href="structspdk__json__val.html">spdk_json_val</a> *val)</td></tr>
 <tr class="memdesc:abd03643e1ee9b7de1e784523196ef471"><td class="mdescLeft">&#160;</td><td class="mdescRight">Equivalent of strdup() for JSON string values.  <a href="#abd03643e1ee9b7de1e784523196ef471">More...</a><br /></td></tr>
 <tr class="separator:abd03643e1ee9b7de1e784523196ef471"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aff28847dc7d7699f474a07ece26d1040"><td class="memItemLeft" align="right" valign="top"><a id="aff28847dc7d7699f474a07ece26d1040"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_json_number_to_double</b> (const struct <a class="el" href="structspdk__json__val.html">spdk_json_val</a> *val, double *num)</td></tr>
-<tr class="separator:aff28847dc7d7699f474a07ece26d1040"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aef7ad204330195bde7e89054f43ce6a3"><td class="memItemLeft" align="right" valign="top"><a id="aef7ad204330195bde7e89054f43ce6a3"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_json_number_to_int32</b> (const struct <a class="el" href="structspdk__json__val.html">spdk_json_val</a> *val, int32_t *num)</td></tr>
 <tr class="separator:aef7ad204330195bde7e89054f43ce6a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a09e94f77e23c6a3d4211a91a7fdec6e4"><td class="memItemLeft" align="right" valign="top"><a id="a09e94f77e23c6a3d4211a91a7fdec6e4"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_json_number_to_uint32</b> (const struct <a class="el" href="structspdk__json__val.html">spdk_json_val</a> *val, uint32_t *num)</td></tr>
 <tr class="separator:a09e94f77e23c6a3d4211a91a7fdec6e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c52aaf8c280708f391202507ac80a4b"><td class="memItemLeft" align="right" valign="top"><a id="a0c52aaf8c280708f391202507ac80a4b"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_json_number_to_uint64</b> (const struct <a class="el" href="structspdk__json__val.html">spdk_json_val</a> *val, uint64_t *num)</td></tr>
+<tr class="separator:a0c52aaf8c280708f391202507ac80a4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa9af35123c0d53784c760bf901d8a42a"><td class="memItemLeft" align="right" valign="top"><a id="aa9af35123c0d53784c760bf901d8a42a"></a>
 struct spdk_json_write_ctx *&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_json_write_begin</b> (spdk_json_write_cb write_cb, void *cb_ctx, uint32_t flags)</td></tr>
 <tr class="separator:aa9af35123c0d53784c760bf901d8a42a"><td class="memSeparator" colspan="2">&#160;</td></tr>

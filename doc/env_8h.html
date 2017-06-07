@@ -119,6 +119,9 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
+<tr class="memitem:a0083ace78471c3d3d247e21e4968d526"><td class="memItemLeft" align="right" valign="top"><a id="a0083ace78471c3d3d247e21e4968d526"></a>
+typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><b>thread_start_fn</b>) (void *)</td></tr>
+<tr class="separator:a0083ace78471c3d3d247e21e4968d526"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abdbcd903dfa26b4e625bdbef66b6d6a8"><td class="memItemLeft" align="right" valign="top"><a id="abdbcd903dfa26b4e625bdbef66b6d6a8"></a>
 typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_pci_enum_cb</b>) (void *enum_ctx, struct spdk_pci_device *pci_dev)</td></tr>
 <tr class="separator:abdbcd903dfa26b4e625bdbef66b6d6a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -128,7 +131,8 @@ typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_mem_ma
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:a88610413d6db3cc0eaafa4bda0f2caa9"><td class="memItemLeft" align="right" valign="top"><a id="a88610413d6db3cc0eaafa4bda0f2caa9"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>spdk_ring_type</b> { <b>SPDK_RING_TYPE_MP_SC</b>
+<tr class="memitem:a88610413d6db3cc0eaafa4bda0f2caa9"><td class="memItemLeft" align="right" valign="top"><a id="a88610413d6db3cc0eaafa4bda0f2caa9"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>spdk_ring_type</b> { <b>SPDK_RING_TYPE_SP_SC</b>, 
+<b>SPDK_RING_TYPE_MP_SC</b>
  }</td></tr>
 <tr class="separator:a88610413d6db3cc0eaafa4bda0f2caa9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a96af19906abf2a01e9f1f2105f90722c"><td class="memItemLeft" align="right" valign="top"><a id="a96af19906abf2a01e9f1f2105f90722c"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>spdk_mem_map_notify_action</b> { <b>SPDK_MEM_MAP_NOTIFY_REGISTER</b>, 
@@ -145,26 +149,26 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_
 <tr class="memitem:a64eecb39affafd001dfddcdf60114906"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_8h.html#a64eecb39affafd001dfddcdf60114906">spdk_env_init</a> (const struct <a class="el" href="structspdk__env__opts.html">spdk_env_opts</a> *opts)</td></tr>
 <tr class="memdesc:a64eecb39affafd001dfddcdf60114906"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the environment library.  <a href="#a64eecb39affafd001dfddcdf60114906">More...</a><br /></td></tr>
 <tr class="separator:a64eecb39affafd001dfddcdf60114906"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8f63fddd291ac3b0b3c4047807d59dc1"><td class="memItemLeft" align="right" valign="top"><a id="a8f63fddd291ac3b0b3c4047807d59dc1"></a>
-void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_8h.html#a8f63fddd291ac3b0b3c4047807d59dc1">spdk_malloc</a> (size_t size, size_t align, uint64_t *phys_addr)</td></tr>
-<tr class="memdesc:a8f63fddd291ac3b0b3c4047807d59dc1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate a pinned, physically contiguous memory buffer with the given size and alignment. <br /></td></tr>
-<tr class="separator:a8f63fddd291ac3b0b3c4047807d59dc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1dcaff5eed1dcfa4d2969fc30b44553f"><td class="memItemLeft" align="right" valign="top"><a id="a1dcaff5eed1dcfa4d2969fc30b44553f"></a>
-void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_8h.html#a1dcaff5eed1dcfa4d2969fc30b44553f">spdk_malloc_socket</a> (size_t size, size_t align, uint64_t *phys_addr, int socket_id)</td></tr>
-<tr class="memdesc:a1dcaff5eed1dcfa4d2969fc30b44553f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate a pinned, physically contiguous memory buffer with the given size, alignment and socket id. <br /></td></tr>
-<tr class="separator:a1dcaff5eed1dcfa4d2969fc30b44553f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a984f10f9ed752b7fab821c98ca171f63"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_8h.html#a984f10f9ed752b7fab821c98ca171f63">spdk_zmalloc</a> (size_t size, size_t align, uint64_t *phys_addr)</td></tr>
-<tr class="memdesc:a984f10f9ed752b7fab821c98ca171f63"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate a pinned, physically contiguous memory buffer with the given size and alignment.  <a href="#a984f10f9ed752b7fab821c98ca171f63">More...</a><br /></td></tr>
-<tr class="separator:a984f10f9ed752b7fab821c98ca171f63"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aee0033f633943e394f1513ae3822dba6"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_8h.html#aee0033f633943e394f1513ae3822dba6">spdk_zmalloc_socket</a> (size_t size, size_t align, uint64_t *phys_addr, int socket_id)</td></tr>
-<tr class="memdesc:aee0033f633943e394f1513ae3822dba6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate a pinned, physically contiguous memory buffer with the given size, alignment and socket id.  <a href="#aee0033f633943e394f1513ae3822dba6">More...</a><br /></td></tr>
-<tr class="separator:aee0033f633943e394f1513ae3822dba6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac48f01e1a2b51c2f7fc1904cd6e59022"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_8h.html#ac48f01e1a2b51c2f7fc1904cd6e59022">spdk_realloc</a> (void *buf, size_t size, size_t align, uint64_t *phys_addr)</td></tr>
-<tr class="memdesc:ac48f01e1a2b51c2f7fc1904cd6e59022"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resize the allocated and pinned memory buffer with the given new size and alignment.  <a href="#ac48f01e1a2b51c2f7fc1904cd6e59022">More...</a><br /></td></tr>
-<tr class="separator:ac48f01e1a2b51c2f7fc1904cd6e59022"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a452d670d7188f883224574dfabc39f2c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_8h.html#a452d670d7188f883224574dfabc39f2c">spdk_free</a> (void *buf)</td></tr>
-<tr class="memdesc:a452d670d7188f883224574dfabc39f2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Free a memory buffer previously allocated with spdk_zmalloc.  <a href="#a452d670d7188f883224574dfabc39f2c">More...</a><br /></td></tr>
-<tr class="separator:a452d670d7188f883224574dfabc39f2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0874731c44ac31e4b14d91c6844a87d1"><td class="memItemLeft" align="right" valign="top"><a id="a0874731c44ac31e4b14d91c6844a87d1"></a>
+void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_8h.html#a0874731c44ac31e4b14d91c6844a87d1">spdk_dma_malloc</a> (size_t size, size_t align, uint64_t *phys_addr)</td></tr>
+<tr class="memdesc:a0874731c44ac31e4b14d91c6844a87d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate a pinned, physically contiguous memory buffer with the given size and alignment. <br /></td></tr>
+<tr class="separator:a0874731c44ac31e4b14d91c6844a87d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c470325a493f204e1b1535d4b7bb1e9"><td class="memItemLeft" align="right" valign="top"><a id="a4c470325a493f204e1b1535d4b7bb1e9"></a>
+void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_8h.html#a4c470325a493f204e1b1535d4b7bb1e9">spdk_dma_malloc_socket</a> (size_t size, size_t align, uint64_t *phys_addr, int socket_id)</td></tr>
+<tr class="memdesc:a4c470325a493f204e1b1535d4b7bb1e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate a pinned, physically contiguous memory buffer with the given size, alignment and socket id. <br /></td></tr>
+<tr class="separator:a4c470325a493f204e1b1535d4b7bb1e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5b4bd563b918e721fd5006bfe960bc6"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_8h.html#ab5b4bd563b918e721fd5006bfe960bc6">spdk_dma_zmalloc</a> (size_t size, size_t align, uint64_t *phys_addr)</td></tr>
+<tr class="memdesc:ab5b4bd563b918e721fd5006bfe960bc6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate a pinned, physically contiguous memory buffer with the given size and alignment.  <a href="#ab5b4bd563b918e721fd5006bfe960bc6">More...</a><br /></td></tr>
+<tr class="separator:ab5b4bd563b918e721fd5006bfe960bc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f4e9f571d0b77a46ef0192e4cfb13f0"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_8h.html#a7f4e9f571d0b77a46ef0192e4cfb13f0">spdk_dma_zmalloc_socket</a> (size_t size, size_t align, uint64_t *phys_addr, int socket_id)</td></tr>
+<tr class="memdesc:a7f4e9f571d0b77a46ef0192e4cfb13f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate a pinned, physically contiguous memory buffer with the given size, alignment and socket id.  <a href="#a7f4e9f571d0b77a46ef0192e4cfb13f0">More...</a><br /></td></tr>
+<tr class="separator:a7f4e9f571d0b77a46ef0192e4cfb13f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a205172871786d57fca65f76a96874cdb"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_8h.html#a205172871786d57fca65f76a96874cdb">spdk_dma_realloc</a> (void *buf, size_t size, size_t align, uint64_t *phys_addr)</td></tr>
+<tr class="memdesc:a205172871786d57fca65f76a96874cdb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resize the allocated and pinned memory buffer with the given new size and alignment.  <a href="#a205172871786d57fca65f76a96874cdb">More...</a><br /></td></tr>
+<tr class="separator:a205172871786d57fca65f76a96874cdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd01324e661a5d6deb59bd2bc6230de3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_8h.html#acd01324e661a5d6deb59bd2bc6230de3">spdk_dma_free</a> (void *buf)</td></tr>
+<tr class="memdesc:acd01324e661a5d6deb59bd2bc6230de3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Free a memory buffer previously allocated with spdk_dma_zmalloc.  <a href="#acd01324e661a5d6deb59bd2bc6230de3">More...</a><br /></td></tr>
+<tr class="separator:acd01324e661a5d6deb59bd2bc6230de3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a48afc08099440a88e9e8dc3abf540ab9"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_8h.html#a48afc08099440a88e9e8dc3abf540ab9">spdk_memzone_reserve</a> (const char *name, size_t len, int socket_id, unsigned flags)</td></tr>
 <tr class="memdesc:a48afc08099440a88e9e8dc3abf540ab9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reserve a named, process shared memory zone with the given size, socket_id and flags.  <a href="#a48afc08099440a88e9e8dc3abf540ab9">More...</a><br /></td></tr>
 <tr class="separator:a48afc08099440a88e9e8dc3abf540ab9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -219,6 +223,13 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_8h.html#ab18052aa1bc0ff634ffc0ce11c577d65">spdk_env_get_socket_id</a> (uint32_t core)</td></tr>
 <tr class="memdesc:ab18052aa1bc0ff634ffc0ce11c577d65"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the socket ID for the given core. <br /></td></tr>
 <tr class="separator:ab18052aa1bc0ff634ffc0ce11c577d65"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4282feec502eca721136e88c824d59cf"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_8h.html#a4282feec502eca721136e88c824d59cf">spdk_env_thread_launch_pinned</a> (uint32_t core, thread_start_fn fn, void *arg)</td></tr>
+<tr class="memdesc:a4282feec502eca721136e88c824d59cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Launch a thread pinned to the given core.  <a href="#a4282feec502eca721136e88c824d59cf">More...</a><br /></td></tr>
+<tr class="separator:a4282feec502eca721136e88c824d59cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec7e5ab204489da6d344999e4a0c8a73"><td class="memItemLeft" align="right" valign="top"><a id="aec7e5ab204489da6d344999e4a0c8a73"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_8h.html#aec7e5ab204489da6d344999e4a0c8a73">spdk_env_thread_wait_all</a> (void)</td></tr>
+<tr class="memdesc:aec7e5ab204489da6d344999e4a0c8a73"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wait for all threads to exit before returning. <br /></td></tr>
+<tr class="separator:aec7e5ab204489da6d344999e4a0c8a73"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a798ae910c8563b33eea17af50cabb1ab"><td class="memItemLeft" align="right" valign="top"><a id="a798ae910c8563b33eea17af50cabb1ab"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_8h.html#a798ae910c8563b33eea17af50cabb1ab">spdk_process_is_primary</a> (void)</td></tr>
 <tr class="memdesc:a798ae910c8563b33eea17af50cabb1ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if the calling process is primary process. <br /></td></tr>
@@ -235,10 +246,10 @@ uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_8h.html#ab2e338ce2d6510489ae83bfff226b8b1">spdk_delay_us</a> (unsigned int us)</td></tr>
 <tr class="memdesc:ab2e338ce2d6510489ae83bfff226b8b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delay the given number of microseconds. <br /></td></tr>
 <tr class="separator:ab2e338ce2d6510489ae83bfff226b8b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a431d7024de0b6697b966f5087d53c1ad"><td class="memItemLeft" align="right" valign="top"><a id="a431d7024de0b6697b966f5087d53c1ad"></a>
-struct spdk_ring *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_8h.html#a431d7024de0b6697b966f5087d53c1ad">spdk_ring_create</a> (enum spdk_ring_type type, size_t count, size_t ele_size, int socket_id)</td></tr>
-<tr class="memdesc:a431d7024de0b6697b966f5087d53c1ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a ring. <br /></td></tr>
-<tr class="separator:a431d7024de0b6697b966f5087d53c1ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f9038d37e14d07c89b399ee92bcbb87"><td class="memItemLeft" align="right" valign="top"><a id="a9f9038d37e14d07c89b399ee92bcbb87"></a>
+struct spdk_ring *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_8h.html#a9f9038d37e14d07c89b399ee92bcbb87">spdk_ring_create</a> (enum spdk_ring_type type, size_t count, int socket_id)</td></tr>
+<tr class="memdesc:a9f9038d37e14d07c89b399ee92bcbb87"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a ring. <br /></td></tr>
+<tr class="separator:a9f9038d37e14d07c89b399ee92bcbb87"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3f1ec5c3714962d4b01ceb5a50571dca"><td class="memItemLeft" align="right" valign="top"><a id="a3f1ec5c3714962d4b01ceb5a50571dca"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_8h.html#a3f1ec5c3714962d4b01ceb5a50571dca">spdk_ring_free</a> (struct spdk_ring *ring)</td></tr>
 <tr class="memdesc:a3f1ec5c3714962d4b01ceb5a50571dca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Free the ring. <br /></td></tr>
@@ -433,6 +444,150 @@ uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 
 </div>
 </div>
+<a id="acd01324e661a5d6deb59bd2bc6230de3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acd01324e661a5d6deb59bd2bc6230de3">&#9670;&nbsp;</a></span>spdk_dma_free()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_dma_free </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>buf</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Free a memory buffer previously allocated with spdk_dma_zmalloc. </p>
+<p>This call is never made from the performance path. </p>
+
+</div>
+</div>
+<a id="a205172871786d57fca65f76a96874cdb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a205172871786d57fca65f76a96874cdb">&#9670;&nbsp;</a></span>spdk_dma_realloc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* spdk_dma_realloc </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>buf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>align</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t *&#160;</td>
+          <td class="paramname"><em>phys_addr</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Resize the allocated and pinned memory buffer with the given new size and alignment. </p>
+<p>Existing contents are preserved. </p>
+
+</div>
+</div>
+<a id="ab5b4bd563b918e721fd5006bfe960bc6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab5b4bd563b918e721fd5006bfe960bc6">&#9670;&nbsp;</a></span>spdk_dma_zmalloc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* spdk_dma_zmalloc </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>align</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t *&#160;</td>
+          <td class="paramname"><em>phys_addr</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Allocate a pinned, physically contiguous memory buffer with the given size and alignment. </p>
+<p>The buffer will be zeroed. </p>
+
+</div>
+</div>
+<a id="a7f4e9f571d0b77a46ef0192e4cfb13f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7f4e9f571d0b77a46ef0192e4cfb13f0">&#9670;&nbsp;</a></span>spdk_dma_zmalloc_socket()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* spdk_dma_zmalloc_socket </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>align</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t *&#160;</td>
+          <td class="paramname"><em>phys_addr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>socket_id</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Allocate a pinned, physically contiguous memory buffer with the given size, alignment and socket id. </p>
+<p>The buffer will be zeroed. </p>
+
+</div>
+</div>
 <a id="a2483610a36d7daa9e6b067d9270d0087"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2483610a36d7daa9e6b067d9270d0087">&#9670;&nbsp;</a></span>spdk_env_get_current_core()</h2>
 
@@ -496,24 +651,48 @@ uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 
 </div>
 </div>
-<a id="a452d670d7188f883224574dfabc39f2c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a452d670d7188f883224574dfabc39f2c">&#9670;&nbsp;</a></span>spdk_free()</h2>
+<a id="a4282feec502eca721136e88c824d59cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4282feec502eca721136e88c824d59cf">&#9670;&nbsp;</a></span>spdk_env_thread_launch_pinned()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void spdk_free </td>
+          <td class="memname">int spdk_env_thread_launch_pinned </td>
           <td>(</td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>buf</em></td><td>)</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>core</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">thread_start_fn&#160;</td>
+          <td class="paramname"><em>fn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>arg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Free a memory buffer previously allocated with spdk_zmalloc. </p>
-<p>This call is never made from the performance path. </p>
+<p>Launch a thread pinned to the given core. </p>
+<p>Only a single pinned thread may be launched per core. Subsequent attempts to launch pinned threads on that core will fail.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">core</td><td>The core to pin the thread to. </td></tr>
+    <tr><td class="paramname">fn</td><td>Entry point on the new thread. </td></tr>
+    <tr><td class="paramname">arg</td><td>Argument apssed to thread_start_fn </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -949,49 +1128,6 @@ uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 
 </div>
 </div>
-<a id="ac48f01e1a2b51c2f7fc1904cd6e59022"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac48f01e1a2b51c2f7fc1904cd6e59022">&#9670;&nbsp;</a></span>spdk_realloc()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void* spdk_realloc </td>
-          <td>(</td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>buf</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>size</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>align</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint64_t *&#160;</td>
-          <td class="paramname"><em>phys_addr</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Resize the allocated and pinned memory buffer with the given new size and alignment. </p>
-<p>Existing contents are preserved. </p>
-
-</div>
-</div>
 <a id="a982e1b212d497dbb209902f56b192afb"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a982e1b212d497dbb209902f56b192afb">&#9670;&nbsp;</a></span>spdk_ring_dequeue()</h2>
 
@@ -1063,86 +1199,6 @@ uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 
 <p>Queue the array of objects (with length count) on the ring. </p>
 <p>Return the number of objects enqueued. </p>
-
-</div>
-</div>
-<a id="a984f10f9ed752b7fab821c98ca171f63"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a984f10f9ed752b7fab821c98ca171f63">&#9670;&nbsp;</a></span>spdk_zmalloc()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void* spdk_zmalloc </td>
-          <td>(</td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>size</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>align</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint64_t *&#160;</td>
-          <td class="paramname"><em>phys_addr</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Allocate a pinned, physically contiguous memory buffer with the given size and alignment. </p>
-<p>The buffer will be zeroed. </p>
-
-</div>
-</div>
-<a id="aee0033f633943e394f1513ae3822dba6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aee0033f633943e394f1513ae3822dba6">&#9670;&nbsp;</a></span>spdk_zmalloc_socket()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void* spdk_zmalloc_socket </td>
-          <td>(</td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>size</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>align</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint64_t *&#160;</td>
-          <td class="paramname"><em>phys_addr</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>socket_id</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Allocate a pinned, physically contiguous memory buffer with the given size, alignment and socket id. </p>
-<p>The buffer will be zeroed. </p>
 
 </div>
 </div>

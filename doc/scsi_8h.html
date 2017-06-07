@@ -209,9 +209,9 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_scsi_dev_allocate
 <tr class="memitem:a09579688597a2ab594671a00b20fd2cd"><td class="memItemLeft" align="right" valign="top"><a id="a09579688597a2ab594671a00b20fd2cd"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_scsi_dev_free_io_channels</b> (struct spdk_scsi_dev *dev)</td></tr>
 <tr class="separator:a09579688597a2ab594671a00b20fd2cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4059581597daba3a63dcd0c875348025"><td class="memItemLeft" align="right" valign="top">struct spdk_scsi_dev *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="scsi_8h.html#a4059581597daba3a63dcd0c875348025">spdk_scsi_dev_construct</a> (const char *name, char *lun_name_list[], int *lun_id_list, int num_luns)</td></tr>
-<tr class="memdesc:a4059581597daba3a63dcd0c875348025"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a SCSI device object using the given parameters.  <a href="#a4059581597daba3a63dcd0c875348025">More...</a><br /></td></tr>
-<tr class="separator:a4059581597daba3a63dcd0c875348025"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa10d7ac3a5c5a0898677361890c42c73"><td class="memItemLeft" align="right" valign="top">struct spdk_scsi_dev *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="scsi_8h.html#aa10d7ac3a5c5a0898677361890c42c73">spdk_scsi_dev_construct</a> (const char *name, char *lun_name_list[], int *lun_id_list, int num_luns, uint8_t protocol_id)</td></tr>
+<tr class="memdesc:aa10d7ac3a5c5a0898677361890c42c73"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a SCSI device object using the given parameters.  <a href="#aa10d7ac3a5c5a0898677361890c42c73">More...</a><br /></td></tr>
+<tr class="separator:aa10d7ac3a5c5a0898677361890c42c73"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abbacc6adf74a9790630dedda8b97940e"><td class="memItemLeft" align="right" valign="top"><a id="abbacc6adf74a9790630dedda8b97940e"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_scsi_dev_delete_lun</b> (struct spdk_scsi_dev *dev, struct spdk_scsi_lun *lun)</td></tr>
 <tr class="separator:abbacc6adf74a9790630dedda8b97940e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -261,8 +261,8 @@ static struct <a class="el" href="structspdk__scsi__task.html">spdk_scsi_task</a
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>SCSI to blockdev translation layer. </p>
 </div><h2 class="groupheader">Function Documentation</h2>
-<a id="a4059581597daba3a63dcd0c875348025"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4059581597daba3a63dcd0c875348025">&#9670;&nbsp;</a></span>spdk_scsi_dev_construct()</h2>
+<a id="aa10d7ac3a5c5a0898677361890c42c73"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa10d7ac3a5c5a0898677361890c42c73">&#9670;&nbsp;</a></span>spdk_scsi_dev_construct()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -289,7 +289,13 @@ static struct <a class="el" href="structspdk__scsi__task.html">spdk_scsi_task</a
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>num_luns</em>&#160;</td>
+          <td class="paramname"><em>num_luns</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>protocol_id</em>&#160;</td>
         </tr>
         <tr>
           <td></td>

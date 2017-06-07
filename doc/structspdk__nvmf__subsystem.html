@@ -90,8 +90,7 @@ Collaboration diagram for spdk_nvmf_subsystem:</div>
 <div class="dyncontent">
 <div class="center"><img src="structspdk__nvmf__subsystem__coll__graph.png" border="0" usemap="#spdk__nvmf__subsystem_coll__map" alt="Collaboration graph"/></div>
 <map name="spdk__nvmf__subsystem_coll__map" id="spdk__nvmf__subsystem_coll__map">
-<area shape="rect" id="node2" href="structspdk__pci__addr.html" title="spdk_pci_addr" alt="" coords="5,5,112,32"/>
-<area shape="rect" id="node3" href="structspdk__nvmf__ctrlr__ops.html" title="spdk_nvmf_ctrlr_ops" alt="" coords="137,5,279,32"/>
+<area shape="rect" id="node2" href="structspdk__pci__addr.html" title="spdk_pci_addr" alt="" coords="31,5,137,32"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -115,9 +114,6 @@ Data Fields</h2></td></tr>
 <tr class="memitem:ae4a7c0f8cc61ca2f6c3f0e3487bc7b40"><td class="memItemLeft" align="right" valign="top"><a id="ae4a7c0f8cc61ca2f6c3f0e3487bc7b40"></a>
 uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>id</b></td></tr>
 <tr class="separator:ae4a7c0f8cc61ca2f6c3f0e3487bc7b40"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afa0d096fb8acadb39f4d0046031c8663"><td class="memItemLeft" align="right" valign="top"><a id="afa0d096fb8acadb39f4d0046031c8663"></a>
-uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>lcore</b></td></tr>
-<tr class="separator:afa0d096fb8acadb39f4d0046031c8663"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6d7f836bb4166ed8b97afd7cf6d6a7e0"><td class="memItemLeft" align="right" valign="top"><a id="a6d7f836bb4166ed8b97afd7cf6d6a7e0"></a>
 char&#160;</td><td class="memItemRight" valign="bottom"><b>subnqn</b> [SPDK_NVMF_NQN_MAX_LEN+1]</td></tr>
 <tr class="separator:a6d7f836bb4166ed8b97afd7cf6d6a7e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -170,7 +166,7 @@ union {</td></tr>
 <tr class="memitem:a406df573ecf234c5232f6bd0616f62fa"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><b>dev</b></td></tr>
 <tr class="separator:a406df573ecf234c5232f6bd0616f62fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3facbe54994c88cdf076c1fa5eee57bd"><td class="memItemLeft" align="right" valign="top"><a id="a3facbe54994c88cdf076c1fa5eee57bd"></a>
-const struct <a class="el" href="structspdk__nvmf__ctrlr__ops.html">spdk_nvmf_ctrlr_ops</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>ops</b></td></tr>
+const struct spdk_nvmf_ctrlr_ops *&#160;</td><td class="memItemRight" valign="bottom"><b>ops</b></td></tr>
 <tr class="separator:a3facbe54994c88cdf076c1fa5eee57bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8c0c9faf1a44f5fee751417d88d7d1ba"><td class="memItemLeft" align="right" valign="top"><a id="a8c0c9faf1a44f5fee751417d88d7d1ba"></a>
 void *&#160;</td><td class="memItemRight" valign="bottom"><b>cb_ctx</b></td></tr>
@@ -181,9 +177,6 @@ spdk_nvmf_subsystem_connect_fn&#160;</td><td class="memItemRight" valign="bottom
 <tr class="memitem:a5905b718580b4150a18c05c571ebd6f0"><td class="memItemLeft" align="right" valign="top"><a id="a5905b718580b4150a18c05c571ebd6f0"></a>
 spdk_nvmf_subsystem_disconnect_fn&#160;</td><td class="memItemRight" valign="bottom"><b>disconnect_cb</b></td></tr>
 <tr class="separator:a5905b718580b4150a18c05c571ebd6f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae5c78f1338cdbc824d486190290ac920"><td class="memItemLeft" align="right" valign="top"><a id="ae5c78f1338cdbc824d486190290ac920"></a>
-uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>num_hosts</b></td></tr>
-<tr class="separator:ae5c78f1338cdbc824d486190290ac920"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li><a class="el" href="nvmf_8h.html">nvmf.h</a></li>

@@ -83,7 +83,6 @@
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#define-members">Macros</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
@@ -94,39 +93,50 @@
 <p>IO channel.  
 <a href="#details">More...</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
-Macros</h2></td></tr>
-<tr class="memitem:ae7d167bad1892f03a3282066d10f09e1"><td class="memItemLeft" align="right" valign="top"><a id="ae7d167bad1892f03a3282066d10f09e1"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_IO_PRIORITY_DEFAULT</b>&#160;&#160;&#160;100</td></tr>
-<tr class="separator:ae7d167bad1892f03a3282066d10f09e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:a2b8fad3201c3eb3666d4ec3e625cad07"><td class="memItemLeft" align="right" valign="top"><a id="a2b8fad3201c3eb3666d4ec3e625cad07"></a>
-typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><b>io_channel_create_cb_t</b>) (void *io_device, uint32_t priority, void *ctx_buf)</td></tr>
-<tr class="separator:a2b8fad3201c3eb3666d4ec3e625cad07"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6276f43aa7a7bbc561696f7ffa42e55d"><td class="memItemLeft" align="right" valign="top"><a id="a6276f43aa7a7bbc561696f7ffa42e55d"></a>
-typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>io_channel_destroy_cb_t</b>) (void *io_device, void *ctx_buf)</td></tr>
-<tr class="separator:a6276f43aa7a7bbc561696f7ffa42e55d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a964c3690cb5eea9bcf2e0f91b001a239"><td class="memItemLeft" align="right" valign="top"><a id="a964c3690cb5eea9bcf2e0f91b001a239"></a>
+typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_thread_fn</b>) (void *ctx)</td></tr>
+<tr class="separator:a964c3690cb5eea9bcf2e0f91b001a239"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72dfa5b3490733f3d307d2303a551661"><td class="memItemLeft" align="right" valign="top"><a id="a72dfa5b3490733f3d307d2303a551661"></a>
+typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_thread_pass_msg</b>) (spdk_thread_fn fn, void *ctx, void *thread_ctx)</td></tr>
+<tr class="separator:a72dfa5b3490733f3d307d2303a551661"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed1d14292cfee8553d4a1ebb519b210a"><td class="memItemLeft" align="right" valign="top"><a id="aed1d14292cfee8553d4a1ebb519b210a"></a>
+typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_io_channel_create_cb</b>) (void *io_device, void *ctx_buf)</td></tr>
+<tr class="separator:aed1d14292cfee8553d4a1ebb519b210a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75aa6a61877f23f79bb75c8fc5e68202"><td class="memItemLeft" align="right" valign="top"><a id="a75aa6a61877f23f79bb75c8fc5e68202"></a>
+typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_io_channel_destroy_cb</b>) (void *io_device, void *ctx_buf)</td></tr>
+<tr class="separator:a75aa6a61877f23f79bb75c8fc5e68202"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7b7239eb25263787bba6b64036f9792"><td class="memItemLeft" align="right" valign="top"><a id="ad7b7239eb25263787bba6b64036f9792"></a>
+typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_channel_msg</b>) (void *io_device, struct spdk_io_channel *ch, void *ctx)</td></tr>
+<tr class="separator:ad7b7239eb25263787bba6b64036f9792"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c0acde747bbebfc981589c11e170515"><td class="memItemLeft" align="right" valign="top"><a id="a1c0acde747bbebfc981589c11e170515"></a>
+typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_channel_for_each_cpl</b>) (void *io_device, void *ctx)</td></tr>
+<tr class="separator:a1c0acde747bbebfc981589c11e170515"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a5340d31b0ce9c3dcaf052ae0bf40f91c"><td class="memItemLeft" align="right" valign="top"><a id="a5340d31b0ce9c3dcaf052ae0bf40f91c"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="io__channel_8h.html#a5340d31b0ce9c3dcaf052ae0bf40f91c">spdk_allocate_thread</a> (void)</td></tr>
-<tr class="memdesc:a5340d31b0ce9c3dcaf052ae0bf40f91c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the calling thread for I/O channel allocation. <br /></td></tr>
-<tr class="separator:a5340d31b0ce9c3dcaf052ae0bf40f91c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d65cb9360ee10b47a62801e09cb6352"><td class="memItemLeft" align="right" valign="top">struct spdk_thread *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="io__channel_8h.html#a7d65cb9360ee10b47a62801e09cb6352">spdk_allocate_thread</a> (spdk_thread_pass_msg fn, void *thread_ctx)</td></tr>
+<tr class="memdesc:a7d65cb9360ee10b47a62801e09cb6352"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the calling thread for I/O channel allocation.  <a href="#a7d65cb9360ee10b47a62801e09cb6352">More...</a><br /></td></tr>
+<tr class="separator:a7d65cb9360ee10b47a62801e09cb6352"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adfbbc16ee4c35466974ca6d5b5c6ee7d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="io__channel_8h.html#adfbbc16ee4c35466974ca6d5b5c6ee7d">spdk_free_thread</a> (void)</td></tr>
 <tr class="memdesc:adfbbc16ee4c35466974ca6d5b5c6ee7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Releases any resources related to the calling thread for I/O channel allocation.  <a href="#adfbbc16ee4c35466974ca6d5b5c6ee7d">More...</a><br /></td></tr>
 <tr class="separator:adfbbc16ee4c35466974ca6d5b5c6ee7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a41d8bf64890079ba60f7ea55b86214fe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="io__channel_8h.html#a41d8bf64890079ba60f7ea55b86214fe">spdk_io_device_register</a> (void *io_device, io_channel_create_cb_t create_cb, io_channel_destroy_cb_t destroy_cb, uint32_t ctx_size)</td></tr>
-<tr class="memdesc:a41d8bf64890079ba60f7ea55b86214fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register the opaque io_device context as an I/O device.  <a href="#a41d8bf64890079ba60f7ea55b86214fe">More...</a><br /></td></tr>
-<tr class="separator:a41d8bf64890079ba60f7ea55b86214fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34754a98debd5e095bf06889fbaed6aa"><td class="memItemLeft" align="right" valign="top">struct spdk_thread *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="io__channel_8h.html#a34754a98debd5e095bf06889fbaed6aa">spdk_get_thread</a> (void)</td></tr>
+<tr class="memdesc:a34754a98debd5e095bf06889fbaed6aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a handle to the current thread.  <a href="#a34754a98debd5e095bf06889fbaed6aa">More...</a><br /></td></tr>
+<tr class="separator:a34754a98debd5e095bf06889fbaed6aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6aa832fea18a9160429b5383f36d8539"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="io__channel_8h.html#a6aa832fea18a9160429b5383f36d8539">spdk_thread_send_msg</a> (const struct spdk_thread *thread, spdk_thread_fn fn, void *ctx)</td></tr>
+<tr class="memdesc:a6aa832fea18a9160429b5383f36d8539"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a message to the given thread.  <a href="#a6aa832fea18a9160429b5383f36d8539">More...</a><br /></td></tr>
+<tr class="separator:a6aa832fea18a9160429b5383f36d8539"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a0b6fdbfd40673bce799a1a7ebab187"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="io__channel_8h.html#a6a0b6fdbfd40673bce799a1a7ebab187">spdk_io_device_register</a> (void *io_device, spdk_io_channel_create_cb create_cb, spdk_io_channel_destroy_cb destroy_cb, uint32_t ctx_size)</td></tr>
+<tr class="memdesc:a6a0b6fdbfd40673bce799a1a7ebab187"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register the opaque io_device context as an I/O device.  <a href="#a6a0b6fdbfd40673bce799a1a7ebab187">More...</a><br /></td></tr>
+<tr class="separator:a6a0b6fdbfd40673bce799a1a7ebab187"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abaadd707d455f3c8e44f6cdea7fee007"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="io__channel_8h.html#abaadd707d455f3c8e44f6cdea7fee007">spdk_io_device_unregister</a> (void *io_device)</td></tr>
 <tr class="memdesc:abaadd707d455f3c8e44f6cdea7fee007"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unregister the opaque io_device context as an I/O device.  <a href="#abaadd707d455f3c8e44f6cdea7fee007">More...</a><br /></td></tr>
 <tr class="separator:abaadd707d455f3c8e44f6cdea7fee007"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ada958ebfb55974ffa1e6df1a1f6c7aab"><td class="memItemLeft" align="right" valign="top">struct spdk_io_channel *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="io__channel_8h.html#ada958ebfb55974ffa1e6df1a1f6c7aab">spdk_get_io_channel</a> (void *io_device, uint32_t priority)</td></tr>
-<tr class="memdesc:ada958ebfb55974ffa1e6df1a1f6c7aab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets an I/O channel for the specified io_device to be used by the calling thread.  <a href="#ada958ebfb55974ffa1e6df1a1f6c7aab">More...</a><br /></td></tr>
-<tr class="separator:ada958ebfb55974ffa1e6df1a1f6c7aab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8537c42a7aa203b50578efed509d9ba8"><td class="memItemLeft" align="right" valign="top">struct spdk_io_channel *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="io__channel_8h.html#a8537c42a7aa203b50578efed509d9ba8">spdk_get_io_channel</a> (void *io_device)</td></tr>
+<tr class="memdesc:a8537c42a7aa203b50578efed509d9ba8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets an I/O channel for the specified io_device to be used by the calling thread.  <a href="#a8537c42a7aa203b50578efed509d9ba8">More...</a><br /></td></tr>
+<tr class="separator:a8537c42a7aa203b50578efed509d9ba8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a717571a5011db0cdd730498146f25f9a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="io__channel_8h.html#a717571a5011db0cdd730498146f25f9a">spdk_put_io_channel</a> (struct spdk_io_channel *ch)</td></tr>
 <tr class="memdesc:a717571a5011db0cdd730498146f25f9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Releases a reference to an I/O channel.  <a href="#a717571a5011db0cdd730498146f25f9a">More...</a><br /></td></tr>
 <tr class="separator:a717571a5011db0cdd730498146f25f9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -134,10 +144,94 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="io__
 void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="io__channel_8h.html#a23226b333cc3d87b2ce0d6f188bc22fa">spdk_io_channel_get_ctx</a> (struct spdk_io_channel *ch)</td></tr>
 <tr class="memdesc:a23226b333cc3d87b2ce0d6f188bc22fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the context buffer associated with an I/O channel. <br /></td></tr>
 <tr class="separator:a23226b333cc3d87b2ce0d6f188bc22fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7a2ca9bd0497544e852c65fd5263cd1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="io__channel_8h.html#aa7a2ca9bd0497544e852c65fd5263cd1">spdk_for_each_channel</a> (void *io_device, spdk_channel_msg fn, void *ctx, spdk_channel_for_each_cpl cpl)</td></tr>
+<tr class="memdesc:aa7a2ca9bd0497544e852c65fd5263cd1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call 'fn' on each channel associated with io_device.  <a href="#aa7a2ca9bd0497544e852c65fd5263cd1">More...</a><br /></td></tr>
+<tr class="separator:aa7a2ca9bd0497544e852c65fd5263cd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>IO channel. </p>
 </div><h2 class="groupheader">Function Documentation</h2>
+<a id="a7d65cb9360ee10b47a62801e09cb6352"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d65cb9360ee10b47a62801e09cb6352">&#9670;&nbsp;</a></span>spdk_allocate_thread()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct spdk_thread* spdk_allocate_thread </td>
+          <td>(</td>
+          <td class="paramtype">spdk_thread_pass_msg&#160;</td>
+          <td class="paramname"><em>fn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>thread_ctx</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Initializes the calling thread for I/O channel allocation. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fn</td><td>A function that may be called from any thread and is passed a function pointer (spdk_thread_fn) that must be called on the same thread that spdk_allocate_thread was called from. </td></tr>
+    <tr><td class="paramname">thread_ctx</td><td>Context that will be passed to fn. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aa7a2ca9bd0497544e852c65fd5263cd1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa7a2ca9bd0497544e852c65fd5263cd1">&#9670;&nbsp;</a></span>spdk_for_each_channel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_for_each_channel </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>io_device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">spdk_channel_msg&#160;</td>
+          <td class="paramname"><em>fn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>ctx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">spdk_channel_for_each_cpl&#160;</td>
+          <td class="paramname"><em>cpl</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Call 'fn' on each channel associated with io_device. </p>
+<p>This happens asynchronously, so fn may be called after spdk_for_each_channel returns. 'fn' will be called on the correct thread for each channel. 'fn' will be called for each channel serially, such that two calls to 'fn' will not overlap in time.</p>
+<p>Once 'fn' has been called on each channel, 'cpl' will be called on the thread that spdk_for_each_channel was initially called from. </p>
+
+</div>
+</div>
 <a id="adfbbc16ee4c35466974ca6d5b5c6ee7d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#adfbbc16ee4c35466974ca6d5b5c6ee7d">&#9670;&nbsp;</a></span>spdk_free_thread()</h2>
 
@@ -159,8 +253,8 @@ void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="io
 
 </div>
 </div>
-<a id="ada958ebfb55974ffa1e6df1a1f6c7aab"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ada958ebfb55974ffa1e6df1a1f6c7aab">&#9670;&nbsp;</a></span>spdk_get_io_channel()</h2>
+<a id="a8537c42a7aa203b50578efed509d9ba8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8537c42a7aa203b50578efed509d9ba8">&#9670;&nbsp;</a></span>spdk_get_io_channel()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -169,30 +263,40 @@ void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="io
           <td class="memname">struct spdk_io_channel* spdk_get_io_channel </td>
           <td>(</td>
           <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>io_device</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"><em>io_device</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>priority</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Gets an I/O channel for the specified io_device to be used by the calling thread. </p>
-<p>The io_device context pointer specified must have previously been registered using <a class="el" href="io__channel_8h.html#a41d8bf64890079ba60f7ea55b86214fe" title="Register the opaque io_device context as an I/O device. ">spdk_io_device_register()</a>. If an existing I/O channel does not exist yet for the given io_device on the calling thread, it will allocate an I/O channel and invoke the create_cb function pointer specified in <a class="el" href="io__channel_8h.html#a41d8bf64890079ba60f7ea55b86214fe" title="Register the opaque io_device context as an I/O device. ">spdk_io_device_register()</a>. If an I/O channel already exists for the given io_device on the calling thread, its reference is returned rather than creating a new I/O channel.</p>
-<p>The priority parameter allows callers to create different I/O channels to the same I/O device with varying priorities. Currently this value must be set to SPDK_IO_PRIORITY_DEFAULT. </p>
+<p>The io_device context pointer specified must have previously been registered using <a class="el" href="io__channel_8h.html#a6a0b6fdbfd40673bce799a1a7ebab187" title="Register the opaque io_device context as an I/O device. ">spdk_io_device_register()</a>. If an existing I/O channel does not exist yet for the given io_device on the calling thread, it will allocate an I/O channel and invoke the create_cb function pointer specified in <a class="el" href="io__channel_8h.html#a6a0b6fdbfd40673bce799a1a7ebab187" title="Register the opaque io_device context as an I/O device. ">spdk_io_device_register()</a>. If an I/O channel already exists for the given io_device on the calling thread, its reference is returned rather than creating a new I/O channel. </p>
 
 </div>
 </div>
-<a id="a41d8bf64890079ba60f7ea55b86214fe"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a41d8bf64890079ba60f7ea55b86214fe">&#9670;&nbsp;</a></span>spdk_io_device_register()</h2>
+<a id="a34754a98debd5e095bf06889fbaed6aa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a34754a98debd5e095bf06889fbaed6aa">&#9670;&nbsp;</a></span>spdk_get_thread()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct spdk_thread* spdk_get_thread </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get a handle to the current thread. </p>
+<p>This handle may be passed to other threads and used as the target of <a class="el" href="io__channel_8h.html#a6aa832fea18a9160429b5383f36d8539" title="Send a message to the given thread. ">spdk_thread_send_msg()</a>. </p>
+
+</div>
+</div>
+<a id="a6a0b6fdbfd40673bce799a1a7ebab187"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a0b6fdbfd40673bce799a1a7ebab187">&#9670;&nbsp;</a></span>spdk_io_device_register()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -206,13 +310,13 @@ void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="io
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">io_channel_create_cb_t&#160;</td>
+          <td class="paramtype">spdk_io_channel_create_cb&#160;</td>
           <td class="paramname"><em>create_cb</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">io_channel_destroy_cb_t&#160;</td>
+          <td class="paramtype">spdk_io_channel_destroy_cb&#160;</td>
           <td class="paramname"><em>destroy_cb</em>, </td>
         </tr>
         <tr>
@@ -230,7 +334,7 @@ void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="io
 </div><div class="memdoc">
 
 <p>Register the opaque io_device context as an I/O device. </p>
-<p>After an I/O device is registered, it can return I/O channels using the <a class="el" href="io__channel_8h.html#ada958ebfb55974ffa1e6df1a1f6c7aab" title="Gets an I/O channel for the specified io_device to be used by the calling thread. ...">spdk_get_io_channel()</a> function. create_cb is the callback function invoked to allocate any resources required for a new I/O channel. destroy_cb is the callback function invoked to release the resources for an I/O channel. ctx_size is the size of the context buffer allocated to store references to allocated I/O channel resources. </p>
+<p>After an I/O device is registered, it can return I/O channels using the <a class="el" href="io__channel_8h.html#a8537c42a7aa203b50578efed509d9ba8" title="Gets an I/O channel for the specified io_device to be used by the calling thread. ...">spdk_get_io_channel()</a> function. create_cb is the callback function invoked to allocate any resources required for a new I/O channel. destroy_cb is the callback function invoked to release the resources for an I/O channel. ctx_size is the size of the context buffer allocated to store references to allocated I/O channel resources. </p>
 
 </div>
 </div>
@@ -272,7 +376,52 @@ void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="io
 </div><div class="memdoc">
 
 <p>Releases a reference to an I/O channel. </p>
-<p>Must be called from the same thread that called <a class="el" href="io__channel_8h.html#ada958ebfb55974ffa1e6df1a1f6c7aab" title="Gets an I/O channel for the specified io_device to be used by the calling thread. ...">spdk_get_io_channel()</a> for the specified I/O channel. If this releases the last reference to the I/O channel, The destroy_cb function specified in <a class="el" href="io__channel_8h.html#a41d8bf64890079ba60f7ea55b86214fe" title="Register the opaque io_device context as an I/O device. ">spdk_io_device_register()</a> will be invoked to release any associated resources. </p>
+<p>Must be called from the same thread that called <a class="el" href="io__channel_8h.html#a8537c42a7aa203b50578efed509d9ba8" title="Gets an I/O channel for the specified io_device to be used by the calling thread. ...">spdk_get_io_channel()</a> for the specified I/O channel. If this releases the last reference to the I/O channel, The destroy_cb function specified in <a class="el" href="io__channel_8h.html#a6a0b6fdbfd40673bce799a1a7ebab187" title="Register the opaque io_device context as an I/O device. ">spdk_io_device_register()</a> will be invoked to release any associated resources. </p>
+
+</div>
+</div>
+<a id="a6aa832fea18a9160429b5383f36d8539"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6aa832fea18a9160429b5383f36d8539">&#9670;&nbsp;</a></span>spdk_thread_send_msg()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_thread_send_msg </td>
+          <td>(</td>
+          <td class="paramtype">const struct spdk_thread *&#160;</td>
+          <td class="paramname"><em>thread</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">spdk_thread_fn&#160;</td>
+          <td class="paramname"><em>fn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>ctx</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Send a message to the given thread. </p>
+<p>The message may be sent asynchronously - i.e. spdk_thread_send_msg may return prior to <code>fn</code> being called.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">thread</td><td>The target thread. </td></tr>
+    <tr><td class="paramname">fn</td><td>This function will be called on the given thread. </td></tr>
+    <tr><td class="paramname">ctx</td><td>This context will be passed to fn when called. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

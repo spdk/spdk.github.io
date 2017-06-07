@@ -102,8 +102,6 @@ Data Structures</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvmf__host.html">spdk_nvmf_host</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvmf__ctrlr__ops.html">spdk_nvmf_ctrlr_ops</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvmf__subsystem__allowed__listener.html">spdk_nvmf_subsystem_allowed_listener</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvmf__subsystem.html">spdk_nvmf_subsystem</a></td></tr>
@@ -154,12 +152,9 @@ struct <a class="el" href="structspdk__nvmf__subsystem.html">spdk_nvmf_subsystem
 <tr class="memitem:a753fbab408ada8ce95321e20d8f2893c"><td class="memItemLeft" align="right" valign="top"><a id="a753fbab408ada8ce95321e20d8f2893c"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvmf_delete_subsystem</b> (struct <a class="el" href="structspdk__nvmf__subsystem.html">spdk_nvmf_subsystem</a> *subsystem)</td></tr>
 <tr class="separator:a753fbab408ada8ce95321e20d8f2893c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab1d9afbeb06b4b9558aeef92d2863444"><td class="memItemLeft" align="right" valign="top"><a id="ab1d9afbeb06b4b9558aeef92d2863444"></a>
-struct <a class="el" href="structspdk__nvmf__subsystem.html">spdk_nvmf_subsystem</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>nvmf_find_subsystem</b> (const char *subnqn)</td></tr>
-<tr class="separator:ab1d9afbeb06b4b9558aeef92d2863444"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1124e8e66f362d2c151e2c236da4162e"><td class="memItemLeft" align="right" valign="top"><a id="a1124e8e66f362d2c151e2c236da4162e"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvmf_subsystem_exists</b> (const char *subnqn)</td></tr>
-<tr class="separator:a1124e8e66f362d2c151e2c236da4162e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50ae04502312bb75488391610c02c4d7"><td class="memItemLeft" align="right" valign="top"><a id="a50ae04502312bb75488391610c02c4d7"></a>
+struct <a class="el" href="structspdk__nvmf__subsystem.html">spdk_nvmf_subsystem</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvmf_find_subsystem</b> (const char *subnqn)</td></tr>
+<tr class="separator:a50ae04502312bb75488391610c02c4d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5f8ded88254cb17d8ee5c378f0e35a25"><td class="memItemLeft" align="right" valign="top"><a id="a5f8ded88254cb17d8ee5c378f0e35a25"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvmf_subsystem_host_allowed</b> (struct <a class="el" href="structspdk__nvmf__subsystem.html">spdk_nvmf_subsystem</a> *subsystem, const char *hostnqn)</td></tr>
 <tr class="separator:a5f8ded88254cb17d8ee5c378f0e35a25"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -184,6 +179,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvmf_subsystem_p
 <tr class="memitem:adac5929e7622790068cb3babbaa4ae98"><td class="memItemLeft" align="right" valign="top"><a id="adac5929e7622790068cb3babbaa4ae98"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvmf_subsystem_add_ns</b> (struct <a class="el" href="structspdk__nvmf__subsystem.html">spdk_nvmf_subsystem</a> *subsystem, struct spdk_bdev *bdev)</td></tr>
 <tr class="separator:adac5929e7622790068cb3babbaa4ae98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4cdd9c023f1a7b6dd5e5f00da4f07cb7"><td class="memItemLeft" align="right" valign="top"><a id="a4cdd9c023f1a7b6dd5e5f00da4f07cb7"></a>
+const char *&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvmf_subsystem_get_sn</b> (const struct <a class="el" href="structspdk__nvmf__subsystem.html">spdk_nvmf_subsystem</a> *subsystem)</td></tr>
+<tr class="separator:a4cdd9c023f1a7b6dd5e5f00da4f07cb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abb053c9573460d29898b184957ce05fd"><td class="memItemLeft" align="right" valign="top"><a id="abb053c9573460d29898b184957ce05fd"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvmf_subsystem_set_sn</b> (struct <a class="el" href="structspdk__nvmf__subsystem.html">spdk_nvmf_subsystem</a> *subsystem, const char *sn)</td></tr>
 <tr class="separator:abb053c9573460d29898b184957ce05fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
