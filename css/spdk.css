@@ -27,6 +27,10 @@ h6 {
     width: 100%;
 }
 
+.navbar-static-top {
+    margin-bottom: 0;
+}
+
 .lead {
     font-size: 18px;
     font-weight: 400;
@@ -36,6 +40,7 @@ h6 {
 .banner-header {
     padding-top: 50px;
     padding-bottom: 0px;
+    margin-bottom: 20px;
     text-align: center;
     color: #f8f8f8;
     background: url(../img/banner-bg.jpg) no-repeat center center;
