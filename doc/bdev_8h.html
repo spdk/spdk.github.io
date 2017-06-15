@@ -189,33 +189,33 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_dump_config_
 <tr class="memitem:a1b4015ff9aba44261f3b36cde064963a"><td class="memItemLeft" align="right" valign="top">struct spdk_io_channel *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev_8h.html#a1b4015ff9aba44261f3b36cde064963a">spdk_bdev_get_io_channel</a> (struct spdk_bdev *bdev)</td></tr>
 <tr class="memdesc:a1b4015ff9aba44261f3b36cde064963a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain an I/O channel for this block device.  <a href="#a1b4015ff9aba44261f3b36cde064963a">More...</a><br /></td></tr>
 <tr class="separator:a1b4015ff9aba44261f3b36cde064963a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a664bd53b425a79f98926fdddd6004ad7"><td class="memItemLeft" align="right" valign="top">struct spdk_bdev_io *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev_8h.html#a664bd53b425a79f98926fdddd6004ad7">spdk_bdev_read</a> (struct spdk_bdev *bdev, struct spdk_io_channel *ch, void *buf, uint64_t offset, uint64_t nbytes, <a class="el" href="bdev_8h.html#a0c5602dfd313f90032dd91683b9663e3">spdk_bdev_io_completion_cb</a> cb, void *cb_arg)</td></tr>
-<tr class="memdesc:a664bd53b425a79f98926fdddd6004ad7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submit a read request to the bdev on the given channel.  <a href="#a664bd53b425a79f98926fdddd6004ad7">More...</a><br /></td></tr>
-<tr class="separator:a664bd53b425a79f98926fdddd6004ad7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a76c90e1fed97dc8962bd319d12b76a56"><td class="memItemLeft" align="right" valign="top">struct spdk_bdev_io *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev_8h.html#a76c90e1fed97dc8962bd319d12b76a56">spdk_bdev_readv</a> (struct spdk_bdev *bdev, struct spdk_io_channel *ch, struct iovec *iov, int iovcnt, uint64_t offset, uint64_t nbytes, <a class="el" href="bdev_8h.html#a0c5602dfd313f90032dd91683b9663e3">spdk_bdev_io_completion_cb</a> cb, void *cb_arg)</td></tr>
-<tr class="memdesc:a76c90e1fed97dc8962bd319d12b76a56"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submit a read request to the bdev on the given channel.  <a href="#a76c90e1fed97dc8962bd319d12b76a56">More...</a><br /></td></tr>
-<tr class="separator:a76c90e1fed97dc8962bd319d12b76a56"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab6e9f184fef0d26df877a329db72e21d"><td class="memItemLeft" align="right" valign="top">struct spdk_bdev_io *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev_8h.html#ab6e9f184fef0d26df877a329db72e21d">spdk_bdev_write</a> (struct spdk_bdev *bdev, struct spdk_io_channel *ch, void *buf, uint64_t offset, uint64_t nbytes, <a class="el" href="bdev_8h.html#a0c5602dfd313f90032dd91683b9663e3">spdk_bdev_io_completion_cb</a> cb, void *cb_arg)</td></tr>
-<tr class="memdesc:ab6e9f184fef0d26df877a329db72e21d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submit a write request to the bdev on the given channel.  <a href="#ab6e9f184fef0d26df877a329db72e21d">More...</a><br /></td></tr>
-<tr class="separator:ab6e9f184fef0d26df877a329db72e21d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a46019368202d3df15876d52e11517389"><td class="memItemLeft" align="right" valign="top">struct spdk_bdev_io *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev_8h.html#a46019368202d3df15876d52e11517389">spdk_bdev_writev</a> (struct spdk_bdev *bdev, struct spdk_io_channel *ch, struct iovec *iov, int iovcnt, uint64_t offset, uint64_t len, <a class="el" href="bdev_8h.html#a0c5602dfd313f90032dd91683b9663e3">spdk_bdev_io_completion_cb</a> cb, void *cb_arg)</td></tr>
-<tr class="memdesc:a46019368202d3df15876d52e11517389"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submit a write request to the bdev on the given channel.  <a href="#a46019368202d3df15876d52e11517389">More...</a><br /></td></tr>
-<tr class="separator:a46019368202d3df15876d52e11517389"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aef6fb3308d9dca07c5ad18176df12bd1"><td class="memItemLeft" align="right" valign="top">struct spdk_bdev_io *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev_8h.html#aef6fb3308d9dca07c5ad18176df12bd1">spdk_bdev_unmap</a> (struct spdk_bdev *bdev, struct spdk_io_channel *ch, struct <a class="el" href="structspdk__scsi__unmap__bdesc.html">spdk_scsi_unmap_bdesc</a> *unmap_d, uint16_t bdesc_count, <a class="el" href="bdev_8h.html#a0c5602dfd313f90032dd91683b9663e3">spdk_bdev_io_completion_cb</a> cb, void *cb_arg)</td></tr>
-<tr class="memdesc:aef6fb3308d9dca07c5ad18176df12bd1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submit an unmap request to the block device.  <a href="#aef6fb3308d9dca07c5ad18176df12bd1">More...</a><br /></td></tr>
-<tr class="separator:aef6fb3308d9dca07c5ad18176df12bd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2e5ca1848df6b80d4ce81b8a6c366170"><td class="memItemLeft" align="right" valign="top">struct spdk_bdev_io *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev_8h.html#a2e5ca1848df6b80d4ce81b8a6c366170">spdk_bdev_flush</a> (struct spdk_bdev *bdev, struct spdk_io_channel *ch, uint64_t offset, uint64_t length, <a class="el" href="bdev_8h.html#a0c5602dfd313f90032dd91683b9663e3">spdk_bdev_io_completion_cb</a> cb, void *cb_arg)</td></tr>
-<tr class="memdesc:a2e5ca1848df6b80d4ce81b8a6c366170"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submit a flush request to the bdev on the given channel.  <a href="#a2e5ca1848df6b80d4ce81b8a6c366170">More...</a><br /></td></tr>
-<tr class="separator:a2e5ca1848df6b80d4ce81b8a6c366170"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17931abec6a7169432d56b3b72ce604f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev_8h.html#a17931abec6a7169432d56b3b72ce604f">spdk_bdev_read</a> (struct spdk_bdev *bdev, struct spdk_io_channel *ch, void *buf, uint64_t offset, uint64_t nbytes, <a class="el" href="bdev_8h.html#a0c5602dfd313f90032dd91683b9663e3">spdk_bdev_io_completion_cb</a> cb, void *cb_arg)</td></tr>
+<tr class="memdesc:a17931abec6a7169432d56b3b72ce604f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submit a read request to the bdev on the given channel.  <a href="#a17931abec6a7169432d56b3b72ce604f">More...</a><br /></td></tr>
+<tr class="separator:a17931abec6a7169432d56b3b72ce604f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39cf118897336906dfd286b3c91295ce"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev_8h.html#a39cf118897336906dfd286b3c91295ce">spdk_bdev_readv</a> (struct spdk_bdev *bdev, struct spdk_io_channel *ch, struct iovec *iov, int iovcnt, uint64_t offset, uint64_t nbytes, <a class="el" href="bdev_8h.html#a0c5602dfd313f90032dd91683b9663e3">spdk_bdev_io_completion_cb</a> cb, void *cb_arg)</td></tr>
+<tr class="memdesc:a39cf118897336906dfd286b3c91295ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submit a read request to the bdev on the given channel.  <a href="#a39cf118897336906dfd286b3c91295ce">More...</a><br /></td></tr>
+<tr class="separator:a39cf118897336906dfd286b3c91295ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9dd2e65f126665954c23eff4477d4557"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev_8h.html#a9dd2e65f126665954c23eff4477d4557">spdk_bdev_write</a> (struct spdk_bdev *bdev, struct spdk_io_channel *ch, void *buf, uint64_t offset, uint64_t nbytes, <a class="el" href="bdev_8h.html#a0c5602dfd313f90032dd91683b9663e3">spdk_bdev_io_completion_cb</a> cb, void *cb_arg)</td></tr>
+<tr class="memdesc:a9dd2e65f126665954c23eff4477d4557"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submit a write request to the bdev on the given channel.  <a href="#a9dd2e65f126665954c23eff4477d4557">More...</a><br /></td></tr>
+<tr class="separator:a9dd2e65f126665954c23eff4477d4557"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22f12f278859dc4e0c6cdec33f9dcb24"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev_8h.html#a22f12f278859dc4e0c6cdec33f9dcb24">spdk_bdev_writev</a> (struct spdk_bdev *bdev, struct spdk_io_channel *ch, struct iovec *iov, int iovcnt, uint64_t offset, uint64_t len, <a class="el" href="bdev_8h.html#a0c5602dfd313f90032dd91683b9663e3">spdk_bdev_io_completion_cb</a> cb, void *cb_arg)</td></tr>
+<tr class="memdesc:a22f12f278859dc4e0c6cdec33f9dcb24"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submit a write request to the bdev on the given channel.  <a href="#a22f12f278859dc4e0c6cdec33f9dcb24">More...</a><br /></td></tr>
+<tr class="separator:a22f12f278859dc4e0c6cdec33f9dcb24"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ae20739bcbd84bde357e89d96b5e5e7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev_8h.html#a1ae20739bcbd84bde357e89d96b5e5e7">spdk_bdev_unmap</a> (struct spdk_bdev *bdev, struct spdk_io_channel *ch, struct <a class="el" href="structspdk__scsi__unmap__bdesc.html">spdk_scsi_unmap_bdesc</a> *unmap_d, uint16_t bdesc_count, <a class="el" href="bdev_8h.html#a0c5602dfd313f90032dd91683b9663e3">spdk_bdev_io_completion_cb</a> cb, void *cb_arg)</td></tr>
+<tr class="memdesc:a1ae20739bcbd84bde357e89d96b5e5e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submit an unmap request to the block device.  <a href="#a1ae20739bcbd84bde357e89d96b5e5e7">More...</a><br /></td></tr>
+<tr class="separator:a1ae20739bcbd84bde357e89d96b5e5e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79093fc354725f29207cd9038ac4144a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev_8h.html#a79093fc354725f29207cd9038ac4144a">spdk_bdev_flush</a> (struct spdk_bdev *bdev, struct spdk_io_channel *ch, uint64_t offset, uint64_t length, <a class="el" href="bdev_8h.html#a0c5602dfd313f90032dd91683b9663e3">spdk_bdev_io_completion_cb</a> cb, void *cb_arg)</td></tr>
+<tr class="memdesc:a79093fc354725f29207cd9038ac4144a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submit a flush request to the bdev on the given channel.  <a href="#a79093fc354725f29207cd9038ac4144a">More...</a><br /></td></tr>
+<tr class="separator:a79093fc354725f29207cd9038ac4144a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a08b7c843568980d0f2e2245ee296ee4a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev_8h.html#a08b7c843568980d0f2e2245ee296ee4a">spdk_bdev_reset</a> (struct spdk_bdev *bdev, struct spdk_io_channel *ch, <a class="el" href="bdev_8h.html#a0c5602dfd313f90032dd91683b9663e3">spdk_bdev_io_completion_cb</a> cb, void *cb_arg)</td></tr>
 <tr class="memdesc:a08b7c843568980d0f2e2245ee296ee4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submit a reset request to the bdev on the given channel.  <a href="#a08b7c843568980d0f2e2245ee296ee4a">More...</a><br /></td></tr>
 <tr class="separator:a08b7c843568980d0f2e2245ee296ee4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a595a592feff5efda809301adea1f93e9"><td class="memItemLeft" align="right" valign="top">struct spdk_bdev_io *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev_8h.html#a595a592feff5efda809301adea1f93e9">spdk_bdev_nvme_admin_passthru</a> (struct spdk_bdev *bdev, struct spdk_io_channel *ch, const struct <a class="el" href="structspdk__nvme__cmd.html">spdk_nvme_cmd</a> *cmd, void *buf, size_t nbytes, <a class="el" href="bdev_8h.html#a0c5602dfd313f90032dd91683b9663e3">spdk_bdev_io_completion_cb</a> cb, void *cb_arg)</td></tr>
-<tr class="memdesc:a595a592feff5efda809301adea1f93e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submit an NVMe Admin command to the bdev.  <a href="#a595a592feff5efda809301adea1f93e9">More...</a><br /></td></tr>
-<tr class="separator:a595a592feff5efda809301adea1f93e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8edd8bfbea3b3f72cb0abb723b6f16ed"><td class="memItemLeft" align="right" valign="top">struct spdk_bdev_io *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev_8h.html#a8edd8bfbea3b3f72cb0abb723b6f16ed">spdk_bdev_nvme_io_passthru</a> (struct spdk_bdev *bdev, struct spdk_io_channel *ch, const struct <a class="el" href="structspdk__nvme__cmd.html">spdk_nvme_cmd</a> *cmd, void *buf, size_t nbytes, <a class="el" href="bdev_8h.html#a0c5602dfd313f90032dd91683b9663e3">spdk_bdev_io_completion_cb</a> cb, void *cb_arg)</td></tr>
-<tr class="memdesc:a8edd8bfbea3b3f72cb0abb723b6f16ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submit an NVMe I/O command to the bdev.  <a href="#a8edd8bfbea3b3f72cb0abb723b6f16ed">More...</a><br /></td></tr>
-<tr class="separator:a8edd8bfbea3b3f72cb0abb723b6f16ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0ff477709a4931e98b10c2f39d2d9fc"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev_8h.html#af0ff477709a4931e98b10c2f39d2d9fc">spdk_bdev_nvme_admin_passthru</a> (struct spdk_bdev *bdev, struct spdk_io_channel *ch, const struct <a class="el" href="structspdk__nvme__cmd.html">spdk_nvme_cmd</a> *cmd, void *buf, size_t nbytes, <a class="el" href="bdev_8h.html#a0c5602dfd313f90032dd91683b9663e3">spdk_bdev_io_completion_cb</a> cb, void *cb_arg)</td></tr>
+<tr class="memdesc:af0ff477709a4931e98b10c2f39d2d9fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submit an NVMe Admin command to the bdev.  <a href="#af0ff477709a4931e98b10c2f39d2d9fc">More...</a><br /></td></tr>
+<tr class="separator:af0ff477709a4931e98b10c2f39d2d9fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6073d0f21b837b1afc22859c1d067d77"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev_8h.html#a6073d0f21b837b1afc22859c1d067d77">spdk_bdev_nvme_io_passthru</a> (struct spdk_bdev *bdev, struct spdk_io_channel *ch, const struct <a class="el" href="structspdk__nvme__cmd.html">spdk_nvme_cmd</a> *cmd, void *buf, size_t nbytes, <a class="el" href="bdev_8h.html#a0c5602dfd313f90032dd91683b9663e3">spdk_bdev_io_completion_cb</a> cb, void *cb_arg)</td></tr>
+<tr class="memdesc:a6073d0f21b837b1afc22859c1d067d77"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submit an NVMe I/O command to the bdev.  <a href="#a6073d0f21b837b1afc22859c1d067d77">More...</a><br /></td></tr>
+<tr class="separator:a6073d0f21b837b1afc22859c1d067d77"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a536a365e14bc4f3ddf76b9340958ebd8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev_8h.html#a536a365e14bc4f3ddf76b9340958ebd8">spdk_bdev_free_io</a> (struct spdk_bdev_io *bdev_io)</td></tr>
 <tr class="memdesc:a536a365e14bc4f3ddf76b9340958ebd8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Free an I/O request.  <a href="#a536a365e14bc4f3ddf76b9340958ebd8">More...</a><br /></td></tr>
 <tr class="separator:a536a365e14bc4f3ddf76b9340958ebd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -307,14 +307,14 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_dump_config_
 
 </div>
 </div>
-<a id="a2e5ca1848df6b80d4ce81b8a6c366170"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2e5ca1848df6b80d4ce81b8a6c366170">&#9670;&nbsp;</a></span>spdk_bdev_flush()</h2>
+<a id="a79093fc354725f29207cd9038ac4144a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a79093fc354725f29207cd9038ac4144a">&#9670;&nbsp;</a></span>spdk_bdev_flush()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">struct spdk_bdev_io* spdk_bdev_flush </td>
+          <td class="memname">int spdk_bdev_flush </td>
           <td>(</td>
           <td class="paramtype">struct spdk_bdev *&#160;</td>
           <td class="paramname"><em>bdev</em>, </td>
@@ -370,7 +370,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_dump_config_
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>A handle to the I/O request, or NULL on failure. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success. On success, the callback will always be called (even if the request ultimately failed). Return negated errno on failure, in which case the callback will not be called. </dd></dl>
 
 </div>
 </div>
@@ -812,14 +812,14 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_dump_config_
 
 </div>
 </div>
-<a id="a595a592feff5efda809301adea1f93e9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a595a592feff5efda809301adea1f93e9">&#9670;&nbsp;</a></span>spdk_bdev_nvme_admin_passthru()</h2>
+<a id="af0ff477709a4931e98b10c2f39d2d9fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af0ff477709a4931e98b10c2f39d2d9fc">&#9670;&nbsp;</a></span>spdk_bdev_nvme_admin_passthru()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">struct spdk_bdev_io* spdk_bdev_nvme_admin_passthru </td>
+          <td class="memname">int spdk_bdev_nvme_admin_passthru </td>
           <td>(</td>
           <td class="paramtype">struct spdk_bdev *&#160;</td>
           <td class="paramname"><em>bdev</em>, </td>
@@ -883,18 +883,18 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_dump_config_
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>A handle to the I/O request, or NULL on failure. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success. On success, the callback will always be called (even if the request ultimately failed). Return negated errno on failure, in which case the callback will not be called. </dd></dl>
 
 </div>
 </div>
-<a id="a8edd8bfbea3b3f72cb0abb723b6f16ed"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8edd8bfbea3b3f72cb0abb723b6f16ed">&#9670;&nbsp;</a></span>spdk_bdev_nvme_io_passthru()</h2>
+<a id="a6073d0f21b837b1afc22859c1d067d77"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6073d0f21b837b1afc22859c1d067d77">&#9670;&nbsp;</a></span>spdk_bdev_nvme_io_passthru()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">struct spdk_bdev_io* spdk_bdev_nvme_io_passthru </td>
+          <td class="memname">int spdk_bdev_nvme_io_passthru </td>
           <td>(</td>
           <td class="paramtype">struct spdk_bdev *&#160;</td>
           <td class="paramname"><em>bdev</em>, </td>
@@ -958,18 +958,18 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_dump_config_
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>A handle to the I/O request, or NULL on failure. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success. On success, the callback will always be called (even if the request ultimately failed). Return negated errno on failure, in which case the callback will not be called. </dd></dl>
 
 </div>
 </div>
-<a id="a664bd53b425a79f98926fdddd6004ad7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a664bd53b425a79f98926fdddd6004ad7">&#9670;&nbsp;</a></span>spdk_bdev_read()</h2>
+<a id="a17931abec6a7169432d56b3b72ce604f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a17931abec6a7169432d56b3b72ce604f">&#9670;&nbsp;</a></span>spdk_bdev_read()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">struct spdk_bdev_io* spdk_bdev_read </td>
+          <td class="memname">int spdk_bdev_read </td>
           <td>(</td>
           <td class="paramtype">struct spdk_bdev *&#160;</td>
           <td class="paramname"><em>bdev</em>, </td>
@@ -1031,18 +1031,18 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_dump_config_
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>A handle to the I/O request, or NULL on failure. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success. On success, the callback will always be called (even if the request ultimately failed). Return negated errno on failure, in which case the callback will not be called. </dd></dl>
 
 </div>
 </div>
-<a id="a76c90e1fed97dc8962bd319d12b76a56"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a76c90e1fed97dc8962bd319d12b76a56">&#9670;&nbsp;</a></span>spdk_bdev_readv()</h2>
+<a id="a39cf118897336906dfd286b3c91295ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a39cf118897336906dfd286b3c91295ce">&#9670;&nbsp;</a></span>spdk_bdev_readv()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">struct spdk_bdev_io* spdk_bdev_readv </td>
+          <td class="memname">int spdk_bdev_readv </td>
           <td>(</td>
           <td class="paramtype">struct spdk_bdev *&#160;</td>
           <td class="paramname"><em>bdev</em>, </td>
@@ -1112,7 +1112,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_dump_config_
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>A handle to the I/O request, or NULL on failure. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success. On success, the callback will always be called (even if the request ultimately failed). Return negated errno on failure, in which case the callback will not be called. </dd></dl>
 
 </div>
 </div>
@@ -1164,7 +1164,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_dump_config_
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>-1 on failure, 0 on success. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success. On success, the callback will always be called (even if the request ultimately failed). Return negated errno on failure, in which case the callback will not be called. </dd></dl>
 
 </div>
 </div>
@@ -1195,14 +1195,14 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_dump_config_
 
 </div>
 </div>
-<a id="aef6fb3308d9dca07c5ad18176df12bd1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aef6fb3308d9dca07c5ad18176df12bd1">&#9670;&nbsp;</a></span>spdk_bdev_unmap()</h2>
+<a id="a1ae20739bcbd84bde357e89d96b5e5e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1ae20739bcbd84bde357e89d96b5e5e7">&#9670;&nbsp;</a></span>spdk_bdev_unmap()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">struct spdk_bdev_io* spdk_bdev_unmap </td>
+          <td class="memname">int spdk_bdev_unmap </td>
           <td>(</td>
           <td class="paramtype">struct spdk_bdev *&#160;</td>
           <td class="paramname"><em>bdev</em>, </td>
@@ -1258,18 +1258,18 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_dump_config_
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>A handle to the I/O request, or NULL on failure. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success. On success, the callback will always be called (even if the request ultimately failed). Return negated errno on failure, in which case the callback will not be called. </dd></dl>
 
 </div>
 </div>
-<a id="ab6e9f184fef0d26df877a329db72e21d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab6e9f184fef0d26df877a329db72e21d">&#9670;&nbsp;</a></span>spdk_bdev_write()</h2>
+<a id="a9dd2e65f126665954c23eff4477d4557"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9dd2e65f126665954c23eff4477d4557">&#9670;&nbsp;</a></span>spdk_bdev_write()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">struct spdk_bdev_io* spdk_bdev_write </td>
+          <td class="memname">int spdk_bdev_write </td>
           <td>(</td>
           <td class="paramtype">struct spdk_bdev *&#160;</td>
           <td class="paramname"><em>bdev</em>, </td>
@@ -1331,18 +1331,18 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_dump_config_
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>A handle to the I/O request, or NULL on failure. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success. On success, the callback will always be called (even if the request ultimately failed). Return negated errno on failure, in which case the callback will not be called. </dd></dl>
 
 </div>
 </div>
-<a id="a46019368202d3df15876d52e11517389"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a46019368202d3df15876d52e11517389">&#9670;&nbsp;</a></span>spdk_bdev_writev()</h2>
+<a id="a22f12f278859dc4e0c6cdec33f9dcb24"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a22f12f278859dc4e0c6cdec33f9dcb24">&#9670;&nbsp;</a></span>spdk_bdev_writev()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">struct spdk_bdev_io* spdk_bdev_writev </td>
+          <td class="memname">int spdk_bdev_writev </td>
           <td>(</td>
           <td class="paramtype">struct spdk_bdev *&#160;</td>
           <td class="paramname"><em>bdev</em>, </td>
@@ -1412,7 +1412,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_dump_config_
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>A handle to the I/O request, or NULL on failure. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success. On success, the callback will always be called (even if the request ultimately failed). Return negated errno on failure, in which case the callback will not be called. </dd></dl>
 
 </div>
 </div>

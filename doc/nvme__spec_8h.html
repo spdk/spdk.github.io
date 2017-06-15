@@ -111,6 +111,12 @@ Data Structures</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">union &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unionspdk__nvme__cmbsz__register.html">spdk_nvme_cmbsz_register</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">union &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unionspdk__nvme__bpinfo__register.html">spdk_nvme_bpinfo_register</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Boot partition information.  <a href="unionspdk__nvme__bpinfo__register.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">union &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unionspdk__nvme__bprsel__register.html">spdk_nvme_bprsel_register</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Boot partition read select.  <a href="unionspdk__nvme__bprsel__register.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__registers.html">spdk_nvme_registers</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__sgl__descriptor.html">spdk_nvme_sgl_descriptor</a></td></tr>
@@ -154,6 +160,8 @@ Data Structures</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__ns__list.html">spdk_nvme_ns_list</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__ns__id__desc.html">spdk_nvme_ns_id_desc</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__ctrlr__list.html">spdk_nvme_ctrlr_list</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__format.html">spdk_nvme_format</a></td></tr>
@@ -192,6 +200,10 @@ Macros</h2></td></tr>
 <tr class="memitem:a9760bf73611488342b5903ba702fd7b6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme__spec_8h.html#a9760bf73611488342b5903ba702fd7b6">SPDK_NVME_VERSION</a>(mjr,  mnr,  ter)</td></tr>
 <tr class="memdesc:a9760bf73611488342b5903ba702fd7b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate raw version in the same format as <a class="el" href="unionspdk__nvme__vs__register.html">spdk_nvme_vs_register</a> for comparison.  <a href="#a9760bf73611488342b5903ba702fd7b6">More...</a><br /></td></tr>
 <tr class="separator:a9760bf73611488342b5903ba702fd7b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3ef13320c82eaf4abdef6aa56e8b5ba"><td class="memItemLeft" align="right" valign="top"><a id="ad3ef13320c82eaf4abdef6aa56e8b5ba"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme__spec_8h.html#ad3ef13320c82eaf4abdef6aa56e8b5ba">SPDK_NVME_NSSR_VALUE</a>&#160;&#160;&#160;0x4E564D65</td></tr>
+<tr class="memdesc:ad3ef13320c82eaf4abdef6aa56e8b5ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Value to write to NSSR to indicate a NVM subsystem reset ("NVMe") <br /></td></tr>
+<tr class="separator:ad3ef13320c82eaf4abdef6aa56e8b5ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a62b2e9dfaeda9fac684e7b456971c710"><td class="memItemLeft" align="right" valign="top"><a id="a62b2e9dfaeda9fac684e7b456971c710"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_cpl_is_error</b>(cpl)&#160;&#160;&#160;((cpl)-&gt;status.sc != 0 || (cpl)-&gt;status.sct != 0)</td></tr>
 <tr class="separator:a62b2e9dfaeda9fac684e7b456971c710"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -302,18 +314,26 @@ Enumerations</h2></td></tr>
 <b>SPDK_NVME_SC_INVALID_PRP_OFFSET</b> = 0x13, 
 <br />
 &#160;&#160;<b>SPDK_NVME_SC_ATOMIC_WRITE_UNIT_EXCEEDED</b> = 0x14, 
+<b>SPDK_NVME_SC_OPERATION_DENIED</b> = 0x15, 
 <b>SPDK_NVME_SC_INVALID_SGL_OFFSET</b> = 0x16, 
 <b>SPDK_NVME_SC_INVALID_SGL_SUBTYPE</b> = 0x17, 
-<b>SPDK_NVME_SC_HOSTID_INCONSISTENT_FORMAT</b> = 0x18, 
 <br />
-&#160;&#160;<b>SPDK_NVME_SC_KEEP_ALIVE_EXPIRED</b> = 0x19, 
+&#160;&#160;<b>SPDK_NVME_SC_HOSTID_INCONSISTENT_FORMAT</b> = 0x18, 
+<b>SPDK_NVME_SC_KEEP_ALIVE_EXPIRED</b> = 0x19, 
 <b>SPDK_NVME_SC_KEEP_ALIVE_INVALID</b> = 0x1a, 
-<b>SPDK_NVME_SC_LBA_OUT_OF_RANGE</b> = 0x80, 
-<b>SPDK_NVME_SC_CAPACITY_EXCEEDED</b> = 0x81, 
+<b>SPDK_NVME_SC_ABORTED_PREEMPT</b> = 0x1b, 
 <br />
-&#160;&#160;<b>SPDK_NVME_SC_NAMESPACE_NOT_READY</b> = 0x82, 
+&#160;&#160;<b>SPDK_NVME_SC_SANITIZE_FAILED</b> = 0x1c, 
+<b>SPDK_NVME_SC_SANITIZE_IN_PROGRESS</b> = 0x1d, 
+<b>SPDK_NVME_SC_SGL_DATA_BLOCK_GRANULARITY_INVALID</b> = 0x1e, 
+<b>SPDK_NVME_SC_COMMAND_INVALID_IN_CMB</b> = 0x1f, 
+<br />
+&#160;&#160;<b>SPDK_NVME_SC_LBA_OUT_OF_RANGE</b> = 0x80, 
+<b>SPDK_NVME_SC_CAPACITY_EXCEEDED</b> = 0x81, 
+<b>SPDK_NVME_SC_NAMESPACE_NOT_READY</b> = 0x82, 
 <b>SPDK_NVME_SC_RESERVATION_CONFLICT</b> = 0x83, 
-<b>SPDK_NVME_SC_FORMAT_IN_PROGRESS</b> = 0x84
+<br />
+&#160;&#160;<b>SPDK_NVME_SC_FORMAT_IN_PROGRESS</b> = 0x84
 <br />
  }<tr class="memdesc:aa70e5bbfae3ba9ec66a65c78e1966a1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generic command status codes. <br /></td></tr>
 </td></tr>
@@ -352,9 +372,16 @@ Enumerations</h2></td></tr>
 &#160;&#160;<b>SPDK_NVME_SC_NAMESPACE_NOT_ATTACHED</b> = 0x1a, 
 <b>SPDK_NVME_SC_THINPROVISIONING_NOT_SUPPORTED</b> = 0x1b, 
 <b>SPDK_NVME_SC_CONTROLLER_LIST_INVALID</b> = 0x1c, 
-<b>SPDK_NVME_SC_CONFLICTING_ATTRIBUTES</b> = 0x80, 
+<b>SPDK_NVME_SC_DEVICE_SELF_TEST_IN_PROGRESS</b> = 0x1d, 
 <br />
-&#160;&#160;<b>SPDK_NVME_SC_INVALID_PROTECTION_INFO</b> = 0x81, 
+&#160;&#160;<b>SPDK_NVME_SC_BOOT_PARTITION_WRITE_PROHIBITED</b> = 0x1e, 
+<b>SPDK_NVME_SC_INVALID_CTRLR_ID</b> = 0x1f, 
+<b>SPDK_NVME_SC_INVALID_SECONDARY_CTRLR_STATE</b> = 0x20, 
+<b>SPDK_NVME_SC_INVALID_NUM_CTRLR_RESOURCES</b> = 0x21, 
+<br />
+&#160;&#160;<b>SPDK_NVME_SC_INVALID_RESOURCE_ID</b> = 0x22, 
+<b>SPDK_NVME_SC_CONFLICTING_ATTRIBUTES</b> = 0x80, 
+<b>SPDK_NVME_SC_INVALID_PROTECTION_INFO</b> = 0x81, 
 <b>SPDK_NVME_SC_ATTEMPTED_WRITE_TO_RO_PAGE</b> = 0x82
 <br />
  }<tr class="memdesc:acb8784fad6a53be95d4c718ad3cf852e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Command specific status codes. <br /></td></tr>
@@ -391,12 +418,22 @@ Enumerations</h2></td></tr>
 <b>SPDK_NVME_OPC_FIRMWARE_COMMIT</b> = 0x10, 
 <br />
 &#160;&#160;<b>SPDK_NVME_OPC_FIRMWARE_IMAGE_DOWNLOAD</b> = 0x11, 
+<b>SPDK_NVME_OPC_DEVICE_SELF_TEST</b> = 0x14, 
 <b>SPDK_NVME_OPC_NS_ATTACHMENT</b> = 0x15, 
 <b>SPDK_NVME_OPC_KEEP_ALIVE</b> = 0x18, 
-<b>SPDK_NVME_OPC_FORMAT_NVM</b> = 0x80, 
 <br />
-&#160;&#160;<b>SPDK_NVME_OPC_SECURITY_SEND</b> = 0x81, 
-<b>SPDK_NVME_OPC_SECURITY_RECEIVE</b> = 0x82
+&#160;&#160;<b>SPDK_NVME_OPC_DIRECTIVE_SEND</b> = 0x19, 
+<b>SPDK_NVME_OPC_DIRECTIVE_RECEIVE</b> = 0x1a, 
+<b>SPDK_NVME_OPC_VIRTUALIZATION_MANAGEMENT</b> = 0x1c, 
+<b>SPDK_NVME_OPC_NVME_MI_SEND</b> = 0x1d, 
+<br />
+&#160;&#160;<b>SPDK_NVME_OPC_NVME_MI_RECEIVE</b> = 0x1e, 
+<b>SPDK_NVME_OPC_DOORBELL_BUFFER_CONFIG</b> = 0x7c, 
+<b>SPDK_NVME_OPC_FORMAT_NVM</b> = 0x80, 
+<b>SPDK_NVME_OPC_SECURITY_SEND</b> = 0x81, 
+<br />
+&#160;&#160;<b>SPDK_NVME_OPC_SECURITY_RECEIVE</b> = 0x82, 
+<b>SPDK_NVME_OPC_SANITIZE</b> = 0x84
 <br />
  }<tr class="memdesc:a3d96f5eb214b3cb58675276f19855bf5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Admin opcodes. <br /></td></tr>
 </td></tr>
@@ -443,12 +480,16 @@ Enumerations</h2></td></tr>
 <b>SPDK_NVME_FEAT_AUTONOMOUS_POWER_STATE_TRANSITION</b> = 0x0C, 
 <br />
 &#160;&#160;<b>SPDK_NVME_FEAT_HOST_MEM_BUFFER</b> = 0x0D, 
+<b>SPDK_NVME_FEAT_TIMESTAMP</b> = 0x0E, 
 <b>SPDK_NVME_FEAT_KEEP_ALIVE_TIMER</b> = 0x0F, 
+<b>SPDK_NVME_FEAT_HOST_CONTROLLED_THERMAL_MANAGEMENT</b> = 0x10, 
+<br />
+&#160;&#160;<b>SPDK_NVME_FEAT_NON_OPERATIONAL_POWER_STATE_CONFIG</b> = 0x11, 
 <b>SPDK_NVME_FEAT_SOFTWARE_PROGRESS_MARKER</b> = 0x80, 
 <b>SPDK_NVME_FEAT_HOST_IDENTIFIER</b> = 0x81, 
+<b>SPDK_NVME_FEAT_HOST_RESERVE_MASK</b> = 0x82, 
 <br />
-&#160;&#160;<b>SPDK_NVME_FEAT_HOST_RESERVE_MASK</b> = 0x82, 
-<b>SPDK_NVME_FEAT_HOST_RESERVE_PERSIST</b> = 0x83
+&#160;&#160;<b>SPDK_NVME_FEAT_HOST_RESERVE_PERSIST</b> = 0x83
 <br />
  }</td></tr>
 <tr class="separator:aeae5c5fb9df2c7a39215c71f9d9b4c25"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -461,11 +502,15 @@ Enumerations</h2></td></tr>
 &#160;&#160;<a class="el" href="nvme__spec_8h.html#a1491a0118eccaa91ff5cb9fb5d02c2c6a0e3f9941eabe22d5b3c7c86043d0de32">SPDK_NVME_IDENTIFY_NS</a> = 0x00, 
 <a class="el" href="nvme__spec_8h.html#a1491a0118eccaa91ff5cb9fb5d02c2c6a4a37f16cc815935d6ca7c5fc72446ba1">SPDK_NVME_IDENTIFY_CTRLR</a> = 0x01, 
 <a class="el" href="nvme__spec_8h.html#a1491a0118eccaa91ff5cb9fb5d02c2c6a8cfbe8373c7c619033d60eede0106f9c">SPDK_NVME_IDENTIFY_ACTIVE_NS_LIST</a> = 0x02, 
-<a class="el" href="nvme__spec_8h.html#a1491a0118eccaa91ff5cb9fb5d02c2c6a6d869fc169f9b1a1710ea422c60fe1c1">SPDK_NVME_IDENTIFY_ALLOCATED_NS_LIST</a> = 0x10, 
+<a class="el" href="nvme__spec_8h.html#a1491a0118eccaa91ff5cb9fb5d02c2c6ab945a36d2eb0c77e3c7eec85036e57e8">SPDK_NVME_IDENTIFY_NS_ID_DESCRIPTOR_LIST</a> = 0x03, 
 <br />
-&#160;&#160;<a class="el" href="nvme__spec_8h.html#a1491a0118eccaa91ff5cb9fb5d02c2c6a2577422800e8e7b6da496ff0e26d72ad">SPDK_NVME_IDENTIFY_NS_ALLOCATED</a> = 0x11, 
+&#160;&#160;<a class="el" href="nvme__spec_8h.html#a1491a0118eccaa91ff5cb9fb5d02c2c6a6d869fc169f9b1a1710ea422c60fe1c1">SPDK_NVME_IDENTIFY_ALLOCATED_NS_LIST</a> = 0x10, 
+<a class="el" href="nvme__spec_8h.html#a1491a0118eccaa91ff5cb9fb5d02c2c6a2577422800e8e7b6da496ff0e26d72ad">SPDK_NVME_IDENTIFY_NS_ALLOCATED</a> = 0x11, 
 <a class="el" href="nvme__spec_8h.html#a1491a0118eccaa91ff5cb9fb5d02c2c6a406d8a0fd54843bf3a769c709be8c78a">SPDK_NVME_IDENTIFY_NS_ATTACHED_CTRLR_LIST</a> = 0x12, 
-<a class="el" href="nvme__spec_8h.html#a1491a0118eccaa91ff5cb9fb5d02c2c6aeb2ab6a252ff942ca407e965a43069d8">SPDK_NVME_IDENTIFY_CTRLR_LIST</a> = 0x13
+<a class="el" href="nvme__spec_8h.html#a1491a0118eccaa91ff5cb9fb5d02c2c6aeb2ab6a252ff942ca407e965a43069d8">SPDK_NVME_IDENTIFY_CTRLR_LIST</a> = 0x13, 
+<br />
+&#160;&#160;<a class="el" href="nvme__spec_8h.html#a1491a0118eccaa91ff5cb9fb5d02c2c6a529c0f24ec3362cef551610db7d9642a">SPDK_NVME_IDENTIFY_PRIMARY_CTRLR_CAP</a> = 0x14, 
+<a class="el" href="nvme__spec_8h.html#a1491a0118eccaa91ff5cb9fb5d02c2c6acf0506a0b05a13ae3cd613dc3caf365b">SPDK_NVME_IDENTIFY_SECONDARY_CTRLR_LIST</a> = 0x15
 <br />
  }<tr class="memdesc:a1491a0118eccaa91ff5cb9fb5d02c2c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Identify command CNS value.  <a href="nvme__spec_8h.html#a1491a0118eccaa91ff5cb9fb5d02c2c6">More...</a><br /></td></tr>
 </td></tr>
@@ -475,6 +520,12 @@ Enumerations</h2></td></tr>
  }<tr class="memdesc:a2b71fb615deb505826eaeddd093e06bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">NVMe over Fabrics controller model.  <a href="nvme__spec_8h.html#a2b71fb615deb505826eaeddd093e06bc">More...</a><br /></td></tr>
 </td></tr>
 <tr class="separator:a2b71fb615deb505826eaeddd093e06bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c06fbd66f7572c43c51e6f106215b8d"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme__spec_8h.html#a1c06fbd66f7572c43c51e6f106215b8d">spdk_nvme_dealloc_logical_block_read_value</a> { <a class="el" href="nvme__spec_8h.html#a1c06fbd66f7572c43c51e6f106215b8da84e7d1027736744032bc32b5f104eb2f">SPDK_NVME_DEALLOC_NOT_REPORTED</a> = 0, 
+<a class="el" href="nvme__spec_8h.html#a1c06fbd66f7572c43c51e6f106215b8da315a35b15cc20a03255f8e8e4d3396ba">SPDK_NVME_DEALLOC_READ_00</a> = 1, 
+<a class="el" href="nvme__spec_8h.html#a1c06fbd66f7572c43c51e6f106215b8dad8840e6a2c0c1c75b04e0c23ca829464">SPDK_NVME_DEALLOC_READ_FF</a> = 2
+ }<tr class="memdesc:a1c06fbd66f7572c43c51e6f106215b8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deallocated logical block features - read value.  <a href="nvme__spec_8h.html#a1c06fbd66f7572c43c51e6f106215b8d">More...</a><br /></td></tr>
+</td></tr>
+<tr class="separator:a1c06fbd66f7572c43c51e6f106215b8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa7e108757c0eebbac7e13b598a378210"><td class="memItemLeft" align="right" valign="top"><a id="aa7e108757c0eebbac7e13b598a378210"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme__spec_8h.html#aa7e108757c0eebbac7e13b598a378210">spdk_nvme_reservation_type</a> { <br />
 &#160;&#160;<b>SPDK_NVME_RESERVE_WRITE_EXCLUSIVE</b> = 0x1, 
 <b>SPDK_NVME_RESERVE_EXCLUSIVE_ACCESS</b> = 0x2, 
@@ -533,6 +584,12 @@ Enumerations</h2></td></tr>
  }<tr class="memdesc:ae4e10443176e941bea118b389679c345"><td class="mdescLeft">&#160;</td><td class="mdescRight">Namespace management Type Encoding. <br /></td></tr>
 </td></tr>
 <tr class="separator:ae4e10443176e941bea118b389679c345"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3711b38213aaa9ff7a2aa7d1efe8e2f1"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme__spec_8h.html#a3711b38213aaa9ff7a2aa7d1efe8e2f1">spdk_nvme_nidt</a> { <a class="el" href="nvme__spec_8h.html#a3711b38213aaa9ff7a2aa7d1efe8e2f1a782356d3092200ea469f992d0677f08c">SPDK_NVME_NIDT_EUI64</a> = 0x01, 
+<a class="el" href="nvme__spec_8h.html#a3711b38213aaa9ff7a2aa7d1efe8e2f1aa49a14ce8e55eb9ebefca7e0d6b4df82">SPDK_NVME_NIDT_NGUID</a> = 0x02, 
+<a class="el" href="nvme__spec_8h.html#a3711b38213aaa9ff7a2aa7d1efe8e2f1ae4257777f26428ed69c6122ad06a46de">SPDK_NVME_NIDT_UUID</a> = 0x03
+ }<tr class="memdesc:a3711b38213aaa9ff7a2aa7d1efe8e2f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Namespace identification descriptor type.  <a href="nvme__spec_8h.html#a3711b38213aaa9ff7a2aa7d1efe8e2f1">More...</a><br /></td></tr>
+</td></tr>
+<tr class="separator:a3711b38213aaa9ff7a2aa7d1efe8e2f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa0e5f56ea65cdec493d43ca67dc69a33"><td class="memItemLeft" align="right" valign="top"><a id="aa0e5f56ea65cdec493d43ca67dc69a33"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_secure_erase_setting</b> { <b>SPDK_NVME_FMT_NVM_SES_NO_SECURE_ERASE</b> = 0x0, 
 <b>SPDK_NVME_FMT_NVM_SES_USER_DATA_ERASE</b> = 0x1, 
 <b>SPDK_NVME_FMT_NVM_SES_CRYPTO_ERASE</b> = 0x2
@@ -589,6 +646,12 @@ Functions</h2></td></tr>
 <tr class="memitem:a2a3d3c5777535c4e41cf6cfbbd965531"><td class="memItemLeft" align="right" valign="top"><a id="a2a3d3c5777535c4e41cf6cfbbd965531"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_STATIC_ASSERT</b> (sizeof(union <a class="el" href="unionspdk__nvme__cmbsz__register.html">spdk_nvme_cmbsz_register</a>)==4, &quot;Incorrect size&quot;)</td></tr>
 <tr class="separator:a2a3d3c5777535c4e41cf6cfbbd965531"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73fddcee6b4cd4df31016b2d81b27e5b"><td class="memItemLeft" align="right" valign="top"><a id="a73fddcee6b4cd4df31016b2d81b27e5b"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_STATIC_ASSERT</b> (sizeof(union <a class="el" href="unionspdk__nvme__bpinfo__register.html">spdk_nvme_bpinfo_register</a>)==4, &quot;Incorrect size&quot;)</td></tr>
+<tr class="separator:a73fddcee6b4cd4df31016b2d81b27e5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c1c49a52af17031dc2937e34ba6ac36"><td class="memItemLeft" align="right" valign="top"><a id="a4c1c49a52af17031dc2937e34ba6ac36"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_STATIC_ASSERT</b> (sizeof(union <a class="el" href="unionspdk__nvme__bprsel__register.html">spdk_nvme_bprsel_register</a>)==4, &quot;Incorrect size&quot;)</td></tr>
+<tr class="separator:a4c1c49a52af17031dc2937e34ba6ac36"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1537ae312c41f15824dcd8454ea6be58"><td class="memItemLeft" align="right" valign="top"><a id="a1537ae312c41f15824dcd8454ea6be58"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_STATIC_ASSERT</b> (0x00==offsetof(struct spdk_nvme_registers, cap), &quot;Incorrect register offset&quot;)</td></tr>
 <tr class="separator:a1537ae312c41f15824dcd8454ea6be58"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -625,6 +688,15 @@ Functions</h2></td></tr>
 <tr class="memitem:a1c46efb8a6ffeb7e995f61b59a0c3e41"><td class="memItemLeft" align="right" valign="top"><a id="a1c46efb8a6ffeb7e995f61b59a0c3e41"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_STATIC_ASSERT</b> (0x3C==offsetof(struct spdk_nvme_registers, cmbsz), &quot;Incorrect register offset&quot;)</td></tr>
 <tr class="separator:a1c46efb8a6ffeb7e995f61b59a0c3e41"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9a2b9aa67dcc5c17bb98e695b4897af"><td class="memItemLeft" align="right" valign="top"><a id="aa9a2b9aa67dcc5c17bb98e695b4897af"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_STATIC_ASSERT</b> (0x40==offsetof(struct spdk_nvme_registers, bpinfo), &quot;Incorrect register offset&quot;)</td></tr>
+<tr class="separator:aa9a2b9aa67dcc5c17bb98e695b4897af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2912768b8da739dbddd3164641695a03"><td class="memItemLeft" align="right" valign="top"><a id="a2912768b8da739dbddd3164641695a03"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_STATIC_ASSERT</b> (0x44==offsetof(struct spdk_nvme_registers, bprsel), &quot;Incorrect register offset&quot;)</td></tr>
+<tr class="separator:a2912768b8da739dbddd3164641695a03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a175b8e573ea13ec1f79e16f4faa785d5"><td class="memItemLeft" align="right" valign="top"><a id="a175b8e573ea13ec1f79e16f4faa785d5"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_STATIC_ASSERT</b> (0x48==offsetof(struct spdk_nvme_registers, bpmbl), &quot;Incorrect register offset&quot;)</td></tr>
+<tr class="separator:a175b8e573ea13ec1f79e16f4faa785d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a29153190d32f8e78a450ee3490a903a1"><td class="memItemLeft" align="right" valign="top"><a id="a29153190d32f8e78a450ee3490a903a1"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_STATIC_ASSERT</b> (sizeof(struct <a class="el" href="structspdk__nvme__sgl__descriptor.html">spdk_nvme_sgl_descriptor</a>)==16, &quot;Incorrect size&quot;)</td></tr>
 <tr class="separator:a29153190d32f8e78a450ee3490a903a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -682,6 +754,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ae82d97bff3b43c67eec6fe7844bde01e"><td class="memItemLeft" align="right" valign="top"><a id="ae82d97bff3b43c67eec6fe7844bde01e"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_STATIC_ASSERT</b> (sizeof(struct <a class="el" href="structspdk__nvme__ns__list.html">spdk_nvme_ns_list</a>)==4096, &quot;Incorrect size&quot;)</td></tr>
 <tr class="separator:ae82d97bff3b43c67eec6fe7844bde01e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf146a891b748113049c48d790f5f78c"><td class="memItemLeft" align="right" valign="top"><a id="abf146a891b748113049c48d790f5f78c"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_STATIC_ASSERT</b> (sizeof(struct <a class="el" href="structspdk__nvme__ns__id__desc.html">spdk_nvme_ns_id_desc</a>)==4, &quot;Incorrect size&quot;)</td></tr>
+<tr class="separator:abf146a891b748113049c48d790f5f78c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae4c648060c02e8f65344f461a3350c7c"><td class="memItemLeft" align="right" valign="top"><a id="ae4c648060c02e8f65344f461a3350c7c"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_STATIC_ASSERT</b> (sizeof(struct <a class="el" href="structspdk__nvme__ctrlr__list.html">spdk_nvme_ctrlr_list</a>)==4096, &quot;Incorrect size&quot;)</td></tr>
 <tr class="separator:ae4c648060c02e8f65344f461a3350c7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -812,6 +887,30 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a1c06fbd66f7572c43c51e6f106215b8d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1c06fbd66f7572c43c51e6f106215b8d">&#9670;&nbsp;</a></span>spdk_nvme_dealloc_logical_block_read_value</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="nvme__spec_8h.html#a1c06fbd66f7572c43c51e6f106215b8d">spdk_nvme_dealloc_logical_block_read_value</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Deallocated logical block features - read value. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a1c06fbd66f7572c43c51e6f106215b8da84e7d1027736744032bc32b5f104eb2f"></a>SPDK_NVME_DEALLOC_NOT_REPORTED&#160;</td><td class="fielddoc"><p>Not reported. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a1c06fbd66f7572c43c51e6f106215b8da315a35b15cc20a03255f8e8e4d3396ba"></a>SPDK_NVME_DEALLOC_READ_00&#160;</td><td class="fielddoc"><p>Deallocated blocks read 0x00. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a1c06fbd66f7572c43c51e6f106215b8dad8840e6a2c0c1c75b04e0c23ca829464"></a>SPDK_NVME_DEALLOC_READ_FF&#160;</td><td class="fielddoc"><p>Deallocated blocks read 0xFF. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
 <a id="ae4da1c1bec22eb22d1af72bbf37af36e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae4da1c1bec22eb22d1af72bbf37af36e">&#9670;&nbsp;</a></span>spdk_nvme_fw_commit_action</h2>
 
@@ -860,6 +959,8 @@ Functions</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a id="a1491a0118eccaa91ff5cb9fb5d02c2c6a8cfbe8373c7c619033d60eede0106f9c"></a>SPDK_NVME_IDENTIFY_ACTIVE_NS_LIST&#160;</td><td class="fielddoc"><p>List active NSIDs greater than CDW1.NSID. </p>
 </td></tr>
+<tr><td class="fieldname"><a id="a1491a0118eccaa91ff5cb9fb5d02c2c6ab945a36d2eb0c77e3c7eec85036e57e8"></a>SPDK_NVME_IDENTIFY_NS_ID_DESCRIPTOR_LIST&#160;</td><td class="fielddoc"><p>List namespace identification descriptors. </p>
+</td></tr>
 <tr><td class="fieldname"><a id="a1491a0118eccaa91ff5cb9fb5d02c2c6a6d869fc169f9b1a1710ea422c60fe1c1"></a>SPDK_NVME_IDENTIFY_ALLOCATED_NS_LIST&#160;</td><td class="fielddoc"><p>List allocated NSIDs greater than CDW1.NSID. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a1491a0118eccaa91ff5cb9fb5d02c2c6a2577422800e8e7b6da496ff0e26d72ad"></a>SPDK_NVME_IDENTIFY_NS_ALLOCATED&#160;</td><td class="fielddoc"><p>Identify namespace if CDW1.NSID is allocated. </p>
@@ -867,6 +968,10 @@ Functions</h2></td></tr>
 <tr><td class="fieldname"><a id="a1491a0118eccaa91ff5cb9fb5d02c2c6a406d8a0fd54843bf3a769c709be8c78a"></a>SPDK_NVME_IDENTIFY_NS_ATTACHED_CTRLR_LIST&#160;</td><td class="fielddoc"><p>Get list of controllers starting at CDW10.CNTID that are attached to CDW1.NSID. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a1491a0118eccaa91ff5cb9fb5d02c2c6aeb2ab6a252ff942ca407e965a43069d8"></a>SPDK_NVME_IDENTIFY_CTRLR_LIST&#160;</td><td class="fielddoc"><p>Get list of controllers starting at CDW10.CNTID. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a1491a0118eccaa91ff5cb9fb5d02c2c6a529c0f24ec3362cef551610db7d9642a"></a>SPDK_NVME_IDENTIFY_PRIMARY_CTRLR_CAP&#160;</td><td class="fielddoc"><p>Get primary controller capabilities structure. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a1491a0118eccaa91ff5cb9fb5d02c2c6acf0506a0b05a13ae3cd613dc3caf365b"></a>SPDK_NVME_IDENTIFY_SECONDARY_CTRLR_LIST&#160;</td><td class="fielddoc"><p>Get secondary controller list. </p>
 </td></tr>
 </table>
 
@@ -899,6 +1004,31 @@ Functions</h2></td></tr>
 <tr><td class="fieldname"><a id="a3d5e453e4d95b0f5b9bb4de04ace78c4a373acc5fc6392f4af3cfd5c6123bb600"></a>SPDK_NVME_LOG_DISCOVERY&#160;</td><td class="fielddoc"><p>Discovery(refer to the NVMe over Fabrics specification) </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a3d5e453e4d95b0f5b9bb4de04ace78c4a37f2ea0a63737907265ff3ed35088a09"></a>SPDK_NVME_LOG_RESERVATION_NOTIFICATION&#160;</td><td class="fielddoc"><p>Reservation notification (optional) </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="a3711b38213aaa9ff7a2aa7d1efe8e2f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3711b38213aaa9ff7a2aa7d1efe8e2f1">&#9670;&nbsp;</a></span>spdk_nvme_nidt</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="nvme__spec_8h.html#a3711b38213aaa9ff7a2aa7d1efe8e2f1">spdk_nvme_nidt</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Namespace identification descriptor type. </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="structspdk__nvme__ns__id__desc.html">spdk_nvme_ns_id_desc</a> </dd></dl>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a3711b38213aaa9ff7a2aa7d1efe8e2f1a782356d3092200ea469f992d0677f08c"></a>SPDK_NVME_NIDT_EUI64&#160;</td><td class="fielddoc"><p>IEEE Extended Unique Identifier. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a3711b38213aaa9ff7a2aa7d1efe8e2f1aa49a14ce8e55eb9ebefca7e0d6b4df82"></a>SPDK_NVME_NIDT_NGUID&#160;</td><td class="fielddoc"><p>Namespace GUID. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a3711b38213aaa9ff7a2aa7d1efe8e2f1ae4257777f26428ed69c6122ad06a46de"></a>SPDK_NVME_NIDT_UUID&#160;</td><td class="fielddoc"><p>Namespace UUID. </p>
 </td></tr>
 </table>
 

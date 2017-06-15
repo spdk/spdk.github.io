@@ -144,6 +144,10 @@ Functions</h2></td></tr>
 void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="io__channel_8h.html#a23226b333cc3d87b2ce0d6f188bc22fa">spdk_io_channel_get_ctx</a> (struct spdk_io_channel *ch)</td></tr>
 <tr class="memdesc:a23226b333cc3d87b2ce0d6f188bc22fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the context buffer associated with an I/O channel. <br /></td></tr>
 <tr class="separator:a23226b333cc3d87b2ce0d6f188bc22fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ff9537d26ac923a7a93cd55ba315b5b"><td class="memItemLeft" align="right" valign="top"><a id="a8ff9537d26ac923a7a93cd55ba315b5b"></a>
+struct spdk_thread *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="io__channel_8h.html#a8ff9537d26ac923a7a93cd55ba315b5b">spdk_io_channel_get_thread</a> (struct spdk_io_channel *ch)</td></tr>
+<tr class="memdesc:a8ff9537d26ac923a7a93cd55ba315b5b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the spdk_thread associated with an I/O channel. <br /></td></tr>
+<tr class="separator:a8ff9537d26ac923a7a93cd55ba315b5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa7a2ca9bd0497544e852c65fd5263cd1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="io__channel_8h.html#aa7a2ca9bd0497544e852c65fd5263cd1">spdk_for_each_channel</a> (void *io_device, spdk_channel_msg fn, void *ctx, spdk_channel_for_each_cpl cpl)</td></tr>
 <tr class="memdesc:aa7a2ca9bd0497544e852c65fd5263cd1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call 'fn' on each channel associated with io_device.  <a href="#aa7a2ca9bd0497544e852c65fd5263cd1">More...</a><br /></td></tr>
 <tr class="separator:aa7a2ca9bd0497544e852c65fd5263cd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -291,7 +295,8 @@ void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="io
 </div><div class="memdoc">
 
 <p>Get a handle to the current thread. </p>
-<p>This handle may be passed to other threads and used as the target of <a class="el" href="io__channel_8h.html#a6aa832fea18a9160429b5383f36d8539" title="Send a message to the given thread. ">spdk_thread_send_msg()</a>. </p>
+<p>This handle may be passed to other threads and used as the target of <a class="el" href="io__channel_8h.html#a6aa832fea18a9160429b5383f36d8539" title="Send a message to the given thread. ">spdk_thread_send_msg()</a>.</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="io__channel_8h.html#a8ff9537d26ac923a7a93cd55ba315b5b" title="Returns the spdk_thread associated with an I/O channel. ">spdk_io_channel_get_thread()</a> </dd></dl>
 
 </div>
 </div>
