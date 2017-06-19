@@ -10,7 +10,7 @@
   <script type="text/javascript" src="jquery.js"></script>
   <script type="text/javascript" src="dynsections.js"></script>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,900" type="text/css">
-  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link href="../css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link rel="stylesheet" href="tabs.css" type="text/css">
   <link href="stylesheet.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -100,7 +100,7 @@ Pollers</h2>
 <p>The framework also defines another type of function called a poller. Pollers may be registered with the <a class="el" href="event_8h.html#a8621af2d872087cd8518ef93391a8fff" title="Register a poller on the given lcore. ">spdk_poller_register()</a> function. Pollers, like events, are functions with arguments that can be bundled and sent to a specific core to be executed. However, unlike events, pollers are executed repeatedly until unregistered. The reactor event loop intersperses calls to the pollers with other event processing. Pollers are intended to poll hardware as a replacement for interrupts. Normally, pollers are executed on every iteration of the main event loop. Pollers may also be scheduled to execute periodically on a timer if low latency is not required.</p>
 <h2><a class="anchor" id="event_component_app"></a>
 Application Framework</h2>
-<p>The framework itself is bundled into a higher level abstraction called an "app". Once <a class="el" href="event_8h.html#a2d8e75f24bcab29e8a1d6d0e88ae9da7" title="Start the framework. ">spdk_app_start()</a> is called, it will block the current thread until the application terminates by calling <a class="el" href="event_8h.html#a40f3af1c0340f5c3eb915bc43e3cee83" title="Stop the framework. ">spdk_app_stop()</a>. </p>
+<p>The framework itself is bundled into a higher level abstraction called an "app". Once <a class="el" href="event_8h.html#a18879873a585b21f44b7c90be8726ce1" title="Start the framework. ">spdk_app_start()</a> is called, it will block the current thread until the application terminates by calling <a class="el" href="event_8h.html#a40f3af1c0340f5c3eb915bc43e3cee83" title="Stop the framework. ">spdk_app_stop()</a>. </p>
 </div></div><!-- contents -->
 <footer>
   <div class="container text-center">

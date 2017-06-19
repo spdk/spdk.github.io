@@ -10,7 +10,7 @@
   <script type="text/javascript" src="jquery.js"></script>
   <script type="text/javascript" src="dynsections.js"></script>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,900" type="text/css">
-  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link href="../css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link rel="stylesheet" href="tabs.css" type="text/css">
   <link href="stylesheet.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -176,9 +176,9 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>nvmf_subsystem_add_ctr
 <tr class="memitem:a39d21724c9334371d989bba4fa1f20f8"><td class="memItemLeft" align="right" valign="top"><a id="a39d21724c9334371d989bba4fa1f20f8"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvmf_subsystem_poll</b> (struct <a class="el" href="structspdk__nvmf__subsystem.html">spdk_nvmf_subsystem</a> *subsystem)</td></tr>
 <tr class="separator:a39d21724c9334371d989bba4fa1f20f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adac5929e7622790068cb3babbaa4ae98"><td class="memItemLeft" align="right" valign="top"><a id="adac5929e7622790068cb3babbaa4ae98"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvmf_subsystem_add_ns</b> (struct <a class="el" href="structspdk__nvmf__subsystem.html">spdk_nvmf_subsystem</a> *subsystem, struct spdk_bdev *bdev)</td></tr>
-<tr class="separator:adac5929e7622790068cb3babbaa4ae98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0603a4fbabccbaa9d72780eca7c08420"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#a0603a4fbabccbaa9d72780eca7c08420">spdk_nvmf_subsystem_add_ns</a> (struct <a class="el" href="structspdk__nvmf__subsystem.html">spdk_nvmf_subsystem</a> *subsystem, struct spdk_bdev *bdev, uint32_t nsid)</td></tr>
+<tr class="memdesc:a0603a4fbabccbaa9d72780eca7c08420"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a namespace to a subsytem.  <a href="#a0603a4fbabccbaa9d72780eca7c08420">More...</a><br /></td></tr>
+<tr class="separator:a0603a4fbabccbaa9d72780eca7c08420"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4cdd9c023f1a7b6dd5e5f00da4f07cb7"><td class="memItemLeft" align="right" valign="top"><a id="a4cdd9c023f1a7b6dd5e5f00da4f07cb7"></a>
 const char *&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvmf_subsystem_get_sn</b> (const struct <a class="el" href="structspdk__nvmf__subsystem.html">spdk_nvmf_subsystem</a> *subsystem)</td></tr>
 <tr class="separator:a4cdd9c023f1a7b6dd5e5f00da4f07cb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -207,6 +207,51 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvmf_session_dis
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>NVMe over Fabrics target public API. </p>
 </div><h2 class="groupheader">Function Documentation</h2>
+<a id="a0603a4fbabccbaa9d72780eca7c08420"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0603a4fbabccbaa9d72780eca7c08420">&#9670;&nbsp;</a></span>spdk_nvmf_subsystem_add_ns()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t spdk_nvmf_subsystem_add_ns </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structspdk__nvmf__subsystem.html">spdk_nvmf_subsystem</a> *&#160;</td>
+          <td class="paramname"><em>subsystem</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct spdk_bdev *&#160;</td>
+          <td class="paramname"><em>bdev</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>nsid</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Add a namespace to a subsytem. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">subsystem</td><td>Subsystem to add namespace to. </td></tr>
+    <tr><td class="paramname">bdev</td><td>Block device to add as a namespace. </td></tr>
+    <tr><td class="paramname">nsid</td><td>Namespace ID to assign to the new namespace, or 0 to automatically use an available NSID.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Newly added NSID on success or 0 on failure. </dd></dl>
+
+</div>
+</div>
 <a id="accc21256a81f2052aad9a3476edbc503"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#accc21256a81f2052aad9a3476edbc503">&#9670;&nbsp;</a></span>spdk_nvmf_subsystem_start()</h2>
 

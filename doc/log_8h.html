@@ -10,7 +10,7 @@
   <script type="text/javascript" src="jquery.js"></script>
   <script type="text/javascript" src="dynsections.js"></script>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,900" type="text/css">
-  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link href="../css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link rel="stylesheet" href="tabs.css" type="text/css">
   <link href="stylesheet.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -84,6 +84,7 @@
 <div class="header">
   <div class="summary">
 <a href="#define-members">Macros</a> &#124;
+<a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
@@ -106,17 +107,40 @@ Macros</h2></td></tr>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_ERRLOG</b>(...)&#160;&#160;&#160;spdk_errlog(__FILE__, __LINE__, __func__, __VA_ARGS__)</td></tr>
 <tr class="separator:a6b7bfeecff42b840ca5ebd25ffa84439"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:a188d351bd05093cba1d8594ee9988efd"><td class="memItemLeft" align="right" valign="top"><a id="a188d351bd05093cba1d8594ee9988efd"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>spdk_log_level</b> { <br />
+&#160;&#160;<b>SPDK_LOG_ERROR</b>, 
+<b>SPDK_LOG_WARN</b>, 
+<b>SPDK_LOG_NOTICE</b>, 
+<b>SPDK_LOG_INFO</b>, 
+<br />
+&#160;&#160;<b>SPDK_LOG_DEBUG</b>
+<br />
+ }</td></tr>
+<tr class="separator:a188d351bd05093cba1d8594ee9988efd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:a83352187f63ade8829ca300fc7eacd54"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log_8h.html#a83352187f63ade8829ca300fc7eacd54">spdk_log_open</a> (void)</td></tr>
+<tr class="memdesc:a83352187f63ade8829ca300fc7eacd54"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the logging module.  <a href="#a83352187f63ade8829ca300fc7eacd54">More...</a><br /></td></tr>
+<tr class="separator:a83352187f63ade8829ca300fc7eacd54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41cdc17423a58c475fa785fd491f00e9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log_8h.html#a41cdc17423a58c475fa785fd491f00e9">spdk_log_close</a> (void)</td></tr>
+<tr class="memdesc:a41cdc17423a58c475fa785fd491f00e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Close the currently active log.  <a href="#a41cdc17423a58c475fa785fd491f00e9">More...</a><br /></td></tr>
+<tr class="separator:a41cdc17423a58c475fa785fd491f00e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a422b7a65819b43157a4771be78f544ee"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log_8h.html#a422b7a65819b43157a4771be78f544ee">spdk_log_set_level</a> (enum spdk_log_level level)</td></tr>
+<tr class="memdesc:a422b7a65819b43157a4771be78f544ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the threshold to log messages.  <a href="#a422b7a65819b43157a4771be78f544ee">More...</a><br /></td></tr>
+<tr class="separator:a422b7a65819b43157a4771be78f544ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af600090b2a4aa95b4e9e4dae27bf6c7e"><td class="memItemLeft" align="right" valign="top"><a id="af600090b2a4aa95b4e9e4dae27bf6c7e"></a>
+enum spdk_log_level&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log_8h.html#af600090b2a4aa95b4e9e4dae27bf6c7e">spdk_log_get_level</a> (void)</td></tr>
+<tr class="memdesc:af600090b2a4aa95b4e9e4dae27bf6c7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current log threshold. <br /></td></tr>
+<tr class="separator:af600090b2a4aa95b4e9e4dae27bf6c7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a721a3e5c1215cfe1e9ff657ea137cf69"><td class="memItemLeft" align="right" valign="top"><a id="a721a3e5c1215cfe1e9ff657ea137cf69"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_set_log_facility</b> (const char *facility)</td></tr>
 <tr class="separator:a721a3e5c1215cfe1e9ff657ea137cf69"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6be678b2600e8dd0bf5f1757414b4ef7"><td class="memItemLeft" align="right" valign="top"><a id="a6be678b2600e8dd0bf5f1757414b4ef7"></a>
 const char *&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_get_log_facility</b> (void)</td></tr>
 <tr class="separator:a6be678b2600e8dd0bf5f1757414b4ef7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afa558806f6eb7a322740aeceb7fc343c"><td class="memItemLeft" align="right" valign="top"><a id="afa558806f6eb7a322740aeceb7fc343c"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_set_log_priority</b> (const char *priority)</td></tr>
-<tr class="separator:afa558806f6eb7a322740aeceb7fc343c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9d73fb514a9e000979f55689e831d119"><td class="memItemLeft" align="right" valign="top"><a id="a9d73fb514a9e000979f55689e831d119"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_noticelog</b> (const char *file, const int line, const char *func, const char *format,...)</td></tr>
 <tr class="separator:a9d73fb514a9e000979f55689e831d119"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -141,12 +165,6 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_log_set_trace_fla
 <tr class="memitem:a5492feb5ef1c11d89bed4ccf3e8135c8"><td class="memItemLeft" align="right" valign="top"><a id="a5492feb5ef1c11d89bed4ccf3e8135c8"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_log_clear_trace_flag</b> (const char *flag)</td></tr>
 <tr class="separator:a5492feb5ef1c11d89bed4ccf3e8135c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5d5826f5153eeb6a5d3a9f583a37cb30"><td class="memItemLeft" align="right" valign="top"><a id="a5d5826f5153eeb6a5d3a9f583a37cb30"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_open_log</b> (void)</td></tr>
-<tr class="separator:a5d5826f5153eeb6a5d3a9f583a37cb30"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a362582b063ae74ed2a0ff72b9ff9ff52"><td class="memItemLeft" align="right" valign="top"><a id="a362582b063ae74ed2a0ff72b9ff9ff52"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_close_log</b> (void)</td></tr>
-<tr class="separator:a362582b063ae74ed2a0ff72b9ff9ff52"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4a47d01813ce878b34c146b32f106616"><td class="memItemLeft" align="right" valign="top"><a id="a4a47d01813ce878b34c146b32f106616"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_tracelog_usage</b> (FILE *f, const char *trace_arg)</td></tr>
 <tr class="separator:a4a47d01813ce878b34c146b32f106616"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -159,7 +177,71 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_g_notice
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Logging interfaces. </p>
-</div></div><!-- contents -->
+</div><h2 class="groupheader">Function Documentation</h2>
+<a id="a41cdc17423a58c475fa785fd491f00e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a41cdc17423a58c475fa785fd491f00e9">&#9670;&nbsp;</a></span>spdk_log_close()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_log_close </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Close the currently active log. </p>
+<p>Messages after this call will be dropped. </p>
+
+</div>
+</div>
+<a id="a83352187f63ade8829ca300fc7eacd54"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a83352187f63ade8829ca300fc7eacd54">&#9670;&nbsp;</a></span>spdk_log_open()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_log_open </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Initialize the logging module. </p>
+<p>Messages prior to this call will be dropped. </p>
+
+</div>
+</div>
+<a id="a422b7a65819b43157a4771be78f544ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a422b7a65819b43157a4771be78f544ee">&#9670;&nbsp;</a></span>spdk_log_set_level()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_log_set_level </td>
+          <td>(</td>
+          <td class="paramtype">enum spdk_log_level&#160;</td>
+          <td class="paramname"><em>level</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the threshold to log messages. </p>
+<p>Messages with a higher level than this are ignored. </p>
+
+</div>
+</div>
+</div><!-- contents -->
 <footer>
   <div class="container text-center">
     <p class="copyright text-muted small">Copyright © Intel Corporation. All Rights Reserved.</p>

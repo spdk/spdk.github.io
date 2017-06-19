@@ -10,7 +10,7 @@
   <script type="text/javascript" src="jquery.js"></script>
   <script type="text/javascript" src="dynsections.js"></script>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,900" type="text/css">
-  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link href="../css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link rel="stylesheet" href="tabs.css" type="text/css">
   <link href="stylesheet.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -121,16 +121,13 @@ Functions</h2></td></tr>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="event_8h.html#a2c8af9052967bf98ff65e514ec7fa276">spdk_app_opts_init</a> (struct <a class="el" href="structspdk__app__opts.html">spdk_app_opts</a> *opts)</td></tr>
 <tr class="memdesc:a2c8af9052967bf98ff65e514ec7fa276"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the default value of opts. <br /></td></tr>
 <tr class="separator:a2c8af9052967bf98ff65e514ec7fa276"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a27022a6e98d5079d433396578545689e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="event_8h.html#a27022a6e98d5079d433396578545689e">spdk_app_init</a> (struct <a class="el" href="structspdk__app__opts.html">spdk_app_opts</a> *opts)</td></tr>
-<tr class="memdesc:a27022a6e98d5079d433396578545689e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize an application to use the event framework.  <a href="#a27022a6e98d5079d433396578545689e">More...</a><br /></td></tr>
-<tr class="separator:a27022a6e98d5079d433396578545689e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18879873a585b21f44b7c90be8726ce1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="event_8h.html#a18879873a585b21f44b7c90be8726ce1">spdk_app_start</a> (struct <a class="el" href="structspdk__app__opts.html">spdk_app_opts</a> *opts, spdk_event_fn start_fn, void *arg1, void *arg2)</td></tr>
+<tr class="memdesc:a18879873a585b21f44b7c90be8726ce1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start the framework.  <a href="#a18879873a585b21f44b7c90be8726ce1">More...</a><br /></td></tr>
+<tr class="separator:a18879873a585b21f44b7c90be8726ce1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a09034efb3911efa02c1b260c5ef2160e"><td class="memItemLeft" align="right" valign="top"><a id="a09034efb3911efa02c1b260c5ef2160e"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="event_8h.html#a09034efb3911efa02c1b260c5ef2160e">spdk_app_fini</a> (void)</td></tr>
 <tr class="memdesc:a09034efb3911efa02c1b260c5ef2160e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform final shutdown operations on an application using the event framework. <br /></td></tr>
 <tr class="separator:a09034efb3911efa02c1b260c5ef2160e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2d8e75f24bcab29e8a1d6d0e88ae9da7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="event_8h.html#a2d8e75f24bcab29e8a1d6d0e88ae9da7">spdk_app_start</a> (spdk_event_fn start_fn, void *arg1, void *arg2)</td></tr>
-<tr class="memdesc:a2d8e75f24bcab29e8a1d6d0e88ae9da7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start the framework.  <a href="#a2d8e75f24bcab29e8a1d6d0e88ae9da7">More...</a><br /></td></tr>
-<tr class="separator:a2d8e75f24bcab29e8a1d6d0e88ae9da7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0bbbb23263a8ea9c93c3adf8aa3bce8e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="event_8h.html#a0bbbb23263a8ea9c93c3adf8aa3bce8e">spdk_app_start_shutdown</a> (void)</td></tr>
 <tr class="memdesc:a0bbbb23263a8ea9c93c3adf8aa3bce8e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start shutting down the framework.  <a href="#a0bbbb23263a8ea9c93c3adf8aa3bce8e">More...</a><br /></td></tr>
 <tr class="separator:a0bbbb23263a8ea9c93c3adf8aa3bce8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -182,29 +179,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="even
 <div class="textblock"><p>Event framework public API. </p>
 <p>See <a class="el" href="event.html#event_components">SPDK Event Framework Components</a> for an overview of the SPDK event framework API. </p>
 </div><h2 class="groupheader">Function Documentation</h2>
-<a id="a27022a6e98d5079d433396578545689e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a27022a6e98d5079d433396578545689e">&#9670;&nbsp;</a></span>spdk_app_init()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void spdk_app_init </td>
-          <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structspdk__app__opts.html">spdk_app_opts</a> *&#160;</td>
-          <td class="paramname"><em>opts</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Initialize an application to use the event framework. </p>
-<p>This must be called prior to using any other functions in this library. </p>
-
-</div>
-</div>
-<a id="a2d8e75f24bcab29e8a1d6d0e88ae9da7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2d8e75f24bcab29e8a1d6d0e88ae9da7">&#9670;&nbsp;</a></span>spdk_app_start()</h2>
+<a id="a18879873a585b21f44b7c90be8726ce1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a18879873a585b21f44b7c90be8726ce1">&#9670;&nbsp;</a></span>spdk_app_start()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -212,6 +188,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="even
         <tr>
           <td class="memname">int spdk_app_start </td>
           <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structspdk__app__opts.html">spdk_app_opts</a> *&#160;</td>
+          <td class="paramname"><em>opts</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype">spdk_event_fn&#160;</td>
           <td class="paramname"><em>start_fn</em>, </td>
         </tr>
@@ -278,7 +260,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="even
 </div><div class="memdoc">
 
 <p>Stop the framework. </p>
-<p>This does not wait for all threads to exit. Instead, it kicks off the shutdown process and returns. Once the shutdown process is complete, <a class="el" href="event_8h.html#a2d8e75f24bcab29e8a1d6d0e88ae9da7">spdk_app_start</a> will return. </p>
+<p>This does not wait for all threads to exit. Instead, it kicks off the shutdown process and returns. Once the shutdown process is complete, <a class="el" href="event_8h.html#a18879873a585b21f44b7c90be8726ce1">spdk_app_start</a> will return. </p>
 
 </div>
 </div>
