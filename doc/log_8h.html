@@ -79,8 +79,7 @@
   <div class="summary">
 <a href="#define-members">Macros</a> &#124;
 <a href="#enum-members">Enumerations</a> &#124;
-<a href="#func-members">Functions</a> &#124;
-<a href="#var-members">Variables</a>  </div>
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">log.h File Reference</div>  </div>
 </div><!--header-->
@@ -92,13 +91,13 @@
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
 <tr class="memitem:a4dcd04f102bfd52627f41e43123bc916"><td class="memItemLeft" align="right" valign="top"><a id="a4dcd04f102bfd52627f41e43123bc916"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_NOTICELOG</b>(...)&#160;&#160;&#160;spdk_noticelog(NULL, 0, NULL, __VA_ARGS__)</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_NOTICELOG</b>(...)&#160;&#160;&#160;spdk_log(SPDK_LOG_NOTICE, __FILE__, __LINE__, __func__, __VA_ARGS__)</td></tr>
 <tr class="separator:a4dcd04f102bfd52627f41e43123bc916"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abe2c8e734e26212d5aa718ef8de9d7e1"><td class="memItemLeft" align="right" valign="top"><a id="abe2c8e734e26212d5aa718ef8de9d7e1"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_WARNLOG</b>(...)&#160;&#160;&#160;spdk_warnlog(NULL, 0, NULL, __VA_ARGS__)</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_WARNLOG</b>(...)&#160;&#160;&#160;spdk_log(SPDK_LOG_WARN, __FILE__, __LINE__, __func__, __VA_ARGS__)</td></tr>
 <tr class="separator:abe2c8e734e26212d5aa718ef8de9d7e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6b7bfeecff42b840ca5ebd25ffa84439"><td class="memItemLeft" align="right" valign="top"><a id="a6b7bfeecff42b840ca5ebd25ffa84439"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_ERRLOG</b>(...)&#160;&#160;&#160;spdk_errlog(__FILE__, __LINE__, __func__, __VA_ARGS__)</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_ERRLOG</b>(...)&#160;&#160;&#160;spdk_log(SPDK_LOG_ERROR, __FILE__, __LINE__, __func__, __VA_ARGS__)</td></tr>
 <tr class="separator:a6b7bfeecff42b840ca5ebd25ffa84439"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
@@ -129,24 +128,22 @@ Functions</h2></td></tr>
 enum spdk_log_level&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log_8h.html#af600090b2a4aa95b4e9e4dae27bf6c7e">spdk_log_get_level</a> (void)</td></tr>
 <tr class="memdesc:af600090b2a4aa95b4e9e4dae27bf6c7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current log threshold. <br /></td></tr>
 <tr class="separator:af600090b2a4aa95b4e9e4dae27bf6c7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab34f1c87d98113395ab04415dbee96d8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log_8h.html#ab34f1c87d98113395ab04415dbee96d8">spdk_log_set_print_level</a> (enum spdk_log_level level)</td></tr>
+<tr class="memdesc:ab34f1c87d98113395ab04415dbee96d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the current log level threshold for printing to stderr.  <a href="#ab34f1c87d98113395ab04415dbee96d8">More...</a><br /></td></tr>
+<tr class="separator:ab34f1c87d98113395ab04415dbee96d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a880b1e27d71328429dbf4f65e02ff145"><td class="memItemLeft" align="right" valign="top"><a id="a880b1e27d71328429dbf4f65e02ff145"></a>
+enum spdk_log_level&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log_8h.html#a880b1e27d71328429dbf4f65e02ff145">spdk_log_get_print_level</a> (void)</td></tr>
+<tr class="memdesc:a880b1e27d71328429dbf4f65e02ff145"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current log level print threshold. <br /></td></tr>
+<tr class="separator:a880b1e27d71328429dbf4f65e02ff145"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a721a3e5c1215cfe1e9ff657ea137cf69"><td class="memItemLeft" align="right" valign="top"><a id="a721a3e5c1215cfe1e9ff657ea137cf69"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_set_log_facility</b> (const char *facility)</td></tr>
 <tr class="separator:a721a3e5c1215cfe1e9ff657ea137cf69"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6be678b2600e8dd0bf5f1757414b4ef7"><td class="memItemLeft" align="right" valign="top"><a id="a6be678b2600e8dd0bf5f1757414b4ef7"></a>
 const char *&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_get_log_facility</b> (void)</td></tr>
 <tr class="separator:a6be678b2600e8dd0bf5f1757414b4ef7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9d73fb514a9e000979f55689e831d119"><td class="memItemLeft" align="right" valign="top"><a id="a9d73fb514a9e000979f55689e831d119"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_noticelog</b> (const char *file, const int line, const char *func, const char *format,...)</td></tr>
-<tr class="separator:a9d73fb514a9e000979f55689e831d119"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5f517e8031f65c1add99d80764da1bc9"><td class="memItemLeft" align="right" valign="top"><a id="a5f517e8031f65c1add99d80764da1bc9"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_warnlog</b> (const char *file, const int line, const char *func, const char *format,...)</td></tr>
-<tr class="separator:a5f517e8031f65c1add99d80764da1bc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab998ed7e4f3a58e48fc6029f31223554"><td class="memItemLeft" align="right" valign="top"><a id="ab998ed7e4f3a58e48fc6029f31223554"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_tracelog</b> (const char *flag, const char *file, const int line, const char *func, const char *format,...)</td></tr>
-<tr class="separator:ab998ed7e4f3a58e48fc6029f31223554"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeff207d8ac54d97972537a6f713e4a54"><td class="memItemLeft" align="right" valign="top"><a id="aeff207d8ac54d97972537a6f713e4a54"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_errlog</b> (const char *file, const int line, const char *func, const char *format,...)</td></tr>
-<tr class="separator:aeff207d8ac54d97972537a6f713e4a54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa20a1f56503b0d9f16c82b451fb338b"><td class="memItemLeft" align="right" valign="top"><a id="aaa20a1f56503b0d9f16c82b451fb338b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_log</b> (enum spdk_log_level level, const char *file, const int line, const char *func, const char *format,...)</td></tr>
+<tr class="separator:aaa20a1f56503b0d9f16c82b451fb338b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abe2e79b43c1f8b980f356fca0b391902"><td class="memItemLeft" align="right" valign="top"><a id="abe2e79b43c1f8b980f356fca0b391902"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_trace_dump</b> (const char *label, const uint8_t *buf, size_t len)</td></tr>
 <tr class="separator:abe2e79b43c1f8b980f356fca0b391902"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -162,12 +159,6 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_log_clear_trace_f
 <tr class="memitem:a4a47d01813ce878b34c146b32f106616"><td class="memItemLeft" align="right" valign="top"><a id="a4a47d01813ce878b34c146b32f106616"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_tracelog_usage</b> (FILE *f, const char *trace_arg)</td></tr>
 <tr class="separator:a4a47d01813ce878b34c146b32f106616"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
-Variables</h2></td></tr>
-<tr class="memitem:aae37846a4cd10228a495c07b1390a8ad"><td class="memItemLeft" align="right" valign="top"><a id="aae37846a4cd10228a495c07b1390a8ad"></a>
-unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_g_notice_stderr_flag</b></td></tr>
-<tr class="separator:aae37846a4cd10228a495c07b1390a8ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Logging interfaces. </p>
@@ -232,6 +223,27 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_g_notice
 
 <p>Set the threshold to log messages. </p>
 <p>Messages with a higher level than this are ignored. </p>
+
+</div>
+</div>
+<a id="ab34f1c87d98113395ab04415dbee96d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab34f1c87d98113395ab04415dbee96d8">&#9670;&nbsp;</a></span>spdk_log_set_print_level()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_log_set_print_level </td>
+          <td>(</td>
+          <td class="paramtype">enum spdk_log_level&#160;</td>
+          <td class="paramname"><em>level</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the current log level threshold for printing to stderr. </p>
+<p>Messages with a level less than or equal to this level are also printed to stderr. </p>
 
 </div>
 </div>

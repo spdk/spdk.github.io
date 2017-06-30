@@ -95,9 +95,6 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:a50ed00941cdee3b293ba494ea30f1ea5"><td class="memItemLeft" align="right" valign="top"><a id="a50ed00941cdee3b293ba494ea30f1ea5"></a>
-uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>type</b></td></tr>
-<tr class="separator:a50ed00941cdee3b293ba494ea30f1ea5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afc9a5efc76a958e8d228fb6316e4eccb"><td class="memItemLeft" align="right" valign="top"><a id="afc9a5efc76a958e8d228fb6316e4eccb"></a>
 uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>status</b></td></tr>
 <tr class="separator:afc9a5efc76a958e8d228fb6316e4eccb"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -119,9 +116,12 @@ struct spdk_scsi_port *&#160;</td><td class="memItemRight" valign="bottom"><b>ta
 <tr class="memitem:a916eecadaca43b7cc5a824199b628f52"><td class="memItemLeft" align="right" valign="top"><a id="a916eecadaca43b7cc5a824199b628f52"></a>
 struct spdk_scsi_port *&#160;</td><td class="memItemRight" valign="bottom"><b>initiator_port</b></td></tr>
 <tr class="separator:a916eecadaca43b7cc5a824199b628f52"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a592201504896016b9c9ea36dd056f340"><td class="memItemLeft" align="right" valign="top"><a id="a592201504896016b9c9ea36dd056f340"></a>
-struct spdk_event *&#160;</td><td class="memItemRight" valign="bottom"><b>cb_event</b></td></tr>
-<tr class="separator:a592201504896016b9c9ea36dd056f340"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa26345de5d75d6850560cc6c1bbc5fe"><td class="memItemLeft" align="right" valign="top"><a id="afa26345de5d75d6850560cc6c1bbc5fe"></a>
+spdk_scsi_task_cpl&#160;</td><td class="memItemRight" valign="bottom"><b>cpl_fn</b></td></tr>
+<tr class="separator:afa26345de5d75d6850560cc6c1bbc5fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f75af1e2bc0373d9c8eb23d1cc89bec"><td class="memItemLeft" align="right" valign="top"><a id="a6f75af1e2bc0373d9c8eb23d1cc89bec"></a>
+spdk_scsi_task_free&#160;</td><td class="memItemRight" valign="bottom"><b>free_fn</b></td></tr>
+<tr class="separator:a6f75af1e2bc0373d9c8eb23d1cc89bec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a355593ecb799474a678aacecf4878d31"><td class="memItemLeft" align="right" valign="top"><a id="a355593ecb799474a678aacecf4878d31"></a>
 uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>ref</b></td></tr>
 <tr class="separator:a355593ecb799474a678aacecf4878d31"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -143,9 +143,6 @@ uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>offset</b></td></
 <tr class="memitem:a76843addd8f53d82992030285ca4d8f8"><td class="memItemLeft" align="right" valign="top"><a id="a76843addd8f53d82992030285ca4d8f8"></a>
 struct <a class="el" href="structspdk__scsi__task.html">spdk_scsi_task</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>parent</b></td></tr>
 <tr class="separator:a76843addd8f53d82992030285ca4d8f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a103d25a591025a7197f26e7dbcb5b811"><td class="memItemLeft" align="right" valign="top"><a id="a103d25a591025a7197f26e7dbcb5b811"></a>
-void(*&#160;</td><td class="memItemRight" valign="bottom"><b>free_fn</b> )(struct <a class="el" href="structspdk__scsi__task.html">spdk_scsi_task</a> *)</td></tr>
-<tr class="separator:a103d25a591025a7197f26e7dbcb5b811"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a961329926b7efacff65989b4fed4b617"><td class="memItemLeft" align="right" valign="top"><a id="a961329926b7efacff65989b4fed4b617"></a>
 uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><b>cdb</b></td></tr>
 <tr class="separator:a961329926b7efacff65989b4fed4b617"><td class="memSeparator" colspan="2">&#160;</td></tr>

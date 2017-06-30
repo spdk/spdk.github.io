@@ -161,6 +161,12 @@ Functions</h2></td></tr>
 <tr class="memitem:ab2afed1cce9d9334dfd127db416ada4c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#ab2afed1cce9d9334dfd127db416ada4c">spdk_nvme_transport_id_parse_trtype</a> (enum <a class="el" href="nvme_8h.html#ae87a03c28984a2c0499d50ef5e9d0ece">spdk_nvme_transport_type</a> *trtype, const char *str)</td></tr>
 <tr class="memdesc:ab2afed1cce9d9334dfd127db416ada4c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parse the string representation of a transport ID tranport type.  <a href="#ab2afed1cce9d9334dfd127db416ada4c">More...</a><br /></td></tr>
 <tr class="separator:ab2afed1cce9d9334dfd127db416ada4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3a982eb5b757eae63fbc9305627090b"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#aa3a982eb5b757eae63fbc9305627090b">spdk_nvme_transport_id_trtype_str</a> (enum <a class="el" href="nvme_8h.html#ae87a03c28984a2c0499d50ef5e9d0ece">spdk_nvme_transport_type</a> trtype)</td></tr>
+<tr class="memdesc:aa3a982eb5b757eae63fbc9305627090b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Look up the string representation of a transport ID transport type.  <a href="#aa3a982eb5b757eae63fbc9305627090b">More...</a><br /></td></tr>
+<tr class="separator:aa3a982eb5b757eae63fbc9305627090b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb95c5452e84e2c5c1984341fc816ea7"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#afb95c5452e84e2c5c1984341fc816ea7">spdk_nvme_transport_id_adrfam_str</a> (enum <a class="el" href="nvmf__spec_8h.html#a08f0090d242e2607ab11f148dcd797c6">spdk_nvmf_adrfam</a> adrfam)</td></tr>
+<tr class="memdesc:afb95c5452e84e2c5c1984341fc816ea7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Look up the string representation of a transport ID address family.  <a href="#afb95c5452e84e2c5c1984341fc816ea7">More...</a><br /></td></tr>
+<tr class="separator:afb95c5452e84e2c5c1984341fc816ea7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af7868a6f646a6d1bd70d5c1b8ce5757f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#af7868a6f646a6d1bd70d5c1b8ce5757f">spdk_nvme_transport_id_parse_adrfam</a> (enum <a class="el" href="nvmf__spec_8h.html#a08f0090d242e2607ab11f148dcd797c6">spdk_nvmf_adrfam</a> *adrfam, const char *str)</td></tr>
 <tr class="memdesc:af7868a6f646a6d1bd70d5c1b8ce5757f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parse the string representation of a tranport ID address family.  <a href="#af7868a6f646a6d1bd70d5c1b8ce5757f">More...</a><br /></td></tr>
 <tr class="separator:af7868a6f646a6d1bd70d5c1b8ce5757f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -2964,6 +2970,33 @@ int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_retry_co
 
 </div>
 </div>
+<a id="afb95c5452e84e2c5c1984341fc816ea7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb95c5452e84e2c5c1984341fc816ea7">&#9670;&nbsp;</a></span>spdk_nvme_transport_id_adrfam_str()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* spdk_nvme_transport_id_adrfam_str </td>
+          <td>(</td>
+          <td class="paramtype">enum <a class="el" href="nvmf__spec_8h.html#a08f0090d242e2607ab11f148dcd797c6">spdk_nvmf_adrfam</a>&#160;</td>
+          <td class="paramname"><em>adrfam</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Look up the string representation of a transport ID address family. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">adrfam</td><td>Address family to convert. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Static string constant describing adrfam, or NULL if adrmfam not found. </dd></dl>
+
+</div>
+</div>
 <a id="a9878deb91f677a9a9583342f07dcef41"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9878deb91f677a9a9583342f07dcef41">&#9670;&nbsp;</a></span>spdk_nvme_transport_id_compare()</h2>
 
@@ -3131,6 +3164,33 @@ int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_retry_co
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 if parsing was successful and trtype is filled out, or negated errno values on failure. </dd></dl>
+
+</div>
+</div>
+<a id="aa3a982eb5b757eae63fbc9305627090b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa3a982eb5b757eae63fbc9305627090b">&#9670;&nbsp;</a></span>spdk_nvme_transport_id_trtype_str()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* spdk_nvme_transport_id_trtype_str </td>
+          <td>(</td>
+          <td class="paramtype">enum <a class="el" href="nvme_8h.html#ae87a03c28984a2c0499d50ef5e9d0ece">spdk_nvme_transport_type</a>&#160;</td>
+          <td class="paramname"><em>trtype</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Look up the string representation of a transport ID transport type. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">trtype</td><td>Transport type to convert. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Static string constant describing trtype, or NULL if trtype not found. </dd></dl>
 
 </div>
 </div>

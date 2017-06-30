@@ -79,6 +79,7 @@
   <div class="summary">
 <a href="#nested-classes">Data Structures</a> &#124;
 <a href="#define-members">Macros</a> &#124;
+<a href="#typedef-members">Typedefs</a> &#124;
 <a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
@@ -130,6 +131,15 @@ Macros</h2></td></tr>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_SCSI_LUN_MAX_NAME_LENGTH</b>&#160;&#160;&#160;16</td></tr>
 <tr class="separator:a8163afb0c2a1176fdf63852000b888f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:a6c7f236447411d51180d5851c746226e"><td class="memItemLeft" align="right" valign="top"><a id="a6c7f236447411d51180d5851c746226e"></a>
+typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_scsi_task_cpl</b>) (struct <a class="el" href="structspdk__scsi__task.html">spdk_scsi_task</a> *task)</td></tr>
+<tr class="separator:a6c7f236447411d51180d5851c746226e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7856634e87e00a42fed826302cdfafa0"><td class="memItemLeft" align="right" valign="top"><a id="a7856634e87e00a42fed826302cdfafa0"></a>
+typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_scsi_task_free</b>) (struct <a class="el" href="structspdk__scsi__task.html">spdk_scsi_task</a> *task)</td></tr>
+<tr class="separator:a7856634e87e00a42fed826302cdfafa0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
 <tr class="memitem:ad8c6f561cb327d26f0e73a3d3c4512f5"><td class="memItemLeft" align="right" valign="top"><a id="ad8c6f561cb327d26f0e73a3d3c4512f5"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>spdk_scsi_data_dir</b> { <b>SPDK_SCSI_DIR_NONE</b> = 0, 
@@ -143,10 +153,6 @@ Enumerations</h2></td></tr>
 <b>SPDK_SCSI_TASK_FUNC_LUN_RESET</b>
  }</td></tr>
 <tr class="separator:aec3a195e1d7cb115da1d09833983db5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3b86d312d8c91eff0730aeaa2d41555f"><td class="memItemLeft" align="right" valign="top"><a id="a3b86d312d8c91eff0730aeaa2d41555f"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>spdk_scsi_task_type</b> { <b>SPDK_SCSI_TASK_TYPE_CMD</b> = 0, 
-<b>SPDK_SCSI_TASK_TYPE_MANAGE</b>
- }</td></tr>
-<tr class="separator:a3b86d312d8c91eff0730aeaa2d41555f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5c7f47e943239407061a2b5bc7f804b3"><td class="memItemLeft" align="right" valign="top"><a id="a5c7f47e943239407061a2b5bc7f804b3"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>spdk_scsi_task_mgmt_resp</b> { <br />
 &#160;&#160;<b>SPDK_SCSI_TASK_MGMT_RESP_COMPLETE</b>, 
 <b>SPDK_SCSI_TASK_MGMT_RESP_SUCCESS</b>, 
@@ -161,18 +167,21 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a9eabd89866a3ff52b953a481eae19156"><td class="memItemLeft" align="right" valign="top"><a id="a9eabd89866a3ff52b953a481eae19156"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_scsi_subsystem_init</b> (void)</td></tr>
-<tr class="separator:a9eabd89866a3ff52b953a481eae19156"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4ec179a0d30d3ee3c8061fb1b635756e"><td class="memItemLeft" align="right" valign="top"><a id="a4ec179a0d30d3ee3c8061fb1b635756e"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_scsi_subsystem_fini</b> (void)</td></tr>
-<tr class="separator:a4ec179a0d30d3ee3c8061fb1b635756e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af52237ab22ab5e1181b17be38f66fa7f"><td class="memItemLeft" align="right" valign="top"><a id="af52237ab22ab5e1181b17be38f66fa7f"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_scsi_init</b> (void)</td></tr>
+<tr class="separator:af52237ab22ab5e1181b17be38f66fa7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88507b777b62e2000bce672a624b6039"><td class="memItemLeft" align="right" valign="top"><a id="a88507b777b62e2000bce672a624b6039"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_scsi_fini</b> (void)</td></tr>
+<tr class="separator:a88507b777b62e2000bce672a624b6039"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af5ed1a133f6f137402c0eb7742077f17"><td class="memItemLeft" align="right" valign="top"><a id="af5ed1a133f6f137402c0eb7742077f17"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_scsi_lun_get_id</b> (const struct spdk_scsi_lun *lun)</td></tr>
 <tr class="separator:af5ed1a133f6f137402c0eb7742077f17"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6f187c3c7c7e26d4045061446a6597bd"><td class="memItemLeft" align="right" valign="top"><a id="a6f187c3c7c7e26d4045061446a6597bd"></a>
 const char *&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_scsi_lun_get_name</b> (const struct spdk_scsi_lun *lun)</td></tr>
 <tr class="separator:a6f187c3c7c7e26d4045061446a6597bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa87d45ae3bcf47ffa2db2ff3cf51ae21"><td class="memItemLeft" align="right" valign="top"><a id="aa87d45ae3bcf47ffa2db2ff3cf51ae21"></a>
+const struct spdk_scsi_dev *&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_scsi_lun_get_dev</b> (const struct spdk_scsi_lun *lun)</td></tr>
+<tr class="separator:aa87d45ae3bcf47ffa2db2ff3cf51ae21"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6e92c13ec584430c7fb2ace1f84d4022"><td class="memItemLeft" align="right" valign="top"><a id="a6e92c13ec584430c7fb2ace1f84d4022"></a>
 const char *&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_scsi_dev_get_name</b> (const struct spdk_scsi_dev *dev)</td></tr>
 <tr class="separator:a6e92c13ec584430c7fb2ace1f84d4022"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -209,9 +218,9 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_scsi_dev_allocate
 <tr class="memitem:a09579688597a2ab594671a00b20fd2cd"><td class="memItemLeft" align="right" valign="top"><a id="a09579688597a2ab594671a00b20fd2cd"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_scsi_dev_free_io_channels</b> (struct spdk_scsi_dev *dev)</td></tr>
 <tr class="separator:a09579688597a2ab594671a00b20fd2cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa10d7ac3a5c5a0898677361890c42c73"><td class="memItemLeft" align="right" valign="top">struct spdk_scsi_dev *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="scsi_8h.html#aa10d7ac3a5c5a0898677361890c42c73">spdk_scsi_dev_construct</a> (const char *name, char *lun_name_list[], int *lun_id_list, int num_luns, uint8_t protocol_id)</td></tr>
-<tr class="memdesc:aa10d7ac3a5c5a0898677361890c42c73"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a SCSI device object using the given parameters.  <a href="#aa10d7ac3a5c5a0898677361890c42c73">More...</a><br /></td></tr>
-<tr class="separator:aa10d7ac3a5c5a0898677361890c42c73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a023a0849997c21508fe1285b003e2a52"><td class="memItemLeft" align="right" valign="top">struct spdk_scsi_dev *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="scsi_8h.html#a023a0849997c21508fe1285b003e2a52">spdk_scsi_dev_construct</a> (const char *name, char *lun_name_list[], int *lun_id_list, int num_luns, uint8_t protocol_id, void(*hotremove_cb)(const struct spdk_scsi_lun *, void *), void *hotremove_ctx)</td></tr>
+<tr class="memdesc:a023a0849997c21508fe1285b003e2a52"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a SCSI device object using the given parameters.  <a href="#a023a0849997c21508fe1285b003e2a52">More...</a><br /></td></tr>
+<tr class="separator:a023a0849997c21508fe1285b003e2a52"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abbacc6adf74a9790630dedda8b97940e"><td class="memItemLeft" align="right" valign="top"><a id="abbacc6adf74a9790630dedda8b97940e"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_scsi_dev_delete_lun</b> (struct spdk_scsi_dev *dev, struct spdk_scsi_lun *lun)</td></tr>
 <tr class="separator:abbacc6adf74a9790630dedda8b97940e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -224,9 +233,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_scsi_port_free</
 <tr class="memitem:ae44f357c4cfc7d60c8fce30c39c637b6"><td class="memItemLeft" align="right" valign="top"><a id="ae44f357c4cfc7d60c8fce30c39c637b6"></a>
 const char *&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_scsi_port_get_name</b> (const struct spdk_scsi_port *port)</td></tr>
 <tr class="separator:ae44f357c4cfc7d60c8fce30c39c637b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6e498d7fb2c06a5e4b81fc50ff67f466"><td class="memItemLeft" align="right" valign="top"><a id="a6e498d7fb2c06a5e4b81fc50ff67f466"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_scsi_task_construct</b> (struct <a class="el" href="structspdk__scsi__task.html">spdk_scsi_task</a> *task, void(*free_fn)(struct <a class="el" href="structspdk__scsi__task.html">spdk_scsi_task</a> *task), struct <a class="el" href="structspdk__scsi__task.html">spdk_scsi_task</a> *parent)</td></tr>
-<tr class="separator:a6e498d7fb2c06a5e4b81fc50ff67f466"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6fda4f47e381983502f3619cc2642822"><td class="memItemLeft" align="right" valign="top"><a id="a6fda4f47e381983502f3619cc2642822"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_scsi_task_construct</b> (struct <a class="el" href="structspdk__scsi__task.html">spdk_scsi_task</a> *task, spdk_scsi_task_cpl cpl_fn, spdk_scsi_task_free free_fn, struct <a class="el" href="structspdk__scsi__task.html">spdk_scsi_task</a> *parent)</td></tr>
+<tr class="separator:a6fda4f47e381983502f3619cc2642822"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab0fc6066d5a615661c85be595a276ed9"><td class="memItemLeft" align="right" valign="top"><a id="ab0fc6066d5a615661c85be595a276ed9"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_scsi_task_put</b> (struct <a class="el" href="structspdk__scsi__task.html">spdk_scsi_task</a> *task)</td></tr>
 <tr class="separator:ab0fc6066d5a615661c85be595a276ed9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -261,8 +270,8 @@ static struct <a class="el" href="structspdk__scsi__task.html">spdk_scsi_task</a
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>SCSI to blockdev translation layer. </p>
 </div><h2 class="groupheader">Function Documentation</h2>
-<a id="aa10d7ac3a5c5a0898677361890c42c73"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa10d7ac3a5c5a0898677361890c42c73">&#9670;&nbsp;</a></span>spdk_scsi_dev_construct()</h2>
+<a id="a023a0849997c21508fe1285b003e2a52"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a023a0849997c21508fe1285b003e2a52">&#9670;&nbsp;</a></span>spdk_scsi_dev_construct()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -295,7 +304,19 @@ static struct <a class="el" href="structspdk__scsi__task.html">spdk_scsi_task</a
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>protocol_id</em>&#160;</td>
+          <td class="paramname"><em>protocol_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void(*)(const struct spdk_scsi_lun *, void *)&#160;</td>
+          <td class="paramname"><em>hotremove_cb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>hotremove_ctx</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -313,6 +334,8 @@ static struct <a class="el" href="structspdk__scsi__task.html">spdk_scsi_task</a
     <tr><td class="paramname">lun_list</td><td>List of LUN objects for the SCSI device. Caller is responsible for managing the memory containing this list. </td></tr>
     <tr><td class="paramname">lun_id_list</td><td>List of LUN IDs for the LUN in this SCSI device. Caller is responsible for managing the memory containing this list. lun_id_list[x] is the LUN ID for lun_list[x]. </td></tr>
     <tr><td class="paramname">num_luns</td><td>Number of entries in lun_list and lun_id_list. </td></tr>
+    <tr><td class="paramname">hotremove_cb</td><td>Callback to lun hotremoval. Will be called once hotremove is first triggered. </td></tr>
+    <tr><td class="paramname">hotremove_ctx</td><td>Additional argument to hotremove_cb </td></tr>
   </table>
   </dd>
 </dl>
