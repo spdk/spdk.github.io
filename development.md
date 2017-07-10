@@ -15,6 +15,8 @@ SPDK's source code is hosted by [GitHub](https://github.com/spdk/spdk) and code 
 git clone https://github.com/spdk/spdk
 ~~~
 
+The [README.md](https://github.com/spdk/spdk/blob/master/README.md) in the repo includes directions for cloning the repo, installing the pre-requisites, building, running the unit tests, etc. These directions provide details on how to use our review and continuous integration system to contribute code.
+
 # Contributing
 
 Everyone is welcome to contribute! Design pre-work and general discussion occurs on the mailing list and anyone is welcome to chime in on any discussion. Patch submission is done through GerritHub, which is outlined below. Decisions on whether to merge patches will be handled by the maintainers:
