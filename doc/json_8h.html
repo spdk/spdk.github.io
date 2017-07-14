@@ -224,6 +224,12 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_json_write_string
 <tr class="memitem:a6be580d5ea07bb5a5456857971c4ef84"><td class="memItemLeft" align="right" valign="top"><a id="a6be580d5ea07bb5a5456857971c4ef84"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_json_write_string_raw</b> (struct spdk_json_write_ctx *w, const char *val, size_t len)</td></tr>
 <tr class="separator:a6be580d5ea07bb5a5456857971c4ef84"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f0f7b255a750c26d300957894c0a093"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="json_8h.html#a6f0f7b255a750c26d300957894c0a093">spdk_json_write_string_utf16le</a> (struct spdk_json_write_ctx *w, const uint16_t *val)</td></tr>
+<tr class="memdesc:a6f0f7b255a750c26d300957894c0a093"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write null-terminated UTF-16LE string.  <a href="#a6f0f7b255a750c26d300957894c0a093">More...</a><br /></td></tr>
+<tr class="separator:a6f0f7b255a750c26d300957894c0a093"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d5f6be0455ec859148b046d9d13ad03"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="json_8h.html#a1d5f6be0455ec859148b046d9d13ad03">spdk_json_write_string_utf16le_raw</a> (struct spdk_json_write_ctx *w, const uint16_t *val, size_t len)</td></tr>
+<tr class="memdesc:a1d5f6be0455ec859148b046d9d13ad03"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write UTF-16LE string.  <a href="#a1d5f6be0455ec859148b046d9d13ad03">More...</a><br /></td></tr>
+<tr class="separator:a1d5f6be0455ec859148b046d9d13ad03"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa38e53dfa61213b568f66aa25de29385"><td class="memItemLeft" align="right" valign="top"><a id="aa38e53dfa61213b568f66aa25de29385"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_json_write_string_fmt</b> (struct spdk_json_write_ctx *w, const char *fmt,...)</td></tr>
 <tr class="separator:aa38e53dfa61213b568f66aa25de29385"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -346,6 +352,89 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_json_write_val_ra
 <p>This can be used to skip over a value while interpreting parse results.</p>
 <p>For SPDK_JSON_VAL_ARRAY_BEGIN and SPDK_JSON_VAL_OBJECT_BEGIN, this returns the number of values contained within this value, plus the _BEGIN and _END values.</p>
 <p>For all other values, this returns 1. </p>
+
+</div>
+</div>
+<a id="a6f0f7b255a750c26d300957894c0a093"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f0f7b255a750c26d300957894c0a093">&#9670;&nbsp;</a></span>spdk_json_write_string_utf16le()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_json_write_string_utf16le </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_json_write_ctx *&#160;</td>
+          <td class="paramname"><em>w</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint16_t *&#160;</td>
+          <td class="paramname"><em>val</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Write null-terminated UTF-16LE string. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">w</td><td>JSON write context. </td></tr>
+    <tr><td class="paramname">val</td><td>UTF-16LE string; must be null terminated. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success or negative on failure. </dd></dl>
+
+</div>
+</div>
+<a id="a1d5f6be0455ec859148b046d9d13ad03"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d5f6be0455ec859148b046d9d13ad03">&#9670;&nbsp;</a></span>spdk_json_write_string_utf16le_raw()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_json_write_string_utf16le_raw </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_json_write_ctx *&#160;</td>
+          <td class="paramname"><em>w</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint16_t *&#160;</td>
+          <td class="paramname"><em>val</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Write UTF-16LE string. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">w</td><td>JSON write context. </td></tr>
+    <tr><td class="paramname">val</td><td>UTF-16LE string; may contain embedded null characters. </td></tr>
+    <tr><td class="paramname">len</td><td>Length of val in 16-bit code units (i.e. size of string in bytes divided by 2). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success or negative on failure. </dd></dl>
 
 </div>
 </div>

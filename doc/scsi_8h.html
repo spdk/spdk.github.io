@@ -87,7 +87,7 @@
 </div><!--header-->
 <div class="contents">
 
-<p>SCSI to blockdev translation layer.  
+<p>SCSI to bdev translation layer.  
 <a href="#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
@@ -188,12 +188,12 @@ const char *&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_scsi_dev
 <tr class="memitem:aa53c0ae5af6584eb19cfcc75799dfce8"><td class="memItemLeft" align="right" valign="top"><a id="aa53c0ae5af6584eb19cfcc75799dfce8"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_scsi_dev_get_id</b> (const struct spdk_scsi_dev *dev)</td></tr>
 <tr class="separator:aa53c0ae5af6584eb19cfcc75799dfce8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a80c49b31b4a6e7c397a01f997e10e3a2"><td class="memItemLeft" align="right" valign="top"><a id="a80c49b31b4a6e7c397a01f997e10e3a2"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_scsi_dev_get_max_lun</b> (const struct spdk_scsi_dev *dev)</td></tr>
-<tr class="separator:a80c49b31b4a6e7c397a01f997e10e3a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab5c7ed714025d329dc2a69fad041158f"><td class="memItemLeft" align="right" valign="top"><a id="ab5c7ed714025d329dc2a69fad041158f"></a>
 struct spdk_scsi_lun *&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_scsi_dev_get_lun</b> (struct spdk_scsi_dev *dev, int lun_id)</td></tr>
 <tr class="separator:ab5c7ed714025d329dc2a69fad041158f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5438b53e8e2b7efdfcf8af756e23320b"><td class="memItemLeft" align="right" valign="top"><a id="a5438b53e8e2b7efdfcf8af756e23320b"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_scsi_dev_has_pending_tasks</b> (const struct spdk_scsi_dev *dev)</td></tr>
+<tr class="separator:a5438b53e8e2b7efdfcf8af756e23320b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1422193a59bf618ebd6c5415af1cc2be"><td class="memItemLeft" align="right" valign="top"><a id="a1422193a59bf618ebd6c5415af1cc2be"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_scsi_dev_destruct</b> (struct spdk_scsi_dev *dev)</td></tr>
 <tr class="separator:a1422193a59bf618ebd6c5415af1cc2be"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -268,7 +268,7 @@ static struct <a class="el" href="structspdk__scsi__task.html">spdk_scsi_task</a
 <tr class="separator:a9bc28a98632250a91738503fc43b3e37"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>SCSI to blockdev translation layer. </p>
+<div class="textblock"><p>SCSI to bdev translation layer. </p>
 </div><h2 class="groupheader">Function Documentation</h2>
 <a id="a023a0849997c21508fe1285b003e2a52"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a023a0849997c21508fe1285b003e2a52">&#9670;&nbsp;</a></span>spdk_scsi_dev_construct()</h2>

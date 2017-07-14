@@ -132,15 +132,18 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_vhost_scsi_dev_ad
 <tr class="memitem:ab1dad26bf42deaaa7629967dd5dc3ace"><td class="memItemLeft" align="right" valign="top"><a id="ab1dad26bf42deaaa7629967dd5dc3ace"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_vhost_scsi_dev_remove_dev</b> (struct spdk_vhost_dev *vdev, unsigned scsi_dev_num)</td></tr>
 <tr class="separator:ab1dad26bf42deaaa7629967dd5dc3ace"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a70c991dfc33a9f7c1329a96d6720b3d6"><td class="memItemLeft" align="right" valign="top"><a id="a70c991dfc33a9f7c1329a96d6720b3d6"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_vhost_blk_construct</b> (const char *name, uint64_t cpumask, const char *dev_name)</td></tr>
-<tr class="separator:a70c991dfc33a9f7c1329a96d6720b3d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d5a4beec062e8b8ea7decbefc93355a"><td class="memItemLeft" align="right" valign="top"><a id="a0d5a4beec062e8b8ea7decbefc93355a"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_vhost_blk_construct</b> (const char *name, uint64_t cpumask, const char *dev_name, bool readonly)</td></tr>
+<tr class="separator:a0d5a4beec062e8b8ea7decbefc93355a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a22fb61cd32b772e6dc02bf853ff48e30"><td class="memItemLeft" align="right" valign="top"><a id="a22fb61cd32b772e6dc02bf853ff48e30"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_vhost_blk_destroy</b> (struct spdk_vhost_dev *dev)</td></tr>
 <tr class="separator:a22fb61cd32b772e6dc02bf853ff48e30"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a549f9903be61ca447578b8bacf9eea81"><td class="memItemLeft" align="right" valign="top"><a id="a549f9903be61ca447578b8bacf9eea81"></a>
 struct spdk_bdev *&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_vhost_blk_get_dev</b> (struct spdk_vhost_dev *ctrlr)</td></tr>
 <tr class="separator:a549f9903be61ca447578b8bacf9eea81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3488dc6043c6195990982ecfe07b10c5"><td class="memItemLeft" align="right" valign="top"><a id="a3488dc6043c6195990982ecfe07b10c5"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_vhost_blk_get_readonly</b> (struct spdk_vhost_dev *vdev)</td></tr>
+<tr class="separator:a3488dc6043c6195990982ecfe07b10c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>SPDK vhost. </p>
