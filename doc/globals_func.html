@@ -111,11 +111,20 @@
 <li>spdk_app_stop()
 : <a class="el" href="event_8h.html#a40f3af1c0340f5c3eb915bc43e3cee83">event.h</a>
 </li>
-<li>spdk_bdev_claim()
-: <a class="el" href="bdev_8h.html#af5600670a9cb061bb5bd9ed4d8dd7046">bdev.h</a>
+<li>spdk_bdev_close()
+: <a class="el" href="bdev_8h.html#aaf5fc830851a2eb0aa34bbb40cf5eac6">bdev.h</a>
+</li>
+<li>spdk_bdev_desc_get_bdev()
+: <a class="el" href="bdev_8h.html#ac6418cfa0e9076ef7dafa7753c4c2028">bdev.h</a>
+</li>
+<li>spdk_bdev_first()
+: <a class="el" href="bdev_8h.html#a578b0a9d444ddbb23c8181d9a5ea4f46">bdev.h</a>
+</li>
+<li>spdk_bdev_first_leaf()
+: <a class="el" href="bdev_8h.html#a717d20a033b87c5de88892c78ae55f4c">bdev.h</a>
 </li>
 <li>spdk_bdev_flush()
-: <a class="el" href="bdev_8h.html#a79093fc354725f29207cd9038ac4144a">bdev.h</a>
+: <a class="el" href="bdev_8h.html#a7105b63cc84037543d9472ab33c8be93">bdev.h</a>
 </li>
 <li>spdk_bdev_free_io()
 : <a class="el" href="bdev_8h.html#a536a365e14bc4f3ddf76b9340958ebd8">bdev.h</a>
@@ -127,7 +136,7 @@
 : <a class="el" href="bdev_8h.html#ab4d238484b372a77ba130fbb70f83519">bdev.h</a>
 </li>
 <li>spdk_bdev_get_io_channel()
-: <a class="el" href="bdev_8h.html#a1b4015ff9aba44261f3b36cde064963a">bdev.h</a>
+: <a class="el" href="bdev_8h.html#ab5bb9e746b030d7c4c89cbcf60076c7e">bdev.h</a>
 </li>
 <li>spdk_bdev_get_io_stat()
 : <a class="el" href="bdev_8h.html#ab1ba28ba382edd1d792d51a054eb3aa2">bdev.h</a>
@@ -157,31 +166,31 @@
 : <a class="el" href="bdev_8h.html#ac3c213b4317d5077197950253af1ac50">bdev.h</a>
 </li>
 <li>spdk_bdev_nvme_admin_passthru()
-: <a class="el" href="bdev_8h.html#af0ff477709a4931e98b10c2f39d2d9fc">bdev.h</a>
+: <a class="el" href="bdev_8h.html#ae2249ef71e7125338b6cebf935a881ab">bdev.h</a>
 </li>
 <li>spdk_bdev_nvme_io_passthru()
-: <a class="el" href="bdev_8h.html#a6073d0f21b837b1afc22859c1d067d77">bdev.h</a>
+: <a class="el" href="bdev_8h.html#ab172cf6afc9ef154bd823b91b09dee87">bdev.h</a>
+</li>
+<li>spdk_bdev_open()
+: <a class="el" href="bdev_8h.html#aeacdfd5debd3917d84d18be0277203ff">bdev.h</a>
 </li>
 <li>spdk_bdev_read()
-: <a class="el" href="bdev_8h.html#a17931abec6a7169432d56b3b72ce604f">bdev.h</a>
+: <a class="el" href="bdev_8h.html#a4b500ce84df1d2551f76e635c9dafbd5">bdev.h</a>
 </li>
 <li>spdk_bdev_readv()
-: <a class="el" href="bdev_8h.html#a39cf118897336906dfd286b3c91295ce">bdev.h</a>
+: <a class="el" href="bdev_8h.html#a9ac9efa882e87909acfd4bccaddb1778">bdev.h</a>
 </li>
 <li>spdk_bdev_reset()
-: <a class="el" href="bdev_8h.html#a08b7c843568980d0f2e2245ee296ee4a">bdev.h</a>
-</li>
-<li>spdk_bdev_unclaim()
-: <a class="el" href="bdev_8h.html#ae080366bf0d3b59d0bb05f2b3e698dea">bdev.h</a>
+: <a class="el" href="bdev_8h.html#aca574d3e94be6150343823dd2e7ecf46">bdev.h</a>
 </li>
 <li>spdk_bdev_unmap()
-: <a class="el" href="bdev_8h.html#a1ae20739bcbd84bde357e89d96b5e5e7">bdev.h</a>
+: <a class="el" href="bdev_8h.html#a33310717ae576ca9a24b790d6c70a9df">bdev.h</a>
 </li>
 <li>spdk_bdev_write()
-: <a class="el" href="bdev_8h.html#a9dd2e65f126665954c23eff4477d4557">bdev.h</a>
+: <a class="el" href="bdev_8h.html#aa740a114ef34d6a2f126d4e3a9dd9e9b">bdev.h</a>
 </li>
 <li>spdk_bdev_writev()
-: <a class="el" href="bdev_8h.html#a22f12f278859dc4e0c6cdec33f9dcb24">bdev.h</a>
+: <a class="el" href="bdev_8h.html#a9a508a1c301a1321faf0680a8f31f59a">bdev.h</a>
 </li>
 <li>spdk_bit_array_capacity()
 : <a class="el" href="bit__array_8h.html#a050b7786c57f20a245db5510691f3f23">bit_array.h</a>
@@ -323,6 +332,21 @@
 </li>
 <li>spdk_json_val_len()
 : <a class="el" href="json_8h.html#a4d5aa0b66aa2cb7af428a03249b55c20">json.h</a>
+</li>
+<li>spdk_json_write_string_utf16le()
+: <a class="el" href="json_8h.html#a6f0f7b255a750c26d300957894c0a093">json.h</a>
+</li>
+<li>spdk_json_write_string_utf16le_raw()
+: <a class="el" href="json_8h.html#a1d5f6be0455ec859148b046d9d13ad03">json.h</a>
+</li>
+<li>spdk_jsonrpc_begin_result()
+: <a class="el" href="jsonrpc_8h.html#a22757fb7d0f34984e29b3fe311dfed01">jsonrpc.h</a>
+</li>
+<li>spdk_jsonrpc_end_result()
+: <a class="el" href="jsonrpc_8h.html#af3d607f5a980bf9eb793ef2b553f679a">jsonrpc.h</a>
+</li>
+<li>spdk_jsonrpc_send_error_response()
+: <a class="el" href="jsonrpc_8h.html#a506661cfdfda6f549c69a6f4a988a026">jsonrpc.h</a>
 </li>
 <li>spdk_log_close()
 : <a class="el" href="log_8h.html#a41cdc17423a58c475fa785fd491f00e9">log.h</a>
@@ -466,10 +490,19 @@
 : <a class="el" href="nvme_8h.html#ae13ccd2ea831842a5008eb95a32545c3">nvme.h</a>
 </li>
 <li>spdk_nvme_ctrlr_update_firmware()
-: <a class="el" href="nvme_8h.html#aa5bf2047c92b9bb1a20cf9493fa9ebf6">nvme.h</a>
+: <a class="el" href="nvme_8h.html#a7938b258a7614073065be4f6a35bd0e2">nvme.h</a>
 </li>
 <li>spdk_nvme_detach()
 : <a class="el" href="nvme_8h.html#a4b63c225c3cce6da60fdbfb6f54b11e2">nvme.h</a>
+</li>
+<li>spdk_nvme_ns_cmd_compare()
+: <a class="el" href="nvme_8h.html#ad8aa3c9ff510fe73945549077df18436">nvme.h</a>
+</li>
+<li>spdk_nvme_ns_cmd_compare_with_md()
+: <a class="el" href="nvme_8h.html#a4bf7a40872bfe623a5dfa31922263532">nvme.h</a>
+</li>
+<li>spdk_nvme_ns_cmd_comparev()
+: <a class="el" href="nvme_8h.html#a108d6b722c8837593dec16f30376d182">nvme.h</a>
 </li>
 <li>spdk_nvme_ns_cmd_dataset_management()
 : <a class="el" href="nvme_8h.html#ac0c646dd18675c54ffcf834ce699658d">nvme.h</a>
