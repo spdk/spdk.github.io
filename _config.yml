@@ -35,6 +35,9 @@ boxes:
   - title: Roadmap
     url: https://github.com/spdk/spdk/wiki/Roadmap
     ico: map-marker
+  - title: News
+    url: https://github.com/spdk/spdk/wiki/IN-THE-NEWS
+    ico: bullhorn
 
 
 gems:
