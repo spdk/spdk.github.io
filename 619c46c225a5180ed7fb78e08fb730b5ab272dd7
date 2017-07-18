@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "dcfcb476_5d0ebd31",
+        "filename": "_config.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 39,
+      "author": {
+        "id": 1010618
+      },
+      "writtenOn": "2017-07-18T17:48:24Z",
+      "side": 1,
+      "message": "change to News",
+      "range": {
+        "startLine": 39,
+        "startChar": 43,
+        "endLine": 39,
+        "endChar": 54
+      },
+      "revId": "619c46c225a5180ed7fb78e08fb730b5ab272dd7",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
