@@ -64,6 +64,12 @@
                   <span class="box-name">Roadmap</span>
                 </a>
               </li>
+              <li role="presentation">
+                <a href="https://github.com/spdk/spdk/wiki/News">
+                  <i class="glyphicon glyphicon-bullhorn"></i>
+                  <span class="box-name">News</span>
+                </a>
+              </li>
             </ul>
           </div>
         </section>
@@ -101,6 +107,9 @@ typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_io_chan
 <tr class="memitem:a75aa6a61877f23f79bb75c8fc5e68202"><td class="memItemLeft" align="right" valign="top"><a id="a75aa6a61877f23f79bb75c8fc5e68202"></a>
 typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_io_channel_destroy_cb</b>) (void *io_device, void *ctx_buf)</td></tr>
 <tr class="separator:a75aa6a61877f23f79bb75c8fc5e68202"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae044f4141737c7f2df49cdfb03fd58ca"><td class="memItemLeft" align="right" valign="top"><a id="ae044f4141737c7f2df49cdfb03fd58ca"></a>
+typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_io_device_unregister_cb</b>) (void *io_device)</td></tr>
+<tr class="separator:ae044f4141737c7f2df49cdfb03fd58ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad7b7239eb25263787bba6b64036f9792"><td class="memItemLeft" align="right" valign="top"><a id="ad7b7239eb25263787bba6b64036f9792"></a>
 typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_channel_msg</b>) (void *io_device, struct spdk_io_channel *ch, void *ctx)</td></tr>
 <tr class="separator:ad7b7239eb25263787bba6b64036f9792"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -125,9 +134,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a6a0b6fdbfd40673bce799a1a7ebab187"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="io__channel_8h.html#a6a0b6fdbfd40673bce799a1a7ebab187">spdk_io_device_register</a> (void *io_device, spdk_io_channel_create_cb create_cb, spdk_io_channel_destroy_cb destroy_cb, uint32_t ctx_size)</td></tr>
 <tr class="memdesc:a6a0b6fdbfd40673bce799a1a7ebab187"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register the opaque io_device context as an I/O device.  <a href="#a6a0b6fdbfd40673bce799a1a7ebab187">More...</a><br /></td></tr>
 <tr class="separator:a6a0b6fdbfd40673bce799a1a7ebab187"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abaadd707d455f3c8e44f6cdea7fee007"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="io__channel_8h.html#abaadd707d455f3c8e44f6cdea7fee007">spdk_io_device_unregister</a> (void *io_device)</td></tr>
-<tr class="memdesc:abaadd707d455f3c8e44f6cdea7fee007"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unregister the opaque io_device context as an I/O device.  <a href="#abaadd707d455f3c8e44f6cdea7fee007">More...</a><br /></td></tr>
-<tr class="separator:abaadd707d455f3c8e44f6cdea7fee007"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c6c3df3a611c10c176cb87966c622f0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="io__channel_8h.html#a4c6c3df3a611c10c176cb87966c622f0">spdk_io_device_unregister</a> (void *io_device, spdk_io_device_unregister_cb unregister_cb)</td></tr>
+<tr class="memdesc:a4c6c3df3a611c10c176cb87966c622f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unregister the opaque io_device context as an I/O device.  <a href="#a4c6c3df3a611c10c176cb87966c622f0">More...</a><br /></td></tr>
+<tr class="separator:a4c6c3df3a611c10c176cb87966c622f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8537c42a7aa203b50578efed509d9ba8"><td class="memItemLeft" align="right" valign="top">struct spdk_io_channel *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="io__channel_8h.html#a8537c42a7aa203b50578efed509d9ba8">spdk_get_io_channel</a> (void *io_device)</td></tr>
 <tr class="memdesc:a8537c42a7aa203b50578efed509d9ba8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets an I/O channel for the specified io_device to be used by the calling thread.  <a href="#a8537c42a7aa203b50578efed509d9ba8">More...</a><br /></td></tr>
 <tr class="separator:a8537c42a7aa203b50578efed509d9ba8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -337,8 +346,8 @@ struct spdk_thread *&#160;</td><td class="memItemRight" valign="bottom"><a class
 
 </div>
 </div>
-<a id="abaadd707d455f3c8e44f6cdea7fee007"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abaadd707d455f3c8e44f6cdea7fee007">&#9670;&nbsp;</a></span>spdk_io_device_unregister()</h2>
+<a id="a4c6c3df3a611c10c176cb87966c622f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4c6c3df3a611c10c176cb87966c622f0">&#9670;&nbsp;</a></span>spdk_io_device_unregister()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -347,14 +356,24 @@ struct spdk_thread *&#160;</td><td class="memItemRight" valign="bottom"><a class
           <td class="memname">void spdk_io_device_unregister </td>
           <td>(</td>
           <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>io_device</em></td><td>)</td>
+          <td class="paramname"><em>io_device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">spdk_io_device_unregister_cb&#160;</td>
+          <td class="paramname"><em>unregister_cb</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Unregister the opaque io_device context as an I/O device. </p>
-<p>Callers must ensure they release references to any I/O channel related to this device before calling this function. </p>
+<p>The actual unregistration might be deferred until all active I/O channels are destroyed. unregister_cb is an optional callback function invoked to release any references to this I/O device. </p>
 
 </div>
 </div>
@@ -375,7 +394,8 @@ struct spdk_thread *&#160;</td><td class="memItemRight" valign="bottom"><a class
 </div><div class="memdoc">
 
 <p>Releases a reference to an I/O channel. </p>
-<p>Must be called from the same thread that called <a class="el" href="io__channel_8h.html#a8537c42a7aa203b50578efed509d9ba8" title="Gets an I/O channel for the specified io_device to be used by the calling thread. ...">spdk_get_io_channel()</a> for the specified I/O channel. If this releases the last reference to the I/O channel, The destroy_cb function specified in <a class="el" href="io__channel_8h.html#a6a0b6fdbfd40673bce799a1a7ebab187" title="Register the opaque io_device context as an I/O device. ">spdk_io_device_register()</a> will be invoked to release any associated resources. </p>
+<p>This happens asynchronously.</p>
+<p>Actual release will happen on the same thread that called <a class="el" href="io__channel_8h.html#a8537c42a7aa203b50578efed509d9ba8" title="Gets an I/O channel for the specified io_device to be used by the calling thread. ...">spdk_get_io_channel()</a> for the specified I/O channel. If this releases the last reference to the I/O channel, The destroy_cb function specified in <a class="el" href="io__channel_8h.html#a6a0b6fdbfd40673bce799a1a7ebab187" title="Register the opaque io_device context as an I/O device. ">spdk_io_device_register()</a> will be invoked to release any associated resources. </p>
 
 </div>
 </div>
