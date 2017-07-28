@@ -486,7 +486,7 @@ int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_retry_co
 </div><div class="memdoc">
 
 <p>Fill out *address and *length with the current SGL entry and advance to the next entry for the next time the callback is invoked. </p>
-<p>The cb_arg parameter is the value passed to readv/writev. The address parameter contains the virtual address of this segment. The length parameter contains the length of this physical segment. </p>
+<p>The cb_arg parameter is the value passed to readv/writev. The address parameter contains the virtual address of this segment. The length parameter contains the length of this physical segment. The described segment must be physically contiguous. </p>
 
 </div>
 </div>
