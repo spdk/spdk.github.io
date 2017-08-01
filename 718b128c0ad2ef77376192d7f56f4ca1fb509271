@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "f1803eb7_b512d13d",
+        "filename": "_posts/2017-07-31-17.07_release.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 49,
+      "author": {
+        "id": 1011289
+      },
+      "writtenOn": "2017-08-01T19:57:27Z",
+      "side": 1,
+      "message": "small suggestion failed--\u003efail",
+      "revId": "718b128c0ad2ef77376192d7f56f4ca1fb509271",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
