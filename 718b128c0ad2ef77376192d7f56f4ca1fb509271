@@ -16,6 +16,24 @@
       "revId": "718b128c0ad2ef77376192d7f56f4ca1fb509271",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1c397fbb_4e0fefc6",
+        "filename": "_posts/2017-07-31-17.07_release.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 49,
+      "author": {
+        "id": 1010525
+      },
+      "writtenOn": "2017-08-01T20:01:33Z",
+      "side": 1,
+      "message": "Thanks, I\u0027ll fix it up.",
+      "parentUuid": "f1803eb7_b512d13d",
+      "revId": "718b128c0ad2ef77376192d7f56f4ca1fb509271",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
     }
   ]
 }
