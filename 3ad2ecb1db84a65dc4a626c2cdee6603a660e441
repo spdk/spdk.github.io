@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "d9359ea2_e11124ce",
+        "filename": "development.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 224,
+      "author": {
+        "id": 1011289
+      },
+      "writtenOn": "2017-08-09T13:47:53Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "1e38c286_96a7a515",
+      "revId": "3ad2ecb1db84a65dc4a626c2cdee6603a660e441",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "40c049bf_a0d5acd5",
         "filename": "development.md",
         "patchSetId": 1
@@ -30,6 +48,30 @@
       "writtenOn": "2017-08-07T19:33:22Z",
       "side": 1,
       "message": "superseded -\u003e supersedes?",
+      "range": {
+        "startLine": 225,
+        "startChar": 213,
+        "endLine": 225,
+        "endChar": 223
+      },
+      "revId": "3ad2ecb1db84a65dc4a626c2cdee6603a660e441",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "c7d09a1a_90890ae2",
+        "filename": "development.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 225,
+      "author": {
+        "id": 1011289
+      },
+      "writtenOn": "2017-08-09T13:47:53Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "40c049bf_a0d5acd5",
       "range": {
         "startLine": 225,
         "startChar": 213,
