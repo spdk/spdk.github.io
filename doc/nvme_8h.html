@@ -309,6 +309,9 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_
 <tr class="memitem:aad367fec5a8963f5d930dfae485de6b3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#aad367fec5a8963f5d930dfae485de6b3">spdk_nvme_ns_supports_extended_lba</a> (struct spdk_nvme_ns *ns)</td></tr>
 <tr class="memdesc:aad367fec5a8963f5d930dfae485de6b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">True if the namespace can support extended LBA when end-to-end data protection enabled.  <a href="#aad367fec5a8963f5d930dfae485de6b3">More...</a><br /></td></tr>
 <tr class="separator:aad367fec5a8963f5d930dfae485de6b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42040dca95489218417539d2c08d815e"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="nvme__spec_8h.html#a1c06fbd66f7572c43c51e6f106215b8d">spdk_nvme_dealloc_logical_block_read_value</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a42040dca95489218417539d2c08d815e">spdk_nvme_ns_get_dealloc_logical_block_read_value</a> (struct spdk_nvme_ns *ns)</td></tr>
+<tr class="memdesc:a42040dca95489218417539d2c08d815e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine the value returned when reading deallocated blocks.  <a href="#a42040dca95489218417539d2c08d815e">More...</a><br /></td></tr>
+<tr class="separator:a42040dca95489218417539d2c08d815e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5eff1c1b6fbfb348a1f158b3cf70626f"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a5eff1c1b6fbfb348a1f158b3cf70626f">spdk_nvme_ns_get_flags</a> (struct spdk_nvme_ns *ns)</td></tr>
 <tr class="memdesc:a5eff1c1b6fbfb348a1f158b3cf70626f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the flags for the given namespace.  <a href="#a5eff1c1b6fbfb348a1f158b3cf70626f">More...</a><br /></td></tr>
 <tr class="separator:a5eff1c1b6fbfb348a1f158b3cf70626f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -2981,6 +2984,27 @@ int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_retry_co
 
 <p>Get the identify namespace data as defined by the NVMe specification. </p>
 <p>This function is thread safe and can be called at any point while the controller is attached to the SPDK NVMe driver. </p>
+
+</div>
+</div>
+<a id="a42040dca95489218417539d2c08d815e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a42040dca95489218417539d2c08d815e">&#9670;&nbsp;</a></span>spdk_nvme_ns_get_dealloc_logical_block_read_value()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="nvme__spec_8h.html#a1c06fbd66f7572c43c51e6f106215b8d">spdk_nvme_dealloc_logical_block_read_value</a> spdk_nvme_ns_get_dealloc_logical_block_read_value </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_nvme_ns *&#160;</td>
+          <td class="paramname"><em>ns</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Determine the value returned when reading deallocated blocks. </p>
+<p>If deallocated blocks return 0, the deallocate command can be used as a more efficient alternative to the write_zeroes command, especially for large requests. </p>
 
 </div>
 </div>

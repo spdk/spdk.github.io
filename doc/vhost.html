@@ -88,6 +88,7 @@ vhost Getting Started Guide</h1>
 <h1><a class="anchor" id="vhost_prereqs"></a>
 Prerequisites</h1>
 <p>The base SPDK build instructions are located in README.md in the SPDK root directory. This guide assumes familiarity with building SPDK using the default options.</p>
+<p>If you want to kill the application using signal, make sure use the SIGTERM, then the application will release all the share memory resource before exit, the SIGKILL will make the share memory resource have no chance to be released by application, you may need to release the resource manually.</p>
 <h2>Supported Guest Operating Systems</h2>
 <p>The guest OS must contain virtio drivers. The SPDK vhost target has been tested with Ubuntu 16.04, Fedora 25, Windows 2012 R2.</p>
 <h1>Building</h1>
@@ -131,10 +132,8 @@ Experimental Features</h1>
 <p>To achieve better performance, make sure to increase number of cores assigned to the VM.</p>
 <h1><a class="anchor" id="vhost_bugs"></a>
 Known bugs and limitations</h1>
-<h2>Hot plug is not supported</h2>
-<p>Hot plug is not supported in vhost yet. Event queue path doesn't handle that case yet.</p>
-<h2>Windows virtio-blk driver only works with 512-byte sectors</h2>
-<p>The Windows <code>viostor</code> driver is buggy and does not correctly support vhost-blk devices with non-512-byte block size. See the <a href="https://bugzilla.redhat.com/show_bug.cgi?id=1411092">bug report</a> for more information. </p>
+<h2>Windows virtio-blk driver before version 0.1.130-1 only works with 512-byte sectors</h2>
+<p>The Windows <code>viostor</code> driver before version 0.1.130-1 is buggy and does not correctly support vhost-blk devices with non-512-byte block size. See the <a href="https://bugzilla.redhat.com/show_bug.cgi?id=1411092">bug report</a> for more information. </p>
 </div></div><!-- contents -->
 <footer>
   <div class="container text-center">

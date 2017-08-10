@@ -86,7 +86,6 @@
 <a href="#nested-classes">Data Structures</a> &#124;
 <a href="#define-members">Macros</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
-<a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">nvmf.h File Reference</div>  </div>
@@ -121,31 +120,24 @@ Typedefs</h2></td></tr>
 <tr class="memitem:abbda1fe1f10bbad8c8d26f6105d1a13e"><td class="memItemLeft" align="right" valign="top"><a id="abbda1fe1f10bbad8c8d26f6105d1a13e"></a>
 typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvmf_subsystem_connect_fn</b>) (void *cb_ctx, struct spdk_nvmf_request *req)</td></tr>
 <tr class="separator:abbda1fe1f10bbad8c8d26f6105d1a13e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adce88e6e200adf71425794c4e881e29f"><td class="memItemLeft" align="right" valign="top"><a id="adce88e6e200adf71425794c4e881e29f"></a>
-typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvmf_subsystem_disconnect_fn</b>) (void *cb_ctx, struct spdk_nvmf_conn *conn)</td></tr>
-<tr class="separator:adce88e6e200adf71425794c4e881e29f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
-Enumerations</h2></td></tr>
-<tr class="memitem:a058215c2e759f1cefcf1a6d2292cbd5f"><td class="memItemLeft" align="right" valign="top"><a id="a058215c2e759f1cefcf1a6d2292cbd5f"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvmf_subsystem_mode</b> { <b>NVMF_SUBSYSTEM_MODE_DIRECT</b> = 0, 
-<b>NVMF_SUBSYSTEM_MODE_VIRTUAL</b> = 1
- }</td></tr>
-<tr class="separator:a058215c2e759f1cefcf1a6d2292cbd5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba981d5463228f447c387c6d6dc44833"><td class="memItemLeft" align="right" valign="top"><a id="aba981d5463228f447c387c6d6dc44833"></a>
+typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvmf_subsystem_disconnect_fn</b>) (void *cb_ctx, struct spdk_nvmf_qpair *qpair)</td></tr>
+<tr class="separator:aba981d5463228f447c387c6d6dc44833"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:aed4c5602e33970798fc6a897edf9b555"><td class="memItemLeft" align="right" valign="top"><a id="aed4c5602e33970798fc6a897edf9b555"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvmf_tgt_init</b> (uint16_t max_queue_depth, uint16_t max_conn_per_sess, uint32_t in_capsule_data_size, uint32_t max_io_size)</td></tr>
-<tr class="separator:aed4c5602e33970798fc6a897edf9b555"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad91bd76e2a4fbf23bff7524903066da9"><td class="memItemLeft" align="right" valign="top"><a id="ad91bd76e2a4fbf23bff7524903066da9"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvmf_tgt_init</b> (uint16_t max_queue_depth, uint16_t max_qpair_per_ctrlr, uint32_t in_capsule_data_size, uint32_t max_io_size)</td></tr>
+<tr class="separator:ad91bd76e2a4fbf23bff7524903066da9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9a5d64ddc7bd075ca178227f19bc0468"><td class="memItemLeft" align="right" valign="top"><a id="a9a5d64ddc7bd075ca178227f19bc0468"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvmf_tgt_fini</b> (void)</td></tr>
 <tr class="separator:a9a5d64ddc7bd075ca178227f19bc0468"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a84778f728a235e750a48561e9ca654c1"><td class="memItemLeft" align="right" valign="top"><a id="a84778f728a235e750a48561e9ca654c1"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvmf_check_pools</b> (void)</td></tr>
 <tr class="separator:a84778f728a235e750a48561e9ca654c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a246ee377bcd258437a092d2bc5b539f9"><td class="memItemLeft" align="right" valign="top"><a id="a246ee377bcd258437a092d2bc5b539f9"></a>
-struct <a class="el" href="structspdk__nvmf__subsystem.html">spdk_nvmf_subsystem</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvmf_create_subsystem</b> (const char *nqn, enum <a class="el" href="nvmf__spec_8h.html#a808272f050cc373f3a90871c1528afd4">spdk_nvmf_subtype</a> type, enum spdk_nvmf_subsystem_mode mode, void *cb_ctx, spdk_nvmf_subsystem_connect_fn connect_cb, spdk_nvmf_subsystem_disconnect_fn disconnect_cb)</td></tr>
-<tr class="separator:a246ee377bcd258437a092d2bc5b539f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6839e91b22ba71be206316eaf67e452b"><td class="memItemLeft" align="right" valign="top"><a id="a6839e91b22ba71be206316eaf67e452b"></a>
+struct <a class="el" href="structspdk__nvmf__subsystem.html">spdk_nvmf_subsystem</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvmf_create_subsystem</b> (const char *nqn, enum <a class="el" href="nvmf__spec_8h.html#a808272f050cc373f3a90871c1528afd4">spdk_nvmf_subtype</a> type, void *cb_ctx, spdk_nvmf_subsystem_connect_fn connect_cb, spdk_nvmf_subsystem_disconnect_fn disconnect_cb)</td></tr>
+<tr class="separator:a6839e91b22ba71be206316eaf67e452b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:accc21256a81f2052aad9a3476edbc503"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#accc21256a81f2052aad9a3476edbc503">spdk_nvmf_subsystem_start</a> (struct <a class="el" href="structspdk__nvmf__subsystem.html">spdk_nvmf_subsystem</a> *subsystem)</td></tr>
 <tr class="memdesc:accc21256a81f2052aad9a3476edbc503"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the subsystem on the thread that will be used to poll it.  <a href="#accc21256a81f2052aad9a3476edbc503">More...</a><br /></td></tr>
 <tr class="separator:accc21256a81f2052aad9a3476edbc503"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -158,9 +150,9 @@ struct <a class="el" href="structspdk__nvmf__subsystem.html">spdk_nvmf_subsystem
 <tr class="memitem:a5f8ded88254cb17d8ee5c378f0e35a25"><td class="memItemLeft" align="right" valign="top"><a id="a5f8ded88254cb17d8ee5c378f0e35a25"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvmf_subsystem_host_allowed</b> (struct <a class="el" href="structspdk__nvmf__subsystem.html">spdk_nvmf_subsystem</a> *subsystem, const char *hostnqn)</td></tr>
 <tr class="separator:a5f8ded88254cb17d8ee5c378f0e35a25"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aec1feb79d9fa27e4abb3c87c5a39f8b9"><td class="memItemLeft" align="right" valign="top"><a id="aec1feb79d9fa27e4abb3c87c5a39f8b9"></a>
-struct <a class="el" href="structspdk__nvmf__listen__addr.html">spdk_nvmf_listen_addr</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvmf_tgt_listen</b> (const char *trname, enum <a class="el" href="nvmf__spec_8h.html#a08f0090d242e2607ab11f148dcd797c6">spdk_nvmf_adrfam</a> adrfam, const char *traddr, const char *trsvcid)</td></tr>
-<tr class="separator:aec1feb79d9fa27e4abb3c87c5a39f8b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0ac0e7815a8c53534928de04c330cfe"><td class="memItemLeft" align="right" valign="top"><a id="ad0ac0e7815a8c53534928de04c330cfe"></a>
+struct <a class="el" href="structspdk__nvmf__listen__addr.html">spdk_nvmf_listen_addr</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvmf_tgt_listen</b> (struct <a class="el" href="structspdk__nvme__transport__id.html">spdk_nvme_transport_id</a> *trid)</td></tr>
+<tr class="separator:ad0ac0e7815a8c53534928de04c330cfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa6d3a2c6de1c3cfe9daa1485c40f1fdb"><td class="memItemLeft" align="right" valign="top"><a id="aa6d3a2c6de1c3cfe9daa1485c40f1fdb"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvmf_subsystem_add_listener</b> (struct <a class="el" href="structspdk__nvmf__subsystem.html">spdk_nvmf_subsystem</a> *subsystem, struct <a class="el" href="structspdk__nvmf__listen__addr.html">spdk_nvmf_listen_addr</a> *listen_addr)</td></tr>
 <tr class="separator:aa6d3a2c6de1c3cfe9daa1485c40f1fdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -170,9 +162,6 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvmf_subsystem_l
 <tr class="memitem:a3de9891f88ceb5145c9e3de4fbc07c0d"><td class="memItemLeft" align="right" valign="top"><a id="a3de9891f88ceb5145c9e3de4fbc07c0d"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvmf_subsystem_add_host</b> (struct <a class="el" href="structspdk__nvmf__subsystem.html">spdk_nvmf_subsystem</a> *subsystem, const char *host_nqn)</td></tr>
 <tr class="separator:a3de9891f88ceb5145c9e3de4fbc07c0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeed3522962d14b0a7974be13bb7b1d40"><td class="memItemLeft" align="right" valign="top"><a id="aeed3522962d14b0a7974be13bb7b1d40"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>nvmf_subsystem_add_ctrlr</b> (struct <a class="el" href="structspdk__nvmf__subsystem.html">spdk_nvmf_subsystem</a> *subsystem, struct spdk_nvme_ctrlr *ctrlr, const struct <a class="el" href="structspdk__pci__addr.html">spdk_pci_addr</a> *pci_addr)</td></tr>
-<tr class="separator:aeed3522962d14b0a7974be13bb7b1d40"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a39d21724c9334371d989bba4fa1f20f8"><td class="memItemLeft" align="right" valign="top"><a id="a39d21724c9334371d989bba4fa1f20f8"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvmf_subsystem_poll</b> (struct <a class="el" href="structspdk__nvmf__subsystem.html">spdk_nvmf_subsystem</a> *subsystem)</td></tr>
 <tr class="separator:a39d21724c9334371d989bba4fa1f20f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -191,18 +180,15 @@ const char *&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvmf_sub
 <tr class="memitem:a0f3fbe4ab1d90cda9a1f3fcbf2cb857d"><td class="memItemLeft" align="right" valign="top"><a id="a0f3fbe4ab1d90cda9a1f3fcbf2cb857d"></a>
 enum <a class="el" href="nvmf__spec_8h.html#a808272f050cc373f3a90871c1528afd4">spdk_nvmf_subtype</a>&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvmf_subsystem_get_type</b> (struct <a class="el" href="structspdk__nvmf__subsystem.html">spdk_nvmf_subsystem</a> *subsystem)</td></tr>
 <tr class="separator:a0f3fbe4ab1d90cda9a1f3fcbf2cb857d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abdccc232ce39ac5662fd6dbe9ae19729"><td class="memItemLeft" align="right" valign="top"><a id="abdccc232ce39ac5662fd6dbe9ae19729"></a>
-enum spdk_nvmf_subsystem_mode&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvmf_subsystem_get_mode</b> (struct <a class="el" href="structspdk__nvmf__subsystem.html">spdk_nvmf_subsystem</a> *subsystem)</td></tr>
-<tr class="separator:abdccc232ce39ac5662fd6dbe9ae19729"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae11be42dec958f6100de66973bb9ad44"><td class="memItemLeft" align="right" valign="top"><a id="ae11be42dec958f6100de66973bb9ad44"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvmf_acceptor_poll</b> (void)</td></tr>
-<tr class="separator:ae11be42dec958f6100de66973bb9ad44"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65f272a8af43093b83f9dad874c016d5"><td class="memItemLeft" align="right" valign="top"><a id="a65f272a8af43093b83f9dad874c016d5"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvmf_tgt_poll</b> (void)</td></tr>
+<tr class="separator:a65f272a8af43093b83f9dad874c016d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9d560869d674720c54a4794d766173af"><td class="memItemLeft" align="right" valign="top"><a id="a9d560869d674720c54a4794d766173af"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvmf_handle_connect</b> (struct spdk_nvmf_request *req)</td></tr>
 <tr class="separator:a9d560869d674720c54a4794d766173af"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8f939b8cf6c894e353d01a9e34a59436"><td class="memItemLeft" align="right" valign="top"><a id="a8f939b8cf6c894e353d01a9e34a59436"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvmf_session_disconnect</b> (struct spdk_nvmf_conn *conn)</td></tr>
-<tr class="separator:a8f939b8cf6c894e353d01a9e34a59436"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed3b8dfc91405cbc6423ab1d642e6337"><td class="memItemLeft" align="right" valign="top"><a id="aed3b8dfc91405cbc6423ab1d642e6337"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvmf_ctrlr_disconnect</b> (struct spdk_nvmf_qpair *qpair)</td></tr>
+<tr class="separator:aed3b8dfc91405cbc6423ab1d642e6337"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>NVMe over Fabrics target public API. </p>

@@ -208,9 +208,6 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_dump_config_
 <tr class="memitem:a86568eca8f0b4d0dc9bc59c5138fc7a5"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev_8h.html#a86568eca8f0b4d0dc9bc59c5138fc7a5">spdk_bdev_get_num_blocks</a> (const struct spdk_bdev *bdev)</td></tr>
 <tr class="memdesc:a86568eca8f0b4d0dc9bc59c5138fc7a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get size of block device in logical blocks.  <a href="#a86568eca8f0b4d0dc9bc59c5138fc7a5">More...</a><br /></td></tr>
 <tr class="separator:a86568eca8f0b4d0dc9bc59c5138fc7a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a055368a3ce95cb597c99e9920dd025a4"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev_8h.html#a055368a3ce95cb597c99e9920dd025a4">spdk_bdev_get_max_unmap_descriptors</a> (const struct spdk_bdev *bdev)</td></tr>
-<tr class="memdesc:a055368a3ce95cb597c99e9920dd025a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get maximum number of descriptors per unmap request.  <a href="#a055368a3ce95cb597c99e9920dd025a4">More...</a><br /></td></tr>
-<tr class="separator:a055368a3ce95cb597c99e9920dd025a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab4d238484b372a77ba130fbb70f83519"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev_8h.html#ab4d238484b372a77ba130fbb70f83519">spdk_bdev_get_buf_align</a> (const struct spdk_bdev *bdev)</td></tr>
 <tr class="memdesc:ab4d238484b372a77ba130fbb70f83519"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get minimum I/O buffer address alignment for a bdev.  <a href="#ab4d238484b372a77ba130fbb70f83519">More...</a><br /></td></tr>
 <tr class="separator:ab4d238484b372a77ba130fbb70f83519"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -232,9 +229,9 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_dump_config_
 <tr class="memitem:a9a508a1c301a1321faf0680a8f31f59a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev_8h.html#a9a508a1c301a1321faf0680a8f31f59a">spdk_bdev_writev</a> (struct spdk_bdev_desc *desc, struct spdk_io_channel *ch, struct iovec *iov, int iovcnt, uint64_t offset, uint64_t len, <a class="el" href="bdev_8h.html#a0c5602dfd313f90032dd91683b9663e3">spdk_bdev_io_completion_cb</a> cb, void *cb_arg)</td></tr>
 <tr class="memdesc:a9a508a1c301a1321faf0680a8f31f59a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submit a write request to the bdev on the given channel.  <a href="#a9a508a1c301a1321faf0680a8f31f59a">More...</a><br /></td></tr>
 <tr class="separator:a9a508a1c301a1321faf0680a8f31f59a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a33310717ae576ca9a24b790d6c70a9df"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev_8h.html#a33310717ae576ca9a24b790d6c70a9df">spdk_bdev_unmap</a> (struct spdk_bdev_desc *desc, struct spdk_io_channel *ch, struct <a class="el" href="structspdk__scsi__unmap__bdesc.html">spdk_scsi_unmap_bdesc</a> *unmap_d, uint16_t bdesc_count, <a class="el" href="bdev_8h.html#a0c5602dfd313f90032dd91683b9663e3">spdk_bdev_io_completion_cb</a> cb, void *cb_arg)</td></tr>
-<tr class="memdesc:a33310717ae576ca9a24b790d6c70a9df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submit an unmap request to the block device.  <a href="#a33310717ae576ca9a24b790d6c70a9df">More...</a><br /></td></tr>
-<tr class="separator:a33310717ae576ca9a24b790d6c70a9df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a680c9c302998f7b003e2476e35d9ae4b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev_8h.html#a680c9c302998f7b003e2476e35d9ae4b">spdk_bdev_unmap</a> (struct spdk_bdev_desc *desc, struct spdk_io_channel *ch, uint64_t offset, uint64_t nbytes, <a class="el" href="bdev_8h.html#a0c5602dfd313f90032dd91683b9663e3">spdk_bdev_io_completion_cb</a> cb, void *cb_arg)</td></tr>
+<tr class="memdesc:a680c9c302998f7b003e2476e35d9ae4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submit an unmap request to the block device.  <a href="#a680c9c302998f7b003e2476e35d9ae4b">More...</a><br /></td></tr>
+<tr class="separator:a680c9c302998f7b003e2476e35d9ae4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7105b63cc84037543d9472ab33c8be93"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev_8h.html#a7105b63cc84037543d9472ab33c8be93">spdk_bdev_flush</a> (struct spdk_bdev_desc *desc, struct spdk_io_channel *ch, uint64_t offset, uint64_t length, <a class="el" href="bdev_8h.html#a0c5602dfd313f90032dd91683b9663e3">spdk_bdev_io_completion_cb</a> cb, void *cb_arg)</td></tr>
 <tr class="memdesc:a7105b63cc84037543d9472ab33c8be93"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submit a flush request to the bdev on the given channel.  <a href="#a7105b63cc84037543d9472ab33c8be93">More...</a><br /></td></tr>
 <tr class="separator:a7105b63cc84037543d9472ab33c8be93"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -563,33 +560,6 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_dump_config_
   </table>
   </dd>
 </dl>
-
-</div>
-</div>
-<a id="a055368a3ce95cb597c99e9920dd025a4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a055368a3ce95cb597c99e9920dd025a4">&#9670;&nbsp;</a></span>spdk_bdev_get_max_unmap_descriptors()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint32_t spdk_bdev_get_max_unmap_descriptors </td>
-          <td>(</td>
-          <td class="paramtype">const struct spdk_bdev *&#160;</td>
-          <td class="paramname"><em>bdev</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Get maximum number of descriptors per unmap request. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">bdev</td><td>Block device to query. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Maximum number of unmap descriptors per request. </dd></dl>
 
 </div>
 </div>
@@ -1264,8 +1234,8 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_dump_config_
 
 </div>
 </div>
-<a id="a33310717ae576ca9a24b790d6c70a9df"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a33310717ae576ca9a24b790d6c70a9df">&#9670;&nbsp;</a></span>spdk_bdev_unmap()</h2>
+<a id="a680c9c302998f7b003e2476e35d9ae4b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a680c9c302998f7b003e2476e35d9ae4b">&#9670;&nbsp;</a></span>spdk_bdev_unmap()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1285,14 +1255,14 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_dump_config_
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">struct <a class="el" href="structspdk__scsi__unmap__bdesc.html">spdk_scsi_unmap_bdesc</a> *&#160;</td>
-          <td class="paramname"><em>unmap_d</em>, </td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>offset</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint16_t&#160;</td>
-          <td class="paramname"><em>bdesc_count</em>, </td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>nbytes</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1320,8 +1290,8 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_dump_config_
   <table class="params">
     <tr><td class="paramname">bdev</td><td>Block device </td></tr>
     <tr><td class="paramname">ch</td><td>I/O channel. Obtained by calling <a class="el" href="bdev_8h.html#ab5bb9e746b030d7c4c89cbcf60076c7e" title="Obtain an I/O channel for the block device opened by the specified descriptor. ">spdk_bdev_get_io_channel()</a>. </td></tr>
-    <tr><td class="paramname">unmap_d</td><td>An array of unmap descriptors. </td></tr>
-    <tr><td class="paramname">bdesc_count</td><td>The number of elements in unmap_d. </td></tr>
+    <tr><td class="paramname">offset</td><td>The offset, in bytes, from the start of the block device. </td></tr>
+    <tr><td class="paramname">nbytes</td><td>The number of bytes to unmap. Must be a multiple of the block size. </td></tr>
     <tr><td class="paramname">cb</td><td>Called when the request is complete. </td></tr>
     <tr><td class="paramname">cb_arg</td><td>Argument passed to cb.</td></tr>
   </table>

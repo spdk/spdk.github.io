@@ -109,6 +109,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a93efecd5ee3d49df20a51b65718efbd1"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="string_8h.html#a93efecd5ee3d49df20a51b65718efbd1">spdk_str_trim</a> (char *s)</td></tr>
 <tr class="memdesc:a93efecd5ee3d49df20a51b65718efbd1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Trim whitespace from a string in place.  <a href="#a93efecd5ee3d49df20a51b65718efbd1">More...</a><br /></td></tr>
 <tr class="separator:a93efecd5ee3d49df20a51b65718efbd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a713ec7967f4c2c3cb8c031421edee78a"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="string_8h.html#a713ec7967f4c2c3cb8c031421edee78a">spdk_str_chomp</a> (char *s)</td></tr>
+<tr class="memdesc:a713ec7967f4c2c3cb8c031421edee78a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove trailing newlines from the end of a string in place.  <a href="#a713ec7967f4c2c3cb8c031421edee78a">More...</a><br /></td></tr>
+<tr class="separator:a713ec7967f4c2c3cb8c031421edee78a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa333ebed7fc3529d446f819b647e2d88"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="string_8h.html#aa333ebed7fc3529d446f819b647e2d88">spdk_strcpy_pad</a> (void *dst, const char *src, size_t size, int pad)</td></tr>
 <tr class="memdesc:aa333ebed7fc3529d446f819b647e2d88"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy a string into a fixed-size buffer, padding extra bytes with a specific character.  <a href="#aa333ebed7fc3529d446f819b647e2d88">More...</a><br /></td></tr>
 <tr class="separator:aa333ebed7fc3529d446f819b647e2d88"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -196,6 +199,35 @@ Functions</h2></td></tr>
 
 <p>sprintf with automatic buffer allocation. </p>
 <p>The return value is the formatted string, which should be passed to free() when no longer needed, or NULL on failure. </p>
+
+</div>
+</div>
+<a id="a713ec7967f4c2c3cb8c031421edee78a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a713ec7967f4c2c3cb8c031421edee78a">&#9670;&nbsp;</a></span>spdk_str_chomp()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t spdk_str_chomp </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>s</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Remove trailing newlines from the end of a string in place. </p>
+<p>Any sequence of trailing  and <br />
+ characters is removed from the end of the string.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">s</td><td>String to remove newline from. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Number of characters removed. </dd></dl>
 
 </div>
 </div>

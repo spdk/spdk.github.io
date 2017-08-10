@@ -89,6 +89,7 @@ Getting Started Guide</h1>
 Prerequisites</h2>
 <p>This guide starts by assuming that you can already build the standard SPDK distribution on your platform. The SPDK iSCSI target has been known to work on several Linux distributions, namely Ubuntu 14.04, 15.04, and 15.10, Fedora 21, 22, and 23, and CentOS 7.</p>
 <p>Once built, the binary will be in <code>app/iscsi_tgt</code>.</p>
+<p>If you want to kill the application by using signal, make sure use the SIGTERM, then the application will release all the shared memory resource before exit, the SIGKILL will make the shared memory resource have no chance to be released by applications, you may need to release the resource manually.</p>
 <h2><a class="anchor" id="iscsi_config"></a>
 Configuring iSCSI Target</h2>
 <p>A <code>iscsi_tgt</code> specific configuration file is used to configure the iSCSI target. A fully documented example configuration file is located at <code>etc/spdk/iscsi.conf.in</code>.</p>

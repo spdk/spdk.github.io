@@ -147,9 +147,6 @@
 <li>spdk_bdev_get_io_stat()
 : <a class="el" href="bdev_8h.html#ab1ba28ba382edd1d792d51a054eb3aa2">bdev.h</a>
 </li>
-<li>spdk_bdev_get_max_unmap_descriptors()
-: <a class="el" href="bdev_8h.html#a055368a3ce95cb597c99e9920dd025a4">bdev.h</a>
-</li>
 <li>spdk_bdev_get_name()
 : <a class="el" href="bdev_8h.html#ad97a853dcb945bf004817424b7aa28af">bdev.h</a>
 </li>
@@ -199,7 +196,7 @@
 : <a class="el" href="bdev_8h.html#ad6c166f5d928c2995df57c96a2977862">bdev.h</a>
 </li>
 <li>spdk_bdev_unmap()
-: <a class="el" href="bdev_8h.html#a33310717ae576ca9a24b790d6c70a9df">bdev.h</a>
+: <a class="el" href="bdev_8h.html#a680c9c302998f7b003e2476e35d9ae4b">bdev.h</a>
 </li>
 <li>spdk_bdev_write()
 : <a class="el" href="bdev_8h.html#aa740a114ef34d6a2f126d4e3a9dd9e9b">bdev.h</a>
@@ -239,6 +236,24 @@
 </li>
 <li>spdk_compiler_barrier
 : <a class="el" href="barrier_8h.html#a67d1423a31a84ead0d1550fe54743c03">barrier.h</a>
+</li>
+<li>spdk_crc32_ieee_update()
+: <a class="el" href="crc32_8h.html#a5320d8945f28627a2c5e5b15f1a997ee">crc32.h</a>
+</li>
+<li>SPDK_CRC32_POLYNOMIAL_REFLECT
+: <a class="el" href="crc32_8h.html#a0017fa45727ebbc1acae94c8c7eaf3d6">crc32.h</a>
+</li>
+<li>spdk_crc32_table_init()
+: <a class="el" href="crc32_8h.html#a948b27ad88d886a6136cdf7e7f20dd91">crc32.h</a>
+</li>
+<li>spdk_crc32_update()
+: <a class="el" href="crc32_8h.html#a7441b68a63656725b315959668b11866">crc32.h</a>
+</li>
+<li>SPDK_CRC32C_POLYNOMIAL_REFLECT
+: <a class="el" href="crc32_8h.html#ac770c030146f6feaaee33aac5196f451">crc32.h</a>
+</li>
+<li>spdk_crc32c_update()
+: <a class="el" href="crc32_8h.html#a51fc46bdf29f35610a0c99ae6ad0e009">crc32.h</a>
 </li>
 <li>spdk_delay_us()
 : <a class="el" href="env_8h.html#ab2e338ce2d6510489ae83bfff226b8b1">env.h</a>
@@ -424,22 +439,22 @@
 : <a class="el" href="env_8h.html#a512b5ef37a363a4c8e234c060b734605">env.h</a>
 </li>
 <li>spdk_mem_map_clear_translation()
-: <a class="el" href="env_8h.html#a1e15bc53a3efd7236469216079252750">env.h</a>
+: <a class="el" href="env_8h.html#a2fb4967ae71277512334ad27ef481326">env.h</a>
 </li>
 <li>spdk_mem_map_free()
 : <a class="el" href="env_8h.html#af88ed69bd8b9a057f672a1170f7a5b6c">env.h</a>
 </li>
 <li>spdk_mem_map_set_translation()
-: <a class="el" href="env_8h.html#a04929e0a471db7bccfc8fa01dcef87dc">env.h</a>
+: <a class="el" href="env_8h.html#a3314f2917141bf11f5b125c306d4397d">env.h</a>
 </li>
 <li>spdk_mem_map_translate()
 : <a class="el" href="env_8h.html#aa93008c5c5f0c79c286b7edd70343ee1">env.h</a>
 </li>
 <li>spdk_mem_register()
-: <a class="el" href="env_8h.html#abca606866151a5e9b332dea9886d14d8">env.h</a>
+: <a class="el" href="env_8h.html#ae046c45de2849d15f29dedc52e915ad7">env.h</a>
 </li>
 <li>spdk_mem_unregister()
-: <a class="el" href="env_8h.html#ad9276386cda18099d1be51e34a64a4f3">env.h</a>
+: <a class="el" href="env_8h.html#a3ffa0c74e2d73703266cad2d5d103f09">env.h</a>
 </li>
 <li>spdk_mempool_count()
 : <a class="el" href="env_8h.html#a434cdf73691c745e717b8b794b2acb52">env.h</a>
@@ -792,6 +807,9 @@
 <li>spdk_nvme_ns_get_data()
 : <a class="el" href="nvme_8h.html#ab1863b5dccf2bcc49fe92275bc1e5a2a">nvme.h</a>
 </li>
+<li>spdk_nvme_ns_get_dealloc_logical_block_read_value()
+: <a class="el" href="nvme_8h.html#a42040dca95489218417539d2c08d815e">nvme.h</a>
+</li>
 <li>spdk_nvme_ns_get_flags()
 : <a class="el" href="nvme_8h.html#a5eff1c1b6fbfb348a1f158b3cf70626f">nvme.h</a>
 </li>
@@ -1070,6 +1088,9 @@
 </li>
 <li>SPDK_STATIC_ASSERT
 : <a class="el" href="assert_8h.html#ab961047b92ac1428376ef1ae1e4fa1cf">assert.h</a>
+</li>
+<li>spdk_str_chomp()
+: <a class="el" href="string_8h.html#a713ec7967f4c2c3cb8c031421edee78a">string.h</a>
 </li>
 <li>spdk_str_trim()
 : <a class="el" href="string_8h.html#a93efecd5ee3d49df20a51b65718efbd1">string.h</a>
