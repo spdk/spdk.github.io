@@ -104,7 +104,7 @@ Configuring block devices</h1>
 <h2>Linux AIO</h2>
 <p>The SPDK aio bdev driver provides SPDK block layer access to Linux kernel block devices via Linux AIO. Note that O_DIRECT is used and thus bypasses the Linux page cache. This mode is probably as close to a typical kernel based target as a user space target can get without using a user-space driver.</p>
 <p>Configuration file syntax:</p>
-<div class="fragment"><div class="line">[AIO]</div><div class="line">  # AIO &lt;file name&gt; &lt;bdev name&gt;</div><div class="line">  # The file name is the backing device</div><div class="line">  # The bdev name can be referenced from elsewhere in the configuration file.</div><div class="line">  AIO /dev/sdb AIO0</div><div class="line">  AIO /dev/sdc AIO1</div></div><!-- fragment --><p>This exports 2 aio block devices, named AIO0 and AIO1.</p>
+<div class="fragment"><div class="line">[AIO]</div><div class="line">  # AIO &lt;file name&gt; &lt;bdev name&gt; [&lt;block size&gt;]</div><div class="line">  # The file name is the backing device</div><div class="line">  # The bdev name can be referenced from elsewhere in the configuration file.</div><div class="line">  # Block size may be omitted to automatically detect the block size of a disk.</div><div class="line">  AIO /dev/sdb AIO0</div><div class="line">  AIO /dev/sdc AIO1</div><div class="line">  AIO /tmp/myfile AIO2 4096</div></div><!-- fragment --><p>This exports 2 aio block devices, named AIO0 and AIO1.</p>
 <h2>Ceph RBD</h2>
 <p>The SPDK rbd bdev driver provides SPDK block layer access to Ceph RADOS block devices (RBD). Ceph RBD devices are accessed via librbd and librados libraries to access the RADOS block device exported by Ceph.</p>
 <p>Configuration file syntax:</p>
