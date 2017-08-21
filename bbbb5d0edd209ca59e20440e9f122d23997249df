@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "b3a11744_61c5b620",
+        "filename": "community.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 1010525
+      },
+      "writtenOn": "2017-08-21T17:59:49Z",
+      "side": 1,
+      "message": "Hi Paul,\n\nWe should definitely advertise this on the website, but I think it would make more sense as a blog post rather than on the Community page.  That way people will be more likely to notice the update.  You can add a blog post by adding a file in _posts/ (see the other files there for our naming convention).",
+      "revId": "bbbb5d0edd209ca59e20440e9f122d23997249df",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
