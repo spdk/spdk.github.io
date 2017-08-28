@@ -47,6 +47,12 @@
                 </a>
               </li>
               <li role="presentation">
+                <a href="https://ci.spdk.io/status/">
+                  <i class="glyphicon glyphicon-wrench"></i>
+                  <span class="box-name">CI status</span>
+                </a>
+              </li>
+              <li role="presentation">
                 <a href="http://www.spdk.io/community/">
                   <i class="glyphicon glyphicon-envelope"></i>
                   <span class="box-name">community</span>
@@ -117,15 +123,12 @@ const char *&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_vhost_de
 <tr class="memitem:a00a4829873583bfbb5e4543044f8548f"><td class="memItemLeft" align="right" valign="top"><a id="a00a4829873583bfbb5e4543044f8548f"></a>
 uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_vhost_dev_get_cpumask</b> (struct spdk_vhost_dev *ctrl)</td></tr>
 <tr class="separator:a00a4829873583bfbb5e4543044f8548f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8de801b9fa81ce083e8e4dac689526a0"><td class="memItemLeft" align="right" valign="top"><a id="a8de801b9fa81ce083e8e4dac689526a0"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_vhost_parse_core_mask</b> (const char *mask, uint64_t *cpumask)</td></tr>
-<tr class="separator:a8de801b9fa81ce083e8e4dac689526a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abea25400c27b3e774aa5707f8cbef651"><td class="memItemLeft" align="right" valign="top"><a id="abea25400c27b3e774aa5707f8cbef651"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_vhost_scsi_controller_construct</b> (void)</td></tr>
 <tr class="separator:abea25400c27b3e774aa5707f8cbef651"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a201085b066f5501d1bcedbe3a9e9910f"><td class="memItemLeft" align="right" valign="top"><a id="a201085b066f5501d1bcedbe3a9e9910f"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_vhost_scsi_dev_construct</b> (const char *name, uint64_t cpumask)</td></tr>
-<tr class="separator:a201085b066f5501d1bcedbe3a9e9910f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01b54a11439216fb05196474e3ee20d1"><td class="memItemLeft" align="right" valign="top"><a id="a01b54a11439216fb05196474e3ee20d1"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_vhost_scsi_dev_construct</b> (const char *name, const char *cpumask)</td></tr>
+<tr class="separator:a01b54a11439216fb05196474e3ee20d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab3f0d8aa45d3166969e55998872d20c5"><td class="memItemLeft" align="right" valign="top"><a id="ab3f0d8aa45d3166969e55998872d20c5"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_vhost_scsi_dev_remove</b> (struct spdk_vhost_dev *vdev)</td></tr>
 <tr class="separator:ab3f0d8aa45d3166969e55998872d20c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -138,9 +141,9 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_vhost_scsi_dev_ad
 <tr class="memitem:ab1dad26bf42deaaa7629967dd5dc3ace"><td class="memItemLeft" align="right" valign="top"><a id="ab1dad26bf42deaaa7629967dd5dc3ace"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_vhost_scsi_dev_remove_dev</b> (struct spdk_vhost_dev *vdev, unsigned scsi_dev_num)</td></tr>
 <tr class="separator:ab1dad26bf42deaaa7629967dd5dc3ace"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0d5a4beec062e8b8ea7decbefc93355a"><td class="memItemLeft" align="right" valign="top"><a id="a0d5a4beec062e8b8ea7decbefc93355a"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_vhost_blk_construct</b> (const char *name, uint64_t cpumask, const char *dev_name, bool readonly)</td></tr>
-<tr class="separator:a0d5a4beec062e8b8ea7decbefc93355a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ec56730c6a42b0a186131526026e619"><td class="memItemLeft" align="right" valign="top"><a id="a5ec56730c6a42b0a186131526026e619"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_vhost_blk_construct</b> (const char *name, const char *cpumask, const char *dev_name, bool readonly)</td></tr>
+<tr class="separator:a5ec56730c6a42b0a186131526026e619"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a22fb61cd32b772e6dc02bf853ff48e30"><td class="memItemLeft" align="right" valign="top"><a id="a22fb61cd32b772e6dc02bf853ff48e30"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_vhost_blk_destroy</b> (struct spdk_vhost_dev *dev)</td></tr>
 <tr class="separator:a22fb61cd32b772e6dc02bf853ff48e30"><td class="memSeparator" colspan="2">&#160;</td></tr>

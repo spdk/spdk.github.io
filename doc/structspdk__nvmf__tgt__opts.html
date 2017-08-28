@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="Content-Type" content="text/xhtml; charset=utf-8">
   <meta name="generator" content="Doxygen 1.8.13">
-  <title>SPDK: spdk_nvmf_host Struct Reference</title>
+  <title>SPDK: spdk_nvmf_tgt_opts Struct Reference</title>
   <script type="text/javascript" src="jquery.js"></script>
   <script type="text/javascript" src="dynsections.js"></script>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,900" type="text/css">
@@ -47,6 +47,12 @@
                 </a>
               </li>
               <li role="presentation">
+                <a href="https://ci.spdk.io/status/">
+                  <i class="glyphicon glyphicon-wrench"></i>
+                  <span class="box-name">CI status</span>
+                </a>
+              </li>
+              <li role="presentation">
                 <a href="http://www.spdk.io/community/">
                   <i class="glyphicon glyphicon-envelope"></i>
                   <span class="box-name">community</span>
@@ -79,24 +85,26 @@
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Data Fields</a>  </div>
   <div class="headertitle">
-<div class="title">spdk_nvmf_host Struct Reference</div>  </div>
+<div class="title">spdk_nvmf_tgt_opts Struct Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
-Public Member Functions</h2></td></tr>
-<tr class="memitem:a35061462c2ab1fcfb3cd069167db6029"><td class="memItemLeft" align="right" valign="top"><a id="a35061462c2ab1fcfb3cd069167db6029"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>TAILQ_ENTRY</b> (<a class="el" href="structspdk__nvmf__host.html">spdk_nvmf_host</a>) link</td></tr>
-<tr class="separator:a35061462c2ab1fcfb3cd069167db6029"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:a64c4b5cd488abb03c23d5c92bbc45e48"><td class="memItemLeft" align="right" valign="top"><a id="a64c4b5cd488abb03c23d5c92bbc45e48"></a>
-char *&#160;</td><td class="memItemRight" valign="bottom"><b>nqn</b></td></tr>
-<tr class="separator:a64c4b5cd488abb03c23d5c92bbc45e48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91e4616c597db06eaebb975a690a7e49"><td class="memItemLeft" align="right" valign="top"><a id="a91e4616c597db06eaebb975a690a7e49"></a>
+uint16_t&#160;</td><td class="memItemRight" valign="bottom"><b>max_queue_depth</b></td></tr>
+<tr class="separator:a91e4616c597db06eaebb975a690a7e49"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72bd5fb022bc78170f525847246a3a05"><td class="memItemLeft" align="right" valign="top"><a id="a72bd5fb022bc78170f525847246a3a05"></a>
+uint16_t&#160;</td><td class="memItemRight" valign="bottom"><b>max_qpairs_per_ctrlr</b></td></tr>
+<tr class="separator:a72bd5fb022bc78170f525847246a3a05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af39b51b0f1d911a7d619e8ac54cb1752"><td class="memItemLeft" align="right" valign="top"><a id="af39b51b0f1d911a7d619e8ac54cb1752"></a>
+uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>in_capsule_data_size</b></td></tr>
+<tr class="separator:af39b51b0f1d911a7d619e8ac54cb1752"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1cb9860a211ac733d2cde8e56957cba"><td class="memItemLeft" align="right" valign="top"><a id="ae1cb9860a211ac733d2cde8e56957cba"></a>
+uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>max_io_size</b></td></tr>
+<tr class="separator:ae1cb9860a211ac733d2cde8e56957cba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li><a class="el" href="nvmf_8h.html">nvmf.h</a></li>

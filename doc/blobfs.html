@@ -47,6 +47,12 @@
                 </a>
               </li>
               <li role="presentation">
+                <a href="https://ci.spdk.io/status/">
+                  <i class="glyphicon glyphicon-wrench"></i>
+                  <span class="box-name">CI status</span>
+                </a>
+              </li>
+              <li role="presentation">
                 <a href="http://www.spdk.io/community/">
                   <i class="glyphicon glyphicon-envelope"></i>
                   <span class="box-name">community</span>
@@ -91,7 +97,7 @@ RocksDB Integration</h1>
 <p class="startli">git clone <a href="https://github.com/spdk/spdk.git">https://github.com/spdk/spdk.git</a> cd spdk ./configure make</p>
 </li>
 <li><p class="startli">Into a separate directory, clone the RocksDB git repo from the SPDK GitHub fork. Make sure you check out the spdk branch.</p>
-<p class="startli">cd .. git clone -b spdk <a href="https://github.com/spdk/rocksdb.git">https://github.com/spdk/rocksdb.git</a></p>
+<p class="startli">cd .. git clone -b spdk-v5.6.1 <a href="https://github.com/spdk/rocksdb.git">https://github.com/spdk/rocksdb.git</a></p>
 </li>
 <li><p class="startli">Build RocksDB. Only the db_bench benchmarking tool is integrated with BlobFS. (Note: add "DEBUG_LEVEL=0" for a release build.)</p>
 <p class="startli">cd rocksdb make db_bench SPDK_DIR=path/to/spdk</p>

@@ -47,6 +47,12 @@
                 </a>
               </li>
               <li role="presentation">
+                <a href="https://ci.spdk.io/status/">
+                  <i class="glyphicon glyphicon-wrench"></i>
+                  <span class="box-name">CI status</span>
+                </a>
+              </li>
+              <li role="presentation">
                 <a href="http://www.spdk.io/community/">
                   <i class="glyphicon glyphicon-envelope"></i>
                   <span class="box-name">community</span>
@@ -212,6 +218,9 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_dump_config_
 <tr class="memitem:ab4d238484b372a77ba130fbb70f83519"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev_8h.html#ab4d238484b372a77ba130fbb70f83519">spdk_bdev_get_buf_align</a> (const struct spdk_bdev *bdev)</td></tr>
 <tr class="memdesc:ab4d238484b372a77ba130fbb70f83519"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get minimum I/O buffer address alignment for a bdev.  <a href="#ab4d238484b372a77ba130fbb70f83519">More...</a><br /></td></tr>
 <tr class="separator:ab4d238484b372a77ba130fbb70f83519"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa79625889e23318204d235da36a4fa02"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev_8h.html#aa79625889e23318204d235da36a4fa02">spdk_bdev_get_optimal_io_boundary</a> (const struct spdk_bdev *bdev)</td></tr>
+<tr class="memdesc:aa79625889e23318204d235da36a4fa02"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get optimal I/O boundary for a bdev.  <a href="#aa79625889e23318204d235da36a4fa02">More...</a><br /></td></tr>
+<tr class="separator:aa79625889e23318204d235da36a4fa02"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a93f6d6ce09da384501f09a49581caa37"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev_8h.html#a93f6d6ce09da384501f09a49581caa37">spdk_bdev_has_write_cache</a> (const struct spdk_bdev *bdev)</td></tr>
 <tr class="memdesc:a93f6d6ce09da384501f09a49581caa37"><td class="mdescLeft">&#160;</td><td class="mdescRight">Query whether block device has an enabled write cache.  <a href="#a93f6d6ce09da384501f09a49581caa37">More...</a><br /></td></tr>
 <tr class="separator:a93f6d6ce09da384501f09a49581caa37"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -619,6 +628,33 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_dump_config_
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Size of bdev in logical blocks.</dd></dl>
 <p>Logical blocks are numbered from 0 to spdk_bdev_get_num_blocks(bdev) - 1, inclusive. </p>
+
+</div>
+</div>
+<a id="aa79625889e23318204d235da36a4fa02"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa79625889e23318204d235da36a4fa02">&#9670;&nbsp;</a></span>spdk_bdev_get_optimal_io_boundary()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t spdk_bdev_get_optimal_io_boundary </td>
+          <td>(</td>
+          <td class="paramtype">const struct spdk_bdev *&#160;</td>
+          <td class="paramname"><em>bdev</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get optimal I/O boundary for a bdev. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bdev</td><td>Block device to query. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Optimal I/O boundary in blocks that should not be crossed for best performance, or 0 if no optimal boundary is reported. </dd></dl>
 
 </div>
 </div>

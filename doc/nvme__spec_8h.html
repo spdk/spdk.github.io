@@ -47,6 +47,12 @@
                 </a>
               </li>
               <li role="presentation">
+                <a href="https://ci.spdk.io/status/">
+                  <i class="glyphicon glyphicon-wrench"></i>
+                  <span class="box-name">CI status</span>
+                </a>
+              </li>
+              <li role="presentation">
                 <a href="http://www.spdk.io/community/">
                   <i class="glyphicon glyphicon-envelope"></i>
                   <span class="box-name">community</span>
@@ -204,6 +210,15 @@ Macros</h2></td></tr>
 #define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme__spec_8h.html#ad3ef13320c82eaf4abdef6aa56e8b5ba">SPDK_NVME_NSSR_VALUE</a>&#160;&#160;&#160;0x4E564D65</td></tr>
 <tr class="memdesc:ad3ef13320c82eaf4abdef6aa56e8b5ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Value to write to NSSR to indicate a NVM subsystem reset ("NVMe") <br /></td></tr>
 <tr class="separator:ad3ef13320c82eaf4abdef6aa56e8b5ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5f4e2315b815c9a35831c7b6d6e59ec"><td class="memItemLeft" align="right" valign="top"><a id="ab5f4e2315b815c9a35831c7b6d6e59ec"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_NVME_CTRLR_SN_LEN</b>&#160;&#160;&#160;20</td></tr>
+<tr class="separator:ab5f4e2315b815c9a35831c7b6d6e59ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e0d9b18cd903c7f3dcea29744494388"><td class="memItemLeft" align="right" valign="top"><a id="a0e0d9b18cd903c7f3dcea29744494388"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_NVME_CTRLR_MN_LEN</b>&#160;&#160;&#160;40</td></tr>
+<tr class="separator:a0e0d9b18cd903c7f3dcea29744494388"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada253b591ac69e8446d4c4461b15b892"><td class="memItemLeft" align="right" valign="top"><a id="ada253b591ac69e8446d4c4461b15b892"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_NVME_CTRLR_FR_LEN</b>&#160;&#160;&#160;8</td></tr>
+<tr class="separator:ada253b591ac69e8446d4c4461b15b892"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a62b2e9dfaeda9fac684e7b456971c710"><td class="memItemLeft" align="right" valign="top"><a id="a62b2e9dfaeda9fac684e7b456971c710"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_cpl_is_error</b>(cpl)&#160;&#160;&#160;((cpl)-&gt;status.sc != 0 || (cpl)-&gt;status.sct != 0)</td></tr>
 <tr class="separator:a62b2e9dfaeda9fac684e7b456971c710"><td class="memSeparator" colspan="2">&#160;</td></tr>

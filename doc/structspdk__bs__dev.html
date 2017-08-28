@@ -47,6 +47,12 @@
                 </a>
               </li>
               <li role="presentation">
+                <a href="https://ci.spdk.io/status/">
+                  <i class="glyphicon glyphicon-wrench"></i>
+                  <span class="box-name">CI status</span>
+                </a>
+              </li>
+              <li role="presentation">
                 <a href="http://www.spdk.io/community/">
                   <i class="glyphicon glyphicon-envelope"></i>
                   <span class="box-name">community</span>
@@ -102,6 +108,12 @@ void(*&#160;</td><td class="memItemRight" valign="bottom"><b>read</b> )(struct <
 <tr class="memitem:a20356550a4ade5c4f8954c57e5d679e2"><td class="memItemLeft" align="right" valign="top"><a id="a20356550a4ade5c4f8954c57e5d679e2"></a>
 void(*&#160;</td><td class="memItemRight" valign="bottom"><b>write</b> )(struct <a class="el" href="structspdk__bs__dev.html">spdk_bs_dev</a> *dev, struct spdk_io_channel *channel, void *payload, uint64_t lba, uint32_t lba_count, struct <a class="el" href="structspdk__bs__dev__cb__args.html">spdk_bs_dev_cb_args</a> *cb_args)</td></tr>
 <tr class="separator:a20356550a4ade5c4f8954c57e5d679e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75564a4d0f1815b99c1fe1e1965b3770"><td class="memItemLeft" align="right" valign="top"><a id="a75564a4d0f1815b99c1fe1e1965b3770"></a>
+void(*&#160;</td><td class="memItemRight" valign="bottom"><b>readv</b> )(struct <a class="el" href="structspdk__bs__dev.html">spdk_bs_dev</a> *dev, struct spdk_io_channel *channel, struct iovec *iov, int iovcnt, uint64_t lba, uint32_t lba_count, struct <a class="el" href="structspdk__bs__dev__cb__args.html">spdk_bs_dev_cb_args</a> *cb_args)</td></tr>
+<tr class="separator:a75564a4d0f1815b99c1fe1e1965b3770"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a528b038c2389cf71b6739ac37ed6e7f6"><td class="memItemLeft" align="right" valign="top"><a id="a528b038c2389cf71b6739ac37ed6e7f6"></a>
+void(*&#160;</td><td class="memItemRight" valign="bottom"><b>writev</b> )(struct <a class="el" href="structspdk__bs__dev.html">spdk_bs_dev</a> *dev, struct spdk_io_channel *channel, struct iovec *iov, int iovcnt, uint64_t lba, uint32_t lba_count, struct <a class="el" href="structspdk__bs__dev__cb__args.html">spdk_bs_dev_cb_args</a> *cb_args)</td></tr>
+<tr class="separator:a528b038c2389cf71b6739ac37ed6e7f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0447419a84f9f1b4e883d9111d61e8ec"><td class="memItemLeft" align="right" valign="top"><a id="a0447419a84f9f1b4e883d9111d61e8ec"></a>
 void(*&#160;</td><td class="memItemRight" valign="bottom"><b>flush</b> )(struct <a class="el" href="structspdk__bs__dev.html">spdk_bs_dev</a> *dev, struct spdk_io_channel *channel, struct <a class="el" href="structspdk__bs__dev__cb__args.html">spdk_bs_dev_cb_args</a> *cb_args)</td></tr>
 <tr class="separator:a0447419a84f9f1b4e883d9111d61e8ec"><td class="memSeparator" colspan="2">&#160;</td></tr>

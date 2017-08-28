@@ -47,6 +47,12 @@
                 </a>
               </li>
               <li role="presentation">
+                <a href="https://ci.spdk.io/status/">
+                  <i class="glyphicon glyphicon-wrench"></i>
+                  <span class="box-name">CI status</span>
+                </a>
+              </li>
+              <li role="presentation">
                 <a href="http://www.spdk.io/community/">
                   <i class="glyphicon glyphicon-envelope"></i>
                   <span class="box-name">community</span>
@@ -152,6 +158,9 @@
 </li>
 <li>spdk_bdev_get_num_blocks()
 : <a class="el" href="bdev_8h.html#a86568eca8f0b4d0dc9bc59c5138fc7a5">bdev.h</a>
+</li>
+<li>spdk_bdev_get_optimal_io_boundary()
+: <a class="el" href="bdev_8h.html#aa79625889e23318204d235da36a4fa02">bdev.h</a>
 </li>
 <li>spdk_bdev_get_product_name()
 : <a class="el" href="bdev_8h.html#a1cb4d1f8822c30be8c5d9c5dc3e62483">bdev.h</a>
@@ -807,6 +816,9 @@
 <li>SPDK_NVME_NS_FLUSH_SUPPORTED
 : <a class="el" href="nvme_8h.html#a018f3b986b4345ee0c6931be9718c163ad403aafc70c00560a1db768029933400">nvme.h</a>
 </li>
+<li>spdk_nvme_ns_get_ctrlr()
+: <a class="el" href="nvme_8h.html#a2640aeebb82108e9b507dcccb1e564c2">nvme.h</a>
+</li>
 <li>spdk_nvme_ns_get_data()
 : <a class="el" href="nvme_8h.html#ab1863b5dccf2bcc49fe92275bc1e5a2a">nvme.h</a>
 </li>
@@ -827,6 +839,9 @@
 </li>
 <li>spdk_nvme_ns_get_num_sectors()
 : <a class="el" href="nvme_8h.html#a7c522609f730db26f66e7f5b6b3501e0">nvme.h</a>
+</li>
+<li>spdk_nvme_ns_get_optimal_io_boundary()
+: <a class="el" href="nvme_8h.html#af58edc3021f8adcbecce5d3ebc5b6789">nvme.h</a>
 </li>
 <li>spdk_nvme_ns_get_pi_type()
 : <a class="el" href="nvme_8h.html#a85806a7605a104a705e7f9d3d087e4cb">nvme.h</a>
@@ -963,6 +978,18 @@
 <li>SPDK_NVMF_CTRLR_MODEL_STATIC
 : <a class="el" href="nvme__spec_8h.html#a2b71fb615deb505826eaeddd093e06bca387c04ba873422f553eec7360e4ea599">nvme_spec.h</a>
 </li>
+<li>spdk_nvmf_host_get_nqn()
+: <a class="el" href="nvmf_8h.html#acec4ed75ff9a25a5477d40f43a430677">nvmf.h</a>
+</li>
+<li>spdk_nvmf_listener_get_trid()
+: <a class="el" href="nvmf_8h.html#a6d20b0173b3c6047ad15d5972af867c5">nvmf.h</a>
+</li>
+<li>spdk_nvmf_ns_get_bdev()
+: <a class="el" href="nvmf_8h.html#af3575fee4a9db1b3c8bacbac8b605358">nvmf.h</a>
+</li>
+<li>spdk_nvmf_ns_get_id()
+: <a class="el" href="nvmf_8h.html#afdcd2be73f2653c6c14141c4cb481fe2">nvmf.h</a>
+</li>
 <li>spdk_nvmf_rdma_cms
 : <a class="el" href="nvmf__spec_8h.html#af113f4f57bccb99a0b89f5c715f1e3c3">nvmf_spec.h</a>
 </li>
@@ -996,8 +1023,41 @@
 <li>SPDK_NVMF_RDMA_QPTYPE_RELIABLE_DATAGRAM
 : <a class="el" href="nvmf__spec_8h.html#a9909d207f41934dacbc0917f083f2d43a07d9bc576d05772139a68c6e02e48429">nvmf_spec.h</a>
 </li>
+<li>spdk_nvmf_subsystem_add_host()
+: <a class="el" href="nvmf_8h.html#a19b3442b7eb75c234c3e3090d2b5add3">nvmf.h</a>
+</li>
+<li>spdk_nvmf_subsystem_add_listener()
+: <a class="el" href="nvmf_8h.html#aa6d3a2c6de1c3cfe9daa1485c40f1fdb">nvmf.h</a>
+</li>
 <li>spdk_nvmf_subsystem_add_ns()
 : <a class="el" href="nvmf_8h.html#a0603a4fbabccbaa9d72780eca7c08420">nvmf.h</a>
+</li>
+<li>spdk_nvmf_subsystem_get_first_host()
+: <a class="el" href="nvmf_8h.html#a40147e6c89b37d85b2cce4cdb05ce787">nvmf.h</a>
+</li>
+<li>spdk_nvmf_subsystem_get_first_listener()
+: <a class="el" href="nvmf_8h.html#ab1bccfb86fd4d727c2943ab810d5d862">nvmf.h</a>
+</li>
+<li>spdk_nvmf_subsystem_get_first_ns()
+: <a class="el" href="nvmf_8h.html#ab797c6df2dc8fab9833de1711b6fe7f4">nvmf.h</a>
+</li>
+<li>spdk_nvmf_subsystem_get_next_host()
+: <a class="el" href="nvmf_8h.html#a5265a9a3d6338c43d9fa03afd1fa9b12">nvmf.h</a>
+</li>
+<li>spdk_nvmf_subsystem_get_next_listener()
+: <a class="el" href="nvmf_8h.html#ae1230525414309c87409b28484bdf964">nvmf.h</a>
+</li>
+<li>spdk_nvmf_subsystem_get_next_ns()
+: <a class="el" href="nvmf_8h.html#a7c2d718965cc1e681bb1cc081a377882">nvmf.h</a>
+</li>
+<li>spdk_nvmf_subsystem_get_ns()
+: <a class="el" href="nvmf_8h.html#a36c4e50d11e12f45d171fe952fcedb03">nvmf.h</a>
+</li>
+<li>spdk_nvmf_subsystem_host_allowed()
+: <a class="el" href="nvmf_8h.html#a5f8ded88254cb17d8ee5c378f0e35a25">nvmf.h</a>
+</li>
+<li>spdk_nvmf_subsystem_listener_allowed()
+: <a class="el" href="nvmf_8h.html#a7c0ac0adaada5f775849071d1c26037a">nvmf.h</a>
 </li>
 <li>spdk_nvmf_subsystem_start()
 : <a class="el" href="nvmf_8h.html#accc21256a81f2052aad9a3476edbc503">nvmf.h</a>
@@ -1010,6 +1070,21 @@
 </li>
 <li>SPDK_NVMF_SUBTYPE_NVME
 : <a class="el" href="nvmf__spec_8h.html#a808272f050cc373f3a90871c1528afd4a3077cae3ec6525a14d3c3c5005a6326f">nvmf_spec.h</a>
+</li>
+<li>spdk_nvmf_tgt_accept()
+: <a class="el" href="nvmf_8h.html#abe57cf127dca189496274350584cc783">nvmf.h</a>
+</li>
+<li>spdk_nvmf_tgt_create()
+: <a class="el" href="nvmf_8h.html#aa056e2c70b80bd611e21a815eae000e0">nvmf.h</a>
+</li>
+<li>spdk_nvmf_tgt_destroy()
+: <a class="el" href="nvmf_8h.html#a46973ac11e8b70770b0b4cc8f65a74f7">nvmf.h</a>
+</li>
+<li>spdk_nvmf_tgt_find_subsystem()
+: <a class="el" href="nvmf_8h.html#aae62b7fa6ac05a6ad022007f60068d16">nvmf.h</a>
+</li>
+<li>spdk_nvmf_tgt_listen()
+: <a class="el" href="nvmf_8h.html#ab4b702c20034dc7b83c30b045ea83216">nvmf.h</a>
 </li>
 <li>spdk_nvmf_treq_secure_channel
 : <a class="el" href="nvmf__spec_8h.html#a0a92190b8c6824182974e20f84ee0a3c">nvmf_spec.h</a>

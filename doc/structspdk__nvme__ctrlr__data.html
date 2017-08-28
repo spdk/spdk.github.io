@@ -47,6 +47,12 @@
                 </a>
               </li>
               <li role="presentation">
+                <a href="https://ci.spdk.io/status/">
+                  <i class="glyphicon glyphicon-wrench"></i>
+                  <span class="box-name">CI status</span>
+                </a>
+              </li>
+              <li role="presentation">
                 <a href="http://www.spdk.io/community/">
                   <i class="glyphicon glyphicon-envelope"></i>
                   <span class="box-name">community</span>
@@ -104,18 +110,18 @@ uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__ctrlr__data.html#a98bca935ffa3fbc83fd504055b8a228f">ssvid</a></td></tr>
 <tr class="memdesc:a98bca935ffa3fbc83fd504055b8a228f"><td class="mdescLeft">&#160;</td><td class="mdescRight">pci subsystem vendor id <br /></td></tr>
 <tr class="separator:a98bca935ffa3fbc83fd504055b8a228f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3e4af8d2827bf96c0dda567a9181f962"><td class="memItemLeft" align="right" valign="top"><a id="a3e4af8d2827bf96c0dda567a9181f962"></a>
-int8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__ctrlr__data.html#a3e4af8d2827bf96c0dda567a9181f962">sn</a> [20]</td></tr>
-<tr class="memdesc:a3e4af8d2827bf96c0dda567a9181f962"><td class="mdescLeft">&#160;</td><td class="mdescRight">serial number <br /></td></tr>
-<tr class="separator:a3e4af8d2827bf96c0dda567a9181f962"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac4c7efdcb33ea0ea7325adca6d929e6c"><td class="memItemLeft" align="right" valign="top"><a id="ac4c7efdcb33ea0ea7325adca6d929e6c"></a>
-int8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__ctrlr__data.html#ac4c7efdcb33ea0ea7325adca6d929e6c">mn</a> [40]</td></tr>
-<tr class="memdesc:ac4c7efdcb33ea0ea7325adca6d929e6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">model number <br /></td></tr>
-<tr class="separator:ac4c7efdcb33ea0ea7325adca6d929e6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0b81054d255a99353dcda8791a2af5e8"><td class="memItemLeft" align="right" valign="top"><a id="a0b81054d255a99353dcda8791a2af5e8"></a>
-uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__ctrlr__data.html#a0b81054d255a99353dcda8791a2af5e8">fr</a> [8]</td></tr>
-<tr class="memdesc:a0b81054d255a99353dcda8791a2af5e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">firmware revision <br /></td></tr>
-<tr class="separator:a0b81054d255a99353dcda8791a2af5e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a230a3000c8285a5d94996f712379e6d9"><td class="memItemLeft" align="right" valign="top"><a id="a230a3000c8285a5d94996f712379e6d9"></a>
+int8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__ctrlr__data.html#a230a3000c8285a5d94996f712379e6d9">sn</a> [SPDK_NVME_CTRLR_SN_LEN]</td></tr>
+<tr class="memdesc:a230a3000c8285a5d94996f712379e6d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">serial number <br /></td></tr>
+<tr class="separator:a230a3000c8285a5d94996f712379e6d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acbf277bda70785f22e70aae2196c2e92"><td class="memItemLeft" align="right" valign="top"><a id="acbf277bda70785f22e70aae2196c2e92"></a>
+int8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__ctrlr__data.html#acbf277bda70785f22e70aae2196c2e92">mn</a> [SPDK_NVME_CTRLR_MN_LEN]</td></tr>
+<tr class="memdesc:acbf277bda70785f22e70aae2196c2e92"><td class="mdescLeft">&#160;</td><td class="mdescRight">model number <br /></td></tr>
+<tr class="separator:acbf277bda70785f22e70aae2196c2e92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37704a665cf4f0a397f01ff3e97995a0"><td class="memItemLeft" align="right" valign="top"><a id="a37704a665cf4f0a397f01ff3e97995a0"></a>
+uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__ctrlr__data.html#a37704a665cf4f0a397f01ff3e97995a0">fr</a> [SPDK_NVME_CTRLR_FR_LEN]</td></tr>
+<tr class="memdesc:a37704a665cf4f0a397f01ff3e97995a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">firmware revision <br /></td></tr>
+<tr class="separator:a37704a665cf4f0a397f01ff3e97995a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aafb1c02f48a1407a4700432fe9f9d1a3"><td class="memItemLeft" align="right" valign="top"><a id="aafb1c02f48a1407a4700432fe9f9d1a3"></a>
 uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__ctrlr__data.html#aafb1c02f48a1407a4700432fe9f9d1a3">rab</a></td></tr>
 <tr class="memdesc:aafb1c02f48a1407a4700432fe9f9d1a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">recommended arbitration burst <br /></td></tr>

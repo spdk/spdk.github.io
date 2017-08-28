@@ -47,6 +47,12 @@
                 </a>
               </li>
               <li role="presentation">
+                <a href="https://ci.spdk.io/status/">
+                  <i class="glyphicon glyphicon-wrench"></i>
+                  <span class="box-name">CI status</span>
+                </a>
+              </li>
+              <li role="presentation">
                 <a href="http://www.spdk.io/community/">
                   <i class="glyphicon glyphicon-envelope"></i>
                   <span class="box-name">community</span>
@@ -285,6 +291,9 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_
 <tr class="memitem:a54052303ef2870d6d1856f79ef6ff88a"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a54052303ef2870d6d1856f79ef6ff88a">spdk_nvme_ns_get_id</a> (struct spdk_nvme_ns *ns)</td></tr>
 <tr class="memdesc:a54052303ef2870d6d1856f79ef6ff88a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the namespace id (index number) from the given namespace handle.  <a href="#a54052303ef2870d6d1856f79ef6ff88a">More...</a><br /></td></tr>
 <tr class="separator:a54052303ef2870d6d1856f79ef6ff88a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2640aeebb82108e9b507dcccb1e564c2"><td class="memItemLeft" align="right" valign="top">struct spdk_nvme_ctrlr *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a2640aeebb82108e9b507dcccb1e564c2">spdk_nvme_ns_get_ctrlr</a> (struct spdk_nvme_ns *ns)</td></tr>
+<tr class="memdesc:a2640aeebb82108e9b507dcccb1e564c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the Controller with which this namespace is associated.  <a href="#a2640aeebb82108e9b507dcccb1e564c2">More...</a><br /></td></tr>
+<tr class="separator:a2640aeebb82108e9b507dcccb1e564c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af755eb3e5a5f767a5bdc544d85667898"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#af755eb3e5a5f767a5bdc544d85667898">spdk_nvme_ns_is_active</a> (struct spdk_nvme_ns *ns)</td></tr>
 <tr class="memdesc:af755eb3e5a5f767a5bdc544d85667898"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine whether a namespace is active.  <a href="#af755eb3e5a5f767a5bdc544d85667898">More...</a><br /></td></tr>
 <tr class="separator:af755eb3e5a5f767a5bdc544d85667898"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -312,6 +321,9 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_
 <tr class="memitem:a42040dca95489218417539d2c08d815e"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="nvme__spec_8h.html#a1c06fbd66f7572c43c51e6f106215b8d">spdk_nvme_dealloc_logical_block_read_value</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a42040dca95489218417539d2c08d815e">spdk_nvme_ns_get_dealloc_logical_block_read_value</a> (struct spdk_nvme_ns *ns)</td></tr>
 <tr class="memdesc:a42040dca95489218417539d2c08d815e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine the value returned when reading deallocated blocks.  <a href="#a42040dca95489218417539d2c08d815e">More...</a><br /></td></tr>
 <tr class="separator:a42040dca95489218417539d2c08d815e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af58edc3021f8adcbecce5d3ebc5b6789"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#af58edc3021f8adcbecce5d3ebc5b6789">spdk_nvme_ns_get_optimal_io_boundary</a> (struct spdk_nvme_ns *ns)</td></tr>
+<tr class="memdesc:af58edc3021f8adcbecce5d3ebc5b6789"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the optimal I/O boundary, in blocks, for the given namespace.  <a href="#af58edc3021f8adcbecce5d3ebc5b6789">More...</a><br /></td></tr>
+<tr class="separator:af58edc3021f8adcbecce5d3ebc5b6789"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5eff1c1b6fbfb348a1f158b3cf70626f"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a5eff1c1b6fbfb348a1f158b3cf70626f">spdk_nvme_ns_get_flags</a> (struct spdk_nvme_ns *ns)</td></tr>
 <tr class="memdesc:a5eff1c1b6fbfb348a1f158b3cf70626f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the flags for the given namespace.  <a href="#a5eff1c1b6fbfb348a1f158b3cf70626f">More...</a><br /></td></tr>
 <tr class="separator:a5eff1c1b6fbfb348a1f158b3cf70626f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -2966,6 +2978,27 @@ int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_retry_co
 
 </div>
 </div>
+<a id="a2640aeebb82108e9b507dcccb1e564c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2640aeebb82108e9b507dcccb1e564c2">&#9670;&nbsp;</a></span>spdk_nvme_ns_get_ctrlr()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct spdk_nvme_ctrlr* spdk_nvme_ns_get_ctrlr </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_nvme_ns *&#160;</td>
+          <td class="paramname"><em>ns</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the Controller with which this namespace is associated. </p>
+<p>This function is thread safe and can be called at any point while the controller is attached to the SPDK NVMe driver. </p>
+
+</div>
+</div>
 <a id="ab1863b5dccf2bcc49fe92275bc1e5a2a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab1863b5dccf2bcc49fe92275bc1e5a2a">&#9670;&nbsp;</a></span>spdk_nvme_ns_get_data()</h2>
 
@@ -3111,6 +3144,28 @@ int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_retry_co
 
 <p>Get the number of sectors for the given namespace. </p>
 <p>This function is thread safe and can be called at any point while the controller is attached to the SPDK NVMe driver. </p>
+
+</div>
+</div>
+<a id="af58edc3021f8adcbecce5d3ebc5b6789"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af58edc3021f8adcbecce5d3ebc5b6789">&#9670;&nbsp;</a></span>spdk_nvme_ns_get_optimal_io_boundary()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t spdk_nvme_ns_get_optimal_io_boundary </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_nvme_ns *&#160;</td>
+          <td class="paramname"><em>ns</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the optimal I/O boundary, in blocks, for the given namespace. </p>
+<dl class="section return"><dt>Returns</dt><dd>Optimal granularity of I/O commands, in blocks, or 0 if no optimal granularity is reported.</dd></dl>
+<p>Read and write commands should not cross the optimal I/O boundary for best performance. </p>
 
 </div>
 </div>
