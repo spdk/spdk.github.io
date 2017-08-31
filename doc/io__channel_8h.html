@@ -125,15 +125,19 @@ typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_channe
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a7d65cb9360ee10b47a62801e09cb6352"><td class="memItemLeft" align="right" valign="top">struct spdk_thread *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="io__channel_8h.html#a7d65cb9360ee10b47a62801e09cb6352">spdk_allocate_thread</a> (spdk_thread_pass_msg fn, void *thread_ctx)</td></tr>
-<tr class="memdesc:a7d65cb9360ee10b47a62801e09cb6352"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the calling thread for I/O channel allocation.  <a href="#a7d65cb9360ee10b47a62801e09cb6352">More...</a><br /></td></tr>
-<tr class="separator:a7d65cb9360ee10b47a62801e09cb6352"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42b58701b6440005e866e6e7dd080bae"><td class="memItemLeft" align="right" valign="top">struct spdk_thread *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="io__channel_8h.html#a42b58701b6440005e866e6e7dd080bae">spdk_allocate_thread</a> (spdk_thread_pass_msg fn, void *thread_ctx, const char *name)</td></tr>
+<tr class="memdesc:a42b58701b6440005e866e6e7dd080bae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the calling thread for I/O channel allocation.  <a href="#a42b58701b6440005e866e6e7dd080bae">More...</a><br /></td></tr>
+<tr class="separator:a42b58701b6440005e866e6e7dd080bae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adfbbc16ee4c35466974ca6d5b5c6ee7d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="io__channel_8h.html#adfbbc16ee4c35466974ca6d5b5c6ee7d">spdk_free_thread</a> (void)</td></tr>
 <tr class="memdesc:adfbbc16ee4c35466974ca6d5b5c6ee7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Releases any resources related to the calling thread for I/O channel allocation.  <a href="#adfbbc16ee4c35466974ca6d5b5c6ee7d">More...</a><br /></td></tr>
 <tr class="separator:adfbbc16ee4c35466974ca6d5b5c6ee7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a34754a98debd5e095bf06889fbaed6aa"><td class="memItemLeft" align="right" valign="top">struct spdk_thread *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="io__channel_8h.html#a34754a98debd5e095bf06889fbaed6aa">spdk_get_thread</a> (void)</td></tr>
 <tr class="memdesc:a34754a98debd5e095bf06889fbaed6aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a handle to the current thread.  <a href="#a34754a98debd5e095bf06889fbaed6aa">More...</a><br /></td></tr>
 <tr class="separator:a34754a98debd5e095bf06889fbaed6aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae367048fa89366e845d72015064e6f76"><td class="memItemLeft" align="right" valign="top"><a id="ae367048fa89366e845d72015064e6f76"></a>
+const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="io__channel_8h.html#ae367048fa89366e845d72015064e6f76">spdk_thread_get_name</a> (const struct spdk_thread *thread)</td></tr>
+<tr class="memdesc:ae367048fa89366e845d72015064e6f76"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a thread's name. <br /></td></tr>
+<tr class="separator:ae367048fa89366e845d72015064e6f76"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6aa832fea18a9160429b5383f36d8539"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="io__channel_8h.html#a6aa832fea18a9160429b5383f36d8539">spdk_thread_send_msg</a> (const struct spdk_thread *thread, spdk_thread_fn fn, void *ctx)</td></tr>
 <tr class="memdesc:a6aa832fea18a9160429b5383f36d8539"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a message to the given thread.  <a href="#a6aa832fea18a9160429b5383f36d8539">More...</a><br /></td></tr>
 <tr class="separator:a6aa832fea18a9160429b5383f36d8539"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -164,8 +168,8 @@ struct spdk_thread *&#160;</td><td class="memItemRight" valign="bottom"><a class
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>IO channel. </p>
 </div><h2 class="groupheader">Function Documentation</h2>
-<a id="a7d65cb9360ee10b47a62801e09cb6352"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7d65cb9360ee10b47a62801e09cb6352">&#9670;&nbsp;</a></span>spdk_allocate_thread()</h2>
+<a id="a42b58701b6440005e866e6e7dd080bae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a42b58701b6440005e866e6e7dd080bae">&#9670;&nbsp;</a></span>spdk_allocate_thread()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -180,7 +184,13 @@ struct spdk_thread *&#160;</td><td class="memItemRight" valign="bottom"><a class
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>thread_ctx</em>&#160;</td>
+          <td class="paramname"><em>thread_ctx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>name</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -195,6 +205,7 @@ struct spdk_thread *&#160;</td><td class="memItemRight" valign="bottom"><a class
   <table class="params">
     <tr><td class="paramname">fn</td><td>A function that may be called from any thread and is passed a function pointer (spdk_thread_fn) that must be called on the same thread that spdk_allocate_thread was called from. </td></tr>
     <tr><td class="paramname">thread_ctx</td><td>Context that will be passed to fn. </td></tr>
+    <tr><td class="paramname">name</td><td>Human-readable name for the thread; can be retrieved with <a class="el" href="io__channel_8h.html#ae367048fa89366e845d72015064e6f76" title="Get a thread&#39;s name. ">spdk_thread_get_name()</a>. The string is copied, so the pointed-to data only needs to be valid during the <a class="el" href="io__channel_8h.html#a42b58701b6440005e866e6e7dd080bae" title="Initializes the calling thread for I/O channel allocation. ">spdk_allocate_thread()</a> call. May be NULL to specify no name. </td></tr>
   </table>
   </dd>
 </dl>

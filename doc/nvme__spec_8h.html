@@ -535,6 +535,12 @@ Enumerations</h2></td></tr>
  }<tr class="memdesc:a2b71fb615deb505826eaeddd093e06bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">NVMe over Fabrics controller model.  <a href="nvme__spec_8h.html#a2b71fb615deb505826eaeddd093e06bc">More...</a><br /></td></tr>
 </td></tr>
 <tr class="separator:a2b71fb615deb505826eaeddd093e06bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3e4102cda177c51a05a6bb02fa62b87"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme__spec_8h.html#af3e4102cda177c51a05a6bb02fa62b87">spdk_nvme_sgls_supported</a> { <a class="el" href="nvme__spec_8h.html#af3e4102cda177c51a05a6bb02fa62b87a5978d5c7ce04a60c9d86b157037cb2f0">SPDK_NVME_SGLS_NOT_SUPPORTED</a> = 0, 
+<a class="el" href="nvme__spec_8h.html#af3e4102cda177c51a05a6bb02fa62b87ade9828594ce1d9d11427a38182149d9d">SPDK_NVME_SGLS_SUPPORTED</a> = 1, 
+<a class="el" href="nvme__spec_8h.html#af3e4102cda177c51a05a6bb02fa62b87a702868f6b85dd329c4baf00642e99fca">SPDK_NVME_SGLS_SUPPORTED_DWORD_ALIGNED</a> = 2
+ }<tr class="memdesc:af3e4102cda177c51a05a6bb02fa62b87"><td class="mdescLeft">&#160;</td><td class="mdescRight">Identify Controller data sgls.supported values.  <a href="nvme__spec_8h.html#af3e4102cda177c51a05a6bb02fa62b87">More...</a><br /></td></tr>
+</td></tr>
+<tr class="separator:af3e4102cda177c51a05a6bb02fa62b87"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1c06fbd66f7572c43c51e6f106215b8d"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme__spec_8h.html#a1c06fbd66f7572c43c51e6f106215b8d">spdk_nvme_dealloc_logical_block_read_value</a> { <a class="el" href="nvme__spec_8h.html#a1c06fbd66f7572c43c51e6f106215b8da84e7d1027736744032bc32b5f104eb2f">SPDK_NVME_DEALLOC_NOT_REPORTED</a> = 0, 
 <a class="el" href="nvme__spec_8h.html#a1c06fbd66f7572c43c51e6f106215b8da315a35b15cc20a03255f8e8e4d3396ba">SPDK_NVME_DEALLOC_READ_00</a> = 1, 
 <a class="el" href="nvme__spec_8h.html#a1c06fbd66f7572c43c51e6f106215b8dad8840e6a2c0c1c75b04e0c23ca829464">SPDK_NVME_DEALLOC_READ_FF</a> = 2
@@ -1063,6 +1069,30 @@ Functions</h2></td></tr>
 
 <p>Submission queue priority values for Create I/O Submission Queue Command. </p>
 <p>Only valid for weighted round robin arbitration method. </p>
+
+</div>
+</div>
+<a id="af3e4102cda177c51a05a6bb02fa62b87"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af3e4102cda177c51a05a6bb02fa62b87">&#9670;&nbsp;</a></span>spdk_nvme_sgls_supported</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="nvme__spec_8h.html#af3e4102cda177c51a05a6bb02fa62b87">spdk_nvme_sgls_supported</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Identify Controller data sgls.supported values. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="af3e4102cda177c51a05a6bb02fa62b87a5978d5c7ce04a60c9d86b157037cb2f0"></a>SPDK_NVME_SGLS_NOT_SUPPORTED&#160;</td><td class="fielddoc"><p>SGLs are not supported. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="af3e4102cda177c51a05a6bb02fa62b87ade9828594ce1d9d11427a38182149d9d"></a>SPDK_NVME_SGLS_SUPPORTED&#160;</td><td class="fielddoc"><p>SGLs are supported with no alignment or granularity requirement. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="af3e4102cda177c51a05a6bb02fa62b87a702868f6b85dd329c4baf00642e99fca"></a>SPDK_NVME_SGLS_SUPPORTED_DWORD_ALIGNED&#160;</td><td class="fielddoc"><p>SGLs are supported with a DWORD alignment and granularity requirement. </p>
+</td></tr>
+</table>
 
 </div>
 </div>

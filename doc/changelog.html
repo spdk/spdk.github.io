@@ -106,6 +106,8 @@ v17.10: (Upcoming Release)</h1>
 <p>A new default value, SPDK_MEMPOOL_DEFAULT_CACHE_SIZE, was added to provide additional clarity when constructing spdk_mempools. Previously, -1 could be passed and the library would choose a reasonable default, but this new value makes it explicit that the default is being used.</p>
 <h2>Blobstore</h2>
 <p>spdk_bs_io_readv_blob() and spdk_bs_io_writev_blob() were added to enable scattered payloads.</p>
+<h2>Event Framework</h2>
+<p>The ability to set a thread name, previously only used by the reactor code, is now part of the <code>spdk_thread_allocate()</code> API. Users may specify a thread name which will show up in tools like <code>gdb</code>.</p>
 <h1><a class="anchor" id="changelog-v17-07"></a>
 v17.07: Build system improvements, userspace vhost-blk target, and GPT bdev</h1>
 <h2>Build System</h2>

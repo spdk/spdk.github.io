@@ -90,8 +90,6 @@
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Data Structures</a> &#124;
-<a href="#define-members">Macros</a> &#124;
-<a href="#typedef-members">Typedefs</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">nvmf.h File Reference</div>  </div>
@@ -105,23 +103,6 @@
 Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvmf__tgt__opts.html">spdk_nvmf_tgt_opts</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvmf__listen__addr.html">spdk_nvmf_listen_addr</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
-Macros</h2></td></tr>
-<tr class="memitem:a90cec93285f0ba1883dbd49b91f9f4d2"><td class="memItemLeft" align="right" valign="top"><a id="a90cec93285f0ba1883dbd49b91f9f4d2"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>MAX_VIRTUAL_NAMESPACE</b>&#160;&#160;&#160;16</td></tr>
-<tr class="separator:a90cec93285f0ba1883dbd49b91f9f4d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
-Typedefs</h2></td></tr>
-<tr class="memitem:abbda1fe1f10bbad8c8d26f6105d1a13e"><td class="memItemLeft" align="right" valign="top"><a id="abbda1fe1f10bbad8c8d26f6105d1a13e"></a>
-typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvmf_subsystem_connect_fn</b>) (void *cb_ctx, struct spdk_nvmf_request *req)</td></tr>
-<tr class="separator:abbda1fe1f10bbad8c8d26f6105d1a13e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aba981d5463228f447c387c6d6dc44833"><td class="memItemLeft" align="right" valign="top"><a id="aba981d5463228f447c387c6d6dc44833"></a>
-typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvmf_subsystem_disconnect_fn</b>) (void *cb_ctx, struct spdk_nvmf_qpair *qpair)</td></tr>
-<tr class="separator:aba981d5463228f447c387c6d6dc44833"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -134,16 +115,16 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvmf_tgt_opts_in
 <tr class="memitem:a46973ac11e8b70770b0b4cc8f65a74f7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#a46973ac11e8b70770b0b4cc8f65a74f7">spdk_nvmf_tgt_destroy</a> (struct spdk_nvmf_tgt *tgt)</td></tr>
 <tr class="memdesc:a46973ac11e8b70770b0b4cc8f65a74f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy an NVMe-oF target.  <a href="#a46973ac11e8b70770b0b4cc8f65a74f7">More...</a><br /></td></tr>
 <tr class="separator:a46973ac11e8b70770b0b4cc8f65a74f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab4b702c20034dc7b83c30b045ea83216"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structspdk__nvmf__listen__addr.html">spdk_nvmf_listen_addr</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#ab4b702c20034dc7b83c30b045ea83216">spdk_nvmf_tgt_listen</a> (struct spdk_nvmf_tgt *tgt, struct <a class="el" href="structspdk__nvme__transport__id.html">spdk_nvme_transport_id</a> *trid)</td></tr>
-<tr class="memdesc:ab4b702c20034dc7b83c30b045ea83216"><td class="mdescLeft">&#160;</td><td class="mdescRight">Begin accepting new connections at the address provided.  <a href="#ab4b702c20034dc7b83c30b045ea83216">More...</a><br /></td></tr>
-<tr class="separator:ab4b702c20034dc7b83c30b045ea83216"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6b8416b526f4b1ee76abd82fe588c3b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#ac6b8416b526f4b1ee76abd82fe588c3b">spdk_nvmf_tgt_listen</a> (struct spdk_nvmf_tgt *tgt, struct <a class="el" href="structspdk__nvme__transport__id.html">spdk_nvme_transport_id</a> *trid)</td></tr>
+<tr class="memdesc:ac6b8416b526f4b1ee76abd82fe588c3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Begin accepting new connections at the address provided.  <a href="#ac6b8416b526f4b1ee76abd82fe588c3b">More...</a><br /></td></tr>
+<tr class="separator:ac6b8416b526f4b1ee76abd82fe588c3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abe57cf127dca189496274350584cc783"><td class="memItemLeft" align="right" valign="top"><a id="abe57cf127dca189496274350584cc783"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#abe57cf127dca189496274350584cc783">spdk_nvmf_tgt_accept</a> (struct spdk_nvmf_tgt *tgt)</td></tr>
 <tr class="memdesc:abe57cf127dca189496274350584cc783"><td class="mdescLeft">&#160;</td><td class="mdescRight">Poll the target for incoming connections. <br /></td></tr>
 <tr class="separator:abe57cf127dca189496274350584cc783"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa8f21d9e33e38420143b7096f9a3af23"><td class="memItemLeft" align="right" valign="top"><a id="aa8f21d9e33e38420143b7096f9a3af23"></a>
-struct spdk_nvmf_subsystem *&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvmf_create_subsystem</b> (struct spdk_nvmf_tgt *tgt, const char *nqn, enum <a class="el" href="nvmf__spec_8h.html#a808272f050cc373f3a90871c1528afd4">spdk_nvmf_subtype</a> type, void *cb_ctx, spdk_nvmf_subsystem_connect_fn connect_cb, spdk_nvmf_subsystem_disconnect_fn disconnect_cb)</td></tr>
-<tr class="separator:aa8f21d9e33e38420143b7096f9a3af23"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8963c7c607e75faac576ed9e1ecd4417"><td class="memItemLeft" align="right" valign="top"><a id="a8963c7c607e75faac576ed9e1ecd4417"></a>
+struct spdk_nvmf_subsystem *&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvmf_create_subsystem</b> (struct spdk_nvmf_tgt *tgt, const char *nqn, enum <a class="el" href="nvmf__spec_8h.html#a808272f050cc373f3a90871c1528afd4">spdk_nvmf_subtype</a> type, uint32_t num_ns)</td></tr>
+<tr class="separator:a8963c7c607e75faac576ed9e1ecd4417"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aae62b7fa6ac05a6ad022007f60068d16"><td class="memItemLeft" align="right" valign="top"><a id="aae62b7fa6ac05a6ad022007f60068d16"></a>
 struct spdk_nvmf_subsystem *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#aae62b7fa6ac05a6ad022007f60068d16">spdk_nvmf_tgt_find_subsystem</a> (struct spdk_nvmf_tgt *tgt, const char *subnqn)</td></tr>
 <tr class="memdesc:aae62b7fa6ac05a6ad022007f60068d16"><td class="mdescLeft">&#160;</td><td class="mdescRight">Search the target for a subsystem with the given NQN. <br /></td></tr>
@@ -169,12 +150,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvmf_delete_subs
 <tr class="memitem:acec4ed75ff9a25a5477d40f43a430677"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#acec4ed75ff9a25a5477d40f43a430677">spdk_nvmf_host_get_nqn</a> (struct spdk_nvmf_host *host)</td></tr>
 <tr class="memdesc:acec4ed75ff9a25a5477d40f43a430677"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a host's NQN.  <a href="#acec4ed75ff9a25a5477d40f43a430677">More...</a><br /></td></tr>
 <tr class="separator:acec4ed75ff9a25a5477d40f43a430677"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa6d3a2c6de1c3cfe9daa1485c40f1fdb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#aa6d3a2c6de1c3cfe9daa1485c40f1fdb">spdk_nvmf_subsystem_add_listener</a> (struct spdk_nvmf_subsystem *subsystem, struct <a class="el" href="structspdk__nvmf__listen__addr.html">spdk_nvmf_listen_addr</a> *listen_addr)</td></tr>
-<tr class="memdesc:aa6d3a2c6de1c3cfe9daa1485c40f1fdb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Accept new connections on the address provided.  <a href="#aa6d3a2c6de1c3cfe9daa1485c40f1fdb">More...</a><br /></td></tr>
-<tr class="separator:aa6d3a2c6de1c3cfe9daa1485c40f1fdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7c0ac0adaada5f775849071d1c26037a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#a7c0ac0adaada5f775849071d1c26037a">spdk_nvmf_subsystem_listener_allowed</a> (struct spdk_nvmf_subsystem *subsystem, struct <a class="el" href="structspdk__nvmf__listen__addr.html">spdk_nvmf_listen_addr</a> *listen_addr)</td></tr>
-<tr class="memdesc:a7c0ac0adaada5f775849071d1c26037a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if connections originated from the given address are allowed to connect to the subsystem.  <a href="#a7c0ac0adaada5f775849071d1c26037a">More...</a><br /></td></tr>
-<tr class="separator:a7c0ac0adaada5f775849071d1c26037a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46521b556107a0ab58998adfeee8795f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#a46521b556107a0ab58998adfeee8795f">spdk_nvmf_subsystem_add_listener</a> (struct spdk_nvmf_subsystem *subsystem, struct <a class="el" href="structspdk__nvme__transport__id.html">spdk_nvme_transport_id</a> *trid)</td></tr>
+<tr class="memdesc:a46521b556107a0ab58998adfeee8795f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Accept new connections on the address provided.  <a href="#a46521b556107a0ab58998adfeee8795f">More...</a><br /></td></tr>
+<tr class="separator:a46521b556107a0ab58998adfeee8795f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aafcef3c424a983337eaa28ff71e03e2e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#aafcef3c424a983337eaa28ff71e03e2e">spdk_nvmf_subsystem_listener_allowed</a> (struct spdk_nvmf_subsystem *subsystem, struct <a class="el" href="structspdk__nvme__transport__id.html">spdk_nvme_transport_id</a> *trid)</td></tr>
+<tr class="memdesc:aafcef3c424a983337eaa28ff71e03e2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if connections originated from the given address are allowed to connect to the subsystem.  <a href="#aafcef3c424a983337eaa28ff71e03e2e">More...</a><br /></td></tr>
+<tr class="separator:aafcef3c424a983337eaa28ff71e03e2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab1bccfb86fd4d727c2943ab810d5d862"><td class="memItemLeft" align="right" valign="top">struct spdk_nvmf_listener *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#ab1bccfb86fd4d727c2943ab810d5d862">spdk_nvmf_subsystem_get_first_listener</a> (struct spdk_nvmf_subsystem *subsystem)</td></tr>
 <tr class="memdesc:ab1bccfb86fd4d727c2943ab810d5d862"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the first allowed listen address in the subsystem.  <a href="#ab1bccfb86fd4d727c2943ab810d5d862">More...</a><br /></td></tr>
 <tr class="separator:ab1bccfb86fd4d727c2943ab810d5d862"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -373,8 +354,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvmf_ctrlr_disco
 
 </div>
 </div>
-<a id="aa6d3a2c6de1c3cfe9daa1485c40f1fdb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa6d3a2c6de1c3cfe9daa1485c40f1fdb">&#9670;&nbsp;</a></span>spdk_nvmf_subsystem_add_listener()</h2>
+<a id="a46521b556107a0ab58998adfeee8795f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a46521b556107a0ab58998adfeee8795f">&#9670;&nbsp;</a></span>spdk_nvmf_subsystem_add_listener()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -388,8 +369,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvmf_ctrlr_disco
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">struct <a class="el" href="structspdk__nvmf__listen__addr.html">spdk_nvmf_listen_addr</a> *&#160;</td>
-          <td class="paramname"><em>listen_addr</em>&#160;</td>
+          <td class="paramtype">struct <a class="el" href="structspdk__nvme__transport__id.html">spdk_nvme_transport_id</a> *&#160;</td>
+          <td class="paramname"><em>trid</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -403,7 +384,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvmf_ctrlr_disco
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">subsystem</td><td>Subsystem to add listener to </td></tr>
-    <tr><td class="paramname">listen_addr</td><td>The address to listen on. </td></tr>
+    <tr><td class="paramname">trid</td><td>The address to accept connections from </td></tr>
   </table>
   </dd>
 </dl>
@@ -727,8 +708,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvmf_ctrlr_disco
 
 </div>
 </div>
-<a id="a7c0ac0adaada5f775849071d1c26037a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7c0ac0adaada5f775849071d1c26037a">&#9670;&nbsp;</a></span>spdk_nvmf_subsystem_listener_allowed()</h2>
+<a id="aafcef3c424a983337eaa28ff71e03e2e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aafcef3c424a983337eaa28ff71e03e2e">&#9670;&nbsp;</a></span>spdk_nvmf_subsystem_listener_allowed()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -742,8 +723,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvmf_ctrlr_disco
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">struct <a class="el" href="structspdk__nvmf__listen__addr.html">spdk_nvmf_listen_addr</a> *&#160;</td>
-          <td class="paramname"><em>listen_addr</em>&#160;</td>
+          <td class="paramtype">struct <a class="el" href="structspdk__nvme__transport__id.html">spdk_nvme_transport_id</a> *&#160;</td>
+          <td class="paramname"><em>trid</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -757,7 +738,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvmf_ctrlr_disco
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">subsystem</td><td>The subsystem to query </td></tr>
-    <tr><td class="paramname">listen_addr</td><td>The listen address </td></tr>
+    <tr><td class="paramname">trid</td><td>The listen address </td></tr>
   </table>
   </dd>
 </dl>
@@ -844,14 +825,14 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvmf_ctrlr_disco
 
 </div>
 </div>
-<a id="ab4b702c20034dc7b83c30b045ea83216"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab4b702c20034dc7b83c30b045ea83216">&#9670;&nbsp;</a></span>spdk_nvmf_tgt_listen()</h2>
+<a id="ac6b8416b526f4b1ee76abd82fe588c3b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac6b8416b526f4b1ee76abd82fe588c3b">&#9670;&nbsp;</a></span>spdk_nvmf_tgt_listen()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">struct <a class="el" href="structspdk__nvmf__listen__addr.html">spdk_nvmf_listen_addr</a>* spdk_nvmf_tgt_listen </td>
+          <td class="memname">int spdk_nvmf_tgt_listen </td>
           <td>(</td>
           <td class="paramtype">struct spdk_nvmf_tgt *&#160;</td>
           <td class="paramname"><em>tgt</em>, </td>
@@ -871,7 +852,15 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvmf_ctrlr_disco
 </div><div class="memdoc">
 
 <p>Begin accepting new connections at the address provided. </p>
-<p>The connections will be matched with a subsystem, which may or may not allow the connection based on a subsystem-specific whitelist. See <a class="el" href="nvmf_8h.html#a19b3442b7eb75c234c3e3090d2b5add3" title="Allow the given host NQN to connect to the given subsystem. ">spdk_nvmf_subsystem_add_host()</a> and <a class="el" href="nvmf_8h.html#aa6d3a2c6de1c3cfe9daa1485c40f1fdb" title="Accept new connections on the address provided. ">spdk_nvmf_subsystem_add_listener()</a> </p>
+<p>The connections will be matched with a subsystem, which may or may not allow the connection based on a subsystem-specific whitelist. See <a class="el" href="nvmf_8h.html#a19b3442b7eb75c234c3e3090d2b5add3" title="Allow the given host NQN to connect to the given subsystem. ">spdk_nvmf_subsystem_add_host()</a> and <a class="el" href="nvmf_8h.html#a46521b556107a0ab58998adfeee8795f" title="Accept new connections on the address provided. ">spdk_nvmf_subsystem_add_listener()</a></p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tgt</td><td>The target associated with this listen address </td></tr>
+    <tr><td class="paramname">trid</td><td>The address to listen at</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success. Negated errno on failure. </dd></dl>
 
 </div>
 </div>
