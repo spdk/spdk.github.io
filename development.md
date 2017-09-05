@@ -19,7 +19,7 @@ The [README.md](https://github.com/spdk/spdk/blob/master/README.md) in the repo 
 
 # Contributing
 
-Everyone is welcome to contribute! Design pre-work and general discussion occurs on the mailing list and anyone is welcome to chime in on any discussion. Patch submission is done through GerritHub, which is outlined below. Decisions on whether to merge patches will be handled by the maintainers:
+Everyone is welcome to contribute! Design pre-work and general discussion occurs on [Trello](https://www.trello.com/spdk/) and the mailing list, and anyone is welcome to chime in on any discussion. Patch submission is done through GerritHub, which is outlined below. Decisions on whether to merge patches will be handled by the maintainers:
 
 * Daniel Verkamp
 * Ben Walker
