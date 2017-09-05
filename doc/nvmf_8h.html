@@ -138,6 +138,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvmf_delete_subs
 <tr class="memitem:a19b3442b7eb75c234c3e3090d2b5add3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#a19b3442b7eb75c234c3e3090d2b5add3">spdk_nvmf_subsystem_add_host</a> (struct spdk_nvmf_subsystem *subsystem, const char *hostnqn)</td></tr>
 <tr class="memdesc:a19b3442b7eb75c234c3e3090d2b5add3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allow the given host NQN to connect to the given subsystem.  <a href="#a19b3442b7eb75c234c3e3090d2b5add3">More...</a><br /></td></tr>
 <tr class="separator:a19b3442b7eb75c234c3e3090d2b5add3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f326a7fb95352af81b3ae8b6518b16c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#a6f326a7fb95352af81b3ae8b6518b16c">spdk_nvmf_subsystem_set_allow_any_host</a> (struct spdk_nvmf_subsystem *subsystem, bool allow_any_host)</td></tr>
+<tr class="memdesc:a6f326a7fb95352af81b3ae8b6518b16c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set whether a subsystem should allow any host or only hosts in the allowed list.  <a href="#a6f326a7fb95352af81b3ae8b6518b16c">More...</a><br /></td></tr>
+<tr class="separator:a6f326a7fb95352af81b3ae8b6518b16c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc793839e2268a097f97962e79e4a1ef"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#abc793839e2268a097f97962e79e4a1ef">spdk_nvmf_subsystem_get_allow_any_host</a> (const struct spdk_nvmf_subsystem *subsystem)</td></tr>
+<tr class="memdesc:abc793839e2268a097f97962e79e4a1ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check whether a subsystem should allow any host or only hosts in the allowed list.  <a href="#abc793839e2268a097f97962e79e4a1ef">More...</a><br /></td></tr>
+<tr class="separator:abc793839e2268a097f97962e79e4a1ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5f8ded88254cb17d8ee5c378f0e35a25"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#a5f8ded88254cb17d8ee5c378f0e35a25">spdk_nvmf_subsystem_host_allowed</a> (struct spdk_nvmf_subsystem *subsystem, const char *hostnqn)</td></tr>
 <tr class="memdesc:a5f8ded88254cb17d8ee5c378f0e35a25"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the given host is allowed to connect to the subsystem.  <a href="#a5f8ded88254cb17d8ee5c378f0e35a25">More...</a><br /></td></tr>
 <tr class="separator:a5f8ded88254cb17d8ee5c378f0e35a25"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -434,6 +440,33 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvmf_ctrlr_disco
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Newly added NSID on success or 0 on failure. </dd></dl>
+
+</div>
+</div>
+<a id="abc793839e2268a097f97962e79e4a1ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abc793839e2268a097f97962e79e4a1ef">&#9670;&nbsp;</a></span>spdk_nvmf_subsystem_get_allow_any_host()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool spdk_nvmf_subsystem_get_allow_any_host </td>
+          <td>(</td>
+          <td class="paramtype">const struct spdk_nvmf_subsystem *&#160;</td>
+          <td class="paramname"><em>subsystem</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Check whether a subsystem should allow any host or only hosts in the allowed list. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">subsystem</td><td>Subsystem to modify. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if any host is allowed to connect to this subsystem, or false if connecting hosts must be in the whitelist configured with <a class="el" href="nvmf_8h.html#a19b3442b7eb75c234c3e3090d2b5add3" title="Allow the given host NQN to connect to the given subsystem. ">spdk_nvmf_subsystem_add_host()</a>. </dd></dl>
 
 </div>
 </div>
@@ -743,6 +776,43 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvmf_ctrlr_disco
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if allowed, false if not. </dd></dl>
+
+</div>
+</div>
+<a id="a6f326a7fb95352af81b3ae8b6518b16c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f326a7fb95352af81b3ae8b6518b16c">&#9670;&nbsp;</a></span>spdk_nvmf_subsystem_set_allow_any_host()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_nvmf_subsystem_set_allow_any_host </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_nvmf_subsystem *&#160;</td>
+          <td class="paramname"><em>subsystem</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>allow_any_host</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set whether a subsystem should allow any host or only hosts in the allowed list. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">subsystem</td><td>Subsystem to modify. </td></tr>
+    <tr><td class="paramname">allow_any_host</td><td>true to allow any host to connect to this subsystem, or false to enforce the whitelist configured with <a class="el" href="nvmf_8h.html#a19b3442b7eb75c234c3e3090d2b5add3" title="Allow the given host NQN to connect to the given subsystem. ">spdk_nvmf_subsystem_add_host()</a>. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
