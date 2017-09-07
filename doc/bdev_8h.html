@@ -230,24 +230,45 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_dump_config_
 <tr class="memitem:a4b500ce84df1d2551f76e635c9dafbd5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev_8h.html#a4b500ce84df1d2551f76e635c9dafbd5">spdk_bdev_read</a> (struct spdk_bdev_desc *desc, struct spdk_io_channel *ch, void *buf, uint64_t offset, uint64_t nbytes, <a class="el" href="bdev_8h.html#a0c5602dfd313f90032dd91683b9663e3">spdk_bdev_io_completion_cb</a> cb, void *cb_arg)</td></tr>
 <tr class="memdesc:a4b500ce84df1d2551f76e635c9dafbd5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submit a read request to the bdev on the given channel.  <a href="#a4b500ce84df1d2551f76e635c9dafbd5">More...</a><br /></td></tr>
 <tr class="separator:a4b500ce84df1d2551f76e635c9dafbd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeec9efd151e2fb34ee3d22a1edbbb53f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev_8h.html#aeec9efd151e2fb34ee3d22a1edbbb53f">spdk_bdev_read_blocks</a> (struct spdk_bdev_desc *desc, struct spdk_io_channel *ch, void *buf, uint64_t offset_blocks, uint64_t num_blocks, <a class="el" href="bdev_8h.html#a0c5602dfd313f90032dd91683b9663e3">spdk_bdev_io_completion_cb</a> cb, void *cb_arg)</td></tr>
+<tr class="memdesc:aeec9efd151e2fb34ee3d22a1edbbb53f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submit a read request to the bdev on the given channel.  <a href="#aeec9efd151e2fb34ee3d22a1edbbb53f">More...</a><br /></td></tr>
+<tr class="separator:aeec9efd151e2fb34ee3d22a1edbbb53f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9ac9efa882e87909acfd4bccaddb1778"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev_8h.html#a9ac9efa882e87909acfd4bccaddb1778">spdk_bdev_readv</a> (struct spdk_bdev_desc *desc, struct spdk_io_channel *ch, struct iovec *iov, int iovcnt, uint64_t offset, uint64_t nbytes, <a class="el" href="bdev_8h.html#a0c5602dfd313f90032dd91683b9663e3">spdk_bdev_io_completion_cb</a> cb, void *cb_arg)</td></tr>
 <tr class="memdesc:a9ac9efa882e87909acfd4bccaddb1778"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submit a read request to the bdev on the given channel.  <a href="#a9ac9efa882e87909acfd4bccaddb1778">More...</a><br /></td></tr>
 <tr class="separator:a9ac9efa882e87909acfd4bccaddb1778"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55483d5ae010c514b37b976ad803b4b2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev_8h.html#a55483d5ae010c514b37b976ad803b4b2">spdk_bdev_readv_blocks</a> (struct spdk_bdev_desc *desc, struct spdk_io_channel *ch, struct iovec *iov, int iovcnt, uint64_t offset_blocks, uint64_t num_blocks, <a class="el" href="bdev_8h.html#a0c5602dfd313f90032dd91683b9663e3">spdk_bdev_io_completion_cb</a> cb, void *cb_arg)</td></tr>
+<tr class="memdesc:a55483d5ae010c514b37b976ad803b4b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submit a read request to the bdev on the given channel.  <a href="#a55483d5ae010c514b37b976ad803b4b2">More...</a><br /></td></tr>
+<tr class="separator:a55483d5ae010c514b37b976ad803b4b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa740a114ef34d6a2f126d4e3a9dd9e9b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev_8h.html#aa740a114ef34d6a2f126d4e3a9dd9e9b">spdk_bdev_write</a> (struct spdk_bdev_desc *desc, struct spdk_io_channel *ch, void *buf, uint64_t offset, uint64_t nbytes, <a class="el" href="bdev_8h.html#a0c5602dfd313f90032dd91683b9663e3">spdk_bdev_io_completion_cb</a> cb, void *cb_arg)</td></tr>
 <tr class="memdesc:aa740a114ef34d6a2f126d4e3a9dd9e9b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submit a write request to the bdev on the given channel.  <a href="#aa740a114ef34d6a2f126d4e3a9dd9e9b">More...</a><br /></td></tr>
 <tr class="separator:aa740a114ef34d6a2f126d4e3a9dd9e9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12da8917f525a6e11cbf22b2b7652c89"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev_8h.html#a12da8917f525a6e11cbf22b2b7652c89">spdk_bdev_write_blocks</a> (struct spdk_bdev_desc *desc, struct spdk_io_channel *ch, void *buf, uint64_t offset_blocks, uint64_t num_blocks, <a class="el" href="bdev_8h.html#a0c5602dfd313f90032dd91683b9663e3">spdk_bdev_io_completion_cb</a> cb, void *cb_arg)</td></tr>
+<tr class="memdesc:a12da8917f525a6e11cbf22b2b7652c89"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submit a write request to the bdev on the given channel.  <a href="#a12da8917f525a6e11cbf22b2b7652c89">More...</a><br /></td></tr>
+<tr class="separator:a12da8917f525a6e11cbf22b2b7652c89"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9a508a1c301a1321faf0680a8f31f59a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev_8h.html#a9a508a1c301a1321faf0680a8f31f59a">spdk_bdev_writev</a> (struct spdk_bdev_desc *desc, struct spdk_io_channel *ch, struct iovec *iov, int iovcnt, uint64_t offset, uint64_t len, <a class="el" href="bdev_8h.html#a0c5602dfd313f90032dd91683b9663e3">spdk_bdev_io_completion_cb</a> cb, void *cb_arg)</td></tr>
 <tr class="memdesc:a9a508a1c301a1321faf0680a8f31f59a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submit a write request to the bdev on the given channel.  <a href="#a9a508a1c301a1321faf0680a8f31f59a">More...</a><br /></td></tr>
 <tr class="separator:a9a508a1c301a1321faf0680a8f31f59a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5849064d12de9f140a41522d1f7c95b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev_8h.html#af5849064d12de9f140a41522d1f7c95b">spdk_bdev_writev_blocks</a> (struct spdk_bdev_desc *desc, struct spdk_io_channel *ch, struct iovec *iov, int iovcnt, uint64_t offset_blocks, uint64_t num_blocks, <a class="el" href="bdev_8h.html#a0c5602dfd313f90032dd91683b9663e3">spdk_bdev_io_completion_cb</a> cb, void *cb_arg)</td></tr>
+<tr class="memdesc:af5849064d12de9f140a41522d1f7c95b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submit a write request to the bdev on the given channel.  <a href="#af5849064d12de9f140a41522d1f7c95b">More...</a><br /></td></tr>
+<tr class="separator:af5849064d12de9f140a41522d1f7c95b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adc50b78fec7f69190d9139aff29a9043"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev_8h.html#adc50b78fec7f69190d9139aff29a9043">spdk_bdev_write_zeroes</a> (struct spdk_bdev_desc *desc, struct spdk_io_channel *ch, uint64_t offset, uint64_t len, <a class="el" href="bdev_8h.html#a0c5602dfd313f90032dd91683b9663e3">spdk_bdev_io_completion_cb</a> cb, void *cb_arg)</td></tr>
 <tr class="memdesc:adc50b78fec7f69190d9139aff29a9043"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submit a write zeroes request to the bdev on the given channel.  <a href="#adc50b78fec7f69190d9139aff29a9043">More...</a><br /></td></tr>
 <tr class="separator:adc50b78fec7f69190d9139aff29a9043"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a047f8a9f8d0a3d1d7bfcdf0a9838b261"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev_8h.html#a047f8a9f8d0a3d1d7bfcdf0a9838b261">spdk_bdev_write_zeroes_blocks</a> (struct spdk_bdev_desc *desc, struct spdk_io_channel *ch, uint64_t offset_blocks, uint64_t num_blocks, <a class="el" href="bdev_8h.html#a0c5602dfd313f90032dd91683b9663e3">spdk_bdev_io_completion_cb</a> cb, void *cb_arg)</td></tr>
+<tr class="memdesc:a047f8a9f8d0a3d1d7bfcdf0a9838b261"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submit a write zeroes request to the bdev on the given channel.  <a href="#a047f8a9f8d0a3d1d7bfcdf0a9838b261">More...</a><br /></td></tr>
+<tr class="separator:a047f8a9f8d0a3d1d7bfcdf0a9838b261"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a680c9c302998f7b003e2476e35d9ae4b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev_8h.html#a680c9c302998f7b003e2476e35d9ae4b">spdk_bdev_unmap</a> (struct spdk_bdev_desc *desc, struct spdk_io_channel *ch, uint64_t offset, uint64_t nbytes, <a class="el" href="bdev_8h.html#a0c5602dfd313f90032dd91683b9663e3">spdk_bdev_io_completion_cb</a> cb, void *cb_arg)</td></tr>
 <tr class="memdesc:a680c9c302998f7b003e2476e35d9ae4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submit an unmap request to the block device.  <a href="#a680c9c302998f7b003e2476e35d9ae4b">More...</a><br /></td></tr>
 <tr class="separator:a680c9c302998f7b003e2476e35d9ae4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7555fdd41019e29b40e535b72457d30b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev_8h.html#a7555fdd41019e29b40e535b72457d30b">spdk_bdev_unmap_blocks</a> (struct spdk_bdev_desc *desc, struct spdk_io_channel *ch, uint64_t offset_blocks, uint64_t num_blocks, <a class="el" href="bdev_8h.html#a0c5602dfd313f90032dd91683b9663e3">spdk_bdev_io_completion_cb</a> cb, void *cb_arg)</td></tr>
+<tr class="memdesc:a7555fdd41019e29b40e535b72457d30b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submit an unmap request to the block device.  <a href="#a7555fdd41019e29b40e535b72457d30b">More...</a><br /></td></tr>
+<tr class="separator:a7555fdd41019e29b40e535b72457d30b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7105b63cc84037543d9472ab33c8be93"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev_8h.html#a7105b63cc84037543d9472ab33c8be93">spdk_bdev_flush</a> (struct spdk_bdev_desc *desc, struct spdk_io_channel *ch, uint64_t offset, uint64_t length, <a class="el" href="bdev_8h.html#a0c5602dfd313f90032dd91683b9663e3">spdk_bdev_io_completion_cb</a> cb, void *cb_arg)</td></tr>
 <tr class="memdesc:a7105b63cc84037543d9472ab33c8be93"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submit a flush request to the bdev on the given channel.  <a href="#a7105b63cc84037543d9472ab33c8be93">More...</a><br /></td></tr>
 <tr class="separator:a7105b63cc84037543d9472ab33c8be93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d84cd937e760cf32756654dc9720ed4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev_8h.html#a9d84cd937e760cf32756654dc9720ed4">spdk_bdev_flush_blocks</a> (struct spdk_bdev_desc *desc, struct spdk_io_channel *ch, uint64_t offset_blocks, uint64_t num_blocks, <a class="el" href="bdev_8h.html#a0c5602dfd313f90032dd91683b9663e3">spdk_bdev_io_completion_cb</a> cb, void *cb_arg)</td></tr>
+<tr class="memdesc:a9d84cd937e760cf32756654dc9720ed4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submit a flush request to the bdev on the given channel.  <a href="#a9d84cd937e760cf32756654dc9720ed4">More...</a><br /></td></tr>
+<tr class="separator:a9d84cd937e760cf32756654dc9720ed4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aca574d3e94be6150343823dd2e7ecf46"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev_8h.html#aca574d3e94be6150343823dd2e7ecf46">spdk_bdev_reset</a> (struct spdk_bdev_desc *desc, struct spdk_io_channel *ch, <a class="el" href="bdev_8h.html#a0c5602dfd313f90032dd91683b9663e3">spdk_bdev_io_completion_cb</a> cb, void *cb_arg)</td></tr>
 <tr class="memdesc:aca574d3e94be6150343823dd2e7ecf46"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submit a reset request to the bdev on the given channel.  <a href="#aca574d3e94be6150343823dd2e7ecf46">More...</a><br /></td></tr>
 <tr class="separator:aca574d3e94be6150343823dd2e7ecf46"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -412,6 +433,73 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_dump_config_
     <tr><td class="paramname">ch</td><td>I/O channel. Obtained by calling <a class="el" href="bdev_8h.html#ab5bb9e746b030d7c4c89cbcf60076c7e" title="Obtain an I/O channel for the block device opened by the specified descriptor. ">spdk_bdev_get_io_channel()</a>. </td></tr>
     <tr><td class="paramname">offset</td><td>The offset, in bytes, from the start of the block device. </td></tr>
     <tr><td class="paramname">length</td><td>The number of bytes. </td></tr>
+    <tr><td class="paramname">cb</td><td>Called when the request is complete. </td></tr>
+    <tr><td class="paramname">cb_arg</td><td>Argument passed to cb.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success. On success, the callback will always be called (even if the request ultimately failed). Return negated errno on failure, in which case the callback will not be called. </dd></dl>
+
+</div>
+</div>
+<a id="a9d84cd937e760cf32756654dc9720ed4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9d84cd937e760cf32756654dc9720ed4">&#9670;&nbsp;</a></span>spdk_bdev_flush_blocks()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_bdev_flush_blocks </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_bdev_desc *&#160;</td>
+          <td class="paramname"><em>desc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct spdk_io_channel *&#160;</td>
+          <td class="paramname"><em>ch</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>offset_blocks</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>num_blocks</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="bdev_8h.html#a0c5602dfd313f90032dd91683b9663e3">spdk_bdev_io_completion_cb</a>&#160;</td>
+          <td class="paramname"><em>cb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>cb_arg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Submit a flush request to the bdev on the given channel. </p>
+<p>For devices with volatile caches, data is not guaranteed to be persistent until the completion of a flush request. Call <a class="el" href="bdev_8h.html#a93f6d6ce09da384501f09a49581caa37" title="Query whether block device has an enabled write cache. ">spdk_bdev_has_write_cache()</a> to check if the bdev has a volatile cache.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">desc</td><td>Block device descriptor </td></tr>
+    <tr><td class="paramname">ch</td><td>I/O channel. Obtained by calling <a class="el" href="bdev_8h.html#ab5bb9e746b030d7c4c89cbcf60076c7e" title="Obtain an I/O channel for the block device opened by the specified descriptor. ">spdk_bdev_get_io_channel()</a>. </td></tr>
+    <tr><td class="paramname">offset_blocks</td><td>The offset, in blocks, from the start of the block device. </td></tr>
+    <tr><td class="paramname">num_blocks</td><td>The number of blocks. </td></tr>
     <tr><td class="paramname">cb</td><td>Called when the request is complete. </td></tr>
     <tr><td class="paramname">cb_arg</td><td>Argument passed to cb.</td></tr>
   </table>
@@ -1141,6 +1229,79 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_dump_config_
 
 </div>
 </div>
+<a id="aeec9efd151e2fb34ee3d22a1edbbb53f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeec9efd151e2fb34ee3d22a1edbbb53f">&#9670;&nbsp;</a></span>spdk_bdev_read_blocks()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_bdev_read_blocks </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_bdev_desc *&#160;</td>
+          <td class="paramname"><em>desc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct spdk_io_channel *&#160;</td>
+          <td class="paramname"><em>ch</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>buf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>offset_blocks</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>num_blocks</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="bdev_8h.html#a0c5602dfd313f90032dd91683b9663e3">spdk_bdev_io_completion_cb</a>&#160;</td>
+          <td class="paramname"><em>cb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>cb_arg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Submit a read request to the bdev on the given channel. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">desc</td><td>Block device descriptor </td></tr>
+    <tr><td class="paramname">ch</td><td>I/O channel. Obtained by calling <a class="el" href="bdev_8h.html#ab5bb9e746b030d7c4c89cbcf60076c7e" title="Obtain an I/O channel for the block device opened by the specified descriptor. ">spdk_bdev_get_io_channel()</a>. </td></tr>
+    <tr><td class="paramname">buf</td><td>Data buffer to read into. </td></tr>
+    <tr><td class="paramname">offset_blocks</td><td>The offset, in blocks, from the start of the block device. </td></tr>
+    <tr><td class="paramname">num_blocks</td><td>The number of blocks to read. </td></tr>
+    <tr><td class="paramname">cb</td><td>Called when the request is complete. </td></tr>
+    <tr><td class="paramname">cb_arg</td><td>Argument passed to cb.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success. On success, the callback will always be called (even if the request ultimately failed). Return negated errno on failure, in which case the callback will not be called. </dd></dl>
+
+</div>
+</div>
 <a id="a9ac9efa882e87909acfd4bccaddb1778"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9ac9efa882e87909acfd4bccaddb1778">&#9670;&nbsp;</a></span>spdk_bdev_readv()</h2>
 
@@ -1213,6 +1374,87 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_dump_config_
     <tr><td class="paramname">iovcnt</td><td>The number of elements in iov. </td></tr>
     <tr><td class="paramname">offset</td><td>The offset, in bytes, from the start of the block device. </td></tr>
     <tr><td class="paramname">nbytes</td><td>The number of bytes to read. </td></tr>
+    <tr><td class="paramname">cb</td><td>Called when the request is complete. </td></tr>
+    <tr><td class="paramname">cb_arg</td><td>Argument passed to cb.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success. On success, the callback will always be called (even if the request ultimately failed). Return negated errno on failure, in which case the callback will not be called. </dd></dl>
+
+</div>
+</div>
+<a id="a55483d5ae010c514b37b976ad803b4b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a55483d5ae010c514b37b976ad803b4b2">&#9670;&nbsp;</a></span>spdk_bdev_readv_blocks()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_bdev_readv_blocks </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_bdev_desc *&#160;</td>
+          <td class="paramname"><em>desc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct spdk_io_channel *&#160;</td>
+          <td class="paramname"><em>ch</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct iovec *&#160;</td>
+          <td class="paramname"><em>iov</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iovcnt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>offset_blocks</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>num_blocks</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="bdev_8h.html#a0c5602dfd313f90032dd91683b9663e3">spdk_bdev_io_completion_cb</a>&#160;</td>
+          <td class="paramname"><em>cb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>cb_arg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Submit a read request to the bdev on the given channel. </p>
+<p>This differs from spdk_bdev_read by allowing the data buffer to be described in a scatter gather list. Some physical devices place memory alignment requirements on data and may not be able to directly transfer into the buffers provided. In this case, the request may fail.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">desc</td><td>Block device descriptor </td></tr>
+    <tr><td class="paramname">ch</td><td>I/O channel. Obtained by calling <a class="el" href="bdev_8h.html#ab5bb9e746b030d7c4c89cbcf60076c7e" title="Obtain an I/O channel for the block device opened by the specified descriptor. ">spdk_bdev_get_io_channel()</a>. </td></tr>
+    <tr><td class="paramname">iov</td><td>A scatter gather list of buffers to be read into. </td></tr>
+    <tr><td class="paramname">iovcnt</td><td>The number of elements in iov. </td></tr>
+    <tr><td class="paramname">offset_blocks</td><td>The offset, in blocks, from the start of the block device. </td></tr>
+    <tr><td class="paramname">num_blocks</td><td>The number of blocks to read. </td></tr>
     <tr><td class="paramname">cb</td><td>Called when the request is complete. </td></tr>
     <tr><td class="paramname">cb_arg</td><td>Argument passed to cb.</td></tr>
   </table>
@@ -1341,6 +1583,73 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_dump_config_
 
 </div>
 </div>
+<a id="a7555fdd41019e29b40e535b72457d30b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7555fdd41019e29b40e535b72457d30b">&#9670;&nbsp;</a></span>spdk_bdev_unmap_blocks()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_bdev_unmap_blocks </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_bdev_desc *&#160;</td>
+          <td class="paramname"><em>desc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct spdk_io_channel *&#160;</td>
+          <td class="paramname"><em>ch</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>offset_blocks</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>num_blocks</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="bdev_8h.html#a0c5602dfd313f90032dd91683b9663e3">spdk_bdev_io_completion_cb</a>&#160;</td>
+          <td class="paramname"><em>cb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>cb_arg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Submit an unmap request to the block device. </p>
+<p>Unmap is sometimes also called trim or deallocate. This notifies the device that the data in the blocks described is no longer valid. Reading blocks that have been unmapped results in indeterminate data.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">desc</td><td>Block device descriptor </td></tr>
+    <tr><td class="paramname">ch</td><td>I/O channel. Obtained by calling <a class="el" href="bdev_8h.html#ab5bb9e746b030d7c4c89cbcf60076c7e" title="Obtain an I/O channel for the block device opened by the specified descriptor. ">spdk_bdev_get_io_channel()</a>. </td></tr>
+    <tr><td class="paramname">offset_blocks</td><td>The offset, in blocks, from the start of the block device. </td></tr>
+    <tr><td class="paramname">num_blocks</td><td>The number of blocks to unmap. </td></tr>
+    <tr><td class="paramname">cb</td><td>Called when the request is complete. </td></tr>
+    <tr><td class="paramname">cb_arg</td><td>Argument passed to cb.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success. On success, the callback will always be called (even if the request ultimately failed). Return negated errno on failure, in which case the callback will not be called. </dd></dl>
+
+</div>
+</div>
 <a id="aa740a114ef34d6a2f126d4e3a9dd9e9b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa740a114ef34d6a2f126d4e3a9dd9e9b">&#9670;&nbsp;</a></span>spdk_bdev_write()</h2>
 
@@ -1414,6 +1723,79 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_dump_config_
 
 </div>
 </div>
+<a id="a12da8917f525a6e11cbf22b2b7652c89"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a12da8917f525a6e11cbf22b2b7652c89">&#9670;&nbsp;</a></span>spdk_bdev_write_blocks()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_bdev_write_blocks </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_bdev_desc *&#160;</td>
+          <td class="paramname"><em>desc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct spdk_io_channel *&#160;</td>
+          <td class="paramname"><em>ch</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>buf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>offset_blocks</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>num_blocks</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="bdev_8h.html#a0c5602dfd313f90032dd91683b9663e3">spdk_bdev_io_completion_cb</a>&#160;</td>
+          <td class="paramname"><em>cb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>cb_arg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Submit a write request to the bdev on the given channel. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">desc</td><td>Block device descriptor </td></tr>
+    <tr><td class="paramname">ch</td><td>I/O channel. Obtained by calling <a class="el" href="bdev_8h.html#ab5bb9e746b030d7c4c89cbcf60076c7e" title="Obtain an I/O channel for the block device opened by the specified descriptor. ">spdk_bdev_get_io_channel()</a>. </td></tr>
+    <tr><td class="paramname">buf</td><td>Data buffer to written from. </td></tr>
+    <tr><td class="paramname">offset_blocks</td><td>The offset, in blocks, from the start of the block device. </td></tr>
+    <tr><td class="paramname">num_blocks</td><td>The number of blocks to write. buf must be greater than or equal to this size. </td></tr>
+    <tr><td class="paramname">cb</td><td>Called when the request is complete. </td></tr>
+    <tr><td class="paramname">cb_arg</td><td>Argument passed to cb.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success. On success, the callback will always be called (even if the request ultimately failed). Return negated errno on failure, in which case the callback will not be called. </dd></dl>
+
+</div>
+</div>
 <a id="adc50b78fec7f69190d9139aff29a9043"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#adc50b78fec7f69190d9139aff29a9043">&#9670;&nbsp;</a></span>spdk_bdev_write_zeroes()</h2>
 
@@ -1472,6 +1854,73 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_dump_config_
     <tr><td class="paramname">ch</td><td>I/O channel. Obtained by calling <a class="el" href="bdev_8h.html#ab5bb9e746b030d7c4c89cbcf60076c7e" title="Obtain an I/O channel for the block device opened by the specified descriptor. ">spdk_bdev_get_io_channel()</a>. </td></tr>
     <tr><td class="paramname">offset</td><td>The offset, in bytes, from the start of the block device. </td></tr>
     <tr><td class="paramname">nbytes</td><td>The number of bytes to zero. </td></tr>
+    <tr><td class="paramname">cb</td><td>Called when the request is complete. </td></tr>
+    <tr><td class="paramname">cb_arg</td><td>Argument passed to cb.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success. On success, the callback will always be called (even if the request ultimately failed). Return negated errno on failure, in which case the callback will not be called. </dd></dl>
+
+</div>
+</div>
+<a id="a047f8a9f8d0a3d1d7bfcdf0a9838b261"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a047f8a9f8d0a3d1d7bfcdf0a9838b261">&#9670;&nbsp;</a></span>spdk_bdev_write_zeroes_blocks()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_bdev_write_zeroes_blocks </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_bdev_desc *&#160;</td>
+          <td class="paramname"><em>desc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct spdk_io_channel *&#160;</td>
+          <td class="paramname"><em>ch</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>offset_blocks</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>num_blocks</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="bdev_8h.html#a0c5602dfd313f90032dd91683b9663e3">spdk_bdev_io_completion_cb</a>&#160;</td>
+          <td class="paramname"><em>cb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>cb_arg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Submit a write zeroes request to the bdev on the given channel. </p>
+<p>This command ensures that all bytes in the specified range are set to 00h</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">desc</td><td>Block device descriptor </td></tr>
+    <tr><td class="paramname">ch</td><td>I/O channel. Obtained by calling <a class="el" href="bdev_8h.html#ab5bb9e746b030d7c4c89cbcf60076c7e" title="Obtain an I/O channel for the block device opened by the specified descriptor. ">spdk_bdev_get_io_channel()</a>. </td></tr>
+    <tr><td class="paramname">offset_blocks</td><td>The offset, in blocks, from the start of the block device. </td></tr>
+    <tr><td class="paramname">num_blocks</td><td>The number of blocks to zero. </td></tr>
     <tr><td class="paramname">cb</td><td>Called when the request is complete. </td></tr>
     <tr><td class="paramname">cb_arg</td><td>Argument passed to cb.</td></tr>
   </table>
@@ -1562,10 +2011,86 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_dump_config_
 
 </div>
 </div>
+<a id="af5849064d12de9f140a41522d1f7c95b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af5849064d12de9f140a41522d1f7c95b">&#9670;&nbsp;</a></span>spdk_bdev_writev_blocks()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_bdev_writev_blocks </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_bdev_desc *&#160;</td>
+          <td class="paramname"><em>desc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct spdk_io_channel *&#160;</td>
+          <td class="paramname"><em>ch</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct iovec *&#160;</td>
+          <td class="paramname"><em>iov</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iovcnt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>offset_blocks</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>num_blocks</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="bdev_8h.html#a0c5602dfd313f90032dd91683b9663e3">spdk_bdev_io_completion_cb</a>&#160;</td>
+          <td class="paramname"><em>cb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>cb_arg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Submit a write request to the bdev on the given channel. </p>
+<p>This differs from spdk_bdev_write by allowing the data buffer to be described in a scatter gather list. Some physical devices place memory alignment requirements on data and may not be able to directly transfer out of the buffers provided. In this case, the request may fail.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">desc</td><td>Block device descriptor </td></tr>
+    <tr><td class="paramname">ch</td><td>I/O channel. Obtained by calling <a class="el" href="bdev_8h.html#ab5bb9e746b030d7c4c89cbcf60076c7e" title="Obtain an I/O channel for the block device opened by the specified descriptor. ">spdk_bdev_get_io_channel()</a>. </td></tr>
+    <tr><td class="paramname">iov</td><td>A scatter gather list of buffers to be written from. </td></tr>
+    <tr><td class="paramname">iovcnt</td><td>The number of elements in iov. </td></tr>
+    <tr><td class="paramname">offset_blocks</td><td>The offset, in blocks, from the start of the block device. </td></tr>
+    <tr><td class="paramname">num_blocks</td><td>The number of blocks to write. buf must be greater than or equal to this size. </td></tr>
+    <tr><td class="paramname">cb</td><td>Called when the request is complete. </td></tr>
+    <tr><td class="paramname">cb_arg</td><td>Argument passed to cb.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success. On success, the callback will always be called (even if the request ultimately failed). Return negated errno on failure, in which case the callback will not be called. </dd></dl>
+
+</div>
+</div>
 </div><!-- contents -->
-<footer>
-  <div class="container text-center">
-    <p class="copyright text-muted small">Copyright © Intel Corporation. All Rights Reserved.</p>
-  </div>
-</footer>
 </div>

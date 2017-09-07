@@ -138,6 +138,9 @@
 <li>spdk_bdev_flush()
 : <a class="el" href="bdev_8h.html#a7105b63cc84037543d9472ab33c8be93">bdev.h</a>
 </li>
+<li>spdk_bdev_flush_blocks()
+: <a class="el" href="bdev_8h.html#a9d84cd937e760cf32756654dc9720ed4">bdev.h</a>
+</li>
 <li>spdk_bdev_free_io()
 : <a class="el" href="bdev_8h.html#a536a365e14bc4f3ddf76b9340958ebd8">bdev.h</a>
 </li>
@@ -195,8 +198,14 @@
 <li>spdk_bdev_read()
 : <a class="el" href="bdev_8h.html#a4b500ce84df1d2551f76e635c9dafbd5">bdev.h</a>
 </li>
+<li>spdk_bdev_read_blocks()
+: <a class="el" href="bdev_8h.html#aeec9efd151e2fb34ee3d22a1edbbb53f">bdev.h</a>
+</li>
 <li>spdk_bdev_readv()
 : <a class="el" href="bdev_8h.html#a9ac9efa882e87909acfd4bccaddb1778">bdev.h</a>
+</li>
+<li>spdk_bdev_readv_blocks()
+: <a class="el" href="bdev_8h.html#a55483d5ae010c514b37b976ad803b4b2">bdev.h</a>
 </li>
 <li>spdk_bdev_reset()
 : <a class="el" href="bdev_8h.html#aca574d3e94be6150343823dd2e7ecf46">bdev.h</a>
@@ -207,14 +216,26 @@
 <li>spdk_bdev_unmap()
 : <a class="el" href="bdev_8h.html#a680c9c302998f7b003e2476e35d9ae4b">bdev.h</a>
 </li>
+<li>spdk_bdev_unmap_blocks()
+: <a class="el" href="bdev_8h.html#a7555fdd41019e29b40e535b72457d30b">bdev.h</a>
+</li>
 <li>spdk_bdev_write()
 : <a class="el" href="bdev_8h.html#aa740a114ef34d6a2f126d4e3a9dd9e9b">bdev.h</a>
+</li>
+<li>spdk_bdev_write_blocks()
+: <a class="el" href="bdev_8h.html#a12da8917f525a6e11cbf22b2b7652c89">bdev.h</a>
 </li>
 <li>spdk_bdev_write_zeroes()
 : <a class="el" href="bdev_8h.html#adc50b78fec7f69190d9139aff29a9043">bdev.h</a>
 </li>
+<li>spdk_bdev_write_zeroes_blocks()
+: <a class="el" href="bdev_8h.html#a047f8a9f8d0a3d1d7bfcdf0a9838b261">bdev.h</a>
+</li>
 <li>spdk_bdev_writev()
 : <a class="el" href="bdev_8h.html#a9a508a1c301a1321faf0680a8f31f59a">bdev.h</a>
+</li>
+<li>spdk_bdev_writev_blocks()
+: <a class="el" href="bdev_8h.html#af5849064d12de9f140a41522d1f7c95b">bdev.h</a>
 </li>
 <li>spdk_bit_array_capacity()
 : <a class="el" href="bit__array_8h.html#a050b7786c57f20a245db5510691f3f23">bit_array.h</a>
@@ -915,11 +936,11 @@
 <li>SPDK_NVME_SGLS_NOT_SUPPORTED
 : <a class="el" href="nvme__spec_8h.html#af3e4102cda177c51a05a6bb02fa62b87a5978d5c7ce04a60c9d86b157037cb2f0">nvme_spec.h</a>
 </li>
-<li>spdk_nvme_sgls_supported
-: <a class="el" href="nvme__spec_8h.html#af3e4102cda177c51a05a6bb02fa62b87">nvme_spec.h</a>
-</li>
 <li>SPDK_NVME_SGLS_SUPPORTED
 : <a class="el" href="nvme__spec_8h.html#af3e4102cda177c51a05a6bb02fa62b87ade9828594ce1d9d11427a38182149d9d">nvme_spec.h</a>
+</li>
+<li>spdk_nvme_sgls_supported
+: <a class="el" href="nvme__spec_8h.html#af3e4102cda177c51a05a6bb02fa62b87">nvme_spec.h</a>
 </li>
 <li>SPDK_NVME_SGLS_SUPPORTED_DWORD_ALIGNED
 : <a class="el" href="nvme__spec_8h.html#af3e4102cda177c51a05a6bb02fa62b87a702868f6b85dd329c4baf00642e99fca">nvme_spec.h</a>
@@ -1260,6 +1281,9 @@
 <li>SPDK_VERSION_SUFFIX
 : <a class="el" href="version_8h.html#a1636e53b1038906ece3a9addb0473bf0">version.h</a>
 </li>
+<li>spdk_vhost_call_external_event()
+: <a class="el" href="vhost_8h.html#afc95ae1497ffe77ca8fb551d7d9c289a">vhost.h</a>
+</li>
 <li>spdk_vhost_dev_next()
 : <a class="el" href="vhost_8h.html#a4365f85870f3396a837b16f4218548e6">vhost.h</a>
 </li>
@@ -1274,9 +1298,4 @@
 </li>
 </ul>
 </div><!-- contents -->
-<footer>
-  <div class="container text-center">
-    <p class="copyright text-muted small">Copyright © Intel Corporation. All Rights Reserved.</p>
-  </div>
-</footer>
 </div>

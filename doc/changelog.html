@@ -94,6 +94,12 @@ v17.10: (Upcoming Release)</h1>
 <p>An <a href="http://github.com/axboe/fio">fio</a> plugin was added that can route I/O to the bdev layer. See the https://github.com/spdk/spdk/blob/master/examples/bdev/fio_plugin/README.md "plugin documentation" for more information.</p>
 <p><a class="el" href="bdev_8h.html#a680c9c302998f7b003e2476e35d9ae4b" title="Submit an unmap request to the block device. ">spdk_bdev_unmap()</a> was modified to take an offset and a length in bytes as arguments instead of requiring the user to provide an array of SCSI unmap descriptors. This limits unmaps to a single contiguous range.</p>
 <p><a class="el" href="bdev_8h.html#adc50b78fec7f69190d9139aff29a9043" title="Submit a write zeroes request to the bdev on the given channel. ">spdk_bdev_write_zeroes()</a> was introduced as an alternative to <a class="el" href="bdev_8h.html#a680c9c302998f7b003e2476e35d9ae4b" title="Submit an unmap request to the block device. ">spdk_bdev_unmap()</a>. It ensures that all unmapped blocks will be zeroed out. This function is currently only supported by NVMe block devices.</p>
+<p>New API functions that accept I/O parameters in units of blocks instead of bytes have been added:</p><ul>
+<li><a class="el" href="bdev_8h.html#aeec9efd151e2fb34ee3d22a1edbbb53f" title="Submit a read request to the bdev on the given channel. ">spdk_bdev_read_blocks()</a>, <a class="el" href="bdev_8h.html#a55483d5ae010c514b37b976ad803b4b2" title="Submit a read request to the bdev on the given channel. ">spdk_bdev_readv_blocks()</a></li>
+<li><a class="el" href="bdev_8h.html#a12da8917f525a6e11cbf22b2b7652c89" title="Submit a write request to the bdev on the given channel. ">spdk_bdev_write_blocks()</a>, <a class="el" href="bdev_8h.html#af5849064d12de9f140a41522d1f7c95b" title="Submit a write request to the bdev on the given channel. ">spdk_bdev_writev_blocks()</a></li>
+<li><a class="el" href="bdev_8h.html#a047f8a9f8d0a3d1d7bfcdf0a9838b261" title="Submit a write zeroes request to the bdev on the given channel. ">spdk_bdev_write_zeroes_blocks()</a></li>
+<li><a class="el" href="bdev_8h.html#a7555fdd41019e29b40e535b72457d30b" title="Submit an unmap request to the block device. ">spdk_bdev_unmap_blocks()</a></li>
+</ul>
 <h2>Linux AIO bdev</h2>
 <p>The AIO bdev now allows the user to override the auto-detected block size.</p>
 <h2>NVMe driver</h2>
@@ -110,6 +116,8 @@ v17.10: (Upcoming Release)</h1>
 <p>spdk_bs_io_readv_blob() and spdk_bs_io_writev_blob() were added to enable scattered payloads.</p>
 <h2>Event Framework</h2>
 <p>The ability to set a thread name, previously only used by the reactor code, is now part of the <code>spdk_thread_allocate()</code> API. Users may specify a thread name which will show up in tools like <code>gdb</code>.</p>
+<h2>Log</h2>
+<p>The API spdk_trace_dump() now takes a new parameter to allow the caller to specify stdout or stderr for example.</p>
 <h1><a class="anchor" id="changelog-v17-07"></a>
 v17.07: Build system improvements, userspace vhost-blk target, and GPT bdev</h1>
 <h2>Build System</h2>
@@ -249,9 +257,4 @@ v16.06: NVMf userspace target</h1>
 <li>Linux and FreeBSD support </li>
 </ul>
 </div></div><!-- contents -->
-<footer>
-  <div class="container text-center">
-    <p class="copyright text-muted small">Copyright © Intel Corporation. All Rights Reserved.</p>
-  </div>
-</footer>
 </div>

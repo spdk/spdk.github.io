@@ -91,9 +91,4 @@
 <div class="textblock"><p>SPDK is ported to new environments by implementing the <em>env</em> library interface. The <em>env</em> interface provides APIs for drivers to allocate physically contiguous and pinned memory, perform PCI operations (config cycles and mapping BARs), virtual to physical address translation and managing memory pools. The <em>env</em> API is defined in <a class="el" href="env_8h.html" title="Encapsulated third-party dependencies. ">include/spdk/env.h</a>.</p>
 <p>SPDK includes a default implementation of the <em>env</em> library based on the Data Plane Development Kit (<a href="http://dpdk.org/">DPDK</a>). This DPDK implementation can be found in <code>lib/env_dpdk</code>.</p>
 <p>DPDK is currently supported on Linux and FreeBSD only. Users who want to use SPDK on other operating systems, or in userspace driver frameworks other than DPDK, will need to implement a new version of the <em>env</em> library. The new implementation can be integrated into the SPDK build by updating the following line in CONFIG: </p><pre class="fragment">CONFIG_ENV?=$(SPDK_ROOT_DIR)/lib/env_dpdk</pre> </div></div><!-- contents -->
-<footer>
-  <div class="container text-center">
-    <p class="copyright text-muted small">Copyright © Intel Corporation. All Rights Reserved.</p>
-  </div>
-</footer>
 </div>
