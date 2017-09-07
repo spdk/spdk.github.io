@@ -178,9 +178,4 @@
 <p>Any other operation will not dirty the metadata. Further, the metadata for each blob is independent of all of the others, so a synchronization operation is only needed on the specific blob that is dirty.</p>
 <p>The metadata consists of a linked list of pages. Updates to the metadata are done by first writing page 2 through N to a new location, writing page 1 in place to atomically update the chain, and then erasing the remainder of the old chain. The vast majority of the time, blobs consist of just a single metadata page and so this operation is very efficient. For this scheme to work the write to the first page must be atomic, which requires hardware support from the backing device. For most, if not all, NVMe SSDs, an atomic write unit of 4KiB can be expected. Devices specify their atomic write unit in their NVMe identify data - specifically in the AWUN field. </p>
 </div></div><!-- contents -->
-<footer>
-  <div class="container text-center">
-    <p class="copyright text-muted small">Copyright © Intel Corporation. All Rights Reserved.</p>
-  </div>
-</footer>
 </div>

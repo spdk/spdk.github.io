@@ -89,6 +89,7 @@
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#typedef-members">Typedefs</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">vhost.h File Reference</div>  </div>
@@ -98,6 +99,12 @@
 <p>SPDK vhost.  
 <a href="#details">More...</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:aa907973f6641d28934dc304f2bd103aa"><td class="memItemLeft" align="right" valign="top"><a id="aa907973f6641d28934dc304f2bd103aa"></a>
+typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_vhost_event_fn</b>) (struct spdk_vhost_dev *, void *)</td></tr>
+<tr class="separator:aa907973f6641d28934dc304f2bd103aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a38abeca2169a11feec2ecdce057f3263"><td class="memItemLeft" align="right" valign="top"><a id="a38abeca2169a11feec2ecdce057f3263"></a>
@@ -153,10 +160,59 @@ struct spdk_bdev *&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_vh
 <tr class="memitem:a3488dc6043c6195990982ecfe07b10c5"><td class="memItemLeft" align="right" valign="top"><a id="a3488dc6043c6195990982ecfe07b10c5"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_vhost_blk_get_readonly</b> (struct spdk_vhost_dev *vdev)</td></tr>
 <tr class="separator:a3488dc6043c6195990982ecfe07b10c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc95ae1497ffe77ca8fb551d7d9c289a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vhost_8h.html#afc95ae1497ffe77ca8fb551d7d9c289a">spdk_vhost_call_external_event</a> (const char *ctrlr_name, spdk_vhost_event_fn fn, void *arg)</td></tr>
+<tr class="memdesc:afc95ae1497ffe77ca8fb551d7d9c289a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call function on reactor of given vhost controller.  <a href="#afc95ae1497ffe77ca8fb551d7d9c289a">More...</a><br /></td></tr>
+<tr class="separator:afc95ae1497ffe77ca8fb551d7d9c289a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>SPDK vhost. </p>
 </div><h2 class="groupheader">Function Documentation</h2>
+<a id="afc95ae1497ffe77ca8fb551d7d9c289a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc95ae1497ffe77ca8fb551d7d9c289a">&#9670;&nbsp;</a></span>spdk_vhost_call_external_event()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_vhost_call_external_event </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>ctrlr_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">spdk_vhost_event_fn&#160;</td>
+          <td class="paramname"><em>fn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>arg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Call function on reactor of given vhost controller. </p>
+<p>If controller is not in use, the event will be called right away on the caller's thread.</p>
+<p>This function is thread safe.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ctrlr_name</td><td>name of the vhost controller to run this event on </td></tr>
+    <tr><td class="paramname">fn</td><td>function to be called. The first parameter of callback function is either actual spdk_vhost_dev pointer or NULL in case vdev with given name doesn't exist. The second param is user provided argument <em>arg</em>. </td></tr>
+    <tr><td class="paramname">arg</td><td>parameter to be passed to <em>fn</em>. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a4365f85870f3396a837b16f4218548e6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4365f85870f3396a837b16f4218548e6">&#9670;&nbsp;</a></span>spdk_vhost_dev_next()</h2>
 
@@ -219,9 +275,4 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_vhost_blk_get_re
 </div>
 </div>
 </div><!-- contents -->
-<footer>
-  <div class="container text-center">
-    <p class="copyright text-muted small">Copyright © Intel Corporation. All Rights Reserved.</p>
-  </div>
-</footer>
 </div>

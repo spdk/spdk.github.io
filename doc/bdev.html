@@ -101,17 +101,24 @@ SPDK bdev Getting Started Guide</h1>
 Configuring block devices</h1>
 <p>SPDK block devices are typically configured via an SPDK configuration file. These block devices can then be associated with higher level abstractions such as iSCSI target nodes, NVMe-oF namespaces or vhost-scsi controllers. This section will describe how to configure block devices for the SPDK bdev drivers included with SPDK.</p>
 <p>The SPDK configuration file is typically passed to your SPDK-based application via the command line. Refer to the help facility of your application for more details.</p>
-<h2>NVMe</h2>
+<h2><a class="anchor" id="bdev_config_nvme"></a>
+NVMe</h2>
 <p>The SPDK nvme bdev driver provides SPDK block layer access to NVMe SSDs via the SPDK userspace NVMe driver. The nvme bdev driver binds only to devices explicitly specified. These devices can be either locally attached SSDs or remote NVMe subsystems via NVMe-oF.</p>
 <div class="fragment"><div class="line">[Nvme]</div><div class="line">  # NVMe Device Whitelist</div><div class="line">  # Users may specify which NVMe devices to claim by their transport id.</div><div class="line">  # See spdk_nvme_transport_id_parse() in spdk/nvme.h for the correct format.</div><div class="line">  # The devices will be assigned names in the format &lt;YourName&gt;nY, where YourName is the</div><div class="line">  # name specified at the end of the TransportId line and Y is the namespace id, which starts at 1.</div><div class="line">  TransportID &quot;trtype:PCIe traddr:0000:00:00.0&quot; Nvme0</div><div class="line">  TransportID &quot;trtype:RDMA adrfam:IPv4 subnqn:nqn.2016-06.io.spdk:cnode1 traddr:192.168.100.1 trsvcid:4420&quot; Nvme1</div></div><!-- fragment --><p>This exports block devices for all namespaces attached to the two controllers. Block devices for namespaces attached to the first controller will be in the format Nvme0nY, where Y is the namespace ID. Most NVMe SSDs have a single namespace with ID=1. Block devices attached to the second controller will be in the format Nvme1nY.</p>
-<h2>Malloc</h2>
+<h2><a class="anchor" id="bdev_config_malloc"></a>
+Malloc</h2>
 <p>The SPDK malloc bdev driver allocates a buffer of memory in userspace as the target for block I/O operations. This effectively serves as a userspace ramdisk target.</p>
 <p>Configuration file syntax: </p><div class="fragment"><div class="line">[Malloc]</div><div class="line">  NumberOfLuns 4</div><div class="line">  LunSizeInMB  64</div></div><!-- fragment --><p>This exports 4 malloc block devices, named Malloc0 through Malloc3. Each malloc block device will be 64MB in size.</p>
-<h2>Linux AIO</h2>
+<h2><a class="anchor" id="bdev_config_null"></a>
+Null</h2>
+<p>The SPDK null bdev driver is a dummy block I/O target that discards all writes and returns undefined data for reads. It is useful for benchmarking the rest of the bdev I/O stack with minimal block device overhead and for testing configurations that can't easily be created with the Malloc bdev.</p>
+<p>Configuration file syntax: </p><div class="fragment"><div class="line">[Null]</div><div class="line">  # Dev &lt;name&gt; &lt;size_in_MiB&gt; &lt;block_size&gt;</div><div class="line"></div><div class="line">  # Create an 8 petabyte null bdev with 4K block size called Null0</div><div class="line">  Dev Null0 8589934592 4096</div></div><!-- fragment --><h2><a class="anchor" id="bdev_config_aio"></a>
+Linux AIO</h2>
 <p>The SPDK aio bdev driver provides SPDK block layer access to Linux kernel block devices via Linux AIO. Note that O_DIRECT is used and thus bypasses the Linux page cache. This mode is probably as close to a typical kernel based target as a user space target can get without using a user-space driver.</p>
 <p>Configuration file syntax:</p>
 <div class="fragment"><div class="line">[AIO]</div><div class="line">  # AIO &lt;file name&gt; &lt;bdev name&gt; [&lt;block size&gt;]</div><div class="line">  # The file name is the backing device</div><div class="line">  # The bdev name can be referenced from elsewhere in the configuration file.</div><div class="line">  # Block size may be omitted to automatically detect the block size of a disk.</div><div class="line">  AIO /dev/sdb AIO0</div><div class="line">  AIO /dev/sdc AIO1</div><div class="line">  AIO /tmp/myfile AIO2 4096</div></div><!-- fragment --><p>This exports 2 aio block devices, named AIO0 and AIO1.</p>
-<h2>Ceph RBD</h2>
+<h2><a class="anchor" id="bdev_config_rbd"></a>
+Ceph RBD</h2>
 <p>The SPDK rbd bdev driver provides SPDK block layer access to Ceph RADOS block devices (RBD). Ceph RBD devices are accessed via librbd and librados libraries to access the RADOS block device exported by Ceph.</p>
 <p>Configuration file syntax:</p>
 <div class="fragment"><div class="line">[Ceph]</div><div class="line">  # The format of provided rbd info should be: Ceph rbd_pool_name rbd_name size.</div><div class="line">  # In the following example, rbd is the name of rbd_pool; foo is the name of</div><div class="line">  # rbd device exported by Ceph; value 512 represents the configured block size</div><div class="line">  # for this rbd, the block size should be a multiple of 512.</div><div class="line">  Ceph rbd foo 512</div></div><!-- fragment --><p>This exports 1 rbd block device, named Ceph0.</p>
@@ -122,9 +129,4 @@ GPT (GUID Partition Table)</h2>
 <div class="fragment"><div class="line">[Gpt]</div><div class="line">  # If Gpt is disabled, it will not automatically expose GPT partitions as bdevs.</div><div class="line">  Disable No</div></div><!-- fragment --><h3>Creating a GPT partition table using NBD</h3>
 <p>The bdev NBD app can be used to temporarily expose an SPDK bdev through the Linux kernel block stack so that standard partitioning tools can be used.</p>
 <div class="fragment"><div class="line"># Expose bdev Nvme0n1 as kernel block device /dev/nbd0</div><div class="line"># Assumes bdev.conf is already configured with a bdev named Nvme0n1 -</div><div class="line"># see the NVMe section above.</div><div class="line">test/lib/bdev/nbd/nbd -c bdev.conf -b Nvme0n1 -n /dev/nbd0 &amp;</div><div class="line">nbd_pid=$!</div><div class="line"></div><div class="line"># Create GPT partition table.</div><div class="line">parted -s /dev/nbd0 mklabel gpt</div><div class="line"></div><div class="line"># Add a partition consuming 50% of the available space.</div><div class="line">parted -s /dev/nbd0 mkpart MyPartition &#39;0%&#39; &#39;50%&#39;</div><div class="line"></div><div class="line"># Change the partition type to the SPDK GUID.</div><div class="line"># sgdisk is part of the gdisk package.</div><div class="line">sgdisk -t 1:7c5222bd-8f5d-4087-9c00-bf9843c7b58c /dev/nbd0</div><div class="line"></div><div class="line"># Kill the NBD application (stop exporting /dev/nbd0).</div><div class="line">kill $nbd_pid</div><div class="line"></div><div class="line"># Now Nvme0n1 is configured with a GPT partition table, and</div><div class="line"># the first partition will be automatically exposed as</div><div class="line"># Nvme0n1p1 in SPDK applications.</div></div><!-- fragment --> </div></div><!-- contents -->
-<footer>
-  <div class="container text-center">
-    <p class="copyright text-muted small">Copyright © Intel Corporation. All Rights Reserved.</p>
-  </div>
-</footer>
 </div>

@@ -150,9 +150,9 @@ enum spdk_log_level&#160;</td><td class="memItemRight" valign="bottom"><a class=
 <tr class="memitem:aaa20a1f56503b0d9f16c82b451fb338b"><td class="memItemLeft" align="right" valign="top"><a id="aaa20a1f56503b0d9f16c82b451fb338b"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_log</b> (enum spdk_log_level level, const char *file, const int line, const char *func, const char *format,...)</td></tr>
 <tr class="separator:aaa20a1f56503b0d9f16c82b451fb338b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abe2e79b43c1f8b980f356fca0b391902"><td class="memItemLeft" align="right" valign="top"><a id="abe2e79b43c1f8b980f356fca0b391902"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_trace_dump</b> (const char *label, const uint8_t *buf, size_t len)</td></tr>
-<tr class="separator:abe2e79b43c1f8b980f356fca0b391902"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2454971601a89c8c4675af1ce8a2af85"><td class="memItemLeft" align="right" valign="top"><a id="a2454971601a89c8c4675af1ce8a2af85"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_trace_dump</b> (FILE *fp, const char *label, const uint8_t *buf, size_t len)</td></tr>
+<tr class="separator:a2454971601a89c8c4675af1ce8a2af85"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af31998ef403c5644e063654474db451e"><td class="memItemLeft" align="right" valign="top"><a id="af31998ef403c5644e063654474db451e"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_log_get_trace_flag</b> (const char *flag)</td></tr>
 <tr class="separator:af31998ef403c5644e063654474db451e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -254,9 +254,4 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_tracelog_usage</
 </div>
 </div>
 </div><!-- contents -->
-<footer>
-  <div class="container text-center">
-    <p class="copyright text-muted small">Copyright © Intel Corporation. All Rights Reserved.</p>
-  </div>
-</footer>
 </div>
