@@ -9,7 +9,6 @@ description: >
   It achieves high performance by moving all of the necessary drivers into userspace
   and operating in a polled mode instead of relying on interrupts,
   which avoids kernel context switches and eliminates interrupt handling overhead.
-copyright: 'Copyright &copy; Intel Corporation. All Rights Reserved.'
 markdown: kramdown
 permalink: pretty
 
