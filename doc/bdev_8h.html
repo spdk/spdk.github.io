@@ -146,15 +146,17 @@ Enumerations</h2></td></tr>
 </td></tr>
 <tr class="separator:ad6c166f5d928c2995df57c96a2977862"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a633029e24ab5ae4a689bffa2565a519f"><td class="memItemLeft" align="right" valign="top"><a id="a633029e24ab5ae4a689bffa2565a519f"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev_8h.html#a633029e24ab5ae4a689bffa2565a519f">spdk_bdev_io_type</a> { <br />
-&#160;&#160;<b>SPDK_BDEV_IO_TYPE_READ</b> = 1, 
+&#160;&#160;<b>SPDK_BDEV_IO_TYPE_INVALID</b> = 0, 
+<b>SPDK_BDEV_IO_TYPE_READ</b>, 
 <b>SPDK_BDEV_IO_TYPE_WRITE</b>, 
 <b>SPDK_BDEV_IO_TYPE_UNMAP</b>, 
-<b>SPDK_BDEV_IO_TYPE_FLUSH</b>, 
 <br />
-&#160;&#160;<b>SPDK_BDEV_IO_TYPE_RESET</b>, 
+&#160;&#160;<b>SPDK_BDEV_IO_TYPE_FLUSH</b>, 
+<b>SPDK_BDEV_IO_TYPE_RESET</b>, 
 <b>SPDK_BDEV_IO_TYPE_NVME_ADMIN</b>, 
 <b>SPDK_BDEV_IO_TYPE_NVME_IO</b>, 
-<b>SPDK_BDEV_IO_TYPE_WRITE_ZEROES</b>
+<br />
+&#160;&#160;<b>SPDK_BDEV_IO_TYPE_WRITE_ZEROES</b>
 <br />
  }<tr class="memdesc:a633029e24ab5ae4a689bffa2565a519f"><td class="mdescLeft">&#160;</td><td class="mdescRight">bdev I/O type <br /></td></tr>
 </td></tr>
