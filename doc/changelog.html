@@ -90,6 +90,8 @@
 <div class="contents">
 <div class="textblock"><h1><a class="anchor" id="changelog-v17-10"></a>
 v17.10: (Upcoming Release)</h1>
+<h2>New dependency</h2>
+<p>libuuid added as new depenency for logical volumes.</p>
 <h2>Block Device Abstraction Layer (bdev)</h2>
 <p>An <a href="http://github.com/axboe/fio">fio</a> plugin was added that can route I/O to the bdev layer. See the https://github.com/spdk/spdk/blob/master/examples/bdev/fio_plugin/README.md "plugin documentation" for more information.</p>
 <p><a class="el" href="bdev_8h.html#a680c9c302998f7b003e2476e35d9ae4b" title="Submit an unmap request to the block device. ">spdk_bdev_unmap()</a> was modified to take an offset and a length in bytes as arguments instead of requiring the user to provide an array of SCSI unmap descriptors. This limits unmaps to a single contiguous range.</p>
@@ -110,6 +112,7 @@ v17.10: (Upcoming Release)</h1>
 <p>The NVMe-oF target no longer requires any in capsule data buffers to run, and the feature is now entirely optional. Previously, at least 4KiB in capsule data buffers were required.</p>
 <p>NVMe-oF subsytems have a new configuration option, AllowAnyHost, to control whether the host NQN whitelist is enforced when accepting new connections. If no Host options have been specified and AllowAnyHost is disabled, the connection will be denied; this is a behavior change from previous releases, which allowed any host NQN to connect if the Host list was empty. AllowAnyHost is disabled by default.</p>
 <p>NVMe-oF namespaces may now be assigned arbitrary namespace IDs, and the number of namespaces per subsystem is no longer limited.</p>
+<p>The NVMe-oF target now supports the Write Zeroes command.</p>
 <h2>Environment Abstraction Layer</h2>
 <p>A new default value, SPDK_MEMPOOL_DEFAULT_CACHE_SIZE, was added to provide additional clarity when constructing spdk_mempools. Previously, -1 could be passed and the library would choose a reasonable default, but this new value makes it explicit that the default is being used.</p>
 <h2>Blobstore</h2>
@@ -118,6 +121,9 @@ v17.10: (Upcoming Release)</h1>
 <p>The ability to set a thread name, previously only used by the reactor code, is now part of the <code>spdk_thread_allocate()</code> API. Users may specify a thread name which will show up in tools like <code>gdb</code>.</p>
 <h2>Log</h2>
 <p>The API spdk_trace_dump() now takes a new parameter to allow the caller to specify stdout or stderr for example.</p>
+<h2>Logical Volumes</h2>
+<p>Logical volumes library built on top of SPDK blobstore has been added. It is possible create logical volumes on top of other devices using RPC.</p>
+<p>See <a href="http://www.spdk.io/doc/lvol.html">logical volumes</a> documentation for more information.</p>
 <h1><a class="anchor" id="changelog-v17-07"></a>
 v17.07: Build system improvements, userspace vhost-blk target, and GPT bdev</h1>
 <h2>Build System</h2>

@@ -243,6 +243,9 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_
 <tr class="memitem:a1e3def668122e76abbfb74305f118291"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a1e3def668122e76abbfb74305f118291">spdk_nvme_ctrlr_cmd_io_raw</a> (struct spdk_nvme_ctrlr *ctrlr, struct spdk_nvme_qpair *qpair, struct <a class="el" href="structspdk__nvme__cmd.html">spdk_nvme_cmd</a> *cmd, void *buf, uint32_t len, <a class="el" href="nvme_8h.html#ac9779e9957d7089dde8e492cc60856d8">spdk_nvme_cmd_cb</a> cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:a1e3def668122e76abbfb74305f118291"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send the given NVM I/O command to the NVMe controller.  <a href="#a1e3def668122e76abbfb74305f118291">More...</a><br /></td></tr>
 <tr class="separator:a1e3def668122e76abbfb74305f118291"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd2d8453bb2478c7b1a70c0a09c7ef4b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#afd2d8453bb2478c7b1a70c0a09c7ef4b">spdk_nvme_ctrlr_cmd_io_raw_with_md</a> (struct spdk_nvme_ctrlr *ctrlr, struct spdk_nvme_qpair *qpair, struct <a class="el" href="structspdk__nvme__cmd.html">spdk_nvme_cmd</a> *cmd, void *buf, uint32_t len, void *md_buf, <a class="el" href="nvme_8h.html#ac9779e9957d7089dde8e492cc60856d8">spdk_nvme_cmd_cb</a> cb_fn, void *cb_arg)</td></tr>
+<tr class="memdesc:afd2d8453bb2478c7b1a70c0a09c7ef4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send the given NVM I/O command with metadata to the NVMe controller.  <a href="#afd2d8453bb2478c7b1a70c0a09c7ef4b">More...</a><br /></td></tr>
+<tr class="separator:afd2d8453bb2478c7b1a70c0a09c7ef4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa331d140870e977722bfbb6826524782"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#aa331d140870e977722bfbb6826524782">spdk_nvme_qpair_process_completions</a> (struct spdk_nvme_qpair *qpair, uint32_t max_completions)</td></tr>
 <tr class="memdesc:aa331d140870e977722bfbb6826524782"><td class="mdescLeft">&#160;</td><td class="mdescRight">Process any outstanding completions for I/O submitted on a queue pair.  <a href="#aa331d140870e977722bfbb6826524782">More...</a><br /></td></tr>
 <tr class="separator:aa331d140870e977722bfbb6826524782"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1021,6 +1024,75 @@ int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_retry_co
 </div><div class="memdoc">
 
 <p>Send the given NVM I/O command to the NVMe controller. </p>
+<p>This is a low level interface for submitting I/O commands directly. Prefer the spdk_nvme_ns_cmd_* functions instead. The validity of the command will not be checked!</p>
+<p>When constructing the nvme_command it is not necessary to fill out the PRP list/SGL or the CID. The driver will handle both of those for you.</p>
+<p>The command is submitted to a qpair allocated by <a class="el" href="nvme_8h.html#a13f745d239dab9b8f934fae2ad4984a2" title="Allocate an I/O queue pair (submission and completion queue). ">spdk_nvme_ctrlr_alloc_io_qpair()</a>. The user must ensure that only one thread submits I/O on a given qpair at any given time. </p>
+
+</div>
+</div>
+<a id="afd2d8453bb2478c7b1a70c0a09c7ef4b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd2d8453bb2478c7b1a70c0a09c7ef4b">&#9670;&nbsp;</a></span>spdk_nvme_ctrlr_cmd_io_raw_with_md()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_nvme_ctrlr_cmd_io_raw_with_md </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_nvme_ctrlr *&#160;</td>
+          <td class="paramname"><em>ctrlr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct spdk_nvme_qpair *&#160;</td>
+          <td class="paramname"><em>qpair</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structspdk__nvme__cmd.html">spdk_nvme_cmd</a> *&#160;</td>
+          <td class="paramname"><em>cmd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>buf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>md_buf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="nvme_8h.html#ac9779e9957d7089dde8e492cc60856d8">spdk_nvme_cmd_cb</a>&#160;</td>
+          <td class="paramname"><em>cb_fn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>cb_arg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Send the given NVM I/O command with metadata to the NVMe controller. </p>
 <p>This is a low level interface for submitting I/O commands directly. Prefer the spdk_nvme_ns_cmd_* functions instead. The validity of the command will not be checked!</p>
 <p>When constructing the nvme_command it is not necessary to fill out the PRP list/SGL or the CID. The driver will handle both of those for you.</p>
 <p>The command is submitted to a qpair allocated by <a class="el" href="nvme_8h.html#a13f745d239dab9b8f934fae2ad4984a2" title="Allocate an I/O queue pair (submission and completion queue). ">spdk_nvme_ctrlr_alloc_io_qpair()</a>. The user must ensure that only one thread submits I/O on a given qpair at any given time. </p>
