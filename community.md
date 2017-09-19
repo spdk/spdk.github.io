@@ -7,6 +7,10 @@ title:  "SPDK Community"
 
 Join us on the [freenode](https://freenode.net/) IRC network in the [#spdk](irc://irc.freenode.net/%23spdk) ([Archive](https://ci.spdk.io/irclog/)) channel.
 
+# Trello Board
+
+Find something to work on at the Things To Do Board, or start/participate in a design discussion on any of the [SPDK Trello Boards](https://trello.com/spdk) 
+
 # Mailing List
 
 The [SPDK Mailing List](https://lists.01.org/mailman/listinfo/spdk) ([Archive](https://lists.01.org/pipermail/spdk/))
