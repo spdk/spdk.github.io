@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "23bdfa56_d8fd9089",
+        "filename": "community.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 1011289
+      },
+      "writtenOn": "2017-09-20T17:53:19Z",
+      "side": 1,
+      "message": "How about:\n\nFind something to work on at the Things To Do Board, or start/participate in a design discussion on an of the boards at ....",
+      "revId": "5d680737359afe65c7c0e5b30560a9cbc7823c0e",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
