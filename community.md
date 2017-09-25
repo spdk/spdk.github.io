@@ -5,7 +5,7 @@ title:  "SPDK Community"
 
 # IRC
 
-Join us on the [freenode](https://freenode.net/) IRC network in the [#spdk](irc://irc.freenode.net/%23spdk) ([Archive](https://ci.spdk.io/irclog/)) channel.
+Join us on the [freenode](https://freenode.net/) IRC network in the [#SPDK asdasda](irc://irc.freenode.net/%23spdk) ([Archive](https://ci.spdk.io/irclog/)) channel.
 
 # Mailing List
 
