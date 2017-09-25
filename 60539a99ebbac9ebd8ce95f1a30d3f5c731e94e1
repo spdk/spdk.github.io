@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "83d1fcf8_12c0a824",
+        "filename": "development.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 1011289
+      },
+      "writtenOn": "2017-09-25T20:59:56Z",
+      "side": 1,
+      "message": "LOL, I pasted into email to spell check and then back into VI, must have picked it up there somehow.  thx",
+      "parentUuid": "26bbceb9_1bd3f64f",
+      "revId": "60539a99ebbac9ebd8ce95f1a30d3f5c731e94e1",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "53b53dcf_0c653efb",
         "filename": "development.md",
         "patchSetId": 1
@@ -30,6 +48,30 @@
       "writtenOn": "2017-09-25T16:41:52Z",
       "side": 1,
       "message": "efficient -\u003e efficiently",
+      "range": {
+        "startLine": 42,
+        "startChar": 42,
+        "endLine": 42,
+        "endChar": 51
+      },
+      "revId": "60539a99ebbac9ebd8ce95f1a30d3f5c731e94e1",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "2bf62f39_6f7139dd",
+        "filename": "development.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 42,
+      "author": {
+        "id": 1011289
+      },
+      "writtenOn": "2017-09-25T20:59:56Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "53b53dcf_0c653efb",
       "range": {
         "startLine": 42,
         "startChar": 42,
