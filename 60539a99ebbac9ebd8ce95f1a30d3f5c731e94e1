@@ -1,0 +1,44 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "26bbceb9_1bd3f64f",
+        "filename": "development.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 1010525
+      },
+      "writtenOn": "2017-09-25T16:41:52Z",
+      "side": 1,
+      "message": "Looks like your editor put a UTF-8 byte order mark or something in here?  This breaks the build - you can see that the Development link doesn\u0027t work in the output: \nhttp://spdk.intel.com/public/spdk.github.io.pub/builds/review/60539a99ebbac9ebd8ce95f1a30d3f5c731e94e1.1506290712/spdk.intel.com/_site/",
+      "revId": "60539a99ebbac9ebd8ce95f1a30d3f5c731e94e1",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "53b53dcf_0c653efb",
+        "filename": "development.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 42,
+      "author": {
+        "id": 1010525
+      },
+      "writtenOn": "2017-09-25T16:41:52Z",
+      "side": 1,
+      "message": "efficient -\u003e efficiently",
+      "range": {
+        "startLine": 42,
+        "startChar": 42,
+        "endLine": 42,
+        "endChar": 51
+      },
+      "revId": "60539a99ebbac9ebd8ce95f1a30d3f5c731e94e1",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
