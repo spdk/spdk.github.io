@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "03285051_22d70f4f",
+        "filename": "development.md",
+        "patchSetId": 3
+      },
+      "lineNbr": 140,
+      "author": {
+        "id": 1011289
+      },
+      "writtenOn": "2017-09-26T21:07:43Z",
+      "side": 1,
+      "message": "maybe its because you use stgit :) If one follows the advice that was already in this page, to commit frequently, then you have to squash before you push.  Note that I didn\u0027t add this, I just changed the wording from \"rewrite your local branch\u0027s history\" as squash is the git term and the only thing I\u0027ve ever heard before.",
+      "parentUuid": "0a3a48bf_cde3757b",
+      "revId": "4a4b101342e03a5addff6e8d58342d4ac66cbb50",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "b86b8a14_3baa30a0",
         "filename": "development.md",
         "patchSetId": 3
@@ -30,6 +48,24 @@
       "writtenOn": "2017-09-26T19:43:56Z",
       "side": 1,
       "message": "\"not\" split across two lines?",
+      "revId": "4a4b101342e03a5addff6e8d58342d4ac66cbb50",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "2bf67c8c_d2fab20a",
+        "filename": "development.md",
+        "patchSetId": 3
+      },
+      "lineNbr": 188,
+      "author": {
+        "id": 1011289
+      },
+      "writtenOn": "2017-09-26T21:07:43Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "b86b8a14_3baa30a0",
       "revId": "4a4b101342e03a5addff6e8d58342d4ac66cbb50",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": false
