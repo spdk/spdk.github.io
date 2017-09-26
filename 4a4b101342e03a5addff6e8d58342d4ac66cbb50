@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "0a3a48bf_cde3757b",
+        "filename": "development.md",
+        "patchSetId": 3
+      },
+      "lineNbr": 140,
+      "author": {
+        "id": 1011222
+      },
+      "writtenOn": "2017-09-26T19:43:56Z",
+      "side": 1,
+      "message": "this is probably ok but in my experience its not squashing that\u0027s needed, its breaking patches up into smaller pieces\n\ni think usually squashing comes in when there\u0027s a set of patches and the intermediate ones don\u0027t build/run - only the final one does - that\u0027s where squashing is needed to provide a fully functional incremental step",
+      "revId": "4a4b101342e03a5addff6e8d58342d4ac66cbb50",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "b86b8a14_3baa30a0",
+        "filename": "development.md",
+        "patchSetId": 3
+      },
+      "lineNbr": 188,
+      "author": {
+        "id": 1011222
+      },
+      "writtenOn": "2017-09-26T19:43:56Z",
+      "side": 1,
+      "message": "\"not\" split across two lines?",
+      "revId": "4a4b101342e03a5addff6e8d58342d4ac66cbb50",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
