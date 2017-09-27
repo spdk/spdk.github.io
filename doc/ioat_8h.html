@@ -128,12 +128,12 @@ Functions</h2></td></tr>
 <tr class="memitem:ae6d4f2be5a4facdd9e59decf720e0328"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ioat_8h.html#ae6d4f2be5a4facdd9e59decf720e0328">spdk_ioat_detach</a> (struct spdk_ioat_chan *ioat)</td></tr>
 <tr class="memdesc:ae6d4f2be5a4facdd9e59decf720e0328"><td class="mdescLeft">&#160;</td><td class="mdescRight">Detaches specified device returned by <a class="el" href="ioat_8h.html#a784c1a69962e0964cf6988badd945b6f">spdk_ioat_probe()</a> from the I/OAT driver.  <a href="#ae6d4f2be5a4facdd9e59decf720e0328">More...</a><br /></td></tr>
 <tr class="separator:ae6d4f2be5a4facdd9e59decf720e0328"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeb96b0ffd9399b70fb0d847fe61a8053"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ioat_8h.html#aeb96b0ffd9399b70fb0d847fe61a8053">spdk_ioat_submit_copy</a> (struct spdk_ioat_chan *chan, void *cb_arg, <a class="el" href="ioat_8h.html#a143b0bad5a250a1a6d27b087be67627b">spdk_ioat_req_cb</a> cb_fn, void *dst, const void *src, uint64_t nbytes)</td></tr>
-<tr class="memdesc:aeb96b0ffd9399b70fb0d847fe61a8053"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submit a DMA engine memory copy request.  <a href="#aeb96b0ffd9399b70fb0d847fe61a8053">More...</a><br /></td></tr>
-<tr class="separator:aeb96b0ffd9399b70fb0d847fe61a8053"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aed6f662feac31775bb03511766c5f1a5"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ioat_8h.html#aed6f662feac31775bb03511766c5f1a5">spdk_ioat_submit_fill</a> (struct spdk_ioat_chan *chan, void *cb_arg, <a class="el" href="ioat_8h.html#a143b0bad5a250a1a6d27b087be67627b">spdk_ioat_req_cb</a> cb_fn, void *dst, uint64_t fill_pattern, uint64_t nbytes)</td></tr>
-<tr class="memdesc:aed6f662feac31775bb03511766c5f1a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submit a DMA engine memory fill request.  <a href="#aed6f662feac31775bb03511766c5f1a5">More...</a><br /></td></tr>
-<tr class="separator:aed6f662feac31775bb03511766c5f1a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1de22182996edecb435f9583665008d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ioat_8h.html#ac1de22182996edecb435f9583665008d">spdk_ioat_submit_copy</a> (struct spdk_ioat_chan *chan, void *cb_arg, <a class="el" href="ioat_8h.html#a143b0bad5a250a1a6d27b087be67627b">spdk_ioat_req_cb</a> cb_fn, void *dst, const void *src, uint64_t nbytes)</td></tr>
+<tr class="memdesc:ac1de22182996edecb435f9583665008d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submit a DMA engine memory copy request.  <a href="#ac1de22182996edecb435f9583665008d">More...</a><br /></td></tr>
+<tr class="separator:ac1de22182996edecb435f9583665008d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6025f251c715e93ea27ee03b5ab9557c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ioat_8h.html#a6025f251c715e93ea27ee03b5ab9557c">spdk_ioat_submit_fill</a> (struct spdk_ioat_chan *chan, void *cb_arg, <a class="el" href="ioat_8h.html#a143b0bad5a250a1a6d27b087be67627b">spdk_ioat_req_cb</a> cb_fn, void *dst, uint64_t fill_pattern, uint64_t nbytes)</td></tr>
+<tr class="memdesc:a6025f251c715e93ea27ee03b5ab9557c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submit a DMA engine memory fill request.  <a href="#a6025f251c715e93ea27ee03b5ab9557c">More...</a><br /></td></tr>
+<tr class="separator:a6025f251c715e93ea27ee03b5ab9557c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a90034d709755853f316cf47b541d48a9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ioat_8h.html#a90034d709755853f316cf47b541d48a9">spdk_ioat_process_events</a> (struct spdk_ioat_chan *chan)</td></tr>
 <tr class="memdesc:a90034d709755853f316cf47b541d48a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check for completed requests on an I/OAT channel.  <a href="#a90034d709755853f316cf47b541d48a9">More...</a><br /></td></tr>
 <tr class="separator:a90034d709755853f316cf47b541d48a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -364,14 +364,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="aeb96b0ffd9399b70fb0d847fe61a8053"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aeb96b0ffd9399b70fb0d847fe61a8053">&#9670;&nbsp;</a></span>spdk_ioat_submit_copy()</h2>
+<a id="ac1de22182996edecb435f9583665008d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac1de22182996edecb435f9583665008d">&#9670;&nbsp;</a></span>spdk_ioat_submit_copy()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int64_t spdk_ioat_submit_copy </td>
+          <td class="memname">int spdk_ioat_submit_copy </td>
           <td>(</td>
           <td class="paramtype">struct spdk_ioat_chan *&#160;</td>
           <td class="paramname"><em>chan</em>, </td>
@@ -429,14 +429,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="aed6f662feac31775bb03511766c5f1a5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aed6f662feac31775bb03511766c5f1a5">&#9670;&nbsp;</a></span>spdk_ioat_submit_fill()</h2>
+<a id="a6025f251c715e93ea27ee03b5ab9557c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6025f251c715e93ea27ee03b5ab9557c">&#9670;&nbsp;</a></span>spdk_ioat_submit_fill()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int64_t spdk_ioat_submit_fill </td>
+          <td class="memname">int spdk_ioat_submit_fill </td>
           <td>(</td>
           <td class="paramtype">struct spdk_ioat_chan *&#160;</td>
           <td class="paramname"><em>chan</em>, </td>

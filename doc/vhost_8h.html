@@ -142,12 +142,12 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_vhost_scsi_dev_re
 <tr class="memitem:a1ed91aefa18761218f566065d63d1179"><td class="memItemLeft" align="right" valign="top"><a id="a1ed91aefa18761218f566065d63d1179"></a>
 struct spdk_scsi_dev *&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_vhost_scsi_dev_get_dev</b> (struct spdk_vhost_dev *ctrl, uint8_t num)</td></tr>
 <tr class="separator:a1ed91aefa18761218f566065d63d1179"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac110c272eb97c4fbbb79bd4129327921"><td class="memItemLeft" align="right" valign="top"><a id="ac110c272eb97c4fbbb79bd4129327921"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_vhost_scsi_dev_add_dev</b> (const char *name, unsigned scsi_dev_num, const char *lun_name)</td></tr>
-<tr class="separator:ac110c272eb97c4fbbb79bd4129327921"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab1dad26bf42deaaa7629967dd5dc3ace"><td class="memItemLeft" align="right" valign="top"><a id="ab1dad26bf42deaaa7629967dd5dc3ace"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_vhost_scsi_dev_remove_dev</b> (struct spdk_vhost_dev *vdev, unsigned scsi_dev_num)</td></tr>
-<tr class="separator:ab1dad26bf42deaaa7629967dd5dc3ace"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84100090cb818120fc23d9e40fc1bb4d"><td class="memItemLeft" align="right" valign="top"><a id="a84100090cb818120fc23d9e40fc1bb4d"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_vhost_scsi_dev_add_dev</b> (struct spdk_vhost_dev *vdev, unsigned scsi_dev_num, const char *lun_name)</td></tr>
+<tr class="separator:a84100090cb818120fc23d9e40fc1bb4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00178efa7b9bb183f3ac43312328fae8"><td class="memItemLeft" align="right" valign="top"><a id="a00178efa7b9bb183f3ac43312328fae8"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_vhost_scsi_dev_remove_dev</b> (struct spdk_vhost_dev *vdev, unsigned scsi_dev_num, spdk_vhost_event_fn cb_fn, void *cb_arg)</td></tr>
+<tr class="separator:a00178efa7b9bb183f3ac43312328fae8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5ec56730c6a42b0a186131526026e619"><td class="memItemLeft" align="right" valign="top"><a id="a5ec56730c6a42b0a186131526026e619"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_vhost_blk_construct</b> (const char *name, const char *cpumask, const char *dev_name, bool readonly)</td></tr>
 <tr class="separator:a5ec56730c6a42b0a186131526026e619"><td class="memSeparator" colspan="2">&#160;</td></tr>
