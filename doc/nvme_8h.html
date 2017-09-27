@@ -3404,7 +3404,7 @@ int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_retry_co
 <p>This function is not thread safe and should only be called from one thread at a time while no other threads are actively using any NVMe devices.</p>
 <p>If called from a secondary process, only devices that have been attached to the userspace driver in the primary process will be probed.</p>
 <p>If called more than once, only devices that are not already attached to the SPDK NVMe driver will be reported.</p>
-<p>To stop using the the controller and release its associated resources, call <a class="el" href="nvme_8h.html#a4b63c225c3cce6da60fdbfb6f54b11e2">spdk_nvme_detach</a> with the spdk_nvme_ctrlr instance returned by this function. </p>
+<p>To stop using the the controller and release its associated resources, call <a class="el" href="nvme_8h.html#a4b63c225c3cce6da60fdbfb6f54b11e2">spdk_nvme_detach</a> with the spdk_nvme_ctrlr instance from the attach_cb() function. </p>
 
 </div>
 </div>

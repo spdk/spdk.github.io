@@ -278,6 +278,9 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_pci_nvme_enumerat
 <tr class="memitem:afb419df0c4f549fc77b8d81aa0d689d4"><td class="memItemLeft" align="right" valign="top"><a id="afb419df0c4f549fc77b8d81aa0d689d4"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_pci_ioat_enumerate</b> (spdk_pci_enum_cb enum_cb, void *enum_ctx)</td></tr>
 <tr class="separator:afb419df0c4f549fc77b8d81aa0d689d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90d0242f6123177ac5ac842732683ae2"><td class="memItemLeft" align="right" valign="top"><a id="a90d0242f6123177ac5ac842732683ae2"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_pci_virtio_enumerate</b> (spdk_pci_enum_cb enum_cb, void *enum_ctx)</td></tr>
+<tr class="separator:a90d0242f6123177ac5ac842732683ae2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae3779ef938c1a803ca521af9b5c61033"><td class="memItemLeft" align="right" valign="top"><a id="ae3779ef938c1a803ca521af9b5c61033"></a>
 struct spdk_pci_device *&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_pci_get_device</b> (struct <a class="el" href="structspdk__pci__addr.html">spdk_pci_addr</a> *pci_addr)</td></tr>
 <tr class="separator:ae3779ef938c1a803ca521af9b5c61033"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -335,6 +338,15 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_pci_nvme_device_a
 <tr class="memitem:ae7c48afea3729723d2a9b98342df42cc"><td class="memItemLeft" align="right" valign="top"><a id="ae7c48afea3729723d2a9b98342df42cc"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_pci_ioat_device_attach</b> (spdk_pci_enum_cb enum_cb, void *enum_ctx, struct <a class="el" href="structspdk__pci__addr.html">spdk_pci_addr</a> *pci_address)</td></tr>
 <tr class="separator:ae7c48afea3729723d2a9b98342df42cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aabf5d89c817d3630b76925969fe0e490"><td class="memItemLeft" align="right" valign="top"><a id="aabf5d89c817d3630b76925969fe0e490"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_pci_virtio_device_attach</b> (spdk_pci_enum_cb enum_cb, void *enum_ctx, struct <a class="el" href="structspdk__pci__addr.html">spdk_pci_addr</a> *pci_address)</td></tr>
+<tr class="separator:aabf5d89c817d3630b76925969fe0e490"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8678c0214fa5f08c3d63784eddbe6221"><td class="memItemLeft" align="right" valign="top"><a id="a8678c0214fa5f08c3d63784eddbe6221"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_pci_device_cfg_read</b> (struct spdk_pci_device *dev, void *value, uint32_t len, uint32_t offset)</td></tr>
+<tr class="separator:a8678c0214fa5f08c3d63784eddbe6221"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b07f91a80793a6b97634d38734f5457"><td class="memItemLeft" align="right" valign="top"><a id="a0b07f91a80793a6b97634d38734f5457"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_pci_device_cfg_write</b> (struct spdk_pci_device *dev, void *value, uint32_t len, uint32_t offset)</td></tr>
+<tr class="separator:a0b07f91a80793a6b97634d38734f5457"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1f8e0b6936b5844b354b92278f66fa2d"><td class="memItemLeft" align="right" valign="top"><a id="a1f8e0b6936b5844b354b92278f66fa2d"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_pci_device_cfg_read8</b> (struct spdk_pci_device *dev, uint8_t *value, uint32_t offset)</td></tr>
 <tr class="separator:a1f8e0b6936b5844b354b92278f66fa2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
