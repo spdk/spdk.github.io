@@ -26,7 +26,7 @@ boxes:
     url: /development/
     ico: wrench
   - title: CI status
-    url: https://ci.spdk.io/status/
+    url: https://ci.spdk.io/
     ico: ok
   - title: community
     url: /community/
