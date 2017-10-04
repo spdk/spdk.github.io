@@ -96,7 +96,7 @@ git remote set-url origin https://review.gerrithub.io/spdk/spdk
 ~~~
 
 This will prompt you for a username and a password. The username is your GitHub name, but the password is the
-one generated from the `HTTP Password` section above. You can use the [git credential helper](https://git-scm.com/docs/git-credential-store)
+one generated from the `HTTP Password` section on GerritHub. You can use the [git credential helper](https://git-scm.com/docs/git-credential-store)
 to store your password for you. You can enable it for the SPDK repository with:
 
 ~~~{.sh}
