@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "39533c34_a8ba22ac",
+        "filename": "_ci/index.html",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1010525
+      },
+      "writtenOn": "2017-10-05T17:20:43Z",
+      "side": 1,
+      "message": "This should use Jekyll\u0027s {% include %} mechanism to avoid duplication of the common header stuff.",
+      "revId": "5e7faaa45354f445972d353e8e5eb6bf3d315756",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
