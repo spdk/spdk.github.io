@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+
+
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Seth Howell">
+
+  <title>Continuous Integration</title>
+
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href='https://fonts.googleapis.com/css?family=Roboto:400,900' type='text/css'>
+  <link rel="stylesheet" href="assets/css/spdk.css">
+
+  <link href="./feed.xml" type="application/atom+xml" rel="alternate" title="Atom Feed">
+</head>
+
+
+  <body>
+    <div class="container-fluid">
+      <div class="row no-gutters">
+        <div class="col-sm-12">
+          <section id="nav">
+            <div class="navbar navbar-default navbar-static-top banner-tabs">
+              <ul class="nav navbar-nav">
+                <li role="presentation">
+                  <a href="http://www.spdk.io/">
+                    <i class="glyphicon glyphicon-home"> </i>
+                    <span class="box-name">Home</span>
+                  </a>
+                </li>
+                <li role="presentation">
+                  <a href="http://www.spdk.io/releases/">
+                    <i class="glyphicon glyphicon-download-alt"> </i>
+                    <span class="box-name">Download</span>
+                  </a>
+                </li>
+                <li role="presentation">
+                  <a href="http://www.spdk.io/doc/">
+                    <i class="glyphicon glyphicon-book"> </i>
+                    <span class="box-name">Documentation</span>
+                  </a>
+                </li>
+                <li role="presentation">
+                  <a href="http://www.spdk.io/development/">
+                    <i class="glyphicon glyphicon-wrench"> </i>
+                    <span class="box-name">Development</span>
+                  </a>
+                </li>
+                <li class="active" role="presentation">
+                  <a href="https://ci.spdk.io/">
+                    <i class="glyphicon glyphicon-ok"> </i>
+                    <span class="box-name">CI status</span>
+                  </a>
+                </li>
+                <li role="presentation">
+                  <a href="http://www.spdk.io/community/">
+                    <i class="glyphicon glyphicon-envelope"> </i>
+                    <span class="box-name">Community</span>
+                  </a>
+                </li>
+                <li role="presentation">
+                  <a href="http://www.spdk.io/blog/">
+                    <i class="glyphicon glyphicon-comment"> </i>
+                    <span class="box-name">Blog</span>
+                  </a>
+                </li>
+                <li role="presentation">
+                  <a href="http://www.spdk.io/roadmap/">
+                    <i class="glyphicon glyphicon-map-marker"> </i>
+                    <span class="box-name">Roadmap</span>
+                  </a>
+                </li>
+                <li role="presentation">
+                  <a href="https://github.com/spdk/spdk/wiki/News">
+                    <i class="glyphicon glyphicon-bullhorn"> </i>
+                    <span class="box-name">News</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-12 text-left">
+          <h1>Continuous Integration</h1>
+        </div>
+      </div>
+
+      <div class="col-md-8">
+        <section id="content">
+<p>The SPDK continuous integration (CI) test pool is an ever expanding group of machines, both virtual and physical, dedicated to verifying the functionality of each patch submitted to the SPDK code base. The test pool currently consists of 12 machines running multiple flavors of Linux (CentOS, Ubuntu, Fedora) and FreeBSD. Some of the machines have hardware NVMe controllers (Intel P3700) and RDMA NICs (Mellanox ConnectX-4) while others use emulated NVMe drives and Soft-RoCE NICs.</p>
+
+<p>Anyone is allowed to contribute patches to the SPDK code base. All patches, after review, will be tested against the SPDK CI test pool. For more information on this process, please see the <a href="http://www.spdk.io/development/">development</a> page. If you are interested in contributing to the spdk code base, but do not know where to begin, feel free to check out the <a href="http://www.spdk.io/development/">Trello board</a>.</p>
+
+<p>If you encounter any issues with the SPDK CI test pool or have comments or suggestions. Please contribute to the continuous integration <a href ="https://trello.com/b/3DvD85zi/continuous-integration">Trello board</a>.</p>
+
+<p>The SPDK <a href="http://www.spdk.io/">homepage</a> is also version controlled and has an associated continuous integration test pool. Links to both the spdk test pool and webpage test pool are included at right.</p>
+        </section>
+      </div>
+      <div class="col-md-4">
+        <div class="panel panel-center">
+          <div class="panel-heading">Links</div>
+            <div class="panel-body">
+              <ul class="nav nav-pills nav-stacked">
+                <li><a href="https://ci.spdk.io/spdk/status/">SPDK Test Pool Status</a></li>
+                <li><a href="https://ci.spdk.io/spdk.github.io/status/">SPDK Webpage Test Pool Status</a></li>
+                <li><a href="https://trello.com/b/P5xBO7UR/things-to-do">SPDK Trello Board</a></li>
+                <li><a href="https://trello.com/b/3DvD85zi/continuous-integration">CI Trello Board</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </body>
+</html>
