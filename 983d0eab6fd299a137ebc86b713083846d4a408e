@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "0e19593b_8aecc6a5",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 1010525
+      },
+      "writtenOn": "2017-10-05T18:24:40Z",
+      "side": 1,
+      "message": "It looks like you don\u0027t have the GerritHub .git/hooks/commit-msg installed (there\u0027s no Change-Id, so this isn\u0027t associated with the previous revision of this patch).\n\nThat\u0027s fine for this change, just be sure to add it for the next one.",
+      "revId": "983d0eab6fd299a137ebc86b713083846d4a408e",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
