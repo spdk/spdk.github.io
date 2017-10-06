@@ -89,6 +89,7 @@
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Data Structures</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
@@ -99,6 +100,11 @@
 <p>Logical Volume Interface.  
 <a href="#details">More...</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Data Structures</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__lvs__opts.html">spdk_lvs_opts</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
 <tr class="memitem:a757eefd4ce0d68328e7dec58eb2e8a50"><td class="memItemLeft" align="right" valign="top"><a id="a757eefd4ce0d68328e7dec58eb2e8a50"></a>
@@ -116,18 +122,15 @@ typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_lvol_o
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ae8978283247da3705c5f74161d7da2dc"><td class="memItemLeft" align="right" valign="top"><a id="ae8978283247da3705c5f74161d7da2dc"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_lvs_init</b> (struct <a class="el" href="structspdk__bs__dev.html">spdk_bs_dev</a> *bs_dev, spdk_lvs_op_with_handle_complete cb_fn, void *cb_arg)</td></tr>
-<tr class="separator:ae8978283247da3705c5f74161d7da2dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae12b16b8565ab63a3c9b919ab9664c0f"><td class="memItemLeft" align="right" valign="top"><a id="ae12b16b8565ab63a3c9b919ab9664c0f"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_lvs_init</b> (struct <a class="el" href="structspdk__bs__dev.html">spdk_bs_dev</a> *bs_dev, struct <a class="el" href="structspdk__lvs__opts.html">spdk_lvs_opts</a> *o, spdk_lvs_op_with_handle_complete cb_fn, void *cb_arg)</td></tr>
+<tr class="separator:ae12b16b8565ab63a3c9b919ab9664c0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9f7032fa38dc1af638910018e07b0dd4"><td class="memItemLeft" align="right" valign="top"><a id="a9f7032fa38dc1af638910018e07b0dd4"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_lvs_unload</b> (struct spdk_lvol_store *lvol_store, spdk_lvs_op_complete cb_fn, void *cb_arg)</td></tr>
 <tr class="separator:a9f7032fa38dc1af638910018e07b0dd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac6f25523f841f01142f5f2553f92ac9b"><td class="memItemLeft" align="right" valign="top"><a id="ac6f25523f841f01142f5f2553f92ac9b"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_lvol_create</b> (struct spdk_lvol_store *lvs, uint64_t sz, spdk_lvol_op_with_handle_complete cb_fn, void *cb_arg)</td></tr>
 <tr class="separator:ac6f25523f841f01142f5f2553f92ac9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab2da5c399cd992d43424261f8f3d4bf5"><td class="memItemLeft" align="right" valign="top"><a id="ab2da5c399cd992d43424261f8f3d4bf5"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_lvol_resize</b> (struct spdk_lvol *lvol, uint64_t sz, spdk_lvol_op_complete cb_fn, void *cb_arg)</td></tr>
-<tr class="separator:ab2da5c399cd992d43424261f8f3d4bf5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5a21d5eb39c7e638288924bc05ecfd8a"><td class="memItemLeft" align="right" valign="top"><a id="a5a21d5eb39c7e638288924bc05ecfd8a"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_lvol_destroy</b> (struct spdk_lvol *lvol)</td></tr>
 <tr class="separator:a5a21d5eb39c7e638288924bc05ecfd8a"><td class="memSeparator" colspan="2">&#160;</td></tr>

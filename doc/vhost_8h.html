@@ -101,9 +101,9 @@
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:aa907973f6641d28934dc304f2bd103aa"><td class="memItemLeft" align="right" valign="top"><a id="aa907973f6641d28934dc304f2bd103aa"></a>
-typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_vhost_event_fn</b>) (struct spdk_vhost_dev *, void *)</td></tr>
-<tr class="separator:aa907973f6641d28934dc304f2bd103aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2c4b62eaf6503e5f5e520394f9f9fe1"><td class="memItemLeft" align="right" valign="top">typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vhost_8h.html#ac2c4b62eaf6503e5f5e520394f9f9fe1">spdk_vhost_event_fn</a>) (struct spdk_vhost_dev *vdev, void *arg)</td></tr>
+<tr class="memdesc:ac2c4b62eaf6503e5f5e520394f9f9fe1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Synchronized vhost event used for user callbacks.  <a href="#ac2c4b62eaf6503e5f5e520394f9f9fe1">More...</a><br /></td></tr>
+<tr class="separator:ac2c4b62eaf6503e5f5e520394f9f9fe1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -114,61 +114,188 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_vhost_init</b> (v
 int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_vhost_fini</b> (void)</td></tr>
 <tr class="separator:a265e68c25f80db5feb845e80c9e88fe7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad731d99cb58a462e4ec790c346c23255"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vhost_8h.html#ad731d99cb58a462e4ec790c346c23255">spdk_vhost_startup</a> (void *arg1, void *arg2)</td></tr>
+<tr class="memdesc:ad731d99cb58a462e4ec790c346c23255"><td class="mdescLeft">&#160;</td><td class="mdescRight">Init vhost application.  <a href="#ad731d99cb58a462e4ec790c346c23255">More...</a><br /></td></tr>
 <tr class="separator:ad731d99cb58a462e4ec790c346c23255"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afd7159f8eb1e0d65dad5bedaa6cc5e43"><td class="memItemLeft" align="right" valign="top"><a id="afd7159f8eb1e0d65dad5bedaa6cc5e43"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_vhost_shutdown_cb</b> (void)</td></tr>
+<tr class="memitem:afd7159f8eb1e0d65dad5bedaa6cc5e43"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vhost_8h.html#afd7159f8eb1e0d65dad5bedaa6cc5e43">spdk_vhost_shutdown_cb</a> (void)</td></tr>
+<tr class="memdesc:afd7159f8eb1e0d65dad5bedaa6cc5e43"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deinit vhost application.  <a href="#afd7159f8eb1e0d65dad5bedaa6cc5e43">More...</a><br /></td></tr>
 <tr class="separator:afd7159f8eb1e0d65dad5bedaa6cc5e43"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4365f85870f3396a837b16f4218548e6"><td class="memItemLeft" align="right" valign="top">struct spdk_vhost_dev *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vhost_8h.html#a4365f85870f3396a837b16f4218548e6">spdk_vhost_dev_next</a> (struct spdk_vhost_dev *prev)</td></tr>
-<tr class="memdesc:a4365f85870f3396a837b16f4218548e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get handle to next controller.  <a href="#a4365f85870f3396a837b16f4218548e6">More...</a><br /></td></tr>
-<tr class="separator:a4365f85870f3396a837b16f4218548e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2a642f8749c679c338e5e6297ea93a71"><td class="memItemLeft" align="right" valign="top"><a id="a2a642f8749c679c338e5e6297ea93a71"></a>
-struct spdk_vhost_dev *&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_vhost_dev_find</b> (const char *ctrlr_name)</td></tr>
-<tr class="separator:a2a642f8749c679c338e5e6297ea93a71"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab08024ba9cce00f5e626cef08011b84b"><td class="memItemLeft" align="right" valign="top"><a id="ab08024ba9cce00f5e626cef08011b84b"></a>
-const char *&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_vhost_dev_get_name</b> (struct spdk_vhost_dev *ctrl)</td></tr>
-<tr class="separator:ab08024ba9cce00f5e626cef08011b84b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a00a4829873583bfbb5e4543044f8548f"><td class="memItemLeft" align="right" valign="top"><a id="a00a4829873583bfbb5e4543044f8548f"></a>
-uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_vhost_dev_get_cpumask</b> (struct spdk_vhost_dev *ctrl)</td></tr>
-<tr class="separator:a00a4829873583bfbb5e4543044f8548f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abea25400c27b3e774aa5707f8cbef651"><td class="memItemLeft" align="right" valign="top"><a id="abea25400c27b3e774aa5707f8cbef651"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_vhost_scsi_controller_construct</b> (void)</td></tr>
-<tr class="separator:abea25400c27b3e774aa5707f8cbef651"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a01b54a11439216fb05196474e3ee20d1"><td class="memItemLeft" align="right" valign="top"><a id="a01b54a11439216fb05196474e3ee20d1"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_vhost_scsi_dev_construct</b> (const char *name, const char *cpumask)</td></tr>
+<tr class="memitem:aa06efc0d096d4414de40ed5c0b394622"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vhost_8h.html#aa06efc0d096d4414de40ed5c0b394622">spdk_vhost_dev_get_name</a> (struct spdk_vhost_dev *vdev)</td></tr>
+<tr class="memdesc:aa06efc0d096d4414de40ed5c0b394622"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get name of the vhost device.  <a href="#aa06efc0d096d4414de40ed5c0b394622">More...</a><br /></td></tr>
+<tr class="separator:aa06efc0d096d4414de40ed5c0b394622"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abef1a4170ddcdf8f0e6dadb4720368e5"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vhost_8h.html#abef1a4170ddcdf8f0e6dadb4720368e5">spdk_vhost_dev_get_cpumask</a> (struct spdk_vhost_dev *vdev)</td></tr>
+<tr class="memdesc:abef1a4170ddcdf8f0e6dadb4720368e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get cpumask of the vhost device.  <a href="#abef1a4170ddcdf8f0e6dadb4720368e5">More...</a><br /></td></tr>
+<tr class="separator:abef1a4170ddcdf8f0e6dadb4720368e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01b54a11439216fb05196474e3ee20d1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vhost_8h.html#a01b54a11439216fb05196474e3ee20d1">spdk_vhost_scsi_dev_construct</a> (const char *name, const char *cpumask)</td></tr>
+<tr class="memdesc:a01b54a11439216fb05196474e3ee20d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct an empty vhost SCSI device.  <a href="#a01b54a11439216fb05196474e3ee20d1">More...</a><br /></td></tr>
 <tr class="separator:a01b54a11439216fb05196474e3ee20d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab3f0d8aa45d3166969e55998872d20c5"><td class="memItemLeft" align="right" valign="top"><a id="ab3f0d8aa45d3166969e55998872d20c5"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_vhost_scsi_dev_remove</b> (struct spdk_vhost_dev *vdev)</td></tr>
+<tr class="memitem:ab3f0d8aa45d3166969e55998872d20c5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vhost_8h.html#ab3f0d8aa45d3166969e55998872d20c5">spdk_vhost_scsi_dev_remove</a> (struct spdk_vhost_dev *vdev)</td></tr>
+<tr class="memdesc:ab3f0d8aa45d3166969e55998872d20c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove an empty vhost SCSI device.  <a href="#ab3f0d8aa45d3166969e55998872d20c5">More...</a><br /></td></tr>
 <tr class="separator:ab3f0d8aa45d3166969e55998872d20c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1ed91aefa18761218f566065d63d1179"><td class="memItemLeft" align="right" valign="top"><a id="a1ed91aefa18761218f566065d63d1179"></a>
-struct spdk_scsi_dev *&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_vhost_scsi_dev_get_dev</b> (struct spdk_vhost_dev *ctrl, uint8_t num)</td></tr>
-<tr class="separator:a1ed91aefa18761218f566065d63d1179"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a84100090cb818120fc23d9e40fc1bb4d"><td class="memItemLeft" align="right" valign="top"><a id="a84100090cb818120fc23d9e40fc1bb4d"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_vhost_scsi_dev_add_dev</b> (struct spdk_vhost_dev *vdev, unsigned scsi_dev_num, const char *lun_name)</td></tr>
+<tr class="memitem:a84100090cb818120fc23d9e40fc1bb4d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vhost_8h.html#a84100090cb818120fc23d9e40fc1bb4d">spdk_vhost_scsi_dev_add_dev</a> (struct spdk_vhost_dev *vdev, unsigned scsi_dev_num, const char *lun_name)</td></tr>
+<tr class="memdesc:a84100090cb818120fc23d9e40fc1bb4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct and attach new SCSI device to the vhost SCSI device on given (unoccupied) slot.  <a href="#a84100090cb818120fc23d9e40fc1bb4d">More...</a><br /></td></tr>
 <tr class="separator:a84100090cb818120fc23d9e40fc1bb4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a00178efa7b9bb183f3ac43312328fae8"><td class="memItemLeft" align="right" valign="top"><a id="a00178efa7b9bb183f3ac43312328fae8"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_vhost_scsi_dev_remove_dev</b> (struct spdk_vhost_dev *vdev, unsigned scsi_dev_num, spdk_vhost_event_fn cb_fn, void *cb_arg)</td></tr>
+<tr class="memitem:a75ecc7ccf450f07b4839aedf55af7c04"><td class="memItemLeft" align="right" valign="top">struct spdk_scsi_dev *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vhost_8h.html#a75ecc7ccf450f07b4839aedf55af7c04">spdk_vhost_scsi_dev_get_dev</a> (struct spdk_vhost_dev *vdev, uint8_t num)</td></tr>
+<tr class="memdesc:a75ecc7ccf450f07b4839aedf55af7c04"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get SCSI device from vhost SCSI device on given slot.  <a href="#a75ecc7ccf450f07b4839aedf55af7c04">More...</a><br /></td></tr>
+<tr class="separator:a75ecc7ccf450f07b4839aedf55af7c04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00178efa7b9bb183f3ac43312328fae8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vhost_8h.html#a00178efa7b9bb183f3ac43312328fae8">spdk_vhost_scsi_dev_remove_dev</a> (struct spdk_vhost_dev *vdev, unsigned scsi_dev_num, <a class="el" href="vhost_8h.html#ac2c4b62eaf6503e5f5e520394f9f9fe1">spdk_vhost_event_fn</a> cb_fn, void *cb_arg)</td></tr>
+<tr class="memdesc:a00178efa7b9bb183f3ac43312328fae8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Detach and destruct SCSI device from a vhost SCSI device.  <a href="#a00178efa7b9bb183f3ac43312328fae8">More...</a><br /></td></tr>
 <tr class="separator:a00178efa7b9bb183f3ac43312328fae8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5ec56730c6a42b0a186131526026e619"><td class="memItemLeft" align="right" valign="top"><a id="a5ec56730c6a42b0a186131526026e619"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_vhost_blk_construct</b> (const char *name, const char *cpumask, const char *dev_name, bool readonly)</td></tr>
+<tr class="memitem:a5ec56730c6a42b0a186131526026e619"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vhost_8h.html#a5ec56730c6a42b0a186131526026e619">spdk_vhost_blk_construct</a> (const char *name, const char *cpumask, const char *dev_name, bool readonly)</td></tr>
+<tr class="memdesc:a5ec56730c6a42b0a186131526026e619"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a vhost blk device.  <a href="#a5ec56730c6a42b0a186131526026e619">More...</a><br /></td></tr>
 <tr class="separator:a5ec56730c6a42b0a186131526026e619"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a22fb61cd32b772e6dc02bf853ff48e30"><td class="memItemLeft" align="right" valign="top"><a id="a22fb61cd32b772e6dc02bf853ff48e30"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_vhost_blk_destroy</b> (struct spdk_vhost_dev *dev)</td></tr>
+<tr class="memitem:a22fb61cd32b772e6dc02bf853ff48e30"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vhost_8h.html#a22fb61cd32b772e6dc02bf853ff48e30">spdk_vhost_blk_destroy</a> (struct spdk_vhost_dev *dev)</td></tr>
+<tr class="memdesc:a22fb61cd32b772e6dc02bf853ff48e30"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove a vhost blk device.  <a href="#a22fb61cd32b772e6dc02bf853ff48e30">More...</a><br /></td></tr>
 <tr class="separator:a22fb61cd32b772e6dc02bf853ff48e30"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a549f9903be61ca447578b8bacf9eea81"><td class="memItemLeft" align="right" valign="top"><a id="a549f9903be61ca447578b8bacf9eea81"></a>
-struct spdk_bdev *&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_vhost_blk_get_dev</b> (struct spdk_vhost_dev *ctrlr)</td></tr>
+<tr class="memitem:a549f9903be61ca447578b8bacf9eea81"><td class="memItemLeft" align="right" valign="top">struct spdk_bdev *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vhost_8h.html#a549f9903be61ca447578b8bacf9eea81">spdk_vhost_blk_get_dev</a> (struct spdk_vhost_dev *ctrlr)</td></tr>
+<tr class="memdesc:a549f9903be61ca447578b8bacf9eea81"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get underlying SPDK bdev from vhost blk device.  <a href="#a549f9903be61ca447578b8bacf9eea81">More...</a><br /></td></tr>
 <tr class="separator:a549f9903be61ca447578b8bacf9eea81"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3488dc6043c6195990982ecfe07b10c5"><td class="memItemLeft" align="right" valign="top"><a id="a3488dc6043c6195990982ecfe07b10c5"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_vhost_blk_get_readonly</b> (struct spdk_vhost_dev *vdev)</td></tr>
-<tr class="separator:a3488dc6043c6195990982ecfe07b10c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afc95ae1497ffe77ca8fb551d7d9c289a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vhost_8h.html#afc95ae1497ffe77ca8fb551d7d9c289a">spdk_vhost_call_external_event</a> (const char *ctrlr_name, spdk_vhost_event_fn fn, void *arg)</td></tr>
-<tr class="memdesc:afc95ae1497ffe77ca8fb551d7d9c289a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call function on reactor of given vhost controller.  <a href="#afc95ae1497ffe77ca8fb551d7d9c289a">More...</a><br /></td></tr>
-<tr class="separator:afc95ae1497ffe77ca8fb551d7d9c289a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44001761e6a888ef1fb0475c4501497c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vhost_8h.html#a44001761e6a888ef1fb0475c4501497c">spdk_vhost_call_external_event</a> (const char *vdev_name, <a class="el" href="vhost_8h.html#ac2c4b62eaf6503e5f5e520394f9f9fe1">spdk_vhost_event_fn</a> fn, void *arg)</td></tr>
+<tr class="memdesc:a44001761e6a888ef1fb0475c4501497c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call function on reactor of given vhost device.  <a href="#a44001761e6a888ef1fb0475c4501497c">More...</a><br /></td></tr>
+<tr class="separator:a44001761e6a888ef1fb0475c4501497c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a041d593f592b76683c6a5f9f5efbc254"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vhost_8h.html#a041d593f592b76683c6a5f9f5efbc254">spdk_vhost_call_external_event_foreach</a> (<a class="el" href="vhost_8h.html#ac2c4b62eaf6503e5f5e520394f9f9fe1">spdk_vhost_event_fn</a> fn, void *arg)</td></tr>
+<tr class="memdesc:a041d593f592b76683c6a5f9f5efbc254"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call function for each available vhost device on it's reactor.  <a href="#a041d593f592b76683c6a5f9f5efbc254">More...</a><br /></td></tr>
+<tr class="separator:a041d593f592b76683c6a5f9f5efbc254"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>SPDK vhost. </p>
-</div><h2 class="groupheader">Function Documentation</h2>
-<a id="afc95ae1497ffe77ca8fb551d7d9c289a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afc95ae1497ffe77ca8fb551d7d9c289a">&#9670;&nbsp;</a></span>spdk_vhost_call_external_event()</h2>
+</div><h2 class="groupheader">Typedef Documentation</h2>
+<a id="ac2c4b62eaf6503e5f5e520394f9f9fe1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac2c4b62eaf6503e5f5e520394f9f9fe1">&#9670;&nbsp;</a></span>spdk_vhost_event_fn</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef int(* spdk_vhost_event_fn) (struct spdk_vhost_dev *vdev, void *arg)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Synchronized vhost event used for user callbacks. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">vdev</td><td>vhost device </td></tr>
+    <tr><td class="paramname">arg</td><td>user-provided parameter </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, -1 on failure </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="a5ec56730c6a42b0a186131526026e619"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ec56730c6a42b0a186131526026e619">&#9670;&nbsp;</a></span>spdk_vhost_blk_construct()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_vhost_blk_construct </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>cpumask</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>dev_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>readonly</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Construct a vhost blk device. </p>
+<p>This will create a Unix domain socket together with a vhost-user slave server waiting for a connection on this socket. Creating the vdev does not start any I/O pollers and does not hog the CPU. I/O processing starts after receiving proper message on the created socket. See QEMU's vhost-user documentation for details. Vhost blk device is tightly associated with given SPDK bdev. Given bdev can not be changed, unless it has been hotremoved. This would result in all I/O failing with virtio <code>VIRTIO_BLK_S_IOERR</code> error code.</p>
+<p>This function is thread-safe.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>name of the vhost blk device. The name will also be used for socket name, which is exactly <code>socket_base_dir/name</code> </td></tr>
+    <tr><td class="paramname">mask</td><td>string containing cpumask in hex. The leading <em>0x</em> is allowed but not required. The mask itself can be constructed as: ((1 &lt;&lt; cpu0) | (1 &lt;&lt; cpu1) | ... | (1 &lt;&lt; cpuN)). </td></tr>
+    <tr><td class="paramname">dev_name</td><td>bdev name to associate with this vhost device </td></tr>
+    <tr><td class="paramname">readonly</td><td>if set, all writes to the device will fail with <code>VIRTIO_BLK_S_IOERR</code> error code. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, negative errno on error. </dd></dl>
+
+</div>
+</div>
+<a id="a22fb61cd32b772e6dc02bf853ff48e30"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a22fb61cd32b772e6dc02bf853ff48e30">&#9670;&nbsp;</a></span>spdk_vhost_blk_destroy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_vhost_blk_destroy </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_vhost_dev *&#160;</td>
+          <td class="paramname"><em>dev</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Remove a vhost blk device. </p>
+<p>The device must not have any open connections on it's socket.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">vdev</td><td>vhost blk device </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, negative errno on error. </dd></dl>
+
+</div>
+</div>
+<a id="a549f9903be61ca447578b8bacf9eea81"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a549f9903be61ca447578b8bacf9eea81">&#9670;&nbsp;</a></span>spdk_vhost_blk_get_dev()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct spdk_bdev* spdk_vhost_blk_get_dev </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_vhost_dev *&#160;</td>
+          <td class="paramname"><em>ctrlr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get underlying SPDK bdev from vhost blk device. </p>
+<p>The bdev might be NULL, as it could have been hotremoved.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ctrl</td><td>vhost blk device </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>SPDK bdev associated with given vdev </dd></dl>
+
+</div>
+</div>
+<a id="a44001761e6a888ef1fb0475c4501497c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a44001761e6a888ef1fb0475c4501497c">&#9670;&nbsp;</a></span>spdk_vhost_call_external_event()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -177,12 +304,12 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_vhost_blk_get_re
           <td class="memname">void spdk_vhost_call_external_event </td>
           <td>(</td>
           <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>ctrlr_name</em>, </td>
+          <td class="paramname"><em>vdev_name</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">spdk_vhost_event_fn&#160;</td>
+          <td class="paramtype"><a class="el" href="vhost_8h.html#ac2c4b62eaf6503e5f5e520394f9f9fe1">spdk_vhost_event_fn</a>&#160;</td>
           <td class="paramname"><em>fn</em>, </td>
         </tr>
         <tr>
@@ -199,12 +326,12 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_vhost_blk_get_re
       </table>
 </div><div class="memdoc">
 
-<p>Call function on reactor of given vhost controller. </p>
-<p>If controller is not in use, the event will be called right away on the caller's thread.</p>
+<p>Call function on reactor of given vhost device. </p>
+<p>If device is not in use, the event will be called right away on the caller's thread.</p>
 <p>This function is thread safe.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">ctrlr_name</td><td>name of the vhost controller to run this event on </td></tr>
+    <tr><td class="paramname">vdev_name</td><td>name of the vhost device to run this event on </td></tr>
     <tr><td class="paramname">fn</td><td>function to be called. The first parameter of callback function is either actual spdk_vhost_dev pointer or NULL in case vdev with given name doesn't exist. The second param is user provided argument <em>arg</em>. </td></tr>
     <tr><td class="paramname">arg</td><td>parameter to be passed to <em>fn</em>. </td></tr>
   </table>
@@ -213,30 +340,327 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_vhost_blk_get_re
 
 </div>
 </div>
-<a id="a4365f85870f3396a837b16f4218548e6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4365f85870f3396a837b16f4218548e6">&#9670;&nbsp;</a></span>spdk_vhost_dev_next()</h2>
+<a id="a041d593f592b76683c6a5f9f5efbc254"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a041d593f592b76683c6a5f9f5efbc254">&#9670;&nbsp;</a></span>spdk_vhost_call_external_event_foreach()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">struct spdk_vhost_dev* spdk_vhost_dev_next </td>
+          <td class="memname">void spdk_vhost_call_external_event_foreach </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="vhost_8h.html#ac2c4b62eaf6503e5f5e520394f9f9fe1">spdk_vhost_event_fn</a>&#160;</td>
+          <td class="paramname"><em>fn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>arg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Call function for each available vhost device on it's reactor. </p>
+<p>This will call given function in a chain, meaning that each callback will be called after the previous one has finished. After given function has been called for all vdevs, it will be called once again with first param - vhost device- set to NULL.</p>
+<p>This function is thread safe.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fn</td><td>function to be called for each vdev. The first param will be either vdev pointer or NULL. The second param is user provided argument <em>arg</em>. </td></tr>
+    <tr><td class="paramname">arg</td><td>parameter to be passed to <em>fn</em>. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="abef1a4170ddcdf8f0e6dadb4720368e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abef1a4170ddcdf8f0e6dadb4720368e5">&#9670;&nbsp;</a></span>spdk_vhost_dev_get_cpumask()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint64_t spdk_vhost_dev_get_cpumask </td>
           <td>(</td>
           <td class="paramtype">struct spdk_vhost_dev *&#160;</td>
-          <td class="paramname"><em>prev</em></td><td>)</td>
+          <td class="paramname"><em>vdev</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Get handle to next controller. </p>
+<p>Get cpumask of the vhost device. </p>
+<p>The mask is constant throughout the lifetime of a vdev. It is be a subset of SPDK app cpumask vhost was started with.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">prev</td><td>Previous controller or NULL to get first one. </td></tr>
+    <tr><td class="paramname">dev</td><td>vhost device </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>handle to next controller ot NULL if prev was the last one. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>cpumask of the vdev. The mask is constructed as: ((1 &lt;&lt; cpu0) | (1 &lt;&lt; cpu1) | ... | (1 &lt;&lt; cpuN)). </dd></dl>
+
+</div>
+</div>
+<a id="aa06efc0d096d4414de40ed5c0b394622"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa06efc0d096d4414de40ed5c0b394622">&#9670;&nbsp;</a></span>spdk_vhost_dev_get_name()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* spdk_vhost_dev_get_name </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_vhost_dev *&#160;</td>
+          <td class="paramname"><em>vdev</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get name of the vhost device. </p>
+<p>This is equal to the filename of socket file. The name is constant throughout the lifetime of a vdev.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">vdev</td><td>vhost device </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>name of the vdev </dd></dl>
+
+</div>
+</div>
+<a id="a84100090cb818120fc23d9e40fc1bb4d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a84100090cb818120fc23d9e40fc1bb4d">&#9670;&nbsp;</a></span>spdk_vhost_scsi_dev_add_dev()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_vhost_scsi_dev_add_dev </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_vhost_dev *&#160;</td>
+          <td class="paramname"><em>vdev</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned&#160;</td>
+          <td class="paramname"><em>scsi_dev_num</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>lun_name</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Construct and attach new SCSI device to the vhost SCSI device on given (unoccupied) slot. </p>
+<p>The device will be created with a single LUN0 associated with given SPDK bdev. Currently only one LUN per device is supported.</p>
+<p>If vhost SCSI device has an active socket connection, it is required that it has negotiated <code>VIRTIO_SCSI_F_HOTPLUG</code> feature flag. Otherwise an -ENOTSUP error code is returned.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">vdev</td><td>vhost SCSI device </td></tr>
+    <tr><td class="paramname">scsi_dev_num</td><td>slot to attach to </td></tr>
+    <tr><td class="paramname">lun_name</td><td>name of the SPDK bdev to associate with SCSI LUN0 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, negative errno on error. </dd></dl>
+
+</div>
+</div>
+<a id="a01b54a11439216fb05196474e3ee20d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a01b54a11439216fb05196474e3ee20d1">&#9670;&nbsp;</a></span>spdk_vhost_scsi_dev_construct()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_vhost_scsi_dev_construct </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>cpumask</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Construct an empty vhost SCSI device. </p>
+<p>This will create a Unix domain socket together with a vhost-user slave server waiting for a connection on this socket. Creating the vdev does not start any I/O pollers and does not hog the CPU. I/O processing starts after receiving proper message on the created socket. See QEMU's vhost-user documentation for details. All physical devices have to be separately attached to this vdev via <code><a class="el" href="vhost_8h.html#a84100090cb818120fc23d9e40fc1bb4d" title="Construct and attach new SCSI device to the vhost SCSI device on given (unoccupied) slot...">spdk_vhost_scsi_dev_add_dev()</a></code>.</p>
+<p>This function is thread-safe.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>name of the vhost device. The name will also be used for socket name, which is exactly <code>socket_base_dir/name</code> </td></tr>
+    <tr><td class="paramname">mask</td><td>string containing cpumask in hex. The leading <em>0x</em> is allowed but not required. The mask itself can be constructed as: ((1 &lt;&lt; cpu0) | (1 &lt;&lt; cpu1) | ... | (1 &lt;&lt; cpuN)). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, negative errno on error. </dd></dl>
+
+</div>
+</div>
+<a id="a75ecc7ccf450f07b4839aedf55af7c04"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a75ecc7ccf450f07b4839aedf55af7c04">&#9670;&nbsp;</a></span>spdk_vhost_scsi_dev_get_dev()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct spdk_scsi_dev* spdk_vhost_scsi_dev_get_dev </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_vhost_dev *&#160;</td>
+          <td class="paramname"><em>vdev</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>num</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get SCSI device from vhost SCSI device on given slot. </p>
+<p>Max number of available slots is defined by <code>SPDK_VHOST_SCSI_CTRLR_MAX_DEVS</code>.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">vdev</td><td>vhost SCSI device </td></tr>
+    <tr><td class="paramname">num</td><td>slot id </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>SCSI device on given slot or NULL </dd></dl>
+
+</div>
+</div>
+<a id="ab3f0d8aa45d3166969e55998872d20c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab3f0d8aa45d3166969e55998872d20c5">&#9670;&nbsp;</a></span>spdk_vhost_scsi_dev_remove()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_vhost_scsi_dev_remove </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_vhost_dev *&#160;</td>
+          <td class="paramname"><em>vdev</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Remove an empty vhost SCSI device. </p>
+<p>The vdev must not have any SCSI devices attached nor have any open connection on it's socket.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">vdev</td><td>vhost SCSI device </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, negative errno on error. </dd></dl>
+
+</div>
+</div>
+<a id="a00178efa7b9bb183f3ac43312328fae8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a00178efa7b9bb183f3ac43312328fae8">&#9670;&nbsp;</a></span>spdk_vhost_scsi_dev_remove_dev()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_vhost_scsi_dev_remove_dev </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_vhost_dev *&#160;</td>
+          <td class="paramname"><em>vdev</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned&#160;</td>
+          <td class="paramname"><em>scsi_dev_num</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="vhost_8h.html#ac2c4b62eaf6503e5f5e520394f9f9fe1">spdk_vhost_event_fn</a>&#160;</td>
+          <td class="paramname"><em>cb_fn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>cb_arg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Detach and destruct SCSI device from a vhost SCSI device. </p>
+<p>If vhost SCSI device has an active socket connection, it is required that it has negotiated <code>VIRTIO_SCSI_F_HOTPLUG</code> feature flag.Otherwise an -ENOTSUP error code is returned. If the flag has been negotiated, the device will be marked to be deleted. Actual deletion is deferred until after all pending I/O to this device has finished.</p>
+<p>Once the device has been deleted (whether or not vhost SCSI device is in use) given callback will be called.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">vdev</td><td>vhost SCSI device </td></tr>
+    <tr><td class="paramname">scsi_dev_num</td><td>slot id to delete device from </td></tr>
+    <tr><td class="paramname">cb_fn</td><td>callback to be fired once device has been successfully deleted. The first parameter of callback function is the vhost SCSI device, the second is user provided argument <em>cb_arg</em>. </td></tr>
+    <tr><td class="paramname">cb_arg</td><td>parameter to be passed to <em>cb_fn</em>. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, negative errno on error. </dd></dl>
+
+</div>
+</div>
+<a id="afd7159f8eb1e0d65dad5bedaa6cc5e43"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd7159f8eb1e0d65dad5bedaa6cc5e43">&#9670;&nbsp;</a></span>spdk_vhost_shutdown_cb()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_vhost_shutdown_cb </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Deinit vhost application. </p>
+<p>This is called once by SPDK app layer. </p>
 
 </div>
 </div>
@@ -265,9 +689,12 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_vhost_blk_get_re
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="params"><dt>Parameters</dt><dd>
+
+<p>Init vhost application. </p>
+<p>This is called once by SPDK app layer. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">event</td><td>event object. event arg1 is optional path to vhost socket. </td></tr>
+    <tr><td class="paramname">arg1</td><td>optional path to directory where sockets will be created </td></tr>
+    <tr><td class="paramname">arg2</td><td>unused </td></tr>
   </table>
   </dd>
 </dl>

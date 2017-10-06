@@ -108,6 +108,7 @@ v17.10: (Upcoming Release)</h1>
 <p>The NVMe driver now recognizes the NVMe 1.3 Namespace Optimal I/O Boundary field. NVMe 1.3 devices may report an optimal I/O boundary, which the driver will take into account when splitting I/O requests.</p>
 <p>The HotplugEnable option in <code>[Nvme]</code> sections of the configuration file is now "No" by default. It was previously "Yes".</p>
 <p>The NVMe library now includes a function spdk_nvme_ns_get_ctrlr which returns the NVMe Controller associated with a given namespace.</p>
+<p>The NVMe library now allows the user to specify a host identifier when attaching to a controller. The host identifier is used as part of the Reservations feature, as well as in the NVMe-oF Connect command. The default host ID is also now a randomly-generated UUID, and the default host NQN uses the host ID to generate a UUID-based NQN.</p>
 <h2>NVMe-oF Target (nvmf_tgt)</h2>
 <p>The NVMe-oF target no longer requires any in capsule data buffers to run, and the feature is now entirely optional. Previously, at least 4KiB in capsule data buffers were required.</p>
 <p>NVMe-oF subsytems have a new configuration option, AllowAnyHost, to control whether the host NQN whitelist is enforced when accepting new connections. If no Host options have been specified and AllowAnyHost is disabled, the connection will be denied; this is a behavior change from previous releases, which allowed any host NQN to connect if the Host list was empty. AllowAnyHost is disabled by default.</p>
