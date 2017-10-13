@@ -109,8 +109,9 @@ Running the Unit Tests</h1>
 Running the Example Applications</h1>
 <p>Before running an SPDK application, some hugepages must be allocated and any NVMe and I/OAT devices must be unbound from the native kernel drivers. SPDK includes a script to automate this process on both Linux and FreeBSD. This script should be run as root. It only needs to be run once on the system. <em>Make sure you aren't using an NVMe device as your boot device.</em></p>
 <div class="fragment"><div class="line">sudo scripts/setup.sh</div></div><!-- fragment --><p>To rebind devices back to the kernel, you can run</p>
-<div class="fragment"><div class="line">sudo scripts/setup.sh reset</div></div><!-- fragment --><p>By default, the script allocates 1024 2MB hugepages. To change this number, specify NRHUGE as follows:</p>
-<div class="fragment"><div class="line">sudo NRHUGE=4096 scripts/setup.sh</div></div><!-- fragment --><p>Example code is located in the examples directory. The examples are compiled automatically as part of the build process. Simply call any of the examples with no arguments to see the help output. If your system has its IOMMU enabled you can run the examples as your regular user. If it doesn't, you'll need to run as a privileged user (root).</p>
+<div class="fragment"><div class="line">sudo scripts/setup.sh reset</div></div><!-- fragment --><p>By default, the script allocates 2048MB of hugepages. To change this number, specify HUGEMEM (in MB) as follows:</p>
+<div class="fragment"><div class="line">sudo HUGEMEM=4096 scripts/setup.sh</div></div><!-- fragment --><p>On Linux machines HUGEMEM will be rounded up to system-default huge page size boundary.</p>
+<p>Example code is located in the examples directory. The examples are compiled automatically as part of the build process. Simply call any of the examples with no arguments to see the help output. If your system has its IOMMU enabled you can run the examples as your regular user. If it doesn't, you'll need to run as a privileged user (root).</p>
 <p>A good example to start with is <code>examples/nvme/identify</code>, which prints out information about all of the NVMe devices on your system.</p>
 <p>Larger, more fully functional applications are available in the <code>app</code> directory. This includes the iSCSI and NVMe-oF target. </p>
 </div></div><!-- contents -->

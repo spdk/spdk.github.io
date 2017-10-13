@@ -170,6 +170,9 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:ac31bc692c6b3a84e2355eb63a8b01ccf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#ac31bc692c6b3a84e2355eb63a8b01ccf">spdk_nvme_ctrlr_get_default_ctrlr_opts</a> (struct <a class="el" href="structspdk__nvme__ctrlr__opts.html">spdk_nvme_ctrlr_opts</a> *opts, size_t opts_size)</td></tr>
+<tr class="memdesc:ac31bc692c6b3a84e2355eb63a8b01ccf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the default options for the creation of a specific NVMe controller.  <a href="#ac31bc692c6b3a84e2355eb63a8b01ccf">More...</a><br /></td></tr>
+<tr class="separator:ac31bc692c6b3a84e2355eb63a8b01ccf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac37484cc5d14777e4ae1fde031d0edf2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#ac37484cc5d14777e4ae1fde031d0edf2">spdk_nvme_transport_id_parse</a> (struct <a class="el" href="structspdk__nvme__transport__id.html">spdk_nvme_transport_id</a> *trid, const char *str)</td></tr>
 <tr class="memdesc:ac37484cc5d14777e4ae1fde031d0edf2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parse the string representation of a transport ID.  <a href="#ac37484cc5d14777e4ae1fde031d0edf2">More...</a><br /></td></tr>
 <tr class="separator:ac37484cc5d14777e4ae1fde031d0edf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -194,6 +197,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a225bbc386ec518ae21bd5536f21db45d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a225bbc386ec518ae21bd5536f21db45d">spdk_nvme_probe</a> (const struct <a class="el" href="structspdk__nvme__transport__id.html">spdk_nvme_transport_id</a> *trid, void *cb_ctx, <a class="el" href="nvme_8h.html#a95f40d5179f8424b466a30ba0610ab4c">spdk_nvme_probe_cb</a> probe_cb, <a class="el" href="nvme_8h.html#ac1eaa795f075495337b270667661ce5d">spdk_nvme_attach_cb</a> attach_cb, <a class="el" href="nvme_8h.html#a05f1aa545be57a03bb2dd0c6180172b6">spdk_nvme_remove_cb</a> remove_cb)</td></tr>
 <tr class="memdesc:a225bbc386ec518ae21bd5536f21db45d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enumerate the bus indicated by the transport ID and attach the userspace NVMe driver to each device found if desired.  <a href="#a225bbc386ec518ae21bd5536f21db45d">More...</a><br /></td></tr>
 <tr class="separator:a225bbc386ec518ae21bd5536f21db45d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae26375a74c2c935ec32f0c41a7ed93df"><td class="memItemLeft" align="right" valign="top">struct spdk_nvme_ctrlr *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#ae26375a74c2c935ec32f0c41a7ed93df">spdk_nvme_connect</a> (const struct <a class="el" href="structspdk__nvme__transport__id.html">spdk_nvme_transport_id</a> *trid, const struct <a class="el" href="structspdk__nvme__ctrlr__opts.html">spdk_nvme_ctrlr_opts</a> *opts, size_t opts_size)</td></tr>
+<tr class="memdesc:ae26375a74c2c935ec32f0c41a7ed93df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Connect the NVMe driver to the device located at the given transport ID.  <a href="#ae26375a74c2c935ec32f0c41a7ed93df">More...</a><br /></td></tr>
+<tr class="separator:ae26375a74c2c935ec32f0c41a7ed93df"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4b63c225c3cce6da60fdbfb6f54b11e2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a4b63c225c3cce6da60fdbfb6f54b11e2">spdk_nvme_detach</a> (struct spdk_nvme_ctrlr *ctrlr)</td></tr>
 <tr class="memdesc:a4b63c225c3cce6da60fdbfb6f54b11e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Detaches specified device returned by <a class="el" href="nvme_8h.html#a225bbc386ec518ae21bd5536f21db45d">spdk_nvme_probe()</a>'s attach_cb from the NVMe driver.  <a href="#a4b63c225c3cce6da60fdbfb6f54b11e2">More...</a><br /></td></tr>
 <tr class="separator:a4b63c225c3cce6da60fdbfb6f54b11e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -598,6 +604,55 @@ int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_retry_co
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="ae26375a74c2c935ec32f0c41a7ed93df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae26375a74c2c935ec32f0c41a7ed93df">&#9670;&nbsp;</a></span>spdk_nvme_connect()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct spdk_nvme_ctrlr* spdk_nvme_connect </td>
+          <td>(</td>
+          <td class="paramtype">const struct <a class="el" href="structspdk__nvme__transport__id.html">spdk_nvme_transport_id</a> *&#160;</td>
+          <td class="paramname"><em>trid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const struct <a class="el" href="structspdk__nvme__ctrlr__opts.html">spdk_nvme_ctrlr_opts</a> *&#160;</td>
+          <td class="paramname"><em>opts</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>opts_size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Connect the NVMe driver to the device located at the given transport ID. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">trid</td><td>The transport ID indicating which device to connect. If the trtype is PCIe, this will connect the local PCIe bus. If the trtype is RDMA, the traddr and trsvcid must point at the location of an NVMe-oF service. </td></tr>
+    <tr><td class="paramname">opts</td><td>NVMe controller initialization options. Default values will be used if the user does not specify the options. The controller may not support all requested parameters. </td></tr>
+    <tr><td class="paramname">opts_size</td><td>Must be set to sizeof(struct spdk_nvme_ctrlr_opts), or 0 if opts is NULL.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>pointer to the connected NVMe controller or NULL if there is any failure.</dd></dl>
+<p>This function is not thread safe and should only be called from one thread at a time while no other threads are actively using this NVMe device.</p>
+<p>If called from a secondary process, only the device that has been attached to the userspace driver in the primary process will be connected.</p>
+<p>If connecting to multiple controllers, it is suggested to use <a class="el" href="nvme_8h.html#a225bbc386ec518ae21bd5536f21db45d" title="Enumerate the bus indicated by the transport ID and attach the userspace NVMe driver to each device f...">spdk_nvme_probe()</a> and filter the requested controllers with the probe callback. For PCIe controllers, <a class="el" href="nvme_8h.html#a225bbc386ec518ae21bd5536f21db45d" title="Enumerate the bus indicated by the transport ID and attach the userspace NVMe driver to each device f...">spdk_nvme_probe()</a> will be more efficient since the controller resets will happen in parallel.</p>
+<p>To stop using the the controller and release its associated resources, call <a class="el" href="nvme_8h.html#a4b63c225c3cce6da60fdbfb6f54b11e2">spdk_nvme_detach</a> with the spdk_nvme_ctrlr instance returned by this function. </p>
+
+</div>
+</div>
 <a id="a13f745d239dab9b8f934fae2ad4984a2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a13f745d239dab9b8f934fae2ad4984a2">&#9670;&nbsp;</a></span>spdk_nvme_ctrlr_alloc_io_qpair()</h2>
 
@@ -1373,6 +1428,43 @@ int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_retry_co
 
 <p>Get the identify controller data as defined by the NVMe specification. </p>
 <p>This function is thread safe and can be called at any point while the controller is attached to the SPDK NVMe driver. </p>
+
+</div>
+</div>
+<a id="ac31bc692c6b3a84e2355eb63a8b01ccf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac31bc692c6b3a84e2355eb63a8b01ccf">&#9670;&nbsp;</a></span>spdk_nvme_ctrlr_get_default_ctrlr_opts()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_nvme_ctrlr_get_default_ctrlr_opts </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structspdk__nvme__ctrlr__opts.html">spdk_nvme_ctrlr_opts</a> *&#160;</td>
+          <td class="paramname"><em>opts</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>opts_size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the default options for the creation of a specific NVMe controller. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">opts</td><td>Will be filled with the default option. </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">opts_size</td><td>Must be set to sizeof(struct spdk_nvme_ctrlr_opts). </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
