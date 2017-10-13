@@ -1,5 +1,4 @@
 <section id="blog" class="blog">
-  <h1 class="text-center">News</h1>
   {% for post in site.posts limit:3 %}
     <div class="blog-section">
       <a href="{{ baseurl_rel }}{{ post.url }}"><h2 class="blog-heading">{{ post.title }}</h2></a>
