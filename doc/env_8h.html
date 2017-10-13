@@ -117,6 +117,9 @@ Macros</h2></td></tr>
 <tr class="memitem:a3e5247302342025f028c57bc024291b1"><td class="memItemLeft" align="right" valign="top"><a id="a3e5247302342025f028c57bc024291b1"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_ENV_SOCKET_ID_ANY</b>&#160;&#160;&#160;(-1)</td></tr>
 <tr class="separator:a3e5247302342025f028c57bc024291b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab337c70c632ec69967444fcdd4ab17c2"><td class="memItemLeft" align="right" valign="top"><a id="ab337c70c632ec69967444fcdd4ab17c2"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_ENV_LCORE_ID_ANY</b>&#160;&#160;&#160;(UINT32_MAX)</td></tr>
+<tr class="separator:ab337c70c632ec69967444fcdd4ab17c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aba1856012938db5f1c0beba921ee5a7c"><td class="memItemLeft" align="right" valign="top"><a id="aba1856012938db5f1c0beba921ee5a7c"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_MEMPOOL_DEFAULT_CACHE_SIZE</b>&#160;&#160;&#160;SIZE_MAX</td></tr>
 <tr class="separator:aba1856012938db5f1c0beba921ee5a7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -630,7 +633,7 @@ uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 </div><div class="memdoc">
 
 <p>Return the CPU core index of the current thread. </p>
-<p>This will only function when called from threads set up by this environment abstraction. </p>
+<p>This will only function when called from threads set up by this environment abstraction. For any other threads <code>SPDK_ENV_LCORE_ID_ANY</code> will be returned. </p>
 
 </div>
 </div>
