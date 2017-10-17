@@ -132,12 +132,13 @@
 &lt;sb-md-start&gt; ::= u64 # Metadata start location, in pages
 &lt;sb-md-len&gt; ::= u64 # Metadata length, in pages
 &lt;crc&gt; ::= u32 # Crc for super block
-</pre><p>The <code>&lt;sb-params&gt;</code> data contains parameters specified by the user when the blob store was initially formatted. </p><pre class="fragment">&lt;sb-params&gt; ::= &lt;sb-page-size&gt; &lt;sb-cluster-size&gt;
+</pre><p>The <code>&lt;sb-params&gt;</code> data contains parameters specified by the user when the blob store was initially formatted. </p><pre class="fragment">&lt;sb-params&gt; ::= &lt;sb-page-size&gt; &lt;sb-cluster-size&gt; &lt;sb-bs-type&gt;
 &lt;sb-page-size&gt; ::= u32 # page size, in bytes.
                        # Must be a multiple of the logical block size.
                        # The implementation today requires this to be 4KiB.
 &lt;sb-cluster-size&gt; ::= u32 # Cluster size, in bytes.
                           # Must be a multiple of the page size.
+&lt;sb-bs-type&gt; ::= char[16] # Blobstore type
 </pre><p>Each blob is allocated a non-contiguous set of pages inside the metadata region for its metadata. These pages form a linked list. The first page in the list will be written in place on update, while all other pages will be written to fresh locations. This requires the backing device to support an atomic write size greater than or equal to the page size to guarantee that the operation is atomic. See the section on atomicity for details.</p>
 <p>Each page is defined as: </p><pre class="fragment">&lt;metadata-page&gt; ::= &lt;blob-id&gt; &lt;blob-sequence-num&gt; &lt;blob-descriptor&gt;*
                     &lt;blob-next&gt; &lt;blob-crc&gt;
