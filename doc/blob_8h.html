@@ -107,6 +107,8 @@ Data Structures</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bs__dev.html">spdk_bs_dev</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bs__type.html">spdk_bs_type</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bs__opts.html">spdk_bs_opts</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -115,6 +117,9 @@ Macros</h2></td></tr>
 <tr class="memitem:a3caeda168fe1a5b8b809b546d92eede2"><td class="memItemLeft" align="right" valign="top"><a id="a3caeda168fe1a5b8b809b546d92eede2"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_BLOBID_INVALID</b>&#160;&#160;&#160;(uint64_t)-1</td></tr>
 <tr class="separator:a3caeda168fe1a5b8b809b546d92eede2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18bbf0471f09e63cd362ed279b71deb5"><td class="memItemLeft" align="right" valign="top"><a id="a18bbf0471f09e63cd362ed279b71deb5"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_BLOBSTORE_TYPE_LENGTH</b>&#160;&#160;&#160;16</td></tr>
+<tr class="separator:a18bbf0471f09e63cd362ed279b71deb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
@@ -145,9 +150,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ad0c7f6c77adc7ffc7ec60e589794650f"><td class="memItemLeft" align="right" valign="top"><a id="ad0c7f6c77adc7ffc7ec60e589794650f"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bs_opts_init</b> (struct <a class="el" href="structspdk__bs__opts.html">spdk_bs_opts</a> *opts)</td></tr>
 <tr class="separator:ad0c7f6c77adc7ffc7ec60e589794650f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1049832aebb2dafc49c98e71ba72df12"><td class="memItemLeft" align="right" valign="top"><a id="a1049832aebb2dafc49c98e71ba72df12"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bs_load</b> (struct <a class="el" href="structspdk__bs__dev.html">spdk_bs_dev</a> *dev, spdk_bs_op_with_handle_complete cb_fn, void *cb_arg)</td></tr>
-<tr class="separator:a1049832aebb2dafc49c98e71ba72df12"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a400da20b69e4f914730fbd15d51eb748"><td class="memItemLeft" align="right" valign="top"><a id="a400da20b69e4f914730fbd15d51eb748"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bs_load</b> (struct <a class="el" href="structspdk__bs__dev.html">spdk_bs_dev</a> *dev, struct <a class="el" href="structspdk__bs__opts.html">spdk_bs_opts</a> *opts, spdk_bs_op_with_handle_complete cb_fn, void *cb_arg)</td></tr>
+<tr class="separator:a400da20b69e4f914730fbd15d51eb748"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad59f1d147b612a7d4ce1eb8439a69cee"><td class="memItemLeft" align="right" valign="top"><a id="ad59f1d147b612a7d4ce1eb8439a69cee"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bs_init</b> (struct <a class="el" href="structspdk__bs__dev.html">spdk_bs_dev</a> *dev, struct <a class="el" href="structspdk__bs__opts.html">spdk_bs_opts</a> *opts, spdk_bs_op_with_handle_complete cb_fn, void *cb_arg)</td></tr>
 <tr class="separator:ad59f1d147b612a7d4ce1eb8439a69cee"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -250,6 +255,12 @@ const char *&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_xattr_na
 <tr class="memitem:ae17f3a52d52d9c3e9382cbcfae042c0a"><td class="memItemLeft" align="right" valign="top"><a id="ae17f3a52d52d9c3e9382cbcfae042c0a"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_xattr_names_free</b> (struct spdk_xattr_names *names)</td></tr>
 <tr class="separator:ae17f3a52d52d9c3e9382cbcfae042c0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1407ae1ce3b0fc57a6ee52cf119f9772"><td class="memItemLeft" align="right" valign="top"><a id="a1407ae1ce3b0fc57a6ee52cf119f9772"></a>
+struct <a class="el" href="structspdk__bs__type.html">spdk_bs_type</a>&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bs_get_bstype</b> (struct spdk_blob_store *bs)</td></tr>
+<tr class="separator:a1407ae1ce3b0fc57a6ee52cf119f9772"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9b434a45e67bcebb2fcb79965bd56e5"><td class="memItemLeft" align="right" valign="top"><a id="aa9b434a45e67bcebb2fcb79965bd56e5"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bs_set_bstype</b> (struct spdk_blob_store *bs, struct <a class="el" href="structspdk__bs__type.html">spdk_bs_type</a> bstype)</td></tr>
+<tr class="separator:aa9b434a45e67bcebb2fcb79965bd56e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Blob Storage System. </p>

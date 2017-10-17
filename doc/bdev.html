@@ -109,7 +109,16 @@ NVMe</h2>
 Malloc</h2>
 <p>The SPDK malloc bdev driver allocates a buffer of memory in userspace as the target for block I/O operations. This effectively serves as a userspace ramdisk target.</p>
 <p>Configuration file syntax: </p><div class="fragment"><div class="line">[Malloc]</div><div class="line">  NumberOfLuns 4</div><div class="line">  LunSizeInMB  64</div></div><!-- fragment --><p>This exports 4 malloc block devices, named Malloc0 through Malloc3. Each malloc block device will be 64MB in size.</p>
-<h2><a class="anchor" id="bdev_config_null"></a>
+<h2><a class="anchor" id="bdev_config_pmem"></a>
+Pmem</h2>
+<p>The SPDK pmem bdev driver uses pmemblk pool as the the target for block I/O operations.</p>
+<p>First, you need to compile SPDK with NVML: </p><div class="fragment"><div class="line">./configure --with-nvml</div></div><!-- fragment --><p> To create pmemblk pool for use with SPDK use pmempool tool included with NVML: Usage: pmempool create [&lt;args&gt;] &lt;blk|log|obj&gt; [&lt;bsize&gt;] &lt;file&gt;</p>
+<p>Example: </p><div class="fragment"><div class="line">./nvml/src/tools/pmempool/pmempool create -s 32000000 blk 512 /path/to/pmem_pool</div></div><!-- fragment --><p>There is also pmem management included in SPDK RPC, it contains three calls:</p><ul>
+<li>create_pmem_pool - Creates pmem pool file</li>
+<li>delete_pmem_pool - Deletes pmem pool file</li>
+<li>pmem_pool_info - Show information if specified file is proper pmem pool file and some detailed information about pool like block size and number of blocks</li>
+</ul>
+<p>Example: </p><div class="fragment"><div class="line">./scripts/rpc.py create_pmem_pool /path/to/pmem_pool</div></div><!-- fragment --><p> It is possible to create pmem bdev using SPDK RPC: </p><div class="fragment"><div class="line">./scripts/rpc.py construct_pmem_bdev /path/to/pmem_pool</div></div><!-- fragment --><h2><a class="anchor" id="bdev_config_null"></a>
 Null</h2>
 <p>The SPDK null bdev driver is a dummy block I/O target that discards all writes and returns undefined data for reads. It is useful for benchmarking the rest of the bdev I/O stack with minimal block device overhead and for testing configurations that can't easily be created with the Malloc bdev.</p>
 <p>Configuration file syntax: </p><div class="fragment"><div class="line">[Null]</div><div class="line">  # Dev &lt;name&gt; &lt;size_in_MiB&gt; &lt;block_size&gt;</div><div class="line"></div><div class="line">  # Create an 8 petabyte null bdev with 4K block size called Null0</div><div class="line">  Dev Null0 8589934592 4096</div></div><!-- fragment --><h2><a class="anchor" id="bdev_config_aio"></a>
