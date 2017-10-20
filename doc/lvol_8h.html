@@ -122,21 +122,27 @@ typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_lvol_o
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:a9ecc81d4bcd4fd9090deb20c1a9e0db8"><td class="memItemLeft" align="right" valign="top"><a id="a9ecc81d4bcd4fd9090deb20c1a9e0db8"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_lvs_opts_init</b> (struct <a class="el" href="structspdk__lvs__opts.html">spdk_lvs_opts</a> *opts)</td></tr>
+<tr class="separator:a9ecc81d4bcd4fd9090deb20c1a9e0db8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae12b16b8565ab63a3c9b919ab9664c0f"><td class="memItemLeft" align="right" valign="top"><a id="ae12b16b8565ab63a3c9b919ab9664c0f"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_lvs_init</b> (struct <a class="el" href="structspdk__bs__dev.html">spdk_bs_dev</a> *bs_dev, struct <a class="el" href="structspdk__lvs__opts.html">spdk_lvs_opts</a> *o, spdk_lvs_op_with_handle_complete cb_fn, void *cb_arg)</td></tr>
 <tr class="separator:ae12b16b8565ab63a3c9b919ab9664c0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9f7032fa38dc1af638910018e07b0dd4"><td class="memItemLeft" align="right" valign="top"><a id="a9f7032fa38dc1af638910018e07b0dd4"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_lvs_unload</b> (struct spdk_lvol_store *lvol_store, spdk_lvs_op_complete cb_fn, void *cb_arg)</td></tr>
 <tr class="separator:a9f7032fa38dc1af638910018e07b0dd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53359d9a346da4b1216b2335ffc0ec8e"><td class="memItemLeft" align="right" valign="top"><a id="a53359d9a346da4b1216b2335ffc0ec8e"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_lvs_destroy</b> (struct spdk_lvol_store *lvol_store, bool unmap_device, spdk_lvs_op_complete cb_fn, void *cb_arg)</td></tr>
+<tr class="separator:a53359d9a346da4b1216b2335ffc0ec8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac6f25523f841f01142f5f2553f92ac9b"><td class="memItemLeft" align="right" valign="top"><a id="ac6f25523f841f01142f5f2553f92ac9b"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_lvol_create</b> (struct spdk_lvol_store *lvs, uint64_t sz, spdk_lvol_op_with_handle_complete cb_fn, void *cb_arg)</td></tr>
 <tr class="separator:ac6f25523f841f01142f5f2553f92ac9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5a21d5eb39c7e638288924bc05ecfd8a"><td class="memItemLeft" align="right" valign="top"><a id="a5a21d5eb39c7e638288924bc05ecfd8a"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_lvol_destroy</b> (struct spdk_lvol *lvol)</td></tr>
-<tr class="separator:a5a21d5eb39c7e638288924bc05ecfd8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acc35e7f0176ba259196cb0212d9a3fa8"><td class="memItemLeft" align="right" valign="top"><a id="acc35e7f0176ba259196cb0212d9a3fa8"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_lvol_close</b> (struct spdk_lvol *lvol)</td></tr>
-<tr class="separator:acc35e7f0176ba259196cb0212d9a3fa8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87c4dadc88c211fb4e8ba0cddc474032"><td class="memItemLeft" align="right" valign="top"><a id="a87c4dadc88c211fb4e8ba0cddc474032"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_lvol_destroy</b> (struct spdk_lvol *lvol, spdk_lvol_op_complete cb_fn, void *cb_arg)</td></tr>
+<tr class="separator:a87c4dadc88c211fb4e8ba0cddc474032"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89835586bb7e2e6e78bd0e4cd4c4d45b"><td class="memItemLeft" align="right" valign="top"><a id="a89835586bb7e2e6e78bd0e4cd4c4d45b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_lvol_close</b> (struct spdk_lvol *lvol, spdk_lvol_op_complete cb_fn, void *cb_arg)</td></tr>
+<tr class="separator:a89835586bb7e2e6e78bd0e4cd4c4d45b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3e1700585830ce465b5a1479774c1f44"><td class="memItemLeft" align="right" valign="top"><a id="a3e1700585830ce465b5a1479774c1f44"></a>
 struct spdk_io_channel *&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_lvol_get_io_channel</b> (struct spdk_lvol *lvol)</td></tr>
 <tr class="separator:a3e1700585830ce465b5a1479774c1f44"><td class="memSeparator" colspan="2">&#160;</td></tr>
