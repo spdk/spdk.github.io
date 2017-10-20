@@ -117,7 +117,9 @@ v17.10: (Upcoming Release)</h1>
 <h2>Environment Abstraction Layer</h2>
 <p>A new default value, SPDK_MEMPOOL_DEFAULT_CACHE_SIZE, was added to provide additional clarity when constructing spdk_mempools. Previously, -1 could be passed and the library would choose a reasonable default, but this new value makes it explicit that the default is being used.</p>
 <h2>Blobstore</h2>
+<p>spdk_bs_destroy() was added to allow destroying blobstore on device with an initialized blobstore.</p>
 <p>spdk_bs_io_readv_blob() and spdk_bs_io_writev_blob() were added to enable scattered payloads.</p>
+<p>Add a CLI tool for blobstore allowing basic operations through either command line or shell interface.</p>
 <h2>Event Framework</h2>
 <p>The ability to set a thread name, previously only used by the reactor code, is now part of the <code>spdk_thread_allocate()</code> API. Users may specify a thread name which will show up in tools like <code>gdb</code>.</p>
 <h2>Log</h2>
