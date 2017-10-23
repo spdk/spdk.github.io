@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="Content-Type" content="text/xhtml; charset=utf-8">
   <meta name="generator" content="Doxygen 1.8.13">
-  <title>SPDK: Storage Performance Development Kit</title>
+  <title>SPDK: Virtio SCSI driver</title>
   <script type="text/javascript" src="jquery.js"></script>
   <script type="text/javascript" src="dynsections.js"></script>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,900" type="text/css">
@@ -85,56 +85,28 @@
 </div><!-- top -->
 <div class="header">
   <div class="headertitle">
-<div class="title">Storage Performance Development Kit </div>  </div>
+<div class="title">Virtio SCSI driver </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h1><a class="anchor" id="intro"></a>
+<div class="textblock"><h1><a class="anchor" id="virtio_intro"></a>
 Introduction</h1>
-<ul>
-<li><a class="el" href="getting_started.html">Getting Started</a></li>
-<li><a class="el" href="vagrant.html">Vagrant Development Environment</a></li>
-<li><a class="el" href="changelog.html">Changelog</a></li>
-<li><a href="https://github.com/spdk/spdk/">Source Code (GitHub)</a></li>
+<p>Virtio SCSI driver is an initiator for SPDK <a class="el" href="vhost.html">vhost</a> application. The driver allows any SPDK app to connect to another SPDK instance exposing a vhost-scsi device. The driver will enumerate targets on the device (which acts as a SCSI controller) and create <em>virtual</em> bdevs usable by any SPDK application. Sending an I/O request to the Virtio SCSI bdev will put the request data into a Virtio queue that is processed by the host SPDK app exposing the controller. The host, after sending I/O to the real drive, will put the response back into the Virtio queue. Then, the response is received by the Virtio SCSI driver.</p>
+<p>The driver, just like the SPDK <a class="el" href="vhost.html">vhost</a>, is using pollers instead of standard interrupts to check for an I/O response. It bypasses kernel interrupt and context switching overhead of QEMU and guest kernel, significantly boosting the overall I/O performance.</p>
+<p>Virtio SCSI driver supports two different usage models:</p><ul>
+<li>PCI - This is the standard mode of operation when used in a guest virtual machine, where QEMU has presented the virtio-scsi controller as a virtual PCI device.</li>
+<li>User vhost - Can be used to connect to a vhost-scsi socket directly on the same host.</li>
 </ul>
-<h1><a class="anchor" id="user_guides"></a>
-User Guides</h1>
-<ul>
-<li><a class="el" href="iscsi.html#iscsi_getting_started">iSCSI Target Getting Started Guide</a></li>
-<li><a class="el" href="nvmf.html#nvmf_getting_started">NVMe-oF Target Getting Started Guide</a></li>
-<li><a class="el" href="blobfs.html#blobfs_getting_started">BlobFS Getting Started Guide</a></li>
-</ul>
-<h1><a class="anchor" id="general"></a>
-General Information</h1>
-<ul>
-<li><a class="el" href="directory_structure.html">SPDK Directory Structure</a></li>
-<li><a class="el" href="memory.html">Memory Management for User Space Drivers</a></li>
-<li><a class="el" href="porting.html">SPDK Porting Guide</a></li>
-<li><a href="files.html">Public API header files</a></li>
-<li><a class="el" href="jsonrpc.html">JSON-RPC Methods</a></li>
-</ul>
-<h1><a class="anchor" id="modules"></a>
-Modules</h1>
-<ul>
-<li><a class="el" href="event.html">Event framework</a></li>
-<li><a class="el" href="nvme.html">NVMe Driver</a></li>
-<li><a class="el" href="nvmf.html">NVMe over Fabrics Target</a></li>
-<li><a class="el" href="ioat.html">I/OAT Driver</a></li>
-<li><a class="el" href="iscsi.html">iSCSI Target</a></li>
-<li><a class="el" href="bdev.html">Block Device Abstraction Layer</a></li>
-<li><a class="el" href="blob.html">Blobstore</a></li>
-<li><a class="el" href="blobfs.html">BlobFS (Blobstore Filesystem)</a></li>
-<li><a class="el" href="vhost.html">vhost</a></li>
-<li><a class="el" href="virtio.html">Virtio SCSI driver</a></li>
-</ul>
-<h1><a class="anchor" id="tools"></a>
-Tools</h1>
-<ul>
-<li><a class="el" href="nvme-cli.html">nvme-cli</a></li>
-</ul>
-<h1><a class="anchor" id="performancereports"></a>
-Performance Reports</h1>
-<ul>
-<li><a href="https://ci.spdk.io/download/performance-reports/SPDK17_07_vhost_scsi_performance_report.pdf">SPDK 17.07 vhost-scsi Performance Report</a> </li>
+<h1><a class="anchor" id="virtio_multiqueue"></a>
+Multiqueue</h1>
+<p>The Virtio SCSI controller will automatically manage virtio queue distribution. Currently each thread doing an I/O on a single bdev will get an exclusive queue. Multi-threaded I/O on bdevs from a single Virtio-SCSI controller is not supported.</p>
+<h1><a class="anchor" id="virtio_limitations"></a>
+Limitations</h1>
+<p>The Virtio SCSI driver is still experimental. Current implementation has many limitations:</p><ul>
+<li>supports only up to 8 hugepages (implies only 1GB sized pages are practical)</li>
+<li>single LUN per target</li>
+<li>only SPDK vhost-scsi controllers supported</li>
+<li>no RPC</li>
+<li>no multi-threaded I/O for single-queue virtio devices </li>
 </ul>
 </div></div><!-- contents -->
 </div>

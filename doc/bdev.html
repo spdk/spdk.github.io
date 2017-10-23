@@ -131,6 +131,12 @@ Ceph RBD</h2>
 <p>The SPDK rbd bdev driver provides SPDK block layer access to Ceph RADOS block devices (RBD). Ceph RBD devices are accessed via librbd and librados libraries to access the RADOS block device exported by Ceph.</p>
 <p>Configuration file syntax:</p>
 <div class="fragment"><div class="line">[Ceph]</div><div class="line">  # The format of provided rbd info should be: Ceph rbd_pool_name rbd_name size.</div><div class="line">  # In the following example, rbd is the name of rbd_pool; foo is the name of</div><div class="line">  # rbd device exported by Ceph; value 512 represents the configured block size</div><div class="line">  # for this rbd, the block size should be a multiple of 512.</div><div class="line">  Ceph rbd foo 512</div></div><!-- fragment --><p>This exports 1 rbd block device, named Ceph0.</p>
+<h2><a class="anchor" id="bdev_config_virtio_scsi"></a>
+Virtio SCSI</h2>
+<p>The SPDK Virtio SCSI driver allows creating SPDK block devices from Virtio SCSI LUNs.</p>
+<p>Use the following configuration file snippet to bind all available Virtio-SCSI PCI devices on a virtual machine. The driver will perform a target scan on each device and automatically create block device for each LUN.</p>
+<div class="fragment"><div class="line">[VirtioPci]</div><div class="line">  # If enabled, the driver will automatically use all available Virtio-SCSI PCI</div><div class="line">  # devices. Disabled by default.</div><div class="line">  Enable Yes</div></div><!-- fragment --><p>The driver also supports connecting to vhost-user devices exposed on the same host. In the following case, the host app has created a vhost-scsi controller which is accessible through the /tmp/vhost.0 domain socket.</p>
+<div class="fragment"><div class="line">[VirtioUser0]</div><div class="line">  # Path to the Unix domain socket using vhost-user protocol.</div><div class="line">  Path /tmp/vhost.0</div><div class="line">  # Maximum number of request queues to use. Default value is 1.</div><div class="line">  Queues 1</div><div class="line"></div><div class="line">#[VirtioUser1]</div><div class="line">  #Path /tmp/vhost.1</div></div><!-- fragment --><p>Each Virtio-SCSI device may export up to 64 block devices named VirtioScsi0t0 ~ VirtioScsi0t63.</p>
 <h2><a class="anchor" id="bdev_config_gpt"></a>
 GPT (GUID Partition Table)</h2>
 <p>The GPT virtual bdev driver examines all bdevs as they are added and exposes partitions with a SPDK-specific partition type as bdevs. The SPDK partition type GUID is <code>7c5222bd-8f5d-4087-9c00-bf9843c7b58c</code>.</p>
