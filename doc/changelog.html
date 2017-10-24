@@ -89,47 +89,54 @@
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><h1><a class="anchor" id="changelog-v17-10"></a>
-v17.10: (Upcoming Release)</h1>
-<h2>New dependency</h2>
-<p>libuuid added as new depenency for logical volumes.</p>
+v17.10: Logical Volumes</h1>
+<h2>New dependencies</h2>
+<p>libuuid was added as new dependency for logical volumes.</p>
+<p>libnuma is now required unconditionally now that the DPDK submodule has been updated to DPDK 17.08.</p>
 <h2>Block Device Abstraction Layer (bdev)</h2>
-<p>An <a href="http://github.com/axboe/fio">fio</a> plugin was added that can route I/O to the bdev layer. See the https://github.com/spdk/spdk/blob/master/examples/bdev/fio_plugin/README.md "plugin documentation" for more information.</p>
+<p>An <a href="http://github.com/axboe/fio">fio</a> plugin was added that can route I/O to the bdev layer. See the <a href="https://github.com/spdk/spdk/tree/master/examples/bdev/fio_plugin/">plugin documentation</a> for more information.</p>
 <p><a class="el" href="bdev_8h.html#a680c9c302998f7b003e2476e35d9ae4b" title="Submit an unmap request to the block device. ">spdk_bdev_unmap()</a> was modified to take an offset and a length in bytes as arguments instead of requiring the user to provide an array of SCSI unmap descriptors. This limits unmaps to a single contiguous range.</p>
-<p><a class="el" href="bdev_8h.html#adc50b78fec7f69190d9139aff29a9043" title="Submit a write zeroes request to the bdev on the given channel. ">spdk_bdev_write_zeroes()</a> was introduced as an alternative to <a class="el" href="bdev_8h.html#a680c9c302998f7b003e2476e35d9ae4b" title="Submit an unmap request to the block device. ">spdk_bdev_unmap()</a>. It ensures that all unmapped blocks will be zeroed out. This function is currently only supported by NVMe block devices.</p>
+<p><a class="el" href="bdev_8h.html#adc50b78fec7f69190d9139aff29a9043" title="Submit a write zeroes request to the bdev on the given channel. ">spdk_bdev_write_zeroes()</a> was introduced. It ensures that all specified blocks will be zeroed out. If a block device doesn't natively support a write zeroes command, the bdev layer emulates it using write commands.</p>
 <p>New API functions that accept I/O parameters in units of blocks instead of bytes have been added:</p><ul>
 <li><a class="el" href="bdev_8h.html#aeec9efd151e2fb34ee3d22a1edbbb53f" title="Submit a read request to the bdev on the given channel. ">spdk_bdev_read_blocks()</a>, <a class="el" href="bdev_8h.html#a55483d5ae010c514b37b976ad803b4b2" title="Submit a read request to the bdev on the given channel. ">spdk_bdev_readv_blocks()</a></li>
 <li><a class="el" href="bdev_8h.html#a12da8917f525a6e11cbf22b2b7652c89" title="Submit a write request to the bdev on the given channel. ">spdk_bdev_write_blocks()</a>, <a class="el" href="bdev_8h.html#af5849064d12de9f140a41522d1f7c95b" title="Submit a write request to the bdev on the given channel. ">spdk_bdev_writev_blocks()</a></li>
 <li><a class="el" href="bdev_8h.html#a047f8a9f8d0a3d1d7bfcdf0a9838b261" title="Submit a write zeroes request to the bdev on the given channel. ">spdk_bdev_write_zeroes_blocks()</a></li>
 <li><a class="el" href="bdev_8h.html#a7555fdd41019e29b40e535b72457d30b" title="Submit an unmap request to the block device. ">spdk_bdev_unmap_blocks()</a></li>
 </ul>
+<p>The bdev layer now handles temporary out-of-memory I/O failures internally by queueing the I/O to be retried later.</p>
 <h2>Linux AIO bdev</h2>
 <p>The AIO bdev now allows the user to override the auto-detected block size.</p>
 <h2>NVMe driver</h2>
 <p>The NVMe driver now recognizes the NVMe 1.3 Namespace Optimal I/O Boundary field. NVMe 1.3 devices may report an optimal I/O boundary, which the driver will take into account when splitting I/O requests.</p>
 <p>The HotplugEnable option in <code>[Nvme]</code> sections of the configuration file is now "No" by default. It was previously "Yes".</p>
-<p>The NVMe library now includes a function spdk_nvme_ns_get_ctrlr which returns the NVMe Controller associated with a given namespace.</p>
+<p>The NVMe library now includes a <a class="el" href="nvme_8h.html#a2640aeebb82108e9b507dcccb1e564c2" title="Get the Controller with which this namespace is associated. ">spdk_nvme_ns_get_ctrlr()</a> function which returns the NVMe Controller associated with a given namespace.</p>
 <p>The NVMe library now allows the user to specify a host identifier when attaching to a controller. The host identifier is used as part of the Reservations feature, as well as in the NVMe-oF Connect command. The default host ID is also now a randomly-generated UUID, and the default host NQN uses the host ID to generate a UUID-based NQN.</p>
+<p><a class="el" href="nvme_8h.html#ae26375a74c2c935ec32f0c41a7ed93df" title="Connect the NVMe driver to the device located at the given transport ID. ">spdk_nvme_connect()</a> was added to allow the user to connect directly to a single NVMe or NVMe-oF controller.</p>
 <h2>NVMe-oF Target (nvmf_tgt)</h2>
-<p>The NVMe-oF target no longer requires any in capsule data buffers to run, and the feature is now entirely optional. Previously, at least 4KiB in capsule data buffers were required.</p>
+<p>The NVMe-oF target no longer requires any in-capsule data buffers to run, and the feature is now entirely optional. Previously, at least 4 KiB in-capsule data buffers were required.</p>
 <p>NVMe-oF subsytems have a new configuration option, AllowAnyHost, to control whether the host NQN whitelist is enforced when accepting new connections. If no Host options have been specified and AllowAnyHost is disabled, the connection will be denied; this is a behavior change from previous releases, which allowed any host NQN to connect if the Host list was empty. AllowAnyHost is disabled by default.</p>
 <p>NVMe-oF namespaces may now be assigned arbitrary namespace IDs, and the number of namespaces per subsystem is no longer limited.</p>
 <p>The NVMe-oF target now supports the Write Zeroes command.</p>
 <h2>Environment Abstraction Layer</h2>
 <p>A new default value, SPDK_MEMPOOL_DEFAULT_CACHE_SIZE, was added to provide additional clarity when constructing spdk_mempools. Previously, -1 could be passed and the library would choose a reasonable default, but this new value makes it explicit that the default is being used.</p>
 <h2>Blobstore</h2>
+<p>The blobstore super block now contains a bstype field to identify the type of the blobstore. Existing code should be updated to fill out bstype when calling spdk_bs_init() and spdk_bs_load().</p>
 <p>spdk_bs_destroy() was added to allow destroying blobstore on device with an initialized blobstore.</p>
 <p>spdk_bs_io_readv_blob() and spdk_bs_io_writev_blob() were added to enable scattered payloads.</p>
-<p>Add a CLI tool for blobstore allowing basic operations through either command line or shell interface.</p>
+<p>A CLI tool for blobstore has been added, allowing basic operations through either command line or shell interface. See the <a href="https://github.com/spdk/spdk/tree/master/examples/blob/cli">blobcli</a> documentation for more details.</p>
 <h2>Event Framework</h2>
-<p>The ability to set a thread name, previously only used by the reactor code, is now part of the <code>spdk_thread_allocate()</code> API. Users may specify a thread name which will show up in tools like <code>gdb</code>.</p>
+<p>The ability to set a thread name, previously only used by the reactor code, is now part of the spdk_thread_allocate() API. Users may specify a thread name which will show up in tools like <code>gdb</code>.</p>
 <h2>Log</h2>
-<p>The API spdk_trace_dump() now takes a new parameter to allow the caller to specify stdout or stderr for example.</p>
+<p>The spdk_trace_dump() function now takes a new parameter to allow the caller to specify an output file handle (stdout or stderr, for example).</p>
 <h2>Logical Volumes</h2>
-<p>Logical volumes library built on top of SPDK blobstore has been added. It is possible create logical volumes on top of other devices using RPC.</p>
-<p>See <a href="http://www.spdk.io/doc/lvol.html">logical volumes</a> documentation for more information.</p>
+<p>Logical volumes library built on top of SPDK blobstore has been added. It is possible to create logical volumes on top of other devices using RPC.</p>
+<p>See the <a href="http://www.spdk.io/doc/lvolstore.html">logical volumes</a> documentation for more information.</p>
 <h2>Persistent Memory</h2>
-<p>New bdev type has been added. Persistent memory block device is built on top of libpmemblk. It is possible create pmem devices on top of pmem pool files using RPC.</p>
-<p>See <a href="http://www.spdk.io/doc/bdev.html">Block Device</a> documentation for more information.</p>
+<p>A new persistent memory bdev type has been added. The persistent memory block device is built on top of <a href="http://pmem.io/nvml/libpmemblk/">libpmemblk</a>. It is possible to create pmem devices on top of pmem pool files using RPC.</p>
+<p>See the <a href="http://www.spdk.io/doc/bdev.html#bdev_config_pmem">Pmem Block Device</a> documentation for more information.</p>
+<h2>Virtio SCSI driver</h2>
+<p>A userspace driver for Virtio SCSI devices has been added. The driver is capable of creating block devices on top of LUNs exposed by another SPDK vhost-scsi application.</p>
+<p>See the <a href="http://www.spdk.io/doc/virtio.html">Virtio SCSI</a> documentation and <a href="http://www.spdk.io/doc/bdev.html#bdev_config_virtio_scsi">Getting Started</a> guide for more information.</p>
 <h1><a class="anchor" id="changelog-v17-07"></a>
 v17.07: Build system improvements, userspace vhost-blk target, and GPT bdev</h1>
 <h2>Build System</h2>
