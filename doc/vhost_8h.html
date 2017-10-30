@@ -125,6 +125,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_vhost_fini</b> (
 <tr class="memitem:abef1a4170ddcdf8f0e6dadb4720368e5"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vhost_8h.html#abef1a4170ddcdf8f0e6dadb4720368e5">spdk_vhost_dev_get_cpumask</a> (struct spdk_vhost_dev *vdev)</td></tr>
 <tr class="memdesc:abef1a4170ddcdf8f0e6dadb4720368e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get cpumask of the vhost device.  <a href="#abef1a4170ddcdf8f0e6dadb4720368e5">More...</a><br /></td></tr>
 <tr class="separator:abef1a4170ddcdf8f0e6dadb4720368e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b8c054fdc8ed4ad573b2d0bcf2d4797"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vhost_8h.html#a8b8c054fdc8ed4ad573b2d0bcf2d4797">spdk_vhost_set_coalescing</a> (struct spdk_vhost_dev *vdev, uint32_t delay_base_us, uint32_t iops_threshold)</td></tr>
+<tr class="memdesc:a8b8c054fdc8ed4ad573b2d0bcf2d4797"><td class="mdescLeft">&#160;</td><td class="mdescRight">By default, events are generated when asked, but for high queue depth and high IOPS this prove to be inefficient both for guest kernel that have to handle a lot more IO completions and for SPDK vhost that need to make more syscalls.  <a href="#a8b8c054fdc8ed4ad573b2d0bcf2d4797">More...</a><br /></td></tr>
+<tr class="separator:a8b8c054fdc8ed4ad573b2d0bcf2d4797"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a01b54a11439216fb05196474e3ee20d1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vhost_8h.html#a01b54a11439216fb05196474e3ee20d1">spdk_vhost_scsi_dev_construct</a> (const char *name, const char *cpumask)</td></tr>
 <tr class="memdesc:a01b54a11439216fb05196474e3ee20d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct an empty vhost SCSI device.  <a href="#a01b54a11439216fb05196474e3ee20d1">More...</a><br /></td></tr>
 <tr class="separator:a01b54a11439216fb05196474e3ee20d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -640,6 +643,52 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_vhost_fini</b> (
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 on success, negative errno on error. </dd></dl>
+
+</div>
+</div>
+<a id="a8b8c054fdc8ed4ad573b2d0bcf2d4797"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b8c054fdc8ed4ad573b2d0bcf2d4797">&#9670;&nbsp;</a></span>spdk_vhost_set_coalescing()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_vhost_set_coalescing </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_vhost_dev *&#160;</td>
+          <td class="paramname"><em>vdev</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>delay_base_us</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>iops_threshold</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>By default, events are generated when asked, but for high queue depth and high IOPS this prove to be inefficient both for guest kernel that have to handle a lot more IO completions and for SPDK vhost that need to make more syscalls. </p>
+<p>If enabled, limit amount of events (IRQs) sent to initiator by SPDK vhost effectively coalescing couple of completions. This of cource introduce IO latency penalty proportional to event delay time.</p>
+<p>Actual events delay time when is calculated according to below formula: if (delay_base == 0 || IOPS &lt; iops_threshold) { delay = 0; } else if (IOPS &lt; iops_threshold) { delay = delay_base * (iops - iops_threshold) / iops_threshold; }</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">vdev</td><td>vhost device </td></tr>
+    <tr><td class="paramname">delay_base_us</td><td>Base delay time in microseconds. If 0, coalescing is disabled. </td></tr>
+    <tr><td class="paramname">iops_threshold</td><td>IOPS threshold when coalescing is activated </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
