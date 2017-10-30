@@ -104,15 +104,21 @@ Typedefs</h2></td></tr>
 <tr class="memitem:a5b9c8c2911a2249ffccce59dd510a2f0"><td class="memItemLeft" align="right" valign="top"><a id="a5b9c8c2911a2249ffccce59dd510a2f0"></a>
 typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_copy_completion_cb</b>) (void *ref, int status)</td></tr>
 <tr class="separator:a5b9c8c2911a2249ffccce59dd510a2f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1f7515b8e6d63ac751d25aa692252e5"><td class="memItemLeft" align="right" valign="top"><a id="ad1f7515b8e6d63ac751d25aa692252e5"></a>
+typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_copy_fini_cb</b>) (void *cb_arg)</td></tr>
+<tr class="separator:ad1f7515b8e6d63ac751d25aa692252e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a15ff3d3490b8a000e7b0812319754c25"><td class="memItemLeft" align="right" valign="top"><a id="a15ff3d3490b8a000e7b0812319754c25"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_copy_engine_initialize</b> (void)</td></tr>
 <tr class="separator:a15ff3d3490b8a000e7b0812319754c25"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a57074384e2566b42fc5a358bfb0ad051"><td class="memItemLeft" align="right" valign="top"><a id="a57074384e2566b42fc5a358bfb0ad051"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_copy_engine_finish</b> (void)</td></tr>
-<tr class="separator:a57074384e2566b42fc5a358bfb0ad051"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9714f9a1e7231fc514f9de4585b00a0f"><td class="memItemLeft" align="right" valign="top"><a id="a9714f9a1e7231fc514f9de4585b00a0f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_copy_engine_finish</b> (spdk_copy_fini_cb cb_fn, void *cb_arg)</td></tr>
+<tr class="separator:a9714f9a1e7231fc514f9de4585b00a0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b07807db232458e1669b6453a92a5bf"><td class="memItemLeft" align="right" valign="top"><a id="a8b07807db232458e1669b6453a92a5bf"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_copy_engine_module_finish</b> (void)</td></tr>
+<tr class="separator:a8b07807db232458e1669b6453a92a5bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a663f42c1f5cf38650bed8ab25e1c64d6"><td class="memItemLeft" align="right" valign="top"><a id="a663f42c1f5cf38650bed8ab25e1c64d6"></a>
 struct spdk_io_channel *&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_copy_engine_get_io_channel</b> (void)</td></tr>
 <tr class="separator:a663f42c1f5cf38650bed8ab25e1c64d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
