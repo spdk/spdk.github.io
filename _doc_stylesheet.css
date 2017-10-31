@@ -139,6 +139,10 @@ p.copyright {
 	box-sizing: content-box;
 }
 
+#doc-content {
+	margin-right: -15px;
+}
+
 /* Original Stylesheet */
 
 h1.groupheader {
