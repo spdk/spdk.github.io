@@ -139,6 +139,10 @@ p.copyright {
 	box-sizing: content-box;
 }
 
+.container-fluid {
+	padding-right: 0;
+}
+
 /* Original Stylesheet */
 
 h1.groupheader {
