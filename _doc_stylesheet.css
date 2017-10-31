@@ -135,6 +135,10 @@ p.copyright {
     margin: 15px 0 0;
 }
 
+#side-nav * {
+	box-sizing: content-box;
+}
+
 /* Original Stylesheet */
 
 h1.groupheader {
