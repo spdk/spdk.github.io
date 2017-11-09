@@ -1,0 +1,44 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "736aa122_742a281e",
+        "filename": "_posts/2017-11-09-dev_meetup.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 1010525
+      },
+      "writtenOn": "2017-11-09T17:25:20Z",
+      "side": 1,
+      "message": "These paths are relative to where the blog post ends up - e.g. http://spdk.io/news/2017/11/09/dev_meetup/ - so to get back up to the top level where img is located, you\u0027ll need ../../../../../img/blog/work1.png.\n\nIt might be a good idea to try converting these to JPEG - that should give some good size savings for photographic images.",
+      "revId": "8b480f4ad0190583eb153f15b8979be4d882d0f1",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "93626200_a3514340",
+        "filename": "_posts/2017-11-09-dev_meetup.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 1010525
+      },
+      "writtenOn": "2017-11-09T17:25:20Z",
+      "side": 1,
+      "message": "This seems like it shouldn\u0027t be capitalized.",
+      "range": {
+        "startLine": 17,
+        "startChar": 0,
+        "endLine": 17,
+        "endChar": 1
+      },
+      "revId": "8b480f4ad0190583eb153f15b8979be4d882d0f1",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
