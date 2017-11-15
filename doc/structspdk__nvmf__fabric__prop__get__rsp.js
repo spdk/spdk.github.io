@@ -6,7 +6,7 @@ var structspdk__nvmf__fabric__prop__get__rsp =
     [ "reserved0", "structspdk__nvmf__fabric__prop__get__rsp.html#a742907a8e6b713023942e8404c1e4c56", null ],
     [ "sqhd", "structspdk__nvmf__fabric__prop__get__rsp.html#a6e0010db32f1070d00e71aa0d4702c90", null ],
     [ "status", "structspdk__nvmf__fabric__prop__get__rsp.html#a4739a90ffee1060b6bf1a8706a0895eb", null ],
-    [ "u32", "structspdk__nvmf__fabric__prop__get__rsp.html#ac4efe9d690d899b75cc852bb5b485b43", null ],
+    [ "u32", "structspdk__nvmf__fabric__prop__get__rsp.html#a9aa259c3be7f498c75889d73d56041f8", null ],
     [ "u64", "structspdk__nvmf__fabric__prop__get__rsp.html#af331b60c62fb5f466de5ecfcb7e0bf3f", null ],
-    [ "value", "structspdk__nvmf__fabric__prop__get__rsp.html#aa2f034f765ba2f6bb33ec4c6acbc81a8", null ]
+    [ "value", "structspdk__nvmf__fabric__prop__get__rsp.html#af8a78e325b2ad63059a0725a67ffa975", null ]
 ];

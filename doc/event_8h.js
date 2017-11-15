@@ -1,6 +1,8 @@
 var event_8h =
 [
     [ "spdk_app_opts", "structspdk__app__opts.html", "structspdk__app__opts" ],
+    [ "SPDK_APP_GETOPT_STRING", "event_8h.html#af0ae0584a4594f82b7c5294b4d4f6fe6", null ],
+    [ "SPDK_DEFAULT_RPC_ADDR", "event_8h.html#ad6d27c63164846e87e44de2f39792024", null ],
     [ "spdk_app_shutdown_cb", "event_8h.html#af7e98d89bfe88c7b9d9ecfc78fac2cd2", null ],
     [ "spdk_event_fn", "event_8h.html#a69f0f17c0f9a03840c327672df37b3bb", null ],
     [ "spdk_poller_fn", "event_8h.html#a1c24df11036bbab9b09f0eb704e53343", null ],
@@ -12,6 +14,7 @@ var event_8h =
     [ "spdk_app_get_running_config", "event_8h.html#a74ff463ced05d4fab6baae4506c27f46", null ],
     [ "spdk_app_get_shm_id", "event_8h.html#ac64ac17f456e8ac388d959c2e7a4a13b", null ],
     [ "spdk_app_opts_init", "event_8h.html#a2c8af9052967bf98ff65e514ec7fa276", null ],
+    [ "spdk_app_parse_args", "event_8h.html#a9c7681affe14b7603ca55d2960308aa0", null ],
     [ "spdk_app_parse_core_mask", "event_8h.html#aed861d180d7846cb80cdbd723968c0ff", null ],
     [ "spdk_app_start", "event_8h.html#a18879873a585b21f44b7c90be8726ce1", null ],
     [ "spdk_app_start_shutdown", "event_8h.html#a0bbbb23263a8ea9c93c3adf8aa3bce8e", null ],

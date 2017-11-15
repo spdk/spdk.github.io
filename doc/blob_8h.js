@@ -47,6 +47,7 @@ var blob_8h =
     [ "spdk_bs_register_md_thread", "blob_8h.html#a055b798b6a05481888e0e180b2eb3da7", null ],
     [ "spdk_bs_set_bstype", "blob_8h.html#aa9b434a45e67bcebb2fcb79965bd56e5", null ],
     [ "spdk_bs_set_super", "blob_8h.html#a0c5c40c9c88d85ef5455ab32a1db3aa4", null ],
+    [ "spdk_bs_total_data_cluster_count", "blob_8h.html#a3c090bf1ffd244cd1d2787d906d0d34f", null ],
     [ "spdk_bs_unload", "blob_8h.html#aa98e6633723afb306a763b9f571f2cc1", null ],
     [ "spdk_bs_unregister_md_thread", "blob_8h.html#a1f3b19d0c23353887e9ab3a91fdfe883", null ],
     [ "spdk_xattr_names_free", "blob_8h.html#ae17f3a52d52d9c3e9382cbcfae042c0a", null ],
