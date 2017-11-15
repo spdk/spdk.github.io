@@ -34,8 +34,8 @@ var NAVTREE =
       ] ]
     ] ],
     [ "Getting Started", "getting_started.html", [
-      [ "Installing Prerequisites", "getting_started.html#getting_started_prerequisites", null ],
       [ "Getting the Source Code", "getting_started.html#getting_started_source", null ],
+      [ "Installing Prerequisites", "getting_started.html#getting_started_prerequisites", null ],
       [ "Building", "getting_started.html#getting_started_building", null ],
       [ "Running the Unit Tests", "getting_started.html#getting_started_unittests", null ],
       [ "Running the Example Applications", "getting_started.html#getting_started_examples", null ]
@@ -174,20 +174,20 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"endian_8h.html#ac711a83f64d9fe2b80cce9a59b7431f3",
-"io__channel_8h.html#aed1d14292cfee8553d4a1ebb519b210a",
-"jsonrpc_8h.html#a97fe9c9d3f9eb731dd9cf320318d43aa",
-"nvme__spec_8h.html#a06236cae2f30325bf638d34428304797",
-"nvme__spec_8h.html#acb8784fad6a53be95d4c718ad3cf852eaeb0215504baf000c9886ac739f7539a2",
-"pci__ids_8h.html#aa483941cfefea1ac43a7eb75b5e3efab",
-"scsi__spec_8h.html#aa382e163c88c751c769f9836ae89b108a55cfbdde4917b626572fdc4c87d9754b",
-"structiscsi__bhs__login__rsp.html#a08dec8d2dd02d11daef7320fd36b90b8",
-"structspdk__bs__dev.html#aa4d0643a03966df7b0538ea3240fe696",
-"structspdk__json__object__decoder.html#ad4f8aab87ac1de690799dad3487e92df",
-"structspdk__nvme__format.html#aea6ffab3f27af77512dd59b751d97b11",
-"structspdk__nvmf__discovery__log__page__entry.html",
-"structspdk__scsi__vpd__page.html",
-"vhost_8h.html#afd7159f8eb1e0d65dad5bedaa6cc5e43"
+"endian_8h.html#ac3fd4544817537270c79b8d6133d2700",
+"io__channel_8h.html#ad7b7239eb25263787bba6b64036f9792",
+"jsonrpc_8h.html#a22757fb7d0f34984e29b3fe311dfed01",
+"nvme__spec_8h.html#a05b2db4a398c119c029c234a68760c73",
+"nvme__spec_8h.html#acb8784fad6a53be95d4c718ad3cf852eaca87b242f30b8d3711f9943a634ef53b",
+"pci__ids_8h.html#a805bf6051132955b17089bd0fdac1595",
+"scsi__spec_8h.html#a9e2b2add18fac5a9110df411076170dca469b3e6746f6b191131567dd832ee170",
+"structiscsi__bhs__login__req.html#ab0012806d5ac4a066598813f92a7ebab",
+"structspdk__bdev__io__stat.html#ad3d6b72863ebb2fea75d98df45ebf7f0",
+"structspdk__ioat__xor__hw__desc.html#aacb8b9ac37bb2be6968d428b08068609",
+"structspdk__nvme__error__information__entry.html#aeb86c281ad13ccad6fbf242f77515b10",
+"structspdk__nvme__secondary__ctrl__entry.html#a8c752bf0b9cf14eec276442db6fb318a",
+"structspdk__scsi__task.html#a28ad6cf348a7dba852224daa27e89117",
+"util_8h.html#a22383e04171a98834c5f21f0c460e322"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

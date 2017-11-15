@@ -349,8 +349,8 @@ struct <a class="el" href="structspdk__pci__id.html">spdk_pci_id</a>&#160;</td><
 <tr class="memitem:a69b979316610b357a35d03500c3059af"><td class="memItemLeft" align="right" valign="top"><a id="a69b979316610b357a35d03500c3059af"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_pci_device_get_serial_number</b> (struct spdk_pci_device *dev, char *sn, size_t len)</td></tr>
 <tr class="separator:a69b979316610b357a35d03500c3059af"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afa1866b3d6e63d1b7be5db38b2094d89"><td class="memItemLeft" align="right" valign="top"><a id="afa1866b3d6e63d1b7be5db38b2094d89"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_pci_device_claim</b> (const struct <a class="el" href="structspdk__pci__addr.html">spdk_pci_addr</a> *pci_addr)</td></tr>
+<tr class="memitem:afa1866b3d6e63d1b7be5db38b2094d89"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_8h.html#afa1866b3d6e63d1b7be5db38b2094d89">spdk_pci_device_claim</a> (const struct <a class="el" href="structspdk__pci__addr.html">spdk_pci_addr</a> *pci_addr)</td></tr>
+<tr class="memdesc:afa1866b3d6e63d1b7be5db38b2094d89"><td class="mdescLeft">&#160;</td><td class="mdescRight">Claim a PCI device for exclusive SPDK userspace access.  <a href="#afa1866b3d6e63d1b7be5db38b2094d89">More...</a><br /></td></tr>
 <tr class="separator:afa1866b3d6e63d1b7be5db38b2094d89"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa98502fc8d794fadaae348496d421082"><td class="memItemLeft" align="right" valign="top"><a id="aa98502fc8d794fadaae348496d421082"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_pci_device_detach</b> (struct spdk_pci_device *device)</td></tr>
@@ -1146,6 +1146,34 @@ uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 on success, or a negated errno value on failure. </dd></dl>
+
+</div>
+</div>
+<a id="afa1866b3d6e63d1b7be5db38b2094d89"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa1866b3d6e63d1b7be5db38b2094d89">&#9670;&nbsp;</a></span>spdk_pci_device_claim()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_pci_device_claim </td>
+          <td>(</td>
+          <td class="paramtype">const struct <a class="el" href="structspdk__pci__addr.html">spdk_pci_addr</a> *&#160;</td>
+          <td class="paramname"><em>pci_addr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Claim a PCI device for exclusive SPDK userspace access. </p>
+<p>Uses F_SETLK on a shared memory file with the PCI address embedded in its name. As long as this file remains open with the lock acquired, other processes will not be able to successfully call this function on the same PCI device.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pci_addr</td><td>PCI address of the device to claim</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>-1 if the device has already been claimed, an fd otherwise. This fd should be closed when the application no longer needs access to the PCI device (including when it is hot removed). </dd></dl>
 
 </div>
 </div>

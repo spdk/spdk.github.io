@@ -139,6 +139,18 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvmf_tgt_opts_in
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#abe57cf127dca189496274350584cc783">spdk_nvmf_tgt_accept</a> (struct spdk_nvmf_tgt *tgt)</td></tr>
 <tr class="memdesc:abe57cf127dca189496274350584cc783"><td class="mdescLeft">&#160;</td><td class="mdescRight">Poll the target for incoming connections. <br /></td></tr>
 <tr class="separator:abe57cf127dca189496274350584cc783"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b1de2ab69c992ce2c732c354a08238f"><td class="memItemLeft" align="right" valign="top"><a id="a3b1de2ab69c992ce2c732c354a08238f"></a>
+struct spdk_nvmf_poll_group *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#a3b1de2ab69c992ce2c732c354a08238f">spdk_nvmf_poll_group_create</a> (struct spdk_nvmf_tgt *tgt)</td></tr>
+<tr class="memdesc:a3b1de2ab69c992ce2c732c354a08238f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a poll group. <br /></td></tr>
+<tr class="separator:a3b1de2ab69c992ce2c732c354a08238f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa38d9ac50a79883df08d7faf3a647018"><td class="memItemLeft" align="right" valign="top"><a id="aa38d9ac50a79883df08d7faf3a647018"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#aa38d9ac50a79883df08d7faf3a647018">spdk_nvmf_poll_group_destroy</a> (struct spdk_nvmf_poll_group *group)</td></tr>
+<tr class="memdesc:aa38d9ac50a79883df08d7faf3a647018"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy a poll group. <br /></td></tr>
+<tr class="separator:aa38d9ac50a79883df08d7faf3a647018"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1030465b2a7b4f29e4c9faa7d7acd0d9"><td class="memItemLeft" align="right" valign="top"><a id="a1030465b2a7b4f29e4c9faa7d7acd0d9"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#a1030465b2a7b4f29e4c9faa7d7acd0d9">spdk_nvmf_poll_group_poll</a> (struct spdk_nvmf_poll_group *group)</td></tr>
+<tr class="memdesc:a1030465b2a7b4f29e4c9faa7d7acd0d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check a poll group for work completions. <br /></td></tr>
+<tr class="separator:a1030465b2a7b4f29e4c9faa7d7acd0d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8963c7c607e75faac576ed9e1ecd4417"><td class="memItemLeft" align="right" valign="top"><a id="a8963c7c607e75faac576ed9e1ecd4417"></a>
 struct spdk_nvmf_subsystem *&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvmf_create_subsystem</b> (struct spdk_nvmf_tgt *tgt, const char *nqn, enum <a class="el" href="nvmf__spec_8h.html#a808272f050cc373f3a90871c1528afd4">spdk_nvmf_subtype</a> type, uint32_t num_ns)</td></tr>
 <tr class="separator:a8963c7c607e75faac576ed9e1ecd4417"><td class="memSeparator" colspan="2">&#160;</td></tr>

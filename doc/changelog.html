@@ -109,7 +109,10 @@ $(document).ready(function(){initNavTree('changelog.html','');});
 <div class="title">Changelog </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h1><a class="anchor" id="changelog-v17-10"></a>
+<div class="textblock"><h1>v18.01</h1>
+<h2>RPC</h2>
+<p>A JSON RPC listener is now enabled by default using a UNIX domain socket at /var/run/spdk.sock. A -r option command line option has been added to enable an alternative UNIX domain socket location, or a TCP port in the format ip_addr:tcp_port (i.e. 127.0.0.1:5260). The Rpc configuration file section is now deprecated and will be removed in the v18.04 release.</p>
+<h1><a class="anchor" id="changelog-v17-10"></a>
 v17.10: Logical Volumes</h1>
 <h2>New dependencies</h2>
 <p>libuuid was added as new dependency for logical volumes.</p>

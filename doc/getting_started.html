@@ -109,14 +109,11 @@ $(document).ready(function(){initNavTree('getting_started.html','');});
 <div class="title">Getting Started </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h1><a class="anchor" id="getting_started_prerequisites"></a>
-Installing Prerequisites</h1>
-<p>Fedora/CentOS:</p>
-<div class="fragment"><div class="line">sudo dnf install -y gcc gcc-c++ make CUnit-devel libaio-devel openssl-devel \</div><div class="line">        git astyle-devel python-pep8 lcov python clang-analyzer</div><div class="line"># Additional dependencies for RDMA (NVMe over Fabrics)</div><div class="line">sudo dnf install -y libibverbs-devel librdmacm-devel</div><div class="line"># Additional dependencies for building docs</div><div class="line">sudo dnf install -y doxygen mscgen</div></div><!-- fragment --><p>Ubuntu/Debian:</p>
-<div class="fragment"><div class="line">sudo apt-get install -y gcc g++ make libcunit1-dev libaio-dev libssl-dev \</div><div class="line">        git astyle pep8 lcov clang</div><div class="line"># Additional dependencies for RDMA (NVMe over Fabrics)</div><div class="line">sudo apt-get install -y libibverbs-dev librdmacm</div><div class="line"># Additional dependencies for building docs</div><div class="line">sudo apt-get install -y doxygen mscgen</div></div><!-- fragment --><p>FreeBSD:</p>
-<div class="fragment"><div class="line">sudo pkg install gmake cunit openssl git devel/astyle bash devel/pep8 \</div><div class="line">        python</div><div class="line"># Additional dependencies for building docs</div><div class="line">sudo pkg install doxygen mscgen</div></div><!-- fragment --><h1><a class="anchor" id="getting_started_source"></a>
+<div class="textblock"><h1><a class="anchor" id="getting_started_source"></a>
 Getting the Source Code</h1>
-<div class="fragment"><div class="line">git clone https://github.com/spdk/spdk</div><div class="line">cd spdk</div><div class="line">git submodule update --init</div></div><!-- fragment --><h1><a class="anchor" id="getting_started_building"></a>
+<div class="fragment"><div class="line">git clone https://github.com/spdk/spdk</div><div class="line">cd spdk</div><div class="line">git submodule update --init</div></div><!-- fragment --><h1><a class="anchor" id="getting_started_prerequisites"></a>
+Installing Prerequisites</h1>
+<div class="fragment"><div class="line">scripts/pkgdep.sh</div></div><!-- fragment --><h1><a class="anchor" id="getting_started_building"></a>
 Building</h1>
 <p>Linux:</p>
 <div class="fragment"><div class="line">./configure</div><div class="line">make</div></div><!-- fragment --><p>FreeBSD: Note: Make sure you have the matching kernel source in /usr/src/</p>
