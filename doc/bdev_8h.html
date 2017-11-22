@@ -176,7 +176,8 @@ Enumerations</h2></td></tr>
 <b>SPDK_BDEV_IO_TYPE_NVME_ADMIN</b>, 
 <b>SPDK_BDEV_IO_TYPE_NVME_IO</b>, 
 <br />
-&#160;&#160;<b>SPDK_BDEV_IO_TYPE_WRITE_ZEROES</b>
+&#160;&#160;<b>SPDK_BDEV_IO_TYPE_NVME_IO_MD</b>, 
+<b>SPDK_BDEV_IO_TYPE_WRITE_ZEROES</b>
 <br />
  }<tr class="memdesc:a633029e24ab5ae4a689bffa2565a519f"><td class="mdescLeft">&#160;</td><td class="mdescRight">bdev I/O type <br /></td></tr>
 </td></tr>
@@ -298,6 +299,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ab172cf6afc9ef154bd823b91b09dee87"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev_8h.html#ab172cf6afc9ef154bd823b91b09dee87">spdk_bdev_nvme_io_passthru</a> (struct spdk_bdev_desc *bdev_desc, struct spdk_io_channel *ch, const struct <a class="el" href="structspdk__nvme__cmd.html">spdk_nvme_cmd</a> *cmd, void *buf, size_t nbytes, <a class="el" href="bdev_8h.html#a0c5602dfd313f90032dd91683b9663e3">spdk_bdev_io_completion_cb</a> cb, void *cb_arg)</td></tr>
 <tr class="memdesc:ab172cf6afc9ef154bd823b91b09dee87"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submit an NVMe I/O command to the bdev.  <a href="#ab172cf6afc9ef154bd823b91b09dee87">More...</a><br /></td></tr>
 <tr class="separator:ab172cf6afc9ef154bd823b91b09dee87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6b5933e4c0b2ad68bad591655b4f9e6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev_8h.html#ac6b5933e4c0b2ad68bad591655b4f9e6">spdk_bdev_nvme_io_passthru_md</a> (struct spdk_bdev_desc *bdev_desc, struct spdk_io_channel *ch, const struct <a class="el" href="structspdk__nvme__cmd.html">spdk_nvme_cmd</a> *cmd, void *buf, size_t nbytes, void *md_buf, size_t md_len, <a class="el" href="bdev_8h.html#a0c5602dfd313f90032dd91683b9663e3">spdk_bdev_io_completion_cb</a> cb, void *cb_arg)</td></tr>
+<tr class="memdesc:ac6b5933e4c0b2ad68bad591655b4f9e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submit an NVMe I/O command to the bdev.  <a href="#ac6b5933e4c0b2ad68bad591655b4f9e6">More...</a><br /></td></tr>
+<tr class="separator:ac6b5933e4c0b2ad68bad591655b4f9e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a536a365e14bc4f3ddf76b9340958ebd8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev_8h.html#a536a365e14bc4f3ddf76b9340958ebd8">spdk_bdev_free_io</a> (struct spdk_bdev_io *bdev_io)</td></tr>
 <tr class="memdesc:a536a365e14bc4f3ddf76b9340958ebd8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Free an I/O request.  <a href="#a536a365e14bc4f3ddf76b9340958ebd8">More...</a><br /></td></tr>
 <tr class="separator:a536a365e14bc4f3ddf76b9340958ebd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1424,6 +1428,95 @@ Functions</h2></td></tr>
     <tr><td class="paramname">cmd</td><td>The raw NVMe command. Must be in the NVM command set. </td></tr>
     <tr><td class="paramname">buf</td><td>Data buffer to written from. </td></tr>
     <tr><td class="paramname">nbytes</td><td>The number of bytes to transfer. buf must be greater than or equal to this size. </td></tr>
+    <tr><td class="paramname">cb</td><td>Called when the request is complete. </td></tr>
+    <tr><td class="paramname">cb_arg</td><td>Argument passed to cb.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success. On success, the callback will always be called (even if the request ultimately failed). Return negated errno on failure, in which case the callback will not be called. </dd></dl>
+
+</div>
+</div>
+<a id="ac6b5933e4c0b2ad68bad591655b4f9e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac6b5933e4c0b2ad68bad591655b4f9e6">&#9670;&nbsp;</a></span>spdk_bdev_nvme_io_passthru_md()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_bdev_nvme_io_passthru_md </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_bdev_desc *&#160;</td>
+          <td class="paramname"><em>bdev_desc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct spdk_io_channel *&#160;</td>
+          <td class="paramname"><em>ch</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const struct <a class="el" href="structspdk__nvme__cmd.html">spdk_nvme_cmd</a> *&#160;</td>
+          <td class="paramname"><em>cmd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>buf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>nbytes</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>md_buf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>md_len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="bdev_8h.html#a0c5602dfd313f90032dd91683b9663e3">spdk_bdev_io_completion_cb</a>&#160;</td>
+          <td class="paramname"><em>cb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>cb_arg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Submit an NVMe I/O command to the bdev. </p>
+<p>This passes directly through the block layer to the device. Support for NVMe passthru is optional, indicated by calling <a class="el" href="bdev_8h.html#a7cd5dff692dc162459801d5649fe7655" title="Check whether the block device supports the I/O type. ">spdk_bdev_io_type_supported()</a>.</p>
+<p>The SGL/PRP will be automated generated based on the given buffer, so that portion of the command may be left empty. Also, the namespace id (nsid) will be populated automatically.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bdev</td><td>Block device </td></tr>
+    <tr><td class="paramname">ch</td><td>I/O channel. Obtained by calling <a class="el" href="bdev_8h.html#ab5bb9e746b030d7c4c89cbcf60076c7e" title="Obtain an I/O channel for the block device opened by the specified descriptor. ">spdk_bdev_get_io_channel()</a>. </td></tr>
+    <tr><td class="paramname">cmd</td><td>The raw NVMe command. Must be in the NVM command set. </td></tr>
+    <tr><td class="paramname">buf</td><td>Data buffer to written from. </td></tr>
+    <tr><td class="paramname">nbytes</td><td>The number of bytes to transfer. buf must be greater than or equal to this size. </td></tr>
+    <tr><td class="paramname">md_buf</td><td>Meta data buffer to written from. </td></tr>
+    <tr><td class="paramname">md_len</td><td>md_buf size to transfer. md_buf must be greater than or equal to this size. </td></tr>
     <tr><td class="paramname">cb</td><td>Called when the request is complete. </td></tr>
     <tr><td class="paramname">cb_arg</td><td>Argument passed to cb.</td></tr>
   </table>

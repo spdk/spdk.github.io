@@ -202,14 +202,14 @@ struct spdk_event *&#160;</td><td class="memItemRight" valign="bottom"><a class=
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="event_8h.html#af17b7963b6a6964e5eb18480193acedb">spdk_event_call</a> (struct spdk_event *event)</td></tr>
 <tr class="memdesc:af17b7963b6a6964e5eb18480193acedb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pass the given event to the associated lcore and call the function. <br /></td></tr>
 <tr class="separator:af17b7963b6a6964e5eb18480193acedb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8621af2d872087cd8518ef93391a8fff"><td class="memItemLeft" align="right" valign="top"><a id="a8621af2d872087cd8518ef93391a8fff"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="event_8h.html#a8621af2d872087cd8518ef93391a8fff">spdk_poller_register</a> (struct spdk_poller **ppoller, spdk_poller_fn fn, void *arg, uint32_t lcore, uint64_t period_microseconds)</td></tr>
-<tr class="memdesc:a8621af2d872087cd8518ef93391a8fff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register a poller on the given lcore. <br /></td></tr>
-<tr class="separator:a8621af2d872087cd8518ef93391a8fff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab0a17ad53e73a18c97c56fe041d4f91d"><td class="memItemLeft" align="right" valign="top"><a id="ab0a17ad53e73a18c97c56fe041d4f91d"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="event_8h.html#ab0a17ad53e73a18c97c56fe041d4f91d">spdk_poller_unregister</a> (struct spdk_poller **ppoller, struct spdk_event *complete)</td></tr>
-<tr class="memdesc:ab0a17ad53e73a18c97c56fe041d4f91d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unregister a poller on the given lcore. <br /></td></tr>
-<tr class="separator:ab0a17ad53e73a18c97c56fe041d4f91d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8ea5c433e7ccdd71335f3be028ca54b"><td class="memItemLeft" align="right" valign="top"><a id="ab8ea5c433e7ccdd71335f3be028ca54b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="event_8h.html#ab8ea5c433e7ccdd71335f3be028ca54b">spdk_poller_register</a> (struct spdk_poller **ppoller, spdk_poller_fn fn, void *arg, uint64_t period_microseconds)</td></tr>
+<tr class="memdesc:ab8ea5c433e7ccdd71335f3be028ca54b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register a poller on the current lcore. <br /></td></tr>
+<tr class="separator:ab8ea5c433e7ccdd71335f3be028ca54b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c26cbd781063f5ee627d6aba2c73fe3"><td class="memItemLeft" align="right" valign="top"><a id="a9c26cbd781063f5ee627d6aba2c73fe3"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="event_8h.html#a9c26cbd781063f5ee627d6aba2c73fe3">spdk_poller_unregister</a> (struct spdk_poller **ppoller)</td></tr>
+<tr class="memdesc:a9c26cbd781063f5ee627d6aba2c73fe3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unregister a poller on the given lcore. <br /></td></tr>
+<tr class="separator:a9c26cbd781063f5ee627d6aba2c73fe3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaceb0151a765d4068be9d37cefe37914"><td class="memItemLeft" align="right" valign="top"><a id="aaceb0151a765d4068be9d37cefe37914"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="event_8h.html#aaceb0151a765d4068be9d37cefe37914">spdk_reactor_enable_context_switch_monitor</a> (bool enabled)</td></tr>
 <tr class="memdesc:aaceb0151a765d4068be9d37cefe37914"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable or disable monitoring of context switches. <br /></td></tr>

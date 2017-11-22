@@ -21,8 +21,8 @@ var event_8h =
     [ "spdk_app_stop", "event_8h.html#a40f3af1c0340f5c3eb915bc43e3cee83", null ],
     [ "spdk_event_allocate", "event_8h.html#a885e8b94b71844c94f0b380afdfa0df9", null ],
     [ "spdk_event_call", "event_8h.html#af17b7963b6a6964e5eb18480193acedb", null ],
-    [ "spdk_poller_register", "event_8h.html#a8621af2d872087cd8518ef93391a8fff", null ],
-    [ "spdk_poller_unregister", "event_8h.html#ab0a17ad53e73a18c97c56fe041d4f91d", null ],
+    [ "spdk_poller_register", "event_8h.html#ab8ea5c433e7ccdd71335f3be028ca54b", null ],
+    [ "spdk_poller_unregister", "event_8h.html#a9c26cbd781063f5ee627d6aba2c73fe3", null ],
     [ "spdk_reactor_context_switch_monitor_enabled", "event_8h.html#a008187a6eceaba982ca2c1d452061931", null ],
     [ "spdk_reactor_enable_context_switch_monitor", "event_8h.html#aaceb0151a765d4068be9d37cefe37914", null ]
 ];
