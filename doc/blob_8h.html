@@ -251,6 +251,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bs_io_writev_blo
 <tr class="memitem:a6b34d86049ce311335300dc1d4bf5c8a"><td class="memItemLeft" align="right" valign="top"><a id="a6b34d86049ce311335300dc1d4bf5c8a"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bs_io_readv_blob</b> (struct spdk_blob *blob, struct spdk_io_channel *channel, struct iovec *iov, int iovcnt, uint64_t offset, uint64_t length, spdk_blob_op_complete cb_fn, void *cb_arg)</td></tr>
 <tr class="separator:a6b34d86049ce311335300dc1d4bf5c8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63c574b3b185e1c1346fefefe3b3cbd3"><td class="memItemLeft" align="right" valign="top"><a id="a63c574b3b185e1c1346fefefe3b3cbd3"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bs_io_unmap_blob</b> (struct spdk_blob *blob, struct spdk_io_channel *channel, uint64_t offset, uint64_t length, spdk_blob_op_complete cb_fn, void *cb_arg)</td></tr>
+<tr class="separator:a63c574b3b185e1c1346fefefe3b3cbd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92380cc88d91e023817ad35957cab3ac"><td class="memItemLeft" align="right" valign="top"><a id="a92380cc88d91e023817ad35957cab3ac"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bs_io_write_zeroes_blob</b> (struct spdk_blob *blob, struct spdk_io_channel *channel, uint64_t offset, uint64_t length, spdk_blob_op_complete cb_fn, void *cb_arg)</td></tr>
+<tr class="separator:a92380cc88d91e023817ad35957cab3ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a39863e810a1fecd7ba38d59d6e5b659a"><td class="memItemLeft" align="right" valign="top"><a id="a39863e810a1fecd7ba38d59d6e5b659a"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bs_md_iter_first</b> (struct spdk_blob_store *bs, spdk_blob_op_with_handle_complete cb_fn, void *cb_arg)</td></tr>
 <tr class="separator:a39863e810a1fecd7ba38d59d6e5b659a"><td class="memSeparator" colspan="2">&#160;</td></tr>

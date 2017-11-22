@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="Content-Type" content="text/xhtml; charset=utf-8">
   <meta name="generator" content="Doxygen 1.8.13">
-  <title>SPDK: spdk_trace_histories Struct Reference</title>
+  <title>SPDK: spdk_trace_flags Struct Reference</title>
   <script type="text/javascript" src="jquery.js"></script>
   <script type="text/javascript" src="dynsections.js"></script>
   <link href="navtree.css" rel="stylesheet" type="text/css"/>
@@ -101,38 +101,44 @@
   </div>
 </div>
 <script type="text/javascript">
-$(document).ready(function(){initNavTree('structspdk__trace__histories.html','');});
+$(document).ready(function(){initNavTree('structspdk__trace__flags.html','');});
 </script>
 <div id="doc-content">
 <div class="header">
   <div class="summary">
 <a href="#pub-attribs">Data Fields</a>  </div>
   <div class="headertitle">
-<div class="title">spdk_trace_histories Struct Reference</div>  </div>
+<div class="title">spdk_trace_flags Struct Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="dynheader">
-Collaboration diagram for spdk_trace_histories:</div>
+Collaboration diagram for spdk_trace_flags:</div>
 <div class="dyncontent">
-<div class="center"><img src="structspdk__trace__histories__coll__graph.png" border="0" usemap="#spdk__trace__histories_coll__map" alt="Collaboration graph"/></div>
-<map name="spdk__trace__histories_coll__map" id="spdk__trace__histories_coll__map">
-<area shape="rect" id="node2" href="structspdk__trace__flags.html" title="spdk_trace_flags" alt="" coords="233,95,354,121"/>
-<area shape="rect" id="node3" href="structspdk__trace__tpoint.html" title="spdk_trace_tpoint" alt="" coords="5,5,131,32"/>
-<area shape="rect" id="node4" href="structspdk__trace__object.html" title="spdk_trace_object" alt="" coords="155,5,283,32"/>
-<area shape="rect" id="node5" href="structspdk__trace__owner.html" title="spdk_trace_owner" alt="" coords="307,5,435,32"/>
-<area shape="rect" id="node6" href="structspdk__trace__history.html" title="spdk_trace_history" alt="" coords="415,95,547,121"/>
-<area shape="rect" id="node7" href="structspdk__trace__entry.html" title="spdk_trace_entry" alt="" coords="459,5,581,32"/>
+<div class="center"><img src="structspdk__trace__flags__coll__graph.png" border="0" usemap="#spdk__trace__flags_coll__map" alt="Collaboration graph"/></div>
+<map name="spdk__trace__flags_coll__map" id="spdk__trace__flags_coll__map">
+<area shape="rect" id="node2" href="structspdk__trace__tpoint.html" title="spdk_trace_tpoint" alt="" coords="5,5,131,32"/>
+<area shape="rect" id="node3" href="structspdk__trace__object.html" title="spdk_trace_object" alt="" coords="155,5,283,32"/>
+<area shape="rect" id="node4" href="structspdk__trace__owner.html" title="spdk_trace_owner" alt="" coords="307,5,435,32"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:a7aefcda50154e7d20f2c0bfdb66285d2"><td class="memItemLeft" align="right" valign="top"><a id="a7aefcda50154e7d20f2c0bfdb66285d2"></a>
-struct <a class="el" href="structspdk__trace__flags.html">spdk_trace_flags</a>&#160;</td><td class="memItemRight" valign="bottom"><b>flags</b></td></tr>
-<tr class="separator:a7aefcda50154e7d20f2c0bfdb66285d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0f5a948ce753c790f2c357bc15a2f0d0"><td class="memItemLeft" align="right" valign="top"><a id="a0f5a948ce753c790f2c357bc15a2f0d0"></a>
-struct <a class="el" href="structspdk__trace__history.html">spdk_trace_history</a>&#160;</td><td class="memItemRight" valign="bottom"><b>per_lcore_history</b> [SPDK_TRACE_MAX_LCORE]</td></tr>
-<tr class="separator:a0f5a948ce753c790f2c357bc15a2f0d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2aaf775673a5e9a1efe443aa8ca7e4f"><td class="memItemLeft" align="right" valign="top"><a id="ae2aaf775673a5e9a1efe443aa8ca7e4f"></a>
+uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>tsc_rate</b></td></tr>
+<tr class="separator:ae2aaf775673a5e9a1efe443aa8ca7e4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b9abc4c75c2d8f28609892e668f393c"><td class="memItemLeft" align="right" valign="top"><a id="a3b9abc4c75c2d8f28609892e668f393c"></a>
+uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>tpoint_mask</b> [SPDK_TRACE_MAX_GROUP_ID]</td></tr>
+<tr class="separator:a3b9abc4c75c2d8f28609892e668f393c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afefc53c12cc20565e7d7e8c49775178f"><td class="memItemLeft" align="right" valign="top"><a id="afefc53c12cc20565e7d7e8c49775178f"></a>
+struct <a class="el" href="structspdk__trace__owner.html">spdk_trace_owner</a>&#160;</td><td class="memItemRight" valign="bottom"><b>owner</b> [UCHAR_MAX+1]</td></tr>
+<tr class="separator:afefc53c12cc20565e7d7e8c49775178f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19f99697c48da079e6dd9802c58a6d90"><td class="memItemLeft" align="right" valign="top"><a id="a19f99697c48da079e6dd9802c58a6d90"></a>
+struct <a class="el" href="structspdk__trace__object.html">spdk_trace_object</a>&#160;</td><td class="memItemRight" valign="bottom"><b>object</b> [UCHAR_MAX+1]</td></tr>
+<tr class="separator:a19f99697c48da079e6dd9802c58a6d90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab799d235068c9b11669b0daeabb08d55"><td class="memItemLeft" align="right" valign="top"><a id="ab799d235068c9b11669b0daeabb08d55"></a>
+struct <a class="el" href="structspdk__trace__tpoint.html">spdk_trace_tpoint</a>&#160;</td><td class="memItemRight" valign="bottom"><b>tpoint</b> [SPDK_TRACE_MAX_TPOINT_ID]</td></tr>
+<tr class="separator:ab799d235068c9b11669b0daeabb08d55"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li><a class="el" href="trace_8h.html">trace.h</a></li>

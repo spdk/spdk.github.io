@@ -19,6 +19,7 @@ var bdev_8h =
       [ "SPDK_BDEV_IO_TYPE_RESET", "bdev_8h.html#a633029e24ab5ae4a689bffa2565a519fa2c98e0128da7b8921933cadac03c2611", null ],
       [ "SPDK_BDEV_IO_TYPE_NVME_ADMIN", "bdev_8h.html#a633029e24ab5ae4a689bffa2565a519faa50f563003db009f2aaa66fc1e8c4b83", null ],
       [ "SPDK_BDEV_IO_TYPE_NVME_IO", "bdev_8h.html#a633029e24ab5ae4a689bffa2565a519fa88e44705d375863181f5b64de01ab415", null ],
+      [ "SPDK_BDEV_IO_TYPE_NVME_IO_MD", "bdev_8h.html#a633029e24ab5ae4a689bffa2565a519faaed3a468fd479a2abb44a4c9354e9130", null ],
       [ "SPDK_BDEV_IO_TYPE_WRITE_ZEROES", "bdev_8h.html#a633029e24ab5ae4a689bffa2565a519fafe05a68dda7f3bdfa3d91bab8a92960a", null ]
     ] ],
     [ "spdk_bdev_status", "bdev_8h.html#ad6c166f5d928c2995df57c96a2977862", [
@@ -55,6 +56,7 @@ var bdev_8h =
     [ "spdk_bdev_next_leaf", "bdev_8h.html#a6ae4a6dad6562cdefd3476ec23bfcccb", null ],
     [ "spdk_bdev_nvme_admin_passthru", "bdev_8h.html#ae2249ef71e7125338b6cebf935a881ab", null ],
     [ "spdk_bdev_nvme_io_passthru", "bdev_8h.html#ab172cf6afc9ef154bd823b91b09dee87", null ],
+    [ "spdk_bdev_nvme_io_passthru_md", "bdev_8h.html#ac6b5933e4c0b2ad68bad591655b4f9e6", null ],
     [ "spdk_bdev_open", "bdev_8h.html#aeacdfd5debd3917d84d18be0277203ff", null ],
     [ "spdk_bdev_read", "bdev_8h.html#a4b500ce84df1d2551f76e635c9dafbd5", null ],
     [ "spdk_bdev_read_blocks", "bdev_8h.html#aeec9efd151e2fb34ee3d22a1edbbb53f", null ],

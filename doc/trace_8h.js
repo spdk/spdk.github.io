@@ -5,6 +5,7 @@ var trace_8h =
     [ "spdk_trace_object", "structspdk__trace__object.html", "structspdk__trace__object" ],
     [ "spdk_trace_tpoint", "structspdk__trace__tpoint.html", "structspdk__trace__tpoint" ],
     [ "spdk_trace_history", "structspdk__trace__history.html", "structspdk__trace__history" ],
+    [ "spdk_trace_flags", "structspdk__trace__flags.html", "structspdk__trace__flags" ],
     [ "spdk_trace_histories", "structspdk__trace__histories.html", "structspdk__trace__histories" ],
     [ "spdk_trace_register_fn", "structspdk__trace__register__fn.html", "structspdk__trace__register__fn" ],
     [ "OBJECT_NONE", "trace_8h.html#a62a0a4288067a361d037ea70b25f44ef", null ],
@@ -20,6 +21,7 @@ var trace_8h =
     [ "spdk_trace_add_register_fn", "trace_8h.html#aa87447ad261172809a5394ee37f601df", null ],
     [ "spdk_trace_cleanup", "trace_8h.html#a7cdec16a6ee14c87b0bf5d0666d9a0cb", null ],
     [ "spdk_trace_clear_tpoints", "trace_8h.html#a7ecb50e2b95e9c75eeddd9884ec0aafe", null ],
+    [ "spdk_trace_flags_init", "trace_8h.html#a5cab6a78e0ce33319f02ea03ba221fc1", null ],
     [ "spdk_trace_get_tpoint_group_mask", "trace_8h.html#aa7331d8e039fadc27049efd27c1d49a8", null ],
     [ "spdk_trace_get_tpoint_mask", "trace_8h.html#a346327ec1addd7eeb87963b40cec1821", null ],
     [ "spdk_trace_init", "trace_8h.html#a7ce968e40aa0ff01b068cef754059526", null ],
@@ -28,5 +30,6 @@ var trace_8h =
     [ "spdk_trace_register_object", "trace_8h.html#a78c1e25f823c6e98da3f99c515715ebe", null ],
     [ "spdk_trace_register_owner", "trace_8h.html#a00597b31c0f7a67d7dbf306cb628e7fc", null ],
     [ "spdk_trace_set_tpoint_group_mask", "trace_8h.html#aa0ade5c1286d121c2eafeae8918169db", null ],
-    [ "spdk_trace_set_tpoints", "trace_8h.html#a6f2131f1fc35d495f51552eb2838630b", null ]
+    [ "spdk_trace_set_tpoints", "trace_8h.html#a6f2131f1fc35d495f51552eb2838630b", null ],
+    [ "g_trace_flags", "trace_8h.html#a92b06e647e386cf0896e0a38499cf494", null ]
 ];
