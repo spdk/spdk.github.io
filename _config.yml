@@ -35,7 +35,7 @@ boxes:
     url: /blog/
     ico: comment
   - title: Roadmap
-    url: https://github.com/spdk/spdk/wiki/Roadmap
+    url: /roadmap/
     ico: map-marker
   - title: News
     url: https://github.com/spdk/spdk/wiki/News
