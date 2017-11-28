@@ -38,7 +38,7 @@ boxes:
     url: /roadmap/
     ico: map-marker
   - title: News
-    url: https://github.com/spdk/spdk/wiki/News
+    url: /news/
     ico: bullhorn
 
 
