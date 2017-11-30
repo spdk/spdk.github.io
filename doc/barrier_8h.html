@@ -129,9 +129,76 @@ Macros</h2></td></tr>
 #define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="barrier_8h.html#a745a3ecabbce4b44d1728d08f9bf8623">spdk_mb</a>()</td></tr>
 <tr class="memdesc:a745a3ecabbce4b44d1728d08f9bf8623"><td class="mdescLeft">&#160;</td><td class="mdescRight">Full read/write memory barrier. <br /></td></tr>
 <tr class="separator:a745a3ecabbce4b44d1728d08f9bf8623"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b87848d3379310e4ade28a63fc038d5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="barrier_8h.html#a9b87848d3379310e4ade28a63fc038d5">spdk_smp_rmb</a>()</td></tr>
+<tr class="memdesc:a9b87848d3379310e4ade28a63fc038d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">SMP read memory barrier.  <a href="#a9b87848d3379310e4ade28a63fc038d5">More...</a><br /></td></tr>
+<tr class="separator:a9b87848d3379310e4ade28a63fc038d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee6be79189ae975da9922c3ff229ded5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="barrier_8h.html#aee6be79189ae975da9922c3ff229ded5">spdk_smp_wmb</a>()</td></tr>
+<tr class="memdesc:aee6be79189ae975da9922c3ff229ded5"><td class="mdescLeft">&#160;</td><td class="mdescRight">SMP write memory barrier.  <a href="#aee6be79189ae975da9922c3ff229ded5">More...</a><br /></td></tr>
+<tr class="separator:aee6be79189ae975da9922c3ff229ded5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07ef3ca027c4f24491ec4114c0e0a727"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="barrier_8h.html#a07ef3ca027c4f24491ec4114c0e0a727">spdk_smp_mb</a>()</td></tr>
+<tr class="memdesc:a07ef3ca027c4f24491ec4114c0e0a727"><td class="mdescLeft">&#160;</td><td class="mdescRight">SMP read/write memory barrier.  <a href="#a07ef3ca027c4f24491ec4114c0e0a727">More...</a><br /></td></tr>
+<tr class="separator:a07ef3ca027c4f24491ec4114c0e0a727"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Memory barriers. </p>
-</div></div><!-- contents -->
+</div><h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="a07ef3ca027c4f24491ec4114c0e0a727"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a07ef3ca027c4f24491ec4114c0e0a727">&#9670;&nbsp;</a></span>spdk_smp_mb</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define spdk_smp_mb</td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SMP read/write memory barrier. </p>
+
+</div>
+</div>
+<a id="a9b87848d3379310e4ade28a63fc038d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9b87848d3379310e4ade28a63fc038d5">&#9670;&nbsp;</a></span>spdk_smp_rmb</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define spdk_smp_rmb</td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SMP read memory barrier. </p>
+
+</div>
+</div>
+<a id="aee6be79189ae975da9922c3ff229ded5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aee6be79189ae975da9922c3ff229ded5">&#9670;&nbsp;</a></span>spdk_smp_wmb</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define spdk_smp_wmb</td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SMP write memory barrier. </p>
+
+</div>
+</div>
+</div><!-- contents -->
 </div><!-- doc-content -->
 </div>

@@ -138,9 +138,6 @@ Typedefs</h2></td></tr>
 <tr class="memitem:a69f0f17c0f9a03840c327672df37b3bb"><td class="memItemLeft" align="right" valign="top"><a id="a69f0f17c0f9a03840c327672df37b3bb"></a>
 typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_event_fn</b>) (void *arg1, void *arg2)</td></tr>
 <tr class="separator:a69f0f17c0f9a03840c327672df37b3bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1c24df11036bbab9b09f0eb704e53343"><td class="memItemLeft" align="right" valign="top"><a id="a1c24df11036bbab9b09f0eb704e53343"></a>
-typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_poller_fn</b>) (void *arg)</td></tr>
-<tr class="separator:a1c24df11036bbab9b09f0eb704e53343"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af7e98d89bfe88c7b9d9ecfc78fac2cd2"><td class="memItemLeft" align="right" valign="top"><a id="af7e98d89bfe88c7b9d9ecfc78fac2cd2"></a>
 typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_app_shutdown_cb</b>) (void)</td></tr>
 <tr class="separator:af7e98d89bfe88c7b9d9ecfc78fac2cd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -202,14 +199,6 @@ struct spdk_event *&#160;</td><td class="memItemRight" valign="bottom"><a class=
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="event_8h.html#af17b7963b6a6964e5eb18480193acedb">spdk_event_call</a> (struct spdk_event *event)</td></tr>
 <tr class="memdesc:af17b7963b6a6964e5eb18480193acedb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pass the given event to the associated lcore and call the function. <br /></td></tr>
 <tr class="separator:af17b7963b6a6964e5eb18480193acedb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab8ea5c433e7ccdd71335f3be028ca54b"><td class="memItemLeft" align="right" valign="top"><a id="ab8ea5c433e7ccdd71335f3be028ca54b"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="event_8h.html#ab8ea5c433e7ccdd71335f3be028ca54b">spdk_poller_register</a> (struct spdk_poller **ppoller, spdk_poller_fn fn, void *arg, uint64_t period_microseconds)</td></tr>
-<tr class="memdesc:ab8ea5c433e7ccdd71335f3be028ca54b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register a poller on the current lcore. <br /></td></tr>
-<tr class="separator:ab8ea5c433e7ccdd71335f3be028ca54b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9c26cbd781063f5ee627d6aba2c73fe3"><td class="memItemLeft" align="right" valign="top"><a id="a9c26cbd781063f5ee627d6aba2c73fe3"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="event_8h.html#a9c26cbd781063f5ee627d6aba2c73fe3">spdk_poller_unregister</a> (struct spdk_poller **ppoller)</td></tr>
-<tr class="memdesc:a9c26cbd781063f5ee627d6aba2c73fe3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unregister a poller on the given lcore. <br /></td></tr>
-<tr class="separator:a9c26cbd781063f5ee627d6aba2c73fe3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaceb0151a765d4068be9d37cefe37914"><td class="memItemLeft" align="right" valign="top"><a id="aaceb0151a765d4068be9d37cefe37914"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="event_8h.html#aaceb0151a765d4068be9d37cefe37914">spdk_reactor_enable_context_switch_monitor</a> (bool enabled)</td></tr>
 <tr class="memdesc:aaceb0151a765d4068be9d37cefe37914"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable or disable monitoring of context switches. <br /></td></tr>

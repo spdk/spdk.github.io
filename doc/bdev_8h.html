@@ -147,15 +147,6 @@ typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_i
 <tr class="memitem:ad33efc88148d8984b353e54b7ee0058f"><td class="memItemLeft" align="right" valign="top"><a id="ad33efc88148d8984b353e54b7ee0058f"></a>
 typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_fini_cb</b>) (void *cb_arg)</td></tr>
 <tr class="separator:ad33efc88148d8984b353e54b7ee0058f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a715b633110065696fa53c518bb411602"><td class="memItemLeft" align="right" valign="top"><a id="a715b633110065696fa53c518bb411602"></a>
-typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_poller_fn</b>) (void *arg)</td></tr>
-<tr class="separator:a715b633110065696fa53c518bb411602"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ace8afc62abda848cac82fdc02604dbcf"><td class="memItemLeft" align="right" valign="top"><a id="ace8afc62abda848cac82fdc02604dbcf"></a>
-typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_poller_start_cb</b>) (struct spdk_bdev_poller **ppoller, spdk_bdev_poller_fn fn, void *arg, uint64_t period_microseconds)</td></tr>
-<tr class="separator:ace8afc62abda848cac82fdc02604dbcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a24b86291d0c4d75ad8b0fc69dc6e9d87"><td class="memItemLeft" align="right" valign="top"><a id="a24b86291d0c4d75ad8b0fc69dc6e9d87"></a>
-typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_poller_stop_cb</b>) (struct spdk_bdev_poller **ppoller)</td></tr>
-<tr class="separator:a24b86291d0c4d75ad8b0fc69dc6e9d87"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
@@ -185,9 +176,9 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a8922cc097ac6ced68ce492e618df1512"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev_8h.html#a8922cc097ac6ced68ce492e618df1512">spdk_bdev_initialize</a> (spdk_bdev_init_cb cb_fn, void *cb_arg, spdk_bdev_poller_start_cb start_poller_fn, spdk_bdev_poller_stop_cb stop_poller_fn)</td></tr>
-<tr class="memdesc:a8922cc097ac6ced68ce492e618df1512"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize block device modules.  <a href="#a8922cc097ac6ced68ce492e618df1512">More...</a><br /></td></tr>
-<tr class="separator:a8922cc097ac6ced68ce492e618df1512"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a854eb960c06597051071023a3d70e887"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev_8h.html#a854eb960c06597051071023a3d70e887">spdk_bdev_initialize</a> (spdk_bdev_init_cb cb_fn, void *cb_arg)</td></tr>
+<tr class="memdesc:a854eb960c06597051071023a3d70e887"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize block device modules.  <a href="#a854eb960c06597051071023a3d70e887">More...</a><br /></td></tr>
+<tr class="separator:a854eb960c06597051071023a3d70e887"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7263aeb5393b46fa5af8e04760f62ea4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev_8h.html#a7263aeb5393b46fa5af8e04760f62ea4">spdk_bdev_finish</a> (spdk_bdev_fini_cb cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:a7263aeb5393b46fa5af8e04760f62ea4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform cleanup work to remove the registered block device modules.  <a href="#a7263aeb5393b46fa5af8e04760f62ea4">More...</a><br /></td></tr>
 <tr class="separator:a7263aeb5393b46fa5af8e04760f62ea4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -997,8 +988,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a8922cc097ac6ced68ce492e618df1512"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8922cc097ac6ced68ce492e618df1512">&#9670;&nbsp;</a></span>spdk_bdev_initialize()</h2>
+<a id="a854eb960c06597051071023a3d70e887"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a854eb960c06597051071023a3d70e887">&#9670;&nbsp;</a></span>spdk_bdev_initialize()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1013,19 +1004,7 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>cb_arg</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">spdk_bdev_poller_start_cb&#160;</td>
-          <td class="paramname"><em>start_poller_fn</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">spdk_bdev_poller_stop_cb&#160;</td>
-          <td class="paramname"><em>stop_poller_fn</em>&#160;</td>
+          <td class="paramname"><em>cb_arg</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1040,8 +1019,6 @@ Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">cb_fn</td><td>Called when the initialization is complete. </td></tr>
     <tr><td class="paramname">cb_arg</td><td>Argument passed to function cb_fn. </td></tr>
-    <tr><td class="paramname">start_poller_fn</td><td>This function is called to request starting a poller. </td></tr>
-    <tr><td class="paramname">stop_poller_fn</td><td>This function is called to request stopping a poller. </td></tr>
   </table>
   </dd>
 </dl>

@@ -124,6 +124,15 @@ typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_thread
 <tr class="memitem:a72dfa5b3490733f3d307d2303a551661"><td class="memItemLeft" align="right" valign="top"><a id="a72dfa5b3490733f3d307d2303a551661"></a>
 typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_thread_pass_msg</b>) (spdk_thread_fn fn, void *ctx, void *thread_ctx)</td></tr>
 <tr class="separator:a72dfa5b3490733f3d307d2303a551661"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a301dae23c95a94def8c7c1b0ed4444a7"><td class="memItemLeft" align="right" valign="top"><a id="a301dae23c95a94def8c7c1b0ed4444a7"></a>
+typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_poller_fn</b>) (void *ctx)</td></tr>
+<tr class="separator:a301dae23c95a94def8c7c1b0ed4444a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f70f5e9b4d498e843f81f1a6ada6370"><td class="memItemLeft" align="right" valign="top"><a id="a6f70f5e9b4d498e843f81f1a6ada6370"></a>
+typedef struct spdk_poller *(*&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_start_poller</b>) (void *thread_ctx, spdk_poller_fn fn, void *arg, uint64_t period_microseconds)</td></tr>
+<tr class="separator:a6f70f5e9b4d498e843f81f1a6ada6370"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adfddbbbb13145f26741106cb8296a05a"><td class="memItemLeft" align="right" valign="top"><a id="adfddbbbb13145f26741106cb8296a05a"></a>
+typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_stop_poller</b>) (struct spdk_poller *poller, void *thread_ctx)</td></tr>
+<tr class="separator:adfddbbbb13145f26741106cb8296a05a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aed1d14292cfee8553d4a1ebb519b210a"><td class="memItemLeft" align="right" valign="top"><a id="aed1d14292cfee8553d4a1ebb519b210a"></a>
 typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_io_channel_create_cb</b>) (void *io_device, void *ctx_buf)</td></tr>
 <tr class="separator:aed1d14292cfee8553d4a1ebb519b210a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -142,9 +151,9 @@ typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_channe
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a42b58701b6440005e866e6e7dd080bae"><td class="memItemLeft" align="right" valign="top">struct spdk_thread *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="io__channel_8h.html#a42b58701b6440005e866e6e7dd080bae">spdk_allocate_thread</a> (spdk_thread_pass_msg fn, void *thread_ctx, const char *name)</td></tr>
-<tr class="memdesc:a42b58701b6440005e866e6e7dd080bae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the calling thread for I/O channel allocation.  <a href="#a42b58701b6440005e866e6e7dd080bae">More...</a><br /></td></tr>
-<tr class="separator:a42b58701b6440005e866e6e7dd080bae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7db1055a27d2ccbd6f0b50a07fa20d0"><td class="memItemLeft" align="right" valign="top">struct spdk_thread *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="io__channel_8h.html#ae7db1055a27d2ccbd6f0b50a07fa20d0">spdk_allocate_thread</a> (spdk_thread_pass_msg msg_fn, spdk_start_poller start_poller_fn, spdk_stop_poller stop_poller_fn, void *thread_ctx, const char *name)</td></tr>
+<tr class="memdesc:ae7db1055a27d2ccbd6f0b50a07fa20d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the calling thread for I/O channel allocation.  <a href="#ae7db1055a27d2ccbd6f0b50a07fa20d0">More...</a><br /></td></tr>
+<tr class="separator:ae7db1055a27d2ccbd6f0b50a07fa20d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adfbbc16ee4c35466974ca6d5b5c6ee7d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="io__channel_8h.html#adfbbc16ee4c35466974ca6d5b5c6ee7d">spdk_free_thread</a> (void)</td></tr>
 <tr class="memdesc:adfbbc16ee4c35466974ca6d5b5c6ee7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Releases any resources related to the calling thread for I/O channel allocation.  <a href="#adfbbc16ee4c35466974ca6d5b5c6ee7d">More...</a><br /></td></tr>
 <tr class="separator:adfbbc16ee4c35466974ca6d5b5c6ee7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -158,6 +167,15 @@ const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <tr class="memitem:a6aa832fea18a9160429b5383f36d8539"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="io__channel_8h.html#a6aa832fea18a9160429b5383f36d8539">spdk_thread_send_msg</a> (const struct spdk_thread *thread, spdk_thread_fn fn, void *ctx)</td></tr>
 <tr class="memdesc:a6aa832fea18a9160429b5383f36d8539"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a message to the given thread.  <a href="#a6aa832fea18a9160429b5383f36d8539">More...</a><br /></td></tr>
 <tr class="separator:a6aa832fea18a9160429b5383f36d8539"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae99d1833df09479af6b53ed605357062"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="io__channel_8h.html#ae99d1833df09479af6b53ed605357062">spdk_for_each_thread</a> (spdk_thread_fn fn, void *ctx, spdk_thread_fn cpl)</td></tr>
+<tr class="memdesc:ae99d1833df09479af6b53ed605357062"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a message to each thread, serially.  <a href="#ae99d1833df09479af6b53ed605357062">More...</a><br /></td></tr>
+<tr class="separator:ae99d1833df09479af6b53ed605357062"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51b50669706fe65ba4f92ffb7d2bad42"><td class="memItemLeft" align="right" valign="top">struct spdk_poller *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="io__channel_8h.html#a51b50669706fe65ba4f92ffb7d2bad42">spdk_poller_register</a> (spdk_thread_fn fn, void *arg, uint64_t period_microseconds)</td></tr>
+<tr class="memdesc:a51b50669706fe65ba4f92ffb7d2bad42"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register a poller on the current thread.  <a href="#a51b50669706fe65ba4f92ffb7d2bad42">More...</a><br /></td></tr>
+<tr class="separator:a51b50669706fe65ba4f92ffb7d2bad42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c26cbd781063f5ee627d6aba2c73fe3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="io__channel_8h.html#a9c26cbd781063f5ee627d6aba2c73fe3">spdk_poller_unregister</a> (struct spdk_poller **ppoller)</td></tr>
+<tr class="memdesc:a9c26cbd781063f5ee627d6aba2c73fe3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unregister a poller on the current thread.  <a href="#a9c26cbd781063f5ee627d6aba2c73fe3">More...</a><br /></td></tr>
+<tr class="separator:a9c26cbd781063f5ee627d6aba2c73fe3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6a0b6fdbfd40673bce799a1a7ebab187"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="io__channel_8h.html#a6a0b6fdbfd40673bce799a1a7ebab187">spdk_io_device_register</a> (void *io_device, spdk_io_channel_create_cb create_cb, spdk_io_channel_destroy_cb destroy_cb, uint32_t ctx_size)</td></tr>
 <tr class="memdesc:a6a0b6fdbfd40673bce799a1a7ebab187"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register the opaque io_device context as an I/O device.  <a href="#a6a0b6fdbfd40673bce799a1a7ebab187">More...</a><br /></td></tr>
 <tr class="separator:a6a0b6fdbfd40673bce799a1a7ebab187"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -188,8 +206,8 @@ struct spdk_thread *&#160;</td><td class="memItemRight" valign="bottom"><a class
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>IO channel. </p>
 </div><h2 class="groupheader">Function Documentation</h2>
-<a id="a42b58701b6440005e866e6e7dd080bae"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a42b58701b6440005e866e6e7dd080bae">&#9670;&nbsp;</a></span>spdk_allocate_thread()</h2>
+<a id="ae7db1055a27d2ccbd6f0b50a07fa20d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae7db1055a27d2ccbd6f0b50a07fa20d0">&#9670;&nbsp;</a></span>spdk_allocate_thread()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -198,7 +216,19 @@ struct spdk_thread *&#160;</td><td class="memItemRight" valign="bottom"><a class
           <td class="memname">struct spdk_thread* spdk_allocate_thread </td>
           <td>(</td>
           <td class="paramtype">spdk_thread_pass_msg&#160;</td>
-          <td class="paramname"><em>fn</em>, </td>
+          <td class="paramname"><em>msg_fn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">spdk_start_poller&#160;</td>
+          <td class="paramname"><em>start_poller_fn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">spdk_stop_poller&#160;</td>
+          <td class="paramname"><em>stop_poller_fn</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -225,7 +255,7 @@ struct spdk_thread *&#160;</td><td class="memItemRight" valign="bottom"><a class
   <table class="params">
     <tr><td class="paramname">fn</td><td>A function that may be called from any thread and is passed a function pointer (spdk_thread_fn) that must be called on the same thread that spdk_allocate_thread was called from. </td></tr>
     <tr><td class="paramname">thread_ctx</td><td>Context that will be passed to fn. </td></tr>
-    <tr><td class="paramname">name</td><td>Human-readable name for the thread; can be retrieved with <a class="el" href="io__channel_8h.html#ae367048fa89366e845d72015064e6f76" title="Get a thread&#39;s name. ">spdk_thread_get_name()</a>. The string is copied, so the pointed-to data only needs to be valid during the <a class="el" href="io__channel_8h.html#a42b58701b6440005e866e6e7dd080bae" title="Initializes the calling thread for I/O channel allocation. ">spdk_allocate_thread()</a> call. May be NULL to specify no name. </td></tr>
+    <tr><td class="paramname">name</td><td>Human-readable name for the thread; can be retrieved with <a class="el" href="io__channel_8h.html#ae367048fa89366e845d72015064e6f76" title="Get a thread&#39;s name. ">spdk_thread_get_name()</a>. The string is copied, so the pointed-to data only needs to be valid during the <a class="el" href="io__channel_8h.html#ae7db1055a27d2ccbd6f0b50a07fa20d0" title="Initializes the calling thread for I/O channel allocation. ">spdk_allocate_thread()</a> call. May be NULL to specify no name. </td></tr>
   </table>
   </dd>
 </dl>
@@ -273,6 +303,51 @@ struct spdk_thread *&#160;</td><td class="memItemRight" valign="bottom"><a class
 <p>Call 'fn' on each channel associated with io_device. </p>
 <p>This happens asynchronously, so fn may be called after spdk_for_each_channel returns. 'fn' will be called on the correct thread for each channel. 'fn' will be called for each channel serially, such that two calls to 'fn' will not overlap in time.</p>
 <p>Once 'fn' has been called on each channel, 'cpl' will be called on the thread that spdk_for_each_channel was initially called from. </p>
+
+</div>
+</div>
+<a id="ae99d1833df09479af6b53ed605357062"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae99d1833df09479af6b53ed605357062">&#9670;&nbsp;</a></span>spdk_for_each_thread()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_for_each_thread </td>
+          <td>(</td>
+          <td class="paramtype">spdk_thread_fn&#160;</td>
+          <td class="paramname"><em>fn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>ctx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">spdk_thread_fn&#160;</td>
+          <td class="paramname"><em>cpl</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Send a message to each thread, serially. </p>
+<p>The message is sent asynchronously - i.e. spdk_for_each_thread will return prior to <code>fn</code> being called on each thread.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fn</td><td>This is the function that will be called on each thread. </td></tr>
+    <tr><td class="paramname">ctx</td><td>This context will be passed to fn when called. </td></tr>
+    <tr><td class="paramname">cpl</td><td>This will be called on the originating thread after <code>fn</code> has been called on each thread. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -432,6 +507,77 @@ struct spdk_thread *&#160;</td><td class="memItemRight" valign="bottom"><a class
 
 <p>Unregister the opaque io_device context as an I/O device. </p>
 <p>The actual unregistration might be deferred until all active I/O channels are destroyed. unregister_cb is an optional callback function invoked to release any references to this I/O device. </p>
+
+</div>
+</div>
+<a id="a51b50669706fe65ba4f92ffb7d2bad42"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a51b50669706fe65ba4f92ffb7d2bad42">&#9670;&nbsp;</a></span>spdk_poller_register()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct spdk_poller* spdk_poller_register </td>
+          <td>(</td>
+          <td class="paramtype">spdk_thread_fn&#160;</td>
+          <td class="paramname"><em>fn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>arg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>period_microseconds</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Register a poller on the current thread. </p>
+<p>The poller can be unregistered by calling <a class="el" href="io__channel_8h.html#a9c26cbd781063f5ee627d6aba2c73fe3" title="Unregister a poller on the current thread. ">spdk_poller_unregister()</a>.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fn</td><td>This function will be called every <code>period_microseconds</code> </td></tr>
+    <tr><td class="paramname">arg</td><td>Passed to fn </td></tr>
+    <tr><td class="paramname">period_microseconds</td><td>How often to call <code>fn</code>. If 0, call <code>fn</code> as often as possible. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a9c26cbd781063f5ee627d6aba2c73fe3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9c26cbd781063f5ee627d6aba2c73fe3">&#9670;&nbsp;</a></span>spdk_poller_unregister()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_poller_unregister </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_poller **&#160;</td>
+          <td class="paramname"><em>ppoller</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Unregister a poller on the current thread. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ppoller</td><td>The poller to unregister. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

@@ -109,9 +109,16 @@ $(document).ready(function(){initNavTree('changelog.html','');});
 <div class="title">Changelog </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h1>v18.01</h1>
+<div class="textblock"><h1><a class="anchor" id="changelog-v18-01"></a>
+v18.01: (Upcoming Release)</h1>
+<h2>Build System</h2>
+<p>The build system now includes a <code>make install</code> rule, including support for the common <code>DESTDIR</code> and <code>prefix</code> variables as used in other build systems. Additionally, the prefix may be set via the configure <code>--prefix</code> option. Example: <code>make install prefix=/usr</code>.</p>
 <h2>RPC</h2>
 <p>A JSON RPC listener is now enabled by default using a UNIX domain socket at /var/run/spdk.sock. A -r option command line option has been added to enable an alternative UNIX domain socket location, or a TCP port in the format ip_addr:tcp_port (i.e. 127.0.0.1:5260). The Rpc configuration file section is now deprecated and will be removed in the v18.04 release.</p>
+<h2>I/O Channels</h2>
+<p><a class="el" href="io__channel_8h.html#a51b50669706fe65ba4f92ffb7d2bad42" title="Register a poller on the current thread. ">spdk_poller_register()</a> and <a class="el" href="io__channel_8h.html#a9c26cbd781063f5ee627d6aba2c73fe3" title="Unregister a poller on the current thread. ">spdk_poller_unregister()</a> were moved from the event framework (<a class="el" href="event_8h.html" title="Event framework public API. ">include/spdk/event.h</a>) to the I/O channel library (<a class="el" href="io__channel_8h.html" title="IO channel. ">include/spdk/io_channel.h</a>). This allows code that doesn't depend on the event framework to request registration and unregistration of pollers.</p>
+<h2>Block Device Abstraction Layer (bdev)</h2>
+<p>The poller abstraction was removed from the bdev layer. There is now a general purpose abstraction for pollers available in <a class="el" href="io__channel_8h.html" title="IO channel. ">include/spdk/io_channel.h</a></p>
 <h1><a class="anchor" id="changelog-v17-10"></a>
 v17.10: Logical Volumes</h1>
 <h2>New dependencies</h2>
