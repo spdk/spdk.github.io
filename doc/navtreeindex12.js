@@ -1,5 +1,7 @@
 var NAVTREEINDEX12 =
 {
+"structspdk__nvme__reservation__status__data.html#abd67ce988e5e680e5a1abd0bacdfe5c3":[20,0,94,0],
+"structspdk__nvme__reservation__status__data.html#ae9baf83c2042297f4af8ff96bfb2c6bc":[20,0,94,1],
 "structspdk__nvme__secondary__ctrl__entry.html":[20,0,95],
 "structspdk__nvme__secondary__ctrl__entry.html#a1058df7181e33bc60bfd6d9782afd673":[20,0,95,8],
 "structspdk__nvme__secondary__ctrl__entry.html#a1ef2a1e2dbe88c04cb6c45341cc8326b":[20,0,95,1],
@@ -247,7 +249,5 @@ var NAVTREEINDEX12 =
 "structspdk__scsi__port__desc.html":[20,0,125],
 "structspdk__scsi__port__desc.html#a1122aceae5f88a71a7dc11ace3c17c7f":[20,0,125,5],
 "structspdk__scsi__port__desc.html#a3af2d30cad186c3639f38cd352cfe8e9":[20,0,125,7],
-"structspdk__scsi__port__desc.html#a3d858684ae76bd76a5cdddd7ef34c9a0":[20,0,125,2],
-"structspdk__scsi__port__desc.html#a55834f658b996093a6c0f16914056757":[20,0,125,6],
-"structspdk__scsi__port__desc.html#aa70015f373882ede492e8e71eec43e6d":[20,0,125,0]
+"structspdk__scsi__port__desc.html#a3d858684ae76bd76a5cdddd7ef34c9a0":[20,0,125,2]
 };

@@ -5,7 +5,6 @@ var event_8h =
     [ "SPDK_DEFAULT_RPC_ADDR", "event_8h.html#ad6d27c63164846e87e44de2f39792024", null ],
     [ "spdk_app_shutdown_cb", "event_8h.html#af7e98d89bfe88c7b9d9ecfc78fac2cd2", null ],
     [ "spdk_event_fn", "event_8h.html#a69f0f17c0f9a03840c327672df37b3bb", null ],
-    [ "spdk_poller_fn", "event_8h.html#a1c24df11036bbab9b09f0eb704e53343", null ],
     [ "spdk_sighandler_t", "event_8h.html#ab62642ed599e28f41f234cbcb7f7ccc7", null ],
     [ "spdk_app_fini", "event_8h.html#ab6ea643e128d25d5ac40e29b76d94c43", null ],
     [ "spdk_app_get_core_count", "event_8h.html#a9981e9474489ae175639d752589f7fa3", null ],
@@ -21,8 +20,6 @@ var event_8h =
     [ "spdk_app_stop", "event_8h.html#a40f3af1c0340f5c3eb915bc43e3cee83", null ],
     [ "spdk_event_allocate", "event_8h.html#a885e8b94b71844c94f0b380afdfa0df9", null ],
     [ "spdk_event_call", "event_8h.html#af17b7963b6a6964e5eb18480193acedb", null ],
-    [ "spdk_poller_register", "event_8h.html#ab8ea5c433e7ccdd71335f3be028ca54b", null ],
-    [ "spdk_poller_unregister", "event_8h.html#a9c26cbd781063f5ee627d6aba2c73fe3", null ],
     [ "spdk_reactor_context_switch_monitor_enabled", "event_8h.html#a008187a6eceaba982ca2c1d452061931", null ],
     [ "spdk_reactor_enable_context_switch_monitor", "event_8h.html#aaceb0151a765d4068be9d37cefe37914", null ]
 ];

@@ -72,13 +72,13 @@
                 </a>
               </li>
               <li role="presentation">
-                <a href="https://github.com/spdk/spdk/wiki/Roadmap">
+                <a href="http://www.spdk.io/roadmap/">
                   <i class="glyphicon glyphicon-map-marker"></i>
                   <span class="box-name">Roadmap</span>
                 </a>
               </li>
               <li role="presentation">
-                <a href="https://github.com/spdk/spdk/wiki/News">
+                <a href="http://www.spdk.io/news/">
                   <i class="glyphicon glyphicon-bullhorn"></i>
                   <span class="box-name">News</span>
                 </a>
@@ -109,7 +109,7 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 
 <h3><a id="index_s"></a>- s -</h3><ul>
 <li>spdk_allocate_thread()
-: <a class="el" href="io__channel_8h.html#a42b58701b6440005e866e6e7dd080bae">io_channel.h</a>
+: <a class="el" href="io__channel_8h.html#ae7db1055a27d2ccbd6f0b50a07fa20d0">io_channel.h</a>
 </li>
 <li>spdk_app_fini()
 : <a class="el" href="event_8h.html#ab6ea643e128d25d5ac40e29b76d94c43">event.h</a>
@@ -208,7 +208,7 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 : <a class="el" href="bdev_8h.html#a93f6d6ce09da384501f09a49581caa37">bdev.h</a>
 </li>
 <li>spdk_bdev_initialize()
-: <a class="el" href="bdev_8h.html#a8922cc097ac6ced68ce492e618df1512">bdev.h</a>
+: <a class="el" href="bdev_8h.html#a854eb960c06597051071023a3d70e887">bdev.h</a>
 </li>
 <li>spdk_bdev_io_completion_cb
 : <a class="el" href="bdev_8h.html#a0c5602dfd313f90032dd91683b9663e3">bdev.h</a>
@@ -395,6 +395,9 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 </li>
 <li>spdk_for_each_channel()
 : <a class="el" href="io__channel_8h.html#aa7a2ca9bd0497544e852c65fd5263cd1">io_channel.h</a>
+</li>
+<li>spdk_for_each_thread()
+: <a class="el" href="io__channel_8h.html#ae99d1833df09479af6b53ed605357062">io_channel.h</a>
 </li>
 <li>spdk_free_thread()
 : <a class="el" href="io__channel_8h.html#adfbbc16ee4c35466974ca6d5b5c6ee7d">io_channel.h</a>
@@ -1131,9 +1134,6 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 <li>spdk_nvmf_poll_group_destroy()
 : <a class="el" href="nvmf_8h.html#aa38d9ac50a79883df08d7faf3a647018">nvmf.h</a>
 </li>
-<li>spdk_nvmf_poll_group_poll()
-: <a class="el" href="nvmf_8h.html#a1030465b2a7b4f29e4c9faa7d7acd0d9">nvmf.h</a>
-</li>
 <li>spdk_nvmf_rdma_cms
 : <a class="el" href="nvmf__spec_8h.html#af113f4f57bccb99a0b89f5c715f1e3c3">nvmf_spec.h</a>
 </li>
@@ -1282,10 +1282,10 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 : <a class="el" href="env_8h.html#a235f1c632be6dc00aad1cf8fd0314609">env.h</a>
 </li>
 <li>spdk_poller_register()
-: <a class="el" href="event_8h.html#ab8ea5c433e7ccdd71335f3be028ca54b">event.h</a>
+: <a class="el" href="io__channel_8h.html#a51b50669706fe65ba4f92ffb7d2bad42">io_channel.h</a>
 </li>
 <li>spdk_poller_unregister()
-: <a class="el" href="event_8h.html#a9c26cbd781063f5ee627d6aba2c73fe3">event.h</a>
+: <a class="el" href="io__channel_8h.html#a9c26cbd781063f5ee627d6aba2c73fe3">io_channel.h</a>
 </li>
 <li>spdk_process_is_primary()
 : <a class="el" href="env_8h.html#a798ae910c8563b33eea17af50cabb1ab">env.h</a>
@@ -1322,6 +1322,15 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 </li>
 <li>spdk_scsi_task_set_data()
 : <a class="el" href="scsi_8h.html#afecbfa80c61a820eea16b1fb9d40ddcf">scsi.h</a>
+</li>
+<li>spdk_smp_mb
+: <a class="el" href="barrier_8h.html#a07ef3ca027c4f24491ec4114c0e0a727">barrier.h</a>
+</li>
+<li>spdk_smp_rmb
+: <a class="el" href="barrier_8h.html#a9b87848d3379310e4ade28a63fc038d5">barrier.h</a>
+</li>
+<li>spdk_smp_wmb
+: <a class="el" href="barrier_8h.html#aee6be79189ae975da9922c3ff229ded5">barrier.h</a>
 </li>
 <li>spdk_sprintf_alloc()
 : <a class="el" href="string_8h.html#ac80f349c77c57bc28690f46e5de7fe03">string.h</a>
