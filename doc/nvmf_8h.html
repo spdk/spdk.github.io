@@ -147,10 +147,6 @@ struct spdk_nvmf_poll_group *&#160;</td><td class="memItemRight" valign="bottom"
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#aa38d9ac50a79883df08d7faf3a647018">spdk_nvmf_poll_group_destroy</a> (struct spdk_nvmf_poll_group *group)</td></tr>
 <tr class="memdesc:aa38d9ac50a79883df08d7faf3a647018"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy a poll group. <br /></td></tr>
 <tr class="separator:aa38d9ac50a79883df08d7faf3a647018"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1030465b2a7b4f29e4c9faa7d7acd0d9"><td class="memItemLeft" align="right" valign="top"><a id="a1030465b2a7b4f29e4c9faa7d7acd0d9"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#a1030465b2a7b4f29e4c9faa7d7acd0d9">spdk_nvmf_poll_group_poll</a> (struct spdk_nvmf_poll_group *group)</td></tr>
-<tr class="memdesc:a1030465b2a7b4f29e4c9faa7d7acd0d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check a poll group for work completions. <br /></td></tr>
-<tr class="separator:a1030465b2a7b4f29e4c9faa7d7acd0d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8963c7c607e75faac576ed9e1ecd4417"><td class="memItemLeft" align="right" valign="top"><a id="a8963c7c607e75faac576ed9e1ecd4417"></a>
 struct spdk_nvmf_subsystem *&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvmf_create_subsystem</b> (struct spdk_nvmf_tgt *tgt, const char *nqn, enum <a class="el" href="nvmf__spec_8h.html#a808272f050cc373f3a90871c1528afd4">spdk_nvmf_subtype</a> type, uint32_t num_ns)</td></tr>
 <tr class="separator:a8963c7c607e75faac576ed9e1ecd4417"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -200,9 +196,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvmf_delete_subs
 <tr class="memitem:a6d20b0173b3c6047ad15d5972af867c5"><td class="memItemLeft" align="right" valign="top">const struct <a class="el" href="structspdk__nvme__transport__id.html">spdk_nvme_transport_id</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#a6d20b0173b3c6047ad15d5972af867c5">spdk_nvmf_listener_get_trid</a> (struct spdk_nvmf_listener *listener)</td></tr>
 <tr class="memdesc:a6d20b0173b3c6047ad15d5972af867c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a listen address' transport ID.  <a href="#a6d20b0173b3c6047ad15d5972af867c5">More...</a><br /></td></tr>
 <tr class="separator:a6d20b0173b3c6047ad15d5972af867c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a39d21724c9334371d989bba4fa1f20f8"><td class="memItemLeft" align="right" valign="top"><a id="a39d21724c9334371d989bba4fa1f20f8"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvmf_subsystem_poll</b> (struct spdk_nvmf_subsystem *subsystem)</td></tr>
-<tr class="separator:a39d21724c9334371d989bba4fa1f20f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0603a4fbabccbaa9d72780eca7c08420"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#a0603a4fbabccbaa9d72780eca7c08420">spdk_nvmf_subsystem_add_ns</a> (struct spdk_nvmf_subsystem *subsystem, struct spdk_bdev *bdev, uint32_t nsid)</td></tr>
 <tr class="memdesc:a0603a4fbabccbaa9d72780eca7c08420"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a namespace to a subsytem.  <a href="#a0603a4fbabccbaa9d72780eca7c08420">More...</a><br /></td></tr>
 <tr class="separator:a0603a4fbabccbaa9d72780eca7c08420"><td class="memSeparator" colspan="2">&#160;</td></tr>
