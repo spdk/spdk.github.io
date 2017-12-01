@@ -109,21 +109,17 @@ $(document).ready(function(){initNavTree('vhost.html','');});
 <div class="title">vhost </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h1><a class="anchor" id="vhost_getting_started"></a>
-Getting Started Guide</h1>
+<div class="textblock"><h1><a class="anchor" id="vhost_users_guide"></a>
+vhost Users Guide</h1>
 <p>The Storage Performance Development Kit vhost application is named <code>vhost</code>. This application extends SPDK to present virtio storage controllers to QEMU-based VMs and process I/O submitted to devices attached to those controllers.</p>
 <h1><a class="anchor" id="vhost_prereqs"></a>
 Prerequisites</h1>
-<p>The base SPDK build instructions are located in README.md in the SPDK root directory. This guide assumes familiarity with building SPDK using the default options.</p>
-<p>If you want to kill the application using signal, make sure use the SIGTERM, then the application will release all the share memory resource before exit, the SIGKILL will make the share memory resource have no chance to be released by application, you may need to release the resource manually.</p>
+<p>This guide assumes the SPDK has been built according to the instructions in <a class="el" href="getting_started.html">Getting Started</a>. The SPDK vhost target is built with the default configure options.</p>
 <h2>Supported Guest Operating Systems</h2>
-<p>The guest OS must contain virtio drivers. The SPDK vhost target has been tested with Ubuntu 16.04, Fedora 25, Windows 2012 R2.</p>
-<h1>Building</h1>
-<h2>SPDK</h2>
-<p>The vhost target is built by default. Once built, the binary will be at <code>app/vhost/vhost</code>.</p>
+<p>The guest OS must contain virtio-scsi or virtio-blk drivers. Most Linux and FreeBSD distributions include virtio drivers. <a href="https://fedoraproject.org/wiki/Windows_Virtio_Drivers">Windows virtio drivers</a> must be installed separately. The SPDK vhost target has been tested with Ubuntu 16.04, Fedora 25, and Windows 2012 R2.</p>
 <h2>QEMU</h2>
-<p>Vhost functionality is dependent on QEMU patches to enable virtio-scsi and virtio-blk in userspace - those patches are currently working their way through the QEMU mailing list, but temporary patches to enable this functionality are available in the spdk branch at <a href="https://github.com/spdk/qemu">https://github.com/spdk/qemu</a>.</p>
-<h1><a class="anchor" id="vhost_config"></a>
+<p>Userspace vhost-scsi target support was added to upstream QEMU in v2.10.0. Userspace vhost-blk target support is not yet upstream in QEMU, but patches are available in SPDK's QEMU repository:</p>
+<div class="fragment"><div class="line">git clone -b spdk https://github.com/spdk/qemu</div><div class="line">cd qemu</div><div class="line">mkdir build</div><div class="line">cd build</div><div class="line">../configure</div><div class="line">make</div></div><!-- fragment --><h1><a class="anchor" id="vhost_config"></a>
 Configuration</h1>
 <h2>SPDK</h2>
 <p>A vhost-specific configuration file is used to configure the SPDK vhost target. A fully documented example configuration file is located at <code>etc/spdk/vhost.conf.in</code>. This file defines the following:</p>

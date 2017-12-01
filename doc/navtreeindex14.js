@@ -1,7 +1,5 @@
 var NAVTREEINDEX14 =
 {
-"unionspdk__nvme__vs__register.html#a607eecc53661c6bb736ace86c1ca38bf":[20,0,100,3],
-"unionspdk__nvme__vs__register.html#af3cf51c1c70771d507686f9a5979ab39":[20,0,100,2],
 "unionspdk__nvmf__rdma__private__data.html":[20,0,113],
 "unionspdk__nvmf__rdma__private__data.html#a12eb26a169c9c79b890f3c9ae77fa5da":[20,0,113,2],
 "unionspdk__nvmf__rdma__private__data.html#a45b093b37ee0fa095571310d812c00b0":[20,0,113,0],
@@ -39,8 +37,8 @@ var NAVTREEINDEX14 =
 "vhost.html#vhost_bugs":[18,4],
 "vhost.html#vhost_config":[18,2],
 "vhost.html#vhost_example":[18,3],
-"vhost.html#vhost_getting_started":[18,0],
 "vhost.html#vhost_prereqs":[18,1],
+"vhost.html#vhost_users_guide":[18,0],
 "vhost_8h.html":[21,0,40],
 "vhost_8h.html#a00178efa7b9bb183f3ac43312328fae8":[21,0,40,14],
 "vhost_8h.html#a01b54a11439216fb05196474e3ee20d1":[21,0,40,11],

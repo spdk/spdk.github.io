@@ -112,7 +112,33 @@ $(document).ready(function(){initNavTree('jsonrpc.html','');});
 <div class="textblock"><h1><a class="anchor" id="jsonrpc_overview"></a>
 Overview</h1>
 <p>SPDK implements a <a href="http://www.jsonrpc.org/specification">JSON-RPC 2.0</a> server to allow external management tools to dynamically configure SPDK components.</p>
-<h1><a class="anchor" id="jsonrpc_components_nvmf_tgt"></a>
+<h1><a class="anchor" id="jsonrpc_components_app"></a>
+App Framework</h1>
+<h2><a class="anchor" id="rpc_kill_instance"></a>
+kill_instance</h2>
+<p>Send a signal to the application.</p>
+<h3>Parameters</h3>
+<table class="doxtable">
+<tr>
+<th>Name </th><th>Optional </th><th>Type </th><th>Description  </th></tr>
+<tr>
+<td>sig_name </td><td>Required </td><td>string </td><td>Signal to send (SIGINT, SIGTERM, SIGQUIT, SIGHUP, or SIGKILL) </td></tr>
+</table>
+<h3>Example</h3>
+<p>Example request: </p><div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;method&quot;: &quot;kill_instance&quot;,</div><div class="line">  &quot;params&quot;: {</div><div class="line">    &quot;sig_name&quot;: &quot;SIGINT&quot;</div><div class="line">  }</div><div class="line">}</div></div><!-- fragment --><p>Example response: </p><div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: true</div><div class="line">}</div></div><!-- fragment --><h2><a class="anchor" id="rpc_context_switch_monitor"></a>
+context_switch_monitor</h2>
+<p>Query, enable, or disable the context switch monitoring functionality.</p>
+<h3>Parameters</h3>
+<table class="doxtable">
+<tr>
+<th>Name </th><th>Optional </th><th>Type </th><th>Description  </th></tr>
+<tr>
+<td>enabled </td><td>Optional </td><td>boolean </td><td>Enable (<code>true</code>) or disable (<code>false</code>) monitoring (omit this parameter to query the current state) </td></tr>
+</table>
+<h3>Response</h3>
+<p>The current state of context switch monitoring is returned as a boolean.</p>
+<h3>Example</h3>
+<p>Example request: </p><div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;method&quot;: &quot;context_switch_monitor&quot;,</div><div class="line">  &quot;params&quot;: {</div><div class="line">    &quot;enabled&quot;: false</div><div class="line">  }</div><div class="line">}</div></div><!-- fragment --><p>Example response: </p><div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: false</div><div class="line">}</div></div><!-- fragment --><h1><a class="anchor" id="jsonrpc_components_nvmf_tgt"></a>
 NVMe-oF Target</h1>
 <h2><a class="anchor" id="rpc_get_nvmf_subsystems"></a>
 get_nvmf_subsystems method</h2>
