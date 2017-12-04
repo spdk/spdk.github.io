@@ -1,0 +1,55 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "f7290ebf_a330129f",
+        "filename": "_posts/2017-12-04-17.10_release.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 72,
+      "author": {
+        "id": 1010531
+      },
+      "writtenOn": "2017-12-04T18:10:54Z",
+      "side": 1,
+      "message": "Should we comment on why we added this? (division is expensive)",
+      "revId": "5d52730f46cd83bfdf3d2f9dec42395e17882d6d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9d40f611_9cecfefc",
+        "filename": "_posts/2017-12-04-17.10_release.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 103,
+      "author": {
+        "id": 1010531
+      },
+      "writtenOn": "2017-12-04T18:10:54Z",
+      "side": 1,
+      "message": "Maybe explain that spdk_nvme_probe performs parallel initialization of devices and should still be used when connecting to more than one device?",
+      "revId": "5d52730f46cd83bfdf3d2f9dec42395e17882d6d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "816eb0ea_4cba1f27",
+        "filename": "_posts/2017-12-04-17.10_release.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 136,
+      "author": {
+        "id": 1010531
+      },
+      "writtenOn": "2017-12-04T18:10:54Z",
+      "side": 1,
+      "message": "on a device",
+      "revId": "5d52730f46cd83bfdf3d2f9dec42395e17882d6d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
