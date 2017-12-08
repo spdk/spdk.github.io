@@ -9,6 +9,7 @@ var scsi__spec_8h =
     [ "spdk_scsi_tgt_port_desc", "structspdk__scsi__tgt__port__desc.html", "structspdk__scsi__tgt__port__desc" ],
     [ "spdk_scsi_port_desc", "structspdk__scsi__port__desc.html", "structspdk__scsi__port__desc" ],
     [ "spdk_scsi_unmap_bdesc", "structspdk__scsi__unmap__bdesc.html", "structspdk__scsi__unmap__bdesc" ],
+    [ "SPDK_SBC_START_STOP_UNIT_START_BIT", "scsi__spec_8h.html#a135606383acc072af7daf5a4ea3be5d4", null ],
     [ "SPDK_SCSI_GROUP_MASK", "scsi__spec_8h.html#af125f2e99a82db78a3fe9563bd0f02c9", null ],
     [ "SPDK_SCSI_OPCODE_MASK", "scsi__spec_8h.html#af993a050a0bdd0d520b7fdcbbb32d98a", null ],
     [ "SPDK_SCSI_UNMAP_FULL_PROVISIONING", "scsi__spec_8h.html#a9ce5efad4ede9be1c925a88289612bf5", null ],

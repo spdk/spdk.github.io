@@ -119,6 +119,8 @@ v18.01: (Upcoming Release)</h1>
 <p><a class="el" href="io__channel_8h.html#a51b50669706fe65ba4f92ffb7d2bad42" title="Register a poller on the current thread. ">spdk_poller_register()</a> and <a class="el" href="io__channel_8h.html#a9c26cbd781063f5ee627d6aba2c73fe3" title="Unregister a poller on the current thread. ">spdk_poller_unregister()</a> were moved from the event framework (<a class="el" href="event_8h.html" title="Event framework public API. ">include/spdk/event.h</a>) to the I/O channel library (<a class="el" href="io__channel_8h.html" title="IO channel. ">include/spdk/io_channel.h</a>). This allows code that doesn't depend on the event framework to request registration and unregistration of pollers.</p>
 <h2>Block Device Abstraction Layer (bdev)</h2>
 <p>The poller abstraction was removed from the bdev layer. There is now a general purpose abstraction for pollers available in <a class="el" href="io__channel_8h.html" title="IO channel. ">include/spdk/io_channel.h</a></p>
+<h2>NVMe Driver</h2>
+<p>The logic which support hotplug of vfio-attached devices has been implemented in SPDK, but to totally enable this feature, there is still some work need to be done for kernel vfio-pci driver. vfio-pci driver should trigger one "remove" uevent at the very beginning of the remove interface of pci driver, this will make sure the SPDK could detect the event and release the vfio-attached device Fd and related resource when the device removed.</p>
 <h1><a class="anchor" id="changelog-v17-10"></a>
 v17.10: Logical Volumes</h1>
 <h2>New dependencies</h2>

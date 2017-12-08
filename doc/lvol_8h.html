@@ -159,9 +159,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a9f7032fa38dc1af638910018e07b0dd4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lvol_8h.html#a9f7032fa38dc1af638910018e07b0dd4">spdk_lvs_unload</a> (struct spdk_lvol_store *lvol_store, <a class="el" href="lvol_8h.html#a76f85d046acb7b35ae36dc83cf337075">spdk_lvs_op_complete</a> cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:a9f7032fa38dc1af638910018e07b0dd4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unloads lvolstore.  <a href="#a9f7032fa38dc1af638910018e07b0dd4">More...</a><br /></td></tr>
 <tr class="separator:a9f7032fa38dc1af638910018e07b0dd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a53359d9a346da4b1216b2335ffc0ec8e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lvol_8h.html#a53359d9a346da4b1216b2335ffc0ec8e">spdk_lvs_destroy</a> (struct spdk_lvol_store *lvol_store, bool unmap_device, <a class="el" href="lvol_8h.html#a76f85d046acb7b35ae36dc83cf337075">spdk_lvs_op_complete</a> cb_fn, void *cb_arg)</td></tr>
-<tr class="memdesc:a53359d9a346da4b1216b2335ffc0ec8e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy lvolstore.  <a href="#a53359d9a346da4b1216b2335ffc0ec8e">More...</a><br /></td></tr>
-<tr class="separator:a53359d9a346da4b1216b2335ffc0ec8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2c5d67c2711ee149784f5e5e5be0b7a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lvol_8h.html#ac2c5d67c2711ee149784f5e5e5be0b7a">spdk_lvs_destroy</a> (struct spdk_lvol_store *lvol_store, <a class="el" href="lvol_8h.html#a76f85d046acb7b35ae36dc83cf337075">spdk_lvs_op_complete</a> cb_fn, void *cb_arg)</td></tr>
+<tr class="memdesc:ac2c5d67c2711ee149784f5e5e5be0b7a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy lvolstore.  <a href="#ac2c5d67c2711ee149784f5e5e5be0b7a">More...</a><br /></td></tr>
+<tr class="separator:ac2c5d67c2711ee149784f5e5e5be0b7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a416357d9c44b93ef7b3e5c9a49c91f97"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lvol_8h.html#a416357d9c44b93ef7b3e5c9a49c91f97">spdk_lvol_create</a> (struct spdk_lvol_store *lvs, const char *name, uint64_t sz, <a class="el" href="lvol_8h.html#a453c8a7896aafb644e21e1e960ab3759">spdk_lvol_op_with_handle_complete</a> cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:a416357d9c44b93ef7b3e5c9a49c91f97"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create lvol on given lvolstore with specified size.  <a href="#a416357d9c44b93ef7b3e5c9a49c91f97">More...</a><br /></td></tr>
 <tr class="separator:a416357d9c44b93ef7b3e5c9a49c91f97"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -453,8 +453,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_lvol_open</b> (s
 
 </div>
 </div>
-<a id="a53359d9a346da4b1216b2335ffc0ec8e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a53359d9a346da4b1216b2335ffc0ec8e">&#9670;&nbsp;</a></span>spdk_lvs_destroy()</h2>
+<a id="ac2c5d67c2711ee149784f5e5e5be0b7a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac2c5d67c2711ee149784f5e5e5be0b7a">&#9670;&nbsp;</a></span>spdk_lvs_destroy()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -464,12 +464,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_lvol_open</b> (s
           <td>(</td>
           <td class="paramtype">struct spdk_lvol_store *&#160;</td>
           <td class="paramname"><em>lvol_store</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>unmap_device</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -496,7 +490,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_lvol_open</b> (s
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">lvol_store</td><td>Handle to lvolstore </td></tr>
-    <tr><td class="paramname">umap_device</td><td>When set to true, unmaps whole lvolstore, otherwise writes zeros in first block </td></tr>
     <tr><td class="paramname">cb_fn</td><td>Completion callback </td></tr>
     <tr><td class="paramname">cb_arg</td><td>Completion callback custom arguments </td></tr>
   </table>

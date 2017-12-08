@@ -19,7 +19,7 @@ var blob_8h =
     [ "spdk_blob_md_remove_xattr", "blob_8h.html#afa64067c735f485d58cea9e926c24594", null ],
     [ "spdk_blob_md_set_xattr", "blob_8h.html#a02de150eff39a120cb806bfb8ed78bf1", null ],
     [ "spdk_bs_alloc_io_channel", "blob_8h.html#a24d2b11e6038ad7367c796c6917d44b8", null ],
-    [ "spdk_bs_destroy", "blob_8h.html#a83df78a754482855b3a1231661e7571d", null ],
+    [ "spdk_bs_destroy", "blob_8h.html#a0ba54d7b0d88a136bbfc9f93bc10b87d", null ],
     [ "spdk_bs_free_cluster_count", "blob_8h.html#a8d03f0499e552b6e858b7c52abcc0820", null ],
     [ "spdk_bs_free_io_channel", "blob_8h.html#a90cc7c570fc82adf69ab87d277e580a3", null ],
     [ "spdk_bs_get_bstype", "blob_8h.html#a1407ae1ce3b0fc57a6ee52cf119f9772", null ],
