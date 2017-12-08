@@ -147,6 +147,14 @@ struct spdk_nvmf_poll_group *&#160;</td><td class="memItemRight" valign="bottom"
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#aa38d9ac50a79883df08d7faf3a647018">spdk_nvmf_poll_group_destroy</a> (struct spdk_nvmf_poll_group *group)</td></tr>
 <tr class="memdesc:aa38d9ac50a79883df08d7faf3a647018"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy a poll group. <br /></td></tr>
 <tr class="separator:aa38d9ac50a79883df08d7faf3a647018"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37eea41a3c3856e0ea2cd383af20183d"><td class="memItemLeft" align="right" valign="top"><a id="a37eea41a3c3856e0ea2cd383af20183d"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#a37eea41a3c3856e0ea2cd383af20183d">spdk_nvmf_poll_group_add</a> (struct spdk_nvmf_poll_group *group, struct spdk_nvmf_qpair *qpair)</td></tr>
+<tr class="memdesc:a37eea41a3c3856e0ea2cd383af20183d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add the given qpair to the poll group. <br /></td></tr>
+<tr class="separator:a37eea41a3c3856e0ea2cd383af20183d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c8c8e47ef4cae153de3ac1e90961c86"><td class="memItemLeft" align="right" valign="top"><a id="a1c8c8e47ef4cae153de3ac1e90961c86"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#a1c8c8e47ef4cae153de3ac1e90961c86">spdk_nvmf_poll_group_remove</a> (struct spdk_nvmf_poll_group *group, struct spdk_nvmf_qpair *qpair)</td></tr>
+<tr class="memdesc:a1c8c8e47ef4cae153de3ac1e90961c86"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove the given qpair from the poll group. <br /></td></tr>
+<tr class="separator:a1c8c8e47ef4cae153de3ac1e90961c86"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8963c7c607e75faac576ed9e1ecd4417"><td class="memItemLeft" align="right" valign="top"><a id="a8963c7c607e75faac576ed9e1ecd4417"></a>
 struct spdk_nvmf_subsystem *&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvmf_create_subsystem</b> (struct spdk_nvmf_tgt *tgt, const char *nqn, enum <a class="el" href="nvmf__spec_8h.html#a808272f050cc373f3a90871c1528afd4">spdk_nvmf_subtype</a> type, uint32_t num_ns)</td></tr>
 <tr class="separator:a8963c7c607e75faac576ed9e1ecd4417"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -154,12 +162,6 @@ struct spdk_nvmf_subsystem *&#160;</td><td class="memItemRight" valign="bottom">
 struct spdk_nvmf_subsystem *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#aae62b7fa6ac05a6ad022007f60068d16">spdk_nvmf_tgt_find_subsystem</a> (struct spdk_nvmf_tgt *tgt, const char *subnqn)</td></tr>
 <tr class="memdesc:aae62b7fa6ac05a6ad022007f60068d16"><td class="mdescLeft">&#160;</td><td class="mdescRight">Search the target for a subsystem with the given NQN. <br /></td></tr>
 <tr class="separator:aae62b7fa6ac05a6ad022007f60068d16"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:accc21256a81f2052aad9a3476edbc503"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#accc21256a81f2052aad9a3476edbc503">spdk_nvmf_subsystem_start</a> (struct spdk_nvmf_subsystem *subsystem)</td></tr>
-<tr class="memdesc:accc21256a81f2052aad9a3476edbc503"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the subsystem on the thread that will be used to poll it.  <a href="#accc21256a81f2052aad9a3476edbc503">More...</a><br /></td></tr>
-<tr class="separator:accc21256a81f2052aad9a3476edbc503"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a46d0c549ba3c8d63946f8db64a69fefb"><td class="memItemLeft" align="right" valign="top"><a id="a46d0c549ba3c8d63946f8db64a69fefb"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvmf_subsystem_stop</b> (struct spdk_nvmf_subsystem *subsystem)</td></tr>
-<tr class="separator:a46d0c549ba3c8d63946f8db64a69fefb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a753fbab408ada8ce95321e20d8f2893c"><td class="memItemLeft" align="right" valign="top"><a id="a753fbab408ada8ce95321e20d8f2893c"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvmf_delete_subsystem</b> (struct spdk_nvmf_subsystem *subsystem)</td></tr>
 <tr class="separator:a753fbab408ada8ce95321e20d8f2893c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -835,32 +837,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvmf_ctrlr_disco
   <table class="params">
     <tr><td class="paramname">subsystem</td><td>Subsystem to modify. </td></tr>
     <tr><td class="paramname">allow_any_host</td><td>true to allow any host to connect to this subsystem, or false to enforce the whitelist configured with <a class="el" href="nvmf_8h.html#a19b3442b7eb75c234c3e3090d2b5add3" title="Allow the given host NQN to connect to the given subsystem. ">spdk_nvmf_subsystem_add_host()</a>. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="accc21256a81f2052aad9a3476edbc503"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#accc21256a81f2052aad9a3476edbc503">&#9670;&nbsp;</a></span>spdk_nvmf_subsystem_start()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int spdk_nvmf_subsystem_start </td>
-          <td>(</td>
-          <td class="paramtype">struct spdk_nvmf_subsystem *&#160;</td>
-          <td class="paramname"><em>subsystem</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Initialize the subsystem on the thread that will be used to poll it. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">subsystem</td><td>Subsystem that will be polled on this core. </td></tr>
   </table>
   </dd>
 </dl>

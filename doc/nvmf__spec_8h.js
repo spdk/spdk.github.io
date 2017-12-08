@@ -64,16 +64,15 @@ var nvmf__spec_8h =
       [ "SPDK_NVMF_RDMA_QPTYPE_RELIABLE_CONNECTED", "nvmf__spec_8h.html#a9909d207f41934dacbc0917f083f2d43a3eb3364c76409d13b5365f076ce28387", null ],
       [ "SPDK_NVMF_RDMA_QPTYPE_RELIABLE_DATAGRAM", "nvmf__spec_8h.html#a9909d207f41934dacbc0917f083f2d43a07d9bc576d05772139a68c6e02e48429", null ]
     ] ],
-    [ "spdk_nvmf_rdma_transport_errors", "nvmf__spec_8h.html#a6922f0a1b760377ce197c45e27c5a6f1", [
-      [ "SPDK_NVMF_RDMA_ERROR_INVALID_PRIVATE_DATA_LENGTH", "nvmf__spec_8h.html#a6922f0a1b760377ce197c45e27c5a6f1aef5f61aabd0a9046e9e45bdd24baeba3", null ],
-      [ "SPDK_NVMF_RDMA_ERROR_INVALID_RECFMT", "nvmf__spec_8h.html#a6922f0a1b760377ce197c45e27c5a6f1a233f4113c80ccc4592ea178d4828a8cd", null ],
-      [ "SPDK_NVMF_RDMA_ERROR_INVALID_QID", "nvmf__spec_8h.html#a6922f0a1b760377ce197c45e27c5a6f1af49eed96e52ef88c8f40275137d14f1c", null ],
-      [ "SPDK_NVMF_RDMA_ERROR_INVALID_HSQSIZE", "nvmf__spec_8h.html#a6922f0a1b760377ce197c45e27c5a6f1acc5919f0b166d548bc57204deecc1628", null ],
-      [ "SPDK_NVMF_RDMA_ERROR_INVALID_HRQSIZE", "nvmf__spec_8h.html#a6922f0a1b760377ce197c45e27c5a6f1a8c9e6b6a89fe12dea55d6b0d4631c925", null ],
-      [ "SPDK_NVMF_RDMA_ERROR_NO_RESOURCES", "nvmf__spec_8h.html#a6922f0a1b760377ce197c45e27c5a6f1a4438cc664cb0cb88ad7f6988d5b48068", null ],
-      [ "SPDK_NVMF_RDMA_ERROR_INVALID_IRD", "nvmf__spec_8h.html#a6922f0a1b760377ce197c45e27c5a6f1aae1be6679ca39cd543e30b1e8900aec7", null ],
-      [ "SPDK_NVMF_RDMA_ERROR_INVALID_ORD", "nvmf__spec_8h.html#a6922f0a1b760377ce197c45e27c5a6f1abc92526b5d7aa90664446653a773b86c", null ],
-      [ "SPDK_NVMF_RDMA_ERROR_INVALID_CNTLID", "nvmf__spec_8h.html#a6922f0a1b760377ce197c45e27c5a6f1af5675cf96c2ebe702dc6dc6e969d38f3", null ]
+    [ "spdk_nvmf_rdma_transport_error", "nvmf__spec_8h.html#ae7f76294d6aefedd28e4656b263324b8", [
+      [ "SPDK_NVMF_RDMA_ERROR_INVALID_PRIVATE_DATA_LENGTH", "nvmf__spec_8h.html#ae7f76294d6aefedd28e4656b263324b8aef5f61aabd0a9046e9e45bdd24baeba3", null ],
+      [ "SPDK_NVMF_RDMA_ERROR_INVALID_RECFMT", "nvmf__spec_8h.html#ae7f76294d6aefedd28e4656b263324b8a233f4113c80ccc4592ea178d4828a8cd", null ],
+      [ "SPDK_NVMF_RDMA_ERROR_INVALID_QID", "nvmf__spec_8h.html#ae7f76294d6aefedd28e4656b263324b8af49eed96e52ef88c8f40275137d14f1c", null ],
+      [ "SPDK_NVMF_RDMA_ERROR_INVALID_HSQSIZE", "nvmf__spec_8h.html#ae7f76294d6aefedd28e4656b263324b8acc5919f0b166d548bc57204deecc1628", null ],
+      [ "SPDK_NVMF_RDMA_ERROR_INVALID_HRQSIZE", "nvmf__spec_8h.html#ae7f76294d6aefedd28e4656b263324b8a8c9e6b6a89fe12dea55d6b0d4631c925", null ],
+      [ "SPDK_NVMF_RDMA_ERROR_NO_RESOURCES", "nvmf__spec_8h.html#ae7f76294d6aefedd28e4656b263324b8a4438cc664cb0cb88ad7f6988d5b48068", null ],
+      [ "SPDK_NVMF_RDMA_ERROR_INVALID_IRD", "nvmf__spec_8h.html#ae7f76294d6aefedd28e4656b263324b8aae1be6679ca39cd543e30b1e8900aec7", null ],
+      [ "SPDK_NVMF_RDMA_ERROR_INVALID_ORD", "nvmf__spec_8h.html#ae7f76294d6aefedd28e4656b263324b8abc92526b5d7aa90664446653a773b86c", null ]
     ] ],
     [ "spdk_nvmf_subtype", "nvmf__spec_8h.html#a808272f050cc373f3a90871c1528afd4", [
       [ "SPDK_NVMF_SUBTYPE_DISCOVERY", "nvmf__spec_8h.html#a808272f050cc373f3a90871c1528afd4a8daee5a10ca6d8e4116a52c4e4428948", null ],

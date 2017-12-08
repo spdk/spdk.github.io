@@ -170,7 +170,7 @@ $(document).ready(function(){initNavTree('blob.html','');});
 &lt;blob-descriptor&gt; ::= &lt;blob-descriptor-type&gt; &lt;blob-descriptor-length&gt;
                         &lt;blob-descriptor-data&gt;
 &lt;blob-descriptor-type&gt; ::= u8 # 0 means padding, 1 means "extent", 2 means
-                              # xattr. The type
+                              # xattr, 3 means flags. The type
                               # describes how to interpret the descriptor data.
 &lt;blob-descriptor-length&gt; ::= u32 # Length of the entire descriptor
 
@@ -186,6 +186,12 @@ $(document).ready(function(){initNavTree('blob.html','');});
 &lt;xattr-value-length&gt; ::= u16
 &lt;xattr-name&gt; ::= u8*
 &lt;xattr-value&gt; ::= u8*
+
+&lt;blob-descriptor-data-flags&gt; ::= &lt;flags-invalid&gt; &lt;flags-data-ro&gt; &lt;flags-md-ro&gt;
+
+&lt;flags-invalid&gt; ::= u64
+&lt;flags-data-ro&gt; ::= u64
+&lt;flags-md-ro&gt; ::= u64
 
 &lt;blob-next&gt; ::= u32 # The offset into the metadata region that contains the
                     # next page of metadata. 0 means no next page.
