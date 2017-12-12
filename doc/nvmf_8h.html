@@ -107,6 +107,7 @@ $(document).ready(function(){initNavTree('nvmf_8h.html','');});
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Data Structures</a> &#124;
+<a href="#typedef-members">Typedefs</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">nvmf.h File Reference</div>  </div>
@@ -120,6 +121,12 @@ $(document).ready(function(){initNavTree('nvmf_8h.html','');});
 Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvmf__tgt__opts.html">spdk_nvmf_tgt_opts</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:a83e558236353a3b94992d2e604f4b660"><td class="memItemLeft" align="right" valign="top"><a id="a83e558236353a3b94992d2e604f4b660"></a>
+typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>new_qpair_fn</b>) (struct spdk_nvmf_qpair *qpair)</td></tr>
+<tr class="separator:a83e558236353a3b94992d2e604f4b660"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -135,10 +142,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvmf_tgt_opts_in
 <tr class="memitem:ac6b8416b526f4b1ee76abd82fe588c3b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#ac6b8416b526f4b1ee76abd82fe588c3b">spdk_nvmf_tgt_listen</a> (struct spdk_nvmf_tgt *tgt, struct <a class="el" href="structspdk__nvme__transport__id.html">spdk_nvme_transport_id</a> *trid)</td></tr>
 <tr class="memdesc:ac6b8416b526f4b1ee76abd82fe588c3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Begin accepting new connections at the address provided.  <a href="#ac6b8416b526f4b1ee76abd82fe588c3b">More...</a><br /></td></tr>
 <tr class="separator:ac6b8416b526f4b1ee76abd82fe588c3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abe57cf127dca189496274350584cc783"><td class="memItemLeft" align="right" valign="top"><a id="abe57cf127dca189496274350584cc783"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#abe57cf127dca189496274350584cc783">spdk_nvmf_tgt_accept</a> (struct spdk_nvmf_tgt *tgt)</td></tr>
-<tr class="memdesc:abe57cf127dca189496274350584cc783"><td class="mdescLeft">&#160;</td><td class="mdescRight">Poll the target for incoming connections. <br /></td></tr>
-<tr class="separator:abe57cf127dca189496274350584cc783"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaffa201e13c1a8ee55c74fc0a928908e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#aaffa201e13c1a8ee55c74fc0a928908e">spdk_nvmf_tgt_accept</a> (struct spdk_nvmf_tgt *tgt, new_qpair_fn cb_fn)</td></tr>
+<tr class="memdesc:aaffa201e13c1a8ee55c74fc0a928908e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Poll the target for incoming connections.  <a href="#aaffa201e13c1a8ee55c74fc0a928908e">More...</a><br /></td></tr>
+<tr class="separator:aaffa201e13c1a8ee55c74fc0a928908e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3b1de2ab69c992ce2c732c354a08238f"><td class="memItemLeft" align="right" valign="top"><a id="a3b1de2ab69c992ce2c732c354a08238f"></a>
 struct spdk_nvmf_poll_group *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#a3b1de2ab69c992ce2c732c354a08238f">spdk_nvmf_poll_group_create</a> (struct spdk_nvmf_tgt *tgt)</td></tr>
 <tr class="memdesc:a3b1de2ab69c992ce2c732c354a08238f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a poll group. <br /></td></tr>
@@ -162,6 +168,12 @@ struct spdk_nvmf_subsystem *&#160;</td><td class="memItemRight" valign="bottom">
 struct spdk_nvmf_subsystem *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#aae62b7fa6ac05a6ad022007f60068d16">spdk_nvmf_tgt_find_subsystem</a> (struct spdk_nvmf_tgt *tgt, const char *subnqn)</td></tr>
 <tr class="memdesc:aae62b7fa6ac05a6ad022007f60068d16"><td class="mdescLeft">&#160;</td><td class="mdescRight">Search the target for a subsystem with the given NQN. <br /></td></tr>
 <tr class="separator:aae62b7fa6ac05a6ad022007f60068d16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad345ad71bb7813f2f65b09875b688917"><td class="memItemLeft" align="right" valign="top">struct spdk_nvmf_subsystem *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#ad345ad71bb7813f2f65b09875b688917">spdk_nvmf_subsystem_get_first</a> (struct spdk_nvmf_tgt *tgt)</td></tr>
+<tr class="memdesc:ad345ad71bb7813f2f65b09875b688917"><td class="mdescLeft">&#160;</td><td class="mdescRight">Begin iterating over all known subsystems.  <a href="#ad345ad71bb7813f2f65b09875b688917">More...</a><br /></td></tr>
+<tr class="separator:ad345ad71bb7813f2f65b09875b688917"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f4f438960707410f3a85258137cf9d3"><td class="memItemLeft" align="right" valign="top">struct spdk_nvmf_subsystem *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#a8f4f438960707410f3a85258137cf9d3">spdk_nvmf_subsystem_get_next</a> (struct spdk_nvmf_subsystem *subsystem)</td></tr>
+<tr class="memdesc:a8f4f438960707410f3a85258137cf9d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Continue iterating over all known subsystems.  <a href="#a8f4f438960707410f3a85258137cf9d3">More...</a><br /></td></tr>
+<tr class="separator:a8f4f438960707410f3a85258137cf9d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a753fbab408ada8ce95321e20d8f2893c"><td class="memItemLeft" align="right" valign="top"><a id="a753fbab408ada8ce95321e20d8f2893c"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvmf_delete_subsystem</b> (struct spdk_nvmf_subsystem *subsystem)</td></tr>
 <tr class="separator:a753fbab408ada8ce95321e20d8f2893c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -497,6 +509,27 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvmf_ctrlr_disco
 
 </div>
 </div>
+<a id="ad345ad71bb7813f2f65b09875b688917"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad345ad71bb7813f2f65b09875b688917">&#9670;&nbsp;</a></span>spdk_nvmf_subsystem_get_first()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct spdk_nvmf_subsystem* spdk_nvmf_subsystem_get_first </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_nvmf_tgt *&#160;</td>
+          <td class="paramname"><em>tgt</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Begin iterating over all known subsystems. </p>
+<p>If no subsystems are present, return NULL. </p>
+
+</div>
+</div>
 <a id="a40147e6c89b37d85b2cce4cdb05ce787"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a40147e6c89b37d85b2cce4cdb05ce787">&#9670;&nbsp;</a></span>spdk_nvmf_subsystem_get_first_host()</h2>
 
@@ -575,6 +608,27 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvmf_ctrlr_disco
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>First allocated namespace in this subsystem, or NULL if this subsystem has no namespaces. </dd></dl>
+
+</div>
+</div>
+<a id="a8f4f438960707410f3a85258137cf9d3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f4f438960707410f3a85258137cf9d3">&#9670;&nbsp;</a></span>spdk_nvmf_subsystem_get_next()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct spdk_nvmf_subsystem* spdk_nvmf_subsystem_get_next </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_nvmf_subsystem *&#160;</td>
+          <td class="paramname"><em>subsystem</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Continue iterating over all known subsystems. </p>
+<p>If no additional subsystems, return NULL. </p>
 
 </div>
 </div>
@@ -840,6 +894,37 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvmf_ctrlr_disco
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="aaffa201e13c1a8ee55c74fc0a928908e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaffa201e13c1a8ee55c74fc0a928908e">&#9670;&nbsp;</a></span>spdk_nvmf_tgt_accept()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_nvmf_tgt_accept </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_nvmf_tgt *&#160;</td>
+          <td class="paramname"><em>tgt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">new_qpair_fn&#160;</td>
+          <td class="paramname"><em>cb_fn</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Poll the target for incoming connections. </p>
+<p>The new_qpair_fn cb_fn will be called for each newly discovered qpair. The user is expected to add that qpair to a poll group to establish the connection. </p>
 
 </div>
 </div>
