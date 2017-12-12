@@ -1,5 +1,8 @@
 var NAVTREEINDEX3 =
 {
+"jsonrpc.html":[12],
+"jsonrpc.html#jsonrpc_components_app":[12,1],
+"jsonrpc.html#jsonrpc_components_nvmf_tgt":[12,2],
 "jsonrpc.html#jsonrpc_overview":[12,0],
 "jsonrpc.html#rpc_construct_nvmf_subsystem":[12,2,1],
 "jsonrpc.html#rpc_construct_nvmf_subsystem_listen_address":[12,2,1,0],
@@ -246,8 +249,5 @@ var NAVTREEINDEX3 =
 "nvme__intel_8h.html#a7f5517cb75a665779de307347ea8e044af0fada21976bc2a0687fcdc2bedcba7a":[21,0,28,11,4],
 "nvme__intel_8h.html#a7f5517cb75a665779de307347ea8e044afb767749343c20696a3ce72d203070d8":[21,0,28,11,3],
 "nvme__intel_8h.html#a8590a0662351fb8dcd56415f6f71237c":[21,0,28,23],
-"nvme__intel_8h.html#a96436820e4ac1912844178fce3b41256":[21,0,28,24],
-"nvme__intel_8h.html#aa3dfd12361a175359f7ae4ad323735d8":[21,0,28,15],
-"nvme__intel_8h.html#ad27edc140a0ad1ac8bc4d9d1677b9f5b":[21,0,28,20],
-"nvme__intel_8h.html#ad6d7bd8cb8b6d7176ac72178df8a0700":[21,0,28,13]
+"nvme__intel_8h.html#a96436820e4ac1912844178fce3b41256":[21,0,28,24]
 };

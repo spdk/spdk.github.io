@@ -148,6 +148,9 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
+<tr class="memitem:a039d3ef1514e326b6c2d8a527f6a6aaa"><td class="memItemLeft" align="right" valign="top">typedef void()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_8h.html#a039d3ef1514e326b6c2d8a527f6a6aaa">spdk_mempool_obj_cb_t</a>(struct spdk_mempool *mp, void *opaque, void *obj, unsigned obj_idx)</td></tr>
+<tr class="memdesc:a039d3ef1514e326b6c2d8a527f6a6aaa"><td class="mdescLeft">&#160;</td><td class="mdescRight">An object callback function for mempool.  <a href="#a039d3ef1514e326b6c2d8a527f6a6aaa">More...</a><br /></td></tr>
+<tr class="separator:a039d3ef1514e326b6c2d8a527f6a6aaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0083ace78471c3d3d247e21e4968d526"><td class="memItemLeft" align="right" valign="top"><a id="a0083ace78471c3d3d247e21e4968d526"></a>
 typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><b>thread_start_fn</b>) (void *)</td></tr>
 <tr class="separator:a0083ace78471c3d3d247e21e4968d526"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -215,6 +218,13 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_
 <tr class="memitem:a8d4f7842191990b49694495bba10fcbd"><td class="memItemLeft" align="right" valign="top">struct spdk_mempool *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_8h.html#a8d4f7842191990b49694495bba10fcbd">spdk_mempool_create</a> (const char *name, size_t count, size_t ele_size, size_t cache_size, int socket_id)</td></tr>
 <tr class="memdesc:a8d4f7842191990b49694495bba10fcbd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a thread-safe memory pool.  <a href="#a8d4f7842191990b49694495bba10fcbd">More...</a><br /></td></tr>
 <tr class="separator:a8d4f7842191990b49694495bba10fcbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8981c2ba451d7214e157708a718db6c9"><td class="memItemLeft" align="right" valign="top">struct spdk_mempool *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_8h.html#a8981c2ba451d7214e157708a718db6c9">spdk_mempool_create_ctor</a> (const char *name, size_t count, size_t ele_size, size_t cache_size, int socket_id, <a class="el" href="env_8h.html#a039d3ef1514e326b6c2d8a527f6a6aaa">spdk_mempool_obj_cb_t</a> *obj_init, void *obj_init_arg)</td></tr>
+<tr class="memdesc:a8981c2ba451d7214e157708a718db6c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a thread-safe memory pool with user provided initialization function and argument.  <a href="#a8981c2ba451d7214e157708a718db6c9">More...</a><br /></td></tr>
+<tr class="separator:a8981c2ba451d7214e157708a718db6c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef50d2e8f2d7fccfd5c5edf95e5013d2"><td class="memItemLeft" align="right" valign="top"><a id="aef50d2e8f2d7fccfd5c5edf95e5013d2"></a>
+char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_8h.html#aef50d2e8f2d7fccfd5c5edf95e5013d2">spdk_mempool_get_name</a> (struct spdk_mempool *mp)</td></tr>
+<tr class="memdesc:aef50d2e8f2d7fccfd5c5edf95e5013d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the name of a mempool. <br /></td></tr>
+<tr class="separator:aef50d2e8f2d7fccfd5c5edf95e5013d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab9d2feacf9f6979db875add06ab06494"><td class="memItemLeft" align="right" valign="top"><a id="ab9d2feacf9f6979db875add06ab06494"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_8h.html#ab9d2feacf9f6979db875add06ab06494">spdk_mempool_free</a> (struct spdk_mempool *mp)</td></tr>
 <tr class="memdesc:ab9d2feacf9f6979db875add06ab06494"><td class="mdescLeft">&#160;</td><td class="mdescRight">Free a memory pool. <br /></td></tr>
@@ -450,6 +460,24 @@ uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 <b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">for</span> (i = <a class="code" href="env_8h.html#a2127ecc88ceb8e4b1242c316634de50e">spdk_env_get_first_core</a>();     \</div><div class="line">             i &lt; UINT32_MAX;                    \</div><div class="line">             i = <a class="code" href="env_8h.html#ab480f817ecdd801a0e53a4d8494ffc67">spdk_env_get_next_core</a>(i))</div><div class="ttc" id="env_8h_html_ab480f817ecdd801a0e53a4d8494ffc67"><div class="ttname"><a href="env_8h.html#ab480f817ecdd801a0e53a4d8494ffc67">spdk_env_get_next_core</a></div><div class="ttdeci">uint32_t spdk_env_get_next_core(uint32_t prev_core)</div><div class="ttdoc">Return the index of the next dedicated CPU core for this application. </div></div>
 <div class="ttc" id="env_8h_html_a2127ecc88ceb8e4b1242c316634de50e"><div class="ttname"><a href="env_8h.html#a2127ecc88ceb8e4b1242c316634de50e">spdk_env_get_first_core</a></div><div class="ttdeci">uint32_t spdk_env_get_first_core(void)</div><div class="ttdoc">Return the index of the first dedicated CPU core for this application. </div></div>
 </div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Typedef Documentation</h2>
+<a id="a039d3ef1514e326b6c2d8a527f6a6aaa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a039d3ef1514e326b6c2d8a527f6a6aaa">&#9670;&nbsp;</a></span>spdk_mempool_obj_cb_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void() spdk_mempool_obj_cb_t(struct spdk_mempool *mp, void *opaque, void *obj, unsigned obj_idx)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An object callback function for mempool. </p>
+<p>Used by spdk_mempool_create_ctor </p>
+
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
@@ -944,6 +972,74 @@ uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
   <table class="params">
     <tr><td class="paramname">cache_size</td><td>How many elements may be cached in per-core caches. Use SPDK_MEMPOOL_DEFAULT_CACHE_SIZE for a reasonable default, or 0 for no per-core cache. </td></tr>
     <tr><td class="paramname">socket_id</td><td>Socket ID to allocate memory on, or SPDK_ENV_SOCKET_ID_ANY for any socket. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a8981c2ba451d7214e157708a718db6c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8981c2ba451d7214e157708a718db6c9">&#9670;&nbsp;</a></span>spdk_mempool_create_ctor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct spdk_mempool* spdk_mempool_create_ctor </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>count</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>ele_size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>cache_size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>socket_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="env_8h.html#a039d3ef1514e326b6c2d8a527f6a6aaa">spdk_mempool_obj_cb_t</a> *&#160;</td>
+          <td class="paramname"><em>obj_init</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>obj_init_arg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Create a thread-safe memory pool with user provided initialization function and argument. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cache_size</td><td>How many elements may be cached in per-core caches. Use SPDK_MEMPOOL_DEFAULT_CACHE_SIZE for a reasonable default, or 0 for no per-core cache. </td></tr>
+    <tr><td class="paramname">socket_id</td><td>Socket ID to allocate memory on, or SPDK_ENV_SOCKET_ID_ANY for any socket. </td></tr>
+    <tr><td class="paramname">obj_init</td><td>User provided object calll back initialization function.  obj_init_arg User provided callback initialization function argument. </td></tr>
   </table>
   </dd>
 </dl>

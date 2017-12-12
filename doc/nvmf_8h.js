@@ -1,6 +1,7 @@
 var nvmf_8h =
 [
     [ "spdk_nvmf_tgt_opts", "structspdk__nvmf__tgt__opts.html", "structspdk__nvmf__tgt__opts" ],
+    [ "new_qpair_fn", "nvmf_8h.html#a83e558236353a3b94992d2e604f4b660", null ],
     [ "spdk_nvmf_create_subsystem", "nvmf_8h.html#a8963c7c607e75faac576ed9e1ecd4417", null ],
     [ "spdk_nvmf_ctrlr_disconnect", "nvmf_8h.html#aed3b8dfc91405cbc6423ab1d642e6337", null ],
     [ "spdk_nvmf_delete_subsystem", "nvmf_8h.html#a753fbab408ada8ce95321e20d8f2893c", null ],
@@ -17,9 +18,11 @@ var nvmf_8h =
     [ "spdk_nvmf_subsystem_add_listener", "nvmf_8h.html#a46521b556107a0ab58998adfeee8795f", null ],
     [ "spdk_nvmf_subsystem_add_ns", "nvmf_8h.html#a0603a4fbabccbaa9d72780eca7c08420", null ],
     [ "spdk_nvmf_subsystem_get_allow_any_host", "nvmf_8h.html#abc793839e2268a097f97962e79e4a1ef", null ],
+    [ "spdk_nvmf_subsystem_get_first", "nvmf_8h.html#ad345ad71bb7813f2f65b09875b688917", null ],
     [ "spdk_nvmf_subsystem_get_first_host", "nvmf_8h.html#a40147e6c89b37d85b2cce4cdb05ce787", null ],
     [ "spdk_nvmf_subsystem_get_first_listener", "nvmf_8h.html#ab1bccfb86fd4d727c2943ab810d5d862", null ],
     [ "spdk_nvmf_subsystem_get_first_ns", "nvmf_8h.html#ab797c6df2dc8fab9833de1711b6fe7f4", null ],
+    [ "spdk_nvmf_subsystem_get_next", "nvmf_8h.html#a8f4f438960707410f3a85258137cf9d3", null ],
     [ "spdk_nvmf_subsystem_get_next_host", "nvmf_8h.html#a5265a9a3d6338c43d9fa03afd1fa9b12", null ],
     [ "spdk_nvmf_subsystem_get_next_listener", "nvmf_8h.html#ae1230525414309c87409b28484bdf964", null ],
     [ "spdk_nvmf_subsystem_get_next_ns", "nvmf_8h.html#a7c2d718965cc1e681bb1cc081a377882", null ],
@@ -31,7 +34,7 @@ var nvmf_8h =
     [ "spdk_nvmf_subsystem_listener_allowed", "nvmf_8h.html#aafcef3c424a983337eaa28ff71e03e2e", null ],
     [ "spdk_nvmf_subsystem_set_allow_any_host", "nvmf_8h.html#a6f326a7fb95352af81b3ae8b6518b16c", null ],
     [ "spdk_nvmf_subsystem_set_sn", "nvmf_8h.html#abb053c9573460d29898b184957ce05fd", null ],
-    [ "spdk_nvmf_tgt_accept", "nvmf_8h.html#abe57cf127dca189496274350584cc783", null ],
+    [ "spdk_nvmf_tgt_accept", "nvmf_8h.html#aaffa201e13c1a8ee55c74fc0a928908e", null ],
     [ "spdk_nvmf_tgt_create", "nvmf_8h.html#aa056e2c70b80bd611e21a815eae000e0", null ],
     [ "spdk_nvmf_tgt_destroy", "nvmf_8h.html#a46973ac11e8b70770b0b4cc8f65a74f7", null ],
     [ "spdk_nvmf_tgt_find_subsystem", "nvmf_8h.html#aae62b7fa6ac05a6ad022007f60068d16", null ],
