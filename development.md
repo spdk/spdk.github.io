@@ -38,6 +38,9 @@ ongoing work, please keep an eye out for those items.
 * Developers do not need to add specific reviewers to patches, the maintainers and everyone else in the community
 should always be on the lookout for incoming patches. If a developer would like to be added to a review, or would like
 a specific person added to their patch, they should feel free to do so.
+* Be sure to address all comments when others review your patch. It's a good idea to mark every comment as either 'Done'
+or with an explanation, if needed, as to how the comment was addressed. Reviewers must always review the code though and
+not count on the developer marking an item as 'Done' when reviewing updated patches.
 * There’s no min or max time for the lifecycle of a patch, depending on a variety of factors a patch may go through
 in hours or possibly weeks or longer. How efficiently our community operates is a direct result of how well our
 community developers interact with each other.
