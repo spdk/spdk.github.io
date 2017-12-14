@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "0c81a21e_1806b07c",
+        "filename": "development.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 40,
+      "author": {
+        "id": 1010531
+      },
+      "writtenOn": "2017-12-14T16:38:46Z",
+      "side": 1,
+      "message": "My vote is for the following:\n\n* All comments on code reviews must be addressed prior to the patch being merged. Comments can be addressed by making code changes or by replying to the comment.",
+      "revId": "b9fd30bcc2fd00089c6e4ebc828c80e0f70c74c9",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
