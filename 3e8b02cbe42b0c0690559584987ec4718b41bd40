@@ -1,0 +1,157 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "30eee464_d7fc9afd",
+        "filename": "development.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 266,
+      "author": {
+        "id": 1010531
+      },
+      "writtenOn": "2017-12-15T22:12:26Z",
+      "side": 1,
+      "message": "I\u0027d almost go further and drop the \"One of\" here. The primary responsibility of an SPDK core maintainer is reviewing and approving patches.",
+      "revId": "3e8b02cbe42b0c0690559584987ec4718b41bd40",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "a22fa587_c9628e5b",
+        "filename": "development.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 270,
+      "author": {
+        "id": 1010531
+      },
+      "writtenOn": "2017-12-15T22:12:26Z",
+      "side": 1,
+      "message": "with which",
+      "revId": "3e8b02cbe42b0c0690559584987ec4718b41bd40",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "d76e323c_611f657f",
+        "filename": "development.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 272,
+      "author": {
+        "id": 1010531
+      },
+      "writtenOn": "2017-12-15T22:12:26Z",
+      "side": 1,
+      "message": "circumstances and at",
+      "revId": "3e8b02cbe42b0c0690559584987ec4718b41bd40",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "83891564_d5cd875e",
+        "filename": "development.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 276,
+      "author": {
+        "id": 1010531
+      },
+      "writtenOn": "2017-12-15T22:12:26Z",
+      "side": 1,
+      "message": "I\u0027d start each element in the list with a capitalized word",
+      "revId": "3e8b02cbe42b0c0690559584987ec4718b41bd40",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "6e3b31aa_43cc16c4",
+        "filename": "development.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 277,
+      "author": {
+        "id": 1010531
+      },
+      "writtenOn": "2017-12-15T22:12:26Z",
+      "side": 1,
+      "message": "make -\u003e making to match the other verb tenses",
+      "revId": "3e8b02cbe42b0c0690559584987ec4718b41bd40",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9fa3e664_2a67c1a5",
+        "filename": "development.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 279,
+      "author": {
+        "id": 1010531
+      },
+      "writtenOn": "2017-12-15T22:12:26Z",
+      "side": 1,
+      "message": "time spent reviewing patches is listed above as the primary responsibility - it doesn\u0027t need to also be in the other responsibilities list.",
+      "revId": "3e8b02cbe42b0c0690559584987ec4718b41bd40",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "38776270_f0964bd9",
+        "filename": "development.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 280,
+      "author": {
+        "id": 1010531
+      },
+      "writtenOn": "2017-12-15T22:12:26Z",
+      "side": 1,
+      "message": "Maybe: Fostering a positive, productive community",
+      "revId": "3e8b02cbe42b0c0690559584987ec4718b41bd40",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "673093be_771b6662",
+        "filename": "development.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 281,
+      "author": {
+        "id": 1010531
+      },
+      "writtenOn": "2017-12-15T22:12:26Z",
+      "side": 1,
+      "message": "Defining the project roadmap",
+      "revId": "3e8b02cbe42b0c0690559584987ec4718b41bd40",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "2cf21495_af1ce3b9",
+        "filename": "development.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 282,
+      "author": {
+        "id": 1010531
+      },
+      "writtenOn": "2017-12-15T22:12:26Z",
+      "side": 1,
+      "message": "Identifying and organizing development tasks",
+      "revId": "3e8b02cbe42b0c0690559584987ec4718b41bd40",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
