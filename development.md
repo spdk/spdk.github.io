@@ -15,6 +15,7 @@ title:  "SPDK Development"
 * [Code Review](#review)
 * [Revising Patches](#revise)
 * [Multi-Commit Patch Series](#multi)
+* [Core Maintainers](#core)
 
 <a id="license"></a>
 ## License
@@ -43,6 +44,8 @@ code changes or by replying to the comment.
 * There’s no min or max time for the lifecycle of a patch, depending on a variety of factors a patch may go through
 in hours or possibly weeks or longer. How efficiently our community operates is a direct result of how well our
 community developers interact with each other.
+* Patch authors, including code maintainers, may not vote +1 or +2 on their own patches.  They may vote -1 on
+their own patches to signify that the patch should not be committed.
 
 <a id="source"></a>
 ## Source Code
@@ -60,8 +63,8 @@ Everyone is welcome to contribute! Design pre-work and general discussion occurs
 communications channels described on the [Community](/community/) page.
 
 Patch submission is done through GerritHub where patches are voted on by everyone in the community.
-A patch requires a minimum of two +2 votes before it will be merged. +2 votes are reserved for
-the project maintainers who can also be found on the mailing list or in IRC.
+A patch usually requires a minimum of two +2 votes before it will be merged. +2 votes are reserved for
+the [core maintainers](#core) who can be contacted on the mailing list or in IRC.
 
 <a id="gerrithub"></a>
 ## GerritHub Configuration
@@ -252,3 +255,31 @@ git rebase -i tmp # Move change #3 on top of the new change #2
 git push review
 git branch -D tmp # Clean up the 'tmp' branch
 ~~~
+
+<a id="core"></a>
+## Core Maintainers
+
+The SPDK core maintainers primary responsibility is to provide technical oversight for the SPDK Project.
+The current list of SPDK core maintainers includes:
+
+* Jim Harris
+* Daniel Verkamp
+* Ben Walker
+
+The bulk of this technical oversight is achieved through reviewing and approving patches.  Patches
+must receive +2 votes from two core maintainers and a +1 vote from the SPDK automated test pool before
+it can be committed.  Only core maintainers have the ability to add a +2 vote and commit patches.  Core
+maintainers may also vote +1 on patches if they have reviewed the patch but cannot provide an expert opinion
+in an area of code with which they are not as familiar.
+
+Under rare circumstances and at the discretion of a core maintainer, a patch may be committed with only one
++2 vote.
+
+Other roles and responsibilities of the core maintainers include:
+
+* Setting code review and development guidelines
+* Making decisions on community processes
+* Role modeling good development practices
+* Fostering a positive, productive community
+* Defining the project roadmap
+* Identifying and organizing development tasks
