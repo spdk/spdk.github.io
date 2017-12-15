@@ -2,6 +2,23 @@
   "comments": [
     {
       "key": {
+        "uuid": "b3af9651_9383bac4",
+        "filename": "development.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 265,
+      "author": {
+        "id": 1010525
+      },
+      "writtenOn": "2017-12-15T22:14:50Z",
+      "side": 1,
+      "message": "I was going to ask you to alphabetize this list for Paul\u0027s sake, but I guess it\u0027s already in order by last name. :)",
+      "revId": "3e8b02cbe42b0c0690559584987ec4718b41bd40",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "30eee464_d7fc9afd",
         "filename": "development.md",
         "patchSetId": 1
@@ -13,6 +30,23 @@
       "writtenOn": "2017-12-15T22:12:26Z",
       "side": 1,
       "message": "I\u0027d almost go further and drop the \"One of\" here. The primary responsibility of an SPDK core maintainer is reviewing and approving patches.",
+      "revId": "3e8b02cbe42b0c0690559584987ec4718b41bd40",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "a21b12db_8ca4af04",
+        "filename": "development.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 269,
+      "author": {
+        "id": 1010525
+      },
+      "writtenOn": "2017-12-15T22:14:50Z",
+      "side": 1,
+      "message": "Do we need to clarify that maintainers should generally not +2 their own patches?",
       "revId": "3e8b02cbe42b0c0690559584987ec4718b41bd40",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": false
