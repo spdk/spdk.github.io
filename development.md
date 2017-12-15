@@ -15,6 +15,7 @@ title:  "SPDK Development"
 * [Code Review](#review)
 * [Revising Patches](#revise)
 * [Multi-Commit Patch Series](#multi)
+* [Core Maintainers](#core)
 
 <a id="license"></a>
 ## License
@@ -60,8 +61,8 @@ Everyone is welcome to contribute! Design pre-work and general discussion occurs
 communications channels described on the [Community](/community/) page.
 
 Patch submission is done through GerritHub where patches are voted on by everyone in the community.
-A patch requires a minimum of two +2 votes before it will be merged. +2 votes are reserved for
-the project maintainers who can also be found on the mailing list or in IRC.
+A patch usually requires a minimum of two +2 votes before it will be merged. +2 votes are reserved for
+the [core maintainers](#core) who can be contacted on the mailing list or in IRC.
 
 <a id="gerrithub"></a>
 ## GerritHub Configuration
@@ -252,3 +253,31 @@ git rebase -i tmp # Move change #3 on top of the new change #2
 git push review
 git branch -D tmp # Clean up the 'tmp' branch
 ~~~
+
+<a id="core"></a>
+## Core Maintainers
+
+The SPDK core maintainers provide technical oversight for the SPDK Project.  The current list of SPDK core maintainers
+includes:
+
+* Jim Harris
+* Daniel Verkamp
+* Ben Walker
+
+One of the primary responsibilties of an SPDK core maintainer is reviewing and approving patches.  Patches
+must receive +2 votes from two core maintainers and a +1 vote from the SPDK automated test pool before
+it can be committed.  Only core maintainers have the ability to add a +2 vote and commit patches.  Core
+maintainers may also vote +1 on patches if they have reviewed the patch but cannot provide an expert opinion
+in an area of code which they are not as familiar.
+
+Under rare circumstances at the discretion of a core maintainer, a patch may be committed with only one +2 vote.
+
+Other roles and responsibilities of the core maintainers include:
+
+* setting code review and development guidelines
+* make decisions on community processes
+* role modeling good development practices
+* considerable time spent reviewing other developers' patches
+* provide positive re-enforcement
+* help define roadmap
+* identify and maintain a meaningful list of TODO items
