@@ -139,5 +139,5 @@ var iscsi__spec_8h =
       [ "ISCSI_TASK_FUNC_RESP_AUTHORIZATION_FAILED", "iscsi__spec_8h.html#a9cd87a034cf8d8aa42b5203460f03a12aed8a9537076f757f533f27b1784d9bbd", null ],
       [ "ISCSI_TASK_FUNC_REJECTED", "iscsi__spec_8h.html#a9cd87a034cf8d8aa42b5203460f03a12a37617dd9219e1263142bccedea961b53", null ]
     ] ],
-    [ "SPDK_STATIC_ASSERT", "iscsi__spec_8h.html#afa03843ca64676b995bf1abe55713228", null ]
+    [ "SPDK_STATIC_ASSERT", "iscsi__spec_8h.html#a79bf2cf1c72f3439febec084a7a861f5", null ]
 ];

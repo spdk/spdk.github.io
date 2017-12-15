@@ -12,7 +12,6 @@ var io__channel_8h =
     [ "spdk_thread_pass_msg", "io__channel_8h.html#a72dfa5b3490733f3d307d2303a551661", null ],
     [ "spdk_allocate_thread", "io__channel_8h.html#ae7db1055a27d2ccbd6f0b50a07fa20d0", null ],
     [ "spdk_for_each_channel", "io__channel_8h.html#aa7a2ca9bd0497544e852c65fd5263cd1", null ],
-    [ "spdk_for_each_thread", "io__channel_8h.html#ae99d1833df09479af6b53ed605357062", null ],
     [ "spdk_free_thread", "io__channel_8h.html#adfbbc16ee4c35466974ca6d5b5c6ee7d", null ],
     [ "spdk_get_io_channel", "io__channel_8h.html#a8537c42a7aa203b50578efed509d9ba8", null ],
     [ "spdk_get_thread", "io__channel_8h.html#a34754a98debd5e095bf06889fbaed6aa", null ],

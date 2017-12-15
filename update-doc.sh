@@ -7,6 +7,9 @@ cd $(dirname $0)
 repo=$(dirname $0)/spdk
 
 git clone --depth 1 http://github.com/spdk/spdk $repo
+cd spdk
+git fetch https://review.gerrithub.io/spdk/spdk refs/changes/03/391603/2 && git checkout FETCH_HEAD
+cd ..
 
 # Overwrite header and footer with the spdk.io versions
 cp _doc_header.html $repo/doc/header.html

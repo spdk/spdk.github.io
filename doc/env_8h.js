@@ -9,7 +9,6 @@ var env_8h =
     [ "SPDK_MEMPOOL_DEFAULT_CACHE_SIZE", "env_8h.html#aba1856012938db5f1c0beba921ee5a7c", null ],
     [ "SPDK_VTOPHYS_ERROR", "env_8h.html#a26eb4a0e044f1a5e9515b8c2f96078a4", null ],
     [ "spdk_mem_map_notify_cb", "env_8h.html#ac018be4449e60d4e5992e1e4be9bbef3", null ],
-    [ "spdk_mempool_obj_cb_t", "env_8h.html#a039d3ef1514e326b6c2d8a527f6a6aaa", null ],
     [ "spdk_pci_enum_cb", "env_8h.html#abdbcd903dfa26b4e625bdbef66b6d6a8", null ],
     [ "thread_start_fn", "env_8h.html#a0083ace78471c3d3d247e21e4968d526", null ],
     [ "spdk_mem_map_notify_action", "env_8h.html#a96af19906abf2a01e9f1f2105f90722c", [
@@ -48,10 +47,8 @@ var env_8h =
     [ "spdk_mem_unregister", "env_8h.html#a3ffa0c74e2d73703266cad2d5d103f09", null ],
     [ "spdk_mempool_count", "env_8h.html#a434cdf73691c745e717b8b794b2acb52", null ],
     [ "spdk_mempool_create", "env_8h.html#a8d4f7842191990b49694495bba10fcbd", null ],
-    [ "spdk_mempool_create_ctor", "env_8h.html#a8981c2ba451d7214e157708a718db6c9", null ],
     [ "spdk_mempool_free", "env_8h.html#ab9d2feacf9f6979db875add06ab06494", null ],
     [ "spdk_mempool_get", "env_8h.html#ada5041ebc03066dede6e0972c22dc77f", null ],
-    [ "spdk_mempool_get_name", "env_8h.html#aef50d2e8f2d7fccfd5c5edf95e5013d2", null ],
     [ "spdk_mempool_put", "env_8h.html#a56233342766c54990e044b8ca2f3d41a", null ],
     [ "spdk_mempool_put_bulk", "env_8h.html#ac3fc57c5f23f34aa1cf56ed355daa3b8", null ],
     [ "spdk_memzone_dump", "env_8h.html#a8b47302a948b71f493ae775b53f162e2", null ],

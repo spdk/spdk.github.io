@@ -86,10 +86,6 @@ var NAVTREE =
     ] ],
     [ "JSON-RPC Methods", "jsonrpc.html", [
       [ "Overview", "jsonrpc.html#jsonrpc_overview", null ],
-      [ "App Framework", "jsonrpc.html#jsonrpc_components_app", [
-        [ "kill_instance", "jsonrpc.html#rpc_kill_instance", null ],
-        [ "context_switch_monitor", "jsonrpc.html#rpc_context_switch_monitor", null ]
-      ] ],
       [ "NVMe-oF Target", "jsonrpc.html#jsonrpc_components_nvmf_tgt", [
         [ "get_nvmf_subsystems method", "jsonrpc.html#rpc_get_nvmf_subsystems", null ],
         [ "construct_nvmf_subsystem method", "jsonrpc.html#rpc_construct_nvmf_subsystem", [
@@ -145,8 +141,15 @@ var NAVTREE =
     [ "vhost", "vhost.html", [
       [ "vhost Users Guide", "vhost.html#vhost_users_guide", null ],
       [ "Prerequisites", "vhost.html#vhost_prereqs", null ],
-      [ "Configuration", "vhost.html#vhost_config", null ],
-      [ "Example", "vhost.html#vhost_example", null ],
+      [ "Starting SPDK vhost target", "vhost.html#vhost_start", null ],
+      [ "SPDK Configuration", "vhost.html#vhost_config", [
+        [ "Create bdev (block device)", "vhost.html#vhost_bdev_create", null ],
+        [ "Create a virtio device", "vhost.html#vhost_dev_create", null ],
+        [ "QEMU", "vhost.html#vhost_qemu_config", null ],
+        [ "Example output", "vhost.html#vhost_example", null ],
+        [ "Multi-Queue Block Layer (blk-mq)", "vhost.html#vhost_multiqueue", null ],
+        [ "Hot-attach/hot-detach", "vhost.html#vhost_hotattach", null ]
+      ] ],
       [ "Known bugs and limitations", "vhost.html#vhost_bugs", null ]
     ] ],
     [ "Virtio SCSI driver", "virtio.html", [
@@ -180,19 +183,19 @@ var NAVTREEINDEX =
 [
 "annotated.html",
 "endian_8h.html#a265f8e947e2070d1a0520a357f5251f5",
-"io__channel_8h.html#a75aa6a61877f23f79bb75c8fc5e68202",
-"jsonrpc.html",
-"nvme__intel_8h.html#aa3dfd12361a175359f7ae4ad323735d8",
-"nvme__spec_8h.html#acb8784fad6a53be95d4c718ad3cf852ea922011123d3f2aa2adf3ef4c02eaaba5",
-"pci__ids_8h.html#a53070d685a30ad4d9cf5af78bc9d2afd",
-"scsi__spec_8h.html#a9e2b2add18fac5a9110df411076170dca0f77b17d9c13d6dbebfbd1ba44e51153",
-"structiscsi__bhs__data__out.html#aefc1390855e60cb4c92dc7ff6b16eefe",
-"structspdk__app__opts.html#a6d8fad90703f6eb20d0bd2ecb5747f74",
-"structspdk__ioat__xor__hw__desc.html#a298bc3a2702c2a8766f6c33e0d419da1",
-"structspdk__nvme__dsm__range.html#af15a5e24c688c5d15575d98d064b65bd",
-"structspdk__nvme__reservation__status__data.html#a4b2514f1bb0b9464372a884156bde65b",
-"structspdk__scsi__port__desc.html#a1122aceae5f88a71a7dc11ace3c17c7f",
-"unionspdk__nvme__vs__register.html#a1347c00a7face3efd2abe8be9b08628d"
+"io__channel_8h.html#a8537c42a7aa203b50578efed509d9ba8",
+"jsonrpc.html#jsonrpc_overview",
+"nvme__intel_8h.html#ab8eaca37ac0e52cd54be6a30ff2bffcf",
+"nvme__spec_8h.html#acb8784fad6a53be95d4c718ad3cf852ea5f317e244e8b19711dfd9c6f13c02a72",
+"pci__ids_8h.html#a573db8b4ef1bff620d64581ad3dde0fe",
+"scsi__spec_8h.html#a9e2b2add18fac5a9110df411076170dca1353b06dbd07586c84daf4201f71d6e0",
+"structiscsi__bhs__login__req.html",
+"structspdk__app__opts.html#a93ac293aa665a3628d0286745799c5a5",
+"structspdk__ioat__xor__hw__desc.html#a5979af9e2941ca951db0caade78beb03",
+"structspdk__nvme__error__information__entry.html#a2f6bf38167c933d5e7fb674e167e2c8a",
+"structspdk__nvme__reservation__status__data.html#a89ad9fbdf5bf52b37eeb6bcfbd0246b5",
+"structspdk__scsi__port__desc.html#a3d858684ae76bd76a5cdddd7ef34c9a0",
+"unionspdk__nvme__vs__register.html#a606617023ad17e6cd547b7ba0c17af06"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

@@ -1,5 +1,5 @@
 <map id="spdk_trace_histories" name="spdk_trace_histories">
-<area shape="rect" id="node2" href="$structspdk__trace__flags.html" title="spdk_trace_flags" alt="" coords="233,95,354,121"/>
+<area shape="rect" id="node2" href="$structspdk__trace__flags.html" title="spdk_trace_flags" alt="" coords="195,95,317,121"/>
 <area shape="rect" id="node3" href="$structspdk__trace__tpoint.html" title="spdk_trace_tpoint" alt="" coords="5,5,131,32"/>
 <area shape="rect" id="node4" href="$structspdk__trace__object.html" title="spdk_trace_object" alt="" coords="155,5,283,32"/>
 <area shape="rect" id="node5" href="$structspdk__trace__owner.html" title="spdk_trace_owner" alt="" coords="307,5,435,32"/>

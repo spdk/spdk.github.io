@@ -47,5 +47,5 @@ var ioat__spec_8h =
     [ "SPDK_IOAT_OP_XOR_VAL", "ioat__spec_8h.html#ac8e2123ef0becc284074f97470b6fcca", null ],
     [ "SPDK_IOAT_VER_3_0", "ioat__spec_8h.html#a75acf46dfd6a8b07239128d49ec56158", null ],
     [ "SPDK_IOAT_VER_3_3", "ioat__spec_8h.html#a46cf9ae20c6a26978dab7fbfdaef09f7", null ],
-    [ "SPDK_STATIC_ASSERT", "ioat__spec_8h.html#a63a95b4a9941d41b83a393e9075fffdb", null ]
+    [ "SPDK_STATIC_ASSERT", "ioat__spec_8h.html#aa4e28ee5305e4030dbb8bb27f5a88c3a", null ]
 ];

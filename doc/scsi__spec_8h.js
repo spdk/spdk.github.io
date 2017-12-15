@@ -9,7 +9,6 @@ var scsi__spec_8h =
     [ "spdk_scsi_tgt_port_desc", "structspdk__scsi__tgt__port__desc.html", "structspdk__scsi__tgt__port__desc" ],
     [ "spdk_scsi_port_desc", "structspdk__scsi__port__desc.html", "structspdk__scsi__port__desc" ],
     [ "spdk_scsi_unmap_bdesc", "structspdk__scsi__unmap__bdesc.html", "structspdk__scsi__unmap__bdesc" ],
-    [ "SPDK_SBC_START_STOP_UNIT_START_BIT", "scsi__spec_8h.html#a135606383acc072af7daf5a4ea3be5d4", null ],
     [ "SPDK_SCSI_GROUP_MASK", "scsi__spec_8h.html#af125f2e99a82db78a3fe9563bd0f02c9", null ],
     [ "SPDK_SCSI_OPCODE_MASK", "scsi__spec_8h.html#af993a050a0bdd0d520b7fdcbbb32d98a", null ],
     [ "SPDK_SCSI_UNMAP_FULL_PROVISIONING", "scsi__spec_8h.html#a9ce5efad4ede9be1c925a88289612bf5", null ],
@@ -330,6 +329,6 @@ var scsi__spec_8h =
       [ "SPDK_SSC_WRITE_6", "scsi__spec_8h.html#aca4b95e35566a60195e59be74e5a1218a2285a967381490da09d710044dc115ef", null ],
       [ "SPDK_SSC_WRITE_FILEMARKS_6", "scsi__spec_8h.html#aca4b95e35566a60195e59be74e5a1218abd8d902a252ddf9f3535c45a7d9ae6a0", null ]
     ] ],
-    [ "SPDK_STATIC_ASSERT", "scsi__spec_8h.html#a136642c48b65aba55577dc651625774e", null ],
-    [ "SPDK_STATIC_ASSERT", "scsi__spec_8h.html#ad760c3ce207d51ba0f22c4f482602a70", null ]
+    [ "SPDK_STATIC_ASSERT", "scsi__spec_8h.html#aea740a5c017fcdab919bc108f07d8581", null ],
+    [ "SPDK_STATIC_ASSERT", "scsi__spec_8h.html#a6c5895b37e8906068a763c591c560fe0", null ]
 ];

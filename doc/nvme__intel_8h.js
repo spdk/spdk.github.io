@@ -48,14 +48,14 @@ var nvme__intel_8h =
       [ "SPDK_NVME_INTEL_SMART_NAND_BYTES_WRITTEN", "nvme__intel_8h.html#a381eb66ecd7c1b69677ee540da6ae1a2aaa41550338638341511372bf560d8e3c", null ],
       [ "SPDK_NVME_INTEL_SMART_HOST_BYTES_WRITTEN", "nvme__intel_8h.html#a381eb66ecd7c1b69677ee540da6ae1a2a8b58825ac75be3202ac6f5ac49dbcb25", null ]
     ] ],
-    [ "SPDK_STATIC_ASSERT", "nvme__intel_8h.html#aa3dfd12361a175359f7ae4ad323735d8", null ],
-    [ "SPDK_STATIC_ASSERT", "nvme__intel_8h.html#a3dba0d002f2119841aef3bd0d502915d", null ],
-    [ "SPDK_STATIC_ASSERT", "nvme__intel_8h.html#a561a0f549b46cfd162ddce7b67364623", null ],
-    [ "SPDK_STATIC_ASSERT", "nvme__intel_8h.html#ae4613121b4fb9e2708dc1016b55b1d5a", null ],
-    [ "SPDK_STATIC_ASSERT", "nvme__intel_8h.html#a1999e1ef8f77462371e478f174682944", null ],
-    [ "SPDK_STATIC_ASSERT", "nvme__intel_8h.html#ad27edc140a0ad1ac8bc4d9d1677b9f5b", null ],
-    [ "SPDK_STATIC_ASSERT", "nvme__intel_8h.html#adf88b7f5ca7aa08b184c7d13c3dbfe14", null ],
-    [ "SPDK_STATIC_ASSERT", "nvme__intel_8h.html#a26c6efe93b1114993afee39f7a2780e5", null ],
-    [ "SPDK_STATIC_ASSERT", "nvme__intel_8h.html#a8590a0662351fb8dcd56415f6f71237c", null ],
-    [ "SPDK_STATIC_ASSERT", "nvme__intel_8h.html#a96436820e4ac1912844178fce3b41256", null ]
+    [ "SPDK_STATIC_ASSERT", "nvme__intel_8h.html#a41ee90c344cef8d497fc14264b857fb2", null ],
+    [ "SPDK_STATIC_ASSERT", "nvme__intel_8h.html#ae3086fe3b3a702be1bf660efa4a0dec6", null ],
+    [ "SPDK_STATIC_ASSERT", "nvme__intel_8h.html#a9999ae29f4714d61b24170443d097920", null ],
+    [ "SPDK_STATIC_ASSERT", "nvme__intel_8h.html#a2d768296ffc0180a07a9f325bf3dd7d7", null ],
+    [ "SPDK_STATIC_ASSERT", "nvme__intel_8h.html#a1a57fc7a9a9605364643f2a598a293fd", null ],
+    [ "SPDK_STATIC_ASSERT", "nvme__intel_8h.html#a037397d82aa9a6378f07820a53b44be8", null ],
+    [ "SPDK_STATIC_ASSERT", "nvme__intel_8h.html#ae699297e563c76f98b8cfcb8814fb185", null ],
+    [ "SPDK_STATIC_ASSERT", "nvme__intel_8h.html#ab8eaca37ac0e52cd54be6a30ff2bffcf", null ],
+    [ "SPDK_STATIC_ASSERT", "nvme__intel_8h.html#a64ec05caadeda24c0767a9ce23dbc09f", null ],
+    [ "SPDK_STATIC_ASSERT", "nvme__intel_8h.html#aa3ccf61fd57485909b7dfce13c000d30", null ]
 ];

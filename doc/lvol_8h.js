@@ -12,9 +12,13 @@ var lvol_8h =
     [ "spdk_lvol_destroy", "lvol_8h.html#a87c4dadc88c211fb4e8ba0cddc474032", null ],
     [ "spdk_lvol_get_io_channel", "lvol_8h.html#a3e1700585830ce465b5a1479774c1f44", null ],
     [ "spdk_lvol_open", "lvol_8h.html#a25631f8da88352a540abc55f52c0ef2e", null ],
-    [ "spdk_lvs_destroy", "lvol_8h.html#ac2c5d67c2711ee149784f5e5e5be0b7a", null ],
+    [ "spdk_lvs_destroy", "lvol_8h.html#a53359d9a346da4b1216b2335ffc0ec8e", null ],
     [ "spdk_lvs_init", "lvol_8h.html#ae12b16b8565ab63a3c9b919ab9664c0f", null ],
     [ "spdk_lvs_load", "lvol_8h.html#a003e23eb57e1318f2f60c5727cab54e2", null ],
     [ "spdk_lvs_opts_init", "lvol_8h.html#a9ecc81d4bcd4fd9090deb20c1a9e0db8", null ],
-    [ "spdk_lvs_unload", "lvol_8h.html#a9f7032fa38dc1af638910018e07b0dd4", null ]
+    [ "spdk_lvs_unload", "lvol_8h.html#a9f7032fa38dc1af638910018e07b0dd4", null ],
+    [ "vbdev_get_lvol_by_name", "lvol_8h.html#a0325ab9c9f24840a312e56c201c3a4b7", null ],
+    [ "vbdev_get_lvol_store_by_name", "lvol_8h.html#ac4b21e3cfcc8efe1131b5c128ec2a930", null ],
+    [ "vbdev_get_lvol_store_by_uuid", "lvol_8h.html#a0e56c363e78da49c3e474b572b3061f2", null ],
+    [ "vbdev_get_lvs_bdev_by_lvs", "lvol_8h.html#af4ad7a4e5e4e50abd9a865e034173270", null ]
 ];
