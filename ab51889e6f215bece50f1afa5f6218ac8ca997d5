@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "3174cb82_62fb0f78",
+        "filename": "development.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 284,
+      "author": {
+        "id": 1011289
+      },
+      "writtenOn": "2017-12-18T18:15:38Z",
+      "side": 1,
+      "message": "I missed the rewording on this. Might seem like a nit but the community determines the roadmap, not the maintainers. That\u0027s the goal anyways so I\u0027d change this back to \"Helps drive the project roadmap\" or something like that. We want to encourage more input with out guidelines as its stated here it I don\u0027t think it does that",
+      "revId": "ab51889e6f215bece50f1afa5f6218ac8ca997d5",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
