@@ -44,7 +44,7 @@ code changes or by replying to the comment.
 * There’s no min or max time for the lifecycle of a patch, depending on a variety of factors a patch may go through
 in hours or possibly weeks or longer. How efficiently our community operates is a direct result of how well our
 community developers interact with each other.
-* Patch authors, including code maintainers, may not vote +1 or +2 on their own patches.  They may vote -1 on
+* Patch authors, including core maintainers, may not vote +1 or +2 on their own patches.  They may vote -1 on
 their own patches to signify that the patch should not be committed.
 
 <a id="source"></a>
