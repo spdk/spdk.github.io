@@ -263,6 +263,8 @@ The SPDK core maintainers primary responsibility is to provide technical oversig
 The current list of SPDK core maintainers includes:
 
 * Jim Harris (IRC: jimharris)
+* Changpeng Liu (IRC: changpe1)
+* Shuhei Matsumoto (IRC: Shuhei)
 * Daniel Verkamp (IRC: drv)
 * Ben Walker (IRC: bwalker)
 
