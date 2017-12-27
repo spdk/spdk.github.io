@@ -1,0 +1,124 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "14894441_164d84fc",
+        "filename": "_posts/2017-12-26-17-p4800x.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1010525
+      },
+      "writtenOn": "2017-12-27T17:55:13Z",
+      "side": 1,
+      "message": "General note: please wrap lines, at least at the end of each sentence, so reviews and diffs are readable.\n\nAlso, the date in the filename will need to be updated for the next review pass.",
+      "revId": "2e74f9021c01bc4e3387f3b9de98c5d43e5e1fda",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ef1a14e0_a6803183",
+        "filename": "_posts/2017-12-26-17-p4800x.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 1010525
+      },
+      "writtenOn": "2017-12-27T17:55:13Z",
+      "side": 1,
+      "message": "\"last week\" is probably not correct anymore.",
+      "range": {
+        "startLine": 8,
+        "startChar": 101,
+        "endLine": 8,
+        "endChar": 110
+      },
+      "revId": "2e74f9021c01bc4e3387f3b9de98c5d43e5e1fda",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "f9691c3e_13140695",
+        "filename": "_posts/2017-12-26-17-p4800x.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 1010525
+      },
+      "writtenOn": "2017-12-27T17:55:13Z",
+      "side": 1,
+      "message": "Is fio 2.19 still the correct version?",
+      "range": {
+        "startLine": 8,
+        "startChar": 428,
+        "endLine": 8,
+        "endChar": 436
+      },
+      "revId": "2e74f9021c01bc4e3387f3b9de98c5d43e5e1fda",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "0213f494_49f2c150",
+        "filename": "_posts/2017-12-26-17-p4800x.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 1010525
+      },
+      "writtenOn": "2017-12-27T17:55:13Z",
+      "side": 1,
+      "message": "Same here - double check fio version.",
+      "range": {
+        "startLine": 12,
+        "startChar": 281,
+        "endLine": 12,
+        "endChar": 289
+      },
+      "revId": "2e74f9021c01bc4e3387f3b9de98c5d43e5e1fda",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "b713dbd8_20169dcd",
+        "filename": "_posts/2017-12-26-17-p4800x.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 1010525
+      },
+      "writtenOn": "2017-12-27T17:55:13Z",
+      "side": 1,
+      "message": "Update kernel version, if you re-ran these numbers.",
+      "revId": "2e74f9021c01bc4e3387f3b9de98c5d43e5e1fda",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7c42adb0_846c1d8b",
+        "filename": "_posts/2017-12-26-17-p4800x.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 1010525
+      },
+      "writtenOn": "2017-12-27T17:55:13Z",
+      "side": 1,
+      "message": "Nitpick: columns should be lined up",
+      "revId": "2e74f9021c01bc4e3387f3b9de98c5d43e5e1fda",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
