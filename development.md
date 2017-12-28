@@ -27,11 +27,12 @@ All submitted code must carry the appropriate license.
 <a id="source"></a>
 ## Source Code
 
-SPDK's source code is hosted by [GitHub](https://github.com/spdk/spdk) and code review is done through
+SPDK's source code is hosted by [GitHub](https://github.com/spdk/spdk) and
+patch submission and review is done through
 [GerritHub](https://review.gerrithub.io/#/q/project:spdk/spdk+status:open).
 
-Directions for getting the code, building the modules, running tests, etc., are all found in the
-[GitHub](https://github.com/spdk/spdk).
+Instructions for building the libraries and examples are located in the
+[README](https://github.com/spdk/spdk/blob/master/README.md).
 
 <a id="contributing"></a>
 ## Contributing
@@ -52,15 +53,13 @@ These general guidelines help ensure that the SPDK development community remains
 * [Trello](https://www.trello.com/spdk/) is where we maintain our backlog and is a great place for design
 material for more complex patches. Once code has been merged, however, the documentation in the repository
 supersedes any materials found on Trello (i.e., collateral found on Trello is not maintained once a feature is merged).
-* The maintainers do their best to “star” patches that are likely to have impact on applications or other
-ongoing work, please keep an eye out for those items.
 * Coding and submission guidelines (i.e. being clear and concise in the commit message) should always be respected.
-* Developers do not need to add specific reviewers to patches, the maintainers and everyone else in the community
+* Developers do not need to add specific reviewers to patches. Instead, the maintainers and everyone else in the community
 should always be on the lookout for incoming patches. If a developer would like to be added to a review, or would like
 a specific person added to their patch, they should feel free to do so.
 * All comments on code reviews must be addressed prior to the patch being merged. Comments can be addressed by making
 code changes or by replying to the comment.
-* There’s no min or max time for the lifecycle of a patch, depending on a variety of factors a patch may go through
+* There’s no minimum or maximum time for the life cycle of a patch. A patch may be accepted
 in hours or possibly weeks or longer. How efficiently our community operates is a direct result of how well our
 community developers interact with each other.
 * Patch authors, including core maintainers, may not vote +1 or +2 on their own patches.  They may vote -1 on
