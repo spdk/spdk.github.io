@@ -6,9 +6,9 @@ title:  "SPDK Development"
 # In this document:
 
 * [License](#license)
-* [Development Guidelines](#guidelines)
 * [Source Code](#source)
 * [Contributing](#contributing)
+* [Development Guidelines](#guidelines)
 * [GerritHub Configuration](#gerrithub)
 * [Submitting a Patch](#patch)
 * [Continuous Integration](#integration)
@@ -23,6 +23,25 @@ title:  "SPDK Development"
 SPDK is primarily licensed using a [BSD 3-clause license](https://opensource.org/licenses/BSD-3-Clause).
 Some optional or utility code, such as kernel modules, is licensed using a dual BSD/GPLv2 license.
 All submitted code must carry the appropriate license.
+
+<a id="source"></a>
+## Source Code
+
+SPDK's source code is hosted by [GitHub](https://github.com/spdk/spdk) and code review is done through
+[GerritHub](https://review.gerrithub.io/#/q/project:spdk/spdk+status:open).
+
+Directions for getting the code, building the modules, running tests, etc., are all found in the
+[GitHub](https://github.com/spdk/spdk).
+
+<a id="contributing"></a>
+## Contributing
+
+Everyone is welcome to contribute! Design pre-work and general discussion occurs via one of the
+communications channels described on the [Community](/community/) page.
+
+Patch submission is done through GerritHub where patches are voted on by everyone in the community.
+A patch usually requires a minimum of two +2 votes before it will be merged. +2 votes are reserved for
+the [core maintainers](#core) who can be contacted on the mailing list or in IRC.
 
 <a id="guidelines"></a>
 ## Development Guidelines
@@ -46,25 +65,6 @@ in hours or possibly weeks or longer. How efficiently our community operates is 
 community developers interact with each other.
 * Patch authors, including core maintainers, may not vote +1 or +2 on their own patches.  They may vote -1 on
 their own patches to signify that the patch should not be committed.
-
-<a id="source"></a>
-## Source Code
-
-SPDK's source code is hosted by [GitHub](https://github.com/spdk/spdk) and code review is done through
-[GerritHub](https://review.gerrithub.io/#/q/project:spdk/spdk+status:open).
-
-Directions for getting the code, building the modules, running tests, etc., are all found in the
-[GitHub](https://github.com/spdk/spdk).
-
-<a id="contributing"></a>
-## Contributing
-
-Everyone is welcome to contribute! Design pre-work and general discussion occurs via one of the
-communications channels described on the [Community](/community/) page.
-
-Patch submission is done through GerritHub where patches are voted on by everyone in the community.
-A patch usually requires a minimum of two +2 votes before it will be merged. +2 votes are reserved for
-the [core maintainers](#core) who can be contacted on the mailing list or in IRC.
 
 <a id="gerrithub"></a>
 ## GerritHub Configuration
