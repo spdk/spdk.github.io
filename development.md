@@ -69,10 +69,12 @@ the [core maintainers](#core) who can be contacted on the mailing list or in IRC
 <a id="gerrithub"></a>
 ## GerritHub Configuration
 
-You'll log in to GerritHub using your GitHub account. Here are a few common settings you might want
-to setup for SPDK:
+You'll log in to GerritHub using your GitHub account. Once logged in, in the
+top right corner click your user name and select 'Settings'. You should set up
+the following:
 
 * `Profile`: Verify that the information is correct here.
+* `HTTP Password`: Generate a password. You'll use this password when prompted by git (not your GitHub password!).
 * `Preferences`:
   * Set Maximum Page Size to 100 rows per page. Otherwise you'll be hitting 'next' a lot.
   * We highly recommend you set your Email Notifications to None. Gerrit can send a lot of emails!
@@ -100,9 +102,11 @@ Or if you already cloned directly from GitHub, you can change your repository to
 git remote set-url origin https://review.gerrithub.io/spdk/spdk
 ~~~
 
-This will prompt you for a username and a password. The username is your GitHub name, but the password is the
-one generated from the `HTTP Password` section on GerritHub. You can use the [git credential helper](https://git-scm.com/docs/git-credential-store)
-to store your password for you. You can enable it for the SPDK repository with:
+When you later push a patch, you'll be prompted for a password. That password
+is the one generated in the `HTTP Password` section of the GerritHub settings,
+not your GitHub password. To make it easy, turn on the
+[git credential helper](https://git-scm.com/docs/git-credential-store) to store
+your password for you. You can enable it for the SPDK repository with:
 
 ~~~{.sh}
 git config credential.helper store
@@ -179,6 +183,10 @@ your code to Gerrit for review by doing the following:
 ~~~{.sh}
 git push review
 ~~~
+
+If prompted for a password, remember that it is the password from the `HTTP
+Password` section of the GerritHub settings. If you enabled the git credential
+helper, you'll only be prompted once.
 
 <a id="integration"></a>
 ## Continuous Integration
