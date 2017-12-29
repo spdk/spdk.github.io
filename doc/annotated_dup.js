@@ -22,6 +22,7 @@ var annotated_dup =
     [ "iscsi_bhs_text_resp", "structiscsi__bhs__text__resp.html", "structiscsi__bhs__text__resp" ],
     [ "spdk_app_opts", "structspdk__app__opts.html", "structspdk__app__opts" ],
     [ "spdk_bdev_io_stat", "structspdk__bdev__io__stat.html", "structspdk__bdev__io__stat" ],
+    [ "spdk_blob_opts", "structspdk__blob__opts.html", "structspdk__blob__opts" ],
     [ "spdk_bs_dev", "structspdk__bs__dev.html", "structspdk__bs__dev" ],
     [ "spdk_bs_dev_cb_args", "structspdk__bs__dev__cb__args.html", "structspdk__bs__dev__cb__args" ],
     [ "spdk_bs_opts", "structspdk__bs__opts.html", "structspdk__bs__opts" ],

@@ -147,10 +147,58 @@ Functions</h2></td></tr>
 <tr class="memitem:ad48498f237af5f5c25ca7cbca5300e12"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="string_8h.html#ad48498f237af5f5c25ca7cbca5300e12">spdk_parse_ip_addr</a> (char *ip, char **host, char **port)</td></tr>
 <tr class="memdesc:ad48498f237af5f5c25ca7cbca5300e12"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parse an IP address into its hostname and port components.  <a href="#ad48498f237af5f5c25ca7cbca5300e12">More...</a><br /></td></tr>
 <tr class="separator:ad48498f237af5f5c25ca7cbca5300e12"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab81c3a52c60c7390e54437dc5856996b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="string_8h.html#ab81c3a52c60c7390e54437dc5856996b">spdk_parse_capacity</a> (const char *cap_str, uint64_t *cap, bool *has_prefix)</td></tr>
+<tr class="memdesc:ab81c3a52c60c7390e54437dc5856996b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parse a string representing a number possibly followed by a binary prefix.  <a href="#ab81c3a52c60c7390e54437dc5856996b">More...</a><br /></td></tr>
+<tr class="separator:ab81c3a52c60c7390e54437dc5856996b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>String utility functions. </p>
 </div><h2 class="groupheader">Function Documentation</h2>
+<a id="ab81c3a52c60c7390e54437dc5856996b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab81c3a52c60c7390e54437dc5856996b">&#9670;&nbsp;</a></span>spdk_parse_capacity()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_parse_capacity </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>cap_str</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t *&#160;</td>
+          <td class="paramname"><em>cap</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool *&#160;</td>
+          <td class="paramname"><em>has_prefix</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Parse a string representing a number possibly followed by a binary prefix. </p>
+<p>The string can contain a trailing "B" (KB,MB,GB) but it's not necessary. "128K" = 128 * 1024; "2G" = 2 * 1024 * 1024; "2GB" = 2 * 1024 * 1024; Additionally, lowercase "k", "m", "g" are parsed as well. They are processed the same as their uppercase equivalents.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cap_str</td><td>null terminated string </td></tr>
+    <tr><td class="paramname">cap</td><td>pointer where the parsed capacity (in bytes) will be put </td></tr>
+    <tr><td class="paramname">has_prefix</td><td>pointer to a flag that will be set to describe whether given string contains a binary prefix  0 on success, negative errno otherwise </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="ad48498f237af5f5c25ca7cbca5300e12"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad48498f237af5f5c25ca7cbca5300e12">&#9670;&nbsp;</a></span>spdk_parse_ip_addr()</h2>
 

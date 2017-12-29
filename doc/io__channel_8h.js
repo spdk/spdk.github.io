@@ -1,7 +1,7 @@
 var io__channel_8h =
 [
-    [ "spdk_channel_for_each_cpl", "io__channel_8h.html#ab145c68f3c2db46a1d26bb97412dbf4d", null ],
-    [ "spdk_channel_msg", "io__channel_8h.html#a6917087c8be803c305378e50e22c80a1", null ],
+    [ "spdk_channel_for_each_cpl", "io__channel_8h.html#a96f03fe115196f1de03292ed6d86fd46", null ],
+    [ "spdk_channel_msg", "io__channel_8h.html#a2dd91f3094f8b4cf60f460e3f88bbf0c", null ],
     [ "spdk_io_channel_create_cb", "io__channel_8h.html#aed1d14292cfee8553d4a1ebb519b210a", null ],
     [ "spdk_io_channel_destroy_cb", "io__channel_8h.html#a75aa6a61877f23f79bb75c8fc5e68202", null ],
     [ "spdk_io_device_unregister_cb", "io__channel_8h.html#ae044f4141737c7f2df49cdfb03fd58ca", null ],
@@ -12,6 +12,7 @@ var io__channel_8h =
     [ "spdk_thread_pass_msg", "io__channel_8h.html#a72dfa5b3490733f3d307d2303a551661", null ],
     [ "spdk_allocate_thread", "io__channel_8h.html#ae7db1055a27d2ccbd6f0b50a07fa20d0", null ],
     [ "spdk_for_each_channel", "io__channel_8h.html#aa7a2ca9bd0497544e852c65fd5263cd1", null ],
+    [ "spdk_for_each_channel_continue", "io__channel_8h.html#a4e87fc8c0fc870769c068a2752cdc359", null ],
     [ "spdk_for_each_thread", "io__channel_8h.html#ae99d1833df09479af6b53ed605357062", null ],
     [ "spdk_free_thread", "io__channel_8h.html#adfbbc16ee4c35466974ca6d5b5c6ee7d", null ],
     [ "spdk_get_io_channel", "io__channel_8h.html#a8537c42a7aa203b50578efed509d9ba8", null ],
@@ -19,6 +20,9 @@ var io__channel_8h =
     [ "spdk_io_channel_from_ctx", "io__channel_8h.html#a9608b7b0fd448edec6ea5dd38ad04a57", null ],
     [ "spdk_io_channel_get_ctx", "io__channel_8h.html#a23226b333cc3d87b2ce0d6f188bc22fa", null ],
     [ "spdk_io_channel_get_thread", "io__channel_8h.html#a8ff9537d26ac923a7a93cd55ba315b5b", null ],
+    [ "spdk_io_channel_iter_get_channel", "io__channel_8h.html#a83adef6c3df9568bdea346b8e7dcbaa5", null ],
+    [ "spdk_io_channel_iter_get_ctx", "io__channel_8h.html#add3ebaac7b55dddb239c720c80d97dea", null ],
+    [ "spdk_io_channel_iter_get_io_device", "io__channel_8h.html#a939935cee4dac6636f2b7c6db0b2fec1", null ],
     [ "spdk_io_device_register", "io__channel_8h.html#a6a0b6fdbfd40673bce799a1a7ebab187", null ],
     [ "spdk_io_device_unregister", "io__channel_8h.html#a4c6c3df3a611c10c176cb87966c622f0", null ],
     [ "spdk_poller_register", "io__channel_8h.html#a51b50669706fe65ba4f92ffb7d2bad42", null ],

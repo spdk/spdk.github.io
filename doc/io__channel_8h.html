@@ -142,12 +142,12 @@ typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_io_cha
 <tr class="memitem:ae044f4141737c7f2df49cdfb03fd58ca"><td class="memItemLeft" align="right" valign="top"><a id="ae044f4141737c7f2df49cdfb03fd58ca"></a>
 typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_io_device_unregister_cb</b>) (void *io_device)</td></tr>
 <tr class="separator:ae044f4141737c7f2df49cdfb03fd58ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6917087c8be803c305378e50e22c80a1"><td class="memItemLeft" align="right" valign="top"><a id="a6917087c8be803c305378e50e22c80a1"></a>
-typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_channel_msg</b>) (void *io_device, struct spdk_io_channel *ch, void *ctx)</td></tr>
-<tr class="separator:a6917087c8be803c305378e50e22c80a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab145c68f3c2db46a1d26bb97412dbf4d"><td class="memItemLeft" align="right" valign="top"><a id="ab145c68f3c2db46a1d26bb97412dbf4d"></a>
-typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_channel_for_each_cpl</b>) (void *io_device, void *ctx, int status)</td></tr>
-<tr class="separator:ab145c68f3c2db46a1d26bb97412dbf4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2dd91f3094f8b4cf60f460e3f88bbf0c"><td class="memItemLeft" align="right" valign="top"><a id="a2dd91f3094f8b4cf60f460e3f88bbf0c"></a>
+typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_channel_msg</b>) (struct spdk_io_channel_iter *i)</td></tr>
+<tr class="separator:a2dd91f3094f8b4cf60f460e3f88bbf0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96f03fe115196f1de03292ed6d86fd46"><td class="memItemLeft" align="right" valign="top"><a id="a96f03fe115196f1de03292ed6d86fd46"></a>
+typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_channel_for_each_cpl</b>) (struct spdk_io_channel_iter *i, int status)</td></tr>
+<tr class="separator:a96f03fe115196f1de03292ed6d86fd46"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -202,6 +202,18 @@ struct spdk_thread *&#160;</td><td class="memItemRight" valign="bottom"><a class
 <tr class="memitem:aa7a2ca9bd0497544e852c65fd5263cd1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="io__channel_8h.html#aa7a2ca9bd0497544e852c65fd5263cd1">spdk_for_each_channel</a> (void *io_device, spdk_channel_msg fn, void *ctx, spdk_channel_for_each_cpl cpl)</td></tr>
 <tr class="memdesc:aa7a2ca9bd0497544e852c65fd5263cd1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call 'fn' on each channel associated with io_device.  <a href="#aa7a2ca9bd0497544e852c65fd5263cd1">More...</a><br /></td></tr>
 <tr class="separator:aa7a2ca9bd0497544e852c65fd5263cd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a939935cee4dac6636f2b7c6db0b2fec1"><td class="memItemLeft" align="right" valign="top"><a id="a939935cee4dac6636f2b7c6db0b2fec1"></a>
+void *&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_io_channel_iter_get_io_device</b> (struct spdk_io_channel_iter *i)</td></tr>
+<tr class="separator:a939935cee4dac6636f2b7c6db0b2fec1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83adef6c3df9568bdea346b8e7dcbaa5"><td class="memItemLeft" align="right" valign="top"><a id="a83adef6c3df9568bdea346b8e7dcbaa5"></a>
+struct spdk_io_channel *&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_io_channel_iter_get_channel</b> (struct spdk_io_channel_iter *i)</td></tr>
+<tr class="separator:a83adef6c3df9568bdea346b8e7dcbaa5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add3ebaac7b55dddb239c720c80d97dea"><td class="memItemLeft" align="right" valign="top"><a id="add3ebaac7b55dddb239c720c80d97dea"></a>
+void *&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_io_channel_iter_get_ctx</b> (struct spdk_io_channel_iter *i)</td></tr>
+<tr class="separator:add3ebaac7b55dddb239c720c80d97dea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e87fc8c0fc870769c068a2752cdc359"><td class="memItemLeft" align="right" valign="top"><a id="a4e87fc8c0fc870769c068a2752cdc359"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_for_each_channel_continue</b> (struct spdk_io_channel_iter *i, int status)</td></tr>
+<tr class="separator:a4e87fc8c0fc870769c068a2752cdc359"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>IO channel. </p>
@@ -301,7 +313,7 @@ struct spdk_thread *&#160;</td><td class="memItemRight" valign="bottom"><a class
 </div><div class="memdoc">
 
 <p>Call 'fn' on each channel associated with io_device. </p>
-<p>This happens asynchronously, so fn may be called after spdk_for_each_channel returns. 'fn' will be called on the correct thread for each channel. 'fn' will be called for each channel serially, such that two calls to 'fn' will not overlap in time.</p>
+<p>This happens asynchronously, so fn may be called after spdk_for_each_channel returns. 'fn' will be called on the correct thread for each channel. 'fn' will be called for each channel serially, such that two calls to 'fn' will not overlap in time. After 'fn' has been called, call spdk_for_each_channel_continue() to continue iterating.</p>
 <p>Once 'fn' has been called on each channel, 'cpl' will be called on the thread that spdk_for_each_channel was initially called from. </p>
 
 </div>

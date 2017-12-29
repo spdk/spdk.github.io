@@ -255,6 +255,10 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_8h.html#a2127ecc88ceb8e4b1242c316634de50e">spdk_env_get_first_core</a> (void)</td></tr>
 <tr class="memdesc:a2127ecc88ceb8e4b1242c316634de50e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the index of the first dedicated CPU core for this application. <br /></td></tr>
 <tr class="separator:a2127ecc88ceb8e4b1242c316634de50e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad66fc19d0c23cb21ff456581f0385a2b"><td class="memItemLeft" align="right" valign="top"><a id="ad66fc19d0c23cb21ff456581f0385a2b"></a>
+uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_8h.html#ad66fc19d0c23cb21ff456581f0385a2b">spdk_env_get_last_core</a> (void)</td></tr>
+<tr class="memdesc:ad66fc19d0c23cb21ff456581f0385a2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the index of the last dedicated CPU core for this application. <br /></td></tr>
+<tr class="separator:ad66fc19d0c23cb21ff456581f0385a2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab480f817ecdd801a0e53a4d8494ffc67"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_8h.html#ab480f817ecdd801a0e53a4d8494ffc67">spdk_env_get_next_core</a> (uint32_t prev_core)</td></tr>
 <tr class="memdesc:ab480f817ecdd801a0e53a4d8494ffc67"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the index of the next dedicated CPU core for this application.  <a href="#ab480f817ecdd801a0e53a4d8494ffc67">More...</a><br /></td></tr>
 <tr class="separator:ab480f817ecdd801a0e53a4d8494ffc67"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1039,7 +1043,8 @@ uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
   <table class="params">
     <tr><td class="paramname">cache_size</td><td>How many elements may be cached in per-core caches. Use SPDK_MEMPOOL_DEFAULT_CACHE_SIZE for a reasonable default, or 0 for no per-core cache. </td></tr>
     <tr><td class="paramname">socket_id</td><td>Socket ID to allocate memory on, or SPDK_ENV_SOCKET_ID_ANY for any socket. </td></tr>
-    <tr><td class="paramname">obj_init</td><td>User provided object calll back initialization function.  obj_init_arg User provided callback initialization function argument. </td></tr>
+    <tr><td class="paramname">obj_init</td><td>User provided object calllback initialization function. </td></tr>
+    <tr><td class="paramname">obj_init_arg</td><td>User provided callback initialization function argument. </td></tr>
   </table>
   </dd>
 </dl>

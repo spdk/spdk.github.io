@@ -216,6 +216,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvmf_delete_subs
 <tr class="memitem:a0603a4fbabccbaa9d72780eca7c08420"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#a0603a4fbabccbaa9d72780eca7c08420">spdk_nvmf_subsystem_add_ns</a> (struct spdk_nvmf_subsystem *subsystem, struct spdk_bdev *bdev, uint32_t nsid)</td></tr>
 <tr class="memdesc:a0603a4fbabccbaa9d72780eca7c08420"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a namespace to a subsytem.  <a href="#a0603a4fbabccbaa9d72780eca7c08420">More...</a><br /></td></tr>
 <tr class="separator:a0603a4fbabccbaa9d72780eca7c08420"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa10ac07a403de72643a5e9801e9fec0b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#aa10ac07a403de72643a5e9801e9fec0b">spdk_nvmf_subsystem_remove_ns</a> (struct spdk_nvmf_subsystem *subsystem, uint32_t nsid)</td></tr>
+<tr class="memdesc:aa10ac07a403de72643a5e9801e9fec0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove a namespace from a subsytem.  <a href="#aa10ac07a403de72643a5e9801e9fec0b">More...</a><br /></td></tr>
+<tr class="separator:aa10ac07a403de72643a5e9801e9fec0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab797c6df2dc8fab9833de1711b6fe7f4"><td class="memItemLeft" align="right" valign="top">struct spdk_nvmf_ns *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#ab797c6df2dc8fab9833de1711b6fe7f4">spdk_nvmf_subsystem_get_first_ns</a> (struct spdk_nvmf_subsystem *subsystem)</td></tr>
 <tr class="memdesc:ab797c6df2dc8fab9833de1711b6fe7f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the first allocated namespace in a subsystem.  <a href="#ab797c6df2dc8fab9833de1711b6fe7f4">More...</a><br /></td></tr>
 <tr class="separator:ab797c6df2dc8fab9833de1711b6fe7f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -857,6 +860,44 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvmf_ctrlr_disco
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if allowed, false if not. </dd></dl>
+
+</div>
+</div>
+<a id="aa10ac07a403de72643a5e9801e9fec0b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa10ac07a403de72643a5e9801e9fec0b">&#9670;&nbsp;</a></span>spdk_nvmf_subsystem_remove_ns()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_nvmf_subsystem_remove_ns </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_nvmf_subsystem *&#160;</td>
+          <td class="paramname"><em>subsystem</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>nsid</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Remove a namespace from a subsytem. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">subsystem</td><td>Subsystem the namespace belong to. </td></tr>
+    <tr><td class="paramname">nsid</td><td>Namespace ID to be removed.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success or -1 on failure. </dd></dl>
 
 </div>
 </div>
