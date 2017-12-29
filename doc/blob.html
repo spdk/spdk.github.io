@@ -143,7 +143,8 @@ $(document).ready(function(){initNavTree('blob.html','');});
 +--------+-------------------+
 </pre><p>Or formally: </p><pre class="fragment">&lt;cluster0&gt; ::= &lt;super-block&gt; &lt;metadata-region&gt;
 </pre><p>The super block is a single page located at the beginning of the partition. It contains basic information about the blobstore. The metadata region is the remainder of cluster 0 and may extend to additional clusters. </p><pre class="fragment">&lt;super-block&gt; ::= &lt;sb-version&gt; &lt;sb-len&gt; &lt;sb-super-blob&gt; &lt;sb-params&gt;
-                  &lt;sb-metadata-start&gt; &lt;sb-metadata-len&gt; &lt;crc&gt;
+                  &lt;sb-metadata-start&gt; &lt;sb-metadata-len&gt;
+                  &lt;sb-blobid-start&gt; &lt;sb-blobid-len&gt; &lt;crc&gt;
 &lt;sb-version&gt; ::= u32
 &lt;sb-len&gt; ::= u32 # Length of this super block, in bytes. Starts from the
                  # beginning of this structure.
@@ -152,6 +153,8 @@ $(document).ready(function(){initNavTree('blob.html','');});
 
 &lt;sb-md-start&gt; ::= u64 # Metadata start location, in pages
 &lt;sb-md-len&gt; ::= u64 # Metadata length, in pages
+&lt;sb-blobid-start&gt; ::= u32 # Start of bitmask of valid blobids (in pages)
+&lt;sb-blobid-len&gt; ::= u32 # Lenget of bitmask of valid blobids (in pages)
 &lt;crc&gt; ::= u32 # Crc for super block
 </pre><p>The <code>&lt;sb-params&gt;</code> data contains parameters specified by the user when the blob store was initially formatted. </p><pre class="fragment">&lt;sb-params&gt; ::= &lt;sb-page-size&gt; &lt;sb-cluster-size&gt; &lt;sb-bs-type&gt;
 &lt;sb-page-size&gt; ::= u32 # page size, in bytes.

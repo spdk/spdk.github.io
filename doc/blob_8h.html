@@ -128,6 +128,8 @@ Data Structures</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bs__opts.html">spdk_bs_opts</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__blob__opts.html">spdk_blob_opts</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
@@ -197,12 +199,6 @@ uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bs_free_clus
 <tr class="memitem:a3c090bf1ffd244cd1d2787d906d0d34f"><td class="memItemLeft" align="right" valign="top"><a id="a3c090bf1ffd244cd1d2787d906d0d34f"></a>
 uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bs_total_data_cluster_count</b> (struct spdk_blob_store *bs)</td></tr>
 <tr class="separator:a3c090bf1ffd244cd1d2787d906d0d34f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a055b798b6a05481888e0e180b2eb3da7"><td class="memItemLeft" align="right" valign="top"><a id="a055b798b6a05481888e0e180b2eb3da7"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bs_register_md_thread</b> (struct spdk_blob_store *bs)</td></tr>
-<tr class="separator:a055b798b6a05481888e0e180b2eb3da7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1f3b19d0c23353887e9ab3a91fdfe883"><td class="memItemLeft" align="right" valign="top"><a id="a1f3b19d0c23353887e9ab3a91fdfe883"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bs_unregister_md_thread</b> (struct spdk_blob_store *bs)</td></tr>
-<tr class="separator:a1f3b19d0c23353887e9ab3a91fdfe883"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a40ed8868e620ad0e15e2bc4b923ccff0"><td class="memItemLeft" align="right" valign="top"><a id="a40ed8868e620ad0e15e2bc4b923ccff0"></a>
 spdk_blob_id&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_blob_get_id</b> (struct spdk_blob *blob)</td></tr>
 <tr class="separator:a40ed8868e620ad0e15e2bc4b923ccff0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -212,33 +208,36 @@ uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_blob_get_num
 <tr class="memitem:a2484b76dc748921d2596a4e207b6a5a2"><td class="memItemLeft" align="right" valign="top"><a id="a2484b76dc748921d2596a4e207b6a5a2"></a>
 uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_blob_get_num_clusters</b> (struct spdk_blob *blob)</td></tr>
 <tr class="separator:a2484b76dc748921d2596a4e207b6a5a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a23ffdee7dc2246e7aa759dc499bc59ee"><td class="memItemLeft" align="right" valign="top"><a id="a23ffdee7dc2246e7aa759dc499bc59ee"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bs_md_create_blob</b> (struct spdk_blob_store *bs, spdk_blob_op_with_id_complete cb_fn, void *cb_arg)</td></tr>
-<tr class="separator:a23ffdee7dc2246e7aa759dc499bc59ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1e0edda324e8b8102d3c124eb8d4ca79"><td class="memItemLeft" align="right" valign="top"><a id="a1e0edda324e8b8102d3c124eb8d4ca79"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bs_md_delete_blob</b> (struct spdk_blob_store *bs, spdk_blob_id blobid, spdk_blob_op_complete cb_fn, void *cb_arg)</td></tr>
-<tr class="separator:a1e0edda324e8b8102d3c124eb8d4ca79"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a14bd474b7183cddc455d3f9649387a18"><td class="memItemLeft" align="right" valign="top"><a id="a14bd474b7183cddc455d3f9649387a18"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bs_md_open_blob</b> (struct spdk_blob_store *bs, spdk_blob_id blobid, spdk_blob_op_with_handle_complete cb_fn, void *cb_arg)</td></tr>
-<tr class="separator:a14bd474b7183cddc455d3f9649387a18"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5e0a886f9a425020a16ec27b19386245"><td class="memItemLeft" align="right" valign="top"><a id="a5e0a886f9a425020a16ec27b19386245"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bs_md_resize_blob</b> (struct spdk_blob *blob, size_t sz)</td></tr>
-<tr class="separator:a5e0a886f9a425020a16ec27b19386245"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af85b4c837791c1af4d6800794d56599c"><td class="memItemLeft" align="right" valign="top"><a id="af85b4c837791c1af4d6800794d56599c"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bs_md_sync_blob</b> (struct spdk_blob *blob, spdk_blob_op_complete cb_fn, void *cb_arg)</td></tr>
-<tr class="separator:af85b4c837791c1af4d6800794d56599c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8d1e724af23034358eef2f02582af359"><td class="memItemLeft" align="right" valign="top"><a id="a8d1e724af23034358eef2f02582af359"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bs_md_close_blob</b> (struct spdk_blob **blob, spdk_blob_op_complete cb_fn, void *cb_arg)</td></tr>
-<tr class="separator:a8d1e724af23034358eef2f02582af359"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45af991a65299ce658ee628bffafef39"><td class="memItemLeft" align="right" valign="top"><a id="a45af991a65299ce658ee628bffafef39"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_blob_opts_init</b> (struct <a class="el" href="structspdk__blob__opts.html">spdk_blob_opts</a> *opts)</td></tr>
+<tr class="separator:a45af991a65299ce658ee628bffafef39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c00efe656ca70fc5e8f2f477b8e48ed"><td class="memItemLeft" align="right" valign="top"><a id="a3c00efe656ca70fc5e8f2f477b8e48ed"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bs_create_blob_ext</b> (struct spdk_blob_store *bs, const struct <a class="el" href="structspdk__blob__opts.html">spdk_blob_opts</a> *opts, spdk_blob_op_with_id_complete cb_fn, void *cb_arg)</td></tr>
+<tr class="separator:a3c00efe656ca70fc5e8f2f477b8e48ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33263462543c5f2b51f4d507ea26a58d"><td class="memItemLeft" align="right" valign="top"><a id="a33263462543c5f2b51f4d507ea26a58d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bs_create_blob</b> (struct spdk_blob_store *bs, spdk_blob_op_with_id_complete cb_fn, void *cb_arg)</td></tr>
+<tr class="separator:a33263462543c5f2b51f4d507ea26a58d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed4fb5871f9ca58ff60c0dd8810eb223"><td class="memItemLeft" align="right" valign="top"><a id="aed4fb5871f9ca58ff60c0dd8810eb223"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bs_delete_blob</b> (struct spdk_blob_store *bs, spdk_blob_id blobid, spdk_blob_op_complete cb_fn, void *cb_arg)</td></tr>
+<tr class="separator:aed4fb5871f9ca58ff60c0dd8810eb223"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c60e6bc3ccd26228dec2c0f3ecfe618"><td class="memItemLeft" align="right" valign="top"><a id="a2c60e6bc3ccd26228dec2c0f3ecfe618"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bs_open_blob</b> (struct spdk_blob_store *bs, spdk_blob_id blobid, spdk_blob_op_with_handle_complete cb_fn, void *cb_arg)</td></tr>
+<tr class="separator:a2c60e6bc3ccd26228dec2c0f3ecfe618"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2199a23a096ae21389980b6c45a268d"><td class="memItemLeft" align="right" valign="top"><a id="ad2199a23a096ae21389980b6c45a268d"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_blob_resize</b> (struct spdk_blob *blob, size_t sz)</td></tr>
+<tr class="separator:ad2199a23a096ae21389980b6c45a268d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5acc48debefc30773518871e4f84480f"><td class="memItemLeft" align="right" valign="top"><a id="a5acc48debefc30773518871e4f84480f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_blob_sync_md</b> (struct spdk_blob *blob, spdk_blob_op_complete cb_fn, void *cb_arg)</td></tr>
+<tr class="separator:a5acc48debefc30773518871e4f84480f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6ca1e83e9608eb1dea9fca62881d350"><td class="memItemLeft" align="right" valign="top"><a id="ac6ca1e83e9608eb1dea9fca62881d350"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_blob_close</b> (struct spdk_blob *blob, spdk_blob_op_complete cb_fn, void *cb_arg)</td></tr>
+<tr class="separator:ac6ca1e83e9608eb1dea9fca62881d350"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a24d2b11e6038ad7367c796c6917d44b8"><td class="memItemLeft" align="right" valign="top"><a id="a24d2b11e6038ad7367c796c6917d44b8"></a>
 struct spdk_io_channel *&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bs_alloc_io_channel</b> (struct spdk_blob_store *bs)</td></tr>
 <tr class="separator:a24d2b11e6038ad7367c796c6917d44b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a90cc7c570fc82adf69ab87d277e580a3"><td class="memItemLeft" align="right" valign="top"><a id="a90cc7c570fc82adf69ab87d277e580a3"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bs_free_io_channel</b> (struct spdk_io_channel *channel)</td></tr>
 <tr class="separator:a90cc7c570fc82adf69ab87d277e580a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a23d0da805dc2775141a25b7a24903249"><td class="memItemLeft" align="right" valign="top"><a id="a23d0da805dc2775141a25b7a24903249"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bs_io_flush_channel</b> (struct spdk_io_channel *channel, spdk_blob_op_complete cb_fn, void *cb_arg)</td></tr>
-<tr class="separator:a23d0da805dc2775141a25b7a24903249"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0e58ec4d1598111f55764b3d7b2ab836"><td class="memItemLeft" align="right" valign="top"><a id="a0e58ec4d1598111f55764b3d7b2ab836"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bs_io_write_blob</b> (struct spdk_blob *blob, struct spdk_io_channel *channel, void *payload, uint64_t offset, uint64_t length, spdk_blob_op_complete cb_fn, void *cb_arg)</td></tr>
 <tr class="separator:a0e58ec4d1598111f55764b3d7b2ab836"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -257,24 +256,24 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bs_io_unmap_blob
 <tr class="memitem:a92380cc88d91e023817ad35957cab3ac"><td class="memItemLeft" align="right" valign="top"><a id="a92380cc88d91e023817ad35957cab3ac"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bs_io_write_zeroes_blob</b> (struct spdk_blob *blob, struct spdk_io_channel *channel, uint64_t offset, uint64_t length, spdk_blob_op_complete cb_fn, void *cb_arg)</td></tr>
 <tr class="separator:a92380cc88d91e023817ad35957cab3ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a39863e810a1fecd7ba38d59d6e5b659a"><td class="memItemLeft" align="right" valign="top"><a id="a39863e810a1fecd7ba38d59d6e5b659a"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bs_md_iter_first</b> (struct spdk_blob_store *bs, spdk_blob_op_with_handle_complete cb_fn, void *cb_arg)</td></tr>
-<tr class="separator:a39863e810a1fecd7ba38d59d6e5b659a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a242a8e20a766bc16dabcc12652700279"><td class="memItemLeft" align="right" valign="top"><a id="a242a8e20a766bc16dabcc12652700279"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bs_md_iter_next</b> (struct spdk_blob_store *bs, struct spdk_blob **blob, spdk_blob_op_with_handle_complete cb_fn, void *cb_arg)</td></tr>
-<tr class="separator:a242a8e20a766bc16dabcc12652700279"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a02de150eff39a120cb806bfb8ed78bf1"><td class="memItemLeft" align="right" valign="top"><a id="a02de150eff39a120cb806bfb8ed78bf1"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_blob_md_set_xattr</b> (struct spdk_blob *blob, const char *name, const void *value, uint16_t value_len)</td></tr>
-<tr class="separator:a02de150eff39a120cb806bfb8ed78bf1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afa64067c735f485d58cea9e926c24594"><td class="memItemLeft" align="right" valign="top"><a id="afa64067c735f485d58cea9e926c24594"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_blob_md_remove_xattr</b> (struct spdk_blob *blob, const char *name)</td></tr>
-<tr class="separator:afa64067c735f485d58cea9e926c24594"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0083a6250f25287e58914895de040f23"><td class="memItemLeft" align="right" valign="top"><a id="a0083a6250f25287e58914895de040f23"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bs_md_get_xattr_value</b> (struct spdk_blob *blob, const char *name, const void **value, size_t *value_len)</td></tr>
-<tr class="separator:a0083a6250f25287e58914895de040f23"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a361325827aa1f120ece960c70713c6bb"><td class="memItemLeft" align="right" valign="top"><a id="a361325827aa1f120ece960c70713c6bb"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bs_md_get_xattr_names</b> (struct spdk_blob *blob, struct spdk_xattr_names **names)</td></tr>
-<tr class="separator:a361325827aa1f120ece960c70713c6bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af173fe4e35623b8dc8256e9141700486"><td class="memItemLeft" align="right" valign="top"><a id="af173fe4e35623b8dc8256e9141700486"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bs_iter_first</b> (struct spdk_blob_store *bs, spdk_blob_op_with_handle_complete cb_fn, void *cb_arg)</td></tr>
+<tr class="separator:af173fe4e35623b8dc8256e9141700486"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98d90e701cf3377115ff0bb67db1342a"><td class="memItemLeft" align="right" valign="top"><a id="a98d90e701cf3377115ff0bb67db1342a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bs_iter_next</b> (struct spdk_blob_store *bs, struct spdk_blob *blob, spdk_blob_op_with_handle_complete cb_fn, void *cb_arg)</td></tr>
+<tr class="separator:a98d90e701cf3377115ff0bb67db1342a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74beed7022f23df295149fd68ac8935d"><td class="memItemLeft" align="right" valign="top"><a id="a74beed7022f23df295149fd68ac8935d"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_blob_set_xattr</b> (struct spdk_blob *blob, const char *name, const void *value, uint16_t value_len)</td></tr>
+<tr class="separator:a74beed7022f23df295149fd68ac8935d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c836667ea7f3c5fa5b2e3bf486d8428"><td class="memItemLeft" align="right" valign="top"><a id="a5c836667ea7f3c5fa5b2e3bf486d8428"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_blob_remove_xattr</b> (struct spdk_blob *blob, const char *name)</td></tr>
+<tr class="separator:a5c836667ea7f3c5fa5b2e3bf486d8428"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe49b3a95d13aed755726bed94f79344"><td class="memItemLeft" align="right" valign="top"><a id="afe49b3a95d13aed755726bed94f79344"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_blob_get_xattr_value</b> (struct spdk_blob *blob, const char *name, const void **value, size_t *value_len)</td></tr>
+<tr class="separator:afe49b3a95d13aed755726bed94f79344"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9b3d20a4be55b2c2ba046a2ccfe7233"><td class="memItemLeft" align="right" valign="top"><a id="ab9b3d20a4be55b2c2ba046a2ccfe7233"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_blob_get_xattr_names</b> (struct spdk_blob *blob, struct spdk_xattr_names **names)</td></tr>
+<tr class="separator:ab9b3d20a4be55b2c2ba046a2ccfe7233"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a113d71117843062da8a24906296b37a6"><td class="memItemLeft" align="right" valign="top"><a id="a113d71117843062da8a24906296b37a6"></a>
 uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_xattr_names_get_count</b> (struct spdk_xattr_names *names)</td></tr>
 <tr class="separator:a113d71117843062da8a24906296b37a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -294,7 +293,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bs_set_bstype</b
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Blob Storage System. </p>
 <p>The blob storage system, or the blobstore for short, is a low level library for placing opaque blobs of data onto a storage device such that scattered physical blocks on the storage device appear as a single, contiguous storage region. These blobs are also persistent, which means they are rediscoverable after reboot or power loss.</p>
-<p>The blobstore is designed to be very high performance, and thus has a few general rules regarding thread safety to avoid taking locks in the I/O path. Functions starting with the prefix "spdk_bs_md" must only be called from the metadata thread, of which there is only one at a time. The user application can declare which thread is the metadata thread by calling spdk_bs_register_md_thread, but by default it is the thread that was used to create the blobstore initially. The metadata thread can be changed at run time by first unregistering (spdk_bs_unregister_md_thread) and then re-registering. Registering a thread as the metadata thread is expensive and should be avoided.</p>
+<p>The blobstore is designed to be very high performance, and thus has a few general rules regarding thread safety to avoid taking locks in the I/O path. Functions starting with the prefix "spdk_bs_md" must only be called from the metadata thread, of which there is only one at a time. The metadata thread is the thread which called spdk_bs_init() or spdk_bs_load().</p>
 <p>Functions starting with the prefix "spdk_bs_io" are passed a channel as an argument, and channels may only be used from the thread they were created on. See spdk_bs_alloc_io_channel.</p>
 <p>Functions not starting with one of those two prefixes are thread safe and may be called from any thread at any time.</p>
 <p>The blob store returns errors using negated POSIX errno values, either returned in the callback or as a return value. An errno value of 0 means success. </p>
