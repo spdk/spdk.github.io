@@ -114,17 +114,29 @@ iSCSI Target Getting Started Guide</h1>
 <p>The Intel(R) Storage Performance Development Kit iSCSI target application is named <code>iscsi_tgt</code>. This following section describes how to run iscsi from your cloned package.</p>
 <h2><a class="anchor" id="iscsi_prereqs"></a>
 Prerequisites</h2>
-<p>This guide starts by assuming that you can already build the standard SPDK distribution on your platform. The SPDK iSCSI target has been known to work on several Linux distributions, namely Ubuntu 14.04, 15.04, and 15.10, Fedora 21, 22, and 23, and CentOS 7.</p>
+<p>This guide starts by assuming that you can already build the standard SPDK distribution on your platform.</p>
 <p>Once built, the binary will be in <code>app/iscsi_tgt</code>.</p>
 <p>If you want to kill the application by using signal, make sure use the SIGTERM, then the application will release all the shared memory resource before exit, the SIGKILL will make the shared memory resource have no chance to be released by applications, you may need to release the resource manually.</p>
 <h2><a class="anchor" id="iscsi_config"></a>
 Configuring iSCSI Target</h2>
 <p>A <code>iscsi_tgt</code> specific configuration file is used to configure the iSCSI target. A fully documented example configuration file is located at <code>etc/spdk/iscsi.conf.in</code>.</p>
 <p>The configuration file is used to configure the SPDK iSCSI target. This file defines the following: TCP ports to use as iSCSI portals; general iSCSI parameters; initiator names and addresses to allow access to iSCSI target nodes; number and types of storage backends to export over iSCSI LUNs; iSCSI target node mappings between portal groups, initiator groups, and LUNs.</p>
+<p>You should make a copy of the example configuration file, modify it to suit your environment, and then run the iscsi_tgt application and pass it the configuration file using the -c option. Right now, the target requires elevated privileges (root) to run.</p>
+<div class="fragment"><div class="line">app/iscsi_tgt/iscsi_tgt -c /path/to/iscsi.conf</div></div><!-- fragment --><h2><a class="anchor" id="iscsi_config_lcore"></a>
+Assigning CPU Cores to the iSCSI Target</h2>
+<p>SPDK uses the <a href="http://dpdk.org/doc/guides/prog_guide/env_abstraction_layer.html">DPDK Environment Abstraction Layer</a> to gain access to hardware resources such as huge memory pages and CPU core(s). DPDK EAL provides functions to assign threads to specific cores. To ensure the SPDK iSCSI target has the best performance, place the NICs and the NVMe devices on the same NUMA node and configure the target to run on CPU cores associated with that node. The following parameters in the configuration file are used to configure SPDK iSCSI target:</p>
+<p><b>ReactorMask:</b> A hexadecimal bit mask of the CPU cores that SPDK is allowed to execute work items on. The ReactorMask is located in the [Global] section of the configuration file. For example, to assign lcores 24,25,26 and 27 to iSCSI target work items, set the ReactorMask to: </p><div class="fragment"><div class="line">ReactorMask 0xF000000</div></div><!-- fragment --><h2><a class="anchor" id="iscsi_lun"></a>
+Configuring a LUN in the iSCSI Target</h2>
 <p>Each LUN in an iSCSI target node is associated with an SPDK block device. See <a class="el" href="bdev.html#bdev_getting_started">SPDK bdev Getting Started Guide</a> for details on configuring SPDK block devices. The block device to LUN mappings are specified in the configuration file as:</p>
 <div class="fragment"><div class="line">[TargetNodeX]</div><div class="line">  LUN0 Malloc0</div><div class="line">  LUN1 Nvme0n1</div></div><!-- fragment --><p>This exports a malloc'd target. The disk is a RAM disk that is a chunk of memory allocated by iscsi in user space. It will use offload engine to do the copy job instead of memcpy if the system has enough DMA channels.</p>
-<p>You should make a copy of the example configuration file, modify it to suit your environment, and then run the iscsi_tgt application and pass it the configuration file using the -c option. Right now, the target requires elevated privileges (root) to run.</p>
-<div class="fragment"><div class="line">app/iscsi_tgt/iscsi_tgt -c /path/to/iscsi.conf</div></div><!-- fragment --><h2><a class="anchor" id="iscsi_initiator"></a>
+<h2><a class="anchor" id="iscsi_rpc"></a>
+Configuring iSCSI Target via RPC method</h2>
+<p>In addition to the configuration file, the iSCSI target may also be configured via JSON-RPC calls. See <a class="el" href="jsonrpc.html">JSON-RPC Methods</a> for details.</p>
+<h3>Add the portal group</h3>
+<div class="fragment"><div class="line">python /path/to/spdk/scripts/rpc.py add_portal_group 1 127.0.0.1:3260</div></div><!-- fragment --><h3>Add the initiator group</h3>
+<div class="fragment"><div class="line">python /path/to/spdk/scripts/rpc.py add_initiator_group 2 ANY 127.0.0.1/32</div></div><!-- fragment --><h3>Construct the backend block device</h3>
+<div class="fragment"><div class="line">python /path/to/spdk/scripts/rpc.py construct_malloc_bdev -b MyBdev 64 512</div></div><!-- fragment --><h3>Construct the target node</h3>
+<div class="fragment"><div class="line">python /path/to/spdk/scripts/rpc.py construct_target_node Target3 Target3_alias MyBdev:0 1:2 64 0 0 0 1</div></div><!-- fragment --><h2><a class="anchor" id="iscsi_initiator"></a>
 Configuring iSCSI Initiator</h2>
 <p>The Linux initiator is open-iscsi.</p>
 <p>Installing open-iscsi package Fedora: </p><div class="fragment"><div class="line">yum install -y iscsi-initiator-utils</div></div><!-- fragment --><p>Ubuntu: </p><div class="fragment"><div class="line">apt-get install -y open-iscsi</div></div><!-- fragment --><h3>Setup</h3>

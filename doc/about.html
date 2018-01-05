@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="Content-Type" content="text/xhtml; charset=utf-8">
   <meta name="generator" content="Doxygen 1.8.13">
-  <title>SPDK: spdk_nvmf_rdma_private_data Union Reference</title>
+  <title>SPDK: What is SPDK?</title>
   <script type="text/javascript" src="jquery.js"></script>
   <script type="text/javascript" src="dynsections.js"></script>
   <link href="navtree.css" rel="stylesheet" type="text/css"/>
@@ -101,42 +101,23 @@
   </div>
 </div>
 <script type="text/javascript">
-$(document).ready(function(){initNavTree('unionspdk__nvmf__rdma__private__data.html','');});
+$(document).ready(function(){initNavTree('about.html','');});
 </script>
 <div id="doc-content">
 <div class="header">
-  <div class="summary">
-<a href="#pub-attribs">Data Fields</a>  </div>
   <div class="headertitle">
-<div class="title">spdk_nvmf_rdma_private_data Union Reference</div>  </div>
+<div class="title">What is SPDK? </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="dynheader">
-Collaboration diagram for spdk_nvmf_rdma_private_data:</div>
-<div class="dyncontent">
-<div class="center"><img src="unionspdk__nvmf__rdma__private__data__coll__graph.png" border="0" usemap="#spdk__nvmf__rdma__private__data_coll__map" alt="Collaboration graph"/></div>
-<map name="spdk__nvmf__rdma__private__data_coll__map" id="spdk__nvmf__rdma__private__data_coll__map">
-<area shape="rect" id="node2" href="structspdk__nvmf__rdma__request__private__data.html" title="spdk_nvmf_rdma_request\l_private_data" alt="" coords="5,5,196,47"/>
-<area shape="rect" id="node3" href="structspdk__nvmf__rdma__accept__private__data.html" title="spdk_nvmf_rdma_accept\l_private_data" alt="" coords="8,71,193,112"/>
-<area shape="rect" id="node4" href="structspdk__nvmf__rdma__reject__private__data.html" title="spdk_nvmf_rdma_reject\l_private_data" alt="" coords="11,136,190,177"/>
-</map>
-<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
-<table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
-Data Fields</h2></td></tr>
-<tr class="memitem:a12eb26a169c9c79b890f3c9ae77fa5da"><td class="memItemLeft" align="right" valign="top"><a id="a12eb26a169c9c79b890f3c9ae77fa5da"></a>
-struct <a class="el" href="structspdk__nvmf__rdma__request__private__data.html">spdk_nvmf_rdma_request_private_data</a>&#160;</td><td class="memItemRight" valign="bottom"><b>pd_request</b></td></tr>
-<tr class="separator:a12eb26a169c9c79b890f3c9ae77fa5da"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a45b093b37ee0fa095571310d812c00b0"><td class="memItemLeft" align="right" valign="top"><a id="a45b093b37ee0fa095571310d812c00b0"></a>
-struct <a class="el" href="structspdk__nvmf__rdma__accept__private__data.html">spdk_nvmf_rdma_accept_private_data</a>&#160;</td><td class="memItemRight" valign="bottom"><b>pd_accept</b></td></tr>
-<tr class="separator:a45b093b37ee0fa095571310d812c00b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aedcc391f20afe529847ddcab58d40970"><td class="memItemLeft" align="right" valign="top"><a id="aedcc391f20afe529847ddcab58d40970"></a>
-struct <a class="el" href="structspdk__nvmf__rdma__reject__private__data.html">spdk_nvmf_rdma_reject_private_data</a>&#160;</td><td class="memItemRight" valign="bottom"><b>pd_reject</b></td></tr>
-<tr class="separator:aedcc391f20afe529847ddcab58d40970"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table>
-<hr/>The documentation for this union was generated from the following file:<ul>
-<li><a class="el" href="nvmf__spec_8h.html">nvmf_spec.h</a></li>
+<div class="textblock"><p>The Storage Performance Development Kit (SPDK) provides a set of tools and libraries for writing high performance, scalable, user-mode storage applications. It achieves high performance through the use of a number of key techniques:</p>
+<ul>
+<li>Moving all of the necessary drivers into userspace, which avoids syscalls and enables zero-copy access from the application.</li>
+<li>Polling hardware for completions instead of relying on interrupts, which lowers both total latency and latency variance.</li>
+<li>Avoiding all locks in the I/O path, instead relying on message passing.</li>
 </ul>
-</div><!-- contents -->
+<p>The bedrock of SPDK is a user space, polled-mode, asynchronous, lockless <a href="http://www.nvmexpress.org">NVMe</a> driver. This provides zero-copy, highly parallel access directly to an SSD from a user space application. The driver is written as a C library with a single public header. See <a class="el" href="nvme.html">NVMe Driver</a> for more details.</p>
+<p>SPDK further provides a full block stack as a user space library that performs many of the same operations as a block stack in an operating system. This includes unifying the interface between disparate storage devices, queueing to handle conditions such as out of memory or I/O hangs, and logical volume management. See <a class="el" href="bdev.html">Block Device Abstraction Layer</a> for more information.</p>
+<p>Finally, SPDK provides <a href="http://www.nvmexpress.org/nvm-express-over-fabrics-specification-released">NVMe-oF</a>, <a href="https://en.wikipedia.org/wiki/ISCSI">iSCSI</a>, and <a href="http://blog.vmsplice.net/2011/09/qemu-internals-vhost-architecture.html">vhost</a> servers built on top of these components that are capable of serving disks over the network or to other processes. The standard Linux kernel initiators for NVMe-oF and iSCSI interoperate with these targets, as well as QEMU with vhost. These servers can be up to an order of magnitude more CPU efficient than other implementations. These targets can be used as examples of how to implement a high performance storage target, or used as the basis for production deployments. </p>
+</div></div><!-- contents -->
 </div><!-- doc-content -->
 </div>

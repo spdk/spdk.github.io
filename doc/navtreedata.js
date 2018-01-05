@@ -3,12 +3,14 @@ var NAVTREE =
   [ "SPDK", "index.html", [
     [ "Storage Performance Development Kit", "index.html", [
       [ "Introduction", "index.html#intro", null ],
+      [ "Concepts", "index.html#concepts", null ],
       [ "User Guides", "index.html#user_guides", null ],
-      [ "General Information", "index.html#general", null ],
+      [ "Programmer Guides", "index.html#general", null ],
       [ "Modules", "index.html#modules", null ],
       [ "Tools", "index.html#tools", null ],
       [ "Performance Reports", "index.html#performancereports", null ]
     ] ],
+    [ "What is SPDK?", "about.html", null ],
     [ "Changelog", "changelog.html", [
       [ "v18.01: (Upcoming Release)", "changelog.html#changelog-v18-01", null ],
       [ "v17.10: Logical Volumes", "changelog.html#changelog-v17-10", null ],
@@ -78,6 +80,9 @@ var NAVTREE =
       [ "iSCSI Target Getting Started Guide", "iscsi.html#iscsi_getting_started", [
         [ "Prerequisites", "iscsi.html#iscsi_prereqs", null ],
         [ "Configuring iSCSI Target", "iscsi.html#iscsi_config", null ],
+        [ "Assigning CPU Cores to the iSCSI Target", "iscsi.html#iscsi_config_lcore", null ],
+        [ "Configuring a LUN in the iSCSI Target", "iscsi.html#iscsi_lun", null ],
+        [ "Configuring iSCSI Target via RPC method", "iscsi.html#iscsi_rpc", null ],
         [ "Configuring iSCSI Initiator", "iscsi.html#iscsi_initiator", null ]
       ] ],
       [ "iSCSI Hotplug", "iscsi.html#iscsi_hotplug", [
@@ -182,21 +187,21 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"annotated.html",
-"endian_8h.html",
-"io__channel_8h.html#a2dd91f3094f8b4cf60f460e3f88bbf0c",
-"json_8h.html#aae250e55eb9ac9183315695d5f84cd9fae884cf89c4e3e4e1b20954ef882f50f8",
-"nvme__intel_8h.html#a381eb66ecd7c1b69677ee540da6ae1a2aa4f50b43c67e5162a5b888c1b736fd93",
-"nvme__spec_8h.html#ac3953ec001514cffe849d9c1e3a913e3adbc83d1977e511d62596744e1cf2393a",
-"nvmf__spec_8h.html#af8c3a64c4e599fbe507242f3565417ba",
-"scsi__spec_8h.html#a950bf8e3371138ceb9649d45e9a96340aa9fe3f71ffae8399eb0d8f47cbf0e44d",
-"structiscsi__bhs__data__in.html#ac1a41b4453104c5ba6d63a1b785e209f",
-"structiscsi__bhs__text__resp.html#a203283ffb467ddb50efde34c17addfed",
-"structspdk__ioat__registers.html#aa80cb27f649c5767df6f4928bba434f9",
-"structspdk__nvme__ctrlr__opts.html#a39d3f0640a4c302aa3ff11544aa6a428",
-"structspdk__nvme__registers.html#aa8a82f6563f310e7fda91e63adf4fe81",
-"structspdk__scsi__cdb__inquiry__data.html#a9acdee402c72fe9faf7b36323f207f51",
-"unionspdk__nvme__intel__feat__led__pattern.html"
+"about.html",
+"directory_structure.html#dir_scripts",
+"index.html#user_guides",
+"json_8h.html#aae250e55eb9ac9183315695d5f84cd9fa5ea82e1d0489f2cb52cdf7c01a47e180",
+"nvme__intel_8h.html#a381eb66ecd7c1b69677ee540da6ae1a2a5fe2513ac6e632ce58a50536b7d960e7",
+"nvme__spec_8h.html#ac3953ec001514cffe849d9c1e3a913e3a0870d3e220d0ee42dac1453fb7944beb",
+"nvmf__spec_8h.html#ae7f76294d6aefedd28e4656b263324b8a4438cc664cb0cb88ad7f6988d5b48068",
+"scsi__spec_8h.html#a950bf8e3371138ceb9649d45e9a96340a5db1ce489d999df4ac6d0f2a6efe6d72",
+"structiscsi__bhs__data__in.html#a181ead45d19ed9d4f12b819ab0bafdd5",
+"structiscsi__bhs__text__req.html#a9734dfa23d95bf1a6a473751df6996f1",
+"structspdk__ioat__pq__update__hw__desc.html#af5595aa6b056341b81e0d1705eade665",
+"structspdk__nvme__ctrlr__data.html#af1a662fffd2311c3069be9d41657fd04",
+"structspdk__nvme__registers.html#a07abebcdec911856f7abf268932c08cf",
+"structspdk__scsi__cdb__inquiry.html#a75a3e5867bfe4d9fb146b805a676c022",
+"unionspdk__nvme__csts__register.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

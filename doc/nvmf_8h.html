@@ -127,6 +127,9 @@ Typedefs</h2></td></tr>
 <tr class="memitem:a83e558236353a3b94992d2e604f4b660"><td class="memItemLeft" align="right" valign="top"><a id="a83e558236353a3b94992d2e604f4b660"></a>
 typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>new_qpair_fn</b>) (struct spdk_nvmf_qpair *qpair)</td></tr>
 <tr class="separator:a83e558236353a3b94992d2e604f4b660"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec7dc3c1e2f740c1cbffa028ad5c5bff"><td class="memItemLeft" align="right" valign="top"><a id="aec7dc3c1e2f740c1cbffa028ad5c5bff"></a>
+typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvmf_subsystem_state_change_done</b>) (struct spdk_nvmf_subsystem *subsystem, void *cb_arg, int status)</td></tr>
+<tr class="separator:aec7dc3c1e2f740c1cbffa028ad5c5bff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -161,9 +164,24 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_
 int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#a1c8c8e47ef4cae153de3ac1e90961c86">spdk_nvmf_poll_group_remove</a> (struct spdk_nvmf_poll_group *group, struct spdk_nvmf_qpair *qpair)</td></tr>
 <tr class="memdesc:a1c8c8e47ef4cae153de3ac1e90961c86"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove the given qpair from the poll group. <br /></td></tr>
 <tr class="separator:a1c8c8e47ef4cae153de3ac1e90961c86"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8963c7c607e75faac576ed9e1ecd4417"><td class="memItemLeft" align="right" valign="top"><a id="a8963c7c607e75faac576ed9e1ecd4417"></a>
-struct spdk_nvmf_subsystem *&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvmf_create_subsystem</b> (struct spdk_nvmf_tgt *tgt, const char *nqn, enum <a class="el" href="nvmf__spec_8h.html#a808272f050cc373f3a90871c1528afd4">spdk_nvmf_subtype</a> type, uint32_t num_ns)</td></tr>
-<tr class="separator:a8963c7c607e75faac576ed9e1ecd4417"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1b7f34d31e34d784fb54b70b02bdb15"><td class="memItemLeft" align="right" valign="top">struct spdk_nvmf_subsystem *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#ad1b7f34d31e34d784fb54b70b02bdb15">spdk_nvmf_subsystem_create</a> (struct spdk_nvmf_tgt *tgt, const char *nqn, enum <a class="el" href="nvmf__spec_8h.html#a808272f050cc373f3a90871c1528afd4">spdk_nvmf_subtype</a> type, uint32_t num_ns)</td></tr>
+<tr class="memdesc:ad1b7f34d31e34d784fb54b70b02bdb15"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create an NVMe-oF subsystem.  <a href="#ad1b7f34d31e34d784fb54b70b02bdb15">More...</a><br /></td></tr>
+<tr class="separator:ad1b7f34d31e34d784fb54b70b02bdb15"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1609f4c58179de803a755cc38c5c2940"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#a1609f4c58179de803a755cc38c5c2940">spdk_nvmf_subsystem_destroy</a> (struct spdk_nvmf_subsystem *subsystem)</td></tr>
+<tr class="memdesc:a1609f4c58179de803a755cc38c5c2940"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy an NVMe-oF subsystem.  <a href="#a1609f4c58179de803a755cc38c5c2940">More...</a><br /></td></tr>
+<tr class="separator:a1609f4c58179de803a755cc38c5c2940"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae954d6ccb1decd7a61bac44f705ea5aa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#ae954d6ccb1decd7a61bac44f705ea5aa">spdk_nvmf_subsystem_start</a> (struct spdk_nvmf_subsystem *subsystem, spdk_nvmf_subsystem_state_change_done cb_fn, void *cb_arg)</td></tr>
+<tr class="memdesc:ae954d6ccb1decd7a61bac44f705ea5aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transition an NVMe-oF subsystem from Inactive to Active state.  <a href="#ae954d6ccb1decd7a61bac44f705ea5aa">More...</a><br /></td></tr>
+<tr class="separator:ae954d6ccb1decd7a61bac44f705ea5aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a751073177f617cb893a6f9248e8455a1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#a751073177f617cb893a6f9248e8455a1">spdk_nvmf_subsystem_stop</a> (struct spdk_nvmf_subsystem *subsystem, spdk_nvmf_subsystem_state_change_done cb_fn, void *cb_arg)</td></tr>
+<tr class="memdesc:a751073177f617cb893a6f9248e8455a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transition an NVMe-oF subsystem from Active to Inactive state.  <a href="#a751073177f617cb893a6f9248e8455a1">More...</a><br /></td></tr>
+<tr class="separator:a751073177f617cb893a6f9248e8455a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add77ae4f90303913ac48bdf26f7d59e6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#add77ae4f90303913ac48bdf26f7d59e6">spdk_nvmf_subsystem_pause</a> (struct spdk_nvmf_subsystem *subsystem, spdk_nvmf_subsystem_state_change_done cb_fn, void *cb_arg)</td></tr>
+<tr class="memdesc:add77ae4f90303913ac48bdf26f7d59e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transition an NVMe-oF subsystem from Active to Paused state.  <a href="#add77ae4f90303913ac48bdf26f7d59e6">More...</a><br /></td></tr>
+<tr class="separator:add77ae4f90303913ac48bdf26f7d59e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad3f4ea1a80478886568f95edeccee61"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#aad3f4ea1a80478886568f95edeccee61">spdk_nvmf_subsystem_resume</a> (struct spdk_nvmf_subsystem *subsystem, spdk_nvmf_subsystem_state_change_done cb_fn, void *cb_arg)</td></tr>
+<tr class="memdesc:aad3f4ea1a80478886568f95edeccee61"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transition an NVMe-oF subsystem from Paused to Active state.  <a href="#aad3f4ea1a80478886568f95edeccee61">More...</a><br /></td></tr>
+<tr class="separator:aad3f4ea1a80478886568f95edeccee61"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aae62b7fa6ac05a6ad022007f60068d16"><td class="memItemLeft" align="right" valign="top"><a id="aae62b7fa6ac05a6ad022007f60068d16"></a>
 struct spdk_nvmf_subsystem *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#aae62b7fa6ac05a6ad022007f60068d16">spdk_nvmf_tgt_find_subsystem</a> (struct spdk_nvmf_tgt *tgt, const char *subnqn)</td></tr>
 <tr class="memdesc:aae62b7fa6ac05a6ad022007f60068d16"><td class="mdescLeft">&#160;</td><td class="mdescRight">Search the target for a subsystem with the given NQN. <br /></td></tr>
@@ -174,9 +192,6 @@ struct spdk_nvmf_subsystem *&#160;</td><td class="memItemRight" valign="bottom">
 <tr class="memitem:a8f4f438960707410f3a85258137cf9d3"><td class="memItemLeft" align="right" valign="top">struct spdk_nvmf_subsystem *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#a8f4f438960707410f3a85258137cf9d3">spdk_nvmf_subsystem_get_next</a> (struct spdk_nvmf_subsystem *subsystem)</td></tr>
 <tr class="memdesc:a8f4f438960707410f3a85258137cf9d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Continue iterating over all known subsystems.  <a href="#a8f4f438960707410f3a85258137cf9d3">More...</a><br /></td></tr>
 <tr class="separator:a8f4f438960707410f3a85258137cf9d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a753fbab408ada8ce95321e20d8f2893c"><td class="memItemLeft" align="right" valign="top"><a id="a753fbab408ada8ce95321e20d8f2893c"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvmf_delete_subsystem</b> (struct spdk_nvmf_subsystem *subsystem)</td></tr>
-<tr class="separator:a753fbab408ada8ce95321e20d8f2893c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a19b3442b7eb75c234c3e3090d2b5add3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#a19b3442b7eb75c234c3e3090d2b5add3">spdk_nvmf_subsystem_add_host</a> (struct spdk_nvmf_subsystem *subsystem, const char *hostnqn)</td></tr>
 <tr class="memdesc:a19b3442b7eb75c234c3e3090d2b5add3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allow the given host NQN to connect to the given subsystem.  <a href="#a19b3442b7eb75c234c3e3090d2b5add3">More...</a><br /></td></tr>
 <tr class="separator:a19b3442b7eb75c234c3e3090d2b5add3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -482,6 +497,86 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvmf_ctrlr_disco
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Newly added NSID on success or 0 on failure. </dd></dl>
+
+</div>
+</div>
+<a id="ad1b7f34d31e34d784fb54b70b02bdb15"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad1b7f34d31e34d784fb54b70b02bdb15">&#9670;&nbsp;</a></span>spdk_nvmf_subsystem_create()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct spdk_nvmf_subsystem* spdk_nvmf_subsystem_create </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_nvmf_tgt *&#160;</td>
+          <td class="paramname"><em>tgt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>nqn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">enum <a class="el" href="nvmf__spec_8h.html#a808272f050cc373f3a90871c1528afd4">spdk_nvmf_subtype</a>&#160;</td>
+          <td class="paramname"><em>type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>num_ns</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Create an NVMe-oF subsystem. </p>
+<p>Subsystems are in one of three states: Inactive, Active, Paused. This state affects which operations may be performed on the subsystem. Upon creation, the subsystem will be in the Inactive state and may be activated by calling <a class="el" href="nvmf_8h.html#ae954d6ccb1decd7a61bac44f705ea5aa" title="Transition an NVMe-oF subsystem from Inactive to Active state. ">spdk_nvmf_subsystem_start()</a>. No I/O will be processed in the Inactive or Paused states, but changes to the state of the subsystem may be made.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tgt</td><td>The NVMe-oF target that will own this subsystem. </td></tr>
+    <tr><td class="paramname">nqn</td><td>The NVMe qualified name of this subsystem. </td></tr>
+    <tr><td class="paramname">type</td><td>Whether this subsystem is an I/O subsystem or a Discovery subsystem. </td></tr>
+    <tr><td class="paramname">num_ns</td><td>The number of namespaces this subsystem contains.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>An spdk_nvmf_subsystem or NULL on error. </dd></dl>
+
+</div>
+</div>
+<a id="a1609f4c58179de803a755cc38c5c2940"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1609f4c58179de803a755cc38c5c2940">&#9670;&nbsp;</a></span>spdk_nvmf_subsystem_destroy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_nvmf_subsystem_destroy </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_nvmf_subsystem *&#160;</td>
+          <td class="paramname"><em>subsystem</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Destroy an NVMe-oF subsystem. </p>
+<p>A subsystem may only be destroyed when in the Inactive state. See <a class="el" href="nvmf_8h.html#a751073177f617cb893a6f9248e8455a1" title="Transition an NVMe-oF subsystem from Active to Inactive state. ">spdk_nvmf_subsystem_stop()</a>.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">subsystem</td><td>The NVMe-oF subsystem to destroy. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -863,6 +958,50 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvmf_ctrlr_disco
 
 </div>
 </div>
+<a id="add77ae4f90303913ac48bdf26f7d59e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add77ae4f90303913ac48bdf26f7d59e6">&#9670;&nbsp;</a></span>spdk_nvmf_subsystem_pause()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_nvmf_subsystem_pause </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_nvmf_subsystem *&#160;</td>
+          <td class="paramname"><em>subsystem</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">spdk_nvmf_subsystem_state_change_done&#160;</td>
+          <td class="paramname"><em>cb_fn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>cb_arg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Transition an NVMe-oF subsystem from Active to Paused state. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">subsystem</td><td>The NVMe-oF subsystem. </td></tr>
+    <tr><td class="paramname">cb_fn</td><td>A function that will be called once the subsystem has changed state. </td></tr>
+    <tr><td class="paramname">cb_arg</td><td>Argument passed to cb_fn. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="aa10ac07a403de72643a5e9801e9fec0b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa10ac07a403de72643a5e9801e9fec0b">&#9670;&nbsp;</a></span>spdk_nvmf_subsystem_remove_ns()</h2>
 
@@ -901,6 +1040,50 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvmf_ctrlr_disco
 
 </div>
 </div>
+<a id="aad3f4ea1a80478886568f95edeccee61"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aad3f4ea1a80478886568f95edeccee61">&#9670;&nbsp;</a></span>spdk_nvmf_subsystem_resume()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_nvmf_subsystem_resume </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_nvmf_subsystem *&#160;</td>
+          <td class="paramname"><em>subsystem</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">spdk_nvmf_subsystem_state_change_done&#160;</td>
+          <td class="paramname"><em>cb_fn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>cb_arg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Transition an NVMe-oF subsystem from Paused to Active state. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">subsystem</td><td>The NVMe-oF subsystem. </td></tr>
+    <tr><td class="paramname">cb_fn</td><td>A function that will be called once the subsystem has changed state. </td></tr>
+    <tr><td class="paramname">cb_arg</td><td>Argument passed to cb_fn. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a6f326a7fb95352af81b3ae8b6518b16c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6f326a7fb95352af81b3ae8b6518b16c">&#9670;&nbsp;</a></span>spdk_nvmf_subsystem_set_allow_any_host()</h2>
 
@@ -932,6 +1115,94 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvmf_ctrlr_disco
   <table class="params">
     <tr><td class="paramname">subsystem</td><td>Subsystem to modify. </td></tr>
     <tr><td class="paramname">allow_any_host</td><td>true to allow any host to connect to this subsystem, or false to enforce the whitelist configured with <a class="el" href="nvmf_8h.html#a19b3442b7eb75c234c3e3090d2b5add3" title="Allow the given host NQN to connect to the given subsystem. ">spdk_nvmf_subsystem_add_host()</a>. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ae954d6ccb1decd7a61bac44f705ea5aa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae954d6ccb1decd7a61bac44f705ea5aa">&#9670;&nbsp;</a></span>spdk_nvmf_subsystem_start()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_nvmf_subsystem_start </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_nvmf_subsystem *&#160;</td>
+          <td class="paramname"><em>subsystem</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">spdk_nvmf_subsystem_state_change_done&#160;</td>
+          <td class="paramname"><em>cb_fn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>cb_arg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Transition an NVMe-oF subsystem from Inactive to Active state. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">subsystem</td><td>The NVMe-oF subsystem. </td></tr>
+    <tr><td class="paramname">cb_fn</td><td>A function that will be called once the subsystem has changed state. </td></tr>
+    <tr><td class="paramname">cb_arg</td><td>Argument passed to cb_fn. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a751073177f617cb893a6f9248e8455a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a751073177f617cb893a6f9248e8455a1">&#9670;&nbsp;</a></span>spdk_nvmf_subsystem_stop()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_nvmf_subsystem_stop </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_nvmf_subsystem *&#160;</td>
+          <td class="paramname"><em>subsystem</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">spdk_nvmf_subsystem_state_change_done&#160;</td>
+          <td class="paramname"><em>cb_fn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>cb_arg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Transition an NVMe-oF subsystem from Active to Inactive state. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">subsystem</td><td>The NVMe-oF subsystem. </td></tr>
+    <tr><td class="paramname">cb_fn</td><td>A function that will be called once the subsystem has changed state. </td></tr>
+    <tr><td class="paramname">cb_arg</td><td>Argument passed to cb_fn. </td></tr>
   </table>
   </dd>
 </dl>
