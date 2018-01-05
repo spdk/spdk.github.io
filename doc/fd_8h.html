@@ -117,15 +117,70 @@ $(document).ready(function(){initNavTree('fd_8h.html','');});
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:aea888b14525013b904e80542fb360a80"><td class="memItemLeft" align="right" valign="top"><a id="aea888b14525013b904e80542fb360a80"></a>
-uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_fd_get_size</b> (int fd)</td></tr>
+<tr class="memitem:aea888b14525013b904e80542fb360a80"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fd_8h.html#aea888b14525013b904e80542fb360a80">spdk_fd_get_size</a> (int fd)</td></tr>
+<tr class="memdesc:aea888b14525013b904e80542fb360a80"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the file size.  <a href="#aea888b14525013b904e80542fb360a80">More...</a><br /></td></tr>
 <tr class="separator:aea888b14525013b904e80542fb360a80"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a74ae0495e45784365711604b91b28cfe"><td class="memItemLeft" align="right" valign="top"><a id="a74ae0495e45784365711604b91b28cfe"></a>
-uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_fd_get_blocklen</b> (int fd)</td></tr>
+<tr class="memitem:a74ae0495e45784365711604b91b28cfe"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fd_8h.html#a74ae0495e45784365711604b91b28cfe">spdk_fd_get_blocklen</a> (int fd)</td></tr>
+<tr class="memdesc:a74ae0495e45784365711604b91b28cfe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the block size of the file.  <a href="#a74ae0495e45784365711604b91b28cfe">More...</a><br /></td></tr>
 <tr class="separator:a74ae0495e45784365711604b91b28cfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>OS filesystem utility functions. </p>
-</div></div><!-- contents -->
+</div><h2 class="groupheader">Function Documentation</h2>
+<a id="a74ae0495e45784365711604b91b28cfe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a74ae0495e45784365711604b91b28cfe">&#9670;&nbsp;</a></span>spdk_fd_get_blocklen()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t spdk_fd_get_blocklen </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>fd</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the block size of the file. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fd</td><td>File descriptor.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Block size. </dd></dl>
+
+</div>
+</div>
+<a id="aea888b14525013b904e80542fb360a80"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea888b14525013b904e80542fb360a80">&#9670;&nbsp;</a></span>spdk_fd_get_size()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint64_t spdk_fd_get_size </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>fd</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the file size. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fd</td><td>File descriptor.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>File size. </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
 </div><!-- doc-content -->
 </div>
