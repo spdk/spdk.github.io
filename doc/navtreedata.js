@@ -20,6 +20,7 @@ var NAVTREE =
       [ "v16.08: iSCSI target, NVMe over Fabrics maturity", "changelog.html#changelog-v16-08", null ],
       [ "v16.06: NVMf userspace target", "changelog.html#changelog-v16-06", null ]
     ] ],
+    [ "Message Passing and Concurrency", "concurrency.html", null ],
     [ "SPDK Directory Structure", "directory_structure.html", [
       [ "Overview", "directory_structure.html#dir_overview", [
         [ "Applications", "directory_structure.html#dir_app", null ],
@@ -50,8 +51,8 @@ var NAVTREE =
       [ "BlobFS Getting Started Guide", "blobfs.html#blobfs_getting_started", null ],
       [ "RocksDB Integration", "blobfs.html#blobfs_rocksdb", null ]
     ] ],
-    [ "Block Device Abstraction Layer", "bdev.html", [
-      [ "SPDK bdev Getting Started Guide", "bdev.html#bdev_getting_started", null ],
+    [ "Block Device Layer", "bdev.html", [
+      [ "Introduction", "bdev.html#bdev_getting_started", null ],
       [ "Configuring block devices", "bdev.html#bdev_config", [
         [ "NVMe", "bdev.html#bdev_config_nvme", null ],
         [ "Malloc", "bdev.html#bdev_config_malloc", null ],
@@ -145,6 +146,11 @@ var NAVTREE =
         [ "Emulating an NVMe controller", "nvmf.html#nvmf_config_virtual_controller", null ]
       ] ]
     ] ],
+    [ "User Space Drivers", "userspace.html", [
+      [ "Controlling Hardware From User Space", "userspace.html#userspace_control", null ],
+      [ "Interrupts", "userspace.html#userspace_interrupts", null ],
+      [ "Threading", "userspace.html#userspace_threading", null ]
+    ] ],
     [ "Vagrant Development Environment", "vagrant.html", [
       [ "Introduction", "vagrant.html#vagrant_intro", null ],
       [ "VM Configuration", "vagrant.html#vagrant_config", null ],
@@ -188,20 +194,20 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "about.html",
-"directory_structure.html#dir_scripts",
-"index.html#user_guides",
-"json_8h.html#aae250e55eb9ac9183315695d5f84cd9fa5ea82e1d0489f2cb52cdf7c01a47e180",
-"nvme__intel_8h.html#a381eb66ecd7c1b69677ee540da6ae1a2a5fe2513ac6e632ce58a50536b7d960e7",
-"nvme__spec_8h.html#ac3953ec001514cffe849d9c1e3a913e3a0870d3e220d0ee42dac1453fb7944beb",
-"nvmf__spec_8h.html#ae7f76294d6aefedd28e4656b263324b8a4438cc664cb0cb88ad7f6988d5b48068",
-"scsi__spec_8h.html#a950bf8e3371138ceb9649d45e9a96340a5db1ce489d999df4ac6d0f2a6efe6d72",
-"structiscsi__bhs__data__in.html#a181ead45d19ed9d4f12b819ab0bafdd5",
-"structiscsi__bhs__text__req.html#a9734dfa23d95bf1a6a473751df6996f1",
-"structspdk__ioat__pq__update__hw__desc.html#af5595aa6b056341b81e0d1705eade665",
-"structspdk__nvme__ctrlr__data.html#af1a662fffd2311c3069be9d41657fd04",
-"structspdk__nvme__registers.html#a07abebcdec911856f7abf268932c08cf",
-"structspdk__scsi__cdb__inquiry.html#a75a3e5867bfe4d9fb146b805a676c022",
-"unionspdk__nvme__csts__register.html"
+"directory_structure.html#dir_mk",
+"index.html#performancereports",
+"json_8h.html#aae250e55eb9ac9183315695d5f84cd9fa2e3826a114171e55f375f6203676f716",
+"nvme__intel_8h.html#a381eb66ecd7c1b69677ee540da6ae1a2a4d22ee14b5643abe3a41c103b19eda13",
+"nvme__spec_8h.html#ac3953ec001514cffe849d9c1e3a913e3a024f3c853c3d6e8790514e71ae732b12",
+"nvmf__spec_8h.html#ac62d17c0157d3cc331a12b2881433b06af0491864b4e0d715f35cc39f040f9b38",
+"scsi__spec_8h.html#a950bf8e3371138ceb9649d45e9a96340a2c2ca9407b7adb292d1699520cad7f37",
+"structiscsi__bhs__async.html#ab3f4181eeb61b0c63771cfe1031be7fd",
+"structiscsi__bhs__text__req.html#a1483a47e17703a22847db05efee3655f",
+"structspdk__ioat__pq__update__hw__desc.html#a474f4f823596a703bd1fd113bff56ab4",
+"structspdk__nvme__ctrlr__data.html#ad75c32b71cc58663c7ce07c87b07df9d",
+"structspdk__nvme__primary__ctrl__capabilities.html#a999d8c62755219847e4925ee2c22db84",
+"structspdk__nvmf__tgt__opts.html#a72bd5fb022bc78170f525847246a3a05",
+"unionspdk__nvme__cmbsz__register.html#a8383cf4485e50d528a5da6e201571f42"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

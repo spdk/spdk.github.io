@@ -171,7 +171,7 @@ Functions</h2></td></tr>
 <tr class="memitem:a89835586bb7e2e6e78bd0e4cd4c4d45b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lvol_8h.html#a89835586bb7e2e6e78bd0e4cd4c4d45b">spdk_lvol_close</a> (struct spdk_lvol *lvol, <a class="el" href="lvol_8h.html#a4d5c96c4fe4512f99dcb3f1e5d5e86be">spdk_lvol_op_complete</a> cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:a89835586bb7e2e6e78bd0e4cd4c4d45b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Closes lvol, but information is kept on lvolstore.  <a href="#a89835586bb7e2e6e78bd0e4cd4c4d45b">More...</a><br /></td></tr>
 <tr class="separator:a89835586bb7e2e6e78bd0e4cd4c4d45b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3e1700585830ce465b5a1479774c1f44"><td class="memItemLeft" align="right" valign="top">struct spdk_io_channel *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lvol_8h.html#a3e1700585830ce465b5a1479774c1f44">spdk_lvol_get_io_channel</a> (struct spdk_lvol *lvol)</td></tr>
+<tr class="memitem:a3e1700585830ce465b5a1479774c1f44"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lvol_8h.html#a3e1700585830ce465b5a1479774c1f44">spdk_lvol_get_io_channel</a> (struct spdk_lvol *lvol)</td></tr>
 <tr class="memdesc:a3e1700585830ce465b5a1479774c1f44"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return IO channel of bdev associated with specified lvol.  <a href="#a3e1700585830ce465b5a1479774c1f44">More...</a><br /></td></tr>
 <tr class="separator:a3e1700585830ce465b5a1479774c1f44"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a003e23eb57e1318f2f60c5727cab54e2"><td class="memItemLeft" align="right" valign="top"><a id="a003e23eb57e1318f2f60c5727cab54e2"></a>
@@ -433,7 +433,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_lvol_open</b> (s
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">struct spdk_io_channel* spdk_lvol_get_io_channel </td>
+          <td class="memname">struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a>* spdk_lvol_get_io_channel </td>
           <td>(</td>
           <td class="paramtype">struct spdk_lvol *&#160;</td>
           <td class="paramname"><em>lvol</em></td><td>)</td>
@@ -538,7 +538,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_lvol_open</b> (s
 </div><div class="memdoc">
 
 <p>Initialize lvolstore on given bs_bdev. </p>
-<p>bs_dev can be created on bdev by using spdk_bdev_create_bs_dev() Refer to blobstore documention for more details.</p>
+<p>bs_dev can be created on bdev by using <a class="el" href="blob__bdev_8h.html#ad9acd1de03901617a7564d6cd4aec2bf" title="Create a blobstore block device from a bdev. ">spdk_bdev_create_bs_dev()</a> Refer to blobstore documention for more details.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">o</td><td>Options for lvolstore </td></tr>

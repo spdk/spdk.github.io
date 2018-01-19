@@ -111,7 +111,7 @@ $(document).ready(function(){initNavTree('iscsi.html','');});
 <div class="contents">
 <div class="textblock"><h1><a class="anchor" id="iscsi_getting_started"></a>
 iSCSI Target Getting Started Guide</h1>
-<p>The Intel(R) Storage Performance Development Kit iSCSI target application is named <code>iscsi_tgt</code>. This following section describes how to run iscsi from your cloned package.</p>
+<p>The Storage Performance Development Kit iSCSI target application is named <code>iscsi_tgt</code>. This following section describes how to run iscsi from your cloned package.</p>
 <h2><a class="anchor" id="iscsi_prereqs"></a>
 Prerequisites</h2>
 <p>This guide starts by assuming that you can already build the standard SPDK distribution on your platform.</p>
@@ -127,7 +127,7 @@ Assigning CPU Cores to the iSCSI Target</h2>
 <p>SPDK uses the <a href="http://dpdk.org/doc/guides/prog_guide/env_abstraction_layer.html">DPDK Environment Abstraction Layer</a> to gain access to hardware resources such as huge memory pages and CPU core(s). DPDK EAL provides functions to assign threads to specific cores. To ensure the SPDK iSCSI target has the best performance, place the NICs and the NVMe devices on the same NUMA node and configure the target to run on CPU cores associated with that node. The following parameters in the configuration file are used to configure SPDK iSCSI target:</p>
 <p><b>ReactorMask:</b> A hexadecimal bit mask of the CPU cores that SPDK is allowed to execute work items on. The ReactorMask is located in the [Global] section of the configuration file. For example, to assign lcores 24,25,26 and 27 to iSCSI target work items, set the ReactorMask to: </p><div class="fragment"><div class="line">ReactorMask 0xF000000</div></div><!-- fragment --><h2><a class="anchor" id="iscsi_lun"></a>
 Configuring a LUN in the iSCSI Target</h2>
-<p>Each LUN in an iSCSI target node is associated with an SPDK block device. See <a class="el" href="bdev.html#bdev_getting_started">SPDK bdev Getting Started Guide</a> for details on configuring SPDK block devices. The block device to LUN mappings are specified in the configuration file as:</p>
+<p>Each LUN in an iSCSI target node is associated with an SPDK block device. See <a class="el" href="bdev.html#bdev_getting_started">Introduction</a> for details on configuring SPDK block devices. The block device to LUN mappings are specified in the configuration file as:</p>
 <div class="fragment"><div class="line">[TargetNodeX]</div><div class="line">  LUN0 Malloc0</div><div class="line">  LUN1 Nvme0n1</div></div><!-- fragment --><p>This exports a malloc'd target. The disk is a RAM disk that is a chunk of memory allocated by iscsi in user space. It will use offload engine to do the copy job instead of memcpy if the system has enough DMA channels.</p>
 <h2><a class="anchor" id="iscsi_rpc"></a>
 Configuring iSCSI Target via RPC method</h2>

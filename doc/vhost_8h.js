@@ -10,7 +10,7 @@ var vhost_8h =
     [ "spdk_vhost_dev_get_name", "vhost_8h.html#aa06efc0d096d4414de40ed5c0b394622", null ],
     [ "spdk_vhost_fini", "vhost_8h.html#af242f0b790ade11de7627c3376a0d9e4", null ],
     [ "spdk_vhost_init", "vhost_8h.html#a38abeca2169a11feec2ecdce057f3263", null ],
-    [ "spdk_vhost_scsi_dev_add_tgt", "vhost_8h.html#a9cb6f64574dc20a254e49d75692691ea", null ],
+    [ "spdk_vhost_scsi_dev_add_tgt", "vhost_8h.html#a546673fa252a8214efd14fc80b78dcb9", null ],
     [ "spdk_vhost_scsi_dev_construct", "vhost_8h.html#a01b54a11439216fb05196474e3ee20d1", null ],
     [ "spdk_vhost_scsi_dev_get_tgt", "vhost_8h.html#a540442ab4b6ec0ba4157e514a09f2379", null ],
     [ "spdk_vhost_scsi_dev_remove", "vhost_8h.html#ab3f0d8aa45d3166969e55998872d20c5", null ],

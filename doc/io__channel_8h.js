@@ -1,5 +1,6 @@
 var io__channel_8h =
 [
+    [ "spdk_io_channel", "structspdk__io__channel.html", "structspdk__io__channel" ],
     [ "spdk_channel_for_each_cpl", "io__channel_8h.html#a96f03fe115196f1de03292ed6d86fd46", null ],
     [ "spdk_channel_msg", "io__channel_8h.html#a2dd91f3094f8b4cf60f460e3f88bbf0c", null ],
     [ "spdk_io_channel_create_cb", "io__channel_8h.html#aed1d14292cfee8553d4a1ebb519b210a", null ],
@@ -18,7 +19,7 @@ var io__channel_8h =
     [ "spdk_get_io_channel", "io__channel_8h.html#a8537c42a7aa203b50578efed509d9ba8", null ],
     [ "spdk_get_thread", "io__channel_8h.html#a34754a98debd5e095bf06889fbaed6aa", null ],
     [ "spdk_io_channel_from_ctx", "io__channel_8h.html#a9608b7b0fd448edec6ea5dd38ad04a57", null ],
-    [ "spdk_io_channel_get_ctx", "io__channel_8h.html#a23226b333cc3d87b2ce0d6f188bc22fa", null ],
+    [ "spdk_io_channel_get_ctx", "io__channel_8h.html#adbf6e22252bc768003c7bbc165fc3c51", null ],
     [ "spdk_io_channel_get_thread", "io__channel_8h.html#a8ff9537d26ac923a7a93cd55ba315b5b", null ],
     [ "spdk_io_channel_iter_get_channel", "io__channel_8h.html#a83adef6c3df9568bdea346b8e7dcbaa5", null ],
     [ "spdk_io_channel_iter_get_ctx", "io__channel_8h.html#add3ebaac7b55dddb239c720c80d97dea", null ],

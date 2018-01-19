@@ -144,7 +144,7 @@ Assigning CPU Cores to the NVMe over Fabrics Target</h2>
 <h2><a class="anchor" id="nvmf_config_virtual_controller"></a>
 Emulating an NVMe controller</h2>
 <p>The SPDK NVMe-oF target provides the capability to emulate an NVMe controller using a virtual controller. Using virtual controllers allows storage software developers to run the NVMe-oF target on a system that does not have NVMe devices. You can configure a virtual controller in the configuration file as follows:</p>
-<p><b>Create malloc LUNs:</b> See <a class="el" href="bdev.html#bdev_getting_started">SPDK bdev Getting Started Guide</a> for details on creating Malloc block devices.</p>
+<p><b>Create malloc LUNs:</b> See <a class="el" href="bdev.html#bdev_getting_started">Introduction</a> for details on creating Malloc block devices.</p>
 <p><b>Create a virtual controller:</b> Any bdev may be presented as a namespace. For example, to create a virtual controller with two namespaces backed by the malloc LUNs named Malloc0 and Malloc1 and made available as NSID 1 and 2: </p><div class="fragment"><div class="line"># Virtual controller</div><div class="line">[Subsystem2]</div><div class="line">  NQN nqn.2016-06.io.spdk:cnode2</div><div class="line">  Listen RDMA 192.168.2.21:4420</div><div class="line">  AllowAnyHost No</div><div class="line">  Host nqn.2016-06.io.spdk:init</div><div class="line">  SN SPDK00000000000001</div><div class="line">  Namespace Malloc0 1</div><div class="line">  Namespace Malloc1 2</div></div><!-- fragment --> </div></div><!-- contents -->
 </div><!-- doc-content -->
 </div>
