@@ -151,9 +151,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_vhost_fini</b> (
 <tr class="memitem:ab3f0d8aa45d3166969e55998872d20c5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vhost_8h.html#ab3f0d8aa45d3166969e55998872d20c5">spdk_vhost_scsi_dev_remove</a> (struct spdk_vhost_dev *vdev)</td></tr>
 <tr class="memdesc:ab3f0d8aa45d3166969e55998872d20c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove an empty vhost SCSI device.  <a href="#ab3f0d8aa45d3166969e55998872d20c5">More...</a><br /></td></tr>
 <tr class="separator:ab3f0d8aa45d3166969e55998872d20c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9cb6f64574dc20a254e49d75692691ea"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vhost_8h.html#a9cb6f64574dc20a254e49d75692691ea">spdk_vhost_scsi_dev_add_tgt</a> (struct spdk_vhost_dev *vdev, unsigned scsi_tgt_num, const char *lun_name)</td></tr>
-<tr class="memdesc:a9cb6f64574dc20a254e49d75692691ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct and attach new SCSI target to the vhost SCSI device on given (unoccupied) slot.  <a href="#a9cb6f64574dc20a254e49d75692691ea">More...</a><br /></td></tr>
-<tr class="separator:a9cb6f64574dc20a254e49d75692691ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a546673fa252a8214efd14fc80b78dcb9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vhost_8h.html#a546673fa252a8214efd14fc80b78dcb9">spdk_vhost_scsi_dev_add_tgt</a> (struct spdk_vhost_dev *vdev, unsigned scsi_tgt_num, const char *bdev_name)</td></tr>
+<tr class="memdesc:a546673fa252a8214efd14fc80b78dcb9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct and attach new SCSI target to the vhost SCSI device on given (unoccupied) slot.  <a href="#a546673fa252a8214efd14fc80b78dcb9">More...</a><br /></td></tr>
+<tr class="separator:a546673fa252a8214efd14fc80b78dcb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a540442ab4b6ec0ba4157e514a09f2379"><td class="memItemLeft" align="right" valign="top">struct spdk_scsi_dev *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vhost_8h.html#a540442ab4b6ec0ba4157e514a09f2379">spdk_vhost_scsi_dev_get_tgt</a> (struct spdk_vhost_dev *vdev, uint8_t num)</td></tr>
 <tr class="memdesc:a540442ab4b6ec0ba4157e514a09f2379"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get SCSI target from vhost SCSI device on given slot.  <a href="#a540442ab4b6ec0ba4157e514a09f2379">More...</a><br /></td></tr>
 <tr class="separator:a540442ab4b6ec0ba4157e514a09f2379"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -455,8 +455,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_vhost_fini</b> (
 
 </div>
 </div>
-<a id="a9cb6f64574dc20a254e49d75692691ea"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9cb6f64574dc20a254e49d75692691ea">&#9670;&nbsp;</a></span>spdk_vhost_scsi_dev_add_tgt()</h2>
+<a id="a546673fa252a8214efd14fc80b78dcb9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a546673fa252a8214efd14fc80b78dcb9">&#9670;&nbsp;</a></span>spdk_vhost_scsi_dev_add_tgt()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -477,7 +477,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_vhost_fini</b> (
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>lun_name</em>&#160;</td>
+          <td class="paramname"><em>bdev_name</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -494,7 +494,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_vhost_fini</b> (
   <table class="params">
     <tr><td class="paramname">vdev</td><td>vhost SCSI device </td></tr>
     <tr><td class="paramname">scsi_tgt_num</td><td>slot to attach to </td></tr>
-    <tr><td class="paramname">lun_name</td><td>name of the SPDK bdev to associate with SCSI LUN0 </td></tr>
+    <tr><td class="paramname">bdev_name</td><td>name of the SPDK bdev to associate with SCSI LUN0 </td></tr>
   </table>
   </dd>
 </dl>
@@ -529,7 +529,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_vhost_fini</b> (
 </div><div class="memdoc">
 
 <p>Construct an empty vhost SCSI device. </p>
-<p>This will create a Unix domain socket together with a vhost-user slave server waiting for a connection on this socket. Creating the vdev does not start any I/O pollers and does not hog the CPU. I/O processing starts after receiving proper message on the created socket. See QEMU's vhost-user documentation for details. All physical devices have to be separately attached to this vdev via <code><a class="el" href="vhost_8h.html#a9cb6f64574dc20a254e49d75692691ea" title="Construct and attach new SCSI target to the vhost SCSI device on given (unoccupied) slot...">spdk_vhost_scsi_dev_add_tgt()</a></code>.</p>
+<p>This will create a Unix domain socket together with a vhost-user slave server waiting for a connection on this socket. Creating the vdev does not start any I/O pollers and does not hog the CPU. I/O processing starts after receiving proper message on the created socket. See QEMU's vhost-user documentation for details. All physical devices have to be separately attached to this vdev via <code><a class="el" href="vhost_8h.html#a546673fa252a8214efd14fc80b78dcb9" title="Construct and attach new SCSI target to the vhost SCSI device on given (unoccupied) slot...">spdk_vhost_scsi_dev_add_tgt()</a></code>.</p>
 <p>This function is thread-safe.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">

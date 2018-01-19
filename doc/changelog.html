@@ -120,15 +120,41 @@ v18.01: (Upcoming Release)</h1>
 <p><a class="el" href="io__channel_8h.html#aa7a2ca9bd0497544e852c65fd5263cd1" title="Call &#39;fn&#39; on each channel associated with io_device. ">spdk_for_each_channel()</a> now allows asynchronous operations during iteration. Instead of immediately continuing the interation upon returning from the iteration callback, the user must call spdk_for_each_channel_continue() to resume iteration.</p>
 <h2>Block Device Abstraction Layer (bdev)</h2>
 <p>The poller abstraction was removed from the bdev layer. There is now a general purpose abstraction for pollers available in <a class="el" href="io__channel_8h.html" title="IO channel. ">include/spdk/io_channel.h</a></p>
+<h2>Lib</h2>
+<p>A set of changes were made in the SPDK's lib code altering, instances of calls to <code>exit()</code> and <code>abort()</code> to return a failure instead wherever reasonably possible. This has resulted in return type changes of the API for:</p>
+<ul>
+<li><a class="el" href="env_8h.html#a402ca8ae67be57c2c258a7a2bf22cfec" title="Initialize the environment library. ">spdk_env_init()</a> from type <code>void</code> to <code>int</code>.</li>
+<li>spdk_mem_map_init() from type <code>void</code> to <code>int</code>.</li>
+</ul>
+<p>Applications making use of these APIs should be modified to check for a non-zero return value instead of relying on them to fail without return.</p>
 <h2>NVMe Driver</h2>
-<p>The logic which support hotplug of vfio-attached devices has been implemented in SPDK, but to totally enable this feature, there is still some work need to be done for kernel vfio-pci driver. vfio-pci driver should trigger one "remove" uevent at the very beginning of the remove interface of pci driver, this will make sure the SPDK could detect the event and release the vfio-attached device Fd and related resource when the device removed.</p>
+<p>SPDK now supports hotplug for vfio-attached devices. But there is one thing keep in mind: Only physical removal events are supported; removing devices via the sysfs <code>remove</code> file will not work.</p>
 <h2>NVMe-oF Target</h2>
 <p>Subsystems are no longer tied explicitly to CPU cores. Instead, connections are handed out to the available cores round-robin. The "Core" option in the configuration file has been removed.</p>
 <h2>Blobstore</h2>
 <p>A number of functions have been renamed:</p>
-<p>spdk_bs_md_resize_blob =&gt; spdk_blob_resize spdk_bs_md_sync_blob =&gt; spdk_blob_sync_md spdk_bs_md_close_blob =&gt; spdk_blob_close spdk_bs_md_get_xattr_names =&gt; spdk_blob_get_xattr_names spdk_bs_md_get_xattr_value =&gt; spdk_blob_get_xattr_value spdk_blob_md_set_xattr =&gt; spdk_blob_set_xattr spdk_blob_md_remove_xattr =&gt; spdk_blob_remove_xattr spdk_bs_md_create_blob =&gt; spdk_bs_create_blob spdk_bs_md_open_blob =&gt; spdk_bs_open_blob spdk_bs_md_delete_blob =&gt; spdk_bs_delete_blob spdk_bs_md_iter_first =&gt; spdk_bs_iter_first spdk_bs_md_iter_next =&gt; spdk_bs_iter_next</p>
-<p>The function signature of spdk_blob_close has changed. It now takes a struct spdk_blob * argument rather than struct spdk_blob **.</p>
-<p>The function signature of spdk_bs_iter_next has changed. It now takes a struct spdk_blob * argument rather than struct spdk_blob **.</p>
+<ul>
+<li>spdk_bs_md_resize_blob() =&gt; spdk_blob_resize()</li>
+<li>spdk_bs_md_sync_blob() =&gt; spdk_blob_sync_md()</li>
+<li>spdk_bs_md_close_blob() =&gt; spdk_blob_close()</li>
+<li>spdk_bs_md_get_xattr_names() =&gt; spdk_blob_get_xattr_names()</li>
+<li>spdk_bs_md_get_xattr_value() =&gt; spdk_blob_get_xattr_value()</li>
+<li>spdk_blob_md_set_xattr() =&gt; spdk_blob_set_xattr()</li>
+<li>spdk_blob_md_remove_xattr() =&gt; spdk_blob_remove_xattr()</li>
+<li>spdk_bs_md_create_blob() =&gt; spdk_bs_create_blob()</li>
+<li>spdk_bs_md_open_blob() =&gt; spdk_bs_open_blob()</li>
+<li>spdk_bs_md_delete_blob() =&gt; spdk_bs_delete_blob()</li>
+<li>spdk_bs_md_iter_first() =&gt; spdk_bs_iter_first()</li>
+<li>spdk_bs_md_iter_next() =&gt; spdk_bs_iter_next()</li>
+</ul>
+<p>The function signature of spdk_blob_close() has changed. It now takes a struct spdk_blob * argument rather than struct spdk_blob **.</p>
+<p>The function signature of spdk_bs_iter_next() has changed. It now takes a struct spdk_blob * argument rather than struct spdk_blob **.</p>
+<h2>NBD device</h2>
+<p>The NBD application (test/lib/bdev/nbd) has been removed; Same functionality can now be achieved by using the test/app/bdev_svc application and start_nbd_disk RPC method. See the <a href="http://www.spdk.io/doc/bdev.html#bdev_config_gpt">GPT</a> documentation for more details.</p>
+<h2>FIO plugin</h2>
+<p>SPDK <code>fio_plugin</code> now suports FIO 3.3. The support for previous FIO 2.21 has been dropped, although it still remains to work for now. The new FIO contains huge amount of bugfixes and it's recommended to do an update.</p>
+<h2>Virtio library</h2>
+<p>Previously a part of the bdev_virtio module, now a separate library. Virtio is now available via <code>spdk_internal/virtio.h</code> file. This is an internal interface to be used when implementing new Virtio backends, namely Virtio-BLK.</p>
 <h1><a class="anchor" id="changelog-v17-10"></a>
 v17.10: Logical Volumes</h1>
 <h2>New dependencies</h2>

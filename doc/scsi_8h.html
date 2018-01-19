@@ -156,9 +156,6 @@ Macros</h2></td></tr>
 <tr class="memitem:af1872fadcd12aeba9e638ea456d7eef7"><td class="memItemLeft" align="right" valign="top"><a id="af1872fadcd12aeba9e638ea456d7eef7"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_SCSI_PORT_MAX_NAME_LENGTH</b>&#160;&#160;&#160;255</td></tr>
 <tr class="separator:af1872fadcd12aeba9e638ea456d7eef7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8163afb0c2a1176fdf63852000b888f3"><td class="memItemLeft" align="right" valign="top"><a id="a8163afb0c2a1176fdf63852000b888f3"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_SCSI_LUN_MAX_NAME_LENGTH</b>&#160;&#160;&#160;64</td></tr>
-<tr class="separator:a8163afb0c2a1176fdf63852000b888f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
@@ -205,9 +202,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_scsi_fini</b> (v
 <tr class="memitem:af5ed1a133f6f137402c0eb7742077f17"><td class="memItemLeft" align="right" valign="top"><a id="af5ed1a133f6f137402c0eb7742077f17"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_scsi_lun_get_id</b> (const struct spdk_scsi_lun *lun)</td></tr>
 <tr class="separator:af5ed1a133f6f137402c0eb7742077f17"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6f187c3c7c7e26d4045061446a6597bd"><td class="memItemLeft" align="right" valign="top"><a id="a6f187c3c7c7e26d4045061446a6597bd"></a>
-const char *&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_scsi_lun_get_name</b> (const struct spdk_scsi_lun *lun)</td></tr>
-<tr class="separator:a6f187c3c7c7e26d4045061446a6597bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58357a798eaf1fecc290699eb5dacc9a"><td class="memItemLeft" align="right" valign="top"><a id="a58357a798eaf1fecc290699eb5dacc9a"></a>
+const char *&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_scsi_lun_get_bdev_name</b> (const struct spdk_scsi_lun *lun)</td></tr>
+<tr class="separator:a58357a798eaf1fecc290699eb5dacc9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa87d45ae3bcf47ffa2db2ff3cf51ae21"><td class="memItemLeft" align="right" valign="top"><a id="aa87d45ae3bcf47ffa2db2ff3cf51ae21"></a>
 const struct spdk_scsi_dev *&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_scsi_lun_get_dev</b> (const struct spdk_scsi_lun *lun)</td></tr>
 <tr class="separator:aa87d45ae3bcf47ffa2db2ff3cf51ae21"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -247,12 +244,15 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_scsi_dev_allocate
 <tr class="memitem:a09579688597a2ab594671a00b20fd2cd"><td class="memItemLeft" align="right" valign="top"><a id="a09579688597a2ab594671a00b20fd2cd"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_scsi_dev_free_io_channels</b> (struct spdk_scsi_dev *dev)</td></tr>
 <tr class="separator:a09579688597a2ab594671a00b20fd2cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a023a0849997c21508fe1285b003e2a52"><td class="memItemLeft" align="right" valign="top">struct spdk_scsi_dev *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="scsi_8h.html#a023a0849997c21508fe1285b003e2a52">spdk_scsi_dev_construct</a> (const char *name, char *lun_name_list[], int *lun_id_list, int num_luns, uint8_t protocol_id, void(*hotremove_cb)(const struct spdk_scsi_lun *, void *), void *hotremove_ctx)</td></tr>
-<tr class="memdesc:a023a0849997c21508fe1285b003e2a52"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a SCSI device object using the given parameters.  <a href="#a023a0849997c21508fe1285b003e2a52">More...</a><br /></td></tr>
-<tr class="separator:a023a0849997c21508fe1285b003e2a52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a671d549d699bbfdaef3bab87bd583dc5"><td class="memItemLeft" align="right" valign="top">struct spdk_scsi_dev *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="scsi_8h.html#a671d549d699bbfdaef3bab87bd583dc5">spdk_scsi_dev_construct</a> (const char *name, const char *bdev_name_list[], int *lun_id_list, int num_luns, uint8_t protocol_id, void(*hotremove_cb)(const struct spdk_scsi_lun *, void *), void *hotremove_ctx)</td></tr>
+<tr class="memdesc:a671d549d699bbfdaef3bab87bd583dc5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a SCSI device object using the given parameters.  <a href="#a671d549d699bbfdaef3bab87bd583dc5">More...</a><br /></td></tr>
+<tr class="separator:a671d549d699bbfdaef3bab87bd583dc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abbacc6adf74a9790630dedda8b97940e"><td class="memItemLeft" align="right" valign="top"><a id="abbacc6adf74a9790630dedda8b97940e"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_scsi_dev_delete_lun</b> (struct spdk_scsi_dev *dev, struct spdk_scsi_lun *lun)</td></tr>
 <tr class="separator:abbacc6adf74a9790630dedda8b97940e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2a96b70c616896d33f6904ead1b7e5b"><td class="memItemLeft" align="right" valign="top"><a id="ae2a96b70c616896d33f6904ead1b7e5b"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_scsi_dev_add_lun</b> (struct spdk_scsi_dev *dev, const char *bdev_name, int lun_id, void(*hotremove_cb)(const struct spdk_scsi_lun *, void *), void *hotremove_ctx)</td></tr>
+<tr class="separator:ae2a96b70c616896d33f6904ead1b7e5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a295b1a0566c6b1dc9f5245724cb68179"><td class="memItemLeft" align="right" valign="top"><a id="a295b1a0566c6b1dc9f5245724cb68179"></a>
 struct spdk_scsi_port *&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_scsi_port_create</b> (uint64_t id, uint16_t index, const char *name)</td></tr>
 <tr class="separator:a295b1a0566c6b1dc9f5245724cb68179"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -296,8 +296,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_scsi_task_proces
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>SCSI to bdev translation layer. </p>
 </div><h2 class="groupheader">Function Documentation</h2>
-<a id="a023a0849997c21508fe1285b003e2a52"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a023a0849997c21508fe1285b003e2a52">&#9670;&nbsp;</a></span>spdk_scsi_dev_construct()</h2>
+<a id="a671d549d699bbfdaef3bab87bd583dc5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a671d549d699bbfdaef3bab87bd583dc5">&#9670;&nbsp;</a></span>spdk_scsi_dev_construct()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -311,8 +311,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_scsi_task_proces
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">char *&#160;</td>
-          <td class="paramname"><em>lun_name_list</em>[], </td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>bdev_name_list</em>[], </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -356,8 +356,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_scsi_task_proces
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">name</td><td>Name for the SCSI device. </td></tr>
-    <tr><td class="paramname">queue_depth</td><td>Queue depth for the SCSI device. This queue depth is a combined queue depth for all LUNs in the device. </td></tr>
-    <tr><td class="paramname">lun_list</td><td>List of LUN objects for the SCSI device. Caller is responsible for managing the memory containing this list. </td></tr>
+    <tr><td class="paramname">bdev_name_list</td><td>List of bdev names to attach to the LUNs for this SCSI device. </td></tr>
     <tr><td class="paramname">lun_id_list</td><td>List of LUN IDs for the LUN in this SCSI device. Caller is responsible for managing the memory containing this list. lun_id_list[x] is the LUN ID for lun_list[x]. </td></tr>
     <tr><td class="paramname">num_luns</td><td>Number of entries in lun_list and lun_id_list. </td></tr>
     <tr><td class="paramname">hotremove_cb</td><td>Callback to lun hotremoval. Will be called once hotremove is first triggered. </td></tr>

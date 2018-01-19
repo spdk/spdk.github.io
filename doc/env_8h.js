@@ -34,7 +34,7 @@ var env_8h =
     [ "spdk_env_get_last_core", "env_8h.html#ad66fc19d0c23cb21ff456581f0385a2b", null ],
     [ "spdk_env_get_next_core", "env_8h.html#ab480f817ecdd801a0e53a4d8494ffc67", null ],
     [ "spdk_env_get_socket_id", "env_8h.html#ab18052aa1bc0ff634ffc0ce11c577d65", null ],
-    [ "spdk_env_init", "env_8h.html#a64eecb39affafd001dfddcdf60114906", null ],
+    [ "spdk_env_init", "env_8h.html#a402ca8ae67be57c2c258a7a2bf22cfec", null ],
     [ "spdk_env_opts_init", "env_8h.html#af3b1a05d3f4dee14ba3f980672c9b3a6", null ],
     [ "spdk_env_thread_launch_pinned", "env_8h.html#a4282feec502eca721136e88c824d59cf", null ],
     [ "spdk_env_thread_wait_all", "env_8h.html#aec7e5ab204489da6d344999e4a0c8a73", null ],

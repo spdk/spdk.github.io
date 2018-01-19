@@ -110,7 +110,7 @@ $(document).ready(function(){initNavTree('nvme-cli.html','');});
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><h1>nvme-cli with SPDK Getting Started Guide</h1>
-<p>Now nvme-cli can support both kernel driver and SPDK user mode driver for most of its available commands.</p>
+<p>Now nvme-cli can support both kernel driver and SPDK user mode driver for most of its available commands and Intel specific commands.</p>
 <ol type="1">
 <li>Clone the nvme-cli repository from the SPDK GitHub fork. Make sure you check out the spdk branch. <div class="fragment"><div class="line">git clone -b spdk https://github.com/spdk/nvme-cli.git</div></div><!-- fragment --></li>
 <li>Clone the SPDK repository from <a href="https://github.com/spdk/spdk">https://github.com/spdk/spdk</a> under the nvme-cli folder.</li>
@@ -120,6 +120,7 @@ $(document).ready(function(){initNavTree('nvme-cli.html','');});
 <li>Update the "spdk.conf" file under nvme-cli folder to properly configure the SPDK. Notes as following: <div class="fragment"><div class="line">spdk=0</div><div class="line">Default to 0 (off) and change to 1 (on) after switching to SPDK via &quot;&lt;spdk_folder&gt;/scripts/setup.sh&quot;.</div><div class="line"></div><div class="line">core_mask=0x100</div><div class="line">Default to use the 9th core for the nvme-cli running.</div><div class="line"></div><div class="line">mem_size=512</div><div class="line">Default to use 512MB memory allocated.</div><div class="line"></div><div class="line">shm_id=1</div><div class="line">Default to 1. If other running SPDK application has configured with this same 1 shm_id.</div><div class="line">This nvme-cli will access those devices from that running SPDK application.</div></div><!-- fragment --></li>
 <li>Run the "./nvme list" command to get the domain:bus:device.function for each found NVMe SSD.</li>
 <li>Run the other nvme commands with domain:bus:device.function instead of "/dev/nvmeX" for the specified device. <div class="fragment"><div class="line">Example: ./nvme smart-log 0000:01:00.0</div></div><!-- fragment --></li>
+<li>Run the "./nvme intel" commands for Intel specific commands against Intel NVMe SSD. <div class="fragment"><div class="line">Example: ./nvme intel internal-log 0000:08:00.0</div></div><!-- fragment --></li>
 <li>Execute "&lt;spdk_folder&gt;/scripts/setup.sh reset" with the "root" account and update "spdk=0" in spdk.conf to use the kernel driver if wanted.</li>
 </ol>
 <h2>Use scenarios</h2>
@@ -139,7 +140,10 @@ $(document).ready(function(){initNavTree('nvme-cli.html','');});
 <li>Properly configure the spdk.conf setting for nvme-cli. <div class="fragment"><div class="line">a. Not access the NVMe SSDs from other SPDK applications.</div><div class="line">b. Change the mem_size to a proper size.</div></div><!-- fragment --></li>
 </ol>
 <h2>Note</h2>
-<p>To run the newly built nvme-cli, either explicitly run as "./nvme" or added it into the $PATH to avoid invoke other already installed version. </p>
+<ol type="1">
+<li>To run the newly built nvme-cli, either explicitly run as "./nvme" or added it into the $PATH to avoid invoke other already installed version.</li>
+<li>To run the newly built nvme-cli with SPDK support in arbitrary directory, copy "spdk.conf" to that directory from the nvme cli folder and update the configuration as suggested. </li>
+</ol>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 </div>

@@ -1,5 +1,6 @@
 var blobfs_8h =
 [
+    [ "spdk_blobfs_opts", "structspdk__blobfs__opts.html", "structspdk__blobfs__opts" ],
     [ "spdk_file_stat", "structspdk__file__stat.html", "structspdk__file__stat" ],
     [ "SPDK_BLOBFS_OPEN_CREATE", "blobfs_8h.html#aeea42dbe1969ec598e6b88cae0104423", null ],
     [ "SPDK_FILE_NAME_MAX", "blobfs_8h.html#aa22accbf1ba384cd756af81fa3802036", null ],
@@ -29,11 +30,12 @@ var blobfs_8h =
     [ "spdk_fs_file_stat", "blobfs_8h.html#af565a4461bb0ad49fd22877501d19fe0", null ],
     [ "spdk_fs_free_io_channel", "blobfs_8h.html#a53f34caefaed1536bec1beeb521ead7a", null ],
     [ "spdk_fs_get_cache_size", "blobfs_8h.html#a15d38cb108ad825b5cf4090ae3f5af49", null ],
-    [ "spdk_fs_init", "blobfs_8h.html#af56d3c77d14e829e83d2583eef4f7990", null ],
+    [ "spdk_fs_init", "blobfs_8h.html#a8e52f44e27ad58841f0a47d5efcb046a", null ],
     [ "spdk_fs_iter_first", "blobfs_8h.html#a4bf2e9c5190b5c65a34f62485ea5ac5e", null ],
     [ "spdk_fs_iter_next", "blobfs_8h.html#ac828081b33ace1754147b8816d6e85ca", null ],
     [ "spdk_fs_load", "blobfs_8h.html#a4f3c493505ea2dae2eb740a4834728ce", null ],
     [ "spdk_fs_open_file", "blobfs_8h.html#ad7a34fa6fd79cbea8082699d204e13fd", null ],
+    [ "spdk_fs_opts_init", "blobfs_8h.html#a8c6258a494c0ebf2460a6ffece101cfd", null ],
     [ "spdk_fs_rename_file", "blobfs_8h.html#a906df18462bca18c593abf76be78a09c", null ],
     [ "spdk_fs_set_cache_size", "blobfs_8h.html#ac5b00d339e2b771a26448afa282a82db", null ],
     [ "spdk_fs_unload", "blobfs_8h.html#aa71d29a4bce7f7b73114e466a013faea", null ]

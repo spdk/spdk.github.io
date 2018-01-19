@@ -120,6 +120,8 @@ $(document).ready(function(){initNavTree('blobfs_8h.html','');});
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__blobfs__opts.html">spdk_blobfs_opts</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__file__stat.html">spdk_file_stat</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -170,9 +172,12 @@ typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>fs_send_req
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:af56d3c77d14e829e83d2583eef4f7990"><td class="memItemLeft" align="right" valign="top"><a id="af56d3c77d14e829e83d2583eef4f7990"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_fs_init</b> (struct <a class="el" href="structspdk__bs__dev.html">spdk_bs_dev</a> *dev, fs_send_request_fn send_request_fn, spdk_fs_op_with_handle_complete cb_fn, void *cb_arg)</td></tr>
-<tr class="separator:af56d3c77d14e829e83d2583eef4f7990"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c6258a494c0ebf2460a6ffece101cfd"><td class="memItemLeft" align="right" valign="top"><a id="a8c6258a494c0ebf2460a6ffece101cfd"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_fs_opts_init</b> (struct <a class="el" href="structspdk__blobfs__opts.html">spdk_blobfs_opts</a> *opts)</td></tr>
+<tr class="separator:a8c6258a494c0ebf2460a6ffece101cfd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e52f44e27ad58841f0a47d5efcb046a"><td class="memItemLeft" align="right" valign="top"><a id="a8e52f44e27ad58841f0a47d5efcb046a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_fs_init</b> (struct <a class="el" href="structspdk__bs__dev.html">spdk_bs_dev</a> *dev, struct <a class="el" href="structspdk__blobfs__opts.html">spdk_blobfs_opts</a> *opt, fs_send_request_fn send_request_fn, spdk_fs_op_with_handle_complete cb_fn, void *cb_arg)</td></tr>
+<tr class="separator:a8e52f44e27ad58841f0a47d5efcb046a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4f3c493505ea2dae2eb740a4834728ce"><td class="memItemLeft" align="right" valign="top"><a id="a4f3c493505ea2dae2eb740a4834728ce"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_fs_load</b> (struct <a class="el" href="structspdk__bs__dev.html">spdk_bs_dev</a> *dev, fs_send_request_fn send_request_fn, spdk_fs_op_with_handle_complete cb_fn, void *cb_arg)</td></tr>
 <tr class="separator:a4f3c493505ea2dae2eb740a4834728ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -180,31 +185,31 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_fs_load</b> (str
 void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_fs_unload</b> (struct spdk_filesystem *fs, spdk_fs_op_complete cb_fn, void *cb_arg)</td></tr>
 <tr class="separator:aa71d29a4bce7f7b73114e466a013faea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3ba653cf26b62f1d18385bdc010c73b2"><td class="memItemLeft" align="right" valign="top"><a id="a3ba653cf26b62f1d18385bdc010c73b2"></a>
-struct spdk_io_channel *&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_fs_alloc_io_channel</b> (struct spdk_filesystem *fs)</td></tr>
+struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_fs_alloc_io_channel</b> (struct spdk_filesystem *fs)</td></tr>
 <tr class="separator:a3ba653cf26b62f1d18385bdc010c73b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad226faaede088c8a82761bf1cb20b916"><td class="memItemLeft" align="right" valign="top"><a id="ad226faaede088c8a82761bf1cb20b916"></a>
-struct spdk_io_channel *&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_fs_alloc_io_channel_sync</b> (struct spdk_filesystem *fs)</td></tr>
+struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_fs_alloc_io_channel_sync</b> (struct spdk_filesystem *fs)</td></tr>
 <tr class="separator:ad226faaede088c8a82761bf1cb20b916"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a53f34caefaed1536bec1beeb521ead7a"><td class="memItemLeft" align="right" valign="top"><a id="a53f34caefaed1536bec1beeb521ead7a"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_fs_free_io_channel</b> (struct spdk_io_channel *channel)</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_fs_free_io_channel</b> (struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *channel)</td></tr>
 <tr class="separator:a53f34caefaed1536bec1beeb521ead7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af565a4461bb0ad49fd22877501d19fe0"><td class="memItemLeft" align="right" valign="top"><a id="af565a4461bb0ad49fd22877501d19fe0"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_fs_file_stat</b> (struct spdk_filesystem *fs, struct spdk_io_channel *channel, const char *name, struct <a class="el" href="structspdk__file__stat.html">spdk_file_stat</a> *stat)</td></tr>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_fs_file_stat</b> (struct spdk_filesystem *fs, struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *channel, const char *name, struct <a class="el" href="structspdk__file__stat.html">spdk_file_stat</a> *stat)</td></tr>
 <tr class="separator:af565a4461bb0ad49fd22877501d19fe0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a60b3a62f76c41956be7af9a5cfbaa234"><td class="memItemLeft" align="right" valign="top"><a id="a60b3a62f76c41956be7af9a5cfbaa234"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_fs_create_file</b> (struct spdk_filesystem *fs, struct spdk_io_channel *channel, const char *name)</td></tr>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_fs_create_file</b> (struct spdk_filesystem *fs, struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *channel, const char *name)</td></tr>
 <tr class="separator:a60b3a62f76c41956be7af9a5cfbaa234"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad7a34fa6fd79cbea8082699d204e13fd"><td class="memItemLeft" align="right" valign="top"><a id="ad7a34fa6fd79cbea8082699d204e13fd"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_fs_open_file</b> (struct spdk_filesystem *fs, struct spdk_io_channel *channel, const char *name, uint32_t flags, struct spdk_file **file)</td></tr>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_fs_open_file</b> (struct spdk_filesystem *fs, struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *channel, const char *name, uint32_t flags, struct spdk_file **file)</td></tr>
 <tr class="separator:ad7a34fa6fd79cbea8082699d204e13fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9fda9d15c0266303df23b43bf59fc059"><td class="memItemLeft" align="right" valign="top"><a id="a9fda9d15c0266303df23b43bf59fc059"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_file_close</b> (struct spdk_file *file, struct spdk_io_channel *channel)</td></tr>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_file_close</b> (struct spdk_file *file, struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *channel)</td></tr>
 <tr class="separator:a9fda9d15c0266303df23b43bf59fc059"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a906df18462bca18c593abf76be78a09c"><td class="memItemLeft" align="right" valign="top"><a id="a906df18462bca18c593abf76be78a09c"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_fs_rename_file</b> (struct spdk_filesystem *fs, struct spdk_io_channel *channel, const char *old_name, const char *new_name)</td></tr>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_fs_rename_file</b> (struct spdk_filesystem *fs, struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *channel, const char *old_name, const char *new_name)</td></tr>
 <tr class="separator:a906df18462bca18c593abf76be78a09c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab05223db915024722182426877fc20a9"><td class="memItemLeft" align="right" valign="top"><a id="ab05223db915024722182426877fc20a9"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_fs_delete_file</b> (struct spdk_filesystem *fs, struct spdk_io_channel *channel, const char *name)</td></tr>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_fs_delete_file</b> (struct spdk_filesystem *fs, struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *channel, const char *name)</td></tr>
 <tr class="separator:ab05223db915024722182426877fc20a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4bf2e9c5190b5c65a34f62485ea5ac5e"><td class="memItemLeft" align="right" valign="top"><a id="a4bf2e9c5190b5c65a34f62485ea5ac5e"></a>
 spdk_fs_iter&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_fs_iter_first</b> (struct spdk_filesystem *fs)</td></tr>
@@ -213,7 +218,7 @@ spdk_fs_iter&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_fs_iter_
 spdk_fs_iter&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_fs_iter_next</b> (spdk_fs_iter iter)</td></tr>
 <tr class="separator:ac828081b33ace1754147b8816d6e85ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa43e4faaa71af82f01c0c9e3036f7ef4"><td class="memItemLeft" align="right" valign="top"><a id="aa43e4faaa71af82f01c0c9e3036f7ef4"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_file_truncate</b> (struct spdk_file *file, struct spdk_io_channel *channel, uint64_t length)</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_file_truncate</b> (struct spdk_file *file, struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *channel, uint64_t length)</td></tr>
 <tr class="separator:aa43e4faaa71af82f01c0c9e3036f7ef4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a89b66cdbd661761eecfdc2613ddd744b"><td class="memItemLeft" align="right" valign="top"><a id="a89b66cdbd661761eecfdc2613ddd744b"></a>
 const char *&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_file_get_name</b> (struct spdk_file *file)</td></tr>
@@ -222,10 +227,10 @@ const char *&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_file_get
 uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_file_get_length</b> (struct spdk_file *file)</td></tr>
 <tr class="separator:a39d7f1424fe8921faeb91a012766370e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a874dce983b8a63123e7c8b77309017c1"><td class="memItemLeft" align="right" valign="top"><a id="a874dce983b8a63123e7c8b77309017c1"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_file_write</b> (struct spdk_file *file, struct spdk_io_channel *channel, void *payload, uint64_t offset, uint64_t length)</td></tr>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_file_write</b> (struct spdk_file *file, struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *channel, void *payload, uint64_t offset, uint64_t length)</td></tr>
 <tr class="separator:a874dce983b8a63123e7c8b77309017c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa414131c934d53b18ea45fd5bf82aaf9"><td class="memItemLeft" align="right" valign="top"><a id="aa414131c934d53b18ea45fd5bf82aaf9"></a>
-int64_t&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_file_read</b> (struct spdk_file *file, struct spdk_io_channel *channel, void *payload, uint64_t offset, uint64_t length)</td></tr>
+int64_t&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_file_read</b> (struct spdk_file *file, struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *channel, void *payload, uint64_t offset, uint64_t length)</td></tr>
 <tr class="separator:aa414131c934d53b18ea45fd5bf82aaf9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac5b00d339e2b771a26448afa282a82db"><td class="memItemLeft" align="right" valign="top"><a id="ac5b00d339e2b771a26448afa282a82db"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_fs_set_cache_size</b> (uint64_t size_in_mb)</td></tr>
@@ -237,7 +242,7 @@ uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_fs_get_cache
 void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_file_set_priority</b> (struct spdk_file *file, uint32_t priority)</td></tr>
 <tr class="separator:adb2197f34f626761c83b9eb7effacf4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9dbd899b04661e7773cff6a94123bd92"><td class="memItemLeft" align="right" valign="top"><a id="a9dbd899b04661e7773cff6a94123bd92"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_file_sync</b> (struct spdk_file *file, struct spdk_io_channel *channel)</td></tr>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_file_sync</b> (struct spdk_file *file, struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *channel)</td></tr>
 <tr class="separator:a9dbd899b04661e7773cff6a94123bd92"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>

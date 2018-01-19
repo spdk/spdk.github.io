@@ -178,9 +178,9 @@ Functions</h2></td></tr>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_8h.html#af3b1a05d3f4dee14ba3f980672c9b3a6">spdk_env_opts_init</a> (struct <a class="el" href="structspdk__env__opts.html">spdk_env_opts</a> *opts)</td></tr>
 <tr class="memdesc:af3b1a05d3f4dee14ba3f980672c9b3a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the default value of opts. <br /></td></tr>
 <tr class="separator:af3b1a05d3f4dee14ba3f980672c9b3a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a64eecb39affafd001dfddcdf60114906"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_8h.html#a64eecb39affafd001dfddcdf60114906">spdk_env_init</a> (const struct <a class="el" href="structspdk__env__opts.html">spdk_env_opts</a> *opts)</td></tr>
-<tr class="memdesc:a64eecb39affafd001dfddcdf60114906"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the environment library.  <a href="#a64eecb39affafd001dfddcdf60114906">More...</a><br /></td></tr>
-<tr class="separator:a64eecb39affafd001dfddcdf60114906"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a402ca8ae67be57c2c258a7a2bf22cfec"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_8h.html#a402ca8ae67be57c2c258a7a2bf22cfec">spdk_env_init</a> (const struct <a class="el" href="structspdk__env__opts.html">spdk_env_opts</a> *opts)</td></tr>
+<tr class="memdesc:a402ca8ae67be57c2c258a7a2bf22cfec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the environment library.  <a href="#a402ca8ae67be57c2c258a7a2bf22cfec">More...</a><br /></td></tr>
+<tr class="separator:a402ca8ae67be57c2c258a7a2bf22cfec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0874731c44ac31e4b14d91c6844a87d1"><td class="memItemLeft" align="right" valign="top"><a id="a0874731c44ac31e4b14d91c6844a87d1"></a>
 void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_8h.html#a0874731c44ac31e4b14d91c6844a87d1">spdk_dma_malloc</a> (size_t size, size_t align, uint64_t *phys_addr)</td></tr>
 <tr class="memdesc:a0874731c44ac31e4b14d91c6844a87d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate a pinned, physically contiguous memory buffer with the given size and alignment. <br /></td></tr>
@@ -710,14 +710,14 @@ uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 
 </div>
 </div>
-<a id="a64eecb39affafd001dfddcdf60114906"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a64eecb39affafd001dfddcdf60114906">&#9670;&nbsp;</a></span>spdk_env_init()</h2>
+<a id="a402ca8ae67be57c2c258a7a2bf22cfec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a402ca8ae67be57c2c258a7a2bf22cfec">&#9670;&nbsp;</a></span>spdk_env_init()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void spdk_env_init </td>
+          <td class="memname">int spdk_env_init </td>
           <td>(</td>
           <td class="paramtype">const struct <a class="el" href="structspdk__env__opts.html">spdk_env_opts</a> *&#160;</td>
           <td class="paramname"><em>opts</em></td><td>)</td>
@@ -727,7 +727,7 @@ uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 </div><div class="memdoc">
 
 <p>Initialize the environment library. </p>
-<p>This must be called prior to using any other functions in this library. </p>
+<p>This must be called prior to using any other functions in this library. </p><dl class="section return"><dt>Returns</dt><dd>0 on success, or a negated errno value on failure. </dd></dl>
 
 </div>
 </div>
