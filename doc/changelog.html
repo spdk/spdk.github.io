@@ -155,6 +155,8 @@ v18.01: (Upcoming Release)</h1>
 <p>SPDK <code>fio_plugin</code> now suports FIO 3.3. The support for previous FIO 2.21 has been dropped, although it still remains to work for now. The new FIO contains huge amount of bugfixes and it's recommended to do an update.</p>
 <h2>Virtio library</h2>
 <p>Previously a part of the bdev_virtio module, now a separate library. Virtio is now available via <code>spdk_internal/virtio.h</code> file. This is an internal interface to be used when implementing new Virtio backends, namely Virtio-BLK.</p>
+<h2>iSCSI</h2>
+<p>The MinConnectionIdleInterval parameter has been removed, and connections are no longer migrated to an epoll/kqueue descriptor on the master core when idle.</p>
 <h1><a class="anchor" id="changelog-v17-10"></a>
 v17.10: Logical Volumes</h1>
 <h2>New dependencies</h2>
