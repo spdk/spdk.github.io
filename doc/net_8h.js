@@ -12,7 +12,6 @@ var net_8h =
     [ "spdk_net_framework_clear_socket_association", "net_8h.html#aa60131a70fac5ee296fea233a074cbc0", null ],
     [ "spdk_net_framework_fini", "net_8h.html#a3156a346c6cc0aa8cfdcfd26838665a2", null ],
     [ "spdk_net_framework_get_name", "net_8h.html#ab8238acb467f9c6a190aac4e5fb876c8", null ],
-    [ "spdk_net_framework_idle_time", "net_8h.html#a773c1076a2ea78399b37d1ee5849b2a1", null ],
     [ "spdk_net_framework_start", "net_8h.html#a5a23d8fff8a4648d5e0153c77df33264", null ],
     [ "spdk_sock_accept", "net_8h.html#a2a52c164e1608e4b717bb5948a54ea47", null ],
     [ "spdk_sock_close", "net_8h.html#aadf34df0554d3ec43d0d02d0d7110cce", null ],

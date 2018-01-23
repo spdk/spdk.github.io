@@ -158,10 +158,20 @@ var NAVTREE =
       [ "Running An Example", "vagrant.html#vagrant_example", null ]
     ] ],
     [ "vhost", "vhost.html", [
-      [ "vhost Users Guide", "vhost.html#vhost_users_guide", null ],
+      [ "Table of Contents", "vhost.html#vhost_toc", null ],
+      [ "Introduction", "vhost.html#vhost_intro", null ],
       [ "Prerequisites", "vhost.html#vhost_prereqs", null ],
-      [ "Configuration", "vhost.html#vhost_config", null ],
-      [ "Example", "vhost.html#vhost_example", null ],
+      [ "Starting SPDK vhost target", "vhost.html#vhost_start", null ],
+      [ "SPDK Configuration", "vhost.html#vhost_config", [
+        [ "Create bdev (block device)", "vhost.html#vhost_bdev_create", null ],
+        [ "Create a virtio device", "vhost.html#vhost_vdev_create", null ],
+        [ "QEMU", "vhost.html#vhost_qemu_config", null ],
+        [ "Example output", "vhost.html#vhost_example", null ]
+      ] ],
+      [ "Advanced Topics", "vhost.html#vhost_advanced_topics", [
+        [ "Multi-Queue Block Layer (blk-mq)", "vhost.html#vhost_multiqueue", null ],
+        [ "Hot-attach/hot-detach", "vhost.html#vhost_hotattach", null ]
+      ] ],
       [ "Known bugs and limitations", "vhost.html#vhost_bugs", null ]
     ] ],
     [ "Virtio SCSI driver", "virtio.html", [
@@ -197,17 +207,17 @@ var NAVTREEINDEX =
 "directory_structure.html#dir_mk",
 "index.html#performancereports",
 "json_8h.html#aae250e55eb9ac9183315695d5f84cd9fa2e3826a114171e55f375f6203676f716",
-"nvme__intel_8h.html#a381eb66ecd7c1b69677ee540da6ae1a2a4d22ee14b5643abe3a41c103b19eda13",
-"nvme__spec_8h.html#ac3953ec001514cffe849d9c1e3a913e3a024f3c853c3d6e8790514e71ae732b12",
-"nvmf__spec_8h.html#ac62d17c0157d3cc331a12b2881433b06af0491864b4e0d715f35cc39f040f9b38",
-"scsi__spec_8h.html#a950bf8e3371138ceb9649d45e9a96340a2c2ca9407b7adb292d1699520cad7f37",
-"structiscsi__bhs__async.html#ab3f4181eeb61b0c63771cfe1031be7fd",
-"structiscsi__bhs__text__req.html#a1483a47e17703a22847db05efee3655f",
-"structspdk__ioat__pq__update__hw__desc.html#a474f4f823596a703bd1fd113bff56ab4",
-"structspdk__nvme__ctrlr__data.html#ad75c32b71cc58663c7ce07c87b07df9d",
-"structspdk__nvme__primary__ctrl__capabilities.html#a999d8c62755219847e4925ee2c22db84",
-"structspdk__nvmf__tgt__opts.html#a72bd5fb022bc78170f525847246a3a05",
-"unionspdk__nvme__cmbsz__register.html#a8383cf4485e50d528a5da6e201571f42"
+"nvme__intel_8h.html#a381eb66ecd7c1b69677ee540da6ae1a2a4de0d4befabdd84c104321dceb1f8ed5",
+"nvme__spec_8h.html#ac3953ec001514cffe849d9c1e3a913e3a04af85e89b2ad3b0edb4ccd1fe557a13",
+"nvmf__spec_8h.html#ad199a352cba97886b448a596ce71a388",
+"scsi__spec_8h.html#a950bf8e3371138ceb9649d45e9a96340a33f12a9f636ed52bfdb41322de4e757b",
+"structiscsi__bhs__async.html#ab6090caed56792788c6ff65552f14c10",
+"structiscsi__bhs__text__req.html#a16a412e2e93aedb80c220e96bad2afde",
+"structspdk__ioat__pq__update__hw__desc.html#a65a70fe0fdbc70e300446d25659e6710",
+"structspdk__nvme__ctrlr__data.html#ad7d5fadb681d082243965973c4d4850b",
+"structspdk__nvme__primary__ctrl__capabilities.html#a9d7bd410ed4ccef3060a9cd36530896e",
+"structspdk__nvmf__tgt__opts.html#a91e4616c597db06eaebb975a690a7e49",
+"unionspdk__nvme__cmbsz__register.html#aa017da4c8e3418285501ca07822bdbf2"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
