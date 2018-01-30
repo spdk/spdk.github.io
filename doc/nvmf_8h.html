@@ -195,9 +195,9 @@ struct spdk_nvmf_subsystem *&#160;</td><td class="memItemRight" valign="bottom">
 <tr class="memitem:a19b3442b7eb75c234c3e3090d2b5add3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#a19b3442b7eb75c234c3e3090d2b5add3">spdk_nvmf_subsystem_add_host</a> (struct spdk_nvmf_subsystem *subsystem, const char *hostnqn)</td></tr>
 <tr class="memdesc:a19b3442b7eb75c234c3e3090d2b5add3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allow the given host NQN to connect to the given subsystem.  <a href="#a19b3442b7eb75c234c3e3090d2b5add3">More...</a><br /></td></tr>
 <tr class="separator:a19b3442b7eb75c234c3e3090d2b5add3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6f326a7fb95352af81b3ae8b6518b16c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#a6f326a7fb95352af81b3ae8b6518b16c">spdk_nvmf_subsystem_set_allow_any_host</a> (struct spdk_nvmf_subsystem *subsystem, bool allow_any_host)</td></tr>
-<tr class="memdesc:a6f326a7fb95352af81b3ae8b6518b16c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set whether a subsystem should allow any host or only hosts in the allowed list.  <a href="#a6f326a7fb95352af81b3ae8b6518b16c">More...</a><br /></td></tr>
-<tr class="separator:a6f326a7fb95352af81b3ae8b6518b16c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6453b746f3c470e00e23fa4a194cfbd"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#ad6453b746f3c470e00e23fa4a194cfbd">spdk_nvmf_subsystem_set_allow_any_host</a> (struct spdk_nvmf_subsystem *subsystem, bool allow_any_host)</td></tr>
+<tr class="memdesc:ad6453b746f3c470e00e23fa4a194cfbd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set whether a subsystem should allow any host or only hosts in the allowed list.  <a href="#ad6453b746f3c470e00e23fa4a194cfbd">More...</a><br /></td></tr>
+<tr class="separator:ad6453b746f3c470e00e23fa4a194cfbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abc793839e2268a097f97962e79e4a1ef"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#abc793839e2268a097f97962e79e4a1ef">spdk_nvmf_subsystem_get_allow_any_host</a> (const struct spdk_nvmf_subsystem *subsystem)</td></tr>
 <tr class="memdesc:abc793839e2268a097f97962e79e4a1ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check whether a subsystem should allow any host or only hosts in the allowed list.  <a href="#abc793839e2268a097f97962e79e4a1ef">More...</a><br /></td></tr>
 <tr class="separator:abc793839e2268a097f97962e79e4a1ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -406,6 +406,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvmf_ctrlr_disco
 </div><div class="memdoc">
 
 <p>Allow the given host NQN to connect to the given subsystem. </p>
+<p>May only be performed on subsystems in the PAUSED or INACTIVE states.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">subsystem</td><td>Subsystem to add host to </td></tr>
@@ -444,6 +445,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvmf_ctrlr_disco
 </div><div class="memdoc">
 
 <p>Accept new connections on the address provided. </p>
+<p>May only be performed on subsystems in the PAUSED or INACTIVE states.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">subsystem</td><td>Subsystem to add listener to </td></tr>
@@ -488,6 +490,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvmf_ctrlr_disco
 </div><div class="memdoc">
 
 <p>Add a namespace to a subsytem. </p>
+<p>May only be performed on subsystems in the PAUSED or INACTIVE states.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">subsystem</td><td>Subsystem to add namespace to. </td></tr>
@@ -1030,6 +1033,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvmf_ctrlr_disco
 </div><div class="memdoc">
 
 <p>Remove a namespace from a subsytem. </p>
+<p>May only be performed on subsystems in the PAUSED or INACTIVE states.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">subsystem</td><td>Subsystem the namespace belong to. </td></tr>
@@ -1086,14 +1090,14 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvmf_ctrlr_disco
 
 </div>
 </div>
-<a id="a6f326a7fb95352af81b3ae8b6518b16c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6f326a7fb95352af81b3ae8b6518b16c">&#9670;&nbsp;</a></span>spdk_nvmf_subsystem_set_allow_any_host()</h2>
+<a id="ad6453b746f3c470e00e23fa4a194cfbd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad6453b746f3c470e00e23fa4a194cfbd">&#9670;&nbsp;</a></span>spdk_nvmf_subsystem_set_allow_any_host()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void spdk_nvmf_subsystem_set_allow_any_host </td>
+          <td class="memname">int spdk_nvmf_subsystem_set_allow_any_host </td>
           <td>(</td>
           <td class="paramtype">struct spdk_nvmf_subsystem *&#160;</td>
           <td class="paramname"><em>subsystem</em>, </td>
@@ -1113,6 +1117,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvmf_ctrlr_disco
 </div><div class="memdoc">
 
 <p>Set whether a subsystem should allow any host or only hosts in the allowed list. </p>
+<p>May only be performed on subsystems in the PAUSED or INACTIVE states.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">subsystem</td><td>Subsystem to modify. </td></tr>
@@ -1120,6 +1125,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvmf_ctrlr_disco
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success. Negated errno value on failure. </dd></dl>
 
 </div>
 </div>

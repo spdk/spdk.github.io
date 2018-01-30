@@ -12,7 +12,7 @@ var NAVTREE =
     ] ],
     [ "What is SPDK?", "about.html", null ],
     [ "Changelog", "changelog.html", [
-      [ "v18.01: (Upcoming Release)", "changelog.html#changelog-v18-01", null ],
+      [ "v18.01: Blobstore Thin Provisioning", "changelog.html#changelog-v18-01", null ],
       [ "v17.10: Logical Volumes", "changelog.html#changelog-v17-10", null ],
       [ "v17.07: Build system improvements, userspace vhost-blk target, and GPT bdev", "changelog.html#changelog-v17-07", null ],
       [ "v17.03: Blobstore and userspace vhost-scsi target", "changelog.html#changelog-v17-03", null ],
@@ -118,12 +118,19 @@ var NAVTREE =
       [ "RPC overview", "logical_volumes.html#lvol_rpc", null ]
     ] ],
     [ "NVMe Driver", "nvme.html", [
+      [ "In this document", "nvme.html#nvme_toc", null ],
       [ "Introduction", "nvme.html#nvme_intro", null ],
-      [ "Examples", "nvme.html#nvme_examples", null ],
-      [ "Running Benchmarks", "nvme.html#nvme_benchmarks", null ],
+      [ "Examples", "nvme.html#nvme_examples", [
+        [ "Getting Start with Hello World", "nvme.html#nvme_helloworld", null ],
+        [ "Running Benchmarks with Fio Plugin", "nvme.html#nvme_fioplugin", null ],
+        [ "Running Benchmarks with Perf Tool", "nvme.html#nvme_perf", null ]
+      ] ],
       [ "Public Interface", "nvme.html#nvme_interface", null ],
-      [ "NVMe I/O Submission", "nvme.html#nvme_io_submission", [
-        [ "Scaling Performance", "nvme.html#nvme_scaling", null ]
+      [ "NVMe Driver Design", "nvme.html#nvme_design", [
+        [ "NVMe I/O Submission", "nvme.html#nvme_io_submission", [
+          [ "Scaling Performance", "nvme.html#nvme_scaling", null ]
+        ] ],
+        [ "NVMe Driver Internal Memory Usage", "nvme.html#nvme_memory_usage", null ]
       ] ],
       [ "NVMe over Fabrics Host Support", "nvme.html#nvme_fabrics_host", [
         [ "Specifying Remote NVMe over Fabrics Targets", "nvme.html#nvme_fabrics_trid", null ]
@@ -140,10 +147,11 @@ var NAVTREE =
         [ "Prerequisites", "nvmf.html#nvmf_prereqs", null ],
         [ "Prerequisites for InfiniBand/RDMA Verbs", "nvmf.html#nvmf_prereqs_verbs", null ],
         [ "Prerequisites for RDMA NICs", "nvmf.html#nvmf_prereqs_rdma_nics", null ],
-        [ "Configuring NVMe over Fabrics Target", "nvmf.html#nvmf_config", null ],
-        [ "Configuring NVMe over Fabrics Host", "nvmf.html#nvmf_host", null ],
-        [ "Assigning CPU Cores to the NVMe over Fabrics Target", "nvmf.html#nvmf_config_lcore", null ],
-        [ "Emulating an NVMe controller", "nvmf.html#nvmf_config_virtual_controller", null ]
+        [ "Configuring the SPDK NVMe over Fabrics Target", "nvmf.html#nvmf_config", [
+          [ "Subsystem Configuration", "nvmf.html#nvmf_config_subsystem", null ],
+          [ "Assigning CPU Cores to the NVMe over Fabrics Target", "nvmf.html#nvmf_config_lcore", null ]
+        ] ],
+        [ "Configuring the Linux NVMe over Fabrics Host", "nvmf.html#nvmf_host", null ]
       ] ]
     ] ],
     [ "User Space Drivers", "userspace.html", [
@@ -204,20 +212,20 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "about.html",
-"directory_structure.html#dir_mk",
-"index.html#performancereports",
-"json_8h.html#aae250e55eb9ac9183315695d5f84cd9fa2e3826a114171e55f375f6203676f716",
-"nvme__intel_8h.html#a381eb66ecd7c1b69677ee540da6ae1a2a4de0d4befabdd84c104321dceb1f8ed5",
-"nvme__spec_8h.html#ac3953ec001514cffe849d9c1e3a913e3a04af85e89b2ad3b0edb4ccd1fe557a13",
-"nvmf__spec_8h.html#ad199a352cba97886b448a596ce71a388",
-"scsi__spec_8h.html#a950bf8e3371138ceb9649d45e9a96340a33f12a9f636ed52bfdb41322de4e757b",
-"structiscsi__bhs__async.html#ab6090caed56792788c6ff65552f14c10",
-"structiscsi__bhs__text__req.html#a16a412e2e93aedb80c220e96bad2afde",
-"structspdk__ioat__pq__update__hw__desc.html#a65a70fe0fdbc70e300446d25659e6710",
-"structspdk__nvme__ctrlr__data.html#ad7d5fadb681d082243965973c4d4850b",
-"structspdk__nvme__primary__ctrl__capabilities.html#a9d7bd410ed4ccef3060a9cd36530896e",
-"structspdk__nvmf__tgt__opts.html#a91e4616c597db06eaebb975a690a7e49",
-"unionspdk__nvme__cmbsz__register.html#aa017da4c8e3418285501ca07822bdbf2"
+"crc32_8h.html#a51fc46bdf29f35610a0c99ae6ad0e009",
+"histogram__data_8h.html#a873e5e5fe2c61b1724fa588df020d66a",
+"json_8h.html#a5ba97519fb4d8431f8b5241379a06b2e",
+"nvme_8h.html#af02e8c701c5496f163a69917ad5397dd",
+"nvme__spec_8h.html#aa7e108757c0eebbac7e13b598a378210a8e0e2c7b955909ddf6aafad3e149dce9",
+"nvmf__spec_8h.html#a87bd863f9d02822c078fb4446141ce25",
+"scsi__spec_8h.html#a5b1c00e75e7ab3fffcca57bde36d43faa687f53602c78f7246e96ff77df374b36",
+"structiscsi__bhs.html#ac71a83e89467d22b6b78c9937964e3dc",
+"structiscsi__bhs__task__req.html#ae8414df0226ca4602d2464dfff1d9f53",
+"structspdk__ioat__pq__hw__desc.html#a60c94d03450403ec46b2318088971f73",
+"structspdk__nvme__ctrlr__data.html#ab2ab97678318cd3a557650b17a0c133e",
+"structspdk__nvme__power__state.html#a590a64286a4f7bbc67dbdca13a59cde0",
+"structspdk__nvmf__rdma__accept__private__data.html#a04fc397faefc26fa6b0db3527416d7a1",
+"unionspdk__nvme__cc__register.html#a6be5f13e66cd6fd34c1463147cdfb106"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

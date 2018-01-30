@@ -110,7 +110,7 @@ $(document).ready(function(){initNavTree('changelog.html','');});
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><h1><a class="anchor" id="changelog-v18-01"></a>
-v18.01: (Upcoming Release)</h1>
+v18.01: Blobstore Thin Provisioning</h1>
 <h2>Build System</h2>
 <p>The build system now includes a <code>make install</code> rule, including support for the common <code>DESTDIR</code> and <code>prefix</code> variables as used in other build systems. Additionally, the prefix may be set via the configure <code>--prefix</code> option. Example: <code>make install prefix=/usr</code>.</p>
 <h2>RPC</h2>
@@ -149,6 +149,7 @@ v18.01: (Upcoming Release)</h1>
 </ul>
 <p>The function signature of spdk_blob_close() has changed. It now takes a struct spdk_blob * argument rather than struct spdk_blob **.</p>
 <p>The function signature of spdk_bs_iter_next() has changed. It now takes a struct spdk_blob * argument rather than struct spdk_blob **.</p>
+<p>Thin provisioning support has been added to the blobstore. It can be enabled by setting the <code>thin_provision</code> flag in struct <a class="el" href="structspdk__blob__opts.html">spdk_blob_opts</a> when calling spdk_bs_create_blob_ext().</p>
 <h2>NBD device</h2>
 <p>The NBD application (test/lib/bdev/nbd) has been removed; Same functionality can now be achieved by using the test/app/bdev_svc application and start_nbd_disk RPC method. See the <a href="http://www.spdk.io/doc/bdev.html#bdev_config_gpt">GPT</a> documentation for more details.</p>
 <h2>FIO plugin</h2>
@@ -206,6 +207,8 @@ v17.10: Logical Volumes</h1>
 <h2>Virtio SCSI driver</h2>
 <p>A userspace driver for Virtio SCSI devices has been added. The driver is capable of creating block devices on top of LUNs exposed by another SPDK vhost-scsi application.</p>
 <p>See the <a href="http://www.spdk.io/doc/virtio.html">Virtio SCSI</a> documentation and <a href="http://www.spdk.io/doc/bdev.html#bdev_config_virtio_scsi">Getting Started</a> guide for more information.</p>
+<h2>Vhost target</h2>
+<p>The vhost target application now supports live migration between QEMU instances.</p>
 <h1><a class="anchor" id="changelog-v17-07"></a>
 v17.07: Build system improvements, userspace vhost-blk target, and GPT bdev</h1>
 <h2>Build System</h2>

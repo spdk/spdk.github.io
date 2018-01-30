@@ -9,6 +9,7 @@ var files =
     [ "blobfs.h", "blobfs_8h.html", "blobfs_8h" ],
     [ "conf.h", "conf_8h.html", "conf_8h" ],
     [ "copy_engine.h", "copy__engine_8h.html", "copy__engine_8h" ],
+    [ "cpuset.h", "cpuset_8h.html", "cpuset_8h" ],
     [ "crc16.h", "crc16_8h.html", "crc16_8h" ],
     [ "crc32.h", "crc32_8h.html", "crc32_8h" ],
     [ "endian.h", "endian_8h.html", "endian_8h" ],

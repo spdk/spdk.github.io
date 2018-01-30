@@ -162,9 +162,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ac2c5d67c2711ee149784f5e5e5be0b7a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lvol_8h.html#ac2c5d67c2711ee149784f5e5e5be0b7a">spdk_lvs_destroy</a> (struct spdk_lvol_store *lvol_store, <a class="el" href="lvol_8h.html#a76f85d046acb7b35ae36dc83cf337075">spdk_lvs_op_complete</a> cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:ac2c5d67c2711ee149784f5e5e5be0b7a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy lvolstore.  <a href="#ac2c5d67c2711ee149784f5e5e5be0b7a">More...</a><br /></td></tr>
 <tr class="separator:ac2c5d67c2711ee149784f5e5e5be0b7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a416357d9c44b93ef7b3e5c9a49c91f97"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lvol_8h.html#a416357d9c44b93ef7b3e5c9a49c91f97">spdk_lvol_create</a> (struct spdk_lvol_store *lvs, const char *name, uint64_t sz, <a class="el" href="lvol_8h.html#a453c8a7896aafb644e21e1e960ab3759">spdk_lvol_op_with_handle_complete</a> cb_fn, void *cb_arg)</td></tr>
-<tr class="memdesc:a416357d9c44b93ef7b3e5c9a49c91f97"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create lvol on given lvolstore with specified size.  <a href="#a416357d9c44b93ef7b3e5c9a49c91f97">More...</a><br /></td></tr>
-<tr class="separator:a416357d9c44b93ef7b3e5c9a49c91f97"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c609283ea9561451679c0813c71d06b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lvol_8h.html#a4c609283ea9561451679c0813c71d06b">spdk_lvol_create</a> (struct spdk_lvol_store *lvs, const char *name, uint64_t sz, bool thin_provisioned, <a class="el" href="lvol_8h.html#a453c8a7896aafb644e21e1e960ab3759">spdk_lvol_op_with_handle_complete</a> cb_fn, void *cb_arg)</td></tr>
+<tr class="memdesc:a4c609283ea9561451679c0813c71d06b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create lvol on given lvolstore with specified size.  <a href="#a4c609283ea9561451679c0813c71d06b">More...</a><br /></td></tr>
+<tr class="separator:a4c609283ea9561451679c0813c71d06b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a87c4dadc88c211fb4e8ba0cddc474032"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lvol_8h.html#a87c4dadc88c211fb4e8ba0cddc474032">spdk_lvol_destroy</a> (struct spdk_lvol *lvol, <a class="el" href="lvol_8h.html#a4d5c96c4fe4512f99dcb3f1e5d5e86be">spdk_lvol_op_complete</a> cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:a87c4dadc88c211fb4e8ba0cddc474032"><td class="mdescLeft">&#160;</td><td class="mdescRight">Closes lvol and removes information about lvol from its lvolstore.  <a href="#a87c4dadc88c211fb4e8ba0cddc474032">More...</a><br /></td></tr>
 <tr class="separator:a87c4dadc88c211fb4e8ba0cddc474032"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -323,8 +323,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_lvol_open</b> (s
 
 </div>
 </div>
-<a id="a416357d9c44b93ef7b3e5c9a49c91f97"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a416357d9c44b93ef7b3e5c9a49c91f97">&#9670;&nbsp;</a></span>spdk_lvol_create()</h2>
+<a id="a4c609283ea9561451679c0813c71d06b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4c609283ea9561451679c0813c71d06b">&#9670;&nbsp;</a></span>spdk_lvol_create()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -346,6 +346,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_lvol_open</b> (s
           <td></td>
           <td class="paramtype">uint64_t&#160;</td>
           <td class="paramname"><em>sz</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>thin_provisioned</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -373,6 +379,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_lvol_open</b> (s
     <tr><td class="paramname">lvs</td><td>Handle to lvolstore </td></tr>
     <tr><td class="paramname">name</td><td>Name of lvol </td></tr>
     <tr><td class="paramname">sz</td><td>size of lvol in bytes </td></tr>
+    <tr><td class="paramname">thin_provisioned</td><td>Enables thin provisioning </td></tr>
     <tr><td class="paramname">cb_fn</td><td>Completion callback </td></tr>
     <tr><td class="paramname">cb_arg</td><td>Completion callback custom arguments </td></tr>
   </table>
