@@ -109,17 +109,33 @@ $(document).ready(function(){initNavTree('nvme.html','');});
 <div class="title">NVMe Driver </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h1><a class="anchor" id="nvme_intro"></a>
+<div class="textblock"><h1><a class="anchor" id="nvme_toc"></a>
+In this document</h1>
+<ul>
+<li><a class="el" href="nvme.html#nvme_intro">Introduction</a></li>
+<li><a class="el" href="nvme.html#nvme_examples">Examples</a></li>
+<li><a class="el" href="nvme.html#nvme_interface">Public Interface</a></li>
+<li><a class="el" href="nvme.html#nvme_design">NVMe Driver Design</a></li>
+<li><a class="el" href="nvme.html#nvme_fabrics_host">NVMe over Fabrics Host Support</a></li>
+<li><a class="el" href="nvme.html#nvme_multi_process">NVMe Multi Process</a></li>
+<li><a class="el" href="nvme.html#nvme_hotplug">NVMe Hotplug</a></li>
+</ul>
+<h1><a class="anchor" id="nvme_intro"></a>
 Introduction</h1>
 <p>The NVMe driver is a C library that may be linked directly into an application that provides direct, zero-copy data transfer to and from <a href="http://nvmexpress.org/">NVMe SSDs</a>. It is entirely passive, meaning that it spawns no threads and only performs actions in response to function calls from the application itself. The library controls NVMe devices by directly mapping the <a href="https://en.wikipedia.org/wiki/PCI_configuration_space">PCI BAR</a> into the local process and performing <a href="https://en.wikipedia.org/wiki/Memory-mapped_I/O">MMIO</a>. I/O is submitted asynchronously via queue pairs and the general flow isn't entirely dissimilar from Linux's <a href="http://man7.org/linux/man-pages/man2/io_submit.2.html">libaio</a>.</p>
 <p>More recently, the library has been improved to also connect to remote NVMe devices via NVMe over Fabrics. Users may now call <a class="el" href="nvme_8h.html#a225bbc386ec518ae21bd5536f21db45d" title="Enumerate the bus indicated by the transport ID and attach the userspace NVMe driver to each device f...">spdk_nvme_probe()</a> on both local PCI busses and on remote NVMe over Fabrics discovery services. The API is otherwise unchanged.</p>
 <h1><a class="anchor" id="nvme_examples"></a>
 Examples</h1>
+<h2><a class="anchor" id="nvme_helloworld"></a>
+Getting Start with Hello World</h2>
 <p>There are a number of examples provided that demonstrate how to use the NVMe library. They are all in the <a href="https://github.com/spdk/spdk/tree/master/examples/nvme">examples/nvme</a> directory in the repository. The best place to start is <a href="https://github.com/spdk/spdk/blob/master/examples/nvme/hello_world/hello_world.c">hello_world</a>.</p>
-<h1><a class="anchor" id="nvme_benchmarks"></a>
-Running Benchmarks</h1>
+<h2><a class="anchor" id="nvme_fioplugin"></a>
+Running Benchmarks with Fio Plugin</h2>
 <p>SPDK provides a plugin to the very popular <a href="https://github.com/axboe/fio">fio</a> tool for running some basic benchmarks. See the fio start up <a href="https://github.com/spdk/spdk/blob/master/examples/nvme/fio_plugin/">guide</a> for more details.</p>
-<h1><a class="anchor" id="nvme_interface"></a>
+<h2><a class="anchor" id="nvme_perf"></a>
+Running Benchmarks with Perf Tool</h2>
+<p>NVMe perf utility in the <a href="https://github.com/spdk/spdk/tree/master/examples/nvme/perf">examples/nvme/perf</a> is one of the examples which also can be used for performance tests. The fio tool is widely used because it is very flexible. However, that flexibility adds overhead and reduces the efficiency of SPDK. Therefore, SPDK provides a perf benchmarking tool which has minimal overhead during benchmarking. We have measured up to 2.6 times more IOPS/core when using perf vs. fio with the 4K 100% Random Read workload. The perf benchmarking tool provides several run time options to support the most common workload. The following examples demonstrate how to use perf.</p>
+<p>Example: Using perf for 4K 100% Random Read workload to a local NVMe SSD for 300 seconds </p><div class="fragment"><div class="line">perf -q 128 -s 4096 -w randread -r &#39;trtype:PCIe traddr:0000:04:00.0&#39; -t 300</div></div><!-- fragment --><p>Example: Using perf for 4K 100% Random Read workload to a remote NVMe SSD exported over the network via NVMe-oF </p><div class="fragment"><div class="line">perf -q 128 -s 4096 -w randread -r &#39;trtype:RDMA adrfam:IPv4 traddr:192.168.100.8 trsvcid:4420&#39; -t 300</div></div><!-- fragment --><p>Example: Using perf for 4K 70/30 Random Read/Write mix workload to all local NVMe SSDs for 300 seconds </p><div class="fragment"><div class="line">perf -q 128 -s 4096 -w randrw -M 70 -t 300</div></div><!-- fragment --><p>Example: Using perf for extended LBA format CRC guard test to a local NVMe SSD, users must write to the SSD before reading the LBA from SSD </p><div class="fragment"><div class="line">perf -q 1 -s 4096 -w write -r &#39;trtype:PCIe traddr:0000:04:00.0&#39; -t 300 -e &#39;PRACT=0,PRCKH=GUARD&#39;</div><div class="line">perf -q 1 -s 4096 -w read -r &#39;trtype:PCIe traddr:0000:04:00.0&#39; -t 200 -e &#39;PRACT=0,PRCKH=GUARD&#39;</div></div><!-- fragment --><h1><a class="anchor" id="nvme_interface"></a>
 Public Interface</h1>
 <ul>
 <li><a class="el" href="nvme_8h.html" title="NVMe driver public API. ">spdk/nvme.h</a></li>
@@ -136,7 +152,17 @@ Public Interface</h1>
 <tr>
 <td><a class="el" href="nvme_8h.html#a084c6ecb53bd810fbb5051100b79bec5" title="Submits a read I/O to the specified NVMe namespace. ">spdk_nvme_ns_cmd_read()</a> </td><td>Submits a read I/O to the specified NVMe namespace. </td></tr>
 <tr>
+<td><a class="el" href="nvme_8h.html#acb47ce7de6b6e963ec9fb8de261466ae" title="Submits a read I/O to the specified NVMe namespace. ">spdk_nvme_ns_cmd_readv()</a> </td><td>Submits a read I/O to the specified NVMe namespace. </td></tr>
+<tr>
+<td><a class="el" href="nvme_8h.html#aa2913b93326e636eca6dfe7b42e349fe" title="Submits a read I/O to the specified NVMe namespace. ">spdk_nvme_ns_cmd_read_with_md()</a> </td><td>Submits a read I/O to the specified NVMe namespace. </td></tr>
+<tr>
 <td><a class="el" href="nvme_8h.html#a3065f669d8b605efdcadffbf94a50538" title="Submits a write I/O to the specified NVMe namespace. ">spdk_nvme_ns_cmd_write()</a> </td><td>Submits a write I/O to the specified NVMe namespace. </td></tr>
+<tr>
+<td><a class="el" href="nvme_8h.html#adfcbb5d31f0b572847cc8ae8b07dfcfb" title="Submits a write I/O to the specified NVMe namespace. ">spdk_nvme_ns_cmd_writev()</a> </td><td>Submits a write I/O to the specified NVMe namespace. </td></tr>
+<tr>
+<td><a class="el" href="nvme_8h.html#adc2aa2be0d657be0c63d5abc02b274ec" title="Submits a write I/O to the specified NVMe namespace. ">spdk_nvme_ns_cmd_write_with_md()</a> </td><td>Submits a write I/O to the specified NVMe namespace. </td></tr>
+<tr>
+<td><a class="el" href="nvme_8h.html#af02e8c701c5496f163a69917ad5397dd" title="Submits a write zeroes I/O to the specified NVMe namespace. ">spdk_nvme_ns_cmd_write_zeroes()</a> </td><td><a class="el" href="nvme_8h.html#af02e8c701c5496f163a69917ad5397dd" title="Submits a write zeroes I/O to the specified NVMe namespace. ">spdk_nvme_ns_cmd_write_zeroes()</a> </td></tr>
 <tr>
 <td><a class="el" href="nvme_8h.html#ac0c646dd18675c54ffcf834ce699658d" title="Submits a data set management request to the specified NVMe namespace. ">spdk_nvme_ns_cmd_dataset_management()</a> </td><td>Submits a data set management request to the specified NVMe namespace. </td></tr>
 <tr>
@@ -147,17 +173,28 @@ Public Interface</h1>
 <td><a class="el" href="nvme_8h.html#afe2a9d3b715649b4d0a0e89196a13e6d" title="Send the given admin command to the NVMe controller. ">spdk_nvme_ctrlr_cmd_admin_raw()</a> </td><td>Send the given admin command to the NVMe controller. </td></tr>
 <tr>
 <td><a class="el" href="nvme_8h.html#a10282695461985f58f54de022911745e" title="Process any outstanding completions for admin commands. ">spdk_nvme_ctrlr_process_admin_completions()</a> </td><td>Process any outstanding completions for admin commands. </td></tr>
+<tr>
+<td><a class="el" href="nvme_8h.html#a1e3def668122e76abbfb74305f118291" title="Send the given NVM I/O command to the NVMe controller. ">spdk_nvme_ctrlr_cmd_io_raw()</a> </td><td>Send the given NVM I/O command to the NVMe controller. </td></tr>
+<tr>
+<td><a class="el" href="nvme_8h.html#afd2d8453bb2478c7b1a70c0a09c7ef4b" title="Send the given NVM I/O command with metadata to the NVMe controller. ">spdk_nvme_ctrlr_cmd_io_raw_with_md()</a> </td><td>Send the given NVM I/O command with metadata to the NVMe controller. </td></tr>
 </table>
-<h1><a class="anchor" id="nvme_io_submission"></a>
-NVMe I/O Submission</h1>
+<h1><a class="anchor" id="nvme_design"></a>
+NVMe Driver Design</h1>
+<h2><a class="anchor" id="nvme_io_submission"></a>
+NVMe I/O Submission</h2>
 <p>I/O is submitted to an NVMe namespace using nvme_ns_cmd_xxx functions. The NVMe driver submits the I/O request as an NVMe submission queue entry on the queue pair specified in the command. The function returns immediately, prior to the completion of the command. The application must poll for I/O completion on each queue pair with outstanding I/O to receive completion callbacks by calling <a class="el" href="nvme_8h.html#aa331d140870e977722bfbb6826524782" title="Process any outstanding completions for I/O submitted on a queue pair. ">spdk_nvme_qpair_process_completions()</a>.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="nvme_8h.html#a084c6ecb53bd810fbb5051100b79bec5" title="Submits a read I/O to the specified NVMe namespace. ">spdk_nvme_ns_cmd_read</a>, <a class="el" href="nvme_8h.html#a3065f669d8b605efdcadffbf94a50538" title="Submits a write I/O to the specified NVMe namespace. ">spdk_nvme_ns_cmd_write</a>, <a class="el" href="nvme_8h.html#ac0c646dd18675c54ffcf834ce699658d" title="Submits a data set management request to the specified NVMe namespace. ">spdk_nvme_ns_cmd_dataset_management</a>, <a class="el" href="nvme_8h.html#aed0b134e140121bb9bd8664d4a43a5c6" title="Submits a flush request to the specified NVMe namespace. ">spdk_nvme_ns_cmd_flush</a>, <a class="el" href="nvme_8h.html#aa331d140870e977722bfbb6826524782" title="Process any outstanding completions for I/O submitted on a queue pair. ">spdk_nvme_qpair_process_completions</a></dd></dl>
-<h2><a class="anchor" id="nvme_scaling"></a>
-Scaling Performance</h2>
+<h3><a class="anchor" id="nvme_scaling"></a>
+Scaling Performance</h3>
 <p>NVMe queue pairs (struct spdk_nvme_qpair) provide parallel submission paths for I/O. I/O may be submitted on multiple queue pairs simultaneously from different threads. Queue pairs contain no locks or atomics, however, so a given queue pair may only be used by a single thread at a time. This requirement is not enforced by the NVMe driver (doing so would require a lock), and violating this requirement results in undefined behavior.</p>
 <p>The number of queue pairs allowed is dictated by the NVMe SSD itself. The specification allows for thousands, but most devices support between 32 and 128. The specification makes no guarantees about the performance available from each queue pair, but in practice the full performance of a device is almost always achievable using just one queue pair. For example, if a device claims to be capable of 450,000 I/O per second at queue depth 128, in practice it does not matter if the driver is using 4 queue pairs each with queue depth 32, or a single queue pair with queue depth 128.</p>
 <p>Given the above, the easiest threading model for an application using SPDK is to spawn a fixed number of threads in a pool and dedicate a single NVMe queue pair to each thread. A further improvement would be to pin each thread to a separate CPU core, and often the SPDK documentation will use "CPU core" and "thread" interchangeably because we have this threading model in mind.</p>
 <p>The NVMe driver takes no locks in the I/O path, so it scales linearly in terms of performance per thread as long as a queue pair and a CPU core are dedicated to each new thread. In order to take full advantage of this scaling, applications should consider organizing their internal data structures such that data is assigned exclusively to a single thread. All operations that require that data should be done by sending a request to the owning thread. This results in a message passing architecture, as opposed to a locking architecture, and will result in superior scaling across CPU cores.</p>
+<h2><a class="anchor" id="nvme_memory_usage"></a>
+NVMe Driver Internal Memory Usage</h2>
+<p>The SPDK NVMe driver provides a zero-copy data transfer path, which means that there are no data buffers for I/O commands. However, some Admin commands have data copies depending on the API used by the user.</p>
+<p>Each queue pair has a number of trackers used to track commands submitted by the caller. The number trackers for I/O queues depend on the users' input for queue size and the value read from controller capabilities register field Maximum Queue Entries Supported(MQES, 0 based value). Each tracker has a fixed size 4096 Bytes, so the maximum memory used for each I/O queue is: (MQES + 1) * 4 KiB.</p>
+<p>I/O queue pairs can be allocated in host memory, this is used for most NVMe controllers, some NVMe controllers which can support Controller Memory Buffer may put I/O queue pairs at controllers' PCI BAR space, SPDK NVMe driver can put I/O submission queue into controller memory buffer, it depends on users' input and controller capabilities. Each submission queue entry (SQE) and completion queue entry (CQE) consumes 64 bytes and 16 bytes respectively. Therefore, the maximum memory used for each I/O queue pair is (MQES + 1) * (64 + 16) Bytes.</p>
 <h1><a class="anchor" id="nvme_fabrics_host"></a>
 NVMe over Fabrics Host Support</h1>
 <p>The NVMe driver supports connecting to remote NVMe-oF targets and interacting with them in the same manner as local NVMe SSDs.</p>
