@@ -3,10 +3,17 @@ layout: default
 title:  "SPDK Roadmap"
 ---
 
-# Version 18.01 (planned for January 2018)
+# Version 18.04 (planned for April 2018)
 
 * [JSON-based Configuration](https://trello.com/c/U97MLUCJ)
 * [QoS in Bdev](https://trello.com/b/domGQvZc/qos-in-bdev)
+
+# Version 18.01 (January 2018)
+
+[v18.01 release](https://github.com/spdk/spdk/releases/tag/v18.01)
+
+* Blobstore and logical volume thin provisoning
+* Vhost live migration
 
 # Version 17.10 (October 2017)
 
