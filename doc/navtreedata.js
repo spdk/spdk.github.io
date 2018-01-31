@@ -154,6 +154,7 @@ var NAVTREE =
         [ "Configuring the Linux NVMe over Fabrics Host", "nvmf.html#nvmf_host", null ]
       ] ]
     ] ],
+    [ "SSD Internals", "ssd_internals.html", null ],
     [ "User Space Drivers", "userspace.html", [
       [ "Controlling Hardware From User Space", "userspace.html#userspace_control", null ],
       [ "Interrupts", "userspace.html#userspace_interrupts", null ],
@@ -184,7 +185,6 @@ var NAVTREE =
     ] ],
     [ "Virtio SCSI driver", "virtio.html", [
       [ "Introduction", "virtio.html#virtio_intro", null ],
-      [ "Multiqueue", "virtio.html#virtio_multiqueue", null ],
       [ "Limitations", "virtio.html#virtio_limitations", null ]
     ] ],
     [ "Data Structures", "annotated.html", [
@@ -219,13 +219,13 @@ var NAVTREEINDEX =
 "nvme__spec_8h.html#aa7e108757c0eebbac7e13b598a378210a8e0e2c7b955909ddf6aafad3e149dce9",
 "nvmf__spec_8h.html#a87bd863f9d02822c078fb4446141ce25",
 "scsi__spec_8h.html#a5b1c00e75e7ab3fffcca57bde36d43faa687f53602c78f7246e96ff77df374b36",
-"structiscsi__bhs.html#ac71a83e89467d22b6b78c9937964e3dc",
-"structiscsi__bhs__task__req.html#ae8414df0226ca4602d2464dfff1d9f53",
-"structspdk__ioat__pq__hw__desc.html#a60c94d03450403ec46b2318088971f73",
-"structspdk__nvme__ctrlr__data.html#ab2ab97678318cd3a557650b17a0c133e",
-"structspdk__nvme__power__state.html#a590a64286a4f7bbc67dbdca13a59cde0",
-"structspdk__nvmf__rdma__accept__private__data.html#a04fc397faefc26fa6b0db3527416d7a1",
-"unionspdk__nvme__cc__register.html#a6be5f13e66cd6fd34c1463147cdfb106"
+"structiscsi__bhs.html#ac0add3f4475f40b8ce34df8f2d7c8022",
+"structiscsi__bhs__task__req.html#ae2931595e50aa6e8423102e2bdef0a33",
+"structspdk__ioat__pq__hw__desc.html#a5f553e83968498be97d4a5152320a580",
+"structspdk__nvme__ctrlr__data.html#ab0bef3d8a7467ebefeeb9033f26da3b1",
+"structspdk__nvme__power__state.html#a48bfad6dda1c71752d3c335d3e6657c0",
+"structspdk__nvmf__rdma__accept__private__data.html",
+"unionspdk__nvme__cc__register.html#a31eeb54f921dad6b455d815e124a6dbb"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
