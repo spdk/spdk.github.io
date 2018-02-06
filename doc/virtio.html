@@ -111,12 +111,12 @@ $(document).ready(function(){initNavTree('virtio.html','');});
 <div class="contents">
 <div class="textblock"><h1><a class="anchor" id="virtio_intro"></a>
 Introduction</h1>
-<p>Virtio SCSI driver is an initiator for SPDK <a class="el" href="vhost.html">vhost</a> application. The driver allows any SPDK app to connect to another SPDK instance exposing a vhost-scsi device. The driver will enumerate targets on the device (which acts as a SCSI controller) and create <em>virtual</em> bdevs usable by any SPDK application. Sending an I/O request to the Virtio SCSI bdev will put the request data into a Virtio queue that is processed by the host SPDK app exposing the controller. The host, after sending I/O to the real drive, will put the response back into the Virtio queue. Then, the response is received by the Virtio SCSI driver.</p>
+<p>Virtio SCSI driver is an initiator for SPDK <a class="el" href="vhost.html">vhost Target</a> application. The driver allows any SPDK app to connect to another SPDK instance exposing a vhost-scsi device. The driver will enumerate targets on the device (which acts as a SCSI controller) and create <em>virtual</em> bdevs usable by any SPDK application. Sending an I/O request to the Virtio SCSI bdev will put the request data into a Virtio queue that is processed by the host SPDK app exposing the controller. The host, after sending I/O to the real drive, will put the response back into the Virtio queue. Then, the response is received by the Virtio SCSI driver.</p>
 <p>Virtio SCSI driver supports two different usage models:</p><ul>
 <li>PCI - This is the standard mode of operation when used in a guest virtual machine, where QEMU has presented the virtio-scsi controller as a virtual PCI device.</li>
 <li>User vhost - Can be used to connect to a vhost-scsi socket directly on the same host.</li>
 </ul>
-<p>The driver, just like the SPDK <a class="el" href="vhost.html">vhost</a>, is using pollers instead of standard interrupts to check for an I/O response. If used inside a VM, it bypasses interrupt and context switching overhead of QEMU and guest kernel, significantly boosting the overall I/O performance.</p>
+<p>The driver, just like the SPDK <a class="el" href="vhost.html">vhost Target</a>, is using pollers instead of standard interrupts to check for an I/O response. If used inside a VM, it bypasses interrupt and context switching overhead of QEMU and guest kernel, significantly boosting the overall I/O performance.</p>
 <h1><a class="anchor" id="virtio_limitations"></a>
 Limitations</h1>
 <p>Current Virtio-SCSI implementation has a couple of limitations:</p><ul>

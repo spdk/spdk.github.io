@@ -4,6 +4,7 @@ var blob_8h =
     [ "spdk_bs_dev", "structspdk__bs__dev.html", "structspdk__bs__dev" ],
     [ "spdk_bs_type", "structspdk__bs__type.html", "structspdk__bs__type" ],
     [ "spdk_bs_opts", "structspdk__bs__opts.html", "structspdk__bs__opts" ],
+    [ "spdk_blob_xattr_opts", "structspdk__blob__xattr__opts.html", "structspdk__blob__xattr__opts" ],
     [ "spdk_blob_opts", "structspdk__blob__opts.html", "structspdk__blob__opts" ],
     [ "SPDK_BLOBID_INVALID", "blob_8h.html#a3caeda168fe1a5b8b809b546d92eede2", null ],
     [ "SPDK_BLOBSTORE_TYPE_LENGTH", "blob_8h.html#a18bbf0471f09e63cd362ed279b71deb5", null ],

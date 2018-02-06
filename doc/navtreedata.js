@@ -12,6 +12,7 @@ var NAVTREE =
     ] ],
     [ "What is SPDK?", "about.html", null ],
     [ "Changelog", "changelog.html", [
+      [ "v18.04: (Upcoming Release)", "changelog.html#changelog-v18-04", null ],
       [ "v18.01: Blobstore Thin Provisioning", "changelog.html#changelog-v18-01", null ],
       [ "v17.10: Logical Volumes", "changelog.html#changelog-v17-10", null ],
       [ "v17.07: Build system improvements, userspace vhost-blk target, and GPT bdev", "changelog.html#changelog-v17-07", null ],
@@ -46,11 +47,6 @@ var NAVTREE =
     ] ],
     [ "Memory Management for User Space Drivers", "memory.html", null ],
     [ "SPDK Porting Guide", "porting.html", null ],
-    [ "Blobstore", "blob.html", null ],
-    [ "BlobFS (Blobstore Filesystem)", "blobfs.html", [
-      [ "BlobFS Getting Started Guide", "blobfs.html#blobfs_getting_started", null ],
-      [ "RocksDB Integration", "blobfs.html#blobfs_rocksdb", null ]
-    ] ],
     [ "Block Device Layer", "bdev.html", [
       [ "Introduction", "bdev.html#bdev_getting_started", null ],
       [ "Configuring block devices", "bdev.html#bdev_config", [
@@ -64,7 +60,14 @@ var NAVTREE =
         [ "GPT (GUID Partition Table)", "bdev.html#bdev_config_gpt", null ]
       ] ]
     ] ],
-    [ "Event framework", "event.html", [
+    [ "Writing a Custom Block Device Module", "bdev_module.html", null ],
+    [ "Block Device Layer Programming Guide", "bdev_pg.html", null ],
+    [ "Blobstore", "blob.html", null ],
+    [ "BlobFS (Blobstore Filesystem)", "blobfs.html", [
+      [ "BlobFS Getting Started Guide", "blobfs.html#blobfs_getting_started", null ],
+      [ "RocksDB Integration", "blobfs.html#blobfs_rocksdb", null ]
+    ] ],
+    [ "Event Framework", "event.html", [
       [ "Event Framework Design Considerations", "event.html#event_design", null ],
       [ "SPDK Event Framework Components", "event.html#event_components", [
         [ "Events", "event.html#event_component_events", null ],
@@ -106,7 +109,8 @@ var NAVTREE =
           [ "listen_address", "jsonrpc.html#rpc_construct_nvmf_subsystem_listen_address", null ],
           [ "namespace", "jsonrpc.html#rpc_construct_nvmf_subsystem_namespace", null ]
         ] ],
-        [ "delete_nvmf_subsystem method", "jsonrpc.html#rpc_delete_nvmf_subsystem", null ]
+        [ "delete_nvmf_subsystem method", "jsonrpc.html#rpc_delete_nvmf_subsystem", null ],
+        [ "nvmf_subsystem_add_listener  method", "jsonrpc.html#rpc_nvmf_subsystem_add_listener", null ]
       ] ]
     ] ],
     [ "Logical Volumes Introduction", "logical_volumes.html", [
@@ -154,6 +158,7 @@ var NAVTREE =
         [ "Configuring the Linux NVMe over Fabrics Host", "nvmf.html#nvmf_host", null ]
       ] ]
     ] ],
+    [ "NVMe over Fabrics Target Programming Guide", "nvmf_tgt_pg.html", null ],
     [ "SSD Internals", "ssd_internals.html", null ],
     [ "User Space Drivers", "userspace.html", [
       [ "Controlling Hardware From User Space", "userspace.html#userspace_control", null ],
@@ -166,7 +171,7 @@ var NAVTREE =
       [ "Providers", "vagrant.html#vagrant_providers", null ],
       [ "Running An Example", "vagrant.html#vagrant_example", null ]
     ] ],
-    [ "vhost", "vhost.html", [
+    [ "vhost Target", "vhost.html", [
       [ "Table of Contents", "vhost.html#vhost_toc", null ],
       [ "Introduction", "vhost.html#vhost_intro", null ],
       [ "Prerequisites", "vhost.html#vhost_prereqs", null ],
@@ -212,20 +217,20 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "about.html",
-"crc32_8h.html#a51fc46bdf29f35610a0c99ae6ad0e009",
-"histogram__data_8h.html#a873e5e5fe2c61b1724fa588df020d66a",
-"json_8h.html#a5ba97519fb4d8431f8b5241379a06b2e",
-"nvme_8h.html#af02e8c701c5496f163a69917ad5397dd",
-"nvme__spec_8h.html#aa7e108757c0eebbac7e13b598a378210a8e0e2c7b955909ddf6aafad3e149dce9",
-"nvmf__spec_8h.html#a87bd863f9d02822c078fb4446141ce25",
-"scsi__spec_8h.html#a5b1c00e75e7ab3fffcca57bde36d43faa687f53602c78f7246e96ff77df374b36",
-"structiscsi__bhs.html#ac0add3f4475f40b8ce34df8f2d7c8022",
-"structiscsi__bhs__task__req.html#ae2931595e50aa6e8423102e2bdef0a33",
-"structspdk__ioat__pq__hw__desc.html#a5f553e83968498be97d4a5152320a580",
-"structspdk__nvme__ctrlr__data.html#ab0bef3d8a7467ebefeeb9033f26da3b1",
-"structspdk__nvme__power__state.html#a48bfad6dda1c71752d3c335d3e6657c0",
-"structspdk__nvmf__rdma__accept__private__data.html",
-"unionspdk__nvme__cc__register.html#a31eeb54f921dad6b455d815e124a6dbb"
+"crc16_8h.html#afdf5511063115512a83c07b6cc2575f2",
+"histogram__data_8h.html#a5ed4b39b3c152d4d92b34d6f40cd3229",
+"json_8h.html#a43134cf7b4e2eb1ed0ec9003f1aaaad0",
+"nvme_8h.html#ae87a03c28984a2c0499d50ef5e9d0ecea140f1cb4edf258bddffeb1c7277d93d8",
+"nvme__spec_8h.html#aa70e5bbfae3ba9ec66a65c78e1966a1daf2cf0b9814e51cb506c8d6b5f9661204",
+"nvmf__spec_8h.html#a7b0a113a847c5866f6e023ec1b400b76aaa0c6e0acb07678c03cc0836a27f5d6f",
+"scsi__spec_8h.html#a5a77d65f4abba81d4456fa6ba8136e24a043857d8757abd627a2eacc78a2c4d8a",
+"structiscsi__bhs.html#a126cd608a6788e31b6761f91e0380796",
+"structiscsi__bhs__task__req.html#a7643cc267247465dbe63f9115cb949b6",
+"structspdk__ioat__pq__hw__desc.html#a0dd20ed5da071125556838657e1f79f7",
+"structspdk__nvme__ctrlr__data.html#a9f5dd6335c39603ffb5beff3c6d8a6eb",
+"structspdk__nvme__ns__list.html",
+"structspdk__nvmf__fabric__prop__set__cmd.html#a491d778eff58f5282e7a9203fba6aed3",
+"unionspdk__nvme__cap__register.html#a37a043c068e8992317712cc7d95e9249"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

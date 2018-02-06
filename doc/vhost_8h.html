@@ -118,6 +118,9 @@ $(document).ready(function(){initNavTree('vhost_8h.html','');});
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
+<tr class="memitem:a8b37106ad173f20d05da87f89714700b"><td class="memItemLeft" align="right" valign="top"><a id="a8b37106ad173f20d05da87f89714700b"></a>
+typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_vhost_fini_cb</b>) (void)</td></tr>
+<tr class="separator:a8b37106ad173f20d05da87f89714700b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac2c4b62eaf6503e5f5e520394f9f9fe1"><td class="memItemLeft" align="right" valign="top">typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vhost_8h.html#ac2c4b62eaf6503e5f5e520394f9f9fe1">spdk_vhost_event_fn</a>) (struct spdk_vhost_dev *vdev, void *arg)</td></tr>
 <tr class="memdesc:ac2c4b62eaf6503e5f5e520394f9f9fe1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Synchronized vhost event used for user callbacks.  <a href="#ac2c4b62eaf6503e5f5e520394f9f9fe1">More...</a><br /></td></tr>
 <tr class="separator:ac2c4b62eaf6503e5f5e520394f9f9fe1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -127,9 +130,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a38abeca2169a11feec2ecdce057f3263"><td class="memItemLeft" align="right" valign="top"><a id="a38abeca2169a11feec2ecdce057f3263"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_vhost_init</b> (void)</td></tr>
 <tr class="separator:a38abeca2169a11feec2ecdce057f3263"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af242f0b790ade11de7627c3376a0d9e4"><td class="memItemLeft" align="right" valign="top"><a id="af242f0b790ade11de7627c3376a0d9e4"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_vhost_fini</b> (void)</td></tr>
-<tr class="separator:af242f0b790ade11de7627c3376a0d9e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af358eac95a16bd456349fcfaa00379bb"><td class="memItemLeft" align="right" valign="top"><a id="af358eac95a16bd456349fcfaa00379bb"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_vhost_fini</b> (spdk_vhost_fini_cb fini_cb)</td></tr>
+<tr class="separator:af358eac95a16bd456349fcfaa00379bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad731d99cb58a462e4ec790c346c23255"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vhost_8h.html#ad731d99cb58a462e4ec790c346c23255">spdk_vhost_startup</a> (void *arg1, void *arg2)</td></tr>
 <tr class="memdesc:ad731d99cb58a462e4ec790c346c23255"><td class="mdescLeft">&#160;</td><td class="mdescRight">Init vhost application.  <a href="#ad731d99cb58a462e4ec790c346c23255">More...</a><br /></td></tr>
 <tr class="separator:ad731d99cb58a462e4ec790c346c23255"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -148,9 +151,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_vhost_fini</b> (
 <tr class="memitem:a01b54a11439216fb05196474e3ee20d1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vhost_8h.html#a01b54a11439216fb05196474e3ee20d1">spdk_vhost_scsi_dev_construct</a> (const char *name, const char *cpumask)</td></tr>
 <tr class="memdesc:a01b54a11439216fb05196474e3ee20d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct an empty vhost SCSI device.  <a href="#a01b54a11439216fb05196474e3ee20d1">More...</a><br /></td></tr>
 <tr class="separator:a01b54a11439216fb05196474e3ee20d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab3f0d8aa45d3166969e55998872d20c5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vhost_8h.html#ab3f0d8aa45d3166969e55998872d20c5">spdk_vhost_scsi_dev_remove</a> (struct spdk_vhost_dev *vdev)</td></tr>
-<tr class="memdesc:ab3f0d8aa45d3166969e55998872d20c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove an empty vhost SCSI device.  <a href="#ab3f0d8aa45d3166969e55998872d20c5">More...</a><br /></td></tr>
-<tr class="separator:ab3f0d8aa45d3166969e55998872d20c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a546673fa252a8214efd14fc80b78dcb9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vhost_8h.html#a546673fa252a8214efd14fc80b78dcb9">spdk_vhost_scsi_dev_add_tgt</a> (struct spdk_vhost_dev *vdev, unsigned scsi_tgt_num, const char *bdev_name)</td></tr>
 <tr class="memdesc:a546673fa252a8214efd14fc80b78dcb9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct and attach new SCSI target to the vhost SCSI device on given (unoccupied) slot.  <a href="#a546673fa252a8214efd14fc80b78dcb9">More...</a><br /></td></tr>
 <tr class="separator:a546673fa252a8214efd14fc80b78dcb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -163,9 +163,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_vhost_fini</b> (
 <tr class="memitem:a5ec56730c6a42b0a186131526026e619"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vhost_8h.html#a5ec56730c6a42b0a186131526026e619">spdk_vhost_blk_construct</a> (const char *name, const char *cpumask, const char *dev_name, bool readonly)</td></tr>
 <tr class="memdesc:a5ec56730c6a42b0a186131526026e619"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a vhost blk device.  <a href="#a5ec56730c6a42b0a186131526026e619">More...</a><br /></td></tr>
 <tr class="separator:a5ec56730c6a42b0a186131526026e619"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a22fb61cd32b772e6dc02bf853ff48e30"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vhost_8h.html#a22fb61cd32b772e6dc02bf853ff48e30">spdk_vhost_blk_destroy</a> (struct spdk_vhost_dev *dev)</td></tr>
-<tr class="memdesc:a22fb61cd32b772e6dc02bf853ff48e30"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove a vhost blk device.  <a href="#a22fb61cd32b772e6dc02bf853ff48e30">More...</a><br /></td></tr>
-<tr class="separator:a22fb61cd32b772e6dc02bf853ff48e30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6eba1ce0ac89c3287b755567795869b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vhost_8h.html#aa6eba1ce0ac89c3287b755567795869b">spdk_vhost_dev_remove</a> (struct spdk_vhost_dev *vdev)</td></tr>
+<tr class="memdesc:aa6eba1ce0ac89c3287b755567795869b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove a vhost device.  <a href="#aa6eba1ce0ac89c3287b755567795869b">More...</a><br /></td></tr>
+<tr class="separator:aa6eba1ce0ac89c3287b755567795869b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a549f9903be61ca447578b8bacf9eea81"><td class="memItemLeft" align="right" valign="top">struct spdk_bdev *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vhost_8h.html#a549f9903be61ca447578b8bacf9eea81">spdk_vhost_blk_get_dev</a> (struct spdk_vhost_dev *ctrlr)</td></tr>
 <tr class="memdesc:a549f9903be61ca447578b8bacf9eea81"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get underlying SPDK bdev from vhost blk device.  <a href="#a549f9903be61ca447578b8bacf9eea81">More...</a><br /></td></tr>
 <tr class="separator:a549f9903be61ca447578b8bacf9eea81"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -251,34 +251,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_vhost_fini</b> (
     <tr><td class="paramname">mask</td><td>string containing cpumask in hex. The leading <em>0x</em> is allowed but not required. The mask itself can be constructed as: ((1 &lt;&lt; cpu0) | (1 &lt;&lt; cpu1) | ... | (1 &lt;&lt; cpuN)). </td></tr>
     <tr><td class="paramname">dev_name</td><td>bdev name to associate with this vhost device </td></tr>
     <tr><td class="paramname">readonly</td><td>if set, all writes to the device will fail with <code>VIRTIO_BLK_S_IOERR</code> error code. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>0 on success, negative errno on error. </dd></dl>
-
-</div>
-</div>
-<a id="a22fb61cd32b772e6dc02bf853ff48e30"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a22fb61cd32b772e6dc02bf853ff48e30">&#9670;&nbsp;</a></span>spdk_vhost_blk_destroy()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int spdk_vhost_blk_destroy </td>
-          <td>(</td>
-          <td class="paramtype">struct spdk_vhost_dev *&#160;</td>
-          <td class="paramname"><em>dev</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Remove a vhost blk device. </p>
-<p>The device must not have any open connections on it's socket.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">vdev</td><td>vhost blk device </td></tr>
   </table>
   </dd>
 </dl>
@@ -465,6 +437,34 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_vhost_fini</b> (
 
 </div>
 </div>
+<a id="aa6eba1ce0ac89c3287b755567795869b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa6eba1ce0ac89c3287b755567795869b">&#9670;&nbsp;</a></span>spdk_vhost_dev_remove()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_vhost_dev_remove </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_vhost_dev *&#160;</td>
+          <td class="paramname"><em>vdev</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Remove a vhost device. </p>
+<p>The device must not have any open connections on it's socket.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">vdev</td><td>vhost blk device </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, negative errno on error. </dd></dl>
+
+</div>
+</div>
 <a id="a546673fa252a8214efd14fc80b78dcb9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a546673fa252a8214efd14fc80b78dcb9">&#9670;&nbsp;</a></span>spdk_vhost_scsi_dev_add_tgt()</h2>
 
@@ -588,34 +588,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_vhost_fini</b> (
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>SCSI device on given slot or NULL </dd></dl>
-
-</div>
-</div>
-<a id="ab3f0d8aa45d3166969e55998872d20c5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab3f0d8aa45d3166969e55998872d20c5">&#9670;&nbsp;</a></span>spdk_vhost_scsi_dev_remove()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int spdk_vhost_scsi_dev_remove </td>
-          <td>(</td>
-          <td class="paramtype">struct spdk_vhost_dev *&#160;</td>
-          <td class="paramname"><em>vdev</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Remove an empty vhost SCSI device. </p>
-<p>The vdev must not have any SCSI devices attached nor have any open connection on it's socket.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">vdev</td><td>vhost SCSI device </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>0 on success, negative errno on error. </dd></dl>
 
 </div>
 </div>

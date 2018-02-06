@@ -2,6 +2,7 @@ var unionspdk__nvme__cap__register =
 [
     [ "ams", "unionspdk__nvme__cap__register.html#a75640e3e0a03f22456503acbebc20f46", null ],
     [ "bits", "unionspdk__nvme__cap__register.html#a6807e2c946a1d70daefdce618b504a3a", null ],
+    [ "bps", "unionspdk__nvme__cap__register.html#a9bbd0513d0df169766c0f74adfc4dde1", null ],
     [ "cqr", "unionspdk__nvme__cap__register.html#ad8004bf4870d89a73f8d4d95db5d746d", null ],
     [ "css_nvm", "unionspdk__nvme__cap__register.html#a979775464aecb09d7cd84f5afb4998c2", null ],
     [ "css_reserved", "unionspdk__nvme__cap__register.html#aacafa187da23af907a71e41c92be8389", null ],
