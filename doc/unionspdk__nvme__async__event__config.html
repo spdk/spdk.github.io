@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="Content-Type" content="text/xhtml; charset=utf-8">
   <meta name="generator" content="Doxygen 1.8.13">
-  <title>SPDK: Data Fields - Variables</title>
+  <title>SPDK: spdk_nvme_async_event_config Union Reference</title>
   <script type="text/javascript" src="jquery.js"></script>
   <script type="text/javascript" src="dynsections.js"></script>
   <link href="navtree.css" rel="stylesheet" type="text/css"/>
@@ -101,43 +101,57 @@
   </div>
 </div>
 <script type="text/javascript">
-$(document).ready(function(){initNavTree('functions_vars_b.html','');});
+$(document).ready(function(){initNavTree('unionspdk__nvme__async__event__config.html','');});
 </script>
 <div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#pub-attribs">Data Fields</a>  </div>
+  <div class="headertitle">
+<div class="title">spdk_nvme_async_event_config Union Reference</div>  </div>
+</div><!--header-->
 <div class="contents">
-&#160;
 
-<h3><a id="index_b"></a>- b -</h3><ul>
-<li>bir
-: <a class="el" href="unionspdk__nvme__cmbloc__register.html#a7a72b6bb85d7c446b0ad55f74d91e13a">spdk_nvme_cmbloc_register</a>
-</li>
-<li>bpid
-: <a class="el" href="unionspdk__nvme__bprsel__register.html#aec5aa2286f6c15c07cd269ac3ef35613">spdk_nvme_bprsel_register</a>
-</li>
-<li>bpinfo
-: <a class="el" href="structspdk__nvme__registers.html#a6c0a3def50fe28f4af603dd0fa116acf">spdk_nvme_registers</a>
-</li>
-<li>bpmbl
-: <a class="el" href="structspdk__nvme__registers.html#a5cc56fd2557ed7ffed6b00b3eac5bf31">spdk_nvme_registers</a>
-</li>
-<li>bprof
-: <a class="el" href="unionspdk__nvme__bprsel__register.html#a615e9f455cb7a36f1820dae8fd9dc3ae">spdk_nvme_bprsel_register</a>
-</li>
-<li>bprsel
-: <a class="el" href="structspdk__nvme__registers.html#a92e20b1c798c1873b4e3e27f72e4bf07">spdk_nvme_registers</a>
-</li>
-<li>bprsz
-: <a class="el" href="unionspdk__nvme__bprsel__register.html#a426cc6f4f6478519c297df3ad92bd4b1">spdk_nvme_bprsel_register</a>
-</li>
-<li>bps
-: <a class="el" href="unionspdk__nvme__cap__register.html#a9bbd0513d0df169766c0f74adfc4dde1">spdk_nvme_cap_register</a>
-</li>
-<li>bpsz
-: <a class="el" href="unionspdk__nvme__bpinfo__register.html#a6b1a5e69cd0881e1e81fd4f086e3bf96">spdk_nvme_bpinfo_register</a>
-</li>
-<li>brs
-: <a class="el" href="unionspdk__nvme__bpinfo__register.html#a0a0f2d47ec4131b202ce50e301a22a43">spdk_nvme_bpinfo_register</a>
-</li>
+<p>Asynchronous Event Configuration.  
+ <a href="unionspdk__nvme__async__event__config.html#details">More...</a></p>
+<div class="dynheader">
+Collaboration diagram for spdk_nvme_async_event_config:</div>
+<div class="dyncontent">
+<div class="center"><img src="unionspdk__nvme__async__event__config__coll__graph.png" border="0" usemap="#spdk__nvme__async__event__config_coll__map" alt="Collaboration graph"/></div>
+<map name="spdk__nvme__async__event__config_coll__map" id="spdk__nvme__async__event__config_coll__map">
+<area shape="rect" id="node2" href="unionspdk__nvme__critical__warning__state.html" title="spdk_nvme_critical\l_warning_state" alt="" coords="25,5,173,47"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Data Fields</h2></td></tr>
+<tr class="memitem:aaecffa0c93075109f2f785c6104139d1"><td class="memItemLeft" align="right" valign="top"><a id="aaecffa0c93075109f2f785c6104139d1"></a>
+uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>raw</b></td></tr>
+<tr class="separator:aaecffa0c93075109f2f785c6104139d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c23ac36bcc226657d131c3dc1f7db2d"><td class="memItemLeft" ><a id="a9c23ac36bcc226657d131c3dc1f7db2d"></a>
+struct {</td></tr>
+<tr class="memitem:a535f1ce8d0d5b57f779a9c1c231962e5"><td class="memItemLeft" >
+&#160;&#160;&#160;union <a class="el" href="unionspdk__nvme__critical__warning__state.html">spdk_nvme_critical_warning_state</a>&#160;&#160;&#160;<b>crit_warn</b></td></tr>
+<tr class="separator:a535f1ce8d0d5b57f779a9c1c231962e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac398a12fd8ef019001c2c499133afd02"><td class="memItemLeft" >
+&#160;&#160;&#160;uint32_t&#160;&#160;&#160;<b>ns_attr_notice</b>: 1</td></tr>
+<tr class="separator:ac398a12fd8ef019001c2c499133afd02"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0d24f3c24242090fe2c8fd547b2909a"><td class="memItemLeft" >
+&#160;&#160;&#160;uint32_t&#160;&#160;&#160;<b>fw_activation_notice</b>: 1</td></tr>
+<tr class="separator:af0d24f3c24242090fe2c8fd547b2909a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1123692b68d08a9e80963738fe086b42"><td class="memItemLeft" >
+&#160;&#160;&#160;uint32_t&#160;&#160;&#160;<b>telemetry_log_notice</b>: 1</td></tr>
+<tr class="separator:a1123692b68d08a9e80963738fe086b42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa050e9aff886e36bda0140ef3ace7920"><td class="memItemLeft" >
+&#160;&#160;&#160;uint32_t&#160;&#160;&#160;<b>reserved</b>: 21</td></tr>
+<tr class="separator:aa050e9aff886e36bda0140ef3ace7920"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c23ac36bcc226657d131c3dc1f7db2d"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><b>bits</b></td></tr>
+<tr class="separator:a9c23ac36bcc226657d131c3dc1f7db2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Asynchronous Event Configuration. </p>
+</div><hr/>The documentation for this union was generated from the following file:<ul>
+<li><a class="el" href="nvme__spec_8h.html">nvme_spec.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
