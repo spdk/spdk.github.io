@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "16134c27_5d92913c",
+        "filename": "_posts/2018-01-21-test-timing.md",
+        "patchSetId": 6
+      },
+      "lineNbr": 32,
+      "author": {
+        "id": 1011289
+      },
+      "writtenOn": "2018-02-07T15:43:22Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "f99b46f4_8b9a700b",
+      "revId": "eb704a84d178505c357c07ecff95434fc131c011",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "3e0dffc1_4614d995",
         "filename": "_posts/2018-01-21-test-timing.md",
         "patchSetId": 6
@@ -30,6 +48,24 @@
       "writtenOn": "2018-02-06T23:14:18Z",
       "side": 1,
       "message": "The images might look more consistent if they\u0027re set off into another paragraph (currently, some of them end up on the same line as the text, and it looks a little wonky).\n\nIt also looks like the new images are a little smaller than 1:1 pixels, so they have some scaling artifacts; it might be good to get a clean screenshot of these with no zoom/resizing.",
+      "revId": "eb704a84d178505c357c07ecff95434fc131c011",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "cfc59b60_df04c049",
+        "filename": "_posts/2018-01-21-test-timing.md",
+        "patchSetId": 6
+      },
+      "lineNbr": 44,
+      "author": {
+        "id": 1011289
+      },
+      "writtenOn": "2018-02-07T15:43:22Z",
+      "side": 1,
+      "message": "I\u0027ll add a CR and see if that helps.  The screenshots I take a HUGE probably because of how my system is so I scaled them down. If this still doesn\u0027t look OK I\u0027l try scaling them up just a little more",
+      "parentUuid": "3e0dffc1_4614d995",
       "revId": "eb704a84d178505c357c07ecff95434fc131c011",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": false
@@ -53,6 +89,24 @@
     },
     {
       "key": {
+        "uuid": "225fc3ac_4136b059",
+        "filename": "_posts/2018-01-21-test-timing.md",
+        "patchSetId": 6
+      },
+      "lineNbr": 46,
+      "author": {
+        "id": 1011289
+      },
+      "writtenOn": "2018-02-07T15:43:22Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "e9ce13ef_908bb72b",
+      "revId": "eb704a84d178505c357c07ecff95434fc131c011",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "ff1b1867_432aefe4",
         "filename": "_posts/2018-01-21-test-timing.md",
         "patchSetId": 6
@@ -70,6 +124,24 @@
     },
     {
       "key": {
+        "uuid": "8b4f684a_aeb0d7ac",
+        "filename": "_posts/2018-01-21-test-timing.md",
+        "patchSetId": 6
+      },
+      "lineNbr": 53,
+      "author": {
+        "id": 1011289
+      },
+      "writtenOn": "2018-02-07T15:43:22Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "ff1b1867_432aefe4",
+      "revId": "eb704a84d178505c357c07ecff95434fc131c011",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "90e7de09_77867c83",
         "filename": "_posts/2018-01-21-test-timing.md",
         "patchSetId": 6
@@ -81,6 +153,24 @@
       "writtenOn": "2018-02-06T19:37:20Z",
       "side": 1,
       "message": "your \u003d\u003e yours",
+      "revId": "eb704a84d178505c357c07ecff95434fc131c011",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "09d29ea7_60d316a4",
+        "filename": "_posts/2018-01-21-test-timing.md",
+        "patchSetId": 6
+      },
+      "lineNbr": 65,
+      "author": {
+        "id": 1011289
+      },
+      "writtenOn": "2018-02-07T15:43:22Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "90e7de09_77867c83",
       "revId": "eb704a84d178505c357c07ecff95434fc131c011",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": false
