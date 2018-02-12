@@ -216,6 +216,9 @@ struct spdk_nvmf_subsystem *&#160;</td><td class="memItemRight" valign="bottom">
 <tr class="memitem:a46521b556107a0ab58998adfeee8795f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#a46521b556107a0ab58998adfeee8795f">spdk_nvmf_subsystem_add_listener</a> (struct spdk_nvmf_subsystem *subsystem, struct <a class="el" href="structspdk__nvme__transport__id.html">spdk_nvme_transport_id</a> *trid)</td></tr>
 <tr class="memdesc:a46521b556107a0ab58998adfeee8795f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Accept new connections on the address provided.  <a href="#a46521b556107a0ab58998adfeee8795f">More...</a><br /></td></tr>
 <tr class="separator:a46521b556107a0ab58998adfeee8795f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af77830eafd0e5bdf209be8d9c196fc11"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#af77830eafd0e5bdf209be8d9c196fc11">spdk_nvmf_subsystem_remove_listener</a> (struct spdk_nvmf_subsystem *subsystem, const struct <a class="el" href="structspdk__nvme__transport__id.html">spdk_nvme_transport_id</a> *trid)</td></tr>
+<tr class="memdesc:af77830eafd0e5bdf209be8d9c196fc11"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stop accepting new connections on the address provided.  <a href="#af77830eafd0e5bdf209be8d9c196fc11">More...</a><br /></td></tr>
+<tr class="separator:af77830eafd0e5bdf209be8d9c196fc11"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aafcef3c424a983337eaa28ff71e03e2e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#aafcef3c424a983337eaa28ff71e03e2e">spdk_nvmf_subsystem_listener_allowed</a> (struct spdk_nvmf_subsystem *subsystem, struct <a class="el" href="structspdk__nvme__transport__id.html">spdk_nvme_transport_id</a> *trid)</td></tr>
 <tr class="memdesc:aafcef3c424a983337eaa28ff71e03e2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if connections originated from the given address are allowed to connect to the subsystem.  <a href="#aafcef3c424a983337eaa28ff71e03e2e">More...</a><br /></td></tr>
 <tr class="separator:aafcef3c424a983337eaa28ff71e03e2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1003,6 +1006,45 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvmf_ctrlr_disco
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 on success. Negated errno on failure. The callback provided will only be called on success. </dd></dl>
+
+</div>
+</div>
+<a id="af77830eafd0e5bdf209be8d9c196fc11"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af77830eafd0e5bdf209be8d9c196fc11">&#9670;&nbsp;</a></span>spdk_nvmf_subsystem_remove_listener()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_nvmf_subsystem_remove_listener </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_nvmf_subsystem *&#160;</td>
+          <td class="paramname"><em>subsystem</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const struct <a class="el" href="structspdk__nvme__transport__id.html">spdk_nvme_transport_id</a> *&#160;</td>
+          <td class="paramname"><em>trid</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Stop accepting new connections on the address provided. </p>
+<p>May only be performed on subsystems in the PAUSED or INACTIVE states.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">subsystem</td><td>Subsystem to remove listener from </td></tr>
+    <tr><td class="paramname">trid</td><td>The address to no longer accept connections from </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success. Negated errno value on failure. </dd></dl>
 
 </div>
 </div>

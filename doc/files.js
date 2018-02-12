@@ -37,6 +37,7 @@ var files =
     [ "pci_ids.h", "pci__ids_8h.html", "pci__ids_8h" ],
     [ "scsi.h", "scsi_8h.html", "scsi_8h" ],
     [ "scsi_spec.h", "scsi__spec_8h.html", "scsi__spec_8h" ],
+    [ "sock.h", "sock_8h.html", "sock_8h" ],
     [ "stdinc.h", "stdinc_8h.html", null ],
     [ "string.h", "string_8h.html", "string_8h" ],
     [ "trace.h", "trace_8h.html", "trace_8h" ],

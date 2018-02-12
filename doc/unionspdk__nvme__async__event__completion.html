@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="Content-Type" content="text/xhtml; charset=utf-8">
   <meta name="generator" content="Doxygen 1.8.13">
-  <title>SPDK: spdk_nvme_firmware_page Struct Reference</title>
+  <title>SPDK: spdk_nvme_async_event_completion Union Reference</title>
   <script type="text/javascript" src="jquery.js"></script>
   <script type="text/javascript" src="dynsections.js"></script>
   <link href="navtree.css" rel="stylesheet" type="text/css"/>
@@ -101,42 +101,48 @@
   </div>
 </div>
 <script type="text/javascript">
-$(document).ready(function(){initNavTree('structspdk__nvme__firmware__page.html','');});
+$(document).ready(function(){initNavTree('unionspdk__nvme__async__event__completion.html','');});
 </script>
 <div id="doc-content">
 <div class="header">
   <div class="summary">
 <a href="#pub-attribs">Data Fields</a>  </div>
   <div class="headertitle">
-<div class="title">spdk_nvme_firmware_page Struct Reference</div>  </div>
+<div class="title">spdk_nvme_async_event_completion Union Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Firmware slot information page (<a class="el" href="nvme__spec_8h.html#a3d5e453e4d95b0f5b9bb4de04ace78c4a898706714ccdcd0c5b2fee0170beecbb">SPDK_NVME_LOG_FIRMWARE_SLOT</a>)  
- <a href="structspdk__nvme__firmware__page.html#details">More...</a></p>
+<p>Asynchronous Event Request Completion.  
+ <a href="unionspdk__nvme__async__event__completion.html#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:aeb07ef992caee5bc164dbe3144aec083"><td class="memItemLeft" ><a id="aeb07ef992caee5bc164dbe3144aec083"></a>
+<tr class="memitem:a20c8319fea9c5a80c719b063324c5bac"><td class="memItemLeft" align="right" valign="top"><a id="a20c8319fea9c5a80c719b063324c5bac"></a>
+uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>raw</b></td></tr>
+<tr class="separator:a20c8319fea9c5a80c719b063324c5bac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70f7c21f324bebb737fbc5130900b681"><td class="memItemLeft" ><a id="a70f7c21f324bebb737fbc5130900b681"></a>
 struct {</td></tr>
-<tr class="memitem:a8a2e38d55bda95db393b89e24f42db03"><td class="memItemLeft" >
-&#160;&#160;&#160;uint8_t&#160;&#160;&#160;<b>slot</b>: 3</td></tr>
-<tr class="separator:a8a2e38d55bda95db393b89e24f42db03"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac88716af30347ff578198f56f05b8fd6"><td class="memItemLeft" >
-&#160;&#160;&#160;uint8_t&#160;&#160;&#160;<b>reserved</b>: 5</td></tr>
-<tr class="separator:ac88716af30347ff578198f56f05b8fd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeb07ef992caee5bc164dbe3144aec083"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><b>afi</b></td></tr>
-<tr class="separator:aeb07ef992caee5bc164dbe3144aec083"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a34db5bdeb328dc18a66b6b9153093a16"><td class="memItemLeft" align="right" valign="top"><a id="a34db5bdeb328dc18a66b6b9153093a16"></a>
-uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>revision</b> [7]</td></tr>
-<tr class="separator:a34db5bdeb328dc18a66b6b9153093a16"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac92edf109ba5f2b970b06a31a0434f37"><td class="memItemLeft" align="right" valign="top"><a id="ac92edf109ba5f2b970b06a31a0434f37"></a>
-uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>reserved2</b> [448]</td></tr>
-<tr class="separator:ac92edf109ba5f2b970b06a31a0434f37"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa898361319ab1b9484dd76386bb33fce"><td class="memItemLeft" >
+&#160;&#160;&#160;uint32_t&#160;&#160;&#160;<b>async_event_type</b>: 3</td></tr>
+<tr class="separator:aa898361319ab1b9484dd76386bb33fce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a502e2e0ee9e87af525018e344fbe6859"><td class="memItemLeft" >
+&#160;&#160;&#160;uint32_t&#160;&#160;&#160;<b>reserved1</b>: 5</td></tr>
+<tr class="separator:a502e2e0ee9e87af525018e344fbe6859"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab120adca661ad0cd378e0a9ce569a617"><td class="memItemLeft" >
+&#160;&#160;&#160;uint32_t&#160;&#160;&#160;<b>async_event_info</b>: 8</td></tr>
+<tr class="separator:ab120adca661ad0cd378e0a9ce569a617"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0fe4ad54d4bfb8c87e5a211d9cf2009e"><td class="memItemLeft" >
+&#160;&#160;&#160;uint32_t&#160;&#160;&#160;<b>log_page_identifier</b>: 8</td></tr>
+<tr class="separator:a0fe4ad54d4bfb8c87e5a211d9cf2009e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ff7458f63430ed0d600dc5e695b76a6"><td class="memItemLeft" >
+&#160;&#160;&#160;uint32_t&#160;&#160;&#160;<b>reserved2</b>: 8</td></tr>
+<tr class="separator:a6ff7458f63430ed0d600dc5e695b76a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70f7c21f324bebb737fbc5130900b681"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><b>bits</b></td></tr>
+<tr class="separator:a70f7c21f324bebb737fbc5130900b681"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Firmware slot information page (<a class="el" href="nvme__spec_8h.html#a3d5e453e4d95b0f5b9bb4de04ace78c4a898706714ccdcd0c5b2fee0170beecbb">SPDK_NVME_LOG_FIRMWARE_SLOT</a>) </p>
-</div><hr/>The documentation for this struct was generated from the following file:<ul>
+<div class="textblock"><p>Asynchronous Event Request Completion. </p>
+</div><hr/>The documentation for this union was generated from the following file:<ul>
 <li><a class="el" href="nvme__spec_8h.html">nvme_spec.h</a></li>
 </ul>
 </div><!-- contents -->
