@@ -184,6 +184,9 @@ Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__health__information__page.html">spdk_nvme_health_information_page</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">SMART / health information page (<a class="el" href="nvme__spec_8h.html#a3d5e453e4d95b0f5b9bb4de04ace78c4a8c4e97d27e08924e29d76ea66780a886">SPDK_NVME_LOG_HEALTH_INFORMATION</a>)  <a href="structspdk__nvme__health__information__page.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">union &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unionspdk__nvme__async__event__completion.html">spdk_nvme_async_event_completion</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Asynchronous Event Request Completion.  <a href="unionspdk__nvme__async__event__completion.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">union &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unionspdk__nvme__async__event__config.html">spdk_nvme_async_event_config</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Asynchronous Event Configuration.  <a href="unionspdk__nvme__async__event__config.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -623,6 +626,46 @@ Enumerations</h2></td></tr>
  }<tr class="memdesc:a3d5e453e4d95b0f5b9bb4de04ace78c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Log page identifiers for SPDK_NVME_OPC_GET_LOG_PAGE.  <a href="nvme__spec_8h.html#a3d5e453e4d95b0f5b9bb4de04ace78c4">More...</a><br /></td></tr>
 </td></tr>
 <tr class="separator:a3d5e453e4d95b0f5b9bb4de04ace78c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36f8ec174eebd9dc8dcd78fbc9ef635a"><td class="memItemLeft" align="right" valign="top"><a id="a36f8ec174eebd9dc8dcd78fbc9ef635a"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme__spec_8h.html#a36f8ec174eebd9dc8dcd78fbc9ef635a">spdk_nvme_async_event_type</a> { <br />
+&#160;&#160;<b>SPDK_NVME_ASYNC_EVENT_TYPE_ERROR</b> = 0x0, 
+<b>SPDK_NVME_ASYNC_EVENT_TYPE_SMART</b> = 0x1, 
+<b>SPDK_NVME_ASYNC_EVENT_TYPE_NOTICE</b> = 0x2, 
+<b>SPDK_NVME_ASYNC_EVENT_TYPE_IO</b> = 0x6, 
+<br />
+&#160;&#160;<b>SPDK_NVME_ASYNC_EVENT_TYPE_VENDOR</b> = 0x7
+<br />
+ }<tr class="memdesc:a36f8ec174eebd9dc8dcd78fbc9ef635a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Asynchronous Event Type. <br /></td></tr>
+</td></tr>
+<tr class="separator:a36f8ec174eebd9dc8dcd78fbc9ef635a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87a370c671a1dcad0106afc888af8d04"><td class="memItemLeft" align="right" valign="top"><a id="a87a370c671a1dcad0106afc888af8d04"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme__spec_8h.html#a87a370c671a1dcad0106afc888af8d04">spdk_nvme_async_event_info_error</a> { <br />
+&#160;&#160;<b>SPDK_NVME_ASYNC_EVENT_WRITE_INVALID_DB</b> = 0x0, 
+<b>SPDK_NVME_ASYNC_EVENT_INVALID_DB_WRITE</b> = 0x1, 
+<b>SPDK_NVME_ASYNC_EVENT_DIAGNOSTIC_FAILURE</b> = 0x2, 
+<b>SPDK_NVME_ASYNC_EVENT_PERSISTENT_INTERNAL</b> = 0x3, 
+<br />
+&#160;&#160;<b>SPDK_NVME_ASYNC_EVENT_TRANSIENT_INTERNAL</b> = 0x4, 
+<b>SPDK_NVME_ASYNC_EVENT_FW_IMAGE_LOAD</b> = 0x5
+<br />
+ }<tr class="memdesc:a87a370c671a1dcad0106afc888af8d04"><td class="mdescLeft">&#160;</td><td class="mdescRight">Asynchronous Event Information for Error Status. <br /></td></tr>
+</td></tr>
+<tr class="separator:a87a370c671a1dcad0106afc888af8d04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41c0f1b0cb703d0a995b87f763a8e6ae"><td class="memItemLeft" align="right" valign="top"><a id="a41c0f1b0cb703d0a995b87f763a8e6ae"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme__spec_8h.html#a41c0f1b0cb703d0a995b87f763a8e6ae">spdk_nvme_async_event_info_smart</a> { <b>SPDK_NVME_ASYNC_EVENT_SUBSYSTEM_RELIABILITY</b> = 0x0, 
+<b>SPDK_NVME_ASYNC_EVENT_TEMPERATURE_THRESHOLD</b> = 0x1, 
+<b>SPDK_NVME_ASYNC_EVENT_SPARE_BELOW_THRESHOLD</b> = 0x2
+ }<tr class="memdesc:a41c0f1b0cb703d0a995b87f763a8e6ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Asynchronous Event Information for SMART/Health Status. <br /></td></tr>
+</td></tr>
+<tr class="separator:a41c0f1b0cb703d0a995b87f763a8e6ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0fe403c0712860a8e0b9763844d25b6"><td class="memItemLeft" align="right" valign="top"><a id="af0fe403c0712860a8e0b9763844d25b6"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme__spec_8h.html#af0fe403c0712860a8e0b9763844d25b6">spdk_nvme_async_event_info_notice</a> { <b>SPDK_NVME_ASYNC_EVENT_NS_ATTR_CHANGED</b> = 0x0, 
+<b>SPDK_NVME_ASYNC_EVENT_FW_ACTIVATION_START</b> = 0x1, 
+<b>SPDK_NVME_ASYNC_EVENT_TELEMETRY_LOG_CHANGED</b> = 0x2
+ }<tr class="memdesc:af0fe403c0712860a8e0b9763844d25b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Asynchronous Event Information for Notice. <br /></td></tr>
+</td></tr>
+<tr class="separator:af0fe403c0712860a8e0b9763844d25b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e5dcf2fc37bcc793ab08c92d11ae78a"><td class="memItemLeft" align="right" valign="top"><a id="a0e5dcf2fc37bcc793ab08c92d11ae78a"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme__spec_8h.html#a0e5dcf2fc37bcc793ab08c92d11ae78a">spdk_nvme_async_event_info_nvm_command_set</a> { <b>SPDK_NVME_ASYNC_EVENT_RESERVATION_LOG_AVAIL</b> = 0x0, 
+<b>SPDK_NVME_ASYNC_EVENT_SANITIZE_COMPLETED</b> = 0x1
+ }<tr class="memdesc:a0e5dcf2fc37bcc793ab08c92d11ae78a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Asynchronous Event Information for NVM Command Set Specific Status. <br /></td></tr>
+</td></tr>
+<tr class="separator:a0e5dcf2fc37bcc793ab08c92d11ae78a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3828a2c3688ee12cc4c2ffce0d43031f"><td class="memItemLeft" align="right" valign="top"><a id="a3828a2c3688ee12cc4c2ffce0d43031f"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme__spec_8h.html#a3828a2c3688ee12cc4c2ffce0d43031f">spdk_nvme_ns_attach_type</a> { <b>SPDK_NVME_NS_CTRLR_ATTACH</b> = 0x0, 
 <b>SPDK_NVME_NS_CTRLR_DETACH</b> = 0x1
  }<tr class="memdesc:a3828a2c3688ee12cc4c2ffce0d43031f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Namespace attachment Type Encoding. <br /></td></tr>
@@ -806,6 +849,9 @@ Functions</h2></td></tr>
 <tr class="memitem:af1e242836a69ed1a6159618e2b47a429"><td class="memItemLeft" align="right" valign="top"><a id="af1e242836a69ed1a6159618e2b47a429"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_STATIC_ASSERT</b> (sizeof(struct <a class="el" href="structspdk__nvme__health__information__page.html">spdk_nvme_health_information_page</a>)==512, &quot;Incorrect size&quot;)</td></tr>
 <tr class="separator:af1e242836a69ed1a6159618e2b47a429"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8dc5b9c51b1feaee9bddb3f6e0797656"><td class="memItemLeft" align="right" valign="top"><a id="a8dc5b9c51b1feaee9bddb3f6e0797656"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_STATIC_ASSERT</b> (sizeof(union <a class="el" href="unionspdk__nvme__async__event__completion.html">spdk_nvme_async_event_completion</a>)==4, &quot;Incorrect size&quot;)</td></tr>
+<tr class="separator:a8dc5b9c51b1feaee9bddb3f6e0797656"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a67e0697fb8df45481d1455e35c83b9a3"><td class="memItemLeft" align="right" valign="top"><a id="a67e0697fb8df45481d1455e35c83b9a3"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_STATIC_ASSERT</b> (sizeof(union <a class="el" href="unionspdk__nvme__async__event__config.html">spdk_nvme_async_event_config</a>)==4, &quot;Incorrect size&quot;)</td></tr>
 <tr class="separator:a67e0697fb8df45481d1455e35c83b9a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
