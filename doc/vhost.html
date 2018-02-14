@@ -181,7 +181,7 @@ Create a virtio device</h2>
 QEMU</h2>
 <p>Now the virtual machine can be started with QEMU. The following command-line parameters must be added to connect the virtual machine to its vhost controller.</p>
 <p>First, specify the memory backend for the virtual machine. Since QEMU must share the virtual machine's memory with the SPDK vhost target, the memory must be specified in this format with share=on.</p>
-<div class="fragment"><div class="line">-object memory-backend-file,id=mem,size=1G,mem-path=/dev/hugepages,share=on</div></div><!-- fragment --><p>Second, ensure QEMU boots from the virtual machine image and not the SPDK malloc block device by specifying bootindex=0 for the boot image.</p>
+<div class="fragment"><div class="line">-object memory-backend-file,id=mem,size=1G,mem-path=/dev/hugepages,share=on</div><div class="line">-numa node,memdev=mem</div></div><!-- fragment --><p>Second, ensure QEMU boots from the virtual machine image and not the SPDK malloc block device by specifying bootindex=0 for the boot image.</p>
 <div class="fragment"><div class="line">-drive file=guest_os_image.qcow2,if=none,id=disk</div><div class="line">-device ide-hd,drive=disk,bootindex=0</div></div><!-- fragment --><p>Finally, specify the SPDK vhost devices:</p>
 <h3>Vhost-SCSI</h3>
 <div class="fragment"><div class="line">-chardev socket,id=char0,path=/var/tmp/vhost.0</div><div class="line">-device vhost-user-scsi-pci,id=scsi0,chardev=char0</div></div><!-- fragment --><h3>Vhost-BLK</h3>

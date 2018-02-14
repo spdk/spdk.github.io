@@ -142,9 +142,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_vhost_fini</b> (
 <tr class="memitem:aa06efc0d096d4414de40ed5c0b394622"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vhost_8h.html#aa06efc0d096d4414de40ed5c0b394622">spdk_vhost_dev_get_name</a> (struct spdk_vhost_dev *vdev)</td></tr>
 <tr class="memdesc:aa06efc0d096d4414de40ed5c0b394622"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get name of the vhost device.  <a href="#aa06efc0d096d4414de40ed5c0b394622">More...</a><br /></td></tr>
 <tr class="separator:aa06efc0d096d4414de40ed5c0b394622"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8ffc2199ac3bf1587f0a8cb1b4771a43"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vhost_8h.html#a8ffc2199ac3bf1587f0a8cb1b4771a43">spdk_vhost_dev_get_cpumask</a> (struct spdk_vhost_dev *vdev, struct spdk_cpuset *cpuset)</td></tr>
-<tr class="memdesc:a8ffc2199ac3bf1587f0a8cb1b4771a43"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get cpuset of the vhost device.  <a href="#a8ffc2199ac3bf1587f0a8cb1b4771a43">More...</a><br /></td></tr>
-<tr class="separator:a8ffc2199ac3bf1587f0a8cb1b4771a43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6002d25166c3003efd3b6edb51cb84c0"><td class="memItemLeft" align="right" valign="top">const struct spdk_cpuset *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vhost_8h.html#a6002d25166c3003efd3b6edb51cb84c0">spdk_vhost_dev_get_cpumask</a> (struct spdk_vhost_dev *vdev)</td></tr>
+<tr class="memdesc:a6002d25166c3003efd3b6edb51cb84c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get cpuset of the vhost device.  <a href="#a6002d25166c3003efd3b6edb51cb84c0">More...</a><br /></td></tr>
+<tr class="separator:a6002d25166c3003efd3b6edb51cb84c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8b8c054fdc8ed4ad573b2d0bcf2d4797"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vhost_8h.html#a8b8c054fdc8ed4ad573b2d0bcf2d4797">spdk_vhost_set_coalescing</a> (struct spdk_vhost_dev *vdev, uint32_t delay_base_us, uint32_t iops_threshold)</td></tr>
 <tr class="memdesc:a8b8c054fdc8ed4ad573b2d0bcf2d4797"><td class="mdescLeft">&#160;</td><td class="mdescRight">By default, events are generated when asked, but for high queue depth and high IOPS this prove to be inefficient both for guest kernel that have to handle a lot more IO completions and for SPDK vhost that need to make more syscalls.  <a href="#a8b8c054fdc8ed4ad573b2d0bcf2d4797">More...</a><br /></td></tr>
 <tr class="separator:a8b8c054fdc8ed4ad573b2d0bcf2d4797"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -371,28 +371,18 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_vhost_fini</b> (
 
 </div>
 </div>
-<a id="a8ffc2199ac3bf1587f0a8cb1b4771a43"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8ffc2199ac3bf1587f0a8cb1b4771a43">&#9670;&nbsp;</a></span>spdk_vhost_dev_get_cpumask()</h2>
+<a id="a6002d25166c3003efd3b6edb51cb84c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6002d25166c3003efd3b6edb51cb84c0">&#9670;&nbsp;</a></span>spdk_vhost_dev_get_cpumask()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void spdk_vhost_dev_get_cpumask </td>
+          <td class="memname">const struct spdk_cpuset* spdk_vhost_dev_get_cpumask </td>
           <td>(</td>
           <td class="paramtype">struct spdk_vhost_dev *&#160;</td>
-          <td class="paramname"><em>vdev</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"><em>vdev</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">struct spdk_cpuset *&#160;</td>
-          <td class="paramname"><em>cpuset</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -402,10 +392,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_vhost_fini</b> (
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">dev</td><td>vhost device </td></tr>
-    <tr><td class="paramname">cpuset</td><td>pointer to the cpuset of the vdev. </td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>cpuset of the vdev. </dd></dl>
 
 </div>
 </div>

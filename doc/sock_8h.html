@@ -106,6 +106,7 @@ $(document).ready(function(){initNavTree('sock_8h.html','');});
 <div id="doc-content">
 <div class="header">
   <div class="summary">
+<a href="#typedef-members">Typedefs</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">sock.h File Reference</div>  </div>
@@ -115,6 +116,12 @@ $(document).ready(function(){initNavTree('sock_8h.html','');});
 <p>TCP socket abstraction layer.  
 <a href="#details">More...</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:ae297ae75e566b35635d20b959daa7741"><td class="memItemLeft" align="right" valign="top"><a id="ae297ae75e566b35635d20b959daa7741"></a>
+typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_sock_cb</b>) (void *arg, struct spdk_sock_group *group, struct spdk_sock *sock)</td></tr>
+<tr class="separator:ae297ae75e566b35635d20b959daa7741"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a5a3ec712fd56490221467d05ce86d7ad"><td class="memItemLeft" align="right" valign="top"><a id="a5a3ec712fd56490221467d05ce86d7ad"></a>
@@ -153,6 +160,24 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_sock_is_ipv6</b>
 <tr class="memitem:a73c174585e034587164b1a56d6e8a115"><td class="memItemLeft" align="right" valign="top"><a id="a73c174585e034587164b1a56d6e8a115"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_sock_is_ipv4</b> (struct spdk_sock *sock)</td></tr>
 <tr class="separator:a73c174585e034587164b1a56d6e8a115"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac5acbacae856635602b0f40c8b676b2"><td class="memItemLeft" align="right" valign="top"><a id="aac5acbacae856635602b0f40c8b676b2"></a>
+struct spdk_sock_group *&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_sock_group_create</b> (void)</td></tr>
+<tr class="separator:aac5acbacae856635602b0f40c8b676b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa07f7a676410527883e2f8159ea1bfea"><td class="memItemLeft" align="right" valign="top"><a id="aa07f7a676410527883e2f8159ea1bfea"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_sock_group_add_sock</b> (struct spdk_sock_group *group, struct spdk_sock *sock, spdk_sock_cb cb_fn, void *cb_arg)</td></tr>
+<tr class="separator:aa07f7a676410527883e2f8159ea1bfea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad52142b9c60b305a1eaaf869a321c790"><td class="memItemLeft" align="right" valign="top"><a id="ad52142b9c60b305a1eaaf869a321c790"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_sock_group_remove_sock</b> (struct spdk_sock_group *group, struct spdk_sock *sock)</td></tr>
+<tr class="separator:ad52142b9c60b305a1eaaf869a321c790"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca9341be3f9ec5bd7e571f328e749328"><td class="memItemLeft" align="right" valign="top"><a id="aca9341be3f9ec5bd7e571f328e749328"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_sock_group_poll</b> (struct spdk_sock_group *group)</td></tr>
+<tr class="separator:aca9341be3f9ec5bd7e571f328e749328"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73c5abe4d97ecc3521c37b345f7fbfd4"><td class="memItemLeft" align="right" valign="top"><a id="a73c5abe4d97ecc3521c37b345f7fbfd4"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_sock_group_poll_count</b> (struct spdk_sock_group *group, int max_events)</td></tr>
+<tr class="separator:a73c5abe4d97ecc3521c37b345f7fbfd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad75fdb315be08263dd42aa20e1ca5df9"><td class="memItemLeft" align="right" valign="top"><a id="ad75fdb315be08263dd42aa20e1ca5df9"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_sock_group_close</b> (struct spdk_sock_group **group)</td></tr>
+<tr class="separator:ad75fdb315be08263dd42aa20e1ca5df9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>TCP socket abstraction layer. </p>
