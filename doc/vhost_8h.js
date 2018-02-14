@@ -6,7 +6,7 @@ var vhost_8h =
     [ "spdk_vhost_blk_get_dev", "vhost_8h.html#a549f9903be61ca447578b8bacf9eea81", null ],
     [ "spdk_vhost_call_external_event", "vhost_8h.html#a44001761e6a888ef1fb0475c4501497c", null ],
     [ "spdk_vhost_call_external_event_foreach", "vhost_8h.html#a041d593f592b76683c6a5f9f5efbc254", null ],
-    [ "spdk_vhost_dev_get_cpumask", "vhost_8h.html#a8ffc2199ac3bf1587f0a8cb1b4771a43", null ],
+    [ "spdk_vhost_dev_get_cpumask", "vhost_8h.html#a6002d25166c3003efd3b6edb51cb84c0", null ],
     [ "spdk_vhost_dev_get_name", "vhost_8h.html#aa06efc0d096d4414de40ed5c0b394622", null ],
     [ "spdk_vhost_dev_remove", "vhost_8h.html#aa6eba1ce0ac89c3287b755567795869b", null ],
     [ "spdk_vhost_fini", "vhost_8h.html#af358eac95a16bd456349fcfaa00379bb", null ],

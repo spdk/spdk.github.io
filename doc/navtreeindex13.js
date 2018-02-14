@@ -1,5 +1,14 @@
 var NAVTREEINDEX13 =
 {
+"structspdk__nvmf__fabric__connect__rsp.html#ab493286c42c84f20252ceb88068fe6b3":[27,0,114,3],
+"structspdk__nvmf__fabric__connect__rsp.html#abb372f82df59334c1438b784301dc164":[27,0,114,7],
+"structspdk__nvmf__fabric__connect__rsp.html#abc192ed82752821cbbe678d3318379dc":[27,0,114,6],
+"structspdk__nvmf__fabric__connect__rsp.html#ae13292d92189ffac9876ac42bb902fa7":[27,0,114,10],
+"structspdk__nvmf__fabric__connect__rsp.html#aec90dcf7fd48e8cf5d802ee8b9dabdbe":[27,0,114,12],
+"structspdk__nvmf__fabric__prop__get__cmd.html":[27,0,115],
+"structspdk__nvmf__fabric__prop__get__cmd.html#a14d045b339b3ada491677dc98872a439":[27,0,115,2],
+"structspdk__nvmf__fabric__prop__get__cmd.html#a3e06b0f19c3de00c73e5146c3415136f":[27,0,115,9],
+"structspdk__nvmf__fabric__prop__get__cmd.html#a408856cb14de38aafa2850bf695c2c2a":[27,0,115,7],
 "structspdk__nvmf__fabric__prop__get__cmd.html#a47483adff5311a98ed8092b8057c4abd":[27,0,115,3],
 "structspdk__nvmf__fabric__prop__get__cmd.html#a69dda5d3fda8a3dbb0ca34f714c965e3":[27,0,115,1],
 "structspdk__nvmf__fabric__prop__get__cmd.html#a74859756a761afa1efc6a4e8fd7a056c":[27,0,115,5],
@@ -240,14 +249,5 @@ var NAVTREEINDEX13 =
 "unionspdk__ioat__hw__desc.html#a2ee1dc602f0b3531ed63e072da771046":[27,0,41,5],
 "unionspdk__ioat__hw__desc.html#a45b4b856e702d5df38a18c0f394a48b6":[27,0,41,4],
 "unionspdk__ioat__hw__desc.html#a48bbbc028820ae86d53666e4311d261a":[27,0,41,8],
-"unionspdk__ioat__hw__desc.html#a7264931af60e6b279fed4d39813d9ed2":[27,0,41,2],
-"unionspdk__ioat__hw__desc.html#a9fe6cdd6a13b47da858887e401503ee6":[27,0,41,1],
-"unionspdk__ioat__hw__desc.html#aa434c5e1236bc50ee041510faeaf93da":[27,0,41,3],
-"unionspdk__ioat__hw__desc.html#ac8f5e37d13b2270a285d58dd7e2e34b1":[27,0,41,7],
-"unionspdk__ioat__hw__desc.html#affd6fed5fa00bfdf27173c19f7f842f6":[27,0,41,0],
-"unionspdk__nvme__aqa__register.html":[27,0,55],
-"unionspdk__nvme__aqa__register.html#a3f5ae033d3569600cfe59e2fc4add132":[27,0,55,0],
-"unionspdk__nvme__aqa__register.html#a8cf4248124eeebe4ff7b2504846c3ab6":[27,0,55,3],
-"unionspdk__nvme__aqa__register.html#a8d3d1386cbeb51e1f31f4754e2fc7b9d":[27,0,55,5],
-"unionspdk__nvme__aqa__register.html#ac8e473c82656d9f2a536618f9e2f55cb":[27,0,55,1]
+"unionspdk__ioat__hw__desc.html#a7264931af60e6b279fed4d39813d9ed2":[27,0,41,2]
 };

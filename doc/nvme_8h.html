@@ -311,6 +311,12 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_
 <tr class="memitem:a7938b258a7614073065be4f6a35bd0e2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a7938b258a7614073065be4f6a35bd0e2">spdk_nvme_ctrlr_update_firmware</a> (struct spdk_nvme_ctrlr *ctrlr, void *payload, uint32_t size, int slot, enum <a class="el" href="nvme__spec_8h.html#ae4da1c1bec22eb22d1af72bbf37af36e">spdk_nvme_fw_commit_action</a> commit_action, struct <a class="el" href="structspdk__nvme__status.html">spdk_nvme_status</a> *completion_status)</td></tr>
 <tr class="memdesc:a7938b258a7614073065be4f6a35bd0e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Download a new firmware image.  <a href="#a7938b258a7614073065be4f6a35bd0e2">More...</a><br /></td></tr>
 <tr class="separator:a7938b258a7614073065be4f6a35bd0e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad63b25defbb0f1ccd52538e3b9a748df"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#ad63b25defbb0f1ccd52538e3b9a748df">spdk_nvme_ctrlr_alloc_cmb_io_buffer</a> (struct spdk_nvme_ctrlr *ctrlr, size_t size)</td></tr>
+<tr class="memdesc:ad63b25defbb0f1ccd52538e3b9a748df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate an I/O buffer from the controller memory buffer.  <a href="#ad63b25defbb0f1ccd52538e3b9a748df">More...</a><br /></td></tr>
+<tr class="separator:ad63b25defbb0f1ccd52538e3b9a748df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb11b2a40d2cd45072f83624956b8b01"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#abb11b2a40d2cd45072f83624956b8b01">spdk_nvme_ctrlr_free_cmb_io_buffer</a> (struct spdk_nvme_ctrlr *ctrlr, void *buf, size_t size)</td></tr>
+<tr class="memdesc:abb11b2a40d2cd45072f83624956b8b01"><td class="mdescLeft">&#160;</td><td class="mdescRight">Free a controller memory I/O buffer.  <a href="#abb11b2a40d2cd45072f83624956b8b01">More...</a><br /></td></tr>
+<tr class="separator:abb11b2a40d2cd45072f83624956b8b01"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab1863b5dccf2bcc49fe92275bc1e5a2a"><td class="memItemLeft" align="right" valign="top">const struct <a class="el" href="structspdk__nvme__ns__data.html">spdk_nvme_ns_data</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#ab1863b5dccf2bcc49fe92275bc1e5a2a">spdk_nvme_ns_get_data</a> (struct spdk_nvme_ns *ns)</td></tr>
 <tr class="memdesc:ab1863b5dccf2bcc49fe92275bc1e5a2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the identify namespace data as defined by the NVMe specification.  <a href="#ab1863b5dccf2bcc49fe92275bc1e5a2a">More...</a><br /></td></tr>
 <tr class="separator:ab1863b5dccf2bcc49fe92275bc1e5a2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -667,6 +673,44 @@ int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_retry_co
 <p>If called from a secondary process, only the device that has been attached to the userspace driver in the primary process will be connected.</p>
 <p>If connecting to multiple controllers, it is suggested to use <a class="el" href="nvme_8h.html#a225bbc386ec518ae21bd5536f21db45d" title="Enumerate the bus indicated by the transport ID and attach the userspace NVMe driver to each device f...">spdk_nvme_probe()</a> and filter the requested controllers with the probe callback. For PCIe controllers, <a class="el" href="nvme_8h.html#a225bbc386ec518ae21bd5536f21db45d" title="Enumerate the bus indicated by the transport ID and attach the userspace NVMe driver to each device f...">spdk_nvme_probe()</a> will be more efficient since the controller resets will happen in parallel.</p>
 <p>To stop using the the controller and release its associated resources, call <a class="el" href="nvme_8h.html#a4b63c225c3cce6da60fdbfb6f54b11e2">spdk_nvme_detach</a> with the spdk_nvme_ctrlr instance returned by this function. </p>
+
+</div>
+</div>
+<a id="ad63b25defbb0f1ccd52538e3b9a748df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad63b25defbb0f1ccd52538e3b9a748df">&#9670;&nbsp;</a></span>spdk_nvme_ctrlr_alloc_cmb_io_buffer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* spdk_nvme_ctrlr_alloc_cmb_io_buffer </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_nvme_ctrlr *&#160;</td>
+          <td class="paramname"><em>ctrlr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Allocate an I/O buffer from the controller memory buffer. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ctrlr</td><td>Controller from which to allocate memory buffer. </td></tr>
+    <tr><td class="paramname">size</td><td>Size of buffer to allocate in bytes.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Pointer to controller memory buffer allocation, or NULL if allocation was not possible. </dd></dl>
 
 </div>
 </div>
@@ -1424,6 +1468,50 @@ int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_retry_co
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 if successfully submitted, ENOMEM if resources could not be allocated for this request</dd></dl>
 <p>This function is thread safe and can be called at any point after <a class="el" href="nvme_8h.html#a225bbc386ec518ae21bd5536f21db45d" title="Enumerate the bus indicated by the transport ID and attach the userspace NVMe driver to each device f...">spdk_nvme_probe()</a>. </p>
+
+</div>
+</div>
+<a id="abb11b2a40d2cd45072f83624956b8b01"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abb11b2a40d2cd45072f83624956b8b01">&#9670;&nbsp;</a></span>spdk_nvme_ctrlr_free_cmb_io_buffer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_nvme_ctrlr_free_cmb_io_buffer </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_nvme_ctrlr *&#160;</td>
+          <td class="paramname"><em>ctrlr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>buf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Free a controller memory I/O buffer. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ctrlr</td><td>Controller from which the buffer was allocated. </td></tr>
+    <tr><td class="paramname">buf</td><td>Buffer previously allocated by <a class="el" href="nvme_8h.html#ad63b25defbb0f1ccd52538e3b9a748df" title="Allocate an I/O buffer from the controller memory buffer. ">spdk_nvme_ctrlr_alloc_cmb_io_buffer()</a>. </td></tr>
+    <tr><td class="paramname">size</td><td>Size of buf in bytes. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

@@ -25,6 +25,7 @@ var nvme_8h =
       [ "SPDK_NVME_TRANSPORT_RDMA", "nvme_8h.html#ae87a03c28984a2c0499d50ef5e9d0ecea140f1cb4edf258bddffeb1c7277d93d8", null ]
     ] ],
     [ "spdk_nvme_connect", "nvme_8h.html#ae26375a74c2c935ec32f0c41a7ed93df", null ],
+    [ "spdk_nvme_ctrlr_alloc_cmb_io_buffer", "nvme_8h.html#ad63b25defbb0f1ccd52538e3b9a748df", null ],
     [ "spdk_nvme_ctrlr_alloc_io_qpair", "nvme_8h.html#a13f745d239dab9b8f934fae2ad4984a2", null ],
     [ "spdk_nvme_ctrlr_attach_ns", "nvme_8h.html#ae935583b7f95b13fbd2dd41255490da0", null ],
     [ "spdk_nvme_ctrlr_cmd_abort", "nvme_8h.html#a724ed20a1a5adaf30c48db8c28d29677", null ],
@@ -38,6 +39,7 @@ var nvme_8h =
     [ "spdk_nvme_ctrlr_delete_ns", "nvme_8h.html#a7c62e2d4555a5ebc3a3b6f9632c51e1a", null ],
     [ "spdk_nvme_ctrlr_detach_ns", "nvme_8h.html#ab562f58b5903071929d6a559fe984d0a", null ],
     [ "spdk_nvme_ctrlr_format", "nvme_8h.html#a9bb6973133e1fd5e7a1522ab104ac92b", null ],
+    [ "spdk_nvme_ctrlr_free_cmb_io_buffer", "nvme_8h.html#abb11b2a40d2cd45072f83624956b8b01", null ],
     [ "spdk_nvme_ctrlr_free_io_qpair", "nvme_8h.html#a85ec189f50d0f78d73a54413370401f5", null ],
     [ "spdk_nvme_ctrlr_get_data", "nvme_8h.html#a5a9daf15b5008ac36c12e7b8db7bdec9", null ],
     [ "spdk_nvme_ctrlr_get_default_ctrlr_opts", "nvme_8h.html#ac31bc692c6b3a84e2355eb63a8b01ccf", null ],
