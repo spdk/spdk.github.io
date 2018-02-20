@@ -1,0 +1,78 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "9e5a3985_2df1ec63",
+        "filename": "_posts/2018-02-20-meetings.md",
+        "patchSetId": 3
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 1010525
+      },
+      "writtenOn": "2018-02-20T17:46:38Z",
+      "side": 1,
+      "message": "If you want these to show up as separate lines, add another newline between them - otherwise, they get formatted as a single paragraph (all on one line).  Alternatively, you could make this a bulleted list.",
+      "revId": "036c64599458daa8d8b3cfc8b91e6dcd440841c8",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "77139577_5df61deb",
+        "filename": "_posts/2018-02-20-meetings.md",
+        "patchSetId": 3
+      },
+      "lineNbr": 36,
+      "author": {
+        "id": 1010525
+      },
+      "writtenOn": "2018-02-20T17:46:38Z",
+      "side": 1,
+      "message": "Nitpick: trailing whitespace.",
+      "revId": "036c64599458daa8d8b3cfc8b91e6dcd440841c8",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "157f3e52_082f2fb8",
+        "filename": "community.md",
+        "patchSetId": 3
+      },
+      "lineNbr": 25,
+      "author": {
+        "id": 1010525
+      },
+      "writtenOn": "2018-02-20T17:46:38Z",
+      "side": 1,
+      "message": "This should probably have the link to the specific Trello board as well.\n\nAlso, is this set up with open permissions so anyone can post, or do we need to have some kind of contact info for access requests?",
+      "range": {
+        "startLine": 25,
+        "startChar": 19,
+        "endLine": 25,
+        "endChar": 25
+      },
+      "revId": "036c64599458daa8d8b3cfc8b91e6dcd440841c8",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "0025251b_3ae64380",
+        "filename": "community.md",
+        "patchSetId": 3
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 1010525
+      },
+      "writtenOn": "2018-02-20T17:46:38Z",
+      "side": 1,
+      "message": "This should probably be split up onto separate lines too.",
+      "revId": "036c64599458daa8d8b3cfc8b91e6dcd440841c8",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
