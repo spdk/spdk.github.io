@@ -122,22 +122,44 @@ Collaboration diagram for spdk_bs_opts:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:aa9f80152a5720e25bc52ab4a89113cdf"><td class="memItemLeft" align="right" valign="top"><a id="aa9f80152a5720e25bc52ab4a89113cdf"></a>
-uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>cluster_sz</b></td></tr>
+<tr class="memitem:aa9f80152a5720e25bc52ab4a89113cdf"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bs__opts.html#aa9f80152a5720e25bc52ab4a89113cdf">cluster_sz</a></td></tr>
+<tr class="memdesc:aa9f80152a5720e25bc52ab4a89113cdf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Size of cluster in bytes.  <a href="#aa9f80152a5720e25bc52ab4a89113cdf">More...</a><br /></td></tr>
 <tr class="separator:aa9f80152a5720e25bc52ab4a89113cdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0c7b15264236f4b044731ca7c0de3014"><td class="memItemLeft" align="right" valign="top"><a id="a0c7b15264236f4b044731ca7c0de3014"></a>
-uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>num_md_pages</b></td></tr>
+uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bs__opts.html#a0c7b15264236f4b044731ca7c0de3014">num_md_pages</a></td></tr>
+<tr class="memdesc:a0c7b15264236f4b044731ca7c0de3014"><td class="mdescLeft">&#160;</td><td class="mdescRight">Count of the number of pages reserved for metadata. <br /></td></tr>
 <tr class="separator:a0c7b15264236f4b044731ca7c0de3014"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a63e0b619fedc29159dffd7feca08396b"><td class="memItemLeft" align="right" valign="top"><a id="a63e0b619fedc29159dffd7feca08396b"></a>
-uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>max_md_ops</b></td></tr>
+uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bs__opts.html#a63e0b619fedc29159dffd7feca08396b">max_md_ops</a></td></tr>
+<tr class="memdesc:a63e0b619fedc29159dffd7feca08396b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum simultaneous metadata operations. <br /></td></tr>
 <tr class="separator:a63e0b619fedc29159dffd7feca08396b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac5417afa104f5061bab1bfae0769c3a6"><td class="memItemLeft" align="right" valign="top"><a id="ac5417afa104f5061bab1bfae0769c3a6"></a>
-uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>max_channel_ops</b></td></tr>
+uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bs__opts.html#ac5417afa104f5061bab1bfae0769c3a6">max_channel_ops</a></td></tr>
+<tr class="memdesc:ac5417afa104f5061bab1bfae0769c3a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum simultaneous operations per channel. <br /></td></tr>
 <tr class="separator:ac5417afa104f5061bab1bfae0769c3a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae4108b46bcac7c0fc9aecb949ea6c417"><td class="memItemLeft" align="right" valign="top"><a id="ae4108b46bcac7c0fc9aecb949ea6c417"></a>
-struct <a class="el" href="structspdk__bs__type.html">spdk_bs_type</a>&#160;</td><td class="memItemRight" valign="bottom"><b>bstype</b></td></tr>
+struct <a class="el" href="structspdk__bs__type.html">spdk_bs_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bs__opts.html#ae4108b46bcac7c0fc9aecb949ea6c417">bstype</a></td></tr>
+<tr class="memdesc:ae4108b46bcac7c0fc9aecb949ea6c417"><td class="mdescLeft">&#160;</td><td class="mdescRight">Blobstore type. <br /></td></tr>
 <tr class="separator:ae4108b46bcac7c0fc9aecb949ea6c417"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Field Documentation</h2>
+<a id="aa9f80152a5720e25bc52ab4a89113cdf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa9f80152a5720e25bc52ab4a89113cdf">&#9670;&nbsp;</a></span>cluster_sz</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t spdk_bs_opts::cluster_sz</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Size of cluster in bytes. </p>
+<p>Must be multiple of 4KiB page size. </p>
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li><a class="el" href="blob_8h.html">blob.h</a></li>
 </ul>

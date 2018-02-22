@@ -121,6 +121,9 @@ $(document).ready(function(){initNavTree('nvmf_8h.html','');});
 Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvmf__tgt__opts.html">spdk_nvmf_tgt_opts</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvmf__ns__opts.html">spdk_nvmf_ns_opts</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">NVMe-oF target namespace creation options.  <a href="structspdk__nvmf__ns__opts.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
@@ -231,9 +234,12 @@ struct spdk_nvmf_subsystem *&#160;</td><td class="memItemRight" valign="bottom">
 <tr class="memitem:a6d20b0173b3c6047ad15d5972af867c5"><td class="memItemLeft" align="right" valign="top">const struct <a class="el" href="structspdk__nvme__transport__id.html">spdk_nvme_transport_id</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#a6d20b0173b3c6047ad15d5972af867c5">spdk_nvmf_listener_get_trid</a> (struct spdk_nvmf_listener *listener)</td></tr>
 <tr class="memdesc:a6d20b0173b3c6047ad15d5972af867c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a listen address' transport ID.  <a href="#a6d20b0173b3c6047ad15d5972af867c5">More...</a><br /></td></tr>
 <tr class="separator:a6d20b0173b3c6047ad15d5972af867c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0603a4fbabccbaa9d72780eca7c08420"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#a0603a4fbabccbaa9d72780eca7c08420">spdk_nvmf_subsystem_add_ns</a> (struct spdk_nvmf_subsystem *subsystem, struct spdk_bdev *bdev, uint32_t nsid)</td></tr>
-<tr class="memdesc:a0603a4fbabccbaa9d72780eca7c08420"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a namespace to a subsytem.  <a href="#a0603a4fbabccbaa9d72780eca7c08420">More...</a><br /></td></tr>
-<tr class="separator:a0603a4fbabccbaa9d72780eca7c08420"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa97d60b3fba2761118d21e411a08e542"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#aa97d60b3fba2761118d21e411a08e542">spdk_nvmf_ns_opts_get_defaults</a> (struct <a class="el" href="structspdk__nvmf__ns__opts.html">spdk_nvmf_ns_opts</a> *opts, size_t opts_size)</td></tr>
+<tr class="memdesc:aa97d60b3fba2761118d21e411a08e542"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get default namespace creation options.  <a href="#aa97d60b3fba2761118d21e411a08e542">More...</a><br /></td></tr>
+<tr class="separator:aa97d60b3fba2761118d21e411a08e542"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef42bb5a50c6f6fa1713c060d66c103d"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#aef42bb5a50c6f6fa1713c060d66c103d">spdk_nvmf_subsystem_add_ns</a> (struct spdk_nvmf_subsystem *subsystem, struct spdk_bdev *bdev, const struct <a class="el" href="structspdk__nvmf__ns__opts.html">spdk_nvmf_ns_opts</a> *opts, size_t opts_size)</td></tr>
+<tr class="memdesc:aef42bb5a50c6f6fa1713c060d66c103d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a namespace to a subsytem.  <a href="#aef42bb5a50c6f6fa1713c060d66c103d">More...</a><br /></td></tr>
+<tr class="separator:aef42bb5a50c6f6fa1713c060d66c103d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa10ac07a403de72643a5e9801e9fec0b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#aa10ac07a403de72643a5e9801e9fec0b">spdk_nvmf_subsystem_remove_ns</a> (struct spdk_nvmf_subsystem *subsystem, uint32_t nsid)</td></tr>
 <tr class="memdesc:aa10ac07a403de72643a5e9801e9fec0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove a namespace from a subsytem.  <a href="#aa10ac07a403de72643a5e9801e9fec0b">More...</a><br /></td></tr>
 <tr class="separator:aa10ac07a403de72643a5e9801e9fec0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -252,6 +258,9 @@ struct spdk_nvmf_subsystem *&#160;</td><td class="memItemRight" valign="bottom">
 <tr class="memitem:af3575fee4a9db1b3c8bacbac8b605358"><td class="memItemLeft" align="right" valign="top">struct spdk_bdev *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#af3575fee4a9db1b3c8bacbac8b605358">spdk_nvmf_ns_get_bdev</a> (struct spdk_nvmf_ns *ns)</td></tr>
 <tr class="memdesc:af3575fee4a9db1b3c8bacbac8b605358"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a namespace's associated bdev.  <a href="#af3575fee4a9db1b3c8bacbac8b605358">More...</a><br /></td></tr>
 <tr class="separator:af3575fee4a9db1b3c8bacbac8b605358"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af133c734616e019eecb372ce7b096ff5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#af133c734616e019eecb372ce7b096ff5">spdk_nvmf_ns_get_opts</a> (const struct spdk_nvmf_ns *ns, struct <a class="el" href="structspdk__nvmf__ns__opts.html">spdk_nvmf_ns_opts</a> *opts, size_t opts_size)</td></tr>
+<tr class="memdesc:af133c734616e019eecb372ce7b096ff5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the options specified for a namespace.  <a href="#af133c734616e019eecb372ce7b096ff5">More...</a><br /></td></tr>
+<tr class="separator:af133c734616e019eecb372ce7b096ff5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4cdd9c023f1a7b6dd5e5f00da4f07cb7"><td class="memItemLeft" align="right" valign="top"><a id="a4cdd9c023f1a7b6dd5e5f00da4f07cb7"></a>
 const char *&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvmf_subsystem_get_sn</b> (const struct spdk_nvmf_subsystem *subsystem)</td></tr>
 <tr class="separator:a4cdd9c023f1a7b6dd5e5f00da4f07cb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -382,6 +391,87 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvmf_ctrlr_disco
 
 </div>
 </div>
+<a id="af133c734616e019eecb372ce7b096ff5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af133c734616e019eecb372ce7b096ff5">&#9670;&nbsp;</a></span>spdk_nvmf_ns_get_opts()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_nvmf_ns_get_opts </td>
+          <td>(</td>
+          <td class="paramtype">const struct spdk_nvmf_ns *&#160;</td>
+          <td class="paramname"><em>ns</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structspdk__nvmf__ns__opts.html">spdk_nvmf_ns_opts</a> *&#160;</td>
+          <td class="paramname"><em>opts</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>opts_size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the options specified for a namespace. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ns</td><td>Namespace to query. </td></tr>
+    <tr><td class="paramname">opts</td><td>Output parameter for options. </td></tr>
+    <tr><td class="paramname">opts_size</td><td>sizeof(*opts) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aa97d60b3fba2761118d21e411a08e542"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa97d60b3fba2761118d21e411a08e542">&#9670;&nbsp;</a></span>spdk_nvmf_ns_opts_get_defaults()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_nvmf_ns_opts_get_defaults </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structspdk__nvmf__ns__opts.html">spdk_nvmf_ns_opts</a> *&#160;</td>
+          <td class="paramname"><em>opts</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>opts_size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get default namespace creation options. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">opts</td><td>Namespace options to fill with defaults. </td></tr>
+    <tr><td class="paramname">opts_size</td><td>sizeof(struct spdk_nvmf_ns_opts) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a19b3442b7eb75c234c3e3090d2b5add3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a19b3442b7eb75c234c3e3090d2b5add3">&#9670;&nbsp;</a></span>spdk_nvmf_subsystem_add_host()</h2>
 
@@ -460,8 +550,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvmf_ctrlr_disco
 
 </div>
 </div>
-<a id="a0603a4fbabccbaa9d72780eca7c08420"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0603a4fbabccbaa9d72780eca7c08420">&#9670;&nbsp;</a></span>spdk_nvmf_subsystem_add_ns()</h2>
+<a id="aef42bb5a50c6f6fa1713c060d66c103d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef42bb5a50c6f6fa1713c060d66c103d">&#9670;&nbsp;</a></span>spdk_nvmf_subsystem_add_ns()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -481,8 +571,14 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvmf_ctrlr_disco
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>nsid</em>&#160;</td>
+          <td class="paramtype">const struct <a class="el" href="structspdk__nvmf__ns__opts.html">spdk_nvmf_ns_opts</a> *&#160;</td>
+          <td class="paramname"><em>opts</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>opts_size</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -498,7 +594,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvmf_ctrlr_disco
   <table class="params">
     <tr><td class="paramname">subsystem</td><td>Subsystem to add namespace to. </td></tr>
     <tr><td class="paramname">bdev</td><td>Block device to add as a namespace. </td></tr>
-    <tr><td class="paramname">nsid</td><td>Namespace ID to assign to the new namespace, or 0 to automatically use an available NSID.</td></tr>
+    <tr><td class="paramname">opts</td><td>Namespace options, or NULL to use defaults. </td></tr>
+    <tr><td class="paramname">opts_size</td><td>sizeof(*opts)</td></tr>
   </table>
   </dd>
 </dl>
