@@ -113,8 +113,11 @@ $(document).ready(function(){initNavTree('changelog.html','');});
 v18.04: (Upcoming Release)</h1>
 <h2>RPC</h2>
 <p>The Rpc configuration file section, which was deprecated in v18.01, has been removed. Users should switch to the <code>-r</code> command-line parameter instead.</p>
+<p>The JSON-RPC server implementation now allows up to 32 megabyte responses, growing as needed; previously, the response was limited to 32 kilobytes.</p>
 <h2>NVMe Driver</h2>
 <p>EXPERIMENTAL: Adds support for WDS and RDS capable CMBs in NVMe controllers. This support is experimental pending a functional allocator to free and reallocate CMB buffers.</p>
+<h2>NVMe-oF Target</h2>
+<p>Namespaces may now be assigned unique identifiers via new optional "eui64" and "nguid" parameters to the <code>nvmf_subsystem_add_ns</code> RPC method.</p>
 <h1><a class="anchor" id="changelog-v18-01"></a>
 v18.01: Blobstore Thin Provisioning</h1>
 <h2>Build System</h2>

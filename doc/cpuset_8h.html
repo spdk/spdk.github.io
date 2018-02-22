@@ -154,9 +154,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a6fd6dc0a95e6d00a50b34678b7792bab"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cpuset_8h.html#a6fd6dc0a95e6d00a50b34678b7792bab">spdk_cpuset_count</a> (const struct spdk_cpuset *set)</td></tr>
 <tr class="memdesc:a6fd6dc0a95e6d00a50b34678b7792bab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the number of CPUs that are set in CPU set.  <a href="#a6fd6dc0a95e6d00a50b34678b7792bab">More...</a><br /></td></tr>
 <tr class="separator:a6fd6dc0a95e6d00a50b34678b7792bab"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a576b7e61a36d6d5f0ae583b0c7b61e0c"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cpuset_8h.html#a576b7e61a36d6d5f0ae583b0c7b61e0c">spdk_cpuset_fmt</a> (struct spdk_cpuset *set)</td></tr>
-<tr class="memdesc:a576b7e61a36d6d5f0ae583b0c7b61e0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert a CPU set to hex string.  <a href="#a576b7e61a36d6d5f0ae583b0c7b61e0c">More...</a><br /></td></tr>
-<tr class="separator:a576b7e61a36d6d5f0ae583b0c7b61e0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab179cf0ec5f0a0cdc1788f20d324d095"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cpuset_8h.html#ab179cf0ec5f0a0cdc1788f20d324d095">spdk_cpuset_fmt</a> (struct spdk_cpuset *set)</td></tr>
+<tr class="memdesc:ab179cf0ec5f0a0cdc1788f20d324d095"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert a CPU set to hex string.  <a href="#ab179cf0ec5f0a0cdc1788f20d324d095">More...</a><br /></td></tr>
+<tr class="separator:ab179cf0ec5f0a0cdc1788f20d324d095"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6b074a91a1c38c1f0dbd271cf622669c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cpuset_8h.html#a6b074a91a1c38c1f0dbd271cf622669c">spdk_cpuset_parse</a> (struct spdk_cpuset *set, const char *mask)</td></tr>
 <tr class="memdesc:a6b074a91a1c38c1f0dbd271cf622669c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert a string containing a CPU core mask into a CPU set.  <a href="#a6b074a91a1c38c1f0dbd271cf622669c">More...</a><br /></td></tr>
 <tr class="separator:a6b074a91a1c38c1f0dbd271cf622669c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -318,14 +318,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a576b7e61a36d6d5f0ae583b0c7b61e0c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a576b7e61a36d6d5f0ae583b0c7b61e0c">&#9670;&nbsp;</a></span>spdk_cpuset_fmt()</h2>
+<a id="ab179cf0ec5f0a0cdc1788f20d324d095"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab179cf0ec5f0a0cdc1788f20d324d095">&#9670;&nbsp;</a></span>spdk_cpuset_fmt()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">char* spdk_cpuset_fmt </td>
+          <td class="memname">const char* spdk_cpuset_fmt </td>
           <td>(</td>
           <td class="paramtype">struct spdk_cpuset *&#160;</td>
           <td class="paramname"><em>set</em></td><td>)</td>
@@ -341,7 +341,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Pointer to hexadecimal representation of CPU set. Buffer to store a string is dynamically allocated internally and freed with CPU set object. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Pointer to hexadecimal representation of CPU set. Buffer to store a string is dynamically allocated internally and freed with CPU set object. Memory returned by this function might be changed after subsequent calls to this function so string should be copied by user. </dd></dl>
 
 </div>
 </div>

@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="Content-Type" content="text/xhtml; charset=utf-8">
   <meta name="generator" content="Doxygen 1.8.13">
-  <title>SPDK: Data Fields</title>
+  <title>SPDK: spdk_nvmf_ns_opts Struct Reference</title>
   <script type="text/javascript" src="jquery.js"></script>
   <script type="text/javascript" src="dynsections.js"></script>
   <link href="navtree.css" rel="stylesheet" type="text/css"/>
@@ -101,46 +101,88 @@
   </div>
 </div>
 <script type="text/javascript">
-$(document).ready(function(){initNavTree('functions_b.html','');});
+$(document).ready(function(){initNavTree('structspdk__nvmf__ns__opts.html','');});
 </script>
 <div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#pub-attribs">Data Fields</a>  </div>
+  <div class="headertitle">
+<div class="title">spdk_nvmf_ns_opts Struct Reference</div>  </div>
+</div><!--header-->
 <div class="contents">
-<div class="textblock">Here is a list of all documented struct and union fields with links to the struct/union documentation for each field:</div>
 
-<h3><a id="index_b"></a>- b -</h3><ul>
-<li>bir
-: <a class="el" href="unionspdk__nvme__cmbloc__register.html#a7a72b6bb85d7c446b0ad55f74d91e13a">spdk_nvme_cmbloc_register</a>
-</li>
-<li>bpid
-: <a class="el" href="unionspdk__nvme__bprsel__register.html#aec5aa2286f6c15c07cd269ac3ef35613">spdk_nvme_bprsel_register</a>
-</li>
-<li>bpinfo
-: <a class="el" href="structspdk__nvme__registers.html#a6c0a3def50fe28f4af603dd0fa116acf">spdk_nvme_registers</a>
-</li>
-<li>bpmbl
-: <a class="el" href="structspdk__nvme__registers.html#a5cc56fd2557ed7ffed6b00b3eac5bf31">spdk_nvme_registers</a>
-</li>
-<li>bprof
-: <a class="el" href="unionspdk__nvme__bprsel__register.html#a615e9f455cb7a36f1820dae8fd9dc3ae">spdk_nvme_bprsel_register</a>
-</li>
-<li>bprsel
-: <a class="el" href="structspdk__nvme__registers.html#a92e20b1c798c1873b4e3e27f72e4bf07">spdk_nvme_registers</a>
-</li>
-<li>bprsz
-: <a class="el" href="unionspdk__nvme__bprsel__register.html#a426cc6f4f6478519c297df3ad92bd4b1">spdk_nvme_bprsel_register</a>
-</li>
-<li>bps
-: <a class="el" href="unionspdk__nvme__cap__register.html#a9bbd0513d0df169766c0f74adfc4dde1">spdk_nvme_cap_register</a>
-</li>
-<li>bpsz
-: <a class="el" href="unionspdk__nvme__bpinfo__register.html#a6b1a5e69cd0881e1e81fd4f086e3bf96">spdk_nvme_bpinfo_register</a>
-</li>
-<li>brs
-: <a class="el" href="unionspdk__nvme__bpinfo__register.html#a0a0f2d47ec4131b202ce50e301a22a43">spdk_nvme_bpinfo_register</a>
-</li>
-<li>bstype
-: <a class="el" href="structspdk__bs__opts.html#ae4108b46bcac7c0fc9aecb949ea6c417">spdk_bs_opts</a>
-</li>
+<p>NVMe-oF target namespace creation options.  
+ <a href="structspdk__nvmf__ns__opts.html#details">More...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Data Fields</h2></td></tr>
+<tr class="memitem:a66d255ba06755be6be1402d0cf9a459d"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvmf__ns__opts.html#a66d255ba06755be6be1402d0cf9a459d">nsid</a></td></tr>
+<tr class="memdesc:a66d255ba06755be6be1402d0cf9a459d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Namespace ID.  <a href="#a66d255ba06755be6be1402d0cf9a459d">More...</a><br /></td></tr>
+<tr class="separator:a66d255ba06755be6be1402d0cf9a459d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae51dcdf9a8a00cbc3e9ede5725cf0a0a"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvmf__ns__opts.html#ae51dcdf9a8a00cbc3e9ede5725cf0a0a">nguid</a> [16]</td></tr>
+<tr class="memdesc:ae51dcdf9a8a00cbc3e9ede5725cf0a0a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Namespace Globally Unique Identifier.  <a href="#ae51dcdf9a8a00cbc3e9ede5725cf0a0a">More...</a><br /></td></tr>
+<tr class="separator:ae51dcdf9a8a00cbc3e9ede5725cf0a0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88c0f389614abb708b49cb4767ccf307"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvmf__ns__opts.html#a88c0f389614abb708b49cb4767ccf307">eui64</a> [8]</td></tr>
+<tr class="memdesc:a88c0f389614abb708b49cb4767ccf307"><td class="mdescLeft">&#160;</td><td class="mdescRight">IEEE Extended Unique Identifier.  <a href="#a88c0f389614abb708b49cb4767ccf307">More...</a><br /></td></tr>
+<tr class="separator:a88c0f389614abb708b49cb4767ccf307"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>NVMe-oF target namespace creation options. </p>
+</div><h2 class="groupheader">Field Documentation</h2>
+<a id="a88c0f389614abb708b49cb4767ccf307"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a88c0f389614abb708b49cb4767ccf307">&#9670;&nbsp;</a></span>eui64</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t spdk_nvmf_ns_opts::eui64[8]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>IEEE Extended Unique Identifier. </p>
+<p>Fill with 0s if not specified. </p>
+
+</div>
+</div>
+<a id="ae51dcdf9a8a00cbc3e9ede5725cf0a0a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae51dcdf9a8a00cbc3e9ede5725cf0a0a">&#9670;&nbsp;</a></span>nguid</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t spdk_nvmf_ns_opts::nguid[16]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Namespace Globally Unique Identifier. </p>
+<p>Fill with 0s if not specified. </p>
+
+</div>
+</div>
+<a id="a66d255ba06755be6be1402d0cf9a459d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a66d255ba06755be6be1402d0cf9a459d">&#9670;&nbsp;</a></span>nsid</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t spdk_nvmf_ns_opts::nsid</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Namespace ID. </p>
+<p>Set to 0 to automatically assign a free NSID. </p>
+
+</div>
+</div>
+<hr/>The documentation for this struct was generated from the following file:<ul>
+<li><a class="el" href="nvmf_8h.html">nvmf.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

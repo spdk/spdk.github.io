@@ -286,6 +286,36 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_json_write_val</b
 <tr class="memitem:ab93e46b460a6a5f2f9ee3fa54edcc8de"><td class="memItemLeft" align="right" valign="top"><a id="ab93e46b460a6a5f2f9ee3fa54edcc8de"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_json_write_val_raw</b> (struct spdk_json_write_ctx *w, const void *data, size_t len)</td></tr>
 <tr class="separator:ab93e46b460a6a5f2f9ee3fa54edcc8de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab86b097667b889dfda164b10a746ec29"><td class="memItemLeft" align="right" valign="top"><a id="ab86b097667b889dfda164b10a746ec29"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_json_write_named_null</b> (struct spdk_json_write_ctx *w, const char *name)</td></tr>
+<tr class="separator:ab86b097667b889dfda164b10a746ec29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ae247a07382854c991faeb7131116c1"><td class="memItemLeft" align="right" valign="top"><a id="a4ae247a07382854c991faeb7131116c1"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_json_write_named_bool</b> (struct spdk_json_write_ctx *w, const char *name, bool val)</td></tr>
+<tr class="separator:a4ae247a07382854c991faeb7131116c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5989aa1a7e696d3ad7e394e4e96783da"><td class="memItemLeft" align="right" valign="top"><a id="a5989aa1a7e696d3ad7e394e4e96783da"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_json_write_named_int32</b> (struct spdk_json_write_ctx *w, const char *name, int32_t val)</td></tr>
+<tr class="separator:a5989aa1a7e696d3ad7e394e4e96783da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ba1891841d0504b55ca62ef2005bb2f"><td class="memItemLeft" align="right" valign="top"><a id="a0ba1891841d0504b55ca62ef2005bb2f"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_json_write_named_uint32</b> (struct spdk_json_write_ctx *w, const char *name, uint32_t val)</td></tr>
+<tr class="separator:a0ba1891841d0504b55ca62ef2005bb2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af58205394bbbfb6d05219e1c8b88023d"><td class="memItemLeft" align="right" valign="top"><a id="af58205394bbbfb6d05219e1c8b88023d"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_json_write_named_uint64</b> (struct spdk_json_write_ctx *w, const char *name, uint64_t val)</td></tr>
+<tr class="separator:af58205394bbbfb6d05219e1c8b88023d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e2e5ec6ae83ecc0c88f8213825cf5d6"><td class="memItemLeft" align="right" valign="top"><a id="a4e2e5ec6ae83ecc0c88f8213825cf5d6"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_json_write_named_int64</b> (struct spdk_json_write_ctx *w, const char *name, int64_t val)</td></tr>
+<tr class="separator:a4e2e5ec6ae83ecc0c88f8213825cf5d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9818f28c01f95a44cbae78bedab604a0"><td class="memItemLeft" align="right" valign="top"><a id="a9818f28c01f95a44cbae78bedab604a0"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_json_write_named_string</b> (struct spdk_json_write_ctx *w, const char *name, const char *val)</td></tr>
+<tr class="separator:a9818f28c01f95a44cbae78bedab604a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e87be14077e78016f6ec88be45639d1"><td class="memItemLeft" align="right" valign="top"><a id="a5e87be14077e78016f6ec88be45639d1"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_json_write_named_string_fmt</b> (struct spdk_json_write_ctx *w, const char *name, const char *fmt,...)</td></tr>
+<tr class="separator:a5e87be14077e78016f6ec88be45639d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0964a3d06321a53281889c98128244a"><td class="memItemLeft" align="right" valign="top"><a id="ad0964a3d06321a53281889c98128244a"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_json_write_named_array_begin</b> (struct spdk_json_write_ctx *w, const char *name)</td></tr>
+<tr class="separator:ad0964a3d06321a53281889c98128244a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab41e40a3d513cc859534cb5ed08a69ad"><td class="memItemLeft" align="right" valign="top"><a id="ab41e40a3d513cc859534cb5ed08a69ad"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_json_write_named_object_begin</b> (struct spdk_json_write_ctx *w, const char *name)</td></tr>
+<tr class="separator:ab41e40a3d513cc859534cb5ed08a69ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>JSON parsing and encoding. </p>
