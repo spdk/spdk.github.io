@@ -25,16 +25,16 @@ SPDK Community meetings are open to everyone and all are encouraged to participa
 efficient than email or IRC.
 * Post any topics on [Trello](https://trello.com/b/DvM7XayJ) prior to the meeting. If you don't have a Trello login, it's free just sign up and then ask someone on IRC or on the distribution list to add you to the board.
 * If we are able to cover the posted topics before the end of the meeting we can use the time to discuss ad-hoc items.
-* Meetings will be hosted with WebEx every Thu alternating between UTC 04:00-5:00 and UTC 16:00-17:00.
+* Meetings will be hosted with WebEx every week alternating between Tue UTC 15:00-16:00 and Thu UTC 04:00-5:00.
 
 Announcements will be made on IRC as a reminder of which meeting time we are on each week.
 
 To connect:
 
-[Asia Thu WebEx](https://intel.webex.com/intel/j.php?MTID=m9d66f9edca0165483a6ff8515c487381)
-Meeting number (access code): 593 668 332
+[Euro Tue WebEx](https://intel.webex.com/intel/j.php?MTID=ma0bbb01329b3feb30a88fa38f8c60aed)
+Meeting number (access code): 599 406 861
 
-[Euro Thu WebEx](https://intel.webex.com/intel/j.php?MTID=m3f442c092a1d726e660ab32e1c19b1a8)
+[Asia Thu WebEx](https://intel.webex.com/intel/j.php?MTID=m9d66f9edca0165483a6ff8515c487381)
 Meeting number (access code): 599 975 172
 
 OR
