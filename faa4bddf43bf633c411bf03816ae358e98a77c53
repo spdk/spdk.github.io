@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "ec8d23e2_2bcc926b",
+        "filename": "_posts/2018-02-20-meetings.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 1010525
+      },
+      "writtenOn": "2018-02-22T21:51:10Z",
+      "side": 1,
+      "message": "Did you also intend to move this an hour later?  This is now 10 AM in MST and 6 PM in Poland.\n\nI think Piotr suggested moving it an hour earlier (15:00 UTC instead of 16:00).",
+      "range": {
+        "startLine": 20,
+        "startChar": 76,
+        "endLine": 20,
+        "endChar": 87
+      },
+      "revId": "faa4bddf43bf633c411bf03816ae358e98a77c53",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
