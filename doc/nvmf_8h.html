@@ -198,6 +198,9 @@ struct spdk_nvmf_subsystem *&#160;</td><td class="memItemRight" valign="bottom">
 <tr class="memitem:a19b3442b7eb75c234c3e3090d2b5add3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#a19b3442b7eb75c234c3e3090d2b5add3">spdk_nvmf_subsystem_add_host</a> (struct spdk_nvmf_subsystem *subsystem, const char *hostnqn)</td></tr>
 <tr class="memdesc:a19b3442b7eb75c234c3e3090d2b5add3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allow the given host NQN to connect to the given subsystem.  <a href="#a19b3442b7eb75c234c3e3090d2b5add3">More...</a><br /></td></tr>
 <tr class="separator:a19b3442b7eb75c234c3e3090d2b5add3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a028b2b8739dfdd896414b5c2fb84faf6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#a028b2b8739dfdd896414b5c2fb84faf6">spdk_nvmf_subsystem_remove_host</a> (struct spdk_nvmf_subsystem *subsystem, const char *hostnqn)</td></tr>
+<tr class="memdesc:a028b2b8739dfdd896414b5c2fb84faf6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove the given host NQN from the allowed hosts whitelist.  <a href="#a028b2b8739dfdd896414b5c2fb84faf6">More...</a><br /></td></tr>
+<tr class="separator:a028b2b8739dfdd896414b5c2fb84faf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad6453b746f3c470e00e23fa4a194cfbd"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#ad6453b746f3c470e00e23fa4a194cfbd">spdk_nvmf_subsystem_set_allow_any_host</a> (struct spdk_nvmf_subsystem *subsystem, bool allow_any_host)</td></tr>
 <tr class="memdesc:ad6453b746f3c470e00e23fa4a194cfbd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set whether a subsystem should allow any host or only hosts in the allowed list.  <a href="#ad6453b746f3c470e00e23fa4a194cfbd">More...</a><br /></td></tr>
 <tr class="separator:ad6453b746f3c470e00e23fa4a194cfbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1103,6 +1106,45 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvmf_ctrlr_disco
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 on success. Negated errno on failure. The callback provided will only be called on success. </dd></dl>
+
+</div>
+</div>
+<a id="a028b2b8739dfdd896414b5c2fb84faf6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a028b2b8739dfdd896414b5c2fb84faf6">&#9670;&nbsp;</a></span>spdk_nvmf_subsystem_remove_host()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_nvmf_subsystem_remove_host </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_nvmf_subsystem *&#160;</td>
+          <td class="paramname"><em>subsystem</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>hostnqn</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Remove the given host NQN from the allowed hosts whitelist. </p>
+<p>May only be performed on subsystems in the PAUSED or INACTIVE states.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">subsystem</td><td>Subsystem to remove host from </td></tr>
+    <tr><td class="paramname">host_nqn</td><td>The NQN for the host </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success. Negated errno value on failure. </dd></dl>
 
 </div>
 </div>

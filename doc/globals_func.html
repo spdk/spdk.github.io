@@ -159,8 +159,8 @@ $(document).ready(function(){initNavTree('globals_func.html','');});
 <li>spdk_bdev_desc_get_bdev()
 : <a class="el" href="bdev_8h.html#ac6418cfa0e9076ef7dafa7753c4c2028">bdev.h</a>
 </li>
-<li>spdk_bdev_dump_config_json()
-: <a class="el" href="bdev_8h.html#a84d158f886b7ae2f735a794da420ca55">bdev.h</a>
+<li>spdk_bdev_dump_info_json()
+: <a class="el" href="bdev_8h.html#a3ef2e861ccd2d6135bfe13257f047fb9">bdev.h</a>
 </li>
 <li>spdk_bdev_finish()
 : <a class="el" href="bdev_8h.html#a7263aeb5393b46fa5af8e04760f62ea4">bdev.h</a>
@@ -314,6 +314,51 @@ $(document).ready(function(){initNavTree('globals_func.html','');});
 </li>
 <li>spdk_call_unaffinitized()
 : <a class="el" href="env_8h.html#abafaea6fc34059237e54e0ab254d0f28">env.h</a>
+</li>
+<li>spdk_conf_allocate()
+: <a class="el" href="conf_8h.html#adf0cf8d93adadd85dedd3c24004fc67e">conf.h</a>
+</li>
+<li>spdk_conf_find_section()
+: <a class="el" href="conf_8h.html#a10385cdb327c80b2cbe5b94f025cf019">conf.h</a>
+</li>
+<li>spdk_conf_first_section()
+: <a class="el" href="conf_8h.html#a50caf66f4c8cc0c93d0d9ae89a16816c">conf.h</a>
+</li>
+<li>spdk_conf_free()
+: <a class="el" href="conf_8h.html#adc6ca4eabe0f86a0e9560c464f982030">conf.h</a>
+</li>
+<li>spdk_conf_next_section()
+: <a class="el" href="conf_8h.html#aaf66351ff668ecea51178af3f643e0d9">conf.h</a>
+</li>
+<li>spdk_conf_read()
+: <a class="el" href="conf_8h.html#a85d8fdbc25d15752e765240ce0d53d03">conf.h</a>
+</li>
+<li>spdk_conf_section_get_boolval()
+: <a class="el" href="conf_8h.html#a1526dbbe773ddf9a550bc3a455b66f02">conf.h</a>
+</li>
+<li>spdk_conf_section_get_intval()
+: <a class="el" href="conf_8h.html#a24b4df0d73d6c22e0534ff800ada9456">conf.h</a>
+</li>
+<li>spdk_conf_section_get_name()
+: <a class="el" href="conf_8h.html#a889936f40f5b396006d6d289792470ca">conf.h</a>
+</li>
+<li>spdk_conf_section_get_nmval()
+: <a class="el" href="conf_8h.html#aff953daa748287171dadcd8ecdfae6c9">conf.h</a>
+</li>
+<li>spdk_conf_section_get_num()
+: <a class="el" href="conf_8h.html#a6f9abaa311e349ff268d005519c7450a">conf.h</a>
+</li>
+<li>spdk_conf_section_get_nval()
+: <a class="el" href="conf_8h.html#a99964f1d40567e8d1e9c54d09811ab9e">conf.h</a>
+</li>
+<li>spdk_conf_section_get_val()
+: <a class="el" href="conf_8h.html#aa4e4afaac4d34264eb17c67655c0cd31">conf.h</a>
+</li>
+<li>spdk_conf_section_match_prefix()
+: <a class="el" href="conf_8h.html#a6c2dc4e953a430f1988af5f210506715">conf.h</a>
+</li>
+<li>spdk_conf_set_as_default()
+: <a class="el" href="conf_8h.html#a2c19833437dd2be7bafc4d7ca07668d8">conf.h</a>
 </li>
 <li>spdk_cpuset_alloc()
 : <a class="el" href="cpuset_8h.html#aff3a197116d2a61effd73795b40a6c95">cpuset.h</a>
@@ -507,6 +552,9 @@ $(document).ready(function(){initNavTree('globals_func.html','');});
 <li>spdk_jsonrpc_send_error_response()
 : <a class="el" href="jsonrpc_8h.html#a506661cfdfda6f549c69a6f4a988a026">jsonrpc.h</a>
 </li>
+<li>spdk_jsonrpc_send_error_response_fmt()
+: <a class="el" href="jsonrpc_8h.html#ae7d1dc3ef99ed408859d9a5f6802ad65">jsonrpc.h</a>
+</li>
 <li>spdk_log_close()
 : <a class="el" href="log_8h.html#a41cdc17423a58c475fa785fd491f00e9">log.h</a>
 </li>
@@ -551,6 +599,9 @@ $(document).ready(function(){initNavTree('globals_func.html','');});
 </li>
 <li>spdk_lvs_unload()
 : <a class="el" href="lvol_8h.html#a9f7032fa38dc1af638910018e07b0dd4">lvol.h</a>
+</li>
+<li>spdk_mem_all_zero()
+: <a class="el" href="string_8h.html#ae013400d8f031493f284ed3b614357e0">string.h</a>
 </li>
 <li>spdk_mem_map_alloc()
 : <a class="el" href="env_8h.html#a512b5ef37a363a4c8e234c060b734605">env.h</a>
@@ -908,6 +959,9 @@ $(document).ready(function(){initNavTree('globals_func.html','');});
 </li>
 <li>spdk_nvmf_subsystem_pause()
 : <a class="el" href="nvmf_8h.html#a7a8b1ca226480e9582975bd03d3b232d">nvmf.h</a>
+</li>
+<li>spdk_nvmf_subsystem_remove_host()
+: <a class="el" href="nvmf_8h.html#a028b2b8739dfdd896414b5c2fb84faf6">nvmf.h</a>
 </li>
 <li>spdk_nvmf_subsystem_remove_listener()
 : <a class="el" href="nvmf_8h.html#af77830eafd0e5bdf209be8d9c196fc11">nvmf.h</a>

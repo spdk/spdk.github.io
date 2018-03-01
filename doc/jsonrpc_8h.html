@@ -161,6 +161,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_jsonrpc_server_s
 <tr class="memitem:a506661cfdfda6f549c69a6f4a988a026"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jsonrpc_8h.html#a506661cfdfda6f549c69a6f4a988a026">spdk_jsonrpc_send_error_response</a> (struct spdk_jsonrpc_request *request, int error_code, const char *msg)</td></tr>
 <tr class="memdesc:a506661cfdfda6f549c69a6f4a988a026"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send an error response to a JSON-RPC request.  <a href="#a506661cfdfda6f549c69a6f4a988a026">More...</a><br /></td></tr>
 <tr class="separator:a506661cfdfda6f549c69a6f4a988a026"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7d1dc3ef99ed408859d9a5f6802ad65"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jsonrpc_8h.html#ae7d1dc3ef99ed408859d9a5f6802ad65">spdk_jsonrpc_send_error_response_fmt</a> (struct spdk_jsonrpc_request *request, int error_code, const char *fmt,...)</td></tr>
+<tr class="memdesc:ae7d1dc3ef99ed408859d9a5f6802ad65"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send an error response to a JSON-RPC request.  <a href="#ae7d1dc3ef99ed408859d9a5f6802ad65">More...</a><br /></td></tr>
+<tr class="separator:ae7d1dc3ef99ed408859d9a5f6802ad65"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>JSON-RPC 2.0 server implementation. </p>
@@ -290,6 +293,57 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_jsonrpc_server_s
   </dd>
 </dl>
 <p>This is shorthand for <a class="el" href="jsonrpc_8h.html#a22757fb7d0f34984e29b3fe311dfed01" title="Begin building a response to a JSON-RPC request. ">spdk_jsonrpc_begin_result()</a> + <a class="el" href="jsonrpc_8h.html#af3d607f5a980bf9eb793ef2b553f679a" title="Complete and send a JSON-RPC response. ">spdk_jsonrpc_end_result()</a> with an error object. </p>
+
+</div>
+</div>
+<a id="ae7d1dc3ef99ed408859d9a5f6802ad65"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae7d1dc3ef99ed408859d9a5f6802ad65">&#9670;&nbsp;</a></span>spdk_jsonrpc_send_error_response_fmt()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_jsonrpc_send_error_response_fmt </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_jsonrpc_request *&#160;</td>
+          <td class="paramname"><em>request</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>error_code</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>fmt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>...</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Send an error response to a JSON-RPC request. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">request</td><td>JSON-RPC request to respond to. </td></tr>
+    <tr><td class="paramname">error_code</td><td>Integer error code to return (may be one of the SPDK_JSONRPC_ERROR_ errors, or a custom error code). </td></tr>
+    <tr><td class="paramname">fmt</td><td>Printf-like format string.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>This is shorthand for printf() + <a class="el" href="jsonrpc_8h.html#a506661cfdfda6f549c69a6f4a988a026" title="Send an error response to a JSON-RPC request. ">spdk_jsonrpc_send_error_response()</a>. </p>
 
 </div>
 </div>

@@ -1,5 +1,6 @@
 var string_8h =
 [
+    [ "spdk_mem_all_zero", "string_8h.html#ae013400d8f031493f284ed3b614357e0", null ],
     [ "spdk_parse_capacity", "string_8h.html#ab81c3a52c60c7390e54437dc5856996b", null ],
     [ "spdk_parse_ip_addr", "string_8h.html#ad48498f237af5f5c25ca7cbca5300e12", null ],
     [ "spdk_sprintf_alloc", "string_8h.html#ac80f349c77c57bc28690f46e5de7fe03", null ],

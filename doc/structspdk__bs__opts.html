@@ -141,6 +141,12 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 struct <a class="el" href="structspdk__bs__type.html">spdk_bs_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bs__opts.html#ae4108b46bcac7c0fc9aecb949ea6c417">bstype</a></td></tr>
 <tr class="memdesc:ae4108b46bcac7c0fc9aecb949ea6c417"><td class="mdescLeft">&#160;</td><td class="mdescRight">Blobstore type. <br /></td></tr>
 <tr class="separator:ae4108b46bcac7c0fc9aecb949ea6c417"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d51d3733be73f4a76776d0523232230"><td class="memItemLeft" align="right" valign="top">spdk_blob_op_with_handle_complete&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bs__opts.html#a3d51d3733be73f4a76776d0523232230">iter_cb_fn</a></td></tr>
+<tr class="memdesc:a3d51d3733be73f4a76776d0523232230"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback function to invoke for each blob.  <a href="#a3d51d3733be73f4a76776d0523232230">More...</a><br /></td></tr>
+<tr class="separator:a3d51d3733be73f4a76776d0523232230"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e0a18c6e415b9242c63eed9141736e3"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bs__opts.html#a7e0a18c6e415b9242c63eed9141736e3">iter_cb_arg</a></td></tr>
+<tr class="memdesc:a7e0a18c6e415b9242c63eed9141736e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Argument passed to iter_cb_fn for each blob.  <a href="#a7e0a18c6e415b9242c63eed9141736e3">More...</a><br /></td></tr>
+<tr class="separator:a7e0a18c6e415b9242c63eed9141736e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Field Documentation</h2>
 <a id="aa9f80152a5720e25bc52ab4a89113cdf"></a>
@@ -157,6 +163,38 @@ struct <a class="el" href="structspdk__bs__type.html">spdk_bs_type</a>&#160;</td
 
 <p>Size of cluster in bytes. </p>
 <p>Must be multiple of 4KiB page size. </p>
+
+</div>
+</div>
+<a id="a7e0a18c6e415b9242c63eed9141736e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7e0a18c6e415b9242c63eed9141736e3">&#9670;&nbsp;</a></span>iter_cb_arg</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* spdk_bs_opts::iter_cb_arg</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Argument passed to iter_cb_fn for each blob. </p>
+
+</div>
+</div>
+<a id="a3d51d3733be73f4a76776d0523232230"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d51d3733be73f4a76776d0523232230">&#9670;&nbsp;</a></span>iter_cb_fn</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">spdk_blob_op_with_handle_complete spdk_bs_opts::iter_cb_fn</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Callback function to invoke for each blob. </p>
 
 </div>
 </div>
