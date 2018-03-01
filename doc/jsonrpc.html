@@ -266,6 +266,51 @@ nvmf_subsystem_add_ns method</h2>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;method&quot;: &quot;nvmf_subsystem_add_ns&quot;,</div><div class="line">  &quot;params&quot;: {</div><div class="line">    &quot;nqn&quot;: &quot;nqn.2016-06.io.spdk:cnode1&quot;,</div><div class="line">    &quot;namespace&quot;: {</div><div class="line">      &quot;nsid&quot;: 3,</div><div class="line">      &quot;bdev_name&quot;: &quot;Nvme0n1&quot;</div><div class="line">    }</div><div class="line">  }</div><div class="line">}</div></div><!-- fragment --><p>Example response:</p>
-<div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: 3</div><div class="line">}</div></div><!-- fragment --> </div></div><!-- contents -->
+<div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: 3</div><div class="line">}</div></div><!-- fragment --><h2><a class="anchor" id="rpc_nvmf_subsystem_add_host"></a>
+nvmf_subsystem_add_host method</h2>
+<p>Add a host NQN to the whitelist of allowed hosts.</p>
+<h3>Parameters</h3>
+<table class="doxtable">
+<tr>
+<th>Name </th><th>Optional </th><th>Type </th><th>Description  </th></tr>
+<tr>
+<td>nqn </td><td>Required </td><td>string </td><td>Subsystem NQN </td></tr>
+<tr>
+<td>host </td><td>Required </td><td>string </td><td>Host NQN to add to the list of allowed host NQNs </td></tr>
+</table>
+<h3>Example</h3>
+<p>Example request:</p>
+<div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;method&quot;: &quot;nvmf_subsystem_add_host&quot;,</div><div class="line">  &quot;params&quot;: {</div><div class="line">    &quot;nqn&quot;: &quot;nqn.2016-06.io.spdk:cnode1&quot;,</div><div class="line">    &quot;host&quot;: &quot;nqn.2016-06.io.spdk:host1&quot;</div><div class="line">  }</div><div class="line">}</div></div><!-- fragment --><p>Example response:</p>
+<div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: true</div><div class="line">}</div></div><!-- fragment --><h2><a class="anchor" id="rpc_nvmf_subsystem_remove_host"></a>
+nvmf_subsystem_remove_host method</h2>
+<p>Remove a host NQN from the whitelist of allowed hosts.</p>
+<h3>Parameters</h3>
+<table class="doxtable">
+<tr>
+<th>Name </th><th>Optional </th><th>Type </th><th>Description  </th></tr>
+<tr>
+<td>nqn </td><td>Required </td><td>string </td><td>Subsystem NQN </td></tr>
+<tr>
+<td>host </td><td>Required </td><td>string </td><td>Host NQN to remove from the list of allowed host NQNs </td></tr>
+</table>
+<h3>Example</h3>
+<p>Example request:</p>
+<div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;method&quot;: &quot;nvmf_subsystem_remove_host&quot;,</div><div class="line">  &quot;params&quot;: {</div><div class="line">    &quot;nqn&quot;: &quot;nqn.2016-06.io.spdk:cnode1&quot;,</div><div class="line">    &quot;host&quot;: &quot;nqn.2016-06.io.spdk:host1&quot;</div><div class="line">  }</div><div class="line">}</div></div><!-- fragment --><p>Example response:</p>
+<div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: true</div><div class="line">}</div></div><!-- fragment --><h2><a class="anchor" id="rpc_nvmf_subsystem_allow_any_host"></a>
+nvmf_subsystem_allow_any_host method</h2>
+<p>Configure a subsystem to allow any host to connect or to enforce the host NQN whitelist.</p>
+<h3>Parameters</h3>
+<table class="doxtable">
+<tr>
+<th>Name </th><th>Optional </th><th>Type </th><th>Description  </th></tr>
+<tr>
+<td>nqn </td><td>Required </td><td>string </td><td>Subsystem NQN </td></tr>
+<tr>
+<td>allow_any_host </td><td>Required </td><td>boolean </td><td>Allow any host (<code>true</code>) or enforce allowed host whitelist (<code>false</code>). </td></tr>
+</table>
+<h3>Example</h3>
+<p>Example request:</p>
+<div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;method&quot;: &quot;nvmf_subsystem_allow_any_host&quot;,</div><div class="line">  &quot;params&quot;: {</div><div class="line">    &quot;nqn&quot;: &quot;nqn.2016-06.io.spdk:cnode1&quot;,</div><div class="line">    &quot;allow_any_host&quot;: true</div><div class="line">  }</div><div class="line">}</div></div><!-- fragment --><p>Example response:</p>
+<div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: true</div><div class="line">}</div></div><!-- fragment --> </div></div><!-- contents -->
 </div><!-- doc-content -->
 </div>

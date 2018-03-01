@@ -153,10 +153,51 @@ Functions</h2></td></tr>
 <tr class="memitem:ab81c3a52c60c7390e54437dc5856996b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="string_8h.html#ab81c3a52c60c7390e54437dc5856996b">spdk_parse_capacity</a> (const char *cap_str, uint64_t *cap, bool *has_prefix)</td></tr>
 <tr class="memdesc:ab81c3a52c60c7390e54437dc5856996b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parse a string representing a number possibly followed by a binary prefix.  <a href="#ab81c3a52c60c7390e54437dc5856996b">More...</a><br /></td></tr>
 <tr class="separator:ab81c3a52c60c7390e54437dc5856996b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae013400d8f031493f284ed3b614357e0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="string_8h.html#ae013400d8f031493f284ed3b614357e0">spdk_mem_all_zero</a> (const void *data, size_t size)</td></tr>
+<tr class="memdesc:ae013400d8f031493f284ed3b614357e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if a buffer is all zero (0x00) bytes or not.  <a href="#ae013400d8f031493f284ed3b614357e0">More...</a><br /></td></tr>
+<tr class="separator:ae013400d8f031493f284ed3b614357e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>String utility functions. </p>
 </div><h2 class="groupheader">Function Documentation</h2>
+<a id="ae013400d8f031493f284ed3b614357e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae013400d8f031493f284ed3b614357e0">&#9670;&nbsp;</a></span>spdk_mem_all_zero()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool spdk_mem_all_zero </td>
+          <td>(</td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Check if a buffer is all zero (0x00) bytes or not. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">data</td><td>Buffer to check. </td></tr>
+    <tr><td class="paramname">size</td><td>Size of data in bytes. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if data consists entirely of zeroes, or false if any byte in data is not zero. </dd></dl>
+
+</div>
+</div>
 <a id="ab81c3a52c60c7390e54437dc5856996b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab81c3a52c60c7390e54437dc5856996b">&#9670;&nbsp;</a></span>spdk_parse_capacity()</h2>
 

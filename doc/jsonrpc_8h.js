@@ -9,6 +9,7 @@ var jsonrpc_8h =
     [ "spdk_jsonrpc_begin_result", "jsonrpc_8h.html#a22757fb7d0f34984e29b3fe311dfed01", null ],
     [ "spdk_jsonrpc_end_result", "jsonrpc_8h.html#af3d607f5a980bf9eb793ef2b553f679a", null ],
     [ "spdk_jsonrpc_send_error_response", "jsonrpc_8h.html#a506661cfdfda6f549c69a6f4a988a026", null ],
+    [ "spdk_jsonrpc_send_error_response_fmt", "jsonrpc_8h.html#ae7d1dc3ef99ed408859d9a5f6802ad65", null ],
     [ "spdk_jsonrpc_server_listen", "jsonrpc_8h.html#a88be481b43cb068b54a44595f0f3713f", null ],
     [ "spdk_jsonrpc_server_poll", "jsonrpc_8h.html#ab91b6125cbea0661bdfa87400b6c3020", null ],
     [ "spdk_jsonrpc_server_shutdown", "jsonrpc_8h.html#aa7d4f7ed2234b0cd20e3c87685030b2f", null ]

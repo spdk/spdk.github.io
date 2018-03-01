@@ -118,6 +118,17 @@ v18.04: (Upcoming Release)</h1>
 <p>EXPERIMENTAL: Adds support for WDS and RDS capable CMBs in NVMe controllers. This support is experimental pending a functional allocator to free and reallocate CMB buffers.</p>
 <h2>NVMe-oF Target</h2>
 <p>Namespaces may now be assigned unique identifiers via new optional "eui64" and "nguid" parameters to the <code>nvmf_subsystem_add_ns</code> RPC method.</p>
+<h2>Blobstore</h2>
+<p>A number of functions have been renamed:</p>
+<ul>
+<li>spdk_bs_io_write_blob() =&gt; spdk_blob_io_write()</li>
+<li>spdk_bs_io_read_blob() =&gt; spdk_blob_io_read()</li>
+<li>spdk_bs_io_writev_blob() =&gt; spdk_blob_io_writev()</li>
+<li>spdk_bs_io_readv_blob() =&gt; spdk_blob_io_readv()</li>
+<li>spdk_bs_io_unmap_blob() =&gt; spdk_blob_io_unmap()</li>
+<li>spdk_bs_io_write_zeroes_blob() =&gt; spdk_blob_io_write_zeroes()</li>
+</ul>
+<p>The old names still exist but are deprecated. They will be removed in the v18.07 release.</p>
 <h1><a class="anchor" id="changelog-v18-01"></a>
 v18.01: Blobstore Thin Provisioning</h1>
 <h2>Build System</h2>
