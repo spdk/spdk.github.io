@@ -65,6 +65,8 @@ var annotated_dup =
     [ "spdk_nvme_cmbloc_register", "unionspdk__nvme__cmbloc__register.html", "unionspdk__nvme__cmbloc__register" ],
     [ "spdk_nvme_cmbsz_register", "unionspdk__nvme__cmbsz__register.html", "unionspdk__nvme__cmbsz__register" ],
     [ "spdk_nvme_cmd", "structspdk__nvme__cmd.html", "structspdk__nvme__cmd" ],
+    [ "spdk_nvme_cmds_and_effect_entry", "structspdk__nvme__cmds__and__effect__entry.html", "structspdk__nvme__cmds__and__effect__entry" ],
+    [ "spdk_nvme_cmds_and_effect_log_page", "structspdk__nvme__cmds__and__effect__log__page.html", "structspdk__nvme__cmds__and__effect__log__page" ],
     [ "spdk_nvme_cpl", "structspdk__nvme__cpl.html", "structspdk__nvme__cpl" ],
     [ "spdk_nvme_critical_warning_state", "unionspdk__nvme__critical__warning__state.html", "unionspdk__nvme__critical__warning__state" ],
     [ "spdk_nvme_csts_register", "unionspdk__nvme__csts__register.html", "unionspdk__nvme__csts__register" ],
