@@ -6,6 +6,7 @@ var NAVTREE =
       [ "Concepts", "index.html#concepts", null ],
       [ "User Guides", "index.html#user_guides", null ],
       [ "Programmer Guides", "index.html#general", null ],
+      [ "Miscellaneous", "index.html#misc", null ],
       [ "Modules", "index.html#modules", null ],
       [ "Tools", "index.html#tools", null ],
       [ "Performance Reports", "index.html#performancereports", null ]
@@ -112,9 +113,7 @@ var NAVTREE =
         [ "delete_nvmf_subsystem method", "jsonrpc.html#rpc_delete_nvmf_subsystem", null ],
         [ "nvmf_subsystem_add_listener  method", "jsonrpc.html#rpc_nvmf_subsystem_add_listener", null ],
         [ "nvmf_subsystem_add_ns method", "jsonrpc.html#rpc_nvmf_subsystem_add_ns", null ],
-        [ "nvmf_subsystem_add_host method", "jsonrpc.html#rpc_nvmf_subsystem_add_host", null ],
-        [ "nvmf_subsystem_remove_host method", "jsonrpc.html#rpc_nvmf_subsystem_remove_host", null ],
-        [ "nvmf_subsystem_allow_any_host method", "jsonrpc.html#rpc_nvmf_subsystem_allow_any_host", null ]
+        [ "nvmf_subsystem_remove_ns method", "jsonrpc.html#rpc_nvmf_subsystem_remove_ns", null ]
       ] ]
     ] ],
     [ "Logical Volumes Introduction", "logical_volumes.html", [
@@ -163,6 +162,13 @@ var NAVTREE =
       ] ]
     ] ],
     [ "NVMe over Fabrics Target Programming Guide", "nvmf_tgt_pg.html", null ],
+    [ "Peer-2-Peer DMAs", "peer_2_peer.html", [
+      [ "In this document", "peer_2_peer.html#p2p_toc", null ],
+      [ "Overview", "peer_2_peer.html#p2p_overview", null ],
+      [ "The P2P API for NVMe", "peer_2_peer.html#p2p_nvme_api", null ],
+      [ "cmb_copy: An example P2P Application", "peer_2_peer.html#p2p_cmb_copy", null ],
+      [ "Issues with P2P", "peer_2_peer.html#p2p_issues", null ]
+    ] ],
     [ "SSD Internals", "ssd_internals.html", null ],
     [ "User Space Drivers", "userspace.html", [
       [ "Controlling Hardware From User Space", "userspace.html#userspace_control", null ],
@@ -222,19 +228,20 @@ var NAVTREEINDEX =
 [
 "about.html",
 "cpuset_8h.html#ab837bbccdfec21ca5c96c31735e44cb1",
-"histogram__data_8h.html#a10fc233bee56181eae0dfb21c46123e1",
-"json_8h.html#a223071134f0ca94d171d9810e2bdb378",
-"nvme_8h.html#ac37484cc5d14777e4ae1fde031d0edf2",
-"nvme__spec_8h.html#aa70e5bbfae3ba9ec66a65c78e1966a1d",
-"nvmf_8h.html#afdcd2be73f2653c6c14141c4cb481fe2",
-"scsi__spec_8h.html#a35efeaeb4d8fb7a9b406846a2138b389a92715e826869c500584c50547f154324",
-"scsi__spec_8h.html#aca4b95e35566a60195e59be74e5a1218a5790da04b96cbdcab8d130515cf6842a",
-"structiscsi__bhs__reject.html#a87ae5375aaab468bf7c94d8a55f1670c",
-"structspdk__ioat__dma__hw__desc.html#a9233dc92a8eb202b6d0fe224452649f3",
-"structspdk__nvme__ctrlr__data.html#a2d22ae5ba380cbfc4e670bec6ef2cccc",
-"structspdk__nvme__ns__data.html#a1d90d25be4a3d74fcc8097cdd437da25",
-"structspdk__nvmf__fabric__connect__cmd.html#a2440e864ecbf3dfbcc3a456dae2036b8",
-"structspdk__trace__tpoint.html#ab7fc63503e3111eaa02cec6270279903"
+"histogram__data_8h.html#a1cf0bd341c3d0b5fdbb3b9208cf9f91d",
+"json_8h.html#a282fefd919b6a7df96d06d182621b7ae",
+"nvme_8h.html#ace23485fea91d126a13fe706ce6d8843",
+"nvme__spec_8h.html#aa70e5bbfae3ba9ec66a65c78e1966a1da193392369d152316a433ad87c5b5d5dd",
+"nvmf__spec_8h.html#a0578627f30113b62cb183438a4437b3f",
+"scsi__spec_8h.html#a35efeaeb4d8fb7a9b406846a2138b389a7c13b3996658e5a2cecfe85eeed8dabb",
+"scsi__spec_8h.html#aca4b95e35566a60195e59be74e5a1218a366610ad4bf242d49884e7fdd38f48b3",
+"structiscsi__bhs__reject.html#a2743eb6e31db7c79d0f33063486f8ce5",
+"structspdk__ioat__dma__hw__desc.html#a549865702262d3c133d23a55ac5da07c",
+"structspdk__nvme__ctrlr__data.html#a0c739ec5b01b092f9ef152ea594c4fda",
+"structspdk__nvme__intel__temperature__page.html#ab64ba504715b6e017466e98e113d2ddb",
+"structspdk__nvmf__fabric__auth__recv__cmd.html#aada34625f8015ab1c39a485505217fce",
+"structspdk__trace__history.html#afc00e204c28b550c0dd2f8140a08e566",
+"vhost_8h.html#a8b8c054fdc8ed4ad573b2d0bcf2d4797"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

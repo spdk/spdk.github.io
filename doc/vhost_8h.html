@@ -119,7 +119,8 @@ $(document).ready(function(){initNavTree('vhost_8h.html','');});
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
 <tr class="memitem:a8b37106ad173f20d05da87f89714700b"><td class="memItemLeft" align="right" valign="top"><a id="a8b37106ad173f20d05da87f89714700b"></a>
-typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_vhost_fini_cb</b>) (void)</td></tr>
+typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vhost_8h.html#a8b37106ad173f20d05da87f89714700b">spdk_vhost_fini_cb</a>) (void)</td></tr>
+<tr class="memdesc:a8b37106ad173f20d05da87f89714700b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback funcion for <a class="el" href="vhost_8h.html#af358eac95a16bd456349fcfaa00379bb" title="Clean up the environment of vhost after finishing the vhost application. ">spdk_vhost_fini()</a>. <br /></td></tr>
 <tr class="separator:a8b37106ad173f20d05da87f89714700b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac2c4b62eaf6503e5f5e520394f9f9fe1"><td class="memItemLeft" align="right" valign="top">typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vhost_8h.html#ac2c4b62eaf6503e5f5e520394f9f9fe1">spdk_vhost_event_fn</a>) (struct spdk_vhost_dev *vdev, void *arg)</td></tr>
 <tr class="memdesc:ac2c4b62eaf6503e5f5e520394f9f9fe1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Synchronized vhost event used for user callbacks.  <a href="#ac2c4b62eaf6503e5f5e520394f9f9fe1">More...</a><br /></td></tr>
@@ -127,11 +128,11 @@ typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_vhost_
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a38abeca2169a11feec2ecdce057f3263"><td class="memItemLeft" align="right" valign="top"><a id="a38abeca2169a11feec2ecdce057f3263"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_vhost_init</b> (void)</td></tr>
+<tr class="memitem:a38abeca2169a11feec2ecdce057f3263"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vhost_8h.html#a38abeca2169a11feec2ecdce057f3263">spdk_vhost_init</a> (void)</td></tr>
+<tr class="memdesc:a38abeca2169a11feec2ecdce057f3263"><td class="mdescLeft">&#160;</td><td class="mdescRight">Init vhost environment.  <a href="#a38abeca2169a11feec2ecdce057f3263">More...</a><br /></td></tr>
 <tr class="separator:a38abeca2169a11feec2ecdce057f3263"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af358eac95a16bd456349fcfaa00379bb"><td class="memItemLeft" align="right" valign="top"><a id="af358eac95a16bd456349fcfaa00379bb"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_vhost_fini</b> (spdk_vhost_fini_cb fini_cb)</td></tr>
+<tr class="memitem:af358eac95a16bd456349fcfaa00379bb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vhost_8h.html#af358eac95a16bd456349fcfaa00379bb">spdk_vhost_fini</a> (<a class="el" href="vhost_8h.html#a8b37106ad173f20d05da87f89714700b">spdk_vhost_fini_cb</a> fini_cb)</td></tr>
+<tr class="memdesc:af358eac95a16bd456349fcfaa00379bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clean up the environment of vhost after finishing the vhost application.  <a href="#af358eac95a16bd456349fcfaa00379bb">More...</a><br /></td></tr>
 <tr class="separator:af358eac95a16bd456349fcfaa00379bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad731d99cb58a462e4ec790c346c23255"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vhost_8h.html#ad731d99cb58a462e4ec790c346c23255">spdk_vhost_startup</a> (void *arg1, void *arg2)</td></tr>
 <tr class="memdesc:ad731d99cb58a462e4ec790c346c23255"><td class="mdescLeft">&#160;</td><td class="mdescRight">Init vhost application.  <a href="#ad731d99cb58a462e4ec790c346c23255">More...</a><br /></td></tr>
@@ -140,7 +141,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_vhost_fini</b> (
 <tr class="memdesc:afd7159f8eb1e0d65dad5bedaa6cc5e43"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deinit vhost application.  <a href="#afd7159f8eb1e0d65dad5bedaa6cc5e43">More...</a><br /></td></tr>
 <tr class="separator:afd7159f8eb1e0d65dad5bedaa6cc5e43"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa06efc0d096d4414de40ed5c0b394622"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vhost_8h.html#aa06efc0d096d4414de40ed5c0b394622">spdk_vhost_dev_get_name</a> (struct spdk_vhost_dev *vdev)</td></tr>
-<tr class="memdesc:aa06efc0d096d4414de40ed5c0b394622"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get name of the vhost device.  <a href="#aa06efc0d096d4414de40ed5c0b394622">More...</a><br /></td></tr>
+<tr class="memdesc:aa06efc0d096d4414de40ed5c0b394622"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the name of the vhost device.  <a href="#aa06efc0d096d4414de40ed5c0b394622">More...</a><br /></td></tr>
 <tr class="separator:aa06efc0d096d4414de40ed5c0b394622"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6002d25166c3003efd3b6edb51cb84c0"><td class="memItemLeft" align="right" valign="top">const struct spdk_cpuset *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vhost_8h.html#a6002d25166c3003efd3b6edb51cb84c0">spdk_vhost_dev_get_cpumask</a> (struct spdk_vhost_dev *vdev)</td></tr>
 <tr class="memdesc:a6002d25166c3003efd3b6edb51cb84c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get cpuset of the vhost device.  <a href="#a6002d25166c3003efd3b6edb51cb84c0">More...</a><br /></td></tr>
@@ -194,12 +195,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_vhost_fini</b> (
 <p>Synchronized vhost event used for user callbacks. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">vdev</td><td>vhost device </td></tr>
-    <tr><td class="paramname">arg</td><td>user-provided parameter </td></tr>
+    <tr><td class="paramname">vdev</td><td>vhost device. </td></tr>
+    <tr><td class="paramname">arg</td><td>user-provided parameter.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>0 on success, -1 on failure </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, -1 on failure. </dd></dl>
 
 </div>
 </div>
@@ -250,7 +251,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_vhost_fini</b> (
     <tr><td class="paramname">name</td><td>name of the vhost blk device. The name will also be used for socket name, which is exactly <code>socket_base_dir/name</code> </td></tr>
     <tr><td class="paramname">mask</td><td>string containing cpumask in hex. The leading <em>0x</em> is allowed but not required. The mask itself can be constructed as: ((1 &lt;&lt; cpu0) | (1 &lt;&lt; cpu1) | ... | (1 &lt;&lt; cpuN)). </td></tr>
     <tr><td class="paramname">dev_name</td><td>bdev name to associate with this vhost device </td></tr>
-    <tr><td class="paramname">readonly</td><td>if set, all writes to the device will fail with <code>VIRTIO_BLK_S_IOERR</code> error code. </td></tr>
+    <tr><td class="paramname">readonly</td><td>if set, all writes to the device will fail with <code>VIRTIO_BLK_S_IOERR</code> error code.</td></tr>
   </table>
   </dd>
 </dl>
@@ -278,11 +279,11 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_vhost_fini</b> (
 <p>The bdev might be NULL, as it could have been hotremoved.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">ctrl</td><td>vhost blk device </td></tr>
+    <tr><td class="paramname">ctrl</td><td>vhost blk device.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>SPDK bdev associated with given vdev </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>SPDK bdev associated with given vdev. </dd></dl>
 
 </div>
 </div>
@@ -323,7 +324,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_vhost_fini</b> (
 <p>This function is thread safe.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">vdev_name</td><td>name of the vhost device to run this event on </td></tr>
+    <tr><td class="paramname">vdev_name</td><td>name of the vhost device to run this event on. </td></tr>
     <tr><td class="paramname">fn</td><td>function to be called. The first parameter of callback function is either actual spdk_vhost_dev pointer or NULL in case vdev with given name doesn't exist. The second param is user provided argument <em>arg</em>. </td></tr>
     <tr><td class="paramname">arg</td><td>parameter to be passed to <em>fn</em>. </td></tr>
   </table>
@@ -388,10 +389,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_vhost_fini</b> (
 </div><div class="memdoc">
 
 <p>Get cpuset of the vhost device. </p>
-<p>The cpuset is constant throughout the lifetime of a vdev. It is be a subset of SPDK app cpuset vhost was started with.</p>
+<p>The cpuset is constant throughout the lifetime of a vdev. It is a subset of SPDK app cpuset vhost was started with.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">dev</td><td>vhost device </td></tr>
+    <tr><td class="paramname">dev</td><td>vhost device.</td></tr>
   </table>
   </dd>
 </dl>
@@ -415,15 +416,15 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_vhost_fini</b> (
       </table>
 </div><div class="memdoc">
 
-<p>Get name of the vhost device. </p>
+<p>Get the name of the vhost device. </p>
 <p>This is equal to the filename of socket file. The name is constant throughout the lifetime of a vdev.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">vdev</td><td>vhost device </td></tr>
+    <tr><td class="paramname">vdev</td><td>vhost device.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>name of the vdev </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>name of the vdev. </dd></dl>
 
 </div>
 </div>
@@ -447,11 +448,58 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_vhost_fini</b> (
 <p>The device must not have any open connections on it's socket.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">vdev</td><td>vhost blk device </td></tr>
+    <tr><td class="paramname">vdev</td><td>vhost blk device.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 on success, negative errno on error. </dd></dl>
+
+</div>
+</div>
+<a id="af358eac95a16bd456349fcfaa00379bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af358eac95a16bd456349fcfaa00379bb">&#9670;&nbsp;</a></span>spdk_vhost_fini()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_vhost_fini </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="vhost_8h.html#a8b37106ad173f20d05da87f89714700b">spdk_vhost_fini_cb</a>&#160;</td>
+          <td class="paramname"><em>fini_cb</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Clean up the environment of vhost after finishing the vhost application. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fini_cb</td><td>Called when the cleanup operation completes. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a38abeca2169a11feec2ecdce057f3263"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a38abeca2169a11feec2ecdce057f3263">&#9670;&nbsp;</a></span>spdk_vhost_init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_vhost_init </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Init vhost environment. </p>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, -1 on failure. </dd></dl>
 
 </div>
 </div>
@@ -492,9 +540,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_vhost_fini</b> (
 <p>If vhost SCSI device has an active socket connection, it is required that it has negotiated <code>VIRTIO_SCSI_F_HOTPLUG</code> feature flag. Otherwise an -ENOTSUP error code is returned.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">vdev</td><td>vhost SCSI device </td></tr>
-    <tr><td class="paramname">scsi_tgt_num</td><td>slot to attach to </td></tr>
-    <tr><td class="paramname">bdev_name</td><td>name of the SPDK bdev to associate with SCSI LUN0 </td></tr>
+    <tr><td class="paramname">vdev</td><td>vhost SCSI device. </td></tr>
+    <tr><td class="paramname">scsi_tgt_num</td><td>slot to attach to. </td></tr>
+    <tr><td class="paramname">bdev_name</td><td>name of the SPDK bdev to associate with SCSI LUN0.</td></tr>
   </table>
   </dd>
 </dl>
@@ -534,7 +582,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_vhost_fini</b> (
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">name</td><td>name of the vhost device. The name will also be used for socket name, which is exactly <code>socket_base_dir/name</code> </td></tr>
-    <tr><td class="paramname">mask</td><td>string containing cpumask in hex. The leading <em>0x</em> is allowed but not required. The mask itself can be constructed as: ((1 &lt;&lt; cpu0) | (1 &lt;&lt; cpu1) | ... | (1 &lt;&lt; cpuN)). </td></tr>
+    <tr><td class="paramname">mask</td><td>string containing cpumask in hex. The leading <em>0x</em> is allowed but not required. The mask itself can be constructed as: ((1 &lt;&lt; cpu0) | (1 &lt;&lt; cpu1) | ... | (1 &lt;&lt; cpuN)).</td></tr>
   </table>
   </dd>
 </dl>
@@ -569,15 +617,15 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_vhost_fini</b> (
 </div><div class="memdoc">
 
 <p>Get SCSI target from vhost SCSI device on given slot. </p>
-<p>Max number of available slots is defined by <code>SPDK_VHOST_SCSI_CTRLR_MAX_DEVS</code>.</p>
+<p>Max number of available slots is defined by. <code>SPDK_VHOST_SCSI_CTRLR_MAX_DEVS</code>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">vdev</td><td>vhost SCSI device </td></tr>
-    <tr><td class="paramname">num</td><td>slot id </td></tr>
+    <tr><td class="paramname">vdev</td><td>vhost SCSI device. </td></tr>
+    <tr><td class="paramname">num</td><td>slot id.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>SCSI device on given slot or NULL </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>SCSI device on given slot or NULL. </dd></dl>
 
 </div>
 </div>
@@ -627,7 +675,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_vhost_fini</b> (
     <tr><td class="paramname">vdev</td><td>vhost SCSI device </td></tr>
     <tr><td class="paramname">scsi_tgt_num</td><td>slot id to delete target from </td></tr>
     <tr><td class="paramname">cb_fn</td><td>callback to be fired once target has been successfully deleted. The first parameter of callback function is the vhost SCSI device, the second is user provided argument <em>cb_arg</em>. </td></tr>
-    <tr><td class="paramname">cb_arg</td><td>parameter to be passed to <em>cb_fn</em>. </td></tr>
+    <tr><td class="paramname">cb_arg</td><td>parameter to be passed to <em>cb_fn</em>.</td></tr>
   </table>
   </dd>
 </dl>
@@ -672,9 +720,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_vhost_fini</b> (
 <p>Actual events delay time when is calculated according to below formula: if (delay_base == 0 || IOPS &lt; iops_threshold) { delay = 0; } else if (IOPS &lt; iops_threshold) { delay = delay_base * (iops - iops_threshold) / iops_threshold; }</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">vdev</td><td>vhost device </td></tr>
+    <tr><td class="paramname">vdev</td><td>vhost device. </td></tr>
     <tr><td class="paramname">delay_base_us</td><td>Base delay time in microseconds. If 0, coalescing is disabled. </td></tr>
-    <tr><td class="paramname">iops_threshold</td><td>IOPS threshold when coalescing is activated </td></tr>
+    <tr><td class="paramname">iops_threshold</td><td>IOPS threshold when coalescing is activated. </td></tr>
   </table>
   </dd>
 </dl>
@@ -729,10 +777,11 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_vhost_fini</b> (
 </div><div class="memdoc">
 
 <p>Init vhost application. </p>
-<p>This is called once by SPDK app layer. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>This is called once by SPDK app layer.</p>
+<dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">arg1</td><td>optional path to directory where sockets will be created </td></tr>
-    <tr><td class="paramname">arg2</td><td>unused </td></tr>
+    <tr><td class="paramname">arg1</td><td>optional path to directory where sockets will be created. </td></tr>
+    <tr><td class="paramname">arg2</td><td>unused. </td></tr>
   </table>
   </dd>
 </dl>
