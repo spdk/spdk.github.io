@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "30074f3b_b42d8d1b",
+        "filename": "_posts/2018-03-09-test-hierarchy.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 1011289
+      },
+      "writtenOn": "2018-03-10T00:06:22Z",
+      "side": 1,
+      "message": "you should clarify that we use both example applications (in /examples) as well as tools written specifically to facilitate testing (in various locations under /test)",
+      "revId": "1239b049443fc6c60e16fa7af16f0a62e45f6de7",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "34d1dfaf_f1cae2e7",
+        "filename": "_posts/2018-03-09-test-hierarchy.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 1011289
+      },
+      "writtenOn": "2018-03-10T00:06:22Z",
+      "side": 1,
+      "message": "I\u0027d add one more sentence at the end, something like (feel free to use your own words)... \"Look for more blogs like this in the future to help everyone get the most of the SPDK test infrastructure. And remember... we all own the quality of the code so the more people we have contributing to the test infrastructure the better off we are!\"",
+      "revId": "1239b049443fc6c60e16fa7af16f0a62e45f6de7",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
