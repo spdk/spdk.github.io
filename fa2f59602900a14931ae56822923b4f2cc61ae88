@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "6dda25dc_e3710728",
+        "filename": "_posts/2018-03-12-test-hierarchy.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 1011223
+      },
+      "writtenOn": "2018-03-12T19:10:17Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "ca01da87_07892359",
+      "range": {
+        "startLine": 9,
+        "startChar": 36,
+        "endLine": 9,
+        "endChar": 78
+      },
+      "revId": "fa2f59602900a14931ae56822923b4f2cc61ae88",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "d44526d8_fd4f3067",
         "filename": "_posts/2018-03-12-test-hierarchy.md",
         "patchSetId": 1
@@ -48,6 +72,30 @@
     },
     {
       "key": {
+        "uuid": "a11de2a1_b9cd5ebd",
+        "filename": "_posts/2018-03-12-test-hierarchy.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 1011223
+      },
+      "writtenOn": "2018-03-12T19:10:17Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "d44526d8_fd4f3067",
+      "range": {
+        "startLine": 16,
+        "startChar": 51,
+        "endLine": 16,
+        "endChar": 55
+      },
+      "revId": "fa2f59602900a14931ae56822923b4f2cc61ae88",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "469041d8_a32742d8",
         "filename": "_posts/2018-03-12-test-hierarchy.md",
         "patchSetId": 1
@@ -59,6 +107,30 @@
       "writtenOn": "2018-03-12T18:09:31Z",
       "side": 1,
       "message": "You can omit \"up\"",
+      "range": {
+        "startLine": 27,
+        "startChar": 70,
+        "endLine": 27,
+        "endChar": 72
+      },
+      "revId": "fa2f59602900a14931ae56822923b4f2cc61ae88",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9db856d6_7890619e",
+        "filename": "_posts/2018-03-12-test-hierarchy.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 27,
+      "author": {
+        "id": 1011223
+      },
+      "writtenOn": "2018-03-12T19:10:17Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "469041d8_a32742d8",
       "range": {
         "startLine": 27,
         "startChar": 70,
