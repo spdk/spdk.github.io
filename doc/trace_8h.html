@@ -189,9 +189,9 @@ Functions</h2></td></tr>
 <tr class="memitem:aa0ade5c1286d121c2eafeae8918169db"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="trace_8h.html#aa0ade5c1286d121c2eafeae8918169db">spdk_trace_set_tpoint_group_mask</a> (uint64_t tpoint_group_mask)</td></tr>
 <tr class="memdesc:aa0ade5c1286d121c2eafeae8918169db"><td class="mdescLeft">&#160;</td><td class="mdescRight">For each tpoint group specified in the group mask, enable all of its tpoints.  <a href="#aa0ade5c1286d121c2eafeae8918169db">More...</a><br /></td></tr>
 <tr class="separator:aa0ade5c1286d121c2eafeae8918169db"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7ce968e40aa0ff01b068cef754059526"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="trace_8h.html#a7ce968e40aa0ff01b068cef754059526">spdk_trace_init</a> (const char *shm_name)</td></tr>
-<tr class="memdesc:a7ce968e40aa0ff01b068cef754059526"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the trace environment.  <a href="#a7ce968e40aa0ff01b068cef754059526">More...</a><br /></td></tr>
-<tr class="separator:a7ce968e40aa0ff01b068cef754059526"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af604955a293c41c3eb9217af94b893a4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="trace_8h.html#af604955a293c41c3eb9217af94b893a4">spdk_trace_init</a> (const char *shm_name)</td></tr>
+<tr class="memdesc:af604955a293c41c3eb9217af94b893a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the trace environment.  <a href="#af604955a293c41c3eb9217af94b893a4">More...</a><br /></td></tr>
+<tr class="separator:af604955a293c41c3eb9217af94b893a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7cdec16a6ee14c87b0bf5d0666d9a0cb"><td class="memItemLeft" align="right" valign="top"><a id="a7cdec16a6ee14c87b0bf5d0666d9a0cb"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="trace_8h.html#a7cdec16a6ee14c87b0bf5d0666d9a0cb">spdk_trace_cleanup</a> (void)</td></tr>
 <tr class="memdesc:a7cdec16a6ee14c87b0bf5d0666d9a0cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unmap global trace memory structs. <br /></td></tr>
@@ -237,7 +237,7 @@ struct <a class="el" href="structspdk__trace__flags.html">spdk_trace_flags</a> *
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><span class="keyword">static</span> <span class="keywordtype">void</span> fn(<span class="keywordtype">void</span>);                                   \</div><div class="line">        struct <a class="code" href="structspdk__trace__register__fn.html">spdk_trace_register_fn</a> reg_ ## fn = {            \</div><div class="line">                .reg_fn = fn,                                   \</div><div class="line">                .next = NULL,                                   \</div><div class="line">        };                                                      \</div><div class="line">        __attribute__((constructor)) <span class="keyword">static</span> <span class="keywordtype">void</span> _ ## fn(<span class="keywordtype">void</span>)  \</div><div class="line">        {                                                       \</div><div class="line">                spdk_trace_add_register_fn(&amp;reg_ ## fn);        \</div><div class="line">        }                                                       \</div><div class="line">        static <span class="keywordtype">void</span> fn(<span class="keywordtype">void</span>)</div><div class="ttc" id="structspdk__trace__register__fn_html"><div class="ttname"><a href="structspdk__trace__register__fn.html">spdk_trace_register_fn</a></div><div class="ttdef"><b>Definition:</b> trace.h:244</div></div>
+<b>Value:</b><div class="fragment"><div class="line"><span class="keyword">static</span> <span class="keywordtype">void</span> fn(<span class="keywordtype">void</span>);                                   \</div><div class="line">        struct <a class="code" href="structspdk__trace__register__fn.html">spdk_trace_register_fn</a> reg_ ## fn = {            \</div><div class="line">                .reg_fn = fn,                                   \</div><div class="line">                .next = NULL,                                   \</div><div class="line">        };                                                      \</div><div class="line">        __attribute__((constructor)) <span class="keyword">static</span> <span class="keywordtype">void</span> _ ## fn(<span class="keywordtype">void</span>)  \</div><div class="line">        {                                                       \</div><div class="line">                spdk_trace_add_register_fn(&amp;reg_ ## fn);        \</div><div class="line">        }                                                       \</div><div class="line">        static <span class="keywordtype">void</span> fn(<span class="keywordtype">void</span>)</div><div class="ttc" id="structspdk__trace__register__fn_html"><div class="ttname"><a href="structspdk__trace__register__fn.html">spdk_trace_register_fn</a></div><div class="ttdef"><b>Definition:</b> trace.h:245</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -353,14 +353,14 @@ struct <a class="el" href="structspdk__trace__flags.html">spdk_trace_flags</a> *
 
 </div>
 </div>
-<a id="a7ce968e40aa0ff01b068cef754059526"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7ce968e40aa0ff01b068cef754059526">&#9670;&nbsp;</a></span>spdk_trace_init()</h2>
+<a id="af604955a293c41c3eb9217af94b893a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af604955a293c41c3eb9217af94b893a4">&#9670;&nbsp;</a></span>spdk_trace_init()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void spdk_trace_init </td>
+          <td class="memname">int spdk_trace_init </td>
           <td>(</td>
           <td class="paramtype">const char *&#160;</td>
           <td class="paramname"><em>shm_name</em></td><td>)</td>
@@ -377,6 +377,7 @@ struct <a class="el" href="structspdk__trace__flags.html">spdk_trace_flags</a> *
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, else non-zero indicates a failure. </dd></dl>
 
 </div>
 </div>

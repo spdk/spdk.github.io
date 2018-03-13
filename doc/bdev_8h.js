@@ -43,6 +43,7 @@ var bdev_8h =
     [ "spdk_bdev_get_num_blocks", "bdev_8h.html#a86568eca8f0b4d0dc9bc59c5138fc7a5", null ],
     [ "spdk_bdev_get_optimal_io_boundary", "bdev_8h.html#aa79625889e23318204d235da36a4fa02", null ],
     [ "spdk_bdev_get_product_name", "bdev_8h.html#a1cb4d1f8822c30be8c5d9c5dc3e62483", null ],
+    [ "spdk_bdev_get_uuid", "bdev_8h.html#add8565cdbf3d57697b67202b869a7beb", null ],
     [ "spdk_bdev_has_write_cache", "bdev_8h.html#a93f6d6ce09da384501f09a49581caa37", null ],
     [ "spdk_bdev_initialize", "bdev_8h.html#a854eb960c06597051071023a3d70e887", null ],
     [ "spdk_bdev_io_get_iovec", "bdev_8h.html#aa05d8c0e82bfbcc209af1eb958230ede", null ],

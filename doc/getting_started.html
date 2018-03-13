@@ -123,7 +123,7 @@ Building</h1>
 <div class="fragment"><div class="line">./configure --with-rdma</div><div class="line">make</div></div><!-- fragment --><h1><a class="anchor" id="getting_started_unittests"></a>
 Running the Unit Tests</h1>
 <p>It's always a good idea to confirm your build worked by running the unit tests.</p>
-<div class="fragment"><div class="line">./unittest.sh</div></div><!-- fragment --><p>You will see several error messages when running the unit tests, but they are part of the test suite. The final message at the end of the script indicates success or failure.</p>
+<div class="fragment"><div class="line">./test/unit/unittest.sh</div></div><!-- fragment --><p>You will see several error messages when running the unit tests, but they are part of the test suite. The final message at the end of the script indicates success or failure.</p>
 <h1><a class="anchor" id="getting_started_examples"></a>
 Running the Example Applications</h1>
 <p>Before running an SPDK application, some hugepages must be allocated and any NVMe and I/OAT devices must be unbound from the native kernel drivers. SPDK includes a script to automate this process on both Linux and FreeBSD. This script should be run as root. It only needs to be run once on the system.</p>

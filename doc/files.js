@@ -42,6 +42,7 @@ var files =
     [ "string.h", "string_8h.html", "string_8h" ],
     [ "trace.h", "trace_8h.html", "trace_8h" ],
     [ "util.h", "util_8h.html", "util_8h" ],
+    [ "uuid.h", "uuid_8h.html", "uuid_8h" ],
     [ "version.h", "version_8h.html", "version_8h" ],
     [ "vhost.h", "vhost_8h.html", "vhost_8h" ]
 ];
