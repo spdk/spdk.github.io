@@ -156,6 +156,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ae12b16b8565ab63a3c9b919ab9664c0f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lvol_8h.html#ae12b16b8565ab63a3c9b919ab9664c0f">spdk_lvs_init</a> (struct <a class="el" href="structspdk__bs__dev.html">spdk_bs_dev</a> *bs_dev, struct <a class="el" href="structspdk__lvs__opts.html">spdk_lvs_opts</a> *o, <a class="el" href="lvol_8h.html#a757eefd4ce0d68328e7dec58eb2e8a50">spdk_lvs_op_with_handle_complete</a> cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:ae12b16b8565ab63a3c9b919ab9664c0f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize lvolstore on given bs_bdev.  <a href="#ae12b16b8565ab63a3c9b919ab9664c0f">More...</a><br /></td></tr>
 <tr class="separator:ae12b16b8565ab63a3c9b919ab9664c0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af406c5e7b0e7826b270c802b1431b76f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lvol_8h.html#af406c5e7b0e7826b270c802b1431b76f">spdk_lvs_rename</a> (struct spdk_lvol_store *lvs, const char *new_name, <a class="el" href="lvol_8h.html#a76f85d046acb7b35ae36dc83cf337075">spdk_lvs_op_complete</a> cb_fn, void *cb_arg)</td></tr>
+<tr class="memdesc:af406c5e7b0e7826b270c802b1431b76f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Renames given lvolstore.  <a href="#af406c5e7b0e7826b270c802b1431b76f">More...</a><br /></td></tr>
+<tr class="separator:af406c5e7b0e7826b270c802b1431b76f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9f7032fa38dc1af638910018e07b0dd4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lvol_8h.html#a9f7032fa38dc1af638910018e07b0dd4">spdk_lvs_unload</a> (struct spdk_lvol_store *lvol_store, <a class="el" href="lvol_8h.html#a76f85d046acb7b35ae36dc83cf337075">spdk_lvs_op_complete</a> cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:a9f7032fa38dc1af638910018e07b0dd4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unloads lvolstore.  <a href="#a9f7032fa38dc1af638910018e07b0dd4">More...</a><br /></td></tr>
 <tr class="separator:a9f7032fa38dc1af638910018e07b0dd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -632,6 +635,57 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_lvol_open</b> (s
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">opts</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="af406c5e7b0e7826b270c802b1431b76f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af406c5e7b0e7826b270c802b1431b76f">&#9670;&nbsp;</a></span>spdk_lvs_rename()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_lvs_rename </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_lvol_store *&#160;</td>
+          <td class="paramname"><em>lvs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>new_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="lvol_8h.html#a76f85d046acb7b35ae36dc83cf337075">spdk_lvs_op_complete</a>&#160;</td>
+          <td class="paramname"><em>cb_fn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>cb_arg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Renames given lvolstore. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">lvs</td><td>Pointer to lvolstore </td></tr>
+    <tr><td class="paramname">new_name</td><td>New name of lvs </td></tr>
+    <tr><td class="paramname">cb_fn</td><td>Completion callback </td></tr>
+    <tr><td class="paramname">cb_arg</td><td>Completion callback custom arguments </td></tr>
   </table>
   </dd>
 </dl>

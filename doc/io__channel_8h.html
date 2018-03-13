@@ -131,11 +131,11 @@ typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_thread
 <tr class="memitem:a72dfa5b3490733f3d307d2303a551661"><td class="memItemLeft" align="right" valign="top"><a id="a72dfa5b3490733f3d307d2303a551661"></a>
 typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_thread_pass_msg</b>) (spdk_thread_fn fn, void *ctx, void *thread_ctx)</td></tr>
 <tr class="separator:a72dfa5b3490733f3d307d2303a551661"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a301dae23c95a94def8c7c1b0ed4444a7"><td class="memItemLeft" align="right" valign="top"><a id="a301dae23c95a94def8c7c1b0ed4444a7"></a>
-typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_poller_fn</b>) (void *ctx)</td></tr>
-<tr class="separator:a301dae23c95a94def8c7c1b0ed4444a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35c421accdc2a0a61bb7be916106293b"><td class="memItemLeft" align="right" valign="top">typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="io__channel_8h.html#a35c421accdc2a0a61bb7be916106293b">spdk_poller_fn</a>) (void *ctx)</td></tr>
+<tr class="memdesc:a35c421accdc2a0a61bb7be916106293b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback function for a poller.  <a href="#a35c421accdc2a0a61bb7be916106293b">More...</a><br /></td></tr>
+<tr class="separator:a35c421accdc2a0a61bb7be916106293b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6f70f5e9b4d498e843f81f1a6ada6370"><td class="memItemLeft" align="right" valign="top"><a id="a6f70f5e9b4d498e843f81f1a6ada6370"></a>
-typedef struct spdk_poller *(*&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_start_poller</b>) (void *thread_ctx, spdk_poller_fn fn, void *arg, uint64_t period_microseconds)</td></tr>
+typedef struct spdk_poller *(*&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_start_poller</b>) (void *thread_ctx, <a class="el" href="io__channel_8h.html#a35c421accdc2a0a61bb7be916106293b">spdk_poller_fn</a> fn, void *arg, uint64_t period_microseconds)</td></tr>
 <tr class="separator:a6f70f5e9b4d498e843f81f1a6ada6370"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adfddbbbb13145f26741106cb8296a05a"><td class="memItemLeft" align="right" valign="top"><a id="adfddbbbb13145f26741106cb8296a05a"></a>
 typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_stop_poller</b>) (struct spdk_poller *poller, void *thread_ctx)</td></tr>
@@ -176,9 +176,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ae99d1833df09479af6b53ed605357062"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="io__channel_8h.html#ae99d1833df09479af6b53ed605357062">spdk_for_each_thread</a> (spdk_thread_fn fn, void *ctx, spdk_thread_fn cpl)</td></tr>
 <tr class="memdesc:ae99d1833df09479af6b53ed605357062"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a message to each thread, serially.  <a href="#ae99d1833df09479af6b53ed605357062">More...</a><br /></td></tr>
 <tr class="separator:ae99d1833df09479af6b53ed605357062"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a51b50669706fe65ba4f92ffb7d2bad42"><td class="memItemLeft" align="right" valign="top">struct spdk_poller *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="io__channel_8h.html#a51b50669706fe65ba4f92ffb7d2bad42">spdk_poller_register</a> (spdk_thread_fn fn, void *arg, uint64_t period_microseconds)</td></tr>
-<tr class="memdesc:a51b50669706fe65ba4f92ffb7d2bad42"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register a poller on the current thread.  <a href="#a51b50669706fe65ba4f92ffb7d2bad42">More...</a><br /></td></tr>
-<tr class="separator:a51b50669706fe65ba4f92ffb7d2bad42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b3e883ddce01ae8d93541304d1e9126"><td class="memItemLeft" align="right" valign="top">struct spdk_poller *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="io__channel_8h.html#a6b3e883ddce01ae8d93541304d1e9126">spdk_poller_register</a> (<a class="el" href="io__channel_8h.html#a35c421accdc2a0a61bb7be916106293b">spdk_poller_fn</a> fn, void *arg, uint64_t period_microseconds)</td></tr>
+<tr class="memdesc:a6b3e883ddce01ae8d93541304d1e9126"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register a poller on the current thread.  <a href="#a6b3e883ddce01ae8d93541304d1e9126">More...</a><br /></td></tr>
+<tr class="separator:a6b3e883ddce01ae8d93541304d1e9126"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9c26cbd781063f5ee627d6aba2c73fe3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="io__channel_8h.html#a9c26cbd781063f5ee627d6aba2c73fe3">spdk_poller_unregister</a> (struct spdk_poller **ppoller)</td></tr>
 <tr class="memdesc:a9c26cbd781063f5ee627d6aba2c73fe3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unregister a poller on the current thread.  <a href="#a9c26cbd781063f5ee627d6aba2c73fe3">More...</a><br /></td></tr>
 <tr class="separator:a9c26cbd781063f5ee627d6aba2c73fe3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -221,7 +221,31 @@ Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>IO channel. </p>
-</div><h2 class="groupheader">Function Documentation</h2>
+</div><h2 class="groupheader">Typedef Documentation</h2>
+<a id="a35c421accdc2a0a61bb7be916106293b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a35c421accdc2a0a61bb7be916106293b">&#9670;&nbsp;</a></span>spdk_poller_fn</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef int(* spdk_poller_fn) (void *ctx)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Callback function for a poller. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ctx</td><td>Context passed as arg to <a class="el" href="io__channel_8h.html#a6b3e883ddce01ae8d93541304d1e9126" title="Register a poller on the current thread. ">spdk_poller_register()</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 to indicate that polling took place but no events were found; positive to indicate that polling took place and some events were processed; negative if the poller does not provide spin-wait information. </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
 <a id="ae7db1055a27d2ccbd6f0b50a07fa20d0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae7db1055a27d2ccbd6f0b50a07fa20d0">&#9670;&nbsp;</a></span>spdk_allocate_thread()</h2>
 
@@ -748,8 +772,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a51b50669706fe65ba4f92ffb7d2bad42"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a51b50669706fe65ba4f92ffb7d2bad42">&#9670;&nbsp;</a></span>spdk_poller_register()</h2>
+<a id="a6b3e883ddce01ae8d93541304d1e9126"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b3e883ddce01ae8d93541304d1e9126">&#9670;&nbsp;</a></span>spdk_poller_register()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -757,7 +781,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">struct spdk_poller* spdk_poller_register </td>
           <td>(</td>
-          <td class="paramtype">spdk_thread_fn&#160;</td>
+          <td class="paramtype"><a class="el" href="io__channel_8h.html#a35c421accdc2a0a61bb7be916106293b">spdk_poller_fn</a>&#160;</td>
           <td class="paramname"><em>fn</em>, </td>
         </tr>
         <tr>

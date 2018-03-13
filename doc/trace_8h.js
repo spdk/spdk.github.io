@@ -24,7 +24,7 @@ var trace_8h =
     [ "spdk_trace_flags_init", "trace_8h.html#a5cab6a78e0ce33319f02ea03ba221fc1", null ],
     [ "spdk_trace_get_tpoint_group_mask", "trace_8h.html#aa7331d8e039fadc27049efd27c1d49a8", null ],
     [ "spdk_trace_get_tpoint_mask", "trace_8h.html#a346327ec1addd7eeb87963b40cec1821", null ],
-    [ "spdk_trace_init", "trace_8h.html#a7ce968e40aa0ff01b068cef754059526", null ],
+    [ "spdk_trace_init", "trace_8h.html#af604955a293c41c3eb9217af94b893a4", null ],
     [ "spdk_trace_record", "trace_8h.html#a9246bd0dbe13fe0eb4970fd861802666", null ],
     [ "spdk_trace_register_description", "trace_8h.html#a81cabe02d5c28328945350c25cda3861", null ],
     [ "spdk_trace_register_object", "trace_8h.html#a78c1e25f823c6e98da3f99c515715ebe", null ],

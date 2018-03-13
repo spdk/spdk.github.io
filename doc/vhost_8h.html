@@ -128,15 +128,15 @@ typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" 
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:a15921078a895d090283fbbeaaddee76c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vhost_8h.html#a15921078a895d090283fbbeaaddee76c">spdk_vhost_set_socket_path</a> (const char *basename)</td></tr>
+<tr class="memdesc:a15921078a895d090283fbbeaaddee76c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the path to the directory where vhost sockets will be created.  <a href="#a15921078a895d090283fbbeaaddee76c">More...</a><br /></td></tr>
+<tr class="separator:a15921078a895d090283fbbeaaddee76c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a38abeca2169a11feec2ecdce057f3263"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vhost_8h.html#a38abeca2169a11feec2ecdce057f3263">spdk_vhost_init</a> (void)</td></tr>
 <tr class="memdesc:a38abeca2169a11feec2ecdce057f3263"><td class="mdescLeft">&#160;</td><td class="mdescRight">Init vhost environment.  <a href="#a38abeca2169a11feec2ecdce057f3263">More...</a><br /></td></tr>
 <tr class="separator:a38abeca2169a11feec2ecdce057f3263"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af358eac95a16bd456349fcfaa00379bb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vhost_8h.html#af358eac95a16bd456349fcfaa00379bb">spdk_vhost_fini</a> (<a class="el" href="vhost_8h.html#a8b37106ad173f20d05da87f89714700b">spdk_vhost_fini_cb</a> fini_cb)</td></tr>
 <tr class="memdesc:af358eac95a16bd456349fcfaa00379bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clean up the environment of vhost after finishing the vhost application.  <a href="#af358eac95a16bd456349fcfaa00379bb">More...</a><br /></td></tr>
 <tr class="separator:af358eac95a16bd456349fcfaa00379bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad731d99cb58a462e4ec790c346c23255"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vhost_8h.html#ad731d99cb58a462e4ec790c346c23255">spdk_vhost_startup</a> (void *arg1, void *arg2)</td></tr>
-<tr class="memdesc:ad731d99cb58a462e4ec790c346c23255"><td class="mdescLeft">&#160;</td><td class="mdescRight">Init vhost application.  <a href="#ad731d99cb58a462e4ec790c346c23255">More...</a><br /></td></tr>
-<tr class="separator:ad731d99cb58a462e4ec790c346c23255"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afd7159f8eb1e0d65dad5bedaa6cc5e43"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vhost_8h.html#afd7159f8eb1e0d65dad5bedaa6cc5e43">spdk_vhost_shutdown_cb</a> (void)</td></tr>
 <tr class="memdesc:afd7159f8eb1e0d65dad5bedaa6cc5e43"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deinit vhost application.  <a href="#afd7159f8eb1e0d65dad5bedaa6cc5e43">More...</a><br /></td></tr>
 <tr class="separator:afd7159f8eb1e0d65dad5bedaa6cc5e43"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -729,6 +729,34 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a15921078a895d090283fbbeaaddee76c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a15921078a895d090283fbbeaaddee76c">&#9670;&nbsp;</a></span>spdk_vhost_set_socket_path()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_vhost_set_socket_path </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>basename</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the path to the directory where vhost sockets will be created. </p>
+<p>This function must be called before <a class="el" href="vhost_8h.html#a38abeca2169a11feec2ecdce057f3263" title="Init vhost environment. ">spdk_vhost_init()</a>.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">basename</td><td>Path to vhost socket directory</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, negative errno on error. </dd></dl>
+
+</div>
+</div>
 <a id="afd7159f8eb1e0d65dad5bedaa6cc5e43"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#afd7159f8eb1e0d65dad5bedaa6cc5e43">&#9670;&nbsp;</a></span>spdk_vhost_shutdown_cb()</h2>
 
@@ -747,44 +775,6 @@ Functions</h2></td></tr>
 
 <p>Deinit vhost application. </p>
 <p>This is called once by SPDK app layer. </p>
-
-</div>
-</div>
-<a id="ad731d99cb58a462e4ec790c346c23255"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad731d99cb58a462e4ec790c346c23255">&#9670;&nbsp;</a></span>spdk_vhost_startup()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void spdk_vhost_startup </td>
-          <td>(</td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>arg1</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>arg2</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Init vhost application. </p>
-<p>This is called once by SPDK app layer.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">arg1</td><td>optional path to directory where sockets will be created. </td></tr>
-    <tr><td class="paramname">arg2</td><td>unused. </td></tr>
-  </table>
-  </dd>
-</dl>
 
 </div>
 </div>

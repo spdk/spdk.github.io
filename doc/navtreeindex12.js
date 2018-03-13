@@ -1,5 +1,12 @@
 var NAVTREEINDEX12 =
 {
+"structspdk__nvme__intel__smart__information__page.html":[28,0,88],
+"structspdk__nvme__intel__smart__information__page.html#a27759d943a133583c3d64117d7c67d81":[28,0,88,0],
+"structspdk__nvme__intel__temperature__page.html":[28,0,89],
+"structspdk__nvme__intel__temperature__page.html#a6bf0a6cd4c6154ed0d41eb769be21cff":[28,0,89,6],
+"structspdk__nvme__intel__temperature__page.html#a70773b5626ea537b1fb1f15c9f73e5e5":[28,0,89,1],
+"structspdk__nvme__intel__temperature__page.html#a78ade1f977aafd2b2fe85672d2d46c5d":[28,0,89,2],
+"structspdk__nvme__intel__temperature__page.html#a7f4bbf3945dbf1a7a97a398019d45c05":[28,0,89,0],
 "structspdk__nvme__intel__temperature__page.html#ab64ba504715b6e017466e98e113d2ddb":[28,0,89,4],
 "structspdk__nvme__intel__temperature__page.html#ac1371c45719883bac0fdd22ab692f10d":[28,0,89,7],
 "structspdk__nvme__intel__temperature__page.html#ac31567dc016fffef64cb48facb521b02":[28,0,89,8],
@@ -242,12 +249,5 @@ var NAVTREEINDEX12 =
 "structspdk__nvmf__discovery__log__page__entry.html#afe04107ae81316f7e1c189472a881e52":[28,0,111,3],
 "structspdk__nvmf__fabric__auth__recv__cmd.html":[28,0,112],
 "structspdk__nvmf__fabric__auth__recv__cmd.html#a0d991b3abbff564e4d5c5f34c8463d46":[28,0,112,7],
-"structspdk__nvmf__fabric__auth__recv__cmd.html#a117dfdb1f28c88258c02f3bedc130583":[28,0,112,8],
-"structspdk__nvmf__fabric__auth__recv__cmd.html#a2734924f1fb8eea17adfa9faba4f1aae":[28,0,112,9],
-"structspdk__nvmf__fabric__auth__recv__cmd.html#a448a5deb855562c3fa5903d9fea1f8fa":[28,0,112,0],
-"structspdk__nvmf__fabric__auth__recv__cmd.html#a5444b7aaf184ff55570c79b4e931d030":[28,0,112,4],
-"structspdk__nvmf__fabric__auth__recv__cmd.html#a55b73cf6fe1edf1fd8004a3bddc9a62b":[28,0,112,3],
-"structspdk__nvmf__fabric__auth__recv__cmd.html#a872f6bb5c668640432fbd4dd9926cc7d":[28,0,112,6],
-"structspdk__nvmf__fabric__auth__recv__cmd.html#aa742c919c09c21aca594cb06cfaa9336":[28,0,112,2],
-"structspdk__nvmf__fabric__auth__recv__cmd.html#aa75683d60b1d1dc2f6d1978e6aa9071d":[28,0,112,5]
+"structspdk__nvmf__fabric__auth__recv__cmd.html#a117dfdb1f28c88258c02f3bedc130583":[28,0,112,8]
 };

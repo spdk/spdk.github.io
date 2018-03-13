@@ -17,5 +17,6 @@ var lvol_8h =
     [ "spdk_lvs_init", "lvol_8h.html#ae12b16b8565ab63a3c9b919ab9664c0f", null ],
     [ "spdk_lvs_load", "lvol_8h.html#a003e23eb57e1318f2f60c5727cab54e2", null ],
     [ "spdk_lvs_opts_init", "lvol_8h.html#a9ecc81d4bcd4fd9090deb20c1a9e0db8", null ],
+    [ "spdk_lvs_rename", "lvol_8h.html#af406c5e7b0e7826b270c802b1431b76f", null ],
     [ "spdk_lvs_unload", "lvol_8h.html#a9f7032fa38dc1af638910018e07b0dd4", null ]
 ];

@@ -147,5 +147,6 @@ var annotated_dup =
     [ "spdk_trace_object", "structspdk__trace__object.html", "structspdk__trace__object" ],
     [ "spdk_trace_owner", "structspdk__trace__owner.html", "structspdk__trace__owner" ],
     [ "spdk_trace_register_fn", "structspdk__trace__register__fn.html", "structspdk__trace__register__fn" ],
-    [ "spdk_trace_tpoint", "structspdk__trace__tpoint.html", "structspdk__trace__tpoint" ]
+    [ "spdk_trace_tpoint", "structspdk__trace__tpoint.html", "structspdk__trace__tpoint" ],
+    [ "spdk_uuid", "structspdk__uuid.html", "structspdk__uuid" ]
 ];

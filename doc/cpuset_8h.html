@@ -181,7 +181,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Allocate CPU set object. </p>
-<dl class="section return"><dt>Returns</dt><dd>Allocated zeroed cpuset or NULL if fails. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>a pointer to the allocated zeroed cpuset on success, or NULL on failure. </dd></dl>
 
 </div>
 </div>
@@ -279,11 +279,11 @@ Functions</h2></td></tr>
 <p>Get the number of CPUs that are set in CPU set. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">set</td><td>CPU set object. </td></tr>
+    <tr><td class="paramname">set</td><td>CPU set object.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Number of CPUs. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>the number of CPUs. </dd></dl>
 
 </div>
 </div>
@@ -314,7 +314,14 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Compare two CPU sets. </p>
-<dl class="section return"><dt>Returns</dt><dd>True if both CPU sets are equal. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">set1</td><td>CPU set1. </td></tr>
+    <tr><td class="paramname">set2</td><td>CPU set2.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if both CPU sets are equal. </dd></dl>
 
 </div>
 </div>
@@ -337,11 +344,11 @@ Functions</h2></td></tr>
 <p>Convert a CPU set to hex string. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">CPU</td><td>set. </td></tr>
+    <tr><td class="paramname">CPU</td><td>set.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Pointer to hexadecimal representation of CPU set. Buffer to store a string is dynamically allocated internally and freed with CPU set object. Memory returned by this function might be changed after subsequent calls to this function so string should be copied by user. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>a pointer to hexadecimal representation of CPU set. Buffer to store a string is dynamically allocated internally and freed with CPU set object. Memory returned by this function might be changed after subsequent calls to this function so string should be copied by user. </dd></dl>
 
 </div>
 </div>
@@ -401,11 +408,11 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">set</td><td>CPU set object. </td></tr>
-    <tr><td class="paramname">cpu</td><td>CPU index. </td></tr>
+    <tr><td class="paramname">cpu</td><td>CPU index.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>State of selected CPU. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>the state of selected CPU. </dd></dl>
 
 </div>
 </div>
@@ -476,12 +483,12 @@ Functions</h2></td></tr>
 <p>Convert a string containing a CPU core mask into a CPU set. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">set</td><td></td></tr>
-    <tr><td class="paramname">mask</td><td>String defining CPU set. By default hexadecimal value is used or as CPU list enclosed in square brackets defined as: 'c1[-c2][,c3[-c4],...]' </td></tr>
+    <tr><td class="paramname">set</td><td>CPU set. </td></tr>
+    <tr><td class="paramname">mask</td><td>String defining CPU set. By default hexadecimal value is used or as CPU list enclosed in square brackets defined as: 'c1[-c2][,c3[-c4],...]'.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Zero if success, non zero if fails. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>zero if success, non zero if fails. </dd></dl>
 
 </div>
 </div>

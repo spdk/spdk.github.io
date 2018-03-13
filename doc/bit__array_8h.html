@@ -117,17 +117,14 @@ $(document).ready(function(){initNavTree('bit__array_8h.html','');});
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a050b7786c57f20a245db5510691f3f23"><td class="memItemLeft" align="right" valign="top"><a id="a050b7786c57f20a245db5510691f3f23"></a>
-uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bit__array_8h.html#a050b7786c57f20a245db5510691f3f23">spdk_bit_array_capacity</a> (const struct spdk_bit_array *ba)</td></tr>
-<tr class="memdesc:a050b7786c57f20a245db5510691f3f23"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the number of bits a bit array is currently sized to hold. <br /></td></tr>
+<tr class="memitem:a050b7786c57f20a245db5510691f3f23"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bit__array_8h.html#a050b7786c57f20a245db5510691f3f23">spdk_bit_array_capacity</a> (const struct spdk_bit_array *ba)</td></tr>
+<tr class="memdesc:a050b7786c57f20a245db5510691f3f23"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the number of bits that a bit array is currently sized to hold.  <a href="#a050b7786c57f20a245db5510691f3f23">More...</a><br /></td></tr>
 <tr class="separator:a050b7786c57f20a245db5510691f3f23"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae001c8cd7e32e65b5a109a46647d33a0"><td class="memItemLeft" align="right" valign="top"><a id="ae001c8cd7e32e65b5a109a46647d33a0"></a>
-struct spdk_bit_array *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bit__array_8h.html#ae001c8cd7e32e65b5a109a46647d33a0">spdk_bit_array_create</a> (uint32_t num_bits)</td></tr>
-<tr class="memdesc:ae001c8cd7e32e65b5a109a46647d33a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a bit array. <br /></td></tr>
+<tr class="memitem:ae001c8cd7e32e65b5a109a46647d33a0"><td class="memItemLeft" align="right" valign="top">struct spdk_bit_array *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bit__array_8h.html#ae001c8cd7e32e65b5a109a46647d33a0">spdk_bit_array_create</a> (uint32_t num_bits)</td></tr>
+<tr class="memdesc:ae001c8cd7e32e65b5a109a46647d33a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a bit array.  <a href="#ae001c8cd7e32e65b5a109a46647d33a0">More...</a><br /></td></tr>
 <tr class="separator:ae001c8cd7e32e65b5a109a46647d33a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2fa39a45a0605dcddf09d7039a2b6c0a"><td class="memItemLeft" align="right" valign="top"><a id="a2fa39a45a0605dcddf09d7039a2b6c0a"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bit__array_8h.html#a2fa39a45a0605dcddf09d7039a2b6c0a">spdk_bit_array_free</a> (struct spdk_bit_array **bap)</td></tr>
-<tr class="memdesc:a2fa39a45a0605dcddf09d7039a2b6c0a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Free a bit array and set the pointer to NULL. <br /></td></tr>
+<tr class="memitem:a2fa39a45a0605dcddf09d7039a2b6c0a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bit__array_8h.html#a2fa39a45a0605dcddf09d7039a2b6c0a">spdk_bit_array_free</a> (struct spdk_bit_array **bap)</td></tr>
+<tr class="memdesc:a2fa39a45a0605dcddf09d7039a2b6c0a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Free a bit array and set the pointer to NULL.  <a href="#a2fa39a45a0605dcddf09d7039a2b6c0a">More...</a><br /></td></tr>
 <tr class="separator:a2fa39a45a0605dcddf09d7039a2b6c0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a87475f551d59a16d09f45eca6459009d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bit__array_8h.html#a87475f551d59a16d09f45eca6459009d">spdk_bit_array_resize</a> (struct spdk_bit_array **bap, uint32_t num_bits)</td></tr>
 <tr class="memdesc:a87475f551d59a16d09f45eca6459009d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create or resize a bit array.  <a href="#a87475f551d59a16d09f45eca6459009d">More...</a><br /></td></tr>
@@ -151,6 +148,33 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bit_
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Bit array data structure. </p>
 </div><h2 class="groupheader">Function Documentation</h2>
+<a id="a050b7786c57f20a245db5510691f3f23"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a050b7786c57f20a245db5510691f3f23">&#9670;&nbsp;</a></span>spdk_bit_array_capacity()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t spdk_bit_array_capacity </td>
+          <td>(</td>
+          <td class="paramtype">const struct spdk_bit_array *&#160;</td>
+          <td class="paramname"><em>ba</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Return the number of bits that a bit array is currently sized to hold. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ba</td><td>Bit array to query.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the number of bits. </dd></dl>
+
+</div>
+</div>
 <a id="a64d5256695898daf0b9403c54c47da04"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a64d5256695898daf0b9403c54c47da04">&#9670;&nbsp;</a></span>spdk_bit_array_clear()</h2>
 
@@ -178,7 +202,41 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bit_
 </div><div class="memdoc">
 
 <p>Clear (to 0) a bit in the bit array. </p>
-<p>If bit_index is beyond the end of the bit array, no action is taken. Bits beyond the end of the bit array are implicitly 0. </p>
+<p>If bit_index is beyond the end of the bit array, no action is taken. Bits beyond the end of the bit array are implicitly 0.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ba</td><td>Bit array to clear a bit. </td></tr>
+    <tr><td class="paramname">bit_index</td><td>The index of a bit to clear. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ae001c8cd7e32e65b5a109a46647d33a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae001c8cd7e32e65b5a109a46647d33a0">&#9670;&nbsp;</a></span>spdk_bit_array_create()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct spdk_bit_array* spdk_bit_array_create </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>num_bits</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Create a bit array. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">num_bits</td><td>Number of bits that the bit array is sized to hold.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>a pointer to the new bit array. </dd></dl>
 
 </div>
 </div>
@@ -212,11 +270,11 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bit_
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">ba</td><td>The bit array to search. </td></tr>
-    <tr><td class="paramname">start_bit_index</td><td>The bit index from which to start searching (0 to start from the beginning of the array)..</td></tr>
+    <tr><td class="paramname">start_bit_index</td><td>The bit index from which to start searching (0 to start from the beginning of the array).</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>The index of the first cleared bit. Bits beyond the current size of the array are implicitly cleared, so if all bits within the current size are set, this function will return the current number of bits + 1. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>the index of the first cleared bit. Bits beyond the current size of the array are implicitly cleared, so if all bits within the current size are set, this function will return the current number of bits + 1. </dd></dl>
 
 </div>
 </div>
@@ -254,7 +312,33 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bit_
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>The index of the first set bit. If no bits are set, returns UINT32_MAX. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>the index of the first set bit. If no bits are set, returns UINT32_MAX. </dd></dl>
+
+</div>
+</div>
+<a id="a2fa39a45a0605dcddf09d7039a2b6c0a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2fa39a45a0605dcddf09d7039a2b6c0a">&#9670;&nbsp;</a></span>spdk_bit_array_free()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_bit_array_free </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_bit_array **&#160;</td>
+          <td class="paramname"><em>bap</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Free a bit array and set the pointer to NULL. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bap</td><td>Bit array to free. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -285,7 +369,15 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bit_
 </div><div class="memdoc">
 
 <p>Get the value of a bit from the bit array. </p>
-<p>If bit_index is beyond the end of the current size of the bit array, this function will return false (i.e. bits beyond the end of the array are implicitly 0). </p>
+<p>If bit_index is beyond the end of the current size of the bit array, this function will return false (i.e. bits beyond the end of the array are implicitly 0).</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ba</td><td>Bit array to query. </td></tr>
+    <tr><td class="paramname">bit_index</td><td>The index of a bit to query.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the value of a bit from the bit array on success, or false on failure. </dd></dl>
 
 </div>
 </div>
@@ -319,7 +411,15 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bit_
 <p>To create a new bit array, pass a pointer to a spdk_bit_array pointer that is NULL for bap.</p>
 <p>The bit array will be sized to hold at least num_bits.</p>
 <p>If num_bits is smaller than the previous size of the bit array, any data beyond the new num_bits size will be cleared.</p>
-<p>If num_bits is larger than the previous size of the bit array, any data beyond the old num_bits size will be cleared. </p>
+<p>If num_bits is larger than the previous size of the bit array, any data beyond the old num_bits size will be cleared.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bap</td><td>Bit array to create/resize. </td></tr>
+    <tr><td class="paramname">num_bits</td><td>Number of bits that the bit array is sized to hold.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, negative errno on failure. </dd></dl>
 
 </div>
 </div>
@@ -350,7 +450,15 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bit_
 </div><div class="memdoc">
 
 <p>Set (to 1) a bit in the bit array. </p>
-<p>If bit_index is beyond the end of the bit array, this function will return -EINVAL. On success, returns 0. </p>
+<p>If bit_index is beyond the end of the bit array, this function will return -EINVAL.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ba</td><td>Bit array to set a bit. </td></tr>
+    <tr><td class="paramname">bit_index</td><td>The index of a bit to set.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, negative errno on failure. </dd></dl>
 
 </div>
 </div>
