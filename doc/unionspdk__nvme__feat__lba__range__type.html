@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="Content-Type" content="text/xhtml; charset=utf-8">
   <meta name="generator" content="Doxygen 1.8.13">
-  <title>SPDK: spdk_nvme_async_event_config Union Reference</title>
+  <title>SPDK: spdk_nvme_feat_lba_range_type Union Reference</title>
   <script type="text/javascript" src="jquery.js"></script>
   <script type="text/javascript" src="dynsections.js"></script>
   <link href="navtree.css" rel="stylesheet" type="text/css"/>
@@ -101,55 +101,39 @@
   </div>
 </div>
 <script type="text/javascript">
-$(document).ready(function(){initNavTree('unionspdk__nvme__async__event__config.html','');});
+$(document).ready(function(){initNavTree('unionspdk__nvme__feat__lba__range__type.html','');});
 </script>
 <div id="doc-content">
 <div class="header">
   <div class="summary">
 <a href="#pub-attribs">Data Fields</a>  </div>
   <div class="headertitle">
-<div class="title">spdk_nvme_async_event_config Union Reference</div>  </div>
+<div class="title">spdk_nvme_feat_lba_range_type Union Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Asynchronous Event Configuration.  
- <a href="unionspdk__nvme__async__event__config.html#details">More...</a></p>
-<div class="dynheader">
-Collaboration diagram for spdk_nvme_async_event_config:</div>
-<div class="dyncontent">
-<div class="center"><img src="unionspdk__nvme__async__event__config__coll__graph.png" border="0" usemap="#spdk__nvme__async__event__config_coll__map" alt="Collaboration graph"/></div>
-<map name="spdk__nvme__async__event__config_coll__map" id="spdk__nvme__async__event__config_coll__map">
-<area shape="rect" id="node2" href="unionspdk__nvme__critical__warning__state.html" title="spdk_nvme_critical\l_warning_state" alt="" coords="25,5,173,47"/>
-</map>
-<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
+<p>Data used by Set Features/Get Features SPDK_NVME_FEAT_LBA_RANGE_TYPE.  
+ <a href="unionspdk__nvme__feat__lba__range__type.html#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:aaecffa0c93075109f2f785c6104139d1"><td class="memItemLeft" align="right" valign="top"><a id="aaecffa0c93075109f2f785c6104139d1"></a>
+<tr class="memitem:a8b36726d65af55a7c237962ea9065911"><td class="memItemLeft" align="right" valign="top"><a id="a8b36726d65af55a7c237962ea9065911"></a>
 uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>raw</b></td></tr>
-<tr class="separator:aaecffa0c93075109f2f785c6104139d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a673399b8543523d599d067eb6b012956"><td class="memItemLeft" ><a id="a673399b8543523d599d067eb6b012956"></a>
-struct {</td></tr>
-<tr class="memitem:a2fc263fb1c1d5d6cf58cb973898136b3"><td class="memItemLeft" >
-&#160;&#160;&#160;union <a class="el" href="unionspdk__nvme__critical__warning__state.html">spdk_nvme_critical_warning_state</a>&#160;&#160;&#160;<b>crit_warn</b></td></tr>
-<tr class="separator:a2fc263fb1c1d5d6cf58cb973898136b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a69cab1cb6d50e557a8d249e6f7cee4b4"><td class="memItemLeft" >
-&#160;&#160;&#160;uint32_t&#160;&#160;&#160;<b>ns_attr_notice</b>: 1</td></tr>
-<tr class="separator:a69cab1cb6d50e557a8d249e6f7cee4b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aff448a227eec0c5ab40237ea3f7d6d64"><td class="memItemLeft" >
-&#160;&#160;&#160;uint32_t&#160;&#160;&#160;<b>fw_activation_notice</b>: 1</td></tr>
-<tr class="separator:aff448a227eec0c5ab40237ea3f7d6d64"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2190813c9dd614d49eec4922b4a3f3d1"><td class="memItemLeft" >
-&#160;&#160;&#160;uint32_t&#160;&#160;&#160;<b>telemetry_log_notice</b>: 1</td></tr>
-<tr class="separator:a2190813c9dd614d49eec4922b4a3f3d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa91fbbe061dfd23565ce4ecf8826e08d"><td class="memItemLeft" >
-&#160;&#160;&#160;uint32_t&#160;&#160;&#160;<b>reserved</b>: 21</td></tr>
-<tr class="separator:aa91fbbe061dfd23565ce4ecf8826e08d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a673399b8543523d599d067eb6b012956"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><b>bits</b></td></tr>
-<tr class="separator:a673399b8543523d599d067eb6b012956"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a8b36726d65af55a7c237962ea9065911"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54f1e3b105d73deb193f4ad0c0b78f13"><td class="memItemLeft" ><a id="a54f1e3b105d73deb193f4ad0c0b78f13"></a>
+union {</td></tr>
+<tr class="memitem:ace9507b59b467a2676a874c7595da7a3"><td class="memItemLeft" >
+&#160;&#160;&#160;uint32_t&#160;&#160;&#160;<a class="el" href="unionspdk__nvme__feat__lba__range__type.html#a9fcf5c790767d292adf15b5f05ab40cf">num</a>: 6</td></tr>
+<tr class="memdesc:ace9507b59b467a2676a874c7595da7a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of LBA Ranges. <br /></td></tr>
+<tr class="separator:ace9507b59b467a2676a874c7595da7a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9764bb7eeba6e2a7b186de9f3a23d74a"><td class="memItemLeft" >
+&#160;&#160;&#160;uint32_t&#160;&#160;&#160;<b>reserved</b>: 26</td></tr>
+<tr class="separator:a9764bb7eeba6e2a7b186de9f3a23d74a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54f1e3b105d73deb193f4ad0c0b78f13"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><b>bits</b></td></tr>
+<tr class="separator:a54f1e3b105d73deb193f4ad0c0b78f13"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Asynchronous Event Configuration. </p>
+<div class="textblock"><p>Data used by Set Features/Get Features SPDK_NVME_FEAT_LBA_RANGE_TYPE. </p>
 </div><hr/>The documentation for this union was generated from the following file:<ul>
 <li><a class="el" href="nvme__spec_8h.html">nvme_spec.h</a></li>
 </ul>
