@@ -5,7 +5,8 @@ var NAVTREE =
       [ "Introduction", "index.html#intro", null ],
       [ "Concepts", "index.html#concepts", null ],
       [ "User Guides", "index.html#user_guides", null ],
-      [ "Programmer Guides", "index.html#general", null ],
+      [ "Programmer Guides", "index.html#prog_guides", null ],
+      [ "General Information", "index.html#general", null ],
       [ "Miscellaneous", "index.html#misc", null ],
       [ "Modules", "index.html#modules", null ],
       [ "Tools", "index.html#tools", null ],
@@ -63,7 +64,17 @@ var NAVTREE =
     ] ],
     [ "Writing a Custom Block Device Module", "bdev_module.html", null ],
     [ "Block Device Layer Programming Guide", "bdev_pg.html", null ],
-    [ "Blobstore", "blob.html", null ],
+    [ "Blobstore Programmer's Guide", "blob.html", [
+      [ "In this document", "blob.html#blob_pg_toc", [
+        [ "Target Audience", "blob.html#blob_pg_audience", null ],
+        [ "Introduction", "blob.html#blob_pg_intro", null ],
+        [ "Theory of Operation", "blob.html#blob_pg_theory", null ],
+        [ "Design Considerations", "blob.html#blob_pg_design", null ],
+        [ "Examples", "blob.html#blob_pg_examples", null ],
+        [ "Configuration", "blob.html#blob_pg_config", null ],
+        [ "Component Detail", "blob.html#blob_pg_component", null ]
+      ] ]
+    ] ],
     [ "BlobFS (Blobstore Filesystem)", "blobfs.html", [
       [ "BlobFS Getting Started Guide", "blobfs.html#blobfs_getting_started", null ],
       [ "RocksDB Integration", "blobfs.html#blobfs_rocksdb", null ]
@@ -227,21 +238,21 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "about.html",
-"cpuset_8h.html#ab4151e6fa9d017facad9f0be22e376af",
-"gpt__spec_8h.html#af5d58fe5815ee2c14e20a325e2e078c7",
-"json_8h.html#a13fb3780f39b52a2d7d35d804e181f5b",
-"nvme_8h.html#ac0c646dd18675c54ffcf834ce699658d",
-"nvme__spec_8h.html#aa0e5f56ea65cdec493d43ca67dc69a33",
-"nvmf_8h.html#af133c734616e019eecb372ce7b096ff5",
-"scsi__spec_8h.html#a35efeaeb4d8fb7a9b406846a2138b389a45f127531ae343b0e900bdc4ed653085",
-"scsi__spec_8h.html#aca4b95e35566a60195e59be74e5a1218",
-"structiscsi__bhs__r2t.html#ab0f858de06ab9f398219cb1bab1d48a2",
-"structspdk__ioat__dma__hw__desc.html#a1cf12a9633a179363bbcf5f0898785c4",
-"structspdk__nvme__ctrlr__data.html",
-"structspdk__nvme__intel__smart__information__page.html",
-"structspdk__nvmf__fabric__auth__recv__cmd.html#a2734924f1fb8eea17adfa9faba4f1aae",
-"structspdk__trace__histories.html",
-"vhost.html#vhost_multiqueue"
+"cpuset_8h.html#a1be5b681ccac1865c26965adca7767a7",
+"gpt__spec_8h.html#a85889c1dff36669a55e55614cb2a00e1",
+"iscsi__spec_8h.html#afc8398dd60d41f2be91516402ff50704",
+"nvme_8h.html#aa3a982eb5b757eae63fbc9305627090b",
+"nvme__spec_8h.html#a87a370c671a1dcad0106afc888af8d04aacaaf3d09c5b0489d553779516a8f6c4",
+"nvmf_8h.html#a5f8ded88254cb17d8ee5c378f0e35a25",
+"scsi__spec_8h.html#a136642c48b65aba55577dc651625774e",
+"scsi__spec_8h.html#ac9b82b35110c44cfa49ad3b5ce89c384a7a94a49e70c2f6067d0cadb5105d028e",
+"structiscsi__bhs__nop__out.html",
+"structspdk__gpt__partition__entry.html#a14e1a76354dc7b7e79405a73357151d0",
+"structspdk__nvme__cmd.html#a509f396bd227aeb2e136dd828946b1ab",
+"structspdk__nvme__health__information__page.html#ad80e3d104593770537f8f990ed9e5a70",
+"structspdk__nvme__transport__id.html#aad0be45ed276ef7c88b93a22b23e72ae",
+"structspdk__scsi__unmap__bdesc.html#a514ee830753d52e54adf3f4e88714541",
+"unionspdk__nvme__feat__non__operational__power__state__config.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

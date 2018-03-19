@@ -119,11 +119,15 @@ $(document).ready(function(){initNavTree('net_8h.html','');});
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__net__framework.html">spdk_net_framework</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__interface.html">spdk_interface</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
+<tr class="memitem:a211cc36f4e31e54093389cd09a5b253b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_NET_FRAMEWORK_REGISTER</b>(name,  frame)</td></tr>
+<tr class="separator:a211cc36f4e31e54093389cd09a5b253b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a52823e3e3c243dbef99ced97f6aa7a35"><td class="memItemLeft" align="right" valign="top"><a id="a52823e3e3c243dbef99ced97f6aa7a35"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_IFNAMSIZE</b>&#160;&#160;&#160;32</td></tr>
 <tr class="separator:a52823e3e3c243dbef99ced97f6aa7a35"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -133,6 +137,9 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:abc3295d98c59921fecdef4de0e944afd"><td class="memItemLeft" align="right" valign="top"><a id="abc3295d98c59921fecdef4de0e944afd"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_net_framework_register</b> (struct <a class="el" href="structspdk__net__framework.html">spdk_net_framework</a> *frame)</td></tr>
+<tr class="separator:abc3295d98c59921fecdef4de0e944afd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8ddcb56f1e677b845c5ebd5363002fb5"><td class="memItemLeft" align="right" valign="top"><a id="a8ddcb56f1e677b845c5ebd5363002fb5"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_interface_init</b> (void)</td></tr>
 <tr class="separator:a8ddcb56f1e677b845c5ebd5363002fb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -163,6 +170,35 @@ void *&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_interface_get_
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Net framework abstraction layer. </p>
-</div></div><!-- contents -->
+</div><h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="a211cc36f4e31e54093389cd09a5b253b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a211cc36f4e31e54093389cd09a5b253b">&#9670;&nbsp;</a></span>SPDK_NET_FRAMEWORK_REGISTER</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SPDK_NET_FRAMEWORK_REGISTER</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">name, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">frame&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line"><span class="keyword">static</span> <span class="keywordtype">void</span> __attribute__((constructor)) net_framework_register_##name(<span class="keywordtype">void</span>) \</div><div class="line">{ \</div><div class="line">        spdk_net_framework_register(frame); \</div><div class="line">}</div></div><!-- fragment -->
+</div>
+</div>
+</div><!-- contents -->
 </div><!-- doc-content -->
 </div>
