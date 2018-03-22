@@ -14,7 +14,7 @@ the results, the SPDK automated test pool helps contributors identify
 code errors or continuous integration issues introduced by their patches.
 
 When submitting a new test, it can be difficult to find where it fits into the
-big picture. In order to help answer this question, I have created a [hierarchy](../../../../../doc/test_hierarchy.pdf) diagram
+big picture. In order to help answer this question, I have created a [hierarchy](../../../../../test_hierarchy.pdf) diagram
 of the test scripts and their relationships to each other. It also contains a brief
 description of the functions performed by some of the more complex scripts.
 This hierarchy is likely to evolve over time, but the diagram provides a good
