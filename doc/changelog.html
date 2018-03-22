@@ -135,6 +135,8 @@ v18.04: (Upcoming Release)</h1>
 <p><a class="el" href="event_8h.html#af23f96e90919584f1d26616dd8f83fa6" title="Helper function for parsing arguments and printing usage messages. ">spdk_app_parse_args()</a> no longer exit()'s on help, '-h', or an invalid option, but instead returns SPDK_APP_PARSE_ARGS_HELP and SPDK_APP_PARSE_ARGS_FAIL, respectively, and SPDK_APP_PARSE_ARGS_SUCCESS on success.</p>
 <h2>I/O Channels</h2>
 <p>The prototype for <a class="el" href="io__channel_8h.html#a35c421accdc2a0a61bb7be916106293b" title="Callback function for a poller. ">spdk_poller_fn()</a> has been modified; it now returns a value indicating whether or not the poller did any work. Existing pollers will need to be updated to return a value.</p>
+<h2>iSCSI initiator</h2>
+<p>An iSCSI initiator bdev module has been added to SPDK. This module should be considered experimental pending additional features and tests. More details can be found in lib/bdev/iscsi/README.</p>
 <h1><a class="anchor" id="changelog-v18-01"></a>
 v18.01: Blobstore Thin Provisioning</h1>
 <h2>Build System</h2>
