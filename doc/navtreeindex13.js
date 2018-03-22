@@ -132,6 +132,7 @@ var NAVTREEINDEX13 =
 "structspdk__nvmf__fabric__prop__set__cmd.html#ad1d4054371b2374a4e1d24971219afc6":[28,0,136,0],
 "structspdk__nvmf__fabric__prop__set__cmd.html#aed5153a9dbce32792421bd4ec11b6240":[28,0,136,3],
 "structspdk__nvmf__ns__opts.html":[28,0,137],
+"structspdk__nvmf__ns__opts.html#a4da1aada54acc633986ed373fa4a7638":[28,0,137,3],
 "structspdk__nvmf__ns__opts.html#a66d255ba06755be6be1402d0cf9a459d":[28,0,137,2],
 "structspdk__nvmf__ns__opts.html#a88c0f389614abb708b49cb4767ccf307":[28,0,137,0],
 "structspdk__nvmf__ns__opts.html#ae51dcdf9a8a00cbc3e9ede5725cf0a0a":[28,0,137,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX13 =
 "structspdk__scsi__tgt__port__desc.html#a55d5e6e7e8f9aaf4a258e0f0cb79affe":[28,0,153,3],
 "structspdk__scsi__tgt__port__desc.html#a5e85fd80fc7a37609f4c0020d096edf5":[28,0,153,2],
 "structspdk__scsi__tgt__port__desc.html#a90730b0714e0295fcc363599229c509a":[28,0,153,0],
-"structspdk__scsi__tgt__port__desc.html#ac3080c209c823539b031d014bb82cd43":[28,0,153,1],
-"structspdk__scsi__unmap__bdesc.html":[28,0,154]
+"structspdk__scsi__tgt__port__desc.html#ac3080c209c823539b031d014bb82cd43":[28,0,153,1]
 };

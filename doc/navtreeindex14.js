@@ -1,5 +1,6 @@
 var NAVTREEINDEX14 =
 {
+"structspdk__scsi__unmap__bdesc.html":[28,0,154],
 "structspdk__scsi__unmap__bdesc.html#a514ee830753d52e54adf3f4e88714541":[28,0,154,1],
 "structspdk__scsi__unmap__bdesc.html#ae954762409a7249e0c36ae159dc6b9a5":[28,0,154,2],
 "structspdk__scsi__unmap__bdesc.html#aee26f6bb7cbfb226505fb2b58551a83d":[28,0,154,0],
@@ -198,7 +199,7 @@ var NAVTREEINDEX14 =
 "unionspdk__nvme__feat__arbitration.html#a1c72624e805ff324a05c6e9e592cd11a":[28,0,75,2],
 "unionspdk__nvme__feat__arbitration.html#a28d37ecf81e25a86b65539d93fb39e90":[28,0,75,4],
 "unionspdk__nvme__feat__arbitration.html#a47fb9a1efe9cd17abfa3a8b198919e34":[28,0,75,0],
-"unionspdk__nvme__feat__arbitration.html#a6dc1127a4fc78b9934606fd4525bb110":[28,0,75,1],
+"unionspdk__nvme__feat__arbitration.html#adf75c78bf903f8c75d0ae8bf9bf863d5":[28,0,75,1],
 "unionspdk__nvme__feat__arbitration.html#af12378890a3a12fc4a54e10b6103859e":[28,0,75,6],
 "unionspdk__nvme__feat__async__event__configuration.html":[28,0,76],
 "unionspdk__nvme__feat__async__event__configuration.html#a042e849ee18c493b3b0e04759745486e":[28,0,76,5],
@@ -214,10 +215,10 @@ var NAVTREEINDEX14 =
 "unionspdk__nvme__feat__autonomous__power__state__transition.html#a46e0ea66596a361c67d688b646260646":[28,0,77,1],
 "unionspdk__nvme__feat__autonomous__power__state__transition.html#a9311f1d84bfe298c3ea675dc2cfbdcdc":[28,0,77,3],
 "unionspdk__nvme__feat__error__recovery.html":[28,0,78],
+"unionspdk__nvme__feat__error__recovery.html#a0098f2820ebd035f3578d6c91defc2c5":[28,0,78,0],
 "unionspdk__nvme__feat__error__recovery.html#a470249122d177e128016ebe292f83085":[28,0,78,2],
 "unionspdk__nvme__feat__error__recovery.html#a85c441ab749eca8500b09add45336e0d":[28,0,78,1],
 "unionspdk__nvme__feat__error__recovery.html#ab5a2e6ab3de7f3011338acb2289817bd":[28,0,78,4],
-"unionspdk__nvme__feat__error__recovery.html#ac86635b90d016ec16f7776d7d2b98e95":[28,0,78,0],
 "unionspdk__nvme__feat__error__recovery.html#ae572c4a161ba9dcd9f26129dcb926fc3":[28,0,78,3],
 "unionspdk__nvme__feat__host__controlled__thermal__management.html":[28,0,79],
 "unionspdk__nvme__feat__host__controlled__thermal__management.html#a196363adf5f14463140d5c3d7d7a0564":[28,0,79,2],
@@ -239,15 +240,14 @@ var NAVTREEINDEX14 =
 "unionspdk__nvme__feat__interrupt__vector__configuration.html#a43841c4b312e3df1d01ec339a7cf5667":[28,0,82,2],
 "unionspdk__nvme__feat__interrupt__vector__configuration.html#a4972e1898a6f4ad031ace5ffe40732dd":[28,0,82,3],
 "unionspdk__nvme__feat__interrupt__vector__configuration.html#a7250196438d34e7adbae07116e526d5d":[28,0,82,4],
-"unionspdk__nvme__feat__interrupt__vector__configuration.html#a775d3d3d6735583379795891d1c06797":[28,0,82,0],
+"unionspdk__nvme__feat__interrupt__vector__configuration.html#ad14e6aa7a007323e6031aee4395fa233":[28,0,82,0],
 "unionspdk__nvme__feat__interrupt__vector__configuration.html#adf2595e5bc0014c1cb4cd087d8e3732d":[28,0,82,1],
 "unionspdk__nvme__feat__keep__alive__timer.html":[28,0,83],
 "unionspdk__nvme__feat__keep__alive__timer.html#a1295377c1ebb2b62c58d29e43047827e":[28,0,83,1],
 "unionspdk__nvme__feat__keep__alive__timer.html#a83a48811adaf9a54bbdf77b64abfcba7":[28,0,83,0],
 "unionspdk__nvme__feat__keep__alive__timer.html#ac10f9a57ae75a0b0436117dcc6dbb913":[28,0,83,2],
 "unionspdk__nvme__feat__lba__range__type.html":[28,0,84],
-"unionspdk__nvme__feat__lba__range__type.html#a54f1e3b105d73deb193f4ad0c0b78f13":[28,0,84,0],
 "unionspdk__nvme__feat__lba__range__type.html#a8b36726d65af55a7c237962ea9065911":[28,0,84,2],
 "unionspdk__nvme__feat__lba__range__type.html#a9fcf5c790767d292adf15b5f05ab40cf":[28,0,84,1],
-"unionspdk__nvme__feat__lba__range__type.html#afd6c62577e98b12c7c497e003228621c":[28,0,84,3]
+"unionspdk__nvme__feat__lba__range__type.html#ab4bbb4661dcf2a2785765d835448d84d":[28,0,84,0]
 };
