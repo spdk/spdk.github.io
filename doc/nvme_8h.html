@@ -356,6 +356,9 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_
 <tr class="memitem:af58edc3021f8adcbecce5d3ebc5b6789"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#af58edc3021f8adcbecce5d3ebc5b6789">spdk_nvme_ns_get_optimal_io_boundary</a> (struct spdk_nvme_ns *ns)</td></tr>
 <tr class="memdesc:af58edc3021f8adcbecce5d3ebc5b6789"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the optimal I/O boundary, in blocks, for the given namespace.  <a href="#af58edc3021f8adcbecce5d3ebc5b6789">More...</a><br /></td></tr>
 <tr class="separator:af58edc3021f8adcbecce5d3ebc5b6789"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c559063408299a4612fd2e62f97bc63"><td class="memItemLeft" align="right" valign="top">const struct <a class="el" href="structspdk__uuid.html">spdk_uuid</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a6c559063408299a4612fd2e62f97bc63">spdk_nvme_ns_get_uuid</a> (const struct spdk_nvme_ns *ns)</td></tr>
+<tr class="memdesc:a6c559063408299a4612fd2e62f97bc63"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the UUID for the given namespace.  <a href="#a6c559063408299a4612fd2e62f97bc63">More...</a><br /></td></tr>
+<tr class="separator:a6c559063408299a4612fd2e62f97bc63"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5eff1c1b6fbfb348a1f158b3cf70626f"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a5eff1c1b6fbfb348a1f158b3cf70626f">spdk_nvme_ns_get_flags</a> (struct spdk_nvme_ns *ns)</td></tr>
 <tr class="memdesc:a5eff1c1b6fbfb348a1f158b3cf70626f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the flags for the given namespace.  <a href="#a5eff1c1b6fbfb348a1f158b3cf70626f">More...</a><br /></td></tr>
 <tr class="separator:a5eff1c1b6fbfb348a1f158b3cf70626f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -3500,6 +3503,33 @@ int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_retry_co
 
 <p>Get the size, in bytes, of the given namespace. </p>
 <p>This function is thread safe and can be called at any point while the controller is attached to the SPDK NVMe driver. </p>
+
+</div>
+</div>
+<a id="a6c559063408299a4612fd2e62f97bc63"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c559063408299a4612fd2e62f97bc63">&#9670;&nbsp;</a></span>spdk_nvme_ns_get_uuid()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const struct <a class="el" href="structspdk__uuid.html">spdk_uuid</a>* spdk_nvme_ns_get_uuid </td>
+          <td>(</td>
+          <td class="paramtype">const struct spdk_nvme_ns *&#160;</td>
+          <td class="paramname"><em>ns</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the UUID for the given namespace. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ns</td><td>Namespace to query.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Pointer to namespace UUID, or NULL if ns does not have a UUID. </dd></dl>
 
 </div>
 </div>

@@ -116,6 +116,7 @@ v18.04: (Upcoming Release)</h1>
 <p>The JSON-RPC server implementation now allows up to 32 megabyte responses, growing as needed; previously, the response was limited to 32 kilobytes.</p>
 <h2>NVMe Driver</h2>
 <p>EXPERIMENTAL: Adds support for WDS and RDS capable CMBs in NVMe controllers. This support is experimental pending a functional allocator to free and reallocate CMB buffers.</p>
+<p><a class="el" href="nvme_8h.html#a6c559063408299a4612fd2e62f97bc63" title="Get the UUID for the given namespace. ">spdk_nvme_ns_get_uuid()</a> has been added to allow retrieval of per-namespace UUIDs when available.</p>
 <h2>NVMe-oF Target</h2>
 <p>Namespaces may now be assigned unique identifiers via new optional "eui64" and "nguid" parameters to the <code>nvmf_subsystem_add_ns</code> RPC method.</p>
 <h2>Blobstore</h2>
