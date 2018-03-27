@@ -25,6 +25,7 @@ var bdev_8h =
       [ "SPDK_BDEV_STATUS_REMOVING", "bdev_8h.html#ad6c166f5d928c2995df57c96a2977862a82598753017f84c485785b04f9dcf5fa", null ]
     ] ],
     [ "spdk_bdev_close", "bdev_8h.html#aaf5fc830851a2eb0aa34bbb40cf5eac6", null ],
+    [ "spdk_bdev_config_json", "bdev_8h.html#a475b4bbada0b412059fb231b2e205af9", null ],
     [ "spdk_bdev_config_text", "bdev_8h.html#a273c20b5f07dd8c727ec0d0b80b804fe", null ],
     [ "spdk_bdev_desc_get_bdev", "bdev_8h.html#ac6418cfa0e9076ef7dafa7753c4c2028", null ],
     [ "spdk_bdev_dump_info_json", "bdev_8h.html#a3ef2e861ccd2d6135bfe13257f047fb9", null ],
@@ -61,6 +62,7 @@ var bdev_8h =
     [ "spdk_bdev_readv", "bdev_8h.html#a9ac9efa882e87909acfd4bccaddb1778", null ],
     [ "spdk_bdev_readv_blocks", "bdev_8h.html#a55483d5ae010c514b37b976ad803b4b2", null ],
     [ "spdk_bdev_reset", "bdev_8h.html#aca574d3e94be6150343823dd2e7ecf46", null ],
+    [ "spdk_bdev_subsystem_config_json", "bdev_8h.html#a57814ce5dc208380ebf39dab0e1ce9a8", null ],
     [ "spdk_bdev_unmap", "bdev_8h.html#a680c9c302998f7b003e2476e35d9ae4b", null ],
     [ "spdk_bdev_unmap_blocks", "bdev_8h.html#a7555fdd41019e29b40e535b72457d30b", null ],
     [ "spdk_bdev_write", "bdev_8h.html#aa740a114ef34d6a2f126d4e3a9dd9e9b", null ],

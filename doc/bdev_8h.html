@@ -185,6 +185,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a273c20b5f07dd8c727ec0d0b80b804fe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev_8h.html#a273c20b5f07dd8c727ec0d0b80b804fe">spdk_bdev_config_text</a> (FILE *fp)</td></tr>
 <tr class="memdesc:a273c20b5f07dd8c727ec0d0b80b804fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the configuration options for the registered block device modules.  <a href="#a273c20b5f07dd8c727ec0d0b80b804fe">More...</a><br /></td></tr>
 <tr class="separator:a273c20b5f07dd8c727ec0d0b80b804fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57814ce5dc208380ebf39dab0e1ce9a8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev_8h.html#a57814ce5dc208380ebf39dab0e1ce9a8">spdk_bdev_subsystem_config_json</a> (struct spdk_json_write_ctx *w)</td></tr>
+<tr class="memdesc:a57814ce5dc208380ebf39dab0e1ce9a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the full configuration options for the registered block device modules and created bdevs.  <a href="#a57814ce5dc208380ebf39dab0e1ce9a8">More...</a><br /></td></tr>
+<tr class="separator:a57814ce5dc208380ebf39dab0e1ce9a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a89c759c53d028e3e408d19156f0e1eb1"><td class="memItemLeft" align="right" valign="top">struct spdk_bdev *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev_8h.html#a89c759c53d028e3e408d19156f0e1eb1">spdk_bdev_get_by_name</a> (const char *bdev_name)</td></tr>
 <tr class="memdesc:a89c759c53d028e3e408d19156f0e1eb1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get block device by the block device name.  <a href="#a89c759c53d028e3e408d19156f0e1eb1">More...</a><br /></td></tr>
 <tr class="separator:a89c759c53d028e3e408d19156f0e1eb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -213,8 +216,11 @@ Functions</h2></td></tr>
 <tr class="memdesc:a7cd5dff692dc162459801d5649fe7655"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check whether the block device supports the I/O type.  <a href="#a7cd5dff692dc162459801d5649fe7655">More...</a><br /></td></tr>
 <tr class="separator:a7cd5dff692dc162459801d5649fe7655"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3ef2e861ccd2d6135bfe13257f047fb9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev_8h.html#a3ef2e861ccd2d6135bfe13257f047fb9">spdk_bdev_dump_info_json</a> (struct spdk_bdev *bdev, struct spdk_json_write_ctx *w)</td></tr>
-<tr class="memdesc:a3ef2e861ccd2d6135bfe13257f047fb9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Output driver-specific configuration to a JSON stream.  <a href="#a3ef2e861ccd2d6135bfe13257f047fb9">More...</a><br /></td></tr>
+<tr class="memdesc:a3ef2e861ccd2d6135bfe13257f047fb9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Output driver-specific information to a JSON stream.  <a href="#a3ef2e861ccd2d6135bfe13257f047fb9">More...</a><br /></td></tr>
 <tr class="separator:a3ef2e861ccd2d6135bfe13257f047fb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a475b4bbada0b412059fb231b2e205af9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev_8h.html#a475b4bbada0b412059fb231b2e205af9">spdk_bdev_config_json</a> (struct spdk_bdev *bdev, struct spdk_json_write_ctx *w)</td></tr>
+<tr class="memdesc:a475b4bbada0b412059fb231b2e205af9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Output bdev-specific configuration to a JSON stream.  <a href="#a475b4bbada0b412059fb231b2e205af9">More...</a><br /></td></tr>
+<tr class="separator:a475b4bbada0b412059fb231b2e205af9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad97a853dcb945bf004817424b7aa28af"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev_8h.html#ad97a853dcb945bf004817424b7aa28af">spdk_bdev_get_name</a> (const struct spdk_bdev *bdev)</td></tr>
 <tr class="memdesc:ad97a853dcb945bf004817424b7aa28af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get block device name.  <a href="#ad97a853dcb945bf004817424b7aa28af">More...</a><br /></td></tr>
 <tr class="separator:ad97a853dcb945bf004817424b7aa28af"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -366,6 +372,45 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a475b4bbada0b412059fb231b2e205af9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a475b4bbada0b412059fb231b2e205af9">&#9670;&nbsp;</a></span>spdk_bdev_config_json()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_bdev_config_json </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_bdev *&#160;</td>
+          <td class="paramname"><em>bdev</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct spdk_json_write_ctx *&#160;</td>
+          <td class="paramname"><em>w</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Output bdev-specific configuration to a JSON stream. </p>
+<p>If supported, the object with following keys will be written: method - name of the constructor method params - parameters necessary to recreate this <code>bdev</code> </p>
+<p>If <code>bdev</code> does not support writing JSON configuration then object will be written with only one key - the name of this bdev.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bdev</td><td>block device to query configuration. </td></tr>
+    <tr><td class="paramname">w</td><td>pointer to a JSON write context where <code>bdev</code> the configuration will be written. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a273c20b5f07dd8c727ec0d0b80b804fe"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a273c20b5f07dd8c727ec0d0b80b804fe">&#9670;&nbsp;</a></span>spdk_bdev_config_text()</h2>
 
@@ -445,7 +490,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Output driver-specific configuration to a JSON stream. </p>
+<p>Output driver-specific information to a JSON stream. </p>
 <p>The JSON write context will be initialized with an open object, so the bdev driver should write a name(based on the driver name) followed by a JSON value (most likely another nested object).</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -1950,6 +1995,32 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 on success. On success, the callback will always be called (even if the request ultimately failed). Return negated errno on failure, in which case the callback will not be called. </dd></dl>
+
+</div>
+</div>
+<a id="a57814ce5dc208380ebf39dab0e1ce9a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a57814ce5dc208380ebf39dab0e1ce9a8">&#9670;&nbsp;</a></span>spdk_bdev_subsystem_config_json()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_bdev_subsystem_config_json </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_json_write_ctx *&#160;</td>
+          <td class="paramname"><em>w</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the full configuration options for the registered block device modules and created bdevs. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">w</td><td>pointer to a JSON write context where the configuration will be written. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
