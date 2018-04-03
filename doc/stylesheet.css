@@ -135,6 +135,11 @@ p.copyright {
     margin: 15px 0 0;
 }
 
+#main-nav {
+	margin-left: -15px;
+	margin-right: -15px;
+}
+
 #side-nav * {
 	box-sizing: content-box;
 }

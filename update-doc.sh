@@ -13,9 +13,6 @@ cp _doc_header.html $repo/doc/header.html
 cp _doc_footer.html $repo/doc/footer.html
 cp _doc_stylesheet.css $repo/doc/stylesheet.css
 
-# Disable Doxygen header bar (clashes with spdk.io layout)
-sed -i -e 's/^DISABLE_INDEX.*=.*$/DISABLE_INDEX = YES/' $repo/doc/Doxyfile
-
 (cd $repo/doc; make clean; make)
 git rm -rf doc
 cp -R $repo/doc/output/html doc
