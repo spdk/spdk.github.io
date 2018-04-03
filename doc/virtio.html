@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="Content-Type" content="text/xhtml; charset=utf-8">
   <meta name="generator" content="Doxygen 1.8.13">
-  <title>SPDK: Virtio SCSI driver</title>
+  <title>SPDK: Virtio driver</title>
   <script type="text/javascript" src="jquery.js"></script>
   <script type="text/javascript" src="dynsections.js"></script>
   <link href="navtree.css" rel="stylesheet" type="text/css"/>
@@ -106,23 +106,23 @@ $(document).ready(function(){initNavTree('virtio.html','');});
 <div id="doc-content">
 <div class="header">
   <div class="headertitle">
-<div class="title">Virtio SCSI driver </div>  </div>
+<div class="title">Virtio driver </div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><h1><a class="anchor" id="virtio_intro"></a>
 Introduction</h1>
-<p>Virtio SCSI driver is an initiator for SPDK <a class="el" href="vhost.html">vhost Target</a> application. The driver allows any SPDK app to connect to another SPDK instance exposing a vhost-scsi device. The driver will enumerate targets on the device (which acts as a SCSI controller) and create <em>virtual</em> bdevs usable by any SPDK application. Sending an I/O request to the Virtio SCSI bdev will put the request data into a Virtio queue that is processed by the host SPDK app exposing the controller. The host, after sending I/O to the real drive, will put the response back into the Virtio queue. Then, the response is received by the Virtio SCSI driver.</p>
-<p>Virtio SCSI driver supports two different usage models:</p><ul>
-<li>PCI - This is the standard mode of operation when used in a guest virtual machine, where QEMU has presented the virtio-scsi controller as a virtual PCI device.</li>
-<li>User vhost - Can be used to connect to a vhost-scsi socket directly on the same host.</li>
+<p>SPDK Virtio driver is a C library that allows communicating with Virtio devices. It allows any SPDK application to become an initiator for (SPDK) vhost targets.</p>
+<p>The driver supports two different usage models:</p><ul>
+<li>PCI - This is the standard mode of operation when used in a guest virtual machine, where QEMU has presented the virtio controller as a virtual PCI device.</li>
+<li>vhost-user - Can be used to connect to a vhost socket directly on the same host.</li>
 </ul>
 <p>The driver, just like the SPDK <a class="el" href="vhost.html">vhost Target</a>, is using pollers instead of standard interrupts to check for an I/O response. If used inside a VM, it bypasses interrupt and context switching overhead of QEMU and guest kernel, significantly boosting the overall I/O performance.</p>
+<p>This Virtio library is currently used to implement two bdev modules: <a class="el" href="bdev.html#bdev_config_virtio_scsi">Virtio SCSI</a> and Virtio Blk. These modules will export generic SPDK block devices usable by any other SPDK application.</p>
 <h1><a class="anchor" id="virtio_limitations"></a>
 Limitations</h1>
 <p>Current Virtio-SCSI implementation has a couple of limitations:</p><ul>
 <li>supports only up to 8 hugepages (implies only 1GB sized pages are practical)</li>
-<li>single LUN per target</li>
-<li>only SPDK vhost-scsi controllers supported </li>
+<li>single LUN per target </li>
 </ul>
 </div></div><!-- contents -->
 </div><!-- doc-content -->

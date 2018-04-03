@@ -2,6 +2,7 @@ var structspdk__app__opts =
 [
     [ "config_file", "structspdk__app__opts.html#a6d21685102b759248a42bb8874c42409", null ],
     [ "enable_coredump", "structspdk__app__opts.html#ac21faa67a906aa0e70194b96e7700142", null ],
+    [ "hugepage_single_segments", "structspdk__app__opts.html#ad584493cb8e3ca1744f29fbf4302d73f", null ],
     [ "master_core", "structspdk__app__opts.html#a8b1f0881077c7cba8c846a150364dee3", null ],
     [ "max_delay_us", "structspdk__app__opts.html#a54842105e519787ce90254a80177c001", null ],
     [ "mem_channel", "structspdk__app__opts.html#abd571128caea84190b31231105219b38", null ],
