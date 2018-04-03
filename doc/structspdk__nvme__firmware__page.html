@@ -119,19 +119,31 @@ $(document).ready(function(){initNavTree('structspdk__nvme__firmware__page.html'
 Data Fields</h2></td></tr>
 <tr class="memitem:a64abae8bbf7cb5734655fd2abd97cc4a"><td class="memItemLeft" ><a id="a64abae8bbf7cb5734655fd2abd97cc4a"></a>
 struct {</td></tr>
-<tr class="memitem:a171bcb4ca0327a59d9aaa155de4fa2aa"><td class="memItemLeft" >
-&#160;&#160;&#160;uint8_t&#160;&#160;&#160;<b>slot</b>: 3</td></tr>
-<tr class="separator:a171bcb4ca0327a59d9aaa155de4fa2aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8d632d8d4ed73beec72a756c73e49685"><td class="memItemLeft" >
-&#160;&#160;&#160;uint8_t&#160;&#160;&#160;<b>reserved</b>: 5</td></tr>
-<tr class="separator:a8d632d8d4ed73beec72a756c73e49685"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18b9e2e4a782bbc41805da71544dce29"><td class="memItemLeft" >
+&#160;&#160;&#160;uint8_t&#160;&#160;&#160;<a class="el" href="structspdk__nvme__firmware__page.html#a4b0118df5ff338d05e9710374aae8c92">active_slot</a>: 3</td></tr>
+<tr class="memdesc:a18b9e2e4a782bbc41805da71544dce29"><td class="mdescLeft">&#160;</td><td class="mdescRight">Slot for current FW. <br /></td></tr>
+<tr class="separator:a18b9e2e4a782bbc41805da71544dce29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae43fe9fadb62e20ad6beef74309311f0"><td class="memItemLeft" >
+&#160;&#160;&#160;uint8_t&#160;&#160;&#160;<b>reserved3</b>: 1</td></tr>
+<tr class="separator:ae43fe9fadb62e20ad6beef74309311f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab24262b96f10d263f6112a876faa7052"><td class="memItemLeft" >
+&#160;&#160;&#160;uint8_t&#160;&#160;&#160;<a class="el" href="structspdk__nvme__firmware__page.html#acc627dc50a9f88fa3c4697ff8ac99c81">next_reset_slot</a>: 3</td></tr>
+<tr class="memdesc:ab24262b96f10d263f6112a876faa7052"><td class="mdescLeft">&#160;</td><td class="mdescRight">Slot that will be active at next controller reset. <br /></td></tr>
+<tr class="separator:ab24262b96f10d263f6112a876faa7052"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62cb20cd281234306a4664f68c239265"><td class="memItemLeft" >
+&#160;&#160;&#160;uint8_t&#160;&#160;&#160;<b>reserved7</b>: 1</td></tr>
+<tr class="separator:a62cb20cd281234306a4664f68c239265"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a64abae8bbf7cb5734655fd2abd97cc4a"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><b>afi</b></td></tr>
 <tr class="separator:a64abae8bbf7cb5734655fd2abd97cc4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a34db5bdeb328dc18a66b6b9153093a16"><td class="memItemLeft" align="right" valign="top"><a id="a34db5bdeb328dc18a66b6b9153093a16"></a>
-uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>revision</b> [7]</td></tr>
-<tr class="separator:a34db5bdeb328dc18a66b6b9153093a16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7335106b30a1f1e8040a540f66f1bdb"><td class="memItemLeft" align="right" valign="top"><a id="ab7335106b30a1f1e8040a540f66f1bdb"></a>
+uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>reserved</b> [7]</td></tr>
+<tr class="separator:ab7335106b30a1f1e8040a540f66f1bdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e1858ac497468822fd4520a32502434"><td class="memItemLeft" align="right" valign="top"><a id="a3e1858ac497468822fd4520a32502434"></a>
+uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>revision</b> [7][8]</td></tr>
+<tr class="separator:a3e1858ac497468822fd4520a32502434"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac92edf109ba5f2b970b06a31a0434f37"><td class="memItemLeft" align="right" valign="top"><a id="ac92edf109ba5f2b970b06a31a0434f37"></a>
-uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>reserved2</b> [448]</td></tr>
+uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__firmware__page.html#ac92edf109ba5f2b970b06a31a0434f37">reserved2</a> [448]</td></tr>
+<tr class="memdesc:ac92edf109ba5f2b970b06a31a0434f37"><td class="mdescLeft">&#160;</td><td class="mdescRight">Revisions for 7 slots (ASCII strings) <br /></td></tr>
 <tr class="separator:ac92edf109ba5f2b970b06a31a0434f37"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>

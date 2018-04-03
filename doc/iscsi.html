@@ -152,7 +152,31 @@ Configuring iSCSI Initiator</h2>
 <p>After the targets are connected, they can be tuned. For example if /dev/sdc is an iSCSI disk then the following can be done: Set noop to scheduler</p>
 <div class="fragment"><div class="line">echo noop &gt; /sys/block/sdc/queue/scheduler</div></div><!-- fragment --><p>Disable merging/coalescing (can be useful for precise workload measurements)</p>
 <div class="fragment"><div class="line">echo &quot;2&quot; &gt; /sys/block/sdc/queue/nomerges</div></div><!-- fragment --><p>Increase requests for block queue</p>
-<div class="fragment"><div class="line">echo &quot;1024&quot; &gt; /sys/block/sdc/queue/nr_requests</div></div><!-- fragment --><h1><a class="anchor" id="iscsi_hotplug"></a>
+<div class="fragment"><div class="line">echo &quot;1024&quot; &gt; /sys/block/sdc/queue/nr_requests</div></div><!-- fragment --><h1><a class="anchor" id="vpp"></a>
+Vector Packet Processing</h1>
+<p>VPP (part of <a href="https://fd.io/">Fast Data - Input/Output</a> project) is an extensible userspace framework providing networking functionality. It is build on idea of packet processing graph (see <a href="https://wiki.fd.io/view/VPP/What_is_VPP?">What is VPP?</a>).</p>
+<p>A detailed instructions for <b>simplified steps 1-3</b> below, can be found on VPP <a href="https://wiki.fd.io/view/VPP">Quick Start Guide</a>.</p>
+<p><em>SPDK supports VPP version 18.01.1.</em></p>
+<h2><a class="anchor" id="vpp_build"></a>
+1. Building VPP (optional)</h2>
+<p><em>Please skip this step if using already built packages.</em></p>
+<p>Clone and checkout VPP </p><div class="fragment"><div class="line">git clone https://gerrit.fd.io/r/vpp &amp;&amp; cd vpp</div><div class="line">git checkout v18.01.1</div></div><!-- fragment --><p>Install VPP build dependencies </p><div class="fragment"><div class="line">make install-dep</div></div><!-- fragment --><p>Build and create .rpm packages </p><div class="fragment"><div class="line">make pkg-rpm</div></div><!-- fragment --><p>Alternatively, build and create .deb packages </p><div class="fragment"><div class="line">make pkg-deb</div></div><!-- fragment --><p>Packages can be found in <code>vpp/build-root/</code> directory.</p>
+<p>For more in depth instructions please see Building section in <a href="https://wiki.fd.io/view/VPP/Pulling,_Building,_Running,_Hacking_and_Pushing_VPP_Code#Building">VPP documentation</a></p>
+<h2><a class="anchor" id="vpp_install"></a>
+2. Installing VPP</h2>
+<p>Packages can be installed from distribution repository or built in previous step. Minimal set of packages consists of <code>vpp</code>, <code>vpp-lib</code> and <code>vpp-devel</code>.</p>
+<p><em>Note: Please remove or modify /etc/sysctl.d/80-vpp.conf file with appropriate values dependent on number of hugepages that will be used on system.</em></p>
+<h2><a class="anchor" id="vpp_run"></a>
+3. Running VPP</h2>
+<p>VPP takes over any network interfaces that were bound to userspace driver, for details please see DPDK guide on <a href="http://dpdk.org/doc/guides/linux_gsg/linux_drivers.html#binding-and-unbinding-network-ports-to-from-the-kernel-modules">Binding and Unbinding Network Ports to/from the Kernel Modules</a>.</p>
+<p>VPP is installed as service and disabled by default. To start VPP with default config: </p><div class="fragment"><div class="line">sudo systemctl start vpp</div></div><!-- fragment --><p>Alternatively, use <code>vpp</code> binary directly </p><div class="fragment"><div class="line">sudo vpp unix {cli-listen /run/vpp/cli.sock}</div></div><!-- fragment --><p>A usefull tool is <code>vppctl</code>, that allows to control running VPP instance. Either by entering VPP configuration prompt </p><div class="fragment"><div class="line">sudo vppctl</div></div><!-- fragment --><p>Or, by sending single command directly. For example to display interfaces within VPP: </p><div class="fragment"><div class="line">sudo vppctl show interface</div></div><!-- fragment --><h3>Example: Tap interfaces on single host</h3>
+<p>For functional test purpose a virtual tap interface can be created, so no additional network hardware is required. This will allow network communication between SPDK iSCSI target using VPP end of tap and kernel iSCSI initiator using the kernel part of tap. A single host is used in this scenario.</p>
+<p>Create tap interface via VPP </p><div class="fragment"><div class="line">vppctl tap connect tap0</div><div class="line">vppctl set interface state tapcli-0 up</div><div class="line">vppctl set interface ip address tapcli-0 10.0.0.1/24</div><div class="line">vppctl show int addr</div></div><!-- fragment --><p>Assign address on kernel interface </p><div class="fragment"><div class="line">sudo ip addr add 10.0.0.2/24 dev tap0</div><div class="line">sudo ip link set tap0 up</div></div><!-- fragment --><p>To verify connectivity </p><div class="fragment"><div class="line">ping 10.0.0.1</div></div><!-- fragment --><h2><a class="anchor" id="vpp_built_into_spdk"></a>
+4. Building SPDK with VPP</h2>
+<p>Support for VPP can be built into SPDK by using configuration option. </p><div class="fragment"><div class="line">configure --with-vpp</div></div><!-- fragment --><p>Alternatively, directory with built libraries can be pointed at and will be used for compilation instead of installed packages. </p><div class="fragment"><div class="line">configure --with-vpp=/path/to/vpp/repo/build-root/vpp</div></div><!-- fragment --><h2><a class="anchor" id="vpp_running_with_spdk"></a>
+5. Running SPDK with VPP</h2>
+<p>VPP application has to be started before SPDK iSCSI target, in order to enable usage of network interfaces. After SPDK iSCSI target initialization finishes, interfaces configured within VPP will be available to be configured as portal addresses. Please refer to <a class="el" href="iscsi.html#iscsi_rpc">Configuring iSCSI Target via RPC method</a>.</p>
+<h1><a class="anchor" id="iscsi_hotplug"></a>
 iSCSI Hotplug</h1>
 <p>At the iSCSI level, we provide the following support for Hotplug:</p>
 <ol type="1">

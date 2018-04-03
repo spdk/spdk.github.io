@@ -172,81 +172,1028 @@ typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>fs_send_req
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a8c6258a494c0ebf2460a6ffece101cfd"><td class="memItemLeft" align="right" valign="top"><a id="a8c6258a494c0ebf2460a6ffece101cfd"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_fs_opts_init</b> (struct <a class="el" href="structspdk__blobfs__opts.html">spdk_blobfs_opts</a> *opts)</td></tr>
+<tr class="memitem:a8c6258a494c0ebf2460a6ffece101cfd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blobfs_8h.html#a8c6258a494c0ebf2460a6ffece101cfd">spdk_fs_opts_init</a> (struct <a class="el" href="structspdk__blobfs__opts.html">spdk_blobfs_opts</a> *opts)</td></tr>
+<tr class="memdesc:a8c6258a494c0ebf2460a6ffece101cfd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize a <a class="el" href="structspdk__blobfs__opts.html">spdk_blobfs_opts</a> structure to the default option values.  <a href="#a8c6258a494c0ebf2460a6ffece101cfd">More...</a><br /></td></tr>
 <tr class="separator:a8c6258a494c0ebf2460a6ffece101cfd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8e52f44e27ad58841f0a47d5efcb046a"><td class="memItemLeft" align="right" valign="top"><a id="a8e52f44e27ad58841f0a47d5efcb046a"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_fs_init</b> (struct <a class="el" href="structspdk__bs__dev.html">spdk_bs_dev</a> *dev, struct <a class="el" href="structspdk__blobfs__opts.html">spdk_blobfs_opts</a> *opt, fs_send_request_fn send_request_fn, spdk_fs_op_with_handle_complete cb_fn, void *cb_arg)</td></tr>
+<tr class="memitem:a8e52f44e27ad58841f0a47d5efcb046a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blobfs_8h.html#a8e52f44e27ad58841f0a47d5efcb046a">spdk_fs_init</a> (struct <a class="el" href="structspdk__bs__dev.html">spdk_bs_dev</a> *dev, struct <a class="el" href="structspdk__blobfs__opts.html">spdk_blobfs_opts</a> *opt, fs_send_request_fn send_request_fn, spdk_fs_op_with_handle_complete cb_fn, void *cb_arg)</td></tr>
+<tr class="memdesc:a8e52f44e27ad58841f0a47d5efcb046a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize blobstore filesystem.  <a href="#a8e52f44e27ad58841f0a47d5efcb046a">More...</a><br /></td></tr>
 <tr class="separator:a8e52f44e27ad58841f0a47d5efcb046a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4f3c493505ea2dae2eb740a4834728ce"><td class="memItemLeft" align="right" valign="top"><a id="a4f3c493505ea2dae2eb740a4834728ce"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_fs_load</b> (struct <a class="el" href="structspdk__bs__dev.html">spdk_bs_dev</a> *dev, fs_send_request_fn send_request_fn, spdk_fs_op_with_handle_complete cb_fn, void *cb_arg)</td></tr>
+<tr class="memitem:a4f3c493505ea2dae2eb740a4834728ce"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blobfs_8h.html#a4f3c493505ea2dae2eb740a4834728ce">spdk_fs_load</a> (struct <a class="el" href="structspdk__bs__dev.html">spdk_bs_dev</a> *dev, fs_send_request_fn send_request_fn, spdk_fs_op_with_handle_complete cb_fn, void *cb_arg)</td></tr>
+<tr class="memdesc:a4f3c493505ea2dae2eb740a4834728ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load blobstore filesystem from the given blobstore block device.  <a href="#a4f3c493505ea2dae2eb740a4834728ce">More...</a><br /></td></tr>
 <tr class="separator:a4f3c493505ea2dae2eb740a4834728ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa71d29a4bce7f7b73114e466a013faea"><td class="memItemLeft" align="right" valign="top"><a id="aa71d29a4bce7f7b73114e466a013faea"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_fs_unload</b> (struct spdk_filesystem *fs, spdk_fs_op_complete cb_fn, void *cb_arg)</td></tr>
+<tr class="memitem:aa71d29a4bce7f7b73114e466a013faea"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blobfs_8h.html#aa71d29a4bce7f7b73114e466a013faea">spdk_fs_unload</a> (struct spdk_filesystem *fs, spdk_fs_op_complete cb_fn, void *cb_arg)</td></tr>
+<tr class="memdesc:aa71d29a4bce7f7b73114e466a013faea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unload blobstore filesystem.  <a href="#aa71d29a4bce7f7b73114e466a013faea">More...</a><br /></td></tr>
 <tr class="separator:aa71d29a4bce7f7b73114e466a013faea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3ba653cf26b62f1d18385bdc010c73b2"><td class="memItemLeft" align="right" valign="top"><a id="a3ba653cf26b62f1d18385bdc010c73b2"></a>
-struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_fs_alloc_io_channel</b> (struct spdk_filesystem *fs)</td></tr>
+<tr class="memitem:a3ba653cf26b62f1d18385bdc010c73b2"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blobfs_8h.html#a3ba653cf26b62f1d18385bdc010c73b2">spdk_fs_alloc_io_channel</a> (struct spdk_filesystem *fs)</td></tr>
+<tr class="memdesc:a3ba653cf26b62f1d18385bdc010c73b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate an I/O channel for asynchronous operations.  <a href="#a3ba653cf26b62f1d18385bdc010c73b2">More...</a><br /></td></tr>
 <tr class="separator:a3ba653cf26b62f1d18385bdc010c73b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad226faaede088c8a82761bf1cb20b916"><td class="memItemLeft" align="right" valign="top"><a id="ad226faaede088c8a82761bf1cb20b916"></a>
-struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_fs_alloc_io_channel_sync</b> (struct spdk_filesystem *fs)</td></tr>
+<tr class="memitem:ad226faaede088c8a82761bf1cb20b916"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blobfs_8h.html#ad226faaede088c8a82761bf1cb20b916">spdk_fs_alloc_io_channel_sync</a> (struct spdk_filesystem *fs)</td></tr>
+<tr class="memdesc:ad226faaede088c8a82761bf1cb20b916"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate an I/O channel for synchronous operations.  <a href="#ad226faaede088c8a82761bf1cb20b916">More...</a><br /></td></tr>
 <tr class="separator:ad226faaede088c8a82761bf1cb20b916"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a53f34caefaed1536bec1beeb521ead7a"><td class="memItemLeft" align="right" valign="top"><a id="a53f34caefaed1536bec1beeb521ead7a"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_fs_free_io_channel</b> (struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *channel)</td></tr>
+<tr class="memitem:a53f34caefaed1536bec1beeb521ead7a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blobfs_8h.html#a53f34caefaed1536bec1beeb521ead7a">spdk_fs_free_io_channel</a> (struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *channel)</td></tr>
+<tr class="memdesc:a53f34caefaed1536bec1beeb521ead7a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Free I/O channel.  <a href="#a53f34caefaed1536bec1beeb521ead7a">More...</a><br /></td></tr>
 <tr class="separator:a53f34caefaed1536bec1beeb521ead7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af565a4461bb0ad49fd22877501d19fe0"><td class="memItemLeft" align="right" valign="top"><a id="af565a4461bb0ad49fd22877501d19fe0"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_fs_file_stat</b> (struct spdk_filesystem *fs, struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *channel, const char *name, struct <a class="el" href="structspdk__file__stat.html">spdk_file_stat</a> *stat)</td></tr>
+<tr class="memitem:af565a4461bb0ad49fd22877501d19fe0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blobfs_8h.html#af565a4461bb0ad49fd22877501d19fe0">spdk_fs_file_stat</a> (struct spdk_filesystem *fs, struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *channel, const char *name, struct <a class="el" href="structspdk__file__stat.html">spdk_file_stat</a> *stat)</td></tr>
+<tr class="memdesc:af565a4461bb0ad49fd22877501d19fe0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get statistics about the file including the underlying blob id and the file size.  <a href="#af565a4461bb0ad49fd22877501d19fe0">More...</a><br /></td></tr>
 <tr class="separator:af565a4461bb0ad49fd22877501d19fe0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a60b3a62f76c41956be7af9a5cfbaa234"><td class="memItemLeft" align="right" valign="top"><a id="a60b3a62f76c41956be7af9a5cfbaa234"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_fs_create_file</b> (struct spdk_filesystem *fs, struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *channel, const char *name)</td></tr>
+<tr class="memitem:a60b3a62f76c41956be7af9a5cfbaa234"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blobfs_8h.html#a60b3a62f76c41956be7af9a5cfbaa234">spdk_fs_create_file</a> (struct spdk_filesystem *fs, struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *channel, const char *name)</td></tr>
+<tr class="memdesc:a60b3a62f76c41956be7af9a5cfbaa234"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new file on the given blobstore filesystem.  <a href="#a60b3a62f76c41956be7af9a5cfbaa234">More...</a><br /></td></tr>
 <tr class="separator:a60b3a62f76c41956be7af9a5cfbaa234"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad7a34fa6fd79cbea8082699d204e13fd"><td class="memItemLeft" align="right" valign="top"><a id="ad7a34fa6fd79cbea8082699d204e13fd"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_fs_open_file</b> (struct spdk_filesystem *fs, struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *channel, const char *name, uint32_t flags, struct spdk_file **file)</td></tr>
+<tr class="memitem:ad7a34fa6fd79cbea8082699d204e13fd"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blobfs_8h.html#ad7a34fa6fd79cbea8082699d204e13fd">spdk_fs_open_file</a> (struct spdk_filesystem *fs, struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *channel, const char *name, uint32_t flags, struct spdk_file **file)</td></tr>
+<tr class="memdesc:ad7a34fa6fd79cbea8082699d204e13fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Open the file.  <a href="#ad7a34fa6fd79cbea8082699d204e13fd">More...</a><br /></td></tr>
 <tr class="separator:ad7a34fa6fd79cbea8082699d204e13fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9fda9d15c0266303df23b43bf59fc059"><td class="memItemLeft" align="right" valign="top"><a id="a9fda9d15c0266303df23b43bf59fc059"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_file_close</b> (struct spdk_file *file, struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *channel)</td></tr>
+<tr class="memitem:a9fda9d15c0266303df23b43bf59fc059"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blobfs_8h.html#a9fda9d15c0266303df23b43bf59fc059">spdk_file_close</a> (struct spdk_file *file, struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *channel)</td></tr>
+<tr class="memdesc:a9fda9d15c0266303df23b43bf59fc059"><td class="mdescLeft">&#160;</td><td class="mdescRight">Close the file.  <a href="#a9fda9d15c0266303df23b43bf59fc059">More...</a><br /></td></tr>
 <tr class="separator:a9fda9d15c0266303df23b43bf59fc059"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a906df18462bca18c593abf76be78a09c"><td class="memItemLeft" align="right" valign="top"><a id="a906df18462bca18c593abf76be78a09c"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_fs_rename_file</b> (struct spdk_filesystem *fs, struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *channel, const char *old_name, const char *new_name)</td></tr>
+<tr class="memitem:a906df18462bca18c593abf76be78a09c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blobfs_8h.html#a906df18462bca18c593abf76be78a09c">spdk_fs_rename_file</a> (struct spdk_filesystem *fs, struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *channel, const char *old_name, const char *new_name)</td></tr>
+<tr class="memdesc:a906df18462bca18c593abf76be78a09c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Change the file name.  <a href="#a906df18462bca18c593abf76be78a09c">More...</a><br /></td></tr>
 <tr class="separator:a906df18462bca18c593abf76be78a09c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab05223db915024722182426877fc20a9"><td class="memItemLeft" align="right" valign="top"><a id="ab05223db915024722182426877fc20a9"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_fs_delete_file</b> (struct spdk_filesystem *fs, struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *channel, const char *name)</td></tr>
+<tr class="memitem:ab05223db915024722182426877fc20a9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blobfs_8h.html#ab05223db915024722182426877fc20a9">spdk_fs_delete_file</a> (struct spdk_filesystem *fs, struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *channel, const char *name)</td></tr>
+<tr class="memdesc:ab05223db915024722182426877fc20a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delete the file.  <a href="#ab05223db915024722182426877fc20a9">More...</a><br /></td></tr>
 <tr class="separator:ab05223db915024722182426877fc20a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4bf2e9c5190b5c65a34f62485ea5ac5e"><td class="memItemLeft" align="right" valign="top"><a id="a4bf2e9c5190b5c65a34f62485ea5ac5e"></a>
-spdk_fs_iter&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_fs_iter_first</b> (struct spdk_filesystem *fs)</td></tr>
+<tr class="memitem:a4bf2e9c5190b5c65a34f62485ea5ac5e"><td class="memItemLeft" align="right" valign="top">spdk_fs_iter&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blobfs_8h.html#a4bf2e9c5190b5c65a34f62485ea5ac5e">spdk_fs_iter_first</a> (struct spdk_filesystem *fs)</td></tr>
+<tr class="memdesc:a4bf2e9c5190b5c65a34f62485ea5ac5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the first file in the blobstore filesystem.  <a href="#a4bf2e9c5190b5c65a34f62485ea5ac5e">More...</a><br /></td></tr>
 <tr class="separator:a4bf2e9c5190b5c65a34f62485ea5ac5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac828081b33ace1754147b8816d6e85ca"><td class="memItemLeft" align="right" valign="top"><a id="ac828081b33ace1754147b8816d6e85ca"></a>
-spdk_fs_iter&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_fs_iter_next</b> (spdk_fs_iter iter)</td></tr>
+<tr class="memitem:ac828081b33ace1754147b8816d6e85ca"><td class="memItemLeft" align="right" valign="top">spdk_fs_iter&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blobfs_8h.html#ac828081b33ace1754147b8816d6e85ca">spdk_fs_iter_next</a> (spdk_fs_iter iter)</td></tr>
+<tr class="memdesc:ac828081b33ace1754147b8816d6e85ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the next file in the blobstore filesystem by using the input iterator.  <a href="#ac828081b33ace1754147b8816d6e85ca">More...</a><br /></td></tr>
 <tr class="separator:ac828081b33ace1754147b8816d6e85ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa43e4faaa71af82f01c0c9e3036f7ef4"><td class="memItemLeft" align="right" valign="top"><a id="aa43e4faaa71af82f01c0c9e3036f7ef4"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_file_truncate</b> (struct spdk_file *file, struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *channel, uint64_t length)</td></tr>
+<tr class="memitem:aa43e4faaa71af82f01c0c9e3036f7ef4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blobfs_8h.html#aa43e4faaa71af82f01c0c9e3036f7ef4">spdk_file_truncate</a> (struct spdk_file *file, struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *channel, uint64_t length)</td></tr>
+<tr class="memdesc:aa43e4faaa71af82f01c0c9e3036f7ef4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Truncate the file.  <a href="#aa43e4faaa71af82f01c0c9e3036f7ef4">More...</a><br /></td></tr>
 <tr class="separator:aa43e4faaa71af82f01c0c9e3036f7ef4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a89b66cdbd661761eecfdc2613ddd744b"><td class="memItemLeft" align="right" valign="top"><a id="a89b66cdbd661761eecfdc2613ddd744b"></a>
-const char *&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_file_get_name</b> (struct spdk_file *file)</td></tr>
+<tr class="memitem:a89b66cdbd661761eecfdc2613ddd744b"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blobfs_8h.html#a89b66cdbd661761eecfdc2613ddd744b">spdk_file_get_name</a> (struct spdk_file *file)</td></tr>
+<tr class="memdesc:a89b66cdbd661761eecfdc2613ddd744b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get file name.  <a href="#a89b66cdbd661761eecfdc2613ddd744b">More...</a><br /></td></tr>
 <tr class="separator:a89b66cdbd661761eecfdc2613ddd744b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a39d7f1424fe8921faeb91a012766370e"><td class="memItemLeft" align="right" valign="top"><a id="a39d7f1424fe8921faeb91a012766370e"></a>
-uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_file_get_length</b> (struct spdk_file *file)</td></tr>
+<tr class="memitem:a39d7f1424fe8921faeb91a012766370e"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blobfs_8h.html#a39d7f1424fe8921faeb91a012766370e">spdk_file_get_length</a> (struct spdk_file *file)</td></tr>
+<tr class="memdesc:a39d7f1424fe8921faeb91a012766370e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain the size of the file.  <a href="#a39d7f1424fe8921faeb91a012766370e">More...</a><br /></td></tr>
 <tr class="separator:a39d7f1424fe8921faeb91a012766370e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a874dce983b8a63123e7c8b77309017c1"><td class="memItemLeft" align="right" valign="top"><a id="a874dce983b8a63123e7c8b77309017c1"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_file_write</b> (struct spdk_file *file, struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *channel, void *payload, uint64_t offset, uint64_t length)</td></tr>
+<tr class="memitem:a874dce983b8a63123e7c8b77309017c1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blobfs_8h.html#a874dce983b8a63123e7c8b77309017c1">spdk_file_write</a> (struct spdk_file *file, struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *channel, void *payload, uint64_t offset, uint64_t length)</td></tr>
+<tr class="memdesc:a874dce983b8a63123e7c8b77309017c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write data to the given file.  <a href="#a874dce983b8a63123e7c8b77309017c1">More...</a><br /></td></tr>
 <tr class="separator:a874dce983b8a63123e7c8b77309017c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa414131c934d53b18ea45fd5bf82aaf9"><td class="memItemLeft" align="right" valign="top"><a id="aa414131c934d53b18ea45fd5bf82aaf9"></a>
-int64_t&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_file_read</b> (struct spdk_file *file, struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *channel, void *payload, uint64_t offset, uint64_t length)</td></tr>
+<tr class="memitem:aa414131c934d53b18ea45fd5bf82aaf9"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blobfs_8h.html#aa414131c934d53b18ea45fd5bf82aaf9">spdk_file_read</a> (struct spdk_file *file, struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *channel, void *payload, uint64_t offset, uint64_t length)</td></tr>
+<tr class="memdesc:aa414131c934d53b18ea45fd5bf82aaf9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read data to user buffer from the given file.  <a href="#aa414131c934d53b18ea45fd5bf82aaf9">More...</a><br /></td></tr>
 <tr class="separator:aa414131c934d53b18ea45fd5bf82aaf9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac5b00d339e2b771a26448afa282a82db"><td class="memItemLeft" align="right" valign="top"><a id="ac5b00d339e2b771a26448afa282a82db"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_fs_set_cache_size</b> (uint64_t size_in_mb)</td></tr>
+<tr class="memitem:ac5b00d339e2b771a26448afa282a82db"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blobfs_8h.html#ac5b00d339e2b771a26448afa282a82db">spdk_fs_set_cache_size</a> (uint64_t size_in_mb)</td></tr>
+<tr class="memdesc:ac5b00d339e2b771a26448afa282a82db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set cache size for the blobstore filesystem.  <a href="#ac5b00d339e2b771a26448afa282a82db">More...</a><br /></td></tr>
 <tr class="separator:ac5b00d339e2b771a26448afa282a82db"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a15d38cb108ad825b5cf4090ae3f5af49"><td class="memItemLeft" align="right" valign="top"><a id="a15d38cb108ad825b5cf4090ae3f5af49"></a>
-uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_fs_get_cache_size</b> (void)</td></tr>
+<tr class="memitem:a15d38cb108ad825b5cf4090ae3f5af49"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blobfs_8h.html#a15d38cb108ad825b5cf4090ae3f5af49">spdk_fs_get_cache_size</a> (void)</td></tr>
+<tr class="memdesc:a15d38cb108ad825b5cf4090ae3f5af49"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain the cache size.  <a href="#a15d38cb108ad825b5cf4090ae3f5af49">More...</a><br /></td></tr>
 <tr class="separator:a15d38cb108ad825b5cf4090ae3f5af49"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adb2197f34f626761c83b9eb7effacf4e"><td class="memItemLeft" align="right" valign="top"><a id="adb2197f34f626761c83b9eb7effacf4e"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_file_set_priority</b> (struct spdk_file *file, uint32_t priority)</td></tr>
+<tr class="memitem:adb2197f34f626761c83b9eb7effacf4e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blobfs_8h.html#adb2197f34f626761c83b9eb7effacf4e">spdk_file_set_priority</a> (struct spdk_file *file, uint32_t priority)</td></tr>
+<tr class="memdesc:adb2197f34f626761c83b9eb7effacf4e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set priority for the file.  <a href="#adb2197f34f626761c83b9eb7effacf4e">More...</a><br /></td></tr>
 <tr class="separator:adb2197f34f626761c83b9eb7effacf4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9dbd899b04661e7773cff6a94123bd92"><td class="memItemLeft" align="right" valign="top"><a id="a9dbd899b04661e7773cff6a94123bd92"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_file_sync</b> (struct spdk_file *file, struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *channel)</td></tr>
+<tr class="memitem:a9dbd899b04661e7773cff6a94123bd92"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blobfs_8h.html#a9dbd899b04661e7773cff6a94123bd92">spdk_file_sync</a> (struct spdk_file *file, struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *channel)</td></tr>
+<tr class="memdesc:a9dbd899b04661e7773cff6a94123bd92"><td class="mdescLeft">&#160;</td><td class="mdescRight">Synchronize the data from the cache to the disk.  <a href="#a9dbd899b04661e7773cff6a94123bd92">More...</a><br /></td></tr>
 <tr class="separator:a9dbd899b04661e7773cff6a94123bd92"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>SPDK Filesystem. </p>
-</div></div><!-- contents -->
+</div><h2 class="groupheader">Function Documentation</h2>
+<a id="a9fda9d15c0266303df23b43bf59fc059"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9fda9d15c0266303df23b43bf59fc059">&#9670;&nbsp;</a></span>spdk_file_close()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_file_close </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_file *&#160;</td>
+          <td class="paramname"><em>file</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *&#160;</td>
+          <td class="paramname"><em>channel</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Close the file. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">file</td><td>File to close. </td></tr>
+    <tr><td class="paramname">channel</td><td>The I/O channel used to allocate file request.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, negative errno on failure. </dd></dl>
+
+</div>
+</div>
+<a id="a39d7f1424fe8921faeb91a012766370e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a39d7f1424fe8921faeb91a012766370e">&#9670;&nbsp;</a></span>spdk_file_get_length()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint64_t spdk_file_get_length </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_file *&#160;</td>
+          <td class="paramname"><em>file</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Obtain the size of the file. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">file</td><td>File to query.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the size in bytes of the file. </dd></dl>
+
+</div>
+</div>
+<a id="a89b66cdbd661761eecfdc2613ddd744b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a89b66cdbd661761eecfdc2613ddd744b">&#9670;&nbsp;</a></span>spdk_file_get_name()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* spdk_file_get_name </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_file *&#160;</td>
+          <td class="paramname"><em>file</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get file name. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">file</td><td>File to query.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the name of the file. </dd></dl>
+
+</div>
+</div>
+<a id="aa414131c934d53b18ea45fd5bf82aaf9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa414131c934d53b18ea45fd5bf82aaf9">&#9670;&nbsp;</a></span>spdk_file_read()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int64_t spdk_file_read </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_file *&#160;</td>
+          <td class="paramname"><em>file</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *&#160;</td>
+          <td class="paramname"><em>channel</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>payload</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>offset</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>length</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Read data to user buffer from the given file. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">file</td><td>File to read. </td></tr>
+    <tr><td class="paramname">channel</td><td>The I/O channel used to allocate file request. </td></tr>
+    <tr><td class="paramname">payload</td><td>The specified buffer which will store the obtained data. </td></tr>
+    <tr><td class="paramname">offset</td><td>The beginning position to read. </td></tr>
+    <tr><td class="paramname">length</td><td>The size in bytes of data to read.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the end position of this read operation on success, negated errno on failure. </dd></dl>
+
+</div>
+</div>
+<a id="adb2197f34f626761c83b9eb7effacf4e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb2197f34f626761c83b9eb7effacf4e">&#9670;&nbsp;</a></span>spdk_file_set_priority()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_file_set_priority </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_file *&#160;</td>
+          <td class="paramname"><em>file</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>priority</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set priority for the file. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">file</td><td>File to set priority. </td></tr>
+    <tr><td class="paramname">priority</td><td>Priority level (SPDK_FILE_PRIORITY_LOW or SPDK_FILE_PRIORITY_HIGH). </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a9dbd899b04661e7773cff6a94123bd92"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9dbd899b04661e7773cff6a94123bd92">&#9670;&nbsp;</a></span>spdk_file_sync()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_file_sync </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_file *&#160;</td>
+          <td class="paramname"><em>file</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *&#160;</td>
+          <td class="paramname"><em>channel</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Synchronize the data from the cache to the disk. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">file</td><td>File to sync. </td></tr>
+    <tr><td class="paramname">channel</td><td>The I/O channel used to allocate file request.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success. </dd></dl>
+
+</div>
+</div>
+<a id="aa43e4faaa71af82f01c0c9e3036f7ef4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa43e4faaa71af82f01c0c9e3036f7ef4">&#9670;&nbsp;</a></span>spdk_file_truncate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_file_truncate </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_file *&#160;</td>
+          <td class="paramname"><em>file</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *&#160;</td>
+          <td class="paramname"><em>channel</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>length</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Truncate the file. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">file</td><td>File to truncate. </td></tr>
+    <tr><td class="paramname">channel</td><td>The I/O channel used to allocate file request. </td></tr>
+    <tr><td class="paramname">length</td><td>New size in bytes of the file. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a874dce983b8a63123e7c8b77309017c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a874dce983b8a63123e7c8b77309017c1">&#9670;&nbsp;</a></span>spdk_file_write()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_file_write </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_file *&#160;</td>
+          <td class="paramname"><em>file</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *&#160;</td>
+          <td class="paramname"><em>channel</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>payload</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>offset</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>length</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Write data to the given file. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">file</td><td>File to write. </td></tr>
+    <tr><td class="paramname">channel</td><td>The I/O channel used to allocate file request. </td></tr>
+    <tr><td class="paramname">payload</td><td>The specified buffer which should contain the data to be transmitted. </td></tr>
+    <tr><td class="paramname">offset</td><td>The beginning position to write data. </td></tr>
+    <tr><td class="paramname">length</td><td>The size in bytes of data to write.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, negative errno on failure. </dd></dl>
+
+</div>
+</div>
+<a id="a3ba653cf26b62f1d18385bdc010c73b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ba653cf26b62f1d18385bdc010c73b2">&#9670;&nbsp;</a></span>spdk_fs_alloc_io_channel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a>* spdk_fs_alloc_io_channel </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_filesystem *&#160;</td>
+          <td class="paramname"><em>fs</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Allocate an I/O channel for asynchronous operations. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fs</td><td>Blobstore filesystem to allocate I/O channel.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>a pointer to the I/O channel on success or NULL otherwise. </dd></dl>
+
+</div>
+</div>
+<a id="ad226faaede088c8a82761bf1cb20b916"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad226faaede088c8a82761bf1cb20b916">&#9670;&nbsp;</a></span>spdk_fs_alloc_io_channel_sync()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a>* spdk_fs_alloc_io_channel_sync </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_filesystem *&#160;</td>
+          <td class="paramname"><em>fs</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Allocate an I/O channel for synchronous operations. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fs</td><td>Blobstore filesystem to allocate I/O channel.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>a pointer to the I/O channel on success or NULL otherwise. </dd></dl>
+
+</div>
+</div>
+<a id="a60b3a62f76c41956be7af9a5cfbaa234"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a60b3a62f76c41956be7af9a5cfbaa234">&#9670;&nbsp;</a></span>spdk_fs_create_file()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_fs_create_file </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_filesystem *&#160;</td>
+          <td class="paramname"><em>fs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *&#160;</td>
+          <td class="paramname"><em>channel</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>name</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Create a new file on the given blobstore filesystem. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fs</td><td>Blobstore filesystem. </td></tr>
+    <tr><td class="paramname">channel</td><td>The I/O channel used to allocate file request. </td></tr>
+    <tr><td class="paramname">name</td><td>The file name for this new file.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, negative errno on failure. </dd></dl>
+
+</div>
+</div>
+<a id="ab05223db915024722182426877fc20a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab05223db915024722182426877fc20a9">&#9670;&nbsp;</a></span>spdk_fs_delete_file()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_fs_delete_file </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_filesystem *&#160;</td>
+          <td class="paramname"><em>fs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *&#160;</td>
+          <td class="paramname"><em>channel</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>name</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Delete the file. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fs</td><td>Blobstore filesystem. </td></tr>
+    <tr><td class="paramname">channel</td><td>The I/O channel used to allocate file request. </td></tr>
+    <tr><td class="paramname">name</td><td>The name of the file to be deleted.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, negative errno on failure. </dd></dl>
+
+</div>
+</div>
+<a id="af565a4461bb0ad49fd22877501d19fe0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af565a4461bb0ad49fd22877501d19fe0">&#9670;&nbsp;</a></span>spdk_fs_file_stat()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_fs_file_stat </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_filesystem *&#160;</td>
+          <td class="paramname"><em>fs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *&#160;</td>
+          <td class="paramname"><em>channel</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structspdk__file__stat.html">spdk_file_stat</a> *&#160;</td>
+          <td class="paramname"><em>stat</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get statistics about the file including the underlying blob id and the file size. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fs</td><td>Blobstore filesystem. </td></tr>
+    <tr><td class="paramname">channel</td><td>The I/O channel used to allocate file request. </td></tr>
+    <tr><td class="paramname">name</td><td>The file name used to look up the matched file in the blobstore filesystem. </td></tr>
+    <tr><td class="paramname">stat</td><td>Caller allocated structure to store the obtained information about this file.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, negative errno on failure. </dd></dl>
+
+</div>
+</div>
+<a id="a53f34caefaed1536bec1beeb521ead7a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a53f34caefaed1536bec1beeb521ead7a">&#9670;&nbsp;</a></span>spdk_fs_free_io_channel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_fs_free_io_channel </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *&#160;</td>
+          <td class="paramname"><em>channel</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Free I/O channel. </p>
+<p>This function will decrease the references of this I/O channel. If the reference is reduced to 0, the I/O channel will be freed.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">channel</td><td>I/O channel to free. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a15d38cb108ad825b5cf4090ae3f5af49"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a15d38cb108ad825b5cf4090ae3f5af49">&#9670;&nbsp;</a></span>spdk_fs_get_cache_size()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint64_t spdk_fs_get_cache_size </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Obtain the cache size. </p>
+<dl class="section return"><dt>Returns</dt><dd>cache size in megabytes. </dd></dl>
+
+</div>
+</div>
+<a id="a8e52f44e27ad58841f0a47d5efcb046a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e52f44e27ad58841f0a47d5efcb046a">&#9670;&nbsp;</a></span>spdk_fs_init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_fs_init </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structspdk__bs__dev.html">spdk_bs_dev</a> *&#160;</td>
+          <td class="paramname"><em>dev</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structspdk__blobfs__opts.html">spdk_blobfs_opts</a> *&#160;</td>
+          <td class="paramname"><em>opt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">fs_send_request_fn&#160;</td>
+          <td class="paramname"><em>send_request_fn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">spdk_fs_op_with_handle_complete&#160;</td>
+          <td class="paramname"><em>cb_fn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>cb_arg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Initialize blobstore filesystem. </p>
+<p>Initialize the blobstore filesystem on the blobstore block device which has been created by the function <a class="el" href="blob__bdev_8h.html#ad9acd1de03901617a7564d6cd4aec2bf" title="Create a blobstore block device from a bdev. ">spdk_bdev_create_bs_dev()</a> in the <a class="el" href="blob__bdev_8h.html" title="Helper library to use spdk_bdev as the backing device for a blobstore. ">blob_bdev.h</a>. The obtained blobstore filesystem will be passed to the callback function.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dev</td><td>Blobstore block device used by this blobstore filesystem. </td></tr>
+    <tr><td class="paramname">opt</td><td>Initialization options used for this blobstore filesystem. </td></tr>
+    <tr><td class="paramname">send_request_fn</td><td>The function for sending request. This function will be invoked any time when the blobstore filesystem wants to pass a message to the main dispatch thread. </td></tr>
+    <tr><td class="paramname">cb_fn</td><td>Called when the initialization is complete. </td></tr>
+    <tr><td class="paramname">cb_arg</td><td>Argument passed to function cb_fn. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a4bf2e9c5190b5c65a34f62485ea5ac5e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4bf2e9c5190b5c65a34f62485ea5ac5e">&#9670;&nbsp;</a></span>spdk_fs_iter_first()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">spdk_fs_iter spdk_fs_iter_first </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_filesystem *&#160;</td>
+          <td class="paramname"><em>fs</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the first file in the blobstore filesystem. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fs</td><td>Blobstore filesystem to traverse.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>an iterator which points to the first file in the blobstore filesystem. </dd></dl>
+
+</div>
+</div>
+<a id="ac828081b33ace1754147b8816d6e85ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac828081b33ace1754147b8816d6e85ca">&#9670;&nbsp;</a></span>spdk_fs_iter_next()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">spdk_fs_iter spdk_fs_iter_next </td>
+          <td>(</td>
+          <td class="paramtype">spdk_fs_iter&#160;</td>
+          <td class="paramname"><em>iter</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the next file in the blobstore filesystem by using the input iterator. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">iter</td><td>The iterator which points to the current file struct.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>an iterator which points to the next file in the blobstore filesystem. </dd></dl>
+
+</div>
+</div>
+<a id="a4f3c493505ea2dae2eb740a4834728ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4f3c493505ea2dae2eb740a4834728ce">&#9670;&nbsp;</a></span>spdk_fs_load()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_fs_load </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structspdk__bs__dev.html">spdk_bs_dev</a> *&#160;</td>
+          <td class="paramname"><em>dev</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">fs_send_request_fn&#160;</td>
+          <td class="paramname"><em>send_request_fn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">spdk_fs_op_with_handle_complete&#160;</td>
+          <td class="paramname"><em>cb_fn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>cb_arg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Load blobstore filesystem from the given blobstore block device. </p>
+<p>The obtained blobstore filesystem will be passed to the callback function.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dev</td><td>Blobstore block device used by this blobstore filesystem. </td></tr>
+    <tr><td class="paramname">send_request_fn</td><td>The function for sending request. This function will be invoked any time when the blobstore filesystem wants to pass a message to the main dispatch thread. </td></tr>
+    <tr><td class="paramname">cb_fn</td><td>Called when the loading is complete. </td></tr>
+    <tr><td class="paramname">cb_arg</td><td>Argument passed to function cb_fn. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ad7a34fa6fd79cbea8082699d204e13fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad7a34fa6fd79cbea8082699d204e13fd">&#9670;&nbsp;</a></span>spdk_fs_open_file()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_fs_open_file </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_filesystem *&#160;</td>
+          <td class="paramname"><em>fs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *&#160;</td>
+          <td class="paramname"><em>channel</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>flags</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct spdk_file **&#160;</td>
+          <td class="paramname"><em>file</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Open the file. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fs</td><td>Blobstore filesystem. </td></tr>
+    <tr><td class="paramname">channel</td><td>The I/O channel used to allocate file request. </td></tr>
+    <tr><td class="paramname">name</td><td>The file name used to look up the matched file in the blobstore filesystem. </td></tr>
+    <tr><td class="paramname">flags</td><td>This flags will be used to control the open mode. </td></tr>
+    <tr><td class="paramname">file</td><td>It will point to the open file if sccessful or NULL otherwirse.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, negative errno on failure. </dd></dl>
+
+</div>
+</div>
+<a id="a8c6258a494c0ebf2460a6ffece101cfd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c6258a494c0ebf2460a6ffece101cfd">&#9670;&nbsp;</a></span>spdk_fs_opts_init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_fs_opts_init </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structspdk__blobfs__opts.html">spdk_blobfs_opts</a> *&#160;</td>
+          <td class="paramname"><em>opts</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Initialize a <a class="el" href="structspdk__blobfs__opts.html">spdk_blobfs_opts</a> structure to the default option values. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">opts</td><td>spdk_blobf_opts struture to intialize. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a906df18462bca18c593abf76be78a09c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a906df18462bca18c593abf76be78a09c">&#9670;&nbsp;</a></span>spdk_fs_rename_file()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_fs_rename_file </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_filesystem *&#160;</td>
+          <td class="paramname"><em>fs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *&#160;</td>
+          <td class="paramname"><em>channel</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>old_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>new_name</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Change the file name. </p>
+<p>This operation will overwrite an existing file if there is a file with the same name.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fs</td><td>Blobstore filesystem. </td></tr>
+    <tr><td class="paramname">channel</td><td>The I/O channel used to allocate file request. </td></tr>
+    <tr><td class="paramname">old_name</td><td>Old name of the file. </td></tr>
+    <tr><td class="paramname">new_name</td><td>New name of the file.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, negative errno on failure. </dd></dl>
+
+</div>
+</div>
+<a id="ac5b00d339e2b771a26448afa282a82db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac5b00d339e2b771a26448afa282a82db">&#9670;&nbsp;</a></span>spdk_fs_set_cache_size()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_fs_set_cache_size </td>
+          <td>(</td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>size_in_mb</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set cache size for the blobstore filesystem. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">size_in_mb</td><td>Cache size in megabytes. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aa71d29a4bce7f7b73114e466a013faea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa71d29a4bce7f7b73114e466a013faea">&#9670;&nbsp;</a></span>spdk_fs_unload()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_fs_unload </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_filesystem *&#160;</td>
+          <td class="paramname"><em>fs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">spdk_fs_op_complete&#160;</td>
+          <td class="paramname"><em>cb_fn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>cb_arg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Unload blobstore filesystem. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fs</td><td>Blobstore filesystem to unload. </td></tr>
+    <tr><td class="paramname">cb_fn</td><td>Called when the unloading is complete. </td></tr>
+    <tr><td class="paramname">cb_arg</td><td>Argument passed to function cb_fn. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+</div><!-- contents -->
 </div><!-- doc-content -->
 </div>

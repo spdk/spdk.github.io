@@ -241,6 +241,18 @@ union <a class="el" href="unionspdk__nvme__vs__register.html">spdk_nvme_vs_regis
 <tr class="memitem:a02b18deae44682a51177e8a4193af602"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a02b18deae44682a51177e8a4193af602">spdk_nvme_ctrlr_get_num_ns</a> (struct spdk_nvme_ctrlr *ctrlr)</td></tr>
 <tr class="memdesc:a02b18deae44682a51177e8a4193af602"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the number of namespaces for the given NVMe controller.  <a href="#a02b18deae44682a51177e8a4193af602">More...</a><br /></td></tr>
 <tr class="separator:a02b18deae44682a51177e8a4193af602"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60d8173db83accb35f0c5fe1ec8261bf"><td class="memItemLeft" align="right" valign="top">struct spdk_pci_device *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a60d8173db83accb35f0c5fe1ec8261bf">spdk_nvme_ctrlr_get_pci_device</a> (struct spdk_nvme_ctrlr *ctrlr)</td></tr>
+<tr class="memdesc:a60d8173db83accb35f0c5fe1ec8261bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the PCI device of a given NVMe controller.  <a href="#a60d8173db83accb35f0c5fe1ec8261bf">More...</a><br /></td></tr>
+<tr class="separator:a60d8173db83accb35f0c5fe1ec8261bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abbcdb6e7c22b0ef87ed927bf97952c19"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#abbcdb6e7c22b0ef87ed927bf97952c19">spdk_nvme_ctrlr_is_active_ns</a> (struct spdk_nvme_ctrlr *ctrlr, uint32_t nsid)</td></tr>
+<tr class="memdesc:abbcdb6e7c22b0ef87ed927bf97952c19"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if nsid is an active ns for the given NVMe controller.  <a href="#abbcdb6e7c22b0ef87ed927bf97952c19">More...</a><br /></td></tr>
+<tr class="separator:abbcdb6e7c22b0ef87ed927bf97952c19"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59e69f39c7cb8a9e1c3e00af7804c8bd"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a59e69f39c7cb8a9e1c3e00af7804c8bd">spdk_nvme_ctrlr_get_first_active_ns</a> (struct spdk_nvme_ctrlr *ctrlr)</td></tr>
+<tr class="memdesc:a59e69f39c7cb8a9e1c3e00af7804c8bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the nsid of the first active namespace, 0 if there are no active namespaces.  <a href="#a59e69f39c7cb8a9e1c3e00af7804c8bd">More...</a><br /></td></tr>
+<tr class="separator:a59e69f39c7cb8a9e1c3e00af7804c8bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abcd528b0df0a564c218dc2745c3af159"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#abcd528b0df0a564c218dc2745c3af159">spdk_nvme_ctrlr_get_next_active_ns</a> (struct spdk_nvme_ctrlr *ctrlr, uint32_t prev_nsid)</td></tr>
+<tr class="memdesc:abcd528b0df0a564c218dc2745c3af159"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a next active namespace given the previous ns id, 0 when there are no more active namespaces.  <a href="#abcd528b0df0a564c218dc2745c3af159">More...</a><br /></td></tr>
+<tr class="separator:abcd528b0df0a564c218dc2745c3af159"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7dc6bb842e168a68972ec46cc35591ae"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a7dc6bb842e168a68972ec46cc35591ae">spdk_nvme_ctrlr_is_log_page_supported</a> (struct spdk_nvme_ctrlr *ctrlr, uint8_t log_page)</td></tr>
 <tr class="memdesc:a7dc6bb842e168a68972ec46cc35591ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine if a particular log page is supported by the given NVMe controller.  <a href="#a7dc6bb842e168a68972ec46cc35591ae">More...</a><br /></td></tr>
 <tr class="separator:a7dc6bb842e168a68972ec46cc35591ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1622,6 +1634,58 @@ int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_retry_co
 
 </div>
 </div>
+<a id="a59e69f39c7cb8a9e1c3e00af7804c8bd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a59e69f39c7cb8a9e1c3e00af7804c8bd">&#9670;&nbsp;</a></span>spdk_nvme_ctrlr_get_first_active_ns()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t spdk_nvme_ctrlr_get_first_active_ns </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_nvme_ctrlr *&#160;</td>
+          <td class="paramname"><em>ctrlr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Return the nsid of the first active namespace, 0 if there are no active namespaces. </p>
+<p>This function is thread safe and can be called at any point while the controller is attached to the SPDK NVMe driver. </p>
+
+</div>
+</div>
+<a id="abcd528b0df0a564c218dc2745c3af159"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abcd528b0df0a564c218dc2745c3af159">&#9670;&nbsp;</a></span>spdk_nvme_ctrlr_get_next_active_ns()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t spdk_nvme_ctrlr_get_next_active_ns </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_nvme_ctrlr *&#160;</td>
+          <td class="paramname"><em>ctrlr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>prev_nsid</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Return a next active namespace given the previous ns id, 0 when there are no more active namespaces. </p>
+<p>This function is thread safe and can be called at any point while the controller is attached to the SPDK NVMe driver. </p>
+
+</div>
+</div>
 <a id="a6f01fb8a5f404e41e6fa224a7942be08"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6f01fb8a5f404e41e6fa224a7942be08">&#9670;&nbsp;</a></span>spdk_nvme_ctrlr_get_ns()</h2>
 
@@ -1673,6 +1737,59 @@ int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_retry_co
 <p>Get the number of namespaces for the given NVMe controller. </p>
 <p>This function is thread safe and can be called at any point while the controller is attached to the SPDK NVMe driver.</p>
 <p>This is equivalent to calling <a class="el" href="nvme_8h.html#a5a9daf15b5008ac36c12e7b8db7bdec9" title="Get the identify controller data as defined by the NVMe specification. ">spdk_nvme_ctrlr_get_data()</a> to get the <a class="el" href="structspdk__nvme__ctrlr__data.html">spdk_nvme_ctrlr_data</a> and then reading the nn field. </p>
+
+</div>
+</div>
+<a id="a60d8173db83accb35f0c5fe1ec8261bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a60d8173db83accb35f0c5fe1ec8261bf">&#9670;&nbsp;</a></span>spdk_nvme_ctrlr_get_pci_device()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct spdk_pci_device* spdk_nvme_ctrlr_get_pci_device </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_nvme_ctrlr *&#160;</td>
+          <td class="paramname"><em>ctrlr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the PCI device of a given NVMe controller. </p>
+<dl class="section return"><dt>Returns</dt><dd>PCI device of the NVMe controller, or NULL if not available.</dd></dl>
+<p>This only works for local (PCIe-attached) NVMe controllers; other transports will return NULL. </p>
+
+</div>
+</div>
+<a id="abbcdb6e7c22b0ef87ed927bf97952c19"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abbcdb6e7c22b0ef87ed927bf97952c19">&#9670;&nbsp;</a></span>spdk_nvme_ctrlr_is_active_ns()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool spdk_nvme_ctrlr_is_active_ns </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_nvme_ctrlr *&#160;</td>
+          <td class="paramname"><em>ctrlr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>nsid</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Return true if nsid is an active ns for the given NVMe controller. </p>
+<p>This function is thread safe and can be called at any point while the controller is attached to the SPDK NVMe driver. </p>
 
 </div>
 </div>
