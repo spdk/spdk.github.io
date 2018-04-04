@@ -1,6 +1,7 @@
 ---
 layout: default
 title:  "SPDK Community"
+jsfiles: js/meetings.js
 ---
 
 # IRC
@@ -18,32 +19,37 @@ is available for usage and development questions as well as design discussions.
 
 # Community Meetings
 
-SPDK Community meetings are open to everyone and all are encouraged to participate.
+SPDK Community meetings are open to everyone and all are encouraged to
+participate. The primary purpose is to cover topics where verbal communication
+is more efficient than email or IRC. The meetings are hosted on WebEx.
 
-* Meetings are weekly, alternating time zones to accommodate our global presence.
-* Primary purpose is to cover those things where verbal communication is easier/more
-efficient than email or IRC.
-* Post any topics on [Trello](https://trello.com/b/DvM7XayJ) prior to the meeting. If you don't have a Trello login, it's free just sign up and then ask someone on IRC or on the distribution list to add you to the board.
-* If we are able to cover the posted topics before the end of the meeting we can use the time to discuss ad-hoc items.
-* Meetings will be hosted with WebEx every week alternating between Tue UTC 15:00-16:00 and Thu UTC 04:00-5:00.
+There is a community meeting each week in alternating time slots selected so
+that one week is a European-friendly time and the following week is an
+Asian-friendly time.
 
-Announcements will be made on IRC as a reminder of which meeting time we are on each week.
-
-To connect:
-
-[Euro Tue WebEx](https://intel.webex.com/intel/j.php?MTID=ma0bbb01329b3feb30a88fa38f8c60aed)
+## Next Euro-Friendly Meeting
+<div id="euro-mtg"></div>
+[Join via WebEx](https://intel.webex.com/intel/j.php?MTID=ma0bbb01329b3feb30a88fa38f8c60aed)<br/>
+Or alternatively, by phone:<br/>
++1-210-795-1110 US Toll<br/>
++1-866-662-9987 US Toll Free<br/>
 Meeting number (access code): 599 406 861
 
-[Asia Thu WebEx](https://intel.webex.com/intel/j.php?MTID=m9d66f9edca0165483a6ff8515c487381)
+## Next Asia-Friendly Meeting
+<div id="asia-mtg"></div>
+[Join via WebEx](https://intel.webex.com/intel/j.php?MTID=m9d66f9edca0165483a6ff8515c487381)<br/>
+Or alternatively, by phone:<br/>
++1-210-795-1110 US Toll<br/>
++1-866-662-9987 US Toll Free<br/>
 Meeting number (access code): 599 975 172
 
-OR
+Announcements will be made in IRC as well.
 
-Join by phone
-
-+1-210-795-1110 US Toll
-
-+1-866-662-9987 US Toll Free
+Please post proposed topics on [Trello](https://trello.com/b/DvM7XayJ) prior
+to the meeting. If you don't have a Trello login, sign up and then ask in IRC
+or on the mailing list to to be added to the board. If we are able to cover
+the posted topics before the end of the meeting we can use the time to discuss
+additional items.
 
 # Bug Reports
 
