@@ -49,18 +49,27 @@ var NAVTREE =
     ] ],
     [ "Memory Management for User Space Drivers", "memory.html", null ],
     [ "SPDK Porting Guide", "porting.html", null ],
-    [ "Block Device Layer", "bdev.html", [
-      [ "Introduction", "bdev.html#bdev_getting_started", null ],
-      [ "Configuring block devices", "bdev.html#bdev_config", [
-        [ "NVMe", "bdev.html#bdev_config_nvme", null ],
-        [ "Malloc", "bdev.html#bdev_config_malloc", null ],
-        [ "Pmem", "bdev.html#bdev_config_pmem", null ],
-        [ "Null", "bdev.html#bdev_config_null", null ],
-        [ "Linux AIO", "bdev.html#bdev_config_aio", null ],
-        [ "Ceph RBD", "bdev.html#bdev_config_rbd", null ],
-        [ "Virtio SCSI", "bdev.html#bdev_config_virtio_scsi", null ],
-        [ "GPT (GUID Partition Table)", "bdev.html#bdev_config_gpt", null ]
-      ] ]
+    [ "Block Device User Guide", "bdev.html", [
+      [ "Introduction", "bdev.html#bdev_ug_introduction", null ],
+      [ "Prerequisites", "bdev.html#bdev_ug_prerequisites", null ],
+      [ "General Purpose RPCs", "bdev.html#bdev_ug_general_rpcs", [
+        [ "get_bdevs", "bdev.html#bdev_ug_get_bdevs", null ],
+        [ "delete_bdev", "bdev.html#bdev_ug_delete_bdev", null ]
+      ] ],
+      [ "NVMe bdev", "bdev.html#bdev_config_nvme", null ],
+      [ "Null", "bdev.html#bdev_config_null", null ],
+      [ "Linux AIO bdev", "bdev.html#bdev_config_aio", null ],
+      [ "Ceph RBD", "bdev.html#bdev_config_rbd", null ],
+      [ "GPT (GUID Partition Table)", "bdev.html#bdev_config_gpt", [
+        [ "SPDK GPT partition table", "bdev.html#bdev_ug_gpt_table", null ],
+        [ "Creating a GPT partition table using NBD", "bdev.html#bdev_ug_gpt_create_part", null ]
+      ] ],
+      [ "Logical volumes", "bdev.html#bdev_ug_logical_volumes", [
+        [ "Logical volume store", "bdev.html#bdev_ug_lvol_store", null ],
+        [ "Lvols", "bdev.html#bdev_ug_lvols", null ]
+      ] ],
+      [ "Pmem", "bdev.html#bdev_config_pmem", null ],
+      [ "Virtio SCSI", "bdev.html#bdev_config_virtio_scsi", null ]
     ] ],
     [ "Writing a Custom Block Device Module", "bdev_module.html", null ],
     [ "Block Device Layer Programming Guide", "bdev_pg.html", null ],
@@ -248,21 +257,21 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "about.html",
-"copy__engine_8h.html#ad1f7515b8e6d63ac751d25aa692252e5",
-"gpt__spec_8h.html#a712447dbcf8e34bd60931db005db5094",
-"iscsi__spec_8h.html#ae6ac9b2c22c5547b05cdd34986ea96f2",
-"nvme_8h.html#a7dc6bb842e168a68972ec46cc35591ae",
-"nvme__spec_8h.html#a7e72566466cae734d999e755524f7b20",
-"nvmf_8h.html",
-"scsi_8h.html#aec3a195e1d7cb115da1d09833983db5c",
-"scsi__spec_8h.html#ac9b82b35110c44cfa49ad3b5ce89c384a09bff96f298534be6e9892ce74384475",
-"structiscsi__bhs__logout__resp.html#aeb38193b724b493a94a65a6b7229956b",
-"structspdk__gpt__guid.html#a3858a37519f6fa4adc3548f0e55da77d",
-"structspdk__mbr__partition__entry.html#ab74ba691339bc32ed6e03af6f75927a1",
-"structspdk__nvme__format.html#aea6ffab3f27af77512dd59b751d97b11",
-"structspdk__nvme__sgl__descriptor.html#a4776eedfbaaef2429f588eb537cac5a7",
-"structspdk__scsi__task.html#a7aaabb12bc0db367abb0533bc2b740ad",
-"unionspdk__nvme__feat__host__identifier.html#abe582ebd57c5130773da6ec66e49007c"
+"copy__engine_8h.html",
+"globals_eval.html",
+"iscsi__spec_8h.html#ad2c30ed17419423b79a47fae8323408aad06364a3f16234617b9e82b00ab58f05",
+"nvme_8h.html#a59e69f39c7cb8a9e1c3e00af7804c8bd",
+"nvme__spec_8h.html#a6aa934b2f75a2d0fc8a22f14627f5000a727bdfdc97bea6a6bbcb624a769826a9",
+"nvme__spec_8h.html#afa87e0a682dd2dc9aee3edca4d6bfc79",
+"scsi_8h.html#aa53c0ae5af6584eb19cfcc75799dfce8",
+"scsi__spec_8h.html#aa6d2fce08711be74571bbc61f48e9cfbae98af4e3081326e272a4201626f75626",
+"structiscsi__bhs__logout__resp.html#a060269cc1f72f1c0eff53fed568f46b5",
+"structspdk__env__opts.html",
+"structspdk__lvs__opts.html#aa8ddc17ea3ac0cf9ef7f866cf1fac3e0",
+"structspdk__nvme__firmware__page.html#a2c3c696000491150c059006729f39606",
+"structspdk__nvme__secondary__ctrl__entry.html#a73325a288bc6248e635ec1b64ad41f7a",
+"structspdk__scsi__port__desc.html#aa70015f373882ede492e8e71eec43e6d",
+"unionspdk__nvme__feat__error__recovery.html#a0098f2820ebd035f3578d6c91defc2c5"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

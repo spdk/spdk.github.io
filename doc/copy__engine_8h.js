@@ -2,6 +2,7 @@ var copy__engine_8h =
 [
     [ "spdk_copy_completion_cb", "copy__engine_8h.html#a5b9c8c2911a2249ffccce59dd510a2f0", null ],
     [ "spdk_copy_fini_cb", "copy__engine_8h.html#ad1f7515b8e6d63ac751d25aa692252e5", null ],
+    [ "spdk_copy_engine_config_text", "copy__engine_8h.html#aa76bc330bbd38a8cde10d98d4aab426d", null ],
     [ "spdk_copy_engine_finish", "copy__engine_8h.html#a9714f9a1e7231fc514f9de4585b00a0f", null ],
     [ "spdk_copy_engine_get_io_channel", "copy__engine_8h.html#a663f42c1f5cf38650bed8ab25e1c64d6", null ],
     [ "spdk_copy_engine_initialize", "copy__engine_8h.html#a15ff3d3490b8a000e7b0812319754c25", null ],

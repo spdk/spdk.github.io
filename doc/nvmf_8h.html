@@ -156,6 +156,9 @@ Data Structures</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
+<tr class="memitem:a854e30bf69f07bb06b2cbcdd08ca7eba"><td class="memItemLeft" align="right" valign="top"><a id="a854e30bf69f07bb06b2cbcdd08ca7eba"></a>
+typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvmf_tgt_listen_done_fn</b>) (void *ctx, int status)</td></tr>
+<tr class="separator:a854e30bf69f07bb06b2cbcdd08ca7eba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a83e558236353a3b94992d2e604f4b660"><td class="memItemLeft" align="right" valign="top"><a id="a83e558236353a3b94992d2e604f4b660"></a>
 typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>new_qpair_fn</b>) (struct spdk_nvmf_qpair *qpair)</td></tr>
 <tr class="separator:a83e558236353a3b94992d2e604f4b660"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -174,9 +177,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a46973ac11e8b70770b0b4cc8f65a74f7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#a46973ac11e8b70770b0b4cc8f65a74f7">spdk_nvmf_tgt_destroy</a> (struct spdk_nvmf_tgt *tgt)</td></tr>
 <tr class="memdesc:a46973ac11e8b70770b0b4cc8f65a74f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy an NVMe-oF target.  <a href="#a46973ac11e8b70770b0b4cc8f65a74f7">More...</a><br /></td></tr>
 <tr class="separator:a46973ac11e8b70770b0b4cc8f65a74f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac6b8416b526f4b1ee76abd82fe588c3b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#ac6b8416b526f4b1ee76abd82fe588c3b">spdk_nvmf_tgt_listen</a> (struct spdk_nvmf_tgt *tgt, struct <a class="el" href="structspdk__nvme__transport__id.html">spdk_nvme_transport_id</a> *trid)</td></tr>
-<tr class="memdesc:ac6b8416b526f4b1ee76abd82fe588c3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Begin accepting new connections at the address provided.  <a href="#ac6b8416b526f4b1ee76abd82fe588c3b">More...</a><br /></td></tr>
-<tr class="separator:ac6b8416b526f4b1ee76abd82fe588c3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c31e57f4634daadf4238bf213a989d6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#a2c31e57f4634daadf4238bf213a989d6">spdk_nvmf_tgt_listen</a> (struct spdk_nvmf_tgt *tgt, struct <a class="el" href="structspdk__nvme__transport__id.html">spdk_nvme_transport_id</a> *trid, spdk_nvmf_tgt_listen_done_fn cb_fn, void *cb_arg)</td></tr>
+<tr class="memdesc:a2c31e57f4634daadf4238bf213a989d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Begin accepting new connections at the address provided.  <a href="#a2c31e57f4634daadf4238bf213a989d6">More...</a><br /></td></tr>
+<tr class="separator:a2c31e57f4634daadf4238bf213a989d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaffa201e13c1a8ee55c74fc0a928908e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#aaffa201e13c1a8ee55c74fc0a928908e">spdk_nvmf_tgt_accept</a> (struct spdk_nvmf_tgt *tgt, new_qpair_fn cb_fn)</td></tr>
 <tr class="memdesc:aaffa201e13c1a8ee55c74fc0a928908e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Poll the target for incoming connections.  <a href="#aaffa201e13c1a8ee55c74fc0a928908e">More...</a><br /></td></tr>
 <tr class="separator:aaffa201e13c1a8ee55c74fc0a928908e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1867,14 +1870,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ac6b8416b526f4b1ee76abd82fe588c3b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac6b8416b526f4b1ee76abd82fe588c3b">&#9670;&nbsp;</a></span>spdk_nvmf_tgt_listen()</h2>
+<a id="a2c31e57f4634daadf4238bf213a989d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c31e57f4634daadf4238bf213a989d6">&#9670;&nbsp;</a></span>spdk_nvmf_tgt_listen()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int spdk_nvmf_tgt_listen </td>
+          <td class="memname">void spdk_nvmf_tgt_listen </td>
           <td>(</td>
           <td class="paramtype">struct spdk_nvmf_tgt *&#160;</td>
           <td class="paramname"><em>tgt</em>, </td>
@@ -1883,7 +1886,19 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">struct <a class="el" href="structspdk__nvme__transport__id.html">spdk_nvme_transport_id</a> *&#160;</td>
-          <td class="paramname"><em>trid</em>&#160;</td>
+          <td class="paramname"><em>trid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">spdk_nvmf_tgt_listen_done_fn&#160;</td>
+          <td class="paramname"><em>cb_fn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>cb_arg</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1898,11 +1913,13 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">tgt</td><td>The target associated with this listen address. </td></tr>
-    <tr><td class="paramname">trid</td><td>The address to listen at.</td></tr>
+    <tr><td class="paramname">trid</td><td>The address to listen at. </td></tr>
+    <tr><td class="paramname">cb_fn</td><td>A callback that will be called once the target is listening </td></tr>
+    <tr><td class="paramname">cb_arg</td><td>A context argument passed to cb_fn.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>0 on success, or negated errno on failure. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>void. The callback status argument will be 0 on success or a negated errno on failure. </dd></dl>
 
 </div>
 </div>
