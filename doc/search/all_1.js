@@ -1,7 +1,7 @@
 var searchData=
 [
   ['barrier_2eh',['barrier.h',['../barrier_8h.html',1,'']]],
-  ['block_20device_20layer',['Block Device Layer',['../bdev.html',1,'']]],
+  ['block_20device_20user_20guide',['Block Device User Guide',['../bdev.html',1,'']]],
   ['bdev_2eh',['bdev.h',['../bdev_8h.html',1,'']]],
   ['block_20device_20layer_20programming_20guide',['Block Device Layer Programming Guide',['../bdev_pg.html',1,'']]],
   ['bir',['bir',['../unionspdk__nvme__cmbloc__register.html#a7a72b6bb85d7c446b0ad55f74d91e13a',1,'spdk_nvme_cmbloc_register']]],
