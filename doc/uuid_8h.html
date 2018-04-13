@@ -205,7 +205,14 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Compare two UUIDs. </p>
-<dl class="section return"><dt>Returns</dt><dd>0 if u1 == u2, less than 0 if u1 &lt; u2, greater than 0 if u1 &gt; u2 </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">u1</td><td>UUID 1. </td></tr>
+    <tr><td class="paramname">u2</td><td>UUID 2.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 if u1 == u2, less than 0 if u1 &lt; u2, greater than 0 if u1 &gt; u2. </dd></dl>
 
 </div>
 </div>
@@ -246,10 +253,11 @@ Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">uuid_str</td><td>User-provided string buffer to write the textual format into. </td></tr>
     <tr><td class="paramname">uuid_str_size</td><td>Size of uuid_str buffer. Must be at least SPDK_UUID_STRING_LEN. </td></tr>
-    <tr><td class="paramname">uuid</td><td>UUID to convert to textual format. </td></tr>
+    <tr><td class="paramname">uuid</td><td>UUID to convert to textual format.</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, or negative errno on failure. </dd></dl>
 
 </div>
 </div>
@@ -309,11 +317,11 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">uuid[output]</td><td>User-provided UUID buffer. </td></tr>
-    <tr><td class="paramname">uuid_str</td><td>UUID in textual format in C string. </td></tr>
+    <tr><td class="paramname">uuid_str</td><td>UUID in textual format in C string.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>0 on success, or negated errno on failure. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, or negative errno on failure. </dd></dl>
 
 </div>
 </div>

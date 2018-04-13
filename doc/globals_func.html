@@ -384,7 +384,7 @@ $(document).ready(function(){initNavTree('globals_func.html','');});
 : <a class="el" href="blob_8h.html#a5c836667ea7f3c5fa5b2e3bf486d8428">blob.h</a>
 </li>
 <li>spdk_blob_resize()
-: <a class="el" href="blob_8h.html#ac8662f67fcfa44a0bdad4c9f8c92743f">blob.h</a>
+: <a class="el" href="blob_8h.html#a70993dda1206b4c0aaa76deb2b6fd13c">blob.h</a>
 </li>
 <li>spdk_blob_set_read_only()
 : <a class="el" href="blob_8h.html#a1ea6db893423c045b8a40d1f0d0bd128">blob.h</a>
@@ -749,17 +749,8 @@ $(document).ready(function(){initNavTree('globals_func.html','');});
 <li>spdk_get_ticks_hz()
 : <a class="el" href="env_8h.html#a0e7d0eb3000d71b588486cf9903cd434">env.h</a>
 </li>
-<li>spdk_interface_add_ip_address()
-: <a class="el" href="net_8h.html#a23d5a1a596ae27eb94e15674951860c6">net.h</a>
-</li>
-<li>spdk_interface_delete_ip_address()
-: <a class="el" href="net_8h.html#ae2e8b7fb5a01af8ef67bb5052f95dda8">net.h</a>
-</li>
 <li>spdk_interface_destroy()
 : <a class="el" href="net_8h.html#af43d41aa26eb866db7cdb63b69eb7bb5">net.h</a>
-</li>
-<li>spdk_interface_get_list()
-: <a class="el" href="net_8h.html#a7553793cb13904a776d6a0a0cac2377b">net.h</a>
 </li>
 <li>spdk_interface_init()
 : <a class="el" href="net_8h.html#a8ddcb56f1e677b845c5ebd5363002fb5">net.h</a>
@@ -842,6 +833,12 @@ $(document).ready(function(){initNavTree('globals_func.html','');});
 <li>spdk_jsonrpc_server_shutdown()
 : <a class="el" href="jsonrpc_8h.html#aa7d4f7ed2234b0cd20e3c87685030b2f">jsonrpc.h</a>
 </li>
+<li>spdk_log()
+: <a class="el" href="log_8h.html#aaa20a1f56503b0d9f16c82b451fb338b">log.h</a>
+</li>
+<li>spdk_log_clear_trace_flag()
+: <a class="el" href="log_8h.html#a5492feb5ef1c11d89bed4ccf3e8135c8">log.h</a>
+</li>
 <li>spdk_log_close()
 : <a class="el" href="log_8h.html#a41cdc17423a58c475fa785fd491f00e9">log.h</a>
 </li>
@@ -850,6 +847,9 @@ $(document).ready(function(){initNavTree('globals_func.html','');});
 </li>
 <li>spdk_log_get_print_level()
 : <a class="el" href="log_8h.html#a880b1e27d71328429dbf4f65e02ff145">log.h</a>
+</li>
+<li>spdk_log_get_trace_flag()
+: <a class="el" href="log_8h.html#af31998ef403c5644e063654474db451e">log.h</a>
 </li>
 <li>spdk_log_open()
 : <a class="el" href="log_8h.html#a83352187f63ade8829ca300fc7eacd54">log.h</a>
@@ -860,11 +860,20 @@ $(document).ready(function(){initNavTree('globals_func.html','');});
 <li>spdk_log_set_print_level()
 : <a class="el" href="log_8h.html#ab34f1c87d98113395ab04415dbee96d8">log.h</a>
 </li>
+<li>spdk_log_set_trace_flag()
+: <a class="el" href="log_8h.html#a98ae1f95b60b386a84b4144cf756d7a3">log.h</a>
+</li>
 <li>spdk_lvol_close()
 : <a class="el" href="lvol_8h.html#a89835586bb7e2e6e78bd0e4cd4c4d45b">lvol.h</a>
 </li>
 <li>spdk_lvol_create()
 : <a class="el" href="lvol_8h.html#a4c609283ea9561451679c0813c71d06b">lvol.h</a>
+</li>
+<li>spdk_lvol_create_clone()
+: <a class="el" href="lvol_8h.html#a2dfba2354de69f535ab0c39693c9ae73">lvol.h</a>
+</li>
+<li>spdk_lvol_create_snapshot()
+: <a class="el" href="lvol_8h.html#ab7a0818546003c24d2236c1f201fdf28">lvol.h</a>
 </li>
 <li>spdk_lvol_destroy()
 : <a class="el" href="lvol_8h.html#a87c4dadc88c211fb4e8ba0cddc474032">lvol.h</a>
@@ -1535,6 +1544,9 @@ $(document).ready(function(){initNavTree('globals_func.html','');});
 <li>spdk_trace_clear_tpoints()
 : <a class="el" href="trace_8h.html#a7ecb50e2b95e9c75eeddd9884ec0aafe">trace.h</a>
 </li>
+<li>spdk_trace_dump()
+: <a class="el" href="log_8h.html#aec3839ea313ef38de623b982b1cdf603">log.h</a>
+</li>
 <li>spdk_trace_flags_init()
 : <a class="el" href="trace_8h.html#a5cab6a78e0ce33319f02ea03ba221fc1">trace.h</a>
 </li>
@@ -1564,6 +1576,9 @@ $(document).ready(function(){initNavTree('globals_func.html','');});
 </li>
 <li>spdk_trace_set_tpoints()
 : <a class="el" href="trace_8h.html#a6f2131f1fc35d495f51552eb2838630b">trace.h</a>
+</li>
+<li>spdk_tracelog_usage()
+: <a class="el" href="log_8h.html#a4a47d01813ce878b34c146b32f106616">log.h</a>
 </li>
 <li>spdk_u32_is_pow2()
 : <a class="el" href="util_8h.html#a63e2af9bd97c1250c11a2e585336f377">util.h</a>

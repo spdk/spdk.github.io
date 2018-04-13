@@ -231,8 +231,8 @@ Lvols</h2>
 <p><code>rpc.py construct_lvol_bdev lvol2 25 -u 330a6ab2-f468-11e7-983e-001e67edf35d</code></p>
 <h1><a class="anchor" id="bdev_config_pmem"></a>
 Pmem</h1>
-<p>The SPDK pmem bdev driver uses pmemblk pool as the target for block I/O operations. For details on Pmem memory please refer to PMDK documentation on <a href="http://pmem.io">http://pmem.io</a> website. First, user needs to compile SPDK with NVML library:</p>
-<p><code>configure --with-nvml</code></p>
+<p>The SPDK pmem bdev driver uses pmemblk pool as the target for block I/O operations. For details on Pmem memory please refer to PMDK documentation on <a href="http://pmem.io">http://pmem.io</a> website. First, user needs to configure SPDK to include PMDK support:</p>
+<p><code>configure --with-pmdk</code></p>
 <p>To create pmemblk pool for use with SPDK user should use <code>create_pmem_pool</code> RPC command.</p>
 <p>Example command</p>
 <p><code>rpc.py create_pmem_pool /path/to/pmem_pool 25 4096</code></p>

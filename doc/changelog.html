@@ -160,7 +160,7 @@ v18.04: (Upcoming Release)</h1>
 <li>spdk_bs_io_write_zeroes_blob() =&gt; <a class="el" href="blob_8h.html#a0291498c4cac92556e0e7e7bf286bda6" title="Write zeros into area of a blob. ">spdk_blob_io_write_zeroes()</a></li>
 </ul>
 <p>The old names still exist but are deprecated. They will be removed in the v18.07 release.</p>
-<p><a class="el" href="blob_8h.html#ac8662f67fcfa44a0bdad4c9f8c92743f" title="Resize a blob to &#39;sz&#39; clusters. ">spdk_blob_resize()</a> is now an asynchronous operation to enable resizing a blob while I/O are in progress to that blob on other threads. An explicit <a class="el" href="blob_8h.html#a5acc48debefc30773518871e4f84480f" title="Sync a blob. ">spdk_blob_sync_md()</a> is still required to sync the updated metadata to disk.</p>
+<p><a class="el" href="blob_8h.html#a70993dda1206b4c0aaa76deb2b6fd13c" title="Resize a blob to &#39;sz&#39; clusters. ">spdk_blob_resize()</a> is now an asynchronous operation to enable resizing a blob while I/O are in progress to that blob on other threads. An explicit <a class="el" href="blob_8h.html#a5acc48debefc30773518871e4f84480f" title="Sync a blob. ">spdk_blob_sync_md()</a> is still required to sync the updated metadata to disk.</p>
 <h2>Lib</h2>
 <p>A set of changes were made in the SPDK's lib code altering, instances of calls to <code>exit()</code> and <code>abort()</code> to return a failure instead wherever reasonably possible.</p>
 <p><a class="el" href="event_8h.html#a18879873a585b21f44b7c90be8726ce1" title="Start the framework. ">spdk_app_start()</a> no longer exit()'s on an internal failure, but instead returns a non-zero error status.</p>
@@ -170,6 +170,8 @@ v18.04: (Upcoming Release)</h1>
 <p>The prototype for <a class="el" href="io__channel_8h.html#a35c421accdc2a0a61bb7be916106293b" title="Callback function for a poller. ">spdk_poller_fn()</a> has been modified; it now returns a value indicating whether or not the poller did any work. Existing pollers will need to be updated to return a value.</p>
 <h2>iSCSI initiator</h2>
 <p>An iSCSI initiator bdev module has been added to SPDK. This module should be considered experimental pending additional features and tests. More details can be found in lib/bdev/iscsi/README.</p>
+<h2>PMDK</h2>
+<p>The persistent memory (PMDK) bdev module is now enabled using &ndash;with-pmdk instead of &ndash;with-nvml. This reflects the renaming of the persistent memory library from NVML to PMDK.</p>
 <h1><a class="anchor" id="changelog-v18-01"></a>
 v18.01: Blobstore Thin Provisioning</h1>
 <h2>Build System</h2>
@@ -195,7 +197,7 @@ v18.01: Blobstore Thin Provisioning</h1>
 <h2>Blobstore</h2>
 <p>A number of functions have been renamed:</p>
 <ul>
-<li>spdk_bs_md_resize_blob() =&gt; <a class="el" href="blob_8h.html#ac8662f67fcfa44a0bdad4c9f8c92743f" title="Resize a blob to &#39;sz&#39; clusters. ">spdk_blob_resize()</a></li>
+<li>spdk_bs_md_resize_blob() =&gt; <a class="el" href="blob_8h.html#a70993dda1206b4c0aaa76deb2b6fd13c" title="Resize a blob to &#39;sz&#39; clusters. ">spdk_blob_resize()</a></li>
 <li>spdk_bs_md_sync_blob() =&gt; <a class="el" href="blob_8h.html#a5acc48debefc30773518871e4f84480f" title="Sync a blob. ">spdk_blob_sync_md()</a></li>
 <li>spdk_bs_md_close_blob() =&gt; <a class="el" href="blob_8h.html#ac6ca1e83e9608eb1dea9fca62881d350" title="Close a blob. ">spdk_blob_close()</a></li>
 <li>spdk_bs_md_get_xattr_names() =&gt; <a class="el" href="blob_8h.html#ab9b3d20a4be55b2c2ba046a2ccfe7233" title="Iterate through all extended attributes of the blob. ">spdk_blob_get_xattr_names()</a></li>
@@ -258,7 +260,7 @@ v17.10: Logical Volumes</h1>
 <h2>Event Framework</h2>
 <p>The ability to set a thread name, previously only used by the reactor code, is now part of the spdk_thread_allocate() API. Users may specify a thread name which will show up in tools like <code>gdb</code>.</p>
 <h2>Log</h2>
-<p>The spdk_trace_dump() function now takes a new parameter to allow the caller to specify an output file handle (stdout or stderr, for example).</p>
+<p>The <a class="el" href="log_8h.html#aec3839ea313ef38de623b982b1cdf603" title="Dump the trace to a file. ">spdk_trace_dump()</a> function now takes a new parameter to allow the caller to specify an output file handle (stdout or stderr, for example).</p>
 <h2>Logical Volumes</h2>
 <p>Logical volumes library built on top of SPDK blobstore has been added. It is possible to create logical volumes on top of other devices using RPC.</p>
 <p>See the <a href="http://www.spdk.io/doc/logical_volumes.html">logical volumes</a> documentation for more information.</p>
