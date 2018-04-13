@@ -197,6 +197,12 @@ Functions</h2></td></tr>
 <tr class="memitem:a4c609283ea9561451679c0813c71d06b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lvol_8h.html#a4c609283ea9561451679c0813c71d06b">spdk_lvol_create</a> (struct spdk_lvol_store *lvs, const char *name, uint64_t sz, bool thin_provisioned, <a class="el" href="lvol_8h.html#a453c8a7896aafb644e21e1e960ab3759">spdk_lvol_op_with_handle_complete</a> cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:a4c609283ea9561451679c0813c71d06b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create lvol on given lvolstore with specified size.  <a href="#a4c609283ea9561451679c0813c71d06b">More...</a><br /></td></tr>
 <tr class="separator:a4c609283ea9561451679c0813c71d06b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7a0818546003c24d2236c1f201fdf28"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lvol_8h.html#ab7a0818546003c24d2236c1f201fdf28">spdk_lvol_create_snapshot</a> (struct spdk_lvol *lvol, const char *snapshot_name, <a class="el" href="lvol_8h.html#a453c8a7896aafb644e21e1e960ab3759">spdk_lvol_op_with_handle_complete</a> cb_fn, void *cb_arg)</td></tr>
+<tr class="memdesc:ab7a0818546003c24d2236c1f201fdf28"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create snapshot of given lvol.  <a href="#ab7a0818546003c24d2236c1f201fdf28">More...</a><br /></td></tr>
+<tr class="separator:ab7a0818546003c24d2236c1f201fdf28"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2dfba2354de69f535ab0c39693c9ae73"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lvol_8h.html#a2dfba2354de69f535ab0c39693c9ae73">spdk_lvol_create_clone</a> (struct spdk_lvol *lvol, const char *clone_name, <a class="el" href="lvol_8h.html#a453c8a7896aafb644e21e1e960ab3759">spdk_lvol_op_with_handle_complete</a> cb_fn, void *cb_arg)</td></tr>
+<tr class="memdesc:a2dfba2354de69f535ab0c39693c9ae73"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create clone of given snapshot.  <a href="#a2dfba2354de69f535ab0c39693c9ae73">More...</a><br /></td></tr>
+<tr class="separator:a2dfba2354de69f535ab0c39693c9ae73"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3d5d8be84217db4879d5bf79fa5c23f6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lvol_8h.html#a3d5d8be84217db4879d5bf79fa5c23f6">spdk_lvol_rename</a> (struct spdk_lvol *lvol, const char *new_name, <a class="el" href="lvol_8h.html#a4d5c96c4fe4512f99dcb3f1e5d5e86be">spdk_lvol_op_complete</a> cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:a3d5d8be84217db4879d5bf79fa5c23f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Renames lvol with new_name.  <a href="#a3d5d8be84217db4879d5bf79fa5c23f6">More...</a><br /></td></tr>
 <tr class="separator:a3d5d8be84217db4879d5bf79fa5c23f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -421,6 +427,108 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_lvol_open</b> (s
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>error </dd></dl>
+
+</div>
+</div>
+<a id="a2dfba2354de69f535ab0c39693c9ae73"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2dfba2354de69f535ab0c39693c9ae73">&#9670;&nbsp;</a></span>spdk_lvol_create_clone()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_lvol_create_clone </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_lvol *&#160;</td>
+          <td class="paramname"><em>lvol</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>clone_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="lvol_8h.html#a453c8a7896aafb644e21e1e960ab3759">spdk_lvol_op_with_handle_complete</a>&#160;</td>
+          <td class="paramname"><em>cb_fn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>cb_arg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Create clone of given snapshot. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">lvol</td><td>Handle to lvol snapshot </td></tr>
+    <tr><td class="paramname">clone_name</td><td>Name of created clone </td></tr>
+    <tr><td class="paramname">cb_fn</td><td>Completion callback </td></tr>
+    <tr><td class="paramname">cb_arg</td><td>Completion callback custom arguments </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ab7a0818546003c24d2236c1f201fdf28"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab7a0818546003c24d2236c1f201fdf28">&#9670;&nbsp;</a></span>spdk_lvol_create_snapshot()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_lvol_create_snapshot </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_lvol *&#160;</td>
+          <td class="paramname"><em>lvol</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>snapshot_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="lvol_8h.html#a453c8a7896aafb644e21e1e960ab3759">spdk_lvol_op_with_handle_complete</a>&#160;</td>
+          <td class="paramname"><em>cb_fn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>cb_arg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Create snapshot of given lvol. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">lvol</td><td>Handle to lvol </td></tr>
+    <tr><td class="paramname">snapshot_name</td><td>Name of created snapshot </td></tr>
+    <tr><td class="paramname">cb_fn</td><td>Completion callback </td></tr>
+    <tr><td class="paramname">cb_arg</td><td>Completion callback custom arguments </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

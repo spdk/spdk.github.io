@@ -260,9 +260,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a2c60e6bc3ccd26228dec2c0f3ecfe618"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blob_8h.html#a2c60e6bc3ccd26228dec2c0f3ecfe618">spdk_bs_open_blob</a> (struct spdk_blob_store *bs, spdk_blob_id blobid, spdk_blob_op_with_handle_complete cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:a2c60e6bc3ccd26228dec2c0f3ecfe618"><td class="mdescLeft">&#160;</td><td class="mdescRight">Open a blob from the given blobstore.  <a href="#a2c60e6bc3ccd26228dec2c0f3ecfe618">More...</a><br /></td></tr>
 <tr class="separator:a2c60e6bc3ccd26228dec2c0f3ecfe618"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac8662f67fcfa44a0bdad4c9f8c92743f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blob_8h.html#ac8662f67fcfa44a0bdad4c9f8c92743f">spdk_blob_resize</a> (struct spdk_blob *blob, size_t sz, spdk_blob_op_complete cb_fn, void *cb_arg)</td></tr>
-<tr class="memdesc:ac8662f67fcfa44a0bdad4c9f8c92743f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resize a blob to 'sz' clusters.  <a href="#ac8662f67fcfa44a0bdad4c9f8c92743f">More...</a><br /></td></tr>
-<tr class="separator:ac8662f67fcfa44a0bdad4c9f8c92743f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70993dda1206b4c0aaa76deb2b6fd13c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blob_8h.html#a70993dda1206b4c0aaa76deb2b6fd13c">spdk_blob_resize</a> (struct spdk_blob *blob, uint64_t sz, spdk_blob_op_complete cb_fn, void *cb_arg)</td></tr>
+<tr class="memdesc:a70993dda1206b4c0aaa76deb2b6fd13c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resize a blob to 'sz' clusters.  <a href="#a70993dda1206b4c0aaa76deb2b6fd13c">More...</a><br /></td></tr>
+<tr class="separator:a70993dda1206b4c0aaa76deb2b6fd13c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1ea6db893423c045b8a40d1f0d0bd128"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blob_8h.html#a1ea6db893423c045b8a40d1f0d0bd128">spdk_blob_set_read_only</a> (struct spdk_blob *blob)</td></tr>
 <tr class="memdesc:a1ea6db893423c045b8a40d1f0d0bd128"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set blob as read only.  <a href="#a1ea6db893423c045b8a40d1f0d0bd128">More...</a><br /></td></tr>
 <tr class="separator:a1ea6db893423c045b8a40d1f0d0bd128"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1070,8 +1070,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bs_io_write_zero
 
 </div>
 </div>
-<a id="ac8662f67fcfa44a0bdad4c9f8c92743f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac8662f67fcfa44a0bdad4c9f8c92743f">&#9670;&nbsp;</a></span>spdk_blob_resize()</h2>
+<a id="a70993dda1206b4c0aaa76deb2b6fd13c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a70993dda1206b4c0aaa76deb2b6fd13c">&#9670;&nbsp;</a></span>spdk_blob_resize()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1085,7 +1085,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bs_io_write_zero
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">size_t&#160;</td>
+          <td class="paramtype">uint64_t&#160;</td>
           <td class="paramname"><em>sz</em>, </td>
         </tr>
         <tr>
