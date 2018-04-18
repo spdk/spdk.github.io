@@ -140,6 +140,8 @@ $(document).ready(function(){initNavTree('changelog.html','');});
 <div class="contents">
 <div class="textblock"><h1><a class="anchor" id="changelog-v18-04"></a>
 v18.04: (Upcoming Release)</h1>
+<h2>Bdev</h2>
+<p>Add new optional bdev module interface function, init_complete, to notify bdev modules when the bdev subsystem initialization is complete. Useful for virtual bdevs that require notification that the set of initialization examine() calls is complete.</p>
 <h2>RPC</h2>
 <p>The Rpc configuration file section, which was deprecated in v18.01, has been removed. Users should switch to the <code>-r</code> command-line parameter instead.</p>
 <p>The JSON-RPC server implementation now allows up to 32 megabyte responses, growing as needed; previously, the response was limited to 32 kilobytes.</p>
@@ -149,6 +151,7 @@ v18.04: (Upcoming Release)</h1>
 <p>Added <a class="el" href="nvme_8h.html#a59e69f39c7cb8a9e1c3e00af7804c8bd" title="Return the nsid of the first active namespace, 0 if there are no active namespaces. ">spdk_nvme_ctrlr_get_first_active_ns()</a> and <a class="el" href="nvme_8h.html#abcd528b0df0a564c218dc2745c3af159" title="Return a next active namespace given the previous ns id, 0 when there are no more active namespaces...">spdk_nvme_ctrlr_get_next_active_ns()</a> to iterate active namespaces and <a class="el" href="nvme_8h.html#abbcdb6e7c22b0ef87ed927bf97952c19" title="Return true if nsid is an active ns for the given NVMe controller. ">spdk_nvme_ctrlr_is_active_ns()</a> to check if a ns id is active.</p>
 <h2>NVMe-oF Target</h2>
 <p>Namespaces may now be assigned unique identifiers via new optional "eui64" and "nguid" parameters to the <code>nvmf_subsystem_add_ns</code> RPC method.</p>
+<p><code>spdk_nvmf_subsystem_remove_ns</code> is now asynchronous and requires two additional arguments, cb_fn and cb_arg. cb_fn is a function pointer of type spdk_channel_for_each_cpl and cb_arg is a void pointer.</p>
 <h2>Blobstore</h2>
 <p>A number of functions have been renamed:</p>
 <ul>

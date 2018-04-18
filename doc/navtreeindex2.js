@@ -1,8 +1,10 @@
 var NAVTREEINDEX2 =
 {
+"globals_defs.html":[29,1,5],
+"globals_enum.html":[29,1,3],
 "globals_eval.html":[29,1,4],
-"globals_func.html":[29,1,1],
 "globals_func.html":[29,1,1,0],
+"globals_func.html":[29,1,1],
 "globals_s.html":[29,1,0,1],
 "globals_type.html":[29,1,2],
 "gpt__spec_8h.html":[29,0,16],
@@ -247,7 +249,5 @@ var NAVTREEINDEX2 =
 "iscsi__spec_8h.html#ad2c30ed17419423b79a47fae8323408aaa11179afd954aeeeadb459ef6391b5ba":[29,0,21,93,13],
 "iscsi__spec_8h.html#ad2c30ed17419423b79a47fae8323408aaa83ae84a485fd5d432afea2a82e79400":[29,0,21,93,19],
 "iscsi__spec_8h.html#ad2c30ed17419423b79a47fae8323408aaab4b714fcb61a3340155f9965dd72fff":[29,0,21,93,17],
-"iscsi__spec_8h.html#ad2c30ed17419423b79a47fae8323408aaaee5600a75ae650f611d1820caf8f202":[29,0,21,93,9],
-"iscsi__spec_8h.html#ad2c30ed17419423b79a47fae8323408aac88669cc577d85b32c16ef7f9dcf0dc2":[29,0,21,93,7],
-"iscsi__spec_8h.html#ad2c30ed17419423b79a47fae8323408aac9e74a154af5aafeec28dd392404ece9":[29,0,21,93,10]
+"iscsi__spec_8h.html#ad2c30ed17419423b79a47fae8323408aaaee5600a75ae650f611d1820caf8f202":[29,0,21,93,9]
 };
