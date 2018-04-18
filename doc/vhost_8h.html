@@ -166,6 +166,9 @@ Functions</h2></td></tr>
 <tr class="memitem:af358eac95a16bd456349fcfaa00379bb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vhost_8h.html#af358eac95a16bd456349fcfaa00379bb">spdk_vhost_fini</a> (<a class="el" href="vhost_8h.html#a8b37106ad173f20d05da87f89714700b">spdk_vhost_fini_cb</a> fini_cb)</td></tr>
 <tr class="memdesc:af358eac95a16bd456349fcfaa00379bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clean up the environment of vhost after finishing the vhost application.  <a href="#af358eac95a16bd456349fcfaa00379bb">More...</a><br /></td></tr>
 <tr class="separator:af358eac95a16bd456349fcfaa00379bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39b809e050d9157d2b85cd01673bccb9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vhost_8h.html#a39b809e050d9157d2b85cd01673bccb9">spdk_vhost_config_json</a> (struct spdk_json_write_ctx *w, struct spdk_event *done_ev)</td></tr>
+<tr class="memdesc:a39b809e050d9157d2b85cd01673bccb9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write vhost subsystem configuration into provided JSON context.  <a href="#a39b809e050d9157d2b85cd01673bccb9">More...</a><br /></td></tr>
+<tr class="separator:a39b809e050d9157d2b85cd01673bccb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afd7159f8eb1e0d65dad5bedaa6cc5e43"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vhost_8h.html#afd7159f8eb1e0d65dad5bedaa6cc5e43">spdk_vhost_shutdown_cb</a> (void)</td></tr>
 <tr class="memdesc:afd7159f8eb1e0d65dad5bedaa6cc5e43"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deinit vhost application.  <a href="#afd7159f8eb1e0d65dad5bedaa6cc5e43">More...</a><br /></td></tr>
 <tr class="separator:afd7159f8eb1e0d65dad5bedaa6cc5e43"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -395,6 +398,43 @@ Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">fn</td><td>function to be called for each vdev. The first param will be either vdev pointer or NULL. The second param is user provided argument <em>arg</em>. </td></tr>
     <tr><td class="paramname">arg</td><td>parameter to be passed to <em>fn</em>. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a39b809e050d9157d2b85cd01673bccb9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a39b809e050d9157d2b85cd01673bccb9">&#9670;&nbsp;</a></span>spdk_vhost_config_json()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_vhost_config_json </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_json_write_ctx *&#160;</td>
+          <td class="paramname"><em>w</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct spdk_event *&#160;</td>
+          <td class="paramname"><em>done_ev</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Write vhost subsystem configuration into provided JSON context. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">w</td><td>JSON write context </td></tr>
+    <tr><td class="paramname">done_ev</td><td>call this event when done. </td></tr>
   </table>
   </dd>
 </dl>

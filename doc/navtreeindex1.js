@@ -1,5 +1,7 @@
 var NAVTREEINDEX1 =
 {
+"conf_8h.html#adf0cf8d93adadd85dedd3c24004fc67e":[29,0,7,0],
+"conf_8h.html#aff953daa748287171dadcd8ecdfae6c9":[29,0,7,9],
 "copy__engine_8h.html":[29,0,8],
 "copy__engine_8h.html#a078d8b66e4cd51219f42ad59f2ddd4b1":[29,0,8,7],
 "copy__engine_8h.html#a15ff3d3490b8a000e7b0812319754c25":[29,0,8,5],
@@ -247,7 +249,5 @@ var NAVTREEINDEX1 =
 "getting_started.html#getting_started_source":[5,0],
 "getting_started.html#getting_started_unittests":[5,3],
 "globals.html":[29,1,0],
-"globals.html":[29,1,0,0],
-"globals_defs.html":[29,1,5],
-"globals_enum.html":[29,1,3]
+"globals.html":[29,1,0,0]
 };

@@ -254,6 +254,12 @@ Functions</h2></td></tr>
 <tr class="memitem:a73e90ac081ca6c0819940cac7ba35b87"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blob_8h.html#a73e90ac081ca6c0819940cac7ba35b87">spdk_bs_create_clone</a> (struct spdk_blob_store *bs, spdk_blob_id blobid, const struct <a class="el" href="structspdk__blob__xattr__opts.html">spdk_blob_xattr_opts</a> *clone_xattrs, spdk_blob_op_with_id_complete cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:a73e90ac081ca6c0819940cac7ba35b87"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a clone of specified read-only blob.  <a href="#a73e90ac081ca6c0819940cac7ba35b87">More...</a><br /></td></tr>
 <tr class="separator:a73e90ac081ca6c0819940cac7ba35b87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee905d8842cf578dabd897ae68acc142"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blob_8h.html#aee905d8842cf578dabd897ae68acc142">spdk_blob_is_read_only</a> (struct spdk_blob *blob)</td></tr>
+<tr class="memdesc:aee905d8842cf578dabd897ae68acc142"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if blob is read only.  <a href="#aee905d8842cf578dabd897ae68acc142">More...</a><br /></td></tr>
+<tr class="separator:aee905d8842cf578dabd897ae68acc142"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6487dda0466021c6058beae2e855d8e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blob_8h.html#ae6487dda0466021c6058beae2e855d8e">spdk_blob_is_thin_provisioned</a> (struct spdk_blob *blob)</td></tr>
+<tr class="memdesc:ae6487dda0466021c6058beae2e855d8e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if blob is thin-provisioned.  <a href="#ae6487dda0466021c6058beae2e855d8e">More...</a><br /></td></tr>
+<tr class="separator:ae6487dda0466021c6058beae2e855d8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aed4fb5871f9ca58ff60c0dd8810eb223"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blob_8h.html#aed4fb5871f9ca58ff60c0dd8810eb223">spdk_bs_delete_blob</a> (struct spdk_blob_store *bs, spdk_blob_id blobid, spdk_blob_op_complete cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:aed4fb5871f9ca58ff60c0dd8810eb223"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delete an existing blob from the given blobstore.  <a href="#aed4fb5871f9ca58ff60c0dd8810eb223">More...</a><br /></td></tr>
 <tr class="separator:aed4fb5871f9ca58ff60c0dd8810eb223"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1003,6 +1009,60 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bs_io_write_zero
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="aee905d8842cf578dabd897ae68acc142"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aee905d8842cf578dabd897ae68acc142">&#9670;&nbsp;</a></span>spdk_blob_is_read_only()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool spdk_blob_is_read_only </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_blob *&#160;</td>
+          <td class="paramname"><em>blob</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Check if blob is read only. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">blob</td><td>Blob.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if blob is read only. </dd></dl>
+
+</div>
+</div>
+<a id="ae6487dda0466021c6058beae2e855d8e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae6487dda0466021c6058beae2e855d8e">&#9670;&nbsp;</a></span>spdk_blob_is_thin_provisioned()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool spdk_blob_is_thin_provisioned </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_blob *&#160;</td>
+          <td class="paramname"><em>blob</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Check if blob is thin-provisioned. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">blob</td><td>Blob.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if blob is thin-provisioned. </dd></dl>
 
 </div>
 </div>

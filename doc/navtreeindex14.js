@@ -1,5 +1,7 @@
 var NAVTREEINDEX14 =
 {
+"structspdk__scsi__task.html#a31f83a16a11e3e1e0465bc637b799147":[28,0,151,15],
+"structspdk__scsi__task.html#a355593ecb799474a678aacecf4878d31":[28,0,151,17],
 "structspdk__scsi__task.html#a35a178efb7ff870fe0039196c3be720d":[28,0,151,1],
 "structspdk__scsi__task.html#a4b21109abfb9acba99a0a20a242aef30":[28,0,151,18],
 "structspdk__scsi__task.html#a515144ee5e35f8b863d45623c0b9538e":[28,0,151,14],
@@ -247,7 +249,5 @@ var NAVTREEINDEX14 =
 "unionspdk__nvme__feat__error__recovery.html#ab5a2e6ab3de7f3011338acb2289817bd":[28,0,77,4],
 "unionspdk__nvme__feat__error__recovery.html#ae572c4a161ba9dcd9f26129dcb926fc3":[28,0,77,3],
 "unionspdk__nvme__feat__host__controlled__thermal__management.html":[28,0,78],
-"unionspdk__nvme__feat__host__controlled__thermal__management.html#a196363adf5f14463140d5c3d7d7a0564":[28,0,78,2],
-"unionspdk__nvme__feat__host__controlled__thermal__management.html#a683af96774029ba95fcbb43ef78d487e":[28,0,78,3],
-"unionspdk__nvme__feat__host__controlled__thermal__management.html#aa067b8199b19768c70e42596b0dbfaf6":[28,0,78,0]
+"unionspdk__nvme__feat__host__controlled__thermal__management.html#a196363adf5f14463140d5c3d7d7a0564":[28,0,78,2]
 };
