@@ -254,9 +254,21 @@ Functions</h2></td></tr>
 <tr class="memitem:a73e90ac081ca6c0819940cac7ba35b87"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blob_8h.html#a73e90ac081ca6c0819940cac7ba35b87">spdk_bs_create_clone</a> (struct spdk_blob_store *bs, spdk_blob_id blobid, const struct <a class="el" href="structspdk__blob__xattr__opts.html">spdk_blob_xattr_opts</a> *clone_xattrs, spdk_blob_op_with_id_complete cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:a73e90ac081ca6c0819940cac7ba35b87"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a clone of specified read-only blob.  <a href="#a73e90ac081ca6c0819940cac7ba35b87">More...</a><br /></td></tr>
 <tr class="separator:a73e90ac081ca6c0819940cac7ba35b87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1482c72fb9cb040999a376096d3e7caf"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blob_8h.html#a1482c72fb9cb040999a376096d3e7caf">spdk_blob_get_clones</a> (struct spdk_blob_store *bs, spdk_blob_id blobid, spdk_blob_id *ids, size_t *count)</td></tr>
+<tr class="memdesc:a1482c72fb9cb040999a376096d3e7caf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provide table with blob id's of clones are dependent on specified snapshot.  <a href="#a1482c72fb9cb040999a376096d3e7caf">More...</a><br /></td></tr>
+<tr class="separator:a1482c72fb9cb040999a376096d3e7caf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13a4adbf4025d355432c11c72498054a"><td class="memItemLeft" align="right" valign="top">spdk_blob_id&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blob_8h.html#a13a4adbf4025d355432c11c72498054a">spdk_blob_get_parent_snapshot</a> (struct spdk_blob_store *bs, spdk_blob_id blobid)</td></tr>
+<tr class="memdesc:a13a4adbf4025d355432c11c72498054a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the blob id for the parent snapshot of this blob.  <a href="#a13a4adbf4025d355432c11c72498054a">More...</a><br /></td></tr>
+<tr class="separator:a13a4adbf4025d355432c11c72498054a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aee905d8842cf578dabd897ae68acc142"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blob_8h.html#aee905d8842cf578dabd897ae68acc142">spdk_blob_is_read_only</a> (struct spdk_blob *blob)</td></tr>
 <tr class="memdesc:aee905d8842cf578dabd897ae68acc142"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if blob is read only.  <a href="#aee905d8842cf578dabd897ae68acc142">More...</a><br /></td></tr>
 <tr class="separator:aee905d8842cf578dabd897ae68acc142"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc0d1f620d9e5d1e740ee4c4e456c34e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blob_8h.html#afc0d1f620d9e5d1e740ee4c4e456c34e">spdk_blob_is_snapshot</a> (struct spdk_blob *blob)</td></tr>
+<tr class="memdesc:afc0d1f620d9e5d1e740ee4c4e456c34e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if blob is a snapshot.  <a href="#afc0d1f620d9e5d1e740ee4c4e456c34e">More...</a><br /></td></tr>
+<tr class="separator:afc0d1f620d9e5d1e740ee4c4e456c34e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f057419129eae779eca2774f135718e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blob_8h.html#a4f057419129eae779eca2774f135718e">spdk_blob_is_clone</a> (struct spdk_blob *blob)</td></tr>
+<tr class="memdesc:a4f057419129eae779eca2774f135718e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if blob is a clone.  <a href="#a4f057419129eae779eca2774f135718e">More...</a><br /></td></tr>
+<tr class="separator:a4f057419129eae779eca2774f135718e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae6487dda0466021c6058beae2e855d8e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blob_8h.html#ae6487dda0466021c6058beae2e855d8e">spdk_blob_is_thin_provisioned</a> (struct spdk_blob *blob)</td></tr>
 <tr class="memdesc:ae6487dda0466021c6058beae2e855d8e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if blob is thin-provisioned.  <a href="#ae6487dda0466021c6058beae2e855d8e">More...</a><br /></td></tr>
 <tr class="separator:ae6487dda0466021c6058beae2e855d8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -406,6 +418,60 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bs_io_write_zero
 
 </div>
 </div>
+<a id="a1482c72fb9cb040999a376096d3e7caf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1482c72fb9cb040999a376096d3e7caf">&#9670;&nbsp;</a></span>spdk_blob_get_clones()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_blob_get_clones </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_blob_store *&#160;</td>
+          <td class="paramname"><em>bs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">spdk_blob_id&#160;</td>
+          <td class="paramname"><em>blobid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">spdk_blob_id *&#160;</td>
+          <td class="paramname"><em>ids</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t *&#160;</td>
+          <td class="paramname"><em>count</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Provide table with blob id's of clones are dependent on specified snapshot. </p>
+<p>Ids array should be allocated and the count parameter set to the number of id's it can store, before calling this function.</p>
+<p>If ids is NULL or count parameter is not sufficient to handle ids of all clones, -ENOMEM error is returned and count parameter is updated to the total number of clones.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bs</td><td>blobstore. </td></tr>
+    <tr><td class="paramname">blobid</td><td>Snapshots blob id. </td></tr>
+    <tr><td class="paramname">ids</td><td>Array of the clone ids or NULL to get required size in count. </td></tr>
+    <tr><td class="paramname">count</td><td>Size of ids. After call it is updated to the number of clones.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>-ENOMEM if count is not sufficient to store all clones. </dd></dl>
+
+</div>
+</div>
 <a id="a40ed8868e620ad0e15e2bc4b923ccff0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a40ed8868e620ad0e15e2bc4b923ccff0">&#9670;&nbsp;</a></span>spdk_blob_get_id()</h2>
 
@@ -484,6 +550,44 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bs_io_write_zero
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the number of pages. </dd></dl>
+
+</div>
+</div>
+<a id="a13a4adbf4025d355432c11c72498054a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a13a4adbf4025d355432c11c72498054a">&#9670;&nbsp;</a></span>spdk_blob_get_parent_snapshot()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">spdk_blob_id spdk_blob_get_parent_snapshot </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_blob_store *&#160;</td>
+          <td class="paramname"><em>bs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">spdk_blob_id&#160;</td>
+          <td class="paramname"><em>blobid</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the blob id for the parent snapshot of this blob. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bs</td><td>blobstore. </td></tr>
+    <tr><td class="paramname">blobid</td><td>Blob id.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>blob id of parent blob or SPDK_BLOBID_INVALID if have no parent </dd></dl>
 
 </div>
 </div>
@@ -1012,6 +1116,33 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bs_io_write_zero
 
 </div>
 </div>
+<a id="a4f057419129eae779eca2774f135718e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4f057419129eae779eca2774f135718e">&#9670;&nbsp;</a></span>spdk_blob_is_clone()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool spdk_blob_is_clone </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_blob *&#160;</td>
+          <td class="paramname"><em>blob</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Check if blob is a clone. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">blob</td><td>Blob.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if blob is a clone. </dd></dl>
+
+</div>
+</div>
 <a id="aee905d8842cf578dabd897ae68acc142"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aee905d8842cf578dabd897ae68acc142">&#9670;&nbsp;</a></span>spdk_blob_is_read_only()</h2>
 
@@ -1036,6 +1167,33 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bs_io_write_zero
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if blob is read only. </dd></dl>
+
+</div>
+</div>
+<a id="afc0d1f620d9e5d1e740ee4c4e456c34e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc0d1f620d9e5d1e740ee4c4e456c34e">&#9670;&nbsp;</a></span>spdk_blob_is_snapshot()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool spdk_blob_is_snapshot </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_blob *&#160;</td>
+          <td class="paramname"><em>blob</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Check if blob is a snapshot. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">blob</td><td>Blob.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if blob is a snapshot. </dd></dl>
 
 </div>
 </div>

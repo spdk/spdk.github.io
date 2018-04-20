@@ -194,7 +194,20 @@ delete_bdev</h2>
 <tr>
 <td>name </td><td>Required </td><td>string </td><td>Block device name </td></tr>
 </table>
-<h1><a class="anchor" id="jsonrpc_components_nvmf_tgt"></a>
+<h2><a class="anchor" id="rpc_set_bdev_qos_limit_iops"></a>
+set_bdev_qos_limit_iops</h2>
+<p>Set an IOPS-based quality of service rate limit on a bdev.</p>
+<h3>Parameters</h3>
+<table class="doxtable">
+<tr>
+<th>Name </th><th>Optional </th><th>Type </th><th>Description  </th></tr>
+<tr>
+<td>name </td><td>Required </td><td>string </td><td>Block device name </td></tr>
+<tr>
+<td>ios_per_sec </td><td>Required </td><td>number </td><td>Number of I/Os per second to allow </td></tr>
+</table>
+<h3>Example</h3>
+<p>Example request: </p><div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;method&quot;: &quot;set_bdev_qos_limit_iops&quot;,</div><div class="line">  &quot;params&quot;: {</div><div class="line">    &quot;name&quot;: &quot;Malloc0&quot;</div><div class="line">    &quot;ios_per_sec&quot;: 20000</div><div class="line">  }</div><div class="line">}</div></div><!-- fragment --><p>Example response: </p><div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: true</div><div class="line">}</div></div><!-- fragment --><h1><a class="anchor" id="jsonrpc_components_nvmf_tgt"></a>
 NVMe-oF Target</h1>
 <h2><a class="anchor" id="rpc_get_nvmf_subsystems"></a>
 get_nvmf_subsystems method</h2>

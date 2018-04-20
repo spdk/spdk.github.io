@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="Content-Type" content="text/xhtml; charset=utf-8">
   <meta name="generator" content="Doxygen 1.8.13">
-  <title>SPDK: Storage Performance Development Kit</title>
+  <title>SPDK: SPDK CLI</title>
   <script type="text/javascript" src="jquery.js"></script>
   <script type="text/javascript" src="dynsections.js"></script>
   <link href="navtree.css" rel="stylesheet" type="text/css"/>
@@ -116,7 +116,7 @@ $(function() {
   </div>
 </div>
 <script type="text/javascript">
-$(document).ready(function(){initNavTree('index.html','');});
+$(document).ready(function(){initNavTree('spdkcli.html','');});
 </script>
 <div id="doc-content">
 <!-- window showing the filter options -->
@@ -135,80 +135,20 @@ $(document).ready(function(){initNavTree('index.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">Storage Performance Development Kit </div>  </div>
+<div class="title">SPDK CLI </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h1><a class="anchor" id="intro"></a>
-Introduction</h1>
-<ul>
-<li><a class="el" href="about.html">What is SPDK?</a></li>
-<li><a class="el" href="getting_started.html">Getting Started</a></li>
-<li><a class="el" href="vagrant.html">Vagrant Development Environment</a></li>
-<li><a class="el" href="changelog.html">Changelog</a></li>
-<li><a href="https://github.com/spdk/spdk/">Source Code (GitHub)</a></li>
+<div class="textblock"><p>Spdkcli is a command-line management application for SPDK. Spdkcli has support for a limited number of applications and bdev modules, and should be considered experimental for the v18.04 release. This experimental version was added for v18.04 to get early feedback that can be incorporated as spdkcli becomes more fully-featured for the next SPDK release.</p>
+<h3>Install needed dependencies</h3>
+<p>All dependencies should be handled by scripts/pkgdep.sh script. Package dependencies at the moment include:</p><ul>
+<li>configshell</li>
 </ul>
-<h1><a class="anchor" id="concepts"></a>
-Concepts</h1>
-<ul>
-<li><a class="el" href="userspace.html">User Space Drivers</a></li>
-<li><a class="el" href="memory.html">Memory Management for User Space Drivers</a></li>
-<li><a class="el" href="concurrency.html">Message Passing and Concurrency</a></li>
-<li><a class="el" href="ssd_internals.html">SSD Internals</a></li>
-<li><a class="el" href="porting.html">SPDK Porting Guide</a></li>
-</ul>
-<h1><a class="anchor" id="user_guides"></a>
-User Guides</h1>
-<ul>
-<li><a class="el" href="iscsi.html">iSCSI Target</a></li>
-<li><a class="el" href="nvmf.html">NVMe over Fabrics Target</a></li>
-<li><a class="el" href="vhost.html">vhost Target</a></li>
-<li><a class="el" href="bdev.html">Block Device User Guide</a></li>
-<li><a class="el" href="blobfs.html">BlobFS (Blobstore Filesystem)</a></li>
-<li><a class="el" href="jsonrpc.html">JSON-RPC Methods</a></li>
-</ul>
-<h1><a class="anchor" id="prog_guides"></a>
-Programmer Guides</h1>
-<ul>
-<li><a class="el" href="blob.html">Blobstore Programmer's Guide</a></li>
-</ul>
-<h1><a class="anchor" id="general"></a>
-General Information</h1>
-<ul>
-<li><a class="el" href="bdev_pg.html">Block Device Layer Programming Guide</a></li>
-<li><a class="el" href="bdev_module.html">Writing a Custom Block Device Module</a></li>
-<li><a class="el" href="directory_structure.html">SPDK Directory Structure</a></li>
-<li><a href="files.html">Public API header files</a></li>
-<li><a class="el" href="nvmf_tgt_pg.html">NVMe over Fabrics Target Programming Guide</a></li>
-<li><a class="el" href="event.html">Event Framework</a></li>
-<li><a class="el" href="blob.html">Blobstore Programmer's Guide</a></li>
-</ul>
-<h1><a class="anchor" id="misc"></a>
-Miscellaneous</h1>
-<ul>
-<li><a class="el" href="peer_2_peer.html">Peer-2-Peer DMAs</a></li>
-</ul>
-<h1><a class="anchor" id="modules"></a>
-Modules</h1>
-<ul>
-<li><a class="el" href="nvme.html">NVMe Driver</a></li>
-<li><a class="el" href="ioat.html">I/OAT Driver</a></li>
-<li><a class="el" href="virtio.html">Virtio driver</a></li>
-</ul>
-<h1><a class="anchor" id="tools"></a>
-Tools</h1>
-<ul>
-<li><a class="el" href="nvme-cli.html">nvme-cli</a></li>
-</ul>
-<h1><a class="anchor" id="experimental_tools"></a>
-Experimental Tools</h1>
-<ul>
-<li><a class="el" href="spdkcli.html">SPDK CLI</a></li>
-</ul>
-<h1><a class="anchor" id="performancereports"></a>
-Performance Reports</h1>
-<ul>
-<li><a href="https://ci.spdk.io/download/performance-reports/SPDK17_07_vhost_scsi_performance_report.pdf">SPDK 17.07 vhost-scsi Performance Report</a> </li>
-</ul>
+<h3>Run SPDK application instance</h3>
+<div class="fragment"><div class="line">./scripts/setup.sh</div><div class="line">./app/vhost/vhost -c vhost.conf</div></div><!-- fragment --><h3>Run SPDK CLI</h3>
+<p>Spdkcli should be run with the same priviliges as SPDK application. In order to use SPDK CLI in interactive mode please use: </p><div class="fragment"><div class="line">scripts/spdkcli.py</div></div><!-- fragment --><p> Use "help" command to get a list of available commands for each tree node.</p>
+<p>It is also possible to use SPDK CLI to run just a single command, just use the command as an argument to the application. For example, to view current configuration and immediately exit: </p><div class="fragment"><div class="line">scripts/spdkcli.py ls</div></div><!-- fragment --><h3>Optional - create Python virtual environment</h3>
+<p>You can use Python virtual environment if you don't want to litter your system Python installation.</p>
+<p>First create the virtual environment: </p><div class="fragment"><div class="line">cd spdk</div><div class="line">mkdir venv</div><div class="line">virtualenv-3 ./venv</div><div class="line">source ./venv/bin/activate</div></div><!-- fragment --><p>Then install the dependencies using pip. That way depedencies will be installed only inside the virtual environment. </p><div class="fragment"><div class="line">(venv) pip install configshell-fb</div></div><!-- fragment --><p>Tip: if you are using "sudo" instead of root account, it is suggested to do "sudo -s" before activating the environment. This is because venv might not work correctly when calling spdkcli with sudo, like "sudo python spdkcli.py" - some environment variables might not be passed and you will experience errors. </p>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 </div>
