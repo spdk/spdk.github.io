@@ -262,6 +262,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a86568eca8f0b4d0dc9bc59c5138fc7a5"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev_8h.html#a86568eca8f0b4d0dc9bc59c5138fc7a5">spdk_bdev_get_num_blocks</a> (const struct spdk_bdev *bdev)</td></tr>
 <tr class="memdesc:a86568eca8f0b4d0dc9bc59c5138fc7a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get size of block device in logical blocks.  <a href="#a86568eca8f0b4d0dc9bc59c5138fc7a5">More...</a><br /></td></tr>
 <tr class="separator:a86568eca8f0b4d0dc9bc59c5138fc7a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adac568aa59cb9bf73118b8290d347e27"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev_8h.html#adac568aa59cb9bf73118b8290d347e27">spdk_bdev_get_qos_ios_per_sec</a> (const struct spdk_bdev *bdev)</td></tr>
+<tr class="memdesc:adac568aa59cb9bf73118b8290d347e27"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get IOs per second of block device for the QoS rate limiting.  <a href="#adac568aa59cb9bf73118b8290d347e27">More...</a><br /></td></tr>
+<tr class="separator:adac568aa59cb9bf73118b8290d347e27"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab4d238484b372a77ba130fbb70f83519"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev_8h.html#ab4d238484b372a77ba130fbb70f83519">spdk_bdev_get_buf_align</a> (const struct spdk_bdev *bdev)</td></tr>
 <tr class="memdesc:ab4d238484b372a77ba130fbb70f83519"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get minimum I/O buffer address alignment for a bdev.  <a href="#ab4d238484b372a77ba130fbb70f83519">More...</a><br /></td></tr>
 <tr class="separator:ab4d238484b372a77ba130fbb70f83519"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -322,6 +325,9 @@ Functions</h2></td></tr>
 <tr class="memitem:aca574d3e94be6150343823dd2e7ecf46"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev_8h.html#aca574d3e94be6150343823dd2e7ecf46">spdk_bdev_reset</a> (struct spdk_bdev_desc *desc, struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *ch, <a class="el" href="bdev_8h.html#a0c5602dfd313f90032dd91683b9663e3">spdk_bdev_io_completion_cb</a> cb, void *cb_arg)</td></tr>
 <tr class="memdesc:aca574d3e94be6150343823dd2e7ecf46"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submit a reset request to the bdev on the given channel.  <a href="#aca574d3e94be6150343823dd2e7ecf46">More...</a><br /></td></tr>
 <tr class="separator:aca574d3e94be6150343823dd2e7ecf46"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae740e2dbe4eb28fb470ef208fa993e30"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev_8h.html#ae740e2dbe4eb28fb470ef208fa993e30">spdk_bdev_set_qos_limit_iops</a> (struct spdk_bdev *bdev, uint64_t ios_per_sec, void(*cb_fn)(void *cb_arg, int status), void *cb_arg)</td></tr>
+<tr class="memdesc:ae740e2dbe4eb28fb470ef208fa993e30"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set an IOPS-based quality of service rate limit on a bdev.  <a href="#ae740e2dbe4eb28fb470ef208fa993e30">More...</a><br /></td></tr>
+<tr class="separator:ae740e2dbe4eb28fb470ef208fa993e30"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae2249ef71e7125338b6cebf935a881ab"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev_8h.html#ae2249ef71e7125338b6cebf935a881ab">spdk_bdev_nvme_admin_passthru</a> (struct spdk_bdev_desc *desc, struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *ch, const struct <a class="el" href="structspdk__nvme__cmd.html">spdk_nvme_cmd</a> *cmd, void *buf, size_t nbytes, <a class="el" href="bdev_8h.html#a0c5602dfd313f90032dd91683b9663e3">spdk_bdev_io_completion_cb</a> cb, void *cb_arg)</td></tr>
 <tr class="memdesc:ae2249ef71e7125338b6cebf935a881ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submit an NVMe Admin command to the bdev.  <a href="#ae2249ef71e7125338b6cebf935a881ab">More...</a><br /></td></tr>
 <tr class="separator:ae2249ef71e7125338b6cebf935a881ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1034,6 +1040,34 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Product name of bdev as a null-terminated string. </dd></dl>
+
+</div>
+</div>
+<a id="adac568aa59cb9bf73118b8290d347e27"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adac568aa59cb9bf73118b8290d347e27">&#9670;&nbsp;</a></span>spdk_bdev_get_qos_ios_per_sec()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint64_t spdk_bdev_get_qos_ios_per_sec </td>
+          <td>(</td>
+          <td class="paramtype">const struct spdk_bdev *&#160;</td>
+          <td class="paramname"><em>bdev</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get IOs per second of block device for the QoS rate limiting. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bdev</td><td>Block device to query. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>IOs per second.</dd></dl>
+<p>Return 0 for no QoS enforced on the queried block device. </p>
 
 </div>
 </div>
@@ -2024,6 +2058,57 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 on success. On success, the callback will always be called (even if the request ultimately failed). Return negated errno on failure, in which case the callback will not be called. </dd></dl>
+
+</div>
+</div>
+<a id="ae740e2dbe4eb28fb470ef208fa993e30"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae740e2dbe4eb28fb470ef208fa993e30">&#9670;&nbsp;</a></span>spdk_bdev_set_qos_limit_iops()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_bdev_set_qos_limit_iops </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_bdev *&#160;</td>
+          <td class="paramname"><em>bdev</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>ios_per_sec</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void(*)(void *cb_arg, int status)&#160;</td>
+          <td class="paramname"><em>cb_fn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>cb_arg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set an IOPS-based quality of service rate limit on a bdev. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bdev</td><td>Block device. </td></tr>
+    <tr><td class="paramname">ios_per_sec</td><td>I/O per second limit. </td></tr>
+    <tr><td class="paramname">cb_fn</td><td>Callback function to be called when the QoS limit has been updated. </td></tr>
+    <tr><td class="paramname">cb_arg</td><td>Argument to pass to cb_fn. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

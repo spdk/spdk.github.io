@@ -10,6 +10,7 @@ var NAVTREE =
       [ "Miscellaneous", "index.html#misc", null ],
       [ "Modules", "index.html#modules", null ],
       [ "Tools", "index.html#tools", null ],
+      [ "Experimental Tools", "index.html#experimental_tools", null ],
       [ "Performance Reports", "index.html#performancereports", null ]
     ] ],
     [ "What is SPDK?", "about.html", null ],
@@ -129,7 +130,8 @@ var NAVTREE =
       ] ],
       [ "Block Device Abstraction Layer", "jsonrpc.html#jsonrpc_components_bdev", [
         [ "get_bdevs", "jsonrpc.html#rpc_get_bdevs", null ],
-        [ "delete_bdev", "jsonrpc.html#rpc_delete_bdev", null ]
+        [ "delete_bdev", "jsonrpc.html#rpc_delete_bdev", null ],
+        [ "set_bdev_qos_limit_iops", "jsonrpc.html#rpc_set_bdev_qos_limit_iops", null ]
       ] ],
       [ "NVMe-oF Target", "jsonrpc.html#jsonrpc_components_nvmf_tgt", [
         [ "get_nvmf_subsystems method", "jsonrpc.html#rpc_get_nvmf_subsystems", null ],
@@ -199,6 +201,7 @@ var NAVTREE =
       [ "cmb_copy: An example P2P Application", "peer_2_peer.html#p2p_cmb_copy", null ],
       [ "Issues with P2P", "peer_2_peer.html#p2p_issues", null ]
     ] ],
+    [ "SPDK CLI", "spdkcli.html", null ],
     [ "SSD Internals", "ssd_internals.html", null ],
     [ "User Space Drivers", "userspace.html", [
       [ "Controlling Hardware From User Space", "userspace.html#userspace_control", null ],
@@ -257,21 +260,21 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "about.html",
-"conf_8h.html#adf0cf8d93adadd85dedd3c24004fc67e",
-"globals_defs.html",
-"iscsi__spec_8h.html#ad2c30ed17419423b79a47fae8323408aac88669cc577d85b32c16ef7f9dcf0dc2",
-"nvme_8h.html#a5a9daf15b5008ac36c12e7b8db7bdec9",
-"nvme__spec_8h.html#a6aa934b2f75a2d0fc8a22f14627f5000ad1a6641bf95e6a16b72fb0bd01485c28",
-"nvme__spec_8h.html#afc394cf0b37e4ec245a604e0e48b2b82",
-"scsi_8h.html#aa87d45ae3bcf47ffa2db2ff3cf51ae21",
-"scsi__spec_8h.html#aa6d2fce08711be74571bbc61f48e9cfbaed1831fece9bb0a1ef98dc2c167f2220",
-"structiscsi__bhs__logout__resp.html#a34e1a99d043b1759d945f4bb22bd0ad0",
-"structspdk__env__opts.html#a04de220e31274ee239f4f2de62608263",
-"structspdk__mbr__chs.html",
-"structspdk__nvme__firmware__page.html#acc627dc50a9f88fa3c4697ff8ac99c81",
-"structspdk__nvme__secondary__ctrl__list.html#a3422d2643a48f11972a62ad3eee04f53",
-"structspdk__scsi__task.html#a31f83a16a11e3e1e0465bc637b799147",
-"unionspdk__nvme__feat__host__controlled__thermal__management.html#a683af96774029ba95fcbb43ef78d487e"
+"conf_8h.html#a85d8fdbc25d15752e765240ce0d53d03",
+"getting_started.html#getting_started_examples",
+"iscsi__spec_8h.html#ad2c30ed17419423b79a47fae8323408aa8d81b89e47c968366a9de7e505516bf3",
+"nvme_8h.html#a42040dca95489218417539d2c08d815e",
+"nvme__spec_8h.html#a62b2e9dfaeda9fac684e7b456971c710",
+"nvme__spec_8h.html#af1e242836a69ed1a6159618e2b47a429",
+"scsi_8h.html#a715f198c4f072642eb951ecdddb0e624",
+"scsi__spec_8h.html#aa6d2fce08711be74571bbc61f48e9cfba866465b617e26a2842d926fbae169ef5",
+"structiscsi__bhs__logout__req.html#a95da57f1ab779d1c1b22f739c95734ad",
+"structspdk__bs__opts.html#a7e0a18c6e415b9242c63eed9141736e3",
+"structspdk__lvs__opts.html",
+"structspdk__nvme__error__information__entry.html#aeb86c281ad13ccad6fbf242f77515b10",
+"structspdk__nvme__secondary__ctrl__entry.html#a1ef2a1e2dbe88c04cb6c45341cc8326b",
+"structspdk__scsi__port__desc.html#a3d858684ae76bd76a5cdddd7ef34c9a0",
+"unionspdk__nvme__feat__autonomous__power__state__transition.html#a9311f1d84bfe298c3ea675dc2cfbdcdc"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
