@@ -152,7 +152,8 @@ var NAVTREE =
       [ "Terminology", "logical_volumes.html#lvol_terminology", [
         [ "Logical volume store", "logical_volumes.html#lvs", null ],
         [ "Logical volume", "logical_volumes.html#lvol", null ],
-        [ "Logical volume block device", "logical_volumes.html#lvol_bdev", null ]
+        [ "Logical volume block device", "logical_volumes.html#lvol_bdev", null ],
+        [ "Snapshots and clone", "logical_volumes.html#lvol_snapshots", null ]
       ] ],
       [ "RPC overview", "logical_volumes.html#lvol_rpc", null ]
     ] ],
@@ -232,8 +233,7 @@ var NAVTREE =
       [ "Known bugs and limitations", "vhost.html#vhost_bugs", null ]
     ] ],
     [ "Virtio driver", "virtio.html", [
-      [ "Introduction", "virtio.html#virtio_intro", null ],
-      [ "Limitations", "virtio.html#virtio_limitations", null ]
+      [ "Introduction", "virtio.html#virtio_intro", null ]
     ] ],
     [ "Data Structures", "annotated.html", [
       [ "Data Structures", "annotated.html", "annotated_dup" ],
@@ -260,21 +260,21 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "about.html",
-"conf_8h.html#a85d8fdbc25d15752e765240ce0d53d03",
-"getting_started.html#getting_started_examples",
-"iscsi__spec_8h.html#ad2c30ed17419423b79a47fae8323408aa8d81b89e47c968366a9de7e505516bf3",
-"nvme_8h.html#a42040dca95489218417539d2c08d815e",
-"nvme__spec_8h.html#a62b2e9dfaeda9fac684e7b456971c710",
-"nvme__spec_8h.html#af1e242836a69ed1a6159618e2b47a429",
-"scsi_8h.html#a715f198c4f072642eb951ecdddb0e624",
-"scsi__spec_8h.html#aa6d2fce08711be74571bbc61f48e9cfba866465b617e26a2842d926fbae169ef5",
-"structiscsi__bhs__logout__req.html#a95da57f1ab779d1c1b22f739c95734ad",
-"structspdk__bs__opts.html#a7e0a18c6e415b9242c63eed9141736e3",
-"structspdk__lvs__opts.html",
-"structspdk__nvme__error__information__entry.html#aeb86c281ad13ccad6fbf242f77515b10",
-"structspdk__nvme__secondary__ctrl__entry.html#a1ef2a1e2dbe88c04cb6c45341cc8326b",
-"structspdk__scsi__port__desc.html#a3d858684ae76bd76a5cdddd7ef34c9a0",
-"unionspdk__nvme__feat__autonomous__power__state__transition.html#a9311f1d84bfe298c3ea675dc2cfbdcdc"
+"conf_8h.html#a6f9abaa311e349ff268d005519c7450a",
+"functions_vars_t.html",
+"iscsi__spec_8h.html#ad2c30ed17419423b79a47fae8323408aa1f53ae65a0bf8049939d0e6952d46ad3",
+"nvme_8h.html#a10282695461985f58f54de022911745e",
+"nvme__spec_8h.html#a553aa11d679deea767299b75e8ff5fcaaf4d7b80fb8b305932d72fb1d2bc0dce5",
+"nvme__spec_8h.html#aeae5c5fb9df2c7a39215c71f9d9b4c25ade909edcdcac7111214408bb6f417086",
+"scsi_8h.html#a5c7f47e943239407061a2b5bc7f804b3a2e36a95f2bd53801a815c12b107ec393",
+"scsi__spec_8h.html#aa6d2fce08711be74571bbc61f48e9cfb",
+"structiscsi__bhs__logout__req.html#a0669c514512db3f14b7bc4aa96166235",
+"structspdk__bs__dev.html#ac3f9b4422f8c651e6a1975f77f1b4b62",
+"structspdk__json__object__decoder.html",
+"structspdk__nvme__error__information__entry.html",
+"structspdk__nvme__reservation__status__data.html",
+"structspdk__scsi__desig__desc.html#add7dd85eec8f730e1452a102ee4735b3",
+"unionspdk__nvme__feat__async__event__configuration.html#a6230ed5b0608170ebde7bccee61cc50f"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

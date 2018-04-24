@@ -7,6 +7,8 @@ var searchData=
   ['spdk_5fjson_5fparse_5fflag_5fdecode_5fin_5fplace',['SPDK_JSON_PARSE_FLAG_DECODE_IN_PLACE',['../json_8h.html#a282fefd919b6a7df96d06d182621b7ae',1,'json.h']]],
   ['spdk_5fjson_5fparse_5fincomplete',['SPDK_JSON_PARSE_INCOMPLETE',['../json_8h.html#acc79dce318c094983d4a6e94cd49684f',1,'json.h']]],
   ['spdk_5fjson_5fparse_5finvalid',['SPDK_JSON_PARSE_INVALID',['../json_8h.html#a91c8e2bb9f0a1af4824d5708b8afbf26',1,'json.h']]],
+  ['spdk_5fmalloc_5fdma',['SPDK_MALLOC_DMA',['../env_8h.html#a7f065a5e897ff548b2dbf0996608929a',1,'env.h']]],
+  ['spdk_5fmalloc_5fshare',['SPDK_MALLOC_SHARE',['../env_8h.html#ad1660ffa6731090ef3f480c295a87dba',1,'env.h']]],
   ['spdk_5fmb',['spdk_mb',['../barrier_8h.html#a745a3ecabbce4b44d1728d08f9bf8623',1,'barrier.h']]],
   ['spdk_5fnvme_5fdataset_5fmanagement_5fmax_5franges',['SPDK_NVME_DATASET_MANAGEMENT_MAX_RANGES',['../nvme__spec_8h.html#ad2aa28f22c4dc7336caf96815cb70314',1,'nvme_spec.h']]],
   ['spdk_5fnvme_5fdataset_5fmanagement_5frange_5fmax_5fblocks',['SPDK_NVME_DATASET_MANAGEMENT_RANGE_MAX_BLOCKS',['../nvme__spec_8h.html#a26ca66ff5a40e3916763aabbfb22ce14',1,'nvme_spec.h']]],

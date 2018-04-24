@@ -140,6 +140,11 @@ $(document).ready(function(){initNavTree('changelog.html','');});
 <div class="contents">
 <div class="textblock"><h1><a class="anchor" id="changelog-v18-04"></a>
 v18.04: (Upcoming Release)</h1>
+<h2>vhost</h2>
+<p>The SPDK vhost-scsi, vhost-blk and vhost-nvme applications have fixes to address the DPDK rte_vhost vulnerability <a href="http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-1059">CVE-2018-1059</a>. Please see this <a href="https://access.redhat.com/security/cve/cve-2018-1059">security advisory</a> for additional information on the DPDK vulnerability.</p>
+<h2>Env</h2>
+<p>Add wrapper for DPDK rte_mempool_get_bulk() via <a class="el" href="env_8h.html#a5695d9dcc6f53a561f41c932a198853b" title="Get multiple elements from a memory pool. ">spdk_mempool_get_bulk()</a>.</p>
+<p>New memory management functions <a class="el" href="env_8h.html#a668370523a786a75a7d08a8e8f4b28b9" title="Allocate dma/sharable memory based on a given dma_flg. ">spdk_malloc()</a>, <a class="el" href="env_8h.html#a49ad245dae3554cf96d62e9b2b0b1596" title="Allocate dma/sharable memory based on a given dma_flg. ">spdk_zmalloc()</a>, and <a class="el" href="env_8h.html#a452d670d7188f883224574dfabc39f2c" title="Free buffer memory that was previously allocated with spdk_malloc() or spdk_zmalloc(). ">spdk_free()</a> have been added. These new functions have a <code>flags</code> parameter that allows the user to specify whether the allocated memory needs to be suitable for DMA and whether it should be shared across processes with the same shm_id. The new functions are intended to replace <a class="el" href="env_8h.html#a0874731c44ac31e4b14d91c6844a87d1" title="Allocate a pinned, physically contiguous memory buffer with the given size and alignment. ">spdk_dma_malloc()</a> and related functions, which will eventually be deprecated and removed.</p>
 <h2>Bdev</h2>
 <p>Add new optional bdev module interface function, init_complete, to notify bdev modules when the bdev subsystem initialization is complete. Useful for virtual bdevs that require notification that the set of initialization examine() calls is complete.</p>
 <h2>RPC</h2>
@@ -164,6 +169,8 @@ v18.04: (Upcoming Release)</h1>
 </ul>
 <p>The old names still exist but are deprecated. They will be removed in the v18.07 release.</p>
 <p><a class="el" href="blob_8h.html#a70993dda1206b4c0aaa76deb2b6fd13c" title="Resize a blob to &#39;sz&#39; clusters. ">spdk_blob_resize()</a> is now an asynchronous operation to enable resizing a blob while I/O are in progress to that blob on other threads. An explicit <a class="el" href="blob_8h.html#a5acc48debefc30773518871e4f84480f" title="Sync a blob. ">spdk_blob_sync_md()</a> is still required to sync the updated metadata to disk.</p>
+<h2>Logical Volumes</h2>
+<p>A new <code>destroy_lvol_bdev</code> RPC method to delete logical volumes has been added.</p>
 <h2>Lib</h2>
 <p>A set of changes were made in the SPDK's lib code altering, instances of calls to <code>exit()</code> and <code>abort()</code> to return a failure instead wherever reasonably possible.</p>
 <p><a class="el" href="event_8h.html#a18879873a585b21f44b7c90be8726ce1" title="Start the framework. ">spdk_app_start()</a> no longer exit()'s on an internal failure, but instead returns a non-zero error status.</p>

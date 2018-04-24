@@ -1,5 +1,14 @@
 var NAVTREEINDEX14 =
 {
+"structspdk__scsi__desig__desc.html#add7dd85eec8f730e1452a102ee4735b3":[29,0,148,7],
+"structspdk__scsi__mpage__policy__desc.html":[29,0,149],
+"structspdk__scsi__mpage__policy__desc.html#a1bcb9abd4318bb1a7ff288e62fcb70aa":[29,0,149,1],
+"structspdk__scsi__mpage__policy__desc.html#a6efbcbc417759cfb7694d80357d5eebc":[29,0,149,2],
+"structspdk__scsi__mpage__policy__desc.html#aba233a7338dbf124fed52950c92f7f98":[29,0,149,0],
+"structspdk__scsi__mpage__policy__desc.html#af8a606e447e8d1fbbcdff2e93c22303b":[29,0,149,3],
+"structspdk__scsi__port__desc.html":[29,0,150],
+"structspdk__scsi__port__desc.html#a1122aceae5f88a71a7dc11ace3c17c7f":[29,0,150,5],
+"structspdk__scsi__port__desc.html#a3af2d30cad186c3639f38cd352cfe8e9":[29,0,150,7],
 "structspdk__scsi__port__desc.html#a3d858684ae76bd76a5cdddd7ef34c9a0":[29,0,150,2],
 "structspdk__scsi__port__desc.html#a55834f658b996093a6c0f16914056757":[29,0,150,6],
 "structspdk__scsi__port__desc.html#aa70015f373882ede492e8e71eec43e6d":[29,0,150,0],
@@ -240,14 +249,5 @@ var NAVTREEINDEX14 =
 "unionspdk__nvme__feat__arbitration.html#af12378890a3a12fc4a54e10b6103859e":[29,0,74,6],
 "unionspdk__nvme__feat__async__event__configuration.html":[29,0,75],
 "unionspdk__nvme__feat__async__event__configuration.html#a042e849ee18c493b3b0e04759745486e":[29,0,75,5],
-"unionspdk__nvme__feat__async__event__configuration.html#a572b3c7f8773804b8d0f3fa66ce9a35e":[29,0,75,2],
-"unionspdk__nvme__feat__async__event__configuration.html#a6230ed5b0608170ebde7bccee61cc50f":[29,0,75,3],
-"unionspdk__nvme__feat__async__event__configuration.html#a7e369c599d81ab33f93c69b1a7f8c7bd":[29,0,75,1],
-"unionspdk__nvme__feat__async__event__configuration.html#a7e91f0feb90898c53fbf1bcd5e277b93":[29,0,75,4],
-"unionspdk__nvme__feat__async__event__configuration.html#acfcf01d9a6ae893ca0f910308ebe8520":[29,0,75,0],
-"unionspdk__nvme__feat__async__event__configuration.html#af9edd911cbd0e44235cf4ac12d8c8c0e":[29,0,75,6],
-"unionspdk__nvme__feat__autonomous__power__state__transition.html":[29,0,76],
-"unionspdk__nvme__feat__autonomous__power__state__transition.html#a022cc1ba5b7ff365a6b69989c663333a":[29,0,76,0],
-"unionspdk__nvme__feat__autonomous__power__state__transition.html#a36867fe7bf800adeacf48b7940f74857":[29,0,76,2],
-"unionspdk__nvme__feat__autonomous__power__state__transition.html#a46e0ea66596a361c67d688b646260646":[29,0,76,1]
+"unionspdk__nvme__feat__async__event__configuration.html#a572b3c7f8773804b8d0f3fa66ce9a35e":[29,0,75,2]
 };
