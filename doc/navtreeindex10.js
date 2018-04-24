@@ -1,5 +1,14 @@
 var NAVTREEINDEX10 =
 {
+"structspdk__bs__dev.html#ac3f9b4422f8c651e6a1975f77f1b4b62":[29,0,25,8],
+"structspdk__bs__dev__cb__args.html":[29,0,26],
+"structspdk__bs__dev__cb__args.html#a368888d71cceb311e5375f9bb114558e":[29,0,26,2],
+"structspdk__bs__dev__cb__args.html#a87004028ab4481b28c8e966ba7da1d70":[29,0,26,1],
+"structspdk__bs__dev__cb__args.html#a9f8fc535e2b300590c671b0b3968d22f":[29,0,26,0],
+"structspdk__bs__opts.html":[29,0,27],
+"structspdk__bs__opts.html#a0c7b15264236f4b044731ca7c0de3014":[29,0,27,6],
+"structspdk__bs__opts.html#a3d51d3733be73f4a76776d0523232230":[29,0,27,3],
+"structspdk__bs__opts.html#a63e0b619fedc29159dffd7feca08396b":[29,0,27,5],
 "structspdk__bs__opts.html#a7e0a18c6e415b9242c63eed9141736e3":[29,0,27,2],
 "structspdk__bs__opts.html#aa9f80152a5720e25bc52ab4a89113cdf":[29,0,27,1],
 "structspdk__bs__opts.html#ac5417afa104f5061bab1bfae0769c3a6":[29,0,27,4],
@@ -240,14 +249,5 @@ var NAVTREEINDEX10 =
 "structspdk__ioat__xor__hw__desc.html#ad2084a26b29723fbc1986b93741ae4aa":[29,0,47,3],
 "structspdk__ioat__xor__hw__desc.html#ad5132becbbf1d3ad1b9b0d6cf3b9cd45":[29,0,47,16],
 "structspdk__ioat__xor__hw__desc.html#aebbe290c07ef8c88ac4e14a1329dd368":[29,0,47,13],
-"structspdk__ioat__xor__hw__desc.html#afc217d72348f20f8ee53dcb7f884bf5a":[29,0,47,19],
-"structspdk__json__object__decoder.html":[29,0,48],
-"structspdk__json__object__decoder.html#a41e20bfeca48896002d95ea65925edba":[29,0,48,1],
-"structspdk__json__object__decoder.html#a4dece31cc98654d7cd55d74c76d0c0f6":[29,0,48,2],
-"structspdk__json__object__decoder.html#a962c3316db3dbdaff1a72b3955aa837b":[29,0,48,0],
-"structspdk__json__object__decoder.html#ad4f8aab87ac1de690799dad3487e92df":[29,0,48,3],
-"structspdk__json__val.html":[29,0,49],
-"structspdk__json__val.html#a709cbbd71ebb3cdc9bb8daf5f2a19364":[29,0,49,2],
-"structspdk__json__val.html#aa9e7738fac4cf0d68ed86f263bb7bf1f":[29,0,49,0],
-"structspdk__json__val.html#acd221be089fb848898b736d31add7053":[29,0,49,1]
+"structspdk__ioat__xor__hw__desc.html#afc217d72348f20f8ee53dcb7f884bf5a":[29,0,47,19]
 };

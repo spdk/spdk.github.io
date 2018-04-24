@@ -1,5 +1,14 @@
 var NAVTREEINDEX13 =
 {
+"structspdk__nvme__reservation__status__data.html":[29,0,118],
+"structspdk__nvme__reservation__status__data.html#a092f959d5e4c94d1bad20e02c41ba3f0":[29,0,118,2],
+"structspdk__nvme__reservation__status__data.html#a4b2514f1bb0b9464372a884156bde65b":[29,0,118,4],
+"structspdk__nvme__reservation__status__data.html#a4f1ef838ca94e2c6db3ff4aa393e88b4":[29,0,118,3],
+"structspdk__nvme__reservation__status__data.html#a89ad9fbdf5bf52b37eeb6bcfbd0246b5":[29,0,118,5],
+"structspdk__nvme__reservation__status__data.html#abd67ce988e5e680e5a1abd0bacdfe5c3":[29,0,118,0],
+"structspdk__nvme__reservation__status__data.html#ae9baf83c2042297f4af8ff96bfb2c6bc":[29,0,118,1],
+"structspdk__nvme__secondary__ctrl__entry.html":[29,0,119],
+"structspdk__nvme__secondary__ctrl__entry.html#a1058df7181e33bc60bfd6d9782afd673":[29,0,119,8],
 "structspdk__nvme__secondary__ctrl__entry.html#a1ef2a1e2dbe88c04cb6c45341cc8326b":[29,0,119,1],
 "structspdk__nvme__secondary__ctrl__entry.html#a21689c15024aef7fdfe2142b007188d7":[29,0,119,5],
 "structspdk__nvme__secondary__ctrl__entry.html#a73325a288bc6248e635ec1b64ad41f7a":[29,0,119,7],
@@ -240,14 +249,5 @@ var NAVTREEINDEX13 =
 "structspdk__scsi__desig__desc.html#aa798f99b973604bfccf793daaf35484f":[29,0,148,2],
 "structspdk__scsi__desig__desc.html#abf5d28b978089fa70e2890312e9b2118":[29,0,148,4],
 "structspdk__scsi__desig__desc.html#ad101ca3a06aa7b09c10c34f2fb465534":[29,0,148,8],
-"structspdk__scsi__desig__desc.html#ad4a6320044e4ec4d190528510661e41d":[29,0,148,3],
-"structspdk__scsi__desig__desc.html#add7dd85eec8f730e1452a102ee4735b3":[29,0,148,7],
-"structspdk__scsi__mpage__policy__desc.html":[29,0,149],
-"structspdk__scsi__mpage__policy__desc.html#a1bcb9abd4318bb1a7ff288e62fcb70aa":[29,0,149,1],
-"structspdk__scsi__mpage__policy__desc.html#a6efbcbc417759cfb7694d80357d5eebc":[29,0,149,2],
-"structspdk__scsi__mpage__policy__desc.html#aba233a7338dbf124fed52950c92f7f98":[29,0,149,0],
-"structspdk__scsi__mpage__policy__desc.html#af8a606e447e8d1fbbcdff2e93c22303b":[29,0,149,3],
-"structspdk__scsi__port__desc.html":[29,0,150],
-"structspdk__scsi__port__desc.html#a1122aceae5f88a71a7dc11ace3c17c7f":[29,0,150,5],
-"structspdk__scsi__port__desc.html#a3af2d30cad186c3639f38cd352cfe8e9":[29,0,150,7]
+"structspdk__scsi__desig__desc.html#ad4a6320044e4ec4d190528510661e41d":[29,0,148,3]
 };

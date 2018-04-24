@@ -6,6 +6,8 @@ var env_8h =
     [ "SPDK_ENV_FOREACH_CORE", "env_8h.html#a42d08df976f75c1e47ce174ebc446f95", null ],
     [ "SPDK_ENV_LCORE_ID_ANY", "env_8h.html#ab337c70c632ec69967444fcdd4ab17c2", null ],
     [ "SPDK_ENV_SOCKET_ID_ANY", "env_8h.html#a3e5247302342025f028c57bc024291b1", null ],
+    [ "SPDK_MALLOC_DMA", "env_8h.html#a7f065a5e897ff548b2dbf0996608929a", null ],
+    [ "SPDK_MALLOC_SHARE", "env_8h.html#ad1660ffa6731090ef3f480c295a87dba", null ],
     [ "SPDK_MEMPOOL_DEFAULT_CACHE_SIZE", "env_8h.html#aba1856012938db5f1c0beba921ee5a7c", null ],
     [ "SPDK_VTOPHYS_ERROR", "env_8h.html#a26eb4a0e044f1a5e9515b8c2f96078a4", null ],
     [ "spdk_mem_map_notify_cb", "env_8h.html#ac018be4449e60d4e5992e1e4be9bbef3", null ],
@@ -38,8 +40,10 @@ var env_8h =
     [ "spdk_env_opts_init", "env_8h.html#af3b1a05d3f4dee14ba3f980672c9b3a6", null ],
     [ "spdk_env_thread_launch_pinned", "env_8h.html#a4282feec502eca721136e88c824d59cf", null ],
     [ "spdk_env_thread_wait_all", "env_8h.html#aec7e5ab204489da6d344999e4a0c8a73", null ],
+    [ "spdk_free", "env_8h.html#a452d670d7188f883224574dfabc39f2c", null ],
     [ "spdk_get_ticks", "env_8h.html#a7d868d272aa0c000f6135966dfadc596", null ],
     [ "spdk_get_ticks_hz", "env_8h.html#a0e7d0eb3000d71b588486cf9903cd434", null ],
+    [ "spdk_malloc", "env_8h.html#a668370523a786a75a7d08a8e8f4b28b9", null ],
     [ "spdk_mem_map_alloc", "env_8h.html#a512b5ef37a363a4c8e234c060b734605", null ],
     [ "spdk_mem_map_clear_translation", "env_8h.html#a2fb4967ae71277512334ad27ef481326", null ],
     [ "spdk_mem_map_free", "env_8h.html#af88ed69bd8b9a057f672a1170f7a5b6c", null ],
@@ -52,6 +56,7 @@ var env_8h =
     [ "spdk_mempool_create_ctor", "env_8h.html#a8981c2ba451d7214e157708a718db6c9", null ],
     [ "spdk_mempool_free", "env_8h.html#ab9d2feacf9f6979db875add06ab06494", null ],
     [ "spdk_mempool_get", "env_8h.html#ada5041ebc03066dede6e0972c22dc77f", null ],
+    [ "spdk_mempool_get_bulk", "env_8h.html#a5695d9dcc6f53a561f41c932a198853b", null ],
     [ "spdk_mempool_get_name", "env_8h.html#aef50d2e8f2d7fccfd5c5edf95e5013d2", null ],
     [ "spdk_mempool_put", "env_8h.html#a56233342766c54990e044b8ca2f3d41a", null ],
     [ "spdk_mempool_put_bulk", "env_8h.html#ac3fc57c5f23f34aa1cf56ed355daa3b8", null ],
@@ -100,5 +105,6 @@ var env_8h =
     [ "spdk_ring_enqueue", "env_8h.html#a94a5c5e5f14c336e7d64db996c0ed2dc", null ],
     [ "spdk_ring_free", "env_8h.html#a3f1ec5c3714962d4b01ceb5a50571dca", null ],
     [ "spdk_unaffinitize_thread", "env_8h.html#a925f8e1d1ed12fc1b7eb057a5c5b7bfd", null ],
-    [ "spdk_vtophys", "env_8h.html#ae96a59dc23cf16ed24029ea50598be5b", null ]
+    [ "spdk_vtophys", "env_8h.html#ae96a59dc23cf16ed24029ea50598be5b", null ],
+    [ "spdk_zmalloc", "env_8h.html#a49ad245dae3554cf96d62e9b2b0b1596", null ]
 ];

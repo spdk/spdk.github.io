@@ -1,5 +1,14 @@
 var NAVTREEINDEX15 =
 {
+"unionspdk__nvme__feat__async__event__configuration.html#a6230ed5b0608170ebde7bccee61cc50f":[29,0,75,3],
+"unionspdk__nvme__feat__async__event__configuration.html#a7e369c599d81ab33f93c69b1a7f8c7bd":[29,0,75,1],
+"unionspdk__nvme__feat__async__event__configuration.html#a7e91f0feb90898c53fbf1bcd5e277b93":[29,0,75,4],
+"unionspdk__nvme__feat__async__event__configuration.html#acfcf01d9a6ae893ca0f910308ebe8520":[29,0,75,0],
+"unionspdk__nvme__feat__async__event__configuration.html#af9edd911cbd0e44235cf4ac12d8c8c0e":[29,0,75,6],
+"unionspdk__nvme__feat__autonomous__power__state__transition.html":[29,0,76],
+"unionspdk__nvme__feat__autonomous__power__state__transition.html#a022cc1ba5b7ff365a6b69989c663333a":[29,0,76,0],
+"unionspdk__nvme__feat__autonomous__power__state__transition.html#a36867fe7bf800adeacf48b7940f74857":[29,0,76,2],
+"unionspdk__nvme__feat__autonomous__power__state__transition.html#a46e0ea66596a361c67d688b646260646":[29,0,76,1],
 "unionspdk__nvme__feat__autonomous__power__state__transition.html#a9311f1d84bfe298c3ea675dc2cfbdcdc":[29,0,76,3],
 "unionspdk__nvme__feat__error__recovery.html":[29,0,77],
 "unionspdk__nvme__feat__error__recovery.html#a0098f2820ebd035f3578d6c91defc2c5":[29,0,77,0],
@@ -186,6 +195,5 @@ var NAVTREEINDEX15 =
 "vhost_8h.html#af358eac95a16bd456349fcfaa00379bb":[30,0,45,10],
 "vhost_8h.html#afd7159f8eb1e0d65dad5bedaa6cc5e43":[30,0,45,18],
 "virtio.html":[28],
-"virtio.html#virtio_intro":[28,0],
-"virtio.html#virtio_limitations":[28,1]
+"virtio.html#virtio_intro":[28,0]
 };

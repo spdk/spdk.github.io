@@ -17,7 +17,8 @@ var bdev_8h =
       [ "SPDK_BDEV_IO_TYPE_NVME_ADMIN", "bdev_8h.html#a633029e24ab5ae4a689bffa2565a519faa50f563003db009f2aaa66fc1e8c4b83", null ],
       [ "SPDK_BDEV_IO_TYPE_NVME_IO", "bdev_8h.html#a633029e24ab5ae4a689bffa2565a519fa88e44705d375863181f5b64de01ab415", null ],
       [ "SPDK_BDEV_IO_TYPE_NVME_IO_MD", "bdev_8h.html#a633029e24ab5ae4a689bffa2565a519faaed3a468fd479a2abb44a4c9354e9130", null ],
-      [ "SPDK_BDEV_IO_TYPE_WRITE_ZEROES", "bdev_8h.html#a633029e24ab5ae4a689bffa2565a519fafe05a68dda7f3bdfa3d91bab8a92960a", null ]
+      [ "SPDK_BDEV_IO_TYPE_WRITE_ZEROES", "bdev_8h.html#a633029e24ab5ae4a689bffa2565a519fafe05a68dda7f3bdfa3d91bab8a92960a", null ],
+      [ "SPDK_BDEV_NUM_IO_TYPES", "bdev_8h.html#a633029e24ab5ae4a689bffa2565a519fab8b20053cecdcd7973f1c2d0dce2b457", null ]
     ] ],
     [ "spdk_bdev_status", "bdev_8h.html#ad6c166f5d928c2995df57c96a2977862", [
       [ "SPDK_BDEV_STATUS_INVALID", "bdev_8h.html#ad6c166f5d928c2995df57c96a2977862a8ae156ac27597e66878248e0b2ed0dff", null ],

@@ -1,5 +1,14 @@
 var NAVTREEINDEX9 =
 {
+"structiscsi__bhs__logout__req.html#a0669c514512db3f14b7bc4aa96166235":[29,0,7,14],
+"structiscsi__bhs__logout__req.html#a2f65885b0f9c2d311aecf859cb435ae6":[29,0,7,5],
+"structiscsi__bhs__logout__req.html#a3fa855e70217fbdb24c0030f19d7ef42":[29,0,7,10],
+"structiscsi__bhs__logout__req.html#a4a8555c297ad80974458ba83fa563ca0":[29,0,7,13],
+"structiscsi__bhs__logout__req.html#a52243b49a475526771eb4560ed0a56ca":[29,0,7,12],
+"structiscsi__bhs__logout__req.html#a55fdd792974b6f6ad351fa5bf89ae722":[29,0,7,6],
+"structiscsi__bhs__logout__req.html#a59a823abded26fd1bbd21723d01ff8e4":[29,0,7,0],
+"structiscsi__bhs__logout__req.html#a70ee05ff5bef2d722466eb4e7ac343eb":[29,0,7,2],
+"structiscsi__bhs__logout__req.html#a7fa5c50f49dc42aeaa82908688bf8f9e":[29,0,7,9],
 "structiscsi__bhs__logout__req.html#a95da57f1ab779d1c1b22f739c95734ad":[29,0,7,8],
 "structiscsi__bhs__logout__req.html#aad8294d1ff9814a18b35e4b211c84578":[29,0,7,1],
 "structiscsi__bhs__logout__req.html#ac768b12aa51ca3c20ac6de40754dd9d6":[29,0,7,11],
@@ -240,14 +249,5 @@ var NAVTREEINDEX9 =
 "structspdk__bs__dev.html#a6c67b881f2f954ef2eb879796a4dee5a":[29,0,25,0],
 "structspdk__bs__dev.html#a75564a4d0f1815b99c1fe1e1965b3770":[29,0,25,7],
 "structspdk__bs__dev.html#a7ae3bb18bf006e0f40f1ad36166a8369":[29,0,25,3],
-"structspdk__bs__dev.html#aa4d0643a03966df7b0538ea3240fe696":[29,0,25,1],
-"structspdk__bs__dev.html#ac3f9b4422f8c651e6a1975f77f1b4b62":[29,0,25,8],
-"structspdk__bs__dev__cb__args.html":[29,0,26],
-"structspdk__bs__dev__cb__args.html#a368888d71cceb311e5375f9bb114558e":[29,0,26,2],
-"structspdk__bs__dev__cb__args.html#a87004028ab4481b28c8e966ba7da1d70":[29,0,26,1],
-"structspdk__bs__dev__cb__args.html#a9f8fc535e2b300590c671b0b3968d22f":[29,0,26,0],
-"structspdk__bs__opts.html":[29,0,27],
-"structspdk__bs__opts.html#a0c7b15264236f4b044731ca7c0de3014":[29,0,27,6],
-"structspdk__bs__opts.html#a3d51d3733be73f4a76776d0523232230":[29,0,27,3],
-"structspdk__bs__opts.html#a63e0b619fedc29159dffd7feca08396b":[29,0,27,5]
+"structspdk__bs__dev.html#aa4d0643a03966df7b0538ea3240fe696":[29,0,25,1]
 };

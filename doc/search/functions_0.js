@@ -191,6 +191,7 @@ var searchData=
   ['spdk_5ffor_5feach_5fchannel',['spdk_for_each_channel',['../io__channel_8h.html#aa7a2ca9bd0497544e852c65fd5263cd1',1,'io_channel.h']]],
   ['spdk_5ffor_5feach_5fchannel_5fcontinue',['spdk_for_each_channel_continue',['../io__channel_8h.html#a4e87fc8c0fc870769c068a2752cdc359',1,'io_channel.h']]],
   ['spdk_5ffor_5feach_5fthread',['spdk_for_each_thread',['../io__channel_8h.html#ae99d1833df09479af6b53ed605357062',1,'io_channel.h']]],
+  ['spdk_5ffree',['spdk_free',['../env_8h.html#a452d670d7188f883224574dfabc39f2c',1,'env.h']]],
   ['spdk_5ffree_5fthread',['spdk_free_thread',['../io__channel_8h.html#adfbbc16ee4c35466974ca6d5b5c6ee7d',1,'io_channel.h']]],
   ['spdk_5ffs_5falloc_5fio_5fchannel',['spdk_fs_alloc_io_channel',['../blobfs_8h.html#a3ba653cf26b62f1d18385bdc010c73b2',1,'blobfs.h']]],
   ['spdk_5ffs_5falloc_5fio_5fchannel_5fsync',['spdk_fs_alloc_io_channel_sync',['../blobfs_8h.html#ad226faaede088c8a82761bf1cb20b916',1,'blobfs.h']]],
@@ -262,6 +263,7 @@ var searchData=
   ['spdk_5flvs_5fopts_5finit',['spdk_lvs_opts_init',['../lvol_8h.html#a9ecc81d4bcd4fd9090deb20c1a9e0db8',1,'lvol.h']]],
   ['spdk_5flvs_5frename',['spdk_lvs_rename',['../lvol_8h.html#af406c5e7b0e7826b270c802b1431b76f',1,'lvol.h']]],
   ['spdk_5flvs_5funload',['spdk_lvs_unload',['../lvol_8h.html#a9f7032fa38dc1af638910018e07b0dd4',1,'lvol.h']]],
+  ['spdk_5fmalloc',['spdk_malloc',['../env_8h.html#a668370523a786a75a7d08a8e8f4b28b9',1,'env.h']]],
   ['spdk_5fmem_5fall_5fzero',['spdk_mem_all_zero',['../string_8h.html#ae013400d8f031493f284ed3b614357e0',1,'string.h']]],
   ['spdk_5fmem_5fmap_5falloc',['spdk_mem_map_alloc',['../env_8h.html#a512b5ef37a363a4c8e234c060b734605',1,'env.h']]],
   ['spdk_5fmem_5fmap_5fclear_5ftranslation',['spdk_mem_map_clear_translation',['../env_8h.html#a2fb4967ae71277512334ad27ef481326',1,'env.h']]],
@@ -275,6 +277,7 @@ var searchData=
   ['spdk_5fmempool_5fcreate_5fctor',['spdk_mempool_create_ctor',['../env_8h.html#a8981c2ba451d7214e157708a718db6c9',1,'env.h']]],
   ['spdk_5fmempool_5ffree',['spdk_mempool_free',['../env_8h.html#ab9d2feacf9f6979db875add06ab06494',1,'env.h']]],
   ['spdk_5fmempool_5fget',['spdk_mempool_get',['../env_8h.html#ada5041ebc03066dede6e0972c22dc77f',1,'env.h']]],
+  ['spdk_5fmempool_5fget_5fbulk',['spdk_mempool_get_bulk',['../env_8h.html#a5695d9dcc6f53a561f41c932a198853b',1,'env.h']]],
   ['spdk_5fmempool_5fget_5fname',['spdk_mempool_get_name',['../env_8h.html#aef50d2e8f2d7fccfd5c5edf95e5013d2',1,'env.h']]],
   ['spdk_5fmempool_5fput',['spdk_mempool_put',['../env_8h.html#a56233342766c54990e044b8ca2f3d41a',1,'env.h']]],
   ['spdk_5fmempool_5fput_5fbulk',['spdk_mempool_put_bulk',['../env_8h.html#ac3fc57c5f23f34aa1cf56ed355daa3b8',1,'env.h']]],
@@ -286,6 +289,7 @@ var searchData=
   ['spdk_5fnbd_5finit',['spdk_nbd_init',['../nbd_8h.html#a813a5507ececd5c8710ec9f1c3cdfec4',1,'nbd.h']]],
   ['spdk_5fnbd_5fstart',['spdk_nbd_start',['../nbd_8h.html#ac71f4b31e4dc69baf9ac2956b19f3418',1,'nbd.h']]],
   ['spdk_5fnbd_5fstop',['spdk_nbd_stop',['../nbd_8h.html#ac8a2c390228c132eda95dcffdc703154',1,'nbd.h']]],
+  ['spdk_5fnbd_5fwrite_5fconfig_5fjson',['spdk_nbd_write_config_json',['../nbd_8h.html#a7ca156715c43995bea24a642e563ed39',1,'nbd.h']]],
   ['spdk_5fnet_5fframework_5ffini',['spdk_net_framework_fini',['../net_8h.html#a3156a346c6cc0aa8cfdcfd26838665a2',1,'net.h']]],
   ['spdk_5fnet_5fframework_5fregister',['spdk_net_framework_register',['../net_8h.html#abc3295d98c59921fecdef4de0e944afd',1,'net.h']]],
   ['spdk_5fnet_5fframework_5fstart',['spdk_net_framework_start',['../net_8h.html#a5a23d8fff8a4648d5e0153c77df33264',1,'net.h']]],
@@ -516,5 +520,6 @@ var searchData=
   ['spdk_5fvtophys',['spdk_vtophys',['../env_8h.html#ae96a59dc23cf16ed24029ea50598be5b',1,'env.h']]],
   ['spdk_5fxattr_5fnames_5ffree',['spdk_xattr_names_free',['../blob_8h.html#ae17f3a52d52d9c3e9382cbcfae042c0a',1,'blob.h']]],
   ['spdk_5fxattr_5fnames_5fget_5fcount',['spdk_xattr_names_get_count',['../blob_8h.html#a113d71117843062da8a24906296b37a6',1,'blob.h']]],
-  ['spdk_5fxattr_5fnames_5fget_5fname',['spdk_xattr_names_get_name',['../blob_8h.html#ad0d58654483ac10df65d4b55356eff84',1,'blob.h']]]
+  ['spdk_5fxattr_5fnames_5fget_5fname',['spdk_xattr_names_get_name',['../blob_8h.html#ad0d58654483ac10df65d4b55356eff84',1,'blob.h']]],
+  ['spdk_5fzmalloc',['spdk_zmalloc',['../env_8h.html#a49ad245dae3554cf96d62e9b2b0b1596',1,'env.h']]]
 ];
