@@ -1,5 +1,6 @@
 var NAVTREEINDEX15 =
 {
+"unionspdk__nvme__feat__async__event__configuration.html#a572b3c7f8773804b8d0f3fa66ce9a35e":[29,0,75,2],
 "unionspdk__nvme__feat__async__event__configuration.html#a6230ed5b0608170ebde7bccee61cc50f":[29,0,75,3],
 "unionspdk__nvme__feat__async__event__configuration.html#a7e369c599d81ab33f93c69b1a7f8c7bd":[29,0,75,1],
 "unionspdk__nvme__feat__async__event__configuration.html#a7e91f0feb90898c53fbf1bcd5e277b93":[29,0,75,4],
@@ -195,5 +196,6 @@ var NAVTREEINDEX15 =
 "vhost_8h.html#af358eac95a16bd456349fcfaa00379bb":[30,0,45,10],
 "vhost_8h.html#afd7159f8eb1e0d65dad5bedaa6cc5e43":[30,0,45,18],
 "virtio.html":[28],
+"virtio.html#virtio_2mb":[28,1],
 "virtio.html#virtio_intro":[28,0]
 };
