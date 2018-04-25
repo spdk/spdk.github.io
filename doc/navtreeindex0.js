@@ -18,6 +18,7 @@ var NAVTREEINDEX0 =
 "bdev.html#bdev_config_nvme":[8,3],
 "bdev.html#bdev_config_pmem":[8,9],
 "bdev.html#bdev_config_rbd":[8,6],
+"bdev.html#bdev_config_virtio_blk":[8,11],
 "bdev.html#bdev_config_virtio_scsi":[8,10],
 "bdev.html#bdev_ug_delete_bdev":[8,2,1],
 "bdev.html#bdev_ug_general_rpcs":[8,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX0 =
 "conf_8h.html#a1526dbbe773ddf9a550bc3a455b66f02":[30,0,7,6],
 "conf_8h.html#a24b4df0d73d6c22e0534ff800ada9456":[30,0,7,7],
 "conf_8h.html#a2c19833437dd2be7bafc4d7ca07668d8":[30,0,7,14],
-"conf_8h.html#a50caf66f4c8cc0c93d0d9ae89a16816c":[30,0,7,2],
-"conf_8h.html#a6c2dc4e953a430f1988af5f210506715":[30,0,7,13]
+"conf_8h.html#a50caf66f4c8cc0c93d0d9ae89a16816c":[30,0,7,2]
 };

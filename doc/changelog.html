@@ -150,6 +150,8 @@ v18.04: (Upcoming Release)</h1>
 <h2>RPC</h2>
 <p>The Rpc configuration file section, which was deprecated in v18.01, has been removed. Users should switch to the <code>-r</code> command-line parameter instead.</p>
 <p>The JSON-RPC server implementation now allows up to 32 megabyte responses, growing as needed; previously, the response was limited to 32 kilobytes.</p>
+<h2>SPDKCLI</h2>
+<p>EXPERIMENTAL: New SPDKCLI interactive command tool for managing SPDK is available. See the <a href="http://www.spdk.io/doc/spdkcli.html">SPDKCLI</a> documentation for more details.</p>
 <h2>NVMe Driver</h2>
 <p>EXPERIMENTAL: Adds support for WDS and RDS capable CMBs in NVMe controllers. This support is experimental pending a functional allocator to free and reallocate CMB buffers.</p>
 <p><a class="el" href="nvme_8h.html#a6c559063408299a4612fd2e62f97bc63" title="Get the UUID for the given namespace. ">spdk_nvme_ns_get_uuid()</a> has been added to allow retrieval of per-namespace UUIDs when available.</p>
@@ -171,6 +173,8 @@ v18.04: (Upcoming Release)</h1>
 <p><a class="el" href="blob_8h.html#a70993dda1206b4c0aaa76deb2b6fd13c" title="Resize a blob to &#39;sz&#39; clusters. ">spdk_blob_resize()</a> is now an asynchronous operation to enable resizing a blob while I/O are in progress to that blob on other threads. An explicit <a class="el" href="blob_8h.html#a5acc48debefc30773518871e4f84480f" title="Sync a blob. ">spdk_blob_sync_md()</a> is still required to sync the updated metadata to disk.</p>
 <h2>Logical Volumes</h2>
 <p>A new <code>destroy_lvol_bdev</code> RPC method to delete logical volumes has been added.</p>
+<p>Lvols now have their own UUIDs which replace previous LvolStoreUUID_BlobID combination.</p>
+<p>New Snapshot and Clone funtionalities have been added. User may create Snapshots of existing Lvols and Clones of existing Snapshots. See the <a href="http://www.spdk.io/doc/logical_volumes.html#lvol_snapshots">lvol snapshots</a> documentation for more details.</p>
 <h2>Lib</h2>
 <p>A set of changes were made in the SPDK's lib code altering, instances of calls to <code>exit()</code> and <code>abort()</code> to return a failure instead wherever reasonably possible.</p>
 <p><a class="el" href="event_8h.html#a18879873a585b21f44b7c90be8726ce1" title="Start the framework. ">spdk_app_start()</a> no longer exit()'s on an internal failure, but instead returns a non-zero error status.</p>
@@ -182,6 +186,10 @@ v18.04: (Upcoming Release)</h1>
 <p>An iSCSI initiator bdev module has been added to SPDK. This module should be considered experimental pending additional features and tests. More details can be found in lib/bdev/iscsi/README.</p>
 <h2>PMDK</h2>
 <p>The persistent memory (PMDK) bdev module is now enabled using &ndash;with-pmdk instead of &ndash;with-nvml. This reflects the renaming of the persistent memory library from NVML to PMDK.</p>
+<h2>Virtio Block driver</h2>
+<p>A userspace driver for Virtio Block devices has been added. It was built on top of the <a href="http://www.spdk.io/doc/virtio.html">Virtio</a> library and can be managed similarly to the Virtio SCSI driver. See the <a href="http://www.spdk.io/doc/bdev.html#bdev_config_virtio_blk">Virtio Block</a> reference for more information.</p>
+<h2>Virtio with 2MB hugepages</h2>
+<p>Previous 1GB hugepage limitation has now been lifted. A new '-g' command-line option enables SPDK Virtio to work with 2MB hugepages. See <a href="http://www.spdk.io/doc/virtio.html#virtio_2mb">2MB hugepages</a> for details.</p>
 <h1><a class="anchor" id="changelog-v18-01"></a>
 v18.01: Blobstore Thin Provisioning</h1>
 <h2>Build System</h2>
