@@ -3,6 +3,7 @@ var jsonrpc_8h =
     [ "SPDK_JSONRPC_ERROR_INTERNAL_ERROR", "jsonrpc_8h.html#a1e2cef86b68fbf093df54c37ba1c2a4a", null ],
     [ "SPDK_JSONRPC_ERROR_INVALID_PARAMS", "jsonrpc_8h.html#a97fe9c9d3f9eb731dd9cf320318d43aa", null ],
     [ "SPDK_JSONRPC_ERROR_INVALID_REQUEST", "jsonrpc_8h.html#ae48bc3b476636afa0c58f7fd36cdc7d1", null ],
+    [ "SPDK_JSONRPC_ERROR_INVALID_STATE", "jsonrpc_8h.html#a0eb3dec195e22ff481e317f41b1b0d95", null ],
     [ "SPDK_JSONRPC_ERROR_METHOD_NOT_FOUND", "jsonrpc_8h.html#abc26b54313be26e70aadad6e11b1d548", null ],
     [ "SPDK_JSONRPC_ERROR_PARSE_ERROR", "jsonrpc_8h.html#ac5daba7e52db2743cc95dba00534ecd1", null ],
     [ "spdk_jsonrpc_handle_request_fn", "jsonrpc_8h.html#a74afccd199dde8aaebd020ac513cf819", null ],

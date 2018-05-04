@@ -134,6 +134,7 @@ var structspdk__nvme__ctrlr__data =
     [ "timestamp", "structspdk__nvme__ctrlr__data.html#a60af8e5e6eaaffa571623e549db76c1b", null ],
     [ "tnvmcap", "structspdk__nvme__ctrlr__data.html#a98e9469a8c01c25805c423ef8366b2df", null ],
     [ "total_size", "structspdk__nvme__ctrlr__data.html#a8c4f506c31a68602be2310336f2f7b8d", null ],
+    [ "transport_sgl", "structspdk__nvme__ctrlr__data.html#ab64b766b84e3f9843f51528057fc4916", null ],
     [ "unvmcap", "structspdk__nvme__ctrlr__data.html#aef21c15160a4556da6b2c2dbfee5749f", null ],
     [ "ver", "structspdk__nvme__ctrlr__data.html#a72c56d5a31899269b4f615905f501b72", null ],
     [ "vid", "structspdk__nvme__ctrlr__data.html#ab3503f576c3c6d932918bfe7003f8a5f", null ],
