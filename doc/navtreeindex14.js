@@ -1,5 +1,16 @@
 var NAVTREEINDEX14 =
 {
+"structspdk__scsi__cdb__inquiry__data.html#abed4844543f9a7f62d4713ed67a61f00":[29,0,147,5],
+"structspdk__scsi__cdb__inquiry__data.html#ac3c010d2963f4c21c7321cb700181797":[29,0,147,13],
+"structspdk__scsi__cdb__inquiry__data.html#af57d87435829df900cab07391fa8aa57":[29,0,147,10],
+"structspdk__scsi__desig__desc.html":[29,0,148],
+"structspdk__scsi__desig__desc.html#a0f236a83a90ea0b1d960fa52c65f4781":[29,0,148,5],
+"structspdk__scsi__desig__desc.html#a41337da5acd2e07aea9ce9dab147f460":[29,0,148,6],
+"structspdk__scsi__desig__desc.html#a4df254d0487bd0664ccddc2e26f51084":[29,0,148,0],
+"structspdk__scsi__desig__desc.html#a7a83bd4dcf1662f4678dadf823a68e9b":[29,0,148,1],
+"structspdk__scsi__desig__desc.html#aa798f99b973604bfccf793daaf35484f":[29,0,148,2],
+"structspdk__scsi__desig__desc.html#abf5d28b978089fa70e2890312e9b2118":[29,0,148,4],
+"structspdk__scsi__desig__desc.html#ad101ca3a06aa7b09c10c34f2fb465534":[29,0,148,8],
 "structspdk__scsi__desig__desc.html#ad4a6320044e4ec4d190528510661e41d":[29,0,148,3],
 "structspdk__scsi__desig__desc.html#add7dd85eec8f730e1452a102ee4735b3":[29,0,148,7],
 "structspdk__scsi__mpage__policy__desc.html":[29,0,149],
@@ -238,16 +249,5 @@ var NAVTREEINDEX14 =
 "unionspdk__nvme__csts__register.html#a68625e668e9fa90ad130f5620bc690ea":[29,0,68,4],
 "unionspdk__nvme__csts__register.html#a6ee892ce7d9f65a8d10f2b6090f9c9cf":[29,0,68,6],
 "unionspdk__nvme__csts__register.html#a86fc572fdd7a9850c188671e682b6ffa":[29,0,68,5],
-"unionspdk__nvme__csts__register.html#a9eadb3919064e4e1999d0a820de107f1":[29,0,68,1],
-"unionspdk__nvme__csts__register.html#ac749de13f98d84bbe72c11176c1d6393":[29,0,68,7],
-"unionspdk__nvme__feat__arbitration.html":[29,0,74],
-"unionspdk__nvme__feat__arbitration.html#a0eb3434752c3b8ea38f37556fa9fd116":[29,0,74,3],
-"unionspdk__nvme__feat__arbitration.html#a17914eaaf47a25d7edd809aa2f74331b":[29,0,74,5],
-"unionspdk__nvme__feat__arbitration.html#a1c72624e805ff324a05c6e9e592cd11a":[29,0,74,2],
-"unionspdk__nvme__feat__arbitration.html#a28d37ecf81e25a86b65539d93fb39e90":[29,0,74,4],
-"unionspdk__nvme__feat__arbitration.html#a47fb9a1efe9cd17abfa3a8b198919e34":[29,0,74,0],
-"unionspdk__nvme__feat__arbitration.html#adf75c78bf903f8c75d0ae8bf9bf863d5":[29,0,74,1],
-"unionspdk__nvme__feat__arbitration.html#af12378890a3a12fc4a54e10b6103859e":[29,0,74,6],
-"unionspdk__nvme__feat__async__event__configuration.html":[29,0,75],
-"unionspdk__nvme__feat__async__event__configuration.html#a042e849ee18c493b3b0e04759745486e":[29,0,75,5]
+"unionspdk__nvme__csts__register.html#a9eadb3919064e4e1999d0a820de107f1":[29,0,68,1]
 };

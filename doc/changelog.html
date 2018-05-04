@@ -138,27 +138,35 @@ $(document).ready(function(){initNavTree('changelog.html','');});
 <div class="title">Changelog </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h1><a class="anchor" id="changelog-v18-04"></a>
-v18.04: (Upcoming Release)</h1>
+<div class="textblock"><h1><a class="anchor" id="changelog-v18-07"></a>
+v18.07: (Upcoming Release)</h1>
+<h1><a class="anchor" id="changelog-v18-04"></a>
+v18.04: Logical Volume Snapshot/Clone, iSCSI Initiator, Bdev QoS, VPP Userspace TCP/IP</h1>
 <h2>vhost</h2>
 <p>The SPDK vhost-scsi, vhost-blk and vhost-nvme applications have fixes to address the DPDK rte_vhost vulnerability <a href="http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-1059">CVE-2018-1059</a>. Please see this <a href="https://access.redhat.com/security/cve/cve-2018-1059">security advisory</a> for additional information on the DPDK vulnerability.</p>
+<p>Workarounds have been added to ensure vhost compatibility with QEMU 2.12.</p>
+<p>EXPERIMENTAL: Support for vhost-nvme has been added to the SPDK vhost target. See the <a href="http://www.spdk.io/doc/vhost.html">vhost documentation</a> for more details.</p>
+<h2>Unified Target Application</h2>
+<p>A new unified SPDK target application, <code>spdk_tgt</code>, has been added. This application combines the functionality of several existing SPDK applications, including the iSCSI target, NVMe-oF target, and vhost target. The new application can be managed through the existing configuration file and <a href="http://www.spdk.io/doc/jsonrpc.html">JSON-RPC</a> methods.</p>
 <h2>Env</h2>
-<p>Add wrapper for DPDK rte_mempool_get_bulk() via <a class="el" href="env_8h.html#a5695d9dcc6f53a561f41c932a198853b" title="Get multiple elements from a memory pool. ">spdk_mempool_get_bulk()</a>.</p>
+<p><a class="el" href="env_8h.html#a5695d9dcc6f53a561f41c932a198853b" title="Get multiple elements from a memory pool. ">spdk_mempool_get_bulk()</a> has been added to wrap DPDK rte_mempool_get_bulk().</p>
 <p>New memory management functions <a class="el" href="env_8h.html#a668370523a786a75a7d08a8e8f4b28b9" title="Allocate dma/sharable memory based on a given dma_flg. ">spdk_malloc()</a>, <a class="el" href="env_8h.html#a49ad245dae3554cf96d62e9b2b0b1596" title="Allocate dma/sharable memory based on a given dma_flg. ">spdk_zmalloc()</a>, and <a class="el" href="env_8h.html#a452d670d7188f883224574dfabc39f2c" title="Free buffer memory that was previously allocated with spdk_malloc() or spdk_zmalloc(). ">spdk_free()</a> have been added. These new functions have a <code>flags</code> parameter that allows the user to specify whether the allocated memory needs to be suitable for DMA and whether it should be shared across processes with the same shm_id. The new functions are intended to replace <a class="el" href="env_8h.html#a0874731c44ac31e4b14d91c6844a87d1" title="Allocate a pinned, physically contiguous memory buffer with the given size and alignment. ">spdk_dma_malloc()</a> and related functions, which will eventually be deprecated and removed.</p>
 <h2>Bdev</h2>
-<p>Add new optional bdev module interface function, init_complete, to notify bdev modules when the bdev subsystem initialization is complete. Useful for virtual bdevs that require notification that the set of initialization examine() calls is complete.</p>
+<p>A new optional bdev module interface function, <code>init_complete</code>, has been added to notify bdev modules when the bdev subsystem initialization is complete. This may be useful for virtual bdevs that require notification that the set of initialization examine() calls is complete.</p>
+<p>The bdev layer now allows modules to provide an optional per-bdev UUID, which can be retrieved with the <a class="el" href="bdev_8h.html#add8565cdbf3d57697b67202b869a7beb" title="Get a bdev&#39;s UUID. ">spdk_bdev_get_uuid()</a> function.</p>
+<p>Enforcement of IOPS limits for quality of service (QoS) has been added to the bdev layer. See the <a href="http://www.spdk.io/doc/jsonrpc.html#rpc_set_bdev_qos_limit_iops">set_bdev_qos_limit_iops</a> documentation for more details.</p>
 <h2>RPC</h2>
-<p>The Rpc configuration file section, which was deprecated in v18.01, has been removed. Users should switch to the <code>-r</code> command-line parameter instead.</p>
+<p>The <code>[Rpc]</code> configuration file section, which was deprecated in v18.01, has been removed. Users should switch to the <code>-r</code> command-line parameter instead.</p>
 <p>The JSON-RPC server implementation now allows up to 32 megabyte responses, growing as needed; previously, the response was limited to 32 kilobytes.</p>
 <h2>SPDKCLI</h2>
 <p>EXPERIMENTAL: New SPDKCLI interactive command tool for managing SPDK is available. See the <a href="http://www.spdk.io/doc/spdkcli.html">SPDKCLI</a> documentation for more details.</p>
 <h2>NVMe Driver</h2>
-<p>EXPERIMENTAL: Adds support for WDS and RDS capable CMBs in NVMe controllers. This support is experimental pending a functional allocator to free and reallocate CMB buffers.</p>
+<p>EXPERIMENTAL: Support for WDS and RDS capable CMBs in NVMe controllers has been added. This support is experimental pending a functional allocator to free and reallocate CMB buffers.</p>
 <p><a class="el" href="nvme_8h.html#a6c559063408299a4612fd2e62f97bc63" title="Get the UUID for the given namespace. ">spdk_nvme_ns_get_uuid()</a> has been added to allow retrieval of per-namespace UUIDs when available.</p>
-<p>Added <a class="el" href="nvme_8h.html#a59e69f39c7cb8a9e1c3e00af7804c8bd" title="Return the nsid of the first active namespace, 0 if there are no active namespaces. ">spdk_nvme_ctrlr_get_first_active_ns()</a> and <a class="el" href="nvme_8h.html#abcd528b0df0a564c218dc2745c3af159" title="Return a next active namespace given the previous ns id, 0 when there are no more active namespaces...">spdk_nvme_ctrlr_get_next_active_ns()</a> to iterate active namespaces and <a class="el" href="nvme_8h.html#abbcdb6e7c22b0ef87ed927bf97952c19" title="Return true if nsid is an active ns for the given NVMe controller. ">spdk_nvme_ctrlr_is_active_ns()</a> to check if a ns id is active.</p>
+<p>New API functions <a class="el" href="nvme_8h.html#a59e69f39c7cb8a9e1c3e00af7804c8bd" title="Return the nsid of the first active namespace, 0 if there are no active namespaces. ">spdk_nvme_ctrlr_get_first_active_ns()</a> and <a class="el" href="nvme_8h.html#abcd528b0df0a564c218dc2745c3af159" title="Return a next active namespace given the previous ns id, 0 when there are no more active namespaces...">spdk_nvme_ctrlr_get_next_active_ns()</a> have been added to iterate active namespaces, as well as <a class="el" href="nvme_8h.html#abbcdb6e7c22b0ef87ed927bf97952c19" title="Return true if nsid is an active ns for the given NVMe controller. ">spdk_nvme_ctrlr_is_active_ns()</a> to check if a namespace ID is active.</p>
 <h2>NVMe-oF Target</h2>
-<p>Namespaces may now be assigned unique identifiers via new optional "eui64" and "nguid" parameters to the <code>nvmf_subsystem_add_ns</code> RPC method.</p>
-<p><code>spdk_nvmf_subsystem_remove_ns</code> is now asynchronous and requires two additional arguments, cb_fn and cb_arg. cb_fn is a function pointer of type spdk_channel_for_each_cpl and cb_arg is a void pointer.</p>
+<p>Namespaces may now be assigned unique identifiers via new optional <code>eui64</code> and <code>nguid</code> parameters to the <code>nvmf_subsystem_add_ns</code> RPC method. Additionally, the NVMe-oF target automatically exposes the backing bdev's UUID as the namespace UUID when available.</p>
+<p><a class="el" href="nvmf_8h.html#a7fafa9106b94d650f0c1daa5c6d7090e" title="Remove a namespace from a subsytem. ">spdk_nvmf_subsystem_remove_ns()</a> is now asynchronous and requires a callback to indicate completion.</p>
 <h2>Blobstore</h2>
 <p>A number of functions have been renamed:</p>
 <ul>
@@ -175,21 +183,24 @@ v18.04: (Upcoming Release)</h1>
 <p>A new <code>destroy_lvol_bdev</code> RPC method to delete logical volumes has been added.</p>
 <p>Lvols now have their own UUIDs which replace previous LvolStoreUUID_BlobID combination.</p>
 <p>New Snapshot and Clone funtionalities have been added. User may create Snapshots of existing Lvols and Clones of existing Snapshots. See the <a href="http://www.spdk.io/doc/logical_volumes.html#lvol_snapshots">lvol snapshots</a> documentation for more details.</p>
+<p>Resizing logical volumes is now supported via the <code>resize_lvol_bdev</code> RPC method.</p>
 <h2>Lib</h2>
-<p>A set of changes were made in the SPDK's lib code altering, instances of calls to <code>exit()</code> and <code>abort()</code> to return a failure instead wherever reasonably possible.</p>
+<p>A set of changes were made in the SPDK's lib code altering instances of calls to <code>exit()</code> and <code>abort()</code> to return a failure instead wherever reasonably possible.</p>
 <p><a class="el" href="event_8h.html#a18879873a585b21f44b7c90be8726ce1" title="Start the framework. ">spdk_app_start()</a> no longer exit()'s on an internal failure, but instead returns a non-zero error status.</p>
 <p><a class="el" href="event_8h.html#af23f96e90919584f1d26616dd8f83fa6" title="Helper function for parsing arguments and printing usage messages. ">spdk_app_parse_args()</a> no longer exit()'s on help, '-h', or an invalid option, but instead returns SPDK_APP_PARSE_ARGS_HELP and SPDK_APP_PARSE_ARGS_FAIL, respectively, and SPDK_APP_PARSE_ARGS_SUCCESS on success.</p>
 <p><a class="el" href="env_8h.html#ae3779ef938c1a803ca521af9b5c61033" title="Get PCI device from the given address. ">spdk_pci_get_device()</a> has been deprecated and will be removed in SPDK v18.07.</p>
 <h2>I/O Channels</h2>
 <p>The prototype for <a class="el" href="io__channel_8h.html#a35c421accdc2a0a61bb7be916106293b" title="Callback function for a poller. ">spdk_poller_fn()</a> has been modified; it now returns a value indicating whether or not the poller did any work. Existing pollers will need to be updated to return a value.</p>
+<h2>iSCSI Target</h2>
+<p>The SPDK iSCSI target now supports the fd.io Vector Packet Processing (VPP) framework userspace TCP/IP stack. See the <a href="http://www.spdk.io/doc/iscsi.html#vpp">iSCSI VPP documentation</a> for more details.</p>
 <h2>iSCSI initiator</h2>
 <p>An iSCSI initiator bdev module has been added to SPDK. This module should be considered experimental pending additional features and tests. More details can be found in lib/bdev/iscsi/README.</p>
 <h2>PMDK</h2>
-<p>The persistent memory (PMDK) bdev module is now enabled using &ndash;with-pmdk instead of &ndash;with-nvml. This reflects the renaming of the persistent memory library from NVML to PMDK.</p>
+<p>The persistent memory (PMDK) bdev module is now enabled using <code>--with-pmdk</code> instead of <code>--with-nvml</code>. This reflects the renaming of the persistent memory library from NVML to PMDK.</p>
 <h2>Virtio Block driver</h2>
 <p>A userspace driver for Virtio Block devices has been added. It was built on top of the <a href="http://www.spdk.io/doc/virtio.html">Virtio</a> library and can be managed similarly to the Virtio SCSI driver. See the <a href="http://www.spdk.io/doc/bdev.html#bdev_config_virtio_blk">Virtio Block</a> reference for more information.</p>
 <h2>Virtio with 2MB hugepages</h2>
-<p>Previous 1GB hugepage limitation has now been lifted. A new '-g' command-line option enables SPDK Virtio to work with 2MB hugepages. See <a href="http://www.spdk.io/doc/virtio.html#virtio_2mb">2MB hugepages</a> for details.</p>
+<p>The previous 1GB hugepage limitation has now been lifted. A new <code>-g</code> command-line option enables SPDK Virtio to work with 2MB hugepages. See <a href="http://www.spdk.io/doc/virtio.html#virtio_2mb">2MB hugepages</a> for details.</p>
 <h1><a class="anchor" id="changelog-v18-01"></a>
 v18.01: Blobstore Thin Provisioning</h1>
 <h2>Build System</h2>

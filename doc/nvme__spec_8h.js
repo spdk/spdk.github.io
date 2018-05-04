@@ -389,6 +389,7 @@ var nvme__spec_8h =
       [ "SPDK_NVME_SGL_TYPE_SEGMENT", "nvme__spec_8h.html#a6aa934b2f75a2d0fc8a22f14627f5000aeb0be9312561f4f51da6a3e61fc59aac", null ],
       [ "SPDK_NVME_SGL_TYPE_LAST_SEGMENT", "nvme__spec_8h.html#a6aa934b2f75a2d0fc8a22f14627f5000a2b2f734a4a4e2497879bd5a4ed168cf5", null ],
       [ "SPDK_NVME_SGL_TYPE_KEYED_DATA_BLOCK", "nvme__spec_8h.html#a6aa934b2f75a2d0fc8a22f14627f5000ad1a6641bf95e6a16b72fb0bd01485c28", null ],
+      [ "SPDK_NVME_SGL_TYPE_TRANSPORT_DATA_BLOCK", "nvme__spec_8h.html#a6aa934b2f75a2d0fc8a22f14627f5000ac8e891a22e1d45ea900bdef3f6cabbd6", null ],
       [ "SPDK_NVME_SGL_TYPE_VENDOR_SPECIFIC", "nvme__spec_8h.html#a6aa934b2f75a2d0fc8a22f14627f5000aec6af5eb6eac4888e5eb2b9698db4698", null ]
     ] ],
     [ "spdk_nvme_sgls_supported", "nvme__spec_8h.html#af3e4102cda177c51a05a6bb02fa62b87", [

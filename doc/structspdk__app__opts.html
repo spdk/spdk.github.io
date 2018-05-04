@@ -143,6 +143,14 @@ $(document).ready(function(){initNavTree('structspdk__app__opts.html','');});
 
 <p>Event framework initialization options.  
  <a href="structspdk__app__opts.html#details">More...</a></p>
+<div class="dynheader">
+Collaboration diagram for spdk_app_opts:</div>
+<div class="dyncontent">
+<div class="center"><img src="structspdk__app__opts__coll__graph.png" border="0" usemap="#spdk__app__opts_coll__map" alt="Collaboration graph"/></div>
+<map name="spdk__app__opts_coll__map" id="spdk__app__opts_coll__map">
+<area shape="rect" id="node2" href="structspdk__pci__addr.html" title="spdk_pci_addr" alt="" coords="7,5,122,32"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
@@ -191,9 +199,21 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>hugepage_single_segme
 <tr class="memitem:a3621332b57cec3e2968063c6484451ad"><td class="memItemLeft" align="right" valign="top"><a id="a3621332b57cec3e2968063c6484451ad"></a>
 enum spdk_log_level&#160;</td><td class="memItemRight" valign="bottom"><b>print_level</b></td></tr>
 <tr class="separator:a3621332b57cec3e2968063c6484451ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1588a2f9d5a96fa56c9081ad84b7902a"><td class="memItemLeft" align="right" valign="top"><a id="a1588a2f9d5a96fa56c9081ad84b7902a"></a>
+size_t&#160;</td><td class="memItemRight" valign="bottom"><b>num_pci_addr</b></td></tr>
+<tr class="separator:a1588a2f9d5a96fa56c9081ad84b7902a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af27c1872b7544e7d3d077ae9bd5f27e6"><td class="memItemLeft" align="right" valign="top"><a id="af27c1872b7544e7d3d077ae9bd5f27e6"></a>
+struct <a class="el" href="structspdk__pci__addr.html">spdk_pci_addr</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>pci_blacklist</b></td></tr>
+<tr class="separator:af27c1872b7544e7d3d077ae9bd5f27e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b82ef17d584db64284a5851b5760e4c"><td class="memItemLeft" align="right" valign="top"><a id="a3b82ef17d584db64284a5851b5760e4c"></a>
+struct <a class="el" href="structspdk__pci__addr.html">spdk_pci_addr</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>pci_whitelist</b></td></tr>
+<tr class="separator:a3b82ef17d584db64284a5851b5760e4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a54842105e519787ce90254a80177c001"><td class="memItemLeft" align="right" valign="top"><a id="a54842105e519787ce90254a80177c001"></a>
 uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>max_delay_us</b></td></tr>
 <tr class="separator:a54842105e519787ce90254a80177c001"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a703388c6f0075cf0396e05925364ebc5"><td class="memItemLeft" align="right" valign="top"><a id="a703388c6f0075cf0396e05925364ebc5"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>delay_subsystem_init</b></td></tr>
+<tr class="separator:a703388c6f0075cf0396e05925364ebc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Event framework initialization options. </p>
