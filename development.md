@@ -127,6 +127,12 @@ Now open .git/config in a text editor and add these lines: (this will make pushi
   push = HEAD:refs/for/master
 ~~~
 
+You may also enable the git pre-commit and pre-push hooks to automatically check formatting and run the unit tests:
+
+~~~
+git config core.hooksPath .githooks
+~~~
+
 Now you should be all set!
 
 <a id="patch"></a>
