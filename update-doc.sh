@@ -6,7 +6,9 @@ cd $(dirname $0)
 
 repo=$(dirname $0)/spdk
 
-git clone --depth 1 http://github.com/spdk/spdk $repo
+git clone --depth 1 https://github.com/spdk/spdk $repo
+
+doc_version=$(git rev-parse HEAD)
 
 # Overwrite header and footer with the spdk.io versions
 cp _doc_header.html $repo/doc/header.html
@@ -18,6 +20,9 @@ git rm -rf doc
 cp -R $repo/doc/output/html doc
 git add doc
 rm -rf $repo
+
+echo "$doc_version" > _doc_version.txt
+git add _doc_version.txt
 
 echo
 echo "New docs generated"
