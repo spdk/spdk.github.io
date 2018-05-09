@@ -263,9 +263,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a86568eca8f0b4d0dc9bc59c5138fc7a5"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev_8h.html#a86568eca8f0b4d0dc9bc59c5138fc7a5">spdk_bdev_get_num_blocks</a> (const struct spdk_bdev *bdev)</td></tr>
 <tr class="memdesc:a86568eca8f0b4d0dc9bc59c5138fc7a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get size of block device in logical blocks.  <a href="#a86568eca8f0b4d0dc9bc59c5138fc7a5">More...</a><br /></td></tr>
 <tr class="separator:a86568eca8f0b4d0dc9bc59c5138fc7a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adac568aa59cb9bf73118b8290d347e27"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev_8h.html#adac568aa59cb9bf73118b8290d347e27">spdk_bdev_get_qos_ios_per_sec</a> (const struct spdk_bdev *bdev)</td></tr>
-<tr class="memdesc:adac568aa59cb9bf73118b8290d347e27"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get IOs per second of block device for the QoS rate limiting.  <a href="#adac568aa59cb9bf73118b8290d347e27">More...</a><br /></td></tr>
-<tr class="separator:adac568aa59cb9bf73118b8290d347e27"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95568575f25704de7831adccc0cad94b"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev_8h.html#a95568575f25704de7831adccc0cad94b">spdk_bdev_get_qos_ios_per_sec</a> (struct spdk_bdev *bdev)</td></tr>
+<tr class="memdesc:a95568575f25704de7831adccc0cad94b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get IOs per second of block device for the QoS rate limiting.  <a href="#a95568575f25704de7831adccc0cad94b">More...</a><br /></td></tr>
+<tr class="separator:a95568575f25704de7831adccc0cad94b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab4d238484b372a77ba130fbb70f83519"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev_8h.html#ab4d238484b372a77ba130fbb70f83519">spdk_bdev_get_buf_align</a> (const struct spdk_bdev *bdev)</td></tr>
 <tr class="memdesc:ab4d238484b372a77ba130fbb70f83519"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get minimum I/O buffer address alignment for a bdev.  <a href="#ab4d238484b372a77ba130fbb70f83519">More...</a><br /></td></tr>
 <tr class="separator:ab4d238484b372a77ba130fbb70f83519"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1044,8 +1044,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="adac568aa59cb9bf73118b8290d347e27"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adac568aa59cb9bf73118b8290d347e27">&#9670;&nbsp;</a></span>spdk_bdev_get_qos_ios_per_sec()</h2>
+<a id="a95568575f25704de7831adccc0cad94b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a95568575f25704de7831adccc0cad94b">&#9670;&nbsp;</a></span>spdk_bdev_get_qos_ios_per_sec()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1053,7 +1053,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">uint64_t spdk_bdev_get_qos_ios_per_sec </td>
           <td>(</td>
-          <td class="paramtype">const struct spdk_bdev *&#160;</td>
+          <td class="paramtype">struct spdk_bdev *&#160;</td>
           <td class="paramname"><em>bdev</em></td><td>)</td>
           <td></td>
         </tr>

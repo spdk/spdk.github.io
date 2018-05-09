@@ -273,6 +273,9 @@ union <a class="el" href="unionspdk__nvme__vs__register.html">spdk_nvme_vs_regis
 <tr class="memitem:a60d8173db83accb35f0c5fe1ec8261bf"><td class="memItemLeft" align="right" valign="top">struct spdk_pci_device *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a60d8173db83accb35f0c5fe1ec8261bf">spdk_nvme_ctrlr_get_pci_device</a> (struct spdk_nvme_ctrlr *ctrlr)</td></tr>
 <tr class="memdesc:a60d8173db83accb35f0c5fe1ec8261bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the PCI device of a given NVMe controller.  <a href="#a60d8173db83accb35f0c5fe1ec8261bf">More...</a><br /></td></tr>
 <tr class="separator:a60d8173db83accb35f0c5fe1ec8261bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac750410c9b53a0435d0111ae1e98913e"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#ac750410c9b53a0435d0111ae1e98913e">spdk_nvme_ctrlr_get_max_xfer_size</a> (const struct spdk_nvme_ctrlr *ctrlr)</td></tr>
+<tr class="memdesc:ac750410c9b53a0435d0111ae1e98913e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the maximum data transfer size of a given NVMe controller.  <a href="#ac750410c9b53a0435d0111ae1e98913e">More...</a><br /></td></tr>
+<tr class="separator:ac750410c9b53a0435d0111ae1e98913e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abbcdb6e7c22b0ef87ed927bf97952c19"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#abbcdb6e7c22b0ef87ed927bf97952c19">spdk_nvme_ctrlr_is_active_ns</a> (struct spdk_nvme_ctrlr *ctrlr, uint32_t nsid)</td></tr>
 <tr class="memdesc:abbcdb6e7c22b0ef87ed927bf97952c19"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if nsid is an active ns for the given NVMe controller.  <a href="#abbcdb6e7c22b0ef87ed927bf97952c19">More...</a><br /></td></tr>
 <tr class="separator:abbcdb6e7c22b0ef87ed927bf97952c19"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1681,6 +1684,28 @@ int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_retry_co
 
 <p>Return the nsid of the first active namespace, 0 if there are no active namespaces. </p>
 <p>This function is thread safe and can be called at any point while the controller is attached to the SPDK NVMe driver. </p>
+
+</div>
+</div>
+<a id="ac750410c9b53a0435d0111ae1e98913e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac750410c9b53a0435d0111ae1e98913e">&#9670;&nbsp;</a></span>spdk_nvme_ctrlr_get_max_xfer_size()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t spdk_nvme_ctrlr_get_max_xfer_size </td>
+          <td>(</td>
+          <td class="paramtype">const struct spdk_nvme_ctrlr *&#160;</td>
+          <td class="paramname"><em>ctrlr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the maximum data transfer size of a given NVMe controller. </p>
+<dl class="section return"><dt>Returns</dt><dd>Maximum data transfer size of the NVMe controller in bytes.</dd></dl>
+<p>The I/O command helper functions, such as <a class="el" href="nvme_8h.html#a084c6ecb53bd810fbb5051100b79bec5" title="Submits a read I/O to the specified NVMe namespace. ">spdk_nvme_ns_cmd_read()</a>, will split large I/Os automatically; however, it is up to the user to obey this limit for commands submitted with the raw command functions, such as <a class="el" href="nvme_8h.html#a1e3def668122e76abbfb74305f118291" title="Send the given NVM I/O command to the NVMe controller. ">spdk_nvme_ctrlr_cmd_io_raw()</a>. </p>
 
 </div>
 </div>
