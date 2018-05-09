@@ -140,6 +140,9 @@ $(document).ready(function(){initNavTree('changelog.html','');});
 <div class="contents">
 <div class="textblock"><h1><a class="anchor" id="changelog-v18-07"></a>
 v18.07: (Upcoming Release)</h1>
+<h2>git pre-commit and pre-push hooks</h2>
+<p>The pre-commit hook will run <code>scripts/check_format.sh</code> and verify there are no formating errors before allowing <code>git commit</code> to run. The pre-push hook runs <code>make CONFIG_WERROR=y</code> with and without <code>CONFIG_DEBUG=y</code> using both the gcc and clang compiler before allowing <code>git push</code> to run. Following each DEBUG build <code>test/unit/unittest.sh</code> is run and verified. Results are recorded in the <code>make.log</code> file.</p>
+<p>To enable type: 'git config core.hooksPath .githooks'. To override after configuration use the <code>git --no-verify</code> flag.</p>
 <h1><a class="anchor" id="changelog-v18-04"></a>
 v18.04: Logical Volume Snapshot/Clone, iSCSI Initiator, Bdev QoS, VPP Userspace TCP/IP</h1>
 <h2>vhost</h2>
