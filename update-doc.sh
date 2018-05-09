@@ -8,7 +8,7 @@ repo=$(dirname $0)/spdk
 
 git clone --depth 1 https://github.com/spdk/spdk $repo
 
-doc_version=$(git rev-parse HEAD)
+doc_version=$(cd $repo; git rev-parse HEAD)
 
 # Overwrite header and footer with the spdk.io versions
 cp _doc_header.html $repo/doc/header.html
