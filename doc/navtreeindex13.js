@@ -220,6 +220,7 @@ var NAVTREEINDEX13 =
 "structspdk__nvmf__tgt__opts.html#a72bd5fb022bc78170f525847246a3a05":[29,0,142,2],
 "structspdk__nvmf__tgt__opts.html#a91e4616c597db06eaebb975a690a7e49":[29,0,142,3],
 "structspdk__nvmf__tgt__opts.html#ae1cb9860a211ac733d2cde8e56957cba":[29,0,142,1],
+"structspdk__nvmf__tgt__opts.html#af318f26d31c3cc5b84c0c6a62fd4e0a4":[29,0,142,4],
 "structspdk__nvmf__tgt__opts.html#af39b51b0f1d911a7d619e8ac54cb1752":[29,0,142,0],
 "structspdk__pci__addr.html":[29,0,144],
 "structspdk__pci__addr.html#a4b8677cfade6b86f0f12339a404bb539":[29,0,144,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX13 =
 "structspdk__scsi__cdb__inquiry__data.html#a7d1acbb65e5a8f88001fb1c200bc4c7a":[29,0,147,15],
 "structspdk__scsi__cdb__inquiry__data.html#a818a9ebbf285a85ec40a4df2af289078":[29,0,147,3],
 "structspdk__scsi__cdb__inquiry__data.html#a8bb2d1e80a05877097f58af84fc7b736":[29,0,147,11],
-"structspdk__scsi__cdb__inquiry__data.html#a9acdee402c72fe9faf7b36323f207f51":[29,0,147,14],
-"structspdk__scsi__cdb__inquiry__data.html#abb0cf5a1dd2b64ad9e77bbe9753b3c15":[29,0,147,7]
+"structspdk__scsi__cdb__inquiry__data.html#a9acdee402c72fe9faf7b36323f207f51":[29,0,147,14]
 };

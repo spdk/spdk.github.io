@@ -276,8 +276,8 @@ var NAVTREEINDEX =
 "structspdk__ioat__xor__hw__desc.html#a95001c2c87a96fd754386c8fc6e7116f",
 "structspdk__nvme__dsm__range.html#a1ae2cac2417c24137dcb3e160eb3836c",
 "structspdk__nvme__reservation__ctrlr__data.html",
-"structspdk__scsi__cdb__inquiry__data.html#abba755e970ff144639b5430a9f343f1c",
-"unionspdk__nvme__csts__register.html#a9eadb3919064e4e1999d0a820de107f1"
+"structspdk__scsi__cdb__inquiry__data.html#abb0cf5a1dd2b64ad9e77bbe9753b3c15",
+"unionspdk__nvme__csts__register.html#a86fc572fdd7a9850c188671e682b6ffa"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
