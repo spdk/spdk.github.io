@@ -348,9 +348,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_
 <tr class="memitem:a90d0242f6123177ac5ac842732683ae2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_8h.html#a90d0242f6123177ac5ac842732683ae2">spdk_pci_virtio_enumerate</a> (spdk_pci_enum_cb enum_cb, void *enum_ctx)</td></tr>
 <tr class="memdesc:a90d0242f6123177ac5ac842732683ae2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enumerate virtio device.  <a href="#a90d0242f6123177ac5ac842732683ae2">More...</a><br /></td></tr>
 <tr class="separator:a90d0242f6123177ac5ac842732683ae2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae3779ef938c1a803ca521af9b5c61033"><td class="memItemLeft" align="right" valign="top">struct spdk_pci_device *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_8h.html#ae3779ef938c1a803ca521af9b5c61033">spdk_pci_get_device</a> (struct <a class="el" href="structspdk__pci__addr.html">spdk_pci_addr</a> *pci_addr)</td></tr>
-<tr class="memdesc:ae3779ef938c1a803ca521af9b5c61033"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get PCI device from the given address.  <a href="#ae3779ef938c1a803ca521af9b5c61033">More...</a><br /></td></tr>
-<tr class="separator:ae3779ef938c1a803ca521af9b5c61033"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab1964fc8e4bdbe6c8fc3002f063a6747"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_8h.html#ab1964fc8e4bdbe6c8fc3002f063a6747">spdk_pci_device_map_bar</a> (struct spdk_pci_device *dev, uint32_t bar, void **mapped_addr, uint64_t *phys_addr, uint64_t *size)</td></tr>
 <tr class="memdesc:ab1964fc8e4bdbe6c8fc3002f063a6747"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a mapping of the virtual address to the BAR of the PCI device.  <a href="#ab1964fc8e4bdbe6c8fc3002f063a6747">More...</a><br /></td></tr>
 <tr class="separator:ab1964fc8e4bdbe6c8fc3002f063a6747"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -2965,33 +2962,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 on success. </dd></dl>
-
-</div>
-</div>
-<a id="ae3779ef938c1a803ca521af9b5c61033"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae3779ef938c1a803ca521af9b5c61033">&#9670;&nbsp;</a></span>spdk_pci_get_device()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">struct spdk_pci_device* spdk_pci_get_device </td>
-          <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structspdk__pci__addr.html">spdk_pci_addr</a> *&#160;</td>
-          <td class="paramname"><em>pci_addr</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Get PCI device from the given address. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">pci_addr</td><td>A pointer to the PCI address struct.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>a pointer to the PCI device or NULL if no devide is found at the given address. </dd></dl>
 
 </div>
 </div>

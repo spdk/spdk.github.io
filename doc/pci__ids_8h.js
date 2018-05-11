@@ -53,6 +53,7 @@ var pci__ids_8h =
     [ "PCI_DEVICE_ID_VIRTIO_SCSI_MODERN", "pci__ids_8h.html#a31a60acef773be94be7bcd9611dc35e2", null ],
     [ "SPDK_PCI_ANY_ID", "pci__ids_8h.html#aa14eace64a7b729fc3ed3158cf04bdc9", null ],
     [ "SPDK_PCI_CLASS_NVME", "pci__ids_8h.html#a787047f67cc4dc5cdfb478bcd9066db2", null ],
+    [ "SPDK_PCI_VID_CNEXLABS", "pci__ids_8h.html#a45e560f5fd613e342084684052e9761d", null ],
     [ "SPDK_PCI_VID_INTEL", "pci__ids_8h.html#af3e3907a2992839573168aa160157029", null ],
     [ "SPDK_PCI_VID_MEMBLAZE", "pci__ids_8h.html#a53070d685a30ad4d9cf5af78bc9d2afd", null ],
     [ "SPDK_PCI_VID_VIRTIO", "pci__ids_8h.html#a470b98e3819df2bb0073aadada6b5b0e", null ],

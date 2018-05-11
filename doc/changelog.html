@@ -191,7 +191,7 @@ v18.04: Logical Volume Snapshot/Clone, iSCSI Initiator, Bdev QoS, VPP Userspace 
 <p>A set of changes were made in the SPDK's lib code altering instances of calls to <code>exit()</code> and <code>abort()</code> to return a failure instead wherever reasonably possible.</p>
 <p><a class="el" href="event_8h.html#a18879873a585b21f44b7c90be8726ce1" title="Start the framework. ">spdk_app_start()</a> no longer exit()'s on an internal failure, but instead returns a non-zero error status.</p>
 <p><a class="el" href="event_8h.html#af23f96e90919584f1d26616dd8f83fa6" title="Helper function for parsing arguments and printing usage messages. ">spdk_app_parse_args()</a> no longer exit()'s on help, '-h', or an invalid option, but instead returns SPDK_APP_PARSE_ARGS_HELP and SPDK_APP_PARSE_ARGS_FAIL, respectively, and SPDK_APP_PARSE_ARGS_SUCCESS on success.</p>
-<p><a class="el" href="env_8h.html#ae3779ef938c1a803ca521af9b5c61033" title="Get PCI device from the given address. ">spdk_pci_get_device()</a> has been deprecated and will be removed in SPDK v18.07.</p>
+<p>spdk_pci_get_device() has been deprecated and will be removed in SPDK v18.07.</p>
 <h2>I/O Channels</h2>
 <p>The prototype for <a class="el" href="io__channel_8h.html#a35c421accdc2a0a61bb7be916106293b" title="Callback function for a poller. ">spdk_poller_fn()</a> has been modified; it now returns a value indicating whether or not the poller did any work. Existing pollers will need to be updated to return a value.</p>
 <h2>iSCSI Target</h2>
