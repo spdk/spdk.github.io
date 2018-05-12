@@ -275,6 +275,9 @@ Functions</h2></td></tr>
 <tr class="memitem:aed4fb5871f9ca58ff60c0dd8810eb223"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blob_8h.html#aed4fb5871f9ca58ff60c0dd8810eb223">spdk_bs_delete_blob</a> (struct spdk_blob_store *bs, spdk_blob_id blobid, spdk_blob_op_complete cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:aed4fb5871f9ca58ff60c0dd8810eb223"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delete an existing blob from the given blobstore.  <a href="#aed4fb5871f9ca58ff60c0dd8810eb223">More...</a><br /></td></tr>
 <tr class="separator:aed4fb5871f9ca58ff60c0dd8810eb223"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d1f1b56d9782997ef3e338879a2fa28"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blob_8h.html#a3d1f1b56d9782997ef3e338879a2fa28">spdk_bs_inflate_blob</a> (struct spdk_blob_store *bs, struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *channel, spdk_blob_id blobid, spdk_blob_op_complete cb_fn, void *cb_arg)</td></tr>
+<tr class="memdesc:a3d1f1b56d9782997ef3e338879a2fa28"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate all unallocated clusters in this blob and copy data from backing blob.  <a href="#a3d1f1b56d9782997ef3e338879a2fa28">More...</a><br /></td></tr>
+<tr class="separator:a3d1f1b56d9782997ef3e338879a2fa28"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2c60e6bc3ccd26228dec2c0f3ecfe618"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blob_8h.html#a2c60e6bc3ccd26228dec2c0f3ecfe618">spdk_bs_open_blob</a> (struct spdk_blob_store *bs, spdk_blob_id blobid, spdk_blob_op_with_handle_complete cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:a2c60e6bc3ccd26228dec2c0f3ecfe618"><td class="mdescLeft">&#160;</td><td class="mdescRight">Open a blob from the given blobstore.  <a href="#a2c60e6bc3ccd26228dec2c0f3ecfe618">More...</a><br /></td></tr>
 <tr class="separator:a2c60e6bc3ccd26228dec2c0f3ecfe618"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -314,24 +317,6 @@ Functions</h2></td></tr>
 <tr class="memitem:a0291498c4cac92556e0e7e7bf286bda6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blob_8h.html#a0291498c4cac92556e0e7e7bf286bda6">spdk_blob_io_write_zeroes</a> (struct spdk_blob *blob, struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *channel, uint64_t offset, uint64_t length, spdk_blob_op_complete cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:a0291498c4cac92556e0e7e7bf286bda6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write zeros into area of a blob.  <a href="#a0291498c4cac92556e0e7e7bf286bda6">More...</a><br /></td></tr>
 <tr class="separator:a0291498c4cac92556e0e7e7bf286bda6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0e58ec4d1598111f55764b3d7b2ab836"><td class="memItemLeft" align="right" valign="top"><a id="a0e58ec4d1598111f55764b3d7b2ab836"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bs_io_write_blob</b> (struct spdk_blob *blob, struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *channel, void *payload, uint64_t offset, uint64_t length, spdk_blob_op_complete cb_fn, void *cb_arg)</td></tr>
-<tr class="separator:a0e58ec4d1598111f55764b3d7b2ab836"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a746b15e4e16a2c1817b6a90a62bbfea1"><td class="memItemLeft" align="right" valign="top"><a id="a746b15e4e16a2c1817b6a90a62bbfea1"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bs_io_read_blob</b> (struct spdk_blob *blob, struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *channel, void *payload, uint64_t offset, uint64_t length, spdk_blob_op_complete cb_fn, void *cb_arg)</td></tr>
-<tr class="separator:a746b15e4e16a2c1817b6a90a62bbfea1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaffa1dac228cf58fd62bcdc54fce7f50"><td class="memItemLeft" align="right" valign="top"><a id="aaffa1dac228cf58fd62bcdc54fce7f50"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bs_io_writev_blob</b> (struct spdk_blob *blob, struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *channel, struct iovec *iov, int iovcnt, uint64_t offset, uint64_t length, spdk_blob_op_complete cb_fn, void *cb_arg)</td></tr>
-<tr class="separator:aaffa1dac228cf58fd62bcdc54fce7f50"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6b34d86049ce311335300dc1d4bf5c8a"><td class="memItemLeft" align="right" valign="top"><a id="a6b34d86049ce311335300dc1d4bf5c8a"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bs_io_readv_blob</b> (struct spdk_blob *blob, struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *channel, struct iovec *iov, int iovcnt, uint64_t offset, uint64_t length, spdk_blob_op_complete cb_fn, void *cb_arg)</td></tr>
-<tr class="separator:a6b34d86049ce311335300dc1d4bf5c8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a63c574b3b185e1c1346fefefe3b3cbd3"><td class="memItemLeft" align="right" valign="top"><a id="a63c574b3b185e1c1346fefefe3b3cbd3"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bs_io_unmap_blob</b> (struct spdk_blob *blob, struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *channel, uint64_t offset, uint64_t length, spdk_blob_op_complete cb_fn, void *cb_arg)</td></tr>
-<tr class="separator:a63c574b3b185e1c1346fefefe3b3cbd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a92380cc88d91e023817ad35957cab3ac"><td class="memItemLeft" align="right" valign="top"><a id="a92380cc88d91e023817ad35957cab3ac"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bs_io_write_zeroes_blob</b> (struct spdk_blob *blob, struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *channel, uint64_t offset, uint64_t length, spdk_blob_op_complete cb_fn, void *cb_arg)</td></tr>
-<tr class="separator:a92380cc88d91e023817ad35957cab3ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af173fe4e35623b8dc8256e9141700486"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blob_8h.html#af173fe4e35623b8dc8256e9141700486">spdk_bs_iter_first</a> (struct spdk_blob_store *bs, spdk_blob_op_with_handle_complete cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:af173fe4e35623b8dc8256e9141700486"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the first blob of the blobstore.  <a href="#af173fe4e35623b8dc8256e9141700486">More...</a><br /></td></tr>
 <tr class="separator:af173fe4e35623b8dc8256e9141700486"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1975,6 +1960,65 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bs_io_write_zero
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">bs</td><td>blobstore. </td></tr>
+    <tr><td class="paramname">cb_fn</td><td>Called when the operation is complete. </td></tr>
+    <tr><td class="paramname">cb_arg</td><td>Argument passed to function cb_fn. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a3d1f1b56d9782997ef3e338879a2fa28"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d1f1b56d9782997ef3e338879a2fa28">&#9670;&nbsp;</a></span>spdk_bs_inflate_blob()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_bs_inflate_blob </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_blob_store *&#160;</td>
+          <td class="paramname"><em>bs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *&#160;</td>
+          <td class="paramname"><em>channel</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">spdk_blob_id&#160;</td>
+          <td class="paramname"><em>blobid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">spdk_blob_op_complete&#160;</td>
+          <td class="paramname"><em>cb_fn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>cb_arg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Allocate all unallocated clusters in this blob and copy data from backing blob. </p>
+<p>This call removes dependency on backing blob.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bs</td><td>blobstore. </td></tr>
+    <tr><td class="paramname">channel</td><td>IO channel used to inflate blob. </td></tr>
+    <tr><td class="paramname">blobid</td><td>The id of the blob to inflate. </td></tr>
     <tr><td class="paramname">cb_fn</td><td>Called when the operation is complete. </td></tr>
     <tr><td class="paramname">cb_arg</td><td>Argument passed to function cb_fn. </td></tr>
   </table>

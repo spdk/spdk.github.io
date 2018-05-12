@@ -1210,7 +1210,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_
     <tr><td class="paramname">align</td><td>Alignment value for the allocated memory. If '0', the allocated buffer is suitably aligned (in the same manner as malloc()). Otherwise, the allocated buffer is aligned to the multiple of align. In this case, it must be a power of two. </td></tr>
     <tr><td class="paramname">phys_addr</td><td>A pointer to the variable to hold the physical address of the allocated buffer is passed. If NULL, the physical address is not returned. </td></tr>
     <tr><td class="paramname">socket_id</td><td>Socket ID to allocate memory on, or SPDK_ENV_SOCKET_ID_ANY for any socket. </td></tr>
-    <tr><td class="paramname">flags</td><td>Combination of SPDK_MALLOC flags (<a class="el" href="env_8h.html#a7f065a5e897ff548b2dbf0996608929a">SPDK_MALLOC_DMA</a>, <a class="el" href="env_8h.html#ad1660ffa6731090ef3f480c295a87dba">SPDK_MALLOC_SHARE</a>).</td></tr>
+    <tr><td class="paramname">flags</td><td>Combination of SPDK_MALLOC flags (<a class="el" href="env_8h.html#a7f065a5e897ff548b2dbf0996608929a">SPDK_MALLOC_DMA</a>, <a class="el" href="env_8h.html#ad1660ffa6731090ef3f480c295a87dba">SPDK_MALLOC_SHARE</a>). At least one flag must be specified.</td></tr>
   </table>
   </dd>
 </dl>
