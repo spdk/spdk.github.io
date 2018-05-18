@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "23b1ad16_dc42a0dc",
+        "filename": "summit/us/2018.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 25,
+      "author": {
+        "id": 1010525
+      },
+      "writtenOn": "2018-05-18T15:40:03Z",
+      "side": 1,
+      "message": "OK, I just copied the titles from the event website, but I\u0027ll tweak them to all use title case.",
+      "parentUuid": "81c92aec_ae38e0fe",
+      "revId": "7ab38d199e862d48d563d2145f921a32bccd64d0",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "a62898f3_d4b4e5dc",
         "filename": "summit/us/2018.md",
         "patchSetId": 1
@@ -36,6 +54,24 @@
     },
     {
       "key": {
+        "uuid": "82c20dce_3e530a82",
+        "filename": "summit/us/2018.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 1010525
+      },
+      "writtenOn": "2018-05-18T15:40:03Z",
+      "side": 1,
+      "message": "Sure, I\u0027ll fill them all in.",
+      "parentUuid": "a62898f3_d4b4e5dc",
+      "revId": "7ab38d199e862d48d563d2145f921a32bccd64d0",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "79e8ad83_20df6478",
         "filename": "summit/us/2018.md",
         "patchSetId": 1
@@ -47,6 +83,24 @@
       "writtenOn": "2018-05-18T00:15:04Z",
       "side": 1,
       "message": "Do we not have the one that went between my two?",
+      "revId": "7ab38d199e862d48d563d2145f921a32bccd64d0",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "356ac6be_a248a961",
+        "filename": "summit/us/2018.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 56,
+      "author": {
+        "id": 1010525
+      },
+      "writtenOn": "2018-05-18T15:40:03Z",
+      "side": 1,
+      "message": "We\u0027re not permitted to post that one apparently (see Anu for details).",
+      "parentUuid": "79e8ad83_20df6478",
       "revId": "7ab38d199e862d48d563d2145f921a32bccd64d0",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": false
