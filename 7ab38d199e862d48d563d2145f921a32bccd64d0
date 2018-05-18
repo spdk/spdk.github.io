@@ -1,0 +1,89 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "81c92aec_ae38e0fe",
+        "filename": "summit/us/2018.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 25,
+      "author": {
+        "id": 1011289
+      },
+      "writtenOn": "2018-05-18T00:15:04Z",
+      "side": 1,
+      "message": "Probably use Caps on all the title words",
+      "revId": "7ab38d199e862d48d563d2145f921a32bccd64d0",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "a62898f3_d4b4e5dc",
+        "filename": "summit/us/2018.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 1011289
+      },
+      "writtenOn": "2018-05-18T00:15:04Z",
+      "side": 1,
+      "message": "should we at least put company names next to people\u0027s names to give a shout out to non-Intel folks - in some cases its in the title but not all",
+      "revId": "7ab38d199e862d48d563d2145f921a32bccd64d0",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "79e8ad83_20df6478",
+        "filename": "summit/us/2018.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 56,
+      "author": {
+        "id": 1011289
+      },
+      "writtenOn": "2018-05-18T00:15:04Z",
+      "side": 1,
+      "message": "Do we not have the one that went between my two?",
+      "revId": "7ab38d199e862d48d563d2145f921a32bccd64d0",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "6f31a706_ce6220c7",
+        "filename": "summit/us/2018.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 71,
+      "author": {
+        "id": 1011289
+      },
+      "writtenOn": "2018-05-18T00:15:04Z",
+      "side": 1,
+      "message": "Probably use caps in the title here",
+      "revId": "7ab38d199e862d48d563d2145f921a32bccd64d0",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "6e42bdf1_e2dc1e49",
+        "filename": "summit/us/2018.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 75,
+      "author": {
+        "id": 1011289
+      },
+      "writtenOn": "2018-05-18T00:15:04Z",
+      "side": 1,
+      "message": "Probably use Caps on all the title words",
+      "revId": "7ab38d199e862d48d563d2145f921a32bccd64d0",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
