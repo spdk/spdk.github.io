@@ -219,7 +219,7 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">data</td><td>Buffer to check. </td></tr>
-    <tr><td class="paramname">size</td><td>Size of data in bytes. </td></tr>
+    <tr><td class="paramname">size</td><td>Size of data in bytes.</td></tr>
   </table>
   </dd>
 </dl>
@@ -263,12 +263,13 @@ Functions</h2></td></tr>
 <p>The string can contain a trailing "B" (KB,MB,GB) but it's not necessary. "128K" = 128 * 1024; "2G" = 2 * 1024 * 1024; "2GB" = 2 * 1024 * 1024; Additionally, lowercase "k", "m", "g" are parsed as well. They are processed the same as their uppercase equivalents.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">cap_str</td><td>null terminated string </td></tr>
-    <tr><td class="paramname">cap</td><td>pointer where the parsed capacity (in bytes) will be put </td></tr>
-    <tr><td class="paramname">has_prefix</td><td>pointer to a flag that will be set to describe whether given string contains a binary prefix  0 on success, negative errno otherwise </td></tr>
+    <tr><td class="paramname">cap_str</td><td>Null terminated string. </td></tr>
+    <tr><td class="paramname">cap</td><td>Pointer where the parsed capacity (in bytes) will be put. </td></tr>
+    <tr><td class="paramname">has_prefix</td><td>Pointer to a flag that will be set to describe whether given string contains a binary prefix.</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, or negative errno on failure. </dd></dl>
 
 </div>
 </div>
@@ -314,7 +315,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>0 if successful. -1 on error. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success. -1 on failure. </dd></dl>
 
 </div>
 </div>
@@ -345,7 +346,14 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>sprintf with automatic buffer allocation. </p>
-<p>The return value is the formatted string, which should be passed to free() when no longer needed, or NULL on failure. </p>
+<p>The return value is the formatted string, which should be passed to free() when no longer needed.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">format</td><td>Format for the string to print.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the formatted string on success, or NULL on failure. </dd></dl>
 
 </div>
 </div>
@@ -370,11 +378,11 @@ Functions</h2></td></tr>
  characters is removed from the end of the string.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">s</td><td>String to remove newline from. </td></tr>
+    <tr><td class="paramname">s</td><td>String to remove newline from.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Number of characters removed. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>the number of characters removed. </dd></dl>
 
 </div>
 </div>
@@ -397,10 +405,11 @@ Functions</h2></td></tr>
 <p>Trim whitespace from a string in place. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">s</td><td>String to trim. </td></tr>
+    <tr><td class="paramname">s</td><td>String to trim.</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>the trimmed string. </dd></dl>
 
 </div>
 </div>
@@ -443,16 +452,16 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Copy a string into a fixed-size buffer, padding extra bytes with a specific character. </p>
+<p>If src is longer than size, only size bytes will be copied.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">dst</td><td>Pointer to destination fixed-size buffer to fill. </td></tr>
     <tr><td class="paramname">src</td><td>Pointer to source null-terminated string to copy into dst. </td></tr>
     <tr><td class="paramname">size</td><td>Number of bytes to fill in dst. </td></tr>
-    <tr><td class="paramname">pad</td><td>Character to pad extra space in dst beyond the size of src.</td></tr>
+    <tr><td class="paramname">pad</td><td>Character to pad extra space in dst beyond the size of src. </td></tr>
   </table>
   </dd>
 </dl>
-<p>If src is longer than size, only size bytes will be copied. </p>
 
 </div>
 </div>
@@ -476,11 +485,11 @@ Functions</h2></td></tr>
 <p>This function is thread safe.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">errnum</td><td>Error code</td></tr>
+    <tr><td class="paramname">errnum</td><td>Error code.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>pointer to buffer upon success. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>a pointer to buffer upon success. </dd></dl>
 
 </div>
 </div>
@@ -519,9 +528,9 @@ Functions</h2></td></tr>
 <p>Copy the string version of an error into the user supplied buffer. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">errnum</td><td>Error code </td></tr>
-    <tr><td class="paramname">buf</td><td>Pointer to a buffer in which to place the error message </td></tr>
-    <tr><td class="paramname">buflen</td><td>the size of the buffer in bytes </td></tr>
+    <tr><td class="paramname">errnum</td><td>Error code. </td></tr>
+    <tr><td class="paramname">buf</td><td>Pointer to a buffer in which to place the error message. </td></tr>
+    <tr><td class="paramname">buflen</td><td>The size of the buffer in bytes. </td></tr>
   </table>
   </dd>
 </dl>
@@ -569,7 +578,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Length of the non-padded portion of str. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>the length of the non-padded portion of str. </dd></dl>
 
 </div>
 </div>
@@ -592,10 +601,11 @@ Functions</h2></td></tr>
 <p>Convert string to lowercase in place. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">s</td><td>String to convert to lowercase. </td></tr>
+    <tr><td class="paramname">s</td><td>String to convert to lowercase.</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>the converted string. </dd></dl>
 
 </div>
 </div>
@@ -626,6 +636,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Parse a delimited string with quote handling. </p>
+<p>Note that the string will be modified in place to add the string terminator to each field.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">stringp</td><td>Pointer to starting location in string. *stringp will be updated to point to the start of the next field, or NULL if the end of the string has been reached. </td></tr>
@@ -633,8 +644,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Pointer to beginning of the current field.</dd></dl>
-<p>Note that the string will be modified in place to add the string terminator to each field. </p>
+<dl class="section return"><dt>Returns</dt><dd>a pointer to beginning of the current field. </dd></dl>
 
 </div>
 </div>
@@ -665,7 +675,15 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>vsprintf with automatic buffer allocation. </p>
-<p>The return value is the formatted string, which should be passed to free() when no longer needed, or NULL on failure. </p>
+<p>The return value is the formatted string, which should be passed to free() when no longer needed.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">format</td><td>Format for the string to print. </td></tr>
+    <tr><td class="paramname">args</td><td>A value that identifies a variable arguments list.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the formatted string on success, or NULL on failure. </dd></dl>
 
 </div>
 </div>
