@@ -3,10 +3,41 @@ layout: default
 title:  "SPDK Roadmap"
 ---
 
-# Version 18.04 (planned for April 2018)
+# Version 18.07 (planned for July 2018)
 
-* [JSON-based Configuration](https://trello.com/c/U97MLUCJ)
+Planned Features:
+* Improved SPDK memory management
+* [Full JSON-based Configuration](https://trello.com/c/U97MLUCJ)
+* Encryption bdev
+* NVMe-oF target improvements
+  - Spec compliance work
+  - Multi-path support
+  - Namespace change notification
+* QoS: Read, Write, and Bandwidth Rate Limiting
+* NVMe
+  - Experimental Open Channel SSD support
+  - Error injection
+  - Multi-process timeout handling
+* iSCSI initiator optimizations
+* SPDKCLI
+
+# Version 18.04 (April 2018)
+
+[v18.04 release](https://github.com/spdk/spdk/releases/tag/v18.04)
+
+Features:
+* iSCSI target integration with VPP Userspace TCP/IP
+* Logical Volume Snapshot/Clone
 * [QoS in Bdev](https://trello.com/b/domGQvZc/qos-in-bdev)
+* Virtio-blk bdev support
+* Virtio with 2MB hugepages
+
+Experimental Features:
+* iSCSI Initiator bdev
+* Vhost-NVMe
+* SPDKCLI
+* NVMe CMB
+* [JSON-based Configuration](https://trello.com/c/U97MLUCJ)
 
 # Version 18.01 (January 2018)
 
