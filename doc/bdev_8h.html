@@ -176,6 +176,9 @@ typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_i
 <tr class="memitem:ad33efc88148d8984b353e54b7ee0058f"><td class="memItemLeft" align="right" valign="top"><a id="ad33efc88148d8984b353e54b7ee0058f"></a>
 typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_fini_cb</b>) (void *cb_arg)</td></tr>
 <tr class="separator:ad33efc88148d8984b353e54b7ee0058f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e2b47e30b56bc875b618beffced9662"><td class="memItemLeft" align="right" valign="top"><a id="a1e2b47e30b56bc875b618beffced9662"></a>
+typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_get_device_stat_cb</b>) (struct spdk_bdev *bdev, struct <a class="el" href="structspdk__bdev__io__stat.html">spdk_bdev_io_stat</a> *stat, void *cb_arg, int rc)</td></tr>
+<tr class="separator:a1e2b47e30b56bc875b618beffced9662"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
@@ -344,6 +347,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ab1ba28ba382edd1d792d51a054eb3aa2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev_8h.html#ab1ba28ba382edd1d792d51a054eb3aa2">spdk_bdev_get_io_stat</a> (struct spdk_bdev *bdev, struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *ch, struct <a class="el" href="structspdk__bdev__io__stat.html">spdk_bdev_io_stat</a> *stat)</td></tr>
 <tr class="memdesc:ab1ba28ba382edd1d792d51a054eb3aa2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return I/O statistics for this channel.  <a href="#ab1ba28ba382edd1d792d51a054eb3aa2">More...</a><br /></td></tr>
 <tr class="separator:ab1ba28ba382edd1d792d51a054eb3aa2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa478b43fc9e6e41c34438f5b2ef742d5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev_8h.html#aa478b43fc9e6e41c34438f5b2ef742d5">spdk_bdev_get_device_stat</a> (struct spdk_bdev *bdev, struct <a class="el" href="structspdk__bdev__io__stat.html">spdk_bdev_io_stat</a> *stat, spdk_bdev_get_device_stat_cb cb, void *cb_arg)</td></tr>
+<tr class="memdesc:aa478b43fc9e6e41c34438f5b2ef742d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return I/O statistics for this bdev.  <a href="#aa478b43fc9e6e41c34438f5b2ef742d5">More...</a><br /></td></tr>
+<tr class="separator:aa478b43fc9e6e41c34438f5b2ef742d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afe43254747db3cd072dfb596be3bbf2f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev_8h.html#afe43254747db3cd072dfb596be3bbf2f">spdk_bdev_io_get_nvme_status</a> (const struct spdk_bdev_io *bdev_io, int *sct, int *sc)</td></tr>
 <tr class="memdesc:afe43254747db3cd072dfb596be3bbf2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the status of bdev_io as an NVMe status code.  <a href="#afe43254747db3cd072dfb596be3bbf2f">More...</a><br /></td></tr>
 <tr class="separator:afe43254747db3cd072dfb596be3bbf2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -859,6 +865,57 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Block device associated with the name or NULL if no block device with bdev_name is currently registered. </dd></dl>
+
+</div>
+</div>
+<a id="aa478b43fc9e6e41c34438f5b2ef742d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa478b43fc9e6e41c34438f5b2ef742d5">&#9670;&nbsp;</a></span>spdk_bdev_get_device_stat()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_bdev_get_device_stat </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_bdev *&#160;</td>
+          <td class="paramname"><em>bdev</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structspdk__bdev__io__stat.html">spdk_bdev_io_stat</a> *&#160;</td>
+          <td class="paramname"><em>stat</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">spdk_bdev_get_device_stat_cb&#160;</td>
+          <td class="paramname"><em>cb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>cb_arg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Return I/O statistics for this bdev. </p>
+<p>All the required information will be passed via the callback function.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bdev</td><td>Block device to query. </td></tr>
+    <tr><td class="paramname">cb</td><td>Called when this operation completes. </td></tr>
+    <tr><td class="paramname">cb_arg</td><td>Argument passed to callback function. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

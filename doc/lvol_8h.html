@@ -221,6 +221,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a25631f8da88352a540abc55f52c0ef2e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lvol_8h.html#a25631f8da88352a540abc55f52c0ef2e">spdk_lvol_open</a> (struct spdk_lvol *lvol, <a class="el" href="lvol_8h.html#a453c8a7896aafb644e21e1e960ab3759">spdk_lvol_op_with_handle_complete</a> cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:a25631f8da88352a540abc55f52c0ef2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Open a lvol.  <a href="#a25631f8da88352a540abc55f52c0ef2e">More...</a><br /></td></tr>
 <tr class="separator:a25631f8da88352a540abc55f52c0ef2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a795f3fe355907d744d019d2b01f0aee9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lvol_8h.html#a795f3fe355907d744d019d2b01f0aee9">spdk_lvol_inflate</a> (struct spdk_lvol *lvol, <a class="el" href="lvol_8h.html#a4d5c96c4fe4512f99dcb3f1e5d5e86be">spdk_lvol_op_complete</a> cb_fn, void *cb_arg)</td></tr>
+<tr class="memdesc:a795f3fe355907d744d019d2b01f0aee9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inflate lvol.  <a href="#a795f3fe355907d744d019d2b01f0aee9">More...</a><br /></td></tr>
+<tr class="separator:a795f3fe355907d744d019d2b01f0aee9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Logical Volume Interface. </p>
@@ -600,6 +603,50 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>a pointer to the I/O channel. </dd></dl>
+
+</div>
+</div>
+<a id="a795f3fe355907d744d019d2b01f0aee9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a795f3fe355907d744d019d2b01f0aee9">&#9670;&nbsp;</a></span>spdk_lvol_inflate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_lvol_inflate </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_lvol *&#160;</td>
+          <td class="paramname"><em>lvol</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="lvol_8h.html#a4d5c96c4fe4512f99dcb3f1e5d5e86be">spdk_lvol_op_complete</a>&#160;</td>
+          <td class="paramname"><em>cb_fn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>cb_arg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Inflate lvol. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">lvol</td><td>Handle to lvol </td></tr>
+    <tr><td class="paramname">cb_fn</td><td>Completion callback </td></tr>
+    <tr><td class="paramname">cb_arg</td><td>Completion callback custom arguments </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

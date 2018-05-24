@@ -13,6 +13,7 @@ var lvol_8h =
     [ "spdk_lvol_create_snapshot", "lvol_8h.html#ab7a0818546003c24d2236c1f201fdf28", null ],
     [ "spdk_lvol_destroy", "lvol_8h.html#a87c4dadc88c211fb4e8ba0cddc474032", null ],
     [ "spdk_lvol_get_io_channel", "lvol_8h.html#a3e1700585830ce465b5a1479774c1f44", null ],
+    [ "spdk_lvol_inflate", "lvol_8h.html#a795f3fe355907d744d019d2b01f0aee9", null ],
     [ "spdk_lvol_open", "lvol_8h.html#a25631f8da88352a540abc55f52c0ef2e", null ],
     [ "spdk_lvol_rename", "lvol_8h.html#a3d5d8be84217db4879d5bf79fa5c23f6", null ],
     [ "spdk_lvs_destroy", "lvol_8h.html#ac2c5d67c2711ee149784f5e5e5be0b7a", null ],
