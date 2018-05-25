@@ -59,6 +59,7 @@ var nvme__spec_8h =
     [ "SPDK_NVME_ADMIN_QUEUE_MAX_ENTRIES", "nvme__spec_8h.html#afc394cf0b37e4ec245a604e0e48b2b82", null ],
     [ "SPDK_NVME_ADMIN_QUEUE_MIN_ENTRIES", "nvme__spec_8h.html#ae4c74c2bd741f5f291f3e4a032d04647", null ],
     [ "spdk_nvme_async_event_config", "nvme__spec_8h.html#ac26384c8970df6b7c9c074c1f9c4e00e", null ],
+    [ "SPDK_NVME_CAP_CSS_NVM", "nvme__spec_8h.html#a69a0ff119fce7fb11c4eb2a2f83c01d1", null ],
     [ "spdk_nvme_cpl_is_error", "nvme__spec_8h.html#a62b2e9dfaeda9fac684e7b456971c710", null ],
     [ "SPDK_NVME_CTRLR_FR_LEN", "nvme__spec_8h.html#ada253b591ac69e8446d4c4461b15b892", null ],
     [ "SPDK_NVME_CTRLR_MN_LEN", "nvme__spec_8h.html#a0e0d9b18cd903c7f3dcea29744494388", null ],
@@ -142,6 +143,9 @@ var nvme__spec_8h =
       [ "SPDK_NVME_CC_AMS_RR", "nvme__spec_8h.html#a7e72566466cae734d999e755524f7b20a5064340c35b2c9179d85de39edccdf6c", null ],
       [ "SPDK_NVME_CC_AMS_WRR", "nvme__spec_8h.html#a7e72566466cae734d999e755524f7b20a5c1162b2ac15358567bc0da6cfd2c62d", null ],
       [ "SPDK_NVME_CC_AMS_VS", "nvme__spec_8h.html#a7e72566466cae734d999e755524f7b20a5690f8273561b4be28e1f7d5ae5d8167", null ]
+    ] ],
+    [ "spdk_nvme_cc_css", "nvme__spec_8h.html#afafa64ef6a351ad580253d99ea1b3cd0", [
+      [ "SPDK_NVME_CC_CSS_NVM", "nvme__spec_8h.html#afafa64ef6a351ad580253d99ea1b3cd0ae7696e91d29ce6f6f5d3ba3adf9b5016", null ]
     ] ],
     [ "spdk_nvme_command_specific_status_code", "nvme__spec_8h.html#acb8784fad6a53be95d4c718ad3cf852e", [
       [ "SPDK_NVME_SC_COMPLETION_QUEUE_INVALID", "nvme__spec_8h.html#acb8784fad6a53be95d4c718ad3cf852ead6be90d650be8f24c4753c1cbf491c74", null ],

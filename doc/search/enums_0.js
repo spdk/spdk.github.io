@@ -11,6 +11,7 @@ var searchData=
   ['spdk_5fnvme_5fasync_5fevent_5ftype',['spdk_nvme_async_event_type',['../nvme__spec_8h.html#a36f8ec174eebd9dc8dcd78fbc9ef635a',1,'nvme_spec.h']]],
   ['spdk_5fnvme_5fcap_5fams',['spdk_nvme_cap_ams',['../nvme__spec_8h.html#adf6ad5ec9f8c1aa4c7efc45ee9d646b6',1,'nvme_spec.h']]],
   ['spdk_5fnvme_5fcc_5fams',['spdk_nvme_cc_ams',['../nvme__spec_8h.html#a7e72566466cae734d999e755524f7b20',1,'nvme_spec.h']]],
+  ['spdk_5fnvme_5fcc_5fcss',['spdk_nvme_cc_css',['../nvme__spec_8h.html#afafa64ef6a351ad580253d99ea1b3cd0',1,'nvme_spec.h']]],
   ['spdk_5fnvme_5fcommand_5fspecific_5fstatus_5fcode',['spdk_nvme_command_specific_status_code',['../nvme__spec_8h.html#acb8784fad6a53be95d4c718ad3cf852e',1,'nvme_spec.h']]],
   ['spdk_5fnvme_5fdata_5ftransfer',['spdk_nvme_data_transfer',['../nvme__spec_8h.html#adbe38e042bb939183ed8fd5c1685b2fc',1,'nvme_spec.h']]],
   ['spdk_5fnvme_5fdealloc_5flogical_5fblock_5fread_5fvalue',['spdk_nvme_dealloc_logical_block_read_value',['../nvme__spec_8h.html#a1c06fbd66f7572c43c51e6f106215b8d',1,'nvme_spec.h']]],

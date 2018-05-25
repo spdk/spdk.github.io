@@ -317,6 +317,10 @@ Macros</h2></td></tr>
 #define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme__spec_8h.html#a26ca66ff5a40e3916763aabbfb22ce14">SPDK_NVME_DATASET_MANAGEMENT_RANGE_MAX_BLOCKS</a>&#160;&#160;&#160;0xFFFFFFFFu</td></tr>
 <tr class="memdesc:a26ca66ff5a40e3916763aabbfb22ce14"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum number of blocks that may be specified in a single dataset management range. <br /></td></tr>
 <tr class="separator:a26ca66ff5a40e3916763aabbfb22ce14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69a0ff119fce7fb11c4eb2a2f83c01d1"><td class="memItemLeft" align="right" valign="top"><a id="a69a0ff119fce7fb11c4eb2a2f83c01d1"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme__spec_8h.html#a69a0ff119fce7fb11c4eb2a2f83c01d1">SPDK_NVME_CAP_CSS_NVM</a>&#160;&#160;&#160;(1u &lt;&lt; SPDK_NVME_CC_CSS_NVM)</td></tr>
+<tr class="memdesc:a69a0ff119fce7fb11c4eb2a2f83c01d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">NVM command set supported. <br /></td></tr>
+<tr class="separator:a69a0ff119fce7fb11c4eb2a2f83c01d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9760bf73611488342b5903ba702fd7b6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme__spec_8h.html#a9760bf73611488342b5903ba702fd7b6">SPDK_NVME_VERSION</a>(mjr,  mnr,  ter)</td></tr>
 <tr class="memdesc:a9760bf73611488342b5903ba702fd7b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate raw version in the same format as <a class="el" href="unionspdk__nvme__vs__register.html">spdk_nvme_vs_register</a> for comparison.  <a href="#a9760bf73611488342b5903ba702fd7b6">More...</a><br /></td></tr>
 <tr class="separator:a9760bf73611488342b5903ba702fd7b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -364,6 +368,10 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
+<tr class="memitem:afafa64ef6a351ad580253d99ea1b3cd0"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme__spec_8h.html#afafa64ef6a351ad580253d99ea1b3cd0">spdk_nvme_cc_css</a> { <a class="el" href="nvme__spec_8h.html#afafa64ef6a351ad580253d99ea1b3cd0ae7696e91d29ce6f6f5d3ba3adf9b5016">SPDK_NVME_CC_CSS_NVM</a> = 0x0
+ }<tr class="memdesc:afafa64ef6a351ad580253d99ea1b3cd0"><td class="mdescLeft">&#160;</td><td class="mdescRight">I/O Command Set Selected.  <a href="nvme__spec_8h.html#afafa64ef6a351ad580253d99ea1b3cd0">More...</a><br /></td></tr>
+</td></tr>
+<tr class="separator:afafa64ef6a351ad580253d99ea1b3cd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a57ea2eb3f8a34ee2657a960a9645432e"><td class="memItemLeft" align="right" valign="top"><a id="a57ea2eb3f8a34ee2657a960a9645432e"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_shn_value</b> { <b>SPDK_NVME_SHN_NORMAL</b> = 0x1, 
 <b>SPDK_NVME_SHN_ABRUPT</b> = 0x2
  }</td></tr>
@@ -1096,6 +1104,27 @@ Functions</h2></td></tr>
 <tr><td class="fieldname"><a id="a7e72566466cae734d999e755524f7b20a5c1162b2ac15358567bc0da6cfd2c62d"></a>SPDK_NVME_CC_AMS_WRR&#160;</td><td class="fielddoc"><p>weighted round robin </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a7e72566466cae734d999e755524f7b20a5690f8273561b4be28e1f7d5ae5d8167"></a>SPDK_NVME_CC_AMS_VS&#160;</td><td class="fielddoc"><p>vendor specific </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="afafa64ef6a351ad580253d99ea1b3cd0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afafa64ef6a351ad580253d99ea1b3cd0">&#9670;&nbsp;</a></span>spdk_nvme_cc_css</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="nvme__spec_8h.html#afafa64ef6a351ad580253d99ea1b3cd0">spdk_nvme_cc_css</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>I/O Command Set Selected. </p>
+<p>Only a single command set is defined as of NVMe 1.3 (NVM). </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="afafa64ef6a351ad580253d99ea1b3cd0ae7696e91d29ce6f6f5d3ba3adf9b5016"></a>SPDK_NVME_CC_CSS_NVM&#160;</td><td class="fielddoc"><p>NVM command set. </p>
 </td></tr>
 </table>
 

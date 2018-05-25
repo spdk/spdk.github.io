@@ -1,6 +1,11 @@
 var searchData=
 [
   ['spdk_5fbdev_5fio_5fcompletion_5fcb',['spdk_bdev_io_completion_cb',['../bdev_8h.html#a0c5602dfd313f90032dd91683b9663e3',1,'bdev.h']]],
+  ['spdk_5fchannel_5ffor_5feach_5fcpl',['spdk_channel_for_each_cpl',['../io__channel_8h.html#a96f03fe115196f1de03292ed6d86fd46',1,'io_channel.h']]],
+  ['spdk_5fchannel_5fmsg',['spdk_channel_msg',['../io__channel_8h.html#a2dd91f3094f8b4cf60f460e3f88bbf0c',1,'io_channel.h']]],
+  ['spdk_5fio_5fchannel_5fcreate_5fcb',['spdk_io_channel_create_cb',['../io__channel_8h.html#aed1d14292cfee8553d4a1ebb519b210a',1,'io_channel.h']]],
+  ['spdk_5fio_5fchannel_5fdestroy_5fcb',['spdk_io_channel_destroy_cb',['../io__channel_8h.html#a75aa6a61877f23f79bb75c8fc5e68202',1,'io_channel.h']]],
+  ['spdk_5fio_5fdevice_5funregister_5fcb',['spdk_io_device_unregister_cb',['../io__channel_8h.html#ae044f4141737c7f2df49cdfb03fd58ca',1,'io_channel.h']]],
   ['spdk_5fioat_5fattach_5fcb',['spdk_ioat_attach_cb',['../ioat_8h.html#a8826bf4e7c57228794f486368217a494',1,'ioat.h']]],
   ['spdk_5fioat_5fprobe_5fcb',['spdk_ioat_probe_cb',['../ioat_8h.html#a41d999ded01b3bc2b1a1bce0c48083a7',1,'ioat.h']]],
   ['spdk_5fioat_5freq_5fcb',['spdk_ioat_req_cb',['../ioat_8h.html#a143b0bad5a250a1a6d27b087be67627b',1,'ioat.h']]],
@@ -19,6 +24,10 @@ var searchData=
   ['spdk_5fnvme_5freq_5freset_5fsgl_5fcb',['spdk_nvme_req_reset_sgl_cb',['../nvme_8h.html#a0e1fcb43970ea531567ee00d4ee0675b',1,'nvme.h']]],
   ['spdk_5fnvme_5ftimeout_5fcb',['spdk_nvme_timeout_cb',['../nvme_8h.html#a53fe1c01a447be8fcd29821a668227a0',1,'nvme.h']]],
   ['spdk_5fpoller_5ffn',['spdk_poller_fn',['../io__channel_8h.html#a35c421accdc2a0a61bb7be916106293b',1,'io_channel.h']]],
+  ['spdk_5fstart_5fpoller',['spdk_start_poller',['../io__channel_8h.html#a6f70f5e9b4d498e843f81f1a6ada6370',1,'io_channel.h']]],
+  ['spdk_5fstop_5fpoller',['spdk_stop_poller',['../io__channel_8h.html#adfddbbbb13145f26741106cb8296a05a',1,'io_channel.h']]],
+  ['spdk_5fthread_5ffn',['spdk_thread_fn',['../io__channel_8h.html#a964c3690cb5eea9bcf2e0f91b001a239',1,'io_channel.h']]],
+  ['spdk_5fthread_5fpass_5fmsg',['spdk_thread_pass_msg',['../io__channel_8h.html#a72dfa5b3490733f3d307d2303a551661',1,'io_channel.h']]],
   ['spdk_5fvhost_5fevent_5ffn',['spdk_vhost_event_fn',['../vhost_8h.html#ac2c4b62eaf6503e5f5e520394f9f9fe1',1,'vhost.h']]],
   ['spdk_5fvhost_5ffini_5fcb',['spdk_vhost_fini_cb',['../vhost_8h.html#a8b37106ad173f20d05da87f89714700b',1,'vhost.h']]]
 ];
