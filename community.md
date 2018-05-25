@@ -29,19 +29,19 @@ Asia-friendly time.
 
 ## Next Euro-Friendly Meeting
 <div id="euro-mtg"></div>
-[Join via WebEx](https://intel.webex.com/intel/j.php?MTID=ma0bbb01329b3feb30a88fa38f8c60aed)<br/>
+[Join via WebEx](https://intel.webex.com/intel/j.php?MTID=m75a6c6a96903178b1725f810150caf6d)<br/>
 Or alternatively, by phone:<br/>
 +1-210-795-1110 US Toll<br/>
 +1-866-662-9987 US Toll Free<br/>
-Meeting number (access code): 599 406 861
+Meeting number (access code): 595 097 138
 
 ## Next Asia-Friendly Meeting
 <div id="asia-mtg"></div>
-[Join via WebEx](https://intel.webex.com/intel/j.php?MTID=m9d66f9edca0165483a6ff8515c487381)<br/>
+[Join via WebEx](https://intel.webex.com/intel/j.php?MTID=m6aabab242b8b52729cf97e64348d64e8)<br/>
 Or alternatively, by phone:<br/>
 +1-210-795-1110 US Toll<br/>
 +1-866-662-9987 US Toll Free<br/>
-Meeting number (access code): 599 975 172
+Meeting number (access code): 598 654 402
 
 Announcements will be made in IRC as well.
 
