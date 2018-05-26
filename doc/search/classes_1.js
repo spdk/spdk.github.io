@@ -1,7 +1,15 @@
 var searchData=
 [
   ['spdk_5fapp_5fopts',['spdk_app_opts',['../structspdk__app__opts.html',1,'']]],
+  ['spdk_5fbdev',['spdk_bdev',['../structspdk__bdev.html',1,'']]],
+  ['spdk_5fbdev_5falias',['spdk_bdev_alias',['../structspdk__bdev__alias.html',1,'']]],
+  ['spdk_5fbdev_5ffn_5ftable',['spdk_bdev_fn_table',['../structspdk__bdev__fn__table.html',1,'']]],
+  ['spdk_5fbdev_5fio',['spdk_bdev_io',['../structspdk__bdev__io.html',1,'']]],
   ['spdk_5fbdev_5fio_5fstat',['spdk_bdev_io_stat',['../structspdk__bdev__io__stat.html',1,'']]],
+  ['spdk_5fbdev_5fmodule',['spdk_bdev_module',['../structspdk__bdev__module.html',1,'']]],
+  ['spdk_5fbdev_5fpart',['spdk_bdev_part',['../structspdk__bdev__part.html',1,'']]],
+  ['spdk_5fbdev_5fpart_5fbase',['spdk_bdev_part_base',['../structspdk__bdev__part__base.html',1,'']]],
+  ['spdk_5fbdev_5fpart_5fchannel',['spdk_bdev_part_channel',['../structspdk__bdev__part__channel.html',1,'']]],
   ['spdk_5fblob_5fopts',['spdk_blob_opts',['../structspdk__blob__opts.html',1,'']]],
   ['spdk_5fblob_5fxattr_5fopts',['spdk_blob_xattr_opts',['../structspdk__blob__xattr__opts.html',1,'']]],
   ['spdk_5fblobfs_5fopts',['spdk_blobfs_opts',['../structspdk__blobfs__opts.html',1,'']]],

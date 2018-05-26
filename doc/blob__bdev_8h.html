@@ -141,20 +141,20 @@ $(document).ready(function(){initNavTree('blob__bdev_8h.html','');});
 </div><!--header-->
 <div class="contents">
 
-<p>Helper library to use spdk_bdev as the backing device for a blobstore.  
+<p>Helper library to use <a class="el" href="structspdk__bdev.html">spdk_bdev</a> as the backing device for a blobstore.  
 <a href="#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ad9acd1de03901617a7564d6cd4aec2bf"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structspdk__bs__dev.html">spdk_bs_dev</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blob__bdev_8h.html#ad9acd1de03901617a7564d6cd4aec2bf">spdk_bdev_create_bs_dev</a> (struct spdk_bdev *bdev, spdk_bdev_remove_cb_t remove_cb, void *remove_ctx)</td></tr>
+<tr class="memitem:ad9acd1de03901617a7564d6cd4aec2bf"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structspdk__bs__dev.html">spdk_bs_dev</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blob__bdev_8h.html#ad9acd1de03901617a7564d6cd4aec2bf">spdk_bdev_create_bs_dev</a> (struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *bdev, spdk_bdev_remove_cb_t remove_cb, void *remove_ctx)</td></tr>
 <tr class="memdesc:ad9acd1de03901617a7564d6cd4aec2bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a blobstore block device from a bdev.  <a href="#ad9acd1de03901617a7564d6cd4aec2bf">More...</a><br /></td></tr>
 <tr class="separator:ad9acd1de03901617a7564d6cd4aec2bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0499e5f00e93f3406989f281bd7122a6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blob__bdev_8h.html#a0499e5f00e93f3406989f281bd7122a6">spdk_bs_bdev_claim</a> (struct <a class="el" href="structspdk__bs__dev.html">spdk_bs_dev</a> *bs_dev, struct spdk_bdev_module *module)</td></tr>
+<tr class="memitem:a0499e5f00e93f3406989f281bd7122a6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blob__bdev_8h.html#a0499e5f00e93f3406989f281bd7122a6">spdk_bs_bdev_claim</a> (struct <a class="el" href="structspdk__bs__dev.html">spdk_bs_dev</a> *bs_dev, struct <a class="el" href="structspdk__bdev__module.html">spdk_bdev_module</a> *module)</td></tr>
 <tr class="memdesc:a0499e5f00e93f3406989f281bd7122a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Claim the bdev module for the given blobstore.  <a href="#a0499e5f00e93f3406989f281bd7122a6">More...</a><br /></td></tr>
 <tr class="separator:a0499e5f00e93f3406989f281bd7122a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Helper library to use spdk_bdev as the backing device for a blobstore. </p>
+<div class="textblock"><p>Helper library to use <a class="el" href="structspdk__bdev.html">spdk_bdev</a> as the backing device for a blobstore. </p>
 </div><h2 class="groupheader">Function Documentation</h2>
 <a id="ad9acd1de03901617a7564d6cd4aec2bf"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad9acd1de03901617a7564d6cd4aec2bf">&#9670;&nbsp;</a></span>spdk_bdev_create_bs_dev()</h2>
@@ -165,7 +165,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">struct <a class="el" href="structspdk__bs__dev.html">spdk_bs_dev</a>* spdk_bdev_create_bs_dev </td>
           <td>(</td>
-          <td class="paramtype">struct spdk_bdev *&#160;</td>
+          <td class="paramtype">struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *&#160;</td>
           <td class="paramname"><em>bdev</em>, </td>
         </tr>
         <tr>
@@ -216,7 +216,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">struct spdk_bdev_module *&#160;</td>
+          <td class="paramtype">struct <a class="el" href="structspdk__bdev__module.html">spdk_bdev_module</a> *&#160;</td>
           <td class="paramname"><em>module</em>&#160;</td>
         </tr>
         <tr>

@@ -267,7 +267,7 @@ Functions</h2></td></tr>
 <tr class="memitem:aa97d60b3fba2761118d21e411a08e542"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#aa97d60b3fba2761118d21e411a08e542">spdk_nvmf_ns_opts_get_defaults</a> (struct <a class="el" href="structspdk__nvmf__ns__opts.html">spdk_nvmf_ns_opts</a> *opts, size_t opts_size)</td></tr>
 <tr class="memdesc:aa97d60b3fba2761118d21e411a08e542"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get default namespace creation options.  <a href="#aa97d60b3fba2761118d21e411a08e542">More...</a><br /></td></tr>
 <tr class="separator:aa97d60b3fba2761118d21e411a08e542"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aef42bb5a50c6f6fa1713c060d66c103d"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#aef42bb5a50c6f6fa1713c060d66c103d">spdk_nvmf_subsystem_add_ns</a> (struct spdk_nvmf_subsystem *subsystem, struct spdk_bdev *bdev, const struct <a class="el" href="structspdk__nvmf__ns__opts.html">spdk_nvmf_ns_opts</a> *opts, size_t opts_size)</td></tr>
+<tr class="memitem:aef42bb5a50c6f6fa1713c060d66c103d"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#aef42bb5a50c6f6fa1713c060d66c103d">spdk_nvmf_subsystem_add_ns</a> (struct spdk_nvmf_subsystem *subsystem, struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *bdev, const struct <a class="el" href="structspdk__nvmf__ns__opts.html">spdk_nvmf_ns_opts</a> *opts, size_t opts_size)</td></tr>
 <tr class="memdesc:aef42bb5a50c6f6fa1713c060d66c103d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a namespace to a subsytem.  <a href="#aef42bb5a50c6f6fa1713c060d66c103d">More...</a><br /></td></tr>
 <tr class="separator:aef42bb5a50c6f6fa1713c060d66c103d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7fafa9106b94d650f0c1daa5c6d7090e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#a7fafa9106b94d650f0c1daa5c6d7090e">spdk_nvmf_subsystem_remove_ns</a> (struct spdk_nvmf_subsystem *subsystem, uint32_t nsid, spdk_nvmf_subsystem_state_change_done cb_fn, void *cb_arg)</td></tr>
@@ -285,7 +285,7 @@ Functions</h2></td></tr>
 <tr class="memitem:afdcd2be73f2653c6c14141c4cb481fe2"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#afdcd2be73f2653c6c14141c4cb481fe2">spdk_nvmf_ns_get_id</a> (const struct spdk_nvmf_ns *ns)</td></tr>
 <tr class="memdesc:afdcd2be73f2653c6c14141c4cb481fe2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a namespace's NSID.  <a href="#afdcd2be73f2653c6c14141c4cb481fe2">More...</a><br /></td></tr>
 <tr class="separator:afdcd2be73f2653c6c14141c4cb481fe2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af3575fee4a9db1b3c8bacbac8b605358"><td class="memItemLeft" align="right" valign="top">struct spdk_bdev *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#af3575fee4a9db1b3c8bacbac8b605358">spdk_nvmf_ns_get_bdev</a> (struct spdk_nvmf_ns *ns)</td></tr>
+<tr class="memitem:af3575fee4a9db1b3c8bacbac8b605358"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#af3575fee4a9db1b3c8bacbac8b605358">spdk_nvmf_ns_get_bdev</a> (struct spdk_nvmf_ns *ns)</td></tr>
 <tr class="memdesc:af3575fee4a9db1b3c8bacbac8b605358"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a namespace's associated bdev.  <a href="#af3575fee4a9db1b3c8bacbac8b605358">More...</a><br /></td></tr>
 <tr class="separator:af3575fee4a9db1b3c8bacbac8b605358"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af133c734616e019eecb372ce7b096ff5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#af133c734616e019eecb372ce7b096ff5">spdk_nvmf_ns_get_opts</a> (const struct spdk_nvmf_ns *ns, struct <a class="el" href="structspdk__nvmf__ns__opts.html">spdk_nvmf_ns_opts</a> *opts, size_t opts_size)</td></tr>
@@ -426,7 +426,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">struct spdk_bdev* spdk_nvmf_ns_get_bdev </td>
+          <td class="memname">struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a>* spdk_nvmf_ns_get_bdev </td>
           <td>(</td>
           <td class="paramtype">struct spdk_nvmf_ns *&#160;</td>
           <td class="paramname"><em>ns</em></td><td>)</td>
@@ -776,7 +776,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">struct spdk_bdev *&#160;</td>
+          <td class="paramtype">struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *&#160;</td>
           <td class="paramname"><em>bdev</em>, </td>
         </tr>
         <tr>

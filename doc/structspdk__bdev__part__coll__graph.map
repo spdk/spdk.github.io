@@ -1,0 +1,6 @@
+<map id="spdk_bdev_part" name="spdk_bdev_part">
+<area shape="rect" id="node2" href="$structspdk__bdev__part__base.html" title="spdk_bdev_part_base" alt="" coords="155,201,318,228"/>
+<area shape="rect" id="node3" href="$structspdk__bdev__module.html" title="Block device module. " alt="" coords="271,5,419,32"/>
+<area shape="rect" id="node5" href="$structspdk__bdev.html" title="spdk_bdev" alt="" coords="5,111,97,137"/>
+<area shape="rect" id="node4" href="$structspdk__bdev__fn__table.html" title="Function table for a block device backend. " alt="" coords="79,5,231,32"/>
+</map>

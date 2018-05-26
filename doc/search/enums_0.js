@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['spdk_5fbdev_5fio_5fstatus',['spdk_bdev_io_status',['../bdev__module_8h.html#aa35cc1485b6ba4351c2fb4fbd7125c93',1,'bdev_module.h']]],
   ['spdk_5fbdev_5fio_5ftype',['spdk_bdev_io_type',['../bdev_8h.html#a633029e24ab5ae4a689bffa2565a519f',1,'bdev.h']]],
   ['spdk_5fbdev_5fstatus',['spdk_bdev_status',['../bdev_8h.html#ad6c166f5d928c2995df57c96a2977862',1,'bdev.h']]],
   ['spdk_5fioat_5fdma_5fcapability_5fflags',['spdk_ioat_dma_capability_flags',['../ioat_8h.html#a9e773693f3aadb3dc526810a2e387402',1,'ioat.h']]],

@@ -14,6 +14,7 @@ var searchData=
   ['power_5fgovernor_5fsetting',['power_governor_setting',['../unionspdk__nvme__intel__feat__power__governor.html#aa25780c209e8e7d18133e16396cb235e',1,'spdk_nvme_intel_feat_power_governor']]],
   ['pp',['pp',['../unionspdk__nvme__csts__register.html#a36a07e6c600537241f579d52604b1de8',1,'spdk_nvme_csts_register']]],
   ['prkey',['prkey',['../structspdk__nvme__reservation__acquire__data.html#a7777dded0893794c13c35fd71173514f',1,'spdk_nvme_reservation_acquire_data']]],
+  ['product_5fname',['product_name',['../structspdk__bdev.html#ad3abe8a06500954332614d8657eaf1d9',1,'spdk_bdev']]],
   ['ps',['ps',['../unionspdk__nvme__feat__power__management.html#af68e833134cda1b00b750992bdd91342',1,'spdk_nvme_feat_power_management']]],
   ['ptpl_5fstate',['ptpl_state',['../structspdk__nvme__reservation__status__data.html#a092f959d5e4c94d1bad20e02c41ba3f0',1,'spdk_nvme_reservation_status_data']]]
 ];

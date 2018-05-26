@@ -3,6 +3,7 @@ var files =
     [ "assert.h", "assert_8h.html", "assert_8h" ],
     [ "barrier.h", "barrier_8h.html", "barrier_8h" ],
     [ "bdev.h", "bdev_8h.html", "bdev_8h" ],
+    [ "bdev_module.h", "bdev__module_8h.html", "bdev__module_8h" ],
     [ "bit_array.h", "bit__array_8h.html", "bit__array_8h" ],
     [ "blob.h", "blob_8h.html", "blob_8h" ],
     [ "blob_bdev.h", "blob__bdev_8h.html", "blob__bdev_8h" ],

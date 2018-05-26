@@ -14,9 +14,9 @@ var searchData=
   ['tpoint_5fcount',['tpoint_count',['../structspdk__trace__history.html#a5d36fc5a17dddc7e14b32aa1598a7ee8',1,'spdk_trace_history']]],
   ['traddr',['traddr',['../structspdk__nvme__transport__id.html#a4f8ed78319dff1a70923ab107c241b1b',1,'spdk_nvme_transport_id::traddr()'],['../structspdk__nvmf__discovery__log__page__entry.html#a549e9bb635b7ae387daceef8e5b27e68',1,'spdk_nvmf_discovery_log_page_entry::traddr()']]],
   ['transport_5fretry_5fcount',['transport_retry_count',['../structspdk__nvme__ctrlr__opts.html#ae2a14526f5856e3830b08994675841d8',1,'spdk_nvme_ctrlr_opts']]],
-  ['treq',['treq',['../structspdk__nvmf__discovery__log__page__entry.html#a0896a86d1bbcd37672f6e3ec1c676647',1,'spdk_nvmf_discovery_log_page_entry']]],
+  ['treq',['treq',['../structspdk__nvmf__discovery__log__page__entry.html#a94241259407cf21ed45461f3a565bdb6',1,'spdk_nvmf_discovery_log_page_entry']]],
   ['trsvcid',['trsvcid',['../structspdk__nvme__transport__id.html#a1d77d6f4fb1d3245f03a2e64a63ce64a',1,'spdk_nvme_transport_id::trsvcid()'],['../structspdk__nvmf__discovery__log__page__entry.html#a4b3b3ff4bd5f94e6ffe8a11b90b08caa',1,'spdk_nvmf_discovery_log_page_entry::trsvcid()']]],
   ['trtype',['trtype',['../structspdk__nvme__transport__id.html#a9817e079d0324db582be6655ebe1d2d6',1,'spdk_nvme_transport_id::trtype()'],['../structspdk__nvmf__discovery__log__page__entry.html#ad5db7a511e5a7b5bf342391e77ecb27d',1,'spdk_nvmf_discovery_log_page_entry::trtype()']]],
   ['tsas',['tsas',['../structspdk__nvmf__discovery__log__page__entry.html#ae6926468815fd6dbdd5ff136a4905057',1,'spdk_nvmf_discovery_log_page_entry']]],
-  ['type',['type',['../structspdk__json__val.html#a709cbbd71ebb3cdc9bb8daf5f2a19364',1,'spdk_json_val::type()'],['../structspdk__nvme__reservation__status__data.html#a89ad9fbdf5bf52b37eeb6bcfbd0246b5',1,'spdk_nvme_reservation_status_data::type()']]]
+  ['type',['type',['../structspdk__bdev__io.html#a4105d5a8419a66a6620d690da5649fcb',1,'spdk_bdev_io::type()'],['../structspdk__json__val.html#a709cbbd71ebb3cdc9bb8daf5f2a19364',1,'spdk_json_val::type()'],['../structspdk__nvme__reservation__status__data.html#a89ad9fbdf5bf52b37eeb6bcfbd0246b5',1,'spdk_nvme_reservation_status_data::type()']]]
 ];

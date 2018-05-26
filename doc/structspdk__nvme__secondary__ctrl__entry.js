@@ -7,6 +7,6 @@ var structspdk__nvme__secondary__ctrl__entry =
     [ "reserved", "structspdk__nvme__secondary__ctrl__entry.html#ab0cb9dd6be3791b90fedb5d580f867f1", null ],
     [ "reserved1", "structspdk__nvme__secondary__ctrl__entry.html#a21689c15024aef7fdfe2142b007188d7", null ],
     [ "scid", "structspdk__nvme__secondary__ctrl__entry.html#aceeb0796ff8bc1cf8e84a3fec5c553c9", null ],
-    [ "scs", "structspdk__nvme__secondary__ctrl__entry.html#a73325a288bc6248e635ec1b64ad41f7a", null ],
+    [ "scs", "structspdk__nvme__secondary__ctrl__entry.html#a5b802289972220c202d4f8fde6000b21", null ],
     [ "vfn", "structspdk__nvme__secondary__ctrl__entry.html#a1058df7181e33bc60bfd6d9782afd673", null ]
 ];
