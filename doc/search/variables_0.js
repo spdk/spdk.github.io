@@ -14,7 +14,7 @@ var searchData=
   ['af',['af',['../structspdk__nvme__dsm__range.html#a1ae2cac2417c24137dcb3e160eb3836c',1,'spdk_nvme_dsm_range']]],
   ['al',['al',['../structspdk__nvme__dsm__range.html#a85b10586b5cb2d6cbe0e4e8d92f913ef',1,'spdk_nvme_dsm_range']]],
   ['ams',['ams',['../unionspdk__nvme__cap__register.html#a75640e3e0a03f22456503acbebc20f46',1,'spdk_nvme_cap_register::ams()'],['../unionspdk__nvme__cc__register.html#a777a7cb16e88d976eca2f8073fde6c4b',1,'spdk_nvme_cc_register::ams()']]],
-  ['apsta',['apsta',['../structspdk__nvme__ctrlr__data.html#aa73a6900f4d09a6cefd8b204c85fe09b',1,'spdk_nvme_ctrlr_data']]],
+  ['apsta',['apsta',['../structspdk__nvme__ctrlr__data.html#a5bad30e0dbd698fa98b2735ae6637db8',1,'spdk_nvme_ctrlr_data']]],
   ['apste',['apste',['../unionspdk__nvme__feat__autonomous__power__state__transition.html#a022cc1ba5b7ff365a6b69989c663333a',1,'spdk_nvme_feat_autonomous_power_state_transition']]],
   ['aqa',['aqa',['../structspdk__nvme__registers.html#a5bf760e2a616ecb3f8d8fd0a64d24e61',1,'spdk_nvme_registers']]],
   ['arb_5fmechanism',['arb_mechanism',['../structspdk__nvme__ctrlr__opts.html#a183d97c9bda86a9ca47442bcbc69c444',1,'spdk_nvme_ctrlr_opts']]],
@@ -24,7 +24,7 @@ var searchData=
   ['asqsz',['asqsz',['../structspdk__nvmf__discovery__log__page__entry.html#aa64eafd0f0d0dd3820d88ec9a243b8a2',1,'spdk_nvmf_discovery_log_page_entry']]],
   ['async_5ffini',['async_fini',['../structspdk__bdev__module.html#ac702870ef6b1865ad85a606021e0f039',1,'spdk_bdev_module']]],
   ['async_5finit',['async_init',['../structspdk__bdev__module.html#af3a57fb52458d82248fac0570c80cc52',1,'spdk_bdev_module']]],
-  ['avscc',['avscc',['../structspdk__nvme__ctrlr__data.html#a274a0d9fb296942bd536f17dd966051f',1,'spdk_nvme_ctrlr_data']]],
+  ['avscc',['avscc',['../structspdk__nvme__ctrlr__data.html#a99b06388a2f7c5027fb1af40c5592459',1,'spdk_nvme_ctrlr_data']]],
   ['awun',['awun',['../structspdk__nvme__ctrlr__data.html#aa5a66788efbe912b16019c7b62b00a16',1,'spdk_nvme_ctrlr_data']]],
   ['awupf',['awupf',['../structspdk__nvme__ctrlr__data.html#a77160c6bcaa3ab4a312b42991603860e',1,'spdk_nvme_ctrlr_data']]]
 ];

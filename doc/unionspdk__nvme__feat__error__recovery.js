@@ -1,6 +1,6 @@
 var unionspdk__nvme__feat__error__recovery =
 [
-    [ "bits", "unionspdk__nvme__feat__error__recovery.html#afb4587b58fcf9f426798d06a99b1af84", null ],
+    [ "bits", "unionspdk__nvme__feat__error__recovery.html#aafa2cf0fcf1a223e5a2e4c3a55d437fa", null ],
     [ "dulbe", "unionspdk__nvme__feat__error__recovery.html#a85c441ab749eca8500b09add45336e0d", null ],
     [ "raw", "unionspdk__nvme__feat__error__recovery.html#a470249122d177e128016ebe292f83085", null ],
     [ "reserved", "unionspdk__nvme__feat__error__recovery.html#ae572c4a161ba9dcd9f26129dcb926fc3", null ],
