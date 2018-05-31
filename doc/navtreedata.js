@@ -235,6 +235,13 @@ var NAVTREE =
       ] ],
       [ "Known bugs and limitations", "vhost.html#vhost_bugs", null ]
     ] ],
+    [ "Vhost processing", "vhost_processing.html", [
+      [ "Table of Contents", "vhost_processing.html#vhost_processing_toc", null ],
+      [ "Introduction", "vhost_processing.html#vhost_processing_intro", null ],
+      [ "QEMU", "vhost_processing.html#vhost_processing_qemu", null ],
+      [ "Device initialization", "vhost_processing.html#vhost_processing_init", null ],
+      [ "I/O path", "vhost_processing.html#vhost_processing_io_path", null ]
+    ] ],
     [ "Virtio driver", "virtio.html", [
       [ "Introduction", "virtio.html#virtio_intro", null ],
       [ "2MB hugepages", "virtio.html#virtio_2mb", null ]

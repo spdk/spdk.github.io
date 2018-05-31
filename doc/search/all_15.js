@@ -7,6 +7,7 @@ var searchData=
   ['vfn',['vfn',['../structspdk__nvme__secondary__ctrl__entry.html#a1058df7181e33bc60bfd6d9782afd673',1,'spdk_nvme_secondary_ctrl_entry']]],
   ['vhost_20target',['vhost Target',['../vhost.html',1,'']]],
   ['vhost_2eh',['vhost.h',['../vhost_8h.html',1,'']]],
+  ['vhost_20processing',['Vhost processing',['../vhost_processing.html',1,'']]],
   ['vid',['vid',['../structspdk__nvme__ctrlr__data.html#ab3503f576c3c6d932918bfe7003f8a5f',1,'spdk_nvme_ctrlr_data']]],
   ['vifrsm',['vifrsm',['../structspdk__nvme__primary__ctrl__capabilities.html#a188fc422eddd794a1af2d164a29942a7',1,'spdk_nvme_primary_ctrl_capabilities']]],
   ['vifrt',['vifrt',['../structspdk__nvme__primary__ctrl__capabilities.html#a931c061c11e9c31b6f33f09d5bc251dc',1,'spdk_nvme_primary_ctrl_capabilities']]],
