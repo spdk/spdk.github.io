@@ -165,15 +165,16 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:a69f0f17c0f9a03840c327672df37b3bb"><td class="memItemLeft" align="right" valign="top"><a id="a69f0f17c0f9a03840c327672df37b3bb"></a>
-typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_event_fn</b>) (void *arg1, void *arg2)</td></tr>
+<tr class="memitem:a69f0f17c0f9a03840c327672df37b3bb"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="event_8h.html#a69f0f17c0f9a03840c327672df37b3bb">spdk_event_fn</a>) (void *arg1, void *arg2)</td></tr>
+<tr class="memdesc:a69f0f17c0f9a03840c327672df37b3bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Event handler function.  <a href="#a69f0f17c0f9a03840c327672df37b3bb">More...</a><br /></td></tr>
 <tr class="separator:a69f0f17c0f9a03840c327672df37b3bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af7e98d89bfe88c7b9d9ecfc78fac2cd2"><td class="memItemLeft" align="right" valign="top"><a id="af7e98d89bfe88c7b9d9ecfc78fac2cd2"></a>
-typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_app_shutdown_cb</b>) (void)</td></tr>
+typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="event_8h.html#af7e98d89bfe88c7b9d9ecfc78fac2cd2">spdk_app_shutdown_cb</a>) (void)</td></tr>
+<tr class="memdesc:af7e98d89bfe88c7b9d9ecfc78fac2cd2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback function for customized shutdown handling of application. <br /></td></tr>
 <tr class="separator:af7e98d89bfe88c7b9d9ecfc78fac2cd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab62642ed599e28f41f234cbcb7f7ccc7"><td class="memItemLeft" align="right" valign="top"><a id="ab62642ed599e28f41f234cbcb7f7ccc7"></a>
-typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_sighandler_t</b>) (int)</td></tr>
-<tr class="separator:ab62642ed599e28f41f234cbcb7f7ccc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6371e3e4903529f9c94e25d224580a44"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="event_8h.html#a6371e3e4903529f9c94e25d224580a44">spdk_sighandler_t</a>) (int signal)</td></tr>
+<tr class="memdesc:a6371e3e4903529f9c94e25d224580a44"><td class="mdescLeft">&#160;</td><td class="mdescRight">Signal handler fucntion.  <a href="#a6371e3e4903529f9c94e25d224580a44">More...</a><br /></td></tr>
+<tr class="separator:a6371e3e4903529f9c94e25d224580a44"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1785f85b0668a4289be2cd98bea0f88c"><td class="memItemLeft" align="right" valign="top"><a id="a1785f85b0668a4289be2cd98bea0f88c"></a>
 typedef enum spdk_app_parse_args_rvals&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_app_parse_args_rvals_t</b></td></tr>
 <tr class="separator:a1785f85b0668a4289be2cd98bea0f88c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -191,7 +192,7 @@ Functions</h2></td></tr>
 <tr class="memitem:a2c8af9052967bf98ff65e514ec7fa276"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="event_8h.html#a2c8af9052967bf98ff65e514ec7fa276">spdk_app_opts_init</a> (struct <a class="el" href="structspdk__app__opts.html">spdk_app_opts</a> *opts)</td></tr>
 <tr class="memdesc:a2c8af9052967bf98ff65e514ec7fa276"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the default value of opts.  <a href="#a2c8af9052967bf98ff65e514ec7fa276">More...</a><br /></td></tr>
 <tr class="separator:a2c8af9052967bf98ff65e514ec7fa276"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a18879873a585b21f44b7c90be8726ce1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="event_8h.html#a18879873a585b21f44b7c90be8726ce1">spdk_app_start</a> (struct <a class="el" href="structspdk__app__opts.html">spdk_app_opts</a> *opts, spdk_event_fn start_fn, void *arg1, void *arg2)</td></tr>
+<tr class="memitem:a18879873a585b21f44b7c90be8726ce1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="event_8h.html#a18879873a585b21f44b7c90be8726ce1">spdk_app_start</a> (struct <a class="el" href="structspdk__app__opts.html">spdk_app_opts</a> *opts, <a class="el" href="event_8h.html#a69f0f17c0f9a03840c327672df37b3bb">spdk_event_fn</a> start_fn, void *arg1, void *arg2)</td></tr>
 <tr class="memdesc:a18879873a585b21f44b7c90be8726ce1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start the framework.  <a href="#a18879873a585b21f44b7c90be8726ce1">More...</a><br /></td></tr>
 <tr class="separator:a18879873a585b21f44b7c90be8726ce1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab6ea643e128d25d5ac40e29b76d94c43"><td class="memItemLeft" align="right" valign="top"><a id="ab6ea643e128d25d5ac40e29b76d94c43"></a>
@@ -219,7 +220,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="even
 <tr class="memitem:af23f96e90919584f1d26616dd8f83fa6"><td class="memItemLeft" align="right" valign="top">spdk_app_parse_args_rvals_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="event_8h.html#af23f96e90919584f1d26616dd8f83fa6">spdk_app_parse_args</a> (int argc, char **argv, struct <a class="el" href="structspdk__app__opts.html">spdk_app_opts</a> *opts, const char *getopt_str, void(*parse)(int ch, char *arg), void(*usage)(void))</td></tr>
 <tr class="memdesc:af23f96e90919584f1d26616dd8f83fa6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper function for parsing arguments and printing usage messages.  <a href="#af23f96e90919584f1d26616dd8f83fa6">More...</a><br /></td></tr>
 <tr class="separator:af23f96e90919584f1d26616dd8f83fa6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a885e8b94b71844c94f0b380afdfa0df9"><td class="memItemLeft" align="right" valign="top">struct spdk_event *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="event_8h.html#a885e8b94b71844c94f0b380afdfa0df9">spdk_event_allocate</a> (uint32_t lcore, spdk_event_fn fn, void *arg1, void *arg2)</td></tr>
+<tr class="memitem:a885e8b94b71844c94f0b380afdfa0df9"><td class="memItemLeft" align="right" valign="top">struct spdk_event *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="event_8h.html#a885e8b94b71844c94f0b380afdfa0df9">spdk_event_allocate</a> (uint32_t lcore, <a class="el" href="event_8h.html#a69f0f17c0f9a03840c327672df37b3bb">spdk_event_fn</a> fn, void *arg1, void *arg2)</td></tr>
 <tr class="memdesc:a885e8b94b71844c94f0b380afdfa0df9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate an event to be passed to <a class="el" href="event_8h.html#af17b7963b6a6964e5eb18480193acedb" title="Pass the given event to the associated lcore and call the function. ">spdk_event_call()</a>.  <a href="#a885e8b94b71844c94f0b380afdfa0df9">More...</a><br /></td></tr>
 <tr class="separator:a885e8b94b71844c94f0b380afdfa0df9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af17b7963b6a6964e5eb18480193acedb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="event_8h.html#af17b7963b6a6964e5eb18480193acedb">spdk_event_call</a> (struct spdk_event *event)</td></tr>
@@ -235,7 +236,53 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="even
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Event framework public API. </p>
 <p>See <a class="el" href="event.html#event_components">SPDK Event Framework Components</a> for an overview of the SPDK event framework API. </p>
-</div><h2 class="groupheader">Function Documentation</h2>
+</div><h2 class="groupheader">Typedef Documentation</h2>
+<a id="a69f0f17c0f9a03840c327672df37b3bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a69f0f17c0f9a03840c327672df37b3bb">&#9670;&nbsp;</a></span>spdk_event_fn</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void(* spdk_event_fn) (void *arg1, void *arg2)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Event handler function. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">arg1</td><td>Argument 1. </td></tr>
+    <tr><td class="paramname">arg2</td><td>Argument 2. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a6371e3e4903529f9c94e25d224580a44"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6371e3e4903529f9c94e25d224580a44">&#9670;&nbsp;</a></span>spdk_sighandler_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void(* spdk_sighandler_t) (int signal)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Signal handler fucntion. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">signal</td><td>Signal number. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
 <a id="a44d0192357622c56e902136132dd89f0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a44d0192357622c56e902136132dd89f0">&#9670;&nbsp;</a></span>spdk_app_get_core_mask()</h2>
 
@@ -461,7 +508,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="even
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">spdk_event_fn&#160;</td>
+          <td class="paramtype"><a class="el" href="event_8h.html#a69f0f17c0f9a03840c327672df37b3bb">spdk_event_fn</a>&#160;</td>
           <td class="paramname"><em>start_fn</em>, </td>
         </tr>
         <tr>
@@ -562,7 +609,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="even
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">spdk_event_fn&#160;</td>
+          <td class="paramtype"><a class="el" href="event_8h.html#a69f0f17c0f9a03840c327672df37b3bb">spdk_event_fn</a>&#160;</td>
           <td class="paramname"><em>fn</em>, </td>
         </tr>
         <tr>
