@@ -164,17 +164,17 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:a51a55c97586c2d524fffcabc4d7910d6"><td class="memItemLeft" align="right" valign="top"><a id="a51a55c97586c2d524fffcabc4d7910d6"></a>
-typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_remove_cb_t</b>) (void *remove_ctx)</td></tr>
+<tr class="memitem:a51a55c97586c2d524fffcabc4d7910d6"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev_8h.html#a51a55c97586c2d524fffcabc4d7910d6">spdk_bdev_remove_cb_t</a>) (void *remove_ctx)</td></tr>
+<tr class="memdesc:a51a55c97586c2d524fffcabc4d7910d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Block device remove callback.  <a href="#a51a55c97586c2d524fffcabc4d7910d6">More...</a><br /></td></tr>
 <tr class="separator:a51a55c97586c2d524fffcabc4d7910d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0c5602dfd313f90032dd91683b9663e3"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev_8h.html#a0c5602dfd313f90032dd91683b9663e3">spdk_bdev_io_completion_cb</a>) (struct <a class="el" href="structspdk__bdev__io.html">spdk_bdev_io</a> *bdev_io, bool success, void *cb_arg)</td></tr>
 <tr class="memdesc:a0c5602dfd313f90032dd91683b9663e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Block device completion callback.  <a href="#a0c5602dfd313f90032dd91683b9663e3">More...</a><br /></td></tr>
 <tr class="separator:a0c5602dfd313f90032dd91683b9663e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa6a8987bb3a1bc368881f6b81d249bd3"><td class="memItemLeft" align="right" valign="top"><a id="aa6a8987bb3a1bc368881f6b81d249bd3"></a>
-typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_init_cb</b>) (void *cb_arg, int rc)</td></tr>
+<tr class="memitem:aa6a8987bb3a1bc368881f6b81d249bd3"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev_8h.html#aa6a8987bb3a1bc368881f6b81d249bd3">spdk_bdev_init_cb</a>) (void *cb_arg, int rc)</td></tr>
+<tr class="memdesc:aa6a8987bb3a1bc368881f6b81d249bd3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Block device initialization callback.  <a href="#aa6a8987bb3a1bc368881f6b81d249bd3">More...</a><br /></td></tr>
 <tr class="separator:aa6a8987bb3a1bc368881f6b81d249bd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad33efc88148d8984b353e54b7ee0058f"><td class="memItemLeft" align="right" valign="top"><a id="ad33efc88148d8984b353e54b7ee0058f"></a>
-typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_fini_cb</b>) (void *cb_arg)</td></tr>
+<tr class="memitem:ad33efc88148d8984b353e54b7ee0058f"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev_8h.html#ad33efc88148d8984b353e54b7ee0058f">spdk_bdev_fini_cb</a>) (void *cb_arg)</td></tr>
+<tr class="memdesc:ad33efc88148d8984b353e54b7ee0058f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Block device finish callback.  <a href="#ad33efc88148d8984b353e54b7ee0058f">More...</a><br /></td></tr>
 <tr class="separator:ad33efc88148d8984b353e54b7ee0058f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1e2b47e30b56bc875b618beffced9662"><td class="memItemLeft" align="right" valign="top"><a id="a1e2b47e30b56bc875b618beffced9662"></a>
 typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_get_device_stat_cb</b>) (struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *bdev, struct <a class="el" href="structspdk__bdev__io__stat.html">spdk_bdev_io_stat</a> *stat, void *cb_arg, int rc)</td></tr>
@@ -209,10 +209,10 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a854eb960c06597051071023a3d70e887"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev_8h.html#a854eb960c06597051071023a3d70e887">spdk_bdev_initialize</a> (spdk_bdev_init_cb cb_fn, void *cb_arg)</td></tr>
+<tr class="memitem:a854eb960c06597051071023a3d70e887"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev_8h.html#a854eb960c06597051071023a3d70e887">spdk_bdev_initialize</a> (<a class="el" href="bdev_8h.html#aa6a8987bb3a1bc368881f6b81d249bd3">spdk_bdev_init_cb</a> cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:a854eb960c06597051071023a3d70e887"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize block device modules.  <a href="#a854eb960c06597051071023a3d70e887">More...</a><br /></td></tr>
 <tr class="separator:a854eb960c06597051071023a3d70e887"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7263aeb5393b46fa5af8e04760f62ea4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev_8h.html#a7263aeb5393b46fa5af8e04760f62ea4">spdk_bdev_finish</a> (spdk_bdev_fini_cb cb_fn, void *cb_arg)</td></tr>
+<tr class="memitem:a7263aeb5393b46fa5af8e04760f62ea4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev_8h.html#a7263aeb5393b46fa5af8e04760f62ea4">spdk_bdev_finish</a> (<a class="el" href="bdev_8h.html#ad33efc88148d8984b353e54b7ee0058f">spdk_bdev_fini_cb</a> cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:a7263aeb5393b46fa5af8e04760f62ea4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform cleanup work to remove the registered block device modules.  <a href="#a7263aeb5393b46fa5af8e04760f62ea4">More...</a><br /></td></tr>
 <tr class="separator:a7263aeb5393b46fa5af8e04760f62ea4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a273c20b5f07dd8c727ec0d0b80b804fe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev_8h.html#a273c20b5f07dd8c727ec0d0b80b804fe">spdk_bdev_config_text</a> (FILE *fp)</td></tr>
@@ -236,7 +236,7 @@ Functions</h2></td></tr>
 <tr class="memitem:a6ae4a6dad6562cdefd3476ec23bfcccb"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev_8h.html#a6ae4a6dad6562cdefd3476ec23bfcccb">spdk_bdev_next_leaf</a> (struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *prev)</td></tr>
 <tr class="memdesc:a6ae4a6dad6562cdefd3476ec23bfcccb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the next block device without virtual block devices on top.  <a href="#a6ae4a6dad6562cdefd3476ec23bfcccb">More...</a><br /></td></tr>
 <tr class="separator:a6ae4a6dad6562cdefd3476ec23bfcccb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeacdfd5debd3917d84d18be0277203ff"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev_8h.html#aeacdfd5debd3917d84d18be0277203ff">spdk_bdev_open</a> (struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *bdev, bool write, spdk_bdev_remove_cb_t remove_cb, void *remove_ctx, struct spdk_bdev_desc **desc)</td></tr>
+<tr class="memitem:aeacdfd5debd3917d84d18be0277203ff"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev_8h.html#aeacdfd5debd3917d84d18be0277203ff">spdk_bdev_open</a> (struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *bdev, bool write, <a class="el" href="bdev_8h.html#a51a55c97586c2d524fffcabc4d7910d6">spdk_bdev_remove_cb_t</a> remove_cb, void *remove_ctx, struct spdk_bdev_desc **desc)</td></tr>
 <tr class="memdesc:aeacdfd5debd3917d84d18be0277203ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Open a block device for I/O operations.  <a href="#aeacdfd5debd3917d84d18be0277203ff">More...</a><br /></td></tr>
 <tr class="separator:aeacdfd5debd3917d84d18be0277203ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaf5fc830851a2eb0aa34bbb40cf5eac6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev_8h.html#aaf5fc830851a2eb0aa34bbb40cf5eac6">spdk_bdev_close</a> (struct spdk_bdev_desc *desc)</td></tr>
@@ -363,6 +363,51 @@ Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Block device abstraction layer. </p>
 </div><h2 class="groupheader">Typedef Documentation</h2>
+<a id="ad33efc88148d8984b353e54b7ee0058f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad33efc88148d8984b353e54b7ee0058f">&#9670;&nbsp;</a></span>spdk_bdev_fini_cb</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void(* spdk_bdev_fini_cb) (void *cb_arg)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Block device finish callback. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cb_arg</td><td>Callback argument. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aa6a8987bb3a1bc368881f6b81d249bd3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa6a8987bb3a1bc368881f6b81d249bd3">&#9670;&nbsp;</a></span>spdk_bdev_init_cb</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void(* spdk_bdev_init_cb) (void *cb_arg, int rc)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Block device initialization callback. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cb_arg</td><td>Callback argument. </td></tr>
+    <tr><td class="paramname">rc</td><td>0 if block device initialized successfully or negative errno if it failed. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a0c5602dfd313f90032dd91683b9663e3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0c5602dfd313f90032dd91683b9663e3">&#9670;&nbsp;</a></span>spdk_bdev_io_completion_cb</h2>
 
@@ -379,8 +424,30 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">bdev_io</td><td>Block device I/O that has completed. </td></tr>
-    <tr><td class="paramname">success</td><td>true if I/O completed successfully or false if it failed; additional error information may be retrieved from bdev_io by calling <a class="el" href="bdev_8h.html#afe43254747db3cd072dfb596be3bbf2f" title="Get the status of bdev_io as an NVMe status code. ">spdk_bdev_io_get_nvme_status()</a> or <a class="el" href="bdev_8h.html#ac3c213b4317d5077197950253af1ac50" title="Get the status of bdev_io as a SCSI status code. ">spdk_bdev_io_get_scsi_status()</a>. </td></tr>
+    <tr><td class="paramname">success</td><td>True if I/O completed successfully or false if it failed; additional error information may be retrieved from bdev_io by calling <a class="el" href="bdev_8h.html#afe43254747db3cd072dfb596be3bbf2f" title="Get the status of bdev_io as an NVMe status code. ">spdk_bdev_io_get_nvme_status()</a> or <a class="el" href="bdev_8h.html#ac3c213b4317d5077197950253af1ac50" title="Get the status of bdev_io as a SCSI status code. ">spdk_bdev_io_get_scsi_status()</a>. </td></tr>
     <tr><td class="paramname">cb_arg</td><td>Callback argument specified when bdev_io was submitted. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a51a55c97586c2d524fffcabc4d7910d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a51a55c97586c2d524fffcabc4d7910d6">&#9670;&nbsp;</a></span>spdk_bdev_remove_cb_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void(* spdk_bdev_remove_cb_t) (void *remove_ctx)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Block device remove callback. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">remove_ctx</td><td>Context for the removed block device. </td></tr>
   </table>
   </dd>
 </dl>
@@ -554,7 +621,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">void spdk_bdev_finish </td>
           <td>(</td>
-          <td class="paramtype">spdk_bdev_fini_cb&#160;</td>
+          <td class="paramtype"><a class="el" href="bdev_8h.html#ad33efc88148d8984b353e54b7ee0058f">spdk_bdev_fini_cb</a>&#160;</td>
           <td class="paramname"><em>cb_fn</em>, </td>
         </tr>
         <tr>
@@ -1193,7 +1260,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">void spdk_bdev_initialize </td>
           <td>(</td>
-          <td class="paramtype">spdk_bdev_init_cb&#160;</td>
+          <td class="paramtype"><a class="el" href="bdev_8h.html#aa6a8987bb3a1bc368881f6b81d249bd3">spdk_bdev_init_cb</a>&#160;</td>
           <td class="paramname"><em>cb_fn</em>, </td>
         </tr>
         <tr>
@@ -1720,7 +1787,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">spdk_bdev_remove_cb_t&#160;</td>
+          <td class="paramtype"><a class="el" href="bdev_8h.html#a51a55c97586c2d524fffcabc4d7910d6">spdk_bdev_remove_cb_t</a>&#160;</td>
           <td class="paramname"><em>remove_cb</em>, </td>
         </tr>
         <tr>

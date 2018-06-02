@@ -1,7 +1,10 @@
 var searchData=
 [
   ['spdk_5fapp_5fshutdown_5fcb',['spdk_app_shutdown_cb',['../event_8h.html#af7e98d89bfe88c7b9d9ecfc78fac2cd2',1,'event.h']]],
+  ['spdk_5fbdev_5ffini_5fcb',['spdk_bdev_fini_cb',['../bdev_8h.html#ad33efc88148d8984b353e54b7ee0058f',1,'bdev.h']]],
+  ['spdk_5fbdev_5finit_5fcb',['spdk_bdev_init_cb',['../bdev_8h.html#aa6a8987bb3a1bc368881f6b81d249bd3',1,'bdev.h']]],
   ['spdk_5fbdev_5fio_5fcompletion_5fcb',['spdk_bdev_io_completion_cb',['../bdev_8h.html#a0c5602dfd313f90032dd91683b9663e3',1,'bdev.h']]],
+  ['spdk_5fbdev_5fremove_5fcb_5ft',['spdk_bdev_remove_cb_t',['../bdev_8h.html#a51a55c97586c2d524fffcabc4d7910d6',1,'bdev.h']]],
   ['spdk_5fchannel_5ffor_5feach_5fcpl',['spdk_channel_for_each_cpl',['../io__channel_8h.html#a96f03fe115196f1de03292ed6d86fd46',1,'io_channel.h']]],
   ['spdk_5fchannel_5fmsg',['spdk_channel_msg',['../io__channel_8h.html#a2dd91f3094f8b4cf60f460e3f88bbf0c',1,'io_channel.h']]],
   ['spdk_5fcopy_5fcompletion_5fcb',['spdk_copy_completion_cb',['../copy__engine_8h.html#a5b9c8c2911a2249ffccce59dd510a2f0',1,'copy_engine.h']]],

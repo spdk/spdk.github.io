@@ -21,6 +21,7 @@ var searchData=
   ['spdk_5fnvme_5fnssr_5fvalue',['SPDK_NVME_NSSR_VALUE',['../nvme__spec_8h.html#ad3ef13320c82eaf4abdef6aa56e8b5ba',1,'nvme_spec.h']]],
   ['spdk_5fnvme_5fversion',['SPDK_NVME_VERSION',['../nvme__spec_8h.html#a9760bf73611488342b5903ba702fd7b6',1,'nvme_spec.h']]],
   ['spdk_5fpci_5fclass_5fnvme',['SPDK_PCI_CLASS_NVME',['../pci__ids_8h.html#a787047f67cc4dc5cdfb478bcd9066db2',1,'pci_ids.h']]],
+  ['spdk_5frmb',['spdk_rmb',['../barrier_8h.html#a876d9f9e955882ee02432d8796c63213',1,'barrier.h']]],
   ['spdk_5fsmp_5fmb',['spdk_smp_mb',['../barrier_8h.html#a07ef3ca027c4f24491ec4114c0e0a727',1,'barrier.h']]],
   ['spdk_5fsmp_5frmb',['spdk_smp_rmb',['../barrier_8h.html#a9b87848d3379310e4ade28a63fc038d5',1,'barrier.h']]],
   ['spdk_5fsmp_5fwmb',['spdk_smp_wmb',['../barrier_8h.html#aee6be79189ae975da9922c3ff229ded5',1,'barrier.h']]],

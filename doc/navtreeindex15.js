@@ -1,5 +1,6 @@
 var NAVTREEINDEX15 =
 {
+"structspdk__scsi__desig__desc.html#a4df254d0487bd0664ccddc2e26f51084":[30,0,159,0],
 "structspdk__scsi__desig__desc.html#a7a83bd4dcf1662f4678dadf823a68e9b":[30,0,159,1],
 "structspdk__scsi__desig__desc.html#aa798f99b973604bfccf793daaf35484f":[30,0,159,2],
 "structspdk__scsi__desig__desc.html#abf5d28b978089fa70e2890312e9b2118":[30,0,159,4],
@@ -248,6 +249,5 @@ var NAVTREEINDEX15 =
 "unionspdk__nvme__feat__arbitration.html#a17914eaaf47a25d7edd809aa2f74331b":[30,0,82,5],
 "unionspdk__nvme__feat__arbitration.html#a1c72624e805ff324a05c6e9e592cd11a":[30,0,82,2],
 "unionspdk__nvme__feat__arbitration.html#a28d37ecf81e25a86b65539d93fb39e90":[30,0,82,4],
-"unionspdk__nvme__feat__arbitration.html#a47fb9a1efe9cd17abfa3a8b198919e34":[30,0,82,0],
-"unionspdk__nvme__feat__arbitration.html#af12378890a3a12fc4a54e10b6103859e":[30,0,82,6]
+"unionspdk__nvme__feat__arbitration.html#a47fb9a1efe9cd17abfa3a8b198919e34":[30,0,82,0]
 };
