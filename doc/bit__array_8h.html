@@ -173,6 +173,12 @@ Functions</h2></td></tr>
 <tr class="memitem:a42c782a3343ddb0253b7494d01e3369f"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bit__array_8h.html#a42c782a3343ddb0253b7494d01e3369f">spdk_bit_array_find_first_clear</a> (const struct spdk_bit_array *ba, uint32_t start_bit_index)</td></tr>
 <tr class="memdesc:a42c782a3343ddb0253b7494d01e3369f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find the index of the first cleared bit in the array.  <a href="#a42c782a3343ddb0253b7494d01e3369f">More...</a><br /></td></tr>
 <tr class="separator:a42c782a3343ddb0253b7494d01e3369f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b8cc745e3b47220253946c53e714558"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bit__array_8h.html#a8b8cc745e3b47220253946c53e714558">spdk_bit_array_count_set</a> (const struct spdk_bit_array *ba)</td></tr>
+<tr class="memdesc:a8b8cc745e3b47220253946c53e714558"><td class="mdescLeft">&#160;</td><td class="mdescRight">Count the number of set bits in the array.  <a href="#a8b8cc745e3b47220253946c53e714558">More...</a><br /></td></tr>
+<tr class="separator:a8b8cc745e3b47220253946c53e714558"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17db47325a5c9ef6f63a143de75aa71c"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bit__array_8h.html#a17db47325a5c9ef6f63a143de75aa71c">spdk_bit_array_count_clear</a> (const struct spdk_bit_array *ba)</td></tr>
+<tr class="memdesc:a17db47325a5c9ef6f63a143de75aa71c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Count the number of cleared bits in the array.  <a href="#a17db47325a5c9ef6f63a143de75aa71c">More...</a><br /></td></tr>
+<tr class="separator:a17db47325a5c9ef6f63a143de75aa71c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Bit array data structure. </p>
@@ -239,6 +245,60 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="a17db47325a5c9ef6f63a143de75aa71c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a17db47325a5c9ef6f63a143de75aa71c">&#9670;&nbsp;</a></span>spdk_bit_array_count_clear()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t spdk_bit_array_count_clear </td>
+          <td>(</td>
+          <td class="paramtype">const struct spdk_bit_array *&#160;</td>
+          <td class="paramname"><em>ba</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Count the number of cleared bits in the array. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ba</td><td>The bit array to search.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the number of bits cleared in the array. </dd></dl>
+
+</div>
+</div>
+<a id="a8b8cc745e3b47220253946c53e714558"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b8cc745e3b47220253946c53e714558">&#9670;&nbsp;</a></span>spdk_bit_array_count_set()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t spdk_bit_array_count_set </td>
+          <td>(</td>
+          <td class="paramtype">const struct spdk_bit_array *&#160;</td>
+          <td class="paramname"><em>ba</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Count the number of set bits in the array. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ba</td><td>The bit array to search.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the number of bits set in the array. </dd></dl>
 
 </div>
 </div>

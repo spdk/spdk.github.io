@@ -73,6 +73,8 @@ var searchData=
   ['spdk_5fbdev_5fwritev_5fblocks',['spdk_bdev_writev_blocks',['../bdev_8h.html#af5849064d12de9f140a41522d1f7c95b',1,'bdev.h']]],
   ['spdk_5fbit_5farray_5fcapacity',['spdk_bit_array_capacity',['../bit__array_8h.html#a050b7786c57f20a245db5510691f3f23',1,'bit_array.h']]],
   ['spdk_5fbit_5farray_5fclear',['spdk_bit_array_clear',['../bit__array_8h.html#a64d5256695898daf0b9403c54c47da04',1,'bit_array.h']]],
+  ['spdk_5fbit_5farray_5fcount_5fclear',['spdk_bit_array_count_clear',['../bit__array_8h.html#a17db47325a5c9ef6f63a143de75aa71c',1,'bit_array.h']]],
+  ['spdk_5fbit_5farray_5fcount_5fset',['spdk_bit_array_count_set',['../bit__array_8h.html#a8b8cc745e3b47220253946c53e714558',1,'bit_array.h']]],
   ['spdk_5fbit_5farray_5fcreate',['spdk_bit_array_create',['../bit__array_8h.html#ae001c8cd7e32e65b5a109a46647d33a0',1,'bit_array.h']]],
   ['spdk_5fbit_5farray_5ffind_5ffirst_5fclear',['spdk_bit_array_find_first_clear',['../bit__array_8h.html#a42c782a3343ddb0253b7494d01e3369f',1,'bit_array.h']]],
   ['spdk_5fbit_5farray_5ffind_5ffirst_5fset',['spdk_bit_array_find_first_set',['../bit__array_8h.html#a7e47711078db91ec59ddbfaabe0a8696',1,'bit_array.h']]],
@@ -535,6 +537,5 @@ var searchData=
   ['spdk_5fxattr_5fnames_5ffree',['spdk_xattr_names_free',['../blob_8h.html#ae17f3a52d52d9c3e9382cbcfae042c0a',1,'blob.h']]],
   ['spdk_5fxattr_5fnames_5fget_5fcount',['spdk_xattr_names_get_count',['../blob_8h.html#a113d71117843062da8a24906296b37a6',1,'blob.h']]],
   ['spdk_5fxattr_5fnames_5fget_5fname',['spdk_xattr_names_get_name',['../blob_8h.html#ad0d58654483ac10df65d4b55356eff84',1,'blob.h']]],
-  ['spdk_5fzmalloc',['spdk_zmalloc',['../env_8h.html#a49ad245dae3554cf96d62e9b2b0b1596',1,'env.h']]],
-  ['stailq_5fentry',['STAILQ_ENTRY',['../structspdk__bdev__io.html#a6e1a2ce502e43e45c1b578bb85e7c27b',1,'spdk_bdev_io']]]
+  ['spdk_5fzmalloc',['spdk_zmalloc',['../env_8h.html#a49ad245dae3554cf96d62e9b2b0b1596',1,'env.h']]]
 ];
