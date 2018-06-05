@@ -205,7 +205,7 @@ Create a virtio device</h2>
 <p>The following RPC will create a vhost-scsi controller which can be accessed by QEMU via /var/tmp/vhost.0. At the time of creation the controller will be bound to a single CPU core with the smallest number of vhost controllers. The optional <code>--cpumask</code> parameter can directly specify which cores should be taken into account - in this case always CPU 0. To achieve optimal performance on NUMA systems, the cpumask should specify cores on the same CPU socket as its associated VM.</p>
 <div class="fragment"><div class="line">scripts/rpc.py construct_vhost_scsi_controller --cpumask 0x1 vhost.0</div></div><!-- fragment --><p>The following RPC will attach the Malloc0 bdev to the vhost.0 vhost-scsi controller. Malloc0 will appear as a single LUN on a SCSI device with target ID 0. SPDK Vhost-SCSI device currently supports only one LUN per SCSI target. Additional LUNs can be added by specifying a different target ID.</p>
 <div class="fragment"><div class="line">scripts/rpc.py add_vhost_scsi_lun vhost.0 0 Malloc0</div></div><!-- fragment --><p>To remove a bdev from a vhost-scsi controller use the following RPC:</p>
-<div class="fragment"><div class="line">scripts/rpc.py remove_vhost_scsi_dev vhost.0 0</div></div><!-- fragment --><h3>Vhost-BLK</h3>
+<div class="fragment"><div class="line">scripts/rpc.py remove_vhost_scsi_target vhost.0 0</div></div><!-- fragment --><h3>Vhost-BLK</h3>
 <p>The following RPC will create a vhost-blk device exposing Malloc0 bdev. The device will be accessible to QEMU via /var/tmp/vhost.1. All the I/O polling will be pinned to the least occupied CPU core within given cpumask - in this case always CPU 0. For NUMA systems, the cpumask should specify cores on the same CPU socket as its associated VM.</p>
 <div class="fragment"><div class="line">scripts/rpc.py construct_vhost_blk_controller --cpumask 0x1 vhost.1 Malloc0</div></div><!-- fragment --><p>It is also possible to construct a read-only vhost-blk device by specifying an extra <code>-r</code> or <code>--readonly</code> parameter.</p>
 <div class="fragment"><div class="line">scripts/rpc.py construct_vhost_blk_controller --cpumask 0x1 -r vhost.1 Malloc0</div></div><!-- fragment --><h3>Vhost-NVMe (experimental)</h3>
@@ -245,7 +245,7 @@ Hot-attach/hot-detach</h2>
 <p>Hot-attach is is done by simply attaching a bdev to a vhost controller with a QEMU VM already started. No other extra action is necessary.</p>
 <div class="fragment"><div class="line">scripts/rpc.py add_vhost_scsi_lun vhost.0 0 Malloc0</div></div><!-- fragment --><h3>Hot-detach</h3>
 <p>Just like hot-attach, the hot-detach is done by simply removing bdev from a controller when QEMU VM is already started.</p>
-<div class="fragment"><div class="line">scripts/rpc.py remove_vhost_scsi_dev vhost.0 0</div></div><!-- fragment --><p>Removing an entire bdev will hot-detach it from a controller as well.</p>
+<div class="fragment"><div class="line">scripts/rpc.py remove_vhost_scsi_target vhost.0 0</div></div><!-- fragment --><p>Removing an entire bdev will hot-detach it from a controller as well.</p>
 <div class="fragment"><div class="line">scripts/rpc.py delete_bdev Malloc0</div></div><!-- fragment --><h1><a class="anchor" id="vhost_bugs"></a>
 Known bugs and limitations</h1>
 <h2>Vhost-NVMe (experimental) can only be supported with latest Linux kernel</h2>
