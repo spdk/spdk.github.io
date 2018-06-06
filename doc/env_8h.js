@@ -48,7 +48,7 @@ var env_8h =
     [ "spdk_mem_map_clear_translation", "env_8h.html#a2fb4967ae71277512334ad27ef481326", null ],
     [ "spdk_mem_map_free", "env_8h.html#af88ed69bd8b9a057f672a1170f7a5b6c", null ],
     [ "spdk_mem_map_set_translation", "env_8h.html#a3314f2917141bf11f5b125c306d4397d", null ],
-    [ "spdk_mem_map_translate", "env_8h.html#aa93008c5c5f0c79c286b7edd70343ee1", null ],
+    [ "spdk_mem_map_translate", "env_8h.html#a0236afa06288866feb8ed1fccfef5dda", null ],
     [ "spdk_mem_register", "env_8h.html#ae046c45de2849d15f29dedc52e915ad7", null ],
     [ "spdk_mem_unregister", "env_8h.html#a3ffa0c74e2d73703266cad2d5d103f09", null ],
     [ "spdk_mempool_count", "env_8h.html#a434cdf73691c745e717b8b794b2acb52", null ],

@@ -457,9 +457,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_
 <tr class="memitem:a2fb4967ae71277512334ad27ef481326"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_8h.html#a2fb4967ae71277512334ad27ef481326">spdk_mem_map_clear_translation</a> (struct spdk_mem_map *map, uint64_t vaddr, uint64_t size)</td></tr>
 <tr class="memdesc:a2fb4967ae71277512334ad27ef481326"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unregister an address translation.  <a href="#a2fb4967ae71277512334ad27ef481326">More...</a><br /></td></tr>
 <tr class="separator:a2fb4967ae71277512334ad27ef481326"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa93008c5c5f0c79c286b7edd70343ee1"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_8h.html#aa93008c5c5f0c79c286b7edd70343ee1">spdk_mem_map_translate</a> (const struct spdk_mem_map *map, uint64_t vaddr)</td></tr>
-<tr class="memdesc:aa93008c5c5f0c79c286b7edd70343ee1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Look up the translation of a virtual address in a memory map.  <a href="#aa93008c5c5f0c79c286b7edd70343ee1">More...</a><br /></td></tr>
-<tr class="separator:aa93008c5c5f0c79c286b7edd70343ee1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0236afa06288866feb8ed1fccfef5dda"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_8h.html#a0236afa06288866feb8ed1fccfef5dda">spdk_mem_map_translate</a> (const struct spdk_mem_map *map, uint64_t vaddr, uint64_t size)</td></tr>
+<tr class="memdesc:a0236afa06288866feb8ed1fccfef5dda"><td class="mdescLeft">&#160;</td><td class="mdescRight">Look up the translation of a virtual address in a memory map.  <a href="#a0236afa06288866feb8ed1fccfef5dda">More...</a><br /></td></tr>
+<tr class="separator:a0236afa06288866feb8ed1fccfef5dda"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae046c45de2849d15f29dedc52e915ad7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_8h.html#ae046c45de2849d15f29dedc52e915ad7">spdk_mem_register</a> (void *vaddr, size_t len)</td></tr>
 <tr class="memdesc:ae046c45de2849d15f29dedc52e915ad7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register the specified memory region for address translation.  <a href="#ae046c45de2849d15f29dedc52e915ad7">More...</a><br /></td></tr>
 <tr class="separator:ae046c45de2849d15f29dedc52e915ad7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1388,8 +1388,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_
 
 </div>
 </div>
-<a id="aa93008c5c5f0c79c286b7edd70343ee1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa93008c5c5f0c79c286b7edd70343ee1">&#9670;&nbsp;</a></span>spdk_mem_map_translate()</h2>
+<a id="a0236afa06288866feb8ed1fccfef5dda"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0236afa06288866feb8ed1fccfef5dda">&#9670;&nbsp;</a></span>spdk_mem_map_translate()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1404,7 +1404,13 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">uint64_t&#160;</td>
-          <td class="paramname"><em>vaddr</em>&#160;</td>
+          <td class="paramname"><em>vaddr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1418,11 +1424,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">map</td><td>Memory map. </td></tr>
-    <tr><td class="paramname">vaddr</td><td>Virtual address.</td></tr>
+    <tr><td class="paramname">vaddr</td><td>Virtual address. </td></tr>
+    <tr><td class="paramname">size</td><td>Size of memory region.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>the translation of 2MB hugepage mapping. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>the translation of vaddr stored in the map, or default_translation as specified in <a class="el" href="env_8h.html#a512b5ef37a363a4c8e234c060b734605" title="Allocate a virtual memory address translation map. ">spdk_mem_map_alloc()</a> if vaddr is not present in the map. </dd></dl>
 
 </div>
 </div>

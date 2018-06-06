@@ -142,6 +142,8 @@ $(document).ready(function(){initNavTree('changelog.html','');});
 v18.07: (Upcoming Release)</h1>
 <h2>Bdev</h2>
 <p>The <a class="el" href="bdev_8h.html#ab1ba28ba382edd1d792d51a054eb3aa2" title="Return I/O statistics for this channel. ">spdk_bdev_get_io_stat()</a> function now returns cumulative totals instead of resetting on each call. This allows multiple callers to query I/O statistics without conflicting with each other. Existing users will need to adjust their code to record the previous I/O statistics to calculate the delta between calls.</p>
+<h2>Env</h2>
+<p>The <a class="el" href="env_8h.html#a0236afa06288866feb8ed1fccfef5dda" title="Look up the translation of a virtual address in a memory map. ">spdk_mem_map_translate()</a> function now takes a size parameter to indicate the size of the memory region. This can be used by environment implementations to validate the requested translation.</p>
 <h2>git pre-commit and pre-push hooks</h2>
 <p>The pre-commit hook will run <code>scripts/check_format.sh</code> and verify there are no formating errors before allowing <code>git commit</code> to run. The pre-push hook runs <code>make CONFIG_WERROR=y</code> with and without <code>CONFIG_DEBUG=y</code> using both the gcc and clang compiler before allowing <code>git push</code> to run. Following each DEBUG build <code>test/unit/unittest.sh</code> is run and verified. Results are recorded in the <code>make.log</code> file.</p>
 <p>To enable type: 'git config core.hooksPath .githooks'. To override after configuration use the <code>git --no-verify</code> flag.</p>
