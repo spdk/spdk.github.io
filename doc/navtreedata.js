@@ -151,7 +151,7 @@ var NAVTREE =
         [ "nvmf_subsystem_allow_any_host method", "jsonrpc.html#rpc_nvmf_subsystem_allow_any_host", null ]
       ] ]
     ] ],
-    [ "Logical Volumes Introduction", "logical_volumes.html", [
+    [ "Logical Volumes", "logical_volumes.html", [
       [ "Terminology", "logical_volumes.html#lvol_terminology", [
         [ "Logical volume store", "logical_volumes.html#lvs", null ],
         [ "Logical volume", "logical_volumes.html#lvol", null ],
@@ -276,9 +276,9 @@ var NAVTREEINDEX =
 "event_8h.html#af7e98d89bfe88c7b9d9ecfc78fac2cd2",
 "iscsi__spec_8h.html#a6ae501611baca9225cc96bf6cf087450a3546acfc24f211b3b8cd2a90444a8f40",
 "mmio_8h.html#a682a558fe4a5f13cbc54a85282e087a4",
-"nvme__spec_8h.html#a26ca66ff5a40e3916763aabbfb22ce14",
-"nvme__spec_8h.html#acb8784fad6a53be95d4c718ad3cf852eaeb0215504baf000c9886ac739f7539a2",
-"pci__ids_8h.html#a14c1af7359fd23e4356b88c200ff3b37",
+"nvme__spec_8h.html#a1f3d0ee6e884ecbb37548f9fc74f2076adce1ab2ab1674d38f37df91847268581",
+"nvme__spec_8h.html#acb8784fad6a53be95d4c718ad3cf852eae0d57b06f29260afc5bf41e027b7c037",
+"pci__ids_8h.html#a08c71d77139622716929e3481b0e2b98",
 "scsi__spec_8h.html#a9e2b2add18fac5a9110df411076170dca6098f8a00b0908404a3e571a3c0f6eb3",
 "structiscsi__bhs__async.html#a4c6c0e54495faa344db50d784c379a4b",
 "structiscsi__bhs__task__resp.html#ac986221e84bf03d496b49d57114a827e",

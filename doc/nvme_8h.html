@@ -412,6 +412,9 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_
 <tr class="memitem:adfcbb5d31f0b572847cc8ae8b07dfcfb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#adfcbb5d31f0b572847cc8ae8b07dfcfb">spdk_nvme_ns_cmd_writev</a> (struct spdk_nvme_ns *ns, struct spdk_nvme_qpair *qpair, uint64_t lba, uint32_t lba_count, <a class="el" href="nvme_8h.html#ac9779e9957d7089dde8e492cc60856d8">spdk_nvme_cmd_cb</a> cb_fn, void *cb_arg, uint32_t io_flags, <a class="el" href="nvme_8h.html#a0e1fcb43970ea531567ee00d4ee0675b">spdk_nvme_req_reset_sgl_cb</a> reset_sgl_fn, <a class="el" href="nvme_8h.html#a4ab95bea86f498c08510f6f0bcd2eb09">spdk_nvme_req_next_sge_cb</a> next_sge_fn)</td></tr>
 <tr class="memdesc:adfcbb5d31f0b572847cc8ae8b07dfcfb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submits a write I/O to the specified NVMe namespace.  <a href="#adfcbb5d31f0b572847cc8ae8b07dfcfb">More...</a><br /></td></tr>
 <tr class="separator:adfcbb5d31f0b572847cc8ae8b07dfcfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75d170e1b580379432053bc36f158221"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a75d170e1b580379432053bc36f158221">spdk_nvme_ns_cmd_writev_with_md</a> (struct spdk_nvme_ns *ns, struct spdk_nvme_qpair *qpair, uint64_t lba, uint32_t lba_count, <a class="el" href="nvme_8h.html#ac9779e9957d7089dde8e492cc60856d8">spdk_nvme_cmd_cb</a> cb_fn, void *cb_arg, uint32_t io_flags, <a class="el" href="nvme_8h.html#a0e1fcb43970ea531567ee00d4ee0675b">spdk_nvme_req_reset_sgl_cb</a> reset_sgl_fn, <a class="el" href="nvme_8h.html#a4ab95bea86f498c08510f6f0bcd2eb09">spdk_nvme_req_next_sge_cb</a> next_sge_fn, void *metadata)</td></tr>
+<tr class="memdesc:a75d170e1b580379432053bc36f158221"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submits a write I/O to the specified NVMe namespace.  <a href="#a75d170e1b580379432053bc36f158221">More...</a><br /></td></tr>
+<tr class="separator:a75d170e1b580379432053bc36f158221"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adc2aa2be0d657be0c63d5abc02b274ec"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#adc2aa2be0d657be0c63d5abc02b274ec">spdk_nvme_ns_cmd_write_with_md</a> (struct spdk_nvme_ns *ns, struct spdk_nvme_qpair *qpair, void *payload, void *metadata, uint64_t lba, uint32_t lba_count, <a class="el" href="nvme_8h.html#ac9779e9957d7089dde8e492cc60856d8">spdk_nvme_cmd_cb</a> cb_fn, void *cb_arg, uint32_t io_flags, uint16_t apptag_mask, uint16_t apptag)</td></tr>
 <tr class="memdesc:adc2aa2be0d657be0c63d5abc02b274ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submits a write I/O to the specified NVMe namespace.  <a href="#adc2aa2be0d657be0c63d5abc02b274ec">More...</a><br /></td></tr>
 <tr class="separator:adc2aa2be0d657be0c63d5abc02b274ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -424,6 +427,9 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_
 <tr class="memitem:acb47ce7de6b6e963ec9fb8de261466ae"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#acb47ce7de6b6e963ec9fb8de261466ae">spdk_nvme_ns_cmd_readv</a> (struct spdk_nvme_ns *ns, struct spdk_nvme_qpair *qpair, uint64_t lba, uint32_t lba_count, <a class="el" href="nvme_8h.html#ac9779e9957d7089dde8e492cc60856d8">spdk_nvme_cmd_cb</a> cb_fn, void *cb_arg, uint32_t io_flags, <a class="el" href="nvme_8h.html#a0e1fcb43970ea531567ee00d4ee0675b">spdk_nvme_req_reset_sgl_cb</a> reset_sgl_fn, <a class="el" href="nvme_8h.html#a4ab95bea86f498c08510f6f0bcd2eb09">spdk_nvme_req_next_sge_cb</a> next_sge_fn)</td></tr>
 <tr class="memdesc:acb47ce7de6b6e963ec9fb8de261466ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submits a read I/O to the specified NVMe namespace.  <a href="#acb47ce7de6b6e963ec9fb8de261466ae">More...</a><br /></td></tr>
 <tr class="separator:acb47ce7de6b6e963ec9fb8de261466ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f063869bd65f5456e18acd54819e69e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a2f063869bd65f5456e18acd54819e69e">spdk_nvme_ns_cmd_readv_with_md</a> (struct spdk_nvme_ns *ns, struct spdk_nvme_qpair *qpair, uint64_t lba, uint32_t lba_count, <a class="el" href="nvme_8h.html#ac9779e9957d7089dde8e492cc60856d8">spdk_nvme_cmd_cb</a> cb_fn, void *cb_arg, uint32_t io_flags, <a class="el" href="nvme_8h.html#a0e1fcb43970ea531567ee00d4ee0675b">spdk_nvme_req_reset_sgl_cb</a> reset_sgl_fn, <a class="el" href="nvme_8h.html#a4ab95bea86f498c08510f6f0bcd2eb09">spdk_nvme_req_next_sge_cb</a> next_sge_fn, void *metadata)</td></tr>
+<tr class="memdesc:a2f063869bd65f5456e18acd54819e69e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submits a read I/O to the specified NVMe namespace.  <a href="#a2f063869bd65f5456e18acd54819e69e">More...</a><br /></td></tr>
+<tr class="separator:a2f063869bd65f5456e18acd54819e69e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa2913b93326e636eca6dfe7b42e349fe"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#aa2913b93326e636eca6dfe7b42e349fe">spdk_nvme_ns_cmd_read_with_md</a> (struct spdk_nvme_ns *ns, struct spdk_nvme_qpair *qpair, void *payload, void *metadata, uint64_t lba, uint32_t lba_count, <a class="el" href="nvme_8h.html#ac9779e9957d7089dde8e492cc60856d8">spdk_nvme_cmd_cb</a> cb_fn, void *cb_arg, uint32_t io_flags, uint16_t apptag_mask, uint16_t apptag)</td></tr>
 <tr class="memdesc:aa2913b93326e636eca6dfe7b42e349fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submits a read I/O to the specified NVMe namespace.  <a href="#aa2913b93326e636eca6dfe7b42e349fe">More...</a><br /></td></tr>
 <tr class="separator:aa2913b93326e636eca6dfe7b42e349fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -2768,6 +2774,101 @@ int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_retry_co
 
 </div>
 </div>
+<a id="a2f063869bd65f5456e18acd54819e69e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f063869bd65f5456e18acd54819e69e">&#9670;&nbsp;</a></span>spdk_nvme_ns_cmd_readv_with_md()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_nvme_ns_cmd_readv_with_md </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_nvme_ns *&#160;</td>
+          <td class="paramname"><em>ns</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct spdk_nvme_qpair *&#160;</td>
+          <td class="paramname"><em>qpair</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>lba</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>lba_count</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="nvme_8h.html#ac9779e9957d7089dde8e492cc60856d8">spdk_nvme_cmd_cb</a>&#160;</td>
+          <td class="paramname"><em>cb_fn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>cb_arg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>io_flags</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="nvme_8h.html#a0e1fcb43970ea531567ee00d4ee0675b">spdk_nvme_req_reset_sgl_cb</a>&#160;</td>
+          <td class="paramname"><em>reset_sgl_fn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="nvme_8h.html#a4ab95bea86f498c08510f6f0bcd2eb09">spdk_nvme_req_next_sge_cb</a>&#160;</td>
+          <td class="paramname"><em>next_sge_fn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>metadata</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Submits a read I/O to the specified NVMe namespace. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ns</td><td>NVMe namespace to submit the read I/O </td></tr>
+    <tr><td class="paramname">qpair</td><td>I/O queue pair to submit the request </td></tr>
+    <tr><td class="paramname">lba</td><td>starting LBA to read the data </td></tr>
+    <tr><td class="paramname">lba_count</td><td>length (in sectors) for the read operation </td></tr>
+    <tr><td class="paramname">cb_fn</td><td>callback function to invoke when the I/O is completed </td></tr>
+    <tr><td class="paramname">cb_arg</td><td>argument to pass to the callback function </td></tr>
+    <tr><td class="paramname">io_flags</td><td>set flags, defined in <a class="el" href="nvme__spec_8h.html" title="NVMe specification definitions. ">nvme_spec.h</a>, for this I/O </td></tr>
+    <tr><td class="paramname">reset_sgl_fn</td><td>callback function to reset scattered payload </td></tr>
+    <tr><td class="paramname">next_sge_fn</td><td>callback function to iterate each scattered payload memory segment </td></tr>
+    <tr><td class="paramname">metadata</td><td>virtual address pointer to the metadata payload, the length of metadata is specified by <a class="el" href="nvme_8h.html#ab48657f8cb6561b35e1c1b0bc18376d2" title="Get the metadata size, in bytes, of the given namespace. ">spdk_nvme_ns_get_md_size()</a></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 if successfully submitted, ENOMEM if an nvme_request structure cannot be allocated for the I/O request</dd></dl>
+<p>The command is submitted to a qpair allocated by <a class="el" href="nvme_8h.html#a13f745d239dab9b8f934fae2ad4984a2" title="Allocate an I/O queue pair (submission and completion queue). ">spdk_nvme_ctrlr_alloc_io_qpair()</a>. The user must ensure that only one thread submits I/O on a given qpair at any given time. </p>
+
+</div>
+</div>
 <a id="abb8028f294d09711401d098e89d87f38"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#abb8028f294d09711401d098e89d87f38">&#9670;&nbsp;</a></span>spdk_nvme_ns_cmd_reservation_acquire()</h2>
 
@@ -3415,6 +3516,101 @@ int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_retry_co
     <tr><td class="paramname">io_flags</td><td>set flags, defined in <a class="el" href="nvme__spec_8h.html" title="NVMe specification definitions. ">nvme_spec.h</a>, for this I/O </td></tr>
     <tr><td class="paramname">reset_sgl_fn</td><td>callback function to reset scattered payload </td></tr>
     <tr><td class="paramname">next_sge_fn</td><td>callback function to iterate each scattered payload memory segment</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 if successfully submitted, ENOMEM if an nvme_request structure cannot be allocated for the I/O request</dd></dl>
+<p>The command is submitted to a qpair allocated by <a class="el" href="nvme_8h.html#a13f745d239dab9b8f934fae2ad4984a2" title="Allocate an I/O queue pair (submission and completion queue). ">spdk_nvme_ctrlr_alloc_io_qpair()</a>. The user must ensure that only one thread submits I/O on a given qpair at any given time. </p>
+
+</div>
+</div>
+<a id="a75d170e1b580379432053bc36f158221"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a75d170e1b580379432053bc36f158221">&#9670;&nbsp;</a></span>spdk_nvme_ns_cmd_writev_with_md()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_nvme_ns_cmd_writev_with_md </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_nvme_ns *&#160;</td>
+          <td class="paramname"><em>ns</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct spdk_nvme_qpair *&#160;</td>
+          <td class="paramname"><em>qpair</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>lba</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>lba_count</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="nvme_8h.html#ac9779e9957d7089dde8e492cc60856d8">spdk_nvme_cmd_cb</a>&#160;</td>
+          <td class="paramname"><em>cb_fn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>cb_arg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>io_flags</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="nvme_8h.html#a0e1fcb43970ea531567ee00d4ee0675b">spdk_nvme_req_reset_sgl_cb</a>&#160;</td>
+          <td class="paramname"><em>reset_sgl_fn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="nvme_8h.html#a4ab95bea86f498c08510f6f0bcd2eb09">spdk_nvme_req_next_sge_cb</a>&#160;</td>
+          <td class="paramname"><em>next_sge_fn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>metadata</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Submits a write I/O to the specified NVMe namespace. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ns</td><td>NVMe namespace to submit the write I/O </td></tr>
+    <tr><td class="paramname">qpair</td><td>I/O queue pair to submit the request </td></tr>
+    <tr><td class="paramname">lba</td><td>starting LBA to write the data </td></tr>
+    <tr><td class="paramname">lba_count</td><td>length (in sectors) for the write operation </td></tr>
+    <tr><td class="paramname">cb_fn</td><td>callback function to invoke when the I/O is completed </td></tr>
+    <tr><td class="paramname">cb_arg</td><td>argument to pass to the callback function </td></tr>
+    <tr><td class="paramname">io_flags</td><td>set flags, defined in <a class="el" href="nvme__spec_8h.html" title="NVMe specification definitions. ">nvme_spec.h</a>, for this I/O </td></tr>
+    <tr><td class="paramname">reset_sgl_fn</td><td>callback function to reset scattered payload </td></tr>
+    <tr><td class="paramname">next_sge_fn</td><td>callback function to iterate each scattered payload memory segment </td></tr>
+    <tr><td class="paramname">metadata</td><td>virtual address pointer to the metadata payload, the length of metadata is specified by <a class="el" href="nvme_8h.html#ab48657f8cb6561b35e1c1b0bc18376d2" title="Get the metadata size, in bytes, of the given namespace. ">spdk_nvme_ns_get_md_size()</a></td></tr>
   </table>
   </dd>
 </dl>

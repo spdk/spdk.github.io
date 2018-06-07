@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['logical_20volumes_20introduction',['Logical Volumes Introduction',['../logical_volumes.html',1,'']]]
+  ['logical_20volumes',['Logical Volumes',['../logical_volumes.html',1,'']]]
 ];

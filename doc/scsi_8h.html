@@ -297,15 +297,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_scsi_task_constr
 <tr class="memitem:ab0fc6066d5a615661c85be595a276ed9"><td class="memItemLeft" align="right" valign="top"><a id="ab0fc6066d5a615661c85be595a276ed9"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_scsi_task_put</b> (struct <a class="el" href="structspdk__scsi__task.html">spdk_scsi_task</a> *task)</td></tr>
 <tr class="separator:ab0fc6066d5a615661c85be595a276ed9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afe2a33d28e17eec1095b852e2c93fab0"><td class="memItemLeft" align="right" valign="top"><a id="afe2a33d28e17eec1095b852e2c93fab0"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_scsi_task_free_data</b> (struct <a class="el" href="structspdk__scsi__task.html">spdk_scsi_task</a> *task)</td></tr>
-<tr class="separator:afe2a33d28e17eec1095b852e2c93fab0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afecbfa80c61a820eea16b1fb9d40ddcf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="scsi_8h.html#afecbfa80c61a820eea16b1fb9d40ddcf">spdk_scsi_task_set_data</a> (struct <a class="el" href="structspdk__scsi__task.html">spdk_scsi_task</a> *task, void *data, uint32_t len)</td></tr>
 <tr class="memdesc:afecbfa80c61a820eea16b1fb9d40ddcf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set internal buffer to given one.  <a href="#afecbfa80c61a820eea16b1fb9d40ddcf">More...</a><br /></td></tr>
 <tr class="separator:afecbfa80c61a820eea16b1fb9d40ddcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4e63265465f997338dcad1404636174f"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="scsi_8h.html#a4e63265465f997338dcad1404636174f">spdk_scsi_task_alloc_data</a> (struct <a class="el" href="structspdk__scsi__task.html">spdk_scsi_task</a> *task, uint32_t alloc_len)</td></tr>
-<tr class="memdesc:a4e63265465f997338dcad1404636174f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate internal buffer of requested size.  <a href="#a4e63265465f997338dcad1404636174f">More...</a><br /></td></tr>
-<tr class="separator:a4e63265465f997338dcad1404636174f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0ac8f6137429f32fa3506df2b92429ff"><td class="memItemLeft" align="right" valign="top"><a id="a0ac8f6137429f32fa3506df2b92429ff"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_scsi_task_scatter_data</b> (struct <a class="el" href="structspdk__scsi__task.html">spdk_scsi_task</a> *task, const void *src, size_t len)</td></tr>
 <tr class="separator:a0ac8f6137429f32fa3506df2b92429ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -394,46 +388,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_scsi_task_proces
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The constructed spdk_scsi_dev object. </dd></dl>
-
-</div>
-</div>
-<a id="a4e63265465f997338dcad1404636174f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4e63265465f997338dcad1404636174f">&#9670;&nbsp;</a></span>spdk_scsi_task_alloc_data()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void* spdk_scsi_task_alloc_data </td>
-          <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structspdk__scsi__task.html">spdk_scsi_task</a> *&#160;</td>
-          <td class="paramname"><em>task</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>alloc_len</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Allocate internal buffer of requested size. </p>
-<p>Caller is not owner of returned buffer and must not free it. Caller is permitted to call spdk_scsi_task_free_data() to free internal buffer if it is not required anymore, but must assert that task is done and not used by library.</p>
-<p>Allocated buffer is stored in iov field of task object.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">task</td><td>Task struct </td></tr>
-    <tr><td class="paramname">alloc_len</td><td>Size of allocated buffer. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Pointer to buffer or NULL on error. </dd></dl>
 
 </div>
 </div>

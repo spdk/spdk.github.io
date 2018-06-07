@@ -9,7 +9,7 @@ var searchData=
   ['likely_2eh',['likely.h',['../likely_8h.html',1,'']]],
   ['lists',['lists',['../unionspdk__nvme__cmbsz__register.html#a605db26c2b5a41b7b0cc40750e43527d',1,'spdk_nvme_cmbsz_register']]],
   ['log_2eh',['log.h',['../log_8h.html',1,'']]],
-  ['logical_20volumes_20introduction',['Logical Volumes Introduction',['../logical_volumes.html',1,'']]],
+  ['logical_20volumes',['Logical Volumes',['../logical_volumes.html',1,'']]],
   ['lpa',['lpa',['../structspdk__nvme__ctrlr__data.html#a669da55c2f52c9abef9f8f9010c969ce',1,'spdk_nvme_ctrlr_data']]],
   ['lpw',['lpw',['../unionspdk__nvme__feat__arbitration.html#a0eb3434752c3b8ea38f37556fa9fd116',1,'spdk_nvme_feat_arbitration']]],
   ['lvol_2eh',['lvol.h',['../lvol_8h.html',1,'']]]
