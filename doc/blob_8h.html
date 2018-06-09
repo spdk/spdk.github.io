@@ -176,23 +176,23 @@ Typedefs</h2></td></tr>
 <tr class="memitem:a25618c94412200a1a6ef635d13f3b93b"><td class="memItemLeft" align="right" valign="top"><a id="a25618c94412200a1a6ef635d13f3b93b"></a>
 typedef uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_blob_id</b></td></tr>
 <tr class="separator:a25618c94412200a1a6ef635d13f3b93b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9c265d4eead39c3419cee4b620bf5052"><td class="memItemLeft" align="right" valign="top"><a id="a9c265d4eead39c3419cee4b620bf5052"></a>
-typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bs_op_complete</b>) (void *cb_arg, int bserrno)</td></tr>
+<tr class="memitem:a9c265d4eead39c3419cee4b620bf5052"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blob_8h.html#a9c265d4eead39c3419cee4b620bf5052">spdk_bs_op_complete</a>) (void *cb_arg, int bserrno)</td></tr>
+<tr class="memdesc:a9c265d4eead39c3419cee4b620bf5052"><td class="mdescLeft">&#160;</td><td class="mdescRight">Blobstore operation completion callback.  <a href="#a9c265d4eead39c3419cee4b620bf5052">More...</a><br /></td></tr>
 <tr class="separator:a9c265d4eead39c3419cee4b620bf5052"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a40a976910f2112a4164ae6a12b946855"><td class="memItemLeft" align="right" valign="top"><a id="a40a976910f2112a4164ae6a12b946855"></a>
-typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bs_op_with_handle_complete</b>) (void *cb_arg, struct spdk_blob_store *bs, int bserrno)</td></tr>
+<tr class="memitem:a40a976910f2112a4164ae6a12b946855"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blob_8h.html#a40a976910f2112a4164ae6a12b946855">spdk_bs_op_with_handle_complete</a>) (void *cb_arg, struct spdk_blob_store *bs, int bserrno)</td></tr>
+<tr class="memdesc:a40a976910f2112a4164ae6a12b946855"><td class="mdescLeft">&#160;</td><td class="mdescRight">Blobstore operation completion callback with handle.  <a href="#a40a976910f2112a4164ae6a12b946855">More...</a><br /></td></tr>
 <tr class="separator:a40a976910f2112a4164ae6a12b946855"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aca5253109581a768e06dd197429ef9e1"><td class="memItemLeft" align="right" valign="top"><a id="aca5253109581a768e06dd197429ef9e1"></a>
-typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_blob_op_complete</b>) (void *cb_arg, int bserrno)</td></tr>
+<tr class="memitem:aca5253109581a768e06dd197429ef9e1"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blob_8h.html#aca5253109581a768e06dd197429ef9e1">spdk_blob_op_complete</a>) (void *cb_arg, int bserrno)</td></tr>
+<tr class="memdesc:aca5253109581a768e06dd197429ef9e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Blob operation completion callback.  <a href="#aca5253109581a768e06dd197429ef9e1">More...</a><br /></td></tr>
 <tr class="separator:aca5253109581a768e06dd197429ef9e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4955592d73cb1a262d699d10c8e2856f"><td class="memItemLeft" align="right" valign="top"><a id="a4955592d73cb1a262d699d10c8e2856f"></a>
-typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_blob_op_with_id_complete</b>) (void *cb_arg, spdk_blob_id blobid, int bserrno)</td></tr>
+<tr class="memitem:a4955592d73cb1a262d699d10c8e2856f"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blob_8h.html#a4955592d73cb1a262d699d10c8e2856f">spdk_blob_op_with_id_complete</a>) (void *cb_arg, spdk_blob_id blobid, int bserrno)</td></tr>
+<tr class="memdesc:a4955592d73cb1a262d699d10c8e2856f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Blob operation completion callback with blob ID.  <a href="#a4955592d73cb1a262d699d10c8e2856f">More...</a><br /></td></tr>
 <tr class="separator:a4955592d73cb1a262d699d10c8e2856f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aab6d19ccc3c952877c355030e2a286c1"><td class="memItemLeft" align="right" valign="top"><a id="aab6d19ccc3c952877c355030e2a286c1"></a>
-typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_blob_op_with_handle_complete</b>) (void *cb_arg, struct spdk_blob *blb, int bserrno)</td></tr>
+<tr class="memitem:aab6d19ccc3c952877c355030e2a286c1"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blob_8h.html#aab6d19ccc3c952877c355030e2a286c1">spdk_blob_op_with_handle_complete</a>) (void *cb_arg, struct spdk_blob *blb, int bserrno)</td></tr>
+<tr class="memdesc:aab6d19ccc3c952877c355030e2a286c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Blob operation completion callback with handle.  <a href="#aab6d19ccc3c952877c355030e2a286c1">More...</a><br /></td></tr>
 <tr class="separator:aab6d19ccc3c952877c355030e2a286c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afb1f64973b22548813723a645f9b8995"><td class="memItemLeft" align="right" valign="top"><a id="afb1f64973b22548813723a645f9b8995"></a>
-typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bs_dev_cpl</b>) (struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *channel, void *cb_arg, int bserrno)</td></tr>
+<tr class="memitem:afb1f64973b22548813723a645f9b8995"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blob_8h.html#afb1f64973b22548813723a645f9b8995">spdk_bs_dev_cpl</a>) (struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *channel, void *cb_arg, int bserrno)</td></tr>
+<tr class="memdesc:afb1f64973b22548813723a645f9b8995"><td class="mdescLeft">&#160;</td><td class="mdescRight">Blobstore device completion callback.  <a href="#afb1f64973b22548813723a645f9b8995">More...</a><br /></td></tr>
 <tr class="separator:afb1f64973b22548813723a645f9b8995"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
@@ -200,22 +200,22 @@ Functions</h2></td></tr>
 <tr class="memitem:ad0c7f6c77adc7ffc7ec60e589794650f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blob_8h.html#ad0c7f6c77adc7ffc7ec60e589794650f">spdk_bs_opts_init</a> (struct <a class="el" href="structspdk__bs__opts.html">spdk_bs_opts</a> *opts)</td></tr>
 <tr class="memdesc:ad0c7f6c77adc7ffc7ec60e589794650f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize a <a class="el" href="structspdk__bs__opts.html">spdk_bs_opts</a> structure to the default blobstore option values.  <a href="#ad0c7f6c77adc7ffc7ec60e589794650f">More...</a><br /></td></tr>
 <tr class="separator:ad0c7f6c77adc7ffc7ec60e589794650f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a400da20b69e4f914730fbd15d51eb748"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blob_8h.html#a400da20b69e4f914730fbd15d51eb748">spdk_bs_load</a> (struct <a class="el" href="structspdk__bs__dev.html">spdk_bs_dev</a> *dev, struct <a class="el" href="structspdk__bs__opts.html">spdk_bs_opts</a> *opts, spdk_bs_op_with_handle_complete cb_fn, void *cb_arg)</td></tr>
+<tr class="memitem:a400da20b69e4f914730fbd15d51eb748"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blob_8h.html#a400da20b69e4f914730fbd15d51eb748">spdk_bs_load</a> (struct <a class="el" href="structspdk__bs__dev.html">spdk_bs_dev</a> *dev, struct <a class="el" href="structspdk__bs__opts.html">spdk_bs_opts</a> *opts, <a class="el" href="blob_8h.html#a40a976910f2112a4164ae6a12b946855">spdk_bs_op_with_handle_complete</a> cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:a400da20b69e4f914730fbd15d51eb748"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load a blobstore from the given device.  <a href="#a400da20b69e4f914730fbd15d51eb748">More...</a><br /></td></tr>
 <tr class="separator:a400da20b69e4f914730fbd15d51eb748"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad59f1d147b612a7d4ce1eb8439a69cee"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blob_8h.html#ad59f1d147b612a7d4ce1eb8439a69cee">spdk_bs_init</a> (struct <a class="el" href="structspdk__bs__dev.html">spdk_bs_dev</a> *dev, struct <a class="el" href="structspdk__bs__opts.html">spdk_bs_opts</a> *opts, spdk_bs_op_with_handle_complete cb_fn, void *cb_arg)</td></tr>
+<tr class="memitem:ad59f1d147b612a7d4ce1eb8439a69cee"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blob_8h.html#ad59f1d147b612a7d4ce1eb8439a69cee">spdk_bs_init</a> (struct <a class="el" href="structspdk__bs__dev.html">spdk_bs_dev</a> *dev, struct <a class="el" href="structspdk__bs__opts.html">spdk_bs_opts</a> *opts, <a class="el" href="blob_8h.html#a40a976910f2112a4164ae6a12b946855">spdk_bs_op_with_handle_complete</a> cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:ad59f1d147b612a7d4ce1eb8439a69cee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize a blobstore on the given device.  <a href="#ad59f1d147b612a7d4ce1eb8439a69cee">More...</a><br /></td></tr>
 <tr class="separator:ad59f1d147b612a7d4ce1eb8439a69cee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0ba54d7b0d88a136bbfc9f93bc10b87d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blob_8h.html#a0ba54d7b0d88a136bbfc9f93bc10b87d">spdk_bs_destroy</a> (struct spdk_blob_store *bs, spdk_bs_op_complete cb_fn, void *cb_arg)</td></tr>
+<tr class="memitem:a0ba54d7b0d88a136bbfc9f93bc10b87d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blob_8h.html#a0ba54d7b0d88a136bbfc9f93bc10b87d">spdk_bs_destroy</a> (struct spdk_blob_store *bs, <a class="el" href="blob_8h.html#a9c265d4eead39c3419cee4b620bf5052">spdk_bs_op_complete</a> cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:a0ba54d7b0d88a136bbfc9f93bc10b87d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy the blobstore.  <a href="#a0ba54d7b0d88a136bbfc9f93bc10b87d">More...</a><br /></td></tr>
 <tr class="separator:a0ba54d7b0d88a136bbfc9f93bc10b87d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa98e6633723afb306a763b9f571f2cc1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blob_8h.html#aa98e6633723afb306a763b9f571f2cc1">spdk_bs_unload</a> (struct spdk_blob_store *bs, spdk_bs_op_complete cb_fn, void *cb_arg)</td></tr>
+<tr class="memitem:aa98e6633723afb306a763b9f571f2cc1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blob_8h.html#aa98e6633723afb306a763b9f571f2cc1">spdk_bs_unload</a> (struct spdk_blob_store *bs, <a class="el" href="blob_8h.html#a9c265d4eead39c3419cee4b620bf5052">spdk_bs_op_complete</a> cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:aa98e6633723afb306a763b9f571f2cc1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unload the blobstore.  <a href="#aa98e6633723afb306a763b9f571f2cc1">More...</a><br /></td></tr>
 <tr class="separator:aa98e6633723afb306a763b9f571f2cc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0c5c40c9c88d85ef5455ab32a1db3aa4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blob_8h.html#a0c5c40c9c88d85ef5455ab32a1db3aa4">spdk_bs_set_super</a> (struct spdk_blob_store *bs, spdk_blob_id blobid, spdk_bs_op_complete cb_fn, void *cb_arg)</td></tr>
+<tr class="memitem:a0c5c40c9c88d85ef5455ab32a1db3aa4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blob_8h.html#a0c5c40c9c88d85ef5455ab32a1db3aa4">spdk_bs_set_super</a> (struct spdk_blob_store *bs, spdk_blob_id blobid, <a class="el" href="blob_8h.html#a9c265d4eead39c3419cee4b620bf5052">spdk_bs_op_complete</a> cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:a0c5c40c9c88d85ef5455ab32a1db3aa4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set a super blob on the given blobstore.  <a href="#a0c5c40c9c88d85ef5455ab32a1db3aa4">More...</a><br /></td></tr>
 <tr class="separator:a0c5c40c9c88d85ef5455ab32a1db3aa4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adb47e7a73e595499ea23b2415a6176f8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blob_8h.html#adb47e7a73e595499ea23b2415a6176f8">spdk_bs_get_super</a> (struct spdk_blob_store *bs, spdk_blob_op_with_id_complete cb_fn, void *cb_arg)</td></tr>
+<tr class="memitem:adb47e7a73e595499ea23b2415a6176f8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blob_8h.html#adb47e7a73e595499ea23b2415a6176f8">spdk_bs_get_super</a> (struct spdk_blob_store *bs, <a class="el" href="blob_8h.html#a4955592d73cb1a262d699d10c8e2856f">spdk_blob_op_with_id_complete</a> cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:adb47e7a73e595499ea23b2415a6176f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the super blob.  <a href="#adb47e7a73e595499ea23b2415a6176f8">More...</a><br /></td></tr>
 <tr class="separator:adb47e7a73e595499ea23b2415a6176f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae00447f1611b9499fc23e8be2d45f501"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blob_8h.html#ae00447f1611b9499fc23e8be2d45f501">spdk_bs_get_cluster_size</a> (struct spdk_blob_store *bs)</td></tr>
@@ -242,16 +242,16 @@ Functions</h2></td></tr>
 <tr class="memitem:a45af991a65299ce658ee628bffafef39"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blob_8h.html#a45af991a65299ce658ee628bffafef39">spdk_blob_opts_init</a> (struct <a class="el" href="structspdk__blob__opts.html">spdk_blob_opts</a> *opts)</td></tr>
 <tr class="memdesc:a45af991a65299ce658ee628bffafef39"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize a <a class="el" href="structspdk__blob__opts.html">spdk_blob_opts</a> structure to the default blob option values.  <a href="#a45af991a65299ce658ee628bffafef39">More...</a><br /></td></tr>
 <tr class="separator:a45af991a65299ce658ee628bffafef39"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3c00efe656ca70fc5e8f2f477b8e48ed"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blob_8h.html#a3c00efe656ca70fc5e8f2f477b8e48ed">spdk_bs_create_blob_ext</a> (struct spdk_blob_store *bs, const struct <a class="el" href="structspdk__blob__opts.html">spdk_blob_opts</a> *opts, spdk_blob_op_with_id_complete cb_fn, void *cb_arg)</td></tr>
+<tr class="memitem:a3c00efe656ca70fc5e8f2f477b8e48ed"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blob_8h.html#a3c00efe656ca70fc5e8f2f477b8e48ed">spdk_bs_create_blob_ext</a> (struct spdk_blob_store *bs, const struct <a class="el" href="structspdk__blob__opts.html">spdk_blob_opts</a> *opts, <a class="el" href="blob_8h.html#a4955592d73cb1a262d699d10c8e2856f">spdk_blob_op_with_id_complete</a> cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:a3c00efe656ca70fc5e8f2f477b8e48ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new blob with options on the given blobstore.  <a href="#a3c00efe656ca70fc5e8f2f477b8e48ed">More...</a><br /></td></tr>
 <tr class="separator:a3c00efe656ca70fc5e8f2f477b8e48ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a33263462543c5f2b51f4d507ea26a58d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blob_8h.html#a33263462543c5f2b51f4d507ea26a58d">spdk_bs_create_blob</a> (struct spdk_blob_store *bs, spdk_blob_op_with_id_complete cb_fn, void *cb_arg)</td></tr>
+<tr class="memitem:a33263462543c5f2b51f4d507ea26a58d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blob_8h.html#a33263462543c5f2b51f4d507ea26a58d">spdk_bs_create_blob</a> (struct spdk_blob_store *bs, <a class="el" href="blob_8h.html#a4955592d73cb1a262d699d10c8e2856f">spdk_blob_op_with_id_complete</a> cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:a33263462543c5f2b51f4d507ea26a58d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new blob with default option values on the given blobstore.  <a href="#a33263462543c5f2b51f4d507ea26a58d">More...</a><br /></td></tr>
 <tr class="separator:a33263462543c5f2b51f4d507ea26a58d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6fb220c9f50228ed07e108ca1df52b65"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blob_8h.html#a6fb220c9f50228ed07e108ca1df52b65">spdk_bs_create_snapshot</a> (struct spdk_blob_store *bs, spdk_blob_id blobid, const struct <a class="el" href="structspdk__blob__xattr__opts.html">spdk_blob_xattr_opts</a> *snapshot_xattrs, spdk_blob_op_with_id_complete cb_fn, void *cb_arg)</td></tr>
+<tr class="memitem:a6fb220c9f50228ed07e108ca1df52b65"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blob_8h.html#a6fb220c9f50228ed07e108ca1df52b65">spdk_bs_create_snapshot</a> (struct spdk_blob_store *bs, spdk_blob_id blobid, const struct <a class="el" href="structspdk__blob__xattr__opts.html">spdk_blob_xattr_opts</a> *snapshot_xattrs, <a class="el" href="blob_8h.html#a4955592d73cb1a262d699d10c8e2856f">spdk_blob_op_with_id_complete</a> cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:a6fb220c9f50228ed07e108ca1df52b65"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a read-only snapshot of specified blob with provided options.  <a href="#a6fb220c9f50228ed07e108ca1df52b65">More...</a><br /></td></tr>
 <tr class="separator:a6fb220c9f50228ed07e108ca1df52b65"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a73e90ac081ca6c0819940cac7ba35b87"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blob_8h.html#a73e90ac081ca6c0819940cac7ba35b87">spdk_bs_create_clone</a> (struct spdk_blob_store *bs, spdk_blob_id blobid, const struct <a class="el" href="structspdk__blob__xattr__opts.html">spdk_blob_xattr_opts</a> *clone_xattrs, spdk_blob_op_with_id_complete cb_fn, void *cb_arg)</td></tr>
+<tr class="memitem:a73e90ac081ca6c0819940cac7ba35b87"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blob_8h.html#a73e90ac081ca6c0819940cac7ba35b87">spdk_bs_create_clone</a> (struct spdk_blob_store *bs, spdk_blob_id blobid, const struct <a class="el" href="structspdk__blob__xattr__opts.html">spdk_blob_xattr_opts</a> *clone_xattrs, <a class="el" href="blob_8h.html#a4955592d73cb1a262d699d10c8e2856f">spdk_blob_op_with_id_complete</a> cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:a73e90ac081ca6c0819940cac7ba35b87"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a clone of specified read-only blob.  <a href="#a73e90ac081ca6c0819940cac7ba35b87">More...</a><br /></td></tr>
 <tr class="separator:a73e90ac081ca6c0819940cac7ba35b87"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1482c72fb9cb040999a376096d3e7caf"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blob_8h.html#a1482c72fb9cb040999a376096d3e7caf">spdk_blob_get_clones</a> (struct spdk_blob_store *bs, spdk_blob_id blobid, spdk_blob_id *ids, size_t *count)</td></tr>
@@ -272,25 +272,25 @@ Functions</h2></td></tr>
 <tr class="memitem:ae6487dda0466021c6058beae2e855d8e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blob_8h.html#ae6487dda0466021c6058beae2e855d8e">spdk_blob_is_thin_provisioned</a> (struct spdk_blob *blob)</td></tr>
 <tr class="memdesc:ae6487dda0466021c6058beae2e855d8e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if blob is thin-provisioned.  <a href="#ae6487dda0466021c6058beae2e855d8e">More...</a><br /></td></tr>
 <tr class="separator:ae6487dda0466021c6058beae2e855d8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aed4fb5871f9ca58ff60c0dd8810eb223"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blob_8h.html#aed4fb5871f9ca58ff60c0dd8810eb223">spdk_bs_delete_blob</a> (struct spdk_blob_store *bs, spdk_blob_id blobid, spdk_blob_op_complete cb_fn, void *cb_arg)</td></tr>
+<tr class="memitem:aed4fb5871f9ca58ff60c0dd8810eb223"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blob_8h.html#aed4fb5871f9ca58ff60c0dd8810eb223">spdk_bs_delete_blob</a> (struct spdk_blob_store *bs, spdk_blob_id blobid, <a class="el" href="blob_8h.html#aca5253109581a768e06dd197429ef9e1">spdk_blob_op_complete</a> cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:aed4fb5871f9ca58ff60c0dd8810eb223"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delete an existing blob from the given blobstore.  <a href="#aed4fb5871f9ca58ff60c0dd8810eb223">More...</a><br /></td></tr>
 <tr class="separator:aed4fb5871f9ca58ff60c0dd8810eb223"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3d1f1b56d9782997ef3e338879a2fa28"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blob_8h.html#a3d1f1b56d9782997ef3e338879a2fa28">spdk_bs_inflate_blob</a> (struct spdk_blob_store *bs, struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *channel, spdk_blob_id blobid, spdk_blob_op_complete cb_fn, void *cb_arg)</td></tr>
+<tr class="memitem:a3d1f1b56d9782997ef3e338879a2fa28"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blob_8h.html#a3d1f1b56d9782997ef3e338879a2fa28">spdk_bs_inflate_blob</a> (struct spdk_blob_store *bs, struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *channel, spdk_blob_id blobid, <a class="el" href="blob_8h.html#aca5253109581a768e06dd197429ef9e1">spdk_blob_op_complete</a> cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:a3d1f1b56d9782997ef3e338879a2fa28"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate all unallocated clusters in this blob and copy data from backing blob.  <a href="#a3d1f1b56d9782997ef3e338879a2fa28">More...</a><br /></td></tr>
 <tr class="separator:a3d1f1b56d9782997ef3e338879a2fa28"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2c60e6bc3ccd26228dec2c0f3ecfe618"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blob_8h.html#a2c60e6bc3ccd26228dec2c0f3ecfe618">spdk_bs_open_blob</a> (struct spdk_blob_store *bs, spdk_blob_id blobid, spdk_blob_op_with_handle_complete cb_fn, void *cb_arg)</td></tr>
+<tr class="memitem:a2c60e6bc3ccd26228dec2c0f3ecfe618"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blob_8h.html#a2c60e6bc3ccd26228dec2c0f3ecfe618">spdk_bs_open_blob</a> (struct spdk_blob_store *bs, spdk_blob_id blobid, <a class="el" href="blob_8h.html#aab6d19ccc3c952877c355030e2a286c1">spdk_blob_op_with_handle_complete</a> cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:a2c60e6bc3ccd26228dec2c0f3ecfe618"><td class="mdescLeft">&#160;</td><td class="mdescRight">Open a blob from the given blobstore.  <a href="#a2c60e6bc3ccd26228dec2c0f3ecfe618">More...</a><br /></td></tr>
 <tr class="separator:a2c60e6bc3ccd26228dec2c0f3ecfe618"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a70993dda1206b4c0aaa76deb2b6fd13c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blob_8h.html#a70993dda1206b4c0aaa76deb2b6fd13c">spdk_blob_resize</a> (struct spdk_blob *blob, uint64_t sz, spdk_blob_op_complete cb_fn, void *cb_arg)</td></tr>
+<tr class="memitem:a70993dda1206b4c0aaa76deb2b6fd13c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blob_8h.html#a70993dda1206b4c0aaa76deb2b6fd13c">spdk_blob_resize</a> (struct spdk_blob *blob, uint64_t sz, <a class="el" href="blob_8h.html#aca5253109581a768e06dd197429ef9e1">spdk_blob_op_complete</a> cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:a70993dda1206b4c0aaa76deb2b6fd13c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resize a blob to 'sz' clusters.  <a href="#a70993dda1206b4c0aaa76deb2b6fd13c">More...</a><br /></td></tr>
 <tr class="separator:a70993dda1206b4c0aaa76deb2b6fd13c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1ea6db893423c045b8a40d1f0d0bd128"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blob_8h.html#a1ea6db893423c045b8a40d1f0d0bd128">spdk_blob_set_read_only</a> (struct spdk_blob *blob)</td></tr>
 <tr class="memdesc:a1ea6db893423c045b8a40d1f0d0bd128"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set blob as read only.  <a href="#a1ea6db893423c045b8a40d1f0d0bd128">More...</a><br /></td></tr>
 <tr class="separator:a1ea6db893423c045b8a40d1f0d0bd128"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5acc48debefc30773518871e4f84480f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blob_8h.html#a5acc48debefc30773518871e4f84480f">spdk_blob_sync_md</a> (struct spdk_blob *blob, spdk_blob_op_complete cb_fn, void *cb_arg)</td></tr>
+<tr class="memitem:a5acc48debefc30773518871e4f84480f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blob_8h.html#a5acc48debefc30773518871e4f84480f">spdk_blob_sync_md</a> (struct spdk_blob *blob, <a class="el" href="blob_8h.html#aca5253109581a768e06dd197429ef9e1">spdk_blob_op_complete</a> cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:a5acc48debefc30773518871e4f84480f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sync a blob.  <a href="#a5acc48debefc30773518871e4f84480f">More...</a><br /></td></tr>
 <tr class="separator:a5acc48debefc30773518871e4f84480f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac6ca1e83e9608eb1dea9fca62881d350"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blob_8h.html#ac6ca1e83e9608eb1dea9fca62881d350">spdk_blob_close</a> (struct spdk_blob *blob, spdk_blob_op_complete cb_fn, void *cb_arg)</td></tr>
+<tr class="memitem:ac6ca1e83e9608eb1dea9fca62881d350"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blob_8h.html#ac6ca1e83e9608eb1dea9fca62881d350">spdk_blob_close</a> (struct spdk_blob *blob, <a class="el" href="blob_8h.html#aca5253109581a768e06dd197429ef9e1">spdk_blob_op_complete</a> cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:ac6ca1e83e9608eb1dea9fca62881d350"><td class="mdescLeft">&#160;</td><td class="mdescRight">Close a blob.  <a href="#ac6ca1e83e9608eb1dea9fca62881d350">More...</a><br /></td></tr>
 <tr class="separator:ac6ca1e83e9608eb1dea9fca62881d350"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a24d2b11e6038ad7367c796c6917d44b8"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blob_8h.html#a24d2b11e6038ad7367c796c6917d44b8">spdk_bs_alloc_io_channel</a> (struct spdk_blob_store *bs)</td></tr>
@@ -299,28 +299,28 @@ Functions</h2></td></tr>
 <tr class="memitem:a90cc7c570fc82adf69ab87d277e580a3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blob_8h.html#a90cc7c570fc82adf69ab87d277e580a3">spdk_bs_free_io_channel</a> (struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *channel)</td></tr>
 <tr class="memdesc:a90cc7c570fc82adf69ab87d277e580a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Free the I/O channel.  <a href="#a90cc7c570fc82adf69ab87d277e580a3">More...</a><br /></td></tr>
 <tr class="separator:a90cc7c570fc82adf69ab87d277e580a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2835355d4266676fa6db5c987c506a77"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blob_8h.html#a2835355d4266676fa6db5c987c506a77">spdk_blob_io_write</a> (struct spdk_blob *blob, struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *channel, void *payload, uint64_t offset, uint64_t length, spdk_blob_op_complete cb_fn, void *cb_arg)</td></tr>
+<tr class="memitem:a2835355d4266676fa6db5c987c506a77"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blob_8h.html#a2835355d4266676fa6db5c987c506a77">spdk_blob_io_write</a> (struct spdk_blob *blob, struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *channel, void *payload, uint64_t offset, uint64_t length, <a class="el" href="blob_8h.html#aca5253109581a768e06dd197429ef9e1">spdk_blob_op_complete</a> cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:a2835355d4266676fa6db5c987c506a77"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write data to a blob.  <a href="#a2835355d4266676fa6db5c987c506a77">More...</a><br /></td></tr>
 <tr class="separator:a2835355d4266676fa6db5c987c506a77"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8753efc66a7bc29a63ae74730959b9c1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blob_8h.html#a8753efc66a7bc29a63ae74730959b9c1">spdk_blob_io_read</a> (struct spdk_blob *blob, struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *channel, void *payload, uint64_t offset, uint64_t length, spdk_blob_op_complete cb_fn, void *cb_arg)</td></tr>
+<tr class="memitem:a8753efc66a7bc29a63ae74730959b9c1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blob_8h.html#a8753efc66a7bc29a63ae74730959b9c1">spdk_blob_io_read</a> (struct spdk_blob *blob, struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *channel, void *payload, uint64_t offset, uint64_t length, <a class="el" href="blob_8h.html#aca5253109581a768e06dd197429ef9e1">spdk_blob_op_complete</a> cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:a8753efc66a7bc29a63ae74730959b9c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read data from a blob.  <a href="#a8753efc66a7bc29a63ae74730959b9c1">More...</a><br /></td></tr>
 <tr class="separator:a8753efc66a7bc29a63ae74730959b9c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afa2fed3283426fb3ddf6abc61a44266b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blob_8h.html#afa2fed3283426fb3ddf6abc61a44266b">spdk_blob_io_writev</a> (struct spdk_blob *blob, struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *channel, struct iovec *iov, int iovcnt, uint64_t offset, uint64_t length, spdk_blob_op_complete cb_fn, void *cb_arg)</td></tr>
+<tr class="memitem:afa2fed3283426fb3ddf6abc61a44266b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blob_8h.html#afa2fed3283426fb3ddf6abc61a44266b">spdk_blob_io_writev</a> (struct spdk_blob *blob, struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *channel, struct iovec *iov, int iovcnt, uint64_t offset, uint64_t length, <a class="el" href="blob_8h.html#aca5253109581a768e06dd197429ef9e1">spdk_blob_op_complete</a> cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:afa2fed3283426fb3ddf6abc61a44266b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write the data described by 'iov' to 'length' pages beginning at 'offset' pages into the blob.  <a href="#afa2fed3283426fb3ddf6abc61a44266b">More...</a><br /></td></tr>
 <tr class="separator:afa2fed3283426fb3ddf6abc61a44266b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ade242e483bcb3a50bb987acf2e0dfd4e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blob_8h.html#ade242e483bcb3a50bb987acf2e0dfd4e">spdk_blob_io_readv</a> (struct spdk_blob *blob, struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *channel, struct iovec *iov, int iovcnt, uint64_t offset, uint64_t length, spdk_blob_op_complete cb_fn, void *cb_arg)</td></tr>
+<tr class="memitem:ade242e483bcb3a50bb987acf2e0dfd4e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blob_8h.html#ade242e483bcb3a50bb987acf2e0dfd4e">spdk_blob_io_readv</a> (struct spdk_blob *blob, struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *channel, struct iovec *iov, int iovcnt, uint64_t offset, uint64_t length, <a class="el" href="blob_8h.html#aca5253109581a768e06dd197429ef9e1">spdk_blob_op_complete</a> cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:ade242e483bcb3a50bb987acf2e0dfd4e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read 'length' pages starting at 'offset' pages into the blob into the memory described by 'iov'.  <a href="#ade242e483bcb3a50bb987acf2e0dfd4e">More...</a><br /></td></tr>
 <tr class="separator:ade242e483bcb3a50bb987acf2e0dfd4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2dea7bc3f6cc4dcd2b5d039b14b8640a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blob_8h.html#a2dea7bc3f6cc4dcd2b5d039b14b8640a">spdk_blob_io_unmap</a> (struct spdk_blob *blob, struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *channel, uint64_t offset, uint64_t length, spdk_blob_op_complete cb_fn, void *cb_arg)</td></tr>
+<tr class="memitem:a2dea7bc3f6cc4dcd2b5d039b14b8640a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blob_8h.html#a2dea7bc3f6cc4dcd2b5d039b14b8640a">spdk_blob_io_unmap</a> (struct spdk_blob *blob, struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *channel, uint64_t offset, uint64_t length, <a class="el" href="blob_8h.html#aca5253109581a768e06dd197429ef9e1">spdk_blob_op_complete</a> cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:a2dea7bc3f6cc4dcd2b5d039b14b8640a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unmap 'length' pages beginning at 'offset' pages on the blob as unused.  <a href="#a2dea7bc3f6cc4dcd2b5d039b14b8640a">More...</a><br /></td></tr>
 <tr class="separator:a2dea7bc3f6cc4dcd2b5d039b14b8640a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0291498c4cac92556e0e7e7bf286bda6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blob_8h.html#a0291498c4cac92556e0e7e7bf286bda6">spdk_blob_io_write_zeroes</a> (struct spdk_blob *blob, struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *channel, uint64_t offset, uint64_t length, spdk_blob_op_complete cb_fn, void *cb_arg)</td></tr>
+<tr class="memitem:a0291498c4cac92556e0e7e7bf286bda6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blob_8h.html#a0291498c4cac92556e0e7e7bf286bda6">spdk_blob_io_write_zeroes</a> (struct spdk_blob *blob, struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *channel, uint64_t offset, uint64_t length, <a class="el" href="blob_8h.html#aca5253109581a768e06dd197429ef9e1">spdk_blob_op_complete</a> cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:a0291498c4cac92556e0e7e7bf286bda6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write zeros into area of a blob.  <a href="#a0291498c4cac92556e0e7e7bf286bda6">More...</a><br /></td></tr>
 <tr class="separator:a0291498c4cac92556e0e7e7bf286bda6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af173fe4e35623b8dc8256e9141700486"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blob_8h.html#af173fe4e35623b8dc8256e9141700486">spdk_bs_iter_first</a> (struct spdk_blob_store *bs, spdk_blob_op_with_handle_complete cb_fn, void *cb_arg)</td></tr>
+<tr class="memitem:af173fe4e35623b8dc8256e9141700486"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blob_8h.html#af173fe4e35623b8dc8256e9141700486">spdk_bs_iter_first</a> (struct spdk_blob_store *bs, <a class="el" href="blob_8h.html#aab6d19ccc3c952877c355030e2a286c1">spdk_blob_op_with_handle_complete</a> cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:af173fe4e35623b8dc8256e9141700486"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the first blob of the blobstore.  <a href="#af173fe4e35623b8dc8256e9141700486">More...</a><br /></td></tr>
 <tr class="separator:af173fe4e35623b8dc8256e9141700486"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a98d90e701cf3377115ff0bb67db1342a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blob_8h.html#a98d90e701cf3377115ff0bb67db1342a">spdk_bs_iter_next</a> (struct spdk_blob_store *bs, struct spdk_blob *blob, spdk_blob_op_with_handle_complete cb_fn, void *cb_arg)</td></tr>
+<tr class="memitem:a98d90e701cf3377115ff0bb67db1342a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blob_8h.html#a98d90e701cf3377115ff0bb67db1342a">spdk_bs_iter_next</a> (struct spdk_blob_store *bs, struct spdk_blob *blob, <a class="el" href="blob_8h.html#aab6d19ccc3c952877c355030e2a286c1">spdk_blob_op_with_handle_complete</a> cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:a98d90e701cf3377115ff0bb67db1342a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the next blob by using the current blob.  <a href="#a98d90e701cf3377115ff0bb67db1342a">More...</a><br /></td></tr>
 <tr class="separator:a98d90e701cf3377115ff0bb67db1342a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a74beed7022f23df295149fd68ac8935d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blob_8h.html#a74beed7022f23df295149fd68ac8935d">spdk_blob_set_xattr</a> (struct spdk_blob *blob, const char *name, const void *value, uint16_t value_len)</td></tr>
@@ -357,7 +357,150 @@ Functions</h2></td></tr>
 <p>The blobstore is designed to be very high performance, and thus has a few general rules regarding thread safety to avoid taking locks in the I/O path. This is primarily done by only allowing most functions to be called on the metadata thread. The metadata thread is the thread which called <a class="el" href="blob_8h.html#ad59f1d147b612a7d4ce1eb8439a69cee" title="Initialize a blobstore on the given device. ">spdk_bs_init()</a> or <a class="el" href="blob_8h.html#a400da20b69e4f914730fbd15d51eb748" title="Load a blobstore from the given device. ">spdk_bs_load()</a>.</p>
 <p>Functions starting with the prefix "spdk_blob_io" are passed a channel as an argument, and channels may only be used from the thread they were created on. See <a class="el" href="blob_8h.html#a24d2b11e6038ad7367c796c6917d44b8">spdk_bs_alloc_io_channel</a>. These are the only functions that may be called from a thread other than the metadata thread.</p>
 <p>The blobstore returns errors using negated POSIX errno values, either returned in the callback or as a return value. An errno value of 0 means success. </p>
-</div><h2 class="groupheader">Function Documentation</h2>
+</div><h2 class="groupheader">Typedef Documentation</h2>
+<a id="aca5253109581a768e06dd197429ef9e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca5253109581a768e06dd197429ef9e1">&#9670;&nbsp;</a></span>spdk_blob_op_complete</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void(* spdk_blob_op_complete) (void *cb_arg, int bserrno)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Blob operation completion callback. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cb_arg</td><td>Callback argument. </td></tr>
+    <tr><td class="paramname">bserrno</td><td>0 if it completed successfully, or negative errno if it failed. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aab6d19ccc3c952877c355030e2a286c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab6d19ccc3c952877c355030e2a286c1">&#9670;&nbsp;</a></span>spdk_blob_op_with_handle_complete</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void(* spdk_blob_op_with_handle_complete) (void *cb_arg, struct spdk_blob *blb, int bserrno)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Blob operation completion callback with handle. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cb_arg</td><td>Callback argument. </td></tr>
+    <tr><td class="paramname">bs</td><td>Handle to a blob. </td></tr>
+    <tr><td class="paramname">bserrno</td><td>0 if it completed successfully, or negative errno if it failed. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a4955592d73cb1a262d699d10c8e2856f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4955592d73cb1a262d699d10c8e2856f">&#9670;&nbsp;</a></span>spdk_blob_op_with_id_complete</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void(* spdk_blob_op_with_id_complete) (void *cb_arg, spdk_blob_id blobid, int bserrno)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Blob operation completion callback with blob ID. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cb_arg</td><td>Callback argument. </td></tr>
+    <tr><td class="paramname">blobid</td><td>Blob ID. </td></tr>
+    <tr><td class="paramname">bserrno</td><td>0 if it completed successfully, or negative errno if it failed. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="afb1f64973b22548813723a645f9b8995"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb1f64973b22548813723a645f9b8995">&#9670;&nbsp;</a></span>spdk_bs_dev_cpl</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void(* spdk_bs_dev_cpl) (struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *channel, void *cb_arg, int bserrno)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Blobstore device completion callback. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">channel</td><td>I/O channel the operation was initiated on. </td></tr>
+    <tr><td class="paramname">cb_arg</td><td>Callback argument. </td></tr>
+    <tr><td class="paramname">bserrno</td><td>0 if it completed successfully, or negative errno if it failed. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a9c265d4eead39c3419cee4b620bf5052"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9c265d4eead39c3419cee4b620bf5052">&#9670;&nbsp;</a></span>spdk_bs_op_complete</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void(* spdk_bs_op_complete) (void *cb_arg, int bserrno)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Blobstore operation completion callback. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cb_arg</td><td>Callback argument. </td></tr>
+    <tr><td class="paramname">bserrno</td><td>0 if it completed successfully, or negative errno if it failed. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a40a976910f2112a4164ae6a12b946855"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a40a976910f2112a4164ae6a12b946855">&#9670;&nbsp;</a></span>spdk_bs_op_with_handle_complete</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void(* spdk_bs_op_with_handle_complete) (void *cb_arg, struct spdk_blob_store *bs, int bserrno)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Blobstore operation completion callback with handle. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cb_arg</td><td>Callback argument. </td></tr>
+    <tr><td class="paramname">bs</td><td>Handle to a blobstore. </td></tr>
+    <tr><td class="paramname">bserrno</td><td>0 if it completed successfully, or negative errno if it failed. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
 <a id="ac6ca1e83e9608eb1dea9fca62881d350"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac6ca1e83e9608eb1dea9fca62881d350">&#9670;&nbsp;</a></span>spdk_blob_close()</h2>
 
@@ -373,7 +516,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">spdk_blob_op_complete&#160;</td>
+          <td class="paramtype"><a class="el" href="blob_8h.html#aca5253109581a768e06dd197429ef9e1">spdk_blob_op_complete</a>&#160;</td>
           <td class="paramname"><em>cb_fn</em>, </td>
         </tr>
         <tr>
@@ -707,7 +850,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">spdk_blob_op_complete&#160;</td>
+          <td class="paramtype"><a class="el" href="blob_8h.html#aca5253109581a768e06dd197429ef9e1">spdk_blob_op_complete</a>&#160;</td>
           <td class="paramname"><em>cb_fn</em>, </td>
         </tr>
         <tr>
@@ -785,7 +928,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">spdk_blob_op_complete&#160;</td>
+          <td class="paramtype"><a class="el" href="blob_8h.html#aca5253109581a768e06dd197429ef9e1">spdk_blob_op_complete</a>&#160;</td>
           <td class="paramname"><em>cb_fn</em>, </td>
         </tr>
         <tr>
@@ -852,7 +995,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">spdk_blob_op_complete&#160;</td>
+          <td class="paramtype"><a class="el" href="blob_8h.html#aca5253109581a768e06dd197429ef9e1">spdk_blob_op_complete</a>&#160;</td>
           <td class="paramname"><em>cb_fn</em>, </td>
         </tr>
         <tr>
@@ -924,7 +1067,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">spdk_blob_op_complete&#160;</td>
+          <td class="paramtype"><a class="el" href="blob_8h.html#aca5253109581a768e06dd197429ef9e1">spdk_blob_op_complete</a>&#160;</td>
           <td class="paramname"><em>cb_fn</em>, </td>
         </tr>
         <tr>
@@ -990,7 +1133,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">spdk_blob_op_complete&#160;</td>
+          <td class="paramtype"><a class="el" href="blob_8h.html#aca5253109581a768e06dd197429ef9e1">spdk_blob_op_complete</a>&#160;</td>
           <td class="paramname"><em>cb_fn</em>, </td>
         </tr>
         <tr>
@@ -1067,7 +1210,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">spdk_blob_op_complete&#160;</td>
+          <td class="paramtype"><a class="el" href="blob_8h.html#aca5253109581a768e06dd197429ef9e1">spdk_blob_op_complete</a>&#160;</td>
           <td class="paramname"><em>cb_fn</em>, </td>
         </tr>
         <tr>
@@ -1294,7 +1437,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">spdk_blob_op_complete&#160;</td>
+          <td class="paramtype"><a class="el" href="blob_8h.html#aca5253109581a768e06dd197429ef9e1">spdk_blob_op_complete</a>&#160;</td>
           <td class="paramname"><em>cb_fn</em>, </td>
         </tr>
         <tr>
@@ -1312,7 +1455,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Resize a blob to 'sz' clusters. </p>
-<p>These changes are not persisted to disk until spdk_bs_md_sync_blob() is called.</p>
+<p>These changes are not persisted to disk until spdk_bs_md_sync_blob() is called. If called before previous resize finish, it will fail with errno -EBUSY</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">blob</td><td>Blob to resize. </td></tr>
@@ -1419,7 +1562,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">spdk_blob_op_complete&#160;</td>
+          <td class="paramtype"><a class="el" href="blob_8h.html#aca5253109581a768e06dd197429ef9e1">spdk_blob_op_complete</a>&#160;</td>
           <td class="paramname"><em>cb_fn</em>, </td>
         </tr>
         <tr>
@@ -1491,7 +1634,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">spdk_blob_op_with_id_complete&#160;</td>
+          <td class="paramtype"><a class="el" href="blob_8h.html#a4955592d73cb1a262d699d10c8e2856f">spdk_blob_op_with_id_complete</a>&#160;</td>
           <td class="paramname"><em>cb_fn</em>, </td>
         </tr>
         <tr>
@@ -1542,7 +1685,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">spdk_blob_op_with_id_complete&#160;</td>
+          <td class="paramtype"><a class="el" href="blob_8h.html#a4955592d73cb1a262d699d10c8e2856f">spdk_blob_op_with_id_complete</a>&#160;</td>
           <td class="paramname"><em>cb_fn</em>, </td>
         </tr>
         <tr>
@@ -1600,7 +1743,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">spdk_blob_op_with_id_complete&#160;</td>
+          <td class="paramtype"><a class="el" href="blob_8h.html#a4955592d73cb1a262d699d10c8e2856f">spdk_blob_op_with_id_complete</a>&#160;</td>
           <td class="paramname"><em>cb_fn</em>, </td>
         </tr>
         <tr>
@@ -1659,7 +1802,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">spdk_blob_op_with_id_complete&#160;</td>
+          <td class="paramtype"><a class="el" href="blob_8h.html#a4955592d73cb1a262d699d10c8e2856f">spdk_blob_op_with_id_complete</a>&#160;</td>
           <td class="paramname"><em>cb_fn</em>, </td>
         </tr>
         <tr>
@@ -1713,7 +1856,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">spdk_blob_op_complete&#160;</td>
+          <td class="paramtype"><a class="el" href="blob_8h.html#aca5253109581a768e06dd197429ef9e1">spdk_blob_op_complete</a>&#160;</td>
           <td class="paramname"><em>cb_fn</em>, </td>
         </tr>
         <tr>
@@ -1758,7 +1901,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">spdk_bs_op_complete&#160;</td>
+          <td class="paramtype"><a class="el" href="blob_8h.html#a9c265d4eead39c3419cee4b620bf5052">spdk_bs_op_complete</a>&#160;</td>
           <td class="paramname"><em>cb_fn</em>, </td>
         </tr>
         <tr>
@@ -1938,7 +2081,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">spdk_blob_op_with_id_complete&#160;</td>
+          <td class="paramtype"><a class="el" href="blob_8h.html#a4955592d73cb1a262d699d10c8e2856f">spdk_blob_op_with_id_complete</a>&#160;</td>
           <td class="paramname"><em>cb_fn</em>, </td>
         </tr>
         <tr>
@@ -1995,7 +2138,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">spdk_blob_op_complete&#160;</td>
+          <td class="paramtype"><a class="el" href="blob_8h.html#aca5253109581a768e06dd197429ef9e1">spdk_blob_op_complete</a>&#160;</td>
           <td class="paramname"><em>cb_fn</em>, </td>
         </tr>
         <tr>
@@ -2048,7 +2191,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">spdk_bs_op_with_handle_complete&#160;</td>
+          <td class="paramtype"><a class="el" href="blob_8h.html#a40a976910f2112a4164ae6a12b946855">spdk_bs_op_with_handle_complete</a>&#160;</td>
           <td class="paramname"><em>cb_fn</em>, </td>
         </tr>
         <tr>
@@ -2093,7 +2236,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">spdk_blob_op_with_handle_complete&#160;</td>
+          <td class="paramtype"><a class="el" href="blob_8h.html#aab6d19ccc3c952877c355030e2a286c1">spdk_blob_op_with_handle_complete</a>&#160;</td>
           <td class="paramname"><em>cb_fn</em>, </td>
         </tr>
         <tr>
@@ -2144,7 +2287,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">spdk_blob_op_with_handle_complete&#160;</td>
+          <td class="paramtype"><a class="el" href="blob_8h.html#aab6d19ccc3c952877c355030e2a286c1">spdk_blob_op_with_handle_complete</a>&#160;</td>
           <td class="paramname"><em>cb_fn</em>, </td>
         </tr>
         <tr>
@@ -2196,7 +2339,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">spdk_bs_op_with_handle_complete&#160;</td>
+          <td class="paramtype"><a class="el" href="blob_8h.html#a40a976910f2112a4164ae6a12b946855">spdk_bs_op_with_handle_complete</a>&#160;</td>
           <td class="paramname"><em>cb_fn</em>, </td>
         </tr>
         <tr>
@@ -2247,7 +2390,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">spdk_blob_op_with_handle_complete&#160;</td>
+          <td class="paramtype"><a class="el" href="blob_8h.html#aab6d19ccc3c952877c355030e2a286c1">spdk_blob_op_with_handle_complete</a>&#160;</td>
           <td class="paramname"><em>cb_fn</em>, </td>
         </tr>
         <tr>
@@ -2361,7 +2504,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">spdk_bs_op_complete&#160;</td>
+          <td class="paramtype"><a class="el" href="blob_8h.html#a9c265d4eead39c3419cee4b620bf5052">spdk_bs_op_complete</a>&#160;</td>
           <td class="paramname"><em>cb_fn</em>, </td>
         </tr>
         <tr>
@@ -2434,7 +2577,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">spdk_bs_op_complete&#160;</td>
+          <td class="paramtype"><a class="el" href="blob_8h.html#a9c265d4eead39c3419cee4b620bf5052">spdk_bs_op_complete</a>&#160;</td>
           <td class="paramname"><em>cb_fn</em>, </td>
         </tr>
         <tr>
