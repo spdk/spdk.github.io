@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "0079477c_b16d3129",
+        "filename": "development.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 32,
+      "author": {
+        "id": 1010525
+      },
+      "writtenOn": "2018-06-11T21:29:24Z",
+      "side": 1,
+      "message": "This is missing the project: part of the query, so it will show all open reviews, not just SPDK ones.\n\nThis should work (and also includes all SPDK projects, like the DPDK repo and website):\n\nhttps://review.gerrithub.io/q/projects:spdk+status:open",
+      "revId": "5af4ba4017cc9a22a83e8d58110b05e50a25bb02",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
