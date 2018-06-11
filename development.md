@@ -29,7 +29,7 @@ All submitted code must carry the appropriate license.
 
 SPDK's source code is hosted by [GitHub](https://github.com/spdk/spdk) and
 patch submission and review is done through
-[GerritHub](https://review.gerrithub.io/#/q/project:spdk/spdk+status:open).
+[GerritHub](https://review.gerrithub.io/q/projects:spdk+status:open).
 
 Instructions for building the libraries and examples are located in the
 [README](https://github.com/spdk/spdk/blob/master/README.md).
