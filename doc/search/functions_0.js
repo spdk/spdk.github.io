@@ -11,6 +11,7 @@ var searchData=
   ['spdk_5fapp_5fstart',['spdk_app_start',['../event_8h.html#a18879873a585b21f44b7c90be8726ce1',1,'event.h']]],
   ['spdk_5fapp_5fstart_5fshutdown',['spdk_app_start_shutdown',['../event_8h.html#a0bbbb23263a8ea9c93c3adf8aa3bce8e',1,'event.h']]],
   ['spdk_5fapp_5fstop',['spdk_app_stop',['../event_8h.html#a40f3af1c0340f5c3eb915bc43e3cee83',1,'event.h']]],
+  ['spdk_5fapp_5fusage',['spdk_app_usage',['../event_8h.html#a35978d9a050c5c27e681e3e6006173bb',1,'event.h']]],
   ['spdk_5fbdev_5falias_5fadd',['spdk_bdev_alias_add',['../bdev__module_8h.html#af1079eae68fac856b56863f26bc5310f',1,'bdev_module.h']]],
   ['spdk_5fbdev_5falias_5fdel',['spdk_bdev_alias_del',['../bdev__module_8h.html#a96486c7be7952a1665ce6ae977f092ef',1,'bdev_module.h']]],
   ['spdk_5fbdev_5fclose',['spdk_bdev_close',['../bdev_8h.html#aaf5fc830851a2eb0aa34bbb40cf5eac6',1,'bdev.h']]],

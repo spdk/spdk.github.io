@@ -22,6 +22,7 @@ var event_8h =
     [ "spdk_app_start", "event_8h.html#a18879873a585b21f44b7c90be8726ce1", null ],
     [ "spdk_app_start_shutdown", "event_8h.html#a0bbbb23263a8ea9c93c3adf8aa3bce8e", null ],
     [ "spdk_app_stop", "event_8h.html#a40f3af1c0340f5c3eb915bc43e3cee83", null ],
+    [ "spdk_app_usage", "event_8h.html#a35978d9a050c5c27e681e3e6006173bb", null ],
     [ "spdk_event_allocate", "event_8h.html#a885e8b94b71844c94f0b380afdfa0df9", null ],
     [ "spdk_event_call", "event_8h.html#af17b7963b6a6964e5eb18480193acedb", null ],
     [ "spdk_reactor_context_switch_monitor_enabled", "event_8h.html#a008187a6eceaba982ca2c1d452061931", null ],

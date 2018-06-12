@@ -1,5 +1,6 @@
 var NAVTREEINDEX6 =
 {
+"nvme__spec_8h.html#acb8784fad6a53be95d4c718ad3cf852eadd832a58ff1335cf3cecad07136b5a79":[31,0,34,87,9],
 "nvme__spec_8h.html#acb8784fad6a53be95d4c718ad3cf852eae0d57b06f29260afc5bf41e027b7c037":[31,0,34,87,13],
 "nvme__spec_8h.html#acb8784fad6a53be95d4c718ad3cf852eae887d046ada95b771b50344ba13beac5":[31,0,34,87,2],
 "nvme__spec_8h.html#acb8784fad6a53be95d4c718ad3cf852eaeb0215504baf000c9886ac739f7539a2":[31,0,34,87,11],
@@ -248,6 +249,5 @@ var NAVTREEINDEX6 =
 "nvmf__spec_8h.html#af6fd4726e5e9fc85d2e2d2255f33a58a":[31,0,36,54],
 "nvmf__spec_8h.html#af8c3a64c4e599fbe507242f3565417ba":[31,0,36,51],
 "nvmf__spec_8h.html#afbaa48152eb59037efdef5a0fb517ea1":[31,0,36,52],
-"nvmf_tgt_pg.html":[21],
-"pages.html":[]
+"nvmf_tgt_pg.html":[21]
 };
