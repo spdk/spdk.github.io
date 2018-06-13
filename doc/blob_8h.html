@@ -194,6 +194,9 @@ typedef uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_blob
 <tr class="memitem:afb1f64973b22548813723a645f9b8995"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blob_8h.html#afb1f64973b22548813723a645f9b8995">spdk_bs_dev_cpl</a>) (struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *channel, void *cb_arg, int bserrno)</td></tr>
 <tr class="memdesc:afb1f64973b22548813723a645f9b8995"><td class="mdescLeft">&#160;</td><td class="mdescRight">Blobstore device completion callback.  <a href="#afb1f64973b22548813723a645f9b8995">More...</a><br /></td></tr>
 <tr class="separator:afb1f64973b22548813723a645f9b8995"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae099ff1947cd0f1e8422289222bc1666"><td class="memItemLeft" align="right" valign="top"><a id="ae099ff1947cd0f1e8422289222bc1666"></a>
+typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bs_dump_print_xattr</b>) (FILE *fp, const char *bstype, const char *name, const void *value, size_t value_length)</td></tr>
+<tr class="separator:ae099ff1947cd0f1e8422289222bc1666"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -206,6 +209,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ad59f1d147b612a7d4ce1eb8439a69cee"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blob_8h.html#ad59f1d147b612a7d4ce1eb8439a69cee">spdk_bs_init</a> (struct <a class="el" href="structspdk__bs__dev.html">spdk_bs_dev</a> *dev, struct <a class="el" href="structspdk__bs__opts.html">spdk_bs_opts</a> *opts, <a class="el" href="blob_8h.html#a40a976910f2112a4164ae6a12b946855">spdk_bs_op_with_handle_complete</a> cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:ad59f1d147b612a7d4ce1eb8439a69cee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize a blobstore on the given device.  <a href="#ad59f1d147b612a7d4ce1eb8439a69cee">More...</a><br /></td></tr>
 <tr class="separator:ad59f1d147b612a7d4ce1eb8439a69cee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa75072ce1a5a9559fe2db0da30363ad4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blob_8h.html#aa75072ce1a5a9559fe2db0da30363ad4">spdk_bs_dump</a> (struct <a class="el" href="structspdk__bs__dev.html">spdk_bs_dev</a> *dev, FILE *fp, spdk_bs_dump_print_xattr print_xattr_fn, <a class="el" href="blob_8h.html#a9c265d4eead39c3419cee4b620bf5052">spdk_bs_op_complete</a> cb_fn, void *cb_arg)</td></tr>
+<tr class="memdesc:aa75072ce1a5a9559fe2db0da30363ad4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dump a blobstore's metadata to a given FILE in human-readable format.  <a href="#aa75072ce1a5a9559fe2db0da30363ad4">More...</a><br /></td></tr>
+<tr class="separator:aa75072ce1a5a9559fe2db0da30363ad4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0ba54d7b0d88a136bbfc9f93bc10b87d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blob_8h.html#a0ba54d7b0d88a136bbfc9f93bc10b87d">spdk_bs_destroy</a> (struct spdk_blob_store *bs, <a class="el" href="blob_8h.html#a9c265d4eead39c3419cee4b620bf5052">spdk_bs_op_complete</a> cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:a0ba54d7b0d88a136bbfc9f93bc10b87d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy the blobstore.  <a href="#a0ba54d7b0d88a136bbfc9f93bc10b87d">More...</a><br /></td></tr>
 <tr class="separator:a0ba54d7b0d88a136bbfc9f93bc10b87d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1924,6 +1930,64 @@ Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">bs</td><td>blobstore to destroy. </td></tr>
     <tr><td class="paramname">cb_fn</td><td>Called when the destruction is complete. </td></tr>
+    <tr><td class="paramname">cb_arg</td><td>Argument passed to function cb_fn. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aa75072ce1a5a9559fe2db0da30363ad4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa75072ce1a5a9559fe2db0da30363ad4">&#9670;&nbsp;</a></span>spdk_bs_dump()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_bs_dump </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structspdk__bs__dev.html">spdk_bs_dev</a> *&#160;</td>
+          <td class="paramname"><em>dev</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">FILE *&#160;</td>
+          <td class="paramname"><em>fp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">spdk_bs_dump_print_xattr&#160;</td>
+          <td class="paramname"><em>print_xattr_fn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="blob_8h.html#a9c265d4eead39c3419cee4b620bf5052">spdk_bs_op_complete</a>&#160;</td>
+          <td class="paramname"><em>cb_fn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>cb_arg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Dump a blobstore's metadata to a given FILE in human-readable format. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dev</td><td>Blobstore block device. </td></tr>
+    <tr><td class="paramname">fp</td><td>FILE pointer to dump the metadata contents. </td></tr>
+    <tr><td class="paramname">print_xattr_fn</td><td>Callback function to interpret external xattrs. </td></tr>
+    <tr><td class="paramname">cb_fn</td><td>Called when the dump is complete. </td></tr>
     <tr><td class="paramname">cb_arg</td><td>Argument passed to function cb_fn. </td></tr>
   </table>
   </dd>

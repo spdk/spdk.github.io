@@ -225,7 +225,7 @@ var NAVTREE =
       [ "Starting SPDK vhost target", "vhost.html#vhost_start", null ],
       [ "SPDK Configuration", "vhost.html#vhost_config", [
         [ "Create bdev (block device)", "vhost.html#vhost_bdev_create", null ],
-        [ "Create a virtio device", "vhost.html#vhost_vdev_create", null ],
+        [ "Create a vhost device", "vhost.html#vhost_vdev_create", null ],
         [ "QEMU", "vhost.html#vhost_qemu_config", null ],
         [ "Example output", "vhost.html#vhost_example", null ]
       ] ],
@@ -272,22 +272,22 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "about.html",
-"blobfs_8h.html#a53f34caefaed1536bec1beeb521ead7a",
-"event_8h.html#af23f96e90919584f1d26616dd8f83fa6",
-"iscsi__spec_8h.html#a6ae501611baca9225cc96bf6cf087450",
-"mmio_8h.html#a5e5c67230fa7efb398ffb43454ee2d4f",
-"nvme__spec_8h.html#a1f3d0ee6e884ecbb37548f9fc74f2076a2bd255372844f9361bbe8d7764b408bd",
-"nvme__spec_8h.html#acb8784fad6a53be95d4c718ad3cf852eadd832a58ff1335cf3cecad07136b5a79",
-"pages.html",
-"scsi__spec_8h.html#a9e2b2add18fac5a9110df411076170dca49ff7f9b498d674e380174d94bd16f8e",
-"structiscsi__bhs__async.html#a19e91c79d55ea1e82cea2190cf4964a4",
-"structiscsi__bhs__task__resp.html#aa04ba2e4ba728070339f683c1d4c1970",
-"structspdk__gpt__header.html#ae7c11865ae0b0003cec280abc7e4bcd4",
-"structspdk__nvme__cmd.html#a5c57f9c644d555e83d29535042444871",
-"structspdk__nvme__health__information__page.html#a989f4baed0d8bdd82e5022a028956e91",
-"structspdk__nvme__transport__id.html#a1d77d6f4fb1d3245f03a2e64a63ce64a",
-"structspdk__scsi__cdb__inquiry__data.html#a9acdee402c72fe9faf7b36323f207f51",
-"unionspdk__nvme__csts__register.html#a86fc572fdd7a9850c188671e682b6ffa"
+"blobfs_8h.html#a3ba653cf26b62f1d18385bdc010c73b2",
+"event_8h.html#ac64ac17f456e8ac388d959c2e7a4a13b",
+"iscsi__spec_8h.html#a9cd87a034cf8d8aa42b5203460f03a12a4ed52bb989f41e81d45593676788356f",
+"nvme.html#nvme_fabrics_trid",
+"nvme__spec_8h.html#a37ca8c4732d96fd693019a2cdbf98ab2",
+"nvme__spec_8h.html#adbe38e042bb939183ed8fd5c1685b2fca0de3a8ad0600034555094591e706fb50",
+"pci__ids_8h.html#a5bcf958de65c15c874eb24e4ca95040f",
+"scsi__spec_8h.html#a9e2b2add18fac5a9110df411076170dcaab52adb6004b69029c963f924c8ba56b",
+"structiscsi__bhs__data__in.html#a33f97d9aed48b92505a8b3743f053fc0",
+"structiscsi__bhs__text__req.html#adb69bd17dc6640d1dbf2e465c055b8e3",
+"structspdk__io__channel.html#a2ef702c86e6d7ec27c64e1671f482d52",
+"structspdk__nvme__cmds__and__effect__entry.html#aeeae023e93acfbd4f995e4bfb2fd46d5",
+"structspdk__nvme__intel__log__page__directory.html#a80df3eb1775704a4a62761973398dc74",
+"structspdk__nvmf__discovery__log__page__entry.html#a2ac239007d3805e11d5a0cf0a3b1ce3f",
+"structspdk__scsi__mpage__policy__desc.html#aba233a7338dbf124fed52950c92f7f98",
+"unionspdk__nvme__critical__warning__state.html#a113097459596a0a0d1d3dbc8b18accc3"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

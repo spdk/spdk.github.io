@@ -1,6 +1,7 @@
 var bdev_8h =
 [
     [ "spdk_bdev_io_stat", "structspdk__bdev__io__stat.html", "structspdk__bdev__io__stat" ],
+    [ "spdk_bdev_opts", "structspdk__bdev__opts.html", "structspdk__bdev__opts" ],
     [ "SPDK_BDEV_LARGE_BUF_MAX_SIZE", "bdev_8h.html#a9496c34e0fc135e1f309fd586e8e65d0", null ],
     [ "SPDK_BDEV_SMALL_BUF_MAX_SIZE", "bdev_8h.html#a22219ae3fb084dcb87bcc6d454b415aa", null ],
     [ "spdk_bdev_fini_cb", "bdev_8h.html#ad33efc88148d8984b353e54b7ee0058f", null ],
@@ -46,6 +47,7 @@ var bdev_8h =
     [ "spdk_bdev_get_name", "bdev_8h.html#ad97a853dcb945bf004817424b7aa28af", null ],
     [ "spdk_bdev_get_num_blocks", "bdev_8h.html#a86568eca8f0b4d0dc9bc59c5138fc7a5", null ],
     [ "spdk_bdev_get_optimal_io_boundary", "bdev_8h.html#aa79625889e23318204d235da36a4fa02", null ],
+    [ "spdk_bdev_get_opts", "bdev_8h.html#ae5b45f98f76615c2c9ee1fd3d11149b6", null ],
     [ "spdk_bdev_get_product_name", "bdev_8h.html#a1cb4d1f8822c30be8c5d9c5dc3e62483", null ],
     [ "spdk_bdev_get_qos_ios_per_sec", "bdev_8h.html#a95568575f25704de7831adccc0cad94b", null ],
     [ "spdk_bdev_get_uuid", "bdev_8h.html#add8565cdbf3d57697b67202b869a7beb", null ],
@@ -66,6 +68,7 @@ var bdev_8h =
     [ "spdk_bdev_readv", "bdev_8h.html#a9ac9efa882e87909acfd4bccaddb1778", null ],
     [ "spdk_bdev_readv_blocks", "bdev_8h.html#a55483d5ae010c514b37b976ad803b4b2", null ],
     [ "spdk_bdev_reset", "bdev_8h.html#aca574d3e94be6150343823dd2e7ecf46", null ],
+    [ "spdk_bdev_set_opts", "bdev_8h.html#a828be2f36a5c1e343488130c457f5bf5", null ],
     [ "spdk_bdev_set_qos_limit_iops", "bdev_8h.html#ae740e2dbe4eb28fb470ef208fa993e30", null ],
     [ "spdk_bdev_subsystem_config_json", "bdev_8h.html#a57814ce5dc208380ebf39dab0e1ce9a8", null ],
     [ "spdk_bdev_unmap", "bdev_8h.html#a680c9c302998f7b003e2476e35d9ae4b", null ],

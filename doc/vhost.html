@@ -152,32 +152,15 @@ Table of Contents</h1>
 </ul>
 <h1><a class="anchor" id="vhost_intro"></a>
 Introduction</h1>
-<p>A vhost target provides a local storage service as a process running on a local machine. It is capable of exposing virtualized block devices to QEMU instances or other arbitrary processes. These processes communicate with the vhost target using the <a href="https://wiki.libvirt.org/page/Virtio">virtio protocol</a>, a standardized protocol for paravirtualized devices.</p>
-<p>SPDK provides an accelerated vhost target by applying the same user space and polling techniques as other components in SPDK. Since SPDK is polling for virtio submissions, it can signal the virtio driver to skip notifications on submission. This avoids VMEXITs on I/O submission and can significantly reduce CPU usage in the guest VM on heavy I/O workloads.</p>
-<p>The following diagram presents how QEMU-based VM communicates with an SPDK vhost device. </p><pre class="fragment">+-------QEMU-VM--------+             +---------------SPDK-vhost-------------+
-|                      |             |                                      |
-|  +----------------+  |             |  +--------------------------------+  |
-|  |                |  |             |  |                                |  |
-|  |  Virtio-SCSI   |  |  eventfd    |  |               +-------------+  |  |
-|  |  Linux driver  |  |  interrupt  |  |  Virtio-SCSI  |             |  |  |
-|  |                |  &lt;----------------+  device       |  NVMe disk  |  |  |
-|  +--------^-------+  |             |  |               |             |  |  |
-|           |          |             |  |               +-------^-----+  |  |
-+----------------------+             |  |                       |        |  |
-            |                        |  +----------^---------------------+  |
-            |                        |             |            |           |
-            |                        +--------------------------------------+
-            |                                      |            |
-            |                              polling |            | DMA
-            |                                      |            |
-+-----------v----Shared hugepage memory------------+------------------------+
-|                                                               |           |
-|  +----------------------------------+-------------------------v--------+  |
-+  |            Virtqueues            |              Buffers             |  |
-|  +----------------------------------+----------------------------------+  |
-|                                                                           |
-+---------------------------------------------------------------------------+
-</pre><h1><a class="anchor" id="vhost_prereqs"></a>
+<p>A vhost target provides a local storage service as a process running on a local machine. It is capable of exposing virtualized block devices to QEMU instances or other arbitrary processes.</p>
+<p>The following diagram presents how QEMU-based VM communicates with SPDK Vhost-SCSI device.</p>
+<div class="image">
+<object type="image/svg+xml" data="qemu_vhost_data_flow.svg">qemu_vhost_data_flow.svg</object>
+<div class="caption">
+QEMU/SPDK vhost data flow</div></div>
+<p> The diagram, and the vhost protocol itself is described in <a class="el" href="vhost_processing.html">Vhost processing</a> doc.</p>
+<p>SPDK provides an accelerated vhost target by applying the same user space and polling techniques as other components in SPDK. Since SPDK is polling for vhost submissions, it can signal the VM to skip notifications on submission. This avoids VMEXITs on I/O submission and can significantly reduce CPU usage in the VM on heavy I/O workloads.</p>
+<h1><a class="anchor" id="vhost_prereqs"></a>
 Prerequisites</h1>
 <p>This guide assumes the SPDK has been built according to the instructions in <a class="el" href="getting_started.html">Getting Started</a>. The SPDK vhost target is built with the default configure options.</p>
 <h2>Supported Guest Operating Systems</h2>
@@ -190,7 +173,7 @@ Prerequisites</h1>
 <div class="fragment"><div class="line">qemu-system-x86_64 -device vhost-user-nvme,help</div></div><!-- fragment --><h1><a class="anchor" id="vhost_start"></a>
 Starting SPDK vhost target</h1>
 <p>First, run the SPDK setup.sh script to setup some hugepages for the SPDK vhost target application. This will allocate 4096MiB (4GiB) of hugepages, enough for the SPDK vhost target and the virtual machine.</p>
-<div class="fragment"><div class="line">HUGEMEM=4096 scripts/setup.sh</div></div><!-- fragment --><p>Next, start the SPDK vhost target application. The following command will start vhost on CPU cores 0 and 1 (cpumask 0x3) with all future socket files placed in /var/tmp. Vhost will fully occupy given CPU cores for I/O polling. Particular vhost devices can be restricted to run on a subset of these CPU cores. See <a class="el" href="vhost.html#vhost_vdev_create">Create a virtio device</a> for details.</p>
+<div class="fragment"><div class="line">HUGEMEM=4096 scripts/setup.sh</div></div><!-- fragment --><p>Next, start the SPDK vhost target application. The following command will start vhost on CPU cores 0 and 1 (cpumask 0x3) with all future socket files placed in /var/tmp. Vhost will fully occupy given CPU cores for I/O polling. Particular vhost devices can be restricted to run on a subset of these CPU cores. See <a class="el" href="vhost.html#vhost_vdev_create">Create a vhost device</a> for details.</p>
 <div class="fragment"><div class="line">app/vhost/vhost -S /var/tmp -m 0x3</div></div><!-- fragment --><p>To list all available vhost options use the following command.</p>
 <div class="fragment"><div class="line">app/vhost/vhost -h</div></div><!-- fragment --><h1><a class="anchor" id="vhost_config"></a>
 SPDK Configuration</h1>
@@ -200,7 +183,7 @@ Create bdev (block device)</h2>
 <p>SPDK supports several different types of storage backends, including NVMe, Linux AIO, malloc ramdisk and Ceph RBD. Refer to bdev_getting_started for additional information on configuring SPDK storage backends.</p>
 <p>This guide will use a malloc bdev (ramdisk) named Malloc0. The following RPC will create a 64MB malloc bdev with 512-byte block size.</p>
 <div class="fragment"><div class="line">scripts/rpc.py construct_malloc_bdev 64 512 -b Malloc0</div></div><!-- fragment --><h2><a class="anchor" id="vhost_vdev_create"></a>
-Create a virtio device</h2>
+Create a vhost device</h2>
 <h3>Vhost-SCSI</h3>
 <p>The following RPC will create a vhost-scsi controller which can be accessed by QEMU via /var/tmp/vhost.0. At the time of creation the controller will be bound to a single CPU core with the smallest number of vhost controllers. The optional <code>--cpumask</code> parameter can directly specify which cores should be taken into account - in this case always CPU 0. To achieve optimal performance on NUMA systems, the cpumask should specify cores on the same CPU socket as its associated VM.</p>
 <div class="fragment"><div class="line">scripts/rpc.py construct_vhost_scsi_controller --cpumask 0x1 vhost.0</div></div><!-- fragment --><p>The following RPC will attach the Malloc0 bdev to the vhost.0 vhost-scsi controller. Malloc0 will appear as a single LUN on a SCSI device with target ID 0. SPDK Vhost-SCSI device currently supports only one LUN per SCSI target. Additional LUNs can be added by specifying a different target ID.</p>
