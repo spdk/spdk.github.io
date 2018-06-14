@@ -109,11 +109,8 @@ Thanks for making time to provide actionable feedback on the Summit.
   integration with SPDK. He highlighted how SPDK enabled applications can access
   Persistent memory using SPDK. \\
   ![Paul Luse](../../../../../img/summit-us-2018/paul-luse-pmdk.jpg "Paul Luse")
-- Manoj Wadekar from eBay give a talk on disaggregated storage and role of storage
-  stack and importance of Storage acceleration software like SPDK to help extract
-  performance. This was followed by a talk from Paul Luse, Intel Corp on
+- Paul Luse from Intel Corp gave a talk on
   Virtual BDevs and how it can be customized for various use cases. \\
-  ![Manoj Wadekar](../../../../../img/summit-us-2018/ebay-manoj.jpg "Manoj Wadekar")
   ![Virtual bdevs presentation](../../../../../img/summit-us-2018/virtual-bdevs-presentation.jpg "Virtual bdevs presentation")
 - We concluded the first day of the SPDK Summit with a Networking Event.
   Everyone enjoyed snacks and drinks while networking with their SPDK community peers.
