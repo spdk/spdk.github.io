@@ -56,12 +56,14 @@ var menudata={children:[
 {text:"File List",url:"files.html"},
 {text:"Globals",url:"globals.html",children:[
 {text:"All",url:"globals.html",children:[
-{text:"i",url:"globals.html#index_i"},
+{text:"f",url:"globals.html#index_f"},
+{text:"i",url:"globals_i.html#index_i"},
 {text:"n",url:"globals_n.html#index_n"},
 {text:"s",url:"globals_s.html#index_s"}]},
 {text:"Functions",url:"globals_func.html",children:[
 {text:"s",url:"globals_func.html#index_s"}]},
 {text:"Typedefs",url:"globals_type.html",children:[
+{text:"f",url:"globals_type.html#index_f"},
 {text:"n",url:"globals_type.html#index_n"},
 {text:"s",url:"globals_type.html#index_s"}]},
 {text:"Enumerations",url:"globals_enum.html",children:[

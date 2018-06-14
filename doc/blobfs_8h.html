@@ -177,37 +177,37 @@ Typedefs</h2></td></tr>
 <tr class="memitem:a2553de0bddafbcc71935a934647e098b"><td class="memItemLeft" align="right" valign="top"><a id="a2553de0bddafbcc71935a934647e098b"></a>
 typedef struct spdk_file *&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_fs_iter</b></td></tr>
 <tr class="separator:a2553de0bddafbcc71935a934647e098b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa52e9015dc9a3fd3d2167e7f0ae6bb55"><td class="memItemLeft" align="right" valign="top"><a id="aa52e9015dc9a3fd3d2167e7f0ae6bb55"></a>
-typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_fs_op_with_handle_complete</b>) (void *ctx, struct spdk_filesystem *fs, int fserrno)</td></tr>
+<tr class="memitem:aa52e9015dc9a3fd3d2167e7f0ae6bb55"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blobfs_8h.html#aa52e9015dc9a3fd3d2167e7f0ae6bb55">spdk_fs_op_with_handle_complete</a>) (void *ctx, struct spdk_filesystem *fs, int fserrno)</td></tr>
+<tr class="memdesc:aa52e9015dc9a3fd3d2167e7f0ae6bb55"><td class="mdescLeft">&#160;</td><td class="mdescRight">Filesystem operation completion callback with handle.  <a href="#aa52e9015dc9a3fd3d2167e7f0ae6bb55">More...</a><br /></td></tr>
 <tr class="separator:aa52e9015dc9a3fd3d2167e7f0ae6bb55"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a48d23cdca11ee9b0e44bda1924664ad5"><td class="memItemLeft" align="right" valign="top"><a id="a48d23cdca11ee9b0e44bda1924664ad5"></a>
-typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_file_op_with_handle_complete</b>) (void *ctx, struct spdk_file *f, int fserrno)</td></tr>
+<tr class="memitem:a48d23cdca11ee9b0e44bda1924664ad5"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blobfs_8h.html#a48d23cdca11ee9b0e44bda1924664ad5">spdk_file_op_with_handle_complete</a>) (void *ctx, struct spdk_file *f, int fserrno)</td></tr>
+<tr class="memdesc:a48d23cdca11ee9b0e44bda1924664ad5"><td class="mdescLeft">&#160;</td><td class="mdescRight">File operation completion callback with handle.  <a href="#a48d23cdca11ee9b0e44bda1924664ad5">More...</a><br /></td></tr>
 <tr class="separator:a48d23cdca11ee9b0e44bda1924664ad5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1ef6840cc69a70a04608cedba0021fd7"><td class="memItemLeft" align="right" valign="top"><a id="a1ef6840cc69a70a04608cedba0021fd7"></a>
 typedef <a class="el" href="blob_8h.html#a9c265d4eead39c3419cee4b620bf5052">spdk_bs_op_complete</a>&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_fs_op_complete</b></td></tr>
 <tr class="separator:a1ef6840cc69a70a04608cedba0021fd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa246577176997af494265f9563f5ab42"><td class="memItemLeft" align="right" valign="top"><a id="aa246577176997af494265f9563f5ab42"></a>
-typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_file_op_complete</b>) (void *ctx, int fserrno)</td></tr>
+<tr class="memitem:aa246577176997af494265f9563f5ab42"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blobfs_8h.html#aa246577176997af494265f9563f5ab42">spdk_file_op_complete</a>) (void *ctx, int fserrno)</td></tr>
+<tr class="memdesc:aa246577176997af494265f9563f5ab42"><td class="mdescLeft">&#160;</td><td class="mdescRight">File operation completion callback.  <a href="#aa246577176997af494265f9563f5ab42">More...</a><br /></td></tr>
 <tr class="separator:aa246577176997af494265f9563f5ab42"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeb897b0bd0d1f6c72bd02049bfb4ebc9"><td class="memItemLeft" align="right" valign="top"><a id="aeb897b0bd0d1f6c72bd02049bfb4ebc9"></a>
-typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_file_stat_op_complete</b>) (void *ctx, struct <a class="el" href="structspdk__file__stat.html">spdk_file_stat</a> *stat, int fserrno)</td></tr>
+<tr class="memitem:aeb897b0bd0d1f6c72bd02049bfb4ebc9"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blobfs_8h.html#aeb897b0bd0d1f6c72bd02049bfb4ebc9">spdk_file_stat_op_complete</a>) (void *ctx, struct <a class="el" href="structspdk__file__stat.html">spdk_file_stat</a> *stat, int fserrno)</td></tr>
+<tr class="memdesc:aeb897b0bd0d1f6c72bd02049bfb4ebc9"><td class="mdescLeft">&#160;</td><td class="mdescRight">File stat operation completion callback.  <a href="#aeb897b0bd0d1f6c72bd02049bfb4ebc9">More...</a><br /></td></tr>
 <tr class="separator:aeb897b0bd0d1f6c72bd02049bfb4ebc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac0fe4e3139b34c5aabb30e111f3b1740"><td class="memItemLeft" align="right" valign="top"><a id="ac0fe4e3139b34c5aabb30e111f3b1740"></a>
-typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>fs_request_fn</b>) (void *)</td></tr>
-<tr class="separator:ac0fe4e3139b34c5aabb30e111f3b1740"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9bf8b1b86b051e47ee1499195a5e8e21"><td class="memItemLeft" align="right" valign="top"><a id="a9bf8b1b86b051e47ee1499195a5e8e21"></a>
-typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>fs_send_request_fn</b>) (fs_request_fn, void *)</td></tr>
-<tr class="separator:a9bf8b1b86b051e47ee1499195a5e8e21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae18b6af02a2717f4a9094e0eb47caa3c"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blobfs_8h.html#ae18b6af02a2717f4a9094e0eb47caa3c">fs_request_fn</a>) (void *arg)</td></tr>
+<tr class="memdesc:ae18b6af02a2717f4a9094e0eb47caa3c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function for a request of file system.  <a href="#ae18b6af02a2717f4a9094e0eb47caa3c">More...</a><br /></td></tr>
+<tr class="separator:ae18b6af02a2717f4a9094e0eb47caa3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adada3549eccda011ec15d08199c1328e"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blobfs_8h.html#adada3549eccda011ec15d08199c1328e">fs_send_request_fn</a>) (<a class="el" href="blobfs_8h.html#ae18b6af02a2717f4a9094e0eb47caa3c">fs_request_fn</a>, void *arg)</td></tr>
+<tr class="memdesc:adada3549eccda011ec15d08199c1328e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function for sending request.  <a href="#adada3549eccda011ec15d08199c1328e">More...</a><br /></td></tr>
+<tr class="separator:adada3549eccda011ec15d08199c1328e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a8c6258a494c0ebf2460a6ffece101cfd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blobfs_8h.html#a8c6258a494c0ebf2460a6ffece101cfd">spdk_fs_opts_init</a> (struct <a class="el" href="structspdk__blobfs__opts.html">spdk_blobfs_opts</a> *opts)</td></tr>
 <tr class="memdesc:a8c6258a494c0ebf2460a6ffece101cfd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize a <a class="el" href="structspdk__blobfs__opts.html">spdk_blobfs_opts</a> structure to the default option values.  <a href="#a8c6258a494c0ebf2460a6ffece101cfd">More...</a><br /></td></tr>
 <tr class="separator:a8c6258a494c0ebf2460a6ffece101cfd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8e52f44e27ad58841f0a47d5efcb046a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blobfs_8h.html#a8e52f44e27ad58841f0a47d5efcb046a">spdk_fs_init</a> (struct <a class="el" href="structspdk__bs__dev.html">spdk_bs_dev</a> *dev, struct <a class="el" href="structspdk__blobfs__opts.html">spdk_blobfs_opts</a> *opt, fs_send_request_fn send_request_fn, spdk_fs_op_with_handle_complete cb_fn, void *cb_arg)</td></tr>
+<tr class="memitem:a8e52f44e27ad58841f0a47d5efcb046a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blobfs_8h.html#a8e52f44e27ad58841f0a47d5efcb046a">spdk_fs_init</a> (struct <a class="el" href="structspdk__bs__dev.html">spdk_bs_dev</a> *dev, struct <a class="el" href="structspdk__blobfs__opts.html">spdk_blobfs_opts</a> *opt, <a class="el" href="blobfs_8h.html#adada3549eccda011ec15d08199c1328e">fs_send_request_fn</a> send_request_fn, <a class="el" href="blobfs_8h.html#aa52e9015dc9a3fd3d2167e7f0ae6bb55">spdk_fs_op_with_handle_complete</a> cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:a8e52f44e27ad58841f0a47d5efcb046a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize blobstore filesystem.  <a href="#a8e52f44e27ad58841f0a47d5efcb046a">More...</a><br /></td></tr>
 <tr class="separator:a8e52f44e27ad58841f0a47d5efcb046a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4f3c493505ea2dae2eb740a4834728ce"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blobfs_8h.html#a4f3c493505ea2dae2eb740a4834728ce">spdk_fs_load</a> (struct <a class="el" href="structspdk__bs__dev.html">spdk_bs_dev</a> *dev, fs_send_request_fn send_request_fn, spdk_fs_op_with_handle_complete cb_fn, void *cb_arg)</td></tr>
+<tr class="memitem:a4f3c493505ea2dae2eb740a4834728ce"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blobfs_8h.html#a4f3c493505ea2dae2eb740a4834728ce">spdk_fs_load</a> (struct <a class="el" href="structspdk__bs__dev.html">spdk_bs_dev</a> *dev, <a class="el" href="blobfs_8h.html#adada3549eccda011ec15d08199c1328e">fs_send_request_fn</a> send_request_fn, <a class="el" href="blobfs_8h.html#aa52e9015dc9a3fd3d2167e7f0ae6bb55">spdk_fs_op_with_handle_complete</a> cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:a4f3c493505ea2dae2eb740a4834728ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load blobstore filesystem from the given blobstore block device.  <a href="#a4f3c493505ea2dae2eb740a4834728ce">More...</a><br /></td></tr>
 <tr class="separator:a4f3c493505ea2dae2eb740a4834728ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa71d29a4bce7f7b73114e466a013faea"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blobfs_8h.html#aa71d29a4bce7f7b73114e466a013faea">spdk_fs_unload</a> (struct spdk_filesystem *fs, spdk_fs_op_complete cb_fn, void *cb_arg)</td></tr>
@@ -276,7 +276,149 @@ Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>SPDK Filesystem. </p>
-</div><h2 class="groupheader">Function Documentation</h2>
+</div><h2 class="groupheader">Typedef Documentation</h2>
+<a id="ae18b6af02a2717f4a9094e0eb47caa3c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae18b6af02a2717f4a9094e0eb47caa3c">&#9670;&nbsp;</a></span>fs_request_fn</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void(* fs_request_fn) (void *arg)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Function for a request of file system. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">arg</td><td>Argument to the request function. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="adada3549eccda011ec15d08199c1328e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adada3549eccda011ec15d08199c1328e">&#9670;&nbsp;</a></span>fs_send_request_fn</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void(* fs_send_request_fn) (<a class="el" href="blobfs_8h.html#ae18b6af02a2717f4a9094e0eb47caa3c">fs_request_fn</a>, void *arg)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Function for sending request. </p>
+<p>This function will be invoked any time when the filesystem wants to pass a message to the main dispatch thread.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fs_request_fn</td><td>A pointer to the request function. </td></tr>
+    <tr><td class="paramname">arg</td><td>Argument to the request function. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aa246577176997af494265f9563f5ab42"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa246577176997af494265f9563f5ab42">&#9670;&nbsp;</a></span>spdk_file_op_complete</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void(* spdk_file_op_complete) (void *ctx, int fserrno)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>File operation completion callback. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ctx</td><td>Context for the operation. </td></tr>
+    <tr><td class="paramname">fserrno</td><td>0 if it completed successfully, or negative errno if it failed. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a48d23cdca11ee9b0e44bda1924664ad5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a48d23cdca11ee9b0e44bda1924664ad5">&#9670;&nbsp;</a></span>spdk_file_op_with_handle_complete</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void(* spdk_file_op_with_handle_complete) (void *ctx, struct spdk_file *f, int fserrno)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>File operation completion callback with handle. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ctx</td><td>Context for the operation. </td></tr>
+    <tr><td class="paramname">f</td><td>Handle to a file. </td></tr>
+    <tr><td class="paramname">fserrno</td><td>0 if it completed successfully, or negative errno if it failed. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aeb897b0bd0d1f6c72bd02049bfb4ebc9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeb897b0bd0d1f6c72bd02049bfb4ebc9">&#9670;&nbsp;</a></span>spdk_file_stat_op_complete</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void(* spdk_file_stat_op_complete) (void *ctx, struct <a class="el" href="structspdk__file__stat.html">spdk_file_stat</a> *stat, int fserrno)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>File stat operation completion callback. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ctx</td><td>Context for the operation. </td></tr>
+    <tr><td class="paramname">stat</td><td>Handle to the stat about the file. </td></tr>
+    <tr><td class="paramname">fserrno</td><td>0 if it completed successfully, or negative errno if it failed. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aa52e9015dc9a3fd3d2167e7f0ae6bb55"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa52e9015dc9a3fd3d2167e7f0ae6bb55">&#9670;&nbsp;</a></span>spdk_fs_op_with_handle_complete</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void(* spdk_fs_op_with_handle_complete) (void *ctx, struct spdk_filesystem *fs, int fserrno)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Filesystem operation completion callback with handle. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ctx</td><td>Context for the operation. </td></tr>
+    <tr><td class="paramname">fs</td><td>Handle to a blobfs. </td></tr>
+    <tr><td class="paramname">fserrno</td><td>0 if it completed successfully, or negative errno if it failed. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
 <a id="a9fda9d15c0266303df23b43bf59fc059"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9fda9d15c0266303df23b43bf59fc059">&#9670;&nbsp;</a></span>spdk_file_close()</h2>
 
@@ -871,13 +1013,13 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">fs_send_request_fn&#160;</td>
+          <td class="paramtype"><a class="el" href="blobfs_8h.html#adada3549eccda011ec15d08199c1328e">fs_send_request_fn</a>&#160;</td>
           <td class="paramname"><em>send_request_fn</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">spdk_fs_op_with_handle_complete&#160;</td>
+          <td class="paramtype"><a class="el" href="blobfs_8h.html#aa52e9015dc9a3fd3d2167e7f0ae6bb55">spdk_fs_op_with_handle_complete</a>&#160;</td>
           <td class="paramname"><em>cb_fn</em>, </td>
         </tr>
         <tr>
@@ -978,13 +1120,13 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">fs_send_request_fn&#160;</td>
+          <td class="paramtype"><a class="el" href="blobfs_8h.html#adada3549eccda011ec15d08199c1328e">fs_send_request_fn</a>&#160;</td>
           <td class="paramname"><em>send_request_fn</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">spdk_fs_op_with_handle_complete&#160;</td>
+          <td class="paramtype"><a class="el" href="blobfs_8h.html#aa52e9015dc9a3fd3d2167e7f0ae6bb55">spdk_fs_op_with_handle_complete</a>&#160;</td>
           <td class="paramname"><em>cb_fn</em>, </td>
         </tr>
         <tr>

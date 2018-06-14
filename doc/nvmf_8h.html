@@ -180,6 +180,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a21638f4d81002e93d410cd0d267f608c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#a21638f4d81002e93d410cd0d267f608c">spdk_nvmf_tgt_destroy</a> (struct spdk_nvmf_tgt *tgt, spdk_nvmf_tgt_destroy_done_fn cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:a21638f4d81002e93d410cd0d267f608c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy an NVMe-oF target.  <a href="#a21638f4d81002e93d410cd0d267f608c">More...</a><br /></td></tr>
 <tr class="separator:a21638f4d81002e93d410cd0d267f608c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2aad508811686a6d16f3bfd221ba99a9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#a2aad508811686a6d16f3bfd221ba99a9">spdk_nvmf_tgt_write_config_json</a> (struct spdk_json_write_ctx *w, struct spdk_nvmf_tgt *tgt)</td></tr>
+<tr class="memdesc:a2aad508811686a6d16f3bfd221ba99a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write NVMe-oF target configuration into provided JSON context.  <a href="#a2aad508811686a6d16f3bfd221ba99a9">More...</a><br /></td></tr>
+<tr class="separator:a2aad508811686a6d16f3bfd221ba99a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2c31e57f4634daadf4238bf213a989d6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#a2c31e57f4634daadf4238bf213a989d6">spdk_nvmf_tgt_listen</a> (struct spdk_nvmf_tgt *tgt, struct <a class="el" href="structspdk__nvme__transport__id.html">spdk_nvme_transport_id</a> *trid, <a class="el" href="nvmf_8h.html#a854e30bf69f07bb06b2cbcdd08ca7eba">spdk_nvmf_tgt_listen_done_fn</a> cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:a2c31e57f4634daadf4238bf213a989d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Begin accepting new connections at the address provided.  <a href="#a2c31e57f4634daadf4238bf213a989d6">More...</a><br /></td></tr>
 <tr class="separator:a2c31e57f4634daadf4238bf213a989d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -285,6 +288,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a36c4e50d11e12f45d171fe952fcedb03"><td class="memItemLeft" align="right" valign="top">struct spdk_nvmf_ns *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#a36c4e50d11e12f45d171fe952fcedb03">spdk_nvmf_subsystem_get_ns</a> (struct spdk_nvmf_subsystem *subsystem, uint32_t nsid)</td></tr>
 <tr class="memdesc:a36c4e50d11e12f45d171fe952fcedb03"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a namespace in a subsystem by NSID.  <a href="#a36c4e50d11e12f45d171fe952fcedb03">More...</a><br /></td></tr>
 <tr class="separator:a36c4e50d11e12f45d171fe952fcedb03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a414b91bad7200ab931f14a06585ccc74"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#a414b91bad7200ab931f14a06585ccc74">spdk_nvmf_subsystem_get_max_namespaces</a> (const struct spdk_nvmf_subsystem *subsystem)</td></tr>
+<tr class="memdesc:a414b91bad7200ab931f14a06585ccc74"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the maximum number of namespaces allowed in a subsystem.  <a href="#a414b91bad7200ab931f14a06585ccc74">More...</a><br /></td></tr>
+<tr class="separator:a414b91bad7200ab931f14a06585ccc74"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afdcd2be73f2653c6c14141c4cb481fe2"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#afdcd2be73f2653c6c14141c4cb481fe2">spdk_nvmf_ns_get_id</a> (const struct spdk_nvmf_ns *ns)</td></tr>
 <tr class="memdesc:afdcd2be73f2653c6c14141c4cb481fe2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a namespace's NSID.  <a href="#afdcd2be73f2653c6c14141c4cb481fe2">More...</a><br /></td></tr>
 <tr class="separator:afdcd2be73f2653c6c14141c4cb481fe2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -306,9 +312,6 @@ Functions</h2></td></tr>
 <tr class="memitem:a0f3fbe4ab1d90cda9a1f3fcbf2cb857d"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="nvmf__spec_8h.html#a808272f050cc373f3a90871c1528afd4">spdk_nvmf_subtype</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#a0f3fbe4ab1d90cda9a1f3fcbf2cb857d">spdk_nvmf_subsystem_get_type</a> (struct spdk_nvmf_subsystem *subsystem)</td></tr>
 <tr class="memdesc:a0f3fbe4ab1d90cda9a1f3fcbf2cb857d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the type of the specified subsystem.  <a href="#a0f3fbe4ab1d90cda9a1f3fcbf2cb857d">More...</a><br /></td></tr>
 <tr class="separator:a0f3fbe4ab1d90cda9a1f3fcbf2cb857d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9d560869d674720c54a4794d766173af"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#a9d560869d674720c54a4794d766173af">spdk_nvmf_handle_connect</a> (struct spdk_nvmf_request *req)</td></tr>
-<tr class="memdesc:a9d560869d674720c54a4794d766173af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handle the NVMe-oF request for connection.  <a href="#a9d560869d674720c54a4794d766173af">More...</a><br /></td></tr>
-<tr class="separator:a9d560869d674720c54a4794d766173af"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aed3b8dfc91405cbc6423ab1d642e6337"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#aed3b8dfc91405cbc6423ab1d642e6337">spdk_nvmf_ctrlr_disconnect</a> (struct spdk_nvmf_qpair *qpair)</td></tr>
 <tr class="memdesc:aed3b8dfc91405cbc6423ab1d642e6337"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disconnect the NVMe-oF controller.  <a href="#aed3b8dfc91405cbc6423ab1d642e6337">More...</a><br /></td></tr>
 <tr class="separator:aed3b8dfc91405cbc6423ab1d642e6337"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -406,32 +409,6 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">qpair</td><td>The NVMe-oF qpair associated with the controller. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a9d560869d674720c54a4794d766173af"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9d560869d674720c54a4794d766173af">&#9670;&nbsp;</a></span>spdk_nvmf_handle_connect()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void spdk_nvmf_handle_connect </td>
-          <td>(</td>
-          <td class="paramtype">struct spdk_nvmf_request *&#160;</td>
-          <td class="paramname"><em>req</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Handle the NVMe-oF request for connection. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">req</td><td>NVMe-oF request to handle. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1100,6 +1077,33 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>first allocated namespace in this subsystem, or NULL if this subsystem has no namespaces. </dd></dl>
+
+</div>
+</div>
+<a id="a414b91bad7200ab931f14a06585ccc74"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a414b91bad7200ab931f14a06585ccc74">&#9670;&nbsp;</a></span>spdk_nvmf_subsystem_get_max_namespaces()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t spdk_nvmf_subsystem_get_max_namespaces </td>
+          <td>(</td>
+          <td class="paramtype">const struct spdk_nvmf_subsystem *&#160;</td>
+          <td class="paramname"><em>subsystem</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the maximum number of namespaces allowed in a subsystem. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">subsystem</td><td>Subsystem to query.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Maximum number of namespaces allowed in the subsystem, or 0 for unlimited. </dd></dl>
 
 </div>
 </div>
@@ -2046,6 +2050,43 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">opts</td><td>Data structure where SPDK will initialize the default options. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a2aad508811686a6d16f3bfd221ba99a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2aad508811686a6d16f3bfd221ba99a9">&#9670;&nbsp;</a></span>spdk_nvmf_tgt_write_config_json()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_nvmf_tgt_write_config_json </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_json_write_ctx *&#160;</td>
+          <td class="paramname"><em>w</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct spdk_nvmf_tgt *&#160;</td>
+          <td class="paramname"><em>tgt</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Write NVMe-oF target configuration into provided JSON context. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">w</td><td>JSON write context </td></tr>
+    <tr><td class="paramname">tgt</td><td>The NVMe-oF target </td></tr>
   </table>
   </dd>
 </dl>

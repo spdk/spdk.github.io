@@ -7,7 +7,6 @@ var nvmf_8h =
     [ "spdk_nvmf_tgt_destroy_done_fn", "nvmf_8h.html#a26c5ae0565e487633e00cdd8819d2d00", null ],
     [ "spdk_nvmf_tgt_listen_done_fn", "nvmf_8h.html#a854e30bf69f07bb06b2cbcdd08ca7eba", null ],
     [ "spdk_nvmf_ctrlr_disconnect", "nvmf_8h.html#aed3b8dfc91405cbc6423ab1d642e6337", null ],
-    [ "spdk_nvmf_handle_connect", "nvmf_8h.html#a9d560869d674720c54a4794d766173af", null ],
     [ "spdk_nvmf_host_get_nqn", "nvmf_8h.html#acec4ed75ff9a25a5477d40f43a430677", null ],
     [ "spdk_nvmf_listener_get_trid", "nvmf_8h.html#a6d20b0173b3c6047ad15d5972af867c5", null ],
     [ "spdk_nvmf_ns_get_bdev", "nvmf_8h.html#af3575fee4a9db1b3c8bacbac8b605358", null ],
@@ -28,6 +27,7 @@ var nvmf_8h =
     [ "spdk_nvmf_subsystem_get_first_host", "nvmf_8h.html#a40147e6c89b37d85b2cce4cdb05ce787", null ],
     [ "spdk_nvmf_subsystem_get_first_listener", "nvmf_8h.html#ab1bccfb86fd4d727c2943ab810d5d862", null ],
     [ "spdk_nvmf_subsystem_get_first_ns", "nvmf_8h.html#ab797c6df2dc8fab9833de1711b6fe7f4", null ],
+    [ "spdk_nvmf_subsystem_get_max_namespaces", "nvmf_8h.html#a414b91bad7200ab931f14a06585ccc74", null ],
     [ "spdk_nvmf_subsystem_get_next", "nvmf_8h.html#a8f4f438960707410f3a85258137cf9d3", null ],
     [ "spdk_nvmf_subsystem_get_next_host", "nvmf_8h.html#a5265a9a3d6338c43d9fa03afd1fa9b12", null ],
     [ "spdk_nvmf_subsystem_get_next_listener", "nvmf_8h.html#ae1230525414309c87409b28484bdf964", null ],
@@ -52,5 +52,6 @@ var nvmf_8h =
     [ "spdk_nvmf_tgt_destroy", "nvmf_8h.html#a21638f4d81002e93d410cd0d267f608c", null ],
     [ "spdk_nvmf_tgt_find_subsystem", "nvmf_8h.html#aae62b7fa6ac05a6ad022007f60068d16", null ],
     [ "spdk_nvmf_tgt_listen", "nvmf_8h.html#a2c31e57f4634daadf4238bf213a989d6", null ],
-    [ "spdk_nvmf_tgt_opts_init", "nvmf_8h.html#a51a0dee3a45225842e91da0e8aac0fe6", null ]
+    [ "spdk_nvmf_tgt_opts_init", "nvmf_8h.html#a51a0dee3a45225842e91da0e8aac0fe6", null ],
+    [ "spdk_nvmf_tgt_write_config_json", "nvmf_8h.html#a2aad508811686a6d16f3bfd221ba99a9", null ]
 ];

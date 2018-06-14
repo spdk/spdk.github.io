@@ -140,6 +140,8 @@ $(document).ready(function(){initNavTree('changelog.html','');});
 <div class="contents">
 <div class="textblock"><h1><a class="anchor" id="changelog-v18-07"></a>
 v18.07: (Upcoming Release)</h1>
+<h2>Build System</h2>
+<p>The build system now generates a combined shared library (libspdk.so) that may be used in place of the individual static libraries (libspdk_*.a). The combined library includes all components of SPDK and is intended to make linking against SPDK easier. The static libraries are also still provided for users that prefer to link only the minimal set of components required.</p>
 <h2>RPC</h2>
 <p>The <code>start_nbd_disk</code> RPC method now returns the path to the kernel NBD device node rather than always returning <code>true</code>.</p>
 <h2>Bdev</h2>
