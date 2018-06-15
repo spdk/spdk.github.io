@@ -10,7 +10,7 @@ Join us on the [freenode](https://freenode.net/) IRC network in the [#spdk](irc:
 
 # Trello Board
 
-Find something to work on at the Things To Do Board, or start/participate in a design discussion on any of the [SPDK Trello Boards](https://trello.com/spdk).
+Find something to work on the backlog in your area of interest, or start/participate in a design discussion on any of the [SPDK Trello Boards](../trello/).
 
 # Mailing List
 
