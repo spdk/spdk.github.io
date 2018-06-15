@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['message_20passing_20and_20concurrency',['Message Passing and Concurrency',['../concurrency.html',1,'']]],
+  ['message_20passing_20and_20concurrency',['Message Passing and Concurrency',['../concurrency.html',1,'concepts']]],
   ['max_5fchannel_5fops',['max_channel_ops',['../structspdk__bs__opts.html#ac5417afa104f5061bab1bfae0769c3a6',1,'spdk_bs_opts']]],
   ['max_5fmd_5fops',['max_md_ops',['../structspdk__bs__opts.html#a63e0b619fedc29159dffd7feca08396b',1,'spdk_bs_opts']]],
   ['maxoc',['maxoc',['../structspdk__ocssd__geometry__data.html#adecc1a99d16f94eace12b674c7b7bbfa',1,'spdk_ocssd_geometry_data']]],
@@ -10,7 +10,8 @@ var searchData=
   ['md_5fend',['md_end',['../structspdk__nvme__ns__data.html#ab511e295c151b4d17911e474711168b9',1,'spdk_nvme_ns_data']]],
   ['md_5fstart',['md_start',['../structspdk__nvme__ns__data.html#a1295065f7156b27aeb749b1ef5c0cdc7',1,'spdk_nvme_ns_data']]],
   ['mdts',['mdts',['../structspdk__nvme__ctrlr__data.html#aad0681365b9524dc8a1dca2d48a6c046',1,'spdk_nvme_ctrlr_data']]],
-  ['memory_20management_20for_20user_20space_20drivers',['Memory Management for User Space Drivers',['../memory.html',1,'']]],
+  ['memory_20management_20for_20user_20space_20drivers',['Memory Management for User Space Drivers',['../memory.html',1,'concepts']]],
+  ['miscellaneous',['Miscellaneous',['../misc.html',1,'']]],
   ['mjr',['mjr',['../structspdk__ocssd__geometry__data.html#a1e42dcab27a59b02df913acc08e129b4',1,'spdk_ocssd_geometry_data::mjr()'],['../unionspdk__nvme__vs__register.html#a605cba0b2c6abdee150cb3a6babc4bb8',1,'spdk_nvme_vs_register::mjr()']]],
   ['mmio_2eh',['mmio.h',['../mmio_8h.html',1,'']]],
   ['mn',['mn',['../structspdk__nvme__ctrlr__data.html#acbf277bda70785f22e70aae2196c2e92',1,'spdk_nvme_ctrlr_data']]],
@@ -19,6 +20,7 @@ var searchData=
   ['module',['module',['../structspdk__bdev.html#afb6058d0394545714377a60c34682fa0',1,'spdk_bdev']]],
   ['module_5ffini',['module_fini',['../structspdk__bdev__module.html#ae807abce0f70eafe6ca75435f4f3d5b1',1,'spdk_bdev_module']]],
   ['module_5finit',['module_init',['../structspdk__bdev__module.html#a1f13de8e5d02c74738c6119cedde3c53',1,'spdk_bdev_module']]],
+  ['modules',['Modules',['../modules.html',1,'']]],
   ['mps',['mps',['../unionspdk__nvme__cc__register.html#af8bb5fa3b86ff9cb654ec4da5fa5a31c',1,'spdk_nvme_cc_register']]],
   ['mpsmax',['mpsmax',['../unionspdk__nvme__cap__register.html#ad4b6659be786f840893818e951fc1f3d',1,'spdk_nvme_cap_register']]],
   ['mpsmin',['mpsmin',['../unionspdk__nvme__cap__register.html#a9930c21595d81e7eefa8cca0e118450a',1,'spdk_nvme_cap_register']]],

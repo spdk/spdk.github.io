@@ -3,7 +3,8 @@ var searchData=
   ['pbslc',['pbslc',['../unionspdk__nvme__feat__software__progress__marker.html#a068b7aa9ea34b8e38dfcf7b8f7d25f70',1,'spdk_nvme_feat_software_progress_marker']]],
   ['pci_5fids_2eh',['pci_ids.h',['../pci__ids_8h.html',1,'']]],
   ['pcid',['pcid',['../structspdk__nvme__secondary__ctrl__entry.html#ac896b4c210511e4dab53fbeacfb2cac4',1,'spdk_nvme_secondary_ctrl_entry']]],
-  ['peer_2d2_2dpeer_20dmas',['Peer-2-Peer DMAs',['../peer_2_peer.html',1,'']]],
+  ['peer_2d2_2dpeer_20dmas',['Peer-2-Peer DMAs',['../peer_2_peer.html',1,'misc']]],
+  ['performance_20reports',['Performance Reports',['../performance_reports.html',1,'']]],
   ['persist',['persist',['../structspdk__nvme__ns__data.html#ada850d5cd15ecc2d5f216b845bd5c3e8',1,'spdk_nvme_ns_data']]],
   ['pit',['pit',['../structspdk__nvme__ns__data.html#ac13a2b9435ad685be10f79affa76b821',1,'spdk_nvme_ns_data']]],
   ['pit1',['pit1',['../structspdk__nvme__ns__data.html#ad904cb4c17ff2b844198314bb7aeabbc',1,'spdk_nvme_ns_data']]],
@@ -15,6 +16,7 @@ var searchData=
   ['pp',['pp',['../unionspdk__nvme__csts__register.html#a36a07e6c600537241f579d52604b1de8',1,'spdk_nvme_csts_register']]],
   ['prkey',['prkey',['../structspdk__nvme__reservation__acquire__data.html#a7777dded0893794c13c35fd71173514f',1,'spdk_nvme_reservation_acquire_data']]],
   ['product_5fname',['product_name',['../structspdk__bdev.html#ad3abe8a06500954332614d8657eaf1d9',1,'spdk_bdev']]],
+  ['programmer_20guides',['Programmer Guides',['../prog_guides.html',1,'']]],
   ['ps',['ps',['../unionspdk__nvme__feat__power__management.html#af68e833134cda1b00b750992bdd91342',1,'spdk_nvme_feat_power_management']]],
   ['ptpl_5fstate',['ptpl_state',['../structspdk__nvme__reservation__status__data.html#a092f959d5e4c94d1bad20e02c41ba3f0',1,'spdk_nvme_reservation_status_data']]],
   ['pu_5flen',['pu_len',['../structspdk__ocssd__dev__lba__fmt.html#ae20247c5bd5f2576b67957980bf58333',1,'spdk_ocssd_dev_lba_fmt']]]

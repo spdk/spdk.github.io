@@ -169,7 +169,19 @@ context_switch_monitor</h2>
 <h3>Example</h3>
 <p>Example request: </p><div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;method&quot;: &quot;context_switch_monitor&quot;,</div><div class="line">  &quot;params&quot;: {</div><div class="line">    &quot;enabled&quot;: false</div><div class="line">  }</div><div class="line">}</div></div><!-- fragment --><p>Example response: </p><div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: false</div><div class="line">}</div></div><!-- fragment --><h1><a class="anchor" id="jsonrpc_components_bdev"></a>
 Block Device Abstraction Layer</h1>
-<h2><a class="anchor" id="rpc_get_bdevs"></a>
+<h2>set_bdev_options (#rpc_set_bdev_options}</h2>
+<p>Set global parameters for the block device (bdev) subsystem. This RPC may only be called before subsystems have been initialized.</p>
+<h3>Parameters</h3>
+<table class="doxtable">
+<tr>
+<th>Name </th><th>Optional </th><th>Type </th><th>Description  </th></tr>
+<tr>
+<td>bdev_io_pool_size </td><td>Optional </td><td>number </td><td>Number of <a class="el" href="structspdk__bdev__io.html">spdk_bdev_io</a> structures in shared buffer pool </td></tr>
+<tr>
+<td>bdev_io_cache_size </td><td>Optional </td><td>number </td><td>Maximum number of <a class="el" href="structspdk__bdev__io.html">spdk_bdev_io</a> structures cached per thread </td></tr>
+</table>
+<h3>Example</h3>
+<p>Example request: </p><div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;method&quot;: &quot;set_bdev_options&quot;,</div><div class="line">  &quot;params&quot;: {</div><div class="line">    &quot;bdev_io_pool_size&quot;: 65536,</div><div class="line">    &quot;bdev_io_cache_size&quot;: 256</div><div class="line">  }</div><div class="line">}</div></div><!-- fragment --><p>Example response: </p><div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: true</div><div class="line">}</div></div><!-- fragment --><h2><a class="anchor" id="rpc_get_bdevs"></a>
 get_bdevs</h2>
 <p>Get information about block devices (bdevs).</p>
 <h3>Parameters</h3>

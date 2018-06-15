@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['what_20is_20spdk_3f',['What is SPDK?',['../about.html',1,'']]],
-  ['writing_20a_20custom_20block_20device_20module',['Writing a Custom Block Device Module',['../bdev_module.html',1,'']]],
+  ['what_20is_20spdk_3f',['What is SPDK?',['../about.html',1,'intro']]],
+  ['writing_20a_20custom_20block_20device_20module',['Writing a Custom Block Device Module',['../bdev_module.html',1,'prog_guides']]],
   ['wce',['wce',['../unionspdk__nvme__feat__volatile__write__cache.html#a910973ce5eb628dd9b06ab0c72a1cd33',1,'spdk_nvme_feat_volatile_write_cache']]],
   ['wctemp',['wctemp',['../structspdk__nvme__ctrlr__data.html#a1bbdf8a81a2e7ad4c1969a24573a6649',1,'spdk_nvme_ctrlr_data']]],
   ['wds',['wds',['../unionspdk__nvme__cmbsz__register.html#ad934781cb8247d65136131504d5cd05d',1,'spdk_nvme_cmbsz_register']]],
