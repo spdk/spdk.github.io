@@ -201,6 +201,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a1c8c8e47ef4cae153de3ac1e90961c86"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#a1c8c8e47ef4cae153de3ac1e90961c86">spdk_nvmf_poll_group_remove</a> (struct spdk_nvmf_poll_group *group, struct spdk_nvmf_qpair *qpair)</td></tr>
 <tr class="memdesc:a1c8c8e47ef4cae153de3ac1e90961c86"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove the given qpair from the poll group.  <a href="#a1c8c8e47ef4cae153de3ac1e90961c86">More...</a><br /></td></tr>
 <tr class="separator:a1c8c8e47ef4cae153de3ac1e90961c86"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39e593c1d358950c340414d471d8b703"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#a39e593c1d358950c340414d471d8b703">spdk_nvmf_qpair_disconnect</a> (struct spdk_nvmf_qpair *qpair)</td></tr>
+<tr class="memdesc:a39e593c1d358950c340414d471d8b703"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disconnect an NVMe-oF qpair.  <a href="#a39e593c1d358950c340414d471d8b703">More...</a><br /></td></tr>
+<tr class="separator:a39e593c1d358950c340414d471d8b703"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad1b7f34d31e34d784fb54b70b02bdb15"><td class="memItemLeft" align="right" valign="top">struct spdk_nvmf_subsystem *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#ad1b7f34d31e34d784fb54b70b02bdb15">spdk_nvmf_subsystem_create</a> (struct spdk_nvmf_tgt *tgt, const char *nqn, enum <a class="el" href="nvmf__spec_8h.html#a808272f050cc373f3a90871c1528afd4">spdk_nvmf_subtype</a> type, uint32_t num_ns)</td></tr>
 <tr class="memdesc:ad1b7f34d31e34d784fb54b70b02bdb15"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create an NVMe-oF subsystem.  <a href="#ad1b7f34d31e34d784fb54b70b02bdb15">More...</a><br /></td></tr>
 <tr class="separator:ad1b7f34d31e34d784fb54b70b02bdb15"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -312,9 +315,6 @@ Functions</h2></td></tr>
 <tr class="memitem:a0f3fbe4ab1d90cda9a1f3fcbf2cb857d"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="nvmf__spec_8h.html#a808272f050cc373f3a90871c1528afd4">spdk_nvmf_subtype</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#a0f3fbe4ab1d90cda9a1f3fcbf2cb857d">spdk_nvmf_subsystem_get_type</a> (struct spdk_nvmf_subsystem *subsystem)</td></tr>
 <tr class="memdesc:a0f3fbe4ab1d90cda9a1f3fcbf2cb857d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the type of the specified subsystem.  <a href="#a0f3fbe4ab1d90cda9a1f3fcbf2cb857d">More...</a><br /></td></tr>
 <tr class="separator:a0f3fbe4ab1d90cda9a1f3fcbf2cb857d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aed3b8dfc91405cbc6423ab1d642e6337"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#aed3b8dfc91405cbc6423ab1d642e6337">spdk_nvmf_ctrlr_disconnect</a> (struct spdk_nvmf_qpair *qpair)</td></tr>
-<tr class="memdesc:aed3b8dfc91405cbc6423ab1d642e6337"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disconnect the NVMe-oF controller.  <a href="#aed3b8dfc91405cbc6423ab1d642e6337">More...</a><br /></td></tr>
-<tr class="separator:aed3b8dfc91405cbc6423ab1d642e6337"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>NVMe over Fabrics target public API. </p>
@@ -389,32 +389,6 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="aed3b8dfc91405cbc6423ab1d642e6337"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aed3b8dfc91405cbc6423ab1d642e6337">&#9670;&nbsp;</a></span>spdk_nvmf_ctrlr_disconnect()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void spdk_nvmf_ctrlr_disconnect </td>
-          <td>(</td>
-          <td class="paramtype">struct spdk_nvmf_qpair *&#160;</td>
-          <td class="paramname"><em>qpair</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Disconnect the NVMe-oF controller. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">qpair</td><td>The NVMe-oF qpair associated with the controller. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
 <a id="acec4ed75ff9a25a5477d40f43a430677"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#acec4ed75ff9a25a5477d40f43a430677">&#9670;&nbsp;</a></span>spdk_nvmf_host_get_nqn()</h2>
 
@@ -730,6 +704,32 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 on success, -1 on failure. </dd></dl>
+
+</div>
+</div>
+<a id="a39e593c1d358950c340414d471d8b703"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a39e593c1d358950c340414d471d8b703">&#9670;&nbsp;</a></span>spdk_nvmf_qpair_disconnect()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_nvmf_qpair_disconnect </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_nvmf_qpair *&#160;</td>
+          <td class="paramname"><em>qpair</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Disconnect an NVMe-oF qpair. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">qpair</td><td>The NVMe-oF qpair to disconnect. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

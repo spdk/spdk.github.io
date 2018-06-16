@@ -55,7 +55,7 @@ var NAVTREEINDEX =
 "structspdk__nvme__status.html#ab114897cfdc2e617309d1cd09732f34a",
 "structspdk__scsi__cdb__inquiry__data.html#a818a9ebbf285a85ec40a4df2af289078",
 "unionspdk__nvme__cc__register.html#ac2481b3896677b48183c0dd344760ddb",
-"virtio.html"
+"vhost_processing.html#vhost_processing_toc"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
