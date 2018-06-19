@@ -573,7 +573,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_part_submit
 </div><div class="memdoc">
 
 <p>Allocate a buffer for given bdev_io. </p>
-<p>Allocation will happen only if the bdev_io has no assigned SGL yet. The buffer will be freed automatically on <code><a class="el" href="bdev_8h.html#a536a365e14bc4f3ddf76b9340958ebd8" title="Free an I/O request. ">spdk_bdev_free_io()</a></code> call. This call will never fail - in case of lack of memory given callback <code>cb</code> will be deferred until enough memory is freed.</p>
+<p>Allocation will happen only if the bdev_io has no assigned SGL yet. The buffer will be freed automatically on <code><a class="el" href="bdev_8h.html#a9ac23d38eb3b56b58197e0111ef68c6b" title="Free an I/O request. ">spdk_bdev_free_io()</a></code> call. This call will never fail - in case of lack of memory given callback <code>cb</code> will be deferred until enough memory is freed.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">bdev_io</td><td>I/O to allocate buffer for. </td></tr>

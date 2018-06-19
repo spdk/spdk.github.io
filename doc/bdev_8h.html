@@ -349,9 +349,9 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_set_opts</b>
 <tr class="memitem:gac6b5933e4c0b2ad68bad591655b4f9e6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__bdev__io__submit__functions.html#gac6b5933e4c0b2ad68bad591655b4f9e6">spdk_bdev_nvme_io_passthru_md</a> (struct spdk_bdev_desc *bdev_desc, struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *ch, const struct <a class="el" href="structspdk__nvme__cmd.html">spdk_nvme_cmd</a> *cmd, void *buf, size_t nbytes, void *md_buf, size_t md_len, <a class="el" href="bdev_8h.html#a0c5602dfd313f90032dd91683b9663e3">spdk_bdev_io_completion_cb</a> cb, void *cb_arg)</td></tr>
 <tr class="memdesc:gac6b5933e4c0b2ad68bad591655b4f9e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submit an NVMe I/O command to the bdev.  <a href="group__bdev__io__submit__functions.html#gac6b5933e4c0b2ad68bad591655b4f9e6">More...</a><br /></td></tr>
 <tr class="separator:gac6b5933e4c0b2ad68bad591655b4f9e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a536a365e14bc4f3ddf76b9340958ebd8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev_8h.html#a536a365e14bc4f3ddf76b9340958ebd8">spdk_bdev_free_io</a> (struct <a class="el" href="structspdk__bdev__io.html">spdk_bdev_io</a> *bdev_io)</td></tr>
-<tr class="memdesc:a536a365e14bc4f3ddf76b9340958ebd8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Free an I/O request.  <a href="#a536a365e14bc4f3ddf76b9340958ebd8">More...</a><br /></td></tr>
-<tr class="separator:a536a365e14bc4f3ddf76b9340958ebd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ac23d38eb3b56b58197e0111ef68c6b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev_8h.html#a9ac23d38eb3b56b58197e0111ef68c6b">spdk_bdev_free_io</a> (struct <a class="el" href="structspdk__bdev__io.html">spdk_bdev_io</a> *bdev_io)</td></tr>
+<tr class="memdesc:a9ac23d38eb3b56b58197e0111ef68c6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Free an I/O request.  <a href="#a9ac23d38eb3b56b58197e0111ef68c6b">More...</a><br /></td></tr>
+<tr class="separator:a9ac23d38eb3b56b58197e0111ef68c6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab1ba28ba382edd1d792d51a054eb3aa2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev_8h.html#ab1ba28ba382edd1d792d51a054eb3aa2">spdk_bdev_get_io_stat</a> (struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *bdev, struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *ch, struct <a class="el" href="structspdk__bdev__io__stat.html">spdk_bdev_io_stat</a> *stat)</td></tr>
 <tr class="memdesc:ab1ba28ba382edd1d792d51a054eb3aa2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return I/O statistics for this channel.  <a href="#ab1ba28ba382edd1d792d51a054eb3aa2">More...</a><br /></td></tr>
 <tr class="separator:ab1ba28ba382edd1d792d51a054eb3aa2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -700,14 +700,14 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_set_opts</b>
 
 </div>
 </div>
-<a id="a536a365e14bc4f3ddf76b9340958ebd8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a536a365e14bc4f3ddf76b9340958ebd8">&#9670;&nbsp;</a></span>spdk_bdev_free_io()</h2>
+<a id="a9ac23d38eb3b56b58197e0111ef68c6b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ac23d38eb3b56b58197e0111ef68c6b">&#9670;&nbsp;</a></span>spdk_bdev_free_io()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int spdk_bdev_free_io </td>
+          <td class="memname">void spdk_bdev_free_io </td>
           <td>(</td>
           <td class="paramtype">struct <a class="el" href="structspdk__bdev__io.html">spdk_bdev_io</a> *&#160;</td>
           <td class="paramname"><em>bdev_io</em></td><td>)</td>
@@ -717,14 +717,13 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_set_opts</b>
 </div><div class="memdoc">
 
 <p>Free an I/O request. </p>
-<p>This should be called after the callback for the I/O has been called and notifies the bdev layer that memory may now be released.</p>
+<p>This should only be called after the completion callback for the I/O has been called and notifies the bdev layer that memory may now be released.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">bdev_io</td><td>I/O request.</td></tr>
+    <tr><td class="paramname">bdev_io</td><td>I/O request. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>-1 on failure, 0 on success. </dd></dl>
 
 </div>
 </div>

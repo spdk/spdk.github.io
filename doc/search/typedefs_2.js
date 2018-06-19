@@ -44,6 +44,7 @@ var searchData=
   ['spdk_5fnvmf_5ftgt_5flisten_5fdone_5ffn',['spdk_nvmf_tgt_listen_done_fn',['../nvmf_8h.html#a854e30bf69f07bb06b2cbcdd08ca7eba',1,'nvmf.h']]],
   ['spdk_5fpoller_5ffn',['spdk_poller_fn',['../thread_8h.html#a35c421accdc2a0a61bb7be916106293b',1,'thread.h']]],
   ['spdk_5fsighandler_5ft',['spdk_sighandler_t',['../event_8h.html#a6371e3e4903529f9c94e25d224580a44',1,'event.h']]],
+  ['spdk_5fsock_5fcb',['spdk_sock_cb',['../sock_8h.html#ae297ae75e566b35635d20b959daa7741',1,'sock.h']]],
   ['spdk_5fstart_5fpoller',['spdk_start_poller',['../thread_8h.html#a6f70f5e9b4d498e843f81f1a6ada6370',1,'thread.h']]],
   ['spdk_5fstop_5fpoller',['spdk_stop_poller',['../thread_8h.html#adfddbbbb13145f26741106cb8296a05a',1,'thread.h']]],
   ['spdk_5fthread_5ffn',['spdk_thread_fn',['../thread_8h.html#a964c3690cb5eea9bcf2e0f91b001a239',1,'thread.h']]],
