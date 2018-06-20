@@ -61,7 +61,7 @@ var user_guides =
       [ "Linux AIO bdev", "bdev.html#bdev_config_aio", null ],
       [ "Ceph RBD", "bdev.html#bdev_config_rbd", null ],
       [ "GPT (GUID Partition Table)", "bdev.html#bdev_config_gpt", [
-        [ "SPDK GPT partition table", "bdev.html#bdev_ug_gpt_table", null ],
+        [ "SPDK GPT partition table", "bdev.html#bdev_ug_gpt", null ],
         [ "Creating a GPT partition table using NBD", "bdev.html#bdev_ug_gpt_create_part", null ]
       ] ],
       [ "Logical volumes", "bdev.html#bdev_ug_logical_volumes", [
@@ -83,6 +83,7 @@ var user_guides =
         [ "context_switch_monitor", "jsonrpc.html#rpc_context_switch_monitor", null ]
       ] ],
       [ "Block Device Abstraction Layer", "jsonrpc.html#jsonrpc_components_bdev", [
+        [ "set_bdev_options", "jsonrpc.html#rpc_set_bdev_options", null ],
         [ "get_bdevs", "jsonrpc.html#rpc_get_bdevs", null ],
         [ "get_bdevs_iostat", "jsonrpc.html#rpc_get_bdevs_iostat", null ],
         [ "delete_bdev", "jsonrpc.html#rpc_delete_bdev", null ],

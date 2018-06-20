@@ -1,5 +1,18 @@
 var NAVTREEINDEX17 =
 {
+"vhost_8h.html#a8b8c054fdc8ed4ad573b2d0bcf2d4797":[13,0,49,17],
+"vhost_8h.html#a8be392083ae01ad34cc05b1b5ce2b5e0":[13,0,49,11],
+"vhost_8h.html#aa06efc0d096d4414de40ed5c0b394622":[13,0,49,8],
+"vhost_8h.html#aa6eba1ce0ac89c3287b755567795869b":[13,0,49,9],
+"vhost_8h.html#ac2c4b62eaf6503e5f5e520394f9f9fe1":[13,0,49,0],
+"vhost_8h.html#ae1ea27c8ae7616e92d916e5c6fc34231":[13,0,49,16],
+"vhost_8h.html#af358eac95a16bd456349fcfaa00379bb":[13,0,49,10],
+"vhost_8h.html#afd7159f8eb1e0d65dad5bedaa6cc5e43":[13,0,49,19],
+"vhost_processing.html":[2,4],
+"vhost_processing.html#vhost_processing_init":[2,4,3],
+"vhost_processing.html#vhost_processing_intro":[2,4,1],
+"vhost_processing.html#vhost_processing_io_path":[2,4,4],
+"vhost_processing.html#vhost_processing_qemu":[2,4,2],
 "vhost_processing.html#vhost_processing_toc":[2,4,0],
 "virtio.html":[7,2],
 "virtio.html#virtio_2mb":[7,2,1],

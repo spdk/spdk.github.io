@@ -764,7 +764,7 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">subsystem</td><td>Subsystem to add host to. </td></tr>
-    <tr><td class="paramname">host_nqn</td><td>The NQN for the host.</td></tr>
+    <tr><td class="paramname">hostnqn</td><td>The NQN for the host.</td></tr>
   </table>
   </dd>
 </dl>
@@ -995,7 +995,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>a pointer to the NVMe-oF subsystem on success, or NULL on failure. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>a pointer to the first NVMe-oF subsystem on success, or NULL on failure. </dd></dl>
 
 </div>
 </div>
@@ -1127,11 +1127,11 @@ Functions</h2></td></tr>
 <p>If no additional subsystems, return NULL.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">tgt</td><td>The NVMe-oF target to iterate.</td></tr>
+    <tr><td class="paramname">subsystem</td><td>Previous subsystem returned from <a class="el" href="nvmf_8h.html#ad345ad71bb7813f2f65b09875b688917">spdk_nvmf_subsystem_get_first</a> or <a class="el" href="nvmf_8h.html#a8f4f438960707410f3a85258137cf9d3">spdk_nvmf_subsystem_get_next</a>.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>a pointer to the NVMe-oF subsystem on success, or NULL on failure. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>a pointer to the next NVMe-oF subsystem on success, or NULL on failure. </dd></dl>
 
 </div>
 </div>
@@ -1520,7 +1520,7 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">subsystem</td><td>Subsystem to remove host from. </td></tr>
-    <tr><td class="paramname">host_nqn</td><td>The NQN for the host.</td></tr>
+    <tr><td class="paramname">hostnqn</td><td>The NQN for the host.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1933,6 +1933,8 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">tgt</td><td>The target to destroy. This releases all resources. </td></tr>
+    <tr><td class="paramname">cb_fn</td><td>A callback that will be called once the target is destroyed </td></tr>
+    <tr><td class="paramname">cb_arg</td><td>A context argument passed to cb_fn. </td></tr>
   </table>
   </dd>
 </dl>

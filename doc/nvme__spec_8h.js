@@ -329,6 +329,12 @@ var nvme__spec_8h =
       [ "SPDK_NVME_OPC_RESERVATION_ACQUIRE", "nvme__spec_8h.html#ac3953ec001514cffe849d9c1e3a913e3adbc83d1977e511d62596744e1cf2393a", null ],
       [ "SPDK_NVME_OPC_RESERVATION_RELEASE", "nvme__spec_8h.html#ac3953ec001514cffe849d9c1e3a913e3a0870d3e220d0ee42dac1453fb7944beb", null ]
     ] ],
+    [ "spdk_nvme_path_status_code", "nvme__spec_8h.html#a33e755cbe54eafcfbe31e1f713e4d5b2", [
+      [ "SPDK_NVME_SC_INTERNAL_PATH_ERROR", "nvme__spec_8h.html#a33e755cbe54eafcfbe31e1f713e4d5b2ab5d6c5ca0bc17dd3c04276e9b5db806c", null ],
+      [ "SPDK_NVME_SC_CONTROLLER_PATH_ERROR", "nvme__spec_8h.html#a33e755cbe54eafcfbe31e1f713e4d5b2aa896796969e34e92b975e82b2eb0ac76", null ],
+      [ "SPDK_NVME_SC_HOST_PATH_ERROR", "nvme__spec_8h.html#a33e755cbe54eafcfbe31e1f713e4d5b2af7245ce64ed7c645d95804712ff4298d", null ],
+      [ "SPDK_NVME_SC_ABORTED_BY_HOST", "nvme__spec_8h.html#a33e755cbe54eafcfbe31e1f713e4d5b2a195dac1e9f34199ab92eadb2a927b034", null ]
+    ] ],
     [ "spdk_nvme_pi_location", "nvme__spec_8h.html#a86964401c50b1fbc0261ae386fb73095", [
       [ "SPDK_NVME_FMT_NVM_PROTECTION_AT_TAIL", "nvme__spec_8h.html#a86964401c50b1fbc0261ae386fb73095a4ca526381d0b4fbc631a99a1ebce75a9", null ],
       [ "SPDK_NVME_FMT_NVM_PROTECTION_AT_HEAD", "nvme__spec_8h.html#a86964401c50b1fbc0261ae386fb73095a9de8fcd48b7d7c88aa986ca1755245cf", null ]
@@ -414,6 +420,7 @@ var nvme__spec_8h =
       [ "SPDK_NVME_SCT_GENERIC", "nvme__spec_8h.html#a99fb26e5d5c31f6d3d61397951e44b52a978534c4028e11654177244d15bdd22a", null ],
       [ "SPDK_NVME_SCT_COMMAND_SPECIFIC", "nvme__spec_8h.html#a99fb26e5d5c31f6d3d61397951e44b52a7fd9d0929754dd86cedbdd191b9e2308", null ],
       [ "SPDK_NVME_SCT_MEDIA_ERROR", "nvme__spec_8h.html#a99fb26e5d5c31f6d3d61397951e44b52a66b16ed84a0e3d72cd03a4c0e00c823e", null ],
+      [ "SPDK_NVME_SCT_PATH", "nvme__spec_8h.html#a99fb26e5d5c31f6d3d61397951e44b52abd0af18abee89bea285e28938c471ae1", null ],
       [ "SPDK_NVME_SCT_VENDOR_SPECIFIC", "nvme__spec_8h.html#a99fb26e5d5c31f6d3d61397951e44b52a1001306f00edbbcec789d5bbc47c97ad", null ]
     ] ],
     [ "spdk_nvmf_ctrlr_model", "nvme__spec_8h.html#a2b71fb615deb505826eaeddd093e06bc", [

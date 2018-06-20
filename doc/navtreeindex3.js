@@ -153,10 +153,10 @@ var NAVTREEINDEX3 =
 "jsonrpc.html#rpc_construct_nvmf_subsystem_listen_address":[3,5,3,1,0],
 "jsonrpc.html#rpc_construct_nvmf_subsystem_namespace":[3,5,3,1,1],
 "jsonrpc.html#rpc_context_switch_monitor":[3,5,1,1],
-"jsonrpc.html#rpc_delete_bdev":[3,5,2,2],
+"jsonrpc.html#rpc_delete_bdev":[3,5,2,3],
 "jsonrpc.html#rpc_delete_nvmf_subsystem":[3,5,3,2],
-"jsonrpc.html#rpc_get_bdevs":[3,5,2,0],
-"jsonrpc.html#rpc_get_bdevs_iostat":[3,5,2,1],
+"jsonrpc.html#rpc_get_bdevs":[3,5,2,1],
+"jsonrpc.html#rpc_get_bdevs_iostat":[3,5,2,2],
 "jsonrpc.html#rpc_get_nvmf_subsystems":[3,5,3,0],
 "jsonrpc.html#rpc_kill_instance":[3,5,1,0],
 "jsonrpc.html#rpc_nvmf_subsystem_add_host":[3,5,3,6],
@@ -165,7 +165,8 @@ var NAVTREEINDEX3 =
 "jsonrpc.html#rpc_nvmf_subsystem_allow_any_host":[3,5,3,8],
 "jsonrpc.html#rpc_nvmf_subsystem_remove_host":[3,5,3,7],
 "jsonrpc.html#rpc_nvmf_subsystem_remove_ns":[3,5,3,5],
-"jsonrpc.html#rpc_set_bdev_qos_limit_iops":[3,5,2,3],
+"jsonrpc.html#rpc_set_bdev_options":[3,5,2,0],
+"jsonrpc.html#rpc_set_bdev_qos_limit_iops":[3,5,2,4],
 "jsonrpc_8h.html":[13,0,24],
 "jsonrpc_8h.html#a0eb3dec195e22ff481e317f41b1b0d95":[13,0,24,3],
 "jsonrpc_8h.html#a1e2cef86b68fbf093df54c37ba1c2a4a":[13,0,24,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX3 =
 "mmio_8h.html#ab9cf69aea2ce3b3447fd9cae8ad6141c":[13,0,28,6],
 "mmio_8h.html#ac1ed5f26656a99025bf5dd8da28c14b9":[13,0,28,3],
 "modules.html":[7],
-"modules.html":[11],
-"nbd_8h.html":[13,0,29]
+"modules.html":[11]
 };

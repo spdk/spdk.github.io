@@ -517,6 +517,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="scsi
     <tr><td class="paramname">bdev_name_list</td><td>List of bdev names to attach to the LUNs for this SCSI device. </td></tr>
     <tr><td class="paramname">lun_id_list</td><td>List of LUN IDs for the LUN in this SCSI device. Caller is responsible for managing the memory containing this list. lun_id_list[x] is the LUN ID for lun_list[x]. </td></tr>
     <tr><td class="paramname">num_luns</td><td>Number of entries in lun_list and lun_id_list. </td></tr>
+    <tr><td class="paramname">protocol_id</td><td>SCSI SPC protocol identifier to report in INQUIRY data </td></tr>
     <tr><td class="paramname">hotremove_cb</td><td>Callback to lun hotremoval. Will be called once hotremove is first triggered. </td></tr>
     <tr><td class="paramname">hotremove_ctx</td><td>Additional argument to hotremove_cb.</td></tr>
   </table>
@@ -722,7 +723,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="scsi
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">dev</td><td>SCSI device. </td></tr>
-    <tr><td class="paramname">id</td><td>Id of the logical unit.</td></tr>
+    <tr><td class="paramname">lun_id</td><td>Id of the logical unit.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1059,7 +1060,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="scsi
 <p>Get the name of the SCSI port. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">SCSI</td><td>port to query.</td></tr>
+    <tr><td class="paramname">port</td><td>SCSI port to query.</td></tr>
   </table>
   </dd>
 </dl>

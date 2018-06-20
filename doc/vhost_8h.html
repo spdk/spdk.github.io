@@ -284,7 +284,7 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">name</td><td>name of the vhost blk device. The name will also be used for socket name, which is exactly <code>socket_base_dir/name</code> </td></tr>
-    <tr><td class="paramname">mask</td><td>string containing cpumask in hex. The leading <em>0x</em> is allowed but not required. The mask itself can be constructed as: ((1 &lt;&lt; cpu0) | (1 &lt;&lt; cpu1) | ... | (1 &lt;&lt; cpuN)). </td></tr>
+    <tr><td class="paramname">cpumask</td><td>string containing cpumask in hex. The leading <em>0x</em> is allowed but not required. The mask itself can be constructed as: ((1 &lt;&lt; cpu0) | (1 &lt;&lt; cpu1) | ... | (1 &lt;&lt; cpuN)). </td></tr>
     <tr><td class="paramname">dev_name</td><td>bdev name to associate with this vhost device </td></tr>
     <tr><td class="paramname">readonly</td><td>if set, all writes to the device will fail with <code>VIRTIO_BLK_S_IOERR</code> error code.</td></tr>
   </table>
@@ -314,7 +314,7 @@ Functions</h2></td></tr>
 <p>The bdev might be NULL, as it could have been hotremoved.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">ctrl</td><td>vhost blk device.</td></tr>
+    <tr><td class="paramname">ctrlr</td><td>vhost blk device.</td></tr>
   </table>
   </dd>
 </dl>
@@ -464,7 +464,7 @@ Functions</h2></td></tr>
 <p>The cpuset is constant throughout the lifetime of a vdev. It is a subset of SPDK app cpuset vhost was started with.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">dev</td><td>vhost device.</td></tr>
+    <tr><td class="paramname">vdev</td><td>vhost device.</td></tr>
   </table>
   </dd>
 </dl>
@@ -699,7 +699,7 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">name</td><td>name of the vhost device. The name will also be used for socket name, which is exactly <code>socket_base_dir/name</code> </td></tr>
-    <tr><td class="paramname">mask</td><td>string containing cpumask in hex. The leading <em>0x</em> is allowed but not required. The mask itself can be constructed as: ((1 &lt;&lt; cpu0) | (1 &lt;&lt; cpu1) | ... | (1 &lt;&lt; cpuN)).</td></tr>
+    <tr><td class="paramname">cpumask</td><td>string containing cpumask in hex. The leading <em>0x</em> is allowed but not required. The mask itself can be constructed as: ((1 &lt;&lt; cpu0) | (1 &lt;&lt; cpu1) | ... | (1 &lt;&lt; cpuN)).</td></tr>
   </table>
   </dd>
 </dl>

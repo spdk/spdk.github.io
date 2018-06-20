@@ -1132,7 +1132,7 @@ int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_retry_co
     <tr><td class="paramname">payload_size</td><td>The size of payload buffer. </td></tr>
     <tr><td class="paramname">cb_fn</td><td>Callback function to invoke when the feature has been retrieved. </td></tr>
     <tr><td class="paramname">cb_arg</td><td>Argument to pass to the callback function. </td></tr>
-    <tr><td class="paramname">ns_is</td><td>The namespace identifier.</td></tr>
+    <tr><td class="paramname">ns_id</td><td>The namespace identifier.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1520,7 +1520,7 @@ int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_retry_co
     <tr><td class="paramname">payload_size</td><td>The size of payload buffer. </td></tr>
     <tr><td class="paramname">cb_fn</td><td>Callback function to invoke when the feature has been set. </td></tr>
     <tr><td class="paramname">cb_arg</td><td>Argument to pass to the callback function. </td></tr>
-    <tr><td class="paramname">ns_is</td><td>The namespace identifier.</td></tr>
+    <tr><td class="paramname">ns_id</td><td>The namespace identifier.</td></tr>
   </table>
   </dd>
 </dl>
@@ -2247,6 +2247,7 @@ int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_retry_co
 <p>Download a new firmware image. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
+    <tr><td class="paramname">ctrlr</td><td>NVMe controller to perform firmware operation on. </td></tr>
     <tr><td class="paramname">payload</td><td>The data buffer for the firmware image. </td></tr>
     <tr><td class="paramname">size</td><td>The data size will be downloaded. </td></tr>
     <tr><td class="paramname">slot</td><td>The slot that the firmware image will be committed to. </td></tr>
@@ -2614,7 +2615,7 @@ int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_retry_co
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">ns</td><td>NVMe namespace to submit the DSM request </td></tr>
-    <tr><td class="paramname">type</td><td>A bit field constructed from enum spdk_nvme_dsm_attribute. </td></tr>
+    <tr><td class="paramname">type</td><td>A bit field constructed from <a class="el" href="nvme__spec_8h.html#a553aa11d679deea767299b75e8ff5fca">spdk_nvme_dsm_attribute</a>. </td></tr>
     <tr><td class="paramname">qpair</td><td>I/O queue pair to submit the request </td></tr>
     <tr><td class="paramname">ranges</td><td>An array of <a class="el" href="structspdk__nvme__dsm__range.html">spdk_nvme_dsm_range</a> elements describing the LBAs to operate on. </td></tr>
     <tr><td class="paramname">num_ranges</td><td>The number of elements in the ranges array. </td></tr>

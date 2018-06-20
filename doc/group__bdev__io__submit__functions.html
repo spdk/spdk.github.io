@@ -580,7 +580,7 @@ Functions</h2></td></tr>
 <p>The SGL/PRP will be automated generated based on the given buffer, so that portion of the command may be left empty. Also, the namespace id (nsid) will be populated automatically.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">bdev</td><td>Block device </td></tr>
+    <tr><td class="paramname">bdev_desc</td><td>Block device descriptor </td></tr>
     <tr><td class="paramname">ch</td><td>I/O channel. Obtained by calling <a class="el" href="bdev_8h.html#ab5bb9e746b030d7c4c89cbcf60076c7e" title="Obtain an I/O channel for the block device opened by the specified descriptor. ">spdk_bdev_get_io_channel()</a>. </td></tr>
     <tr><td class="paramname">cmd</td><td>The raw NVMe command. Must be in the NVM command set. </td></tr>
     <tr><td class="paramname">buf</td><td>Data buffer to written from. </td></tr>

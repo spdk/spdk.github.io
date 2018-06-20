@@ -5,6 +5,7 @@ var bdev__module_8h =
     [ "spdk_bdev_alias", "structspdk__bdev__alias.html", "structspdk__bdev__alias" ],
     [ "spdk_bdev", "structspdk__bdev.html", "structspdk__bdev" ],
     [ "spdk_bdev_io", "structspdk__bdev__io.html", "structspdk__bdev__io" ],
+    [ "__bdev_io_internal_fields", "structspdk__bdev__io_1_1____bdev__io__internal__fields.html", "structspdk__bdev__io_1_1____bdev__io__internal__fields" ],
     [ "spdk_bdev_part_base", "structspdk__bdev__part__base.html", "structspdk__bdev__part__base" ],
     [ "spdk_bdev_part", "structspdk__bdev__part.html", "structspdk__bdev__part" ],
     [ "spdk_bdev_part_channel", "structspdk__bdev__part__channel.html", "structspdk__bdev__part__channel" ],
