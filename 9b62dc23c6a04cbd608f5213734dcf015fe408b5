@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "bcb4f8ee_ada3fcd4",
+        "filename": "community.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 55,
+      "author": {
+        "id": 1011222
+      },
+      "writtenOn": "2018-06-21T03:41:37Z",
+      "side": 1,
+      "message": "aria-mtg refers to the Asia community meeting time.  (And since it\u0027s already used above, it actually doesn\u0027t show up when the page is displayed.)\n\nYou\u0027ll also need to edit _includes/js/meetings.js.  Make a new entry called asia-bug-mtg.  Copy the Date data from the aria-mtg, but add 7 to the day (so 19 instead of 12).  Also make it 4, 30, 0 since it starts 30 minutes later.\n\nSee my other e-mail on how to review the results.  You should be able to approve your own patch by going to the link in that e-mail.  If not, have Changpeng or someone approve it for you.",
+      "revId": "9b62dc23c6a04cbd608f5213734dcf015fe408b5",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
