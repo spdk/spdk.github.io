@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "7f11b2a4_9daf6ac7",
+        "filename": "community.md",
+        "patchSetId": 3
+      },
+      "lineNbr": 57,
+      "author": {
+        "id": 1011222
+      },
+      "writtenOn": "2018-06-21T05:17:05Z",
+      "side": 1,
+      "message": "you can remove \"with audio\" - this will make it consistent with the other meetings above",
+      "revId": "c2ec15f713a5b5cd240fb8239627da5ed678cfca",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "2ed13a0e_10a286ea",
+        "filename": "community.md",
+        "patchSetId": 3
+      },
+      "lineNbr": 62,
+      "author": {
+        "id": 1011222
+      },
+      "writtenOn": "2018-06-21T05:17:05Z",
+      "side": 1,
+      "message": "For now, let\u0027s just mention bugs and the GitHub issue tracker.  We do not really cover feature requests and Trello in these bug scrub meetings.",
+      "revId": "c2ec15f713a5b5cd240fb8239627da5ed678cfca",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
