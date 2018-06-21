@@ -51,9 +51,16 @@ or on the mailing list to to be added to the board. If we are able to cover
 the posted topics before the end of the meeting we can use the time to discuss
 additional items.
 
-# Bug Reports
+# Bug Reports and Bug Scrub Meeting
+<div id="asia-bug-mtg"></div>
+[Join via WebEx](https://intel.webex.com/intel/j.php?MTID=m9c8f9627c8fde4e49764900ba38bfe30)<br/>
+Or alternatively, by phone with audio:<br/>
++1-210-795-1110 US Toll<br/>
++1-866-662-9987 US Toll Free<br/>
+Meeting number (access code): 599 732 637
 
-Bugs and feature requests are tracked on the [SPDK GitHub issue tracker](https://github.com/spdk/spdk/issues).
+Please be noted that bugs and feature requests are tracked on the [SPDK GitHub issue tracker](https://github.com/spdk/spdk/issues) and [Trello](https://trell
+o.com/b/DvM7XayJ) for your reference before the meeting.
 
 # Contributing
 
