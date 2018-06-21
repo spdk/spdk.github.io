@@ -1,5 +1,6 @@
 var euroDate = new Date(Date.UTC(2018, 3, 3, 15, 0, 0, 0));
 var asiaDate = new Date(Date.UTC(2018, 3, 12, 4, 0, 0, 0));
+var asiaBugDate = new Date(Date.UTC(2018, 3, 19, 4, 30, 0, 0));
 
 function formatDate(date) {
         var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric', timeZoneName: 'short', hour: 'numeric', minute: 'numeric' };
@@ -17,5 +18,10 @@ while (asiaDate < currentDate) {
         asiaDate.setDate(asiaDate.getDate() + 14);
 }
 
+while (asiaBugDate < currentDate) {
+	        asiaBugDate.setDate(asiaBugDate.getDate() + 14);
+}
+
 document.getElementById("euro-mtg").textContent = formatDate(euroDate);
 document.getElementById("asia-mtg").textContent = formatDate(asiaDate);
+document.getElementById("asia-bug-mtg").textContent = formatDate(asiaBugDate);
