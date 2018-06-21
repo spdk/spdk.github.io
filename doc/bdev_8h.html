@@ -154,6 +154,9 @@ Data Structures</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev__opts.html">spdk_bdev_opts</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev__io__wait__entry.html">spdk_bdev_io_wait_entry</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Structure to register a callback when an <a class="el" href="structspdk__bdev__io.html">spdk_bdev_io</a> becomes available.  <a href="structspdk__bdev__io__wait__entry.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
@@ -181,6 +184,9 @@ Typedefs</h2></td></tr>
 <tr class="memitem:a1e2b47e30b56bc875b618beffced9662"><td class="memItemLeft" align="right" valign="top"><a id="a1e2b47e30b56bc875b618beffced9662"></a>
 typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_get_device_stat_cb</b>) (struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *bdev, struct <a class="el" href="structspdk__bdev__io__stat.html">spdk_bdev_io_stat</a> *stat, void *cb_arg, int rc)</td></tr>
 <tr class="separator:a1e2b47e30b56bc875b618beffced9662"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c7e19e090b8cdb22e8fc6b1984e5278"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev_8h.html#a9c7e19e090b8cdb22e8fc6b1984e5278">spdk_bdev_io_wait_cb</a>) (void *cb_arg)</td></tr>
+<tr class="memdesc:a9c7e19e090b8cdb22e8fc6b1984e5278"><td class="mdescLeft">&#160;</td><td class="mdescRight">Block device I/O wait callback.  <a href="#a9c7e19e090b8cdb22e8fc6b1984e5278">More...</a><br /></td></tr>
+<tr class="separator:a9c7e19e090b8cdb22e8fc6b1984e5278"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
@@ -352,6 +358,9 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_set_opts</b>
 <tr class="memitem:a9ac23d38eb3b56b58197e0111ef68c6b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev_8h.html#a9ac23d38eb3b56b58197e0111ef68c6b">spdk_bdev_free_io</a> (struct <a class="el" href="structspdk__bdev__io.html">spdk_bdev_io</a> *bdev_io)</td></tr>
 <tr class="memdesc:a9ac23d38eb3b56b58197e0111ef68c6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Free an I/O request.  <a href="#a9ac23d38eb3b56b58197e0111ef68c6b">More...</a><br /></td></tr>
 <tr class="separator:a9ac23d38eb3b56b58197e0111ef68c6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc4beee18ded7837fa92bd7c34e7ef2e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev_8h.html#acc4beee18ded7837fa92bd7c34e7ef2e">spdk_bdev_queue_io_wait</a> (struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *bdev, struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *ch, struct <a class="el" href="structspdk__bdev__io__wait__entry.html">spdk_bdev_io_wait_entry</a> *entry)</td></tr>
+<tr class="memdesc:acc4beee18ded7837fa92bd7c34e7ef2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add an entry into the calling thread's queue to be notified when an <a class="el" href="structspdk__bdev__io.html">spdk_bdev_io</a> becomes available.  <a href="#acc4beee18ded7837fa92bd7c34e7ef2e">More...</a><br /></td></tr>
+<tr class="separator:acc4beee18ded7837fa92bd7c34e7ef2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab1ba28ba382edd1d792d51a054eb3aa2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev_8h.html#ab1ba28ba382edd1d792d51a054eb3aa2">spdk_bdev_get_io_stat</a> (struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *bdev, struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *ch, struct <a class="el" href="structspdk__bdev__io__stat.html">spdk_bdev_io_stat</a> *stat)</td></tr>
 <tr class="memdesc:ab1ba28ba382edd1d792d51a054eb3aa2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return I/O statistics for this channel.  <a href="#ab1ba28ba382edd1d792d51a054eb3aa2">More...</a><br /></td></tr>
 <tr class="separator:ab1ba28ba382edd1d792d51a054eb3aa2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -437,6 +446,23 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_set_opts</b>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="a9c7e19e090b8cdb22e8fc6b1984e5278"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9c7e19e090b8cdb22e8fc6b1984e5278">&#9670;&nbsp;</a></span>spdk_bdev_io_wait_cb</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void(* spdk_bdev_io_wait_cb) (void *cb_arg)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Block device I/O wait callback. </p>
+<p>Callback function to notify when an <a class="el" href="structspdk__bdev__io.html">spdk_bdev_io</a> structure is available to satisfy a call to one of the <a class="el" href="group__bdev__io__submit__functions.html">bdev I/O Submit Functions</a>. </p>
 
 </div>
 </div>
@@ -1457,6 +1483,54 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_set_opts</b>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 if operation is successful, suitable errno value otherwise </dd></dl>
+
+</div>
+</div>
+<a id="acc4beee18ded7837fa92bd7c34e7ef2e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc4beee18ded7837fa92bd7c34e7ef2e">&#9670;&nbsp;</a></span>spdk_bdev_queue_io_wait()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_bdev_queue_io_wait </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *&#160;</td>
+          <td class="paramname"><em>bdev</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *&#160;</td>
+          <td class="paramname"><em>ch</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structspdk__bdev__io__wait__entry.html">spdk_bdev_io_wait_entry</a> *&#160;</td>
+          <td class="paramname"><em>entry</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Add an entry into the calling thread's queue to be notified when an <a class="el" href="structspdk__bdev__io.html">spdk_bdev_io</a> becomes available. </p>
+<p>When one of the <a class="el" href="group__bdev__io__submit__functions.html">bdev I/O Submit Functions</a> returns -ENOMEM, it means the <a class="el" href="structspdk__bdev__io.html">spdk_bdev_io</a> buffer pool has no available buffers. This function may be called to register a callback to be notified when a buffer becomes available on the calling thread.</p>
+<p>The callback function will always be called on the same thread as this function was called.</p>
+<p>This function must only be called immediately after one of the <a class="el" href="group__bdev__io__submit__functions.html">bdev I/O Submit Functions</a> returns -ENOMEM.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bdev</td><td>Block device. The block device that the caller will submit an I/O to when the callback is invoked. Must match the bdev member in the entry parameter. </td></tr>
+    <tr><td class="paramname">ch</td><td>I/O channel. Obtained by calling <a class="el" href="bdev_8h.html#ab5bb9e746b030d7c4c89cbcf60076c7e" title="Obtain an I/O channel for the block device opened by the specified descriptor. ">spdk_bdev_get_io_channel()</a>. </td></tr>
+    <tr><td class="paramname">entry</td><td>Data structure allocated by the caller specifying the callback function and argument.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success. -EINVAL if bdev parameter does not match bdev member in entry -EINVAL if an <a class="el" href="structspdk__bdev__io.html">spdk_bdev_io</a> structure was available on this thread. </dd></dl>
 
 </div>
 </div>

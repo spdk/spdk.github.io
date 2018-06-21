@@ -135,7 +135,8 @@ $(document).ready(function(){initNavTree('structspdk__bdev__io_1_1____bdev__io__
 
 <div class="header">
   <div class="summary">
-<a href="#pub-methods">Public Member Functions</a>  </div>
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-attribs">Data Fields</a>  </div>
   <div class="headertitle">
 <div class="title">spdk_bdev_io::__bdev_io_internal_fields Struct Reference</div>  </div>
 </div><!--header-->
@@ -143,12 +144,62 @@ $(document).ready(function(){initNavTree('structspdk__bdev__io_1_1____bdev__io__
 
 <p>Fields that are used internally by the bdev subsystem.  
  <a href="structspdk__bdev__io_1_1____bdev__io__internal__fields.html#details">More...</a></p>
+<div class="dynheader">
+Collaboration diagram for spdk_bdev_io::__bdev_io_internal_fields:</div>
+<div class="dyncontent">
+<div class="center"><img src="structspdk__bdev__io_1_1____bdev__io__internal__fields__coll__graph.png" border="0" usemap="#spdk__bdev__io_1_1____bdev__io__internal__fields_coll__map" alt="Collaboration graph"/></div>
+<map name="spdk__bdev__io_1_1____bdev__io__internal__fields_coll__map" id="spdk__bdev__io_1_1____bdev__io__internal__fields_coll__map">
+<area shape="rect" id="node3" href="structspdk__bdev__io.html" title="spdk_bdev_io" alt="" coords="142,199,253,225"/>
+<area shape="rect" id="node2" href="structspdk__io__channel.html" title="Represents a per&#45;thread channel for accessing an I/O device. " alt="" coords="88,5,219,32"/>
+<area shape="rect" id="node5" href="structspdk__bdev.html" title="spdk_bdev" alt="" coords="151,289,243,316"/>
+<area shape="rect" id="node4" href="structspdk__nvme__cmd.html" title="spdk_nvme_cmd" alt="" coords="289,102,421,129"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:aa01c2efabe47df9c745086736f6f64ef"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev__io_1_1____bdev__io__internal__fields.html#aa01c2efabe47df9c745086736f6f64ef">STAILQ_ENTRY</a> (<a class="el" href="structspdk__bdev__io.html">spdk_bdev_io</a>) buf_link</td></tr>
 <tr class="memdesc:aa01c2efabe47df9c745086736f6f64ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Entry to the list need_buf of struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a>.  <a href="#aa01c2efabe47df9c745086736f6f64ef">More...</a><br /></td></tr>
 <tr class="separator:aa01c2efabe47df9c745086736f6f64ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Data Fields</h2></td></tr>
+<tr class="memitem:a24890c3258742ac4ca1d92e11bab07b9"><td class="memItemLeft" align="right" valign="top">struct spdk_bdev_channel *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev__io_1_1____bdev__io__internal__fields.html#a24890c3258742ac4ca1d92e11bab07b9">ch</a></td></tr>
+<tr class="memdesc:a24890c3258742ac4ca1d92e11bab07b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">The bdev I/O channel that this was handled on.  <a href="#a24890c3258742ac4ca1d92e11bab07b9">More...</a><br /></td></tr>
+<tr class="separator:a24890c3258742ac4ca1d92e11bab07b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a538e1a5baf1242b0b41489e4f0f411f9"><td class="memItemLeft" align="right" valign="top">struct spdk_bdev_channel *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev__io_1_1____bdev__io__internal__fields.html#a538e1a5baf1242b0b41489e4f0f411f9">io_submit_ch</a></td></tr>
+<tr class="memdesc:a538e1a5baf1242b0b41489e4f0f411f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">The bdev I/O channel that this was submitted on.  <a href="#a538e1a5baf1242b0b41489e4f0f411f9">More...</a><br /></td></tr>
+<tr class="separator:a538e1a5baf1242b0b41489e4f0f411f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc3511a74f557ca1ac31aa517ad719a9"><td class="memItemLeft" align="right" valign="top"><a id="acc3511a74f557ca1ac31aa517ad719a9"></a>
+<a class="el" href="bdev_8h.html#a0c5602dfd313f90032dd91683b9663e3">spdk_bdev_io_completion_cb</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev__io_1_1____bdev__io__internal__fields.html#acc3511a74f557ca1ac31aa517ad719a9">cb</a></td></tr>
+<tr class="memdesc:acc3511a74f557ca1ac31aa517ad719a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">User function that will be called when this completes. <br /></td></tr>
+<tr class="separator:acc3511a74f557ca1ac31aa517ad719a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51d274b6003ff0f95466eca21bdd7dd1"><td class="memItemLeft" align="right" valign="top"><a id="a51d274b6003ff0f95466eca21bdd7dd1"></a>
+void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev__io_1_1____bdev__io__internal__fields.html#a51d274b6003ff0f95466eca21bdd7dd1">caller_ctx</a></td></tr>
+<tr class="memdesc:a51d274b6003ff0f95466eca21bdd7dd1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Context that will be passed to the completion callback. <br /></td></tr>
+<tr class="separator:a51d274b6003ff0f95466eca21bdd7dd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e0b8fe4a5a6b8636d6aeb61348f9c4a"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev__io_1_1____bdev__io__internal__fields.html#a3e0b8fe4a5a6b8636d6aeb61348f9c4a">submit_tsc</a></td></tr>
+<tr class="memdesc:a3e0b8fe4a5a6b8636d6aeb61348f9c4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Current tsc at submit time.  <a href="#a3e0b8fe4a5a6b8636d6aeb61348f9c4a">More...</a><br /></td></tr>
+<tr class="separator:a3e0b8fe4a5a6b8636d6aeb61348f9c4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79f4b610c4db721dbe99f5698d1886f6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev__io_1_1____bdev__io__internal__fields.html#a79f4b610c4db721dbe99f5698d1886f6">in_submit_request</a></td></tr>
+<tr class="memdesc:a79f4b610c4db721dbe99f5698d1886f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set to true while the bdev module submit_request function is in progress.  <a href="#a79f4b610c4db721dbe99f5698d1886f6">More...</a><br /></td></tr>
+<tr class="separator:a79f4b610c4db721dbe99f5698d1886f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9bec0eeba2c9ca9cb7cf62e8c516e5a"><td class="memItemLeft" align="right" valign="top"><a id="ad9bec0eeba2c9ca9cb7cf62e8c516e5a"></a>
+int8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev__io_1_1____bdev__io__internal__fields.html#ad9bec0eeba2c9ca9cb7cf62e8c516e5a">status</a></td></tr>
+<tr class="memdesc:ad9bec0eeba2c9ca9cb7cf62e8c516e5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Status for the IO. <br /></td></tr>
+<tr class="separator:ad9bec0eeba2c9ca9cb7cf62e8c516e5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c5ed625dd93a86c2430042cd565e186"><td class="memItemLeft" align="right" valign="top"><a id="a9c5ed625dd93a86c2430042cd565e186"></a>
+void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev__io_1_1____bdev__io__internal__fields.html#a9c5ed625dd93a86c2430042cd565e186">buf</a></td></tr>
+<tr class="memdesc:a9c5ed625dd93a86c2430042cd565e186"><td class="mdescLeft">&#160;</td><td class="mdescRight">bdev allocated memory associated with this request <br /></td></tr>
+<tr class="separator:a9c5ed625dd93a86c2430042cd565e186"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e969e9419d6f05b335eebc2f2b246a6"><td class="memItemLeft" align="right" valign="top"><a id="a8e969e9419d6f05b335eebc2f2b246a6"></a>
+uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev__io_1_1____bdev__io__internal__fields.html#a8e969e9419d6f05b335eebc2f2b246a6">buf_len</a></td></tr>
+<tr class="memdesc:a8e969e9419d6f05b335eebc2f2b246a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">requested size of the buffer associated with this I/O <br /></td></tr>
+<tr class="separator:a8e969e9419d6f05b335eebc2f2b246a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a320a717c3bfbfae0a88e37806a4b11cb"><td class="memItemLeft" align="right" valign="top"><a id="a320a717c3bfbfae0a88e37806a4b11cb"></a>
+spdk_bdev_io_get_buf_cb&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev__io_1_1____bdev__io__internal__fields.html#a320a717c3bfbfae0a88e37806a4b11cb">get_buf_cb</a></td></tr>
+<tr class="memdesc:a320a717c3bfbfae0a88e37806a4b11cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback for when buf is allocated. <br /></td></tr>
+<tr class="separator:a320a717c3bfbfae0a88e37806a4b11cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Fields that are used internally by the bdev subsystem. </p>
@@ -171,6 +222,73 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Entry to the list need_buf of struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a>. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Field Documentation</h2>
+<a id="a24890c3258742ac4ca1d92e11bab07b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a24890c3258742ac4ca1d92e11bab07b9">&#9670;&nbsp;</a></span>ch</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct spdk_bdev_channel* spdk_bdev_io::__bdev_io_internal_fields::ch</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The bdev I/O channel that this was handled on. </p>
+
+</div>
+</div>
+<a id="a79f4b610c4db721dbe99f5698d1886f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a79f4b610c4db721dbe99f5698d1886f6">&#9670;&nbsp;</a></span>in_submit_request</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool spdk_bdev_io::__bdev_io_internal_fields::in_submit_request</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set to true while the bdev module submit_request function is in progress. </p>
+<p>This is used to decide whether spdk_bdev_io_complete() can complete the I/O directly or if completion must be deferred via an event. </p>
+
+</div>
+</div>
+<a id="a538e1a5baf1242b0b41489e4f0f411f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a538e1a5baf1242b0b41489e4f0f411f9">&#9670;&nbsp;</a></span>io_submit_ch</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct spdk_bdev_channel* spdk_bdev_io::__bdev_io_internal_fields::io_submit_ch</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The bdev I/O channel that this was submitted on. </p>
+
+</div>
+</div>
+<a id="a3e0b8fe4a5a6b8636d6aeb61348f9c4a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e0b8fe4a5a6b8636d6aeb61348f9c4a">&#9670;&nbsp;</a></span>submit_tsc</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint64_t spdk_bdev_io::__bdev_io_internal_fields::submit_tsc</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Current tsc at submit time. </p>
+<p>Used to calculate latency at completion. </p>
 
 </div>
 </div>

@@ -2,7 +2,7 @@ var searchData=
 [
   ['general_20information',['General Information',['../general.html',1,'']]],
   ['generation',['generation',['../structspdk__nvme__reservation__status__data.html#abd67ce988e5e680e5a1abd0bacdfe5c3',1,'spdk_nvme_reservation_status_data']]],
-  ['get_5fbuf_5fcb',['get_buf_cb',['../structspdk__bdev__io.html#ae31155e9bd5d6d6b04462eb36a29e30d',1,'spdk_bdev_io']]],
+  ['get_5fbuf_5fcb',['get_buf_cb',['../structspdk__bdev__io_1_1____bdev__io__internal__fields.html#a320a717c3bfbfae0a88e37806a4b11cb',1,'spdk_bdev_io::__bdev_io_internal_fields']]],
   ['get_5fctx_5fsize',['get_ctx_size',['../structspdk__bdev__module.html#a490337d850141809c1cc930fb7b2e552',1,'spdk_bdev_module']]],
   ['get_5fio_5fchannel',['get_io_channel',['../structspdk__bdev__fn__table.html#adf37e8944ceb5bfdf5f93f1525a7da98',1,'spdk_bdev_fn_table']]],
   ['get_5fspin_5ftime',['get_spin_time',['../structspdk__bdev__fn__table.html#aafc336b4a42290b7e944fa0e73558a62',1,'spdk_bdev_fn_table']]],

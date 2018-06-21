@@ -1,15 +1,15 @@
 var searchData=
 [
   ['ca',['ca',['../structspdk__nvme__fw__commit.html#a5533adaa1a3efdd7c6f5c02c4f86f6d7',1,'spdk_nvme_fw_commit']]],
-  ['caller_5fctx',['caller_ctx',['../structspdk__bdev__io.html#a7f08bd7bb0c1616e5f49766a8ca107e2',1,'spdk_bdev_io']]],
+  ['caller_5fctx',['caller_ctx',['../structspdk__bdev__io_1_1____bdev__io__internal__fields.html#a51d274b6003ff0f95466eca21bdd7dd1',1,'spdk_bdev_io::__bdev_io_internal_fields']]],
   ['cap',['cap',['../structspdk__nvme__registers.html#a00aa37d2081ccf2d54670e452d26530a',1,'spdk_nvme_registers']]],
-  ['cb',['cb',['../structspdk__bdev__io.html#a8ab54596d1e12270a1d0de09d1be502b',1,'spdk_bdev_io']]],
+  ['cb',['cb',['../structspdk__bdev__io_1_1____bdev__io__internal__fields.html#acc3511a74f557ca1ac31aa517ad719a9',1,'spdk_bdev_io::__bdev_io_internal_fields']]],
   ['cc',['cc',['../structspdk__nvme__registers.html#a6aed4a0f7535a4efad2ee2af44e2d6c1',1,'spdk_nvme_registers']]],
   ['ccc',['ccc',['../structspdk__nvme__cmds__and__effect__entry.html#a02ab01337120379760a8179c9623337e',1,'spdk_nvme_cmds_and_effect_entry']]],
   ['cctemp',['cctemp',['../structspdk__nvme__ctrlr__data.html#a346ea97ceaffb3cbaad7b909eb250b14',1,'spdk_nvme_ctrlr_data']]],
   ['cd',['cd',['../unionspdk__nvme__feat__interrupt__vector__configuration.html#adf2595e5bc0014c1cb4cd087d8e3732d',1,'spdk_nvme_feat_interrupt_vector_configuration']]],
   ['cfs',['cfs',['../unionspdk__nvme__csts__register.html#a9eadb3919064e4e1999d0a820de107f1',1,'spdk_nvme_csts_register']]],
-  ['ch',['ch',['../structspdk__bdev__io.html#ad7be0ef95e1d4a21b462189955e8dec4',1,'spdk_bdev_io']]],
+  ['ch',['ch',['../structspdk__bdev__io_1_1____bdev__io__internal__fields.html#a24890c3258742ac4ca1d92e11bab07b9',1,'spdk_bdev_io::__bdev_io_internal_fields']]],
   ['ch_5fref',['ch_ref',['../structspdk__bdev__io.html#ae513a78b2095fbd1d0674fa11d26ef2b',1,'spdk_bdev_io']]],
   ['channel_5fcount',['channel_count',['../structspdk__bdev.html#a0473e54f21c40c69bcb5df1ebe3031a6',1,'spdk_bdev']]],
   ['chk_5flen',['chk_len',['../structspdk__ocssd__dev__lba__fmt.html#a22c7ae5974d464cde3f1cedf57a9ad61',1,'spdk_ocssd_dev_lba_fmt']]],

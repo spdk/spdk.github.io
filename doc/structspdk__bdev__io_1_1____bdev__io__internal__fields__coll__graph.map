@@ -1,0 +1,6 @@
+<map id="spdk_bdev_io::__bdev_io_internal_fields" name="spdk_bdev_io::__bdev_io_internal_fields">
+<area shape="rect" id="node3" href="$structspdk__bdev__io.html" title="spdk_bdev_io" alt="" coords="142,199,253,225"/>
+<area shape="rect" id="node2" href="$structspdk__io__channel.html" title="Represents a per&#45;thread channel for accessing an I/O device. " alt="" coords="88,5,219,32"/>
+<area shape="rect" id="node5" href="$structspdk__bdev.html" title="spdk_bdev" alt="" coords="151,289,243,316"/>
+<area shape="rect" id="node4" href="$structspdk__nvme__cmd.html" title="spdk_nvme_cmd" alt="" coords="289,102,421,129"/>
+</map>

@@ -2,12 +2,14 @@ var bdev_8h =
 [
     [ "spdk_bdev_io_stat", "structspdk__bdev__io__stat.html", "structspdk__bdev__io__stat" ],
     [ "spdk_bdev_opts", "structspdk__bdev__opts.html", "structspdk__bdev__opts" ],
+    [ "spdk_bdev_io_wait_entry", "structspdk__bdev__io__wait__entry.html", "structspdk__bdev__io__wait__entry" ],
     [ "SPDK_BDEV_LARGE_BUF_MAX_SIZE", "bdev_8h.html#a9496c34e0fc135e1f309fd586e8e65d0", null ],
     [ "SPDK_BDEV_SMALL_BUF_MAX_SIZE", "bdev_8h.html#a22219ae3fb084dcb87bcc6d454b415aa", null ],
     [ "spdk_bdev_fini_cb", "bdev_8h.html#ad33efc88148d8984b353e54b7ee0058f", null ],
     [ "spdk_bdev_get_device_stat_cb", "bdev_8h.html#a1e2b47e30b56bc875b618beffced9662", null ],
     [ "spdk_bdev_init_cb", "bdev_8h.html#aa6a8987bb3a1bc368881f6b81d249bd3", null ],
     [ "spdk_bdev_io_completion_cb", "bdev_8h.html#a0c5602dfd313f90032dd91683b9663e3", null ],
+    [ "spdk_bdev_io_wait_cb", "bdev_8h.html#a9c7e19e090b8cdb22e8fc6b1984e5278", null ],
     [ "spdk_bdev_remove_cb_t", "bdev_8h.html#a51a55c97586c2d524fffcabc4d7910d6", null ],
     [ "spdk_bdev_io_type", "bdev_8h.html#a633029e24ab5ae4a689bffa2565a519f", [
       [ "SPDK_BDEV_IO_TYPE_INVALID", "bdev_8h.html#a633029e24ab5ae4a689bffa2565a519fa9772bec2b4589e73cb1482b22bf1d830", null ],
@@ -63,6 +65,7 @@ var bdev_8h =
     [ "spdk_bdev_nvme_io_passthru", "group__bdev__io__submit__functions.html#gab172cf6afc9ef154bd823b91b09dee87", null ],
     [ "spdk_bdev_nvme_io_passthru_md", "group__bdev__io__submit__functions.html#gac6b5933e4c0b2ad68bad591655b4f9e6", null ],
     [ "spdk_bdev_open", "bdev_8h.html#aeacdfd5debd3917d84d18be0277203ff", null ],
+    [ "spdk_bdev_queue_io_wait", "bdev_8h.html#acc4beee18ded7837fa92bd7c34e7ef2e", null ],
     [ "spdk_bdev_read", "group__bdev__io__submit__functions.html#ga4b500ce84df1d2551f76e635c9dafbd5", null ],
     [ "spdk_bdev_read_blocks", "group__bdev__io__submit__functions.html#gaeec9efd151e2fb34ee3d22a1edbbb53f", null ],
     [ "spdk_bdev_readv", "group__bdev__io__submit__functions.html#ga9ac9efa882e87909acfd4bccaddb1778", null ],
