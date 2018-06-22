@@ -1,5 +1,7 @@
 var NAVTREEINDEX14 =
 {
+"structspdk__nvme__secondary__ctrl__list.html":[12,0,130],
+"structspdk__nvme__secondary__ctrl__list.html#a3422d2643a48f11972a62ad3eee04f53":[12,0,130,0],
 "structspdk__nvme__secondary__ctrl__list.html#a50f2e9507f25b988783bc8a688474609":[12,0,130,2],
 "structspdk__nvme__secondary__ctrl__list.html#aff0769e9ba5be1c63d599a9e349aab1a":[12,0,130,1],
 "structspdk__nvme__sgl__descriptor.html":[12,0,131],
@@ -247,7 +249,5 @@ var NAVTREEINDEX14 =
 "structspdk__ocssd__geometry__data.html#af40987a13156a6c830806eaffe73858f":[12,0,156,10],
 "structspdk__ocssd__geometry__data.html#af410423952b5efef27ace44307a5081e":[12,0,156,12],
 "structspdk__pci__addr.html":[12,0,157],
-"structspdk__pci__addr.html#a4b8677cfade6b86f0f12339a404bb539":[12,0,157,2],
-"structspdk__pci__addr.html#a4cd7b095b28771b4ce54540ce43e3eaa":[12,0,157,3],
-"structspdk__pci__addr.html#adb5104016db3f448f3e90c3a151fd70f":[12,0,157,0]
+"structspdk__pci__addr.html#a4b8677cfade6b86f0f12339a404bb539":[12,0,157,2]
 };

@@ -224,6 +224,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a795f3fe355907d744d019d2b01f0aee9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lvol_8h.html#a795f3fe355907d744d019d2b01f0aee9">spdk_lvol_inflate</a> (struct spdk_lvol *lvol, <a class="el" href="lvol_8h.html#a4d5c96c4fe4512f99dcb3f1e5d5e86be">spdk_lvol_op_complete</a> cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:a795f3fe355907d744d019d2b01f0aee9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inflate lvol.  <a href="#a795f3fe355907d744d019d2b01f0aee9">More...</a><br /></td></tr>
 <tr class="separator:a795f3fe355907d744d019d2b01f0aee9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15199efb9ca8b7309ec257c1a87360c5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lvol_8h.html#a15199efb9ca8b7309ec257c1a87360c5">spdk_lvol_decouple_parent</a> (struct spdk_lvol *lvol, <a class="el" href="lvol_8h.html#a4d5c96c4fe4512f99dcb3f1e5d5e86be">spdk_lvol_op_complete</a> cb_fn, void *cb_arg)</td></tr>
+<tr class="memdesc:a15199efb9ca8b7309ec257c1a87360c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decouple parent of lvol.  <a href="#a15199efb9ca8b7309ec257c1a87360c5">More...</a><br /></td></tr>
+<tr class="separator:a15199efb9ca8b7309ec257c1a87360c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Logical Volume Interface. </p>
@@ -529,6 +532,50 @@ Functions</h2></td></tr>
     <tr><td class="paramname">snapshot_name</td><td>Name of created snapshot. </td></tr>
     <tr><td class="paramname">cb_fn</td><td>Completion callback. </td></tr>
     <tr><td class="paramname">cb_arg</td><td>Completion callback custom arguments. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a15199efb9ca8b7309ec257c1a87360c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a15199efb9ca8b7309ec257c1a87360c5">&#9670;&nbsp;</a></span>spdk_lvol_decouple_parent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_lvol_decouple_parent </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_lvol *&#160;</td>
+          <td class="paramname"><em>lvol</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="lvol_8h.html#a4d5c96c4fe4512f99dcb3f1e5d5e86be">spdk_lvol_op_complete</a>&#160;</td>
+          <td class="paramname"><em>cb_fn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>cb_arg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Decouple parent of lvol. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">lvol</td><td>Handle to lvol </td></tr>
+    <tr><td class="paramname">cb_fn</td><td>Completion callback </td></tr>
+    <tr><td class="paramname">cb_arg</td><td>Completion callback custom arguments </td></tr>
   </table>
   </dd>
 </dl>

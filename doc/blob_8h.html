@@ -282,8 +282,11 @@ Functions</h2></td></tr>
 <tr class="memdesc:aed4fb5871f9ca58ff60c0dd8810eb223"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delete an existing blob from the given blobstore.  <a href="#aed4fb5871f9ca58ff60c0dd8810eb223">More...</a><br /></td></tr>
 <tr class="separator:aed4fb5871f9ca58ff60c0dd8810eb223"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3d1f1b56d9782997ef3e338879a2fa28"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blob_8h.html#a3d1f1b56d9782997ef3e338879a2fa28">spdk_bs_inflate_blob</a> (struct spdk_blob_store *bs, struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *channel, spdk_blob_id blobid, <a class="el" href="blob_8h.html#aca5253109581a768e06dd197429ef9e1">spdk_blob_op_complete</a> cb_fn, void *cb_arg)</td></tr>
-<tr class="memdesc:a3d1f1b56d9782997ef3e338879a2fa28"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate all unallocated clusters in this blob and copy data from backing blob.  <a href="#a3d1f1b56d9782997ef3e338879a2fa28">More...</a><br /></td></tr>
+<tr class="memdesc:a3d1f1b56d9782997ef3e338879a2fa28"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate all clusters in this blob.  <a href="#a3d1f1b56d9782997ef3e338879a2fa28">More...</a><br /></td></tr>
 <tr class="separator:a3d1f1b56d9782997ef3e338879a2fa28"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7dee33b6b9df9b9a3d6b9957c71a779c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blob_8h.html#a7dee33b6b9df9b9a3d6b9957c71a779c">spdk_bs_blob_decouple_parent</a> (struct spdk_blob_store *bs, struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *channel, spdk_blob_id blobid, <a class="el" href="blob_8h.html#aca5253109581a768e06dd197429ef9e1">spdk_blob_op_complete</a> cb_fn, void *cb_arg)</td></tr>
+<tr class="memdesc:a7dee33b6b9df9b9a3d6b9957c71a779c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove dependency on parent blob.  <a href="#a7dee33b6b9df9b9a3d6b9957c71a779c">More...</a><br /></td></tr>
+<tr class="separator:a7dee33b6b9df9b9a3d6b9957c71a779c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2c60e6bc3ccd26228dec2c0f3ecfe618"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blob_8h.html#a2c60e6bc3ccd26228dec2c0f3ecfe618">spdk_bs_open_blob</a> (struct spdk_blob_store *bs, spdk_blob_id blobid, <a class="el" href="blob_8h.html#aab6d19ccc3c952877c355030e2a286c1">spdk_blob_op_with_handle_complete</a> cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:a2c60e6bc3ccd26228dec2c0f3ecfe618"><td class="mdescLeft">&#160;</td><td class="mdescRight">Open a blob from the given blobstore.  <a href="#a2c60e6bc3ccd26228dec2c0f3ecfe618">More...</a><br /></td></tr>
 <tr class="separator:a2c60e6bc3ccd26228dec2c0f3ecfe618"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1625,6 +1628,66 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a7dee33b6b9df9b9a3d6b9957c71a779c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7dee33b6b9df9b9a3d6b9957c71a779c">&#9670;&nbsp;</a></span>spdk_bs_blob_decouple_parent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_bs_blob_decouple_parent </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_blob_store *&#160;</td>
+          <td class="paramname"><em>bs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *&#160;</td>
+          <td class="paramname"><em>channel</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">spdk_blob_id&#160;</td>
+          <td class="paramname"><em>blobid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="blob_8h.html#aca5253109581a768e06dd197429ef9e1">spdk_blob_op_complete</a>&#160;</td>
+          <td class="paramname"><em>cb_fn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>cb_arg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Remove dependency on parent blob. </p>
+<p>This call allocates and copies data for any clusters that are allocated in the parent blob, and decouples parent updating dependencies of blob to its ancestor.</p>
+<p>If blob have no parent -EINVAL error is reported.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bs</td><td>blobstore. </td></tr>
+    <tr><td class="paramname">channel</td><td>IO channel used to inflate blob. </td></tr>
+    <tr><td class="paramname">blobid</td><td>The id of the blob. </td></tr>
+    <tr><td class="paramname">cb_fn</td><td>Called when the operation is complete. </td></tr>
+    <tr><td class="paramname">cb_arg</td><td>Argument passed to function cb_fn. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a33263462543c5f2b51f4d507ea26a58d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a33263462543c5f2b51f4d507ea26a58d">&#9670;&nbsp;</a></span>spdk_bs_create_blob()</h2>
 
@@ -2219,8 +2282,9 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Allocate all unallocated clusters in this blob and copy data from backing blob. </p>
-<p>This call removes dependency on backing blob.</p>
+<p>Allocate all clusters in this blob. </p>
+<p>Data for allocated clusters is copied from backing blob(s) if they exist.</p>
+<p>This call removes all dependencies on any backing blobs.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">bs</td><td>blobstore. </td></tr>
