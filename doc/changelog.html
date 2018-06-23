@@ -140,6 +140,8 @@ $(document).ready(function(){initNavTree('changelog.html','');});
 <div class="contents">
 <div class="textblock"><h1><a class="anchor" id="changelog-v18-07"></a>
 v18.07: (Upcoming Release)</h1>
+<h2>NVMe Driver</h2>
+<p>New API function <a class="el" href="nvme_8h.html#acf6188764b8c71b2f64a74077d6bfabf" title="Inject an error for the next request with a given opcode. ">spdk_nvme_qpair_add_cmd_error_injection()</a> and <a class="el" href="nvme_8h.html#ad720b23786450b5a2b2d7d65c6dd6b7c" title="Clear the specified NVMe command with error status. ">spdk_nvme_qpair_remove_cmd_error_injection()</a> have been added for NVMe error emulation, users can set specified command with specified error status for error emulation.</p>
 <h2>Build System</h2>
 <p>The build system now generates a combined shared library (libspdk.so) that may be used in place of the individual static libraries (libspdk_*.a). The combined library includes all components of SPDK and is intended to make linking against SPDK easier. The static libraries are also still provided for users that prefer to link only the minimal set of components required.</p>
 <h2>RPC</h2>

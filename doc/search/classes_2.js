@@ -139,6 +139,7 @@ var searchData=
   ['spdk_5focssd_5fgeometry_5fdata',['spdk_ocssd_geometry_data',['../structspdk__ocssd__geometry__data.html',1,'']]],
   ['spdk_5fpci_5faddr',['spdk_pci_addr',['../structspdk__pci__addr.html',1,'']]],
   ['spdk_5fpci_5fid',['spdk_pci_id',['../structspdk__pci__id.html',1,'']]],
+  ['spdk_5freactor_5ftsc_5fstats',['spdk_reactor_tsc_stats',['../structspdk__reactor__tsc__stats.html',1,'']]],
   ['spdk_5fscsi_5fcdb_5finquiry',['spdk_scsi_cdb_inquiry',['../structspdk__scsi__cdb__inquiry.html',1,'']]],
   ['spdk_5fscsi_5fcdb_5finquiry_5fdata',['spdk_scsi_cdb_inquiry_data',['../structspdk__scsi__cdb__inquiry__data.html',1,'']]],
   ['spdk_5fscsi_5fdesig_5fdesc',['spdk_scsi_desig_desc',['../structspdk__scsi__desig__desc.html',1,'']]],

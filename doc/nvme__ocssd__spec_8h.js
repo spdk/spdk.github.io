@@ -3,6 +3,7 @@ var nvme__ocssd__spec_8h =
     [ "spdk_ocssd_dev_lba_fmt", "structspdk__ocssd__dev__lba__fmt.html", "structspdk__ocssd__dev__lba__fmt" ],
     [ "spdk_ocssd_geometry_data", "structspdk__ocssd__geometry__data.html", "structspdk__ocssd__geometry__data" ],
     [ "spdk_ocssd_chunk_information", "structspdk__ocssd__chunk__information.html", "structspdk__ocssd__chunk__information" ],
+    [ "SPDK_NVME_OCSSD_MAX_LBAL_ENTRIES", "nvme__ocssd__spec_8h.html#a7d96f9d96a27db374c495e271f84d765", null ],
     [ "SPDK_OCSSD_IO_FLAGS_LIMITED_RETRY", "nvme__ocssd__spec_8h.html#a191404a5f78f1cadcadb5443e874f84f", null ],
     [ "spdk_ocssd_admin_opcode", "nvme__ocssd__spec_8h.html#a42b34558cb1809ea9157f873441c919d", [
       [ "SPDK_OCSSD_OPC_GEOMETRY", "nvme__ocssd__spec_8h.html#a42b34558cb1809ea9157f873441c919da17822237ff045bebf515bedfad16dd8c", null ]

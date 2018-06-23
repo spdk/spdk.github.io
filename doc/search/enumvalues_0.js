@@ -65,6 +65,7 @@ var searchData=
   ['spdk_5fnvme_5fsgls_5fnot_5fsupported',['SPDK_NVME_SGLS_NOT_SUPPORTED',['../nvme__spec_8h.html#af3e4102cda177c51a05a6bb02fa62b87a5978d5c7ce04a60c9d86b157037cb2f0',1,'nvme_spec.h']]],
   ['spdk_5fnvme_5fsgls_5fsupported',['SPDK_NVME_SGLS_SUPPORTED',['../nvme__spec_8h.html#af3e4102cda177c51a05a6bb02fa62b87ade9828594ce1d9d11427a38182149d9d',1,'nvme_spec.h']]],
   ['spdk_5fnvme_5fsgls_5fsupported_5fdword_5faligned',['SPDK_NVME_SGLS_SUPPORTED_DWORD_ALIGNED',['../nvme__spec_8h.html#af3e4102cda177c51a05a6bb02fa62b87a702868f6b85dd329c4baf00642e99fca',1,'nvme_spec.h']]],
+  ['spdk_5fnvme_5ftransport_5ffc',['SPDK_NVME_TRANSPORT_FC',['../nvme_8h.html#ae87a03c28984a2c0499d50ef5e9d0eceabbda195aa6d0a4ad7b437ed5e9a0d01f',1,'nvme.h']]],
   ['spdk_5fnvme_5ftransport_5fpcie',['SPDK_NVME_TRANSPORT_PCIE',['../nvme_8h.html#ae87a03c28984a2c0499d50ef5e9d0ecea162afc05d1ae756b8a7969be140035ea',1,'nvme.h']]],
   ['spdk_5fnvme_5ftransport_5frdma',['SPDK_NVME_TRANSPORT_RDMA',['../nvme_8h.html#ae87a03c28984a2c0499d50ef5e9d0ecea140f1cb4edf258bddffeb1c7277d93d8',1,'nvme.h']]],
   ['spdk_5fnvmf_5fadrfam_5ffc',['SPDK_NVMF_ADRFAM_FC',['../nvmf__spec_8h.html#a08f0090d242e2607ab11f148dcd797c6afd21c300bf2e149474def6ae770b2263',1,'nvmf_spec.h']]],

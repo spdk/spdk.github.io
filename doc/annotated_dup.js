@@ -159,6 +159,7 @@ var annotated_dup =
     [ "spdk_ocssd_geometry_data", "structspdk__ocssd__geometry__data.html", "structspdk__ocssd__geometry__data" ],
     [ "spdk_pci_addr", "structspdk__pci__addr.html", "structspdk__pci__addr" ],
     [ "spdk_pci_id", "structspdk__pci__id.html", "structspdk__pci__id" ],
+    [ "spdk_reactor_tsc_stats", "structspdk__reactor__tsc__stats.html", "structspdk__reactor__tsc__stats" ],
     [ "spdk_scsi_cdb_inquiry", "structspdk__scsi__cdb__inquiry.html", "structspdk__scsi__cdb__inquiry" ],
     [ "spdk_scsi_cdb_inquiry_data", "structspdk__scsi__cdb__inquiry__data.html", "structspdk__scsi__cdb__inquiry__data" ],
     [ "spdk_scsi_desig_desc", "structspdk__scsi__desig__desc.html", "structspdk__scsi__desig__desc" ],

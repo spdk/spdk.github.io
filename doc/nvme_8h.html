@@ -197,7 +197,8 @@ Typedefs</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
 <tr class="memitem:ae87a03c28984a2c0499d50ef5e9d0ece"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#ae87a03c28984a2c0499d50ef5e9d0ece">spdk_nvme_transport_type</a> { <a class="el" href="nvme_8h.html#ae87a03c28984a2c0499d50ef5e9d0ecea162afc05d1ae756b8a7969be140035ea">SPDK_NVME_TRANSPORT_PCIE</a> = 256, 
-<a class="el" href="nvme_8h.html#ae87a03c28984a2c0499d50ef5e9d0ecea140f1cb4edf258bddffeb1c7277d93d8">SPDK_NVME_TRANSPORT_RDMA</a> = SPDK_NVMF_TRTYPE_RDMA
+<a class="el" href="nvme_8h.html#ae87a03c28984a2c0499d50ef5e9d0ecea140f1cb4edf258bddffeb1c7277d93d8">SPDK_NVME_TRANSPORT_RDMA</a> = SPDK_NVMF_TRTYPE_RDMA, 
+<a class="el" href="nvme_8h.html#ae87a03c28984a2c0499d50ef5e9d0eceabbda195aa6d0a4ad7b437ed5e9a0d01f">SPDK_NVME_TRANSPORT_FC</a> = SPDK_NVMF_TRTYPE_FC
  }<tr class="memdesc:ae87a03c28984a2c0499d50ef5e9d0ece"><td class="mdescLeft">&#160;</td><td class="mdescRight">NVMe library transports.  <a href="nvme_8h.html#ae87a03c28984a2c0499d50ef5e9d0ece">More...</a><br /></td></tr>
 </td></tr>
 <tr class="separator:ae87a03c28984a2c0499d50ef5e9d0ece"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -466,6 +467,12 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_
 <tr class="memitem:a4bf7a40872bfe623a5dfa31922263532"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a4bf7a40872bfe623a5dfa31922263532">spdk_nvme_ns_cmd_compare_with_md</a> (struct spdk_nvme_ns *ns, struct spdk_nvme_qpair *qpair, void *payload, void *metadata, uint64_t lba, uint32_t lba_count, <a class="el" href="nvme_8h.html#ac9779e9957d7089dde8e492cc60856d8">spdk_nvme_cmd_cb</a> cb_fn, void *cb_arg, uint32_t io_flags, uint16_t apptag_mask, uint16_t apptag)</td></tr>
 <tr class="memdesc:a4bf7a40872bfe623a5dfa31922263532"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submits a compare I/O to the specified NVMe namespace.  <a href="#a4bf7a40872bfe623a5dfa31922263532">More...</a><br /></td></tr>
 <tr class="separator:a4bf7a40872bfe623a5dfa31922263532"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf6188764b8c71b2f64a74077d6bfabf"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#acf6188764b8c71b2f64a74077d6bfabf">spdk_nvme_qpair_add_cmd_error_injection</a> (struct spdk_nvme_ctrlr *ctrlr, struct spdk_nvme_qpair *qpair, uint8_t opc, bool do_not_submit, uint64_t timeout_in_us, uint32_t err_count, uint8_t sct, uint8_t sc)</td></tr>
+<tr class="memdesc:acf6188764b8c71b2f64a74077d6bfabf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inject an error for the next request with a given opcode.  <a href="#acf6188764b8c71b2f64a74077d6bfabf">More...</a><br /></td></tr>
+<tr class="separator:acf6188764b8c71b2f64a74077d6bfabf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad720b23786450b5a2b2d7d65c6dd6b7c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#ad720b23786450b5a2b2d7d65c6dd6b7c">spdk_nvme_qpair_remove_cmd_error_injection</a> (struct spdk_nvme_ctrlr *ctrlr, struct spdk_nvme_qpair *qpair, uint8_t opc)</td></tr>
+<tr class="memdesc:ad720b23786450b5a2b2d7d65c6dd6b7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear the specified NVMe command with error status.  <a href="#ad720b23786450b5a2b2d7d65c6dd6b7c">More...</a><br /></td></tr>
+<tr class="separator:ad720b23786450b5a2b2d7d65c6dd6b7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
@@ -680,6 +687,8 @@ int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_retry_co
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ae87a03c28984a2c0499d50ef5e9d0ecea162afc05d1ae756b8a7969be140035ea"></a>SPDK_NVME_TRANSPORT_PCIE&#160;</td><td class="fielddoc"><p>PCIe Transport (locally attached devices) </p>
 </td></tr>
 <tr><td class="fieldname"><a id="ae87a03c28984a2c0499d50ef5e9d0ecea140f1cb4edf258bddffeb1c7277d93d8"></a>SPDK_NVME_TRANSPORT_RDMA&#160;</td><td class="fielddoc"><p>RDMA Transport (RoCE, iWARP, etc.) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ae87a03c28984a2c0499d50ef5e9d0eceabbda195aa6d0a4ad7b437ed5e9a0d01f"></a>SPDK_NVME_TRANSPORT_FC&#160;</td><td class="fielddoc"><p>Fibre Channel (FC) Transport. </p>
 </td></tr>
 </table>
 
@@ -4212,6 +4221,87 @@ int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_retry_co
 
 </div>
 </div>
+<a id="acf6188764b8c71b2f64a74077d6bfabf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acf6188764b8c71b2f64a74077d6bfabf">&#9670;&nbsp;</a></span>spdk_nvme_qpair_add_cmd_error_injection()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_nvme_qpair_add_cmd_error_injection </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_nvme_ctrlr *&#160;</td>
+          <td class="paramname"><em>ctrlr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct spdk_nvme_qpair *&#160;</td>
+          <td class="paramname"><em>qpair</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>opc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>do_not_submit</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>timeout_in_us</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>err_count</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>sct</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>sc</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Inject an error for the next request with a given opcode. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ctrlr</td><td>NVMe controller. </td></tr>
+    <tr><td class="paramname">qpair</td><td>I/O queue pair to add the error command, NULL for Admin queue pair. </td></tr>
+    <tr><td class="paramname">opc</td><td>Opcode for Admin or I/O commands. </td></tr>
+    <tr><td class="paramname">do_not_submit</td><td>True if matching requests should not be submitted to the controller, but instead completed manually after timeout_in_us has expired. False if matching requests should be submitted to the controller and have their completion status modified after the controller completes the request. </td></tr>
+    <tr><td class="paramname">timeout_in_us</td><td>Wait specified microseconds when do_not_submit is true. </td></tr>
+    <tr><td class="paramname">err_count</td><td>Number of matching requests to inject errors. </td></tr>
+    <tr><td class="paramname">sct</td><td>Status code type. </td></tr>
+    <tr><td class="paramname">sc</td><td>Status code.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 if successfully enabled, ENOMEM if an error command structure cannot be allocated.</dd></dl>
+<p>The function can be called multiple times to inject errors for different commands. If the opcode matches an existing entry, the existing entry will be updated with the values specified. </p>
+
+</div>
+</div>
 <a id="aa331d140870e977722bfbb6826524782"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa331d140870e977722bfbb6826524782">&#9670;&nbsp;</a></span>spdk_nvme_qpair_process_completions()</h2>
 
@@ -4252,6 +4342,51 @@ int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_retry_co
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="nvme_8h.html#ac9779e9957d7089dde8e492cc60856d8" title="Signature for callback function invoked when a command is completed. ">spdk_nvme_cmd_cb</a></dd></dl>
 <p>This function may be called at any point while the controller is attached to the SPDK NVMe driver.</p>
 <p>The caller must ensure that each queue pair is only used from one thread at a time. </p>
+
+</div>
+</div>
+<a id="ad720b23786450b5a2b2d7d65c6dd6b7c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad720b23786450b5a2b2d7d65c6dd6b7c">&#9670;&nbsp;</a></span>spdk_nvme_qpair_remove_cmd_error_injection()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_nvme_qpair_remove_cmd_error_injection </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_nvme_ctrlr *&#160;</td>
+          <td class="paramname"><em>ctrlr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct spdk_nvme_qpair *&#160;</td>
+          <td class="paramname"><em>qpair</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>opc</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Clear the specified NVMe command with error status. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ctrlr</td><td>NVMe controller. </td></tr>
+    <tr><td class="paramname">qpair</td><td>I/O queue pair to remove the error command, \ NULL for Admin queue pair. </td></tr>
+    <tr><td class="paramname">opc</td><td>Opcode for Admin or I/O commands.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>The function will remove specified command in the error list. </p>
 
 </div>
 </div>
@@ -4393,7 +4528,7 @@ int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_retry_co
 <tr>
 <td>adrfam </td><td>Address family (e.g. IPv4, IPv6) </td></tr>
 <tr>
-<td>traddr </td><td>Transport address (e.g. 0000:04:00.0 for PCIe or 192.168.100.8 for RDMA) </td></tr>
+<td>traddr </td><td>Transport address (e.g. 0000:04:00.0 for PCIe, 192.168.100.8 for RDMA, or WWN for FC) </td></tr>
 <tr>
 <td>trsvcid </td><td>Transport service identifier (e.g. 4420) </td></tr>
 <tr>
