@@ -135,6 +135,7 @@ $(document).ready(function(){initNavTree('structspdk__bdev.html','');});
 
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Data Structures</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Data Fields</a>  </div>
   <div class="headertitle">
@@ -146,27 +147,27 @@ Collaboration diagram for spdk_bdev:</div>
 <div class="dyncontent">
 <div class="center"><img src="structspdk__bdev__coll__graph.png" border="0" usemap="#spdk__bdev_coll__map" alt="Collaboration graph"/></div>
 <map name="spdk__bdev_coll__map" id="spdk__bdev_coll__map">
-<area shape="rect" id="node6" href="structspdk__bdev__io.html" title="spdk_bdev_io" alt="" coords="271,291,382,317"/>
-<area shape="rect" id="node2" href="structspdk__bdev__module.html" title="Block device module. " alt="" coords="43,95,191,121"/>
-<area shape="rect" id="node3" href="structspdk__uuid.html" title="spdk_uuid" alt="" coords="216,95,304,121"/>
-<area shape="rect" id="node4" href="structspdk__bdev__fn__table.html" title="Function table for a block device backend. " alt="" coords="328,95,480,121"/>
-<area shape="rect" id="node5" href="structspdk__io__channel.html" title="Represents a per&#45;thread channel for accessing an I/O device. " alt="" coords="333,5,464,32"/>
-<area shape="rect" id="node8" href="structspdk__bdev__io_1_1____bdev__io__internal__fields.html" title="Fields that are used internally by the bdev subsystem. " alt="" coords="159,380,324,421"/>
-<area shape="rect" id="node7" href="structspdk__nvme__cmd.html" title="spdk_nvme_cmd" alt="" coords="351,200,483,227"/>
+<area shape="rect" id="node5" href="structspdk__bdev_1_1____bdev__internal__fields.html" title="Fields that are used internally by the bdev subsystem. " alt="" coords="163,392,365,433"/>
+<area shape="rect" id="node6" href="structspdk__bdev__io.html" title="spdk_bdev_io" alt="" coords="422,303,533,329"/>
+<area shape="rect" id="node2" href="structspdk__bdev__module.html" title="Block device module. " alt="" coords="22,124,170,151"/>
+<area shape="rect" id="node3" href="structspdk__bdev__module_1_1____bdev__module__internal__fields.html" title="Fields that are used by the internal bdev subsystem. " alt="" coords="5,5,187,61"/>
+<area shape="rect" id="node4" href="structspdk__uuid.html" title="spdk_uuid" alt="" coords="195,124,283,151"/>
+<area shape="rect" id="node7" href="structspdk__io__channel.html" title="Represents a per&#45;thread channel for accessing an I/O device. " alt="" coords="373,20,504,47"/>
+<area shape="rect" id="node8" href="structspdk__bdev__fn__table.html" title="Function table for a block device backend. " alt="" coords="307,124,459,151"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Data Structures</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev_1_1____bdev__internal__fields.html">__bdev_internal_fields</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fields that are used internally by the bdev subsystem.  <a href="structspdk__bdev_1_1____bdev__internal__fields.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ad6af2c003c0428ec514d45fade176d22"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev.html#ad6af2c003c0428ec514d45fade176d22">TAILQ_HEAD</a> (spdk_bdev_aliases_list, <a class="el" href="structspdk__bdev__alias.html">spdk_bdev_alias</a>) aliases</td></tr>
 <tr class="memdesc:ad6af2c003c0428ec514d45fade176d22"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unique aliases for this block device.  <a href="#ad6af2c003c0428ec514d45fade176d22">More...</a><br /></td></tr>
 <tr class="separator:ad6af2c003c0428ec514d45fade176d22"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8a084ec42394ce54710223d2c8049d08"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev.html#a8a084ec42394ce54710223d2c8049d08">TAILQ_HEAD</a> (, spdk_bdev_desc) open_descs</td></tr>
-<tr class="memdesc:a8a084ec42394ce54710223d2c8049d08"><td class="mdescLeft">&#160;</td><td class="mdescRight">List of open descriptors for this block device.  <a href="#a8a084ec42394ce54710223d2c8049d08">More...</a><br /></td></tr>
-<tr class="separator:a8a084ec42394ce54710223d2c8049d08"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1d22c26513d0d136912360935762d92d"><td class="memItemLeft" align="right" valign="top"><a id="a1d22c26513d0d136912360935762d92d"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>TAILQ_ENTRY</b> (<a class="el" href="structspdk__bdev.html">spdk_bdev</a>) link</td></tr>
-<tr class="separator:a1d22c26513d0d136912360935762d92d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
@@ -188,18 +189,6 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev.html#aef65d7444968b8981d46d0c520fd5287">blockcnt</a></td></tr>
 <tr class="memdesc:aef65d7444968b8981d46d0c520fd5287"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of blocks. <br /></td></tr>
 <tr class="separator:aef65d7444968b8981d46d0c520fd5287"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0473e54f21c40c69bcb5df1ebe3031a6"><td class="memItemLeft" align="right" valign="top"><a id="a0473e54f21c40c69bcb5df1ebe3031a6"></a>
-uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev.html#a0473e54f21c40c69bcb5df1ebe3031a6">channel_count</a></td></tr>
-<tr class="memdesc:a0473e54f21c40c69bcb5df1ebe3031a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of active channels on this bdev except the QoS bdev channel. <br /></td></tr>
-<tr class="separator:a0473e54f21c40c69bcb5df1ebe3031a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeedd75a8974a6073f540b9012085ea34"><td class="memItemLeft" align="right" valign="top"><a id="aeedd75a8974a6073f540b9012085ea34"></a>
-struct spdk_bdev_qos *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev.html#aeedd75a8974a6073f540b9012085ea34">qos</a></td></tr>
-<tr class="memdesc:aeedd75a8974a6073f540b9012085ea34"><td class="mdescLeft">&#160;</td><td class="mdescRight">Quality of service parameters. <br /></td></tr>
-<tr class="separator:aeedd75a8974a6073f540b9012085ea34"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3d7df22674f1dd3b6e7a0c269777b3fc"><td class="memItemLeft" align="right" valign="top"><a id="a3d7df22674f1dd3b6e7a0c269777b3fc"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev.html#a3d7df22674f1dd3b6e7a0c269777b3fc">qos_mod_in_progress</a></td></tr>
-<tr class="memdesc:a3d7df22674f1dd3b6e7a0c269777b3fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">True if the state of the QoS is being modified. <br /></td></tr>
-<tr class="separator:a3d7df22674f1dd3b6e7a0c269777b3fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac2ccb256340bc2e8b2d6f7793d977c0d"><td class="memItemLeft" align="right" valign="top"><a id="ac2ccb256340bc2e8b2d6f7793d977c0d"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev.html#ac2ccb256340bc2e8b2d6f7793d977c0d">write_cache</a></td></tr>
 <tr class="memdesc:ac2ccb256340bc2e8b2d6f7793d977c0d"><td class="mdescLeft">&#160;</td><td class="mdescRight">write cache enabled, not used at the moment <br /></td></tr>
@@ -222,43 +211,19 @@ struct <a class="el" href="structspdk__bdev__module.html">spdk_bdev_module</a> *
 const struct <a class="el" href="structspdk__bdev__fn__table.html">spdk_bdev_fn_table</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev.html#a1c3d6e810863f31e2301949bfd1c5d37">fn_table</a></td></tr>
 <tr class="memdesc:a1c3d6e810863f31e2301949bfd1c5d37"><td class="mdescLeft">&#160;</td><td class="mdescRight">function table for all LUN ops <br /></td></tr>
 <tr class="separator:a1c3d6e810863f31e2301949bfd1c5d37"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a789560198e85f1643f67c59825fdb577"><td class="memItemLeft" align="right" valign="top"><a id="a789560198e85f1643f67c59825fdb577"></a>
-pthread_mutex_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev.html#a789560198e85f1643f67c59825fdb577">mutex</a></td></tr>
-<tr class="memdesc:a789560198e85f1643f67c59825fdb577"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mutex protecting claimed. <br /></td></tr>
-<tr class="separator:a789560198e85f1643f67c59825fdb577"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acd867d7c53f77f62fd252e50898d4f9b"><td class="memItemLeft" align="right" valign="top"><a id="acd867d7c53f77f62fd252e50898d4f9b"></a>
-enum <a class="el" href="bdev_8h.html#ad6c166f5d928c2995df57c96a2977862">spdk_bdev_status</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev.html#acd867d7c53f77f62fd252e50898d4f9b">status</a></td></tr>
-<tr class="memdesc:acd867d7c53f77f62fd252e50898d4f9b"><td class="mdescLeft">&#160;</td><td class="mdescRight">The bdev status. <br /></td></tr>
-<tr class="separator:acd867d7c53f77f62fd252e50898d4f9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0efed426cc96beb687a71c97dbbe1a12"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> **&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev.html#a0efed426cc96beb687a71c97dbbe1a12">base_bdevs</a></td></tr>
-<tr class="memdesc:a0efed426cc96beb687a71c97dbbe1a12"><td class="mdescLeft">&#160;</td><td class="mdescRight">The array of block devices that this block device is built on top of (if any).  <a href="#a0efed426cc96beb687a71c97dbbe1a12">More...</a><br /></td></tr>
-<tr class="separator:a0efed426cc96beb687a71c97dbbe1a12"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a215d898d569f909b12ab4231d4c35379"><td class="memItemLeft" align="right" valign="top"><a id="a215d898d569f909b12ab4231d4c35379"></a>
-size_t&#160;</td><td class="memItemRight" valign="bottom"><b>base_bdevs_cnt</b></td></tr>
-<tr class="separator:a215d898d569f909b12ab4231d4c35379"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7d72a950e7a129b96607189783f96718"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> **&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev.html#a7d72a950e7a129b96607189783f96718">vbdevs</a></td></tr>
 <tr class="memdesc:a7d72a950e7a129b96607189783f96718"><td class="mdescLeft">&#160;</td><td class="mdescRight">The array of virtual block devices built on top of this block device.  <a href="#a7d72a950e7a129b96607189783f96718">More...</a><br /></td></tr>
 <tr class="separator:a7d72a950e7a129b96607189783f96718"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab053d6a734581f3b8d08b940ba5085b3"><td class="memItemLeft" align="right" valign="top"><a id="ab053d6a734581f3b8d08b940ba5085b3"></a>
 size_t&#160;</td><td class="memItemRight" valign="bottom"><b>vbdevs_cnt</b></td></tr>
 <tr class="separator:ab053d6a734581f3b8d08b940ba5085b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a05bf475bd3e7c3be1e45f33bd7f6d8ba"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structspdk__bdev__module.html">spdk_bdev_module</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev.html#a05bf475bd3e7c3be1e45f33bd7f6d8ba">claim_module</a></td></tr>
-<tr class="memdesc:a05bf475bd3e7c3be1e45f33bd7f6d8ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to the module that has claimed this bdev for purposes of creating virtual bdevs on top of it.  <a href="#a05bf475bd3e7c3be1e45f33bd7f6d8ba">More...</a><br /></td></tr>
-<tr class="separator:a05bf475bd3e7c3be1e45f33bd7f6d8ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a18a2d86f356772f201f52c204099b0f0"><td class="memItemLeft" align="right" valign="top">spdk_bdev_unregister_cb&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev.html#a18a2d86f356772f201f52c204099b0f0">unregister_cb</a></td></tr>
-<tr class="memdesc:a18a2d86f356772f201f52c204099b0f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback function that will be called after bdev destruct is completed.  <a href="#a18a2d86f356772f201f52c204099b0f0">More...</a><br /></td></tr>
-<tr class="separator:a18a2d86f356772f201f52c204099b0f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6440f92b12128e759fbe0c80e6970b61"><td class="memItemLeft" align="right" valign="top"><a id="a6440f92b12128e759fbe0c80e6970b61"></a>
-void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev.html#a6440f92b12128e759fbe0c80e6970b61">unregister_ctx</a></td></tr>
-<tr class="memdesc:a6440f92b12128e759fbe0c80e6970b61"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unregister call context. <br /></td></tr>
-<tr class="separator:a6440f92b12128e759fbe0c80e6970b61"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a52b1c87fbb163a48a70b8f6905ca05e3"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structspdk__bdev__io.html">spdk_bdev_io</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev.html#a52b1c87fbb163a48a70b8f6905ca05e3">reset_in_progress</a></td></tr>
-<tr class="memdesc:a52b1c87fbb163a48a70b8f6905ca05e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">points to a reset bdev_io if one is in progress.  <a href="#a52b1c87fbb163a48a70b8f6905ca05e3">More...</a><br /></td></tr>
-<tr class="separator:a52b1c87fbb163a48a70b8f6905ca05e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af79765ae9547cde698fa00a46f7bfa68"><td class="memItemLeft" align="right" valign="top"><a id="af79765ae9547cde698fa00a46f7bfa68"></a>
+struct <a class="el" href="structspdk__bdev_1_1____bdev__internal__fields.html">spdk_bdev::__bdev_internal_fields</a>&#160;</td><td class="memItemRight" valign="bottom"><b>internal</b></td></tr>
+<tr class="separator:af79765ae9547cde698fa00a46f7bfa68"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="ad6af2c003c0428ec514d45fade176d22"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad6af2c003c0428ec514d45fade176d22">&#9670;&nbsp;</a></span>TAILQ_HEAD() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ad6af2c003c0428ec514d45fade176d22">&#9670;&nbsp;</a></span>TAILQ_HEAD()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -287,60 +252,7 @@ void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="st
 
 </div>
 </div>
-<a id="a8a084ec42394ce54710223d2c8049d08"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8a084ec42394ce54710223d2c8049d08">&#9670;&nbsp;</a></span>TAILQ_HEAD() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">spdk_bdev::TAILQ_HEAD </td>
-          <td>(</td>
-          <td class="paramtype">spdk_bdev_desc&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>List of open descriptors for this block device. </p>
-
-</div>
-</div>
 <h2 class="groupheader">Field Documentation</h2>
-<a id="a0efed426cc96beb687a71c97dbbe1a12"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0efed426cc96beb687a71c97dbbe1a12">&#9670;&nbsp;</a></span>base_bdevs</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a>** spdk_bdev::base_bdevs</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>The array of block devices that this block device is built on top of (if any). </p>
-
-</div>
-</div>
-<a id="a05bf475bd3e7c3be1e45f33bd7f6d8ba"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a05bf475bd3e7c3be1e45f33bd7f6d8ba">&#9670;&nbsp;</a></span>claim_module</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">struct <a class="el" href="structspdk__bdev__module.html">spdk_bdev_module</a>* spdk_bdev::claim_module</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Pointer to the module that has claimed this bdev for purposes of creating virtual bdevs on top of it. </p>
-<p>Set to NULL if the bdev has not been claimed. </p>
-
-</div>
-</div>
 <a id="ab17e7679c64536f704ed4fe41555a70a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab17e7679c64536f704ed4fe41555a70a">&#9670;&nbsp;</a></span>name</h2>
 
@@ -387,38 +299,6 @@ void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="st
 </div><div class="memdoc">
 
 <p>Unique product name for this kind of block device. </p>
-
-</div>
-</div>
-<a id="a52b1c87fbb163a48a70b8f6905ca05e3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a52b1c87fbb163a48a70b8f6905ca05e3">&#9670;&nbsp;</a></span>reset_in_progress</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">struct <a class="el" href="structspdk__bdev__io.html">spdk_bdev_io</a>* spdk_bdev::reset_in_progress</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>points to a reset bdev_io if one is in progress. </p>
-
-</div>
-</div>
-<a id="a18a2d86f356772f201f52c204099b0f0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a18a2d86f356772f201f52c204099b0f0">&#9670;&nbsp;</a></span>unregister_cb</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">spdk_bdev_unregister_cb spdk_bdev::unregister_cb</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Callback function that will be called after bdev destruct is completed. </p>
 
 </div>
 </div>

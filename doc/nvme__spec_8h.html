@@ -677,6 +677,12 @@ Enumerations</h2></td></tr>
  }<tr class="memdesc:af3e4102cda177c51a05a6bb02fa62b87"><td class="mdescLeft">&#160;</td><td class="mdescRight">Identify Controller data sgls.supported values.  <a href="nvme__spec_8h.html#af3e4102cda177c51a05a6bb02fa62b87">More...</a><br /></td></tr>
 </td></tr>
 <tr class="separator:af3e4102cda177c51a05a6bb02fa62b87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c8c529f3ac77e55d511145044fee588"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme__spec_8h.html#a3c8c529f3ac77e55d511145044fee588">spdk_nvme_flush_broadcast</a> { <a class="el" href="nvme__spec_8h.html#a3c8c529f3ac77e55d511145044fee588ad5b2ad23765b3e2d4da92c1af193152a">SPDK_NVME_FLUSH_BROADCAST_NOT_INDICATED</a> = 0, 
+<a class="el" href="nvme__spec_8h.html#a3c8c529f3ac77e55d511145044fee588ab9d51c6d4fd5c6ace3d9118810acd439">SPDK_NVME_FLUSH_BROADCAST_NOT_SUPPORTED</a> = 2, 
+<a class="el" href="nvme__spec_8h.html#a3c8c529f3ac77e55d511145044fee588aad949659413cec230d2fd4529999ce14">SPDK_NVME_FLUSH_BROADCAST_SUPPORTED</a> = 3
+ }<tr class="memdesc:a3c8c529f3ac77e55d511145044fee588"><td class="mdescLeft">&#160;</td><td class="mdescRight">Identify Controller data vwc.flush_broadcast values.  <a href="nvme__spec_8h.html#a3c8c529f3ac77e55d511145044fee588">More...</a><br /></td></tr>
+</td></tr>
+<tr class="separator:a3c8c529f3ac77e55d511145044fee588"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1c06fbd66f7572c43c51e6f106215b8d"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme__spec_8h.html#a1c06fbd66f7572c43c51e6f106215b8d">spdk_nvme_dealloc_logical_block_read_value</a> { <a class="el" href="nvme__spec_8h.html#a1c06fbd66f7572c43c51e6f106215b8da84e7d1027736744032bc32b5f104eb2f">SPDK_NVME_DEALLOC_NOT_REPORTED</a> = 0, 
 <a class="el" href="nvme__spec_8h.html#a1c06fbd66f7572c43c51e6f106215b8da315a35b15cc20a03255f8e8e4d3396ba">SPDK_NVME_DEALLOC_READ_00</a> = 1, 
 <a class="el" href="nvme__spec_8h.html#a1c06fbd66f7572c43c51e6f106215b8dad8840e6a2c0c1c75b04e0c23ca829464">SPDK_NVME_DEALLOC_READ_FF</a> = 2
@@ -1256,6 +1262,30 @@ Functions</h2></td></tr>
 <tr><td class="fieldname"><a id="aeae5c5fb9df2c7a39215c71f9d9b4c25a8adf212ed4f7f1d01769a9be68683908"></a>SPDK_NVME_FEAT_SOFTWARE_PROGRESS_MARKER&#160;</td><td class="fielddoc"><p>cdw11 layout defined by <a class="el" href="unionspdk__nvme__feat__software__progress__marker.html">spdk_nvme_feat_software_progress_marker</a> </p>
 </td></tr>
 <tr><td class="fieldname"><a id="aeae5c5fb9df2c7a39215c71f9d9b4c25a3f79db4fe2b0055f0250f22078fd1f08"></a>SPDK_NVME_FEAT_HOST_IDENTIFIER&#160;</td><td class="fielddoc"><p>cdw11 layout defined by <a class="el" href="unionspdk__nvme__feat__host__identifier.html">spdk_nvme_feat_host_identifier</a> </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="a3c8c529f3ac77e55d511145044fee588"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c8c529f3ac77e55d511145044fee588">&#9670;&nbsp;</a></span>spdk_nvme_flush_broadcast</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="nvme__spec_8h.html#a3c8c529f3ac77e55d511145044fee588">spdk_nvme_flush_broadcast</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Identify Controller data vwc.flush_broadcast values. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a3c8c529f3ac77e55d511145044fee588ad5b2ad23765b3e2d4da92c1af193152a"></a>SPDK_NVME_FLUSH_BROADCAST_NOT_INDICATED&#160;</td><td class="fielddoc"><p>Support for NSID=FFFFFFFFh with Flush is not indicated. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a3c8c529f3ac77e55d511145044fee588ab9d51c6d4fd5c6ace3d9118810acd439"></a>SPDK_NVME_FLUSH_BROADCAST_NOT_SUPPORTED&#160;</td><td class="fielddoc"><p>Flush does not support NSID set to FFFFFFFFh. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a3c8c529f3ac77e55d511145044fee588aad949659413cec230d2fd4529999ce14"></a>SPDK_NVME_FLUSH_BROADCAST_SUPPORTED&#160;</td><td class="fielddoc"><p>Flush supports NSID set to FFFFFFFFh. </p>
 </td></tr>
 </table>
 

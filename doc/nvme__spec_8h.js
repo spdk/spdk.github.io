@@ -224,6 +224,11 @@ var nvme__spec_8h =
       [ "SPDK_NVME_FEAT_HOST_RESERVE_MASK", "nvme__spec_8h.html#aeae5c5fb9df2c7a39215c71f9d9b4c25a2005df35e84b53a303fc7e420facb6a7", null ],
       [ "SPDK_NVME_FEAT_HOST_RESERVE_PERSIST", "nvme__spec_8h.html#aeae5c5fb9df2c7a39215c71f9d9b4c25a591bf270723032d940b8ffdf38aac99e", null ]
     ] ],
+    [ "spdk_nvme_flush_broadcast", "nvme__spec_8h.html#a3c8c529f3ac77e55d511145044fee588", [
+      [ "SPDK_NVME_FLUSH_BROADCAST_NOT_INDICATED", "nvme__spec_8h.html#a3c8c529f3ac77e55d511145044fee588ad5b2ad23765b3e2d4da92c1af193152a", null ],
+      [ "SPDK_NVME_FLUSH_BROADCAST_NOT_SUPPORTED", "nvme__spec_8h.html#a3c8c529f3ac77e55d511145044fee588ab9d51c6d4fd5c6ace3d9118810acd439", null ],
+      [ "SPDK_NVME_FLUSH_BROADCAST_SUPPORTED", "nvme__spec_8h.html#a3c8c529f3ac77e55d511145044fee588aad949659413cec230d2fd4529999ce14", null ]
+    ] ],
     [ "spdk_nvme_fw_commit_action", "nvme__spec_8h.html#ae4da1c1bec22eb22d1af72bbf37af36e", [
       [ "SPDK_NVME_FW_COMMIT_REPLACE_IMG", "nvme__spec_8h.html#ae4da1c1bec22eb22d1af72bbf37af36eaf8349fa33534c363595859493747e93f", null ],
       [ "SPDK_NVME_FW_COMMIT_REPLACE_AND_ENABLE_IMG", "nvme__spec_8h.html#ae4da1c1bec22eb22d1af72bbf37af36ea85655a09e0cae5f157d3b005ba1f4b6f", null ],

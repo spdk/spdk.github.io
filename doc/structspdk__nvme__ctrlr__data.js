@@ -39,6 +39,7 @@ var structspdk__nvme__ctrlr__data =
     [ "erase_all_ns", "structspdk__nvme__ctrlr__data.html#a9f2cd726e2266f7deb34bb31b677275d", null ],
     [ "fguid", "structspdk__nvme__ctrlr__data.html#a2efd342c8893a89c25fb2cf3b4e4776e", null ],
     [ "firmware", "structspdk__nvme__ctrlr__data.html#a3b7db9ff0ff67cf9a56fa162f5dc3939", null ],
+    [ "flush_broadcast", "structspdk__nvme__ctrlr__data.html#ab6fdd6546131a6f5d6d3f1e881e67069", null ],
     [ "fna", "structspdk__nvme__ctrlr__data.html#a870fa987a222ae2f2b4611e622152c01", null ],
     [ "format", "structspdk__nvme__ctrlr__data.html#afeb6eb5c1f8fa3ea588c54a9d5a7ea05", null ],
     [ "format_all_ns", "structspdk__nvme__ctrlr__data.html#a712df3dba676e976709e41dd77bf1118", null ],

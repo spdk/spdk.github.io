@@ -14,7 +14,7 @@ var searchData=
   ['reserved3',['reserved3',['../structspdk__nvme__ns__data.html#a2c4901dac069f03def8eba3cde6625e0',1,'spdk_nvme_ns_data']]],
   ['reserved6',['reserved6',['../structspdk__ocssd__geometry__data.html#ae1670174f6eebb2c7e2fa95e46c9d524',1,'spdk_ocssd_geometry_data']]],
   ['reset',['reset',['../unionspdk__nvme__intel__feat__reset__timed__workload__counters.html#a74b5ac6a6ea150d582cc269f6987757b',1,'spdk_nvme_intel_feat_reset_timed_workload_counters']]],
-  ['reset_5fin_5fprogress',['reset_in_progress',['../structspdk__bdev.html#a52b1c87fbb163a48a70b8f6905ca05e3',1,'spdk_bdev']]],
+  ['reset_5fin_5fprogress',['reset_in_progress',['../structspdk__bdev_1_1____bdev__internal__fields.html#ae3603bee677af4d8eaafffce32e0deea',1,'spdk_bdev::__bdev_internal_fields']]],
   ['rnd_5fwrite',['rnd_write',['../structspdk__ocssd__chunk__information.html#a6f51ba536bcbc422ef7092b477b4e914',1,'spdk_ocssd_chunk_information']]],
   ['rp',['rp',['../structspdk__nvme__ns__data.html#a4133aa654a2f1e5af881d5293ba965cf',1,'spdk_nvme_ns_data']]],
   ['rpmbs',['rpmbs',['../structspdk__nvme__ctrlr__data.html#a0acac16808095dc753cf67b1e42e19c2',1,'spdk_nvme_ctrlr_data']]],

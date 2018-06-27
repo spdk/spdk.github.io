@@ -25,7 +25,7 @@ var searchData=
   ['ms',['ms',['../structspdk__nvme__ns__data.html#ae71d2fb221f55dd1bc0981e94e67f49d',1,'spdk_nvme_ns_data']]],
   ['msdbd',['msdbd',['../structspdk__nvme__ctrlr__data.html#a7619e3c0063002fc3820d537b932ec82',1,'spdk_nvme_ctrlr_data']]],
   ['mtfa',['mtfa',['../structspdk__nvme__ctrlr__data.html#a33d743e0631e477035fdaec206d2964b',1,'spdk_nvme_ctrlr_data']]],
-  ['mutex',['mutex',['../structspdk__bdev.html#a789560198e85f1643f67c59825fdb577',1,'spdk_bdev']]],
+  ['mutex',['mutex',['../structspdk__bdev_1_1____bdev__internal__fields.html#afbc0b1652cb9968462a77765a081ef32',1,'spdk_bdev::__bdev_internal_fields']]],
   ['mw_5fcunits',['mw_cunits',['../structspdk__ocssd__geometry__data.html#af02812ac810e3da324a4ff8029f6d045',1,'spdk_ocssd_geometry_data']]],
   ['mxtmt',['mxtmt',['../structspdk__nvme__ctrlr__data.html#a25cabf290433b1b9b13a1a604ca12f58',1,'spdk_nvme_ctrlr_data']]]
 ];

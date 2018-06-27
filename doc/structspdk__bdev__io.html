@@ -147,14 +147,15 @@ Collaboration diagram for spdk_bdev_io:</div>
 <div class="dyncontent">
 <div class="center"><img src="structspdk__bdev__io__coll__graph.png" border="0" usemap="#spdk__bdev__io_coll__map" alt="Collaboration graph"/></div>
 <map name="spdk__bdev__io_coll__map" id="spdk__bdev__io_coll__map">
-<area shape="rect" id="node5" href="structspdk__bdev__io_1_1____bdev__io__internal__fields.html" title="Fields that are used internally by the bdev subsystem. " alt="" coords="125,288,291,329"/>
-<area shape="rect" id="node6" href="structspdk__bdev.html" title="spdk_bdev" alt="" coords="517,295,609,322"/>
-<area shape="rect" id="node2" href="structspdk__nvme__cmd.html" title="spdk_nvme_cmd" alt="" coords="37,95,169,121"/>
-<area shape="rect" id="node3" href="structspdk__nvme__sgl__descriptor.html" title="spdk_nvme_sgl_descriptor" alt="" coords="5,5,200,32"/>
-<area shape="rect" id="node4" href="structspdk__io__channel.html" title="Represents a per&#45;thread channel for accessing an I/O device. " alt="" coords="247,95,377,121"/>
-<area shape="rect" id="node9" href="structspdk__bdev__fn__table.html" title="Function table for a block device backend. " alt="" coords="804,184,956,211"/>
-<area shape="rect" id="node7" href="structspdk__bdev__module.html" title="Block device module. " alt="" coords="631,184,779,211"/>
-<area shape="rect" id="node8" href="structspdk__uuid.html" title="spdk_uuid" alt="" coords="519,184,607,211"/>
+<area shape="rect" id="node5" href="structspdk__bdev__io_1_1____bdev__io__internal__fields.html" title="Fields that are used internally by the bdev subsystem. " alt="" coords="929,81,1095,122"/>
+<area shape="rect" id="node9" href="structspdk__bdev_1_1____bdev__internal__fields.html" title="Fields that are used internally by the bdev subsystem. " alt="" coords="911,155,1113,197"/>
+<area shape="rect" id="node2" href="structspdk__nvme__cmd.html" title="spdk_nvme_cmd" alt="" coords="280,153,412,180"/>
+<area shape="rect" id="node3" href="structspdk__nvme__sgl__descriptor.html" title="spdk_nvme_sgl_descriptor" alt="" coords="5,153,200,180"/>
+<area shape="rect" id="node4" href="structspdk__io__channel.html" title="Represents a per&#45;thread channel for accessing an I/O device. " alt="" coords="281,53,411,80"/>
+<area shape="rect" id="node10" href="structspdk__bdev__fn__table.html" title="Function table for a block device backend. " alt="" coords="735,5,887,32"/>
+<area shape="rect" id="node6" href="structspdk__bdev.html" title="spdk_bdev" alt="" coords="1243,201,1335,228"/>
+<area shape="rect" id="node7" href="structspdk__bdev__module.html" title="Block device module. " alt="" coords="563,279,711,305"/>
+<area shape="rect" id="node8" href="structspdk__uuid.html" title="spdk_uuid" alt="" coords="968,363,1056,389"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -166,9 +167,6 @@ Data Structures</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:abe399f82f81791e0573bef08b19eafee"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev__io.html#abe399f82f81791e0573bef08b19eafee">TAILQ_ENTRY</a> (<a class="el" href="structspdk__bdev__io.html">spdk_bdev_io</a>) link</td></tr>
-<tr class="memdesc:abe399f82f81791e0573bef08b19eafee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Member used for linking child I/Os together.  <a href="#abe399f82f81791e0573bef08b19eafee">More...</a><br /></td></tr>
-<tr class="separator:abe399f82f81791e0573bef08b19eafee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4c93fa89b3cc9789d2e6d7d7e2246e35"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev__io.html#a4c93fa89b3cc9789d2e6d7d7e2246e35">TAILQ_ENTRY</a> (<a class="el" href="structspdk__bdev__io.html">spdk_bdev_io</a>) module_link</td></tr>
 <tr class="memdesc:a4c93fa89b3cc9789d2e6d7d7e2246e35"><td class="mdescLeft">&#160;</td><td class="mdescRight">It may be used by modules to put the bdev_io into its own list.  <a href="#a4c93fa89b3cc9789d2e6d7d7e2246e35">More...</a><br /></td></tr>
 <tr class="separator:a4c93fa89b3cc9789d2e6d7d7e2246e35"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -178,109 +176,70 @@ Data Fields</h2></td></tr>
 <tr class="memitem:a096518d708e224b91e03897b79431afd"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev__io.html#a096518d708e224b91e03897b79431afd">bdev</a></td></tr>
 <tr class="memdesc:a096518d708e224b91e03897b79431afd"><td class="mdescLeft">&#160;</td><td class="mdescRight">The block device that this I/O belongs to.  <a href="#a096518d708e224b91e03897b79431afd">More...</a><br /></td></tr>
 <tr class="separator:a096518d708e224b91e03897b79431afd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac7d69354feec8c93572fbc81676ea6b2"><td class="memItemLeft" ><a id="ac7d69354feec8c93572fbc81676ea6b2"></a>
-union {</td></tr>
-<tr class="memitem:a6971ef6c8e89515e05e3a6a881bfefa2"><td class="memItemLeft" >
-&#160;&#160;&#160;struct {</td></tr>
-<tr class="memitem:a4a0b2c34e96442c2f40745d7d42c8d10"><td class="memItemLeft" >
-&#160;&#160;&#160;&#160;&#160;&#160;uint8_t&#160;&#160;&#160;<a class="el" href="structspdk__bdev__io.html#aa21006cfcc0b94a8eb0fedbcc014546c">sct</a></td></tr>
-<tr class="memdesc:a4a0b2c34e96442c2f40745d7d42c8d10"><td class="mdescLeft">&#160;</td><td class="mdescRight">NVMe status code type. <br /></td></tr>
-<tr class="separator:a4a0b2c34e96442c2f40745d7d42c8d10"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af7d1d12517438e0ae5d0dacaefc4a9e6"><td class="memItemLeft" >
-&#160;&#160;&#160;&#160;&#160;&#160;uint8_t&#160;&#160;&#160;<a class="el" href="structspdk__bdev__io.html#aac4aa88cb3e16105ba3ad5bb43e7e0a8">sc</a></td></tr>
-<tr class="memdesc:af7d1d12517438e0ae5d0dacaefc4a9e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">NVMe status code. <br /></td></tr>
-<tr class="separator:af7d1d12517438e0ae5d0dacaefc4a9e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6971ef6c8e89515e05e3a6a881bfefa2"><td class="memItemLeft" valign="top">&#160;&#160;&#160;}&#160;&#160;&#160;<a class="el" href="structspdk__bdev__io.html#a8460652f706f74c687d05f3179c0aeec">nvme</a></td></tr>
-<tr class="memdesc:a6971ef6c8e89515e05e3a6a881bfefa2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Only valid when status is SPDK_BDEV_IO_STATUS_NVME_ERROR. <br /></td></tr>
-<tr class="separator:a6971ef6c8e89515e05e3a6a881bfefa2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a05d7e1503e86fe1982db6016f6466321"><td class="memItemLeft" >
-&#160;&#160;&#160;struct {</td></tr>
-<tr class="memitem:ae4cbdf09b37a594c02b84ade2fb09ed4"><td class="memItemLeft" >
-&#160;&#160;&#160;&#160;&#160;&#160;uint8_t&#160;&#160;&#160;<a class="el" href="structspdk__bdev__io.html#aac4aa88cb3e16105ba3ad5bb43e7e0a8">sc</a></td></tr>
-<tr class="memdesc:ae4cbdf09b37a594c02b84ade2fb09ed4"><td class="mdescLeft">&#160;</td><td class="mdescRight">SCSI status code. <br /></td></tr>
-<tr class="separator:ae4cbdf09b37a594c02b84ade2fb09ed4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a427a8ffa8fadae9d11c1a3ca510257d1"><td class="memItemLeft" >
-&#160;&#160;&#160;&#160;&#160;&#160;uint8_t&#160;&#160;&#160;<a class="el" href="structspdk__bdev__io.html#ad34f7f9441b1fc314308b081ef5f643c">sk</a></td></tr>
-<tr class="memdesc:a427a8ffa8fadae9d11c1a3ca510257d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">SCSI sense key. <br /></td></tr>
-<tr class="separator:a427a8ffa8fadae9d11c1a3ca510257d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8bc408ca201379952134b1c639f7e9a1"><td class="memItemLeft" >
-&#160;&#160;&#160;&#160;&#160;&#160;uint8_t&#160;&#160;&#160;<a class="el" href="structspdk__bdev__io.html#a60b793ebd4c2482663680729f9a34cf3">asc</a></td></tr>
-<tr class="memdesc:a8bc408ca201379952134b1c639f7e9a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">SCSI additional sense code. <br /></td></tr>
-<tr class="separator:a8bc408ca201379952134b1c639f7e9a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4c684fbb4fb616fb872a162788fd24e2"><td class="memItemLeft" >
-&#160;&#160;&#160;&#160;&#160;&#160;uint8_t&#160;&#160;&#160;<a class="el" href="structspdk__bdev__io.html#aa01c5d84fde2f20d21586e2b09d216b5">ascq</a></td></tr>
-<tr class="memdesc:a4c684fbb4fb616fb872a162788fd24e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">SCSI additional sense code qualifier. <br /></td></tr>
-<tr class="separator:a4c684fbb4fb616fb872a162788fd24e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a05d7e1503e86fe1982db6016f6466321"><td class="memItemLeft" valign="top">&#160;&#160;&#160;}&#160;&#160;&#160;<a class="el" href="structspdk__bdev__io.html#aecf983a5add0a025491cd417fe8c482e">scsi</a></td></tr>
-<tr class="memdesc:a05d7e1503e86fe1982db6016f6466321"><td class="mdescLeft">&#160;</td><td class="mdescRight">Only valid when status is SPDK_BDEV_IO_STATUS_SCSI_ERROR. <br /></td></tr>
-<tr class="separator:a05d7e1503e86fe1982db6016f6466321"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac7d69354feec8c93572fbc81676ea6b2"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev__io.html#ac7d69354feec8c93572fbc81676ea6b2">error</a></td></tr>
-<tr class="memdesc:ac7d69354feec8c93572fbc81676ea6b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Error information from a device. <br /></td></tr>
-<tr class="separator:ac7d69354feec8c93572fbc81676ea6b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4105d5a8419a66a6620d690da5649fcb"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev__io.html#a4105d5a8419a66a6620d690da5649fcb">type</a></td></tr>
 <tr class="memdesc:a4105d5a8419a66a6620d690da5649fcb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enumerated value representing the I/O type.  <a href="#a4105d5a8419a66a6620d690da5649fcb">More...</a><br /></td></tr>
 <tr class="separator:a4105d5a8419a66a6620d690da5649fcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af65b58cc98756e78ced0deb7015f8de7"><td class="memItemLeft" ><a id="af65b58cc98756e78ced0deb7015f8de7"></a>
+<tr class="memitem:a529af99d06d12cec343f6aeb03beced2"><td class="memItemLeft" ><a id="a529af99d06d12cec343f6aeb03beced2"></a>
 union {</td></tr>
-<tr class="memitem:a684dcdf2c58defacad45f2ce76493ee9"><td class="memItemLeft" >
+<tr class="memitem:a6e4a64cc4d862cf115451766c8e4f890"><td class="memItemLeft" >
 &#160;&#160;&#160;struct {</td></tr>
-<tr class="memitem:ae326bc4516301535e1074f01f54c6d49"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;struct iovec&#160;&#160;&#160;<a class="el" href="structspdk__bdev__io.html#a0429238075907c6f637249dda31f3235">iov</a></td></tr>
-<tr class="memdesc:ae326bc4516301535e1074f01f54c6d49"><td class="mdescLeft">&#160;</td><td class="mdescRight">For basic IO case, use our own iovec element.  <a href="#ae326bc4516301535e1074f01f54c6d49">More...</a><br /></td></tr>
-<tr class="separator:ae326bc4516301535e1074f01f54c6d49"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5f26f6aaf3a2a69327bd4c399e2d02ee"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;struct iovec *&#160;&#160;&#160;<a class="el" href="structspdk__bdev__io.html#ab2d3a6a004554c66434a31243030b2da">iovs</a></td></tr>
-<tr class="memdesc:a5f26f6aaf3a2a69327bd4c399e2d02ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">For SG buffer cases, array of iovecs to transfer.  <a href="#a5f26f6aaf3a2a69327bd4c399e2d02ee">More...</a><br /></td></tr>
-<tr class="separator:a5f26f6aaf3a2a69327bd4c399e2d02ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a672497f696afcdda26866024a1235b8f"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;int&#160;&#160;&#160;<a class="el" href="structspdk__bdev__io.html#aa9024a5714c4c242271cdcbb34b45a91">iovcnt</a></td></tr>
-<tr class="memdesc:a672497f696afcdda26866024a1235b8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">For SG buffer cases, number of iovecs in iovec array.  <a href="#a672497f696afcdda26866024a1235b8f">More...</a><br /></td></tr>
-<tr class="separator:a672497f696afcdda26866024a1235b8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abac3d99cd7ef8a71a9e0abf68743650c"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;uint64_t&#160;&#160;&#160;<a class="el" href="structspdk__bdev__io.html#afafe443c58056c9c246fd3c32eaa4ece">num_blocks</a></td></tr>
-<tr class="memdesc:abac3d99cd7ef8a71a9e0abf68743650c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Total size of data to be transferred.  <a href="#abac3d99cd7ef8a71a9e0abf68743650c">More...</a><br /></td></tr>
-<tr class="separator:abac3d99cd7ef8a71a9e0abf68743650c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab93e5efa52ae00d9b1853d6f46cfd545"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;uint64_t&#160;&#160;&#160;<a class="el" href="structspdk__bdev__io.html#ab7ce7385dd41efaffdc0ca4dea2df6a8">offset_blocks</a></td></tr>
-<tr class="memdesc:ab93e5efa52ae00d9b1853d6f46cfd545"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starting offset (in blocks) of the bdev for this I/O.  <a href="#ab93e5efa52ae00d9b1853d6f46cfd545">More...</a><br /></td></tr>
-<tr class="separator:ab93e5efa52ae00d9b1853d6f46cfd545"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab6e212c77723faf7b7f197a3743927c6"><td class="memItemLeft" >
+<tr class="memitem:abab6467dbfd434d8cb3f2f8961ff7805"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;struct iovec&#160;&#160;&#160;<a class="el" href="structspdk__bdev__io.html#a0429238075907c6f637249dda31f3235">iov</a></td></tr>
+<tr class="memdesc:abab6467dbfd434d8cb3f2f8961ff7805"><td class="mdescLeft">&#160;</td><td class="mdescRight">For basic IO case, use our own iovec element.  <a href="#abab6467dbfd434d8cb3f2f8961ff7805">More...</a><br /></td></tr>
+<tr class="separator:abab6467dbfd434d8cb3f2f8961ff7805"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae26b164b2d88fc332af2b27fbd5becdf"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;struct iovec *&#160;&#160;&#160;<a class="el" href="structspdk__bdev__io.html#ab2d3a6a004554c66434a31243030b2da">iovs</a></td></tr>
+<tr class="memdesc:ae26b164b2d88fc332af2b27fbd5becdf"><td class="mdescLeft">&#160;</td><td class="mdescRight">For SG buffer cases, array of iovecs to transfer.  <a href="#ae26b164b2d88fc332af2b27fbd5becdf">More...</a><br /></td></tr>
+<tr class="separator:ae26b164b2d88fc332af2b27fbd5becdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a425495e59ceb8d8d41358359c4f2f8d1"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;int&#160;&#160;&#160;<a class="el" href="structspdk__bdev__io.html#aa9024a5714c4c242271cdcbb34b45a91">iovcnt</a></td></tr>
+<tr class="memdesc:a425495e59ceb8d8d41358359c4f2f8d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">For SG buffer cases, number of iovecs in iovec array.  <a href="#a425495e59ceb8d8d41358359c4f2f8d1">More...</a><br /></td></tr>
+<tr class="separator:a425495e59ceb8d8d41358359c4f2f8d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d8e36e1d2fa0b710b4ce7274efece6b"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;uint64_t&#160;&#160;&#160;<a class="el" href="structspdk__bdev__io.html#afafe443c58056c9c246fd3c32eaa4ece">num_blocks</a></td></tr>
+<tr class="memdesc:a6d8e36e1d2fa0b710b4ce7274efece6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Total size of data to be transferred.  <a href="#a6d8e36e1d2fa0b710b4ce7274efece6b">More...</a><br /></td></tr>
+<tr class="separator:a6d8e36e1d2fa0b710b4ce7274efece6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac731cbbd770fe21ec22a62664051aae9"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;uint64_t&#160;&#160;&#160;<a class="el" href="structspdk__bdev__io.html#ab7ce7385dd41efaffdc0ca4dea2df6a8">offset_blocks</a></td></tr>
+<tr class="memdesc:ac731cbbd770fe21ec22a62664051aae9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starting offset (in blocks) of the bdev for this I/O.  <a href="#ac731cbbd770fe21ec22a62664051aae9">More...</a><br /></td></tr>
+<tr class="separator:ac731cbbd770fe21ec22a62664051aae9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a312816b884344f015e509fef18d6b7d0"><td class="memItemLeft" >
 &#160;&#160;&#160;&#160;&#160;&#160;<a class="el" href="bdev_8h.html#a0c5602dfd313f90032dd91683b9663e3">spdk_bdev_io_completion_cb</a>&#160;&#160;&#160;<a class="el" href="structspdk__bdev__io.html#a35905e31d0aa54cd00dbb34e7d56656a">stored_user_cb</a></td></tr>
-<tr class="memdesc:ab6e212c77723faf7b7f197a3743927c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">stored user callback in case we split the I/O and use a temporary callback <br /></td></tr>
-<tr class="separator:ab6e212c77723faf7b7f197a3743927c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5a893ee2b2e7befa7d9b5d484b73bf90"><td class="memItemLeft" >
+<tr class="memdesc:a312816b884344f015e509fef18d6b7d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">stored user callback in case we split the I/O and use a temporary callback <br /></td></tr>
+<tr class="separator:a312816b884344f015e509fef18d6b7d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71d325a973dcde2d4e73f275b9736c23"><td class="memItemLeft" >
 &#160;&#160;&#160;&#160;&#160;&#160;uint64_t&#160;&#160;&#160;<a class="el" href="structspdk__bdev__io.html#a0726c74c711cb6551f6f8c9a33100af3">split_remaining_num_blocks</a></td></tr>
-<tr class="memdesc:a5a893ee2b2e7befa7d9b5d484b73bf90"><td class="mdescLeft">&#160;</td><td class="mdescRight">number of blocks remaining in a split i/o <br /></td></tr>
-<tr class="separator:a5a893ee2b2e7befa7d9b5d484b73bf90"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a293a69bfe3c9a5afcbbd1aa741a6d0aa"><td class="memItemLeft" >
+<tr class="memdesc:a71d325a973dcde2d4e73f275b9736c23"><td class="mdescLeft">&#160;</td><td class="mdescRight">number of blocks remaining in a split i/o <br /></td></tr>
+<tr class="separator:a71d325a973dcde2d4e73f275b9736c23"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37bc5ca6c4ffd564ec353ae5a158bf58"><td class="memItemLeft" >
 &#160;&#160;&#160;&#160;&#160;&#160;uint64_t&#160;&#160;&#160;<a class="el" href="structspdk__bdev__io.html#ac721975c3205db6df200604c5a2b5243">split_current_offset_blocks</a></td></tr>
-<tr class="memdesc:a293a69bfe3c9a5afcbbd1aa741a6d0aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">current offset of the split I/O in the bdev <br /></td></tr>
-<tr class="separator:a293a69bfe3c9a5afcbbd1aa741a6d0aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a684dcdf2c58defacad45f2ce76493ee9"><td class="memItemLeft" valign="top">&#160;&#160;&#160;}&#160;&#160;&#160;<b>bdev</b></td></tr>
-<tr class="separator:a684dcdf2c58defacad45f2ce76493ee9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a23d66534a8531790629f96ced54f643b"><td class="memItemLeft" >
+<tr class="memdesc:a37bc5ca6c4ffd564ec353ae5a158bf58"><td class="mdescLeft">&#160;</td><td class="mdescRight">current offset of the split I/O in the bdev <br /></td></tr>
+<tr class="separator:a37bc5ca6c4ffd564ec353ae5a158bf58"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e4a64cc4d862cf115451766c8e4f890"><td class="memItemLeft" valign="top">&#160;&#160;&#160;}&#160;&#160;&#160;<b>bdev</b></td></tr>
+<tr class="separator:a6e4a64cc4d862cf115451766c8e4f890"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8737ecb9e4ddccc64a6cf6446cdf5626"><td class="memItemLeft" >
 &#160;&#160;&#160;struct {</td></tr>
-<tr class="memitem:ab82ac6fe7b740c6ed09d4259131de285"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *&#160;&#160;&#160;<a class="el" href="structspdk__bdev__io.html#ae513a78b2095fbd1d0674fa11d26ef2b">ch_ref</a></td></tr>
-<tr class="memdesc:ab82ac6fe7b740c6ed09d4259131de285"><td class="mdescLeft">&#160;</td><td class="mdescRight">Channel reference held while messages for this reset are in progress.  <a href="#ab82ac6fe7b740c6ed09d4259131de285">More...</a><br /></td></tr>
-<tr class="separator:ab82ac6fe7b740c6ed09d4259131de285"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a23d66534a8531790629f96ced54f643b"><td class="memItemLeft" valign="top">&#160;&#160;&#160;}&#160;&#160;&#160;<b>reset</b></td></tr>
-<tr class="separator:a23d66534a8531790629f96ced54f643b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6767abc04b9e8720686c6fc6924b5cbf"><td class="memItemLeft" >
+<tr class="memitem:ae3d16ed976208504f5c029a4d705edde"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *&#160;&#160;&#160;<a class="el" href="structspdk__bdev__io.html#ae513a78b2095fbd1d0674fa11d26ef2b">ch_ref</a></td></tr>
+<tr class="memdesc:ae3d16ed976208504f5c029a4d705edde"><td class="mdescLeft">&#160;</td><td class="mdescRight">Channel reference held while messages for this reset are in progress.  <a href="#ae3d16ed976208504f5c029a4d705edde">More...</a><br /></td></tr>
+<tr class="separator:ae3d16ed976208504f5c029a4d705edde"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8737ecb9e4ddccc64a6cf6446cdf5626"><td class="memItemLeft" valign="top">&#160;&#160;&#160;}&#160;&#160;&#160;<b>reset</b></td></tr>
+<tr class="separator:a8737ecb9e4ddccc64a6cf6446cdf5626"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a338c992cf0db08dc068b68fa7a910ea7"><td class="memItemLeft" >
 &#160;&#160;&#160;struct {</td></tr>
-<tr class="memitem:a268b1e07f501e6a7377fab92a53fd816"><td class="memItemLeft" >
+<tr class="memitem:a28b1f3d6a996fed28c810ec12e04ad7e"><td class="memItemLeft" >
 &#160;&#160;&#160;&#160;&#160;&#160;struct <a class="el" href="structspdk__nvme__cmd.html">spdk_nvme_cmd</a>&#160;&#160;&#160;<b>cmd</b></td></tr>
-<tr class="separator:a268b1e07f501e6a7377fab92a53fd816"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae32946c780ceb28e26775e406c26b032"><td class="memItemLeft" >
+<tr class="separator:a28b1f3d6a996fed28c810ec12e04ad7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39a5157ad031a49d9af567f2066c87e4"><td class="memItemLeft" >
 &#160;&#160;&#160;&#160;&#160;&#160;void *&#160;&#160;&#160;<b>buf</b></td></tr>
-<tr class="separator:ae32946c780ceb28e26775e406c26b032"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a260c0dbf5e732ac2f0f5dab8e22529cf"><td class="memItemLeft" >
+<tr class="separator:a39a5157ad031a49d9af567f2066c87e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0167248c28ef43cfe3b734cefc23b52"><td class="memItemLeft" >
 &#160;&#160;&#160;&#160;&#160;&#160;size_t&#160;&#160;&#160;<b>nbytes</b></td></tr>
-<tr class="separator:a260c0dbf5e732ac2f0f5dab8e22529cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0d48d380e6377fa502f43dbc5a986fbe"><td class="memItemLeft" >
+<tr class="separator:ab0167248c28ef43cfe3b734cefc23b52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea09a296ab3f58d817a3053c41450898"><td class="memItemLeft" >
 &#160;&#160;&#160;&#160;&#160;&#160;void *&#160;&#160;&#160;<b>md_buf</b></td></tr>
-<tr class="separator:a0d48d380e6377fa502f43dbc5a986fbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aae83ac299f79a117993b9c2c2c26539e"><td class="memItemLeft" >
+<tr class="separator:aea09a296ab3f58d817a3053c41450898"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf36ea41b91e1a673161a39d405171f3"><td class="memItemLeft" >
 &#160;&#160;&#160;&#160;&#160;&#160;size_t&#160;&#160;&#160;<b>md_len</b></td></tr>
-<tr class="separator:aae83ac299f79a117993b9c2c2c26539e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6767abc04b9e8720686c6fc6924b5cbf"><td class="memItemLeft" valign="top">&#160;&#160;&#160;}&#160;&#160;&#160;<b>nvme_passthru</b></td></tr>
-<tr class="separator:a6767abc04b9e8720686c6fc6924b5cbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af65b58cc98756e78ced0deb7015f8de7"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><b>u</b></td></tr>
-<tr class="separator:af65b58cc98756e78ced0deb7015f8de7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:acf36ea41b91e1a673161a39d405171f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a338c992cf0db08dc068b68fa7a910ea7"><td class="memItemLeft" valign="top">&#160;&#160;&#160;}&#160;&#160;&#160;<b>nvme_passthru</b></td></tr>
+<tr class="separator:a338c992cf0db08dc068b68fa7a910ea7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a529af99d06d12cec343f6aeb03beced2"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><b>u</b></td></tr>
+<tr class="separator:a529af99d06d12cec343f6aeb03beced2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7cad710441c3ea7b10d62a464b9db854"><td class="memItemLeft" align="right" valign="top"><a id="a7cad710441c3ea7b10d62a464b9db854"></a>
 struct <a class="el" href="structspdk__bdev__io_1_1____bdev__io__internal__fields.html">spdk_bdev_io::__bdev_io_internal_fields</a>&#160;</td><td class="memItemRight" valign="bottom"><b>internal</b></td></tr>
 <tr class="separator:a7cad710441c3ea7b10d62a464b9db854"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -290,28 +249,8 @@ uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="s
 <tr class="separator:ab1b334589d89261c8e0242fee614caa7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="abe399f82f81791e0573bef08b19eafee"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abe399f82f81791e0573bef08b19eafee">&#9670;&nbsp;</a></span>TAILQ_ENTRY() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">spdk_bdev_io::TAILQ_ENTRY </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structspdk__bdev__io.html">spdk_bdev_io</a>&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Member used for linking child I/Os together. </p>
-
-</div>
-</div>
 <a id="a4c93fa89b3cc9789d2e6d7d7e2246e35"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4c93fa89b3cc9789d2e6d7d7e2246e35">&#9670;&nbsp;</a></span>TAILQ_ENTRY() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a4c93fa89b3cc9789d2e6d7d7e2246e35">&#9670;&nbsp;</a></span>TAILQ_ENTRY()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -440,23 +379,6 @@ uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="s
 </div><div class="memdoc">
 
 <p>Starting offset (in blocks) of the bdev for this I/O. </p>
-
-</div>
-</div>
-<a id="aac4aa88cb3e16105ba3ad5bb43e7e0a8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aac4aa88cb3e16105ba3ad5bb43e7e0a8">&#9670;&nbsp;</a></span>sc</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint8_t spdk_bdev_io::sc</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>NVMe status code. </p>
-<p>SCSI status code. </p>
 
 </div>
 </div>

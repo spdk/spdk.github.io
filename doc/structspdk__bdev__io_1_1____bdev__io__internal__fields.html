@@ -149,21 +149,63 @@ Collaboration diagram for spdk_bdev_io::__bdev_io_internal_fields:</div>
 <div class="dyncontent">
 <div class="center"><img src="structspdk__bdev__io_1_1____bdev__io__internal__fields__coll__graph.png" border="0" usemap="#spdk__bdev__io_1_1____bdev__io__internal__fields_coll__map" alt="Collaboration graph"/></div>
 <map name="spdk__bdev__io_1_1____bdev__io__internal__fields_coll__map" id="spdk__bdev__io_1_1____bdev__io__internal__fields_coll__map">
-<area shape="rect" id="node3" href="structspdk__bdev__io.html" title="spdk_bdev_io" alt="" coords="142,199,253,225"/>
+<area shape="rect" id="node3" href="structspdk__bdev__io.html" title="spdk_bdev_io" alt="" coords="163,199,274,225"/>
 <area shape="rect" id="node2" href="structspdk__io__channel.html" title="Represents a per&#45;thread channel for accessing an I/O device. " alt="" coords="88,5,219,32"/>
-<area shape="rect" id="node5" href="structspdk__bdev.html" title="spdk_bdev" alt="" coords="151,289,243,316"/>
 <area shape="rect" id="node4" href="structspdk__nvme__cmd.html" title="spdk_nvme_cmd" alt="" coords="289,102,421,129"/>
+<area shape="rect" id="node5" href="structspdk__bdev.html" title="spdk_bdev" alt="" coords="445,102,537,129"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:aca9aa23b8536ee8674cbcf3c906bcc2e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev__io_1_1____bdev__io__internal__fields.html#aca9aa23b8536ee8674cbcf3c906bcc2e">TAILQ_ENTRY</a> (<a class="el" href="structspdk__bdev__io.html">spdk_bdev_io</a>) link</td></tr>
+<tr class="memdesc:aca9aa23b8536ee8674cbcf3c906bcc2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Member used for linking child I/Os together.  <a href="#aca9aa23b8536ee8674cbcf3c906bcc2e">More...</a><br /></td></tr>
+<tr class="separator:aca9aa23b8536ee8674cbcf3c906bcc2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa01c2efabe47df9c745086736f6f64ef"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev__io_1_1____bdev__io__internal__fields.html#aa01c2efabe47df9c745086736f6f64ef">STAILQ_ENTRY</a> (<a class="el" href="structspdk__bdev__io.html">spdk_bdev_io</a>) buf_link</td></tr>
 <tr class="memdesc:aa01c2efabe47df9c745086736f6f64ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Entry to the list need_buf of struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a>.  <a href="#aa01c2efabe47df9c745086736f6f64ef">More...</a><br /></td></tr>
 <tr class="separator:aa01c2efabe47df9c745086736f6f64ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
+<tr class="memitem:a9d8164ef1b3235d9d895bddc4c0c84be"><td class="memItemLeft" ><a id="a9d8164ef1b3235d9d895bddc4c0c84be"></a>
+union {</td></tr>
+<tr class="memitem:ae9b34c57d6b19de7d79094fedd4ee5a5"><td class="memItemLeft" >
+&#160;&#160;&#160;struct {</td></tr>
+<tr class="memitem:a3a97cad955c1401c2fe09ffd186ba99d"><td class="memItemLeft" >
+&#160;&#160;&#160;&#160;&#160;&#160;uint8_t&#160;&#160;&#160;<a class="el" href="structspdk__bdev__io_1_1____bdev__io__internal__fields.html#af1b7041012f256d8bb1f00bb760a1075">sct</a></td></tr>
+<tr class="memdesc:a3a97cad955c1401c2fe09ffd186ba99d"><td class="mdescLeft">&#160;</td><td class="mdescRight">NVMe status code type. <br /></td></tr>
+<tr class="separator:a3a97cad955c1401c2fe09ffd186ba99d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a153102f0f682f266e5f5697fc8239814"><td class="memItemLeft" >
+&#160;&#160;&#160;&#160;&#160;&#160;uint8_t&#160;&#160;&#160;<a class="el" href="structspdk__bdev__io_1_1____bdev__io__internal__fields.html#a10bc16b954cc71142b31de4627444c99">sc</a></td></tr>
+<tr class="memdesc:a153102f0f682f266e5f5697fc8239814"><td class="mdescLeft">&#160;</td><td class="mdescRight">NVMe status code. <br /></td></tr>
+<tr class="separator:a153102f0f682f266e5f5697fc8239814"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9b34c57d6b19de7d79094fedd4ee5a5"><td class="memItemLeft" valign="top">&#160;&#160;&#160;}&#160;&#160;&#160;<a class="el" href="structspdk__bdev__io_1_1____bdev__io__internal__fields.html#a71a51453db0443f47c43b9e8d13c03d3">nvme</a></td></tr>
+<tr class="memdesc:ae9b34c57d6b19de7d79094fedd4ee5a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Only valid when status is SPDK_BDEV_IO_STATUS_NVME_ERROR. <br /></td></tr>
+<tr class="separator:ae9b34c57d6b19de7d79094fedd4ee5a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1d368e5a33e44fe05d2296956b23f4b"><td class="memItemLeft" >
+&#160;&#160;&#160;struct {</td></tr>
+<tr class="memitem:a1eed53f9906fa7729126a1cd3d541302"><td class="memItemLeft" >
+&#160;&#160;&#160;&#160;&#160;&#160;uint8_t&#160;&#160;&#160;<a class="el" href="structspdk__bdev__io_1_1____bdev__io__internal__fields.html#a10bc16b954cc71142b31de4627444c99">sc</a></td></tr>
+<tr class="memdesc:a1eed53f9906fa7729126a1cd3d541302"><td class="mdescLeft">&#160;</td><td class="mdescRight">SCSI status code. <br /></td></tr>
+<tr class="separator:a1eed53f9906fa7729126a1cd3d541302"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acfb953fa1adf38397246c6b7a5c15c67"><td class="memItemLeft" >
+&#160;&#160;&#160;&#160;&#160;&#160;uint8_t&#160;&#160;&#160;<a class="el" href="structspdk__bdev__io_1_1____bdev__io__internal__fields.html#a0e9a61cf97047f797df0cb996513b418">sk</a></td></tr>
+<tr class="memdesc:acfb953fa1adf38397246c6b7a5c15c67"><td class="mdescLeft">&#160;</td><td class="mdescRight">SCSI sense key. <br /></td></tr>
+<tr class="separator:acfb953fa1adf38397246c6b7a5c15c67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77a9f074af0118c42c049ad61f4cbe0a"><td class="memItemLeft" >
+&#160;&#160;&#160;&#160;&#160;&#160;uint8_t&#160;&#160;&#160;<a class="el" href="structspdk__bdev__io_1_1____bdev__io__internal__fields.html#aa0f7b85e127d44d99957041f59dfc7dc">asc</a></td></tr>
+<tr class="memdesc:a77a9f074af0118c42c049ad61f4cbe0a"><td class="mdescLeft">&#160;</td><td class="mdescRight">SCSI additional sense code. <br /></td></tr>
+<tr class="separator:a77a9f074af0118c42c049ad61f4cbe0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0afb30dc07cfe47293688cb1143f3200"><td class="memItemLeft" >
+&#160;&#160;&#160;&#160;&#160;&#160;uint8_t&#160;&#160;&#160;<a class="el" href="structspdk__bdev__io_1_1____bdev__io__internal__fields.html#a0f0d6222023fca31e0e4a8e9d56a2f91">ascq</a></td></tr>
+<tr class="memdesc:a0afb30dc07cfe47293688cb1143f3200"><td class="mdescLeft">&#160;</td><td class="mdescRight">SCSI additional sense code qualifier. <br /></td></tr>
+<tr class="separator:a0afb30dc07cfe47293688cb1143f3200"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1d368e5a33e44fe05d2296956b23f4b"><td class="memItemLeft" valign="top">&#160;&#160;&#160;}&#160;&#160;&#160;<a class="el" href="structspdk__bdev__io_1_1____bdev__io__internal__fields.html#a4b883f479da06135302f39c215f3939d">scsi</a></td></tr>
+<tr class="memdesc:af1d368e5a33e44fe05d2296956b23f4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Only valid when status is SPDK_BDEV_IO_STATUS_SCSI_ERROR. <br /></td></tr>
+<tr class="separator:af1d368e5a33e44fe05d2296956b23f4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d8164ef1b3235d9d895bddc4c0c84be"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev__io_1_1____bdev__io__internal__fields.html#a9d8164ef1b3235d9d895bddc4c0c84be">error</a></td></tr>
+<tr class="memdesc:a9d8164ef1b3235d9d895bddc4c0c84be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Error information from a device. <br /></td></tr>
+<tr class="separator:a9d8164ef1b3235d9d895bddc4c0c84be"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a24890c3258742ac4ca1d92e11bab07b9"><td class="memItemLeft" align="right" valign="top">struct spdk_bdev_channel *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev__io_1_1____bdev__io__internal__fields.html#a24890c3258742ac4ca1d92e11bab07b9">ch</a></td></tr>
 <tr class="memdesc:a24890c3258742ac4ca1d92e11bab07b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">The bdev I/O channel that this was handled on.  <a href="#a24890c3258742ac4ca1d92e11bab07b9">More...</a><br /></td></tr>
 <tr class="separator:a24890c3258742ac4ca1d92e11bab07b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -225,6 +267,26 @@ spdk_bdev_io_get_buf_cb&#160;</td><td class="memItemRight" valign="bottom"><a cl
 
 </div>
 </div>
+<a id="aca9aa23b8536ee8674cbcf3c906bcc2e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca9aa23b8536ee8674cbcf3c906bcc2e">&#9670;&nbsp;</a></span>TAILQ_ENTRY()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">spdk_bdev_io::__bdev_io_internal_fields::TAILQ_ENTRY </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structspdk__bdev__io.html">spdk_bdev_io</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Member used for linking child I/Os together. </p>
+
+</div>
+</div>
 <h2 class="groupheader">Field Documentation</h2>
 <a id="a24890c3258742ac4ca1d92e11bab07b9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a24890c3258742ac4ca1d92e11bab07b9">&#9670;&nbsp;</a></span>ch</h2>
@@ -255,7 +317,7 @@ spdk_bdev_io_get_buf_cb&#160;</td><td class="memItemRight" valign="bottom"><a cl
 </div><div class="memdoc">
 
 <p>Set to true while the bdev module submit_request function is in progress. </p>
-<p>This is used to decide whether spdk_bdev_io_complete() can complete the I/O directly or if completion must be deferred via an event. </p>
+<p>This is used to decide whether <a class="el" href="bdev__module_8h.html#a3247574caabc2b31796861a10b2c9cab" title="Complete a bdev_io. ">spdk_bdev_io_complete()</a> can complete the I/O directly or if completion must be deferred via an event. </p>
 
 </div>
 </div>
@@ -272,6 +334,23 @@ spdk_bdev_io_get_buf_cb&#160;</td><td class="memItemRight" valign="bottom"><a cl
 </div><div class="memdoc">
 
 <p>The bdev I/O channel that this was submitted on. </p>
+
+</div>
+</div>
+<a id="a10bc16b954cc71142b31de4627444c99"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a10bc16b954cc71142b31de4627444c99">&#9670;&nbsp;</a></span>sc</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t spdk_bdev_io::__bdev_io_internal_fields::sc</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>NVMe status code. </p>
+<p>SCSI status code. </p>
 
 </div>
 </div>

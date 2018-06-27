@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['tailq_5fentry',['TAILQ_ENTRY',['../structspdk__bdev__io.html#abe399f82f81791e0573bef08b19eafee',1,'spdk_bdev_io::TAILQ_ENTRY(spdk_bdev_io) link'],['../structspdk__bdev__io.html#a4c93fa89b3cc9789d2e6d7d7e2246e35',1,'spdk_bdev_io::TAILQ_ENTRY(spdk_bdev_io) module_link']]],
-  ['tailq_5fhead',['TAILQ_HEAD',['../structspdk__bdev.html#ad6af2c003c0428ec514d45fade176d22',1,'spdk_bdev::TAILQ_HEAD(spdk_bdev_aliases_list, spdk_bdev_alias) aliases'],['../structspdk__bdev.html#a8a084ec42394ce54710223d2c8049d08',1,'spdk_bdev::TAILQ_HEAD(, spdk_bdev_desc) open_descs']]],
+  ['tailq_5fentry',['TAILQ_ENTRY',['../structspdk__bdev__io.html#a4c93fa89b3cc9789d2e6d7d7e2246e35',1,'spdk_bdev_io::TAILQ_ENTRY()'],['../structspdk__bdev__io_1_1____bdev__io__internal__fields.html#aca9aa23b8536ee8674cbcf3c906bcc2e',1,'spdk_bdev_io::__bdev_io_internal_fields::TAILQ_ENTRY()']]],
+  ['tailq_5fhead',['TAILQ_HEAD',['../structspdk__bdev.html#ad6af2c003c0428ec514d45fade176d22',1,'spdk_bdev::TAILQ_HEAD()'],['../structspdk__bdev_1_1____bdev__internal__fields.html#a920a1e86dea170c9234bb24f61b16226',1,'spdk_bdev::__bdev_internal_fields::TAILQ_HEAD()']]],
   ['tcrsm',['tcrsm',['../structspdk__ocssd__geometry__data.html#ad9b0daa6248be6bb99132912caa05942',1,'spdk_ocssd_geometry_data']]],
   ['tcrst',['tcrst',['../structspdk__ocssd__geometry__data.html#a5c4e52a3e3502ebbfd107915519659d9',1,'spdk_ocssd_geometry_data']]],
   ['telemetry',['telemetry',['../structspdk__nvme__ctrlr__data.html#a3111113eeed360498c0b5ee94bb0591b',1,'spdk_nvme_ctrlr_data']]],
