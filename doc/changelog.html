@@ -140,6 +140,8 @@ $(document).ready(function(){initNavTree('changelog.html','');});
 <div class="contents">
 <div class="textblock"><h1><a class="anchor" id="changelog-v18-07"></a>
 v18.07: (Upcoming Release)</h1>
+<h2>Log</h2>
+<p>The debug log component flag has been renamed from <code>-t</code> to <code>-L</code> to prevent confusion with tracepoints and to allow the option to be added to tools that already use <code>-t</code> to mean something else.</p>
 <h2>NVMe Driver</h2>
 <p>New API function <a class="el" href="nvme_8h.html#acf6188764b8c71b2f64a74077d6bfabf" title="Inject an error for the next request with a given opcode. ">spdk_nvme_qpair_add_cmd_error_injection()</a> and <a class="el" href="nvme_8h.html#ad720b23786450b5a2b2d7d65c6dd6b7c" title="Clear the specified NVMe command with error status. ">spdk_nvme_qpair_remove_cmd_error_injection()</a> have been added for NVMe error emulation, users can set specified command with specified error status for error emulation.</p>
 <h2>Build System</h2>
