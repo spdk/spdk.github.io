@@ -167,11 +167,32 @@ context_switch_monitor</h2>
 <h3>Response</h3>
 <p>The current state of context switch monitoring is returned as a boolean.</p>
 <h3>Example</h3>
-<p>Example request: </p><div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;method&quot;: &quot;context_switch_monitor&quot;,</div><div class="line">  &quot;params&quot;: {</div><div class="line">    &quot;enabled&quot;: false</div><div class="line">  }</div><div class="line">}</div></div><!-- fragment --><p>Example response: </p><div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: false</div><div class="line">}</div></div><!-- fragment --><h1><a class="anchor" id="jsonrpc_components_bdev"></a>
+<p>Example request: </p><div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;method&quot;: &quot;context_switch_monitor&quot;,</div><div class="line">  &quot;params&quot;: {</div><div class="line">    &quot;enabled&quot;: false</div><div class="line">  }</div><div class="line">}</div></div><!-- fragment --><p>Example response: </p><div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: false</div><div class="line">}</div></div><!-- fragment --><h2><a class="anchor" id="rpc_start_subsystem_init"></a>
+start_subsystem_init</h2>
+<p>Start initialization of SPDK subsystems when it is deferred by starting SPDK application with option -w. During its deferral some RPCs can be used to set global parameters for SPDK subsystems. This RPC can be called only once.</p>
+<h3>Parameters</h3>
+<p>This method has no parameters.</p>
+<h3>Response</h3>
+<p>Completion status of SPDK subsystem initialization is returned as a boolean.</p>
+<h3>Example</h3>
+<p>Example request: </p><div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;method&quot;: &quot;start_subsystem_init&quot;</div><div class="line">}</div></div><!-- fragment --><p>Example response: </p><div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: true</div><div class="line">}</div></div><!-- fragment --><h2><a class="anchor" id="rpc_get_rpc_methods"></a>
+get_rpc_methods</h2>
+<p>Get an array of supported RPC methods.</p>
+<h3>Parameters</h3>
+<table class="doxtable">
+<tr>
+<th>Name </th><th>Optional </th><th>Type </th><th>Description  </th></tr>
+<tr>
+<td>current </td><td>Optional </td><td>boolean </td><td>Get an array of RPC methods only callable in the current state. </td></tr>
+</table>
+<h3>Response</h3>
+<p>The response is an array of supported RPC methods.</p>
+<h3>Example</h3>
+<p>Example request: </p><div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;method&quot;: &quot;get_rpc_methods&quot;</div><div class="line">}</div></div><!-- fragment --><p>Example response: </p><div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: [</div><div class="line">    &quot;start_subsystem_init&quot;,</div><div class="line">    &quot;get_rpc_methods&quot;,</div><div class="line">    &quot;get_scsi_devices&quot;,</div><div class="line">    &quot;get_interfaces&quot;,</div><div class="line">    &quot;delete_ip_address&quot;,</div><div class="line">    &quot;add_ip_address&quot;,</div><div class="line">    &quot;get_nbd_disks&quot;,</div><div class="line">    &quot;stop_nbd_disk&quot;,</div><div class="line">    &quot;start_nbd_disk&quot;,</div><div class="line">    &quot;get_trace_flags&quot;,</div><div class="line">    &quot;clear_trace_flag&quot;,</div><div class="line">    &quot;set_trace_flag&quot;,</div><div class="line">    &quot;get_log_level&quot;,</div><div class="line">    &quot;set_log_level&quot;,</div><div class="line">    &quot;get_log_print_level&quot;,</div><div class="line">    &quot;set_log_print_level&quot;,</div><div class="line">    &quot;get_iscsi_global_params&quot;,</div><div class="line">    &quot;target_node_add_lun&quot;,</div><div class="line">    &quot;get_iscsi_connections&quot;,</div><div class="line">    &quot;delete_portal_group&quot;,</div><div class="line">    &quot;add_portal_group&quot;,</div><div class="line">    &quot;get_portal_groups&quot;,</div><div class="line">    &quot;delete_target_node&quot;,</div><div class="line">    &quot;delete_pg_ig_maps&quot;,</div><div class="line">    &quot;add_pg_ig_maps&quot;,</div><div class="line">    &quot;construct_target_node&quot;,</div><div class="line">    &quot;get_target_nodes&quot;,</div><div class="line">    &quot;delete_initiator_group&quot;,</div><div class="line">    &quot;delete_initiators_from_initiator_group&quot;,</div><div class="line">    &quot;add_initiators_to_initiator_group&quot;,</div><div class="line">    &quot;add_initiator_group&quot;,</div><div class="line">    &quot;get_initiator_groups&quot;,</div><div class="line">    &quot;set_iscsi_options&quot;,</div><div class="line">    &quot;set_bdev_options&quot;,</div><div class="line">    &quot;set_bdev_qos_limit_iops&quot;,</div><div class="line">    &quot;delete_bdev&quot;,</div><div class="line">    &quot;get_bdevs_config&quot;,</div><div class="line">    &quot;get_bdevs&quot;,</div><div class="line">    &quot;get_bdevs_iostat&quot;,</div><div class="line">    &quot;get_subsystem_config&quot;,</div><div class="line">    &quot;get_subsystems&quot;,</div><div class="line">    &quot;context_switch_monitor&quot;,</div><div class="line">    &quot;kill_instance&quot;,</div><div class="line">    &quot;scan_ioat_copy_engine&quot;,</div><div class="line">    &quot;construct_virtio_dev&quot;,</div><div class="line">    &quot;construct_virtio_pci_blk_bdev&quot;,</div><div class="line">    &quot;construct_virtio_user_blk_bdev&quot;,</div><div class="line">    &quot;get_virtio_scsi_devs&quot;,</div><div class="line">    &quot;remove_virtio_scsi_bdev&quot;,</div><div class="line">    &quot;construct_virtio_pci_scsi_bdev&quot;,</div><div class="line">    &quot;construct_virtio_user_scsi_bdev&quot;,</div><div class="line">    &quot;delete_aio_bdev&quot;,</div><div class="line">    &quot;construct_aio_bdev&quot;,</div><div class="line">    &quot;destruct_split_vbdev&quot;,</div><div class="line">    &quot;construct_split_vbdev&quot;,</div><div class="line">    &quot;bdev_inject_error&quot;,</div><div class="line">    &quot;delete_error_bdev&quot;,</div><div class="line">    &quot;construct_error_bdev&quot;,</div><div class="line">    &quot;construct_passthru_bdev&quot;,</div><div class="line">    &quot;apply_nvme_firmware&quot;,</div><div class="line">    &quot;construct_nvme_bdev&quot;,</div><div class="line">    &quot;construct_null_bdev&quot;,</div><div class="line">    &quot;delete_malloc_bdev&quot;,</div><div class="line">    &quot;construct_malloc_bdev&quot;,</div><div class="line">    &quot;get_lvol_stores&quot;,</div><div class="line">    &quot;destroy_lvol_bdev&quot;,</div><div class="line">    &quot;resize_lvol_bdev&quot;,</div><div class="line">    &quot;decouple_parent_lvol_bdev&quot;,</div><div class="line">    &quot;inflate_lvol_bdev&quot;,</div><div class="line">    &quot;rename_lvol_bdev&quot;,</div><div class="line">    &quot;clone_lvol_bdev&quot;,</div><div class="line">    &quot;snapshot_lvol_bdev&quot;,</div><div class="line">    &quot;construct_lvol_bdev&quot;,</div><div class="line">    &quot;destroy_lvol_store&quot;,</div><div class="line">    &quot;rename_lvol_store&quot;,</div><div class="line">    &quot;construct_lvol_store&quot;</div><div class="line">  ]</div><div class="line">}</div></div><!-- fragment --><h1><a class="anchor" id="jsonrpc_components_bdev"></a>
 Block Device Abstraction Layer</h1>
 <h2><a class="anchor" id="rpc_set_bdev_options"></a>
 set_bdev_options</h2>
-<p>Set global parameters for the block device (bdev) subsystem. This RPC may only be called before subsystems have been initialized.</p>
+<p>Set global parameters for the block device (bdev) subsystem. This RPC may only be called before SPDK subsystems have been initialized.</p>
 <h3>Parameters</h3>
 <table class="doxtable">
 <tr>
@@ -399,6 +420,38 @@ nvmf_subsystem_allow_any_host method</h2>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;method&quot;: &quot;nvmf_subsystem_allow_any_host&quot;,</div><div class="line">  &quot;params&quot;: {</div><div class="line">    &quot;nqn&quot;: &quot;nqn.2016-06.io.spdk:cnode1&quot;,</div><div class="line">    &quot;allow_any_host&quot;: true</div><div class="line">  }</div><div class="line">}</div></div><!-- fragment --><p>Example response:</p>
-<div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: true</div><div class="line">}</div></div><!-- fragment --> </div></div><!-- contents -->
+<div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: true</div><div class="line">}</div></div><!-- fragment --><h2><a class="anchor" id="rpc_set_nvmf_target_options"></a>
+set_nvmf_target_options</h2>
+<p>Set global parameters for the NVMe-oF target. This RPC may only be called before SPDK subsystems have been initialized.</p>
+<h3>Parameters</h3>
+<table class="doxtable">
+<tr>
+<th>Name </th><th>Optional </th><th>Type </th><th>Description  </th></tr>
+<tr>
+<td>max_queue_depth </td><td>Optional </td><td>number </td><td>Maximum number of outstanding I/Os per queue </td></tr>
+<tr>
+<td>max_qpairs_per_ctrlr </td><td>Optional </td><td>number </td><td>Maximum number of SQ and CQ per controller </td></tr>
+<tr>
+<td>in_capsule_data_size </td><td>Optional </td><td>number </td><td>Maximum number of in-capsule data size </td></tr>
+<tr>
+<td>max_io_size </td><td>Optional </td><td>number </td><td>Maximum I/O size (bytes) </td></tr>
+<tr>
+<td>max_subsystems </td><td>Optional </td><td>number </td><td>Maximum number of NVMe-oF subsystems </td></tr>
+<tr>
+<td>io_unit_size </td><td>Optional </td><td>number </td><td>I/O unit size (bytes) </td></tr>
+</table>
+<h3>Example</h3>
+<p>Example request: </p><div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;method&quot;: &quot;set_nvmf_target_options&quot;,</div><div class="line">  &quot;params&quot;: {</div><div class="line">    &quot;in_capsule_data_size&quot;: 4096,</div><div class="line">    &quot;io_unit_size&quot;: 131072,</div><div class="line">    &quot;max_qpairs_per_ctrlr&quot;: 64,</div><div class="line">    &quot;max_queue_depth&quot;: 128,</div><div class="line">    &quot;max_io_size&quot;: 131072,</div><div class="line">    &quot;max_subsystems&quot;: 1024</div><div class="line">  }</div><div class="line">}</div></div><!-- fragment --><p>Example response: </p><div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: true</div><div class="line">}</div></div><!-- fragment --><h2><a class="anchor" id="rpc_set_nvmf_target_config"></a>
+set_nvmf_target_config</h2>
+<p>Set global configuration of NVMe-oF target. This RPC may only be called before SPDK subsystems have been initialized.</p>
+<h3>Parameters</h3>
+<table class="doxtable">
+<tr>
+<th>Name </th><th>Optional </th><th>Type </th><th>Description  </th></tr>
+<tr>
+<td>acceptor_poll_rate </td><td>Optional </td><td>number </td><td>Polling interval of the acceptor for incoming connections (microseconds) </td></tr>
+</table>
+<h3>Example</h3>
+<p>Example request: </p><div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;method&quot;: &quot;set_nvmf_target_config&quot;,</div><div class="line">  &quot;params&quot;: {</div><div class="line">    &quot;acceptor_poll_rate&quot;: 10000</div><div class="line">  }</div><div class="line">}</div></div><!-- fragment --><p>Example response: </p><div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: true</div><div class="line">}</div></div><!-- fragment --> </div></div><!-- contents -->
 </div><!-- doc-content -->
 </div>

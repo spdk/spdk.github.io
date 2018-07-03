@@ -30,7 +30,9 @@ var general =
         [ "Logical volume store", "logical_volumes.html#lvs", null ],
         [ "Logical volume", "logical_volumes.html#lvol", null ],
         [ "Logical volume block device", "logical_volumes.html#lvol_bdev", null ],
-        [ "Snapshots and clone", "logical_volumes.html#lvol_snapshots", null ]
+        [ "Thin provisioning", "logical_volumes.html#lvol_thin_provisioning", null ],
+        [ "Snapshots and clone", "logical_volumes.html#lvol_snapshots", null ],
+        [ "Inflation", "logical_volumes.html#lvol_inflation", null ]
       ] ],
       [ "RPC overview", "logical_volumes.html#lvol_rpc", null ]
     ] ]

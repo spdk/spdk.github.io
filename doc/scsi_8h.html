@@ -320,6 +320,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="scsi
 <tr class="memitem:a926c7488e731f9dc11ab43e28a34b4bd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="scsi_8h.html#a926c7488e731f9dc11ab43e28a34b4bd">spdk_scsi_task_process_null_lun</a> (struct <a class="el" href="structspdk__scsi__task.html">spdk_scsi_task</a> *task)</td></tr>
 <tr class="memdesc:a926c7488e731f9dc11ab43e28a34b4bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Process the SCSI task when no LUN is attached.  <a href="#a926c7488e731f9dc11ab43e28a34b4bd">More...</a><br /></td></tr>
 <tr class="separator:a926c7488e731f9dc11ab43e28a34b4bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c09504dbdb07af54ffa83a50ea887a0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="scsi_8h.html#a5c09504dbdb07af54ffa83a50ea887a0">spdk_scsi_lun_allocate_io_channel</a> (struct spdk_scsi_lun *lun)</td></tr>
+<tr class="memdesc:a5c09504dbdb07af54ffa83a50ea887a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate I/O channel for the LUN.  <a href="#a5c09504dbdb07af54ffa83a50ea887a0">More...</a><br /></td></tr>
+<tr class="separator:a5c09504dbdb07af54ffa83a50ea887a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a905570a6a6bcb1bd24ebee9e9c820ea9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="scsi_8h.html#a905570a6a6bcb1bd24ebee9e9c820ea9">spdk_scsi_lun_free_io_channel</a> (struct spdk_scsi_lun *lun)</td></tr>
+<tr class="memdesc:a905570a6a6bcb1bd24ebee9e9c820ea9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Free I/O channel from the logical unit.  <a href="#a905570a6a6bcb1bd24ebee9e9c820ea9">More...</a><br /></td></tr>
+<tr class="separator:a905570a6a6bcb1bd24ebee9e9c820ea9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>SCSI to bdev translation layer. </p>
@@ -886,6 +892,59 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="scsi
 
 <p>Initialize SCSI layer. </p>
 <dl class="section return"><dt>Returns</dt><dd>0 on success, -1 on failure. </dd></dl>
+
+</div>
+</div>
+<a id="a5c09504dbdb07af54ffa83a50ea887a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5c09504dbdb07af54ffa83a50ea887a0">&#9670;&nbsp;</a></span>spdk_scsi_lun_allocate_io_channel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_scsi_lun_allocate_io_channel </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_scsi_lun *&#160;</td>
+          <td class="paramname"><em>lun</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Allocate I/O channel for the LUN. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">lun</td><td>Logical unit.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, -1 on failure. </dd></dl>
+
+</div>
+</div>
+<a id="a905570a6a6bcb1bd24ebee9e9c820ea9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a905570a6a6bcb1bd24ebee9e9c820ea9">&#9670;&nbsp;</a></span>spdk_scsi_lun_free_io_channel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_scsi_lun_free_io_channel </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_scsi_lun *&#160;</td>
+          <td class="paramname"><em>lun</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Free I/O channel from the logical unit. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">lun</td><td>Logical unit. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

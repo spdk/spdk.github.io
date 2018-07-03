@@ -174,6 +174,15 @@ Macros</h2></td></tr>
 #define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_8h.html#ad1660ffa6731090ef3f480c295a87dba">SPDK_MALLOC_SHARE</a>&#160;&#160;&#160;0x02</td></tr>
 <tr class="memdesc:ad1660ffa6731090ef3f480c295a87dba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Memory is sharable across process boundries. <br /></td></tr>
 <tr class="separator:ad1660ffa6731090ef3f480c295a87dba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a411823d4d31753e42df192aa75f74928"><td class="memItemLeft" align="right" valign="top"><a id="a411823d4d31753e42df192aa75f74928"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_MAX_MEMZONE_NAME_LEN</b>&#160;&#160;&#160;32</td></tr>
+<tr class="separator:a411823d4d31753e42df192aa75f74928"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58022b1b197127cd278aebff2a5a6888"><td class="memItemLeft" align="right" valign="top"><a id="a58022b1b197127cd278aebff2a5a6888"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_MAX_MEMPOOL_NAME_LEN</b>&#160;&#160;&#160;29</td></tr>
+<tr class="separator:a58022b1b197127cd278aebff2a5a6888"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a723c2f644ec11282b96e1568f3124d07"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_8h.html#a723c2f644ec11282b96e1568f3124d07">SPDK_MEMZONE_NO_IOVA_CONTIG</a>&#160;&#160;&#160;0x00100000</td></tr>
+<tr class="memdesc:a723c2f644ec11282b96e1568f3124d07"><td class="mdescLeft">&#160;</td><td class="mdescRight">Memzone flags.  <a href="#a723c2f644ec11282b96e1568f3124d07">More...</a><br /></td></tr>
+<tr class="separator:a723c2f644ec11282b96e1568f3124d07"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aba1856012938db5f1c0beba921ee5a7c"><td class="memItemLeft" align="right" valign="top"><a id="aba1856012938db5f1c0beba921ee5a7c"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_MEMPOOL_DEFAULT_CACHE_SIZE</b>&#160;&#160;&#160;SIZE_MAX</td></tr>
 <tr class="separator:aba1856012938db5f1c0beba921ee5a7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -247,6 +256,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a48afc08099440a88e9e8dc3abf540ab9"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_8h.html#a48afc08099440a88e9e8dc3abf540ab9">spdk_memzone_reserve</a> (const char *name, size_t len, int socket_id, unsigned flags)</td></tr>
 <tr class="memdesc:a48afc08099440a88e9e8dc3abf540ab9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reserve a named, process shared memory zone with the given size, socket_id and flags.  <a href="#a48afc08099440a88e9e8dc3abf540ab9">More...</a><br /></td></tr>
 <tr class="separator:a48afc08099440a88e9e8dc3abf540ab9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa179a05a509878b70a9e4dfe8079841a"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_8h.html#aa179a05a509878b70a9e4dfe8079841a">spdk_memzone_reserve_aligned</a> (const char *name, size_t len, int socket_id, unsigned flags, unsigned align)</td></tr>
+<tr class="memdesc:aa179a05a509878b70a9e4dfe8079841a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reserve a named, process shared memory zone with the given size, socket_id, flags and alignment.  <a href="#aa179a05a509878b70a9e4dfe8079841a">More...</a><br /></td></tr>
+<tr class="separator:aa179a05a509878b70a9e4dfe8079841a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2be5bc3f8fc570f45f2ad087fcb91f9e"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_8h.html#a2be5bc3f8fc570f45f2ad087fcb91f9e">spdk_memzone_lookup</a> (const char *name)</td></tr>
 <tr class="memdesc:a2be5bc3f8fc570f45f2ad087fcb91f9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lookup the memory zone identified by the given name.  <a href="#a2be5bc3f8fc570f45f2ad087fcb91f9e">More...</a><br /></td></tr>
 <tr class="separator:a2be5bc3f8fc570f45f2ad087fcb91f9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -278,9 +290,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_
 <tr class="memitem:a56233342766c54990e044b8ca2f3d41a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_8h.html#a56233342766c54990e044b8ca2f3d41a">spdk_mempool_put</a> (struct spdk_mempool *mp, void *ele)</td></tr>
 <tr class="memdesc:a56233342766c54990e044b8ca2f3d41a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Put an element back into the memory pool.  <a href="#a56233342766c54990e044b8ca2f3d41a">More...</a><br /></td></tr>
 <tr class="separator:a56233342766c54990e044b8ca2f3d41a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac3fc57c5f23f34aa1cf56ed355daa3b8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_8h.html#ac3fc57c5f23f34aa1cf56ed355daa3b8">spdk_mempool_put_bulk</a> (struct spdk_mempool *mp, void *const *ele_arr, size_t count)</td></tr>
-<tr class="memdesc:ac3fc57c5f23f34aa1cf56ed355daa3b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Put multiple elements back into the memory pool.  <a href="#ac3fc57c5f23f34aa1cf56ed355daa3b8">More...</a><br /></td></tr>
-<tr class="separator:ac3fc57c5f23f34aa1cf56ed355daa3b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02f2b221ab82ba09c51013291313fe2e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_8h.html#a02f2b221ab82ba09c51013291313fe2e">spdk_mempool_put_bulk</a> (struct spdk_mempool *mp, void **ele_arr, size_t count)</td></tr>
+<tr class="memdesc:a02f2b221ab82ba09c51013291313fe2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Put multiple elements back into the memory pool.  <a href="#a02f2b221ab82ba09c51013291313fe2e">More...</a><br /></td></tr>
+<tr class="separator:a02f2b221ab82ba09c51013291313fe2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a434cdf73691c745e717b8b794b2acb52"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_8h.html#a434cdf73691c745e717b8b794b2acb52">spdk_mempool_count</a> (const struct spdk_mempool *pool)</td></tr>
 <tr class="memdesc:a434cdf73691c745e717b8b794b2acb52"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the number of entries in the memory pool.  <a href="#a434cdf73691c745e717b8b794b2acb52">More...</a><br /></td></tr>
 <tr class="separator:a434cdf73691c745e717b8b794b2acb52"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -488,6 +500,23 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_
 <b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">for</span> (i = <a class="code" href="env_8h.html#a2127ecc88ceb8e4b1242c316634de50e">spdk_env_get_first_core</a>();     \</div><div class="line">             i &lt; UINT32_MAX;                    \</div><div class="line">             i = <a class="code" href="env_8h.html#ab480f817ecdd801a0e53a4d8494ffc67">spdk_env_get_next_core</a>(i))</div><div class="ttc" id="env_8h_html_ab480f817ecdd801a0e53a4d8494ffc67"><div class="ttname"><a href="env_8h.html#ab480f817ecdd801a0e53a4d8494ffc67">spdk_env_get_next_core</a></div><div class="ttdeci">uint32_t spdk_env_get_next_core(uint32_t prev_core)</div><div class="ttdoc">Get the index of the next dedicated CPU core for this application. </div></div>
 <div class="ttc" id="env_8h_html_a2127ecc88ceb8e4b1242c316634de50e"><div class="ttname"><a href="env_8h.html#a2127ecc88ceb8e4b1242c316634de50e">spdk_env_get_first_core</a></div><div class="ttdeci">uint32_t spdk_env_get_first_core(void)</div><div class="ttdoc">Get the index of the first dedicated CPU core for this application. </div></div>
 </div><!-- fragment -->
+</div>
+</div>
+<a id="a723c2f644ec11282b96e1568f3124d07"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a723c2f644ec11282b96e1568f3124d07">&#9670;&nbsp;</a></span>SPDK_MEMZONE_NO_IOVA_CONTIG</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SPDK_MEMZONE_NO_IOVA_CONTIG&#160;&#160;&#160;0x00100000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Memzone flags. </p>
+<p>no iova contiguity </p>
+
 </div>
 </div>
 <h2 class="groupheader">Typedef Documentation</h2>
@@ -1807,8 +1836,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_
 
 </div>
 </div>
-<a id="ac3fc57c5f23f34aa1cf56ed355daa3b8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac3fc57c5f23f34aa1cf56ed355daa3b8">&#9670;&nbsp;</a></span>spdk_mempool_put_bulk()</h2>
+<a id="a02f2b221ab82ba09c51013291313fe2e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a02f2b221ab82ba09c51013291313fe2e">&#9670;&nbsp;</a></span>spdk_mempool_put_bulk()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1822,7 +1851,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">void *const *&#160;</td>
+          <td class="paramtype">void **&#160;</td>
           <td class="paramname"><em>ele_arr</em>, </td>
         </tr>
         <tr>
@@ -1970,6 +1999,65 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_
     <tr><td class="paramname">len</td><td>Length in bytes. </td></tr>
     <tr><td class="paramname">socket_id</td><td>Socket ID to allocate memory on, or SPDK_ENV_SOCKET_ID_ANY for any socket. </td></tr>
     <tr><td class="paramname">flags</td><td>Flags to set for this memory zone.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>a pointer to the allocated memory address on success, or NULL on failure. </dd></dl>
+
+</div>
+</div>
+<a id="aa179a05a509878b70a9e4dfe8079841a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa179a05a509878b70a9e4dfe8079841a">&#9670;&nbsp;</a></span>spdk_memzone_reserve_aligned()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* spdk_memzone_reserve_aligned </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>socket_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned&#160;</td>
+          <td class="paramname"><em>flags</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned&#160;</td>
+          <td class="paramname"><em>align</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Reserve a named, process shared memory zone with the given size, socket_id, flags and alignment. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>Name to set for this memory zone. </td></tr>
+    <tr><td class="paramname">len</td><td>Length in bytes. </td></tr>
+    <tr><td class="paramname">socket_id</td><td>Socket ID to allocate memory on, or SPDK_ENV_SOCKET_ID_ANY for any socket. </td></tr>
+    <tr><td class="paramname">flags</td><td>Flags to set for this memory zone. </td></tr>
+    <tr><td class="paramname">align</td><td>Alignment for resulting memzone. Must be a power of 2.</td></tr>
   </table>
   </dd>
 </dl>

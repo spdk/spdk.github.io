@@ -157,6 +157,7 @@ var annotated_dup =
     [ "spdk_ocssd_chunk_information", "structspdk__ocssd__chunk__information.html", "structspdk__ocssd__chunk__information" ],
     [ "spdk_ocssd_dev_lba_fmt", "structspdk__ocssd__dev__lba__fmt.html", "structspdk__ocssd__dev__lba__fmt" ],
     [ "spdk_ocssd_geometry_data", "structspdk__ocssd__geometry__data.html", "structspdk__ocssd__geometry__data" ],
+    [ "spdk_ocssd_vector_cpl", "structspdk__ocssd__vector__cpl.html", "structspdk__ocssd__vector__cpl" ],
     [ "spdk_pci_addr", "structspdk__pci__addr.html", "structspdk__pci__addr" ],
     [ "spdk_pci_id", "structspdk__pci__id.html", "structspdk__pci__id" ],
     [ "spdk_reactor_tsc_stats", "structspdk__reactor__tsc__stats.html", "structspdk__reactor__tsc__stats" ],

@@ -3,6 +3,7 @@ var nvme__ocssd__spec_8h =
     [ "spdk_ocssd_dev_lba_fmt", "structspdk__ocssd__dev__lba__fmt.html", "structspdk__ocssd__dev__lba__fmt" ],
     [ "spdk_ocssd_geometry_data", "structspdk__ocssd__geometry__data.html", "structspdk__ocssd__geometry__data" ],
     [ "spdk_ocssd_chunk_information", "structspdk__ocssd__chunk__information.html", "structspdk__ocssd__chunk__information" ],
+    [ "spdk_ocssd_vector_cpl", "structspdk__ocssd__vector__cpl.html", "structspdk__ocssd__vector__cpl" ],
     [ "SPDK_NVME_OCSSD_MAX_LBAL_ENTRIES", "nvme__ocssd__spec_8h.html#a7d96f9d96a27db374c495e271f84d765", null ],
     [ "SPDK_OCSSD_IO_FLAGS_LIMITED_RETRY", "nvme__ocssd__spec_8h.html#a191404a5f78f1cadcadb5443e874f84f", null ],
     [ "spdk_ocssd_admin_opcode", "nvme__ocssd__spec_8h.html#a42b34558cb1809ea9157f873441c919d", [
@@ -30,5 +31,6 @@ var nvme__ocssd__spec_8h =
     ] ],
     [ "SPDK_STATIC_ASSERT", "nvme__ocssd__spec_8h.html#a795ecd2378b97c445193b2cdc1be99bb", null ],
     [ "SPDK_STATIC_ASSERT", "nvme__ocssd__spec_8h.html#a584df915ebdcf6a753a2370d5cbd784f", null ],
-    [ "SPDK_STATIC_ASSERT", "nvme__ocssd__spec_8h.html#af9c2e1b80a1996b5720296d0695f53ec", null ]
+    [ "SPDK_STATIC_ASSERT", "nvme__ocssd__spec_8h.html#af9c2e1b80a1996b5720296d0695f53ec", null ],
+    [ "SPDK_STATIC_ASSERT", "nvme__ocssd__spec_8h.html#a6e889e465d0062a5325c457c07d39adb", null ]
 ];

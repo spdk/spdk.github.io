@@ -137,6 +137,7 @@ var searchData=
   ['spdk_5focssd_5fchunk_5finformation',['spdk_ocssd_chunk_information',['../structspdk__ocssd__chunk__information.html',1,'']]],
   ['spdk_5focssd_5fdev_5flba_5ffmt',['spdk_ocssd_dev_lba_fmt',['../structspdk__ocssd__dev__lba__fmt.html',1,'']]],
   ['spdk_5focssd_5fgeometry_5fdata',['spdk_ocssd_geometry_data',['../structspdk__ocssd__geometry__data.html',1,'']]],
+  ['spdk_5focssd_5fvector_5fcpl',['spdk_ocssd_vector_cpl',['../structspdk__ocssd__vector__cpl.html',1,'']]],
   ['spdk_5fpci_5faddr',['spdk_pci_addr',['../structspdk__pci__addr.html',1,'']]],
   ['spdk_5fpci_5fid',['spdk_pci_id',['../structspdk__pci__id.html',1,'']]],
   ['spdk_5freactor_5ftsc_5fstats',['spdk_reactor_tsc_stats',['../structspdk__reactor__tsc__stats.html',1,'']]],
