@@ -1,5 +1,13 @@
 var NAVTREEINDEX13 =
 {
+"structspdk__nvme__ctrlr__opts.html#a810d9f0e2877c2264cf3393bc2919cb5":[12,0,81,3],
+"structspdk__nvme__ctrlr__opts.html#a8960ea3aebb4966d5434747e7c2154f9":[12,0,81,8],
+"structspdk__nvme__ctrlr__opts.html#ab348a8dc36baba0c3b3ab9a50b299752":[12,0,81,10],
+"structspdk__nvme__ctrlr__opts.html#ae2a14526f5856e3830b08994675841d8":[12,0,81,11],
+"structspdk__nvme__ctrlr__opts.html#afa9c5708ea859200abb5406b59faaede":[12,0,81,2],
+"structspdk__nvme__dsm__range.html":[12,0,82],
+"structspdk__nvme__dsm__range.html#a1ae2cac2417c24137dcb3e160eb3836c":[12,0,82,1],
+"structspdk__nvme__dsm__range.html#a2004042a8e179cbd22e2506b36b390f0":[12,0,82,7],
 "structspdk__nvme__dsm__range.html#a3654dba7338b5afe24b7b176c7236fba":[12,0,82,9],
 "structspdk__nvme__dsm__range.html#a3caca88fc730017972f9c9ae066e1a2f":[12,0,82,0],
 "structspdk__nvme__dsm__range.html#a6e648e08821852c591c327949c128528":[12,0,82,12],
@@ -241,13 +249,5 @@ var NAVTREEINDEX13 =
 "structspdk__nvme__registers.html#a6b09cae2aad064302d6415dbaf8346e2":[12,0,123,19],
 "structspdk__nvme__registers.html#a6c0a3def50fe28f4af603dd0fa116acf":[12,0,123,3],
 "structspdk__nvme__registers.html#a71e8bbdb5c54c51ae734e188a5e81559":[12,0,123,0],
-"structspdk__nvme__registers.html#a74f73747be7bf5656c0710e054f5191e":[12,0,123,2],
-"structspdk__nvme__registers.html#a92e20b1c798c1873b4e3e27f72e4bf07":[12,0,123,5],
-"structspdk__nvme__registers.html#a9d88ec002d49b7dfc2620cadfd7408ee":[12,0,123,10],
-"structspdk__nvme__registers.html#aa4774c23e63ced526fed163298f003db":[12,0,123,15],
-"structspdk__nvme__registers.html#aa8a82f6563f310e7fda91e63adf4fe81":[12,0,123,13],
-"structspdk__nvme__registers.html#aa9b32afa2d41aacdf2e71a92fdd8e530":[12,0,123,8],
-"structspdk__nvme__registers.html#acbfbb6b7aa5876e2a6c58badc2737152":[12,0,123,11],
-"structspdk__nvme__registers.html#ace48abe046b23a3960152475b0221403":[12,0,123,18],
-"structspdk__nvme__reservation__acquire__data.html":[12,0,124]
+"structspdk__nvme__registers.html#a74f73747be7bf5656c0710e054f5191e":[12,0,123,2]
 };

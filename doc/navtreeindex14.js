@@ -1,5 +1,13 @@
 var NAVTREEINDEX14 =
 {
+"structspdk__nvme__registers.html#a92e20b1c798c1873b4e3e27f72e4bf07":[12,0,123,5],
+"structspdk__nvme__registers.html#a9d88ec002d49b7dfc2620cadfd7408ee":[12,0,123,10],
+"structspdk__nvme__registers.html#aa4774c23e63ced526fed163298f003db":[12,0,123,15],
+"structspdk__nvme__registers.html#aa8a82f6563f310e7fda91e63adf4fe81":[12,0,123,13],
+"structspdk__nvme__registers.html#aa9b32afa2d41aacdf2e71a92fdd8e530":[12,0,123,8],
+"structspdk__nvme__registers.html#acbfbb6b7aa5876e2a6c58badc2737152":[12,0,123,11],
+"structspdk__nvme__registers.html#ace48abe046b23a3960152475b0221403":[12,0,123,18],
+"structspdk__nvme__reservation__acquire__data.html":[12,0,124],
 "structspdk__nvme__reservation__acquire__data.html#a101b03779e92b8965db452d68cf5a193":[12,0,124,0],
 "structspdk__nvme__reservation__acquire__data.html#a7777dded0893794c13c35fd71173514f":[12,0,124,1],
 "structspdk__nvme__reservation__ctrlr__data.html":[12,0,125],
@@ -241,13 +249,5 @@ var NAVTREEINDEX14 =
 "structspdk__ocssd__chunk__information.html#ad16b740adaaf64242b7d74bd289bb3a4":[12,0,154,0],
 "structspdk__ocssd__chunk__information.html#ad29235b06fdd522cee0071a1deb46f84":[12,0,154,4],
 "structspdk__ocssd__chunk__information.html#adee4075d8df9aaf52a36bab9d4aaa444":[12,0,154,7],
-"structspdk__ocssd__chunk__information.html#af6c294ffbbef1a81d477233a456aeb49":[12,0,154,6],
-"structspdk__ocssd__dev__lba__fmt.html":[12,0,155],
-"structspdk__ocssd__dev__lba__fmt.html#a22c7ae5974d464cde3f1cedf57a9ad61":[12,0,155,0],
-"structspdk__ocssd__dev__lba__fmt.html#a73ecc33cdb5bbcf9140577c2eeb8451b":[12,0,155,2],
-"structspdk__ocssd__dev__lba__fmt.html#a8b5ed3a8b5a46f41a1f6e6d389b8bbce":[12,0,155,1],
-"structspdk__ocssd__dev__lba__fmt.html#a8e9b63b4cacbc9ade730ab60fe74b58a":[12,0,155,4],
-"structspdk__ocssd__dev__lba__fmt.html#ae20247c5bd5f2576b67957980bf58333":[12,0,155,3],
-"structspdk__ocssd__geometry__data.html":[12,0,156],
-"structspdk__ocssd__geometry__data.html#a0f15dc726bcf4cac33752f0fab8a4e36":[12,0,156,29]
+"structspdk__ocssd__chunk__information.html#af6c294ffbbef1a81d477233a456aeb49":[12,0,154,6]
 };

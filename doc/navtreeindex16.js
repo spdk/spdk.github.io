@@ -1,5 +1,13 @@
 var NAVTREEINDEX16 =
 {
+"trace_8h.html#a92b06e647e386cf0896e0a38499cf494":[13,0,45,31],
+"trace_8h.html#a97958aabb667d95c141acf18f42a5000":[13,0,45,13],
+"trace_8h.html#aa0ade5c1286d121c2eafeae8918169db":[13,0,45,29],
+"trace_8h.html#aa7331d8e039fadc27049efd27c1d49a8":[13,0,45,22],
+"trace_8h.html#aa87447ad261172809a5394ee37f601df":[13,0,45,18],
+"trace_8h.html#ae4b117d97e55f2748e3c87dc21eb8277":[13,0,45,14],
+"trace_8h.html#af604955a293c41c3eb9217af94b893a4":[13,0,45,24],
+"trace_8h.html#af78721b3797d71e79aea650856ca3d0b":[13,0,45,17],
 "unionspdk__ioat__hw__desc.html":[12,0,50],
 "unionspdk__ioat__hw__desc.html#a2d09a75919a8997c1713fa442eff5e66":[12,0,50,6],
 "unionspdk__ioat__hw__desc.html#a2ee1dc602f0b3531ed63e072da771046":[12,0,50,5],
@@ -241,13 +249,5 @@ var NAVTREEINDEX16 =
 "userspace.html":[2,0],
 "userspace.html#userspace_control":[2,0,0],
 "userspace.html#userspace_interrupts":[2,0,1],
-"userspace.html#userspace_threading":[2,0,2],
-"util_8h.html":[13,0,46],
-"util_8h.html#a21e1907187f8bf2c4b0c0de12c113ed6":[13,0,46,1],
-"util_8h.html#a22383e04171a98834c5f21f0c460e322":[13,0,46,4],
-"util_8h.html#a4ef0b5332740873cf0414a8b44000128":[13,0,46,2],
-"util_8h.html#a63e2af9bd97c1250c11a2e585336f377":[13,0,46,5],
-"util_8h.html#a837456da8a8d13c0f84c1b362acfe482":[13,0,46,3],
-"util_8h.html#a8572bc8de56d3587c8cf85dae67c1ca0":[13,0,46,6],
-"util_8h.html#ace0946954cf4fed6e4f3b7f87180f984":[13,0,46,0]
+"userspace.html#userspace_threading":[2,0,2]
 };

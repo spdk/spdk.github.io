@@ -50,6 +50,7 @@ var searchData=
   ['spdk_5fbdev_5fio_5fget_5fnvme_5fstatus',['spdk_bdev_io_get_nvme_status',['../bdev_8h.html#afe43254747db3cd072dfb596be3bbf2f',1,'bdev.h']]],
   ['spdk_5fbdev_5fio_5fget_5fscsi_5fstatus',['spdk_bdev_io_get_scsi_status',['../bdev_8h.html#ac3c213b4317d5077197950253af1ac50',1,'bdev.h']]],
   ['spdk_5fbdev_5fio_5fget_5fthread',['spdk_bdev_io_get_thread',['../bdev__module_8h.html#ac5d86d9c4c086b2909207e6b7192caae',1,'bdev_module.h']]],
+  ['spdk_5fbdev_5fio_5fset_5fbuf',['spdk_bdev_io_set_buf',['../bdev__module_8h.html#aa5fd2ded8801c3351d8443c4b495145f',1,'bdev_module.h']]],
   ['spdk_5fbdev_5fio_5ftype_5fsupported',['spdk_bdev_io_type_supported',['../bdev_8h.html#a7cd5dff692dc162459801d5649fe7655',1,'bdev.h']]],
   ['spdk_5fbdev_5fmodule_5fclaim_5fbdev',['spdk_bdev_module_claim_bdev',['../bdev__module_8h.html#a43188aae62750556bba04f4ddc81fa94',1,'bdev_module.h']]],
   ['spdk_5fbdev_5fmodule_5fexamine_5fdone',['spdk_bdev_module_examine_done',['../bdev__module_8h.html#ad6ae712eb81a37a739cb82ca474e793b',1,'bdev_module.h']]],

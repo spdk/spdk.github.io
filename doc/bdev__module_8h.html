@@ -263,6 +263,9 @@ typedef&#160;</td><td class="memItemRight" valign="bottom"><b>STAILQ_HEAD</b> (,
 <tr class="memitem:a934c7e96e8bdc0aea6cbcc0f414c71ba"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev__module_8h.html#a934c7e96e8bdc0aea6cbcc0f414c71ba">spdk_bdev_io_get_buf</a> (struct <a class="el" href="structspdk__bdev__io.html">spdk_bdev_io</a> *bdev_io, spdk_bdev_io_get_buf_cb cb, uint64_t len)</td></tr>
 <tr class="memdesc:a934c7e96e8bdc0aea6cbcc0f414c71ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate a buffer for given bdev_io.  <a href="#a934c7e96e8bdc0aea6cbcc0f414c71ba">More...</a><br /></td></tr>
 <tr class="separator:a934c7e96e8bdc0aea6cbcc0f414c71ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5fd2ded8801c3351d8443c4b495145f"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev__module_8h.html#aa5fd2ded8801c3351d8443c4b495145f">spdk_bdev_io_set_buf</a> (struct <a class="el" href="structspdk__bdev__io.html">spdk_bdev_io</a> *bdev_io, void *buf, size_t len)</td></tr>
+<tr class="memdesc:aa5fd2ded8801c3351d8443c4b495145f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the given buffer as the data buffer described by this bdev_io.  <a href="#aa5fd2ded8801c3351d8443c4b495145f">More...</a><br /></td></tr>
+<tr class="separator:aa5fd2ded8801c3351d8443c4b495145f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3247574caabc2b31796861a10b2c9cab"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev__module_8h.html#a3247574caabc2b31796861a10b2c9cab">spdk_bdev_io_complete</a> (struct <a class="el" href="structspdk__bdev__io.html">spdk_bdev_io</a> *bdev_io, enum <a class="el" href="bdev__module_8h.html#aa35cc1485b6ba4351c2fb4fbd7125c93">spdk_bdev_io_status</a> status)</td></tr>
 <tr class="memdesc:a3247574caabc2b31796861a10b2c9cab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Complete a bdev_io.  <a href="#a3247574caabc2b31796861a10b2c9cab">More...</a><br /></td></tr>
 <tr class="separator:a3247574caabc2b31796861a10b2c9cab"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -693,6 +696,52 @@ typedef&#160;</td><td class="memItemRight" valign="bottom"><b>TAILQ_HEAD</b> (bd
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>thread that submitted the I/O </dd></dl>
+
+</div>
+</div>
+<a id="aa5fd2ded8801c3351d8443c4b495145f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa5fd2ded8801c3351d8443c4b495145f">&#9670;&nbsp;</a></span>spdk_bdev_io_set_buf()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t spdk_bdev_io_set_buf </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structspdk__bdev__io.html">spdk_bdev_io</a> *&#160;</td>
+          <td class="paramname"><em>bdev_io</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>buf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the given buffer as the data buffer described by this bdev_io. </p>
+<p>The portion of the buffer used may be adjusted for memory alignement purposes.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bdev_io</td><td>I/O to set the buffer on. </td></tr>
+    <tr><td class="paramname">buf</td><td>The buffer to set as the active data buffer. </td></tr>
+    <tr><td class="paramname">len</td><td>The length of the buffer.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The usable size of the buffer, after adjustments of alignment. </dd></dl>
 
 </div>
 </div>

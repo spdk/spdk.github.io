@@ -82,7 +82,9 @@ var user_guides =
         [ "kill_instance", "jsonrpc.html#rpc_kill_instance", null ],
         [ "context_switch_monitor", "jsonrpc.html#rpc_context_switch_monitor", null ],
         [ "start_subsystem_init", "jsonrpc.html#rpc_start_subsystem_init", null ],
-        [ "get_rpc_methods", "jsonrpc.html#rpc_get_rpc_methods", null ]
+        [ "get_rpc_methods", "jsonrpc.html#rpc_get_rpc_methods", null ],
+        [ "get_subsystems", "jsonrpc.html#rpc_get_subsystems", null ],
+        [ "get_subsystem_config", "jsonrpc.html#rpc_get_subsystem_config", null ]
       ] ],
       [ "Block Device Abstraction Layer", "jsonrpc.html#jsonrpc_components_bdev", [
         [ "set_bdev_options", "jsonrpc.html#rpc_set_bdev_options", null ],
@@ -106,6 +108,12 @@ var user_guides =
         [ "nvmf_subsystem_allow_any_host method", "jsonrpc.html#rpc_nvmf_subsystem_allow_any_host", null ],
         [ "set_nvmf_target_options", "jsonrpc.html#rpc_set_nvmf_target_options", null ],
         [ "set_nvmf_target_config", "jsonrpc.html#rpc_set_nvmf_target_config", null ]
+      ] ],
+      [ "Logical Volume", "jsonrpc.html#jsonrpc_components_lvol", [
+        [ "construct_lvol_store", "jsonrpc.html#rpc_construct_lvol_store", null ],
+        [ "destroy_lvol_store", "jsonrpc.html#rpc_destroy_lvol_store", null ],
+        [ "get_lvol_stores", "jsonrpc.html#rpc_get_lvol_stores", null ],
+        [ "rename_lvol_store", "jsonrpc.html#rpc_rename_lvol_store", null ]
       ] ]
     ] ]
 ];

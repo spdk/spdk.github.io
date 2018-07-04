@@ -179,13 +179,13 @@ Data Fields</h2></td></tr>
 <tr class="memitem:a4105d5a8419a66a6620d690da5649fcb"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev__io.html#a4105d5a8419a66a6620d690da5649fcb">type</a></td></tr>
 <tr class="memdesc:a4105d5a8419a66a6620d690da5649fcb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enumerated value representing the I/O type.  <a href="#a4105d5a8419a66a6620d690da5649fcb">More...</a><br /></td></tr>
 <tr class="separator:a4105d5a8419a66a6620d690da5649fcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0429238075907c6f637249dda31f3235"><td class="memItemLeft" align="right" valign="top">struct iovec&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev__io.html#a0429238075907c6f637249dda31f3235">iov</a></td></tr>
+<tr class="memdesc:a0429238075907c6f637249dda31f3235"><td class="mdescLeft">&#160;</td><td class="mdescRight">A single iovec element for use by this bdev_io.  <a href="#a0429238075907c6f637249dda31f3235">More...</a><br /></td></tr>
+<tr class="separator:a0429238075907c6f637249dda31f3235"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a529af99d06d12cec343f6aeb03beced2"><td class="memItemLeft" ><a id="a529af99d06d12cec343f6aeb03beced2"></a>
 union {</td></tr>
 <tr class="memitem:a6e4a64cc4d862cf115451766c8e4f890"><td class="memItemLeft" >
 &#160;&#160;&#160;struct {</td></tr>
-<tr class="memitem:abab6467dbfd434d8cb3f2f8961ff7805"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;struct iovec&#160;&#160;&#160;<a class="el" href="structspdk__bdev__io.html#a0429238075907c6f637249dda31f3235">iov</a></td></tr>
-<tr class="memdesc:abab6467dbfd434d8cb3f2f8961ff7805"><td class="mdescLeft">&#160;</td><td class="mdescRight">For basic IO case, use our own iovec element.  <a href="#abab6467dbfd434d8cb3f2f8961ff7805">More...</a><br /></td></tr>
-<tr class="separator:abab6467dbfd434d8cb3f2f8961ff7805"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae26b164b2d88fc332af2b27fbd5becdf"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;struct iovec *&#160;&#160;&#160;<a class="el" href="structspdk__bdev__io.html#ab2d3a6a004554c66434a31243030b2da">iovs</a></td></tr>
 <tr class="memdesc:ae26b164b2d88fc332af2b27fbd5becdf"><td class="mdescLeft">&#160;</td><td class="mdescRight">For SG buffer cases, array of iovecs to transfer.  <a href="#ae26b164b2d88fc332af2b27fbd5becdf">More...</a><br /></td></tr>
 <tr class="separator:ae26b164b2d88fc332af2b27fbd5becdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -314,7 +314,7 @@ uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="s
       </table>
 </div><div class="memdoc">
 
-<p>For basic IO case, use our own iovec element. </p>
+<p>A single iovec element for use by this bdev_io. </p>
 
 </div>
 </div>
