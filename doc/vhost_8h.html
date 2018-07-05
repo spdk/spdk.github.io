@@ -654,7 +654,7 @@ Functions</h2></td></tr>
 
 <p>Construct and attach new SCSI target to the vhost SCSI device on given (unoccupied) slot. </p>
 <p>The device will be created with a single LUN0 associated with given SPDK bdev. Currently only one LUN per device is supported.</p>
-<p>If vhost SCSI device has an active socket connection, it is required that it has negotiated <code>VIRTIO_SCSI_F_HOTPLUG</code> feature flag. Otherwise an -ENOTSUP error code is returned.</p>
+<p>If the vhost SCSI device has an active connection and has negotiated <code>VIRTIO_SCSI_F_HOTPLUG</code> feature, the new SCSI target should be automatically detected by the other side.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">vdev</td><td>vhost SCSI device. </td></tr>
