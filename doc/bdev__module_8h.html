@@ -171,9 +171,10 @@ Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev__io_1_1____bdev__io__internal__fields.html">spdk_bdev_io::__bdev_io_internal_fields</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fields that are used internally by the bdev subsystem.  <a href="structspdk__bdev__io_1_1____bdev__io__internal__fields.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev__part__base.html">spdk_bdev_part_base</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev__part.html">spdk_bdev_part</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev__part_1_1bdev__part__internal__fields.html">spdk_bdev_part::bdev_part_internal_fields</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fields that are used internally by part.c These fields should only be accessed from a module using any pertinent get and set methods.  <a href="structspdk__bdev__part_1_1bdev__part__internal__fields.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev__part__channel.html">spdk_bdev_part_channel</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -197,9 +198,9 @@ typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_u
 <tr class="memitem:ab60bee4dc86309421c01f3f3663fc759"><td class="memItemLeft" align="right" valign="top"><a id="ab60bee4dc86309421c01f3f3663fc759"></a>
 typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_io_get_buf_cb</b>) (struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *ch, struct <a class="el" href="structspdk__bdev__io.html">spdk_bdev_io</a> *bdev_io)</td></tr>
 <tr class="separator:ab60bee4dc86309421c01f3f3663fc759"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acf7800facdc37364bf6bc42a2efcf05a"><td class="memItemLeft" align="right" valign="top"><a id="acf7800facdc37364bf6bc42a2efcf05a"></a>
-typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_part_base_free_fn</b>) (struct <a class="el" href="structspdk__bdev__part__base.html">spdk_bdev_part_base</a> *base)</td></tr>
-<tr class="separator:acf7800facdc37364bf6bc42a2efcf05a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad226e52efa62c0b31340be538000d1a8"><td class="memItemLeft" align="right" valign="top"><a id="ad226e52efa62c0b31340be538000d1a8"></a>
+typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_part_base_free_fn</b>) (void *ctx)</td></tr>
+<tr class="separator:ad226e52efa62c0b31340be538000d1a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
@@ -293,10 +294,22 @@ typedef&#160;</td><td class="memItemRight" valign="bottom"><b>STAILQ_HEAD</b> (,
 <tr class="memitem:a1d1a5d28d5d17381f15953cb13a4cc6c"><td class="memItemLeft" align="right" valign="top"><a id="a1d1a5d28d5d17381f15953cb13a4cc6c"></a>
 static struct <a class="el" href="structspdk__bdev__io.html">spdk_bdev_io</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_io_from_ctx</b> (void *ctx)</td></tr>
 <tr class="separator:a1d1a5d28d5d17381f15953cb13a4cc6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed3ff2400cb02ba0f627000dddee322b"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev__module_8h.html#aed3ff2400cb02ba0f627000dddee322b">spdk_bdev_part_base_get_bdev</a> (struct spdk_bdev_part_base *part_base)</td></tr>
+<tr class="memdesc:aed3ff2400cb02ba0f627000dddee322b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a pointer to the <a class="el" href="structspdk__bdev.html">spdk_bdev</a> associated with an spdk_bdev_part_base.  <a href="#aed3ff2400cb02ba0f627000dddee322b">More...</a><br /></td></tr>
+<tr class="separator:aed3ff2400cb02ba0f627000dddee322b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa77a63a1e930928e8900c47354e4f626"><td class="memItemLeft" align="right" valign="top">struct spdk_bdev_desc *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev__module_8h.html#aa77a63a1e930928e8900c47354e4f626">spdk_bdev_part_base_get_desc</a> (struct spdk_bdev_part_base *part_base)</td></tr>
+<tr class="memdesc:aa77a63a1e930928e8900c47354e4f626"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a pointer to the spdk_bdev_descriptor associated with an spdk_bdev_part_base.  <a href="#aa77a63a1e930928e8900c47354e4f626">More...</a><br /></td></tr>
+<tr class="separator:aa77a63a1e930928e8900c47354e4f626"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38d791accba4b7e734c2968f4f5084cb"><td class="memItemLeft" align="right" valign="top">struct bdev_part_tailq *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev__module_8h.html#a38d791accba4b7e734c2968f4f5084cb">spdk_bdev_part_base_get_tailq</a> (struct spdk_bdev_part_base *part_base)</td></tr>
+<tr class="memdesc:a38d791accba4b7e734c2968f4f5084cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a pointer to the tailq associated with an spdk_bdev_part_base.  <a href="#a38d791accba4b7e734c2968f4f5084cb">More...</a><br /></td></tr>
+<tr class="separator:a38d791accba4b7e734c2968f4f5084cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01b2b4c60b3a775324f796e6be387015"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev__module_8h.html#a01b2b4c60b3a775324f796e6be387015">spdk_bdev_part_base_get_ctx</a> (struct spdk_bdev_part_base *part_base)</td></tr>
+<tr class="memdesc:a01b2b4c60b3a775324f796e6be387015"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a pointer to the module level context associated with an spdk_bdev_part_base.  <a href="#a01b2b4c60b3a775324f796e6be387015">More...</a><br /></td></tr>
+<tr class="separator:a01b2b4c60b3a775324f796e6be387015"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1e12eb0cf1d416b15159529e194908a8"><td class="memItemLeft" align="right" valign="top"><a id="a1e12eb0cf1d416b15159529e194908a8"></a>
 typedef&#160;</td><td class="memItemRight" valign="bottom"><b>TAILQ_HEAD</b> (bdev_part_tailq, <a class="el" href="structspdk__bdev__part.html">spdk_bdev_part</a>) SPDK_BDEV_PART_TAILQ</td></tr>
 <tr class="separator:a1e12eb0cf1d416b15159529e194908a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac496f9870a5626441ef14a073ef5e137"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev__module_8h.html#ac496f9870a5626441ef14a073ef5e137">spdk_bdev_part_base_free</a> (struct <a class="el" href="structspdk__bdev__part__base.html">spdk_bdev_part_base</a> *base)</td></tr>
+<tr class="memitem:ac496f9870a5626441ef14a073ef5e137"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev__module_8h.html#ac496f9870a5626441ef14a073ef5e137">spdk_bdev_part_base_free</a> (struct spdk_bdev_part_base *base)</td></tr>
 <tr class="memdesc:ac496f9870a5626441ef14a073ef5e137"><td class="mdescLeft">&#160;</td><td class="mdescRight">Free the base corresponding to one or more <a class="el" href="structspdk__bdev__part.html">spdk_bdev_part</a>.  <a href="#ac496f9870a5626441ef14a073ef5e137">More...</a><br /></td></tr>
 <tr class="separator:ac496f9870a5626441ef14a073ef5e137"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a340bfaab0ee5b3fd754759ad10f2dd4b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev__module_8h.html#a340bfaab0ee5b3fd754759ad10f2dd4b">spdk_bdev_part_free</a> (struct <a class="el" href="structspdk__bdev__part.html">spdk_bdev_part</a> *part)</td></tr>
@@ -305,15 +318,27 @@ typedef&#160;</td><td class="memItemRight" valign="bottom"><b>TAILQ_HEAD</b> (bd
 <tr class="memitem:af52aea5e28bd2a23fb9eabb2cf5f4c63"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev__module_8h.html#af52aea5e28bd2a23fb9eabb2cf5f4c63">spdk_bdev_part_base_hotremove</a> (struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *base_bdev, struct bdev_part_tailq *tailq)</td></tr>
 <tr class="memdesc:af52aea5e28bd2a23fb9eabb2cf5f4c63"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calls spdk_bdev_unregister on the bdev for each part associated with base_bdev.  <a href="#af52aea5e28bd2a23fb9eabb2cf5f4c63">More...</a><br /></td></tr>
 <tr class="separator:af52aea5e28bd2a23fb9eabb2cf5f4c63"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac7c2a866c41ee89037c8355eb5d27cb5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev__module_8h.html#ac7c2a866c41ee89037c8355eb5d27cb5">spdk_bdev_part_base_construct</a> (struct <a class="el" href="structspdk__bdev__part__base.html">spdk_bdev_part_base</a> *base, struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *bdev, <a class="el" href="bdev_8h.html#a51a55c97586c2d524fffcabc4d7910d6">spdk_bdev_remove_cb_t</a> remove_cb, struct <a class="el" href="structspdk__bdev__module.html">spdk_bdev_module</a> *module, struct <a class="el" href="structspdk__bdev__fn__table.html">spdk_bdev_fn_table</a> *fn_table, struct bdev_part_tailq *tailq, spdk_bdev_part_base_free_fn free_fn, uint32_t channel_size, <a class="el" href="thread_8h.html#aed1d14292cfee8553d4a1ebb519b210a">spdk_io_channel_create_cb</a> ch_create_cb, <a class="el" href="thread_8h.html#a75aa6a61877f23f79bb75c8fc5e68202">spdk_io_channel_destroy_cb</a> ch_destroy_cb)</td></tr>
-<tr class="memdesc:ac7c2a866c41ee89037c8355eb5d27cb5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new <a class="el" href="structspdk__bdev__part__base.html">spdk_bdev_part_base</a> on top of the provided bdev.  <a href="#ac7c2a866c41ee89037c8355eb5d27cb5">More...</a><br /></td></tr>
-<tr class="separator:ac7c2a866c41ee89037c8355eb5d27cb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a24c1e59da114916f39354813c0e761ee"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev__module_8h.html#a24c1e59da114916f39354813c0e761ee">spdk_bdev_part_construct</a> (struct <a class="el" href="structspdk__bdev__part.html">spdk_bdev_part</a> *part, struct <a class="el" href="structspdk__bdev__part__base.html">spdk_bdev_part_base</a> *base, char *name, uint64_t offset_blocks, uint64_t num_blocks, char *product_name)</td></tr>
+<tr class="memitem:a338144e9efbe3da7b78f034f2bdb1f93"><td class="memItemLeft" align="right" valign="top">struct spdk_bdev_part_base *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev__module_8h.html#a338144e9efbe3da7b78f034f2bdb1f93">spdk_bdev_part_base_construct</a> (struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *bdev, <a class="el" href="bdev_8h.html#a51a55c97586c2d524fffcabc4d7910d6">spdk_bdev_remove_cb_t</a> remove_cb, struct <a class="el" href="structspdk__bdev__module.html">spdk_bdev_module</a> *module, struct <a class="el" href="structspdk__bdev__fn__table.html">spdk_bdev_fn_table</a> *fn_table, struct bdev_part_tailq *tailq, spdk_bdev_part_base_free_fn free_fn, void *ctx, uint32_t channel_size, <a class="el" href="thread_8h.html#aed1d14292cfee8553d4a1ebb519b210a">spdk_io_channel_create_cb</a> ch_create_cb, <a class="el" href="thread_8h.html#a75aa6a61877f23f79bb75c8fc5e68202">spdk_io_channel_destroy_cb</a> ch_destroy_cb)</td></tr>
+<tr class="memdesc:a338144e9efbe3da7b78f034f2bdb1f93"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new spdk_bdev_part_base on top of the provided bdev.  <a href="#a338144e9efbe3da7b78f034f2bdb1f93">More...</a><br /></td></tr>
+<tr class="separator:a338144e9efbe3da7b78f034f2bdb1f93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24c1e59da114916f39354813c0e761ee"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev__module_8h.html#a24c1e59da114916f39354813c0e761ee">spdk_bdev_part_construct</a> (struct <a class="el" href="structspdk__bdev__part.html">spdk_bdev_part</a> *part, struct spdk_bdev_part_base *base, char *name, uint64_t offset_blocks, uint64_t num_blocks, char *product_name)</td></tr>
 <tr class="memdesc:a24c1e59da114916f39354813c0e761ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a logical <a class="el" href="structspdk__bdev__part.html">spdk_bdev_part</a> on top of a base.  <a href="#a24c1e59da114916f39354813c0e761ee">More...</a><br /></td></tr>
 <tr class="separator:a24c1e59da114916f39354813c0e761ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae7887b9afa298d871c93f94a3feb0bb3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev__module_8h.html#ae7887b9afa298d871c93f94a3feb0bb3">spdk_bdev_part_submit_request</a> (struct <a class="el" href="structspdk__bdev__part__channel.html">spdk_bdev_part_channel</a> *ch, struct <a class="el" href="structspdk__bdev__io.html">spdk_bdev_io</a> *bdev_io)</td></tr>
 <tr class="memdesc:ae7887b9afa298d871c93f94a3feb0bb3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forwards I/O from an <a class="el" href="structspdk__bdev__part.html">spdk_bdev_part</a> to the underlying base bdev.  <a href="#ae7887b9afa298d871c93f94a3feb0bb3">More...</a><br /></td></tr>
 <tr class="separator:ae7887b9afa298d871c93f94a3feb0bb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aecf8338710d95715ab7c40f31e378e7f"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev__module_8h.html#aecf8338710d95715ab7c40f31e378e7f">spdk_bdev_part_get_bdev</a> (struct <a class="el" href="structspdk__bdev__part.html">spdk_bdev_part</a> *part)</td></tr>
+<tr class="memdesc:aecf8338710d95715ab7c40f31e378e7f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a pointer to this part's <a class="el" href="structspdk__bdev.html">spdk_bdev</a>.  <a href="#aecf8338710d95715ab7c40f31e378e7f">More...</a><br /></td></tr>
+<tr class="separator:aecf8338710d95715ab7c40f31e378e7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab31a2224b0b9c1cc5cb6bbd89d4c6453"><td class="memItemLeft" align="right" valign="top">struct spdk_bdev_part_base *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev__module_8h.html#ab31a2224b0b9c1cc5cb6bbd89d4c6453">spdk_bdev_part_get_base</a> (struct <a class="el" href="structspdk__bdev__part.html">spdk_bdev_part</a> *part)</td></tr>
+<tr class="memdesc:ab31a2224b0b9c1cc5cb6bbd89d4c6453"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a pointer to this part's base.  <a href="#ab31a2224b0b9c1cc5cb6bbd89d4c6453">More...</a><br /></td></tr>
+<tr class="separator:ab31a2224b0b9c1cc5cb6bbd89d4c6453"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4fcd275ee1ff302cf8b141286abf424e"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev__module_8h.html#a4fcd275ee1ff302cf8b141286abf424e">spdk_bdev_part_get_base_bdev</a> (struct <a class="el" href="structspdk__bdev__part.html">spdk_bdev_part</a> *part)</td></tr>
+<tr class="memdesc:a4fcd275ee1ff302cf8b141286abf424e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a pointer to this part's base bdev.  <a href="#a4fcd275ee1ff302cf8b141286abf424e">More...</a><br /></td></tr>
+<tr class="separator:a4fcd275ee1ff302cf8b141286abf424e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac824d6bb007d80f33425a6cd81b60ce4"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev__module_8h.html#ac824d6bb007d80f33425a6cd81b60ce4">spdk_bdev_part_get_offset_blocks</a> (struct <a class="el" href="structspdk__bdev__part.html">spdk_bdev_part</a> *part)</td></tr>
+<tr class="memdesc:ac824d6bb007d80f33425a6cd81b60ce4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return this part's offset from the beginning of the base bdev.  <a href="#ac824d6bb007d80f33425a6cd81b60ce4">More...</a><br /></td></tr>
+<tr class="separator:ac824d6bb007d80f33425a6cd81b60ce4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Block Device Module Interface. </p>
@@ -987,21 +1012,15 @@ typedef&#160;</td><td class="memItemRight" valign="bottom"><b>TAILQ_HEAD</b> (bd
 
 </div>
 </div>
-<a id="ac7c2a866c41ee89037c8355eb5d27cb5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac7c2a866c41ee89037c8355eb5d27cb5">&#9670;&nbsp;</a></span>spdk_bdev_part_base_construct()</h2>
+<a id="a338144e9efbe3da7b78f034f2bdb1f93"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a338144e9efbe3da7b78f034f2bdb1f93">&#9670;&nbsp;</a></span>spdk_bdev_part_base_construct()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int spdk_bdev_part_base_construct </td>
+          <td class="memname">struct spdk_bdev_part_base* spdk_bdev_part_base_construct </td>
           <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structspdk__bdev__part__base.html">spdk_bdev_part_base</a> *&#160;</td>
-          <td class="paramname"><em>base</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype">struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *&#160;</td>
           <td class="paramname"><em>bdev</em>, </td>
         </tr>
@@ -1038,6 +1057,12 @@ typedef&#160;</td><td class="memItemRight" valign="bottom"><b>TAILQ_HEAD</b> (bd
         <tr>
           <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>ctx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype">uint32_t&#160;</td>
           <td class="paramname"><em>channel_size</em>, </td>
         </tr>
@@ -1061,16 +1086,16 @@ typedef&#160;</td><td class="memItemRight" valign="bottom"><b>TAILQ_HEAD</b> (bd
       </table>
 </div><div class="memdoc">
 
-<p>Construct a new <a class="el" href="structspdk__bdev__part__base.html">spdk_bdev_part_base</a> on top of the provided bdev. </p>
+<p>Construct a new spdk_bdev_part_base on top of the provided bdev. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">base</td><td>User allocated <a class="el" href="structspdk__bdev__part__base.html">spdk_bdev_part_base</a> to be filled by this function. </td></tr>
     <tr><td class="paramname">bdev</td><td>The <a class="el" href="structspdk__bdev.html">spdk_bdev</a> upon which this base will be built. </td></tr>
     <tr><td class="paramname">remove_cb</td><td>Function to be called upon hotremove of the bdev. </td></tr>
     <tr><td class="paramname">module</td><td>The module to which this bdev base belongs. </td></tr>
     <tr><td class="paramname">fn_table</td><td>Function table for communicating with the bdev backend. </td></tr>
     <tr><td class="paramname">tailq</td><td>The head of the list of all <a class="el" href="structspdk__bdev__part.html">spdk_bdev_part</a> structures registered to this base's module. </td></tr>
     <tr><td class="paramname">free_fn</td><td>User provided function to free base related context upon bdev removal or shutdown. </td></tr>
+    <tr><td class="paramname">ctx</td><td>Module specific context for this bdev part base. </td></tr>
     <tr><td class="paramname">channel_size</td><td>Channel size in bytes. </td></tr>
     <tr><td class="paramname">ch_create_cb</td><td>Called after a new channel is allocated. </td></tr>
     <tr><td class="paramname">ch_destroy_cb</td><td>Called upon channel deletion.</td></tr>
@@ -1092,7 +1117,7 @@ typedef&#160;</td><td class="memItemRight" valign="bottom"><b>TAILQ_HEAD</b> (bd
         <tr>
           <td class="memname">void spdk_bdev_part_base_free </td>
           <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structspdk__bdev__part__base.html">spdk_bdev_part_base</a> *&#160;</td>
+          <td class="paramtype">struct spdk_bdev_part_base *&#160;</td>
           <td class="paramname"><em>base</em></td><td>)</td>
           <td></td>
         </tr>
@@ -1106,6 +1131,114 @@ typedef&#160;</td><td class="memItemRight" valign="bottom"><b>TAILQ_HEAD</b> (bd
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="aed3ff2400cb02ba0f627000dddee322b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed3ff2400cb02ba0f627000dddee322b">&#9670;&nbsp;</a></span>spdk_bdev_part_base_get_bdev()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a>* spdk_bdev_part_base_get_bdev </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_bdev_part_base *&#160;</td>
+          <td class="paramname"><em>part_base</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns a pointer to the <a class="el" href="structspdk__bdev.html">spdk_bdev</a> associated with an spdk_bdev_part_base. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">part_base</td><td>A pointer to an spdk_bdev_part_base object.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A pointer to the base's <a class="el" href="structspdk__bdev.html">spdk_bdev</a> struct. </dd></dl>
+
+</div>
+</div>
+<a id="a01b2b4c60b3a775324f796e6be387015"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a01b2b4c60b3a775324f796e6be387015">&#9670;&nbsp;</a></span>spdk_bdev_part_base_get_ctx()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* spdk_bdev_part_base_get_ctx </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_bdev_part_base *&#160;</td>
+          <td class="paramname"><em>part_base</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns a pointer to the module level context associated with an spdk_bdev_part_base. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">part_base</td><td>A pointer to an spdk_bdev_part_base object.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A pointer to the module level context registered with the base in spdk_bdev_part_base_construct. </dd></dl>
+
+</div>
+</div>
+<a id="aa77a63a1e930928e8900c47354e4f626"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa77a63a1e930928e8900c47354e4f626">&#9670;&nbsp;</a></span>spdk_bdev_part_base_get_desc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct spdk_bdev_desc* spdk_bdev_part_base_get_desc </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_bdev_part_base *&#160;</td>
+          <td class="paramname"><em>part_base</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns a pointer to the spdk_bdev_descriptor associated with an spdk_bdev_part_base. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">part_base</td><td>A pointer to an spdk_bdev_part_base object.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A pointer to the base's spdk_bdev_desc struct. </dd></dl>
+
+</div>
+</div>
+<a id="a38d791accba4b7e734c2968f4f5084cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a38d791accba4b7e734c2968f4f5084cb">&#9670;&nbsp;</a></span>spdk_bdev_part_base_get_tailq()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct bdev_part_tailq* spdk_bdev_part_base_get_tailq </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_bdev_part_base *&#160;</td>
+          <td class="paramname"><em>part_base</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns a pointer to the tailq associated with an spdk_bdev_part_base. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">part_base</td><td>A pointer to an spdk_bdev_part_base object.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The head of a tailq of <a class="el" href="structspdk__bdev__part.html">spdk_bdev_part</a> structs registered to the base's module. </dd></dl>
 
 </div>
 </div>
@@ -1161,7 +1294,7 @@ typedef&#160;</td><td class="memItemRight" valign="bottom"><b>TAILQ_HEAD</b> (bd
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">struct <a class="el" href="structspdk__bdev__part__base.html">spdk_bdev_part_base</a> *&#160;</td>
+          <td class="paramtype">struct spdk_bdev_part_base *&#160;</td>
           <td class="paramname"><em>base</em>, </td>
         </tr>
         <tr>
@@ -1238,6 +1371,116 @@ typedef&#160;</td><td class="memItemRight" valign="bottom"><b>TAILQ_HEAD</b> (bd
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>1 always. To indicate that the operation is asynchronous. </dd></dl>
+
+</div>
+</div>
+<a id="ab31a2224b0b9c1cc5cb6bbd89d4c6453"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab31a2224b0b9c1cc5cb6bbd89d4c6453">&#9670;&nbsp;</a></span>spdk_bdev_part_get_base()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct spdk_bdev_part_base* spdk_bdev_part_get_base </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structspdk__bdev__part.html">spdk_bdev_part</a> *&#160;</td>
+          <td class="paramname"><em>part</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Return a pointer to this part's base. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">part</td><td>An <a class="el" href="structspdk__bdev__part.html">spdk_bdev_part</a> object.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A pointer to this part's spdk_bdev_part_base object. </dd></dl>
+
+</div>
+</div>
+<a id="a4fcd275ee1ff302cf8b141286abf424e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4fcd275ee1ff302cf8b141286abf424e">&#9670;&nbsp;</a></span>spdk_bdev_part_get_base_bdev()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a>* spdk_bdev_part_get_base_bdev </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structspdk__bdev__part.html">spdk_bdev_part</a> *&#160;</td>
+          <td class="paramname"><em>part</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Return a pointer to this part's base bdev. </p>
+<p>The return value of this function is equivalent to calling spdk_bdev_part_base_get_bdev on this part's base.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">part</td><td>An <a class="el" href="structspdk__bdev__part.html">spdk_bdev_part</a> object.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A pointer to the bdev belonging to this part's base. </dd></dl>
+
+</div>
+</div>
+<a id="aecf8338710d95715ab7c40f31e378e7f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aecf8338710d95715ab7c40f31e378e7f">&#9670;&nbsp;</a></span>spdk_bdev_part_get_bdev()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a>* spdk_bdev_part_get_bdev </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structspdk__bdev__part.html">spdk_bdev_part</a> *&#160;</td>
+          <td class="paramname"><em>part</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Return a pointer to this part's <a class="el" href="structspdk__bdev.html">spdk_bdev</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">part</td><td>An <a class="el" href="structspdk__bdev__part.html">spdk_bdev_part</a> object.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A pointer to this part's <a class="el" href="structspdk__bdev.html">spdk_bdev</a> object. </dd></dl>
+
+</div>
+</div>
+<a id="ac824d6bb007d80f33425a6cd81b60ce4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac824d6bb007d80f33425a6cd81b60ce4">&#9670;&nbsp;</a></span>spdk_bdev_part_get_offset_blocks()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint64_t spdk_bdev_part_get_offset_blocks </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structspdk__bdev__part.html">spdk_bdev_part</a> *&#160;</td>
+          <td class="paramname"><em>part</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Return this part's offset from the beginning of the base bdev. </p>
+<p>This function should not be called in the I/O path. Any block translations to I/O will be handled in spdk_bdev_part_submit_request.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">part</td><td>An <a class="el" href="structspdk__bdev__part.html">spdk_bdev_part</a> object.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the block offset of this part from it's underlying bdev. </dd></dl>
 
 </div>
 </div>

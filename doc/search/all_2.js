@@ -6,6 +6,7 @@ var searchData=
   ['bdev_2eh',['bdev.h',['../bdev_8h.html',1,'']]],
   ['bdev_20i_2fo_20submit_20functions',['bdev I/O Submit Functions',['../group__bdev__io__submit__functions.html',1,'']]],
   ['bdev_5fmodule_2eh',['bdev_module.h',['../bdev__module_8h.html',1,'']]],
+  ['bdev_5fpart_5finternal_5ffields',['bdev_part_internal_fields',['../structspdk__bdev__part_1_1bdev__part__internal__fields.html',1,'spdk_bdev_part']]],
   ['block_20device_20layer_20programming_20guide',['Block Device Layer Programming Guide',['../bdev_pg.html',1,'prog_guides']]],
   ['bir',['bir',['../unionspdk__nvme__cmbloc__register.html#a7a72b6bb85d7c446b0ad55f74d91e13a',1,'spdk_nvme_cmbloc_register']]],
   ['bit_5farray_2eh',['bit_array.h',['../bit__array_8h.html',1,'']]],
