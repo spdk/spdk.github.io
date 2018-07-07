@@ -184,9 +184,12 @@ void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="st
 int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev__module.html#a490337d850141809c1cc930fb7b2e552">get_ctx_size</a> )(void)</td></tr>
 <tr class="memdesc:a490337d850141809c1cc930fb7b2e552"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the allocation size required for the backend for uses such as local command structs, local SGL, iovecs, or other user context. <br /></td></tr>
 <tr class="separator:a490337d850141809c1cc930fb7b2e552"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adf76d0721b17731041d579e6b9d5605d"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev__module.html#adf76d0721b17731041d579e6b9d5605d">examine</a> )(struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *bdev)</td></tr>
-<tr class="memdesc:adf76d0721b17731041d579e6b9d5605d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Notification that a bdev should be examined by a virtual bdev module.  <a href="#adf76d0721b17731041d579e6b9d5605d">More...</a><br /></td></tr>
-<tr class="separator:adf76d0721b17731041d579e6b9d5605d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a0f5d5d762258471ba6e41119b9f921"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev__module.html#a0a0f5d5d762258471ba6e41119b9f921">examine_config</a> )(struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *bdev)</td></tr>
+<tr class="memdesc:a0a0f5d5d762258471ba6e41119b9f921"><td class="mdescLeft">&#160;</td><td class="mdescRight">First notification that a bdev should be examined by a virtual bdev module.  <a href="#a0a0f5d5d762258471ba6e41119b9f921">More...</a><br /></td></tr>
+<tr class="separator:a0a0f5d5d762258471ba6e41119b9f921"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18e49a0bccf1b515e51afbde09f8ac35"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev__module.html#a18e49a0bccf1b515e51afbde09f8ac35">examine_disk</a> )(struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *bdev)</td></tr>
+<tr class="memdesc:a18e49a0bccf1b515e51afbde09f8ac35"><td class="mdescLeft">&#160;</td><td class="mdescRight">Second notification that a bdev should be examined by a virtual bdev module.  <a href="#a18e49a0bccf1b515e51afbde09f8ac35">More...</a><br /></td></tr>
+<tr class="separator:a18e49a0bccf1b515e51afbde09f8ac35"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af3a57fb52458d82248fac0570c80cc52"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev__module.html#af3a57fb52458d82248fac0570c80cc52">async_init</a></td></tr>
 <tr class="memdesc:af3a57fb52458d82248fac0570c80cc52"><td class="mdescLeft">&#160;</td><td class="mdescRight">Denotes if the module_init function may complete asynchronously.  <a href="#af3a57fb52458d82248fac0570c80cc52">More...</a><br /></td></tr>
 <tr class="separator:af3a57fb52458d82248fac0570c80cc52"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -251,20 +254,37 @@ struct <a class="el" href="structspdk__bdev__module_1_1____bdev__module__interna
 
 </div>
 </div>
-<a id="adf76d0721b17731041d579e6b9d5605d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adf76d0721b17731041d579e6b9d5605d">&#9670;&nbsp;</a></span>examine</h2>
+<a id="a0a0f5d5d762258471ba6e41119b9f921"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a0f5d5d762258471ba6e41119b9f921">&#9670;&nbsp;</a></span>examine_config</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void(* spdk_bdev_module::examine) (struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *bdev)</td>
+          <td class="memname">void(* spdk_bdev_module::examine_config) (struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *bdev)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Notification that a bdev should be examined by a virtual bdev module. </p>
-<p>Virtual bdev modules may use this to examine newly-added bdevs and automatically create their own vbdevs. </p>
+<p>First notification that a bdev should be examined by a virtual bdev module. </p>
+<p>Virtual bdev modules may use this to examine newly-added bdevs and automatically create their own vbdevs, but no I/O to device can be send to bdev at this point. Only vbdevs based on config files can be created here. </p>
+
+</div>
+</div>
+<a id="a18e49a0bccf1b515e51afbde09f8ac35"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a18e49a0bccf1b515e51afbde09f8ac35">&#9670;&nbsp;</a></span>examine_disk</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void(* spdk_bdev_module::examine_disk) (struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *bdev)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Second notification that a bdev should be examined by a virtual bdev module. </p>
+<p>Virtual bdev modules may use this to examine newly-added bdevs and automatically create their own vbdevs. This callback may use I/O operations end finish asynchronously. </p>
 
 </div>
 </div>

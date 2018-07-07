@@ -167,6 +167,23 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
+<tr class="memitem:a24890c3258742ac4ca1d92e11bab07b9"><td class="memItemLeft" align="right" valign="top">struct spdk_bdev_channel *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev__io_1_1____bdev__io__internal__fields.html#a24890c3258742ac4ca1d92e11bab07b9">ch</a></td></tr>
+<tr class="memdesc:a24890c3258742ac4ca1d92e11bab07b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">The bdev I/O channel that this was handled on.  <a href="#a24890c3258742ac4ca1d92e11bab07b9">More...</a><br /></td></tr>
+<tr class="separator:a24890c3258742ac4ca1d92e11bab07b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a538e1a5baf1242b0b41489e4f0f411f9"><td class="memItemLeft" align="right" valign="top">struct spdk_bdev_channel *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev__io_1_1____bdev__io__internal__fields.html#a538e1a5baf1242b0b41489e4f0f411f9">io_submit_ch</a></td></tr>
+<tr class="memdesc:a538e1a5baf1242b0b41489e4f0f411f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">The bdev I/O channel that this was submitted on.  <a href="#a538e1a5baf1242b0b41489e4f0f411f9">More...</a><br /></td></tr>
+<tr class="separator:a538e1a5baf1242b0b41489e4f0f411f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc3511a74f557ca1ac31aa517ad719a9"><td class="memItemLeft" align="right" valign="top"><a id="acc3511a74f557ca1ac31aa517ad719a9"></a>
+<a class="el" href="bdev_8h.html#a0c5602dfd313f90032dd91683b9663e3">spdk_bdev_io_completion_cb</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev__io_1_1____bdev__io__internal__fields.html#acc3511a74f557ca1ac31aa517ad719a9">cb</a></td></tr>
+<tr class="memdesc:acc3511a74f557ca1ac31aa517ad719a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">User function that will be called when this completes. <br /></td></tr>
+<tr class="separator:acc3511a74f557ca1ac31aa517ad719a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51d274b6003ff0f95466eca21bdd7dd1"><td class="memItemLeft" align="right" valign="top"><a id="a51d274b6003ff0f95466eca21bdd7dd1"></a>
+void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev__io_1_1____bdev__io__internal__fields.html#a51d274b6003ff0f95466eca21bdd7dd1">caller_ctx</a></td></tr>
+<tr class="memdesc:a51d274b6003ff0f95466eca21bdd7dd1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Context that will be passed to the completion callback. <br /></td></tr>
+<tr class="separator:a51d274b6003ff0f95466eca21bdd7dd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e0b8fe4a5a6b8636d6aeb61348f9c4a"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev__io_1_1____bdev__io__internal__fields.html#a3e0b8fe4a5a6b8636d6aeb61348f9c4a">submit_tsc</a></td></tr>
+<tr class="memdesc:a3e0b8fe4a5a6b8636d6aeb61348f9c4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Current tsc at submit time.  <a href="#a3e0b8fe4a5a6b8636d6aeb61348f9c4a">More...</a><br /></td></tr>
+<tr class="separator:a3e0b8fe4a5a6b8636d6aeb61348f9c4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9d8164ef1b3235d9d895bddc4c0c84be"><td class="memItemLeft" ><a id="a9d8164ef1b3235d9d895bddc4c0c84be"></a>
 union {</td></tr>
 <tr class="memitem:ae9b34c57d6b19de7d79094fedd4ee5a5"><td class="memItemLeft" >
@@ -206,23 +223,6 @@ union {</td></tr>
 <tr class="memitem:a9d8164ef1b3235d9d895bddc4c0c84be"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev__io_1_1____bdev__io__internal__fields.html#a9d8164ef1b3235d9d895bddc4c0c84be">error</a></td></tr>
 <tr class="memdesc:a9d8164ef1b3235d9d895bddc4c0c84be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Error information from a device. <br /></td></tr>
 <tr class="separator:a9d8164ef1b3235d9d895bddc4c0c84be"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a24890c3258742ac4ca1d92e11bab07b9"><td class="memItemLeft" align="right" valign="top">struct spdk_bdev_channel *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev__io_1_1____bdev__io__internal__fields.html#a24890c3258742ac4ca1d92e11bab07b9">ch</a></td></tr>
-<tr class="memdesc:a24890c3258742ac4ca1d92e11bab07b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">The bdev I/O channel that this was handled on.  <a href="#a24890c3258742ac4ca1d92e11bab07b9">More...</a><br /></td></tr>
-<tr class="separator:a24890c3258742ac4ca1d92e11bab07b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a538e1a5baf1242b0b41489e4f0f411f9"><td class="memItemLeft" align="right" valign="top">struct spdk_bdev_channel *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev__io_1_1____bdev__io__internal__fields.html#a538e1a5baf1242b0b41489e4f0f411f9">io_submit_ch</a></td></tr>
-<tr class="memdesc:a538e1a5baf1242b0b41489e4f0f411f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">The bdev I/O channel that this was submitted on.  <a href="#a538e1a5baf1242b0b41489e4f0f411f9">More...</a><br /></td></tr>
-<tr class="separator:a538e1a5baf1242b0b41489e4f0f411f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acc3511a74f557ca1ac31aa517ad719a9"><td class="memItemLeft" align="right" valign="top"><a id="acc3511a74f557ca1ac31aa517ad719a9"></a>
-<a class="el" href="bdev_8h.html#a0c5602dfd313f90032dd91683b9663e3">spdk_bdev_io_completion_cb</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev__io_1_1____bdev__io__internal__fields.html#acc3511a74f557ca1ac31aa517ad719a9">cb</a></td></tr>
-<tr class="memdesc:acc3511a74f557ca1ac31aa517ad719a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">User function that will be called when this completes. <br /></td></tr>
-<tr class="separator:acc3511a74f557ca1ac31aa517ad719a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a51d274b6003ff0f95466eca21bdd7dd1"><td class="memItemLeft" align="right" valign="top"><a id="a51d274b6003ff0f95466eca21bdd7dd1"></a>
-void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev__io_1_1____bdev__io__internal__fields.html#a51d274b6003ff0f95466eca21bdd7dd1">caller_ctx</a></td></tr>
-<tr class="memdesc:a51d274b6003ff0f95466eca21bdd7dd1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Context that will be passed to the completion callback. <br /></td></tr>
-<tr class="separator:a51d274b6003ff0f95466eca21bdd7dd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3e0b8fe4a5a6b8636d6aeb61348f9c4a"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev__io_1_1____bdev__io__internal__fields.html#a3e0b8fe4a5a6b8636d6aeb61348f9c4a">submit_tsc</a></td></tr>
-<tr class="memdesc:a3e0b8fe4a5a6b8636d6aeb61348f9c4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Current tsc at submit time.  <a href="#a3e0b8fe4a5a6b8636d6aeb61348f9c4a">More...</a><br /></td></tr>
-<tr class="separator:a3e0b8fe4a5a6b8636d6aeb61348f9c4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a79f4b610c4db721dbe99f5698d1886f6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev__io_1_1____bdev__io__internal__fields.html#a79f4b610c4db721dbe99f5698d1886f6">in_submit_request</a></td></tr>
 <tr class="memdesc:a79f4b610c4db721dbe99f5698d1886f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set to true while the bdev module submit_request function is in progress.  <a href="#a79f4b610c4db721dbe99f5698d1886f6">More...</a><br /></td></tr>
 <tr class="separator:a79f4b610c4db721dbe99f5698d1886f6"><td class="memSeparator" colspan="2">&#160;</td></tr>

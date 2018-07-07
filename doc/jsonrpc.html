@@ -165,9 +165,14 @@ context_switch_monitor</h2>
 <td>enabled </td><td>Optional </td><td>boolean </td><td>Enable (<code>true</code>) or disable (<code>false</code>) monitoring (omit this parameter to query the current state) </td></tr>
 </table>
 <h3>Response</h3>
-<p>The current state of context switch monitoring is returned as a boolean.</p>
+<table class="doxtable">
+<tr>
+<th>Name </th><th>Type </th><th>Description  </th></tr>
+<tr>
+<td>enabled </td><td>boolean </td><td>The current state of context switch monitoring </td></tr>
+</table>
 <h3>Example</h3>
-<p>Example request: </p><div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;method&quot;: &quot;context_switch_monitor&quot;,</div><div class="line">  &quot;params&quot;: {</div><div class="line">    &quot;enabled&quot;: false</div><div class="line">  }</div><div class="line">}</div></div><!-- fragment --><p>Example response: </p><div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: false</div><div class="line">}</div></div><!-- fragment --><h2><a class="anchor" id="rpc_start_subsystem_init"></a>
+<p>Example request: </p><div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;method&quot;: &quot;context_switch_monitor&quot;,</div><div class="line">  &quot;params&quot;: {</div><div class="line">    &quot;enabled&quot;: false</div><div class="line">  }</div><div class="line">}</div></div><!-- fragment --><p>Example response: </p><div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: {</div><div class="line">    &quot;enabled&quot;: false</div><div class="line">  }</div><div class="line">}</div></div><!-- fragment --><h2><a class="anchor" id="rpc_start_subsystem_init"></a>
 start_subsystem_init</h2>
 <p>Start initialization of SPDK subsystems when it is deferred by starting SPDK application with option -w. During its deferral some RPCs can be used to set global parameters for SPDK subsystems. This RPC can be called only once.</p>
 <h3>Parameters</h3>
@@ -475,8 +480,12 @@ set_nvmf_target_config</h2>
 <h3>Example</h3>
 <p>Example request: </p><div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;method&quot;: &quot;set_nvmf_target_config&quot;,</div><div class="line">  &quot;params&quot;: {</div><div class="line">    &quot;acceptor_poll_rate&quot;: 10000</div><div class="line">  }</div><div class="line">}</div></div><!-- fragment --><p>Example response: </p><div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: true</div><div class="line">}</div></div><!-- fragment --><h1><a class="anchor" id="jsonrpc_components_lvol"></a>
 Logical Volume</h1>
-<p>Identification of logical volume store is explained first.</p>
+<p>Identification of logical volume store and logical volume is explained first.</p>
 <p>A logical volume store has a UUID and a name for its identification. The UUID is generated on creation and it can be used as a unique identifier. The name is specified on creation and can be renamed. Either UUID or name is used to access logical volume store in RPCs.</p>
+<p>A logical volume has a UUID and a name for its identification. The UUID of the logical volume is generated on creation and it can be unique identifier. The alias of the logical volume takes the format <em>lvs_name/lvol_name</em> where:</p><ul>
+<li><em>lvs_name</em> is the name of the logical volume store.</li>
+<li><em>lvol_name</em> is specified on creation and can be renamed.</li>
+</ul>
 <h2><a class="anchor" id="rpc_construct_lvol_store"></a>
 construct_lvol_store</h2>
 <p>Construct a logical volume store.</p>
@@ -535,6 +544,117 @@ rename_lvol_store</h2>
 <td>new_name </td><td>Required </td><td>string </td><td>New logical volume store name </td></tr>
 </table>
 <h3>Example</h3>
-<p>Example request: </p><div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;method&quot;: &quot;rename_lvol_store&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;params&quot;: {</div><div class="line">    &quot;old_name&quot;: &quot;LVS0&quot;,</div><div class="line">    &quot;new_name&quot;: &quot;LVS2&quot;</div><div class="line">  }</div><div class="line">}</div></div><!-- fragment --><p>Example response: </p><div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: true</div><div class="line">}</div></div><!-- fragment --> </div></div><!-- contents -->
+<p>Example request: </p><div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;method&quot;: &quot;rename_lvol_store&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;params&quot;: {</div><div class="line">    &quot;old_name&quot;: &quot;LVS0&quot;,</div><div class="line">    &quot;new_name&quot;: &quot;LVS2&quot;</div><div class="line">  }</div><div class="line">}</div></div><!-- fragment --><p>Example response: </p><div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: true</div><div class="line">}</div></div><!-- fragment --><h2><a class="anchor" id="rpc_construct_lvol_bdev"></a>
+construct_lvol_bdev</h2>
+<p>Create a logical volume on a logical volume store.</p>
+<h3>Parameters</h3>
+<table class="doxtable">
+<tr>
+<th>Name </th><th>Optional </th><th>Type </th><th>Description  </th></tr>
+<tr>
+<td>lvol_name </td><td>Required </td><td>string </td><td>Name of logical volume to create </td></tr>
+<tr>
+<td>size </td><td>Required </td><td>number </td><td>Desired size of logical volume in bytes </td></tr>
+<tr>
+<td>thin_provision </td><td>Optional </td><td>boolean </td><td>True to enable thin provisioning </td></tr>
+<tr>
+<td>uuid </td><td>Optional </td><td>string </td><td>UUID of logical volume store to create logical volume on </td></tr>
+<tr>
+<td>lvs_name </td><td>Optional </td><td>string </td><td>Name of logical volume store to create logical volume on </td></tr>
+</table>
+<p>Size will be rounded up to a multiple of cluster size. Either uuid or lvs_name must be specified, but not both. lvol_name will be used in the alias of the created logical volume.</p>
+<h3>Response</h3>
+<p>UUID of the created logical volume is returned.</p>
+<h3>Example</h3>
+<p>Example request: </p><div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;method&quot;: &quot;construct_lvol_bdev&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;params&quot;: {</div><div class="line">    &quot;lvol_name&quot;: &quot;LVOL0&quot;,</div><div class="line">    &quot;size&quot;: 1048576,</div><div class="line">    &quot;lvs_name&quot;: &quot;LVS0&quot;,</div><div class="line">    &quot;thin_provision&quot;: true</div><div class="line">  }</div><div class="line">}</div></div><!-- fragment --><p>Example response: </p><div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: &quot;1b38702c-7f0c-411e-a962-92c6a5a8a602&quot;</div><div class="line">}</div></div><!-- fragment --><h2><a class="anchor" id="rpc_snapshot_lvol_bdev"></a>
+snapshot_lvol_bdev</h2>
+<p>Capture a snapshot of the current state of a logical volume.</p>
+<h3>Parameters</h3>
+<table class="doxtable">
+<tr>
+<th>Name </th><th>Optional </th><th>Type </th><th>Description  </th></tr>
+<tr>
+<td>lvol_name </td><td>Required </td><td>string </td><td>UUID or alias of the logical volume to create a snapshot from </td></tr>
+<tr>
+<td>snapshot_name </td><td>Required </td><td>string </td><td>Name for the newly created snapshot </td></tr>
+</table>
+<h3>Response</h3>
+<p>UUID of the created logical volume snapshot is returned.</p>
+<h3>Example</h3>
+<p>Example request: </p><div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;method&quot;: &quot;snapshot_lvol_bdev&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;params&quot;: {</div><div class="line">    &quot;lvol_name&quot;: &quot;1b38702c-7f0c-411e-a962-92c6a5a8a602&quot;,</div><div class="line">    &quot;snapshot_name&quot;: &quot;SNAP1&quot;</div><div class="line">  }</div><div class="line">}</div></div><!-- fragment --><p>Example response: </p><div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: &quot;cc8d7fdf-7865-4d1f-9fc6-35da8e368670&quot;</div><div class="line">}</div></div><!-- fragment --><h2><a class="anchor" id="rpc_clone_lvol_bdev"></a>
+clone_lvol_bdev</h2>
+<p>Create a logical volume based on a snapshot.</p>
+<h3>Parameters</h3>
+<table class="doxtable">
+<tr>
+<th>Name </th><th>Optional </th><th>Type </th><th>Description  </th></tr>
+<tr>
+<td>snapshot_name </td><td>Required </td><td>string </td><td>UUID or alias of the snapshot to clone </td></tr>
+<tr>
+<td>clone_name </td><td>Required </td><td>string </td><td>Name for the logical volume to create </td></tr>
+</table>
+<h3>Response</h3>
+<p>UUID of the created logical volume clone is returned.</p>
+<h3>Example</h3>
+<p>Example request: </p><div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;</div><div class="line">  &quot;method&quot;: &quot;clone_lvol_bdev&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;params&quot;: {</div><div class="line">    &quot;snapshot_name&quot;: &quot;cc8d7fdf-7865-4d1f-9fc6-35da8e368670&quot;,</div><div class="line">    &quot;clone_name&quot;: &quot;CLONE1&quot;</div><div class="line">  }</div><div class="line">}</div></div><!-- fragment --><p>Example response: </p><div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: &quot;8d87fccc-c278-49f0-9d4c-6237951aca09&quot;</div><div class="line">}</div></div><!-- fragment --><h2><a class="anchor" id="rpc_rename_lvol_bdev"></a>
+rename_lvol_bdev</h2>
+<p>Rename a logical volume. New name will rename only the alias of the logical volume.</p>
+<h3>Parameters</h3>
+<table class="doxtable">
+<tr>
+<th>Name </th><th>Optional </th><th>Type </th><th>Description  </th></tr>
+<tr>
+<td>old_name </td><td>Required </td><td>string </td><td>UUID or alias of the existing logical volume </td></tr>
+<tr>
+<td>new_name </td><td>Required </td><td>string </td><td>New logical volume name </td></tr>
+</table>
+<h3>Example</h3>
+<p>Example request: </p><div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;method&quot;: &quot;rename_lvol_bdev&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;params&quot;: {</div><div class="line">    &quot;old_name&quot;: &quot;067df606-6dbc-4143-a499-0d05855cb3b8&quot;,</div><div class="line">    &quot;new_name&quot;: &quot;LVOL2&quot;</div><div class="line">  }</div><div class="line">}</div></div><!-- fragment --><p>Example response: </p><div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: true</div><div class="line">}</div></div><!-- fragment --><h2><a class="anchor" id="rpc_resize_lvol_bdev"></a>
+resize_lvol_bdev</h2>
+<p>Resize a logical volume.</p>
+<h3>Parameters</h3>
+<table class="doxtable">
+<tr>
+<th>Name </th><th>Optional </th><th>Type </th><th>Description  </th></tr>
+<tr>
+<td>name </td><td>Required </td><td>string </td><td>UUID or alias of the logical volume to resize </td></tr>
+<tr>
+<td>size </td><td>Required </td><td>number </td><td>Desired size of the logical volume in bytes </td></tr>
+</table>
+<h3>Example</h3>
+<p>Example request: </p><div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;method&quot;: &quot;resize_lvol_bdev&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;params&quot;: {</div><div class="line">    &quot;name&quot;: &quot;51638754-ca16-43a7-9f8f-294a0805ab0a&quot;,</div><div class="line">    &quot;size&quot;: 2097152</div><div class="line">  }</div><div class="line">}</div></div><!-- fragment --><p>Example response: </p><div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: true</div><div class="line">}</div></div><!-- fragment --><h2><a class="anchor" id="rpc_destroy_lvol_bdev"></a>
+destroy_lvol_bdev</h2>
+<p>Destroy a logical volume.</p>
+<h3>Parameters</h3>
+<table class="doxtable">
+<tr>
+<th>Name </th><th>Optional </th><th>Type </th><th>Description  </th></tr>
+<tr>
+<td>name </td><td>Required </td><td>string </td><td>UUID or alias of the logical volume to destroy </td></tr>
+</table>
+<h3>Example</h3>
+<p>Example request: </p><div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;method&quot;: &quot;destroy_lvol_bdev&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;params&quot;: {</div><div class="line">    &quot;name&quot;: &quot;51638754-ca16-43a7-9f8f-294a0805ab0a&quot;</div><div class="line">  }</div><div class="line">}</div></div><!-- fragment --><p>Example response: </p><div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: true</div><div class="line">}</div></div><!-- fragment --><h2><a class="anchor" id="rpc_inflate_lvol_bdev"></a>
+inflate_lvol_bdev</h2>
+<p>Inflate a logical volume. All unallocated clusters are allocated and copied from the parent or zero filled if not allocated in the parent. Then all dependencies on the parent are removed.</p>
+<h3>Parameters</h3>
+<table class="doxtable">
+<tr>
+<th>Name </th><th>Optional </th><th>Type </th><th>Description  </th></tr>
+<tr>
+<td>name </td><td>Required </td><td>string </td><td>UUID or alias of the logical volume to inflate </td></tr>
+</table>
+<h3>Example</h3>
+<p>Example request: </p><div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;method&quot;: &quot;inflate_lvol_bdev&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;params&quot;: {</div><div class="line">    &quot;name&quot;: &quot;8d87fccc-c278-49f0-9d4c-6237951aca09&quot;</div><div class="line">  }</div><div class="line">}</div></div><!-- fragment --><p>Example response: </p><div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: true</div><div class="line">}</div></div><!-- fragment --><h2><a class="anchor" id="rpc_decouple_parent_lvol_bdev"></a>
+decouple_parent_lvol_bdev</h2>
+<p>Decouple the parent of a logical volume. For unallocated clusters which is allocated in the parent, they are allocated and copied from the parent, but for unallocated clusters which is thin provisioned in the parent, they are kept thin provisioned. Then all dependencies on the parent are removed.</p>
+<h3>Parameters</h3>
+<table class="doxtable">
+<tr>
+<th>Name </th><th>Optional </th><th>Type </th><th>Description  </th></tr>
+<tr>
+<td>name </td><td>Required </td><td>string </td><td>UUID or alias of the logical volume to decouple the parent of it </td></tr>
+</table>
+<h3>Example</h3>
+<p>Example request: </p><div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;method&quot;: &quot;decouple_parent_lvol_bdev&quot;,</div><div class="line">  &quot;id&quot;: 1.</div><div class="line">  &quot;params&quot;: {</div><div class="line">    &quot;name&quot;: &quot;8d87fccc-c278-49f0-9d4c-6237951aca09&quot;</div><div class="line">  }</div><div class="line">}</div></div><!-- fragment --><p>Example response: </p><div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: true</div><div class="line">}</div></div><!-- fragment --> </div></div><!-- contents -->
 </div><!-- doc-content -->
 </div>

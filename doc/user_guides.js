@@ -113,7 +113,15 @@ var user_guides =
         [ "construct_lvol_store", "jsonrpc.html#rpc_construct_lvol_store", null ],
         [ "destroy_lvol_store", "jsonrpc.html#rpc_destroy_lvol_store", null ],
         [ "get_lvol_stores", "jsonrpc.html#rpc_get_lvol_stores", null ],
-        [ "rename_lvol_store", "jsonrpc.html#rpc_rename_lvol_store", null ]
+        [ "rename_lvol_store", "jsonrpc.html#rpc_rename_lvol_store", null ],
+        [ "construct_lvol_bdev", "jsonrpc.html#rpc_construct_lvol_bdev", null ],
+        [ "snapshot_lvol_bdev", "jsonrpc.html#rpc_snapshot_lvol_bdev", null ],
+        [ "clone_lvol_bdev", "jsonrpc.html#rpc_clone_lvol_bdev", null ],
+        [ "rename_lvol_bdev", "jsonrpc.html#rpc_rename_lvol_bdev", null ],
+        [ "resize_lvol_bdev", "jsonrpc.html#rpc_resize_lvol_bdev", null ],
+        [ "destroy_lvol_bdev", "jsonrpc.html#rpc_destroy_lvol_bdev", null ],
+        [ "inflate_lvol_bdev", "jsonrpc.html#rpc_inflate_lvol_bdev", null ],
+        [ "decouple_parent_lvol_bdev", "jsonrpc.html#rpc_decouple_parent_lvol_bdev", null ]
       ] ]
     ] ]
 ];

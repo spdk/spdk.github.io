@@ -1,5 +1,14 @@
 var NAVTREEINDEX8 =
 {
+"scsi__spec_8h.html#a35efeaeb4d8fb7a9b406846a2138b389a2d30838871aa379d21291e8f2a34fa23":[13,0,40,65,33],
+"scsi__spec_8h.html#a35efeaeb4d8fb7a9b406846a2138b389a375d981fbd680c1862ce762c0ffe7c81":[13,0,40,65,45],
+"scsi__spec_8h.html#a35efeaeb4d8fb7a9b406846a2138b389a3950c286c3c3fc9d97735977ff8825d4":[13,0,40,65,4],
+"scsi__spec_8h.html#a35efeaeb4d8fb7a9b406846a2138b389a3d0a886be66bb21f855df385a7ff3d9d":[13,0,40,65,38],
+"scsi__spec_8h.html#a35efeaeb4d8fb7a9b406846a2138b389a3e1402429ef922373d0e3bfe77626edb":[13,0,40,65,43],
+"scsi__spec_8h.html#a35efeaeb4d8fb7a9b406846a2138b389a45f127531ae343b0e900bdc4ed653085":[13,0,40,65,51],
+"scsi__spec_8h.html#a35efeaeb4d8fb7a9b406846a2138b389a4f391ae0f56169bb3ae3a524365970d3":[13,0,40,65,13],
+"scsi__spec_8h.html#a35efeaeb4d8fb7a9b406846a2138b389a6cc8b0c545a58e7eea368ad3c5cdaeb7":[13,0,40,65,14],
+"scsi__spec_8h.html#a35efeaeb4d8fb7a9b406846a2138b389a6dda93786206d5b69a9b20d5b093a24b":[13,0,40,65,1],
 "scsi__spec_8h.html#a35efeaeb4d8fb7a9b406846a2138b389a6ea77e6bea7ecdc3346fa9399b5fc9fd":[13,0,40,65,3],
 "scsi__spec_8h.html#a35efeaeb4d8fb7a9b406846a2138b389a75f2aa7d56e13cee39e82bfd927cf0bf":[13,0,40,65,49],
 "scsi__spec_8h.html#a35efeaeb4d8fb7a9b406846a2138b389a78c64ba1b59ab9f0280ba96c8ec63895":[13,0,40,65,9],
@@ -240,14 +249,5 @@ var NAVTREEINDEX8 =
 "scsi__spec_8h.html#ad749121eca6fe83c17f80c9f8bdd2427":[13,0,40,28],
 "scsi__spec_8h.html#ad760c3ce207d51ba0f22c4f482602a70":[13,0,40,78],
 "scsi__spec_8h.html#ad83cc43ef571678bd6d944b8e92cbe6c":[13,0,40,20],
-"scsi__spec_8h.html#add562fe5cd207d5d61502bf207f27233":[13,0,40,25],
-"scsi__spec_8h.html#af125f2e99a82db78a3fe9563bd0f02c9":[13,0,40,10],
-"scsi__spec_8h.html#af6319720f0642165496d79745fe1df1b":[13,0,40,26],
-"scsi__spec_8h.html#af993a050a0bdd0d520b7fdcbbb32d98a":[13,0,40,11],
-"sock_8h.html":[13,0,41],
-"sock_8h.html#a0be72049ed7537c6f8efb99dbb44d20c":[13,0,41,17],
-"sock_8h.html#a407c7aebae3d1a1556109da46a73213e":[13,0,41,2],
-"sock_8h.html#a4cc9153a7848b65e5487e5205f022909":[13,0,41,13],
-"sock_8h.html#a4e8d8e1b8155267b4b0289710e3b792f":[13,0,41,16],
-"sock_8h.html#a4f624276a1f0122bb624b2e8c5eaba19":[13,0,41,3]
+"scsi__spec_8h.html#add562fe5cd207d5d61502bf207f27233":[13,0,40,25]
 };
