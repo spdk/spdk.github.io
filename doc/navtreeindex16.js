@@ -1,14 +1,15 @@
 var NAVTREEINDEX16 =
 {
-"structspdk__scsi__task.html#a9f47315cf388129c3a93aeebee7daa7c":[12,0,185,7],
-"structspdk__scsi__task.html#aba29ae5812c3cee970298f7380118c9c":[12,0,185,13],
-"structspdk__scsi__task.html#acc6e7264981c87c73d1634091130ec97":[12,0,185,16],
-"structspdk__scsi__task.html#ad9943413adf600861730af1fdc4d15a7":[12,0,185,11],
-"structspdk__scsi__task.html#aeb209bc3f191f792707c7d4e7b1fe4e4":[12,0,185,20],
-"structspdk__scsi__task.html#aed0de3999a81a9aeb079f0d9e4c4f098":[12,0,185,6],
-"structspdk__scsi__task.html#af64768a06fe99dea3b1c90791d5970b0":[12,0,185,22],
-"structspdk__scsi__task.html#afa26345de5d75d6850560cc6c1bbc5fe":[12,0,185,5],
-"structspdk__scsi__task.html#afc9a5efc76a958e8d228fb6316e4eccb":[12,0,185,21],
+"structspdk__scsi__task.html#a961329926b7efacff65989b4fed4b617":[12,0,185,5],
+"structspdk__scsi__task.html#a9f47315cf388129c3a93aeebee7daa7c":[12,0,185,8],
+"structspdk__scsi__task.html#aba29ae5812c3cee970298f7380118c9c":[12,0,185,14],
+"structspdk__scsi__task.html#acc6e7264981c87c73d1634091130ec97":[12,0,185,17],
+"structspdk__scsi__task.html#ad9943413adf600861730af1fdc4d15a7":[12,0,185,12],
+"structspdk__scsi__task.html#aeb209bc3f191f792707c7d4e7b1fe4e4":[12,0,185,21],
+"structspdk__scsi__task.html#aed0de3999a81a9aeb079f0d9e4c4f098":[12,0,185,7],
+"structspdk__scsi__task.html#af64768a06fe99dea3b1c90791d5970b0":[12,0,185,23],
+"structspdk__scsi__task.html#afa26345de5d75d6850560cc6c1bbc5fe":[12,0,185,6],
+"structspdk__scsi__task.html#afc9a5efc76a958e8d228fb6316e4eccb":[12,0,185,22],
 "structspdk__scsi__tgt__port__desc.html":[12,0,186],
 "structspdk__scsi__tgt__port__desc.html#a3d7abed7b610535f8894020b44c498ea":[12,0,186,4],
 "structspdk__scsi__tgt__port__desc.html#a55d5e6e7e8f9aaf4a258e0f0cb79affe":[12,0,186,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX16 =
 "unionspdk__nvme__feat__arbitration.html#a47fb9a1efe9cd17abfa3a8b198919e34":[12,0,83,0],
 "unionspdk__nvme__feat__arbitration.html#af12378890a3a12fc4a54e10b6103859e":[12,0,83,6],
 "unionspdk__nvme__feat__arbitration.html#af4aba3c9698f25b20e45b8f0ca2cff74":[12,0,83,1],
-"unionspdk__nvme__feat__async__event__configuration.html":[12,0,84],
-"unionspdk__nvme__feat__async__event__configuration.html#a042e849ee18c493b3b0e04759745486e":[12,0,84,5]
+"unionspdk__nvme__feat__async__event__configuration.html":[12,0,84]
 };
