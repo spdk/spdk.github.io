@@ -163,6 +163,9 @@ get_bdevs</h2>
 <div class="fragment"><div class="line">{</div><div class="line">  &quot;num_blocks&quot;: 32768,</div><div class="line">  &quot;supported_io_types&quot;: {</div><div class="line">    &quot;reset&quot;: true,</div><div class="line">    &quot;nvme_admin&quot;: false,</div><div class="line">    &quot;unmap&quot;: true,</div><div class="line">    &quot;read&quot;: true,</div><div class="line">    &quot;write_zeroes&quot;: true,</div><div class="line">    &quot;write&quot;: true,</div><div class="line">    &quot;flush&quot;: true,</div><div class="line">    &quot;nvme_io&quot;: false</div><div class="line">  },</div><div class="line">  &quot;driver_specific&quot;: {},</div><div class="line">  &quot;claimed&quot;: false,</div><div class="line">  &quot;block_size&quot;: 4096,</div><div class="line">  &quot;product_name&quot;: &quot;Malloc disk&quot;,</div><div class="line">  &quot;name&quot;: &quot;Malloc0&quot;</div><div class="line">}</div></div><!-- fragment --><h2><a class="anchor" id="bdev_ug_delete_bdev"></a>
 delete_bdev</h2>
 <p>To remove previously created bdev user can use <code>delete_bdev</code> RPC command. Bdev can be deleted at any time and this will be fully handled by any upper layers. As an argument user should provide bdev name.</p>
+<h1><a class="anchor" id="bdev_config_malloc"></a>
+Malloc bdev</h1>
+<p>Malloc bdevs are ramdisks. Because of its nature they are volatile. They are created from hugepage memory given to SPDK application.</p>
 <h1><a class="anchor" id="bdev_config_nvme"></a>
 NVMe bdev</h1>
 <p>There are two ways to create block device based on NVMe device in SPDK. First way is to connect local PCIe drive and second one is to connect NVMe-oF device. In both cases user should use <code>construct_nvme_bdev</code> RPC command to achieve that.</p>

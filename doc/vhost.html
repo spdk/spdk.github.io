@@ -163,6 +163,15 @@ QEMU/SPDK vhost data flow</div></div>
 <h1><a class="anchor" id="vhost_prereqs"></a>
 Prerequisites</h1>
 <p>This guide assumes the SPDK has been built according to the instructions in <a class="el" href="getting_started.html">Getting Started</a>. The SPDK vhost target is built with the default configure options.</p>
+<h2><a class="anchor" id="vhost_cmd_line_args"></a>
+Vhost Command Line Parameters</h2>
+<p>Additional command line flags are available for Vhost target.</p>
+<table class="doxtable">
+<tr>
+<th>Param </th><th>Type </th><th>Default </th><th>Description  </th></tr>
+<tr>
+<td>-S </td><td>string </td><td>$PWD </td><td>directory where UNIX domain sockets will be created </td></tr>
+</table>
 <h2>Supported Guest Operating Systems</h2>
 <p>The guest OS must contain virtio-scsi or virtio-blk drivers. Most Linux and FreeBSD distributions include virtio drivers. <a href="https://fedoraproject.org/wiki/Windows_Virtio_Drivers">Windows virtio drivers</a> must be installed separately. The SPDK vhost target has been tested with recent versions of Ubuntu, Fedora, and Windows</p>
 <h2>QEMU</h2>

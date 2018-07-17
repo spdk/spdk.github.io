@@ -5,6 +5,7 @@ var searchData=
   ['tcrsm',['tcrsm',['../structspdk__ocssd__geometry__data.html#ad9b0daa6248be6bb99132912caa05942',1,'spdk_ocssd_geometry_data']]],
   ['tcrst',['tcrst',['../structspdk__ocssd__geometry__data.html#a5c4e52a3e3502ebbfd107915519659d9',1,'spdk_ocssd_geometry_data']]],
   ['telemetry',['telemetry',['../structspdk__nvme__ctrlr__data.html#a3111113eeed360498c0b5ee94bb0591b',1,'spdk_nvme_ctrlr_data']]],
+  ['temporary_5fqueue_5fdepth',['temporary_queue_depth',['../structspdk__bdev_1_1____bdev__internal__fields.html#afad02fdc83417a632d9ecc7f3c437c47',1,'spdk_bdev::__bdev_internal_fields']]],
   ['ter',['ter',['../unionspdk__nvme__vs__register.html#a606617023ad17e6cd547b7ba0c17af06',1,'spdk_nvme_vs_register']]],
   ['thin_5fprov',['thin_prov',['../structspdk__nvme__ns__data.html#a66c12446fe238c223433a307b4a55856',1,'spdk_nvme_ns_data']]],
   ['thread_2eh',['thread.h',['../thread_8h.html',1,'']]],

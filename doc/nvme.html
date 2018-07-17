@@ -181,21 +181,21 @@ Public Interface</h1>
 <tr>
 <td><a class="el" href="nvme_8h.html#a084c6ecb53bd810fbb5051100b79bec5" title="Submits a read I/O to the specified NVMe namespace. ">spdk_nvme_ns_cmd_read()</a> </td><td>Submits a read I/O to the specified NVMe namespace. </td></tr>
 <tr>
-<td><a class="el" href="nvme_8h.html#acb47ce7de6b6e963ec9fb8de261466ae" title="Submits a read I/O to the specified NVMe namespace. ">spdk_nvme_ns_cmd_readv()</a> </td><td>Submits a read I/O to the specified NVMe namespace. </td></tr>
+<td><a class="el" href="nvme_8h.html#acb47ce7de6b6e963ec9fb8de261466ae" title="Submit a read I/O to the specified NVMe namespace. ">spdk_nvme_ns_cmd_readv()</a> </td><td>Submit a read I/O to the specified NVMe namespace. </td></tr>
 <tr>
 <td><a class="el" href="nvme_8h.html#aa2913b93326e636eca6dfe7b42e349fe" title="Submits a read I/O to the specified NVMe namespace. ">spdk_nvme_ns_cmd_read_with_md()</a> </td><td>Submits a read I/O to the specified NVMe namespace. </td></tr>
 <tr>
-<td><a class="el" href="nvme_8h.html#a3065f669d8b605efdcadffbf94a50538" title="Submits a write I/O to the specified NVMe namespace. ">spdk_nvme_ns_cmd_write()</a> </td><td>Submits a write I/O to the specified NVMe namespace. </td></tr>
+<td><a class="el" href="nvme_8h.html#a3065f669d8b605efdcadffbf94a50538" title="Submit a write I/O to the specified NVMe namespace. ">spdk_nvme_ns_cmd_write()</a> </td><td>Submit a write I/O to the specified NVMe namespace. </td></tr>
 <tr>
-<td><a class="el" href="nvme_8h.html#adfcbb5d31f0b572847cc8ae8b07dfcfb" title="Submits a write I/O to the specified NVMe namespace. ">spdk_nvme_ns_cmd_writev()</a> </td><td>Submits a write I/O to the specified NVMe namespace. </td></tr>
+<td><a class="el" href="nvme_8h.html#adfcbb5d31f0b572847cc8ae8b07dfcfb" title="Submit a write I/O to the specified NVMe namespace. ">spdk_nvme_ns_cmd_writev()</a> </td><td>Submit a write I/O to the specified NVMe namespace. </td></tr>
 <tr>
-<td><a class="el" href="nvme_8h.html#adc2aa2be0d657be0c63d5abc02b274ec" title="Submits a write I/O to the specified NVMe namespace. ">spdk_nvme_ns_cmd_write_with_md()</a> </td><td>Submits a write I/O to the specified NVMe namespace. </td></tr>
+<td><a class="el" href="nvme_8h.html#adc2aa2be0d657be0c63d5abc02b274ec" title="Submit a write I/O to the specified NVMe namespace. ">spdk_nvme_ns_cmd_write_with_md()</a> </td><td>Submit a write I/O to the specified NVMe namespace. </td></tr>
 <tr>
-<td><a class="el" href="nvme_8h.html#af02e8c701c5496f163a69917ad5397dd" title="Submits a write zeroes I/O to the specified NVMe namespace. ">spdk_nvme_ns_cmd_write_zeroes()</a> </td><td>Submits a write zeroes I/O to the specified NVMe namespace. </td></tr>
+<td><a class="el" href="nvme_8h.html#af02e8c701c5496f163a69917ad5397dd" title="Submit a write zeroes I/O to the specified NVMe namespace. ">spdk_nvme_ns_cmd_write_zeroes()</a> </td><td>Submit a write zeroes I/O to the specified NVMe namespace. </td></tr>
 <tr>
-<td><a class="el" href="nvme_8h.html#ac0c646dd18675c54ffcf834ce699658d" title="Submits a data set management request to the specified NVMe namespace. ">spdk_nvme_ns_cmd_dataset_management()</a> </td><td>Submits a data set management request to the specified NVMe namespace. </td></tr>
+<td><a class="el" href="nvme_8h.html#ac0c646dd18675c54ffcf834ce699658d" title="Submit a data set management request to the specified NVMe namespace. ">spdk_nvme_ns_cmd_dataset_management()</a> </td><td>Submit a data set management request to the specified NVMe namespace. </td></tr>
 <tr>
-<td><a class="el" href="nvme_8h.html#aed0b134e140121bb9bd8664d4a43a5c6" title="Submits a flush request to the specified NVMe namespace. ">spdk_nvme_ns_cmd_flush()</a> </td><td>Submits a flush request to the specified NVMe namespace. </td></tr>
+<td><a class="el" href="nvme_8h.html#aed0b134e140121bb9bd8664d4a43a5c6" title="Submit a flush request to the specified NVMe namespace. ">spdk_nvme_ns_cmd_flush()</a> </td><td>Submit a flush request to the specified NVMe namespace. </td></tr>
 <tr>
 <td><a class="el" href="nvme_8h.html#aa331d140870e977722bfbb6826524782" title="Process any outstanding completions for I/O submitted on a queue pair. ">spdk_nvme_qpair_process_completions()</a> </td><td>Process any outstanding completions for I/O submitted on a queue pair. </td></tr>
 <tr>
@@ -212,7 +212,7 @@ NVMe Driver Design</h1>
 <h2><a class="anchor" id="nvme_io_submission"></a>
 NVMe I/O Submission</h2>
 <p>I/O is submitted to an NVMe namespace using nvme_ns_cmd_xxx functions. The NVMe driver submits the I/O request as an NVMe submission queue entry on the queue pair specified in the command. The function returns immediately, prior to the completion of the command. The application must poll for I/O completion on each queue pair with outstanding I/O to receive completion callbacks by calling <a class="el" href="nvme_8h.html#aa331d140870e977722bfbb6826524782" title="Process any outstanding completions for I/O submitted on a queue pair. ">spdk_nvme_qpair_process_completions()</a>.</p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="nvme_8h.html#a084c6ecb53bd810fbb5051100b79bec5" title="Submits a read I/O to the specified NVMe namespace. ">spdk_nvme_ns_cmd_read</a>, <a class="el" href="nvme_8h.html#a3065f669d8b605efdcadffbf94a50538" title="Submits a write I/O to the specified NVMe namespace. ">spdk_nvme_ns_cmd_write</a>, <a class="el" href="nvme_8h.html#ac0c646dd18675c54ffcf834ce699658d" title="Submits a data set management request to the specified NVMe namespace. ">spdk_nvme_ns_cmd_dataset_management</a>, <a class="el" href="nvme_8h.html#aed0b134e140121bb9bd8664d4a43a5c6" title="Submits a flush request to the specified NVMe namespace. ">spdk_nvme_ns_cmd_flush</a>, <a class="el" href="nvme_8h.html#aa331d140870e977722bfbb6826524782" title="Process any outstanding completions for I/O submitted on a queue pair. ">spdk_nvme_qpair_process_completions</a></dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="nvme_8h.html#a084c6ecb53bd810fbb5051100b79bec5" title="Submits a read I/O to the specified NVMe namespace. ">spdk_nvme_ns_cmd_read</a>, <a class="el" href="nvme_8h.html#a3065f669d8b605efdcadffbf94a50538" title="Submit a write I/O to the specified NVMe namespace. ">spdk_nvme_ns_cmd_write</a>, <a class="el" href="nvme_8h.html#ac0c646dd18675c54ffcf834ce699658d" title="Submit a data set management request to the specified NVMe namespace. ">spdk_nvme_ns_cmd_dataset_management</a>, <a class="el" href="nvme_8h.html#aed0b134e140121bb9bd8664d4a43a5c6" title="Submit a flush request to the specified NVMe namespace. ">spdk_nvme_ns_cmd_flush</a>, <a class="el" href="nvme_8h.html#aa331d140870e977722bfbb6826524782" title="Process any outstanding completions for I/O submitted on a queue pair. ">spdk_nvme_qpair_process_completions</a></dd></dl>
 <h3><a class="anchor" id="nvme_scaling"></a>
 Scaling Performance</h3>
 <p>NVMe queue pairs (struct spdk_nvme_qpair) provide parallel submission paths for I/O. I/O may be submitted on multiple queue pairs simultaneously from different threads. Queue pairs contain no locks or atomics, however, so a given queue pair may only be used by a single thread at a time. This requirement is not enforced by the NVMe driver (doing so would require a lock), and violating this requirement results in undefined behavior.</p>

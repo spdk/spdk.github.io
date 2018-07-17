@@ -141,6 +141,50 @@ $(document).ready(function(){initNavTree('jsonrpc.html','');});
 <div class="textblock"><h1><a class="anchor" id="jsonrpc_overview"></a>
 Overview</h1>
 <p>SPDK implements a <a href="http://www.jsonrpc.org/specification">JSON-RPC 2.0</a> server to allow external management tools to dynamically configure SPDK components.</p>
+<h2>Parameters</h2>
+<p>Most of the commands can take parameters. If present, parameter is validated against its domain. If this check fail whole command will fail with response error message <a class="el" href="jsonrpc.html#jsonrpc_error_message">Invalid params</a>.</p>
+<h3>Required parameters</h3>
+<p>These parameters are mandatory. If any required parameter is missing RPC command will fail with proper error response.</p>
+<h3>Optional parameters</h3>
+<p>Those parameters might be omitted. If an optional parameter is present it must be valid otherwise command will fail proper error response.</p>
+<h2><a class="anchor" id="jsonrpc_error_message"></a>
+Error response message</h2>
+<p>Each error response will contain proper message. As much as possible the message should indicate what went wrong during command processing.</p>
+<p>There is ongoing effort to customize this messages but some RPC methods just return "Invalid parameters" as message body for any kind of error.</p>
+<table class="doxtable">
+<tr>
+<th>Code </th><th>Description  </th></tr>
+<tr>
+<td>-1 </td><td>Invalid state - given method exists but it is not callable in <a class="el" href="jsonrpc.html#rpc_start_subsystem_init">current runtime state</a> </td></tr>
+<tr>
+<td>-32600 </td><td>Invalid request - not compliant with JSON-RPC 2.0 Specification </td></tr>
+<tr>
+<td>-32601 </td><td>Method not found </td></tr>
+<tr>
+<td>-32602 </td><td><a class="el" href="jsonrpc.html#jsonrpc_invalid_params">Invalid params</a> </td></tr>
+<tr>
+<td>-32603 </td><td>Internal error for e.g.: errors like out of memory </td></tr>
+<tr>
+<td>-32700 </td><td><a class="el" href="jsonrpc.html#jsonrpc_parser_error">Parser error</a> </td></tr>
+</table>
+<h3><a class="anchor" id="jsonrpc_parser_error"></a>
+Parser error</h3>
+<p>Encountered some error during parsing request like:</p>
+<ul>
+<li>the JSON object is malformed</li>
+<li>parameter is too long</li>
+<li>request is too long</li>
+</ul>
+<h3><a class="anchor" id="jsonrpc_invalid_params"></a>
+Invalid params</h3>
+<p>This type of error is most common one. It mean that there is an error while processing the request like:</p>
+<ul>
+<li>Parameters decoding in RPC method handler failed because required parameter is missing.</li>
+<li>Unknown parameter present encountered.</li>
+<li>Parameter type doesn't match expected type e.g.: given number when expected a string.</li>
+<li>Parameter domain check failed.</li>
+<li>Request is valid but some other error occurred during processing request. If possible message explains the error reason nature.</li>
+</ul>
 <h1><a class="anchor" id="jsonrpc_components_app"></a>
 App Framework</h1>
 <h2><a class="anchor" id="rpc_kill_instance"></a>
@@ -260,15 +304,15 @@ get_bdevs_iostat</h2>
 <p>Example request: </p><div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;method&quot;: &quot;get_bdevs_iostat&quot;,</div><div class="line">  &quot;params&quot;: {</div><div class="line">    &quot;name&quot;: &quot;Nvme0n1&quot;</div><div class="line">  }</div><div class="line">}</div></div><!-- fragment --><p>Example response: </p><div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: [</div><div class="line">    {</div><div class="line">      &quot;name&quot;: &quot;Nvme0n1&quot;,</div><div class="line">      &quot;bytes_read&quot;: 34051522560,</div><div class="line">      &quot;num_read_ops&quot;: 8312910,</div><div class="line">      &quot;bytes_written&quot;: 0,</div><div class="line">      &quot;num_write_ops&quot;: 0</div><div class="line">    }</div><div class="line">  ]</div><div class="line">}</div></div><!-- fragment --><h2><a class="anchor" id="rpc_delete_bdev"></a>
 delete_bdev</h2>
 <p>Unregister a block device.</p>
-<h3>Example</h3>
-<p>Example request: </p><div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;method&quot;: &quot;delete_bdev&quot;,</div><div class="line">  &quot;params&quot;: {</div><div class="line">    &quot;name&quot;: &quot;Malloc0&quot;</div><div class="line">  }</div><div class="line">}</div></div><!-- fragment --><p>Example response: </p><div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: true</div><div class="line">}</div></div><!-- fragment --><h3>Parameters</h3>
+<h3>Parameters</h3>
 <table class="doxtable">
 <tr>
 <th>Name </th><th>Optional </th><th>Type </th><th>Description  </th></tr>
 <tr>
 <td>name </td><td>Required </td><td>string </td><td>Block device name </td></tr>
 </table>
-<h2><a class="anchor" id="rpc_set_bdev_qos_limit_iops"></a>
+<h3>Example</h3>
+<p>Example request: </p><div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;method&quot;: &quot;delete_bdev&quot;,</div><div class="line">  &quot;params&quot;: {</div><div class="line">    &quot;name&quot;: &quot;Malloc0&quot;</div><div class="line">  }</div><div class="line">}</div></div><!-- fragment --><p>Example response: </p><div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: true</div><div class="line">}</div></div><!-- fragment --><h2><a class="anchor" id="rpc_set_bdev_qos_limit_iops"></a>
 set_bdev_qos_limit_iops</h2>
 <p>Set an IOPS-based quality of service rate limit on a bdev.</p>
 <h3>Parameters</h3>
@@ -281,7 +325,407 @@ set_bdev_qos_limit_iops</h2>
 <td>ios_per_sec </td><td>Required </td><td>number </td><td>Number of I/Os per second to allow. 0 means unlimited. </td></tr>
 </table>
 <h3>Example</h3>
-<p>Example request: </p><div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;method&quot;: &quot;set_bdev_qos_limit_iops&quot;,</div><div class="line">  &quot;params&quot;: {</div><div class="line">    &quot;name&quot;: &quot;Malloc0&quot;</div><div class="line">    &quot;ios_per_sec&quot;: 20000</div><div class="line">  }</div><div class="line">}</div></div><!-- fragment --><p>Example response: </p><div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: true</div><div class="line">}</div></div><!-- fragment --><h1><a class="anchor" id="jsonrpc_components_nvmf_tgt"></a>
+<p>Example request: </p><div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;method&quot;: &quot;set_bdev_qos_limit_iops&quot;,</div><div class="line">  &quot;params&quot;: {</div><div class="line">    &quot;name&quot;: &quot;Malloc0&quot;</div><div class="line">    &quot;ios_per_sec&quot;: 20000</div><div class="line">  }</div><div class="line">}</div></div><!-- fragment --><p>Example response: </p><div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: true</div><div class="line">}</div></div><!-- fragment --><h2><a class="anchor" id="rpc_construct_malloc_bdev"></a>
+construct_malloc_bdev</h2>
+<p>Construct <a class="el" href="bdev.html#bdev_config_malloc">Malloc bdev</a></p>
+<h3>Parameters</h3>
+<table class="doxtable">
+<tr>
+<th>Name </th><th>Optional </th><th>Type </th><th>Description  </th></tr>
+<tr>
+<td>name </td><td>Optional </td><td>string </td><td>Bdev name to use </td></tr>
+<tr>
+<td>block_size </td><td>Required </td><td>number </td><td>Block size in bytes -must be multiple of 512 </td></tr>
+<tr>
+<td>num_blocks </td><td>Required </td><td>number </td><td>Number of blocks </td></tr>
+<tr>
+<td>uuid </td><td>Optional </td><td>string </td><td>UUID of new bdev </td></tr>
+</table>
+<h3>Result</h3>
+<p>Name of newly created bdev.</p>
+<h3>Example</h3>
+<p>Example request:</p>
+<div class="fragment"><div class="line">{</div><div class="line">  &quot;params&quot;: {</div><div class="line">    &quot;block_size&quot;: 4096,</div><div class="line">    &quot;num_blocks&quot;: 16384,</div><div class="line">    &quot;name&quot;: &quot;Malloc0&quot;,</div><div class="line">    &quot;uuid&quot;: &quot;2b6601ba-eada-44fb-9a83-a20eb9eb9e90&quot;</div><div class="line">  },</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;method&quot;: &quot;construct_malloc_bdev&quot;,</div><div class="line">  &quot;id&quot;: 1</div><div class="line">}</div></div><!-- fragment --><p>Example response:</p>
+<div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: &quot;Malloc0&quot;</div><div class="line">}</div></div><!-- fragment --><h2><a class="anchor" id="rpc_delete_malloc_bdev"></a>
+delete_malloc_bdev</h2>
+<p>Delete <a class="el" href="bdev.html#bdev_config_malloc">Malloc bdev</a></p>
+<h3>Parameters</h3>
+<table class="doxtable">
+<tr>
+<th>Name </th><th>Optional </th><th>Type </th><th>Description  </th></tr>
+<tr>
+<td>name </td><td>Required </td><td>string </td><td>Bdev name </td></tr>
+</table>
+<h3>Example</h3>
+<p>Example request:</p>
+<div class="fragment"><div class="line">{</div><div class="line">  &quot;params&quot;: {</div><div class="line">    &quot;name&quot;: &quot;Malloc0&quot;</div><div class="line">  },</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;method&quot;: &quot;delete_malloc_bdev&quot;,</div><div class="line">  &quot;id&quot;: 1</div><div class="line">}</div></div><!-- fragment --><p>Example response:</p>
+<div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: true</div><div class="line">}</div></div><!-- fragment --><h2><a class="anchor" id="rpc_construct_null_bdev"></a>
+construct_null_bdev</h2>
+<p>Construct <a class="el" href="bdev.html#bdev_config_null">Null</a></p>
+<h3>Parameters</h3>
+<table class="doxtable">
+<tr>
+<th>Name </th><th>Optional </th><th>Type </th><th>Description  </th></tr>
+<tr>
+<td>name </td><td>Optional </td><td>string </td><td>Bdev name to use </td></tr>
+<tr>
+<td>block_size </td><td>Required </td><td>number </td><td>Block size in bytes </td></tr>
+<tr>
+<td>num_blocks </td><td>Required </td><td>number </td><td>Number of blocks </td></tr>
+<tr>
+<td>uuid </td><td>Optional </td><td>string </td><td>UUID of new bdev </td></tr>
+</table>
+<h3>Result</h3>
+<p>Name of newly created bdev.</p>
+<h3>Example</h3>
+<p>Example request:</p>
+<div class="fragment"><div class="line">{</div><div class="line">  &quot;params&quot;: {</div><div class="line">    &quot;block_size&quot;: 4096,</div><div class="line">    &quot;num_blocks&quot;: 16384,</div><div class="line">    &quot;name&quot;: &quot;Null0&quot;,</div><div class="line">    &quot;uuid&quot;: &quot;2b6601ba-eada-44fb-9a83-a20eb9eb9e90&quot;</div><div class="line">  },</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;method&quot;: &quot;construct_null_bdev&quot;,</div><div class="line">  &quot;id&quot;: 1</div><div class="line">}</div></div><!-- fragment --><p>Example response:</p>
+<div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: &quot;Null0&quot;</div><div class="line">}</div></div><!-- fragment --><h2><a class="anchor" id="rpc_delete_null_bdev"></a>
+delete_null_bdev</h2>
+<p>Delete <a class="el" href="bdev.html#bdev_config_null">Null</a>.</p>
+<h3>Parameters</h3>
+<table class="doxtable">
+<tr>
+<th>Name </th><th>Optional </th><th>Type </th><th>Description  </th></tr>
+<tr>
+<td>name </td><td>Required </td><td>string </td><td>Bdev name </td></tr>
+</table>
+<h3>Example</h3>
+<p>Example request:</p>
+<div class="fragment"><div class="line">{</div><div class="line">  &quot;params&quot;: {</div><div class="line">    &quot;name&quot;: &quot;Null0&quot;</div><div class="line">  },</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;method&quot;: &quot;delete_null_bdev&quot;,</div><div class="line">  &quot;id&quot;: 1</div><div class="line">}</div></div><!-- fragment --><p>Example response:</p>
+<div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: true</div><div class="line">}</div></div><!-- fragment --><h2><a class="anchor" id="rpc_construct_aio_bdev"></a>
+construct_aio_bdev</h2>
+<p>Construct <a class="el" href="bdev.html#bdev_config_aio">Linux AIO bdev</a>.</p>
+<h3>Parameters</h3>
+<table class="doxtable">
+<tr>
+<th>Name </th><th>Optional </th><th>Type </th><th>Description  </th></tr>
+<tr>
+<td>name </td><td>Required </td><td>string </td><td>Bdev name to use </td></tr>
+<tr>
+<td>filename </td><td>Required </td><td>number </td><td>Path to device or file </td></tr>
+<tr>
+<td>block_size </td><td>Optional </td><td>number </td><td>Block size in bytes </td></tr>
+</table>
+<h3>Result</h3>
+<p>Name of newly created bdev.</p>
+<h3>Example</h3>
+<p>Example request:</p>
+<div class="fragment"><div class="line">{</div><div class="line">  &quot;params&quot;: {</div><div class="line">    &quot;block_size&quot;: 4096,</div><div class="line">    &quot;name&quot;: &quot;Aio0&quot;,</div><div class="line">    &quot;filename&quot;: &quot;/tmp/aio_bdev_file&quot;</div><div class="line">  },</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;method&quot;: &quot;construct_aio_bdev&quot;,</div><div class="line">  &quot;id&quot;: 1</div><div class="line">}</div></div><!-- fragment --><p>Example response:</p>
+<div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: &quot;Aio0&quot;</div><div class="line">}</div></div><!-- fragment --><h2><a class="anchor" id="rpc_delete_aio_bdev"></a>
+delete_aio_bdev</h2>
+<p>Delete <a class="el" href="bdev.html#bdev_config_aio">Linux AIO bdev</a>.</p>
+<h3>Parameters</h3>
+<table class="doxtable">
+<tr>
+<th>Name </th><th>Optional </th><th>Type </th><th>Description  </th></tr>
+<tr>
+<td>name </td><td>Required </td><td>string </td><td>Bdev name </td></tr>
+</table>
+<h3>Example</h3>
+<p>Example request:</p>
+<div class="fragment"><div class="line">{</div><div class="line">  &quot;params&quot;: {</div><div class="line">    &quot;name&quot;: &quot;Aio0&quot;</div><div class="line">  },</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;method&quot;: &quot;delete_aio_bdev&quot;,</div><div class="line">  &quot;id&quot;: 1</div><div class="line">}</div></div><!-- fragment --><p>Example response:</p>
+<div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: true</div><div class="line">}</div></div><!-- fragment --><h2><a class="anchor" id="rpc_construct_nvme_bdev"></a>
+construct_nvme_bdev</h2>
+<p>Construct <a class="el" href="bdev.html#bdev_config_nvme">NVMe bdev</a></p>
+<h3>Result</h3>
+<p>Array of names of newly created bdevs.</p>
+<h3>Parameters</h3>
+<table class="doxtable">
+<tr>
+<th>Name </th><th>Optional </th><th>Type </th><th>Description  </th></tr>
+<tr>
+<td>name </td><td>Required </td><td>string </td><td>Bdev name </td></tr>
+<tr>
+<td>trtype </td><td>Required </td><td>string </td><td>NVMe-oF target trtype: rdma or pcie </td></tr>
+<tr>
+<td>traddr </td><td>Required </td><td>string </td><td>NVMe-oF target address: ip or BDF </td></tr>
+<tr>
+<td>adrfam </td><td>Optional </td><td>string </td><td>NVMe-oF target adrfam: ipv4, ipv6, ib, fc, intra_host </td></tr>
+<tr>
+<td>trsvcid </td><td>Optional </td><td>string </td><td>NVMe-oF target trsvcid: port number </td></tr>
+<tr>
+<td>subnqn </td><td>Optional </td><td>string </td><td>NVMe-oF target subnqn </td></tr>
+<tr>
+<td>hostnqn </td><td>Optional </td><td>string </td><td>NVMe-oF target hostnqn </td></tr>
+</table>
+<h3>Example</h3>
+<p>Example request:</p>
+<div class="fragment"><div class="line">{</div><div class="line">  &quot;params&quot;: {</div><div class="line">    &quot;trtype&quot;: &quot;pcie&quot;,</div><div class="line">    &quot;name&quot;: &quot;Nvme0&quot;,</div><div class="line">    &quot;traddr&quot;: &quot;0000:0a:00.0&quot;</div><div class="line">  },</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;method&quot;: &quot;construct_nvme_bdev&quot;,</div><div class="line">  &quot;id&quot;: 1</div><div class="line">}</div></div><!-- fragment --><p>Example response:</p>
+<div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: [</div><div class="line">    &quot;Nvme0n1&quot;</div><div class="line">  ]</div><div class="line">}</div></div><!-- fragment --><h2><a class="anchor" id="rpc_construct_rbd_bdev"></a>
+construct_rbd_bdev</h2>
+<p>Construct <a class="el" href="bdev.html#bdev_config_rbd">Ceph RBD</a> bdev</p>
+<p>This method is available only if SPDK was build with Ceph RBD support.</p>
+<h3>Parameters</h3>
+<table class="doxtable">
+<tr>
+<th>Name </th><th>Optional </th><th>Type </th><th>Description  </th></tr>
+<tr>
+<td>name </td><td>Optional </td><td>string </td><td>Bdev name </td></tr>
+<tr>
+<td>pool_name </td><td>Required </td><td>string </td><td>Pool name </td></tr>
+<tr>
+<td>rbd_name </td><td>Required </td><td>string </td><td>Image name </td></tr>
+<tr>
+<td>block_size </td><td>Required </td><td>number </td><td>Block size </td></tr>
+</table>
+<h3>Result</h3>
+<p>Name of newly created bdev.</p>
+<h3>Example</h3>
+<p>Example request:</p>
+<div class="fragment"><div class="line">{</div><div class="line">  &quot;params&quot;: {</div><div class="line">    &quot;pool_name&quot;: &quot;rbd&quot;,</div><div class="line">    &quot;rbd_name&quot;: &quot;foo&quot;,</div><div class="line">    &quot;block_size&quot;: 4096</div><div class="line">  },</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;method&quot;: &quot;construct_rbd_bdev&quot;,</div><div class="line">  &quot;id&quot;: 1</div><div class="line">}</div></div><!-- fragment --><p>Example response:</p>
+<div class="fragment"><div class="line">response:</div><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: &quot;Ceph0&quot;</div><div class="line">}</div></div><!-- fragment --><h2><a class="anchor" id="rpc_delete_rbd_bdev"></a>
+delete_rbd_bdev</h2>
+<p>Delete <a class="el" href="bdev.html#bdev_config_rbd">Ceph RBD</a> bdev</p>
+<p>This method is available only if SPDK was build with Ceph RBD support.</p>
+<h3>Result</h3>
+<p><code>true</code> if bdev with provided name was deleted or <code>false</code> otherwise.</p>
+<h3>Parameters</h3>
+<table class="doxtable">
+<tr>
+<th>Name </th><th>Optional </th><th>Type </th><th>Description  </th></tr>
+<tr>
+<td>name </td><td>Required </td><td>string </td><td>Bdev name </td></tr>
+</table>
+<h3>Example</h3>
+<p>Example request:</p>
+<div class="fragment"><div class="line">{</div><div class="line">  &quot;params&quot;: {</div><div class="line">    &quot;name&quot;: &quot;Rbd0&quot;</div><div class="line">  },</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;method&quot;: &quot;delete_rbd_bdev&quot;,</div><div class="line">  &quot;id&quot;: 1</div><div class="line">}</div></div><!-- fragment --><p>Example response:</p>
+<div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: true</div><div class="line">}</div></div><!-- fragment --><h2><a class="anchor" id="rpc_construct_error_bdev"></a>
+construct_error_bdev</h2>
+<p>Construct error bdev.</p>
+<h3>Parameters</h3>
+<table class="doxtable">
+<tr>
+<th>Name </th><th>Optional </th><th>Type </th><th>Description  </th></tr>
+<tr>
+<td>base_name </td><td>Required </td><td>string </td><td>Base bdev name </td></tr>
+</table>
+<h3>Example</h3>
+<p>Example request:</p>
+<div class="fragment"><div class="line">{</div><div class="line">  &quot;params&quot;: {</div><div class="line">    &quot;base_name&quot;: &quot;Malloc0&quot;</div><div class="line">  },</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;method&quot;: &quot;construct_error_bdev&quot;,</div><div class="line">  &quot;id&quot;: 1</div><div class="line">}</div></div><!-- fragment --><p>Example response:</p>
+<div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: true</div><div class="line">}</div></div><!-- fragment --><h2><a class="anchor" id="rpc_delete_error_bdev"></a>
+delete_error_bdev</h2>
+<p>Delete error bdev</p>
+<h3>Result</h3>
+<p><code>true</code> if bdev with provided name was deleted or <code>false</code> otherwise.</p>
+<h3>Parameters</h3>
+<table class="doxtable">
+<tr>
+<th>Name </th><th>Optional </th><th>Type </th><th>Description  </th></tr>
+<tr>
+<td>name </td><td>Required </td><td>string </td><td>Error bdev name </td></tr>
+</table>
+<h3>Example</h3>
+<p>Example request:</p>
+<div class="fragment"><div class="line">{</div><div class="line">  &quot;params&quot;: {</div><div class="line">    &quot;name&quot;: &quot;EE_Malloc0&quot;</div><div class="line">  },</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;method&quot;: &quot;delete_error_bdev&quot;,</div><div class="line">  &quot;id&quot;: 1</div><div class="line">}</div></div><!-- fragment --><p>Example response:</p>
+<div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: true</div><div class="line">}</div></div><!-- fragment --><h2><a class="anchor" id="rpc_construct_iscsi_bdev"></a>
+construct_iscsi_bdev</h2>
+<p>Connect to iSCSI target and create bdev backed by this connection.</p>
+<p>This method is available only if SPDK was build with iSCSI initiator support.</p>
+<h3>Parameters</h3>
+<table class="doxtable">
+<tr>
+<th>Name </th><th>Optional </th><th>Type </th><th>Description  </th></tr>
+<tr>
+<td>name </td><td>Required </td><td>string </td><td>Bdev name </td></tr>
+<tr>
+<td>initiator_iqn </td><td>Required </td><td>string </td><td>IQN name used during connection </td></tr>
+<tr>
+<td>url </td><td>Required </td><td>string </td><td>iSCSI resource URI </td></tr>
+</table>
+<h3>Result</h3>
+<p>Name of newly created bdev.</p>
+<h3>Example</h3>
+<p>Example request:</p>
+<div class="fragment"><div class="line">{</div><div class="line">  &quot;params&quot;: {</div><div class="line">    &quot;url&quot;: &quot;iscsi://127.0.0.1/iqn.2016-06.io.spdk:disk1/0&quot;,</div><div class="line">    &quot;initiator_iqn&quot;: &quot;iqn.2016-06.io.spdk:init&quot;,</div><div class="line">    &quot;name&quot;: &quot;iSCSI0&quot;</div><div class="line">  },</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;method&quot;: &quot;construct_iscsi_bdev&quot;,</div><div class="line">  &quot;id&quot;: 1</div><div class="line">}</div></div><!-- fragment --><p>Example response:</p>
+<div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: &quot;iSCSI0&quot;</div><div class="line">}</div></div><!-- fragment --><h2><a class="anchor" id="rpc_delete_iscsi_bdev"></a>
+delete_iscsi_bdev</h2>
+<p>Delete iSCSI bdev and terminate connection to target.</p>
+<p>This method is available only if SPDK was built with iSCSI initiator support.</p>
+<h3>Parameters</h3>
+<table class="doxtable">
+<tr>
+<th>Name </th><th>Optional </th><th>Type </th><th>Description  </th></tr>
+<tr>
+<td>name </td><td>Required </td><td>string </td><td>Bdev name </td></tr>
+</table>
+<h3>Example</h3>
+<p>Example request:</p>
+<div class="fragment"><div class="line">{</div><div class="line">  &quot;params&quot;: {</div><div class="line">    &quot;name&quot;: &quot;iSCSI0&quot;</div><div class="line">  },</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;method&quot;: &quot;delete_iscsi_bdev&quot;,</div><div class="line">  &quot;id&quot;: 1</div><div class="line">}</div></div><!-- fragment --><p>Example response:</p>
+<div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: true</div><div class="line">}</div></div><!-- fragment --><h2><a class="anchor" id="rpc_create_pmem_pool"></a>
+create_pmem_pool</h2>
+<p>Create a <a class="el" href="bdev.html#bdev_config_pmem">Pmem</a> blk pool file. It is equivalent of following <code>pmempool create</code> command:</p>
+<div class="fragment"><div class="line">pmempool create -s $((num_blocks * block_size)) blk $block_size $pmem_file</div></div><!-- fragment --><p>This method is available only if SPDK was built with PMDK support.</p>
+<h3>Parameters</h3>
+<table class="doxtable">
+<tr>
+<th>Name </th><th>Optional </th><th>Type </th><th>Description  </th></tr>
+<tr>
+<td>pmem_file </td><td>Required </td><td>string </td><td>Path to new pmem file </td></tr>
+<tr>
+<td>num_blocks </td><td>Required </td><td>number </td><td>Number of blocks </td></tr>
+<tr>
+<td>block_size </td><td>Required </td><td>number </td><td>Size of each block in bytes </td></tr>
+</table>
+<h3>Example</h3>
+<p>Example request:</p>
+<div class="fragment"><div class="line">{</div><div class="line">  &quot;params&quot;: {</div><div class="line">    &quot;block_size&quot;: 512,</div><div class="line">    &quot;num_blocks&quot;: 131072,</div><div class="line">    &quot;pmem_file&quot;: &quot;/tmp/pmem_file&quot;</div><div class="line">  },</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;method&quot;: &quot;create_pmem_pool&quot;,</div><div class="line">  &quot;id&quot;: 1</div><div class="line">}</div></div><!-- fragment --><p>Example response:</p>
+<div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: true</div><div class="line">}</div></div><!-- fragment --><h2><a class="anchor" id="rpc_pmem_pool_info"></a>
+pmem_pool_info</h2>
+<p>Retrive basic information about PMDK memory pool.</p>
+<p>This method is available only if SPDK was built with PMDK support.</p>
+<h3>Parameters</h3>
+<table class="doxtable">
+<tr>
+<th>Name </th><th>Optional </th><th>Type </th><th>Description  </th></tr>
+<tr>
+<td>pmem_file </td><td>Required </td><td>string </td><td>Path to existing pmem file </td></tr>
+</table>
+<h3>Result</h3>
+<p>Array of objects describing memory pool:</p>
+<table class="doxtable">
+<tr>
+<th>Name </th><th>Type </th><th>Description  </th></tr>
+<tr>
+<td>num_blocks </td><td>number </td><td>Number of blocks </td></tr>
+<tr>
+<td>block_size </td><td>number </td><td>Size of each block in bytes </td></tr>
+</table>
+<h3>Example</h3>
+<p>Example request:</p>
+<div class="fragment"><div class="line">request:</div><div class="line">{</div><div class="line">  &quot;params&quot;: {</div><div class="line">    &quot;pmem_file&quot;: &quot;/tmp/pmem_file&quot;</div><div class="line">  },</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;method&quot;: &quot;pmem_pool_info&quot;,</div><div class="line">  &quot;id&quot;: 1</div><div class="line">}</div></div><!-- fragment --><p>Example response:</p>
+<div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: [</div><div class="line">    {</div><div class="line">      &quot;block_size&quot;: 512,</div><div class="line">      &quot;num_blocks&quot;: 129728</div><div class="line">    }</div><div class="line">  ]</div><div class="line">}</div></div><!-- fragment --><h2><a class="anchor" id="rpc_delete_pmem_pool"></a>
+delete_pmem_pool</h2>
+<p>Delete pmem pool by removing file <code>pmem_file</code>. This method will fail if <code>pmem_file</code> is not a valid pmem pool file.</p>
+<p>This method is available only if SPDK was built with PMDK support.</p>
+<h3>Parameters</h3>
+<table class="doxtable">
+<tr>
+<th>Name </th><th>Optional </th><th>Type </th><th>Description  </th></tr>
+<tr>
+<td>pmem_file </td><td>Required </td><td>string </td><td>Path to new pmem file </td></tr>
+</table>
+<h3>Example</h3>
+<p>Example request:</p>
+<div class="fragment"><div class="line">{</div><div class="line">  &quot;params&quot;: {</div><div class="line">    &quot;pmem_file&quot;: &quot;/tmp/pmem_file&quot;</div><div class="line">  },</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;method&quot;: &quot;delete_pmem_pool&quot;,</div><div class="line">  &quot;id&quot;: 1</div><div class="line">}</div></div><!-- fragment --><p>Example response:</p>
+<div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: true</div><div class="line">}</div></div><!-- fragment --><h2><a class="anchor" id="rpc_construct_pmem_bdev"></a>
+construct_pmem_bdev</h2>
+<p>Construct <a class="el" href="bdev.html#bdev_config_pmem">Pmem</a> bdev.</p>
+<p>This method is available only if SPDK was built with PMDK support.</p>
+<h3>Parameters</h3>
+<table class="doxtable">
+<tr>
+<th>Name </th><th>Optional </th><th>Type </th><th>Description  </th></tr>
+<tr>
+<td>name </td><td>Required </td><td>string </td><td>Bdev name </td></tr>
+<tr>
+<td>pmem_file </td><td>Required </td><td>string </td><td>Path to existing pmem blk pool file </td></tr>
+</table>
+<h3>Result</h3>
+<p>Name of newly created bdev.</p>
+<h3>Example</h3>
+<p>Example request:</p>
+<div class="fragment"><div class="line">{</div><div class="line">  &quot;params&quot;: {</div><div class="line">    &quot;pmem_file&quot;: &quot;/tmp/pmem_file&quot;,</div><div class="line">    &quot;name&quot;: &quot;Pmem0&quot;</div><div class="line">  },</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;method&quot;: &quot;construct_pmem_bdev&quot;,</div><div class="line">  &quot;id&quot;: 1</div><div class="line">}</div></div><!-- fragment --><p>Example response:</p>
+<div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: &quot;Pmem0&quot;</div><div class="line">}</div></div><!-- fragment --><h2><a class="anchor" id="rpc_delete_pmem_bdev"></a>
+delete_pmem_bdev</h2>
+<p>Delete <a class="el" href="bdev.html#bdev_config_pmem">Pmem</a> bdev. This call will not remove backing pool files.</p>
+<p>This method is available only if SPDK was built with PMDK support.</p>
+<h3>Result</h3>
+<p><code>true</code> if bdev with provided name was deleted or <code>false</code> otherwise.</p>
+<h3>Parameters</h3>
+<table class="doxtable">
+<tr>
+<th>Name </th><th>Optional </th><th>Type </th><th>Description  </th></tr>
+<tr>
+<td>name </td><td>Required </td><td>string </td><td>Bdev name </td></tr>
+</table>
+<h3>Example</h3>
+<p>Example request:</p>
+<div class="fragment"><div class="line">{</div><div class="line">  &quot;params&quot;: {</div><div class="line">    &quot;name&quot;: &quot;Pmem0&quot;</div><div class="line">  },</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;method&quot;: &quot;delete_pmem_bdev&quot;,</div><div class="line">  &quot;id&quot;: 1</div><div class="line">}</div></div><!-- fragment --><p>Example response:</p>
+<div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: true</div><div class="line">}</div></div><!-- fragment --><h2><a class="anchor" id="rpc_construct_passthru_bdev"></a>
+construct_passthru_bdev</h2>
+<p>Create passthru bdev. This bdev type redirects all IO to it's base bdev. It has no other purpose than being an example and a starting point in development of new bdev type.</p>
+<h3>Parameters</h3>
+<table class="doxtable">
+<tr>
+<th>Name </th><th>Optional </th><th>Type </th><th>Description  </th></tr>
+<tr>
+<td>passthru_bdev_name </td><td>Required </td><td>string </td><td>Bdev name </td></tr>
+<tr>
+<td>base_bdev_name </td><td>Required </td><td>string </td><td>Base bdev name </td></tr>
+</table>
+<h3>Result</h3>
+<p>Name of newly created bdev.</p>
+<h3>Example</h3>
+<p>Example request:</p>
+<div class="fragment"><div class="line">{</div><div class="line">  &quot;params&quot;: {</div><div class="line">    &quot;base_bdev_name&quot;: &quot;Malloc0&quot;,</div><div class="line">    &quot;passthru_bdev_name&quot;: &quot;Passsthru0&quot;</div><div class="line">  },</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;method&quot;: &quot;construct_passthru_bdev&quot;,</div><div class="line">  &quot;id&quot;: 1</div><div class="line">}</div></div><!-- fragment --><p>Example response:</p>
+<div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: &quot;Passsthru0&quot;</div><div class="line">}</div></div><!-- fragment --><h2><a class="anchor" id="rpc_delete_passthru_bdev"></a>
+delete_passthru_bdev</h2>
+<p>Delete passthru bdev.</p>
+<h3>Parameters</h3>
+<table class="doxtable">
+<tr>
+<th>Name </th><th>Optional </th><th>Type </th><th>Description  </th></tr>
+<tr>
+<td>name </td><td>Required </td><td>string </td><td>Bdev name </td></tr>
+</table>
+<h3>Example</h3>
+<p>Example request:</p>
+<div class="fragment"><div class="line">{</div><div class="line">  &quot;params&quot;: {</div><div class="line">    &quot;name&quot;: &quot;Passsthru0&quot;</div><div class="line">  },</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;method&quot;: &quot;delete_passthru_bdev&quot;,</div><div class="line">  &quot;id&quot;: 1</div><div class="line">}</div></div><!-- fragment --><p>Example response:</p>
+<div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: true</div><div class="line">}</div></div><!-- fragment --><h2><a class="anchor" id="rpc_construct_virtio_dev"></a>
+construct_virtio_dev</h2>
+<p>Create new initiator <a class="el" href="bdev.html#bdev_config_virtio_scsi">Virtio SCSI</a> or <a class="el" href="bdev.html#bdev_config_virtio_blk">Virtio Block</a> and expose all found bdevs.</p>
+<h3>Parameters</h3>
+<table class="doxtable">
+<tr>
+<th>Name </th><th>Optional </th><th>Type </th><th>Description  </th></tr>
+<tr>
+<td>name </td><td>Required </td><td>string </td><td>Virtio SCSI base bdev name or Virtio Blk bdev name </td></tr>
+<tr>
+<td>trtype </td><td>Required </td><td>string </td><td>Virtio target trtype: pci or user </td></tr>
+<tr>
+<td>traddr </td><td>Required </td><td>string </td><td>target address: BDF or UNIX socket file path </td></tr>
+<tr>
+<td>dev_type </td><td>Required </td><td>string </td><td>Virtio device type: blk or scsi </td></tr>
+<tr>
+<td>vq_count </td><td>Optional </td><td>number </td><td>Number of queues this controller will utilize (default: 1) </td></tr>
+<tr>
+<td>vq_size </td><td>Optional </td><td>number </td><td>Size of each queue. Must be power of 2. (default: 512) </td></tr>
+</table>
+<p>In case of Virtio SCSI the <code>name</code> parameter will be base name for new created bdevs. For Virtio Blk <code>name</code> will be the name of created bdev.</p>
+<p><code>vq_count</code> and <code>vq_size</code> parameters are valid only if <code>trtype</code> is <code>user</code>.</p>
+<h3>Result</h3>
+<p>Array of names of newly created bdevs.</p>
+<h3>Example</h3>
+<p>Example request:</p>
+<div class="fragment"><div class="line">{</div><div class="line">  &quot;params&quot;: {</div><div class="line">    &quot;name&quot;: &quot;VirtioScsi0&quot;,</div><div class="line">    &quot;trtype&quot;: &quot;user&quot;,</div><div class="line">    &quot;vq_size&quot;: 128,</div><div class="line">    &quot;dev_type&quot;: &quot;scsi&quot;,</div><div class="line">    &quot;traddr&quot;: &quot;/tmp/VhostScsi0&quot;,</div><div class="line">    &quot;vq_count&quot;: 4</div><div class="line">  },</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;method&quot;: &quot;construct_virtio_dev&quot;,</div><div class="line">  &quot;id&quot;: 1</div><div class="line">}</div></div><!-- fragment --><p>Example response:</p>
+<div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: [&quot;VirtioScsi0t2&quot;, &quot;VirtioScsi0t4&quot;]</div><div class="line">}</div></div><!-- fragment --><h2><a class="anchor" id="rpc_construct_virtio_user_scsi_bdev"></a>
+construct_virtio_user_scsi_bdev</h2>
+<p>This is legacy RPC method. It is equivalent of <a class="el" href="jsonrpc.html#rpc_construct_virtio_dev">construct_virtio_dev</a> with <code>trtype</code> set to <code>user</code> and <code>dev_type</code> set to <code>scsi</code>.</p>
+<p>Because it will be deprecated soon it is intentionally undocumented.</p>
+<h2><a class="anchor" id="rpc_construct_virtio_pci_scsi_bdev"></a>
+construct_virtio_pci_scsi_bdev</h2>
+<p>This is legacy RPC method. It is equivalent of <a class="el" href="jsonrpc.html#rpc_construct_virtio_dev">construct_virtio_dev</a> with <code>trtype</code> set to <code>pci</code> and <code>dev_type</code> set to <code>scsi</code>.</p>
+<p>Because it will be deprecated soon it is intentionally undocumented.</p>
+<h2><a class="anchor" id="rpc_construct_virtio_user_blk_bdev"></a>
+construct_virtio_user_blk_bdev</h2>
+<p>This is legacy RPC method. It is equivalent of <a class="el" href="jsonrpc.html#rpc_construct_virtio_dev">construct_virtio_dev</a> with <code>trtype</code> set to <code>user</code> and <code>dev_type</code> set to <code>blk</code>.</p>
+<p>Because it will be deprecated soon it is intentionally undocumented.</p>
+<h2><a class="anchor" id="rpc_construct_virtio_pci_blk_bdev"></a>
+construct_virtio_pci_blk_bdev</h2>
+<p>This is legacy RPC method. It is equivalent of <a class="el" href="jsonrpc.html#rpc_construct_virtio_dev">construct_virtio_dev</a> with <code>trtype</code> set to <code>pci</code> and <code>dev_type</code> set to <code>blk</code>.</p>
+<p>Because it will be deprecated soon it is intentionally undocumented.</p>
+<h2><a class="anchor" id="rpc_get_virtio_scsi_devs"></a>
+get_virtio_scsi_devs</h2>
+<p>Show information about all available Virtio SCSI devices.</p>
+<h3>Parameters</h3>
+<p>This method has no parameters.</p>
+<h3>Result</h3>
+<p>Array of Virtio SCSI information objects.</p>
+<h3>Example</h3>
+<p>Example request:</p>
+<div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;method&quot;: &quot;get_virtio_scsi_devs&quot;,</div><div class="line">  &quot;id&quot;: 1</div><div class="line">}</div></div><!-- fragment --><p>Example response:</p>
+<div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: [</div><div class="line">    {</div><div class="line">      &quot;name&quot;: &quot;VirtioScsi0&quot;,</div><div class="line">      &quot;virtio&quot;: {</div><div class="line">          &quot;vq_size&quot;: 128,</div><div class="line">          &quot;vq_count&quot;: 4,</div><div class="line">          &quot;type&quot;: &quot;user&quot;,</div><div class="line">          &quot;socket&quot;: &quot;/tmp/VhostScsi0&quot;</div><div class="line">      }</div><div class="line">    }</div><div class="line">  ]</div><div class="line">}</div></div><!-- fragment --><h1><a class="anchor" id="jsonrpc_components_nvmf_tgt"></a>
 NVMe-oF Target</h1>
 <h2><a class="anchor" id="rpc_get_nvmf_subsystems"></a>
 get_nvmf_subsystems method</h2>
@@ -478,7 +922,218 @@ set_nvmf_target_config</h2>
 <td>acceptor_poll_rate </td><td>Optional </td><td>number </td><td>Polling interval of the acceptor for incoming connections (microseconds) </td></tr>
 </table>
 <h3>Example</h3>
-<p>Example request: </p><div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;method&quot;: &quot;set_nvmf_target_config&quot;,</div><div class="line">  &quot;params&quot;: {</div><div class="line">    &quot;acceptor_poll_rate&quot;: 10000</div><div class="line">  }</div><div class="line">}</div></div><!-- fragment --><p>Example response: </p><div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: true</div><div class="line">}</div></div><!-- fragment --><h1><a class="anchor" id="jsonrpc_components_lvol"></a>
+<p>Example request: </p><div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;method&quot;: &quot;set_nvmf_target_config&quot;,</div><div class="line">  &quot;params&quot;: {</div><div class="line">    &quot;acceptor_poll_rate&quot;: 10000</div><div class="line">  }</div><div class="line">}</div></div><!-- fragment --><p>Example response: </p><div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: true</div><div class="line">}</div></div><!-- fragment --><h1><a class="anchor" id="jsonrpc_components_vhost_tgt"></a>
+Vhost Target</h1>
+<p>The following common preconditions need to be met in all target types.</p>
+<p>Controller name will be used to create UNIX domain socket. This implies that name concatenated with vhost socket directory path needs to be valid UNIX socket name.</p>
+<p><a class="el" href="user_guides_common.html#cpu_mask">CPU mask</a> parameter is used to choose CPU on which pollers will be launched when new initiator is connecting. It must be a subset of application CPU mask. Default value is CPU mask of the application.</p>
+<h2><a class="anchor" id="rpc_set_vhost_controller_coalescing"></a>
+set_vhost_controller_coalescing</h2>
+<p>Controls interrupt coalescing for specific target. Because <code>delay_base_us</code> is used to calculate delay in CPU ticks there is no hardcoded limit for this parameter. Only limitation is that final delay in CPU ticks might not overflow 32 bit unsigned integer (which is more than 1s @ 4GHz CPU). In real scenarios <code>delay_base_us</code> should be much lower than 150us. To disable coalescing set <code>delay_base_us</code> to 0.</p>
+<h3>Parameters</h3>
+<table class="doxtable">
+<tr>
+<th>Name </th><th>Optional </th><th>Type </th><th>Description  </th></tr>
+<tr>
+<td>ctrlr </td><td>Required </td><td>string </td><td>Controller name </td></tr>
+<tr>
+<td>delay_base_us </td><td>Required </td><td>number </td><td>Base (minimum) coalescing time in microseconds </td></tr>
+<tr>
+<td>iops_threshold </td><td>Required </td><td>number </td><td>Coalescing activation level greater than 0 in IO per second </td></tr>
+</table>
+<h3>Example</h3>
+<p>Example request:</p>
+<div class="fragment"><div class="line">{</div><div class="line">  &quot;params&quot;: {</div><div class="line">    &quot;iops_threshold&quot;: 100000,</div><div class="line">    &quot;ctrlr&quot;: &quot;VhostScsi0&quot;,</div><div class="line">    &quot;delay_base_us&quot;: 80</div><div class="line">  },</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;method&quot;: &quot;set_vhost_controller_coalescing&quot;,</div><div class="line">  &quot;id&quot;: 1</div><div class="line">}</div></div><!-- fragment --><p>Example response:</p>
+<div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: true</div><div class="line">}</div></div><!-- fragment --><h2><a class="anchor" id="rpc_construct_vhost_scsi_controller"></a>
+construct_vhost_scsi_controller</h2>
+<p>Construct vhost SCSI target.</p>
+<h3>Parameters</h3>
+<table class="doxtable">
+<tr>
+<th>Name </th><th>Optional </th><th>Type </th><th>Description  </th></tr>
+<tr>
+<td>ctrlr </td><td>Required </td><td>string </td><td>Controller name </td></tr>
+<tr>
+<td>cpumask </td><td>Optional </td><td>string </td><td><a class="el" href="user_guides_common.html#cpu_mask">CPU mask</a> for this controller </td></tr>
+</table>
+<h3>Example</h3>
+<p>Example request:</p>
+<div class="fragment"><div class="line">{</div><div class="line">  &quot;params&quot;: {</div><div class="line">    &quot;cpumask&quot;: &quot;0x2&quot;,</div><div class="line">    &quot;ctrlr&quot;: &quot;VhostScsi0&quot;</div><div class="line">  },</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;method&quot;: &quot;construct_vhost_scsi_controller&quot;,</div><div class="line">  &quot;id&quot;: 1</div><div class="line">}</div></div><!-- fragment --><p>Example response:</p>
+<div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: true</div><div class="line">}</div></div><!-- fragment --><h2><a class="anchor" id="rpc_add_vhost_scsi_lun"></a>
+add_vhost_scsi_lun</h2>
+<p>In vhost target <code>ctrlr</code> create SCSI target with ID <code>scsi_target_num</code> and add <code>bdev_name</code> as LUN 0.</p>
+<h3>Parameters</h3>
+<table class="doxtable">
+<tr>
+<th>Name </th><th>Optional </th><th>Type </th><th>Description  </th></tr>
+<tr>
+<td>ctrlr </td><td>Required </td><td>string </td><td>Controller name </td></tr>
+<tr>
+<td>scsi_target_num </td><td>Required </td><td>number </td><td>SCSI target ID between 0 and 7 </td></tr>
+<tr>
+<td>bdev_name </td><td>Required </td><td>string </td><td>Name of bdev to expose as a LUN 0 </td></tr>
+</table>
+<h3>Example</h3>
+<p>Example request:</p>
+<div class="fragment"><div class="line">{</div><div class="line">  &quot;params&quot;: {</div><div class="line">    &quot;scsi_target_num&quot;: 1,</div><div class="line">    &quot;bdev_name&quot;: &quot;Malloc0&quot;,</div><div class="line">    &quot;ctrlr&quot;: &quot;VhostScsi0&quot;</div><div class="line">  },</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;method&quot;: &quot;add_vhost_scsi_lun&quot;,</div><div class="line">  &quot;id&quot;: 1</div><div class="line">}</div></div><!-- fragment --><p>Example response:</p>
+<div class="fragment"><div class="line">response:</div><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: true</div><div class="line">}</div></div><!-- fragment --><h2><a class="anchor" id="rpc_remove_vhost_scsi_target"></a>
+remove_vhost_scsi_target</h2>
+<p>Remove SCSI target ID <code>scsi_target_num</code> from vhost target <code>scsi_target_num</code>.</p>
+<p>This method will fail if initiator is connected, but doesn't support hot-remove (the <code>VIRTIO_SCSI_F_HOTPLUG</code> is not negotiated).</p>
+<h3>Parameters</h3>
+<table class="doxtable">
+<tr>
+<th>Name </th><th>Optional </th><th>Type </th><th>Description  </th></tr>
+<tr>
+<td>ctrlr </td><td>Required </td><td>string </td><td>Controller name </td></tr>
+<tr>
+<td>scsi_target_num </td><td>Required </td><td>number </td><td>SCSI target ID between 0 and 7 </td></tr>
+</table>
+<h3>Example</h3>
+<p>Example request:</p>
+<div class="fragment"><div class="line">request:</div><div class="line">{</div><div class="line">  &quot;params&quot;: {</div><div class="line">    &quot;scsi_target_num&quot;: 1,</div><div class="line">    &quot;ctrlr&quot;: &quot;VhostScsi0&quot;</div><div class="line">  },</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;method&quot;: &quot;remove_vhost_scsi_target&quot;,</div><div class="line">  &quot;id&quot;: 1</div><div class="line">}</div></div><!-- fragment --><p>Example response:</p>
+<div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: true</div><div class="line">}</div></div><!-- fragment --><h2><a class="anchor" id="rpc_construct_vhost_nvme_controller"></a>
+construct_vhost_nvme_controller</h2>
+<p>Construct empty vhost NVMe controller.</p>
+<h3>Parameters</h3>
+<table class="doxtable">
+<tr>
+<th>Name </th><th>Optional </th><th>Type </th><th>Description  </th></tr>
+<tr>
+<td>ctrlr </td><td>Required </td><td>string </td><td>Controller name </td></tr>
+<tr>
+<td>io_queues </td><td>Required </td><td>number </td><td>Number between 1 and 31 of IO queues for the controller </td></tr>
+<tr>
+<td>cpumask </td><td>Optional </td><td>string </td><td><a class="el" href="user_guides_common.html#cpu_mask">CPU mask</a> for this controller </td></tr>
+</table>
+<h3>Example</h3>
+<p>Example request:</p>
+<div class="fragment"><div class="line">{</div><div class="line">  &quot;params&quot;: {</div><div class="line">    &quot;cpumask&quot;: &quot;0x2&quot;,</div><div class="line">    &quot;io_queues&quot;: 4,</div><div class="line">    &quot;ctrlr&quot;: &quot;VhostNvme0&quot;</div><div class="line">  },</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;method&quot;: &quot;construct_vhost_nvme_controller&quot;,</div><div class="line">  &quot;id&quot;: 1</div><div class="line">}</div></div><!-- fragment --><p>Example response:</p>
+<div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: true</div><div class="line">}</div></div><!-- fragment --><h2><a class="anchor" id="rpc_add_vhost_nvme_ns"></a>
+add_vhost_nvme_ns</h2>
+<p>Add namespace backed by <code>bdev_name</code></p>
+<h3>Parameters</h3>
+<table class="doxtable">
+<tr>
+<th>Name </th><th>Optional </th><th>Type </th><th>Description  </th></tr>
+<tr>
+<td>ctrlr </td><td>Required </td><td>string </td><td>Controller name </td></tr>
+<tr>
+<td>bdev_name </td><td>Required </td><td>string </td><td>Name of bdev to expose as a namespace </td></tr>
+<tr>
+<td>cpumask </td><td>Optional </td><td>string </td><td><a class="el" href="user_guides_common.html#cpu_mask">CPU mask</a> for this controller </td></tr>
+</table>
+<h3>Example</h3>
+<p>Example request:</p>
+<div class="fragment"><div class="line">{</div><div class="line">  &quot;params&quot;: {</div><div class="line">    &quot;bdev_name&quot;: &quot;Malloc0&quot;,</div><div class="line">    &quot;ctrlr&quot;: &quot;VhostNvme0&quot;</div><div class="line">  },</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;method&quot;: &quot;add_vhost_nvme_ns&quot;,</div><div class="line">  &quot;id&quot;: 1</div><div class="line">}</div></div><!-- fragment --><p>Example response:</p>
+<div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: true</div><div class="line">}</div></div><!-- fragment --><h2><a class="anchor" id="rpc_construct_vhost_blk_controller"></a>
+construct_vhost_blk_controller</h2>
+<p>Construct vhost block controller</p>
+<p>If <code>readonly</code> is <code>true</code> then vhost block target will be created as read only and fail any write requests. The <code>VIRTIO_BLK_F_RO</code> feature flag will be offered to the initiator.</p>
+<h3>Parameters</h3>
+<table class="doxtable">
+<tr>
+<th>Name </th><th>Optional </th><th>Type </th><th>Description  </th></tr>
+<tr>
+<td>ctrlr </td><td>Required </td><td>string </td><td>Controller name </td></tr>
+<tr>
+<td>bdev_name </td><td>Required </td><td>string </td><td>Name of bdev to expose block device </td></tr>
+<tr>
+<td>readonly </td><td>Optional </td><td>boolean </td><td>If true, this target will be read only (default: false) </td></tr>
+<tr>
+<td>cpumask </td><td>Optional </td><td>string </td><td><a class="el" href="user_guides_common.html#cpu_mask">CPU mask</a> for this controller </td></tr>
+</table>
+<h3>Example</h3>
+<p>Example request:</p>
+<div class="fragment"><div class="line">{</div><div class="line">  &quot;params&quot;: {</div><div class="line">    &quot;dev_name&quot;: &quot;Malloc0&quot;,</div><div class="line">    &quot;ctrlr&quot;: &quot;VhostBlk0&quot;</div><div class="line">  },</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;method&quot;: &quot;construct_vhost_blk_controller&quot;,</div><div class="line">  &quot;id&quot;: 1</div><div class="line">}</div></div><!-- fragment --><p>Example response:</p>
+<div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: true</div><div class="line">}</div></div><!-- fragment --><h2><a class="anchor" id="rpc_get_vhost_controllers"></a>
+get_vhost_controllers</h2>
+<p>Display information about all vhost controllers.</p>
+<h3>Parameters</h3>
+<p>This method has no parameters.</p>
+<h3><a class="anchor" id="rpc_get_vhost_controllers_response"></a>
+Response</h3>
+<p>Response is an array of objects describing each controllers. Common fields are:</p>
+<table class="doxtable">
+<tr>
+<th>Name </th><th>Type </th><th>Description  </th></tr>
+<tr>
+<td>ctrlr </td><td>string </td><td>Controller name </td></tr>
+<tr>
+<td>cpumask </td><td>string </td><td><a class="el" href="user_guides_common.html#cpu_mask">CPU mask</a> of this controller </td></tr>
+<tr>
+<td>delay_base_us </td><td>number </td><td>Base (minimum) coalescing time in microseconds (0 if disabled) </td></tr>
+<tr>
+<td>iops_threshold </td><td>number </td><td>Coalescing activation level </td></tr>
+<tr>
+<td>backend_specific </td><td>object </td><td>Backend specific informations </td></tr>
+</table>
+<h3><a class="anchor" id="rpc_get_vhost_controllers_blk"></a>
+Vhost block</h3>
+<p><code>backend_specific</code> contains one <code>block</code> object of type:</p>
+<table class="doxtable">
+<tr>
+<th>Name </th><th>Type </th><th>Description  </th></tr>
+<tr>
+<td>bdev </td><td>string </td><td>Backing bdev name or Null if bdev is hot-removed </td></tr>
+<tr>
+<td>readonly </td><td>boolean </td><td>True if controllers is readonly, false otherwise </td></tr>
+</table>
+<h3><a class="anchor" id="rpc_get_vhost_controllers_scsi"></a>
+Vhost SCSI</h3>
+<p><code>backend_specific</code> contains <code>scsi</code> array of following objects:</p>
+<table class="doxtable">
+<tr>
+<th>Name </th><th>Type </th><th>Description  </th></tr>
+<tr>
+<td>target_name </td><td>string </td><td>Name of this SCSI target </td></tr>
+<tr>
+<td>id </td><td>number </td><td>Unique SPDK global SCSI target ID </td></tr>
+<tr>
+<td>scsi_dev_num </td><td>number </td><td>SCSI target ID initiator will see when scanning this controller </td></tr>
+<tr>
+<td>luns </td><td>array </td><td>array of objects describing <a class="el" href="jsonrpc.html#rpc_get_vhost_controllers_scsi_luns">Vhost SCSI LUN</a> </td></tr>
+</table>
+<h3><a class="anchor" id="rpc_get_vhost_controllers_scsi_luns"></a>
+Vhost SCSI LUN</h3>
+<p>Object of type:</p>
+<table class="doxtable">
+<tr>
+<th>Name </th><th>Type </th><th>Description  </th></tr>
+<tr>
+<td>id </td><td>number </td><td>SCSI LUN ID </td></tr>
+<tr>
+<td>bdev_name </td><td>string </td><td>Backing bdev name </td></tr>
+</table>
+<h3><a class="anchor" id="rpc_get_vhost_controllers_nvme"></a>
+Vhost NVMe</h3>
+<p><code>backend_specific</code> contains <code>namespaces</code> array of following objects:</p>
+<table class="doxtable">
+<tr>
+<th>Name </th><th>Type </th><th>Description  </th></tr>
+<tr>
+<td>nsid </td><td>number </td><td>Namespace ID </td></tr>
+<tr>
+<td>bdev </td><td>string </td><td>Backing bdev name </td></tr>
+</table>
+<h3>Example</h3>
+<p>Example request:</p>
+<div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;method&quot;: &quot;get_vhost_controllers&quot;,</div><div class="line">  &quot;id&quot;: 1</div><div class="line">}</div></div><!-- fragment --><p>Example response:</p>
+<div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: [</div><div class="line">    {</div><div class="line">      &quot;cpumask&quot;: &quot;0x2&quot;,</div><div class="line">      &quot;backend_specific&quot;: {</div><div class="line">        &quot;block&quot;: {</div><div class="line">          &quot;readonly&quot;: false,</div><div class="line">          &quot;bdev&quot;: &quot;Malloc0&quot;</div><div class="line">        }</div><div class="line">      },</div><div class="line">      &quot;iops_threshold&quot;: 60000,</div><div class="line">      &quot;ctrlr&quot;: &quot;VhostBlk0&quot;,</div><div class="line">      &quot;delay_base_us&quot;: 100</div><div class="line">    },</div><div class="line">    {</div><div class="line">      &quot;cpumask&quot;: &quot;0x2&quot;,</div><div class="line">      &quot;backend_specific&quot;: {</div><div class="line">        &quot;scsi&quot;: [</div><div class="line">          {</div><div class="line">            &quot;target_name&quot;: &quot;Target 2&quot;,</div><div class="line">            &quot;luns&quot;: [</div><div class="line">              {</div><div class="line">                &quot;id&quot;: 0,</div><div class="line">                &quot;bdev_name&quot;: &quot;Malloc1&quot;</div><div class="line">              }</div><div class="line">            ],</div><div class="line">            &quot;id&quot;: 0,</div><div class="line">            &quot;scsi_dev_num&quot;: 2</div><div class="line">          },</div><div class="line">          {</div><div class="line">            &quot;target_name&quot;: &quot;Target 5&quot;,</div><div class="line">            &quot;luns&quot;: [</div><div class="line">              {</div><div class="line">                &quot;id&quot;: 0,</div><div class="line">                &quot;bdev_name&quot;: &quot;Malloc2&quot;</div><div class="line">              }</div><div class="line">            ],</div><div class="line">            &quot;id&quot;: 1,</div><div class="line">            &quot;scsi_dev_num&quot;: 5</div><div class="line">          }</div><div class="line">        ]</div><div class="line">      },</div><div class="line">      &quot;iops_threshold&quot;: 60000,</div><div class="line">      &quot;ctrlr&quot;: &quot;VhostScsi0&quot;,</div><div class="line">      &quot;delay_base_us&quot;: 0</div><div class="line">    },</div><div class="line">    {</div><div class="line">      &quot;cpumask&quot;: &quot;0x2&quot;,</div><div class="line">      &quot;backend_specific&quot;: {</div><div class="line">        &quot;namespaces&quot;: [</div><div class="line">          {</div><div class="line">            &quot;bdev&quot;: &quot;Malloc3&quot;,</div><div class="line">            &quot;nsid&quot;: 1</div><div class="line">          },</div><div class="line">          {</div><div class="line">            &quot;bdev&quot;: &quot;Malloc4&quot;,</div><div class="line">            &quot;nsid&quot;: 2</div><div class="line">          }</div><div class="line">        ]</div><div class="line">      },</div><div class="line">      &quot;iops_threshold&quot;: 60000,</div><div class="line">      &quot;ctrlr&quot;: &quot;VhostNvme0&quot;,</div><div class="line">      &quot;delay_base_us&quot;: 0</div><div class="line">    }</div><div class="line">  ]</div><div class="line">}</div></div><!-- fragment --><h2><a class="anchor" id="rpc_remove_vhost_controller"></a>
+remove_vhost_controller</h2>
+<p>Remove vhost target.</p>
+<p>This call will fail if there is an initiator connected or there is at least one SCSI target configured in case of vhost SCSI target. In the later case please remove all SCSI targets first using <a class="el" href="jsonrpc.html#rpc_remove_vhost_scsi_target">remove_vhost_scsi_target</a>.</p>
+<h3>Parameters</h3>
+<table class="doxtable">
+<tr>
+<th>Name </th><th>Optional </th><th>Type </th><th>Description  </th></tr>
+<tr>
+<td>ctrlr </td><td>Required </td><td>string </td><td>Controller name </td></tr>
+</table>
+<h3>Example</h3>
+<p>Example request:</p>
+<div class="fragment"><div class="line">{</div><div class="line">  &quot;params&quot;: {</div><div class="line">    &quot;ctrlr&quot;: &quot;VhostNvme0&quot;</div><div class="line">  },</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;method&quot;: &quot;remove_vhost_controller&quot;,</div><div class="line">  &quot;id&quot;: 1</div><div class="line">}</div></div><!-- fragment --><p>Example response:</p>
+<div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: true</div><div class="line">}</div></div><!-- fragment --><h1><a class="anchor" id="jsonrpc_components_lvol"></a>
 Logical Volume</h1>
 <p>Identification of logical volume store and logical volume is explained first.</p>
 <p>A logical volume store has a UUID and a name for its identification. The UUID is generated on creation and it can be used as a unique identifier. The name is specified on creation and can be renamed. Either UUID or name is used to access logical volume store in RPCs.</p>
@@ -500,7 +1155,7 @@ construct_lvol_store</h2>
 <tr>
 <td>cluster_sz </td><td>Optional </td><td>number </td><td>Cluster size of the logical volume store in bytes </td></tr>
 </table>
-<h3>Reponse</h3>
+<h3>Response</h3>
 <p>UUID of the created logical volume store is returned.</p>
 <h3>Example</h3>
 <p>Example request: </p><div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;method&quot;: &quot;construct_lvol_store&quot;,</div><div class="line">  &quot;params&quot;: {</div><div class="line">    &quot;lvs_name&quot;: &quot;LVS0&quot;,</div><div class="line">    &quot;bdev_name&quot;: &quot;Malloc0&quot;</div><div class="line">  }</div><div class="line">}</div></div><!-- fragment --><p>Example response: </p><div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: &quot;a9959197-b5e2-4f2d-8095-251ffb6985a5&quot;</div><div class="line">}</div></div><!-- fragment --><h2><a class="anchor" id="rpc_destroy_lvol_store"></a>
