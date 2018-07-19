@@ -11,5 +11,6 @@ var structspdk__env__opts =
     [ "num_pci_addr", "structspdk__env__opts.html#adfe7415c1f8e3e47e7c7b06233da0a80", null ],
     [ "pci_blacklist", "structspdk__env__opts.html#a7380a2e50e30d2905a9a201ab6533c9e", null ],
     [ "pci_whitelist", "structspdk__env__opts.html#a73b51e22db66de58ffd429e7480b972f", null ],
-    [ "shm_id", "structspdk__env__opts.html#a6855febb839126ea56998905404e8451", null ]
+    [ "shm_id", "structspdk__env__opts.html#a6855febb839126ea56998905404e8451", null ],
+    [ "unlink_hugepage", "structspdk__env__opts.html#a11ccc25f2ee295249469986682f5a9fb", null ]
 ];

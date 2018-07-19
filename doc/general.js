@@ -32,7 +32,8 @@ var general =
         [ "Logical volume block device", "logical_volumes.html#lvol_bdev", null ],
         [ "Thin provisioning", "logical_volumes.html#lvol_thin_provisioning", null ],
         [ "Snapshots and clone", "logical_volumes.html#lvol_snapshots", null ],
-        [ "Inflation", "logical_volumes.html#lvol_inflation", null ]
+        [ "Inflation", "logical_volumes.html#lvol_inflation", null ],
+        [ "Decoupling", "logical_volumes.html#lvol_decoupling", null ]
       ] ],
       [ "RPC overview", "logical_volumes.html#lvol_rpc", null ]
     ] ]
