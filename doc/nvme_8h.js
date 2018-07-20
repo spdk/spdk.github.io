@@ -61,7 +61,7 @@ var nvme_8h =
     [ "spdk_nvme_ctrlr_is_log_page_supported", "nvme_8h.html#a7dc6bb842e168a68972ec46cc35591ae", null ],
     [ "spdk_nvme_ctrlr_process_admin_completions", "nvme_8h.html#a10282695461985f58f54de022911745e", null ],
     [ "spdk_nvme_ctrlr_register_aer_callback", "nvme_8h.html#a1505fc1ef6e8ccb00134c1fa15e0368b", null ],
-    [ "spdk_nvme_ctrlr_register_timeout_callback", "nvme_8h.html#a8e12d6d7cf10399d0a06c99085be99bf", null ],
+    [ "spdk_nvme_ctrlr_register_timeout_callback", "nvme_8h.html#aecec86e033e0d13e6fc67ead61a7028d", null ],
     [ "spdk_nvme_ctrlr_reset", "nvme_8h.html#ae13ccd2ea831842a5008eb95a32545c3", null ],
     [ "spdk_nvme_ctrlr_update_firmware", "nvme_8h.html#a7938b258a7614073065be4f6a35bd0e2", null ],
     [ "spdk_nvme_detach", "nvme_8h.html#a4b63c225c3cce6da60fdbfb6f54b11e2", null ],

@@ -1,5 +1,12 @@
 var NAVTREEINDEX14 =
 {
+"structspdk__nvme__ns__data.html#adc10938c25cd751dcf93a2a725040ec1":[12,0,116,7],
+"structspdk__nvme__ns__data.html#ae0ed9489f16678899fafd54bec980ccb":[12,0,116,65],
+"structspdk__nvme__ns__data.html#ae160752518b32469ce2a74908d74a6c8":[12,0,116,46],
+"structspdk__nvme__ns__data.html#ae71d2fb221f55dd1bc0981e94e67f49d":[12,0,116,23],
+"structspdk__nvme__ns__data.html#ae928d11bdac4d12e2f246f9540b811ab":[12,0,116,36],
+"structspdk__nvme__ns__data.html#aea402a7306c769018aa67a77c1a406be":[12,0,116,55],
+"structspdk__nvme__ns__data.html#aee16756e2f836613738e3c6a28cf6e63":[12,0,116,26],
 "structspdk__nvme__ns__data.html#af01be31aa34caf36761d63da4d46c31a":[12,0,116,29],
 "structspdk__nvme__ns__data.html#af3aa67f77d8e6228c1ee8d49668e12bc":[12,0,116,34],
 "structspdk__nvme__ns__data.html#af4041c21ba5656fc9d649a698e868862":[12,0,116,8],
@@ -242,12 +249,5 @@ var NAVTREEINDEX14 =
 "structspdk__nvmf__fabric__prop__get__cmd.html#ada0c800e049474f79dbbdd8afc8a7be6":[12,0,142,4],
 "structspdk__nvmf__fabric__prop__get__cmd.html#ae0ca82c80494d59872aa8348152a1f01":[12,0,142,10],
 "structspdk__nvmf__fabric__prop__get__rsp.html":[12,0,143],
-"structspdk__nvmf__fabric__prop__get__rsp.html#a4739a90ffee1060b6bf1a8706a0895eb":[12,0,143,5],
-"structspdk__nvmf__fabric__prop__get__rsp.html#a478c44c80cb30d552433384b86d23df8":[12,0,143,0],
-"structspdk__nvmf__fabric__prop__get__rsp.html#a503f040816b3efb6b067a1fed353e3d2":[12,0,143,2],
-"structspdk__nvmf__fabric__prop__get__rsp.html#a6e0010db32f1070d00e71aa0d4702c90":[12,0,143,4],
-"structspdk__nvmf__fabric__prop__get__rsp.html#a742907a8e6b713023942e8404c1e4c56":[12,0,143,3],
-"structspdk__nvmf__fabric__prop__get__rsp.html#a903807f719003dfe15c55349d9d199b0":[12,0,143,1],
-"structspdk__nvmf__fabric__prop__get__rsp.html#a98b432e478aa6c750ac091086a763963":[12,0,143,6],
-"structspdk__nvmf__fabric__prop__get__rsp.html#aeca0eae077db4da7fdf4f58a9c8b5631":[12,0,143,8]
+"structspdk__nvmf__fabric__prop__get__rsp.html#a4739a90ffee1060b6bf1a8706a0895eb":[12,0,143,5]
 };
