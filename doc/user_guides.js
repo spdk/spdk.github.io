@@ -119,6 +119,7 @@ var user_guides =
         [ "construct_aio_bdev", "jsonrpc.html#rpc_construct_aio_bdev", null ],
         [ "delete_aio_bdev", "jsonrpc.html#rpc_delete_aio_bdev", null ],
         [ "construct_nvme_bdev", "jsonrpc.html#rpc_construct_nvme_bdev", null ],
+        [ "delete_nvme_controller", "jsonrpc.html#rpc_delete_nvme_controller", null ],
         [ "construct_rbd_bdev", "jsonrpc.html#rpc_construct_rbd_bdev", null ],
         [ "delete_rbd_bdev", "jsonrpc.html#rpc_delete_rbd_bdev", null ],
         [ "construct_error_bdev", "jsonrpc.html#rpc_construct_error_bdev", null ],
@@ -137,7 +138,8 @@ var user_guides =
         [ "construct_virtio_pci_scsi_bdev", "jsonrpc.html#rpc_construct_virtio_pci_scsi_bdev", null ],
         [ "construct_virtio_user_blk_bdev", "jsonrpc.html#rpc_construct_virtio_user_blk_bdev", null ],
         [ "construct_virtio_pci_blk_bdev", "jsonrpc.html#rpc_construct_virtio_pci_blk_bdev", null ],
-        [ "get_virtio_scsi_devs", "jsonrpc.html#rpc_get_virtio_scsi_devs", null ]
+        [ "get_virtio_scsi_devs", "jsonrpc.html#rpc_get_virtio_scsi_devs", null ],
+        [ "remove_virtio_bdev", "jsonrpc.html#rpc_remove_virtio_bdev", null ]
       ] ],
       [ "NVMe-oF Target", "jsonrpc.html#jsonrpc_components_nvmf_tgt", [
         [ "get_nvmf_subsystems method", "jsonrpc.html#rpc_get_nvmf_subsystems", null ],

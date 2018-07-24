@@ -1,5 +1,7 @@
 var NAVTREEINDEX4 =
 {
+"jsonrpc.html#rpc_rename_lvol_bdev":[3,6,5,7],
+"jsonrpc.html#rpc_rename_lvol_store":[3,6,5,3],
 "jsonrpc.html#rpc_resize_lvol_bdev":[3,6,5,8],
 "jsonrpc.html#rpc_set_bdev_options":[3,6,2,0],
 "jsonrpc.html#rpc_set_bdev_qos_limit_iops":[3,6,2,4],
@@ -247,7 +249,5 @@ var NAVTREEINDEX4 =
 "nvme__intel_8h.html#a381eb66ecd7c1b69677ee540da6ae1a2a4d22ee14b5643abe3a41c103b19eda13":[13,0,33,14,9],
 "nvme__intel_8h.html#a381eb66ecd7c1b69677ee540da6ae1a2a4de0d4befabdd84c104321dceb1f8ed5":[13,0,33,14,6],
 "nvme__intel_8h.html#a381eb66ecd7c1b69677ee540da6ae1a2a5fe2513ac6e632ce58a50536b7d960e7":[13,0,33,14,7],
-"nvme__intel_8h.html#a381eb66ecd7c1b69677ee540da6ae1a2a612995ba91533ba160b04a7a29804c93":[13,0,33,14,1],
-"nvme__intel_8h.html#a381eb66ecd7c1b69677ee540da6ae1a2a749fe4d89ff1269649a11c9da424837c":[13,0,33,14,5],
-"nvme__intel_8h.html#a381eb66ecd7c1b69677ee540da6ae1a2a7ae10d4b0594cb65697e621a84368d85":[13,0,33,14,8]
+"nvme__intel_8h.html#a381eb66ecd7c1b69677ee540da6ae1a2a612995ba91533ba160b04a7a29804c93":[13,0,33,14,1]
 };

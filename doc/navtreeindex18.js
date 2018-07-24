@@ -1,5 +1,7 @@
 var NAVTREEINDEX18 =
 {
+"vhost.html#vhost_multiqueue":[3,3,5,0],
+"vhost.html#vhost_prereqs":[3,3,2],
 "vhost.html#vhost_qemu_config":[3,3,4,2],
 "vhost.html#vhost_start":[3,3,3],
 "vhost.html#vhost_toc":[3,3,0],
