@@ -16,6 +16,24 @@
       "revId": "684341d122c5450e520fcced79829ffa2d498ad1",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "0f8255af_21407576",
+        "filename": "community.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 36,
+      "author": {
+        "id": 1011222
+      },
+      "writtenOn": "2018-07-25T16:49:04Z",
+      "side": 1,
+      "message": "Never mind - I conflated access code with the password.",
+      "parentUuid": "d97dbe18_5cd440c5",
+      "revId": "684341d122c5450e520fcced79829ffa2d498ad1",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
     }
   ]
 }
