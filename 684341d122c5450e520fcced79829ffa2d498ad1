@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "d97dbe18_5cd440c5",
+        "filename": "community.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 36,
+      "author": {
+        "id": 1011222
+      },
+      "writtenOn": "2018-07-25T15:44:12Z",
+      "side": 1,
+      "message": "Hey Paul,\n\nShouldn\u0027t we take the access codes out of the community.md page?  I guess I\u0027m not following how these changes will keep the bots from calling in again.\n\n-Jim",
+      "revId": "684341d122c5450e520fcced79829ffa2d498ad1",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
