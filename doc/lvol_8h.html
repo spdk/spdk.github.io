@@ -206,6 +206,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a3d5d8be84217db4879d5bf79fa5c23f6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lvol_8h.html#a3d5d8be84217db4879d5bf79fa5c23f6">spdk_lvol_rename</a> (struct spdk_lvol *lvol, const char *new_name, <a class="el" href="lvol_8h.html#a4d5c96c4fe4512f99dcb3f1e5d5e86be">spdk_lvol_op_complete</a> cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:a3d5d8be84217db4879d5bf79fa5c23f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rename lvol with new_name.  <a href="#a3d5d8be84217db4879d5bf79fa5c23f6">More...</a><br /></td></tr>
 <tr class="separator:a3d5d8be84217db4879d5bf79fa5c23f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a526682c9b96877490b9611cc96a907b1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lvol_8h.html#a526682c9b96877490b9611cc96a907b1">spdk_lvol_deletable</a> (struct spdk_lvol *lvol)</td></tr>
+<tr class="memdesc:a526682c9b96877490b9611cc96a907b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns if it is possible to delete an lvol (i.e.  <a href="#a526682c9b96877490b9611cc96a907b1">More...</a><br /></td></tr>
+<tr class="separator:a526682c9b96877490b9611cc96a907b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a87c4dadc88c211fb4e8ba0cddc474032"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lvol_8h.html#a87c4dadc88c211fb4e8ba0cddc474032">spdk_lvol_destroy</a> (struct spdk_lvol *lvol, <a class="el" href="lvol_8h.html#a4d5c96c4fe4512f99dcb3f1e5d5e86be">spdk_lvol_op_complete</a> cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:a87c4dadc88c211fb4e8ba0cddc474032"><td class="mdescLeft">&#160;</td><td class="mdescRight">Close lvol and remove information about lvol from its lvolstore.  <a href="#a87c4dadc88c211fb4e8ba0cddc474032">More...</a><br /></td></tr>
 <tr class="separator:a87c4dadc88c211fb4e8ba0cddc474032"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -576,6 +579,32 @@ Functions</h2></td></tr>
     <tr><td class="paramname">lvol</td><td>Handle to lvol </td></tr>
     <tr><td class="paramname">cb_fn</td><td>Completion callback </td></tr>
     <tr><td class="paramname">cb_arg</td><td>Completion callback custom arguments </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a526682c9b96877490b9611cc96a907b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a526682c9b96877490b9611cc96a907b1">&#9670;&nbsp;</a></span>spdk_lvol_deletable()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool spdk_lvol_deletable </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_lvol *&#160;</td>
+          <td class="paramname"><em>lvol</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns if it is possible to delete an lvol (i.e. </p>
+<p>lvol is not a snapshot that have at least one clone). </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">lvol</td><td>Handle to lvol </td></tr>
   </table>
   </dd>
 </dl>

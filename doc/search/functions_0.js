@@ -307,6 +307,7 @@ var searchData=
   ['spdk_5flvol_5fcreate_5fclone',['spdk_lvol_create_clone',['../lvol_8h.html#a2dfba2354de69f535ab0c39693c9ae73',1,'lvol.h']]],
   ['spdk_5flvol_5fcreate_5fsnapshot',['spdk_lvol_create_snapshot',['../lvol_8h.html#ab7a0818546003c24d2236c1f201fdf28',1,'lvol.h']]],
   ['spdk_5flvol_5fdecouple_5fparent',['spdk_lvol_decouple_parent',['../lvol_8h.html#a15199efb9ca8b7309ec257c1a87360c5',1,'lvol.h']]],
+  ['spdk_5flvol_5fdeletable',['spdk_lvol_deletable',['../lvol_8h.html#a526682c9b96877490b9611cc96a907b1',1,'lvol.h']]],
   ['spdk_5flvol_5fdestroy',['spdk_lvol_destroy',['../lvol_8h.html#a87c4dadc88c211fb4e8ba0cddc474032',1,'lvol.h']]],
   ['spdk_5flvol_5fget_5fio_5fchannel',['spdk_lvol_get_io_channel',['../lvol_8h.html#a3e1700585830ce465b5a1479774c1f44',1,'lvol.h']]],
   ['spdk_5flvol_5finflate',['spdk_lvol_inflate',['../lvol_8h.html#a795f3fe355907d744d019d2b01f0aee9',1,'lvol.h']]],

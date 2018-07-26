@@ -1,5 +1,6 @@
 var NAVTREEINDEX17 =
 {
+"unionspdk__nvme__cap__register.html#a37a043c068e8992317712cc7d95e9249":[12,0,68,10],
 "unionspdk__nvme__cap__register.html#a4b8860fc60a762e66979666ae1ac3563":[12,0,68,12],
 "unionspdk__nvme__cap__register.html#a6d6c8f5ede010b705296692e72e0b645":[12,0,68,13],
 "unionspdk__nvme__cap__register.html#a6fa0b3903fbba2e6951e8f3978128553":[12,0,68,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX17 =
 "vhost.html#vhost_cmd_line_args":[3,3,2,0],
 "vhost.html#vhost_config":[3,3,4],
 "vhost.html#vhost_example":[3,3,4,3],
-"vhost.html#vhost_hotattach":[3,3,5,1],
-"vhost.html#vhost_intro":[3,3,1]
+"vhost.html#vhost_hotattach":[3,3,5,1]
 };
