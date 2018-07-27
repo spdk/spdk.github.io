@@ -21,7 +21,7 @@ var blobfs_8h =
     [ "spdk_file_read", "blobfs_8h.html#aa414131c934d53b18ea45fd5bf82aaf9", null ],
     [ "spdk_file_set_priority", "blobfs_8h.html#adb2197f34f626761c83b9eb7effacf4e", null ],
     [ "spdk_file_sync", "blobfs_8h.html#a9dbd899b04661e7773cff6a94123bd92", null ],
-    [ "spdk_file_truncate", "blobfs_8h.html#aa43e4faaa71af82f01c0c9e3036f7ef4", null ],
+    [ "spdk_file_truncate", "blobfs_8h.html#ada22d1c3ca951dff8380854b3726d8c1", null ],
     [ "spdk_file_write", "blobfs_8h.html#a874dce983b8a63123e7c8b77309017c1", null ],
     [ "spdk_fs_alloc_io_channel", "blobfs_8h.html#a3ba653cf26b62f1d18385bdc010c73b2", null ],
     [ "spdk_fs_alloc_io_channel_sync", "blobfs_8h.html#ad226faaede088c8a82761bf1cb20b916", null ],

@@ -141,6 +141,24 @@ var user_guides =
         [ "get_virtio_scsi_devs", "jsonrpc.html#rpc_get_virtio_scsi_devs", null ],
         [ "remove_virtio_bdev", "jsonrpc.html#rpc_remove_virtio_bdev", null ]
       ] ],
+      [ "iSCSI Target", "jsonrpc.html#jsonrpc_components_iscsi_tgt", [
+        [ "set_iscsi_options method", "jsonrpc.html#rpc_set_iscsi_options", null ],
+        [ "get_iscsi_global_params method", "jsonrpc.html#rpc_get_iscsi_global_params", null ],
+        [ "get_initiator_groups method", "jsonrpc.html#rpc_get_initiator_groups", null ],
+        [ "add_initiator_group method", "jsonrpc.html#rpc_add_initiator_group", null ],
+        [ "delete_initiator_group method", "jsonrpc.html#rpc_delete_initiator_group", null ],
+        [ "add_initiators_to_initiator_group method", "jsonrpc.html#rpc_add_initiators_to_initiator_group", null ],
+        [ "get_target_nodes method", "jsonrpc.html#rpc_get_target_nodes", null ],
+        [ "construct_target_node method", "jsonrpc.html#rpc_construct_target_node", null ],
+        [ "add_pg_ig_maps method", "jsonrpc.html#rpc_add_pg_ig_maps", null ],
+        [ "delete_pg_ig_maps method", "jsonrpc.html#rpc_delete_pg_ig_maps", null ],
+        [ "delete_target_node method", "jsonrpc.html#rpc_delete_target_node", null ],
+        [ "get_portal_groups method", "jsonrpc.html#rpc_get_portal_groups", null ],
+        [ "add_portal_group method", "jsonrpc.html#rpc_add_portal_group", null ],
+        [ "delete_portal_group method", "jsonrpc.html#rpc_delete_portal_group", null ],
+        [ "get_iscsi_connections method", "jsonrpc.html#rpc_get_iscsi_connections", null ],
+        [ "target_node_add_lun method", "jsonrpc.html#rpc_target_node_add_lun", null ]
+      ] ],
       [ "NVMe-oF Target", "jsonrpc.html#jsonrpc_components_nvmf_tgt", [
         [ "get_nvmf_subsystems method", "jsonrpc.html#rpc_get_nvmf_subsystems", null ],
         [ "construct_nvmf_subsystem method", "jsonrpc.html#rpc_construct_nvmf_subsystem", [

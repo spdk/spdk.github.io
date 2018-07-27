@@ -165,6 +165,8 @@ v18.07: (Upcoming Release)</h1>
 <p>To enable type: 'git config core.hooksPath .githooks'. To override after configuration use the <code>git --no-verify</code> flag.</p>
 <h2>IOAT</h2>
 <p>IOAT for copy engine is disabled by default. It can be enabled by specifying the Enable option with "Yes" in <code>[Ioat]</code> section of the configuration file. The Disable option is now deprecated and will be removed in a future release.</p>
+<h2>blobfs</h2>
+<p>Change the return type of spdk_file_truncate from void to int. The purpose is to catch the <code>NOMEM</code> error condition.</p>
 <h1><a class="anchor" id="changelog-v18-04"></a>
 v18.04: Logical Volume Snapshot/Clone, iSCSI Initiator, Bdev QoS, VPP Userspace TCP/IP</h1>
 <h2>vhost</h2>
