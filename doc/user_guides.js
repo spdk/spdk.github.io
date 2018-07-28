@@ -118,6 +118,8 @@ var user_guides =
         [ "delete_null_bdev", "jsonrpc.html#rpc_delete_null_bdev", null ],
         [ "construct_aio_bdev", "jsonrpc.html#rpc_construct_aio_bdev", null ],
         [ "delete_aio_bdev", "jsonrpc.html#rpc_delete_aio_bdev", null ],
+        [ "set_bdev_nvme_options", "jsonrpc.html#rpc_set_bdev_nvme_options", null ],
+        [ "set_bdev_nvme_hotplug", "jsonrpc.html#rpc_set_bdev_nvme_hotplug", null ],
         [ "construct_nvme_bdev", "jsonrpc.html#rpc_construct_nvme_bdev", null ],
         [ "delete_nvme_controller", "jsonrpc.html#rpc_delete_nvme_controller", null ],
         [ "construct_rbd_bdev", "jsonrpc.html#rpc_construct_rbd_bdev", null ],
