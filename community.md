@@ -27,6 +27,10 @@ There is a community meeting each week in alternating time slots selected so
 that one week is a Euro-friendly time and the following week is an
 Asia-friendly time.
 
+The p.a.s.s.w.o.r.d (not to be confused with the pass code) for all community meetings
+including the bug scrub is:
+![SPDK](../../../../img/comm_meeting.jpg "SPDK").
+
 ## Next Euro-Friendly Meeting
 <div id="euro-mtg"></div>
 [Join via WebEx](https://intel.webex.com/intel/j.php?MTID=m6aae482e8999d122310228f649a0c34d)<br/>
