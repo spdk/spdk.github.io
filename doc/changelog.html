@@ -167,6 +167,8 @@ v18.07: (Upcoming Release)</h1>
 <p>IOAT for copy engine is disabled by default. It can be enabled by specifying the Enable option with "Yes" in <code>[Ioat]</code> section of the configuration file. The Disable option is now deprecated and will be removed in a future release.</p>
 <h2>blobfs</h2>
 <p>Change the return type of spdk_file_truncate from void to int. The purpose is to catch the <code>NOMEM</code> error condition.</p>
+<h2>DPDK 18.05</h2>
+<p>The DPDK submodule has been rebased on the DPDK 18.05 release. DPDK 18.05 supports dynamic memory allocation, but due to some issues found after the DPDK 18.05 release, that support is not enabled for SPDK 18.07. Therefore, SPDK 18.07 will continue to use the legacy memory allocation model. The plan is to enable dynamic memory allocation after the DPDK 18.08 release which should fix these issues.</p>
 <h1><a class="anchor" id="changelog-v18-04"></a>
 v18.04: Logical Volume Snapshot/Clone, iSCSI Initiator, Bdev QoS, VPP Userspace TCP/IP</h1>
 <h2>vhost</h2>
