@@ -5,6 +5,7 @@ var searchData=
   ['wce',['wce',['../unionspdk__nvme__feat__volatile__write__cache.html#a910973ce5eb628dd9b06ab0c72a1cd33',1,'spdk_nvme_feat_volatile_write_cache']]],
   ['wctemp',['wctemp',['../structspdk__nvme__ctrlr__data.html#a1bbdf8a81a2e7ad4c1969a24573a6649',1,'spdk_nvme_ctrlr_data']]],
   ['wds',['wds',['../unionspdk__nvme__cmbsz__register.html#ad934781cb8247d65136131504d5cd05d',1,'spdk_nvme_cmbsz_register']]],
+  ['weighted_5fio_5ftime',['weighted_io_time',['../structspdk__bdev_1_1____bdev__internal__fields.html#a1ca4aa351052992223be9801674d8da8',1,'spdk_bdev::__bdev_internal_fields']]],
   ['wh',['wh',['../unionspdk__nvme__feat__power__management.html#a77632a40e3f55b8de36ca61c7d0a8b74',1,'spdk_nvme_feat_power_management']]],
   ['wit',['wit',['../structspdk__ocssd__geometry__data.html#ae8973c867a5d732a5367165a51d7c69c',1,'spdk_ocssd_geometry_data']]],
   ['wli',['wli',['../structspdk__ocssd__chunk__information.html#aa3c0a989237f93863d9ca30d3b93378e',1,'spdk_ocssd_chunk_information']]],

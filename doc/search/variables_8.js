@@ -9,6 +9,7 @@ var searchData=
   ['io_5fqueue_5frequests',['io_queue_requests',['../structspdk__nvme__ctrlr__opts.html#a552e09920f8e8a21243dee31ab05f581',1,'spdk_nvme_ctrlr_opts::io_queue_requests()'],['../structspdk__nvme__io__qpair__opts.html#a4af594ef7f8b7e590662633c926146b4',1,'spdk_nvme_io_qpair_opts::io_queue_requests()']]],
   ['io_5fqueue_5fsize',['io_queue_size',['../structspdk__nvme__ctrlr__opts.html#a1c91126df78ac91d651dfcdc5236332b',1,'spdk_nvme_ctrlr_opts::io_queue_size()'],['../structspdk__nvme__io__qpair__opts.html#adbb8aa3f64bc021ea5e9fddec6796341',1,'spdk_nvme_io_qpair_opts::io_queue_size()']]],
   ['io_5fsubmit_5fch',['io_submit_ch',['../structspdk__bdev__io_1_1____bdev__io__internal__fields.html#a538e1a5baf1242b0b41489e4f0f411f9',1,'spdk_bdev_io::__bdev_io_internal_fields']]],
+  ['io_5ftime',['io_time',['../structspdk__bdev_1_1____bdev__internal__fields.html#a55d6103a185f6c50c9b5d58976d08508',1,'spdk_bdev::__bdev_internal_fields']]],
   ['io_5ftype_5fsupported',['io_type_supported',['../structspdk__bdev__fn__table.html#a20ec74cad9e56c5ac8ee9db239d8f46e',1,'spdk_bdev_fn_table']]],
   ['ioccsz',['ioccsz',['../structspdk__nvme__ctrlr__data.html#ac6c0c28dbff6a34416a723cd77c4064a',1,'spdk_nvme_ctrlr_data']]],
   ['iocqes',['iocqes',['../unionspdk__nvme__cc__register.html#a6be5f13e66cd6fd34c1463147cdfb106',1,'spdk_nvme_cc_register']]],

@@ -139,36 +139,45 @@ $(document).ready(function(){initNavTree('changelog.html','');});
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><h1><a class="anchor" id="changelog-v18-07"></a>
-v18.07: (Upcoming Release)</h1>
-<h2>RAID module</h2>
-<p>A new bdev module called "raid" has been added as experimental module which aggregates underlying nvme bdevs and expose a single raid bdev to upper bdev layers. Over this LVS/LVOL can be created as per use-cases and they can be exposed to NVMe-oF subsystems. Please note that vhost will not work with RAID module as RAID module does not support multipe IOV Vectors yet.</p>
-<h2>Log</h2>
-<p>The debug log component flag has been renamed from <code>-t</code> to <code>-L</code> to prevent confusion with tracepoints and to allow the option to be added to tools that already use <code>-t</code> to mean something else.</p>
-<h2>NVMe Driver</h2>
-<p>New API function <a class="el" href="nvme_8h.html#acf6188764b8c71b2f64a74077d6bfabf" title="Inject an error for the next request with a given opcode. ">spdk_nvme_qpair_add_cmd_error_injection()</a> and <a class="el" href="nvme_8h.html#ad720b23786450b5a2b2d7d65c6dd6b7c" title="Clear the specified NVMe command with error status. ">spdk_nvme_qpair_remove_cmd_error_injection()</a> have been added for NVMe error emulation, users can set specified command with specified error status for error emulation.</p>
-<p>Change the name <code>timeout_sec</code> parameter to <code>timeout_us</code> in API function spdk_nvme_ctrlr_register_timeout_callback, and also change the type from uint32_t to uint64_t. This will give users more fine-grained control over the timeout period for calling callback functions.</p>
-<h2>Build System</h2>
-<p>The build system now generates a combined shared library (libspdk.so) that may be used in place of the individual static libraries (libspdk_*.a). The combined library includes all components of SPDK and is intended to make linking against SPDK easier. The static libraries are also still provided for users that prefer to link only the minimal set of components required.</p>
-<p>A new configure option was added <code>--with-crypto</code> that, when set, will build the crypto vbdev as well as its dependencies.</p>
-<h2>RPC</h2>
-<p>The <code>start_nbd_disk</code> RPC method now returns the path to the kernel NBD device node rather than always returning <code>true</code>.</p>
-<h2>Bdev</h2>
+v18.07:</h1>
+<h2>bdev</h2>
+<p>A new public header file <a class="el" href="bdev__module_8h.html" title="Block Device Module Interface. ">bdev_module.h</a> has been introduced to facilitate the development of new bdev modules. This header includes an interface for the <a class="el" href="structspdk__bdev__part.html">spdk_bdev_part</a> and spdk_bdev_part_base objects to enable the creation of multiple virtual bdevs on top of a single base bdev and should act as the primary API for module authors.</p>
+<p>spdk_bdev_get_opts() and spdk_bdev_set_opts() were added to set bdev-wide options.</p>
+<p>A mechanism for handling out of memory condition errors (ENOMEM) returned from I/O submission requests at the bdev layer has been added. See <a class="el" href="bdev_8h.html#acc4beee18ded7837fa92bd7c34e7ef2e" title="Add an entry into the calling thread&#39;s queue to be notified when an spdk_bdev_io becomes available...">spdk_bdev_queue_io_wait()</a>.</p>
 <p>The <a class="el" href="bdev_8h.html#ab1ba28ba382edd1d792d51a054eb3aa2" title="Return I/O statistics for this channel. ">spdk_bdev_get_io_stat()</a> function now returns cumulative totals instead of resetting on each call. This allows multiple callers to query I/O statistics without conflicting with each other. Existing users will need to adjust their code to record the previous I/O statistics to calculate the delta between calls.</p>
-<p>A new public header file <a class="el" href="bdev__module_8h.html" title="Block Device Module Interface. ">bdev_module.h</a> has been introduced to facilitate the development of new bdev modules. This header includes an interface for the <a class="el" href="structspdk__bdev__part.html">spdk_bdev_part</a> and spdk_bdev_part_base objects to enable the creation of multiple virtual bdevs on top of a single base bdev.</p>
-<h2>Env</h2>
-<p>The <a class="el" href="env_8h.html#a0236afa06288866feb8ed1fccfef5dda" title="Look up the translation of a virtual address in a memory map. ">spdk_mem_map_translate()</a> function now takes a size parameter to indicate the size of the memory region. This can be used by environment implementations to validate the requested translation.</p>
-<p>The I/O Channel implementation has been moved to its own library - lib/thread. The public API that was previously in <a class="el" href="io__channel_8h.html" title="IO channel. ">spdk/io_channel.h</a> is now in <a class="el" href="thread_8h.html" title="Thread. ">spdk/thread.h</a> The file <a class="el" href="io__channel_8h.html" title="IO channel. ">spdk/io_channel.h</a> remains and includes <a class="el" href="thread_8h.html" title="Thread. ">spdk/thread.h</a>.</p>
+<p>I/O queue depth tracking and samples options have been added. See <a class="el" href="bdev_8h.html#a471f32e8948203f7aaf320396a1ae7c9" title="Get the most recently measured queue depth from a bdev. ">spdk_bdev_get_qd()</a>, <a class="el" href="bdev_8h.html#adab852ac707702316bf869a3d7dfdc85" title="Get the queue depth polling period. ">spdk_bdev_get_qd_sampling_period()</a>, and <a class="el" href="bdev_8h.html#a9d37ad1d4da0bcb51ada76dbe4f4ce15" title="Enable or disable queue depth sampling for this bdev. ">spdk_bdev_set_qd_sampling_period()</a>.</p>
+<h2>RAID module</h2>
+<p>A new bdev module called "raid" has been added as experimental module which aggregates underlying NVMe bdevs and exposes a single raid bdev. Please note that vhost will not work with this module because it does not yet have support for multi-element io vectors.</p>
+<h2>Log</h2>
+<p>The debug log component flag available on several SPDK applications has been renamed from <code>-t</code> to <code>-L</code> to prevent confusion with tracepoints and to allow the option to be added to tools that already use <code>-t</code> to mean something else.</p>
+<h2>Blobstore</h2>
+<p>A new function, <a class="el" href="blob_8h.html#aa75072ce1a5a9559fe2db0da30363ad4" title="Dump a blobstore&#39;s metadata to a given FILE in human-readable format. ">spdk_bs_dump()</a>, has been added that dumps all of the contents of a blobstore to a file pointer. This includes the metadata and is very useful for debugging.</p>
+<p>Two new operations have been added for thin-provisioned blobs. <a class="el" href="blob_8h.html#a3d1f1b56d9782997ef3e338879a2fa28" title="Allocate all clusters in this blob. ">spdk_bs_inflate_blob()</a> will allocate clusters for all thinly provisioned regions of the blob and populate them with the correct data by reading from the backing blob(s). <a class="el" href="blob_8h.html#a7dee33b6b9df9b9a3d6b9957c71a779c" title="Remove dependency on parent blob. ">spdk_bs_blob_decouple_parent()</a> works similarly, but will only allocate clusters that correspond to data in the blob's immediate parent. Clusters allocated to grandparents or that aren't allocated at all will remain thin-provisioned.</p>
+<h2>BlobFS</h2>
+<p>Changed the return type of <a class="el" href="blobfs_8h.html#ada22d1c3ca951dff8380854b3726d8c1" title="Truncate the file. ">spdk_file_truncate()</a> from void to int to allow the propagation of <code>ENOMEM</code> errors.</p>
+<h2>NVMe Driver</h2>
+<p>The new API functions <a class="el" href="nvme_8h.html#acf6188764b8c71b2f64a74077d6bfabf" title="Inject an error for the next request with a given opcode. ">spdk_nvme_qpair_add_cmd_error_injection()</a> and <a class="el" href="nvme_8h.html#ad720b23786450b5a2b2d7d65c6dd6b7c" title="Clear the specified NVMe command with error status. ">spdk_nvme_qpair_remove_cmd_error_injection()</a> have been added for NVMe error emulation. Users can set a specified command to fail with a particular error status.</p>
+<p>Changed the name <code>timeout_sec</code> parameter to <code>timeout_us</code> in <a class="el" href="nvme_8h.html#aecec86e033e0d13e6fc67ead61a7028d" title="Register for timeout callback on a controller. ">spdk_nvme_ctrlr_register_timeout_callback()</a>, and also changed the type from uint32_t to uint64_t. This will give users more fine-grained control over the timeout period.</p>
+<p>Basic support for Open Channel SSDs was added. See <a class="el" href="nvme__ocssd_8h.html" title="NVMe driver public API extension for Open-Channel. ">nvme_ocssd.h</a></p>
 <h2>NVMe Over Fabrics</h2>
 <p>The <a class="el" href="nvmf_8h.html#a21638f4d81002e93d410cd0d267f608c" title="Destroy an NVMe-oF target. ">spdk_nvmf_tgt_destroy()</a> function is now asynchronous and takes a callback as a parameter.</p>
+<p><a class="el" href="nvmf_8h.html#afa33cb1cf39e04ee533f874ed82e24e5" title="Disconnect an NVMe-oF qpair. ">spdk_nvmf_qpair_disconnect()</a> was added to allow the user to disconnect qpairs.</p>
+<p><a class="el" href="nvmf_8h.html#a414b91bad7200ab931f14a06585ccc74" title="Get the maximum number of namespaces allowed in a subsystem. ">spdk_nvmf_subsystem_get_max_namespaces()</a> was added to query the maximum allowed number of namespaces for a given subsystem.</p>
+<h2>Build System</h2>
+<p>The build system now generates a combined shared library (libspdk.so) that may be used in place of the individual static libraries (libspdk_*.a). The combined library includes all components of SPDK and is intended to make linking against SPDK easier. The static libraries are also still provided for users that prefer to link only the minimal set of components required.</p>
 <h2>git pre-commit and pre-push hooks</h2>
 <p>The pre-commit hook will run <code>scripts/check_format.sh</code> and verify there are no formating errors before allowing <code>git commit</code> to run. The pre-push hook runs <code>make CONFIG_WERROR=y</code> with and without <code>CONFIG_DEBUG=y</code> using both the gcc and clang compiler before allowing <code>git push</code> to run. Following each DEBUG build <code>test/unit/unittest.sh</code> is run and verified. Results are recorded in the <code>make.log</code> file.</p>
 <p>To enable type: 'git config core.hooksPath .githooks'. To override after configuration use the <code>git --no-verify</code> flag.</p>
-<h2>IOAT</h2>
-<p>IOAT for copy engine is disabled by default. It can be enabled by specifying the Enable option with "Yes" in <code>[Ioat]</code> section of the configuration file. The Disable option is now deprecated and will be removed in a future release.</p>
-<h2>blobfs</h2>
-<p>Change the return type of spdk_file_truncate from void to int. The purpose is to catch the <code>NOMEM</code> error condition.</p>
+<h2>RPC</h2>
+<p>The <code>start_nbd_disk</code> RPC method now returns the path to the kernel NBD device node rather than always returning <code>true</code>.</p>
 <h2>DPDK 18.05</h2>
 <p>The DPDK submodule has been rebased on the DPDK 18.05 release. DPDK 18.05 supports dynamic memory allocation, but due to some issues found after the DPDK 18.05 release, that support is not enabled for SPDK 18.07. Therefore, SPDK 18.07 will continue to use the legacy memory allocation model. The plan is to enable dynamic memory allocation after the DPDK 18.08 release which should fix these issues.</p>
+<h2>Environment Abstraction Layer and Event Framework</h2>
+<p>The <a class="el" href="env_8h.html#a0236afa06288866feb8ed1fccfef5dda" title="Look up the translation of a virtual address in a memory map. ">spdk_mem_map_translate()</a> function now takes a size parameter to indicate the size of the memory region. This can be used by environment implementations to validate the requested translation.</p>
+<p>The I/O Channel implementation has been moved to its own library - lib/thread. The public API that was previously in <a class="el" href="io__channel_8h.html" title="IO channel. ">spdk/io_channel.h</a> is now in <a class="el" href="thread_8h.html" title="Thread. ">spdk/thread.h</a> The file <a class="el" href="io__channel_8h.html" title="IO channel. ">spdk/io_channel.h</a> remains and includes <a class="el" href="thread_8h.html" title="Thread. ">spdk/thread.h</a>.</p>
+<p>spdk_reactor_get_tsc_stats was added to return interesting statistics for each reactor.</p>
+<h2>IOAT</h2>
+<p>IOAT for copy engine is disabled by default. It can be enabled by specifying the Enable option with "Yes" in <code>[Ioat]</code> section of the configuration file. The Disable option is now deprecated and will be removed in a future release.</p>
 <h1><a class="anchor" id="changelog-v18-04"></a>
 v18.04: Logical Volume Snapshot/Clone, iSCSI Initiator, Bdev QoS, VPP Userspace TCP/IP</h1>
 <h2>vhost</h2>

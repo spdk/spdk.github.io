@@ -222,6 +222,12 @@ uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 <tr class="memitem:a544e45acd435eb8c7269f08166841f41"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev_1_1____bdev__internal__fields.html#a544e45acd435eb8c7269f08166841f41">measured_queue_depth</a></td></tr>
 <tr class="memdesc:a544e45acd435eb8c7269f08166841f41"><td class="mdescLeft">&#160;</td><td class="mdescRight">queue depth as calculated the last time the telemetry poller checked.  <a href="#a544e45acd435eb8c7269f08166841f41">More...</a><br /></td></tr>
 <tr class="separator:a544e45acd435eb8c7269f08166841f41"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55d6103a185f6c50c9b5d58976d08508"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev_1_1____bdev__internal__fields.html#a55d6103a185f6c50c9b5d58976d08508">io_time</a></td></tr>
+<tr class="memdesc:a55d6103a185f6c50c9b5d58976d08508"><td class="mdescLeft">&#160;</td><td class="mdescRight">most recent value of ticks spent performing I/O.  <a href="#a55d6103a185f6c50c9b5d58976d08508">More...</a><br /></td></tr>
+<tr class="separator:a55d6103a185f6c50c9b5d58976d08508"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ca4aa351052992223be9801674d8da8"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev_1_1____bdev__internal__fields.html#a1ca4aa351052992223be9801674d8da8">weighted_io_time</a></td></tr>
+<tr class="memdesc:a1ca4aa351052992223be9801674d8da8"><td class="mdescLeft">&#160;</td><td class="mdescRight">weighted time performing I/O.  <a href="#a1ca4aa351052992223be9801674d8da8">More...</a><br /></td></tr>
+<tr class="separator:a1ca4aa351052992223be9801674d8da8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Fields that are used internally by the bdev subsystem. </p>
@@ -281,6 +287,23 @@ uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 
 </div>
 </div>
+<a id="a55d6103a185f6c50c9b5d58976d08508"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a55d6103a185f6c50c9b5d58976d08508">&#9670;&nbsp;</a></span>io_time</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint64_t spdk_bdev::__bdev_internal_fields::io_time</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>most recent value of ticks spent performing I/O. </p>
+<p>Used to calculate the weighted time doing I/O </p>
+
+</div>
+</div>
 <a id="a544e45acd435eb8c7269f08166841f41"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a544e45acd435eb8c7269f08166841f41">&#9670;&nbsp;</a></span>measured_queue_depth</h2>
 
@@ -326,6 +349,23 @@ uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 </div><div class="memdoc">
 
 <p>Callback function that will be called after bdev destruct is completed. </p>
+
+</div>
+</div>
+<a id="a1ca4aa351052992223be9801674d8da8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1ca4aa351052992223be9801674d8da8">&#9670;&nbsp;</a></span>weighted_io_time</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint64_t spdk_bdev::__bdev_internal_fields::weighted_io_time</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>weighted time performing I/O. </p>
+<p>Equal to measured_queue_depth * period </p>
 
 </div>
 </div>

@@ -1,5 +1,9 @@
 var NAVTREEINDEX18 =
 {
+"vagrant.html#vagrant_intro":[1,2,0],
+"vagrant.html#vagrant_providers":[1,2,2],
+"version_8h.html":[13,0,49],
+"version_8h.html#a044fb88313d084d910632cea5a06c620":[13,0,49,8],
 "version_8h.html#a1636e53b1038906ece3a9addb0473bf0":[13,0,49,11],
 "version_8h.html#a3b5a59a1e949124decfd9cbe207966ad":[13,0,49,3],
 "version_8h.html#a5c0f1546b3a5dbc17f23b95a06750399":[13,0,49,10],
@@ -53,6 +57,7 @@ var NAVTREEINDEX18 =
 "vhost_processing.html#vhost_processing_io_path":[2,4,4],
 "vhost_processing.html#vhost_processing_qemu":[2,4,2],
 "vhost_processing.html#vhost_processing_toc":[2,4,0],
+"vhost_processing.html#vhost_spdk_optimizations":[2,4,4,0],
 "virtio.html":[7,2],
 "virtio.html#virtio_2mb":[7,2,1],
 "virtio.html#virtio_intro":[7,2,0]

@@ -13,7 +13,9 @@ var concepts =
       [ "Introduction", "vhost_processing.html#vhost_processing_intro", null ],
       [ "QEMU", "vhost_processing.html#vhost_processing_qemu", null ],
       [ "Device initialization", "vhost_processing.html#vhost_processing_init", null ],
-      [ "I/O path", "vhost_processing.html#vhost_processing_io_path", null ]
+      [ "I/O path", "vhost_processing.html#vhost_processing_io_path", [
+        [ "SPDK optimizations", "vhost_processing.html#vhost_spdk_optimizations", null ]
+      ] ]
     ] ],
     [ "SPDK Porting Guide", "porting.html", null ]
 ];

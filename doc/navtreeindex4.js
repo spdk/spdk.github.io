@@ -1,5 +1,7 @@
 var NAVTREEINDEX4 =
 {
+"jsonrpc.html#rpc_get_vhost_controllers_nvme":[3,6,5,7,4],
+"jsonrpc.html#rpc_get_vhost_controllers_response":[3,6,5,7,0],
 "jsonrpc.html#rpc_get_vhost_controllers_scsi":[3,6,5,7,2],
 "jsonrpc.html#rpc_get_vhost_controllers_scsi_luns":[3,6,5,7,3],
 "jsonrpc.html#rpc_get_virtio_scsi_devs":[3,6,2,33],
@@ -247,7 +249,5 @@ var NAVTREEINDEX4 =
 "nvme_8h.html#ae87a03c28984a2c0499d50ef5e9d0eceabbda195aa6d0a4ad7b437ed5e9a0d01f":[13,0,32,13,2],
 "nvme_8h.html#ae935583b7f95b13fbd2dd41255490da0":[13,0,32,17],
 "nvme_8h.html#aecec86e033e0d13e6fc67ead61a7028d":[13,0,32,50],
-"nvme_8h.html#aed0b134e140121bb9bd8664d4a43a5c6":[13,0,32,58],
-"nvme_8h.html#af02e8c701c5496f163a69917ad5397dd":[13,0,32,69],
-"nvme_8h.html#af58edc3021f8adcbecce5d3ebc5b6789":[13,0,32,80]
+"nvme_8h.html#aed0b134e140121bb9bd8664d4a43a5c6":[13,0,32,58]
 };

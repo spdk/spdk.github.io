@@ -1,5 +1,7 @@
 var NAVTREEINDEX1 =
 {
+"blobfs.html#blobfs_rocksdb":[3,5,1],
+"blobfs_8h.html":[13,0,8],
 "blobfs_8h.html#a15d38cb108ad825b5cf4090ae3f5af49":[13,0,8,29],
 "blobfs_8h.html#a1ef6840cc69a70a04608cedba0021fd7":[13,0,8,13],
 "blobfs_8h.html#a223e01d1c17119ed5ed168936da55aee":[13,0,8,6],
@@ -247,7 +249,5 @@ var NAVTREEINDEX1 =
 "event_8h.html#a18879873a585b21f44b7c90be8726ce1":[13,0,16,16],
 "event_8h.html#a2c8af9052967bf98ff65e514ec7fa276":[13,0,16,13],
 "event_8h.html#a35978d9a050c5c27e681e3e6006173bb":[13,0,16,19],
-"event_8h.html#a40f3af1c0340f5c3eb915bc43e3cee83":[13,0,16,18],
-"event_8h.html#a44d0192357622c56e902136132dd89f0":[13,0,16,10],
-"event_8h.html#a60385eedfe76a33a690741d2693414a3":[13,0,16,15]
+"event_8h.html#a40f3af1c0340f5c3eb915bc43e3cee83":[13,0,16,18]
 };
