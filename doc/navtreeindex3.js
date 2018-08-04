@@ -1,5 +1,6 @@
 var NAVTREEINDEX3 =
 {
+"iscsi__spec_8h.html#a3fdaaff2e0ed909b8a5c0fb901d8569e":[13,0,23,48],
 "iscsi__spec_8h.html#a40f41a237a4b88c0203080341f53c867":[13,0,23,68],
 "iscsi__spec_8h.html#a4d04eaaa6838828970bba84522d180fb":[13,0,23,61],
 "iscsi__spec_8h.html#a4d60ed3712ea8e2c8e63f0202b3f9328":[13,0,23,49],
@@ -248,6 +249,5 @@ var NAVTREEINDEX3 =
 "jsonrpc.html#rpc_get_subsystem_config":[3,6,1,5],
 "jsonrpc.html#rpc_get_subsystems":[3,6,1,4],
 "jsonrpc.html#rpc_get_target_nodes":[3,6,3,6],
-"jsonrpc.html#rpc_get_vhost_controllers":[3,6,5,7],
-"jsonrpc.html#rpc_get_vhost_controllers_blk":[3,6,5,7,1]
+"jsonrpc.html#rpc_get_vhost_controllers":[3,6,5,7]
 };
