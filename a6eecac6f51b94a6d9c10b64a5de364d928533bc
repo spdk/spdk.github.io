@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "27e983c0_8ca120b2",
+        "filename": "_posts/2018-08-08-dev_meetup.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 1011222
+      },
+      "writtenOn": "2018-08-08T16:01:37Z",
+      "side": 1,
+      "message": "its\u0027 \u003d\u003e it\u0027s\nconference style settings \u003d\u003e conference style setting\ncontact me directly art me email \u003c- this needs rewording",
+      "revId": "a6eecac6f51b94a6d9c10b64a5de364d928533bc",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "c2124c5f_ebec8858",
+        "filename": "_posts/2018-08-08-dev_meetup.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 45,
+      "author": {
+        "id": 1011222
+      },
+      "writtenOn": "2018-08-08T16:01:37Z",
+      "side": 1,
+      "message": "et. \u003d\u003e etc.",
+      "revId": "a6eecac6f51b94a6d9c10b64a5de364d928533bc",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
