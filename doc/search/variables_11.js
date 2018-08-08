@@ -24,6 +24,7 @@ var searchData=
   ['src_5fsvcid',['src_svcid',['../structspdk__nvme__ctrlr__opts.html#ab348a8dc36baba0c3b3ab9a50b299752',1,'spdk_nvme_ctrlr_opts']]],
   ['ssvid',['ssvid',['../structspdk__nvme__ctrlr__data.html#a98bca935ffa3fbc83fd504055b8a228f',1,'spdk_nvme_ctrlr_data']]],
   ['start',['start',['../structspdk__json__val.html#acd221be089fb848898b736d31add7053',1,'spdk_json_val']]],
+  ['stat',['stat',['../structspdk__bdev_1_1____bdev__internal__fields.html#a65f5698e232c6756471cc8a87c1cc0c6',1,'spdk_bdev::__bdev_internal_fields']]],
   ['status',['status',['../structspdk__bdev_1_1____bdev__internal__fields.html#a75eb824f166523af1bb44edc6b209e89',1,'spdk_bdev::__bdev_internal_fields::status()'],['../structspdk__bdev__io_1_1____bdev__io__internal__fields.html#ad9bec0eeba2c9ca9cb7cf62e8c516e5a',1,'spdk_bdev_io::__bdev_io_internal_fields::status()']]],
   ['stored_5fuser_5fcb',['stored_user_cb',['../structspdk__bdev__io.html#a35905e31d0aa54cd00dbb34e7d56656a',1,'spdk_bdev_io']]],
   ['submit_5frequest',['submit_request',['../structspdk__bdev__fn__table.html#ae80a9002371becdc6fb1c13f8f5173bf',1,'spdk_bdev_fn_table']]],

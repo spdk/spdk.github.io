@@ -1091,6 +1091,7 @@ var searchData=
   ['ssvid',['ssvid',['../structspdk__nvme__ctrlr__data.html#a98bca935ffa3fbc83fd504055b8a228f',1,'spdk_nvme_ctrlr_data']]],
   ['stailq_5fentry',['STAILQ_ENTRY',['../structspdk__bdev__io_1_1____bdev__io__internal__fields.html#aa01c2efabe47df9c745086736f6f64ef',1,'spdk_bdev_io::__bdev_io_internal_fields']]],
   ['start',['start',['../structspdk__json__val.html#acd221be089fb848898b736d31add7053',1,'spdk_json_val']]],
+  ['stat',['stat',['../structspdk__bdev_1_1____bdev__internal__fields.html#a65f5698e232c6756471cc8a87c1cc0c6',1,'spdk_bdev::__bdev_internal_fields']]],
   ['status',['status',['../structspdk__bdev_1_1____bdev__internal__fields.html#a75eb824f166523af1bb44edc6b209e89',1,'spdk_bdev::__bdev_internal_fields::status()'],['../structspdk__bdev__io_1_1____bdev__io__internal__fields.html#ad9bec0eeba2c9ca9cb7cf62e8c516e5a',1,'spdk_bdev_io::__bdev_io_internal_fields::status()']]],
   ['stdinc_2eh',['stdinc.h',['../stdinc_8h.html',1,'']]],
   ['stored_5fuser_5fcb',['stored_user_cb',['../structspdk__bdev__io.html#a35905e31d0aa54cd00dbb34e7d56656a',1,'spdk_bdev_io']]],

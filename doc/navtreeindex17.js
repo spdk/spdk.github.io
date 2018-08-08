@@ -1,5 +1,6 @@
 var NAVTREEINDEX17 =
 {
+"unionspdk__nvme__async__event__completion.html":[12,0,65],
 "unionspdk__nvme__async__event__completion.html#a15b2946d7c3e41ba326ed46580a49454":[12,0,65,1],
 "unionspdk__nvme__async__event__completion.html#a1a09c0d1bcd9786262e0f5bc63b7293f":[12,0,65,0],
 "unionspdk__nvme__async__event__completion.html#a20c8319fea9c5a80c719b063324c5bac":[12,0,65,4],
@@ -248,6 +249,5 @@ var NAVTREEINDEX17 =
 "uuid_8h.html#acb2ce1f550e94b3c1f5f9a62a9219ec8":[13,0,48,4],
 "uuid_8h.html#aec26ba99b3b48451724d053625f9af2f":[13,0,48,3],
 "uuid_8h.html#aece646828010187f78ebe02c5642ce4f":[13,0,48,2],
-"vagrant.html":[1,2],
-"vagrant.html#vagrant_config":[1,2,1]
+"vagrant.html":[1,2]
 };

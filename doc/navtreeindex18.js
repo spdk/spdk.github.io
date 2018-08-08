@@ -1,5 +1,6 @@
 var NAVTREEINDEX18 =
 {
+"vagrant.html#vagrant_config":[1,2,1],
 "vagrant.html#vagrant_example":[1,2,3],
 "vagrant.html#vagrant_intro":[1,2,0],
 "vagrant.html#vagrant_providers":[1,2,2],
