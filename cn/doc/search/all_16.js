@@ -1,0 +1,28 @@
+var searchData=
+[
+  ['vagrant_20development_20environment',['Vagrant Development Environment',['../vagrant.html',1,'intro']]],
+  ['vbdevs',['vbdevs',['../structspdk__bdev.html#a7d72a950e7a129b96607189783f96718',1,'spdk_bdev']]],
+  ['ver',['ver',['../structspdk__nvme__ctrlr__data.html#a72c56d5a31899269b4f615905f501b72',1,'spdk_nvme_ctrlr_data']]],
+  ['version_2eh',['version.h',['../version_8h.html',1,'']]],
+  ['vfn',['vfn',['../structspdk__nvme__secondary__ctrl__entry.html#a1058df7181e33bc60bfd6d9782afd673',1,'spdk_nvme_secondary_ctrl_entry']]],
+  ['vhost_20target',['vhost Target',['../vhost.html',1,'user_guides']]],
+  ['vhost_2eh',['vhost.h',['../vhost_8h.html',1,'']]],
+  ['vhost_20processing',['Vhost processing',['../vhost_processing.html',1,'concepts']]],
+  ['vid',['vid',['../structspdk__nvme__ctrlr__data.html#ab3503f576c3c6d932918bfe7003f8a5f',1,'spdk_nvme_ctrlr_data']]],
+  ['vifrsm',['vifrsm',['../structspdk__nvme__primary__ctrl__capabilities.html#a188fc422eddd794a1af2d164a29942a7',1,'spdk_nvme_primary_ctrl_capabilities']]],
+  ['vifrt',['vifrt',['../structspdk__nvme__primary__ctrl__capabilities.html#a931c061c11e9c31b6f33f09d5bc251dc',1,'spdk_nvme_primary_ctrl_capabilities']]],
+  ['vigran',['vigran',['../structspdk__nvme__primary__ctrl__capabilities.html#a0932f0fb2038aff45b5e25788e62eadc',1,'spdk_nvme_primary_ctrl_capabilities']]],
+  ['viprt',['viprt',['../structspdk__nvme__primary__ctrl__capabilities.html#a999d8c62755219847e4925ee2c22db84',1,'spdk_nvme_primary_ctrl_capabilities']]],
+  ['virfa',['virfa',['../structspdk__nvme__primary__ctrl__capabilities.html#af479618cd4737243b1ef31942c690282',1,'spdk_nvme_primary_ctrl_capabilities']]],
+  ['virfap',['virfap',['../structspdk__nvme__primary__ctrl__capabilities.html#a4f54107ade9a50eba4d82e18aca5b39b',1,'spdk_nvme_primary_ctrl_capabilities']]],
+  ['virtio_20driver',['Virtio driver',['../virtio.html',1,'modules']]],
+  ['virtualization_5fmanagement',['virtualization_management',['../structspdk__nvme__ctrlr__data.html#a01424c480dc8c3d11e17bbf889302467',1,'spdk_nvme_ctrlr_data']]],
+  ['vqfrsm',['vqfrsm',['../structspdk__nvme__primary__ctrl__capabilities.html#a8b523874842beb9c88efbd2962a0950f',1,'spdk_nvme_primary_ctrl_capabilities']]],
+  ['vqfrt',['vqfrt',['../structspdk__nvme__primary__ctrl__capabilities.html#a6b22f6c1cc50ed2395c5e86a4883ca1c',1,'spdk_nvme_primary_ctrl_capabilities']]],
+  ['vqgran',['vqgran',['../structspdk__nvme__primary__ctrl__capabilities.html#a6232822783419f4f479f28aba250e9f4',1,'spdk_nvme_primary_ctrl_capabilities']]],
+  ['vqprt',['vqprt',['../structspdk__nvme__primary__ctrl__capabilities.html#aaaf9d5315feacf97866f81c55c4b7889',1,'spdk_nvme_primary_ctrl_capabilities']]],
+  ['vqrfa',['vqrfa',['../structspdk__nvme__primary__ctrl__capabilities.html#aeab109efd1eae5f155c06105e8d097ed',1,'spdk_nvme_primary_ctrl_capabilities']]],
+  ['vqrfap',['vqrfap',['../structspdk__nvme__primary__ctrl__capabilities.html#a9d87b4832999b7aed3ef612d1c80669a',1,'spdk_nvme_primary_ctrl_capabilities']]],
+  ['vs',['vs',['../structspdk__ocssd__geometry__data.html#a4aa677e5f24826c750773b4201cd1ea3',1,'spdk_ocssd_geometry_data::vs()'],['../structspdk__nvme__registers.html#a6b09cae2aad064302d6415dbaf8346e2',1,'spdk_nvme_registers::vs()']]],
+  ['vwc',['vwc',['../structspdk__nvme__ctrlr__data.html#a42ea4c8887128ea4f3343e186d199e59',1,'spdk_nvme_ctrlr_data']]]
+];

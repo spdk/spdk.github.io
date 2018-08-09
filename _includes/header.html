@@ -17,6 +17,16 @@
         </a>
       </li>
       {% endfor %}
+      <li class='pull-right' role="presentation"><a id = "enUrl" href=" " >English</a></li>
+      <li class='pull-right' role="presentation"><a id = "cnUrl" href=" ">中文</a></li>
     </ul>
   </div>
 </section>
+
+<script type= "text/javascript">
+  var enUrl = window.location.href;
+  var urlList = enUrl.split("/");
+  urlList.splice(3,0,"cn");
+  var cnUrl = urlList.join("/");
+  document.getElementById("cnUrl").href = cnUrl;
+</script>
