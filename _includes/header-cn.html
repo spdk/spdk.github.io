@@ -1,0 +1,32 @@
+<section id="nav">
+  <div class="navbar navbar-default navbar-static-top banner-tabs">
+    <ul class="nav navbar-nav">
+      {% for box in site.boxes %}
+      {% if page.url == box.url-cn %}
+      <li class="active" role="presentation">
+      {% else %}
+      <li role="presentation">
+      {% endif %}
+        {% if box.url-cn contains 'http' %}
+        <a href="{{ box.url-cn }}">
+        {% else %}
+        <a href="{{ baseurl_rel }}{{ box.url-cn }}">
+        {% endif %}
+          <i class="glyphicon glyphicon-{{ box.ico }}"></i>
+          <span class="box-name">{{ box.title-cn }}</span>
+        </a>
+      </li>
+      {% endfor %}
+      <li class='pull-right' role="presentation"><a href=" " id ="enUrl">English</a></li>
+      <li class='pull-right' role="presentation"><a href=" " id ="cnUrl">中文</a></li>
+    </ul>
+  </div>
+
+</section>
+<script type= "text/javascript">
+  var cnUrl = window.location.href;
+  var urlList = cnUrl.split("/");
+  urlList.splice(3,1);
+  var enUrl = urlList.join("/");
+  document.getElementById("enUrl").href = enUrl;
+</script>
