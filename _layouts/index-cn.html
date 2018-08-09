@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  {% include head-cn.html %}
+
+  <body>
+    <div class="container-fluid">
+      <div class="row no-gutters">
+        <div class="col-sm-12">
+          {% include header-cn.html %}
+          {% include banner-cn.html %}
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-8">
+          <section id="content" class="content text-center">
+            {{ content }}
+          </section>
+        </div>
+        <div class="col-sm-4">
+          {% include news.html %}
+        </div>
+      </div>
+
+    </div>
+  </body>
+</html>
