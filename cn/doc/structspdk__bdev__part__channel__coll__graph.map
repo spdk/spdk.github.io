@@ -1,0 +1,6 @@
+<map id="spdk_bdev_part_channel" name="spdk_bdev_part_channel">
+<area shape="rect" id="node2" href="$structspdk__io__channel.html" title="Represents a per&#45;thread channel for accessing an I/O device. " alt="" coords="5,184,136,211"/>
+<area shape="rect" id="node3" href="$structspdk__bdev__part.html" title="spdk_bdev_part" alt="" coords="160,184,285,211"/>
+<area shape="rect" id="node4" href="$structspdk__bdev__part__base.html" title="spdk_bdev_part_base" alt="" coords="237,95,400,121"/>
+<area shape="rect" id="node5" href="$structspdk__bdev.html" title="spdk_bdev" alt="" coords="151,5,243,32"/>
+</map>
