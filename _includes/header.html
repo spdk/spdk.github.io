@@ -2,21 +2,46 @@
   <div class="navbar navbar-default navbar-static-top banner-tabs">
     <ul class="nav navbar-nav">
       {% for box in site.boxes %}
+      {% assign box_cn_url = "/cn" | append: box.url %}
       {% if page.url == box.url %}
+      <li class="active" role="presentation">
+      {% elsif page.url == box_cn_url %}
       <li class="active" role="presentation">
       {% else %}
       <li role="presentation">
       {% endif %}
+
         {% if box.url contains 'http' %}
         <a href="{{ box.url }}">
+        {% elsif page.lang %}
+        <a href="{{ baseurl_rel }}/{{ page.lang }}{{ box.url }}">
         {% else %}
         <a href="{{ baseurl_rel }}{{ box.url }}">
         {% endif %}
+
           <i class="glyphicon glyphicon-{{ box.ico }}"></i>
-          <span class="box-name">{{ box.title }}</span>
+
+          <span class="box-name">
+            {% if page.lang == 'cn' %}
+            {{ box.title-cn }}
+            {% else %}
+            {{ box.title }}
+            {% endif %}
+          </span>
+
         </a>
       </li>
       {% endfor %}
+
+      <li class='pull-right' role="presentation">
+      {% if page.lang %}
+      {% assign lang_url = "/" | append: page.lang %}
+      <a href="{{ baseurl_rel }}{{ page.url | replace_first:lang_url,'' }}">English</a>
+      {% else %}
+      <a href="{{ baseurl_rel }}/cn{{ page.url }}">中文</a>
+      {% endif %}
+      </li>
     </ul>
+
   </div>
 </section>
