@@ -1,6 +1,7 @@
 url: "http://www.spdk.io"
 baseurl: ""
 title: Storage Performance Development Kit
+title-cn: SPDK:存储性能开发工具包
 email: benjamin.walker@intel.com
 author: Benjamin Walker
 description: >
@@ -14,31 +15,49 @@ permalink: pretty
 
 boxes:
   - title: home
+    title-cn: 主页
     url: /
+    url-cn: /cn/
     ico: home
   - title: download
+    title-cn: 下载
     url: /releases/
+    url-cn: /cn/releases/
     ico: download-alt
   - title: documentation
+    title-cn: 文档
     url: /doc/
+    url-cn: /cn/doc/
     ico: book
   - title: development
+    title-cn: 开发
     url: /development/
+    url-cn: /cn/development/
     ico: wrench
   - title: CI status
-    url: https://ci.spdk.io/
+    title-cn: 集成测试
+    url: /ci/
+    url-cn: /cn/ci/
     ico: ok
   - title: community
+    title-cn: 社区
     url: /community/
+    url-cn: /cn/community/
     ico: envelope
   - title: Blog
+    title-cn: 博客
     url: /blog/
+    url-cn: /cn/blog/
     ico: comment
   - title: Roadmap
+    title-cn: 发展蓝图
     url: /roadmap/
+    url-cn: /cn/roadmap/
     ico: map-marker
   - title: News
+    title-cn: 动态
     url: /news/
+    url-cn: /cn/news/
     ico: bullhorn
 
 
