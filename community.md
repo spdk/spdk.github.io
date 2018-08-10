@@ -37,7 +37,7 @@ including the bug scrub is:
 Or alternatively, by phone:<br/>
 +1-210-795-1110 US Toll<br/>
 +1-866-662-9987 US Toll Free<br/>
-Meeting number (access code): 597 326 933
+Meeting number (access code): 594 725 952
 
 ## Next Asia-Friendly Meeting
 <div id="asia-mtg"></div>
@@ -45,7 +45,7 @@ Meeting number (access code): 597 326 933
 Or alternatively, by phone:<br/>
 +1-210-795-1110 US Toll<br/>
 +1-866-662-9987 US Toll Free<br/>
-Meeting number (access code): 593 516 823
+Meeting number (access code): 592 674 686
 
 Announcements will be made in IRC as well.
 
@@ -61,7 +61,7 @@ additional items.
 Or alternatively, by phone:<br/>
 +1-210-795-1110 US Toll<br/>
 +1-866-662-9987 US Toll Free<br/>
-Meeting number (access code): 599 732 637
+Meeting number (access code): 592 309 994
 
 Please be noted that bugs are tracked on the [SPDK GitHub issue tracker](https://github.com/spdk/spdk/issues).
 
