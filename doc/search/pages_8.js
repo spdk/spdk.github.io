@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['nvme_20driver',['NVMe Driver',['../nvme.html',1,'modules']]],
-  ['nvme_2dcli',['nvme-cli',['../nvme-cli.html',1,'tools']]],
-  ['nvme_20over_20fabrics_20target',['NVMe over Fabrics Target',['../nvmf.html',1,'user_guides']]],
-  ['nvme_20over_20fabrics_20target_20programming_20guide',['NVMe over Fabrics Target Programming Guide',['../nvmf_tgt_pg.html',1,'prog_guides']]]
+  ['message_20passing_20and_20concurrency',['Message Passing and Concurrency',['../concurrency.html',1,'concepts']]],
+  ['memory_20management_20for_20user_20space_20drivers',['Memory Management for User Space Drivers',['../memory.html',1,'concepts']]],
+  ['miscellaneous',['Miscellaneous',['../misc.html',1,'']]],
+  ['modules',['Modules',['../modules.html',1,'']]]
 ];

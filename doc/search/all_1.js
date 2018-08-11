@@ -14,6 +14,7 @@ var searchData=
   ['af',['af',['../structspdk__nvme__dsm__range.html#a1ae2cac2417c24137dcb3e160eb3836c',1,'spdk_nvme_dsm_range']]],
   ['al',['al',['../structspdk__nvme__dsm__range.html#a85b10586b5cb2d6cbe0e4e8d92f913ef',1,'spdk_nvme_dsm_range']]],
   ['ams',['ams',['../unionspdk__nvme__cap__register.html#a75640e3e0a03f22456503acbebc20f46',1,'spdk_nvme_cap_register::ams()'],['../unionspdk__nvme__cc__register.html#a777a7cb16e88d976eca2f8073fde6c4b',1,'spdk_nvme_cc_register::ams()']]],
+  ['an_20overview_20of_20spdk_20applications',['An Overview of SPDK Applications',['../app_overview.html',1,'user_guides']]],
   ['apsta',['apsta',['../structspdk__nvme__ctrlr__data.html#a5bad30e0dbd698fa98b2735ae6637db8',1,'spdk_nvme_ctrlr_data']]],
   ['apste',['apste',['../unionspdk__nvme__feat__autonomous__power__state__transition.html#a022cc1ba5b7ff365a6b69989c663333a',1,'spdk_nvme_feat_autonomous_power_state_transition']]],
   ['aqa',['aqa',['../structspdk__nvme__registers.html#a5bf760e2a616ecb3f8d8fd0a64d24e61',1,'spdk_nvme_registers']]],

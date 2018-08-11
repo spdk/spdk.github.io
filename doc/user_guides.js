@@ -1,15 +1,15 @@
 var user_guides =
 [
-    [ "Configuring SPDK Applications", "user_guides_common.html", [
-      [ "Overview", "user_guides_common.html#user_guides_common_overview", [
-        [ "Command Line Parameters", "user_guides_common.html#common_cmd_line_args", [
-          [ "Configuration file", "user_guides_common.html#cmd_arg_config_file", null ],
-          [ "Deferred initialization", "user_guides_common.html#cmd_arg_deferred_initialization", null ],
-          [ "Disable PCI access", "user_guides_common.html#cmd_arg_disable_pci_access", null ],
-          [ "PCI address blacklist and whitelist", "user_guides_common.html#cmd_arg_pci_blacklist_whitelist", null ],
-          [ "Debug log flags", "user_guides_common.html#cmd_arg_debug_log_flags", null ]
+    [ "An Overview of SPDK Applications", "app_overview.html", [
+      [ "Configuring SPDK Applications", "app_overview.html#app_config", [
+        [ "Command Line Parameters", "app_overview.html#app_cmd_line_args", [
+          [ "Configuration file", "app_overview.html#cmd_arg_config_file", null ],
+          [ "Deferred initialization", "app_overview.html#cmd_arg_deferred_initialization", null ],
+          [ "Disable PCI access", "app_overview.html#cmd_arg_disable_pci_access", null ],
+          [ "PCI address blacklist and whitelist", "app_overview.html#cmd_arg_pci_blacklist_whitelist", null ],
+          [ "Debug log flags", "app_overview.html#cmd_arg_debug_log_flags", null ]
         ] ],
-        [ "CPU mask", "user_guides_common.html#cpu_mask", null ]
+        [ "CPU mask", "app_overview.html#cpu_mask", null ]
       ] ]
     ] ],
     [ "iSCSI Target", "iscsi.html", [

@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="Content-Type" content="text/xhtml; charset=utf-8">
   <meta name="generator" content="Doxygen 1.8.13">
-  <title>SPDK: Configuring SPDK Applications</title>
+  <title>SPDK: An Overview of SPDK Applications</title>
   <script type="text/javascript" src="jquery.js"></script>
   <script type="text/javascript" src="dynsections.js"></script>
   <link href="navtree.css" rel="stylesheet" type="text/css"/>
@@ -116,7 +116,7 @@ $(function() {
   </div>
 </div>
 <script type="text/javascript">
-$(document).ready(function(){initNavTree('user_guides_common.html','');});
+$(document).ready(function(){initNavTree('app_overview.html','');});
 </script>
 <div id="doc-content">
 <!-- window showing the filter options -->
@@ -135,20 +135,28 @@ $(document).ready(function(){initNavTree('user_guides_common.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">Configuring SPDK Applications </div>  </div>
+<div class="title">An Overview of SPDK Applications </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h1><a class="anchor" id="user_guides_common_overview"></a>
-Overview</h1>
-<p>This guide covers topics common to all applications that leverage SPDK's application framework.</p>
-<h2><a class="anchor" id="common_cmd_line_args"></a>
+<div class="textblock"><p>SPDK is primarily a development kit that delivers libraries and header files for use in other applications. However, SPDK also contains a number of applications. These applications are primarily used to test the libraries, but many are full featured and high quality. The major applications in SPDK are:</p>
+<ul>
+<li><a class="el" href="iscsi.html">iSCSI Target</a></li>
+<li><a class="el" href="nvmf.html">NVMe over Fabrics Target</a></li>
+<li><a class="el" href="vhost.html">vhost Target</a></li>
+<li>SPDK Target (a unified application combining the above three)</li>
+</ul>
+<p>There are also a number of tools and examples in the <code>examples</code> directory.</p>
+<p>The SPDK targets are all based on a common framework so they have much in common. The framework defines a concept called a <code>subsystem</code> and all functionality is implemented in various subsystems. Subsystems have a unified initialization and teardown path.</p>
+<h1><a class="anchor" id="app_config"></a>
+Configuring SPDK Applications</h1>
+<h2><a class="anchor" id="app_cmd_line_args"></a>
 Command Line Parameters</h2>
 <p>The SPDK application framework defines a set of base command line flags for all applications that use it. Specific applications may implement additional flags.</p>
 <table class="doxtable">
 <tr>
 <th>Param </th><th>Type </th><th>Default </th><th>Description  </th></tr>
 <tr>
-<td>-c </td><td>string </td><td></td><td><a class="el" href="user_guides_common.html#cmd_arg_config_file">Configuration file</a> </td></tr>
+<td>-c </td><td>string </td><td></td><td><a class="el" href="app_overview.html#cmd_arg_config_file">Configuration file</a> </td></tr>
 <tr>
 <td>-d </td><td>flag </td><td>false </td><td>disable coredump file creation </td></tr>
 <tr>
@@ -160,7 +168,7 @@ Command Line Parameters</h2>
 <tr>
 <td>-i </td><td>integer </td><td>process PID </td><td>shared memory ID </td></tr>
 <tr>
-<td>-m </td><td>CPU mask </td><td>0x1 </td><td>application <a class="el" href="user_guides_common.html#cpu_mask">CPU mask</a> </td></tr>
+<td>-m </td><td>CPU mask </td><td>0x1 </td><td>application <a class="el" href="app_overview.html#cpu_mask">CPU mask</a> </td></tr>
 <tr>
 <td>-n </td><td>integer </td><td>all channels </td><td>number of memory channels used for DPDK </td></tr>
 <tr>
@@ -172,38 +180,38 @@ Command Line Parameters</h2>
 <tr>
 <td>-s </td><td>integer </td><td>all hugepage memory </td><td>memory size in MB for DPDK </td></tr>
 <tr>
-<td>-u </td><td>flag </td><td>false </td><td><a class="el" href="user_guides_common.html#cmd_arg_disable_pci_access">Disable PCI access</a>. </td></tr>
+<td>-u </td><td>flag </td><td>false </td><td><a class="el" href="app_overview.html#cmd_arg_disable_pci_access">Disable PCI access</a>. </td></tr>
 <tr>
-<td>-w </td><td>flag </td><td>false </td><td><a class="el" href="user_guides_common.html#cmd_arg_deferred_initialization">Deferred initialization</a> </td></tr>
+<td>-w </td><td>flag </td><td>false </td><td><a class="el" href="app_overview.html#cmd_arg_deferred_initialization">Deferred initialization</a> </td></tr>
 <tr>
-<td>-B </td><td>B:D:F </td><td></td><td><a class="el" href="user_guides_common.html#cmd_arg_pci_blacklist_whitelist">PCI address blacklist and whitelist</a>. </td></tr>
+<td>-B </td><td>B:D:F </td><td></td><td><a class="el" href="app_overview.html#cmd_arg_pci_blacklist_whitelist">PCI address blacklist and whitelist</a>. </td></tr>
 <tr>
-<td>-W </td><td>B:D:F </td><td></td><td><a class="el" href="user_guides_common.html#cmd_arg_pci_blacklist_whitelist">PCI address blacklist and whitelist</a>. </td></tr>
+<td>-W </td><td>B:D:F </td><td></td><td><a class="el" href="app_overview.html#cmd_arg_pci_blacklist_whitelist">PCI address blacklist and whitelist</a>. </td></tr>
 <tr>
-<td>-L </td><td>string </td><td></td><td><a class="el" href="user_guides_common.html#cmd_arg_debug_log_flags">Debug log flags</a> </td></tr>
+<td>-L </td><td>string </td><td></td><td><a class="el" href="app_overview.html#cmd_arg_debug_log_flags">Debug log flags</a> </td></tr>
 <tr>
 <td>-f </td><td>string </td><td></td><td>save pid to file under given path </td></tr>
 </table>
 <h3><a class="anchor" id="cmd_arg_config_file"></a>
 Configuration file</h3>
-<p>Historically, the SPDK application framework was configured using a configuration file. This is still supported, but is considered deprecated in favor of JSON RPC configuration. See <a class="el" href="jsonrpc.html">JSON-RPC Methods</a> for details.</p>
+<p>Historically, the SPDK applications were configured using a configuration file. This is still supported, but is considered deprecated in favor of JSON RPC configuration. See <a class="el" href="jsonrpc.html">JSON-RPC Methods</a> for details.</p>
 <p>Note that <code>-c</code> and <code>-w</code> cannot be used at the same time.</p>
 <h3><a class="anchor" id="cmd_arg_deferred_initialization"></a>
 Deferred initialization</h3>
-<p>SPDK applications progress through a set of states, including <code>STARTUP</code> and <code>RUNTIME</code>.</p>
-<p>If <code>-w</code> parameter is provided SPDK will pause just before starting subsystem initialization. This state is called <code>STARTUP</code>. The JSON RPC server is ready but list of commands is limited to only those that are needed to set application global parameters. Those parameters can't be changed after SPDK application enters <code>RUNTIME</code> state. When client finishes preconfiguring SPDK subsystems it needs to issue <a class="el" href="jsonrpc.html#rpc_start_subsystem_init">start_subsystem_init</a> RPC command to continue initialization process. After <code>rpc_start_subsystem_init</code> returns <code>true</code> the SPDK will enter <code>RUNTIME</code> state and list of available commands will change again. From now on SPDK is ready for further configuration.</p>
-<p>To know what RPC methods are valid in current state issue <code>get_rpc_methods</code> with parameter <code>current</code> set to <code>true</code>.</p>
+<p>SPDK applications progress through a set of states beginning with <code>STARTUP</code> and ending with <code>RUNTIME</code>.</p>
+<p>If the <code>-w</code> parameter is provided SPDK will pause just before starting subsystem initialization. This state is called <code>STARTUP</code>. The JSON RPC server is ready but only a small subsystem of commands are available to set up initialization parameters. Those parameters can't be changed after the SPDK application enters <code>RUNTIME</code> state. When the client finishes configuring the SPDK subsystems it needs to issue the <a class="el" href="jsonrpc.html#rpc_start_subsystem_init">start_subsystem_init</a> RPC command to begin the initialization process. After <code>rpc_start_subsystem_init</code> returns <code>true</code> SPDK will enter the <code>RUNTIME</code> state and the list of available commands becomes much larger.</p>
+<p>To see which RPC methods are available in the current state, issue the <code>get_rpc_methods</code> with the parameter <code>current</code> set to <code>true</code>.</p>
 <p>For more details see <a class="el" href="jsonrpc.html">JSON-RPC Methods</a> documentation.</p>
 <h3><a class="anchor" id="cmd_arg_disable_pci_access"></a>
 Disable PCI access</h3>
-<p>If SPDK is run with PCI access disabled it won't detect any PCI devices, including NVMe, IOAT, NICs etc. Also VFIO and UIO kernel modules are not needed anymore.</p>
+<p>If SPDK is run with PCI access disabled it won't detect any PCI devices. This includes primarily NVMe and IOAT devices. Also, the VFIO and UIO kernel modules are not required in this mode.</p>
 <h3><a class="anchor" id="cmd_arg_pci_blacklist_whitelist"></a>
 PCI address blacklist and whitelist</h3>
 <p>Note that <code>-B</code> and <code>-W</code> cannot be used at the same time.</p>
-<p>If blacklist is used all devices with provided PCI address will be ignored. If whitelist is used only those devices will be probed. You can used <code>-B</code> or <code>-W</code> more than once to add more than one device to list.</p>
+<p>If a blacklist is used all devices with the provided PCI address will be ignored. If a whitelist is used only those devices will be probed. You can used <code>-B</code> or <code>-W</code> more than once to add more than one device to list.</p>
 <h3><a class="anchor" id="cmd_arg_debug_log_flags"></a>
 Debug log flags</h3>
-<p>Use comma separated list of flags or use <code>-L all</code> to enable all debug flags. Run SPDK application with <code>-h</code> to get a list of all valid flags. Debug flags are only available in debug builds of SPDK.</p>
+<p>Use a comma separated list of flags or use <code>-L all</code> to enable all debug flags. Run SPDK application with <code>-h</code> to get a list of all valid flags. Debug flags are only available in debug builds of SPDK.</p>
 <h2><a class="anchor" id="cpu_mask"></a>
 CPU mask</h2>
 <p>Whenever the <code>CPU mask</code> is mentioned it is a string in one of the following formats:</p>

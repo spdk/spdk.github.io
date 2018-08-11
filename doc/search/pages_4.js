@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['introduction',['Introduction',['../intro.html',1,'']]],
-  ['i_2foat_20driver',['I/OAT Driver',['../ioat.html',1,'modules']]],
-  ['iscsi_20target',['iSCSI Target',['../iscsi.html',1,'user_guides']]]
+  ['general_20information',['General Information',['../general.html',1,'']]],
+  ['getting_20started',['Getting Started',['../getting_started.html',1,'intro']]]
 ];

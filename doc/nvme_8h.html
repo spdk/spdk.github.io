@@ -661,7 +661,7 @@ int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_retry_co
 </div><div class="memdoc">
 
 <p>Signature for the callback function invoked when a timeout is detected on a request. </p>
-<p>For timeouts detected on the admin queue pair, the qpair returned here will be NULL.</p>
+<p>For timeouts detected on the admin queue pair, the qpair returned here will be NULL. If the controller has a serious error condition and is unable to communicate with driver via completion queue, the controller can set Controller Fatal Status field to 1, then reset is required to recover from such error. Users may detect Controller Fatal Status when timeout happens.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">cb_arg</td><td>Argument passed to callback funciton. </td></tr>

@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['general_20information',['General Information',['../general.html',1,'']]],
-  ['getting_20started',['Getting Started',['../getting_started.html',1,'intro']]]
+  ['event_20framework',['Event Framework',['../event.html',1,'general']]],
+  ['experimental_20tools',['Experimental Tools',['../experimental_tools.html',1,'']]]
 ];

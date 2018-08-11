@@ -43,6 +43,5 @@ var searchData=
   ['ctratt',['ctratt',['../structspdk__nvme__ctrlr__data.html#a442a46f7e2a935bdcf637ee9d4d5d326',1,'spdk_nvme_ctrlr_data']]],
   ['ctrattr',['ctrattr',['../structspdk__nvme__ctrlr__data.html#a7e32bb6e275d09475b7683792a635406',1,'spdk_nvme_ctrlr_data']]],
   ['ctrlr_5fmodel',['ctrlr_model',['../structspdk__nvme__ctrlr__data.html#a67e0d514a1a31a5a74b713e04336ed91',1,'spdk_nvme_ctrlr_data']]],
-  ['ctxt',['ctxt',['../structspdk__bdev.html#a0329aa7395f9784d4dc8c596efc4ac8c',1,'spdk_bdev']]],
-  ['configuring_20spdk_20applications',['Configuring SPDK Applications',['../user_guides_common.html',1,'user_guides']]]
+  ['ctxt',['ctxt',['../structspdk__bdev.html#a0329aa7395f9784d4dc8c596efc4ac8c',1,'spdk_bdev']]]
 ];
