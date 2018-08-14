@@ -201,9 +201,6 @@ Functions</h2></td></tr>
 <tr class="memitem:a37eea41a3c3856e0ea2cd383af20183d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#a37eea41a3c3856e0ea2cd383af20183d">spdk_nvmf_poll_group_add</a> (struct spdk_nvmf_poll_group *group, struct spdk_nvmf_qpair *qpair)</td></tr>
 <tr class="memdesc:a37eea41a3c3856e0ea2cd383af20183d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add the given qpair to the poll group.  <a href="#a37eea41a3c3856e0ea2cd383af20183d">More...</a><br /></td></tr>
 <tr class="separator:a37eea41a3c3856e0ea2cd383af20183d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1c8c8e47ef4cae153de3ac1e90961c86"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#a1c8c8e47ef4cae153de3ac1e90961c86">spdk_nvmf_poll_group_remove</a> (struct spdk_nvmf_poll_group *group, struct spdk_nvmf_qpair *qpair)</td></tr>
-<tr class="memdesc:a1c8c8e47ef4cae153de3ac1e90961c86"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove the given qpair from the poll group.  <a href="#a1c8c8e47ef4cae153de3ac1e90961c86">More...</a><br /></td></tr>
-<tr class="separator:a1c8c8e47ef4cae153de3ac1e90961c86"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afa33cb1cf39e04ee533f874ed82e24e5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#afa33cb1cf39e04ee533f874ed82e24e5">spdk_nvmf_qpair_disconnect</a> (struct spdk_nvmf_qpair *qpair, nvmf_qpair_disconnect_cb cb_fn, void *ctx)</td></tr>
 <tr class="memdesc:afa33cb1cf39e04ee533f874ed82e24e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disconnect an NVMe-oF qpair.  <a href="#afa33cb1cf39e04ee533f874ed82e24e5">More...</a><br /></td></tr>
 <tr class="separator:afa33cb1cf39e04ee533f874ed82e24e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -669,44 +666,6 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-
-</div>
-</div>
-<a id="a1c8c8e47ef4cae153de3ac1e90961c86"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1c8c8e47ef4cae153de3ac1e90961c86">&#9670;&nbsp;</a></span>spdk_nvmf_poll_group_remove()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int spdk_nvmf_poll_group_remove </td>
-          <td>(</td>
-          <td class="paramtype">struct spdk_nvmf_poll_group *&#160;</td>
-          <td class="paramname"><em>group</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">struct spdk_nvmf_qpair *&#160;</td>
-          <td class="paramname"><em>qpair</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Remove the given qpair from the poll group. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">group</td><td>The group to delete qpair from. </td></tr>
-    <tr><td class="paramname">qpair</td><td>The qpair to remove.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>0 on success, -1 on failure. </dd></dl>
 
 </div>
 </div>

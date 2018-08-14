@@ -1,5 +1,6 @@
 var NAVTREEINDEX4 =
 {
+"jsonrpc.html#rpc_get_iscsi_connections":[3,6,3,14],
 "jsonrpc.html#rpc_get_iscsi_global_params":[3,6,3,1],
 "jsonrpc.html#rpc_get_lvol_stores":[3,6,6,2],
 "jsonrpc.html#rpc_get_nvmf_subsystems":[3,6,4,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX4 =
 "nvme_8h.html#ad63b25defbb0f1ccd52538e3b9a748df":[13,0,32,15],
 "nvme_8h.html#ad720b23786450b5a2b2d7d65c6dd6b7c":[13,0,32,90],
 "nvme_8h.html#ad8aa3c9ff510fe73945549077df18436":[13,0,32,54],
-"nvme_8h.html#adc2aa2be0d657be0c63d5abc02b274ec":[13,0,32,68],
-"nvme_8h.html#adfcbb5d31f0b572847cc8ae8b07dfcfb":[13,0,32,70]
+"nvme_8h.html#adc2aa2be0d657be0c63d5abc02b274ec":[13,0,32,68]
 };

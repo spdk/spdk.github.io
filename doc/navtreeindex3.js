@@ -1,5 +1,6 @@
 var NAVTREEINDEX3 =
 {
+"iscsi__spec_8h.html#a18b6fd1414e2d3ff815838256ea86618":[13,0,23,54],
 "iscsi__spec_8h.html#a1b765df5955c72f1ecb08a653d9f6454":[13,0,23,51],
 "iscsi__spec_8h.html#a1ec3457d9e23e18074a7cb0b2f24ffcc":[13,0,23,83],
 "iscsi__spec_8h.html#a1f1892161fb79f55be417dccef9603a7":[13,0,23,20],
@@ -248,6 +249,5 @@ var NAVTREEINDEX3 =
 "jsonrpc.html#rpc_destroy_lvol_store":[3,6,6,1],
 "jsonrpc.html#rpc_get_bdevs":[3,6,2,1],
 "jsonrpc.html#rpc_get_bdevs_iostat":[3,6,2,2],
-"jsonrpc.html#rpc_get_initiator_groups":[3,6,3,2],
-"jsonrpc.html#rpc_get_iscsi_connections":[3,6,3,14]
+"jsonrpc.html#rpc_get_initiator_groups":[3,6,3,2]
 };

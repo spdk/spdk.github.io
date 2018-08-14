@@ -45,6 +45,7 @@ var ioat__spec_8h =
     [ "SPDK_IOAT_OP_PQ_VAL", "ioat__spec_8h.html#a574858fc24ea5bfae7eecaa88e2cb3c5", null ],
     [ "SPDK_IOAT_OP_XOR", "ioat__spec_8h.html#a2decf3e956f98661476efce53a86953b", null ],
     [ "SPDK_IOAT_OP_XOR_VAL", "ioat__spec_8h.html#ac8e2123ef0becc284074f97470b6fcca", null ],
+    [ "SPDK_IOAT_PCI_CHANERR_INT_OFFSET", "ioat__spec_8h.html#ae763c4e8f46ead2c1ab8aa85bb40716f", null ],
     [ "SPDK_IOAT_VER_3_0", "ioat__spec_8h.html#a75acf46dfd6a8b07239128d49ec56158", null ],
     [ "SPDK_IOAT_VER_3_3", "ioat__spec_8h.html#a46cf9ae20c6a26978dab7fbfdaef09f7", null ],
     [ "SPDK_STATIC_ASSERT", "ioat__spec_8h.html#a63a95b4a9941d41b83a393e9075fffdb", null ]
