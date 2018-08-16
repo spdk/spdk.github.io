@@ -7,6 +7,7 @@ var structspdk__bdev__module =
     [ "config_text", "structspdk__bdev__module.html#a62f46d0a9b8ead0a63e1f5637dacd37d", null ],
     [ "examine_config", "structspdk__bdev__module.html#a0a0f5d5d762258471ba6e41119b9f921", null ],
     [ "examine_disk", "structspdk__bdev__module.html#a18e49a0bccf1b515e51afbde09f8ac35", null ],
+    [ "fini_start", "structspdk__bdev__module.html#ac23941435e8ed54a66a16d4fe8b7fe52", null ],
     [ "get_ctx_size", "structspdk__bdev__module.html#a490337d850141809c1cc930fb7b2e552", null ],
     [ "init_complete", "structspdk__bdev__module.html#af0eb0fbec1bdc7813911e981357e89a8", null ],
     [ "internal", "structspdk__bdev__module.html#af52c82cc5a64932b2a6f4147871af17f", null ],

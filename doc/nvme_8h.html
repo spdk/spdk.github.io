@@ -382,6 +382,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a0d24c0b2b0b2a22b0c0af2ca2e157e04"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a0d24c0b2b0b2a22b0c0af2ca2e157e04">spdk_nvme_ns_get_sector_size</a> (struct spdk_nvme_ns *ns)</td></tr>
 <tr class="memdesc:a0d24c0b2b0b2a22b0c0af2ca2e157e04"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the sector size, in bytes, of the given namespace.  <a href="#a0d24c0b2b0b2a22b0c0af2ca2e157e04">More...</a><br /></td></tr>
 <tr class="separator:a0d24c0b2b0b2a22b0c0af2ca2e157e04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f3f5c5a738dc7ad7e3b2913bff4324c"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a8f3f5c5a738dc7ad7e3b2913bff4324c">spdk_nvme_ns_get_extended_sector_size</a> (struct spdk_nvme_ns *ns)</td></tr>
+<tr class="memdesc:a8f3f5c5a738dc7ad7e3b2913bff4324c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the extended sector size, in bytes, of the given namespace.  <a href="#a8f3f5c5a738dc7ad7e3b2913bff4324c">More...</a><br /></td></tr>
+<tr class="separator:a8f3f5c5a738dc7ad7e3b2913bff4324c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7c522609f730db26f66e7f5b6b3501e0"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a7c522609f730db26f66e7f5b6b3501e0">spdk_nvme_ns_get_num_sectors</a> (struct spdk_nvme_ns *ns)</td></tr>
 <tr class="memdesc:a7c522609f730db26f66e7f5b6b3501e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the number of sectors for the given namespace.  <a href="#a7c522609f730db26f66e7f5b6b3501e0">More...</a><br /></td></tr>
 <tr class="separator:a7c522609f730db26f66e7f5b6b3501e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -4235,6 +4238,35 @@ int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_retry_co
 
 </div>
 </div>
+<a id="a8f3f5c5a738dc7ad7e3b2913bff4324c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f3f5c5a738dc7ad7e3b2913bff4324c">&#9670;&nbsp;</a></span>spdk_nvme_ns_get_extended_sector_size()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t spdk_nvme_ns_get_extended_sector_size </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_nvme_ns *&#160;</td>
+          <td class="paramname"><em>ns</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the extended sector size, in bytes, of the given namespace. </p>
+<p>This function returns the size of the data sector plus metadata.</p>
+<p>This function is thread safe and can be called at any point while the controller is attached to the SPDK NVMe driver.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ns</td><td>Namespace to query.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>/return the extended sector size in bytes. </p>
+
+</div>
+</div>
 <a id="a5eff1c1b6fbfb348a1f158b3cf70626f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5eff1c1b6fbfb348a1f158b3cf70626f">&#9670;&nbsp;</a></span>spdk_nvme_ns_get_flags()</h2>
 
@@ -4449,6 +4481,7 @@ int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_retry_co
 </div><div class="memdoc">
 
 <p>Get the sector size, in bytes, of the given namespace. </p>
+<p>This function returns the size of the data sector only. It does not include metadata size.</p>
 <p>This function is thread safe and can be called at any point while the controller is attached to the SPDK NVMe driver.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">

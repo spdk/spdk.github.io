@@ -140,6 +140,8 @@ $(document).ready(function(){initNavTree('changelog.html','');});
 <div class="contents">
 <div class="textblock"><h1><a class="anchor" id="changelog-v18-10"></a>
 v18.10: (Upcoming Release)</h1>
+<h2>nvme</h2>
+<p><a class="el" href="nvme_8h.html#a8f3f5c5a738dc7ad7e3b2913bff4324c" title="Get the extended sector size, in bytes, of the given namespace. ">spdk_nvme_ns_get_extended_sector_size()</a> was added. This function includes the metadata size per sector (if any). <a class="el" href="nvme_8h.html#a0d24c0b2b0b2a22b0c0af2ca2e157e04" title="Get the sector size, in bytes, of the given namespace. ">spdk_nvme_ns_get_sector_size()</a> still returns only the data size per sector, not including metadata.</p>
 <h1><a class="anchor" id="changelog-v18-07"></a>
 v18.07:</h1>
 <h2>bdev</h2>
