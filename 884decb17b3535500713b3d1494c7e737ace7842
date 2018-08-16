@@ -1,0 +1,55 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "11059839_76618808",
+        "filename": "_includes/header.html",
+        "patchSetId": 1
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 1010531
+      },
+      "writtenOn": "2018-08-16T15:27:32Z",
+      "side": 1,
+      "message": "no spaces around equal sign (id \u003d \"enURL\" should be just id\u003d\"enURL\")\n\nYou can also leave the href\u003d off entirely I believe.",
+      "revId": "884decb17b3535500713b3d1494c7e737ace7842",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "e6684124_1b92ee10",
+        "filename": "_includes/header.html",
+        "patchSetId": 1
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 1010531
+      },
+      "writtenOn": "2018-08-16T15:27:32Z",
+      "side": 1,
+      "message": "This doesn\u0027t appear to set the enUrl on the above link, so you can switch to Chinese but never back to English.",
+      "revId": "884decb17b3535500713b3d1494c7e737ace7842",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "e6036ccf_42ac32c3",
+        "filename": "_includes/header.html",
+        "patchSetId": 1
+      },
+      "lineNbr": 30,
+      "author": {
+        "id": 1010531
+      },
+      "writtenOn": "2018-08-16T15:27:32Z",
+      "side": 1,
+      "message": "Stray } at the end of this line makes the javascript not compile and this whole thing not work.",
+      "revId": "884decb17b3535500713b3d1494c7e737ace7842",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
