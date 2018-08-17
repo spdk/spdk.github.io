@@ -2,6 +2,40 @@
   "comments": [
     {
       "key": {
+        "uuid": "9b019180_2e28335a",
+        "filename": "_config.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 4,
+      "author": {
+        "id": 1011204
+      },
+      "writtenOn": "2018-08-17T00:11:34Z",
+      "side": 1,
+      "message": "Storage Performance Development Kit，后面的翻译直接写SPDK就行了",
+      "revId": "884decb17b3535500713b3d1494c7e737ace7842",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "204ee051_32d98f4c",
+        "filename": "_config.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 53,
+      "author": {
+        "id": 1011204
+      },
+      "writtenOn": "2018-08-17T00:11:34Z",
+      "side": 1,
+      "message": "let\u0027s say \"路线图\" here",
+      "revId": "884decb17b3535500713b3d1494c7e737ace7842",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "11059839_76618808",
         "filename": "_includes/header.html",
         "patchSetId": 1
@@ -47,6 +81,74 @@
       "writtenOn": "2018-08-16T15:27:32Z",
       "side": 1,
       "message": "Stray } at the end of this line makes the javascript not compile and this whole thing not work.",
+      "revId": "884decb17b3535500713b3d1494c7e737ace7842",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "42614939_8a6d4001",
+        "filename": "cn/blog/index.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 1011204
+      },
+      "writtenOn": "2018-08-17T00:11:34Z",
+      "side": 1,
+      "message": "SPDK博客",
+      "revId": "884decb17b3535500713b3d1494c7e737ace7842",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "61e88405_3f20c50a",
+        "filename": "cn/community/index.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 33,
+      "author": {
+        "id": 1011204
+      },
+      "writtenOn": "2018-08-17T00:11:34Z",
+      "side": 1,
+      "message": "下一次亚太会议时间",
+      "revId": "884decb17b3535500713b3d1494c7e737ace7842",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "8eb839bd_a4dec90a",
+        "filename": "cn/news/index.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 1011204
+      },
+      "writtenOn": "2018-08-17T00:11:34Z",
+      "side": 1,
+      "message": "What\u0027s new or \"最新消息\"",
+      "revId": "884decb17b3535500713b3d1494c7e737ace7842",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "52cac05f_72fbb3db",
+        "filename": "cn/roadmap/index.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 1011204
+      },
+      "writtenOn": "2018-08-17T00:11:34Z",
+      "side": 1,
+      "message": "SPDK路线图",
       "revId": "884decb17b3535500713b3d1494c7e737ace7842",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": false
