@@ -1,0 +1,55 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5117cf59_86314bed",
+        "filename": "cn/ci.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 1010531
+      },
+      "writtenOn": "2018-08-17T19:13:21Z",
+      "side": 1,
+      "message": "The link to the development page here should actually link to the Chinese version.",
+      "revId": "d121ceb8ebac863df78cfc7280ab7162b3e0aaf4",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1a0d86cb_4b801cce",
+        "filename": "cn/community.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 57,
+      "author": {
+        "id": 1010531
+      },
+      "writtenOn": "2018-08-17T19:13:21Z",
+      "side": 1,
+      "message": "This link should go to the Chinese version",
+      "revId": "d121ceb8ebac863df78cfc7280ab7162b3e0aaf4",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fb859138_d2409a73",
+        "filename": "cn/releases.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 1010531
+      },
+      "writtenOn": "2018-08-17T19:13:21Z",
+      "side": 1,
+      "message": "The roadmap link should go to the Chinese version",
+      "revId": "d121ceb8ebac863df78cfc7280ab7162b3e0aaf4",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
