@@ -1,11 +1,11 @@
 <map id="spdk_bdev_io" name="spdk_bdev_io">
-<area shape="rect" id="node5" href="$structspdk__bdev__io_1_1____bdev__io__internal__fields.html" title="Fields that are used internally by the bdev subsystem. " alt="" coords="929,81,1095,122"/>
-<area shape="rect" id="node9" href="$structspdk__bdev_1_1____bdev__internal__fields.html" title="Fields that are used internally by the bdev subsystem. " alt="" coords="911,155,1113,197"/>
-<area shape="rect" id="node2" href="$structspdk__nvme__cmd.html" title="spdk_nvme_cmd" alt="" coords="280,153,412,180"/>
-<area shape="rect" id="node3" href="$structspdk__nvme__sgl__descriptor.html" title="spdk_nvme_sgl_descriptor" alt="" coords="5,153,200,180"/>
-<area shape="rect" id="node4" href="$structspdk__io__channel.html" title="Represents a per&#45;thread channel for accessing an I/O device. " alt="" coords="281,53,411,80"/>
-<area shape="rect" id="node10" href="$structspdk__bdev__fn__table.html" title="Function table for a block device backend. " alt="" coords="735,5,887,32"/>
-<area shape="rect" id="node6" href="$structspdk__bdev.html" title="spdk_bdev" alt="" coords="1243,201,1335,228"/>
-<area shape="rect" id="node7" href="$structspdk__bdev__module.html" title="Block device module. " alt="" coords="563,279,711,305"/>
-<area shape="rect" id="node8" href="$structspdk__uuid.html" title="spdk_uuid" alt="" coords="968,363,1056,389"/>
+<area shape="rect" id="node5" href="$structspdk__bdev__io_1_1____bdev__io__internal__fields.html" title="Fields that are used internally by the bdev subsystem. " alt="" coords="929,82,1095,123"/>
+<area shape="rect" id="node9" href="$structspdk__bdev_1_1____bdev__internal__fields.html" title="Fields that are used internally by the bdev subsystem. " alt="" coords="911,157,1113,198"/>
+<area shape="rect" id="node2" href="$structspdk__nvme__cmd.html" title="spdk_nvme_cmd" alt="" coords="280,155,412,181"/>
+<area shape="rect" id="node3" href="$structspdk__nvme__sgl__descriptor.html" title="spdk_nvme_sgl_descriptor" alt="" coords="5,155,200,181"/>
+<area shape="rect" id="node4" href="$structspdk__io__channel.html" title="Represents a per&#45;thread channel for accessing an I/O device. " alt="" coords="281,55,411,81"/>
+<area shape="rect" id="node10" href="$structspdk__bdev__fn__table.html" title="Function table for a block device backend. " alt="" coords="735,7,887,33"/>
+<area shape="rect" id="node6" href="$structspdk__bdev.html" title="spdk_bdev" alt="" coords="1216,224,1308,251"/>
+<area shape="rect" id="node7" href="$structspdk__bdev__module.html" title="Block device module. " alt="" coords="563,280,711,307"/>
+<area shape="rect" id="node8" href="$structspdk__uuid.html" title="spdk_uuid" alt="" coords="968,364,1056,391"/>
 </map>

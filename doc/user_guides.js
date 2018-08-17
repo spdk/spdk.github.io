@@ -5,9 +5,13 @@ var user_guides =
         [ "Command Line Parameters", "app_overview.html#app_cmd_line_args", [
           [ "Configuration file", "app_overview.html#cmd_arg_config_file", null ],
           [ "Deferred initialization", "app_overview.html#cmd_arg_deferred_initialization", null ],
+          [ "Create just one hugetlbfs file", "app_overview.html#cmd_arg_single_file_segments", null ],
+          [ "Multi process mode", "app_overview.html#cmd_arg_multi_process", null ],
+          [ "Memory size", "app_overview.html#cmd_arg_memory_size", null ],
           [ "Disable PCI access", "app_overview.html#cmd_arg_disable_pci_access", null ],
           [ "PCI address blacklist and whitelist", "app_overview.html#cmd_arg_pci_blacklist_whitelist", null ],
-          [ "Debug log flags", "app_overview.html#cmd_arg_debug_log_flags", null ]
+          [ "Unlink hugepage files after initialization", "app_overview.html#cmd_arg_huge_unlink", null ],
+          [ "Debug log", "app_overview.html#cmd_arg_debug_log_flags", null ]
         ] ],
         [ "CPU mask", "app_overview.html#cpu_mask", null ]
       ] ]

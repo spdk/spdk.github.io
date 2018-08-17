@@ -2,7 +2,6 @@ var searchData=
 [
   ['barrier_2eh',['barrier.h',['../barrier_8h.html',1,'']]],
   ['base64_2eh',['base64.h',['../base64_8h.html',1,'']]],
-  ['base_5fbdevs',['base_bdevs',['../structspdk__bdev_1_1____bdev__internal__fields.html#a44f8738ca123a73724e679f7943aa246',1,'spdk_bdev::__bdev_internal_fields']]],
   ['bdev',['bdev',['../structspdk__bdev__io.html#a096518d708e224b91e03897b79431afd',1,'spdk_bdev_io::bdev()'],['../bdev.html',1,'user_guides']]],
   ['bdev_2eh',['bdev.h',['../bdev_8h.html',1,'']]],
   ['bdev_20i_2fo_20submit_20functions',['bdev I/O Submit Functions',['../group__bdev__io__submit__functions.html',1,'']]],

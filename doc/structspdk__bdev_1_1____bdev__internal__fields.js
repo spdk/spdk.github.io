@@ -2,8 +2,6 @@ var structspdk__bdev_1_1____bdev__internal__fields =
 [
     [ "TAILQ_ENTRY", "structspdk__bdev_1_1____bdev__internal__fields.html#a740740056a9b6f061a8d71dd755d54d9", null ],
     [ "TAILQ_HEAD", "structspdk__bdev_1_1____bdev__internal__fields.html#a920a1e86dea170c9234bb24f61b16226", null ],
-    [ "base_bdevs", "structspdk__bdev_1_1____bdev__internal__fields.html#a44f8738ca123a73724e679f7943aa246", null ],
-    [ "base_bdevs_cnt", "structspdk__bdev_1_1____bdev__internal__fields.html#a7a08da54d2c347343396167746b5c13c", null ],
     [ "claim_module", "structspdk__bdev_1_1____bdev__internal__fields.html#a218d92ccd2079d21b672edfb0168cfe1", null ],
     [ "io_time", "structspdk__bdev_1_1____bdev__internal__fields.html#a55d6103a185f6c50c9b5d58976d08508", null ],
     [ "measured_queue_depth", "structspdk__bdev_1_1____bdev__internal__fields.html#a544e45acd435eb8c7269f08166841f41", null ],

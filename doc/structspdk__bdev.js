@@ -13,7 +13,5 @@ var structspdk__bdev =
     [ "optimal_io_boundary", "structspdk__bdev.html#af2dcdd94b1bbfd2709c6040f861819fb", null ],
     [ "product_name", "structspdk__bdev.html#ad3abe8a06500954332614d8657eaf1d9", null ],
     [ "uuid", "structspdk__bdev.html#a5cc1248944325a12c4cadaa3856f573a", null ],
-    [ "vbdevs", "structspdk__bdev.html#a7d72a950e7a129b96607189783f96718", null ],
-    [ "vbdevs_cnt", "structspdk__bdev.html#ab053d6a734581f3b8d08b940ba5085b3", null ],
     [ "write_cache", "structspdk__bdev.html#ac2ccb256340bc2e8b2d6f7793d977c0d", null ]
 ];

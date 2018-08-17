@@ -147,14 +147,14 @@ Collaboration diagram for spdk_bdev:</div>
 <div class="dyncontent">
 <div class="center"><img src="structspdk__bdev__coll__graph.png" border="0" usemap="#spdk__bdev_coll__map" alt="Collaboration graph"/></div>
 <map name="spdk__bdev_coll__map" id="spdk__bdev_coll__map">
-<area shape="rect" id="node5" href="structspdk__bdev_1_1____bdev__internal__fields.html" title="Fields that are used internally by the bdev subsystem. " alt="" coords="1143,79,1345,121"/>
-<area shape="rect" id="node7" href="structspdk__bdev__io.html" title="spdk_bdev_io" alt="" coords="848,187,959,213"/>
+<area shape="rect" id="node7" href="structspdk__bdev__io.html" title="spdk_bdev_io" alt="" coords="848,171,959,197"/>
 <area shape="rect" id="node2" href="structspdk__bdev__module.html" title="Block device module. " alt="" coords="339,20,487,47"/>
+<area shape="rect" id="node5" href="structspdk__bdev_1_1____bdev__internal__fields.html" title="Fields that are used internally by the bdev subsystem. " alt="" coords="1143,89,1345,130"/>
 <area shape="rect" id="node3" href="structspdk__bdev__module_1_1____bdev__module__internal__fields.html" title="Fields that are used by the internal bdev subsystem. " alt="" coords="5,5,187,61"/>
-<area shape="rect" id="node4" href="structspdk__uuid.html" title="spdk_uuid" alt="" coords="369,136,457,163"/>
-<area shape="rect" id="node6" href="structspdk__bdev__io__stat.html" title="spdk_bdev_io_stat" alt="" coords="832,237,975,264"/>
+<area shape="rect" id="node4" href="structspdk__uuid.html" title="spdk_uuid" alt="" coords="369,133,457,160"/>
+<area shape="rect" id="node6" href="structspdk__bdev__io__stat.html" title="spdk_bdev_io_stat" alt="" coords="832,221,975,248"/>
 <area shape="rect" id="node8" href="structspdk__io__channel.html" title="Represents a per&#45;thread channel for accessing an I/O device. " alt="" coords="31,128,161,155"/>
-<area shape="rect" id="node9" href="structspdk__bdev__fn__table.html" title="Function table for a block device backend. " alt="" coords="337,85,489,112"/>
+<area shape="rect" id="node9" href="structspdk__bdev__fn__table.html" title="Function table for a block device backend. " alt="" coords="337,83,489,109"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -212,12 +212,6 @@ struct <a class="el" href="structspdk__bdev__module.html">spdk_bdev_module</a> *
 const struct <a class="el" href="structspdk__bdev__fn__table.html">spdk_bdev_fn_table</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev.html#a1c3d6e810863f31e2301949bfd1c5d37">fn_table</a></td></tr>
 <tr class="memdesc:a1c3d6e810863f31e2301949bfd1c5d37"><td class="mdescLeft">&#160;</td><td class="mdescRight">function table for all LUN ops <br /></td></tr>
 <tr class="separator:a1c3d6e810863f31e2301949bfd1c5d37"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7d72a950e7a129b96607189783f96718"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> **&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev.html#a7d72a950e7a129b96607189783f96718">vbdevs</a></td></tr>
-<tr class="memdesc:a7d72a950e7a129b96607189783f96718"><td class="mdescLeft">&#160;</td><td class="mdescRight">The array of virtual block devices built on top of this block device.  <a href="#a7d72a950e7a129b96607189783f96718">More...</a><br /></td></tr>
-<tr class="separator:a7d72a950e7a129b96607189783f96718"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab053d6a734581f3b8d08b940ba5085b3"><td class="memItemLeft" align="right" valign="top"><a id="ab053d6a734581f3b8d08b940ba5085b3"></a>
-size_t&#160;</td><td class="memItemRight" valign="bottom"><b>vbdevs_cnt</b></td></tr>
-<tr class="separator:ab053d6a734581f3b8d08b940ba5085b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af79765ae9547cde698fa00a46f7bfa68"><td class="memItemLeft" align="right" valign="top"><a id="af79765ae9547cde698fa00a46f7bfa68"></a>
 struct <a class="el" href="structspdk__bdev_1_1____bdev__internal__fields.html">spdk_bdev::__bdev_internal_fields</a>&#160;</td><td class="memItemRight" valign="bottom"><b>internal</b></td></tr>
 <tr class="separator:af79765ae9547cde698fa00a46f7bfa68"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -317,22 +311,6 @@ struct <a class="el" href="structspdk__bdev_1_1____bdev__internal__fields.html">
 
 <p>UUID for this bdev. </p>
 <p>Fill with zeroes if no uuid is available. </p>
-
-</div>
-</div>
-<a id="a7d72a950e7a129b96607189783f96718"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7d72a950e7a129b96607189783f96718">&#9670;&nbsp;</a></span>vbdevs</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a>** spdk_bdev::vbdevs</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>The array of virtual block devices built on top of this block device. </p>
 
 </div>
 </div>

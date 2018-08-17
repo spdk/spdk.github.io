@@ -154,64 +154,42 @@ Command Line Parameters</h2>
 <p>The SPDK application framework defines a set of base command line flags for all applications that use it. Specific applications may implement additional flags.</p>
 <table class="doxtable">
 <tr>
-<th>Param </th><th>Type </th><th>Default </th><th>Description  </th></tr>
+<th>Param </th><th>Long Param </th><th>Type </th><th>Default </th><th>Description  </th></tr>
 <tr>
-<td>-c </td><td>string </td><td></td><td><a class="el" href="app_overview.html#cmd_arg_config_file">Configuration file</a> </td></tr>
-<tr>
-<td>-d </td><td>flag </td><td>false </td><td>disable coredump file creation </td></tr>
-<tr>
-<td>-e </td><td>integer </td><td>0x0 </td><td>tracepoint group hexadecimal mask for SPDK trace buffers </td></tr>
-<tr>
-<td>-g </td><td>flag </td><td>false </td><td>force creating just one hugetlbfs file </td></tr>
-<tr>
-<td>-h </td><td>flag </td><td>false </td><td>show all available parameters and exit </td></tr>
-<tr>
-<td>-i </td><td>integer </td><td>process PID </td><td>shared memory ID </td></tr>
-<tr>
-<td>-m </td><td>CPU mask </td><td>0x1 </td><td>application <a class="el" href="app_overview.html#cpu_mask">CPU mask</a> </td></tr>
-<tr>
-<td>-n </td><td>integer </td><td>all channels </td><td>number of memory channels used for DPDK </td></tr>
-<tr>
-<td>-p </td><td>integer </td><td>first core in CPU mask </td><td>master (primary) core for DPDK </td></tr>
-<tr>
-<td>-q </td><td>flag </td><td>false </td><td>disable notice level logging to <code>stderr</code> </td></tr>
-<tr>
-<td>-r </td><td>string </td><td>/var/tmp/spdk.sock </td><td>RPC listen address </td></tr>
-<tr>
-<td>-s </td><td>integer </td><td>all hugepage memory </td><td>memory size in MB for DPDK </td></tr>
-<tr>
-<td>-u </td><td>flag </td><td>false </td><td><a class="el" href="app_overview.html#cmd_arg_disable_pci_access">Disable PCI access</a>. </td></tr>
-<tr>
-<td>-w </td><td>flag </td><td>false </td><td><a class="el" href="app_overview.html#cmd_arg_deferred_initialization">Deferred initialization</a> </td></tr>
-<tr>
-<td>-B </td><td>B:D:F </td><td></td><td><a class="el" href="app_overview.html#cmd_arg_pci_blacklist_whitelist">PCI address blacklist and whitelist</a>. </td></tr>
-<tr>
-<td>-W </td><td>B:D:F </td><td></td><td><a class="el" href="app_overview.html#cmd_arg_pci_blacklist_whitelist">PCI address blacklist and whitelist</a>. </td></tr>
-<tr>
-<td>-L </td><td>string </td><td></td><td><a class="el" href="app_overview.html#cmd_arg_debug_log_flags">Debug log flags</a> </td></tr>
-<tr>
-<td>-f </td><td>string </td><td></td><td>save pid to file under given path </td></tr>
+<td>-c </td><td>&ndash;config </td><td>string </td><td></td><td><a class="el" href="app_overview.html#cmd_arg_config_file">Configuration file</a> </td></tr>
 </table>
+<p>-d | &ndash;limit-coredump | flag | | -e | &ndash;tpoint-group-mask | integer | 0x0 | -g | &ndash;single-file-segments | flag | | <a class="el" href="app_overview.html#cmd_arg_single_file_segments">Create just one hugetlbfs file</a> -h | &ndash;help | flag | | show all available parameters and exit -i | &ndash;shm-id | integer | | <a class="el" href="app_overview.html#cmd_arg_multi_process">Multi process mode</a> -m | &ndash;cpumask | CPU mask | 0x1 | application <a class="el" href="app_overview.html#cpu_mask">CPU mask</a> -n | &ndash;mem-channels | integer | all channels | number of memory channels used for DPDK -p | &ndash;master-core | integer | first core in CPU mask | master (primary) core for DPDK -r | &ndash;rpc-socket | string | /var/tmp/spdk.sock | RPC listen address -s | &ndash;mem-size | integer | all hugepage memory | <a class="el" href="app_overview.html#cmd_arg_memory_size">Memory size</a> | &ndash;silence-noticelog | flag | | disable notice level logging to <code>stderr</code> -u | &ndash;no-pci | flag | | <a class="el" href="app_overview.html#cmd_arg_disable_pci_access">Disable PCI access</a>. | &ndash;wait-for-rpc | flag | | <a class="el" href="app_overview.html#cmd_arg_deferred_initialization">Deferred initialization</a> -B | &ndash;pci-blacklist | B:D:F | | <a class="el" href="app_overview.html#cmd_arg_pci_blacklist_whitelist">PCI address blacklist and whitelist</a>. -W | &ndash;pci-whitelist | B:D:F | | <a class="el" href="app_overview.html#cmd_arg_pci_blacklist_whitelist">PCI address blacklist and whitelist</a>. -R | &ndash;huge-unlink | flag | | <a class="el" href="app_overview.html#cmd_arg_huge_unlink">Unlink hugepage files after initialization</a> -L | &ndash;traceflag | string | | <a class="el" href="app_overview.html#cmd_arg_debug_log_flags">Debug log</a></p>
 <h3><a class="anchor" id="cmd_arg_config_file"></a>
 Configuration file</h3>
 <p>Historically, the SPDK applications were configured using a configuration file. This is still supported, but is considered deprecated in favor of JSON RPC configuration. See <a class="el" href="jsonrpc.html">JSON-RPC Methods</a> for details.</p>
-<p>Note that <code>-c</code> and <code>-w</code> cannot be used at the same time.</p>
+<p>Note that <code>--config</code> and <code>--wait-for-rpc</code> cannot be used at the same time.</p>
 <h3><a class="anchor" id="cmd_arg_deferred_initialization"></a>
 Deferred initialization</h3>
 <p>SPDK applications progress through a set of states beginning with <code>STARTUP</code> and ending with <code>RUNTIME</code>.</p>
-<p>If the <code>-w</code> parameter is provided SPDK will pause just before starting subsystem initialization. This state is called <code>STARTUP</code>. The JSON RPC server is ready but only a small subsystem of commands are available to set up initialization parameters. Those parameters can't be changed after the SPDK application enters <code>RUNTIME</code> state. When the client finishes configuring the SPDK subsystems it needs to issue the <a class="el" href="jsonrpc.html#rpc_start_subsystem_init">start_subsystem_init</a> RPC command to begin the initialization process. After <code>rpc_start_subsystem_init</code> returns <code>true</code> SPDK will enter the <code>RUNTIME</code> state and the list of available commands becomes much larger.</p>
+<p>If the <code>--wait-for-rpc</code> parameter is provided SPDK will pause just before starting subsystem initialization. This state is called <code>STARTUP</code>. The JSON RPC server is ready but only a small subsystem of commands are available to set up initialization parameters. Those parameters can't be changed after the SPDK application enters <code>RUNTIME</code> state. When the client finishes configuring the SPDK subsystems it needs to issue the <a class="el" href="jsonrpc.html#rpc_start_subsystem_init">start_subsystem_init</a> RPC command to begin the initialization process. After <code>rpc_start_subsystem_init</code> returns <code>true</code> SPDK will enter the <code>RUNTIME</code> state and the list of available commands becomes much larger.</p>
 <p>To see which RPC methods are available in the current state, issue the <code>get_rpc_methods</code> with the parameter <code>current</code> set to <code>true</code>.</p>
 <p>For more details see <a class="el" href="jsonrpc.html">JSON-RPC Methods</a> documentation.</p>
+<h3><a class="anchor" id="cmd_arg_single_file_segments"></a>
+Create just one hugetlbfs file</h3>
+<p>Instead of creating one hugetlbfs file per page, this option makes SPDK create one file per hugepagesz per socket. This is needed for <a class="el" href="virtio.html">Virtio driver</a> to be used with more than 8 hugepages. See <a class="el" href="virtio.html#virtio_2mb">2MB hugepages</a>.</p>
+<h3><a class="anchor" id="cmd_arg_multi_process"></a>
+Multi process mode</h3>
+<p>When <code>--shm-id</code> is specified, the application is started in multi-process mode. Applications using the same shm-id share their memory and <a class="el" href="nvme.html#nvme_multi_process">NVMe devices</a>. The first app to start with a given id becomes a primary process, with the rest, called secondary processes, only attaching to it. When the primary process exits, the secondary ones continue to operate, but no new processes can be attached at this point. All processes within the same shm-id group must use the same <a class="el" href="app_overview.html#cmd_arg_single_file_segments">--single-file-segments setting</a>.</p>
+<h3><a class="anchor" id="cmd_arg_memory_size"></a>
+Memory size</h3>
+<p>Total size of the hugepage memory to reserve. If DPDK env layer is used, it will reserve memory from all available hugetlbfs mounts, starting with the one with the highest page size. This option accepts a number of bytes with a possible binary prefix, e.g. 1024, 1024M, 1G. The default unit is megabyte.</p>
 <h3><a class="anchor" id="cmd_arg_disable_pci_access"></a>
 Disable PCI access</h3>
 <p>If SPDK is run with PCI access disabled it won't detect any PCI devices. This includes primarily NVMe and IOAT devices. Also, the VFIO and UIO kernel modules are not required in this mode.</p>
 <h3><a class="anchor" id="cmd_arg_pci_blacklist_whitelist"></a>
 PCI address blacklist and whitelist</h3>
-<p>Note that <code>-B</code> and <code>-W</code> cannot be used at the same time.</p>
-<p>If a blacklist is used all devices with the provided PCI address will be ignored. If a whitelist is used only those devices will be probed. You can used <code>-B</code> or <code>-W</code> more than once to add more than one device to list.</p>
+<p>If blacklist is used, then all devices with the provided PCI address will be ignored. If a whitelist is used, only whitelisted devices will be probed. <code>-B</code> or <code>-W</code> can be used more than once, but cannot be mixed together. That is, <code>-B</code> and <code>-W</code> cannot be used at the same time.</p>
+<h3><a class="anchor" id="cmd_arg_huge_unlink"></a>
+Unlink hugepage files after initialization</h3>
+<p>By default, each DPDK-based application tries to remove any orphaned hugetlbfs files during its initialization. This option removes hugetlbfs files of the current process as soon as they're created, but is not compatible with <code>--shm-id</code>.</p>
 <h3><a class="anchor" id="cmd_arg_debug_log_flags"></a>
-Debug log flags</h3>
-<p>Use a comma separated list of flags or use <code>-L all</code> to enable all debug flags. Run SPDK application with <code>-h</code> to get a list of all valid flags. Debug flags are only available in debug builds of SPDK.</p>
+Debug log</h3>
+<p>Enable a specific debug log type. This option can be used more than once. A list of all available types is provided in the <code>--help</code> output, with <code>--traceflag all</code> enabling all of them. Debug logs are only available in debug builds of SPDK.</p>
 <h2><a class="anchor" id="cpu_mask"></a>
 CPU mask</h2>
 <p>Whenever the <code>CPU mask</code> is mentioned it is a string in one of the following formats:</p>

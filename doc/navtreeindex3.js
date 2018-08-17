@@ -1,5 +1,9 @@
 var NAVTREEINDEX3 =
 {
+"iscsi.html#vpp_running_with_spdk":[3,1,1,4],
+"iscsi__spec_8h.html":[13,0,23],
+"iscsi__spec_8h.html#a04b6541ec6c56cd9b1524a2bf9c1f05f":[13,0,23,27],
+"iscsi__spec_8h.html#a0fcf5898a9d4194105b5e88cb79f4d51":[13,0,23,85],
 "iscsi__spec_8h.html#a18b6fd1414e2d3ff815838256ea86618":[13,0,23,54],
 "iscsi__spec_8h.html#a1b765df5955c72f1ecb08a653d9f6454":[13,0,23,51],
 "iscsi__spec_8h.html#a1ec3457d9e23e18074a7cb0b2f24ffcc":[13,0,23,83],
@@ -245,9 +249,5 @@ var NAVTREEINDEX3 =
 "jsonrpc.html#rpc_delete_portal_group":[3,6,3,13],
 "jsonrpc.html#rpc_delete_rbd_bdev":[3,6,2,16],
 "jsonrpc.html#rpc_delete_target_node":[3,6,3,10],
-"jsonrpc.html#rpc_destroy_lvol_bdev":[3,6,6,9],
-"jsonrpc.html#rpc_destroy_lvol_store":[3,6,6,1],
-"jsonrpc.html#rpc_get_bdevs":[3,6,2,1],
-"jsonrpc.html#rpc_get_bdevs_iostat":[3,6,2,2],
-"jsonrpc.html#rpc_get_initiator_groups":[3,6,3,2]
+"jsonrpc.html#rpc_destroy_lvol_bdev":[3,6,6,9]
 };
