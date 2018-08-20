@@ -2,6 +2,52 @@
   "comments": [
     {
       "key": {
+        "uuid": "36771c37_36d82be6",
+        "filename": "_includes/cilinks.html",
+        "patchSetId": 2
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 1011207
+      },
+      "writtenOn": "2018-08-20T07:35:36Z",
+      "side": 1,
+      "message": "Maybe just \"集成测试\"",
+      "range": {
+        "startLine": 6,
+        "startChar": 58,
+        "endLine": 6,
+        "endChar": 61
+      },
+      "revId": "d121ceb8ebac863df78cfc7280ab7162b3e0aaf4",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "965bac6a_e97c0b37",
+        "filename": "_includes/cilinks.html",
+        "patchSetId": 2
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1011207
+      },
+      "writtenOn": "2018-08-20T07:35:36Z",
+      "side": 1,
+      "message": "\"网站测试“",
+      "range": {
+        "startLine": 7,
+        "startChar": 68,
+        "endLine": 7,
+        "endChar": 73
+      },
+      "revId": "d121ceb8ebac863df78cfc7280ab7162b3e0aaf4",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "5117cf59_86314bed",
         "filename": "cn/ci.md",
         "patchSetId": 2
@@ -13,6 +59,121 @@
       "writtenOn": "2018-08-17T19:13:21Z",
       "side": 1,
       "message": "The link to the development page here should actually link to the Chinese version.",
+      "revId": "d121ceb8ebac863df78cfc7280ab7162b3e0aaf4",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "2ddb6f5c_414d4032",
+        "filename": "cn/community.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 1011207
+      },
+      "writtenOn": "2018-08-20T07:35:36Z",
+      "side": 1,
+      "message": "IRC即时通信",
+      "range": {
+        "startLine": 8,
+        "startChar": 2,
+        "endLine": 8,
+        "endChar": 5
+      },
+      "revId": "d121ceb8ebac863df78cfc7280ab7162b3e0aaf4",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "333c38e5_81eada6a",
+        "filename": "cn/community.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 1011207
+      },
+      "writtenOn": "2018-08-20T07:35:36Z",
+      "side": 1,
+      "message": "Trello项目概览",
+      "range": {
+        "startLine": 12,
+        "startChar": 2,
+        "endLine": 12,
+        "endChar": 10
+      },
+      "revId": "d121ceb8ebac863df78cfc7280ab7162b3e0aaf4",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "b8cb74b9_616f51f6",
+        "filename": "cn/community.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 1011207
+      },
+      "writtenOn": "2018-08-20T07:35:36Z",
+      "side": 1,
+      "message": "邮件",
+      "range": {
+        "startLine": 16,
+        "startChar": 2,
+        "endLine": 16,
+        "endChar": 5
+      },
+      "revId": "d121ceb8ebac863df78cfc7280ab7162b3e0aaf4",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "00259a4f_5f77c9af",
+        "filename": "cn/community.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 1011207
+      },
+      "writtenOn": "2018-08-20T07:35:36Z",
+      "side": 1,
+      "message": "邮件",
+      "range": {
+        "startLine": 18,
+        "startChar": 5,
+        "endLine": 18,
+        "endChar": 8
+      },
+      "revId": "d121ceb8ebac863df78cfc7280ab7162b3e0aaf4",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "372089b1_d1da9f7b",
+        "filename": "cn/community.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 46,
+      "author": {
+        "id": 1011207
+      },
+      "writtenOn": "2018-08-20T07:35:36Z",
+      "side": 1,
+      "message": "Bug讨论",
+      "range": {
+        "startLine": 46,
+        "startChar": 2,
+        "endLine": 46,
+        "endChar": 6
+      },
       "revId": "d121ceb8ebac863df78cfc7280ab7162b3e0aaf4",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": false
@@ -36,6 +197,52 @@
     },
     {
       "key": {
+        "uuid": "801379f2_50d8fec7",
+        "filename": "cn/development.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 131,
+      "author": {
+        "id": 1011207
+      },
+      "writtenOn": "2018-08-20T07:35:36Z",
+      "side": 1,
+      "message": "这句需要翻译吗？谢谢！",
+      "range": {
+        "startLine": 131,
+        "startChar": 2,
+        "endLine": 131,
+        "endChar": 85
+      },
+      "revId": "d121ceb8ebac863df78cfc7280ab7162b3e0aaf4",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "632443d6_ec4c999b",
+        "filename": "cn/development.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 236,
+      "author": {
+        "id": 1011207
+      },
+      "writtenOn": "2018-08-20T07:35:36Z",
+      "side": 1,
+      "message": "可以把Daniel去掉",
+      "range": {
+        "startLine": 236,
+        "startChar": 2,
+        "endLine": 236,
+        "endChar": 27
+      },
+      "revId": "d121ceb8ebac863df78cfc7280ab7162b3e0aaf4",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "fb859138_d2409a73",
         "filename": "cn/releases.md",
         "patchSetId": 2
@@ -47,6 +254,24 @@
       "writtenOn": "2018-08-17T19:13:21Z",
       "side": 1,
       "message": "The roadmap link should go to the Chinese version",
+      "revId": "d121ceb8ebac863df78cfc7280ab7162b3e0aaf4",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "06b6b51e_e3e30c37",
+        "filename": "cn/releases.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 1011207
+      },
+      "writtenOn": "2018-08-20T07:35:36Z",
+      "side": 1,
+      "message": "Looks like this page is just a place holder with English information so far and the later patch will transalte into Chinese and correct the links as mentioned.",
+      "parentUuid": "fb859138_d2409a73",
       "revId": "d121ceb8ebac863df78cfc7280ab7162b3e0aaf4",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": false
