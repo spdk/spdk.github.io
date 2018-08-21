@@ -48,6 +48,40 @@
     },
     {
       "key": {
+        "uuid": "66bf032d_18dfb643",
+        "filename": "cn/blog.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 1011885
+      },
+      "writtenOn": "2018-08-21T01:27:43Z",
+      "side": 1,
+      "message": "SPDK在英文版里面没有，这个可以去掉",
+      "revId": "d121ceb8ebac863df78cfc7280ab7162b3e0aaf4",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "4b4f6547_3e21d527",
+        "filename": "cn/ci.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 1011885
+      },
+      "writtenOn": "2018-08-21T01:27:43Z",
+      "side": 1,
+      "message": "持续集成",
+      "revId": "d121ceb8ebac863df78cfc7280ab7162b3e0aaf4",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "5117cf59_86314bed",
         "filename": "cn/ci.md",
         "patchSetId": 2
@@ -59,6 +93,40 @@
       "writtenOn": "2018-08-17T19:13:21Z",
       "side": 1,
       "message": "The link to the development page here should actually link to the Chinese version.",
+      "revId": "d121ceb8ebac863df78cfc7280ab7162b3e0aaf4",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "2155cc84_64a24c10",
+        "filename": "cn/community.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 1011885
+      },
+      "writtenOn": "2018-08-21T01:27:43Z",
+      "side": 1,
+      "message": "整个页面已经更新，可以参照最新的页面http://www.spdk.io/community/",
+      "revId": "d121ceb8ebac863df78cfc7280ab7162b3e0aaf4",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "10ffb03e_a93df328",
+        "filename": "cn/community.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 1011885
+      },
+      "writtenOn": "2018-08-21T01:27:43Z",
+      "side": 1,
+      "message": "把SPDK去掉",
       "revId": "d121ceb8ebac863df78cfc7280ab7162b3e0aaf4",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": false
@@ -157,6 +225,40 @@
     },
     {
       "key": {
+        "uuid": "ea6eb1d7_2557c293",
+        "filename": "cn/community.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 32,
+      "author": {
+        "id": 1011885
+      },
+      "writtenOn": "2018-08-21T01:27:43Z",
+      "side": 1,
+      "message": "会议号码已经更新成594 725 952",
+      "revId": "d121ceb8ebac863df78cfc7280ab7162b3e0aaf4",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "353f6aeb_7720af69",
+        "filename": "cn/community.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 40,
+      "author": {
+        "id": 1011885
+      },
+      "writtenOn": "2018-08-21T01:27:43Z",
+      "side": 1,
+      "message": "会议号码已更新：592 674 686",
+      "revId": "d121ceb8ebac863df78cfc7280ab7162b3e0aaf4",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "372089b1_d1da9f7b",
         "filename": "cn/community.md",
         "patchSetId": 2
@@ -180,6 +282,40 @@
     },
     {
       "key": {
+        "uuid": "9966e08e_2b9fe9fc",
+        "filename": "cn/community.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 52,
+      "author": {
+        "id": 1011885
+      },
+      "writtenOn": "2018-08-21T01:27:43Z",
+      "side": 1,
+      "message": "会议号码已更新：592 309 994",
+      "revId": "d121ceb8ebac863df78cfc7280ab7162b3e0aaf4",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "52f9a223_2c391adb",
+        "filename": "cn/community.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 54,
+      "author": {
+        "id": 1011885
+      },
+      "writtenOn": "2018-08-21T01:27:43Z",
+      "side": 1,
+      "message": "特性请求-\u003e特性需求",
+      "revId": "d121ceb8ebac863df78cfc7280ab7162b3e0aaf4",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "1a0d86cb_4b801cce",
         "filename": "cn/community.md",
         "patchSetId": 2
@@ -191,6 +327,23 @@
       "writtenOn": "2018-08-17T19:13:21Z",
       "side": 1,
       "message": "This link should go to the Chinese version",
+      "revId": "d121ceb8ebac863df78cfc7280ab7162b3e0aaf4",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "da87b9ca_7c2b8ab7",
+        "filename": "cn/development.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 1011885
+      },
+      "writtenOn": "2018-08-21T01:27:43Z",
+      "side": 1,
+      "message": "去掉SPDK",
       "revId": "d121ceb8ebac863df78cfc7280ab7162b3e0aaf4",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": false
@@ -243,6 +396,23 @@
     },
     {
       "key": {
+        "uuid": "99c71a7c_cb7d7bf1",
+        "filename": "cn/releases.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 1011885
+      },
+      "writtenOn": "2018-08-21T01:27:43Z",
+      "side": 1,
+      "message": "版本发布",
+      "revId": "d121ceb8ebac863df78cfc7280ab7162b3e0aaf4",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "fb859138_d2409a73",
         "filename": "cn/releases.md",
         "patchSetId": 2
@@ -272,6 +442,23 @@
       "side": 1,
       "message": "Looks like this page is just a place holder with English information so far and the later patch will transalte into Chinese and correct the links as mentioned.",
       "parentUuid": "fb859138_d2409a73",
+      "revId": "d121ceb8ebac863df78cfc7280ab7162b3e0aaf4",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "2c7f0071_45fd2118",
+        "filename": "cn/roadmap.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 1011885
+      },
+      "writtenOn": "2018-08-21T01:27:43Z",
+      "side": 1,
+      "message": "路线图",
       "revId": "d121ceb8ebac863df78cfc7280ab7162b3e0aaf4",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": false
