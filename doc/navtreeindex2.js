@@ -1,5 +1,6 @@
 var NAVTREEINDEX2 =
 {
+"event.html":[5,1],
 "event.html#event_component_app":[5,1,1,3],
 "event.html#event_component_events":[5,1,1,0],
 "event.html#event_component_pollers":[5,1,1,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX2 =
 "iscsi.html#vpp":[3,1,1],
 "iscsi.html#vpp_build":[3,1,1,0],
 "iscsi.html#vpp_built_into_spdk":[3,1,1,3],
-"iscsi.html#vpp_install":[3,1,1,1],
-"iscsi.html#vpp_run":[3,1,1,2]
+"iscsi.html#vpp_install":[3,1,1,1]
 };

@@ -45,6 +45,7 @@ var searchData=
   ['spdk_5fbdev_5falias',['spdk_bdev_alias',['../structspdk__bdev__alias.html',1,'']]],
   ['spdk_5fbdev_5falias_5fadd',['spdk_bdev_alias_add',['../bdev__module_8h.html#af1079eae68fac856b56863f26bc5310f',1,'bdev_module.h']]],
   ['spdk_5fbdev_5falias_5fdel',['spdk_bdev_alias_del',['../bdev__module_8h.html#a96486c7be7952a1665ce6ae977f092ef',1,'bdev_module.h']]],
+  ['spdk_5fbdev_5falias_5fdel_5fall',['spdk_bdev_alias_del_all',['../bdev__module_8h.html#ae62dae3c4a41154aca74f37864ae82f9',1,'bdev_module.h']]],
   ['spdk_5fbdev_5fclose',['spdk_bdev_close',['../bdev_8h.html#aaf5fc830851a2eb0aa34bbb40cf5eac6',1,'bdev.h']]],
   ['spdk_5fbdev_5fconfig_5fjson',['spdk_bdev_config_json',['../bdev_8h.html#a475b4bbada0b412059fb231b2e205af9',1,'bdev.h']]],
   ['spdk_5fbdev_5fconfig_5ftext',['spdk_bdev_config_text',['../bdev_8h.html#a273c20b5f07dd8c727ec0d0b80b804fe',1,'bdev.h']]],

@@ -1,5 +1,6 @@
 var NAVTREEINDEX4 =
 {
+"jsonrpc.html#rpc_destroy_lvol_bdev":[3,6,6,9],
 "jsonrpc.html#rpc_destroy_lvol_store":[3,6,6,1],
 "jsonrpc.html#rpc_get_bdevs":[3,6,2,1],
 "jsonrpc.html#rpc_get_bdevs_iostat":[3,6,2,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX4 =
 "nvme_8h.html#ac750410c9b53a0435d0111ae1e98913e":[13,0,32,37],
 "nvme_8h.html#ac9779e9957d7089dde8e492cc60856d8":[13,0,32,6],
 "nvme_8h.html#acb47ce7de6b6e963ec9fb8de261466ae":[13,0,32,61],
-"nvme_8h.html#ace23485fea91d126a13fe706ce6d8843":[13,0,32,27],
-"nvme_8h.html#acf6188764b8c71b2f64a74077d6bfabf":[13,0,32,89]
+"nvme_8h.html#ace23485fea91d126a13fe706ce6d8843":[13,0,32,27]
 };

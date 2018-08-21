@@ -144,6 +144,8 @@ v18.10: (Upcoming Release)</h1>
 <p><a class="el" href="nvme_8h.html#a8f3f5c5a738dc7ad7e3b2913bff4324c" title="Get the extended sector size, in bytes, of the given namespace. ">spdk_nvme_ns_get_extended_sector_size()</a> was added. This function includes the metadata size per sector (if any). <a class="el" href="nvme_8h.html#a0d24c0b2b0b2a22b0c0af2ca2e157e04" title="Get the sector size, in bytes, of the given namespace. ">spdk_nvme_ns_get_sector_size()</a> still returns only the data size per sector, not including metadata.</p>
 <h2>Build System</h2>
 <p>New <code>configure</code> options, <code>--with-shared</code> and <code>--without-shared</code> [default], provide the capability to build, or not, SPDK shared libraries. This includes the single SPDK shared lib encompassing all of the SPDK static libs as well as individual SPDK shared libs corresponding to each of the SPDK static ones. Although the production of the shared libs conforms with conventional version naming practices, such naming does not at this time confer any SPDK ABI compatibility claims.</p>
+<h2>bdev</h2>
+<p><a class="el" href="bdev__module_8h.html#ae62dae3c4a41154aca74f37864ae82f9" title="Removes all alias from block device alias list. ">spdk_bdev_alias_del_all()</a> was added to delete all alias from block device.</p>
 <h1><a class="anchor" id="changelog-v18-07"></a>
 v18.07:</h1>
 <h2>bdev</h2>
