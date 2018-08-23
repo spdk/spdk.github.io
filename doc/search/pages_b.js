@@ -1,8 +1,6 @@
 var searchData=
 [
-  ['spdk_20directory_20structure',['SPDK Directory Structure',['../directory_structure.html',1,'general']]],
-  ['storage_20performance_20development_20kit',['Storage Performance Development Kit',['../index.html',1,'']]],
-  ['spdk_20porting_20guide',['SPDK Porting Guide',['../porting.html',1,'concepts']]],
-  ['spdk_20cli',['SPDK CLI',['../spdkcli.html',1,'experimental_tools']]],
-  ['ssd_20internals',['SSD Internals',['../ssd_internals.html',1,'concepts']]]
+  ['peer_2d2_2dpeer_20dmas',['Peer-2-Peer DMAs',['../peer_2_peer.html',1,'misc']]],
+  ['performance_20reports',['Performance Reports',['../performance_reports.html',1,'']]],
+  ['programmer_20guides',['Programmer Guides',['../prog_guides.html',1,'']]]
 ];

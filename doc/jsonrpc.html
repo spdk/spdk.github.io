@@ -804,13 +804,13 @@ set_iscsi_options method</h2>
 <tr>
 <td>nop_in_interval </td><td>number </td><td>Time interval in secs between nop-in requests by the target (default: 30) </td></tr>
 <tr>
-<td>no_discovery_auth </td><td>boolean </td><td>CHAP for discovery session should be disabled (default: <code>false</code>) </td></tr>
+<td>disable_chap </td><td>boolean </td><td>CHAP for discovery session should be disabled (default: <code>false</code>) </td></tr>
 <tr>
-<td>req_discovery_auth </td><td>boolean </td><td>CHAP for discovery session should be required (default: <code>false</code>) </td></tr>
+<td>require_chap </td><td>boolean </td><td>CHAP for discovery session should be required (default: <code>false</code>) </td></tr>
 <tr>
-<td>req_discovery_auth_mutual </td><td>boolean </td><td>CHAP for discovery session should be unidirectional (<code>false</code>) or bidirectional (<code>true</code>) (default: <code>false</code>) </td></tr>
+<td>mutual_chap </td><td>boolean </td><td>CHAP for discovery session should be unidirectional (<code>false</code>) or bidirectional (<code>true</code>) (default: <code>false</code>) </td></tr>
 <tr>
-<td>discovery_auth_group </td><td>number </td><td>CHAP group ID for discovery session (default: 0) </td></tr>
+<td>chap_group </td><td>number </td><td>CHAP group ID for discovery session (default: 0) </td></tr>
 <tr>
 <td>max_sessions </td><td>number </td><td>Maximum number of sessions in the host (default: 128) </td></tr>
 <tr>
@@ -830,10 +830,10 @@ set_iscsi_options method</h2>
 <tr>
 <td>min_connections_per_core </td><td>number </td><td>Allocation unit of connections per core (default: 4) </td></tr>
 </table>
-<p>Parameters <code>no_discovery_auth</code> and <code>req_discovery_auth</code> are mutually exclusive.</p>
+<p>Parameters <code>disable_chap</code> and <code>require_chap</code> are mutually exclusive. Parameters <code>no_discovery_auth</code>, <code>req_discovery_auth</code>, <code>req_discovery_auth_mutual</code>, and <code>discovery_auth_group</code> are still available instead of <code>disable_chap</code>, <code>require_chap</code>, <code>mutual_chap</code>, and <code>chap_group</code>, respectivey but will be removed in future releases.</p>
 <h3>Example</h3>
 <p>Example request:</p>
-<div class="fragment"><div class="line">{</div><div class="line">  &quot;params&quot;: {</div><div class="line">    &quot;allow_duplicated_isid&quot;: true,</div><div class="line">    &quot;default_time2retain&quot;: 60,</div><div class="line">    &quot;immediate_data&quot;: true,</div><div class="line">    &quot;node_base&quot;: &quot;iqn.2016-06.io.spdk&quot;,</div><div class="line">    &quot;max_sessions&quot;: 128,</div><div class="line">    &quot;nop_timeout&quot;: 30,</div><div class="line">    &quot;nop_in_interval&quot;: 30,</div><div class="line">    &quot;auth_file&quot;: &quot;/usr/local/etc/spdk/auth.conf&quot;,</div><div class="line">    &quot;no_discovery_auth&quot;: true,</div><div class="line">    &quot;default_time2wait&quot;: 2</div><div class="line">  },</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;method&quot;: &quot;set_iscsi_options&quot;,</div><div class="line">  &quot;id&quot;: 1</div><div class="line">}</div></div><!-- fragment --><p>Example response:</p>
+<div class="fragment"><div class="line">{</div><div class="line">  &quot;params&quot;: {</div><div class="line">    &quot;allow_duplicated_isid&quot;: true,</div><div class="line">    &quot;default_time2retain&quot;: 60,</div><div class="line">    &quot;immediate_data&quot;: true,</div><div class="line">    &quot;node_base&quot;: &quot;iqn.2016-06.io.spdk&quot;,</div><div class="line">    &quot;max_sessions&quot;: 128,</div><div class="line">    &quot;nop_timeout&quot;: 30,</div><div class="line">    &quot;nop_in_interval&quot;: 30,</div><div class="line">    &quot;auth_file&quot;: &quot;/usr/local/etc/spdk/auth.conf&quot;,</div><div class="line">    &quot;disable_chap&quot;: true,</div><div class="line">    &quot;default_time2wait&quot;: 2</div><div class="line">  },</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;method&quot;: &quot;set_iscsi_options&quot;,</div><div class="line">  &quot;id&quot;: 1</div><div class="line">}</div></div><!-- fragment --><p>Example response:</p>
 <div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: true</div><div class="line">}</div></div><!-- fragment --><h2><a class="anchor" id="rpc_get_iscsi_global_params"></a>
 get_iscsi_global_params method</h2>
 <p>Show global parameters of iSCSI targets.</p>
@@ -842,7 +842,27 @@ get_iscsi_global_params method</h2>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">request:</div><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;method&quot;: &quot;get_iscsi_global_params&quot;,</div><div class="line">  &quot;id&quot;: 1</div><div class="line">}</div></div><!-- fragment --><p>Example response:</p>
-<div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: {</div><div class="line">    &quot;allow_duplicated_isid&quot;: true,</div><div class="line">    &quot;default_time2retain&quot;: 60,</div><div class="line">    &quot;immediate_data&quot;: true,</div><div class="line">    &quot;node_base&quot;: &quot;iqn.2016-06.io.spdk&quot;,</div><div class="line">    &quot;req_discovery_auth_mutual&quot;: false,</div><div class="line">    &quot;nop_in_interval&quot;: 30,</div><div class="line">    &quot;discovery_auth_group&quot;: 0,</div><div class="line">    &quot;max_connections_per_session&quot;: 2,</div><div class="line">    &quot;max_queue_depth&quot;: 64,</div><div class="line">    &quot;nop_timeout&quot;: 30,</div><div class="line">    &quot;max_sessions&quot;: 128,</div><div class="line">    &quot;error_recovery_level&quot;: 0,</div><div class="line">    &quot;auth_file&quot;: &quot;/usr/local/etc/spdk/auth.conf&quot;,</div><div class="line">    &quot;min_connections_per_core&quot;: 4,</div><div class="line">    &quot;no_discovery_auth&quot;: true,</div><div class="line">    &quot;default_time2wait&quot;: 2,</div><div class="line">    &quot;req_discovery_auth&quot;: false</div><div class="line">  }</div><div class="line">}</div></div><!-- fragment --><h2><a class="anchor" id="rpc_get_initiator_groups"></a>
+<div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: {</div><div class="line">    &quot;allow_duplicated_isid&quot;: true,</div><div class="line">    &quot;default_time2retain&quot;: 60,</div><div class="line">    &quot;immediate_data&quot;: true,</div><div class="line">    &quot;node_base&quot;: &quot;iqn.2016-06.io.spdk&quot;,</div><div class="line">    &quot;mutual_chap&quot;: false,</div><div class="line">    &quot;nop_in_interval&quot;: 30,</div><div class="line">    &quot;chap_group&quot;: 0,</div><div class="line">    &quot;max_connections_per_session&quot;: 2,</div><div class="line">    &quot;max_queue_depth&quot;: 64,</div><div class="line">    &quot;nop_timeout&quot;: 30,</div><div class="line">    &quot;max_sessions&quot;: 128,</div><div class="line">    &quot;error_recovery_level&quot;: 0,</div><div class="line">    &quot;auth_file&quot;: &quot;/usr/local/etc/spdk/auth.conf&quot;,</div><div class="line">    &quot;min_connections_per_core&quot;: 4,</div><div class="line">    &quot;disable_chap&quot;: true,</div><div class="line">    &quot;default_time2wait&quot;: 2,</div><div class="line">    &quot;require_chap&quot;: false</div><div class="line">  }</div><div class="line">}</div></div><!-- fragment --> <h2><a class="anchor" id="rpc_set_iscsi_discovery_auth"></a>
+set_iscsi_discovery_auth method</h2>
+<p>Set CHAP authentication for sessions dynamically.</p>
+<h3>Parameters</h3>
+<table class="doxtable">
+<tr>
+<th>Name </th><th>Optional </th><th>Type </th><th>Description  </th></tr>
+<tr>
+<td>disable_chap </td><td>Optional </td><td>boolean </td><td>CHAP for discovery session should be disabled (default: <code>false</code>) </td></tr>
+<tr>
+<td>require_chap </td><td>Optional </td><td>boolean </td><td>CHAP for discovery session should be required (default: <code>false</code>) </td></tr>
+<tr>
+<td>mutual_chap </td><td>Optional </td><td>boolean </td><td>CHAP for discovery session should be unidirectional (<code>false</code>) or bidirectional (<code>true</code>) (default: <code>false</code>) </td></tr>
+<tr>
+<td>chap_group </td><td>Optional </td><td>number </td><td>CHAP group ID for discovery session (default: 0) </td></tr>
+</table>
+<p>Parameters <code>disable_chap</code> and <code>require_chap</code> are mutually exclusive.</p>
+<h3>Example</h3>
+<p>Example request:</p>
+<div class="fragment"><div class="line">request:</div><div class="line">{</div><div class="line">  &quot;params&quot;: {</div><div class="line">    &quot;chap_group&quot;: 1,</div><div class="line">    &quot;require_chap&quot;: true,</div><div class="line">    &quot;mutual_chap&quot;: true</div><div class="line">  },</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;method&quot;: &quot;set_iscsi_discovery_auth&quot;,</div><div class="line">  &quot;id&quot;: 1</div><div class="line">}</div></div><!-- fragment --><p>Example response:</p>
+<div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: true</div><div class="line">}</div></div><!-- fragment --><h2><a class="anchor" id="rpc_get_initiator_groups"></a>
 get_initiator_groups method</h2>
 <p>Show information about all available initiator groups.</p>
 <h3>Parameters</h3>
@@ -975,9 +995,32 @@ construct_target_node method</h2>
 <tr>
 <td>data_digest </td><td>Optional </td><td>boolean </td><td>Data Digest should be required for this target node </td></tr>
 </table>
+<p>Parameters <code>disable_chap</code> and <code>require_chap</code> are mutually exclusive.</p>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div><div class="line">  &quot;params&quot;: {</div><div class="line">    &quot;luns&quot;: [</div><div class="line">      {</div><div class="line">        &quot;lun_id&quot;: 0,</div><div class="line">        &quot;bdev_name&quot;: &quot;Nvme0n1&quot;</div><div class="line">      }</div><div class="line">    ],</div><div class="line">    &quot;mutual_chap&quot;: true,</div><div class="line">    &quot;name&quot;: &quot;target2&quot;,</div><div class="line">    &quot;alias_name&quot;: &quot;iscsi-target2-alias&quot;,</div><div class="line">    &quot;pg_ig_maps&quot;: [</div><div class="line">      {</div><div class="line">        &quot;ig_tag&quot;: 1,</div><div class="line">        &quot;pg_tag&quot;: 1</div><div class="line">      },</div><div class="line">      {</div><div class="line">        &quot;ig_tag&quot;: 2,</div><div class="line">        &quot;pg_tag&quot;: 2</div><div class="line">      }</div><div class="line">    ],</div><div class="line">    &quot;data_digest&quot;: true,</div><div class="line">    &quot;disable_chap&quot;: true,</div><div class="line">    &quot;header_digest&quot;: true,</div><div class="line">    &quot;queue_depth&quot;: 24</div><div class="line">  },</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;method&quot;: &quot;construct_target_node&quot;,</div><div class="line">  &quot;id&quot;: 1</div><div class="line">}</div></div><!-- fragment --><p>Example response:</p>
+<div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: true</div><div class="line">}</div></div><!-- fragment --><h2><a class="anchor" id="rpc_set_iscsi_target_node_auth"></a>
+set_iscsi_target_node_auth method</h2>
+<p>Set CHAP authentication to an existing iSCSI target node.</p>
+<h3>Parameters</h3>
+<table class="doxtable">
+<tr>
+<th>Name </th><th>Optional </th><th>Type </th><th>Description  </th></tr>
+<tr>
+<td>name </td><td>Required </td><td>string </td><td>Target node name (ASCII) </td></tr>
+<tr>
+<td>disable_chap </td><td>Optional </td><td>boolean </td><td>CHAP authentication should be disabled for this target </td></tr>
+<tr>
+<td>require_chap </td><td>Optional </td><td>boolean </td><td>CHAP authentication should be required for this target </td></tr>
+<tr>
+<td>mutual_chap </td><td>Optional </td><td>boolean </td><td>CHAP authentication should be bidirectional (<code>true</code>) or unidirectional (<code>false</code>) </td></tr>
+<tr>
+<td>chap_group </td><td>Optional </td><td>number </td><td>Authentication group ID for this target node </td></tr>
+</table>
+<p>Parameters <code>disable_chap</code> and <code>require_chap</code> are mutually exclusive.</p>
+<h3>Example</h3>
+<p>Example request:</p>
+<div class="fragment"><div class="line">{</div><div class="line">  &quot;params&quot;: {</div><div class="line">    &quot;chap_group&quot;: 1,</div><div class="line">    &quot;require_chap&quot;: true,</div><div class="line">    &quot;name&quot;: &quot;iqn.2016-06.io.spdk:target1&quot;,</div><div class="line">    &quot;mutual_chap&quot;: true</div><div class="line">  },</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;method&quot;: &quot;set_iscsi_target_node_auth&quot;,</div><div class="line">  &quot;id&quot;: 1</div><div class="line">}</div></div><!-- fragment --><p>Example response:</p>
 <div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: true</div><div class="line">}</div></div><!-- fragment --><h2><a class="anchor" id="rpc_add_pg_ig_maps"></a>
 add_pg_ig_maps method</h2>
 <p>Add initiator group to portal group mappings to an existing iSCSI target node.</p>

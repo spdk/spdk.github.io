@@ -157,8 +157,28 @@ Command Line Parameters</h2>
 <th>Param </th><th>Long Param </th><th>Type </th><th>Default </th><th>Description  </th></tr>
 <tr>
 <td>-c </td><td>&ndash;config </td><td>string </td><td></td><td><a class="el" href="app_overview.html#cmd_arg_config_file">Configuration file</a> </td></tr>
+<tr>
+<td>-d </td><td>&ndash;limit-coredump </td><td>flag </td><td></td><td>. </td></tr>
+<tr>
+<td>-e </td><td>&ndash;tpoint-group-mask </td><td>integer </td><td>0x0 </td><td>. </td></tr>
+<tr>
+<td>-g </td><td>&ndash;single-file-segments </td><td>flag </td><td></td><td><a class="el" href="app_overview.html#cmd_arg_single_file_segments">Create just one hugetlbfs file</a> </td></tr>
+<tr>
+<td>-h </td><td>&ndash;help </td><td>flag </td><td></td><td>show all available parameters and exit </td></tr>
+<tr>
+<td>-i </td><td>&ndash;shm-id </td><td>integer </td><td></td><td><a class="el" href="app_overview.html#cmd_arg_multi_process">Multi process mode</a> </td></tr>
+<tr>
+<td>-m </td><td>&ndash;cpumask </td><td>CPU mask </td><td>0x1 </td><td>application <a class="el" href="app_overview.html#cpu_mask">CPU mask</a> </td></tr>
+<tr>
+<td>-n </td><td>&ndash;mem-channels </td><td>integer </td><td>all channels </td><td>number of memory channels used for DPDK </td></tr>
+<tr>
+<td>-p </td><td>&ndash;master-core </td><td>integer </td><td>first core in CPU mask </td><td>master (primary) core for DPDK </td></tr>
+<tr>
+<td>-r </td><td>&ndash;rpc-socket </td><td>string </td><td>/var/tmp/spdk.sock </td><td>RPC listen address </td></tr>
+<tr>
+<td>-s </td><td>&ndash;mem-size </td><td>integer </td><td>all hugepage memory </td><td><a class="el" href="app_overview.html#cmd_arg_memory_size">Memory size</a> </td></tr>
 </table>
-<p>-d | &ndash;limit-coredump | flag | | -e | &ndash;tpoint-group-mask | integer | 0x0 | -g | &ndash;single-file-segments | flag | | <a class="el" href="app_overview.html#cmd_arg_single_file_segments">Create just one hugetlbfs file</a> -h | &ndash;help | flag | | show all available parameters and exit -i | &ndash;shm-id | integer | | <a class="el" href="app_overview.html#cmd_arg_multi_process">Multi process mode</a> -m | &ndash;cpumask | CPU mask | 0x1 | application <a class="el" href="app_overview.html#cpu_mask">CPU mask</a> -n | &ndash;mem-channels | integer | all channels | number of memory channels used for DPDK -p | &ndash;master-core | integer | first core in CPU mask | master (primary) core for DPDK -r | &ndash;rpc-socket | string | /var/tmp/spdk.sock | RPC listen address -s | &ndash;mem-size | integer | all hugepage memory | <a class="el" href="app_overview.html#cmd_arg_memory_size">Memory size</a> | &ndash;silence-noticelog | flag | | disable notice level logging to <code>stderr</code> -u | &ndash;no-pci | flag | | <a class="el" href="app_overview.html#cmd_arg_disable_pci_access">Disable PCI access</a>. | &ndash;wait-for-rpc | flag | | <a class="el" href="app_overview.html#cmd_arg_deferred_initialization">Deferred initialization</a> -B | &ndash;pci-blacklist | B:D:F | | <a class="el" href="app_overview.html#cmd_arg_pci_blacklist_whitelist">PCI address blacklist and whitelist</a>. -W | &ndash;pci-whitelist | B:D:F | | <a class="el" href="app_overview.html#cmd_arg_pci_blacklist_whitelist">PCI address blacklist and whitelist</a>. -R | &ndash;huge-unlink | flag | | <a class="el" href="app_overview.html#cmd_arg_huge_unlink">Unlink hugepage files after initialization</a> -L | &ndash;traceflag | string | | <a class="el" href="app_overview.html#cmd_arg_debug_log_flags">Debug log</a></p>
+<p>| &ndash;silence-noticelog | flag | | disable notice level logging to <code>stderr</code> -u | &ndash;no-pci | flag | | <a class="el" href="app_overview.html#cmd_arg_disable_pci_access">Disable PCI access</a>. | &ndash;wait-for-rpc | flag | | <a class="el" href="app_overview.html#cmd_arg_deferred_initialization">Deferred initialization</a> -B | &ndash;pci-blacklist | B:D:F | | <a class="el" href="app_overview.html#cmd_arg_pci_blacklist_whitelist">PCI address blacklist and whitelist</a>. -W | &ndash;pci-whitelist | B:D:F | | <a class="el" href="app_overview.html#cmd_arg_pci_blacklist_whitelist">PCI address blacklist and whitelist</a>. -R | &ndash;huge-unlink | flag | | <a class="el" href="app_overview.html#cmd_arg_huge_unlink">Unlink hugepage files after initialization</a> -L | &ndash;traceflag | string | | <a class="el" href="app_overview.html#cmd_arg_debug_log_flags">Debug log</a></p>
 <h3><a class="anchor" id="cmd_arg_config_file"></a>
 Configuration file</h3>
 <p>Historically, the SPDK applications were configured using a configuration file. This is still supported, but is considered deprecated in favor of JSON RPC configuration. See <a class="el" href="jsonrpc.html">JSON-RPC Methods</a> for details.</p>

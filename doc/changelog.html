@@ -146,6 +146,9 @@ v18.10: (Upcoming Release)</h1>
 <p>New <code>configure</code> options, <code>--with-shared</code> and <code>--without-shared</code> [default], provide the capability to build, or not, SPDK shared libraries. This includes the single SPDK shared lib encompassing all of the SPDK static libs as well as individual SPDK shared libs corresponding to each of the SPDK static ones. Although the production of the shared libs conforms with conventional version naming practices, such naming does not at this time confer any SPDK ABI compatibility claims.</p>
 <h2>bdev</h2>
 <p><a class="el" href="bdev__module_8h.html#ae62dae3c4a41154aca74f37864ae82f9" title="Removes all alias from block device alias list. ">spdk_bdev_alias_del_all()</a> was added to delete all alias from block device.</p>
+<h2>iscsi</h2>
+<p>Parameter names of <code>set_iscsi_options</code> and <code>get_iscsi_global_params</code> RPC method for CHAP authentication in discovery sessions have been changed to align with <code>construct_target_node</code> RPC method. Old names are still usable but will be removed in future release.</p>
+<p><code>set_iscsi_discovery_auth</code> and <code>set_iscsi_target_node_auth</code> RPC methods have been added to set CHAP authentication for discovery sessions and existing target nodes, respectively.</p>
 <h1><a class="anchor" id="changelog-v18-07"></a>
 v18.07:</h1>
 <h2>bdev</h2>

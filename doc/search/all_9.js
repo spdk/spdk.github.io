@@ -13,7 +13,7 @@ var searchData=
   ['io_5fsubmit_5fch',['io_submit_ch',['../structspdk__bdev__io_1_1____bdev__io__internal__fields.html#a538e1a5baf1242b0b41489e4f0f411f9',1,'spdk_bdev_io::__bdev_io_internal_fields']]],
   ['io_5ftime',['io_time',['../structspdk__bdev_1_1____bdev__internal__fields.html#a55d6103a185f6c50c9b5d58976d08508',1,'spdk_bdev::__bdev_internal_fields']]],
   ['io_5ftype_5fsupported',['io_type_supported',['../structspdk__bdev__fn__table.html#a20ec74cad9e56c5ac8ee9db239d8f46e',1,'spdk_bdev_fn_table']]],
-  ['i_2foat_20driver',['I/OAT Driver',['../ioat.html',1,'modules']]],
+  ['i_2foat_20driver',['I/OAT Driver',['../ioat.html',1,'driver_modules']]],
   ['ioat_2eh',['ioat.h',['../ioat_8h.html',1,'']]],
   ['ioat_5fspec_2eh',['ioat_spec.h',['../ioat__spec_8h.html',1,'']]],
   ['ioccsz',['ioccsz',['../structspdk__nvme__ctrlr__data.html#ac6c0c28dbff6a34416a723cd77c4064a',1,'spdk_nvme_ctrlr_data']]],

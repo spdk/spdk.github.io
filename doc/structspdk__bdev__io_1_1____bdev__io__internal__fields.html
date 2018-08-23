@@ -173,6 +173,9 @@ Data Fields</h2></td></tr>
 <tr class="memitem:a538e1a5baf1242b0b41489e4f0f411f9"><td class="memItemLeft" align="right" valign="top">struct spdk_bdev_channel *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev__io_1_1____bdev__io__internal__fields.html#a538e1a5baf1242b0b41489e4f0f411f9">io_submit_ch</a></td></tr>
 <tr class="memdesc:a538e1a5baf1242b0b41489e4f0f411f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">The bdev I/O channel that this was submitted on.  <a href="#a538e1a5baf1242b0b41489e4f0f411f9">More...</a><br /></td></tr>
 <tr class="separator:a538e1a5baf1242b0b41489e4f0f411f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ec31d2c37d402f888525346bb2ad907"><td class="memItemLeft" align="right" valign="top">struct spdk_bdev_desc *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev__io_1_1____bdev__io__internal__fields.html#a9ec31d2c37d402f888525346bb2ad907">desc</a></td></tr>
+<tr class="memdesc:a9ec31d2c37d402f888525346bb2ad907"><td class="mdescLeft">&#160;</td><td class="mdescRight">The bdev descriptor that was used when submitting this I/O.  <a href="#a9ec31d2c37d402f888525346bb2ad907">More...</a><br /></td></tr>
+<tr class="separator:a9ec31d2c37d402f888525346bb2ad907"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acc3511a74f557ca1ac31aa517ad719a9"><td class="memItemLeft" align="right" valign="top"><a id="acc3511a74f557ca1ac31aa517ad719a9"></a>
 <a class="el" href="bdev_8h.html#a0c5602dfd313f90032dd91683b9663e3">spdk_bdev_io_completion_cb</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev__io_1_1____bdev__io__internal__fields.html#acc3511a74f557ca1ac31aa517ad719a9">cb</a></td></tr>
 <tr class="memdesc:acc3511a74f557ca1ac31aa517ad719a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">User function that will be called when this completes. <br /></td></tr>
@@ -301,6 +304,22 @@ spdk_bdev_io_get_buf_cb&#160;</td><td class="memItemRight" valign="bottom"><a cl
 </div><div class="memdoc">
 
 <p>The bdev I/O channel that this was handled on. </p>
+
+</div>
+</div>
+<a id="a9ec31d2c37d402f888525346bb2ad907"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ec31d2c37d402f888525346bb2ad907">&#9670;&nbsp;</a></span>desc</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct spdk_bdev_desc* spdk_bdev_io::__bdev_io_internal_fields::desc</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The bdev descriptor that was used when submitting this I/O. </p>
 
 </div>
 </div>

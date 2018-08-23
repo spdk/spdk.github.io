@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['logical_20volumes',['Logical Volumes',['../logical_volumes.html',1,'general']]]
+  ['json_2drpc_20methods',['JSON-RPC Methods',['../jsonrpc.html',1,'user_guides']]]
 ];
