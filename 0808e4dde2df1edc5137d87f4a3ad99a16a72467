@@ -1,0 +1,119 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "797f7c77_6acae6ca",
+        "filename": "_includes/cilinks.html",
+        "patchSetId": 3
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 1011207
+      },
+      "writtenOn": "2018-08-23T13:53:53Z",
+      "side": 1,
+      "message": "Looks like I did not describe it clearly.\n\n\"SPDK集成测试状态\"",
+      "range": {
+        "startLine": 6,
+        "startChar": 54,
+        "endLine": 6,
+        "endChar": 58
+      },
+      "revId": "0808e4dde2df1edc5137d87f4a3ad99a16a72467",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "bf3bdb0a_ca4c6d3a",
+        "filename": "_includes/cilinks.html",
+        "patchSetId": 3
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1011207
+      },
+      "writtenOn": "2018-08-23T13:53:53Z",
+      "side": 1,
+      "message": "SPDK网站测试状态",
+      "range": {
+        "startLine": 7,
+        "startChar": 64,
+        "endLine": 7,
+        "endChar": 68
+      },
+      "revId": "0808e4dde2df1edc5137d87f4a3ad99a16a72467",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "c792dbca_fa81cc84",
+        "filename": "cn/community.md",
+        "patchSetId": 3
+      },
+      "lineNbr": 36,
+      "author": {
+        "id": 1011207
+      },
+      "writtenOn": "2018-08-23T13:53:53Z",
+      "side": 1,
+      "message": "这个貌似没有修改成Anna建议的",
+      "range": {
+        "startLine": 36,
+        "startChar": 40,
+        "endLine": 36,
+        "endChar": 51
+      },
+      "revId": "0808e4dde2df1edc5137d87f4a3ad99a16a72467",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "644075ec_50ae6772",
+        "filename": "cn/doc.md",
+        "patchSetId": 3
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1011207
+      },
+      "writtenOn": "2018-08-23T13:53:53Z",
+      "side": 1,
+      "message": "这个空格去掉。",
+      "range": {
+        "startLine": 7,
+        "startChar": 32,
+        "endLine": 7,
+        "endChar": 33
+      },
+      "revId": "0808e4dde2df1edc5137d87f4a3ad99a16a72467",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "a0ba65cd_228613dc",
+        "filename": "cn/releases.md",
+        "patchSetId": 3
+      },
+      "lineNbr": 25,
+      "author": {
+        "id": 1011207
+      },
+      "writtenOn": "2018-08-23T13:53:53Z",
+      "side": 1,
+      "message": "这里有什么改动吗？为啥是不同颜色的？麻烦确认下。谢谢",
+      "range": {
+        "startLine": 25,
+        "startChar": 52,
+        "endLine": 25,
+        "endChar": 52
+      },
+      "revId": "0808e4dde2df1edc5137d87f4a3ad99a16a72467",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
