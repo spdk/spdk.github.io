@@ -147,15 +147,12 @@ Collaboration diagram for spdk_bdev_io:</div>
 <div class="dyncontent">
 <div class="center"><img src="structspdk__bdev__io__coll__graph.png" border="0" usemap="#spdk__bdev__io_coll__map" alt="Collaboration graph"/></div>
 <map name="spdk__bdev__io_coll__map" id="spdk__bdev__io_coll__map">
-<area shape="rect" id="node5" href="structspdk__bdev__io_1_1____bdev__io__internal__fields.html" title="Fields that are used internally by the bdev subsystem. " alt="" coords="929,82,1095,123"/>
-<area shape="rect" id="node9" href="structspdk__bdev_1_1____bdev__internal__fields.html" title="Fields that are used internally by the bdev subsystem. " alt="" coords="911,157,1113,198"/>
-<area shape="rect" id="node2" href="structspdk__nvme__cmd.html" title="spdk_nvme_cmd" alt="" coords="280,155,412,181"/>
-<area shape="rect" id="node3" href="structspdk__nvme__sgl__descriptor.html" title="spdk_nvme_sgl_descriptor" alt="" coords="5,155,200,181"/>
-<area shape="rect" id="node4" href="structspdk__io__channel.html" title="Represents a per&#45;thread channel for accessing an I/O device. " alt="" coords="281,55,411,81"/>
-<area shape="rect" id="node10" href="structspdk__bdev__fn__table.html" title="Function table for a block device backend. " alt="" coords="735,7,887,33"/>
-<area shape="rect" id="node6" href="structspdk__bdev.html" title="spdk_bdev" alt="" coords="1216,224,1308,251"/>
-<area shape="rect" id="node7" href="structspdk__bdev__module.html" title="Block device module. " alt="" coords="563,280,711,307"/>
-<area shape="rect" id="node8" href="structspdk__uuid.html" title="spdk_uuid" alt="" coords="968,364,1056,391"/>
+<area shape="rect" id="node5" href="structspdk__bdev__io_1_1____bdev__io__internal__fields.html" title="Fields that are used internally by the bdev subsystem. " alt="" coords="144,273,309,315"/>
+<area shape="rect" id="node2" href="structspdk__nvme__cmd.html" title="spdk_nvme_cmd" alt="" coords="161,95,293,121"/>
+<area shape="rect" id="node3" href="structspdk__nvme__sgl__descriptor.html" title="spdk_nvme_sgl_descriptor" alt="" coords="129,5,324,32"/>
+<area shape="rect" id="node4" href="structspdk__io__channel.html" title="Represents a per&#45;thread channel for accessing an I/O device. " alt="" coords="5,95,136,121"/>
+<area shape="rect" id="node6" href="structspdk__bdev__io__wait__entry.html" title="Structure to register a callback when an spdk_bdev_io becomes available. " alt="" coords="433,184,620,211"/>
+<area shape="rect" id="node7" href="structspdk__bdev.html" title="spdk_bdev" alt="" coords="398,95,490,121"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -182,6 +179,9 @@ Data Fields</h2></td></tr>
 <tr class="memitem:a0429238075907c6f637249dda31f3235"><td class="memItemLeft" align="right" valign="top">struct iovec&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev__io.html#a0429238075907c6f637249dda31f3235">iov</a></td></tr>
 <tr class="memdesc:a0429238075907c6f637249dda31f3235"><td class="mdescLeft">&#160;</td><td class="mdescRight">A single iovec element for use by this bdev_io.  <a href="#a0429238075907c6f637249dda31f3235">More...</a><br /></td></tr>
 <tr class="separator:a0429238075907c6f637249dda31f3235"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ca4051718acb2e55adcca49ea829420"><td class="memItemLeft" align="right" valign="top">struct iovec&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev__io.html#a5ca4051718acb2e55adcca49ea829420">child_iov</a> [BDEV_IO_NUM_CHILD_IOV]</td></tr>
+<tr class="memdesc:a5ca4051718acb2e55adcca49ea829420"><td class="mdescLeft">&#160;</td><td class="mdescRight">Array of iovecs used for I/O splitting.  <a href="#a5ca4051718acb2e55adcca49ea829420">More...</a><br /></td></tr>
+<tr class="separator:a5ca4051718acb2e55adcca49ea829420"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a529af99d06d12cec343f6aeb03beced2"><td class="memItemLeft" ><a id="a529af99d06d12cec343f6aeb03beced2"></a>
 union {</td></tr>
 <tr class="memitem:a6e4a64cc4d862cf115451766c8e4f890"><td class="memItemLeft" >
@@ -299,6 +299,22 @@ uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="s
 </div><div class="memdoc">
 
 <p>Channel reference held while messages for this reset are in progress. </p>
+
+</div>
+</div>
+<a id="a5ca4051718acb2e55adcca49ea829420"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ca4051718acb2e55adcca49ea829420">&#9670;&nbsp;</a></span>child_iov</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct iovec spdk_bdev_io::child_iov[BDEV_IO_NUM_CHILD_IOV]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Array of iovecs used for I/O splitting. </p>
 
 </div>
 </div>

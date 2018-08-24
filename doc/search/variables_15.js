@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['waitq_5fentry',['waitq_entry',['../structspdk__bdev__io_1_1____bdev__io__internal__fields.html#ab4db59743b548a313586a12a3a72efeb',1,'spdk_bdev_io::__bdev_io_internal_fields']]],
   ['wce',['wce',['../unionspdk__nvme__feat__volatile__write__cache.html#a910973ce5eb628dd9b06ab0c72a1cd33',1,'spdk_nvme_feat_volatile_write_cache']]],
   ['wctemp',['wctemp',['../structspdk__nvme__ctrlr__data.html#a1bbdf8a81a2e7ad4c1969a24573a6649',1,'spdk_nvme_ctrlr_data']]],
   ['wds',['wds',['../unionspdk__nvme__cmbsz__register.html#ad934781cb8247d65136131504d5cd05d',1,'spdk_nvme_cmbsz_register']]],

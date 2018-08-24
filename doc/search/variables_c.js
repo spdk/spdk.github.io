@@ -10,7 +10,7 @@ var searchData=
   ['ncap',['ncap',['../structspdk__nvme__ns__data.html#a641a3b350f2320c9065fed1b4b969636',1,'spdk_nvme_ns_data']]],
   ['ncc',['ncc',['../structspdk__nvme__cmds__and__effect__entry.html#a01772a2197820bdbf56f3d79fd2c83ea',1,'spdk_nvme_cmds_and_effect_entry']]],
   ['ncqr',['ncqr',['../unionspdk__nvme__feat__number__of__queues.html#a48012c7a713f82d0e9b375cf363d4af2',1,'spdk_nvme_feat_number_of_queues']]],
-  ['need_5faligned_5fbuffer',['need_aligned_buffer',['../structspdk__bdev.html#ad3b7d56e8ac4e45a1eb772df28ac25b4',1,'spdk_bdev']]],
+  ['need_5faligned_5fbuffer',['need_aligned_buffer',['../structspdk__bdev.html#aefca37414047c251d38d08a6c2bb9ac8',1,'spdk_bdev']]],
   ['next_5fentry',['next_entry',['../structspdk__trace__history.html#a19c2844fdf265b00faf766372de1d577',1,'spdk_trace_history']]],
   ['next_5freset_5fslot',['next_reset_slot',['../structspdk__nvme__firmware__page.html#acc627dc50a9f88fa3c4697ff8ac99c81',1,'spdk_nvme_firmware_page']]],
   ['nguid',['nguid',['../structspdk__nvme__ns__data.html#a3f0a3e19a15e892d1e842e1c83028bf0',1,'spdk_nvme_ns_data::nguid()'],['../structspdk__nvmf__ns__opts.html#ae51dcdf9a8a00cbc3e9ede5725cf0a0a',1,'spdk_nvmf_ns_opts::nguid()']]],

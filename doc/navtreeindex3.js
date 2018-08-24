@@ -1,5 +1,6 @@
 var NAVTREEINDEX3 =
 {
+"iscsi.html#vpp_built_into_spdk":[3,1,1,3],
 "iscsi.html#vpp_install":[3,1,1,1],
 "iscsi.html#vpp_run":[3,1,1,2],
 "iscsi.html#vpp_running_with_spdk":[3,1,1,4],
@@ -248,6 +249,5 @@ var NAVTREEINDEX3 =
 "jsonrpc.html#rpc_delete_pg_ig_maps":[3,6,3,11],
 "jsonrpc.html#rpc_delete_pmem_bdev":[3,6,2,25],
 "jsonrpc.html#rpc_delete_pmem_pool":[3,6,2,23],
-"jsonrpc.html#rpc_delete_portal_group":[3,6,3,15],
-"jsonrpc.html#rpc_delete_rbd_bdev":[3,6,2,16]
+"jsonrpc.html#rpc_delete_portal_group":[3,6,3,15]
 };

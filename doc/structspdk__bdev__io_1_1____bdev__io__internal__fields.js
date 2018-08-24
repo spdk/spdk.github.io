@@ -20,5 +20,6 @@ var structspdk__bdev__io_1_1____bdev__io__internal__fields =
     [ "sct", "structspdk__bdev__io_1_1____bdev__io__internal__fields.html#af1b7041012f256d8bb1f00bb760a1075", null ],
     [ "sk", "structspdk__bdev__io_1_1____bdev__io__internal__fields.html#a0e9a61cf97047f797df0cb996513b418", null ],
     [ "status", "structspdk__bdev__io_1_1____bdev__io__internal__fields.html#ad9bec0eeba2c9ca9cb7cf62e8c516e5a", null ],
-    [ "submit_tsc", "structspdk__bdev__io_1_1____bdev__io__internal__fields.html#a3e0b8fe4a5a6b8636d6aeb61348f9c4a", null ]
+    [ "submit_tsc", "structspdk__bdev__io_1_1____bdev__io__internal__fields.html#a3e0b8fe4a5a6b8636d6aeb61348f9c4a", null ],
+    [ "waitq_entry", "structspdk__bdev__io_1_1____bdev__io__internal__fields.html#ab4db59743b548a313586a12a3a72efeb", null ]
 ];

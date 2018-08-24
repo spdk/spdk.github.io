@@ -1,5 +1,9 @@
 var NAVTREEINDEX15 =
 {
+"structspdk__nvmf__fabric__connect__cmd.html#a5d7884802bf914c392e9cfea98d77a5a":[12,0,139,3],
+"structspdk__nvmf__fabric__connect__cmd.html#a5dff96d65df3fb2d0f845d940c25d335":[12,0,139,10],
+"structspdk__nvmf__fabric__connect__cmd.html#a658230ebdae66b7140e25723069040e1":[12,0,139,1],
+"structspdk__nvmf__fabric__connect__cmd.html#a6bae3d02c2ea2b66bb2fb59d318bb95f":[12,0,139,2],
 "structspdk__nvmf__fabric__connect__cmd.html#a85f2665a879ac23df282f641341f01c0":[12,0,139,4],
 "structspdk__nvmf__fabric__connect__cmd.html#a8e5688469a4f7cfa586cd872b414fa73":[12,0,139,8],
 "structspdk__nvmf__fabric__connect__cmd.html#aad283d59cae07b39d5471e5f0ed895c7":[12,0,139,5],
@@ -245,9 +249,5 @@ var NAVTREEINDEX15 =
 "structspdk__ocssd__dev__lba__fmt.html#a8b5ed3a8b5a46f41a1f6e6d389b8bbce":[12,0,174,1],
 "structspdk__ocssd__dev__lba__fmt.html#a8e9b63b4cacbc9ade730ab60fe74b58a":[12,0,174,4],
 "structspdk__ocssd__dev__lba__fmt.html#ae20247c5bd5f2576b67957980bf58333":[12,0,174,3],
-"structspdk__ocssd__geometry__data.html":[12,0,175],
-"structspdk__ocssd__geometry__data.html#a0f15dc726bcf4cac33752f0fab8a4e36":[12,0,175,29],
-"structspdk__ocssd__geometry__data.html#a1e42dcab27a59b02df913acc08e129b4":[12,0,175,5],
-"structspdk__ocssd__geometry__data.html#a21184c8bd337762734f94dfe74025971":[12,0,175,11],
-"structspdk__ocssd__geometry__data.html#a277515978925f74508441bce44027a4c":[12,0,175,0]
+"structspdk__ocssd__geometry__data.html":[12,0,175]
 };

@@ -194,9 +194,12 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev.html#aef65d7444968b8981d46d0c520fd5287">blockcnt</a></td></tr>
 <tr class="memdesc:aef65d7444968b8981d46d0c520fd5287"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of blocks. <br /></td></tr>
 <tr class="separator:aef65d7444968b8981d46d0c520fd5287"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad3b7d56e8ac4e45a1eb772df28ac25b4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev.html#ad3b7d56e8ac4e45a1eb772df28ac25b4">need_aligned_buffer</a></td></tr>
-<tr class="memdesc:ad3b7d56e8ac4e45a1eb772df28ac25b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is used to make sure buffers are sector aligned.  <a href="#ad3b7d56e8ac4e45a1eb772df28ac25b4">More...</a><br /></td></tr>
-<tr class="separator:ad3b7d56e8ac4e45a1eb772df28ac25b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aefca37414047c251d38d08a6c2bb9ac8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev.html#aefca37414047c251d38d08a6c2bb9ac8">need_aligned_buffer</a></td></tr>
+<tr class="memdesc:aefca37414047c251d38d08a6c2bb9ac8"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is used to make sure buffers are sector aligned.  <a href="#aefca37414047c251d38d08a6c2bb9ac8">More...</a><br /></td></tr>
+<tr class="separator:aefca37414047c251d38d08a6c2bb9ac8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85a794d02620e3e8730bb11791c0c592"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev.html#a85a794d02620e3e8730bb11791c0c592">split_on_optimal_io_boundary</a></td></tr>
+<tr class="memdesc:a85a794d02620e3e8730bb11791c0c592"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specifies whether the optimal_io_boundary is mandatory or only advisory.  <a href="#a85a794d02620e3e8730bb11791c0c592">More...</a><br /></td></tr>
+<tr class="separator:a85a794d02620e3e8730bb11791c0c592"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af2dcdd94b1bbfd2709c6040f861819fb"><td class="memItemLeft" align="right" valign="top"><a id="af2dcdd94b1bbfd2709c6040f861819fb"></a>
 uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev.html#af2dcdd94b1bbfd2709c6040f861819fb">optimal_io_boundary</a></td></tr>
 <tr class="memdesc:af2dcdd94b1bbfd2709c6040f861819fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Optimal I/O boundary in blocks, or 0 for no value reported. <br /></td></tr>
@@ -264,14 +267,14 @@ struct <a class="el" href="structspdk__bdev_1_1____bdev__internal__fields.html">
 
 </div>
 </div>
-<a id="ad3b7d56e8ac4e45a1eb772df28ac25b4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad3b7d56e8ac4e45a1eb772df28ac25b4">&#9670;&nbsp;</a></span>need_aligned_buffer</h2>
+<a id="aefca37414047c251d38d08a6c2bb9ac8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aefca37414047c251d38d08a6c2bb9ac8">&#9670;&nbsp;</a></span>need_aligned_buffer</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int spdk_bdev::need_aligned_buffer</td>
+          <td class="memname">bool spdk_bdev::need_aligned_buffer</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -294,6 +297,23 @@ struct <a class="el" href="structspdk__bdev_1_1____bdev__internal__fields.html">
 </div><div class="memdoc">
 
 <p>Unique product name for this kind of block device. </p>
+
+</div>
+</div>
+<a id="a85a794d02620e3e8730bb11791c0c592"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a85a794d02620e3e8730bb11791c0c592">&#9670;&nbsp;</a></span>split_on_optimal_io_boundary</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool spdk_bdev::split_on_optimal_io_boundary</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Specifies whether the optimal_io_boundary is mandatory or only advisory. </p>
+<p>If set to true, the bdev layer will split I/O that span the optimal_io_boundary before submitting them to the bdev module. </p>
 
 </div>
 </div>

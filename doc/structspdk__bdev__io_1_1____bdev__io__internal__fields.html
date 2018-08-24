@@ -149,10 +149,10 @@ Collaboration diagram for spdk_bdev_io::__bdev_io_internal_fields:</div>
 <div class="dyncontent">
 <div class="center"><img src="structspdk__bdev__io_1_1____bdev__io__internal__fields__coll__graph.png" border="0" usemap="#spdk__bdev__io_1_1____bdev__io__internal__fields_coll__map" alt="Collaboration graph"/></div>
 <map name="spdk__bdev__io_1_1____bdev__io__internal__fields_coll__map" id="spdk__bdev__io_1_1____bdev__io__internal__fields_coll__map">
-<area shape="rect" id="node3" href="structspdk__bdev__io.html" title="spdk_bdev_io" alt="" coords="163,199,274,225"/>
-<area shape="rect" id="node2" href="structspdk__io__channel.html" title="Represents a per&#45;thread channel for accessing an I/O device. " alt="" coords="88,5,219,32"/>
-<area shape="rect" id="node4" href="structspdk__nvme__cmd.html" title="spdk_nvme_cmd" alt="" coords="289,102,421,129"/>
-<area shape="rect" id="node5" href="structspdk__bdev.html" title="spdk_bdev" alt="" coords="445,102,537,129"/>
+<area shape="rect" id="node5" href="structspdk__bdev__io.html" title="spdk_bdev_io" alt="" coords="175,288,286,315"/>
+<area shape="rect" id="node2" href="structspdk__io__channel.html" title="Represents a per&#45;thread channel for accessing an I/O device. " alt="" coords="5,95,136,121"/>
+<area shape="rect" id="node3" href="structspdk__bdev__io__wait__entry.html" title="Structure to register a callback when an spdk_bdev_io becomes available. " alt="" coords="160,95,347,121"/>
+<area shape="rect" id="node4" href="structspdk__bdev.html" title="spdk_bdev" alt="" coords="273,5,365,32"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -245,6 +245,9 @@ uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 spdk_bdev_io_get_buf_cb&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev__io_1_1____bdev__io__internal__fields.html#a320a717c3bfbfae0a88e37806a4b11cb">get_buf_cb</a></td></tr>
 <tr class="memdesc:a320a717c3bfbfae0a88e37806a4b11cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback for when buf is allocated. <br /></td></tr>
 <tr class="separator:a320a717c3bfbfae0a88e37806a4b11cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4db59743b548a313586a12a3a72efeb"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structspdk__bdev__io__wait__entry.html">spdk_bdev_io_wait_entry</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev__io_1_1____bdev__io__internal__fields.html#ab4db59743b548a313586a12a3a72efeb">waitq_entry</a></td></tr>
+<tr class="memdesc:ab4db59743b548a313586a12a3a72efeb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enables queuing parent I/O when no bdev_ios available for split children.  <a href="#ab4db59743b548a313586a12a3a72efeb">More...</a><br /></td></tr>
+<tr class="separator:ab4db59743b548a313586a12a3a72efeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Fields that are used internally by the bdev subsystem. </p>
@@ -387,6 +390,22 @@ spdk_bdev_io_get_buf_cb&#160;</td><td class="memItemRight" valign="bottom"><a cl
 
 <p>Current tsc at submit time. </p>
 <p>Used to calculate latency at completion. </p>
+
+</div>
+</div>
+<a id="ab4db59743b548a313586a12a3a72efeb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab4db59743b548a313586a12a3a72efeb">&#9670;&nbsp;</a></span>waitq_entry</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="structspdk__bdev__io__wait__entry.html">spdk_bdev_io_wait_entry</a> spdk_bdev_io::__bdev_io_internal_fields::waitq_entry</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Enables queuing parent I/O when no bdev_ios available for split children. </p>
 
 </div>
 </div>

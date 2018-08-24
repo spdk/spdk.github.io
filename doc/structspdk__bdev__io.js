@@ -6,6 +6,7 @@ var structspdk__bdev__io =
     [ "bdev", "structspdk__bdev__io.html#aef2930470cfbaffe5e5f74b2a7c9da9e", null ],
     [ "buf", "structspdk__bdev__io.html#ad54769b6194caf65b0dd626c399bd41d", null ],
     [ "ch_ref", "structspdk__bdev__io.html#ae513a78b2095fbd1d0674fa11d26ef2b", null ],
+    [ "child_iov", "structspdk__bdev__io.html#a5ca4051718acb2e55adcca49ea829420", null ],
     [ "cmd", "structspdk__bdev__io.html#aea98eb4a235dc71bc9bf4040c53a5977", null ],
     [ "driver_ctx", "structspdk__bdev__io.html#ab1b334589d89261c8e0242fee614caa7", null ],
     [ "internal", "structspdk__bdev__io.html#a7cad710441c3ea7b10d62a464b9db854", null ],
