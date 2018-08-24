@@ -114,6 +114,30 @@
       "revId": "0808e4dde2df1edc5137d87f4a3ad99a16a72467",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "d7d02522_db06ebd1",
+        "filename": "cn/releases.md",
+        "patchSetId": 3
+      },
+      "lineNbr": 25,
+      "author": {
+        "id": 1014486
+      },
+      "writtenOn": "2018-08-24T02:20:40Z",
+      "side": 1,
+      "message": "这个只是项目符号列表，会显示成这个颜色以示区分。可以在这里看到集成化测试的结果：https://ci.spdk.io/spdk.github.io/builds/review/0808e4dde2df1edc5137d87f4a3ad99a16a72467.1535008768/spdk.intel.com/_site/releases/\n显示出来是正常颜色的。",
+      "parentUuid": "a0ba65cd_228613dc",
+      "range": {
+        "startLine": 25,
+        "startChar": 52,
+        "endLine": 25,
+        "endChar": 52
+      },
+      "revId": "0808e4dde2df1edc5137d87f4a3ad99a16a72467",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
     }
   ]
 }
