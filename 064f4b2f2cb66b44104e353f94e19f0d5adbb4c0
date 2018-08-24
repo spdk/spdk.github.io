@@ -1,0 +1,136 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "1e7b2c53_1eeb29a3",
+        "filename": "cn/community.md",
+        "patchSetId": 4
+      },
+      "lineNbr": 50,
+      "author": {
+        "id": 1011207
+      },
+      "writtenOn": "2018-08-24T05:22:47Z",
+      "side": 1,
+      "message": "这里貌似应该是 \"##\" ?",
+      "range": {
+        "startLine": 50,
+        "startChar": 0,
+        "endLine": 50,
+        "endChar": 2
+      },
+      "revId": "064f4b2f2cb66b44104e353f94e19f0d5adbb4c0",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7d859fa3_9ec95694",
+        "filename": "cn/development.md",
+        "patchSetId": 4
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1011207
+      },
+      "writtenOn": "2018-08-24T05:22:47Z",
+      "side": 1,
+      "message": "包括",
+      "range": {
+        "startLine": 7,
+        "startChar": 6,
+        "endLine": 7,
+        "endChar": 7
+      },
+      "revId": "064f4b2f2cb66b44104e353f94e19f0d5adbb4c0",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "edc8a27e_38ee4d93",
+        "filename": "cn/development.md",
+        "patchSetId": 4
+      },
+      "lineNbr": 74,
+      "author": {
+        "id": 1011207
+      },
+      "writtenOn": "2018-08-24T05:22:47Z",
+      "side": 1,
+      "message": "This looks like can removed. 参考最终输出结果\n\nhttps://ci.spdk.io/spdk.github.io/builds/review/0808e4dde2df1edc5137d87f4a3ad99a16a72467.1535008768/spdk.intel.com/_site/cn/development/#core",
+      "range": {
+        "startLine": 74,
+        "startChar": 0,
+        "endLine": 74,
+        "endChar": 2
+      },
+      "revId": "064f4b2f2cb66b44104e353f94e19f0d5adbb4c0",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3ca94429_3b3548f0",
+        "filename": "cn/development.md",
+        "patchSetId": 4
+      },
+      "lineNbr": 78,
+      "author": {
+        "id": 1011207
+      },
+      "writtenOn": "2018-08-24T05:22:47Z",
+      "side": 1,
+      "message": "这里可以按 line 69 - 72 一样缩进，从输出上看可以对齐\n\nhttps://ci.spdk.io/spdk.github.io/builds/review/0808e4dde2df1edc5137d87f4a3ad99a16a72467.1535008768/spdk.intel.com/_site/cn/development/#core\n\n包括下面那些 ~~~{.sh}的内容",
+      "revId": "064f4b2f2cb66b44104e353f94e19f0d5adbb4c0",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1025fd1a_c6829f54",
+        "filename": "cn/development.md",
+        "patchSetId": 4
+      },
+      "lineNbr": 127,
+      "author": {
+        "id": 1011207
+      },
+      "writtenOn": "2018-08-24T05:22:47Z",
+      "side": 1,
+      "message": "This space is not needed.",
+      "range": {
+        "startLine": 127,
+        "startChar": 32,
+        "endLine": 127,
+        "endChar": 33
+      },
+      "revId": "064f4b2f2cb66b44104e353f94e19f0d5adbb4c0",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "720073fb_7cc13919",
+        "filename": "cn/development.md",
+        "patchSetId": 4
+      },
+      "lineNbr": 127,
+      "author": {
+        "id": 1011207
+      },
+      "writtenOn": "2018-08-24T05:22:47Z",
+      "side": 1,
+      "message": "same for this space.",
+      "range": {
+        "startLine": 127,
+        "startChar": 34,
+        "endLine": 127,
+        "endChar": 35
+      },
+      "revId": "064f4b2f2cb66b44104e353f94e19f0d5adbb4c0",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
