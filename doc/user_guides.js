@@ -74,22 +74,23 @@ var user_guides =
         [ "get_bdevs", "bdev.html#bdev_ug_get_bdevs", null ],
         [ "delete_bdev", "bdev.html#bdev_ug_delete_bdev", null ]
       ] ],
-      [ "Malloc bdev", "bdev.html#bdev_config_malloc", null ],
-      [ "NVMe bdev", "bdev.html#bdev_config_nvme", null ],
-      [ "Null", "bdev.html#bdev_config_null", null ],
-      [ "Linux AIO bdev", "bdev.html#bdev_config_aio", null ],
       [ "Ceph RBD", "bdev.html#bdev_config_rbd", null ],
       [ "GPT (GUID Partition Table)", "bdev.html#bdev_config_gpt", [
         [ "SPDK GPT partition table", "bdev.html#bdev_ug_gpt", null ],
         [ "Creating a GPT partition table using NBD", "bdev.html#bdev_ug_gpt_create_part", null ]
       ] ],
+      [ "Linux AIO bdev", "bdev.html#bdev_config_aio", null ],
+      [ "Malloc bdev", "bdev.html#bdev_config_malloc", null ],
+      [ "Null", "bdev.html#bdev_config_null", null ],
+      [ "NVMe bdev", "bdev.html#bdev_config_nvme", null ],
       [ "Logical volumes", "bdev.html#bdev_ug_logical_volumes", [
         [ "Logical volume store", "bdev.html#bdev_ug_lvol_store", null ],
         [ "Lvols", "bdev.html#bdev_ug_lvols", null ]
       ] ],
+      [ "Passthru", "bdev.html#bdev_config_passthru", null ],
       [ "Pmem", "bdev.html#bdev_config_pmem", null ],
-      [ "Virtio SCSI", "bdev.html#bdev_config_virtio_scsi", null ],
-      [ "Virtio Block", "bdev.html#bdev_config_virtio_blk", null ]
+      [ "Virtio Block", "bdev.html#bdev_config_virtio_blk", null ],
+      [ "Virtio SCSI", "bdev.html#bdev_config_virtio_scsi", null ]
     ] ],
     [ "BlobFS (Blobstore Filesystem)", "blobfs.html", [
       [ "BlobFS Getting Started Guide", "blobfs.html#blobfs_getting_started", null ],

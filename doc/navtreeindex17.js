@@ -1,5 +1,6 @@
 var NAVTREEINDEX17 =
 {
+"trace_8h.html#ae4b117d97e55f2748e3c87dc21eb8277":[13,0,46,14],
 "trace_8h.html#af604955a293c41c3eb9217af94b893a4":[13,0,46,24],
 "trace_8h.html#af78721b3797d71e79aea650856ca3d0b":[13,0,46,17],
 "unionspdk__ioat__hw__desc.html":[12,0,49],
@@ -248,6 +249,5 @@ var NAVTREEINDEX17 =
 "util_8h.html#a21e1907187f8bf2c4b0c0de12c113ed6":[13,0,47,1],
 "util_8h.html#a22383e04171a98834c5f21f0c460e322":[13,0,47,4],
 "util_8h.html#a4ef0b5332740873cf0414a8b44000128":[13,0,47,2],
-"util_8h.html#a63e2af9bd97c1250c11a2e585336f377":[13,0,47,5],
-"util_8h.html#a837456da8a8d13c0f84c1b362acfe482":[13,0,47,3]
+"util_8h.html#a63e2af9bd97c1250c11a2e585336f377":[13,0,47,5]
 };
