@@ -1,0 +1,55 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "fe37d5a4_3a53e47c",
+        "filename": "news.md",
+        "patchSetId": 6
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 1011222
+      },
+      "writtenOn": "2018-08-27T21:30:12Z",
+      "side": 1,
+      "message": "August\n\nThis makes it consistent across all of the entries - they should all have the full month name spelled out.",
+      "revId": "6e2243e47fa0d1f463095066215aa47c3699a9c3",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "b9646e28_04da32c0",
+        "filename": "news.md",
+        "patchSetId": 6
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 1011222
+      },
+      "writtenOn": "2018-08-27T21:30:12Z",
+      "side": 1,
+      "message": "\"and Marvell demonstrated\"\n\n5 dots \".....\" should just be 3 \"...\"",
+      "revId": "6e2243e47fa0d1f463095066215aa47c3699a9c3",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "18fe252d_bcee13f6",
+        "filename": "news.md",
+        "patchSetId": 6
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 1011222
+      },
+      "writtenOn": "2018-08-27T21:30:12Z",
+      "side": 1,
+      "message": "February",
+      "revId": "6e2243e47fa0d1f463095066215aa47c3699a9c3",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
