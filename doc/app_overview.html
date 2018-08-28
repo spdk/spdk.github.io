@@ -191,7 +191,7 @@ Deferred initialization</h3>
 <p>For more details see <a class="el" href="jsonrpc.html">JSON-RPC Methods</a> documentation.</p>
 <h3><a class="anchor" id="cmd_arg_single_file_segments"></a>
 Create just one hugetlbfs file</h3>
-<p>Instead of creating one hugetlbfs file per page, this option makes SPDK create one file per hugepagesz per socket. This is needed for <a class="el" href="virtio.html">Virtio driver</a> to be used with more than 8 hugepages. See <a class="el" href="virtio.html#virtio_2mb">2MB hugepages</a>.</p>
+<p>Instead of creating one hugetlbfs file per page, this option makes SPDK create one file per hugepages per socket. This is needed for <a class="el" href="virtio.html">Virtio driver</a> to be used with more than 8 hugepages. See <a class="el" href="virtio.html#virtio_2mb">2MB hugepages</a>.</p>
 <h3><a class="anchor" id="cmd_arg_multi_process"></a>
 Multi process mode</h3>
 <p>When <code>--shm-id</code> is specified, the application is started in multi-process mode. Applications using the same shm-id share their memory and <a class="el" href="nvme.html#nvme_multi_process">NVMe devices</a>. The first app to start with a given id becomes a primary process, with the rest, called secondary processes, only attaching to it. When the primary process exits, the secondary ones continue to operate, but no new processes can be attached at this point. All processes within the same shm-id group must use the same <a class="el" href="app_overview.html#cmd_arg_single_file_segments">--single-file-segments setting</a>.</p>

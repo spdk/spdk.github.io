@@ -256,7 +256,7 @@ get_subsystem_config</h2>
 <td>name </td><td>Required </td><td>string </td><td>SPDK subsystem name </td></tr>
 </table>
 <h3>Response</h3>
-<p>The response is current configuration of the specfied SPDK subsystem. Null is returned if it is not retrievable by the get_subsystem_config method and empty array is returned if it is empty.</p>
+<p>The response is current configuration of the specified SPDK subsystem. Null is returned if it is not retrievable by the get_subsystem_config method and empty array is returned if it is empty.</p>
 <h3>Example</h3>
 <p>Example request: </p><div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;method&quot;: &quot;get_subsystem_config&quot;,</div><div class="line">  &quot;params&quot;: {</div><div class="line">    &quot;name&quot;: &quot;bdev&quot;</div><div class="line">  }</div><div class="line">}</div></div><!-- fragment --><p>Example response: </p><div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: [</div><div class="line">    {</div><div class="line">      &quot;params&quot;: {</div><div class="line">        &quot;base_bdev&quot;: &quot;Malloc2&quot;,</div><div class="line">        &quot;split_size_mb&quot;: 0,</div><div class="line">        &quot;split_count&quot;: 2</div><div class="line">      },</div><div class="line">      &quot;method&quot;: &quot;construct_split_vbdev&quot;</div><div class="line">    },</div><div class="line">    {</div><div class="line">      &quot;params&quot;: {</div><div class="line">        &quot;trtype&quot;: &quot;PCIe&quot;,</div><div class="line">        &quot;name&quot;: &quot;Nvme1&quot;,</div><div class="line">        &quot;traddr&quot;: &quot;0000:01:00.0&quot;</div><div class="line">      },</div><div class="line">      &quot;method&quot;: &quot;construct_nvme_bdev&quot;</div><div class="line">    },</div><div class="line">    {</div><div class="line">      &quot;params&quot;: {</div><div class="line">        &quot;trtype&quot;: &quot;PCIe&quot;,</div><div class="line">        &quot;name&quot;: &quot;Nvme2&quot;,</div><div class="line">        &quot;traddr&quot;: &quot;0000:03:00.0&quot;</div><div class="line">      },</div><div class="line">      &quot;method&quot;: &quot;construct_nvme_bdev&quot;</div><div class="line">    },</div><div class="line">    {</div><div class="line">      &quot;params&quot;: {</div><div class="line">        &quot;block_size&quot;: 512,</div><div class="line">        &quot;num_blocks&quot;: 131072,</div><div class="line">        &quot;name&quot;: &quot;Malloc0&quot;,</div><div class="line">        &quot;uuid&quot;: &quot;913fc008-79a7-447f-b2c4-c73543638c31&quot;</div><div class="line">      },</div><div class="line">      &quot;method&quot;: &quot;construct_malloc_bdev&quot;</div><div class="line">    },</div><div class="line">    {</div><div class="line">      &quot;params&quot;: {</div><div class="line">        &quot;block_size&quot;: 512,</div><div class="line">        &quot;num_blocks&quot;: 131072,</div><div class="line">        &quot;name&quot;: &quot;Malloc1&quot;,</div><div class="line">        &quot;uuid&quot;: &quot;dd5b8f6e-b67a-4506-b606-7fff5a859920&quot;</div><div class="line">      },</div><div class="line">      &quot;method&quot;: &quot;construct_malloc_bdev&quot;</div><div class="line">    }</div><div class="line">  ]</div><div class="line">}</div></div><!-- fragment --><h1><a class="anchor" id="jsonrpc_components_bdev"></a>
 Block Device Abstraction Layer</h1>
@@ -619,7 +619,7 @@ create_pmem_pool</h2>
 <div class="fragment"><div class="line">{</div><div class="line">  &quot;params&quot;: {</div><div class="line">    &quot;block_size&quot;: 512,</div><div class="line">    &quot;num_blocks&quot;: 131072,</div><div class="line">    &quot;pmem_file&quot;: &quot;/tmp/pmem_file&quot;</div><div class="line">  },</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;method&quot;: &quot;create_pmem_pool&quot;,</div><div class="line">  &quot;id&quot;: 1</div><div class="line">}</div></div><!-- fragment --><p>Example response:</p>
 <div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: true</div><div class="line">}</div></div><!-- fragment --><h2><a class="anchor" id="rpc_pmem_pool_info"></a>
 pmem_pool_info</h2>
-<p>Retrive basic information about PMDK memory pool.</p>
+<p>Retrieve basic information about PMDK memory pool.</p>
 <p>This method is available only if SPDK was built with PMDK support.</p>
 <h3>Parameters</h3>
 <table class="doxtable">
@@ -822,6 +822,8 @@ set_iscsi_options method</h2>
 <tr>
 <td>default_time2retain </td><td>number </td><td>Session specific parameter, DefaultTime2Retain (default: 20) </td></tr>
 <tr>
+<td>first_burst_length </td><td>number </td><td>Session specific parameter, FirstBurstLength (default: 8192) </td></tr>
+<tr>
 <td>immediate_data </td><td>boolean </td><td>Session specific parameter, ImmediateData (default: <code>true</code>) </td></tr>
 <tr>
 <td>error_recovery_level </td><td>number </td><td>Session specific parameter, ErrorRecoveryLevel (default: 0) </td></tr>
@@ -833,7 +835,7 @@ set_iscsi_options method</h2>
 <p>Parameters <code>disable_chap</code> and <code>require_chap</code> are mutually exclusive. Parameters <code>no_discovery_auth</code>, <code>req_discovery_auth</code>, <code>req_discovery_auth_mutual</code>, and <code>discovery_auth_group</code> are still available instead of <code>disable_chap</code>, <code>require_chap</code>, <code>mutual_chap</code>, and <code>chap_group</code>, respectivey but will be removed in future releases.</p>
 <h3>Example</h3>
 <p>Example request:</p>
-<div class="fragment"><div class="line">{</div><div class="line">  &quot;params&quot;: {</div><div class="line">    &quot;allow_duplicated_isid&quot;: true,</div><div class="line">    &quot;default_time2retain&quot;: 60,</div><div class="line">    &quot;immediate_data&quot;: true,</div><div class="line">    &quot;node_base&quot;: &quot;iqn.2016-06.io.spdk&quot;,</div><div class="line">    &quot;max_sessions&quot;: 128,</div><div class="line">    &quot;nop_timeout&quot;: 30,</div><div class="line">    &quot;nop_in_interval&quot;: 30,</div><div class="line">    &quot;auth_file&quot;: &quot;/usr/local/etc/spdk/auth.conf&quot;,</div><div class="line">    &quot;disable_chap&quot;: true,</div><div class="line">    &quot;default_time2wait&quot;: 2</div><div class="line">  },</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;method&quot;: &quot;set_iscsi_options&quot;,</div><div class="line">  &quot;id&quot;: 1</div><div class="line">}</div></div><!-- fragment --><p>Example response:</p>
+<div class="fragment"><div class="line">{</div><div class="line">  &quot;params&quot;: {</div><div class="line">    &quot;allow_duplicated_isid&quot;: true,</div><div class="line">    &quot;default_time2retain&quot;: 60,</div><div class="line">    &quot;first_burst_length&quot;: 8192,</div><div class="line">    &quot;immediate_data&quot;: true,</div><div class="line">    &quot;node_base&quot;: &quot;iqn.2016-06.io.spdk&quot;,</div><div class="line">    &quot;max_sessions&quot;: 128,</div><div class="line">    &quot;nop_timeout&quot;: 30,</div><div class="line">    &quot;nop_in_interval&quot;: 30,</div><div class="line">    &quot;auth_file&quot;: &quot;/usr/local/etc/spdk/auth.conf&quot;,</div><div class="line">    &quot;disable_chap&quot;: true,</div><div class="line">    &quot;default_time2wait&quot;: 2</div><div class="line">  },</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;method&quot;: &quot;set_iscsi_options&quot;,</div><div class="line">  &quot;id&quot;: 1</div><div class="line">}</div></div><!-- fragment --><p>Example response:</p>
 <div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: true</div><div class="line">}</div></div><!-- fragment --><h2><a class="anchor" id="rpc_get_iscsi_global_params"></a>
 get_iscsi_global_params method</h2>
 <p>Show global parameters of iSCSI targets.</p>
@@ -842,7 +844,7 @@ get_iscsi_global_params method</h2>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">request:</div><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;method&quot;: &quot;get_iscsi_global_params&quot;,</div><div class="line">  &quot;id&quot;: 1</div><div class="line">}</div></div><!-- fragment --><p>Example response:</p>
-<div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: {</div><div class="line">    &quot;allow_duplicated_isid&quot;: true,</div><div class="line">    &quot;default_time2retain&quot;: 60,</div><div class="line">    &quot;immediate_data&quot;: true,</div><div class="line">    &quot;node_base&quot;: &quot;iqn.2016-06.io.spdk&quot;,</div><div class="line">    &quot;mutual_chap&quot;: false,</div><div class="line">    &quot;nop_in_interval&quot;: 30,</div><div class="line">    &quot;chap_group&quot;: 0,</div><div class="line">    &quot;max_connections_per_session&quot;: 2,</div><div class="line">    &quot;max_queue_depth&quot;: 64,</div><div class="line">    &quot;nop_timeout&quot;: 30,</div><div class="line">    &quot;max_sessions&quot;: 128,</div><div class="line">    &quot;error_recovery_level&quot;: 0,</div><div class="line">    &quot;auth_file&quot;: &quot;/usr/local/etc/spdk/auth.conf&quot;,</div><div class="line">    &quot;min_connections_per_core&quot;: 4,</div><div class="line">    &quot;disable_chap&quot;: true,</div><div class="line">    &quot;default_time2wait&quot;: 2,</div><div class="line">    &quot;require_chap&quot;: false</div><div class="line">  }</div><div class="line">}</div></div><!-- fragment --> <h2><a class="anchor" id="rpc_set_iscsi_discovery_auth"></a>
+<div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: {</div><div class="line">    &quot;allow_duplicated_isid&quot;: true,</div><div class="line">    &quot;default_time2retain&quot;: 60,</div><div class="line">    &quot;first_burst_length&quot;: 8192,</div><div class="line">    &quot;immediate_data&quot;: true,</div><div class="line">    &quot;node_base&quot;: &quot;iqn.2016-06.io.spdk&quot;,</div><div class="line">    &quot;mutual_chap&quot;: false,</div><div class="line">    &quot;nop_in_interval&quot;: 30,</div><div class="line">    &quot;chap_group&quot;: 0,</div><div class="line">    &quot;max_connections_per_session&quot;: 2,</div><div class="line">    &quot;max_queue_depth&quot;: 64,</div><div class="line">    &quot;nop_timeout&quot;: 30,</div><div class="line">    &quot;max_sessions&quot;: 128,</div><div class="line">    &quot;error_recovery_level&quot;: 0,</div><div class="line">    &quot;auth_file&quot;: &quot;/usr/local/etc/spdk/auth.conf&quot;,</div><div class="line">    &quot;min_connections_per_core&quot;: 4,</div><div class="line">    &quot;disable_chap&quot;: true,</div><div class="line">    &quot;default_time2wait&quot;: 2,</div><div class="line">    &quot;require_chap&quot;: false</div><div class="line">  }</div><div class="line">}</div></div><!-- fragment --> <h2><a class="anchor" id="rpc_set_iscsi_discovery_auth"></a>
 set_iscsi_discovery_auth method</h2>
 <p>Set CHAP authentication for sessions dynamically.</p>
 <h3>Parameters</h3>
@@ -862,6 +864,83 @@ set_iscsi_discovery_auth method</h2>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">request:</div><div class="line">{</div><div class="line">  &quot;params&quot;: {</div><div class="line">    &quot;chap_group&quot;: 1,</div><div class="line">    &quot;require_chap&quot;: true,</div><div class="line">    &quot;mutual_chap&quot;: true</div><div class="line">  },</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;method&quot;: &quot;set_iscsi_discovery_auth&quot;,</div><div class="line">  &quot;id&quot;: 1</div><div class="line">}</div></div><!-- fragment --><p>Example response:</p>
+<div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: true</div><div class="line">}</div></div><!-- fragment --><h2><a class="anchor" id="rpc_add_iscsi_auth_group"></a>
+add_iscsi_auth_group method</h2>
+<p>Add an authentication group for CHAP authentication.</p>
+<h3>Parameters</h3>
+<table class="doxtable">
+<tr>
+<th>Name </th><th>Optional </th><th>Type </th><th>Description  </th></tr>
+<tr>
+<td>tag </td><td>Required </td><td>number </td><td>Authentication group tag (unique, integer &gt; 0) </td></tr>
+<tr>
+<td>secrets </td><td>Optional </td><td>array </td><td>Array of <a class="el" href="jsonrpc.html#rpc_add_iscsi_auth_group_secret">secret</a> objects </td></tr>
+</table>
+<h3><a class="anchor" id="rpc_add_iscsi_auth_group_secret"></a>
+secret</h3>
+<table class="doxtable">
+<tr>
+<th>Name </th><th>Optional </th><th>Type </th><th>Description  </th></tr>
+<tr>
+<td>user </td><td>Required </td><td>string </td><td>Unidirectional CHAP name </td></tr>
+<tr>
+<td>secret </td><td>Required </td><td>string </td><td>Unidirectional CHAP secret </td></tr>
+<tr>
+<td>muser </td><td>Optional </td><td>string </td><td>Bidirectional CHAP name </td></tr>
+<tr>
+<td>msecret </td><td>Optional </td><td>string </td><td>Bidirectional CHAP secret </td></tr>
+</table>
+<h3>Example</h3>
+<p>Example request:</p>
+<div class="fragment"><div class="line">{</div><div class="line">  &quot;params&quot;: {</div><div class="line">    &quot;secrets&quot;: [</div><div class="line">      {</div><div class="line">        &quot;muser&quot;: &quot;mu1&quot;,</div><div class="line">        &quot;secret&quot;: &quot;s1&quot;,</div><div class="line">        &quot;user&quot;: &quot;u1&quot;,</div><div class="line">        &quot;msecret&quot;: &quot;ms1&quot;</div><div class="line">      }</div><div class="line">    ],</div><div class="line">    &quot;tag&quot;: 2</div><div class="line">  },</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;method&quot;: &quot;add_iscsi_auth_group&quot;,</div><div class="line">  &quot;id&quot;: 1</div><div class="line">}</div></div><!-- fragment --><p>Example response: </p><div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: true</div><div class="line">}</div></div><!-- fragment --><h2><a class="anchor" id="rpc_delete_iscsi_auth_group"></a>
+delete_iscsi_auth_group method</h2>
+<p>Delete an existing authentication group for CHAP authentication.</p>
+<h3>Parameters</h3>
+<table class="doxtable">
+<tr>
+<th>Name </th><th>Optional </th><th>Type </th><th>Description  </th></tr>
+<tr>
+<td>tag </td><td>Required </td><td>number </td><td>Authentication group tag (unique, integer &gt; 0) </td></tr>
+</table>
+<h3>Example</h3>
+<p>Example request:</p>
+<div class="fragment"><div class="line">{</div><div class="line">  &quot;params&quot;: {</div><div class="line">    &quot;tag&quot;: 2</div><div class="line">  },</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;method&quot;: &quot;delete_iscsi_auth_group&quot;,</div><div class="line">  &quot;id&quot;: 1</div><div class="line">}</div></div><!-- fragment --><p>Example response:</p>
+<div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: true</div><div class="line">}</div></div><!-- fragment --><h2><a class="anchor" id="rpc_add_secret_to_iscsi_auth_group"></a>
+add_secret_to_iscsi_auth_group</h2>
+<p>Add a secret to an existing authentication group for CHAP authentication.</p>
+<h3>Parameters</h3>
+<table class="doxtable">
+<tr>
+<th>Name </th><th>Optional </th><th>Type </th><th>Description  </th></tr>
+<tr>
+<td>tag </td><td>Required </td><td>number </td><td>Authentication group tag (unique, integer &gt; 0) </td></tr>
+<tr>
+<td>user </td><td>Required </td><td>string </td><td>Unidirectional CHAP name </td></tr>
+<tr>
+<td>secret </td><td>Required </td><td>string </td><td>Unidirectional CHAP secret </td></tr>
+<tr>
+<td>muser </td><td>Optional </td><td>string </td><td>Bidirectional CHAP name </td></tr>
+<tr>
+<td>msecret </td><td>Optional </td><td>string </td><td>Bidirectional CHAP secret </td></tr>
+</table>
+<h3>Example</h3>
+<p>Example request:</p>
+<div class="fragment"><div class="line">{</div><div class="line">  &quot;params&quot;: {</div><div class="line">    &quot;muser&quot;: &quot;mu3&quot;,</div><div class="line">    &quot;secret&quot;: &quot;s3&quot;,</div><div class="line">    &quot;tag&quot;: 2,</div><div class="line">    &quot;user&quot;: &quot;u3&quot;,</div><div class="line">    &quot;msecret&quot;: &quot;ms3&quot;</div><div class="line">  },</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;method&quot;: &quot;add_secret_to_iscsi_auth_group&quot;,</div><div class="line">  &quot;id&quot;: 1</div><div class="line">}</div></div><!-- fragment --><p>Example response:</p>
+<div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: true</div><div class="line">}</div></div><!-- fragment --><h2><a class="anchor" id="rpc_delete_secret_from_iscsi_auth_group"></a>
+delete_secret_from_iscsi_auth_group</h2>
+<p>Delete a secret from an existing authentication group for CHAP authentication.</p>
+<h3>Parameters</h3>
+<table class="doxtable">
+<tr>
+<th>Name </th><th>Optional </th><th>Type </th><th>Description  </th></tr>
+<tr>
+<td>tag </td><td>Required </td><td>number </td><td>Authentication group tag (unique, integer &gt; 0) </td></tr>
+<tr>
+<td>user </td><td>Required </td><td>string </td><td>Unidirectional CHAP name </td></tr>
+</table>
+<h3>Example</h3>
+<p>Example request:</p>
+<div class="fragment"><div class="line">{</div><div class="line">  &quot;params&quot;: {</div><div class="line">    &quot;tag&quot;: 2,</div><div class="line">    &quot;user&quot;: &quot;u3&quot;</div><div class="line">  },</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;method&quot;: &quot;delete_secret_from_iscsi_auth_group&quot;,</div><div class="line">  &quot;id&quot;: 1</div><div class="line">}</div></div><!-- fragment --><p>Example response:</p>
 <div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: true</div><div class="line">}</div></div><!-- fragment --><h2><a class="anchor" id="rpc_get_initiator_groups"></a>
 get_initiator_groups method</h2>
 <p>Show information about all available initiator groups.</p>

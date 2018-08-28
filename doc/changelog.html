@@ -149,6 +149,7 @@ v18.10: (Upcoming Release)</h1>
 <h2>iscsi</h2>
 <p>Parameter names of <code>set_iscsi_options</code> and <code>get_iscsi_global_params</code> RPC method for CHAP authentication in discovery sessions have been changed to align with <code>construct_target_node</code> RPC method. Old names are still usable but will be removed in future release.</p>
 <p><code>set_iscsi_discovery_auth</code> and <code>set_iscsi_target_node_auth</code> RPC methods have been added to set CHAP authentication for discovery sessions and existing target nodes, respectively.</p>
+<p>CHAP shared secret file is now loaded only once at startup. During run time CHAP shared secrets can be configured by new JSON RPCs <code>add_iscsi_auth_group</code>, <code>delete_iscsi_auth_group</code>, <code>add_secret_to_iscsi_auth_group</code>, and <code>delete_secret_from_iscsi_auth_group</code> instead.</p>
 <h1><a class="anchor" id="changelog-v18-07"></a>
 v18.07:</h1>
 <h2>bdev</h2>
@@ -231,7 +232,7 @@ v18.04: Logical Volume Snapshot/Clone, iSCSI Initiator, Bdev QoS, VPP Userspace 
 <h2>Logical Volumes</h2>
 <p>A new <code>destroy_lvol_bdev</code> RPC method to delete logical volumes has been added.</p>
 <p>Lvols now have their own UUIDs which replace previous LvolStoreUUID_BlobID combination.</p>
-<p>New Snapshot and Clone funtionalities have been added. User may create Snapshots of existing Lvols and Clones of existing Snapshots. See the <a href="http://www.spdk.io/doc/logical_volumes.html#lvol_snapshots">lvol snapshots</a> documentation for more details.</p>
+<p>New Snapshot and Clone functionalities have been added. User may create Snapshots of existing Lvols and Clones of existing Snapshots. See the <a href="http://www.spdk.io/doc/logical_volumes.html#lvol_snapshots">lvol snapshots</a> documentation for more details.</p>
 <p>Resizing logical volumes is now supported via the <code>resize_lvol_bdev</code> RPC method.</p>
 <h2>Lib</h2>
 <p>A set of changes were made in the SPDK's lib code altering instances of calls to <code>exit()</code> and <code>abort()</code> to return a failure instead wherever reasonably possible.</p>
@@ -294,7 +295,7 @@ v18.01: Blobstore Thin Provisioning</h1>
 <h2>NBD device</h2>
 <p>The NBD application (test/lib/bdev/nbd) has been removed; Same functionality can now be achieved by using the test/app/bdev_svc application and start_nbd_disk RPC method. See the <a href="http://www.spdk.io/doc/bdev.html#bdev_config_gpt">GPT</a> documentation for more details.</p>
 <h2>FIO plugin</h2>
-<p>SPDK <code>fio_plugin</code> now suports FIO 3.3. The support for previous FIO 2.21 has been dropped, although it still remains to work for now. The new FIO contains huge amount of bugfixes and it's recommended to do an update.</p>
+<p>SPDK <code>fio_plugin</code> now supports FIO 3.3. The support for previous FIO 2.21 has been dropped, although it still remains to work for now. The new FIO contains huge amount of bugfixes and it's recommended to do an update.</p>
 <h2>Virtio library</h2>
 <p>Previously a part of the bdev_virtio module, now a separate library. Virtio is now available via <code>spdk_internal/virtio.h</code> file. This is an internal interface to be used when implementing new Virtio backends, namely Virtio-BLK.</p>
 <h2>iSCSI</h2>

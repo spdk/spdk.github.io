@@ -1,5 +1,17 @@
 var NAVTREEINDEX17 =
 {
+"trace_8h.html#a6f2131f1fc35d495f51552eb2838630b":[13,0,46,30],
+"trace_8h.html#a7410f672849875c174b4b4abaf8dbfdb":[13,0,46,16],
+"trace_8h.html#a78c1e25f823c6e98da3f99c515715ebe":[13,0,46,27],
+"trace_8h.html#a7cdec16a6ee14c87b0bf5d0666d9a0cb":[13,0,46,19],
+"trace_8h.html#a7ecb50e2b95e9c75eeddd9884ec0aafe":[13,0,46,20],
+"trace_8h.html#a81cabe02d5c28328945350c25cda3861":[13,0,46,26],
+"trace_8h.html#a9246bd0dbe13fe0eb4970fd861802666":[13,0,46,25],
+"trace_8h.html#a92b06e647e386cf0896e0a38499cf494":[13,0,46,31],
+"trace_8h.html#a97958aabb667d95c141acf18f42a5000":[13,0,46,13],
+"trace_8h.html#aa0ade5c1286d121c2eafeae8918169db":[13,0,46,29],
+"trace_8h.html#aa7331d8e039fadc27049efd27c1d49a8":[13,0,46,22],
+"trace_8h.html#aa87447ad261172809a5394ee37f601df":[13,0,46,18],
 "trace_8h.html#ae4b117d97e55f2748e3c87dc21eb8277":[13,0,46,14],
 "trace_8h.html#af604955a293c41c3eb9217af94b893a4":[13,0,46,24],
 "trace_8h.html#af78721b3797d71e79aea650856ca3d0b":[13,0,46,17],
@@ -237,17 +249,5 @@ var NAVTREEINDEX17 =
 "unionspdk__nvmf__rdma__private__data.html#a12eb26a169c9c79b890f3c9ae77fa5da":[12,0,167,2],
 "unionspdk__nvmf__rdma__private__data.html#a45b093b37ee0fa095571310d812c00b0":[12,0,167,0],
 "unionspdk__nvmf__rdma__private__data.html#aedcc391f20afe529847ddcab58d40970":[12,0,167,1],
-"unionspdk__nvmf__transport__specific__address__subtype.html":[12,0,172],
-"unionspdk__nvmf__transport__specific__address__subtype.html#a8098cbc03f727ae8ae707dfbf69d3469":[12,0,172,0],
-"unionspdk__nvmf__transport__specific__address__subtype.html#aabae1c961d6f86f0d6b1e61cdaa7a9ce":[12,0,172,1],
-"user_guides.html":[3],
-"userspace.html":[2,0],
-"userspace.html#userspace_control":[2,0,0],
-"userspace.html#userspace_interrupts":[2,0,1],
-"userspace.html#userspace_threading":[2,0,2],
-"util_8h.html":[13,0,47],
-"util_8h.html#a21e1907187f8bf2c4b0c0de12c113ed6":[13,0,47,1],
-"util_8h.html#a22383e04171a98834c5f21f0c460e322":[13,0,47,4],
-"util_8h.html#a4ef0b5332740873cf0414a8b44000128":[13,0,47,2],
-"util_8h.html#a63e2af9bd97c1250c11a2e585336f377":[13,0,47,5]
+"unionspdk__nvmf__transport__specific__address__subtype.html":[12,0,173]
 };

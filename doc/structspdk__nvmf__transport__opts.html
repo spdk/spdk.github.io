@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="Content-Type" content="text/xhtml; charset=utf-8">
   <meta name="generator" content="Doxygen 1.8.13">
-  <title>SPDK: util.h File Reference</title>
+  <title>SPDK: spdk_nvmf_transport_opts Struct Reference</title>
   <script type="text/javascript" src="jquery.js"></script>
   <script type="text/javascript" src="dynsections.js"></script>
   <link href="navtree.css" rel="stylesheet" type="text/css"/>
@@ -116,7 +116,7 @@ $(function() {
   </div>
 </div>
 <script type="text/javascript">
-$(document).ready(function(){initNavTree('util_8h.html','');});
+$(document).ready(function(){initNavTree('structspdk__nvmf__transport__opts.html','');});
 </script>
 <div id="doc-content">
 <!-- window showing the filter options -->
@@ -135,49 +135,36 @@ $(document).ready(function(){initNavTree('util_8h.html','');});
 
 <div class="header">
   <div class="summary">
-<a href="#define-members">Macros</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#pub-attribs">Data Fields</a>  </div>
   <div class="headertitle">
-<div class="title">util.h File Reference</div>  </div>
+<div class="title">spdk_nvmf_transport_opts Struct Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-
-<p>General utility functions.  
-<a href="#details">More...</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
-Macros</h2></td></tr>
-<tr class="memitem:a837456da8a8d13c0f84c1b362acfe482"><td class="memItemLeft" align="right" valign="top"><a id="a837456da8a8d13c0f84c1b362acfe482"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_min</b>(a,  b)&#160;&#160;&#160;(((a)&lt;(b))?(a):(b))</td></tr>
-<tr class="separator:a837456da8a8d13c0f84c1b362acfe482"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4ef0b5332740873cf0414a8b44000128"><td class="memItemLeft" align="right" valign="top"><a id="a4ef0b5332740873cf0414a8b44000128"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_max</b>(a,  b)&#160;&#160;&#160;(((a)&gt;(b))?(a):(b))</td></tr>
-<tr class="separator:a4ef0b5332740873cf0414a8b44000128"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a21e1907187f8bf2c4b0c0de12c113ed6"><td class="memItemLeft" align="right" valign="top"><a id="a21e1907187f8bf2c4b0c0de12c113ed6"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_COUNTOF</b>(arr)&#160;&#160;&#160;(sizeof(arr) / sizeof((arr)[0]))</td></tr>
-<tr class="separator:a21e1907187f8bf2c4b0c0de12c113ed6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ace0946954cf4fed6e4f3b7f87180f984"><td class="memItemLeft" align="right" valign="top"><a id="ace0946954cf4fed6e4f3b7f87180f984"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_CONTAINEROF</b>(ptr,  type,  member)&#160;&#160;&#160;((type *)((uintptr_t)ptr - offsetof(type, member)))</td></tr>
-<tr class="separator:ace0946954cf4fed6e4f3b7f87180f984"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaa368537876ed0aee8ae810a240b2dfb"><td class="memItemLeft" align="right" valign="top"><a id="aaa368537876ed0aee8ae810a240b2dfb"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_SEC_TO_USEC</b>&#160;&#160;&#160;1000000ULL</td></tr>
-<tr class="separator:aaa368537876ed0aee8ae810a240b2dfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
-Functions</h2></td></tr>
-<tr class="memitem:a8572bc8de56d3587c8cf85dae67c1ca0"><td class="memItemLeft" align="right" valign="top"><a id="a8572bc8de56d3587c8cf85dae67c1ca0"></a>
-static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_u32log2</b> (uint32_t x)</td></tr>
-<tr class="separator:a8572bc8de56d3587c8cf85dae67c1ca0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a22383e04171a98834c5f21f0c460e322"><td class="memItemLeft" align="right" valign="top"><a id="a22383e04171a98834c5f21f0c460e322"></a>
-static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_align32pow2</b> (uint32_t x)</td></tr>
-<tr class="separator:a22383e04171a98834c5f21f0c460e322"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a63e2af9bd97c1250c11a2e585336f377"><td class="memItemLeft" align="right" valign="top"><a id="a63e2af9bd97c1250c11a2e585336f377"></a>
-static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8h.html#a63e2af9bd97c1250c11a2e585336f377">spdk_u32_is_pow2</a> (uint32_t x)</td></tr>
-<tr class="memdesc:a63e2af9bd97c1250c11a2e585336f377"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if a uint32_t is a power of 2. <br /></td></tr>
-<tr class="separator:a63e2af9bd97c1250c11a2e585336f377"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Data Fields</h2></td></tr>
+<tr class="memitem:a90f2c6dd7e963201cbe0e625b4599ee4"><td class="memItemLeft" align="right" valign="top"><a id="a90f2c6dd7e963201cbe0e625b4599ee4"></a>
+uint16_t&#160;</td><td class="memItemRight" valign="bottom"><b>max_queue_depth</b></td></tr>
+<tr class="separator:a90f2c6dd7e963201cbe0e625b4599ee4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6c3986bff2dcd3d5cc5b89616e03d8b"><td class="memItemLeft" align="right" valign="top"><a id="aa6c3986bff2dcd3d5cc5b89616e03d8b"></a>
+uint16_t&#160;</td><td class="memItemRight" valign="bottom"><b>max_qpairs_per_ctrlr</b></td></tr>
+<tr class="separator:aa6c3986bff2dcd3d5cc5b89616e03d8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51e173174fe161295fcf24c1e0c18438"><td class="memItemLeft" align="right" valign="top"><a id="a51e173174fe161295fcf24c1e0c18438"></a>
+uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>in_capsule_data_size</b></td></tr>
+<tr class="separator:a51e173174fe161295fcf24c1e0c18438"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12c798cc83976f1edaf15c3627d31c70"><td class="memItemLeft" align="right" valign="top"><a id="a12c798cc83976f1edaf15c3627d31c70"></a>
+uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>max_io_size</b></td></tr>
+<tr class="separator:a12c798cc83976f1edaf15c3627d31c70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e6e60442ef1d45efab0e6159d060a8e"><td class="memItemLeft" align="right" valign="top"><a id="a7e6e60442ef1d45efab0e6159d060a8e"></a>
+uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>io_unit_size</b></td></tr>
+<tr class="separator:a7e6e60442ef1d45efab0e6159d060a8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a063b1c1080343c707a3d51ced615628f"><td class="memItemLeft" align="right" valign="top"><a id="a063b1c1080343c707a3d51ced615628f"></a>
+uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>max_aq_depth</b></td></tr>
+<tr class="separator:a063b1c1080343c707a3d51ced615628f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>General utility functions. </p>
-</div></div><!-- contents -->
+<hr/>The documentation for this struct was generated from the following file:<ul>
+<li><a class="el" href="nvmf_8h.html">nvmf.h</a></li>
+</ul>
+</div><!-- contents -->
 </div><!-- doc-content -->
 </div>

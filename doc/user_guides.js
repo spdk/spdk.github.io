@@ -19,9 +19,10 @@ var user_guides =
     [ "iSCSI Target", "iscsi.html", [
       [ "iSCSI Target Getting Started Guide", "iscsi.html#iscsi_getting_started", [
         [ "Prerequisites", "iscsi.html#iscsi_prereqs", null ],
-        [ "Configuring iSCSI Target", "iscsi.html#iscsi_config", null ],
-        [ "Assigning CPU Cores to the iSCSI Target", "iscsi.html#iscsi_config_lcore", null ],
-        [ "Configuring a LUN in the iSCSI Target", "iscsi.html#iscsi_lun", null ],
+        [ "Configuring iSCSI Target via config file", "iscsi.html#iscsi_config", [
+          [ "Assigning CPU Cores to the iSCSI Target", "iscsi.html#iscsi_config_lcore", null ],
+          [ "Configuring a LUN in the iSCSI Target", "iscsi.html#iscsi_lun", null ]
+        ] ],
         [ "Configuring iSCSI Target via RPC method", "iscsi.html#iscsi_rpc", null ],
         [ "Configuring iSCSI Initiator", "iscsi.html#iscsi_initiator", null ]
       ] ],
@@ -152,6 +153,12 @@ var user_guides =
         [ "set_iscsi_options method", "jsonrpc.html#rpc_set_iscsi_options", null ],
         [ "get_iscsi_global_params method", "jsonrpc.html#rpc_get_iscsi_global_params", null ],
         [ "set_iscsi_discovery_auth method", "jsonrpc.html#rpc_set_iscsi_discovery_auth", null ],
+        [ "add_iscsi_auth_group method", "jsonrpc.html#rpc_add_iscsi_auth_group", [
+          [ "secret", "jsonrpc.html#rpc_add_iscsi_auth_group_secret", null ]
+        ] ],
+        [ "delete_iscsi_auth_group method", "jsonrpc.html#rpc_delete_iscsi_auth_group", null ],
+        [ "add_secret_to_iscsi_auth_group", "jsonrpc.html#rpc_add_secret_to_iscsi_auth_group", null ],
+        [ "delete_secret_from_iscsi_auth_group", "jsonrpc.html#rpc_delete_secret_from_iscsi_auth_group", null ],
         [ "get_initiator_groups method", "jsonrpc.html#rpc_get_initiator_groups", null ],
         [ "add_initiator_group method", "jsonrpc.html#rpc_add_initiator_group", null ],
         [ "delete_initiator_group method", "jsonrpc.html#rpc_delete_initiator_group", null ],

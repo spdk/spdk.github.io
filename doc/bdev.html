@@ -176,7 +176,7 @@ GPT (GUID Partition Table)</h1>
 <p>The GPT virtual bdev driver is enabled by default and does not require any configuration. It will automatically detect <a class="el" href="bdev.html#bdev_ug_gpt">SPDK GPT partition table</a> on any attached bdev and will create possibly multiple virtual bdevs.</p>
 <h2><a class="anchor" id="bdev_ug_gpt"></a>
 SPDK GPT partition table</h2>
-<p>The SPDK partition type GUID is <code>7c5222bd-8f5d-4087-9c00-bf9843c7b58c</code>. Existing SPDK bdevs can be exposed as Linux block devices via NBD and then ca be partitioned with standard partitioning tools. After partitioning, the bdevs will need to be deleted and attached again fot the GPT bdev module to see any changes. NBD kernel module must be loaded first. To create NBD bdev user should use <code>start_nbd_disk</code> RPC command.</p>
+<p>The SPDK partition type GUID is <code>7c5222bd-8f5d-4087-9c00-bf9843c7b58c</code>. Existing SPDK bdevs can be exposed as Linux block devices via NBD and then ca be partitioned with standard partitioning tools. After partitioning, the bdevs will need to be deleted and attached again for the GPT bdev module to see any changes. NBD kernel module must be loaded first. To create NBD bdev user should use <code>start_nbd_disk</code> RPC command.</p>
 <p>Example command</p>
 <p><code>rpc.py start_nbd_disk Malloc0 /dev/nbd0</code></p>
 <p>This will expose an SPDK bdev <code>Malloc0</code> under the <code>/dev/nbd0</code> block device.</p>
@@ -225,7 +225,7 @@ Logical volumes</h1>
 <p>The Logical Volumes library is a flexible storage space management system. It allows creating and managing virtual block devices with variable size on top of other bdevs. The SPDK Logical Volume library is built on top of <a class="el" href="blob.html">Blobstore Programmer's Guide</a>. For detailed description please refer to <a class="el" href="logical_volumes.html#lvol">Logical volume</a>.</p>
 <h2><a class="anchor" id="bdev_ug_lvol_store"></a>
 Logical volume store</h2>
-<p>Before creating any logical volumes (lvols), an lvol store has to be created first on selected block device. Lvol store is lvols vessel responsible for managing underlying bdev space assigment to lvol bdevs and storing metadata. To create lvol store user should use using <code>construct_lvol_store</code> RPC command.</p>
+<p>Before creating any logical volumes (lvols), an lvol store has to be created first on selected block device. Lvol store is lvols vessel responsible for managing underlying bdev space assignment to lvol bdevs and storing metadata. To create lvol store user should use using <code>construct_lvol_store</code> RPC command.</p>
 <p>Example command</p>
 <p><code>rpc.py construct_lvol_store Malloc2 lvs -c 4096</code></p>
 <p>This will create lvol store named <code>lvs</code> with cluster size 4096, build on top of <code>Malloc2</code> bdev. In response user will be provided with uuid which is unique lvol store identifier.</p>
@@ -243,7 +243,7 @@ Lvols</h2>
 <p><code>rpc.py construct_lvol_bdev lvol2 25 -u 330a6ab2-f468-11e7-983e-001e67edf35d</code></p>
 <h1><a class="anchor" id="bdev_config_passthru"></a>
 Passthru</h1>
-<p>The SPDK Passthru virtual block device module serves as an example of how to write a virutal block device module. It implements the required functionality of a vbdev module and demonstrates some other basic features such as the use of per I/O context.</p>
+<p>The SPDK Passthru virtual block device module serves as an example of how to write a virtual block device module. It implements the required functionality of a vbdev module and demonstrates some other basic features such as the use of per I/O context.</p>
 <p>Example commands</p>
 <p><code>rpc.py construct_passthru_bdev -b aio -p pt</code></p>
 <p><code>rpc.py delete_passthru_bdev pt</code></p>

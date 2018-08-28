@@ -152,6 +152,7 @@ var searchData=
   ['spdk_5fnvmf_5frdma_5frequest_5fprivate_5fdata',['spdk_nvmf_rdma_request_private_data',['../structspdk__nvmf__rdma__request__private__data.html',1,'']]],
   ['spdk_5fnvmf_5frdma_5ftransport_5fspecific_5faddress_5fsubtype',['spdk_nvmf_rdma_transport_specific_address_subtype',['../structspdk__nvmf__rdma__transport__specific__address__subtype.html',1,'']]],
   ['spdk_5fnvmf_5ftgt_5fopts',['spdk_nvmf_tgt_opts',['../structspdk__nvmf__tgt__opts.html',1,'']]],
+  ['spdk_5fnvmf_5ftransport_5fopts',['spdk_nvmf_transport_opts',['../structspdk__nvmf__transport__opts.html',1,'']]],
   ['spdk_5fnvmf_5ftransport_5fspecific_5faddress_5fsubtype',['spdk_nvmf_transport_specific_address_subtype',['../unionspdk__nvmf__transport__specific__address__subtype.html',1,'']]],
   ['spdk_5focssd_5fchunk_5finformation',['spdk_ocssd_chunk_information',['../structspdk__ocssd__chunk__information.html',1,'']]],
   ['spdk_5focssd_5fdev_5flba_5ffmt',['spdk_ocssd_dev_lba_fmt',['../structspdk__ocssd__dev__lba__fmt.html',1,'']]],

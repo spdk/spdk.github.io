@@ -296,7 +296,7 @@ Component Detail</h2>
 | Super  |  Metadata Region  |
 | Block  |                   |
 +--------+-------------------+
-</pre><p>The super block is a single page located at the beginning of the partition. It contains basic information about the Blobstore. The metadata region is the remainder of cluster 0 and may extend to additional clusters. Refer to the latest srouce code for complete structural details of the super block and metadata region.</p>
+</pre><p>The super block is a single page located at the beginning of the partition. It contains basic information about the Blobstore. The metadata region is the remainder of cluster 0 and may extend to additional clusters. Refer to the latest source code for complete structural details of the super block and metadata region.</p>
 <p>Each blob is allocated a non-contiguous set of pages inside the metadata region for its metadata. These pages form a linked list. The first page in the list will be written in place on update, while all other pages will be written to fresh locations. This requires the backing device to support an atomic write size greater than or equal to the page size to guarantee that the operation is atomic. See the section on atomicity for details.</p>
 <h3>Sequences and Batches</h3>
 <p>Internally Blobstore uses the concepts of sequences and batches to submit IO to the underlying device in either a serial fashion or in parallel, respectively. Both are defined using the following structure:</p>

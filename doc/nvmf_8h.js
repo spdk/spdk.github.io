@@ -1,6 +1,7 @@
 var nvmf_8h =
 [
     [ "spdk_nvmf_tgt_opts", "structspdk__nvmf__tgt__opts.html", "structspdk__nvmf__tgt__opts" ],
+    [ "spdk_nvmf_transport_opts", "structspdk__nvmf__transport__opts.html", "structspdk__nvmf__transport__opts" ],
     [ "spdk_nvmf_ns_opts", "structspdk__nvmf__ns__opts.html", "structspdk__nvmf__ns__opts" ],
     [ "new_qpair_fn", "nvmf_8h.html#a83e558236353a3b94992d2e604f4b660", null ],
     [ "nvmf_qpair_disconnect_cb", "nvmf_8h.html#abd02f30e6fcb57338c723ffd5c307f0d", null ],
