@@ -4,6 +4,8 @@ var user_guides =
       [ "Configuring SPDK Applications", "app_overview.html#app_config", [
         [ "Command Line Parameters", "app_overview.html#app_cmd_line_args", [
           [ "Configuration file", "app_overview.html#cmd_arg_config_file", null ],
+          [ "Limit coredump", "app_overview.html#cmd_arg_limit_coredump", null ],
+          [ "Tracepoint group mask", "app_overview.html#cmd_arg_limit_tpoint_group_mask", null ],
           [ "Deferred initialization", "app_overview.html#cmd_arg_deferred_initialization", null ],
           [ "Create just one hugetlbfs file", "app_overview.html#cmd_arg_single_file_segments", null ],
           [ "Multi process mode", "app_overview.html#cmd_arg_multi_process", null ],
@@ -157,6 +159,7 @@ var user_guides =
           [ "secret", "jsonrpc.html#rpc_add_iscsi_auth_group_secret", null ]
         ] ],
         [ "delete_iscsi_auth_group method", "jsonrpc.html#rpc_delete_iscsi_auth_group", null ],
+        [ "get_iscsi_auth_groups", "jsonrpc.html#rpc_get_iscsi_auth_groups", null ],
         [ "add_secret_to_iscsi_auth_group", "jsonrpc.html#rpc_add_secret_to_iscsi_auth_group", null ],
         [ "delete_secret_from_iscsi_auth_group", "jsonrpc.html#rpc_delete_secret_from_iscsi_auth_group", null ],
         [ "get_initiator_groups method", "jsonrpc.html#rpc_get_initiator_groups", null ],

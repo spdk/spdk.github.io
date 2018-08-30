@@ -273,6 +273,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a9dbd899b04661e7773cff6a94123bd92"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blobfs_8h.html#a9dbd899b04661e7773cff6a94123bd92">spdk_file_sync</a> (struct spdk_file *file, struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *channel)</td></tr>
 <tr class="memdesc:a9dbd899b04661e7773cff6a94123bd92"><td class="mdescLeft">&#160;</td><td class="mdescRight">Synchronize the data from the cache to the disk.  <a href="#a9dbd899b04661e7773cff6a94123bd92">More...</a><br /></td></tr>
 <tr class="separator:a9dbd899b04661e7773cff6a94123bd92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a816f18c23723f7211b0a5a277904b202"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blobfs_8h.html#a816f18c23723f7211b0a5a277904b202">spdk_file_get_id</a> (struct spdk_file *file, void *id, size_t size)</td></tr>
+<tr class="memdesc:a816f18c23723f7211b0a5a277904b202"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the unique ID for the file.  <a href="#a816f18c23723f7211b0a5a277904b202">More...</a><br /></td></tr>
+<tr class="separator:a816f18c23723f7211b0a5a277904b202"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>SPDK Filesystem. </p>
@@ -454,6 +457,51 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 on success, negative errno on failure. </dd></dl>
+
+</div>
+</div>
+<a id="a816f18c23723f7211b0a5a277904b202"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a816f18c23723f7211b0a5a277904b202">&#9670;&nbsp;</a></span>spdk_file_get_id()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_file_get_id </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_file *&#160;</td>
+          <td class="paramname"><em>file</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the unique ID for the file. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">file</td><td>File to get the ID. </td></tr>
+    <tr><td class="paramname">id</td><td>ID buffer. </td></tr>
+    <tr><td class="paramname">size</td><td>Size of the ID buffer.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the length of ID on success. </dd></dl>
 
 </div>
 </div>

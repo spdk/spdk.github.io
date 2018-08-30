@@ -794,44 +794,45 @@ set_iscsi_options method</h2>
 <h3>Parameters</h3>
 <table class="doxtable">
 <tr>
-<th>Name </th><th>Type </th><th>Description  </th></tr>
+<th>Name </th><th>Optional </th><th>Type </th><th>Description  </th></tr>
 <tr>
-<td>auth_file </td><td>string </td><td>Path to CHAP shared secret file for discovery session (default: "/usr/local/etc/spdk/auth.conf") </td></tr>
+<td>auth_file </td><td>Optional </td><td>string </td><td>Path to CHAP shared secret file (default: "") </td></tr>
 <tr>
-<td>node_base </td><td>string </td><td>Prefix of the name of iSCSI target node (default: "iqn.2016-06.io.spdk") </td></tr>
+<td>node_base </td><td>Optional </td><td>string </td><td>Prefix of the name of iSCSI target node (default: "iqn.2016-06.io.spdk") </td></tr>
 <tr>
-<td>nop_timeout </td><td>number </td><td>Timeout in seconds to nop-in request to the initiator (default: 60) </td></tr>
+<td>nop_timeout </td><td>Optional </td><td>number </td><td>Timeout in seconds to nop-in request to the initiator (default: 60) </td></tr>
 <tr>
-<td>nop_in_interval </td><td>number </td><td>Time interval in secs between nop-in requests by the target (default: 30) </td></tr>
+<td>nop_in_interval </td><td>Optional </td><td>number </td><td>Time interval in secs between nop-in requests by the target (default: 30) </td></tr>
 <tr>
-<td>disable_chap </td><td>boolean </td><td>CHAP for discovery session should be disabled (default: <code>false</code>) </td></tr>
+<td>disable_chap </td><td>Optional </td><td>boolean </td><td>CHAP for discovery session should be disabled (default: <code>false</code>) </td></tr>
 <tr>
-<td>require_chap </td><td>boolean </td><td>CHAP for discovery session should be required (default: <code>false</code>) </td></tr>
+<td>require_chap </td><td>Optional </td><td>boolean </td><td>CHAP for discovery session should be required (default: <code>false</code>) </td></tr>
 <tr>
-<td>mutual_chap </td><td>boolean </td><td>CHAP for discovery session should be unidirectional (<code>false</code>) or bidirectional (<code>true</code>) (default: <code>false</code>) </td></tr>
+<td>mutual_chap </td><td>Optional </td><td>boolean </td><td>CHAP for discovery session should be unidirectional (<code>false</code>) or bidirectional (<code>true</code>) (default: <code>false</code>) </td></tr>
 <tr>
-<td>chap_group </td><td>number </td><td>CHAP group ID for discovery session (default: 0) </td></tr>
+<td>chap_group </td><td>Optional </td><td>number </td><td>CHAP group ID for discovery session (default: 0) </td></tr>
 <tr>
-<td>max_sessions </td><td>number </td><td>Maximum number of sessions in the host (default: 128) </td></tr>
+<td>max_sessions </td><td>Optional </td><td>number </td><td>Maximum number of sessions in the host (default: 128) </td></tr>
 <tr>
-<td>max_queue_depth </td><td>number </td><td>Maximum number of outstanding I/Os per queue (default: 64) </td></tr>
+<td>max_queue_depth </td><td>Optional </td><td>number </td><td>Maximum number of outstanding I/Os per queue (default: 64) </td></tr>
 <tr>
-<td>max_connections_per_session </td><td>number </td><td>Session specific parameter, MaxConnections (default: 2) </td></tr>
+<td>max_connections_per_session </td><td>Optional </td><td>number </td><td>Session specific parameter, MaxConnections (default: 2) </td></tr>
 <tr>
-<td>default_time2wait </td><td>number </td><td>Session specific parameter, DefaultTime2Wait (default: 2) </td></tr>
+<td>default_time2wait </td><td>Optional </td><td>number </td><td>Session specific parameter, DefaultTime2Wait (default: 2) </td></tr>
 <tr>
-<td>default_time2retain </td><td>number </td><td>Session specific parameter, DefaultTime2Retain (default: 20) </td></tr>
+<td>default_time2retain </td><td>Optional </td><td>number </td><td>Session specific parameter, DefaultTime2Retain (default: 20) </td></tr>
 <tr>
-<td>first_burst_length </td><td>number </td><td>Session specific parameter, FirstBurstLength (default: 8192) </td></tr>
+<td>first_burst_length </td><td>Optional </td><td>number </td><td>Session specific parameter, FirstBurstLength (default: 8192) </td></tr>
 <tr>
-<td>immediate_data </td><td>boolean </td><td>Session specific parameter, ImmediateData (default: <code>true</code>) </td></tr>
+<td>immediate_data </td><td>Optional </td><td>boolean </td><td>Session specific parameter, ImmediateData (default: <code>true</code>) </td></tr>
 <tr>
-<td>error_recovery_level </td><td>number </td><td>Session specific parameter, ErrorRecoveryLevel (default: 0) </td></tr>
+<td>error_recovery_level </td><td>Optional </td><td>number </td><td>Session specific parameter, ErrorRecoveryLevel (default: 0) </td></tr>
 <tr>
-<td>allow_duplicated_isid </td><td>boolean </td><td>Allow duplicated initiator session ID (default: <code>false</code>) </td></tr>
+<td>allow_duplicated_isid </td><td>Optional </td><td>boolean </td><td>Allow duplicated initiator session ID (default: <code>false</code>) </td></tr>
 <tr>
-<td>min_connections_per_core </td><td>number </td><td>Allocation unit of connections per core (default: 4) </td></tr>
+<td>min_connections_per_core </td><td>Optional </td><td>number </td><td>Allocation unit of connections per core (default: 4) </td></tr>
 </table>
+<p>To load CHAP shared secret file, its path is required to specify explicitly in the parameter <code>auth_file</code>.</p>
 <p>Parameters <code>disable_chap</code> and <code>require_chap</code> are mutually exclusive. Parameters <code>no_discovery_auth</code>, <code>req_discovery_auth</code>, <code>req_discovery_auth_mutual</code>, and <code>discovery_auth_group</code> are still available instead of <code>disable_chap</code>, <code>require_chap</code>, <code>mutual_chap</code>, and <code>chap_group</code>, respectivey but will be removed in future releases.</p>
 <h3>Example</h3>
 <p>Example request:</p>
@@ -905,7 +906,25 @@ delete_iscsi_auth_group method</h2>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div><div class="line">  &quot;params&quot;: {</div><div class="line">    &quot;tag&quot;: 2</div><div class="line">  },</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;method&quot;: &quot;delete_iscsi_auth_group&quot;,</div><div class="line">  &quot;id&quot;: 1</div><div class="line">}</div></div><!-- fragment --><p>Example response:</p>
-<div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: true</div><div class="line">}</div></div><!-- fragment --><h2><a class="anchor" id="rpc_add_secret_to_iscsi_auth_group"></a>
+<div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: true</div><div class="line">}</div></div><!-- fragment --><h2><a class="anchor" id="rpc_get_iscsi_auth_groups"></a>
+get_iscsi_auth_groups</h2>
+<p>Show information about all existing authentication group for CHAP authentication.</p>
+<h3>Parameters</h3>
+<p>This method has no parameters.</p>
+<h3>Result</h3>
+<p>Array of objects describing authentication group.</p>
+<table class="doxtable">
+<tr>
+<th>Name </th><th>Type </th><th>Description  </th></tr>
+<tr>
+<td>tag </td><td>number </td><td>Authentication group tag </td></tr>
+<tr>
+<td>secrets </td><td>array </td><td>Array of <a class="el" href="jsonrpc.html#rpc_add_iscsi_auth_group_secret">secret</a> objects </td></tr>
+</table>
+<h3>Example</h3>
+<p>Example request:</p>
+<div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;method&quot;: &quot;get_iscsi_auth_groups&quot;,</div><div class="line">  &quot;id&quot;: 1</div><div class="line">}</div></div><!-- fragment --><p> Example response:</p>
+<div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: [</div><div class="line">    {</div><div class="line">      &quot;secrets&quot;: [</div><div class="line">        {</div><div class="line">          &quot;muser&quot;: &quot;mu1&quot;,</div><div class="line">          &quot;secret&quot;: &quot;s1&quot;,</div><div class="line">          &quot;user&quot;: &quot;u1&quot;,</div><div class="line">          &quot;msecret&quot;: &quot;ms1&quot;</div><div class="line">        }</div><div class="line">      ],</div><div class="line">      &quot;tag&quot;: 1</div><div class="line">    },</div><div class="line">    {</div><div class="line">      &quot;secrets&quot;: [</div><div class="line">        {</div><div class="line">          &quot;secret&quot;: &quot;s2&quot;,</div><div class="line">          &quot;user&quot;: &quot;u2&quot;</div><div class="line">        }</div><div class="line">      ],</div><div class="line">      &quot;tag&quot;: 2</div><div class="line">    }</div><div class="line">  ]</div><div class="line">}</div></div><!-- fragment --><h2><a class="anchor" id="rpc_add_secret_to_iscsi_auth_group"></a>
 add_secret_to_iscsi_auth_group</h2>
 <p>Add a secret to an existing authentication group for CHAP authentication.</p>
 <h3>Parameters</h3>

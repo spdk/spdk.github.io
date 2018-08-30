@@ -158,9 +158,9 @@ Command Line Parameters</h2>
 <tr>
 <td>-c </td><td>&ndash;config </td><td>string </td><td></td><td><a class="el" href="app_overview.html#cmd_arg_config_file">Configuration file</a> </td></tr>
 <tr>
-<td>-d </td><td>&ndash;limit-coredump </td><td>flag </td><td></td><td>. </td></tr>
+<td>-d </td><td>&ndash;limit-coredump </td><td>flag </td><td>false </td><td><a class="el" href="app_overview.html#cmd_arg_limit_coredump">Limit coredump</a> </td></tr>
 <tr>
-<td>-e </td><td>&ndash;tpoint-group-mask </td><td>integer </td><td>0x0 </td><td>. </td></tr>
+<td>-e </td><td>&ndash;tpoint-group-mask </td><td>integer </td><td>0x0 </td><td><a class="el" href="app_overview.html#cmd_arg_limit_tpoint_group_mask">Tracepoint group mask</a> </td></tr>
 <tr>
 <td>-g </td><td>&ndash;single-file-segments </td><td>flag </td><td></td><td><a class="el" href="app_overview.html#cmd_arg_single_file_segments">Create just one hugetlbfs file</a> </td></tr>
 <tr>
@@ -183,6 +183,13 @@ Command Line Parameters</h2>
 Configuration file</h3>
 <p>Historically, the SPDK applications were configured using a configuration file. This is still supported, but is considered deprecated in favor of JSON RPC configuration. See <a class="el" href="jsonrpc.html">JSON-RPC Methods</a> for details.</p>
 <p>Note that <code>--config</code> and <code>--wait-for-rpc</code> cannot be used at the same time.</p>
+<h3><a class="anchor" id="cmd_arg_limit_coredump"></a>
+Limit coredump</h3>
+<p>By default, an SPDK application will set resource limits for core file sizes to RLIM_INFINITY. Specifying <code>--limit-coredump</code> will not set the resource limits.</p>
+<h3><a class="anchor" id="cmd_arg_limit_tpoint_group_mask"></a>
+Tracepoint group mask</h3>
+<p>SPDK has an experimental low overhead tracing framework. Tracepoints in this framework are organized into tracepoint groups. By default, all tracepoint groups are disabled. <code>--tpoint-group-mask</code> can be used to enable a specific subset of tracepoint groups in the application.</p>
+<p>Note: Additional documentation on the tracepoint framework is in progress.</p>
 <h3><a class="anchor" id="cmd_arg_deferred_initialization"></a>
 Deferred initialization</h3>
 <p>SPDK applications progress through a set of states beginning with <code>STARTUP</code> and ending with <code>RUNTIME</code>.</p>

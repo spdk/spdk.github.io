@@ -16,6 +16,7 @@ var blobfs_8h =
     [ "spdk_fs_op_complete", "blobfs_8h.html#a1ef6840cc69a70a04608cedba0021fd7", null ],
     [ "spdk_fs_op_with_handle_complete", "blobfs_8h.html#aa52e9015dc9a3fd3d2167e7f0ae6bb55", null ],
     [ "spdk_file_close", "blobfs_8h.html#a9fda9d15c0266303df23b43bf59fc059", null ],
+    [ "spdk_file_get_id", "blobfs_8h.html#a816f18c23723f7211b0a5a277904b202", null ],
     [ "spdk_file_get_length", "blobfs_8h.html#a39d7f1424fe8921faeb91a012766370e", null ],
     [ "spdk_file_get_name", "blobfs_8h.html#a89b66cdbd661761eecfdc2613ddd744b", null ],
     [ "spdk_file_read", "blobfs_8h.html#aa414131c934d53b18ea45fd5bf82aaf9", null ],
