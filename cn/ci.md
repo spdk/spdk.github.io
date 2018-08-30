@@ -3,11 +3,11 @@ layout: ci
 title: 持续集成
 lang: cn
 ---
+<style>p{ text-indent: 2em; }</style>
+SPDK持续集成(CI)测试池是一个不断扩展的机器组，包括虚拟和物理机器，用于验证提交给SPDK代码库中每个补丁的功能。这个测试池目前由12台运行多种Linux (CentOS, Ubuntu,Fedora)操作系统和FreeBSD的机器组成。其中一些机器有硬件NVMe控制器(Intel P3700)和RDMA NICs (Mellanox ConnectX-4)，而其他机器使用模拟的NVMe驱动器和Soft-RoCE NICs。
 
-The SPDK continuous integration (CI) test pool is an ever expanding group of machines, both virtual and physical, dedicated to verifying the functionality of each patch submitted to the SPDK code base. The test pool currently consists of 12 machines running multiple flavors of Linux (CentOS, Ubuntu,Fedora) and FreeBSD. Some of the machines have hardware NVMe controllers (Intel P3700) and RDMA NICs (Mellanox ConnectX-4) while others use emulated NVMe drives and Soft-RoCE NICs.
+任何人都可以为SPDK代码库提交补丁。所有的补丁，在审查后，将在SPDK CI测试池进行测试。有关此过程的更多信息，请参见[开发页面](http://www.spdk.io/development/)。如果您对SPDK代码库有兴趣，但是不知道从哪里开始，请查看[Trello 板块](https://trello.com/b/3DvD85zi/continuous-integration)。
 
-Anyone is allowed to contribute patches to the SPDK code base. All patches, after review, will be tested against the SPDK CI test pool. For more information on this process, please see the [development](http://www.spdk.io/cn/development/) page. If you are interested in contributing to the spdk code base, but do not know where to begin, feel free to check out the [Trello board](http://www.spdk.io/cn/development/).
+如果您在SPDK CI测试池中遇到任何问题，或有任何意见或建议，请参考持续集成[Trello板块](https://trello.com/b/3dvd85zi/continuousintegration)。
 
-If you encounter any issues with the SPDK CI test pool or have comments or suggestions. Please contribute to the continuous integration [Trello board](https://trello.com/b/3DvD85zi/continuous-integration).
-
-The SPDK [homepage](http://www.spdk.io/cn/) is also version controlled and has an associated continuous integration test pool. Links to both the spdk test pool and webpage test pool are included at right.
+SPDK[网站](http://www.spdk.io/)也是实施版本控制的，并具有相关的持续集成测试池。右边栏里有SPDK测试池和网页测试池的链接。
