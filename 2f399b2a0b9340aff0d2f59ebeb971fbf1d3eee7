@@ -1,0 +1,96 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "cecdc047_485f12cf",
+        "filename": "cn/ci.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1011885
+      },
+      "writtenOn": "2018-08-30T07:34:42Z",
+      "side": 1,
+      "message": "中",
+      "range": {
+        "startLine": 7,
+        "startChar": 78,
+        "endLine": 7,
+        "endChar": 79
+      },
+      "revId": "2f399b2a0b9340aff0d2f59ebeb971fbf1d3eee7",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "b233bf63_0471742c",
+        "filename": "cn/ci.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 1011885
+      },
+      "writtenOn": "2018-08-30T07:34:42Z",
+      "side": 1,
+      "message": "可以删除？",
+      "range": {
+        "startLine": 9,
+        "startChar": 127,
+        "endLine": 9,
+        "endChar": 129
+      },
+      "revId": "2f399b2a0b9340aff0d2f59ebeb971fbf1d3eee7",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "8c88fc87_4b0da4a5",
+        "filename": "cn/ci.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 1011885
+      },
+      "writtenOn": "2018-08-30T07:34:42Z",
+      "side": 1,
+      "message": "参考",
+      "range": {
+        "startLine": 11,
+        "startChar": 60,
+        "endLine": 11,
+        "endChar": 62
+      },
+      "revId": "2f399b2a0b9340aff0d2f59ebeb971fbf1d3eee7",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "610ea424_5cbb202a",
+        "filename": "cn/ci.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 1011885
+      },
+      "writtenOn": "2018-08-30T07:34:42Z",
+      "side": 1,
+      "message": "也是实施",
+      "range": {
+        "startLine": 13,
+        "startChar": 56,
+        "endLine": 13,
+        "endChar": 58
+      },
+      "revId": "2f399b2a0b9340aff0d2f59ebeb971fbf1d3eee7",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
