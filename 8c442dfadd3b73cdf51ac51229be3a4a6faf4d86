@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5bf82859_e790f191",
+        "filename": "cn/ci.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 1010531
+      },
+      "writtenOn": "2018-08-30T16:55:12Z",
+      "side": 1,
+      "message": "These \u0026#160; can be removed - those are ASCII codes for spaces.\n\nYou also have an extra tab between Soft- and Roce. And it\u0027s RoCE (with the C and E capitalized).",
+      "revId": "8c442dfadd3b73cdf51ac51229be3a4a6faf4d86",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
