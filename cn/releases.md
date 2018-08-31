@@ -1,25 +1,29 @@
 ---
 layout: default
-title:  "版本发布"
+title:  "SPDK版本"
 lang: cn
 ---
-
-<span class="glyphicon glyphicon-download"></span> [Latest Release](https://github.com/spdk/spdk/releases)
+<style>p{
+text-indent: 2em; 
+}</style>
+<span class="glyphicon glyphicon-download"></span> [最新版本](https://github.com/spdk/spdk/releases)
 ---------
 
-All releases of SPDK are available through [GitHub](https://github.com/spdk/spdk/releases). GitHub serves as the master repository for all changes, so the master branch always contains the latest code.
+SPDK的所有版本都可以通过[GitHub](https://github.com/spdk/spdk/releases)获得。GitHub作为所有更改的主存储库，因而主分支始终包含最新的代码。
 
-Release Process
+发布流程：
 ---------------
 
-An SPDK release defines a public [API](https://en.wikipedia.org/wiki/Application_programming_interface) version, where the [public API](http://www.spdk.io/doc/files.html) comprises all of the C header files in the [include/spdk](https://github.com/spdk/spdk/tree/master/include/spdk) directory. The version names are in the format `YY.MM.vv`, where `YY` is year, `MM` is month, and `vv` is a minor version number and is often omitted. For example, the release in December of 2016 is version 16.12. The minor version is reserved for bug fix releases made at a later date that remain API compatible with the original release. SPDK makes no guarantees about API compatibility between releases with differing YY.MM versions, although every effort will be made to avoid breaking the API. Releases with identical YY.MM versions but differing minor version numbers are guaranteed to be API compatible. SPDK makes no guarantees about [ABI](https://en.wikipedia.org/wiki/Application_binary_interface) compatibility between any two versions at this time.
+SPDK定义了一个公共 [API](https://en.wikipedia.org/wiki/Application_programming_interface)版本, 其中[公共 API](http://www.spdk.io/doc/files.html) 包含 [include/spdk](https://github.com/spdk/spdk/tree/master/include/spdk) 目录中的所有C语言头文件。 版本名称格式为 `YY.MM.vv`, 其中 `YY` 表示年, `MM` 表示月,  `vv` 表示次要版本号，通常省略。
+例如，2016年12月发布的版本是16.12。次要版本是为以后发布的bug修复版本预留的，这些版本仍然与原始版本兼容。SPDK并不保证不同版本的发行版之间的API兼容性，尽管会尽一切努力避免破坏API。版本相同但次要版本号不同的版本保证是API兼容的。SPDK目前不保证两个版本之间的[API](https://en.wikipedia.org/wiki/Application_binary_interface)兼容性。
 
-SPDK uses a quarterly release cycle. The first two months of each quarter are an open window for merges. The final month of each quarter is intended only for bug fixes and documentation and so pull requests containing new features may be delayed, at the discretion of the maintainers. [A high level roadmap](http://www.spdk.io/roadmap/) for the next release is always posted at the start of the release cycle. The roadmap may be discussed on the SPDK mailing list at any time, and feedback is very welcome.
+SPDK 使用季度发布周期。每个季度的前两个月是一个开放的合并时期。每个季度的最后一个月仅用于bug修复和文档修改, 因此, 在维护人员的斟酌判断下，可能会延迟包含新功能的请求。下一个版本的[高层发展规划](http://www.spdk.io/cn/roadmap/)总是在发布周期伊始发布。路线图可以随时在SPDK邮寄列表中讨论，并且非常欢迎反馈意见。
 
-Bug Reports
+错误报告
 -----------
 
-Bug reports may be filed using [GitHub issues](https://github.com/spdk/spdk/issues) and should indicate the version of SPDK in question (or say `master` for the latest). Bugs will always be fixed on the `master` branch first, but may be back-ported to either of the two most recent releases if:
+错误报告可以使用[GitHub issues](https://github.com/spdk/spdk/issues)归档，并且应该指出有问题的SPDK版本(或者最新`master`）。
+错误将始终在`master`分支进行修复，但是可能会返回到两个最新版本中的任一个，如果：
 
-* A user requests the back-port by commenting on the issue stating to which version they'd like the bug back-ported
-* The bug fix does not require a breaking API change
+* 用户通过评论问题说明他们希望将错误返回到哪个版本来请求后端;
+* 错误修复不需要改变API。
