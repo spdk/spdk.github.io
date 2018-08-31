@@ -16,6 +16,24 @@
       "revId": "8c442dfadd3b73cdf51ac51229be3a4a6faf4d86",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "598e0429_92dbd2fc",
+        "filename": "cn/ci.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 1014486
+      },
+      "writtenOn": "2018-08-31T04:51:59Z",
+      "side": 1,
+      "message": "In Chinese, we need to indent the first line of every paragraph into two characters. That\u0027s the reason for the \u0026#160;. \nAnd Sorry for my forgetting to add sign-off in this patch. I am going to abandon this one and commit a newly modified patch.",
+      "parentUuid": "5bf82859_e790f191",
+      "revId": "8c442dfadd3b73cdf51ac51229be3a4a6faf4d86",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
     }
   ]
 }
