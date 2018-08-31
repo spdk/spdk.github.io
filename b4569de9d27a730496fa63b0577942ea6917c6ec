@@ -16,6 +16,24 @@
       "revId": "b4569de9d27a730496fa63b0577942ea6917c6ec",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "58fa8881_42013c1e",
+        "filename": "cn/ci.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 1010531
+      },
+      "writtenOn": "2018-08-31T19:03:36Z",
+      "side": 1,
+      "message": "If it really is critical that the paragraph is indented, there are CSS rules to do this automatically when the markdown file is translated to HTML. I can add those if necessary.",
+      "parentUuid": "35492f98_53f994e6",
+      "revId": "b4569de9d27a730496fa63b0577942ea6917c6ec",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
     }
   ]
 }
