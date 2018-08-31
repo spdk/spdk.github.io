@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "4d037540_81fe912e",
+        "filename": "cn/releases.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 1011885
+      },
+      "writtenOn": "2018-08-31T06:39:41Z",
+      "side": 1,
+      "message": "流程",
+      "range": {
+        "startLine": 12,
+        "startChar": 2,
+        "endLine": 12,
+        "endChar": 4
+      },
+      "revId": "ecbbbf326063bf6142f1d8c917997cf656aac9e7",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "c06f29ac_2eddef1a",
+        "filename": "cn/releases.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 1011885
+      },
+      "writtenOn": "2018-08-31T06:39:41Z",
+      "side": 1,
+      "message": "头文件",
+      "range": {
+        "startLine": 15,
+        "startChar": 241,
+        "endLine": 15,
+        "endChar": 245
+      },
+      "revId": "ecbbbf326063bf6142f1d8c917997cf656aac9e7",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
