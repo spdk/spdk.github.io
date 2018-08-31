@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "35492f98_53f994e6",
+        "filename": "cn/ci.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 1010531
+      },
+      "writtenOn": "2018-08-31T19:01:53Z",
+      "side": 1,
+      "message": "I understand that paragraphs are traditionally indented with spaces. They are in English as well. However, those rules apply to books and other printed media. On the web, additional padding is often added between paragraphs instead of using indentation. I did a quick search on the internet and the recommendations are the same for Chinese. I\u0027d prefer to not embed whitespace characters in the markdown if we can avoid it.",
+      "revId": "b4569de9d27a730496fa63b0577942ea6917c6ec",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
