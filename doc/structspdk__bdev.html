@@ -313,7 +313,8 @@ struct <a class="el" href="structspdk__bdev_1_1____bdev__internal__fields.html">
 </div><div class="memdoc">
 
 <p>Specifies whether the optimal_io_boundary is mandatory or only advisory. </p>
-<p>If set to true, the bdev layer will split I/O that span the optimal_io_boundary before submitting them to the bdev module. </p>
+<p>If set to true, the bdev layer will split READ and WRITE I/O that span the optimal_io_boundary before submitting them to the bdev module.</p>
+<p>Note that this field cannot be used to force splitting of UNMAP, WRITE_ZEROES or FLUSH I/O. </p>
 
 </div>
 </div>
