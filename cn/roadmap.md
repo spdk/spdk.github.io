@@ -4,83 +4,83 @@ title:  "路线图"
 lang: cn
 ---
 
-# Version 18.07 (planned for July 2018)
+# 18.07版本 (计划于2018年7月发布)
 
-Planned Features:
-* Improved SPDK memory management
-* [Full JSON-based Configuration](https://trello.com/c/U97MLUCJ)
-* Encryption bdev
-* NVMe-oF target improvements
+计划的新性能：
+* 改进SPDK内存管理
+* [完整的基于JSON的配置](https://trello.com/c/U97MLUCJ)
+* 加密bdev
+* NVMe-oF target改进
   - Spec compliance work
-  - Multi-path support
-  - Namespace change notification
-* QoS: Read, Write, and Bandwidth Rate Limiting
+  - 多路径支持
+  - 命名空间更改通知
+* QoS: 读取、写入和带宽限制。
 * NVMe
-  - Experimental Open Channel SSD support
+  - 试验开放通道SSD支持
   - Error injection
-  - Multi-process timeout handling
-* iSCSI initiator optimizations
+  - 多进程超时处理
+* iSCSI 启动程序优化
 * SPDKCLI
 
-# Version 18.04 (April 2018)
+# 18.04版本 (2018年4月)
 
-[v18.04 release](https://github.com/spdk/spdk/releases/tag/v18.04)
+[v18.04版本](https://github.com/spdk/spdk/releases/tag/v18.04)
 
-Features:
-* iSCSI target integration with VPP Userspace TCP/IP
-* Logical Volume Snapshot/Clone
-* [QoS in Bdev](https://trello.com/b/domGQvZc/qos-in-bdev)
-* Virtio-blk bdev support
-* Virtio with 2MB hugepages
+性能:
+* iSCSI target与VPP用户态TCP/IP的集成
+* 逻辑卷快照与克隆
+* [Bdev QoS](https://trello.com/b/domGQvZc/qos-in-bdev)
+* Virtio-blk bdev支持
+* 2MB大页Virtio
 
-Experimental Features:
+试验的性能:
 * iSCSI Initiator bdev
 * Vhost-NVMe
 * SPDKCLI
 * NVMe CMB
-* [JSON-based Configuration](https://trello.com/c/U97MLUCJ)
+* [基于JSON的配置](https://trello.com/c/U97MLUCJ)
 
-# Version 18.01 (January 2018)
+# 18.01版本 (2018年1月)
 
-[v18.01 release](https://github.com/spdk/spdk/releases/tag/v18.01)
+[v18.01版本](https://github.com/spdk/spdk/releases/tag/v18.01)
 
-* Blobstore and logical volume thin provisoning
-* Vhost live migration
+* Blobstore和逻辑卷精简配置
+* Vhost动态迁移
 
-# Version 17.10 (October 2017)
+# 17.10版本 (2017年10月)
 
-[v17.10 release](https://github.com/spdk/spdk/releases/tag/v17.10)
+[v17.10版本](https://github.com/spdk/spdk/releases/tag/v17.10)
 
-* [Logical Volumes](https://trello.com/b/oTWZdkL8/logical-volumes)
+* [逻辑卷](https://trello.com/b/oTWZdkL8/logical-volumes)
 * [Virtio scsi initatior](https://trello.com/b/Ym1jCdrR/vhost-initiator)
 * [NVML bdev for libpmemblk](https://trello.com/c/HGr8UEtA)
 * [Blobstore Cli](https://trello.com/c/0E3ADk7R)
 
-# Version 17.07 (July 2017)
+# 17.07版本 (2017年7月)
 
-[v17.07 release](https://github.com/spdk/spdk/releases/tag/v17.07)
+[v17.07版本](https://github.com/spdk/spdk/releases/tag/v17.07)
 
-* nvme-cli support
+* nvme-cli支持
 * Vhost blk target
-* Full stack hotplug: Removal support (iSCSI, NVMe-oF and vhost)
-* VTune Integration
-* Blobstore and vhost-scsi bug fixes
+* 全栈热插拔： 删除支持(iSCSI, NVMe-oF以及vhost)
+* VTune 集成
+* Blobstore和vhost-scsi bug修复
 
-# Version 17.03 (March 2017)
+# 17.03版本 (2017年3月)
 
-[v17.03 release](https://github.com/spdk/spdk/releases/tag/v17.03)
+[v17.03版本](https://github.com/spdk/spdk/releases/tag/v17.03)
 
 * Vhost-scsi target
 * BlobStore
 * BlobFS
-* RocksDB integration
+* RocksDB集成
 
-# Version 16.12 (December 2016)
+# 16.12版本 (2016年12月)
 
-[v16.12 release](https://github.com/spdk/spdk/releases/tag/v16.12)
+[v16.12版本](https://github.com/spdk/spdk/releases/tag/v16.12)
 
-* PCIe and NVMe Hotplug Support
+* PCIe和NVMe热插拔支持
 * NVMe-oF initator
-* NVMe-oF target virtual mode
-* Multi process support in NVMe driver
-* Ceph RBD bdev module
+* NVMe-oF target 虚拟模式
+* NVMe驱动中的多进程支持
+* Ceph RBD bdev模块
