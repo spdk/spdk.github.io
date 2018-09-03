@@ -34,6 +34,24 @@
       "revId": "b4569de9d27a730496fa63b0577942ea6917c6ec",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "15dc63b2_bdc036c0",
+        "filename": "cn/ci.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 1014486
+      },
+      "writtenOn": "2018-09-03T05:27:23Z",
+      "side": 1,
+      "message": "I think it is necessary for the paragraphs to be indented. I will do this through CSS rules and submit a new patch set later.",
+      "parentUuid": "58fa8881_42013c1e",
+      "revId": "b4569de9d27a730496fa63b0577942ea6917c6ec",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
     }
   ]
 }
