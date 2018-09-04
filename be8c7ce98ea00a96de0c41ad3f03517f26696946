@@ -1,0 +1,165 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "aeba6d20_2823a876",
+        "filename": "cn/roadmap.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 1011207
+      },
+      "writtenOn": "2018-09-04T05:45:08Z",
+      "side": 1,
+      "message": "功能",
+      "range": {
+        "startLine": 9,
+        "startChar": 4,
+        "endLine": 9,
+        "endChar": 6
+      },
+      "revId": "be8c7ce98ea00a96de0c41ad3f03517f26696946",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "740a2e1d_7013beba",
+        "filename": "cn/roadmap.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 1011207
+      },
+      "writtenOn": "2018-09-04T05:45:08Z",
+      "side": 1,
+      "message": "Open Channel (no need to translate)",
+      "range": {
+        "startLine": 19,
+        "startChar": 6,
+        "endLine": 19,
+        "endChar": 10
+      },
+      "revId": "be8c7ce98ea00a96de0c41ad3f03517f26696946",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "c45bb03b_7522ec62",
+        "filename": "cn/roadmap.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 1011207
+      },
+      "writtenOn": "2018-09-04T05:45:08Z",
+      "side": 1,
+      "message": "试验性质的Open Channel SSD支持",
+      "range": {
+        "startLine": 19,
+        "startChar": 4,
+        "endLine": 19,
+        "endChar": 15
+      },
+      "revId": "be8c7ce98ea00a96de0c41ad3f03517f26696946",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7a156068_693d0c85",
+        "filename": "cn/roadmap.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 1011207
+      },
+      "writtenOn": "2018-09-04T05:45:08Z",
+      "side": 1,
+      "message": "iSCSI Initiator优化",
+      "range": {
+        "startLine": 22,
+        "startChar": 2,
+        "endLine": 22,
+        "endChar": 14
+      },
+      "revId": "be8c7ce98ea00a96de0c41ad3f03517f26696946",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "623f8d9e_a4741666",
+        "filename": "cn/roadmap.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 29,
+      "author": {
+        "id": 1011207
+      },
+      "writtenOn": "2018-09-04T05:45:08Z",
+      "side": 1,
+      "message": "功能",
+      "range": {
+        "startLine": 29,
+        "startChar": 0,
+        "endLine": 29,
+        "endChar": 2
+      },
+      "revId": "be8c7ce98ea00a96de0c41ad3f03517f26696946",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "2964a4c1_f437a932",
+        "filename": "cn/roadmap.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 34,
+      "author": {
+        "id": 1011207
+      },
+      "writtenOn": "2018-09-04T05:45:08Z",
+      "side": 1,
+      "message": "支持2MB大页的Virtio",
+      "range": {
+        "startLine": 34,
+        "startChar": 2,
+        "endLine": 34,
+        "endChar": 13
+      },
+      "revId": "be8c7ce98ea00a96de0c41ad3f03517f26696946",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "87da6fe4_f4b5f5de",
+        "filename": "cn/roadmap.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 36,
+      "author": {
+        "id": 1011207
+      },
+      "writtenOn": "2018-09-04T05:45:08Z",
+      "side": 1,
+      "message": "试验性质的功能：",
+      "range": {
+        "startLine": 36,
+        "startChar": 0,
+        "endLine": 36,
+        "endChar": 5
+      },
+      "revId": "be8c7ce98ea00a96de0c41ad3f03517f26696946",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
