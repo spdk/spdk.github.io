@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "4c823670_827ce4f8",
+        "filename": "cn/releases.md",
+        "patchSetId": 7
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 1010531
+      },
+      "writtenOn": "2018-09-04T20:58:39Z",
+      "side": 1,
+      "message": "See this review that adds automatic indentation to all paragraphs: https://review.gerrithub.io/#/c/spdk/spdk.github.io/+/424605/",
+      "revId": "bdc868cf8d2dc4045b2d54ed02ee79fff3bf7589",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
