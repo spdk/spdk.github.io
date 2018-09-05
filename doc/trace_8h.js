@@ -18,6 +18,7 @@ var trace_8h =
     [ "SPDK_TRACE_MAX_TPOINT_ID", "trace_8h.html#a6e4ac750b250bebb9fdca7fdb8733c6f", null ],
     [ "SPDK_TRACE_REGISTER_FN", "trace_8h.html#a7410f672849875c174b4b4abaf8dbfdb", null ],
     [ "SPDK_TRACE_SIZE", "trace_8h.html#af78721b3797d71e79aea650856ca3d0b", null ],
+    [ "_spdk_trace_record", "trace_8h.html#a81015aafde61e9a86178d81373a55494", null ],
     [ "spdk_trace_add_register_fn", "trace_8h.html#aa87447ad261172809a5394ee37f601df", null ],
     [ "spdk_trace_cleanup", "trace_8h.html#a7cdec16a6ee14c87b0bf5d0666d9a0cb", null ],
     [ "spdk_trace_clear_tpoints", "trace_8h.html#a7ecb50e2b95e9c75eeddd9884ec0aafe", null ],
@@ -25,11 +26,13 @@ var trace_8h =
     [ "spdk_trace_get_tpoint_group_mask", "trace_8h.html#aa7331d8e039fadc27049efd27c1d49a8", null ],
     [ "spdk_trace_get_tpoint_mask", "trace_8h.html#a346327ec1addd7eeb87963b40cec1821", null ],
     [ "spdk_trace_init", "trace_8h.html#af604955a293c41c3eb9217af94b893a4", null ],
-    [ "spdk_trace_record", "trace_8h.html#a9246bd0dbe13fe0eb4970fd861802666", null ],
+    [ "spdk_trace_record", "trace_8h.html#afc39939001d5fd77c208808141534dde", null ],
+    [ "spdk_trace_record_tsc", "trace_8h.html#aa38bbe4d79cf0aca5a7d18956a0a62f7", null ],
     [ "spdk_trace_register_description", "trace_8h.html#a81cabe02d5c28328945350c25cda3861", null ],
     [ "spdk_trace_register_object", "trace_8h.html#a78c1e25f823c6e98da3f99c515715ebe", null ],
     [ "spdk_trace_register_owner", "trace_8h.html#a00597b31c0f7a67d7dbf306cb628e7fc", null ],
     [ "spdk_trace_set_tpoint_group_mask", "trace_8h.html#aa0ade5c1286d121c2eafeae8918169db", null ],
     [ "spdk_trace_set_tpoints", "trace_8h.html#a6f2131f1fc35d495f51552eb2838630b", null ],
-    [ "g_trace_flags", "trace_8h.html#a92b06e647e386cf0896e0a38499cf494", null ]
+    [ "g_trace_flags", "trace_8h.html#a92b06e647e386cf0896e0a38499cf494", null ],
+    [ "g_trace_histories", "trace_8h.html#a2f65bc76d39a775d401996a01bcba195", null ]
 ];
