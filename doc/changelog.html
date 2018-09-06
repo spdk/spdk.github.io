@@ -152,6 +152,7 @@ v18.10: (Upcoming Release)</h1>
 <p>The SPDK iSCSI target supports an AuthFile which can be used to load CHAP shared secrets when the iSCSI target starts. SPDK previously provided a default location for this file (<code>/usr/local/etc/spdk/auth.conf</code>) if none was specified. This default has been removed. Users must now explicitly specify the location of this file to load CHAP shared secrets from a file, or use the related iSCSI RPC methods to add them at runtime.</p>
 <h2>Miscellaneous</h2>
 <p>The ReactorMask config file parameter has been deprecated. Users should use the -m or &ndash;cpumask command line option to specify the CPU core mask for the application.</p>
+<p>Default config file pathnames have been removed from iscsi_tgt, nvmf_tgt and vhost. Config file pathnames may now only be specified using the -c command line option.</p>
 <h1><a class="anchor" id="changelog-v18-07"></a>
 v18.07:</h1>
 <h2>bdev</h2>

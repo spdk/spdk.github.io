@@ -178,7 +178,7 @@ void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="st
 <tr class="memdesc:a62f46d0a9b8ead0a63e1f5637dacd37d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function called to return a text string representing the module's configuration options for inclusion in a configuration file. <br /></td></tr>
 <tr class="separator:a62f46d0a9b8ead0a63e1f5637dacd37d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0e9535f64f9807afa310c63dd4675a8c"><td class="memItemLeft" align="right" valign="top">int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev__module.html#a0e9535f64f9807afa310c63dd4675a8c">config_json</a> )(struct spdk_json_write_ctx *w)</td></tr>
-<tr class="memdesc:a0e9535f64f9807afa310c63dd4675a8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function called to return a text string representing the module's configuration options for inclusion in a configuration file.  <a href="#a0e9535f64f9807afa310c63dd4675a8c">More...</a><br /></td></tr>
+<tr class="memdesc:a0e9535f64f9807afa310c63dd4675a8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function called to return a text string representing the module-level JSON RPCs required to regenerate the current configuration.  <a href="#a0e9535f64f9807afa310c63dd4675a8c">More...</a><br /></td></tr>
 <tr class="separator:a0e9535f64f9807afa310c63dd4675a8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a61730b751caac0b4fb3f343460789a0b"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev__module.html#a61730b751caac0b4fb3f343460789a0b">name</a></td></tr>
 <tr class="memdesc:a61730b751caac0b4fb3f343460789a0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Name for the modules being defined.  <a href="#a61730b751caac0b4fb3f343460789a0b">More...</a><br /></td></tr>
@@ -252,7 +252,9 @@ struct <a class="el" href="structspdk__bdev__module_1_1____bdev__module__interna
       </table>
 </div><div class="memdoc">
 
-<p>Function called to return a text string representing the module's configuration options for inclusion in a configuration file. </p>
+<p>Function called to return a text string representing the module-level JSON RPCs required to regenerate the current configuration. </p>
+<p>This will include module-level configuration options, or methods to construct bdevs when one RPC may generate multiple bdevs (for example, an NVMe controller with multiple namespaces).</p>
+<p>Per-bdev JSON RPCs (where one "construct" RPC always creates one bdev) may be implemented here, or by the bdev's write_config_json function - but not both. Bdev module implementers may choose which mechanism to use based on the module's design.</p>
 <dl class="section return"><dt>Returns</dt><dd>0 on success or Bdev specific negative error code. </dd></dl>
 
 </div>

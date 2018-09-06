@@ -48,7 +48,8 @@ var user_guides =
           [ "Subsystem Configuration", "nvmf.html#nvmf_config_subsystem", null ],
           [ "Assigning CPU Cores to the NVMe over Fabrics Target", "nvmf.html#nvmf_config_lcore", null ]
         ] ],
-        [ "Configuring the Linux NVMe over Fabrics Host", "nvmf.html#nvmf_host", null ]
+        [ "Configuring the Linux NVMe over Fabrics Host", "nvmf.html#nvmf_host", null ],
+        [ "Enabling NVMe-oF target tracepoints for offline analysis and debug", "nvmf.html#nvmf_trace", null ]
       ] ]
     ] ],
     [ "vhost Target", "vhost.html", [

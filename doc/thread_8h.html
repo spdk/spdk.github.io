@@ -222,9 +222,9 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 <tr class="memitem:a9c26cbd781063f5ee627d6aba2c73fe3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="thread_8h.html#a9c26cbd781063f5ee627d6aba2c73fe3">spdk_poller_unregister</a> (struct spdk_poller **ppoller)</td></tr>
 <tr class="memdesc:a9c26cbd781063f5ee627d6aba2c73fe3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unregister a poller on the current thread.  <a href="#a9c26cbd781063f5ee627d6aba2c73fe3">More...</a><br /></td></tr>
 <tr class="separator:a9c26cbd781063f5ee627d6aba2c73fe3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6a0b6fdbfd40673bce799a1a7ebab187"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="thread_8h.html#a6a0b6fdbfd40673bce799a1a7ebab187">spdk_io_device_register</a> (void *io_device, <a class="el" href="thread_8h.html#aed1d14292cfee8553d4a1ebb519b210a">spdk_io_channel_create_cb</a> create_cb, <a class="el" href="thread_8h.html#a75aa6a61877f23f79bb75c8fc5e68202">spdk_io_channel_destroy_cb</a> destroy_cb, uint32_t ctx_size)</td></tr>
-<tr class="memdesc:a6a0b6fdbfd40673bce799a1a7ebab187"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register the opaque io_device context as an I/O device.  <a href="#a6a0b6fdbfd40673bce799a1a7ebab187">More...</a><br /></td></tr>
-<tr class="separator:a6a0b6fdbfd40673bce799a1a7ebab187"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75f5c71056d8c39ff05a6610d55edcf5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="thread_8h.html#a75f5c71056d8c39ff05a6610d55edcf5">spdk_io_device_register</a> (void *io_device, <a class="el" href="thread_8h.html#aed1d14292cfee8553d4a1ebb519b210a">spdk_io_channel_create_cb</a> create_cb, <a class="el" href="thread_8h.html#a75aa6a61877f23f79bb75c8fc5e68202">spdk_io_channel_destroy_cb</a> destroy_cb, uint32_t ctx_size, const char *name)</td></tr>
+<tr class="memdesc:a75f5c71056d8c39ff05a6610d55edcf5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register the opaque io_device context as an I/O device.  <a href="#a75f5c71056d8c39ff05a6610d55edcf5">More...</a><br /></td></tr>
+<tr class="separator:a75f5c71056d8c39ff05a6610d55edcf5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4c6c3df3a611c10c176cb87966c622f0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="thread_8h.html#a4c6c3df3a611c10c176cb87966c622f0">spdk_io_device_unregister</a> (void *io_device, <a class="el" href="thread_8h.html#ae044f4141737c7f2df49cdfb03fd58ca">spdk_io_device_unregister_cb</a> unregister_cb)</td></tr>
 <tr class="memdesc:a4c6c3df3a611c10c176cb87966c622f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unregister the opaque io_device context as an I/O device.  <a href="#a4c6c3df3a611c10c176cb87966c622f0">More...</a><br /></td></tr>
 <tr class="separator:a4c6c3df3a611c10c176cb87966c622f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -725,7 +725,7 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 </div><div class="memdoc">
 
 <p>Get an I/O channel for the specified io_device to be used by the calling thread. </p>
-<p>The io_device context pointer specified must have previously been registered using <a class="el" href="thread_8h.html#a6a0b6fdbfd40673bce799a1a7ebab187" title="Register the opaque io_device context as an I/O device. ">spdk_io_device_register()</a>. If an existing I/O channel does not exist yet for the given io_device on the calling thread, it will allocate an I/O channel and invoke the create_cb function pointer specified in <a class="el" href="thread_8h.html#a6a0b6fdbfd40673bce799a1a7ebab187" title="Register the opaque io_device context as an I/O device. ">spdk_io_device_register()</a>. If an I/O channel already exists for the given io_device on the calling thread, its reference is returned rather than creating a new I/O channel.</p>
+<p>The io_device context pointer specified must have previously been registered using <a class="el" href="thread_8h.html#a75f5c71056d8c39ff05a6610d55edcf5" title="Register the opaque io_device context as an I/O device. ">spdk_io_device_register()</a>. If an existing I/O channel does not exist yet for the given io_device on the calling thread, it will allocate an I/O channel and invoke the create_cb function pointer specified in <a class="el" href="thread_8h.html#a75f5c71056d8c39ff05a6610d55edcf5" title="Register the opaque io_device context as an I/O device. ">spdk_io_device_register()</a>. If an I/O channel already exists for the given io_device on the calling thread, its reference is returned rather than creating a new I/O channel.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">io_device</td><td>The pointer to io_device context.</td></tr>
@@ -930,8 +930,8 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 
 </div>
 </div>
-<a id="a6a0b6fdbfd40673bce799a1a7ebab187"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6a0b6fdbfd40673bce799a1a7ebab187">&#9670;&nbsp;</a></span>spdk_io_device_register()</h2>
+<a id="a75f5c71056d8c39ff05a6610d55edcf5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a75f5c71056d8c39ff05a6610d55edcf5">&#9670;&nbsp;</a></span>spdk_io_device_register()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -958,7 +958,13 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>ctx_size</em>&#160;</td>
+          <td class="paramname"><em>ctx_size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>name</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -976,6 +982,7 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
     <tr><td class="paramname">create_cb</td><td>Callback function invoked to allocate any resources required for a new I/O channel. </td></tr>
     <tr><td class="paramname">destroy_cb</td><td>Callback function invoked to release the resources for an I/O channel. </td></tr>
     <tr><td class="paramname">ctx_size</td><td>The size of the context buffer allocated to store references to allocated I/O channel resources. </td></tr>
+    <tr><td class="paramname">name</td><td>A string name for the device used only for debugging. Optional - may be NULL. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1110,7 +1117,7 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 
 <p>Release a reference to an I/O channel. </p>
 <p>This happens asynchronously.</p>
-<p>Actual release will happen on the same thread that called <a class="el" href="thread_8h.html#a8537c42a7aa203b50578efed509d9ba8" title="Get an I/O channel for the specified io_device to be used by the calling thread. ">spdk_get_io_channel()</a> for the specified I/O channel. If this releases the last reference to the I/O channel, The destroy_cb function specified in <a class="el" href="thread_8h.html#a6a0b6fdbfd40673bce799a1a7ebab187" title="Register the opaque io_device context as an I/O device. ">spdk_io_device_register()</a> will be invoked to release any associated resources.</p>
+<p>Actual release will happen on the same thread that called <a class="el" href="thread_8h.html#a8537c42a7aa203b50578efed509d9ba8" title="Get an I/O channel for the specified io_device to be used by the calling thread. ">spdk_get_io_channel()</a> for the specified I/O channel. If this releases the last reference to the I/O channel, The destroy_cb function specified in <a class="el" href="thread_8h.html#a75f5c71056d8c39ff05a6610d55edcf5" title="Register the opaque io_device context as an I/O device. ">spdk_io_device_register()</a> will be invoked to release any associated resources.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">ch</td><td>I/O channel to release a reference. </td></tr>

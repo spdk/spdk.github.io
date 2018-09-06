@@ -159,9 +159,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nbd_
 <tr class="memitem:ac8a2c390228c132eda95dcffdc703154"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nbd_8h.html#ac8a2c390228c132eda95dcffdc703154">spdk_nbd_stop</a> (struct spdk_nbd_disk *nbd)</td></tr>
 <tr class="memdesc:ac8a2c390228c132eda95dcffdc703154"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stop the running network block device safely.  <a href="#ac8a2c390228c132eda95dcffdc703154">More...</a><br /></td></tr>
 <tr class="separator:ac8a2c390228c132eda95dcffdc703154"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7ca156715c43995bea24a642e563ed39"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nbd_8h.html#a7ca156715c43995bea24a642e563ed39">spdk_nbd_write_config_json</a> (struct spdk_json_write_ctx *w, struct spdk_event *done_ev)</td></tr>
-<tr class="memdesc:a7ca156715c43995bea24a642e563ed39"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write NBD subsystem configuration into provided JSON context.  <a href="#a7ca156715c43995bea24a642e563ed39">More...</a><br /></td></tr>
-<tr class="separator:a7ca156715c43995bea24a642e563ed39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07e225fef1fa5f8ec41efeecbff1ff31"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nbd_8h.html#a07e225fef1fa5f8ec41efeecbff1ff31">spdk_nbd_write_config_json</a> (struct spdk_json_write_ctx *w)</td></tr>
+<tr class="memdesc:a07e225fef1fa5f8ec41efeecbff1ff31"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write NBD subsystem configuration into provided JSON context.  <a href="#a07e225fef1fa5f8ec41efeecbff1ff31">More...</a><br /></td></tr>
+<tr class="separator:a07e225fef1fa5f8ec41efeecbff1ff31"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Network block device layer. </p>
@@ -251,8 +251,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nbd_
 
 </div>
 </div>
-<a id="a7ca156715c43995bea24a642e563ed39"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7ca156715c43995bea24a642e563ed39">&#9670;&nbsp;</a></span>spdk_nbd_write_config_json()</h2>
+<a id="a07e225fef1fa5f8ec41efeecbff1ff31"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a07e225fef1fa5f8ec41efeecbff1ff31">&#9670;&nbsp;</a></span>spdk_nbd_write_config_json()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -261,18 +261,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nbd_
           <td class="memname">void spdk_nbd_write_config_json </td>
           <td>(</td>
           <td class="paramtype">struct spdk_json_write_ctx *&#160;</td>
-          <td class="paramname"><em>w</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"><em>w</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">struct spdk_event *&#160;</td>
-          <td class="paramname"><em>done_ev</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -281,7 +271,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nbd_
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">w</td><td>JSON write context </td></tr>
-    <tr><td class="paramname">done_ev</td><td>call this event when done. </td></tr>
   </table>
   </dd>
 </dl>

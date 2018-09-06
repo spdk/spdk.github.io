@@ -24,7 +24,7 @@ var thread_8h =
     [ "spdk_io_channel_iter_get_channel", "thread_8h.html#a83adef6c3df9568bdea346b8e7dcbaa5", null ],
     [ "spdk_io_channel_iter_get_ctx", "thread_8h.html#add3ebaac7b55dddb239c720c80d97dea", null ],
     [ "spdk_io_channel_iter_get_io_device", "thread_8h.html#a939935cee4dac6636f2b7c6db0b2fec1", null ],
-    [ "spdk_io_device_register", "thread_8h.html#a6a0b6fdbfd40673bce799a1a7ebab187", null ],
+    [ "spdk_io_device_register", "thread_8h.html#a75f5c71056d8c39ff05a6610d55edcf5", null ],
     [ "spdk_io_device_unregister", "thread_8h.html#a4c6c3df3a611c10c176cb87966c622f0", null ],
     [ "spdk_poller_register", "thread_8h.html#a6b3e883ddce01ae8d93541304d1e9126", null ],
     [ "spdk_poller_unregister", "thread_8h.html#a9c26cbd781063f5ee627d6aba2c73fe3", null ],
