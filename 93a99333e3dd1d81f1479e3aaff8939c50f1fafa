@@ -1,0 +1,73 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "a97c41d9_25d2af53",
+        "filename": "cn/news.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 1011207
+      },
+      "writtenOn": "2018-09-06T07:47:39Z",
+      "side": 1,
+      "message": "SSD",
+      "range": {
+        "startLine": 12,
+        "startChar": 47,
+        "endLine": 12,
+        "endChar": 50
+      },
+      "revId": "93a99333e3dd1d81f1479e3aaff8939c50f1fafa",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "4e8c9778_c4ecaca3",
+        "filename": "cn/news.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 1011207
+      },
+      "writtenOn": "2018-09-06T07:47:39Z",
+      "side": 1,
+      "message": "SSD",
+      "range": {
+        "startLine": 17,
+        "startChar": 51,
+        "endLine": 17,
+        "endChar": 54
+      },
+      "revId": "93a99333e3dd1d81f1479e3aaff8939c50f1fafa",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fadc2bd0_90d60ed5",
+        "filename": "cn/news.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 1011207
+      },
+      "writtenOn": "2018-09-06T07:47:39Z",
+      "side": 1,
+      "message": "SSD",
+      "range": {
+        "startLine": 22,
+        "startChar": 24,
+        "endLine": 22,
+        "endChar": 27
+      },
+      "revId": "93a99333e3dd1d81f1479e3aaff8939c50f1fafa",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
