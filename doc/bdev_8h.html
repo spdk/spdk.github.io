@@ -518,6 +518,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_set_opts</b>
 </div><div class="memdoc">
 
 <p>Close a previously opened block device. </p>
+<p>Must be called on the same thread that the <a class="el" href="bdev_8h.html#aeacdfd5debd3917d84d18be0277203ff" title="Open a block device for I/O operations. ">spdk_bdev_open()</a> was performed on.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">desc</td><td>Block device descriptor to close. </td></tr>
@@ -1563,7 +1564,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_set_opts</b>
   <table class="params">
     <tr><td class="paramname">bdev</td><td>Block device to open. </td></tr>
     <tr><td class="paramname">write</td><td>true is read/write access requested, false if read-only </td></tr>
-    <tr><td class="paramname">remove_cb</td><td>callback function for hot remove the device. </td></tr>
+    <tr><td class="paramname">remove_cb</td><td>callback function for hot remove the device. Will always be called on the same thread that <a class="el" href="bdev_8h.html#aeacdfd5debd3917d84d18be0277203ff" title="Open a block device for I/O operations. ">spdk_bdev_open()</a> was called on. </td></tr>
     <tr><td class="paramname">remove_ctx</td><td>param for hot removal callback function. </td></tr>
     <tr><td class="paramname">desc</td><td>output parameter for the descriptor when operation is successful </td></tr>
   </table>
