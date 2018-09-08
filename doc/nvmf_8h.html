@@ -206,6 +206,9 @@ Functions</h2></td></tr>
 <tr class="memitem:afa33cb1cf39e04ee533f874ed82e24e5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#afa33cb1cf39e04ee533f874ed82e24e5">spdk_nvmf_qpair_disconnect</a> (struct spdk_nvmf_qpair *qpair, nvmf_qpair_disconnect_cb cb_fn, void *ctx)</td></tr>
 <tr class="memdesc:afa33cb1cf39e04ee533f874ed82e24e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disconnect an NVMe-oF qpair.  <a href="#afa33cb1cf39e04ee533f874ed82e24e5">More...</a><br /></td></tr>
 <tr class="separator:afa33cb1cf39e04ee533f874ed82e24e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a145a3a2e51799674837dcb1ebf9a13c3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#a145a3a2e51799674837dcb1ebf9a13c3">spdk_nvmf_qpair_get_peer_trid</a> (struct spdk_nvmf_qpair *qpair, struct <a class="el" href="structspdk__nvme__transport__id.html">spdk_nvme_transport_id</a> *trid)</td></tr>
+<tr class="memdesc:a145a3a2e51799674837dcb1ebf9a13c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the peer's transport ID for this queue pair.  <a href="#a145a3a2e51799674837dcb1ebf9a13c3">More...</a><br /></td></tr>
+<tr class="separator:a145a3a2e51799674837dcb1ebf9a13c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad1b7f34d31e34d784fb54b70b02bdb15"><td class="memItemLeft" align="right" valign="top">struct spdk_nvmf_subsystem *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#ad1b7f34d31e34d784fb54b70b02bdb15">spdk_nvmf_subsystem_create</a> (struct spdk_nvmf_tgt *tgt, const char *nqn, enum <a class="el" href="nvmf__spec_8h.html#a808272f050cc373f3a90871c1528afd4">spdk_nvmf_subtype</a> type, uint32_t num_ns)</td></tr>
 <tr class="memdesc:ad1b7f34d31e34d784fb54b70b02bdb15"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create an NVMe-oF subsystem.  <a href="#ad1b7f34d31e34d784fb54b70b02bdb15">More...</a><br /></td></tr>
 <tr class="separator:ad1b7f34d31e34d784fb54b70b02bdb15"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -715,6 +718,46 @@ Functions</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>0 upon success. </dd>
 <dd>
 -ENOMEM if the function specific context could not be allocated. </dd></dl>
+
+</div>
+</div>
+<a id="a145a3a2e51799674837dcb1ebf9a13c3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a145a3a2e51799674837dcb1ebf9a13c3">&#9670;&nbsp;</a></span>spdk_nvmf_qpair_get_peer_trid()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_nvmf_qpair_get_peer_trid </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_nvmf_qpair *&#160;</td>
+          <td class="paramname"><em>qpair</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structspdk__nvme__transport__id.html">spdk_nvme_transport_id</a> *&#160;</td>
+          <td class="paramname"><em>trid</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the peer's transport ID for this queue pair. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">qpair</td><td>The NVMe-oF qpair </td></tr>
+    <tr><td class="paramname">trid</td><td>Output parameter that will contain the transport id.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 for success. </dd>
+<dd>
+-EINVAL if the qpair is not connected. </dd></dl>
 
 </div>
 </div>

@@ -1,5 +1,6 @@
 var NAVTREEINDEX8 =
 {
+"scsi_8h.html#a44856a35a6e672ad81d9a687b014531d":[13,0,40,2],
 "scsi_8h.html#a4879e8ff64fa53ade495996347a10723":[13,0,40,43],
 "scsi_8h.html#a496221276fda4f6c6177968cb1081000":[13,0,40,41],
 "scsi_8h.html#a4b9abfb76360c093b270174c0a9943b2":[13,0,40,45],
@@ -248,6 +249,5 @@ var NAVTREEINDEX8 =
 "scsi__spec_8h.html#a9e2b2add18fac5a9110df411076170dcadb01e7bca83ef635b84c80f542640a88":[13,0,41,66,43],
 "scsi__spec_8h.html#a9e2b2add18fac5a9110df411076170dcae5ca476cdc0c9bf13eb6c06c94cb90e1":[13,0,41,66,50],
 "scsi__spec_8h.html#a9e2b2add18fac5a9110df411076170dcaecb1fa8123fbdbe117c8d8033f45efa7":[13,0,41,66,16],
-"scsi__spec_8h.html#a9e2b2add18fac5a9110df411076170dcaf060ab10145d5f0300dab5a4624e6010":[13,0,41,66,15],
-"scsi__spec_8h.html#a9e2b2add18fac5a9110df411076170dcaf680b1afa1d4f8dd9d9e6ac9399847cd":[13,0,41,66,23]
+"scsi__spec_8h.html#a9e2b2add18fac5a9110df411076170dcaf060ab10145d5f0300dab5a4624e6010":[13,0,41,66,15]
 };

@@ -457,6 +457,7 @@ var searchData=
   ['spdk_5fnvmf_5fpoll_5fgroup_5fcreate',['spdk_nvmf_poll_group_create',['../nvmf_8h.html#a3b1de2ab69c992ce2c732c354a08238f',1,'nvmf.h']]],
   ['spdk_5fnvmf_5fpoll_5fgroup_5fdestroy',['spdk_nvmf_poll_group_destroy',['../nvmf_8h.html#aa38d9ac50a79883df08d7faf3a647018',1,'nvmf.h']]],
   ['spdk_5fnvmf_5fqpair_5fdisconnect',['spdk_nvmf_qpair_disconnect',['../nvmf_8h.html#afa33cb1cf39e04ee533f874ed82e24e5',1,'nvmf.h']]],
+  ['spdk_5fnvmf_5fqpair_5fget_5fpeer_5ftrid',['spdk_nvmf_qpair_get_peer_trid',['../nvmf_8h.html#a145a3a2e51799674837dcb1ebf9a13c3',1,'nvmf.h']]],
   ['spdk_5fnvmf_5fsubsystem_5fadd_5fhost',['spdk_nvmf_subsystem_add_host',['../nvmf_8h.html#a19b3442b7eb75c234c3e3090d2b5add3',1,'nvmf.h']]],
   ['spdk_5fnvmf_5fsubsystem_5fadd_5flistener',['spdk_nvmf_subsystem_add_listener',['../nvmf_8h.html#a46521b556107a0ab58998adfeee8795f',1,'nvmf.h']]],
   ['spdk_5fnvmf_5fsubsystem_5fadd_5fns',['spdk_nvmf_subsystem_add_ns',['../nvmf_8h.html#aef42bb5a50c6f6fa1713c060d66c103d',1,'nvmf.h']]],
