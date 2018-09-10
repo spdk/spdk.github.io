@@ -68,7 +68,7 @@ their own patches to signify that the patch should not be committed.
 <a id="gerrithub"></a>
 ## GerritHub Configuration
 
-You'll log in to GerritHub using your GitHub account. Once logged in, in the
+Log into GerritHub using your GitHub account credentials. Once logged in, in the
 top right corner click your user name and select 'Settings'. You should set up
 the following:
 
