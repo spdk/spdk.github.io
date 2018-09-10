@@ -68,9 +68,8 @@ their own patches to signify that the patch should not be committed.
 <a id="gerrithub"></a>
 ## GerritHub Configuration
 
-You'll log in to GerritHub using your GitHub account. Once logged in, in the
-top right corner click your user name and select 'Settings'. You should set up
-the following:
+Log into [GerritHub](https://review.gerrithub.io) using your GitHub account credentials. Once logged in, in the
+top right corner click your user name and select 'Settings'. You should set up the following:
 
 * `Profile`: Verify that the information is correct here.
 * `HTTP Password`: Generate a password. You'll use this password when prompted by git (not your GitHub password!).
