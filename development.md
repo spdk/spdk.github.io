@@ -277,7 +277,6 @@ The current list of SPDK core maintainers includes:
 * Jim Harris (IRC: jimharris)
 * Changpeng Liu (IRC: changpe1)
 * Shuhei Matsumoto (IRC: Shuhei)
-* Daniel Verkamp (IRC: drv)
 * Ben Walker (IRC: bwalker)
 
 The bulk of this technical oversight is achieved through reviewing and approving patches.  Patches
@@ -297,3 +296,7 @@ Other roles and responsibilities of the core maintainers include:
 * Fostering a positive, productive community
 * Participating in project roadmap definition
 * Identifying and organizing development tasks
+
+### Core Maintainers Emeritus
+
+* Daniel Verkamp (2015-2018)
