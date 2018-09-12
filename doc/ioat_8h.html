@@ -171,9 +171,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a784c1a69962e0964cf6988badd945b6f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ioat_8h.html#a784c1a69962e0964cf6988badd945b6f">spdk_ioat_probe</a> (void *cb_ctx, <a class="el" href="ioat_8h.html#a41d999ded01b3bc2b1a1bce0c48083a7">spdk_ioat_probe_cb</a> probe_cb, <a class="el" href="ioat_8h.html#a8826bf4e7c57228794f486368217a494">spdk_ioat_attach_cb</a> attach_cb)</td></tr>
 <tr class="memdesc:a784c1a69962e0964cf6988badd945b6f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enumerate the I/OAT devices attached to the system and attach the userspace I/OAT driver to them if desired.  <a href="#a784c1a69962e0964cf6988badd945b6f">More...</a><br /></td></tr>
 <tr class="separator:a784c1a69962e0964cf6988badd945b6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae6d4f2be5a4facdd9e59decf720e0328"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ioat_8h.html#ae6d4f2be5a4facdd9e59decf720e0328">spdk_ioat_detach</a> (struct spdk_ioat_chan *ioat)</td></tr>
-<tr class="memdesc:ae6d4f2be5a4facdd9e59decf720e0328"><td class="mdescLeft">&#160;</td><td class="mdescRight">Detach specified device returned by <a class="el" href="ioat_8h.html#a784c1a69962e0964cf6988badd945b6f" title="Enumerate the I/OAT devices attached to the system and attach the userspace I/OAT driver to them if d...">spdk_ioat_probe()</a> from the I/OAT driver.  <a href="#ae6d4f2be5a4facdd9e59decf720e0328">More...</a><br /></td></tr>
-<tr class="separator:ae6d4f2be5a4facdd9e59decf720e0328"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5da102ae08cc5bd5fbf89b01d8ef1807"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ioat_8h.html#a5da102ae08cc5bd5fbf89b01d8ef1807">spdk_ioat_detach</a> (struct spdk_ioat_chan *ioat)</td></tr>
+<tr class="memdesc:a5da102ae08cc5bd5fbf89b01d8ef1807"><td class="mdescLeft">&#160;</td><td class="mdescRight">Detach specified device returned by <a class="el" href="ioat_8h.html#a784c1a69962e0964cf6988badd945b6f" title="Enumerate the I/OAT devices attached to the system and attach the userspace I/OAT driver to them if d...">spdk_ioat_probe()</a> from the I/OAT driver.  <a href="#a5da102ae08cc5bd5fbf89b01d8ef1807">More...</a><br /></td></tr>
+<tr class="separator:a5da102ae08cc5bd5fbf89b01d8ef1807"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac1de22182996edecb435f9583665008d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ioat_8h.html#ac1de22182996edecb435f9583665008d">spdk_ioat_submit_copy</a> (struct spdk_ioat_chan *chan, void *cb_arg, <a class="el" href="ioat_8h.html#a143b0bad5a250a1a6d27b087be67627b">spdk_ioat_req_cb</a> cb_fn, void *dst, const void *src, uint64_t nbytes)</td></tr>
 <tr class="memdesc:ac1de22182996edecb435f9583665008d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submit a DMA engine memory copy request.  <a href="#ac1de22182996edecb435f9583665008d">More...</a><br /></td></tr>
 <tr class="separator:ac1de22182996edecb435f9583665008d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -284,14 +284,14 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="ae6d4f2be5a4facdd9e59decf720e0328"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae6d4f2be5a4facdd9e59decf720e0328">&#9670;&nbsp;</a></span>spdk_ioat_detach()</h2>
+<a id="a5da102ae08cc5bd5fbf89b01d8ef1807"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5da102ae08cc5bd5fbf89b01d8ef1807">&#9670;&nbsp;</a></span>spdk_ioat_detach()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int spdk_ioat_detach </td>
+          <td class="memname">void spdk_ioat_detach </td>
           <td>(</td>
           <td class="paramtype">struct spdk_ioat_chan *&#160;</td>
           <td class="paramname"><em>ioat</em></td><td>)</td>
@@ -303,11 +303,10 @@ Functions</h2></td></tr>
 <p>Detach specified device returned by <a class="el" href="ioat_8h.html#a784c1a69962e0964cf6988badd945b6f" title="Enumerate the I/OAT devices attached to the system and attach the userspace I/OAT driver to them if d...">spdk_ioat_probe()</a> from the I/OAT driver. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">ioat</td><td>I/OAT channel to detach from the driver.</td></tr>
+    <tr><td class="paramname">ioat</td><td>I/OAT channel to detach from the driver. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>0 on success. </dd></dl>
 
 </div>
 </div>
@@ -372,7 +371,7 @@ Functions</h2></td></tr>
 
 <p>Enumerate the I/OAT devices attached to the system and attach the userspace I/OAT driver to them if desired. </p>
 <p>If called more than once, only devices that are not already attached to the SPDK I/OAT driver will be reported.</p>
-<p>To stop using the controller and release its associated resources, call <a class="el" href="ioat_8h.html#ae6d4f2be5a4facdd9e59decf720e0328" title="Detach specified device returned by spdk_ioat_probe() from the I/OAT driver. ">spdk_ioat_detach()</a> with the ioat_channel instance returned by this function.</p>
+<p>To stop using the controller and release its associated resources, call <a class="el" href="ioat_8h.html#a5da102ae08cc5bd5fbf89b01d8ef1807" title="Detach specified device returned by spdk_ioat_probe() from the I/OAT driver. ">spdk_ioat_detach()</a> with the ioat_channel instance returned by this function.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">cb_ctx</td><td>Opaque value which will be passed back in cb_ctx parameter of the callbacks. </td></tr>

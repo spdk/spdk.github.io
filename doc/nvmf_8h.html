@@ -209,6 +209,12 @@ Functions</h2></td></tr>
 <tr class="memitem:a145a3a2e51799674837dcb1ebf9a13c3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#a145a3a2e51799674837dcb1ebf9a13c3">spdk_nvmf_qpair_get_peer_trid</a> (struct spdk_nvmf_qpair *qpair, struct <a class="el" href="structspdk__nvme__transport__id.html">spdk_nvme_transport_id</a> *trid)</td></tr>
 <tr class="memdesc:a145a3a2e51799674837dcb1ebf9a13c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the peer's transport ID for this queue pair.  <a href="#a145a3a2e51799674837dcb1ebf9a13c3">More...</a><br /></td></tr>
 <tr class="separator:a145a3a2e51799674837dcb1ebf9a13c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad269e6b66abf6b758569453f4b6fd41a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#ad269e6b66abf6b758569453f4b6fd41a">spdk_nvmf_qpair_get_local_trid</a> (struct spdk_nvmf_qpair *qpair, struct <a class="el" href="structspdk__nvme__transport__id.html">spdk_nvme_transport_id</a> *trid)</td></tr>
+<tr class="memdesc:ad269e6b66abf6b758569453f4b6fd41a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the local transport ID for this queue pair.  <a href="#ad269e6b66abf6b758569453f4b6fd41a">More...</a><br /></td></tr>
+<tr class="separator:ad269e6b66abf6b758569453f4b6fd41a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a261e8613de83e1a557e95a6e06bd0a19"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#a261e8613de83e1a557e95a6e06bd0a19">spdk_nvmf_qpair_get_listen_trid</a> (struct spdk_nvmf_qpair *qpair, struct <a class="el" href="structspdk__nvme__transport__id.html">spdk_nvme_transport_id</a> *trid)</td></tr>
+<tr class="memdesc:a261e8613de83e1a557e95a6e06bd0a19"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the associated listener transport ID for this queue pair.  <a href="#a261e8613de83e1a557e95a6e06bd0a19">More...</a><br /></td></tr>
+<tr class="separator:a261e8613de83e1a557e95a6e06bd0a19"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad1b7f34d31e34d784fb54b70b02bdb15"><td class="memItemLeft" align="right" valign="top">struct spdk_nvmf_subsystem *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#ad1b7f34d31e34d784fb54b70b02bdb15">spdk_nvmf_subsystem_create</a> (struct spdk_nvmf_tgt *tgt, const char *nqn, enum <a class="el" href="nvmf__spec_8h.html#a808272f050cc373f3a90871c1528afd4">spdk_nvmf_subtype</a> type, uint32_t num_ns)</td></tr>
 <tr class="memdesc:ad1b7f34d31e34d784fb54b70b02bdb15"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create an NVMe-oF subsystem.  <a href="#ad1b7f34d31e34d784fb54b70b02bdb15">More...</a><br /></td></tr>
 <tr class="separator:ad1b7f34d31e34d784fb54b70b02bdb15"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -718,6 +724,86 @@ Functions</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>0 upon success. </dd>
 <dd>
 -ENOMEM if the function specific context could not be allocated. </dd></dl>
+
+</div>
+</div>
+<a id="a261e8613de83e1a557e95a6e06bd0a19"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a261e8613de83e1a557e95a6e06bd0a19">&#9670;&nbsp;</a></span>spdk_nvmf_qpair_get_listen_trid()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_nvmf_qpair_get_listen_trid </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_nvmf_qpair *&#160;</td>
+          <td class="paramname"><em>qpair</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structspdk__nvme__transport__id.html">spdk_nvme_transport_id</a> *&#160;</td>
+          <td class="paramname"><em>trid</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the associated listener transport ID for this queue pair. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">qpair</td><td>The NVMe-oF qpair </td></tr>
+    <tr><td class="paramname">trid</td><td>Output parameter that will contain the transport id.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 for success. </dd>
+<dd>
+-EINVAL if the qpair is not connected. </dd></dl>
+
+</div>
+</div>
+<a id="ad269e6b66abf6b758569453f4b6fd41a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad269e6b66abf6b758569453f4b6fd41a">&#9670;&nbsp;</a></span>spdk_nvmf_qpair_get_local_trid()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_nvmf_qpair_get_local_trid </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_nvmf_qpair *&#160;</td>
+          <td class="paramname"><em>qpair</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structspdk__nvme__transport__id.html">spdk_nvme_transport_id</a> *&#160;</td>
+          <td class="paramname"><em>trid</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the local transport ID for this queue pair. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">qpair</td><td>The NVMe-oF qpair </td></tr>
+    <tr><td class="paramname">trid</td><td>Output parameter that will contain the transport id.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 for success. </dd>
+<dd>
+-EINVAL if the qpair is not connected. </dd></dl>
 
 </div>
 </div>

@@ -7,7 +7,7 @@ var ioat_8h =
       [ "SPDK_IOAT_ENGINE_COPY_SUPPORTED", "ioat_8h.html#a9e773693f3aadb3dc526810a2e387402a46fdc856e01e8551a6f59b20c2189bc0", null ],
       [ "SPDK_IOAT_ENGINE_FILL_SUPPORTED", "ioat_8h.html#a9e773693f3aadb3dc526810a2e387402abb0266507ff9bbdfe64074015c7f6583", null ]
     ] ],
-    [ "spdk_ioat_detach", "ioat_8h.html#ae6d4f2be5a4facdd9e59decf720e0328", null ],
+    [ "spdk_ioat_detach", "ioat_8h.html#a5da102ae08cc5bd5fbf89b01d8ef1807", null ],
     [ "spdk_ioat_get_dma_capabilities", "ioat_8h.html#a87ce4a1c8bdd3fb69079ac51e00f92e5", null ],
     [ "spdk_ioat_probe", "ioat_8h.html#a784c1a69962e0964cf6988badd945b6f", null ],
     [ "spdk_ioat_process_events", "ioat_8h.html#a90034d709755853f316cf47b541d48a9", null ],
