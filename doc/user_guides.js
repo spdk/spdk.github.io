@@ -181,13 +181,14 @@ var user_guides =
       ] ],
       [ "NVMe-oF Target", "jsonrpc.html#jsonrpc_components_nvmf_tgt", [
         [ "get_nvmf_subsystems method", "jsonrpc.html#rpc_get_nvmf_subsystems", null ],
-        [ "construct_nvmf_subsystem method", "jsonrpc.html#rpc_construct_nvmf_subsystem", [
-          [ "listen_address", "jsonrpc.html#rpc_construct_nvmf_subsystem_listen_address", null ],
-          [ "namespace", "jsonrpc.html#rpc_construct_nvmf_subsystem_namespace", null ]
-        ] ],
+        [ "nvmf_subsystem_create method", "jsonrpc.html#rpc_nvmf_subsystem_create", null ],
         [ "delete_nvmf_subsystem method", "jsonrpc.html#rpc_delete_nvmf_subsystem", null ],
-        [ "nvmf_subsystem_add_listener  method", "jsonrpc.html#rpc_nvmf_subsystem_add_listener", null ],
-        [ "nvmf_subsystem_add_ns method", "jsonrpc.html#rpc_nvmf_subsystem_add_ns", null ],
+        [ "nvmf_subsystem_add_listener  method", "jsonrpc.html#rpc_nvmf_subsystem_add_listener", [
+          [ "listen_address", "jsonrpc.html#rpc_nvmf_listen_address", null ]
+        ] ],
+        [ "nvmf_subsystem_add_ns method", "jsonrpc.html#rpc_nvmf_subsystem_add_ns", [
+          [ "namespace", "jsonrpc.html#rpc_nvmf_namespace", null ]
+        ] ],
         [ "nvmf_subsystem_remove_ns method", "jsonrpc.html#rpc_nvmf_subsystem_remove_ns", null ],
         [ "nvmf_subsystem_add_host method", "jsonrpc.html#rpc_nvmf_subsystem_add_host", null ],
         [ "nvmf_subsystem_remove_host method", "jsonrpc.html#rpc_nvmf_subsystem_remove_host", null ],

@@ -1,8 +1,5 @@
 var NAVTREEINDEX4 =
 {
-"jsonrpc.html#rpc_delete_nvme_controller":[3,6,2,14],
-"jsonrpc.html#rpc_delete_nvmf_subsystem":[3,6,4,2],
-"jsonrpc.html#rpc_delete_passthru_bdev":[3,6,2,27],
 "jsonrpc.html#rpc_delete_pg_ig_maps":[3,6,3,16],
 "jsonrpc.html#rpc_delete_pmem_bdev":[3,6,2,25],
 "jsonrpc.html#rpc_delete_pmem_pool":[3,6,2,23],
@@ -34,10 +31,13 @@ var NAVTREEINDEX4 =
 "jsonrpc.html#rpc_get_virtio_scsi_devs":[3,6,2,33],
 "jsonrpc.html#rpc_inflate_lvol_bdev":[3,6,6,10],
 "jsonrpc.html#rpc_kill_instance":[3,6,1,0],
+"jsonrpc.html#rpc_nvmf_listen_address":[3,6,4,3,0],
+"jsonrpc.html#rpc_nvmf_namespace":[3,6,4,4,0],
 "jsonrpc.html#rpc_nvmf_subsystem_add_host":[3,6,4,6],
 "jsonrpc.html#rpc_nvmf_subsystem_add_listener":[3,6,4,3],
 "jsonrpc.html#rpc_nvmf_subsystem_add_ns":[3,6,4,4],
 "jsonrpc.html#rpc_nvmf_subsystem_allow_any_host":[3,6,4,8],
+"jsonrpc.html#rpc_nvmf_subsystem_create":[3,6,4,1],
 "jsonrpc.html#rpc_nvmf_subsystem_remove_host":[3,6,4,7],
 "jsonrpc.html#rpc_nvmf_subsystem_remove_ns":[3,6,4,5],
 "jsonrpc.html#rpc_pmem_pool_info":[3,6,2,22],

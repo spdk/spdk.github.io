@@ -224,9 +224,6 @@ var NAVTREEINDEX3 =
 "jsonrpc.html#rpc_construct_malloc_bdev":[3,6,2,5],
 "jsonrpc.html#rpc_construct_null_bdev":[3,6,2,7],
 "jsonrpc.html#rpc_construct_nvme_bdev":[3,6,2,13],
-"jsonrpc.html#rpc_construct_nvmf_subsystem":[3,6,4,1],
-"jsonrpc.html#rpc_construct_nvmf_subsystem_listen_address":[3,6,4,1,0],
-"jsonrpc.html#rpc_construct_nvmf_subsystem_namespace":[3,6,4,1,1],
 "jsonrpc.html#rpc_construct_passthru_bdev":[3,6,2,26],
 "jsonrpc.html#rpc_construct_pmem_bdev":[3,6,2,24],
 "jsonrpc.html#rpc_construct_rbd_bdev":[3,6,2,15],
@@ -249,5 +246,8 @@ var NAVTREEINDEX3 =
 "jsonrpc.html#rpc_delete_iscsi_auth_group":[3,6,3,4],
 "jsonrpc.html#rpc_delete_iscsi_bdev":[3,6,2,20],
 "jsonrpc.html#rpc_delete_malloc_bdev":[3,6,2,6],
-"jsonrpc.html#rpc_delete_null_bdev":[3,6,2,8]
+"jsonrpc.html#rpc_delete_null_bdev":[3,6,2,8],
+"jsonrpc.html#rpc_delete_nvme_controller":[3,6,2,14],
+"jsonrpc.html#rpc_delete_nvmf_subsystem":[3,6,4,2],
+"jsonrpc.html#rpc_delete_passthru_bdev":[3,6,2,27]
 };

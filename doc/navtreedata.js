@@ -42,7 +42,7 @@ var NAVTREEINDEX =
 "blob_8h.html#ade242e483bcb3a50bb987acf2e0dfd4e",
 "env_8h.html#aef50d2e8f2d7fccfd5c5edf95e5013d2",
 "iscsi.html#iscsi_rpc",
-"jsonrpc.html#rpc_delete_nvme_controller",
+"jsonrpc.html#rpc_delete_pg_ig_maps",
 "nvme_8h.html#abbcdb6e7c22b0ef87ed927bf97952c19",
 "nvme__spec_8h.html#a57ea2eb3f8a34ee2657a960a9645432eaac6364da54256d5289924aef4c9b0006",
 "nvme__spec_8h.html#aeae5c5fb9df2c7a39215c71f9d9b4c25af78a0869f0f08d1391b076ceaf76c0d1",
