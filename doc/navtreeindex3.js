@@ -1,5 +1,7 @@
 var NAVTREEINDEX3 =
 {
+"iscsi.html#iscsi_lun":[3,1,0,1,1],
+"iscsi.html#iscsi_prereqs":[3,1,0,0],
 "iscsi.html#iscsi_rpc":[3,1,0,2],
 "iscsi.html#vpp":[3,1,1],
 "iscsi.html#vpp_build":[3,1,1,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX3 =
 "jsonrpc.html#rpc_delete_iscsi_bdev":[3,6,2,20],
 "jsonrpc.html#rpc_delete_malloc_bdev":[3,6,2,6],
 "jsonrpc.html#rpc_delete_null_bdev":[3,6,2,8],
-"jsonrpc.html#rpc_delete_nvme_controller":[3,6,2,14],
-"jsonrpc.html#rpc_delete_nvmf_subsystem":[3,6,4,2],
-"jsonrpc.html#rpc_delete_passthru_bdev":[3,6,2,27]
+"jsonrpc.html#rpc_delete_nvme_controller":[3,6,2,14]
 };

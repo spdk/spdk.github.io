@@ -230,6 +230,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a06cf3bf4280b524e95358fc2d3282b9a"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blob_8h.html#a06cf3bf4280b524e95358fc2d3282b9a">spdk_bs_get_page_size</a> (struct spdk_blob_store *bs)</td></tr>
 <tr class="memdesc:a06cf3bf4280b524e95358fc2d3282b9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the page size in bytes.  <a href="#a06cf3bf4280b524e95358fc2d3282b9a">More...</a><br /></td></tr>
 <tr class="separator:a06cf3bf4280b524e95358fc2d3282b9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0800bfbaa7284454f7ba80275868b7ac"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blob_8h.html#a0800bfbaa7284454f7ba80275868b7ac">spdk_bs_get_io_unit_size</a> (struct spdk_blob_store *bs)</td></tr>
+<tr class="memdesc:a0800bfbaa7284454f7ba80275868b7ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the io unit size in bytes.  <a href="#a0800bfbaa7284454f7ba80275868b7ac">More...</a><br /></td></tr>
+<tr class="separator:a0800bfbaa7284454f7ba80275868b7ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8d03f0499e552b6e858b7c52abcc0820"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blob_8h.html#a8d03f0499e552b6e858b7c52abcc0820">spdk_bs_free_cluster_count</a> (struct spdk_blob_store *bs)</td></tr>
 <tr class="memdesc:a8d03f0499e552b6e858b7c52abcc0820"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the number of free clusters.  <a href="#a8d03f0499e552b6e858b7c52abcc0820">More...</a><br /></td></tr>
 <tr class="separator:a8d03f0499e552b6e858b7c52abcc0820"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -242,6 +245,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a1e19ff1852cf29d6992591953e1964f2"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blob_8h.html#a1e19ff1852cf29d6992591953e1964f2">spdk_blob_get_num_pages</a> (struct spdk_blob *blob)</td></tr>
 <tr class="memdesc:a1e19ff1852cf29d6992591953e1964f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the number of pages allocated to the blob.  <a href="#a1e19ff1852cf29d6992591953e1964f2">More...</a><br /></td></tr>
 <tr class="separator:a1e19ff1852cf29d6992591953e1964f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9787f698d1f47cca21b3543c0892ab3e"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blob_8h.html#a9787f698d1f47cca21b3543c0892ab3e">spdk_blob_get_num_io_units</a> (struct spdk_blob *blob)</td></tr>
+<tr class="memdesc:a9787f698d1f47cca21b3543c0892ab3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the number of io_units allocated to the blob.  <a href="#a9787f698d1f47cca21b3543c0892ab3e">More...</a><br /></td></tr>
+<tr class="separator:a9787f698d1f47cca21b3543c0892ab3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2484b76dc748921d2596a4e207b6a5a2"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blob_8h.html#a2484b76dc748921d2596a4e207b6a5a2">spdk_blob_get_num_clusters</a> (struct spdk_blob *blob)</td></tr>
 <tr class="memdesc:a2484b76dc748921d2596a4e207b6a5a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the number of clusters allocated to the blob.  <a href="#a2484b76dc748921d2596a4e207b6a5a2">More...</a><br /></td></tr>
 <tr class="separator:a2484b76dc748921d2596a4e207b6a5a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -663,6 +669,33 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a9787f698d1f47cca21b3543c0892ab3e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9787f698d1f47cca21b3543c0892ab3e">&#9670;&nbsp;</a></span>spdk_blob_get_num_io_units()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint64_t spdk_blob_get_num_io_units </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_blob *&#160;</td>
+          <td class="paramname"><em>blob</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the number of io_units allocated to the blob. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">blob</td><td>Blob struct to query.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the number of io_units. </dd></dl>
+
+</div>
+</div>
 <a id="a1e19ff1852cf29d6992591953e1964f2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1e19ff1852cf29d6992591953e1964f2">&#9670;&nbsp;</a></span>spdk_blob_get_num_pages()</h2>
 
@@ -882,8 +915,8 @@ Functions</h2></td></tr>
     <tr><td class="paramname">blob</td><td>Blob to read. </td></tr>
     <tr><td class="paramname">channel</td><td>The I/O channel used to submit requests. </td></tr>
     <tr><td class="paramname">payload</td><td>The specified buffer which will store the obtained data. </td></tr>
-    <tr><td class="paramname">offset</td><td>Offset is in pages from the beginning of the blob. </td></tr>
-    <tr><td class="paramname">length</td><td>Size of data in pages. </td></tr>
+    <tr><td class="paramname">offset</td><td>Offset is in io units from the beginning of the blob. </td></tr>
+    <tr><td class="paramname">length</td><td>Size of data in io units. </td></tr>
     <tr><td class="paramname">cb_fn</td><td>Called when the operation is complete. </td></tr>
     <tr><td class="paramname">cb_arg</td><td>Argument passed to function cb_fn. </td></tr>
   </table>
@@ -961,8 +994,8 @@ Functions</h2></td></tr>
     <tr><td class="paramname">channel</td><td>I/O channel used to submit requests. </td></tr>
     <tr><td class="paramname">iov</td><td>The pointer points to an array of iovec structures. </td></tr>
     <tr><td class="paramname">iovcnt</td><td>The number of buffers. </td></tr>
-    <tr><td class="paramname">offset</td><td>Offset is in pages from the beginning of the blob. </td></tr>
-    <tr><td class="paramname">length</td><td>Size of data in pages. </td></tr>
+    <tr><td class="paramname">offset</td><td>Offset is in io units from the beginning of the blob. </td></tr>
+    <tr><td class="paramname">length</td><td>Size of data in io units. </td></tr>
     <tr><td class="paramname">cb_fn</td><td>Called when the operation is complete. </td></tr>
     <tr><td class="paramname">cb_arg</td><td>Argument passed to function cb_fn. </td></tr>
   </table>
@@ -1027,7 +1060,7 @@ Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">blob</td><td>Blob to unmap. </td></tr>
     <tr><td class="paramname">channel</td><td>I/O channel used to submit requests. </td></tr>
-    <tr><td class="paramname">offset</td><td>Offset is in pages from the beginning of the blob. </td></tr>
+    <tr><td class="paramname">offset</td><td>Offset is in io units from the beginning of the blob. </td></tr>
     <tr><td class="paramname">length</td><td>Size of unmap area in pages. </td></tr>
     <tr><td class="paramname">cb_fn</td><td>Called when the operation is complete. </td></tr>
     <tr><td class="paramname">cb_arg</td><td>Argument passed to function cb_fn. </td></tr>
@@ -1099,8 +1132,8 @@ Functions</h2></td></tr>
     <tr><td class="paramname">blob</td><td>Blob to write. </td></tr>
     <tr><td class="paramname">channel</td><td>The I/O channel used to submit requests. </td></tr>
     <tr><td class="paramname">payload</td><td>The specified buffer which should contain the data to be written. </td></tr>
-    <tr><td class="paramname">offset</td><td>Offset is in pages from the beginning of the blob. </td></tr>
-    <tr><td class="paramname">length</td><td>Size of data in pages. </td></tr>
+    <tr><td class="paramname">offset</td><td>Offset is in io units from the beginning of the blob. </td></tr>
+    <tr><td class="paramname">length</td><td>Size of data in io units. </td></tr>
     <tr><td class="paramname">cb_fn</td><td>Called when the operation is complete. </td></tr>
     <tr><td class="paramname">cb_arg</td><td>Argument passed to function cb_fn. </td></tr>
   </table>
@@ -1164,8 +1197,8 @@ Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">blob</td><td>Blob to write. </td></tr>
     <tr><td class="paramname">channel</td><td>I/O channel used to submit requests. </td></tr>
-    <tr><td class="paramname">offset</td><td>Offset is in pages from the beginning of the blob. </td></tr>
-    <tr><td class="paramname">length</td><td>Size of data in pages. </td></tr>
+    <tr><td class="paramname">offset</td><td>Offset is in io units from the beginning of the blob. </td></tr>
+    <tr><td class="paramname">length</td><td>Size of data in io units. </td></tr>
     <tr><td class="paramname">cb_fn</td><td>Called when the operation is complete. </td></tr>
     <tr><td class="paramname">cb_arg</td><td>Argument passed to function cb_fn. </td></tr>
   </table>
@@ -1243,8 +1276,8 @@ Functions</h2></td></tr>
     <tr><td class="paramname">channel</td><td>I/O channel used to submit requests. </td></tr>
     <tr><td class="paramname">iov</td><td>The pointer points to an array of iovec structures. </td></tr>
     <tr><td class="paramname">iovcnt</td><td>The number of buffers. </td></tr>
-    <tr><td class="paramname">offset</td><td>Offset is in pages from the beginning of the blob. </td></tr>
-    <tr><td class="paramname">length</td><td>Size of data in pages. </td></tr>
+    <tr><td class="paramname">offset</td><td>Offset is in io units from the beginning of the blob. </td></tr>
+    <tr><td class="paramname">length</td><td>Size of data in io units. </td></tr>
     <tr><td class="paramname">cb_fn</td><td>Called when the operation is complete. </td></tr>
     <tr><td class="paramname">cb_arg</td><td>Argument passed to function cb_fn. </td></tr>
   </table>
@@ -2162,6 +2195,33 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>cluster size. </dd></dl>
+
+</div>
+</div>
+<a id="a0800bfbaa7284454f7ba80275868b7ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0800bfbaa7284454f7ba80275868b7ac">&#9670;&nbsp;</a></span>spdk_bs_get_io_unit_size()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint64_t spdk_bs_get_io_unit_size </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_blob_store *&#160;</td>
+          <td class="paramname"><em>bs</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the io unit size in bytes. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bs</td><td>blobstore to query.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>io unit size. </dd></dl>
 
 </div>
 </div>

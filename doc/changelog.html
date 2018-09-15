@@ -146,6 +146,8 @@ v18.10: (Upcoming Release)</h1>
 <p>New <code>configure</code> options, <code>--with-shared</code> and <code>--without-shared</code> [default], provide the capability to build, or not, SPDK shared libraries. This includes the single SPDK shared lib encompassing all of the SPDK static libs as well as individual SPDK shared libs corresponding to each of the SPDK static ones. Although the production of the shared libs conforms with conventional version naming practices, such naming does not at this time confer any SPDK ABI compatibility claims.</p>
 <h2>bdev</h2>
 <p><a class="el" href="bdev__module_8h.html#ae62dae3c4a41154aca74f37864ae82f9" title="Removes all alias from block device alias list. ">spdk_bdev_alias_del_all()</a> was added to delete all alias from block device.</p>
+<h2>Environment Abstraction Layer and Event Framework</h2>
+<p>The size parameter of spdk_mem_map_translate is now a pointer. This allows the function to report back the actual size of the translation relative to the original request made by the user.</p>
 <h2>iscsi</h2>
 <p>Parameter names of <code>set_iscsi_options</code> and <code>get_iscsi_global_params</code> RPC method for CHAP authentication in discovery sessions have been changed to align with <code>construct_target_node</code> RPC method. Old names are still usable but will be removed in future release.</p>
 <p><code>set_iscsi_discovery_auth</code> and <code>set_iscsi_target_node_auth</code> RPC methods have been added to set CHAP authentication for discovery sessions and existing target nodes, respectively.</p>
@@ -154,6 +156,8 @@ v18.10: (Upcoming Release)</h1>
 <p>The ReactorMask config file parameter has been deprecated. Users should use the -m or &ndash;cpumask command line option to specify the CPU core mask for the application.</p>
 <p>Default config file pathnames have been removed from iscsi_tgt, nvmf_tgt and vhost. Config file pathnames may now only be specified using the -c command line option.</p>
 <p>Users may no longer set DPDK_DIR in their environment to specify the location of the DPDK installation used to build SPDK. Using DPDK_DIR has not been the documented nor recommended way to specify the DPDK location for several releases, but removing it ensures no unexpected surprises for users who may have DPDK_DIR defined for other reasons. Users should just use the "configure" script to specify the DPDK location before building SPDK.</p>
+<p>Although we know that many developers still use Python 2 we are officially switching to Python3 with requirement that all new code must be valid also for Python 2 up to the EOL which is year 2020.</p>
+<p>Invoking interpreter explicitly is forbidden for executable scripts. There is no need to use syntax like "python ./scripts/rpc.py". All executable scripts must contain proper shebang pointing to the right interpreter. Scripts without shebang musn't be executable.</p>
 <h1><a class="anchor" id="changelog-v18-07"></a>
 v18.07:</h1>
 <h2>bdev</h2>
@@ -189,7 +193,7 @@ v18.07:</h1>
 <h2>DPDK 18.05</h2>
 <p>The DPDK submodule has been rebased on the DPDK 18.05 release. DPDK 18.05 supports dynamic memory allocation, but due to some issues found after the DPDK 18.05 release, that support is not enabled for SPDK 18.07. Therefore, SPDK 18.07 will continue to use the legacy memory allocation model. The plan is to enable dynamic memory allocation after the DPDK 18.08 release which should fix these issues.</p>
 <h2>Environment Abstraction Layer and Event Framework</h2>
-<p>The <a class="el" href="env_8h.html#a0236afa06288866feb8ed1fccfef5dda" title="Look up the translation of a virtual address in a memory map. ">spdk_mem_map_translate()</a> function now takes a size parameter to indicate the size of the memory region. This can be used by environment implementations to validate the requested translation.</p>
+<p>The <a class="el" href="env_8h.html#a99549dc9905683f1dea50ff79d0c5651" title="Look up the translation of a virtual address in a memory map. ">spdk_mem_map_translate()</a> function now takes a size parameter to indicate the size of the memory region. This can be used by environment implementations to validate the requested translation.</p>
 <p>The I/O Channel implementation has been moved to its own library - lib/thread. The public API that was previously in <a class="el" href="io__channel_8h.html" title="IO channel. ">spdk/io_channel.h</a> is now in <a class="el" href="thread_8h.html" title="Thread. ">spdk/thread.h</a> The file <a class="el" href="io__channel_8h.html" title="IO channel. ">spdk/io_channel.h</a> remains and includes <a class="el" href="thread_8h.html" title="Thread. ">spdk/thread.h</a>.</p>
 <p>spdk_reactor_get_tsc_stats was added to return interesting statistics for each reactor.</p>
 <h2>IOAT</h2>

@@ -43,6 +43,7 @@ var searchData=
   ['spdk_5fmbr',['spdk_mbr',['../structspdk__mbr.html',1,'']]],
   ['spdk_5fmbr_5fchs',['spdk_mbr_chs',['../structspdk__mbr__chs.html',1,'']]],
   ['spdk_5fmbr_5fpartition_5fentry',['spdk_mbr_partition_entry',['../structspdk__mbr__partition__entry.html',1,'']]],
+  ['spdk_5fmem_5fmap_5fops',['spdk_mem_map_ops',['../structspdk__mem__map__ops.html',1,'']]],
   ['spdk_5fnet_5fframework',['spdk_net_framework',['../structspdk__net__framework.html',1,'']]],
   ['spdk_5fnvme_5faqa_5fregister',['spdk_nvme_aqa_register',['../unionspdk__nvme__aqa__register.html',1,'']]],
   ['spdk_5fnvme_5fasync_5fevent_5fcompletion',['spdk_nvme_async_event_completion',['../unionspdk__nvme__async__event__completion.html',1,'']]],
