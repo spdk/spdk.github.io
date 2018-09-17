@@ -129,7 +129,7 @@ Now open .git/config in a text editor and add these lines: (this will make pushi
 You may also enable the git pre-commit and pre-push hooks to automatically check formatting and run the unit tests:
 
 ~~~
-git config core.hooksPath .githooks
+cp .githooks/* .git/hooks/
 ~~~
 
 Now you should be all set!
