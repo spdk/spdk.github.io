@@ -6,6 +6,7 @@ var nvmf_8h =
     [ "new_qpair_fn", "nvmf_8h.html#a83e558236353a3b94992d2e604f4b660", null ],
     [ "nvmf_qpair_disconnect_cb", "nvmf_8h.html#abd02f30e6fcb57338c723ffd5c307f0d", null ],
     [ "spdk_nvmf_subsystem_state_change_done", "nvmf_8h.html#aec7dc3c1e2f740c1cbffa028ad5c5bff", null ],
+    [ "spdk_nvmf_tgt_add_transport_done_fn", "nvmf_8h.html#a53086e85e4a7103ab2b714483b4f2aec", null ],
     [ "spdk_nvmf_tgt_destroy_done_fn", "nvmf_8h.html#a26c5ae0565e487633e00cdd8819d2d00", null ],
     [ "spdk_nvmf_tgt_listen_done_fn", "nvmf_8h.html#a854e30bf69f07bb06b2cbcdd08ca7eba", null ],
     [ "spdk_nvmf_host_get_nqn", "nvmf_8h.html#acec4ed75ff9a25a5477d40f43a430677", null ],
@@ -52,10 +53,17 @@ var nvmf_8h =
     [ "spdk_nvmf_subsystem_start", "nvmf_8h.html#a0584bea11782561b13355b89de25b6c0", null ],
     [ "spdk_nvmf_subsystem_stop", "nvmf_8h.html#af438291b914963a6c582aad500ded6ef", null ],
     [ "spdk_nvmf_tgt_accept", "nvmf_8h.html#aaffa201e13c1a8ee55c74fc0a928908e", null ],
+    [ "spdk_nvmf_tgt_add_transport", "nvmf_8h.html#aac996bda413ddfc830c6f46aab4fd181", null ],
     [ "spdk_nvmf_tgt_create", "nvmf_8h.html#aa056e2c70b80bd611e21a815eae000e0", null ],
     [ "spdk_nvmf_tgt_destroy", "nvmf_8h.html#a21638f4d81002e93d410cd0d267f608c", null ],
     [ "spdk_nvmf_tgt_find_subsystem", "nvmf_8h.html#aae62b7fa6ac05a6ad022007f60068d16", null ],
+    [ "spdk_nvmf_tgt_get_transport", "nvmf_8h.html#a20b2b976575388f19737df4d435af092", null ],
     [ "spdk_nvmf_tgt_listen", "nvmf_8h.html#a2c31e57f4634daadf4238bf213a989d6", null ],
     [ "spdk_nvmf_tgt_opts_init", "nvmf_8h.html#a51a0dee3a45225842e91da0e8aac0fe6", null ],
-    [ "spdk_nvmf_tgt_write_config_json", "nvmf_8h.html#a2aad508811686a6d16f3bfd221ba99a9", null ]
+    [ "spdk_nvmf_tgt_transport_write_config_json", "nvmf_8h.html#a056f7ac8ac8f7b34366650cb1a2bb940", null ],
+    [ "spdk_nvmf_tgt_write_config_json", "nvmf_8h.html#a2aad508811686a6d16f3bfd221ba99a9", null ],
+    [ "spdk_nvmf_transport_create", "nvmf_8h.html#ad2ef4994182937ff7b724654e3dee2cf", null ],
+    [ "spdk_nvmf_transport_destroy", "nvmf_8h.html#ab3d5e7bc8701baac2be7858b34fa7baf", null ],
+    [ "spdk_nvmf_transport_listen", "nvmf_8h.html#af3f67fe201cedd887ed6ad35792ff5e7", null ],
+    [ "spdk_nvmf_transport_opts_init", "nvmf_8h.html#a33f54dfed0f9cc21264f1c89bd708e94", null ]
 ];

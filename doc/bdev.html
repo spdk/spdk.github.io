@@ -171,6 +171,20 @@ Ceph RBD</h1>
 <p>This command will create a bdev that represents the 'foo' image from a pool called 'rbd'.</p>
 <p>To remove a block device representation use the delete_rbd_bdev command.</p>
 <p><code>rpc.py delete_rbd_bdev Rbd0</code></p>
+<h1><a class="anchor" id="bdev_config_crypto"></a>
+Crypto Virtual Bdev Module</h1>
+<p>The crypto virtual bdev module can be configured to provide at rest data encryption for any underlying bdev. The module relies on the DPDK CryptoDev Framework to provide all cryptographic functionality. The framework provides support for many different software only cryptographic modules as well hardware assisted support for the Intel QAT board. The framework also provides support for cipher, hash, authentication and AEAD functions. At this time the SPDK virtual bdev module supports cipher only as follows:</p>
+<ul>
+<li>AESN-NI Multi Buffer Crypto Poll Mode Driver: RTE_CRYPTO_CIPHER_AES128_CBC</li>
+<li>Intel(R) QuickAssist (QAT) Crypto Poll Mode Driver: RTE_CRYPTO_CIPHER_AES128_CBC (Note: QAT is functional however is marked as experimental until the hardware has been fully integrated with the SPDK CI system.)</li>
+</ul>
+<p>In order to support using the bdev block offset (LBA) as the initialization vector (IV), the crypto module break up all I/O into crypto operations of a size equal to the block size of the underlying bdev. For example, a 4K I/O to a bdev with a 512B block size, would result in 8 cryptographic operations.</p>
+<p>For reads, the buffer provided to the crypto module will be used as the destination buffer for unencrypted data. For writes, however, a temporary scratch buffer is used as the destination buffer for encryption which is then passed on to the underlying bdev as the write buffer. This is done to avoid encrypting the data in the original source buffer which may cause problems in some use cases.</p>
+<p>Example command</p>
+<p><code>rpc.py construct_crypto_bdev -b NVMe1n1 -c CryNvmeA -d crypto_aesni_mb -k 0123456789123456</code></p>
+<p>This command will create a crypto vbdev called 'CryNvmeA' on top of the NVMe bdev 'NVMe1n1' and will use the DPDK software driver 'crypto_aesni_mb' and the key '0123456789123456'.</p>
+<p>To remove the vbdev use the delete_crypto_bdev command.</p>
+<p><code>rpc.py delete_crypto_bdev CryNvmeA</code></p>
 <h1><a class="anchor" id="bdev_config_gpt"></a>
 GPT (GUID Partition Table)</h1>
 <p>The GPT virtual bdev driver is enabled by default and does not require any configuration. It will automatically detect <a class="el" href="bdev.html#bdev_ug_gpt">SPDK GPT partition table</a> on any attached bdev and will create possibly multiple virtual bdevs.</p>

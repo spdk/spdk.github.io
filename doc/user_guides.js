@@ -79,6 +79,7 @@ var user_guides =
         [ "delete_bdev", "bdev.html#bdev_ug_delete_bdev", null ]
       ] ],
       [ "Ceph RBD", "bdev.html#bdev_config_rbd", null ],
+      [ "Crypto Virtual Bdev Module", "bdev.html#bdev_config_crypto", null ],
       [ "GPT (GUID Partition Table)", "bdev.html#bdev_config_gpt", [
         [ "SPDK GPT partition table", "bdev.html#bdev_ug_gpt", null ],
         [ "Creating a GPT partition table using NBD", "bdev.html#bdev_ug_gpt_create_part", null ]

@@ -1,5 +1,14 @@
 var NAVTREEINDEX14 =
 {
+"structspdk__nvme__intel__smart__attribute.html#a93b8a8291c6f9be4c633499bf1d5d7c5":[12,0,113,3],
+"structspdk__nvme__intel__smart__information__page.html":[12,0,114],
+"structspdk__nvme__intel__smart__information__page.html#a27759d943a133583c3d64117d7c67d81":[12,0,114,0],
+"structspdk__nvme__intel__temperature__page.html":[12,0,115],
+"structspdk__nvme__intel__temperature__page.html#a6bf0a6cd4c6154ed0d41eb769be21cff":[12,0,115,6],
+"structspdk__nvme__intel__temperature__page.html#a70773b5626ea537b1fb1f15c9f73e5e5":[12,0,115,1],
+"structspdk__nvme__intel__temperature__page.html#a78ade1f977aafd2b2fe85672d2d46c5d":[12,0,115,2],
+"structspdk__nvme__intel__temperature__page.html#a7f4bbf3945dbf1a7a97a398019d45c05":[12,0,115,0],
+"structspdk__nvme__intel__temperature__page.html#ab64ba504715b6e017466e98e113d2ddb":[12,0,115,4],
 "structspdk__nvme__intel__temperature__page.html#ac1371c45719883bac0fdd22ab692f10d":[12,0,115,7],
 "structspdk__nvme__intel__temperature__page.html#ac31567dc016fffef64cb48facb521b02":[12,0,115,8],
 "structspdk__nvme__intel__temperature__page.html#acd5b3858d54a5189778bf8bde2d16119":[12,0,115,3],
@@ -240,14 +249,5 @@ var NAVTREEINDEX14 =
 "structspdk__nvmf__discovery__log__page__entry.html#ae6926468815fd6dbdd5ff136a4905057":[12,0,137,14],
 "structspdk__nvmf__discovery__log__page__entry.html#afe04107ae81316f7e1c189472a881e52":[12,0,137,3],
 "structspdk__nvmf__fabric__auth__recv__cmd.html":[12,0,138],
-"structspdk__nvmf__fabric__auth__recv__cmd.html#a0d991b3abbff564e4d5c5f34c8463d46":[12,0,138,7],
-"structspdk__nvmf__fabric__auth__recv__cmd.html#a117dfdb1f28c88258c02f3bedc130583":[12,0,138,8],
-"structspdk__nvmf__fabric__auth__recv__cmd.html#a2734924f1fb8eea17adfa9faba4f1aae":[12,0,138,9],
-"structspdk__nvmf__fabric__auth__recv__cmd.html#a448a5deb855562c3fa5903d9fea1f8fa":[12,0,138,0],
-"structspdk__nvmf__fabric__auth__recv__cmd.html#a5444b7aaf184ff55570c79b4e931d030":[12,0,138,4],
-"structspdk__nvmf__fabric__auth__recv__cmd.html#a55b73cf6fe1edf1fd8004a3bddc9a62b":[12,0,138,3],
-"structspdk__nvmf__fabric__auth__recv__cmd.html#a872f6bb5c668640432fbd4dd9926cc7d":[12,0,138,6],
-"structspdk__nvmf__fabric__auth__recv__cmd.html#aa742c919c09c21aca594cb06cfaa9336":[12,0,138,2],
-"structspdk__nvmf__fabric__auth__recv__cmd.html#aa75683d60b1d1dc2f6d1978e6aa9071d":[12,0,138,5],
-"structspdk__nvmf__fabric__auth__recv__cmd.html#aada34625f8015ab1c39a485505217fce":[12,0,138,1]
+"structspdk__nvmf__fabric__auth__recv__cmd.html#a0d991b3abbff564e4d5c5f34c8463d46":[12,0,138,7]
 };

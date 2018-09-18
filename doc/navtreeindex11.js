@@ -1,5 +1,14 @@
 var NAVTREEINDEX11 =
 {
+"structspdk__bdev.html":[12,0,21],
+"structspdk__bdev.html#a0329aa7395f9784d4dc8c596efc4ac8c":[12,0,21,4],
+"structspdk__bdev.html#a1c3d6e810863f31e2301949bfd1c5d37":[12,0,21,5],
+"structspdk__bdev.html#a5cc1248944325a12c4cadaa3856f573a":[12,0,21,13],
+"structspdk__bdev.html#a85a794d02620e3e8730bb11791c0c592":[12,0,21,12],
+"structspdk__bdev.html#ab17e7679c64536f704ed4fe41555a70a":[12,0,21,8],
+"structspdk__bdev.html#ac2ccb256340bc2e8b2d6f7793d977c0d":[12,0,21,14],
+"structspdk__bdev.html#ac737d9458e1184f313aed88b8af9b862":[12,0,21,3],
+"structspdk__bdev.html#ad3abe8a06500954332614d8657eaf1d9":[12,0,21,11],
 "structspdk__bdev.html#ad6af2c003c0428ec514d45fade176d22":[12,0,21,1],
 "structspdk__bdev.html#aef65d7444968b8981d46d0c520fd5287":[12,0,21,2],
 "structspdk__bdev.html#aefca37414047c251d38d08a6c2bb9ac8":[12,0,21,9],
@@ -240,14 +249,5 @@ var NAVTREEINDEX11 =
 "structspdk__ioat__dma__hw__desc.html#a95270b3d7723ec91b6a86f14bb733dba":[12,0,46,20],
 "structspdk__ioat__dma__hw__desc.html#a9b258fc2ad0302401e3e17511e8cbd02":[12,0,46,0],
 "structspdk__ioat__dma__hw__desc.html#aa26bd416424bb37fbdad16af48f188e9":[12,0,46,22],
-"structspdk__ioat__dma__hw__desc.html#aa55bbf40a09513e1cc340dd7316ecda7":[12,0,46,2],
-"structspdk__ioat__dma__hw__desc.html#aa73128202a4e5cf31adc57f65a9be1f5":[12,0,46,19],
-"structspdk__ioat__dma__hw__desc.html#ab23e97403ada8eb4cd0b226a9ec1a9e4":[12,0,46,3],
-"structspdk__ioat__dma__hw__desc.html#ab97b84143ca553640521d4469246607b":[12,0,46,18],
-"structspdk__ioat__dma__hw__desc.html#ad159a6862b698e137d9aeb9f605b8347":[12,0,46,11],
-"structspdk__ioat__dma__hw__desc.html#af1fa05cd78a069458c720bd78ab7cd8e":[12,0,46,5],
-"structspdk__ioat__dma__hw__desc.html#af7c633416a79e26cf71a9f3dc4237277":[12,0,46,21],
-"structspdk__ioat__fill__hw__desc.html":[12,0,47],
-"structspdk__ioat__fill__hw__desc.html#a191f26dc0861a1d70ba2b977d95b7acd":[12,0,47,1],
-"structspdk__ioat__fill__hw__desc.html#a1dee1ae6be34281674b5bd8201ff843b":[12,0,47,0]
+"structspdk__ioat__dma__hw__desc.html#aa55bbf40a09513e1cc340dd7316ecda7":[12,0,46,2]
 };
