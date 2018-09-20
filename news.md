@@ -5,6 +5,16 @@ title:  "SPDK in the News"
 
 # News items
 
+## September 18 2018 CloudTech
+
+### [OpenStack and NVMe-over-Fabrics: Getting higher performance for network-connected SSDs](https://www.cloudcomputing-news.net/news/2018/sep/18/openstack-and-nvme-over-fabrics-getting-high-performance-for-network-connected-ssds/)
+> Intel, Mirantis and Mellanox are working together to enable NVMe-oF in Openstack. There 2 solutions to implement NVMe-oF with OpenStack: Kernel NVMe-oF target and SPDK NVMe-oF target. If compared with Kernel-based implementations, SPDK reduces NVMe-oF software overheads and yields high throughput and performance ...
+
+## August 20 2018 Forbes
+
+### [More Flash Memory News](https://www.forbes.com/sites/tomcoughlin/2018/08/20/more-flash-memory-news/#4fd9f6825830)
+> At FMS, SolarFlare showcased Intel ®Optane™ SSDs with Solarflare XTremeScale™ 100GBE Ethernet adapters implementing the upcoming NVMe-oF TCP spec using SPDK. The NVMe-based Optane storage over TCP provides a low-cost high performance solid-state network that has latency as low as 15 microseconds.
+
 ## August 2018 44th International Conference on Very Large Data Bases
 
 ### [PolarFS: An Ultra-low Latency and Failure Resilient Distributed File System for Shared Storage Cloud Database](http://www.vldb.org/pvldb/vol11/p1849-cao.pdf)
@@ -14,6 +24,11 @@ title:  "SPDK in the News"
 
 ### [Cost/Performance in Modern Data Stores](https://dl.acm.org/citation.cfm?doid=3211922.3211927)
 > In this paper, SPDK was used to optimize the I/O path in Deuterony (a Log-Structured data caching DB) and reduce the cost of I/O operations by a third.
+
+## May 15 2018 SPDK Summit
+
+### [SPDK US Summit](http://spdk.io/news/2018/06/13/summit-recap/)
+> Over 170 attendees from 51 different companies attended the 2018 SPDK US Summit at Dolce Hayes Mansion, San Jose on May 15th and 16th. 
 
 ## March 20 2018 OCP Summit 2018
 
