@@ -1,5 +1,6 @@
 var NAVTREEINDEX2 =
 {
+"env_8h.html#ae5027b309c5a3210250d896ed5c9b0f8":[13,0,15,78],
 "env_8h.html#ae7c48afea3729723d2a9b98342df42cc":[13,0,15,90],
 "env_8h.html#ae96a59dc23cf16ed24029ea50598be5b":[13,0,15,103],
 "env_8h.html#aec7e5ab204489da6d344999e4a0c8a73":[13,0,15,37],
@@ -248,6 +249,5 @@ var NAVTREEINDEX2 =
 "iscsi.html#iscsi_config":[3,1,0,1],
 "iscsi.html#iscsi_config_lcore":[3,1,0,1,0],
 "iscsi.html#iscsi_getting_started":[3,1,0],
-"iscsi.html#iscsi_hotplug":[3,1,2],
-"iscsi.html#iscsi_hotplug_bugs":[3,1,2,0]
+"iscsi.html#iscsi_hotplug":[3,1,2]
 };

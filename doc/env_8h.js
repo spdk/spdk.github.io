@@ -24,7 +24,8 @@ var env_8h =
     ] ],
     [ "spdk_ring_type", "env_8h.html#a88610413d6db3cc0eaafa4bda0f2caa9", [
       [ "SPDK_RING_TYPE_SP_SC", "env_8h.html#a88610413d6db3cc0eaafa4bda0f2caa9a670b262d381270eebba94ba3df9c58fa", null ],
-      [ "SPDK_RING_TYPE_MP_SC", "env_8h.html#a88610413d6db3cc0eaafa4bda0f2caa9a9b61abc1cc19d8b687094fc301be8ffb", null ]
+      [ "SPDK_RING_TYPE_MP_SC", "env_8h.html#a88610413d6db3cc0eaafa4bda0f2caa9a9b61abc1cc19d8b687094fc301be8ffb", null ],
+      [ "SPDK_RING_TYPE_MP_MC", "env_8h.html#a88610413d6db3cc0eaafa4bda0f2caa9ac1a83aa5873e638b7e5b797de8dde4a2", null ]
     ] ],
     [ "spdk_call_unaffinitized", "env_8h.html#abafaea6fc34059237e54e0ab254d0f28", null ],
     [ "spdk_delay_us", "env_8h.html#ab2e338ce2d6510489ae83bfff226b8b1", null ],
