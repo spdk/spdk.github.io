@@ -45,7 +45,7 @@ var user_guides =
         [ "Prerequisites for InfiniBand/RDMA Verbs", "nvmf.html#nvmf_prereqs_verbs", null ],
         [ "Prerequisites for RDMA NICs", "nvmf.html#nvmf_prereqs_rdma_nics", null ],
         [ "Configuring the SPDK NVMe over Fabrics Target", "nvmf.html#nvmf_config", [
-          [ "Subsystem Configuration", "nvmf.html#nvmf_config_subsystem", null ],
+          [ "Using RPCs", "nvmf.html#nvmf_config_rpc", null ],
           [ "Assigning CPU Cores to the NVMe over Fabrics Target", "nvmf.html#nvmf_config_lcore", null ]
         ] ],
         [ "Configuring the Linux NVMe over Fabrics Host", "nvmf.html#nvmf_host", null ],
