@@ -153,7 +153,9 @@ Data Structures</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__ocssd__geometry__data.html">spdk_ocssd_geometry_data</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__ocssd__chunk__information.html">spdk_ocssd_chunk_information</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__ocssd__chunk__information__entry.html">spdk_ocssd_chunk_information_entry</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__ocssd__chunk__notification__entry.html">spdk_ocssd_chunk_notification_entry</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__ocssd__vector__cpl.html">spdk_ocssd_vector_cpl</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vector completion queue entry.  <a href="structspdk__ocssd__vector__cpl.html#details">More...</a><br /></td></tr>
@@ -182,7 +184,8 @@ Enumerations</h2></td></tr>
  }<tr class="memdesc:abd099b6b977a8e059b306ad0fe9935c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">OCSSD I/O command set opcodes. <br /></td></tr>
 </td></tr>
 <tr class="separator:abd099b6b977a8e059b306ad0fe9935c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad778bee13251d6cdca7bb1bbadfbeb1d"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme__ocssd__spec_8h.html#ad778bee13251d6cdca7bb1bbadfbeb1d">spdk_ocssd_log_page</a> { <a class="el" href="nvme__ocssd__spec_8h.html#ad778bee13251d6cdca7bb1bbadfbeb1da9e8c50bfc1f5f2bf2802544b45dcca68">SPDK_OCSSD_LOG_CHUNK_INFO</a> = 0xCA
+<tr class="memitem:ad778bee13251d6cdca7bb1bbadfbeb1d"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme__ocssd__spec_8h.html#ad778bee13251d6cdca7bb1bbadfbeb1d">spdk_ocssd_log_page</a> { <a class="el" href="nvme__ocssd__spec_8h.html#ad778bee13251d6cdca7bb1bbadfbeb1da9e8c50bfc1f5f2bf2802544b45dcca68">SPDK_OCSSD_LOG_CHUNK_INFO</a> = 0xCA, 
+<a class="el" href="nvme__ocssd__spec_8h.html#ad778bee13251d6cdca7bb1bbadfbeb1da0287b7dbe8af751b7da29134a045b220">SPDK_OCSSD_LOG_CHUNK_NOTIFICATION</a> = 0xD0
  }<tr class="memdesc:ad778bee13251d6cdca7bb1bbadfbeb1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Log page identifiers for SPDK_NVME_OPC_GET_LOG_PAGE.  <a href="nvme__ocssd__spec_8h.html#ad778bee13251d6cdca7bb1bbadfbeb1d">More...</a><br /></td></tr>
 </td></tr>
 <tr class="separator:ad778bee13251d6cdca7bb1bbadfbeb1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -211,9 +214,12 @@ Functions</h2></td></tr>
 <tr class="memitem:a584df915ebdcf6a753a2370d5cbd784f"><td class="memItemLeft" align="right" valign="top"><a id="a584df915ebdcf6a753a2370d5cbd784f"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_STATIC_ASSERT</b> (sizeof(struct <a class="el" href="structspdk__ocssd__geometry__data.html">spdk_ocssd_geometry_data</a>)==4096, &quot;Incorrect size&quot;)</td></tr>
 <tr class="separator:a584df915ebdcf6a753a2370d5cbd784f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af9c2e1b80a1996b5720296d0695f53ec"><td class="memItemLeft" align="right" valign="top"><a id="af9c2e1b80a1996b5720296d0695f53ec"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_STATIC_ASSERT</b> (sizeof(struct <a class="el" href="structspdk__ocssd__chunk__information.html">spdk_ocssd_chunk_information</a>)==32, &quot;Incorrect size&quot;)</td></tr>
-<tr class="separator:af9c2e1b80a1996b5720296d0695f53ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae47104483611b04414d0a421b248d178"><td class="memItemLeft" align="right" valign="top"><a id="ae47104483611b04414d0a421b248d178"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_STATIC_ASSERT</b> (sizeof(struct <a class="el" href="structspdk__ocssd__chunk__information__entry.html">spdk_ocssd_chunk_information_entry</a>)==32, &quot;Incorrect size&quot;)</td></tr>
+<tr class="separator:ae47104483611b04414d0a421b248d178"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b36d556463b5fe4bb924a3da299fca0"><td class="memItemLeft" align="right" valign="top"><a id="a4b36d556463b5fe4bb924a3da299fca0"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_STATIC_ASSERT</b> (sizeof(struct <a class="el" href="structspdk__ocssd__chunk__notification__entry.html">spdk_ocssd_chunk_notification_entry</a>)==64, &quot;Incorrect size&quot;)</td></tr>
+<tr class="separator:a4b36d556463b5fe4bb924a3da299fca0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6e889e465d0062a5325c457c07d39adb"><td class="memItemLeft" align="right" valign="top"><a id="a6e889e465d0062a5325c457c07d39adb"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_STATIC_ASSERT</b> (sizeof(struct <a class="el" href="structspdk__ocssd__vector__cpl.html">spdk_ocssd_vector_cpl</a>)==16, &quot;Incorrect size&quot;)</td></tr>
 <tr class="separator:a6e889e465d0062a5325c457c07d39adb"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -256,6 +262,8 @@ Functions</h2></td></tr>
 <p>Log page identifiers for SPDK_NVME_OPC_GET_LOG_PAGE. </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ad778bee13251d6cdca7bb1bbadfbeb1da9e8c50bfc1f5f2bf2802544b45dcca68"></a>SPDK_OCSSD_LOG_CHUNK_INFO&#160;</td><td class="fielddoc"><p>Chunk Information. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad778bee13251d6cdca7bb1bbadfbeb1da0287b7dbe8af751b7da29134a045b220"></a>SPDK_OCSSD_LOG_CHUNK_NOTIFICATION&#160;</td><td class="fielddoc"><p>Chunk Notification Log. </p>
 </td></tr>
 </table>
 

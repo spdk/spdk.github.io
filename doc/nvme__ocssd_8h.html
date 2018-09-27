@@ -152,9 +152,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ac1b56c33cf573acccda1d68cbb5dcbbb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme__ocssd_8h.html#ac1b56c33cf573acccda1d68cbb5dcbbb">spdk_nvme_ocssd_ctrlr_cmd_geometry</a> (struct spdk_nvme_ctrlr *ctrlr, uint32_t nsid, void *payload, uint32_t payload_size, <a class="el" href="nvme_8h.html#ac9779e9957d7089dde8e492cc60856d8">spdk_nvme_cmd_cb</a> cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:ac1b56c33cf573acccda1d68cbb5dcbbb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Identify geometry of the given namespace.  <a href="#ac1b56c33cf573acccda1d68cbb5dcbbb">More...</a><br /></td></tr>
 <tr class="separator:ac1b56c33cf573acccda1d68cbb5dcbbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a73223b32a5c75a0c6fed9974ad8a8cf4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme__ocssd_8h.html#a73223b32a5c75a0c6fed9974ad8a8cf4">spdk_nvme_ocssd_ns_cmd_vector_reset</a> (struct spdk_nvme_ns *ns, struct spdk_nvme_qpair *qpair, uint64_t *lba_list, uint32_t num_lbas, struct <a class="el" href="structspdk__ocssd__chunk__information.html">spdk_ocssd_chunk_information</a> *chunk_info, <a class="el" href="nvme_8h.html#ac9779e9957d7089dde8e492cc60856d8">spdk_nvme_cmd_cb</a> cb_fn, void *cb_arg)</td></tr>
-<tr class="memdesc:a73223b32a5c75a0c6fed9974ad8a8cf4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submits a vector reset command to the specified NVMe namespace.  <a href="#a73223b32a5c75a0c6fed9974ad8a8cf4">More...</a><br /></td></tr>
-<tr class="separator:a73223b32a5c75a0c6fed9974ad8a8cf4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76454ff0913def2ef8d7e6be81cc29ae"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme__ocssd_8h.html#a76454ff0913def2ef8d7e6be81cc29ae">spdk_nvme_ocssd_ns_cmd_vector_reset</a> (struct spdk_nvme_ns *ns, struct spdk_nvme_qpair *qpair, uint64_t *lba_list, uint32_t num_lbas, struct <a class="el" href="structspdk__ocssd__chunk__information__entry.html">spdk_ocssd_chunk_information_entry</a> *chunk_info, <a class="el" href="nvme_8h.html#ac9779e9957d7089dde8e492cc60856d8">spdk_nvme_cmd_cb</a> cb_fn, void *cb_arg)</td></tr>
+<tr class="memdesc:a76454ff0913def2ef8d7e6be81cc29ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submits a vector reset command to the specified NVMe namespace.  <a href="#a76454ff0913def2ef8d7e6be81cc29ae">More...</a><br /></td></tr>
+<tr class="separator:a76454ff0913def2ef8d7e6be81cc29ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5da8caafd526dce7092840b88e472c54"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme__ocssd_8h.html#a5da8caafd526dce7092840b88e472c54">spdk_nvme_ocssd_ns_cmd_vector_write</a> (struct spdk_nvme_ns *ns, struct spdk_nvme_qpair *qpair, void *buffer, uint64_t *lba_list, uint32_t num_lbas, <a class="el" href="nvme_8h.html#ac9779e9957d7089dde8e492cc60856d8">spdk_nvme_cmd_cb</a> cb_fn, void *cb_arg, uint32_t io_flags)</td></tr>
 <tr class="memdesc:a5da8caafd526dce7092840b88e472c54"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submits a vector write command to the specified NVMe namespace.  <a href="#a5da8caafd526dce7092840b88e472c54">More...</a><br /></td></tr>
 <tr class="separator:a5da8caafd526dce7092840b88e472c54"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -514,8 +514,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a73223b32a5c75a0c6fed9974ad8a8cf4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a73223b32a5c75a0c6fed9974ad8a8cf4">&#9670;&nbsp;</a></span>spdk_nvme_ocssd_ns_cmd_vector_reset()</h2>
+<a id="a76454ff0913def2ef8d7e6be81cc29ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a76454ff0913def2ef8d7e6be81cc29ae">&#9670;&nbsp;</a></span>spdk_nvme_ocssd_ns_cmd_vector_reset()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -547,7 +547,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">struct <a class="el" href="structspdk__ocssd__chunk__information.html">spdk_ocssd_chunk_information</a> *&#160;</td>
+          <td class="paramtype">struct <a class="el" href="structspdk__ocssd__chunk__information__entry.html">spdk_ocssd_chunk_information_entry</a> *&#160;</td>
           <td class="paramname"><em>chunk_info</em>, </td>
         </tr>
         <tr>

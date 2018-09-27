@@ -209,6 +209,9 @@ typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_pci_enu
 <tr class="memitem:ac018be4449e60d4e5992e1e4be9bbef3"><td class="memItemLeft" align="right" valign="top"><a id="ac018be4449e60d4e5992e1e4be9bbef3"></a>
 typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_mem_map_notify_cb</b>) (void *cb_ctx, struct spdk_mem_map *map, enum spdk_mem_map_notify_action action, void *vaddr, size_t size)</td></tr>
 <tr class="separator:ac018be4449e60d4e5992e1e4be9bbef3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97d177f59e4dab8f7806c6fded1559da"><td class="memItemLeft" align="right" valign="top"><a id="a97d177f59e4dab8f7806c6fded1559da"></a>
+typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_mem_map_contiguous_translations</b>) (uint64_t addr_1, uint64_t addr_2)</td></tr>
+<tr class="separator:a97d177f59e4dab8f7806c6fded1559da"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
@@ -461,11 +464,11 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_
 <tr class="memitem:abafaea6fc34059237e54e0ab254d0f28"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_8h.html#abafaea6fc34059237e54e0ab254d0f28">spdk_call_unaffinitized</a> (void *cb(void *arg), void *arg)</td></tr>
 <tr class="memdesc:abafaea6fc34059237e54e0ab254d0f28"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call a function with CPU affinity unset.  <a href="#abafaea6fc34059237e54e0ab254d0f28">More...</a><br /></td></tr>
 <tr class="separator:abafaea6fc34059237e54e0ab254d0f28"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a512b5ef37a363a4c8e234c060b734605"><td class="memItemLeft" align="right" valign="top">struct spdk_mem_map *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_8h.html#a512b5ef37a363a4c8e234c060b734605">spdk_mem_map_alloc</a> (uint64_t default_translation, spdk_mem_map_notify_cb notify_cb, void *cb_ctx)</td></tr>
-<tr class="memdesc:a512b5ef37a363a4c8e234c060b734605"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate a virtual memory address translation map.  <a href="#a512b5ef37a363a4c8e234c060b734605">More...</a><br /></td></tr>
-<tr class="separator:a512b5ef37a363a4c8e234c060b734605"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1baea2604a87f2544317cf0c7309a44"><td class="memItemLeft" align="right" valign="top">struct spdk_mem_map *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_8h.html#aa1baea2604a87f2544317cf0c7309a44">spdk_mem_map_alloc</a> (uint64_t default_translation, const struct <a class="el" href="structspdk__mem__map__ops.html">spdk_mem_map_ops</a> *ops, void *cb_ctx)</td></tr>
+<tr class="memdesc:aa1baea2604a87f2544317cf0c7309a44"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate a virtual memory address translation map.  <a href="#aa1baea2604a87f2544317cf0c7309a44">More...</a><br /></td></tr>
+<tr class="separator:aa1baea2604a87f2544317cf0c7309a44"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af88ed69bd8b9a057f672a1170f7a5b6c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_8h.html#af88ed69bd8b9a057f672a1170f7a5b6c">spdk_mem_map_free</a> (struct spdk_mem_map **pmap)</td></tr>
-<tr class="memdesc:af88ed69bd8b9a057f672a1170f7a5b6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Free a memory map previously allocated by <a class="el" href="env_8h.html#a512b5ef37a363a4c8e234c060b734605" title="Allocate a virtual memory address translation map. ">spdk_mem_map_alloc()</a>.  <a href="#af88ed69bd8b9a057f672a1170f7a5b6c">More...</a><br /></td></tr>
+<tr class="memdesc:af88ed69bd8b9a057f672a1170f7a5b6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Free a memory map previously allocated by <a class="el" href="env_8h.html#aa1baea2604a87f2544317cf0c7309a44" title="Allocate a virtual memory address translation map. ">spdk_mem_map_alloc()</a>.  <a href="#af88ed69bd8b9a057f672a1170f7a5b6c">More...</a><br /></td></tr>
 <tr class="separator:af88ed69bd8b9a057f672a1170f7a5b6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3314f2917141bf11f5b125c306d4397d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_8h.html#a3314f2917141bf11f5b125c306d4397d">spdk_mem_map_set_translation</a> (struct spdk_mem_map *map, uint64_t vaddr, uint64_t size, uint64_t translation)</td></tr>
 <tr class="memdesc:a3314f2917141bf11f5b125c306d4397d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register an address translation for a range of virtual memory.  <a href="#a3314f2917141bf11f5b125c306d4397d">More...</a><br /></td></tr>
@@ -1251,8 +1254,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_
 
 </div>
 </div>
-<a id="a512b5ef37a363a4c8e234c060b734605"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a512b5ef37a363a4c8e234c060b734605">&#9670;&nbsp;</a></span>spdk_mem_map_alloc()</h2>
+<a id="aa1baea2604a87f2544317cf0c7309a44"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa1baea2604a87f2544317cf0c7309a44">&#9670;&nbsp;</a></span>spdk_mem_map_alloc()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1266,8 +1269,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">spdk_mem_map_notify_cb&#160;</td>
-          <td class="paramname"><em>notify_cb</em>, </td>
+          <td class="paramtype">const struct <a class="el" href="structspdk__mem__map__ops.html">spdk_mem_map_ops</a> *&#160;</td>
+          <td class="paramname"><em>ops</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1287,7 +1290,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">default_translation</td><td>Default translation for the map. </td></tr>
-    <tr><td class="paramname">notify_cb</td><td>Callback function to notify the mapping. </td></tr>
+    <tr><td class="paramname">ops</td><td>Table of callback functions for map operations. </td></tr>
     <tr><td class="paramname">cb_ctx</td><td>Argument passed to the callback function.</td></tr>
   </table>
   </dd>
@@ -1358,7 +1361,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_
       </table>
 </div><div class="memdoc">
 
-<p>Free a memory map previously allocated by <a class="el" href="env_8h.html#a512b5ef37a363a4c8e234c060b734605" title="Allocate a virtual memory address translation map. ">spdk_mem_map_alloc()</a>. </p>
+<p>Free a memory map previously allocated by <a class="el" href="env_8h.html#aa1baea2604a87f2544317cf0c7309a44" title="Allocate a virtual memory address translation map. ">spdk_mem_map_alloc()</a>. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">pmap</td><td>Memory map to free. </td></tr>
@@ -1462,7 +1465,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>the translation of vaddr stored in the map, or default_translation as specified in <a class="el" href="env_8h.html#a512b5ef37a363a4c8e234c060b734605" title="Allocate a virtual memory address translation map. ">spdk_mem_map_alloc()</a> if vaddr is not present in the map. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>the translation of vaddr stored in the map, or default_translation as specified in <a class="el" href="env_8h.html#aa1baea2604a87f2544317cf0c7309a44" title="Allocate a virtual memory address translation map. ">spdk_mem_map_alloc()</a> if vaddr is not present in the map. </dd></dl>
 
 </div>
 </div>

@@ -11,7 +11,6 @@ var intro =
     [ "Vagrant Development Environment", "vagrant.html", [
       [ "Introduction", "vagrant.html#vagrant_intro", null ],
       [ "VM Configuration", "vagrant.html#vagrant_config", null ],
-      [ "Providers", "vagrant.html#vagrant_providers", null ],
       [ "Running An Example", "vagrant.html#vagrant_example", null ]
     ] ],
     [ "Changelog", "changelog.html", [

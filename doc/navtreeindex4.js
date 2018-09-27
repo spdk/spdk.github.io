@@ -1,5 +1,6 @@
 var NAVTREEINDEX4 =
 {
+"jsonrpc.html#rpc_delete_malloc_bdev":[3,6,2,6],
 "jsonrpc.html#rpc_delete_null_bdev":[3,6,2,8],
 "jsonrpc.html#rpc_delete_nvme_controller":[3,6,2,14],
 "jsonrpc.html#rpc_delete_nvmf_subsystem":[3,6,4,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX4 =
 "nvme_8h.html#aad367fec5a8963f5d930dfae485de6b3":[14,0,32,87],
 "nvme_8h.html#ab1863b5dccf2bcc49fe92275bc1e5a2a":[14,0,32,73],
 "nvme_8h.html#ab2afed1cce9d9334dfd127db416ada4c":[14,0,32,97],
-"nvme_8h.html#ab48657f8cb6561b35e1c1b0bc18376d2":[14,0,32,79],
-"nvme_8h.html#ab4d42660e3de76f75f4b5d79ed9b1d01":[14,0,32,71]
+"nvme_8h.html#ab48657f8cb6561b35e1c1b0bc18376d2":[14,0,32,79]
 };

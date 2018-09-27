@@ -96,6 +96,7 @@ var searchData=
   ['spdk_5fnvmf_5ftrtype_5frdma',['SPDK_NVMF_TRTYPE_RDMA',['../nvmf__spec_8h.html#a239e424a2438a066c30a288c592cba1baec348612711970101cf2eadb303e16d9',1,'nvmf_spec.h']]],
   ['spdk_5focssd_5ffeat_5fmedia_5ffeedback',['SPDK_OCSSD_FEAT_MEDIA_FEEDBACK',['../nvme__ocssd__spec_8h.html#a95b16b2164a4f7812a2d3b8dd461cfa5a6540204690d8c653892f749e5c04f7bc',1,'nvme_ocssd_spec.h']]],
   ['spdk_5focssd_5flog_5fchunk_5finfo',['SPDK_OCSSD_LOG_CHUNK_INFO',['../nvme__ocssd__spec_8h.html#ad778bee13251d6cdca7bb1bbadfbeb1da9e8c50bfc1f5f2bf2802544b45dcca68',1,'nvme_ocssd_spec.h']]],
+  ['spdk_5focssd_5flog_5fchunk_5fnotification',['SPDK_OCSSD_LOG_CHUNK_NOTIFICATION',['../nvme__ocssd__spec_8h.html#ad778bee13251d6cdca7bb1bbadfbeb1da0287b7dbe8af751b7da29134a045b220',1,'nvme_ocssd_spec.h']]],
   ['spdk_5focssd_5fsc_5finvalid_5freset',['SPDK_OCSSD_SC_INVALID_RESET',['../nvme__ocssd__spec_8h.html#ae66ff1776aa8a6560e7c762726777deaaebb29b4122d37f7bed73d1698ab845d9',1,'nvme_ocssd_spec.h']]],
   ['spdk_5focssd_5fsc_5foffline_5fchunk',['SPDK_OCSSD_SC_OFFLINE_CHUNK',['../nvme__ocssd__spec_8h.html#ae66ff1776aa8a6560e7c762726777deaaf46a12306da17afa5de6231857a7b323',1,'nvme_ocssd_spec.h']]],
   ['spdk_5focssd_5fsc_5fout_5fof_5forder_5fwrite',['SPDK_OCSSD_SC_OUT_OF_ORDER_WRITE',['../nvme__ocssd__spec_8h.html#ae66ff1776aa8a6560e7c762726777deaa52972575b3058bfd5a4ccd9eb172da26',1,'nvme_ocssd_spec.h']]],

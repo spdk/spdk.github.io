@@ -1,5 +1,6 @@
 var NAVTREEINDEX3 =
 {
+"iscsi.html#iscsi_hotplug":[3,1,2],
 "iscsi.html#iscsi_hotplug_bugs":[3,1,2,0],
 "iscsi.html#iscsi_initiator":[3,1,0,3],
 "iscsi.html#iscsi_lun":[3,1,0,1,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX3 =
 "jsonrpc.html#rpc_delete_error_bdev":[3,6,2,18],
 "jsonrpc.html#rpc_delete_initiator_group":[3,6,3,10],
 "jsonrpc.html#rpc_delete_iscsi_auth_group":[3,6,3,4],
-"jsonrpc.html#rpc_delete_iscsi_bdev":[3,6,2,20],
-"jsonrpc.html#rpc_delete_malloc_bdev":[3,6,2,6]
+"jsonrpc.html#rpc_delete_iscsi_bdev":[3,6,2,20]
 };

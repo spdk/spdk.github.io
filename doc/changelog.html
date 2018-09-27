@@ -150,6 +150,7 @@ v18.10: (Upcoming Release)</h1>
 <p>The RAID virtual bdev module is now always enabled by default. The configure &ndash;with-raid and &ndash;without-raid options are now ignored and deprecated and will be removed in the next release.</p>
 <h2>Environment Abstraction Layer and Event Framework</h2>
 <p>The size parameter of spdk_mem_map_translate is now a pointer. This allows the function to report back the actual size of the translation relative to the original request made by the user.</p>
+<p>A new structure <a class="el" href="structspdk__mem__map__ops.html" title="A function table to be implemented by each memory map. ">spdk_mem_map_ops</a> has been introduced to hold memory map related callbacks. This structure is now passed as the second argument of spdk_mem_map_alloc in lieu of the notify callback.</p>
 <h2>iscsi</h2>
 <p>Parameter names of <code>set_iscsi_options</code> and <code>get_iscsi_global_params</code> RPC method for CHAP authentication in discovery sessions have been changed to align with <code>construct_target_node</code> RPC method. Old names are still usable but will be removed in future release.</p>
 <p><code>set_iscsi_discovery_auth</code> and <code>set_iscsi_target_node_auth</code> RPC methods have been added to set CHAP authentication for discovery sessions and existing target nodes, respectively.</p>
