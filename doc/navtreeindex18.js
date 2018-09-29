@@ -1,5 +1,7 @@
 var NAVTREEINDEX18 =
 {
+"unionspdk__nvme__feat__software__progress__marker.html#a084a4a506ed54d2e9423ef6e60d753b0":[13,0,97,0],
+"unionspdk__nvme__feat__software__progress__marker.html#a22cdd614671f8b7a383463bebd28a384":[13,0,97,2],
 "unionspdk__nvme__feat__software__progress__marker.html#a7daee58fa1e18cf11a6e6989f98f6ff1":[13,0,97,3],
 "unionspdk__nvme__feat__temperature__threshold.html":[13,0,98],
 "unionspdk__nvme__feat__temperature__threshold.html#a384b25c620ca81031b6260f6b0e16142":[13,0,98,3],

@@ -516,6 +516,8 @@ var searchData=
   ['spdk_5fnvme_5fctrlr_5fcmd_5fget_5flog_5fpage',['spdk_nvme_ctrlr_cmd_get_log_page',['../nvme_8h.html#a88c881cccf7873bbe4605320ffb0a81c',1,'nvme.h']]],
   ['spdk_5fnvme_5fctrlr_5fcmd_5fio_5fraw',['spdk_nvme_ctrlr_cmd_io_raw',['../nvme_8h.html#a1e3def668122e76abbfb74305f118291',1,'nvme.h']]],
   ['spdk_5fnvme_5fctrlr_5fcmd_5fio_5fraw_5fwith_5fmd',['spdk_nvme_ctrlr_cmd_io_raw_with_md',['../nvme_8h.html#afd2d8453bb2478c7b1a70c0a09c7ef4b',1,'nvme.h']]],
+  ['spdk_5fnvme_5fctrlr_5fcmd_5fsecurity_5freceive',['spdk_nvme_ctrlr_cmd_security_receive',['../nvme_8h.html#ae7bcc2decc2d4ce01b041601c5cdecea',1,'nvme.h']]],
+  ['spdk_5fnvme_5fctrlr_5fcmd_5fsecurity_5fsend',['spdk_nvme_ctrlr_cmd_security_send',['../nvme_8h.html#a0e7a6bb3ac85f99f936290f679399039',1,'nvme.h']]],
   ['spdk_5fnvme_5fctrlr_5fcmd_5fset_5ffeature',['spdk_nvme_ctrlr_cmd_set_feature',['../nvme_8h.html#aa9507cb98ee30e5df98474bc82190476',1,'nvme.h']]],
   ['spdk_5fnvme_5fctrlr_5fcmd_5fset_5ffeature_5fns',['spdk_nvme_ctrlr_cmd_set_feature_ns',['../nvme_8h.html#a63fda1acce45c71590ed0db99220d26b',1,'nvme.h']]],
   ['spdk_5fnvme_5fctrlr_5fcreate_5fns',['spdk_nvme_ctrlr_create_ns',['../nvme_8h.html#ace23485fea91d126a13fe706ce6d8843',1,'nvme.h']]],
