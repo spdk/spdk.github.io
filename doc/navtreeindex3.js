@@ -1,5 +1,10 @@
 var NAVTREEINDEX3 =
 {
+"ioat__spec_8h.html#afc40161ff89b7599a591441bc4699e5d":[14,0,22,30],
+"iscsi.html":[3,1],
+"iscsi.html#iscsi_config":[3,1,0,1],
+"iscsi.html#iscsi_config_lcore":[3,1,0,1,0],
+"iscsi.html#iscsi_getting_started":[3,1,0],
 "iscsi.html#iscsi_hotplug":[3,1,2],
 "iscsi.html#iscsi_hotplug_bugs":[3,1,2,0],
 "iscsi.html#iscsi_initiator":[3,1,0,3],
@@ -244,10 +249,5 @@ var NAVTREEINDEX3 =
 "jsonrpc.html#rpc_context_switch_monitor":[3,6,1,1],
 "jsonrpc.html#rpc_create_pmem_pool":[3,6,2,21],
 "jsonrpc.html#rpc_decouple_parent_lvol_bdev":[3,6,6,11],
-"jsonrpc.html#rpc_delete_aio_bdev":[3,6,2,10],
-"jsonrpc.html#rpc_delete_bdev":[3,6,2,3],
-"jsonrpc.html#rpc_delete_error_bdev":[3,6,2,18],
-"jsonrpc.html#rpc_delete_initiator_group":[3,6,3,10],
-"jsonrpc.html#rpc_delete_iscsi_auth_group":[3,6,3,4],
-"jsonrpc.html#rpc_delete_iscsi_bdev":[3,6,2,20]
+"jsonrpc.html#rpc_delete_aio_bdev":[3,6,2,10]
 };

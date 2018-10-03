@@ -45,24 +45,24 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "about.html",
-"blob_8h.html#ad0d58654483ac10df65d4b55356eff84",
-"env_8h.html#ae488ab8a8a1b56ae22ca26b00185f7f8",
-"iscsi.html#iscsi_hotplug",
-"jsonrpc.html#rpc_delete_malloc_bdev",
-"nvme_8h.html#ab48657f8cb6561b35e1c1b0bc18376d2",
-"nvme__spec_8h.html#a53188eec68915208fab035bba9d6eba7addecde54b40bedbc86f99f1425e518a4",
-"nvme__spec_8h.html#aeae5c5fb9df2c7a39215c71f9d9b4c25a833aa3633dbc0fc2c3565e65d1064b44",
-"pci__ids_8h.html#af08a73cbb6955dc979df42c6bb7d0ca5",
-"scsi__spec_8h.html#a9e2b2add18fac5a9110df411076170dca974443bd32056cbc53e07717cd69276f",
-"structiscsi__bhs__data__out.html#aff10c2925b79ed87c160ded3b99b911b",
-"structspdk__app__opts.html#a6d21685102b759248a42bb8874c42409",
-"structspdk__ioat__dma__hw__desc.html#a2f407ff378199ea5ca5d3bf96ebd8004",
-"structspdk__nvme__cpl.html#aec1795d600de9d400fbb471aeff8165f",
-"structspdk__nvme__intel__rw__latency__page.html",
-"structspdk__nvmf__discovery__log__page__entry.html#a549e9bb635b7ae387daceef8e5b27e68",
-"structspdk__nvmf__rdma__request__private__data.html#af3a3378e9669836eda97a3ac42775b50",
-"structspdk__trace__tpoint.html#a7b9c15e2c7b853f4764ea94dea4fc28b",
-"unionspdk__nvme__feat__software__progress__marker.html#a084a4a506ed54d2e9423ef6e60d753b0"
+"blob_8h.html#aab6d19ccc3c952877c355030e2a286c1",
+"env_8h.html#acd01324e661a5d6deb59bd2bc6230de3",
+"ioat__spec_8h.html#afc40161ff89b7599a591441bc4699e5d",
+"jsonrpc.html#rpc_delete_bdev",
+"nvme_8h.html#aa2b1d9de51027da9a66fe12e2ce28132",
+"nvme__spec_8h.html#a49914175a8977c209595d436f71136bc",
+"nvme__spec_8h.html#aeae5c5fb9df2c7a39215c71f9d9b4c25a2db36e381e4bb73079a026c3f184f530",
+"pci__ids_8h.html#ad9dc98c7a94159bae36cdfb6a2387960",
+"scsi__spec_8h.html#a9e2b2add18fac5a9110df411076170dca72800343a5359df39b6ac3a2ae8d6589",
+"structiscsi__bhs__data__out.html#a811aa85f90134887b58881f0c6a64e20",
+"structspdk__app__opts.html#a2a264093fd74433b83da1a4edc757b59",
+"structspdk__ioat__dma__hw__desc.html",
+"structspdk__nvme__cmds__and__effect__log__page.html",
+"structspdk__nvme__intel__log__page__directory.html#a4246e1fa60a0a0ecb02f8b50910ef3bd",
+"structspdk__nvmf__discovery__log__page.html#a8c4ca24e94d27c352074ffac98d97839",
+"structspdk__nvmf__rdma__reject__private__data.html#a5122d45baefbf1559b0540e2e12921c2",
+"structspdk__trace__register__fn.html",
+"unionspdk__nvme__feat__power__management.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

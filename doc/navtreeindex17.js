@@ -1,5 +1,13 @@
 var NAVTREEINDEX17 =
 {
+"structspdk__trace__register__fn.html":[13,0,199],
+"structspdk__trace__register__fn.html#a2cd05182ab95ca91415b10eb95700a5e":[13,0,199,0],
+"structspdk__trace__register__fn.html#a8109be7fda1144908e5a3b67293ab5fb":[13,0,199,1],
+"structspdk__trace__tpoint.html":[13,0,200],
+"structspdk__trace__tpoint.html#a0f01e931e5212379d1720697cea4525f":[13,0,200,5],
+"structspdk__trace__tpoint.html#a317eccf6a1a97bcaa0fb21002fe174ce":[13,0,200,8],
+"structspdk__trace__tpoint.html#a36b0a929e3dc31f1a224ee53858cb04b":[13,0,200,1],
+"structspdk__trace__tpoint.html#a53a24483b23dd572596559998f21a58a":[13,0,200,0],
 "structspdk__trace__tpoint.html#a7b9c15e2c7b853f4764ea94dea4fc28b":[13,0,200,2],
 "structspdk__trace__tpoint.html#ab076ca5845f90898c78f9a64adac7237":[13,0,200,4],
 "structspdk__trace__tpoint.html#ab7fc63503e3111eaa02cec6270279903":[13,0,200,3],
@@ -241,13 +249,5 @@ var NAVTREEINDEX17 =
 "unionspdk__nvme__feat__number__of__queues.html#a333d356ec56d5cbbc18d680c17f8eb44":[13,0,95,2],
 "unionspdk__nvme__feat__number__of__queues.html#a48012c7a713f82d0e9b375cf363d4af2":[13,0,95,1],
 "unionspdk__nvme__feat__number__of__queues.html#a78b536a5ad4c2c35277c7313b6eec0f2":[13,0,95,0],
-"unionspdk__nvme__feat__number__of__queues.html#a80c8bbe6b6b28766af70bb9333fb303e":[13,0,95,3],
-"unionspdk__nvme__feat__power__management.html":[13,0,96],
-"unionspdk__nvme__feat__power__management.html#a0614478c08480813d285d5819998e3ee":[13,0,96,2],
-"unionspdk__nvme__feat__power__management.html#a77632a40e3f55b8de36ca61c7d0a8b74":[13,0,96,4],
-"unionspdk__nvme__feat__power__management.html#ad425c8a49e910e0413a6a45a67044fbe":[13,0,96,3],
-"unionspdk__nvme__feat__power__management.html#ae219605c34a7506c8b276395bec60408":[13,0,96,0],
-"unionspdk__nvme__feat__power__management.html#af68e833134cda1b00b750992bdd91342":[13,0,96,1],
-"unionspdk__nvme__feat__software__progress__marker.html":[13,0,97],
-"unionspdk__nvme__feat__software__progress__marker.html#a068b7aa9ea34b8e38dfcf7b8f7d25f70":[13,0,97,1]
+"unionspdk__nvme__feat__number__of__queues.html#a80c8bbe6b6b28766af70bb9333fb303e":[13,0,95,3]
 };

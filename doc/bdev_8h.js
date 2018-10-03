@@ -24,6 +24,11 @@ var bdev_8h =
       [ "SPDK_BDEV_IO_TYPE_WRITE_ZEROES", "bdev_8h.html#a633029e24ab5ae4a689bffa2565a519fafe05a68dda7f3bdfa3d91bab8a92960a", null ],
       [ "SPDK_BDEV_NUM_IO_TYPES", "bdev_8h.html#a633029e24ab5ae4a689bffa2565a519fab8b20053cecdcd7973f1c2d0dce2b457", null ]
     ] ],
+    [ "spdk_bdev_qos_rate_limit_type", "bdev_8h.html#aedfbfc44fa2113d7ee219d09a0994d93", [
+      [ "SPDK_BDEV_QOS_RW_IOPS_RATE_LIMIT", "bdev_8h.html#aedfbfc44fa2113d7ee219d09a0994d93a679f76e345c7295f991eeb84d977e5b0", null ],
+      [ "SPDK_BDEV_QOS_RW_BPS_RATE_LIMIT", "bdev_8h.html#aedfbfc44fa2113d7ee219d09a0994d93a595aaec5bb61bcbdc9f08e111cfd0943", null ],
+      [ "SPDK_BDEV_QOS_NUM_RATE_LIMIT_TYPES", "bdev_8h.html#aedfbfc44fa2113d7ee219d09a0994d93a25c0a2574ea232ae0fd9fd3969c00b11", null ]
+    ] ],
     [ "spdk_bdev_status", "bdev_8h.html#ad6c166f5d928c2995df57c96a2977862", [
       [ "SPDK_BDEV_STATUS_INVALID", "bdev_8h.html#ad6c166f5d928c2995df57c96a2977862a8ae156ac27597e66878248e0b2ed0dff", null ],
       [ "SPDK_BDEV_STATUS_READY", "bdev_8h.html#ad6c166f5d928c2995df57c96a2977862a81b16f97132d8245c61f02fd94b4ec11", null ],
@@ -53,7 +58,8 @@ var bdev_8h =
     [ "spdk_bdev_get_product_name", "bdev_8h.html#a1cb4d1f8822c30be8c5d9c5dc3e62483", null ],
     [ "spdk_bdev_get_qd", "bdev_8h.html#a471f32e8948203f7aaf320396a1ae7c9", null ],
     [ "spdk_bdev_get_qd_sampling_period", "bdev_8h.html#adab852ac707702316bf869a3d7dfdc85", null ],
-    [ "spdk_bdev_get_qos_ios_per_sec", "bdev_8h.html#a95568575f25704de7831adccc0cad94b", null ],
+    [ "spdk_bdev_get_qos_rate_limits", "bdev_8h.html#a08c63fbd418d5a77f34ddca9a4268f41", null ],
+    [ "spdk_bdev_get_qos_rpc_type", "bdev_8h.html#a9d79dd7fdd009d8bd1c6bb0161af1ec1", null ],
     [ "spdk_bdev_get_uuid", "bdev_8h.html#add8565cdbf3d57697b67202b869a7beb", null ],
     [ "spdk_bdev_get_weighted_io_time", "bdev_8h.html#a526ab43ba037b8637a23e9d42289884e", null ],
     [ "spdk_bdev_has_write_cache", "bdev_8h.html#a93f6d6ce09da384501f09a49581caa37", null ],
@@ -76,7 +82,7 @@ var bdev_8h =
     [ "spdk_bdev_reset", "group__bdev__io__submit__functions.html#gaca574d3e94be6150343823dd2e7ecf46", null ],
     [ "spdk_bdev_set_opts", "bdev_8h.html#a828be2f36a5c1e343488130c457f5bf5", null ],
     [ "spdk_bdev_set_qd_sampling_period", "bdev_8h.html#a9d37ad1d4da0bcb51ada76dbe4f4ce15", null ],
-    [ "spdk_bdev_set_qos_limit_iops", "bdev_8h.html#ae740e2dbe4eb28fb470ef208fa993e30", null ],
+    [ "spdk_bdev_set_qos_rate_limits", "bdev_8h.html#a70520c668368881df8d7410fec9b1a08", null ],
     [ "spdk_bdev_subsystem_config_json", "bdev_8h.html#a57814ce5dc208380ebf39dab0e1ce9a8", null ],
     [ "spdk_bdev_unmap", "group__bdev__io__submit__functions.html#ga680c9c302998f7b003e2476e35d9ae4b", null ],
     [ "spdk_bdev_unmap_blocks", "group__bdev__io__submit__functions.html#ga7555fdd41019e29b40e535b72457d30b", null ],

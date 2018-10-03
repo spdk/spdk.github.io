@@ -2,8 +2,10 @@ var searchData=
 [
   ['spdk_5fbdev_5fio_5fstatus',['spdk_bdev_io_status',['../bdev__module_8h.html#aa35cc1485b6ba4351c2fb4fbd7125c93',1,'bdev_module.h']]],
   ['spdk_5fbdev_5fio_5ftype',['spdk_bdev_io_type',['../bdev_8h.html#a633029e24ab5ae4a689bffa2565a519f',1,'bdev.h']]],
+  ['spdk_5fbdev_5fqos_5frate_5flimit_5ftype',['spdk_bdev_qos_rate_limit_type',['../bdev_8h.html#aedfbfc44fa2113d7ee219d09a0994d93',1,'bdev.h']]],
   ['spdk_5fbdev_5fstatus',['spdk_bdev_status',['../bdev_8h.html#ad6c166f5d928c2995df57c96a2977862',1,'bdev.h']]],
   ['spdk_5fioat_5fdma_5fcapability_5fflags',['spdk_ioat_dma_capability_flags',['../ioat_8h.html#a9e773693f3aadb3dc526810a2e387402',1,'ioat.h']]],
+  ['spdk_5flog_5flevel',['spdk_log_level',['../log_8h.html#a188d351bd05093cba1d8594ee9988efd',1,'log.h']]],
   ['spdk_5fnvme_5fadmin_5fopcode',['spdk_nvme_admin_opcode',['../nvme__spec_8h.html#a3d96f5eb214b3cb58675276f19855bf5',1,'nvme_spec.h']]],
   ['spdk_5fnvme_5fasync_5fevent_5finfo_5ferror',['spdk_nvme_async_event_info_error',['../nvme__spec_8h.html#a87a370c671a1dcad0106afc888af8d04',1,'nvme_spec.h']]],
   ['spdk_5fnvme_5fasync_5fevent_5finfo_5fnotice',['spdk_nvme_async_event_info_notice',['../nvme__spec_8h.html#af0fe403c0712860a8e0b9763844d25b6',1,'nvme_spec.h']]],

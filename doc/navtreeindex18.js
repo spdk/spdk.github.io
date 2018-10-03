@@ -1,5 +1,13 @@
 var NAVTREEINDEX18 =
 {
+"unionspdk__nvme__feat__power__management.html":[13,0,96],
+"unionspdk__nvme__feat__power__management.html#a0614478c08480813d285d5819998e3ee":[13,0,96,2],
+"unionspdk__nvme__feat__power__management.html#a77632a40e3f55b8de36ca61c7d0a8b74":[13,0,96,4],
+"unionspdk__nvme__feat__power__management.html#ad425c8a49e910e0413a6a45a67044fbe":[13,0,96,3],
+"unionspdk__nvme__feat__power__management.html#ae219605c34a7506c8b276395bec60408":[13,0,96,0],
+"unionspdk__nvme__feat__power__management.html#af68e833134cda1b00b750992bdd91342":[13,0,96,1],
+"unionspdk__nvme__feat__software__progress__marker.html":[13,0,97],
+"unionspdk__nvme__feat__software__progress__marker.html#a068b7aa9ea34b8e38dfcf7b8f7d25f70":[13,0,97,1],
 "unionspdk__nvme__feat__software__progress__marker.html#a084a4a506ed54d2e9423ef6e60d753b0":[13,0,97,0],
 "unionspdk__nvme__feat__software__progress__marker.html#a22cdd614671f8b7a383463bebd28a384":[13,0,97,2],
 "unionspdk__nvme__feat__software__progress__marker.html#a7daee58fa1e18cf11a6e6989f98f6ff1":[13,0,97,3],

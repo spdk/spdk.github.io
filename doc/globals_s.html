@@ -284,8 +284,11 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 <li>spdk_bdev_get_qd_sampling_period()
 : <a class="el" href="bdev_8h.html#adab852ac707702316bf869a3d7dfdc85">bdev.h</a>
 </li>
-<li>spdk_bdev_get_qos_ios_per_sec()
-: <a class="el" href="bdev_8h.html#a95568575f25704de7831adccc0cad94b">bdev.h</a>
+<li>spdk_bdev_get_qos_rate_limits()
+: <a class="el" href="bdev_8h.html#a08c63fbd418d5a77f34ddca9a4268f41">bdev.h</a>
+</li>
+<li>spdk_bdev_get_qos_rpc_type()
+: <a class="el" href="bdev_8h.html#a9d79dd7fdd009d8bd1c6bb0161af1ec1">bdev.h</a>
 </li>
 <li>spdk_bdev_get_uuid()
 : <a class="el" href="bdev_8h.html#add8565cdbf3d57697b67202b869a7beb">bdev.h</a>
@@ -428,6 +431,18 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 <li>spdk_bdev_part_submit_request()
 : <a class="el" href="bdev__module_8h.html#ae7887b9afa298d871c93f94a3feb0bb3">bdev_module.h</a>
 </li>
+<li>SPDK_BDEV_QOS_NUM_RATE_LIMIT_TYPES
+: <a class="el" href="bdev_8h.html#aedfbfc44fa2113d7ee219d09a0994d93a25c0a2574ea232ae0fd9fd3969c00b11">bdev.h</a>
+</li>
+<li>spdk_bdev_qos_rate_limit_type
+: <a class="el" href="bdev_8h.html#aedfbfc44fa2113d7ee219d09a0994d93">bdev.h</a>
+</li>
+<li>SPDK_BDEV_QOS_RW_BPS_RATE_LIMIT
+: <a class="el" href="bdev_8h.html#aedfbfc44fa2113d7ee219d09a0994d93a595aaec5bb61bcbdc9f08e111cfd0943">bdev.h</a>
+</li>
+<li>SPDK_BDEV_QOS_RW_IOPS_RATE_LIMIT
+: <a class="el" href="bdev_8h.html#aedfbfc44fa2113d7ee219d09a0994d93a679f76e345c7295f991eeb84d977e5b0">bdev.h</a>
+</li>
 <li>spdk_bdev_queue_io_wait()
 : <a class="el" href="bdev_8h.html#acc4beee18ded7837fa92bd7c34e7ef2e">bdev.h</a>
 </li>
@@ -455,8 +470,8 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 <li>spdk_bdev_set_qd_sampling_period()
 : <a class="el" href="bdev_8h.html#a9d37ad1d4da0bcb51ada76dbe4f4ce15">bdev.h</a>
 </li>
-<li>spdk_bdev_set_qos_limit_iops()
-: <a class="el" href="bdev_8h.html#ae740e2dbe4eb28fb470ef208fa993e30">bdev.h</a>
+<li>spdk_bdev_set_qos_rate_limits()
+: <a class="el" href="bdev_8h.html#a70520c668368881df8d7410fec9b1a08">bdev.h</a>
 </li>
 <li>spdk_bdev_status
 : <a class="el" href="bdev_8h.html#ad6c166f5d928c2995df57c96a2977862">bdev.h</a>
@@ -1160,6 +1175,12 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 <li>spdk_log_close()
 : <a class="el" href="log_8h.html#a41cdc17423a58c475fa785fd491f00e9">log.h</a>
 </li>
+<li>SPDK_LOG_DISABLED
+: <a class="el" href="log_8h.html#a188d351bd05093cba1d8594ee9988efdaaaf05c57678e124375f03976b68940eb">log.h</a>
+</li>
+<li>spdk_log_get_backtrace_level()
+: <a class="el" href="log_8h.html#a302d0d8666e634fca550d650ff553a6b">log.h</a>
+</li>
 <li>spdk_log_get_level()
 : <a class="el" href="log_8h.html#af600090b2a4aa95b4e9e4dae27bf6c7e">log.h</a>
 </li>
@@ -1169,8 +1190,14 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 <li>spdk_log_get_trace_flag()
 : <a class="el" href="log_8h.html#af31998ef403c5644e063654474db451e">log.h</a>
 </li>
+<li>spdk_log_level
+: <a class="el" href="log_8h.html#a188d351bd05093cba1d8594ee9988efd">log.h</a>
+</li>
 <li>spdk_log_open()
 : <a class="el" href="log_8h.html#a83352187f63ade8829ca300fc7eacd54">log.h</a>
+</li>
+<li>spdk_log_set_backtrace_level()
+: <a class="el" href="log_8h.html#a1bc3422fdd3034925dd674b911c77c29">log.h</a>
 </li>
 <li>spdk_log_set_level()
 : <a class="el" href="log_8h.html#a422b7a65819b43157a4771be78f544ee">log.h</a>
