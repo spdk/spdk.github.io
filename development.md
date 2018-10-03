@@ -13,6 +13,7 @@ title:  "SPDK Development"
 * [Submitting a Patch](#patch)
 * [Continuous Integration](#integration)
 * [Code Review](#review)
+* [Review Hashtags](#hashtags)
 * [Revising Patches](#revise)
 * [Multi-Commit Patch Series](#multi)
 * [Core Maintainers](#core)
@@ -218,7 +219,23 @@ Everyone is encouraged to review all patches and mark them with a +1 (thumbs up)
 highly valued, so even if you are a beginner with SPDK, please jump in and start reviewing patches. For a patch to be merged,
 two maintainers must give it a +2 vote, only maintainers are allowed to use +2.
 
+<a id="hashtags"></a>
+
+## Review Hashtags
+
+SPDK core maintainers use a custom Gerrit dashboard to determine patches they should focus on
+next for review.  In some cases, a core maintainer may request further action before voting
+on the patch.  Further actions may include answering a question about a patch, requesting
+a rebase for the patch, or requesting that another developer first vote the patch +1.
+In these cases, Core maintainers will use Gerrit hashtags to mark patches where further
+action has been requested.  This will remove the patch from the list of patches that core
+maintainers should focus on.  Once the request is met (i.e. the question is answered, the
+patch is rebased, or another developer voted the patch +1), the hashtag can be removed by
+the patch owner.  Once the hashtag is removed, the patch will immediately go to the top of
+the list of patches for the core maintainers to focus.
+
 <a id="revise"></a>
+
 ## Revising Patches
 
 SPDK has fairly high standards for patch approval. We try to strike a balance between maintaining a high velocity and not allowing
