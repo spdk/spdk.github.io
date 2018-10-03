@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "f9134545_a982a471",
+        "filename": "development.md",
+        "patchSetId": 3
+      },
+      "lineNbr": 236,
+      "author": {
+        "id": 1010531
+      },
+      "writtenOn": "2018-10-03T18:05:02Z",
+      "side": 1,
+      "message": "focus -\u003e review",
+      "revId": "f3ef507716f1a08e3591293ba0398ac48cb77947",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
