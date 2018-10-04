@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "6d74f42b_ba6d88f8",
+        "filename": "development.md",
+        "patchSetId": 5
+      },
+      "lineNbr": 251,
+      "author": {
+        "id": 1011230
+      },
+      "writtenOn": "2018-10-04T17:52:36Z",
+      "side": 1,
+      "message": "I personally don\u0027t pay any attention to the hashtags as they are not stubbing my eyes (like v-1/v+1). But maybe you have any links to gerrithub filter showing how these flags are used to filter patches?",
+      "range": {
+        "startLine": 245,
+        "startChar": 0,
+        "endLine": 251,
+        "endChar": 48
+      },
+      "revId": "7716b1833541a6c94189f8ce8f369bc256e92efb",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
