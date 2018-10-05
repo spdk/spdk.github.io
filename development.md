@@ -209,8 +209,8 @@ pending approval for a run through the CI system are listed under the 'Pending A
 When the CI system completes, it will post a comment on the Gerrit review with a +/-1 Verified flag, plus a link to the logs
 of the test run. This is particularly useful if the tests fail. Patches will not be merged without a +1 Verified from the CI system.
 
-If the CI system gives your patch a -1 but you believe it is in error (not related to your patch), please ask a maintainer (via IRC)
-to have your patch re-run.
+If the CI system gives your patch a -1 but you believe it is in error (not related to your patch), add a comment to the patch
+that starts with the word "retrigger".  This will signal the CI system to re-run for the associated patch.
 
 <a id="review"></a>
 ## Code Review
