@@ -1,5 +1,5 @@
 <section id="blog" class="blog">
-  {% for post in site.posts limit:3 %}
+  {% for post in site.categories[news,feature,update,releases] limit:3 %}
     <div class="blog-section">
       <a href="{{ baseurl_rel }}{{ post.url }}"><h2 class="blog-heading">{{ post.title }}</h2></a>
       <div class="blog-author">{{ post.date | date: "%b %-d, %Y" }} • {{ post.author }}</div>
