@@ -1,0 +1,10 @@
+<section id="blog" class="blog">
+{% for cnarticle in site.categories.article-cn %}
+    <div class="blog-section">
+        <a href="{{ baseurl_rel }}{{ cnarticle.url }}"><h2 class="blog-heading">{{ cnarticle.title }}</h2></a>
+        <div class="blog-author">{{ cnarticle.date | date: "%b %-d, %Y" }} • {{ cnarticle.author }}</div>
+        <div class="lead">{{ cnarticle.excerpt }}  <a class="post-link" href="{{ baseurl_rel }}{{ cnarticle.url }}">Continue...</a></div>
+    </div>
+{% endfor %}
+</section>
+
