@@ -6,6 +6,6 @@ lang: cn
 ## <center>欢迎关注我们的微信公众平台</center>
 
 <div style="text-align: center">
-<img src="{{baseurl}}/img/qr.jpg"/>
+<img src="../../img/QR.jpg"/>
 </div>
 
