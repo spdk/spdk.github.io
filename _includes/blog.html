@@ -1,9 +1,11 @@
 <section id="blog" class="blog">
-{% for post in site.posts %}
+{% for post in site.categories[news,feature,update,releases] %}
+
     <div class="blog-section">
         <a href="{{ baseurl_rel }}{{ post.url }}"><h2 class="blog-heading">{{ post.title }}</h2></a>
         <div class="blog-author">{{ post.date | date: "%b %-d, %Y" }} • {{ post.author }}</div>
         <div class="lead">{{ post.excerpt }}  <a class="post-link" href="{{ baseurl_rel }}{{ post.url }}">Continue...</a></div>
     </div>
+
 {% endfor %}
 </section>
