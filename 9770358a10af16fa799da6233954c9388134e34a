@@ -1,0 +1,73 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "a0cdcc9f_e0313f7a",
+        "filename": "cn/solution.md",
+        "patchSetId": 6
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 1011207
+      },
+      "writtenOn": "2018-10-17T11:21:21Z",
+      "side": 1,
+      "message": "You can add below three links where SPDK mentioned in the dedicated solution. I think you can just put the article title there and link to the below webpage\n\nhttps://mp.weixin.qq.com/s/nP62NpX0NAo4BZhpkAWaQg\n\nhttps://yq.aliyun.com/articles/291207\n\n\nhttp://www.infoq.com/cn/news/2017/02/IO-ali-data-warehouse",
+      "range": {
+        "startLine": 6,
+        "startChar": 0,
+        "endLine": 6,
+        "endChar": 9
+      },
+      "revId": "9770358a10af16fa799da6233954c9388134e34a",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "d52b4576_23e675bf",
+        "filename": "cn/whitepaper.md",
+        "patchSetId": 6
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 1011207
+      },
+      "writtenOn": "2018-10-17T11:21:21Z",
+      "side": 1,
+      "message": "maybe just 白皮书",
+      "range": {
+        "startLine": 3,
+        "startChar": 9,
+        "endLine": 3,
+        "endChar": 14
+      },
+      "revId": "9770358a10af16fa799da6233954c9388134e34a",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "f824f19e_2058b565",
+        "filename": "cn/whitepaper.md",
+        "patchSetId": 6
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 1011207
+      },
+      "writtenOn": "2018-10-17T11:21:21Z",
+      "side": 1,
+      "message": "Just forward you the QingCloud whitepaper",
+      "range": {
+        "startLine": 6,
+        "startChar": 0,
+        "endLine": 6,
+        "endChar": 9
+      },
+      "revId": "9770358a10af16fa799da6233954c9388134e34a",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
