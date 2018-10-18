@@ -2,6 +2,23 @@
   "comments": [
     {
       "key": {
+        "uuid": "b737805e_e02f96a9",
+        "filename": "_includes/article-cn.html",
+        "patchSetId": 6
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 1014486
+      },
+      "writtenOn": "2018-10-18T07:12:20Z",
+      "side": 1,
+      "message": "Hey Ben, could you please give me a hand and have a look at the code here? I don\u0027t know what\u0027s wrong here. It works well in my local computer. However, in the CI, the article cannot display the abstract, but the whole article.",
+      "revId": "9770358a10af16fa799da6233954c9388134e34a",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "c0a63284_b37b9e17",
         "filename": "_layouts/article-cn.html",
         "patchSetId": 6
