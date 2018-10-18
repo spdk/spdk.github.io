@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "0c8a3acb_9dc57063",
+        "filename": "cn/usecase.md",
+        "patchSetId": 10
+      },
+      "lineNbr": 25,
+      "author": {
+        "id": 1011207
+      },
+      "writtenOn": "2018-10-18T09:49:41Z",
+      "side": 1,
+      "message": "These are prefered to move to the Solution page (解决方案).",
+      "range": {
+        "startLine": 16,
+        "startChar": 0,
+        "endLine": 25,
+        "endChar": 59
+      },
+      "revId": "1a5eee65b2578c3cf439d883f5615470e4884c36",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
