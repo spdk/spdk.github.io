@@ -2,6 +2,29 @@
   "comments": [
     {
       "key": {
+        "uuid": "85db14eb_c7856549",
+        "filename": "_includes/leftnav-cn.html",
+        "patchSetId": 10
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 1011207
+      },
+      "writtenOn": "2018-10-18T09:51:42Z",
+      "side": 1,
+      "message": "白皮书",
+      "range": {
+        "startLine": 17,
+        "startChar": 58,
+        "endLine": 17,
+        "endChar": 63
+      },
+      "revId": "1a5eee65b2578c3cf439d883f5615470e4884c36",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "0c8a3acb_9dc57063",
         "filename": "cn/usecase.md",
         "patchSetId": 10
