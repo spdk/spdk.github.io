@@ -82,6 +82,24 @@
     },
     {
       "key": {
+        "uuid": "6bfefc33_3a2bf527",
+        "filename": "_posts/2018-9-19-softroce.md",
+        "patchSetId": 6
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 1014486
+      },
+      "writtenOn": "2018-10-18T07:25:52Z",
+      "side": 1,
+      "message": "For the wechat articles already published, we can show the links of these articles in the website, so that users can clink the links and read the articles. And for the upcoming articles, we can compose them into markdown file and upload to the website.",
+      "parentUuid": "b079fc1b_757aa8d7",
+      "revId": "9770358a10af16fa799da6233954c9388134e34a",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "7dd326d1_f8e77646",
         "filename": "_posts/2018-9-19-softroce.md",
         "patchSetId": 6
