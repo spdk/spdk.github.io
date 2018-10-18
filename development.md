@@ -156,7 +156,8 @@ the goal of the series of commits.
 
 * Provide a clear commit message describing the purpose of the commit. Good commit messages provide a very brief summary of
 what the commit does in the title followed by a short paragraph providing context for the change. For example, what problem is
-being solved, how was it discovered and how this patch solves the problem.
+being solved, how was it discovered and how this patch solves the problem.  See [Continuous Integration](#integration) for the special case of a
+Request For Comments (RFC) type of patch.
 
 Development on SPDK is all done based on the `master` branch, so start by making sure you have the latest. The below
 assumes `origin` is pointed at GerritHub.
@@ -196,7 +197,14 @@ helper, you'll only be prompted once.
 <a id="integration"></a>
 ## Continuous Integration
 
-SPDK employs continuous integration (CI), which means all patches are run through a series of tests **before** they are even reviewed.
+SPDK employs continuous integration (CI), which means all patches are run through a series of tests **before** they are even reviewed
+with the exception:
+
+* Patches containing [RFC] in the git commit message header are treated specially to spur comments only.  As such, these RFC patches
+are **not** run through the CI system.  While a developer may specify reviewers in Gerrit for these patches, it
+is highly suggested one either sends email to the SPDK mailing list or a message on the IRC SPDK channel to bring
+attention to this type of patch for discussion.
+
 The SPDK CI system periodically looks at GerritHub, pulls the patches down, and runs them on a pool of multiple machines with
 real NVMe SSDs. The tests are all checked in to the main SPDK repository (follow `autorun.sh` in the root of the repository).
 That means that users can add tests to the CI system by simply submitting a patch. Tests are required to be added in the
