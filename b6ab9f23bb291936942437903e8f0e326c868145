@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "f9a393db_55699ed5",
+        "filename": "development.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 208,
+      "author": {
+        "id": 1011230
+      },
+      "writtenOn": "2018-10-22T08:22:43Z",
+      "side": 1,
+      "message": "I think this new line is not needed.",
+      "revId": "b6ab9f23bb291936942437903e8f0e326c868145",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
