@@ -16,6 +16,24 @@
       "revId": "b6ab9f23bb291936942437903e8f0e326c868145",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "c9195a30_56467806",
+        "filename": "development.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 208,
+      "author": {
+        "id": 1011995
+      },
+      "writtenOn": "2018-10-23T15:51:29Z",
+      "side": 1,
+      "message": "Removed.",
+      "parentUuid": "f9a393db_55699ed5",
+      "revId": "b6ab9f23bb291936942437903e8f0e326c868145",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
     }
   ]
 }
