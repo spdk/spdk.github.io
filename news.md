@@ -5,6 +5,11 @@ title:  "SPDK in the News"
 
 # News items
 
+## AliCloud - High Performance Local SSD
+
+### [SPDK accelerates AliCloud Local SSD model](https://promotion.aliyun.com/ntms/act/ecshighperformance.html?open_id=1d8213d3-b437-4596-a88a-d27798942d3a-&open_cid=4703)
+> Through close collaborations between AliCloud and SPDK, AliCloud offers one model (local SSD) among different kinds of cloud services. The AliCloud local SSD model is for critical applications like OLTP and NoSQL databases and designed with NVMe SSD and advanced SPDK storage techniques to achieve the extra high performance on single node like 480K max random read/write IOPS, 200us lower latency, 4GB/s max sequential read bandwidth, 2.4GB/s max sequential write bandwidth...
+
 ## September 18 2018 CloudTech
 
 ### [OpenStack and NVMe-over-Fabrics: Getting higher performance for network-connected SSDs](https://www.cloudcomputing-news.net/news/2018/sep/18/openstack-and-nvme-over-fabrics-getting-high-performance-for-network-connected-ssds/)
