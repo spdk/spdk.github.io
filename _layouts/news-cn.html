@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  {% include head.html %}
+
+<body>
+  {% include leftnav-cn.html %}
+
+    <div class="container-fluid">
+      <div class="row no-gutters">
+        <div class="col-sm-12">
+          {% include header.html %}
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-12 text-center">
+          <h1>{{ page.title }}</h1>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-8 col-sm-offset-2">
+          <section id="content" class="content">
+            {{ content }}
+          </section>
+        </div>
+      </div>
+
+    </div>
+
+    {% for js in page.jsfiles %}
+     <script type="text/javascript">
+     {% include {{ js }} %}
+     </script>
+    {% endfor %}
+
+</body>
+</html>
