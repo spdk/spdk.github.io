@@ -10,6 +10,7 @@ git clone --depth 1 https://github.com/spdk/spdk $repo
 
 doc_version=$(cd $repo; git rev-parse HEAD)
 
+(cd $repo; git submodule update --init; ./configure)
 # Overwrite header and footer with the spdk.io versions
 cp _doc_header.html $repo/doc/header.html
 cp _doc_footer.html $repo/doc/footer.html
