@@ -237,7 +237,7 @@ get_rpc_methods</h2>
 <h3>Response</h3>
 <p>The response is an array of supported RPC methods.</p>
 <h3>Example</h3>
-<p>Example request: </p><div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;method&quot;: &quot;get_rpc_methods&quot;</div><div class="line">}</div></div><!-- fragment --><p>Example response: </p><div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: [</div><div class="line">    &quot;start_subsystem_init&quot;,</div><div class="line">    &quot;get_rpc_methods&quot;,</div><div class="line">    &quot;get_scsi_devices&quot;,</div><div class="line">    &quot;get_interfaces&quot;,</div><div class="line">    &quot;delete_ip_address&quot;,</div><div class="line">    &quot;add_ip_address&quot;,</div><div class="line">    &quot;get_nbd_disks&quot;,</div><div class="line">    &quot;stop_nbd_disk&quot;,</div><div class="line">    &quot;start_nbd_disk&quot;,</div><div class="line">    &quot;get_trace_flags&quot;,</div><div class="line">    &quot;clear_trace_flag&quot;,</div><div class="line">    &quot;set_trace_flag&quot;,</div><div class="line">    &quot;get_log_level&quot;,</div><div class="line">    &quot;set_log_level&quot;,</div><div class="line">    &quot;get_log_print_level&quot;,</div><div class="line">    &quot;set_log_print_level&quot;,</div><div class="line">    &quot;get_iscsi_global_params&quot;,</div><div class="line">    &quot;target_node_add_lun&quot;,</div><div class="line">    &quot;get_iscsi_connections&quot;,</div><div class="line">    &quot;delete_portal_group&quot;,</div><div class="line">    &quot;add_portal_group&quot;,</div><div class="line">    &quot;get_portal_groups&quot;,</div><div class="line">    &quot;delete_target_node&quot;,</div><div class="line">    &quot;delete_pg_ig_maps&quot;,</div><div class="line">    &quot;add_pg_ig_maps&quot;,</div><div class="line">    &quot;construct_target_node&quot;,</div><div class="line">    &quot;get_target_nodes&quot;,</div><div class="line">    &quot;delete_initiator_group&quot;,</div><div class="line">    &quot;delete_initiators_from_initiator_group&quot;,</div><div class="line">    &quot;add_initiators_to_initiator_group&quot;,</div><div class="line">    &quot;add_initiator_group&quot;,</div><div class="line">    &quot;get_initiator_groups&quot;,</div><div class="line">    &quot;set_iscsi_options&quot;,</div><div class="line">    &quot;set_bdev_options&quot;,</div><div class="line">    &quot;set_bdev_qos_limit_iops&quot;,</div><div class="line">    &quot;delete_bdev&quot;,</div><div class="line">    &quot;get_bdevs&quot;,</div><div class="line">    &quot;get_bdevs_iostat&quot;,</div><div class="line">    &quot;get_subsystem_config&quot;,</div><div class="line">    &quot;get_subsystems&quot;,</div><div class="line">    &quot;context_switch_monitor&quot;,</div><div class="line">    &quot;kill_instance&quot;,</div><div class="line">    &quot;scan_ioat_copy_engine&quot;,</div><div class="line">    &quot;construct_virtio_dev&quot;,</div><div class="line">    &quot;construct_virtio_pci_blk_bdev&quot;,</div><div class="line">    &quot;construct_virtio_user_blk_bdev&quot;,</div><div class="line">    &quot;get_virtio_scsi_devs&quot;,</div><div class="line">    &quot;remove_virtio_bdev&quot;,</div><div class="line">    &quot;remove_virtio_scsi_bdev&quot;,</div><div class="line">    &quot;construct_virtio_pci_scsi_bdev&quot;,</div><div class="line">    &quot;construct_virtio_user_scsi_bdev&quot;,</div><div class="line">    &quot;delete_aio_bdev&quot;,</div><div class="line">    &quot;construct_aio_bdev&quot;,</div><div class="line">    &quot;destruct_split_vbdev&quot;,</div><div class="line">    &quot;construct_split_vbdev&quot;,</div><div class="line">    &quot;bdev_inject_error&quot;,</div><div class="line">    &quot;delete_error_bdev&quot;,</div><div class="line">    &quot;construct_error_bdev&quot;,</div><div class="line">    &quot;construct_passthru_bdev&quot;,</div><div class="line">    &quot;apply_nvme_firmware&quot;,</div><div class="line">    &quot;delete_nvme_controller&quot;,</div><div class="line">    &quot;construct_nvme_bdev&quot;,</div><div class="line">    &quot;construct_null_bdev&quot;,</div><div class="line">    &quot;delete_malloc_bdev&quot;,</div><div class="line">    &quot;construct_malloc_bdev&quot;,</div><div class="line">    &quot;get_lvol_stores&quot;,</div><div class="line">    &quot;destroy_lvol_bdev&quot;,</div><div class="line">    &quot;resize_lvol_bdev&quot;,</div><div class="line">    &quot;decouple_parent_lvol_bdev&quot;,</div><div class="line">    &quot;inflate_lvol_bdev&quot;,</div><div class="line">    &quot;rename_lvol_bdev&quot;,</div><div class="line">    &quot;clone_lvol_bdev&quot;,</div><div class="line">    &quot;snapshot_lvol_bdev&quot;,</div><div class="line">    &quot;construct_lvol_bdev&quot;,</div><div class="line">    &quot;destroy_lvol_store&quot;,</div><div class="line">    &quot;rename_lvol_store&quot;,</div><div class="line">    &quot;construct_lvol_store&quot;</div><div class="line">  ]</div><div class="line">}</div></div><!-- fragment --><h2><a class="anchor" id="rpc_get_subsystems"></a>
+<p>Example request: </p><div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;method&quot;: &quot;get_rpc_methods&quot;</div><div class="line">}</div></div><!-- fragment --><p>Example response: </p><div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: [</div><div class="line">    &quot;start_subsystem_init&quot;,</div><div class="line">    &quot;get_rpc_methods&quot;,</div><div class="line">    &quot;get_scsi_devices&quot;,</div><div class="line">    &quot;get_interfaces&quot;,</div><div class="line">    &quot;delete_ip_address&quot;,</div><div class="line">    &quot;add_ip_address&quot;,</div><div class="line">    &quot;get_nbd_disks&quot;,</div><div class="line">    &quot;stop_nbd_disk&quot;,</div><div class="line">    &quot;start_nbd_disk&quot;,</div><div class="line">    &quot;get_trace_flags&quot;,</div><div class="line">    &quot;clear_trace_flag&quot;,</div><div class="line">    &quot;set_trace_flag&quot;,</div><div class="line">    &quot;get_log_level&quot;,</div><div class="line">    &quot;set_log_level&quot;,</div><div class="line">    &quot;get_log_print_level&quot;,</div><div class="line">    &quot;set_log_print_level&quot;,</div><div class="line">    &quot;get_iscsi_global_params&quot;,</div><div class="line">    &quot;target_node_add_lun&quot;,</div><div class="line">    &quot;get_iscsi_connections&quot;,</div><div class="line">    &quot;delete_portal_group&quot;,</div><div class="line">    &quot;add_portal_group&quot;,</div><div class="line">    &quot;get_portal_groups&quot;,</div><div class="line">    &quot;delete_target_node&quot;,</div><div class="line">    &quot;delete_pg_ig_maps&quot;,</div><div class="line">    &quot;add_pg_ig_maps&quot;,</div><div class="line">    &quot;construct_target_node&quot;,</div><div class="line">    &quot;get_target_nodes&quot;,</div><div class="line">    &quot;delete_initiator_group&quot;,</div><div class="line">    &quot;delete_initiators_from_initiator_group&quot;,</div><div class="line">    &quot;add_initiators_to_initiator_group&quot;,</div><div class="line">    &quot;add_initiator_group&quot;,</div><div class="line">    &quot;get_initiator_groups&quot;,</div><div class="line">    &quot;set_iscsi_options&quot;,</div><div class="line">    &quot;set_bdev_options&quot;,</div><div class="line">    &quot;set_bdev_qos_limit_iops&quot;,</div><div class="line">    &quot;set_bdev_qos_limit&quot;,</div><div class="line">    &quot;delete_bdev&quot;,</div><div class="line">    &quot;get_bdevs&quot;,</div><div class="line">    &quot;get_bdevs_iostat&quot;,</div><div class="line">    &quot;get_subsystem_config&quot;,</div><div class="line">    &quot;get_subsystems&quot;,</div><div class="line">    &quot;context_switch_monitor&quot;,</div><div class="line">    &quot;kill_instance&quot;,</div><div class="line">    &quot;scan_ioat_copy_engine&quot;,</div><div class="line">    &quot;construct_virtio_dev&quot;,</div><div class="line">    &quot;construct_virtio_pci_blk_bdev&quot;,</div><div class="line">    &quot;construct_virtio_user_blk_bdev&quot;,</div><div class="line">    &quot;get_virtio_scsi_devs&quot;,</div><div class="line">    &quot;remove_virtio_bdev&quot;,</div><div class="line">    &quot;remove_virtio_scsi_bdev&quot;,</div><div class="line">    &quot;construct_virtio_pci_scsi_bdev&quot;,</div><div class="line">    &quot;construct_virtio_user_scsi_bdev&quot;,</div><div class="line">    &quot;delete_aio_bdev&quot;,</div><div class="line">    &quot;construct_aio_bdev&quot;,</div><div class="line">    &quot;destruct_split_vbdev&quot;,</div><div class="line">    &quot;construct_split_vbdev&quot;,</div><div class="line">    &quot;bdev_inject_error&quot;,</div><div class="line">    &quot;delete_error_bdev&quot;,</div><div class="line">    &quot;construct_error_bdev&quot;,</div><div class="line">    &quot;construct_passthru_bdev&quot;,</div><div class="line">    &quot;apply_nvme_firmware&quot;,</div><div class="line">    &quot;delete_nvme_controller&quot;,</div><div class="line">    &quot;construct_nvme_bdev&quot;,</div><div class="line">    &quot;construct_null_bdev&quot;,</div><div class="line">    &quot;delete_malloc_bdev&quot;,</div><div class="line">    &quot;construct_malloc_bdev&quot;,</div><div class="line">    &quot;get_lvol_stores&quot;,</div><div class="line">    &quot;destroy_lvol_bdev&quot;,</div><div class="line">    &quot;resize_lvol_bdev&quot;,</div><div class="line">    &quot;decouple_parent_lvol_bdev&quot;,</div><div class="line">    &quot;inflate_lvol_bdev&quot;,</div><div class="line">    &quot;rename_lvol_bdev&quot;,</div><div class="line">    &quot;clone_lvol_bdev&quot;,</div><div class="line">    &quot;snapshot_lvol_bdev&quot;,</div><div class="line">    &quot;construct_lvol_bdev&quot;,</div><div class="line">    &quot;destroy_lvol_store&quot;,</div><div class="line">    &quot;rename_lvol_store&quot;,</div><div class="line">    &quot;construct_lvol_store&quot;</div><div class="line">  ]</div><div class="line">}</div></div><!-- fragment --><h2><a class="anchor" id="rpc_get_subsystems"></a>
 get_subsystems</h2>
 <p>Get an array of name and dependency relationship of SPDK subsystems in initialization order.</p>
 <h3>Parameters</h3>
@@ -312,9 +312,9 @@ delete_bdev</h2>
 <td>name </td><td>Required </td><td>string </td><td>Block device name </td></tr>
 </table>
 <h3>Example</h3>
-<p>Example request: </p><div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;method&quot;: &quot;delete_bdev&quot;,</div><div class="line">  &quot;params&quot;: {</div><div class="line">    &quot;name&quot;: &quot;Malloc0&quot;</div><div class="line">  }</div><div class="line">}</div></div><!-- fragment --><p>Example response: </p><div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: true</div><div class="line">}</div></div><!-- fragment --><h2><a class="anchor" id="rpc_set_bdev_qos_limit_iops"></a>
-set_bdev_qos_limit_iops</h2>
-<p>Set an IOPS-based quality of service rate limit on a bdev.</p>
+<p>Example request: </p><div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;method&quot;: &quot;delete_bdev&quot;,</div><div class="line">  &quot;params&quot;: {</div><div class="line">    &quot;name&quot;: &quot;Malloc0&quot;</div><div class="line">  }</div><div class="line">}</div></div><!-- fragment --><p>Example response: </p><div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: true</div><div class="line">}</div></div><!-- fragment --><h2><a class="anchor" id="rpc_set_bdev_qos_limit"></a>
+set_bdev_qos_limit</h2>
+<p>Set the quality of service rate limit on a bdev.</p>
 <h3>Parameters</h3>
 <table class="doxtable">
 <tr>
@@ -322,10 +322,12 @@ set_bdev_qos_limit_iops</h2>
 <tr>
 <td>name </td><td>Required </td><td>string </td><td>Block device name </td></tr>
 <tr>
-<td>ios_per_sec </td><td>Required </td><td>number </td><td>Number of I/Os per second to allow. 0 means unlimited. </td></tr>
+<td>rw_ios_per_sec </td><td>Optional </td><td>number </td><td>Number of R/W I/Os per second to allow. 0 means unlimited. </td></tr>
+<tr>
+<td>rw_mbytes_per_sec </td><td>Optional </td><td>number </td><td>Number of R/W megabytes per second to allow. 0 means unlimited. </td></tr>
 </table>
 <h3>Example</h3>
-<p>Example request: </p><div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;method&quot;: &quot;set_bdev_qos_limit_iops&quot;,</div><div class="line">  &quot;params&quot;: {</div><div class="line">    &quot;name&quot;: &quot;Malloc0&quot;</div><div class="line">    &quot;ios_per_sec&quot;: 20000</div><div class="line">  }</div><div class="line">}</div></div><!-- fragment --><p>Example response: </p><div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: true</div><div class="line">}</div></div><!-- fragment --><h2><a class="anchor" id="rpc_construct_malloc_bdev"></a>
+<p>Example request: </p><div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;method&quot;: &quot;set_bdev_qos_limit&quot;,</div><div class="line">  &quot;params&quot;: {</div><div class="line">    &quot;name&quot;: &quot;Malloc0&quot;</div><div class="line">    &quot;rw_ios_per_sec&quot;: 20000</div><div class="line">    &quot;rw_mbytes_per_sec&quot;: 100</div><div class="line">  }</div><div class="line">}</div></div><!-- fragment --><p>Example response: </p><div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: true</div><div class="line">}</div></div><!-- fragment --><h2><a class="anchor" id="rpc_construct_malloc_bdev"></a>
 construct_malloc_bdev</h2>
 <p>Construct <a class="el" href="bdev.html#bdev_config_malloc">Malloc bdev</a></p>
 <h3>Parameters</h3>
@@ -486,7 +488,21 @@ construct_nvme_bdev</h2>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div><div class="line">  &quot;params&quot;: {</div><div class="line">    &quot;trtype&quot;: &quot;pcie&quot;,</div><div class="line">    &quot;name&quot;: &quot;Nvme0&quot;,</div><div class="line">    &quot;traddr&quot;: &quot;0000:0a:00.0&quot;</div><div class="line">  },</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;method&quot;: &quot;construct_nvme_bdev&quot;,</div><div class="line">  &quot;id&quot;: 1</div><div class="line">}</div></div><!-- fragment --><p>Example response:</p>
-<div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: [</div><div class="line">    &quot;Nvme0n1&quot;</div><div class="line">  ]</div><div class="line">}</div></div><!-- fragment --><h2><a class="anchor" id="rpc_delete_nvme_controller"></a>
+<div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: [</div><div class="line">    &quot;Nvme0n1&quot;</div><div class="line">  ]</div><div class="line">}</div></div><!-- fragment --><h2><a class="anchor" id="rpc_get_nvme_controllers"></a>
+get_nvme_controllers</h2>
+<p>Get information about NVMe controllers.</p>
+<h3>Parameters</h3>
+<p>The user may specify no parameters in order to list all NVMe controllers, or one NVMe controller may be specified by name.</p>
+<table class="doxtable">
+<tr>
+<th>Name </th><th>Optional </th><th>Type </th><th>Description  </th></tr>
+<tr>
+<td>name </td><td>Optional </td><td>string </td><td>NVMe controller name </td></tr>
+</table>
+<h3>Response</h3>
+<p>The response is an array of objects containing information about the requested NVMe controllers.</p>
+<h3>Example</h3>
+<p>Example request: </p><div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;method&quot;: &quot;get_nvme_controllers&quot;,</div><div class="line">  &quot;params&quot;: {</div><div class="line">    &quot;name&quot;: &quot;Nvme0&quot;</div><div class="line">  }</div><div class="line">}</div></div><!-- fragment --><p>Example response: </p><div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: [</div><div class="line">    {</div><div class="line">      &quot;name&quot;: &quot;Nvme0&quot;,</div><div class="line">      &quot;trid&quot;: {</div><div class="line">        &quot;trtype&quot;: &quot;PCIe&quot;,</div><div class="line">        &quot;traddr&quot;: &quot;0000:05:00.0&quot;</div><div class="line">      }</div><div class="line">    }</div><div class="line">  ]</div><div class="line">}</div></div><!-- fragment --><h2><a class="anchor" id="rpc_delete_nvme_controller"></a>
 delete_nvme_controller</h2>
 <p>Delete NVMe controller.</p>
 <h3>Parameters</h3>
@@ -1587,12 +1603,18 @@ construct_vhost_blk_controller</h2>
 <div class="fragment"><div class="line">{</div><div class="line">  &quot;params&quot;: {</div><div class="line">    &quot;dev_name&quot;: &quot;Malloc0&quot;,</div><div class="line">    &quot;ctrlr&quot;: &quot;VhostBlk0&quot;</div><div class="line">  },</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;method&quot;: &quot;construct_vhost_blk_controller&quot;,</div><div class="line">  &quot;id&quot;: 1</div><div class="line">}</div></div><!-- fragment --><p>Example response:</p>
 <div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: true</div><div class="line">}</div></div><!-- fragment --><h2><a class="anchor" id="rpc_get_vhost_controllers"></a>
 get_vhost_controllers</h2>
-<p>Display information about all vhost controllers.</p>
+<p>Display information about all or specific vhost controller(s).</p>
 <h3>Parameters</h3>
-<p>This method has no parameters.</p>
+<p>The user may specify no parameters in order to list all controllers, or a controller may be specified by name.</p>
+<table class="doxtable">
+<tr>
+<th>Name </th><th>Optional </th><th>Type </th><th>Description  </th></tr>
+<tr>
+<td>name </td><td>Optional </td><td>string </td><td>Vhost controller name </td></tr>
+</table>
 <h3><a class="anchor" id="rpc_get_vhost_controllers_response"></a>
 Response</h3>
-<p>Response is an array of objects describing each controllers. Common fields are:</p>
+<p>Response is an array of objects describing requested controller(s). Common fields are:</p>
 <table class="doxtable">
 <tr>
 <th>Name </th><th>Type </th><th>Description  </th></tr>
@@ -1849,6 +1871,45 @@ decouple_parent_lvol_bdev</h2>
 <td>name </td><td>Required </td><td>string </td><td>UUID or alias of the logical volume to decouple the parent of it </td></tr>
 </table>
 <h3>Example</h3>
-<p>Example request: </p><div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;method&quot;: &quot;decouple_parent_lvol_bdev&quot;,</div><div class="line">  &quot;id&quot;: 1.</div><div class="line">  &quot;params&quot;: {</div><div class="line">    &quot;name&quot;: &quot;8d87fccc-c278-49f0-9d4c-6237951aca09&quot;</div><div class="line">  }</div><div class="line">}</div></div><!-- fragment --><p>Example response: </p><div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: true</div><div class="line">}</div></div><!-- fragment --> </div></div><!-- contents -->
+<p>Example request: </p><div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;method&quot;: &quot;decouple_parent_lvol_bdev&quot;,</div><div class="line">  &quot;id&quot;: 1.</div><div class="line">  &quot;params&quot;: {</div><div class="line">    &quot;name&quot;: &quot;8d87fccc-c278-49f0-9d4c-6237951aca09&quot;</div><div class="line">  }</div><div class="line">}</div></div><!-- fragment --><p>Example response: </p><div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: true</div><div class="line">}</div></div><!-- fragment --><h2><a class="anchor" id="rpc_send_nvme_cmd"></a>
+send_nvme_cmd</h2>
+<p>Send NVMe command directly to NVMe controller or namespace. Parameters and responses encoded by base64 urlsafe need further processing.</p>
+<p>Notice: send_nvme_cmd requires user to guarentee the correctness of NVMe command itself, and also optional parameters. Illegal command contents or mismatching buffer size may result in unpredictable behavior.</p>
+<h3>Parameters</h3>
+<table class="doxtable">
+<tr>
+<th>Name </th><th>Optional </th><th>Type </th><th>Description  </th></tr>
+<tr>
+<td>name </td><td>Required </td><td>string </td><td>Name of the operating NVMe controller </td></tr>
+<tr>
+<td>cmd_type </td><td>Required </td><td>string </td><td>Type of nvme cmd. Valid values are: admin, io </td></tr>
+<tr>
+<td>data_direction </td><td>Required </td><td>string </td><td>Direction of data transfer. Valid values are: c2h, h2c </td></tr>
+<tr>
+<td>cmdbuf </td><td>Required </td><td>string </td><td>NVMe command encoded by base64 urlsafe </td></tr>
+<tr>
+<td>data </td><td>Optional </td><td>string </td><td>Data transferring to controller from host, encoded by base64 urlsafe </td></tr>
+<tr>
+<td>metadata </td><td>Optional </td><td>string </td><td>Metadata transferring to controller from host, encoded by base64 urlsafe </td></tr>
+<tr>
+<td>data_len </td><td>Optional </td><td>number </td><td>Data length required to transfer from controller to host </td></tr>
+<tr>
+<td>metadata_len </td><td>Optional </td><td>number </td><td>Metadata length required to transfer from controller to host </td></tr>
+<tr>
+<td>timeout_ms </td><td>Optional </td><td>number </td><td>Command execution timeout value, in milliseconds </td></tr>
+</table>
+<h3>Response</h3>
+<table class="doxtable">
+<tr>
+<th>Name </th><th>Type </th><th>Description  </th></tr>
+<tr>
+<td>cpl </td><td>string </td><td>NVMe completion queue entry, encoded by base64 urlsafe </td></tr>
+<tr>
+<td>data </td><td>string </td><td>Data transferred from controller to host, encoded by base64 urlsafe </td></tr>
+<tr>
+<td>metadata </td><td>string </td><td>Metadata transferred from controller to host, encoded by base64 urlsafe </td></tr>
+</table>
+<h3>Example</h3>
+<p>Example request: </p><div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;method&quot;: &quot;send_nvme_cmd&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;params&quot;: {</div><div class="line">    &quot;name&quot;: &quot;Nvme0&quot;,</div><div class="line">    &quot;cmd_type&quot;: &quot;admin&quot;</div><div class="line">    &quot;data_direction&quot;: &quot;c2h&quot;,</div><div class="line">    &quot;cmdbuf&quot;: &quot;BgAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAsGUs9P5_AAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==&quot;,</div><div class="line">    &quot;data_len&quot;: 60,</div><div class="line">  }</div><div class="line">}</div></div><!-- fragment --><p>Example response: </p><div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;:  {</div><div class="line">    &quot;cpl&quot;: &quot;AAAAAAAAAAARAAAAWrmwABAA==&quot;,</div><div class="line">    &quot;data&quot;: &quot;sIjg6AAAAACwiODoAAAAALCI4OgAAAAAAAYAAREAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&quot;</div><div class="line">  }</div><div class="line"></div><div class="line">}</div></div><!-- fragment --> </div></div><!-- contents -->
 </div><!-- doc-content -->
 </div>

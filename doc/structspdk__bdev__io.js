@@ -21,6 +21,7 @@ var structspdk__bdev__io =
     [ "offset_blocks", "structspdk__bdev__io.html#ab7ce7385dd41efaffdc0ca4dea2df6a8", null ],
     [ "reset", "structspdk__bdev__io.html#a3af0e726ab6ba3ad2bb54a7e6ab4e6f2", null ],
     [ "split_current_offset_blocks", "structspdk__bdev__io.html#ac721975c3205db6df200604c5a2b5243", null ],
+    [ "split_outstanding", "structspdk__bdev__io.html#ab5bef16ff6747eecb5d8d40f2a4c295c", null ],
     [ "split_remaining_num_blocks", "structspdk__bdev__io.html#a0726c74c711cb6551f6f8c9a33100af3", null ],
     [ "stored_user_cb", "structspdk__bdev__io.html#a35905e31d0aa54cd00dbb34e7d56656a", null ],
     [ "type", "structspdk__bdev__io.html#a4105d5a8419a66a6620d690da5649fcb", null ],

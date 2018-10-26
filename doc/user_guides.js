@@ -76,6 +76,7 @@ var user_guides =
       [ "Prerequisites", "bdev.html#bdev_ug_prerequisites", null ],
       [ "General Purpose RPCs", "bdev.html#bdev_ug_general_rpcs", [
         [ "get_bdevs", "bdev.html#bdev_ug_get_bdevs", null ],
+        [ "set_bdev_qos_limit", "bdev.html#set_bdev_qos_limit", null ],
         [ "delete_bdev", "bdev.html#bdev_ug_delete_bdev", null ]
       ] ],
       [ "Ceph RBD", "bdev.html#bdev_config_rbd", null ],
@@ -84,6 +85,7 @@ var user_guides =
         [ "SPDK GPT partition table", "bdev.html#bdev_ug_gpt", null ],
         [ "Creating a GPT partition table using NBD", "bdev.html#bdev_ug_gpt_create_part", null ]
       ] ],
+      [ "iSCSI bdev", "bdev.html#bdev_config_iscsi", null ],
       [ "Linux AIO bdev", "bdev.html#bdev_config_aio", null ],
       [ "Malloc bdev", "bdev.html#bdev_config_malloc", null ],
       [ "Null", "bdev.html#bdev_config_null", null ],
@@ -121,7 +123,7 @@ var user_guides =
         [ "get_bdevs", "jsonrpc.html#rpc_get_bdevs", null ],
         [ "get_bdevs_iostat", "jsonrpc.html#rpc_get_bdevs_iostat", null ],
         [ "delete_bdev", "jsonrpc.html#rpc_delete_bdev", null ],
-        [ "set_bdev_qos_limit_iops", "jsonrpc.html#rpc_set_bdev_qos_limit_iops", null ],
+        [ "set_bdev_qos_limit", "jsonrpc.html#rpc_set_bdev_qos_limit", null ],
         [ "construct_malloc_bdev", "jsonrpc.html#rpc_construct_malloc_bdev", null ],
         [ "delete_malloc_bdev", "jsonrpc.html#rpc_delete_malloc_bdev", null ],
         [ "construct_null_bdev", "jsonrpc.html#rpc_construct_null_bdev", null ],
@@ -131,6 +133,7 @@ var user_guides =
         [ "set_bdev_nvme_options", "jsonrpc.html#rpc_set_bdev_nvme_options", null ],
         [ "set_bdev_nvme_hotplug", "jsonrpc.html#rpc_set_bdev_nvme_hotplug", null ],
         [ "construct_nvme_bdev", "jsonrpc.html#rpc_construct_nvme_bdev", null ],
+        [ "get_nvme_controllers", "jsonrpc.html#rpc_get_nvme_controllers", null ],
         [ "delete_nvme_controller", "jsonrpc.html#rpc_delete_nvme_controller", null ],
         [ "construct_rbd_bdev", "jsonrpc.html#rpc_construct_rbd_bdev", null ],
         [ "delete_rbd_bdev", "jsonrpc.html#rpc_delete_rbd_bdev", null ],
@@ -226,7 +229,8 @@ var user_guides =
         [ "resize_lvol_bdev", "jsonrpc.html#rpc_resize_lvol_bdev", null ],
         [ "destroy_lvol_bdev", "jsonrpc.html#rpc_destroy_lvol_bdev", null ],
         [ "inflate_lvol_bdev", "jsonrpc.html#rpc_inflate_lvol_bdev", null ],
-        [ "decouple_parent_lvol_bdev", "jsonrpc.html#rpc_decouple_parent_lvol_bdev", null ]
+        [ "decouple_parent_lvol_bdev", "jsonrpc.html#rpc_decouple_parent_lvol_bdev", null ],
+        [ "send_nvme_cmd", "jsonrpc.html#rpc_send_nvme_cmd", null ]
       ] ]
     ] ]
 ];

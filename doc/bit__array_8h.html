@@ -325,6 +325,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
+<p>All bits in the array will be cleared.</p>
 <dl class="section return"><dt>Returns</dt><dd>a pointer to the new bit array. </dd></dl>
 
 </div>
@@ -363,7 +364,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>the index of the first cleared bit. Bits beyond the current size of the array are implicitly cleared, so if all bits within the current size are set, this function will return the current number of bits + 1. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>the index of the first cleared bit. If no bits are cleared, returns UINT32_MAX. </dd></dl>
 
 </div>
 </div>

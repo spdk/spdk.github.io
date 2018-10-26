@@ -59,7 +59,7 @@ var bdev__module_8h =
     [ "spdk_bdev_part_get_base_bdev", "bdev__module_8h.html#a4fcd275ee1ff302cf8b141286abf424e", null ],
     [ "spdk_bdev_part_get_bdev", "bdev__module_8h.html#aecf8338710d95715ab7c40f31e378e7f", null ],
     [ "spdk_bdev_part_get_offset_blocks", "bdev__module_8h.html#ac824d6bb007d80f33425a6cd81b60ce4", null ],
-    [ "spdk_bdev_part_submit_request", "bdev__module_8h.html#ae7887b9afa298d871c93f94a3feb0bb3", null ],
+    [ "spdk_bdev_part_submit_request", "bdev__module_8h.html#a099c43cf183a48d23ec7ddad683da1ae", null ],
     [ "spdk_bdev_register", "bdev__module_8h.html#a5fef71f7761986298bb4aaf345736bb3", null ],
     [ "spdk_bdev_unregister", "bdev__module_8h.html#a3d1fd8c9ecf144593313ea08cdeb8ca2", null ],
     [ "spdk_scsi_nvme_translate", "bdev__module_8h.html#ace2ce9b49ed9c51ff3c85075321164cc", null ],

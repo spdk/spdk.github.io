@@ -153,9 +153,9 @@ Typedefs</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a5a3ec712fd56490221467d05ce86d7ad"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sock_8h.html#a5a3ec712fd56490221467d05ce86d7ad">spdk_sock_getaddr</a> (struct spdk_sock *sock, char *saddr, int slen, char *caddr, int clen)</td></tr>
-<tr class="memdesc:a5a3ec712fd56490221467d05ce86d7ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get client and server addresses of the given socket.  <a href="#a5a3ec712fd56490221467d05ce86d7ad">More...</a><br /></td></tr>
-<tr class="separator:a5a3ec712fd56490221467d05ce86d7ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab596707e3e18b6f3e4ceb365369a3b8f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sock_8h.html#ab596707e3e18b6f3e4ceb365369a3b8f">spdk_sock_getaddr</a> (struct spdk_sock *sock, char *saddr, int slen, uint16_t *sport, char *caddr, int clen, uint16_t *cport)</td></tr>
+<tr class="memdesc:ab596707e3e18b6f3e4ceb365369a3b8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get client and server addresses of the given socket.  <a href="#ab596707e3e18b6f3e4ceb365369a3b8f">More...</a><br /></td></tr>
+<tr class="separator:ab596707e3e18b6f3e4ceb365369a3b8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4f624276a1f0122bb624b2e8c5eaba19"><td class="memItemLeft" align="right" valign="top">struct spdk_sock *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sock_8h.html#a4f624276a1f0122bb624b2e8c5eaba19">spdk_sock_connect</a> (const char *ip, int port)</td></tr>
 <tr class="memdesc:a4f624276a1f0122bb624b2e8c5eaba19"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a socket, connect the socket to the specified address and port (of the server), and then return the socket.  <a href="#a4f624276a1f0122bb624b2e8c5eaba19">More...</a><br /></td></tr>
 <tr class="separator:a4f624276a1f0122bb624b2e8c5eaba19"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -329,8 +329,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a5a3ec712fd56490221467d05ce86d7ad"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5a3ec712fd56490221467d05ce86d7ad">&#9670;&nbsp;</a></span>spdk_sock_getaddr()</h2>
+<a id="ab596707e3e18b6f3e4ceb365369a3b8f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab596707e3e18b6f3e4ceb365369a3b8f">&#9670;&nbsp;</a></span>spdk_sock_getaddr()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -356,6 +356,12 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">uint16_t *&#160;</td>
+          <td class="paramname"><em>sport</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype">char *&#160;</td>
           <td class="paramname"><em>caddr</em>, </td>
         </tr>
@@ -363,7 +369,13 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>clen</em>&#160;</td>
+          <td class="paramname"><em>clen</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t *&#160;</td>
+          <td class="paramname"><em>cport</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -379,8 +391,10 @@ Functions</h2></td></tr>
     <tr><td class="paramname">sock</td><td>Socket to get address. </td></tr>
     <tr><td class="paramname">saddr</td><td>A pointer to the buffer to hold the address of server. </td></tr>
     <tr><td class="paramname">slen</td><td>Length of the buffer 'saddr'. </td></tr>
+    <tr><td class="paramname">sport</td><td>A pointer(May be NULL) to the buffer to hold the port info of server. </td></tr>
     <tr><td class="paramname">caddr</td><td>A pointer to the buffer to hold the address of client. </td></tr>
-    <tr><td class="paramname">clen</td><td>Length of the buffer 'caddr'.</td></tr>
+    <tr><td class="paramname">clen</td><td>Length of the buffer 'caddr'. </td></tr>
+    <tr><td class="paramname">cport</td><td>A pointer(May be NULL) to the buffer to hold the port info of server.</td></tr>
   </table>
   </dd>
 </dl>

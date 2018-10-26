@@ -172,6 +172,9 @@ Typedefs</h2></td></tr>
 <tr class="memitem:a74afccd199dde8aaebd020ac513cf819"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jsonrpc_8h.html#a74afccd199dde8aaebd020ac513cf819">spdk_jsonrpc_handle_request_fn</a>) (struct spdk_jsonrpc_request *request, const struct <a class="el" href="structspdk__json__val.html">spdk_json_val</a> *method, const struct <a class="el" href="structspdk__json__val.html">spdk_json_val</a> *params)</td></tr>
 <tr class="memdesc:a74afccd199dde8aaebd020ac513cf819"><td class="mdescLeft">&#160;</td><td class="mdescRight">User callback to handle a single JSON-RPC request.  <a href="#a74afccd199dde8aaebd020ac513cf819">More...</a><br /></td></tr>
 <tr class="separator:a74afccd199dde8aaebd020ac513cf819"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5160e9c0a3230584ca653ffd2ea64487"><td class="memItemLeft" align="right" valign="top">typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jsonrpc_8h.html#a5160e9c0a3230584ca653ffd2ea64487">spdk_jsonrpc_client_response_parser</a>) (void *parser_ctx, const struct <a class="el" href="structspdk__json__val.html">spdk_json_val</a> *result)</td></tr>
+<tr class="memdesc:a5160e9c0a3230584ca653ffd2ea64487"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function for specific RPC method response parsing handlers.  <a href="#a5160e9c0a3230584ca653ffd2ea64487">More...</a><br /></td></tr>
+<tr class="separator:a5160e9c0a3230584ca653ffd2ea64487"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -196,10 +199,58 @@ Functions</h2></td></tr>
 <tr class="memitem:ae7d1dc3ef99ed408859d9a5f6802ad65"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jsonrpc_8h.html#ae7d1dc3ef99ed408859d9a5f6802ad65">spdk_jsonrpc_send_error_response_fmt</a> (struct spdk_jsonrpc_request *request, int error_code, const char *fmt,...)</td></tr>
 <tr class="memdesc:ae7d1dc3ef99ed408859d9a5f6802ad65"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send an error response to a JSON-RPC request.  <a href="#ae7d1dc3ef99ed408859d9a5f6802ad65">More...</a><br /></td></tr>
 <tr class="separator:ae7d1dc3ef99ed408859d9a5f6802ad65"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9185111b00d98e3e12adda0dce85a0e0"><td class="memItemLeft" align="right" valign="top">struct spdk_json_write_ctx *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jsonrpc_8h.html#a9185111b00d98e3e12adda0dce85a0e0">spdk_jsonrpc_begin_request</a> (struct spdk_jsonrpc_client_request *request, int32_t id, const char *method)</td></tr>
+<tr class="memdesc:a9185111b00d98e3e12adda0dce85a0e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Begin building a JSON-RPC request.  <a href="#a9185111b00d98e3e12adda0dce85a0e0">More...</a><br /></td></tr>
+<tr class="separator:a9185111b00d98e3e12adda0dce85a0e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ae1b767ebb4ad59a9c4739beea1c6f4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jsonrpc_8h.html#a9ae1b767ebb4ad59a9c4739beea1c6f4">spdk_jsonrpc_end_request</a> (struct spdk_jsonrpc_client_request *request, struct spdk_json_write_ctx *w)</td></tr>
+<tr class="memdesc:a9ae1b767ebb4ad59a9c4739beea1c6f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Complete a JSON-RPC request.  <a href="#a9ae1b767ebb4ad59a9c4739beea1c6f4">More...</a><br /></td></tr>
+<tr class="separator:a9ae1b767ebb4ad59a9c4739beea1c6f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a141092106ae7db318ad9c2916edbe00b"><td class="memItemLeft" align="right" valign="top">struct spdk_jsonrpc_client *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jsonrpc_8h.html#a141092106ae7db318ad9c2916edbe00b">spdk_jsonrpc_client_connect</a> (const char *rpc_sock_addr, int addr_family)</td></tr>
+<tr class="memdesc:a141092106ae7db318ad9c2916edbe00b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Connect to the specified RPC server.  <a href="#a141092106ae7db318ad9c2916edbe00b">More...</a><br /></td></tr>
+<tr class="separator:a141092106ae7db318ad9c2916edbe00b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5f5cca3e578e6eb3c0069e9662a1b79"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jsonrpc_8h.html#ad5f5cca3e578e6eb3c0069e9662a1b79">spdk_jsonrpc_client_close</a> (struct spdk_jsonrpc_client *client)</td></tr>
+<tr class="memdesc:ad5f5cca3e578e6eb3c0069e9662a1b79"><td class="mdescLeft">&#160;</td><td class="mdescRight">Close the JSON-RPC client.  <a href="#ad5f5cca3e578e6eb3c0069e9662a1b79">More...</a><br /></td></tr>
+<tr class="separator:ad5f5cca3e578e6eb3c0069e9662a1b79"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36e8741a465238436ca46464dfbd277b"><td class="memItemLeft" align="right" valign="top">struct spdk_jsonrpc_client_request *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jsonrpc_8h.html#a36e8741a465238436ca46464dfbd277b">spdk_jsonrpc_client_create_request</a> (void)</td></tr>
+<tr class="memdesc:a36e8741a465238436ca46464dfbd277b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create one JSON-RPC request.  <a href="#a36e8741a465238436ca46464dfbd277b">More...</a><br /></td></tr>
+<tr class="separator:a36e8741a465238436ca46464dfbd277b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42438592f780e35892904af6be663617"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jsonrpc_8h.html#a42438592f780e35892904af6be663617">spdk_jsonrpc_client_free_request</a> (struct spdk_jsonrpc_client_request *req)</td></tr>
+<tr class="memdesc:a42438592f780e35892904af6be663617"><td class="mdescLeft">&#160;</td><td class="mdescRight">free one JSON-RPC request  <a href="#a42438592f780e35892904af6be663617">More...</a><br /></td></tr>
+<tr class="separator:a42438592f780e35892904af6be663617"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaadb8c7ec1b7472b41e74c27f08494b7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jsonrpc_8h.html#aaadb8c7ec1b7472b41e74c27f08494b7">spdk_jsonrpc_client_send_request</a> (struct spdk_jsonrpc_client *client, struct spdk_jsonrpc_client_request *req)</td></tr>
+<tr class="memdesc:aaadb8c7ec1b7472b41e74c27f08494b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send the JSON-RPC request in JSON-RPC client.  <a href="#aaadb8c7ec1b7472b41e74c27f08494b7">More...</a><br /></td></tr>
+<tr class="separator:aaadb8c7ec1b7472b41e74c27f08494b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20ca75e66c3cd3480d41fb37d3c27eaa"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jsonrpc_8h.html#a20ca75e66c3cd3480d41fb37d3c27eaa">spdk_jsonrpc_client_recv_response</a> (struct spdk_jsonrpc_client *client, <a class="el" href="jsonrpc_8h.html#a5160e9c0a3230584ca653ffd2ea64487">spdk_jsonrpc_client_response_parser</a> parser_fn, void *parser_ctx)</td></tr>
+<tr class="memdesc:a20ca75e66c3cd3480d41fb37d3c27eaa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Receive the JSON-RPC response in JSON-RPC client.  <a href="#a20ca75e66c3cd3480d41fb37d3c27eaa">More...</a><br /></td></tr>
+<tr class="separator:a20ca75e66c3cd3480d41fb37d3c27eaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>JSON-RPC 2.0 server implementation. </p>
 </div><h2 class="groupheader">Typedef Documentation</h2>
+<a id="a5160e9c0a3230584ca653ffd2ea64487"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5160e9c0a3230584ca653ffd2ea64487">&#9670;&nbsp;</a></span>spdk_jsonrpc_client_response_parser</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef int(* spdk_jsonrpc_client_response_parser) (void *parser_ctx, const struct <a class="el" href="structspdk__json__val.html">spdk_json_val</a> *result)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Function for specific RPC method response parsing handlers. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parser_ctx</td><td>context where analysis are put. </td></tr>
+    <tr><td class="paramname">result</td><td>json values responsed to this method.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success. SPDK_JSON_PARSE_INVALID on failure. </dd></dl>
+
+</div>
+</div>
 <a id="a74afccd199dde8aaebd020ac513cf819"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a74afccd199dde8aaebd020ac513cf819">&#9670;&nbsp;</a></span>spdk_jsonrpc_handle_request_fn</h2>
 
@@ -226,6 +277,52 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="a9185111b00d98e3e12adda0dce85a0e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9185111b00d98e3e12adda0dce85a0e0">&#9670;&nbsp;</a></span>spdk_jsonrpc_begin_request()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct spdk_json_write_ctx* spdk_jsonrpc_begin_request </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_jsonrpc_client_request *&#160;</td>
+          <td class="paramname"><em>request</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int32_t&#160;</td>
+          <td class="paramname"><em>id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>method</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Begin building a JSON-RPC request. </p>
+<p>If this function returns non-NULL, the user must call <a class="el" href="jsonrpc_8h.html#a9ae1b767ebb4ad59a9c4739beea1c6f4" title="Complete a JSON-RPC request. ">spdk_jsonrpc_end_request()</a> on the request after writing the desired request object to the spdk_json_write_ctx.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">request</td><td>JSON-RPC request. </td></tr>
+    <tr><td class="paramname">id</td><td>ID index for the request. If &lt; 0 skip ID. </td></tr>
+    <tr><td class="paramname">method</td><td>Name of the RPC method. If NULL caller will have to create "method" key.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>JSON write context to write the parameter object to, or NULL if no parameter is necessary. </dd></dl>
+
+</div>
+</div>
 <a id="a22757fb7d0f34984e29b3fe311dfed01"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a22757fb7d0f34984e29b3fe311dfed01">&#9670;&nbsp;</a></span>spdk_jsonrpc_begin_result()</h2>
 
@@ -251,6 +348,237 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>JSON write context to write the response object to, or NULL if no response is necessary. </dd></dl>
+
+</div>
+</div>
+<a id="ad5f5cca3e578e6eb3c0069e9662a1b79"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad5f5cca3e578e6eb3c0069e9662a1b79">&#9670;&nbsp;</a></span>spdk_jsonrpc_client_close()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_jsonrpc_client_close </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_jsonrpc_client *&#160;</td>
+          <td class="paramname"><em>client</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Close the JSON-RPC client. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">client</td><td>JSON-RPC client. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a141092106ae7db318ad9c2916edbe00b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a141092106ae7db318ad9c2916edbe00b">&#9670;&nbsp;</a></span>spdk_jsonrpc_client_connect()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct spdk_jsonrpc_client* spdk_jsonrpc_client_connect </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>rpc_sock_addr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>addr_family</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Connect to the specified RPC server. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">rpc_sock_addr</td><td>RPC socket address. </td></tr>
+    <tr><td class="paramname">addr_family</td><td>Protocol families of address.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>JSON-RPC client on success, NULL on failure. </dd></dl>
+
+</div>
+</div>
+<a id="a36e8741a465238436ca46464dfbd277b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a36e8741a465238436ca46464dfbd277b">&#9670;&nbsp;</a></span>spdk_jsonrpc_client_create_request()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct spdk_jsonrpc_client_request* spdk_jsonrpc_client_create_request </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Create one JSON-RPC request. </p>
+<dl class="section return"><dt>Returns</dt><dd>Created JSON-RPC request. </dd></dl>
+
+</div>
+</div>
+<a id="a42438592f780e35892904af6be663617"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a42438592f780e35892904af6be663617">&#9670;&nbsp;</a></span>spdk_jsonrpc_client_free_request()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_jsonrpc_client_free_request </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_jsonrpc_client_request *&#160;</td>
+          <td class="paramname"><em>req</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>free one JSON-RPC request </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">req</td><td>Created JSON-RPC request. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a20ca75e66c3cd3480d41fb37d3c27eaa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a20ca75e66c3cd3480d41fb37d3c27eaa">&#9670;&nbsp;</a></span>spdk_jsonrpc_client_recv_response()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_jsonrpc_client_recv_response </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_jsonrpc_client *&#160;</td>
+          <td class="paramname"><em>client</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="jsonrpc_8h.html#a5160e9c0a3230584ca653ffd2ea64487">spdk_jsonrpc_client_response_parser</a>&#160;</td>
+          <td class="paramname"><em>parser_fn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>parser_ctx</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Receive the JSON-RPC response in JSON-RPC client. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">client</td><td>JSON-RPC client. </td></tr>
+    <tr><td class="paramname">parser_fn</td><td>Specific function used to parse the result inside response. </td></tr>
+    <tr><td class="paramname">parser_ctx</td><td>Parameter for parser_fn.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success. </dd></dl>
+
+</div>
+</div>
+<a id="aaadb8c7ec1b7472b41e74c27f08494b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaadb8c7ec1b7472b41e74c27f08494b7">&#9670;&nbsp;</a></span>spdk_jsonrpc_client_send_request()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_jsonrpc_client_send_request </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_jsonrpc_client *&#160;</td>
+          <td class="paramname"><em>client</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct spdk_jsonrpc_client_request *&#160;</td>
+          <td class="paramname"><em>req</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Send the JSON-RPC request in JSON-RPC client. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">client</td><td>JSON-RPC client. </td></tr>
+    <tr><td class="paramname">req</td><td>JSON-RPC request.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success. </dd></dl>
+
+</div>
+</div>
+<a id="a9ae1b767ebb4ad59a9c4739beea1c6f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ae1b767ebb4ad59a9c4739beea1c6f4">&#9670;&nbsp;</a></span>spdk_jsonrpc_end_request()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_jsonrpc_end_request </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_jsonrpc_client_request *&#160;</td>
+          <td class="paramname"><em>request</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct spdk_json_write_ctx *&#160;</td>
+          <td class="paramname"><em>w</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Complete a JSON-RPC request. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">request</td><td>JSON-RPC request. </td></tr>
+    <tr><td class="paramname">w</td><td>JSON write context returned from <a class="el" href="jsonrpc_8h.html#a9185111b00d98e3e12adda0dce85a0e0" title="Begin building a JSON-RPC request. ">spdk_jsonrpc_begin_request()</a>. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

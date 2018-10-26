@@ -330,9 +330,9 @@ typedef&#160;</td><td class="memItemRight" valign="bottom"><b>TAILQ_HEAD</b> (bd
 <tr class="memitem:a24c1e59da114916f39354813c0e761ee"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev__module_8h.html#a24c1e59da114916f39354813c0e761ee">spdk_bdev_part_construct</a> (struct <a class="el" href="structspdk__bdev__part.html">spdk_bdev_part</a> *part, struct spdk_bdev_part_base *base, char *name, uint64_t offset_blocks, uint64_t num_blocks, char *product_name)</td></tr>
 <tr class="memdesc:a24c1e59da114916f39354813c0e761ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a logical <a class="el" href="structspdk__bdev__part.html">spdk_bdev_part</a> on top of a base.  <a href="#a24c1e59da114916f39354813c0e761ee">More...</a><br /></td></tr>
 <tr class="separator:a24c1e59da114916f39354813c0e761ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae7887b9afa298d871c93f94a3feb0bb3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev__module_8h.html#ae7887b9afa298d871c93f94a3feb0bb3">spdk_bdev_part_submit_request</a> (struct <a class="el" href="structspdk__bdev__part__channel.html">spdk_bdev_part_channel</a> *ch, struct <a class="el" href="structspdk__bdev__io.html">spdk_bdev_io</a> *bdev_io)</td></tr>
-<tr class="memdesc:ae7887b9afa298d871c93f94a3feb0bb3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forwards I/O from an <a class="el" href="structspdk__bdev__part.html">spdk_bdev_part</a> to the underlying base bdev.  <a href="#ae7887b9afa298d871c93f94a3feb0bb3">More...</a><br /></td></tr>
-<tr class="separator:ae7887b9afa298d871c93f94a3feb0bb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a099c43cf183a48d23ec7ddad683da1ae"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev__module_8h.html#a099c43cf183a48d23ec7ddad683da1ae">spdk_bdev_part_submit_request</a> (struct <a class="el" href="structspdk__bdev__part__channel.html">spdk_bdev_part_channel</a> *ch, struct <a class="el" href="structspdk__bdev__io.html">spdk_bdev_io</a> *bdev_io)</td></tr>
+<tr class="memdesc:a099c43cf183a48d23ec7ddad683da1ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forwards I/O from an <a class="el" href="structspdk__bdev__part.html">spdk_bdev_part</a> to the underlying base bdev.  <a href="#a099c43cf183a48d23ec7ddad683da1ae">More...</a><br /></td></tr>
+<tr class="separator:a099c43cf183a48d23ec7ddad683da1ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aecf8338710d95715ab7c40f31e378e7f"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev__module_8h.html#aecf8338710d95715ab7c40f31e378e7f">spdk_bdev_part_get_bdev</a> (struct <a class="el" href="structspdk__bdev__part.html">spdk_bdev_part</a> *part)</td></tr>
 <tr class="memdesc:aecf8338710d95715ab7c40f31e378e7f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a pointer to this part's <a class="el" href="structspdk__bdev.html">spdk_bdev</a>.  <a href="#aecf8338710d95715ab7c40f31e378e7f">More...</a><br /></td></tr>
 <tr class="separator:aecf8338710d95715ab7c40f31e378e7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1515,14 +1515,14 @@ typedef&#160;</td><td class="memItemRight" valign="bottom"><b>TAILQ_HEAD</b> (bd
 
 </div>
 </div>
-<a id="ae7887b9afa298d871c93f94a3feb0bb3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae7887b9afa298d871c93f94a3feb0bb3">&#9670;&nbsp;</a></span>spdk_bdev_part_submit_request()</h2>
+<a id="a099c43cf183a48d23ec7ddad683da1ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a099c43cf183a48d23ec7ddad683da1ae">&#9670;&nbsp;</a></span>spdk_bdev_part_submit_request()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void spdk_bdev_part_submit_request </td>
+          <td class="memname">int spdk_bdev_part_submit_request </td>
           <td>(</td>
           <td class="paramtype">struct <a class="el" href="structspdk__bdev__part__channel.html">spdk_bdev_part_channel</a> *&#160;</td>
           <td class="paramname"><em>ch</em>, </td>
@@ -1550,6 +1550,7 @@ typedef&#160;</td><td class="memItemRight" valign="bottom"><b>TAILQ_HEAD</b> (bd
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success or non-zero if submit request failed. </dd></dl>
 
 </div>
 </div>
