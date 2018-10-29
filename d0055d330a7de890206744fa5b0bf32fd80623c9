@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "16fa9ec0_f30bb89f",
+        "filename": "_includes/js/meetings.js",
+        "patchSetId": 3
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 1010531
+      },
+      "writtenOn": "2018-10-29T18:32:45Z",
+      "side": 1,
+      "message": "Need a comment to say that this forces it to do the daylight savings adjustment. I think it\u0027s the increment math that\u0027s breaking here - incrementing the date doesn\u0027t seem to force it to recalculate in the new time zone.",
+      "revId": "d0055d330a7de890206744fa5b0bf32fd80623c9",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
