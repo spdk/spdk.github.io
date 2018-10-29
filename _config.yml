@@ -12,6 +12,7 @@ description: >
   which avoids kernel context switches and eliminates interrupt handling overhead.
 markdown: kramdown
 permalink: pretty
+include: [.well-known]
 
 boxes:
   - title: home
