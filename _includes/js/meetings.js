@@ -19,8 +19,12 @@ while (asiaDate < currentDate) {
 }
 
 while (asiaBugDate < currentDate) {
-	        asiaBugDate.setDate(asiaBugDate.getDate() + 14);
+        asiaBugDate.setDate(asiaBugDate.getDate() + 14);
 }
+
+euroDate = new Date(Date.UTC(euroDate.getYear(), euroDate.getMonth(), euroDate.getDate(), 15, 0, 0, 0));
+asiaDate = new Date(Date.UTC(asiaDate.getYear(), asiaDate.getMonth(), asiaDate.getDate(), 4, 0, 0, 0));
+asiaBugDate = new Date(Date.UTC(asiaBugDate.getYear(), asiaBugDate().getMonth(), asiaBugDate().getDate(), 4, 30, 0, 0));
 
 document.getElementById("euro-mtg").textContent = formatDate(euroDate);
 document.getElementById("asia-mtg").textContent = formatDate(asiaDate);
