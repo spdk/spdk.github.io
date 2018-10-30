@@ -26,7 +26,7 @@ while (asiaBugDate < currentDate) {
 // date at the beginning of this file and the calculated address based on the current date/time.
 euroDate = new Date(Date.UTC(euroDate.getFullYear(), euroDate.getMonth(), euroDate.getDate(), 15, 0, 0, 0));
 asiaDate = new Date(Date.UTC(asiaDate.getFullYear(), asiaDate.getMonth(), asiaDate.getDate(), 4, 0, 0, 0));
-asiaBugDate = new Date(Date.UTC(asiaBugDate.getFullYear(), asiaBugDate().getMonth(), asiaBugDate().getDate(), 4, 30, 0, 0));
+asiaBugDate = new Date(Date.UTC(asiaBugDate.getFullYear(), asiaBugDate.getMonth(), asiaBugDate.getDate(), 4, 30, 0, 0));
 
 document.getElementById("euro-mtg").textContent = formatDate(euroDate);
 document.getElementById("asia-mtg").textContent = formatDate(asiaDate);
