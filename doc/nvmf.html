@@ -191,7 +191,10 @@ Configuring the Linux NVMe over Fabrics Host</h2>
 <div class="fragment"><div class="line">modprobe nvme-rdma</div></div><!-- fragment --><p>The nvme-cli tool may be used to interface with the Linux kernel NVMe over Fabrics host.</p>
 <p>Discovery: </p><div class="fragment"><div class="line">nvme discover -t rdma -a 192.168.100.8 -s 4420</div></div><!-- fragment --><p>Connect: </p><div class="fragment"><div class="line">nvme connect -t rdma -n &quot;nqn.2016-06.io.spdk:cnode1&quot; -a 192.168.100.8 -s 4420</div></div><!-- fragment --><p>Disconnect: </p><div class="fragment"><div class="line">nvme disconnect -n &quot;nqn.2016-06.io.spdk:cnode1&quot;</div></div><!-- fragment --><h2><a class="anchor" id="nvmf_trace"></a>
 Enabling NVMe-oF target tracepoints for offline analysis and debug</h2>
-<p>SPDK has a tracing framework for capturing low-level event information at runtime. <a class="el" href="nvmf_tgt_tracepoints.html">NVMe-oF Target Tracepoints</a> enable analysis of both performance and application crashes. </p>
+<p>SPDK has a tracing framework for capturing low-level event information at runtime. <a class="el" href="nvmf_tgt_tracepoints.html">NVMe-oF Target Tracepoints</a> enable analysis of both performance and application crashes.</p>
+<h2><a class="anchor" id="nvmf_rdma_limitations"></a>
+RDMA Limitations</h2>
+<p>As RDMA NICs put a limitation on the number of memory regions registered, the SPDK NVMe-oF target application may eventually start failing to allocate more DMA-able memory. This is an imperfection of the DPDK dynamic memory management and is most likely to occur with too many 2MB hugepages reserved at runtime. Some of our NICs report as many as 2048 for the maximum number of memory regions, meaning that exactly that many pages can be allocated. With 2MB hugepages, this gives us a 4GB memory limit. It can be overcome by using 1GB hugepages or by pre-reserving memory at application startup with <code>--mem-size</code> or <code>-s</code> option. All pre-reserved memory will be registered as a single region, but won't be returned to the system until the SPDK application is terminated. </p>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 </div>

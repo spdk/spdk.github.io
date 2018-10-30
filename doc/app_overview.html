@@ -205,6 +205,7 @@ Multi process mode</h3>
 <h3><a class="anchor" id="cmd_arg_memory_size"></a>
 Memory size</h3>
 <p>Total size of the hugepage memory to reserve. If DPDK env layer is used, it will reserve memory from all available hugetlbfs mounts, starting with the one with the highest page size. This option accepts a number of bytes with a possible binary prefix, e.g. 1024, 1024M, 1G. The default unit is megabyte.</p>
+<p>Starting with DPDK 18.05.1, it's possible to reserve hugepages at runtime, meaning that SPDK application can be started with 0 pre-reserved memory. Unlike hugepages pre-reserved at the application startup, the hugepages reserved at runtime will be released to the system as soon as they're no longer used.</p>
 <h3><a class="anchor" id="cmd_arg_disable_pci_access"></a>
 Disable PCI access</h3>
 <p>If SPDK is run with PCI access disabled it won't detect any PCI devices. This includes primarily NVMe and IOAT devices. Also, the VFIO and UIO kernel modules are not required in this mode.</p>

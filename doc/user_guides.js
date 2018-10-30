@@ -49,7 +49,8 @@ var user_guides =
           [ "Assigning CPU Cores to the NVMe over Fabrics Target", "nvmf.html#nvmf_config_lcore", null ]
         ] ],
         [ "Configuring the Linux NVMe over Fabrics Host", "nvmf.html#nvmf_host", null ],
-        [ "Enabling NVMe-oF target tracepoints for offline analysis and debug", "nvmf.html#nvmf_trace", null ]
+        [ "Enabling NVMe-oF target tracepoints for offline analysis and debug", "nvmf.html#nvmf_trace", null ],
+        [ "RDMA Limitations", "nvmf.html#nvmf_rdma_limitations", null ]
       ] ]
     ] ],
     [ "vhost Target", "vhost.html", [
