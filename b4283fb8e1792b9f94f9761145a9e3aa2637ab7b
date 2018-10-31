@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "0c49360d_8f820747",
+        "filename": "_posts/2018-10-31-18.10_release.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 1011289
+      },
+      "writtenOn": "2018-10-31T14:01:45Z",
+      "side": 1,
+      "message": "remove line 18 and move crypto up, this is a regular new major feature.  Add that it supports for DPDK software encryption as well as hardware assisted encryption via Intel QAT.",
+      "revId": "b4283fb8e1792b9f94f9761145a9e3aa2637ab7b",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "8a6dcf29_25e87f7c",
+        "filename": "_posts/2018-10-31-18.10_release.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 1011289
+      },
+      "writtenOn": "2018-10-31T14:01:45Z",
+      "side": 1,
+      "message": "Change the title to \"New Contributors\"",
+      "revId": "b4283fb8e1792b9f94f9761145a9e3aa2637ab7b",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    }
+  ]
+}
