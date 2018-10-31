@@ -143,6 +143,7 @@ v18.10: (Upcoming Release)</h1>
 <h2>nvme</h2>
 <p><a class="el" href="nvme_8h.html#a0e7a6bb3ac85f99f936290f679399039" title="Send security protocol data to controller. ">spdk_nvme_ctrlr_cmd_security_send()</a> and <a class="el" href="nvme_8h.html#ae7bcc2decc2d4ce01b041601c5cdecea" title="Receive security protocol data from controller. ">spdk_nvme_ctrlr_cmd_security_receive()</a> were added to support sending or receiving security protocol data to or from nvme controller.</p>
 <p><a class="el" href="nvme_8h.html#a8f3f5c5a738dc7ad7e3b2913bff4324c" title="Get the extended sector size, in bytes, of the given namespace. ">spdk_nvme_ns_get_extended_sector_size()</a> was added. This function includes the metadata size per sector (if any). <a class="el" href="nvme_8h.html#a0d24c0b2b0b2a22b0c0af2ca2e157e04" title="Get the sector size, in bytes, of the given namespace. ">spdk_nvme_ns_get_sector_size()</a> still returns only the data size per sector, not including metadata.</p>
+<p>New <code>send_nvme_cmd</code> RPC was added to allow sending NVMe commands directly to NVMe controller. See the <a href="http://spdk.io/doc/jsonrpc.html#rpc_send_nvme_cmd">send_nvme_cmd</a> documentation for more details.</p>
 <h2>Build System</h2>
 <p>New <code>configure</code> options, <code>--with-shared</code> and <code>--without-shared</code> [default], provide the capability to build, or not, SPDK shared libraries. This includes the single SPDK shared lib encompassing all of the SPDK static libs as well as individual SPDK shared libs corresponding to each of the SPDK static ones. Although the production of the shared libs conforms with conventional version naming practices, such naming does not at this time confer any SPDK ABI compatibility claims.</p>
 <h2>bdev</h2>
@@ -150,6 +151,7 @@ v18.10: (Upcoming Release)</h1>
 <p>A new virtual bdev module has been added to perform at rest data encryption using the DPDK CryptoDev Framework. The module initially uses a software AESNI CBC cipher with experimental support for the Intel QAT hardware accelerator also currently implemented with support for CBC cipher. Future work may include additional ciphers as well as consideration for authentication. NOTE: this module is currently marked as experimental. Do not use in production.</p>
 <p>The RAID virtual bdev module is now always enabled by default. The configure &ndash;with-raid and &ndash;without-raid options are now ignored and deprecated and will be removed in the next release.</p>
 <p>Enforcement of bandwidth limits for quality of service (QoS) has been added to the bdev layer. See the new <a href="http://www.spdk.io/doc/jsonrpc.html#rpc_set_bdev_qos_limit">set_bdev_qos_limit</a> documentation for more details. The previous set_bdev_qos_limit_iops RPC method introduced at 18.04 release has been deprecated. The new set_bdev_qos_limit RPC method can support both bandwidth and IOPS limits.</p>
+<p>spdk_bdev_config_json() and corresponding <code>get_bdevs_config</code> RPC was removed.</p>
 <h2>Environment Abstraction Layer and Event Framework</h2>
 <p>The size parameter of spdk_mem_map_translate is now a pointer. This allows the function to report back the actual size of the translation relative to the original request made by the user.</p>
 <p>A new structure <a class="el" href="structspdk__mem__map__ops.html" title="A function table to be implemented by each memory map. ">spdk_mem_map_ops</a> has been introduced to hold memory map related callbacks. This structure is now passed as the second argument of spdk_mem_map_alloc in lieu of the notify callback.</p>
@@ -157,6 +159,8 @@ v18.10: (Upcoming Release)</h1>
 <p>The DPDK submodule has been updated to the DPDK 18.08 release. SPDK will now automatically utilize DPDK's dynamic memory management with DPDK versions &gt;= 18.05.1.</p>
 <p>Hugepages can be still reserved with <code>[-s|--mem-size &lt;size&gt;]</code> option at application startup, but once we use them all up, instead of failing user allocations with -ENOMEM, we'll try to dynamically reserve even more. This allows starting SPDK with <code>--mem-size 0</code> and using only as many hugepages as it is really needed.</p>
 <p>Due to this change, the memory buffers returned by <code>spdk_*malloc()</code> are no longer guaranteed to be physically contiguous.</p>
+<h2>I/OAT</h2>
+<p>I/OAT driver can now reinitialize I/OAT channels after encountering DMA errors.</p>
 <h2>iscsi target</h2>
 <p>Parameter names of <code>set_iscsi_options</code> and <code>get_iscsi_global_params</code> RPC method for CHAP authentication in discovery sessions have been changed to align with <code>construct_target_node</code> RPC method. Old names are still usable but will be removed in future release.</p>
 <p><code>set_iscsi_discovery_auth</code> and <code>set_iscsi_target_node_auth</code> RPC methods have been added to set CHAP authentication for discovery sessions and existing target nodes, respectively.</p>
@@ -164,6 +168,10 @@ v18.10: (Upcoming Release)</h1>
 <h2>iscsi initiator</h2>
 <p>The SPDK iSCSI initiator is no longer considered experimental and becomes a first-class citizen among bdev modules. The basic usage has been briefly described in the bdev user guide: <a href="https://spdk.io/doc/bdev.html#bdev_config_iscsi">iSCSI bdev</a></p>
 <h2>Miscellaneous</h2>
+<p>The SPDK application framework can now parse long name command line parameters. Most single-character parameters have a long name equivalent now. See the <a href="https://spdk.io/doc/app_overview.html">Command Line Parameters</a> documentation for details or use the <code>--help</code> command line parameter to list all available params.</p>
+<p>bdevperf <code>-s</code> param (io size) was renamed to <code>-o</code> as <code>-s</code> had been already used by existing apps for memory size.</p>
+<p>bdevio can now accept all SPDK command line parameters. The config now has to be provided with <code>-c</code> or <code>--config</code> param.</p>
+<p>The following ioat/perf and nvme/perf parameters were renamed as well: <code>-s</code> (io size) to <code>-o</code> <code>-d</code> (mem size) to <code>-s</code></p>
 <p>The ReactorMask config file parameter has been deprecated. Users should use the -m or &ndash;cpumask command line option to specify the CPU core mask for the application.</p>
 <p>Default config file pathnames have been removed from iscsi_tgt, nvmf_tgt and vhost. Config file pathnames may now only be specified using the -c command line option.</p>
 <p>Users may no longer set DPDK_DIR in their environment to specify the location of the DPDK installation used to build SPDK. Using DPDK_DIR has not been the documented nor recommended way to specify the DPDK location for several releases, but removing it ensures no unexpected surprises for users who may have DPDK_DIR defined for other reasons. Users should just use the "configure" script to specify the DPDK location before building SPDK.</p>
@@ -180,6 +188,22 @@ v18.10: (Upcoming Release)</h1>
 <li>remove_virtio_scsi_bdev</li>
 </ul>
 <p>The <code>construct_virtio_*</code> ones were replaced with a single <code>construct_virtio_dev</code> command that can create any type of Virtio bdev(s). <code>remove_virtio_scsi_bdev</code> was replaced with <code>remove_virtio_bdev</code> that can delete both Virtio Block and SCSI devices.</p>
+<h2>Blobfs</h2>
+<p><a class="el" href="blobfs_8h.html#a816f18c23723f7211b0a5a277904b202" title="Get the unique ID for the file. ">spdk_file_get_id()</a> returning unique ID for the file was added.</p>
+<h2>JSON</h2>
+<p>Added jsonrpc-client C library intended for issuing RPC commands from applications.</p>
+<p>Added API enabling iteration over JSON object:</p><ul>
+<li><a class="el" href="json_8h.html#a5fc65c7d1961c23a747b3e2aa2169f4a" title="Return JSON value asociated with key key_name. ">spdk_json_find()</a></li>
+<li><a class="el" href="json_8h.html#a04601f5c6dc82ac1ddedc387a510249d" title="The same as calling spdk_json_find() function with type set to SPDK_JSON_VAL_STRING. ">spdk_json_find_string()</a></li>
+<li><a class="el" href="json_8h.html#a0512cd8ee58901ec15f5ef372d6cafc6" title="The same as calling spdk_json_key() function with type set to SPDK_JSON_VAL_ARRAY_BEGIN. ">spdk_json_find_array()</a></li>
+<li><a class="el" href="json_8h.html#ae99e0abc8df8354366640d956b1a7461" title="Return first JSON value in given JSON object. ">spdk_json_object_first()</a></li>
+<li><a class="el" href="json_8h.html#aabfcbb30424e30c50ab85aae544a73da" title="Return first JSON value in array. ">spdk_json_array_first()</a></li>
+<li><a class="el" href="json_8h.html#a4ed2b0ed4b598337db1ef401ccc24b2a" title="Advance to the next JSON value in JSON object or array. ">spdk_json_next()</a></li>
+</ul>
+<h2>Blobstore</h2>
+<p>Blobstore I/O operations are now based on io_units, instead of blobstore page size. The io_unit size is now the same as the underlying block device's block size. Logical volumes built on a block device with 512B block size can now be used as boot devices in QEMU.</p>
+<h2>SPDKCLI</h2>
+<p>The SPDKCLI interactive command tool for managing SPDK is no longer considered experimental. Support for the iSCSI and NVMe-oF targets has been added.</p>
 <h1><a class="anchor" id="changelog-v18-07"></a>
 v18.07:</h1>
 <h2>bdev</h2>
