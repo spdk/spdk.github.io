@@ -1,5 +1,6 @@
 var NAVTREEINDEX3 =
 {
+"ioat__spec_8h.html#ad6decf15f582db03646116195bf1795f":[14,0,22,16],
 "ioat__spec_8h.html#adbebffc23f32661247e5da2228b415ca":[14,0,22,11],
 "ioat__spec_8h.html#ae763c4e8f46ead2c1ab8aa85bb40716f":[14,0,22,45],
 "ioat__spec_8h.html#afc40161ff89b7599a591441bc4699e5d":[14,0,22,30],
@@ -248,6 +249,5 @@ var NAVTREEINDEX3 =
 "jsonrpc.html#rpc_construct_rbd_bdev":[3,6,2,16],
 "jsonrpc.html#rpc_construct_target_node":[3,6,3,13],
 "jsonrpc.html#rpc_construct_vhost_blk_controller":[3,6,5,6],
-"jsonrpc.html#rpc_construct_vhost_nvme_controller":[3,6,5,4],
-"jsonrpc.html#rpc_construct_vhost_scsi_controller":[3,6,5,1]
+"jsonrpc.html#rpc_construct_vhost_nvme_controller":[3,6,5,4]
 };

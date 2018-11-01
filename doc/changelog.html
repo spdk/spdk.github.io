@@ -138,8 +138,10 @@ $(document).ready(function(){initNavTree('changelog.html','');});
 <div class="title">Changelog </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h1><a class="anchor" id="changelog-v18-10"></a>
-v18.10: (Upcoming Release)</h1>
+<div class="textblock"><h1><a class="anchor" id="changelog-v19-01"></a>
+v19.01: (Upcoming Release)</h1>
+<h1><a class="anchor" id="changelog-v18-10"></a>
+v18.10:</h1>
 <h2>nvme</h2>
 <p><a class="el" href="nvme_8h.html#a0e7a6bb3ac85f99f936290f679399039" title="Send security protocol data to controller. ">spdk_nvme_ctrlr_cmd_security_send()</a> and <a class="el" href="nvme_8h.html#ae7bcc2decc2d4ce01b041601c5cdecea" title="Receive security protocol data from controller. ">spdk_nvme_ctrlr_cmd_security_receive()</a> were added to support sending or receiving security protocol data to or from nvme controller.</p>
 <p><a class="el" href="nvme_8h.html#a8f3f5c5a738dc7ad7e3b2913bff4324c" title="Get the extended sector size, in bytes, of the given namespace. ">spdk_nvme_ns_get_extended_sector_size()</a> was added. This function includes the metadata size per sector (if any). <a class="el" href="nvme_8h.html#a0d24c0b2b0b2a22b0c0af2ca2e157e04" title="Get the sector size, in bytes, of the given namespace. ">spdk_nvme_ns_get_sector_size()</a> still returns only the data size per sector, not including metadata.</p>
@@ -148,7 +150,7 @@ v18.10: (Upcoming Release)</h1>
 <p>New <code>configure</code> options, <code>--with-shared</code> and <code>--without-shared</code> [default], provide the capability to build, or not, SPDK shared libraries. This includes the single SPDK shared lib encompassing all of the SPDK static libs as well as individual SPDK shared libs corresponding to each of the SPDK static ones. Although the production of the shared libs conforms with conventional version naming practices, such naming does not at this time confer any SPDK ABI compatibility claims.</p>
 <h2>bdev</h2>
 <p><a class="el" href="bdev__module_8h.html#ae62dae3c4a41154aca74f37864ae82f9" title="Removes all alias from block device alias list. ">spdk_bdev_alias_del_all()</a> was added to delete all alias from block device.</p>
-<p>A new virtual bdev module has been added to perform at rest data encryption using the DPDK CryptoDev Framework. The module initially uses a software AESNI CBC cipher with experimental support for the Intel QAT hardware accelerator also currently implemented with support for CBC cipher. Future work may include additional ciphers as well as consideration for authentication. NOTE: this module is currently marked as experimental. Do not use in production.</p>
+<p>A new virtual bdev module has been added to perform at rest data encryption using the DPDK CryptoDev Framework. The module initially uses a software AESNI CBC cipher with experimental support for the Intel QAT hardware accelerator also currently implemented with support for CBC cipher. Future work may include additional ciphers as well as consideration for authentication.</p>
 <p>The RAID virtual bdev module is now always enabled by default. The configure &ndash;with-raid and &ndash;without-raid options are now ignored and deprecated and will be removed in the next release.</p>
 <p>Enforcement of bandwidth limits for quality of service (QoS) has been added to the bdev layer. See the new <a href="http://www.spdk.io/doc/jsonrpc.html#rpc_set_bdev_qos_limit">set_bdev_qos_limit</a> documentation for more details. The previous set_bdev_qos_limit_iops RPC method introduced at 18.04 release has been deprecated. The new set_bdev_qos_limit RPC method can support both bandwidth and IOPS limits.</p>
 <p>spdk_bdev_config_json() and corresponding <code>get_bdevs_config</code> RPC was removed.</p>

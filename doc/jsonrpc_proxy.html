@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="Content-Type" content="text/xhtml; charset=utf-8">
   <meta name="generator" content="Doxygen 1.8.13">
-  <title>SPDK: Storage Performance Development Kit</title>
+  <title>SPDK: JSON-RPC Remote access</title>
   <script type="text/javascript" src="jquery.js"></script>
   <script type="text/javascript" src="dynsections.js"></script>
   <link href="navtree.css" rel="stylesheet" type="text/css"/>
@@ -116,7 +116,7 @@ $(function() {
   </div>
 </div>
 <script type="text/javascript">
-$(document).ready(function(){initNavTree('index.html','');});
+$(document).ready(function(){initNavTree('jsonrpc_proxy.html','');});
 </script>
 <div id="doc-content">
 <!-- window showing the filter options -->
@@ -135,74 +135,34 @@ $(document).ready(function(){initNavTree('index.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">Storage Performance Development Kit </div>  </div>
+<div class="title">JSON-RPC Remote access </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h1>Introduction</h1>
-<ul>
-<li><a class="el" href="about.html">What is SPDK?</a></li>
-<li><a class="el" href="getting_started.html">Getting Started</a></li>
-<li><a class="el" href="vagrant.html">Vagrant Development Environment</a></li>
-<li><a class="el" href="changelog.html">Changelog</a></li>
-<li><a href="https://github.com/spdk/spdk">Source Code (GitHub)</a></li>
-</ul>
-<h1>Concepts</h1>
-<ul>
-<li><a class="el" href="userspace.html">User Space Drivers</a></li>
-<li><a class="el" href="memory.html">Memory Management for User Space Drivers</a></li>
-<li><a class="el" href="concurrency.html">Message Passing and Concurrency</a></li>
-<li><a class="el" href="ssd_internals.html">SSD Internals</a></li>
-<li><a class="el" href="vhost_processing.html">Vhost processing</a></li>
-<li><a class="el" href="porting.html">SPDK Porting Guide</a></li>
-</ul>
-<h1>User Guides</h1>
-<ul>
-<li><a class="el" href="app_overview.html">An Overview of SPDK Applications</a></li>
-<li><a class="el" href="iscsi.html">iSCSI Target</a></li>
-<li><a class="el" href="nvmf.html">NVMe over Fabrics Target</a></li>
-<li><a class="el" href="vhost.html">vhost Target</a></li>
-<li><a class="el" href="bdev.html">Block Device User Guide</a></li>
-<li><a class="el" href="blobfs.html">BlobFS (Blobstore Filesystem)</a></li>
-<li><a class="el" href="jsonrpc.html">JSON-RPC Methods</a></li>
-<li><a class="el" href="jsonrpc_proxy.html">JSON-RPC Remote access</a></li>
-</ul>
-<h1>Programmer Guides</h1>
-<ul>
-<li><a href="files.html">Public API header files</a></li>
-<li><a class="el" href="blob.html">Blobstore Programmer's Guide</a></li>
-<li><a class="el" href="bdev_pg.html">Block Device Layer Programming Guide</a></li>
-<li><a class="el" href="bdev_module.html">Writing a Custom Block Device Module</a></li>
-<li><a class="el" href="nvmf_tgt_pg.html">NVMe over Fabrics Target Programming Guide</a></li>
-</ul>
-<h1>General Information</h1>
-<ul>
-<li><a class="el" href="directory_structure.html">SPDK Directory Structure</a></li>
-<li><a class="el" href="event.html">Event Framework</a></li>
-<li><a class="el" href="logical_volumes.html">Logical Volumes</a></li>
-</ul>
-<h1>Miscellaneous</h1>
-<ul>
-<li><a class="el" href="peer_2_peer.html">Peer-2-Peer DMAs</a></li>
-</ul>
-<h1>Driver Modules</h1>
-<ul>
-<li><a class="el" href="nvme.html">NVMe Driver</a></li>
-<li><a class="el" href="ioat.html">I/OAT Driver</a></li>
-<li><a class="el" href="virtio.html">Virtio driver</a></li>
-</ul>
-<h1>Tools</h1>
-<ul>
-<li><a class="el" href="nvme-cli.html">nvme-cli</a></li>
-</ul>
-<h1>Experimental Tools</h1>
-<ul>
-<li><a class="el" href="spdkcli.html">SPDK CLI</a></li>
-</ul>
-<h1>Performance Reports</h1>
-<ul>
-<li><a href="https://ci.spdk.io/download/performance-reports/SPDK17_07_vhost_scsi_performance_report.pdf">SPDK 17.07 vhost-scsi Performance Report</a></li>
-<li><a href="https://ci.spdk.io/download/performance-reports/SPDK_nvmeof_perf_report_18.04.pdf">SPDK 18.04 NVMe-oF Performance Report</a> </li>
-</ul>
-</div></div><!-- contents -->
+<div class="textblock"><p>SPDK provides a sample python script <code>rpc_http_proxy.py</code>, that provides http server which listens for JSON objects from users. It uses HTTP POST method to receive JSON objects including methods and parameters described in this chapter.</p>
+<h2>Parameters</h2>
+<table class="doxtable">
+<tr>
+<th>Name </th><th>Optional </th><th>Type </th><th>Description  </th></tr>
+<tr>
+<td>server IP </td><td>Required </td><td>string </td><td>IP address that JSON objects shall be received on </td></tr>
+<tr>
+<td>server port </td><td>Required </td><td>number </td><td>Port number that JSON objects shall be received on </td></tr>
+<tr>
+<td>user name </td><td>Required </td><td>string </td><td>User name that will be used for authentication </td></tr>
+<tr>
+<td>password </td><td>Required </td><td>string </td><td>Password that will be used for authentication </td></tr>
+<tr>
+<td>RPC listen address </td><td>Optional </td><td>string </td><td>Path to SPDK JSON RPC socket. Default: /var/tmp/spdk.sock </td></tr>
+</table>
+<h2>Example usage</h2>
+<p><code>spdk/scripts/rpc_http_proxy.py 192.168.0.2 8000 user password</code></p>
+<h2>Returns</h2>
+<p>Error 401 - missing or incorrect user and/or password.</p>
+<p>Error 400 - wrong JSON syntax or incorrect JSON method</p>
+<p>Status 200 with resultant JSON object included on success.</p>
+<h2>Client side</h2>
+<p>Below is a sample python script acting as a client side. It sends <code>get_bdevs</code> method with optional <code>name</code> parameter and prints JSON object returned from remote_rpc script.</p>
+<div class="fragment"><div class="line">import json</div><div class="line">import requests</div><div class="line"></div><div class="line">if __name__ == &#39;__main__&#39;:</div><div class="line">        payload = {&#39;method&#39;: &#39;get_bdevs&#39;, &#39;params&#39;: {&#39;name&#39;: &#39;Malloc0&#39;}}</div><div class="line">        url = &#39;http://192.168.0.2:8000/&#39;</div><div class="line">        req = requests.post(url,</div><div class="line">                        data=json.dumps(payload),</div><div class="line">                        auth=(&#39;user&#39;, &#39;password&#39;),</div><div class="line">                        verify=False,</div><div class="line">                        timeout=30)</div><div class="line">        print (req.json())</div></div><!-- fragment --><p>Output:</p>
+<div class="fragment"><div class="line">python client.py</div><div class="line">[{u&#39;num_blocks&#39;: 2621440, u&#39;name&#39;: u&#39;Malloc0&#39;, u&#39;uuid&#39;: u&#39;fb57e59c-599d-42f1-8b89-3e46dbe12641&#39;, u&#39;claimed&#39;: True, u&#39;driver_specific&#39;: {}, u&#39;supported_io_types&#39;: {u&#39;reset&#39;: True, u&#39;nvme_admin&#39;: False, u&#39;unmap&#39;: True, u&#39;read&#39;: True, u&#39;nvme_io&#39;: False, u&#39;write&#39;: True, u&#39;flush&#39;: True, u&#39;write_zeroes&#39;: True}, u&#39;qos_ios_per_sec&#39;: 0, u&#39;block_size&#39;: 4096, u&#39;product_name&#39;: u&#39;Malloc disk&#39;, u&#39;aliases&#39;: []}]</div></div><!-- fragment --> </div></div><!-- contents -->
 </div><!-- doc-content -->
 </div>

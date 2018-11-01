@@ -1,5 +1,6 @@
 var NAVTREEINDEX4 =
 {
+"jsonrpc.html#rpc_construct_vhost_scsi_controller":[3,6,5,1],
 "jsonrpc.html#rpc_construct_virtio_dev":[3,6,2,29],
 "jsonrpc.html#rpc_construct_virtio_pci_blk_bdev":[3,6,2,33],
 "jsonrpc.html#rpc_construct_virtio_pci_scsi_bdev":[3,6,2,31],
@@ -105,6 +106,7 @@ var NAVTREEINDEX4 =
 "jsonrpc_8h.html#ae48bc3b476636afa0c58f7fd36cdc7d1":[14,0,25,2],
 "jsonrpc_8h.html#ae7d1dc3ef99ed408859d9a5f6802ad65":[14,0,25,19],
 "jsonrpc_8h.html#af3d607f5a980bf9eb793ef2b553f679a":[14,0,25,17],
+"jsonrpc_proxy.html":[3,7],
 "likely_8h.html":[14,0,26],
 "likely_8h.html#a568e75eb7097ecf9ea2c735abc9f5844":[14,0,26,0],
 "likely_8h.html#adbc72e18822cb8015657c3e8baba7bb5":[14,0,26,1],
@@ -247,7 +249,5 @@ var NAVTREEINDEX4 =
 "nvme_8h.html#a59e69f39c7cb8a9e1c3e00af7804c8bd":[14,0,32,38],
 "nvme_8h.html#a5a9daf15b5008ac36c12e7b8db7bdec9":[14,0,32,35],
 "nvme_8h.html#a5eff1c1b6fbfb348a1f158b3cf70626f":[14,0,32,78],
-"nvme_8h.html#a60d8173db83accb35f0c5fe1ec8261bf":[14,0,32,43],
-"nvme_8h.html#a63fda1acce45c71590ed0db99220d26b":[14,0,32,28],
-"nvme_8h.html#a6943191f9c88c3cec504f87672b9acf8":[14,0,32,44]
+"nvme_8h.html#a60d8173db83accb35f0c5fe1ec8261bf":[14,0,32,43]
 };

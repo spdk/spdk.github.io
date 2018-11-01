@@ -233,5 +233,6 @@ var user_guides =
         [ "decouple_parent_lvol_bdev", "jsonrpc.html#rpc_decouple_parent_lvol_bdev", null ],
         [ "send_nvme_cmd", "jsonrpc.html#rpc_send_nvme_cmd", null ]
       ] ]
-    ] ]
+    ] ],
+    [ "JSON-RPC Remote access", "jsonrpc_proxy.html", null ]
 ];
