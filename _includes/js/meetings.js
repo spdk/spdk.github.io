@@ -24,9 +24,9 @@ while (asiaBugDate < currentDate) {
 
 // Regenerate the dates here - this makes sure we account for daylight savings adjustments between the starting
 // date at the beginning of this file and the calculated address based on the current date/time.
-euroDate = new Date(Date.UTC(euroDate.getFullYear(), euroDate.getMonth(), euroDate.getDate(), 15, 0, 0, 0));
-asiaDate = new Date(Date.UTC(asiaDate.getFullYear(), asiaDate.getMonth(), asiaDate.getDate(), 4, 0, 0, 0));
-asiaBugDate = new Date(Date.UTC(asiaBugDate.getFullYear(), asiaBugDate.getMonth(), asiaBugDate.getDate(), 4, 30, 0, 0));
+euroDate = new Date(Date.UTC(euroDate.getUTCFullYear(), euroDate.getUTCMonth(), euroDate.getUTCDate(), 15, 0, 0, 0));
+asiaDate = new Date(Date.UTC(asiaDate.getUTCFullYear(), asiaDate.getUTCMonth(), asiaDate.getUTCDate(), 4, 0, 0, 0));
+asiaBugDate = new Date(Date.UTC(asiaBugDate.getUTCFullYear(), asiaBugDate.getUTCMonth(), asiaBugDate.getUTCDate(), 4, 30, 0, 0));
 
 document.getElementById("euro-mtg").textContent = formatDate(euroDate);
 document.getElementById("asia-mtg").textContent = formatDate(asiaDate);
