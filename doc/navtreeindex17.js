@@ -1,5 +1,11 @@
 var NAVTREEINDEX17 =
 {
+"structspdk__scsi__vpd__page.html#ab01c44b30881fa4acc268253888f8fe4":[13,0,192,0],
+"structspdk__scsi__vpd__page.html#ac62f5b7a0b08a2ec4572bf002ce29399":[13,0,192,2],
+"structspdk__scsi__vpd__page.html#ae6185e80a408f83694f930378d8a5c03":[13,0,192,3],
+"structspdk__trace__entry.html":[13,0,193],
+"structspdk__trace__entry.html#a0e513114ecc56fd39f92437ef7935389":[13,0,193,5],
+"structspdk__trace__entry.html#a53d1df54f12eb3a41e75dfcf33544c6e":[13,0,193,2],
 "structspdk__trace__entry.html#a713d879c3f525d9f12b95178b9110d3f":[13,0,193,3],
 "structspdk__trace__entry.html#a8352d515ed92a1c37fc62c8a0473ef3d":[13,0,193,4],
 "structspdk__trace__entry.html#a9703554659f406f3d74ea78405def59e":[13,0,193,1],
@@ -243,11 +249,5 @@ var NAVTREEINDEX17 =
 "unionspdk__nvme__feat__host__identifier.html#aac6f3da2555497867e0c450a223415a1":[13,0,89,3],
 "unionspdk__nvme__feat__host__identifier.html#abe582ebd57c5130773da6ec66e49007c":[13,0,89,1],
 "unionspdk__nvme__feat__host__identifier.html#af9042f52c6b63bac6961eeabf7a4c48c":[13,0,89,0],
-"unionspdk__nvme__feat__host__mem__buffer.html":[13,0,90],
-"unionspdk__nvme__feat__host__mem__buffer.html#a4ae21a115b267dcacbd6a685abf177aa":[13,0,90,0],
-"unionspdk__nvme__feat__host__mem__buffer.html#a68c28c2479533b01ab8edd60cdfed6a0":[13,0,90,2],
-"unionspdk__nvme__feat__host__mem__buffer.html#a9f2c6e219f3ca6eef1841c3791ecec4d":[13,0,90,4],
-"unionspdk__nvme__feat__host__mem__buffer.html#ae38cde477f1878b3ec094fade9da7772":[13,0,90,3],
-"unionspdk__nvme__feat__host__mem__buffer.html#af43cc748ba99dcecb59f3359fd731084":[13,0,90,1],
-"unionspdk__nvme__feat__interrupt__vector__configuration.html":[13,0,91]
+"unionspdk__nvme__feat__host__mem__buffer.html":[13,0,90]
 };

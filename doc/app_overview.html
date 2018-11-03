@@ -177,8 +177,21 @@ Command Line Parameters</h2>
 <td>-r </td><td>&ndash;rpc-socket </td><td>string </td><td>/var/tmp/spdk.sock </td><td>RPC listen address </td></tr>
 <tr>
 <td>-s </td><td>&ndash;mem-size </td><td>integer </td><td>all hugepage memory </td><td><a class="el" href="app_overview.html#cmd_arg_memory_size">Memory size</a> </td></tr>
+<tr>
+<td></td><td>&ndash;silence-noticelog </td><td>flag </td><td></td><td>disable notice level logging to <code>stderr</code> </td></tr>
+<tr>
+<td>-u </td><td>&ndash;no-pci </td><td>flag </td><td></td><td><a class="el" href="app_overview.html#cmd_arg_disable_pci_access">Disable PCI access</a>. </td></tr>
+<tr>
+<td></td><td>&ndash;wait-for-rpc </td><td>flag </td><td></td><td><a class="el" href="app_overview.html#cmd_arg_deferred_initialization">Deferred initialization</a> </td></tr>
+<tr>
+<td>-B </td><td>&ndash;pci-blacklist </td><td>B:D:F </td><td></td><td><a class="el" href="app_overview.html#cmd_arg_pci_blacklist_whitelist">PCI address blacklist and whitelist</a>. </td></tr>
+<tr>
+<td>-W </td><td>&ndash;pci-whitelist </td><td>B:D:F </td><td></td><td><a class="el" href="app_overview.html#cmd_arg_pci_blacklist_whitelist">PCI address blacklist and whitelist</a>. </td></tr>
+<tr>
+<td>-R </td><td>&ndash;huge-unlink </td><td>flag </td><td></td><td><a class="el" href="app_overview.html#cmd_arg_huge_unlink">Unlink hugepage files after initialization</a> </td></tr>
+<tr>
+<td>-L </td><td>&ndash;traceflag </td><td>string </td><td></td><td><a class="el" href="app_overview.html#cmd_arg_debug_log_flags">Debug log</a> </td></tr>
 </table>
-<p>| &ndash;silence-noticelog | flag | | disable notice level logging to <code>stderr</code> -u | &ndash;no-pci | flag | | <a class="el" href="app_overview.html#cmd_arg_disable_pci_access">Disable PCI access</a>. | &ndash;wait-for-rpc | flag | | <a class="el" href="app_overview.html#cmd_arg_deferred_initialization">Deferred initialization</a> -B | &ndash;pci-blacklist | B:D:F | | <a class="el" href="app_overview.html#cmd_arg_pci_blacklist_whitelist">PCI address blacklist and whitelist</a>. -W | &ndash;pci-whitelist | B:D:F | | <a class="el" href="app_overview.html#cmd_arg_pci_blacklist_whitelist">PCI address blacklist and whitelist</a>. -R | &ndash;huge-unlink | flag | | <a class="el" href="app_overview.html#cmd_arg_huge_unlink">Unlink hugepage files after initialization</a> -L | &ndash;traceflag | string | | <a class="el" href="app_overview.html#cmd_arg_debug_log_flags">Debug log</a></p>
 <h3><a class="anchor" id="cmd_arg_config_file"></a>
 Configuration file</h3>
 <p>Historically, the SPDK applications were configured using a configuration file. This is still supported, but is considered deprecated in favor of JSON RPC configuration. See <a class="el" href="jsonrpc.html">JSON-RPC Methods</a> for details.</p>

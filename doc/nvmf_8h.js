@@ -9,6 +9,8 @@ var nvmf_8h =
     [ "spdk_nvmf_tgt_add_transport_done_fn", "nvmf_8h.html#a53086e85e4a7103ab2b714483b4f2aec", null ],
     [ "spdk_nvmf_tgt_destroy_done_fn", "nvmf_8h.html#a26c5ae0565e487633e00cdd8819d2d00", null ],
     [ "spdk_nvmf_tgt_listen_done_fn", "nvmf_8h.html#a854e30bf69f07bb06b2cbcdd08ca7eba", null ],
+    [ "spdk_nvmf_get_transport_opts", "nvmf_8h.html#a31057e91a342d9e799254ee66e3533ba", null ],
+    [ "spdk_nvmf_get_transport_type", "nvmf_8h.html#a63937e4be5fad005cfe7ce15cf60a198", null ],
     [ "spdk_nvmf_host_get_nqn", "nvmf_8h.html#acec4ed75ff9a25a5477d40f43a430677", null ],
     [ "spdk_nvmf_listener_get_trid", "nvmf_8h.html#a6d20b0173b3c6047ad15d5972af867c5", null ],
     [ "spdk_nvmf_ns_get_bdev", "nvmf_8h.html#af3575fee4a9db1b3c8bacbac8b605358", null ],
@@ -64,6 +66,8 @@ var nvmf_8h =
     [ "spdk_nvmf_tgt_write_config_json", "nvmf_8h.html#a2aad508811686a6d16f3bfd221ba99a9", null ],
     [ "spdk_nvmf_transport_create", "nvmf_8h.html#ad2ef4994182937ff7b724654e3dee2cf", null ],
     [ "spdk_nvmf_transport_destroy", "nvmf_8h.html#ab3d5e7bc8701baac2be7858b34fa7baf", null ],
+    [ "spdk_nvmf_transport_get_first", "nvmf_8h.html#a1aeaade30bb4e457f5c35e2f3649d097", null ],
+    [ "spdk_nvmf_transport_get_next", "nvmf_8h.html#aa1316a2fe3bd765d755de1df15add5cc", null ],
     [ "spdk_nvmf_transport_listen", "nvmf_8h.html#af3f67fe201cedd887ed6ad35792ff5e7", null ],
     [ "spdk_nvmf_transport_opts_init", "nvmf_8h.html#a33f54dfed0f9cc21264f1c89bd708e94", null ]
 ];

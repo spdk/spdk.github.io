@@ -12,6 +12,7 @@ var nvme_8h =
     [ "spdk_nvme_req_next_sge_cb", "nvme_8h.html#a4ab95bea86f498c08510f6f0bcd2eb09", null ],
     [ "spdk_nvme_req_reset_sgl_cb", "nvme_8h.html#a0e1fcb43970ea531567ee00d4ee0675b", null ],
     [ "spdk_nvme_timeout_cb", "nvme_8h.html#a53fe1c01a447be8fcd29821a668227a0", null ],
+    [ "spdk_nvme_transport_type_t", "nvme_8h.html#aae15274f006778f31211e555a5cab825", null ],
     [ "spdk_nvme_ns_flags", "nvme_8h.html#a018f3b986b4345ee0c6931be9718c163", [
       [ "SPDK_NVME_NS_DEALLOCATE_SUPPORTED", "nvme_8h.html#a018f3b986b4345ee0c6931be9718c163a80dcd48a57fa9e14efba4757300ad729", null ],
       [ "SPDK_NVME_NS_FLUSH_SUPPORTED", "nvme_8h.html#a018f3b986b4345ee0c6931be9718c163ad403aafc70c00560a1db768029933400", null ],

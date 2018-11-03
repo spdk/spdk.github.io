@@ -199,7 +199,8 @@ var user_guides =
         [ "nvmf_subsystem_remove_host method", "jsonrpc.html#rpc_nvmf_subsystem_remove_host", null ],
         [ "nvmf_subsystem_allow_any_host method", "jsonrpc.html#rpc_nvmf_subsystem_allow_any_host", null ],
         [ "set_nvmf_target_options", "jsonrpc.html#rpc_set_nvmf_target_options", null ],
-        [ "set_nvmf_target_config", "jsonrpc.html#rpc_set_nvmf_target_config", null ]
+        [ "set_nvmf_target_config", "jsonrpc.html#rpc_set_nvmf_target_config", null ],
+        [ "get_nvmf_transports method", "jsonrpc.html#rpc_get_nvmf_transports", null ]
       ] ],
       [ "Vhost Target", "jsonrpc.html#jsonrpc_components_vhost_tgt", [
         [ "set_vhost_controller_coalescing", "jsonrpc.html#rpc_set_vhost_controller_coalescing", null ],
