@@ -1,5 +1,8 @@
 var user_guides =
 [
+    [ "System Configuration User Guide", "system_configuration.html", [
+      [ "IOMMU configuration", "system_configuration.html#iommu_config", null ]
+    ] ],
     [ "An Overview of SPDK Applications", "app_overview.html", [
       [ "Configuring SPDK Applications", "app_overview.html#app_config", [
         [ "Command Line Parameters", "app_overview.html#app_cmd_line_args", [

@@ -4,5 +4,6 @@ var searchData=
   ['storage_20performance_20development_20kit',['Storage Performance Development Kit',['../index.html',1,'']]],
   ['spdk_20porting_20guide',['SPDK Porting Guide',['../porting.html',1,'concepts']]],
   ['spdk_20cli',['SPDK CLI',['../spdkcli.html',1,'experimental_tools']]],
-  ['ssd_20internals',['SSD Internals',['../ssd_internals.html',1,'concepts']]]
+  ['ssd_20internals',['SSD Internals',['../ssd_internals.html',1,'concepts']]],
+  ['system_20configuration_20user_20guide',['System Configuration User Guide',['../system_configuration.html',1,'user_guides']]]
 ];

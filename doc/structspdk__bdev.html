@@ -194,9 +194,9 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev.html#aef65d7444968b8981d46d0c520fd5287">blockcnt</a></td></tr>
 <tr class="memdesc:aef65d7444968b8981d46d0c520fd5287"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of blocks. <br /></td></tr>
 <tr class="separator:aef65d7444968b8981d46d0c520fd5287"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aefca37414047c251d38d08a6c2bb9ac8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev.html#aefca37414047c251d38d08a6c2bb9ac8">need_aligned_buffer</a></td></tr>
-<tr class="memdesc:aefca37414047c251d38d08a6c2bb9ac8"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is used to make sure buffers are sector aligned.  <a href="#aefca37414047c251d38d08a6c2bb9ac8">More...</a><br /></td></tr>
-<tr class="separator:aefca37414047c251d38d08a6c2bb9ac8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a149453df246d04c8640fb567c58a61f0"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev.html#a149453df246d04c8640fb567c58a61f0">required_alignment</a></td></tr>
+<tr class="memdesc:a149453df246d04c8640fb567c58a61f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specifies an alignment requirement for data buffers associated with an <a class="el" href="structspdk__bdev__io.html">spdk_bdev_io</a>.  <a href="#a149453df246d04c8640fb567c58a61f0">More...</a><br /></td></tr>
+<tr class="separator:a149453df246d04c8640fb567c58a61f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a85a794d02620e3e8730bb11791c0c592"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev.html#a85a794d02620e3e8730bb11791c0c592">split_on_optimal_io_boundary</a></td></tr>
 <tr class="memdesc:a85a794d02620e3e8730bb11791c0c592"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specifies whether the optimal_io_boundary is mandatory or only advisory.  <a href="#a85a794d02620e3e8730bb11791c0c592">More...</a><br /></td></tr>
 <tr class="separator:a85a794d02620e3e8730bb11791c0c592"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -267,23 +267,6 @@ struct <a class="el" href="structspdk__bdev_1_1____bdev__internal__fields.html">
 
 </div>
 </div>
-<a id="aefca37414047c251d38d08a6c2bb9ac8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aefca37414047c251d38d08a6c2bb9ac8">&#9670;&nbsp;</a></span>need_aligned_buffer</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool spdk_bdev::need_aligned_buffer</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>This is used to make sure buffers are sector aligned. </p>
-<p>This causes double buffering on writes. </p>
-
-</div>
-</div>
 <a id="ad3abe8a06500954332614d8657eaf1d9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad3abe8a06500954332614d8657eaf1d9">&#9670;&nbsp;</a></span>product_name</h2>
 
@@ -297,6 +280,23 @@ struct <a class="el" href="structspdk__bdev_1_1____bdev__internal__fields.html">
 </div><div class="memdoc">
 
 <p>Unique product name for this kind of block device. </p>
+
+</div>
+</div>
+<a id="a149453df246d04c8640fb567c58a61f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a149453df246d04c8640fb567c58a61f0">&#9670;&nbsp;</a></span>required_alignment</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t spdk_bdev::required_alignment</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Specifies an alignment requirement for data buffers associated with an <a class="el" href="structspdk__bdev__io.html">spdk_bdev_io</a>. </p>
+<p>0 = no alignment requirement &gt;0 = alignment requirement is 2 ^ required_alignment. bdev layer will automatically double buffer any <a class="el" href="structspdk__bdev__io.html">spdk_bdev_io</a> that violates this alignment, before the <a class="el" href="structspdk__bdev__io.html">spdk_bdev_io</a> is submitted to the bdev module. </p>
 
 </div>
 </div>

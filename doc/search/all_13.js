@@ -1156,6 +1156,7 @@ var searchData=
   ['subtype',['subtype',['../structspdk__nvmf__discovery__log__page__entry.html#a2cc3f0c6ab0ebb7eb85cd3058f0f787f',1,'spdk_nvmf_discovery_log_page_entry']]],
   ['supported',['supported',['../structspdk__nvme__ctrlr__data.html#a67327a265027227d37f9b7e947c06cfc',1,'spdk_nvme_ctrlr_data']]],
   ['sw',['sw',['../structspdk__nvme__dsm__range.html#af15a5e24c688c5d15575d98d064b65bd',1,'spdk_nvme_dsm_range']]],
+  ['system_20configuration_20user_20guide',['System Configuration User Guide',['../system_configuration.html',1,'user_guides']]],
   ['sz',['sz',['../unionspdk__nvme__cmbsz__register.html#a03af53ff83c581ce0f02f72195f1c6f2',1,'spdk_nvme_cmbsz_register']]],
   ['szu',['szu',['../unionspdk__nvme__cmbsz__register.html#a5259febaf27ced21d1358b97bd1cb831',1,'spdk_nvme_cmbsz_register']]]
 ];

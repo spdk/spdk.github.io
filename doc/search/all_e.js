@@ -12,7 +12,6 @@ var searchData=
   ['ncap',['ncap',['../structspdk__nvme__ns__data.html#a641a3b350f2320c9065fed1b4b969636',1,'spdk_nvme_ns_data']]],
   ['ncc',['ncc',['../structspdk__nvme__cmds__and__effect__entry.html#a01772a2197820bdbf56f3d79fd2c83ea',1,'spdk_nvme_cmds_and_effect_entry']]],
   ['ncqr',['ncqr',['../unionspdk__nvme__feat__number__of__queues.html#a48012c7a713f82d0e9b375cf363d4af2',1,'spdk_nvme_feat_number_of_queues']]],
-  ['need_5faligned_5fbuffer',['need_aligned_buffer',['../structspdk__bdev.html#aefca37414047c251d38d08a6c2bb9ac8',1,'spdk_bdev']]],
   ['net_2eh',['net.h',['../net_8h.html',1,'']]],
   ['new_5fqpair_5ffn',['new_qpair_fn',['../nvmf_8h.html#a83e558236353a3b94992d2e604f4b660',1,'nvmf.h']]],
   ['next_5fentry',['next_entry',['../structspdk__trace__history.html#a19c2844fdf265b00faf766372de1d577',1,'spdk_trace_history']]],
