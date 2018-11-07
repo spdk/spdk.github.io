@@ -1,5 +1,6 @@
 var jsonrpc_8h =
 [
+    [ "spdk_jsonrpc_client_response", "structspdk__jsonrpc__client__response.html", "structspdk__jsonrpc__client__response" ],
     [ "SPDK_JSONRPC_ERROR_INTERNAL_ERROR", "jsonrpc_8h.html#a1e2cef86b68fbf093df54c37ba1c2a4a", null ],
     [ "SPDK_JSONRPC_ERROR_INVALID_PARAMS", "jsonrpc_8h.html#a97fe9c9d3f9eb731dd9cf320318d43aa", null ],
     [ "SPDK_JSONRPC_ERROR_INVALID_REQUEST", "jsonrpc_8h.html#ae48bc3b476636afa0c58f7fd36cdc7d1", null ],
@@ -14,7 +15,9 @@ var jsonrpc_8h =
     [ "spdk_jsonrpc_client_connect", "jsonrpc_8h.html#a141092106ae7db318ad9c2916edbe00b", null ],
     [ "spdk_jsonrpc_client_create_request", "jsonrpc_8h.html#a36e8741a465238436ca46464dfbd277b", null ],
     [ "spdk_jsonrpc_client_free_request", "jsonrpc_8h.html#a42438592f780e35892904af6be663617", null ],
-    [ "spdk_jsonrpc_client_recv_response", "jsonrpc_8h.html#a20ca75e66c3cd3480d41fb37d3c27eaa", null ],
+    [ "spdk_jsonrpc_client_free_response", "jsonrpc_8h.html#acdbb193a4b8ca1c57c2b43223165dfa6", null ],
+    [ "spdk_jsonrpc_client_get_response", "jsonrpc_8h.html#ab8b438aa5b6e78cb5d433ca0015fd126", null ],
+    [ "spdk_jsonrpc_client_recv_response", "jsonrpc_8h.html#abb3d4f6dbb414d65836543a0fbaa0c19", null ],
     [ "spdk_jsonrpc_client_send_request", "jsonrpc_8h.html#aaadb8c7ec1b7472b41e74c27f08494b7", null ],
     [ "spdk_jsonrpc_end_request", "jsonrpc_8h.html#a9ae1b767ebb4ad59a9c4739beea1c6f4", null ],
     [ "spdk_jsonrpc_end_result", "jsonrpc_8h.html#af3d607f5a980bf9eb793ef2b553f679a", null ],

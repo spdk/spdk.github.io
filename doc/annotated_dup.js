@@ -59,6 +59,7 @@ var annotated_dup =
     [ "spdk_ioat_xor_hw_desc", "structspdk__ioat__xor__hw__desc.html", "structspdk__ioat__xor__hw__desc" ],
     [ "spdk_json_object_decoder", "structspdk__json__object__decoder.html", "structspdk__json__object__decoder" ],
     [ "spdk_json_val", "structspdk__json__val.html", "structspdk__json__val" ],
+    [ "spdk_jsonrpc_client_response", "structspdk__jsonrpc__client__response.html", "structspdk__jsonrpc__client__response" ],
     [ "spdk_lvs_opts", "structspdk__lvs__opts.html", "structspdk__lvs__opts" ],
     [ "spdk_mbr", "structspdk__mbr.html", "structspdk__mbr" ],
     [ "spdk_mbr_chs", "structspdk__mbr__chs.html", "structspdk__mbr__chs" ],

@@ -713,7 +713,7 @@ construct_passthru_bdev</h2>
 <tr>
 <th>Name </th><th>Optional </th><th>Type </th><th>Description  </th></tr>
 <tr>
-<td>passthru_bdev_name </td><td>Required </td><td>string </td><td>Bdev name </td></tr>
+<td>name </td><td>Required </td><td>string </td><td>Bdev name </td></tr>
 <tr>
 <td>base_bdev_name </td><td>Required </td><td>string </td><td>Base bdev name </td></tr>
 </table>
@@ -721,7 +721,7 @@ construct_passthru_bdev</h2>
 <p>Name of newly created bdev.</p>
 <h3>Example</h3>
 <p>Example request:</p>
-<div class="fragment"><div class="line">{</div><div class="line">  &quot;params&quot;: {</div><div class="line">    &quot;base_bdev_name&quot;: &quot;Malloc0&quot;,</div><div class="line">    &quot;passthru_bdev_name&quot;: &quot;Passsthru0&quot;</div><div class="line">  },</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;method&quot;: &quot;construct_passthru_bdev&quot;,</div><div class="line">  &quot;id&quot;: 1</div><div class="line">}</div></div><!-- fragment --><p>Example response:</p>
+<div class="fragment"><div class="line">{</div><div class="line">  &quot;params&quot;: {</div><div class="line">    &quot;base_bdev_name&quot;: &quot;Malloc0&quot;,</div><div class="line">    &quot;name&quot;: &quot;Passsthru0&quot;</div><div class="line">  },</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;method&quot;: &quot;construct_passthru_bdev&quot;,</div><div class="line">  &quot;id&quot;: 1</div><div class="line">}</div></div><!-- fragment --><p>Example response:</p>
 <div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: &quot;Passsthru0&quot;</div><div class="line">}</div></div><!-- fragment --><h2><a class="anchor" id="rpc_delete_passthru_bdev"></a>
 delete_passthru_bdev</h2>
 <p>Delete passthru bdev.</p>
