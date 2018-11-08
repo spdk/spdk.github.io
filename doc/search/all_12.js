@@ -10,6 +10,7 @@ var searchData=
   ['rds',['rds',['../unionspdk__nvme__cmbsz__register.html#aa017da4c8e3418285501ca07822bdbf2',1,'spdk_nvme_cmbsz_register']]],
   ['rdy',['rdy',['../unionspdk__nvme__csts__register.html#a86fc572fdd7a9850c188671e682b6ffa',1,'spdk_nvme_csts_register']]],
   ['read_5fvalue',['read_value',['../structspdk__nvme__ns__data.html#a7da578850bf0274652b7fcb640b60619',1,'spdk_nvme_ns_data']]],
+  ['reduce_2eh',['reduce.h',['../reduce_8h.html',1,'']]],
   ['refreshed',['refreshed',['../structspdk__ocssd__chunk__notification__entry.html#a018188382405987a8f86d387b26690fd',1,'spdk_ocssd_chunk_notification_entry']]],
   ['required_5falignment',['required_alignment',['../structspdk__bdev.html#a149453df246d04c8640fb567c58a61f0',1,'spdk_bdev']]],
   ['reserved2',['reserved2',['../structspdk__nvme__firmware__page.html#ac92edf109ba5f2b970b06a31a0434f37',1,'spdk_nvme_firmware_page']]],

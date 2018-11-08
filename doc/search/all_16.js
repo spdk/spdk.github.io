@@ -16,6 +16,7 @@ var searchData=
   ['virfap',['virfap',['../structspdk__nvme__primary__ctrl__capabilities.html#a4f54107ade9a50eba4d82e18aca5b39b',1,'spdk_nvme_primary_ctrl_capabilities']]],
   ['virtio_20driver',['Virtio driver',['../virtio.html',1,'driver_modules']]],
   ['virtualization_5fmanagement',['virtualization_management',['../structspdk__nvme__ctrlr__data.html#a01424c480dc8c3d11e17bbf889302467',1,'spdk_nvme_ctrlr_data']]],
+  ['vol_5fsize',['vol_size',['../structspdk__reduce__vol__params.html#ae4c8834d1e1c76455842b97c4489ce47',1,'spdk_reduce_vol_params']]],
   ['vqfrsm',['vqfrsm',['../structspdk__nvme__primary__ctrl__capabilities.html#a8b523874842beb9c88efbd2962a0950f',1,'spdk_nvme_primary_ctrl_capabilities']]],
   ['vqfrt',['vqfrt',['../structspdk__nvme__primary__ctrl__capabilities.html#a6b22f6c1cc50ed2395c5e86a4883ca1c',1,'spdk_nvme_primary_ctrl_capabilities']]],
   ['vqgran',['vqgran',['../structspdk__nvme__primary__ctrl__capabilities.html#a6232822783419f4f479f28aba250e9f4',1,'spdk_nvme_primary_ctrl_capabilities']]],

@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['backing_5fio_5funit_5fsize',['backing_io_unit_size',['../structspdk__reduce__vol__params.html#a8702d36eea6d40a62076a434e91aa3ca',1,'spdk_reduce_vol_params']]],
   ['barrier_2eh',['barrier.h',['../barrier_8h.html',1,'']]],
   ['base64_2eh',['base64.h',['../base64_8h.html',1,'']]],
   ['bdev',['bdev',['../structspdk__bdev__io.html#a096518d708e224b91e03897b79431afd',1,'spdk_bdev_io::bdev()'],['../bdev.html',1,'user_guides']]],
