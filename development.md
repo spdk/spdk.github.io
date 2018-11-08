@@ -317,6 +317,7 @@ The current list of SPDK core maintainers includes:
 * Jim Harris (IRC: jimharris)
 * Changpeng Liu (IRC: changpe1)
 * Shuhei Matsumoto (IRC: Shuhei)
+* Darek Stojaczyk (IRC: darsto)
 * Ben Walker (IRC: bwalker)
 
 The bulk of this technical oversight is achieved through reviewing and approving patches.  Patches
