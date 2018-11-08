@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "e7e0567b_432f1b18",
+        "filename": "_posts/2018-11-08-Performance_Report_Update.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 1011314
+      },
+      "writtenOn": "2018-11-08T13:38:17Z",
+      "side": 1,
+      "message": "Shuhei\nThe first link under documentation does not point to the report location. \nHow about we reword this blog to add some information on the purpose and a summary of the results?\nHere is what I am thinking. \n\nWe have been doing some work to evaluate the performance of SPDK and gain some hands-on experience with the SPDK NVMe-oF Target and Initiator. The [Hitachi SPDK NVMe-oF Performance Report](https://ci.spdk.io/download/papers/Hitachi_SPDK_NVMe_oF_Performance_Report.pdf)\ncontains our test configuration and performance results. In summary, we observed up to 8x more IOPS/Core with SPDK NVMe-oF Target and Initiator, vs the Linux Kernel, \nand a 90% reduction in the software latency. Many thanks to John Kariuki and the SPDK team.",
+      "range": {
+        "startLine": 8,
+        "startChar": 0,
+        "endLine": 10,
+        "endChar": 121
+      },
+      "revId": "d85f2d134301e001f90f780b3b4b5fea3317c7c2",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    }
+  ]
+}
