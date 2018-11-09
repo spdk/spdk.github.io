@@ -241,6 +241,16 @@ void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="st
 uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev__io_1_1____bdev__io__internal__fields.html#a8e969e9419d6f05b335eebc2f2b246a6">buf_len</a></td></tr>
 <tr class="memdesc:a8e969e9419d6f05b335eebc2f2b246a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">requested size of the buffer associated with this I/O <br /></td></tr>
 <tr class="separator:a8e969e9419d6f05b335eebc2f2b246a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee2ed117d4aa174778f5920a3e150c2e"><td class="memItemLeft" align="right" valign="top"><a id="aee2ed117d4aa174778f5920a3e150c2e"></a>
+struct iovec&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev__io_1_1____bdev__io__internal__fields.html#aee2ed117d4aa174778f5920a3e150c2e">bounce_iov</a></td></tr>
+<tr class="memdesc:aee2ed117d4aa174778f5920a3e150c2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">if the request is double buffered, store original request iovs here <br /></td></tr>
+<tr class="separator:aee2ed117d4aa174778f5920a3e150c2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b3b523a20129486f3e0b35a53bc97e7"><td class="memItemLeft" align="right" valign="top"><a id="a4b3b523a20129486f3e0b35a53bc97e7"></a>
+struct iovec *&#160;</td><td class="memItemRight" valign="bottom"><b>orig_iovs</b></td></tr>
+<tr class="separator:a4b3b523a20129486f3e0b35a53bc97e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b896f397d5407bfa31d21c70fbd70c5"><td class="memItemLeft" align="right" valign="top"><a id="a3b896f397d5407bfa31d21c70fbd70c5"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>orig_iovcnt</b></td></tr>
+<tr class="separator:a3b896f397d5407bfa31d21c70fbd70c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a320a717c3bfbfae0a88e37806a4b11cb"><td class="memItemLeft" align="right" valign="top"><a id="a320a717c3bfbfae0a88e37806a4b11cb"></a>
 spdk_bdev_io_get_buf_cb&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev__io_1_1____bdev__io__internal__fields.html#a320a717c3bfbfae0a88e37806a4b11cb">get_buf_cb</a></td></tr>
 <tr class="memdesc:a320a717c3bfbfae0a88e37806a4b11cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback for when buf is allocated. <br /></td></tr>

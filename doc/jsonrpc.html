@@ -1445,28 +1445,18 @@ nvmf_subsystem_allow_any_host method</h2>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;method&quot;: &quot;nvmf_subsystem_allow_any_host&quot;,</div><div class="line">  &quot;params&quot;: {</div><div class="line">    &quot;nqn&quot;: &quot;nqn.2016-06.io.spdk:cnode1&quot;,</div><div class="line">    &quot;allow_any_host&quot;: true</div><div class="line">  }</div><div class="line">}</div></div><!-- fragment --><p>Example response:</p>
-<div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: true</div><div class="line">}</div></div><!-- fragment --><h2><a class="anchor" id="rpc_set_nvmf_target_options"></a>
-set_nvmf_target_options</h2>
-<p>Set global parameters for the NVMe-oF target. This RPC may only be called before SPDK subsystems have been initialized.</p>
+<div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: true</div><div class="line">}</div></div><!-- fragment --><h2><a class="anchor" id="rpc_set_nvmf_target_max_subsystems"></a>
+set_nvmf_target_max_subsystems</h2>
+<p>Set the maximum allowed subsystems for the NVMe-oF target. This RPC may only be called before SPDK subsystems have been initialized.</p>
 <h3>Parameters</h3>
 <table class="doxtable">
 <tr>
 <th>Name </th><th>Optional </th><th>Type </th><th>Description  </th></tr>
 <tr>
-<td>max_queue_depth </td><td>Optional </td><td>number </td><td>Maximum number of outstanding I/Os per queue </td></tr>
-<tr>
-<td>max_qpairs_per_ctrlr </td><td>Optional </td><td>number </td><td>Maximum number of SQ and CQ per controller </td></tr>
-<tr>
-<td>in_capsule_data_size </td><td>Optional </td><td>number </td><td>Maximum number of in-capsule data size </td></tr>
-<tr>
-<td>max_io_size </td><td>Optional </td><td>number </td><td>Maximum I/O size (bytes) </td></tr>
-<tr>
-<td>max_subsystems </td><td>Optional </td><td>number </td><td>Maximum number of NVMe-oF subsystems </td></tr>
-<tr>
-<td>io_unit_size </td><td>Optional </td><td>number </td><td>I/O unit size (bytes) </td></tr>
+<td>max_subsystems </td><td>Required </td><td>number </td><td>Maximum number of NVMe-oF subsystems </td></tr>
 </table>
 <h3>Example</h3>
-<p>Example request: </p><div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;method&quot;: &quot;set_nvmf_target_options&quot;,</div><div class="line">  &quot;params&quot;: {</div><div class="line">    &quot;in_capsule_data_size&quot;: 4096,</div><div class="line">    &quot;io_unit_size&quot;: 131072,</div><div class="line">    &quot;max_qpairs_per_ctrlr&quot;: 64,</div><div class="line">    &quot;max_queue_depth&quot;: 128,</div><div class="line">    &quot;max_io_size&quot;: 131072,</div><div class="line">    &quot;max_subsystems&quot;: 1024</div><div class="line">  }</div><div class="line">}</div></div><!-- fragment --><p>Example response: </p><div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: true</div><div class="line">}</div></div><!-- fragment --><h2><a class="anchor" id="rpc_set_nvmf_target_config"></a>
+<p>Example request: </p><div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;method&quot;: &quot;set_nvmf_target_max_subsystems&quot;,</div><div class="line">  &quot;params&quot;: {</div><div class="line">    &quot;max_subsystems&quot;: 1024</div><div class="line">  }</div><div class="line">}</div></div><!-- fragment --><p>Example response: </p><div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: true</div><div class="line">}</div></div><!-- fragment --><h2><a class="anchor" id="rpc_set_nvmf_target_config"></a>
 set_nvmf_target_config</h2>
 <p>Set global configuration of NVMe-oF target. This RPC may only be called before SPDK subsystems have been initialized.</p>
 <h3>Parameters</h3>

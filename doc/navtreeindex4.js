@@ -78,7 +78,7 @@ var NAVTREEINDEX4 =
 "jsonrpc.html#rpc_set_iscsi_options":[3,7,3,0],
 "jsonrpc.html#rpc_set_iscsi_target_node_auth":[3,7,3,14],
 "jsonrpc.html#rpc_set_nvmf_target_config":[3,7,4,10],
-"jsonrpc.html#rpc_set_nvmf_target_options":[3,7,4,9],
+"jsonrpc.html#rpc_set_nvmf_target_max_subsystems":[3,7,4,9],
 "jsonrpc.html#rpc_set_vhost_controller_coalescing":[3,7,5,0],
 "jsonrpc.html#rpc_snapshot_lvol_bdev":[3,7,6,5],
 "jsonrpc.html#rpc_start_subsystem_init":[3,7,1,2],
