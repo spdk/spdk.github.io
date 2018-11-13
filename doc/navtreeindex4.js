@@ -40,9 +40,9 @@ var NAVTREEINDEX4 =
 "jsonrpc.html#rpc_get_nvmf_subsystems":[3,7,4,0],
 "jsonrpc.html#rpc_get_nvmf_transports":[3,7,4,11],
 "jsonrpc.html#rpc_get_portal_groups":[3,7,3,18],
-"jsonrpc.html#rpc_get_rpc_methods":[3,7,1,3],
-"jsonrpc.html#rpc_get_subsystem_config":[3,7,1,5],
-"jsonrpc.html#rpc_get_subsystems":[3,7,1,4],
+"jsonrpc.html#rpc_get_rpc_methods":[3,7,1,4],
+"jsonrpc.html#rpc_get_subsystem_config":[3,7,1,6],
+"jsonrpc.html#rpc_get_subsystems":[3,7,1,5],
 "jsonrpc.html#rpc_get_target_nodes":[3,7,3,12],
 "jsonrpc.html#rpc_get_vhost_controllers":[3,7,5,7],
 "jsonrpc.html#rpc_get_vhost_controllers_blk":[3,7,5,7,1],
@@ -83,6 +83,7 @@ var NAVTREEINDEX4 =
 "jsonrpc.html#rpc_snapshot_lvol_bdev":[3,7,6,5],
 "jsonrpc.html#rpc_start_subsystem_init":[3,7,1,2],
 "jsonrpc.html#rpc_target_node_add_lun":[3,7,3,22],
+"jsonrpc.html#rpc_wait_subsystem_init":[3,7,1,3],
 "jsonrpc_8h.html":[14,0,25],
 "jsonrpc_8h.html#a0eb3dec195e22ff481e317f41b1b0d95":[14,0,25,4],
 "jsonrpc_8h.html#a141092106ae7db318ad9c2916edbe00b":[14,0,25,12],
@@ -248,6 +249,5 @@ var NAVTREEINDEX4 =
 "nvme_8h.html#a3065f669d8b605efdcadffbf94a50538":[14,0,32,70],
 "nvme_8h.html#a42040dca95489218417539d2c08d815e":[14,0,32,77],
 "nvme_8h.html#a46348531c83fd61acad1a55236d7d576":[14,0,32,46],
-"nvme_8h.html#a4ab95bea86f498c08510f6f0bcd2eb09":[14,0,32,9],
-"nvme_8h.html#a4b63c225c3cce6da60fdbfb6f54b11e2":[14,0,32,56]
+"nvme_8h.html#a4ab95bea86f498c08510f6f0bcd2eb09":[14,0,32,9]
 };
