@@ -650,6 +650,8 @@ var searchData=
   ['spdk_5fthread_5fget_5fname',['spdk_thread_get_name',['../thread_8h.html#ae367048fa89366e845d72015064e6f76',1,'thread.h']]],
   ['spdk_5fthread_5flib_5ffini',['spdk_thread_lib_fini',['../thread_8h.html#afe409bf16664f461daa516b6a6d1682c',1,'thread.h']]],
   ['spdk_5fthread_5flib_5finit',['spdk_thread_lib_init',['../thread_8h.html#afba31c619e8c0825c5d542f27ae3c932',1,'thread.h']]],
+  ['spdk_5fthread_5fnext_5fpoller_5fexpiration',['spdk_thread_next_poller_expiration',['../thread_8h.html#a474fcfc5c14928eda42c684ba2b4cba9',1,'thread.h']]],
+  ['spdk_5fthread_5fpoll',['spdk_thread_poll',['../thread_8h.html#a77371bbbc89f82e48330ec856c712abf',1,'thread.h']]],
   ['spdk_5fthread_5fsend_5fmsg',['spdk_thread_send_msg',['../thread_8h.html#a6aa832fea18a9160429b5383f36d8539',1,'thread.h']]],
   ['spdk_5ftrace_5fadd_5fregister_5ffn',['spdk_trace_add_register_fn',['../trace_8h.html#aa87447ad261172809a5394ee37f601df',1,'trace.h']]],
   ['spdk_5ftrace_5fcleanup',['spdk_trace_cleanup',['../trace_8h.html#a7cdec16a6ee14c87b0bf5d0666d9a0cb',1,'trace.h']]],
