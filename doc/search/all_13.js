@@ -976,6 +976,7 @@ var searchData=
   ['spdk_5freduce_5fget_5fpm_5ffile_5fsize',['spdk_reduce_get_pm_file_size',['../reduce_8h.html#a38eeeec21569abb9e7534e7b850a6fb0',1,'reduce.h']]],
   ['spdk_5freduce_5fpm_5ffile',['spdk_reduce_pm_file',['../structspdk__reduce__pm__file.html',1,'']]],
   ['spdk_5freduce_5fvol_5fcb_5fargs',['spdk_reduce_vol_cb_args',['../structspdk__reduce__vol__cb__args.html',1,'']]],
+  ['spdk_5freduce_5fvol_5fget_5fuuid',['spdk_reduce_vol_get_uuid',['../reduce_8h.html#ace66fd4e3840d38127fcf7a21dc269de',1,'reduce.h']]],
   ['spdk_5freduce_5fvol_5finit',['spdk_reduce_vol_init',['../reduce_8h.html#ae3f4a142fbea40968bb1eb3488dddc9a',1,'reduce.h']]],
   ['spdk_5freduce_5fvol_5fparams',['spdk_reduce_vol_params',['../structspdk__reduce__vol__params.html',1,'']]],
   ['spdk_5freduce_5fvol_5funload',['spdk_reduce_vol_unload',['../reduce_8h.html#a593901ae3d44b3315fad40da95108bee',1,'reduce.h']]],

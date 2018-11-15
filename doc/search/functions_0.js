@@ -574,6 +574,7 @@ var searchData=
   ['spdk_5freactor_5fget_5ftsc_5fstats',['spdk_reactor_get_tsc_stats',['../event_8h.html#a685665f6dd2127b8eb71cbc2e90bd35e',1,'event.h']]],
   ['spdk_5freduce_5fget_5fbacking_5fdevice_5fsize',['spdk_reduce_get_backing_device_size',['../reduce_8h.html#a27cc9c49bb7124d23f1730adf5b19bd5',1,'reduce.h']]],
   ['spdk_5freduce_5fget_5fpm_5ffile_5fsize',['spdk_reduce_get_pm_file_size',['../reduce_8h.html#a38eeeec21569abb9e7534e7b850a6fb0',1,'reduce.h']]],
+  ['spdk_5freduce_5fvol_5fget_5fuuid',['spdk_reduce_vol_get_uuid',['../reduce_8h.html#ace66fd4e3840d38127fcf7a21dc269de',1,'reduce.h']]],
   ['spdk_5freduce_5fvol_5finit',['spdk_reduce_vol_init',['../reduce_8h.html#ae3f4a142fbea40968bb1eb3488dddc9a',1,'reduce.h']]],
   ['spdk_5freduce_5fvol_5funload',['spdk_reduce_vol_unload',['../reduce_8h.html#a593901ae3d44b3315fad40da95108bee',1,'reduce.h']]],
   ['spdk_5fring_5fcount',['spdk_ring_count',['../env_8h.html#a6320a791a777b2d518def6413e543ac8',1,'env.h']]],
