@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "a9a72296_31119878",
+        "filename": "_posts/2018-11-15-nvme_tcp.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 1011222
+      },
+      "writtenOn": "2018-11-15T17:47:42Z",
+      "side": 1,
+      "message": "I will replace this link with one pointing to the specific NVM Express blog entry, once it is posted.",
+      "revId": "7f04e47f0de3f94d718e5a95ae3b86cc88c4272a",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
