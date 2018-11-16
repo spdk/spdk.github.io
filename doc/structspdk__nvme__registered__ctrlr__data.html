@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="Content-Type" content="text/xhtml; charset=utf-8">
   <meta name="generator" content="Doxygen 1.8.13">
-  <title>SPDK: spdk_nvme_feat_lba_range_type Union Reference</title>
+  <title>SPDK: spdk_nvme_registered_ctrlr_data Struct Reference</title>
   <script type="text/javascript" src="jquery.js"></script>
   <script type="text/javascript" src="dynsections.js"></script>
   <link href="navtree.css" rel="stylesheet" type="text/css"/>
@@ -116,7 +116,7 @@ $(function() {
   </div>
 </div>
 <script type="text/javascript">
-$(document).ready(function(){initNavTree('unionspdk__nvme__feat__lba__range__type.html','');});
+$(document).ready(function(){initNavTree('structspdk__nvme__registered__ctrlr__data.html','');});
 </script>
 <div id="doc-content">
 <!-- window showing the filter options -->
@@ -137,33 +137,40 @@ $(document).ready(function(){initNavTree('unionspdk__nvme__feat__lba__range__typ
   <div class="summary">
 <a href="#pub-attribs">Data Fields</a>  </div>
   <div class="headertitle">
-<div class="title">spdk_nvme_feat_lba_range_type Union Reference</div>  </div>
+<div class="title">spdk_nvme_registered_ctrlr_data Struct Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-
-<p>Data used by Set Features/Get Features <a class="el" href="nvme__spec_8h.html#aeae5c5fb9df2c7a39215c71f9d9b4c25accfea094f94fa91895c2dabe20d5d696">SPDK_NVME_FEAT_LBA_RANGE_TYPE</a>.  
- <a href="unionspdk__nvme__feat__lba__range__type.html#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:a8b36726d65af55a7c237962ea9065911"><td class="memItemLeft" align="right" valign="top"><a id="a8b36726d65af55a7c237962ea9065911"></a>
-uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>raw</b></td></tr>
-<tr class="separator:a8b36726d65af55a7c237962ea9065911"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a24f92e11bdf07d6b8c45023a13467d38"><td class="memItemLeft" ><a id="a24f92e11bdf07d6b8c45023a13467d38"></a>
+<tr class="memitem:a2e894687fc82c9126c09b6e0140f9741"><td class="memItemLeft" align="right" valign="top"><a id="a2e894687fc82c9126c09b6e0140f9741"></a>
+uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__registered__ctrlr__data.html#a2e894687fc82c9126c09b6e0140f9741">cntlid</a></td></tr>
+<tr class="memdesc:a2e894687fc82c9126c09b6e0140f9741"><td class="mdescLeft">&#160;</td><td class="mdescRight">controller id <br /></td></tr>
+<tr class="separator:a2e894687fc82c9126c09b6e0140f9741"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab39650e931a8d1210d8005103afe2a11"><td class="memItemLeft" ><a id="ab39650e931a8d1210d8005103afe2a11"></a>
 struct {</td></tr>
-<tr class="memitem:a2dedfdd9f51f96cb0a814016e8dd6c06"><td class="memItemLeft" >
-&#160;&#160;&#160;uint32_t&#160;&#160;&#160;<a class="el" href="unionspdk__nvme__feat__lba__range__type.html#a9fcf5c790767d292adf15b5f05ab40cf">num</a>: 6</td></tr>
-<tr class="memdesc:a2dedfdd9f51f96cb0a814016e8dd6c06"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of LBA Ranges. <br /></td></tr>
-<tr class="separator:a2dedfdd9f51f96cb0a814016e8dd6c06"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a97e83c7e252add12026ae62488252a89"><td class="memItemLeft" >
-&#160;&#160;&#160;uint32_t&#160;&#160;&#160;<b>reserved</b>: 26</td></tr>
-<tr class="separator:a97e83c7e252add12026ae62488252a89"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a24f92e11bdf07d6b8c45023a13467d38"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><b>bits</b></td></tr>
-<tr class="separator:a24f92e11bdf07d6b8c45023a13467d38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acaa1099a3c42a008f76dc5101aa18a70"><td class="memItemLeft" >
+&#160;&#160;&#160;uint8_t&#160;&#160;&#160;<b>status</b>: 1</td></tr>
+<tr class="separator:acaa1099a3c42a008f76dc5101aa18a70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17fa21cc1c50630a76d980c17afe8e55"><td class="memItemLeft" >
+&#160;&#160;&#160;uint8_t&#160;&#160;&#160;<b>reserved1</b>: 7</td></tr>
+<tr class="separator:a17fa21cc1c50630a76d980c17afe8e55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab39650e931a8d1210d8005103afe2a11"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__registered__ctrlr__data.html#ab39650e931a8d1210d8005103afe2a11">rcsts</a></td></tr>
+<tr class="memdesc:ab39650e931a8d1210d8005103afe2a11"><td class="mdescLeft">&#160;</td><td class="mdescRight">reservation status <br /></td></tr>
+<tr class="separator:ab39650e931a8d1210d8005103afe2a11"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c1506fc679cefd655bde97e97a95e3c"><td class="memItemLeft" align="right" valign="top"><a id="a3c1506fc679cefd655bde97e97a95e3c"></a>
+uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>reserved2</b> [5]</td></tr>
+<tr class="separator:a3c1506fc679cefd655bde97e97a95e3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab682e5b79cec29a2afa63032b79da1ec"><td class="memItemLeft" align="right" valign="top"><a id="ab682e5b79cec29a2afa63032b79da1ec"></a>
+uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__registered__ctrlr__data.html#ab682e5b79cec29a2afa63032b79da1ec">hostid</a></td></tr>
+<tr class="memdesc:ab682e5b79cec29a2afa63032b79da1ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">64-bit host identifier <br /></td></tr>
+<tr class="separator:ab682e5b79cec29a2afa63032b79da1ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a587d165328e3824ca07bd0d37a407934"><td class="memItemLeft" align="right" valign="top"><a id="a587d165328e3824ca07bd0d37a407934"></a>
+uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__registered__ctrlr__data.html#a587d165328e3824ca07bd0d37a407934">rkey</a></td></tr>
+<tr class="memdesc:a587d165328e3824ca07bd0d37a407934"><td class="mdescLeft">&#160;</td><td class="mdescRight">reservation key <br /></td></tr>
+<tr class="separator:a587d165328e3824ca07bd0d37a407934"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Data used by Set Features/Get Features <a class="el" href="nvme__spec_8h.html#aeae5c5fb9df2c7a39215c71f9d9b4c25accfea094f94fa91895c2dabe20d5d696">SPDK_NVME_FEAT_LBA_RANGE_TYPE</a>. </p>
-</div><hr/>The documentation for this union was generated from the following file:<ul>
+<hr/>The documentation for this struct was generated from the following file:<ul>
 <li><a class="el" href="nvme__spec_8h.html">nvme_spec.h</a></li>
 </ul>
 </div><!-- contents -->

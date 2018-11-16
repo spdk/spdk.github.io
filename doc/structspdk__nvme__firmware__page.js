@@ -1,7 +1,7 @@
 var structspdk__nvme__firmware__page =
 [
     [ "active_slot", "structspdk__nvme__firmware__page.html#a4b0118df5ff338d05e9710374aae8c92", null ],
-    [ "afi", "structspdk__nvme__firmware__page.html#ae5c6677b3720d2f05a2e23c81c4d2014", null ],
+    [ "afi", "structspdk__nvme__firmware__page.html#a369f616b7fed5fdea9955289c98fa15b", null ],
     [ "next_reset_slot", "structspdk__nvme__firmware__page.html#acc627dc50a9f88fa3c4697ff8ac99c81", null ],
     [ "reserved", "structspdk__nvme__firmware__page.html#ab7335106b30a1f1e8040a540f66f1bdb", null ],
     [ "reserved2", "structspdk__nvme__firmware__page.html#ac92edf109ba5f2b970b06a31a0434f37", null ],

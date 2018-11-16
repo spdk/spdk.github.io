@@ -1,6 +1,6 @@
 var unionspdk__nvme__feat__power__management =
 [
-    [ "bits", "unionspdk__nvme__feat__power__management.html#ae219605c34a7506c8b276395bec60408", null ],
+    [ "bits", "unionspdk__nvme__feat__power__management.html#a776c728688b19eafeb2bff857e75b925", null ],
     [ "ps", "unionspdk__nvme__feat__power__management.html#af68e833134cda1b00b750992bdd91342", null ],
     [ "raw", "unionspdk__nvme__feat__power__management.html#a0614478c08480813d285d5819998e3ee", null ],
     [ "reserved", "unionspdk__nvme__feat__power__management.html#ad425c8a49e910e0413a6a45a67044fbe", null ],

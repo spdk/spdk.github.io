@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="Content-Type" content="text/xhtml; charset=utf-8">
   <meta name="generator" content="Doxygen 1.8.13">
-  <title>SPDK: spdk_nvme_reservation_ctrlr_data Struct Reference</title>
+  <title>SPDK: spdk_nvme_registered_ctrlr_extended_data Struct Reference</title>
   <script type="text/javascript" src="jquery.js"></script>
   <script type="text/javascript" src="dynsections.js"></script>
   <link href="navtree.css" rel="stylesheet" type="text/css"/>
@@ -116,7 +116,7 @@ $(function() {
   </div>
 </div>
 <script type="text/javascript">
-$(document).ready(function(){initNavTree('structspdk__nvme__reservation__ctrlr__data.html','');});
+$(document).ready(function(){initNavTree('structspdk__nvme__registered__ctrlr__extended__data.html','');});
 </script>
 <div id="doc-content">
 <!-- window showing the filter options -->
@@ -137,37 +137,41 @@ $(document).ready(function(){initNavTree('structspdk__nvme__reservation__ctrlr__
   <div class="summary">
 <a href="#pub-attribs">Data Fields</a>  </div>
   <div class="headertitle">
-<div class="title">spdk_nvme_reservation_ctrlr_data Struct Reference</div>  </div>
+<div class="title">spdk_nvme_registered_ctrlr_extended_data Struct Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:ae407751b87c2953227cf2107a6341a8f"><td class="memItemLeft" align="right" valign="top"><a id="ae407751b87c2953227cf2107a6341a8f"></a>
-uint16_t&#160;</td><td class="memItemRight" valign="bottom"><b>ctrlr_id</b></td></tr>
-<tr class="separator:ae407751b87c2953227cf2107a6341a8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a110f8cac53e2a428e24246cd6914eac8"><td class="memItemLeft" ><a id="a110f8cac53e2a428e24246cd6914eac8"></a>
+<tr class="memitem:a85af9ddf704150ac4bd4eb4ad2e4862a"><td class="memItemLeft" align="right" valign="top"><a id="a85af9ddf704150ac4bd4eb4ad2e4862a"></a>
+uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__registered__ctrlr__extended__data.html#a85af9ddf704150ac4bd4eb4ad2e4862a">cntlid</a></td></tr>
+<tr class="memdesc:a85af9ddf704150ac4bd4eb4ad2e4862a"><td class="mdescLeft">&#160;</td><td class="mdescRight">controller id <br /></td></tr>
+<tr class="separator:a85af9ddf704150ac4bd4eb4ad2e4862a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf78eb5bf433a2e6f2a64a27ed5e8a3d"><td class="memItemLeft" ><a id="abf78eb5bf433a2e6f2a64a27ed5e8a3d"></a>
 struct {</td></tr>
-<tr class="memitem:a4827e4504140a1c39cfe48d325a31c70"><td class="memItemLeft" >
+<tr class="memitem:a34bce20e474ca01638888997df3e865d"><td class="memItemLeft" >
 &#160;&#160;&#160;uint8_t&#160;&#160;&#160;<b>status</b>: 1</td></tr>
-<tr class="separator:a4827e4504140a1c39cfe48d325a31c70"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6264197c6b28b38a3edba9a3e859fa6a"><td class="memItemLeft" >
+<tr class="separator:a34bce20e474ca01638888997df3e865d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af94e511d48a8621ac81e60c01c31d92f"><td class="memItemLeft" >
 &#160;&#160;&#160;uint8_t&#160;&#160;&#160;<b>reserved1</b>: 7</td></tr>
-<tr class="separator:a6264197c6b28b38a3edba9a3e859fa6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a110f8cac53e2a428e24246cd6914eac8"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__reservation__ctrlr__data.html#a110f8cac53e2a428e24246cd6914eac8">rcsts</a></td></tr>
-<tr class="memdesc:a110f8cac53e2a428e24246cd6914eac8"><td class="mdescLeft">&#160;</td><td class="mdescRight">reservation status <br /></td></tr>
-<tr class="separator:a110f8cac53e2a428e24246cd6914eac8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a47fcdb10b948e3d47defd846629851c1"><td class="memItemLeft" align="right" valign="top"><a id="a47fcdb10b948e3d47defd846629851c1"></a>
+<tr class="separator:af94e511d48a8621ac81e60c01c31d92f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf78eb5bf433a2e6f2a64a27ed5e8a3d"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__registered__ctrlr__extended__data.html#abf78eb5bf433a2e6f2a64a27ed5e8a3d">rcsts</a></td></tr>
+<tr class="memdesc:abf78eb5bf433a2e6f2a64a27ed5e8a3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">reservation status <br /></td></tr>
+<tr class="separator:abf78eb5bf433a2e6f2a64a27ed5e8a3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf60f56db698dd1eecc20916cb265193"><td class="memItemLeft" align="right" valign="top"><a id="abf60f56db698dd1eecc20916cb265193"></a>
 uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>reserved2</b> [5]</td></tr>
-<tr class="separator:a47fcdb10b948e3d47defd846629851c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adedfdf7ec8e9ab9125606c36d789605d"><td class="memItemLeft" align="right" valign="top"><a id="adedfdf7ec8e9ab9125606c36d789605d"></a>
-uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__reservation__ctrlr__data.html#adedfdf7ec8e9ab9125606c36d789605d">host_id</a></td></tr>
-<tr class="memdesc:adedfdf7ec8e9ab9125606c36d789605d"><td class="mdescLeft">&#160;</td><td class="mdescRight">host identifier <br /></td></tr>
-<tr class="separator:adedfdf7ec8e9ab9125606c36d789605d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa79ac0f81d6789e4b573620fcc9ce358"><td class="memItemLeft" align="right" valign="top"><a id="aa79ac0f81d6789e4b573620fcc9ce358"></a>
-uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__reservation__ctrlr__data.html#aa79ac0f81d6789e4b573620fcc9ce358">key</a></td></tr>
-<tr class="memdesc:aa79ac0f81d6789e4b573620fcc9ce358"><td class="mdescLeft">&#160;</td><td class="mdescRight">reservation key <br /></td></tr>
-<tr class="separator:aa79ac0f81d6789e4b573620fcc9ce358"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:abf60f56db698dd1eecc20916cb265193"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2ab24a5cf334dedeccd38ebc07e6b98"><td class="memItemLeft" align="right" valign="top"><a id="af2ab24a5cf334dedeccd38ebc07e6b98"></a>
+uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__registered__ctrlr__extended__data.html#af2ab24a5cf334dedeccd38ebc07e6b98">rkey</a></td></tr>
+<tr class="memdesc:af2ab24a5cf334dedeccd38ebc07e6b98"><td class="mdescLeft">&#160;</td><td class="mdescRight">reservation key <br /></td></tr>
+<tr class="separator:af2ab24a5cf334dedeccd38ebc07e6b98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85591b33ebec82cbd5b03af6e1c8f6f8"><td class="memItemLeft" align="right" valign="top"><a id="a85591b33ebec82cbd5b03af6e1c8f6f8"></a>
+uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__registered__ctrlr__extended__data.html#a85591b33ebec82cbd5b03af6e1c8f6f8">hostid</a> [16]</td></tr>
+<tr class="memdesc:a85591b33ebec82cbd5b03af6e1c8f6f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">128-bit host identifier <br /></td></tr>
+<tr class="separator:a85591b33ebec82cbd5b03af6e1c8f6f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28ae4219e793b67c97ffdb853edfd938"><td class="memItemLeft" align="right" valign="top"><a id="a28ae4219e793b67c97ffdb853edfd938"></a>
+uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>reserved3</b> [32]</td></tr>
+<tr class="separator:a28ae4219e793b67c97ffdb853edfd938"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li><a class="el" href="nvme__spec_8h.html">nvme_spec.h</a></li>

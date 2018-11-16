@@ -189,6 +189,9 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>__spdk_histogr
 <tr class="memitem:a0998311b9fd393514ca70d053f5d6c26"><td class="memItemLeft" align="right" valign="top"><a id="a0998311b9fd393514ca70d053f5d6c26"></a>
 static uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>__spdk_histogram_get_count</b> (const struct <a class="el" href="structspdk__histogram__data.html">spdk_histogram_data</a> *h, uint32_t range, uint32_t index)</td></tr>
 <tr class="separator:a0998311b9fd393514ca70d053f5d6c26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13f497643e9471361e29f24fbf004b09"><td class="memItemLeft" align="right" valign="top"><a id="a13f497643e9471361e29f24fbf004b09"></a>
+static uint64_t *&#160;</td><td class="memItemRight" valign="bottom"><b>__spdk_histogram_get_bucket</b> (const struct <a class="el" href="structspdk__histogram__data.html">spdk_histogram_data</a> *h, uint32_t range, uint32_t index)</td></tr>
+<tr class="separator:a13f497643e9471361e29f24fbf004b09"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a17e367b9265c96d1da940ca3bbc07bba"><td class="memItemLeft" align="right" valign="top"><a id="a17e367b9265c96d1da940ca3bbc07bba"></a>
 static void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_histogram_data_reset</b> (struct <a class="el" href="structspdk__histogram__data.html">spdk_histogram_data</a> *histogram)</td></tr>
 <tr class="separator:a17e367b9265c96d1da940ca3bbc07bba"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -207,6 +210,9 @@ static uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>__spdk_his
 <tr class="memitem:acf41b2ac89977c8045fa780c16a9f009"><td class="memItemLeft" align="right" valign="top"><a id="acf41b2ac89977c8045fa780c16a9f009"></a>
 static void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_histogram_data_iterate</b> (const struct <a class="el" href="structspdk__histogram__data.html">spdk_histogram_data</a> *histogram, spdk_histogram_data_fn fn, void *ctx)</td></tr>
 <tr class="separator:acf41b2ac89977c8045fa780c16a9f009"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78927969cf0d1905ed790e7caa8e8303"><td class="memItemLeft" align="right" valign="top"><a id="a78927969cf0d1905ed790e7caa8e8303"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_histogram_data_merge</b> (const struct <a class="el" href="structspdk__histogram__data.html">spdk_histogram_data</a> *dst, const struct <a class="el" href="structspdk__histogram__data.html">spdk_histogram_data</a> *src)</td></tr>
+<tr class="separator:a78927969cf0d1905ed790e7caa8e8303"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a920c98c8fc17b085509662cf9c81e357"><td class="memItemLeft" align="right" valign="top"><a id="a920c98c8fc17b085509662cf9c81e357"></a>
 static struct <a class="el" href="structspdk__histogram__data.html">spdk_histogram_data</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_histogram_data_alloc_sized</b> (uint32_t bucket_shift)</td></tr>
 <tr class="separator:a920c98c8fc17b085509662cf9c81e357"><td class="memSeparator" colspan="2">&#160;</td></tr>
