@@ -58,11 +58,11 @@ var NAVTREEINDEX =
 "structiscsi__bhs__task__req.html#ae2931595e50aa6e8423102e2bdef0a33",
 "structspdk__env__opts.html#a0d600a89bcfc18ad9af0919c9d1fe967",
 "structspdk__jsonrpc__client__response.html#aecf3a053745662789deb63871cec1f2a",
-"structspdk__nvme__error__information__entry.html#a2ae24a845484f3c3dc6f6774bf5720ae",
-"structspdk__nvme__registers.html#aa9b32afa2d41aacdf2e71a92fdd8e530",
-"structspdk__nvmf__fc__ls__rjt.html",
-"structspdk__scsi__port__desc.html#a3d858684ae76bd76a5cdddd7ef34c9a0",
-"unionspdk__nvme__cmbsz__register.html#aa017da4c8e3418285501ca07822bdbf2"
+"structspdk__nvme__error__information__entry.html#a26db88731eb24af0fcdda7711ae00e55",
+"structspdk__nvme__registers.html#aa8a82f6563f310e7fda91e63adf4fe81",
+"structspdk__nvmf__fc__ls__disconnect__rqst.html#ae07a3d38ccfd66f6ce83d723820757f8",
+"structspdk__scsi__port__desc.html#a3af2d30cad186c3639f38cd352cfe8e9",
+"unionspdk__nvme__cmbsz__register.html#a99ceb3633e4a68cd12c24f892f71ace9"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

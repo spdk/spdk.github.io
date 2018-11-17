@@ -1,5 +1,6 @@
 var NAVTREEINDEX17 =
 {
+"structspdk__scsi__port__desc.html#a3af2d30cad186c3639f38cd352cfe8e9":[13,0,193,7],
 "structspdk__scsi__port__desc.html#a3d858684ae76bd76a5cdddd7ef34c9a0":[13,0,193,2],
 "structspdk__scsi__port__desc.html#a55834f658b996093a6c0f16914056757":[13,0,193,6],
 "structspdk__scsi__port__desc.html#aa70015f373882ede492e8e71eec43e6d":[13,0,193,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX17 =
 "unionspdk__nvme__cmbsz__register.html#a3481600cf80fa69860ba5dbb445afc5f":[13,0,73,6],
 "unionspdk__nvme__cmbsz__register.html#a5259febaf27ced21d1358b97bd1cb831":[13,0,73,8],
 "unionspdk__nvme__cmbsz__register.html#a605db26c2b5a41b7b0cc40750e43527d":[13,0,73,2],
-"unionspdk__nvme__cmbsz__register.html#a79fbfeb57825c60398ad99aff7dea6c4":[13,0,73,3],
-"unionspdk__nvme__cmbsz__register.html#a99ceb3633e4a68cd12c24f892f71ace9":[13,0,73,0]
+"unionspdk__nvme__cmbsz__register.html#a79fbfeb57825c60398ad99aff7dea6c4":[13,0,73,3]
 };

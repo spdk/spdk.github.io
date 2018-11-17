@@ -9,6 +9,7 @@ var searchData=
   ['active_5fslot',['active_slot',['../structspdk__nvme__firmware__page.html#a4b0118df5ff338d05e9710374aae8c92',1,'spdk_nvme_firmware_page']]],
   ['acwu',['acwu',['../structspdk__nvme__ctrlr__data.html#aa4a9189b9c5616ab345b02540277782c',1,'spdk_nvme_ctrlr_data']]],
   ['admin_5fcmds_5fsupported',['admin_cmds_supported',['../structspdk__nvme__cmds__and__effect__log__page.html#a8e4e4d1032629199462b5affa2d7c440',1,'spdk_nvme_cmds_and_effect_log_page']]],
+  ['admin_5ftimeout_5fms',['admin_timeout_ms',['../structspdk__nvme__ctrlr__opts.html#afba53e83e949e751ab895765f32a9486',1,'spdk_nvme_ctrlr_opts']]],
   ['adrfam',['adrfam',['../structspdk__nvme__transport__id.html#aad0be45ed276ef7c88b93a22b23e72ae',1,'spdk_nvme_transport_id::adrfam()'],['../structspdk__nvmf__discovery__log__page__entry.html#adf9f35d61b31aa0199ae32ef638a3107',1,'spdk_nvmf_discovery_log_page_entry::adrfam()']]],
   ['aerl',['aerl',['../structspdk__nvme__ctrlr__data.html#a3d47479941d4eb691e54d4ac207cb048',1,'spdk_nvme_ctrlr_data']]],
   ['af',['af',['../structspdk__nvme__dsm__range.html#a1ae2cac2417c24137dcb3e160eb3836c',1,'spdk_nvme_dsm_range']]],

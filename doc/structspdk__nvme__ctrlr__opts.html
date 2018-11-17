@@ -190,11 +190,31 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 <tr class="memitem:a62b55ccfff58d8f91952d4c501a4c3ab"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="nvme__spec_8h.html#afafa64ef6a351ad580253d99ea1b3cd0">spdk_nvme_cc_css</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__ctrlr__opts.html#a62b55ccfff58d8f91952d4c501a4c3ab">command_set</a></td></tr>
 <tr class="memdesc:a62b55ccfff58d8f91952d4c501a4c3ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">The I/O command set to select.  <a href="#a62b55ccfff58d8f91952d4c501a4c3ab">More...</a><br /></td></tr>
 <tr class="separator:a62b55ccfff58d8f91952d4c501a4c3ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afba53e83e949e751ab895765f32a9486"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__ctrlr__opts.html#afba53e83e949e751ab895765f32a9486">admin_timeout_ms</a></td></tr>
+<tr class="memdesc:afba53e83e949e751ab895765f32a9486"><td class="mdescLeft">&#160;</td><td class="mdescRight">Admin commands timeout in milliseconds (0 = no timeout).  <a href="#afba53e83e949e751ab895765f32a9486">More...</a><br /></td></tr>
+<tr class="separator:afba53e83e949e751ab895765f32a9486"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>NVMe controller initialization options. </p>
 <p>A pointer to this structure will be provided for each probe callback from <a class="el" href="nvme_8h.html#a225bbc386ec518ae21bd5536f21db45d" title="Enumerate the bus indicated by the transport ID and attach the userspace NVMe driver to each device f...">spdk_nvme_probe()</a> to allow the user to request non-default options, and the actual options enabled on the controller will be provided during the attach callback. </p>
 </div><h2 class="groupheader">Field Documentation</h2>
+<a id="afba53e83e949e751ab895765f32a9486"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afba53e83e949e751ab895765f32a9486">&#9670;&nbsp;</a></span>admin_timeout_ms</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t spdk_nvme_ctrlr_opts::admin_timeout_ms</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Admin commands timeout in milliseconds (0 = no timeout). </p>
+<p>The timeout value is used for admin commands submitted internally by the nvme driver during initialization, before the user is able to call <a class="el" href="nvme_8h.html#aecec86e033e0d13e6fc67ead61a7028d" title="Register for timeout callback on a controller. ">spdk_nvme_ctrlr_register_timeout_callback()</a>. By default, this is set to 120 seconds, users can change it in the probing callback. </p>
+
+</div>
+</div>
 <a id="a62b55ccfff58d8f91952d4c501a4c3ab"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a62b55ccfff58d8f91952d4c501a4c3ab">&#9670;&nbsp;</a></span>command_set</h2>
 
