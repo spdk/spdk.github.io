@@ -1,16 +1,22 @@
 ---
-layout: news-cn
-title:  "中文动态资讯"
+layout: default
+title:  "最新消息"
 lang: cn
 ---
 
-<br>
-<br>
+# 新闻条目
 
-SPDK是由Intel发起、用于加速使用NVMe SSD作为后端存储的应用软件加速库。
+## 2017年7月12日 DigiTimes
 
-自2015年开源以来，SPDK逐渐步入了人们的视野。随着软件定义存储技术的不断创新与市场发展，SPDK技术在越来越多的使用场景中发挥了作用，也被越来越多的人们所熟知。
+### [英特尔推出全新至强Xeon可扩展处理器](http://www.digitimes.com/newregister/join.asp?view=Article&DATEPUBLISH=2017/07/12&PAGES=PR&SEQ=200)
+> 英特尔推出了全新的Intel Xeon可扩展处理器，提供了……与Intel Optane SSD和存储性能开发包(SPDK)，…
 
-为了推动SPDK技术在中国的推广、方便大家对SPDK相关信息的获取，也为了SPDK社区在更大范围内凝聚中国地区广大开发者，SPDK中文网站设立了中文动态资讯页，我们相信，这将是中国地区SPDK技术交流与发展的重要窗口。
+## 2017年7月12日 ETCIO.com
 
-请点击左侧菜单栏，获取更多相关信息。
+### [凭借全新的至强Xeon可扩展处理器，英特尔将目光投向印度的数据中心市场](http://cio.economictimes.indiatimes.com/news/data-center/with-new-xeon-scalable-processors-intel-eyes-data-center-market-in-india/59561320)
+> 班加罗尔:英特尔印度今天发布了全新的Intel Xeon可扩展处理器…与Intel Optane SSD和存储性能开发包(SPDK)，…
+
+##  2017年7月11日 Forbes
+
+### [英特尔新推出的至强Xeon可扩展处理器是其迄今为止最广泛用于数据中心和运营商的设备](https://www.forbes.com/sites/patrickmoorhead/2017/07/11/intels-new-xeon-scalable-processors-are-its-broadest-datacenter-and-carrier-play-yet/#6fb1006728d1)
+>另一个例子是存储，在Xeons的Optane SSD和SPDK中，英特尔说他们可以实现……
