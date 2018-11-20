@@ -24,7 +24,8 @@ var nvme_8h =
     [ "spdk_nvme_transport_type", "nvme_8h.html#ae87a03c28984a2c0499d50ef5e9d0ece", [
       [ "SPDK_NVME_TRANSPORT_PCIE", "nvme_8h.html#ae87a03c28984a2c0499d50ef5e9d0ecea162afc05d1ae756b8a7969be140035ea", null ],
       [ "SPDK_NVME_TRANSPORT_RDMA", "nvme_8h.html#ae87a03c28984a2c0499d50ef5e9d0ecea140f1cb4edf258bddffeb1c7277d93d8", null ],
-      [ "SPDK_NVME_TRANSPORT_FC", "nvme_8h.html#ae87a03c28984a2c0499d50ef5e9d0eceabbda195aa6d0a4ad7b437ed5e9a0d01f", null ]
+      [ "SPDK_NVME_TRANSPORT_FC", "nvme_8h.html#ae87a03c28984a2c0499d50ef5e9d0eceabbda195aa6d0a4ad7b437ed5e9a0d01f", null ],
+      [ "SPDK_NVME_TRANSPORT_TCP", "nvme_8h.html#ae87a03c28984a2c0499d50ef5e9d0ecea1b74e6a5b484b71142aa6ac9821a6de3", null ]
     ] ],
     [ "spdk_nvme_connect", "nvme_8h.html#ae26375a74c2c935ec32f0c41a7ed93df", null ],
     [ "spdk_nvme_ctrlr_alloc_cmb_io_buffer", "nvme_8h.html#ad63b25defbb0f1ccd52538e3b9a748df", null ],

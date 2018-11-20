@@ -211,11 +211,11 @@ Functions</h2></td></tr>
 <tr class="memitem:a9ae1b767ebb4ad59a9c4739beea1c6f4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jsonrpc_8h.html#a9ae1b767ebb4ad59a9c4739beea1c6f4">spdk_jsonrpc_end_request</a> (struct spdk_jsonrpc_client_request *request, struct spdk_json_write_ctx *w)</td></tr>
 <tr class="memdesc:a9ae1b767ebb4ad59a9c4739beea1c6f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Complete a JSON-RPC request.  <a href="#a9ae1b767ebb4ad59a9c4739beea1c6f4">More...</a><br /></td></tr>
 <tr class="separator:a9ae1b767ebb4ad59a9c4739beea1c6f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a141092106ae7db318ad9c2916edbe00b"><td class="memItemLeft" align="right" valign="top">struct spdk_jsonrpc_client *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jsonrpc_8h.html#a141092106ae7db318ad9c2916edbe00b">spdk_jsonrpc_client_connect</a> (const char *rpc_sock_addr, int addr_family)</td></tr>
-<tr class="memdesc:a141092106ae7db318ad9c2916edbe00b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Connect to the specified RPC server.  <a href="#a141092106ae7db318ad9c2916edbe00b">More...</a><br /></td></tr>
-<tr class="separator:a141092106ae7db318ad9c2916edbe00b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2380523abcb26b83ee4b116fbd69359d"><td class="memItemLeft" align="right" valign="top">struct spdk_jsonrpc_client *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jsonrpc_8h.html#a2380523abcb26b83ee4b116fbd69359d">spdk_jsonrpc_client_connect</a> (const char *addr, int addr_family)</td></tr>
+<tr class="memdesc:a2380523abcb26b83ee4b116fbd69359d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Connect to the specified RPC server.  <a href="#a2380523abcb26b83ee4b116fbd69359d">More...</a><br /></td></tr>
+<tr class="separator:a2380523abcb26b83ee4b116fbd69359d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad5f5cca3e578e6eb3c0069e9662a1b79"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jsonrpc_8h.html#ad5f5cca3e578e6eb3c0069e9662a1b79">spdk_jsonrpc_client_close</a> (struct spdk_jsonrpc_client *client)</td></tr>
-<tr class="memdesc:ad5f5cca3e578e6eb3c0069e9662a1b79"><td class="mdescLeft">&#160;</td><td class="mdescRight">Close the JSON-RPC client.  <a href="#ad5f5cca3e578e6eb3c0069e9662a1b79">More...</a><br /></td></tr>
+<tr class="memdesc:ad5f5cca3e578e6eb3c0069e9662a1b79"><td class="mdescLeft">&#160;</td><td class="mdescRight">Close JSON-RPC connection and free <code>client</code> object.  <a href="#ad5f5cca3e578e6eb3c0069e9662a1b79">More...</a><br /></td></tr>
 <tr class="separator:ad5f5cca3e578e6eb3c0069e9662a1b79"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a36e8741a465238436ca46464dfbd277b"><td class="memItemLeft" align="right" valign="top">struct spdk_jsonrpc_client_request *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jsonrpc_8h.html#a36e8741a465238436ca46464dfbd277b">spdk_jsonrpc_client_create_request</a> (void)</td></tr>
 <tr class="memdesc:a36e8741a465238436ca46464dfbd277b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create one JSON-RPC request.  <a href="#a36e8741a465238436ca46464dfbd277b">More...</a><br /></td></tr>
@@ -379,7 +379,8 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Close the JSON-RPC client. </p>
+<p>Close JSON-RPC connection and free <code>client</code> object. </p>
+<p>This function is not thread safe and should only be called from one thread at a time while no other threads are actively <code>client</code> object.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">client</td><td>JSON-RPC client. </td></tr>
@@ -389,8 +390,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a141092106ae7db318ad9c2916edbe00b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a141092106ae7db318ad9c2916edbe00b">&#9670;&nbsp;</a></span>spdk_jsonrpc_client_connect()</h2>
+<a id="a2380523abcb26b83ee4b116fbd69359d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2380523abcb26b83ee4b116fbd69359d">&#9670;&nbsp;</a></span>spdk_jsonrpc_client_connect()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -399,7 +400,7 @@ Functions</h2></td></tr>
           <td class="memname">struct spdk_jsonrpc_client* spdk_jsonrpc_client_connect </td>
           <td>(</td>
           <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>rpc_sock_addr</em>, </td>
+          <td class="paramname"><em>addr</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -418,12 +419,12 @@ Functions</h2></td></tr>
 <p>Connect to the specified RPC server. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">rpc_sock_addr</td><td>RPC socket address. </td></tr>
+    <tr><td class="paramname">addr</td><td>RPC socket address. </td></tr>
     <tr><td class="paramname">addr_family</td><td>Protocol families of address.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>JSON-RPC client on success, NULL on failure. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>JSON-RPC client on success, NULL on failure and errno set to indicate the cause of the error. </dd></dl>
 
 </div>
 </div>
@@ -519,6 +520,7 @@ Functions</h2></td></tr>
 
 <p>Return JSON RPC response object representing next available response from client connection. </p>
 <p>Returned pointer must be freed using <code>spdk_jsonrpc_client_free_response</code> </p>
+<p>This function is not thread safe and should only be called from one thread at a time while no other threads are actively <code>client</code> object.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">client</td><td></td></tr>
@@ -546,6 +548,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Receive the JSON-RPC response in JSON-RPC client. </p>
+<p>This function is not thread safe and should only be called from one thread at a time while no other threads are actively <code>client</code> object.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">client</td><td>JSON-RPC client.</td></tr>
@@ -584,6 +587,7 @@ Functions</h2></td></tr>
 
 <p>Send the JSON-RPC request in JSON-RPC client. </p>
 <p>Library takes ownership of the request object and will free it when done.</p>
+<p>This function is not thread safe and should only be called from one thread at a time while no other threads are actively <code>client</code> object.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">client</td><td>JSON-RPC client. </td></tr>
@@ -591,7 +595,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>0 on success or negative error code. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success or negative error code. -ENOSPC - no space left to queue another request. Try again later. </dd></dl>
 
 </div>
 </div>

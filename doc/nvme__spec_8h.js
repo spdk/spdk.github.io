@@ -398,7 +398,8 @@ var nvme__spec_8h =
     ] ],
     [ "spdk_nvme_sgl_descriptor_subtype", "nvme__spec_8h.html#ab93615f8760918ef6dcc1af325eac736", [
       [ "SPDK_NVME_SGL_SUBTYPE_ADDRESS", "nvme__spec_8h.html#ab93615f8760918ef6dcc1af325eac736abf65603af392d1919a9e6d3019c00dc0", null ],
-      [ "SPDK_NVME_SGL_SUBTYPE_OFFSET", "nvme__spec_8h.html#ab93615f8760918ef6dcc1af325eac736ab05cb6b89fb669d84a452587f4527e91", null ]
+      [ "SPDK_NVME_SGL_SUBTYPE_OFFSET", "nvme__spec_8h.html#ab93615f8760918ef6dcc1af325eac736ab05cb6b89fb669d84a452587f4527e91", null ],
+      [ "SPDK_NVME_SGL_SUBTYPE_TRANSPORT", "nvme__spec_8h.html#ab93615f8760918ef6dcc1af325eac736aae9f632bf0fc2d1c00684971e668f7e2", null ]
     ] ],
     [ "spdk_nvme_sgl_descriptor_type", "nvme__spec_8h.html#a6aa934b2f75a2d0fc8a22f14627f5000", [
       [ "SPDK_NVME_SGL_TYPE_DATA_BLOCK", "nvme__spec_8h.html#a6aa934b2f75a2d0fc8a22f14627f5000a727bdfdc97bea6a6bbcb624a769826a9", null ],

@@ -300,7 +300,7 @@ var searchData=
   ['spdk_5fjsonrpc_5fbegin_5frequest',['spdk_jsonrpc_begin_request',['../jsonrpc_8h.html#a9185111b00d98e3e12adda0dce85a0e0',1,'jsonrpc.h']]],
   ['spdk_5fjsonrpc_5fbegin_5fresult',['spdk_jsonrpc_begin_result',['../jsonrpc_8h.html#a22757fb7d0f34984e29b3fe311dfed01',1,'jsonrpc.h']]],
   ['spdk_5fjsonrpc_5fclient_5fclose',['spdk_jsonrpc_client_close',['../jsonrpc_8h.html#ad5f5cca3e578e6eb3c0069e9662a1b79',1,'jsonrpc.h']]],
-  ['spdk_5fjsonrpc_5fclient_5fconnect',['spdk_jsonrpc_client_connect',['../jsonrpc_8h.html#a141092106ae7db318ad9c2916edbe00b',1,'jsonrpc.h']]],
+  ['spdk_5fjsonrpc_5fclient_5fconnect',['spdk_jsonrpc_client_connect',['../jsonrpc_8h.html#a2380523abcb26b83ee4b116fbd69359d',1,'jsonrpc.h']]],
   ['spdk_5fjsonrpc_5fclient_5fcreate_5frequest',['spdk_jsonrpc_client_create_request',['../jsonrpc_8h.html#a36e8741a465238436ca46464dfbd277b',1,'jsonrpc.h']]],
   ['spdk_5fjsonrpc_5fclient_5ffree_5frequest',['spdk_jsonrpc_client_free_request',['../jsonrpc_8h.html#a42438592f780e35892904af6be663617',1,'jsonrpc.h']]],
   ['spdk_5fjsonrpc_5fclient_5ffree_5fresponse',['spdk_jsonrpc_client_free_response',['../jsonrpc_8h.html#acdbb193a4b8ca1c57c2b43223165dfa6',1,'jsonrpc.h']]],
