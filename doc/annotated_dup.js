@@ -196,7 +196,6 @@ var annotated_dup =
     [ "spdk_pci_id", "structspdk__pci__id.html", "structspdk__pci__id" ],
     [ "spdk_reactor_tsc_stats", "structspdk__reactor__tsc__stats.html", "structspdk__reactor__tsc__stats" ],
     [ "spdk_reduce_backing_dev", "structspdk__reduce__backing__dev.html", "structspdk__reduce__backing__dev" ],
-    [ "spdk_reduce_pm_file", "structspdk__reduce__pm__file.html", "structspdk__reduce__pm__file" ],
     [ "spdk_reduce_vol_cb_args", "structspdk__reduce__vol__cb__args.html", "structspdk__reduce__vol__cb__args" ],
     [ "spdk_reduce_vol_params", "structspdk__reduce__vol__params.html", "structspdk__reduce__vol__params" ],
     [ "spdk_scsi_cdb_inquiry", "structspdk__scsi__cdb__inquiry.html", "structspdk__scsi__cdb__inquiry" ],

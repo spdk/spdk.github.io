@@ -149,6 +149,8 @@ v19.01: (Upcoming Release)</h1>
 <p>Add a new TCP/IP transport(located in lib/nvme/nvme_tcp.c) in nvme driver. With this new transport, it can be used to connect the NVMe-oF target with the same TCP/IP support.</p>
 <h2>nvmf</h2>
 <p>Add a new TCP/IP transport (located in lib/nvmf/tcp.c). With this tranport, the SPDK NVMe-oF target can have a new transport, and can serve the NVMe-oF protocol via TCP/IP from the host.</p>
+<h2>bdev</h2>
+<p>On shutdown, bdev unregister now proceeds in top-down fashion, with claimed bdevs skipped (these will be unregistered later, when virtual bdev built on top of the respective base bdev unclaims it). This allows virtual bdevs to be shut down cleanly as opposed to the previous behavior that didn't differentiate between hotremove and planned shutdown.</p>
 <h1><a class="anchor" id="changelog-v18-10"></a>
 v18.10:</h1>
 <h2>nvme</h2>

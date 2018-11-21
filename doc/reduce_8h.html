@@ -136,7 +136,6 @@ $(document).ready(function(){initNavTree('reduce_8h.html','');});
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Data Structures</a> &#124;
-<a href="#define-members">Macros</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
@@ -152,19 +151,10 @@ Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__reduce__vol__params.html">spdk_reduce_vol_params</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Describes the parameters of an spdk_reduce_vol.  <a href="structspdk__reduce__vol__params.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__reduce__pm__file.html">spdk_reduce_pm_file</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Describes a persistent memory file used to hold metadata associated with a compressed volume.  <a href="structspdk__reduce__pm__file.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__reduce__vol__cb__args.html">spdk_reduce_vol_cb_args</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__reduce__backing__dev.html">spdk_reduce_backing_dev</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
-Macros</h2></td></tr>
-<tr class="memitem:a2ef4b63c094f52ad1e9edbeabb5f1ca7"><td class="memItemLeft" align="right" valign="top"><a id="a2ef4b63c094f52ad1e9edbeabb5f1ca7"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>REDUCE_PATH_MAX</b>&#160;&#160;&#160;4096</td></tr>
-<tr class="separator:a2ef4b63c094f52ad1e9edbeabb5f1ca7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
@@ -189,9 +179,12 @@ Functions</h2></td></tr>
 <tr class="memitem:ace66fd4e3840d38127fcf7a21dc269de"><td class="memItemLeft" align="right" valign="top">const struct <a class="el" href="structspdk__uuid.html">spdk_uuid</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="reduce_8h.html#ace66fd4e3840d38127fcf7a21dc269de">spdk_reduce_vol_get_uuid</a> (struct spdk_reduce_vol *vol)</td></tr>
 <tr class="memdesc:ace66fd4e3840d38127fcf7a21dc269de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the UUID for a libreduce compressed volume.  <a href="#ace66fd4e3840d38127fcf7a21dc269de">More...</a><br /></td></tr>
 <tr class="separator:ace66fd4e3840d38127fcf7a21dc269de"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae3f4a142fbea40968bb1eb3488dddc9a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="reduce_8h.html#ae3f4a142fbea40968bb1eb3488dddc9a">spdk_reduce_vol_init</a> (struct <a class="el" href="structspdk__reduce__vol__params.html">spdk_reduce_vol_params</a> *params, struct <a class="el" href="structspdk__reduce__backing__dev.html">spdk_reduce_backing_dev</a> *backing_dev, struct <a class="el" href="structspdk__reduce__pm__file.html">spdk_reduce_pm_file</a> *pm_file, spdk_reduce_vol_op_with_handle_complete cb_fn, void *cb_arg)</td></tr>
-<tr class="memdesc:ae3f4a142fbea40968bb1eb3488dddc9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize a new libreduce compressed volume.  <a href="#ae3f4a142fbea40968bb1eb3488dddc9a">More...</a><br /></td></tr>
-<tr class="separator:ae3f4a142fbea40968bb1eb3488dddc9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62753f16686f807748719567d57f15b8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="reduce_8h.html#a62753f16686f807748719567d57f15b8">spdk_reduce_vol_init</a> (struct <a class="el" href="structspdk__reduce__vol__params.html">spdk_reduce_vol_params</a> *params, struct <a class="el" href="structspdk__reduce__backing__dev.html">spdk_reduce_backing_dev</a> *backing_dev, const char *pm_file_dir, spdk_reduce_vol_op_with_handle_complete cb_fn, void *cb_arg)</td></tr>
+<tr class="memdesc:a62753f16686f807748719567d57f15b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize a new libreduce compressed volume.  <a href="#a62753f16686f807748719567d57f15b8">More...</a><br /></td></tr>
+<tr class="separator:a62753f16686f807748719567d57f15b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a910dd92b2a78d08fdb1cd6fa9e4c7a9e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="reduce_8h.html#a910dd92b2a78d08fdb1cd6fa9e4c7a9e">spdk_reduce_vol_load</a> (struct <a class="el" href="structspdk__reduce__backing__dev.html">spdk_reduce_backing_dev</a> *backing_dev, spdk_reduce_vol_op_with_handle_complete cb_fn, void *cb_arg)</td></tr>
+<tr class="memdesc:a910dd92b2a78d08fdb1cd6fa9e4c7a9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load an existing libreduce compressed volume.  <a href="#a910dd92b2a78d08fdb1cd6fa9e4c7a9e">More...</a><br /></td></tr>
+<tr class="separator:a910dd92b2a78d08fdb1cd6fa9e4c7a9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a593901ae3d44b3315fad40da95108bee"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="reduce_8h.html#a593901ae3d44b3315fad40da95108bee">spdk_reduce_vol_unload</a> (struct spdk_reduce_vol *vol, spdk_reduce_vol_op_complete cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:a593901ae3d44b3315fad40da95108bee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unload a previously initialized or loaded libreduce compressed volume.  <a href="#a593901ae3d44b3315fad40da95108bee">More...</a><br /></td></tr>
 <tr class="separator:a593901ae3d44b3315fad40da95108bee"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -280,8 +273,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ae3f4a142fbea40968bb1eb3488dddc9a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae3f4a142fbea40968bb1eb3488dddc9a">&#9670;&nbsp;</a></span>spdk_reduce_vol_init()</h2>
+<a id="a62753f16686f807748719567d57f15b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a62753f16686f807748719567d57f15b8">&#9670;&nbsp;</a></span>spdk_reduce_vol_init()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -301,8 +294,8 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">struct <a class="el" href="structspdk__reduce__pm__file.html">spdk_reduce_pm_file</a> *&#160;</td>
-          <td class="paramname"><em>pm_file</em>, </td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pm_file_dir</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -329,8 +322,52 @@ Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">params</td><td>Parameters for the new volume. </td></tr>
     <tr><td class="paramname">backing_dev</td><td>Structure describing the backing device to use for the new volume. </td></tr>
-    <tr><td class="paramname">pm_file</td><td>Structure describing the persistent memory file to use for the new volume. </td></tr>
+    <tr><td class="paramname">pm_file_dir</td><td>Directory to use for creation of the persistent memory file to use for the new volume. This function will append the UUID as the filename to create in this directory. </td></tr>
     <tr><td class="paramname">cb_fn</td><td>Callback function to signal completion of the initialization process. </td></tr>
+    <tr><td class="paramname">cb_arg</td><td>Argument to pass to the callback function. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a910dd92b2a78d08fdb1cd6fa9e4c7a9e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a910dd92b2a78d08fdb1cd6fa9e4c7a9e">&#9670;&nbsp;</a></span>spdk_reduce_vol_load()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_reduce_vol_load </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structspdk__reduce__backing__dev.html">spdk_reduce_backing_dev</a> *&#160;</td>
+          <td class="paramname"><em>backing_dev</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">spdk_reduce_vol_op_with_handle_complete&#160;</td>
+          <td class="paramname"><em>cb_fn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>cb_arg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Load an existing libreduce compressed volume. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">backing_dev</td><td>Structure describing the backing device containing the compressed volume. </td></tr>
+    <tr><td class="paramname">cb_fn</td><td>Callback function to signal completion of the loading process. </td></tr>
     <tr><td class="paramname">cb_arg</td><td>Argument to pass to the callback function. </td></tr>
   </table>
   </dd>
