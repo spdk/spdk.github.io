@@ -135,6 +135,7 @@ $(document).ready(function(){initNavTree('nbd_8h.html','');});
 
 <div class="header">
   <div class="summary">
+<a href="#typedef-members">Typedefs</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">nbd.h File Reference</div>  </div>
@@ -144,6 +145,13 @@ $(document).ready(function(){initNavTree('nbd_8h.html','');});
 <p>Network block device layer.  
 <a href="#details">More...</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:abed048e29b578c12e7db81e77df6877b"><td class="memItemLeft" align="right" valign="top"><a id="abed048e29b578c12e7db81e77df6877b"></a>
+typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nbd_8h.html#abed048e29b578c12e7db81e77df6877b">spdk_nbd_start_cb</a>) (void *cb_arg, struct spdk_nbd_disk *nbd, int rc)</td></tr>
+<tr class="memdesc:abed048e29b578c12e7db81e77df6877b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when an NBD device has been started. <br /></td></tr>
+<tr class="separator:abed048e29b578c12e7db81e77df6877b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a813a5507ececd5c8710ec9f1c3cdfec4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nbd_8h.html#a813a5507ececd5c8710ec9f1c3cdfec4">spdk_nbd_init</a> (void)</td></tr>
@@ -153,9 +161,9 @@ Functions</h2></td></tr>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nbd_8h.html#a8a8939ad101f43ab35e5516645b85423">spdk_nbd_fini</a> (void)</td></tr>
 <tr class="memdesc:a8a8939ad101f43ab35e5516645b85423"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stop and close all the running network block devices. <br /></td></tr>
 <tr class="separator:a8a8939ad101f43ab35e5516645b85423"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac71f4b31e4dc69baf9ac2956b19f3418"><td class="memItemLeft" align="right" valign="top">struct spdk_nbd_disk *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nbd_8h.html#ac71f4b31e4dc69baf9ac2956b19f3418">spdk_nbd_start</a> (const char *bdev_name, const char *nbd_path)</td></tr>
-<tr class="memdesc:ac71f4b31e4dc69baf9ac2956b19f3418"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start a network block device backed by the bdev.  <a href="#ac71f4b31e4dc69baf9ac2956b19f3418">More...</a><br /></td></tr>
-<tr class="separator:ac71f4b31e4dc69baf9ac2956b19f3418"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44a9691bf500b339ea8f5902090d7fc4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nbd_8h.html#a44a9691bf500b339ea8f5902090d7fc4">spdk_nbd_start</a> (const char *bdev_name, const char *nbd_path, <a class="el" href="nbd_8h.html#abed048e29b578c12e7db81e77df6877b">spdk_nbd_start_cb</a> cb_fn, void *cb_arg)</td></tr>
+<tr class="memdesc:a44a9691bf500b339ea8f5902090d7fc4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start a network block device backed by the bdev.  <a href="#a44a9691bf500b339ea8f5902090d7fc4">More...</a><br /></td></tr>
+<tr class="separator:a44a9691bf500b339ea8f5902090d7fc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac8a2c390228c132eda95dcffdc703154"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nbd_8h.html#ac8a2c390228c132eda95dcffdc703154">spdk_nbd_stop</a> (struct spdk_nbd_disk *nbd)</td></tr>
 <tr class="memdesc:ac8a2c390228c132eda95dcffdc703154"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stop the running network block device safely.  <a href="#ac8a2c390228c132eda95dcffdc703154">More...</a><br /></td></tr>
 <tr class="separator:ac8a2c390228c132eda95dcffdc703154"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -191,14 +199,14 @@ const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 
 </div>
 </div>
-<a id="ac71f4b31e4dc69baf9ac2956b19f3418"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac71f4b31e4dc69baf9ac2956b19f3418">&#9670;&nbsp;</a></span>spdk_nbd_start()</h2>
+<a id="a44a9691bf500b339ea8f5902090d7fc4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a44a9691bf500b339ea8f5902090d7fc4">&#9670;&nbsp;</a></span>spdk_nbd_start()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">struct spdk_nbd_disk* spdk_nbd_start </td>
+          <td class="memname">void spdk_nbd_start </td>
           <td>(</td>
           <td class="paramtype">const char *&#160;</td>
           <td class="paramname"><em>bdev_name</em>, </td>
@@ -207,7 +215,19 @@ const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>nbd_path</em>&#160;</td>
+          <td class="paramname"><em>nbd_path</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="nbd_8h.html#abed048e29b578c12e7db81e77df6877b">spdk_nbd_start_cb</a>&#160;</td>
+          <td class="paramname"><em>cb_fn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>cb_arg</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -221,11 +241,13 @@ const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">bdev_name</td><td>Name of bdev exposed as a network block device. </td></tr>
-    <tr><td class="paramname">nbd_path</td><td>Path to the registered network block device.</td></tr>
+    <tr><td class="paramname">nbd_path</td><td>Path to the registered network block device. </td></tr>
+    <tr><td class="paramname">cb_fn</td><td>Called when the device has been started. </td></tr>
+    <tr><td class="paramname">cb_arg</td><td>Passed to cb_fn.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>a pointer to the configuration of the registered network block device on success, or NULL on failure. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>A negated error number is passed to cb_fn on failure. </dd></dl>
 
 </div>
 </div>
