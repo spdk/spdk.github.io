@@ -145,12 +145,10 @@ Collaboration diagram for spdk_trace_histories:</div>
 <div class="dyncontent">
 <div class="center"><img src="structspdk__trace__histories__coll__graph.png" border="0" usemap="#spdk__trace__histories_coll__map" alt="Collaboration graph"/></div>
 <map name="spdk__trace__histories_coll__map" id="spdk__trace__histories_coll__map">
-<area shape="rect" id="node2" href="structspdk__trace__flags.html" title="spdk_trace_flags" alt="" coords="255,95,385,121"/>
+<area shape="rect" id="node2" href="structspdk__trace__flags.html" title="spdk_trace_flags" alt="" coords="173,95,304,121"/>
 <area shape="rect" id="node3" href="structspdk__trace__tpoint.html" title="spdk_trace_tpoint" alt="" coords="5,5,144,32"/>
 <area shape="rect" id="node4" href="structspdk__trace__object.html" title="spdk_trace_object" alt="" coords="169,5,309,32"/>
 <area shape="rect" id="node5" href="structspdk__trace__owner.html" title="spdk_trace_owner" alt="" coords="333,5,473,32"/>
-<area shape="rect" id="node6" href="structspdk__trace__history.html" title="spdk_trace_history" alt="" coords="450,95,595,121"/>
-<area shape="rect" id="node7" href="structspdk__trace__entry.html" title="spdk_trace_entry" alt="" coords="497,5,631,32"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -159,10 +157,28 @@ Data Fields</h2></td></tr>
 <tr class="memitem:a7aefcda50154e7d20f2c0bfdb66285d2"><td class="memItemLeft" align="right" valign="top"><a id="a7aefcda50154e7d20f2c0bfdb66285d2"></a>
 struct <a class="el" href="structspdk__trace__flags.html">spdk_trace_flags</a>&#160;</td><td class="memItemRight" valign="bottom"><b>flags</b></td></tr>
 <tr class="separator:a7aefcda50154e7d20f2c0bfdb66285d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0f5a948ce753c790f2c357bc15a2f0d0"><td class="memItemLeft" align="right" valign="top"><a id="a0f5a948ce753c790f2c357bc15a2f0d0"></a>
-struct <a class="el" href="structspdk__trace__history.html">spdk_trace_history</a>&#160;</td><td class="memItemRight" valign="bottom"><b>per_lcore_history</b> [SPDK_TRACE_MAX_LCORE]</td></tr>
-<tr class="separator:a0f5a948ce753c790f2c357bc15a2f0d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66eb3d8f3f7fdcc8ee0eb3764db0d7e7"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__trace__histories.html#a66eb3d8f3f7fdcc8ee0eb3764db0d7e7">per_lcore_history</a> [0]</td></tr>
+<tr class="memdesc:a66eb3d8f3f7fdcc8ee0eb3764db0d7e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">struct <a class="el" href="structspdk__trace__history.html">spdk_trace_history</a> has a dynamic size determined by num_entries in spdk_trace_init.  <a href="#a66eb3d8f3f7fdcc8ee0eb3764db0d7e7">More...</a><br /></td></tr>
+<tr class="separator:a66eb3d8f3f7fdcc8ee0eb3764db0d7e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Field Documentation</h2>
+<a id="a66eb3d8f3f7fdcc8ee0eb3764db0d7e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a66eb3d8f3f7fdcc8ee0eb3764db0d7e7">&#9670;&nbsp;</a></span>per_lcore_history</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t spdk_trace_histories::per_lcore_history[0]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>struct <a class="el" href="structspdk__trace__history.html">spdk_trace_history</a> has a dynamic size determined by num_entries in spdk_trace_init. </p>
+<p>Mark array size of per_lcore_history to be 0 in uint8_t as a reminder that each per_lcore_history pointer should be gotten by proper API, instead of directly referencing by struct element. </p>
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li><a class="el" href="trace_8h.html">trace.h</a></li>
 </ul>

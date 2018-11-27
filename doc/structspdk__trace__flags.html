@@ -168,7 +168,28 @@ struct <a class="el" href="structspdk__trace__object.html">spdk_trace_object</a>
 <tr class="memitem:ab799d235068c9b11669b0daeabb08d55"><td class="memItemLeft" align="right" valign="top"><a id="ab799d235068c9b11669b0daeabb08d55"></a>
 struct <a class="el" href="structspdk__trace__tpoint.html">spdk_trace_tpoint</a>&#160;</td><td class="memItemRight" valign="bottom"><b>tpoint</b> [SPDK_TRACE_MAX_TPOINT_ID]</td></tr>
 <tr class="separator:ab799d235068c9b11669b0daeabb08d55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7aae2959ed72743507c2bb5c36a70b5"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__trace__flags.html#ad7aae2959ed72743507c2bb5c36a70b5">lcore_history_offsets</a> [SPDK_TRACE_MAX_LCORE+1]</td></tr>
+<tr class="memdesc:ad7aae2959ed72743507c2bb5c36a70b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Offset of each trace_history from the beginning of this data structure.  <a href="#ad7aae2959ed72743507c2bb5c36a70b5">More...</a><br /></td></tr>
+<tr class="separator:ad7aae2959ed72743507c2bb5c36a70b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Field Documentation</h2>
+<a id="ad7aae2959ed72743507c2bb5c36a70b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad7aae2959ed72743507c2bb5c36a70b5">&#9670;&nbsp;</a></span>lcore_history_offsets</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint64_t spdk_trace_flags::lcore_history_offsets[SPDK_TRACE_MAX_LCORE+1]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Offset of each trace_history from the beginning of this data structure. </p>
+<p>The last one is the offset of the file end. </p>
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li><a class="el" href="trace_8h.html">trace.h</a></li>
 </ul>

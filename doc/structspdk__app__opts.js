@@ -11,6 +11,7 @@ var structspdk__app__opts =
     [ "mem_size", "structspdk__app__opts.html#ab3ad6ade4ff0ec041851e763bc29d6e7", null ],
     [ "name", "structspdk__app__opts.html#a6d8fad90703f6eb20d0bd2ecb5747f74", null ],
     [ "no_pci", "structspdk__app__opts.html#a524584177bee58d89de5808d5580d0c7", null ],
+    [ "num_entries", "structspdk__app__opts.html#a5181e4f5f9b4b87b42f26fb87b071faa", null ],
     [ "num_pci_addr", "structspdk__app__opts.html#a1588a2f9d5a96fa56c9081ad84b7902a", null ],
     [ "pci_blacklist", "structspdk__app__opts.html#af27c1872b7544e7d3d077ae9bd5f27e6", null ],
     [ "pci_whitelist", "structspdk__app__opts.html#a3b82ef17d584db64284a5851b5760e4c", null ],

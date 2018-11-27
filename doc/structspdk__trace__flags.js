@@ -1,5 +1,6 @@
 var structspdk__trace__flags =
 [
+    [ "lcore_history_offsets", "structspdk__trace__flags.html#ad7aae2959ed72743507c2bb5c36a70b5", null ],
     [ "object", "structspdk__trace__flags.html#a19f99697c48da079e6dd9802c58a6d90", null ],
     [ "owner", "structspdk__trace__flags.html#afefc53c12cc20565e7d7e8c49775178f", null ],
     [ "tpoint", "structspdk__trace__flags.html#ab799d235068c9b11669b0daeabb08d55", null ],
