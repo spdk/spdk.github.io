@@ -21,49 +21,34 @@ is available for usage and development questions as well as design discussions.
 
 SPDK Community meetings are open to everyone and all are encouraged to
 participate. The primary purpose is to cover topics where verbal communication
-is more efficient than email or IRC. The meetings are hosted on WebEx.
+is more efficient than email or IRC. The meetings are hosted using
+[FreeConferenceCall][https://www.freeconferencecall.com]
 
-There is a community meeting each week in alternating time slots selected so
+There is a community meeting each week at alternating time slots selected so
 that one week is a Euro-friendly time and the following week is an
-Asia-friendly time.
-
-The p.a.s.s.w.o.r.d (not to be confused with the access code) for all community meetings
-including the bug scrub is:
-![SPDK](../img/comm_meeting.jpg "SPDK").
-
-## Next Euro-Friendly Meeting
-<div id="euro-mtg"></div>
-[Join via WebEx](https://intel.webex.com/intel)<br/>
-Or alternatively, by phone:<br/>
-+1-210-795-1110 US Toll<br/>
-+1-866-662-9987 US Toll Free<br/>
-Meeting number (access code): 250 489 814
-
-## Next Asia-Friendly Meeting
-<div id="asia-mtg"></div>
-[Join via WebEx](https://intel.webex.com/intel)<br/>
-Or alternatively, by phone:<br/>
-+1-210-795-1110 US Toll<br/>
-+1-866-662-9987 US Toll Free<br/>
-Meeting number (access code): 592 674 686
-
-Announcements will be made in IRC as well.
-
-Please post proposed topics on [Trello](https://trello.com/b/DvM7XayJ) prior
-to the meeting. If you don't have a Trello login, sign up and then ask in IRC
+Asia-friendly time. Please post proposed topics on [Trello](https://trello.com/b/DvM7XayJ)
+prior to the meeting. If you don't have a Trello login, sign up and then ask in IRC
 or on the mailing list to to be added to the board. If we are able to cover
 the posted topics before the end of the meeting we can use the time to discuss
 additional items.
 
+There is also a focused bug scrub meeting every other week only in the Asia-friendly
+timezone. Note that bugs are tracked on the [SPDK GitHub issue tracker](https://github.com/spdk/spdk/issues).
+
+All meetings use the same conference information. It is shown below in a
+slightly distored image to help prevent bots from joining our calls. Adding
+a bookmark with the link below should make it easy to join weekly.
+
+![SPDK](../img/spdk_free.jpg "SPDK").
+
+## Next Euro-Friendly Meeting
+<div id="euro-mtg"></div>
+
+## Next Asia-Friendly Meeting
+<div id="asia-mtg"></div>
+
 # Bug Reports and Bug Scrub Meeting
 <div id="asia-bug-mtg"></div>
-[Join via WebEx](https://intel.webex.com/intel)<br/>
-Or alternatively, by phone:<br/>
-+1-210-795-1110 US Toll<br/>
-+1-866-662-9987 US Toll Free<br/>
-Meeting number (access code): 592 309 994
-
-Please be noted that bugs are tracked on the [SPDK GitHub issue tracker](https://github.com/spdk/spdk/issues).
 
 # Contributing
 
