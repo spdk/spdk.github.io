@@ -224,8 +224,10 @@ var NAVTREEINDEX17 =
 "structspdk__trace__owner.html#a2133648f6a0da49b9880547ed7ad7c81":[13,0,213,0],
 "structspdk__trace__owner.html#ae1ff4de93399884bcd351861dff118f0":[13,0,213,1],
 "structspdk__trace__register__fn.html":[13,0,214],
-"structspdk__trace__register__fn.html#a2cd05182ab95ca91415b10eb95700a5e":[13,0,214,0],
-"structspdk__trace__register__fn.html#a8109be7fda1144908e5a3b67293ab5fb":[13,0,214,1],
+"structspdk__trace__register__fn.html#a2cd05182ab95ca91415b10eb95700a5e":[13,0,214,1],
+"structspdk__trace__register__fn.html#a3afb510e42a1289799babd284ea31cbc":[13,0,214,0],
+"structspdk__trace__register__fn.html#a8109be7fda1144908e5a3b67293ab5fb":[13,0,214,2],
+"structspdk__trace__register__fn.html#ab43c36349f9748fe3a0c45122e85a43b":[13,0,214,3],
 "structspdk__trace__tpoint.html":[13,0,215],
 "structspdk__trace__tpoint.html#a0f01e931e5212379d1720697cea4525f":[13,0,215,5],
 "structspdk__trace__tpoint.html#a317eccf6a1a97bcaa0fb21002fe174ce":[13,0,215,8],
@@ -247,7 +249,5 @@ var NAVTREEINDEX17 =
 "thread_8h.html#a34754a98debd5e095bf06889fbaed6aa":[14,0,46,17],
 "thread_8h.html#a35c421accdc2a0a61bb7be916106293b":[14,0,46,6],
 "thread_8h.html#a474fcfc5c14928eda42c684ba2b4cba9":[14,0,46,33],
-"thread_8h.html#a4c6c3df3a611c10c176cb87966c622f0":[14,0,46,25],
-"thread_8h.html#a4e87fc8c0fc870769c068a2752cdc359":[14,0,46,13],
-"thread_8h.html#a6aa832fea18a9160429b5383f36d8539":[14,0,46,35]
+"thread_8h.html#a4c6c3df3a611c10c176cb87966c622f0":[14,0,46,25]
 };

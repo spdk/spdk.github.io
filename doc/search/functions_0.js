@@ -664,6 +664,7 @@ var searchData=
   ['spdk_5ftrace_5fget_5ftpoint_5fgroup_5fmask',['spdk_trace_get_tpoint_group_mask',['../trace_8h.html#aa7331d8e039fadc27049efd27c1d49a8',1,'trace.h']]],
   ['spdk_5ftrace_5fget_5ftpoint_5fmask',['spdk_trace_get_tpoint_mask',['../trace_8h.html#a346327ec1addd7eeb87963b40cec1821',1,'trace.h']]],
   ['spdk_5ftrace_5finit',['spdk_trace_init',['../trace_8h.html#a01e4bb4f3e8d4f7e9fadb16bce93bf15',1,'trace.h']]],
+  ['spdk_5ftrace_5fmask_5fusage',['spdk_trace_mask_usage',['../trace_8h.html#a2057ffa0d5eaf0680a8d970646c157af',1,'trace.h']]],
   ['spdk_5ftrace_5frecord',['spdk_trace_record',['../trace_8h.html#afc39939001d5fd77c208808141534dde',1,'trace.h']]],
   ['spdk_5ftrace_5frecord_5ftsc',['spdk_trace_record_tsc',['../trace_8h.html#aa38bbe4d79cf0aca5a7d18956a0a62f7',1,'trace.h']]],
   ['spdk_5ftrace_5fregister_5fdescription',['spdk_trace_register_description',['../trace_8h.html#ab5d63ea7b3e0b08fe2f37e1c96f89272',1,'trace.h']]],
