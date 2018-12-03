@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "a628dc5c_46c7e92e",
+        "filename": "_includes/cilinks.html",
+        "patchSetId": 1
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 1011222
+      },
+      "writtenOn": "2018-12-03T15:41:39Z",
+      "side": 1,
+      "message": "Can we add a \"deprecated\" in the text here to make it more clear this is the non-voting one?  (I know we\u0027re planning to remove it soon, but just in case...)",
+      "revId": "6caace86e92b3b3d493a1cd50a61378b5b824502",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
