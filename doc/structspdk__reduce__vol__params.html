@@ -160,6 +160,9 @@ struct <a class="el" href="structspdk__uuid.html">spdk_uuid</a>&#160;</td><td cl
 <tr class="memitem:a8702d36eea6d40a62076a434e91aa3ca"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__reduce__vol__params.html#a8702d36eea6d40a62076a434e91aa3ca">backing_io_unit_size</a></td></tr>
 <tr class="memdesc:a8702d36eea6d40a62076a434e91aa3ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Size in bytes of the IO unit for the backing device.  <a href="#a8702d36eea6d40a62076a434e91aa3ca">More...</a><br /></td></tr>
 <tr class="separator:a8702d36eea6d40a62076a434e91aa3ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33c2c765f8aef22dbd55f80aa71c6ba5"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__reduce__vol__params.html#a33c2c765f8aef22dbd55f80aa71c6ba5">logical_block_size</a></td></tr>
+<tr class="memdesc:a33c2c765f8aef22dbd55f80aa71c6ba5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Size in bytes of a logical block.  <a href="#a33c2c765f8aef22dbd55f80aa71c6ba5">More...</a><br /></td></tr>
+<tr class="separator:a33c2c765f8aef22dbd55f80aa71c6ba5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab0345c39a844c449cbdb78550939f0fb"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__reduce__vol__params.html#ab0345c39a844c449cbdb78550939f0fb">chunk_size</a></td></tr>
 <tr class="memdesc:ab0345c39a844c449cbdb78550939f0fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Size in bytes of a chunk on the compressed volume.  <a href="#ab0345c39a844c449cbdb78550939f0fb">More...</a><br /></td></tr>
 <tr class="separator:ab0345c39a844c449cbdb78550939f0fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -200,7 +203,24 @@ struct <a class="el" href="structspdk__uuid.html">spdk_uuid</a>&#160;</td><td cl
 </div><div class="memdoc">
 
 <p>Size in bytes of a chunk on the compressed volume. </p>
-<p>This is the unit in which data is compressed. Must be an even multiple of backing_io_unit_size. Must be greater than 0. </p>
+<p>This is the unit in which data is compressed. Must be an even multiple of backing_io_unit_size and logical_block_size. Must be greater than 0. </p>
+
+</div>
+</div>
+<a id="a33c2c765f8aef22dbd55f80aa71c6ba5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a33c2c765f8aef22dbd55f80aa71c6ba5">&#9670;&nbsp;</a></span>logical_block_size</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t spdk_reduce_vol_params::logical_block_size</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Size in bytes of a logical block. </p>
+<p>This is the unit in which users read or write data to the compressed volume. Must be greater than 0. </p>
 
 </div>
 </div>

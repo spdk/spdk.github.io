@@ -12,17 +12,17 @@ var log_8h =
       [ "SPDK_LOG_DEBUG", "log_8h.html#a188d351bd05093cba1d8594ee9988efda243175ec006c7a518e352d80c5c9bf84", null ]
     ] ],
     [ "spdk_log", "log_8h.html#aaa20a1f56503b0d9f16c82b451fb338b", null ],
-    [ "spdk_log_clear_trace_flag", "log_8h.html#a5492feb5ef1c11d89bed4ccf3e8135c8", null ],
+    [ "spdk_log_clear_flag", "log_8h.html#a253e880aa9fd469afd825d77fe9a3211", null ],
     [ "spdk_log_close", "log_8h.html#a41cdc17423a58c475fa785fd491f00e9", null ],
+    [ "spdk_log_dump", "log_8h.html#ad360332e6a9699cdfecdac00f768c0b1", null ],
     [ "spdk_log_get_backtrace_level", "log_8h.html#a302d0d8666e634fca550d650ff553a6b", null ],
+    [ "spdk_log_get_flag", "log_8h.html#a66ec4ca21d549ea445c7c662b3f1c637", null ],
     [ "spdk_log_get_level", "log_8h.html#af600090b2a4aa95b4e9e4dae27bf6c7e", null ],
     [ "spdk_log_get_print_level", "log_8h.html#a880b1e27d71328429dbf4f65e02ff145", null ],
-    [ "spdk_log_get_trace_flag", "log_8h.html#af31998ef403c5644e063654474db451e", null ],
     [ "spdk_log_open", "log_8h.html#a83352187f63ade8829ca300fc7eacd54", null ],
     [ "spdk_log_set_backtrace_level", "log_8h.html#a1bc3422fdd3034925dd674b911c77c29", null ],
+    [ "spdk_log_set_flag", "log_8h.html#aa9419a88ede016c62feaa52fb0fed019", null ],
     [ "spdk_log_set_level", "log_8h.html#a422b7a65819b43157a4771be78f544ee", null ],
     [ "spdk_log_set_print_level", "log_8h.html#ab34f1c87d98113395ab04415dbee96d8", null ],
-    [ "spdk_log_set_trace_flag", "log_8h.html#a98ae1f95b60b386a84b4144cf756d7a3", null ],
-    [ "spdk_trace_dump", "log_8h.html#aec3839ea313ef38de623b982b1cdf603", null ],
-    [ "spdk_tracelog_usage", "log_8h.html#a4a47d01813ce878b34c146b32f106616", null ]
+    [ "spdk_log_usage", "log_8h.html#a99820ac7f38f6ad187be62b3bbdb7d64", null ]
 ];

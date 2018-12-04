@@ -9,6 +9,14 @@ var scsi__spec_8h =
     [ "spdk_scsi_tgt_port_desc", "structspdk__scsi__tgt__port__desc.html", "structspdk__scsi__tgt__port__desc" ],
     [ "spdk_scsi_port_desc", "structspdk__scsi__port__desc.html", "structspdk__scsi__port__desc" ],
     [ "spdk_scsi_unmap_bdesc", "structspdk__scsi__unmap__bdesc.html", "structspdk__scsi__unmap__bdesc" ],
+    [ "spdk_scsi_pr_in_read_header", "structspdk__scsi__pr__in__read__header.html", "structspdk__scsi__pr__in__read__header" ],
+    [ "spdk_scsi_pr_in_read_keys_data", "structspdk__scsi__pr__in__read__keys__data.html", "structspdk__scsi__pr__in__read__keys__data" ],
+    [ "spdk_scsi_pr_in_read_reservations_data", "structspdk__scsi__pr__in__read__reservations__data.html", "structspdk__scsi__pr__in__read__reservations__data" ],
+    [ "spdk_scsi_pr_in_report_capabilities_data", "structspdk__scsi__pr__in__report__capabilities__data.html", "structspdk__scsi__pr__in__report__capabilities__data" ],
+    [ "spdk_scsi_pr_in_full_status_desc", "structspdk__scsi__pr__in__full__status__desc.html", "structspdk__scsi__pr__in__full__status__desc" ],
+    [ "spdk_scsi_pr_in_full_status_data", "structspdk__scsi__pr__in__full__status__data.html", "structspdk__scsi__pr__in__full__status__data" ],
+    [ "spdk_scsi_pr_out_param_list", "structspdk__scsi__pr__out__param__list.html", "structspdk__scsi__pr__out__param__list" ],
+    [ "spdk_scsi_pr_out_reg_and_move_param_list", "structspdk__scsi__pr__out__reg__and__move__param__list.html", "structspdk__scsi__pr__out__reg__and__move__param__list" ],
     [ "SPDK_SBC_START_STOP_UNIT_START_BIT", "scsi__spec_8h.html#a135606383acc072af7daf5a4ea3be5d4", null ],
     [ "SPDK_SCSI_GROUP_MASK", "scsi__spec_8h.html#af125f2e99a82db78a3fe9563bd0f02c9", null ],
     [ "SPDK_SCSI_OPCODE_MASK", "scsi__spec_8h.html#af993a050a0bdd0d520b7fdcbbb32d98a", null ],
@@ -215,6 +223,33 @@ var scsi__spec_8h =
       [ "SPDK_SCSI_16BYTE_CMD", "scsi__spec_8h.html#aba1130bf4d46d470c64c885c79e6156aa47be090115b7515c589ecb654e861e1f", null ],
       [ "SPDK_SCSI_12BYTE_CMD", "scsi__spec_8h.html#aba1130bf4d46d470c64c885c79e6156aa863c6bdfbefd4f7ff2f8713f17aab38f", null ]
     ] ],
+    [ "spdk_scsi_pr_in_action_code", "scsi__spec_8h.html#ac2629b3541b10d7a4d2378b1b8f4a489", [
+      [ "SPDK_SCSI_PR_IN_READ_KEYS", "scsi__spec_8h.html#ac2629b3541b10d7a4d2378b1b8f4a489a0169bc76475ce18392db46cbc247fe69", null ],
+      [ "SPDK_SCSI_PR_IN_READ_RESERVATION", "scsi__spec_8h.html#ac2629b3541b10d7a4d2378b1b8f4a489a447c1e6dcf612bcaf52559a659a0501d", null ],
+      [ "SPDK_SCSI_PR_IN_REPORT_CAPABILITIES", "scsi__spec_8h.html#ac2629b3541b10d7a4d2378b1b8f4a489a1a160b8dfb3d0fbc5988d218eecac8a0", null ],
+      [ "SPDK_SCSI_PR_IN_READ_FULL_STATUS", "scsi__spec_8h.html#ac2629b3541b10d7a4d2378b1b8f4a489a2b6eef04e4ea62c1968428902e9dc173", null ]
+    ] ],
+    [ "spdk_scsi_pr_out_service_action_code", "scsi__spec_8h.html#a7b04e1eb530397b1ab8187283ba276f9", [
+      [ "SPDK_SCSI_PR_OUT_REGISTER", "scsi__spec_8h.html#a7b04e1eb530397b1ab8187283ba276f9a424d147d9b531340c8031e0c149f84c0", null ],
+      [ "SPDK_SCSI_PR_OUT_RESERVE", "scsi__spec_8h.html#a7b04e1eb530397b1ab8187283ba276f9a44a5cc730f43bfa79f68b4d3edca1249", null ],
+      [ "SPDK_SCSI_PR_OUT_RELEASE", "scsi__spec_8h.html#a7b04e1eb530397b1ab8187283ba276f9acb9934d1f5e4dbd30fa4de741c4006ca", null ],
+      [ "SPDK_SCSI_PR_OUT_CLEAR", "scsi__spec_8h.html#a7b04e1eb530397b1ab8187283ba276f9a98315a3c8fe1912511dfb1f07150d196", null ],
+      [ "SPDK_SCSI_PR_OUT_PREEMPT", "scsi__spec_8h.html#a7b04e1eb530397b1ab8187283ba276f9a6746908a3e3f31823ee9ddcef152f29e", null ],
+      [ "SPDK_SCSI_PR_OUT_PREEMPT_AND_ABORT", "scsi__spec_8h.html#a7b04e1eb530397b1ab8187283ba276f9aa94f651150bed9576918c536035bbc95", null ],
+      [ "SPDK_SCSI_PR_OUT_REG_AND_IGNORE_KEY", "scsi__spec_8h.html#a7b04e1eb530397b1ab8187283ba276f9adb2f9ee7793eca3f357e1d836f3d9cbb", null ],
+      [ "SPDK_SCSI_PR_OUT_REG_AND_MOVE", "scsi__spec_8h.html#a7b04e1eb530397b1ab8187283ba276f9a86773df4c0ada8153edbd354fe4c969b", null ]
+    ] ],
+    [ "spdk_scsi_pr_scope_code", "scsi__spec_8h.html#a1d1bec6732599d254d1809645b45cde6", [
+      [ "SPDK_SCSI_PR_LU_SCOPE", "scsi__spec_8h.html#a1d1bec6732599d254d1809645b45cde6ace540e880f7a76079a6dec83f7e3727a", null ]
+    ] ],
+    [ "spdk_scsi_pr_type_code", "scsi__spec_8h.html#a8d3c3a6c857543d380a6587ca5b61ea6", [
+      [ "SPDK_SCSI_PR_WRITE_EXCLUSIVE", "scsi__spec_8h.html#a8d3c3a6c857543d380a6587ca5b61ea6ad68e78351232b9cb918db02d9a19a01d", null ],
+      [ "SPDK_SCSI_PR_EXCLUSIVE_ACCESS", "scsi__spec_8h.html#a8d3c3a6c857543d380a6587ca5b61ea6a2741b904337026f1076b88ad64156b74", null ],
+      [ "SPDK_SCSI_PR_WRITE_EXCLUSIVE_REGS_ONLY", "scsi__spec_8h.html#a8d3c3a6c857543d380a6587ca5b61ea6aec046f8a66a184971721d4eb214a7471", null ],
+      [ "SPDK_SCSI_PR_EXCLUSIVE_ACCESS_REGS_ONLY", "scsi__spec_8h.html#a8d3c3a6c857543d380a6587ca5b61ea6ac6ac3d054d0b224935361bca5864089d", null ],
+      [ "SPDK_SCSI_PR_WRITE_EXCLUSIVE_ALL_REGS", "scsi__spec_8h.html#a8d3c3a6c857543d380a6587ca5b61ea6a39412cf64fb70be4aa8859e5a987e3b3", null ],
+      [ "SPDK_SCSI_PR_EXCLUSIVE_ACCESS_ALL_REGS", "scsi__spec_8h.html#a8d3c3a6c857543d380a6587ca5b61ea6ac6d6a5e79297013087ad59aec9760ff9", null ]
+    ] ],
     [ "spdk_scsi_sense", "scsi__spec_8h.html#a3fddde96c410de00042329c0da4142ae", [
       [ "SPDK_SCSI_SENSE_NO_SENSE", "scsi__spec_8h.html#a3fddde96c410de00042329c0da4142aea92d12d8b5b99cf1389479a3da34c0c81", null ],
       [ "SPDK_SCSI_SENSE_RECOVERED_ERROR", "scsi__spec_8h.html#a3fddde96c410de00042329c0da4142aead3b17ebd1f19ff2229ddb5541313dacb", null ],
@@ -331,5 +366,13 @@ var scsi__spec_8h =
       [ "SPDK_SSC_WRITE_FILEMARKS_6", "scsi__spec_8h.html#aca4b95e35566a60195e59be74e5a1218abd8d902a252ddf9f3535c45a7d9ae6a0", null ]
     ] ],
     [ "SPDK_STATIC_ASSERT", "scsi__spec_8h.html#a136642c48b65aba55577dc651625774e", null ],
-    [ "SPDK_STATIC_ASSERT", "scsi__spec_8h.html#ad760c3ce207d51ba0f22c4f482602a70", null ]
+    [ "SPDK_STATIC_ASSERT", "scsi__spec_8h.html#ad760c3ce207d51ba0f22c4f482602a70", null ],
+    [ "SPDK_STATIC_ASSERT", "scsi__spec_8h.html#a112b06d91fe995ad30e7b4c93444a4c1", null ],
+    [ "SPDK_STATIC_ASSERT", "scsi__spec_8h.html#abae3d1819f065a9b60830f15ff9cfcad", null ],
+    [ "SPDK_STATIC_ASSERT", "scsi__spec_8h.html#ab299f63ba66c4d807b8d5d00b0194030", null ],
+    [ "SPDK_STATIC_ASSERT", "scsi__spec_8h.html#a00ab4be2edaa8e307c6516c598c224a3", null ],
+    [ "SPDK_STATIC_ASSERT", "scsi__spec_8h.html#a60097cd0704b01104d5ed33a596ffdfa", null ],
+    [ "SPDK_STATIC_ASSERT", "scsi__spec_8h.html#ac854e1c1152f3c503f63741b0b611066", null ],
+    [ "SPDK_STATIC_ASSERT", "scsi__spec_8h.html#a0d387e76a61ca6f49e565790eb028bff", null ],
+    [ "SPDK_STATIC_ASSERT", "scsi__spec_8h.html#a1352475ec0fb683e78a868831c1ee9e3", null ]
 ];

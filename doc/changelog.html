@@ -151,6 +151,8 @@ v19.01: (Upcoming Release)</h1>
 <p>Add a new TCP/IP transport (located in lib/nvmf/tcp.c). With this tranport, the SPDK NVMe-oF target can have a new transport, and can serve the NVMe-oF protocol via TCP/IP from the host.</p>
 <h2>bdev</h2>
 <p>On shutdown, bdev unregister now proceeds in top-down fashion, with claimed bdevs skipped (these will be unregistered later, when virtual bdev built on top of the respective base bdev unclaims it). This allows virtual bdevs to be shut down cleanly as opposed to the previous behavior that didn't differentiate between hotremove and planned shutdown.</p>
+<h2>log</h2>
+<p>"trace flags" are now referred to as "log flags" in the SPDK log API. The set_trace_flag, clear_trace_flag and get_trace_flags RPCs are now deprecated, and set_log_flag, clear_log_flag and get_log_flags RPCs have been added.</p>
 <h1><a class="anchor" id="changelog-v18-10"></a>
 v18.10:</h1>
 <h2>nvme</h2>
@@ -406,7 +408,7 @@ v17.10: Logical Volumes</h1>
 <h2>Event Framework</h2>
 <p>The ability to set a thread name, previously only used by the reactor code, is now part of the spdk_thread_allocate() API. Users may specify a thread name which will show up in tools like <code>gdb</code>.</p>
 <h2>Log</h2>
-<p>The <a class="el" href="log_8h.html#aec3839ea313ef38de623b982b1cdf603" title="Dump the trace to a file. ">spdk_trace_dump()</a> function now takes a new parameter to allow the caller to specify an output file handle (stdout or stderr, for example).</p>
+<p>The spdk_trace_dump() function now takes a new parameter to allow the caller to specify an output file handle (stdout or stderr, for example).</p>
 <h2>Logical Volumes</h2>
 <p>Logical volumes library built on top of SPDK blobstore has been added. It is possible to create logical volumes on top of other devices using RPC.</p>
 <p>See the <a href="http://www.spdk.io/doc/logical_volumes.html">logical volumes</a> documentation for more information.</p>

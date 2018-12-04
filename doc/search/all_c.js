@@ -12,6 +12,7 @@ var searchData=
   ['likely_2eh',['likely.h',['../likely_8h.html',1,'']]],
   ['lists',['lists',['../unionspdk__nvme__cmbsz__register.html#a605db26c2b5a41b7b0cc40750e43527d',1,'spdk_nvme_cmbsz_register']]],
   ['log_2eh',['log.h',['../log_8h.html',1,'']]],
+  ['logical_5fblock_5fsize',['logical_block_size',['../structspdk__reduce__vol__params.html#a33c2c765f8aef22dbd55f80aa71c6ba5',1,'spdk_reduce_vol_params']]],
   ['logical_20volumes',['Logical Volumes',['../logical_volumes.html',1,'general']]],
   ['lpa',['lpa',['../structspdk__nvme__ctrlr__data.html#a97a2cba662c2b903ec15503e98734752',1,'spdk_nvme_ctrlr_data']]],
   ['lpw',['lpw',['../unionspdk__nvme__feat__arbitration.html#a0eb3434752c3b8ea38f37556fa9fd116',1,'spdk_nvme_feat_arbitration']]],

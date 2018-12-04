@@ -167,6 +167,22 @@ Data Structures</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__scsi__unmap__bdesc.html">spdk_scsi_unmap_bdesc</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__scsi__pr__in__read__header.html">spdk_scsi_pr_in_read_header</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__scsi__pr__in__read__keys__data.html">spdk_scsi_pr_in_read_keys_data</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__scsi__pr__in__read__reservations__data.html">spdk_scsi_pr_in_read_reservations_data</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__scsi__pr__in__report__capabilities__data.html">spdk_scsi_pr_in_report_capabilities_data</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__scsi__pr__in__full__status__desc.html">spdk_scsi_pr_in_full_status_desc</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__scsi__pr__in__full__status__data.html">spdk_scsi_pr_in_full_status_data</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__scsi__pr__out__param__list.html">spdk_scsi_pr_out_param_list</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__scsi__pr__out__reg__and__move__param__list.html">spdk_scsi_pr_out_reg_and_move_param_list</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
@@ -625,6 +641,39 @@ Enumerations</h2></td></tr>
 <br />
  }</td></tr>
 <tr class="separator:aecd12a18eeb0ee701fc7b0efd5068266"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2629b3541b10d7a4d2378b1b8f4a489"><td class="memItemLeft" align="right" valign="top"><a id="ac2629b3541b10d7a4d2378b1b8f4a489"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>spdk_scsi_pr_in_action_code</b> { <b>SPDK_SCSI_PR_IN_READ_KEYS</b> = 0x00, 
+<b>SPDK_SCSI_PR_IN_READ_RESERVATION</b> = 0x01, 
+<b>SPDK_SCSI_PR_IN_REPORT_CAPABILITIES</b> = 0x02, 
+<b>SPDK_SCSI_PR_IN_READ_FULL_STATUS</b> = 0x03
+ }</td></tr>
+<tr class="separator:ac2629b3541b10d7a4d2378b1b8f4a489"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d1bec6732599d254d1809645b45cde6"><td class="memItemLeft" align="right" valign="top"><a id="a1d1bec6732599d254d1809645b45cde6"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>spdk_scsi_pr_scope_code</b> { <b>SPDK_SCSI_PR_LU_SCOPE</b> = 0x00
+ }</td></tr>
+<tr class="separator:a1d1bec6732599d254d1809645b45cde6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d3c3a6c857543d380a6587ca5b61ea6"><td class="memItemLeft" align="right" valign="top"><a id="a8d3c3a6c857543d380a6587ca5b61ea6"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>spdk_scsi_pr_type_code</b> { <br />
+&#160;&#160;<b>SPDK_SCSI_PR_WRITE_EXCLUSIVE</b> = 0x01, 
+<b>SPDK_SCSI_PR_EXCLUSIVE_ACCESS</b> = 0x03, 
+<b>SPDK_SCSI_PR_WRITE_EXCLUSIVE_REGS_ONLY</b> = 0x05, 
+<b>SPDK_SCSI_PR_EXCLUSIVE_ACCESS_REGS_ONLY</b> = 0x06, 
+<br />
+&#160;&#160;<b>SPDK_SCSI_PR_WRITE_EXCLUSIVE_ALL_REGS</b> = 0x07, 
+<b>SPDK_SCSI_PR_EXCLUSIVE_ACCESS_ALL_REGS</b> = 0x08
+<br />
+ }</td></tr>
+<tr class="separator:a8d3c3a6c857543d380a6587ca5b61ea6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b04e1eb530397b1ab8187283ba276f9"><td class="memItemLeft" align="right" valign="top"><a id="a7b04e1eb530397b1ab8187283ba276f9"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>spdk_scsi_pr_out_service_action_code</b> { <br />
+&#160;&#160;<b>SPDK_SCSI_PR_OUT_REGISTER</b> = 0x00, 
+<b>SPDK_SCSI_PR_OUT_RESERVE</b> = 0x01, 
+<b>SPDK_SCSI_PR_OUT_RELEASE</b> = 0x02, 
+<b>SPDK_SCSI_PR_OUT_CLEAR</b> = 0x03, 
+<br />
+&#160;&#160;<b>SPDK_SCSI_PR_OUT_PREEMPT</b> = 0x04, 
+<b>SPDK_SCSI_PR_OUT_PREEMPT_AND_ABORT</b> = 0x05, 
+<b>SPDK_SCSI_PR_OUT_REG_AND_IGNORE_KEY</b> = 0x06, 
+<b>SPDK_SCSI_PR_OUT_REG_AND_MOVE</b> = 0x07
+<br />
+ }</td></tr>
+<tr class="separator:a7b04e1eb530397b1ab8187283ba276f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -634,6 +683,30 @@ Functions</h2></td></tr>
 <tr class="memitem:ad760c3ce207d51ba0f22c4f482602a70"><td class="memItemLeft" align="right" valign="top"><a id="ad760c3ce207d51ba0f22c4f482602a70"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_STATIC_ASSERT</b> (sizeof(struct <a class="el" href="structspdk__scsi__desig__desc.html">spdk_scsi_desig_desc</a>)==4, &quot;Invalid size&quot;)</td></tr>
 <tr class="separator:ad760c3ce207d51ba0f22c4f482602a70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a112b06d91fe995ad30e7b4c93444a4c1"><td class="memItemLeft" align="right" valign="top"><a id="a112b06d91fe995ad30e7b4c93444a4c1"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_STATIC_ASSERT</b> (sizeof(struct <a class="el" href="structspdk__scsi__pr__in__read__header.html">spdk_scsi_pr_in_read_header</a>)==8, &quot;Incorrect size&quot;)</td></tr>
+<tr class="separator:a112b06d91fe995ad30e7b4c93444a4c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abae3d1819f065a9b60830f15ff9cfcad"><td class="memItemLeft" align="right" valign="top"><a id="abae3d1819f065a9b60830f15ff9cfcad"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_STATIC_ASSERT</b> (sizeof(struct <a class="el" href="structspdk__scsi__pr__in__read__keys__data.html">spdk_scsi_pr_in_read_keys_data</a>)==8, &quot;Incorrect size&quot;)</td></tr>
+<tr class="separator:abae3d1819f065a9b60830f15ff9cfcad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab299f63ba66c4d807b8d5d00b0194030"><td class="memItemLeft" align="right" valign="top"><a id="ab299f63ba66c4d807b8d5d00b0194030"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_STATIC_ASSERT</b> (sizeof(struct <a class="el" href="structspdk__scsi__pr__in__read__reservations__data.html">spdk_scsi_pr_in_read_reservations_data</a>)==24, &quot;Incorrect size&quot;)</td></tr>
+<tr class="separator:ab299f63ba66c4d807b8d5d00b0194030"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00ab4be2edaa8e307c6516c598c224a3"><td class="memItemLeft" align="right" valign="top"><a id="a00ab4be2edaa8e307c6516c598c224a3"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_STATIC_ASSERT</b> (sizeof(struct <a class="el" href="structspdk__scsi__pr__in__report__capabilities__data.html">spdk_scsi_pr_in_report_capabilities_data</a>)==8, &quot;Incorrect size&quot;)</td></tr>
+<tr class="separator:a00ab4be2edaa8e307c6516c598c224a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60097cd0704b01104d5ed33a596ffdfa"><td class="memItemLeft" align="right" valign="top"><a id="a60097cd0704b01104d5ed33a596ffdfa"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_STATIC_ASSERT</b> (sizeof(struct <a class="el" href="structspdk__scsi__pr__in__full__status__desc.html">spdk_scsi_pr_in_full_status_desc</a>)==24, &quot;Incorrect size&quot;)</td></tr>
+<tr class="separator:a60097cd0704b01104d5ed33a596ffdfa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac854e1c1152f3c503f63741b0b611066"><td class="memItemLeft" align="right" valign="top"><a id="ac854e1c1152f3c503f63741b0b611066"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_STATIC_ASSERT</b> (sizeof(struct <a class="el" href="structspdk__scsi__pr__in__full__status__data.html">spdk_scsi_pr_in_full_status_data</a>)==8, &quot;Incorrect size&quot;)</td></tr>
+<tr class="separator:ac854e1c1152f3c503f63741b0b611066"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d387e76a61ca6f49e565790eb028bff"><td class="memItemLeft" align="right" valign="top"><a id="a0d387e76a61ca6f49e565790eb028bff"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_STATIC_ASSERT</b> (sizeof(struct <a class="el" href="structspdk__scsi__pr__out__param__list.html">spdk_scsi_pr_out_param_list</a>)==24, &quot;Incorrect size&quot;)</td></tr>
+<tr class="separator:a0d387e76a61ca6f49e565790eb028bff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1352475ec0fb683e78a868831c1ee9e3"><td class="memItemLeft" align="right" valign="top"><a id="a1352475ec0fb683e78a868831c1ee9e3"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_STATIC_ASSERT</b> (sizeof(struct <a class="el" href="structspdk__scsi__pr__out__reg__and__move__param__list.html">spdk_scsi_pr_out_reg_and_move_param_list</a>)==24, &quot;Incorrect size&quot;)</td></tr>
+<tr class="separator:a1352475ec0fb683e78a868831c1ee9e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>SCSI specification definitions. </p>

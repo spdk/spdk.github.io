@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="Content-Type" content="text/xhtml; charset=utf-8">
   <meta name="generator" content="Doxygen 1.8.13">
-  <title>SPDK: util.h File Reference</title>
+  <title>SPDK: spdk_scsi_pr_out_param_list Struct Reference</title>
   <script type="text/javascript" src="jquery.js"></script>
   <script type="text/javascript" src="dynsections.js"></script>
   <link href="navtree.css" rel="stylesheet" type="text/css"/>
@@ -116,7 +116,7 @@ $(function() {
   </div>
 </div>
 <script type="text/javascript">
-$(document).ready(function(){initNavTree('util_8h.html','');});
+$(document).ready(function(){initNavTree('structspdk__scsi__pr__out__param__list.html','');});
 </script>
 <div id="doc-content">
 <!-- window showing the filter options -->
@@ -135,52 +135,51 @@ $(document).ready(function(){initNavTree('util_8h.html','');});
 
 <div class="header">
   <div class="summary">
-<a href="#define-members">Macros</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#pub-attribs">Data Fields</a>  </div>
   <div class="headertitle">
-<div class="title">util.h File Reference</div>  </div>
+<div class="title">spdk_scsi_pr_out_param_list Struct Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-
-<p>General utility functions.  
-<a href="#details">More...</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
-Macros</h2></td></tr>
-<tr class="memitem:a837456da8a8d13c0f84c1b362acfe482"><td class="memItemLeft" align="right" valign="top"><a id="a837456da8a8d13c0f84c1b362acfe482"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_min</b>(a,  b)&#160;&#160;&#160;(((a)&lt;(b))?(a):(b))</td></tr>
-<tr class="separator:a837456da8a8d13c0f84c1b362acfe482"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4ef0b5332740873cf0414a8b44000128"><td class="memItemLeft" align="right" valign="top"><a id="a4ef0b5332740873cf0414a8b44000128"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_max</b>(a,  b)&#160;&#160;&#160;(((a)&gt;(b))?(a):(b))</td></tr>
-<tr class="separator:a4ef0b5332740873cf0414a8b44000128"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a21e1907187f8bf2c4b0c0de12c113ed6"><td class="memItemLeft" align="right" valign="top"><a id="a21e1907187f8bf2c4b0c0de12c113ed6"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_COUNTOF</b>(arr)&#160;&#160;&#160;(sizeof(arr) / sizeof((arr)[0]))</td></tr>
-<tr class="separator:a21e1907187f8bf2c4b0c0de12c113ed6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ace0946954cf4fed6e4f3b7f87180f984"><td class="memItemLeft" align="right" valign="top"><a id="ace0946954cf4fed6e4f3b7f87180f984"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_CONTAINEROF</b>(ptr,  type,  member)&#160;&#160;&#160;((type *)((uintptr_t)ptr - offsetof(type, member)))</td></tr>
-<tr class="separator:ace0946954cf4fed6e4f3b7f87180f984"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaa368537876ed0aee8ae810a240b2dfb"><td class="memItemLeft" align="right" valign="top"><a id="aaa368537876ed0aee8ae810a240b2dfb"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_SEC_TO_USEC</b>&#160;&#160;&#160;1000000ULL</td></tr>
-<tr class="separator:aaa368537876ed0aee8ae810a240b2dfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac1fbd59e0e9f73e71f416385d606cc52"><td class="memItemLeft" align="right" valign="top"><a id="ac1fbd59e0e9f73e71f416385d606cc52"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_SEC_TO_NSEC</b>&#160;&#160;&#160;1000000000ULL</td></tr>
-<tr class="separator:ac1fbd59e0e9f73e71f416385d606cc52"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
-Functions</h2></td></tr>
-<tr class="memitem:a8572bc8de56d3587c8cf85dae67c1ca0"><td class="memItemLeft" align="right" valign="top"><a id="a8572bc8de56d3587c8cf85dae67c1ca0"></a>
-static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_u32log2</b> (uint32_t x)</td></tr>
-<tr class="separator:a8572bc8de56d3587c8cf85dae67c1ca0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a22383e04171a98834c5f21f0c460e322"><td class="memItemLeft" align="right" valign="top"><a id="a22383e04171a98834c5f21f0c460e322"></a>
-static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_align32pow2</b> (uint32_t x)</td></tr>
-<tr class="separator:a22383e04171a98834c5f21f0c460e322"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a63e2af9bd97c1250c11a2e585336f377"><td class="memItemLeft" align="right" valign="top"><a id="a63e2af9bd97c1250c11a2e585336f377"></a>
-static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8h.html#a63e2af9bd97c1250c11a2e585336f377">spdk_u32_is_pow2</a> (uint32_t x)</td></tr>
-<tr class="memdesc:a63e2af9bd97c1250c11a2e585336f377"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if a uint32_t is a power of 2. <br /></td></tr>
-<tr class="separator:a63e2af9bd97c1250c11a2e585336f377"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Data Fields</h2></td></tr>
+<tr class="memitem:ae81580fac858295baa51c58d9a71a750"><td class="memItemLeft" align="right" valign="top"><a id="ae81580fac858295baa51c58d9a71a750"></a>
+uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>rkey</b></td></tr>
+<tr class="separator:ae81580fac858295baa51c58d9a71a750"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9825184bbdac97386c597fa8c259227"><td class="memItemLeft" align="right" valign="top"><a id="ab9825184bbdac97386c597fa8c259227"></a>
+uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>sa_rkey</b></td></tr>
+<tr class="separator:ab9825184bbdac97386c597fa8c259227"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6297b01d65b23d0bcdde3201f655feba"><td class="memItemLeft" align="right" valign="top"><a id="a6297b01d65b23d0bcdde3201f655feba"></a>
+uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>obsolete1</b> [4]</td></tr>
+<tr class="separator:a6297b01d65b23d0bcdde3201f655feba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf717cce996b7136aea6b75b2e46b994"><td class="memItemLeft" align="right" valign="top"><a id="adf717cce996b7136aea6b75b2e46b994"></a>
+uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>aptpl</b>: 1</td></tr>
+<tr class="separator:adf717cce996b7136aea6b75b2e46b994"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0b4102c74fb95be8b31e4645d487ab3"><td class="memItemLeft" align="right" valign="top"><a id="ac0b4102c74fb95be8b31e4645d487ab3"></a>
+uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>reserved1</b>: 1</td></tr>
+<tr class="separator:ac0b4102c74fb95be8b31e4645d487ab3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61ab361364890f3d772bf58b3da982b4"><td class="memItemLeft" align="right" valign="top"><a id="a61ab361364890f3d772bf58b3da982b4"></a>
+uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>all_tg_pt</b>: 1</td></tr>
+<tr class="separator:a61ab361364890f3d772bf58b3da982b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a0f7c15e69937722edc152939836d42"><td class="memItemLeft" align="right" valign="top"><a id="a0a0f7c15e69937722edc152939836d42"></a>
+uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>spec_i_pt</b>: 1</td></tr>
+<tr class="separator:a0a0f7c15e69937722edc152939836d42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb9d357a2508b658a1da18b6226ab499"><td class="memItemLeft" align="right" valign="top"><a id="abb9d357a2508b658a1da18b6226ab499"></a>
+uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>reserved2</b>: 4</td></tr>
+<tr class="separator:abb9d357a2508b658a1da18b6226ab499"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2bb6b3a9ff870605deb8a9ae0e7129a1"><td class="memItemLeft" align="right" valign="top"><a id="a2bb6b3a9ff870605deb8a9ae0e7129a1"></a>
+uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>reserved3</b></td></tr>
+<tr class="separator:a2bb6b3a9ff870605deb8a9ae0e7129a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd2b9b1342b53a9bd033df702b2803e3"><td class="memItemLeft" align="right" valign="top"><a id="afd2b9b1342b53a9bd033df702b2803e3"></a>
+uint16_t&#160;</td><td class="memItemRight" valign="bottom"><b>obsolete2</b></td></tr>
+<tr class="separator:afd2b9b1342b53a9bd033df702b2803e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b830792f8b5708de34edda22ab623ac"><td class="memItemLeft" align="right" valign="top"><a id="a7b830792f8b5708de34edda22ab623ac"></a>
+uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>param_data</b> []</td></tr>
+<tr class="separator:a7b830792f8b5708de34edda22ab623ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>General utility functions. </p>
-</div></div><!-- contents -->
+<hr/>The documentation for this struct was generated from the following file:<ul>
+<li><a class="el" href="scsi__spec_8h.html">scsi_spec.h</a></li>
+</ul>
+</div><!-- contents -->
 </div><!-- doc-content -->
 </div>

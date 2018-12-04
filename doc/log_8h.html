@@ -201,21 +201,21 @@ Functions</h2></td></tr>
 <tr class="memitem:aaa20a1f56503b0d9f16c82b451fb338b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log_8h.html#aaa20a1f56503b0d9f16c82b451fb338b">spdk_log</a> (enum <a class="el" href="log_8h.html#a188d351bd05093cba1d8594ee9988efd">spdk_log_level</a> level, const char *file, const int line, const char *func, const char *format,...)</td></tr>
 <tr class="memdesc:aaa20a1f56503b0d9f16c82b451fb338b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write messages to the log file.  <a href="#aaa20a1f56503b0d9f16c82b451fb338b">More...</a><br /></td></tr>
 <tr class="separator:aaa20a1f56503b0d9f16c82b451fb338b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aec3839ea313ef38de623b982b1cdf603"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log_8h.html#aec3839ea313ef38de623b982b1cdf603">spdk_trace_dump</a> (FILE *fp, const char *label, const void *buf, size_t len)</td></tr>
-<tr class="memdesc:aec3839ea313ef38de623b982b1cdf603"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dump the trace to a file.  <a href="#aec3839ea313ef38de623b982b1cdf603">More...</a><br /></td></tr>
-<tr class="separator:aec3839ea313ef38de623b982b1cdf603"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af31998ef403c5644e063654474db451e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log_8h.html#af31998ef403c5644e063654474db451e">spdk_log_get_trace_flag</a> (const char *flag)</td></tr>
-<tr class="memdesc:af31998ef403c5644e063654474db451e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check whether the trace flag exists and is enabled.  <a href="#af31998ef403c5644e063654474db451e">More...</a><br /></td></tr>
-<tr class="separator:af31998ef403c5644e063654474db451e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a98ae1f95b60b386a84b4144cf756d7a3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log_8h.html#a98ae1f95b60b386a84b4144cf756d7a3">spdk_log_set_trace_flag</a> (const char *flag)</td></tr>
-<tr class="memdesc:a98ae1f95b60b386a84b4144cf756d7a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable the trace flag.  <a href="#a98ae1f95b60b386a84b4144cf756d7a3">More...</a><br /></td></tr>
-<tr class="separator:a98ae1f95b60b386a84b4144cf756d7a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5492feb5ef1c11d89bed4ccf3e8135c8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log_8h.html#a5492feb5ef1c11d89bed4ccf3e8135c8">spdk_log_clear_trace_flag</a> (const char *flag)</td></tr>
-<tr class="memdesc:a5492feb5ef1c11d89bed4ccf3e8135c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear a trace flag.  <a href="#a5492feb5ef1c11d89bed4ccf3e8135c8">More...</a><br /></td></tr>
-<tr class="separator:a5492feb5ef1c11d89bed4ccf3e8135c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4a47d01813ce878b34c146b32f106616"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log_8h.html#a4a47d01813ce878b34c146b32f106616">spdk_tracelog_usage</a> (FILE *f, const char *trace_arg)</td></tr>
-<tr class="memdesc:a4a47d01813ce878b34c146b32f106616"><td class="mdescLeft">&#160;</td><td class="mdescRight">Show all the log trace flags and their usage.  <a href="#a4a47d01813ce878b34c146b32f106616">More...</a><br /></td></tr>
-<tr class="separator:a4a47d01813ce878b34c146b32f106616"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad360332e6a9699cdfecdac00f768c0b1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log_8h.html#ad360332e6a9699cdfecdac00f768c0b1">spdk_log_dump</a> (FILE *fp, const char *label, const void *buf, size_t len)</td></tr>
+<tr class="memdesc:ad360332e6a9699cdfecdac00f768c0b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Log the contents of a raw buffer to a file.  <a href="#ad360332e6a9699cdfecdac00f768c0b1">More...</a><br /></td></tr>
+<tr class="separator:ad360332e6a9699cdfecdac00f768c0b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66ec4ca21d549ea445c7c662b3f1c637"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log_8h.html#a66ec4ca21d549ea445c7c662b3f1c637">spdk_log_get_flag</a> (const char *flag)</td></tr>
+<tr class="memdesc:a66ec4ca21d549ea445c7c662b3f1c637"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check whether the log flag exists and is enabled.  <a href="#a66ec4ca21d549ea445c7c662b3f1c637">More...</a><br /></td></tr>
+<tr class="separator:a66ec4ca21d549ea445c7c662b3f1c637"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9419a88ede016c62feaa52fb0fed019"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log_8h.html#aa9419a88ede016c62feaa52fb0fed019">spdk_log_set_flag</a> (const char *flag)</td></tr>
+<tr class="memdesc:aa9419a88ede016c62feaa52fb0fed019"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable the log flag.  <a href="#aa9419a88ede016c62feaa52fb0fed019">More...</a><br /></td></tr>
+<tr class="separator:aa9419a88ede016c62feaa52fb0fed019"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a253e880aa9fd469afd825d77fe9a3211"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log_8h.html#a253e880aa9fd469afd825d77fe9a3211">spdk_log_clear_flag</a> (const char *flag)</td></tr>
+<tr class="memdesc:a253e880aa9fd469afd825d77fe9a3211"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear a log flag.  <a href="#a253e880aa9fd469afd825d77fe9a3211">More...</a><br /></td></tr>
+<tr class="separator:a253e880aa9fd469afd825d77fe9a3211"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99820ac7f38f6ad187be62b3bbdb7d64"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log_8h.html#a99820ac7f38f6ad187be62b3bbdb7d64">spdk_log_usage</a> (FILE *f, const char *log_arg)</td></tr>
+<tr class="memdesc:a99820ac7f38f6ad187be62b3bbdb7d64"><td class="mdescLeft">&#160;</td><td class="mdescRight">Show all the log flags and their usage.  <a href="#a99820ac7f38f6ad187be62b3bbdb7d64">More...</a><br /></td></tr>
+<tr class="separator:a99820ac7f38f6ad187be62b3bbdb7d64"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Logging interfaces. </p>
@@ -304,14 +304,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a5492feb5ef1c11d89bed4ccf3e8135c8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5492feb5ef1c11d89bed4ccf3e8135c8">&#9670;&nbsp;</a></span>spdk_log_clear_trace_flag()</h2>
+<a id="a253e880aa9fd469afd825d77fe9a3211"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a253e880aa9fd469afd825d77fe9a3211">&#9670;&nbsp;</a></span>spdk_log_clear_flag()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int spdk_log_clear_trace_flag </td>
+          <td class="memname">int spdk_log_clear_flag </td>
           <td>(</td>
           <td class="paramtype">const char *&#160;</td>
           <td class="paramname"><em>flag</em></td><td>)</td>
@@ -320,10 +320,10 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Clear a trace flag. </p>
+<p>Clear a log flag. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">flag</td><td>Trace flag to clear.</td></tr>
+    <tr><td class="paramname">flag</td><td>Log flag to clear.</td></tr>
   </table>
   </dd>
 </dl>
@@ -352,6 +352,57 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="ad360332e6a9699cdfecdac00f768c0b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad360332e6a9699cdfecdac00f768c0b1">&#9670;&nbsp;</a></span>spdk_log_dump()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_log_dump </td>
+          <td>(</td>
+          <td class="paramtype">FILE *&#160;</td>
+          <td class="paramname"><em>fp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>label</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>buf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Log the contents of a raw buffer to a file. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fp</td><td>File to hold the log. </td></tr>
+    <tr><td class="paramname">label</td><td>Label to print to the file. </td></tr>
+    <tr><td class="paramname">buf</td><td>Buffer that holds the log information. </td></tr>
+    <tr><td class="paramname">len</td><td>Length of buffer to dump. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a302d0d8666e634fca550d650ff553a6b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a302d0d8666e634fca550d650ff553a6b">&#9670;&nbsp;</a></span>spdk_log_get_backtrace_level()</h2>
 
@@ -370,6 +421,27 @@ Functions</h2></td></tr>
 
 <p>Get the current log level threshold for showing stack trace in log message. </p>
 <dl class="section return"><dt>Returns</dt><dd>the current log level threshold for stack trace. </dd></dl>
+
+</div>
+</div>
+<a id="a66ec4ca21d549ea445c7c662b3f1c637"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a66ec4ca21d549ea445c7c662b3f1c637">&#9670;&nbsp;</a></span>spdk_log_get_flag()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool spdk_log_get_flag </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>flag</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Check whether the log flag exists and is enabled. </p>
+<dl class="section return"><dt>Returns</dt><dd>true if enabled, or false otherwise. </dd></dl>
 
 </div>
 </div>
@@ -412,27 +484,6 @@ Functions</h2></td></tr>
 
 <p>Get the current log level print threshold. </p>
 <dl class="section return"><dt>Returns</dt><dd>the current log level print threshold. </dd></dl>
-
-</div>
-</div>
-<a id="af31998ef403c5644e063654474db451e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af31998ef403c5644e063654474db451e">&#9670;&nbsp;</a></span>spdk_log_get_trace_flag()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool spdk_log_get_trace_flag </td>
-          <td>(</td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>flag</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Check whether the trace flag exists and is enabled. </p>
-<dl class="section return"><dt>Returns</dt><dd>true if enabled, or false otherwise. </dd></dl>
 
 </div>
 </div>
@@ -482,6 +533,33 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="aa9419a88ede016c62feaa52fb0fed019"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa9419a88ede016c62feaa52fb0fed019">&#9670;&nbsp;</a></span>spdk_log_set_flag()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_log_set_flag </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>flag</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Enable the log flag. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">flag</td><td>Log flag to be enabled.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, -1 on failure. </dd></dl>
 
 </div>
 </div>
@@ -539,92 +617,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a98ae1f95b60b386a84b4144cf756d7a3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a98ae1f95b60b386a84b4144cf756d7a3">&#9670;&nbsp;</a></span>spdk_log_set_trace_flag()</h2>
+<a id="a99820ac7f38f6ad187be62b3bbdb7d64"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a99820ac7f38f6ad187be62b3bbdb7d64">&#9670;&nbsp;</a></span>spdk_log_usage()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int spdk_log_set_trace_flag </td>
-          <td>(</td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>flag</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Enable the trace flag. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">flag</td><td>Trace flag to be enabled.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>0 on success, -1 on failure. </dd></dl>
-
-</div>
-</div>
-<a id="aec3839ea313ef38de623b982b1cdf603"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aec3839ea313ef38de623b982b1cdf603">&#9670;&nbsp;</a></span>spdk_trace_dump()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void spdk_trace_dump </td>
-          <td>(</td>
-          <td class="paramtype">FILE *&#160;</td>
-          <td class="paramname"><em>fp</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>label</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const void *&#160;</td>
-          <td class="paramname"><em>buf</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>len</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Dump the trace to a file. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">fp</td><td>File to hold the trace. </td></tr>
-    <tr><td class="paramname">label</td><td>Label to print to the file. </td></tr>
-    <tr><td class="paramname">buf</td><td>Buffer that holds the trace information. </td></tr>
-    <tr><td class="paramname">len</td><td>Length of trace to dump. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a4a47d01813ce878b34c146b32f106616"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4a47d01813ce878b34c146b32f106616">&#9670;&nbsp;</a></span>spdk_tracelog_usage()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void spdk_tracelog_usage </td>
+          <td class="memname">void spdk_log_usage </td>
           <td>(</td>
           <td class="paramtype">FILE *&#160;</td>
           <td class="paramname"><em>f</em>, </td>
@@ -633,7 +633,7 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>trace_arg</em>&#160;</td>
+          <td class="paramname"><em>log_arg</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -643,11 +643,11 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Show all the log trace flags and their usage. </p>
+<p>Show all the log flags and their usage. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">f</td><td>File to hold all the flags' information. </td></tr>
-    <tr><td class="paramname">trace_arg</td><td>Command line option to set/enable the trace flag. </td></tr>
+    <tr><td class="paramname">log_arg</td><td>Command line option to set/enable the log flag. </td></tr>
   </table>
   </dd>
 </dl>
