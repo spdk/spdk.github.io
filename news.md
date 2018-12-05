@@ -5,6 +5,19 @@ title:  "SPDK in the News"
 
 # News items
 
+## November 2 2018 Linux Piter #4
+
+### [SPDK and Nutanix AHV: minimising the virtualisation overhead](https://linuxpiter.com/en/materials/2422)
+> At Linux Piter, Dr Felipe Franciosi discussed the performance challeges of storage virtulization. He talked about how SPDK is being leveraged to minimise the software overhead to record lows and shared performance data that show that it is possible for virtual machines to access Intel® Optane™ SSDs in under 10 microseconds for 4K I/O requests through virtio-scsi.
+
+## The Nutanix Bible
+
+### [User vs. Kernel Space](http://nutanixbible.com/#anchor-user-vs.-kernel-space-15)
+> Explains the pros/cons of User vs. Kernel Space.
+
+### [The Move to User Space / Polling](http://nutanixbible.com/#anchor-the-move-to-user-space-/-polling-17)
+> As devices have become far faster (e.g. NVMe, Intel® Optane™, pMEM), the kernel and device interaction has become a bottleneck. To eliminate these bottlenecks, a lot of vendors are moving things out of the kernel to user space with polling and seeing much better results. A great example of this are the Storage Performance Development Kit (SPDK) and Data Plane Development Kit (DPDK). These projects are geared at maximizing the performance and reducing latency as much as possible, and have shown great success.
+
 ## AliCloud - High Performance Local SSD
 
 ### [SPDK accelerates AliCloud Local SSD model](https://promotion.aliyun.com/ntms/act/ecshighperformance.html?open_id=1d8213d3-b437-4596-a88a-d27798942d3a-&open_cid=4703)
@@ -18,7 +31,7 @@ title:  "SPDK in the News"
 ## August 20 2018 Forbes
 
 ### [More Flash Memory News](https://www.forbes.com/sites/tomcoughlin/2018/08/20/more-flash-memory-news/#4fd9f6825830)
-> At FMS, SolarFlare showcased Intel ®Optane™ SSDs with Solarflare XTremeScale™ 100GBE Ethernet adapters implementing the upcoming NVMe-oF TCP spec using SPDK. The NVMe-based Optane storage over TCP provides a low-cost high performance solid-state network that has latency as low as 15 microseconds.
+> At FMS, SolarFlare showcased Intel® Optane™ SSDs with Solarflare XTremeScale™ 100GBE Ethernet adapters implementing the upcoming NVMe-oF TCP spec using SPDK. The NVMe-based Optane storage over TCP provides a low-cost high performance solid-state network that has latency as low as 15 microseconds.
 
 ## August 2018 44th International Conference on Very Large Data Bases
 
