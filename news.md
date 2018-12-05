@@ -5,6 +5,11 @@ title:  "SPDK in the News"
 
 # News items
 
+## November 2 2018 Linux Piter #4
+
+### [SPDK and Nutanix AHV: minimising the virtualisation overhead](https://linuxpiter.com/en/materials/2422)
+> At Linux Piter, Dr Felipe Franciosi discussed the performance challeges of storage virtulization. He talked about how SPDK is being leveraged to minimise the software overhead to record lows and shared performance data that show that it is possible for virtual machines to access Intel ®Optane™ SSDs in under 10 microseconds for 4K I/O requests through virtio-scsi.
+
 ## AliCloud - High Performance Local SSD
 
 ### [SPDK accelerates AliCloud Local SSD model](https://promotion.aliyun.com/ntms/act/ecshighperformance.html?open_id=1d8213d3-b437-4596-a88a-d27798942d3a-&open_cid=4703)
