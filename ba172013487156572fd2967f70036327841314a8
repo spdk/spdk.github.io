@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "459c4696_d4534e16",
+        "filename": "news.md",
+        "patchSetId": 3
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 1011222
+      },
+      "writtenOn": "2018-12-05T21:52:26Z",
+      "side": 1,
+      "message": "Missed some other typos in previous review.\n\nDr.\nchallenges\nvirtualization",
+      "revId": "ba172013487156572fd2967f70036327841314a8",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "18bbffde_f0578b10",
+        "filename": "news.md",
+        "patchSetId": 3
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 1011222
+      },
+      "writtenOn": "2018-12-05T21:52:26Z",
+      "side": 1,
+      "message": "\"A great example\" \u003d\u003e \"Great examples\"\n\nI know you\u0027re trying to just quote their article exactly.  I\u0027d like the SPDK version to be grammatically correct, then if users go read the article and see the typos, it will be obvious it was a Nutanix typo, not an SPDK typo.  :)",
+      "revId": "ba172013487156572fd2967f70036327841314a8",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
