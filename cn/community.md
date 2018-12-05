@@ -19,43 +19,24 @@ lang: cn
 
 # 社区会议
 
-SPDK社区会议对所有人开放，并鼓励所有人参与。社区会议的主要目的是, 讨论那些口头交流比电子邮件或IRC交流更有效的话题。会议在WebEx上举行。
-社区会议每周一次，会议时间每周交替，一周是欧洲友好的会议时间，一周是亚太友好的会议时间。
+SPDK社区会议对所有人开放，并鼓励所有人参与。社区会议的主要目的是, 讨论那些口头交流比电子邮件或IRC交流更有效的话题。会议通过[FreeConferenceCall](https://www.freeconferencecall.com)举行。社区会议每周一次，会议时间每周交替，一周是欧洲友好的会议时间，一周是亚太友好的会议时间。
 
-所有社区会议（包括Bug讨论会议）的密码，为：
-![SPDK](../../img/comm_meeting.jpg "SPDK")
+请在会议开始前在[Trello](https://trello.com/b/DvM7XayJ)相关页面上把需要讨论的话题和相关信息列出来。如果你没法登陆Trello的话，请注册账号并通过IRC或者邮件列表等渠道联系我们。如果我们在既定的会议时间内讨论完所有列出来的话题的话，我们可以用会议剩下的时间讨论其他事宜。
 
-注意：请不要与访问代码混淆。
+除了社区会议，还有个专门的Bug讨论会议，每两周在亚太友好的时间。请注意Bug在[SPDK GitHub issue tracker](https://github.com/spdk/spdk/issues)上记录。
+
+所有的会议，包括Bug讨论会议，使用相同的会议信息。为了避免机器人抓取信息登入会议，请参考下面图示的会议信息。方便起见，可以将会议的链接作为书签保存方便下次登陆。
+
+![SPDK](../../img/spdk_free.jpg "SPDK")
 
 ## 下一次欧洲友好的会议时间
 <div id="euro-mtg"></div>
-[通过WebEx加入会议](https://intel.webex.com/intel/j.php?MTID=m75a6c6a96903178b1725f810150caf6d)<br/>
-或者通过电话加入会议<br/>
-+1-210-795-1110 美国地区收费<br/>
-+1-866-662-9987 美国地区免费<br/>
-会议号码 (访问代号): 594 725 952
 
 ## 下一次亚太会议时间
 <div id="asia-mtg"></div>
-[通过WebEx加入会议](https://intel.webex.com/intel/j.php?MTID=m6aabab242b8b52729cf97e64348d64e8)<br/>
-或者通过电话加入会议<br/>
-+1-210-795-1110 美国地区收费<br/>
-+1-866-662-9987 美国地区免费<br/>
-会议号码 (访问代号): 592 674 686
-
-IRC中也将公布会议通知。
-
-请于会议开始之前在[Trello](https://trello.com/b/DvM7XayJ) 上发布您的建议话题。如果您还没有Trello账号，请注册并在IRC或者收件人列表中请求加入到SPDK板块。如果在会议结束前能够讨论完所有的建议话题，剩下的时间可以用于讨论其他事宜。
 
 ## Bug讨论
 <div id="asia-bug-mtg"></div>
-[通过WebEx加入会议 ](https://intel.webex.com/intel/j.php?MTID=m9c8f9627c8fde4e49764900ba38bfe30)<br/>
-或者通过电话加入会议<br/>
-+1-210-795-1110 美国地区收费<br/>
-+1-866-662-9987 美国地区免费<br/>
-会议号码 (访问代号): 592 309 994
-
-请注意，我们在 [SPDK GitHub issue tracker](https://github.com/spdk/spdk/issues)上跟踪bug和特性需求。
 
 # 贡献代码
 
