@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "3fe548b3_4635111a",
+        "filename": "news.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 1011222
+      },
+      "writtenOn": "2018-12-05T21:34:15Z",
+      "side": 1,
+      "message": "Registration symbol should be immediately after \"Intel\" with a space before Optane.",
+      "revId": "82da6a81475518970aca7865bbe42ea3f88ffe45",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "a1dc8270_ba070295",
+        "filename": "news.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 1011222
+      },
+      "writtenOn": "2018-12-05T21:34:15Z",
+      "side": 1,
+      "message": "Nutanix may have put \"Intel\" before \"Storage Performance Development Kit\", but I\u0027d suggest we remove that from this quote.  We try to avoid saying \"Intel SPDK\" - just SPDK.\n\nShould we also add R and TM symbols to Intel Optane?",
+      "revId": "82da6a81475518970aca7865bbe42ea3f88ffe45",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
