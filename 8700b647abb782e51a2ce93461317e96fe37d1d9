@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "b10af4ef_f500ec02",
+        "filename": "css/spdk.css",
+        "patchSetId": 2
+      },
+      "lineNbr": 233,
+      "author": {
+        "id": 1010531
+      },
+      "writtenOn": "2018-12-06T23:06:03Z",
+      "side": 1,
+      "message": "This is boiler-plate from the bootstrap documentation.",
+      "revId": "8700b647abb782e51a2ce93461317e96fe37d1d9",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
