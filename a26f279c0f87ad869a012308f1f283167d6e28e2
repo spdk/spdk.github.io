@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "2810313a_f10d9b8e",
+        "filename": "_posts/2018-9-19-softroce.md",
+        "patchSetId": 17
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 1011207
+      },
+      "writtenOn": "2018-12-06T04:08:29Z",
+      "side": 1,
+      "message": "looks like need to be ../../img",
+      "range": {
+        "startLine": 17,
+        "startChar": 10,
+        "endLine": 17,
+        "endChar": 12
+      },
+      "revId": "a26f279c0f87ad869a012308f1f283167d6e28e2",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
