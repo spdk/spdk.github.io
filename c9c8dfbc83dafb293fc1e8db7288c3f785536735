@@ -1,0 +1,73 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "957402d2_b6abda4b",
+        "filename": "cn/community.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 1011885
+      },
+      "writtenOn": "2018-12-06T04:06:57Z",
+      "side": 1,
+      "message": "删掉“的话”",
+      "range": {
+        "startLine": 24,
+        "startChar": 134,
+        "endLine": 24,
+        "endChar": 136
+      },
+      "revId": "c9c8dfbc83dafb293fc1e8db7288c3f785536735",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "f60205e5_010cc1ca",
+        "filename": "cn/community.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 1011885
+      },
+      "writtenOn": "2018-12-06T04:06:57Z",
+      "side": 1,
+      "message": "可以把“的话”删掉吗？",
+      "range": {
+        "startLine": 24,
+        "startChar": 82,
+        "endLine": 24,
+        "endChar": 84
+      },
+      "revId": "c9c8dfbc83dafb293fc1e8db7288c3f785536735",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7524c2ff_02c88795",
+        "filename": "cn/community.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 32,
+      "author": {
+        "id": 1011885
+      },
+      "writtenOn": "2018-12-06T04:06:57Z",
+      "side": 1,
+      "message": "删掉“友好的”，和后面亚太会议时间同步",
+      "range": {
+        "startLine": 32,
+        "startChar": 8,
+        "endLine": 32,
+        "endChar": 11
+      },
+      "revId": "c9c8dfbc83dafb293fc1e8db7288c3f785536735",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
