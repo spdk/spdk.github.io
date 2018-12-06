@@ -1,0 +1,44 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "caa356a6_e6a934d5",
+        "filename": "cn/usecase.md",
+        "patchSetId": 24
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 1011207
+      },
+      "writtenOn": "2018-12-06T05:56:20Z",
+      "side": 1,
+      "message": "Would suggest to put this as the first item. Thanks.",
+      "range": {
+        "startLine": 12,
+        "startChar": 3,
+        "endLine": 12,
+        "endChar": 6
+      },
+      "revId": "4e9604ec1530db3320b2e2c51ef0022709d023b4",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "4a4486df_c20d52eb",
+        "filename": "cn/usecase.md",
+        "patchSetId": 24
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 1011207
+      },
+      "writtenOn": "2018-12-06T05:56:20Z",
+      "side": 1,
+      "message": "Also we may add the Tencent Database here\n\nhttps://www.cnblogs.com/qcloud1001/p/9087911.html",
+      "revId": "4e9604ec1530db3320b2e2c51ef0022709d023b4",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
