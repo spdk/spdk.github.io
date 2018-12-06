@@ -151,10 +151,10 @@ Typedefs</h2></td></tr>
 <tr class="memitem:a143b0bad5a250a1a6d27b087be67627b"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ioat_8h.html#a143b0bad5a250a1a6d27b087be67627b">spdk_ioat_req_cb</a>) (void *arg)</td></tr>
 <tr class="memdesc:a143b0bad5a250a1a6d27b087be67627b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Signature for callback function invoked when a request is completed.  <a href="#a143b0bad5a250a1a6d27b087be67627b">More...</a><br /></td></tr>
 <tr class="separator:a143b0bad5a250a1a6d27b087be67627b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a41d999ded01b3bc2b1a1bce0c48083a7"><td class="memItemLeft" align="right" valign="top">typedef bool(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ioat_8h.html#a41d999ded01b3bc2b1a1bce0c48083a7">spdk_ioat_probe_cb</a>) (void *cb_ctx, struct spdk_pci_device *pci_dev)</td></tr>
+<tr class="memitem:a41d999ded01b3bc2b1a1bce0c48083a7"><td class="memItemLeft" align="right" valign="top">typedef bool(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ioat_8h.html#a41d999ded01b3bc2b1a1bce0c48083a7">spdk_ioat_probe_cb</a>) (void *cb_ctx, struct <a class="el" href="structspdk__pci__device.html">spdk_pci_device</a> *pci_dev)</td></tr>
 <tr class="memdesc:a41d999ded01b3bc2b1a1bce0c48083a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback for <a class="el" href="ioat_8h.html#a784c1a69962e0964cf6988badd945b6f" title="Enumerate the I/OAT devices attached to the system and attach the userspace I/OAT driver to them if d...">spdk_ioat_probe()</a> enumeration.  <a href="#a41d999ded01b3bc2b1a1bce0c48083a7">More...</a><br /></td></tr>
 <tr class="separator:a41d999ded01b3bc2b1a1bce0c48083a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8826bf4e7c57228794f486368217a494"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ioat_8h.html#a8826bf4e7c57228794f486368217a494">spdk_ioat_attach_cb</a>) (void *cb_ctx, struct spdk_pci_device *pci_dev, struct spdk_ioat_chan *ioat)</td></tr>
+<tr class="memitem:a8826bf4e7c57228794f486368217a494"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ioat_8h.html#a8826bf4e7c57228794f486368217a494">spdk_ioat_attach_cb</a>) (void *cb_ctx, struct <a class="el" href="structspdk__pci__device.html">spdk_pci_device</a> *pci_dev, struct spdk_ioat_chan *ioat)</td></tr>
 <tr class="memdesc:a8826bf4e7c57228794f486368217a494"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback for <a class="el" href="ioat_8h.html#a784c1a69962e0964cf6988badd945b6f" title="Enumerate the I/OAT devices attached to the system and attach the userspace I/OAT driver to them if d...">spdk_ioat_probe()</a> to report a device that has been attached to the userspace I/OAT driver.  <a href="#a8826bf4e7c57228794f486368217a494">More...</a><br /></td></tr>
 <tr class="separator:a8826bf4e7c57228794f486368217a494"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -197,7 +197,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef void(* spdk_ioat_attach_cb) (void *cb_ctx, struct spdk_pci_device *pci_dev, struct spdk_ioat_chan *ioat)</td>
+          <td class="memname">typedef void(* spdk_ioat_attach_cb) (void *cb_ctx, struct <a class="el" href="structspdk__pci__device.html">spdk_pci_device</a> *pci_dev, struct spdk_ioat_chan *ioat)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -221,7 +221,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef bool(* spdk_ioat_probe_cb) (void *cb_ctx, struct spdk_pci_device *pci_dev)</td>
+          <td class="memname">typedef bool(* spdk_ioat_probe_cb) (void *cb_ctx, struct <a class="el" href="structspdk__pci__device.html">spdk_pci_device</a> *pci_dev)</td>
         </tr>
       </table>
 </div><div class="memdoc">

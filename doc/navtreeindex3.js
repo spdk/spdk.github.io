@@ -1,5 +1,10 @@
 var NAVTREEINDEX3 =
 {
+"ioat__spec_8h.html#abbcc20718fe5fe1f4f4d2dde66f43ec8":[14,0,22,14],
+"ioat__spec_8h.html#abe11ac520cafc0ecbfd7389608d01b56":[14,0,22,34],
+"ioat__spec_8h.html#ac127fc883ba5322b4ed702f128e69644":[14,0,22,32],
+"ioat__spec_8h.html#ac20a02f512ee201e0ccfab67e42c4124":[14,0,22,31],
+"ioat__spec_8h.html#ac21b86520103171bb2b8845536b580e4":[14,0,22,38],
 "ioat__spec_8h.html#ac8e2123ef0becc284074f97470b6fcca":[14,0,22,44],
 "ioat__spec_8h.html#acf92e6fa4c936c453363f5ab3d8dac17":[14,0,22,24],
 "ioat__spec_8h.html#ad6decf15f582db03646116195bf1795f":[14,0,22,16],
@@ -244,10 +249,5 @@ var NAVTREEINDEX3 =
 "jsonrpc.html#rpc_construct_lvol_bdev":[3,7,6,4],
 "jsonrpc.html#rpc_construct_lvol_store":[3,7,6,0],
 "jsonrpc.html#rpc_construct_malloc_bdev":[3,7,2,5],
-"jsonrpc.html#rpc_construct_null_bdev":[3,7,2,7],
-"jsonrpc.html#rpc_construct_nvme_bdev":[3,7,2,13],
-"jsonrpc.html#rpc_construct_passthru_bdev":[3,7,2,27],
-"jsonrpc.html#rpc_construct_pmem_bdev":[3,7,2,25],
-"jsonrpc.html#rpc_construct_rbd_bdev":[3,7,2,16],
-"jsonrpc.html#rpc_construct_target_node":[3,7,3,13]
+"jsonrpc.html#rpc_construct_null_bdev":[3,7,2,7]
 };

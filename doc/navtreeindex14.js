@@ -1,5 +1,13 @@
 var NAVTREEINDEX14 =
 {
+"structspdk__nvme__ctrlr__data.html#a67e0d514a1a31a5a74b713e04336ed91":[13,0,80,27],
+"structspdk__nvme__ctrlr__data.html#a6b2aa9b4fb91ae96788c7e52635d7fbb":[13,0,80,108],
+"structspdk__nvme__ctrlr__data.html#a6edd8325d810a42cb7c8962188f3d881":[13,0,80,66],
+"structspdk__nvme__ctrlr__data.html#a6f5d3796f40b51e7eb869652db9ddcb5":[13,0,80,88],
+"structspdk__nvme__ctrlr__data.html#a712df3dba676e976709e41dd77bf1118":[13,0,80,42],
+"structspdk__nvme__ctrlr__data.html#a715c6149ab09be7b186a110ccbff3e2e":[13,0,80,79],
+"structspdk__nvme__ctrlr__data.html#a7234a2b9f5741883bba676b1036781e0":[13,0,80,56],
+"structspdk__nvme__ctrlr__data.html#a72c56d5a31899269b4f615905f501b72":[13,0,80,137],
 "structspdk__nvme__ctrlr__data.html#a7619e3c0063002fc3820d537b932ec82":[13,0,80,69],
 "structspdk__nvme__ctrlr__data.html#a765eacedf50595c8bdf26b5b19ad0ffa":[13,0,80,9],
 "structspdk__nvme__ctrlr__data.html#a76f59c589c1e05b5408065320163e80e":[13,0,80,104],
@@ -241,13 +249,5 @@ var NAVTREEINDEX14 =
 "structspdk__nvme__ns__data.html#a92845e5df214201820179ab8fa063d05":[13,0,118,38],
 "structspdk__nvme__ns__data.html#a98e9c145579ce9ddd4facce020e75f63":[13,0,118,36],
 "structspdk__nvme__ns__data.html#a9ae8a74d4dbae2fec5e858007a7fa2a7":[13,0,118,45],
-"structspdk__nvme__ns__data.html#a9b13e499da82c9fa1a7e4aca8520ae35":[13,0,118,6],
-"structspdk__nvme__ns__data.html#a9ca1ea6d0d79fd1440a9a2003ac98253":[13,0,118,39],
-"structspdk__nvme__ns__data.html#a9db6d23a3a10ec735fb97ae62fba8432":[13,0,118,2],
-"structspdk__nvme__ns__data.html#a9eb43f1776bddb473fdf47c2f1244dca":[13,0,118,13],
-"structspdk__nvme__ns__data.html#aa324a3eeb1fb7252010f8ec486a8cedb":[13,0,118,17],
-"structspdk__nvme__ns__data.html#aa339a187015dc803650a258a49a12191":[13,0,118,41],
-"structspdk__nvme__ns__data.html#aa8c93646596991b968c10aa74703bfb2":[13,0,118,48],
-"structspdk__nvme__ns__data.html#aa9cd6ae4141efa9167775b1c85fcfd13":[13,0,118,35],
-"structspdk__nvme__ns__data.html#aad19d9beb62f0d1305c3a6874b11f284":[13,0,118,18]
+"structspdk__nvme__ns__data.html#a9b13e499da82c9fa1a7e4aca8520ae35":[13,0,118,6]
 };

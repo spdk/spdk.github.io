@@ -185,6 +185,9 @@ Macros</h2></td></tr>
 <tr class="memitem:af1872fadcd12aeba9e638ea456d7eef7"><td class="memItemLeft" align="right" valign="top"><a id="af1872fadcd12aeba9e638ea456d7eef7"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_SCSI_PORT_MAX_NAME_LENGTH</b>&#160;&#160;&#160;255</td></tr>
 <tr class="separator:af1872fadcd12aeba9e638ea456d7eef7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9291a3211ee72c4317bd29e3934ddb21"><td class="memItemLeft" align="right" valign="top"><a id="a9291a3211ee72c4317bd29e3934ddb21"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_SCSI_MAX_TRANSPORT_ID_LENGTH</b>&#160;&#160;&#160;255</td></tr>
+<tr class="separator:a9291a3211ee72c4317bd29e3934ddb21"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
@@ -338,6 +341,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="scsi
 <tr class="memitem:a518c7609b4891b1fae73c0bd5b330686"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="scsi_8h.html#a518c7609b4891b1fae73c0bd5b330686">spdk_scsi_lun_free_io_channel</a> (struct spdk_scsi_desc *desc)</td></tr>
 <tr class="memdesc:a518c7609b4891b1fae73c0bd5b330686"><td class="mdescLeft">&#160;</td><td class="mdescRight">Free I/O channel from the logical unit.  <a href="#a518c7609b4891b1fae73c0bd5b330686">More...</a><br /></td></tr>
 <tr class="separator:a518c7609b4891b1fae73c0bd5b330686"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c5f9ec2f448328e55e2e46e932d2e21"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="scsi_8h.html#a5c5f9ec2f448328e55e2e46e932d2e21">spdk_scsi_port_set_iscsi_transport_id</a> (struct spdk_scsi_port *port, char *iscsi_name, uint64_t isid)</td></tr>
+<tr class="memdesc:a5c5f9ec2f448328e55e2e46e932d2e21"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set iSCSI Initiator port TransportID.  <a href="#a5c5f9ec2f448328e55e2e46e932d2e21">More...</a><br /></td></tr>
+<tr class="separator:a5c5f9ec2f448328e55e2e46e932d2e21"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>SCSI to bdev translation layer. </p>
@@ -1242,6 +1248,50 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="scsi
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the name of the SCSI port. </dd></dl>
+
+</div>
+</div>
+<a id="a5c5f9ec2f448328e55e2e46e932d2e21"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5c5f9ec2f448328e55e2e46e932d2e21">&#9670;&nbsp;</a></span>spdk_scsi_port_set_iscsi_transport_id()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_scsi_port_set_iscsi_transport_id </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_scsi_port *&#160;</td>
+          <td class="paramname"><em>port</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>iscsi_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>isid</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set iSCSI Initiator port TransportID. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">port</td><td>SCSI initiator port. </td></tr>
+    <tr><td class="paramname">iscsi_name</td><td>Initiator name. </td></tr>
+    <tr><td class="paramname">isid</td><td>Session ID. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

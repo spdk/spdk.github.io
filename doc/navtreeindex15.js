@@ -1,5 +1,13 @@
 var NAVTREEINDEX15 =
 {
+"structspdk__nvme__ns__data.html#a9ca1ea6d0d79fd1440a9a2003ac98253":[13,0,118,39],
+"structspdk__nvme__ns__data.html#a9db6d23a3a10ec735fb97ae62fba8432":[13,0,118,2],
+"structspdk__nvme__ns__data.html#a9eb43f1776bddb473fdf47c2f1244dca":[13,0,118,13],
+"structspdk__nvme__ns__data.html#aa324a3eeb1fb7252010f8ec486a8cedb":[13,0,118,17],
+"structspdk__nvme__ns__data.html#aa339a187015dc803650a258a49a12191":[13,0,118,41],
+"structspdk__nvme__ns__data.html#aa8c93646596991b968c10aa74703bfb2":[13,0,118,48],
+"structspdk__nvme__ns__data.html#aa9cd6ae4141efa9167775b1c85fcfd13":[13,0,118,35],
+"structspdk__nvme__ns__data.html#aad19d9beb62f0d1305c3a6874b11f284":[13,0,118,18],
 "structspdk__nvme__ns__data.html#ab511e295c151b4d17911e474711168b9":[13,0,118,21],
 "structspdk__nvme__ns__data.html#ab519092fba38bc386c5bd2aa87feaf4f":[13,0,118,57],
 "structspdk__nvme__ns__data.html#abaf8febb907fce0c00bf286a23ab1695":[13,0,118,11],
@@ -241,13 +249,5 @@ var NAVTREEINDEX15 =
 "structspdk__nvmf__capsule__cmd.html#aa84dfc81da13e098711d8cf0c315430e":[13,0,148,5],
 "structspdk__nvmf__capsule__cmd.html#ac7515fab690df55fdd91026dbda85bea":[13,0,148,4],
 "structspdk__nvmf__discovery__log__page.html":[13,0,149],
-"structspdk__nvmf__discovery__log__page.html#a7880d78598770626ccde4b9af040cd7a":[13,0,149,3],
-"structspdk__nvmf__discovery__log__page.html#a7e04d26edaf36f10db3ba93085f06900":[13,0,149,4],
-"structspdk__nvmf__discovery__log__page.html#a8567c045f8ea0e5b5c0dcde529d32554":[13,0,149,1],
-"structspdk__nvmf__discovery__log__page.html#a8c4ca24e94d27c352074ffac98d97839":[13,0,149,2],
-"structspdk__nvmf__discovery__log__page.html#ae2ba09f0fda8058c4217eb816e7ea513":[13,0,149,0],
-"structspdk__nvmf__discovery__log__page__entry.html":[13,0,150],
-"structspdk__nvmf__discovery__log__page__entry.html#a2ac239007d3805e11d5a0cf0a3b1ce3f":[13,0,150,4],
-"structspdk__nvmf__discovery__log__page__entry.html#a2cc3f0c6ab0ebb7eb85cd3058f0f787f":[13,0,150,9],
-"structspdk__nvmf__discovery__log__page__entry.html#a34f68aaa15f5c3a42c64c25d594b8cdd":[13,0,150,7]
+"structspdk__nvmf__discovery__log__page.html#a7880d78598770626ccde4b9af040cd7a":[13,0,149,3]
 };
