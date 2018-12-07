@@ -28,7 +28,7 @@
 <div class="container-fluid">
   <div id="top">  <!-- do not remove this div, it is closed by doxygen! -->
     <div class="row no-gutters">
-      <div class="col-sm-12">
+      <div class="col-xs-12">
         <section id="nav">
           <div class="navbar navbar-default navbar-static-top banner-tabs">
             <ul class="nav navbar-nav">
@@ -174,6 +174,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a397f151075d3a0a5651221bd74c13c66"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uuid_8h.html#a397f151075d3a0a5651221bd74c13c66">spdk_uuid_generate</a> (struct <a class="el" href="structspdk__uuid.html">spdk_uuid</a> *uuid)</td></tr>
 <tr class="memdesc:a397f151075d3a0a5651221bd74c13c66"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate a new UUID.  <a href="#a397f151075d3a0a5651221bd74c13c66">More...</a><br /></td></tr>
 <tr class="separator:a397f151075d3a0a5651221bd74c13c66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9080d454ffefb2b8e425ca127b72a546"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uuid_8h.html#a9080d454ffefb2b8e425ca127b72a546">spdk_uuid_copy</a> (struct <a class="el" href="structspdk__uuid.html">spdk_uuid</a> *dst, const struct <a class="el" href="structspdk__uuid.html">spdk_uuid</a> *src)</td></tr>
+<tr class="memdesc:a9080d454ffefb2b8e425ca127b72a546"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy a UUID.  <a href="#a9080d454ffefb2b8e425ca127b72a546">More...</a><br /></td></tr>
+<tr class="separator:a9080d454ffefb2b8e425ca127b72a546"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>UUID types and functions. </p>
@@ -213,6 +216,43 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 if u1 == u2, less than 0 if u1 &lt; u2, greater than 0 if u1 &gt; u2. </dd></dl>
+
+</div>
+</div>
+<a id="a9080d454ffefb2b8e425ca127b72a546"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9080d454ffefb2b8e425ca127b72a546">&#9670;&nbsp;</a></span>spdk_uuid_copy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_uuid_copy </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structspdk__uuid.html">spdk_uuid</a> *&#160;</td>
+          <td class="paramname"><em>dst</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const struct <a class="el" href="structspdk__uuid.html">spdk_uuid</a> *&#160;</td>
+          <td class="paramname"><em>src</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Copy a UUID. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">src</td><td>Source UUID to copy from. </td></tr>
+    <tr><td class="paramname">dst</td><td>Destination UUID to store. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

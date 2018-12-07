@@ -17,7 +17,7 @@ var jsonrpc_8h =
     [ "spdk_jsonrpc_client_free_request", "jsonrpc_8h.html#a42438592f780e35892904af6be663617", null ],
     [ "spdk_jsonrpc_client_free_response", "jsonrpc_8h.html#acdbb193a4b8ca1c57c2b43223165dfa6", null ],
     [ "spdk_jsonrpc_client_get_response", "jsonrpc_8h.html#ab8b438aa5b6e78cb5d433ca0015fd126", null ],
-    [ "spdk_jsonrpc_client_recv_response", "jsonrpc_8h.html#abb3d4f6dbb414d65836543a0fbaa0c19", null ],
+    [ "spdk_jsonrpc_client_poll", "jsonrpc_8h.html#a27688ab4587564524fefa84abc13ad3c", null ],
     [ "spdk_jsonrpc_client_send_request", "jsonrpc_8h.html#aaadb8c7ec1b7472b41e74c27f08494b7", null ],
     [ "spdk_jsonrpc_end_request", "jsonrpc_8h.html#a9ae1b767ebb4ad59a9c4739beea1c6f4", null ],
     [ "spdk_jsonrpc_end_result", "jsonrpc_8h.html#af3d607f5a980bf9eb793ef2b553f679a", null ],

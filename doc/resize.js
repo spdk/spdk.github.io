@@ -55,9 +55,6 @@ function initResizable()
     content.css({height:windowHeight + "px"});
     navtree.css({height:windowHeight + "px"});
     sidenav.css({height:windowHeight + "px"});
-    content.css({minHeight:windowHeight + "px"});
-    navtree.css({minHeight:windowHeight + "px"});
-    sidenav.css({minHeight:windowHeight + "px"});
     var width=$(window).width();
     if (width!=collapsedWidth) {
       if (width<desktop_vp && collapsedWidth>=desktop_vp) {
