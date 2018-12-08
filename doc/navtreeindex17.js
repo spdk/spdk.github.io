@@ -1,7 +1,5 @@
 var NAVTREEINDEX17 =
 {
-"structspdk__nvmf__rdma__accept__private__data.html#a43727762daa8a166ddac4079e5694461":[13,0,180,0],
-"structspdk__nvmf__rdma__reject__private__data.html":[13,0,182],
 "structspdk__nvmf__rdma__reject__private__data.html#a5122d45baefbf1559b0540e2e12921c2":[13,0,182,1],
 "structspdk__nvmf__rdma__reject__private__data.html#ae6e8c2a91d3107ff5d001f02913a1b60":[13,0,182,0],
 "structspdk__nvmf__rdma__request__private__data.html":[13,0,183],
@@ -249,5 +247,7 @@ var NAVTREEINDEX17 =
 "structspdk__scsi__pr__in__report__capabilities__data.html#a907ad1eae1c316a7297e1dd59839496d":[13,0,210,15],
 "structspdk__scsi__pr__in__report__capabilities__data.html#aa40132ffde0282963b8aa3f8bea0c098":[13,0,210,3],
 "structspdk__scsi__pr__in__report__capabilities__data.html#aacf22f5b8c9a7e087793963439550fce":[13,0,210,19],
-"structspdk__scsi__pr__in__report__capabilities__data.html#abc273af803b296ab109467daa86eb861":[13,0,210,14]
+"structspdk__scsi__pr__in__report__capabilities__data.html#abc273af803b296ab109467daa86eb861":[13,0,210,14],
+"structspdk__scsi__pr__in__report__capabilities__data.html#ac7d7cf7cc5d38f036edce39cdadee822":[13,0,210,16],
+"structspdk__scsi__pr__in__report__capabilities__data.html#accd8d620f9081a87bec1fa3b5436972b":[13,0,210,18]
 };

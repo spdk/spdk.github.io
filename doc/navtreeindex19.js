@@ -1,7 +1,5 @@
 var NAVTREEINDEX19 =
 {
-"unionspdk__nvme__cap__register.html#adae67761c7519837503eef9e72c3250f":[13,0,70,14],
-"unionspdk__nvme__cap__register.html#af726e8465f09c36be0185475ec67fbce":[13,0,70,5],
 "unionspdk__nvme__cap__register.html#afd09628d065cb825bc58e1d4eaa938a1":[13,0,70,4],
 "unionspdk__nvme__cc__register.html":[13,0,71],
 "unionspdk__nvme__cc__register.html#a1f03038a3d6fd2b7f2df15b15a887ce6":[13,0,71,2],
@@ -249,5 +247,7 @@ var NAVTREEINDEX19 =
 "vhost_8h.html#a44001761e6a888ef1fb0475c4501497c":[14,0,51,4],
 "vhost_8h.html#a540442ab4b6ec0ba4157e514a09f2379":[14,0,51,15],
 "vhost_8h.html#a546673fa252a8214efd14fc80b78dcb9":[14,0,51,13],
-"vhost_8h.html#a549f9903be61ca447578b8bacf9eea81":[14,0,51,3]
+"vhost_8h.html#a549f9903be61ca447578b8bacf9eea81":[14,0,51,3],
+"vhost_8h.html#a5ec56730c6a42b0a186131526026e619":[14,0,51,2],
+"vhost_8h.html#a6002d25166c3003efd3b6edb51cb84c0":[14,0,51,7]
 };

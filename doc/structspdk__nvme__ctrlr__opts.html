@@ -193,6 +193,12 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 <tr class="memitem:afba53e83e949e751ab895765f32a9486"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__ctrlr__opts.html#afba53e83e949e751ab895765f32a9486">admin_timeout_ms</a></td></tr>
 <tr class="memdesc:afba53e83e949e751ab895765f32a9486"><td class="mdescLeft">&#160;</td><td class="mdescRight">Admin commands timeout in milliseconds (0 = no timeout).  <a href="#afba53e83e949e751ab895765f32a9486">More...</a><br /></td></tr>
 <tr class="separator:afba53e83e949e751ab895765f32a9486"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a1ee1f756d767ae8833875256c57864"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__ctrlr__opts.html#a2a1ee1f756d767ae8833875256c57864">header_digest</a></td></tr>
+<tr class="memdesc:a2a1ee1f756d767ae8833875256c57864"><td class="mdescLeft">&#160;</td><td class="mdescRight">It is used for TCP transport.  <a href="#a2a1ee1f756d767ae8833875256c57864">More...</a><br /></td></tr>
+<tr class="separator:a2a1ee1f756d767ae8833875256c57864"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a031524a539fbc57e1ca66c6fef875eea"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__ctrlr__opts.html#a031524a539fbc57e1ca66c6fef875eea">data_digest</a></td></tr>
+<tr class="memdesc:a031524a539fbc57e1ca66c6fef875eea"><td class="mdescLeft">&#160;</td><td class="mdescRight">It is used for TCP transport.  <a href="#a031524a539fbc57e1ca66c6fef875eea">More...</a><br /></td></tr>
+<tr class="separator:a031524a539fbc57e1ca66c6fef875eea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>NVMe controller initialization options. </p>
@@ -232,6 +238,23 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 
 </div>
 </div>
+<a id="a031524a539fbc57e1ca66c6fef875eea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a031524a539fbc57e1ca66c6fef875eea">&#9670;&nbsp;</a></span>data_digest</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool spdk_nvme_ctrlr_opts::data_digest</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>It is used for TCP transport. </p>
+<p>Set to true, means having data digest for the data in the NVMe/TCP PDU </p>
+
+</div>
+</div>
 <a id="afa9c5708ea859200abb5406b59faaede"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#afa9c5708ea859200abb5406b59faaede">&#9670;&nbsp;</a></span>extended_host_id</h2>
 
@@ -246,6 +269,23 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 
 <p>The host identifier to use when connecting to controllers with extended (128-bit) host ID support. </p>
 <p>Set to all zeroes to specify that no host ID should be provided to the controller. </p>
+
+</div>
+</div>
+<a id="a2a1ee1f756d767ae8833875256c57864"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2a1ee1f756d767ae8833875256c57864">&#9670;&nbsp;</a></span>header_digest</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool spdk_nvme_ctrlr_opts::header_digest</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>It is used for TCP transport. </p>
+<p>Set to true, means having header digest for the header in the NVMe/TCP PDU </p>
 
 </div>
 </div>

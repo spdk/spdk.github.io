@@ -144,11 +144,11 @@ v19.01: (Upcoming Release)</h1>
 <p>A new uuid API <code>spdk_uuid_copy</code> was added to make a copy of the source uuid.</p>
 <h2>nvme</h2>
 <p>admin_timeout_ms was added to NVMe controller initialization options, users can change the default value when probing a controller.</p>
+<p>Add two new fields "header_digest" and "data_digest" in struct <a class="el" href="structspdk__nvme__ctrlr__opts.html" title="NVMe controller initialization options. ">spdk_nvme_ctrlr_opts</a>, it will be used to enable the digest support for the NVMe/TCP transport.</p>
+<p>Add a new TCP/IP transport(located in lib/nvme/nvme_tcp.c) in nvme driver. With this new transport, it can be used to connect the NVMe-oF target with the same TCP/IP support.</p>
 <h2>NVMe-oF Target</h2>
 <p>The <code>spdk_nvmf_tgt_opts</code> struct has been deprecated in favor of <code><a class="el" href="structspdk__nvmf__transport__opts.html">spdk_nvmf_transport_opts</a></code>. Users will no longer be able to specify target wide I/O parameters. <code>spdk_nvmf_tgt_listen</code> will also no longer implicitly initialize a transport with the default target options (since there are none). Instead, a user must manually instantiate the transport with <code>spdk_nvmf_transport_create</code> prior to calling <code>spdk_nvmf_tgt_listen</code>.</p>
 <p>Related to the previous change, the rpc <code>set_nvmf_target_options</code> has been renamed to <code>set_nvmf_target_max_subsystems</code> to indicate that this is the only target option available for the user to edit.</p>
-<h2>nvme</h2>
-<p>Add a new TCP/IP transport(located in lib/nvme/nvme_tcp.c) in nvme driver. With this new transport, it can be used to connect the NVMe-oF target with the same TCP/IP support.</p>
 <h2>nvmf</h2>
 <p>Add a new TCP/IP transport (located in lib/nvmf/tcp.c). With this tranport, the SPDK NVMe-oF target can have a new transport, and can serve the NVMe-oF protocol via TCP/IP from the host.</p>
 <h2>bdev</h2>
