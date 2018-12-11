@@ -32,8 +32,8 @@ or on the mailing list to to be added to the board. If we are able to cover
 the posted topics before the end of the meeting we can use the time to discuss
 additional items.
 
-There is also a focused bug scrub meeting every other week only in the Asia-friendly
-timezone. Note that bugs are tracked on the [SPDK GitHub issue tracker](https://github.com/spdk/spdk/issues).
+There are also Github issue review meetings that are held in each respective time zone on the
+week where there is no community meeting for that geo. Note that bugs are tracked on the [SPDK GitHub issue tracker](https://github.com/spdk/spdk/issues).
 
 All meetings use the same conference information. It is shown below in a
 slightly distored image to help prevent bots from joining our calls. Adding
@@ -41,13 +41,16 @@ a bookmark with the link below should make it easy to join weekly.
 
 ![SPDK](../img/spdk_free.jpg "SPDK").
 
-## Next Euro-Friendly Meeting
+## Next Euro-Friendly Community Meeting
 <div id="euro-mtg"></div>
 
-## Next Asia-Friendly Meeting
+## Next Asia-Friendly Community Meeting
 <div id="asia-mtg"></div>
 
-# Bug Reports and Bug Scrub Meeting
+## Next Euro-Friendly Github Issue Review Meeting
+<div id="euro-bug-mtg"></div>
+
+## Next Asia-Friendly Github Issue Review Meeting
 <div id="asia-bug-mtg"></div>
 
 # Contributing
