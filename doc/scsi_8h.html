@@ -262,9 +262,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="scsi
 <tr class="memitem:a1422193a59bf618ebd6c5415af1cc2be"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="scsi_8h.html#a1422193a59bf618ebd6c5415af1cc2be">spdk_scsi_dev_destruct</a> (struct spdk_scsi_dev *dev)</td></tr>
 <tr class="memdesc:a1422193a59bf618ebd6c5415af1cc2be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destruct the SCSI decice.  <a href="#a1422193a59bf618ebd6c5415af1cc2be">More...</a><br /></td></tr>
 <tr class="separator:a1422193a59bf618ebd6c5415af1cc2be"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a340a3b96240ec9fdcf1228323d62ef8f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="scsi_8h.html#a340a3b96240ec9fdcf1228323d62ef8f">spdk_scsi_dev_queue_mgmt_task</a> (struct spdk_scsi_dev *dev, struct <a class="el" href="structspdk__scsi__task.html">spdk_scsi_task</a> *task, enum spdk_scsi_task_func func)</td></tr>
-<tr class="memdesc:a340a3b96240ec9fdcf1228323d62ef8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Execute the SCSI management task.  <a href="#a340a3b96240ec9fdcf1228323d62ef8f">More...</a><br /></td></tr>
-<tr class="separator:a340a3b96240ec9fdcf1228323d62ef8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab98745bdfde673aca36a6f5e140ec849"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="scsi_8h.html#ab98745bdfde673aca36a6f5e140ec849">spdk_scsi_dev_queue_mgmt_task</a> (struct spdk_scsi_dev *dev, struct <a class="el" href="structspdk__scsi__task.html">spdk_scsi_task</a> *task)</td></tr>
+<tr class="memdesc:ab98745bdfde673aca36a6f5e140ec849"><td class="mdescLeft">&#160;</td><td class="mdescRight">Execute the SCSI management task.  <a href="#ab98745bdfde673aca36a6f5e140ec849">More...</a><br /></td></tr>
+<tr class="separator:ab98745bdfde673aca36a6f5e140ec849"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a715f198c4f072642eb951ecdddb0e624"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="scsi_8h.html#a715f198c4f072642eb951ecdddb0e624">spdk_scsi_dev_queue_task</a> (struct spdk_scsi_dev *dev, struct <a class="el" href="structspdk__scsi__task.html">spdk_scsi_task</a> *task)</td></tr>
 <tr class="memdesc:a715f198c4f072642eb951ecdddb0e624"><td class="mdescLeft">&#160;</td><td class="mdescRight">Execute the SCSI task.  <a href="#a715f198c4f072642eb951ecdddb0e624">More...</a><br /></td></tr>
 <tr class="separator:a715f198c4f072642eb951ecdddb0e624"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -329,6 +329,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="scsi
 <tr class="memitem:a926c7488e731f9dc11ab43e28a34b4bd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="scsi_8h.html#a926c7488e731f9dc11ab43e28a34b4bd">spdk_scsi_task_process_null_lun</a> (struct <a class="el" href="structspdk__scsi__task.html">spdk_scsi_task</a> *task)</td></tr>
 <tr class="memdesc:a926c7488e731f9dc11ab43e28a34b4bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Process the SCSI task when no LUN is attached.  <a href="#a926c7488e731f9dc11ab43e28a34b4bd">More...</a><br /></td></tr>
 <tr class="separator:a926c7488e731f9dc11ab43e28a34b4bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a431edc9c0e0218cbe284b9164d64321b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="scsi_8h.html#a431edc9c0e0218cbe284b9164d64321b">spdk_scsi_task_process_abort</a> (struct <a class="el" href="structspdk__scsi__task.html">spdk_scsi_task</a> *task)</td></tr>
+<tr class="memdesc:a431edc9c0e0218cbe284b9164d64321b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Process the aborted SCSI task.  <a href="#a431edc9c0e0218cbe284b9164d64321b">More...</a><br /></td></tr>
+<tr class="separator:a431edc9c0e0218cbe284b9164d64321b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a496221276fda4f6c6177968cb1081000"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="scsi_8h.html#a496221276fda4f6c6177968cb1081000">spdk_scsi_lun_open</a> (struct spdk_scsi_lun *lun, spdk_scsi_remove_cb_t hotremove_cb, void *hotremove_ctx, struct spdk_scsi_desc **desc)</td></tr>
 <tr class="memdesc:a496221276fda4f6c6177968cb1081000"><td class="mdescLeft">&#160;</td><td class="mdescRight">Open a logical unit for I/O operations.  <a href="#a496221276fda4f6c6177968cb1081000">More...</a><br /></td></tr>
 <tr class="separator:a496221276fda4f6c6177968cb1081000"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -809,8 +812,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="scsi
 
 </div>
 </div>
-<a id="a340a3b96240ec9fdcf1228323d62ef8f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a340a3b96240ec9fdcf1228323d62ef8f">&#9670;&nbsp;</a></span>spdk_scsi_dev_queue_mgmt_task()</h2>
+<a id="ab98745bdfde673aca36a6f5e140ec849"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab98745bdfde673aca36a6f5e140ec849">&#9670;&nbsp;</a></span>spdk_scsi_dev_queue_mgmt_task()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -825,13 +828,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="scsi
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">struct <a class="el" href="structspdk__scsi__task.html">spdk_scsi_task</a> *&#160;</td>
-          <td class="paramname"><em>task</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">enum spdk_scsi_task_func&#160;</td>
-          <td class="paramname"><em>func</em>&#160;</td>
+          <td class="paramname"><em>task</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -842,12 +839,11 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="scsi
 </div><div class="memdoc">
 
 <p>Execute the SCSI management task. </p>
-<p>The task can be constructed by the function <a class="el" href="scsi_8h.html#a549a49a4aa5a6ffc92884d8f847446bc" title="Construct a new SCSI task. ">spdk_scsi_task_construct()</a>.</p>
+<p>The task can be constructed by the function <a class="el" href="scsi_8h.html#a549a49a4aa5a6ffc92884d8f847446bc" title="Construct a new SCSI task. ">spdk_scsi_task_construct()</a>. Code of task management function to be executed is set before calling this API.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">dev</td><td>SCSI device. </td></tr>
     <tr><td class="paramname">task</td><td>SCSI task to be executed. </td></tr>
-    <tr><td class="paramname">func</td><td>Task management function to be executed. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1462,6 +1458,32 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="scsi
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>a pointer to the buffer allocated and written into. </dd></dl>
+
+</div>
+</div>
+<a id="a431edc9c0e0218cbe284b9164d64321b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a431edc9c0e0218cbe284b9164d64321b">&#9670;&nbsp;</a></span>spdk_scsi_task_process_abort()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_scsi_task_process_abort </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structspdk__scsi__task.html">spdk_scsi_task</a> *&#160;</td>
+          <td class="paramname"><em>task</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Process the aborted SCSI task. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">task</td><td>SCSI task. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
