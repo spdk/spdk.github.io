@@ -221,6 +221,9 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:a39c91e2e6ae899f37b5a89c28a2207cf"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a39c91e2e6ae899f37b5a89c28a2207cf">spdk_nvme_ctrlr_is_discovery</a> (struct spdk_nvme_ctrlr *ctrlr)</td></tr>
+<tr class="memdesc:a39c91e2e6ae899f37b5a89c28a2207cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicate whether a ctrlr handle is associated with a Discovery controller.  <a href="#a39c91e2e6ae899f37b5a89c28a2207cf">More...</a><br /></td></tr>
+<tr class="separator:a39c91e2e6ae899f37b5a89c28a2207cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac31bc692c6b3a84e2355eb63a8b01ccf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#ac31bc692c6b3a84e2355eb63a8b01ccf">spdk_nvme_ctrlr_get_default_ctrlr_opts</a> (struct <a class="el" href="structspdk__nvme__ctrlr__opts.html">spdk_nvme_ctrlr_opts</a> *opts, size_t opts_size)</td></tr>
 <tr class="memdesc:ac31bc692c6b3a84e2355eb63a8b01ccf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the default options for the creation of a specific NVMe controller.  <a href="#ac31bc692c6b3a84e2355eb63a8b01ccf">More...</a><br /></td></tr>
 <tr class="separator:ac31bc692c6b3a84e2355eb63a8b01ccf"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -2453,6 +2456,33 @@ int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_retry_co
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if nsid is an active ns, or false otherwise. </dd></dl>
+
+</div>
+</div>
+<a id="a39c91e2e6ae899f37b5a89c28a2207cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a39c91e2e6ae899f37b5a89c28a2207cf">&#9670;&nbsp;</a></span>spdk_nvme_ctrlr_is_discovery()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool spdk_nvme_ctrlr_is_discovery </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_nvme_ctrlr *&#160;</td>
+          <td class="paramname"><em>ctrlr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Indicate whether a ctrlr handle is associated with a Discovery controller. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ctrlr</td><td>Opaque handle to NVMe controller.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if a discovery controller, else false. </dd></dl>
 
 </div>
 </div>
