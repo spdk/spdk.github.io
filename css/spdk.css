@@ -93,6 +93,14 @@ h6 {
     }
 }
 
+.nav-links {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    padding-left: 3px;
+}
+
 .box-name {
     text-transform: uppercase;
     font-size: 14px;

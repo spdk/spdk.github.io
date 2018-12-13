@@ -10,7 +10,7 @@
         </div>
       </div>
 
-    <div class="row">
+      <div class="row">
         <div class="col-xs-12 text-left">
           <h1>{{ page.title }}</h1>
         </div>
@@ -23,7 +23,25 @@
           </section>
         </div>
         <div class="col-xs-4">
-          {% include cilinks.html %}
+          <div class="panel panel-center nav-links">
+            <div class="panel-body">
+                <ul class="nav nav-pills nav-stacked">
+                {% if page.lang == 'cn' %}
+                <li><a href="https://ci.spdk.io/spdk-jenkins/">SPDK Jenkins集成测试状态</a></li>
+                <li><a href="https://ci.spdk.io/spdk/status/">SPDK集成测试状态 (被弃用)</a></li>
+                <li><a href="https://ci.spdk.io/spdk.github.io/status/">SPDK网站测试状态</a></li>
+                <li><a href="https://trello.com/b/P5xBO7UR/things-to-do">SPDK Trello板块</a></li>
+                <li><a href="https://trello.com/b/3DvD85zi/continuous-integration">持续集成Trello板块</a></li>
+                {% else %}
+                <li><a href="https://ci.spdk.io/spdk-jenkins/">SPDK Jenkins Test Pool Status</a></li>
+                <li><a href="https://ci.spdk.io/spdk/status/">SPDK Test Pool Status (Deprecated)</a></li>
+                <li><a href="https://ci.spdk.io/spdk.github.io/status/">SPDK Webpage Test Pool Status</a></li>
+                <li><a href="https://trello.com/b/P5xBO7UR/things-to-do">SPDK Trello Board</a></li>
+                <li><a href="https://trello.com/b/3DvD85zi/continuous-integration">CI Trello Board</a></li>
+                {% endif %}
+                </ul>
+            </div>
+          </div>
         </div>
       </div>
 
