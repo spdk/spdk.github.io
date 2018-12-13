@@ -1,10 +1,8 @@
 ---
 layout: news
-title:  "SPDK用户案例"
+title:  "用户案例"
 lang: cn
 ---
-
-# 新闻条目
 
 ## 阿里云
 ### [高性能云服务器：本地SSD](https://promotion.aliyun.com/ntms/act/ecshighperformance.html?open_id=1d8213d3-b437-4596-a88a-d27798942d3a-&open_cid=4703)
@@ -37,7 +35,7 @@ lang: cn
 > “ ……2018年双11，随着存储计算分离技术的大规模使用，标志着数据库进入了一个新的时代……”
 
 ## 红包场景
-[SPDK+NVMe SSD对接Virtio支撑红包场景性能](https://mp.weixin.qq.com/s/nP62NpX0NAo4BZhpkAWaQg)
+### [SPDK+NVMe SSD对接Virtio支撑红包场景性能](https://mp.weixin.qq.com/s/nP62NpX0NAo4BZhpkAWaQg)
 > “最终在块设备层使用了标准virtio blk驱动；硬件驱动使用了SPDK工具集；硬件使用了NVMe SSD……”
 
 ## 更多SPDK使用案例，请参考[news]({{ baseurl }}/news)页面
