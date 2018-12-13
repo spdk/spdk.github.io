@@ -1,6 +1,6 @@
 ---
-layout: default
-title:  "SPDK in the News"
+layout: news
+title:  "SPDK In The News"
 ---
 
 # News items
@@ -46,7 +46,7 @@ title:  "SPDK in the News"
 ## May 15 2018 SPDK Summit
 
 ### [SPDK US Summit](http://spdk.io/news/2018/06/13/summit-recap/)
-> Over 170 attendees from 51 different companies attended the 2018 SPDK US Summit at Dolce Hayes Mansion, San Jose on May 15th and 16th. 
+> Over 170 attendees from 51 different companies attended the 2018 SPDK US Summit at Dolce Hayes Mansion, San Jose on May 15th and 16th.
 
 ## March 20 2018 OCP Summit 2018
 
