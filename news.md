@@ -1,6 +1,6 @@
 ---
-layout: default
-title:  "SPDK in the News"
+layout: news
+title:  "SPDK Use Cases"
 ---
 
 # News items
