@@ -26,7 +26,10 @@ is more efficient than email or IRC. The meetings are hosted using
 
 There is a community meeting each week at alternating time slots selected so
 that one week is a Euro-friendly time and the following week is an
-Asia-friendly time. Please post proposed topics on [Trello](https://trello.com/b/DvM7XayJ)
+Asia-friendly time. Please see the bottom of this [page](#holidays) for holidays
+when regularly scheduled community meetings will be cancelled.
+
+Please post proposed topics for community meetings on [Trello](https://trello.com/b/DvM7XayJ)
 prior to the meeting. If you don't have a Trello login, sign up and then ask in IRC
 or on the mailing list to to be added to the board. If we are able to cover
 the posted topics before the end of the meeting we can use the time to discuss
@@ -56,3 +59,18 @@ a bookmark with the link below should make it easy to join weekly.
 # Contributing
 
 See the [Development](/development/) page for more information on how to contribute to SPDK.
+
+# Holidays
+
+Community meetings scheduled on the following days will be cancelled:
+
+* Christmas Eve
+* Christmas Day
+* Boxing Day
+* New Years Eve
+* New Years Day
+* The Fourth of July
+* Memorial Day
+* Labor Day
+* Thanksgiving Day
+* Day after Thanksgiving
