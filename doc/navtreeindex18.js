@@ -1,5 +1,6 @@
 var NAVTREEINDEX18 =
 {
+"structspdk__scsi__pr__in__report__capabilities__data.html#abc273af803b296ab109467daa86eb861":[13,0,210,14],
 "structspdk__scsi__pr__in__report__capabilities__data.html#ac7d7cf7cc5d38f036edce39cdadee822":[13,0,210,16],
 "structspdk__scsi__pr__in__report__capabilities__data.html#accd8d620f9081a87bec1fa3b5436972b":[13,0,210,18],
 "structspdk__scsi__pr__in__report__capabilities__data.html#af5bb50966a779c5daa121b96ea2cab3b":[13,0,210,8],
@@ -248,6 +249,5 @@ var NAVTREEINDEX18 =
 "unionspdk__nvme__cap__register.html#a9930c21595d81e7eefa8cca0e118450a":[13,0,70,7],
 "unionspdk__nvme__cap__register.html#a9bbd0513d0df169766c0f74adfc4dde1":[13,0,70,2],
 "unionspdk__nvme__cap__register.html#ac8d0f8ca7261552f9fa5894b0c637fd5":[13,0,70,9],
-"unionspdk__nvme__cap__register.html#ad4b6659be786f840893818e951fc1f3d":[13,0,70,6],
-"unionspdk__nvme__cap__register.html#ad8004bf4870d89a73f8d4d95db5d746d":[13,0,70,3]
+"unionspdk__nvme__cap__register.html#ad4b6659be786f840893818e951fc1f3d":[13,0,70,6]
 };

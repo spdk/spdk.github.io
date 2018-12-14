@@ -237,7 +237,7 @@ struct <a class="el" href="structspdk__uuid.html">spdk_uuid</a>&#160;</td><td cl
 </div><div class="memdoc">
 
 <p>Total size in bytes of the compressed volume. </p>
-<p>Must be an even multiple of chunk_size. Must be greater than 0. </p>
+<p>During initialization, the size is calculated from the size of backing device size, so this must be set to 0 in the structure passed to <a class="el" href="reduce_8h.html#a62753f16686f807748719567d57f15b8" title="Initialize a new libreduce compressed volume. ">spdk_reduce_vol_init()</a>. After initialization, or a successful load, this field will contain the total size which will be an even multiple of the chunk size. </p>
 
 </div>
 </div>
