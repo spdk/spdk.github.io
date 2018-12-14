@@ -1,0 +1,89 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "d9614732_5f68e38b",
+        "filename": "_includes/js/meetings.js",
+        "patchSetId": 5
+      },
+      "lineNbr": 47,
+      "author": {
+        "id": 1010531
+      },
+      "writtenOn": "2018-12-14T22:58:37Z",
+      "side": 1,
+      "message": "localDate.getHours()",
+      "revId": "716c1abddadd865cc9cef846ce57f66e39fbcaa7",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "df5a54d1_c5f08908",
+        "filename": "_includes/js/meetings.js",
+        "patchSetId": 5
+      },
+      "lineNbr": 48,
+      "author": {
+        "id": 1010531
+      },
+      "writtenOn": "2018-12-14T22:58:37Z",
+      "side": 1,
+      "message": "I think it would be a simpler to write this the other way around, or maybe as two statements.\n\nif (localDate.getData() \u003d\u003d holiday.getDate()) {\n    return true;\n}\n\nif (localDate.getDate() \u003d\u003d holiday.getDate() - 1 \u0026\u0026 localDate.getHours() \u003e 16) {\n    return true;\n}",
+      "revId": "716c1abddadd865cc9cef846ce57f66e39fbcaa7",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "379dde12_d56b3ef1",
+        "filename": "_includes/js/meetings.js",
+        "patchSetId": 5
+      },
+      "lineNbr": 53,
+      "author": {
+        "id": 1010531
+      },
+      "writtenOn": "2018-12-14T22:58:37Z",
+      "side": 1,
+      "message": "since it is a for loop, just return true immediately.",
+      "revId": "716c1abddadd865cc9cef846ce57f66e39fbcaa7",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "b578a14c_46c6fbc8",
+        "filename": "_includes/js/meetings.js",
+        "patchSetId": 5
+      },
+      "lineNbr": 56,
+      "author": {
+        "id": 1010531
+      },
+      "writtenOn": "2018-12-14T22:58:37Z",
+      "side": 1,
+      "message": "return false and eliminate isHoliday",
+      "revId": "716c1abddadd865cc9cef846ce57f66e39fbcaa7",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3ff108cb_df0953f8",
+        "filename": "community.md",
+        "patchSetId": 5
+      },
+      "lineNbr": 64,
+      "author": {
+        "id": 1010531
+      },
+      "writtenOn": "2018-12-14T22:58:37Z",
+      "side": 1,
+      "message": "Maybe clarify that these are U.S. holidays (Canadian Thanksgiving, etc.) and that their date is taken in Arizona time.",
+      "revId": "716c1abddadd865cc9cef846ce57f66e39fbcaa7",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
