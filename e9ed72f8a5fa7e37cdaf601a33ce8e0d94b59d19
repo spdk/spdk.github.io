@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5208babc_7a51ace2",
+        "filename": "_includes/js/meetings.js",
+        "patchSetId": 4
+      },
+      "lineNbr": 31,
+      "author": {
+        "id": 1010531
+      },
+      "writtenOn": "2018-12-14T19:48:17Z",
+      "side": 1,
+      "message": "I know this chaining style of coding is popular in JS, but wouldn\u0027t this be a lot simpler if you just did:\n\nfor (var i \u003d 0; i \u003c holidaylist.length; i++) {\n    let holiday \u003d element[0];\n    let recurring \u003d element[1];\n\nThere is also no way to break out early from a forEach, so it isn\u0027t optimal.",
+      "revId": "e9ed72f8a5fa7e37cdaf601a33ce8e0d94b59d19",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "0acabd9e_7e0934d0",
+        "filename": "_includes/js/meetings.js",
+        "patchSetId": 4
+      },
+      "lineNbr": 44,
+      "author": {
+        "id": 1010531
+      },
+      "writtenOn": "2018-12-14T19:48:17Z",
+      "side": 1,
+      "message": "Can you wrap this around?",
+      "revId": "e9ed72f8a5fa7e37cdaf601a33ce8e0d94b59d19",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
