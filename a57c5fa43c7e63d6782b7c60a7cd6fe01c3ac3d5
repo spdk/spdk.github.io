@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "755a55bf_bf4eba6d",
+        "filename": "_posts/2018-12-14-18.10.1_release.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 1010531
+      },
+      "writtenOn": "2018-12-14T22:59:58Z",
+      "side": 1,
+      "message": "Maybe word this as \"This release contains infrastructure for packaging SPDK into an RPM.\"",
+      "revId": "a57c5fa43c7e63d6782b7c60a7cd6fe01c3ac3d5",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
