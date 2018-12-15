@@ -1,5 +1,8 @@
 var NAVTREEINDEX8 =
 {
+"nvmf__spec_8h.html#a9fbe3f432578c164ee42772192409828":[14,0,38,28],
+"nvmf__spec_8h.html#aa01e7a265c823f0014892390f9faa39f":[14,0,38,52],
+"nvmf__spec_8h.html#aa087fce74f763ef47c2a3bf315cf180a":[14,0,38,47],
 "nvmf__spec_8h.html#aa5d6f3d0b50748dabe9dc556703776dd":[14,0,38,79],
 "nvmf__spec_8h.html#aa71ea8bde521e9c5469cfbb61d80412d":[14,0,38,32],
 "nvmf__spec_8h.html#aac0071a90eecef68770654b134a3435b":[14,0,38,76],
@@ -138,15 +141,14 @@ var NAVTREEINDEX8 =
 "prog_guides.html":[4],
 "reduce_8h.html":[14,0,40],
 "reduce_8h.html#a137aea842a5ebd65781d7bcfc735018b":[14,0,40,3],
-"reduce_8h.html#a27cc9c49bb7124d23f1730adf5b19bd5":[14,0,40,6],
 "reduce_8h.html#a34d13995c0ae908bbe5bf798fdb52a4f":[14,0,40,4],
-"reduce_8h.html#a593901ae3d44b3315fad40da95108bee":[14,0,40,11],
-"reduce_8h.html#a62753f16686f807748719567d57f15b8":[14,0,40,8],
-"reduce_8h.html#a910dd92b2a78d08fdb1cd6fa9e4c7a9e":[14,0,40,9],
+"reduce_8h.html#a593901ae3d44b3315fad40da95108bee":[14,0,40,10],
+"reduce_8h.html#a62753f16686f807748719567d57f15b8":[14,0,40,7],
+"reduce_8h.html#a910dd92b2a78d08fdb1cd6fa9e4c7a9e":[14,0,40,8],
 "reduce_8h.html#a978a8801cd56a94532562650457c97dd":[14,0,40,5],
-"reduce_8h.html#a9bfdcd7f50cc33b4b69011f239aa7498":[14,0,40,10],
-"reduce_8h.html#ac5b98c059d57b5fe1acf0062aa3d3e33":[14,0,40,12],
-"reduce_8h.html#ace66fd4e3840d38127fcf7a21dc269de":[14,0,40,7],
+"reduce_8h.html#a9bfdcd7f50cc33b4b69011f239aa7498":[14,0,40,9],
+"reduce_8h.html#ac5b98c059d57b5fe1acf0062aa3d3e33":[14,0,40,11],
+"reduce_8h.html#ace66fd4e3840d38127fcf7a21dc269de":[14,0,40,6],
 "scsi_8h.html":[14,0,41],
 "scsi_8h.html#a09579688597a2ab594671a00b20fd2cd":[14,0,41,26],
 "scsi_8h.html#a0ac8f6137429f32fa3506df2b92429ff":[14,0,41,54],
@@ -247,7 +249,5 @@ var NAVTREEINDEX8 =
 "scsi__spec_8h.html#a35efeaeb4d8fb7a9b406846a2138b389a1cc66737d4cf06442ba4739938ce474f":[14,0,42,74,47],
 "scsi__spec_8h.html#a35efeaeb4d8fb7a9b406846a2138b389a1e4b40303ccf73589c1a8213d3c67549":[14,0,42,74,10],
 "scsi__spec_8h.html#a35efeaeb4d8fb7a9b406846a2138b389a2567edb81d5e824a23530b80db6338c2":[14,0,42,74,2],
-"scsi__spec_8h.html#a35efeaeb4d8fb7a9b406846a2138b389a28111ba4ace535482f2b8a7993264011":[14,0,42,74,30],
-"scsi__spec_8h.html#a35efeaeb4d8fb7a9b406846a2138b389a2c6aa450120884ebaa2a05f97f672254":[14,0,42,74,31],
-"scsi__spec_8h.html#a35efeaeb4d8fb7a9b406846a2138b389a2d30838871aa379d21291e8f2a34fa23":[14,0,42,74,33]
+"scsi__spec_8h.html#a35efeaeb4d8fb7a9b406846a2138b389a28111ba4ace535482f2b8a7993264011":[14,0,42,74,30]
 };

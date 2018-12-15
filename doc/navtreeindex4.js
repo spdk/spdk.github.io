@@ -1,5 +1,8 @@
 var NAVTREEINDEX4 =
 {
+"jsonrpc.html#rpc_construct_passthru_bdev":[3,7,2,27],
+"jsonrpc.html#rpc_construct_pmem_bdev":[3,7,2,25],
+"jsonrpc.html#rpc_construct_rbd_bdev":[3,7,2,16],
 "jsonrpc.html#rpc_construct_target_node":[3,7,3,13],
 "jsonrpc.html#rpc_construct_vhost_blk_controller":[3,7,5,6],
 "jsonrpc.html#rpc_construct_vhost_nvme_controller":[3,7,5,4],
@@ -246,8 +249,5 @@ var NAVTREEINDEX4 =
 "nvme_8h.html#a10282695461985f58f54de022911745e":[14,0,32,52],
 "nvme_8h.html#a108d6b722c8837593dec16f30376d182":[14,0,32,60],
 "nvme_8h.html#a13f745d239dab9b8f934fae2ad4984a2":[14,0,32,17],
-"nvme_8h.html#a1505fc1ef6e8ccb00134c1fa15e0368b":[14,0,32,53],
-"nvme_8h.html#a1915e114063119af0a9af50b75b7acaa":[14,0,32,3],
-"nvme_8h.html#a1e3def668122e76abbfb74305f118291":[14,0,32,24],
-"nvme_8h.html#a225bbc386ec518ae21bd5536f21db45d":[14,0,32,92]
+"nvme_8h.html#a1505fc1ef6e8ccb00134c1fa15e0368b":[14,0,32,53]
 };

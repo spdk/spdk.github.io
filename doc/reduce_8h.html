@@ -170,9 +170,6 @@ typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_reduce
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a27cc9c49bb7124d23f1730adf5b19bd5"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="reduce_8h.html#a27cc9c49bb7124d23f1730adf5b19bd5">spdk_reduce_get_backing_device_size</a> (struct <a class="el" href="structspdk__reduce__vol__params.html">spdk_reduce_vol_params</a> *params)</td></tr>
-<tr class="memdesc:a27cc9c49bb7124d23f1730adf5b19bd5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the required size for the backing device for a compressed volume.  <a href="#a27cc9c49bb7124d23f1730adf5b19bd5">More...</a><br /></td></tr>
-<tr class="separator:a27cc9c49bb7124d23f1730adf5b19bd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ace66fd4e3840d38127fcf7a21dc269de"><td class="memItemLeft" align="right" valign="top">const struct <a class="el" href="structspdk__uuid.html">spdk_uuid</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="reduce_8h.html#ace66fd4e3840d38127fcf7a21dc269de">spdk_reduce_vol_get_uuid</a> (struct spdk_reduce_vol *vol)</td></tr>
 <tr class="memdesc:ace66fd4e3840d38127fcf7a21dc269de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the UUID for a libreduce compressed volume.  <a href="#ace66fd4e3840d38127fcf7a21dc269de">More...</a><br /></td></tr>
 <tr class="separator:ace66fd4e3840d38127fcf7a21dc269de"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -195,33 +192,6 @@ Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>SPDK block compression. </p>
 </div><h2 class="groupheader">Function Documentation</h2>
-<a id="a27cc9c49bb7124d23f1730adf5b19bd5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a27cc9c49bb7124d23f1730adf5b19bd5">&#9670;&nbsp;</a></span>spdk_reduce_get_backing_device_size()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int64_t spdk_reduce_get_backing_device_size </td>
-          <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structspdk__reduce__vol__params.html">spdk_reduce_vol_params</a> *&#160;</td>
-          <td class="paramname"><em>params</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Get the required size for the backing device for a compressed volume. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">params</td><td>Parameters for the compressed volume </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Size of the required backing device (in bytes) needed to create the compressed volume. Returns -EINVAL if params is invalid. </dd></dl>
-
-</div>
-</div>
 <a id="ace66fd4e3840d38127fcf7a21dc269de"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ace66fd4e3840d38127fcf7a21dc269de">&#9670;&nbsp;</a></span>spdk_reduce_vol_get_uuid()</h2>
 

@@ -6,7 +6,6 @@ var reduce_8h =
     [ "spdk_reduce_dev_cpl", "reduce_8h.html#a137aea842a5ebd65781d7bcfc735018b", null ],
     [ "spdk_reduce_vol_op_complete", "reduce_8h.html#a34d13995c0ae908bbe5bf798fdb52a4f", null ],
     [ "spdk_reduce_vol_op_with_handle_complete", "reduce_8h.html#a978a8801cd56a94532562650457c97dd", null ],
-    [ "spdk_reduce_get_backing_device_size", "reduce_8h.html#a27cc9c49bb7124d23f1730adf5b19bd5", null ],
     [ "spdk_reduce_vol_get_uuid", "reduce_8h.html#ace66fd4e3840d38127fcf7a21dc269de", null ],
     [ "spdk_reduce_vol_init", "reduce_8h.html#a62753f16686f807748719567d57f15b8", null ],
     [ "spdk_reduce_vol_load", "reduce_8h.html#a910dd92b2a78d08fdb1cd6fa9e4c7a9e", null ],

@@ -233,6 +233,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>_spdk_trace_record</b
 <tr class="memitem:aa0ade5c1286d121c2eafeae8918169db"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="trace_8h.html#aa0ade5c1286d121c2eafeae8918169db">spdk_trace_set_tpoint_group_mask</a> (uint64_t tpoint_group_mask)</td></tr>
 <tr class="memdesc:aa0ade5c1286d121c2eafeae8918169db"><td class="mdescLeft">&#160;</td><td class="mdescRight">For each tpoint group specified in the group mask, enable all of its tpoints.  <a href="#aa0ade5c1286d121c2eafeae8918169db">More...</a><br /></td></tr>
 <tr class="separator:aa0ade5c1286d121c2eafeae8918169db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00bc7e8ba17d526c39dd5582b1e66395"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="trace_8h.html#a00bc7e8ba17d526c39dd5582b1e66395">spdk_trace_clear_tpoint_group_mask</a> (uint64_t tpoint_group_mask)</td></tr>
+<tr class="memdesc:a00bc7e8ba17d526c39dd5582b1e66395"><td class="mdescLeft">&#160;</td><td class="mdescRight">For each tpoint group specified in the group mask, disable all of its tpoints.  <a href="#a00bc7e8ba17d526c39dd5582b1e66395">More...</a><br /></td></tr>
+<tr class="separator:a00bc7e8ba17d526c39dd5582b1e66395"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a01e4bb4f3e8d4f7e9fadb16bce93bf15"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="trace_8h.html#a01e4bb4f3e8d4f7e9fadb16bce93bf15">spdk_trace_init</a> (const char *shm_name, uint64_t num_entries)</td></tr>
 <tr class="memdesc:a01e4bb4f3e8d4f7e9fadb16bce93bf15"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the trace environment.  <a href="#a01e4bb4f3e8d4f7e9fadb16bce93bf15">More...</a><br /></td></tr>
 <tr class="separator:a01e4bb4f3e8d4f7e9fadb16bce93bf15"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -253,6 +256,18 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="trac
 <tr class="memitem:ab5d63ea7b3e0b08fe2f37e1c96f89272"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="trace_8h.html#ab5d63ea7b3e0b08fe2f37e1c96f89272">spdk_trace_register_description</a> (const char *name, const char *short_name, uint16_t tpoint_id, uint8_t owner_type, uint8_t object_type, uint8_t new_object, uint8_t arg1_is_ptr, const char *arg1_name)</td></tr>
 <tr class="memdesc:ab5d63ea7b3e0b08fe2f37e1c96f89272"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register the description for the tpoint.  <a href="#ab5d63ea7b3e0b08fe2f37e1c96f89272">More...</a><br /></td></tr>
 <tr class="separator:ab5d63ea7b3e0b08fe2f37e1c96f89272"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a483ad47f18a34c86bca85e1a228dd655"><td class="memItemLeft" align="right" valign="top"><a id="a483ad47f18a34c86bca85e1a228dd655"></a>
+struct <a class="el" href="structspdk__trace__register__fn.html">spdk_trace_register_fn</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_trace_get_first_register_fn</b> (void)</td></tr>
+<tr class="separator:a483ad47f18a34c86bca85e1a228dd655"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8815b847f46e8294380268f25f456084"><td class="memItemLeft" align="right" valign="top"><a id="a8815b847f46e8294380268f25f456084"></a>
+struct <a class="el" href="structspdk__trace__register__fn.html">spdk_trace_register_fn</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_trace_get_next_register_fn</b> (struct <a class="el" href="structspdk__trace__register__fn.html">spdk_trace_register_fn</a> *register_fn)</td></tr>
+<tr class="separator:a8815b847f46e8294380268f25f456084"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c9eb705c608a7ffb0724dd7520d61ad"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="trace_8h.html#a3c9eb705c608a7ffb0724dd7520d61ad">spdk_trace_enable_tpoint_group</a> (const char *group_name)</td></tr>
+<tr class="memdesc:a3c9eb705c608a7ffb0724dd7520d61ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable trace on specific tpoint group.  <a href="#a3c9eb705c608a7ffb0724dd7520d61ad">More...</a><br /></td></tr>
+<tr class="separator:a3c9eb705c608a7ffb0724dd7520d61ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace590b7acf549112daa89640dcb87447"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="trace_8h.html#ace590b7acf549112daa89640dcb87447">spdk_trace_disable_tpoint_group</a> (const char *group_name)</td></tr>
+<tr class="memdesc:ace590b7acf549112daa89640dcb87447"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disable trace on specific tpoint group.  <a href="#ace590b7acf549112daa89640dcb87447">More...</a><br /></td></tr>
+<tr class="separator:ace590b7acf549112daa89640dcb87447"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2057ffa0d5eaf0680a8d970646c157af"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="trace_8h.html#a2057ffa0d5eaf0680a8d970646c157af">spdk_trace_mask_usage</a> (FILE *f, const char *tmask_arg)</td></tr>
 <tr class="memdesc:a2057ffa0d5eaf0680a8d970646c157af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Show trace mask and its usage.  <a href="#a2057ffa0d5eaf0680a8d970646c157af">More...</a><br /></td></tr>
 <tr class="separator:a2057ffa0d5eaf0680a8d970646c157af"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -303,7 +318,7 @@ struct <a class="el" href="structspdk__trace__histories.html">spdk_trace_histori
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><span class="keyword">static</span> <span class="keywordtype">void</span> fn(<span class="keywordtype">void</span>);                                   \</div><div class="line">        struct <a class="code" href="structspdk__trace__register__fn.html">spdk_trace_register_fn</a> reg_ ## fn = {            \</div><div class="line">                .name = name_str,                               \</div><div class="line">                .tgroup_id = _tgroup_id,                        \</div><div class="line">                .reg_fn = fn,                                   \</div><div class="line">                .next = NULL,                                   \</div><div class="line">        };                                                      \</div><div class="line">        __attribute__((constructor)) <span class="keyword">static</span> <span class="keywordtype">void</span> _ ## fn(<span class="keywordtype">void</span>)  \</div><div class="line">        {                                                       \</div><div class="line">                spdk_trace_add_register_fn(&amp;reg_ ## fn);        \</div><div class="line">        }                                                       \</div><div class="line">        static <span class="keywordtype">void</span> fn(<span class="keywordtype">void</span>)</div><div class="ttc" id="structspdk__trace__register__fn_html"><div class="ttname"><a href="structspdk__trace__register__fn.html">spdk_trace_register_fn</a></div><div class="ttdef"><b>Definition:</b> trace.h:343</div></div>
+<b>Value:</b><div class="fragment"><div class="line"><span class="keyword">static</span> <span class="keywordtype">void</span> fn(<span class="keywordtype">void</span>);                                   \</div><div class="line">        struct <a class="code" href="structspdk__trace__register__fn.html">spdk_trace_register_fn</a> reg_ ## fn = {            \</div><div class="line">                .name = name_str,                               \</div><div class="line">                .tgroup_id = _tgroup_id,                        \</div><div class="line">                .reg_fn = fn,                                   \</div><div class="line">                .next = NULL,                                   \</div><div class="line">        };                                                      \</div><div class="line">        __attribute__((constructor)) <span class="keyword">static</span> <span class="keywordtype">void</span> _ ## fn(<span class="keywordtype">void</span>)  \</div><div class="line">        {                                                       \</div><div class="line">                spdk_trace_add_register_fn(&amp;reg_ ## fn);        \</div><div class="line">        }                                                       \</div><div class="line">        static <span class="keywordtype">void</span> fn(<span class="keywordtype">void</span>)</div><div class="ttc" id="structspdk__trace__register__fn_html"><div class="ttname"><a href="structspdk__trace__register__fn.html">spdk_trace_register_fn</a></div><div class="ttdef"><b>Definition:</b> trace.h:371</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -328,6 +343,32 @@ struct <a class="el" href="structspdk__trace__histories.html">spdk_trace_histori
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">reg_fn</td><td>Trace register function to add. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a00bc7e8ba17d526c39dd5582b1e66395"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a00bc7e8ba17d526c39dd5582b1e66395">&#9670;&nbsp;</a></span>spdk_trace_clear_tpoint_group_mask()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_trace_clear_tpoint_group_mask </td>
+          <td>(</td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>tpoint_group_mask</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>For each tpoint group specified in the group mask, disable all of its tpoints. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tpoint_group_mask</td><td>Tpoint group mask that indicates which tpoints to disable. </td></tr>
   </table>
   </dd>
 </dl>
@@ -368,6 +409,60 @@ struct <a class="el" href="structspdk__trace__histories.html">spdk_trace_histori
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="ace590b7acf549112daa89640dcb87447"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ace590b7acf549112daa89640dcb87447">&#9670;&nbsp;</a></span>spdk_trace_disable_tpoint_group()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_trace_disable_tpoint_group </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>group_name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Disable trace on specific tpoint group. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">group_name</td><td>Name of group to disable, "all" for disabling all groups. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, else non-zero indicates a failure. </dd></dl>
+
+</div>
+</div>
+<a id="a3c9eb705c608a7ffb0724dd7520d61ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c9eb705c608a7ffb0724dd7520d61ad">&#9670;&nbsp;</a></span>spdk_trace_enable_tpoint_group()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_trace_enable_tpoint_group </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>group_name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Enable trace on specific tpoint group. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">group_name</td><td>Name of group to enable, "all" for enabling all groups. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, else non-zero indicates a failure. </dd></dl>
 
 </div>
 </div>

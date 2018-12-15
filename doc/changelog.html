@@ -156,6 +156,8 @@ v19.01: (Upcoming Release)</h1>
 <p>On shutdown, bdev unregister now proceeds in top-down fashion, with claimed bdevs skipped (these will be unregistered later, when virtual bdev built on top of the respective base bdev unclaims it). This allows virtual bdevs to be shut down cleanly as opposed to the previous behavior that didn't differentiate between hotremove and planned shutdown.</p>
 <h2>log</h2>
 <p>"trace flags" are now referred to as "log flags" in the SPDK log API. The set_trace_flag, clear_trace_flag and get_trace_flags RPCs are now deprecated, and set_log_flag, clear_log_flag and get_log_flags RPCs have been added.</p>
+<h2>trace</h2>
+<p>New <code>get_tpoint_group_mask</code> RPC was added to get current tpoint_group_mask, and each tpoint group status. New <code>enable_tpoint_group</code> and <code>disable_tpoint_group</code> RPC were added to enable or disable a specific tpoint group.</p>
 <h1><a class="anchor" id="changelog-v18-10"></a>
 v18.10:</h1>
 <h2>nvme</h2>

@@ -179,6 +179,15 @@ Functions</h2></td></tr>
 <tr class="memitem:a17db47325a5c9ef6f63a143de75aa71c"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bit__array_8h.html#a17db47325a5c9ef6f63a143de75aa71c">spdk_bit_array_count_clear</a> (const struct spdk_bit_array *ba)</td></tr>
 <tr class="memdesc:a17db47325a5c9ef6f63a143de75aa71c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Count the number of cleared bits in the array.  <a href="#a17db47325a5c9ef6f63a143de75aa71c">More...</a><br /></td></tr>
 <tr class="separator:a17db47325a5c9ef6f63a143de75aa71c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf64865112e6cbc0a4fc39e8aa277545"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bit__array_8h.html#acf64865112e6cbc0a4fc39e8aa277545">spdk_bit_array_store_mask</a> (const struct spdk_bit_array *ba, void *mask)</td></tr>
+<tr class="memdesc:acf64865112e6cbc0a4fc39e8aa277545"><td class="mdescLeft">&#160;</td><td class="mdescRight">Store bitmask from bit array.  <a href="#acf64865112e6cbc0a4fc39e8aa277545">More...</a><br /></td></tr>
+<tr class="separator:acf64865112e6cbc0a4fc39e8aa277545"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d9ed5f2c92771883db31e6b5b5a8c52"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bit__array_8h.html#a3d9ed5f2c92771883db31e6b5b5a8c52">spdk_bit_array_load_mask</a> (struct spdk_bit_array *ba, const void *mask)</td></tr>
+<tr class="memdesc:a3d9ed5f2c92771883db31e6b5b5a8c52"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load bitmask to bit array.  <a href="#a3d9ed5f2c92771883db31e6b5b5a8c52">More...</a><br /></td></tr>
+<tr class="separator:a3d9ed5f2c92771883db31e6b5b5a8c52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0bcf3c078f89c525d42f3cbe172405c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bit__array_8h.html#aa0bcf3c078f89c525d42f3cbe172405c">spdk_bit_array_clear_mask</a> (struct spdk_bit_array *ba)</td></tr>
+<tr class="memdesc:aa0bcf3c078f89c525d42f3cbe172405c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear (to 0) bit array bitmask.  <a href="#aa0bcf3c078f89c525d42f3cbe172405c">More...</a><br /></td></tr>
+<tr class="separator:aa0bcf3c078f89c525d42f3cbe172405c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Bit array data structure. </p>
@@ -242,6 +251,32 @@ Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">ba</td><td>Bit array to clear a bit. </td></tr>
     <tr><td class="paramname">bit_index</td><td>The index of a bit to clear. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aa0bcf3c078f89c525d42f3cbe172405c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa0bcf3c078f89c525d42f3cbe172405c">&#9670;&nbsp;</a></span>spdk_bit_array_clear_mask()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_bit_array_clear_mask </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_bit_array *&#160;</td>
+          <td class="paramname"><em>ba</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Clear (to 0) bit array bitmask. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ba</td><td>Bit array. </td></tr>
   </table>
   </dd>
 </dl>
@@ -471,6 +506,43 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a3d9ed5f2c92771883db31e6b5b5a8c52"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d9ed5f2c92771883db31e6b5b5a8c52">&#9670;&nbsp;</a></span>spdk_bit_array_load_mask()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_bit_array_load_mask </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_bit_array *&#160;</td>
+          <td class="paramname"><em>ba</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>mask</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Load bitmask to bit array. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ba</td><td>Bit array. </td></tr>
+    <tr><td class="paramname">mask</td><td>Source mask. Mask and bit array capacity must be equal. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a87475f551d59a16d09f45eca6459009d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a87475f551d59a16d09f45eca6459009d">&#9670;&nbsp;</a></span>spdk_bit_array_resize()</h2>
 
@@ -549,6 +621,43 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 on success, negative errno on failure. </dd></dl>
+
+</div>
+</div>
+<a id="acf64865112e6cbc0a4fc39e8aa277545"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acf64865112e6cbc0a4fc39e8aa277545">&#9670;&nbsp;</a></span>spdk_bit_array_store_mask()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_bit_array_store_mask </td>
+          <td>(</td>
+          <td class="paramtype">const struct spdk_bit_array *&#160;</td>
+          <td class="paramname"><em>ba</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>mask</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Store bitmask from bit array. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ba</td><td>Bit array. </td></tr>
+    <tr><td class="paramname">mask</td><td>Destination mask. Mask and bit array capacity must be equal. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
