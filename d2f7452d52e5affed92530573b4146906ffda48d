@@ -71,6 +71,29 @@
     },
     {
       "key": {
+        "uuid": "159cfac5_e34170f0",
+        "filename": "cn/usecase.md",
+        "patchSetId": 5
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 1011207
+      },
+      "writtenOn": "2018-12-15T12:06:25Z",
+      "side": 1,
+      "message": "是不是这里，直接\"title:  \"SPDK用户案例\"，可以直接定位到中文\"news\"页面，不需要下面的重复内容，我看英文版没有重复，只是有个相同的\"title\"?",
+      "range": {
+        "startLine": 3,
+        "startChar": 0,
+        "endLine": 3,
+        "endChar": 14
+      },
+      "revId": "d2f7452d52e5affed92530573b4146906ffda48d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "d2e2399e_878a6377",
         "filename": "whitepaper.md",
         "patchSetId": 5
