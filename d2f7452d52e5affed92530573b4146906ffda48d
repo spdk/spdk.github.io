@@ -2,6 +2,23 @@
   "comments": [
     {
       "key": {
+        "uuid": "acf683af_fe95bc12",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 5
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 1011207
+      },
+      "writtenOn": "2018-12-15T12:08:38Z",
+      "side": 1,
+      "message": "There is missing \"Signed-off-by:\" related information, looks like there needs some additional setting when submitting the patch. Thanks.",
+      "revId": "d2f7452d52e5affed92530573b4146906ffda48d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "57facf16_7b9d6e11",
         "filename": "_includes/newslinks.html",
         "patchSetId": 5
