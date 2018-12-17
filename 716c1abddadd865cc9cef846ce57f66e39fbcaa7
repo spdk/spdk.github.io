@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "89bb3971_cac3d9a5",
+        "filename": "_includes/js/meetings.js",
+        "patchSetId": 5
+      },
+      "lineNbr": 47,
+      "author": {
+        "id": 1011223
+      },
+      "writtenOn": "2018-12-17T17:12:00Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "d9614732_5f68e38b",
+      "revId": "716c1abddadd865cc9cef846ce57f66e39fbcaa7",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "df5a54d1_c5f08908",
         "filename": "_includes/js/meetings.js",
         "patchSetId": 5
@@ -30,6 +48,24 @@
       "writtenOn": "2018-12-14T22:58:37Z",
       "side": 1,
       "message": "I think it would be a simpler to write this the other way around, or maybe as two statements.\n\nif (localDate.getData() \u003d\u003d holiday.getDate()) {\n    return true;\n}\n\nif (localDate.getDate() \u003d\u003d holiday.getDate() - 1 \u0026\u0026 localDate.getHours() \u003e 16) {\n    return true;\n}",
+      "revId": "716c1abddadd865cc9cef846ce57f66e39fbcaa7",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "05a14e63_d466776c",
+        "filename": "_includes/js/meetings.js",
+        "patchSetId": 5
+      },
+      "lineNbr": 48,
+      "author": {
+        "id": 1011223
+      },
+      "writtenOn": "2018-12-17T17:12:00Z",
+      "side": 1,
+      "message": "I split it into two statements.",
+      "parentUuid": "df5a54d1_c5f08908",
       "revId": "716c1abddadd865cc9cef846ce57f66e39fbcaa7",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": false
@@ -53,6 +89,24 @@
     },
     {
       "key": {
+        "uuid": "00113ab4_4aed82c7",
+        "filename": "_includes/js/meetings.js",
+        "patchSetId": 5
+      },
+      "lineNbr": 53,
+      "author": {
+        "id": 1011223
+      },
+      "writtenOn": "2018-12-17T17:12:00Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "379dde12_d56b3ef1",
+      "revId": "716c1abddadd865cc9cef846ce57f66e39fbcaa7",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "b578a14c_46c6fbc8",
         "filename": "_includes/js/meetings.js",
         "patchSetId": 5
@@ -70,6 +124,24 @@
     },
     {
       "key": {
+        "uuid": "528ca4bc_b4f5e5e3",
+        "filename": "_includes/js/meetings.js",
+        "patchSetId": 5
+      },
+      "lineNbr": 56,
+      "author": {
+        "id": 1011223
+      },
+      "writtenOn": "2018-12-17T17:12:00Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "b578a14c_46c6fbc8",
+      "revId": "716c1abddadd865cc9cef846ce57f66e39fbcaa7",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "3ff108cb_df0953f8",
         "filename": "community.md",
         "patchSetId": 5
@@ -81,6 +153,24 @@
       "writtenOn": "2018-12-14T22:58:37Z",
       "side": 1,
       "message": "Maybe clarify that these are U.S. holidays (Canadian Thanksgiving, etc.) and that their date is taken in Arizona time.",
+      "revId": "716c1abddadd865cc9cef846ce57f66e39fbcaa7",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3854936b_baf59f48",
+        "filename": "community.md",
+        "patchSetId": 5
+      },
+      "lineNbr": 64,
+      "author": {
+        "id": 1011223
+      },
+      "writtenOn": "2018-12-17T17:12:00Z",
+      "side": 1,
+      "message": "I added the clarifying statement. What about Canadian Thanksgiving though, do you want it added to the list?",
+      "parentUuid": "3ff108cb_df0953f8",
       "revId": "716c1abddadd865cc9cef846ce57f66e39fbcaa7",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": false
