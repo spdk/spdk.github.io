@@ -111,6 +111,30 @@
     },
     {
       "key": {
+        "uuid": "f22e7b69_035857ab",
+        "filename": "cn/usecase.md",
+        "patchSetId": 5
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 1014486
+      },
+      "writtenOn": "2018-12-17T05:07:35Z",
+      "side": 1,
+      "message": "hi Gang,这个文件可以删掉了，目前中文news页面就是usecase页面，这个是我忘了删掉的文件。",
+      "parentUuid": "159cfac5_e34170f0",
+      "range": {
+        "startLine": 3,
+        "startChar": 0,
+        "endLine": 3,
+        "endChar": 14
+      },
+      "revId": "d2f7452d52e5affed92530573b4146906ffda48d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "d2e2399e_878a6377",
         "filename": "whitepaper.md",
         "patchSetId": 5
