@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "0ba719ce_7511e1dc",
+        "filename": "cn/news.md",
+        "patchSetId": 9
+      },
+      "lineNbr": 43,
+      "author": {
+        "id": 1011207
+      },
+      "writtenOn": "2018-12-17T07:32:12Z",
+      "side": 1,
+      "message": "Is this needed to change to \"{{ baseurl_rel }}\" where I see other links on the default news page where the four links used the {{ baseurl_rel }}.",
+      "range": {
+        "startLine": 43,
+        "startChar": 24,
+        "endLine": 43,
+        "endChar": 37
+      },
+      "revId": "536ece84a7ac8cfdd328df71a6f2ec3eb2cf095e",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
