@@ -1,0 +1,96 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "ea509fe8_ba9a42a5",
+        "filename": "_includes/newslinks.html",
+        "patchSetId": 8
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 1011207
+      },
+      "writtenOn": "2018-12-17T07:01:31Z",
+      "side": 1,
+      "message": "Please change to \"关注“",
+      "range": {
+        "startLine": 9,
+        "startChar": 50,
+        "endLine": 9,
+        "endChar": 52
+      },
+      "revId": "40e667342cce4a5b989d7559168949d201f3a007",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fab16a42_4d6e4cc7",
+        "filename": "_includes/newslinks.html",
+        "patchSetId": 8
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 1011207
+      },
+      "writtenOn": "2018-12-17T07:01:31Z",
+      "side": 1,
+      "message": "Please change to \"Follow\".",
+      "range": {
+        "startLine": 14,
+        "startChar": 47,
+        "endLine": 14,
+        "endChar": 54
+      },
+      "revId": "40e667342cce4a5b989d7559168949d201f3a007",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "c7a511df_8bf5c038",
+        "filename": "cn/news.md",
+        "patchSetId": 8
+      },
+      "lineNbr": 43,
+      "author": {
+        "id": 1011207
+      },
+      "writtenOn": "2018-12-17T07:01:31Z",
+      "side": 1,
+      "message": "请参考英文",
+      "range": {
+        "startLine": 43,
+        "startChar": 14,
+        "endLine": 43,
+        "endChar": 17
+      },
+      "revId": "40e667342cce4a5b989d7559168949d201f3a007",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "bf5b08c3_725a8118",
+        "filename": "whitepaper.md",
+        "patchSetId": 8
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 1011207
+      },
+      "writtenOn": "2018-12-17T07:01:31Z",
+      "side": 1,
+      "message": "Whitepapers",
+      "range": {
+        "startLine": 3,
+        "startChar": 14,
+        "endLine": 3,
+        "endChar": 25
+      },
+      "revId": "40e667342cce4a5b989d7559168949d201f3a007",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
