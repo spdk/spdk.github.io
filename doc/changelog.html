@@ -142,6 +142,7 @@ $(document).ready(function(){initNavTree('changelog.html','');});
 v19.01: (Upcoming Release)</h1>
 <h2>util</h2>
 <p>A new uuid API <code>spdk_uuid_copy</code> was added to make a copy of the source uuid.</p>
+<p>An new parameter <code>init_crc</code> representing the initial CRC value was added to <code>spdk_crc16_t10dif</code>. The parameter can be used to calculate a CRC value spanning multiple separate buffers.</p>
 <h2>nvme</h2>
 <p>admin_timeout_ms was added to NVMe controller initialization options, users can change the default value when probing a controller.</p>
 <p>Add two new fields "header_digest" and "data_digest" in struct <a class="el" href="structspdk__nvme__ctrlr__opts.html" title="NVMe controller initialization options. ">spdk_nvme_ctrlr_opts</a>, it will be used to enable the digest support for the NVMe/TCP transport.</p>

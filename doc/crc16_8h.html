@@ -154,15 +154,15 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:afdf5511063115512a83c07b6cc2575f2"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="crc16_8h.html#afdf5511063115512a83c07b6cc2575f2">spdk_crc16_t10dif</a> (const void *buf, size_t len)</td></tr>
-<tr class="memdesc:afdf5511063115512a83c07b6cc2575f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate T10-DIF CRC-16 checksum.  <a href="#afdf5511063115512a83c07b6cc2575f2">More...</a><br /></td></tr>
-<tr class="separator:afdf5511063115512a83c07b6cc2575f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2cd983682857afc5394119d54c4861c"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="crc16_8h.html#ac2cd983682857afc5394119d54c4861c">spdk_crc16_t10dif</a> (uint16_t init_crc, const void *buf, size_t len)</td></tr>
+<tr class="memdesc:ac2cd983682857afc5394119d54c4861c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate T10-DIF CRC-16 checksum.  <a href="#ac2cd983682857afc5394119d54c4861c">More...</a><br /></td></tr>
+<tr class="separator:ac2cd983682857afc5394119d54c4861c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>CRC-16 utility functions. </p>
 </div><h2 class="groupheader">Function Documentation</h2>
-<a id="afdf5511063115512a83c07b6cc2575f2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afdf5511063115512a83c07b6cc2575f2">&#9670;&nbsp;</a></span>spdk_crc16_t10dif()</h2>
+<a id="ac2cd983682857afc5394119d54c4861c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac2cd983682857afc5394119d54c4861c">&#9670;&nbsp;</a></span>spdk_crc16_t10dif()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -170,6 +170,12 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">uint16_t spdk_crc16_t10dif </td>
           <td>(</td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>init_crc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype">const void *&#160;</td>
           <td class="paramname"><em>buf</em>, </td>
         </tr>
@@ -190,6 +196,7 @@ Functions</h2></td></tr>
 <p>Calculate T10-DIF CRC-16 checksum. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
+    <tr><td class="paramname">init_crc</td><td>Initial CRC-16 value. </td></tr>
     <tr><td class="paramname">buf</td><td>Data buffer to checksum. </td></tr>
     <tr><td class="paramname">len</td><td>Length of buf in bytes. </td></tr>
   </table>

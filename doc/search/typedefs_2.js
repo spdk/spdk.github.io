@@ -34,6 +34,7 @@ var searchData=
   ['spdk_5flvs_5fop_5fcomplete',['spdk_lvs_op_complete',['../lvol_8h.html#a76f85d046acb7b35ae36dc83cf337075',1,'lvol.h']]],
   ['spdk_5flvs_5fop_5fwith_5fhandle_5fcomplete',['spdk_lvs_op_with_handle_complete',['../lvol_8h.html#a757eefd4ce0d68328e7dec58eb2e8a50',1,'lvol.h']]],
   ['spdk_5fmempool_5fobj_5fcb_5ft',['spdk_mempool_obj_cb_t',['../env_8h.html#a039d3ef1514e326b6c2d8a527f6a6aaa',1,'env.h']]],
+  ['spdk_5fmsg_5ffn',['spdk_msg_fn',['../thread_8h.html#adc0da6b1b784d4f165dcd48b526d12ad',1,'thread.h']]],
   ['spdk_5fnbd_5fstart_5fcb',['spdk_nbd_start_cb',['../nbd_8h.html#abed048e29b578c12e7db81e77df6877b',1,'nbd.h']]],
   ['spdk_5fnet_5ffini_5fcb',['spdk_net_fini_cb',['../net_8h.html#a005afc5c521c3f92ff7d80900cdc3af9',1,'net.h']]],
   ['spdk_5fnet_5finit_5fcb',['spdk_net_init_cb',['../net_8h.html#ac4a70159fdffa7bd9100c92b602b2608',1,'net.h']]],
@@ -53,8 +54,7 @@ var searchData=
   ['spdk_5fsock_5fcb',['spdk_sock_cb',['../sock_8h.html#ae297ae75e566b35635d20b959daa7741',1,'sock.h']]],
   ['spdk_5fstart_5fpoller',['spdk_start_poller',['../thread_8h.html#a6f70f5e9b4d498e843f81f1a6ada6370',1,'thread.h']]],
   ['spdk_5fstop_5fpoller',['spdk_stop_poller',['../thread_8h.html#adfddbbbb13145f26741106cb8296a05a',1,'thread.h']]],
-  ['spdk_5fthread_5ffn',['spdk_thread_fn',['../thread_8h.html#a964c3690cb5eea9bcf2e0f91b001a239',1,'thread.h']]],
-  ['spdk_5fthread_5fpass_5fmsg',['spdk_thread_pass_msg',['../thread_8h.html#a72dfa5b3490733f3d307d2303a551661',1,'thread.h']]],
+  ['spdk_5fthread_5fpass_5fmsg',['spdk_thread_pass_msg',['../thread_8h.html#a4a0e155fc3fa0150aa4a505dd1801e91',1,'thread.h']]],
   ['spdk_5fvhost_5fevent_5ffn',['spdk_vhost_event_fn',['../vhost_8h.html#ac2c4b62eaf6503e5f5e520394f9f9fe1',1,'vhost.h']]],
   ['spdk_5fvhost_5ffini_5fcb',['spdk_vhost_fini_cb',['../vhost_8h.html#a8b37106ad173f20d05da87f89714700b',1,'vhost.h']]]
 ];

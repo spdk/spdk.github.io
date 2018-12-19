@@ -201,10 +201,11 @@ var NAVTREEINDEX19 =
 "util_8h.html":[14,0,48],
 "util_8h.html#a21e1907187f8bf2c4b0c0de12c113ed6":[14,0,48,1],
 "util_8h.html#a22383e04171a98834c5f21f0c460e322":[14,0,48,6],
+"util_8h.html#a3a1ed8f80bbc8e22d1f778a6615512e7":[14,0,48,7],
 "util_8h.html#a4ef0b5332740873cf0414a8b44000128":[14,0,48,2],
-"util_8h.html#a63e2af9bd97c1250c11a2e585336f377":[14,0,48,7],
+"util_8h.html#a63e2af9bd97c1250c11a2e585336f377":[14,0,48,8],
 "util_8h.html#a837456da8a8d13c0f84c1b362acfe482":[14,0,48,3],
-"util_8h.html#a8572bc8de56d3587c8cf85dae67c1ca0":[14,0,48,8],
+"util_8h.html#a8572bc8de56d3587c8cf85dae67c1ca0":[14,0,48,9],
 "util_8h.html#aaa368537876ed0aee8ae810a240b2dfb":[14,0,48,5],
 "util_8h.html#ac1fbd59e0e9f73e71f416385d606cc52":[14,0,48,4],
 "util_8h.html#ace0946954cf4fed6e4f3b7f87180f984":[14,0,48,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX19 =
 "vhost.html#vhost_start":[3,4,3],
 "vhost.html#vhost_toc":[3,4,0],
 "vhost.html#vhost_vdev_create":[3,4,4,1],
-"vhost_8h.html":[14,0,51],
-"vhost_8h.html#a01b54a11439216fb05196474e3ee20d1":[14,0,51,14]
+"vhost_8h.html":[14,0,51]
 };
