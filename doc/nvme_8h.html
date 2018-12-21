@@ -157,6 +157,9 @@ Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__transport__id.html">spdk_nvme_transport_id</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">NVMe transport identifier.  <a href="structspdk__nvme__transport__id.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__host__id.html">spdk_nvme_host_id</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">NVMe host identifier.  <a href="structspdk__nvme__host__id.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__io__qpair__opts.html">spdk_nvme_io_qpair_opts</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">NVMe I/O queue pair initialization options.  <a href="structspdk__nvme__io__qpair__opts.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -230,6 +233,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ac37484cc5d14777e4ae1fde031d0edf2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#ac37484cc5d14777e4ae1fde031d0edf2">spdk_nvme_transport_id_parse</a> (struct <a class="el" href="structspdk__nvme__transport__id.html">spdk_nvme_transport_id</a> *trid, const char *str)</td></tr>
 <tr class="memdesc:ac37484cc5d14777e4ae1fde031d0edf2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parse the string representation of a transport ID.  <a href="#ac37484cc5d14777e4ae1fde031d0edf2">More...</a><br /></td></tr>
 <tr class="separator:ac37484cc5d14777e4ae1fde031d0edf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad068dd50f11160450098712422116785"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#ad068dd50f11160450098712422116785">spdk_nvme_host_id_parse</a> (struct <a class="el" href="structspdk__nvme__host__id.html">spdk_nvme_host_id</a> *hostid, const char *str)</td></tr>
+<tr class="memdesc:ad068dd50f11160450098712422116785"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parse the string representation of a host ID.  <a href="#ad068dd50f11160450098712422116785">More...</a><br /></td></tr>
+<tr class="separator:ad068dd50f11160450098712422116785"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab2afed1cce9d9334dfd127db416ada4c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#ab2afed1cce9d9334dfd127db416ada4c">spdk_nvme_transport_id_parse_trtype</a> (enum <a class="el" href="nvme_8h.html#ae87a03c28984a2c0499d50ef5e9d0ece">spdk_nvme_transport_type</a> *trtype, const char *str)</td></tr>
 <tr class="memdesc:ab2afed1cce9d9334dfd127db416ada4c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parse the string representation of a transport ID tranport type.  <a href="#ab2afed1cce9d9334dfd127db416ada4c">More...</a><br /></td></tr>
 <tr class="separator:ab2afed1cce9d9334dfd127db416ada4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -2814,6 +2820,55 @@ int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_retry_co
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 on success, -1 on failure. </dd></dl>
+
+</div>
+</div>
+<a id="ad068dd50f11160450098712422116785"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad068dd50f11160450098712422116785">&#9670;&nbsp;</a></span>spdk_nvme_host_id_parse()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_nvme_host_id_parse </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structspdk__nvme__host__id.html">spdk_nvme_host_id</a> *&#160;</td>
+          <td class="paramname"><em>hostid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>str</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Parse the string representation of a host ID. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">hostid</td><td>Output host ID structure (must be allocated and initialized by caller). </td></tr>
+    <tr><td class="paramname">str</td><td>Input string representation of a transport ID to parse (hostid is a sub-configuration).</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>str must be a zero-terminated C string containing one or more key:value pairs separated by whitespace.</p>
+<table class="doxtable">
+<tr>
+<th>Key </th><th>Value  </th></tr>
+<tr>
+<td>hostaddr </td><td>Transport address (e.g. 192.168.100.8 for RDMA) </td></tr>
+<tr>
+<td>hostsvcid </td><td>Transport service identifier (e.g. 4420) </td></tr>
+</table>
+<p>Unspecified fields of trid are left unmodified, so the caller must initialize hostid (for example, memset() to 0) before calling this function.</p>
+<p>This function should not be used with Fiber Channel or PCIe as these transports do not require host information for connections.</p>
+<dl class="section return"><dt>Returns</dt><dd>0 if parsing was successful and hostid is filled out, or negated errno values on failure. </dd></dl>
 
 </div>
 </div>

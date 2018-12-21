@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="Content-Type" content="text/xhtml; charset=utf-8">
   <meta name="generator" content="Doxygen 1.8.13">
-  <title>SPDK: spdk_nvmf_transport_opts Struct Reference</title>
+  <title>SPDK: spdk_dif Struct Reference</title>
   <script type="text/javascript" src="jquery.js"></script>
   <script type="text/javascript" src="dynsections.js"></script>
   <link href="navtree.css" rel="stylesheet" type="text/css"/>
@@ -116,7 +116,7 @@ $(function() {
   </div>
 </div>
 <script type="text/javascript">
-$(document).ready(function(){initNavTree('structspdk__nvmf__transport__opts.html','');});
+$(document).ready(function(){initNavTree('structspdk__dif.html','');});
 </script>
 <div id="doc-content">
 <!-- window showing the filter options -->
@@ -137,36 +137,24 @@ $(document).ready(function(){initNavTree('structspdk__nvmf__transport__opts.html
   <div class="summary">
 <a href="#pub-attribs">Data Fields</a>  </div>
   <div class="headertitle">
-<div class="title">spdk_nvmf_transport_opts Struct Reference</div>  </div>
+<div class="title">spdk_dif Struct Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:a90f2c6dd7e963201cbe0e625b4599ee4"><td class="memItemLeft" align="right" valign="top"><a id="a90f2c6dd7e963201cbe0e625b4599ee4"></a>
-uint16_t&#160;</td><td class="memItemRight" valign="bottom"><b>max_queue_depth</b></td></tr>
-<tr class="separator:a90f2c6dd7e963201cbe0e625b4599ee4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa6c3986bff2dcd3d5cc5b89616e03d8b"><td class="memItemLeft" align="right" valign="top"><a id="aa6c3986bff2dcd3d5cc5b89616e03d8b"></a>
-uint16_t&#160;</td><td class="memItemRight" valign="bottom"><b>max_qpairs_per_ctrlr</b></td></tr>
-<tr class="separator:aa6c3986bff2dcd3d5cc5b89616e03d8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a51e173174fe161295fcf24c1e0c18438"><td class="memItemLeft" align="right" valign="top"><a id="a51e173174fe161295fcf24c1e0c18438"></a>
-uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>in_capsule_data_size</b></td></tr>
-<tr class="separator:a51e173174fe161295fcf24c1e0c18438"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a12c798cc83976f1edaf15c3627d31c70"><td class="memItemLeft" align="right" valign="top"><a id="a12c798cc83976f1edaf15c3627d31c70"></a>
-uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>max_io_size</b></td></tr>
-<tr class="separator:a12c798cc83976f1edaf15c3627d31c70"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7e6e60442ef1d45efab0e6159d060a8e"><td class="memItemLeft" align="right" valign="top"><a id="a7e6e60442ef1d45efab0e6159d060a8e"></a>
-uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>io_unit_size</b></td></tr>
-<tr class="separator:a7e6e60442ef1d45efab0e6159d060a8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a063b1c1080343c707a3d51ced615628f"><td class="memItemLeft" align="right" valign="top"><a id="a063b1c1080343c707a3d51ced615628f"></a>
-uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>max_aq_depth</b></td></tr>
-<tr class="separator:a063b1c1080343c707a3d51ced615628f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac029aacb2caf552303ef1cc7f51f7bb9"><td class="memItemLeft" align="right" valign="top"><a id="ac029aacb2caf552303ef1cc7f51f7bb9"></a>
-uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>num_shared_buffers</b></td></tr>
-<tr class="separator:ac029aacb2caf552303ef1cc7f51f7bb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c6fdcc7eb2a6eeb05ab25d8eb8b1ade"><td class="memItemLeft" align="right" valign="top"><a id="a1c6fdcc7eb2a6eeb05ab25d8eb8b1ade"></a>
+uint16_t&#160;</td><td class="memItemRight" valign="bottom"><b>guard</b></td></tr>
+<tr class="separator:a1c6fdcc7eb2a6eeb05ab25d8eb8b1ade"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98fdcb892152ce328993558e638c56f2"><td class="memItemLeft" align="right" valign="top"><a id="a98fdcb892152ce328993558e638c56f2"></a>
+uint16_t&#160;</td><td class="memItemRight" valign="bottom"><b>app_tag</b></td></tr>
+<tr class="separator:a98fdcb892152ce328993558e638c56f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa984f4551775226087f1c9f2297da3eb"><td class="memItemLeft" align="right" valign="top"><a id="aa984f4551775226087f1c9f2297da3eb"></a>
+uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>ref_tag</b></td></tr>
+<tr class="separator:aa984f4551775226087f1c9f2297da3eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this struct was generated from the following file:<ul>
-<li><a class="el" href="nvmf_8h.html">nvmf.h</a></li>
+<li>dif.h</li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

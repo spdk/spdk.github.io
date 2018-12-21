@@ -2,6 +2,7 @@ var nvme_8h =
 [
     [ "spdk_nvme_ctrlr_opts", "structspdk__nvme__ctrlr__opts.html", "structspdk__nvme__ctrlr__opts" ],
     [ "spdk_nvme_transport_id", "structspdk__nvme__transport__id.html", "structspdk__nvme__transport__id" ],
+    [ "spdk_nvme_host_id", "structspdk__nvme__host__id.html", "structspdk__nvme__host__id" ],
     [ "spdk_nvme_io_qpair_opts", "structspdk__nvme__io__qpair__opts.html", "structspdk__nvme__io__qpair__opts" ],
     [ "SPDK_NVME_DEFAULT_RETRY_COUNT", "nvme_8h.html#a1915e114063119af0a9af50b75b7acaa", null ],
     [ "spdk_nvme_aer_cb", "nvme_8h.html#ae564dc7dced1dd7b474c1a6923734a6d", null ],
@@ -70,6 +71,7 @@ var nvme_8h =
     [ "spdk_nvme_ctrlr_reset", "nvme_8h.html#ae13ccd2ea831842a5008eb95a32545c3", null ],
     [ "spdk_nvme_ctrlr_update_firmware", "nvme_8h.html#a7938b258a7614073065be4f6a35bd0e2", null ],
     [ "spdk_nvme_detach", "nvme_8h.html#a4b63c225c3cce6da60fdbfb6f54b11e2", null ],
+    [ "spdk_nvme_host_id_parse", "nvme_8h.html#ad068dd50f11160450098712422116785", null ],
     [ "spdk_nvme_ns_cmd_compare", "nvme_8h.html#ad8aa3c9ff510fe73945549077df18436", null ],
     [ "spdk_nvme_ns_cmd_compare_with_md", "nvme_8h.html#a4bf7a40872bfe623a5dfa31922263532", null ],
     [ "spdk_nvme_ns_cmd_comparev", "nvme_8h.html#a108d6b722c8837593dec16f30376d182", null ],
