@@ -1125,6 +1125,7 @@ var searchData=
   ['spdk_5ft10dif_5fcrc16_5fpolynomial',['SPDK_T10DIF_CRC16_POLYNOMIAL',['../crc16_8h.html#a4c5c6b44eafbb4bb09df424150da7508',1,'crc16.h']]],
   ['spdk_5fthread_5fget_5fcount',['spdk_thread_get_count',['../thread_8h.html#a1d77f05c2461acb75f333e67e6aeb1ed',1,'thread.h']]],
   ['spdk_5fthread_5fget_5fname',['spdk_thread_get_name',['../thread_8h.html#ae367048fa89366e845d72015064e6f76',1,'thread.h']]],
+  ['spdk_5fthread_5fhas_5factive_5fpollers',['spdk_thread_has_active_pollers',['../thread_8h.html#a5a143ecbc5ce7edcd57e76cffd74bde5',1,'thread.h']]],
   ['spdk_5fthread_5flib_5ffini',['spdk_thread_lib_fini',['../thread_8h.html#afe409bf16664f461daa516b6a6d1682c',1,'thread.h']]],
   ['spdk_5fthread_5flib_5finit',['spdk_thread_lib_init',['../thread_8h.html#afba31c619e8c0825c5d542f27ae3c932',1,'thread.h']]],
   ['spdk_5fthread_5fnext_5fpoller_5fexpiration',['spdk_thread_next_poller_expiration',['../thread_8h.html#a474fcfc5c14928eda42c684ba2b4cba9',1,'thread.h']]],

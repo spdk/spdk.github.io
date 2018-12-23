@@ -1,5 +1,6 @@
 var NAVTREEINDEX19 =
 {
+"unionspdk__nvme__bprsel__register.html#a138ebe97701c020a2081ae8470bc725f":[13,0,70,5],
 "unionspdk__nvme__bprsel__register.html#a1d99f25457ec9ad05c5dd3db63d51953":[13,0,70,4],
 "unionspdk__nvme__bprsel__register.html#a426cc6f4f6478519c297df3ad92bd4b1":[13,0,70,3],
 "unionspdk__nvme__bprsel__register.html#a615e9f455cb7a36f1820dae8fd9dc3ae":[13,0,70,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX19 =
 "vhost.html#vhost_advanced_topics":[3,4,5],
 "vhost.html#vhost_bdev_create":[3,4,4,0],
 "vhost.html#vhost_bugs":[3,4,6],
-"vhost.html#vhost_cmd_line_args":[3,4,2,0],
-"vhost.html#vhost_config":[3,4,4]
+"vhost.html#vhost_cmd_line_args":[3,4,2,0]
 };

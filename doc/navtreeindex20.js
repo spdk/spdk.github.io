@@ -1,5 +1,6 @@
 var NAVTREEINDEX20 =
 {
+"vhost.html#vhost_config":[3,4,4],
 "vhost.html#vhost_example":[3,4,4,3],
 "vhost.html#vhost_hotattach":[3,4,5,1],
 "vhost.html#vhost_intro":[3,4,1],
