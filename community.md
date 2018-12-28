@@ -62,9 +62,9 @@ See the [Development](/development/) page for more information on how to contrib
 
 # Holidays
 
-Community meetings scheduled on the following days will be cancelled:
+Community meetings scheduled on the following days of the same timezone will be cancelled. For example, the Euro-Friendly community meeting will be cancelled on the Chrismas Day.
 
-## U.S. Holidays (Based on the America/Phoenix IANA timezone):
+## U.S. Holidays (Based on the America/Phoenix IANA timezone)
 
 * Christmas Eve
 * Christmas Day
@@ -76,3 +76,13 @@ Community meetings scheduled on the following days will be cancelled:
 * Labor Day
 * Thanksgiving Day
 * Day after Thanksgiving
+
+## PRC Holidays
+
+* New Years Day
+* Chinese New Year
+* Tomb-Sweeping Day
+* International Labor Day
+* Dragon Boat Festival
+* Mid-Autumn Festival
+* National Holiday
