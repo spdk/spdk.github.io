@@ -1,7 +1,7 @@
 var euroDate = new Date(Date.UTC(2018, 3, 3, 15, 0, 0, 0));
 var asiaDate = new Date(Date.UTC(2018, 3, 12, 4, 0, 0, 0));
 var asiaBugDate = new Date(Date.UTC(2018, 3, 19, 4, 30, 0, 0));
-var euroBugDate = new Date(Date.UTC(2018, 3, 3, 16, 0, 0, 0));
+var euroBugDate = new Date(Date.UTC(2018, 3, 10, 15, 0, 0, 0));
 
 // Holiday list. Should be of form [date, recurring=true/false]
 var USHolidays = [[ new Date(2018, 11, 24), true ], //Christmas Eve
@@ -87,7 +87,7 @@ while (euroBugDate < currentDate || compareHoliday(euroBugDate, USHolidays, USTi
 euroDate = new Date(Date.UTC(euroDate.getUTCFullYear(), euroDate.getUTCMonth(), euroDate.getUTCDate(), 15, 0, 0, 0));
 asiaDate = new Date(Date.UTC(asiaDate.getUTCFullYear(), asiaDate.getUTCMonth(), asiaDate.getUTCDate(), 4, 0, 0, 0));
 asiaBugDate = new Date(Date.UTC(asiaBugDate.getUTCFullYear(), asiaBugDate.getUTCMonth(), asiaBugDate.getUTCDate(), 4, 30, 0, 0));
-euroBugDate = new Date(Date.UTC(euroBugDate.getUTCFullYear(), euroBugDate.getUTCMonth(), euroBugDate.getUTCDate(), 16, 0, 0, 0));
+euroBugDate = new Date(Date.UTC(euroBugDate.getUTCFullYear(), euroBugDate.getUTCMonth(), euroBugDate.getUTCDate(), 15, 0, 0, 0));
 
 document.getElementById("euro-mtg").textContent = formatDate(euroDate);
 document.getElementById("asia-mtg").textContent = formatDate(asiaDate);
