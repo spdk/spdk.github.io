@@ -178,6 +178,9 @@ Typedefs</h2></td></tr>
 <tr class="memitem:a74afccd199dde8aaebd020ac513cf819"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jsonrpc_8h.html#a74afccd199dde8aaebd020ac513cf819">spdk_jsonrpc_handle_request_fn</a>) (struct spdk_jsonrpc_request *request, const struct <a class="el" href="structspdk__json__val.html">spdk_json_val</a> *method, const struct <a class="el" href="structspdk__json__val.html">spdk_json_val</a> *params)</td></tr>
 <tr class="memdesc:a74afccd199dde8aaebd020ac513cf819"><td class="mdescLeft">&#160;</td><td class="mdescRight">User callback to handle a single JSON-RPC request.  <a href="#a74afccd199dde8aaebd020ac513cf819">More...</a><br /></td></tr>
 <tr class="separator:a74afccd199dde8aaebd020ac513cf819"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf8426aab51d139cff1597b5c4cf37e3"><td class="memItemLeft" align="right" valign="top"><a id="adf8426aab51d139cff1597b5c4cf37e3"></a>
+typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_jsonrpc_conn_closed_fn</b>) (struct spdk_jsonrpc_server_conn *conn, void *arg)</td></tr>
+<tr class="separator:adf8426aab51d139cff1597b5c4cf37e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5160e9c0a3230584ca653ffd2ea64487"><td class="memItemLeft" align="right" valign="top">typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jsonrpc_8h.html#a5160e9c0a3230584ca653ffd2ea64487">spdk_jsonrpc_client_response_parser</a>) (void *parser_ctx, const struct <a class="el" href="structspdk__json__val.html">spdk_json_val</a> *result)</td></tr>
 <tr class="memdesc:a5160e9c0a3230584ca653ffd2ea64487"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function for specific RPC method response parsing handlers.  <a href="#a5160e9c0a3230584ca653ffd2ea64487">More...</a><br /></td></tr>
 <tr class="separator:a5160e9c0a3230584ca653ffd2ea64487"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -193,6 +196,15 @@ Functions</h2></td></tr>
 <tr class="memitem:aa7d4f7ed2234b0cd20e3c87685030b2f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jsonrpc_8h.html#aa7d4f7ed2234b0cd20e3c87685030b2f">spdk_jsonrpc_server_shutdown</a> (struct spdk_jsonrpc_server *server)</td></tr>
 <tr class="memdesc:aa7d4f7ed2234b0cd20e3c87685030b2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shutdown the JSON-RPC server.  <a href="#aa7d4f7ed2234b0cd20e3c87685030b2f">More...</a><br /></td></tr>
 <tr class="separator:aa7d4f7ed2234b0cd20e3c87685030b2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e40f9e08438d2468ac2f1a779801340"><td class="memItemLeft" align="right" valign="top">struct spdk_jsonrpc_server_conn *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jsonrpc_8h.html#a7e40f9e08438d2468ac2f1a779801340">spdk_jsonrpc_get_conn</a> (struct spdk_jsonrpc_request *request)</td></tr>
+<tr class="memdesc:a7e40f9e08438d2468ac2f1a779801340"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return connection associated to <code>request</code>.  <a href="#a7e40f9e08438d2468ac2f1a779801340">More...</a><br /></td></tr>
+<tr class="separator:a7e40f9e08438d2468ac2f1a779801340"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7246f2742a3bebe9494defa7d305de84"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jsonrpc_8h.html#a7246f2742a3bebe9494defa7d305de84">spdk_jsonrpc_conn_add_close_cb</a> (struct spdk_jsonrpc_server_conn *conn, spdk_jsonrpc_conn_closed_fn cb, void *ctx)</td></tr>
+<tr class="memdesc:a7246f2742a3bebe9494defa7d305de84"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add callback called when connection is closed.  <a href="#a7246f2742a3bebe9494defa7d305de84">More...</a><br /></td></tr>
+<tr class="separator:a7246f2742a3bebe9494defa7d305de84"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42f6b43bea611799dccb7ac98bb11930"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jsonrpc_8h.html#a42f6b43bea611799dccb7ac98bb11930">spdk_jsonrpc_conn_del_close_cb</a> (struct spdk_jsonrpc_server_conn *conn, spdk_jsonrpc_conn_closed_fn cb, void *ctx)</td></tr>
+<tr class="memdesc:a42f6b43bea611799dccb7ac98bb11930"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove registered close callback.  <a href="#a42f6b43bea611799dccb7ac98bb11930">More...</a><br /></td></tr>
+<tr class="separator:a42f6b43bea611799dccb7ac98bb11930"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a22757fb7d0f34984e29b3fe311dfed01"><td class="memItemLeft" align="right" valign="top">struct spdk_json_write_ctx *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jsonrpc_8h.html#a22757fb7d0f34984e29b3fe311dfed01">spdk_jsonrpc_begin_result</a> (struct spdk_jsonrpc_request *request)</td></tr>
 <tr class="memdesc:a22757fb7d0f34984e29b3fe311dfed01"><td class="mdescLeft">&#160;</td><td class="mdescRight">Begin building a response to a JSON-RPC request.  <a href="#a22757fb7d0f34984e29b3fe311dfed01">More...</a><br /></td></tr>
 <tr class="separator:a22757fb7d0f34984e29b3fe311dfed01"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -611,6 +623,98 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a7246f2742a3bebe9494defa7d305de84"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7246f2742a3bebe9494defa7d305de84">&#9670;&nbsp;</a></span>spdk_jsonrpc_conn_add_close_cb()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_jsonrpc_conn_add_close_cb </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_jsonrpc_server_conn *&#160;</td>
+          <td class="paramname"><em>conn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">spdk_jsonrpc_conn_closed_fn&#160;</td>
+          <td class="paramname"><em>cb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>ctx</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Add callback called when connection is closed. </p>
+<p>Pair of <code>cb</code> and <code>ctx</code> must be unique or error is returned. Registered callback is called only once and there is no need to call <code>spdk_jsonrpc_conn_del_close_cb</code> inside from <code>cb</code>.</p>
+<dl class="section note"><dt>Note</dt><dd>Current implementation allow only one close callback per connection.</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">conn</td><td>JSON RPC server connection </td></tr>
+    <tr><td class="paramname">cb</td><td>calback function </td></tr>
+    <tr><td class="paramname">ctx</td><td>argument for <code>cb</code> </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, or negated errno code: -EEXIST <code>cb</code> and <code>ctx</code> is already registered -ENOTCONN Callback can't be added because connection is closed. -ENOSPC no more space to register callback. </dd></dl>
+
+</div>
+</div>
+<a id="a42f6b43bea611799dccb7ac98bb11930"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a42f6b43bea611799dccb7ac98bb11930">&#9670;&nbsp;</a></span>spdk_jsonrpc_conn_del_close_cb()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_jsonrpc_conn_del_close_cb </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_jsonrpc_server_conn *&#160;</td>
+          <td class="paramname"><em>conn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">spdk_jsonrpc_conn_closed_fn&#160;</td>
+          <td class="paramname"><em>cb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>ctx</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Remove registered close callback. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">conn</td><td>JSON RPC server connection </td></tr>
+    <tr><td class="paramname">cb</td><td>calback function </td></tr>
+    <tr><td class="paramname">ctx</td><td>argument for <code>cb</code> </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, or negated errno code: -ENOENT <code>cb</code> and <code>ctx</code> pair is not registered </dd></dl>
+
+</div>
+</div>
 <a id="a9ae1b767ebb4ad59a9c4739beea1c6f4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9ae1b767ebb4ad59a9c4739beea1c6f4">&#9670;&nbsp;</a></span>spdk_jsonrpc_end_request()</h2>
 
@@ -682,6 +786,33 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="a7e40f9e08438d2468ac2f1a779801340"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7e40f9e08438d2468ac2f1a779801340">&#9670;&nbsp;</a></span>spdk_jsonrpc_get_conn()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct spdk_jsonrpc_server_conn* spdk_jsonrpc_get_conn </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_jsonrpc_request *&#160;</td>
+          <td class="paramname"><em>request</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Return connection associated to <code>request</code>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">request</td><td>JSON-RPC request </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>JSON RPC server connection </dd></dl>
 
 </div>
 </div>

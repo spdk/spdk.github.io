@@ -13,5 +13,12 @@ var prog_guides =
     ] ],
     [ "Block Device Layer Programming Guide", "bdev_pg.html", null ],
     [ "Writing a Custom Block Device Module", "bdev_module.html", null ],
-    [ "NVMe over Fabrics Target Programming Guide", "nvmf_tgt_pg.html", null ]
+    [ "NVMe over Fabrics Target Programming Guide", "nvmf_tgt_pg.html", null ],
+    [ "Flash Translation Layer", "ftl.html", [
+      [ "Terminology", "ftl.html#ftl_terminology", [
+        [ "Band", "ftl.html#ftl_band", null ],
+        [ "Ring write buffer", "ftl.html#ftl_rwb", null ],
+        [ "Defragmentation and relocation", "ftl.html#ftl_reloc", null ]
+      ] ]
+    ] ]
 ];

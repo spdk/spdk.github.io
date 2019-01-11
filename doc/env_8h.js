@@ -114,6 +114,6 @@ var env_8h =
     [ "spdk_ring_enqueue", "env_8h.html#a94a5c5e5f14c336e7d64db996c0ed2dc", null ],
     [ "spdk_ring_free", "env_8h.html#a3f1ec5c3714962d4b01ceb5a50571dca", null ],
     [ "spdk_unaffinitize_thread", "env_8h.html#a925f8e1d1ed12fc1b7eb057a5c5b7bfd", null ],
-    [ "spdk_vtophys", "env_8h.html#ae96a59dc23cf16ed24029ea50598be5b", null ],
+    [ "spdk_vtophys", "env_8h.html#ac6a932523e0f4cb86d2b90dfe113b171", null ],
     [ "spdk_zmalloc", "env_8h.html#a49ad245dae3554cf96d62e9b2b0b1596", null ]
 ];

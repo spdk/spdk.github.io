@@ -16,6 +16,7 @@ var files =
     [ "crc32.h", "crc32_8h.html", "crc32_8h" ],
     [ "endian.h", "endian_8h.html", "endian_8h" ],
     [ "env.h", "env_8h.html", "env_8h" ],
+    [ "env_dpdk.h", "env__dpdk_8h.html", "env__dpdk_8h" ],
     [ "event.h", "event_8h.html", "event_8h" ],
     [ "fd.h", "fd_8h.html", "fd_8h" ],
     [ "gpt_spec.h", "gpt__spec_8h.html", "gpt__spec_8h" ],

@@ -1,7 +1,7 @@
 var unionspdk__nvme__cc__register =
 [
     [ "ams", "unionspdk__nvme__cc__register.html#a777a7cb16e88d976eca2f8073fde6c4b", null ],
-    [ "bits", "unionspdk__nvme__cc__register.html#acf06620e0129772dfdafa011fed34a3d", null ],
+    [ "bits", "unionspdk__nvme__cc__register.html#a104e2fde1400cc911f72ae15407c935f", null ],
     [ "css", "unionspdk__nvme__cc__register.html#a1f03038a3d6fd2b7f2df15b15a887ce6", null ],
     [ "en", "unionspdk__nvme__cc__register.html#adafe2d01d8a07098b6cb21fc9835dba6", null ],
     [ "iocqes", "unionspdk__nvme__cc__register.html#a6be5f13e66cd6fd34c1463147cdfb106", null ],

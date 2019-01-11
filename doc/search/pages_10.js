@@ -1,5 +1,8 @@
 var searchData=
 [
-  ['what_20is_20spdk_3f',['What is SPDK?',['../about.html',1,'intro']]],
-  ['writing_20a_20custom_20block_20device_20module',['Writing a Custom Block Device Module',['../bdev_module.html',1,'prog_guides']]]
+  ['vagrant_20development_20environment',['Vagrant Development Environment',['../vagrant.html',1,'intro']]],
+  ['vhost_20target',['vhost Target',['../vhost.html',1,'user_guides']]],
+  ['vhost_20processing',['Vhost processing',['../vhost_processing.html',1,'concepts']]],
+  ['virtio_20driver',['Virtio driver',['../virtio.html',1,'driver_modules']]],
+  ['vector_20packet_20processing',['Vector Packet Processing',['../vpp_integration.html',1,'general']]]
 ];

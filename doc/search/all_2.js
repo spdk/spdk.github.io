@@ -16,6 +16,7 @@ var searchData=
   ['blob_5fbdev_2eh',['blob_bdev.h',['../blob__bdev_8h.html',1,'']]],
   ['blobfs_20_28blobstore_20filesystem_29',['BlobFS (Blobstore Filesystem)',['../blobfs.html',1,'user_guides']]],
   ['blobfs_2eh',['blobfs.h',['../blobfs_8h.html',1,'']]],
+  ['block_5fsize',['block_size',['../structspdk__dif__ctx.html#a2853eeaf8a9c7bb372d4632748c5105a',1,'spdk_dif_ctx']]],
   ['blockcnt',['blockcnt',['../structspdk__bdev.html#aef65d7444968b8981d46d0c520fd5287',1,'spdk_bdev']]],
   ['blocklen',['blocklen',['../structspdk__bdev.html#ac737d9458e1184f313aed88b8af9b862',1,'spdk_bdev']]],
   ['bounce_5fiov',['bounce_iov',['../structspdk__bdev__io_1_1____bdev__io__internal__fields.html#aee2ed117d4aa174778f5920a3e150c2e',1,'spdk_bdev_io::__bdev_io_internal_fields']]],

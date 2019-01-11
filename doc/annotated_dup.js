@@ -1,5 +1,6 @@
 var annotated_dup =
 [
+    [ "ftl_module_init_opts", "structftl__module__init__opts.html", "structftl__module__init__opts" ],
     [ "iscsi_ahs", "structiscsi__ahs.html", "structiscsi__ahs" ],
     [ "iscsi_bhs", "structiscsi__bhs.html", "structiscsi__bhs" ],
     [ "iscsi_bhs_async", "structiscsi__bhs__async.html", "structiscsi__bhs__async" ],
@@ -40,8 +41,15 @@ var annotated_dup =
     [ "spdk_bs_type", "structspdk__bs__type.html", "structspdk__bs__type" ],
     [ "spdk_crc32_table", "structspdk__crc32__table.html", "structspdk__crc32__table" ],
     [ "spdk_dif", "structspdk__dif.html", "structspdk__dif" ],
+    [ "spdk_dif_ctx", "structspdk__dif__ctx.html", "structspdk__dif__ctx" ],
+    [ "spdk_dif_error", "structspdk__dif__error.html", "structspdk__dif__error" ],
     [ "spdk_env_opts", "structspdk__env__opts.html", "structspdk__env__opts" ],
     [ "spdk_file_stat", "structspdk__file__stat.html", "structspdk__file__stat" ],
+    [ "spdk_ftl_attrs", "structspdk__ftl__attrs.html", "structspdk__ftl__attrs" ],
+    [ "spdk_ftl_conf", "structspdk__ftl__conf.html", "structspdk__ftl__conf" ],
+    [ "spdk_ftl_dev_init_opts", "structspdk__ftl__dev__init__opts.html", "structspdk__ftl__dev__init__opts" ],
+    [ "spdk_ftl_limit", "structspdk__ftl__limit.html", "structspdk__ftl__limit" ],
+    [ "spdk_ftl_punit_range", "structspdk__ftl__punit__range.html", "structspdk__ftl__punit__range" ],
     [ "spdk_gpt_guid", "structspdk__gpt__guid.html", "structspdk__gpt__guid" ],
     [ "spdk_gpt_header", "structspdk__gpt__header.html", "structspdk__gpt__header" ],
     [ "spdk_gpt_partition_entry", "structspdk__gpt__partition__entry.html", "structspdk__gpt__partition__entry" ],

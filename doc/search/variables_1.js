@@ -3,6 +3,7 @@ var searchData=
   ['backing_5fio_5funit_5fsize',['backing_io_unit_size',['../structspdk__reduce__vol__params.html#a8702d36eea6d40a62076a434e91aa3ca',1,'spdk_reduce_vol_params']]],
   ['bdev',['bdev',['../structspdk__bdev__io.html#a096518d708e224b91e03897b79431afd',1,'spdk_bdev_io']]],
   ['bir',['bir',['../unionspdk__nvme__cmbloc__register.html#a7a72b6bb85d7c446b0ad55f74d91e13a',1,'spdk_nvme_cmbloc_register']]],
+  ['block_5fsize',['block_size',['../structspdk__dif__ctx.html#a2853eeaf8a9c7bb372d4632748c5105a',1,'spdk_dif_ctx']]],
   ['blockcnt',['blockcnt',['../structspdk__bdev.html#aef65d7444968b8981d46d0c520fd5287',1,'spdk_bdev']]],
   ['blocklen',['blocklen',['../structspdk__bdev.html#ac737d9458e1184f313aed88b8af9b862',1,'spdk_bdev']]],
   ['bounce_5fiov',['bounce_iov',['../structspdk__bdev__io_1_1____bdev__io__internal__fields.html#aee2ed117d4aa174778f5920a3e150c2e',1,'spdk_bdev_io::__bdev_io_internal_fields']]],

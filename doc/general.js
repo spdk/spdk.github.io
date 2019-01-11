@@ -36,5 +36,12 @@ var general =
         [ "Decoupling", "logical_volumes.html#lvol_decoupling", null ]
       ] ],
       [ "RPC overview", "logical_volumes.html#lvol_rpc", null ]
+    ] ],
+    [ "Vector Packet Processing", "vpp_integration.html", [
+      [ "1. Building VPP (optional)", "vpp_integration.html#vpp_build", null ],
+      [ "2. Installing VPP", "vpp_integration.html#vpp_install", null ],
+      [ "3. Running VPP", "vpp_integration.html#vpp_run", null ],
+      [ "4. Building SPDK with VPP", "vpp_integration.html#vpp_built_into_spdk", null ],
+      [ "5. Running SPDK with VPP", "vpp_integration.html#vpp_running_with_spdk", null ]
     ] ]
 ];

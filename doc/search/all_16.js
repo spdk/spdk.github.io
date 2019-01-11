@@ -17,6 +17,7 @@ var searchData=
   ['virtio_20driver',['Virtio driver',['../virtio.html',1,'driver_modules']]],
   ['virtualization_5fmanagement',['virtualization_management',['../structspdk__nvme__ctrlr__data.html#a01424c480dc8c3d11e17bbf889302467',1,'spdk_nvme_ctrlr_data']]],
   ['vol_5fsize',['vol_size',['../structspdk__reduce__vol__params.html#ae4c8834d1e1c76455842b97c4489ce47',1,'spdk_reduce_vol_params']]],
+  ['vector_20packet_20processing',['Vector Packet Processing',['../vpp_integration.html',1,'general']]],
   ['vqfrsm',['vqfrsm',['../structspdk__nvme__primary__ctrl__capabilities.html#a8b523874842beb9c88efbd2962a0950f',1,'spdk_nvme_primary_ctrl_capabilities']]],
   ['vqfrt',['vqfrt',['../structspdk__nvme__primary__ctrl__capabilities.html#a6b22f6c1cc50ed2395c5e86a4883ca1c',1,'spdk_nvme_primary_ctrl_capabilities']]],
   ['vqgran',['vqgran',['../structspdk__nvme__primary__ctrl__capabilities.html#a6232822783419f4f479f28aba250e9f4',1,'spdk_nvme_primary_ctrl_capabilities']]],
@@ -24,5 +25,5 @@ var searchData=
   ['vqrfa',['vqrfa',['../structspdk__nvme__primary__ctrl__capabilities.html#aeab109efd1eae5f155c06105e8d097ed',1,'spdk_nvme_primary_ctrl_capabilities']]],
   ['vqrfap',['vqrfap',['../structspdk__nvme__primary__ctrl__capabilities.html#a9d87b4832999b7aed3ef612d1c80669a',1,'spdk_nvme_primary_ctrl_capabilities']]],
   ['vs',['vs',['../structspdk__ocssd__geometry__data.html#a4aa677e5f24826c750773b4201cd1ea3',1,'spdk_ocssd_geometry_data::vs()'],['../structspdk__nvme__registers.html#a6b09cae2aad064302d6415dbaf8346e2',1,'spdk_nvme_registers::vs()']]],
-  ['vwc',['vwc',['../structspdk__nvme__ctrlr__data.html#a571245157e5f63fad94c89ef20ed70b8',1,'spdk_nvme_ctrlr_data']]]
+  ['vwc',['vwc',['../structspdk__nvme__ctrlr__data.html#aa30befa905e63964d2cb70d7138e1e01',1,'spdk_nvme_ctrlr_data']]]
 ];

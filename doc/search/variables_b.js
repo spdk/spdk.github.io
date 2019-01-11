@@ -1,14 +1,15 @@
 var searchData=
 [
-  ['mask',['mask',['../structspdk__ocssd__chunk__notification__entry.html#ac2577bd6d838c17df4fe8f2e757ed45d',1,'spdk_ocssd_chunk_notification_entry']]],
+  ['mask',['mask',['../structspdk__ocssd__chunk__notification__entry.html#ab01e3e1e42517fdf683ce50a2798ea21',1,'spdk_ocssd_chunk_notification_entry']]],
   ['max_5fchannel_5fops',['max_channel_ops',['../structspdk__bs__opts.html#ac5417afa104f5061bab1bfae0769c3a6',1,'spdk_bs_opts']]],
   ['max_5fmd_5fops',['max_md_ops',['../structspdk__bs__opts.html#a63e0b619fedc29159dffd7feca08396b',1,'spdk_bs_opts']]],
   ['maxh2cdata',['maxh2cdata',['../structspdk__nvme__tcp__ic__resp.html#ae19af16d43dd54e43ccfeccd7f6119dc',1,'spdk_nvme_tcp_ic_resp']]],
   ['maxoc',['maxoc',['../structspdk__ocssd__geometry__data.html#adecc1a99d16f94eace12b674c7b7bbfa',1,'spdk_ocssd_geometry_data']]],
   ['maxocpu',['maxocpu',['../structspdk__ocssd__geometry__data.html#a747b543789ad8efcfca1c54faeb95c52',1,'spdk_ocssd_geometry_data']]],
-  ['mc',['mc',['../structspdk__nvme__ns__data.html#a90f5b98b05dfa3d2fe6ecc68236c4678',1,'spdk_nvme_ns_data']]],
-  ['mccap',['mccap',['../structspdk__ocssd__geometry__data.html#ab2c483db57828cecb923f02d03d4cfc1',1,'spdk_ocssd_geometry_data']]],
+  ['mc',['mc',['../structspdk__nvme__ns__data.html#a89e52cdb750bfe08a4c3c2eb61196f61',1,'spdk_nvme_ns_data']]],
+  ['mccap',['mccap',['../structspdk__ocssd__geometry__data.html#a9a5195482505dd4c8d1287c2262bbdb9',1,'spdk_ocssd_geometry_data']]],
   ['md_5fend',['md_end',['../structspdk__nvme__ns__data.html#ab511e295c151b4d17911e474711168b9',1,'spdk_nvme_ns_data']]],
+  ['md_5fsize',['md_size',['../structspdk__dif__ctx.html#a70bae2b0c71c14a91163f89d4e215802',1,'spdk_dif_ctx']]],
   ['md_5fstart',['md_start',['../structspdk__nvme__ns__data.html#a1295065f7156b27aeb749b1ef5c0cdc7',1,'spdk_nvme_ns_data']]],
   ['mdts',['mdts',['../structspdk__nvme__ctrlr__data.html#aad0681365b9524dc8a1dca2d48a6c046',1,'spdk_nvme_ctrlr_data']]],
   ['measured_5fqueue_5fdepth',['measured_queue_depth',['../structspdk__bdev_1_1____bdev__internal__fields.html#a544e45acd435eb8c7269f08166841f41',1,'spdk_bdev::__bdev_internal_fields']]],

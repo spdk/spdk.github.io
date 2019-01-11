@@ -31,13 +31,6 @@ var user_guides =
         [ "Configuring iSCSI Target via RPC method", "iscsi.html#iscsi_rpc", null ],
         [ "Configuring iSCSI Initiator", "iscsi.html#iscsi_initiator", null ]
       ] ],
-      [ "Vector Packet Processing", "iscsi.html#vpp", [
-        [ "1. Building VPP (optional)", "iscsi.html#vpp_build", null ],
-        [ "2. Installing VPP", "iscsi.html#vpp_install", null ],
-        [ "3. Running VPP", "iscsi.html#vpp_run", null ],
-        [ "4. Building SPDK with VPP", "iscsi.html#vpp_built_into_spdk", null ],
-        [ "5. Running SPDK with VPP", "iscsi.html#vpp_running_with_spdk", null ]
-      ] ],
       [ "iSCSI Hotplug", "iscsi.html#iscsi_hotplug", [
         [ "Known bugs and limitations", "iscsi.html#iscsi_hotplug_bugs", null ]
       ] ]
