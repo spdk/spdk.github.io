@@ -118,6 +118,7 @@ var searchData=
   ['spdk_5fnvme_5fregisters',['spdk_nvme_registers',['../structspdk__nvme__registers.html',1,'']]],
   ['spdk_5fnvme_5freservation_5facquire_5fdata',['spdk_nvme_reservation_acquire_data',['../structspdk__nvme__reservation__acquire__data.html',1,'']]],
   ['spdk_5fnvme_5freservation_5fkey_5fdata',['spdk_nvme_reservation_key_data',['../structspdk__nvme__reservation__key__data.html',1,'']]],
+  ['spdk_5fnvme_5freservation_5fnotification_5flog',['spdk_nvme_reservation_notification_log',['../structspdk__nvme__reservation__notification__log.html',1,'']]],
   ['spdk_5fnvme_5freservation_5fregister_5fdata',['spdk_nvme_reservation_register_data',['../structspdk__nvme__reservation__register__data.html',1,'']]],
   ['spdk_5fnvme_5freservation_5fstatus_5fdata',['spdk_nvme_reservation_status_data',['../structspdk__nvme__reservation__status__data.html',1,'']]],
   ['spdk_5fnvme_5freservation_5fstatus_5fextended_5fdata',['spdk_nvme_reservation_status_extended_data',['../structspdk__nvme__reservation__status__extended__data.html',1,'']]],

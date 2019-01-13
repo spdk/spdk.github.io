@@ -209,6 +209,9 @@ Data Structures</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__reservation__key__data.html">spdk_nvme_reservation_key_data</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__reservation__notification__log.html">spdk_nvme_reservation_notification_log</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reservation notification log.  <a href="structspdk__nvme__reservation__notification__log.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__error__information__entry.html">spdk_nvme_error_information_entry</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Error information log page (<a class="el" href="nvme__spec_8h.html#a3d5e453e4d95b0f5b9bb4de04ace78c4ad05013a36512c9cd6ad0249263a3f583">SPDK_NVME_LOG_ERROR</a>)  <a href="structspdk__nvme__error__information__entry.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -341,6 +344,15 @@ Macros</h2></td></tr>
 <tr class="memitem:ada253b591ac69e8446d4c4461b15b892"><td class="memItemLeft" align="right" valign="top"><a id="ada253b591ac69e8446d4c4461b15b892"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_NVME_CTRLR_FR_LEN</b>&#160;&#160;&#160;8</td></tr>
 <tr class="separator:ada253b591ac69e8446d4c4461b15b892"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5aeace321594f3985745fec4b62b348"><td class="memItemLeft" align="right" valign="top"><a id="af5aeace321594f3985745fec4b62b348"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_NVME_REGISTRATION_PREEMPTED_MASK</b>&#160;&#160;&#160;(1U &lt;&lt; 1)</td></tr>
+<tr class="separator:af5aeace321594f3985745fec4b62b348"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e1c9608bf15aaa7bca0aa5a825f5e30"><td class="memItemLeft" align="right" valign="top"><a id="a9e1c9608bf15aaa7bca0aa5a825f5e30"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_NVME_RESERVATION_RELEASED_MASK</b>&#160;&#160;&#160;(1U &lt;&lt; 2)</td></tr>
+<tr class="separator:a9e1c9608bf15aaa7bca0aa5a825f5e30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6fddb56c05ea34b5b495189a63274511"><td class="memItemLeft" align="right" valign="top"><a id="a6fddb56c05ea34b5b495189a63274511"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_NVME_RESERVATION_PREEMPTED_MASK</b>&#160;&#160;&#160;(1U &lt;&lt; 3)</td></tr>
+<tr class="separator:a6fddb56c05ea34b5b495189a63274511"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac26384c8970df6b7c9c074c1f9c4e00e"><td class="memItemLeft" align="right" valign="top"><a id="ac26384c8970df6b7c9c074c1f9c4e00e"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_async_event_config</b>&#160;&#160;&#160;<a class="el" href="unionspdk__nvme__feat__async__event__configuration.html">spdk_nvme_feat_async_event_configuration</a></td></tr>
 <tr class="separator:ac26384c8970df6b7c9c074c1f9c4e00e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -729,6 +741,13 @@ Enumerations</h2></td></tr>
  }<tr class="memdesc:a6fa8ea66c4927d8bb4d81d76867e851a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reservation Release action. <br /></td></tr>
 </td></tr>
 <tr class="separator:a6fa8ea66c4927d8bb4d81d76867e851a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48858ce224a290ff927e8954b31fdf67"><td class="memItemLeft" align="right" valign="top"><a id="a48858ce224a290ff927e8954b31fdf67"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme__spec_8h.html#a48858ce224a290ff927e8954b31fdf67">spdk_nvme_reservation_notification_log_page_type</a> { <b>SPDK_NVME_RESERVATION_LOG_PAGE_EMPTY</b> = 0x0, 
+<b>SPDK_NVME_REGISTRATION_PREEMPTED</b> = 0x1, 
+<b>SPDK_NVME_RESERVATION_RELEASED</b> = 0x2, 
+<b>SPDK_NVME_RESERVATION_PREEMPTED</b> = 0x3
+ }<tr class="memdesc:a48858ce224a290ff927e8954b31fdf67"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reservation notification log page type. <br /></td></tr>
+</td></tr>
+<tr class="separator:a48858ce224a290ff927e8954b31fdf67"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3d5e453e4d95b0f5b9bb4de04ace78c4"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme__spec_8h.html#a3d5e453e4d95b0f5b9bb4de04ace78c4">spdk_nvme_log_page</a> { <br />
 &#160;&#160;<a class="el" href="nvme__spec_8h.html#a3d5e453e4d95b0f5b9bb4de04ace78c4ad05013a36512c9cd6ad0249263a3f583">SPDK_NVME_LOG_ERROR</a> = 0x01, 
 <a class="el" href="nvme__spec_8h.html#a3d5e453e4d95b0f5b9bb4de04ace78c4a8c4e97d27e08924e29d76ea66780a886">SPDK_NVME_LOG_HEALTH_INFORMATION</a> = 0x02, 
@@ -962,6 +981,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a76ea2561b7f1b6a9401e2a63df3d8f74"><td class="memItemLeft" align="right" valign="top"><a id="a76ea2561b7f1b6a9401e2a63df3d8f74"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_STATIC_ASSERT</b> (sizeof(struct <a class="el" href="structspdk__nvme__reservation__key__data.html">spdk_nvme_reservation_key_data</a>)==8, &quot;Incorrect size&quot;)</td></tr>
 <tr class="separator:a76ea2561b7f1b6a9401e2a63df3d8f74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae895e94a08da066c728265377dbbc1a5"><td class="memItemLeft" align="right" valign="top"><a id="ae895e94a08da066c728265377dbbc1a5"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_STATIC_ASSERT</b> (sizeof(struct <a class="el" href="structspdk__nvme__reservation__notification__log.html">spdk_nvme_reservation_notification_log</a>)==64, &quot;Incorrect size&quot;)</td></tr>
+<tr class="separator:ae895e94a08da066c728265377dbbc1a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af30bbb384ce0ef2931484014453368bb"><td class="memItemLeft" align="right" valign="top"><a id="af30bbb384ce0ef2931484014453368bb"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_STATIC_ASSERT</b> (sizeof(struct <a class="el" href="structspdk__nvme__error__information__entry.html">spdk_nvme_error_information_entry</a>)==64, &quot;Incorrect size&quot;)</td></tr>
 <tr class="separator:af30bbb384ce0ef2931484014453368bb"><td class="memSeparator" colspan="2">&#160;</td></tr>

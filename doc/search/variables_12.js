@@ -26,5 +26,5 @@ var searchData=
   ['tsas',['tsas',['../structspdk__nvmf__discovery__log__page__entry.html#ae6926468815fd6dbdd5ff136a4905057',1,'spdk_nvmf_discovery_log_page_entry']]],
   ['twrm',['twrm',['../structspdk__ocssd__geometry__data.html#a48998a2ff49cafa400bed7cc639db747',1,'spdk_ocssd_geometry_data']]],
   ['twrt',['twrt',['../structspdk__ocssd__geometry__data.html#ac37ab8c7d75446d554d10384030bad30',1,'spdk_ocssd_geometry_data']]],
-  ['type',['type',['../structspdk__bdev__io.html#a4105d5a8419a66a6620d690da5649fcb',1,'spdk_bdev_io::type()'],['../structspdk__json__val.html#a709cbbd71ebb3cdc9bb8daf5f2a19364',1,'spdk_json_val::type()']]]
+  ['type',['type',['../structspdk__bdev__io.html#a4105d5a8419a66a6620d690da5649fcb',1,'spdk_bdev_io::type()'],['../structspdk__json__val.html#a709cbbd71ebb3cdc9bb8daf5f2a19364',1,'spdk_json_val::type()'],['../structspdk__nvme__reservation__notification__log.html#ac3ec3beaa7aec5a7c2bc5dad10932d48',1,'spdk_nvme_reservation_notification_log::type()']]]
 ];

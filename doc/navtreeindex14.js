@@ -1,5 +1,14 @@
 var NAVTREEINDEX14 =
 {
+"structspdk__nvme__cmds__and__effect__log__page.html#ad66203d89e455d298ed3b1cb2c428d57":[13,0,85,1],
+"structspdk__nvme__cpl.html":[13,0,86],
+"structspdk__nvme__cpl.html#a3a3f6218e674462f1edad8ab54f15fd9":[13,0,86,5],
+"structspdk__nvme__cpl.html#a3af36b4b4a32989e05e223115a720f15":[13,0,86,1],
+"structspdk__nvme__cpl.html#a91657dad69b1b3b3646c88160cffb005":[13,0,86,2],
+"structspdk__nvme__cpl.html#aec1795d600de9d400fbb471aeff8165f":[13,0,86,0],
+"structspdk__nvme__cpl.html#aec99be2bbd20e2458208da557e7bcfc3":[13,0,86,4],
+"structspdk__nvme__cpl.html#af69484937badc3e0fd26d75ca918a235":[13,0,86,3],
+"structspdk__nvme__ctrlr__data.html":[13,0,89],
 "structspdk__nvme__ctrlr__data.html#a01424c480dc8c3d11e17bbf889302467":[13,0,89,139],
 "structspdk__nvme__ctrlr__data.html#a01cd7ea9f71201cfceaf1867903831e9":[13,0,89,99],
 "structspdk__nvme__ctrlr__data.html#a04d0dcdc81310d90f5716400be39538d":[13,0,89,34],
@@ -240,14 +249,5 @@ var NAVTREEINDEX14 =
 "structspdk__nvme__intel__log__page__directory.html":[13,0,121],
 "structspdk__nvme__intel__log__page__directory.html#a0aadf99c7b77ac331bf6cc7e051a0252":[13,0,121,7],
 "structspdk__nvme__intel__log__page__directory.html#a1aec93b3775098bef658301e8d1c637b":[13,0,121,5],
-"structspdk__nvme__intel__log__page__directory.html#a1e88cc51ee3a0d3088effa759cf58e31":[13,0,121,8],
-"structspdk__nvme__intel__log__page__directory.html#a23af39b1b23c701539a7f14b8ee491f0":[13,0,121,10],
-"structspdk__nvme__intel__log__page__directory.html#a2dc09774d62294888f8aa650d0d070b9":[13,0,121,11],
-"structspdk__nvme__intel__log__page__directory.html#a420db2530e502446027972bc8c7df495":[13,0,121,0],
-"structspdk__nvme__intel__log__page__directory.html#a4246e1fa60a0a0ecb02f8b50910ef3bd":[13,0,121,2],
-"structspdk__nvme__intel__log__page__directory.html#a4fc2063b0e359914f350172c4beb46a9":[13,0,121,6],
-"structspdk__nvme__intel__log__page__directory.html#a63930fb42b9c7fb0dd26cb07db0a91ff":[13,0,121,3],
-"structspdk__nvme__intel__log__page__directory.html#a80df3eb1775704a4a62761973398dc74":[13,0,121,4],
-"structspdk__nvme__intel__log__page__directory.html#ac8c7128710ba34e07149dfd882c5ff9a":[13,0,121,1],
-"structspdk__nvme__intel__log__page__directory.html#aebfc097fdec7ddfa8402f37c7376c0fb":[13,0,121,9]
+"structspdk__nvme__intel__log__page__directory.html#a1e88cc51ee3a0d3088effa759cf58e31":[13,0,121,8]
 };

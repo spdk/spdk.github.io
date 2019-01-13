@@ -1,5 +1,14 @@
 var NAVTREEINDEX12 =
 {
+"structspdk__bdev__io.html#a35905e31d0aa54cd00dbb34e7d56656a":[13,0,25,23],
+"structspdk__bdev__io.html#a3af0e726ab6ba3ad2bb54a7e6ab4e6f2":[13,0,25,19],
+"structspdk__bdev__io.html#a3b595672c585d29dd0b4b7650bb8289d":[13,0,25,14],
+"structspdk__bdev__io.html#a4105d5a8419a66a6620d690da5649fcb":[13,0,25,24],
+"structspdk__bdev__io.html#a4c93fa89b3cc9789d2e6d7d7e2246e35":[13,0,25,1],
+"structspdk__bdev__io.html#a529af99d06d12cec343f6aeb03beced2":[13,0,25,25],
+"structspdk__bdev__io.html#a5ca4051718acb2e55adcca49ea829420":[13,0,25,6],
+"structspdk__bdev__io.html#a7cad710441c3ea7b10d62a464b9db854":[13,0,25,9],
+"structspdk__bdev__io.html#a9c6b53b8e503c998e80090b986385cef":[13,0,25,17],
 "structspdk__bdev__io.html#aa82ce8f1c27b3b41aa940be4a21b2490":[13,0,25,15],
 "structspdk__bdev__io.html#aa9024a5714c4c242271cdcbb34b45a91":[13,0,25,11],
 "structspdk__bdev__io.html#ab1b334589d89261c8e0242fee614caa7":[13,0,25,8],
@@ -240,14 +249,5 @@ var NAVTREEINDEX12 =
 "structspdk__ioat__dma__hw__desc.html#a1cf12a9633a179363bbcf5f0898785c4":[13,0,55,17],
 "structspdk__ioat__dma__hw__desc.html#a1ec8015efe7b4188280525e71a030272":[13,0,55,12],
 "structspdk__ioat__dma__hw__desc.html#a2a7aef287de49e1660476a3bfc0b3d45":[13,0,55,16],
-"structspdk__ioat__dma__hw__desc.html#a2abc2b21682caaaa0d9e112c96f105fa":[13,0,55,15],
-"structspdk__ioat__dma__hw__desc.html#a2af3c46ab0aa8d8ccce5d9e603baf995":[13,0,55,10],
-"structspdk__ioat__dma__hw__desc.html#a2f407ff378199ea5ca5d3bf96ebd8004":[13,0,55,14],
-"structspdk__ioat__dma__hw__desc.html#a4319672bec8c73b16f2d6478de376096":[13,0,55,8],
-"structspdk__ioat__dma__hw__desc.html#a549865702262d3c133d23a55ac5da07c":[13,0,55,9],
-"structspdk__ioat__dma__hw__desc.html#a7dc6e67b5d16d092743a4d21f9566981":[13,0,55,4],
-"structspdk__ioat__dma__hw__desc.html#a86fffe5b76f3c38e95659c2f2a78a8f1":[13,0,55,1],
-"structspdk__ioat__dma__hw__desc.html#a91bda990777b769ab57dad69d30ff99a":[13,0,55,6],
-"structspdk__ioat__dma__hw__desc.html#a9233dc92a8eb202b6d0fe224452649f3":[13,0,55,13],
-"structspdk__ioat__dma__hw__desc.html#a95270b3d7723ec91b6a86f14bb733dba":[13,0,55,20]
+"structspdk__ioat__dma__hw__desc.html#a2abc2b21682caaaa0d9e112c96f105fa":[13,0,55,15]
 };

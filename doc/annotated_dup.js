@@ -139,6 +139,7 @@ var annotated_dup =
     [ "spdk_nvme_registers", "structspdk__nvme__registers.html", "structspdk__nvme__registers" ],
     [ "spdk_nvme_reservation_acquire_data", "structspdk__nvme__reservation__acquire__data.html", "structspdk__nvme__reservation__acquire__data" ],
     [ "spdk_nvme_reservation_key_data", "structspdk__nvme__reservation__key__data.html", "structspdk__nvme__reservation__key__data" ],
+    [ "spdk_nvme_reservation_notification_log", "structspdk__nvme__reservation__notification__log.html", "structspdk__nvme__reservation__notification__log" ],
     [ "spdk_nvme_reservation_register_data", "structspdk__nvme__reservation__register__data.html", "structspdk__nvme__reservation__register__data" ],
     [ "spdk_nvme_reservation_status_data", "structspdk__nvme__reservation__status__data.html", "structspdk__nvme__reservation__status__data" ],
     [ "spdk_nvme_reservation_status_extended_data", "structspdk__nvme__reservation__status__extended__data.html", "structspdk__nvme__reservation__status__extended__data" ],

@@ -34,6 +34,7 @@ var searchData=
   ['spdk_5fnvme_5fpath_5fstatus_5fcode',['spdk_nvme_path_status_code',['../nvme__spec_8h.html#a33e755cbe54eafcfbe31e1f713e4d5b2',1,'nvme_spec.h']]],
   ['spdk_5fnvme_5fqprio',['spdk_nvme_qprio',['../nvme__spec_8h.html#ae83a61e254cf9d1fd59376ceedd1b4e6',1,'nvme_spec.h']]],
   ['spdk_5fnvme_5freservation_5facquire_5faction',['spdk_nvme_reservation_acquire_action',['../nvme__spec_8h.html#a95b3685443c2716ee0d125c30182aeac',1,'nvme_spec.h']]],
+  ['spdk_5fnvme_5freservation_5fnotification_5flog_5fpage_5ftype',['spdk_nvme_reservation_notification_log_page_type',['../nvme__spec_8h.html#a48858ce224a290ff927e8954b31fdf67',1,'nvme_spec.h']]],
   ['spdk_5fnvme_5freservation_5fregister_5faction',['spdk_nvme_reservation_register_action',['../nvme__spec_8h.html#a178a7468a0a9c3e814ca2ba80e3406e5',1,'nvme_spec.h']]],
   ['spdk_5fnvme_5freservation_5fregister_5fcptpl',['spdk_nvme_reservation_register_cptpl',['../nvme__spec_8h.html#a05b2db4a398c119c029c234a68760c73',1,'nvme_spec.h']]],
   ['spdk_5fnvme_5freservation_5frelease_5faction',['spdk_nvme_reservation_release_action',['../nvme__spec_8h.html#a6fa8ea66c4927d8bb4d81d76867e851a',1,'nvme_spec.h']]],

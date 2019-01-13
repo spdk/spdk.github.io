@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="Content-Type" content="text/xhtml; charset=utf-8">
   <meta name="generator" content="Doxygen 1.8.13">
-  <title>SPDK: Data Fields - Variables</title>
+  <title>SPDK: spdk_nvme_reservation_notification_log Struct Reference</title>
   <script type="text/javascript" src="jquery.js"></script>
   <script type="text/javascript" src="dynsections.js"></script>
   <link href="navtree.css" rel="stylesheet" type="text/css"/>
@@ -116,7 +116,7 @@ $(function() {
   </div>
 </div>
 <script type="text/javascript">
-$(document).ready(function(){initNavTree('functions_vars_l.html','');});
+$(document).ready(function(){initNavTree('structspdk__nvme__reservation__notification__log.html','');});
 </script>
 <div id="doc-content">
 <!-- window showing the filter options -->
@@ -133,53 +133,45 @@ $(document).ready(function(){initNavTree('functions_vars_l.html','');});
 </iframe>
 </div>
 
+<div class="header">
+  <div class="summary">
+<a href="#pub-attribs">Data Fields</a>  </div>
+  <div class="headertitle">
+<div class="title">spdk_nvme_reservation_notification_log Struct Reference</div>  </div>
+</div><!--header-->
 <div class="contents">
-&#160;
 
-<h3><a id="index_l"></a>- l -</h3><ul>
-<li>lba
-: <a class="el" href="structspdk__ocssd__chunk__notification__entry.html#a2d96d597c27edd7e457218d85c01915d">spdk_ocssd_chunk_notification_entry</a>
-</li>
-<li>lbads
-: <a class="el" href="structspdk__nvme__ns__data.html#aad19d9beb62f0d1305c3a6874b11f284">spdk_nvme_ns_data</a>
-</li>
-<li>lbaf
-: <a class="el" href="structspdk__nvme__ns__data.html#a1c45c26e067626deb1f38df856a0059a">spdk_nvme_ns_data</a>
-, <a class="el" href="structspdk__ocssd__geometry__data.html#a4eba476411cda99524796a82761f0823">spdk_ocssd_geometry_data</a>
-</li>
-<li>lbcc
-: <a class="el" href="structspdk__nvme__cmds__and__effect__entry.html#aeeae023e93acfbd4f995e4bfb2fd46d5">spdk_nvme_cmds_and_effect_entry</a>
-</li>
-<li>lbk_len
-: <a class="el" href="structspdk__ocssd__dev__lba__fmt.html#a73ecc33cdb5bbcf9140577c2eeb8451b">spdk_ocssd_dev_lba_fmt</a>
-</li>
-<li>lblk
-: <a class="el" href="structspdk__ocssd__chunk__notification__entry.html#aadf9079a7a4aa1acd37f7535b5249c60">spdk_ocssd_chunk_notification_entry</a>
-</li>
-<li>lcore
-: <a class="el" href="structspdk__trace__history.html#afc00e204c28b550c0dd2f8140a08e566">spdk_trace_history</a>
-</li>
-<li>lcore_history_offsets
-: <a class="el" href="structspdk__trace__flags.html#ad7aae2959ed72743507c2bb5c36a70b5">spdk_trace_flags</a>
-</li>
-<li>len
-: <a class="el" href="structspdk__json__val.html#aa9e7738fac4cf0d68ed86f263bb7bf1f">spdk_json_val</a>
-</li>
-<li>lists
-: <a class="el" href="unionspdk__nvme__cmbsz__register.html#a605db26c2b5a41b7b0cc40750e43527d">spdk_nvme_cmbsz_register</a>
-</li>
-<li>log_page_count
-: <a class="el" href="structspdk__nvme__reservation__notification__log.html#ad8bc8c37065d9cf1c8e2b171d53ba807">spdk_nvme_reservation_notification_log</a>
-</li>
-<li>logical_block_size
-: <a class="el" href="structspdk__reduce__vol__params.html#a33c2c765f8aef22dbd55f80aa71c6ba5">spdk_reduce_vol_params</a>
-</li>
-<li>lpa
-: <a class="el" href="structspdk__nvme__ctrlr__data.html#a6ff8e1c3fcd12457d4bb29c5f4a3af41">spdk_nvme_ctrlr_data</a>
-</li>
-<li>lpw
-: <a class="el" href="unionspdk__nvme__feat__arbitration.html#a0eb3434752c3b8ea38f37556fa9fd116">spdk_nvme_feat_arbitration</a>
-</li>
+<p>Reservation notification log.  
+ <a href="structspdk__nvme__reservation__notification__log.html#details">More...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Data Fields</h2></td></tr>
+<tr class="memitem:ad8bc8c37065d9cf1c8e2b171d53ba807"><td class="memItemLeft" align="right" valign="top"><a id="ad8bc8c37065d9cf1c8e2b171d53ba807"></a>
+uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__reservation__notification__log.html#ad8bc8c37065d9cf1c8e2b171d53ba807">log_page_count</a></td></tr>
+<tr class="memdesc:ad8bc8c37065d9cf1c8e2b171d53ba807"><td class="mdescLeft">&#160;</td><td class="mdescRight">64-bit incrementing reservation notification log page count <br /></td></tr>
+<tr class="separator:ad8bc8c37065d9cf1c8e2b171d53ba807"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3ec3beaa7aec5a7c2bc5dad10932d48"><td class="memItemLeft" align="right" valign="top"><a id="ac3ec3beaa7aec5a7c2bc5dad10932d48"></a>
+uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__reservation__notification__log.html#ac3ec3beaa7aec5a7c2bc5dad10932d48">type</a></td></tr>
+<tr class="memdesc:ac3ec3beaa7aec5a7c2bc5dad10932d48"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reservation notification log page type. <br /></td></tr>
+<tr class="separator:ac3ec3beaa7aec5a7c2bc5dad10932d48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4b2aa752099f298643f8a69d1a09505"><td class="memItemLeft" align="right" valign="top"><a id="ab4b2aa752099f298643f8a69d1a09505"></a>
+uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__reservation__notification__log.html#ab4b2aa752099f298643f8a69d1a09505">num_avail_log_pages</a></td></tr>
+<tr class="memdesc:ab4b2aa752099f298643f8a69d1a09505"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of additional available reservation notification log pages. <br /></td></tr>
+<tr class="separator:ab4b2aa752099f298643f8a69d1a09505"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afaf84897c0b7a58fcaed09685b382031"><td class="memItemLeft" align="right" valign="top"><a id="afaf84897c0b7a58fcaed09685b382031"></a>
+uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>reserved</b> [2]</td></tr>
+<tr class="separator:afaf84897c0b7a58fcaed09685b382031"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5dff08d5f382d17e429ff5509eef9aa8"><td class="memItemLeft" align="right" valign="top"><a id="a5dff08d5f382d17e429ff5509eef9aa8"></a>
+uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>nsid</b></td></tr>
+<tr class="separator:a5dff08d5f382d17e429ff5509eef9aa8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0840ef5374caaf761ee86b127fdd134c"><td class="memItemLeft" align="right" valign="top"><a id="a0840ef5374caaf761ee86b127fdd134c"></a>
+uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>reserved1</b> [48]</td></tr>
+<tr class="separator:a0840ef5374caaf761ee86b127fdd134c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Reservation notification log. </p>
+</div><hr/>The documentation for this struct was generated from the following file:<ul>
+<li><a class="el" href="nvme__spec_8h.html">nvme_spec.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

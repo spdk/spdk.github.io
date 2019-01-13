@@ -37,6 +37,7 @@ var searchData=
   ['nssrs',['nssrs',['../unionspdk__nvme__cap__register.html#ac8d0f8ca7261552f9fa5894b0c637fd5',1,'spdk_nvme_cap_register']]],
   ['nsze',['nsze',['../structspdk__nvme__ns__data.html#a92845e5df214201820179ab8fa063d05',1,'spdk_nvme_ns_data']]],
   ['num',['num',['../unionspdk__nvme__feat__lba__range__type.html#a9fcf5c790767d292adf15b5f05ab40cf',1,'spdk_nvme_feat_lba_range_type']]],
+  ['num_5favail_5flog_5fpages',['num_avail_log_pages',['../structspdk__nvme__reservation__notification__log.html#ab4b2aa752099f298643f8a69d1a09505',1,'spdk_nvme_reservation_notification_log']]],
   ['num_5fblocks',['num_blocks',['../structspdk__bdev__io.html#afafe443c58056c9c246fd3c32eaa4ece',1,'spdk_bdev_io']]],
   ['num_5fchk',['num_chk',['../structspdk__ocssd__geometry__data.html#ab5ad6daff221353e59cbcdb02fc5bea0',1,'spdk_ocssd_geometry_data']]],
   ['num_5fentries',['num_entries',['../structspdk__trace__history.html#a57438d2b62e8bef76601a2b881345463',1,'spdk_trace_history']]],
