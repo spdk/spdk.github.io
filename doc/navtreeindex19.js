@@ -1,5 +1,6 @@
 var NAVTREEINDEX19 =
 {
+"thread_8h.html#afba31c619e8c0825c5d542f27ae3c932":[14,0,47,33],
 "thread_8h.html#afe409bf16664f461daa516b6a6d1682c":[14,0,47,32],
 "tools.html":[8],
 "trace_8h.html":[14,0,48],
@@ -248,6 +249,5 @@ var NAVTREEINDEX19 =
 "unionspdk__nvme__intel__feat__led__pattern.html#a7646dd7669599ad606ad45057533ee2f":[13,0,117,0],
 "unionspdk__nvme__intel__feat__led__pattern.html#aa672b651e209e0a30329e42ac87354dc":[13,0,117,1],
 "unionspdk__nvme__intel__feat__power__governor.html":[13,0,118],
-"unionspdk__nvme__intel__feat__power__governor.html#a21a30353391b6569ff38a3aa0d3ae36d":[13,0,118,3],
-"unionspdk__nvme__intel__feat__power__governor.html#a2e20c84133ef9f3bbc3054b992a161f2":[13,0,118,0]
+"unionspdk__nvme__intel__feat__power__governor.html#a21a30353391b6569ff38a3aa0d3ae36d":[13,0,118,3]
 };
