@@ -1,5 +1,7 @@
 var NAVTREEINDEX20 =
 {
+"unionspdk__nvme__intel__feat__power__governor.html":[13,0,118],
+"unionspdk__nvme__intel__feat__power__governor.html#a21a30353391b6569ff38a3aa0d3ae36d":[13,0,118,3],
 "unionspdk__nvme__intel__feat__power__governor.html#a2e20c84133ef9f3bbc3054b992a161f2":[13,0,118,0],
 "unionspdk__nvme__intel__feat__power__governor.html#a87b59d2553682b8fa44b294f2a96ece1":[13,0,118,2],
 "unionspdk__nvme__intel__feat__power__governor.html#aa25780c209e8e7d18133e16396cb235e":[13,0,118,1],

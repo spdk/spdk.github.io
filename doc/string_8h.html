@@ -152,6 +152,12 @@ Functions</h2></td></tr>
 <tr class="memitem:a6dc47e4a2855c519b30fc54b252f85cc"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="string_8h.html#a6dc47e4a2855c519b30fc54b252f85cc">spdk_vsprintf_alloc</a> (const char *format, va_list args)</td></tr>
 <tr class="memdesc:a6dc47e4a2855c519b30fc54b252f85cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">vsprintf with automatic buffer allocation.  <a href="#a6dc47e4a2855c519b30fc54b252f85cc">More...</a><br /></td></tr>
 <tr class="separator:a6dc47e4a2855c519b30fc54b252f85cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a749731b95349503d787f623980d32241"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="string_8h.html#a749731b95349503d787f623980d32241">spdk_sprintf_append_realloc</a> (char *buffer, const char *format,...)</td></tr>
+<tr class="memdesc:a749731b95349503d787f623980d32241"><td class="mdescLeft">&#160;</td><td class="mdescRight">Append string using vsprintf with automatic buffer re-allocation.  <a href="#a749731b95349503d787f623980d32241">More...</a><br /></td></tr>
+<tr class="separator:a749731b95349503d787f623980d32241"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8140b574a3934d00596aaf6a38c51f14"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="string_8h.html#a8140b574a3934d00596aaf6a38c51f14">spdk_vsprintf_append_realloc</a> (char *buffer, const char *format, va_list args)</td></tr>
+<tr class="memdesc:a8140b574a3934d00596aaf6a38c51f14"><td class="mdescLeft">&#160;</td><td class="mdescRight">Append string using vsprintf with automatic buffer re-allocation.  <a href="#a8140b574a3934d00596aaf6a38c51f14">More...</a><br /></td></tr>
+<tr class="separator:a8140b574a3934d00596aaf6a38c51f14"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aafc67eadec132156b4f7bd873d1cbc62"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="string_8h.html#aafc67eadec132156b4f7bd873d1cbc62">spdk_strlwr</a> (char *s)</td></tr>
 <tr class="memdesc:aafc67eadec132156b4f7bd873d1cbc62"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert string to lowercase in place.  <a href="#aafc67eadec132156b4f7bd873d1cbc62">More...</a><br /></td></tr>
 <tr class="separator:aafc67eadec132156b4f7bd873d1cbc62"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -349,6 +355,53 @@ Functions</h2></td></tr>
 <p>The return value is the formatted string, which should be passed to free() when no longer needed.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
+    <tr><td class="paramname">format</td><td>Format for the string to print.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the formatted string on success, or NULL on failure. </dd></dl>
+
+</div>
+</div>
+<a id="a749731b95349503d787f623980d32241"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a749731b95349503d787f623980d32241">&#9670;&nbsp;</a></span>spdk_sprintf_append_realloc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char* spdk_sprintf_append_realloc </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>format</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>...</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Append string using vsprintf with automatic buffer re-allocation. </p>
+<p>The return value is the formatted string, in which the original string in buffer is unchanged and the specified formatted string is appended.</p>
+<p>The returned string should be passed to free() when no longer needed.</p>
+<p>If buffer is NULL, the call is equivalent to <a class="el" href="string_8h.html#ac80f349c77c57bc28690f46e5de7fe03" title="sprintf with automatic buffer allocation. ">spdk_sprintf_alloc()</a>. If the call fails, the original buffer is left untouched.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">buffer</td><td>Buffer which has a formatted string. </td></tr>
     <tr><td class="paramname">format</td><td>Format for the string to print.</td></tr>
   </table>
   </dd>
@@ -677,6 +730,54 @@ Functions</h2></td></tr>
 <p>The return value is the formatted string, which should be passed to free() when no longer needed.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
+    <tr><td class="paramname">format</td><td>Format for the string to print. </td></tr>
+    <tr><td class="paramname">args</td><td>A value that identifies a variable arguments list.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the formatted string on success, or NULL on failure. </dd></dl>
+
+</div>
+</div>
+<a id="a8140b574a3934d00596aaf6a38c51f14"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8140b574a3934d00596aaf6a38c51f14">&#9670;&nbsp;</a></span>spdk_vsprintf_append_realloc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char* spdk_vsprintf_append_realloc </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>format</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">va_list&#160;</td>
+          <td class="paramname"><em>args</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Append string using vsprintf with automatic buffer re-allocation. </p>
+<p>The return value is the formatted string, in which the original string in buffer is unchanged and the specified formatted string is appended.</p>
+<p>The returned string should be passed to free() when no longer needed.</p>
+<p>If buffer is NULL, the call is equivalent to <a class="el" href="string_8h.html#ac80f349c77c57bc28690f46e5de7fe03" title="sprintf with automatic buffer allocation. ">spdk_sprintf_alloc()</a>. If the call fails, the original buffer is left untouched.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">buffer</td><td>Buffer which has a formatted string. </td></tr>
     <tr><td class="paramname">format</td><td>Format for the string to print. </td></tr>
     <tr><td class="paramname">args</td><td>A value that identifies a variable arguments list.</td></tr>
   </table>
