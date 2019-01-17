@@ -182,6 +182,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a593901ae3d44b3315fad40da95108bee"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="reduce_8h.html#a593901ae3d44b3315fad40da95108bee">spdk_reduce_vol_unload</a> (struct spdk_reduce_vol *vol, spdk_reduce_vol_op_complete cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:a593901ae3d44b3315fad40da95108bee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unload a previously initialized or loaded libreduce compressed volume.  <a href="#a593901ae3d44b3315fad40da95108bee">More...</a><br /></td></tr>
 <tr class="separator:a593901ae3d44b3315fad40da95108bee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0ffc9aa6f6f8ba73f52672abcccddbc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="reduce_8h.html#ae0ffc9aa6f6f8ba73f52672abcccddbc">spdk_reduce_vol_destroy</a> (struct <a class="el" href="structspdk__reduce__backing__dev.html">spdk_reduce_backing_dev</a> *backing_dev, spdk_reduce_vol_op_complete cb_fn, void *cb_arg)</td></tr>
+<tr class="memdesc:ae0ffc9aa6f6f8ba73f52672abcccddbc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy an existing libreduce compressed volume.  <a href="#ae0ffc9aa6f6f8ba73f52672abcccddbc">More...</a><br /></td></tr>
+<tr class="separator:ae0ffc9aa6f6f8ba73f52672abcccddbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9bfdcd7f50cc33b4b69011f239aa7498"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="reduce_8h.html#a9bfdcd7f50cc33b4b69011f239aa7498">spdk_reduce_vol_readv</a> (struct spdk_reduce_vol *vol, struct iovec *iov, int iovcnt, uint64_t offset, uint64_t length, spdk_reduce_vol_op_complete cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:a9bfdcd7f50cc33b4b69011f239aa7498"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read data from a libreduce compressed volume.  <a href="#a9bfdcd7f50cc33b4b69011f239aa7498">More...</a><br /></td></tr>
 <tr class="separator:a9bfdcd7f50cc33b4b69011f239aa7498"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -192,6 +195,51 @@ Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>SPDK block compression. </p>
 </div><h2 class="groupheader">Function Documentation</h2>
+<a id="ae0ffc9aa6f6f8ba73f52672abcccddbc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae0ffc9aa6f6f8ba73f52672abcccddbc">&#9670;&nbsp;</a></span>spdk_reduce_vol_destroy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_reduce_vol_destroy </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structspdk__reduce__backing__dev.html">spdk_reduce_backing_dev</a> *&#160;</td>
+          <td class="paramname"><em>backing_dev</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">spdk_reduce_vol_op_complete&#160;</td>
+          <td class="paramname"><em>cb_fn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>cb_arg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Destroy an existing libreduce compressed volume. </p>
+<p>This will zero the metadata region on the backing device and delete the associated pm metadata file. If the backing device does not contain a compressed volume, the cb_fn will be called with error status without modifying the backing device nor deleting a pm file.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">backing_dev</td><td>Structure describing the backing device containing the compressed volume. </td></tr>
+    <tr><td class="paramname">cb_fn</td><td>Callback function to signal completion of the destruction process. </td></tr>
+    <tr><td class="paramname">cb_arg</td><td>Argument to pass to the callback function. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="ace66fd4e3840d38127fcf7a21dc269de"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ace66fd4e3840d38127fcf7a21dc269de">&#9670;&nbsp;</a></span>spdk_reduce_vol_get_uuid()</h2>
 

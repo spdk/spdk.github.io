@@ -1,5 +1,6 @@
 var structspdk__nvmf__transport__opts =
 [
+    [ "buf_cache_size", "structspdk__nvmf__transport__opts.html#aa4f37cf3674a2bf984fdb9b63cc30223", null ],
     [ "in_capsule_data_size", "structspdk__nvmf__transport__opts.html#a51e173174fe161295fcf24c1e0c18438", null ],
     [ "io_unit_size", "structspdk__nvmf__transport__opts.html#a7e6e60442ef1d45efab0e6159d060a8e", null ],
     [ "max_aq_depth", "structspdk__nvmf__transport__opts.html#a063b1c1080343c707a3d51ced615628f", null ],

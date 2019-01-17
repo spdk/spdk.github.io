@@ -785,8 +785,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Detach and destruct SCSI target from a vhost SCSI device. </p>
-<p>If vhost SCSI device has an active socket connection, it is required that it has negotiated <code>VIRTIO_SCSI_F_HOTPLUG</code> feature flag.Otherwise an -ENOTSUP error code is returned. If the flag has been negotiated, the device will be marked to be deleted. Actual deletion is deferred until after all pending I/O to this device has finished.</p>
-<p>Once the target has been deleted (whether or not vhost SCSI device is in use) given callback will be called.</p>
+<p>The device will be deleted after all pending I/O is finished. If the driver supports VIRTIO_SCSI_F_HOTPLUG, then a hotremove notification will be sent.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">vdev</td><td>vhost SCSI device </td></tr>
