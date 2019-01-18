@@ -5,7 +5,7 @@ var searchData=
   ['spdk_5fapp_5fget_5frunning_5fconfig',['spdk_app_get_running_config',['../event_8h.html#a74ff463ced05d4fab6baae4506c27f46',1,'event.h']]],
   ['spdk_5fapp_5fget_5fshm_5fid',['spdk_app_get_shm_id',['../event_8h.html#ac64ac17f456e8ac388d959c2e7a4a13b',1,'event.h']]],
   ['spdk_5fapp_5fopts_5finit',['spdk_app_opts_init',['../event_8h.html#a2c8af9052967bf98ff65e514ec7fa276',1,'event.h']]],
-  ['spdk_5fapp_5fparse_5fargs',['spdk_app_parse_args',['../event_8h.html#a733c26f294f82a54cc643daa5803fdd4',1,'event.h']]],
+  ['spdk_5fapp_5fparse_5fargs',['spdk_app_parse_args',['../event_8h.html#acc52e8c68c8ccec4640e14f687157afe',1,'event.h']]],
   ['spdk_5fapp_5fparse_5fcore_5fmask',['spdk_app_parse_core_mask',['../event_8h.html#a60385eedfe76a33a690741d2693414a3',1,'event.h']]],
   ['spdk_5fapp_5fstart',['spdk_app_start',['../event_8h.html#a18879873a585b21f44b7c90be8726ce1',1,'event.h']]],
   ['spdk_5fapp_5fstart_5fshutdown',['spdk_app_start_shutdown',['../event_8h.html#a0bbbb23263a8ea9c93c3adf8aa3bce8e',1,'event.h']]],

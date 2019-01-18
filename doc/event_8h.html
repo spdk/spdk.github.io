@@ -219,9 +219,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="even
 <tr class="memitem:a44d0192357622c56e902136132dd89f0"><td class="memItemLeft" align="right" valign="top">struct spdk_cpuset *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="event_8h.html#a44d0192357622c56e902136132dd89f0">spdk_app_get_core_mask</a> (void)</td></tr>
 <tr class="memdesc:a44d0192357622c56e902136132dd89f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the mask of the CPU cores active for this application.  <a href="#a44d0192357622c56e902136132dd89f0">More...</a><br /></td></tr>
 <tr class="separator:a44d0192357622c56e902136132dd89f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a733c26f294f82a54cc643daa5803fdd4"><td class="memItemLeft" align="right" valign="top">spdk_app_parse_args_rvals_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="event_8h.html#a733c26f294f82a54cc643daa5803fdd4">spdk_app_parse_args</a> (int argc, char **argv, struct <a class="el" href="structspdk__app__opts.html">spdk_app_opts</a> *opts, const char *getopt_str, struct option *app_long_opts, void(*parse)(int ch, char *arg), void(*usage)(void))</td></tr>
-<tr class="memdesc:a733c26f294f82a54cc643daa5803fdd4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper function for parsing arguments and printing usage messages.  <a href="#a733c26f294f82a54cc643daa5803fdd4">More...</a><br /></td></tr>
-<tr class="separator:a733c26f294f82a54cc643daa5803fdd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc52e8c68c8ccec4640e14f687157afe"><td class="memItemLeft" align="right" valign="top">spdk_app_parse_args_rvals_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="event_8h.html#acc52e8c68c8ccec4640e14f687157afe">spdk_app_parse_args</a> (int argc, char **argv, struct <a class="el" href="structspdk__app__opts.html">spdk_app_opts</a> *opts, const char *getopt_str, struct option *app_long_opts, int(*parse)(int ch, char *arg), void(*usage)(void))</td></tr>
+<tr class="memdesc:acc52e8c68c8ccec4640e14f687157afe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper function for parsing arguments and printing usage messages.  <a href="#acc52e8c68c8ccec4640e14f687157afe">More...</a><br /></td></tr>
+<tr class="separator:acc52e8c68c8ccec4640e14f687157afe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a35978d9a050c5c27e681e3e6006173bb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="event_8h.html#a35978d9a050c5c27e681e3e6006173bb">spdk_app_usage</a> (void)</td></tr>
 <tr class="memdesc:a35978d9a050c5c27e681e3e6006173bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Print usage strings for common SPDK command line options.  <a href="#a35978d9a050c5c27e681e3e6006173bb">More...</a><br /></td></tr>
 <tr class="separator:a35978d9a050c5c27e681e3e6006173bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -397,8 +397,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="even
 
 </div>
 </div>
-<a id="a733c26f294f82a54cc643daa5803fdd4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a733c26f294f82a54cc643daa5803fdd4">&#9670;&nbsp;</a></span>spdk_app_parse_args()</h2>
+<a id="acc52e8c68c8ccec4640e14f687157afe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc52e8c68c8ccec4640e14f687157afe">&#9670;&nbsp;</a></span>spdk_app_parse_args()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -436,7 +436,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="even
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">void(*)(int ch, char *arg)&#160;</td>
+          <td class="paramtype">int(*)(int ch, char *arg)&#160;</td>
           <td class="paramname"><em>parse</em>, </td>
         </tr>
         <tr>
@@ -626,7 +626,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="even
 </div><div class="memdoc">
 
 <p>Print usage strings for common SPDK command line options. </p>
-<p>May only be called after <a class="el" href="event_8h.html#a733c26f294f82a54cc643daa5803fdd4" title="Helper function for parsing arguments and printing usage messages. ">spdk_app_parse_args()</a>. </p>
+<p>May only be called after <a class="el" href="event_8h.html#acc52e8c68c8ccec4640e14f687157afe" title="Helper function for parsing arguments and printing usage messages. ">spdk_app_parse_args()</a>. </p>
 
 </div>
 </div>

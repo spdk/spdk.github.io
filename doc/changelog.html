@@ -140,6 +140,8 @@ $(document).ready(function(){initNavTree('changelog.html','');});
 <div class="contents">
 <div class="textblock"><h1><a class="anchor" id="changelog-v19-01"></a>
 v19.01: (Upcoming Release)</h1>
+<h2>event framework</h2>
+<p>For <code>spdk_app_parse_args</code>, add return value to the callback which parses application specific command line parameters to protect SPDK applications from crashing by invalid values from user input.</p>
 <h2>environment</h2>
 <p>A new public header file <a class="el" href="env__dpdk_8h.html" title="Encapsulated DPDK specific dependencies. ">env_dpdk.h</a> has been introduced, and function spdk_env_dpdk_post_init is added into it. If user is using DPDK, and already called rte_eal_init, then include <a class="el" href="env__dpdk_8h.html" title="Encapsulated DPDK specific dependencies. ">include/spdk/env_dpdk.h</a>, and call <a class="el" href="env__dpdk_8h.html#a4cad0e2fc2b5a9b8e588bc4e997e2ec7" title="Initialize the environment library after DPDK env is already initialized. ">spdk_env_dpdk_post_init()</a> instead of spdk_env_init.</p>
 <h2>util</h2>
@@ -318,7 +320,7 @@ v18.04: Logical Volume Snapshot/Clone, iSCSI Initiator, Bdev QoS, VPP Userspace 
 <h2>Lib</h2>
 <p>A set of changes were made in the SPDK's lib code altering instances of calls to <code>exit()</code> and <code>abort()</code> to return a failure instead wherever reasonably possible.</p>
 <p><a class="el" href="event_8h.html#a18879873a585b21f44b7c90be8726ce1" title="Start the framework. ">spdk_app_start()</a> no longer exit()'s on an internal failure, but instead returns a non-zero error status.</p>
-<p><a class="el" href="event_8h.html#a733c26f294f82a54cc643daa5803fdd4" title="Helper function for parsing arguments and printing usage messages. ">spdk_app_parse_args()</a> no longer exit()'s on help, '-h', or an invalid option, but instead returns SPDK_APP_PARSE_ARGS_HELP and SPDK_APP_PARSE_ARGS_FAIL, respectively, and SPDK_APP_PARSE_ARGS_SUCCESS on success.</p>
+<p><a class="el" href="event_8h.html#acc52e8c68c8ccec4640e14f687157afe" title="Helper function for parsing arguments and printing usage messages. ">spdk_app_parse_args()</a> no longer exit()'s on help, '-h', or an invalid option, but instead returns SPDK_APP_PARSE_ARGS_HELP and SPDK_APP_PARSE_ARGS_FAIL, respectively, and SPDK_APP_PARSE_ARGS_SUCCESS on success.</p>
 <p>spdk_pci_get_device() has been deprecated and will be removed in SPDK v18.07.</p>
 <h2>I/O Channels</h2>
 <p>The prototype for <a class="el" href="thread_8h.html#a35c421accdc2a0a61bb7be916106293b" title="Callback function for a poller. ">spdk_poller_fn()</a> has been modified; it now returns a value indicating whether or not the poller did any work. Existing pollers will need to be updated to return a value.</p>
