@@ -37,16 +37,19 @@ var user_guides =
     ] ],
     [ "NVMe over Fabrics Target", "nvmf.html", [
       [ "NVMe-oF Target Getting Started Guide", "nvmf.html#nvmf_getting_started", [
-        [ "Prerequisites", "nvmf.html#nvmf_prereqs", null ],
-        [ "Prerequisites for InfiniBand/RDMA Verbs", "nvmf.html#nvmf_prereqs_verbs", null ],
-        [ "Prerequisites for RDMA NICs", "nvmf.html#nvmf_prereqs_rdma_nics", null ],
+        [ "RDMA transport support", "nvmf.html#nvmf_rdma_transport", [
+          [ "Prerequisites", "nvmf.html#nvmf_prereqs", null ],
+          [ "Prerequisites for InfiniBand/RDMA Verbs", "nvmf.html#nvmf_prereqs_verbs", null ],
+          [ "Prerequisites for RDMA NICs", "nvmf.html#nvmf_prereqs_rdma_nics", null ],
+          [ "RDMA Limitations", "nvmf.html#nvmf_rdma_limitations", null ]
+        ] ],
+        [ "TCP transport support", "nvmf.html#nvmf_tcp_transport", null ],
         [ "Configuring the SPDK NVMe over Fabrics Target", "nvmf.html#nvmf_config", [
           [ "Using RPCs", "nvmf.html#nvmf_config_rpc", null ],
           [ "Assigning CPU Cores to the NVMe over Fabrics Target", "nvmf.html#nvmf_config_lcore", null ]
         ] ],
         [ "Configuring the Linux NVMe over Fabrics Host", "nvmf.html#nvmf_host", null ],
-        [ "Enabling NVMe-oF target tracepoints for offline analysis and debug", "nvmf.html#nvmf_trace", null ],
-        [ "RDMA Limitations", "nvmf.html#nvmf_rdma_limitations", null ]
+        [ "Enabling NVMe-oF target tracepoints for offline analysis and debug", "nvmf.html#nvmf_trace", null ]
       ] ]
     ] ],
     [ "vhost Target", "vhost.html", [
@@ -182,6 +185,7 @@ var user_guides =
         [ "target_node_add_lun method", "jsonrpc.html#rpc_target_node_add_lun", null ]
       ] ],
       [ "NVMe-oF Target", "jsonrpc.html#jsonrpc_components_nvmf_tgt", [
+        [ "nvmf_create_transport method", "jsonrpc.html#rpc_nvmf_create_transport", null ],
         [ "get_nvmf_subsystems method", "jsonrpc.html#rpc_get_nvmf_subsystems", null ],
         [ "nvmf_subsystem_create method", "jsonrpc.html#rpc_nvmf_subsystem_create", null ],
         [ "delete_nvmf_subsystem method", "jsonrpc.html#rpc_delete_nvmf_subsystem", null ],

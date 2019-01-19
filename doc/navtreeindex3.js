@@ -1,5 +1,9 @@
 var NAVTREEINDEX3 =
 {
+"ioat__spec_8h.html#a7fc9ebe4b7ac117f02f0d6cc44993a6c":[14,0,23,39],
+"ioat__spec_8h.html#a8051d3f588a756ec89f6b336836987bf":[14,0,23,20],
+"ioat__spec_8h.html#a8a577292a762699af2083c4b086de9d7":[14,0,23,36],
+"ioat__spec_8h.html#a8d9a351c468542caf76a44004448b65e":[14,0,23,28],
 "ioat__spec_8h.html#a9185a495ef9770684636989038c9f031":[14,0,23,15],
 "ioat__spec_8h.html#a94f12379d3cbe93b4a954857259bfd24":[14,0,23,40],
 "ioat__spec_8h.html#aa6c1838b386eeea922f6bf66670e9f0d":[14,0,23,27],
@@ -245,9 +249,5 @@ var NAVTREEINDEX3 =
 "jsonrpc.html#rpc_add_vhost_scsi_lun":[3,7,5,2],
 "jsonrpc.html#rpc_clone_lvol_bdev":[3,7,6,6],
 "jsonrpc.html#rpc_construct_aio_bdev":[3,7,2,9],
-"jsonrpc.html#rpc_construct_error_bdev":[3,7,2,18],
-"jsonrpc.html#rpc_construct_iscsi_bdev":[3,7,2,20],
-"jsonrpc.html#rpc_construct_lvol_bdev":[3,7,6,4],
-"jsonrpc.html#rpc_construct_lvol_store":[3,7,6,0],
-"jsonrpc.html#rpc_construct_malloc_bdev":[3,7,2,5]
+"jsonrpc.html#rpc_construct_error_bdev":[3,7,2,18]
 };

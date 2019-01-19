@@ -147,6 +147,7 @@ v19.01: (Upcoming Release)</h1>
 <h2>util</h2>
 <p>A new uuid API <code>spdk_uuid_copy</code> was added to make a copy of the source uuid.</p>
 <p>An new parameter <code>init_crc</code> representing the initial CRC value was added to <code>spdk_crc16_t10dif</code>. The parameter can be used to calculate a CRC value spanning multiple separate buffers.</p>
+<p>New DIF APIs were added to generate and verify DIF by byte granularity for both DIF and DIX formats. Among them, DIF with copy APIs will be usable to emulate DIF operations such as DIF insert and strip.</p>
 <h2>nvme</h2>
 <p>Wrapper functions <a class="el" href="nvme_8h.html#ada4ab089f73f3f43e9c5b8e6415e6f50" title="Send security protocol data to controller. ">spdk_nvme_ctrlr_security_send()</a> and <a class="el" href="nvme_8h.html#a5175d6805225d84d6e4aa4e0f1546c69" title="Receive security protocol data from controller. ">spdk_nvme_ctrlr_security_receive()</a> are introduced to support further security protocol development.</p>
 <p>admin_timeout_ms was added to NVMe controller initialization options, users can change the default value when probing a controller.</p>
@@ -163,6 +164,8 @@ v19.01: (Upcoming Release)</h1>
 <p>Add a new TCP/IP transport (located in lib/nvmf/tcp.c). With this tranport, the SPDK NVMe-oF target can have a new transport, and can serve the NVMe-oF protocol via TCP/IP from the host.</p>
 <h2>bdev</h2>
 <p>On shutdown, bdev unregister now proceeds in top-down fashion, with claimed bdevs skipped (these will be unregistered later, when virtual bdev built on top of the respective base bdev unclaims it). This allows virtual bdevs to be shut down cleanly as opposed to the previous behavior that didn't differentiate between hotremove and planned shutdown.</p>
+<h2>logical volumes</h2>
+<p>Logical volume bdev can now be marked as read only using <code>set_read_only_lvol_bdev</code> RPC. This allows for basing clones on top of lvol_bdev without first creating a snapshot.</p>
 <h2>log</h2>
 <p>"trace flags" are now referred to as "log flags" in the SPDK log API. The set_trace_flag, clear_trace_flag and get_trace_flags RPCs are now deprecated, and set_log_flag, clear_log_flag and get_log_flags RPCs have been added.</p>
 <h2>trace</h2>

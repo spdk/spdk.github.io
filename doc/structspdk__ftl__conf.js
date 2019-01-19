@@ -8,7 +8,5 @@ var structspdk__ftl__conf =
     [ "max_active_relocs", "structspdk__ftl__conf.html#a328e94a59f30ee22d9e562eb0816f836", null ],
     [ "max_reloc_qdepth", "structspdk__ftl__conf.html#af6ce7933ea875575b107dc20384a41a7", null ],
     [ "rwb_size", "structspdk__ftl__conf.html#af873e1c7d113de72fdf351479442744a", null ],
-    [ "trace", "structspdk__ftl__conf.html#aa6ff239e3d2e0a510b702821ca7521be", null ],
-    [ "trace_path", "structspdk__ftl__conf.html#ace9380d0a8e2c5257f4b33694e87726c", null ],
     [ "user_io_pool_size", "structspdk__ftl__conf.html#a1806a31e7d6c83f86d598e477474c102", null ]
 ];

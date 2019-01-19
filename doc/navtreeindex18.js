@@ -1,5 +1,12 @@
 var NAVTREEINDEX18 =
 {
+"structspdk__scsi__cdb__inquiry.html#ab013216c463b8ec87928be7733e5e2e2":[13,0,210,3],
+"structspdk__scsi__cdb__inquiry.html#acfde5de35522fa912d068e06845e5338":[13,0,210,4],
+"structspdk__scsi__cdb__inquiry__data.html":[13,0,211],
+"structspdk__scsi__cdb__inquiry__data.html#a05cb723309cab0cdb7e4dae3607fd855":[13,0,211,4],
+"structspdk__scsi__cdb__inquiry__data.html#a1daab14f20a744dc3d0b6b381f260e0a":[13,0,211,1],
+"structspdk__scsi__cdb__inquiry__data.html#a235a6eb7d85750379c5f4b90ea12fbb4":[13,0,211,0],
+"structspdk__scsi__cdb__inquiry__data.html#a278734d26c79f7a226927354d7d0363a":[13,0,211,6],
 "structspdk__scsi__cdb__inquiry__data.html#a2976a1e880fbdac0991fc5e412df2738":[13,0,211,12],
 "structspdk__scsi__cdb__inquiry__data.html#a66c64f4bf88f66c05b3d01b489f247cf":[13,0,211,9],
 "structspdk__scsi__cdb__inquiry__data.html#a73bf1b51c2492ef35510e04b68f5b856":[13,0,211,8],
@@ -242,12 +249,5 @@ var NAVTREEINDEX18 =
 "thread_8h.html#a9608b7b0fd448edec6ea5dd38ad04a57":[14,0,47,17],
 "thread_8h.html#a96f03fe115196f1de03292ed6d86fd46":[14,0,47,1],
 "thread_8h.html#a9c26cbd781063f5ee627d6aba2c73fe3":[14,0,47,26],
-"thread_8h.html#aa7a2ca9bd0497544e852c65fd5263cd1":[14,0,47,12],
-"thread_8h.html#aae7f43a4278351ec4d082a9b47680c55":[14,0,47,28],
-"thread_8h.html#ac42fa5ed7447767885f700875b28a84b":[14,0,47,29],
-"thread_8h.html#adb5f2ac1d1cc4feea5e39a802e5e1e48":[14,0,47,34],
-"thread_8h.html#adbf6e22252bc768003c7bbc165fc3c51":[14,0,47,18],
-"thread_8h.html#adc0da6b1b784d4f165dcd48b526d12ad":[14,0,47,6],
-"thread_8h.html#add3ebaac7b55dddb239c720c80d97dea":[14,0,47,21],
-"thread_8h.html#adf91a4dec4b813616eb583d7115a2a8a":[14,0,47,36]
+"thread_8h.html#aa7a2ca9bd0497544e852c65fd5263cd1":[14,0,47,12]
 };

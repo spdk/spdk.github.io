@@ -3,6 +3,8 @@ var structspdk__bdev_1_1____bdev__internal__fields =
     [ "TAILQ_ENTRY", "structspdk__bdev_1_1____bdev__internal__fields.html#a740740056a9b6f061a8d71dd755d54d9", null ],
     [ "TAILQ_HEAD", "structspdk__bdev_1_1____bdev__internal__fields.html#a920a1e86dea170c9234bb24f61b16226", null ],
     [ "claim_module", "structspdk__bdev_1_1____bdev__internal__fields.html#a218d92ccd2079d21b672edfb0168cfe1", null ],
+    [ "histogram_enabled", "structspdk__bdev_1_1____bdev__internal__fields.html#ad010a75a238dd2290faf44545c43109e", null ],
+    [ "histogram_in_progress", "structspdk__bdev_1_1____bdev__internal__fields.html#ad49ebdb41b6e0dc5954ff7a6039e40c5", null ],
     [ "io_time", "structspdk__bdev_1_1____bdev__internal__fields.html#a55d6103a185f6c50c9b5d58976d08508", null ],
     [ "measured_queue_depth", "structspdk__bdev_1_1____bdev__internal__fields.html#a544e45acd435eb8c7269f08166841f41", null ],
     [ "mutex", "structspdk__bdev_1_1____bdev__internal__fields.html#afbc0b1652cb9968462a77765a081ef32", null ],

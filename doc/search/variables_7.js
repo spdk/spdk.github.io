@@ -2,6 +2,7 @@ var searchData=
 [
   ['hctma',['hctma',['../structspdk__nvme__ctrlr__data.html#a0b5122adf60bdbd8696c294c23461c93',1,'spdk_nvme_ctrlr_data']]],
   ['header_5fdigest',['header_digest',['../structspdk__nvme__ctrlr__opts.html#a2a1ee1f756d767ae8833875256c57864',1,'spdk_nvme_ctrlr_opts']]],
+  ['histogram_5fenabled',['histogram_enabled',['../structspdk__bdev_1_1____bdev__internal__fields.html#ad010a75a238dd2290faf44545c43109e',1,'spdk_bdev::__bdev_internal_fields']]],
   ['hlen',['hlen',['../structspdk__nvme__tcp__common__pdu__hdr.html#ad768325138d9f3e6e001340ef3345101',1,'spdk_nvme_tcp_common_pdu_hdr']]],
   ['hmmin',['hmmin',['../structspdk__nvme__ctrlr__data.html#a781742ff21dddc10ff11b1376863c2b4',1,'spdk_nvme_ctrlr_data']]],
   ['hmpre',['hmpre',['../structspdk__nvme__ctrlr__data.html#aeb8704ba77e5799a23fea4ca52772ed2',1,'spdk_nvme_ctrlr_data']]],

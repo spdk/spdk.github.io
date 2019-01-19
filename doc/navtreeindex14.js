@@ -1,5 +1,12 @@
 var NAVTREEINDEX14 =
 {
+"structspdk__nvme__cmds__and__effect__entry.html#a00225250bfc2fdf32d198c6c34eb61f6":[13,0,84,1],
+"structspdk__nvme__cmds__and__effect__entry.html#a01772a2197820bdbf56f3d79fd2c83ea":[13,0,84,4],
+"structspdk__nvme__cmds__and__effect__entry.html#a02ab01337120379760a8179c9623337e":[13,0,84,0],
+"structspdk__nvme__cmds__and__effect__entry.html#a3d1bdf05fb354fbd5ea85d07723753d4":[13,0,84,7],
+"structspdk__nvme__cmds__and__effect__entry.html#a3e56fe9b48bdcae5ecde3e210aa4e601":[13,0,84,6],
+"structspdk__nvme__cmds__and__effect__entry.html#adc61c829d7e84080366c3d7240848f2d":[13,0,84,5],
+"structspdk__nvme__cmds__and__effect__entry.html#aeeae023e93acfbd4f995e4bfb2fd46d5":[13,0,84,3],
 "structspdk__nvme__cmds__and__effect__entry.html#aefd1a8a22605caa0a4c0cd91a6075a11":[13,0,84,2],
 "structspdk__nvme__cmds__and__effect__log__page.html":[13,0,85],
 "structspdk__nvme__cmds__and__effect__log__page.html#a8e4e4d1032629199462b5affa2d7c440":[13,0,85,0],
@@ -242,12 +249,5 @@ var NAVTREEINDEX14 =
 "structspdk__nvme__health__information__page.html#ab9146415c1fcc2cf490283348367b16d":[13,0,114,12],
 "structspdk__nvme__health__information__page.html#abc80d4da9de2023f680a8dba1d5fae72":[13,0,114,7],
 "structspdk__nvme__health__information__page.html#acd1d8072b9d187249cd55f7eb34ed8c6":[13,0,114,10],
-"structspdk__nvme__health__information__page.html#ad80e3d104593770537f8f990ed9e5a70":[13,0,114,17],
-"structspdk__nvme__health__information__page.html#adfbc5dfb330307a439d01c615bcfbaea":[13,0,114,5],
-"structspdk__nvme__health__information__page.html#ae0d7b45d7dd564e0566b32713e968c0f":[13,0,114,1],
-"structspdk__nvme__health__information__page.html#ae86a6776e665407631c8eed511ae1746":[13,0,114,18],
-"structspdk__nvme__health__information__page.html#af5c2de7d416ec2d2bf06888ac72abae2":[13,0,114,15],
-"structspdk__nvme__host__id.html":[13,0,115],
-"structspdk__nvme__host__id.html#a2c9f08f41595a1f96b3829ce0b5eb60e":[13,0,115,0],
-"structspdk__nvme__host__id.html#afd61667cc56fde2c163144145d3fa243":[13,0,115,1]
+"structspdk__nvme__health__information__page.html#ad80e3d104593770537f8f990ed9e5a70":[13,0,114,17]
 };
