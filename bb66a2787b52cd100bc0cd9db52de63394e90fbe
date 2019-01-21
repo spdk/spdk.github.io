@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "daa2b442_b7e1b5ed",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 1011218
+      },
+      "writtenOn": "2019-01-21T13:24:58Z",
+      "side": 1,
+      "message": "Gang, this is fine, but you might want to fix it up for later :)",
+      "range": {
+        "startLine": 2,
+        "startChar": 12,
+        "endLine": 2,
+        "endChar": 54
+      },
+      "revId": "bb66a2787b52cd100bc0cd9db52de63394e90fbe",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    }
+  ]
+}
