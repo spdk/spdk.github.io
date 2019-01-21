@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "d5d1196c_43d093da",
+        "filename": "follow.md",
+        "patchSetId": 10
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 1011218
+      },
+      "writtenOn": "2019-01-21T13:36:33Z",
+      "side": 1,
+      "message": "missing newline at the end of the file",
+      "revId": "6bd18071c7812a8116e8b3492756dda69abcc827",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    }
+  ]
+}
