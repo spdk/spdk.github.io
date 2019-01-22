@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "c8bdb37d_12754f72",
+        "filename": "_layouts/ci.html",
+        "patchSetId": 11
+      },
+      "lineNbr": 45,
+      "author": {
+        "id": 1011207
+      },
+      "writtenOn": "2019-01-22T23:21:51Z",
+      "side": 1,
+      "message": "these two looks like not needed",
+      "range": {
+        "startLine": 44,
+        "startChar": 12,
+        "endLine": 45,
+        "endChar": 14
+      },
+      "revId": "56fb8ff736af560ffd98f57500003dc86a1a0a03",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "58dda056_77fc2b92",
+        "filename": "_layouts/news.html",
+        "patchSetId": 11
+      },
+      "lineNbr": 41,
+      "author": {
+        "id": 1011207
+      },
+      "writtenOn": "2019-01-22T23:21:51Z",
+      "side": 1,
+      "message": "these two looks like not needed",
+      "range": {
+        "startLine": 40,
+        "startChar": 12,
+        "endLine": 41,
+        "endChar": 14
+      },
+      "revId": "56fb8ff736af560ffd98f57500003dc86a1a0a03",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
