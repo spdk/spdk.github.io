@@ -1,8 +1,10 @@
 var searchData=
 [
   ['spdk_5fbdev_5fqos_5fnum_5frate_5flimit_5ftypes',['SPDK_BDEV_QOS_NUM_RATE_LIMIT_TYPES',['../bdev_8h.html#aedfbfc44fa2113d7ee219d09a0994d93a25c0a2574ea232ae0fd9fd3969c00b11',1,'bdev.h']]],
+  ['spdk_5fbdev_5fqos_5fr_5fbps_5frate_5flimit',['SPDK_BDEV_QOS_R_BPS_RATE_LIMIT',['../bdev_8h.html#aedfbfc44fa2113d7ee219d09a0994d93af9ae83e85454b81d7210cc97b1507a1d',1,'bdev.h']]],
   ['spdk_5fbdev_5fqos_5frw_5fbps_5frate_5flimit',['SPDK_BDEV_QOS_RW_BPS_RATE_LIMIT',['../bdev_8h.html#aedfbfc44fa2113d7ee219d09a0994d93a595aaec5bb61bcbdc9f08e111cfd0943',1,'bdev.h']]],
   ['spdk_5fbdev_5fqos_5frw_5fiops_5frate_5flimit',['SPDK_BDEV_QOS_RW_IOPS_RATE_LIMIT',['../bdev_8h.html#aedfbfc44fa2113d7ee219d09a0994d93a679f76e345c7295f991eeb84d977e5b0',1,'bdev.h']]],
+  ['spdk_5fbdev_5fqos_5fw_5fbps_5frate_5flimit',['SPDK_BDEV_QOS_W_BPS_RATE_LIMIT',['../bdev_8h.html#aedfbfc44fa2113d7ee219d09a0994d93a1b3f5fed3a3173110561ff7c58f211dc',1,'bdev.h']]],
   ['spdk_5fioat_5fengine_5fcopy_5fsupported',['SPDK_IOAT_ENGINE_COPY_SUPPORTED',['../ioat_8h.html#a9e773693f3aadb3dc526810a2e387402a46fdc856e01e8551a6f59b20c2189bc0',1,'ioat.h']]],
   ['spdk_5fioat_5fengine_5ffill_5fsupported',['SPDK_IOAT_ENGINE_FILL_SUPPORTED',['../ioat_8h.html#a9e773693f3aadb3dc526810a2e387402abb0266507ff9bbdfe64074015c7f6583',1,'ioat.h']]],
   ['spdk_5flog_5fdisabled',['SPDK_LOG_DISABLED',['../log_8h.html#a188d351bd05093cba1d8594ee9988efdaaaf05c57678e124375f03976b68940eb',1,'log.h']]],

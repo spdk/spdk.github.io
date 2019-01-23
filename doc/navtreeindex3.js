@@ -1,5 +1,7 @@
 var NAVTREEINDEX3 =
 {
+"ioat__spec_8h.html#a7bddd4276d66b04e468d82094b5f698b":[14,0,23,12],
+"ioat__spec_8h.html#a7e7e011f4b9bd84a154142569ce4952b":[14,0,23,37],
 "ioat__spec_8h.html#a7fc9ebe4b7ac117f02f0d6cc44993a6c":[14,0,23,39],
 "ioat__spec_8h.html#a8051d3f588a756ec89f6b336836987bf":[14,0,23,20],
 "ioat__spec_8h.html#a8a577292a762699af2083c4b086de9d7":[14,0,23,36],
@@ -247,7 +249,5 @@ var NAVTREEINDEX3 =
 "jsonrpc.html#rpc_add_secret_to_iscsi_auth_group":[3,7,3,6],
 "jsonrpc.html#rpc_add_vhost_nvme_ns":[3,7,5,5],
 "jsonrpc.html#rpc_add_vhost_scsi_lun":[3,7,5,2],
-"jsonrpc.html#rpc_clone_lvol_bdev":[3,7,6,6],
-"jsonrpc.html#rpc_construct_aio_bdev":[3,7,2,9],
-"jsonrpc.html#rpc_construct_error_bdev":[3,7,2,18]
+"jsonrpc.html#rpc_clone_lvol_bdev":[3,7,6,6]
 };

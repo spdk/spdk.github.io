@@ -29,6 +29,8 @@ var bdev_8h =
     [ "spdk_bdev_qos_rate_limit_type", "bdev_8h.html#aedfbfc44fa2113d7ee219d09a0994d93", [
       [ "SPDK_BDEV_QOS_RW_IOPS_RATE_LIMIT", "bdev_8h.html#aedfbfc44fa2113d7ee219d09a0994d93a679f76e345c7295f991eeb84d977e5b0", null ],
       [ "SPDK_BDEV_QOS_RW_BPS_RATE_LIMIT", "bdev_8h.html#aedfbfc44fa2113d7ee219d09a0994d93a595aaec5bb61bcbdc9f08e111cfd0943", null ],
+      [ "SPDK_BDEV_QOS_R_BPS_RATE_LIMIT", "bdev_8h.html#aedfbfc44fa2113d7ee219d09a0994d93af9ae83e85454b81d7210cc97b1507a1d", null ],
+      [ "SPDK_BDEV_QOS_W_BPS_RATE_LIMIT", "bdev_8h.html#aedfbfc44fa2113d7ee219d09a0994d93a1b3f5fed3a3173110561ff7c58f211dc", null ],
       [ "SPDK_BDEV_QOS_NUM_RATE_LIMIT_TYPES", "bdev_8h.html#aedfbfc44fa2113d7ee219d09a0994d93a25c0a2574ea232ae0fd9fd3969c00b11", null ]
     ] ],
     [ "spdk_bdev_status", "bdev_8h.html#ad6c166f5d928c2995df57c96a2977862", [

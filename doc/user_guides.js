@@ -230,6 +230,7 @@ var user_guides =
         [ "clone_lvol_bdev", "jsonrpc.html#rpc_clone_lvol_bdev", null ],
         [ "rename_lvol_bdev", "jsonrpc.html#rpc_rename_lvol_bdev", null ],
         [ "resize_lvol_bdev", "jsonrpc.html#rpc_resize_lvol_bdev", null ],
+        [ "set_read_only_lvol_bdev", "jsonrpc.html#rpc_set_read_only_lvol_bdev", null ],
         [ "destroy_lvol_bdev", "jsonrpc.html#rpc_destroy_lvol_bdev", null ],
         [ "inflate_lvol_bdev", "jsonrpc.html#rpc_inflate_lvol_bdev", null ],
         [ "decouple_parent_lvol_bdev", "jsonrpc.html#rpc_decouple_parent_lvol_bdev", null ],
