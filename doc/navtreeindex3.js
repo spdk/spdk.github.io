@@ -1,5 +1,12 @@
 var NAVTREEINDEX3 =
 {
+"ioat__spec_8h.html#a46cf9ae20c6a26978dab7fbfdaef09f7":[14,0,23,47],
+"ioat__spec_8h.html#a574858fc24ea5bfae7eecaa88e2cb3c5":[14,0,23,42],
+"ioat__spec_8h.html#a611ff074a1188af7b1ccf5592145972e":[14,0,23,23],
+"ioat__spec_8h.html#a63a95b4a9941d41b83a393e9075fffdb":[14,0,23,48],
+"ioat__spec_8h.html#a6bebd5cd3ef794485504b79b1573ac8e":[14,0,23,26],
+"ioat__spec_8h.html#a75acf46dfd6a8b07239128d49ec56158":[14,0,23,46],
+"ioat__spec_8h.html#a76b1e3387e204a6cabcd1148bf3af29c":[14,0,23,21],
 "ioat__spec_8h.html#a7bddd4276d66b04e468d82094b5f698b":[14,0,23,12],
 "ioat__spec_8h.html#a7e7e011f4b9bd84a154142569ce4952b":[14,0,23,37],
 "ioat__spec_8h.html#a7fc9ebe4b7ac117f02f0d6cc44993a6c":[14,0,23,39],
@@ -242,12 +249,5 @@ var NAVTREEINDEX3 =
 "jsonrpc.html#jsonrpc_parser_error":[3,7,0,0,0],
 "jsonrpc.html#rpc_add_initiator_group":[3,7,3,9],
 "jsonrpc.html#rpc_add_initiators_to_initiator_group":[3,7,3,11],
-"jsonrpc.html#rpc_add_iscsi_auth_group":[3,7,3,3],
-"jsonrpc.html#rpc_add_iscsi_auth_group_secret":[3,7,3,3,0],
-"jsonrpc.html#rpc_add_pg_ig_maps":[3,7,3,15],
-"jsonrpc.html#rpc_add_portal_group":[3,7,3,19],
-"jsonrpc.html#rpc_add_secret_to_iscsi_auth_group":[3,7,3,6],
-"jsonrpc.html#rpc_add_vhost_nvme_ns":[3,7,5,5],
-"jsonrpc.html#rpc_add_vhost_scsi_lun":[3,7,5,2],
-"jsonrpc.html#rpc_clone_lvol_bdev":[3,7,6,6]
+"jsonrpc.html#rpc_add_iscsi_auth_group":[3,7,3,3]
 };

@@ -138,6 +138,7 @@ $(document).ready(function(){initNavTree('lvol_8h.html','');});
 <a href="#nested-classes">Data Structures</a> &#124;
 <a href="#define-members">Macros</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
+<a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">lvol.h File Reference</div>  </div>
@@ -177,6 +178,15 @@ Typedefs</h2></td></tr>
 <tr class="memdesc:a4d5c96c4fe4512f99dcb3f1e5d5e86be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback definition for lvol operations without handle to lvol.  <a href="#a4d5c96c4fe4512f99dcb3f1e5d5e86be">More...</a><br /></td></tr>
 <tr class="separator:a4d5c96c4fe4512f99dcb3f1e5d5e86be"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:a4fe537bc10bf854d592e6bbda42b26dc"><td class="memItemLeft" align="right" valign="top"><a id="a4fe537bc10bf854d592e6bbda42b26dc"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>lvol_clear_method</b> { <b>LVOL_CLEAR_WITH_DEFAULT</b>, 
+<b>LVOL_CLEAR_WITH_NONE</b>, 
+<b>LVOL_CLEAR_WITH_UNMAP</b>, 
+<b>LVOL_CLEAR_WITH_WRITE_ZEROES</b>
+ }</td></tr>
+<tr class="separator:a4fe537bc10bf854d592e6bbda42b26dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a9ecc81d4bcd4fd9090deb20c1a9e0db8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lvol_8h.html#a9ecc81d4bcd4fd9090deb20c1a9e0db8">spdk_lvs_opts_init</a> (struct <a class="el" href="structspdk__lvs__opts.html">spdk_lvs_opts</a> *opts)</td></tr>
@@ -194,9 +204,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ac2c5d67c2711ee149784f5e5e5be0b7a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lvol_8h.html#ac2c5d67c2711ee149784f5e5e5be0b7a">spdk_lvs_destroy</a> (struct spdk_lvol_store *lvol_store, <a class="el" href="lvol_8h.html#a76f85d046acb7b35ae36dc83cf337075">spdk_lvs_op_complete</a> cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:ac2c5d67c2711ee149784f5e5e5be0b7a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy lvolstore.  <a href="#ac2c5d67c2711ee149784f5e5e5be0b7a">More...</a><br /></td></tr>
 <tr class="separator:ac2c5d67c2711ee149784f5e5e5be0b7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4c609283ea9561451679c0813c71d06b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lvol_8h.html#a4c609283ea9561451679c0813c71d06b">spdk_lvol_create</a> (struct spdk_lvol_store *lvs, const char *name, uint64_t sz, bool thin_provisioned, <a class="el" href="lvol_8h.html#a453c8a7896aafb644e21e1e960ab3759">spdk_lvol_op_with_handle_complete</a> cb_fn, void *cb_arg)</td></tr>
-<tr class="memdesc:a4c609283ea9561451679c0813c71d06b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create lvol on given lvolstore with specified size.  <a href="#a4c609283ea9561451679c0813c71d06b">More...</a><br /></td></tr>
-<tr class="separator:a4c609283ea9561451679c0813c71d06b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3586b04e9b91ac588f3f1ff2603876c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lvol_8h.html#ab3586b04e9b91ac588f3f1ff2603876c">spdk_lvol_create</a> (struct spdk_lvol_store *lvs, const char *name, uint64_t sz, bool thin_provisioned, enum lvol_clear_method clear_method, <a class="el" href="lvol_8h.html#a453c8a7896aafb644e21e1e960ab3759">spdk_lvol_op_with_handle_complete</a> cb_fn, void *cb_arg)</td></tr>
+<tr class="memdesc:ab3586b04e9b91ac588f3f1ff2603876c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create lvol on given lvolstore with specified size.  <a href="#ab3586b04e9b91ac588f3f1ff2603876c">More...</a><br /></td></tr>
+<tr class="separator:ab3586b04e9b91ac588f3f1ff2603876c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab7a0818546003c24d2236c1f201fdf28"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lvol_8h.html#ab7a0818546003c24d2236c1f201fdf28">spdk_lvol_create_snapshot</a> (struct spdk_lvol *lvol, const char *snapshot_name, <a class="el" href="lvol_8h.html#a453c8a7896aafb644e21e1e960ab3759">spdk_lvol_op_with_handle_complete</a> cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:ab7a0818546003c24d2236c1f201fdf28"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create snapshot of given lvol.  <a href="#ab7a0818546003c24d2236c1f201fdf28">More...</a><br /></td></tr>
 <tr class="separator:ab7a0818546003c24d2236c1f201fdf28"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -373,8 +383,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a4c609283ea9561451679c0813c71d06b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4c609283ea9561451679c0813c71d06b">&#9670;&nbsp;</a></span>spdk_lvol_create()</h2>
+<a id="ab3586b04e9b91ac588f3f1ff2603876c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab3586b04e9b91ac588f3f1ff2603876c">&#9670;&nbsp;</a></span>spdk_lvol_create()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -406,6 +416,12 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">enum lvol_clear_method&#160;</td>
+          <td class="paramname"><em>clear_method</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype"><a class="el" href="lvol_8h.html#a453c8a7896aafb644e21e1e960ab3759">spdk_lvol_op_with_handle_complete</a>&#160;</td>
           <td class="paramname"><em>cb_fn</em>, </td>
         </tr>
@@ -430,6 +446,7 @@ Functions</h2></td></tr>
     <tr><td class="paramname">name</td><td>Name of lvol. </td></tr>
     <tr><td class="paramname">sz</td><td>size of lvol in bytes. </td></tr>
     <tr><td class="paramname">thin_provisioned</td><td>Enables thin provisioning. </td></tr>
+    <tr><td class="paramname">clear_method</td><td>Changes default data clusters clear method </td></tr>
     <tr><td class="paramname">cb_fn</td><td>Completion callback. </td></tr>
     <tr><td class="paramname">cb_arg</td><td>Completion callback custom arguments.</td></tr>
   </table>

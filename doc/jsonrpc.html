@@ -1821,12 +1821,14 @@ construct_lvol_bdev</h2>
 <td>uuid </td><td>Optional </td><td>string </td><td>UUID of logical volume store to create logical volume on </td></tr>
 <tr>
 <td>lvs_name </td><td>Optional </td><td>string </td><td>Name of logical volume store to create logical volume on </td></tr>
+<tr>
+<td>clear_method </td><td>Optional </td><td>string </td><td>Change default data clusters clear method. Available: none, unmap, write_zeroes </td></tr>
 </table>
 <p>Size will be rounded up to a multiple of cluster size. Either uuid or lvs_name must be specified, but not both. lvol_name will be used in the alias of the created logical volume.</p>
 <h3>Response</h3>
 <p>UUID of the created logical volume is returned.</p>
 <h3>Example</h3>
-<p>Example request: </p><div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;method&quot;: &quot;construct_lvol_bdev&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;params&quot;: {</div><div class="line">    &quot;lvol_name&quot;: &quot;LVOL0&quot;,</div><div class="line">    &quot;size&quot;: 1048576,</div><div class="line">    &quot;lvs_name&quot;: &quot;LVS0&quot;,</div><div class="line">    &quot;thin_provision&quot;: true</div><div class="line">  }</div><div class="line">}</div></div><!-- fragment --><p>Example response: </p><div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: &quot;1b38702c-7f0c-411e-a962-92c6a5a8a602&quot;</div><div class="line">}</div></div><!-- fragment --><h2><a class="anchor" id="rpc_snapshot_lvol_bdev"></a>
+<p>Example request: </p><div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;method&quot;: &quot;construct_lvol_bdev&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;params&quot;: {</div><div class="line">    &quot;lvol_name&quot;: &quot;LVOL0&quot;,</div><div class="line">    &quot;size&quot;: 1048576,</div><div class="line">    &quot;lvs_name&quot;: &quot;LVS0&quot;,</div><div class="line">    &quot;clear_method&quot;: &quot;unmap&quot;,</div><div class="line">    &quot;thin_provision&quot;: true</div><div class="line">  }</div><div class="line">}</div></div><!-- fragment --><p>Example response: </p><div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: &quot;1b38702c-7f0c-411e-a962-92c6a5a8a602&quot;</div><div class="line">}</div></div><!-- fragment --><h2><a class="anchor" id="rpc_snapshot_lvol_bdev"></a>
 snapshot_lvol_bdev</h2>
 <p>Capture a snapshot of the current state of a logical volume.</p>
 <h3>Parameters</h3>
