@@ -209,7 +209,63 @@ Defragmentation and relocation</h2>
 </pre><p>Valid blocks are marked with an asterisk '*'.</p>
 <p>Another reason for data relocation might be an event from the SSD telling us that the data might become corrupt if it's not relocated. This might happen due to its old age (if it was written a long time ago) or due to read disturb (media characteristic, that causes corruption of neighbouring blocks during a read operation).</p>
 <p>Module responsible for data relocation is called <code>reloc</code>. When a band is chosen for defragmentation or an ANM (asynchronous NAND management) event is received, the appropriate blocks are marked as required to be moved. The <code>reloc</code> module takes a band that has some of such blocks marked, checks their validity and, if they're still valid, copies them.</p>
-<p>Choosing a band for defragmentation depends on several factors: its valid ratio (1) (proportion of valid blocks to all user blocks), its age (2) (when was it written) and its write count / wear level index of its chunks (3) (how many times the band was written to). The lower the ratio (1), the higher its age (2) and the lower its write count (3), the higher the chance the band will be chosen for defrag. </p>
-</div></div><!-- contents -->
+<p>Choosing a band for defragmentation depends on several factors: its valid ratio (1) (proportion of valid blocks to all user blocks), its age (2) (when was it written) and its write count / wear level index of its chunks (3) (how many times the band was written to). The lower the ratio (1), the higher its age (2) and the lower its write count (3), the higher the chance the band will be chosen for defrag.</p>
+<h1><a class="anchor" id="ftl_usage"></a>
+Usage</h1>
+<h2><a class="anchor" id="ftl_prereq"></a>
+Prerequisites</h2>
+<p>In order to use the FTL module, an Open Channel SSD is required. The easiest way to obtain one is to emulate it using QEMU. The QEMU with the patches providing Open Channel support can be found on the SPDK's QEMU fork on <a href="https://github.com/spdk/qemu/tree/spdk-3.0.0">spdk-3.0.0</a> branch.</p>
+<h2><a class="anchor" id="ftl_qemu_config"></a>
+Configuring QEMU</h2>
+<p>To emulate an Open Channel device, QEMU expects parameters describing the characteristics and geometry of the SSD:</p><ul>
+<li><code>serial</code> - serial number,</li>
+<li><code>lver</code> - version of the OCSSD standard (0 - disabled, 1 - "1.2", 2 - "2.0"), libftl only supports 2.0,</li>
+<li><code>lba_index</code> - default LBA format. Possible values (libftl only supports lba_index &gt;= 3): <table class="doxtable">
+<tr>
+<th>lba_index</th><th>data</th><th>metadata  </th></tr>
+<tr>
+<td>0 </td><td>512B</td><td>0B </td></tr>
+<tr>
+<td>1 </td><td>512B</td><td>8B </td></tr>
+<tr>
+<td>2 </td><td>512B</td><td>16B </td></tr>
+<tr>
+<td>3 </td><td>4096B</td><td>0B </td></tr>
+<tr>
+<td>4 </td><td>4096B</td><td>64B </td></tr>
+<tr>
+<td>5 </td><td>4096B</td><td>128B </td></tr>
+<tr>
+<td>6 </td><td>4096B</td><td>16B </td></tr>
+</table>
+- <code>lnum_ch</code> - number of groups,</li>
+<li><code>lnum_lun</code> - number of parallel units</li>
+<li><code>lnum_pln</code> - number of planes (logical blocks from all planes constitute a chunk)</li>
+<li><code>lpgs_per_blk</code> - number of pages (smallest programmable unit) per chunk</li>
+<li><code>lsecs_per_pg</code> - number of sectors in a page</li>
+<li><code>lblks_per_pln</code> - number of chunks in a parallel unit</li>
+<li><code>laer_thread_sleep</code> - timeout in ms between asynchronous events requesting the host to relocate the data based on media feedback</li>
+<li><code>lmetadata</code> - metadata file</li>
+</ul>
+<p>For more detailed description of the available options, consult the <code>hw/block/nvme.c</code> file in the QEMU repository.</p>
+<p>Example:</p>
+<div class="fragment"><div class="line">$ /path/to/qemu [OTHER PARAMETERS] -drive format=raw,file=/path/to/data/file,if=none,id=myocssd0</div><div class="line">        -device nvme,drive=myocssd0,serial=deadbeef,lver=2,lba_index=3,lnum_ch=1,lnum_lun=8,lnum_pln=4,</div><div class="line">        lpgs_per_blk=1536,lsecs_per_pg=4,lblks_per_pln=512,lmetadata=/path/to/md/file</div></div><!-- fragment --><p>In the above example, a device is created with 1 channel, 8 parallel units, 512 chunks per parallel unit, 24576 (<code>lnum_pln</code> * <code>lpgs_per_blk</code> * <code>lsecs_per_pg</code>) logical blocks in each chunk with logical block being 4096B. Therefore the data file needs to be at least 384G (8 * 512 * 24576 * 4096B) of size and can be created with the following command:</p>
+<div class="fragment"><div class="line">$ fallocate -l 384G /path/to/data/file</div></div><!-- fragment --><h2><a class="anchor" id="ftl_spdk_config"></a>
+Configuring SPDK</h2>
+<p>To verify that the drive is emulated correctly, one can check the output of the NVMe identify app (assuming that <code>scripts/setup.sh</code> was called before and the driver has been changed for that device):</p>
+<div class="fragment"><div class="line">$ examples/nvme/identify/identify</div><div class="line">=====================================================</div><div class="line">NVMe Controller at 0000:00:0a.0 [1d1d:1f1f]</div><div class="line">=====================================================</div><div class="line">Controller Capabilities/Features</div><div class="line">================================</div><div class="line">Vendor ID:                             1d1d</div><div class="line">Subsystem Vendor ID:                   1af4</div><div class="line">Serial Number:                         deadbeef</div><div class="line">Model Number:                          QEMU NVMe Ctrl</div><div class="line"></div><div class="line">... other info ...</div><div class="line"></div><div class="line">Namespace OCSSD Geometry</div><div class="line">=======================</div><div class="line">OC version: maj:2 min:0</div><div class="line"></div><div class="line">... other info ...</div><div class="line"></div><div class="line">Groups (channels): 1</div><div class="line">PUs (LUNs) per group: 8</div><div class="line">Chunks per LUN: 512</div><div class="line">Logical blks per chunk: 24576</div><div class="line"></div><div class="line">... other info ...</div></div><!-- fragment --><p>Similarly to other bdevs, the FTL bdevs can be created either based on config files or via RPC. Both interfaces require the same arguments which are described by the <code>--help</code> option of the <code>construct_ftl_bdev</code> RPC call, which are:</p><ul>
+<li>bdev's name</li>
+<li>transport type of the device (e.g. PCIe)</li>
+<li>transport address of the device (e.g. <code>00:0a.0</code>)</li>
+<li>parallel unit range</li>
+<li>UUID of the FTL device (if the FTL is to be restored from the SSD)</li>
+</ul>
+<p>Example config:</p>
+<div class="fragment"><div class="line">[Ftl]</div><div class="line"> TransportID &quot;trtype:PCIe traddr:00:0a.0&quot; nvme0 &quot;0-3&quot;</div><div class="line"> TransportID &quot;trtype:PCIe traddr:00:0a.0&quot; nvme1 &quot;4-5&quot; e9825835-b03c-49d7-bc3e-5827cbde8a88</div></div><!-- fragment --><p>The above will result in creation of two devices:</p><ul>
+<li><code>nvme0</code> on <code>00:0a.0</code> using parallel units 0-3, created from scratch</li>
+<li><code>nvme1</code> on the same device using parallel units 4-5, restored from the SSD using the UUID provided</li>
+</ul>
+<p>The same can be achieved with the following two RPC calls:</p>
+<div class="fragment"><div class="line">$ scripts/rpc.py construct_ftl_bdev -b nvme0 -l 0-3 -a 00:0a.0</div><div class="line">{</div><div class="line">        &quot;name&quot;: &quot;nvme0&quot;,</div><div class="line">        &quot;uuid&quot;: &quot;b4624a89-3174-476a-b9e5-5fd27d73e870&quot;</div><div class="line">}</div><div class="line">$ scripts/rpc.py construct_ftl_bdev -b nvme1 -l 0-3 -a 00:0a.0 -u e9825835-b03c-49d7-bc3e-5827cbde8a88</div><div class="line">{</div><div class="line">        &quot;name&quot;: &quot;nvme1&quot;,</div><div class="line">        &quot;uuid&quot;: &quot;e9825835-b03c-49d7-bc3e-5827cbde8a88&quot;</div><div class="line">}</div></div><!-- fragment --> </div></div><!-- contents -->
 </div><!-- doc-content -->
 </div>

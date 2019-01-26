@@ -1,5 +1,9 @@
 var NAVTREEINDEX20 =
 {
+"unionspdk__nvme__feat__power__management.html#a827cb4f8321374b260f19eae4a4f4521":[13,0,107,0],
+"unionspdk__nvme__feat__power__management.html#ad425c8a49e910e0413a6a45a67044fbe":[13,0,107,3],
+"unionspdk__nvme__feat__power__management.html#af68e833134cda1b00b750992bdd91342":[13,0,107,1],
+"unionspdk__nvme__feat__software__progress__marker.html":[13,0,108],
 "unionspdk__nvme__feat__software__progress__marker.html#a068b7aa9ea34b8e38dfcf7b8f7d25f70":[13,0,108,1],
 "unionspdk__nvme__feat__software__progress__marker.html#a22cdd614671f8b7a383463bebd28a384":[13,0,108,2],
 "unionspdk__nvme__feat__software__progress__marker.html#a24722159c24ba9bf7330b15d5b47f378":[13,0,108,0],

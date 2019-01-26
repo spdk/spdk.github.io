@@ -19,6 +19,11 @@ var prog_guides =
         [ "Band", "ftl.html#ftl_band", null ],
         [ "Ring write buffer", "ftl.html#ftl_rwb", null ],
         [ "Defragmentation and relocation", "ftl.html#ftl_reloc", null ]
+      ] ],
+      [ "Usage", "ftl.html#ftl_usage", [
+        [ "Prerequisites", "ftl.html#ftl_prereq", null ],
+        [ "Configuring QEMU", "ftl.html#ftl_qemu_config", null ],
+        [ "Configuring SPDK", "ftl.html#ftl_spdk_config", null ]
       ] ]
     ] ]
 ];
