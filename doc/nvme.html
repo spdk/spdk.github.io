@@ -252,6 +252,7 @@ Limitations</h2>
 <li>Two processes sharing memory may not share any cores in their core mask.</li>
 <li>If a primary process exits while secondary processes are still running, those processes will continue to run. However, a new primary process cannot be created.</li>
 <li>Applications are responsible for coordinating access to logical blocks.</li>
+<li>If a process exits unexpectedly, the allocated memory will be released when the last process exits.</li>
 </ol>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="nvme_8h.html#a225bbc386ec518ae21bd5536f21db45d" title="Enumerate the bus indicated by the transport ID and attach the userspace NVMe driver to each device f...">spdk_nvme_probe</a>, <a class="el" href="nvme_8h.html#a10282695461985f58f54de022911745e" title="Process any outstanding completions for admin commands. ">spdk_nvme_ctrlr_process_admin_completions</a></dd></dl>
 <h1><a class="anchor" id="nvme_hotplug"></a>
