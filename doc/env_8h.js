@@ -73,6 +73,7 @@ var env_8h =
     [ "spdk_memzone_lookup", "env_8h.html#a2be5bc3f8fc570f45f2ad087fcb91f9e", null ],
     [ "spdk_memzone_reserve", "env_8h.html#a48afc08099440a88e9e8dc3abf540ab9", null ],
     [ "spdk_memzone_reserve_aligned", "env_8h.html#aa179a05a509878b70a9e4dfe8079841a", null ],
+    [ "spdk_pause", "env_8h.html#a83b4804441c4333e414ebd3d508d91fa", null ],
     [ "spdk_pci_addr_compare", "env_8h.html#a7f3decf485d6b797775bc4dd2215eb52", null ],
     [ "spdk_pci_addr_fmt", "env_8h.html#a492c0520e80d8be841891e4d1bd7a446", null ],
     [ "spdk_pci_addr_parse", "env_8h.html#a96187c4c0c5a302669f684e487ebaa0d", null ],

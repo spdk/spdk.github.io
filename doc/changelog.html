@@ -144,6 +144,7 @@ v19.01: (Upcoming Release)</h1>
 <p>For <code>spdk_app_parse_args</code>, add return value to the callback which parses application specific command line parameters to protect SPDK applications from crashing by invalid values from user input.</p>
 <h2>environment</h2>
 <p>A new public header file <a class="el" href="env__dpdk_8h.html" title="Encapsulated DPDK specific dependencies. ">env_dpdk.h</a> has been introduced, and function spdk_env_dpdk_post_init is added into it. If user is using DPDK, and already called rte_eal_init, then include <a class="el" href="env__dpdk_8h.html" title="Encapsulated DPDK specific dependencies. ">include/spdk/env_dpdk.h</a>, and call <a class="el" href="env__dpdk_8h.html#a4cad0e2fc2b5a9b8e588bc4e997e2ec7" title="Initialize the environment library after DPDK env is already initialized. ">spdk_env_dpdk_post_init()</a> instead of spdk_env_init.</p>
+<p>ISA-L has been added as an SPDK submodule. ISA-L is enabled by default on x86 architecture to accelerate algorithms such as CRC for iSCSI and NVMe-oF. Users may still disable ISA-L by explicitly passing &ndash;without-isal to the configure script.</p>
 <h2>util</h2>
 <p>A new uuid API <code>spdk_uuid_copy</code> was added to make a copy of the source uuid.</p>
 <p>An new parameter <code>init_crc</code> representing the initial CRC value was added to <code>spdk_crc16_t10dif</code>. The parameter can be used to calculate a CRC value spanning multiple separate buffers.</p>

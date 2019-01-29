@@ -13,6 +13,8 @@ var string_8h =
     [ "spdk_strlen_pad", "string_8h.html#a3c8f770428a60f0d2836d479c4b1b4e7", null ],
     [ "spdk_strlwr", "string_8h.html#aafc67eadec132156b4f7bd873d1cbc62", null ],
     [ "spdk_strsepq", "string_8h.html#ad39472adf37d067c2fbcf2b1454188c2", null ],
+    [ "spdk_strtol", "string_8h.html#ae12420e9e2ab3af9d14e518245691c15", null ],
+    [ "spdk_strtoll", "string_8h.html#a317132c2abb23a53dc3d53846689e2b6", null ],
     [ "spdk_vsprintf_alloc", "string_8h.html#a6dc47e4a2855c519b30fc54b252f85cc", null ],
     [ "spdk_vsprintf_append_realloc", "string_8h.html#a8140b574a3934d00596aaf6a38c51f14", null ]
 ];
