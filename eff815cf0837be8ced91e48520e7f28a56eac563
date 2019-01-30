@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "271c7b42_03776e64",
+        "filename": "_posts/2019-01-31-19.01_release.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 1012251
+      },
+      "writtenOn": "2019-01-30T04:35:08Z",
+      "side": 1,
+      "message": "trailing whitespace.",
+      "range": {
+        "startLine": 16,
+        "startChar": 123,
+        "endLine": 16,
+        "endChar": 124
+      },
+      "revId": "eff815cf0837be8ced91e48520e7f28a56eac563",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3574cbed_a8664435",
+        "filename": "_posts/2019-01-31-19.01_release.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 1012251
+      },
+      "writtenOn": "2019-01-30T04:35:08Z",
+      "side": 1,
+      "message": "maybe has been",
+      "range": {
+        "startLine": 16,
+        "startChar": 36,
+        "endLine": 16,
+        "endChar": 40
+      },
+      "revId": "eff815cf0837be8ced91e48520e7f28a56eac563",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
