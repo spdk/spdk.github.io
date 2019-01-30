@@ -143,6 +143,22 @@ v19.01: (Upcoming Release)</h1>
 <h2>event framework</h2>
 <p>For <code>spdk_app_parse_args</code>, add return value to the callback which parses application specific command line parameters to protect SPDK applications from crashing by invalid values from user input.</p>
 <h2>environment</h2>
+<p><a class="el" href="env_8h.html#ac6a932523e0f4cb86d2b90dfe113b171" title="Get the physical address of a buffer. ">spdk_vtophys()</a> has been refactored to accept length of the translated region as a new parameter. The function will now update that parameter with the largest possible value for which the memory is contiguous in the physical memory address space.</p>
+<p>The following functions were removed:</p><ul>
+<li>spdk_pci_nvme_device_attach()</li>
+<li>spdk_pci_nvme_enumerate()</li>
+<li>spdk_pci_ioat_device_attach()</li>
+<li>spdk_pci_ioat_enumerate()</li>
+<li>spdk_pci_virtio_device_attach()</li>
+<li>spdk_pci_virtio_enumerate()</li>
+</ul>
+<p>They were replaced with generic <a class="el" href="env_8h.html#ac6aa2606617cc3913fd5d6b7d218eba4" title="Attach a PCI device. ">spdk_pci_device_attach()</a> and <a class="el" href="env_8h.html#a8e2430eaebf3d756c8608aea6957b614" title="Enumerate all PCI devices supported by the provided driver and try to attach those that weren&#39;t attac...">spdk_pci_enumerate()</a> which require a new spdk_pci_driver object to be provided. It can be one of the following:</p><ul>
+<li><a class="el" href="env_8h.html#aa4a5c3c4f51c1eaac132f6093fe219f4" title="Get the NVMe PCI driver object. ">spdk_pci_nvme_get_driver()</a></li>
+<li><a class="el" href="env_8h.html#ad9d208ba1e19b37b76bb993c358b5760" title="Get the I/OAT PCI driver object. ">spdk_pci_ioat_get_driver()</a></li>
+<li><a class="el" href="env_8h.html#ac7fabe1b4dba0227ab07e5bd91fe8816" title="Get the Virtio PCI driver object. ">spdk_pci_virtio_get_driver()</a></li>
+</ul>
+<p><a class="el" href="env_8h.html#ac3850938d8aaf6363bd76e690f17de30" title="Hook a custom PCI device into the PCI layer. ">spdk_pci_hook_device()</a> and <a class="el" href="env_8h.html#ac6cda84fe7f3ca98ee13683207ffeca5" title="Un-hook a custom PCI device from the PCI layer. ">spdk_pci_unhook_device()</a> were added. Those allow adding a virtual <a class="el" href="structspdk__pci__device.html">spdk_pci_device</a> into the SPDK PCI subsystem. A virtual device calls provided callbacks for each BAR mapping request or PCI config access. It's attachable with <a class="el" href="env_8h.html#ac6aa2606617cc3913fd5d6b7d218eba4" title="Attach a PCI device. ">spdk_pci_device_attach()</a> or <a class="el" href="env_8h.html#a8e2430eaebf3d756c8608aea6957b614" title="Enumerate all PCI devices supported by the provided driver and try to attach those that weren&#39;t attac...">spdk_pci_enumerate()</a> like any other device.</p>
+<p>A new <a class="el" href="env_8h.html#a83b4804441c4333e414ebd3d508d91fa" title="Pause CPU execution for a short while. ">spdk_pause()</a> function was added to pause CPU execution for an implementation specific amount of time. Quoting from DPDK function this is based on: "This call is intended for tight loops which poll a shared resource or wait for an event. A short pause within the loop may reduce the power consumption."</p>
 <p>A new public header file <a class="el" href="env__dpdk_8h.html" title="Encapsulated DPDK specific dependencies. ">env_dpdk.h</a> has been introduced, and function spdk_env_dpdk_post_init is added into it. If user is using DPDK, and already called rte_eal_init, then include <a class="el" href="env__dpdk_8h.html" title="Encapsulated DPDK specific dependencies. ">include/spdk/env_dpdk.h</a>, and call <a class="el" href="env__dpdk_8h.html#a4cad0e2fc2b5a9b8e588bc4e997e2ec7" title="Initialize the environment library after DPDK env is already initialized. ">spdk_env_dpdk_post_init()</a> instead of spdk_env_init.</p>
 <p>ISA-L has been added as an SPDK submodule. ISA-L is enabled by default on x86 architecture to accelerate algorithms such as CRC for iSCSI and NVMe-oF. Users may still disable ISA-L by explicitly passing &ndash;without-isal to the configure script.</p>
 <h2>util</h2>
@@ -167,12 +183,17 @@ v19.01: (Upcoming Release)</h1>
 <p>On shutdown, bdev unregister now proceeds in top-down fashion, with claimed bdevs skipped (these will be unregistered later, when virtual bdev built on top of the respective base bdev unclaims it). This allows virtual bdevs to be shut down cleanly as opposed to the previous behavior that didn't differentiate between hotremove and planned shutdown.</p>
 <h2>logical volumes</h2>
 <p>Logical volume bdev can now be marked as read only using <code>set_read_only_lvol_bdev</code> RPC. This allows for basing clones on top of lvol_bdev without first creating a snapshot.</p>
+<p>Added option to change method for data erasure when deleting lvol or resizing down. Default of unmapping clusters can now be changed to writing zeroes or no operation.</p>
 <h2>log</h2>
 <p>"trace flags" are now referred to as "log flags" in the SPDK log API. The set_trace_flag, clear_trace_flag and get_trace_flags RPCs are now deprecated, and set_log_flag, clear_log_flag and get_log_flags RPCs have been added.</p>
 <h2>trace</h2>
 <p>New <code>get_tpoint_group_mask</code> RPC was added to get current tpoint_group_mask, and each tpoint group status. New <code>enable_tpoint_group</code> and <code>disable_tpoint_group</code> RPC were added to enable or disable a specific tpoint group.</p>
 <h2>ftl</h2>
 <p>EXPERIMENTAL: Added basic flash translation layer module allowing for using Open Channel SSDs as block devices. The module is split into the library (located in lib/ftl) and bdev_ftl (lib/bdev/ftl). See the <a href="https://spdk.io/doc/ftl.html">documentation</a> for more details.</p>
+<h2>vhost</h2>
+<p>Vhost SCSI and Vhost Block devices can now accept multiple connections on the same socket file. Each connection (internally called a vhost session) will have access to the same storage, but will use different virtqueues, different features and possibly different memory.</p>
+<h2>DPDK 18.11</h2>
+<p>DPDK submodule was updated to DPDK 18.11. Note that SPDK does not fully leverage the new multi-process device hotplug yet and continues to work the same way it always did.</p>
 <h1><a class="anchor" id="changelog-v18-10"></a>
 v18.10:</h1>
 <h2>nvme</h2>

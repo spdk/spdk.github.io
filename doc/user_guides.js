@@ -77,7 +77,7 @@ var user_guides =
       [ "General Purpose RPCs", "bdev.html#bdev_ug_general_rpcs", [
         [ "get_bdevs", "bdev.html#bdev_ug_get_bdevs", null ],
         [ "set_bdev_qos_limit", "bdev.html#set_bdev_qos_limit", null ],
-        [ "delete_bdev", "bdev.html#bdev_ug_delete_bdev", null ]
+        [ "Histograms", "bdev.html#rpc_bdev_histogram", null ]
       ] ],
       [ "Ceph RBD", "bdev.html#bdev_config_rbd", null ],
       [ "Crypto Virtual Bdev Module", "bdev.html#bdev_config_crypto", null ],

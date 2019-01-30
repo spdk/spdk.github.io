@@ -347,7 +347,7 @@ get_bdev_histogram</h2>
 <p>Example request: </p><div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;method&quot;: &quot;get_bdev_histogram&quot;,</div><div class="line">  &quot;params&quot;: {</div><div class="line">    &quot;name&quot;: &quot;Nvme0n1&quot;</div><div class="line">  }</div><div class="line">}</div></div><!-- fragment --><p>Example response: Note that histogram field is trimmed, actual encoded histogram length is ~80kb.</p>
 <div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: {</div><div class="line">    &quot;histogram&quot;: &quot;AAAAAAAAAAAAAA...AAAAAAAAA==&quot;,</div><div class="line">    &quot;tsc_rate&quot;: 2300000000,</div><div class="line">    &quot;bucket_shift&quot;: 7</div><div class="line">  }</div><div class="line">}</div></div><!-- fragment --><h2><a class="anchor" id="rpc_delete_bdev"></a>
 delete_bdev</h2>
-<p>Unregister a block device.</p>
+<p>Unregister a block device. This RPC is deprecated. Users should instead use the specific deletion RPC for the bdev type to be removed (i.e. delete_malloc_bdev).</p>
 <h3>Parameters</h3>
 <table class="doxtable">
 <tr>

@@ -163,9 +163,16 @@ get_bdevs</h2>
 <div class="fragment"><div class="line">{</div><div class="line">  &quot;num_blocks&quot;: 32768,</div><div class="line">  &quot;assigned_rate_limits&quot;: {</div><div class="line">    &quot;rw_ios_per_sec&quot;: 10000,</div><div class="line">    &quot;rw_mbytes_per_sec&quot;: 20</div><div class="line">  },</div><div class="line">  &quot;supported_io_types&quot;: {</div><div class="line">    &quot;reset&quot;: true,</div><div class="line">    &quot;nvme_admin&quot;: false,</div><div class="line">    &quot;unmap&quot;: true,</div><div class="line">    &quot;read&quot;: true,</div><div class="line">    &quot;write_zeroes&quot;: true,</div><div class="line">    &quot;write&quot;: true,</div><div class="line">    &quot;flush&quot;: true,</div><div class="line">    &quot;nvme_io&quot;: false</div><div class="line">  },</div><div class="line">  &quot;driver_specific&quot;: {},</div><div class="line">  &quot;claimed&quot;: false,</div><div class="line">  &quot;block_size&quot;: 4096,</div><div class="line">  &quot;product_name&quot;: &quot;Malloc disk&quot;,</div><div class="line">  &quot;name&quot;: &quot;Malloc0&quot;</div><div class="line">}</div></div><!-- fragment --><h2><a class="anchor" id="set_bdev_qos_limit"></a>
 set_bdev_qos_limit</h2>
 <p>Users can use the <code>set_bdev_qos_limit</code> RPC command to enable, adjust, and disable rate limits on an existing bdev. Two types of rate limits are supported: IOPS and bandwidth. The rate limits can be enabled, adjusted, and disabled at any time for the specified bdev. The bdev name is a required parameter for this RPC command and at least one of <code>rw_ios_per_sec</code> and <code>rw_mbytes_per_sec</code> must be specified. When both rate limits are enabled, the first met limit will take effect. The value 0 may be specified to disable the corresponding rate limit. Users can run this command with <code>-h</code> or <code>--help</code> for more information.</p>
-<h2><a class="anchor" id="bdev_ug_delete_bdev"></a>
-delete_bdev</h2>
-<p>To remove previously created bdev user can use <code>delete_bdev</code> RPC command. Bdev can be deleted at any time and this will be fully handled by any upper layers. As an argument user should provide bdev name. This RPC command should be used only for debugging purpose. To remove a particular bdev please use the delete command specific to its bdev module.</p>
+<h2><a class="anchor" id="rpc_bdev_histogram"></a>
+Histograms</h2>
+<p>The <code>enable_bdev_histogram</code> RPC command allows to enable or disable gathering latency data for specified bdev. Histogram can be downloaded by the user by calling <code>get_bdev_histogram</code> and parsed using scripts/histogram.py script.</p>
+<p>Example command</p>
+<p><code>rpc.py enable_bdev_histogram Nvme0n1 --enable</code></p>
+<p>The command will enable gathering data for histogram on Nvme0n1 device.</p>
+<p><code>rpc.py get_bdev_histogram Nvme0n1 | histogram.py</code></p>
+<p>The command will download gathered histogram data. The script will parse the data and show table containing IO count for latency ranges.</p>
+<p><code>rpc.py enable_bdev_histogram Nvme0n1 --disable</code></p>
+<p>The command will disable histogram on Nvme0n1 device.</p>
 <h1><a class="anchor" id="bdev_config_rbd"></a>
 Ceph RBD</h1>
 <p>The SPDK RBD bdev driver provides SPDK block layer access to Ceph RADOS block devices (RBD). Ceph RBD devices are accessed via librbd and librados libraries to access the RADOS block device exported by Ceph. To create Ceph bdev RPC command <code>construct_rbd_bdev</code> should be used.</p>

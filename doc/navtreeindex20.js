@@ -1,5 +1,6 @@
 var NAVTREEINDEX20 =
 {
+"unionspdk__nvme__feat__number__of__queues.html#a48012c7a713f82d0e9b375cf363d4af2":[13,0,106,1],
 "unionspdk__nvme__feat__number__of__queues.html#a80c8bbe6b6b28766af70bb9333fb303e":[13,0,106,3],
 "unionspdk__nvme__feat__power__management.html":[13,0,107],
 "unionspdk__nvme__feat__power__management.html#a0614478c08480813d285d5819998e3ee":[13,0,107,2],

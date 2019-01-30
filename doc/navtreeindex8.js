@@ -113,7 +113,8 @@ var NAVTREEINDEX8 =
 "nvmf__spec_8h.html#aff5273904fb7543f0d7274814151ad56":[14,0,39,30],
 "nvmf_tgt_pg.html":[4,3],
 "nvmf_tgt_tracepoints.html":[11],
-"nvmf_tgt_tracepoints.html#add_tracepoints":[11,3],
+"nvmf_tgt_tracepoints.html#add_tracepoints":[11,4],
+"nvmf_tgt_tracepoints.html#capture_trace_events":[11,3],
 "nvmf_tgt_tracepoints.html#capture_tracepoints":[11,2],
 "nvmf_tgt_tracepoints.html#enable_tracepoints":[11,1],
 "nvmf_tgt_tracepoints.html#tracepoints_intro":[11,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX8 =
 "scsi_8h.html#abbacc6adf74a9790630dedda8b97940e":[14,0,42,22],
 "scsi_8h.html#ac162173acec41789048b984ad6c2e840":[14,0,42,12],
 "scsi_8h.html#accba3d0cbde94aca1cc9171f1ee6a9d4":[14,0,42,10],
-"scsi_8h.html#ad660916c8c06b8c3eed3245618d6c59f":[14,0,42,41],
-"scsi_8h.html#ad846e70848fc9833f13b9db5a948bf97":[14,0,42,11]
+"scsi_8h.html#ad660916c8c06b8c3eed3245618d6c59f":[14,0,42,41]
 };

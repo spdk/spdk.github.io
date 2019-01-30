@@ -160,9 +160,9 @@ Data Fields</h2></td></tr>
 <tr class="memitem:a5d36fc5a17dddc7e14b32aa1598a7ee8"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__trace__history.html#a5d36fc5a17dddc7e14b32aa1598a7ee8">tpoint_count</a> [SPDK_TRACE_MAX_TPOINT_ID]</td></tr>
 <tr class="memdesc:a5d36fc5a17dddc7e14b32aa1598a7ee8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Running count of number of occurrences of each tracepoint on this lcore.  <a href="#a5d36fc5a17dddc7e14b32aa1598a7ee8">More...</a><br /></td></tr>
 <tr class="separator:a5d36fc5a17dddc7e14b32aa1598a7ee8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a19c2844fdf265b00faf766372de1d577"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__trace__history.html#a19c2844fdf265b00faf766372de1d577">next_entry</a></td></tr>
-<tr class="memdesc:a19c2844fdf265b00faf766372de1d577"><td class="mdescLeft">&#160;</td><td class="mdescRight">Index to next <a class="el" href="structspdk__trace__entry.html">spdk_trace_entry</a> to fill in the circular buffer.  <a href="#a19c2844fdf265b00faf766372de1d577">More...</a><br /></td></tr>
-<tr class="separator:a19c2844fdf265b00faf766372de1d577"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6aed08b66a3c7f1bf46a1fb4b5d6419"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__trace__history.html#ab6aed08b66a3c7f1bf46a1fb4b5d6419">next_entry</a></td></tr>
+<tr class="memdesc:ab6aed08b66a3c7f1bf46a1fb4b5d6419"><td class="mdescLeft">&#160;</td><td class="mdescRight">Index to next <a class="el" href="structspdk__trace__entry.html">spdk_trace_entry</a> to fill.  <a href="#ab6aed08b66a3c7f1bf46a1fb4b5d6419">More...</a><br /></td></tr>
+<tr class="separator:ab6aed08b66a3c7f1bf46a1fb4b5d6419"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a09f645e9d5c19fb4e4fe71b4faaa3951"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structspdk__trace__entry.html">spdk_trace_entry</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__trace__history.html#a09f645e9d5c19fb4e4fe71b4faaa3951">entries</a> [0]</td></tr>
 <tr class="memdesc:a09f645e9d5c19fb4e4fe71b4faaa3951"><td class="mdescLeft">&#160;</td><td class="mdescRight">Circular buffer of <a class="el" href="structspdk__trace__entry.html">spdk_trace_entry</a> structures for tracing tpoints on this core.  <a href="#a09f645e9d5c19fb4e4fe71b4faaa3951">More...</a><br /></td></tr>
 <tr class="separator:a09f645e9d5c19fb4e4fe71b4faaa3951"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -201,19 +201,19 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
-<a id="a19c2844fdf265b00faf766372de1d577"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a19c2844fdf265b00faf766372de1d577">&#9670;&nbsp;</a></span>next_entry</h2>
+<a id="ab6aed08b66a3c7f1bf46a1fb4b5d6419"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab6aed08b66a3c7f1bf46a1fb4b5d6419">&#9670;&nbsp;</a></span>next_entry</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint32_t spdk_trace_history::next_entry</td>
+          <td class="memname">uint64_t spdk_trace_history::next_entry</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Index to next <a class="el" href="structspdk__trace__entry.html">spdk_trace_entry</a> to fill in the circular buffer. </p>
+<p>Index to next <a class="el" href="structspdk__trace__entry.html">spdk_trace_entry</a> to fill. </p>
 
 </div>
 </div>

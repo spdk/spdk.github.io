@@ -1,5 +1,6 @@
 var NAVTREEINDEX15 =
 {
+"structspdk__nvme__firmware__page.html#ac92edf109ba5f2b970b06a31a0434f37":[13,0,112,4],
 "structspdk__nvme__firmware__page.html#acc627dc50a9f88fa3c4697ff8ac99c81":[13,0,112,2],
 "structspdk__nvme__format.html":[13,0,113],
 "structspdk__nvme__format.html#a4822028eeb6476064e9026826faf3029":[13,0,113,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX15 =
 "structspdk__nvme__reservation__notification__log.html#ac3ec3beaa7aec5a7c2bc5dad10932d48":[13,0,140,5],
 "structspdk__nvme__reservation__notification__log.html#ad8bc8c37065d9cf1c8e2b171d53ba807":[13,0,140,0],
 "structspdk__nvme__reservation__notification__log.html#afaf84897c0b7a58fcaed09685b382031":[13,0,140,3],
-"structspdk__nvme__reservation__register__data.html":[13,0,141],
-"structspdk__nvme__reservation__register__data.html#a3d7c7c2bdf9cb826c607345c9ff16f2d":[13,0,141,0]
+"structspdk__nvme__reservation__register__data.html":[13,0,141]
 };
