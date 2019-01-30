@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "1a33f7f2_54d8f066",
+        "filename": "_posts/2019-01-31-19.01_release.md",
+        "patchSetId": 4
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 1010531
+      },
+      "writtenOn": "2019-01-30T18:11:53Z",
+      "side": 1,
+      "message": "In terms of messaging - let\u0027s put NVMe-oF TCP/IP at the top of this list, followed by the FTL.\n\nLet\u0027s change the titles of the list items to the following:\n\n**NVMe-oF TCP/IP Transport**\n**Open Channel SSD Flash Translation Layer**\n**Caching bdev based on OCF**\n**ISA-L Support**\n**DIF/DIX library**",
+      "revId": "e03ecec9abfe6143b1a9f1adf4f9960a92e10a7f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "ed3fdaa9_f9f8a26d",
+        "filename": "_posts/2019-01-31-19.01_release.md",
+        "patchSetId": 4
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 1010531
+      },
+      "writtenOn": "2019-01-30T18:11:53Z",
+      "side": 1,
+      "message": "Let\u0027s also throw in that more than 60k lines of code were changed in this release (mostly additions) because that\u0027s kind of a fun metric. If a quarter is 13 weeks with 5 workdays per week and there were 5 holidays, then that\u0027s 1000 lines of code changed per work day average.",
+      "revId": "e03ecec9abfe6143b1a9f1adf4f9960a92e10a7f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    }
+  ]
+}
