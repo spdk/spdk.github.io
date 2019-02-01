@@ -1,5 +1,6 @@
 var NAVTREEINDEX19 =
 {
+"structspdk__trace__tpoint.html#aed4bd94394bbec8df624cc329666b925":[13,0,237,6],
 "structspdk__uuid.html":[13,0,238],
 "structspdk__uuid.html#a76311620d4bdc3bb5b04f9e92f37434f":[13,0,238,1],
 "structspdk__uuid.html#a8a218370dc61ebfb25175b124febe10d":[13,0,238,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX19 =
 "unionspdk__nvme__feat__non__operational__power__state__config.html#a8f512d6ffa8611e38141e169898efb4b":[13,0,105,1],
 "unionspdk__nvme__feat__non__operational__power__state__config.html#af22c5aa780ded9ba087ba1fa50c460d7":[13,0,105,0],
 "unionspdk__nvme__feat__number__of__queues.html":[13,0,106],
-"unionspdk__nvme__feat__number__of__queues.html#a301ea2cb4a4baaf1e57ba49740c74a6b":[13,0,106,0],
-"unionspdk__nvme__feat__number__of__queues.html#a333d356ec56d5cbbc18d680c17f8eb44":[13,0,106,2]
+"unionspdk__nvme__feat__number__of__queues.html#a301ea2cb4a4baaf1e57ba49740c74a6b":[13,0,106,0]
 };

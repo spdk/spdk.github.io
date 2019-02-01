@@ -138,8 +138,10 @@ $(document).ready(function(){initNavTree('changelog.html','');});
 <div class="title">Changelog </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h1><a class="anchor" id="changelog-v19-01"></a>
-v19.01: (Upcoming Release)</h1>
+<div class="textblock"><h1><a class="anchor" id="changelog-v19-04"></a>
+v19.04: (Upcoming Release)</h1>
+<h1><a class="anchor" id="changelog-v19-01"></a>
+v19.01:</h1>
 <h2>ocf bdev</h2>
 <p>New virtual bdev module based on <a href="https://open-cas.github.io/">Open CAS Framework</a> has been added. This module allows for the use of one bdev to act as a high performance cache in front of another bdev. Please see <a href="https://spdk.io/doc/bdev.html#bdev_config_cas">documentation</a> for more details. Only write through mode is currently supported and this feature is considered experimental.</p>
 <h2>event framework</h2>
@@ -205,6 +207,7 @@ v19.01: (Upcoming Release)</h1>
 <h2>ftl</h2>
 <p>EXPERIMENTAL: Added basic flash translation layer module allowing for using Open Channel SSDs as block devices. The module is split into the library (located in lib/ftl) and bdev_ftl (lib/bdev/ftl). See the <a href="https://spdk.io/doc/ftl.html">documentation</a> for more details.</p>
 <h2>vhost</h2>
+<p>A security vulnerability has been identified and fixed in the SPDK vhost target. A malicious vhost client (i.e. virtual machine) could carefully construct a circular descriptor chain which would result in a partial denial of service in the SPDK vhost target. These types of descriptor chains are now properly detected by the vhost target. All SPDK vhost users serving untrusted vhost clients are strongly recommended to upgrade. (Reported by Dima Stepanov and Evgeny Yakovlev.)</p>
 <p>Vhost SCSI and Vhost Block devices can now accept multiple connections on the same socket file. Each connection (internally called a vhost session) will have access to the same storage, but will use different virtqueues, different features and possibly different memory.</p>
 <h2>vhost scsi</h2>
 <p>SCSI target hotremove can now be performed even without the VIRTIO_SCSI_F_HOTPLUG feature negotiated. Regardless of VIRTIO_SCSI_F_HOTPLUG support, the hotremoval will be still reported through SCSI sense codes.</p>

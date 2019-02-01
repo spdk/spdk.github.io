@@ -1,5 +1,6 @@
 var NAVTREEINDEX4 =
 {
+"jsonrpc.html#jsonrpc_error_message":[3,7,0,0],
 "jsonrpc.html#jsonrpc_invalid_params":[3,7,0,0,1],
 "jsonrpc.html#jsonrpc_overview":[3,7,0],
 "jsonrpc.html#jsonrpc_parser_error":[3,7,0,0,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX4 =
 "net_8h.html#af110dcf710bf13d7e302002606e842ad":[14,0,32,10],
 "net_8h.html#af43d41aa26eb866db7cdb63b69eb7bb5":[14,0,32,4],
 "nvme-cli.html":[8,0],
-"nvme.html":[7,0],
-"nvme.html#nvme_design":[7,0,4]
+"nvme.html":[7,0]
 };
