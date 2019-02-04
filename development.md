@@ -159,6 +159,10 @@ what the commit does in the title followed by a short paragraph providing contex
 being solved, how was it discovered and how this patch solves the problem.  See [Continuous Integration](#integration) for the special case of a
 Request For Comments (RFC) type of patch.
 
+* The first line of your commit message should be "component: short description of patch"
+
+* If your commit fixes a GitHub issue, please include "Fixes #issue number" on a separate line so that github can link the two.
+
 Development on SPDK is all done based on the `master` branch, so start by making sure you have the latest. The below
 assumes `origin` is pointed at GerritHub.
 
