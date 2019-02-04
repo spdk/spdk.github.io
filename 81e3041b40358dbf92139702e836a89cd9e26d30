@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "0b335b1e_daac6d6e",
+        "filename": "development.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 162,
+      "author": {
+        "id": 1011222
+      },
+      "writtenOn": "2019-02-04T23:01:12Z",
+      "side": 1,
+      "message": "shoudld \u003d\u003e should\n\nAlso mention there should be a blank line between the first line and the rest of the commit message.",
+      "revId": "81e3041b40358dbf92139702e836a89cd9e26d30",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "beb43d6e_bf9ca221",
+        "filename": "development.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 164,
+      "author": {
+        "id": 1011222
+      },
+      "writtenOn": "2019-02-04T23:01:12Z",
+      "side": 1,
+      "message": "GitHub (both places) - we pretty consistently capitalize it like this in the rest of the repository (when it\u0027s not part of a URL).",
+      "revId": "81e3041b40358dbf92139702e836a89cd9e26d30",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    }
+  ]
+}
