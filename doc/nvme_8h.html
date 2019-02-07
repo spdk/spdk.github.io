@@ -278,6 +278,9 @@ Functions</h2></td></tr>
 <tr class="memitem:aacf238fdce21d10c923a384e18b013dd"><td class="memItemLeft" align="right" valign="top">union <a class="el" href="unionspdk__nvme__vs__register.html">spdk_nvme_vs_register</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#aacf238fdce21d10c923a384e18b013dd">spdk_nvme_ctrlr_get_regs_vs</a> (struct spdk_nvme_ctrlr *ctrlr)</td></tr>
 <tr class="memdesc:aacf238fdce21d10c923a384e18b013dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the NVMe controller VS (Version) register.  <a href="#aacf238fdce21d10c923a384e18b013dd">More...</a><br /></td></tr>
 <tr class="separator:aacf238fdce21d10c923a384e18b013dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a260b335960b9d81ac1a2601b003b99cd"><td class="memItemLeft" align="right" valign="top">union <a class="el" href="unionspdk__nvme__cmbsz__register.html">spdk_nvme_cmbsz_register</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a260b335960b9d81ac1a2601b003b99cd">spdk_nvme_ctrlr_get_regs_cmbsz</a> (struct spdk_nvme_ctrlr *ctrlr)</td></tr>
+<tr class="memdesc:a260b335960b9d81ac1a2601b003b99cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the NVMe controller CMBSZ (Controller Memory Buffer Size) register.  <a href="#a260b335960b9d81ac1a2601b003b99cd">More...</a><br /></td></tr>
+<tr class="separator:a260b335960b9d81ac1a2601b003b99cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a02b18deae44682a51177e8a4193af602"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a02b18deae44682a51177e8a4193af602">spdk_nvme_ctrlr_get_num_ns</a> (struct spdk_nvme_ctrlr *ctrlr)</td></tr>
 <tr class="memdesc:a02b18deae44682a51177e8a4193af602"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the number of namespaces for the given NVMe controller.  <a href="#a02b18deae44682a51177e8a4193af602">More...</a><br /></td></tr>
 <tr class="separator:a02b18deae44682a51177e8a4193af602"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -2205,6 +2208,33 @@ int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_retry_co
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the NVMe controller CAP (Capabilities) register. </dd></dl>
+
+</div>
+</div>
+<a id="a260b335960b9d81ac1a2601b003b99cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a260b335960b9d81ac1a2601b003b99cd">&#9670;&nbsp;</a></span>spdk_nvme_ctrlr_get_regs_cmbsz()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">union <a class="el" href="unionspdk__nvme__cmbsz__register.html">spdk_nvme_cmbsz_register</a> spdk_nvme_ctrlr_get_regs_cmbsz </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_nvme_ctrlr *&#160;</td>
+          <td class="paramname"><em>ctrlr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the NVMe controller CMBSZ (Controller Memory Buffer Size) register. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ctrlr</td><td>Opaque handle to NVMe controller.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the NVMe controller CMBSZ (Controller Memory Buffer Size) register. </dd></dl>
 
 </div>
 </div>

@@ -219,12 +219,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vhos
 <tr class="memitem:a549f9903be61ca447578b8bacf9eea81"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vhost_8h.html#a549f9903be61ca447578b8bacf9eea81">spdk_vhost_blk_get_dev</a> (struct spdk_vhost_dev *ctrlr)</td></tr>
 <tr class="memdesc:a549f9903be61ca447578b8bacf9eea81"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get underlying SPDK bdev from vhost blk device.  <a href="#a549f9903be61ca447578b8bacf9eea81">More...</a><br /></td></tr>
 <tr class="separator:a549f9903be61ca447578b8bacf9eea81"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a44001761e6a888ef1fb0475c4501497c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vhost_8h.html#a44001761e6a888ef1fb0475c4501497c">spdk_vhost_call_external_event</a> (const char *vdev_name, <a class="el" href="vhost_8h.html#ac2c4b62eaf6503e5f5e520394f9f9fe1">spdk_vhost_event_fn</a> fn, void *arg)</td></tr>
-<tr class="memdesc:a44001761e6a888ef1fb0475c4501497c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call function on reactor of given vhost device.  <a href="#a44001761e6a888ef1fb0475c4501497c">More...</a><br /></td></tr>
-<tr class="separator:a44001761e6a888ef1fb0475c4501497c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a041d593f592b76683c6a5f9f5efbc254"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vhost_8h.html#a041d593f592b76683c6a5f9f5efbc254">spdk_vhost_call_external_event_foreach</a> (<a class="el" href="vhost_8h.html#ac2c4b62eaf6503e5f5e520394f9f9fe1">spdk_vhost_event_fn</a> fn, void *arg)</td></tr>
-<tr class="memdesc:a041d593f592b76683c6a5f9f5efbc254"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call function for each available vhost device on it's reactor.  <a href="#a041d593f592b76683c6a5f9f5efbc254">More...</a><br /></td></tr>
-<tr class="separator:a041d593f592b76683c6a5f9f5efbc254"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>SPDK vhost. </p>
@@ -333,91 +327,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vhos
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>SPDK bdev associated with given vdev. </dd></dl>
-
-</div>
-</div>
-<a id="a44001761e6a888ef1fb0475c4501497c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a44001761e6a888ef1fb0475c4501497c">&#9670;&nbsp;</a></span>spdk_vhost_call_external_event()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void spdk_vhost_call_external_event </td>
-          <td>(</td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>vdev_name</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="vhost_8h.html#ac2c4b62eaf6503e5f5e520394f9f9fe1">spdk_vhost_event_fn</a>&#160;</td>
-          <td class="paramname"><em>fn</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>arg</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Call function on reactor of given vhost device. </p>
-<p>If device is not in use, the event will be called right away on the caller's thread.</p>
-<p>This function is thread safe.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">vdev_name</td><td>name of the vhost device to run this event on. </td></tr>
-    <tr><td class="paramname">fn</td><td>function to be called. The first parameter of callback function is either actual spdk_vhost_dev pointer or NULL in case vdev with given name doesn't exist. The second param is user provided argument <em>arg</em>. </td></tr>
-    <tr><td class="paramname">arg</td><td>parameter to be passed to <em>fn</em>. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a041d593f592b76683c6a5f9f5efbc254"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a041d593f592b76683c6a5f9f5efbc254">&#9670;&nbsp;</a></span>spdk_vhost_call_external_event_foreach()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void spdk_vhost_call_external_event_foreach </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="vhost_8h.html#ac2c4b62eaf6503e5f5e520394f9f9fe1">spdk_vhost_event_fn</a>&#160;</td>
-          <td class="paramname"><em>fn</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>arg</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Call function for each available vhost device on it's reactor. </p>
-<p>This will call given function in a chain, meaning that each callback will be called after the previous one has finished. After given function has been called for all vdevs, it will be called once again with first param - vhost device- set to NULL.</p>
-<p>This function is thread safe.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">fn</td><td>function to be called for each vdev. The first param will be either vdev pointer or NULL. The second param is user provided argument <em>arg</em>. </td></tr>
-    <tr><td class="paramname">arg</td><td>parameter to be passed to <em>fn</em>. </td></tr>
-  </table>
-  </dd>
-</dl>
 
 </div>
 </div>

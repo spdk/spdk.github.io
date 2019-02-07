@@ -1,5 +1,6 @@
 var NAVTREEINDEX8 =
 {
+"nvmf__spec_8h.html#a2c1b427432012041770d5ec160a036aa":[14,0,39,95],
 "nvmf__spec_8h.html#a2c5c5e961722be8a83adadd11afd1b7a":[14,0,39,90],
 "nvmf__spec_8h.html#a308771d3650c49ec0f07ac46f8d89b79":[14,0,39,84],
 "nvmf__spec_8h.html#a371d8e6b4fc34313868d63c5b5b55329":[14,0,39,36],
@@ -181,10 +182,11 @@ var NAVTREEINDEX8 =
 "pci__ids_8h.html#afabafbc73837c05e98195162e2137c89":[14,0,40,2],
 "pci__ids_8h.html#afb10bccb9ac44d018e8ed6c9110f5da7":[14,0,40,46],
 "peer_2_peer.html":[6,0],
-"peer_2_peer.html#p2p_cmb_copy":[6,0,3],
-"peer_2_peer.html#p2p_issues":[6,0,4],
+"peer_2_peer.html#p2p_cmb_copy":[6,0,4],
+"peer_2_peer.html#p2p_issues":[6,0,5],
 "peer_2_peer.html#p2p_nvme_api":[6,0,2],
 "peer_2_peer.html#p2p_overview":[6,0,1],
+"peer_2_peer.html#p2p_support":[6,0,3],
 "peer_2_peer.html#p2p_toc":[6,0,0],
 "performance_reports.html":[10],
 "porting.html":[2,5],
@@ -247,7 +249,5 @@ var NAVTREEINDEX8 =
 "scsi_8h.html#ab0fc6066d5a615661c85be595a276ed9":[14,0,42,53],
 "scsi_8h.html#ab5c7ed714025d329dc2a69fad041158f":[14,0,42,28],
 "scsi_8h.html#ab98745bdfde673aca36a6f5e140ec849":[14,0,42,31],
-"scsi_8h.html#abbacc6adf74a9790630dedda8b97940e":[14,0,42,22],
-"scsi_8h.html#ac162173acec41789048b984ad6c2e840":[14,0,42,12],
-"scsi_8h.html#accba3d0cbde94aca1cc9171f1ee6a9d4":[14,0,42,10]
+"scsi_8h.html#abbacc6adf74a9790630dedda8b97940e":[14,0,42,22]
 };
