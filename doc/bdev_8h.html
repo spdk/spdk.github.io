@@ -315,6 +315,21 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_set_opts</b>
 <tr class="memitem:add8565cdbf3d57697b67202b869a7beb"><td class="memItemLeft" align="right" valign="top">const struct <a class="el" href="structspdk__uuid.html">spdk_uuid</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev_8h.html#add8565cdbf3d57697b67202b869a7beb">spdk_bdev_get_uuid</a> (const struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *bdev)</td></tr>
 <tr class="memdesc:add8565cdbf3d57697b67202b869a7beb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a bdev's UUID.  <a href="#add8565cdbf3d57697b67202b869a7beb">More...</a><br /></td></tr>
 <tr class="separator:add8565cdbf3d57697b67202b869a7beb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc3537d0315100b24da6acc95929e849"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev_8h.html#abc3537d0315100b24da6acc95929e849">spdk_bdev_get_md_size</a> (const struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *bdev)</td></tr>
+<tr class="memdesc:abc3537d0315100b24da6acc95929e849"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get block device metadata size.  <a href="#abc3537d0315100b24da6acc95929e849">More...</a><br /></td></tr>
+<tr class="separator:abc3537d0315100b24da6acc95929e849"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa02f628c6ef7cae08b8b623b4800c74d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev_8h.html#aa02f628c6ef7cae08b8b623b4800c74d">spdk_bdev_is_md_interleaved</a> (const struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *bdev)</td></tr>
+<tr class="memdesc:aa02f628c6ef7cae08b8b623b4800c74d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Query whether metadata is interleaved with block data or separated with block data.  <a href="#aa02f628c6ef7cae08b8b623b4800c74d">More...</a><br /></td></tr>
+<tr class="separator:aa02f628c6ef7cae08b8b623b4800c74d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac94b5900766ec42da5fc3658a5749858"><td class="memItemLeft" align="right" valign="top">enum spdk_dif_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev_8h.html#ac94b5900766ec42da5fc3658a5749858">spdk_bdev_get_dif_type</a> (const struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *bdev)</td></tr>
+<tr class="memdesc:ac94b5900766ec42da5fc3658a5749858"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get DIF type of the block device.  <a href="#ac94b5900766ec42da5fc3658a5749858">More...</a><br /></td></tr>
+<tr class="separator:ac94b5900766ec42da5fc3658a5749858"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e43a19692e14e5e46b3315e4cf0bc1d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev_8h.html#a4e43a19692e14e5e46b3315e4cf0bc1d">spdk_bdev_is_dif_head_of_md</a> (const struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *bdev)</td></tr>
+<tr class="memdesc:a4e43a19692e14e5e46b3315e4cf0bc1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check whether DIF is set in the first 8 bytes or the last 8 bytes of metadata.  <a href="#a4e43a19692e14e5e46b3315e4cf0bc1d">More...</a><br /></td></tr>
+<tr class="separator:a4e43a19692e14e5e46b3315e4cf0bc1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a147389751cd351d30703e28f522e9610"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev_8h.html#a147389751cd351d30703e28f522e9610">spdk_bdev_is_dif_check_enabled</a> (const struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *bdev, enum spdk_dif_check_type check_type)</td></tr>
+<tr class="memdesc:a147389751cd351d30703e28f522e9610"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check whether the DIF check type is enabled.  <a href="#a147389751cd351d30703e28f522e9610">More...</a><br /></td></tr>
+<tr class="separator:a147389751cd351d30703e28f522e9610"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a471f32e8948203f7aaf320396a1ae7c9"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev_8h.html#a471f32e8948203f7aaf320396a1ae7c9">spdk_bdev_get_qd</a> (const struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *bdev)</td></tr>
 <tr class="memdesc:a471f32e8948203f7aaf320396a1ae7c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the most recently measured queue depth from a bdev.  <a href="#a471f32e8948203f7aaf320396a1ae7c9">More...</a><br /></td></tr>
 <tr class="separator:a471f32e8948203f7aaf320396a1ae7c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -915,6 +930,33 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_set_opts</b>
 
 </div>
 </div>
+<a id="ac94b5900766ec42da5fc3658a5749858"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac94b5900766ec42da5fc3658a5749858">&#9670;&nbsp;</a></span>spdk_bdev_get_dif_type()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum spdk_dif_type spdk_bdev_get_dif_type </td>
+          <td>(</td>
+          <td class="paramtype">const struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *&#160;</td>
+          <td class="paramname"><em>bdev</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get DIF type of the block device. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bdev</td><td>Block device to query. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>DIF type of the block device. </dd></dl>
+
+</div>
+</div>
 <a id="ab5bb9e746b030d7c4c89cbcf60076c7e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab5bb9e746b030d7c4c89cbcf60076c7e">&#9670;&nbsp;</a></span>spdk_bdev_get_io_channel()</h2>
 
@@ -1013,6 +1055,33 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_set_opts</b>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The io time for this device in microseconds. </dd></dl>
+
+</div>
+</div>
+<a id="abc3537d0315100b24da6acc95929e849"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abc3537d0315100b24da6acc95929e849">&#9670;&nbsp;</a></span>spdk_bdev_get_md_size()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t spdk_bdev_get_md_size </td>
+          <td>(</td>
+          <td class="paramtype">const struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *&#160;</td>
+          <td class="paramname"><em>bdev</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get block device metadata size. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bdev</td><td>Block device to query. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Size of metadata for this bdev in bytes. </dd></dl>
 
 </div>
 </div>
@@ -1652,6 +1721,100 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_set_opts</b>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if support, false otherwise. </dd></dl>
+
+</div>
+</div>
+<a id="a147389751cd351d30703e28f522e9610"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a147389751cd351d30703e28f522e9610">&#9670;&nbsp;</a></span>spdk_bdev_is_dif_check_enabled()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool spdk_bdev_is_dif_check_enabled </td>
+          <td>(</td>
+          <td class="paramtype">const struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *&#160;</td>
+          <td class="paramname"><em>bdev</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">enum spdk_dif_check_type&#160;</td>
+          <td class="paramname"><em>check_type</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Check whether the DIF check type is enabled. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bdev</td><td>Block device to query. </td></tr>
+    <tr><td class="paramname">check_type</td><td>The specific DIF check type. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if enabled, false otherwise. </dd></dl>
+
+</div>
+</div>
+<a id="a4e43a19692e14e5e46b3315e4cf0bc1d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e43a19692e14e5e46b3315e4cf0bc1d">&#9670;&nbsp;</a></span>spdk_bdev_is_dif_head_of_md()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool spdk_bdev_is_dif_head_of_md </td>
+          <td>(</td>
+          <td class="paramtype">const struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *&#160;</td>
+          <td class="paramname"><em>bdev</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Check whether DIF is set in the first 8 bytes or the last 8 bytes of metadata. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bdev</td><td>Block device to query. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if DIF is set in the first 8 bytes of metadata, or false if DIF is set in the last 8 bytes of metadata.</dd></dl>
+<p>Note that this function is valid only if DIF type is not SPDK_DIF_DISABLE. </p>
+
+</div>
+</div>
+<a id="aa02f628c6ef7cae08b8b623b4800c74d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa02f628c6ef7cae08b8b623b4800c74d">&#9670;&nbsp;</a></span>spdk_bdev_is_md_interleaved()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool spdk_bdev_is_md_interleaved </td>
+          <td>(</td>
+          <td class="paramtype">const struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *&#160;</td>
+          <td class="paramname"><em>bdev</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Query whether metadata is interleaved with block data or separated with block data. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bdev</td><td>Block device to query. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if metadata is interleaved with block data or false if metadata is separated with block data.</dd></dl>
+<p>Note this function is valid only if there is metadata. </p>
 
 </div>
 </div>

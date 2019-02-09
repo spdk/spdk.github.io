@@ -1,5 +1,10 @@
 var NAVTREEINDEX4 =
 {
+"jsonrpc.html#jsonrpc_components_bdev":[3,7,2],
+"jsonrpc.html#jsonrpc_components_iscsi_tgt":[3,7,3],
+"jsonrpc.html#jsonrpc_components_lvol":[3,7,6],
+"jsonrpc.html#jsonrpc_components_nvmf_tgt":[3,7,4],
+"jsonrpc.html#jsonrpc_components_vhost_tgt":[3,7,5],
 "jsonrpc.html#jsonrpc_error_message":[3,7,0,0],
 "jsonrpc.html#jsonrpc_invalid_params":[3,7,0,0,1],
 "jsonrpc.html#jsonrpc_overview":[3,7,0],
@@ -244,10 +249,5 @@ var NAVTREEINDEX4 =
 "net_8h.html#ab75ca6bf8726218208b00ef552122031":[14,0,32,6],
 "net_8h.html#abc3295d98c59921fecdef4de0e944afd":[14,0,32,9],
 "net_8h.html#ac3e34350c22f49e14e598551a0a122f9":[14,0,32,7],
-"net_8h.html#ac4a70159fdffa7bd9100c92b602b2608":[14,0,32,3],
-"net_8h.html#ac7c753b6d6c747f51ca8bf26a7a7d63a":[14,0,32,8],
-"net_8h.html#af110dcf710bf13d7e302002606e842ad":[14,0,32,10],
-"net_8h.html#af43d41aa26eb866db7cdb63b69eb7bb5":[14,0,32,4],
-"nvme-cli.html":[8,0],
-"nvme.html":[7,0]
+"net_8h.html#ac4a70159fdffa7bd9100c92b602b2608":[14,0,32,3]
 };

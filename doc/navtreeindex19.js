@@ -1,5 +1,15 @@
 var NAVTREEINDEX19 =
 {
+"structspdk__trace__register__fn.html#a3afb510e42a1289799babd284ea31cbc":[13,0,236,0],
+"structspdk__trace__register__fn.html#a8109be7fda1144908e5a3b67293ab5fb":[13,0,236,2],
+"structspdk__trace__register__fn.html#ab43c36349f9748fe3a0c45122e85a43b":[13,0,236,3],
+"structspdk__trace__tpoint.html":[13,0,237],
+"structspdk__trace__tpoint.html#a0f01e931e5212379d1720697cea4525f":[13,0,237,5],
+"structspdk__trace__tpoint.html#a317eccf6a1a97bcaa0fb21002fe174ce":[13,0,237,8],
+"structspdk__trace__tpoint.html#a36b0a929e3dc31f1a224ee53858cb04b":[13,0,237,1],
+"structspdk__trace__tpoint.html#a53a24483b23dd572596559998f21a58a":[13,0,237,0],
+"structspdk__trace__tpoint.html#a7b9c15e2c7b853f4764ea94dea4fc28b":[13,0,237,2],
+"structspdk__trace__tpoint.html#ab076ca5845f90898c78f9a64adac7237":[13,0,237,4],
 "structspdk__trace__tpoint.html#ab7fc63503e3111eaa02cec6270279903":[13,0,237,3],
 "structspdk__trace__tpoint.html#aded90243561887a0e36bb220d1339a73":[13,0,237,7],
 "structspdk__trace__tpoint.html#aed4bd94394bbec8df624cc329666b925":[13,0,237,6],
@@ -239,15 +249,5 @@ var NAVTREEINDEX19 =
 "unionspdk__nvme__feat__keep__alive__timer.html":[13,0,103],
 "unionspdk__nvme__feat__keep__alive__timer.html#a1295377c1ebb2b62c58d29e43047827e":[13,0,103,1],
 "unionspdk__nvme__feat__keep__alive__timer.html#a432fff2ec9840eff52bc47cacef1f5a2":[13,0,103,0],
-"unionspdk__nvme__feat__keep__alive__timer.html#ac10f9a57ae75a0b0436117dcc6dbb913":[13,0,103,2],
-"unionspdk__nvme__feat__lba__range__type.html":[13,0,104],
-"unionspdk__nvme__feat__lba__range__type.html#a5bbb0f8586a8cea3f63e8c9c27f16a25":[13,0,104,0],
-"unionspdk__nvme__feat__lba__range__type.html#a8b36726d65af55a7c237962ea9065911":[13,0,104,2],
-"unionspdk__nvme__feat__lba__range__type.html#a9fcf5c790767d292adf15b5f05ab40cf":[13,0,104,1],
-"unionspdk__nvme__feat__lba__range__type.html#afd6c62577e98b12c7c497e003228621c":[13,0,104,3],
-"unionspdk__nvme__feat__non__operational__power__state__config.html":[13,0,105],
-"unionspdk__nvme__feat__non__operational__power__state__config.html#a1b89eeb1f322ef357d18aaad35517170":[13,0,105,3],
-"unionspdk__nvme__feat__non__operational__power__state__config.html#a29ca4fdf53d5699ee3008af19e639042":[13,0,105,2],
-"unionspdk__nvme__feat__non__operational__power__state__config.html#a8f512d6ffa8611e38141e169898efb4b":[13,0,105,1],
-"unionspdk__nvme__feat__non__operational__power__state__config.html#af22c5aa780ded9ba087ba1fa50c460d7":[13,0,105,0]
+"unionspdk__nvme__feat__keep__alive__timer.html#ac10f9a57ae75a0b0436117dcc6dbb913":[13,0,103,2]
 };

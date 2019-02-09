@@ -9,6 +9,8 @@ var searchData=
   ['mc',['mc',['../structspdk__nvme__ns__data.html#a89e52cdb750bfe08a4c3c2eb61196f61',1,'spdk_nvme_ns_data']]],
   ['mccap',['mccap',['../structspdk__ocssd__geometry__data.html#a9a5195482505dd4c8d1287c2262bbdb9',1,'spdk_ocssd_geometry_data']]],
   ['md_5fend',['md_end',['../structspdk__nvme__ns__data.html#ab511e295c151b4d17911e474711168b9',1,'spdk_nvme_ns_data']]],
+  ['md_5finterleave',['md_interleave',['../structspdk__bdev.html#a4e68d5fa768ba5d3c8af32e68e1a992c',1,'spdk_bdev']]],
+  ['md_5flen',['md_len',['../structspdk__bdev.html#ab53361e758d7ebe3edec7598f86fa576',1,'spdk_bdev']]],
   ['md_5fsize',['md_size',['../structspdk__dif__ctx.html#a70bae2b0c71c14a91163f89d4e215802',1,'spdk_dif_ctx']]],
   ['md_5fstart',['md_start',['../structspdk__nvme__ns__data.html#a1295065f7156b27aeb749b1ef5c0cdc7',1,'spdk_nvme_ns_data']]],
   ['mdts',['mdts',['../structspdk__nvme__ctrlr__data.html#aad0681365b9524dc8a1dca2d48a6c046',1,'spdk_nvme_ctrlr_data']]],

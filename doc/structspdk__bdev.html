@@ -207,6 +207,23 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 <tr class="memitem:a5cc1248944325a12c4cadaa3856f573a"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structspdk__uuid.html">spdk_uuid</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev.html#a5cc1248944325a12c4cadaa3856f573a">uuid</a></td></tr>
 <tr class="memdesc:a5cc1248944325a12c4cadaa3856f573a"><td class="mdescLeft">&#160;</td><td class="mdescRight">UUID for this bdev.  <a href="#a5cc1248944325a12c4cadaa3856f573a">More...</a><br /></td></tr>
 <tr class="separator:a5cc1248944325a12c4cadaa3856f573a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab53361e758d7ebe3edec7598f86fa576"><td class="memItemLeft" align="right" valign="top"><a id="ab53361e758d7ebe3edec7598f86fa576"></a>
+uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev.html#ab53361e758d7ebe3edec7598f86fa576">md_len</a></td></tr>
+<tr class="memdesc:ab53361e758d7ebe3edec7598f86fa576"><td class="mdescLeft">&#160;</td><td class="mdescRight">Size in bytes of a metadata for the backend. <br /></td></tr>
+<tr class="separator:ab53361e758d7ebe3edec7598f86fa576"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e68d5fa768ba5d3c8af32e68e1a992c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev.html#a4e68d5fa768ba5d3c8af32e68e1a992c">md_interleave</a></td></tr>
+<tr class="memdesc:a4e68d5fa768ba5d3c8af32e68e1a992c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specify metadata location and set to true if metadata is interleaved with block data or false if metadata is separated with block data.  <a href="#a4e68d5fa768ba5d3c8af32e68e1a992c">More...</a><br /></td></tr>
+<tr class="separator:a4e68d5fa768ba5d3c8af32e68e1a992c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abcf4e6c5be82c271a681db4b9b2fd427"><td class="memItemLeft" align="right" valign="top">enum spdk_dif_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev.html#abcf4e6c5be82c271a681db4b9b2fd427">dif_type</a></td></tr>
+<tr class="memdesc:abcf4e6c5be82c271a681db4b9b2fd427"><td class="mdescLeft">&#160;</td><td class="mdescRight">DIF type for this bdev.  <a href="#abcf4e6c5be82c271a681db4b9b2fd427">More...</a><br /></td></tr>
+<tr class="separator:abcf4e6c5be82c271a681db4b9b2fd427"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a6b7f9bd595b3b800f35cc63efa3aab"><td class="memItemLeft" align="right" valign="top"><a id="a1a6b7f9bd595b3b800f35cc63efa3aab"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>dif_is_head_of_md</b></td></tr>
+<tr class="separator:a1a6b7f9bd595b3b800f35cc63efa3aab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1872fa3d723b5bef069c0681ec3bcfd6"><td class="memItemLeft" align="right" valign="top"><a id="a1872fa3d723b5bef069c0681ec3bcfd6"></a>
+uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev.html#a1872fa3d723b5bef069c0681ec3bcfd6">dif_check_flags</a></td></tr>
+<tr class="memdesc:a1872fa3d723b5bef069c0681ec3bcfd6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specify whether each DIF check type is enabled. <br /></td></tr>
+<tr class="separator:a1872fa3d723b5bef069c0681ec3bcfd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afb6058d0394545714377a60c34682fa0"><td class="memItemLeft" align="right" valign="top"><a id="afb6058d0394545714377a60c34682fa0"></a>
 struct <a class="el" href="structspdk__bdev__module.html">spdk_bdev_module</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev.html#afb6058d0394545714377a60c34682fa0">module</a></td></tr>
 <tr class="memdesc:afb6058d0394545714377a60c34682fa0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to the bdev module that registered this bdev. <br /></td></tr>
@@ -251,6 +268,40 @@ struct <a class="el" href="structspdk__bdev_1_1____bdev__internal__fields.html">
 </div>
 </div>
 <h2 class="groupheader">Field Documentation</h2>
+<a id="abcf4e6c5be82c271a681db4b9b2fd427"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abcf4e6c5be82c271a681db4b9b2fd427">&#9670;&nbsp;</a></span>dif_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum spdk_dif_type spdk_bdev::dif_type</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>DIF type for this bdev. </p>
+<p>Note that this field is valid only if there is metadata. </p>
+
+</div>
+</div>
+<a id="a4e68d5fa768ba5d3c8af32e68e1a992c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e68d5fa768ba5d3c8af32e68e1a992c">&#9670;&nbsp;</a></span>md_interleave</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool spdk_bdev::md_interleave</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Specify metadata location and set to true if metadata is interleaved with block data or false if metadata is separated with block data. </p>
+<p>Note that this field is valid only if there is metadata. </p>
+
+</div>
+</div>
 <a id="ab17e7679c64536f704ed4fe41555a70a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab17e7679c64536f704ed4fe41555a70a">&#9670;&nbsp;</a></span>name</h2>
 

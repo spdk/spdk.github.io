@@ -1,5 +1,15 @@
 var NAVTREEINDEX13 =
 {
+"structspdk__ftl__dev__init__opts.html#a996b6e552bbb51f817e6505c08ac4ce1":[13,0,48,4],
+"structspdk__ftl__limit.html":[13,0,49],
+"structspdk__ftl__limit.html#a1b00f356c3b2c6d8bae3e3e7d1bef024":[13,0,49,1],
+"structspdk__ftl__limit.html#ab498061ee63395f83c45d28455ab058d":[13,0,49,0],
+"structspdk__ftl__punit__range.html":[13,0,50],
+"structspdk__ftl__punit__range.html#a8bfef5dec72d9c82de1b0725d97e77b1":[13,0,50,1],
+"structspdk__ftl__punit__range.html#a8c3117aa91909a22dc28c8ebcd1292b9":[13,0,50,0],
+"structspdk__gpt__guid.html":[13,0,51],
+"structspdk__gpt__guid.html#a3858a37519f6fa4adc3548f0e55da77d":[13,0,51,0],
+"structspdk__gpt__header.html":[13,0,52],
 "structspdk__gpt__header.html#a02583e22705d6cb51f5e51c8ce89c6d9":[13,0,52,8],
 "structspdk__gpt__header.html#a05faf4ea492f64dd771d5e88a3f9df11":[13,0,52,0],
 "structspdk__gpt__header.html#a294af705aee4d9a247eafcf4a3e42149":[13,0,52,5],
@@ -239,15 +249,5 @@ var NAVTREEINDEX13 =
 "structspdk__mbr.html#a1f428e8adb3b27f369ff7342e0c374c6":[13,0,71,2],
 "structspdk__mbr.html#a2e7a4cdf62da38317c42b50c219577cf":[13,0,71,3],
 "structspdk__mbr.html#a4e42d4804fd6cc5f0fb9002be7d68467":[13,0,71,4],
-"structspdk__mbr.html#a7eb8e86e3ef12057d356582b06269473":[13,0,71,0],
-"structspdk__mbr.html#a8c0408ccc974678c65b123d0a460f75b":[13,0,71,1],
-"structspdk__mbr__chs.html":[13,0,72],
-"structspdk__mbr__chs.html#a0851c4b7be4d74e08fccee220d24c5b2":[13,0,72,0],
-"structspdk__mbr__chs.html#a86e4f966ca21e57a438f4d2d35ac1913":[13,0,72,1],
-"structspdk__mbr__chs.html#af849ba65f48f8282305c95fec4b250d7":[13,0,72,2],
-"structspdk__mbr__partition__entry.html":[13,0,73],
-"structspdk__mbr__partition__entry.html#a8bba2ff203f01fe4c2cb64faa66777ba":[13,0,73,4],
-"structspdk__mbr__partition__entry.html#ab56523303a39558a9ffa23ff6dd1ed23":[13,0,73,0],
-"structspdk__mbr__partition__entry.html#ab74ba691339bc32ed6e03af6f75927a1":[13,0,73,2],
-"structspdk__mbr__partition__entry.html#ab96ad021e0366090b99b89ef32784fe3":[13,0,73,1]
+"structspdk__mbr.html#a7eb8e86e3ef12057d356582b06269473":[13,0,71,0]
 };

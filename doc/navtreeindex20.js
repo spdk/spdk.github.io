@@ -1,5 +1,15 @@
 var NAVTREEINDEX20 =
 {
+"unionspdk__nvme__feat__lba__range__type.html":[13,0,104],
+"unionspdk__nvme__feat__lba__range__type.html#a5bbb0f8586a8cea3f63e8c9c27f16a25":[13,0,104,0],
+"unionspdk__nvme__feat__lba__range__type.html#a8b36726d65af55a7c237962ea9065911":[13,0,104,2],
+"unionspdk__nvme__feat__lba__range__type.html#a9fcf5c790767d292adf15b5f05ab40cf":[13,0,104,1],
+"unionspdk__nvme__feat__lba__range__type.html#afd6c62577e98b12c7c497e003228621c":[13,0,104,3],
+"unionspdk__nvme__feat__non__operational__power__state__config.html":[13,0,105],
+"unionspdk__nvme__feat__non__operational__power__state__config.html#a1b89eeb1f322ef357d18aaad35517170":[13,0,105,3],
+"unionspdk__nvme__feat__non__operational__power__state__config.html#a29ca4fdf53d5699ee3008af19e639042":[13,0,105,2],
+"unionspdk__nvme__feat__non__operational__power__state__config.html#a8f512d6ffa8611e38141e169898efb4b":[13,0,105,1],
+"unionspdk__nvme__feat__non__operational__power__state__config.html#af22c5aa780ded9ba087ba1fa50c460d7":[13,0,105,0],
 "unionspdk__nvme__feat__number__of__queues.html":[13,0,106],
 "unionspdk__nvme__feat__number__of__queues.html#a301ea2cb4a4baaf1e57ba49740c74a6b":[13,0,106,0],
 "unionspdk__nvme__feat__number__of__queues.html#a333d356ec56d5cbbc18d680c17f8eb44":[13,0,106,2],
