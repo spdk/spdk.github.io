@@ -251,6 +251,12 @@ Functions</h2></td></tr>
 <tr class="memitem:a9878deb91f677a9a9583342f07dcef41"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a9878deb91f677a9a9583342f07dcef41">spdk_nvme_transport_id_compare</a> (const struct <a class="el" href="structspdk__nvme__transport__id.html">spdk_nvme_transport_id</a> *trid1, const struct <a class="el" href="structspdk__nvme__transport__id.html">spdk_nvme_transport_id</a> *trid2)</td></tr>
 <tr class="memdesc:a9878deb91f677a9a9583342f07dcef41"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compare two transport IDs.  <a href="#a9878deb91f677a9a9583342f07dcef41">More...</a><br /></td></tr>
 <tr class="separator:a9878deb91f677a9a9583342f07dcef41"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f14ec05ce3af11f089a79d47739bd74"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a0f14ec05ce3af11f089a79d47739bd74">spdk_nvme_prchk_flags_parse</a> (uint32_t *prchk_flags, const char *str)</td></tr>
+<tr class="memdesc:a0f14ec05ce3af11f089a79d47739bd74"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parse the string representation of PI check settings (prchk:guard|reftag)  <a href="#a0f14ec05ce3af11f089a79d47739bd74">More...</a><br /></td></tr>
+<tr class="separator:a0f14ec05ce3af11f089a79d47739bd74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae125f35c7ab6fd2f5e63bfac804f25e6"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#ae125f35c7ab6fd2f5e63bfac804f25e6">spdk_nvme_prchk_flags_str</a> (uint32_t prchk_flags)</td></tr>
+<tr class="memdesc:ae125f35c7ab6fd2f5e63bfac804f25e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Look up the string representation of PI check settings (prchk:guard|reftag)  <a href="#ae125f35c7ab6fd2f5e63bfac804f25e6">More...</a><br /></td></tr>
+<tr class="separator:ae125f35c7ab6fd2f5e63bfac804f25e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab5735e7600f79c45871b3dc3adb292f2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#ab5735e7600f79c45871b3dc3adb292f2">spdk_nvme_transport_available</a> (enum <a class="el" href="nvme_8h.html#ae87a03c28984a2c0499d50ef5e9d0ece">spdk_nvme_transport_type</a> trtype)</td></tr>
 <tr class="memdesc:ab5735e7600f79c45871b3dc3adb292f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine whether the NVMe library can handle a specific NVMe over Fabrics transport type.  <a href="#ab5735e7600f79c45871b3dc3adb292f2">More...</a><br /></td></tr>
 <tr class="separator:ab5735e7600f79c45871b3dc3adb292f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -4864,6 +4870,71 @@ int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_retry_co
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if the namespace can support extended LBA when end-to-end data protection enabled, or false otherwise. </dd></dl>
+
+</div>
+</div>
+<a id="a0f14ec05ce3af11f089a79d47739bd74"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0f14ec05ce3af11f089a79d47739bd74">&#9670;&nbsp;</a></span>spdk_nvme_prchk_flags_parse()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_nvme_prchk_flags_parse </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t *&#160;</td>
+          <td class="paramname"><em>prchk_flags</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>str</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Parse the string representation of PI check settings (prchk:guard|reftag) </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">prchk_flags</td><td>Output PI check flags. </td></tr>
+    <tr><td class="paramname">str</td><td>Input string representation of PI check settings.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 if parsing was successful and prchk_flags is set, or negated errno values on failure. </dd></dl>
+
+</div>
+</div>
+<a id="ae125f35c7ab6fd2f5e63bfac804f25e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae125f35c7ab6fd2f5e63bfac804f25e6">&#9670;&nbsp;</a></span>spdk_nvme_prchk_flags_str()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* spdk_nvme_prchk_flags_str </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>prchk_flags</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Look up the string representation of PI check settings (prchk:guard|reftag) </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">prchk_flags</td><td>PI check flags to convert.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>static string constant describing PI check settings. If prchk_flags is 0, NULL is returned. </dd></dl>
 
 </div>
 </div>

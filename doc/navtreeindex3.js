@@ -1,8 +1,5 @@
 var NAVTREEINDEX3 =
 {
-"ioat_8h.html#a9e773693f3aadb3dc526810a2e387402":[14,0,22,3],
-"ioat_8h.html#a9e773693f3aadb3dc526810a2e387402a46fdc856e01e8551a6f59b20c2189bc0":[14,0,22,3,0],
-"ioat_8h.html#a9e773693f3aadb3dc526810a2e387402abb0266507ff9bbdfe64074015c7f6583":[14,0,22,3,1],
 "ioat_8h.html#ac1de22182996edecb435f9583665008d":[14,0,22,8],
 "ioat__spec_8h.html":[14,0,23],
 "ioat__spec_8h.html#a0a809ef6ee464f4eb92abfbbc73ded62":[14,0,23,19],
@@ -249,5 +246,8 @@ var NAVTREEINDEX3 =
 "json_8h.html#af58205394bbbfb6d05219e1c8b88023d":[14,0,25,53],
 "json_8h.html#afb39ef20750d537d2ceb7deb88a2d860":[14,0,25,54],
 "jsonrpc.html":[3,7],
-"jsonrpc.html#jsonrpc_components_app":[3,7,1]
+"jsonrpc.html#jsonrpc_components_app":[3,7,1],
+"jsonrpc.html#jsonrpc_components_bdev":[3,7,2],
+"jsonrpc.html#jsonrpc_components_iscsi_tgt":[3,7,3],
+"jsonrpc.html#jsonrpc_components_lvol":[3,7,6]
 };

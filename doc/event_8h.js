@@ -1,7 +1,6 @@
 var event_8h =
 [
     [ "spdk_app_opts", "structspdk__app__opts.html", "structspdk__app__opts" ],
-    [ "spdk_reactor_tsc_stats", "structspdk__reactor__tsc__stats.html", "structspdk__reactor__tsc__stats" ],
     [ "SPDK_APP_GETOPT_STRING", "event_8h.html#af0ae0584a4594f82b7c5294b4d4f6fe6", null ],
     [ "SPDK_DEFAULT_RPC_ADDR", "event_8h.html#ad6d27c63164846e87e44de2f39792024", null ],
     [ "spdk_app_parse_args_rvals_t", "event_8h.html#a1785f85b0668a4289be2cd98bea0f88c", null ],
@@ -27,6 +26,5 @@ var event_8h =
     [ "spdk_event_allocate", "event_8h.html#a885e8b94b71844c94f0b380afdfa0df9", null ],
     [ "spdk_event_call", "event_8h.html#af17b7963b6a6964e5eb18480193acedb", null ],
     [ "spdk_reactor_context_switch_monitor_enabled", "event_8h.html#a008187a6eceaba982ca2c1d452061931", null ],
-    [ "spdk_reactor_enable_context_switch_monitor", "event_8h.html#aaceb0151a765d4068be9d37cefe37914", null ],
-    [ "spdk_reactor_get_tsc_stats", "event_8h.html#a685665f6dd2127b8eb71cbc2e90bd35e", null ]
+    [ "spdk_reactor_enable_context_switch_monitor", "event_8h.html#aaceb0151a765d4068be9d37cefe37914", null ]
 ];

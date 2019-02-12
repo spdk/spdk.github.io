@@ -184,14 +184,8 @@ Macros</h2></td></tr>
 <tr class="memitem:a8db6bfb953294c571c83d5bc21835b31"><td class="memItemLeft" align="right" valign="top"><a id="a8db6bfb953294c571c83d5bc21835b31"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>BDEV_IO_NUM_CHILD_IOV</b>&#160;&#160;&#160;32</td></tr>
 <tr class="separator:a8db6bfb953294c571c83d5bc21835b31"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6ffb64b1babf4c8526970b1b1a52ff1a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_BDEV_MODULE_REGISTER</b>(_module)</td></tr>
-<tr class="separator:a6ffb64b1babf4c8526970b1b1a52ff1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab5d15f97738824b7818677a5dd8a6395"><td class="memItemLeft" align="right" valign="top"><a id="ab5d15f97738824b7818677a5dd8a6395"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_BDEV_MODULE_REGISTER_FN_NAME</b>(line)&#160;&#160;&#160;SPDK_BDEV_MODULE_REGISTER_FN_NAME_(line)</td></tr>
-<tr class="separator:ab5d15f97738824b7818677a5dd8a6395"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4c8e3bf83043135b7eac9565fd05149b"><td class="memItemLeft" align="right" valign="top"><a id="a4c8e3bf83043135b7eac9565fd05149b"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_BDEV_MODULE_REGISTER_FN_NAME_</b>(line)&#160;&#160;&#160;spdk_bdev_module_register_ ## line</td></tr>
-<tr class="separator:a4c8e3bf83043135b7eac9565fd05149b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0e282f580c2bdda343c0421892e9d2a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_BDEV_MODULE_REGISTER</b>(name,  module)</td></tr>
+<tr class="separator:af0e282f580c2bdda343c0421892e9d2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
@@ -350,8 +344,8 @@ typedef&#160;</td><td class="memItemRight" valign="bottom"><b>TAILQ_HEAD</b> (bd
 <div class="textblock"><p>Block Device Module Interface. </p>
 <p>For information on how to write a bdev module, see <a class="el" href="bdev_module.html">Writing a Custom Block Device Module</a>. </p>
 </div><h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="a6ffb64b1babf4c8526970b1b1a52ff1a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6ffb64b1babf4c8526970b1b1a52ff1a">&#9670;&nbsp;</a></span>SPDK_BDEV_MODULE_REGISTER</h2>
+<a id="af0e282f580c2bdda343c0421892e9d2a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af0e282f580c2bdda343c0421892e9d2a">&#9670;&nbsp;</a></span>SPDK_BDEV_MODULE_REGISTER</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -360,12 +354,22 @@ typedef&#160;</td><td class="memItemRight" valign="bottom"><b>TAILQ_HEAD</b> (bd
           <td class="memname">#define SPDK_BDEV_MODULE_REGISTER</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">_module</td><td>)</td>
+          <td class="paramname">name, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">module&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">__attribute__((constructor)) <span class="keyword">static</span> void                                                \</div><div class="line">        SPDK_BDEV_MODULE_REGISTER_FN_NAME(__LINE__)  (void)                                     \</div><div class="line">        {                                                                                       \</div><div class="line">            spdk_bdev_module_list_add(_module);                                                 \</div><div class="line">        }</div></div><!-- fragment -->
+<b>Value:</b><div class="fragment"><div class="line"><span class="keyword">static</span> <span class="keywordtype">void</span> __attribute__((constructor)) spdk_bdev_module_register_##name(<span class="keywordtype">void</span>) \</div><div class="line">{ \</div><div class="line">        spdk_bdev_module_list_add(module); \</div><div class="line">} \</div></div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>

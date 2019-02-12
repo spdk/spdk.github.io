@@ -153,8 +153,6 @@ Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__app__opts.html">spdk_app_opts</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Event framework initialization options.  <a href="structspdk__app__opts.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__reactor__tsc__stats.html">spdk_reactor_tsc_stats</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
@@ -237,9 +235,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="even
 <tr class="memitem:a008187a6eceaba982ca2c1d452061931"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="event_8h.html#a008187a6eceaba982ca2c1d452061931">spdk_reactor_context_switch_monitor_enabled</a> (void)</td></tr>
 <tr class="memdesc:a008187a6eceaba982ca2c1d452061931"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return whether context switch monitoring is enabled.  <a href="#a008187a6eceaba982ca2c1d452061931">More...</a><br /></td></tr>
 <tr class="separator:a008187a6eceaba982ca2c1d452061931"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a685665f6dd2127b8eb71cbc2e90bd35e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="event_8h.html#a685665f6dd2127b8eb71cbc2e90bd35e">spdk_reactor_get_tsc_stats</a> (struct <a class="el" href="structspdk__reactor__tsc__stats.html">spdk_reactor_tsc_stats</a> *tsc_stats, uint32_t core_id)</td></tr>
-<tr class="memdesc:a685665f6dd2127b8eb71cbc2e90bd35e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get tsc stats from a given reactor Copy cumulative reactor tsc values to user's tsc_stats structure.  <a href="#a685665f6dd2127b8eb71cbc2e90bd35e">More...</a><br /></td></tr>
-<tr class="separator:a685665f6dd2127b8eb71cbc2e90bd35e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Event framework public API. </p>
@@ -749,43 +744,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="even
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">enabled</td><td>True to enable, false to disable. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a685665f6dd2127b8eb71cbc2e90bd35e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a685665f6dd2127b8eb71cbc2e90bd35e">&#9670;&nbsp;</a></span>spdk_reactor_get_tsc_stats()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int spdk_reactor_get_tsc_stats </td>
-          <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structspdk__reactor__tsc__stats.html">spdk_reactor_tsc_stats</a> *&#160;</td>
-          <td class="paramname"><em>tsc_stats</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>core_id</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Get tsc stats from a given reactor Copy cumulative reactor tsc values to user's tsc_stats structure. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">tsc_stats</td><td>User's tsc_stats structure. </td></tr>
-    <tr><td class="paramname">core_id</td><td>Get tsc data on this Reactor core id. </td></tr>
   </table>
   </dd>
 </dl>

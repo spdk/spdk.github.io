@@ -151,6 +151,8 @@ Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__io__channel.html">spdk_io_channel</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents a per-thread channel for accessing an I/O device.  <a href="structspdk__io__channel.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__thread__stats.html">spdk_thread_stats</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
@@ -203,9 +205,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="thre
 <tr class="memitem:ac42fa5ed7447767885f700875b28a84b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="thread_8h.html#ac42fa5ed7447767885f700875b28a84b">spdk_thread_exit</a> (struct spdk_thread *thread)</td></tr>
 <tr class="memdesc:ac42fa5ed7447767885f700875b28a84b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Release any resources related to the given thread and destroy it.  <a href="#ac42fa5ed7447767885f700875b28a84b">More...</a><br /></td></tr>
 <tr class="separator:ac42fa5ed7447767885f700875b28a84b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adf91a4dec4b813616eb583d7115a2a8a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="thread_8h.html#adf91a4dec4b813616eb583d7115a2a8a">spdk_thread_poll</a> (struct spdk_thread *thread, uint32_t max_msgs)</td></tr>
-<tr class="memdesc:adf91a4dec4b813616eb583d7115a2a8a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform one iteration worth of processing on the thread.  <a href="#adf91a4dec4b813616eb583d7115a2a8a">More...</a><br /></td></tr>
-<tr class="separator:adf91a4dec4b813616eb583d7115a2a8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9e3693e8e9e6c9063ea36414294ae91"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="thread_8h.html#ad9e3693e8e9e6c9063ea36414294ae91">spdk_thread_poll</a> (struct spdk_thread *thread, uint32_t max_msgs, uint64_t now)</td></tr>
+<tr class="memdesc:ad9e3693e8e9e6c9063ea36414294ae91"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform one iteration worth of processing on the thread.  <a href="#ad9e3693e8e9e6c9063ea36414294ae91">More...</a><br /></td></tr>
+<tr class="separator:ad9e3693e8e9e6c9063ea36414294ae91"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a474fcfc5c14928eda42c684ba2b4cba9"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="thread_8h.html#a474fcfc5c14928eda42c684ba2b4cba9">spdk_thread_next_poller_expiration</a> (struct spdk_thread *thread)</td></tr>
 <tr class="memdesc:a474fcfc5c14928eda42c684ba2b4cba9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the number of ticks until the next timed poller would expire.  <a href="#a474fcfc5c14928eda42c684ba2b4cba9">More...</a><br /></td></tr>
 <tr class="separator:a474fcfc5c14928eda42c684ba2b4cba9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -222,6 +224,9 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 <tr class="memitem:ae367048fa89366e845d72015064e6f76"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="thread_8h.html#ae367048fa89366e845d72015064e6f76">spdk_thread_get_name</a> (const struct spdk_thread *thread)</td></tr>
 <tr class="memdesc:ae367048fa89366e845d72015064e6f76"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a thread's name.  <a href="#ae367048fa89366e845d72015064e6f76">More...</a><br /></td></tr>
 <tr class="separator:ae367048fa89366e845d72015064e6f76"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6f07dd00b0b4140155713aca312d46b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="thread_8h.html#ab6f07dd00b0b4140155713aca312d46b">spdk_thread_get_stats</a> (struct <a class="el" href="structspdk__thread__stats.html">spdk_thread_stats</a> *stats)</td></tr>
+<tr class="memdesc:ab6f07dd00b0b4140155713aca312d46b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get statistics about the current thread.  <a href="#ab6f07dd00b0b4140155713aca312d46b">More...</a><br /></td></tr>
+<tr class="separator:ab6f07dd00b0b4140155713aca312d46b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a84c8a9fbcb474dbf3b1e2b8b3848a1fb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="thread_8h.html#a84c8a9fbcb474dbf3b1e2b8b3848a1fb">spdk_thread_send_msg</a> (const struct spdk_thread *thread, <a class="el" href="thread_8h.html#adc0da6b1b784d4f165dcd48b526d12ad">spdk_msg_fn</a> fn, void *ctx)</td></tr>
 <tr class="memdesc:a84c8a9fbcb474dbf3b1e2b8b3848a1fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a message to the given thread.  <a href="#a84c8a9fbcb474dbf3b1e2b8b3848a1fb">More...</a><br /></td></tr>
 <tr class="separator:a84c8a9fbcb474dbf3b1e2b8b3848a1fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -422,7 +427,7 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 </div><div class="memdoc">
 
 <p>A function that is called each time a new thread is created. </p>
-<p>The implementor of this function should frequently call <a class="el" href="thread_8h.html#adf91a4dec4b813616eb583d7115a2a8a" title="Perform one iteration worth of processing on the thread. ">spdk_thread_poll()</a> on the thread provided.</p>
+<p>The implementor of this function should frequently call <a class="el" href="thread_8h.html#ad9e3693e8e9e6c9063ea36414294ae91" title="Perform one iteration worth of processing on the thread. ">spdk_thread_poll()</a> on the thread provided.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">thread</td><td>The new spdk_thread. </td></tr>
@@ -1164,6 +1169,33 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 
 </div>
 </div>
+<a id="ab6f07dd00b0b4140155713aca312d46b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab6f07dd00b0b4140155713aca312d46b">&#9670;&nbsp;</a></span>spdk_thread_get_stats()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_thread_get_stats </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structspdk__thread__stats.html">spdk_thread_stats</a> *&#160;</td>
+          <td class="paramname"><em>stats</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get statistics about the current thread. </p>
+<p>Copy cumulative thread stats values to the provided thread stats structure.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">stats</td><td>User's thread_stats structure. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a5a143ecbc5ce7edcd57e76cffd74bde5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5a143ecbc5ce7edcd57e76cffd74bde5">&#9670;&nbsp;</a></span>spdk_thread_has_active_pollers()</h2>
 
@@ -1211,7 +1243,7 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 <p>Must be called once prior to allocating any threads.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">new_thread_fn</td><td>Called each time a new SPDK thread is created. The implementor is expected to frequently call <a class="el" href="thread_8h.html#adf91a4dec4b813616eb583d7115a2a8a" title="Perform one iteration worth of processing on the thread. ">spdk_thread_poll()</a> on the provided thread.</td></tr>
+    <tr><td class="paramname">new_thread_fn</td><td>Called each time a new SPDK thread is created. The implementor is expected to frequently call <a class="el" href="thread_8h.html#ad9e3693e8e9e6c9063ea36414294ae91" title="Perform one iteration worth of processing on the thread. ">spdk_thread_poll()</a> on the provided thread.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1247,8 +1279,8 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 
 </div>
 </div>
-<a id="adf91a4dec4b813616eb583d7115a2a8a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adf91a4dec4b813616eb583d7115a2a8a">&#9670;&nbsp;</a></span>spdk_thread_poll()</h2>
+<a id="ad9e3693e8e9e6c9063ea36414294ae91"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad9e3693e8e9e6c9063ea36414294ae91">&#9670;&nbsp;</a></span>spdk_thread_poll()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1263,7 +1295,13 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>max_msgs</em>&#160;</td>
+          <td class="paramname"><em>max_msgs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>now</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1278,7 +1316,8 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">thread</td><td>The thread to process </td></tr>
-    <tr><td class="paramname">max_msgs</td><td>The maximum number of messages that will be processed. Use 0 to process the default number of messages (8).</td></tr>
+    <tr><td class="paramname">max_msgs</td><td>The maximum number of messages that will be processed. Use 0 to process the default number of messages (8). </td></tr>
+    <tr><td class="paramname">now</td><td>The current time, in ticks. Optional. If 0 is passed, this function may call <a class="el" href="env_8h.html#a7d868d272aa0c000f6135966dfadc596" title="Get a monotonic timestamp counter. ">spdk_get_ticks()</a> to get the current time.</td></tr>
   </table>
   </dd>
 </dl>

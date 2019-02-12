@@ -1,6 +1,7 @@
 var thread_8h =
 [
     [ "spdk_io_channel", "structspdk__io__channel.html", "structspdk__io__channel" ],
+    [ "spdk_thread_stats", "structspdk__thread__stats.html", "structspdk__thread__stats" ],
     [ "spdk_channel_for_each_cpl", "thread_8h.html#a96f03fe115196f1de03292ed6d86fd46", null ],
     [ "spdk_channel_msg", "thread_8h.html#a2dd91f3094f8b4cf60f460e3f88bbf0c", null ],
     [ "spdk_io_channel_create_cb", "thread_8h.html#aed1d14292cfee8553d4a1ebb519b210a", null ],
@@ -32,10 +33,11 @@ var thread_8h =
     [ "spdk_thread_exit", "thread_8h.html#ac42fa5ed7447767885f700875b28a84b", null ],
     [ "spdk_thread_get_count", "thread_8h.html#a1d77f05c2461acb75f333e67e6aeb1ed", null ],
     [ "spdk_thread_get_name", "thread_8h.html#ae367048fa89366e845d72015064e6f76", null ],
+    [ "spdk_thread_get_stats", "thread_8h.html#ab6f07dd00b0b4140155713aca312d46b", null ],
     [ "spdk_thread_has_active_pollers", "thread_8h.html#a5a143ecbc5ce7edcd57e76cffd74bde5", null ],
     [ "spdk_thread_lib_fini", "thread_8h.html#afe409bf16664f461daa516b6a6d1682c", null ],
     [ "spdk_thread_lib_init", "thread_8h.html#adb5f2ac1d1cc4feea5e39a802e5e1e48", null ],
     [ "spdk_thread_next_poller_expiration", "thread_8h.html#a474fcfc5c14928eda42c684ba2b4cba9", null ],
-    [ "spdk_thread_poll", "thread_8h.html#adf91a4dec4b813616eb583d7115a2a8a", null ],
+    [ "spdk_thread_poll", "thread_8h.html#ad9e3693e8e9e6c9063ea36414294ae91", null ],
     [ "spdk_thread_send_msg", "thread_8h.html#a84c8a9fbcb474dbf3b1e2b8b3848a1fb", null ]
 ];
