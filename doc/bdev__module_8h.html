@@ -279,6 +279,9 @@ typedef&#160;</td><td class="memItemRight" valign="bottom"><b>STAILQ_HEAD</b> (,
 <tr class="memitem:ac5d86d9c4c086b2909207e6b7192caae"><td class="memItemLeft" align="right" valign="top">struct spdk_thread *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev__module_8h.html#ac5d86d9c4c086b2909207e6b7192caae">spdk_bdev_io_get_thread</a> (struct <a class="el" href="structspdk__bdev__io.html">spdk_bdev_io</a> *bdev_io)</td></tr>
 <tr class="memdesc:ac5d86d9c4c086b2909207e6b7192caae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a thread that given bdev_io was submitted on.  <a href="#ac5d86d9c4c086b2909207e6b7192caae">More...</a><br /></td></tr>
 <tr class="separator:ac5d86d9c4c086b2909207e6b7192caae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65de686e7ddcf8caa6d7fa032e7023c6"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev__module_8h.html#a65de686e7ddcf8caa6d7fa032e7023c6">spdk_bdev_io_get_io_channel</a> (struct <a class="el" href="structspdk__bdev__io.html">spdk_bdev_io</a> *bdev_io)</td></tr>
+<tr class="memdesc:a65de686e7ddcf8caa6d7fa032e7023c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the bdev module's I/O channel that the given bdev_io was submitted on.  <a href="#a65de686e7ddcf8caa6d7fa032e7023c6">More...</a><br /></td></tr>
+<tr class="separator:a65de686e7ddcf8caa6d7fa032e7023c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7f2edd5a040a818752112d2cc709efca"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev__module_8h.html#a7f2edd5a040a818752112d2cc709efca">spdk_bdev_notify_blockcnt_change</a> (struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *bdev, uint64_t size)</td></tr>
 <tr class="memdesc:a7f2edd5a040a818752112d2cc709efca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resize for a bdev.  <a href="#a7f2edd5a040a818752112d2cc709efca">More...</a><br /></td></tr>
 <tr class="separator:a7f2edd5a040a818752112d2cc709efca"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -730,6 +733,33 @@ typedef&#160;</td><td class="memItemRight" valign="bottom"><b>TAILQ_HEAD</b> (bd
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="a65de686e7ddcf8caa6d7fa032e7023c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a65de686e7ddcf8caa6d7fa032e7023c6">&#9670;&nbsp;</a></span>spdk_bdev_io_get_io_channel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a>* spdk_bdev_io_get_io_channel </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structspdk__bdev__io.html">spdk_bdev_io</a> *&#160;</td>
+          <td class="paramname"><em>bdev_io</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the bdev module's I/O channel that the given bdev_io was submitted on. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bdev_io</td><td>I/O </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the bdev module's I/O channel that the given bdev_io was submitted on. </dd></dl>
 
 </div>
 </div>

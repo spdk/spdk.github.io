@@ -91,6 +91,7 @@ var searchData=
   ['spdk_5fbdev_5fio_5fcomplete_5fscsi_5fstatus',['spdk_bdev_io_complete_scsi_status',['../bdev__module_8h.html#a4271696fa055f456bedb6bdebce25dbd',1,'bdev_module.h']]],
   ['spdk_5fbdev_5fio_5fcompletion_5fcb',['spdk_bdev_io_completion_cb',['../bdev_8h.html#a0c5602dfd313f90032dd91683b9663e3',1,'bdev.h']]],
   ['spdk_5fbdev_5fio_5fget_5fbuf',['spdk_bdev_io_get_buf',['../bdev__module_8h.html#a934c7e96e8bdc0aea6cbcc0f414c71ba',1,'bdev_module.h']]],
+  ['spdk_5fbdev_5fio_5fget_5fio_5fchannel',['spdk_bdev_io_get_io_channel',['../bdev__module_8h.html#a65de686e7ddcf8caa6d7fa032e7023c6',1,'bdev_module.h']]],
   ['spdk_5fbdev_5fio_5fget_5fiovec',['spdk_bdev_io_get_iovec',['../bdev_8h.html#aa05d8c0e82bfbcc209af1eb958230ede',1,'bdev.h']]],
   ['spdk_5fbdev_5fio_5fget_5fnvme_5fstatus',['spdk_bdev_io_get_nvme_status',['../bdev_8h.html#afe43254747db3cd072dfb596be3bbf2f',1,'bdev.h']]],
   ['spdk_5fbdev_5fio_5fget_5fscsi_5fstatus',['spdk_bdev_io_get_scsi_status',['../bdev_8h.html#ac3c213b4317d5077197950253af1ac50',1,'bdev.h']]],

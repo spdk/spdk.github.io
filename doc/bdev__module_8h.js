@@ -34,6 +34,7 @@ var bdev__module_8h =
     [ "spdk_bdev_io_complete_scsi_status", "bdev__module_8h.html#a4271696fa055f456bedb6bdebce25dbd", null ],
     [ "spdk_bdev_io_from_ctx", "bdev__module_8h.html#a1d1a5d28d5d17381f15953cb13a4cc6c", null ],
     [ "spdk_bdev_io_get_buf", "bdev__module_8h.html#a934c7e96e8bdc0aea6cbcc0f414c71ba", null ],
+    [ "spdk_bdev_io_get_io_channel", "bdev__module_8h.html#a65de686e7ddcf8caa6d7fa032e7023c6", null ],
     [ "spdk_bdev_io_get_thread", "bdev__module_8h.html#ac5d86d9c4c086b2909207e6b7192caae", null ],
     [ "spdk_bdev_io_set_buf", "bdev__module_8h.html#a5db22de2bf8ceb0f640e05b92188bff5", null ],
     [ "spdk_bdev_module_claim_bdev", "bdev__module_8h.html#a43188aae62750556bba04f4ddc81fa94", null ],
