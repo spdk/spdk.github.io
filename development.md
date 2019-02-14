@@ -16,6 +16,7 @@ title:  "SPDK Development"
 * [Review Hashtags](#hashtags)
 * [Revising Patches](#revise)
 * [Multi-Commit Patch Series](#multi)
+* [Managing Submodule Patches](#submodule)
 * [Core Maintainers](#core)
 
 <a id="license"></a>
@@ -312,6 +313,34 @@ git rebase -i tmp # Move change #3 on top of the new change #2
 git push review
 git branch -D tmp # Clean up the 'tmp' branch
 ~~~
+<a id="submodule"></a>
+### Managing Submodule Patches
+
+SPDK uses git submodules to incorporate some dependencies such as DPDK and these submodules point to a
+fork of the relevant upstream repository. This allows the SPDK community to apply SPDK-specific patches
+to the fork for either critical fixes or to unblock new development. Keeping the SPDK fork in sync with
+the upstream repository is a manual process. In order to simplify the process, patches for submodules are
+expected to be made as follows:
+
+* Before proposing your patch to the SPDK fork, propose it in the upstream community first for feedback.
+* Incorporate feedback and then propose a patch to the relevant SPDK fork using the same commit message as
+was used in the upstream.
+* Track your upstream patch and notify the SPDK community (any communications channel) when it has been accepted.
+
+At SPDK major (usually quarterly) release time, the SPDK repo is tagged which implicitly also captures the hashes
+for each of the respective submodules.  Shortly thereafter, by convention a branch is instantiated in the SPDK
+repo following the naming convention of vYY.MM.x (where YY=last two digits of the year, and MM=month) based on
+that major release hash in preparation for any future maintenance releases derived from that major release.
+Any SPDK maintenance releases can only include new bug fixes to existing and currently used branches.
+
+Work meanwhile continues on SPDK's master branch for the march toward the next quarterly release.  During that phase
+a check is performed upstream corresponding to each forked repo maintained as a git submodule to see if there
+is a newer release.  For each newer release, we fork a copy of that release representing it as a new branch
+in the respective submodule.  By that point hopefully any SPDK-specific patches which were previously
+submitted to those respective upstream projects will have been incorporated in the newer release and so
+the release is inspected for them.   For those SPDK-specific patches that have not been incorporated in
+the newer release, they are ported forward atop the newer release branch in the submodule.  A commit is then
+done on the SPDK repo's master branch for each of the updated submodules to capture the hash of their new heads.
 
 <a id="core"></a>
 ## Core Maintainers
