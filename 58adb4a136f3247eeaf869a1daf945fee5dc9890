@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "1bfd7889_71f2380e",
+        "filename": "development.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 330,
+      "author": {
+        "id": 1011995
+      },
+      "writtenOn": "2019-02-14T20:08:50Z",
+      "side": 1,
+      "message": "Assuming I understand the flow correctly, would you please wordsmith this a little further to make clear that it is *after* the release, that the forks are updated to point to their respective upstream repositories -- not really \"at SPDK release time\"; or, more specifically, updated in master.   Unless I am wrong, when we cut a SPDK release, at that instant the forks associated with the released SPDK tag/branch still are pointing to the previous versions of the submodules\u0027 repos plus our patches.   However, on SPDK\u0027s master, our forks to the upstream repos are updated following the release.   That\u0027s the way it works today, right?   Assuming so, I want to ensure people reading this are not left with the impression that the forks to other repos have been updated in the released tag/branch of the SPDK -- but instead only in master going forward toward the next quarterly SPDK release.",
+      "revId": "58adb4a136f3247eeaf869a1daf945fee5dc9890",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
