@@ -16,6 +16,7 @@ title:  "SPDK Development"
 * [Review Hashtags](#hashtags)
 * [Revising Patches](#revise)
 * [Multi-Commit Patch Series](#multi)
+* [Managing Submodule Patches](#submodule)
 * [Core Maintainers](#core)
 
 <a id="license"></a>
@@ -312,6 +313,37 @@ git rebase -i tmp # Move change #3 on top of the new change #2
 git push review
 git branch -D tmp # Clean up the 'tmp' branch
 ~~~
+<a id="submodule"></a>
+### Managing Submodule Patches
+
+SPDK uses git submodules to incorporate some dependencies such as DPDK and these submodules point to a
+fork of the relevant upstream repository. This allows the SPDK community to apply SPDK-specific patches
+to the fork for either critical fixes or to unblock new development. Keeping the SPDK fork in sync with
+the upstream repository is a manual process. In order to simplify the process, patches for submodules are
+expected to be made as follows:
+
+* Before proposing your patch the SPDK fork, propose it in the upstream community first for feedback.
+* Incorporate feedback and then propose a patch to the relevant SPDK fork using the same commit message as
+was used in the upstream.
+* Track your upstream patch and notify the SPDK community (any communications channel) when it has been accepted.
+
+At SPDK release time, our forks and their upstream repositories are updated such that those patches that made it
+upstream will no longer be a delta in our fork.  More specifically, at the time a major (usually quarterly)
+SPDK release is tagged, the version of each forked repository maintained using a git submodule is that of its
+respective previous major release plus any SPDK-specific patches applied to it.  Then, shortly after the
+SPDK major release (x.y), a SPDK "dot-one" release (e.g. x.y.1) is produced with the following notable changes for
+the git submodules:
+* Each forked repository (maintained as a git submodule) is updated to the latest release of its respective
+upstream repository.  It is the hope that the updates from upstream will have incorporated all submitted
+SPDK-specific patches to them.
+* Any SPDK-specific patches that have not been accepted upstream (and thus not reflected in their respective,
+latest releases) must be forward ported atop their respective updated git submodules.
+
+To facilitate this flow, each major release of a given submodule gets a separate branch in
+our fork, and switching from one submodule branch to another is only done as part of the production
+of the SPDK "dot-one" release following the SPDK major release.   Any SPDK maintenance releases can
+only include new bug fixes to existing and currently used branches.
+
 
 <a id="core"></a>
 ## Core Maintainers
@@ -341,7 +373,6 @@ Other roles and responsibilities of the core maintainers include:
 * Role modeling good development practices
 * Fostering a positive, productive community
 * Participating in project roadmap definition
-* Identifying and organizing development tasks
 
 ### Core Maintainers Emeritus
 
