@@ -140,6 +140,8 @@ $(document).ready(function(){initNavTree('changelog.html','');});
 <div class="contents">
 <div class="textblock"><h1><a class="anchor" id="changelog-v19-04"></a>
 v19.04: (Upcoming Release)</h1>
+<h2>nvme</h2>
+<p>Added asynchronous probe support. New APIs <a class="el" href="nvme_8h.html#a9ebdf15bf62e47b7231455ecc4be3239" title="Initialize a context to track the probe result based on transport ID. ">spdk_nvme_probe_ctx_init()</a>, <a class="el" href="nvme_8h.html#a88351dc3f29d3e5f6c8bd54f04a1447e" title="Probe and add controllers to the probe context list. ">spdk_nvme_probe_async()</a> and <a class="el" href="nvme_8h.html#a1e5e85b201f648d307ce0a7c326ef35c" title="Start controllers in the context list. ">spdk_nvme_probe_poll_async()</a> were added to enable this feature.</p>
 <h2>raid</h2>
 <p>Added new strip_size_kb rpc param on create to replace the more ambiguous strip_size. The strip_size rpc param is deprecated.</p>
 <h1><a class="anchor" id="changelog-v19-01"></a>

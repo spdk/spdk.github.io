@@ -134,6 +134,7 @@ var annotated_dup =
     [ "spdk_nvme_ns_list", "structspdk__nvme__ns__list.html", "structspdk__nvme__ns__list" ],
     [ "spdk_nvme_power_state", "structspdk__nvme__power__state.html", "structspdk__nvme__power__state" ],
     [ "spdk_nvme_primary_ctrl_capabilities", "structspdk__nvme__primary__ctrl__capabilities.html", "structspdk__nvme__primary__ctrl__capabilities" ],
+    [ "spdk_nvme_probe_ctx", "structspdk__nvme__probe__ctx.html", "structspdk__nvme__probe__ctx" ],
     [ "spdk_nvme_protection_info", "structspdk__nvme__protection__info.html", "structspdk__nvme__protection__info" ],
     [ "spdk_nvme_registered_ctrlr_data", "structspdk__nvme__registered__ctrlr__data.html", "structspdk__nvme__registered__ctrlr__data" ],
     [ "spdk_nvme_registered_ctrlr_extended_data", "structspdk__nvme__registered__ctrlr__extended__data.html", "structspdk__nvme__registered__ctrlr__extended__data" ],

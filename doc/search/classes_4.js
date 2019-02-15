@@ -113,6 +113,7 @@ var searchData=
   ['spdk_5fnvme_5fns_5flist',['spdk_nvme_ns_list',['../structspdk__nvme__ns__list.html',1,'']]],
   ['spdk_5fnvme_5fpower_5fstate',['spdk_nvme_power_state',['../structspdk__nvme__power__state.html',1,'']]],
   ['spdk_5fnvme_5fprimary_5fctrl_5fcapabilities',['spdk_nvme_primary_ctrl_capabilities',['../structspdk__nvme__primary__ctrl__capabilities.html',1,'']]],
+  ['spdk_5fnvme_5fprobe_5fctx',['spdk_nvme_probe_ctx',['../structspdk__nvme__probe__ctx.html',1,'']]],
   ['spdk_5fnvme_5fprotection_5finfo',['spdk_nvme_protection_info',['../structspdk__nvme__protection__info.html',1,'']]],
   ['spdk_5fnvme_5fregistered_5fctrlr_5fdata',['spdk_nvme_registered_ctrlr_data',['../structspdk__nvme__registered__ctrlr__data.html',1,'']]],
   ['spdk_5fnvme_5fregistered_5fctrlr_5fextended_5fdata',['spdk_nvme_registered_ctrlr_extended_data',['../structspdk__nvme__registered__ctrlr__extended__data.html',1,'']]],
