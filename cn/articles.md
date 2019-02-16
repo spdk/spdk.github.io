@@ -3,6 +3,11 @@ layout: news
 title: 技术文章
 lang: cn
 ---
+* [Liblightnvm, 在用户态操作Open-Channel SSD](https://mp.weixin.qq.com/s/wVfVhDvF8b0owlUxNjPLXw)
+
+* [打造用户态存储利器，基于SPDK的存储引擎Blobstore & BlobFS](https://mp.weixin.qq.com/s/jiS3jUNLeL0XzcljF8OhQA)
+
+* [搭建远端存储，深度解读SPDK NVMe-oF target](https://mp.weixin.qq.com/s/ohPaxAwmhGtuQQWz--J6WA)
 
 * [一文读懂SPDK加速关键应用：解析SPDK Perf应用](https://mp.weixin.qq.com/s?__biz=MzI3NDA4ODY4MA==&mid=2653335061&idx=1&sn=8c2bb8b1bf7d95d7ab3c0cf81bea0136&chksm=f0cb5992c7bcd084c6d1704e26033b7510b4986593b91a45743df2aea39596813511fa4b70ac&token=431082989&lang=zh_CN#rd)
 
