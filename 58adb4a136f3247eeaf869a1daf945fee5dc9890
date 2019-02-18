@@ -16,6 +16,24 @@
       "revId": "58adb4a136f3247eeaf869a1daf945fee5dc9890",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9c831191_8b2dfe07",
+        "filename": "development.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 330,
+      "author": {
+        "id": 1011289
+      },
+      "writtenOn": "2019-02-18T14:07:07Z",
+      "side": 1,
+      "message": "The way things have been operating, for as long as I know anyway, is that as you state an SPDK release is made with the prev DPDK release using our DPDK fork.  Then we do a dot release to the latest DPDK version which is done by pointing our fork to the latest and then applying any DPDK patches that we still need to carry to that fork.  The dot release is then done based on the DPDK fork.\n\nDoes that make sense? Darek, Ben please free to comment",
+      "parentUuid": "1bfd7889_71f2380e",
+      "revId": "58adb4a136f3247eeaf869a1daf945fee5dc9890",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
     }
   ]
 }
