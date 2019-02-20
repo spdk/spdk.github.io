@@ -147,9 +147,8 @@ $(document).ready(function(){initNavTree('nbd_8h.html','');});
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:abed048e29b578c12e7db81e77df6877b"><td class="memItemLeft" align="right" valign="top"><a id="abed048e29b578c12e7db81e77df6877b"></a>
-typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nbd_8h.html#abed048e29b578c12e7db81e77df6877b">spdk_nbd_start_cb</a>) (void *cb_arg, struct spdk_nbd_disk *nbd, int rc)</td></tr>
-<tr class="memdesc:abed048e29b578c12e7db81e77df6877b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when an NBD device has been started. <br /></td></tr>
+<tr class="memitem:abed048e29b578c12e7db81e77df6877b"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nbd_8h.html#abed048e29b578c12e7db81e77df6877b">spdk_nbd_start_cb</a>) (void *cb_arg, struct spdk_nbd_disk *nbd, int rc)</td></tr>
+<tr class="memdesc:abed048e29b578c12e7db81e77df6877b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when an NBD device has been started.  <a href="#abed048e29b578c12e7db81e77df6877b">More...</a><br /></td></tr>
 <tr class="separator:abed048e29b578c12e7db81e77df6877b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
@@ -177,7 +176,25 @@ const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Network block device layer. </p>
-</div><h2 class="groupheader">Function Documentation</h2>
+</div><h2 class="groupheader">Typedef Documentation</h2>
+<a id="abed048e29b578c12e7db81e77df6877b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abed048e29b578c12e7db81e77df6877b">&#9670;&nbsp;</a></span>spdk_nbd_start_cb</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void(* spdk_nbd_start_cb) (void *cb_arg, struct spdk_nbd_disk *nbd, int rc)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Called when an NBD device has been started. </p>
+<p>On success, rc is assigned 0; On failure, rc is assigned negated errno. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
 <a id="a813a5507ececd5c8710ec9f1c3cdfec4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a813a5507ececd5c8710ec9f1c3cdfec4">&#9670;&nbsp;</a></span>spdk_nbd_init()</h2>
 
@@ -242,12 +259,11 @@ const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
   <table class="params">
     <tr><td class="paramname">bdev_name</td><td>Name of bdev exposed as a network block device. </td></tr>
     <tr><td class="paramname">nbd_path</td><td>Path to the registered network block device. </td></tr>
-    <tr><td class="paramname">cb_fn</td><td>Called when the device has been started. </td></tr>
-    <tr><td class="paramname">cb_arg</td><td>Passed to cb_fn.</td></tr>
+    <tr><td class="paramname">cb_fn</td><td>Callback to be always called. </td></tr>
+    <tr><td class="paramname">cb_arg</td><td>Passed to cb_fn. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>A negated error number is passed to cb_fn on failure. </dd></dl>
 
 </div>
 </div>
