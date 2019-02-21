@@ -34,6 +34,24 @@
       "revId": "58adb4a136f3247eeaf869a1daf945fee5dc9890",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "10ea386b_9d8a5df0",
+        "filename": "development.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 330,
+      "author": {
+        "id": 1011218
+      },
+      "writtenOn": "2019-02-21T10:05:49Z",
+      "side": 1,
+      "message": "We should include one more paragraph stating that each major release of given submodule gets a separate branch in our fork and switching from one branch to another is only done as a part of a major SPDK release. The SPDK maintenance releases can only include new bugfixes to existing and currently used branches.\n\n\nLance, does that clarification suffice?",
+      "parentUuid": "9c831191_8b2dfe07",
+      "revId": "58adb4a136f3247eeaf869a1daf945fee5dc9890",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
     }
   ]
 }
