@@ -52,6 +52,42 @@
       "revId": "58adb4a136f3247eeaf869a1daf945fee5dc9890",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "da524a78_98742ce0",
+        "filename": "development.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 330,
+      "author": {
+        "id": 1011995
+      },
+      "writtenOn": "2019-02-21T16:10:25Z",
+      "side": 1,
+      "message": "This is the direction I\u0027d like to see this go; i.e. much more explicit.   In fact, I\u0027d prefer that we make an additional distinction.   For example:  instead of only stating:   \"..SPDK release is made with the previous DPDK release using our DPDK fork.\", I\u0027d like it to state \"...SPDK release is made using our DPDK fork derived from the previous *major* DPDK release.\"  This eliminates any possible confusion the reader might have if they visit the DPDK site and see references to \"latest stable\" release.",
+      "parentUuid": "9c831191_8b2dfe07",
+      "revId": "58adb4a136f3247eeaf869a1daf945fee5dc9890",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "feef6673_6cc72625",
+        "filename": "development.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 330,
+      "author": {
+        "id": 1011995
+      },
+      "writtenOn": "2019-02-21T16:10:25Z",
+      "side": 1,
+      "message": "Darek, I like your suggestion, expanding the topic beyond just the DPDK to address all of the git-submodules we are carrying.   I would ask that we make clear exactly what is meant by a \"SPDK maintenance release\".   Do you consider a \".1\" a maintenance release?",
+      "parentUuid": "10ea386b_9d8a5df0",
+      "revId": "58adb4a136f3247eeaf869a1daf945fee5dc9890",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
     }
   ]
 }
