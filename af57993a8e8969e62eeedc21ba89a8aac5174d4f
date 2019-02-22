@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "759601b5_d6e20406",
+        "filename": "development.md",
+        "patchSetId": 4
+      },
+      "lineNbr": 337,
+      "author": {
+        "id": 1011218
+      },
+      "writtenOn": "2019-02-22T08:16:33Z",
+      "side": 1,
+      "message": "Oh, that\u0027s not true! As a part of a \"dot-one\" release we can include only *our* custom bugfixes submitted to *our* forks. It is the hope that those bugfixes will be eventually accepted in their respective upstream repositories and for the next major SPDK release (x.x), when we can finally switch to a newer submodule version (via a separate branch in our fork), we won\u0027t have to cherry-pick those fixes again as they will be already included in upstream.",
+      "range": {
+        "startLine": 336,
+        "startChar": 2,
+        "endLine": 337,
+        "endChar": 20
+      },
+      "revId": "af57993a8e8969e62eeedc21ba89a8aac5174d4f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "e232b050_160abfb7",
+        "filename": "development.md",
+        "patchSetId": 4
+      },
+      "lineNbr": 344,
+      "author": {
+        "id": 1011218
+      },
+      "writtenOn": "2019-02-22T08:16:33Z",
+      "side": 1,
+      "message": "^\n\nIt\u0027s only done as part of SPDK major releases (x.x).",
+      "range": {
+        "startLine": 344,
+        "startChar": 12,
+        "endLine": 344,
+        "endChar": 21
+      },
+      "revId": "af57993a8e8969e62eeedc21ba89a8aac5174d4f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    }
+  ]
+}

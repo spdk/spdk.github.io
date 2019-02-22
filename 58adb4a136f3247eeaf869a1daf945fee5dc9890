@@ -88,6 +88,24 @@
       "revId": "58adb4a136f3247eeaf869a1daf945fee5dc9890",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5fc8faac_d67145de",
+        "filename": "development.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 330,
+      "author": {
+        "id": 1011218
+      },
+      "writtenOn": "2019-02-22T08:16:33Z",
+      "side": 1,
+      "message": "Lance, you brought up a good topic - we should have a separate section describing what is a major and what is a maintenance release. Then we\u0027ll use the same nomenclature throughout the entire file and possibly other docs.\n\nYes, \".1\" is a maintenance release to me.",
+      "parentUuid": "feef6673_6cc72625",
+      "revId": "58adb4a136f3247eeaf869a1daf945fee5dc9890",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
     }
   ]
 }
