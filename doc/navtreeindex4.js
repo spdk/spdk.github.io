@@ -1,5 +1,6 @@
 var NAVTREEINDEX4 =
 {
+"jsonrpc.html":[3,7],
 "jsonrpc.html#jsonrpc_components_app":[3,7,1],
 "jsonrpc.html#jsonrpc_components_bdev":[3,7,2],
 "jsonrpc.html#jsonrpc_components_iscsi_tgt":[3,7,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX4 =
 "net_8h.html#a211cc36f4e31e54093389cd09a5b253b":[14,0,32,1],
 "net_8h.html#a8ddcb56f1e677b845c5ebd5363002fb5":[14,0,32,5],
 "net_8h.html#ab75ca6bf8726218208b00ef552122031":[14,0,32,6],
-"net_8h.html#abc3295d98c59921fecdef4de0e944afd":[14,0,32,9],
-"net_8h.html#ac3e34350c22f49e14e598551a0a122f9":[14,0,32,7]
+"net_8h.html#abc3295d98c59921fecdef4de0e944afd":[14,0,32,9]
 };

@@ -25,5 +25,6 @@ var prog_guides =
         [ "Configuring QEMU", "ftl.html#ftl_qemu_config", null ],
         [ "Configuring SPDK", "ftl.html#ftl_spdk_config", null ]
       ] ]
-    ] ]
+    ] ],
+    [ "GDB Macros User Guide", "gdb_macros.html", null ]
 ];
