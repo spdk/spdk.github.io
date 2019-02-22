@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "ce762f85_7c77222c",
+        "filename": "development.md",
+        "patchSetId": 4
+      },
+      "lineNbr": 337,
+      "author": {
+        "id": 1011995
+      },
+      "writtenOn": "2019-02-22T15:53:02Z",
+      "side": 1,
+      "message": "I am unsure if the above *plus* the second bullet does in fact capture your comment, or if I\u0027m failing to understand the flow correctly.   As such, let me provide an example and please educate me if or where I am wrong:\n\n1.   The SPDK is marching along toward a quarterly release, and let\u0027s say we have a submodule for project \"foo\" on which we have a dependency.    We acquired version 1.0 of \"foo\" from upstream, and so initially our fork of foo identically matches that of its upstream repo.\n2.  A little later during our SPDK development, we notice a bug in foo.  We submit a patch to foo upstream which we recognize may take a while and so we apply the identical patch to our fork of foo in our submodule.\n3.  It\u0027s time for a SPDK major release (x.y).   We tag the SPDK repo which also captures the hash of submodule of foo which at that moment reflects the 1.0 version plus our patch we had applied to it.\n4.  Shortly after, we look at upstream foo and see that they have a new major release themselves (2.0).   We fork a copy of that upstream 2.0 release into a new branch in our foo git submodule.\n5.   We inspect that the 2.0 release of foo, and if our patch that we had applied in our previous branch of foo in our submodule,also appears in the new 2.0 upstream of foo, then this is great.   If not, then we must cherry-pick our patch from the previous branch of foo into the new one in our submodule.\n6.  We tag the SPDK repo with a \"dot-one\" which also captures the hash of the current state of the foo submodule which, again, is either pristine (matching its upstream counterpart) because they had accepted our patch, -OR- the foo submodule now reflects the upstream 2.0 plus our cherry-picked patch from our previous version because it had not been accepted upstream.",
+      "parentUuid": "759601b5_d6e20406",
+      "range": {
+        "startLine": 336,
+        "startChar": 2,
+        "endLine": 337,
+        "endChar": 20
+      },
+      "revId": "af57993a8e8969e62eeedc21ba89a8aac5174d4f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "e232b050_160abfb7",
         "filename": "development.md",
         "patchSetId": 4
@@ -36,6 +60,30 @@
       "writtenOn": "2019-02-22T08:16:33Z",
       "side": 1,
       "message": "^\n\nIt\u0027s only done as part of SPDK major releases (x.x).",
+      "range": {
+        "startLine": 344,
+        "startChar": 12,
+        "endLine": 344,
+        "endChar": 21
+      },
+      "revId": "af57993a8e8969e62eeedc21ba89a8aac5174d4f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "2c0d26cf_2f915c83",
+        "filename": "development.md",
+        "patchSetId": 4
+      },
+      "lineNbr": 344,
+      "author": {
+        "id": 1011995
+      },
+      "writtenOn": "2019-02-22T15:53:02Z",
+      "side": 1,
+      "message": "Again, see example flow in previous comment.  My understanding is at the instant we tag the SPDK for a major release (x.y), the state of the git-submodules is at their respective *previous* releases plus any of our SPDK-specific patches.   At the point we tag the SPDK for the \"dot-one\", we will have updated the releases in the git-submodules from upstream and have cherry-picked any patches that the new releases had not picked up.",
+      "parentUuid": "e232b050_160abfb7",
       "range": {
         "startLine": 344,
         "startChar": 12,
