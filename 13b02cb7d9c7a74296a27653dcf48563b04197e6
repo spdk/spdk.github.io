@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "45ddd8c7_33630f19",
+        "filename": "_posts/2019-02-20-summit_announce.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 1011222
+      },
+      "writtenOn": "2019-02-22T17:31:48Z",
+      "side": 1,
+      "message": "remove extra space before the dash (it is noticeable on the generated page)",
+      "revId": "13b02cb7d9c7a74296a27653dcf48563b04197e6",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "847bf6e0_1e06fdfa",
+        "filename": "_posts/2019-02-20-summit_announce.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 1011222
+      },
+      "writtenOn": "2019-02-22T17:31:48Z",
+      "side": 1,
+      "message": "remove \"annual\"?",
+      "revId": "13b02cb7d9c7a74296a27653dcf48563b04197e6",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    }
+  ]
+}
