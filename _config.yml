@@ -45,7 +45,7 @@ boxes:
     ico: comment
   - title: Roadmap
     title-cn: 路线图
-    url: /roadmap/
+    url: https://trello.com/b/MN8auadQ/spdk-roadmap
     ico: map-marker
   - title: News
     title-cn: 动态
