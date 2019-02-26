@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "6a42e9f7_7513931e",
+        "filename": "_posts/2019-02-26-Mention_of_SPDK_on_Oracle_Linux.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 1011222
+      },
+      "writtenOn": "2019-02-26T21:19:37Z",
+      "side": 1,
+      "message": "yeah - let\u0027s remove the extra period after \"site\"\n\nHow about adding one more sentence - something like \"This will be the first Linux distribution that packages SPDK!\"",
+      "revId": "d2a00bd7ddb2c43d509e686a010c603f0288238b",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    }
+  ]
+}
