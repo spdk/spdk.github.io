@@ -28,6 +28,7 @@ var pci__ids_8h =
     [ "PCI_DEVICE_ID_INTEL_IOAT_HSW7", "pci__ids_8h.html#addd69527dd7fcf68171ddc77b348c829", null ],
     [ "PCI_DEVICE_ID_INTEL_IOAT_HSW8", "pci__ids_8h.html#aac2f259cc4130026a3c5dffe54452d89", null ],
     [ "PCI_DEVICE_ID_INTEL_IOAT_HSW9", "pci__ids_8h.html#a9e1af5c674347ddef70b21c0da7d7281", null ],
+    [ "PCI_DEVICE_ID_INTEL_IOAT_ICX", "pci__ids_8h.html#a6e4a3642222b02ace268b761622ff877", null ],
     [ "PCI_DEVICE_ID_INTEL_IOAT_IVB0", "pci__ids_8h.html#ad9dc98c7a94159bae36cdfb6a2387960", null ],
     [ "PCI_DEVICE_ID_INTEL_IOAT_IVB1", "pci__ids_8h.html#a672ab4a524db4d9de12498260b35cd00", null ],
     [ "PCI_DEVICE_ID_INTEL_IOAT_IVB2", "pci__ids_8h.html#af049fd0832af66ebff532511873a5310", null ],
