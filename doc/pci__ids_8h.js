@@ -59,5 +59,6 @@ var pci__ids_8h =
     [ "SPDK_PCI_VID_MEMBLAZE", "pci__ids_8h.html#a53070d685a30ad4d9cf5af78bc9d2afd", null ],
     [ "SPDK_PCI_VID_SAMSUNG", "pci__ids_8h.html#a790016ab9e9c8160369ee0bb6678c0ee", null ],
     [ "SPDK_PCI_VID_VIRTIO", "pci__ids_8h.html#a470b98e3819df2bb0073aadada6b5b0e", null ],
-    [ "SPDK_PCI_VID_VIRTUALBOX", "pci__ids_8h.html#a7b50866da34df1009067d3886fac3ad6", null ]
+    [ "SPDK_PCI_VID_VIRTUALBOX", "pci__ids_8h.html#a7b50866da34df1009067d3886fac3ad6", null ],
+    [ "SPDK_PCI_VID_VMWARE", "pci__ids_8h.html#a01906a75cccea8dc0fa90fc44866128b", null ]
 ];

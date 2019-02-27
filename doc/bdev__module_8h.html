@@ -192,9 +192,9 @@ Typedefs</h2></td></tr>
 <tr class="memitem:aaf30cdcd20a84d898099dd35bbfa3590"><td class="memItemLeft" align="right" valign="top"><a id="aaf30cdcd20a84d898099dd35bbfa3590"></a>
 typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_unregister_cb</b>) (void *cb_arg, int rc)</td></tr>
 <tr class="separator:aaf30cdcd20a84d898099dd35bbfa3590"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab60bee4dc86309421c01f3f3663fc759"><td class="memItemLeft" align="right" valign="top"><a id="ab60bee4dc86309421c01f3f3663fc759"></a>
-typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_io_get_buf_cb</b>) (struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *ch, struct <a class="el" href="structspdk__bdev__io.html">spdk_bdev_io</a> *bdev_io)</td></tr>
-<tr class="separator:ab60bee4dc86309421c01f3f3663fc759"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2562fbcad733a35efaca67e9fb53a382"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev__module_8h.html#a2562fbcad733a35efaca67e9fb53a382">spdk_bdev_io_get_buf_cb</a>) (struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *ch, struct <a class="el" href="structspdk__bdev__io.html">spdk_bdev_io</a> *bdev_io, bool success)</td></tr>
+<tr class="memdesc:a2562fbcad733a35efaca67e9fb53a382"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback when buffer is allocated for the bdev I/O.  <a href="#a2562fbcad733a35efaca67e9fb53a382">More...</a><br /></td></tr>
+<tr class="separator:a2562fbcad733a35efaca67e9fb53a382"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad226e52efa62c0b31340be538000d1a8"><td class="memItemLeft" align="right" valign="top"><a id="ad226e52efa62c0b31340be538000d1a8"></a>
 typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_part_base_free_fn</b>) (void *ctx)</td></tr>
 <tr class="separator:ad226e52efa62c0b31340be538000d1a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -261,7 +261,7 @@ typedef&#160;</td><td class="memItemRight" valign="bottom"><b>STAILQ_HEAD</b> (,
 <tr class="memitem:a1d08fdcf7c3e636d41028fa7ea55aeb7"><td class="memItemLeft" align="right" valign="top">const struct spdk_bdev_aliases_list *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev__module_8h.html#a1d08fdcf7c3e636d41028fa7ea55aeb7">spdk_bdev_get_aliases</a> (const struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *bdev)</td></tr>
 <tr class="memdesc:a1d08fdcf7c3e636d41028fa7ea55aeb7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get pointer to block device aliases list.  <a href="#a1d08fdcf7c3e636d41028fa7ea55aeb7">More...</a><br /></td></tr>
 <tr class="separator:a1d08fdcf7c3e636d41028fa7ea55aeb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a934c7e96e8bdc0aea6cbcc0f414c71ba"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev__module_8h.html#a934c7e96e8bdc0aea6cbcc0f414c71ba">spdk_bdev_io_get_buf</a> (struct <a class="el" href="structspdk__bdev__io.html">spdk_bdev_io</a> *bdev_io, spdk_bdev_io_get_buf_cb cb, uint64_t len)</td></tr>
+<tr class="memitem:a934c7e96e8bdc0aea6cbcc0f414c71ba"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev__module_8h.html#a934c7e96e8bdc0aea6cbcc0f414c71ba">spdk_bdev_io_get_buf</a> (struct <a class="el" href="structspdk__bdev__io.html">spdk_bdev_io</a> *bdev_io, <a class="el" href="bdev__module_8h.html#a2562fbcad733a35efaca67e9fb53a382">spdk_bdev_io_get_buf_cb</a> cb, uint64_t len)</td></tr>
 <tr class="memdesc:a934c7e96e8bdc0aea6cbcc0f414c71ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate a buffer for given bdev_io.  <a href="#a934c7e96e8bdc0aea6cbcc0f414c71ba">More...</a><br /></td></tr>
 <tr class="separator:a934c7e96e8bdc0aea6cbcc0f414c71ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5db22de2bf8ceb0f640e05b92188bff5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev__module_8h.html#a5db22de2bf8ceb0f640e05b92188bff5">spdk_bdev_io_set_buf</a> (struct <a class="el" href="structspdk__bdev__io.html">spdk_bdev_io</a> *bdev_io, void *buf, size_t len)</td></tr>
@@ -373,6 +373,31 @@ typedef&#160;</td><td class="memItemRight" valign="bottom"><b>TAILQ_HEAD</b> (bd
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line"><span class="keyword">static</span> <span class="keywordtype">void</span> __attribute__((constructor)) spdk_bdev_module_register_##name(<span class="keywordtype">void</span>) \</div><div class="line">{ \</div><div class="line">        spdk_bdev_module_list_add(module); \</div><div class="line">} \</div></div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Typedef Documentation</h2>
+<a id="a2562fbcad733a35efaca67e9fb53a382"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2562fbcad733a35efaca67e9fb53a382">&#9670;&nbsp;</a></span>spdk_bdev_io_get_buf_cb</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void(* spdk_bdev_io_get_buf_cb) (struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *ch, struct <a class="el" href="structspdk__bdev__io.html">spdk_bdev_io</a> *bdev_io, bool success)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Callback when buffer is allocated for the bdev I/O. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ch</td><td>The I/O channel the bdev I/O was handled on. </td></tr>
+    <tr><td class="paramname">bdev_io</td><td>The bdev I/O </td></tr>
+    <tr><td class="paramname">success</td><td>True if buffer is allocated successfully or the bdev I/O has an SGL assigned already, or false if it failed. The possible reason of failure is the size of the buffer to allocate is greater than the permitted maximum. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
@@ -706,7 +731,7 @@ typedef&#160;</td><td class="memItemRight" valign="bottom"><b>TAILQ_HEAD</b> (bd
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">spdk_bdev_io_get_buf_cb&#160;</td>
+          <td class="paramtype"><a class="el" href="bdev__module_8h.html#a2562fbcad733a35efaca67e9fb53a382">spdk_bdev_io_get_buf_cb</a>&#160;</td>
           <td class="paramname"><em>cb</em>, </td>
         </tr>
         <tr>
