@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "b9095f51_3cf4c30d",
+        "filename": "_posts/2019-02-28-io_uring.md",
+        "patchSetId": 4
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 1011222
+      },
+      "writtenOn": "2019-02-28T20:23:04Z",
+      "side": 1,
+      "message": "ack - I\u0027m updating this based on your feedback",
+      "parentUuid": "7b8a6b9c_04029349",
+      "revId": "8e93e0db2613aad4f3e94344f788ab47cdcd0050",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "2726b822_dfc44e6f",
         "filename": "_posts/2019-02-28-io_uring.md",
         "patchSetId": 4
@@ -30,6 +48,24 @@
       "writtenOn": "2019-02-28T17:27:48Z",
       "side": 1,
       "message": "io_uring doesn\u0027t guarantee that you get your own NVMe queue pair. What it does guarantee is that you at least have your own lock-free user-space ring for submissions and completions, and that the device does not generate interrupts (if you set the appropriate flag). In practice, that mostly means you\u0027re going to get a dedicated NVMe queue pair that was pre-configured to match your requirements assigned to your ring, if one is available.",
+      "revId": "8e93e0db2613aad4f3e94344f788ab47cdcd0050",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "1a013889_897a2840",
+        "filename": "_posts/2019-02-28-io_uring.md",
+        "patchSetId": 4
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 1011222
+      },
+      "writtenOn": "2019-02-28T20:23:04Z",
+      "side": 1,
+      "message": "yeah - I wanted to keep these bullet points short, but knew that this one wasn\u0027t completely accurate - I\u0027ll reword",
+      "parentUuid": "2726b822_dfc44e6f",
       "revId": "8e93e0db2613aad4f3e94344f788ab47cdcd0050",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": true
@@ -81,6 +117,24 @@
       "writtenOn": "2019-02-28T17:27:48Z",
       "side": 1,
       "message": "Maybe clarify that the reason we\u0027ve come up with different results is that the posted benchmarks are using fio. Something like\"\n\nWe believe the discrepancy is primarily due to the use of fio when benchmarking SPDK. fio simply has too much overhead to accurately benchmark ultra-high performance I/O stacks. SPDK contains several stripped down benchmarking tools that can be used instead, and those tools show that SPDK\u0027s NVMe driver still maintains a 3-5x efficiency advantage over io_uring.\n\nThen go into the \"One thing is very clear\" part",
+      "revId": "8e93e0db2613aad4f3e94344f788ab47cdcd0050",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "9858f362_65ffb9ce",
+        "filename": "_posts/2019-02-28-io_uring.md",
+        "patchSetId": 4
+      },
+      "lineNbr": 30,
+      "author": {
+        "id": 1011222
+      },
+      "writtenOn": "2019-02-28T20:23:04Z",
+      "side": 1,
+      "message": "is it just fio though?  it seemed that Jens\u0027 spdk data, even with fio, was far less than expected and far less than we see on our systems",
+      "parentUuid": "423fb683_23baaa6c",
       "revId": "8e93e0db2613aad4f3e94344f788ab47cdcd0050",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": true
