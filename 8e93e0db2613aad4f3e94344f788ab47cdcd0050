@@ -1,0 +1,106 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "7b8a6b9c_04029349",
+        "filename": "_posts/2019-02-28-io_uring.md",
+        "patchSetId": 4
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 1010531
+      },
+      "writtenOn": "2019-02-28T17:27:48Z",
+      "side": 1,
+      "message": "This is partially true. It\u0027s the only mechanism to do asynchronous I/O. It\u0027s also the most efficient mechanism to generate higher queue depths (the other way is to spawn a bunch of threads and do blocking operations, which sucks). But it isn\u0027t the most efficient or highest performing method for doing I/O at queue depth 1 (preadv/pwritev are better), or for doing buffered I/O.",
+      "revId": "8e93e0db2613aad4f3e94344f788ab47cdcd0050",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "2726b822_dfc44e6f",
+        "filename": "_posts/2019-02-28-io_uring.md",
+        "patchSetId": 4
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 1010531
+      },
+      "writtenOn": "2019-02-28T17:27:48Z",
+      "side": 1,
+      "message": "io_uring doesn\u0027t guarantee that you get your own NVMe queue pair. What it does guarantee is that you at least have your own lock-free user-space ring for submissions and completions, and that the device does not generate interrupts (if you set the appropriate flag). In practice, that mostly means you\u0027re going to get a dedicated NVMe queue pair that was pre-configured to match your requirements assigned to your ring, if one is available.",
+      "revId": "8e93e0db2613aad4f3e94344f788ab47cdcd0050",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "40518fa7_bed77d6e",
+        "filename": "_posts/2019-02-28-io_uring.md",
+        "patchSetId": 4
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 1010531
+      },
+      "writtenOn": "2019-02-28T17:27:48Z",
+      "side": 1,
+      "message": "It allows for batched submission and completion in a single system call, which is even more powerful.",
+      "revId": "8e93e0db2613aad4f3e94344f788ab47cdcd0050",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "531ed930_65e9eb4e",
+        "filename": "_posts/2019-02-28-io_uring.md",
+        "patchSetId": 4
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 1010531
+      },
+      "writtenOn": "2019-02-28T17:27:48Z",
+      "side": 1,
+      "message": "Move however to beginning of the sentence.",
+      "revId": "8e93e0db2613aad4f3e94344f788ab47cdcd0050",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "423fb683_23baaa6c",
+        "filename": "_posts/2019-02-28-io_uring.md",
+        "patchSetId": 4
+      },
+      "lineNbr": 30,
+      "author": {
+        "id": 1010531
+      },
+      "writtenOn": "2019-02-28T17:27:48Z",
+      "side": 1,
+      "message": "Maybe clarify that the reason we\u0027ve come up with different results is that the posted benchmarks are using fio. Something like\"\n\nWe believe the discrepancy is primarily due to the use of fio when benchmarking SPDK. fio simply has too much overhead to accurately benchmark ultra-high performance I/O stacks. SPDK contains several stripped down benchmarking tools that can be used instead, and those tools show that SPDK\u0027s NVMe driver still maintains a 3-5x efficiency advantage over io_uring.\n\nThen go into the \"One thing is very clear\" part",
+      "revId": "8e93e0db2613aad4f3e94344f788ab47cdcd0050",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "a8c3545b_2603c0a8",
+        "filename": "_posts/2019-02-28-io_uring.md",
+        "patchSetId": 4
+      },
+      "lineNbr": 33,
+      "author": {
+        "id": 1010531
+      },
+      "writtenOn": "2019-02-28T17:27:48Z",
+      "side": 1,
+      "message": "Maybe say SPDK will have support for io_uring as a bdev module.",
+      "revId": "8e93e0db2613aad4f3e94344f788ab47cdcd0050",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    }
+  ]
+}
