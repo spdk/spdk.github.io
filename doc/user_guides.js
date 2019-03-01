@@ -126,7 +126,6 @@ var user_guides =
         [ "get_bdevs_iostat", "jsonrpc.html#rpc_get_bdevs_iostat", null ],
         [ "enable_bdev_histogram", "jsonrpc.html#rpc_enable_bdev_histogram", null ],
         [ "get_bdev_histogram", "jsonrpc.html#rpc_get_bdev_histogram", null ],
-        [ "delete_bdev", "jsonrpc.html#rpc_delete_bdev", null ],
         [ "set_bdev_qos_limit", "jsonrpc.html#rpc_set_bdev_qos_limit", null ],
         [ "construct_ocf_bdev", "jsonrpc.html#rpc_construct_ocf_bdev", null ],
         [ "delete_ocf_bdev", "jsonrpc.html#rpc_delete_ocf_bdev", null ],

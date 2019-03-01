@@ -23,6 +23,11 @@ var blob_8h =
       [ "BLOB_CLEAR_WITH_UNMAP", "blob_8h.html#a59a8d82e28e326595d68b63e0412aa5fa13d80174c5812f9bcfde7923bdbd30d4", null ],
       [ "BLOB_CLEAR_WITH_WRITE_ZEROES", "blob_8h.html#a59a8d82e28e326595d68b63e0412aa5fa3fb6f3ef3e37d9bd933d7e53a154c27d", null ]
     ] ],
+    [ "bs_clear_method", "blob_8h.html#acaee083ec43c409cfe9b86309ad751c6", [
+      [ "BS_CLEAR_WITH_UNMAP", "blob_8h.html#acaee083ec43c409cfe9b86309ad751c6a70ba65c2a64442207abc76625dbc5ee7", null ],
+      [ "BS_CLEAR_WITH_WRITE_ZEROES", "blob_8h.html#acaee083ec43c409cfe9b86309ad751c6a1030436e8babd9201effae5256265f75", null ],
+      [ "BS_CLEAR_WITH_NONE", "blob_8h.html#acaee083ec43c409cfe9b86309ad751c6ad9f9ae86a2b896a83750c1bde826c766", null ]
+    ] ],
     [ "spdk_blob_close", "blob_8h.html#ac6ca1e83e9608eb1dea9fca62881d350", null ],
     [ "spdk_blob_get_clones", "blob_8h.html#a1482c72fb9cb040999a376096d3e7caf", null ],
     [ "spdk_blob_get_id", "blob_8h.html#a40ed8868e620ad0e15e2bc4b923ccff0", null ],

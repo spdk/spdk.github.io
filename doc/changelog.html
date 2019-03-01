@@ -202,6 +202,7 @@ v19.01:</h1>
 <h2>logical volumes</h2>
 <p>Logical volume bdev can now be marked as read only using <code>set_read_only_lvol_bdev</code> RPC. This allows for basing clones on top of lvol_bdev without first creating a snapshot.</p>
 <p>Added option to change method for data erasure when deleting lvol or resizing down. Default of unmapping clusters can now be changed to writing zeroes or no operation.</p>
+<p>Added option to change method for erasing data region on lvol store creation. Default of unmapping can now be changed to writing zeroes or no operation.</p>
 <h2>log</h2>
 <p>"trace flags" are now referred to as "log flags" in the SPDK log API. The set_trace_flag, clear_trace_flag and get_trace_flags RPCs are now deprecated, and set_log_flag, clear_log_flag and get_log_flags RPCs have been added.</p>
 <h2>trace</h2>

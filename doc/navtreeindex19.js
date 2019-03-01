@@ -1,5 +1,14 @@
 var NAVTREEINDEX19 =
 {
+"structspdk__trace__flags.html#ad7aae2959ed72743507c2bb5c36a70b5":[13,0,231,0],
+"structspdk__trace__flags.html#ae2aaf775673a5e9a1efe443aa8ca7e4f":[13,0,231,5],
+"structspdk__trace__flags.html#afefc53c12cc20565e7d7e8c49775178f":[13,0,231,2],
+"structspdk__trace__histories.html":[13,0,232],
+"structspdk__trace__histories.html#a66eb3d8f3f7fdcc8ee0eb3764db0d7e7":[13,0,232,1],
+"structspdk__trace__histories.html#a7aefcda50154e7d20f2c0bfdb66285d2":[13,0,232,0],
+"structspdk__trace__history.html":[13,0,233],
+"structspdk__trace__history.html#a09f645e9d5c19fb4e4fe71b4faaa3951":[13,0,233,0],
+"structspdk__trace__history.html#a57438d2b62e8bef76601a2b881345463":[13,0,233,3],
 "structspdk__trace__history.html#a5d36fc5a17dddc7e14b32aa1598a7ee8":[13,0,233,4],
 "structspdk__trace__history.html#ab6aed08b66a3c7f1bf46a1fb4b5d6419":[13,0,233,2],
 "structspdk__trace__history.html#afc00e204c28b550c0dd2f8140a08e566":[13,0,233,1],
@@ -240,14 +249,5 @@ var NAVTREEINDEX19 =
 "unionspdk__nvme__feat__error__recovery.html#ae572c4a161ba9dcd9f26129dcb926fc3":[13,0,98,3],
 "unionspdk__nvme__feat__host__controlled__thermal__management.html":[13,0,99],
 "unionspdk__nvme__feat__host__controlled__thermal__management.html#a196363adf5f14463140d5c3d7d7a0564":[13,0,99,2],
-"unionspdk__nvme__feat__host__controlled__thermal__management.html#a338b40cf001af79256ad2423dc79fc47":[13,0,99,0],
-"unionspdk__nvme__feat__host__controlled__thermal__management.html#a683af96774029ba95fcbb43ef78d487e":[13,0,99,3],
-"unionspdk__nvme__feat__host__controlled__thermal__management.html#aed69c683b8bf4f7c1698fcfc62d66c7c":[13,0,99,1],
-"unionspdk__nvme__feat__host__identifier.html":[13,0,100],
-"unionspdk__nvme__feat__host__identifier.html#a3e02a1f9692c7f2f238821db05d34110":[13,0,100,2],
-"unionspdk__nvme__feat__host__identifier.html#aac6f3da2555497867e0c450a223415a1":[13,0,100,3],
-"unionspdk__nvme__feat__host__identifier.html#abe582ebd57c5130773da6ec66e49007c":[13,0,100,1],
-"unionspdk__nvme__feat__host__identifier.html#ac917997f94802fd3916340173705f8dc":[13,0,100,0],
-"unionspdk__nvme__feat__host__mem__buffer.html":[13,0,101],
-"unionspdk__nvme__feat__host__mem__buffer.html#a68c28c2479533b01ab8edd60cdfed6a0":[13,0,101,2]
+"unionspdk__nvme__feat__host__controlled__thermal__management.html#a338b40cf001af79256ad2423dc79fc47":[13,0,99,0]
 };

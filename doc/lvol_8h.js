@@ -13,6 +13,11 @@ var lvol_8h =
       [ "LVOL_CLEAR_WITH_UNMAP", "lvol_8h.html#a4fe537bc10bf854d592e6bbda42b26dcad0be79dcdb4f4810886bf46567f35850", null ],
       [ "LVOL_CLEAR_WITH_WRITE_ZEROES", "lvol_8h.html#a4fe537bc10bf854d592e6bbda42b26dcafe822de13a3be56a947a1246d61dd0ad", null ]
     ] ],
+    [ "lvs_clear_method", "lvol_8h.html#a456e6d568f052c7f4bb6d780d66ef279", [
+      [ "LVS_CLEAR_WITH_UNMAP", "lvol_8h.html#a456e6d568f052c7f4bb6d780d66ef279a61175f0bb2273554422a2c73b7232eb7", null ],
+      [ "LVS_CLEAR_WITH_WRITE_ZEROES", "lvol_8h.html#a456e6d568f052c7f4bb6d780d66ef279a6df7e9490896b9d041424a321e7ee110", null ],
+      [ "LVS_CLEAR_WITH_NONE", "lvol_8h.html#a456e6d568f052c7f4bb6d780d66ef279a7150d243a0a1d3fed342adce016a796d", null ]
+    ] ],
     [ "spdk_lvol_close", "lvol_8h.html#a89835586bb7e2e6e78bd0e4cd4c4d45b", null ],
     [ "spdk_lvol_create", "lvol_8h.html#ab3586b04e9b91ac588f3f1ff2603876c", null ],
     [ "spdk_lvol_create_clone", "lvol_8h.html#a2dfba2354de69f535ab0c39693c9ae73", null ],
