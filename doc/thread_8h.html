@@ -220,6 +220,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="thre
 <tr class="memitem:a5a143ecbc5ce7edcd57e76cffd74bde5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="thread_8h.html#a5a143ecbc5ce7edcd57e76cffd74bde5">spdk_thread_has_active_pollers</a> (struct spdk_thread *thread)</td></tr>
 <tr class="memdesc:a5a143ecbc5ce7edcd57e76cffd74bde5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether there are any active pollers (pollers for which period_microseconds equals 0) registered to be run on the thread.  <a href="#a5a143ecbc5ce7edcd57e76cffd74bde5">More...</a><br /></td></tr>
 <tr class="separator:a5a143ecbc5ce7edcd57e76cffd74bde5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f877dd192ccdd30572941aa4e453c48"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="thread_8h.html#a9f877dd192ccdd30572941aa4e453c48">spdk_thread_has_pollers</a> (struct spdk_thread *thread)</td></tr>
+<tr class="memdesc:a9f877dd192ccdd30572941aa4e453c48"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether there are any pollers registered to be run on the thread.  <a href="#a9f877dd192ccdd30572941aa4e453c48">More...</a><br /></td></tr>
+<tr class="separator:a9f877dd192ccdd30572941aa4e453c48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc45e09bda68d13cfc0ae010738cd658"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="thread_8h.html#adc45e09bda68d13cfc0ae010738cd658">spdk_thread_is_idle</a> (struct spdk_thread *thread)</td></tr>
+<tr class="memdesc:adc45e09bda68d13cfc0ae010738cd658"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether there are scheduled operations to be run on the thread.  <a href="#adc45e09bda68d13cfc0ae010738cd658">More...</a><br /></td></tr>
+<tr class="separator:adc45e09bda68d13cfc0ae010738cd658"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1d77f05c2461acb75f333e67e6aeb1ed"><td class="memItemLeft" align="right" valign="top"><a id="a1d77f05c2461acb75f333e67e6aeb1ed"></a>
 uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="thread_8h.html#a1d77f05c2461acb75f333e67e6aeb1ed">spdk_thread_get_count</a> (void)</td></tr>
 <tr class="memdesc:a1d77f05c2461acb75f333e67e6aeb1ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get count of allocated threads. <br /></td></tr>
@@ -1280,6 +1286,60 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>1 if there is at least one active poller, 0 otherwise. </dd></dl>
+
+</div>
+</div>
+<a id="a9f877dd192ccdd30572941aa4e453c48"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9f877dd192ccdd30572941aa4e453c48">&#9670;&nbsp;</a></span>spdk_thread_has_pollers()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool spdk_thread_has_pollers </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_thread *&#160;</td>
+          <td class="paramname"><em>thread</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns whether there are any pollers registered to be run on the thread. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">thread</td><td>The thread to check.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if there is any active poller, false otherwise. </dd></dl>
+
+</div>
+</div>
+<a id="adc45e09bda68d13cfc0ae010738cd658"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc45e09bda68d13cfc0ae010738cd658">&#9670;&nbsp;</a></span>spdk_thread_is_idle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool spdk_thread_is_idle </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_thread *&#160;</td>
+          <td class="paramname"><em>thread</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns whether there are scheduled operations to be run on the thread. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">thread</td><td>The thread to check.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if there are no scheduled operations, false otherwise. </dd></dl>
 
 </div>
 </div>

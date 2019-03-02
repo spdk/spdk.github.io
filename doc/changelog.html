@@ -144,6 +144,9 @@ v19.04: (Upcoming Release)</h1>
 <p>Added asynchronous probe support. New APIs <a class="el" href="nvme_8h.html#a02411bf7ae4827a350711e688316997e" title="Probe and add controllers to the probe context list. ">spdk_nvme_probe_async()</a> and <a class="el" href="nvme_8h.html#a1e5e85b201f648d307ce0a7c326ef35c" title="Start controllers in the context list. ">spdk_nvme_probe_poll_async()</a> were added to enable this feature.</p>
 <h2>raid</h2>
 <p>Added new strip_size_kb rpc param on create to replace the more ambiguous strip_size. The strip_size rpc param is deprecated.</p>
+<h2>thread</h2>
+<p>Added <a class="el" href="thread_8h.html#a9f877dd192ccdd30572941aa4e453c48" title="Returns whether there are any pollers registered to be run on the thread. ">spdk_thread_has_pollers()</a> function to verify if there are any registered pollers to be run on the thread.</p>
+<p>Added <a class="el" href="thread_8h.html#adc45e09bda68d13cfc0ae010738cd658" title="Returns whether there are scheduled operations to be run on the thread. ">spdk_thread_is_idle()</a> function to check if there are any scheduled operations to be performed on the thread at given time.</p>
 <h1><a class="anchor" id="changelog-v19-01"></a>
 v19.01:</h1>
 <h2>ocf bdev</h2>
