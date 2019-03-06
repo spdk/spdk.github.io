@@ -140,6 +140,8 @@ $(document).ready(function(){initNavTree('changelog.html','');});
 <div class="contents">
 <div class="textblock"><h1><a class="anchor" id="changelog-v19-04"></a>
 v19.04: (Upcoming Release)</h1>
+<h2>thread</h2>
+<p><a class="el" href="event_8h.html#ae85e97e691500ac432665dcb09ba8409" title="Start the framework. ">spdk_app_start()</a> now only accepts a single context argument.</p>
 <h2>nvme</h2>
 <p>Added asynchronous probe support. New APIs <a class="el" href="nvme_8h.html#a02411bf7ae4827a350711e688316997e" title="Probe and add controllers to the probe context list. ">spdk_nvme_probe_async()</a> and <a class="el" href="nvme_8h.html#a1e5e85b201f648d307ce0a7c326ef35c" title="Start controllers in the context list. ">spdk_nvme_probe_poll_async()</a> were added to enable this feature.</p>
 <h2>raid</h2>
@@ -393,7 +395,7 @@ v18.04: Logical Volume Snapshot/Clone, iSCSI Initiator, Bdev QoS, VPP Userspace 
 <p>Resizing logical volumes is now supported via the <code>resize_lvol_bdev</code> RPC method.</p>
 <h2>Lib</h2>
 <p>A set of changes were made in the SPDK's lib code altering instances of calls to <code>exit()</code> and <code>abort()</code> to return a failure instead wherever reasonably possible.</p>
-<p><a class="el" href="event_8h.html#a18879873a585b21f44b7c90be8726ce1" title="Start the framework. ">spdk_app_start()</a> no longer exit()'s on an internal failure, but instead returns a non-zero error status.</p>
+<p><a class="el" href="event_8h.html#ae85e97e691500ac432665dcb09ba8409" title="Start the framework. ">spdk_app_start()</a> no longer exit()'s on an internal failure, but instead returns a non-zero error status.</p>
 <p><a class="el" href="event_8h.html#acc52e8c68c8ccec4640e14f687157afe" title="Helper function for parsing arguments and printing usage messages. ">spdk_app_parse_args()</a> no longer exit()'s on help, '-h', or an invalid option, but instead returns SPDK_APP_PARSE_ARGS_HELP and SPDK_APP_PARSE_ARGS_FAIL, respectively, and SPDK_APP_PARSE_ARGS_SUCCESS on success.</p>
 <p>spdk_pci_get_device() has been deprecated and will be removed in SPDK v18.07.</p>
 <h2>I/O Channels</h2>

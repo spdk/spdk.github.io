@@ -51,6 +51,7 @@ var env_8h =
     [ "spdk_free", "env_8h.html#a452d670d7188f883224574dfabc39f2c", null ],
     [ "spdk_get_ticks", "env_8h.html#a7d868d272aa0c000f6135966dfadc596", null ],
     [ "spdk_get_ticks_hz", "env_8h.html#a0e7d0eb3000d71b588486cf9903cd434", null ],
+    [ "spdk_iommu_is_enabled", "env_8h.html#ab7e36d9cc7a1aa8ae701bec368502273", null ],
     [ "spdk_malloc", "env_8h.html#a668370523a786a75a7d08a8e8f4b28b9", null ],
     [ "spdk_mem_map_alloc", "env_8h.html#aa1baea2604a87f2544317cf0c7309a44", null ],
     [ "spdk_mem_map_clear_translation", "env_8h.html#a2fb4967ae71277512334ad27ef481326", null ],

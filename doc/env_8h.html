@@ -363,6 +363,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_
 <tr class="memitem:a982e1b212d497dbb209902f56b192afb"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_8h.html#a982e1b212d497dbb209902f56b192afb">spdk_ring_dequeue</a> (struct spdk_ring *ring, void **objs, size_t count)</td></tr>
 <tr class="memdesc:a982e1b212d497dbb209902f56b192afb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dequeue count objects from the ring into the array objs.  <a href="#a982e1b212d497dbb209902f56b192afb">More...</a><br /></td></tr>
 <tr class="separator:a982e1b212d497dbb209902f56b192afb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7e36d9cc7a1aa8ae701bec368502273"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_8h.html#ab7e36d9cc7a1aa8ae701bec368502273">spdk_iommu_is_enabled</a> (void)</td></tr>
+<tr class="memdesc:ab7e36d9cc7a1aa8ae701bec368502273"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reports whether the SPDK application is using the IOMMU for DMA.  <a href="#ab7e36d9cc7a1aa8ae701bec368502273">More...</a><br /></td></tr>
+<tr class="separator:ab7e36d9cc7a1aa8ae701bec368502273"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac6a932523e0f4cb86d2b90dfe113b171"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_8h.html#ac6a932523e0f4cb86d2b90dfe113b171">spdk_vtophys</a> (void *buf, uint64_t *size)</td></tr>
 <tr class="memdesc:ac6a932523e0f4cb86d2b90dfe113b171"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the physical address of a buffer.  <a href="#ac6a932523e0f4cb86d2b90dfe113b171">More...</a><br /></td></tr>
 <tr class="separator:ac6a932523e0f4cb86d2b90dfe113b171"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1202,6 +1205,27 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_
 
 <p>Get the tick rate of <a class="el" href="env_8h.html#a7d868d272aa0c000f6135966dfadc596" title="Get a monotonic timestamp counter. ">spdk_get_ticks()</a> per second. </p>
 <dl class="section return"><dt>Returns</dt><dd>the tick rate of <a class="el" href="env_8h.html#a7d868d272aa0c000f6135966dfadc596" title="Get a monotonic timestamp counter. ">spdk_get_ticks()</a> per second. </dd></dl>
+
+</div>
+</div>
+<a id="ab7e36d9cc7a1aa8ae701bec368502273"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab7e36d9cc7a1aa8ae701bec368502273">&#9670;&nbsp;</a></span>spdk_iommu_is_enabled()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool spdk_iommu_is_enabled </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Reports whether the SPDK application is using the IOMMU for DMA. </p>
+<dl class="section return"><dt>Returns</dt><dd>True if we are using the IOMMU, false otherwise. </dd></dl>
 
 </div>
 </div>
