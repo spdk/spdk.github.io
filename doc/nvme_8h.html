@@ -209,6 +209,10 @@ Enumerations</h2></td></tr>
  }<tr class="memdesc:ae87a03c28984a2c0499d50ef5e9d0ece"><td class="mdescLeft">&#160;</td><td class="mdescRight">NVMe library transports.  <a href="nvme_8h.html#ae87a03c28984a2c0499d50ef5e9d0ece">More...</a><br /></td></tr>
 </td></tr>
 <tr class="separator:ae87a03c28984a2c0499d50ef5e9d0ece"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add21ceb016f09949ac6cef50e0566818"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#add21ceb016f09949ac6cef50e0566818">spdk_nvme_ctrlr_flags</a> { <a class="el" href="nvme_8h.html#add21ceb016f09949ac6cef50e0566818a06c93626e819195260a55c69dba063c6">SPDK_NVME_CTRLR_SGL_SUPPORTED</a> = 0x1, 
+<a class="el" href="nvme_8h.html#add21ceb016f09949ac6cef50e0566818a7bddfe71a101581b0daa4812fbd93268">SPDK_NVME_CTRLR_SECURITY_SEND_RECV_SUPPORTED</a> = 0x2
+ }</td></tr>
+<tr class="separator:add21ceb016f09949ac6cef50e0566818"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a018f3b986b4345ee0c6931be9718c163"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a018f3b986b4345ee0c6931be9718c163">spdk_nvme_ns_flags</a> { <br />
 &#160;&#160;<a class="el" href="nvme_8h.html#a018f3b986b4345ee0c6931be9718c163a80dcd48a57fa9e14efba4757300ad729">SPDK_NVME_NS_DEALLOCATE_SUPPORTED</a> = 0x1, 
 <a class="el" href="nvme_8h.html#a018f3b986b4345ee0c6931be9718c163ad403aafc70c00560a1db768029933400">SPDK_NVME_NS_FLUSH_SUPPORTED</a> = 0x2, 
@@ -374,6 +378,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ada4ab089f73f3f43e9c5b8e6415e6f50"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#ada4ab089f73f3f43e9c5b8e6415e6f50">spdk_nvme_ctrlr_security_send</a> (struct spdk_nvme_ctrlr *ctrlr, uint8_t secp, uint16_t spsp, uint8_t nssf, void *payload, size_t size)</td></tr>
 <tr class="memdesc:ada4ab089f73f3f43e9c5b8e6415e6f50"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send security protocol data to controller.  <a href="#ada4ab089f73f3f43e9c5b8e6415e6f50">More...</a><br /></td></tr>
 <tr class="separator:ada4ab089f73f3f43e9c5b8e6415e6f50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af654a7a016511f265b29294fd06ce26e"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#af654a7a016511f265b29294fd06ce26e">spdk_nvme_ctrlr_get_flags</a> (struct spdk_nvme_ctrlr *ctrlr)</td></tr>
+<tr class="memdesc:af654a7a016511f265b29294fd06ce26e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get supported flags of the controller.  <a href="#af654a7a016511f265b29294fd06ce26e">More...</a><br /></td></tr>
+<tr class="separator:af654a7a016511f265b29294fd06ce26e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae935583b7f95b13fbd2dd41255490da0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#ae935583b7f95b13fbd2dd41255490da0">spdk_nvme_ctrlr_attach_ns</a> (struct spdk_nvme_ctrlr *ctrlr, uint32_t nsid, struct <a class="el" href="structspdk__nvme__ctrlr__list.html">spdk_nvme_ctrlr_list</a> *payload)</td></tr>
 <tr class="memdesc:ae935583b7f95b13fbd2dd41255490da0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Attach the specified namespace to controllers.  <a href="#ae935583b7f95b13fbd2dd41255490da0">More...</a><br /></td></tr>
 <tr class="separator:ae935583b7f95b13fbd2dd41255490da0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -712,6 +719,26 @@ int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_retry_co
 </div>
 </div>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
+<a id="add21ceb016f09949ac6cef50e0566818"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add21ceb016f09949ac6cef50e0566818">&#9670;&nbsp;</a></span>spdk_nvme_ctrlr_flags</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="nvme_8h.html#add21ceb016f09949ac6cef50e0566818">spdk_nvme_ctrlr_flags</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="add21ceb016f09949ac6cef50e0566818a06c93626e819195260a55c69dba063c6"></a>SPDK_NVME_CTRLR_SGL_SUPPORTED&#160;</td><td class="fielddoc"><p>The SGL is supported. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="add21ceb016f09949ac6cef50e0566818a7bddfe71a101581b0daa4812fbd93268"></a>SPDK_NVME_CTRLR_SECURITY_SEND_RECV_SUPPORTED&#160;</td><td class="fielddoc"><p>security send/receive is supported </p>
+</td></tr>
+</table>
+
+</div>
+</div>
 <a id="a018f3b986b4345ee0c6931be9718c163"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a018f3b986b4345ee0c6931be9718c163">&#9670;&nbsp;</a></span>spdk_nvme_ns_flags</h2>
 
@@ -2035,6 +2062,33 @@ int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_retry_co
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the nsid of the first active namespace, 0 if there are no active namespaces. </dd></dl>
+
+</div>
+</div>
+<a id="af654a7a016511f265b29294fd06ce26e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af654a7a016511f265b29294fd06ce26e">&#9670;&nbsp;</a></span>spdk_nvme_ctrlr_get_flags()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint64_t spdk_nvme_ctrlr_get_flags </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_nvme_ctrlr *&#160;</td>
+          <td class="paramname"><em>ctrlr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get supported flags of the controller. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ctrlr</td><td>NVMe controller to get flags.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>supported flags of this controller. </dd></dl>
 
 </div>
 </div>

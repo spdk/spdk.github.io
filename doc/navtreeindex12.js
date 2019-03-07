@@ -1,5 +1,15 @@
 var NAVTREEINDEX12 =
 {
+"structiscsi__bhs__text__resp.html#a8a67e54d0d5f9577e0976946a3df3fdd":[13,0,20,1],
+"structiscsi__bhs__text__resp.html#ad665bf2b0a04e14a269a36afa7c3256f":[13,0,20,10],
+"structiscsi__bhs__text__resp.html#aecf7b14aca15185295b451cfba813e0d":[13,0,20,6],
+"structspdk__app__opts.html":[13,0,21],
+"structspdk__app__opts.html#a132140a9733933e19bde81ffb3421b6e":[13,0,21,18],
+"structspdk__app__opts.html#a1588a2f9d5a96fa56c9081ad84b7902a":[13,0,21,13],
+"structspdk__app__opts.html#a2a264093fd74433b83da1a4edc757b59":[13,0,21,17],
+"structspdk__app__opts.html#a3621332b57cec3e2968063c6484451ad":[13,0,21,16],
+"structspdk__app__opts.html#a362c97242a5610d65e51e92183abc8d0":[13,0,21,19],
+"structspdk__app__opts.html#a3b82ef17d584db64284a5851b5760e4c":[13,0,21,15],
 "structspdk__app__opts.html#a41fa1b1b7c5f2872c5fce6074960bfc5":[13,0,21,21],
 "structspdk__app__opts.html#a5181e4f5f9b4b87b42f26fb87b071faa":[13,0,21,12],
 "structspdk__app__opts.html#a524584177bee58d89de5808d5580d0c7":[13,0,21,11],
@@ -239,15 +249,5 @@ var NAVTREEINDEX12 =
 "structspdk__env__opts.html#a54e6333e5067530db7e69b95ef8808ca":[13,0,44,1],
 "structspdk__env__opts.html#a6855febb839126ea56998905404e8451":[13,0,44,12],
 "structspdk__env__opts.html#a7380a2e50e30d2905a9a201ab6533c9e":[13,0,44,10],
-"structspdk__env__opts.html#a73b51e22db66de58ffd429e7480b972f":[13,0,44,11],
-"structspdk__env__opts.html#aa2f18340dae1a40ec69fec08f5ce3b0b":[13,0,44,5],
-"structspdk__env__opts.html#ada14eeed7d023f5ddc4b468ca00a4fc8":[13,0,44,7],
-"structspdk__env__opts.html#adfe7415c1f8e3e47e7c7b06233da0a80":[13,0,44,9],
-"structspdk__env__opts.html#ae57b5f0c41ed9f5f450a39839a1ec452":[13,0,44,6],
-"structspdk__file__stat.html":[13,0,45],
-"structspdk__file__stat.html#a10342069ee41a5c1fefee0f106abd2e7":[13,0,45,1],
-"structspdk__file__stat.html#a57aa1b12331152b46f8d811caa0936df":[13,0,45,0],
-"structspdk__ftl__attrs.html":[13,0,46],
-"structspdk__ftl__attrs.html#a00c7ee461678750becaefbc9608d58c2":[13,0,46,0],
-"structspdk__ftl__attrs.html#ab398d419db70dd7e3de3d69c676a2723":[13,0,46,3]
+"structspdk__env__opts.html#a73b51e22db66de58ffd429e7480b972f":[13,0,44,11]
 };

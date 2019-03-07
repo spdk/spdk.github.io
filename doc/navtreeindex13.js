@@ -1,5 +1,15 @@
 var NAVTREEINDEX13 =
 {
+"structspdk__env__opts.html#aa2f18340dae1a40ec69fec08f5ce3b0b":[13,0,44,5],
+"structspdk__env__opts.html#ada14eeed7d023f5ddc4b468ca00a4fc8":[13,0,44,7],
+"structspdk__env__opts.html#adfe7415c1f8e3e47e7c7b06233da0a80":[13,0,44,9],
+"structspdk__env__opts.html#ae57b5f0c41ed9f5f450a39839a1ec452":[13,0,44,6],
+"structspdk__file__stat.html":[13,0,45],
+"structspdk__file__stat.html#a10342069ee41a5c1fefee0f106abd2e7":[13,0,45,1],
+"structspdk__file__stat.html#a57aa1b12331152b46f8d811caa0936df":[13,0,45,0],
+"structspdk__ftl__attrs.html":[13,0,46],
+"structspdk__ftl__attrs.html#a00c7ee461678750becaefbc9608d58c2":[13,0,46,0],
+"structspdk__ftl__attrs.html#ab398d419db70dd7e3de3d69c676a2723":[13,0,46,3],
 "structspdk__ftl__attrs.html#ab5607984fcfd9302e2b1333d7951abd2":[13,0,46,1],
 "structspdk__ftl__attrs.html#afebcc710fe6130d60380b9b55a26f057":[13,0,46,2],
 "structspdk__ftl__conf.html":[13,0,47],
@@ -239,15 +249,5 @@ var NAVTREEINDEX13 =
 "structspdk__ioat__xor__hw__desc.html#a67e84a1a99b5690fab69c6f4a038ad9f":[13,0,66,4],
 "structspdk__ioat__xor__hw__desc.html#a6884112bd4dca537f37a0b1d0bad228d":[13,0,66,0],
 "structspdk__ioat__xor__hw__desc.html#a916fd149dff1045d79777f30e9281e5a":[13,0,66,5],
-"structspdk__ioat__xor__hw__desc.html#a95001c2c87a96fd754386c8fc6e7116f":[13,0,66,8],
-"structspdk__ioat__xor__hw__desc.html#aa69817ce0d15cc2caa495a1d3f5f8d80":[13,0,66,1],
-"structspdk__ioat__xor__hw__desc.html#aacb8b9ac37bb2be6968d428b08068609":[13,0,66,9],
-"structspdk__ioat__xor__hw__desc.html#abd51c84ede32201c91a071aada4218ef":[13,0,66,15],
-"structspdk__ioat__xor__hw__desc.html#ac75369616118a562812fcc21756972dc":[13,0,66,14],
-"structspdk__ioat__xor__hw__desc.html#ac92b5474f72ac562a34798a7f876acd7":[13,0,66,11],
-"structspdk__ioat__xor__hw__desc.html#ad2084a26b29723fbc1986b93741ae4aa":[13,0,66,3],
-"structspdk__ioat__xor__hw__desc.html#ad5132becbbf1d3ad1b9b0d6cf3b9cd45":[13,0,66,16],
-"structspdk__ioat__xor__hw__desc.html#aebbe290c07ef8c88ac4e14a1329dd368":[13,0,66,13],
-"structspdk__ioat__xor__hw__desc.html#afc217d72348f20f8ee53dcb7f884bf5a":[13,0,66,19],
-"structspdk__json__object__decoder.html":[13,0,67]
+"structspdk__ioat__xor__hw__desc.html#a95001c2c87a96fd754386c8fc6e7116f":[13,0,66,8]
 };

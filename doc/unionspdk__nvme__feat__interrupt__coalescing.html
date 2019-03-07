@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="Content-Type" content="text/xhtml; charset=utf-8">
   <meta name="generator" content="Doxygen 1.8.13">
-  <title>SPDK: spdk_nvme_tcp_ic_resp Struct Reference</title>
+  <title>SPDK: spdk_nvme_feat_interrupt_coalescing Union Reference</title>
   <script type="text/javascript" src="jquery.js"></script>
   <script type="text/javascript" src="dynsections.js"></script>
   <link href="navtree.css" rel="stylesheet" type="text/css"/>
@@ -116,7 +116,7 @@ $(function() {
   </div>
 </div>
 <script type="text/javascript">
-$(document).ready(function(){initNavTree('structspdk__nvme__tcp__ic__resp.html','');});
+$(document).ready(function(){initNavTree('unionspdk__nvme__feat__interrupt__coalescing.html','');});
 </script>
 <div id="doc-content">
 <!-- window showing the filter options -->
@@ -137,66 +137,38 @@ $(document).ready(function(){initNavTree('structspdk__nvme__tcp__ic__resp.html',
   <div class="summary">
 <a href="#pub-attribs">Data Fields</a>  </div>
   <div class="headertitle">
-<div class="title">spdk_nvme_tcp_ic_resp Struct Reference</div>  </div>
+<div class="title">spdk_nvme_feat_interrupt_coalescing Union Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>ICResp.  
- <a href="structspdk__nvme__tcp__ic__resp.html#details">More...</a></p>
-<div class="dynheader">
-Collaboration diagram for spdk_nvme_tcp_ic_resp:</div>
-<div class="dyncontent">
-<div class="center"><img src="structspdk__nvme__tcp__ic__resp__coll__graph.png" border="0" usemap="#spdk__nvme__tcp__ic__resp_coll__map" alt="Collaboration graph"/></div>
-<map name="spdk__nvme__tcp__ic__resp_coll__map" id="spdk__nvme__tcp__ic__resp_coll__map">
-<area shape="rect" id="node2" href="structspdk__nvme__tcp__common__pdu__hdr.html" title="Common NVMe/TCP PDU header. " alt="" coords="5,5,193,47"/>
-</map>
-<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
+<p>Data used by Set Features/Get Features <a class="el" href="nvme__spec_8h.html#aeae5c5fb9df2c7a39215c71f9d9b4c25af78a0869f0f08d1391b076ceaf76c0d1">SPDK_NVME_FEAT_INTERRUPT_COALESCING</a>.  
+ <a href="unionspdk__nvme__feat__interrupt__coalescing.html#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:ab77d5636f357b733ad803e17e36d4804"><td class="memItemLeft" align="right" valign="top"><a id="ab77d5636f357b733ad803e17e36d4804"></a>
-struct <a class="el" href="structspdk__nvme__tcp__common__pdu__hdr.html">spdk_nvme_tcp_common_pdu_hdr</a>&#160;</td><td class="memItemRight" valign="bottom"><b>common</b></td></tr>
-<tr class="separator:ab77d5636f357b733ad803e17e36d4804"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7e0b105cdbcbaf86dd818ee51c354ced"><td class="memItemLeft" align="right" valign="top"><a id="a7e0b105cdbcbaf86dd818ee51c354ced"></a>
-uint16_t&#160;</td><td class="memItemRight" valign="bottom"><b>pfv</b></td></tr>
-<tr class="separator:a7e0b105cdbcbaf86dd818ee51c354ced"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaf69d394b0b1130b31493381e7eb8553"><td class="memItemLeft" align="right" valign="top"><a id="aaf69d394b0b1130b31493381e7eb8553"></a>
-uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__tcp__ic__resp.html#aaf69d394b0b1130b31493381e7eb8553">cpda</a></td></tr>
-<tr class="memdesc:aaf69d394b0b1130b31493381e7eb8553"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specifies the data alignment for all PDUs transferred from the host to the controller that contain data. <br /></td></tr>
-<tr class="separator:aaf69d394b0b1130b31493381e7eb8553"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a492c31e3fd7d4be07ca58ee42f759a6a"><td class="memItemLeft" ><a id="a492c31e3fd7d4be07ca58ee42f759a6a"></a>
-union {</td></tr>
-<tr class="memitem:a4d3cff09ff3ef02873091c1ab9ccc516"><td class="memItemLeft" >
-&#160;&#160;&#160;uint8_t&#160;&#160;&#160;<b>raw</b></td></tr>
-<tr class="separator:a4d3cff09ff3ef02873091c1ab9ccc516"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8f748ad9c45d04b2e4541b1570402f84"><td class="memItemLeft" >
-&#160;&#160;&#160;struct {</td></tr>
-<tr class="memitem:a33962b1cb3aadf8789763bd555bbe5cb"><td class="memItemLeft" >
-&#160;&#160;&#160;&#160;&#160;&#160;uint8_t&#160;&#160;&#160;<b>hdgst_enable</b>: 1</td></tr>
-<tr class="separator:a33962b1cb3aadf8789763bd555bbe5cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7f5b3fa1969193814b1289e3aeced87"><td class="memItemLeft" >
-&#160;&#160;&#160;&#160;&#160;&#160;uint8_t&#160;&#160;&#160;<b>ddgst_enable</b>: 1</td></tr>
-<tr class="separator:ab7f5b3fa1969193814b1289e3aeced87"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa2fa347d6d2b8a499d5d8e4caa6ac117"><td class="memItemLeft" >
-&#160;&#160;&#160;&#160;&#160;&#160;uint8_t&#160;&#160;&#160;<b>reserved</b>: 6</td></tr>
-<tr class="separator:aa2fa347d6d2b8a499d5d8e4caa6ac117"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8f748ad9c45d04b2e4541b1570402f84"><td class="memItemLeft" valign="top">&#160;&#160;&#160;}&#160;&#160;&#160;<b>bits</b></td></tr>
-<tr class="separator:a8f748ad9c45d04b2e4541b1570402f84"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a492c31e3fd7d4be07ca58ee42f759a6a"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><b>dgst</b></td></tr>
-<tr class="separator:a492c31e3fd7d4be07ca58ee42f759a6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae19af16d43dd54e43ccfeccd7f6119dc"><td class="memItemLeft" align="right" valign="top"><a id="ae19af16d43dd54e43ccfeccd7f6119dc"></a>
-uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__tcp__ic__resp.html#ae19af16d43dd54e43ccfeccd7f6119dc">maxh2cdata</a></td></tr>
-<tr class="memdesc:ae19af16d43dd54e43ccfeccd7f6119dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specifies the maximum number of PDU-Data bytes per H2C Data Transfer PDU. <br /></td></tr>
-<tr class="separator:ae19af16d43dd54e43ccfeccd7f6119dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5fac0955f9bd04783525eb04c7f6750a"><td class="memItemLeft" align="right" valign="top"><a id="a5fac0955f9bd04783525eb04c7f6750a"></a>
-uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>reserved16</b> [112]</td></tr>
-<tr class="separator:a5fac0955f9bd04783525eb04c7f6750a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaca01366f4b044fbb450d232a12f1f21"><td class="memItemLeft" align="right" valign="top"><a id="aaca01366f4b044fbb450d232a12f1f21"></a>
+uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>raw</b></td></tr>
+<tr class="separator:aaca01366f4b044fbb450d232a12f1f21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62b426994f7e997216877a43a075c792"><td class="memItemLeft" ><a id="a62b426994f7e997216877a43a075c792"></a>
+struct {</td></tr>
+<tr class="memitem:aed29c734f36d819abaa8d01d74aa4173"><td class="memItemLeft" >
+&#160;&#160;&#160;uint32_t&#160;&#160;&#160;<a class="el" href="unionspdk__nvme__feat__interrupt__coalescing.html#a6ddf8bc514b93939ff5a3ad2657ecb3a">thr</a>: 8</td></tr>
+<tr class="memdesc:aed29c734f36d819abaa8d01d74aa4173"><td class="mdescLeft">&#160;</td><td class="mdescRight">Aggregation Threshold. <br /></td></tr>
+<tr class="separator:aed29c734f36d819abaa8d01d74aa4173"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26b43c6acd0e06b2e9b5afbaa92bba73"><td class="memItemLeft" >
+&#160;&#160;&#160;uint32_t&#160;&#160;&#160;<a class="el" href="unionspdk__nvme__feat__interrupt__coalescing.html#a6aca8c444f46d0ace95f71cbef78e85e">time</a>: 8</td></tr>
+<tr class="memdesc:a26b43c6acd0e06b2e9b5afbaa92bba73"><td class="mdescLeft">&#160;</td><td class="mdescRight">Aggregration time. <br /></td></tr>
+<tr class="separator:a26b43c6acd0e06b2e9b5afbaa92bba73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b4335e4995487fd10648282a2a1256c"><td class="memItemLeft" >
+&#160;&#160;&#160;uint32_t&#160;&#160;&#160;<b>reserved</b>: 16</td></tr>
+<tr class="separator:a6b4335e4995487fd10648282a2a1256c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62b426994f7e997216877a43a075c792"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><b>bits</b></td></tr>
+<tr class="separator:a62b426994f7e997216877a43a075c792"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>ICResp. </p>
-<p>common.pdu_type == SPDK_NVME_TCP_PDU_TYPE_IC_RESP </p>
-</div><hr/>The documentation for this struct was generated from the following file:<ul>
-<li><a class="el" href="nvmf__spec_8h.html">nvmf_spec.h</a></li>
+<div class="textblock"><p>Data used by Set Features/Get Features <a class="el" href="nvme__spec_8h.html#aeae5c5fb9df2c7a39215c71f9d9b4c25af78a0869f0f08d1391b076ceaf76c0d1">SPDK_NVME_FEAT_INTERRUPT_COALESCING</a>. </p>
+</div><hr/>The documentation for this union was generated from the following file:<ul>
+<li><a class="el" href="nvme__spec_8h.html">nvme_spec.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

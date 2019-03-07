@@ -16,6 +16,7 @@ var searchData=
   ['spdk_5fnvme_5fcc_5fams',['spdk_nvme_cc_ams',['../nvme__spec_8h.html#a7e72566466cae734d999e755524f7b20',1,'nvme_spec.h']]],
   ['spdk_5fnvme_5fcc_5fcss',['spdk_nvme_cc_css',['../nvme__spec_8h.html#afafa64ef6a351ad580253d99ea1b3cd0',1,'nvme_spec.h']]],
   ['spdk_5fnvme_5fcommand_5fspecific_5fstatus_5fcode',['spdk_nvme_command_specific_status_code',['../nvme__spec_8h.html#acb8784fad6a53be95d4c718ad3cf852e',1,'nvme_spec.h']]],
+  ['spdk_5fnvme_5fctrlr_5fflags',['spdk_nvme_ctrlr_flags',['../nvme_8h.html#add21ceb016f09949ac6cef50e0566818',1,'nvme.h']]],
   ['spdk_5fnvme_5fdata_5ftransfer',['spdk_nvme_data_transfer',['../nvme__spec_8h.html#adbe38e042bb939183ed8fd5c1685b2fc',1,'nvme_spec.h']]],
   ['spdk_5fnvme_5fdealloc_5flogical_5fblock_5fread_5fvalue',['spdk_nvme_dealloc_logical_block_read_value',['../nvme__spec_8h.html#a1c06fbd66f7572c43c51e6f106215b8d',1,'nvme_spec.h']]],
   ['spdk_5fnvme_5fdsm_5fattribute',['spdk_nvme_dsm_attribute',['../nvme__spec_8h.html#a553aa11d679deea767299b75e8ff5fca',1,'nvme_spec.h']]],

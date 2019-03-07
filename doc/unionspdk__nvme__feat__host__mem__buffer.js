@@ -1,6 +1,6 @@
 var unionspdk__nvme__feat__host__mem__buffer =
 [
-    [ "bits", "unionspdk__nvme__feat__host__mem__buffer.html#a8293c5a504b1a5ec41a1d4bbb4821e72", null ],
+    [ "bits", "unionspdk__nvme__feat__host__mem__buffer.html#afb84b81dfb451686e7e730d78af89c40", null ],
     [ "ehm", "unionspdk__nvme__feat__host__mem__buffer.html#af43cc748ba99dcecb59f3359fd731084", null ],
     [ "mr", "unionspdk__nvme__feat__host__mem__buffer.html#a68c28c2479533b01ab8edd60cdfed6a0", null ],
     [ "raw", "unionspdk__nvme__feat__host__mem__buffer.html#ae38cde477f1878b3ec094fade9da7772", null ],

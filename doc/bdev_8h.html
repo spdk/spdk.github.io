@@ -321,6 +321,9 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_set_opts</b>
 <tr class="memitem:aa02f628c6ef7cae08b8b623b4800c74d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev_8h.html#aa02f628c6ef7cae08b8b623b4800c74d">spdk_bdev_is_md_interleaved</a> (const struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *bdev)</td></tr>
 <tr class="memdesc:aa02f628c6ef7cae08b8b623b4800c74d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Query whether metadata is interleaved with block data or separated with block data.  <a href="#aa02f628c6ef7cae08b8b623b4800c74d">More...</a><br /></td></tr>
 <tr class="separator:aa02f628c6ef7cae08b8b623b4800c74d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84041f3948f91dc0dd0656895970061a"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev_8h.html#a84041f3948f91dc0dd0656895970061a">spdk_bdev_get_data_block_size</a> (const struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *bdev)</td></tr>
+<tr class="memdesc:a84041f3948f91dc0dd0656895970061a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get block device data block size.  <a href="#a84041f3948f91dc0dd0656895970061a">More...</a><br /></td></tr>
+<tr class="separator:a84041f3948f91dc0dd0656895970061a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac94b5900766ec42da5fc3658a5749858"><td class="memItemLeft" align="right" valign="top">enum spdk_dif_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev_8h.html#ac94b5900766ec42da5fc3658a5749858">spdk_bdev_get_dif_type</a> (const struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *bdev)</td></tr>
 <tr class="memdesc:ac94b5900766ec42da5fc3658a5749858"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get DIF type of the block device.  <a href="#ac94b5900766ec42da5fc3658a5749858">More...</a><br /></td></tr>
 <tr class="separator:ac94b5900766ec42da5fc3658a5749858"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -875,6 +878,34 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_set_opts</b>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Block device associated with the name or NULL if no block device with bdev_name is currently registered. </dd></dl>
+
+</div>
+</div>
+<a id="a84041f3948f91dc0dd0656895970061a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a84041f3948f91dc0dd0656895970061a">&#9670;&nbsp;</a></span>spdk_bdev_get_data_block_size()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t spdk_bdev_get_data_block_size </td>
+          <td>(</td>
+          <td class="paramtype">const struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *&#160;</td>
+          <td class="paramname"><em>bdev</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get block device data block size. </p>
+<p>Data block size is equal to block size if there is no metadata or metadata is separated with block data, or equal to block size minus metadata size if there is metadata and it is interleaved with block data.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bdev</td><td>Block device to query. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Size of data block for this bdev in bytes. </dd></dl>
 
 </div>
 </div>

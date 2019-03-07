@@ -51,6 +51,7 @@ var bdev_8h =
     [ "spdk_bdev_get_block_size", "bdev_8h.html#a3ba8c5672c8226b9b63f44543518c527", null ],
     [ "spdk_bdev_get_buf_align", "bdev_8h.html#ab4d238484b372a77ba130fbb70f83519", null ],
     [ "spdk_bdev_get_by_name", "bdev_8h.html#a89c759c53d028e3e408d19156f0e1eb1", null ],
+    [ "spdk_bdev_get_data_block_size", "bdev_8h.html#a84041f3948f91dc0dd0656895970061a", null ],
     [ "spdk_bdev_get_device_stat", "bdev_8h.html#aa478b43fc9e6e41c34438f5b2ef742d5", null ],
     [ "spdk_bdev_get_dif_type", "bdev_8h.html#ac94b5900766ec42da5fc3658a5749858", null ],
     [ "spdk_bdev_get_io_channel", "bdev_8h.html#ab5bb9e746b030d7c4c89cbcf60076c7e", null ],

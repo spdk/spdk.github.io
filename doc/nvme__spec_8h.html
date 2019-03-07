@@ -224,6 +224,8 @@ Data Structures</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__cmds__and__effect__log__page.html">spdk_nvme_cmds_and_effect_log_page</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__telemetry__log__page__hdr.html">spdk_nvme_telemetry_log_page_hdr</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">union &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unionspdk__nvme__async__event__completion.html">spdk_nvme_async_event_completion</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Asynchronous Event Request Completion.  <a href="unionspdk__nvme__async__event__completion.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -247,6 +249,9 @@ Data Structures</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">union &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unionspdk__nvme__feat__number__of__queues.html">spdk_nvme_feat_number_of_queues</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Data used by Set Features/Get Features <a class="el" href="nvme__spec_8h.html#aeae5c5fb9df2c7a39215c71f9d9b4c25a5775e2f2663e7a0e078966ae7cbbaa8f">SPDK_NVME_FEAT_NUMBER_OF_QUEUES</a>.  <a href="unionspdk__nvme__feat__number__of__queues.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">union &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unionspdk__nvme__feat__interrupt__coalescing.html">spdk_nvme_feat_interrupt_coalescing</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Data used by Set Features/Get Features <a class="el" href="nvme__spec_8h.html#aeae5c5fb9df2c7a39215c71f9d9b4c25af78a0869f0f08d1391b076ceaf76c0d1">SPDK_NVME_FEAT_INTERRUPT_COALESCING</a>.  <a href="unionspdk__nvme__feat__interrupt__coalescing.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">union &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unionspdk__nvme__feat__interrupt__vector__configuration.html">spdk_nvme_feat_interrupt_vector_configuration</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Data used by Set Features/Get Features <a class="el" href="nvme__spec_8h.html#aeae5c5fb9df2c7a39215c71f9d9b4c25adad470344a07decd9630bd42fa46baec">SPDK_NVME_FEAT_INTERRUPT_VECTOR_CONFIGURATION</a>.  <a href="unionspdk__nvme__feat__interrupt__vector__configuration.html#details">More...</a><br /></td></tr>
@@ -643,7 +648,7 @@ Enumerations</h2></td></tr>
 &#160;&#160;<a class="el" href="nvme__spec_8h.html#aeae5c5fb9df2c7a39215c71f9d9b4c25a057a6c718d973bf92bf4088c974fae0b">SPDK_NVME_FEAT_ERROR_RECOVERY</a> = 0x05, 
 <a class="el" href="nvme__spec_8h.html#aeae5c5fb9df2c7a39215c71f9d9b4c25a11fc399f2560d6ca1deba056bbc201ed">SPDK_NVME_FEAT_VOLATILE_WRITE_CACHE</a> = 0x06, 
 <a class="el" href="nvme__spec_8h.html#aeae5c5fb9df2c7a39215c71f9d9b4c25a5775e2f2663e7a0e078966ae7cbbaa8f">SPDK_NVME_FEAT_NUMBER_OF_QUEUES</a> = 0x07, 
-<b>SPDK_NVME_FEAT_INTERRUPT_COALESCING</b> = 0x08, 
+<a class="el" href="nvme__spec_8h.html#aeae5c5fb9df2c7a39215c71f9d9b4c25af78a0869f0f08d1391b076ceaf76c0d1">SPDK_NVME_FEAT_INTERRUPT_COALESCING</a> = 0x08, 
 <br />
 &#160;&#160;<a class="el" href="nvme__spec_8h.html#aeae5c5fb9df2c7a39215c71f9d9b4c25adad470344a07decd9630bd42fa46baec">SPDK_NVME_FEAT_INTERRUPT_VECTOR_CONFIGURATION</a> = 0x09, 
 <a class="el" href="nvme__spec_8h.html#aeae5c5fb9df2c7a39215c71f9d9b4c25a8078b3775ab60dab4a9e9d63a84f0168">SPDK_NVME_FEAT_WRITE_ATOMICITY</a> = 0x0A, 
@@ -759,7 +764,11 @@ Enumerations</h2></td></tr>
 <a class="el" href="nvme__spec_8h.html#a3d5e453e4d95b0f5b9bb4de04ace78c4aaa4a483997b6fa41a9e73755441d2186">SPDK_NVME_LOG_CHANGED_NS_LIST</a> = 0x04, 
 <br />
 &#160;&#160;<a class="el" href="nvme__spec_8h.html#a3d5e453e4d95b0f5b9bb4de04ace78c4aab219389150398bc1b23da1df91e634c">SPDK_NVME_LOG_COMMAND_EFFECTS_LOG</a> = 0x05, 
-<a class="el" href="nvme__spec_8h.html#a3d5e453e4d95b0f5b9bb4de04ace78c4a373acc5fc6392f4af3cfd5c6123bb600">SPDK_NVME_LOG_DISCOVERY</a> = 0x70, 
+<a class="el" href="nvme__spec_8h.html#a3d5e453e4d95b0f5b9bb4de04ace78c4aa41fe741a7a29377a4cfa29717aa94c0">SPDK_NVME_LOG_DEVICE_SELF_TEST</a> = 0x06, 
+<a class="el" href="nvme__spec_8h.html#a3d5e453e4d95b0f5b9bb4de04ace78c4a6b0a3950980fadba16d971811a31afa0">SPDK_NVME_LOG_TELEMETRY_HOST_INITIATED</a> = 0x07, 
+<a class="el" href="nvme__spec_8h.html#a3d5e453e4d95b0f5b9bb4de04ace78c4aa21d97922f4ef61731fd20986d30b2c8">SPDK_NVME_LOG_TELEMETRY_CTRLR_INITIATED</a> = 0x08, 
+<br />
+&#160;&#160;<a class="el" href="nvme__spec_8h.html#a3d5e453e4d95b0f5b9bb4de04ace78c4a373acc5fc6392f4af3cfd5c6123bb600">SPDK_NVME_LOG_DISCOVERY</a> = 0x70, 
 <a class="el" href="nvme__spec_8h.html#a3d5e453e4d95b0f5b9bb4de04ace78c4a37f2ea0a63737907265ff3ed35088a09">SPDK_NVME_LOG_RESERVATION_NOTIFICATION</a> = 0x80
 <br />
  }<tr class="memdesc:a3d5e453e4d95b0f5b9bb4de04ace78c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Log page identifiers for SPDK_NVME_OPC_GET_LOG_PAGE.  <a href="nvme__spec_8h.html#a3d5e453e4d95b0f5b9bb4de04ace78c4">More...</a><br /></td></tr>
@@ -1000,6 +1009,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a688c13be3464d89ff6a661e1206af194"><td class="memItemLeft" align="right" valign="top"><a id="a688c13be3464d89ff6a661e1206af194"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_STATIC_ASSERT</b> (sizeof(struct <a class="el" href="structspdk__nvme__cmds__and__effect__log__page.html">spdk_nvme_cmds_and_effect_log_page</a>)==4096, &quot;Incorrect size&quot;)</td></tr>
 <tr class="separator:a688c13be3464d89ff6a661e1206af194"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8858611e6d9abf1df675afb6610a0f98"><td class="memItemLeft" align="right" valign="top"><a id="a8858611e6d9abf1df675afb6610a0f98"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_STATIC_ASSERT</b> (sizeof(struct <a class="el" href="structspdk__nvme__telemetry__log__page__hdr.html">spdk_nvme_telemetry_log_page_hdr</a>)==512, &quot;Incorrect size&quot;)</td></tr>
+<tr class="separator:a8858611e6d9abf1df675afb6610a0f98"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8dc5b9c51b1feaee9bddb3f6e0797656"><td class="memItemLeft" align="right" valign="top"><a id="a8dc5b9c51b1feaee9bddb3f6e0797656"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_STATIC_ASSERT</b> (sizeof(union <a class="el" href="unionspdk__nvme__async__event__completion.html">spdk_nvme_async_event_completion</a>)==4, &quot;Incorrect size&quot;)</td></tr>
 <tr class="separator:a8dc5b9c51b1feaee9bddb3f6e0797656"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1024,6 +1036,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a80fea39257f11148cd3d96f0c2c271a7"><td class="memItemLeft" align="right" valign="top"><a id="a80fea39257f11148cd3d96f0c2c271a7"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_STATIC_ASSERT</b> (sizeof(union <a class="el" href="unionspdk__nvme__feat__number__of__queues.html">spdk_nvme_feat_number_of_queues</a>)==4, &quot;Incorrect size&quot;)</td></tr>
 <tr class="separator:a80fea39257f11148cd3d96f0c2c271a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade3fcf6c0cc516fc9ee8ae484d780b43"><td class="memItemLeft" align="right" valign="top"><a id="ade3fcf6c0cc516fc9ee8ae484d780b43"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_STATIC_ASSERT</b> (sizeof(union <a class="el" href="unionspdk__nvme__feat__interrupt__coalescing.html">spdk_nvme_feat_interrupt_coalescing</a>)==4, &quot;Incorrect size&quot;)</td></tr>
+<tr class="separator:ade3fcf6c0cc516fc9ee8ae484d780b43"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad3c5c5fa5ed88780c317e712196959f3"><td class="memItemLeft" align="right" valign="top"><a id="ad3c5c5fa5ed88780c317e712196959f3"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_STATIC_ASSERT</b> (sizeof(union <a class="el" href="unionspdk__nvme__feat__interrupt__vector__configuration.html">spdk_nvme_feat_interrupt_vector_configuration</a>)==4, &quot;Incorrect size&quot;)</td></tr>
 <tr class="separator:ad3c5c5fa5ed88780c317e712196959f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1316,6 +1331,8 @@ Functions</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a id="aeae5c5fb9df2c7a39215c71f9d9b4c25a5775e2f2663e7a0e078966ae7cbbaa8f"></a>SPDK_NVME_FEAT_NUMBER_OF_QUEUES&#160;</td><td class="fielddoc"><p>cdw11 layout defined by <a class="el" href="unionspdk__nvme__feat__number__of__queues.html">spdk_nvme_feat_number_of_queues</a> </p>
 </td></tr>
+<tr><td class="fieldname"><a id="aeae5c5fb9df2c7a39215c71f9d9b4c25af78a0869f0f08d1391b076ceaf76c0d1"></a>SPDK_NVME_FEAT_INTERRUPT_COALESCING&#160;</td><td class="fielddoc"><p>cdw11 layout defined by <a class="el" href="unionspdk__nvme__feat__interrupt__coalescing.html">spdk_nvme_feat_interrupt_coalescing</a> </p>
+</td></tr>
 <tr><td class="fieldname"><a id="aeae5c5fb9df2c7a39215c71f9d9b4c25adad470344a07decd9630bd42fa46baec"></a>SPDK_NVME_FEAT_INTERRUPT_VECTOR_CONFIGURATION&#160;</td><td class="fielddoc"><p>cdw11 layout defined by <a class="el" href="unionspdk__nvme__feat__interrupt__vector__configuration.html">spdk_nvme_feat_interrupt_vector_configuration</a> </p>
 </td></tr>
 <tr><td class="fieldname"><a id="aeae5c5fb9df2c7a39215c71f9d9b4c25a8078b3775ab60dab4a9e9d63a84f0168"></a>SPDK_NVME_FEAT_WRITE_ATOMICITY&#160;</td><td class="fielddoc"><p>cdw11 layout defined by <a class="el" href="unionspdk__nvme__feat__write__atomicity.html">spdk_nvme_feat_write_atomicity</a> </p>
@@ -1453,6 +1470,12 @@ Functions</h2></td></tr>
 <tr><td class="fieldname"><a id="a3d5e453e4d95b0f5b9bb4de04ace78c4aaa4a483997b6fa41a9e73755441d2186"></a>SPDK_NVME_LOG_CHANGED_NS_LIST&#160;</td><td class="fielddoc"><p>Changed namespace list (optional) </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a3d5e453e4d95b0f5b9bb4de04ace78c4aab219389150398bc1b23da1df91e634c"></a>SPDK_NVME_LOG_COMMAND_EFFECTS_LOG&#160;</td><td class="fielddoc"><p>Command effects log (optional) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a3d5e453e4d95b0f5b9bb4de04ace78c4aa41fe741a7a29377a4cfa29717aa94c0"></a>SPDK_NVME_LOG_DEVICE_SELF_TEST&#160;</td><td class="fielddoc"><p>Device self test (optional) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a3d5e453e4d95b0f5b9bb4de04ace78c4a6b0a3950980fadba16d971811a31afa0"></a>SPDK_NVME_LOG_TELEMETRY_HOST_INITIATED&#160;</td><td class="fielddoc"><p>Host initiated telemetry log (optional) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a3d5e453e4d95b0f5b9bb4de04ace78c4aa21d97922f4ef61731fd20986d30b2c8"></a>SPDK_NVME_LOG_TELEMETRY_CTRLR_INITIATED&#160;</td><td class="fielddoc"><p>Controller initiated telemetry log (optional) </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a3d5e453e4d95b0f5b9bb4de04ace78c4a373acc5fc6392f4af3cfd5c6123bb600"></a>SPDK_NVME_LOG_DISCOVERY&#160;</td><td class="fielddoc"><p>Discovery(refer to the NVMe over Fabrics specification) </p>
 </td></tr>
