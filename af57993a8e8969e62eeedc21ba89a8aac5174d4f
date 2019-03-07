@@ -49,6 +49,30 @@
     },
     {
       "key": {
+        "uuid": "acc07873_4e62ad18",
+        "filename": "development.md",
+        "patchSetId": 4
+      },
+      "lineNbr": 337,
+      "author": {
+        "id": 1011218
+      },
+      "writtenOn": "2019-03-07T00:26:24Z",
+      "side": 1,
+      "message": "\u003e 5.   We inspect that the 2.0 release of foo, and if our patch that we had applied in our previous branch of foo in our submodule,also appears in the new 2.0 upstream of foo, then this is great.   If not, then we must cherry-pick our patch from the previous branch of foo into the new one in our submodule.\n\nCorrect up to this point.\n\n\u003e 6.  We tag the SPDK repo with a \"dot-one\" which also captures the hash of the current state of the foo submodule which, again, is either pristine (matching its upstream counterpart) because they had accepted our patch, -OR- the foo submodule now reflects the upstream 2.0 plus our cherry-picked patch from our previous version because it had not been accepted upstream.\n\nThat\u0027s where I disagree. Jim could tell you all his reasons against updating the submodule to a new major (2.0) version within our \"dot-one\" release. One reason I have is that a \"dot-one\" release is meant to provide only bugfixes - and updating the submodule version to a new major release (2.0) is way more that that - it\u0027s actually a great way to introduce additional regressions. Let\u0027s imagine that SPDK 19.01 could compile with gcc 5 just fine, but for 19.01.1 we updated one of our submodules to a brand new major release, which apparently dropped support for gcc 5. So now someone using SPDK 19.01 tries to upgrade to 19.01.1 and gets nothing but compilation failures. SPDK \"dot-one\" release wouldn\u0027t be really an improvement for that person.\n\nThis is why I\u0027m against doing major changes to our submodules within \"dot-one\" releases. Within the SPDK \"dot-one\" releases there should be as little changes to submodules as possible. We should only include there either some additional bugfixes that we (SPDK community) have prepared and are still trying to upstream, or bugfixes cherry-picked from the pristine upstream - but only those that we were able to review and evaluate the risk for.",
+      "parentUuid": "ce762f85_7c77222c",
+      "range": {
+        "startLine": 336,
+        "startChar": 2,
+        "endLine": 337,
+        "endChar": 20
+      },
+      "revId": "af57993a8e8969e62eeedc21ba89a8aac5174d4f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "e232b050_160abfb7",
         "filename": "development.md",
         "patchSetId": 4
