@@ -116,7 +116,7 @@ var nvme_8h =
     [ "spdk_nvme_prchk_flags_str", "nvme_8h.html#ae125f35c7ab6fd2f5e63bfac804f25e6", null ],
     [ "spdk_nvme_probe", "nvme_8h.html#a225bbc386ec518ae21bd5536f21db45d", null ],
     [ "spdk_nvme_probe_async", "nvme_8h.html#a02411bf7ae4827a350711e688316997e", null ],
-    [ "spdk_nvme_probe_poll_async", "nvme_8h.html#a1e5e85b201f648d307ce0a7c326ef35c", null ],
+    [ "spdk_nvme_probe_poll_async", "nvme_8h.html#aedea919a47bdd811b604656e29e3fcef", null ],
     [ "spdk_nvme_qpair_add_cmd_error_injection", "nvme_8h.html#acf6188764b8c71b2f64a74077d6bfabf", null ],
     [ "spdk_nvme_qpair_process_completions", "nvme_8h.html#aa331d140870e977722bfbb6826524782", null ],
     [ "spdk_nvme_qpair_remove_cmd_error_injection", "nvme_8h.html#ad720b23786450b5a2b2d7d65c6dd6b7c", null ],

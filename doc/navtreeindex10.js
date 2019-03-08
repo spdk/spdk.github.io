@@ -1,5 +1,6 @@
 var NAVTREEINDEX10 =
 {
+"scsi__spec_8h.html#a9e2b2add18fac5a9110df411076170dca974443bd32056cbc53e07717cd69276f":[14,0,43,75,1],
 "scsi__spec_8h.html#a9e2b2add18fac5a9110df411076170dca9bbd8f7d640aceea90b67623df26e775":[14,0,43,75,32],
 "scsi__spec_8h.html#a9e2b2add18fac5a9110df411076170dca9cde5e38a56a7541ce7e31e6c99ccd19":[14,0,43,75,38],
 "scsi__spec_8h.html#a9e2b2add18fac5a9110df411076170dca9ce7d4c290a9ac97a6acf737b5c1b478":[14,0,43,75,41],
@@ -151,10 +152,10 @@ var NAVTREEINDEX10 =
 "scsi__spec_8h.html#af6319720f0642165496d79745fe1df1b":[14,0,43,35],
 "scsi__spec_8h.html#af993a050a0bdd0d520b7fdcbbb32d98a":[14,0,43,20],
 "sock_8h.html":[14,0,44],
-"sock_8h.html#a0be72049ed7537c6f8efb99dbb44d20c":[14,0,44,17],
+"sock_8h.html#a0be72049ed7537c6f8efb99dbb44d20c":[14,0,44,18],
 "sock_8h.html#a407c7aebae3d1a1556109da46a73213e":[14,0,44,2],
 "sock_8h.html#a4cc9153a7848b65e5487e5205f022909":[14,0,44,13],
-"sock_8h.html#a4e8d8e1b8155267b4b0289710e3b792f":[14,0,44,16],
+"sock_8h.html#a4e8d8e1b8155267b4b0289710e3b792f":[14,0,44,17],
 "sock_8h.html#a4f624276a1f0122bb624b2e8c5eaba19":[14,0,44,3],
 "sock_8h.html#a5ea2c431e11b3e15e0fba18fb4faa954":[14,0,44,1],
 "sock_8h.html#a73c174585e034587164b1a56d6e8a115":[14,0,44,11],
@@ -162,14 +163,15 @@ var NAVTREEINDEX10 =
 "sock_8h.html#aa07f7a676410527883e2f8159ea1bfea":[14,0,44,5],
 "sock_8h.html#aac5acbacae856635602b0f40c8b676b2":[14,0,44,7],
 "sock_8h.html#ab596707e3e18b6f3e4ceb365369a3b8f":[14,0,44,4],
-"sock_8h.html#abab9e8eaebfc2857e05848580fba864e":[14,0,44,14],
+"sock_8h.html#abab9e8eaebfc2857e05848580fba864e":[14,0,44,15],
 "sock_8h.html#aca9341be3f9ec5bd7e571f328e749328":[14,0,44,8],
-"sock_8h.html#ad10e77b4f8d7ba40ec75c69247541ef7":[14,0,44,18],
+"sock_8h.html#ad10e77b4f8d7ba40ec75c69247541ef7":[14,0,44,19],
 "sock_8h.html#ad52142b9c60b305a1eaaf869a321c790":[14,0,44,10],
 "sock_8h.html#ad75fdb315be08263dd42aa20e1ca5df9":[14,0,44,6],
 "sock_8h.html#ae297ae75e566b35635d20b959daa7741":[14,0,44,0],
 "sock_8h.html#ae2fc8fd68b9988e2ec771a82914dcc80":[14,0,44,12],
-"sock_8h.html#aec2209ac3d7d278cede96696116662d3":[14,0,44,15],
+"sock_8h.html#aec2209ac3d7d278cede96696116662d3":[14,0,44,16],
+"sock_8h.html#aec412e1537891ed4a02c24615df619b0":[14,0,44,14],
 "spdkcli.html":[9,0],
 "ssd_internals.html":[2,3],
 "stdinc_8h.html":[14,0,45],
@@ -247,7 +249,5 @@ var NAVTREEINDEX10 =
 "structiscsi__bhs__data__in.html#ac1a41b4453104c5ba6d63a1b785e209f":[13,0,4,4],
 "structiscsi__bhs__data__in.html#acff274f7188fcff08dd47ff3cfebb345":[13,0,4,2],
 "structiscsi__bhs__data__in.html#addd93e65f4bbf5a845c87fbd17af0a5d":[13,0,4,6],
-"structiscsi__bhs__data__in.html#ae0ca45c9cf690d6f626a4e0ea085daf3":[13,0,4,11],
-"structiscsi__bhs__data__in.html#ae5fbc869dd919fca57ffb988fe26fc9e":[13,0,4,3],
-"structiscsi__bhs__data__out.html":[13,0,5]
+"structiscsi__bhs__data__in.html#ae0ca45c9cf690d6f626a4e0ea085daf3":[13,0,4,11]
 };

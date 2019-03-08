@@ -56,6 +56,7 @@ var scsi_8h =
     [ "spdk_scsi_lun_free_io_channel", "scsi_8h.html#a518c7609b4891b1fae73c0bd5b330686", null ],
     [ "spdk_scsi_lun_get_bdev_name", "scsi_8h.html#a58357a798eaf1fecc290699eb5dacc9a", null ],
     [ "spdk_scsi_lun_get_dev", "scsi_8h.html#aa87d45ae3bcf47ffa2db2ff3cf51ae21", null ],
+    [ "spdk_scsi_lun_get_dif_ctx", "scsi_8h.html#a1212786090990db09aadb3987a5073cc", null ],
     [ "spdk_scsi_lun_get_id", "scsi_8h.html#af5ed1a133f6f137402c0eb7742077f17", null ],
     [ "spdk_scsi_lun_is_removing", "scsi_8h.html#ad660916c8c06b8c3eed3245618d6c59f", null ],
     [ "spdk_scsi_lun_open", "scsi_8h.html#a496221276fda4f6c6177968cb1081000", null ],

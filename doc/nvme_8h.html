@@ -273,9 +273,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a02411bf7ae4827a350711e688316997e"><td class="memItemLeft" align="right" valign="top">struct spdk_nvme_probe_ctx *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a02411bf7ae4827a350711e688316997e">spdk_nvme_probe_async</a> (const struct <a class="el" href="structspdk__nvme__transport__id.html">spdk_nvme_transport_id</a> *trid, void *cb_ctx, <a class="el" href="nvme_8h.html#a95f40d5179f8424b466a30ba0610ab4c">spdk_nvme_probe_cb</a> probe_cb, <a class="el" href="nvme_8h.html#ac1eaa795f075495337b270667661ce5d">spdk_nvme_attach_cb</a> attach_cb, <a class="el" href="nvme_8h.html#a05f1aa545be57a03bb2dd0c6180172b6">spdk_nvme_remove_cb</a> remove_cb)</td></tr>
 <tr class="memdesc:a02411bf7ae4827a350711e688316997e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Probe and add controllers to the probe context list.  <a href="#a02411bf7ae4827a350711e688316997e">More...</a><br /></td></tr>
 <tr class="separator:a02411bf7ae4827a350711e688316997e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1e5e85b201f648d307ce0a7c326ef35c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a1e5e85b201f648d307ce0a7c326ef35c">spdk_nvme_probe_poll_async</a> (struct spdk_nvme_probe_ctx *probe_ctx)</td></tr>
-<tr class="memdesc:a1e5e85b201f648d307ce0a7c326ef35c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start controllers in the context list.  <a href="#a1e5e85b201f648d307ce0a7c326ef35c">More...</a><br /></td></tr>
-<tr class="separator:a1e5e85b201f648d307ce0a7c326ef35c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aedea919a47bdd811b604656e29e3fcef"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#aedea919a47bdd811b604656e29e3fcef">spdk_nvme_probe_poll_async</a> (struct spdk_nvme_probe_ctx *probe_ctx)</td></tr>
+<tr class="memdesc:aedea919a47bdd811b604656e29e3fcef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start controllers in the context list.  <a href="#aedea919a47bdd811b604656e29e3fcef">More...</a><br /></td></tr>
+<tr class="separator:aedea919a47bdd811b604656e29e3fcef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4b63c225c3cce6da60fdbfb6f54b11e2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a4b63c225c3cce6da60fdbfb6f54b11e2">spdk_nvme_detach</a> (struct spdk_nvme_ctrlr *ctrlr)</td></tr>
 <tr class="memdesc:a4b63c225c3cce6da60fdbfb6f54b11e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Detach specified device returned by <a class="el" href="nvme_8h.html#a225bbc386ec518ae21bd5536f21db45d" title="Enumerate the bus indicated by the transport ID and attach the userspace NVMe driver to each device f...">spdk_nvme_probe()</a>'s attach_cb from the NVMe driver.  <a href="#a4b63c225c3cce6da60fdbfb6f54b11e2">More...</a><br /></td></tr>
 <tr class="separator:a4b63c225c3cce6da60fdbfb6f54b11e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -5106,7 +5106,7 @@ int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_retry_co
 </div><div class="memdoc">
 
 <p>Probe and add controllers to the probe context list. </p>
-<p>Users must call <a class="el" href="nvme_8h.html#a1e5e85b201f648d307ce0a7c326ef35c" title="Start controllers in the context list. ">spdk_nvme_probe_poll_async()</a> to initialize controllers in the probe context list to the READY state.</p>
+<p>Users must call <a class="el" href="nvme_8h.html#aedea919a47bdd811b604656e29e3fcef" title="Start controllers in the context list. ">spdk_nvme_probe_poll_async()</a> to initialize controllers in the probe context list to the READY state.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">trid</td><td>The transport ID indicating which bus to enumerate. If the trtype is PCIe or trid is NULL, this will scan the local PCIe bus. If the trtype is RDMA, the traddr and trsvcid must point at the location of an NVMe-oF discovery service. </td></tr>
@@ -5121,14 +5121,14 @@ int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_retry_co
 
 </div>
 </div>
-<a id="a1e5e85b201f648d307ce0a7c326ef35c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1e5e85b201f648d307ce0a7c326ef35c">&#9670;&nbsp;</a></span>spdk_nvme_probe_poll_async()</h2>
+<a id="aedea919a47bdd811b604656e29e3fcef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aedea919a47bdd811b604656e29e3fcef">&#9670;&nbsp;</a></span>spdk_nvme_probe_poll_async()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool spdk_nvme_probe_poll_async </td>
+          <td class="memname">int spdk_nvme_probe_poll_async </td>
           <td>(</td>
           <td class="paramtype">struct spdk_nvme_probe_ctx *&#160;</td>
           <td class="paramname"><em>probe_ctx</em></td><td>)</td>
@@ -5145,9 +5145,11 @@ int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_retry_co
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>true if all probe operations are complete; the probe_ctx may be discarded at this point. </dd>
+<dl class="section return"><dt>Returns</dt><dd>0 if all probe operations are complete; the probe_ctx is also freed and no longer valid. </dd>
 <dd>
-false if there are still pending probe operations; user must call spdk_nvme_probe_poll_async again to continue progress. </dd></dl>
+-EAGAIN if there are still pending probe operations; user must call spdk_nvme_probe_poll_async again to continue progress. </dd>
+<dd>
+value other than 0 and -EAGAIN probe error with one controller. </dd></dl>
 
 </div>
 </div>

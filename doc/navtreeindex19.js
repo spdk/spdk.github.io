@@ -1,5 +1,7 @@
 var NAVTREEINDEX19 =
 {
+"structspdk__scsi__vpd__ext__inquiry.html#a8930fdecf9c05c3a889885527da57a87":[13,0,229,5],
+"structspdk__scsi__vpd__ext__inquiry.html#a9dddaf4c0384b79536e668c52308adcf":[13,0,229,1],
 "structspdk__scsi__vpd__ext__inquiry.html#ab8826d5e01f37429d78fda6cc22f8cad":[13,0,229,4],
 "structspdk__scsi__vpd__ext__inquiry.html#adb21a07f63af30407aab56e4c90b4cd9":[13,0,229,9],
 "structspdk__scsi__vpd__ext__inquiry.html#af52442dddfa08a8c0bc5cc7d5882894f":[13,0,229,8],
@@ -247,7 +249,5 @@ var NAVTREEINDEX19 =
 "unionspdk__nvme__csts__register.html#ac749de13f98d84bbe72c11176c1d6393":[13,0,89,7],
 "unionspdk__nvme__csts__register.html#adc19dbc98a693913d4fbd920e573f244":[13,0,89,0],
 "unionspdk__nvme__feat__arbitration.html":[13,0,95],
-"unionspdk__nvme__feat__arbitration.html#a0eb3434752c3b8ea38f37556fa9fd116":[13,0,95,3],
-"unionspdk__nvme__feat__arbitration.html#a17914eaaf47a25d7edd809aa2f74331b":[13,0,95,5],
-"unionspdk__nvme__feat__arbitration.html#a1c72624e805ff324a05c6e9e592cd11a":[13,0,95,2]
+"unionspdk__nvme__feat__arbitration.html#a0eb3434752c3b8ea38f37556fa9fd116":[13,0,95,3]
 };

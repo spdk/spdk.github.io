@@ -1,5 +1,7 @@
 var NAVTREEINDEX20 =
 {
+"unionspdk__nvme__feat__arbitration.html#a17914eaaf47a25d7edd809aa2f74331b":[13,0,95,5],
+"unionspdk__nvme__feat__arbitration.html#a1c72624e805ff324a05c6e9e592cd11a":[13,0,95,2],
 "unionspdk__nvme__feat__arbitration.html#a28d37ecf81e25a86b65539d93fb39e90":[13,0,95,4],
 "unionspdk__nvme__feat__arbitration.html#a47fb9a1efe9cd17abfa3a8b198919e34":[13,0,95,0],
 "unionspdk__nvme__feat__arbitration.html#aab1404478a7ddad8e7693827d7b36404":[13,0,95,1],

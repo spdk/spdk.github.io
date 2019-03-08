@@ -174,6 +174,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ad10e77b4f8d7ba40ec75c69247541ef7"><td class="memItemLeft" align="right" valign="top">ssize_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sock_8h.html#ad10e77b4f8d7ba40ec75c69247541ef7">spdk_sock_writev</a> (struct spdk_sock *sock, struct iovec *iov, int iovcnt)</td></tr>
 <tr class="memdesc:ad10e77b4f8d7ba40ec75c69247541ef7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write message to the given socket from the I/O vector array.  <a href="#ad10e77b4f8d7ba40ec75c69247541ef7">More...</a><br /></td></tr>
 <tr class="separator:ad10e77b4f8d7ba40ec75c69247541ef7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec412e1537891ed4a02c24615df619b0"><td class="memItemLeft" align="right" valign="top">ssize_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sock_8h.html#aec412e1537891ed4a02c24615df619b0">spdk_sock_readv</a> (struct spdk_sock *sock, struct iovec *iov, int iovcnt)</td></tr>
+<tr class="memdesc:aec412e1537891ed4a02c24615df619b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read message from the given socket to the I/O vector array.  <a href="#aec412e1537891ed4a02c24615df619b0">More...</a><br /></td></tr>
+<tr class="separator:aec412e1537891ed4a02c24615df619b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4e8d8e1b8155267b4b0289710e3b792f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sock_8h.html#a4e8d8e1b8155267b4b0289710e3b792f">spdk_sock_set_recvlowat</a> (struct spdk_sock *sock, int nbytes)</td></tr>
 <tr class="memdesc:a4e8d8e1b8155267b4b0289710e3b792f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the value used to specify the low water mark (in bytes) for this socket.  <a href="#a4e8d8e1b8155267b4b0289710e3b792f">More...</a><br /></td></tr>
 <tr class="separator:a4e8d8e1b8155267b4b0289710e3b792f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -695,6 +698,51 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>a pointer to the listened socket on success, or NULL on failure. </dd></dl>
+
+</div>
+</div>
+<a id="aec412e1537891ed4a02c24615df619b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec412e1537891ed4a02c24615df619b0">&#9670;&nbsp;</a></span>spdk_sock_readv()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ssize_t spdk_sock_readv </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_sock *&#160;</td>
+          <td class="paramname"><em>sock</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct iovec *&#160;</td>
+          <td class="paramname"><em>iov</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iovcnt</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Read message from the given socket to the I/O vector array. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sock</td><td>Socket to receive message. </td></tr>
+    <tr><td class="paramname">iov</td><td>I/O vector. </td></tr>
+    <tr><td class="paramname">iovcnt</td><td>Number of I/O vectors in the array.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the length of the received message on success, -1 on failure. </dd></dl>
 
 </div>
 </div>

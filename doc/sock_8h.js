@@ -14,6 +14,7 @@ var sock_8h =
     [ "spdk_sock_is_ipv4", "sock_8h.html#a73c174585e034587164b1a56d6e8a115", null ],
     [ "spdk_sock_is_ipv6", "sock_8h.html#ae2fc8fd68b9988e2ec771a82914dcc80", null ],
     [ "spdk_sock_listen", "sock_8h.html#a4cc9153a7848b65e5487e5205f022909", null ],
+    [ "spdk_sock_readv", "sock_8h.html#aec412e1537891ed4a02c24615df619b0", null ],
     [ "spdk_sock_recv", "sock_8h.html#abab9e8eaebfc2857e05848580fba864e", null ],
     [ "spdk_sock_set_recvbuf", "sock_8h.html#aec2209ac3d7d278cede96696116662d3", null ],
     [ "spdk_sock_set_recvlowat", "sock_8h.html#a4e8d8e1b8155267b4b0289710e3b792f", null ],
