@@ -6,7 +6,7 @@ jsfiles: js/meetings.js
 
 # IRC
 
-Join us on the [freenode](https://freenode.net/) IRC network in the [#spdk](irc://irc.freenode.net/%23spdk) ([Archive](https://ci.spdk.io/irclog/?C=N;O=D)) channel.
+Join us on the [freenode](https://freenode.net/) IRC network in the [#spdk](irc://irc.freenode.net/%23spdk) ([Archive](https://dqtibwqq6s6ux.cloudfront.net/irclog/index.html)) channel.
 
 # Trello Board
 
