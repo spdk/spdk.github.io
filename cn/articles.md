@@ -4,7 +4,7 @@ title: 技术文章
 lang: cn
 ---
 
-###SPDK general introduction （SPDK总体技术介绍）
+###SPDK总体技术介绍
 
 
 * [打造用户态存储利器，基于SPDK的存储引擎Blobstore & BlobFS](https://mp.weixin.qq.com/s/jiS3jUNLeL0XzcljF8OhQA)
@@ -43,7 +43,7 @@ lang: cn
 
 *******
 
-###SPDK performance test and related tool （SPDK的性能测试和相关工具）
+###SPDK的性能测试和相关工具
 
 * [Liblightnvm, 在用户态操作Open-Channel SSD](https://mp.weixin.qq.com/s/wVfVhDvF8b0owlUxNjPLXw)
 
