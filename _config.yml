@@ -53,5 +53,5 @@ boxes:
     ico: bullhorn
 
 
-gems:
+plugins:
   - jekyll-feed
