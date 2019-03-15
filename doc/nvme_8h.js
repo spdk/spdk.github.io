@@ -33,6 +33,7 @@ var nvme_8h =
       [ "SPDK_NVME_TRANSPORT_TCP", "nvme_8h.html#ae87a03c28984a2c0499d50ef5e9d0ecea1b74e6a5b484b71142aa6ac9821a6de3", null ]
     ] ],
     [ "spdk_nvme_connect", "nvme_8h.html#ae26375a74c2c935ec32f0c41a7ed93df", null ],
+    [ "spdk_nvme_connect_async", "nvme_8h.html#ae8a8762934973d124cbad92fce47a351", null ],
     [ "spdk_nvme_ctrlr_alloc_cmb_io_buffer", "nvme_8h.html#ad63b25defbb0f1ccd52538e3b9a748df", null ],
     [ "spdk_nvme_ctrlr_alloc_io_qpair", "nvme_8h.html#a13f745d239dab9b8f934fae2ad4984a2", null ],
     [ "spdk_nvme_ctrlr_attach_ns", "nvme_8h.html#ae935583b7f95b13fbd2dd41255490da0", null ],

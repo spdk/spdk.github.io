@@ -573,6 +573,7 @@ var searchData=
   ['spdk_5fnvme_5fcmds_5fand_5feffect_5flog_5fpage',['spdk_nvme_cmds_and_effect_log_page',['../structspdk__nvme__cmds__and__effect__log__page.html',1,'']]],
   ['spdk_5fnvme_5fcommand_5fspecific_5fstatus_5fcode',['spdk_nvme_command_specific_status_code',['../nvme__spec_8h.html#acb8784fad6a53be95d4c718ad3cf852e',1,'nvme_spec.h']]],
   ['spdk_5fnvme_5fconnect',['spdk_nvme_connect',['../nvme_8h.html#ae26375a74c2c935ec32f0c41a7ed93df',1,'nvme.h']]],
+  ['spdk_5fnvme_5fconnect_5fasync',['spdk_nvme_connect_async',['../nvme_8h.html#ae8a8762934973d124cbad92fce47a351',1,'nvme.h']]],
   ['spdk_5fnvme_5fcpl',['spdk_nvme_cpl',['../structspdk__nvme__cpl.html',1,'']]],
   ['spdk_5fnvme_5fcritical_5fwarning_5fstate',['spdk_nvme_critical_warning_state',['../unionspdk__nvme__critical__warning__state.html',1,'']]],
   ['spdk_5fnvme_5fcsts_5fregister',['spdk_nvme_csts_register',['../unionspdk__nvme__csts__register.html',1,'']]],

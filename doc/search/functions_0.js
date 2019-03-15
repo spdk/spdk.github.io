@@ -400,6 +400,7 @@ var searchData=
   ['spdk_5fnet_5fframework_5fregister',['spdk_net_framework_register',['../net_8h.html#abc3295d98c59921fecdef4de0e944afd',1,'net.h']]],
   ['spdk_5fnet_5fframework_5fstart',['spdk_net_framework_start',['../net_8h.html#af110dcf710bf13d7e302002606e842ad',1,'net.h']]],
   ['spdk_5fnvme_5fconnect',['spdk_nvme_connect',['../nvme_8h.html#ae26375a74c2c935ec32f0c41a7ed93df',1,'nvme.h']]],
+  ['spdk_5fnvme_5fconnect_5fasync',['spdk_nvme_connect_async',['../nvme_8h.html#ae8a8762934973d124cbad92fce47a351',1,'nvme.h']]],
   ['spdk_5fnvme_5fctrlr_5falloc_5fcmb_5fio_5fbuffer',['spdk_nvme_ctrlr_alloc_cmb_io_buffer',['../nvme_8h.html#ad63b25defbb0f1ccd52538e3b9a748df',1,'nvme.h']]],
   ['spdk_5fnvme_5fctrlr_5falloc_5fio_5fqpair',['spdk_nvme_ctrlr_alloc_io_qpair',['../nvme_8h.html#a13f745d239dab9b8f934fae2ad4984a2',1,'nvme.h']]],
   ['spdk_5fnvme_5fctrlr_5fattach_5fns',['spdk_nvme_ctrlr_attach_ns',['../nvme_8h.html#ae935583b7f95b13fbd2dd41255490da0',1,'nvme.h']]],
