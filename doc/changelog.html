@@ -152,6 +152,8 @@ v19.04: (Upcoming Release)</h1>
 <p>Added <a class="el" href="thread_8h.html#adc45e09bda68d13cfc0ae010738cd658" title="Returns whether there are scheduled operations to be run on the thread. ">spdk_thread_is_idle()</a> function to check if there are any scheduled operations to be performed on the thread at given time.</p>
 <h2>bdev</h2>
 <p>An new API <code>spdk_bdev_get_data_block_size</code> has been added to get size of data block except for metadata.</p>
+<h2>NVMe-oF Target</h2>
+<p>Support for per-device shared receive queues in the RDMA transport has been added. The size of a shared receive queue is defined by transport configuration file parameter <code>MaxSRQDepth</code> and <code>nvmf_create_transport</code> RPC method parameter <code>max_srq_depth</code>. Default size is 4096.</p>
 <h1><a class="anchor" id="changelog-v19-01"></a>
 v19.01:</h1>
 <h2>ocf bdev</h2>

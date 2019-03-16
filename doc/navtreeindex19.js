@@ -1,5 +1,12 @@
 var NAVTREEINDEX19 =
 {
+"structspdk__scsi__unmap__bdesc.html#a514ee830753d52e54adf3f4e88714541":[13,0,228,1],
+"structspdk__scsi__unmap__bdesc.html#ae954762409a7249e0c36ae159dc6b9a5":[13,0,228,2],
+"structspdk__scsi__unmap__bdesc.html#aee26f6bb7cbfb226505fb2b58551a83d":[13,0,228,0],
+"structspdk__scsi__vpd__ext__inquiry.html":[13,0,229],
+"structspdk__scsi__vpd__ext__inquiry.html#a1044d03cc28a332a153f36dcadbd486e":[13,0,229,2],
+"structspdk__scsi__vpd__ext__inquiry.html#a1683585f9defe2c3d6e18de15c7dede9":[13,0,229,7],
+"structspdk__scsi__vpd__ext__inquiry.html#a2bdca53f901e6920aff6907c211a5e3c":[13,0,229,3],
 "structspdk__scsi__vpd__ext__inquiry.html#a5b7048f74213939d02f980a1b4089082":[13,0,229,0],
 "structspdk__scsi__vpd__ext__inquiry.html#a8881150e0ee0722d6a0716694830735b":[13,0,229,6],
 "structspdk__scsi__vpd__ext__inquiry.html#a8930fdecf9c05c3a889885527da57a87":[13,0,229,5],
@@ -242,12 +249,5 @@ var NAVTREEINDEX19 =
 "unionspdk__nvme__critical__warning__state.html#ae11d71217981c768d4d9370ad24283cd":[13,0,88,7],
 "unionspdk__nvme__critical__warning__state.html#af53560c475eb1a73955202b023e8073d":[13,0,88,1],
 "unionspdk__nvme__csts__register.html":[13,0,89],
-"unionspdk__nvme__csts__register.html#a36a07e6c600537241f579d52604b1de8":[13,0,89,3],
-"unionspdk__nvme__csts__register.html#a659cecacf4d834ccdb2c7e1675f5e409":[13,0,89,2],
-"unionspdk__nvme__csts__register.html#a68625e668e9fa90ad130f5620bc690ea":[13,0,89,4],
-"unionspdk__nvme__csts__register.html#a6ee892ce7d9f65a8d10f2b6090f9c9cf":[13,0,89,6],
-"unionspdk__nvme__csts__register.html#a86fc572fdd7a9850c188671e682b6ffa":[13,0,89,5],
-"unionspdk__nvme__csts__register.html#a9eadb3919064e4e1999d0a820de107f1":[13,0,89,1],
-"unionspdk__nvme__csts__register.html#ac749de13f98d84bbe72c11176c1d6393":[13,0,89,7],
-"unionspdk__nvme__csts__register.html#adc19dbc98a693913d4fbd920e573f244":[13,0,89,0]
+"unionspdk__nvme__csts__register.html#a36a07e6c600537241f579d52604b1de8":[13,0,89,3]
 };
