@@ -4,8 +4,7 @@ title: 技术文章
 lang: cn
 ---
 
-###SPDK总体技术介绍
-
+**SPDK总体技术介绍**
 
 * [打造用户态存储利器，基于SPDK的存储引擎Blobstore & BlobFS](https://mp.weixin.qq.com/s/jiS3jUNLeL0XzcljF8OhQA)
 
@@ -15,7 +14,7 @@ lang: cn
 
 *******
 
-###SPDK NVMe-oF target/initiator
+**SPDK NVMe-oF target/initiator**
 
 * [搭建远端存储，深度解读SPDK NVMe-oF target](https://mp.weixin.qq.com/s/ohPaxAwmhGtuQQWz--J6WA)
 
@@ -31,21 +30,19 @@ lang: cn
 
 ******
 
-###SPDK iSCSI target/initiator
+**SPDK iSCSI target/initiator**
 
 * [SPDK用户态 iSCSI 客户端库功能介绍](https://mp.weixin.qq.com/s/RHisv2B_9f6Ql5_7iKa_Yw)
 
 ******
 
-###SPDK vhost
+**SPDK vhost**
 
 * [SPDK Vhost对Live Migration的支持](https://mp.weixin.qq.com/s?__biz=MzI3NDA4ODY4MA==&mid=2653334939&idx=1&sn=012fb74c571aed8093a5a17a38381f8d&chksm=f0cb5a1cc7bcd30a869d87df0e6e7efe2491ec4f3c62eff6d028961e9c6d41d056f00c47c6f9&token=431082989&lang=zh_CN#rd)
 
-******* 
+******
 
-###SPDK的性能测试和相关工具
-
-* [Liblightnvm, 在用户态操作Open-Channel SSD](https://mp.weixin.qq.com/s/wVfVhDvF8b0owlUxNjPLXw)
+**SPDK的性能测试和相关工具**
 
 * [SPDK生态工具（一）：监控管理工具](https://mp.weixin.qq.com/s?__biz=MzI3NDA4ODY4MA==&mid=2653334766&idx=1&sn=dd332cc2549231b4e6998937b20de705&chksm=f0cb5b69c7bcd27f1ee55cf7c9c324f44f366d7fabf07e27eb00ecc3e94edb206ed1a7e2e2a1&token=431082989&lang=zh_CN#rd)
 
@@ -57,3 +54,10 @@ lang: cn
 
 * [一文读懂SPDK加速关键应用：解析SPDK Perf应用](https://mp.weixin.qq.com/s?__biz=MzI3NDA4ODY4MA==&mid=2653335061&idx=1&sn=8c2bb8b1bf7d95d7ab3c0cf81bea0136&chksm=f0cb5992c7bcd084c6d1704e26033b7510b4986593b91a45743df2aea39596813511fa4b70ac&token=431082989&lang=zh_CN#rd)
 
+**SPDK和其他软件库的深度整合**
+
+* [火爆业界的明星, 下一代存储技术的先行: NVDIMM (下篇)](hhttps://mp.weixin.qq.com/s?__biz=MzI3NDA4ODY4MA)
+
+* [火爆业界的明星，下一代存储技术的先行: NVDIMM 你了解吗?](https://mp.weixin.qq.com/s?__biz=MzI3NDA4ODY4MA)
+
+* [Liblightnvm, 在用户态操作Open-Channel SSD](https://mp.weixin.qq.com/s/wVfVhDvF8b0owlUxNjPLXw)
