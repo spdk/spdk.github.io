@@ -3,6 +3,7 @@ var searchData=
   ['data_5fdigest',['data_digest',['../structspdk__nvme__ctrlr__opts.html#a031524a539fbc57e1ca66c6fef875eea',1,'spdk_nvme_ctrlr_opts']]],
   ['data_5ftransferred',['data_transferred',['../structspdk__scsi__task.html#aed0de3999a81a9aeb079f0d9e4c4f098',1,'spdk_scsi_task']]],
   ['dealloc_5for_5funwritten_5ferror',['dealloc_or_unwritten_error',['../structspdk__nvme__ns__data.html#a9db6d23a3a10ec735fb97ae62fba8432',1,'spdk_nvme_ns_data']]],
+  ['delay_5fpcie_5fdoorbell',['delay_pcie_doorbell',['../structspdk__nvme__io__qpair__opts.html#a44d81a594ba280300928e7244c2612d0',1,'spdk_nvme_io_qpair_opts']]],
   ['desc',['desc',['../structspdk__bdev__io_1_1____bdev__io__internal__fields.html#a9ec31d2c37d402f888525346bb2ad907',1,'spdk_bdev_io::__bdev_io_internal_fields']]],
   ['destruct',['destruct',['../structspdk__bdev__fn__table.html#a8a76c50a2b20205ec9fffe4afb9e3a15',1,'spdk_bdev_fn_table']]],
   ['device_5fself_5ftest',['device_self_test',['../structspdk__nvme__ctrlr__data.html#a9ebd530b8658005e835c70dc3bfdfae7',1,'spdk_nvme_ctrlr_data']]],

@@ -144,6 +144,7 @@ v19.04: (Upcoming Release)</h1>
 <p><a class="el" href="event_8h.html#ae85e97e691500ac432665dcb09ba8409" title="Start the framework. ">spdk_app_start()</a> now only accepts a single context argument.</p>
 <h2>nvme</h2>
 <p>Added asynchronous probe support. New APIs <a class="el" href="nvme_8h.html#a02411bf7ae4827a350711e688316997e" title="Probe and add controllers to the probe context list. ">spdk_nvme_probe_async()</a>, <a class="el" href="nvme_8h.html#ae8a8762934973d124cbad92fce47a351" title="Connect the NVMe driver to the device located at the given transport ID. ">spdk_nvme_connect_async()</a> and <a class="el" href="nvme_8h.html#aedea919a47bdd811b604656e29e3fcef" title="Start controllers in the context list. ">spdk_nvme_probe_poll_async()</a> were added to enable this feature, <a class="el" href="nvme_8h.html#a02411bf7ae4827a350711e688316997e" title="Probe and add controllers to the probe context list. ">spdk_nvme_probe_async()</a> and <a class="el" href="nvme_8h.html#ae8a8762934973d124cbad92fce47a351" title="Connect the NVMe driver to the device located at the given transport ID. ">spdk_nvme_connect_async()</a> return a context associated with the specified controllers. Users then call <a class="el" href="nvme_8h.html#aedea919a47bdd811b604656e29e3fcef" title="Start controllers in the context list. ">spdk_nvme_probe_poll_async()</a> until it returns 0, indicating that the operation is completed with success.</p>
+<p>A new qpair creation option, delay_pcie_doorbell, was added. This can be passed to spdk_nvme_alloc_io_qpair(). This makes the I/O submission functions, such as spdk_nvme_ns_writev(), skip ringing the submission queue doorbell. Instead the doorbell will be rung as necessary inside <a class="el" href="nvme_8h.html#aa331d140870e977722bfbb6826524782" title="Process any outstanding completions for I/O submitted on a queue pair. ">spdk_nvme_qpair_process_completions()</a>. This can result in significantly fewer MMIO writes to the doorbell register under heavy load, greatly improving performance.</p>
 <p>New API <a class="el" href="nvme_8h.html#af654a7a016511f265b29294fd06ce26e" title="Get supported flags of the controller. ">spdk_nvme_ctrlr_get_flags()</a> was added.</p>
 <h2>raid</h2>
 <p>Added new strip_size_kb rpc param on create to replace the more ambiguous strip_size. The strip_size rpc param is deprecated.</p>
@@ -153,7 +154,8 @@ v19.04: (Upcoming Release)</h1>
 <h2>bdev</h2>
 <p>An new API <code>spdk_bdev_get_data_block_size</code> has been added to get size of data block except for metadata.</p>
 <h2>NVMe-oF Target</h2>
-<p>Support for per-device shared receive queues in the RDMA transport has been added. The size of a shared receive queue is defined by transport configuration file parameter <code>MaxSRQDepth</code> and <code>nvmf_create_transport</code> RPC method parameter <code>max_srq_depth</code>. Default size is 4096.</p>
+<p>Support for per-device shared receive queues in the RDMA transport has been added. It is enabled by default for any device that supports it.</p>
+<p>The size of a shared receive queue is defined by transport configuration file parameter <code>MaxSRQDepth</code> and <code>nvmf_create_transport</code> RPC method parameter <code>max_srq_depth</code>. Default size is 4096.</p>
 <h1><a class="anchor" id="changelog-v19-01"></a>
 v19.01:</h1>
 <h2>ocf bdev</h2>

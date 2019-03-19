@@ -537,7 +537,9 @@ set_bdev_nvme_options</h2>
 <tr>
 <td>retry_count </td><td>Optional </td><td>number </td><td>The number of attempts per I/O before an I/O fails </td></tr>
 <tr>
-<td>nvme_adminq_poll_period_us </td><td>Optional </td><td>number </td><td>How often the admin queue is polled for asynchronous events in microsecond </td></tr>
+<td>nvme_adminq_poll_period_us </td><td>Optional </td><td>number </td><td>How often the admin queue is polled for asynchronous events in microseconds </td></tr>
+<tr>
+<td>nvme_ioq_poll_period_us </td><td>Optional </td><td>number </td><td>How often I/O queues are polled for completions, in microseconds. Default: 0 (as fast as possible). </td></tr>
 </table>
 <h3>Example</h3>
 <p>Example request:</p>

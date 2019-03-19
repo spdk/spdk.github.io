@@ -134,9 +134,10 @@ var NAVTREEINDEX15 =
 "structspdk__nvme__intel__temperature__page.html#af180ca8f9fd6342bf56fe133b511832a":[13,0,128,5],
 "structspdk__nvme__intel__temperature__page.html#af9d0279b72f478d6edef742332267578":[13,0,128,9],
 "structspdk__nvme__io__qpair__opts.html":[13,0,129],
-"structspdk__nvme__io__qpair__opts.html#a4af594ef7f8b7e590662633c926146b4":[13,0,129,0],
-"structspdk__nvme__io__qpair__opts.html#a9a9ae75991da44a7fbf06a3c82161a6d":[13,0,129,2],
-"structspdk__nvme__io__qpair__opts.html#adbb8aa3f64bc021ea5e9fddec6796341":[13,0,129,1],
+"structspdk__nvme__io__qpair__opts.html#a44d81a594ba280300928e7244c2612d0":[13,0,129,0],
+"structspdk__nvme__io__qpair__opts.html#a4af594ef7f8b7e590662633c926146b4":[13,0,129,1],
+"structspdk__nvme__io__qpair__opts.html#a9a9ae75991da44a7fbf06a3c82161a6d":[13,0,129,3],
+"structspdk__nvme__io__qpair__opts.html#adbb8aa3f64bc021ea5e9fddec6796341":[13,0,129,2],
 "structspdk__nvme__ns__data.html":[13,0,130],
 "structspdk__nvme__ns__data.html#a058bfec34018c099918420fbc79fab27":[13,0,130,15],
 "structspdk__nvme__ns__data.html#a0b7ddedcecbedf9c549b3bb2dc5eabd7":[13,0,130,53],
@@ -248,6 +249,5 @@ var NAVTREEINDEX15 =
 "structspdk__nvme__primary__ctrl__capabilities.html#ab6d0e25ef2c3bc43f7db4ebdcdb3784e":[13,0,134,3],
 "structspdk__nvme__primary__ctrl__capabilities.html#ad656bd7e104327d7b85959b0b5a4196e":[13,0,134,13],
 "structspdk__nvme__primary__ctrl__capabilities.html#aeab109efd1eae5f155c06105e8d097ed":[13,0,134,18],
-"structspdk__nvme__primary__ctrl__capabilities.html#af479618cd4737243b1ef31942c690282":[13,0,134,11],
-"structspdk__nvme__primary__ctrl__capabilities.html#af8c71651dc0bb0fc40917e3bfc55183d":[13,0,134,2]
+"structspdk__nvme__primary__ctrl__capabilities.html#af479618cd4737243b1ef31942c690282":[13,0,134,11]
 };
