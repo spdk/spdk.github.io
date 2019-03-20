@@ -1,5 +1,6 @@
 var NAVTREEINDEX19 =
 {
+"structspdk__scsi__tgt__port__desc.html#ac3080c209c823539b031d014bb82cd43":[13,0,227,1],
 "structspdk__scsi__unmap__bdesc.html":[13,0,228],
 "structspdk__scsi__unmap__bdesc.html#a514ee830753d52e54adf3f4e88714541":[13,0,228,1],
 "structspdk__scsi__unmap__bdesc.html#ae954762409a7249e0c36ae159dc6b9a5":[13,0,228,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX19 =
 "unionspdk__nvme__critical__warning__state.html#a6ebadf678c6d64a9586b58eb6ad11365":[13,0,88,3],
 "unionspdk__nvme__critical__warning__state.html#a7c86c972fef3bacac5025d2328c6fd07":[13,0,88,6],
 "unionspdk__nvme__critical__warning__state.html#ae11d71217981c768d4d9370ad24283cd":[13,0,88,7],
-"unionspdk__nvme__critical__warning__state.html#af53560c475eb1a73955202b023e8073d":[13,0,88,1],
-"unionspdk__nvme__csts__register.html":[13,0,89]
+"unionspdk__nvme__critical__warning__state.html#af53560c475eb1a73955202b023e8073d":[13,0,88,1]
 };

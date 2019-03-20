@@ -1,5 +1,6 @@
 var NAVTREEINDEX18 =
 {
+"structspdk__ocssd__chunk__notification__entry.html#aadf9079a7a4aa1acd37f7535b5249c60":[13,0,202,5],
 "structspdk__ocssd__chunk__notification__entry.html#ab01e3e1e42517fdf683ce50a2798ea21":[13,0,202,6],
 "structspdk__ocssd__chunk__notification__entry.html#abc2b04eefd137a69be0153bf2377dda3":[13,0,202,8],
 "structspdk__ocssd__chunk__notification__entry.html#acf2668e09d087e0294af2b2f42160ad7":[13,0,202,15],
@@ -248,6 +249,5 @@ var NAVTREEINDEX18 =
 "structspdk__scsi__tgt__port__desc.html#a3d7abed7b610535f8894020b44c498ea":[13,0,227,4],
 "structspdk__scsi__tgt__port__desc.html#a55d5e6e7e8f9aaf4a258e0f0cb79affe":[13,0,227,3],
 "structspdk__scsi__tgt__port__desc.html#a5e85fd80fc7a37609f4c0020d096edf5":[13,0,227,2],
-"structspdk__scsi__tgt__port__desc.html#a90730b0714e0295fcc363599229c509a":[13,0,227,0],
-"structspdk__scsi__tgt__port__desc.html#ac3080c209c823539b031d014bb82cd43":[13,0,227,1]
+"structspdk__scsi__tgt__port__desc.html#a90730b0714e0295fcc363599229c509a":[13,0,227,0]
 };

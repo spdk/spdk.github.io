@@ -110,6 +110,7 @@ var env_8h =
     [ "spdk_pci_unhook_device", "env_8h.html#ac6cda84fe7f3ca98ee13683207ffeca5", null ],
     [ "spdk_pci_virtio_get_driver", "env_8h.html#ac7fabe1b4dba0227ab07e5bd91fe8816", null ],
     [ "spdk_process_is_primary", "env_8h.html#a798ae910c8563b33eea17af50cabb1ab", null ],
+    [ "spdk_realloc", "env_8h.html#acbf96e1e440b86ba23728e226b0745c6", null ],
     [ "spdk_ring_count", "env_8h.html#a6320a791a777b2d518def6413e543ac8", null ],
     [ "spdk_ring_create", "env_8h.html#a9f9038d37e14d07c89b399ee92bcbb87", null ],
     [ "spdk_ring_dequeue", "env_8h.html#a982e1b212d497dbb209902f56b192afb", null ],

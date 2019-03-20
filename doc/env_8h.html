@@ -237,6 +237,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a49ad245dae3554cf96d62e9b2b0b1596"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_8h.html#a49ad245dae3554cf96d62e9b2b0b1596">spdk_zmalloc</a> (size_t size, size_t align, uint64_t *phys_addr, int socket_id, uint32_t flags)</td></tr>
 <tr class="memdesc:a49ad245dae3554cf96d62e9b2b0b1596"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate dma/sharable memory based on a given dma_flg.  <a href="#a49ad245dae3554cf96d62e9b2b0b1596">More...</a><br /></td></tr>
 <tr class="separator:a49ad245dae3554cf96d62e9b2b0b1596"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acbf96e1e440b86ba23728e226b0745c6"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_8h.html#acbf96e1e440b86ba23728e226b0745c6">spdk_realloc</a> (void *buf, size_t size, size_t align)</td></tr>
+<tr class="memdesc:acbf96e1e440b86ba23728e226b0745c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resize a dma/sharable memory buffer with the given new size and alignment.  <a href="#acbf96e1e440b86ba23728e226b0745c6">More...</a><br /></td></tr>
+<tr class="separator:acbf96e1e440b86ba23728e226b0745c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a452d670d7188f883224574dfabc39f2c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_8h.html#a452d670d7188f883224574dfabc39f2c">spdk_free</a> (void *buf)</td></tr>
 <tr class="memdesc:a452d670d7188f883224574dfabc39f2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Free buffer memory that was previously allocated with <a class="el" href="env_8h.html#a668370523a786a75a7d08a8e8f4b28b9" title="Allocate dma/sharable memory based on a given dma_flg. ">spdk_malloc()</a> or <a class="el" href="env_8h.html#a49ad245dae3554cf96d62e9b2b0b1596" title="Allocate dma/sharable memory based on a given dma_flg. ">spdk_zmalloc()</a>.  <a href="#a452d670d7188f883224574dfabc39f2c">More...</a><br /></td></tr>
 <tr class="separator:a452d670d7188f883224574dfabc39f2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1279,7 +1282,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_
   <table class="params">
     <tr><td class="paramname">size</td><td>Size in bytes. </td></tr>
     <tr><td class="paramname">align</td><td>Alignment value for the allocated memory. If '0', the allocated buffer is suitably aligned (in the same manner as malloc()). Otherwise, the allocated buffer is aligned to the multiple of align. In this case, it must be a power of two. </td></tr>
-    <tr><td class="paramname">phys_addr</td><td>A pointer to the variable to hold the physical address of the allocated buffer is passed. If NULL, the physical address is not returned. </td></tr>
+    <tr><td class="paramname">phys_addr</td><td><b>Deprecated</b>. Please use <a class="el" href="env_8h.html#ac6a932523e0f4cb86d2b90dfe113b171" title="Get the physical address of a buffer. ">spdk_vtophys()</a> for retrieving physical addresses. A pointer to the variable to hold the physical address of the allocated buffer is passed. If NULL, the physical address is not returned. </td></tr>
     <tr><td class="paramname">socket_id</td><td>Socket ID to allocate memory on, or SPDK_ENV_SOCKET_ID_ANY for any socket. </td></tr>
     <tr><td class="paramname">flags</td><td>Combination of SPDK_MALLOC flags (<a class="el" href="env_8h.html#a7f065a5e897ff548b2dbf0996608929a">SPDK_MALLOC_DMA</a>, <a class="el" href="env_8h.html#ad1660ffa6731090ef3f480c295a87dba">SPDK_MALLOC_SHARE</a>). At least one flag must be specified.</td></tr>
   </table>
@@ -3355,6 +3358,52 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_
 
 </div>
 </div>
+<a id="acbf96e1e440b86ba23728e226b0745c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acbf96e1e440b86ba23728e226b0745c6">&#9670;&nbsp;</a></span>spdk_realloc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* spdk_realloc </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>buf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>align</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Resize a dma/sharable memory buffer with the given new size and alignment. </p>
+<p>Existing contents are preserved.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">buf</td><td>Buffer to resize. </td></tr>
+    <tr><td class="paramname">size</td><td>Size in bytes. </td></tr>
+    <tr><td class="paramname">align</td><td>Alignment value for the allocated memory. If '0', the allocated buffer is suitably aligned (in the same manner as malloc()). Otherwise, the allocated buffer is aligned to the multiple of align. In this case, it must be a power of two.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>a pointer to the resized memory buffer. </dd></dl>
+
+</div>
+</div>
 <a id="a6320a791a777b2d518def6413e543ac8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6320a791a777b2d518def6413e543ac8">&#9670;&nbsp;</a></span>spdk_ring_count()</h2>
 
@@ -3631,7 +3680,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_
   <table class="params">
     <tr><td class="paramname">size</td><td>Size in bytes. </td></tr>
     <tr><td class="paramname">align</td><td>Alignment value for the allocated memory. If '0', the allocated buffer is suitably aligned (in the same manner as malloc()). Otherwise, the allocated buffer is aligned to the multiple of align. In this case, it must be a power of two. </td></tr>
-    <tr><td class="paramname">phys_addr</td><td>A pointer to the variable to hold the physical address of the allocated buffer is passed. If NULL, the physical address is not returned. </td></tr>
+    <tr><td class="paramname">phys_addr</td><td><b>Deprecated</b>. Please use <a class="el" href="env_8h.html#ac6a932523e0f4cb86d2b90dfe113b171" title="Get the physical address of a buffer. ">spdk_vtophys()</a> for retrieving physical addresses. A pointer to the variable to hold the physical address of the allocated buffer is passed. If NULL, the physical address is not returned. </td></tr>
     <tr><td class="paramname">socket_id</td><td>Socket ID to allocate memory on, or SPDK_ENV_SOCKET_ID_ANY for any socket. </td></tr>
     <tr><td class="paramname">flags</td><td>Combination of SPDK_MALLOC flags (<a class="el" href="env_8h.html#a7f065a5e897ff548b2dbf0996608929a">SPDK_MALLOC_DMA</a>, <a class="el" href="env_8h.html#ad1660ffa6731090ef3f480c295a87dba">SPDK_MALLOC_SHARE</a>).</td></tr>
   </table>

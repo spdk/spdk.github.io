@@ -19,7 +19,7 @@ var event_8h =
     [ "spdk_app_opts_init", "event_8h.html#a2c8af9052967bf98ff65e514ec7fa276", null ],
     [ "spdk_app_parse_args", "event_8h.html#acc52e8c68c8ccec4640e14f687157afe", null ],
     [ "spdk_app_parse_core_mask", "event_8h.html#a60385eedfe76a33a690741d2693414a3", null ],
-    [ "spdk_app_start", "event_8h.html#ae85e97e691500ac432665dcb09ba8409", null ],
+    [ "spdk_app_start", "event_8h.html#ab4c22e2920f70becd9b2ef752efd7975", null ],
     [ "spdk_app_start_shutdown", "event_8h.html#a0bbbb23263a8ea9c93c3adf8aa3bce8e", null ],
     [ "spdk_app_stop", "event_8h.html#a40f3af1c0340f5c3eb915bc43e3cee83", null ],
     [ "spdk_app_usage", "event_8h.html#a35978d9a050c5c27e681e3e6006173bb", null ],

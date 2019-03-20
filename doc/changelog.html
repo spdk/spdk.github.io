@@ -141,7 +141,7 @@ $(document).ready(function(){initNavTree('changelog.html','');});
 <div class="textblock"><h1><a class="anchor" id="changelog-v19-04"></a>
 v19.04: (Upcoming Release)</h1>
 <h2>thread</h2>
-<p><a class="el" href="event_8h.html#ae85e97e691500ac432665dcb09ba8409" title="Start the framework. ">spdk_app_start()</a> now only accepts a single context argument.</p>
+<p><a class="el" href="event_8h.html#ab4c22e2920f70becd9b2ef752efd7975" title="Start the framework. ">spdk_app_start()</a> now only accepts a single context argument.</p>
 <h2>nvme</h2>
 <p>Added asynchronous probe support. New APIs <a class="el" href="nvme_8h.html#a02411bf7ae4827a350711e688316997e" title="Probe and add controllers to the probe context list. ">spdk_nvme_probe_async()</a>, <a class="el" href="nvme_8h.html#ae8a8762934973d124cbad92fce47a351" title="Connect the NVMe driver to the device located at the given transport ID. ">spdk_nvme_connect_async()</a> and <a class="el" href="nvme_8h.html#aedea919a47bdd811b604656e29e3fcef" title="Start controllers in the context list. ">spdk_nvme_probe_poll_async()</a> were added to enable this feature, <a class="el" href="nvme_8h.html#a02411bf7ae4827a350711e688316997e" title="Probe and add controllers to the probe context list. ">spdk_nvme_probe_async()</a> and <a class="el" href="nvme_8h.html#ae8a8762934973d124cbad92fce47a351" title="Connect the NVMe driver to the device located at the given transport ID. ">spdk_nvme_connect_async()</a> return a context associated with the specified controllers. Users then call <a class="el" href="nvme_8h.html#aedea919a47bdd811b604656e29e3fcef" title="Start controllers in the context list. ">spdk_nvme_probe_poll_async()</a> until it returns 0, indicating that the operation is completed with success.</p>
 <p>A new qpair creation option, delay_pcie_doorbell, was added. This can be passed to spdk_nvme_alloc_io_qpair(). This makes the I/O submission functions, such as spdk_nvme_ns_writev(), skip ringing the submission queue doorbell. Instead the doorbell will be rung as necessary inside <a class="el" href="nvme_8h.html#aa331d140870e977722bfbb6826524782" title="Process any outstanding completions for I/O submitted on a queue pair. ">spdk_nvme_qpair_process_completions()</a>. This can result in significantly fewer MMIO writes to the doorbell register under heavy load, greatly improving performance.</p>
@@ -156,6 +156,8 @@ v19.04: (Upcoming Release)</h1>
 <h2>NVMe-oF Target</h2>
 <p>Support for per-device shared receive queues in the RDMA transport has been added. It is enabled by default for any device that supports it.</p>
 <p>The size of a shared receive queue is defined by transport configuration file parameter <code>MaxSRQDepth</code> and <code>nvmf_create_transport</code> RPC method parameter <code>max_srq_depth</code>. Default size is 4096.</p>
+<h2>env</h2>
+<p>The <code>phys_addr</code> parameter in <a class="el" href="env_8h.html#a668370523a786a75a7d08a8e8f4b28b9" title="Allocate dma/sharable memory based on a given dma_flg. ">spdk_malloc()</a> and <a class="el" href="env_8h.html#a49ad245dae3554cf96d62e9b2b0b1596" title="Allocate dma/sharable memory based on a given dma_flg. ">spdk_zmalloc()</a> has been deprecated. For retrieving physical addresses, <a class="el" href="env_8h.html#ac6a932523e0f4cb86d2b90dfe113b171" title="Get the physical address of a buffer. ">spdk_vtophys()</a> should be used instead.</p>
 <h1><a class="anchor" id="changelog-v19-01"></a>
 v19.01:</h1>
 <h2>ocf bdev</h2>
@@ -402,7 +404,7 @@ v18.04: Logical Volume Snapshot/Clone, iSCSI Initiator, Bdev QoS, VPP Userspace 
 <p>Resizing logical volumes is now supported via the <code>resize_lvol_bdev</code> RPC method.</p>
 <h2>Lib</h2>
 <p>A set of changes were made in the SPDK's lib code altering instances of calls to <code>exit()</code> and <code>abort()</code> to return a failure instead wherever reasonably possible.</p>
-<p><a class="el" href="event_8h.html#ae85e97e691500ac432665dcb09ba8409" title="Start the framework. ">spdk_app_start()</a> no longer exit()'s on an internal failure, but instead returns a non-zero error status.</p>
+<p><a class="el" href="event_8h.html#ab4c22e2920f70becd9b2ef752efd7975" title="Start the framework. ">spdk_app_start()</a> no longer exit()'s on an internal failure, but instead returns a non-zero error status.</p>
 <p><a class="el" href="event_8h.html#acc52e8c68c8ccec4640e14f687157afe" title="Helper function for parsing arguments and printing usage messages. ">spdk_app_parse_args()</a> no longer exit()'s on help, '-h', or an invalid option, but instead returns SPDK_APP_PARSE_ARGS_HELP and SPDK_APP_PARSE_ARGS_FAIL, respectively, and SPDK_APP_PARSE_ARGS_SUCCESS on success.</p>
 <p>spdk_pci_get_device() has been deprecated and will be removed in SPDK v18.07.</p>
 <h2>I/O Channels</h2>
