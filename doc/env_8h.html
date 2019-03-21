@@ -249,6 +249,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a402ca8ae67be57c2c258a7a2bf22cfec"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_8h.html#a402ca8ae67be57c2c258a7a2bf22cfec">spdk_env_init</a> (const struct <a class="el" href="structspdk__env__opts.html">spdk_env_opts</a> *opts)</td></tr>
 <tr class="memdesc:a402ca8ae67be57c2c258a7a2bf22cfec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the environment library.  <a href="#a402ca8ae67be57c2c258a7a2bf22cfec">More...</a><br /></td></tr>
 <tr class="separator:a402ca8ae67be57c2c258a7a2bf22cfec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a719b5099cc3aa62190a1f44642ba6f91"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_8h.html#a719b5099cc3aa62190a1f44642ba6f91">spdk_env_fini</a> (void)</td></tr>
+<tr class="memdesc:a719b5099cc3aa62190a1f44642ba6f91"><td class="mdescLeft">&#160;</td><td class="mdescRight">Release any resources of the environment library that were alllocated with <a class="el" href="env_8h.html#a402ca8ae67be57c2c258a7a2bf22cfec" title="Initialize the environment library. ">spdk_env_init()</a>.  <a href="#a719b5099cc3aa62190a1f44642ba6f91">More...</a><br /></td></tr>
+<tr class="separator:a719b5099cc3aa62190a1f44642ba6f91"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0874731c44ac31e4b14d91c6844a87d1"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_8h.html#a0874731c44ac31e4b14d91c6844a87d1">spdk_dma_malloc</a> (size_t size, size_t align, uint64_t *phys_addr)</td></tr>
 <tr class="memdesc:a0874731c44ac31e4b14d91c6844a87d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate a pinned memory buffer with the given size and alignment.  <a href="#a0874731c44ac31e4b14d91c6844a87d1">More...</a><br /></td></tr>
 <tr class="separator:a0874731c44ac31e4b14d91c6844a87d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -900,6 +903,27 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>a pointer to the allocated memory buffer. </dd></dl>
+
+</div>
+</div>
+<a id="a719b5099cc3aa62190a1f44642ba6f91"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a719b5099cc3aa62190a1f44642ba6f91">&#9670;&nbsp;</a></span>spdk_env_fini()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_env_fini </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Release any resources of the environment library that were alllocated with <a class="el" href="env_8h.html#a402ca8ae67be57c2c258a7a2bf22cfec" title="Initialize the environment library. ">spdk_env_init()</a>. </p>
+<p>After this call, no SPDK env function calls may be made. It is expected that common usage of this function is to call it just before terminating the process. </p>
 
 </div>
 </div>

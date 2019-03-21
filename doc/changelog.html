@@ -158,6 +158,10 @@ v19.04: (Upcoming Release)</h1>
 <p>The size of a shared receive queue is defined by transport configuration file parameter <code>MaxSRQDepth</code> and <code>nvmf_create_transport</code> RPC method parameter <code>max_srq_depth</code>. Default size is 4096.</p>
 <h2>env</h2>
 <p>The <code>phys_addr</code> parameter in <a class="el" href="env_8h.html#a668370523a786a75a7d08a8e8f4b28b9" title="Allocate dma/sharable memory based on a given dma_flg. ">spdk_malloc()</a> and <a class="el" href="env_8h.html#a49ad245dae3554cf96d62e9b2b0b1596" title="Allocate dma/sharable memory based on a given dma_flg. ">spdk_zmalloc()</a> has been deprecated. For retrieving physical addresses, <a class="el" href="env_8h.html#ac6a932523e0f4cb86d2b90dfe113b171" title="Get the physical address of a buffer. ">spdk_vtophys()</a> should be used instead.</p>
+<h2>DPDK</h2>
+<p>Dropped support for DPDK 17.07 and earlier, which SPDK won't even compile with right now.</p>
+<h2>env</h2>
+<p><a class="el" href="env_8h.html#a719b5099cc3aa62190a1f44642ba6f91" title="Release any resources of the environment library that were alllocated with spdk_env_init(). ">spdk_env_fini()</a> and <a class="el" href="env__dpdk_8h.html#aff24042058543bcee5a8a7ba0cd6b226" title="Release any resources of the environment library that were alllocated with spdk_env_dpdk_post_init()...">spdk_env_dpdk_post_fini()</a> were added to release any resources allocated by <a class="el" href="env_8h.html#a402ca8ae67be57c2c258a7a2bf22cfec" title="Initialize the environment library. ">spdk_env_init()</a> or <a class="el" href="env__dpdk_8h.html#a4cad0e2fc2b5a9b8e588bc4e997e2ec7" title="Initialize the environment library after DPDK env is already initialized. ">spdk_env_dpdk_post_init()</a> respectively. It is expected that common usage of those functions is to call them just before terminating the process.</p>
 <h1><a class="anchor" id="changelog-v19-01"></a>
 v19.01:</h1>
 <h2>ocf bdev</h2>
