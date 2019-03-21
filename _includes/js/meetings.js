@@ -86,7 +86,7 @@ while (euroBugDate < currentDate || compareHoliday(euroBugDate, USHolidays, USTi
 // date at the beginning of this file and the calculated address based on the current date/time.
 euroDate = new Date(Date.UTC(euroDate.getUTCFullYear(), euroDate.getUTCMonth(), euroDate.getUTCDate(), 15, 0, 0, 0));
 asiaDate = new Date(Date.UTC(asiaDate.getUTCFullYear(), asiaDate.getUTCMonth(), asiaDate.getUTCDate(), 4, 0, 0, 0));
-asiaBugDate = new Date(Date.UTC(asiaBugDate.getUTCFullYear(), asiaBugDate.getUTCMonth(), asiaBugDate.getUTCDate(), 4, 30, 0, 0));
+asiaBugDate = new Date(Date.UTC(asiaBugDate.getUTCFullYear(), asiaBugDate.getUTCMonth(), asiaBugDate.getUTCDate(), 4, 0, 0, 0));
 euroBugDate = new Date(Date.UTC(euroBugDate.getUTCFullYear(), euroBugDate.getUTCMonth(), euroBugDate.getUTCDate(), 15, 0, 0, 0));
 
 document.getElementById("euro-mtg").textContent = formatDate(euroDate);
