@@ -3,6 +3,7 @@ var structspdk__app__opts =
     [ "config_file", "structspdk__app__opts.html#a6d21685102b759248a42bb8874c42409", null ],
     [ "delay_subsystem_init", "structspdk__app__opts.html#a703388c6f0075cf0396e05925364ebc5", null ],
     [ "enable_coredump", "structspdk__app__opts.html#ac21faa67a906aa0e70194b96e7700142", null ],
+    [ "env_context", "structspdk__app__opts.html#a7e520897d6a9e39c3e62cc4259bd2ea3", null ],
     [ "hugedir", "structspdk__app__opts.html#a8fcfa061da5b1b5bfd9900c3074bf95f", null ],
     [ "hugepage_single_segments", "structspdk__app__opts.html#ad584493cb8e3ca1744f29fbf4302d73f", null ],
     [ "json_config_file", "structspdk__app__opts.html#aa167c7261b91f10450ac6f1bc0700c1e", null ],

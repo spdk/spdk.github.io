@@ -7,7 +7,9 @@ var util_8h =
     [ "SPDK_SEC_TO_NSEC", "util_8h.html#ac1fbd59e0e9f73e71f416385d606cc52", null ],
     [ "SPDK_SEC_TO_USEC", "util_8h.html#aaa368537876ed0aee8ae810a240b2dfb", null ],
     [ "spdk_align32pow2", "util_8h.html#a22383e04171a98834c5f21f0c460e322", null ],
+    [ "spdk_align64pow2", "util_8h.html#a23a7b8dc5a8b680176bac1c7bd384406", null ],
     [ "spdk_divide_round_up", "util_8h.html#a3a1ed8f80bbc8e22d1f778a6615512e7", null ],
     [ "spdk_u32_is_pow2", "util_8h.html#a63e2af9bd97c1250c11a2e585336f377", null ],
-    [ "spdk_u32log2", "util_8h.html#a8572bc8de56d3587c8cf85dae67c1ca0", null ]
+    [ "spdk_u32log2", "util_8h.html#a8572bc8de56d3587c8cf85dae67c1ca0", null ],
+    [ "spdk_u64log2", "util_8h.html#a80958a3fb22029cf23d2722d30e707d1", null ]
 ];

@@ -8,7 +8,7 @@ var searchData=
   ['endian_2eh',['endian.h',['../endian_8h.html',1,'']]],
   ['entries',['entries',['../structspdk__trace__history.html#a09f645e9d5c19fb4e4fe71b4faaa3951',1,'spdk_trace_history']]],
   ['env_2eh',['env.h',['../env_8h.html',1,'']]],
-  ['env_5fcontext',['env_context',['../structspdk__env__opts.html#a54e6333e5067530db7e69b95ef8808ca',1,'spdk_env_opts']]],
+  ['env_5fcontext',['env_context',['../structspdk__env__opts.html#a54e6333e5067530db7e69b95ef8808ca',1,'spdk_env_opts::env_context()'],['../structspdk__app__opts.html#a7e520897d6a9e39c3e62cc4259bd2ea3',1,'spdk_app_opts::env_context()']]],
   ['env_5fdpdk_2eh',['env_dpdk.h',['../env__dpdk_8h.html',1,'']]],
   ['err_5foffset',['err_offset',['../structspdk__dif__error.html#a596249f0c0d8883a9228788314ab0c39',1,'spdk_dif_error']]],
   ['err_5ftype',['err_type',['../structspdk__dif__error.html#a77e96c6a1eb3364f9491ad128b05cb86',1,'spdk_dif_error']]],
