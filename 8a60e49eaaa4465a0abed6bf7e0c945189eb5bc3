@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "913a006e_7a7fce69",
+        "filename": "_posts/2019-03-22-openstack-release.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 1011222
+      },
+      "writtenOn": "2019-03-22T22:52:43Z",
+      "side": 1,
+      "message": "Good idea on the blog post!  I\u0027m wondering if this would be better if we wait for the actual release?  I think the only reason to announce a release candidate is if we\u0027re looking for help with testing (in which case we should post it to the mailing list).",
+      "revId": "8a60e49eaaa4465a0abed6bf7e0c945189eb5bc3",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "ca17ef0b_ace761e2",
+        "filename": "_posts/2019-03-22-openstack-release.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 1011222
+      },
+      "writtenOn": "2019-03-22T22:52:43Z",
+      "side": 1,
+      "message": "Instead of the \"here\" hyperlinks, how about something like:\n\ncan be found in the [release notes](https://blah) and [SPDK Cinder driver documentation](https://blah).",
+      "revId": "8a60e49eaaa4465a0abed6bf7e0c945189eb5bc3",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    }
+  ]
+}
