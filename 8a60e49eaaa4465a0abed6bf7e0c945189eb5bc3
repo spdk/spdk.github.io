@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "383d4d8e_308f773c",
+        "filename": "_posts/2019-03-22-openstack-release.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 1011262
+      },
+      "writtenOn": "2019-03-25T07:58:32Z",
+      "side": 1,
+      "message": "OK, sounds good, I\u0027ll wait and when it\u0027s out I\u0027ll upload corrected one.",
+      "parentUuid": "913a006e_7a7fce69",
+      "revId": "8a60e49eaaa4465a0abed6bf7e0c945189eb5bc3",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "ca17ef0b_ace761e2",
         "filename": "_posts/2019-03-22-openstack-release.md",
         "patchSetId": 1
@@ -30,6 +48,24 @@
       "writtenOn": "2019-03-22T22:52:43Z",
       "side": 1,
       "message": "Instead of the \"here\" hyperlinks, how about something like:\n\ncan be found in the [release notes](https://blah) and [SPDK Cinder driver documentation](https://blah).",
+      "revId": "8a60e49eaaa4465a0abed6bf7e0c945189eb5bc3",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "68d3547e_ed2bfc9c",
+        "filename": "_posts/2019-03-22-openstack-release.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 1011262
+      },
+      "writtenOn": "2019-03-25T07:58:32Z",
+      "side": 1,
+      "message": "Yeah, your way it will be better, thanks!",
+      "parentUuid": "ca17ef0b_ace761e2",
       "revId": "8a60e49eaaa4465a0abed6bf7e0c945189eb5bc3",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": true
