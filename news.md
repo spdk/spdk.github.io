@@ -5,6 +5,11 @@ title:  "SPDK In The News"
 
 # News items
 
+## February 2019 17th USENIX Conference on File and Storage Technologies (FAST '19)
+
+### [Reaping the performance of fast NVM storage with uDepot](https://www.usenix.org/system/files/fast19-kourtis.pdf)
+> This page describes how uDepot, a key-value store, utilizes SPDK and Intel Optane SSD to achieve equivalent performance to its DRAM-based counterparts at a much lower cost.
+
 ## November 2 2018 Linux Piter #4
 
 ### [SPDK and Nutanix AHV: minimising the virtualization overhead](https://linuxpiter.com/en/materials/2422)
