@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "bd32e05d_a2338238",
+        "filename": "news.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 1011204
+      },
+      "writtenOn": "2019-03-26T02:55:17Z",
+      "side": 1,
+      "message": "please remove the extra space at last, otherwise looks good to me, thanks.",
+      "revId": "ceac76de44d21abcd2aeace6822b62ff055167f5",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
