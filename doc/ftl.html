@@ -261,7 +261,7 @@ Configuring SPDK</h2>
 <li>UUID of the FTL device (if the FTL is to be restored from the SSD)</li>
 </ul>
 <p>Example config:</p>
-<div class="fragment"><div class="line">[Ftl]</div><div class="line"> TransportID &quot;trtype:PCIe traddr:00:0a.0&quot; nvme0 &quot;0-3&quot;</div><div class="line"> TransportID &quot;trtype:PCIe traddr:00:0a.0&quot; nvme1 &quot;4-5&quot; e9825835-b03c-49d7-bc3e-5827cbde8a88</div></div><!-- fragment --><p>The above will result in creation of two devices:</p><ul>
+<div class="fragment"><div class="line">[Ftl]</div><div class="line"> TransportID &quot;trtype:PCIe traddr:00:0a.0&quot; nvme0 &quot;0-3&quot; 00000000-0000-0000-0000-000000000000</div><div class="line"> TransportID &quot;trtype:PCIe traddr:00:0a.0&quot; nvme1 &quot;4-5&quot; e9825835-b03c-49d7-bc3e-5827cbde8a88</div></div><!-- fragment --><p>The above will result in creation of two devices:</p><ul>
 <li><code>nvme0</code> on <code>00:0a.0</code> using parallel units 0-3, created from scratch</li>
 <li><code>nvme1</code> on the same device using parallel units 4-5, restored from the SSD using the UUID provided</li>
 </ul>

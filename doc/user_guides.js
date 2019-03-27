@@ -238,7 +238,8 @@ var user_guides =
         [ "destroy_lvol_bdev", "jsonrpc.html#rpc_destroy_lvol_bdev", null ],
         [ "inflate_lvol_bdev", "jsonrpc.html#rpc_inflate_lvol_bdev", null ],
         [ "decouple_parent_lvol_bdev", "jsonrpc.html#rpc_decouple_parent_lvol_bdev", null ],
-        [ "send_nvme_cmd", "jsonrpc.html#rpc_send_nvme_cmd", null ]
+        [ "send_nvme_cmd", "jsonrpc.html#rpc_send_nvme_cmd", null ],
+        [ "get_spdk_version", "jsonrpc.html#rpc_get_spdk_version", null ]
       ] ]
     ] ],
     [ "JSON-RPC Remote access", "jsonrpc_proxy.html", null ]

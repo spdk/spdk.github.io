@@ -96,6 +96,7 @@ var NAVTREEINDEX4 =
 "jsonrpc.html#rpc_get_ocf_stats":[3,7,2,8],
 "jsonrpc.html#rpc_get_portal_groups":[3,7,3,18],
 "jsonrpc.html#rpc_get_rpc_methods":[3,7,1,4],
+"jsonrpc.html#rpc_get_spdk_version":[3,7,6,14],
 "jsonrpc.html#rpc_get_subsystem_config":[3,7,1,6],
 "jsonrpc.html#rpc_get_subsystems":[3,7,1,5],
 "jsonrpc.html#rpc_get_target_nodes":[3,7,3,12],
@@ -248,6 +249,5 @@ var NAVTREEINDEX4 =
 "mmio_8h.html":[14,0,30],
 "mmio_8h.html#a586e012f96a1399c6a7be3439212c677":[14,0,30,2],
 "mmio_8h.html#a5e5c67230fa7efb398ffb43454ee2d4f":[14,0,30,4],
-"mmio_8h.html#a682a558fe4a5f13cbc54a85282e087a4":[14,0,30,8],
-"mmio_8h.html#a68d558db289ded2f229719ac38ef3c22":[14,0,30,1]
+"mmio_8h.html#a682a558fe4a5f13cbc54a85282e087a4":[14,0,30,8]
 };
