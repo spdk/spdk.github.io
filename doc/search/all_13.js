@@ -1063,6 +1063,7 @@ var searchData=
   ['spdk_5freactor_5fenable_5fcontext_5fswitch_5fmonitor',['spdk_reactor_enable_context_switch_monitor',['../event_8h.html#aaceb0151a765d4068be9d37cefe37914',1,'event.h']]],
   ['spdk_5frealloc',['spdk_realloc',['../env_8h.html#acbf96e1e440b86ba23728e226b0745c6',1,'env.h']]],
   ['spdk_5freduce_5fbacking_5fdev',['spdk_reduce_backing_dev',['../structspdk__reduce__backing__dev.html',1,'']]],
+  ['spdk_5freduce_5fdev_5fcpl',['spdk_reduce_dev_cpl',['../reduce_8h.html#a137aea842a5ebd65781d7bcfc735018b',1,'reduce.h']]],
   ['spdk_5freduce_5fvol_5fcb_5fargs',['spdk_reduce_vol_cb_args',['../structspdk__reduce__vol__cb__args.html',1,'']]],
   ['spdk_5freduce_5fvol_5fdestroy',['spdk_reduce_vol_destroy',['../reduce_8h.html#ae0ffc9aa6f6f8ba73f52672abcccddbc',1,'reduce.h']]],
   ['spdk_5freduce_5fvol_5fget_5fuuid',['spdk_reduce_vol_get_uuid',['../reduce_8h.html#ace66fd4e3840d38127fcf7a21dc269de',1,'reduce.h']]],

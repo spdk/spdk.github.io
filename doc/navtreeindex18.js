@@ -82,11 +82,13 @@ var NAVTREEINDEX18 =
 "structspdk__pci__id.html#ae1f6dd7e42b4203d397b154fe1af2ed8":[13,0,208,3],
 "structspdk__pci__id.html#aedf53a294bbe914233d7ba3f00b20874":[13,0,208,1],
 "structspdk__reduce__backing__dev.html":[13,0,209],
-"structspdk__reduce__backing__dev.html#a3bbbe463964804c1289bd3876ff262fe":[13,0,209,2],
+"structspdk__reduce__backing__dev.html#a0811da1e615e6a31cad4810e8327cfbe":[13,0,209,3],
+"structspdk__reduce__backing__dev.html#a3bbbe463964804c1289bd3876ff262fe":[13,0,209,4],
 "structspdk__reduce__backing__dev.html#a59745a0da2cf2bcf55bd19009cc093ff":[13,0,209,0],
 "structspdk__reduce__backing__dev.html#aa5d23ba4f13d91c3c79a2cd99f61edc7":[13,0,209,1],
-"structspdk__reduce__backing__dev.html#ad23a4e33b6b615acc350eb64aa429465":[13,0,209,3],
-"structspdk__reduce__backing__dev.html#af33de4b96028f7377b857038ff1b19a6":[13,0,209,4],
+"structspdk__reduce__backing__dev.html#ac5a48d92ad0a0c27f5b443a641e0f264":[13,0,209,2],
+"structspdk__reduce__backing__dev.html#ad23a4e33b6b615acc350eb64aa429465":[13,0,209,5],
+"structspdk__reduce__backing__dev.html#af33de4b96028f7377b857038ff1b19a6":[13,0,209,6],
 "structspdk__reduce__vol__cb__args.html":[13,0,210],
 "structspdk__reduce__vol__cb__args.html#a66f86300cc6cbfd6247517c2e20cce68":[13,0,210,0],
 "structspdk__reduce__vol__cb__args.html#ae6ca2ffa896fb538f00efdbcba388080":[13,0,210,1],
@@ -247,7 +249,5 @@ var NAVTREEINDEX18 =
 "structspdk__scsi__task.html#aeb209bc3f191f792707c7d4e7b1fe4e4":[13,0,226,21],
 "structspdk__scsi__task.html#aed0de3999a81a9aeb079f0d9e4c4f098":[13,0,226,7],
 "structspdk__scsi__task.html#af64768a06fe99dea3b1c90791d5970b0":[13,0,226,23],
-"structspdk__scsi__task.html#afa26345de5d75d6850560cc6c1bbc5fe":[13,0,226,6],
-"structspdk__scsi__task.html#afc9a5efc76a958e8d228fb6316e4eccb":[13,0,226,22],
-"structspdk__scsi__tgt__port__desc.html":[13,0,227]
+"structspdk__scsi__task.html#afa26345de5d75d6850560cc6c1bbc5fe":[13,0,226,6]
 };

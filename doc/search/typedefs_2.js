@@ -52,6 +52,7 @@ var searchData=
   ['spdk_5fnvmf_5ftgt_5fadd_5ftransport_5fdone_5ffn',['spdk_nvmf_tgt_add_transport_done_fn',['../nvmf_8h.html#a53086e85e4a7103ab2b714483b4f2aec',1,'nvmf.h']]],
   ['spdk_5fnvmf_5ftgt_5flisten_5fdone_5ffn',['spdk_nvmf_tgt_listen_done_fn',['../nvmf_8h.html#a854e30bf69f07bb06b2cbcdd08ca7eba',1,'nvmf.h']]],
   ['spdk_5fpoller_5ffn',['spdk_poller_fn',['../thread_8h.html#a35c421accdc2a0a61bb7be916106293b',1,'thread.h']]],
+  ['spdk_5freduce_5fdev_5fcpl',['spdk_reduce_dev_cpl',['../reduce_8h.html#a137aea842a5ebd65781d7bcfc735018b',1,'reduce.h']]],
   ['spdk_5fsighandler_5ft',['spdk_sighandler_t',['../event_8h.html#a6371e3e4903529f9c94e25d224580a44',1,'event.h']]],
   ['spdk_5fsock_5fcb',['spdk_sock_cb',['../sock_8h.html#ae297ae75e566b35635d20b959daa7741',1,'sock.h']]],
   ['spdk_5fstart_5fpoller',['spdk_start_poller',['../thread_8h.html#a6f70f5e9b4d498e843f81f1a6ada6370',1,'thread.h']]],

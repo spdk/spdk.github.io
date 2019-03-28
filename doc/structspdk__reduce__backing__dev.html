@@ -152,6 +152,12 @@ void(*&#160;</td><td class="memItemRight" valign="bottom"><b>writev</b> )(struct
 <tr class="memitem:ad23a4e33b6b615acc350eb64aa429465"><td class="memItemLeft" align="right" valign="top"><a id="ad23a4e33b6b615acc350eb64aa429465"></a>
 void(*&#160;</td><td class="memItemRight" valign="bottom"><b>unmap</b> )(struct <a class="el" href="structspdk__reduce__backing__dev.html">spdk_reduce_backing_dev</a> *dev, uint64_t lba, uint32_t lba_count, struct <a class="el" href="structspdk__reduce__vol__cb__args.html">spdk_reduce_vol_cb_args</a> *args)</td></tr>
 <tr class="separator:ad23a4e33b6b615acc350eb64aa429465"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5a48d92ad0a0c27f5b443a641e0f264"><td class="memItemLeft" align="right" valign="top"><a id="ac5a48d92ad0a0c27f5b443a641e0f264"></a>
+void(*&#160;</td><td class="memItemRight" valign="bottom"><b>compress</b> )(struct <a class="el" href="structspdk__reduce__backing__dev.html">spdk_reduce_backing_dev</a> *dev, struct iovec *src_iov, int src_iovcnt, struct iovec *dst_iov, int dst_iovcnt, struct <a class="el" href="structspdk__reduce__vol__cb__args.html">spdk_reduce_vol_cb_args</a> *args)</td></tr>
+<tr class="separator:ac5a48d92ad0a0c27f5b443a641e0f264"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0811da1e615e6a31cad4810e8327cfbe"><td class="memItemLeft" align="right" valign="top"><a id="a0811da1e615e6a31cad4810e8327cfbe"></a>
+void(*&#160;</td><td class="memItemRight" valign="bottom"><b>decompress</b> )(struct <a class="el" href="structspdk__reduce__backing__dev.html">spdk_reduce_backing_dev</a> *dev, struct iovec *src_iov, int src_iovcnt, struct iovec *dst_iov, int dst_iovcnt, struct <a class="el" href="structspdk__reduce__vol__cb__args.html">spdk_reduce_vol_cb_args</a> *args)</td></tr>
+<tr class="separator:a0811da1e615e6a31cad4810e8327cfbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a59745a0da2cf2bcf55bd19009cc093ff"><td class="memItemLeft" align="right" valign="top"><a id="a59745a0da2cf2bcf55bd19009cc093ff"></a>
 uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>blockcnt</b></td></tr>
 <tr class="separator:a59745a0da2cf2bcf55bd19009cc093ff"><td class="memSeparator" colspan="2">&#160;</td></tr>

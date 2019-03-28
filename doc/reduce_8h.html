@@ -164,8 +164,8 @@ typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_reduce
 <tr class="memitem:a978a8801cd56a94532562650457c97dd"><td class="memItemLeft" align="right" valign="top"><a id="a978a8801cd56a94532562650457c97dd"></a>
 typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_reduce_vol_op_with_handle_complete</b>) (void *ctx, struct spdk_reduce_vol *vol, int reduce_errno)</td></tr>
 <tr class="separator:a978a8801cd56a94532562650457c97dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a137aea842a5ebd65781d7bcfc735018b"><td class="memItemLeft" align="right" valign="top"><a id="a137aea842a5ebd65781d7bcfc735018b"></a>
-typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_reduce_dev_cpl</b>) (void *cb_arg, int reduce_errno)</td></tr>
+<tr class="memitem:a137aea842a5ebd65781d7bcfc735018b"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="reduce_8h.html#a137aea842a5ebd65781d7bcfc735018b">spdk_reduce_dev_cpl</a>) (void *cb_arg, int reduce_errno)</td></tr>
+<tr class="memdesc:a137aea842a5ebd65781d7bcfc735018b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines function type for callback functions called when backing_dev operations are complete.  <a href="#a137aea842a5ebd65781d7bcfc735018b">More...</a><br /></td></tr>
 <tr class="separator:a137aea842a5ebd65781d7bcfc735018b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
@@ -194,7 +194,31 @@ Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>SPDK block compression. </p>
-</div><h2 class="groupheader">Function Documentation</h2>
+</div><h2 class="groupheader">Typedef Documentation</h2>
+<a id="a137aea842a5ebd65781d7bcfc735018b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a137aea842a5ebd65781d7bcfc735018b">&#9670;&nbsp;</a></span>spdk_reduce_dev_cpl</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void(* spdk_reduce_dev_cpl) (void *cb_arg, int reduce_errno)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Defines function type for callback functions called when backing_dev operations are complete. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cb_arg</td><td>Callback argument </td></tr>
+    <tr><td class="paramname">reduce_errno</td><td>Completion status of backing_dev operation Negative values indicate negated errno value 0 indicates successful readv/writev/unmap operation Positive value indicates successful compress/decompress operations; number indicates number of bytes written to destination iovs </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
 <a id="ae0ffc9aa6f6f8ba73f52672abcccddbc"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae0ffc9aa6f6f8ba73f52672abcccddbc">&#9670;&nbsp;</a></span>spdk_reduce_vol_destroy()</h2>
 
