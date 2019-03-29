@@ -1259,6 +1259,7 @@ var searchData=
   ['spdk_5fvhost_5fset_5fcoalescing',['spdk_vhost_set_coalescing',['../vhost_8h.html#a8b8c054fdc8ed4ad573b2d0bcf2d4797',1,'vhost.h']]],
   ['spdk_5fvhost_5fset_5fsocket_5fpath',['spdk_vhost_set_socket_path',['../vhost_8h.html#a15921078a895d090283fbbeaaddee76c',1,'vhost.h']]],
   ['spdk_5fvhost_5fshutdown_5fcb',['spdk_vhost_shutdown_cb',['../vhost_8h.html#afd7159f8eb1e0d65dad5bedaa6cc5e43',1,'vhost.h']]],
+  ['spdk_5fvhost_5ftrylock',['spdk_vhost_trylock',['../vhost_8h.html#a04d81053d41a72f5df978f7c05dfebd7',1,'vhost.h']]],
   ['spdk_5fvhost_5funlock',['spdk_vhost_unlock',['../vhost_8h.html#adf01bd5ae7b0d761aa8e0e271de1ee9e',1,'vhost.h']]],
   ['spdk_5fvsprintf_5falloc',['spdk_vsprintf_alloc',['../string_8h.html#a6dc47e4a2855c519b30fc54b252f85cc',1,'string.h']]],
   ['spdk_5fvsprintf_5fappend_5frealloc',['spdk_vsprintf_append_realloc',['../string_8h.html#a8140b574a3934d00596aaf6a38c51f14',1,'string.h']]],

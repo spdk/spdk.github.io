@@ -1,5 +1,6 @@
 var structspdk__ftl__attrs =
 [
+    [ "cache_bdev_desc", "structspdk__ftl__attrs.html#a591b3cc04e004e8d7ddb534947708d8d", null ],
     [ "lbk_cnt", "structspdk__ftl__attrs.html#a00c7ee461678750becaefbc9608d58c2", null ],
     [ "lbk_size", "structspdk__ftl__attrs.html#ab5607984fcfd9302e2b1333d7951abd2", null ],
     [ "range", "structspdk__ftl__attrs.html#afebcc710fe6130d60380b9b55a26f057", null ],

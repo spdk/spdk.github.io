@@ -1,5 +1,7 @@
 var NAVTREEINDEX20 =
 {
+"unionspdk__nvme__critical__warning__state.html#a093845218b1e1dd96ecb69eeac9c241d":[13,0,88,0],
+"unionspdk__nvme__critical__warning__state.html#a113097459596a0a0d1d3dbc8b18accc3":[13,0,88,2],
 "unionspdk__nvme__critical__warning__state.html#a1a90ec5cd6dee81f3e9346808b9b7826":[13,0,88,5],
 "unionspdk__nvme__critical__warning__state.html#a220ca1988fe2546b3b61b00af7a74a05":[13,0,88,4],
 "unionspdk__nvme__critical__warning__state.html#a6ebadf678c6d64a9586b58eb6ad11365":[13,0,88,3],
@@ -216,6 +218,7 @@ var NAVTREEINDEX20 =
 "vhost.html#vhost_vdev_create":[3,4,4,1],
 "vhost_8h.html":[14,0,52],
 "vhost_8h.html#a01b54a11439216fb05196474e3ee20d1":[14,0,52,15],
+"vhost_8h.html#a04d81053d41a72f5df978f7c05dfebd7":[14,0,52,21],
 "vhost_8h.html#a08ca8ab0522c25869c31c163175e6299":[14,0,52,5],
 "vhost_8h.html#a15921078a895d090283fbbeaaddee76c":[14,0,52,19],
 "vhost_8h.html#a256ce5abb39df6f4627e3fac7863998f":[14,0,52,4],
@@ -230,7 +233,7 @@ var NAVTREEINDEX20 =
 "vhost_8h.html#aa06efc0d096d4414de40ed5c0b394622":[14,0,52,7],
 "vhost_8h.html#aa6eba1ce0ac89c3287b755567795869b":[14,0,52,9],
 "vhost_8h.html#ac2c4b62eaf6503e5f5e520394f9f9fe1":[14,0,52,0],
-"vhost_8h.html#adf01bd5ae7b0d761aa8e0e271de1ee9e":[14,0,52,21],
+"vhost_8h.html#adf01bd5ae7b0d761aa8e0e271de1ee9e":[14,0,52,22],
 "vhost_8h.html#ae1ea27c8ae7616e92d916e5c6fc34231":[14,0,52,17],
 "vhost_8h.html#aed851ed4cfcdf69b6221c8cad4688353":[14,0,52,8],
 "vhost_8h.html#af358eac95a16bd456349fcfaa00379bb":[14,0,52,10],
@@ -246,8 +249,5 @@ var NAVTREEINDEX20 =
 "vhost_processing.html#vhost_spdk_optimizations":[2,4,4,0],
 "virtio.html":[7,2],
 "virtio.html#virtio_2mb":[7,2,1],
-"virtio.html#virtio_intro":[7,2,0],
-"vpp_integration.html":[5,3],
-"vpp_integration.html#vpp_build":[5,3,0],
-"vpp_integration.html#vpp_built_into_spdk":[5,3,3]
+"virtio.html#virtio_intro":[7,2,0]
 };

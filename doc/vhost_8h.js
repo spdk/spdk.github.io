@@ -21,5 +21,6 @@ var vhost_8h =
     [ "spdk_vhost_set_coalescing", "vhost_8h.html#a8b8c054fdc8ed4ad573b2d0bcf2d4797", null ],
     [ "spdk_vhost_set_socket_path", "vhost_8h.html#a15921078a895d090283fbbeaaddee76c", null ],
     [ "spdk_vhost_shutdown_cb", "vhost_8h.html#afd7159f8eb1e0d65dad5bedaa6cc5e43", null ],
+    [ "spdk_vhost_trylock", "vhost_8h.html#a04d81053d41a72f5df978f7c05dfebd7", null ],
     [ "spdk_vhost_unlock", "vhost_8h.html#adf01bd5ae7b0d761aa8e0e271de1ee9e", null ]
 ];
