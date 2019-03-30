@@ -543,6 +543,7 @@ var searchData=
   ['spdk_5fnet_5fframework_5fstart',['spdk_net_framework_start',['../net_8h.html#af110dcf710bf13d7e302002606e842ad',1,'net.h']]],
   ['spdk_5fnet_5finit_5fcb',['spdk_net_init_cb',['../net_8h.html#ac4a70159fdffa7bd9100c92b602b2608',1,'net.h']]],
   ['spdk_5fnew_5fthread_5ffn',['spdk_new_thread_fn',['../thread_8h.html#af8919ce9d89e5a1b2da5ce4edd5521b3',1,'thread.h']]],
+  ['spdk_5fnotify_5fevent',['spdk_notify_event',['../structspdk__notify__event.html',1,'']]],
   ['spdk_5fnvme_5fadmin_5fopcode',['spdk_nvme_admin_opcode',['../nvme__spec_8h.html#a3d96f5eb214b3cb58675276f19855bf5',1,'nvme_spec.h']]],
   ['spdk_5fnvme_5faer_5fcb',['spdk_nvme_aer_cb',['../nvme_8h.html#ae564dc7dced1dd7b474c1a6923734a6d',1,'nvme.h']]],
   ['spdk_5fnvme_5faqa_5fregister',['spdk_nvme_aqa_register',['../unionspdk__nvme__aqa__register.html',1,'']]],
