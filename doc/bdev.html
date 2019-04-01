@@ -230,7 +230,7 @@ Linux AIO bdev</h1>
 <p><code>rpc.py delete_aio_bdev aio0</code></p>
 <h1><a class="anchor" id="bdev_config_cas"></a>
 OCF Virtual bdev</h1>
-<p>OCF virtual bdev module is based on <a href="https://github.com/Open-CAS/ocf">Open CAS Framework</a> - a high performance block storage caching meta-library. To enable the module, configure SPDK with <code>--with-ocf=/path/to/ocf/library</code>. OCF bdev can be used to enable caching for any underlying bdev.</p>
+<p>OCF virtual bdev module is based on <a href="https://github.com/Open-CAS/ocf">Open CAS Framework</a> - a high performance block storage caching meta-library. To enable the module, configure SPDK using <code>--with-ocf</code> flag. OCF bdev can be used to enable caching for any underlying bdev.</p>
 <p>Below is an example command for creating OCF bdev:</p>
 <p><code>rpc.py construct_ocf_bdev Cache1 wt Malloc0 Nvme0n1</code></p>
 <p>This command will create new OCF bdev <code>Cache1</code> having bdev <code>Malloc0</code> as caching-device and <code>Nvme0n1</code> as core-device and initial cache mode <code>Write-Through</code>. <code>Malloc0</code> will be used as cache for <code>Nvme0n1</code>, so data written to <code>Cache1</code> will be present on <code>Nvme0n1</code> eventually. By default, OCF will be configured with cache line size equal 4KiB and non-volatile metadata will be disabled.</p>
