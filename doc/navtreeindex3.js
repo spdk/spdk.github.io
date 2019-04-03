@@ -1,5 +1,6 @@
 var NAVTREEINDEX3 =
 {
+"histogram__data_8h.html#ae971d398c77b2593e32203a2d9cd8df6":[14,0,20,9],
 "index.html":[],
 "index.html":[0],
 "intro.html":[1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX3 =
 "json_8h.html#aae250e55eb9ac9183315695d5f84cd9fac8d01fb95f49e164576b158eb771938d":[14,0,25,11,6],
 "json_8h.html#aae250e55eb9ac9183315695d5f84cd9facf4336ea4bc120de2dcdb2cd43c071ee":[14,0,25,11,9],
 "json_8h.html#aae250e55eb9ac9183315695d5f84cd9fae884cf89c4e3e4e1b20954ef882f50f8":[14,0,25,11,7],
-"json_8h.html#aae250e55eb9ac9183315695d5f84cd9faee1da3a9db6aaa47abd1f7686eef71c4":[14,0,25,11,10],
-"json_8h.html#aaf471af9adc269e6b3f9753acffbc173":[14,0,25,65]
+"json_8h.html#aae250e55eb9ac9183315695d5f84cd9faee1da3a9db6aaa47abd1f7686eef71c4":[14,0,25,11,10]
 };

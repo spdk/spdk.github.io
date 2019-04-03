@@ -1,5 +1,6 @@
 var NAVTREEINDEX20 =
 {
+"unionspdk__nvme__cmbsz__register.html#ad0aa06b3cce740ca6fdb26bf8c515167":[13,0,84,5],
 "unionspdk__nvme__cmbsz__register.html#ad934781cb8247d65136131504d5cd05d":[13,0,84,9],
 "unionspdk__nvme__cmbsz__register.html#af1ceb7a8fd105d746f14edf48a672d08":[13,0,84,1],
 "unionspdk__nvme__critical__warning__state.html":[13,0,89],
@@ -248,6 +249,5 @@ var NAVTREEINDEX20 =
 "vhost_processing.html#vhost_processing_intro":[2,4,1],
 "vhost_processing.html#vhost_processing_io_path":[2,4,4],
 "vhost_processing.html#vhost_processing_qemu":[2,4,2],
-"vhost_processing.html#vhost_processing_toc":[2,4,0],
-"vhost_processing.html#vhost_spdk_optimizations":[2,4,4,0]
+"vhost_processing.html#vhost_processing_toc":[2,4,0]
 };

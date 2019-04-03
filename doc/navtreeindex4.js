@@ -1,5 +1,6 @@
 var NAVTREEINDEX4 =
 {
+"json_8h.html#aaf471af9adc269e6b3f9753acffbc173":[14,0,25,65],
 "json_8h.html#ab41e40a3d513cc859534cb5ed08a69ad":[14,0,25,48],
 "json_8h.html#ab86b097667b889dfda164b10a746ec29":[14,0,25,47],
 "json_8h.html#ab93e46b460a6a5f2f9ee3fa54edcc8de":[14,0,25,66],
@@ -248,6 +249,5 @@ var NAVTREEINDEX4 =
 "misc.html":[6],
 "mmio_8h.html":[14,0,30],
 "mmio_8h.html#a586e012f96a1399c6a7be3439212c677":[14,0,30,2],
-"mmio_8h.html#a5e5c67230fa7efb398ffb43454ee2d4f":[14,0,30,4],
-"mmio_8h.html#a682a558fe4a5f13cbc54a85282e087a4":[14,0,30,8]
+"mmio_8h.html#a5e5c67230fa7efb398ffb43454ee2d4f":[14,0,30,4]
 };
