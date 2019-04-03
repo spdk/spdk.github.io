@@ -9,6 +9,8 @@ var USHolidays = [[ new Date(2018, 11, 24), true ], //Christmas Eve
         [ new Date(2018, 11, 26), true ], //Day after Christmas
         [ new Date(2018, 11, 31), true], //New Years Eve
         [ new Date(2018, 0, 1), true ], //New Years
+        [ new Date(2019, 3, 16), true ], //SPDK Summit
+        [ new Date(2019, 3, 17), true ], //SPDK Summit
         [ new Date(2019, 6, 4), true ], //4th of July
         [ new Date(2019, 4, 27), false ], //Memorial Day
         [ new Date(2019, 8, 2), false ], //Labor Day
