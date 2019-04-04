@@ -1,5 +1,7 @@
 var NAVTREEINDEX21 =
 {
+"vhost_processing.html#vhost_processing_qemu":[2,4,2],
+"vhost_processing.html#vhost_processing_toc":[2,4,0],
 "vhost_processing.html#vhost_spdk_optimizations":[2,4,4,0],
 "virtio.html":[7,2],
 "virtio.html#virtio_2mb":[7,2,1],

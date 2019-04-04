@@ -58,6 +58,8 @@ var scsi_8h =
     [ "spdk_scsi_lun_get_dev", "scsi_8h.html#aa87d45ae3bcf47ffa2db2ff3cf51ae21", null ],
     [ "spdk_scsi_lun_get_dif_ctx", "scsi_8h.html#a1212786090990db09aadb3987a5073cc", null ],
     [ "spdk_scsi_lun_get_id", "scsi_8h.html#af5ed1a133f6f137402c0eb7742077f17", null ],
+    [ "spdk_scsi_lun_id_fmt_to_int", "scsi_8h.html#a9cce391128bce2d403d87766248fb3c8", null ],
+    [ "spdk_scsi_lun_id_int_to_fmt", "scsi_8h.html#a96a370d3d453227d9ab94316e7b43a2f", null ],
     [ "spdk_scsi_lun_is_removing", "scsi_8h.html#ad660916c8c06b8c3eed3245618d6c59f", null ],
     [ "spdk_scsi_lun_open", "scsi_8h.html#a496221276fda4f6c6177968cb1081000", null ],
     [ "spdk_scsi_port_create", "scsi_8h.html#a295b1a0566c6b1dc9f5245724cb68179", null ],

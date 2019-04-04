@@ -350,6 +350,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="scsi
 <tr class="memitem:a5c5f9ec2f448328e55e2e46e932d2e21"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="scsi_8h.html#a5c5f9ec2f448328e55e2e46e932d2e21">spdk_scsi_port_set_iscsi_transport_id</a> (struct spdk_scsi_port *port, char *iscsi_name, uint64_t isid)</td></tr>
 <tr class="memdesc:a5c5f9ec2f448328e55e2e46e932d2e21"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set iSCSI Initiator port TransportID.  <a href="#a5c5f9ec2f448328e55e2e46e932d2e21">More...</a><br /></td></tr>
 <tr class="separator:a5c5f9ec2f448328e55e2e46e932d2e21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96a370d3d453227d9ab94316e7b43a2f"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="scsi_8h.html#a96a370d3d453227d9ab94316e7b43a2f">spdk_scsi_lun_id_int_to_fmt</a> (int lun_id)</td></tr>
+<tr class="memdesc:a96a370d3d453227d9ab94316e7b43a2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert LUN ID from integer to LUN format.  <a href="#a96a370d3d453227d9ab94316e7b43a2f">More...</a><br /></td></tr>
+<tr class="separator:a96a370d3d453227d9ab94316e7b43a2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9cce391128bce2d403d87766248fb3c8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="scsi_8h.html#a9cce391128bce2d403d87766248fb3c8">spdk_scsi_lun_id_fmt_to_int</a> (uint64_t fmt_lun)</td></tr>
+<tr class="memdesc:a9cce391128bce2d403d87766248fb3c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert LUN ID from LUN format to integer.  <a href="#a9cce391128bce2d403d87766248fb3c8">More...</a><br /></td></tr>
+<tr class="separator:a9cce391128bce2d403d87766248fb3c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>SCSI to bdev translation layer. </p>
@@ -1121,6 +1127,60 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="scsi
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>LUN id of the logical unit. </dd></dl>
+
+</div>
+</div>
+<a id="a9cce391128bce2d403d87766248fb3c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9cce391128bce2d403d87766248fb3c8">&#9670;&nbsp;</a></span>spdk_scsi_lun_id_fmt_to_int()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_scsi_lun_id_fmt_to_int </td>
+          <td>(</td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>fmt_lun</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Convert LUN ID from LUN format to integer. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fmt_lun</td><td>LUN format of LUN ID</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>integer LUN ID </dd></dl>
+
+</div>
+</div>
+<a id="a96a370d3d453227d9ab94316e7b43a2f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a96a370d3d453227d9ab94316e7b43a2f">&#9670;&nbsp;</a></span>spdk_scsi_lun_id_int_to_fmt()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint64_t spdk_scsi_lun_id_int_to_fmt </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>lun_id</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Convert LUN ID from integer to LUN format. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">lun_id</td><td>Integer LUN ID</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>LUN format of LUN ID </dd></dl>
 
 </div>
 </div>
