@@ -21,6 +21,8 @@ var scsi__spec_8h =
     [ "SPDK_SBC_START_STOP_UNIT_START_BIT", "scsi__spec_8h.html#a135606383acc072af7daf5a4ea3be5d4", null ],
     [ "SPDK_SCSI_GROUP_MASK", "scsi__spec_8h.html#af125f2e99a82db78a3fe9563bd0f02c9", null ],
     [ "SPDK_SCSI_OPCODE_MASK", "scsi__spec_8h.html#af993a050a0bdd0d520b7fdcbbb32d98a", null ],
+    [ "SPDK_SCSI_SECP_INFO", "scsi__spec_8h.html#addccf93d87933ecaf113dbe49f25c604", null ],
+    [ "SPDK_SCSI_SECP_TCG", "scsi__spec_8h.html#a19981b06fcc745165c40c64662df5967", null ],
     [ "SPDK_SCSI_UNMAP_FULL_PROVISIONING", "scsi__spec_8h.html#a9ce5efad4ede9be1c925a88289612bf5", null ],
     [ "SPDK_SCSI_UNMAP_LBPU", "scsi__spec_8h.html#a96387d2993d5af1bd6559aa5a2f63b9d", null ],
     [ "SPDK_SCSI_UNMAP_LBPWS", "scsi__spec_8h.html#a610d71c82527a39fc473fd91a0191c96", null ],

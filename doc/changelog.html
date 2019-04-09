@@ -166,6 +166,8 @@ v19.04: (Upcoming Release)</h1>
 <h2>rpc</h2>
 <p>New <code>get_spdk_version</code> RPC method is introduced to get version info of the running SPDK application.</p>
 <p>The <code>start_nbd_disk</code> RPC method now take nbd_device as an optional parameter. If nbd_device is specified, use that specified nbd device. If it's not specified, pick available one.</p>
+<h2>Opal</h2>
+<p>Add Opal scan support for NVMe to check whether it supports SED Opal and dump device info. nvme_manage tool can be used to invoke this.</p>
 <h1><a class="anchor" id="changelog-v19-01"></a>
 v19.01:</h1>
 <h2>ocf bdev</h2>

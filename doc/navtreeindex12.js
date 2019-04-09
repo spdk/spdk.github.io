@@ -1,5 +1,7 @@
 var NAVTREEINDEX12 =
 {
+"structiscsi__bhs__text__req.html#a7a1c9ea770692ff68fca97ea853b7cb4":[13,0,19,4],
+"structiscsi__bhs__text__req.html#a95b66a7602330c1cf92b7cb69ba83590":[13,0,19,9],
 "structiscsi__bhs__text__req.html#a9734dfa23d95bf1a6a473751df6996f1":[13,0,19,1],
 "structiscsi__bhs__text__req.html#a9a6cac2f29efa48a75d5d23d8e09edbb":[13,0,19,2],
 "structiscsi__bhs__text__req.html#aa7467ede77cc47a35f6e9ee6e16f4e94":[13,0,19,11],
@@ -238,16 +240,14 @@ var NAVTREEINDEX12 =
 "structspdk__bs__type.html#adeb32932fc964af4258f39060def5c38":[13,0,39,0],
 "structspdk__crc32__table.html":[13,0,40],
 "structspdk__crc32__table.html#a6a9ae230c2366f8be852db92ff6839ae":[13,0,40,0],
-"structspdk__dif.html":[13,0,41],
-"structspdk__dif.html#a1c6fdcc7eb2a6eeb05ab25d8eb8b1ade":[13,0,41,1],
-"structspdk__dif.html#a98fdcb892152ce328993558e638c56f2":[13,0,41,0],
-"structspdk__dif.html#aa984f4551775226087f1c9f2297da3eb":[13,0,41,2],
-"structspdk__dif__ctx.html":[13,0,42],
-"structspdk__dif__ctx.html#a1a7fa6ed12d7ca935e24e20f1a4fac88":[13,0,42,0],
-"structspdk__dif__ctx.html#a2853eeaf8a9c7bb372d4632748c5105a":[13,0,42,2],
-"structspdk__dif__ctx.html#a49e9befa6a66be7c01205a42f3746bb5":[13,0,42,3],
-"structspdk__dif__ctx.html#a4a88c9f2f65216b9d5b61e49665f389b":[13,0,42,6],
-"structspdk__dif__ctx.html#a593aef5de5694c4abd05554ed4ac92a7":[13,0,42,5],
-"structspdk__dif__ctx.html#a70bae2b0c71c14a91163f89d4e215802":[13,0,42,8],
-"structspdk__dif__ctx.html#a87509f51370bf129ab20993e1695c66a":[13,0,42,4]
+"structspdk__d0__datastore__features.html":[13,0,41],
+"structspdk__d0__datastore__features.html#a154006bb3205fc0b39141e27537884f5":[13,0,41,3],
+"structspdk__d0__datastore__features.html#a2e388f4308c018de43ebc8b929550454":[13,0,41,4],
+"structspdk__d0__datastore__features.html#a41c69078a43ab0a98116bacbd255af79":[13,0,41,6],
+"structspdk__d0__datastore__features.html#a6d5f07672db5aa09ac07fb0376ed5987":[13,0,41,1],
+"structspdk__d0__datastore__features.html#a80640aaa9947c1021266c40b93cc9873":[13,0,41,0],
+"structspdk__d0__datastore__features.html#abe12794ea2d36483d6d10a07249ff67c":[13,0,41,7],
+"structspdk__d0__datastore__features.html#ad1b89bb4520f4b6f0bc2e18890ec630b":[13,0,41,2],
+"structspdk__d0__datastore__features.html#ae7e27f30e0e7fa76d9355a3c7b70687c":[13,0,41,5],
+"structspdk__d0__geo__features.html":[13,0,42]
 };
