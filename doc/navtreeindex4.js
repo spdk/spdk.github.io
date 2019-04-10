@@ -1,5 +1,7 @@
 var NAVTREEINDEX4 =
 {
+"json_8h.html#aae250e55eb9ac9183315695d5f84cd9fae884cf89c4e3e4e1b20954ef882f50f8":[14,0,25,11,7],
+"json_8h.html#aae250e55eb9ac9183315695d5f84cd9faee1da3a9db6aaa47abd1f7686eef71c4":[14,0,25,11,10],
 "json_8h.html#aaf471af9adc269e6b3f9753acffbc173":[14,0,25,65],
 "json_8h.html#ab41e40a3d513cc859534cb5ed08a69ad":[14,0,25,48],
 "json_8h.html#ab86b097667b889dfda164b10a746ec29":[14,0,25,47],
@@ -19,6 +21,7 @@ var NAVTREEINDEX4 =
 "json_8h.html#af58205394bbbfb6d05219e1c8b88023d":[14,0,25,53],
 "json_8h.html#afb39ef20750d537d2ceb7deb88a2d860":[14,0,25,54],
 "jsonrpc.html":[3,7],
+"jsonrpc.html#get_notifications":[3,7,6,14],
 "jsonrpc.html#jsonrpc_components_app":[3,7,1],
 "jsonrpc.html#jsonrpc_components_bdev":[3,7,2],
 "jsonrpc.html#jsonrpc_components_iscsi_tgt":[3,7,3],
@@ -90,6 +93,7 @@ var NAVTREEINDEX4 =
 "jsonrpc.html#rpc_get_iscsi_connections":[3,7,3,21],
 "jsonrpc.html#rpc_get_iscsi_global_params":[3,7,3,1],
 "jsonrpc.html#rpc_get_lvol_stores":[3,7,6,2],
+"jsonrpc.html#rpc_get_notification_types":[3,7,6,13],
 "jsonrpc.html#rpc_get_nvme_controllers":[3,7,2,19],
 "jsonrpc.html#rpc_get_nvmf_subsystems":[3,7,4,1],
 "jsonrpc.html#rpc_get_nvmf_transports":[3,7,4,12],
@@ -97,7 +101,7 @@ var NAVTREEINDEX4 =
 "jsonrpc.html#rpc_get_ocf_stats":[3,7,2,8],
 "jsonrpc.html#rpc_get_portal_groups":[3,7,3,18],
 "jsonrpc.html#rpc_get_rpc_methods":[3,7,1,4],
-"jsonrpc.html#rpc_get_spdk_version":[3,7,6,14],
+"jsonrpc.html#rpc_get_spdk_version":[3,7,6,16],
 "jsonrpc.html#rpc_get_subsystem_config":[3,7,1,6],
 "jsonrpc.html#rpc_get_subsystems":[3,7,1,5],
 "jsonrpc.html#rpc_get_target_nodes":[3,7,3,12],
@@ -127,7 +131,7 @@ var NAVTREEINDEX4 =
 "jsonrpc.html#rpc_rename_lvol_bdev":[3,7,6,7],
 "jsonrpc.html#rpc_rename_lvol_store":[3,7,6,3],
 "jsonrpc.html#rpc_resize_lvol_bdev":[3,7,6,8],
-"jsonrpc.html#rpc_send_nvme_cmd":[3,7,6,13],
+"jsonrpc.html#rpc_send_nvme_cmd":[3,7,6,15],
 "jsonrpc.html#rpc_set_bdev_nvme_hotplug":[3,7,2,17],
 "jsonrpc.html#rpc_set_bdev_nvme_options":[3,7,2,16],
 "jsonrpc.html#rpc_set_bdev_options":[3,7,2,0],
@@ -245,9 +249,5 @@ var NAVTREEINDEX4 =
 "lvol_8h.html#ac2c5d67c2711ee149784f5e5e5be0b7a":[14,0,29,20],
 "lvol_8h.html#ae12b16b8565ab63a3c9b919ab9664c0f":[14,0,29,21],
 "lvol_8h.html#af406c5e7b0e7826b270c802b1431b76f":[14,0,29,24],
-"memory.html":[2,1],
-"misc.html":[6],
-"mmio_8h.html":[14,0,30],
-"mmio_8h.html#a586e012f96a1399c6a7be3439212c677":[14,0,30,2],
-"mmio_8h.html#a5e5c67230fa7efb398ffb43454ee2d4f":[14,0,30,4]
+"memory.html":[2,1]
 };

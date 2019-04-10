@@ -171,6 +171,12 @@ Functions</h2></td></tr>
 <tr class="memitem:ad457699507e3b1e02ce7823beae439a3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cpuset_8h.html#ad457699507e3b1e02ce7823beae439a3">spdk_cpuset_or</a> (struct spdk_cpuset *dst, const struct spdk_cpuset *src)</td></tr>
 <tr class="memdesc:ad457699507e3b1e02ce7823beae439a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform OR operation on two CPU sets.  <a href="#ad457699507e3b1e02ce7823beae439a3">More...</a><br /></td></tr>
 <tr class="separator:ad457699507e3b1e02ce7823beae439a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7fc0bc4b98070f9868b4286a0e8d8a2f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cpuset_8h.html#a7fc0bc4b98070f9868b4286a0e8d8a2f">spdk_cpuset_xor</a> (struct spdk_cpuset *dst, const struct spdk_cpuset *src)</td></tr>
+<tr class="memdesc:a7fc0bc4b98070f9868b4286a0e8d8a2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform XOR operation on two CPU sets.  <a href="#a7fc0bc4b98070f9868b4286a0e8d8a2f">More...</a><br /></td></tr>
+<tr class="separator:a7fc0bc4b98070f9868b4286a0e8d8a2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d0a7edc8e1d37e998c73840ad9ee03f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cpuset_8h.html#a6d0a7edc8e1d37e998c73840ad9ee03f">spdk_cpuset_negate</a> (struct spdk_cpuset *set)</td></tr>
+<tr class="memdesc:a6d0a7edc8e1d37e998c73840ad9ee03f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Negate all CPUs in CPU set.  <a href="#a6d0a7edc8e1d37e998c73840ad9ee03f">More...</a><br /></td></tr>
+<tr class="separator:a6d0a7edc8e1d37e998c73840ad9ee03f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4733870b58db6231bc873e48fbf0db57"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cpuset_8h.html#a4733870b58db6231bc873e48fbf0db57">spdk_cpuset_zero</a> (struct spdk_cpuset *set)</td></tr>
 <tr class="memdesc:a4733870b58db6231bc873e48fbf0db57"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear all CPUs in CPU set.  <a href="#a4733870b58db6231bc873e48fbf0db57">More...</a><br /></td></tr>
 <tr class="separator:a4733870b58db6231bc873e48fbf0db57"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -445,6 +451,32 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a6d0a7edc8e1d37e998c73840ad9ee03f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d0a7edc8e1d37e998c73840ad9ee03f">&#9670;&nbsp;</a></span>spdk_cpuset_negate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_cpuset_negate </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_cpuset *&#160;</td>
+          <td class="paramname"><em>set</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Negate all CPUs in CPU set. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">set</td><td>CPU set to be negated. This value also stores the result of operation. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="ad457699507e3b1e02ce7823beae439a3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad457699507e3b1e02ce7823beae439a3">&#9670;&nbsp;</a></span>spdk_cpuset_or()</h2>
 
@@ -559,6 +591,44 @@ Functions</h2></td></tr>
     <tr><td class="paramname">set</td><td>CPU set object. </td></tr>
     <tr><td class="paramname">cpu</td><td>CPU index to be set or cleared. </td></tr>
     <tr><td class="paramname">state</td><td><em>true</em> to set cpu, <em>false</em> to clear. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a7fc0bc4b98070f9868b4286a0e8d8a2f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7fc0bc4b98070f9868b4286a0e8d8a2f">&#9670;&nbsp;</a></span>spdk_cpuset_xor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_cpuset_xor </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_cpuset *&#160;</td>
+          <td class="paramname"><em>dst</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const struct spdk_cpuset *&#160;</td>
+          <td class="paramname"><em>src</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Perform XOR operation on two CPU sets. </p>
+<p>The result is stored in dst.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dst</td><td>First argument of operation. This value also stores the result of operation. </td></tr>
+    <tr><td class="paramname">src</td><td>Second argument of operation. </td></tr>
   </table>
   </dd>
 </dl>

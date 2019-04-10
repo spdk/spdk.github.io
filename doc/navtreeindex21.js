@@ -1,5 +1,9 @@
 var NAVTREEINDEX21 =
 {
+"unionspdk__nvme__feat__lba__range__type.html":[13,0,114],
+"unionspdk__nvme__feat__lba__range__type.html#a5bbb0f8586a8cea3f63e8c9c27f16a25":[13,0,114,0],
+"unionspdk__nvme__feat__lba__range__type.html#a8b36726d65af55a7c237962ea9065911":[13,0,114,2],
+"unionspdk__nvme__feat__lba__range__type.html#a9fcf5c790767d292adf15b5f05ab40cf":[13,0,114,1],
 "unionspdk__nvme__feat__lba__range__type.html#afd6c62577e98b12c7c497e003228621c":[13,0,114,3],
 "unionspdk__nvme__feat__non__operational__power__state__config.html":[13,0,115],
 "unionspdk__nvme__feat__non__operational__power__state__config.html#a1b89eeb1f322ef357d18aaad35517170":[13,0,115,3],

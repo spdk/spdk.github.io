@@ -1,5 +1,9 @@
 var NAVTREEINDEX13 =
 {
+"structspdk__d0__datastore__features.html#abe12794ea2d36483d6d10a07249ff67c":[13,0,41,7],
+"structspdk__d0__datastore__features.html#ad1b89bb4520f4b6f0bc2e18890ec630b":[13,0,41,2],
+"structspdk__d0__datastore__features.html#ae7e27f30e0e7fa76d9355a3c7b70687c":[13,0,41,5],
+"structspdk__d0__geo__features.html":[13,0,42],
 "structspdk__d0__geo__features.html#a0b6ba4a66ab14f140fdee1ef06f7c819":[13,0,42,9],
 "structspdk__d0__geo__features.html#a0ff23ad68033949ffa95a1f5e81303a0":[13,0,42,2],
 "structspdk__d0__geo__features.html#a2f1f4d7a426395d10df7f04edacd581a":[13,0,42,5],
@@ -245,9 +249,5 @@ var NAVTREEINDEX13 =
 "structspdk__ioat__fill__hw__desc.html#aeb92a918481bdb81dca7fc7eee19a58e":[13,0,65,6],
 "structspdk__ioat__fill__hw__desc.html#af6fea9f4b5e658fa459b12d3db27602c":[13,0,65,13],
 "structspdk__ioat__fill__hw__desc.html#afeb40f5c7cd8a1a40bf761a9b46a207a":[13,0,65,2],
-"structspdk__ioat__generic__hw__desc.html":[13,0,66],
-"structspdk__ioat__generic__hw__desc.html#a0ef6de724a87427f7081bf845bf4a19e":[13,0,66,16],
-"structspdk__ioat__generic__hw__desc.html#a273428d5cc370774fcf5796260110fa6":[13,0,66,13],
-"structspdk__ioat__generic__hw__desc.html#a2c133f39d7f39b8a4cb7bbb3c83209a9":[13,0,66,15],
-"structspdk__ioat__generic__hw__desc.html#a2e05ce5964f28ed0fd5d68518a26ed39":[13,0,66,3]
+"structspdk__ioat__generic__hw__desc.html":[13,0,66]
 };
