@@ -62,4 +62,12 @@ lang: cn
 
 * [火爆业界的明星，下一代存储技术的先行: NVDIMM 你了解吗?](https://mp.weixin.qq.com/s?__biz=MzI3NDA4ODY4MA)
 
+******
+
+**SPDK和NVMe新特性**
+
+* [Zoned Namespace: NVMe Spec对标Open-Channel的解决方案（上篇）](https://mp.weixin.qq.com/s?__biz=MzI3NDA4ODY4MA==&mid=2653335330&idx=1&sn=db1821b20312a6a8ed627adf3c897eda&chksm=f0cb58a5c7bcd1b3e21fd4b0c1c57eb5981ae13d2624be9fa359c35f89b4182d69e9aa70bb1b&mpshare=1&scene=1&srcid=04100n8cVU4929zrWL7Ickmp&pass_ticket=I08wxcYqrorlEm9aY2xig3IeNMZGBl2nIICys%2BEBjYLRUYNzPhBPFQ%2FIe5HOO1dk#rd)
+
+* [Zoned Namespace_NVMe Spec对标Open-Channel的解决方案（下篇）](https://mp.weixin.qq.com/s?__biz=MzI3NDA4ODY4MA==&mid=2653335343&idx=1&sn=94a07928e66b388c54b470d5551cf990&chksm=f0cb58a8c7bcd1beec8c85abfee9564a7f9be01e10011dacb870e2cd8d0ad2a8cb2d8889a177&mpshare=1&scene=1&srcid=&pass_ticket=I08wxcYqrorlEm9aY2xig3IeNMZGBl2nIICys%2BEBjYLRUYNzPhBPFQ%2FIe5HOO1dk#rd)
+
 * [Liblightnvm, 在用户态操作Open-Channel SSD](https://mp.weixin.qq.com/s/wVfVhDvF8b0owlUxNjPLXw)
