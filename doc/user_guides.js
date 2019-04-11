@@ -239,7 +239,12 @@ var user_guides =
         [ "inflate_lvol_bdev", "jsonrpc.html#rpc_inflate_lvol_bdev", null ],
         [ "decouple_parent_lvol_bdev", "jsonrpc.html#rpc_decouple_parent_lvol_bdev", null ],
         [ "get_notification_types", "jsonrpc.html#rpc_get_notification_types", null ],
-        [ "get_notifications", "jsonrpc.html#get_notifications", null ],
+        [ "get_notifications", "jsonrpc.html#get_notifications", null ]
+      ] ],
+      [ "Linux Network Block Device (NBD)", "jsonrpc.html#jsonrpc_components_nbd", [
+        [ "start_nbd_disk", "jsonrpc.html#rpc_start_nbd_disk", null ],
+        [ "stop_nbd_disk", "jsonrpc.html#rpc_stop_nbd_disk", null ],
+        [ "get_nbd_disks", "jsonrpc.html#rpc_get_nbd_disks", null ],
         [ "send_nvme_cmd", "jsonrpc.html#rpc_send_nvme_cmd", null ],
         [ "get_spdk_version", "jsonrpc.html#rpc_get_spdk_version", null ]
       ] ]
