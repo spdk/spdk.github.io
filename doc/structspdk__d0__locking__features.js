@@ -11,7 +11,7 @@ var structspdk__d0__locking__features =
     [ "reserved_0", "structspdk__d0__locking__features.html#af1a6daad312f975895d3d25fae748172", null ],
     [ "reserved_1", "structspdk__d0__locking__features.html#a5a63bb5765a9cb7e5110691458a227b1", null ],
     [ "reserved_2", "structspdk__d0__locking__features.html#a6f7fcf47160760a6bbafbf19ffc63710", null ],
-    [ "reserved_3", "structspdk__d0__locking__features.html#a5ab63424e17f667e57d320b4dd9ed353", null ],
+    [ "reserved_3", "structspdk__d0__locking__features.html#a92af6e7cc27b3310cf1f328def0554b3", null ],
     [ "reserved_4", "structspdk__d0__locking__features.html#a9680903ab451ec0840a74403f7678c6b", null ],
     [ "reserved_5", "structspdk__d0__locking__features.html#a79abca4ad63d35713bccfe9f3a953dad", null ],
     [ "version", "structspdk__d0__locking__features.html#a9d5476a4e3f9134ca81758aeb38e72aa", null ]
