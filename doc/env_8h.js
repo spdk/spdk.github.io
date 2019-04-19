@@ -102,6 +102,7 @@ var env_8h =
     [ "spdk_pci_device_get_subdevice_id", "env_8h.html#a6368feb8685db7cc745f14e184a5e3e0", null ],
     [ "spdk_pci_device_get_subvendor_id", "env_8h.html#ae488ab8a8a1b56ae22ca26b00185f7f8", null ],
     [ "spdk_pci_device_get_vendor_id", "env_8h.html#abe6b50f74ddb53ff6ee4552c20a053bc", null ],
+    [ "spdk_pci_device_is_removed", "env_8h.html#aa81297d98a464efeea8b33cee11f35dc", null ],
     [ "spdk_pci_device_map_bar", "env_8h.html#ab1964fc8e4bdbe6c8fc3002f063a6747", null ],
     [ "spdk_pci_device_unmap_bar", "env_8h.html#a80b33324546e79d1478f25c185076336", null ],
     [ "spdk_pci_enumerate", "env_8h.html#a8e2430eaebf3d756c8608aea6957b614", null ],

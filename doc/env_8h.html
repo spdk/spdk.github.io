@@ -462,6 +462,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_
 <tr class="memitem:a488cf86d1c41376aaf526251fc7e3f07"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_8h.html#a488cf86d1c41376aaf526251fc7e3f07">spdk_pci_device_cfg_write32</a> (struct <a class="el" href="structspdk__pci__device.html">spdk_pci_device</a> *dev, uint32_t value, uint32_t offset)</td></tr>
 <tr class="memdesc:a488cf86d1c41376aaf526251fc7e3f07"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write 4 bytes into the PCI configuration space.  <a href="#a488cf86d1c41376aaf526251fc7e3f07">More...</a><br /></td></tr>
 <tr class="separator:a488cf86d1c41376aaf526251fc7e3f07"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa81297d98a464efeea8b33cee11f35dc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_8h.html#aa81297d98a464efeea8b33cee11f35dc">spdk_pci_device_is_removed</a> (struct <a class="el" href="structspdk__pci__device.html">spdk_pci_device</a> *dev)</td></tr>
+<tr class="memdesc:aa81297d98a464efeea8b33cee11f35dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if device was requested to be removed from the process.  <a href="#aa81297d98a464efeea8b33cee11f35dc">More...</a><br /></td></tr>
+<tr class="separator:aa81297d98a464efeea8b33cee11f35dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7f3decf485d6b797775bc4dd2215eb52"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_8h.html#a7f3decf485d6b797775bc4dd2215eb52">spdk_pci_addr_compare</a> (const struct <a class="el" href="structspdk__pci__addr.html">spdk_pci_addr</a> *a1, const struct <a class="el" href="structspdk__pci__addr.html">spdk_pci_addr</a> *a2)</td></tr>
 <tr class="memdesc:a7f3decf485d6b797775bc4dd2215eb52"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compare two PCI addresses.  <a href="#a7f3decf485d6b797775bc4dd2215eb52">More...</a><br /></td></tr>
 <tr class="separator:a7f3decf485d6b797775bc4dd2215eb52"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -3079,6 +3082,34 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>vendor ID. </dd></dl>
+
+</div>
+</div>
+<a id="aa81297d98a464efeea8b33cee11f35dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa81297d98a464efeea8b33cee11f35dc">&#9670;&nbsp;</a></span>spdk_pci_device_is_removed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool spdk_pci_device_is_removed </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structspdk__pci__device.html">spdk_pci_device</a> *&#160;</td>
+          <td class="paramname"><em>dev</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Check if device was requested to be removed from the process. </p>
+<p>This can be caused either by physical device hotremoval or OS-triggered removal. In the latter case, the device may continue to function properly even if this function returns <code>true</code> . The upper-layer driver may check this function periodically and eventually detach the device.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dev</td><td>PCI device.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>if device was requested to be removed </dd></dl>
 
 </div>
 </div>
