@@ -318,6 +318,12 @@ Functions</h2></td></tr>
 <tr class="memitem:abb053c9573460d29898b184957ce05fd"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#abb053c9573460d29898b184957ce05fd">spdk_nvmf_subsystem_set_sn</a> (struct spdk_nvmf_subsystem *subsystem, const char *sn)</td></tr>
 <tr class="memdesc:abb053c9573460d29898b184957ce05fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the serial number for the specified subsystem.  <a href="#abb053c9573460d29898b184957ce05fd">More...</a><br /></td></tr>
 <tr class="separator:abb053c9573460d29898b184957ce05fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a802a4bacfab2f4e57fbc12cef490dfda"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#a802a4bacfab2f4e57fbc12cef490dfda">spdk_nvmf_subsystem_get_mn</a> (const struct spdk_nvmf_subsystem *subsystem)</td></tr>
+<tr class="memdesc:a802a4bacfab2f4e57fbc12cef490dfda"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the model number of the specified subsystem.  <a href="#a802a4bacfab2f4e57fbc12cef490dfda">More...</a><br /></td></tr>
+<tr class="separator:a802a4bacfab2f4e57fbc12cef490dfda"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a270a2bbd77c6b97116c7e61b4f1a56ce"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#a270a2bbd77c6b97116c7e61b4f1a56ce">spdk_nvmf_subsystem_set_mn</a> (struct spdk_nvmf_subsystem *subsystem, const char *mn)</td></tr>
+<tr class="memdesc:a270a2bbd77c6b97116c7e61b4f1a56ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the model number for the specified subsystem.  <a href="#a270a2bbd77c6b97116c7e61b4f1a56ce">More...</a><br /></td></tr>
+<tr class="separator:a270a2bbd77c6b97116c7e61b4f1a56ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af16fd259d209106b82a506a306c2b87a"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#af16fd259d209106b82a506a306c2b87a">spdk_nvmf_subsystem_get_nqn</a> (struct spdk_nvmf_subsystem *subsystem)</td></tr>
 <tr class="memdesc:af16fd259d209106b82a506a306c2b87a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the NQN of the specified subsystem.  <a href="#af16fd259d209106b82a506a306c2b87a">More...</a><br /></td></tr>
 <tr class="separator:af16fd259d209106b82a506a306c2b87a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1329,6 +1335,33 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a802a4bacfab2f4e57fbc12cef490dfda"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a802a4bacfab2f4e57fbc12cef490dfda">&#9670;&nbsp;</a></span>spdk_nvmf_subsystem_get_mn()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* spdk_nvmf_subsystem_get_mn </td>
+          <td>(</td>
+          <td class="paramtype">const struct spdk_nvmf_subsystem *&#160;</td>
+          <td class="paramname"><em>subsystem</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the model number of the specified subsystem. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">subsystem</td><td>Subsystem to query.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>model number of the specified subsystem. </dd></dl>
+
+</div>
+</div>
 <a id="a8f4f438960707410f3a85258137cf9d3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8f4f438960707410f3a85258137cf9d3">&#9670;&nbsp;</a></span>spdk_nvmf_subsystem_get_next()</h2>
 
@@ -1923,6 +1956,44 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 on success, or negated errno value on failure. </dd></dl>
+
+</div>
+</div>
+<a id="a270a2bbd77c6b97116c7e61b4f1a56ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a270a2bbd77c6b97116c7e61b4f1a56ce">&#9670;&nbsp;</a></span>spdk_nvmf_subsystem_set_mn()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_nvmf_subsystem_set_mn </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_nvmf_subsystem *&#160;</td>
+          <td class="paramname"><em>subsystem</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>mn</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the model number for the specified subsystem. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">subsystem</td><td>Subsystem to set for. </td></tr>
+    <tr><td class="paramname">mn</td><td>model number to set.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, -1 on failure. </dd></dl>
 
 </div>
 </div>

@@ -8,6 +8,7 @@ var structspdk__bdev__io =
     [ "ch_ref", "structspdk__bdev__io.html#ae513a78b2095fbd1d0674fa11d26ef2b", null ],
     [ "child_iov", "structspdk__bdev__io.html#a5ca4051718acb2e55adcca49ea829420", null ],
     [ "cmd", "structspdk__bdev__io.html#aea98eb4a235dc71bc9bf4040c53a5977", null ],
+    [ "commit", "structspdk__bdev__io.html#ace66bdb63c00a8549d466de17f553064", null ],
     [ "driver_ctx", "structspdk__bdev__io.html#ab1b334589d89261c8e0242fee614caa7", null ],
     [ "internal", "structspdk__bdev__io.html#a7cad710441c3ea7b10d62a464b9db854", null ],
     [ "iov", "structspdk__bdev__io.html#a0429238075907c6f637249dda31f3235", null ],
@@ -19,11 +20,14 @@ var structspdk__bdev__io =
     [ "num_blocks", "structspdk__bdev__io.html#afafe443c58056c9c246fd3c32eaa4ece", null ],
     [ "nvme_passthru", "structspdk__bdev__io.html#a9c6b53b8e503c998e80090b986385cef", null ],
     [ "offset_blocks", "structspdk__bdev__io.html#ab7ce7385dd41efaffdc0ca4dea2df6a8", null ],
+    [ "populate", "structspdk__bdev__io.html#acb8e8c688f321a1655a7db6caffa060e", null ],
     [ "reset", "structspdk__bdev__io.html#a3af0e726ab6ba3ad2bb54a7e6ab4e6f2", null ],
     [ "split_current_offset_blocks", "structspdk__bdev__io.html#ac721975c3205db6df200604c5a2b5243", null ],
     [ "split_outstanding", "structspdk__bdev__io.html#ab5bef16ff6747eecb5d8d40f2a4c295c", null ],
     [ "split_remaining_num_blocks", "structspdk__bdev__io.html#a0726c74c711cb6551f6f8c9a33100af3", null ],
+    [ "start", "structspdk__bdev__io.html#a6b0eb1f7b0c97ffd7a8c7a11955f7eef", null ],
     [ "stored_user_cb", "structspdk__bdev__io.html#a35905e31d0aa54cd00dbb34e7d56656a", null ],
     [ "type", "structspdk__bdev__io.html#a4105d5a8419a66a6620d690da5649fcb", null ],
-    [ "u", "structspdk__bdev__io.html#a529af99d06d12cec343f6aeb03beced2", null ]
+    [ "u", "structspdk__bdev__io.html#a529af99d06d12cec343f6aeb03beced2", null ],
+    [ "zcopy", "structspdk__bdev__io.html#abbf1e36951938593dd42e4b1e8e1b717", null ]
 ];

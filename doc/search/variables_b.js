@@ -1,13 +1,13 @@
 var searchData=
 [
-  ['mask',['mask',['../structspdk__ocssd__chunk__notification__entry.html#ab01e3e1e42517fdf683ce50a2798ea21',1,'spdk_ocssd_chunk_notification_entry']]],
+  ['mask',['mask',['../structspdk__ocssd__chunk__notification__entry.html#a1a5958f124c010e1657240a461a50650',1,'spdk_ocssd_chunk_notification_entry']]],
   ['max_5fchannel_5fops',['max_channel_ops',['../structspdk__bs__opts.html#ac5417afa104f5061bab1bfae0769c3a6',1,'spdk_bs_opts']]],
   ['max_5fmd_5fops',['max_md_ops',['../structspdk__bs__opts.html#a63e0b619fedc29159dffd7feca08396b',1,'spdk_bs_opts']]],
   ['maxh2cdata',['maxh2cdata',['../structspdk__nvme__tcp__ic__resp.html#ae19af16d43dd54e43ccfeccd7f6119dc',1,'spdk_nvme_tcp_ic_resp']]],
   ['maxoc',['maxoc',['../structspdk__ocssd__geometry__data.html#adecc1a99d16f94eace12b674c7b7bbfa',1,'spdk_ocssd_geometry_data']]],
   ['maxocpu',['maxocpu',['../structspdk__ocssd__geometry__data.html#a747b543789ad8efcfca1c54faeb95c52',1,'spdk_ocssd_geometry_data']]],
-  ['mc',['mc',['../structspdk__nvme__ns__data.html#a89e52cdb750bfe08a4c3c2eb61196f61',1,'spdk_nvme_ns_data']]],
-  ['mccap',['mccap',['../structspdk__ocssd__geometry__data.html#a9a5195482505dd4c8d1287c2262bbdb9',1,'spdk_ocssd_geometry_data']]],
+  ['mc',['mc',['../structspdk__nvme__ns__data.html#ae119126008a683bc3695ffe56146fc97',1,'spdk_nvme_ns_data']]],
+  ['mccap',['mccap',['../structspdk__ocssd__geometry__data.html#aa247faffa587e74a10d71b8ff5ba0a4b',1,'spdk_ocssd_geometry_data']]],
   ['md_5fend',['md_end',['../structspdk__nvme__ns__data.html#ab511e295c151b4d17911e474711168b9',1,'spdk_nvme_ns_data']]],
   ['md_5finterleave',['md_interleave',['../structspdk__bdev.html#a4e68d5fa768ba5d3c8af32e68e1a992c',1,'spdk_bdev']]],
   ['md_5flen',['md_len',['../structspdk__bdev.html#ab53361e758d7ebe3edec7598f86fa576',1,'spdk_bdev']]],

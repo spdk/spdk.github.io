@@ -226,7 +226,7 @@ typedef&#160;</td><td class="memItemRight" valign="bottom"><b>STAILQ_HEAD</b> (,
 <tr class="memdesc:a5fef71f7761986298bb4aaf345736bb3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register a new bdev.  <a href="#a5fef71f7761986298bb4aaf345736bb3">More...</a><br /></td></tr>
 <tr class="separator:a5fef71f7761986298bb4aaf345736bb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3d1fd8c9ecf144593313ea08cdeb8ca2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev__module_8h.html#a3d1fd8c9ecf144593313ea08cdeb8ca2">spdk_bdev_unregister</a> (struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *bdev, spdk_bdev_unregister_cb cb_fn, void *cb_arg)</td></tr>
-<tr class="memdesc:a3d1fd8c9ecf144593313ea08cdeb8ca2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unregister a bdev.  <a href="#a3d1fd8c9ecf144593313ea08cdeb8ca2">More...</a><br /></td></tr>
+<tr class="memdesc:a3d1fd8c9ecf144593313ea08cdeb8ca2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start unregistering a bdev.  <a href="#a3d1fd8c9ecf144593313ea08cdeb8ca2">More...</a><br /></td></tr>
 <tr class="separator:a3d1fd8c9ecf144593313ea08cdeb8ca2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8d51d8e113f0dffb1bbe535ea01c495f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev__module_8h.html#a8d51d8e113f0dffb1bbe535ea01c495f">spdk_bdev_destruct_done</a> (struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *bdev, int bdeverrno)</td></tr>
 <tr class="memdesc:a8d51d8e113f0dffb1bbe535ea01c495f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Invokes the unregister callback of a bdev backing a virtual bdev.  <a href="#a8d51d8e113f0dffb1bbe535ea01c495f">More...</a><br /></td></tr>
@@ -1676,7 +1676,8 @@ typedef&#160;</td><td class="memItemRight" valign="bottom"><b>TAILQ_HEAD</b> (bd
       </table>
 </div><div class="memdoc">
 
-<p>Unregister a bdev. </p>
+<p>Start unregistering a bdev. </p>
+<p>This will notify each currently open descriptor on this bdev about the hotremoval in hopes that the upper layers will stop using this bdev and manually close all the descriptors with <a class="el" href="bdev_8h.html#aaf5fc830851a2eb0aa34bbb40cf5eac6" title="Close a previously opened block device. ">spdk_bdev_close()</a>. The actual bdev unregistration may be deferred until all descriptors are closed.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">bdev</td><td>Block device to unregister. </td></tr>

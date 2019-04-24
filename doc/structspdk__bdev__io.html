@@ -214,6 +214,21 @@ union {</td></tr>
 &#160;&#160;&#160;&#160;&#160;&#160;uint32_t&#160;&#160;&#160;<a class="el" href="structspdk__bdev__io.html#ab5bef16ff6747eecb5d8d40f2a4c295c">split_outstanding</a></td></tr>
 <tr class="memdesc:a305c1aa768ae10e5c960f3e0caf80fe2"><td class="mdescLeft">&#160;</td><td class="mdescRight">count of outstanding batched split I/Os <br /></td></tr>
 <tr class="separator:a305c1aa768ae10e5c960f3e0caf80fe2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f9ab0f52410c59492a184cc391b685e"><td class="memItemLeft" >
+&#160;&#160;&#160;&#160;&#160;&#160;struct {</td></tr>
+<tr class="memitem:a4168442d6a0992eb33f1c82e9d4ec727"><td class="memItemLeft" >
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;uint8_t&#160;&#160;&#160;<a class="el" href="structspdk__bdev__io.html#acb8e8c688f321a1655a7db6caffa060e">populate</a>: 1</td></tr>
+<tr class="memdesc:a4168442d6a0992eb33f1c82e9d4ec727"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether the buffer should be populated with the real data. <br /></td></tr>
+<tr class="separator:a4168442d6a0992eb33f1c82e9d4ec727"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a846d1e3c359f0bea61c04f154d4740b5"><td class="memItemLeft" >
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;uint8_t&#160;&#160;&#160;<a class="el" href="structspdk__bdev__io.html#ace66bdb63c00a8549d466de17f553064">commit</a>: 1</td></tr>
+<tr class="memdesc:a846d1e3c359f0bea61c04f154d4740b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether the buffer should be committed back to disk. <br /></td></tr>
+<tr class="separator:a846d1e3c359f0bea61c04f154d4740b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c76c07f378a35ff0cbff0f6ca287035"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;uint8_t&#160;&#160;&#160;<a class="el" href="structspdk__bdev__io.html#a6b0eb1f7b0c97ffd7a8c7a11955f7eef">start</a>: 1</td></tr>
+<tr class="memdesc:a1c76c07f378a35ff0cbff0f6ca287035"><td class="mdescLeft">&#160;</td><td class="mdescRight">True if this request is in the 'start' phase of zcopy.  <a href="#a1c76c07f378a35ff0cbff0f6ca287035">More...</a><br /></td></tr>
+<tr class="separator:a1c76c07f378a35ff0cbff0f6ca287035"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f9ab0f52410c59492a184cc391b685e"><td class="memItemLeft" valign="top">&#160;&#160;&#160;&#160;&#160;&#160;}&#160;&#160;&#160;<b>zcopy</b></td></tr>
+<tr class="separator:a7f9ab0f52410c59492a184cc391b685e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6e4a64cc4d862cf115451766c8e4f890"><td class="memItemLeft" valign="top">&#160;&#160;&#160;}&#160;&#160;&#160;<b>bdev</b></td></tr>
 <tr class="separator:a6e4a64cc4d862cf115451766c8e4f890"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8737ecb9e4ddccc64a6cf6446cdf5626"><td class="memItemLeft" >
@@ -399,6 +414,23 @@ uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="s
 </div><div class="memdoc">
 
 <p>Starting offset (in blocks) of the bdev for this I/O. </p>
+
+</div>
+</div>
+<a id="a6b0eb1f7b0c97ffd7a8c7a11955f7eef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b0eb1f7b0c97ffd7a8c7a11955f7eef">&#9670;&nbsp;</a></span>start</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t spdk_bdev_io::start</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>True if this request is in the 'start' phase of zcopy. </p>
+<p>False if in 'end'. </p>
 
 </div>
 </div>
