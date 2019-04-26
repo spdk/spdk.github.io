@@ -173,7 +173,7 @@ v19.04: (Upcoming Release)</h1>
 <p>New <code>get_spdk_version</code> RPC method is introduced to get version info of the running SPDK application.</p>
 <p>The <code>start_nbd_disk</code> RPC method now take nbd_device as an optional parameter. If nbd_device is specified, use that specified nbd device. If it's not specified, pick available one.</p>
 <h2>Opal</h2>
-<p>Add Opal scan support for NVMe to check whether it supports SED Opal and dump device info. Add Opal take ownership command support. nvme_manage tool can be used to invoke this. This module should be considered experimental pending additional features and tests.</p>
+<p>Add Opal scan support for NVMe to check whether it supports SED Opal and dump device info. Add Opal take ownership command support, revert TPer command support. nvme_manage tool can be used to invoke this. This module should be considered experimental pending additional features and tests.</p>
 <h2>iSCSI target</h2>
 <p>DIF strip and insert is now supported. DIF settings are not exposed to the iSCSI initiator. DIF is attached into data for write I/O and stripped from data for read I/O.</p>
 <h1><a class="anchor" id="changelog-v19-01"></a>
