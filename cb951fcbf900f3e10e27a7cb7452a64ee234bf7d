@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "2461ace4_560839cd",
+        "filename": "_layouts/ci.html",
+        "patchSetId": 1
+      },
+      "lineNbr": 31,
+      "author": {
+        "id": 1011218
+      },
+      "writtenOn": "2019-04-26T12:24:35Z",
+      "side": 0,
+      "message": "The same link is on the english version of this page. Can we just remove this entire entry for both languages?",
+      "revId": "cb951fcbf900f3e10e27a7cb7452a64ee234bf7d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    }
+  ]
+}
