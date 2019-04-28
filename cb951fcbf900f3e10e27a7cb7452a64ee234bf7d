@@ -16,6 +16,24 @@
       "revId": "cb951fcbf900f3e10e27a7cb7452a64ee234bf7d",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "9f9a665a_b4a50e4c",
+        "filename": "_layouts/ci.html",
+        "patchSetId": 1
+      },
+      "lineNbr": 31,
+      "author": {
+        "id": 1011207
+      },
+      "writtenOn": "2019-04-28T00:57:36Z",
+      "side": 0,
+      "message": "Hi Darek, not exactly, the displayed wording is different for Chinese and English although the link is same.\n\nThanks, Gang",
+      "parentUuid": "2461ace4_560839cd",
+      "revId": "cb951fcbf900f3e10e27a7cb7452a64ee234bf7d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
     }
   ]
 }
