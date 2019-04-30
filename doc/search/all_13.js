@@ -3,6 +3,7 @@ var searchData=
   ['spdk_20directory_20structure',['SPDK Directory Structure',['../directory_structure.html',1,'general']]],
   ['storage_20performance_20development_20kit',['Storage Performance Development Kit',['../index.html',1,'']]],
   ['spdk_20porting_20guide',['SPDK Porting Guide',['../porting.html',1,'concepts']]],
+  ['spdk_20_22reduce_22_20block_20compression_20algorithm',['SPDK &quot;Reduce&quot; Block Compression Algorithm',['../reduce.html',1,'prog_guides']]],
   ['sanicap',['sanicap',['../structspdk__nvme__ctrlr__data.html#a5914b8b06564740632a315203ad5b0f6',1,'spdk_nvme_ctrlr_data']]],
   ['sc',['sc',['../structspdk__bdev__io_1_1____bdev__io__internal__fields.html#a10bc16b954cc71142b31de4627444c99',1,'spdk_bdev_io::__bdev_io_internal_fields']]],
   ['scid',['scid',['../structspdk__nvme__secondary__ctrl__entry.html#aceeb0796ff8bc1cf8e84a3fec5c553c9',1,'spdk_nvme_secondary_ctrl_entry']]],

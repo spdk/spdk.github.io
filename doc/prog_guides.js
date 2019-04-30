@@ -26,5 +26,6 @@ var prog_guides =
         [ "Configuring SPDK", "ftl.html#ftl_spdk_config", null ]
       ] ]
     ] ],
-    [ "GDB Macros User Guide", "gdb_macros.html", null ]
+    [ "GDB Macros User Guide", "gdb_macros.html", null ],
+    [ "SPDK \"Reduce\" Block Compression Algorithm", "reduce.html", null ]
 ];
