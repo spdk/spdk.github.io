@@ -3,21 +3,6 @@ layout: index
 title: Storage Performance Development Kit
 ---
 
-<div class="well text-center">
-<p>Join us at the Third Annual U.S. Summit!</p>
-
-<p>
-April 16-17, 2019<br/>
-Dolce Hayes Mansion<br/>
-200 Edenvale Ave, San Jose, CA 95136<br/>
-</p>
-
-<p>
-<a href="http://cvent.com/d/3bqgy8">Summit Registration</a><br/>
-<a href="https://spdk.io/summit/us/2019">Agenda and Summit Overview</a><br/>
-</p>
-</div>
-
 The Storage Performance Development Kit (SPDK) provides a set of tools and
 libraries for writing high performance, scalable, user-mode storage
 applications. It achieves high performance through the use of a number of key
