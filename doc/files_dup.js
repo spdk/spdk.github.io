@@ -1,4 +1,4 @@
-var files =
+var files_dup =
 [
     [ "assert.h", "assert_8h.html", "assert_8h" ],
     [ "barrier.h", "barrier_8h.html", "barrier_8h" ],

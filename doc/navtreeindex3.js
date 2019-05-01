@@ -1,5 +1,6 @@
 var NAVTREEINDEX3 =
 {
+"histogram__data_8h.html#a873e5e5fe2c61b1724fa588df020d66a":[14,0,20,5],
 "histogram__data_8h.html#a920c98c8fc17b085509662cf9c81e357":[14,0,20,16],
 "histogram__data_8h.html#a98e81fa656a69a09f64630644b17cbde":[14,0,20,15],
 "histogram__data_8h.html#acf41b2ac89977c8045fa780c16a9f009":[14,0,20,18],
@@ -248,6 +249,5 @@ var NAVTREEINDEX3 =
 "json_8h.html#aae250e55eb9ac9183315695d5f84cd9fa08db8ec570f8d8a2dc5ebacd3d74431f":[14,0,25,11,5],
 "json_8h.html#aae250e55eb9ac9183315695d5f84cd9fa2e3826a114171e55f375f6203676f716":[14,0,25,11,8],
 "json_8h.html#aae250e55eb9ac9183315695d5f84cd9fa3767dfcb0f9445b3d90d1b9ffebc52f0":[14,0,25,11,0],
-"json_8h.html#aae250e55eb9ac9183315695d5f84cd9fa5ea82e1d0489f2cb52cdf7c01a47e180":[14,0,25,11,2],
-"json_8h.html#aae250e55eb9ac9183315695d5f84cd9fa60ed38100812e5edc356fea76bb225f5":[14,0,25,11,4]
+"json_8h.html#aae250e55eb9ac9183315695d5f84cd9fa5ea82e1d0489f2cb52cdf7c01a47e180":[14,0,25,11,2]
 };

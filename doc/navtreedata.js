@@ -1,3 +1,26 @@
+/*
+@ @licstart  The following is the entire license notice for the
+JavaScript code in this file.
+
+Copyright (C) 1997-2017 by Dimitri van Heesch
+
+This program is free software; you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation; either version 2 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License along
+with this program; if not, write to the Free Software Foundation, Inc.,
+51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+
+@licend  The above is the entire license notice
+for the JavaScript code in this file
+*/
 var NAVTREE =
 [
   [ "SPDK", "index.html", [
@@ -29,8 +52,8 @@ var NAVTREE =
         [ "Variables", "functions_vars.html", "functions_vars" ]
       ] ]
     ] ],
-    [ "Files", null, [
-      [ "File List", "files.html", "files" ],
+    [ "Files", "files.html", [
+      [ "File List", "files.html", "files_dup" ],
       [ "Globals", "globals.html", [
         [ "All", "globals.html", "globals_dup" ],
         [ "Functions", "globals_func.html", "globals_func" ],
@@ -47,26 +70,26 @@ var NAVTREEINDEX =
 [
 "about.html",
 "blob_8h.html#a2dea7bc3f6cc4dcd2b5d039b14b8640a",
-"env_8h.html#a798ae910c8563b33eea17af50cabb1ab",
-"histogram__data_8h.html#a920c98c8fc17b085509662cf9c81e357",
-"json_8h.html#aae250e55eb9ac9183315695d5f84cd9fa7a0aa08d8ef6ddad9be8cd7cebaedc2c",
-"lvol_8h.html#a9f7032fa38dc1af638910018e07b0dd4",
-"nvme__ocssd__spec_8h.html#ad778bee13251d6cdca7bb1bbadfbeb1d",
-"nvme__spec_8h.html#aa70e5bbfae3ba9ec66a65c78e1966a1dab70bfa57266dbf2aaa2d941a026b63b2",
-"nvmf_8h.html#abd02f30e6fcb57338c723ffd5c307f0d",
-"porting.html",
-"scsi__spec_8h.html#a97b1cf77713d9482f66aa21cc7f2304ca7ed1a527c767041fbf32d62f41a1017c",
-"structiscsi__bhs__async.html#a132553f7d3982ab3cc00281781d35693",
-"structiscsi__bhs__task__resp.html#a6ae81d87546dc616cc991363ca998808",
-"structspdk__bs__opts.html#a51903fecf7741006c5d14a6dc0cc9c67",
-"structspdk__ioat__fill__hw__desc.html#a40f75ea8bcf3972a26f3cacc26c8eaac",
-"structspdk__nvme__ctrlr__data.html#a118cb552b8ee33adb5e53f18be693efe",
-"structspdk__nvme__intel__smart__attribute.html#a3ce8a68d9b0473b14b452081788e513b",
-"structspdk__nvme__tcp__common__pdu__hdr.html#ac8710fd9623254ef6408f38316dc2a74",
-"structspdk__nvmf__fc__ls__cr__conn__rqst.html#acf2c90e4e1a147943a2d212d37150004",
-"structspdk__pci__addr.html#a4cd7b095b28771b4ce54540ce43e3eaa",
-"structspdk__trace__object.html#a93e495bf28802c685d353892e2c87970",
-"unionspdk__nvme__feat__host__mem__buffer.html#af43cc748ba99dcecb59f3359fd731084"
+"env_8h.html#a723c2f644ec11282b96e1568f3124d07",
+"histogram__data_8h.html#a873e5e5fe2c61b1724fa588df020d66a",
+"json_8h.html#aae250e55eb9ac9183315695d5f84cd9fa60ed38100812e5edc356fea76bb225f5",
+"lvol_8h.html#a9ecc81d4bcd4fd9090deb20c1a9e0db8",
+"nvme__ocssd__spec_8h.html#abd099b6b977a8e059b306ad0fe9935c5ab8d2cc064268abfc94ef2a37f60399cb",
+"nvme__spec_8h.html#aa70e5bbfae3ba9ec66a65c78e1966a1dab27931033840b98e8d00c932bc1f65ff",
+"nvmf_8h.html#abc793839e2268a097f97962e79e4a1ef",
+"performance_reports.html",
+"scsi__spec_8h.html#a97b1cf77713d9482f66aa21cc7f2304c",
+"structiscsi__bhs__async.html#a0a0953e64fb79c9db142140885f8f74a",
+"structiscsi__bhs__task__resp.html#a5bd246c913f5e013cfcb639cc06790b3",
+"structspdk__bs__opts.html#a3d51d3733be73f4a76776d0523232230",
+"structspdk__ioat__fill__hw__desc.html#a3dfcd95061b01cad5cc3a00d1e241fdd",
+"structspdk__nvme__ctrlr__data.html#a0ed93df4158925b2e86949b9365dd387",
+"structspdk__nvme__intel__smart__attribute.html#a2c2b6751d61817b6949a57d830ba3162",
+"structspdk__nvme__tcp__common__pdu__hdr.html#a41e251af0a48f95f12f3cc67b2fdbe49",
+"structspdk__nvmf__fc__ls__cr__conn__rqst.html#aa1d870bffd4ef50e24539742b66f9581",
+"structspdk__pci__addr.html#a4b8677cfade6b86f0f12339a404bb539",
+"structspdk__trace__object.html#a814e4ebf8d97ab4d842baf9d89e979d1",
+"unionspdk__nvme__feat__host__mem__buffer.html#ae38cde477f1878b3ec094fade9da7772"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
