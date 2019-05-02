@@ -345,6 +345,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a85ec189f50d0f78d73a54413370401f5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a85ec189f50d0f78d73a54413370401f5">spdk_nvme_ctrlr_free_io_qpair</a> (struct spdk_nvme_qpair *qpair)</td></tr>
 <tr class="memdesc:a85ec189f50d0f78d73a54413370401f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Free an I/O queue pair that was allocated by <a class="el" href="nvme_8h.html#a13f745d239dab9b8f934fae2ad4984a2" title="Allocate an I/O queue pair (submission and completion queue). ">spdk_nvme_ctrlr_alloc_io_qpair()</a>.  <a href="#a85ec189f50d0f78d73a54413370401f5">More...</a><br /></td></tr>
 <tr class="separator:a85ec189f50d0f78d73a54413370401f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c00b191b38472b57b06f3f394353ad3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a8c00b191b38472b57b06f3f394353ad3">spdk_nvme_ctrlr_io_cmd_raw_no_payload_build</a> (struct spdk_nvme_ctrlr *ctrlr, struct spdk_nvme_qpair *qpair, struct <a class="el" href="structspdk__nvme__cmd.html">spdk_nvme_cmd</a> *cmd, <a class="el" href="nvme_8h.html#ac9779e9957d7089dde8e492cc60856d8">spdk_nvme_cmd_cb</a> cb_fn, void *cb_arg)</td></tr>
+<tr class="memdesc:a8c00b191b38472b57b06f3f394353ad3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send the given NVM I/O command, I/O buffers, lists and all to the NVMe controller.  <a href="#a8c00b191b38472b57b06f3f394353ad3">More...</a><br /></td></tr>
+<tr class="separator:a8c00b191b38472b57b06f3f394353ad3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1e3def668122e76abbfb74305f118291"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a1e3def668122e76abbfb74305f118291">spdk_nvme_ctrlr_cmd_io_raw</a> (struct spdk_nvme_ctrlr *ctrlr, struct spdk_nvme_qpair *qpair, struct <a class="el" href="structspdk__nvme__cmd.html">spdk_nvme_cmd</a> *cmd, void *buf, uint32_t len, <a class="el" href="nvme_8h.html#ac9779e9957d7089dde8e492cc60856d8">spdk_nvme_cmd_cb</a> cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:a1e3def668122e76abbfb74305f118291"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send the given NVM I/O command to the NVMe controller.  <a href="#a1e3def668122e76abbfb74305f118291">More...</a><br /></td></tr>
 <tr class="separator:a1e3def668122e76abbfb74305f118291"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -2410,6 +2413,70 @@ int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_retry_co
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the NVMe controller VS (Version) register. </dd></dl>
+
+</div>
+</div>
+<a id="a8c00b191b38472b57b06f3f394353ad3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c00b191b38472b57b06f3f394353ad3">&#9670;&nbsp;</a></span>spdk_nvme_ctrlr_io_cmd_raw_no_payload_build()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_nvme_ctrlr_io_cmd_raw_no_payload_build </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_nvme_ctrlr *&#160;</td>
+          <td class="paramname"><em>ctrlr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct spdk_nvme_qpair *&#160;</td>
+          <td class="paramname"><em>qpair</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structspdk__nvme__cmd.html">spdk_nvme_cmd</a> *&#160;</td>
+          <td class="paramname"><em>cmd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="nvme_8h.html#ac9779e9957d7089dde8e492cc60856d8">spdk_nvme_cmd_cb</a>&#160;</td>
+          <td class="paramname"><em>cb_fn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>cb_arg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Send the given NVM I/O command, I/O buffers, lists and all to the NVMe controller. </p>
+<p>This is a low level interface for submitting I/O commands directly.</p>
+<p>This function allows a caller to submit an I/O request that is COMPLETELY pre-defined, right down to the "physical" memory buffers. It is intended for testing hardware, specifying exact buffer location, alignment, and offset. It also allows for specific choice of PRP and SGLs.</p>
+<p>The driver sets the CID. EVERYTHING else is assumed set by the caller. Needless to say, this is potentially extremely dangerous for both the host (accidental/malicionus storage usage/corruption), and the device. Thus its intent is for very specific hardware testing and environment reproduction.</p>
+<p>The command is submitted to a qpair allocated by <a class="el" href="nvme_8h.html#a13f745d239dab9b8f934fae2ad4984a2" title="Allocate an I/O queue pair (submission and completion queue). ">spdk_nvme_ctrlr_alloc_io_qpair()</a>. The user must ensure that only one thread submits I/O on a given qpair at any given time.</p>
+<p>This function can only be used on PCIe controllers and qpairs.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ctrlr</td><td>Opaque handle to NVMe controller. </td></tr>
+    <tr><td class="paramname">qpair</td><td>I/O qpair to submit command. </td></tr>
+    <tr><td class="paramname">cmd</td><td>NVM I/O command to submit. </td></tr>
+    <tr><td class="paramname">cb_fn</td><td>Callback function invoked when the I/O command completes. </td></tr>
+    <tr><td class="paramname">cb_arg</td><td>Argument passed to callback function.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, negated errno on failure. </dd></dl>
 
 </div>
 </div>

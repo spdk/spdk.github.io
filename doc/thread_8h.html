@@ -214,6 +214,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="thre
 <tr class="memitem:a1deb97a85a8240119cf46fa8a0b71388"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="thread_8h.html#a1deb97a85a8240119cf46fa8a0b71388">spdk_thread_get_ctx</a> (struct spdk_thread *thread)</td></tr>
 <tr class="memdesc:a1deb97a85a8240119cf46fa8a0b71388"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a pointer to this thread's context.  <a href="#a1deb97a85a8240119cf46fa8a0b71388">More...</a><br /></td></tr>
 <tr class="separator:a1deb97a85a8240119cf46fa8a0b71388"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f06d559046d570e025d6b67c7e8d507"><td class="memItemLeft" align="right" valign="top">struct spdk_cpuset *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="thread_8h.html#a9f06d559046d570e025d6b67c7e8d507">spdk_thread_get_cpumask</a> (struct spdk_thread *thread)</td></tr>
+<tr class="memdesc:a9f06d559046d570e025d6b67c7e8d507"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the thread's cpumask.  <a href="#a9f06d559046d570e025d6b67c7e8d507">More...</a><br /></td></tr>
+<tr class="separator:a9f06d559046d570e025d6b67c7e8d507"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af813fe52c71ec5e254f8671570f57bdc"><td class="memItemLeft" align="right" valign="top">struct spdk_thread *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="thread_8h.html#af813fe52c71ec5e254f8671570f57bdc">spdk_thread_get_from_ctx</a> (void *ctx)</td></tr>
 <tr class="memdesc:af813fe52c71ec5e254f8671570f57bdc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the thread object associated with the context handle previously obtained by calling <a class="el" href="thread_8h.html#a1deb97a85a8240119cf46fa8a0b71388" title="Return a pointer to this thread&#39;s context. ">spdk_thread_get_ctx()</a>.  <a href="#af813fe52c71ec5e254f8671570f57bdc">More...</a><br /></td></tr>
 <tr class="separator:af813fe52c71ec5e254f8671570f57bdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1168,6 +1171,33 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
   </dd>
 </dl>
 <p>All I/O channel references associated with the thread must be released using <a class="el" href="thread_8h.html#a717571a5011db0cdd730498146f25f9a" title="Release a reference to an I/O channel. ">spdk_put_io_channel()</a> prior to calling this function. </p>
+
+</div>
+</div>
+<a id="a9f06d559046d570e025d6b67c7e8d507"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9f06d559046d570e025d6b67c7e8d507">&#9670;&nbsp;</a></span>spdk_thread_get_cpumask()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct spdk_cpuset* spdk_thread_get_cpumask </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_thread *&#160;</td>
+          <td class="paramname"><em>thread</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the thread's cpumask. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">thread</td><td>The thread to get the cpumask for.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>cpuset pointer </dd></dl>
 
 </div>
 </div>

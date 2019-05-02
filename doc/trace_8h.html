@@ -192,6 +192,15 @@ Macros</h2></td></tr>
 <tr class="memitem:a4a0cd434921adc03a501f9e133aa45b6"><td class="memItemLeft" align="right" valign="top"><a id="a4a0cd434921adc03a501f9e133aa45b6"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_TPOINT_ID</b>(group,  tpoint)&#160;&#160;&#160;((group * 64) + tpoint)</td></tr>
 <tr class="separator:a4a0cd434921adc03a501f9e133aa45b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27e155bb110177b48dd7e3b20b754021"><td class="memItemLeft" align="right" valign="top"><a id="a27e155bb110177b48dd7e3b20b754021"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_TRACE_ARG_TYPE_INT</b>&#160;&#160;&#160;0</td></tr>
+<tr class="separator:a27e155bb110177b48dd7e3b20b754021"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22d0ab509e9d6beda1e9ae84d793ba94"><td class="memItemLeft" align="right" valign="top"><a id="a22d0ab509e9d6beda1e9ae84d793ba94"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_TRACE_ARG_TYPE_PTR</b>&#160;&#160;&#160;1</td></tr>
+<tr class="separator:a22d0ab509e9d6beda1e9ae84d793ba94"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff01e55c161b73fd4ce5bfdb6afc4dab"><td class="memItemLeft" align="right" valign="top"><a id="aff01e55c161b73fd4ce5bfdb6afc4dab"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_TRACE_ARG_TYPE_STR</b>&#160;&#160;&#160;2</td></tr>
+<tr class="separator:aff01e55c161b73fd4ce5bfdb6afc4dab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a589fccd362899b2c59ce2e5860d2cb30"><td class="memItemLeft" align="right" valign="top"><a id="a589fccd362899b2c59ce2e5860d2cb30"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_TRACE_MAX_LCORE</b>&#160;&#160;&#160;128</td></tr>
 <tr class="separator:a589fccd362899b2c59ce2e5860d2cb30"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -259,9 +268,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="trac
 <tr class="memitem:a78c1e25f823c6e98da3f99c515715ebe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="trace_8h.html#a78c1e25f823c6e98da3f99c515715ebe">spdk_trace_register_object</a> (uint8_t type, char id_prefix)</td></tr>
 <tr class="memdesc:a78c1e25f823c6e98da3f99c515715ebe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register the trace object.  <a href="#a78c1e25f823c6e98da3f99c515715ebe">More...</a><br /></td></tr>
 <tr class="separator:a78c1e25f823c6e98da3f99c515715ebe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab5d63ea7b3e0b08fe2f37e1c96f89272"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="trace_8h.html#ab5d63ea7b3e0b08fe2f37e1c96f89272">spdk_trace_register_description</a> (const char *name, const char *short_name, uint16_t tpoint_id, uint8_t owner_type, uint8_t object_type, uint8_t new_object, uint8_t arg1_is_ptr, const char *arg1_name)</td></tr>
-<tr class="memdesc:ab5d63ea7b3e0b08fe2f37e1c96f89272"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register the description for the tpoint.  <a href="#ab5d63ea7b3e0b08fe2f37e1c96f89272">More...</a><br /></td></tr>
-<tr class="separator:ab5d63ea7b3e0b08fe2f37e1c96f89272"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a272510f870f932fd0e081481f6e51e58"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="trace_8h.html#a272510f870f932fd0e081481f6e51e58">spdk_trace_register_description</a> (const char *name, uint16_t tpoint_id, uint8_t owner_type, uint8_t object_type, uint8_t new_object, uint8_t arg1_type, const char *arg1_name)</td></tr>
+<tr class="memdesc:a272510f870f932fd0e081481f6e51e58"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register the description for the tpoint.  <a href="#a272510f870f932fd0e081481f6e51e58">More...</a><br /></td></tr>
+<tr class="separator:a272510f870f932fd0e081481f6e51e58"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a483ad47f18a34c86bca85e1a228dd655"><td class="memItemLeft" align="right" valign="top"><a id="a483ad47f18a34c86bca85e1a228dd655"></a>
 struct <a class="el" href="structspdk__trace__register__fn.html">spdk_trace_register_fn</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_trace_get_first_register_fn</b> (void)</td></tr>
 <tr class="separator:a483ad47f18a34c86bca85e1a228dd655"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -324,7 +333,7 @@ struct <a class="el" href="structspdk__trace__histories.html">spdk_trace_histori
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><span class="keyword">static</span> <span class="keywordtype">void</span> fn(<span class="keywordtype">void</span>);                                   \</div><div class="line">        struct <a class="code" href="structspdk__trace__register__fn.html">spdk_trace_register_fn</a> reg_ ## fn = {            \</div><div class="line">                .name = name_str,                               \</div><div class="line">                .tgroup_id = _tgroup_id,                        \</div><div class="line">                .reg_fn = fn,                                   \</div><div class="line">                .next = NULL,                                   \</div><div class="line">        };                                                      \</div><div class="line">        __attribute__((constructor)) <span class="keyword">static</span> <span class="keywordtype">void</span> _ ## fn(<span class="keywordtype">void</span>)  \</div><div class="line">        {                                                       \</div><div class="line">                spdk_trace_add_register_fn(&amp;reg_ ## fn);        \</div><div class="line">        }                                                       \</div><div class="line">        static <span class="keywordtype">void</span> fn(<span class="keywordtype">void</span>)</div><div class="ttc" id="structspdk__trace__register__fn_html"><div class="ttname"><a href="structspdk__trace__register__fn.html">spdk_trace_register_fn</a></div><div class="ttdef"><b>Definition:</b> trace.h:371</div></div>
+<b>Value:</b><div class="fragment"><div class="line"><span class="keyword">static</span> <span class="keywordtype">void</span> fn(<span class="keywordtype">void</span>);                                   \</div><div class="line">        struct <a class="code" href="structspdk__trace__register__fn.html">spdk_trace_register_fn</a> reg_ ## fn = {            \</div><div class="line">                .name = name_str,                               \</div><div class="line">                .tgroup_id = _tgroup_id,                        \</div><div class="line">                .reg_fn = fn,                                   \</div><div class="line">                .next = NULL,                                   \</div><div class="line">        };                                                      \</div><div class="line">        __attribute__((constructor)) <span class="keyword">static</span> <span class="keywordtype">void</span> _ ## fn(<span class="keywordtype">void</span>)  \</div><div class="line">        {                                                       \</div><div class="line">                spdk_trace_add_register_fn(&amp;reg_ ## fn);        \</div><div class="line">        }                                                       \</div><div class="line">        static <span class="keywordtype">void</span> fn(<span class="keywordtype">void</span>)</div><div class="ttc" id="structspdk__trace__register__fn_html"><div class="ttname"><a href="structspdk__trace__register__fn.html">spdk_trace_register_fn</a></div><div class="ttdef"><b>Definition:</b> trace.h:372</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -737,8 +746,8 @@ struct <a class="el" href="structspdk__trace__histories.html">spdk_trace_histori
 
 </div>
 </div>
-<a id="ab5d63ea7b3e0b08fe2f37e1c96f89272"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab5d63ea7b3e0b08fe2f37e1c96f89272">&#9670;&nbsp;</a></span>spdk_trace_register_description()</h2>
+<a id="a272510f870f932fd0e081481f6e51e58"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a272510f870f932fd0e081481f6e51e58">&#9670;&nbsp;</a></span>spdk_trace_register_description()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -748,12 +757,6 @@ struct <a class="el" href="structspdk__trace__histories.html">spdk_trace_histori
           <td>(</td>
           <td class="paramtype">const char *&#160;</td>
           <td class="paramname"><em>name</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>short_name</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -783,7 +786,7 @@ struct <a class="el" href="structspdk__trace__histories.html">spdk_trace_histori
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>arg1_is_ptr</em>, </td>
+          <td class="paramname"><em>arg1_type</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -803,12 +806,11 @@ struct <a class="el" href="structspdk__trace__histories.html">spdk_trace_histori
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">name</td><td>Name for the tpoint. </td></tr>
-    <tr><td class="paramname">short_name</td><td>Short name for the tpoint. </td></tr>
     <tr><td class="paramname">tpoint_id</td><td>Id for the tpoint. </td></tr>
     <tr><td class="paramname">owner_type</td><td>Owner type for the tpoint. </td></tr>
     <tr><td class="paramname">object_type</td><td>Object type for the tpoint. </td></tr>
     <tr><td class="paramname">new_object</td><td>New object for the tpoint. </td></tr>
-    <tr><td class="paramname">arg1_is_ptr</td><td>This argument indicates whether argument1 is a pointer. </td></tr>
+    <tr><td class="paramname">arg1_type</td><td>Type of arg1. </td></tr>
     <tr><td class="paramname">arg1_name</td><td>Name of argument. </td></tr>
   </table>
   </dd>
