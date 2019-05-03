@@ -2,6 +2,7 @@ var vhost_8h =
 [
     [ "spdk_vhost_event_fn", "vhost_8h.html#ac2c4b62eaf6503e5f5e520394f9f9fe1", null ],
     [ "spdk_vhost_fini_cb", "vhost_8h.html#a8b37106ad173f20d05da87f89714700b", null ],
+    [ "spdk_vhost_init_cb", "vhost_8h.html#aed34ffbfc5835716ba35a9ee050e1e74", null ],
     [ "spdk_vhost_blk_construct", "vhost_8h.html#a5ec56730c6a42b0a186131526026e619", null ],
     [ "spdk_vhost_blk_get_dev", "vhost_8h.html#a549f9903be61ca447578b8bacf9eea81", null ],
     [ "spdk_vhost_config_json", "vhost_8h.html#a256ce5abb39df6f4627e3fac7863998f", null ],
@@ -12,7 +13,7 @@ var vhost_8h =
     [ "spdk_vhost_dev_remove", "vhost_8h.html#aa6eba1ce0ac89c3287b755567795869b", null ],
     [ "spdk_vhost_fini", "vhost_8h.html#af358eac95a16bd456349fcfaa00379bb", null ],
     [ "spdk_vhost_get_coalescing", "vhost_8h.html#a8be392083ae01ad34cc05b1b5ce2b5e0", null ],
-    [ "spdk_vhost_init", "vhost_8h.html#a38abeca2169a11feec2ecdce057f3263", null ],
+    [ "spdk_vhost_init", "vhost_8h.html#ab35076d7e06edf2098b814929a04c7d5", null ],
     [ "spdk_vhost_lock", "vhost_8h.html#afd4fd557673a9bc3518add4f5c0d611b", null ],
     [ "spdk_vhost_scsi_dev_add_tgt", "vhost_8h.html#afe5b0a12a12a26d2ddfe6a64f2a8a5e2", null ],
     [ "spdk_vhost_scsi_dev_construct", "vhost_8h.html#a01b54a11439216fb05196474e3ee20d1", null ],
