@@ -12,6 +12,7 @@ title:  "SPDK Development"
 * [GerritHub Configuration](#gerrithub)
 * [Submitting a Patch](#patch)
 * [Continuous Integration](#integration)
+* [Local Testing](#local)
 * [Code Review](#review)
 * [Review Hashtags](#hashtags)
 * [Revising Patches](#revise)
@@ -225,6 +226,63 @@ of the test run. This is particularly useful if the tests fail. Patches will not
 
 If the CI system gives your patch a -1 but you believe it is in error (not related to your patch), add a comment to the patch
 that starts with the word "retrigger".  This will signal the CI system to re-run for the associated patch.
+
+<a id="local"></a>
+## Local Testing
+
+You are also encouraged to run a subset of the Continuous Integration tests locally on your changes before uploading them for review by the
+automated test pool. Some of the tests have been optimized to run locally with little to no setup beyond running pkgdep. The community is
+constantly trying to make these tests easier to run locally to give developers a simple way to debug build pool failures offline without
+having to run the whole suite. Please see below for simplifications and resources for running tests locally.
+
+<a id="local_iscsi"></a>
+### iSCSI Tests
+
+Most of the tests under the `test/iscsi_tgt` directory in SPDK can also be run in isolation by supplying the iso flag for Example:
+
+~~~{.sh}
+sudo ./spdk/test/iscsi_tgt/fio/fio.sh iso
+~~~
+
+The iSCSI iso flag takes care of setting up hugepages for SPDK applications. It also sets up a virtual network interface to run the tests.
+
+<a id="local_nvmf"></a>
+### NVMe-oF Tests
+
+Each of the tests under the `test/nvmf` directory in SPDK can be run in isolation by passing the iso flag to them. For example:
+
+~~~{.sh}
+sudo ./spdk/test/nvmf/target/fio.sh iso
+~~~
+
+The NVMe-oF iso flag configures an RDMA interface with the proper IP address and sets up the hugepages for SPDK applications. It
+will configure the interface on an RDMA capable NIC if available, otherwise it will emulate RDMA using Soft-RoCE. Soft-RoCE requires
+the presence of the rxe_cfg configuration tool.
+
+<a id="local_unit"></a>
+### Unit Tests
+
+The SPDK unittests are located inside of the `test/unit` directory of SPDK. There is a top level script located at `test/unit/unittest.sh` which
+will execute all of the unittests. You are encouraged to run this script against your local changes before uploading a patch to the CI infrastructure.
+Each unit test file can also be executed individually. This enables you to quickly run a single unit test without executing all of unittest.sh.
+This enables you to run the individual unittest behind a debugger.
+
+~~~{.sh}
+sudo ./spdk/test/unit/lib/bdev/bdev.c/bdev_ut
+sudo gdb ./spdk/test/unit/lib/bdev/bdev.c/bdev_ut
+~~~
+
+<a id="local_vhost"></a>
+### vhost Tests
+
+The vhost tests under `test/vhost` require the presence of a virtual machine image on the host machine. We have made a tarball containing a working vm image
+that is available for download [here](https://dqtibwqq6s6ux.cloudfront.net/ci.spdk.io/download/test_resources/vhost_vm_image.tar.gz). Please feel free to
+download and use this image as the guest when running the vhost tests locally. The credentials are below:
+
+~~~{.sh}
+uname: root
+pass: root
+~~~
 
 <a id="review"></a>
 ## Code Review
