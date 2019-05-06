@@ -226,6 +226,50 @@ of the test run. This is particularly useful if the tests fail. Patches will not
 If the CI system gives your patch a -1 but you believe it is in error (not related to your patch), add a comment to the patch
 that starts with the word "retrigger".  This will signal the CI system to re-run for the associated patch.
 
+<a id="local"></a>
+## Local Testing
+
+You are also encouraged to run a subset of the Continuous Integration tests locally on your changes before uploading them for review by the
+automated test pool. Some of the tests have been optimized to run locally with little to no setup beyond running pkgdep. The community is
+constantly trying to make these tests easier to run locally to give developers a simple way to debug build pool failures offline without
+having to run the whole suite. Please see below for simplifications and resources for running tests locally.
+
+<a id="local_unit"></a>
+### Unit Tests
+
+Each unit test file can be executed individually. This enables you to quickly run a single unit test without executing all of unittest.sh.
+This also enables you to run the unittest behind a debugger.
+
+~~~{.sh}
+sudo ./spdk/test/unit/lib/bdev/bdev.c/bdev_ut.c
+sudo gdb ./spdk/test/unit/lib/bdev/bdev.c/bdev_ut.c
+~~~
+
+<a id="local_nvmf"></a>
+### NVMe-oF Tests
+
+Each one of the tests under the test/nvmf directory in SPDK can be run in isolation by passing the iso flag to them. For example:
+
+~~~{.sh}
+sudo ./spdk/test/nvmf/fio/fio.sh iso
+~~~
+
+The iso flag configures the RDMA NIC with the proper IP aaddress and sets up the hugepages for SPDK applications. It will also configure a regular
+NIC to to emulate RDMA using Soft-RoCE if you do not have an RDMA capable NIC on your platform. Soft-RoCE requires the presence of the rxe_cfg
+configuration tool.
+
+<a id="local_vhost"></a>
+### VHost Tests
+
+The VHost tests under test/vhost require the presence of a virtual machine image on the host machine. We have made a tarball containing a working vm image
+that is available for download [here](https://dqtibwqq6s6ux.cloudfront.net/ci.spdk.io/download/test_resources/vhost_vm_image.tar.gz). Please feel free to
+download and use this image as the guest when running the vhost tests locally. The credentials are below:
+
+~~~{.sh}
+uname: root
+pass: root
+~~~
+
 <a id="review"></a>
 ## Code Review
 
