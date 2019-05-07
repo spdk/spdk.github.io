@@ -146,6 +146,10 @@ $(document).ready(function(){initNavTree('changelog.html','');});
 <div class="contents">
 <div class="textblock"><h1><a class="anchor" id="changelog-v19-07"></a>
 v19.07: (Upcoming Release)</h1>
+<h2>NVMe-oF Target</h2>
+<p>Shared receive queue can now be disabled even for NICs that support it using the <code>nvmf_create_transport</code> RPC method parameter <code>no_srq</code>. The actual use of a shared receive queue is predicated on hardware support when this flag is not used.</p>
+<h2>notify</h2>
+<p>The function <code>spdk_notify_get_types()</code> and <code>spdk_notify_get_events()</code> were renamed to <code>spdk_notify_foreach_type()</code> and <code>spdk_notify_foreach_event()</code>, respectively. And update type name of callback accordingly.</p>
 <h1><a class="anchor" id="changelog-v19-04"></a>
 v19.04:</h1>
 <h2>nvme</h2>

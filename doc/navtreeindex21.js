@@ -1,5 +1,12 @@
 var NAVTREEINDEX21 =
 {
+"unionspdk__nvme__feat__host__controlled__thermal__management.html#a683af96774029ba95fcbb43ef78d487e":[13,0,108,3],
+"unionspdk__nvme__feat__host__controlled__thermal__management.html#aed69c683b8bf4f7c1698fcfc62d66c7c":[13,0,108,1],
+"unionspdk__nvme__feat__host__identifier.html":[13,0,109],
+"unionspdk__nvme__feat__host__identifier.html#a3e02a1f9692c7f2f238821db05d34110":[13,0,109,2],
+"unionspdk__nvme__feat__host__identifier.html#aac6f3da2555497867e0c450a223415a1":[13,0,109,3],
+"unionspdk__nvme__feat__host__identifier.html#abe582ebd57c5130773da6ec66e49007c":[13,0,109,1],
+"unionspdk__nvme__feat__host__identifier.html#ad7279ac0db56896b1b2666bc7ae12e61":[13,0,109,0],
 "unionspdk__nvme__feat__host__mem__buffer.html":[13,0,110],
 "unionspdk__nvme__feat__host__mem__buffer.html#a68c28c2479533b01ab8edd60cdfed6a0":[13,0,110,2],
 "unionspdk__nvme__feat__host__mem__buffer.html#a9c5d03050d50e540b5a760e6135f3bcc":[13,0,110,0],

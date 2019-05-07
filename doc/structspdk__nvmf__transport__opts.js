@@ -8,5 +8,6 @@ var structspdk__nvmf__transport__opts =
     [ "max_qpairs_per_ctrlr", "structspdk__nvmf__transport__opts.html#aa6c3986bff2dcd3d5cc5b89616e03d8b", null ],
     [ "max_queue_depth", "structspdk__nvmf__transport__opts.html#a90f2c6dd7e963201cbe0e625b4599ee4", null ],
     [ "max_srq_depth", "structspdk__nvmf__transport__opts.html#a7a21914db32fb20482f749e95c99f013", null ],
+    [ "no_srq", "structspdk__nvmf__transport__opts.html#a1c5194a083b544bd71072267c4d341e0", null ],
     [ "num_shared_buffers", "structspdk__nvmf__transport__opts.html#ac029aacb2caf552303ef1cc7f51f7bb9", null ]
 ];

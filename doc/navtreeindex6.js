@@ -1,5 +1,11 @@
 var NAVTREEINDEX6 =
 {
+"nvme__ocssd__spec_8h.html#a7d96f9d96a27db374c495e271f84d765":[14,0,36,5],
+"nvme__ocssd__spec_8h.html#a95b16b2164a4f7812a2d3b8dd461cfa5":[14,0,36,8],
+"nvme__ocssd__spec_8h.html#a95b16b2164a4f7812a2d3b8dd461cfa5a6540204690d8c653892f749e5c04f7bc":[14,0,36,8,0],
+"nvme__ocssd__spec_8h.html#abd099b6b977a8e059b306ad0fe9935c5":[14,0,36,9],
+"nvme__ocssd__spec_8h.html#abd099b6b977a8e059b306ad0fe9935c5a5cf1bd2d183a8932e311913717704783":[14,0,36,9,0],
+"nvme__ocssd__spec_8h.html#abd099b6b977a8e059b306ad0fe9935c5a633432afe2606a07b143dcfa34b70a0a":[14,0,36,9,3],
 "nvme__ocssd__spec_8h.html#abd099b6b977a8e059b306ad0fe9935c5a7539d3c8c5a50cc38e84061a8eae7f51":[14,0,36,9,2],
 "nvme__ocssd__spec_8h.html#abd099b6b977a8e059b306ad0fe9935c5ab8d2cc064268abfc94ef2a37f60399cb":[14,0,36,9,1],
 "nvme__ocssd__spec_8h.html#ad778bee13251d6cdca7bb1bbadfbeb1d":[14,0,36,10],
@@ -243,11 +249,5 @@ var NAVTREEINDEX6 =
 "nvme__spec_8h.html#aa70e5bbfae3ba9ec66a65c78e1966a1da37402e202dfae7a93cafd3d613662be2":[14,0,37,104,27],
 "nvme__spec_8h.html#aa70e5bbfae3ba9ec66a65c78e1966a1da4447edbe89d29d9850e4710edd23a08a":[14,0,37,104,15],
 "nvme__spec_8h.html#aa70e5bbfae3ba9ec66a65c78e1966a1da448b1d68b17b69687bb4cb9260f4eb10":[14,0,37,104,22],
-"nvme__spec_8h.html#aa70e5bbfae3ba9ec66a65c78e1966a1da53575a9aa16c93a15bdb5144c70b4d4c":[14,0,37,104,25],
-"nvme__spec_8h.html#aa70e5bbfae3ba9ec66a65c78e1966a1da575eee3db1a089ad76fa8adf4d305cfb":[14,0,37,104,13],
-"nvme__spec_8h.html#aa70e5bbfae3ba9ec66a65c78e1966a1da6711facc0b7250f64b6e6edcb3cce967":[14,0,37,104,4],
-"nvme__spec_8h.html#aa70e5bbfae3ba9ec66a65c78e1966a1da722fa9b04638e2d2d869d80e37d9e8e4":[14,0,37,104,5],
-"nvme__spec_8h.html#aa70e5bbfae3ba9ec66a65c78e1966a1da8327b78665e5a6c38b5fad6c9c46ab26":[14,0,37,104,7],
-"nvme__spec_8h.html#aa70e5bbfae3ba9ec66a65c78e1966a1da85df31b9e54f0a539021d7db2cd52a01":[14,0,37,104,1],
-"nvme__spec_8h.html#aa70e5bbfae3ba9ec66a65c78e1966a1da984358a2b5b566ba0645cb9a00db9fd2":[14,0,37,104,8]
+"nvme__spec_8h.html#aa70e5bbfae3ba9ec66a65c78e1966a1da53575a9aa16c93a15bdb5144c70b4d4c":[14,0,37,104,25]
 };

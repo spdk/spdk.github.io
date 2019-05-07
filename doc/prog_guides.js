@@ -27,5 +27,12 @@ var prog_guides =
       ] ]
     ] ],
     [ "GDB Macros User Guide", "gdb_macros.html", null ],
-    [ "SPDK \"Reduce\" Block Compression Algorithm", "reduce.html", null ]
+    [ "SPDK \"Reduce\" Block Compression Algorithm", "reduce.html", null ],
+    [ "Notify library", "notify.html", [
+      [ "Register event types", "notify.html#notify_register", null ],
+      [ "Get info about events", "notify.html#notify_get_info", null ],
+      [ "Get new events", "notify.html#notify_listen", null ],
+      [ "Send events", "notify.html#notify_send", null ],
+      [ "RPC Calls", "notify.html#rpc_calls", null ]
+    ] ]
 ];

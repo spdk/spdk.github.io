@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="Content-Type" content="text/xhtml; charset=utf-8">
   <meta name="generator" content="Doxygen 1.8.14">
-  <title>SPDK: spdk_nvmf_transport_opts Struct Reference</title>
+  <title>SPDK: Notify library</title>
   <script type="text/javascript" src="jquery.js"></script>
   <script type="text/javascript" src="dynsections.js"></script>
   <link href="navtree.css" rel="stylesheet" type="text/css"/>
@@ -121,7 +121,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-$(document).ready(function(){initNavTree('structspdk__nvmf__transport__opts.html','');});
+$(document).ready(function(){initNavTree('notify.html','');});
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -140,49 +140,26 @@ $(document).ready(function(){initNavTree('structspdk__nvmf__transport__opts.html
 </div>
 
 <div class="header">
-  <div class="summary">
-<a href="#pub-attribs">Data Fields</a>  </div>
   <div class="headertitle">
-<div class="title">spdk_nvmf_transport_opts Struct Reference</div>  </div>
+<div class="title">Notify library </div>  </div>
 </div><!--header-->
 <div class="contents">
-<table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
-Data Fields</h2></td></tr>
-<tr class="memitem:a90f2c6dd7e963201cbe0e625b4599ee4"><td class="memItemLeft" align="right" valign="top"><a id="a90f2c6dd7e963201cbe0e625b4599ee4"></a>
-uint16_t&#160;</td><td class="memItemRight" valign="bottom"><b>max_queue_depth</b></td></tr>
-<tr class="separator:a90f2c6dd7e963201cbe0e625b4599ee4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa6c3986bff2dcd3d5cc5b89616e03d8b"><td class="memItemLeft" align="right" valign="top"><a id="aa6c3986bff2dcd3d5cc5b89616e03d8b"></a>
-uint16_t&#160;</td><td class="memItemRight" valign="bottom"><b>max_qpairs_per_ctrlr</b></td></tr>
-<tr class="separator:aa6c3986bff2dcd3d5cc5b89616e03d8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a51e173174fe161295fcf24c1e0c18438"><td class="memItemLeft" align="right" valign="top"><a id="a51e173174fe161295fcf24c1e0c18438"></a>
-uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>in_capsule_data_size</b></td></tr>
-<tr class="separator:a51e173174fe161295fcf24c1e0c18438"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a12c798cc83976f1edaf15c3627d31c70"><td class="memItemLeft" align="right" valign="top"><a id="a12c798cc83976f1edaf15c3627d31c70"></a>
-uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>max_io_size</b></td></tr>
-<tr class="separator:a12c798cc83976f1edaf15c3627d31c70"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7e6e60442ef1d45efab0e6159d060a8e"><td class="memItemLeft" align="right" valign="top"><a id="a7e6e60442ef1d45efab0e6159d060a8e"></a>
-uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>io_unit_size</b></td></tr>
-<tr class="separator:a7e6e60442ef1d45efab0e6159d060a8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a063b1c1080343c707a3d51ced615628f"><td class="memItemLeft" align="right" valign="top"><a id="a063b1c1080343c707a3d51ced615628f"></a>
-uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>max_aq_depth</b></td></tr>
-<tr class="separator:a063b1c1080343c707a3d51ced615628f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac029aacb2caf552303ef1cc7f51f7bb9"><td class="memItemLeft" align="right" valign="top"><a id="ac029aacb2caf552303ef1cc7f51f7bb9"></a>
-uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>num_shared_buffers</b></td></tr>
-<tr class="separator:ac029aacb2caf552303ef1cc7f51f7bb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa4f37cf3674a2bf984fdb9b63cc30223"><td class="memItemLeft" align="right" valign="top"><a id="aa4f37cf3674a2bf984fdb9b63cc30223"></a>
-uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>buf_cache_size</b></td></tr>
-<tr class="separator:aa4f37cf3674a2bf984fdb9b63cc30223"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7a21914db32fb20482f749e95c99f013"><td class="memItemLeft" align="right" valign="top"><a id="a7a21914db32fb20482f749e95c99f013"></a>
-uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>max_srq_depth</b></td></tr>
-<tr class="separator:a7a21914db32fb20482f749e95c99f013"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1c5194a083b544bd71072267c4d341e0"><td class="memItemLeft" align="right" valign="top"><a id="a1c5194a083b544bd71072267c4d341e0"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>no_srq</b></td></tr>
-<tr class="separator:a1c5194a083b544bd71072267c4d341e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table>
-<hr/>The documentation for this struct was generated from the following file:<ul>
-<li><a class="el" href="nvmf_8h.html">nvmf.h</a></li>
-</ul>
-</div><!-- contents -->
+<div class="textblock"><p>The notify library implements an event bus, allowing users to register, generate, and listen for events. For example, the bdev library may register a new event type for bdev creation. Any time a bdev is created, it "sends" the event. Consumers of that event may periodically poll for new events to retrieve them. The event bus is implemented as a circular ring of fixed size. If event consumers do not poll frequently enough, events may be lost. All events are identified by a monotonically increasing integer, so missing events may be detected, although not recovered.</p>
+<h1><a class="anchor" id="notify_register"></a>
+Register event types</h1>
+<p>During initialization the sender library should register its own event types using <code>spdk_notify_type_register(const char *type)</code>. Parameter 'type' is the name of notification type.</p>
+<h1><a class="anchor" id="notify_get_info"></a>
+Get info about events</h1>
+<p>A consumer can get information about the available event types during runtime using <code>spdk_notify_foreach_type</code>, which iterates over registered notification types and calls a callback on each of them, so that user can produce detailed information about notification.</p>
+<h1><a class="anchor" id="notify_listen"></a>
+Get new events</h1>
+<p>A consumer can get events by calling function <code>spdk_notify_foreach_event</code>. The caller should specify last received event and the maximum number of invocations. There might be multiple consumers of each event. The event bus is implemented as a circular buffer, so older events may be overwritten by newer ones.</p>
+<h1><a class="anchor" id="notify_send"></a>
+Send events</h1>
+<p>When an event occurs, a library can invoke <code>spdk_notify_send</code> with two strings. One containing the type of the event, like "spdk_bdev_register", second with context, for example "Nvme0n1"</p>
+<h1><a class="anchor" id="rpc_calls"></a>
+RPC Calls</h1>
+<p>See <a href="jsonrpc.md/#rpc_get_notification_types">JSON-RPC documentation</a> </p>
+</div></div><!-- contents -->
 </div><!-- doc-content -->
 </div>
