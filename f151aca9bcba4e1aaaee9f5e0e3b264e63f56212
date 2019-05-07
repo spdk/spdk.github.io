@@ -1,0 +1,106 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "7308bed5_3e56884d",
+        "filename": "_posts/2019-05-06-nvme.md",
+        "patchSetId": 8
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 1011222
+      },
+      "writtenOn": "2019-05-07T19:01:13Z",
+      "side": 1,
+      "message": "I think we should promote the 4KB number, especially since it\u0027s above 10M.\n\n512B might be a more likely workload on Optane, if we\u0027re doing metadata operations (not a filesystem) - but that takes some explaining, and even then no one would ever put 20 Optanes into one system.  So I think just sticking with the 4KB number is best.",
+      "revId": "f151aca9bcba4e1aaaee9f5e0e3b264e63f56212",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "4d258b4f_02e3f606",
+        "filename": "_posts/2019-05-06-nvme.md",
+        "patchSetId": 8
+      },
+      "lineNbr": 75,
+      "author": {
+        "id": 1011222
+      },
+      "writtenOn": "2019-05-07T19:01:13Z",
+      "side": 1,
+      "message": "I think 4KiB is the standard in storage.  All of the SSD vendors quote numbers for 4KiB, not 512B.  4KiB is also what SPDK has reported since day 1.",
+      "revId": "f151aca9bcba4e1aaaee9f5e0e3b264e63f56212",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "3c479eff_cdac7f71",
+        "filename": "_posts/2019-05-06-nvme.md",
+        "patchSetId": 8
+      },
+      "lineNbr": 132,
+      "author": {
+        "id": 1011222
+      },
+      "writtenOn": "2019-05-07T19:01:13Z",
+      "side": 1,
+      "message": "We should say something in here about how they\u0027ve been doing this on the network side (DPDK) for a long time.  And now SPDK is fast enough that we have to do it here too.",
+      "revId": "f151aca9bcba4e1aaaee9f5e0e3b264e63f56212",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "cfc7c65c_b6ad7dea",
+        "filename": "_posts/2019-05-06-nvme.md",
+        "patchSetId": 8
+      },
+      "lineNbr": 147,
+      "author": {
+        "id": 1011222
+      },
+      "writtenOn": "2019-05-07T19:01:13Z",
+      "side": 1,
+      "message": "a couple million overall or per thread?  (I think you mean per thread).",
+      "revId": "f151aca9bcba4e1aaaee9f5e0e3b264e63f56212",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "b3de08d0_c54580d8",
+        "filename": "_posts/2019-05-06-nvme.md",
+        "patchSetId": 8
+      },
+      "lineNbr": 166,
+      "author": {
+        "id": 1011222
+      },
+      "writtenOn": "2019-05-07T19:01:13Z",
+      "side": 1,
+      "message": "this isn\u0027t exactly true - it only works like this if we wait for all 8 to complete before sending the next 8",
+      "revId": "f151aca9bcba4e1aaaee9f5e0e3b264e63f56212",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "a413838c_a618bc73",
+        "filename": "_posts/2019-05-06-nvme.md",
+        "patchSetId": 8
+      },
+      "lineNbr": 184,
+      "author": {
+        "id": 1011222
+      },
+      "writtenOn": "2019-05-07T19:01:13Z",
+      "side": 1,
+      "message": "Should we remove this part?  Practically it doesn\u0027t work - at least not on Intel SSDs.  I know we get some limited benefit, but it\u0027s not exactly like what is described here - we have to be much more aggressive on ringing the completion doorbell.",
+      "revId": "f151aca9bcba4e1aaaee9f5e0e3b264e63f56212",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    }
+  ]
+}
