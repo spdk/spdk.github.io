@@ -19,6 +19,52 @@
     },
     {
       "key": {
+        "uuid": "66acc001_5d3d60e1",
+        "filename": "_posts/2019-05-06-nvme.md",
+        "patchSetId": 8
+      },
+      "lineNbr": 65,
+      "author": {
+        "id": 1011314
+      },
+      "writtenOn": "2019-05-08T14:17:37Z",
+      "side": 1,
+      "message": "Might want to mention DDR4",
+      "range": {
+        "startLine": 65,
+        "startChar": 25,
+        "endLine": 65,
+        "endChar": 41
+      },
+      "revId": "f151aca9bcba4e1aaaee9f5e0e3b264e63f56212",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "b30aec76_68ceb494",
+        "filename": "_posts/2019-05-06-nvme.md",
+        "patchSetId": 8
+      },
+      "lineNbr": 66,
+      "author": {
+        "id": 1011314
+      },
+      "writtenOn": "2019-05-08T14:17:37Z",
+      "side": 1,
+      "message": "This should be \"Intel® Optane™ SSD DC P4800X\"\nYou might also want to mention the capacity of the SSDs",
+      "range": {
+        "startLine": 66,
+        "startChar": 30,
+        "endLine": 66,
+        "endChar": 42
+      },
+      "revId": "f151aca9bcba4e1aaaee9f5e0e3b264e63f56212",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "4d258b4f_02e3f606",
         "filename": "_posts/2019-05-06-nvme.md",
         "patchSetId": 8
@@ -30,6 +76,29 @@
       "writtenOn": "2019-05-07T19:01:13Z",
       "side": 1,
       "message": "I think 4KiB is the standard in storage.  All of the SSD vendors quote numbers for 4KiB, not 512B.  4KiB is also what SPDK has reported since day 1.",
+      "revId": "f151aca9bcba4e1aaaee9f5e0e3b264e63f56212",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "bdbdfa94_02d36d09",
+        "filename": "_posts/2019-05-06-nvme.md",
+        "patchSetId": 8
+      },
+      "lineNbr": 85,
+      "author": {
+        "id": 1011314
+      },
+      "writtenOn": "2019-05-08T14:17:37Z",
+      "side": 1,
+      "message": "I am getting a Page not found error on this link.",
+      "range": {
+        "startLine": 85,
+        "startChar": 103,
+        "endLine": 85,
+        "endChar": 137
+      },
       "revId": "f151aca9bcba4e1aaaee9f5e0e3b264e63f56212",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": true
