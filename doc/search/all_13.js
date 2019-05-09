@@ -1,7 +1,8 @@
 var searchData=
 [
-  ['spdk_20directory_20structure',['SPDK Directory Structure',['../directory_structure.html',1,'general']]],
   ['storage_20performance_20development_20kit',['Storage Performance Development Kit',['../index.html',1,'']]],
+  ['submitting_20i_2fo_20to_20an_20nvme_20device',['Submitting I/O to an NVMe Device',['../nvme_spec.html',1,'concepts']]],
+  ['spdk_20structural_20overview',['SPDK Structural Overview',['../overview.html',1,'concepts']]],
   ['spdk_20porting_20guide',['SPDK Porting Guide',['../porting.html',1,'concepts']]],
   ['spdk_20_22reduce_22_20block_20compression_20algorithm',['SPDK &quot;Reduce&quot; Block Compression Algorithm',['../reduce.html',1,'prog_guides']]],
   ['sanicap',['sanicap',['../structspdk__nvme__ctrlr__data.html#a5914b8b06564740632a315203ad5b0f6',1,'spdk_nvme_ctrlr_data']]],
@@ -556,7 +557,7 @@ var searchData=
   ['spdk_5fnet_5fframework_5fregister',['spdk_net_framework_register',['../net_8h.html#abc3295d98c59921fecdef4de0e944afd',1,'net.h']]],
   ['spdk_5fnet_5fframework_5fstart',['spdk_net_framework_start',['../net_8h.html#af110dcf710bf13d7e302002606e842ad',1,'net.h']]],
   ['spdk_5fnet_5finit_5fcb',['spdk_net_init_cb',['../net_8h.html#ac4a70159fdffa7bd9100c92b602b2608',1,'net.h']]],
-  ['spdk_5fnew_5fthread_5ffn',['spdk_new_thread_fn',['../thread_8h.html#af8919ce9d89e5a1b2da5ce4edd5521b3',1,'thread.h']]],
+  ['spdk_5fnew_5fthread_5ffn',['spdk_new_thread_fn',['../thread_8h.html#afab3d4339c5bca4dfde209816a9e560f',1,'thread.h']]],
   ['spdk_5fnotify_5fevent',['spdk_notify_event',['../structspdk__notify__event.html',1,'']]],
   ['spdk_5fnvme_5fadmin_5fopcode',['spdk_nvme_admin_opcode',['../nvme__spec_8h.html#a3d96f5eb214b3cb58675276f19855bf5',1,'nvme_spec.h']]],
   ['spdk_5fnvme_5faer_5fcb',['spdk_nvme_aer_cb',['../nvme_8h.html#ae564dc7dced1dd7b474c1a6923734a6d',1,'nvme.h']]],
@@ -1306,7 +1307,6 @@ var searchData=
   ['sr',['sr',['../structspdk__nvme__dsm__range.html#a3654dba7338b5afe24b7b176c7236fba',1,'spdk_nvme_dsm_range']]],
   ['src_5faddr',['src_addr',['../structspdk__nvme__ctrlr__opts.html#a42263f93ea1058c24c9c6113c0196f29',1,'spdk_nvme_ctrlr_opts']]],
   ['src_5fsvcid',['src_svcid',['../structspdk__nvme__ctrlr__opts.html#ab348a8dc36baba0c3b3ab9a50b299752',1,'spdk_nvme_ctrlr_opts']]],
-  ['ssd_20internals',['SSD Internals',['../ssd_internals.html',1,'concepts']]],
   ['ssvid',['ssvid',['../structspdk__nvme__ctrlr__data.html#a98bca935ffa3fbc83fd504055b8a228f',1,'spdk_nvme_ctrlr_data']]],
   ['stailq_5fentry',['STAILQ_ENTRY',['../structspdk__bdev__io_1_1____bdev__io__internal__fields.html#aa01c2efabe47df9c745086736f6f64ef',1,'spdk_bdev_io::__bdev_io_internal_fields']]],
   ['start',['start',['../structspdk__bdev__io.html#a6b0eb1f7b0c97ffd7a8c7a11955f7eef',1,'spdk_bdev_io::start()'],['../structspdk__json__val.html#acd221be089fb848898b736d31add7053',1,'spdk_json_val::start()']]],

@@ -8,7 +8,7 @@ var thread_8h =
     [ "spdk_io_channel_destroy_cb", "thread_8h.html#a75aa6a61877f23f79bb75c8fc5e68202", null ],
     [ "spdk_io_device_unregister_cb", "thread_8h.html#ae044f4141737c7f2df49cdfb03fd58ca", null ],
     [ "spdk_msg_fn", "thread_8h.html#adc0da6b1b784d4f165dcd48b526d12ad", null ],
-    [ "spdk_new_thread_fn", "thread_8h.html#af8919ce9d89e5a1b2da5ce4edd5521b3", null ],
+    [ "spdk_new_thread_fn", "thread_8h.html#afab3d4339c5bca4dfde209816a9e560f", null ],
     [ "spdk_poller_fn", "thread_8h.html#a35c421accdc2a0a61bb7be916106293b", null ],
     [ "spdk_start_poller", "thread_8h.html#a6f70f5e9b4d498e843f81f1a6ada6370", null ],
     [ "spdk_stop_poller", "thread_8h.html#adfddbbbb13145f26741106cb8296a05a", null ],

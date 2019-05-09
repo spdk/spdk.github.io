@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="Content-Type" content="text/xhtml; charset=utf-8">
   <meta name="generator" content="Doxygen 1.8.14">
-  <title>SPDK: SPDK Directory Structure</title>
+  <title>SPDK: SPDK Structural Overview</title>
   <script type="text/javascript" src="jquery.js"></script>
   <script type="text/javascript" src="dynsections.js"></script>
   <link href="navtree.css" rel="stylesheet" type="text/css"/>
@@ -121,7 +121,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-$(document).ready(function(){initNavTree('directory_structure.html','');});
+$(document).ready(function(){initNavTree('overview.html','');});
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -141,25 +141,25 @@ $(document).ready(function(){initNavTree('directory_structure.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">SPDK Directory Structure </div>  </div>
+<div class="title">SPDK Structural Overview </div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><h1><a class="anchor" id="dir_overview"></a>
 Overview</h1>
-<p>SPDK is primarily a collection of C libraries intended to be consumed directly by applications, but the repository also contains many examples and full-fledged applications. This will provide a general overview of what is where in the repository.</p>
+<p>SPDK is composed of a set of C libraries residing in <code>lib</code> with public interface header files in <code>include/spdk</code>, plus a set of applications built out of those libraries in <code>app</code>. Users can use the C libraries in their software or deploy the full SPDK applications.</p>
+<p>SPDK is designed around message passing instead of locking, and most of the SPDK libraries make several assumptions about the underlying threading model of the application they are embedded into. However, SPDK goes to great lengths to remain agnostic to the specific message passing, event, co-routine, or light-weight threading framework actually in use. To accomplish this, all SPDK libraries interact with an abstraction library in <code>lib/thread</code> (public interface at <code><a class="el" href="thread_8h.html" title="Thread. ">include/spdk/thread.h</a></code>). Any framework can initialize the threading abstraction and provide callbacks to implement the functionality that the SPDK libraries need. For more information on this abstraction, see <a class="el" href="concurrency.html">Message Passing and Concurrency</a>.</p>
+<p>SPDK is built on top of POSIX for most operations. To make porting to non-POSIX environments easier, all POSIX headers are isolated into <code><a class="el" href="stdinc_8h.html" title="Standard C headers. ">include/spdk/stdinc.h</a></code>. However, SPDK requires a number of operations that POSIX does not provide, such as enumerating the PCI devices on the system or allocating memory that is safe for DMA. These additional operations are all abstracted in a library called <code>env</code> whose public header is at <code><a class="el" href="env_8h.html" title="Encapsulated third-party dependencies. ">include/spdk/env.h</a></code>. By default, SPDK implements the <code>env</code> interface using a library based on DPDK. However, that implementation can be swapped out. See <a class="el" href="porting.html">SPDK Porting Guide</a> for additional information.</p>
 <h2><a class="anchor" id="dir_app"></a>
 Applications</h2>
-<p>The <code>app</code> top-level directory contains four applications:</p><ul>
-<li><code>app/iscsi_tgt</code>: An iSCSI target</li>
-<li><code>app/nvmf_tgt</code>: An NVMe-oF target</li>
-<li><code>app/iscsi_top</code>: Informational tool (like <code>top</code>) that tracks activity in the iSCSI target.</li>
-<li><code>app/trace</code>: A tool for processing trace points output from the iSCSI and NVMe-oF targets.</li>
-<li><code>app/vhost</code>: A vhost application that presents virtio controllers to QEMU-based VMs and process I/O submitted to those controllers.</li>
+<p>The <code>app</code> top-level directory contains full-fledged applications, built out of the SPDK components. For a full overview, see <a class="el" href="app_overview.html">An Overview of SPDK Applications</a>.</p>
+<p>SPDK applications can typically be started with a small number of configuration options. Full configuration of the applications is then performed using JSON-RPC. See <a class="el" href="jsonrpc.html">JSON-RPC Methods</a> for additional information.</p>
+<h2><a class="anchor" id="dir_lib"></a>
+Libraries</h2>
+<p>The <code>lib</code> directory contains the real heart of SPDK. Each component is a C library with its own directory under <code>lib</code>. Some of the key libraries are:</p>
+<ul>
+<li><a class="el" href="bdev.html">Block Device User Guide</a></li>
+<li><a class="el" href="nvme.html">NVMe Driver</a></li>
 </ul>
-<p>The application binaries will be in their respective directories after compiling and all can be run with no arguments to print out their command line arguments. For the iSCSI and NVMe-oF targets, they both need a configuration file (-c option). Fully commented examples of the configuration files live in the <code>etc/spdk</code> directory.</p>
-<h2><a class="anchor" id="dir_build"></a>
-Build Collateral</h2>
-<p>The <code>build</code> directory contains all of the static libraries constructed during the build process. The <code>lib</code> directory combined with the <code>include/spdk</code> directory are the official outputs of an SPDK release, if it were to be packaged.</p>
 <h2><a class="anchor" id="dir_doc"></a>
 Documentation</h2>
 <p>The <code>doc</code> top-level directory contains all of SPDK's documentation. API Documentation is created using Doxygen directly from the code, but more general articles and longer explanations reside in this directory, as well as the Doxygen config file.</p>
@@ -171,7 +171,7 @@ Examples</h2>
 <h2><a class="anchor" id="dir_include"></a>
 Include</h2>
 <p>The <code>include</code> directory is where all of the header files are located. The public API is all placed in the <code>spdk</code> subdirectory of <code>include</code> and we highly recommend that applications set their include path to the top level <code>include</code> directory and include the headers by prefixing <code>spdk/</code> like this:</p>
-<div class="fragment"><div class="line"><span class="preprocessor">#include &quot;<a class="code" href="nvme_8h.html">spdk/nvme.h</a>&quot;</span></div></div><!-- fragment --><p>Most of the headers here correspond with a library in the <code>lib</code> directory and will be covered in that section. There are a few headers that stand alone, however. They are:</p>
+<div class="fragment"><div class="line"><span class="preprocessor">#include &quot;<a class="code" href="nvme_8h.html">spdk/nvme.h</a>&quot;</span></div></div><!-- fragment --><p>Most of the headers here correspond with a library in the <code>lib</code> directory. There are a few headers that stand alone, however. They are:</p>
 <ul>
 <li><code><a class="el" href="assert_8h.html" title="Runtime and compile-time assert macros. ">assert.h</a></code></li>
 <li><code><a class="el" href="barrier_8h.html" title="Memory barriers. ">barrier.h</a></code></li>
@@ -182,24 +182,6 @@ Include</h2>
 <li><code><a class="el" href="string_8h.html" title="String utility functions. ">string.h</a></code></li>
 </ul>
 <p>There is also an <code>spdk_internal</code> directory that contains header files widely included by libraries within SPDK, but that are not part of the public API and would not be installed on a user's system.</p>
-<h2><a class="anchor" id="dir_lib"></a>
-Libraries</h2>
-<p>The <code>lib</code> directory contains the real heart of SPDK. Each component is a C library with its own directory under <code>lib</code>.</p>
-<h3><a class="anchor" id="dir_bdev"></a>
-Block Device Abstraction Layer</h3>
-<p>The <code>bdev</code> directory contains a block device abstraction layer that is currently used within the iSCSI and NVMe-oF targets. The public interface is <code><a class="el" href="bdev_8h.html" title="Block device abstraction layer. ">include/spdk/bdev.h</a></code>. This library lacks clearly defined responsibilities as of this writing and instead does a number of things:</p><ul>
-<li>Translates from a common <code>block</code> protocol to specific protocols like NVMe or to system calls like libaio. There are currently three block device backend modules that can be plugged in - libaio, SPDK NVMe, CephRBD, and a RAM-based backend called malloc.</li>
-<li>Provides a mechanism for composing virtual block devices from physical devices (to do RAID and the like).</li>
-<li>Handles some memory allocation for data buffers.</li>
-</ul>
-<p>This layer also could be made to do I/O queueing or splitting in a general way. We're open to design ideas and discussion here.</p>
-<h3><a class="anchor" id="dir_conf"></a>
-Configuration File Parser</h3>
-<p>The <code>conf</code> directory contains configuration file parser. The public header is <code><a class="el" href="conf_8h.html" title="Configuration file parser. ">include/spdk/conf.h</a></code>. The configuration file format is kind of like INI, except that the directives are are "Name Value" instead of "Name = Value". This is the configuration format for both the iSCSI and NVMe-oF targets.</p>
-<p>... Lots more libraries that need to be described ...</p>
-<h2><a class="anchor" id="dir_mk"></a>
-Makefile Fragments</h2>
-<p>The <code>mk</code> directory contains a number of shared Makefile fragments used in the build system.</p>
 <h2><a class="anchor" id="dir_scripts"></a>
 Scripts</h2>
 <p>The <code>scripts</code> directory contains convenient scripts for a number of operations. The two most important are <code>check_format.sh</code>, which will use astyle and pep8 to check C, C++, and Python coding style against our defined conventions, and <code>setup.sh</code> which binds and unbinds devices from kernel drivers.</p>

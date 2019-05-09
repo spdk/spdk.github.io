@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="Content-Type" content="text/xhtml; charset=utf-8">
   <meta name="generator" content="Doxygen 1.8.14">
-  <title>SPDK: Memory Management for User Space Drivers</title>
+  <title>SPDK: Direct Memory Access (DMA) From User Space</title>
   <script type="text/javascript" src="jquery.js"></script>
   <script type="text/javascript" src="dynsections.js"></script>
   <link href="navtree.css" rel="stylesheet" type="text/css"/>
@@ -141,7 +141,7 @@ $(document).ready(function(){initNavTree('memory.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">Memory Management for User Space Drivers </div>  </div>
+<div class="title">Direct Memory Access (DMA) From User Space </div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><p>The following is an attempt to explain why all data buffers passed to SPDK must be allocated using <a class="el" href="env_8h.html#a0874731c44ac31e4b14d91c6844a87d1" title="Allocate a pinned memory buffer with the given size and alignment. ">spdk_dma_malloc()</a> or its siblings, and why SPDK relies on DPDK's proven base functionality to implement memory management.</p>

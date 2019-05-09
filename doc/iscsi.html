@@ -182,21 +182,21 @@ Configuring iSCSI Target via RPC method</h2>
 <li>delete_pg_ig_maps &ndash; Delete initiator group to portal group mappings from an existing iSCSI target node.</li>
 <li>get_portal_groups &ndash; Show information about all available portal groups.</li>
 </ul>
-<div class="fragment"><div class="line">python /path/to/spdk/scripts/rpc.py add_portal_group 1 10.0.0.1:3260</div></div><!-- fragment --><h3>Initiator groups</h3>
+<div class="fragment"><div class="line">/path/to/spdk/scripts/rpc.py add_portal_group 1 10.0.0.1:3260</div></div><!-- fragment --><h3>Initiator groups</h3>
 <ul>
 <li>add_initiator_group &ndash; Add an initiator group.</li>
 <li>delete_initiator_group &ndash; Delete an existing initiator group.</li>
 <li>add_initiators_to_initiator_group &ndash; Add initiators to an existing initiator group.</li>
 <li>get_initiator_groups &ndash; Show information about all available initiator groups.</li>
 </ul>
-<div class="fragment"><div class="line">python /path/to/spdk/scripts/rpc.py add_initiator_group 2 ANY 10.0.0.2/32</div></div><!-- fragment --><h3>Target nodes</h3>
+<div class="fragment"><div class="line">/path/to/spdk/scripts/rpc.py add_initiator_group 2 ANY 10.0.0.2/32</div></div><!-- fragment --><h3>Target nodes</h3>
 <ul>
 <li>construct_target_node &ndash; Add a iSCSI target node.</li>
 <li>delete_target_node &ndash; Delete a iSCSI target node.</li>
 <li>target_node_add_lun &ndash; Add an LUN to an existing iSCSI target node.</li>
 <li>get_target_nodes &ndash; Show information about all available iSCSI target nodes.</li>
 </ul>
-<div class="fragment"><div class="line">python /path/to/spdk/scripts/rpc.py construct_target_node Target3 Target3_alias MyBdev:0 1:2 64 -d</div></div><!-- fragment --><h2><a class="anchor" id="iscsi_initiator"></a>
+<div class="fragment"><div class="line">/path/to/spdk/scripts/rpc.py construct_target_node Target3 Target3_alias MyBdev:0 1:2 64 -d</div></div><!-- fragment --><h2><a class="anchor" id="iscsi_initiator"></a>
 Configuring iSCSI Initiator</h2>
 <p>The Linux initiator is open-iscsi.</p>
 <p>Installing open-iscsi package Fedora: </p><div class="fragment"><div class="line">yum install -y iscsi-initiator-utils</div></div><!-- fragment --><p>Ubuntu: </p><div class="fragment"><div class="line">apt-get install -y open-iscsi</div></div><!-- fragment --><h3>Setup</h3>
@@ -220,10 +220,10 @@ Configuring iSCSI Initiator</h2>
 Sample iSCSI configuration</div></div>
  <h4>Configure iSCSI Target</h4>
 <p>Start iscsi_tgt application: </p><div class="fragment"><div class="line">$ ./app/iscsi_tgt/iscsi_tgt</div></div><!-- fragment --><p>Construct two 64MB Malloc block devices with 512B sector size "Malloc0" and "Malloc1":</p>
-<div class="fragment"><div class="line">$ python ./scripts/rpc.py construct_malloc_bdev -b Malloc0 64 512</div><div class="line">$ python ./scripts/rpc.py construct_malloc_bdev -b Malloc1 64 512</div></div><!-- fragment --><p>Create new portal group with id 1, and address 10.0.0.1:3260:</p>
-<div class="fragment"><div class="line">$ python ./scripts/rpc.py add_portal_group 1 10.0.0.1:3260</div></div><!-- fragment --><p>Create one initiator group with id 2 to accept any connection from 10.0.0.2/32:</p>
-<div class="fragment"><div class="line">$ python ./scripts/rpc.py add_initiator_group 2 ANY 10.0.0.2/32</div></div><!-- fragment --><p>Finally construct one target using previously created bdevs as LUN0 (Malloc0) and LUN1 (Malloc1) with a name "disk1" and alias "Data Disk1" using portal group 1 and initiator group 2.</p>
-<div class="fragment"><div class="line">$ python ./scripts/rpc.py construct_target_node disk1 &quot;Data Disk1&quot; &quot;Malloc0:0 Malloc1:1&quot; 1:2 64 -d</div></div><!-- fragment --><h4>Configure initiator</h4>
+<div class="fragment"><div class="line">$ ./scripts/rpc.py construct_malloc_bdev -b Malloc0 64 512</div><div class="line">$ ./scripts/rpc.py construct_malloc_bdev -b Malloc1 64 512</div></div><!-- fragment --><p>Create new portal group with id 1, and address 10.0.0.1:3260:</p>
+<div class="fragment"><div class="line">$ ./scripts/rpc.py add_portal_group 1 10.0.0.1:3260</div></div><!-- fragment --><p>Create one initiator group with id 2 to accept any connection from 10.0.0.2/32:</p>
+<div class="fragment"><div class="line">$ ./scripts/rpc.py add_initiator_group 2 ANY 10.0.0.2/32</div></div><!-- fragment --><p>Finally construct one target using previously created bdevs as LUN0 (Malloc0) and LUN1 (Malloc1) with a name "disk1" and alias "Data Disk1" using portal group 1 and initiator group 2.</p>
+<div class="fragment"><div class="line">$ ./scripts/rpc.py construct_target_node disk1 &quot;Data Disk1&quot; &quot;Malloc0:0 Malloc1:1&quot; 1:2 64 -d</div></div><!-- fragment --><h4>Configure initiator</h4>
 <p>Discover target</p>
 <div class="fragment"><div class="line">$ iscsiadm -m discovery -t sendtargets -p 10.0.0.1</div><div class="line">10.0.0.1:3260,1 iqn.2016-06.io.spdk:disk1</div></div><!-- fragment --><p>Connect to the target</p>
 <div class="fragment"><div class="line">$ iscsiadm -m node --login</div></div><!-- fragment --><p>At this point the iSCSI target should show up as SCSI disks.</p>

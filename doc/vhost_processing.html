@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="Content-Type" content="text/xhtml; charset=utf-8">
   <meta name="generator" content="Doxygen 1.8.14">
-  <title>SPDK: Vhost processing</title>
+  <title>SPDK: Virtualized I/O with Vhost-user</title>
   <script type="text/javascript" src="jquery.js"></script>
   <script type="text/javascript" src="dynsections.js"></script>
   <link href="navtree.css" rel="stylesheet" type="text/css"/>
@@ -141,7 +141,7 @@ $(document).ready(function(){initNavTree('vhost_processing.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">Vhost processing </div>  </div>
+<div class="title">Virtualized I/O with Vhost-user </div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><h1><a class="anchor" id="vhost_processing_toc"></a>
@@ -155,7 +155,7 @@ Table of Contents</h1>
 </ul>
 <h1><a class="anchor" id="vhost_processing_intro"></a>
 Introduction</h1>
-<p>This document is intended to provide an overall high level insight into how Vhost works behind the scenes. Code snippets used in this document might have been simplified for the sake of readability and should not be used as an API or implementation reference.</p>
+<p>This document is intended to provide an overview of how Vhost works behind the scenes. Code snippets used in this document might have been simplified for the sake of readability and should not be used as an API or implementation reference.</p>
 <p>Reading from the <a href="http://docs.oasis-open.org/virtio/virtio/v1.0/virtio-v1.0.html">Virtio specification</a>:</p>
 <div class="fragment"><div class="line">The purpose of virtio and [virtio] specification is that virtual environments</div><div class="line">and guests should have a straightforward, efficient, standard and extensible</div><div class="line">mechanism for virtual devices, rather than boutique per-environment or per-OS</div><div class="line">mechanisms.</div></div><!-- fragment --><p>Virtio devices use virtqueues to transport data efficiently. Virtqueue is a set of three different single-producer, single-consumer ring structures designed to store generic scatter-gatter I/O. Virtio is most commonly used in QEMU VMs, where the QEMU itself exposes a virtual PCI device and the guest OS communicates with it using a specific Virtio PCI driver. With only Virtio involved, it's always the QEMU process that handles all I/O traffic.</p>
 <p>Vhost is a protocol for devices accessible via inter-process communication. It uses the same virtqueue layout as Virtio to allow Vhost devices to be mapped directly to Virtio devices. This allows a Vhost device, exposed by an SPDK application, to be accessed directly by a guest OS inside a QEMU process with an existing Virtio (PCI) driver. Only the configuration, I/O submission notification, and I/O completion interruption are piped through QEMU. See also <a class="el" href="vhost_processing.html#vhost_spdk_optimizations">SPDK optimizations</a></p>

@@ -1,21 +1,5 @@
 var general =
 [
-    [ "SPDK Directory Structure", "directory_structure.html", [
-      [ "Overview", "directory_structure.html#dir_overview", [
-        [ "Applications", "directory_structure.html#dir_app", null ],
-        [ "Build Collateral", "directory_structure.html#dir_build", null ],
-        [ "Documentation", "directory_structure.html#dir_doc", null ],
-        [ "Examples", "directory_structure.html#dir_examples", null ],
-        [ "Include", "directory_structure.html#dir_include", null ],
-        [ "Libraries", "directory_structure.html#dir_lib", [
-          [ "Block Device Abstraction Layer", "directory_structure.html#dir_bdev", null ],
-          [ "Configuration File Parser", "directory_structure.html#dir_conf", null ]
-        ] ],
-        [ "Makefile Fragments", "directory_structure.html#dir_mk", null ],
-        [ "Scripts", "directory_structure.html#dir_scripts", null ],
-        [ "Tests", "directory_structure.html#dir_tests", null ]
-      ] ]
-    ] ],
     [ "Event Framework", "event.html", [
       [ "Event Framework Design Considerations", "event.html#event_design", null ],
       [ "SPDK Event Framework Components", "event.html#event_components", [

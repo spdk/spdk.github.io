@@ -16,7 +16,6 @@ var searchData=
   ['md_5fstart',['md_start',['../structspdk__nvme__ns__data.html#a1295065f7156b27aeb749b1ef5c0cdc7',1,'spdk_nvme_ns_data']]],
   ['mdts',['mdts',['../structspdk__nvme__ctrlr__data.html#aad0681365b9524dc8a1dca2d48a6c046',1,'spdk_nvme_ctrlr_data']]],
   ['measured_5fqueue_5fdepth',['measured_queue_depth',['../structspdk__bdev_1_1____bdev__internal__fields.html#a544e45acd435eb8c7269f08166841f41',1,'spdk_bdev::__bdev_internal_fields']]],
-  ['memory_20management_20for_20user_20space_20drivers',['Memory Management for User Space Drivers',['../memory.html',1,'concepts']]],
   ['miscellaneous',['Miscellaneous',['../misc.html',1,'']]],
   ['mjr',['mjr',['../structspdk__ocssd__geometry__data.html#a1e42dcab27a59b02df913acc08e129b4',1,'spdk_ocssd_geometry_data::mjr()'],['../unionspdk__nvme__vs__register.html#a605cba0b2c6abdee150cb3a6babc4bb8',1,'spdk_nvme_vs_register::mjr()']]],
   ['mmio_2eh',['mmio.h',['../mmio_8h.html',1,'']]],

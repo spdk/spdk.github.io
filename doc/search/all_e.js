@@ -68,5 +68,6 @@ var searchData=
   ['nvme_20over_20fabrics_20target_20programming_20guide',['NVMe over Fabrics Target Programming Guide',['../nvmf_tgt_pg.html',1,'prog_guides']]],
   ['nvme_2dof_20target_20tracepoints',['NVMe-oF Target Tracepoints',['../nvmf_tgt_tracepoints.html',1,'']]],
   ['nvq',['nvq',['../structspdk__nvme__secondary__ctrl__entry.html#a8d09ba6b8bb964a9773947fbb614ec06',1,'spdk_nvme_secondary_ctrl_entry']]],
-  ['nvscc',['nvscc',['../structspdk__nvme__ctrlr__data.html#a9923796b289062d3bc86509f4297c48a',1,'spdk_nvme_ctrlr_data']]]
+  ['nvscc',['nvscc',['../structspdk__nvme__ctrlr__data.html#a9923796b289062d3bc86509f4297c48a',1,'spdk_nvme_ctrlr_data']]],
+  ['nand_20flash_20ssd_20internals',['NAND Flash SSD Internals',['../ssd_internals.html',1,'concepts']]]
 ];
