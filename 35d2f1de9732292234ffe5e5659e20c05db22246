@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "3b167db4_513d82ad",
+        "filename": "_posts/2019-02-28-io_uring.md",
+        "patchSetId": 5
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 1010531
+      },
+      "writtenOn": "2019-05-09T16:38:53Z",
+      "side": 1,
+      "message": "Update filename with newer date on next revision",
+      "revId": "35d2f1de9732292234ffe5e5659e20c05db22246",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "bf40e7ef_5b38ed72",
+        "filename": "_posts/2019-02-28-io_uring.md",
+        "patchSetId": 5
+      },
+      "lineNbr": 37,
+      "author": {
+        "id": 1010531
+      },
+      "writtenOn": "2019-05-09T16:38:53Z",
+      "side": 1,
+      "message": "switch to past tense now - SPDK recently added a new bdev...",
+      "revId": "35d2f1de9732292234ffe5e5659e20c05db22246",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    }
+  ]
+}
