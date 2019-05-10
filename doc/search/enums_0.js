@@ -40,6 +40,7 @@ var searchData=
   ['spdk_5fnvme_5freservation_5fregister_5fcptpl',['spdk_nvme_reservation_register_cptpl',['../nvme__spec_8h.html#a05b2db4a398c119c029c234a68760c73',1,'nvme_spec.h']]],
   ['spdk_5fnvme_5freservation_5frelease_5faction',['spdk_nvme_reservation_release_action',['../nvme__spec_8h.html#a6fa8ea66c4927d8bb4d81d76867e851a',1,'nvme_spec.h']]],
   ['spdk_5fnvme_5freservation_5ftype',['spdk_nvme_reservation_type',['../nvme__spec_8h.html#aa7e108757c0eebbac7e13b598a378210',1,'nvme_spec.h']]],
+  ['spdk_5fnvme_5fsanitize_5fstatus_5ftype',['spdk_nvme_sanitize_status_type',['../nvme__spec_8h.html#ae89c61a84a87f12156f7046d7e9f78f1',1,'nvme_spec.h']]],
   ['spdk_5fnvme_5fsgls_5fsupported',['spdk_nvme_sgls_supported',['../nvme__spec_8h.html#af3e4102cda177c51a05a6bb02fa62b87',1,'nvme_spec.h']]],
   ['spdk_5fnvme_5fstatus_5fcode_5ftype',['spdk_nvme_status_code_type',['../nvme__spec_8h.html#a99fb26e5d5c31f6d3d61397951e44b52',1,'nvme_spec.h']]],
   ['spdk_5fnvme_5ftcp_5fpdu_5ftype',['spdk_nvme_tcp_pdu_type',['../nvmf__spec_8h.html#ab42a038d2f0a46d2a5d2290cb91fdbfc',1,'nvmf_spec.h']]],

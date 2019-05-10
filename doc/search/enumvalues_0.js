@@ -66,6 +66,7 @@ var searchData=
   ['spdk_5fnvme_5flog_5ffirmware_5fslot',['SPDK_NVME_LOG_FIRMWARE_SLOT',['../nvme__spec_8h.html#a3d5e453e4d95b0f5b9bb4de04ace78c4a898706714ccdcd0c5b2fee0170beecbb',1,'nvme_spec.h']]],
   ['spdk_5fnvme_5flog_5fhealth_5finformation',['SPDK_NVME_LOG_HEALTH_INFORMATION',['../nvme__spec_8h.html#a3d5e453e4d95b0f5b9bb4de04ace78c4a8c4e97d27e08924e29d76ea66780a886',1,'nvme_spec.h']]],
   ['spdk_5fnvme_5flog_5freservation_5fnotification',['SPDK_NVME_LOG_RESERVATION_NOTIFICATION',['../nvme__spec_8h.html#a3d5e453e4d95b0f5b9bb4de04ace78c4a37f2ea0a63737907265ff3ed35088a09',1,'nvme_spec.h']]],
+  ['spdk_5fnvme_5flog_5fsanitize_5fstatus',['SPDK_NVME_LOG_SANITIZE_STATUS',['../nvme__spec_8h.html#a3d5e453e4d95b0f5b9bb4de04ace78c4a96d86f9eff782b5207b78ea26c6e3b2b',1,'nvme_spec.h']]],
   ['spdk_5fnvme_5flog_5ftelemetry_5fctrlr_5finitiated',['SPDK_NVME_LOG_TELEMETRY_CTRLR_INITIATED',['../nvme__spec_8h.html#a3d5e453e4d95b0f5b9bb4de04ace78c4aa21d97922f4ef61731fd20986d30b2c8',1,'nvme_spec.h']]],
   ['spdk_5fnvme_5flog_5ftelemetry_5fhost_5finitiated',['SPDK_NVME_LOG_TELEMETRY_HOST_INITIATED',['../nvme__spec_8h.html#a3d5e453e4d95b0f5b9bb4de04ace78c4a6b0a3950980fadba16d971811a31afa0',1,'nvme_spec.h']]],
   ['spdk_5fnvme_5fnidt_5feui64',['SPDK_NVME_NIDT_EUI64',['../nvme__spec_8h.html#a3711b38213aaa9ff7a2aa7d1efe8e2f1a782356d3092200ea469f992d0677f08c',1,'nvme_spec.h']]],

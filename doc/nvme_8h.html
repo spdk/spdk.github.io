@@ -411,6 +411,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a7938b258a7614073065be4f6a35bd0e2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a7938b258a7614073065be4f6a35bd0e2">spdk_nvme_ctrlr_update_firmware</a> (struct spdk_nvme_ctrlr *ctrlr, void *payload, uint32_t size, int slot, enum <a class="el" href="nvme__spec_8h.html#ae4da1c1bec22eb22d1af72bbf37af36e">spdk_nvme_fw_commit_action</a> commit_action, struct <a class="el" href="structspdk__nvme__status.html">spdk_nvme_status</a> *completion_status)</td></tr>
 <tr class="memdesc:a7938b258a7614073065be4f6a35bd0e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Download a new firmware image.  <a href="#a7938b258a7614073065be4f6a35bd0e2">More...</a><br /></td></tr>
 <tr class="separator:a7938b258a7614073065be4f6a35bd0e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a887db5ce5c84eba37a4d82f5d180d020"><td class="memItemLeft" align="right" valign="top">volatile struct <a class="el" href="structspdk__nvme__registers.html">spdk_nvme_registers</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a887db5ce5c84eba37a4d82f5d180d020">spdk_nvme_ctrlr_get_registers</a> (struct spdk_nvme_ctrlr *ctrlr)</td></tr>
+<tr class="memdesc:a887db5ce5c84eba37a4d82f5d180d020"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return virtual address of PCIe NVM I/O registers.  <a href="#a887db5ce5c84eba37a4d82f5d180d020">More...</a><br /></td></tr>
+<tr class="separator:a887db5ce5c84eba37a4d82f5d180d020"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad63b25defbb0f1ccd52538e3b9a748df"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#ad63b25defbb0f1ccd52538e3b9a748df">spdk_nvme_ctrlr_alloc_cmb_io_buffer</a> (struct spdk_nvme_ctrlr *ctrlr, size_t size)</td></tr>
 <tr class="memdesc:ad63b25defbb0f1ccd52538e3b9a748df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate an I/O buffer from the controller memory buffer (Experimental).  <a href="#ad63b25defbb0f1ccd52538e3b9a748df">More...</a><br /></td></tr>
 <tr class="separator:ad63b25defbb0f1ccd52538e3b9a748df"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -2305,6 +2308,34 @@ int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_retry_co
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>PCI device of the NVMe controller, or NULL if not available. </dd></dl>
+
+</div>
+</div>
+<a id="a887db5ce5c84eba37a4d82f5d180d020"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a887db5ce5c84eba37a4d82f5d180d020">&#9670;&nbsp;</a></span>spdk_nvme_ctrlr_get_registers()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">volatile struct <a class="el" href="structspdk__nvme__registers.html">spdk_nvme_registers</a>* spdk_nvme_ctrlr_get_registers </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_nvme_ctrlr *&#160;</td>
+          <td class="paramname"><em>ctrlr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Return virtual address of PCIe NVM I/O registers. </p>
+<p>This function returns a pointer to the PCIe I/O registers for a controller or NULL if unsupported for this transport.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ctrlr</td><td>Controller whose registers are to be accessed.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Pointer to virtual address of register bank, or NULL. </dd></dl>
 
 </div>
 </div>
