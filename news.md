@@ -5,6 +5,11 @@ title:  "SPDK In The News"
 
 # News items
 
+## May 6 2019 Intel® Chip Chat Episode 654
+
+### [Redesigning Storage in the Data Center with SPDK](https://soundcloud.com/intelchipchat/redesigning-storage-in-the-data-center-spdk)
+> Dr. Felipe Franciosi from Nutanix, and Nate Marushak from Intel, describe how SPDK brings higher performance to today's hyperconverged data center and holds promise for the future.
+
 ## February 2019 17th USENIX Conference on File and Storage Technologies (FAST '19)
 
 ### [Reaping the performance of fast NVM storage with uDepot](https://www.usenix.org/system/files/fast19-kourtis.pdf)
