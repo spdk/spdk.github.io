@@ -7,6 +7,7 @@ var reduce_8h =
     [ "spdk_reduce_vol_op_complete", "reduce_8h.html#a34d13995c0ae908bbe5bf798fdb52a4f", null ],
     [ "spdk_reduce_vol_op_with_handle_complete", "reduce_8h.html#a978a8801cd56a94532562650457c97dd", null ],
     [ "spdk_reduce_vol_destroy", "reduce_8h.html#ae0ffc9aa6f6f8ba73f52672abcccddbc", null ],
+    [ "spdk_reduce_vol_get_params", "reduce_8h.html#a69e5762ed7dd884f441af718a9db33ac", null ],
     [ "spdk_reduce_vol_get_uuid", "reduce_8h.html#ace66fd4e3840d38127fcf7a21dc269de", null ],
     [ "spdk_reduce_vol_init", "reduce_8h.html#a62753f16686f807748719567d57f15b8", null ],
     [ "spdk_reduce_vol_load", "reduce_8h.html#a910dd92b2a78d08fdb1cd6fa9e4c7a9e", null ],

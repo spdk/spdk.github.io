@@ -197,6 +197,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ac5b98c059d57b5fe1acf0062aa3d3e33"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="reduce_8h.html#ac5b98c059d57b5fe1acf0062aa3d3e33">spdk_reduce_vol_writev</a> (struct spdk_reduce_vol *vol, struct iovec *iov, int iovcnt, uint64_t offset, uint64_t length, spdk_reduce_vol_op_complete cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:ac5b98c059d57b5fe1acf0062aa3d3e33"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write data to a libreduce compressed volume.  <a href="#ac5b98c059d57b5fe1acf0062aa3d3e33">More...</a><br /></td></tr>
 <tr class="separator:ac5b98c059d57b5fe1acf0062aa3d3e33"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69e5762ed7dd884f441af718a9db33ac"><td class="memItemLeft" align="right" valign="top">const struct <a class="el" href="structspdk__reduce__vol__params.html">spdk_reduce_vol_params</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="reduce_8h.html#a69e5762ed7dd884f441af718a9db33ac">spdk_reduce_vol_get_params</a> (struct spdk_reduce_vol *vol)</td></tr>
+<tr class="memdesc:a69e5762ed7dd884f441af718a9db33ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the params structure for a libreduce compressed volume.  <a href="#a69e5762ed7dd884f441af718a9db33ac">More...</a><br /></td></tr>
+<tr class="separator:a69e5762ed7dd884f441af718a9db33ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>SPDK block compression. </p>
@@ -267,6 +270,34 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="a69e5762ed7dd884f441af718a9db33ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a69e5762ed7dd884f441af718a9db33ac">&#9670;&nbsp;</a></span>spdk_reduce_vol_get_params()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const struct <a class="el" href="structspdk__reduce__vol__params.html">spdk_reduce_vol_params</a>* spdk_reduce_vol_get_params </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_reduce_vol *&#160;</td>
+          <td class="paramname"><em>vol</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the params structure for a libreduce compressed volume. </p>
+<p>This function will populate the given params structure for a given volume.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">vol</td><td>Previously loaded or initialized compressed volume. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>params structure for the compressed volume. </dd></dl>
 
 </div>
 </div>
