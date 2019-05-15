@@ -1,0 +1,44 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "1d52e979_b979ddc6",
+        "filename": "cve_thread.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 1015209
+      },
+      "writtenOn": "2019-05-15T08:49:27Z",
+      "side": 1,
+      "message": "Number 3 is duplicated",
+      "revId": "056c1446d3c49f72dc488c2ae6fe2a1e53280f31",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "34b810f2_0551fe4f",
+        "filename": "cve_thread.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 44,
+      "author": {
+        "id": 1015209
+      },
+      "writtenOn": "2019-05-15T08:49:27Z",
+      "side": 1,
+      "message": "thread -\u003e threat\nThe same applies to file name and commit message header",
+      "range": {
+        "startLine": 44,
+        "startChar": 102,
+        "endLine": 44,
+        "endChar": 108
+      },
+      "revId": "056c1446d3c49f72dc488c2ae6fe2a1e53280f31",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    }
+  ]
+}
