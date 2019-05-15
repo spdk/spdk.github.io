@@ -205,6 +205,9 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 <tr class="memitem:a031524a539fbc57e1ca66c6fef875eea"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__ctrlr__opts.html#a031524a539fbc57e1ca66c6fef875eea">data_digest</a></td></tr>
 <tr class="memdesc:a031524a539fbc57e1ca66c6fef875eea"><td class="mdescLeft">&#160;</td><td class="mdescRight">It is used for TCP transport.  <a href="#a031524a539fbc57e1ca66c6fef875eea">More...</a><br /></td></tr>
 <tr class="separator:a031524a539fbc57e1ca66c6fef875eea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade3ae305f17864bd4904e89ac9a6a02c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__ctrlr__opts.html#ade3ae305f17864bd4904e89ac9a6a02c">disable_error_logging</a></td></tr>
+<tr class="memdesc:ade3ae305f17864bd4904e89ac9a6a02c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disable logging of requests that are completed with error status.  <a href="#ade3ae305f17864bd4904e89ac9a6a02c">More...</a><br /></td></tr>
+<tr class="separator:ade3ae305f17864bd4904e89ac9a6a02c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>NVMe controller initialization options. </p>
@@ -258,6 +261,23 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 
 <p>It is used for TCP transport. </p>
 <p>Set to true, means having data digest for the data in the NVMe/TCP PDU </p>
+
+</div>
+</div>
+<a id="ade3ae305f17864bd4904e89ac9a6a02c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ade3ae305f17864bd4904e89ac9a6a02c">&#9670;&nbsp;</a></span>disable_error_logging</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool spdk_nvme_ctrlr_opts::disable_error_logging</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Disable logging of requests that are completed with error status. </p>
+<p>Defaults to 'false' (errors are logged). </p>
 
 </div>
 </div>

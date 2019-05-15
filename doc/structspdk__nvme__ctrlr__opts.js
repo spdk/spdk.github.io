@@ -4,6 +4,7 @@ var structspdk__nvme__ctrlr__opts =
     [ "arb_mechanism", "structspdk__nvme__ctrlr__opts.html#a183d97c9bda86a9ca47442bcbc69c444", null ],
     [ "command_set", "structspdk__nvme__ctrlr__opts.html#a62b55ccfff58d8f91952d4c501a4c3ab", null ],
     [ "data_digest", "structspdk__nvme__ctrlr__opts.html#a031524a539fbc57e1ca66c6fef875eea", null ],
+    [ "disable_error_logging", "structspdk__nvme__ctrlr__opts.html#ade3ae305f17864bd4904e89ac9a6a02c", null ],
     [ "extended_host_id", "structspdk__nvme__ctrlr__opts.html#afa9c5708ea859200abb5406b59faaede", null ],
     [ "header_digest", "structspdk__nvme__ctrlr__opts.html#a2a1ee1f756d767ae8833875256c57864", null ],
     [ "host_id", "structspdk__nvme__ctrlr__opts.html#a810d9f0e2877c2264cf3393bc2919cb5", null ],
