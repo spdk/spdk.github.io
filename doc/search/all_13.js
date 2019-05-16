@@ -1087,6 +1087,7 @@ var searchData=
   ['spdk_5fpoller_5ffn',['spdk_poller_fn',['../thread_8h.html#a35c421accdc2a0a61bb7be916106293b',1,'thread.h']]],
   ['spdk_5fpoller_5fregister',['spdk_poller_register',['../thread_8h.html#a6b3e883ddce01ae8d93541304d1e9126',1,'thread.h']]],
   ['spdk_5fpoller_5funregister',['spdk_poller_unregister',['../thread_8h.html#a9c26cbd781063f5ee627d6aba2c73fe3',1,'thread.h']]],
+  ['spdk_5fposix_5ffile_5fload',['spdk_posix_file_load',['../file_8h.html#a9d88b741d9149009e0d437e1bfaa6cda',1,'file.h']]],
   ['spdk_5fprocess_5fis_5fprimary',['spdk_process_is_primary',['../env_8h.html#a798ae910c8563b33eea17af50cabb1ab',1,'env.h']]],
   ['spdk_5fput_5fio_5fchannel',['spdk_put_io_channel',['../thread_8h.html#a717571a5011db0cdd730498146f25f9a',1,'thread.h']]],
   ['spdk_5freactor_5fcontext_5fswitch_5fmonitor_5fenabled',['spdk_reactor_context_switch_monitor_enabled',['../event_8h.html#a008187a6eceaba982ca2c1d452061931',1,'event.h']]],

@@ -19,6 +19,7 @@ var files_dup =
     [ "env_dpdk.h", "env__dpdk_8h.html", "env__dpdk_8h" ],
     [ "event.h", "event_8h.html", "event_8h" ],
     [ "fd.h", "fd_8h.html", "fd_8h" ],
+    [ "file.h", "file_8h.html", "file_8h" ],
     [ "gpt_spec.h", "gpt__spec_8h.html", "gpt__spec_8h" ],
     [ "histogram_data.h", "histogram__data_8h.html", "histogram__data_8h" ],
     [ "io_channel.h", "io__channel_8h.html", null ],
