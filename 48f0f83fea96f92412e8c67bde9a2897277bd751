@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "b24346d1_3747593c",
+        "filename": "_includes/js/meetings.js",
+        "patchSetId": 2
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 1011222
+      },
+      "writtenOn": "2019-05-20T15:47:41Z",
+      "side": 1,
+      "message": "Let\u0027s change this to 3, 0 (instead of 3, 30).  This should have been changed previously when we moved the bug scrub to top of the hour. The regeneration code at the bottom would fix this but better to try to get it right here too.",
+      "revId": "48f0f83fea96f92412e8c67bde9a2897277bd751",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    }
+  ]
+}
