@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "9690ca6c_6792b5a3",
+        "filename": "cve_threat.md",
+        "patchSetId": 10
+      },
+      "lineNbr": 41,
+      "author": {
+        "id": 1011885
+      },
+      "writtenOn": "2019-05-20T03:03:46Z",
+      "side": 1,
+      "message": "sufaces-\u003esurfaces?",
+      "revId": "2bb092578c2141d9b262daaff00881615e18d96d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
