@@ -42,6 +42,30 @@
     },
     {
       "key": {
+        "uuid": "50abf7b5_155897cc",
+        "filename": "cve_threat.md",
+        "patchSetId": 11
+      },
+      "lineNbr": 29,
+      "author": {
+        "id": 1011289
+      },
+      "writtenOn": "2019-05-21T14:08:02Z",
+      "side": 1,
+      "message": "yes, that\u0027s what it means.",
+      "parentUuid": "0e81e725_dcd435a0",
+      "range": {
+        "startLine": 29,
+        "startChar": 33,
+        "endLine": 29,
+        "endChar": 37
+      },
+      "revId": "35ae8e1ecaf68b7e4c1605cf296c65b64254ed3a",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "b9dcea82_7f9aa822",
         "filename": "cve_threat.md",
         "patchSetId": 11
@@ -65,6 +89,30 @@
     },
     {
       "key": {
+        "uuid": "84dee79f_9a89181f",
+        "filename": "cve_threat.md",
+        "patchSetId": 11
+      },
+      "lineNbr": 30,
+      "author": {
+        "id": 1011289
+      },
+      "writtenOn": "2019-05-21T14:08:02Z",
+      "side": 1,
+      "message": "heh, yes, thanks",
+      "parentUuid": "b9dcea82_7f9aa822",
+      "range": {
+        "startLine": 30,
+        "startChar": 17,
+        "endLine": 30,
+        "endChar": 24
+      },
+      "revId": "35ae8e1ecaf68b7e4c1605cf296c65b64254ed3a",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "fff64118_6c7c2363",
         "filename": "cve_threat.md",
         "patchSetId": 11
@@ -76,6 +124,30 @@
       "writtenOn": "2019-05-20T20:27:21Z",
       "side": 1,
       "message": "maybe leader?",
+      "range": {
+        "startLine": 31,
+        "startChar": 44,
+        "endLine": 31,
+        "endChar": 48
+      },
+      "revId": "35ae8e1ecaf68b7e4c1605cf296c65b64254ed3a",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "c164b7de_d0542768",
+        "filename": "cve_threat.md",
+        "patchSetId": 11
+      },
+      "lineNbr": 31,
+      "author": {
+        "id": 1011289
+      },
+      "writtenOn": "2019-05-21T14:08:02Z",
+      "side": 1,
+      "message": "we use them the same way in the US but I\u0027ll change it to make it clearer",
+      "parentUuid": "fff64118_6c7c2363",
       "range": {
         "startLine": 31,
         "startChar": 44,
