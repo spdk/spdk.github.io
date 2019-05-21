@@ -1,0 +1,276 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "21437946_9ba05fbe",
+        "filename": "cve_threat.md",
+        "patchSetId": 12
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 1010531
+      },
+      "writtenOn": "2019-05-21T18:39:47Z",
+      "side": 1,
+      "message": "Maybe spell out what CVE stands for.",
+      "revId": "690528bc05d5fee9c02c9be82d1872c1bb74c5f9",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "df72f342_bc7c047d",
+        "filename": "cve_threat.md",
+        "patchSetId": 12
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 1010531
+      },
+      "writtenOn": "2019-05-21T18:39:47Z",
+      "side": 1,
+      "message": "make sure that security vulnerabilities are dealt with efficiently and with the least amount...",
+      "revId": "690528bc05d5fee9c02c9be82d1872c1bb74c5f9",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "1e6a59a9_1a5ade60",
+        "filename": "cve_threat.md",
+        "patchSetId": 12
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 1010531
+      },
+      "writtenOn": "2019-05-21T18:39:47Z",
+      "side": 1,
+      "message": "An SPDK CVE sub-team exists to handle this process. If you are interested..",
+      "revId": "690528bc05d5fee9c02c9be82d1872c1bb74c5f9",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "d7eda251_ff4d8169",
+        "filename": "cve_threat.md",
+        "patchSetId": 12
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 1010531
+      },
+      "writtenOn": "2019-05-21T18:39:47Z",
+      "side": 1,
+      "message": "Sub-team members\n\n(use sub-team throughout - not going to mark each one)",
+      "revId": "690528bc05d5fee9c02c9be82d1872c1bb74c5f9",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "e768ea41_0b16ee45",
+        "filename": "cve_threat.md",
+        "patchSetId": 12
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 1010531
+      },
+      "writtenOn": "2019-05-21T18:39:47Z",
+      "side": 1,
+      "message": "This first bullet point isn\u0027t about the process that the sub-team members are responsible for - it\u0027s about the role any community member must play.",
+      "revId": "690528bc05d5fee9c02c9be82d1872c1bb74c5f9",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "85e70542_256a31ae",
+        "filename": "cve_threat.md",
+        "patchSetId": 12
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 1010531
+      },
+      "writtenOn": "2019-05-21T18:39:47Z",
+      "side": 1,
+      "message": "2. Upon receiving a notification of a security vulnerability, the sub-team leader will call all available sub-team members together to discuss the potential issue.",
+      "revId": "690528bc05d5fee9c02c9be82d1872c1bb74c5f9",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "2e4a8645_fb5726d3",
+        "filename": "cve_threat.md",
+        "patchSetId": 12
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 1010531
+      },
+      "writtenOn": "2019-05-21T18:39:47Z",
+      "side": 1,
+      "message": "3. The sub-team will identify the resources required to investigate and determine the scope of the vulnerability, including a fix or work-around.",
+      "revId": "690528bc05d5fee9c02c9be82d1872c1bb74c5f9",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "930dffe1_da19d54f",
+        "filename": "cve_threat.md",
+        "patchSetId": 12
+      },
+      "lineNbr": 27,
+      "author": {
+        "id": 1010531
+      },
+      "writtenOn": "2019-05-21T18:39:47Z",
+      "side": 1,
+      "message": "itself. It",
+      "revId": "690528bc05d5fee9c02c9be82d1872c1bb74c5f9",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "4425975a_1e4f6cd6",
+        "filename": "cve_threat.md",
+        "patchSetId": 12
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 1010531
+      },
+      "writtenOn": "2019-05-21T18:39:47Z",
+      "side": 1,
+      "message": "What about long term stable releases?",
+      "revId": "690528bc05d5fee9c02c9be82d1872c1bb74c5f9",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "f022414b_8c8bc77d",
+        "filename": "cve_threat.md",
+        "patchSetId": 12
+      },
+      "lineNbr": 30,
+      "author": {
+        "id": 1010531
+      },
+      "writtenOn": "2019-05-21T18:39:47Z",
+      "side": 1,
+      "message": "You do this after the fix is done?",
+      "revId": "690528bc05d5fee9c02c9be82d1872c1bb74c5f9",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "1a09110d_0d8d0e18",
+        "filename": "cve_threat.md",
+        "patchSetId": 12
+      },
+      "lineNbr": 38,
+      "author": {
+        "id": 1010531
+      },
+      "writtenOn": "2019-05-21T18:39:47Z",
+      "side": 1,
+      "message": "What style is \"this style\"? Maybe this instead:\n\nThreat modeling is a common industry practice for identifying security vulnerabilities. SPDK will everage thread modeling in an effort to proactively identify vulnerabilities and address them.",
+      "revId": "690528bc05d5fee9c02c9be82d1872c1bb74c5f9",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "33e98470_fd2f8ce0",
+        "filename": "cve_threat.md",
+        "patchSetId": 12
+      },
+      "lineNbr": 40,
+      "author": {
+        "id": 1010531
+      },
+      "writtenOn": "2019-05-21T18:39:47Z",
+      "side": 1,
+      "message": "The basic idea ... going after them. -\u003e Threat modeling involves identifying the most common use cases, mapping out what components are involved, and identifying possible attack surfaces and attack motives.",
+      "revId": "690528bc05d5fee9c02c9be82d1872c1bb74c5f9",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "f2d0c60a_9bcfcfb6",
+        "filename": "cve_threat.md",
+        "patchSetId": 12
+      },
+      "lineNbr": 42,
+      "author": {
+        "id": 1010531
+      },
+      "writtenOn": "2019-05-21T18:39:47Z",
+      "side": 1,
+      "message": "If there is a lot of information available on thread modeling on the web, provide a link to at least one place. Alternatively, drop the sentence.",
+      "revId": "690528bc05d5fee9c02c9be82d1872c1bb74c5f9",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "2fe595ac_cd92eecc",
+        "filename": "cve_threat.md",
+        "patchSetId": 12
+      },
+      "lineNbr": 43,
+      "author": {
+        "id": 1010531
+      },
+      "writtenOn": "2019-05-21T18:39:47Z",
+      "side": 1,
+      "message": "What does \"style of the file\" mean? Is this what is illustrated in the following NVMe example? I\u0027m not sure this phrase is adding value to the description. Instead, maybe something like:\n\nSPDK will continue to expand its threat model documentation over time. Below is a preliminary threat model for the NVMe driver. This model can be used as an example for new use cases in the future, and everyone is encouraged to participate by contributing new threat model documents.",
+      "revId": "690528bc05d5fee9c02c9be82d1872c1bb74c5f9",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "f17a6a24_12575a16",
+        "filename": "cve_threat.md",
+        "patchSetId": 12
+      },
+      "lineNbr": 48,
+      "author": {
+        "id": 1010531
+      },
+      "writtenOn": "2019-05-21T18:39:47Z",
+      "side": 1,
+      "message": "\"fun interactive\" can be either \"fun, interactive\" or \"fun and interactive\"",
+      "revId": "690528bc05d5fee9c02c9be82d1872c1bb74c5f9",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "4ff3e9da_2e0847a2",
+        "filename": "cve_threat.md",
+        "patchSetId": 12
+      },
+      "lineNbr": 49,
+      "author": {
+        "id": 1010531
+      },
+      "writtenOn": "2019-05-21T18:39:47Z",
+      "side": 1,
+      "message": "stable -\u003e secure",
+      "revId": "690528bc05d5fee9c02c9be82d1872c1bb74c5f9",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    }
+  ]
+}
