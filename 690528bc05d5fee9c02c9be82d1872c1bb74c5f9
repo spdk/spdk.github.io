@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "2a5f6aa2_eb86b288",
+        "filename": "cve_threat.md",
+        "patchSetId": 12
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 1011289
+      },
+      "writtenOn": "2019-05-22T18:07:26Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "21437946_9ba05fbe",
+      "revId": "690528bc05d5fee9c02c9be82d1872c1bb74c5f9",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "df72f342_bc7c047d",
         "filename": "cve_threat.md",
         "patchSetId": 12
@@ -33,6 +51,24 @@
       "revId": "690528bc05d5fee9c02c9be82d1872c1bb74c5f9",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "b0aebd16_af80de96",
+        "filename": "cve_threat.md",
+        "patchSetId": 12
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 1011289
+      },
+      "writtenOn": "2019-05-22T18:07:26Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "df72f342_bc7c047d",
+      "revId": "690528bc05d5fee9c02c9be82d1872c1bb74c5f9",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
     },
     {
       "key": {
@@ -53,6 +89,24 @@
     },
     {
       "key": {
+        "uuid": "b2e5c812_3ad108d5",
+        "filename": "cve_threat.md",
+        "patchSetId": 12
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 1011289
+      },
+      "writtenOn": "2019-05-22T18:07:26Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "1e6a59a9_1a5ade60",
+      "revId": "690528bc05d5fee9c02c9be82d1872c1bb74c5f9",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "d7eda251_ff4d8169",
         "filename": "cve_threat.md",
         "patchSetId": 12
@@ -67,6 +121,24 @@
       "revId": "690528bc05d5fee9c02c9be82d1872c1bb74c5f9",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "e03b4d2e_93e73f80",
+        "filename": "cve_threat.md",
+        "patchSetId": 12
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 1011289
+      },
+      "writtenOn": "2019-05-22T18:07:26Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "d7eda251_ff4d8169",
+      "revId": "690528bc05d5fee9c02c9be82d1872c1bb74c5f9",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
     },
     {
       "key": {
@@ -87,6 +159,24 @@
     },
     {
       "key": {
+        "uuid": "a818ca18_3bd7bdc9",
+        "filename": "cve_threat.md",
+        "patchSetId": 12
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 1011289
+      },
+      "writtenOn": "2019-05-22T18:07:26Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "e768ea41_0b16ee45",
+      "revId": "690528bc05d5fee9c02c9be82d1872c1bb74c5f9",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "85e70542_256a31ae",
         "filename": "cve_threat.md",
         "patchSetId": 12
@@ -101,6 +191,24 @@
       "revId": "690528bc05d5fee9c02c9be82d1872c1bb74c5f9",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "d6e9fb1b_32af9ddd",
+        "filename": "cve_threat.md",
+        "patchSetId": 12
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 1011289
+      },
+      "writtenOn": "2019-05-22T18:07:26Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "85e70542_256a31ae",
+      "revId": "690528bc05d5fee9c02c9be82d1872c1bb74c5f9",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
     },
     {
       "key": {
@@ -121,6 +229,24 @@
     },
     {
       "key": {
+        "uuid": "925de07e_f49ff09e",
+        "filename": "cve_threat.md",
+        "patchSetId": 12
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 1011289
+      },
+      "writtenOn": "2019-05-22T18:07:26Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "2e4a8645_fb5726d3",
+      "revId": "690528bc05d5fee9c02c9be82d1872c1bb74c5f9",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "930dffe1_da19d54f",
         "filename": "cve_threat.md",
         "patchSetId": 12
@@ -138,6 +264,24 @@
     },
     {
       "key": {
+        "uuid": "c32b435a_92d94db7",
+        "filename": "cve_threat.md",
+        "patchSetId": 12
+      },
+      "lineNbr": 27,
+      "author": {
+        "id": 1011289
+      },
+      "writtenOn": "2019-05-22T18:07:26Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "930dffe1_da19d54f",
+      "revId": "690528bc05d5fee9c02c9be82d1872c1bb74c5f9",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "4425975a_1e4f6cd6",
         "filename": "cve_threat.md",
         "patchSetId": 12
@@ -149,6 +293,24 @@
       "writtenOn": "2019-05-21T18:39:47Z",
       "side": 1,
       "message": "What about long term stable releases?",
+      "revId": "690528bc05d5fee9c02c9be82d1872c1bb74c5f9",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "4f480717_d02c0341",
+        "filename": "cve_threat.md",
+        "patchSetId": 12
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 1011289
+      },
+      "writtenOn": "2019-05-22T18:07:26Z",
+      "side": 1,
+      "message": "As we don\u0027t have a policy on that yet I think it\u0027d be better not to mention it until we do.",
+      "parentUuid": "4425975a_1e4f6cd6",
       "revId": "690528bc05d5fee9c02c9be82d1872c1bb74c5f9",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": true
@@ -172,6 +334,24 @@
     },
     {
       "key": {
+        "uuid": "ef14ab8b_6c30c866",
+        "filename": "cve_threat.md",
+        "patchSetId": 12
+      },
+      "lineNbr": 30,
+      "author": {
+        "id": 1011289
+      },
+      "writtenOn": "2019-05-22T18:07:26Z",
+      "side": 1,
+      "message": "yes, you don\u0027t file a CVE until there is a publicly leased fix",
+      "parentUuid": "f022414b_8c8bc77d",
+      "revId": "690528bc05d5fee9c02c9be82d1872c1bb74c5f9",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "1a09110d_0d8d0e18",
         "filename": "cve_threat.md",
         "patchSetId": 12
@@ -183,6 +363,24 @@
       "writtenOn": "2019-05-21T18:39:47Z",
       "side": 1,
       "message": "What style is \"this style\"? Maybe this instead:\n\nThreat modeling is a common industry practice for identifying security vulnerabilities. SPDK will everage thread modeling in an effort to proactively identify vulnerabilities and address them.",
+      "revId": "690528bc05d5fee9c02c9be82d1872c1bb74c5f9",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "b6ecc3ff_d25c90d6",
+        "filename": "cve_threat.md",
+        "patchSetId": 12
+      },
+      "lineNbr": 38,
+      "author": {
+        "id": 1011289
+      },
+      "writtenOn": "2019-05-22T18:07:26Z",
+      "side": 1,
+      "message": "I like it and hey check this out - you have \"thread\" modeling in your suggestion :) I\u0027ve only done that ten times",
+      "parentUuid": "1a09110d_0d8d0e18",
       "revId": "690528bc05d5fee9c02c9be82d1872c1bb74c5f9",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": true
@@ -223,6 +421,24 @@
     },
     {
       "key": {
+        "uuid": "a839dd4c_351685bf",
+        "filename": "cve_threat.md",
+        "patchSetId": 12
+      },
+      "lineNbr": 42,
+      "author": {
+        "id": 1011289
+      },
+      "writtenOn": "2019-05-22T18:07:26Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "f2d0c60a_9bcfcfb6",
+      "revId": "690528bc05d5fee9c02c9be82d1872c1bb74c5f9",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "2fe595ac_cd92eecc",
         "filename": "cve_threat.md",
         "patchSetId": 12
@@ -234,6 +450,24 @@
       "writtenOn": "2019-05-21T18:39:47Z",
       "side": 1,
       "message": "What does \"style of the file\" mean? Is this what is illustrated in the following NVMe example? I\u0027m not sure this phrase is adding value to the description. Instead, maybe something like:\n\nSPDK will continue to expand its threat model documentation over time. Below is a preliminary threat model for the NVMe driver. This model can be used as an example for new use cases in the future, and everyone is encouraged to participate by contributing new threat model documents.",
+      "revId": "690528bc05d5fee9c02c9be82d1872c1bb74c5f9",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "245fe249_80abcef2",
+        "filename": "cve_threat.md",
+        "patchSetId": 12
+      },
+      "lineNbr": 43,
+      "author": {
+        "id": 1011289
+      },
+      "writtenOn": "2019-05-22T18:07:26Z",
+      "side": 1,
+      "message": "I reworded before I read your comment.  The included use case is not preliminary though.  Feel free to comment on the new wording, thanks",
+      "parentUuid": "2fe595ac_cd92eecc",
       "revId": "690528bc05d5fee9c02c9be82d1872c1bb74c5f9",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": true
@@ -257,6 +491,24 @@
     },
     {
       "key": {
+        "uuid": "76c93056_e5999d4a",
+        "filename": "cve_threat.md",
+        "patchSetId": 12
+      },
+      "lineNbr": 48,
+      "author": {
+        "id": 1011289
+      },
+      "writtenOn": "2019-05-22T18:07:26Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "f17a6a24_12575a16",
+      "revId": "690528bc05d5fee9c02c9be82d1872c1bb74c5f9",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "4ff3e9da_2e0847a2",
         "filename": "cve_threat.md",
         "patchSetId": 12
@@ -268,6 +520,24 @@
       "writtenOn": "2019-05-21T18:39:47Z",
       "side": 1,
       "message": "stable -\u003e secure",
+      "revId": "690528bc05d5fee9c02c9be82d1872c1bb74c5f9",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "e473b6e3_692f873a",
+        "filename": "cve_threat.md",
+        "patchSetId": 12
+      },
+      "lineNbr": 49,
+      "author": {
+        "id": 1011289
+      },
+      "writtenOn": "2019-05-22T18:07:26Z",
+      "side": 1,
+      "message": "good call",
+      "parentUuid": "4ff3e9da_2e0847a2",
       "revId": "690528bc05d5fee9c02c9be82d1872c1bb74c5f9",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": true

@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "1fc8c4bc_61cafc33",
+        "filename": "cve_threat.md",
+        "patchSetId": 11
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 1011289
+      },
+      "writtenOn": "2019-05-22T18:07:26Z",
+      "side": 1,
+      "message": "\"call available sub team members together to discuss\" was meant to mean \"call a meeting\"",
+      "parentUuid": "71d88d52_c31ecdaa",
+      "revId": "35ae8e1ecaf68b7e4c1605cf296c65b64254ed3a",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "0e81e725_dcd435a0",
         "filename": "cve_threat.md",
         "patchSetId": 11
@@ -171,6 +189,24 @@
       "writtenOn": "2019-05-20T16:36:27Z",
       "side": 1,
       "message": "Everything in this list (lines 8-22) is actually in this development.md page (i.e. \"In this document\" on line 6).  But the CVE process stuff is in a different doc.  I think putting a link in this doc is the right thing to do rather than putting it in index.md, but I\u0027d suggest something more like:\n\n* [Core Maintainers](#core)\n\n# Additional documents:\n\n* [CVE Process and Thread Modeling](../cve_threat/)\n\n\u003ca id\u003d\"license\"\u003e\u003c/a\u003e",
+      "revId": "35ae8e1ecaf68b7e4c1605cf296c65b64254ed3a",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "335c4a9f_6b55101a",
+        "filename": "development.md",
+        "patchSetId": 11
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 1011289
+      },
+      "writtenOn": "2019-05-22T18:07:26Z",
+      "side": 1,
+      "message": "cool",
+      "parentUuid": "c62cd6aa_c732bddb",
       "revId": "35ae8e1ecaf68b7e4c1605cf296c65b64254ed3a",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": true
