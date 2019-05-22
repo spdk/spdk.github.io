@@ -709,6 +709,7 @@ var searchData=
   ['spdk_5fstrtol',['spdk_strtol',['../string_8h.html#ae12420e9e2ab3af9d14e518245691c15',1,'string.h']]],
   ['spdk_5fstrtoll',['spdk_strtoll',['../string_8h.html#a317132c2abb23a53dc3d53846689e2b6',1,'string.h']]],
   ['spdk_5fthread_5fcreate',['spdk_thread_create',['../thread_8h.html#a4eada7bac2a5c7ceaea891d57f8d3e21',1,'thread.h']]],
+  ['spdk_5fthread_5fdestroy',['spdk_thread_destroy',['../thread_8h.html#a10aa5a8ec5228fa87db97f7655f8c0d6',1,'thread.h']]],
   ['spdk_5fthread_5fexit',['spdk_thread_exit',['../thread_8h.html#ac42fa5ed7447767885f700875b28a84b',1,'thread.h']]],
   ['spdk_5fthread_5fget_5fcount',['spdk_thread_get_count',['../thread_8h.html#a1d77f05c2461acb75f333e67e6aeb1ed',1,'thread.h']]],
   ['spdk_5fthread_5fget_5fcpumask',['spdk_thread_get_cpumask',['../thread_8h.html#a9f06d559046d570e025d6b67c7e8d507',1,'thread.h']]],

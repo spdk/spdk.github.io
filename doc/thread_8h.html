@@ -209,8 +209,11 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="thre
 <tr class="memdesc:a4eada7bac2a5c7ceaea891d57f8d3e21"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new SPDK thread object.  <a href="#a4eada7bac2a5c7ceaea891d57f8d3e21">More...</a><br /></td></tr>
 <tr class="separator:a4eada7bac2a5c7ceaea891d57f8d3e21"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac42fa5ed7447767885f700875b28a84b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="thread_8h.html#ac42fa5ed7447767885f700875b28a84b">spdk_thread_exit</a> (struct spdk_thread *thread)</td></tr>
-<tr class="memdesc:ac42fa5ed7447767885f700875b28a84b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Release any resources related to the given thread and destroy it.  <a href="#ac42fa5ed7447767885f700875b28a84b">More...</a><br /></td></tr>
+<tr class="memdesc:ac42fa5ed7447767885f700875b28a84b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mark the thread as exited, failing all future <a class="el" href="thread_8h.html#ad9e3693e8e9e6c9063ea36414294ae91" title="Perform one iteration worth of processing on the thread. ">spdk_thread_poll()</a> calls.  <a href="#ac42fa5ed7447767885f700875b28a84b">More...</a><br /></td></tr>
 <tr class="separator:ac42fa5ed7447767885f700875b28a84b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10aa5a8ec5228fa87db97f7655f8c0d6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="thread_8h.html#a10aa5a8ec5228fa87db97f7655f8c0d6">spdk_thread_destroy</a> (struct spdk_thread *thread)</td></tr>
+<tr class="memdesc:a10aa5a8ec5228fa87db97f7655f8c0d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy a thread, releasing all of its resources.  <a href="#a10aa5a8ec5228fa87db97f7655f8c0d6">More...</a><br /></td></tr>
+<tr class="separator:a10aa5a8ec5228fa87db97f7655f8c0d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1deb97a85a8240119cf46fa8a0b71388"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="thread_8h.html#a1deb97a85a8240119cf46fa8a0b71388">spdk_thread_get_ctx</a> (struct spdk_thread *thread)</td></tr>
 <tr class="memdesc:a1deb97a85a8240119cf46fa8a0b71388"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a pointer to this thread's context.  <a href="#a1deb97a85a8240119cf46fa8a0b71388">More...</a><br /></td></tr>
 <tr class="separator:a1deb97a85a8240119cf46fa8a0b71388"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1146,6 +1149,33 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 
 </div>
 </div>
+<a id="a10aa5a8ec5228fa87db97f7655f8c0d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a10aa5a8ec5228fa87db97f7655f8c0d6">&#9670;&nbsp;</a></span>spdk_thread_destroy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_thread_destroy </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_thread *&#160;</td>
+          <td class="paramname"><em>thread</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Destroy a thread, releasing all of its resources. </p>
+<p>May only be called on a thread previously marked as exited.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">thread</td><td>The thread to destroy. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="ac42fa5ed7447767885f700875b28a84b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac42fa5ed7447767885f700875b28a84b">&#9670;&nbsp;</a></span>spdk_thread_exit()</h2>
 
@@ -1162,8 +1192,8 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
       </table>
 </div><div class="memdoc">
 
-<p>Release any resources related to the given thread and destroy it. </p>
-<p>Execution continues on the current system thread after returning.</p>
+<p>Mark the thread as exited, failing all future <a class="el" href="thread_8h.html#ad9e3693e8e9e6c9063ea36414294ae91" title="Perform one iteration worth of processing on the thread. ">spdk_thread_poll()</a> calls. </p>
+<p>May only be called within an spdk poller or message.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">thread</td><td>The thread to destroy.</td></tr>
@@ -1499,7 +1529,7 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>1 if work was done. 0 if no work was done. -1 if unknown. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>1 if work was done. 0 if no work was done. -1 if thread has exited. </dd></dl>
 
 </div>
 </div>
