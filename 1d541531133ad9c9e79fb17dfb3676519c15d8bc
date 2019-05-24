@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "317f4eda_87d7c950",
+        "filename": "news.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 1011712
+      },
+      "writtenOn": "2019-05-24T07:55:18Z",
+      "side": 1,
+      "message": "remove this extra \"the\" before SPDK?",
+      "range": {
+        "startLine": 11,
+        "startChar": 172,
+        "endLine": 11,
+        "endChar": 176
+      },
+      "revId": "1d541531133ad9c9e79fb17dfb3676519c15d8bc",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    }
+  ]
+}
