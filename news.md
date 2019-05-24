@@ -5,6 +5,11 @@ title:  "SPDK In The News"
 
 # News items
 
+## UCloud - End to End IO Path Optimization with SPDK
+
+### [Practice sharing of SPDK integration to achieve 1.2M IOPS from cloud disk](https://mp.weixin.qq.com/s?__biz=MzUwOTA1NDg4NQ==&mid=2247485707&idx=1&sn=c6f8e7ebe48a13e7783abc187c588002&chksm=f91953c1ce6edad7c61b267acb0abc1292486ae70cf4883e9f811320f08a596874e12e0f7d72&mpshare=1&scene=1&srcid=0523NZ3tMRR6jvAOYngdBkXB&pass_ticket=wtEIGZYEis9CDCq2bHqr9cZpaldcKOrajkGA0dojARAuGlY%2FloOQcZQ%2FsK0w0KRa#rd)
+> Cloud service provider UCloud described the good practice of integrating SPDK vhost and other modules in their end to end solution from VM to the cloud disk. UCloud used the SPDK to optimize the virtualized IO path, proposed the features like hot upgrade and online migration solution based on SPDK vhost, and successfully coupled with the high-performance cloud disk (UCloud RSSD) to achieve good results which reach up to 1.2 million IOPS. UCloud also demonstrates to join the SPDK community where each version of SPDK brings many interesting features and they would like to explore and further apply to the performance improvement of cloud disk and other products.
+
 ## May 6 2019 Intel® Chip Chat Episode 654
 
 ### [Redesigning Storage in the Data Center with SPDK](https://soundcloud.com/intelchipchat/redesigning-storage-in-the-data-center-spdk)
