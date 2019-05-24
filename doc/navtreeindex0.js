@@ -49,11 +49,11 @@ var NAVTREEINDEX0 =
 "bdev.html#bdev_config_malloc":[3,5,9],
 "bdev.html#bdev_config_null":[3,5,10],
 "bdev.html#bdev_config_nvme":[3,5,11],
-"bdev.html#bdev_config_passthru":[3,5,13],
-"bdev.html#bdev_config_pmem":[3,5,14],
+"bdev.html#bdev_config_passthru":[3,5,14],
+"bdev.html#bdev_config_pmem":[3,5,15],
 "bdev.html#bdev_config_rbd":[3,5,3],
-"bdev.html#bdev_config_virtio_blk":[3,5,15],
-"bdev.html#bdev_config_virtio_scsi":[3,5,16],
+"bdev.html#bdev_config_virtio_blk":[3,5,16],
+"bdev.html#bdev_config_virtio_scsi":[3,5,17],
 "bdev.html#bdev_ug_general_rpcs":[3,5,2],
 "bdev.html#bdev_ug_get_bdevs":[3,5,2,0],
 "bdev.html#bdev_ug_gpt":[3,5,5,0],
@@ -63,6 +63,7 @@ var NAVTREEINDEX0 =
 "bdev.html#bdev_ug_lvol_store":[3,5,12,0],
 "bdev.html#bdev_ug_lvols":[3,5,12,1],
 "bdev.html#bdev_ug_prerequisites":[3,5,1],
+"bdev.html#bdev_ug_raid":[3,5,13],
 "bdev.html#rpc_bdev_histogram":[3,5,2,2],
 "bdev.html#set_bdev_qos_limit":[3,5,2,1],
 "bdev_8h.html":[14,0,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX0 =
 "blob_8h.html#a2484b76dc748921d2596a4e207b6a5a2":[14,0,6,22],
 "blob_8h.html#a24d2b11e6038ad7367c796c6917d44b8":[14,0,6,45],
 "blob_8h.html#a25618c94412200a1a6ef635d13f3b93b":[14,0,6,9],
-"blob_8h.html#a2835355d4266676fa6db5c987c506a77":[14,0,6,31],
-"blob_8h.html#a2c60e6bc3ccd26228dec2c0f3ecfe618":[14,0,6,66]
+"blob_8h.html#a2835355d4266676fa6db5c987c506a77":[14,0,6,31]
 };

@@ -1,5 +1,6 @@
 var NAVTREEINDEX4 =
 {
+"json_8h.html#ab93e46b460a6a5f2f9ee3fa54edcc8de":[14,0,26,66],
 "json_8h.html#abd03643e1ee9b7de1e784523196ef471":[14,0,26,31],
 "json_8h.html#ac31a213b3ccc7808796806ab25cfbe81":[14,0,26,15],
 "json_8h.html#ac97abb245698783d90430b17a379abac":[14,0,26,34],
@@ -15,7 +16,7 @@ var NAVTREEINDEX4 =
 "json_8h.html#af58205394bbbfb6d05219e1c8b88023d":[14,0,26,53],
 "json_8h.html#afb39ef20750d537d2ceb7deb88a2d860":[14,0,26,54],
 "jsonrpc.html":[3,7],
-"jsonrpc.html#get_notifications":[3,7,6,14],
+"jsonrpc.html#get_notifications":[3,7,6,17],
 "jsonrpc.html#jsonrpc_components_app":[3,7,1],
 "jsonrpc.html#jsonrpc_components_bdev":[3,7,2],
 "jsonrpc.html#jsonrpc_components_iscsi_tgt":[3,7,3],
@@ -49,6 +50,7 @@ var NAVTREEINDEX4 =
 "jsonrpc.html#rpc_construct_ocf_bdev":[3,7,2,6],
 "jsonrpc.html#rpc_construct_passthru_bdev":[3,7,2,34],
 "jsonrpc.html#rpc_construct_pmem_bdev":[3,7,2,32],
+"jsonrpc.html#rpc_construct_raid_bdev":[3,7,6,14],
 "jsonrpc.html#rpc_construct_rbd_bdev":[3,7,2,21],
 "jsonrpc.html#rpc_construct_target_node":[3,7,3,13],
 "jsonrpc.html#rpc_construct_vhost_blk_controller":[3,7,5,6],
@@ -79,6 +81,7 @@ var NAVTREEINDEX4 =
 "jsonrpc.html#rpc_delete_target_node":[3,7,3,17],
 "jsonrpc.html#rpc_destroy_lvol_bdev":[3,7,6,10],
 "jsonrpc.html#rpc_destroy_lvol_store":[3,7,6,1],
+"jsonrpc.html#rpc_destroy_raid_bdev":[3,7,6,15],
 "jsonrpc.html#rpc_enable_bdev_histogram":[3,7,2,3],
 "jsonrpc.html#rpc_get_bdev_histogram":[3,7,2,4],
 "jsonrpc.html#rpc_get_bdevs":[3,7,2,1],
@@ -89,13 +92,14 @@ var NAVTREEINDEX4 =
 "jsonrpc.html#rpc_get_iscsi_global_params":[3,7,3,1],
 "jsonrpc.html#rpc_get_lvol_stores":[3,7,6,2],
 "jsonrpc.html#rpc_get_nbd_disks":[3,7,7,2],
-"jsonrpc.html#rpc_get_notification_types":[3,7,6,13],
+"jsonrpc.html#rpc_get_notification_types":[3,7,6,16],
 "jsonrpc.html#rpc_get_nvme_controllers":[3,7,2,19],
 "jsonrpc.html#rpc_get_nvmf_subsystems":[3,7,4,1],
 "jsonrpc.html#rpc_get_nvmf_transports":[3,7,4,12],
 "jsonrpc.html#rpc_get_ocf_bdevs":[3,7,2,9],
 "jsonrpc.html#rpc_get_ocf_stats":[3,7,2,8],
 "jsonrpc.html#rpc_get_portal_groups":[3,7,3,18],
+"jsonrpc.html#rpc_get_raid_bdevs":[3,7,6,13],
 "jsonrpc.html#rpc_get_rpc_methods":[3,7,1,4],
 "jsonrpc.html#rpc_get_spdk_version":[3,7,7,4],
 "jsonrpc.html#rpc_get_subsystem_config":[3,7,1,6],
@@ -245,9 +249,5 @@ var NAVTREEINDEX4 =
 "lvol_8h.html#ab3586b04e9b91ac588f3f1ff2603876c":[14,0,30,10],
 "lvol_8h.html#ab7a0818546003c24d2236c1f201fdf28":[14,0,30,12],
 "lvol_8h.html#ac2c5d67c2711ee149784f5e5e5be0b7a":[14,0,30,20],
-"lvol_8h.html#ae12b16b8565ab63a3c9b919ab9664c0f":[14,0,30,21],
-"lvol_8h.html#af406c5e7b0e7826b270c802b1431b76f":[14,0,30,24],
-"memory.html":[2,1],
-"misc.html":[6],
-"mmio_8h.html":[14,0,31]
+"lvol_8h.html#ae12b16b8565ab63a3c9b919ab9664c0f":[14,0,30,21]
 };

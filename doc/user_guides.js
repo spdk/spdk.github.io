@@ -95,6 +95,7 @@ var user_guides =
         [ "Logical volume store", "bdev.html#bdev_ug_lvol_store", null ],
         [ "Lvols", "bdev.html#bdev_ug_lvols", null ]
       ] ],
+      [ "RAID", "bdev.html#bdev_ug_raid", null ],
       [ "Passthru", "bdev.html#bdev_config_passthru", null ],
       [ "Pmem", "bdev.html#bdev_config_pmem", null ],
       [ "Virtio Block", "bdev.html#bdev_config_virtio_blk", null ],
@@ -238,6 +239,9 @@ var user_guides =
         [ "destroy_lvol_bdev", "jsonrpc.html#rpc_destroy_lvol_bdev", null ],
         [ "inflate_lvol_bdev", "jsonrpc.html#rpc_inflate_lvol_bdev", null ],
         [ "decouple_parent_lvol_bdev", "jsonrpc.html#rpc_decouple_parent_lvol_bdev", null ],
+        [ "get_raid_bdevs", "jsonrpc.html#rpc_get_raid_bdevs", null ],
+        [ "construct_raid_bdev", "jsonrpc.html#rpc_construct_raid_bdev", null ],
+        [ "destroy_raid_bdev", "jsonrpc.html#rpc_destroy_raid_bdev", null ],
         [ "get_notification_types", "jsonrpc.html#rpc_get_notification_types", null ],
         [ "get_notifications", "jsonrpc.html#get_notifications", null ]
       ] ],
