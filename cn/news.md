@@ -20,6 +20,8 @@ lang: cn
 ### [13倍性能，3倍稳定性提升！UCloud云硬盘做了这些事](https://mp.weixin.qq.com/s?__biz=MzUwOTA1NDg4NQ==&mid=2247485279&idx=1&sn=22d544ff61f95bee5d7c31741fa109fe&chksm=f9195d95ce6ed483b630aa82868ec3c673578c916c701f040465d6ad0eb71d56ac527ba5bb4a&mpshare=1&scene=1&srcid=1109eUsfiFQsJuWdHaci4KWL&pass_ticket=M8iA8MZjqSvTO58%2BTEC99yB4Qp%2BWMsiSeWnXZdkmA8%2B93TtihBKMThXsAhUs3e1U#rd)
 > “超高性能存储-RDMA+SPDK：SPDK可以在用户态高并发零拷贝地以用户态驱动直接访问NVME 固态硬盘。并利用轮询模式避免了内核上下文切换和中断处理带来的开销。”
 
+### [可实现RSSD云硬盘120万IOPS的SPDK IO路径优化实践](https://mp.weixin.qq.com/s?__biz=MzUwOTA1NDg4NQ==&mid=2247485707&idx=1&sn=c6f8e7ebe48a13e7783abc187c588002&chksm=f91953c1ce6edad7c61b267acb0abc1292486ae70cf4883e9f811320f08a596874e12e0f7d72&mpshare=1&scene=1&srcid=0523NZ3tMRR6jvAOYngdBkXB&pass_ticket=wtEIGZYEis9CDCq2bHqr9cZpaldcKOrajkGA0dojARAuGlY%2FloOQcZQ%2FsK0w0KRa#rd)
+> “SPDK作为一个快速发展迭代的项目，每个版本都会给我们带来惊喜，里面也有很多有意思的功能等待我们发掘并进一步运用到云盘及其它产品性能的提升上。”
 
 ## 腾讯数据库
 ### [可怕！数据库竟然打破安迪-比尔定律](https://www.cnblogs.com/qcloud1001/p/9087911.html)
