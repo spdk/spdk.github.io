@@ -1,5 +1,6 @@
 var NAVTREEINDEX19 =
 {
+"structspdk__opal__info.html#a159c901f993ae99321d2ae35ce0d2ce6":[13,0,220,9],
 "structspdk__opal__info.html#a1beeb6081fc4d69a5ba14830d2ef0335":[13,0,220,23],
 "structspdk__opal__info.html#a2201d6a682c75a04fae3b99fba9928d7":[13,0,220,35],
 "structspdk__opal__info.html#a2601f2395997545d1c884e7de409bf7d":[13,0,220,39],
@@ -248,6 +249,5 @@ var NAVTREEINDEX19 =
 "structspdk__scsi__tgt__port__desc.html#a90730b0714e0295fcc363599229c509a":[13,0,243,0],
 "structspdk__scsi__tgt__port__desc.html#ac3080c209c823539b031d014bb82cd43":[13,0,243,1],
 "structspdk__scsi__unmap__bdesc.html":[13,0,244],
-"structspdk__scsi__unmap__bdesc.html#a514ee830753d52e54adf3f4e88714541":[13,0,244,1],
-"structspdk__scsi__unmap__bdesc.html#ae954762409a7249e0c36ae159dc6b9a5":[13,0,244,2]
+"structspdk__scsi__unmap__bdesc.html#a514ee830753d52e54adf3f4e88714541":[13,0,244,1]
 };
