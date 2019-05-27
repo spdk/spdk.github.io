@@ -16,6 +16,24 @@
       "revId": "b24c0aa6134f8c3b9000774cfb8ddbe6aae4492f",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "8e6a60f2_899d09a6",
+        "filename": "cn/news.md",
+        "patchSetId": 4
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 1011207
+      },
+      "writtenOn": "2019-05-27T04:26:54Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "449b9736_876001e8",
+      "revId": "b24c0aa6134f8c3b9000774cfb8ddbe6aae4492f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
     }
   ]
 }
