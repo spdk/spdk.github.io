@@ -117,7 +117,7 @@ var user_guides =
         [ "context_switch_monitor", "jsonrpc.html#rpc_context_switch_monitor", null ],
         [ "start_subsystem_init", "jsonrpc.html#rpc_start_subsystem_init", null ],
         [ "wait_subsystem_init", "jsonrpc.html#rpc_wait_subsystem_init", null ],
-        [ "get_rpc_methods", "jsonrpc.html#rpc_get_rpc_methods", null ],
+        [ "rpc_get_methods", "jsonrpc.html#rpc_rpc_get_methods", null ],
         [ "get_subsystems", "jsonrpc.html#rpc_get_subsystems", null ],
         [ "get_subsystem_config", "jsonrpc.html#rpc_get_subsystem_config", null ]
       ] ],
