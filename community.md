@@ -4,9 +4,9 @@ title:  "SPDK Community"
 jsfiles: js/meetings.js
 ---
 
-# IRC
+# Slack
 
-Join us on the [freenode](https://freenode.net/) IRC network in the [#spdk](irc://irc.freenode.net/%23spdk) ([Archive](https://dqtibwqq6s6ux.cloudfront.net/irclog/index.html)) channel.
+For real-time discussions, join us on [Slack](https://join.slack.com/t/spdk-team/shared_invite/enQtNjM0NDcxNzQyNzM3LWQ3M2FjZDgzMmU5MjkyZWU5MDRhMGZkNGY3ZjM1YjhhODkyZmRkYWNjODk1YTdiZDMxNzJjNzc0NTEyMTVhYTM).
 
 # Trello Board
 
