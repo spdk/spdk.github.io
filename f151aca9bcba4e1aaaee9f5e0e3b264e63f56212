@@ -170,6 +170,41 @@
       "revId": "f151aca9bcba4e1aaaee9f5e0e3b264e63f56212",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "100a9b53_c2008fe4",
+        "filename": "_posts/2019-05-06-nvme.md",
+        "patchSetId": 8
+      },
+      "lineNbr": 184,
+      "author": {
+        "id": 1011222
+      },
+      "writtenOn": "2019-05-30T22:58:08Z",
+      "side": 1,
+      "message": "I think we can definitely remove this part.  Now that we know we\u0027re getting 30-50 completions at a time, it means we aren\u0027t doing that many CQ doorbell rings.",
+      "parentUuid": "a413838c_a618bc73",
+      "revId": "f151aca9bcba4e1aaaee9f5e0e3b264e63f56212",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "0bbf835f_839cfacc",
+        "filename": "_posts/2019-05-06-nvme.md",
+        "patchSetId": 8
+      },
+      "lineNbr": 352,
+      "author": {
+        "id": 1011222
+      },
+      "writtenOn": "2019-05-30T22:58:08Z",
+      "side": 1,
+      "message": "update this section to remove the AVX stuff",
+      "revId": "f151aca9bcba4e1aaaee9f5e0e3b264e63f56212",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
     }
   ]
 }
