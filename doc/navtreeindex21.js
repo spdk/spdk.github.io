@@ -1,5 +1,8 @@
 var NAVTREEINDEX21 =
 {
+"unionspdk__nvme__critical__warning__state.html#a7c86c972fef3bacac5025d2328c6fd07":[13,0,97,6],
+"unionspdk__nvme__critical__warning__state.html#ace02003011ccb4b2bd118d5f9adc6239":[13,0,97,1],
+"unionspdk__nvme__critical__warning__state.html#ae11d71217981c768d4d9370ad24283cd":[13,0,97,7],
 "unionspdk__nvme__csts__register.html":[13,0,98],
 "unionspdk__nvme__csts__register.html#a108da1f8dae4b3f80d08c88994aabc44":[13,0,98,0],
 "unionspdk__nvme__csts__register.html#a36a07e6c600537241f579d52604b1de8":[13,0,98,3],
@@ -246,7 +249,5 @@ var NAVTREEINDEX21 =
 "vpp_integration.html":[5,2],
 "vpp_integration.html#vpp_build":[5,2,0],
 "vpp_integration.html#vpp_built_into_spdk":[5,2,3],
-"vpp_integration.html#vpp_install":[5,2,1],
-"vpp_integration.html#vpp_run":[5,2,2],
-"vpp_integration.html#vpp_running_with_spdk":[5,2,4]
+"vpp_integration.html#vpp_install":[5,2,1]
 };

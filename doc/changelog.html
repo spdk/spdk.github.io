@@ -155,6 +155,8 @@ v19.07: (Upcoming Release)</h1>
 <p>The function <code>spdk_notify_get_types()</code> and <code>spdk_notify_get_events()</code> were renamed to <code>spdk_notify_foreach_type()</code> and <code>spdk_notify_foreach_event()</code>, respectively. And update type name of callback accordingly.</p>
 <h2>bdev</h2>
 <p>The format of the data returned by the get_bdevs_iostat RPC has changed to make it easier to parse. It now returns an object with a "ticks" object and "bdevs" array with the per-bdev statistics.</p>
+<h2>nvme</h2>
+<p>Added <a class="el" href="nvme_8h.html#abb7ae9abf97b7c6b57777d06eaa1258a" title="Get the transport ID for a given NVMe controller. ">spdk_nvme_ctrlr_get_transport_id()</a> to get the transport ID from a previously attached controller.</p>
 <h1><a class="anchor" id="changelog-v19-04"></a>
 v19.04:</h1>
 <h2>nvme</h2>

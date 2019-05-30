@@ -421,6 +421,9 @@ Functions</h2></td></tr>
 <tr class="memitem:abb11b2a40d2cd45072f83624956b8b01"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#abb11b2a40d2cd45072f83624956b8b01">spdk_nvme_ctrlr_free_cmb_io_buffer</a> (struct spdk_nvme_ctrlr *ctrlr, void *buf, size_t size)</td></tr>
 <tr class="memdesc:abb11b2a40d2cd45072f83624956b8b01"><td class="mdescLeft">&#160;</td><td class="mdescRight">Free a controller memory I/O buffer (Experimental).  <a href="#abb11b2a40d2cd45072f83624956b8b01">More...</a><br /></td></tr>
 <tr class="separator:abb11b2a40d2cd45072f83624956b8b01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb7ae9abf97b7c6b57777d06eaa1258a"><td class="memItemLeft" align="right" valign="top">const struct <a class="el" href="structspdk__nvme__transport__id.html">spdk_nvme_transport_id</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#abb7ae9abf97b7c6b57777d06eaa1258a">spdk_nvme_ctrlr_get_transport_id</a> (struct spdk_nvme_ctrlr *ctrlr)</td></tr>
+<tr class="memdesc:abb7ae9abf97b7c6b57777d06eaa1258a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the transport ID for a given NVMe controller.  <a href="#abb7ae9abf97b7c6b57777d06eaa1258a">More...</a><br /></td></tr>
+<tr class="separator:abb7ae9abf97b7c6b57777d06eaa1258a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab1863b5dccf2bcc49fe92275bc1e5a2a"><td class="memItemLeft" align="right" valign="top">const struct <a class="el" href="structspdk__nvme__ns__data.html">spdk_nvme_ns_data</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#ab1863b5dccf2bcc49fe92275bc1e5a2a">spdk_nvme_ns_get_data</a> (struct spdk_nvme_ns *ns)</td></tr>
 <tr class="memdesc:ab1863b5dccf2bcc49fe92275bc1e5a2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the identify namespace data as defined by the NVMe specification.  <a href="#ab1863b5dccf2bcc49fe92275bc1e5a2a">More...</a><br /></td></tr>
 <tr class="separator:ab1863b5dccf2bcc49fe92275bc1e5a2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -2445,6 +2448,33 @@ int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_retry_co
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the NVMe controller VS (Version) register. </dd></dl>
+
+</div>
+</div>
+<a id="abb7ae9abf97b7c6b57777d06eaa1258a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abb7ae9abf97b7c6b57777d06eaa1258a">&#9670;&nbsp;</a></span>spdk_nvme_ctrlr_get_transport_id()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const struct <a class="el" href="structspdk__nvme__transport__id.html">spdk_nvme_transport_id</a>* spdk_nvme_ctrlr_get_transport_id </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_nvme_ctrlr *&#160;</td>
+          <td class="paramname"><em>ctrlr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the transport ID for a given NVMe controller. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ctrlr</td><td>Controller to get the transport ID. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Pointer to the controller's transport ID. </dd></dl>
 
 </div>
 </div>
