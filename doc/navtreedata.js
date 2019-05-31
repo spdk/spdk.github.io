@@ -90,7 +90,7 @@ var NAVTREEINDEX =
 "structspdk__opal__info.html#a0ed860ff193286d7e74e4525c314dcd7",
 "structspdk__scsi__tgt__port__desc.html#ac3080c209c823539b031d014bb82cd43",
 "unionspdk__nvme__critical__warning__state.html#a7c86c972fef3bacac5025d2328c6fd07",
-"vpp_integration.html#vpp_run"
+"vpp_integration.html#vpp_build"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
