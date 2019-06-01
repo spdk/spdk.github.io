@@ -704,6 +704,44 @@ delete_rbd_bdev</h2>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div><div class="line">  &quot;params&quot;: {</div><div class="line">    &quot;name&quot;: &quot;Rbd0&quot;</div><div class="line">  },</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;method&quot;: &quot;delete_rbd_bdev&quot;,</div><div class="line">  &quot;id&quot;: 1</div><div class="line">}</div></div><!-- fragment --><p>Example response:</p>
+<div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: true</div><div class="line">}</div></div><!-- fragment --><h2><a class="anchor" id="rpc_bdev_delay_create"></a>
+bdev_delay_create</h2>
+<p>Create delay bdev. This bdev type redirects all IO to it's base bdev and inserts a delay on the completion path to create an artificial drive latency.</p>
+<h3>Parameters</h3>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Name  </th><th class="markdownTableHeadNone">Optional  </th><th class="markdownTableHeadNone">Type  </th><th class="markdownTableHeadNone">Description   </th></tr>
+<tr class="markdownTableBody" class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">name  </td><td class="markdownTableBodyNone">Required  </td><td class="markdownTableBodyNone">string  </td><td class="markdownTableBodyNone">Bdev name   </td></tr>
+<tr class="markdownTableBody" class="markdownTableRowEven">
+<td class="markdownTableBodyNone">base_bdev_name  </td><td class="markdownTableBodyNone">Required  </td><td class="markdownTableBodyNone">string  </td><td class="markdownTableBodyNone">Base bdev name   </td></tr>
+<tr class="markdownTableBody" class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">avg_read_latency  </td><td class="markdownTableBodyNone">Required  </td><td class="markdownTableBodyNone">number  </td><td class="markdownTableBodyNone">average read latency (us)   </td></tr>
+<tr class="markdownTableBody" class="markdownTableRowEven">
+<td class="markdownTableBodyNone">p99_read_latency  </td><td class="markdownTableBodyNone">Required  </td><td class="markdownTableBodyNone">number  </td><td class="markdownTableBodyNone">p99 read latency (us)   </td></tr>
+<tr class="markdownTableBody" class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">avg_write_latency  </td><td class="markdownTableBodyNone">Required  </td><td class="markdownTableBodyNone">number  </td><td class="markdownTableBodyNone">average write latency (us)   </td></tr>
+<tr class="markdownTableBody" class="markdownTableRowEven">
+<td class="markdownTableBodyNone">p99_write_latency  </td><td class="markdownTableBodyNone">Required  </td><td class="markdownTableBodyNone">number  </td><td class="markdownTableBodyNone">p99 write latency (us)   </td></tr>
+</table>
+<h3>Result</h3>
+<p>Name of newly created bdev.</p>
+<h3>Example</h3>
+<p>Example request:</p>
+<div class="fragment"><div class="line">{</div><div class="line">  &quot;params&quot;: {</div><div class="line">    &quot;base_bdev_name&quot;: &quot;Null0&quot;,</div><div class="line">    &quot;name&quot;: &quot;Delay0&quot;,</div><div class="line">    &quot;avg_read_latency&quot;: &quot;15&quot;,</div><div class="line">    &quot;p99_read_latency&quot;: &quot;50&quot;,</div><div class="line">    &quot;avg_write_latency&quot;: &quot;40&quot;,</div><div class="line">    &quot;p99_write_latency&quot;: &quot;110&quot;,</div><div class="line">  },</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;method&quot;: &quot;bdev_delay_create&quot;,</div><div class="line">  &quot;id&quot;: 1</div><div class="line">}</div></div><!-- fragment --><p>Example response:</p>
+<div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: &quot;Delay0&quot;</div><div class="line">}</div></div><!-- fragment --><h2><a class="anchor" id="rpc_bdev_delay_delete"></a>
+bdev_delay_delete</h2>
+<p>Delete delay bdev.</p>
+<h3>Parameters</h3>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Name  </th><th class="markdownTableHeadNone">Optional  </th><th class="markdownTableHeadNone">Type  </th><th class="markdownTableHeadNone">Description   </th></tr>
+<tr class="markdownTableBody" class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">name  </td><td class="markdownTableBodyNone">Required  </td><td class="markdownTableBodyNone">string  </td><td class="markdownTableBodyNone">Bdev name   </td></tr>
+</table>
+<h3>Example</h3>
+<p>Example request:</p>
+<div class="fragment"><div class="line">{</div><div class="line">  &quot;params&quot;: {</div><div class="line">    &quot;name&quot;: &quot;Delay0&quot;</div><div class="line">  },</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;method&quot;: &quot;bdev_delay_delete&quot;,</div><div class="line">  &quot;id&quot;: 1</div><div class="line">}</div></div><!-- fragment --><p>Example response:</p>
 <div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: true</div><div class="line">}</div></div><!-- fragment --><h2><a class="anchor" id="rpc_construct_error_bdev"></a>
 construct_error_bdev</h2>
 <p>Construct error bdev.</p>

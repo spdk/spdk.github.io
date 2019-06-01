@@ -1,5 +1,7 @@
 var NAVTREEINDEX21 =
 {
+"unionspdk__nvme__critical__warning__state.html#a220ca1988fe2546b3b61b00af7a74a05":[13,0,97,4],
+"unionspdk__nvme__critical__warning__state.html#a6ebadf678c6d64a9586b58eb6ad11365":[13,0,97,3],
 "unionspdk__nvme__critical__warning__state.html#a7c86c972fef3bacac5025d2328c6fd07":[13,0,97,6],
 "unionspdk__nvme__critical__warning__state.html#ace02003011ccb4b2bd118d5f9adc6239":[13,0,97,1],
 "unionspdk__nvme__critical__warning__state.html#ae11d71217981c768d4d9370ad24283cd":[13,0,97,7],
@@ -247,7 +249,5 @@ var NAVTREEINDEX21 =
 "virtio.html#virtio_2mb":[7,2,1],
 "virtio.html#virtio_intro":[7,2,0],
 "vmd_8h.html":[14,0,54],
-"vmd_8h.html#a18b7bcf1c0d94cb4687ea6049a9a32d9":[14,0,54,1],
-"vmd_8h.html#a5372b99a3024346162b47b9890d88f28":[14,0,54,0],
-"vpp_integration.html":[5,2]
+"vmd_8h.html#a18b7bcf1c0d94cb4687ea6049a9a32d9":[14,0,54,1]
 };
