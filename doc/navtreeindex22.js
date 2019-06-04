@@ -1,5 +1,18 @@
 var NAVTREEINDEX22 =
 {
+"vhost_8h.html#afe5b0a12a12a26d2ddfe6a64f2a8a5e2":[14,0,53,15],
+"vhost_processing.html":[2,5],
+"vhost_processing.html#vhost_processing_init":[2,5,3],
+"vhost_processing.html#vhost_processing_intro":[2,5,1],
+"vhost_processing.html#vhost_processing_io_path":[2,5,4],
+"vhost_processing.html#vhost_processing_qemu":[2,5,2],
+"vhost_processing.html#vhost_processing_toc":[2,5,0],
+"vhost_processing.html#vhost_spdk_optimizations":[2,5,4,0],
+"virtio.html":[7,2],
+"virtio.html#virtio_2mb":[7,2,1],
+"virtio.html#virtio_intro":[7,2,0],
+"vmd_8h.html":[14,0,54],
+"vmd_8h.html#a18b7bcf1c0d94cb4687ea6049a9a32d9":[14,0,54,1],
 "vmd_8h.html#a5372b99a3024346162b47b9890d88f28":[14,0,54,0],
 "vpp_integration.html":[5,2],
 "vpp_integration.html#vpp_build":[5,2,0],

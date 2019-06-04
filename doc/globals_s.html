@@ -348,6 +348,9 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 <li>spdk_bdev_io_get_iovec()
 : <a class="el" href="bdev_8h.html#aa05d8c0e82bfbcc209af1eb958230ede">bdev.h</a>
 </li>
+<li>spdk_bdev_io_get_md_buf()
+: <a class="el" href="bdev_8h.html#a3ac624f9a0a153750242b70a805a7382">bdev.h</a>
+</li>
 <li>spdk_bdev_io_get_nvme_status()
 : <a class="el" href="bdev_8h.html#afe43254747db3cd072dfb596be3bbf2f">bdev.h</a>
 </li>
@@ -359,6 +362,9 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 </li>
 <li>spdk_bdev_io_set_buf()
 : <a class="el" href="bdev__module_8h.html#a5db22de2bf8ceb0f640e05b92188bff5">bdev_module.h</a>
+</li>
+<li>spdk_bdev_io_set_md_buf()
+: <a class="el" href="bdev__module_8h.html#a4137556f7ff39fc2c0e816489f5803c4">bdev_module.h</a>
 </li>
 <li>spdk_bdev_io_status
 : <a class="el" href="bdev__module_8h.html#aa35cc1485b6ba4351c2fb4fbd7125c93">bdev_module.h</a>
@@ -380,6 +386,9 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 </li>
 <li>spdk_bdev_is_md_interleaved()
 : <a class="el" href="bdev_8h.html#aa02f628c6ef7cae08b8b623b4800c74d">bdev.h</a>
+</li>
+<li>spdk_bdev_is_md_separate()
+: <a class="el" href="bdev_8h.html#ac8c880555f4d66991c1fd9dbd3abaf4f">bdev.h</a>
 </li>
 <li>spdk_bdev_module_claim_bdev()
 : <a class="el" href="bdev__module_8h.html#a43188aae62750556bba04f4ddc81fa94">bdev_module.h</a>
@@ -492,11 +501,17 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 <li>spdk_bdev_read_blocks()
 : <a class="el" href="group__bdev__io__submit__functions.html#gaeec9efd151e2fb34ee3d22a1edbbb53f">bdev.h</a>
 </li>
+<li>spdk_bdev_read_blocks_with_md()
+: <a class="el" href="group__bdev__io__submit__functions.html#gaeb22cbe62f8ae153ab96318b9761f9e4">bdev.h</a>
+</li>
 <li>spdk_bdev_readv()
 : <a class="el" href="group__bdev__io__submit__functions.html#ga9ac9efa882e87909acfd4bccaddb1778">bdev.h</a>
 </li>
 <li>spdk_bdev_readv_blocks()
 : <a class="el" href="group__bdev__io__submit__functions.html#ga55483d5ae010c514b37b976ad803b4b2">bdev.h</a>
+</li>
+<li>spdk_bdev_readv_blocks_with_md()
+: <a class="el" href="group__bdev__io__submit__functions.html#ga80f72a0b5b1e02a667ce15cc17ceefeb">bdev.h</a>
 </li>
 <li>spdk_bdev_register()
 : <a class="el" href="bdev__module_8h.html#a5fef71f7761986298bb4aaf345736bb3">bdev_module.h</a>
@@ -534,6 +549,9 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 <li>spdk_bdev_write_blocks()
 : <a class="el" href="group__bdev__io__submit__functions.html#ga12da8917f525a6e11cbf22b2b7652c89">bdev.h</a>
 </li>
+<li>spdk_bdev_write_blocks_with_md()
+: <a class="el" href="group__bdev__io__submit__functions.html#ga01380182ca77b43e2a854aa59058fe12">bdev.h</a>
+</li>
 <li>spdk_bdev_write_zeroes()
 : <a class="el" href="group__bdev__io__submit__functions.html#gadc50b78fec7f69190d9139aff29a9043">bdev.h</a>
 </li>
@@ -545,6 +563,9 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 </li>
 <li>spdk_bdev_writev_blocks()
 : <a class="el" href="group__bdev__io__submit__functions.html#gaf5849064d12de9f140a41522d1f7c95b">bdev.h</a>
+</li>
+<li>spdk_bdev_writev_blocks_with_md()
+: <a class="el" href="group__bdev__io__submit__functions.html#ga635944e7a651c01ecf5d808f988d138d">bdev.h</a>
 </li>
 <li>spdk_bdev_zcopy_end()
 : <a class="el" href="bdev_8h.html#ac432e059187b2dee62418354664e87c2">bdev.h</a>
@@ -2229,11 +2250,11 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 <li>SPDK_NVME_SGLS_NOT_SUPPORTED
 : <a class="el" href="nvme__spec_8h.html#af3e4102cda177c51a05a6bb02fa62b87a5978d5c7ce04a60c9d86b157037cb2f0">nvme_spec.h</a>
 </li>
-<li>SPDK_NVME_SGLS_SUPPORTED
-: <a class="el" href="nvme__spec_8h.html#af3e4102cda177c51a05a6bb02fa62b87ade9828594ce1d9d11427a38182149d9d">nvme_spec.h</a>
-</li>
 <li>spdk_nvme_sgls_supported
 : <a class="el" href="nvme__spec_8h.html#af3e4102cda177c51a05a6bb02fa62b87">nvme_spec.h</a>
+</li>
+<li>SPDK_NVME_SGLS_SUPPORTED
+: <a class="el" href="nvme__spec_8h.html#af3e4102cda177c51a05a6bb02fa62b87ade9828594ce1d9d11427a38182149d9d">nvme_spec.h</a>
 </li>
 <li>SPDK_NVME_SGLS_SUPPORTED_DWORD_ALIGNED
 : <a class="el" href="nvme__spec_8h.html#af3e4102cda177c51a05a6bb02fa62b87a702868f6b85dd329c4baf00642e99fca">nvme_spec.h</a>
