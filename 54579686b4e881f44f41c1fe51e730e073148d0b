@@ -1,0 +1,242 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "16dc4a50_4a7f16e4",
+        "filename": "_posts/2019-05-06-nvme.md",
+        "patchSetId": 11
+      },
+      "lineNbr": 43,
+      "author": {
+        "id": 1011222
+      },
+      "writtenOn": "2019-06-04T22:10:48Z",
+      "side": 1,
+      "message": "What\u0027s the \"Over 9000!\" text for?",
+      "revId": "54579686b4e881f44f41c1fe51e730e073148d0b",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "a1545d1f_940f52d7",
+        "filename": "_posts/2019-05-06-nvme.md",
+        "patchSetId": 11
+      },
+      "lineNbr": 66,
+      "author": {
+        "id": 1011222
+      },
+      "writtenOn": "2019-06-04T22:10:48Z",
+      "side": 1,
+      "message": "21x",
+      "revId": "54579686b4e881f44f41c1fe51e730e073148d0b",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "307a1415_123802f5",
+        "filename": "_posts/2019-05-06-nvme.md",
+        "patchSetId": 11
+      },
+      "lineNbr": 111,
+      "author": {
+        "id": 1011222
+      },
+      "writtenOn": "2019-06-04T22:10:48Z",
+      "side": 1,
+      "message": "nit - add newline before [Submitting to break up that line",
+      "revId": "54579686b4e881f44f41c1fe51e730e073148d0b",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "49197380_71dd1377",
+        "filename": "_posts/2019-05-06-nvme.md",
+        "patchSetId": 11
+      },
+      "lineNbr": 122,
+      "author": {
+        "id": 1011222
+      },
+      "writtenOn": "2019-06-04T22:10:48Z",
+      "side": 1,
+      "message": "I think \"comparatively\" is the correct spelling.",
+      "revId": "54579686b4e881f44f41c1fe51e730e073148d0b",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "c615d23a_fe375a57",
+        "filename": "_posts/2019-05-06-nvme.md",
+        "patchSetId": 11
+      },
+      "lineNbr": 128,
+      "author": {
+        "id": 1011222
+      },
+      "writtenOn": "2019-06-04T22:10:48Z",
+      "side": 1,
+      "message": "Maybe I should have said \"This operation alone consume **6%** of the CPU cycles in our test!\"\n\nI mean, it should be obvious, but it\u0027s not always 6% - it could be less if you have really horribly non-optimized software.",
+      "revId": "54579686b4e881f44f41c1fe51e730e073148d0b",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "17738650_fb7859fd",
+        "filename": "_posts/2019-05-06-nvme.md",
+        "patchSetId": 11
+      },
+      "lineNbr": 236,
+      "author": {
+        "id": 1011222
+      },
+      "writtenOn": "2019-06-04T22:10:48Z",
+      "side": 1,
+      "message": "maybe just \"spreading to other major operating systems as well\"?  obviously Linux is doing it and I guess Windows has some version of polling for packet processing - I\u0027m not sure if any other OS are working towards this actively?\n\nmay also want to temper this a bit so it doesn\u0027t sound like the idea of disabling interrupts started with SPDK - DPDK and packet processing led the charge here.  Maybe something like \"is quickly spreading to storage stacks in major operating systems as well\".",
+      "revId": "54579686b4e881f44f41c1fe51e730e073148d0b",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "ebccbfcf_a7c117bd",
+        "filename": "_posts/2019-05-06-nvme.md",
+        "patchSetId": 11
+      },
+      "lineNbr": 323,
+      "author": {
+        "id": 1011222
+      },
+      "writtenOn": "2019-06-04T22:10:48Z",
+      "side": 1,
+      "message": "I think your point about this possibly helping low queue depth workloads is interesting and maybe should be mentioned here?",
+      "revId": "54579686b4e881f44f41c1fe51e730e073148d0b",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "46d0372b_669765a3",
+        "filename": "_posts/2019-05-06-nvme.md",
+        "patchSetId": 11
+      },
+      "lineNbr": 389,
+      "author": {
+        "id": 1011222
+      },
+      "writtenOn": "2019-06-04T22:10:48Z",
+      "side": 1,
+      "message": "20 \u003d\u003e 21\n12800 \u003d\u003e 13440",
+      "revId": "54579686b4e881f44f41c1fe51e730e073148d0b",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "6a057626_18c46a44",
+        "filename": "_posts/2019-05-06-nvme.md",
+        "patchSetId": 11
+      },
+      "lineNbr": 390,
+      "author": {
+        "id": 1011222
+      },
+      "writtenOn": "2019-06-04T22:10:48Z",
+      "side": 1,
+      "message": "there are?",
+      "revId": "54579686b4e881f44f41c1fe51e730e073148d0b",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "eb61727e_762a98fe",
+        "filename": "_posts/2019-05-06-nvme.md",
+        "patchSetId": 11
+      },
+      "lineNbr": 391,
+      "author": {
+        "id": 1011222
+      },
+      "writtenOn": "2019-06-04T22:10:48Z",
+      "side": 1,
+      "message": "128 * 5 * 21",
+      "revId": "54579686b4e881f44f41c1fe51e730e073148d0b",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "d2e82045_05a59c07",
+        "filename": "_posts/2019-05-06-nvme.md",
+        "patchSetId": 11
+      },
+      "lineNbr": 526,
+      "author": {
+        "id": 1011222
+      },
+      "writtenOn": "2019-06-04T22:10:48Z",
+      "side": 1,
+      "message": "13440",
+      "revId": "54579686b4e881f44f41c1fe51e730e073148d0b",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "92f031ff_9d8c7c75",
+        "filename": "_posts/2019-05-06-nvme.md",
+        "patchSetId": 11
+      },
+      "lineNbr": 529,
+      "author": {
+        "id": 1011222
+      },
+      "writtenOn": "2019-06-04T22:10:48Z",
+      "side": 1,
+      "message": "20ns",
+      "revId": "54579686b4e881f44f41c1fe51e730e073148d0b",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "f1cb33eb_0da6fe75",
+        "filename": "_posts/2019-05-06-nvme.md",
+        "patchSetId": 11
+      },
+      "lineNbr": 530,
+      "author": {
+        "id": 1011222
+      },
+      "writtenOn": "2019-06-04T22:10:48Z",
+      "side": 1,
+      "message": "20% (due to 25ns-\u003e20ns)",
+      "revId": "54579686b4e881f44f41c1fe51e730e073148d0b",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "27682996_99aef663",
+        "filename": "_posts/2019-05-06-nvme.md",
+        "patchSetId": 11
+      },
+      "lineNbr": 543,
+      "author": {
+        "id": 1011222
+      },
+      "writtenOn": "2019-06-04T22:10:48Z",
+      "side": 1,
+      "message": "Maybe also call out the fact that storage I/O complete out of order?  That\u0027s obvious to you and me but maybe not everyone.",
+      "revId": "54579686b4e881f44f41c1fe51e730e073148d0b",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    }
+  ]
+}
