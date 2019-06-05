@@ -117,7 +117,7 @@ var env_8h =
     [ "spdk_ring_count", "env_8h.html#a6320a791a777b2d518def6413e543ac8", null ],
     [ "spdk_ring_create", "env_8h.html#a9f9038d37e14d07c89b399ee92bcbb87", null ],
     [ "spdk_ring_dequeue", "env_8h.html#a982e1b212d497dbb209902f56b192afb", null ],
-    [ "spdk_ring_enqueue", "env_8h.html#a94a5c5e5f14c336e7d64db996c0ed2dc", null ],
+    [ "spdk_ring_enqueue", "env_8h.html#a96a046de83d31127e79a7b16760b4776", null ],
     [ "spdk_ring_free", "env_8h.html#a3f1ec5c3714962d4b01ceb5a50571dca", null ],
     [ "spdk_unaffinitize_thread", "env_8h.html#a925f8e1d1ed12fc1b7eb057a5c5b7bfd", null ],
     [ "spdk_vtophys", "env_8h.html#ac6a932523e0f4cb86d2b90dfe113b171", null ],

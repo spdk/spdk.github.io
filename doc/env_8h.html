@@ -370,9 +370,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_
 <tr class="memitem:a6320a791a777b2d518def6413e543ac8"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_8h.html#a6320a791a777b2d518def6413e543ac8">spdk_ring_count</a> (struct spdk_ring *ring)</td></tr>
 <tr class="memdesc:a6320a791a777b2d518def6413e543ac8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the number of objects in the ring.  <a href="#a6320a791a777b2d518def6413e543ac8">More...</a><br /></td></tr>
 <tr class="separator:a6320a791a777b2d518def6413e543ac8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a94a5c5e5f14c336e7d64db996c0ed2dc"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_8h.html#a94a5c5e5f14c336e7d64db996c0ed2dc">spdk_ring_enqueue</a> (struct spdk_ring *ring, void **objs, size_t count)</td></tr>
-<tr class="memdesc:a94a5c5e5f14c336e7d64db996c0ed2dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Queue the array of objects (with length count) on the ring.  <a href="#a94a5c5e5f14c336e7d64db996c0ed2dc">More...</a><br /></td></tr>
-<tr class="separator:a94a5c5e5f14c336e7d64db996c0ed2dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96a046de83d31127e79a7b16760b4776"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_8h.html#a96a046de83d31127e79a7b16760b4776">spdk_ring_enqueue</a> (struct spdk_ring *ring, void **objs, size_t count, size_t *free_space)</td></tr>
+<tr class="memdesc:a96a046de83d31127e79a7b16760b4776"><td class="mdescLeft">&#160;</td><td class="mdescRight">Queue the array of objects (with length count) on the ring.  <a href="#a96a046de83d31127e79a7b16760b4776">More...</a><br /></td></tr>
+<tr class="separator:a96a046de83d31127e79a7b16760b4776"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a982e1b212d497dbb209902f56b192afb"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_8h.html#a982e1b212d497dbb209902f56b192afb">spdk_ring_dequeue</a> (struct spdk_ring *ring, void **objs, size_t count)</td></tr>
 <tr class="memdesc:a982e1b212d497dbb209902f56b192afb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dequeue count objects from the ring into the array objs.  <a href="#a982e1b212d497dbb209902f56b192afb">More...</a><br /></td></tr>
 <tr class="separator:a982e1b212d497dbb209902f56b192afb"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -3607,8 +3607,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_
 
 </div>
 </div>
-<a id="a94a5c5e5f14c336e7d64db996c0ed2dc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a94a5c5e5f14c336e7d64db996c0ed2dc">&#9670;&nbsp;</a></span>spdk_ring_enqueue()</h2>
+<a id="a96a046de83d31127e79a7b16760b4776"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a96a046de83d31127e79a7b16760b4776">&#9670;&nbsp;</a></span>spdk_ring_enqueue()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3629,7 +3629,13 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>count</em>&#160;</td>
+          <td class="paramname"><em>count</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t *&#160;</td>
+          <td class="paramname"><em>free_space</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -3644,7 +3650,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_
   <table class="params">
     <tr><td class="paramname">ring</td><td>A pointer to the ring. </td></tr>
     <tr><td class="paramname">objs</td><td>A pointer to the array to be queued. </td></tr>
-    <tr><td class="paramname">count</td><td>Length count of the array of objects.</td></tr>
+    <tr><td class="paramname">count</td><td>Length count of the array of objects. </td></tr>
+    <tr><td class="paramname">free_space</td><td>If non-NULL, amount of free space after the enqueue has finished.</td></tr>
   </table>
   </dd>
 </dl>
