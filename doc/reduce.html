@@ -167,13 +167,7 @@ $(document).ready(function(){initNavTree('reduce.html','');});
 </ul>
 <p>In these examples, the value "X" will represent the special value (2^64-1) described above.</p>
 <h3>Initial Creation</h3>
-<pre class="fragment">              +--------------------+
-</pre><p> Backing Device | | +-----------------&mdash;+</p>
-<p>Free Backing IO Unit List 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19 </p><pre class="fragment">       +------------+------------+------------+------------+------------+
-</pre><p> Chunk Maps | | | | | | +---------&mdash;+---------&mdash;+---------&mdash;+---------&mdash;+---------&mdash;+</p>
-<p>Free Chunk Map List 0, 1, 2, 3, 4 </p><pre class="fragment">        +---+---+---+---+
-</pre><p> Logical Map | X | X | X | X | +&mdash;+&mdash;+&mdash;+&mdash;+</p>
-<h3>Write 16KB at Offset 32KB</h3>
+<div class="fragment"><div class="line">                +--------------------+</div><div class="line">Backing Device  |                    |</div><div class="line">                +--------------------+</div><div class="line"></div><div class="line">Free Backing IO Unit List  0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19</div><div class="line"></div><div class="line">           +------------+------------+------------+------------+------------+</div><div class="line">Chunk Maps |            |            |            |            |            |</div><div class="line">           +------------+------------+------------+------------+------------+</div><div class="line"></div><div class="line">Free Chunk Map List  0, 1, 2, 3, 4</div><div class="line"></div><div class="line">            +---+---+---+---+</div><div class="line">Logical Map | X | X | X | X |</div><div class="line">            +---+---+---+---+</div></div><!-- fragment --><h3>Write 16KB at Offset 32KB</h3>
 <ul>
 <li>Find the corresponding index into the logical map. Offset 32KB divided by the chunk size (16KB) is 2.</li>
 <li>Entry 2 in the logical map is "X". This means no part of this 16KB has been written to yet.</li>
@@ -184,15 +178,9 @@ $(document).ready(function(){initNavTree('reduce.html','');});
 <li>Write the 6KB of data to backing IO units 0 and 1.</li>
 <li>Allocate a chunk map (0) from the free chunk map list.</li>
 <li>Write (0, 1, X, X) to the chunk map. This represents that only 2 backing IO units were used to store the 16KB of data.</li>
-<li><p class="startli">Write the chunk map index to entry 2 in the logical map. </p><pre class="fragment">            +--------------------+
-</pre><p> Backing Device |01 | +-----------------&mdash;+</p>
-<p class="startli">Free Backing IO Unit List 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19 </p><pre class="fragment">       +------------+------------+------------+------------+------------+
-</pre><p> Chunk Maps | 0 1 X X | | | | | +---------&mdash;+---------&mdash;+---------&mdash;+---------&mdash;+---------&mdash;+</p>
-<p class="startli">Free Chunk Map List 1, 2, 3, 4 </p><pre class="fragment">        +---+---+---+---+
-</pre><p> Logical Map | X | X | 0 | X | +&mdash;+&mdash;+&mdash;+&mdash;+</p>
-</li>
+<li>Write the chunk map index to entry 2 in the logical map.</li>
 </ul>
-<h3>Write 4KB at Offset 8KB</h3>
+<div class="fragment"><div class="line">                +--------------------+</div><div class="line">Backing Device  |01                  |</div><div class="line">                +--------------------+</div><div class="line"></div><div class="line">Free Backing IO Unit List  2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19</div><div class="line"></div><div class="line">           +------------+------------+------------+------------+------------+</div><div class="line">Chunk Maps | 0 1 X X    |            |            |            |            |</div><div class="line">           +------------+------------+------------+------------+------------+</div><div class="line"></div><div class="line">Free Chunk Map List  1, 2, 3, 4</div><div class="line"></div><div class="line">            +---+---+---+---+</div><div class="line">Logical Map | X | X | 0 | X |</div><div class="line">            +---+---+---+---+</div></div><!-- fragment --><h3>Write 4KB at Offset 8KB</h3>
 <ul>
 <li>Find the corresponding index into the logical map. Offset 8KB divided by the chunk size is 0.</li>
 <li>Entry 0 in the logical map is "X". This means no part of this 16KB has been written to yet.</li>
@@ -205,15 +193,9 @@ $(document).ready(function(){initNavTree('reduce.html','');});
 <li>Write the 3KB of data to block 2.</li>
 <li>Allocate a chunk map (1) from the free chunk map list.</li>
 <li>Write (2, X, X, X) to the chunk map.</li>
-<li><p class="startli">Write the chunk map index to entry 0 in the logical map. </p><pre class="fragment">            +--------------------+
-</pre><p> Backing Device |012 | +-----------------&mdash;+</p>
-<p class="startli">Free Backing IO Unit List 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19 </p><pre class="fragment">       +------------+------------+------------+------------+------------+
-</pre><p> Chunk Maps | 0 1 X X | 2 X X X | | | | +---------&mdash;+---------&mdash;+---------&mdash;+---------&mdash;+---------&mdash;+</p>
-<p class="startli">Free Chunk Map List 2, 3, 4 </p><pre class="fragment">        +---+---+---+---+
-</pre><p> Logical Map | 1 | X | 0 | X | +&mdash;+&mdash;+&mdash;+&mdash;+</p>
-</li>
+<li>Write the chunk map index to entry 0 in the logical map.</li>
 </ul>
-<h3>Read 16KB at Offset 16KB</h3>
+<div class="fragment"><div class="line">                +--------------------+</div><div class="line">Backing Device  |012                 |</div><div class="line">                +--------------------+</div><div class="line"></div><div class="line">Free Backing IO Unit List  3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19</div><div class="line"></div><div class="line">           +------------+------------+------------+------------+------------+</div><div class="line">Chunk Maps | 0 1 X X    | 2 X X X    |            |            |            |</div><div class="line">           +------------+------------+------------+------------+------------+</div><div class="line"></div><div class="line">Free Chunk Map List  2, 3, 4</div><div class="line"></div><div class="line">            +---+---+---+---+</div><div class="line">Logical Map | 1 | X | 0 | X |</div><div class="line">            +---+---+---+---+</div></div><!-- fragment --><h3>Read 16KB at Offset 16KB</h3>
 <ul>
 <li>Offset 16KB maps to index 1 in the logical map.</li>
 <li>Entry 1 in the logical map is "X". This means no part of this 16KB has been written to yet.</li>
@@ -234,15 +216,9 @@ $(document).ready(function(){initNavTree('reduce.html','');});
 <li>Write (3, 4, X, X) to chunk map 2. Note that at this point, the chunk map is not referenced by the logical map. If there was a power fail at this point, the previous data for this chunk would still be fully valid.</li>
 <li>Write chunk map 2 to entry 0 in the logical map.</li>
 <li>Free chunk map 1 back to the free chunk map list.</li>
-<li><p class="startli">Free backing IO unit 2 back to the free backing IO unit list. </p><pre class="fragment">            +--------------------+
-</pre><p> Backing Device |01 34 | +-----------------&mdash;+</p>
-<p class="startli">Free Backing IO Unit List 2, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19 </p><pre class="fragment">       +------------+------------+------------+------------+------------+
-</pre><p> Chunk Maps | 0 1 X X | | 3 4 X X | | | +---------&mdash;+---------&mdash;+---------&mdash;+---------&mdash;+---------&mdash;+</p>
-<p class="startli">Free Chunk Map List 1, 3, 4 </p><pre class="fragment">        +---+---+---+---+
-</pre><p> Logical Map | 2 | X | 0 | X | +&mdash;+&mdash;+&mdash;+&mdash;+</p>
-</li>
+<li>Free backing IO unit 2 back to the free backing IO unit list.</li>
 </ul>
-<h3>Operations that span across multiple chunks</h3>
+<div class="fragment"><div class="line">                +--------------------+</div><div class="line">Backing Device  |01 34               |</div><div class="line">                +--------------------+</div><div class="line"></div><div class="line">Free Backing IO Unit List  2, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19</div><div class="line"></div><div class="line">           +------------+------------+------------+------------+------------+</div><div class="line">Chunk Maps | 0 1 X X    |            | 3 4 X X    |            |            |</div><div class="line">           +------------+------------+------------+------------+------------+</div><div class="line"></div><div class="line">Free Chunk Map List  1, 3, 4</div><div class="line"></div><div class="line">            +---+---+---+---+</div><div class="line">Logical Map | 2 | X | 0 | X |</div><div class="line">            +---+---+---+---+</div></div><!-- fragment --><h3>Operations that span across multiple chunks</h3>
 <p>Operations that span a chunk boundary are logically split into multiple operations, each of which is associated with a single chunk.</p>
 <p>Example: 20KB write at offset 4KB</p>
 <p>In this case, the write operation is split into a 12KB write at offset 4KB (affecting only chunk 0 in the logical map) and a 8KB write at offset 16KB (affecting only chunk 1 in the logical map). Each write is processed independently using the algorithm described above. Completion of the 20KB write does not occur until both operations have completed.</p>
