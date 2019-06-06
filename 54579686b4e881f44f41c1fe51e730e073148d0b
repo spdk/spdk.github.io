@@ -2,6 +2,52 @@
   "comments": [
     {
       "key": {
+        "uuid": "b11dc282_dc6b58e6",
+        "filename": "_posts/2019-05-06-nvme.md",
+        "patchSetId": 11
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 1011314
+      },
+      "writtenOn": "2019-06-06T19:09:21Z",
+      "side": 1,
+      "message": "Can you make this a link to the Introduction section?",
+      "range": {
+        "startLine": 22,
+        "startChar": 30,
+        "endLine": 22,
+        "endChar": 42
+      },
+      "revId": "54579686b4e881f44f41c1fe51e730e073148d0b",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "f094b858_5dc0573c",
+        "filename": "_posts/2019-05-06-nvme.md",
+        "patchSetId": 11
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 1011314
+      },
+      "writtenOn": "2019-06-06T19:09:21Z",
+      "side": 1,
+      "message": "Can you make this a link to the Concepts section?",
+      "range": {
+        "startLine": 22,
+        "startChar": 49,
+        "endLine": 22,
+        "endChar": 57
+      },
+      "revId": "54579686b4e881f44f41c1fe51e730e073148d0b",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "16dc4a50_4a7f16e4",
         "filename": "_posts/2019-05-06-nvme.md",
         "patchSetId": 11
@@ -13,6 +59,52 @@
       "writtenOn": "2019-06-04T22:10:48Z",
       "side": 1,
       "message": "What\u0027s the \"Over 9000!\" text for?",
+      "revId": "54579686b4e881f44f41c1fe51e730e073148d0b",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "a1531a22_3219a41d",
+        "filename": "_posts/2019-05-06-nvme.md",
+        "patchSetId": 11
+      },
+      "lineNbr": 52,
+      "author": {
+        "id": 1011314
+      },
+      "writtenOn": "2019-06-06T19:09:21Z",
+      "side": 1,
+      "message": "Let\u0027s add the trademark \"Intel® Xeon®\"",
+      "range": {
+        "startLine": 52,
+        "startChar": 25,
+        "endLine": 52,
+        "endChar": 29
+      },
+      "revId": "54579686b4e881f44f41c1fe51e730e073148d0b",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "e765ddfa_fc7ee807",
+        "filename": "_posts/2019-05-06-nvme.md",
+        "patchSetId": 11
+      },
+      "lineNbr": 54,
+      "author": {
+        "id": 1011314
+      },
+      "writtenOn": "2019-06-06T19:09:21Z",
+      "side": 1,
+      "message": "Can you move this to just after the table? Let\u0027s show the reader the configuration first and then let them know that they can find all the products off-the-shelf",
+      "range": {
+        "startLine": 50,
+        "startChar": 37,
+        "endLine": 54,
+        "endChar": 0
+      },
       "revId": "54579686b4e881f44f41c1fe51e730e073148d0b",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": true
@@ -36,6 +128,144 @@
     },
     {
       "key": {
+        "uuid": "00cd3a21_dfea193c",
+        "filename": "_posts/2019-05-06-nvme.md",
+        "patchSetId": 11
+      },
+      "lineNbr": 67,
+      "author": {
+        "id": 1011314
+      },
+      "writtenOn": "2019-06-06T19:09:21Z",
+      "side": 1,
+      "message": "\"Intel® Server Board S2600WFT\"",
+      "range": {
+        "startLine": 67,
+        "startChar": 27,
+        "endLine": 67,
+        "endChar": 35
+      },
+      "revId": "54579686b4e881f44f41c1fe51e730e073148d0b",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "9157123e_73142776",
+        "filename": "_posts/2019-05-06-nvme.md",
+        "patchSetId": 11
+      },
+      "lineNbr": 73,
+      "author": {
+        "id": 1011314
+      },
+      "writtenOn": "2019-06-06T19:09:21Z",
+      "side": 1,
+      "message": "We also need the SPDK Version that has all these performance enhancements. One of the first things the readers will want to know if they have all the great stuff highlighted in this blog, so we need to let them know the commit id and/or SPDK version where they start seeing these performance enhancements.",
+      "range": {
+        "startLine": 73,
+        "startChar": 2,
+        "endLine": 73,
+        "endChar": 7
+      },
+      "revId": "54579686b4e881f44f41c1fe51e730e073148d0b",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "bf48cc46_c6204337",
+        "filename": "_posts/2019-05-06-nvme.md",
+        "patchSetId": 11
+      },
+      "lineNbr": 73,
+      "author": {
+        "id": 1011314
+      },
+      "writtenOn": "2019-06-06T19:09:21Z",
+      "side": 1,
+      "message": "The table is missing Operating System and Linux Kernel Version.\nWe might also want to include the gcc version in the table so that we have all the configuration information in one place.",
+      "range": {
+        "startLine": 73,
+        "startChar": 1,
+        "endLine": 73,
+        "endChar": 8
+      },
+      "revId": "54579686b4e881f44f41c1fe51e730e073148d0b",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "fa593702_2653ddec",
+        "filename": "_posts/2019-05-06-nvme.md",
+        "patchSetId": 11
+      },
+      "lineNbr": 85,
+      "author": {
+        "id": 1011314
+      },
+      "writtenOn": "2019-06-06T19:09:21Z",
+      "side": 1,
+      "message": "This should be past tense. \"was\"",
+      "range": {
+        "startLine": 85,
+        "startChar": 4,
+        "endLine": 85,
+        "endChar": 6
+      },
+      "revId": "54579686b4e881f44f41c1fe51e730e073148d0b",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "31f2de64_cc528761",
+        "filename": "_posts/2019-05-06-nvme.md",
+        "patchSetId": 11
+      },
+      "lineNbr": 99,
+      "author": {
+        "id": 1011314
+      },
+      "writtenOn": "2019-06-06T19:09:21Z",
+      "side": 1,
+      "message": "\"Intel® Server Board S2600WFT\"",
+      "range": {
+        "startLine": 99,
+        "startChar": 27,
+        "endLine": 99,
+        "endChar": 35
+      },
+      "revId": "54579686b4e881f44f41c1fe51e730e073148d0b",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "4777414c_9a1a9134",
+        "filename": "_posts/2019-05-06-nvme.md",
+        "patchSetId": 11
+      },
+      "lineNbr": 105,
+      "author": {
+        "id": 1011314
+      },
+      "writtenOn": "2019-06-06T19:09:21Z",
+      "side": 1,
+      "message": "The table is missing Operating System and Linux Kernel Version.",
+      "range": {
+        "startLine": 105,
+        "startChar": 0,
+        "endLine": 105,
+        "endChar": 8
+      },
+      "revId": "54579686b4e881f44f41c1fe51e730e073148d0b",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "307a1415_123802f5",
         "filename": "_posts/2019-05-06-nvme.md",
         "patchSetId": 11
@@ -47,6 +277,75 @@
       "writtenOn": "2019-06-04T22:10:48Z",
       "side": 1,
       "message": "nit - add newline before [Submitting to break up that line",
+      "revId": "54579686b4e881f44f41c1fe51e730e073148d0b",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "73f0ac07_28f021e1",
+        "filename": "_posts/2019-05-06-nvme.md",
+        "patchSetId": 11
+      },
+      "lineNbr": 114,
+      "author": {
+        "id": 1011314
+      },
+      "writtenOn": "2019-06-06T19:09:21Z",
+      "side": 1,
+      "message": "Intel® Xeon®",
+      "range": {
+        "startLine": 114,
+        "startChar": 58,
+        "endLine": 114,
+        "endChar": 68
+      },
+      "revId": "54579686b4e881f44f41c1fe51e730e073148d0b",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "00bc1aa9_c478078a",
+        "filename": "_posts/2019-05-06-nvme.md",
+        "patchSetId": 11
+      },
+      "lineNbr": 114,
+      "author": {
+        "id": 1011314
+      },
+      "writtenOn": "2019-06-06T19:09:21Z",
+      "side": 1,
+      "message": "Add trademark info. \"Intel® Xeon®\"",
+      "range": {
+        "startLine": 114,
+        "startChar": 0,
+        "endLine": 114,
+        "endChar": 10
+      },
+      "revId": "54579686b4e881f44f41c1fe51e730e073148d0b",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "d705ddbc_62d50f88",
+        "filename": "_posts/2019-05-06-nvme.md",
+        "patchSetId": 11
+      },
+      "lineNbr": 120,
+      "author": {
+        "id": 1011314
+      },
+      "writtenOn": "2019-06-06T19:09:21Z",
+      "side": 1,
+      "message": "Shouldn\u0027t this be \"NVMe\"?",
+      "range": {
+        "startLine": 120,
+        "startChar": 35,
+        "endLine": 120,
+        "endChar": 39
+      },
       "revId": "54579686b4e881f44f41c1fe51e730e073148d0b",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": true
@@ -70,6 +369,29 @@
     },
     {
       "key": {
+        "uuid": "0128fc27_cf321eb8",
+        "filename": "_posts/2019-05-06-nvme.md",
+        "patchSetId": 11
+      },
+      "lineNbr": 122,
+      "author": {
+        "id": 1011314
+      },
+      "writtenOn": "2019-06-06T19:09:21Z",
+      "side": 1,
+      "message": "NVMe",
+      "range": {
+        "startLine": 122,
+        "startChar": 19,
+        "endLine": 122,
+        "endChar": 23
+      },
+      "revId": "54579686b4e881f44f41c1fe51e730e073148d0b",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "c615d23a_fe375a57",
         "filename": "_posts/2019-05-06-nvme.md",
         "patchSetId": 11
@@ -81,6 +403,52 @@
       "writtenOn": "2019-06-04T22:10:48Z",
       "side": 1,
       "message": "Maybe I should have said \"This operation alone consume **6%** of the CPU cycles in our test!\"\n\nI mean, it should be obvious, but it\u0027s not always 6% - it could be less if you have really horribly non-optimized software.",
+      "revId": "54579686b4e881f44f41c1fe51e730e073148d0b",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "2e094ea5_b27faaca",
+        "filename": "_posts/2019-05-06-nvme.md",
+        "patchSetId": 11
+      },
+      "lineNbr": 128,
+      "author": {
+        "id": 1011314
+      },
+      "writtenOn": "2019-06-06T19:09:21Z",
+      "side": 1,
+      "message": "I think this should be \"that\u0027s already cutting\" or \"that already cut\"",
+      "range": {
+        "startLine": 128,
+        "startChar": 11,
+        "endLine": 128,
+        "endChar": 29
+      },
+      "revId": "54579686b4e881f44f41c1fe51e730e073148d0b",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "e85967b4_fe40ded1",
+        "filename": "_posts/2019-05-06-nvme.md",
+        "patchSetId": 11
+      },
+      "lineNbr": 223,
+      "author": {
+        "id": 1011314
+      },
+      "writtenOn": "2019-06-06T19:09:21Z",
+      "side": 1,
+      "message": "Let\u0027s call out SPDK and capitalize NVM by changing to \"SPDK NVMe\"",
+      "range": {
+        "startLine": 223,
+        "startChar": 0,
+        "endLine": 223,
+        "endChar": 4
+      },
       "revId": "54579686b4e881f44f41c1fe51e730e073148d0b",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": true
@@ -104,6 +472,75 @@
     },
     {
       "key": {
+        "uuid": "584d5aea_072c2e06",
+        "filename": "_posts/2019-05-06-nvme.md",
+        "patchSetId": 11
+      },
+      "lineNbr": 247,
+      "author": {
+        "id": 1011314
+      },
+      "writtenOn": "2019-06-06T19:09:21Z",
+      "side": 1,
+      "message": "We should make this plural. \"... completed I/Os\"",
+      "range": {
+        "startLine": 247,
+        "startChar": 4,
+        "endLine": 247,
+        "endChar": 17
+      },
+      "revId": "54579686b4e881f44f41c1fe51e730e073148d0b",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "67dfc8f8_b7f0f081",
+        "filename": "_posts/2019-05-06-nvme.md",
+        "patchSetId": 11
+      },
+      "lineNbr": 272,
+      "author": {
+        "id": 1011314
+      },
+      "writtenOn": "2019-06-06T19:09:21Z",
+      "side": 1,
+      "message": "This sentence sounds better like so \"However, with SPDK and fast NVMe SSDs, that has now changed.\"",
+      "range": {
+        "startLine": 271,
+        "startChar": 36,
+        "endLine": 272,
+        "endChar": 20
+      },
+      "revId": "54579686b4e881f44f41c1fe51e730e073148d0b",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "2ac7e256_6e6dd7cf",
+        "filename": "_posts/2019-05-06-nvme.md",
+        "patchSetId": 11
+      },
+      "lineNbr": 283,
+      "author": {
+        "id": 1011314
+      },
+      "writtenOn": "2019-06-06T19:09:21Z",
+      "side": 1,
+      "message": "I think this is vague. 10 million is a couple million I/Ops. We should explicitly call out the limit in our test platform.",
+      "range": {
+        "startLine": 283,
+        "startChar": 26,
+        "endLine": 283,
+        "endChar": 73
+      },
+      "revId": "54579686b4e881f44f41c1fe51e730e073148d0b",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "ebccbfcf_a7c117bd",
         "filename": "_posts/2019-05-06-nvme.md",
         "patchSetId": 11
@@ -115,6 +552,52 @@
       "writtenOn": "2019-06-04T22:10:48Z",
       "side": 1,
       "message": "I think your point about this possibly helping low queue depth workloads is interesting and maybe should be mentioned here?",
+      "revId": "54579686b4e881f44f41c1fe51e730e073148d0b",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "7571c3b2_438ef740",
+        "filename": "_posts/2019-05-06-nvme.md",
+        "patchSetId": 11
+      },
+      "lineNbr": 354,
+      "author": {
+        "id": 1011314
+      },
+      "writtenOn": "2019-06-06T19:09:21Z",
+      "side": 1,
+      "message": "Missing \"output\" between tool and looks.",
+      "range": {
+        "startLine": 354,
+        "startChar": 33,
+        "endLine": 354,
+        "endChar": 34
+      },
+      "revId": "54579686b4e881f44f41c1fe51e730e073148d0b",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "4cd841b9_d6a786fa",
+        "filename": "_posts/2019-05-06-nvme.md",
+        "patchSetId": 11
+      },
+      "lineNbr": 374,
+      "author": {
+        "id": 1011314
+      },
+      "writtenOn": "2019-06-06T19:09:21Z",
+      "side": 1,
+      "message": "\"... hot/cold path ...\"",
+      "range": {
+        "startLine": 374,
+        "startChar": 15,
+        "endLine": 374,
+        "endChar": 33
+      },
       "revId": "54579686b4e881f44f41c1fe51e730e073148d0b",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": true
@@ -166,6 +649,121 @@
       "writtenOn": "2019-06-04T22:10:48Z",
       "side": 1,
       "message": "128 * 5 * 21",
+      "revId": "54579686b4e881f44f41c1fe51e730e073148d0b",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "bda1aa43_2602d5a5",
+        "filename": "_posts/2019-05-06-nvme.md",
+        "patchSetId": 11
+      },
+      "lineNbr": 391,
+      "author": {
+        "id": 1011314
+      },
+      "writtenOn": "2019-06-06T19:09:21Z",
+      "side": 1,
+      "message": "Use the correct trademark name for the CPU product \"Intel® Xeon® Platinum 8280L CPU\"",
+      "range": {
+        "startLine": 391,
+        "startChar": 56,
+        "endLine": 391,
+        "endChar": 85
+      },
+      "revId": "54579686b4e881f44f41c1fe51e730e073148d0b",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "2772ce96_340f2456",
+        "filename": "_posts/2019-05-06-nvme.md",
+        "patchSetId": 11
+      },
+      "lineNbr": 392,
+      "author": {
+        "id": 1011314
+      },
+      "writtenOn": "2019-06-06T19:09:21Z",
+      "side": 1,
+      "message": "\"... a very ...\" emphasizes the large size of the L2 better than especially.",
+      "range": {
+        "startLine": 392,
+        "startChar": 4,
+        "endLine": 392,
+        "endChar": 17
+      },
+      "revId": "54579686b4e881f44f41c1fe51e730e073148d0b",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "af021d6e_8b15fb60",
+        "filename": "_posts/2019-05-06-nvme.md",
+        "patchSetId": 11
+      },
+      "lineNbr": 405,
+      "author": {
+        "id": 1011314
+      },
+      "writtenOn": "2019-06-06T19:09:21Z",
+      "side": 1,
+      "message": "This is probably in the \"a few months\" range now. Let\u0027s remove it and avoid confusing users who read this blog as they wonder if they have the new code or not. Maybe we can put the SPDK release or commit id when this change was made.",
+      "range": {
+        "startLine": 405,
+        "startChar": 58,
+        "endLine": 405,
+        "endChar": 73
+      },
+      "revId": "54579686b4e881f44f41c1fe51e730e073148d0b",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "9a4e362c_8417d5ff",
+        "filename": "_posts/2019-05-06-nvme.md",
+        "patchSetId": 11
+      },
+      "lineNbr": 510,
+      "author": {
+        "id": 1011314
+      },
+      "writtenOn": "2019-06-06T19:09:21Z",
+      "side": 1,
+      "message": "Let\u0027s call out \"... SPDK NVMe ...\"",
+      "range": {
+        "startLine": 510,
+        "startChar": 63,
+        "endLine": 510,
+        "endChar": 67
+      },
+      "revId": "54579686b4e881f44f41c1fe51e730e073148d0b",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "d429b84b_d2225cc9",
+        "filename": "_posts/2019-05-06-nvme.md",
+        "patchSetId": 11
+      },
+      "lineNbr": 516,
+      "author": {
+        "id": 1011314
+      },
+      "writtenOn": "2019-06-06T19:09:21Z",
+      "side": 1,
+      "message": "Use the correct trademark name for the CPU product \"Intel® Xeon® Platinum 8280L\"",
+      "range": {
+        "startLine": 516,
+        "startChar": 61,
+        "endLine": 516,
+        "endChar": 86
+      },
       "revId": "54579686b4e881f44f41c1fe51e730e073148d0b",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": true
@@ -234,6 +832,29 @@
       "writtenOn": "2019-06-04T22:10:48Z",
       "side": 1,
       "message": "Maybe also call out the fact that storage I/O complete out of order?  That\u0027s obvious to you and me but maybe not everyone.",
+      "revId": "54579686b4e881f44f41c1fe51e730e073148d0b",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "2adf1cc4_86157db0",
+        "filename": "_posts/2019-05-06-nvme.md",
+        "patchSetId": 11
+      },
+      "lineNbr": 656,
+      "author": {
+        "id": 1011314
+      },
+      "writtenOn": "2019-06-06T19:09:21Z",
+      "side": 1,
+      "message": "This is the first time I see this abbreviation so let\u0027s call out what it stands for L1D (L1 Data)",
+      "range": {
+        "startLine": 656,
+        "startChar": 43,
+        "endLine": 656,
+        "endChar": 46
+      },
       "revId": "54579686b4e881f44f41c1fe51e730e073148d0b",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": true
