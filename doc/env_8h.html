@@ -320,6 +320,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_
 <tr class="memitem:a434cdf73691c745e717b8b794b2acb52"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_8h.html#a434cdf73691c745e717b8b794b2acb52">spdk_mempool_count</a> (const struct spdk_mempool *pool)</td></tr>
 <tr class="memdesc:a434cdf73691c745e717b8b794b2acb52"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the number of entries in the memory pool.  <a href="#a434cdf73691c745e717b8b794b2acb52">More...</a><br /></td></tr>
 <tr class="separator:a434cdf73691c745e717b8b794b2acb52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3b9b2980b2bf4be6e1b75024d676cd1"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_8h.html#ad3b9b2980b2bf4be6e1b75024d676cd1">spdk_mempool_obj_iter</a> (struct spdk_mempool *mp, <a class="el" href="env_8h.html#a039d3ef1514e326b6c2d8a527f6a6aaa">spdk_mempool_obj_cb_t</a> obj_cb, void *obj_cb_arg)</td></tr>
+<tr class="memdesc:ad3b9b2980b2bf4be6e1b75024d676cd1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Iterate through all elements of the pool and call a function on each one.  <a href="#ad3b9b2980b2bf4be6e1b75024d676cd1">More...</a><br /></td></tr>
+<tr class="separator:ad3b9b2980b2bf4be6e1b75024d676cd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4461ccdde430461ad2756b3799099330"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_8h.html#a4461ccdde430461ad2756b3799099330">spdk_env_get_core_count</a> (void)</td></tr>
 <tr class="memdesc:a4461ccdde430461ad2756b3799099330"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the number of dedicated CPU cores utilized by this env abstraction.  <a href="#a4461ccdde430461ad2756b3799099330">More...</a><br /></td></tr>
 <tr class="separator:a4461ccdde430461ad2756b3799099330"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1878,6 +1881,51 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the name of the memory pool. </dd></dl>
+
+</div>
+</div>
+<a id="ad3b9b2980b2bf4be6e1b75024d676cd1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad3b9b2980b2bf4be6e1b75024d676cd1">&#9670;&nbsp;</a></span>spdk_mempool_obj_iter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t spdk_mempool_obj_iter </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_mempool *&#160;</td>
+          <td class="paramname"><em>mp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="env_8h.html#a039d3ef1514e326b6c2d8a527f6a6aaa">spdk_mempool_obj_cb_t</a>&#160;</td>
+          <td class="paramname"><em>obj_cb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>obj_cb_arg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Iterate through all elements of the pool and call a function on each one. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mp</td><td>Memory pool to iterate on. </td></tr>
+    <tr><td class="paramname">obj_cb</td><td>Function to call on each element. </td></tr>
+    <tr><td class="paramname">obj_cb_arg</td><td>Opaque pointer passed to the callback function.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Number of elements iterated. </dd></dl>
 
 </div>
 </div>
