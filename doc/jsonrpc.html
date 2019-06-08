@@ -398,7 +398,7 @@ set_bdev_qos_limit</h2>
 <div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;method&quot;: &quot;set_bdev_qos_limit&quot;,</div><div class="line">  &quot;params&quot;: {</div><div class="line">    &quot;name&quot;: &quot;Malloc0&quot;</div><div class="line">    &quot;rw_ios_per_sec&quot;: 20000</div><div class="line">    &quot;rw_mbytes_per_sec&quot;: 100</div><div class="line">    &quot;r_mbytes_per_sec&quot;: 50</div><div class="line">    &quot;w_mbytes_per_sec&quot;: 50</div><div class="line">  }</div><div class="line">}</div></div><!-- fragment --><p>Example response:</p>
 <div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: true</div><div class="line">}</div></div><!-- fragment --><h2><a class="anchor" id="rpc_construct_ocf_bdev"></a>
 construct_ocf_bdev</h2>
-<p>Construct new OCF bdev. Command accepts cache mode that is going to be used. Currently, we support Write-Through and Pass-Through OCF cache modes.</p>
+<p>Construct new OCF bdev. Command accepts cache mode that is going to be used. Currently, we support Write-Through, Pass-Through and Write-Back OCF cache modes.</p>
 <h3>Parameters</h3>
 <table class="markdownTable">
 <tr class="markdownTableHead">
@@ -406,7 +406,7 @@ construct_ocf_bdev</h2>
 <tr class="markdownTableBody" class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">name  </td><td class="markdownTableBodyNone">Required  </td><td class="markdownTableBodyNone">string  </td><td class="markdownTableBodyNone">Bdev name to use   </td></tr>
 <tr class="markdownTableBody" class="markdownTableRowEven">
-<td class="markdownTableBodyNone">mode  </td><td class="markdownTableBodyNone">Required  </td><td class="markdownTableBodyNone">string  </td><td class="markdownTableBodyNone">OCF cache mode ('wt' or 'pt')   </td></tr>
+<td class="markdownTableBodyNone">mode  </td><td class="markdownTableBodyNone">Required  </td><td class="markdownTableBodyNone">string  </td><td class="markdownTableBodyNone">OCF cache mode ('wb' or 'wt' or 'pt')   </td></tr>
 <tr class="markdownTableBody" class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">cache_bdev_name  </td><td class="markdownTableBodyNone">Required  </td><td class="markdownTableBodyNone">string  </td><td class="markdownTableBodyNone">Name of underlying cache bdev   </td></tr>
 <tr class="markdownTableBody" class="markdownTableRowEven">

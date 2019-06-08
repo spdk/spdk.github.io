@@ -1,5 +1,6 @@
 var structspdk__ftl__conf =
 [
+    [ "allow_open_bands", "structspdk__ftl__conf.html#a1363805a414bea4d514df53229e44630", null ],
     [ "band_thld", "structspdk__ftl__conf.html#ae126f27ebee5897098817e710aa5b3a4", null ],
     [ "defrag", "structspdk__ftl__conf.html#a84b0978f3a72b33e8c489b04dae14287", null ],
     [ "invalid_thld", "structspdk__ftl__conf.html#abe2ed93f4a6a64b722b4eee1daff3690", null ],
