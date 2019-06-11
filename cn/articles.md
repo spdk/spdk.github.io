@@ -58,9 +58,9 @@ lang: cn
 
 **SPDK和其他软件库的深度整合**
 
-* [火爆业界的明星, 下一代存储技术的先行: NVDIMM (下篇)](hhttps://mp.weixin.qq.com/s?__biz=MzI3NDA4ODY4MA)
+* [火爆业界的明星, 下一代存储技术的先行: NVDIMM (下篇)](https://mp.weixin.qq.com/s?__biz=MzI3NDA4ODY4MA==&mid=2653335297&idx=1&sn=15a97636a9789a0e804847c398de7ae6&pass_ticket=6pPQwgtuLLkHv4fBlZcTWzepH4S%2FWbUWUxESD8lfM6BTwdPB7U%2FMlij2UeHFvzDB)
 
-* [火爆业界的明星，下一代存储技术的先行: NVDIMM 你了解吗?](https://mp.weixin.qq.com/s?__biz=MzI3NDA4ODY4MA)
+* [火爆业界的明星，下一代存储技术的先行: NVDIMM 你了解吗?](https://mp.weixin.qq.com/s?__biz=MzI3NDA4ODY4MA==&mid=2653335049&idx=1&sn=e3523d28b4e3d79c5584c20d04432e24&pass_ticket=6pPQwgtuLLkHv4fBlZcTWzepH4S%2FWbUWUxESD8lfM6BTwdPB7U%2FMlij2UeHFvzDB)
 
 ******
 
