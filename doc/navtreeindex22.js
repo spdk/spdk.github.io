@@ -1,5 +1,7 @@
 var NAVTREEINDEX22 =
 {
+"vhost_8h.html#ae1ea27c8ae7616e92d916e5c6fc34231":[14,0,53,18],
+"vhost_8h.html#aed34ffbfc5835716ba35a9ee050e1e74":[14,0,53,2],
 "vhost_8h.html#aed851ed4cfcdf69b6221c8cad4688353":[14,0,53,9],
 "vhost_8h.html#af358eac95a16bd456349fcfaa00379bb":[14,0,53,11],
 "vhost_8h.html#afd4fd557673a9bc3518add4f5c0d611b":[14,0,53,14],
@@ -16,9 +18,9 @@ var NAVTREEINDEX22 =
 "virtio.html#virtio_2mb":[7,2,1],
 "virtio.html#virtio_intro":[7,2,0],
 "vmd_8h.html":[14,0,54],
-"vmd_8h.html#a18b7bcf1c0d94cb4687ea6049a9a32d9":[14,0,54,2],
-"vmd_8h.html#a5372b99a3024346162b47b9890d88f28":[14,0,54,1],
+"vmd_8h.html#a5372b99a3024346162b47b9890d88f28":[14,0,54,2],
 "vmd_8h.html#a80d2d2c79a93479422ada31a87d4664d":[14,0,54,0],
+"vmd_8h.html#a8ab093f9cdad46a637fac6aa07739ace":[14,0,54,1],
 "vpp_integration.html":[5,2],
 "vpp_integration.html#vpp_build":[5,2,0],
 "vpp_integration.html#vpp_built_into_spdk":[5,2,3],

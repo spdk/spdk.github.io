@@ -1,5 +1,7 @@
 var NAVTREEINDEX21 =
 {
+"unionspdk__nvme__cmbloc__register.html#a3c1a22c487cd5a1aad6154f404f48263":[13,0,91,3],
+"unionspdk__nvme__cmbloc__register.html#a423c7a028641ab5ed65a59d92dc810ec":[13,0,91,4],
 "unionspdk__nvme__cmbloc__register.html#a7a72b6bb85d7c446b0ad55f74d91e13a":[13,0,91,0],
 "unionspdk__nvme__cmbloc__register.html#ae201f862795d8ab1d9c902fd2b9f4a81":[13,0,91,1],
 "unionspdk__nvme__cmbsz__register.html":[13,0,92],
@@ -247,7 +249,5 @@ var NAVTREEINDEX21 =
 "vhost_8h.html#aa6eba1ce0ac89c3287b755567795869b":[14,0,53,10],
 "vhost_8h.html#ab35076d7e06edf2098b814929a04c7d5":[14,0,53,13],
 "vhost_8h.html#ac2c4b62eaf6503e5f5e520394f9f9fe1":[14,0,53,0],
-"vhost_8h.html#adf01bd5ae7b0d761aa8e0e271de1ee9e":[14,0,53,23],
-"vhost_8h.html#ae1ea27c8ae7616e92d916e5c6fc34231":[14,0,53,18],
-"vhost_8h.html#aed34ffbfc5835716ba35a9ee050e1e74":[14,0,53,2]
+"vhost_8h.html#adf01bd5ae7b0d761aa8e0e271de1ee9e":[14,0,53,23]
 };
