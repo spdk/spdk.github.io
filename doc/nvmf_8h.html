@@ -292,9 +292,9 @@ Functions</h2></td></tr>
 <tr class="memitem:aa97d60b3fba2761118d21e411a08e542"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#aa97d60b3fba2761118d21e411a08e542">spdk_nvmf_ns_opts_get_defaults</a> (struct <a class="el" href="structspdk__nvmf__ns__opts.html">spdk_nvmf_ns_opts</a> *opts, size_t opts_size)</td></tr>
 <tr class="memdesc:aa97d60b3fba2761118d21e411a08e542"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get default namespace creation options.  <a href="#aa97d60b3fba2761118d21e411a08e542">More...</a><br /></td></tr>
 <tr class="separator:aa97d60b3fba2761118d21e411a08e542"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aef42bb5a50c6f6fa1713c060d66c103d"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#aef42bb5a50c6f6fa1713c060d66c103d">spdk_nvmf_subsystem_add_ns</a> (struct spdk_nvmf_subsystem *subsystem, struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *bdev, const struct <a class="el" href="structspdk__nvmf__ns__opts.html">spdk_nvmf_ns_opts</a> *opts, size_t opts_size)</td></tr>
-<tr class="memdesc:aef42bb5a50c6f6fa1713c060d66c103d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a namespace to a subsytem.  <a href="#aef42bb5a50c6f6fa1713c060d66c103d">More...</a><br /></td></tr>
-<tr class="separator:aef42bb5a50c6f6fa1713c060d66c103d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81b63417dea01e5a4fe15a4f3322c63c"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#a81b63417dea01e5a4fe15a4f3322c63c">spdk_nvmf_subsystem_add_ns</a> (struct spdk_nvmf_subsystem *subsystem, struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *bdev, const struct <a class="el" href="structspdk__nvmf__ns__opts.html">spdk_nvmf_ns_opts</a> *opts, size_t opts_size, const char *ptpl_file)</td></tr>
+<tr class="memdesc:a81b63417dea01e5a4fe15a4f3322c63c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a namespace to a subsytem.  <a href="#a81b63417dea01e5a4fe15a4f3322c63c">More...</a><br /></td></tr>
+<tr class="separator:a81b63417dea01e5a4fe15a4f3322c63c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7fafa9106b94d650f0c1daa5c6d7090e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#a7fafa9106b94d650f0c1daa5c6d7090e">spdk_nvmf_subsystem_remove_ns</a> (struct spdk_nvmf_subsystem *subsystem, uint32_t nsid, <a class="el" href="nvmf_8h.html#aec7dc3c1e2f740c1cbffa028ad5c5bff">spdk_nvmf_subsystem_state_change_done</a> cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:a7fafa9106b94d650f0c1daa5c6d7090e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove a namespace from a subsytem.  <a href="#a7fafa9106b94d650f0c1daa5c6d7090e">More...</a><br /></td></tr>
 <tr class="separator:a7fafa9106b94d650f0c1daa5c6d7090e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1046,8 +1046,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="aef42bb5a50c6f6fa1713c060d66c103d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aef42bb5a50c6f6fa1713c060d66c103d">&#9670;&nbsp;</a></span>spdk_nvmf_subsystem_add_ns()</h2>
+<a id="a81b63417dea01e5a4fe15a4f3322c63c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a81b63417dea01e5a4fe15a4f3322c63c">&#9670;&nbsp;</a></span>spdk_nvmf_subsystem_add_ns()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1074,7 +1074,13 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>opts_size</em>&#160;</td>
+          <td class="paramname"><em>opts_size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>ptpl_file</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1091,7 +1097,8 @@ Functions</h2></td></tr>
     <tr><td class="paramname">subsystem</td><td>Subsystem to add namespace to. </td></tr>
     <tr><td class="paramname">bdev</td><td>Block device to add as a namespace. </td></tr>
     <tr><td class="paramname">opts</td><td>Namespace options, or NULL to use defaults. </td></tr>
-    <tr><td class="paramname">opts_size</td><td>sizeof(*opts)</td></tr>
+    <tr><td class="paramname">opts_size</td><td>sizeof(*opts) </td></tr>
+    <tr><td class="paramname">ptpl_file</td><td>Persist through power loss file path.</td></tr>
   </table>
   </dd>
 </dl>
