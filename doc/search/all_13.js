@@ -1316,7 +1316,7 @@ var searchData=
   ['spdk_5fxattr_5fnames_5fget_5fcount',['spdk_xattr_names_get_count',['../blob_8h.html#a113d71117843062da8a24906296b37a6',1,'blob.h']]],
   ['spdk_5fxattr_5fnames_5fget_5fname',['spdk_xattr_names_get_name',['../blob_8h.html#ad0d58654483ac10df65d4b55356eff84',1,'blob.h']]],
   ['spdk_5fzmalloc',['spdk_zmalloc',['../env_8h.html#a49ad245dae3554cf96d62e9b2b0b1596',1,'env.h']]],
-  ['spdk_20cli',['SPDK CLI',['../spdkcli.html',1,'experimental_tools']]],
+  ['spdk_20cli',['SPDK CLI',['../spdkcli.html',1,'tools']]],
   ['split_5fcurrent_5foffset_5fblocks',['split_current_offset_blocks',['../structspdk__bdev__io.html#ac721975c3205db6df200604c5a2b5243',1,'spdk_bdev_io']]],
   ['split_5fon_5foptimal_5fio_5fboundary',['split_on_optimal_io_boundary',['../structspdk__bdev.html#a85a794d02620e3e8730bb11791c0c592',1,'spdk_bdev']]],
   ['split_5foutstanding',['split_outstanding',['../structspdk__bdev__io.html#ab5bef16ff6747eecb5d8d40f2a4c295c',1,'spdk_bdev_io']]],
