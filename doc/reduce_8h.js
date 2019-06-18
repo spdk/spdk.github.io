@@ -11,6 +11,7 @@ var reduce_8h =
     [ "spdk_reduce_vol_get_uuid", "reduce_8h.html#ace66fd4e3840d38127fcf7a21dc269de", null ],
     [ "spdk_reduce_vol_init", "reduce_8h.html#a62753f16686f807748719567d57f15b8", null ],
     [ "spdk_reduce_vol_load", "reduce_8h.html#a910dd92b2a78d08fdb1cd6fa9e4c7a9e", null ],
+    [ "spdk_reduce_vol_print_info", "reduce_8h.html#a240fd573432ccd45433ba70c8bfc2d42", null ],
     [ "spdk_reduce_vol_readv", "reduce_8h.html#a9bfdcd7f50cc33b4b69011f239aa7498", null ],
     [ "spdk_reduce_vol_unload", "reduce_8h.html#a593901ae3d44b3315fad40da95108bee", null ],
     [ "spdk_reduce_vol_writev", "reduce_8h.html#ac5b98c059d57b5fe1acf0062aa3d3e33", null ]

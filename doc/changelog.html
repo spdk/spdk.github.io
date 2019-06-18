@@ -159,6 +159,9 @@ v19.07: (Upcoming Release)</h1>
 <h2>nvme</h2>
 <p>Added <a class="el" href="nvme_8h.html#abb7ae9abf97b7c6b57777d06eaa1258a" title="Get the transport ID for a given NVMe controller. ">spdk_nvme_ctrlr_get_transport_id()</a> to get the transport ID from a previously attached controller.</p>
 <p>Nvme Opal library spdk_opal_cmd deprecated. Adding seperate command APIs.</p>
+<p>Added <a class="el" href="nvme_8h.html#a8c00b191b38472b57b06f3f394353ad3" title="Send the given NVM I/O command, I/O buffers, lists and all to the NVMe controller. ">spdk_nvme_ctrlr_io_cmd_raw_no_payload_build()</a> allowing a caller to pass a completely formed command to an NVMe submission queue (buffer addresses and all). This is supported on the PCIe transport only.</p>
+<p>Added spdk_nvme_get_ctrlr_registers() to return a pointer to the virtual address of the NVMe controller registers. This is supported on the PCIe transport only.</p>
+<p>Added additional options to the spdk_nvme_ctrlr_alloc_qpair() option parameter structure to allow caller to override the virtual and optionally physical address of the submission and completion queue pair to be created. This is supported on the PCIe transport only.</p>
 <h2>env</h2>
 <p>The parameter <code>free_space</code> has been added to <a class="el" href="env_8h.html#a96a046de83d31127e79a7b16760b4776" title="Queue the array of objects (with length count) on the ring. ">spdk_ring_enqueue()</a> to wait when the ring is almost full and resume when there is enough space available in the ring.</p>
 <h1><a class="anchor" id="changelog-v19-04"></a>

@@ -143,6 +143,7 @@ $(document).ready(function(){initNavTree('log_8h.html','');});
 <div class="header">
   <div class="summary">
 <a href="#define-members">Macros</a> &#124;
+<a href="#typedef-members">Typedefs</a> &#124;
 <a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
@@ -165,6 +166,12 @@ Macros</h2></td></tr>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_ERRLOG</b>(...)&#160;&#160;&#160;<a class="el" href="log_8h.html#aaa20a1f56503b0d9f16c82b451fb338b">spdk_log</a>(SPDK_LOG_ERROR, __FILE__, __LINE__, __func__, __VA_ARGS__)</td></tr>
 <tr class="separator:a6b7bfeecff42b840ca5ebd25ffa84439"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:a5c6dd1e4fd0382d5d45a08f61f3d8138"><td class="memItemLeft" align="right" valign="top"><a id="a5c6dd1e4fd0382d5d45a08f61f3d8138"></a>
+typedef void&#160;</td><td class="memItemRight" valign="bottom"><b>logfunc</b>(int level, const char *file, const int line, const char *func, const char *format)</td></tr>
+<tr class="separator:a5c6dd1e4fd0382d5d45a08f61f3d8138"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
 <tr class="memitem:a188d351bd05093cba1d8594ee9988efd"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log_8h.html#a188d351bd05093cba1d8594ee9988efd">spdk_log_level</a> { <br />
@@ -181,9 +188,9 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a83352187f63ade8829ca300fc7eacd54"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log_8h.html#a83352187f63ade8829ca300fc7eacd54">spdk_log_open</a> (void)</td></tr>
-<tr class="memdesc:a83352187f63ade8829ca300fc7eacd54"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the logging module.  <a href="#a83352187f63ade8829ca300fc7eacd54">More...</a><br /></td></tr>
-<tr class="separator:a83352187f63ade8829ca300fc7eacd54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07465f114306f6d593ad4d3626b44b05"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log_8h.html#a07465f114306f6d593ad4d3626b44b05">spdk_log_open</a> (logfunc *logf)</td></tr>
+<tr class="memdesc:a07465f114306f6d593ad4d3626b44b05"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the logging module.  <a href="#a07465f114306f6d593ad4d3626b44b05">More...</a><br /></td></tr>
+<tr class="separator:a07465f114306f6d593ad4d3626b44b05"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a41cdc17423a58c475fa785fd491f00e9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log_8h.html#a41cdc17423a58c475fa785fd491f00e9">spdk_log_close</a> (void)</td></tr>
 <tr class="memdesc:a41cdc17423a58c475fa785fd491f00e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Close the currently active log.  <a href="#a41cdc17423a58c475fa785fd491f00e9">More...</a><br /></td></tr>
 <tr class="separator:a41cdc17423a58c475fa785fd491f00e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -494,8 +501,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a83352187f63ade8829ca300fc7eacd54"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a83352187f63ade8829ca300fc7eacd54">&#9670;&nbsp;</a></span>spdk_log_open()</h2>
+<a id="a07465f114306f6d593ad4d3626b44b05"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a07465f114306f6d593ad4d3626b44b05">&#9670;&nbsp;</a></span>spdk_log_open()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -503,8 +510,8 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">void spdk_log_open </td>
           <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">logfunc *&#160;</td>
+          <td class="paramname"><em>logf</em></td><td>)</td>
           <td></td>
         </tr>
       </table>

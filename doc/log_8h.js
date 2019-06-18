@@ -3,6 +3,7 @@ var log_8h =
     [ "SPDK_ERRLOG", "log_8h.html#a6b7bfeecff42b840ca5ebd25ffa84439", null ],
     [ "SPDK_NOTICELOG", "log_8h.html#a4dcd04f102bfd52627f41e43123bc916", null ],
     [ "SPDK_WARNLOG", "log_8h.html#abe2c8e734e26212d5aa718ef8de9d7e1", null ],
+    [ "logfunc", "log_8h.html#a5c6dd1e4fd0382d5d45a08f61f3d8138", null ],
     [ "spdk_log_level", "log_8h.html#a188d351bd05093cba1d8594ee9988efd", [
       [ "SPDK_LOG_DISABLED", "log_8h.html#a188d351bd05093cba1d8594ee9988efdaaaf05c57678e124375f03976b68940eb", null ],
       [ "SPDK_LOG_ERROR", "log_8h.html#a188d351bd05093cba1d8594ee9988efda1832db9861f6452883f70bf647378a36", null ],
@@ -19,7 +20,7 @@ var log_8h =
     [ "spdk_log_get_flag", "log_8h.html#a66ec4ca21d549ea445c7c662b3f1c637", null ],
     [ "spdk_log_get_level", "log_8h.html#af600090b2a4aa95b4e9e4dae27bf6c7e", null ],
     [ "spdk_log_get_print_level", "log_8h.html#a880b1e27d71328429dbf4f65e02ff145", null ],
-    [ "spdk_log_open", "log_8h.html#a83352187f63ade8829ca300fc7eacd54", null ],
+    [ "spdk_log_open", "log_8h.html#a07465f114306f6d593ad4d3626b44b05", null ],
     [ "spdk_log_set_backtrace_level", "log_8h.html#a1bc3422fdd3034925dd674b911c77c29", null ],
     [ "spdk_log_set_flag", "log_8h.html#aa9419a88ede016c62feaa52fb0fed019", null ],
     [ "spdk_log_set_level", "log_8h.html#a422b7a65819b43157a4771be78f544ee", null ],
