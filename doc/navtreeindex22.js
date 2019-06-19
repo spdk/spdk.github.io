@@ -1,5 +1,11 @@
 var NAVTREEINDEX22 =
 {
+"vhost_8h.html#a5ec56730c6a42b0a186131526026e619":[13,0,53,3],
+"vhost_8h.html#a6002d25166c3003efd3b6edb51cb84c0":[13,0,53,7],
+"vhost_8h.html#a8b37106ad173f20d05da87f89714700b":[13,0,53,1],
+"vhost_8h.html#a8b8c054fdc8ed4ad573b2d0bcf2d4797":[13,0,53,19],
+"vhost_8h.html#a8be392083ae01ad34cc05b1b5ce2b5e0":[13,0,53,12],
+"vhost_8h.html#aa06efc0d096d4414de40ed5c0b394622":[13,0,53,8],
 "vhost_8h.html#aa6eba1ce0ac89c3287b755567795869b":[13,0,53,10],
 "vhost_8h.html#ab35076d7e06edf2098b814929a04c7d5":[13,0,53,13],
 "vhost_8h.html#ac2c4b62eaf6503e5f5e520394f9f9fe1":[13,0,53,0],

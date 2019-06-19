@@ -1,7 +1,13 @@
 var NAVTREEINDEX19 =
 {
+"structspdk__ocssd__geometry__data.html#ac37ab8c7d75446d554d10384030bad30":[12,0,216,25],
+"structspdk__ocssd__geometry__data.html#ad9b0daa6248be6bb99132912caa05942":[12,0,216,20],
+"structspdk__ocssd__geometry__data.html#adecc1a99d16f94eace12b674c7b7bbfa":[12,0,216,2],
+"structspdk__ocssd__geometry__data.html#ae10c2500ca1c893e7d306845d0926960":[12,0,216,6],
+"structspdk__ocssd__geometry__data.html#ae1670174f6eebb2c7e2fa95e46c9d524":[12,0,216,18],
 "structspdk__ocssd__geometry__data.html#ae8973c867a5d732a5367165a51d7c69c":[12,0,216,28],
 "structspdk__ocssd__geometry__data.html#aea2698e1e80447d0645c25ebe7171275":[12,0,216,14],
+"structspdk__ocssd__geometry__data.html#aeb0df60a55415e9b85ef052b4847717f":[12,0,216,4],
 "structspdk__ocssd__geometry__data.html#af02812ac810e3da324a4ff8029f6d045":[12,0,216,8],
 "structspdk__ocssd__geometry__data.html#af40987a13156a6c830806eaffe73858f":[12,0,216,10],
 "structspdk__ocssd__geometry__data.html#af410423952b5efef27ace44307a5081e":[12,0,216,12],
@@ -243,11 +249,5 @@ var NAVTREEINDEX19 =
 "structspdk__scsi__pr__out__reg__and__move__param__list.html#ac69975ab96c6718c6d0932fa70c2e15a":[12,0,241,5],
 "structspdk__scsi__pr__out__reg__and__move__param__list.html#ad7fef8524a5cd292b3da0ca0945ffd12":[12,0,241,6],
 "structspdk__scsi__pr__out__reg__and__move__param__list.html#ae227db92110f48deb5db601fa607b688":[12,0,241,3],
-"structspdk__scsi__pr__out__reg__and__move__param__list.html#af9697b217d0fd037008beb34653b87f4":[12,0,241,4],
-"structspdk__scsi__task.html":[12,0,242],
-"structspdk__scsi__task.html#a101adf17cdbb1f5e08b2e161533e1b03":[12,0,242,4],
-"structspdk__scsi__task.html#a22482d12d534a2eab078068d586b9258":[12,0,242,3],
-"structspdk__scsi__task.html#a28ad6cf348a7dba852224daa27e89117":[12,0,242,0],
-"structspdk__scsi__task.html#a31f83a16a11e3e1e0465bc637b799147":[12,0,242,16],
-"structspdk__scsi__task.html#a355593ecb799474a678aacecf4878d31":[12,0,242,18]
+"structspdk__scsi__pr__out__reg__and__move__param__list.html#af9697b217d0fd037008beb34653b87f4":[12,0,241,4]
 };
