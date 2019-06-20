@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "c061eea6_f34ac4f5",
+        "filename": "_posts/2019-06-19-19.04.1_release.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 1011314
+      },
+      "writtenOn": "2019-06-20T15:25:01Z",
+      "side": 1,
+      "message": "How about changing this to \" ... change the default value when creating the transport using the -p option of the nvmf_create_transport rpc.\"",
+      "range": {
+        "startLine": 11,
+        "startChar": 104,
+        "endLine": 11,
+        "endChar": 213
+      },
+      "revId": "0a60fa3c52f5d663b7a133a4411311ac5a665901",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "49865c8b_f5c079a6",
+        "filename": "_posts/2019-06-19-19.04.1_release.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 1011314
+      },
+      "writtenOn": "2019-06-20T15:25:01Z",
+      "side": 1,
+      "message": "add \" condition\"",
+      "range": {
+        "startLine": 22,
+        "startChar": 10,
+        "endLine": 22,
+        "endChar": 11
+      },
+      "revId": "0a60fa3c52f5d663b7a133a4411311ac5a665901",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    }
+  ]
+}
