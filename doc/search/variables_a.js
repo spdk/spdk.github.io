@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['last_5fguard',['last_guard',['../structspdk__dif__ctx.html#aafb02a3a698fd60230e4a5fc3da883f4',1,'spdk_dif_ctx']]],
   ['lba',['lba',['../structspdk__ocssd__chunk__notification__entry.html#a2d96d597c27edd7e457218d85c01915d',1,'spdk_ocssd_chunk_notification_entry']]],
   ['lbads',['lbads',['../structspdk__nvme__ns__data.html#aad19d9beb62f0d1305c3a6874b11f284',1,'spdk_nvme_ns_data']]],
   ['lbaf',['lbaf',['../structspdk__ocssd__geometry__data.html#a4eba476411cda99524796a82761f0823',1,'spdk_ocssd_geometry_data::lbaf()'],['../structspdk__nvme__ns__data.html#a0559adb40678857bc4174a6838f88fe9',1,'spdk_nvme_ns_data::lbaf()']]],

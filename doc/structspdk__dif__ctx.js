@@ -9,6 +9,7 @@ var structspdk__dif__ctx =
     [ "guard_interval", "structspdk__dif__ctx.html#a593aef5de5694c4abd05554ed4ac92a7", null ],
     [ "guard_seed", "structspdk__dif__ctx.html#a4a88c9f2f65216b9d5b61e49665f389b", null ],
     [ "init_ref_tag", "structspdk__dif__ctx.html#ac5d6870db5b4eb661b7a37f94ff81dc8", null ],
+    [ "last_guard", "structspdk__dif__ctx.html#aafb02a3a698fd60230e4a5fc3da883f4", null ],
     [ "md_size", "structspdk__dif__ctx.html#a70bae2b0c71c14a91163f89d4e215802", null ],
     [ "ref_tag_offset", "structspdk__dif__ctx.html#aef0637cad47cfd8bc20bb0f085c59479", null ]
 ];
