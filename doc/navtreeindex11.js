@@ -1,5 +1,7 @@
 var NAVTREEINDEX11 =
 {
+"sock_8h.html#aec412e1537891ed4a02c24615df619b0":[13,0,45,14],
+"spdkcli.html":[8,0],
 "ssd_internals.html":[2,3],
 "stdinc_8h.html":[13,0,46],
 "string_8h.html":[13,0,47],
@@ -247,7 +249,5 @@ var NAVTREEINDEX11 =
 "structiscsi__bhs__scsi__resp.html#a2ab21932ae7df9351c82b03d30d719f6":[12,0,15,4],
 "structiscsi__bhs__scsi__resp.html#a2e14cc540cfa43800a589a0dea974c48":[12,0,15,5],
 "structiscsi__bhs__scsi__resp.html#a48c5abcd3c68ac3036e827bc3fcf33b6":[12,0,15,11],
-"structiscsi__bhs__scsi__resp.html#a51c36e8190b55c4938ef431894eaedfc":[12,0,15,10],
-"structiscsi__bhs__scsi__resp.html#a58bd196fea3659c75215818b6eae5b5f":[12,0,15,9],
-"structiscsi__bhs__scsi__resp.html#a617f96ce5c4e3009c89c02b0af4100d2":[12,0,15,13]
+"structiscsi__bhs__scsi__resp.html#a51c36e8190b55c4938ef431894eaedfc":[12,0,15,10]
 };

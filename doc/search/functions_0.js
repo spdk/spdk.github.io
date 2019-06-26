@@ -617,6 +617,8 @@ var searchData=
   ['spdk_5fpci_5fdevice_5fmap_5fbar',['spdk_pci_device_map_bar',['../env_8h.html#ab1964fc8e4bdbe6c8fc3002f063a6747',1,'env.h']]],
   ['spdk_5fpci_5fdevice_5funmap_5fbar',['spdk_pci_device_unmap_bar',['../env_8h.html#a80b33324546e79d1478f25c185076336',1,'env.h']]],
   ['spdk_5fpci_5fenumerate',['spdk_pci_enumerate',['../env_8h.html#a8e2430eaebf3d756c8608aea6957b614',1,'env.h']]],
+  ['spdk_5fpci_5fget_5ffirst_5fdevice',['spdk_pci_get_first_device',['../env_8h.html#ac98526545d85af08018dcbaebca8c49c',1,'env.h']]],
+  ['spdk_5fpci_5fget_5fnext_5fdevice',['spdk_pci_get_next_device',['../env_8h.html#ad5292c669ec570b15694bfd1952f0868',1,'env.h']]],
   ['spdk_5fpci_5fhook_5fdevice',['spdk_pci_hook_device',['../env_8h.html#ac3850938d8aaf6363bd76e690f17de30',1,'env.h']]],
   ['spdk_5fpci_5fioat_5fget_5fdriver',['spdk_pci_ioat_get_driver',['../env_8h.html#ad9d208ba1e19b37b76bb993c358b5760',1,'env.h']]],
   ['spdk_5fpci_5fnvme_5fget_5fdriver',['spdk_pci_nvme_get_driver',['../env_8h.html#aa4a5c3c4f51c1eaac132f6093fe219f4',1,'env.h']]],
