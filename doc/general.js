@@ -25,7 +25,8 @@ var general =
       [ "1. Building VPP (optional)", "vpp_integration.html#vpp_build", null ],
       [ "2. Installing VPP", "vpp_integration.html#vpp_install", null ],
       [ "3. Running VPP", "vpp_integration.html#vpp_run", null ],
-      [ "4. Building SPDK with VPP", "vpp_integration.html#vpp_built_into_spdk", null ],
-      [ "5. Running SPDK with VPP", "vpp_integration.html#vpp_running_with_spdk", null ]
+      [ "4. Configure VPP", "vpp_integration.html#vpp_config", null ],
+      [ "5. Building SPDK with VPP", "vpp_integration.html#vpp_built_into_spdk", null ],
+      [ "6. Running SPDK with VPP", "vpp_integration.html#vpp_running_with_spdk", null ]
     ] ]
 ];
