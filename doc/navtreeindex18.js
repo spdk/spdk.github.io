@@ -1,5 +1,17 @@
 var NAVTREEINDEX18 =
 {
+"structspdk__nvmf__fabric__connect__rsp.html#a5a48e004f5c8fd7eba5b8a8bf51d3985":[12,0,181,5],
+"structspdk__nvmf__fabric__connect__rsp.html#a6d403ab149673ecfffa7c1b1dbe5b6ca":[12,0,181,11],
+"structspdk__nvmf__fabric__connect__rsp.html#a848678352cac624d515531579a564b3b":[12,0,181,8],
+"structspdk__nvmf__fabric__connect__rsp.html#a92a43aa49c7941ede56a8d79c80aa309":[12,0,181,1],
+"structspdk__nvmf__fabric__connect__rsp.html#aac5dbf49798fca0a1e34431302771492":[12,0,181,12],
+"structspdk__nvmf__fabric__connect__rsp.html#ab493286c42c84f20252ceb88068fe6b3":[12,0,181,3],
+"structspdk__nvmf__fabric__connect__rsp.html#abb372f82df59334c1438b784301dc164":[12,0,181,7],
+"structspdk__nvmf__fabric__connect__rsp.html#abc192ed82752821cbbe678d3318379dc":[12,0,181,6],
+"structspdk__nvmf__fabric__connect__rsp.html#ad6f62d5695d08df72d34df52954d1c77":[12,0,181,4],
+"structspdk__nvmf__fabric__connect__rsp.html#ae13292d92189ffac9876ac42bb902fa7":[12,0,181,10],
+"structspdk__nvmf__fabric__prop__get__cmd.html":[12,0,182],
+"structspdk__nvmf__fabric__prop__get__cmd.html#a14d045b339b3ada491677dc98872a439":[12,0,182,2],
 "structspdk__nvmf__fabric__prop__get__cmd.html#a3e06b0f19c3de00c73e5146c3415136f":[12,0,182,9],
 "structspdk__nvmf__fabric__prop__get__cmd.html#a408856cb14de38aafa2850bf695c2c2a":[12,0,182,7],
 "structspdk__nvmf__fabric__prop__get__cmd.html#a47483adff5311a98ed8092b8057c4abd":[12,0,182,3],
@@ -237,17 +249,5 @@ var NAVTREEINDEX18 =
 "structspdk__ocssd__dev__lba__fmt.html#a8b5ed3a8b5a46f41a1f6e6d389b8bbce":[12,0,215,1],
 "structspdk__ocssd__dev__lba__fmt.html#a8e9b63b4cacbc9ade730ab60fe74b58a":[12,0,215,4],
 "structspdk__ocssd__dev__lba__fmt.html#ae20247c5bd5f2576b67957980bf58333":[12,0,215,3],
-"structspdk__ocssd__geometry__data.html":[12,0,216],
-"structspdk__ocssd__geometry__data.html#a0f15dc726bcf4cac33752f0fab8a4e36":[12,0,216,29],
-"structspdk__ocssd__geometry__data.html#a1e42dcab27a59b02df913acc08e129b4":[12,0,216,5],
-"structspdk__ocssd__geometry__data.html#a21184c8bd337762734f94dfe74025971":[12,0,216,11],
-"structspdk__ocssd__geometry__data.html#a277515978925f74508441bce44027a4c":[12,0,216,0],
-"structspdk__ocssd__geometry__data.html#a2f87e8d24658d83d242e2d4577071206":[12,0,216,15],
-"structspdk__ocssd__geometry__data.html#a3d5ae53da075ef580a641bec35889c3d":[12,0,216,30],
-"structspdk__ocssd__geometry__data.html#a4126ac6e1846920ef940648bba63dd98":[12,0,216,22],
-"structspdk__ocssd__geometry__data.html#a41cbb6105fc3f81b9af6f8980d04c92e":[12,0,216,19],
-"structspdk__ocssd__geometry__data.html#a442207ead65c8fd630a090d4452e66b7":[12,0,216,17],
-"structspdk__ocssd__geometry__data.html#a48998a2ff49cafa400bed7cc639db747":[12,0,216,24],
-"structspdk__ocssd__geometry__data.html#a4aa677e5f24826c750773b4201cd1ea3":[12,0,216,27],
-"structspdk__ocssd__geometry__data.html#a4ab0d6368b89242e78483d6e44d931a7":[12,0,216,23]
+"structspdk__ocssd__geometry__data.html":[12,0,216]
 };

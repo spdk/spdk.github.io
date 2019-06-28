@@ -1,5 +1,17 @@
 var NAVTREEINDEX11 =
 {
+"sock_8h.html#a73c5abe4d97ecc3521c37b345f7fbfd4":[13,0,45,9],
+"sock_8h.html#aa07f7a676410527883e2f8159ea1bfea":[13,0,45,5],
+"sock_8h.html#aac5acbacae856635602b0f40c8b676b2":[13,0,45,7],
+"sock_8h.html#ab596707e3e18b6f3e4ceb365369a3b8f":[13,0,45,4],
+"sock_8h.html#abab9e8eaebfc2857e05848580fba864e":[13,0,45,15],
+"sock_8h.html#aca9341be3f9ec5bd7e571f328e749328":[13,0,45,8],
+"sock_8h.html#ad10e77b4f8d7ba40ec75c69247541ef7":[13,0,45,19],
+"sock_8h.html#ad52142b9c60b305a1eaaf869a321c790":[13,0,45,10],
+"sock_8h.html#ad75fdb315be08263dd42aa20e1ca5df9":[13,0,45,6],
+"sock_8h.html#ae297ae75e566b35635d20b959daa7741":[13,0,45,0],
+"sock_8h.html#ae2fc8fd68b9988e2ec771a82914dcc80":[13,0,45,12],
+"sock_8h.html#aec2209ac3d7d278cede96696116662d3":[13,0,45,16],
 "sock_8h.html#aec412e1537891ed4a02c24615df619b0":[13,0,45,14],
 "spdkcli.html":[8,0],
 "ssd_internals.html":[2,3],
@@ -237,17 +249,5 @@ var NAVTREEINDEX11 =
 "structiscsi__bhs__scsi__req.html#a8623a3a5e0b07243b46d808478dd7e38":[12,0,14,4],
 "structiscsi__bhs__scsi__req.html#a9db791a7d52f5220b33b5d63f9b26665":[12,0,14,11],
 "structiscsi__bhs__scsi__req.html#aa8f3dac49b9ff65c55c2271cda6e5cb2":[12,0,14,15],
-"structiscsi__bhs__scsi__req.html#aab5d76354efcdc6b343ef2995ec7a545":[12,0,14,6],
-"structiscsi__bhs__scsi__req.html#ab18ab60b1b602ca205b278fdf565cad6":[12,0,14,7],
-"structiscsi__bhs__scsi__req.html#ab51a8bf3d3ddf9df7f448b7ce59edc73":[12,0,14,5],
-"structiscsi__bhs__scsi__req.html#abe273db2b649b25285e7da4cb4a2538a":[12,0,14,10],
-"structiscsi__bhs__scsi__req.html#ac3f054f35c949d97d29973d9ada7bb29":[12,0,14,13],
-"structiscsi__bhs__scsi__req.html#ae46b65678620beb8fd394f1391a5fb69":[12,0,14,8],
-"structiscsi__bhs__scsi__resp.html":[12,0,15],
-"structiscsi__bhs__scsi__resp.html#a16727e00feba37bab16cdea7a01f55c0":[12,0,15,6],
-"structiscsi__bhs__scsi__resp.html#a1730fa1a1dbc92e98c7efd7d9bbfe8ba":[12,0,15,2],
-"structiscsi__bhs__scsi__resp.html#a2ab21932ae7df9351c82b03d30d719f6":[12,0,15,4],
-"structiscsi__bhs__scsi__resp.html#a2e14cc540cfa43800a589a0dea974c48":[12,0,15,5],
-"structiscsi__bhs__scsi__resp.html#a48c5abcd3c68ac3036e827bc3fcf33b6":[12,0,15,11],
-"structiscsi__bhs__scsi__resp.html#a51c36e8190b55c4938ef431894eaedfc":[12,0,15,10]
+"structiscsi__bhs__scsi__req.html#aab5d76354efcdc6b343ef2995ec7a545":[12,0,14,6]
 };

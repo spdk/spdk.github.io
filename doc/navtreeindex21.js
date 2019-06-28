@@ -1,5 +1,17 @@
 var NAVTREEINDEX21 =
 {
+"unionspdk__nvme__bprsel__register.html#aec5aa2286f6c15c07cd269ac3ef35613":[12,0,88,1],
+"unionspdk__nvme__cap__register.html":[12,0,89],
+"unionspdk__nvme__cap__register.html#a0735764b17145514c455788b5c3ed21d":[12,0,89,11],
+"unionspdk__nvme__cap__register.html#a37a043c068e8992317712cc7d95e9249":[12,0,89,10],
+"unionspdk__nvme__cap__register.html#a4b8860fc60a762e66979666ae1ac3563":[12,0,89,12],
+"unionspdk__nvme__cap__register.html#a6d6c8f5ede010b705296692e72e0b645":[12,0,89,13],
+"unionspdk__nvme__cap__register.html#a75640e3e0a03f22456503acbebc20f46":[12,0,89,0],
+"unionspdk__nvme__cap__register.html#a7ca23ffbd756451f561b8972160f8281":[12,0,89,8],
+"unionspdk__nvme__cap__register.html#a9930c21595d81e7eefa8cca0e118450a":[12,0,89,7],
+"unionspdk__nvme__cap__register.html#a9bbd0513d0df169766c0f74adfc4dde1":[12,0,89,2],
+"unionspdk__nvme__cap__register.html#ac8d0f8ca7261552f9fa5894b0c637fd5":[12,0,89,9],
+"unionspdk__nvme__cap__register.html#ad4b6659be786f840893818e951fc1f3d":[12,0,89,6],
 "unionspdk__nvme__cap__register.html#ad8004bf4870d89a73f8d4d95db5d746d":[12,0,89,3],
 "unionspdk__nvme__cap__register.html#adae67761c7519837503eef9e72c3250f":[12,0,89,14],
 "unionspdk__nvme__cap__register.html#ae1c1bd33e423e8f71e98fa6d9538a2c2":[12,0,89,1],
@@ -237,17 +249,5 @@ var NAVTREEINDEX21 =
 "version_8h.html#ae9ff8f284ac56fc34809837cce88567f":[13,0,52,9],
 "version_8h.html#af45ea3cba76c12cc449b6556c1982038":[13,0,52,0],
 "vhost.html":[3,4],
-"vhost.html#vhost_advanced_topics":[3,4,5],
-"vhost.html#vhost_bdev_create":[3,4,4,0],
-"vhost.html#vhost_bugs":[3,4,6],
-"vhost.html#vhost_cmd_line_args":[3,4,2,0],
-"vhost.html#vhost_config":[3,4,4],
-"vhost.html#vhost_example":[3,4,4,3],
-"vhost.html#vhost_hotattach":[3,4,5,1],
-"vhost.html#vhost_intro":[3,4,1],
-"vhost.html#vhost_multiqueue":[3,4,5,0],
-"vhost.html#vhost_prereqs":[3,4,2],
-"vhost.html#vhost_qemu_config":[3,4,4,2],
-"vhost.html#vhost_start":[3,4,3],
-"vhost.html#vhost_toc":[3,4,0]
+"vhost.html#vhost_advanced_topics":[3,4,5]
 };

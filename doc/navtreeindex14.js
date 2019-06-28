@@ -1,5 +1,17 @@
 var NAVTREEINDEX14 =
 {
+"structspdk__ftl__punit__range.html#a8c3117aa91909a22dc28c8ebcd1292b9":[12,0,58,0],
+"structspdk__gpt__guid.html":[12,0,59],
+"structspdk__gpt__guid.html#a3858a37519f6fa4adc3548f0e55da77d":[12,0,59,0],
+"structspdk__gpt__header.html":[12,0,60],
+"structspdk__gpt__header.html#a02583e22705d6cb51f5e51c8ce89c6d9":[12,0,60,8],
+"structspdk__gpt__header.html#a05faf4ea492f64dd771d5e88a3f9df11":[12,0,60,0],
+"structspdk__gpt__header.html#a294af705aee4d9a247eafcf4a3e42149":[12,0,60,5],
+"structspdk__gpt__header.html#a4575fa236af26505b3db85200564aa3b":[12,0,60,7],
+"structspdk__gpt__header.html#a45eda2ad4c4ab3d1fdee4970d7bac23f":[12,0,60,12],
+"structspdk__gpt__header.html#a58e6881477f149a5d209224f0e3de251":[12,0,60,6],
+"structspdk__gpt__header.html#a5b78bde79d218778155b67f90a8b1420":[12,0,60,2],
+"structspdk__gpt__header.html#aa2a2cd8514fdc5492f839e8ed50da813":[12,0,60,9],
 "structspdk__gpt__header.html#aa541125aa4c3e8ec96cc3c502960047c":[12,0,60,10],
 "structspdk__gpt__header.html#ab0d0585f01964325ab224eeb6980d2b7":[12,0,60,3],
 "structspdk__gpt__header.html#ab9e76375ba12998aebd8ce3184a38937":[12,0,60,1],
@@ -237,17 +249,5 @@ var NAVTREEINDEX14 =
 "structspdk__mbr__chs.html":[12,0,80],
 "structspdk__mbr__chs.html#a0851c4b7be4d74e08fccee220d24c5b2":[12,0,80,0],
 "structspdk__mbr__chs.html#a86e4f966ca21e57a438f4d2d35ac1913":[12,0,80,1],
-"structspdk__mbr__chs.html#af849ba65f48f8282305c95fec4b250d7":[12,0,80,2],
-"structspdk__mbr__partition__entry.html":[12,0,81],
-"structspdk__mbr__partition__entry.html#a8bba2ff203f01fe4c2cb64faa66777ba":[12,0,81,4],
-"structspdk__mbr__partition__entry.html#ab56523303a39558a9ffa23ff6dd1ed23":[12,0,81,0],
-"structspdk__mbr__partition__entry.html#ab74ba691339bc32ed6e03af6f75927a1":[12,0,81,2],
-"structspdk__mbr__partition__entry.html#ab96ad021e0366090b99b89ef32784fe3":[12,0,81,1],
-"structspdk__mbr__partition__entry.html#ad49a544b0562f2c42fbe097bed2a3209":[12,0,81,6],
-"structspdk__mbr__partition__entry.html#ae82f31d2ed8398960fee591567137c73":[12,0,81,5],
-"structspdk__mbr__partition__entry.html#af28d34fafdf0c27e70cefdf1a6e5fbeb":[12,0,81,3],
-"structspdk__mem__map__ops.html":[12,0,82],
-"structspdk__mem__map__ops.html#a08ac3d51bc6941f140d262e02e233f55":[12,0,82,1],
-"structspdk__mem__map__ops.html#a31f979613595b1d324ffd58ff60cd69d":[12,0,82,0],
-"structspdk__net__framework.html":[12,0,83]
+"structspdk__mbr__chs.html#af849ba65f48f8282305c95fec4b250d7":[12,0,80,2]
 };

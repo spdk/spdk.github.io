@@ -286,6 +286,42 @@ Functions</h2></td></tr>
 <tr class="memitem:a816f18c23723f7211b0a5a277904b202"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blobfs_8h.html#a816f18c23723f7211b0a5a277904b202">spdk_file_get_id</a> (struct spdk_file *file, void *id, size_t size)</td></tr>
 <tr class="memdesc:a816f18c23723f7211b0a5a277904b202"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the unique ID for the file.  <a href="#a816f18c23723f7211b0a5a277904b202">More...</a><br /></td></tr>
 <tr class="separator:a816f18c23723f7211b0a5a277904b202"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeae326b5c82851eb05e92c65f939cda3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blobfs_8h.html#aeae326b5c82851eb05e92c65f939cda3">spdk_file_readv_async</a> (struct spdk_file *file, struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *channel, struct iovec *iovs, uint32_t iovcnt, uint64_t offset, uint64_t length, <a class="el" href="blobfs_8h.html#aa246577176997af494265f9563f5ab42">spdk_file_op_complete</a> cb_fn, void *cb_arg)</td></tr>
+<tr class="memdesc:aeae326b5c82851eb05e92c65f939cda3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read data to user buffer from the given file.  <a href="#aeae326b5c82851eb05e92c65f939cda3">More...</a><br /></td></tr>
+<tr class="separator:aeae326b5c82851eb05e92c65f939cda3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6ee5c4b8d64f5e6e0cf7e6b227aa28c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blobfs_8h.html#af6ee5c4b8d64f5e6e0cf7e6b227aa28c">spdk_file_writev_async</a> (struct spdk_file *file, struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *channel, struct iovec *iovs, uint32_t iovcnt, uint64_t offset, uint64_t length, <a class="el" href="blobfs_8h.html#aa246577176997af494265f9563f5ab42">spdk_file_op_complete</a> cb_fn, void *cb_arg)</td></tr>
+<tr class="memdesc:af6ee5c4b8d64f5e6e0cf7e6b227aa28c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write data to the given file.  <a href="#af6ee5c4b8d64f5e6e0cf7e6b227aa28c">More...</a><br /></td></tr>
+<tr class="separator:af6ee5c4b8d64f5e6e0cf7e6b227aa28c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4fa764929b55d3a89abb575dbb955e3d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blobfs_8h.html#a4fa764929b55d3a89abb575dbb955e3d">spdk_fs_file_stat_async</a> (struct spdk_filesystem *fs, const char *name, <a class="el" href="blobfs_8h.html#aeb897b0bd0d1f6c72bd02049bfb4ebc9">spdk_file_stat_op_complete</a> cb_fn, void *cb_arg)</td></tr>
+<tr class="memdesc:a4fa764929b55d3a89abb575dbb955e3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get statistics about the file including the underlying blob id and the file size.  <a href="#a4fa764929b55d3a89abb575dbb955e3d">More...</a><br /></td></tr>
+<tr class="separator:a4fa764929b55d3a89abb575dbb955e3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace802cb036de60c254a970b307e0965b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blobfs_8h.html#ace802cb036de60c254a970b307e0965b">spdk_fs_create_file_async</a> (struct spdk_filesystem *fs, const char *name, <a class="el" href="blobfs_8h.html#aa246577176997af494265f9563f5ab42">spdk_file_op_complete</a> cb_fn, void *cb_arg)</td></tr>
+<tr class="memdesc:ace802cb036de60c254a970b307e0965b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new file on the given blobstore filesystem.  <a href="#ace802cb036de60c254a970b307e0965b">More...</a><br /></td></tr>
+<tr class="separator:ace802cb036de60c254a970b307e0965b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac44219b77d6d990e5ea6b877aa343274"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blobfs_8h.html#ac44219b77d6d990e5ea6b877aa343274">spdk_fs_open_file_async</a> (struct spdk_filesystem *fs, const char *name, uint32_t flags, <a class="el" href="blobfs_8h.html#a48d23cdca11ee9b0e44bda1924664ad5">spdk_file_op_with_handle_complete</a> cb_fn, void *cb_arg)</td></tr>
+<tr class="memdesc:ac44219b77d6d990e5ea6b877aa343274"><td class="mdescLeft">&#160;</td><td class="mdescRight">Open the file.  <a href="#ac44219b77d6d990e5ea6b877aa343274">More...</a><br /></td></tr>
+<tr class="separator:ac44219b77d6d990e5ea6b877aa343274"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a022a9adc9eb729a586c39f63e4fda0c8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blobfs_8h.html#a022a9adc9eb729a586c39f63e4fda0c8">spdk_file_close_async</a> (struct spdk_file *file, <a class="el" href="blobfs_8h.html#aa246577176997af494265f9563f5ab42">spdk_file_op_complete</a> cb_fn, void *cb_arg)</td></tr>
+<tr class="memdesc:a022a9adc9eb729a586c39f63e4fda0c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Close the file.  <a href="#a022a9adc9eb729a586c39f63e4fda0c8">More...</a><br /></td></tr>
+<tr class="separator:a022a9adc9eb729a586c39f63e4fda0c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad50c77720a35f96c020fa83d9c9791c3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blobfs_8h.html#ad50c77720a35f96c020fa83d9c9791c3">spdk_fs_rename_file_async</a> (struct spdk_filesystem *fs, const char *old_name, const char *new_name, spdk_fs_op_complete cb_fn, void *cb_arg)</td></tr>
+<tr class="memdesc:ad50c77720a35f96c020fa83d9c9791c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Change the file name.  <a href="#ad50c77720a35f96c020fa83d9c9791c3">More...</a><br /></td></tr>
+<tr class="separator:ad50c77720a35f96c020fa83d9c9791c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68db54cba2e490f90ec41ac72e9d4de9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blobfs_8h.html#a68db54cba2e490f90ec41ac72e9d4de9">spdk_fs_delete_file_async</a> (struct spdk_filesystem *fs, const char *name, <a class="el" href="blobfs_8h.html#aa246577176997af494265f9563f5ab42">spdk_file_op_complete</a> cb_fn, void *cb_arg)</td></tr>
+<tr class="memdesc:a68db54cba2e490f90ec41ac72e9d4de9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delete the file.  <a href="#a68db54cba2e490f90ec41ac72e9d4de9">More...</a><br /></td></tr>
+<tr class="separator:a68db54cba2e490f90ec41ac72e9d4de9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93b6a053905940b3fda316310d7db900"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blobfs_8h.html#a93b6a053905940b3fda316310d7db900">spdk_file_truncate_async</a> (struct spdk_file *file, uint64_t length, <a class="el" href="blobfs_8h.html#aa246577176997af494265f9563f5ab42">spdk_file_op_complete</a> cb_fn, void *cb_arg)</td></tr>
+<tr class="memdesc:a93b6a053905940b3fda316310d7db900"><td class="mdescLeft">&#160;</td><td class="mdescRight">Truncate the file.  <a href="#a93b6a053905940b3fda316310d7db900">More...</a><br /></td></tr>
+<tr class="separator:a93b6a053905940b3fda316310d7db900"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a303cbfa000c7915bc4bf93b367c5648f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blobfs_8h.html#a303cbfa000c7915bc4bf93b367c5648f">spdk_file_write_async</a> (struct spdk_file *file, struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *channel, void *payload, uint64_t offset, uint64_t length, <a class="el" href="blobfs_8h.html#aa246577176997af494265f9563f5ab42">spdk_file_op_complete</a> cb_fn, void *cb_arg)</td></tr>
+<tr class="memdesc:a303cbfa000c7915bc4bf93b367c5648f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write data to the given file.  <a href="#a303cbfa000c7915bc4bf93b367c5648f">More...</a><br /></td></tr>
+<tr class="separator:a303cbfa000c7915bc4bf93b367c5648f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e2912cd60cd8ec5e7ac97d69c34923e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blobfs_8h.html#a3e2912cd60cd8ec5e7ac97d69c34923e">spdk_file_read_async</a> (struct spdk_file *file, struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *channel, void *payload, uint64_t offset, uint64_t length, <a class="el" href="blobfs_8h.html#aa246577176997af494265f9563f5ab42">spdk_file_op_complete</a> cb_fn, void *cb_arg)</td></tr>
+<tr class="memdesc:a3e2912cd60cd8ec5e7ac97d69c34923e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read data to user buffer from the given file.  <a href="#a3e2912cd60cd8ec5e7ac97d69c34923e">More...</a><br /></td></tr>
+<tr class="separator:a3e2912cd60cd8ec5e7ac97d69c34923e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab345f64cc9f6f931be12ccc5a6674f70"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blobfs_8h.html#ab345f64cc9f6f931be12ccc5a6674f70">spdk_file_sync_async</a> (struct spdk_file *file, struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *channel, <a class="el" href="blobfs_8h.html#aa246577176997af494265f9563f5ab42">spdk_file_op_complete</a> cb_fn, void *cb_arg)</td></tr>
+<tr class="memdesc:ab345f64cc9f6f931be12ccc5a6674f70"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sync all dirty cache buffers to the backing block device.  <a href="#ab345f64cc9f6f931be12ccc5a6674f70">More...</a><br /></td></tr>
+<tr class="separator:ab345f64cc9f6f931be12ccc5a6674f70"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>SPDK Filesystem. </p>
@@ -470,6 +506,51 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a022a9adc9eb729a586c39f63e4fda0c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a022a9adc9eb729a586c39f63e4fda0c8">&#9670;&nbsp;</a></span>spdk_file_close_async()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_file_close_async </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_file *&#160;</td>
+          <td class="paramname"><em>file</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="blobfs_8h.html#aa246577176997af494265f9563f5ab42">spdk_file_op_complete</a>&#160;</td>
+          <td class="paramname"><em>cb_fn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>cb_arg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Close the file. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">file</td><td>File to close. </td></tr>
+    <tr><td class="paramname">cb_fn</td><td>Called when the request is complete. </td></tr>
+    <tr><td class="paramname">cb_arg</td><td>Argument passed to cb_fn.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>return None. </p>
+
+</div>
+</div>
 <a id="a816f18c23723f7211b0a5a277904b202"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a816f18c23723f7211b0a5a277904b202">&#9670;&nbsp;</a></span>spdk_file_get_id()</h2>
 
@@ -628,6 +709,159 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a3e2912cd60cd8ec5e7ac97d69c34923e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e2912cd60cd8ec5e7ac97d69c34923e">&#9670;&nbsp;</a></span>spdk_file_read_async()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_file_read_async </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_file *&#160;</td>
+          <td class="paramname"><em>file</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *&#160;</td>
+          <td class="paramname"><em>channel</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>payload</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>offset</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>length</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="blobfs_8h.html#aa246577176997af494265f9563f5ab42">spdk_file_op_complete</a>&#160;</td>
+          <td class="paramname"><em>cb_fn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>cb_arg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Read data to user buffer from the given file. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">file</td><td>File to write. </td></tr>
+    <tr><td class="paramname">channel</td><td>I/O channel for asynchronous operations. </td></tr>
+    <tr><td class="paramname">payload</td><td>The specified buffer which will store the obtained data. </td></tr>
+    <tr><td class="paramname">offset</td><td>The beginning position to read. </td></tr>
+    <tr><td class="paramname">length</td><td>The size in bytes of data to read. </td></tr>
+    <tr><td class="paramname">cb_fn</td><td>Called when the request is complete. </td></tr>
+    <tr><td class="paramname">cb_arg</td><td>Argument passed to cb_fn.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>return None. </p>
+
+</div>
+</div>
+<a id="aeae326b5c82851eb05e92c65f939cda3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeae326b5c82851eb05e92c65f939cda3">&#9670;&nbsp;</a></span>spdk_file_readv_async()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_file_readv_async </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_file *&#160;</td>
+          <td class="paramname"><em>file</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *&#160;</td>
+          <td class="paramname"><em>channel</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct iovec *&#160;</td>
+          <td class="paramname"><em>iovs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>iovcnt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>offset</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>length</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="blobfs_8h.html#aa246577176997af494265f9563f5ab42">spdk_file_op_complete</a>&#160;</td>
+          <td class="paramname"><em>cb_fn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>cb_arg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Read data to user buffer from the given file. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">file</td><td>File to read. </td></tr>
+    <tr><td class="paramname">channel</td><td>I/O channel for asynchronous operations. </td></tr>
+    <tr><td class="paramname">iovs</td><td>A scatter gather list of buffers to be read into. </td></tr>
+    <tr><td class="paramname">iovcnt</td><td>The number of elements in iov. </td></tr>
+    <tr><td class="paramname">offset</td><td>The beginning position to read. </td></tr>
+    <tr><td class="paramname">length</td><td>The size in bytes of data to read. </td></tr>
+    <tr><td class="paramname">cb_fn</td><td>Called when the request is complete. </td></tr>
+    <tr><td class="paramname">cb_arg</td><td>Argument passed to cb_fn.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>None. </dd></dl>
+
+</div>
+</div>
 <a id="adb2197f34f626761c83b9eb7effacf4e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#adb2197f34f626761c83b9eb7effacf4e">&#9670;&nbsp;</a></span>spdk_file_set_priority()</h2>
 
@@ -703,6 +937,59 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="ab345f64cc9f6f931be12ccc5a6674f70"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab345f64cc9f6f931be12ccc5a6674f70">&#9670;&nbsp;</a></span>spdk_file_sync_async()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_file_sync_async </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_file *&#160;</td>
+          <td class="paramname"><em>file</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *&#160;</td>
+          <td class="paramname"><em>channel</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="blobfs_8h.html#aa246577176997af494265f9563f5ab42">spdk_file_op_complete</a>&#160;</td>
+          <td class="paramname"><em>cb_fn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>cb_arg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sync all dirty cache buffers to the backing block device. </p>
+<p>For async usage models, completion of the sync indicates only that data written when the sync command was issued have been flushed to disk - it does not guarantee any writes submitted after the sync have been flushed, even if those writes are completed before the sync.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">file</td><td>File to write. </td></tr>
+    <tr><td class="paramname">channel</td><td>I/O channel for asynchronous operations. </td></tr>
+    <tr><td class="paramname">cb_fn</td><td>Called when the request is complete. </td></tr>
+    <tr><td class="paramname">cb_arg</td><td>Argument passed to cb_fn.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>return None. </p>
+
+</div>
+</div>
 <a id="ada4d09ddb42d39ba04b437193dc33d69"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ada4d09ddb42d39ba04b437193dc33d69">&#9670;&nbsp;</a></span>spdk_file_truncate()</h2>
 
@@ -745,6 +1032,58 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 on success, negative errno on failure. </dd></dl>
+
+</div>
+</div>
+<a id="a93b6a053905940b3fda316310d7db900"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a93b6a053905940b3fda316310d7db900">&#9670;&nbsp;</a></span>spdk_file_truncate_async()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_file_truncate_async </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_file *&#160;</td>
+          <td class="paramname"><em>file</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>length</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="blobfs_8h.html#aa246577176997af494265f9563f5ab42">spdk_file_op_complete</a>&#160;</td>
+          <td class="paramname"><em>cb_fn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>cb_arg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Truncate the file. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">file</td><td>File to truncate. </td></tr>
+    <tr><td class="paramname">length</td><td>New size in bytes of the file. </td></tr>
+    <tr><td class="paramname">cb_fn</td><td>Called when the request is complete. </td></tr>
+    <tr><td class="paramname">cb_arg</td><td>Argument passed to cb_fn.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>return None. </p>
 
 </div>
 </div>
@@ -804,6 +1143,159 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 on success, negative errno on failure. </dd></dl>
+
+</div>
+</div>
+<a id="a303cbfa000c7915bc4bf93b367c5648f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a303cbfa000c7915bc4bf93b367c5648f">&#9670;&nbsp;</a></span>spdk_file_write_async()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_file_write_async </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_file *&#160;</td>
+          <td class="paramname"><em>file</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *&#160;</td>
+          <td class="paramname"><em>channel</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>payload</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>offset</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>length</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="blobfs_8h.html#aa246577176997af494265f9563f5ab42">spdk_file_op_complete</a>&#160;</td>
+          <td class="paramname"><em>cb_fn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>cb_arg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Write data to the given file. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">file</td><td>File to write. </td></tr>
+    <tr><td class="paramname">channel</td><td>I/O channel for asynchronous operations. </td></tr>
+    <tr><td class="paramname">payload</td><td>The specified buffer which should contain the data to be transmitted. </td></tr>
+    <tr><td class="paramname">offset</td><td>The beginning position to write data. </td></tr>
+    <tr><td class="paramname">length</td><td>The size in bytes of data to write. </td></tr>
+    <tr><td class="paramname">cb_fn</td><td>Called when the request is complete. </td></tr>
+    <tr><td class="paramname">cb_arg</td><td>Argument passed to cb_fn.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>return None. </p>
+
+</div>
+</div>
+<a id="af6ee5c4b8d64f5e6e0cf7e6b227aa28c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af6ee5c4b8d64f5e6e0cf7e6b227aa28c">&#9670;&nbsp;</a></span>spdk_file_writev_async()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_file_writev_async </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_file *&#160;</td>
+          <td class="paramname"><em>file</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *&#160;</td>
+          <td class="paramname"><em>channel</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct iovec *&#160;</td>
+          <td class="paramname"><em>iovs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>iovcnt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>offset</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>length</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="blobfs_8h.html#aa246577176997af494265f9563f5ab42">spdk_file_op_complete</a>&#160;</td>
+          <td class="paramname"><em>cb_fn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>cb_arg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Write data to the given file. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">file</td><td>File to write. </td></tr>
+    <tr><td class="paramname">channel</td><td>I/O channel for asynchronous operations. </td></tr>
+    <tr><td class="paramname">iovs</td><td>A scatter gather list of buffers to be written from. </td></tr>
+    <tr><td class="paramname">iovcnt</td><td>The number of elements in iov. </td></tr>
+    <tr><td class="paramname">offset</td><td>The beginning position to write. </td></tr>
+    <tr><td class="paramname">length</td><td>The size in bytes of data to write. </td></tr>
+    <tr><td class="paramname">cb_fn</td><td>Called when the request is complete. </td></tr>
+    <tr><td class="paramname">cb_arg</td><td>Argument passed to cb_fn.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>None. </dd></dl>
 
 </div>
 </div>
@@ -906,6 +1398,58 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="ace802cb036de60c254a970b307e0965b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ace802cb036de60c254a970b307e0965b">&#9670;&nbsp;</a></span>spdk_fs_create_file_async()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_fs_create_file_async </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_filesystem *&#160;</td>
+          <td class="paramname"><em>fs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="blobfs_8h.html#aa246577176997af494265f9563f5ab42">spdk_file_op_complete</a>&#160;</td>
+          <td class="paramname"><em>cb_fn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>cb_arg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Create a new file on the given blobstore filesystem. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fs</td><td>Blobstore filesystem. </td></tr>
+    <tr><td class="paramname">name</td><td>The file name for this new file. </td></tr>
+    <tr><td class="paramname">cb_fn</td><td>Called when the request is complete. </td></tr>
+    <tr><td class="paramname">cb_arg</td><td>Argument passed to cb_fn.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>return None. </p>
+
+</div>
+</div>
 <a id="a836b36f89718276f7e8228c7aea98919"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a836b36f89718276f7e8228c7aea98919">&#9670;&nbsp;</a></span>spdk_fs_delete_file()</h2>
 
@@ -948,6 +1492,58 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 on success, negative errno on failure. </dd></dl>
+
+</div>
+</div>
+<a id="a68db54cba2e490f90ec41ac72e9d4de9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a68db54cba2e490f90ec41ac72e9d4de9">&#9670;&nbsp;</a></span>spdk_fs_delete_file_async()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_fs_delete_file_async </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_filesystem *&#160;</td>
+          <td class="paramname"><em>fs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="blobfs_8h.html#aa246577176997af494265f9563f5ab42">spdk_file_op_complete</a>&#160;</td>
+          <td class="paramname"><em>cb_fn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>cb_arg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Delete the file. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fs</td><td>Blobstore filesystem. </td></tr>
+    <tr><td class="paramname">name</td><td>The name of the file to be deleted. </td></tr>
+    <tr><td class="paramname">cb_fn</td><td>Called when the request is complete. </td></tr>
+    <tr><td class="paramname">cb_arg</td><td>Argument passed to cb_fn.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>return None. </p>
 
 </div>
 </div>
@@ -1000,6 +1596,58 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 on success, negative errno on failure. </dd></dl>
+
+</div>
+</div>
+<a id="a4fa764929b55d3a89abb575dbb955e3d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4fa764929b55d3a89abb575dbb955e3d">&#9670;&nbsp;</a></span>spdk_fs_file_stat_async()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_fs_file_stat_async </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_filesystem *&#160;</td>
+          <td class="paramname"><em>fs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="blobfs_8h.html#aeb897b0bd0d1f6c72bd02049bfb4ebc9">spdk_file_stat_op_complete</a>&#160;</td>
+          <td class="paramname"><em>cb_fn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>cb_arg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get statistics about the file including the underlying blob id and the file size. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fs</td><td>Blobstore filesystem. </td></tr>
+    <tr><td class="paramname">name</td><td>The file name used to look up the matched file in the blobstore filesystem. </td></tr>
+    <tr><td class="paramname">cb_fn</td><td>Called when the request is complete. </td></tr>
+    <tr><td class="paramname">cb_arg</td><td>Argument passed to cb_fn.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>return None. </p>
 
 </div>
 </div>
@@ -1301,6 +1949,65 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="ac44219b77d6d990e5ea6b877aa343274"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac44219b77d6d990e5ea6b877aa343274">&#9670;&nbsp;</a></span>spdk_fs_open_file_async()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_fs_open_file_async </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_filesystem *&#160;</td>
+          <td class="paramname"><em>fs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>flags</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="blobfs_8h.html#a48d23cdca11ee9b0e44bda1924664ad5">spdk_file_op_with_handle_complete</a>&#160;</td>
+          <td class="paramname"><em>cb_fn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>cb_arg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Open the file. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fs</td><td>Blobstore filesystem. </td></tr>
+    <tr><td class="paramname">name</td><td>The file name used to look up the matched file in the blobstore filesystem. </td></tr>
+    <tr><td class="paramname">flags</td><td>This flags will be used to control the open mode. </td></tr>
+    <tr><td class="paramname">cb_fn</td><td>Called when the request is complete. </td></tr>
+    <tr><td class="paramname">cb_arg</td><td>Argument passed to cb_fn.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>return None. </p>
+
+</div>
+</div>
 <a id="a8c6258a494c0ebf2460a6ffece101cfd"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8c6258a494c0ebf2460a6ffece101cfd">&#9670;&nbsp;</a></span>spdk_fs_opts_init()</h2>
 
@@ -1377,6 +2084,66 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 on success, negative errno on failure. </dd></dl>
+
+</div>
+</div>
+<a id="ad50c77720a35f96c020fa83d9c9791c3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad50c77720a35f96c020fa83d9c9791c3">&#9670;&nbsp;</a></span>spdk_fs_rename_file_async()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_fs_rename_file_async </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_filesystem *&#160;</td>
+          <td class="paramname"><em>fs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>old_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>new_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">spdk_fs_op_complete&#160;</td>
+          <td class="paramname"><em>cb_fn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>cb_arg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Change the file name. </p>
+<p>This operation will overwrite an existing file if there is a file with the same name.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fs</td><td>Blobstore filesystem. </td></tr>
+    <tr><td class="paramname">old_name</td><td>Old name of the file. </td></tr>
+    <tr><td class="paramname">new_name</td><td>New name of the file. </td></tr>
+    <tr><td class="paramname">cb_fn</td><td>Called when the request is complete. </td></tr>
+    <tr><td class="paramname">cb_arg</td><td>Argument passed to cb_fn.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>return None. </p>
 
 </div>
 </div>
