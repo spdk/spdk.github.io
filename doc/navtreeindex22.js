@@ -1,5 +1,6 @@
 var NAVTREEINDEX22 =
 {
+"vhost.html#vhost_advanced_topics":[3,4,5],
 "vhost.html#vhost_bdev_create":[3,4,4,0],
 "vhost.html#vhost_bugs":[3,4,6],
 "vhost.html#vhost_cmd_line_args":[3,4,2,0],

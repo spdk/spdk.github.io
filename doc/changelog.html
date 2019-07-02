@@ -167,6 +167,7 @@ v19.07: (Upcoming Release)</h1>
 <p>Added additional options to the spdk_nvme_ctrlr_alloc_qpair() option parameter structure to allow caller to override the virtual and optionally physical address of the submission and completion queue pair to be created. This is supported on the PCIe transport only.</p>
 <h2>env</h2>
 <p>The parameter <code>free_space</code> has been added to <a class="el" href="env_8h.html#a96a046de83d31127e79a7b16760b4776" title="Queue the array of objects (with length count) on the ring. ">spdk_ring_enqueue()</a> to wait when the ring is almost full and resume when there is enough space available in the ring.</p>
+<p>A new API <code>spdk_mempool_lookup</code> has been added to lookup the memory pool created by the primary process.</p>
 <h1><a class="anchor" id="changelog-v19-04"></a>
 v19.04:</h1>
 <h2>nvme</h2>

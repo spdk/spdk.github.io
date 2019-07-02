@@ -409,6 +409,7 @@ var searchData=
   ['spdk_5fmempool_5fget',['spdk_mempool_get',['../env_8h.html#ada5041ebc03066dede6e0972c22dc77f',1,'env.h']]],
   ['spdk_5fmempool_5fget_5fbulk',['spdk_mempool_get_bulk',['../env_8h.html#a5695d9dcc6f53a561f41c932a198853b',1,'env.h']]],
   ['spdk_5fmempool_5fget_5fname',['spdk_mempool_get_name',['../env_8h.html#aef50d2e8f2d7fccfd5c5edf95e5013d2',1,'env.h']]],
+  ['spdk_5fmempool_5flookup',['spdk_mempool_lookup',['../env_8h.html#a397f334df8126cae08a8499688e1601f',1,'env.h']]],
   ['spdk_5fmempool_5fobj_5fiter',['spdk_mempool_obj_iter',['../env_8h.html#ad3b9b2980b2bf4be6e1b75024d676cd1',1,'env.h']]],
   ['spdk_5fmempool_5fput',['spdk_mempool_put',['../env_8h.html#a56233342766c54990e044b8ca2f3d41a',1,'env.h']]],
   ['spdk_5fmempool_5fput_5fbulk',['spdk_mempool_put_bulk',['../env_8h.html#a02f2b221ab82ba09c51013291313fe2e',1,'env.h']]],
