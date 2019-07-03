@@ -6,6 +6,8 @@ lang: cn
 
 **SPDK总体技术介绍**
 
+* [SPDK: 单线程存储性能达到1039万IOPS](https://mp.weixin.qq.com/s?__biz=MzI3NDA4ODY4MA==&mid=2653335692&idx=1&sn=d76ec8f74b91759521fab28028d3989d&chksm=f0cb470bc7bcce1dd68e1710902763a0c331137453ba1458e86909f0612a4a6af3d534a3badb&token=155709156&lang=zh_CN#rd:)
+
 * [打造用户态存储利器，基于SPDK的存储引擎Blobstore & BlobFS](https://mp.weixin.qq.com/s/jiS3jUNLeL0XzcljF8OhQA)
 
 * [一篇文章让你入门，SPDK自动精简配置的逻辑卷使用](https://mp.weixin.qq.com/s?__biz=MzI3NDA4ODY4MA==&mid=2653334755&idx=1&sn=65adf4f6db28513f30b450c2da0edf7d&chksm=f0cb5b64c7bcd272f4524575737af666c25f6efc9bef5151178bdc59ed5d76c0d85c731dc841&token=431082989&lang=zh_CN#rd)
@@ -15,6 +17,8 @@ lang: cn
 ******
 
 **SPDK NVMe-oF target/initiator**
+
+* [深入理解 SPDK NVMe/TCP transport的设计](https://mp.weixin.qq.com/s?__biz=MzI3NDA4ODY4MA==&mid=2653335525&idx=1&sn=d4dc96bd800161e8a222279ca8396570&chksm=f0cb5862c7bcd1741bfbe1ee4c96dd200491f9c0c4d6a41a8299e0adf289f9a102b6780cd86f&token=1477511457&lang=zh_CN#rd)
 
 * [搭建远端存储，深度解读SPDK NVMe-oF target](https://mp.weixin.qq.com/s/ohPaxAwmhGtuQQWz--J6WA)
 
@@ -57,6 +61,8 @@ lang: cn
 ******
 
 **SPDK和其他软件库的深度整合**
+
+* [缓存助力存储加速–OCF与SPDK介绍及用法](https://mp.weixin.qq.com/s?__biz=MzI3NDA4ODY4MA==&mid=2653335424&idx=1&sn=0f4dfc6c884cea4780c016902dab59e8&chksm=f0cb5807c7bcd111a815ded1bab1dd8260167c59eab71ba729e27ec1f76b266e23b5f1a08bf2&token=1477511457&lang=zh_CN#rd)
 
 * [火爆业界的明星, 下一代存储技术的先行: NVDIMM (下篇)](https://mp.weixin.qq.com/s?__biz=MzI3NDA4ODY4MA==&mid=2653335297&idx=1&sn=15a97636a9789a0e804847c398de7ae6&pass_ticket=6pPQwgtuLLkHv4fBlZcTWzepH4S%2FWbUWUxESD8lfM6BTwdPB7U%2FMlij2UeHFvzDB)
 
