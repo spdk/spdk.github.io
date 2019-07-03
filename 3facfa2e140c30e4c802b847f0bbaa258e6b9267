@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "1d87bdf0_10463f63",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 1011218
+      },
+      "writtenOn": "2019-07-03T13:11:30Z",
+      "side": 1,
+      "message": "Hey Junxia, grats on the first patch :)\n\nPlease make sure this sign-off contains your real name, so you\u0027ll be identified more easily.\n\nThanks,\nD.",
+      "range": {
+        "startLine": 9,
+        "startChar": 15,
+        "endLine": 9,
+        "endChar": 28
+      },
+      "revId": "3facfa2e140c30e4c802b847f0bbaa258e6b9267",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    }
+  ]
+}
