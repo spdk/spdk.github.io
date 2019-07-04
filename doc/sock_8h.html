@@ -199,9 +199,12 @@ Functions</h2></td></tr>
 <tr class="memitem:a73c174585e034587164b1a56d6e8a115"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sock_8h.html#a73c174585e034587164b1a56d6e8a115">spdk_sock_is_ipv4</a> (struct spdk_sock *sock)</td></tr>
 <tr class="memdesc:a73c174585e034587164b1a56d6e8a115"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check whether the address of socket is ipv4.  <a href="#a73c174585e034587164b1a56d6e8a115">More...</a><br /></td></tr>
 <tr class="separator:a73c174585e034587164b1a56d6e8a115"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aac5acbacae856635602b0f40c8b676b2"><td class="memItemLeft" align="right" valign="top">struct spdk_sock_group *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sock_8h.html#aac5acbacae856635602b0f40c8b676b2">spdk_sock_group_create</a> (void)</td></tr>
-<tr class="memdesc:aac5acbacae856635602b0f40c8b676b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new socket group.  <a href="#aac5acbacae856635602b0f40c8b676b2">More...</a><br /></td></tr>
-<tr class="separator:aac5acbacae856635602b0f40c8b676b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06f3441fbe7ea447b7ae03e71e074e27"><td class="memItemLeft" align="right" valign="top">struct spdk_sock_group *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sock_8h.html#a06f3441fbe7ea447b7ae03e71e074e27">spdk_sock_group_create</a> (void *ctx)</td></tr>
+<tr class="memdesc:a06f3441fbe7ea447b7ae03e71e074e27"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new socket group with user provided pointer.  <a href="#a06f3441fbe7ea447b7ae03e71e074e27">More...</a><br /></td></tr>
+<tr class="separator:a06f3441fbe7ea447b7ae03e71e074e27"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae60bf2833f9b9bd99088c1c0929d6321"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sock_8h.html#ae60bf2833f9b9bd99088c1c0929d6321">spdk_sock_group_get_ctx</a> (struct spdk_sock_group *sock_group)</td></tr>
+<tr class="memdesc:ae60bf2833f9b9bd99088c1c0929d6321"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the ctx of the sock group.  <a href="#ae60bf2833f9b9bd99088c1c0929d6321">More...</a><br /></td></tr>
+<tr class="separator:ae60bf2833f9b9bd99088c1c0929d6321"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa07f7a676410527883e2f8159ea1bfea"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sock_8h.html#aa07f7a676410527883e2f8159ea1bfea">spdk_sock_group_add_sock</a> (struct spdk_sock_group *group, struct spdk_sock *sock, <a class="el" href="sock_8h.html#ae297ae75e566b35635d20b959daa7741">spdk_sock_cb</a> cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:aa07f7a676410527883e2f8159ea1bfea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a socket to the group.  <a href="#aa07f7a676410527883e2f8159ea1bfea">More...</a><br /></td></tr>
 <tr class="separator:aa07f7a676410527883e2f8159ea1bfea"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -217,6 +220,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ad75fdb315be08263dd42aa20e1ca5df9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sock_8h.html#ad75fdb315be08263dd42aa20e1ca5df9">spdk_sock_group_close</a> (struct spdk_sock_group **group)</td></tr>
 <tr class="memdesc:ad75fdb315be08263dd42aa20e1ca5df9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Close all registered sockets of the group and then remove the group.  <a href="#ad75fdb315be08263dd42aa20e1ca5df9">More...</a><br /></td></tr>
 <tr class="separator:ad75fdb315be08263dd42aa20e1ca5df9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d38ca36abb4f475b362c485116678b9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sock_8h.html#a8d38ca36abb4f475b362c485116678b9">spdk_sock_get_optimal_sock_group</a> (struct spdk_sock *sock, struct spdk_sock_group **group)</td></tr>
+<tr class="memdesc:a8d38ca36abb4f475b362c485116678b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the optimal sock group for this sock.  <a href="#a8d38ca36abb4f475b362c485116678b9">More...</a><br /></td></tr>
+<tr class="separator:a8d38ca36abb4f475b362c485116678b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>TCP socket abstraction layer. </p>
@@ -336,6 +342,44 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>a pointer to the connected socket on success, or NULL on failure. </dd></dl>
+
+</div>
+</div>
+<a id="a8d38ca36abb4f475b362c485116678b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8d38ca36abb4f475b362c485116678b9">&#9670;&nbsp;</a></span>spdk_sock_get_optimal_sock_group()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_sock_get_optimal_sock_group </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_sock *&#160;</td>
+          <td class="paramname"><em>sock</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct spdk_sock_group **&#160;</td>
+          <td class="paramname"><em>group</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the optimal sock group for this sock. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sock</td><td>The socket </td></tr>
+    <tr><td class="paramname">group</td><td>Returns the optimal sock group. If there is no optimal sock group, returns NULL.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success. Negated errno on failure. </dd></dl>
 
 </div>
 </div>
@@ -491,8 +535,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="aac5acbacae856635602b0f40c8b676b2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aac5acbacae856635602b0f40c8b676b2">&#9670;&nbsp;</a></span>spdk_sock_group_create()</h2>
+<a id="a06f3441fbe7ea447b7ae03e71e074e27"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a06f3441fbe7ea447b7ae03e71e074e27">&#9670;&nbsp;</a></span>spdk_sock_group_create()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -500,15 +544,48 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">struct spdk_sock_group* spdk_sock_group_create </td>
           <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>ctx</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Create a new socket group. </p>
+<p>Create a new socket group with user provided pointer. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ctx</td><td>the context provided by user. </td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="section return"><dt>Returns</dt><dd>a pointer to the created group on success, or NULL on failure. </dd></dl>
+
+</div>
+</div>
+<a id="ae60bf2833f9b9bd99088c1c0929d6321"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae60bf2833f9b9bd99088c1c0929d6321">&#9670;&nbsp;</a></span>spdk_sock_group_get_ctx()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* spdk_sock_group_get_ctx </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_sock_group *&#160;</td>
+          <td class="paramname"><em>sock_group</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the ctx of the sock group. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sock_group</td><td>Socket group. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>a pointer which is ctx of the sock_group. </dd></dl>
 
 </div>
 </div>

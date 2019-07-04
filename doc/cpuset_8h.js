@@ -1,5 +1,6 @@
 var cpuset_8h =
 [
+    [ "spdk_cpuset", "structspdk__cpuset.html", "structspdk__cpuset" ],
     [ "SPDK_CPUSET_SIZE", "cpuset_8h.html#a732f84c568f135a7ff5346994fe9032d", null ],
     [ "spdk_cpuset_alloc", "cpuset_8h.html#aff3a197116d2a61effd73795b40a6c95", null ],
     [ "spdk_cpuset_and", "cpuset_8h.html#ab4151e6fa9d017facad9f0be22e376af", null ],

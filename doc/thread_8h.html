@@ -206,7 +206,7 @@ Functions</h2></td></tr>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="thread_8h.html#afe409bf16664f461daa516b6a6d1682c">spdk_thread_lib_fini</a> (void)</td></tr>
 <tr class="memdesc:afe409bf16664f461daa516b6a6d1682c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Release all resources associated with this library. <br /></td></tr>
 <tr class="separator:afe409bf16664f461daa516b6a6d1682c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4eada7bac2a5c7ceaea891d57f8d3e21"><td class="memItemLeft" align="right" valign="top">struct spdk_thread *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="thread_8h.html#a4eada7bac2a5c7ceaea891d57f8d3e21">spdk_thread_create</a> (const char *name, struct spdk_cpuset *cpumask)</td></tr>
+<tr class="memitem:a4eada7bac2a5c7ceaea891d57f8d3e21"><td class="memItemLeft" align="right" valign="top">struct spdk_thread *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="thread_8h.html#a4eada7bac2a5c7ceaea891d57f8d3e21">spdk_thread_create</a> (const char *name, struct <a class="el" href="structspdk__cpuset.html">spdk_cpuset</a> *cpumask)</td></tr>
 <tr class="memdesc:a4eada7bac2a5c7ceaea891d57f8d3e21"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new SPDK thread object.  <a href="#a4eada7bac2a5c7ceaea891d57f8d3e21">More...</a><br /></td></tr>
 <tr class="separator:a4eada7bac2a5c7ceaea891d57f8d3e21"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac42fa5ed7447767885f700875b28a84b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="thread_8h.html#ac42fa5ed7447767885f700875b28a84b">spdk_thread_exit</a> (struct spdk_thread *thread)</td></tr>
@@ -218,7 +218,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="thre
 <tr class="memitem:a1deb97a85a8240119cf46fa8a0b71388"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="thread_8h.html#a1deb97a85a8240119cf46fa8a0b71388">spdk_thread_get_ctx</a> (struct spdk_thread *thread)</td></tr>
 <tr class="memdesc:a1deb97a85a8240119cf46fa8a0b71388"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a pointer to this thread's context.  <a href="#a1deb97a85a8240119cf46fa8a0b71388">More...</a><br /></td></tr>
 <tr class="separator:a1deb97a85a8240119cf46fa8a0b71388"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9f06d559046d570e025d6b67c7e8d507"><td class="memItemLeft" align="right" valign="top">struct spdk_cpuset *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="thread_8h.html#a9f06d559046d570e025d6b67c7e8d507">spdk_thread_get_cpumask</a> (struct spdk_thread *thread)</td></tr>
+<tr class="memitem:a9f06d559046d570e025d6b67c7e8d507"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structspdk__cpuset.html">spdk_cpuset</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="thread_8h.html#a9f06d559046d570e025d6b67c7e8d507">spdk_thread_get_cpumask</a> (struct spdk_thread *thread)</td></tr>
 <tr class="memdesc:a9f06d559046d570e025d6b67c7e8d507"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the thread's cpumask.  <a href="#a9f06d559046d570e025d6b67c7e8d507">More...</a><br /></td></tr>
 <tr class="separator:a9f06d559046d570e025d6b67c7e8d507"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af813fe52c71ec5e254f8671570f57bdc"><td class="memItemLeft" align="right" valign="top">struct spdk_thread *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="thread_8h.html#af813fe52c71ec5e254f8671570f57bdc">spdk_thread_get_from_ctx</a> (void *ctx)</td></tr>
@@ -1127,7 +1127,7 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">struct spdk_cpuset *&#160;</td>
+          <td class="paramtype">struct <a class="el" href="structspdk__cpuset.html">spdk_cpuset</a> *&#160;</td>
           <td class="paramname"><em>cpumask</em>&#160;</td>
         </tr>
         <tr>
@@ -1212,7 +1212,7 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">struct spdk_cpuset* spdk_thread_get_cpumask </td>
+          <td class="memname">struct <a class="el" href="structspdk__cpuset.html">spdk_cpuset</a>* spdk_thread_get_cpumask </td>
           <td>(</td>
           <td class="paramtype">struct spdk_thread *&#160;</td>
           <td class="paramname"><em>thread</em></td><td>)</td>

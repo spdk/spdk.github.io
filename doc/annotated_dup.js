@@ -40,6 +40,7 @@ var annotated_dup =
     [ "spdk_bs_dev_cb_args", "structspdk__bs__dev__cb__args.html", "structspdk__bs__dev__cb__args" ],
     [ "spdk_bs_opts", "structspdk__bs__opts.html", "structspdk__bs__opts" ],
     [ "spdk_bs_type", "structspdk__bs__type.html", "structspdk__bs__type" ],
+    [ "spdk_cpuset", "structspdk__cpuset.html", "structspdk__cpuset" ],
     [ "spdk_crc32_table", "structspdk__crc32__table.html", "structspdk__crc32__table" ],
     [ "spdk_d0_datastore_features", "structspdk__d0__datastore__features.html", "structspdk__d0__datastore__features" ],
     [ "spdk_d0_geo_features", "structspdk__d0__geo__features.html", "structspdk__d0__geo__features" ],

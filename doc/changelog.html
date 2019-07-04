@@ -168,6 +168,9 @@ v19.07: (Upcoming Release)</h1>
 <h2>env</h2>
 <p>The parameter <code>free_space</code> has been added to <a class="el" href="env_8h.html#a96a046de83d31127e79a7b16760b4776" title="Queue the array of objects (with length count) on the ring. ">spdk_ring_enqueue()</a> to wait when the ring is almost full and resume when there is enough space available in the ring.</p>
 <p>A new API <code>spdk_mempool_lookup</code> has been added to lookup the memory pool created by the primary process.</p>
+<h2>sock</h2>
+<p>Add <a class="el" href="sock_8h.html#a8d38ca36abb4f475b362c485116678b9" title="Get the optimal sock group for this sock. ">spdk_sock_get_optimal_sock_group()</a>, which returns the optimal sock group for this socket. When a socket is created, it is often assigned to a sock group using spdk_sock_group_add_sock so that a set of sockets can be polled more efficiently. For some network devices, it is optimal to assign particular sockets to specific sock groups. This API is intended to provide the user with that information.</p>
+<p><a class="el" href="sock_8h.html#ae60bf2833f9b9bd99088c1c0929d6321" title="Get the ctx of the sock group. ">spdk_sock_group_get_ctx()</a> was added to return the context of the spdk_sock_group. <a class="el" href="sock_8h.html#a06f3441fbe7ea447b7ae03e71e074e27" title="Create a new socket group with user provided pointer. ">spdk_sock_group_create()</a> is updated to allow input the user provided ctx.</p>
 <h1><a class="anchor" id="changelog-v19-04"></a>
 v19.04:</h1>
 <h2>nvme</h2>

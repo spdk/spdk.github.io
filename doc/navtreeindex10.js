@@ -244,10 +244,10 @@ var NAVTREEINDEX10 =
 "scsi__spec_8h.html#af6319720f0642165496d79745fe1df1b":[13,0,44,37],
 "scsi__spec_8h.html#af993a050a0bdd0d520b7fdcbbb32d98a":[13,0,44,20],
 "sock_8h.html":[13,0,45],
-"sock_8h.html#a0be72049ed7537c6f8efb99dbb44d20c":[13,0,45,18],
+"sock_8h.html#a06f3441fbe7ea447b7ae03e71e074e27":[13,0,45,8],
+"sock_8h.html#a0be72049ed7537c6f8efb99dbb44d20c":[13,0,45,20],
 "sock_8h.html#a407c7aebae3d1a1556109da46a73213e":[13,0,45,2],
-"sock_8h.html#a4cc9153a7848b65e5487e5205f022909":[13,0,45,13],
-"sock_8h.html#a4e8d8e1b8155267b4b0289710e3b792f":[13,0,45,17],
-"sock_8h.html#a4f624276a1f0122bb624b2e8c5eaba19":[13,0,45,3],
-"sock_8h.html#a5ea2c431e11b3e15e0fba18fb4faa954":[13,0,45,1]
+"sock_8h.html#a4cc9153a7848b65e5487e5205f022909":[13,0,45,15],
+"sock_8h.html#a4e8d8e1b8155267b4b0289710e3b792f":[13,0,45,19],
+"sock_8h.html#a4f624276a1f0122bb624b2e8c5eaba19":[13,0,45,3]
 };

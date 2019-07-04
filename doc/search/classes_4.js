@@ -19,6 +19,7 @@ var searchData=
   ['spdk_5fbs_5fdev_5fcb_5fargs',['spdk_bs_dev_cb_args',['../structspdk__bs__dev__cb__args.html',1,'']]],
   ['spdk_5fbs_5fopts',['spdk_bs_opts',['../structspdk__bs__opts.html',1,'']]],
   ['spdk_5fbs_5ftype',['spdk_bs_type',['../structspdk__bs__type.html',1,'']]],
+  ['spdk_5fcpuset',['spdk_cpuset',['../structspdk__cpuset.html',1,'']]],
   ['spdk_5fcrc32_5ftable',['spdk_crc32_table',['../structspdk__crc32__table.html',1,'']]],
   ['spdk_5fd0_5fdatastore_5ffeatures',['spdk_d0_datastore_features',['../structspdk__d0__datastore__features.html',1,'']]],
   ['spdk_5fd0_5fgeo_5ffeatures',['spdk_d0_geo_features',['../structspdk__d0__geo__features.html',1,'']]],
