@@ -49,7 +49,7 @@ communications channels described on the [Community](/community/) page.
 
 Patch submission is done through GerritHub where patches are voted on by everyone in the community.
 A patch usually requires a minimum of two +2 votes before it will be merged. +2 votes are reserved for
-the [core maintainers](#core) who can be contacted on the mailing list or in IRC.
+the [core maintainers](#core) who can be contacted on the mailing list or in Slack.
 
 <a id="guidelines"></a>
 ## Development Guidelines
@@ -410,11 +410,11 @@ done on the SPDK repo's master branch for each of the updated submodules to capt
 The SPDK core maintainers primary responsibility is to provide technical oversight for the SPDK Project.
 The current list of SPDK core maintainers includes:
 
-* Jim Harris (IRC: jimharris)
-* Changpeng Liu (IRC: changpe1)
-* Shuhei Matsumoto (IRC: Shuhei)
-* Darek Stojaczyk (IRC: darsto)
-* Ben Walker (IRC: bwalker)
+* Jim Harris
+* Changpeng Liu
+* Shuhei Matsumoto
+* Darek Stojaczyk
+* Ben Walker
 
 The bulk of this technical oversight is achieved through reviewing and approving patches.  Patches
 must receive +2 votes from two core maintainers and a +1 vote from the SPDK automated test pool before
