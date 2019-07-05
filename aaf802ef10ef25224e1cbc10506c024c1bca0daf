@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "80d31f3f_94cce325",
+        "filename": "development.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 52,
+      "author": {
+        "id": 1012251
+      },
+      "writtenOn": "2019-07-05T00:06:46Z",
+      "side": 1,
+      "message": "Will you use the same URL added in the patch https://review.gerrithub.io/c/spdk/spdk.github.io/+/456241 ?",
+      "revId": "aaf802ef10ef25224e1cbc10506c024c1bca0daf",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    }
+  ]
+}
