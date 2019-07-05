@@ -1064,6 +1064,7 @@ var searchData=
   ['spdk_5fopal_5fcompacket',['spdk_opal_compacket',['../structspdk__opal__compacket.html',1,'']]],
   ['spdk_5fopal_5fdata_5fsubpacket',['spdk_opal_data_subpacket',['../structspdk__opal__data__subpacket.html',1,'']]],
   ['spdk_5fopal_5finfo',['spdk_opal_info',['../structspdk__opal__info.html',1,'']]],
+  ['spdk_5fopal_5flocking_5frange_5finfo',['spdk_opal_locking_range_info',['../structspdk__opal__locking__range__info.html',1,'']]],
   ['spdk_5fopal_5fpacket',['spdk_opal_packet',['../structspdk__opal__packet.html',1,'']]],
   ['spdk_5fparse_5fcapacity',['spdk_parse_capacity',['../string_8h.html#ab81c3a52c60c7390e54437dc5856996b',1,'string.h']]],
   ['spdk_5fparse_5fip_5faddr',['spdk_parse_ip_addr',['../string_8h.html#ad48498f237af5f5c25ca7cbca5300e12',1,'string.h']]],

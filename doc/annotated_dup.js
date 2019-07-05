@@ -222,6 +222,7 @@ var annotated_dup =
     [ "spdk_opal_compacket", "structspdk__opal__compacket.html", "structspdk__opal__compacket" ],
     [ "spdk_opal_data_subpacket", "structspdk__opal__data__subpacket.html", "structspdk__opal__data__subpacket" ],
     [ "spdk_opal_info", "structspdk__opal__info.html", "structspdk__opal__info" ],
+    [ "spdk_opal_locking_range_info", "structspdk__opal__locking__range__info.html", "structspdk__opal__locking__range__info" ],
     [ "spdk_opal_packet", "structspdk__opal__packet.html", "structspdk__opal__packet" ],
     [ "spdk_pci_addr", "structspdk__pci__addr.html", "structspdk__pci__addr" ],
     [ "spdk_pci_device", "structspdk__pci__device.html", "structspdk__pci__device" ],

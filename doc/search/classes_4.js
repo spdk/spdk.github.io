@@ -201,6 +201,7 @@ var searchData=
   ['spdk_5fopal_5fcompacket',['spdk_opal_compacket',['../structspdk__opal__compacket.html',1,'']]],
   ['spdk_5fopal_5fdata_5fsubpacket',['spdk_opal_data_subpacket',['../structspdk__opal__data__subpacket.html',1,'']]],
   ['spdk_5fopal_5finfo',['spdk_opal_info',['../structspdk__opal__info.html',1,'']]],
+  ['spdk_5fopal_5flocking_5frange_5finfo',['spdk_opal_locking_range_info',['../structspdk__opal__locking__range__info.html',1,'']]],
   ['spdk_5fopal_5fpacket',['spdk_opal_packet',['../structspdk__opal__packet.html',1,'']]],
   ['spdk_5fpci_5faddr',['spdk_pci_addr',['../structspdk__pci__addr.html',1,'']]],
   ['spdk_5fpci_5fdevice',['spdk_pci_device',['../structspdk__pci__device.html',1,'']]],
