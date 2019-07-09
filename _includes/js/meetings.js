@@ -1,6 +1,6 @@
 var euroDate = new Date(Date.UTC(2018, 3, 3, 15, 0, 0, 0));
-var asiaDate = new Date(Date.UTC(2018, 3, 10, 3, 0, 0, 0));
-var asiaBugDate = new Date(Date.UTC(2018, 3, 17, 3, 0, 0, 0));
+var asiaDate = new Date(Date.UTC(2018, 3, 10, 4, 0, 0, 0));
+var asiaBugDate = new Date(Date.UTC(2018, 3, 17, 4, 0, 0, 0));
 var euroBugDate = new Date(Date.UTC(2018, 3, 10, 15, 0, 0, 0));
 
 // Holiday list. Should be of form [date, recurring=true/false]
