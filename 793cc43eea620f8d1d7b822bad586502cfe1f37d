@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "46110662_e9d4960d",
+        "filename": "_includes/js/meetings.js",
+        "patchSetId": 1
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 1011204
+      },
+      "writtenOn": "2019-07-09T06:25:41Z",
+      "side": 1,
+      "message": "This should be changed in line 90 and 91, changing here didn\u0027t take effect.",
+      "revId": "793cc43eea620f8d1d7b822bad586502cfe1f37d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    }
+  ]
+}
