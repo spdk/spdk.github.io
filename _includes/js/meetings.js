@@ -1,6 +1,6 @@
 var euroDate = new Date(Date.UTC(2018, 3, 3, 15, 0, 0, 0));
-var asiaDate = new Date(Date.UTC(2018, 3, 10, 3, 0, 0, 0));
-var asiaBugDate = new Date(Date.UTC(2018, 3, 17, 3, 0, 0, 0));
+var asiaDate = new Date(Date.UTC(2018, 3, 10, 4, 0, 0, 0));
+var asiaBugDate = new Date(Date.UTC(2018, 3, 17, 4, 0, 0, 0));
 var euroBugDate = new Date(Date.UTC(2018, 3, 10, 15, 0, 0, 0));
 
 // Holiday list. Should be of form [date, recurring=true/false]
@@ -87,8 +87,8 @@ while (euroBugDate < currentDate || compareHoliday(euroBugDate, USHolidays, USTi
 // Regenerate the dates here - this makes sure we account for daylight savings adjustments between the starting
 // date at the beginning of this file and the calculated address based on the current date/time.
 euroDate = new Date(Date.UTC(euroDate.getUTCFullYear(), euroDate.getUTCMonth(), euroDate.getUTCDate(), 15, 0, 0, 0));
-asiaDate = new Date(Date.UTC(asiaDate.getUTCFullYear(), asiaDate.getUTCMonth(), asiaDate.getUTCDate(), 3, 0, 0, 0));
-asiaBugDate = new Date(Date.UTC(asiaBugDate.getUTCFullYear(), asiaBugDate.getUTCMonth(), asiaBugDate.getUTCDate(), 3, 0, 0, 0));
+asiaDate = new Date(Date.UTC(asiaDate.getUTCFullYear(), asiaDate.getUTCMonth(), asiaDate.getUTCDate(), 4, 0, 0, 0));
+asiaBugDate = new Date(Date.UTC(asiaBugDate.getUTCFullYear(), asiaBugDate.getUTCMonth(), asiaBugDate.getUTCDate(), 4, 0, 0, 0));
 euroBugDate = new Date(Date.UTC(euroBugDate.getUTCFullYear(), euroBugDate.getUTCMonth(), euroBugDate.getUTCDate(), 15, 0, 0, 0));
 
 document.getElementById("euro-mtg").textContent = formatDate(euroDate);
