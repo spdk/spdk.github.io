@@ -177,6 +177,7 @@ var NAVTREEINDEX4 =
 "jsonrpc.html#rpc_start_subsystem_init":[3,7,1,2],
 "jsonrpc.html#rpc_stop_nbd_disk":[3,7,7,1],
 "jsonrpc.html#rpc_target_node_add_lun":[3,7,3,22],
+"jsonrpc.html#rpc_thread_get_stats":[3,7,1,7],
 "jsonrpc.html#rpc_wait_subsystem_init":[3,7,1,3],
 "jsonrpc_8h.html":[13,0,27],
 "jsonrpc_8h.html#a0eb3dec195e22ff481e317f41b1b0d95":[13,0,27,4],
@@ -248,6 +249,5 @@ var NAVTREEINDEX4 =
 "logical_volumes.html#lvol_terminology":[5,1,0],
 "logical_volumes.html#lvol_thin_provisioning":[5,1,0,3],
 "logical_volumes.html#lvs":[5,1,0,0],
-"lvol_8h.html":[13,0,30],
-"lvol_8h.html#a003e23eb57e1318f2f60c5727cab54e2":[13,0,30,22]
+"lvol_8h.html":[13,0,30]
 };

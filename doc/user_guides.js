@@ -119,7 +119,8 @@ var user_guides =
         [ "wait_subsystem_init", "jsonrpc.html#rpc_wait_subsystem_init", null ],
         [ "rpc_get_methods", "jsonrpc.html#rpc_rpc_get_methods", null ],
         [ "get_subsystems", "jsonrpc.html#rpc_get_subsystems", null ],
-        [ "get_subsystem_config", "jsonrpc.html#rpc_get_subsystem_config", null ]
+        [ "get_subsystem_config", "jsonrpc.html#rpc_get_subsystem_config", null ],
+        [ "thread_get_stats", "jsonrpc.html#rpc_thread_get_stats", null ]
       ] ],
       [ "Block Device Abstraction Layer", "jsonrpc.html#jsonrpc_components_bdev", [
         [ "set_bdev_options", "jsonrpc.html#rpc_set_bdev_options", null ],

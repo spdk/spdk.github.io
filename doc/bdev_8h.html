@@ -1405,7 +1405,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_set_opts</b>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Pointer to UUID.</dd></dl>
-<p>Not all bdevs will have a UUID; in this case, the returned UUID will be the nil UUID (all bytes zero). </p>
+<p>All bdevs will have a UUID, but not all UUIDs will be persistent across application runs. </p>
 
 </div>
 </div>

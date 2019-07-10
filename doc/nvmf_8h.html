@@ -202,6 +202,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a3b1de2ab69c992ce2c732c354a08238f"><td class="memItemLeft" align="right" valign="top">struct spdk_nvmf_poll_group *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#a3b1de2ab69c992ce2c732c354a08238f">spdk_nvmf_poll_group_create</a> (struct spdk_nvmf_tgt *tgt)</td></tr>
 <tr class="memdesc:a3b1de2ab69c992ce2c732c354a08238f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a poll group.  <a href="#a3b1de2ab69c992ce2c732c354a08238f">More...</a><br /></td></tr>
 <tr class="separator:a3b1de2ab69c992ce2c732c354a08238f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a744188acd6e709ed4bc3f7f98a2230f8"><td class="memItemLeft" align="right" valign="top">struct spdk_nvmf_poll_group *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#a744188acd6e709ed4bc3f7f98a2230f8">spdk_nvmf_get_optimal_poll_group</a> (struct spdk_nvmf_qpair *qpair)</td></tr>
+<tr class="memdesc:a744188acd6e709ed4bc3f7f98a2230f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get optimal nvmf poll group for the qpair.  <a href="#a744188acd6e709ed4bc3f7f98a2230f8">More...</a><br /></td></tr>
+<tr class="separator:a744188acd6e709ed4bc3f7f98a2230f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa38d9ac50a79883df08d7faf3a647018"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#aa38d9ac50a79883df08d7faf3a647018">spdk_nvmf_poll_group_destroy</a> (struct spdk_nvmf_poll_group *group)</td></tr>
 <tr class="memdesc:aa38d9ac50a79883df08d7faf3a647018"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy a poll group.  <a href="#aa38d9ac50a79883df08d7faf3a647018">More...</a><br /></td></tr>
 <tr class="separator:aa38d9ac50a79883df08d7faf3a647018"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -467,6 +470,33 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="a744188acd6e709ed4bc3f7f98a2230f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a744188acd6e709ed4bc3f7f98a2230f8">&#9670;&nbsp;</a></span>spdk_nvmf_get_optimal_poll_group()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct spdk_nvmf_poll_group* spdk_nvmf_get_optimal_poll_group </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_nvmf_qpair *&#160;</td>
+          <td class="paramname"><em>qpair</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get optimal nvmf poll group for the qpair. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">qpair</td><td>Requested qpair</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>a poll group on success, or NULL on failure. </dd></dl>
+
+</div>
+</div>
 <a id="a31057e91a342d9e799254ee66e3533ba"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a31057e91a342d9e799254ee66e3533ba">&#9670;&nbsp;</a></span>spdk_nvmf_get_transport_opts()</h2>
 

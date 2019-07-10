@@ -1,5 +1,8 @@
 var NAVTREEINDEX21 =
 {
+"unionspdk__nvme__async__event__completion.html#a20c8319fea9c5a80c719b063324c5bac":[12,0,87,4],
+"unionspdk__nvme__async__event__completion.html#a2e47f8120306d7ad0722cff7c9fd2805":[12,0,87,2],
+"unionspdk__nvme__async__event__completion.html#a337a8431d9cbeeb1d9f2037a033f7388":[12,0,87,6],
 "unionspdk__nvme__async__event__completion.html#a6a0f68993c8d4e9facb713ae1942c0a9":[12,0,87,3],
 "unionspdk__nvme__async__event__completion.html#accdc3dc718fb2531d775ba0eb2106b23":[12,0,87,5],
 "unionspdk__nvme__bpinfo__register.html":[12,0,88],
@@ -246,8 +249,5 @@ var NAVTREEINDEX21 =
 "uuid_8h.html#a94ceae550174eb8cba27a792e85e32ca":[13,0,51,1],
 "uuid_8h.html#acb2ce1f550e94b3c1f5f9a62a9219ec8":[13,0,51,5],
 "uuid_8h.html#aec26ba99b3b48451724d053625f9af2f":[13,0,51,3],
-"uuid_8h.html#aece646828010187f78ebe02c5642ce4f":[13,0,51,2],
-"vagrant.html":[1,2],
-"vagrant.html#vagrant_config":[1,2,1],
-"vagrant.html#vagrant_example":[1,2,2]
+"uuid_8h.html#aece646828010187f78ebe02c5642ce4f":[13,0,51,2]
 };
