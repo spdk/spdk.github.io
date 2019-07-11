@@ -12,5 +12,6 @@ var structspdk__dif__ctx =
     [ "last_guard", "structspdk__dif__ctx.html#aafb02a3a698fd60230e4a5fc3da883f4", null ],
     [ "md_interleave", "structspdk__dif__ctx.html#a341adc2959c3449ba630601ebfb14cb9", null ],
     [ "md_size", "structspdk__dif__ctx.html#a70bae2b0c71c14a91163f89d4e215802", null ],
-    [ "ref_tag_offset", "structspdk__dif__ctx.html#aef0637cad47cfd8bc20bb0f085c59479", null ]
+    [ "ref_tag_offset", "structspdk__dif__ctx.html#aef0637cad47cfd8bc20bb0f085c59479", null ],
+    [ "remapped_init_ref_tag", "structspdk__dif__ctx.html#adac7e6a0e70395682a50e1b3d678d792", null ]
 ];

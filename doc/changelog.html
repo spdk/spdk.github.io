@@ -468,7 +468,7 @@ v18.04: Logical Volume Snapshot/Clone, iSCSI Initiator, Bdev QoS, VPP Userspace 
 <p>New API functions <a class="el" href="nvme_8h.html#a59e69f39c7cb8a9e1c3e00af7804c8bd" title="Get the nsid of the first active namespace. ">spdk_nvme_ctrlr_get_first_active_ns()</a> and <a class="el" href="nvme_8h.html#abcd528b0df0a564c218dc2745c3af159" title="Get next active namespace given the previous nsid. ">spdk_nvme_ctrlr_get_next_active_ns()</a> have been added to iterate active namespaces, as well as <a class="el" href="nvme_8h.html#abbcdb6e7c22b0ef87ed927bf97952c19" title="Check whether the nsid is an active nv for the given NVMe controller. ">spdk_nvme_ctrlr_is_active_ns()</a> to check if a namespace ID is active.</p>
 <h2>NVMe-oF Target</h2>
 <p>Namespaces may now be assigned unique identifiers via new optional <code>eui64</code> and <code>nguid</code> parameters to the <code>nvmf_subsystem_add_ns</code> RPC method. Additionally, the NVMe-oF target automatically exposes the backing bdev's UUID as the namespace UUID when available.</p>
-<p><a class="el" href="nvmf_8h.html#a7fafa9106b94d650f0c1daa5c6d7090e" title="Remove a namespace from a subsytem. ">spdk_nvmf_subsystem_remove_ns()</a> is now asynchronous and requires a callback to indicate completion.</p>
+<p><a class="el" href="nvmf_8h.html#aa10ac07a403de72643a5e9801e9fec0b" title="Remove a namespace from a subsytem. ">spdk_nvmf_subsystem_remove_ns()</a> is now asynchronous and requires a callback to indicate completion.</p>
 <h2>Blobstore</h2>
 <p>A number of functions have been renamed:</p>
 <ul>

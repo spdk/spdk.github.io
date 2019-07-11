@@ -298,9 +298,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a81b63417dea01e5a4fe15a4f3322c63c"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#a81b63417dea01e5a4fe15a4f3322c63c">spdk_nvmf_subsystem_add_ns</a> (struct spdk_nvmf_subsystem *subsystem, struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *bdev, const struct <a class="el" href="structspdk__nvmf__ns__opts.html">spdk_nvmf_ns_opts</a> *opts, size_t opts_size, const char *ptpl_file)</td></tr>
 <tr class="memdesc:a81b63417dea01e5a4fe15a4f3322c63c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a namespace to a subsytem.  <a href="#a81b63417dea01e5a4fe15a4f3322c63c">More...</a><br /></td></tr>
 <tr class="separator:a81b63417dea01e5a4fe15a4f3322c63c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7fafa9106b94d650f0c1daa5c6d7090e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#a7fafa9106b94d650f0c1daa5c6d7090e">spdk_nvmf_subsystem_remove_ns</a> (struct spdk_nvmf_subsystem *subsystem, uint32_t nsid, <a class="el" href="nvmf_8h.html#aec7dc3c1e2f740c1cbffa028ad5c5bff">spdk_nvmf_subsystem_state_change_done</a> cb_fn, void *cb_arg)</td></tr>
-<tr class="memdesc:a7fafa9106b94d650f0c1daa5c6d7090e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove a namespace from a subsytem.  <a href="#a7fafa9106b94d650f0c1daa5c6d7090e">More...</a><br /></td></tr>
-<tr class="separator:a7fafa9106b94d650f0c1daa5c6d7090e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa10ac07a403de72643a5e9801e9fec0b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#aa10ac07a403de72643a5e9801e9fec0b">spdk_nvmf_subsystem_remove_ns</a> (struct spdk_nvmf_subsystem *subsystem, uint32_t nsid)</td></tr>
+<tr class="memdesc:aa10ac07a403de72643a5e9801e9fec0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove a namespace from a subsytem.  <a href="#aa10ac07a403de72643a5e9801e9fec0b">More...</a><br /></td></tr>
+<tr class="separator:aa10ac07a403de72643a5e9801e9fec0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab797c6df2dc8fab9833de1711b6fe7f4"><td class="memItemLeft" align="right" valign="top">struct spdk_nvmf_ns *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#ab797c6df2dc8fab9833de1711b6fe7f4">spdk_nvmf_subsystem_get_first_ns</a> (struct spdk_nvmf_subsystem *subsystem)</td></tr>
 <tr class="memdesc:ab797c6df2dc8fab9833de1711b6fe7f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the first allocated namespace in a subsystem.  <a href="#ab797c6df2dc8fab9833de1711b6fe7f4">More...</a><br /></td></tr>
 <tr class="separator:ab797c6df2dc8fab9833de1711b6fe7f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1866,8 +1866,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a7fafa9106b94d650f0c1daa5c6d7090e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7fafa9106b94d650f0c1daa5c6d7090e">&#9670;&nbsp;</a></span>spdk_nvmf_subsystem_remove_ns()</h2>
+<a id="aa10ac07a403de72643a5e9801e9fec0b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa10ac07a403de72643a5e9801e9fec0b">&#9670;&nbsp;</a></span>spdk_nvmf_subsystem_remove_ns()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1882,19 +1882,7 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>nsid</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="nvmf_8h.html#aec7dc3c1e2f740c1cbffa028ad5c5bff">spdk_nvmf_subsystem_state_change_done</a>&#160;</td>
-          <td class="paramname"><em>cb_fn</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>cb_arg</em>&#160;</td>
+          <td class="paramname"><em>nsid</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1909,9 +1897,7 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">subsystem</td><td>Subsystem the namespace belong to. </td></tr>
-    <tr><td class="paramname">nsid</td><td>Namespace ID to be removed. </td></tr>
-    <tr><td class="paramname">cb_fn</td><td>Function to call when all thread local ns information has been updated </td></tr>
-    <tr><td class="paramname">cb_arg</td><td>Context for the above cb_fn</td></tr>
+    <tr><td class="paramname">nsid</td><td>Namespace ID to be removed.</td></tr>
   </table>
   </dd>
 </dl>
