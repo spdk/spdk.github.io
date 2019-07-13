@@ -186,6 +186,7 @@ var searchData=
   ['spdk_5fnvmf_5ffc_5flsdesc_5frqst',['spdk_nvmf_fc_lsdesc_rqst',['../structspdk__nvmf__fc__lsdesc__rqst.html',1,'']]],
   ['spdk_5fnvmf_5ffc_5fxfer_5frdy_5fiu',['spdk_nvmf_fc_xfer_rdy_iu',['../structspdk__nvmf__fc__xfer__rdy__iu.html',1,'']]],
   ['spdk_5fnvmf_5fns_5fopts',['spdk_nvmf_ns_opts',['../structspdk__nvmf__ns__opts.html',1,'']]],
+  ['spdk_5fnvmf_5fpoll_5fgroup_5fstat',['spdk_nvmf_poll_group_stat',['../structspdk__nvmf__poll__group__stat.html',1,'']]],
   ['spdk_5fnvmf_5frdma_5faccept_5fprivate_5fdata',['spdk_nvmf_rdma_accept_private_data',['../structspdk__nvmf__rdma__accept__private__data.html',1,'']]],
   ['spdk_5fnvmf_5frdma_5fprivate_5fdata',['spdk_nvmf_rdma_private_data',['../unionspdk__nvmf__rdma__private__data.html',1,'']]],
   ['spdk_5fnvmf_5frdma_5freject_5fprivate_5fdata',['spdk_nvmf_rdma_reject_private_data',['../structspdk__nvmf__rdma__reject__private__data.html',1,'']]],

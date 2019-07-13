@@ -157,6 +157,8 @@ $(document).ready(function(){initNavTree('nvmf_8h.html','');});
 Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvmf__transport__opts.html">spdk_nvmf_transport_opts</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvmf__poll__group__stat.html">spdk_nvmf_poll_group_stat</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvmf__ns__opts.html">spdk_nvmf_ns_opts</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">NVMe-oF target namespace creation options.  <a href="structspdk__nvmf__ns__opts.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -211,6 +213,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a37eea41a3c3856e0ea2cd383af20183d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#a37eea41a3c3856e0ea2cd383af20183d">spdk_nvmf_poll_group_add</a> (struct spdk_nvmf_poll_group *group, struct spdk_nvmf_qpair *qpair)</td></tr>
 <tr class="memdesc:a37eea41a3c3856e0ea2cd383af20183d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add the given qpair to the poll group.  <a href="#a37eea41a3c3856e0ea2cd383af20183d">More...</a><br /></td></tr>
 <tr class="separator:a37eea41a3c3856e0ea2cd383af20183d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5d5611a2cd71a7d71a08c990cbd29e7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#ac5d5611a2cd71a7d71a08c990cbd29e7">spdk_nvmf_poll_group_get_stat</a> (struct spdk_nvmf_tgt *tgt, struct <a class="el" href="structspdk__nvmf__poll__group__stat.html">spdk_nvmf_poll_group_stat</a> *stat)</td></tr>
+<tr class="memdesc:ac5d5611a2cd71a7d71a08c990cbd29e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get current poll group statistics.  <a href="#ac5d5611a2cd71a7d71a08c990cbd29e7">More...</a><br /></td></tr>
+<tr class="separator:ac5d5611a2cd71a7d71a08c990cbd29e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afa33cb1cf39e04ee533f874ed82e24e5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#afa33cb1cf39e04ee533f874ed82e24e5">spdk_nvmf_qpair_disconnect</a> (struct spdk_nvmf_qpair *qpair, nvmf_qpair_disconnect_cb cb_fn, void *ctx)</td></tr>
 <tr class="memdesc:afa33cb1cf39e04ee533f874ed82e24e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disconnect an NVMe-oF qpair.  <a href="#afa33cb1cf39e04ee533f874ed82e24e5">More...</a><br /></td></tr>
 <tr class="separator:afa33cb1cf39e04ee533f874ed82e24e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -828,6 +833,46 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="ac5d5611a2cd71a7d71a08c990cbd29e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac5d5611a2cd71a7d71a08c990cbd29e7">&#9670;&nbsp;</a></span>spdk_nvmf_poll_group_get_stat()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_nvmf_poll_group_get_stat </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_nvmf_tgt *&#160;</td>
+          <td class="paramname"><em>tgt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structspdk__nvmf__poll__group__stat.html">spdk_nvmf_poll_group_stat</a> *&#160;</td>
+          <td class="paramname"><em>stat</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get current poll group statistics. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tgt</td><td>The NVMf target. </td></tr>
+    <tr><td class="paramname">stat</td><td>Pointer to allocated statistics structure to fill with values.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 upon success. </dd>
+<dd>
+-EINVAL if either group or stat is NULL. </dd></dl>
 
 </div>
 </div>

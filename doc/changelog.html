@@ -156,6 +156,7 @@ v19.07: (Upcoming Release)</h1>
 <p>The c2h success optimization under which a command capsule response is not sent for reads is turned on. A config knob was added to allow for enable/disable.</p>
 <p>Shared receive queue can now be disabled even for NICs that support it using the <code>nvmf_create_transport</code> RPC method parameter <code>no_srq</code>. The actual use of a shared receive queue is predicated on hardware support when this flag is not used.</p>
 <p>spdk_nvmf_get_optimal_poll_group was added, which is used to return the optimal poll group for the qpair. And <code>ConnectionScheduler</code> configuration is added into the [Nvmf] section in etc/spdk/nvmf.conf.in to demonstrate how to configure the connection scheduling strategy among different spdk threads.</p>
+<p>Added infrastructure to retrieve global and per poll group NVMf statistics.</p>
 <h2>notify</h2>
 <p>The function <code>spdk_notify_get_types()</code> and <code>spdk_notify_get_events()</code> were renamed to <code>spdk_notify_foreach_type()</code> and <code>spdk_notify_foreach_event()</code>, respectively. And update type name of callback accordingly.</p>
 <h2>bdev</h2>
@@ -175,6 +176,7 @@ v19.07: (Upcoming Release)</h1>
 <p><a class="el" href="sock_8h.html#ae60bf2833f9b9bd99088c1c0929d6321" title="Get the ctx of the sock group. ">spdk_sock_group_get_ctx()</a> was added to return the context of the spdk_sock_group. <a class="el" href="sock_8h.html#a06f3441fbe7ea447b7ae03e71e074e27" title="Create a new socket group with user provided pointer. ">spdk_sock_group_create()</a> is updated to allow input the user provided ctx.</p>
 <h2>rpc</h2>
 <p>Added thread_get_stats RPC method to retrieve existing statistics.</p>
+<p>Added nvmf_get_stats RPC method to retrieve NVMf susbsystem statistics.</p>
 <h1><a class="anchor" id="changelog-v19-04"></a>
 v19.04:</h1>
 <h2>nvme</h2>

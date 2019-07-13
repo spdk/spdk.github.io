@@ -1,6 +1,7 @@
 var nvmf_8h =
 [
     [ "spdk_nvmf_transport_opts", "structspdk__nvmf__transport__opts.html", "structspdk__nvmf__transport__opts" ],
+    [ "spdk_nvmf_poll_group_stat", "structspdk__nvmf__poll__group__stat.html", "structspdk__nvmf__poll__group__stat" ],
     [ "spdk_nvmf_ns_opts", "structspdk__nvmf__ns__opts.html", "structspdk__nvmf__ns__opts" ],
     [ "new_qpair_fn", "nvmf_8h.html#a83e558236353a3b94992d2e604f4b660", null ],
     [ "nvmf_qpair_disconnect_cb", "nvmf_8h.html#abd02f30e6fcb57338c723ffd5c307f0d", null ],
@@ -20,6 +21,7 @@ var nvmf_8h =
     [ "spdk_nvmf_poll_group_add", "nvmf_8h.html#a37eea41a3c3856e0ea2cd383af20183d", null ],
     [ "spdk_nvmf_poll_group_create", "nvmf_8h.html#a3b1de2ab69c992ce2c732c354a08238f", null ],
     [ "spdk_nvmf_poll_group_destroy", "nvmf_8h.html#aa38d9ac50a79883df08d7faf3a647018", null ],
+    [ "spdk_nvmf_poll_group_get_stat", "nvmf_8h.html#ac5d5611a2cd71a7d71a08c990cbd29e7", null ],
     [ "spdk_nvmf_qpair_disconnect", "nvmf_8h.html#afa33cb1cf39e04ee533f874ed82e24e5", null ],
     [ "spdk_nvmf_qpair_get_listen_trid", "nvmf_8h.html#a261e8613de83e1a557e95a6e06bd0a19", null ],
     [ "spdk_nvmf_qpair_get_local_trid", "nvmf_8h.html#ad269e6b66abf6b758569453f4b6fd41a", null ],
