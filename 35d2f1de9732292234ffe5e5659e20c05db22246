@@ -19,6 +19,29 @@
     },
     {
       "key": {
+        "uuid": "6cf57b9c_0f8cc3c2",
+        "filename": "_posts/2019-02-28-io_uring.md",
+        "patchSetId": 5
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 1011314
+      },
+      "writtenOn": "2019-07-15T21:14:53Z",
+      "side": 1,
+      "message": "Looking at the link above I see RWF_HIPRI applying to preadv2/pwritev2 rather than preadv/pwritev.",
+      "range": {
+        "startLine": 17,
+        "startChar": 21,
+        "endLine": 17,
+        "endChar": 35
+      },
+      "revId": "35d2f1de9732292234ffe5e5659e20c05db22246",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "bf40e7ef_5b38ed72",
         "filename": "_posts/2019-02-28-io_uring.md",
         "patchSetId": 5
@@ -30,6 +53,52 @@
       "writtenOn": "2019-05-09T16:38:53Z",
       "side": 1,
       "message": "switch to past tense now - SPDK recently added a new bdev...",
+      "revId": "35d2f1de9732292234ffe5e5659e20c05db22246",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "a940ac9e_ab74b4a3",
+        "filename": "_posts/2019-02-28-io_uring.md",
+        "patchSetId": 5
+      },
+      "lineNbr": 63,
+      "author": {
+        "id": 1011314
+      },
+      "writtenOn": "2019-07-15T21:14:53Z",
+      "side": 1,
+      "message": "Is there a link missing here?",
+      "range": {
+        "startLine": 63,
+        "startChar": 8,
+        "endLine": 63,
+        "endChar": 50
+      },
+      "revId": "35d2f1de9732292234ffe5e5659e20c05db22246",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "7322265f_d3e0e776",
+        "filename": "_posts/2019-02-28-io_uring.md",
+        "patchSetId": 5
+      },
+      "lineNbr": 66,
+      "author": {
+        "id": 1011314
+      },
+      "writtenOn": "2019-07-15T21:14:53Z",
+      "side": 1,
+      "message": "Is this true anymore? We have batching too.",
+      "range": {
+        "startLine": 66,
+        "startChar": 2,
+        "endLine": 66,
+        "endChar": 70
+      },
       "revId": "35d2f1de9732292234ffe5e5659e20c05db22246",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": true
