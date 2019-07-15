@@ -209,6 +209,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="thre
 <tr class="memitem:a4eada7bac2a5c7ceaea891d57f8d3e21"><td class="memItemLeft" align="right" valign="top">struct spdk_thread *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="thread_8h.html#a4eada7bac2a5c7ceaea891d57f8d3e21">spdk_thread_create</a> (const char *name, struct <a class="el" href="structspdk__cpuset.html">spdk_cpuset</a> *cpumask)</td></tr>
 <tr class="memdesc:a4eada7bac2a5c7ceaea891d57f8d3e21"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new SPDK thread object.  <a href="#a4eada7bac2a5c7ceaea891d57f8d3e21">More...</a><br /></td></tr>
 <tr class="separator:a4eada7bac2a5c7ceaea891d57f8d3e21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60dac2a0fc19b23be6fecb1e5b6f8a7a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="thread_8h.html#a60dac2a0fc19b23be6fecb1e5b6f8a7a">spdk_set_thread</a> (struct spdk_thread *thread)</td></tr>
+<tr class="memdesc:a60dac2a0fc19b23be6fecb1e5b6f8a7a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Force the current system thread to act as if executing the given SPDK thread.  <a href="#a60dac2a0fc19b23be6fecb1e5b6f8a7a">More...</a><br /></td></tr>
+<tr class="separator:a60dac2a0fc19b23be6fecb1e5b6f8a7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac42fa5ed7447767885f700875b28a84b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="thread_8h.html#ac42fa5ed7447767885f700875b28a84b">spdk_thread_exit</a> (struct spdk_thread *thread)</td></tr>
 <tr class="memdesc:ac42fa5ed7447767885f700875b28a84b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mark the thread as exited, failing all future <a class="el" href="thread_8h.html#ad9e3693e8e9e6c9063ea36414294ae91" title="Perform one iteration worth of processing on the thread. ">spdk_thread_poll()</a> calls.  <a href="#ac42fa5ed7447767885f700875b28a84b">More...</a><br /></td></tr>
 <tr class="separator:ac42fa5ed7447767885f700875b28a84b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1106,6 +1109,32 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">ch</td><td>I/O channel to release a reference. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a60dac2a0fc19b23be6fecb1e5b6f8a7a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a60dac2a0fc19b23be6fecb1e5b6f8a7a">&#9670;&nbsp;</a></span>spdk_set_thread()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_set_thread </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_thread *&#160;</td>
+          <td class="paramname"><em>thread</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Force the current system thread to act as if executing the given SPDK thread. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">thread</td><td>The thread to set. </td></tr>
   </table>
   </dd>
 </dl>

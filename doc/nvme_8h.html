@@ -532,6 +532,15 @@ Functions</h2></td></tr>
 <tr class="memitem:ad720b23786450b5a2b2d7d65c6dd6b7c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#ad720b23786450b5a2b2d7d65c6dd6b7c">spdk_nvme_qpair_remove_cmd_error_injection</a> (struct spdk_nvme_ctrlr *ctrlr, struct spdk_nvme_qpair *qpair, uint8_t opc)</td></tr>
 <tr class="memdesc:ad720b23786450b5a2b2d7d65c6dd6b7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear the specified NVMe command with error status.  <a href="#ad720b23786450b5a2b2d7d65c6dd6b7c">More...</a><br /></td></tr>
 <tr class="separator:ad720b23786450b5a2b2d7d65c6dd6b7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f179ad680512c168148e13aa74b3f4b"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a5f179ad680512c168148e13aa74b3f4b">spdk_nvme_cpl_get_status_string</a> (const struct <a class="el" href="structspdk__nvme__status.html">spdk_nvme_status</a> *status)</td></tr>
+<tr class="memdesc:a5f179ad680512c168148e13aa74b3f4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given NVMe status, return ASCII string for that error.  <a href="#a5f179ad680512c168148e13aa74b3f4b">More...</a><br /></td></tr>
+<tr class="separator:a5f179ad680512c168148e13aa74b3f4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac06275147a2cbb800440686b8ba9a73b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#ac06275147a2cbb800440686b8ba9a73b">spdk_nvme_qpair_print_command</a> (struct spdk_nvme_qpair *qpair, struct <a class="el" href="structspdk__nvme__cmd.html">spdk_nvme_cmd</a> *cmd)</td></tr>
+<tr class="memdesc:ac06275147a2cbb800440686b8ba9a73b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prints (SPDK_NOTICELOG) the contents of an NVMe submission queue entry (command).  <a href="#ac06275147a2cbb800440686b8ba9a73b">More...</a><br /></td></tr>
+<tr class="separator:ac06275147a2cbb800440686b8ba9a73b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4b2335194f9c4c24a5e2c15a9432f4a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#ad4b2335194f9c4c24a5e2c15a9432f4a">spdk_nvme_qpair_print_completion</a> (struct spdk_nvme_qpair *qpair, struct <a class="el" href="structspdk__nvme__cpl.html">spdk_nvme_cpl</a> *cpl)</td></tr>
+<tr class="memdesc:ad4b2335194f9c4c24a5e2c15a9432f4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prints (SPDK_NOTICELOG) the contents of an NVMe completion queue entry.  <a href="#ad4b2335194f9c4c24a5e2c15a9432f4a">More...</a><br /></td></tr>
+<tr class="separator:ad4b2335194f9c4c24a5e2c15a9432f4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
@@ -909,6 +918,33 @@ int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_retry_co
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>probe context on success, NULL on failure. </dd></dl>
+
+</div>
+</div>
+<a id="a5f179ad680512c168148e13aa74b3f4b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5f179ad680512c168148e13aa74b3f4b">&#9670;&nbsp;</a></span>spdk_nvme_cpl_get_status_string()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* spdk_nvme_cpl_get_status_string </td>
+          <td>(</td>
+          <td class="paramtype">const struct <a class="el" href="structspdk__nvme__status.html">spdk_nvme_status</a> *&#160;</td>
+          <td class="paramname"><em>status</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Given NVMe status, return ASCII string for that error. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">status</td><td>Status from NVMe completion queue element. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Returns status as an ASCII string. </dd></dl>
 
 </div>
 </div>
@@ -5415,6 +5451,80 @@ value other than 0 and -EAGAIN probe error with one controller. </dd></dl>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 if successfully enabled, ENOMEM if an error command structure cannot be allocated.</dd></dl>
 <p>The function can be called multiple times to inject errors for different commands. If the opcode matches an existing entry, the existing entry will be updated with the values specified. </p>
+
+</div>
+</div>
+<a id="ac06275147a2cbb800440686b8ba9a73b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac06275147a2cbb800440686b8ba9a73b">&#9670;&nbsp;</a></span>spdk_nvme_qpair_print_command()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_nvme_qpair_print_command </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_nvme_qpair *&#160;</td>
+          <td class="paramname"><em>qpair</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structspdk__nvme__cmd.html">spdk_nvme_cmd</a> *&#160;</td>
+          <td class="paramname"><em>cmd</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Prints (SPDK_NOTICELOG) the contents of an NVMe submission queue entry (command). </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">qpair</td><td>Pointer to the NVMe queue pair - used to determine admin versus I/O queue. </td></tr>
+    <tr><td class="paramname">cmd</td><td>Pointer to the submission queue command to be formatted. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ad4b2335194f9c4c24a5e2c15a9432f4a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad4b2335194f9c4c24a5e2c15a9432f4a">&#9670;&nbsp;</a></span>spdk_nvme_qpair_print_completion()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_nvme_qpair_print_completion </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_nvme_qpair *&#160;</td>
+          <td class="paramname"><em>qpair</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structspdk__nvme__cpl.html">spdk_nvme_cpl</a> *&#160;</td>
+          <td class="paramname"><em>cpl</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Prints (SPDK_NOTICELOG) the contents of an NVMe completion queue entry. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">qpair</td><td>Pointer to the NVMe queue pair - presently unused. </td></tr>
+    <tr><td class="paramname">cpl</td><td>Pointer to the completion queue element to be formatted. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

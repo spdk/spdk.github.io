@@ -29,6 +29,7 @@ var thread_8h =
     [ "spdk_poller_register", "thread_8h.html#a6b3e883ddce01ae8d93541304d1e9126", null ],
     [ "spdk_poller_unregister", "thread_8h.html#a9c26cbd781063f5ee627d6aba2c73fe3", null ],
     [ "spdk_put_io_channel", "thread_8h.html#a717571a5011db0cdd730498146f25f9a", null ],
+    [ "spdk_set_thread", "thread_8h.html#a60dac2a0fc19b23be6fecb1e5b6f8a7a", null ],
     [ "spdk_thread_create", "thread_8h.html#a4eada7bac2a5c7ceaea891d57f8d3e21", null ],
     [ "spdk_thread_destroy", "thread_8h.html#a10aa5a8ec5228fa87db97f7655f8c0d6", null ],
     [ "spdk_thread_exit", "thread_8h.html#ac42fa5ed7447767885f700875b28a84b", null ],
