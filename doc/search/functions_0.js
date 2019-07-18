@@ -726,6 +726,7 @@ var searchData=
   ['spdk_5fsock_5flisten',['spdk_sock_listen',['../sock_8h.html#a4cc9153a7848b65e5487e5205f022909',1,'sock.h']]],
   ['spdk_5fsock_5freadv',['spdk_sock_readv',['../sock_8h.html#aec412e1537891ed4a02c24615df619b0',1,'sock.h']]],
   ['spdk_5fsock_5frecv',['spdk_sock_recv',['../sock_8h.html#abab9e8eaebfc2857e05848580fba864e',1,'sock.h']]],
+  ['spdk_5fsock_5fset_5fpriority',['spdk_sock_set_priority',['../sock_8h.html#a3d6c6e08153adbb3a70946af963582fd',1,'sock.h']]],
   ['spdk_5fsock_5fset_5frecvbuf',['spdk_sock_set_recvbuf',['../sock_8h.html#aec2209ac3d7d278cede96696116662d3',1,'sock.h']]],
   ['spdk_5fsock_5fset_5frecvlowat',['spdk_sock_set_recvlowat',['../sock_8h.html#a4e8d8e1b8155267b4b0289710e3b792f',1,'sock.h']]],
   ['spdk_5fsock_5fset_5fsendbuf',['spdk_sock_set_sendbuf',['../sock_8h.html#a0be72049ed7537c6f8efb99dbb44d20c',1,'sock.h']]],

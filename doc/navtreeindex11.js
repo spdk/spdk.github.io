@@ -2,10 +2,11 @@ var NAVTREEINDEX11 =
 {
 "sock_8h.html":[13,0,45],
 "sock_8h.html#a06f3441fbe7ea447b7ae03e71e074e27":[13,0,45,8],
-"sock_8h.html#a0be72049ed7537c6f8efb99dbb44d20c":[13,0,45,20],
+"sock_8h.html#a0be72049ed7537c6f8efb99dbb44d20c":[13,0,45,21],
+"sock_8h.html#a3d6c6e08153adbb3a70946af963582fd":[13,0,45,18],
 "sock_8h.html#a407c7aebae3d1a1556109da46a73213e":[13,0,45,2],
 "sock_8h.html#a4cc9153a7848b65e5487e5205f022909":[13,0,45,15],
-"sock_8h.html#a4e8d8e1b8155267b4b0289710e3b792f":[13,0,45,19],
+"sock_8h.html#a4e8d8e1b8155267b4b0289710e3b792f":[13,0,45,20],
 "sock_8h.html#a4f624276a1f0122bb624b2e8c5eaba19":[13,0,45,3],
 "sock_8h.html#a5ea2c431e11b3e15e0fba18fb4faa954":[13,0,45,1],
 "sock_8h.html#a73c174585e034587164b1a56d6e8a115":[13,0,45,13],
@@ -15,13 +16,13 @@ var NAVTREEINDEX11 =
 "sock_8h.html#ab596707e3e18b6f3e4ceb365369a3b8f":[13,0,45,5],
 "sock_8h.html#abab9e8eaebfc2857e05848580fba864e":[13,0,45,17],
 "sock_8h.html#aca9341be3f9ec5bd7e571f328e749328":[13,0,45,10],
-"sock_8h.html#ad10e77b4f8d7ba40ec75c69247541ef7":[13,0,45,21],
+"sock_8h.html#ad10e77b4f8d7ba40ec75c69247541ef7":[13,0,45,22],
 "sock_8h.html#ad52142b9c60b305a1eaaf869a321c790":[13,0,45,12],
 "sock_8h.html#ad75fdb315be08263dd42aa20e1ca5df9":[13,0,45,7],
 "sock_8h.html#ae297ae75e566b35635d20b959daa7741":[13,0,45,0],
 "sock_8h.html#ae2fc8fd68b9988e2ec771a82914dcc80":[13,0,45,14],
 "sock_8h.html#ae60bf2833f9b9bd99088c1c0929d6321":[13,0,45,9],
-"sock_8h.html#aec2209ac3d7d278cede96696116662d3":[13,0,45,18],
+"sock_8h.html#aec2209ac3d7d278cede96696116662d3":[13,0,45,19],
 "sock_8h.html#aec412e1537891ed4a02c24615df619b0":[13,0,45,16],
 "spdkcli.html":[8,0],
 "ssd_internals.html":[2,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX11 =
 "structiscsi__bhs__reject.html#adfc4645d093c6d9b714b7ad6322fc721":[12,0,13,2],
 "structiscsi__bhs__reject.html#af999b5f3fa844d70e30a22fdee95a3c3":[12,0,13,13],
 "structiscsi__bhs__scsi__req.html":[12,0,14],
-"structiscsi__bhs__scsi__req.html#a0c5c432db4acbf8baabd1352aecbd094":[12,0,14,9],
-"structiscsi__bhs__scsi__req.html#a1cf31778f4fd7928f14384f3374db310":[12,0,14,12]
+"structiscsi__bhs__scsi__req.html#a0c5c432db4acbf8baabd1352aecbd094":[12,0,14,9]
 };
