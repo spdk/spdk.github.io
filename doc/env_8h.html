@@ -718,7 +718,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">size</td><td>Size in bytes. </td></tr>
-    <tr><td class="paramname">align</td><td>Alignment value for the allocated memory. If '0', the allocated buffer is suitably aligned (in the same manner as malloc()). Otherwise, the allocated buffer is aligned to the multiple of align. In this case, it must be a power of two. </td></tr>
+    <tr><td class="paramname">align</td><td>If non-zero, the allocated buffer is aligned to a multiple of align. In this case, it must be a power of two. The returned buffer is always aligned to at least cache line size. </td></tr>
     <tr><td class="paramname">phys_addr</td><td>A pointer to the variable to hold the physical address of the allocated buffer is passed. If NULL, the physical address is not returned.</td></tr>
   </table>
   </dd>
@@ -769,7 +769,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">size</td><td>Size in bytes. </td></tr>
-    <tr><td class="paramname">align</td><td>Alignment value for the allocated memory. If '0', the allocated buffer is suitably aligned (in the same manner as malloc()). Otherwise, the allocated buffer is aligned to the multiple of align. In this case, it must be a power of two. </td></tr>
+    <tr><td class="paramname">align</td><td>If non-zero, the allocated buffer is aligned to a multiple of align. In this case, it must be a power of two. The returned buffer is always aligned to at least cache line size. </td></tr>
     <tr><td class="paramname">phys_addr</td><td>A pointer to the variable to hold the physical address of the allocated buffer is passed. If NULL, the physical address is not returned. </td></tr>
     <tr><td class="paramname">socket_id</td><td>Socket ID to allocate memory on, or SPDK_ENV_SOCKET_ID_ANY for any socket.</td></tr>
   </table>
@@ -823,7 +823,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_
   <table class="params">
     <tr><td class="paramname">buf</td><td>Buffer to resize. </td></tr>
     <tr><td class="paramname">size</td><td>Size in bytes. </td></tr>
-    <tr><td class="paramname">align</td><td>Alignment value for the allocated memory. If '0', the allocated buffer is suitably aligned (in the same manner as malloc()). Otherwise, the allocated buffer is aligned to the multiple of align. In this case, it must be a power of two. </td></tr>
+    <tr><td class="paramname">align</td><td>If non-zero, the allocated buffer is aligned to a multiple of align. In this case, it must be a power of two. The returned buffer is always aligned to at least cache line size. </td></tr>
     <tr><td class="paramname">phys_addr</td><td>A pointer to the variable to hold the physical address of the allocated buffer is passed. If NULL, the physical address is not returned.</td></tr>
   </table>
   </dd>
@@ -869,7 +869,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">size</td><td>Size in bytes. </td></tr>
-    <tr><td class="paramname">align</td><td>Alignment value for the allocated memory. If '0', the allocated buffer is suitably aligned (in the same manner as malloc()). Otherwise, the allocated buffer is aligned to the multiple of align. In this case, it must be a power of two. </td></tr>
+    <tr><td class="paramname">align</td><td>If non-zero, the allocated buffer is aligned to a multiple of align. In this case, it must be a power of two. The returned buffer is always aligned to at least cache line size. </td></tr>
     <tr><td class="paramname">phys_addr</td><td>A pointer to the variable to hold the physical address of the allocated buffer is passed. If NULL, the physical address is not returned.</td></tr>
   </table>
   </dd>
@@ -921,7 +921,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">size</td><td>Size in bytes. </td></tr>
-    <tr><td class="paramname">align</td><td>Alignment value for the allocated memory. If '0', the allocated buffer is suitably aligned (in the same manner as malloc()). Otherwise, the allocated buffer is aligned to the multiple of align. In this case, it must be a power of two. </td></tr>
+    <tr><td class="paramname">align</td><td>If non-zero, the allocated buffer is aligned to a multiple of align. In this case, it must be a power of two. The returned buffer is always aligned to at least cache line size. </td></tr>
     <tr><td class="paramname">phys_addr</td><td>A pointer to the variable to hold the physical address of the allocated buffer is passed. If NULL, the physical address is not returned. </td></tr>
     <tr><td class="paramname">socket_id</td><td>Socket ID to allocate memory on, or SPDK_ENV_SOCKET_ID_ANY for any socket.</td></tr>
   </table>
@@ -1330,7 +1330,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">size</td><td>Size in bytes. </td></tr>
-    <tr><td class="paramname">align</td><td>Alignment value for the allocated memory. If '0', the allocated buffer is suitably aligned (in the same manner as malloc()). Otherwise, the allocated buffer is aligned to the multiple of align. In this case, it must be a power of two. </td></tr>
+    <tr><td class="paramname">align</td><td>If non-zero, the allocated buffer is aligned to a multiple of align. In this case, it must be a power of two. The returned buffer is always aligned to at least cache line size. </td></tr>
     <tr><td class="paramname">phys_addr</td><td><b>Deprecated</b>. Please use <a class="el" href="env_8h.html#ac6a932523e0f4cb86d2b90dfe113b171" title="Get the physical address of a buffer. ">spdk_vtophys()</a> for retrieving physical addresses. A pointer to the variable to hold the physical address of the allocated buffer is passed. If NULL, the physical address is not returned. </td></tr>
     <tr><td class="paramname">socket_id</td><td>Socket ID to allocate memory on, or SPDK_ENV_SOCKET_ID_ANY for any socket. </td></tr>
     <tr><td class="paramname">flags</td><td>Combination of SPDK_MALLOC flags (<a class="el" href="env_8h.html#a7f065a5e897ff548b2dbf0996608929a">SPDK_MALLOC_DMA</a>, <a class="el" href="env_8h.html#ad1660ffa6731090ef3f480c295a87dba">SPDK_MALLOC_SHARE</a>). At least one flag must be specified.</td></tr>
@@ -3616,7 +3616,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_
   <table class="params">
     <tr><td class="paramname">buf</td><td>Buffer to resize. </td></tr>
     <tr><td class="paramname">size</td><td>Size in bytes. </td></tr>
-    <tr><td class="paramname">align</td><td>Alignment value for the allocated memory. If '0', the allocated buffer is suitably aligned (in the same manner as malloc()). Otherwise, the allocated buffer is aligned to the multiple of align. In this case, it must be a power of two.</td></tr>
+    <tr><td class="paramname">align</td><td>If non-zero, the allocated buffer is aligned to a multiple of align. In this case, it must be a power of two. The returned buffer is always aligned to at least cache line size.</td></tr>
   </table>
   </dd>
 </dl>
@@ -3906,7 +3906,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">size</td><td>Size in bytes. </td></tr>
-    <tr><td class="paramname">align</td><td>Alignment value for the allocated memory. If '0', the allocated buffer is suitably aligned (in the same manner as malloc()). Otherwise, the allocated buffer is aligned to the multiple of align. In this case, it must be a power of two. </td></tr>
+    <tr><td class="paramname">align</td><td>If non-zero, the allocated buffer is aligned to a multiple of align. In this case, it must be a power of two. The returned buffer is always aligned to at least cache line size. </td></tr>
     <tr><td class="paramname">phys_addr</td><td><b>Deprecated</b>. Please use <a class="el" href="env_8h.html#ac6a932523e0f4cb86d2b90dfe113b171" title="Get the physical address of a buffer. ">spdk_vtophys()</a> for retrieving physical addresses. A pointer to the variable to hold the physical address of the allocated buffer is passed. If NULL, the physical address is not returned. </td></tr>
     <tr><td class="paramname">socket_id</td><td>Socket ID to allocate memory on, or SPDK_ENV_SOCKET_ID_ANY for any socket. </td></tr>
     <tr><td class="paramname">flags</td><td>Combination of SPDK_MALLOC flags (<a class="el" href="env_8h.html#a7f065a5e897ff548b2dbf0996608929a">SPDK_MALLOC_DMA</a>, <a class="el" href="env_8h.html#ad1660ffa6731090ef3f480c295a87dba">SPDK_MALLOC_SHARE</a>).</td></tr>
