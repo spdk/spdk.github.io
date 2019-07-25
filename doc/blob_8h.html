@@ -351,13 +351,13 @@ Functions</h2></td></tr>
 <tr class="memdesc:a8753efc66a7bc29a63ae74730959b9c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read data from a blob.  <a href="#a8753efc66a7bc29a63ae74730959b9c1">More...</a><br /></td></tr>
 <tr class="separator:a8753efc66a7bc29a63ae74730959b9c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afa2fed3283426fb3ddf6abc61a44266b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blob_8h.html#afa2fed3283426fb3ddf6abc61a44266b">spdk_blob_io_writev</a> (struct spdk_blob *blob, struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *channel, struct iovec *iov, int iovcnt, uint64_t offset, uint64_t length, <a class="el" href="blob_8h.html#aca5253109581a768e06dd197429ef9e1">spdk_blob_op_complete</a> cb_fn, void *cb_arg)</td></tr>
-<tr class="memdesc:afa2fed3283426fb3ddf6abc61a44266b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write the data described by 'iov' to 'length' pages beginning at 'offset' pages into the blob.  <a href="#afa2fed3283426fb3ddf6abc61a44266b">More...</a><br /></td></tr>
+<tr class="memdesc:afa2fed3283426fb3ddf6abc61a44266b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write the data described by 'iov' to 'length' io_units beginning at 'offset' io_units into the blob.  <a href="#afa2fed3283426fb3ddf6abc61a44266b">More...</a><br /></td></tr>
 <tr class="separator:afa2fed3283426fb3ddf6abc61a44266b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ade242e483bcb3a50bb987acf2e0dfd4e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blob_8h.html#ade242e483bcb3a50bb987acf2e0dfd4e">spdk_blob_io_readv</a> (struct spdk_blob *blob, struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *channel, struct iovec *iov, int iovcnt, uint64_t offset, uint64_t length, <a class="el" href="blob_8h.html#aca5253109581a768e06dd197429ef9e1">spdk_blob_op_complete</a> cb_fn, void *cb_arg)</td></tr>
-<tr class="memdesc:ade242e483bcb3a50bb987acf2e0dfd4e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read 'length' pages starting at 'offset' pages into the blob into the memory described by 'iov'.  <a href="#ade242e483bcb3a50bb987acf2e0dfd4e">More...</a><br /></td></tr>
+<tr class="memdesc:ade242e483bcb3a50bb987acf2e0dfd4e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read 'length' io_units starting at 'offset' io_units into the blob into the memory described by 'iov'.  <a href="#ade242e483bcb3a50bb987acf2e0dfd4e">More...</a><br /></td></tr>
 <tr class="separator:ade242e483bcb3a50bb987acf2e0dfd4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2dea7bc3f6cc4dcd2b5d039b14b8640a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blob_8h.html#a2dea7bc3f6cc4dcd2b5d039b14b8640a">spdk_blob_io_unmap</a> (struct spdk_blob *blob, struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *channel, uint64_t offset, uint64_t length, <a class="el" href="blob_8h.html#aca5253109581a768e06dd197429ef9e1">spdk_blob_op_complete</a> cb_fn, void *cb_arg)</td></tr>
-<tr class="memdesc:a2dea7bc3f6cc4dcd2b5d039b14b8640a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unmap 'length' pages beginning at 'offset' pages on the blob as unused.  <a href="#a2dea7bc3f6cc4dcd2b5d039b14b8640a">More...</a><br /></td></tr>
+<tr class="memdesc:a2dea7bc3f6cc4dcd2b5d039b14b8640a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unmap 'length' io_units beginning at 'offset' io_units on the blob as unused.  <a href="#a2dea7bc3f6cc4dcd2b5d039b14b8640a">More...</a><br /></td></tr>
 <tr class="separator:a2dea7bc3f6cc4dcd2b5d039b14b8640a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0291498c4cac92556e0e7e7bf286bda6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blob_8h.html#a0291498c4cac92556e0e7e7bf286bda6">spdk_blob_io_write_zeroes</a> (struct spdk_blob *blob, struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *channel, uint64_t offset, uint64_t length, <a class="el" href="blob_8h.html#aca5253109581a768e06dd197429ef9e1">spdk_blob_op_complete</a> cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:a0291498c4cac92556e0e7e7bf286bda6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write zeros into area of a blob.  <a href="#a0291498c4cac92556e0e7e7bf286bda6">More...</a><br /></td></tr>
@@ -1017,7 +1017,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Read 'length' pages starting at 'offset' pages into the blob into the memory described by 'iov'. </p>
+<p>Read 'length' io_units starting at 'offset' io_units into the blob into the memory described by 'iov'. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">blob</td><td>Blob to read. </td></tr>
@@ -1084,14 +1084,14 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Unmap 'length' pages beginning at 'offset' pages on the blob as unused. </p>
-<p>Unmapped pages may allow the underlying storage media to behave more effciently.</p>
+<p>Unmap 'length' io_units beginning at 'offset' io_units on the blob as unused. </p>
+<p>Unmapped io_units may allow the underlying storage media to behave more effciently.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">blob</td><td>Blob to unmap. </td></tr>
     <tr><td class="paramname">channel</td><td>I/O channel used to submit requests. </td></tr>
     <tr><td class="paramname">offset</td><td>Offset is in io units from the beginning of the blob. </td></tr>
-    <tr><td class="paramname">length</td><td>Size of unmap area in pages. </td></tr>
+    <tr><td class="paramname">length</td><td>Size of unmap area in io_units. </td></tr>
     <tr><td class="paramname">cb_fn</td><td>Called when the operation is complete. </td></tr>
     <tr><td class="paramname">cb_arg</td><td>Argument passed to function cb_fn. </td></tr>
   </table>
@@ -1299,7 +1299,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Write the data described by 'iov' to 'length' pages beginning at 'offset' pages into the blob. </p>
+<p>Write the data described by 'iov' to 'length' io_units beginning at 'offset' io_units into the blob. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">blob</td><td>Blob to write. </td></tr>

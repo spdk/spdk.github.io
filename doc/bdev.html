@@ -198,7 +198,7 @@ Crypto Virtual Bdev Module</h1>
 <p>In order to support using the bdev block offset (LBA) as the initialization vector (IV), the crypto module break up all I/O into crypto operations of a size equal to the block size of the underlying bdev. For example, a 4K I/O to a bdev with a 512B block size, would result in 8 cryptographic operations.</p>
 <p>For reads, the buffer provided to the crypto module will be used as the destination buffer for unencrypted data. For writes, however, a temporary scratch buffer is used as the destination buffer for encryption which is then passed on to the underlying bdev as the write buffer. This is done to avoid encrypting the data in the original source buffer which may cause problems in some use cases.</p>
 <p>Example command</p>
-<p><code>rpc.py construct_crypto_bdev -b NVMe1n1 -c CryNvmeA -d crypto_aesni_mb -k 0123456789123456</code></p>
+<p><code>rpc.py construct_crypto_bdev NVMe1n1 CryNvmeA crypto_aesni_mb 0123456789123456</code></p>
 <p>This command will create a crypto vbdev called 'CryNvmeA' on top of the NVMe bdev 'NVMe1n1' and will use the DPDK software driver 'crypto_aesni_mb' and the key '0123456789123456'.</p>
 <p>To remove the vbdev use the delete_crypto_bdev command.</p>
 <p><code>rpc.py delete_crypto_bdev CryNvmeA</code></p>

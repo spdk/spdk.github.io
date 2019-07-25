@@ -1,17 +1,16 @@
 var NAVTREEINDEX19 =
 {
+"structspdk__ocssd__chunk__notification__entry.html#a2d96d597c27edd7e457218d85c01915d":[12,0,216,4],
 "structspdk__ocssd__chunk__notification__entry.html#a3d3a1360c9d0760187dffecfb4995d96":[12,0,216,13],
 "structspdk__ocssd__chunk__notification__entry.html#a4f8a236375b150ce7b9a139f9cac7da5":[12,0,216,10],
 "structspdk__ocssd__chunk__notification__entry.html#a7ba839c30cf67b09f5f0cbc30db5a153":[12,0,216,7],
 "structspdk__ocssd__chunk__notification__entry.html#a9637d6ca62e95d11f7cd99fbd38513fa":[12,0,216,3],
 "structspdk__ocssd__chunk__notification__entry.html#a99356830ad1d8aae77c4bf5726af51ec":[12,0,216,0],
-"structspdk__ocssd__chunk__notification__entry.html#aa60076b1240448b1d9fc8cdafbfd6a97":[12,0,216,14],
 "structspdk__ocssd__chunk__notification__entry.html#aadf9079a7a4aa1acd37f7535b5249c60":[12,0,216,5],
 "structspdk__ocssd__chunk__notification__entry.html#abc2b04eefd137a69be0153bf2377dda3":[12,0,216,8],
 "structspdk__ocssd__chunk__notification__entry.html#acf2668e09d087e0294af2b2f42160ad7":[12,0,216,15],
 "structspdk__ocssd__chunk__notification__entry.html#ad03d357b7eeee743a10a4fffd8e32eb6":[12,0,216,1],
 "structspdk__ocssd__chunk__notification__entry.html#ade200ad1cc6c49d14c555876e54af0b9":[12,0,216,2],
-"structspdk__ocssd__chunk__notification__entry.html#ae670b23c95319931c88bf7f67da09fff":[12,0,216,6],
 "structspdk__ocssd__chunk__notification__entry.html#ae73c05a35172bb876aa3860acfbfb9ee":[12,0,216,9],
 "structspdk__ocssd__chunk__notification__entry.html#af27b51304ef91eb1a5c55d0f01bceca4":[12,0,216,12],
 "structspdk__ocssd__dev__lba__fmt.html":[12,0,217],
@@ -48,10 +47,10 @@ var NAVTREEINDEX19 =
 "structspdk__ocssd__geometry__data.html#ae1670174f6eebb2c7e2fa95e46c9d524":[12,0,218,18],
 "structspdk__ocssd__geometry__data.html#ae8973c867a5d732a5367165a51d7c69c":[12,0,218,28],
 "structspdk__ocssd__geometry__data.html#aea2698e1e80447d0645c25ebe7171275":[12,0,218,14],
+"structspdk__ocssd__geometry__data.html#aeb0df60a55415e9b85ef052b4847717f":[12,0,218,4],
 "structspdk__ocssd__geometry__data.html#af02812ac810e3da324a4ff8029f6d045":[12,0,218,8],
 "structspdk__ocssd__geometry__data.html#af40987a13156a6c830806eaffe73858f":[12,0,218,10],
 "structspdk__ocssd__geometry__data.html#af410423952b5efef27ace44307a5081e":[12,0,218,12],
-"structspdk__ocssd__geometry__data.html#af8821d3e8de742499b8b77fb17abd5e7":[12,0,218,4],
 "structspdk__ocssd__vector__cpl.html":[12,0,219],
 "structspdk__ocssd__vector__cpl.html#a16825b4953e9b0dcedf3f01c9a6555c7":[12,0,219,0],
 "structspdk__ocssd__vector__cpl.html#a1fa243f741c4f54a0c855e7ab68c8aa1":[12,0,219,3],
@@ -249,5 +248,6 @@ var NAVTREEINDEX19 =
 "structspdk__scsi__pr__in__read__header.html#a91d8b07366a32aec322ee7f554a18ad2":[12,0,239,1],
 "structspdk__scsi__pr__in__read__keys__data.html":[12,0,240],
 "structspdk__scsi__pr__in__read__keys__data.html#a1c9633583beaee62f4e13c70b35d6e1b":[12,0,240,1],
-"structspdk__scsi__pr__in__read__keys__data.html#a6e25a31a72bb39b34d31984e157bed6e":[12,0,240,0]
+"structspdk__scsi__pr__in__read__keys__data.html#a6e25a31a72bb39b34d31984e157bed6e":[12,0,240,0],
+"structspdk__scsi__pr__in__read__reservations__data.html":[12,0,241]
 };

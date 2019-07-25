@@ -486,9 +486,9 @@ v18.04: Logical Volume Snapshot/Clone, iSCSI Initiator, Bdev QoS, VPP Userspace 
 <ul>
 <li>spdk_bs_io_write_blob() =&gt; <a class="el" href="blob_8h.html#a2835355d4266676fa6db5c987c506a77" title="Write data to a blob. ">spdk_blob_io_write()</a></li>
 <li>spdk_bs_io_read_blob() =&gt; <a class="el" href="blob_8h.html#a8753efc66a7bc29a63ae74730959b9c1" title="Read data from a blob. ">spdk_blob_io_read()</a></li>
-<li>spdk_bs_io_writev_blob() =&gt; <a class="el" href="blob_8h.html#afa2fed3283426fb3ddf6abc61a44266b" title="Write the data described by &#39;iov&#39; to &#39;length&#39; pages beginning at &#39;offset&#39; pages into the blob...">spdk_blob_io_writev()</a></li>
-<li>spdk_bs_io_readv_blob() =&gt; <a class="el" href="blob_8h.html#ade242e483bcb3a50bb987acf2e0dfd4e" title="Read &#39;length&#39; pages starting at &#39;offset&#39; pages into the blob into the memory described by &#39;iov&#39;...">spdk_blob_io_readv()</a></li>
-<li>spdk_bs_io_unmap_blob() =&gt; <a class="el" href="blob_8h.html#a2dea7bc3f6cc4dcd2b5d039b14b8640a" title="Unmap &#39;length&#39; pages beginning at &#39;offset&#39; pages on the blob as unused. ">spdk_blob_io_unmap()</a></li>
+<li>spdk_bs_io_writev_blob() =&gt; <a class="el" href="blob_8h.html#afa2fed3283426fb3ddf6abc61a44266b" title="Write the data described by &#39;iov&#39; to &#39;length&#39; io_units beginning at &#39;offset&#39; io_units into the blob...">spdk_blob_io_writev()</a></li>
+<li>spdk_bs_io_readv_blob() =&gt; <a class="el" href="blob_8h.html#ade242e483bcb3a50bb987acf2e0dfd4e" title="Read &#39;length&#39; io_units starting at &#39;offset&#39; io_units into the blob into the memory described by &#39;iov&#39;...">spdk_blob_io_readv()</a></li>
+<li>spdk_bs_io_unmap_blob() =&gt; <a class="el" href="blob_8h.html#a2dea7bc3f6cc4dcd2b5d039b14b8640a" title="Unmap &#39;length&#39; io_units beginning at &#39;offset&#39; io_units on the blob as unused. ">spdk_blob_io_unmap()</a></li>
 <li>spdk_bs_io_write_zeroes_blob() =&gt; <a class="el" href="blob_8h.html#a0291498c4cac92556e0e7e7bf286bda6" title="Write zeros into area of a blob. ">spdk_blob_io_write_zeroes()</a></li>
 </ul>
 <p>The old names still exist but are deprecated. They will be removed in the v18.07 release.</p>
