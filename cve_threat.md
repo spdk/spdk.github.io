@@ -19,6 +19,9 @@ Issues can come from anywhere but when one comes to the attention of the communi
 be notified via private communications ASAP. This is to ensure that we don't advertise possible vulnerabilities
 before they are fully understood.
 
+If you believe you have identified a potential security issue, please contact the sub-team directly via private
+email (see below), do not discuss on Slack or report the issue in GitHub.
+
 Sub-team members are responsible for the following process:
 
 1. Upon receiving a notification of a security vulnerability, the sub-team leader will call for a sub-team meeting
@@ -33,6 +36,16 @@ include only the fix(es) identified for the issue at hand.
 7. After the issue has been filed, an announcement will be made on the mailing list with more information about
 the patch and the fix so that community members can decide for themselves what their exposure is and when, if at
 all, they should move to the new release.
+
+CVE Sub-Team Members:
+
+* Felipe Francosi, felipe@nutanix.com
+* Jim Harris, james.r.harris@intel.com
+* Changpeng Liu, changpeng.liu@intel.com
+* Paul Luse, paul.e.luse@intel.com
+* Shuhei Matsumoto, shuhei.matsumoto.xt@hitachi.com
+* Ben Walker, benjamin.walker@intel.com
+* Anna Wan, qun.wan@intel.com
 
 <a id="threat"></a>
 ## Threat Modeling
