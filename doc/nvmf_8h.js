@@ -2,6 +2,8 @@ var nvmf_8h =
 [
     [ "spdk_nvmf_transport_opts", "structspdk__nvmf__transport__opts.html", "structspdk__nvmf__transport__opts" ],
     [ "spdk_nvmf_poll_group_stat", "structspdk__nvmf__poll__group__stat.html", "structspdk__nvmf__poll__group__stat" ],
+    [ "spdk_nvmf_rdma_device_stat", "structspdk__nvmf__rdma__device__stat.html", "structspdk__nvmf__rdma__device__stat" ],
+    [ "spdk_nvmf_transport_poll_group_stat", "structspdk__nvmf__transport__poll__group__stat.html", "structspdk__nvmf__transport__poll__group__stat" ],
     [ "spdk_nvmf_ns_opts", "structspdk__nvmf__ns__opts.html", "structspdk__nvmf__ns__opts" ],
     [ "new_qpair_fn", "nvmf_8h.html#a83e558236353a3b94992d2e604f4b660", null ],
     [ "nvmf_qpair_disconnect_cb", "nvmf_8h.html#abd02f30e6fcb57338c723ffd5c307f0d", null ],
@@ -26,6 +28,7 @@ var nvmf_8h =
     [ "spdk_nvmf_qpair_get_listen_trid", "nvmf_8h.html#a261e8613de83e1a557e95a6e06bd0a19", null ],
     [ "spdk_nvmf_qpair_get_local_trid", "nvmf_8h.html#ad269e6b66abf6b758569453f4b6fd41a", null ],
     [ "spdk_nvmf_qpair_get_peer_trid", "nvmf_8h.html#a145a3a2e51799674837dcb1ebf9a13c3", null ],
+    [ "spdk_nvmf_rdma_init_hooks", "nvmf_8h.html#a9ae1cb4c373e0dd8146b81b5ba57ff0b", null ],
     [ "spdk_nvmf_subsystem_add_host", "nvmf_8h.html#a19b3442b7eb75c234c3e3090d2b5add3", null ],
     [ "spdk_nvmf_subsystem_add_listener", "nvmf_8h.html#a46521b556107a0ab58998adfeee8795f", null ],
     [ "spdk_nvmf_subsystem_add_ns", "nvmf_8h.html#a81b63417dea01e5a4fe15a4f3322c63c", null ],
@@ -72,5 +75,7 @@ var nvmf_8h =
     [ "spdk_nvmf_transport_get_first", "nvmf_8h.html#a1aeaade30bb4e457f5c35e2f3649d097", null ],
     [ "spdk_nvmf_transport_get_next", "nvmf_8h.html#aa1316a2fe3bd765d755de1df15add5cc", null ],
     [ "spdk_nvmf_transport_listen", "nvmf_8h.html#af3f67fe201cedd887ed6ad35792ff5e7", null ],
-    [ "spdk_nvmf_transport_opts_init", "nvmf_8h.html#a33f54dfed0f9cc21264f1c89bd708e94", null ]
+    [ "spdk_nvmf_transport_opts_init", "nvmf_8h.html#a33f54dfed0f9cc21264f1c89bd708e94", null ],
+    [ "spdk_nvmf_transport_poll_group_free_stat", "nvmf_8h.html#ab03fc0bf9946107905bf8148495966f9", null ],
+    [ "spdk_nvmf_transport_poll_group_get_stat", "nvmf_8h.html#ae4e59ef25ba7e6a45ab1d613c006f1bb", null ]
 ];

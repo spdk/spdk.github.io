@@ -170,6 +170,9 @@ Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__io__qpair__opts.html">spdk_nvme_io_qpair_opts</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">NVMe I/O queue pair initialization options.  <a href="structspdk__nvme__io__qpair__opts.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__rdma__hooks.html">spdk_nvme_rdma_hooks</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">RDMA Transport Hooks.  <a href="structspdk__nvme__rdma__hooks.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
@@ -541,6 +544,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ad4b2335194f9c4c24a5e2c15a9432f4a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#ad4b2335194f9c4c24a5e2c15a9432f4a">spdk_nvme_qpair_print_completion</a> (struct spdk_nvme_qpair *qpair, struct <a class="el" href="structspdk__nvme__cpl.html">spdk_nvme_cpl</a> *cpl)</td></tr>
 <tr class="memdesc:ad4b2335194f9c4c24a5e2c15a9432f4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prints (SPDK_NOTICELOG) the contents of an NVMe completion queue entry.  <a href="#ad4b2335194f9c4c24a5e2c15a9432f4a">More...</a><br /></td></tr>
 <tr class="separator:ad4b2335194f9c4c24a5e2c15a9432f4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82cdb425c9fad7b94ad0b8f5c27bb8b2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a82cdb425c9fad7b94ad0b8f5c27bb8b2">spdk_nvme_rdma_init_hooks</a> (struct <a class="el" href="structspdk__nvme__rdma__hooks.html">spdk_nvme_rdma_hooks</a> *hooks)</td></tr>
+<tr class="memdesc:a82cdb425c9fad7b94ad0b8f5c27bb8b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the global hooks for the RDMA transport, if necessary.  <a href="#a82cdb425c9fad7b94ad0b8f5c27bb8b2">More...</a><br /></td></tr>
+<tr class="separator:a82cdb425c9fad7b94ad0b8f5c27bb8b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
@@ -5613,6 +5619,34 @@ value other than 0 and -EAGAIN probe error with one controller. </dd></dl>
   </dd>
 </dl>
 <p>The function will remove specified command in the error list. </p>
+
+</div>
+</div>
+<a id="a82cdb425c9fad7b94ad0b8f5c27bb8b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a82cdb425c9fad7b94ad0b8f5c27bb8b2">&#9670;&nbsp;</a></span>spdk_nvme_rdma_init_hooks()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_nvme_rdma_init_hooks </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structspdk__nvme__rdma__hooks.html">spdk_nvme_rdma_hooks</a> *&#160;</td>
+          <td class="paramname"><em>hooks</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the global hooks for the RDMA transport, if necessary. </p>
+<p>This call is optional and must be performed prior to probing for any devices. By default, the RDMA transport will use the ibverbs library to create protection domains and register memory. This is a mechanism to subvert that and use an existing registration.</p>
+<p>This function may only be called one time per process.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">hooks</td><td>for initializing global hooks </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

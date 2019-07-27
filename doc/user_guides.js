@@ -44,7 +44,8 @@ var user_guides =
           [ "RDMA Limitations", "nvmf.html#nvmf_rdma_limitations", null ]
         ] ],
         [ "TCP transport support", "nvmf.html#nvmf_tcp_transport", null ],
-        [ "Configuring the SPDK NVMe over Fabrics Target", "nvmf.html#nvmf_config", [
+        [ "Configuring the SPDK NVMe over Fabrics Target", "nvmf.html#nvmf_config", null ],
+        [ "FC transport support", "nvmf.html#nvmf_fc_transport", [
           [ "Using RPCs", "nvmf.html#nvmf_config_rpc", null ],
           [ "Assigning CPU Cores to the NVMe over Fabrics Target", "nvmf.html#nvmf_config_lcore", null ]
         ] ],
