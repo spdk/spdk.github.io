@@ -245,7 +245,7 @@ having to run the whole suite. Please see below for simplifications and resource
 Most of the tests under the `test/iscsi_tgt` directory in SPDK can also be run in isolation by supplying the iso flag for Example:
 
 ~~~{.sh}
-sudo ./spdk/test/iscsi_tgt/fio/fio.sh iso
+sudo ./spdk/test/iscsi_tgt/fio/fio.sh --iso
 ~~~
 
 The iSCSI iso flag takes care of setting up hugepages for SPDK applications. It also sets up a virtual network interface to run the tests.
@@ -256,12 +256,16 @@ The iSCSI iso flag takes care of setting up hugepages for SPDK applications. It 
 Each of the tests under the `test/nvmf` directory in SPDK can be run in isolation by passing the iso flag to them. For example:
 
 ~~~{.sh}
-sudo ./spdk/test/nvmf/target/fio.sh iso
+sudo ./spdk/test/nvmf/target/fio.sh --iso --transport=rdma
+sudo ./spdk/test/nvmf/target/shutdown.sh --iso --transport=rdma
 ~~~
 
-The NVMe-oF iso flag configures an RDMA interface with the proper IP address and sets up the hugepages for SPDK applications. It
-will configure the interface on an RDMA capable NIC if available, otherwise it will emulate RDMA using Soft-RoCE. Soft-RoCE requires
-the presence of the rxe_cfg configuration tool.
+Please also note the use of the transport flag. This flag must be supplied when running a test locally and controls which transport is tested
+against in the specific test. Valid values for this flag are "rdma" and "tcp".
+
+When used with the RDMA transport, the NVMe-oF iso flag configures an RDMA interface with the proper IP address and sets up the hugepages 
+for SPDK applications. It will configure the interface on an RDMA capable NIC if available, otherwise it will emulate RDMA using Soft-RoCE.
+Soft-RoCE requires the presence of the rxe_cfg configuration tool.
 
 <a id="local_unit"></a>
 ### Unit Tests
