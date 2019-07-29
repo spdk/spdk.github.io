@@ -3,6 +3,7 @@ var reduce_8h =
     [ "spdk_reduce_vol_params", "structspdk__reduce__vol__params.html", "structspdk__reduce__vol__params" ],
     [ "spdk_reduce_vol_cb_args", "structspdk__reduce__vol__cb__args.html", "structspdk__reduce__vol__cb__args" ],
     [ "spdk_reduce_backing_dev", "structspdk__reduce__backing__dev.html", "structspdk__reduce__backing__dev" ],
+    [ "REDUCE_MAX_IOVECS", "reduce_8h.html#a6cc14a111d894cbb99573beb8a72c74b", null ],
     [ "spdk_reduce_dev_cpl", "reduce_8h.html#a137aea842a5ebd65781d7bcfc735018b", null ],
     [ "spdk_reduce_vol_op_complete", "reduce_8h.html#a34d13995c0ae908bbe5bf798fdb52a4f", null ],
     [ "spdk_reduce_vol_op_with_handle_complete", "reduce_8h.html#a978a8801cd56a94532562650457c97dd", null ],
