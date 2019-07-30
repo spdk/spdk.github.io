@@ -1,5 +1,6 @@
 var NAVTREEINDEX4 =
 {
+"json_8h.html#a6d51ae041b9f8401a3e0a35287bfad5a":[13,0,26,57],
 "json_8h.html#a6f0f7b255a750c26d300957894c0a093":[13,0,26,61],
 "json_8h.html#a78ee727532882d4cab19bad70343eb7f":[13,0,26,63],
 "json_8h.html#a793b5baacd8c017356270f9092881199":[13,0,26,42],
@@ -248,6 +249,5 @@ var NAVTREEINDEX4 =
 "logical_volumes.html#lvol_rpc":[5,1,1],
 "logical_volumes.html#lvol_snapshots":[5,1,0,4],
 "logical_volumes.html#lvol_terminology":[5,1,0],
-"logical_volumes.html#lvol_thin_provisioning":[5,1,0,3],
-"logical_volumes.html#lvs":[5,1,0,0]
+"logical_volumes.html#lvol_thin_provisioning":[5,1,0,3]
 };

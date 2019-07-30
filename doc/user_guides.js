@@ -81,6 +81,7 @@ var user_guides =
         [ "Histograms", "bdev.html#rpc_bdev_histogram", null ]
       ] ],
       [ "Ceph RBD", "bdev.html#bdev_config_rbd", null ],
+      [ "Compression Virtual Bdev Module", "bdev.html#bdev_config_compress", null ],
       [ "Crypto Virtual Bdev Module", "bdev.html#bdev_config_crypto", null ],
       [ "GPT (GUID Partition Table)", "bdev.html#bdev_config_gpt", [
         [ "SPDK GPT partition table", "bdev.html#bdev_ug_gpt", null ],

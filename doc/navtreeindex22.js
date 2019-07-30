@@ -1,5 +1,6 @@
 var NAVTREEINDEX22 =
 {
+"unionspdk__nvme__intel__feat__smbus__address.html#ae122cd0e8dc3d8b57632fea33ec8efa2":[12,0,132,3],
 "unionspdk__nvme__vs__register.html":[12,0,175],
 "unionspdk__nvme__vs__register.html#a17ba800fbd93eb79d3929878a047b93f":[12,0,175,0],
 "unionspdk__nvme__vs__register.html#a605cba0b2c6abdee150cb3a6babc4bb8":[12,0,175,1],
