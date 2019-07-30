@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "ad4bd105_7c6a6bb2",
+        "filename": "_posts/2019-07-30-19.07_release.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 1011221
+      },
+      "writtenOn": "2019-07-30T15:27:13Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "bfeec42b_260b6253",
+      "revId": "25d6cc408d1f324b8fbf860efdb53cd6ba83436a",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "44d748b5_fc128071",
         "filename": "_posts/2019-07-30-19.07_release.md",
         "patchSetId": 1
@@ -36,6 +54,24 @@
     },
     {
       "key": {
+        "uuid": "3cd2af1c_0d71aee9",
+        "filename": "_posts/2019-07-30-19.07_release.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 1011221
+      },
+      "writtenOn": "2019-07-30T15:27:13Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "44d748b5_fc128071",
+      "revId": "25d6cc408d1f324b8fbf860efdb53cd6ba83436a",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "2d082426_56a78ecc",
         "filename": "_posts/2019-07-30-19.07_release.md",
         "patchSetId": 1
@@ -50,6 +86,24 @@
       "revId": "25d6cc408d1f324b8fbf860efdb53cd6ba83436a",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "83d5f9c0_1468905e",
+        "filename": "_posts/2019-07-30-19.07_release.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 1011221
+      },
+      "writtenOn": "2019-07-30T15:27:13Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "2d082426_56a78ecc",
+      "revId": "25d6cc408d1f324b8fbf860efdb53cd6ba83436a",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
     }
   ]
 }
