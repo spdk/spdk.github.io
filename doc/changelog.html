@@ -145,8 +145,10 @@ $(document).ready(function(){initNavTree('changelog.html','');});
 <div class="title">Changelog </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h1><a class="anchor" id="changelog-v19-07"></a>
-v19.07: (Upcoming Release)</h1>
+<div class="textblock"><h1><a class="anchor" id="changelog-v19-10"></a>
+v19.10: (Upcoming Release)</h1>
+<h1><a class="anchor" id="changelog-v19-07"></a>
+v19.07:</h1>
 <h2>ftl</h2>
 <p>EXPERIMENTAL: Added ability to mirror writes to persistent write buffer cache to allow for recovery from dirty shutdown event.</p>
 <p>Added handling of Asynchronous Nand Management Events (ANM).</p>
@@ -215,9 +217,12 @@ v19.07: (Upcoming Release)</h1>
 <p>Preliminary support for cross compilation is now available. Targeting an older CPU on the same architecture using your native compiler can be accomplished by using the <code>--target-arch</code> option to <code>configure</code> as follows:</p>
 <div class="fragment"><div class="line">./configure --target-arch=broadwell</div></div><!-- fragment --><p>Additionally, some support for cross-compiling to other architectures has been added via the <code>--cross-prefix</code> argument to <code>configure</code>. To cross-compile, set CC and CXX to the cross compilers, then run configure as follows:</p>
 <div class="fragment"><div class="line">./configure --target-arch=aarm64 --cross-prefix=aarch64-linux-gnu</div></div><!-- fragment --><h2>vhost</h2>
+<p>A security vulnerability has been identified and fixed in SPDK Vhost-SCSI target. A malicious client (e.g. a virtual machine) could send a carefully prepared, invalid I/O request to crash the entire SPDK process. All users of SPDK Vhost-SCSI target are strongly recommended to update. All SPDK versions &lt; 19.07 are affected.</p>
 <p>By default, SPDK will now rely on upstream DPDK's rte_vhost instead of its fork located inside SPDK repo. The internal fork is still kept around to support older DPDK versions, but is considered legacy and will be eventually removed.</p>
 <p><code>configure</code> will now automatically use the upstream rte_vhost if the used DPDK version is &gt;= 19.05.</p>
 <p><a class="el" href="vhost_8h.html#ab35076d7e06edf2098b814929a04c7d5" title="Init vhost environment. ">spdk_vhost_init()</a> is now asynchronous and accepts a completion callback.</p>
+<h2>iscsi target</h2>
+<p>A security vulnerability has been identified and fixed in SPDK iSCSI target. A malicious client (e.g. an iSCSI initiator) could send a carefully prepared, invalid I/O request to crash the entire SPDK process. All users of SPDK iSCSI target are strongly recommended to update. All SPDK versions &lt; 19.07 are affected.</p>
 <h2>thread</h2>
 <p>Exposed <a class="el" href="thread_8h.html#a60dac2a0fc19b23be6fecb1e5b6f8a7a" title="Force the current system thread to act as if executing the given SPDK thread. ">spdk_set_thread()</a> in order for applications to associate with SPDK thread when necessary.</p>
 <p>Added <a class="el" href="thread_8h.html#a10aa5a8ec5228fa87db97f7655f8c0d6" title="Destroy a thread, releasing all of its resources. ">spdk_thread_destroy()</a> to allow framework polling the thread to release resources associated with that thread.</p>
