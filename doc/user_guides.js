@@ -83,6 +83,7 @@ var user_guides =
       [ "Ceph RBD", "bdev.html#bdev_config_rbd", null ],
       [ "Compression Virtual Bdev Module", "bdev.html#bdev_config_compress", null ],
       [ "Crypto Virtual Bdev Module", "bdev.html#bdev_config_crypto", null ],
+      [ "Delay Bdev Module", "bdev.html#bdev_config_delay", null ],
       [ "GPT (GUID Partition Table)", "bdev.html#bdev_config_gpt", [
         [ "SPDK GPT partition table", "bdev.html#bdev_ug_gpt", null ],
         [ "Creating a GPT partition table using NBD", "bdev.html#bdev_ug_gpt_create_part", null ]
