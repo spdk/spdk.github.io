@@ -5,7 +5,6 @@ var nvme_8h =
     [ "spdk_nvme_host_id", "structspdk__nvme__host__id.html", "structspdk__nvme__host__id" ],
     [ "spdk_nvme_io_qpair_opts", "structspdk__nvme__io__qpair__opts.html", "structspdk__nvme__io__qpair__opts" ],
     [ "spdk_nvme_rdma_hooks", "structspdk__nvme__rdma__hooks.html", "structspdk__nvme__rdma__hooks" ],
-    [ "SPDK_NVME_DEFAULT_RETRY_COUNT", "nvme_8h.html#a1915e114063119af0a9af50b75b7acaa", null ],
     [ "spdk_nvme_aer_cb", "nvme_8h.html#ae564dc7dced1dd7b474c1a6923734a6d", null ],
     [ "spdk_nvme_attach_cb", "nvme_8h.html#ac1eaa795f075495337b270667661ce5d", null ],
     [ "spdk_nvme_cmd_cb", "nvme_8h.html#ac9779e9957d7089dde8e492cc60856d8", null ],
@@ -135,6 +134,5 @@ var nvme_8h =
     [ "spdk_nvme_transport_id_parse", "nvme_8h.html#ac37484cc5d14777e4ae1fde031d0edf2", null ],
     [ "spdk_nvme_transport_id_parse_adrfam", "nvme_8h.html#af7868a6f646a6d1bd70d5c1b8ce5757f", null ],
     [ "spdk_nvme_transport_id_parse_trtype", "nvme_8h.html#ab2afed1cce9d9334dfd127db416ada4c", null ],
-    [ "spdk_nvme_transport_id_trtype_str", "nvme_8h.html#aa3a982eb5b757eae63fbc9305627090b", null ],
-    [ "spdk_nvme_retry_count", "nvme_8h.html#a004598ea84d2c2c408fe941ea2f3cdf7", null ]
+    [ "spdk_nvme_transport_id_trtype_str", "nvme_8h.html#aa3a982eb5b757eae63fbc9305627090b", null ]
 ];
