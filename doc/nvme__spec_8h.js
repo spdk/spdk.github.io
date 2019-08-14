@@ -196,7 +196,7 @@ var nvme__spec_8h =
       [ "SPDK_NVME_SC_INVALID_RESOURCE_ID", "nvme__spec_8h.html#acb8784fad6a53be95d4c718ad3cf852ea5f317e244e8b19711dfd9c6f13c02a72", null ],
       [ "SPDK_NVME_SC_CONFLICTING_ATTRIBUTES", "nvme__spec_8h.html#acb8784fad6a53be95d4c718ad3cf852ea46456cead56d8bc7ecd09fa19f7eff43", null ],
       [ "SPDK_NVME_SC_INVALID_PROTECTION_INFO", "nvme__spec_8h.html#acb8784fad6a53be95d4c718ad3cf852ea6c56e9d4179e4b79b50854982b3d86f8", null ],
-      [ "SPDK_NVME_SC_ATTEMPTED_WRITE_TO_RO_PAGE", "nvme__spec_8h.html#acb8784fad6a53be95d4c718ad3cf852eacd44697ce2c5e075754602fa40bfb532", null ]
+      [ "SPDK_NVME_SC_ATTEMPTED_WRITE_TO_RO_RANGE", "nvme__spec_8h.html#acb8784fad6a53be95d4c718ad3cf852ea24a73fa586b632d528c3953d07734d8c", null ]
     ] ],
     [ "spdk_nvme_data_transfer", "nvme__spec_8h.html#adbe38e042bb939183ed8fd5c1685b2fc", [
       [ "SPDK_NVME_DATA_NONE", "nvme__spec_8h.html#adbe38e042bb939183ed8fd5c1685b2fca4d074786dad4f37c0211563ec0376974", null ],

@@ -22,6 +22,7 @@ var searchData=
   ['nlbaf',['nlbaf',['../structspdk__nvme__ns__data.html#a2a4ebf525c7d166d31f52530999ddcdf',1,'spdk_nvme_ns_data']]],
   ['nmic',['nmic',['../structspdk__nvme__ns__data.html#a05818ee0ed63259e6685074f575b1457',1,'spdk_nvme_ns_data']]],
   ['nn',['nn',['../structspdk__nvme__ctrlr__data.html#a5e6150304b319f8313abbee9fe52b20d',1,'spdk_nvme_ctrlr_data']]],
+  ['no_5fshn_5fnotification',['no_shn_notification',['../structspdk__nvme__ctrlr__opts.html#a4ca76bf8a2554d9a0c13cbd0ac0b30e3',1,'spdk_nvme_ctrlr_opts']]],
   ['noiob',['noiob',['../structspdk__nvme__ns__data.html#af3aa67f77d8e6228c1ee8d49668e12bc',1,'spdk_nvme_ns_data']]],
   ['non_5foperational_5fpower_5fstate_5fpermissive_5fmode',['non_operational_power_state_permissive_mode',['../structspdk__nvme__ctrlr__data.html#a4dad8c13bda97607785a59c50b2efa72',1,'spdk_nvme_ctrlr_data']]],
   ['noppme',['noppme',['../unionspdk__nvme__feat__non__operational__power__state__config.html#a8f512d6ffa8611e38141e169898efb4b',1,'spdk_nvme_feat_non_operational_power_state_config']]],
