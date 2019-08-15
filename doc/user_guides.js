@@ -136,7 +136,7 @@ var user_guides =
         [ "delete_ocf_bdev", "jsonrpc.html#rpc_delete_ocf_bdev", null ],
         [ "get_ocf_stats", "jsonrpc.html#rpc_get_ocf_stats", null ],
         [ "get_ocf_bdevs", "jsonrpc.html#rpc_get_ocf_bdevs", null ],
-        [ "construct_malloc_bdev", "jsonrpc.html#rpc_construct_malloc_bdev", null ],
+        [ "bdev_malloc_create", "jsonrpc.html#rpc_bdev_malloc_create", null ],
         [ "delete_malloc_bdev", "jsonrpc.html#rpc_delete_malloc_bdev", null ],
         [ "construct_null_bdev", "jsonrpc.html#rpc_construct_null_bdev", null ],
         [ "delete_null_bdev", "jsonrpc.html#rpc_delete_null_bdev", null ],
