@@ -18,6 +18,8 @@ lang: cn
 
 **SPDK NVMe-oF target/initiator**
 
+* [SPDK NVMe Reservation使用简介](https://mp.weixin.qq.com/s?__biz=MzI3NDA4ODY4MA==&mid=2653335852&idx=1&sn=5e08566473a1e2f14b9d1f697c4995cc&chksm=f0cb46abc7bccfbdc9aa982f87dc851a59c6bddb321f4d02f682549426226eca2ee1d973a32b&token=2145434935&lang=zh_CN#rd)
+
 * [深入理解 SPDK NVMe/TCP transport的设计](https://mp.weixin.qq.com/s?__biz=MzI3NDA4ODY4MA==&mid=2653335525&idx=1&sn=d4dc96bd800161e8a222279ca8396570&chksm=f0cb5862c7bcd1741bfbe1ee4c96dd200491f9c0c4d6a41a8299e0adf289f9a102b6780cd86f&token=1477511457&lang=zh_CN#rd)
 
 * [搭建远端存储，深度解读SPDK NVMe-oF target](https://mp.weixin.qq.com/s/ohPaxAwmhGtuQQWz--J6WA)
@@ -47,6 +49,8 @@ lang: cn
 ******
 
 **SPDK的性能测试和相关工具**
+
+* [在虚拟机上部署SPDK NVME测试案例](https://mp.weixin.qq.com/s?__biz=MzI3NDA4ODY4MA==&mid=2653336075&idx=1&sn=13c658b8c727ac730c8911088d680f20&chksm=f0cb458cc7bccc9ad4f3cd1c660e33a971a2419b683d79869769713c737da64f5d74181c1e6d&token=186149208&lang=zh_CN#rd)
 
 * [SPDK生态工具（一）：监控管理工具](https://mp.weixin.qq.com/s?__biz=MzI3NDA4ODY4MA==&mid=2653334766&idx=1&sn=dd332cc2549231b4e6998937b20de705&chksm=f0cb5b69c7bcd27f1ee55cf7c9c324f44f366d7fabf07e27eb00ecc3e94edb206ed1a7e2e2a1&token=431082989&lang=zh_CN#rd)
 
