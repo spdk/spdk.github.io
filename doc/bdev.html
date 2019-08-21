@@ -194,13 +194,13 @@ Compression Virtual Bdev Module</h1>
 <p>The vbdev module relies on the DPDK CompressDev Framework to provide all compression functionality. The framework provides support for many different software only compression modules as well as hardware assisted support for Intel QAT. At this time the vbdev module supports the DPDK drivers for ISAL and QAT.</p>
 <p>Persistent memory is used to store metadata associated with the layout of the data on the backing device. SPDK relies on <a href="http://pmem.io/pmdk/">PMDK</a> to interface persistent memory so any hardware supported by PMDK should work. If the directory for PMEM supplied upon vbdev creation does not point to persistent memory (i.e. a regular filesystem) performance will be severely impacted. The vbdev module and reduce libraries were designed to use persistent memory for any production use.</p>
 <p>Example command</p>
-<p><code>rpc.py construct_compress_bdev -p /pmem_files -b myLvol</code></p>
+<p><code>rpc.py bdev_compress_create -p /pmem_files -b myLvol</code></p>
 <p>In this example, a compression vbdev is created using persistent memory that is mapped to the directory <code>pmem_files</code> on top of the existing thinly provisioned logical volume <code>myLvol</code>. The resulting compression bdev will be named <code>COMP_LVS/myLvol</code> where LVS is the name of the logical volume store that <code>myLvol</code> resides on.</p>
 <p>The logical volume is referred to as the backing device and once the compression vbdev is created it cannot be separated from the persistent memory file that will be created in the specified directory. If the persistent memory file is not available, the compression vbdev will also not be available.</p>
 <p>By default the vbdev module will choose the QAT driver if the hardware and drivers are available and loaded. If not, it will revert to the software-only ISAL driver. By using the following command, the driver may be specified however this is not persistent so it must be done either upon creation or before the underlying logical volume is loaded to be honored. In the example below, <code>0</code> is telling the vbdev module to use QAT if available otherwise use ISAL, this is the default and if sufficient the command is not required. Passing a value of 1 tells the driver to use QAT and if not available then the creation or loading the vbdev should fail to create or load. A value of '2' as shown below tells the module to use ISAL and if for some reason it is not available, the vbdev should fail to create or load.</p>
 <p><code>rpc.py set_compress_pmd -p 2</code></p>
 <p>To remove a compression vbdev, use the following command which will also delete the PMEM file. If the logical volume is deleted the PMEM file will not be removed and the compression vbdev will not be available.</p>
-<p><code>rpc.py delete_compress_bdev COMP_LVS/myLvol</code></p>
+<p><code>rpc.py bdev_compress_delete COMP_LVS/myLvol</code></p>
 <h1><a class="anchor" id="bdev_config_crypto"></a>
 Crypto Virtual Bdev Module</h1>
 <p>The crypto virtual bdev module can be configured to provide at rest data encryption for any underlying bdev. The module relies on the DPDK CryptoDev Framework to provide all cryptographic functionality. The framework provides support for many different software only cryptographic modules as well hardware assisted support for the Intel QAT board. The framework also provides support for cipher, hash, authentication and AEAD functions. At this time the SPDK virtual bdev module supports cipher only as follows:</p>
@@ -211,10 +211,10 @@ Crypto Virtual Bdev Module</h1>
 <p>In order to support using the bdev block offset (LBA) as the initialization vector (IV), the crypto module break up all I/O into crypto operations of a size equal to the block size of the underlying bdev. For example, a 4K I/O to a bdev with a 512B block size, would result in 8 cryptographic operations.</p>
 <p>For reads, the buffer provided to the crypto module will be used as the destination buffer for unencrypted data. For writes, however, a temporary scratch buffer is used as the destination buffer for encryption which is then passed on to the underlying bdev as the write buffer. This is done to avoid encrypting the data in the original source buffer which may cause problems in some use cases.</p>
 <p>Example command</p>
-<p><code>rpc.py construct_crypto_bdev NVMe1n1 CryNvmeA crypto_aesni_mb 0123456789123456</code></p>
+<p><code>rpc.py bdev_crypto_create NVMe1n1 CryNvmeA crypto_aesni_mb 0123456789123456</code></p>
 <p>This command will create a crypto vbdev called 'CryNvmeA' on top of the NVMe bdev 'NVMe1n1' and will use the DPDK software driver 'crypto_aesni_mb' and the key '0123456789123456'.</p>
-<p>To remove the vbdev use the delete_crypto_bdev command.</p>
-<p><code>rpc.py delete_crypto_bdev CryNvmeA</code></p>
+<p>To remove the vbdev use the bdev_crypto_delete command.</p>
+<p><code>rpc.py bdev_crypto_delete CryNvmeA</code></p>
 <h1><a class="anchor" id="bdev_config_delay"></a>
 Delay Bdev Module</h1>
 <p>The delay vbdev module is intended to apply a predetermined additional latency on top of a lower level bdev. This enables the simulation of the latency characteristics of a device during the functional or scalability testing of an SPDK application. For example, to simulate the effect of drive latency when processing I/Os, one could configure a NULL bdev with a delay bdev on top of it.</p>
@@ -251,14 +251,14 @@ iSCSI bdev</h1>
 <p>The URL is in the following format: <code>iscsi://[&lt;username&gt;[%&lt;password&gt;]@]&lt;host&gt;[:&lt;port&gt;]/&lt;target-iqn&gt;/&lt;lun&gt;</code></p>
 <h1><a class="anchor" id="bdev_config_aio"></a>
 Linux AIO bdev</h1>
-<p>The SPDK AIO bdev driver provides SPDK block layer access to Linux kernel block devices or a file on a Linux filesystem via Linux AIO. Note that O_DIRECT is used and thus bypasses the Linux page cache. This mode is probably as close to a typical kernel based target as a user space target can get without using a user-space driver. To create AIO bdev RPC command <code>construct_aio_bdev</code> should be used.</p>
+<p>The SPDK AIO bdev driver provides SPDK block layer access to Linux kernel block devices or a file on a Linux filesystem via Linux AIO. Note that O_DIRECT is used and thus bypasses the Linux page cache. This mode is probably as close to a typical kernel based target as a user space target can get without using a user-space driver. To create AIO bdev RPC command <code>bdev_aio_create</code> should be used.</p>
 <p>Example commands</p>
-<p><code>rpc.py construct_aio_bdev /dev/sda aio0</code></p>
+<p><code>rpc.py bdev_aio_create /dev/sda aio0</code></p>
 <p>This command will create <code>aio0</code> device from /dev/sda.</p>
-<p><code>rpc.py construct_aio_bdev /tmp/file file 8192</code></p>
+<p><code>rpc.py bdev_aio_create /tmp/file file 8192</code></p>
 <p>This command will create <code>file</code> device with block size 8192 from /tmp/file.</p>
-<p>To delete an aio bdev use the delete_aio_bdev command.</p>
-<p><code>rpc.py delete_aio_bdev aio0</code></p>
+<p>To delete an aio bdev use the bdev_aio_delete command.</p>
+<p><code>rpc.py bdev_aio_delete aio0</code></p>
 <h1><a class="anchor" id="bdev_config_cas"></a>
 OCF Virtual bdev</h1>
 <p>OCF virtual bdev module is based on <a href="https://github.com/Open-CAS/ocf">Open CAS Framework</a> - a high performance block storage caching meta-library. To enable the module, configure SPDK using <code>--with-ocf</code> flag. OCF bdev can be used to enable caching for any underlying bdev.</p>

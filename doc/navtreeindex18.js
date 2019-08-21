@@ -1,5 +1,6 @@
 var NAVTREEINDEX18 =
 {
+"structspdk__nvmf__fabric__auth__send__cmd.html#ad48220599a0dc202f62dd4efc204f590":[12,0,180,4],
 "structspdk__nvmf__fabric__connect__cmd.html":[12,0,181],
 "structspdk__nvmf__fabric__connect__cmd.html#a0c91d1be26d3ea4626b38caf5041130e":[12,0,181,9],
 "structspdk__nvmf__fabric__connect__cmd.html#a2440e864ecbf3dfbcc3a456dae2036b8":[12,0,181,7],
@@ -239,15 +240,14 @@ var NAVTREEINDEX18 =
 "structspdk__nvmf__rdma__transport__specific__address__subtype.html#a7332600a60a55d05f8573789ce6a2ccf":[12,0,215,3],
 "structspdk__nvmf__rdma__transport__specific__address__subtype.html#a84940f112e43ee8aecc61b6eaf938567":[12,0,215,1],
 "structspdk__nvmf__rdma__transport__specific__address__subtype.html#afd6fec3eafdfacd986e62f2fe3093a85":[12,0,215,5],
-"structspdk__nvmf__transport__opts.html":[12,0,216],
-"structspdk__nvmf__transport__opts.html#a063b1c1080343c707a3d51ced615628f":[12,0,216,5],
-"structspdk__nvmf__transport__opts.html#a12c798cc83976f1edaf15c3627d31c70":[12,0,216,6],
-"structspdk__nvmf__transport__opts.html#a1c5194a083b544bd71072267c4d341e0":[12,0,216,10],
-"structspdk__nvmf__transport__opts.html#a2b6ff1cfeceb9e5543a8c44d0aded628":[12,0,216,2],
-"structspdk__nvmf__transport__opts.html#a51e173174fe161295fcf24c1e0c18438":[12,0,216,3],
-"structspdk__nvmf__transport__opts.html#a7a21914db32fb20482f749e95c99f013":[12,0,216,9],
-"structspdk__nvmf__transport__opts.html#a7e6e60442ef1d45efab0e6159d060a8e":[12,0,216,4],
-"structspdk__nvmf__transport__opts.html#a90f2c6dd7e963201cbe0e625b4599ee4":[12,0,216,8],
-"structspdk__nvmf__transport__opts.html#aa4f37cf3674a2bf984fdb9b63cc30223":[12,0,216,0],
-"structspdk__nvmf__transport__opts.html#aa6c3986bff2dcd3d5cc5b89616e03d8b":[12,0,216,7]
+"structspdk__nvmf__target__opts.html":[12,0,216],
+"structspdk__nvmf__target__opts.html#a2ae82b8728ac8fdaaef6f3e13fdd6ded":[12,0,216,0],
+"structspdk__nvmf__target__opts.html#a60daa0363a02ef52bf0e86e45fa63b8d":[12,0,216,1],
+"structspdk__nvmf__transport__opts.html":[12,0,217],
+"structspdk__nvmf__transport__opts.html#a063b1c1080343c707a3d51ced615628f":[12,0,217,5],
+"structspdk__nvmf__transport__opts.html#a12c798cc83976f1edaf15c3627d31c70":[12,0,217,6],
+"structspdk__nvmf__transport__opts.html#a1c5194a083b544bd71072267c4d341e0":[12,0,217,10],
+"structspdk__nvmf__transport__opts.html#a2b6ff1cfeceb9e5543a8c44d0aded628":[12,0,217,2],
+"structspdk__nvmf__transport__opts.html#a51e173174fe161295fcf24c1e0c18438":[12,0,217,3],
+"structspdk__nvmf__transport__opts.html#a7a21914db32fb20482f749e95c99f013":[12,0,217,9]
 };
