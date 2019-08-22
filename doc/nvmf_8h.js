@@ -14,6 +14,7 @@ var nvmf_8h =
     [ "spdk_nvmf_tgt_destroy_done_fn", "nvmf_8h.html#a26c5ae0565e487633e00cdd8819d2d00", null ],
     [ "spdk_nvmf_tgt_listen_done_fn", "nvmf_8h.html#a854e30bf69f07bb06b2cbcdd08ca7eba", null ],
     [ "spdk_nvmf_get_optimal_poll_group", "nvmf_8h.html#a744188acd6e709ed4bc3f7f98a2230f8", null ],
+    [ "spdk_nvmf_get_tgt", "nvmf_8h.html#a43ac2675a2d592cc584ee403b8bb324a", null ],
     [ "spdk_nvmf_get_transport_opts", "nvmf_8h.html#a31057e91a342d9e799254ee66e3533ba", null ],
     [ "spdk_nvmf_get_transport_type", "nvmf_8h.html#a63937e4be5fad005cfe7ce15cf60a198", null ],
     [ "spdk_nvmf_host_get_nqn", "nvmf_8h.html#acec4ed75ff9a25a5477d40f43a430677", null ],

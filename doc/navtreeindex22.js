@@ -1,5 +1,6 @@
 var NAVTREEINDEX22 =
 {
+"unionspdk__nvme__intel__feat__reset__timed__workload__counters.html#a74b5ac6a6ea150d582cc269f6987757b":[12,0,131,3],
 "unionspdk__nvme__intel__feat__reset__timed__workload__counters.html#abb7fd2e47365abcba82b98f12b8b95b3":[12,0,131,2],
 "unionspdk__nvme__intel__feat__smbus__address.html":[12,0,132],
 "unionspdk__nvme__intel__feat__smbus__address.html#a1e1bc8d96e7c60ff634b4b5dc28151b0":[12,0,132,1],

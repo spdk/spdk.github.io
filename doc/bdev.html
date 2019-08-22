@@ -201,6 +201,8 @@ Compression Virtual Bdev Module</h1>
 <p><code>rpc.py set_compress_pmd -p 2</code></p>
 <p>To remove a compression vbdev, use the following command which will also delete the PMEM file. If the logical volume is deleted the PMEM file will not be removed and the compression vbdev will not be available.</p>
 <p><code>rpc.py bdev_compress_delete COMP_LVS/myLvol</code></p>
+<p>To list compression volumes that are only available for deletion because their PMEM file was missing use the following. The name parameter is optional and if not included will list all volumes, if used it will return the name or an error that the device does not exist.</p>
+<p><code>rpc.py bdev_compress_get_orphans --name COMP_Nvme0n1</code></p>
 <h1><a class="anchor" id="bdev_config_crypto"></a>
 Crypto Virtual Bdev Module</h1>
 <p>The crypto virtual bdev module can be configured to provide at rest data encryption for any underlying bdev. The module relies on the DPDK CryptoDev Framework to provide all cryptographic functionality. The framework provides support for many different software only cryptographic modules as well hardware assisted support for the Intel QAT board. The framework also provides support for cipher, hash, authentication and AEAD functions. At this time the SPDK virtual bdev module supports cipher only as follows:</p>
