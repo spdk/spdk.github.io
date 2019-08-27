@@ -419,6 +419,7 @@ The current list of SPDK core maintainers includes:
 * Shuhei Matsumoto
 * Darek Stojaczyk
 * Ben Walker
+* Tomek Zawadzki
 
 The bulk of this technical oversight is achieved through reviewing and approving patches.  Patches
 must receive +2 votes from two core maintainers and a +1 vote from the SPDK automated test pool before
