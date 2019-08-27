@@ -1,6 +1,7 @@
 var searchData=
 [
   ['spdk_5fapp_5fshutdown_5fcb',['spdk_app_shutdown_cb',['../event_8h.html#af7e98d89bfe88c7b9d9ecfc78fac2cd2',1,'event.h']]],
+  ['spdk_5fbdev_5fevent_5fcb_5ft',['spdk_bdev_event_cb_t',['../bdev_8h.html#ab4755b1b0a2a204732c3be266b6e1b08',1,'bdev.h']]],
   ['spdk_5fbdev_5ffini_5fcb',['spdk_bdev_fini_cb',['../bdev_8h.html#ad33efc88148d8984b353e54b7ee0058f',1,'bdev.h']]],
   ['spdk_5fbdev_5finit_5fcb',['spdk_bdev_init_cb',['../bdev_8h.html#aa6a8987bb3a1bc368881f6b81d249bd3',1,'bdev.h']]],
   ['spdk_5fbdev_5fio_5fcompletion_5fcb',['spdk_bdev_io_completion_cb',['../bdev_8h.html#a0c5602dfd313f90032dd91683b9663e3',1,'bdev.h']]],

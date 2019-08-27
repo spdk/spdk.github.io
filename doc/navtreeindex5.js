@@ -1,5 +1,9 @@
 var NAVTREEINDEX5 =
 {
+"logical_volumes.html#lvol_bdev":[5,1,0,2],
+"logical_volumes.html#lvol_decoupling":[5,1,0,6],
+"logical_volumes.html#lvol_inflation":[5,1,0,5],
+"logical_volumes.html#lvol_rpc":[5,1,1],
 "logical_volumes.html#lvol_snapshots":[5,1,0,4],
 "logical_volumes.html#lvol_terminology":[5,1,0],
 "logical_volumes.html#lvol_thin_provisioning":[5,1,0,3],
@@ -245,9 +249,5 @@ var NAVTREEINDEX5 =
 "nvme__intel_8h.html#a381eb66ecd7c1b69677ee540da6ae1a2aa4f50b43c67e5162a5b888c1b736fd93":[13,0,35,14,0],
 "nvme__intel_8h.html#a381eb66ecd7c1b69677ee540da6ae1a2aaa41550338638341511372bf560d8e3c":[13,0,35,14,11],
 "nvme__intel_8h.html#a381eb66ecd7c1b69677ee540da6ae1a2ab2efae4464c757450e199ecc46cd5f73":[13,0,35,14,2],
-"nvme__intel_8h.html#a381eb66ecd7c1b69677ee540da6ae1a2abcf03a0e21776a3f22284183c0e1b43c":[13,0,35,14,10],
-"nvme__intel_8h.html#a381eb66ecd7c1b69677ee540da6ae1a2ae6340160d11e936cb4f8ec56270e5028":[13,0,35,14,4],
-"nvme__intel_8h.html#a3dba0d002f2119841aef3bd0d502915d":[13,0,35,16],
-"nvme__intel_8h.html#a561a0f549b46cfd162ddce7b67364623":[13,0,35,17],
-"nvme__intel_8h.html#a7f5517cb75a665779de307347ea8e044":[13,0,35,11]
+"nvme__intel_8h.html#a381eb66ecd7c1b69677ee540da6ae1a2abcf03a0e21776a3f22284183c0e1b43c":[13,0,35,14,10]
 };

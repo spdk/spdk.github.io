@@ -151,6 +151,8 @@ v19.10: (Upcoming Release)</h1>
 <p>The <code>spdk_nvmf_tgt_create</code> function now accepts an object of type <code><a class="el" href="structspdk__nvmf__target__opts.html">spdk_nvmf_target_opts</a></code> as its only parameter. This new structure contains the max_subsystems parameter previously passed into that function.</p>
 <p>A new public API function <code>spdk_nvmf_get_tgt</code> has been added which allows users to retrieve a pointer to an <code>spdk_nvmf_tgt</code> object by supplying its name. In the special case where an RPC or application only creates a single target, this function can accept a null name parameter and will return the only available target.</p>
 <p>The majority of the NVMe-oF RPCs now accept an optional tgt_name parameter. This will allow those RPCs to work with applications that create more than one target.</p>
+<h2>bdev</h2>
+<p>A new spdk_bdev_open_ext function has been added and spdk_bdev_open function has been deprecated. The new open function introduces requirement to provide callback function that will be called by asynchronous event such as bdev removal. spdk_bdev_open_ext function takes bdev name as an argument instead of bdev structure to avoid a race condition that can happen when the bdev is being removed between a call to get its structure based on a name and actually openning it.</p>
 <h2>nvme</h2>
 <p>Added <code>no_shn_notification</code> to NVMe controller initialization options, users can enable it for NVMe controllers. When the option is enabled, the controller will not do the shutdown process and just disable the controller, users can start their application later again to initialize the controller to the ready state.</p>
 <h2>iSCSI</h2>
@@ -161,8 +163,10 @@ v19.10: (Upcoming Release)</h1>
 <p>A new RPC <code>bdev_compress_get_orphans</code> has been added to list compress bdevs that were not loaded due to a missing pm metadata file. In this state they can only be deleted.</p>
 <h2>null bdev</h2>
 <p>Metadata support has been added to Null bdev module.</p>
+<p>Protection information support has been added to Null bdev module.</p>
 <h2>rpc</h2>
 <p>Added optional parameter '&ndash;md-size'to 'construct_null_bdev' RPC method.</p>
+<p>Added optional parameters '&ndash;dif-type' and '&ndash;dif-is-head-of-md' to 'construct_null_bdev' RPC method.</p>
 <h1><a class="anchor" id="changelog-v19-07"></a>
 v19.07:</h1>
 <h2>ftl</h2>

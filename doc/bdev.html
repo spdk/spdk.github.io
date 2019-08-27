@@ -249,7 +249,7 @@ Creating a GPT partition table using NBD</h2>
 iSCSI bdev</h1>
 <p>The SPDK iSCSI bdev driver depends on libiscsi and hence is not enabled by default. In order to use it, build SPDK with an extra <code>--with-iscsi-initiator</code> configure option.</p>
 <p>The following command creates an <code>iSCSI0</code> bdev from a single LUN exposed at given iSCSI URL with <code>iqn.2016-06.io.spdk:init</code> as the reported initiator IQN.</p>
-<p><code>rpc.py construct_iscsi_bdev -b iSCSI0 -i iqn.2016-06.io.spdk:init --url iscsi://127.0.0.1/iqn.2016-06.io.spdk:disk1/0</code></p>
+<p><code>rpc.py bdev_iscsi_create -b iSCSI0 -i iqn.2016-06.io.spdk:init --url iscsi://127.0.0.1/iqn.2016-06.io.spdk:disk1/0</code></p>
 <p>The URL is in the following format: <code>iscsi://[&lt;username&gt;[%&lt;password&gt;]@]&lt;host&gt;[:&lt;port&gt;]/&lt;target-iqn&gt;/&lt;lun&gt;</code></p>
 <h1><a class="anchor" id="bdev_config_aio"></a>
 Linux AIO bdev</h1>

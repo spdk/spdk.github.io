@@ -6,6 +6,7 @@ var bdev_8h =
     [ "SPDK_BDEV_BUF_SIZE_WITH_MD", "bdev_8h.html#a60c60455b0ae9e1c8139bb24df036d6d", null ],
     [ "SPDK_BDEV_LARGE_BUF_MAX_SIZE", "bdev_8h.html#a9496c34e0fc135e1f309fd586e8e65d0", null ],
     [ "SPDK_BDEV_SMALL_BUF_MAX_SIZE", "bdev_8h.html#a22219ae3fb084dcb87bcc6d454b415aa", null ],
+    [ "spdk_bdev_event_cb_t", "bdev_8h.html#ab4755b1b0a2a204732c3be266b6e1b08", null ],
     [ "spdk_bdev_fini_cb", "bdev_8h.html#ad33efc88148d8984b353e54b7ee0058f", null ],
     [ "spdk_bdev_get_device_stat_cb", "bdev_8h.html#a1e2b47e30b56bc875b618beffced9662", null ],
     [ "spdk_bdev_histogram_data_cb", "bdev_8h.html#abbca76276132f1e14e9d2e5fda17a12a", null ],
@@ -14,6 +15,9 @@ var bdev_8h =
     [ "spdk_bdev_io_completion_cb", "bdev_8h.html#a0c5602dfd313f90032dd91683b9663e3", null ],
     [ "spdk_bdev_io_wait_cb", "bdev_8h.html#a9c7e19e090b8cdb22e8fc6b1984e5278", null ],
     [ "spdk_bdev_remove_cb_t", "bdev_8h.html#a51a55c97586c2d524fffcabc4d7910d6", null ],
+    [ "spdk_bdev_event_type", "bdev_8h.html#a13e432c6b290dcf392335a406206fd83", [
+      [ "SPDK_BDEV_EVENT_REMOVE", "bdev_8h.html#a13e432c6b290dcf392335a406206fd83a89f4612602ac5a085667f620b767f9b9", null ]
+    ] ],
     [ "spdk_bdev_io_type", "bdev_8h.html#a633029e24ab5ae4a689bffa2565a519f", [
       [ "SPDK_BDEV_IO_TYPE_INVALID", "bdev_8h.html#a633029e24ab5ae4a689bffa2565a519fa9772bec2b4589e73cb1482b22bf1d830", null ],
       [ "SPDK_BDEV_IO_TYPE_READ", "bdev_8h.html#a633029e24ab5ae4a689bffa2565a519fa082387ea2a8c07af3dc4be2efbddd8b5", null ],
@@ -90,6 +94,7 @@ var bdev_8h =
     [ "spdk_bdev_nvme_io_passthru", "group__bdev__io__submit__functions.html#gab172cf6afc9ef154bd823b91b09dee87", null ],
     [ "spdk_bdev_nvme_io_passthru_md", "group__bdev__io__submit__functions.html#gac6b5933e4c0b2ad68bad591655b4f9e6", null ],
     [ "spdk_bdev_open", "bdev_8h.html#aeacdfd5debd3917d84d18be0277203ff", null ],
+    [ "spdk_bdev_open_ext", "bdev_8h.html#aca93f44b46f0b877df9b6936ef9e0a9e", null ],
     [ "spdk_bdev_queue_io_wait", "bdev_8h.html#acc4beee18ded7837fa92bd7c34e7ef2e", null ],
     [ "spdk_bdev_read", "group__bdev__io__submit__functions.html#ga4b500ce84df1d2551f76e635c9dafbd5", null ],
     [ "spdk_bdev_read_blocks", "group__bdev__io__submit__functions.html#gaeec9efd151e2fb34ee3d22a1edbbb53f", null ],
