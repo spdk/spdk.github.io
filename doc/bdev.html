@@ -302,7 +302,7 @@ Logical volume store</h2>
 <p>Example command</p>
 <p><code>rpc.py construct_lvol_store Malloc2 lvs -c 4096</code></p>
 <p>This will create lvol store named <code>lvs</code> with cluster size 4096, build on top of <code>Malloc2</code> bdev. In response user will be provided with uuid which is unique lvol store identifier.</p>
-<p>User can get list of available lvol stores using <code>get_lvol_stores</code> RPC command (no parameters available).</p>
+<p>User can get list of available lvol stores using <code>bdev_lvol_get_lvstores</code> RPC command (no parameters available).</p>
 <p>Example response</p>
 <div class="fragment"><div class="line">{</div><div class="line">  &quot;uuid&quot;: &quot;330a6ab2-f468-11e7-983e-001e67edf35d&quot;,</div><div class="line">  &quot;base_bdev&quot;: &quot;Malloc2&quot;,</div><div class="line">  &quot;free_clusters&quot;: 8190,</div><div class="line">  &quot;cluster_size&quot;: 8192,</div><div class="line">  &quot;total_data_clusters&quot;: 8190,</div><div class="line">  &quot;block_size&quot;: 4096,</div><div class="line">  &quot;name&quot;: &quot;lvs&quot;</div><div class="line">}</div></div><!-- fragment --><p>To delete lvol store user should use <code>destroy_lvol_store</code> RPC command.</p>
 <p>Example commands</p>

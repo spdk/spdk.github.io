@@ -236,7 +236,7 @@ var user_guides =
       [ "Logical Volume", "jsonrpc.html#jsonrpc_components_lvol", [
         [ "construct_lvol_store", "jsonrpc.html#rpc_construct_lvol_store", null ],
         [ "destroy_lvol_store", "jsonrpc.html#rpc_destroy_lvol_store", null ],
-        [ "get_lvol_stores", "jsonrpc.html#rpc_get_lvol_stores", null ],
+        [ "bdev_lvol_get_lvstores", "jsonrpc.html#rpc_bdev_lvol_get_lvstores", null ],
         [ "rename_lvol_store", "jsonrpc.html#rpc_rename_lvol_store", null ],
         [ "construct_lvol_bdev", "jsonrpc.html#rpc_construct_lvol_bdev", null ],
         [ "snapshot_lvol_bdev", "jsonrpc.html#rpc_snapshot_lvol_bdev", null ],
