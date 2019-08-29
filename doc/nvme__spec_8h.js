@@ -545,5 +545,6 @@ var nvme__spec_8h =
     [ "SPDK_STATIC_ASSERT", "nvme__spec_8h.html#ae4c648060c02e8f65344f461a3350c7c", null ],
     [ "SPDK_STATIC_ASSERT", "nvme__spec_8h.html#a2be8d53b97a2c3cb3af9b321eb59d7c5", null ],
     [ "SPDK_STATIC_ASSERT", "nvme__spec_8h.html#a9c867478eb707af3711596989e487eed", null ],
+    [ "SPDK_STATIC_ASSERT", "nvme__spec_8h.html#ac7fae325cfa4b22d44bf199795f3fcb0", null ],
     [ "SPDK_STATIC_ASSERT", "nvme__spec_8h.html#a84f00caa7dfb77c3060a6759968cb53c", null ]
 ];

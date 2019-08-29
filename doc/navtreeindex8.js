@@ -1,5 +1,6 @@
 var NAVTREEINDEX8 =
 {
+"nvmf.html#nvmf_getting_started":[3,3,0],
 "nvmf.html#nvmf_host":[3,3,0,4],
 "nvmf.html#nvmf_prereqs":[3,3,0,0,0],
 "nvmf.html#nvmf_prereqs_rdma_nics":[3,3,0,0,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX8 =
 "overview.html":[2,6],
 "overview.html#dir_app":[2,6,0,0],
 "overview.html#dir_doc":[2,6,0,2],
-"overview.html#dir_examples":[2,6,0,3],
-"overview.html#dir_include":[2,6,0,4]
+"overview.html#dir_examples":[2,6,0,3]
 };
