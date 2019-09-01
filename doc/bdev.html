@@ -265,10 +265,10 @@ Linux AIO bdev</h1>
 OCF Virtual bdev</h1>
 <p>OCF virtual bdev module is based on <a href="https://github.com/Open-CAS/ocf">Open CAS Framework</a> - a high performance block storage caching meta-library. To enable the module, configure SPDK using <code>--with-ocf</code> flag. OCF bdev can be used to enable caching for any underlying bdev.</p>
 <p>Below is an example command for creating OCF bdev:</p>
-<p><code>rpc.py construct_ocf_bdev Cache1 wt Malloc0 Nvme0n1</code></p>
+<p><code>rpc.py bdev_ocf_create Cache1 wt Malloc0 Nvme0n1</code></p>
 <p>This command will create new OCF bdev <code>Cache1</code> having bdev <code>Malloc0</code> as caching-device and <code>Nvme0n1</code> as core-device and initial cache mode <code>Write-Through</code>. <code>Malloc0</code> will be used as cache for <code>Nvme0n1</code>, so data written to <code>Cache1</code> will be present on <code>Nvme0n1</code> eventually. By default, OCF will be configured with cache line size equal 4KiB and non-volatile metadata will be disabled.</p>
 <p>To remove <code>Cache1</code>:</p>
-<p><code>rpc.py delete_ocf_bdev Cache1</code></p>
+<p><code>rpc.py bdev_ocf_delete Cache1</code></p>
 <p>During removal OCF-cache will be stopped and all cached data will be written to the core device.</p>
 <p>Note that OCF has a per-device RAM requirement of about 56000 + <em>cache device size</em> * 58 / <em>cache line size</em> (in bytes). To get more information on OCF please visit <a href="https://open-cas.github.io/">OCF documentation</a>.</p>
 <h1><a class="anchor" id="bdev_config_malloc"></a>
@@ -298,22 +298,22 @@ Logical volumes</h1>
 <p>The Logical Volumes library is a flexible storage space management system. It allows creating and managing virtual block devices with variable size on top of other bdevs. The SPDK Logical Volume library is built on top of <a class="el" href="blob.html">Blobstore Programmer's Guide</a>. For detailed description please refer to <a class="el" href="logical_volumes.html#lvol">Logical volume</a>.</p>
 <h2><a class="anchor" id="bdev_ug_lvol_store"></a>
 Logical volume store</h2>
-<p>Before creating any logical volumes (lvols), an lvol store has to be created first on selected block device. Lvol store is lvols vessel responsible for managing underlying bdev space assignment to lvol bdevs and storing metadata. To create lvol store user should use using <code>construct_lvol_store</code> RPC command.</p>
+<p>Before creating any logical volumes (lvols), an lvol store has to be created first on selected block device. Lvol store is lvols vessel responsible for managing underlying bdev space assignment to lvol bdevs and storing metadata. To create lvol store user should use using <code>bdev_lvol_create_lvstore</code> RPC command.</p>
 <p>Example command</p>
-<p><code>rpc.py construct_lvol_store Malloc2 lvs -c 4096</code></p>
+<p><code>rpc.py bdev_lvol_create_lvstore Malloc2 lvs -c 4096</code></p>
 <p>This will create lvol store named <code>lvs</code> with cluster size 4096, build on top of <code>Malloc2</code> bdev. In response user will be provided with uuid which is unique lvol store identifier.</p>
 <p>User can get list of available lvol stores using <code>bdev_lvol_get_lvstores</code> RPC command (no parameters available).</p>
 <p>Example response</p>
-<div class="fragment"><div class="line">{</div><div class="line">  &quot;uuid&quot;: &quot;330a6ab2-f468-11e7-983e-001e67edf35d&quot;,</div><div class="line">  &quot;base_bdev&quot;: &quot;Malloc2&quot;,</div><div class="line">  &quot;free_clusters&quot;: 8190,</div><div class="line">  &quot;cluster_size&quot;: 8192,</div><div class="line">  &quot;total_data_clusters&quot;: 8190,</div><div class="line">  &quot;block_size&quot;: 4096,</div><div class="line">  &quot;name&quot;: &quot;lvs&quot;</div><div class="line">}</div></div><!-- fragment --><p>To delete lvol store user should use <code>destroy_lvol_store</code> RPC command.</p>
+<div class="fragment"><div class="line">{</div><div class="line">  &quot;uuid&quot;: &quot;330a6ab2-f468-11e7-983e-001e67edf35d&quot;,</div><div class="line">  &quot;base_bdev&quot;: &quot;Malloc2&quot;,</div><div class="line">  &quot;free_clusters&quot;: 8190,</div><div class="line">  &quot;cluster_size&quot;: 8192,</div><div class="line">  &quot;total_data_clusters&quot;: 8190,</div><div class="line">  &quot;block_size&quot;: 4096,</div><div class="line">  &quot;name&quot;: &quot;lvs&quot;</div><div class="line">}</div></div><!-- fragment --><p>To delete lvol store user should use <code>bdev_lvol_delete_lvstore</code> RPC command.</p>
 <p>Example commands</p>
-<p><code>rpc.py destroy_lvol_store -u 330a6ab2-f468-11e7-983e-001e67edf35d</code></p>
-<p><code>rpc.py destroy_lvol_store -l lvs</code></p>
+<p><code>rpc.py bdev_lvol_delete_lvstore -u 330a6ab2-f468-11e7-983e-001e67edf35d</code></p>
+<p><code>rpc.py bdev_lvol_delete_lvstore -l lvs</code></p>
 <h2><a class="anchor" id="bdev_ug_lvols"></a>
 Lvols</h2>
-<p>To create lvols on existing lvol store user should use <code>construct_lvol_bdev</code> RPC command. Each created lvol will be represented by new bdev.</p>
+<p>To create lvols on existing lvol store user should use <code>bdev_lvol_create</code> RPC command. Each created lvol will be represented by new bdev.</p>
 <p>Example commands</p>
-<p><code>rpc.py construct_lvol_bdev lvol1 25 -l lvs</code></p>
-<p><code>rpc.py construct_lvol_bdev lvol2 25 -u 330a6ab2-f468-11e7-983e-001e67edf35d</code></p>
+<p><code>rpc.py bdev_lvol_create lvol1 25 -l lvs</code></p>
+<p><code>rpc.py bdev_lvol_create lvol2 25 -u 330a6ab2-f468-11e7-983e-001e67edf35d</code></p>
 <h1><a class="anchor" id="bdev_ug_raid"></a>
 RAID</h1>
 <p>RAID virtual bdev module provides functionality to combine any SPDK bdevs into one RAID bdev. Currently SPDK supports only RAID 0. RAID functionality does not store on-disk metadata on the member disks, so user must reconstruct the RAID volume when restarting application. User may specify member disks to create RAID volume event if they do not exists yet - as the member disks are registered at a later time, the RAID module will claim them and will surface the RAID volume after all of the member disks are available. It is allowed to use disks of different sizes - the smallest disk size will be the amount of space used on each member disk.</p>
@@ -340,11 +340,11 @@ Pmem</h1>
 <p>To remove pmem pool file user can use <code>delete_pmem_pool</code> RPC command.</p>
 <p>Example command</p>
 <p><code>rpc.py delete_pmem_pool /path/to/pmem_pool</code></p>
-<p>To create bdev based on pmemblk pool file user should use <code>construct_pmem_bdev</code> RPC command.</p>
+<p>To create bdev based on pmemblk pool file user should use <code>bdev_pmem_create</code> RPC command.</p>
 <p>Example command</p>
-<p><code>rpc.py construct_pmem_bdev /path/to/pmem_pool -n pmem</code></p>
-<p>To remove a block device representation use the delete_pmem_bdev command.</p>
-<p><code>rpc.py delete_pmem_bdev pmem</code></p>
+<p><code>rpc.py bdev_pmem_create /path/to/pmem_pool -n pmem</code></p>
+<p>To remove a block device representation use the bdev_pmem_delete command.</p>
+<p><code>rpc.py bdev_pmem_delete pmem</code></p>
 <h1><a class="anchor" id="bdev_config_virtio_blk"></a>
 Virtio Block</h1>
 <p>The Virtio-Block driver allows creating SPDK bdevs from Virtio-Block devices.</p>

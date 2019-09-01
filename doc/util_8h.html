@@ -175,6 +175,9 @@ Macros</h2></td></tr>
 <tr class="memitem:a58821926bcb68504a97ffa1545029398"><td class="memItemLeft" align="right" valign="top"><a id="a58821926bcb68504a97ffa1545029398"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_CEIL_DIV</b>(x,  y)&#160;&#160;&#160;(((x)+(y)-1)/(y))</td></tr>
 <tr class="separator:a58821926bcb68504a97ffa1545029398"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac14f2b75522d72317def37370adffca1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8h.html#ac14f2b75522d72317def37370adffca1">SPDK_CLANG_ANALYZER_PREINIT_PTR_ARRAY</a>(arr,  arr_size,  buf_size)</td></tr>
+<tr class="memdesc:ac14f2b75522d72317def37370adffca1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Scan build is really pessimistic and assumes that mempool functions can dequeue NULL buffers even if they return success.  <a href="#ac14f2b75522d72317def37370adffca1">More...</a><br /></td></tr>
+<tr class="separator:ac14f2b75522d72317def37370adffca1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -200,6 +203,44 @@ static uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_divid
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>General utility functions. </p>
-</div></div><!-- contents -->
+</div><h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="ac14f2b75522d72317def37370adffca1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac14f2b75522d72317def37370adffca1">&#9670;&nbsp;</a></span>SPDK_CLANG_ANALYZER_PREINIT_PTR_ARRAY</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SPDK_CLANG_ANALYZER_PREINIT_PTR_ARRAY</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">arr, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">arr_size, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">buf_size&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">do</span> { \</div><div class="line">                static <span class="keywordtype">char</span> dummy_buf[buf_size]; \</div><div class="line">                int i; \</div><div class="line">                for (i = 0; i &lt; arr_size; i++) { \</div><div class="line">                        arr[i] = (<span class="keywordtype">void</span> *)dummy_buf; \</div><div class="line">                } \</div><div class="line">        } <span class="keywordflow">while</span> (0)</div></div><!-- fragment -->
+<p>Scan build is really pessimistic and assumes that mempool functions can dequeue NULL buffers even if they return success. </p>
+<p>This is obviously a false possitive, but the mempool dequeue can be done in a DPDK inline function that we can't decorate with usual assert(buf != NULL). Instead, we'll preinitialize the dequeued buffer array with some dummy objects. </p>
+
+</div>
+</div>
+</div><!-- contents -->
 </div><!-- doc-content -->
 </div>
