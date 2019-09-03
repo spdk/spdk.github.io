@@ -47,6 +47,7 @@ CVE Sub-Team Members:
 * Darek Stojaczyk, dariusz.stojaczyk@intel.com
 * Ben Walker, benjamin.walker@intel.com
 * Anna Wan, qun.wan@intel.com
+* Tomek Zawadzki, tomasz.zawadzki@intel.com
 
 <a id="threat"></a>
 ## Threat Modeling
