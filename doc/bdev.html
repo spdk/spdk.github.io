@@ -331,15 +331,15 @@ Passthru</h1>
 Pmem</h1>
 <p>The SPDK pmem bdev driver uses pmemblk pool as the target for block I/O operations. For details on Pmem memory please refer to PMDK documentation on <a href="http://pmem.io">http://pmem.io</a> website. First, user needs to configure SPDK to include PMDK support:</p>
 <p><code>configure --with-pmdk</code></p>
-<p>To create pmemblk pool for use with SPDK user should use <code>create_pmem_pool</code> RPC command.</p>
+<p>To create pmemblk pool for use with SPDK user should use <code>bdev_pmem_create_pool</code> RPC command.</p>
 <p>Example command</p>
-<p><code>rpc.py create_pmem_pool /path/to/pmem_pool 25 4096</code></p>
-<p>To get information on created pmem pool file user can use <code>pmem_pool_info</code> RPC command.</p>
+<p><code>rpc.py bdev_pmem_create_pool /path/to/pmem_pool 25 4096</code></p>
+<p>To get information on created pmem pool file user can use <code>bdev_pmem_get_pool_info</code> RPC command.</p>
 <p>Example command</p>
-<p><code>rpc.py pmem_pool_info /path/to/pmem_pool</code></p>
-<p>To remove pmem pool file user can use <code>delete_pmem_pool</code> RPC command.</p>
+<p><code>rpc.py bdev_pmem_get_pool_info /path/to/pmem_pool</code></p>
+<p>To remove pmem pool file user can use <code>bdev_pmem_delete_pool</code> RPC command.</p>
 <p>Example command</p>
-<p><code>rpc.py delete_pmem_pool /path/to/pmem_pool</code></p>
+<p><code>rpc.py bdev_pmem_delete_pool /path/to/pmem_pool</code></p>
 <p>To create bdev based on pmemblk pool file user should use <code>bdev_pmem_create</code> RPC command.</p>
 <p>Example command</p>
 <p><code>rpc.py bdev_pmem_create /path/to/pmem_pool -n pmem</code></p>

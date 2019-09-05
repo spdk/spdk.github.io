@@ -879,8 +879,8 @@ delete_ftl_bdev</h2>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div><div class="line">  &quot;params&quot;: {</div><div class="line">    &quot;name&quot;: &quot;nvme0&quot;</div><div class="line">  },</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;method&quot;: &quot;delete_ftl_bdev&quot;,</div><div class="line">  &quot;id&quot;: 1</div><div class="line">}</div></div><!-- fragment --><p>Example response:</p>
-<div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: true</div><div class="line">}</div></div><!-- fragment --><h2><a class="anchor" id="rpc_create_pmem_pool"></a>
-create_pmem_pool</h2>
+<div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: true</div><div class="line">}</div></div><!-- fragment --><h2><a class="anchor" id="rpc_bdev_pmem_create_pool"></a>
+bdev_pmem_create_pool</h2>
 <p>Create a <a class="el" href="bdev.html#bdev_config_pmem">Pmem</a> blk pool file. It is equivalent of following <code>pmempool create</code> command:</p>
 <div class="fragment"><div class="line">pmempool create -s $((num_blocks * block_size)) blk $block_size $pmem_file</div></div><!-- fragment --><p>This method is available only if SPDK was built with PMDK support.</p>
 <h3>Parameters</h3>
@@ -896,9 +896,9 @@ create_pmem_pool</h2>
 </table>
 <h3>Example</h3>
 <p>Example request:</p>
-<div class="fragment"><div class="line">{</div><div class="line">  &quot;params&quot;: {</div><div class="line">    &quot;block_size&quot;: 512,</div><div class="line">    &quot;num_blocks&quot;: 131072,</div><div class="line">    &quot;pmem_file&quot;: &quot;/tmp/pmem_file&quot;</div><div class="line">  },</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;method&quot;: &quot;create_pmem_pool&quot;,</div><div class="line">  &quot;id&quot;: 1</div><div class="line">}</div></div><!-- fragment --><p>Example response:</p>
-<div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: true</div><div class="line">}</div></div><!-- fragment --><h2><a class="anchor" id="rpc_pmem_pool_info"></a>
-pmem_pool_info</h2>
+<div class="fragment"><div class="line">{</div><div class="line">  &quot;params&quot;: {</div><div class="line">    &quot;block_size&quot;: 512,</div><div class="line">    &quot;num_blocks&quot;: 131072,</div><div class="line">    &quot;pmem_file&quot;: &quot;/tmp/pmem_file&quot;</div><div class="line">  },</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;method&quot;: &quot;bdev_pmem_create_pool&quot;,</div><div class="line">  &quot;id&quot;: 1</div><div class="line">}</div></div><!-- fragment --><p>Example response:</p>
+<div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: true</div><div class="line">}</div></div><!-- fragment --><h2><a class="anchor" id="rpc_bdev_pmem_get_pool_info"></a>
+bdev_pmem_get_pool_info</h2>
 <p>Retrieve basic information about PMDK memory pool.</p>
 <p>This method is available only if SPDK was built with PMDK support.</p>
 <h3>Parameters</h3>
@@ -920,9 +920,9 @@ pmem_pool_info</h2>
 </table>
 <h3>Example</h3>
 <p>Example request:</p>
-<div class="fragment"><div class="line">request:</div><div class="line">{</div><div class="line">  &quot;params&quot;: {</div><div class="line">    &quot;pmem_file&quot;: &quot;/tmp/pmem_file&quot;</div><div class="line">  },</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;method&quot;: &quot;pmem_pool_info&quot;,</div><div class="line">  &quot;id&quot;: 1</div><div class="line">}</div></div><!-- fragment --><p>Example response:</p>
-<div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: [</div><div class="line">    {</div><div class="line">      &quot;block_size&quot;: 512,</div><div class="line">      &quot;num_blocks&quot;: 129728</div><div class="line">    }</div><div class="line">  ]</div><div class="line">}</div></div><!-- fragment --><h2><a class="anchor" id="rpc_delete_pmem_pool"></a>
-delete_pmem_pool</h2>
+<div class="fragment"><div class="line">request:</div><div class="line">{</div><div class="line">  &quot;params&quot;: {</div><div class="line">    &quot;pmem_file&quot;: &quot;/tmp/pmem_file&quot;</div><div class="line">  },</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;method&quot;: &quot;bdev_pmem_get_pool_info&quot;,</div><div class="line">  &quot;id&quot;: 1</div><div class="line">}</div></div><!-- fragment --><p>Example response:</p>
+<div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: [</div><div class="line">    {</div><div class="line">      &quot;block_size&quot;: 512,</div><div class="line">      &quot;num_blocks&quot;: 129728</div><div class="line">    }</div><div class="line">  ]</div><div class="line">}</div></div><!-- fragment --><h2><a class="anchor" id="rpc_bdev_pmem_delete_pool"></a>
+bdev_pmem_delete_pool</h2>
 <p>Delete pmem pool by removing file <code>pmem_file</code>. This method will fail if <code>pmem_file</code> is not a valid pmem pool file.</p>
 <p>This method is available only if SPDK was built with PMDK support.</p>
 <h3>Parameters</h3>
@@ -934,7 +934,7 @@ delete_pmem_pool</h2>
 </table>
 <h3>Example</h3>
 <p>Example request:</p>
-<div class="fragment"><div class="line">{</div><div class="line">  &quot;params&quot;: {</div><div class="line">    &quot;pmem_file&quot;: &quot;/tmp/pmem_file&quot;</div><div class="line">  },</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;method&quot;: &quot;delete_pmem_pool&quot;,</div><div class="line">  &quot;id&quot;: 1</div><div class="line">}</div></div><!-- fragment --><p>Example response:</p>
+<div class="fragment"><div class="line">{</div><div class="line">  &quot;params&quot;: {</div><div class="line">    &quot;pmem_file&quot;: &quot;/tmp/pmem_file&quot;</div><div class="line">  },</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;method&quot;: &quot;bdev_pmem_delete_pool&quot;,</div><div class="line">  &quot;id&quot;: 1</div><div class="line">}</div></div><!-- fragment --><p>Example response:</p>
 <div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: true</div><div class="line">}</div></div><!-- fragment --><h2><a class="anchor" id="rpc_bdev_pmem_create"></a>
 bdev_pmem_create</h2>
 <p>Construct <a class="el" href="bdev.html#bdev_config_pmem">Pmem</a> bdev.</p>
