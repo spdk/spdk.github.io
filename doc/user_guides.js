@@ -137,7 +137,7 @@ var user_guides =
         [ "bdev_ocf_get_stats", "jsonrpc.html#rpc_bdev_ocf_get_stats", null ],
         [ "bdev_ocf_get_bdevs", "jsonrpc.html#rpc_bdev_ocf_get_bdevs", null ],
         [ "bdev_malloc_create", "jsonrpc.html#rpc_bdev_malloc_create", null ],
-        [ "delete_malloc_bdev", "jsonrpc.html#rpc_delete_malloc_bdev", null ],
+        [ "bdev_malloc_delete", "jsonrpc.html#rpc_bdev_malloc_delete", null ],
         [ "bdev_null_create", "jsonrpc.html#rpc_bdev_null_create", null ],
         [ "bdev_null_delete", "jsonrpc.html#rpc_bdev_null_delete", null ],
         [ "bdev_aio_create", "jsonrpc.html#rpc_bdev_aio_create", null ],

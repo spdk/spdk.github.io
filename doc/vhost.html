@@ -245,7 +245,7 @@ Hot-attach/hot-detach</h2>
 <div class="fragment"><div class="line">scripts/rpc.py add_vhost_scsi_lun vhost.0 0 Malloc0</div></div><!-- fragment --><h3>Hot-detach</h3>
 <p>Just like hot-attach, the hot-detach is done by simply removing bdev from a controller when QEMU VM is already started.</p>
 <div class="fragment"><div class="line">scripts/rpc.py remove_vhost_scsi_target vhost.0 0</div></div><!-- fragment --><p>Removing an entire bdev will hot-detach it from a controller as well.</p>
-<div class="fragment"><div class="line">scripts/rpc.py delete_malloc_bdev Malloc0</div></div><!-- fragment --><h1><a class="anchor" id="vhost_bugs"></a>
+<div class="fragment"><div class="line">scripts/rpc.py bdev_malloc_delete Malloc0</div></div><!-- fragment --><h1><a class="anchor" id="vhost_bugs"></a>
 Known bugs and limitations</h1>
 <h2>Vhost-NVMe (experimental) can only be supported with latest Linux kernel</h2>
 <p>Vhost-NVMe target was designed for one new feature of NVMe 1.3 specification, Doorbell Buffer Config Admin command, which is used for emulated NVMe controller only. Linux 4.12 added this feature, so a new Guest kernel later than 4.12 is required to test this feature.</p>
