@@ -1,0 +1,89 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "32b168a3_2dac564e",
+        "filename": "_posts/2019-09-06-dev_meetup.md",
+        "patchSetId": 7
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1010531
+      },
+      "writtenOn": "2019-09-09T22:45:54Z",
+      "side": 1,
+      "message": "San Jose, CA",
+      "revId": "fdb5218d2cd092fec9d8b42d026dc56499059a3e",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "a35f9c12_1a4df4dc",
+        "filename": "_posts/2019-09-06-dev_meetup.md",
+        "patchSetId": 7
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 1010531
+      },
+      "writtenOn": "2019-09-09T22:45:54Z",
+      "side": 1,
+      "message": "networking, learning, coding, and generally strengthening the community.",
+      "revId": "fdb5218d2cd092fec9d8b42d026dc56499059a3e",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "cf09770d_017f107b",
+        "filename": "_posts/2019-09-06-dev_meetup.md",
+        "patchSetId": 7
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 1010531
+      },
+      "writtenOn": "2019-09-09T22:45:54Z",
+      "side": 1,
+      "message": "There will be very few presentations at this meeting. Instead, you can expect the following types of activities:",
+      "revId": "fdb5218d2cd092fec9d8b42d026dc56499059a3e",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "a4c92142_b191d62e",
+        "filename": "_posts/2019-09-06-dev_meetup.md",
+        "patchSetId": 7
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 1010531
+      },
+      "writtenOn": "2019-09-09T22:45:54Z",
+      "side": 1,
+      "message": "brainstorming of",
+      "revId": "fdb5218d2cd092fec9d8b42d026dc56499059a3e",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "8c1e31b4_7bfdea94",
+        "filename": "_posts/2019-09-06-dev_meetup.md",
+        "patchSetId": 7
+      },
+      "lineNbr": 45,
+      "author": {
+        "id": 1010531
+      },
+      "writtenOn": "2019-09-09T22:45:54Z",
+      "side": 1,
+      "message": "fights. However, the room",
+      "revId": "fdb5218d2cd092fec9d8b42d026dc56499059a3e",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    }
+  ]
+}
