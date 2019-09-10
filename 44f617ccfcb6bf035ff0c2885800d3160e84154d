@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "4a9e17c7_b2317b48",
+        "filename": "_posts/2019-09-06-dev_meetup.md",
+        "patchSetId": 11
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 1010531
+      },
+      "writtenOn": "2019-09-10T16:36:40Z",
+      "side": 1,
+      "message": "Hosted",
+      "revId": "44f617ccfcb6bf035ff0c2885800d3160e84154d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "6f1fab8c_f2c17c40",
+        "filename": "_posts/2019-09-06-dev_meetup.md",
+        "patchSetId": 11
+      },
+      "lineNbr": 36,
+      "author": {
+        "id": 1010531
+      },
+      "writtenOn": "2019-09-10T16:36:40Z",
+      "side": 1,
+      "message": "\u003cbr/\u003e",
+      "revId": "44f617ccfcb6bf035ff0c2885800d3160e84154d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    }
+  ]
+}
