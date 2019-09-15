@@ -12,6 +12,6 @@ var util_8h =
     [ "spdk_align64pow2", "util_8h.html#a23a7b8dc5a8b680176bac1c7bd384406", null ],
     [ "spdk_divide_round_up", "util_8h.html#a3a1ed8f80bbc8e22d1f778a6615512e7", null ],
     [ "spdk_u32_is_pow2", "util_8h.html#a63e2af9bd97c1250c11a2e585336f377", null ],
-    [ "spdk_u32log2", "util_8h.html#a8572bc8de56d3587c8cf85dae67c1ca0", null ],
-    [ "spdk_u64log2", "util_8h.html#a80958a3fb22029cf23d2722d30e707d1", null ]
+    [ "spdk_u32log2", "util_8h.html#a5212715fed856a30641ba319bad995a7", null ],
+    [ "spdk_u64log2", "util_8h.html#ada6ce4c7e52b50a49415fbbaaf2a73f5", null ]
 ];
