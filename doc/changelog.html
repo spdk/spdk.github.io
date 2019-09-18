@@ -153,6 +153,8 @@ v19.10: (Upcoming Release)</h1>
 <p>The majority of the NVMe-oF RPCs now accept an optional tgt_name parameter. This will allow those RPCs to work with applications that create more than one target.</p>
 <h2>bdev</h2>
 <p>A new spdk_bdev_open_ext function has been added and spdk_bdev_open function has been deprecated. The new open function introduces requirement to provide callback function that will be called by asynchronous event such as bdev removal. spdk_bdev_open_ext function takes bdev name as an argument instead of bdev structure to avoid a race condition that can happen when the bdev is being removed between a call to get its structure based on a name and actually openning it.</p>
+<h2>blobstore</h2>
+<p>A new spdk_bdev_create_bs_dev_from_desc function has been added and spdk_bdev_create_bs_dev function has been deprecated. The new create function can cowork with spdk_bdev_open_ext function, which provides callback function that will be called by asynchronous event such as bdev removal.</p>
 <h2>nvme</h2>
 <p>Added <code>no_shn_notification</code> to NVMe controller initialization options, users can enable it for NVMe controllers. When the option is enabled, the controller will not do the shutdown process and just disable the controller, users can start their application later again to initialize the controller to the ready state.</p>
 <p>A controller flag <code>SPDK_NVME_CTRLR_WRR_SUPPORTED</code> was added to indicate the controller can support weighted round robin arbitration feature with submission queue.</p>

@@ -23,6 +23,7 @@ var searchData=
   ['spdk_5fbdev_5fclose',['spdk_bdev_close',['../bdev_8h.html#aaf5fc830851a2eb0aa34bbb40cf5eac6',1,'bdev.h']]],
   ['spdk_5fbdev_5fconfig_5ftext',['spdk_bdev_config_text',['../bdev_8h.html#a273c20b5f07dd8c727ec0d0b80b804fe',1,'bdev.h']]],
   ['spdk_5fbdev_5fcreate_5fbs_5fdev',['spdk_bdev_create_bs_dev',['../blob__bdev_8h.html#ad9acd1de03901617a7564d6cd4aec2bf',1,'blob_bdev.h']]],
+  ['spdk_5fbdev_5fcreate_5fbs_5fdev_5ffrom_5fdesc',['spdk_bdev_create_bs_dev_from_desc',['../blob__bdev_8h.html#a50e55d90f683106c46a66a77373eebb1',1,'blob_bdev.h']]],
   ['spdk_5fbdev_5fdesc_5fget_5fbdev',['spdk_bdev_desc_get_bdev',['../bdev_8h.html#ac6418cfa0e9076ef7dafa7753c4c2028',1,'bdev.h']]],
   ['spdk_5fbdev_5fdestruct_5fdone',['spdk_bdev_destruct_done',['../bdev__module_8h.html#a8d51d8e113f0dffb1bbe535ea01c495f',1,'bdev_module.h']]],
   ['spdk_5fbdev_5fdump_5finfo_5fjson',['spdk_bdev_dump_info_json',['../bdev_8h.html#a3ef2e861ccd2d6135bfe13257f047fb9',1,'bdev.h']]],

@@ -186,15 +186,15 @@ var user_guides =
         [ "iscsi_initiator_group_add_initiators method", "jsonrpc.html#rpc_iscsi_initiator_group_add_initiators", null ],
         [ "iscsi_get_target_nodes method", "jsonrpc.html#rpc_iscsi_get_target_nodes", null ],
         [ "iscsi_create_target_node method", "jsonrpc.html#rpc_iscsi_create_target_node", null ],
-        [ "set_iscsi_target_node_auth method", "jsonrpc.html#rpc_set_iscsi_target_node_auth", null ],
+        [ "iscsi_target_node_set_auth method", "jsonrpc.html#rpc_iscsi_target_node_set_auth", null ],
         [ "add_pg_ig_maps method", "jsonrpc.html#rpc_add_pg_ig_maps", null ],
         [ "delete_pg_ig_maps method", "jsonrpc.html#rpc_delete_pg_ig_maps", null ],
         [ "delete_target_node method", "jsonrpc.html#rpc_delete_target_node", null ],
         [ "iscsi_get_portal_groups method", "jsonrpc.html#rpc_iscsi_get_portal_groups", null ],
         [ "iscsi_create_portal_group method", "jsonrpc.html#rpc_iscsi_create_portal_group", null ],
         [ "iscsi_delete_portal_group method", "jsonrpc.html#rpc_iscsi_delete_portal_group", null ],
-        [ "get_iscsi_connections method", "jsonrpc.html#rpc_get_iscsi_connections", null ],
-        [ "target_node_add_lun method", "jsonrpc.html#rpc_target_node_add_lun", null ]
+        [ "iscsi_get_connections method", "jsonrpc.html#rpc_iscsi_get_connections", null ],
+        [ "iscsi_target_node_add_lun method", "jsonrpc.html#rpc_iscsi_target_node_add_lun", null ]
       ] ],
       [ "NVMe-oF Target", "jsonrpc.html#jsonrpc_components_nvmf_tgt", [
         [ "nvmf_create_transport method", "jsonrpc.html#rpc_nvmf_create_transport", null ],

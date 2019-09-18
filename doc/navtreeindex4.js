@@ -1,5 +1,6 @@
 var NAVTREEINDEX4 =
 {
+"json_8h.html#a5989aa1a7e696d3ad7e394e4e96783da":[13,0,26,45],
 "json_8h.html#a5ba97519fb4d8431f8b5241379a06b2e":[13,0,26,19],
 "json_8h.html#a5e87be14077e78016f6ec88be45639d1":[13,0,26,50],
 "json_8h.html#a5f6fdaa306b32f280c19909429cb320f":[13,0,26,59],
@@ -135,7 +136,6 @@ var NAVTREEINDEX4 =
 "jsonrpc.html#rpc_delete_target_node":[3,7,3,17],
 "jsonrpc.html#rpc_destroy_raid_bdev":[3,7,6,15],
 "jsonrpc.html#rpc_get_iscsi_auth_groups":[3,7,3,5],
-"jsonrpc.html#rpc_get_iscsi_connections":[3,7,3,21],
 "jsonrpc.html#rpc_get_iscsi_global_params":[3,7,3,1],
 "jsonrpc.html#rpc_get_nbd_disks":[3,7,7,2],
 "jsonrpc.html#rpc_get_notification_types":[3,7,6,16],
@@ -155,10 +155,13 @@ var NAVTREEINDEX4 =
 "jsonrpc.html#rpc_iscsi_create_portal_group":[3,7,3,19],
 "jsonrpc.html#rpc_iscsi_create_target_node":[3,7,3,13],
 "jsonrpc.html#rpc_iscsi_delete_portal_group":[3,7,3,20],
+"jsonrpc.html#rpc_iscsi_get_connections":[3,7,3,21],
 "jsonrpc.html#rpc_iscsi_get_initiator_groups":[3,7,3,8],
 "jsonrpc.html#rpc_iscsi_get_portal_groups":[3,7,3,18],
 "jsonrpc.html#rpc_iscsi_get_target_nodes":[3,7,3,12],
 "jsonrpc.html#rpc_iscsi_initiator_group_add_initiators":[3,7,3,11],
+"jsonrpc.html#rpc_iscsi_target_node_add_lun":[3,7,3,22],
+"jsonrpc.html#rpc_iscsi_target_node_set_auth":[3,7,3,14],
 "jsonrpc.html#rpc_kill_instance":[3,7,1,0],
 "jsonrpc.html#rpc_nvmf_create_transport":[3,7,4,0],
 "jsonrpc.html#rpc_nvmf_get_stats":[3,7,4,13],
@@ -178,14 +181,12 @@ var NAVTREEINDEX4 =
 "jsonrpc.html#rpc_set_bdev_options":[3,7,2,0],
 "jsonrpc.html#rpc_set_iscsi_discovery_auth":[3,7,3,2],
 "jsonrpc.html#rpc_set_iscsi_options":[3,7,3,0],
-"jsonrpc.html#rpc_set_iscsi_target_node_auth":[3,7,3,14],
 "jsonrpc.html#rpc_set_nvmf_target_config":[3,7,4,11],
 "jsonrpc.html#rpc_set_nvmf_target_max_subsystems":[3,7,4,10],
 "jsonrpc.html#rpc_set_vhost_controller_coalescing":[3,7,5,0],
 "jsonrpc.html#rpc_start_nbd_disk":[3,7,7,0],
 "jsonrpc.html#rpc_start_subsystem_init":[3,7,1,2],
 "jsonrpc.html#rpc_stop_nbd_disk":[3,7,7,1],
-"jsonrpc.html#rpc_target_node_add_lun":[3,7,3,22],
 "jsonrpc.html#rpc_thread_get_stats":[3,7,1,7],
 "jsonrpc.html#rpc_wait_subsystem_init":[3,7,1,3],
 "jsonrpc_8h.html":[13,0,27],
@@ -248,6 +249,5 @@ var NAVTREEINDEX4 =
 "log_8h.html#abe2c8e734e26212d5aa718ef8de9d7e1":[13,0,29,2],
 "log_8h.html#ad360332e6a9699cdfecdac00f768c0b1":[13,0,29,8],
 "log_8h.html#af600090b2a4aa95b4e9e4dae27bf6c7e":[13,0,29,11],
-"logical_volumes.html":[5,1],
-"logical_volumes.html#lvol":[5,1,0,1]
+"logical_volumes.html":[5,1]
 };

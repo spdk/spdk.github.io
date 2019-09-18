@@ -1,5 +1,6 @@
 var NAVTREEINDEX8 =
 {
+"nvmf.html#nvmf_config_rpc":[3,3,0,3,0],
 "nvmf.html#nvmf_fc_transport":[3,3,0,3],
 "nvmf.html#nvmf_getting_started":[3,3,0],
 "nvmf.html#nvmf_host":[3,3,0,4],
@@ -248,6 +249,5 @@ var NAVTREEINDEX8 =
 "nvmf_tgt_tracepoints.html#enable_tracepoints":[10,1],
 "nvmf_tgt_tracepoints.html#tracepoints_intro":[10,0],
 "overview.html":[2,6],
-"overview.html#dir_app":[2,6,0,0],
-"overview.html#dir_doc":[2,6,0,2]
+"overview.html#dir_app":[2,6,0,0]
 };
