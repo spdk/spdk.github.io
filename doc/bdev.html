@@ -284,11 +284,11 @@ Null</h1>
 <p><code>rpc.py bdev_null_delete Null0</code></p>
 <h1><a class="anchor" id="bdev_config_nvme"></a>
 NVMe bdev</h1>
-<p>There are two ways to create block device based on NVMe device in SPDK. First way is to connect local PCIe drive and second one is to connect NVMe-oF device. In both cases user should use <code>construct_nvme_bdev</code> RPC command to achieve that.</p>
+<p>There are two ways to create block device based on NVMe device in SPDK. First way is to connect local PCIe drive and second one is to connect NVMe-oF device. In both cases user should use <code>bdev_nvme_attach_controller</code> RPC command to achieve that.</p>
 <p>Example commands</p>
-<p><code>rpc.py construct_nvme_bdev -b NVMe1 -t PCIe -a 0000:01:00.0</code></p>
+<p><code>rpc.py bdev_nvme_attach_controller -b NVMe1 -t PCIe -a 0000:01:00.0</code></p>
 <p>This command will create NVMe bdev of physical device in the system.</p>
-<p><code>rpc.py construct_nvme_bdev -b Nvme0 -t RDMA -a 192.168.100.1 -f IPv4 -s 4420 -n nqn.2016-06.io.spdk:cnode1</code></p>
+<p><code>rpc.py bdev_nvme_attach_controller -b Nvme0 -t RDMA -a 192.168.100.1 -f IPv4 -s 4420 -n nqn.2016-06.io.spdk:cnode1</code></p>
 <p>This command will create NVMe bdev of NVMe-oF resource.</p>
 <p>To remove a NVMe controller use the delete_nvme_controller command.</p>
 <p><code>rpc.py delete_nvme_controller Nvme0</code></p>
@@ -325,8 +325,8 @@ RAID</h1>
 Passthru</h1>
 <p>The SPDK Passthru virtual block device module serves as an example of how to write a virtual block device module. It implements the required functionality of a vbdev module and demonstrates some other basic features such as the use of per I/O context.</p>
 <p>Example commands</p>
-<p><code>rpc.py construct_passthru_bdev -b aio -p pt</code></p>
-<p><code>rpc.py delete_passthru_bdev pt</code></p>
+<p><code>rpc.py bdev_passthru_create -b aio -p pt</code></p>
+<p><code>rpc.py bdev_passthru_delete pt</code></p>
 <h1><a class="anchor" id="bdev_config_pmem"></a>
 Pmem</h1>
 <p>The SPDK pmem bdev driver uses pmemblk pool as the target for block I/O operations. For details on Pmem memory please refer to PMDK documentation on <a href="http://pmem.io">http://pmem.io</a> website. First, user needs to configure SPDK to include PMDK support:</p>

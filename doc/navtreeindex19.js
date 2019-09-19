@@ -1,5 +1,6 @@
 var NAVTREEINDEX19 =
 {
+"structspdk__nvmf__target__opts.html#a2ae82b8728ac8fdaaef6f3e13fdd6ded":[12,0,216,0],
 "structspdk__nvmf__target__opts.html#a60daa0363a02ef52bf0e86e45fa63b8d":[12,0,216,1],
 "structspdk__nvmf__transport__opts.html":[12,0,217],
 "structspdk__nvmf__transport__opts.html#a063b1c1080343c707a3d51ced615628f":[12,0,217,5],
@@ -191,10 +192,11 @@ var NAVTREEINDEX19 =
 "structspdk__pci__device.html#af862ae8f5abaf025ca2d94210ad1a073":[12,0,231,5],
 "structspdk__pci__device_1_1__spdk__pci__device__internal.html":[12,0,231,0],
 "structspdk__pci__device_1_1__spdk__pci__device__internal.html#a2b514abfed62001b229bfeb65985ade4":[12,0,231,0,1],
-"structspdk__pci__device_1_1__spdk__pci__device__internal.html#a2e0aa2853572332cd67c037e6a90c4a3":[12,0,231,0,4],
+"structspdk__pci__device_1_1__spdk__pci__device__internal.html#a2e0aa2853572332cd67c037e6a90c4a3":[12,0,231,0,5],
+"structspdk__pci__device_1_1__spdk__pci__device__internal.html#a7593c55137b63f8f8aada2d974acdc34":[12,0,231,0,2],
 "structspdk__pci__device_1_1__spdk__pci__device__internal.html#a9283b58bdd73e40901b788728a81f19d":[12,0,231,0,0],
-"structspdk__pci__device_1_1__spdk__pci__device__internal.html#aaee18ce18587afdd407c6668ef9220ce":[12,0,231,0,3],
-"structspdk__pci__device_1_1__spdk__pci__device__internal.html#acf21c093c29e7b709e5d76037eac801f":[12,0,231,0,2],
+"structspdk__pci__device_1_1__spdk__pci__device__internal.html#aaee18ce18587afdd407c6668ef9220ce":[12,0,231,0,4],
+"structspdk__pci__device_1_1__spdk__pci__device__internal.html#acf21c093c29e7b709e5d76037eac801f":[12,0,231,0,3],
 "structspdk__pci__id.html":[12,0,232],
 "structspdk__pci__id.html#a01466eb56a4844fd8b42b6c35fe2c91f":[12,0,232,2],
 "structspdk__pci__id.html#a39d3b6cf5257c8a8b344bf5e8687eadc":[12,0,232,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX19 =
 "structspdk__scsi__desig__desc.html#a7a83bd4dcf1662f4678dadf823a68e9b":[12,0,238,1],
 "structspdk__scsi__desig__desc.html#aa798f99b973604bfccf793daaf35484f":[12,0,238,2],
 "structspdk__scsi__desig__desc.html#abf5d28b978089fa70e2890312e9b2118":[12,0,238,4],
-"structspdk__scsi__desig__desc.html#ad101ca3a06aa7b09c10c34f2fb465534":[12,0,238,8],
-"structspdk__scsi__desig__desc.html#ad4a6320044e4ec4d190528510661e41d":[12,0,238,3],
-"structspdk__scsi__desig__desc.html#add7dd85eec8f730e1452a102ee4735b3":[12,0,238,7]
+"structspdk__scsi__desig__desc.html#ad101ca3a06aa7b09c10c34f2fb465534":[12,0,238,8]
 };

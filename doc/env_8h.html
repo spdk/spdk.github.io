@@ -451,9 +451,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_
 <tr class="memitem:a69b979316610b357a35d03500c3059af"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_8h.html#a69b979316610b357a35d03500c3059af">spdk_pci_device_get_serial_number</a> (struct <a class="el" href="structspdk__pci__device.html">spdk_pci_device</a> *dev, char *sn, size_t len)</td></tr>
 <tr class="memdesc:a69b979316610b357a35d03500c3059af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Serialize the PCIe Device Serial Number into the provided buffer.  <a href="#a69b979316610b357a35d03500c3059af">More...</a><br /></td></tr>
 <tr class="separator:a69b979316610b357a35d03500c3059af"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afa1866b3d6e63d1b7be5db38b2094d89"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_8h.html#afa1866b3d6e63d1b7be5db38b2094d89">spdk_pci_device_claim</a> (const struct <a class="el" href="structspdk__pci__addr.html">spdk_pci_addr</a> *pci_addr)</td></tr>
-<tr class="memdesc:afa1866b3d6e63d1b7be5db38b2094d89"><td class="mdescLeft">&#160;</td><td class="mdescRight">Claim a PCI device for exclusive SPDK userspace access.  <a href="#afa1866b3d6e63d1b7be5db38b2094d89">More...</a><br /></td></tr>
-<tr class="separator:afa1866b3d6e63d1b7be5db38b2094d89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab641446baa33ce26187f3baba9e0f914"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_8h.html#ab641446baa33ce26187f3baba9e0f914">spdk_pci_device_claim</a> (struct <a class="el" href="structspdk__pci__device.html">spdk_pci_device</a> *dev)</td></tr>
+<tr class="memdesc:ab641446baa33ce26187f3baba9e0f914"><td class="mdescLeft">&#160;</td><td class="mdescRight">Claim a PCI device for exclusive SPDK userspace access.  <a href="#ab641446baa33ce26187f3baba9e0f914">More...</a><br /></td></tr>
+<tr class="separator:ab641446baa33ce26187f3baba9e0f914"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53e5710a5ece84d2d821b91351892da4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_8h.html#a53e5710a5ece84d2d821b91351892da4">spdk_pci_device_unclaim</a> (struct <a class="el" href="structspdk__pci__device.html">spdk_pci_device</a> *dev)</td></tr>
+<tr class="memdesc:a53e5710a5ece84d2d821b91351892da4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Undo <a class="el" href="env_8h.html#ab641446baa33ce26187f3baba9e0f914" title="Claim a PCI device for exclusive SPDK userspace access. ">spdk_pci_device_claim()</a>.  <a href="#a53e5710a5ece84d2d821b91351892da4">More...</a><br /></td></tr>
+<tr class="separator:a53e5710a5ece84d2d821b91351892da4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa98502fc8d794fadaae348496d421082"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_8h.html#aa98502fc8d794fadaae348496d421082">spdk_pci_device_detach</a> (struct <a class="el" href="structspdk__pci__device.html">spdk_pci_device</a> *device)</td></tr>
 <tr class="memdesc:aa98502fc8d794fadaae348496d421082"><td class="mdescLeft">&#160;</td><td class="mdescRight">Release all resources associated with the given device and detach it.  <a href="#aa98502fc8d794fadaae348496d421082">More...</a><br /></td></tr>
 <tr class="separator:aa98502fc8d794fadaae348496d421082"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -2781,8 +2784,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_
 
 </div>
 </div>
-<a id="afa1866b3d6e63d1b7be5db38b2094d89"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afa1866b3d6e63d1b7be5db38b2094d89">&#9670;&nbsp;</a></span>spdk_pci_device_claim()</h2>
+<a id="ab641446baa33ce26187f3baba9e0f914"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab641446baa33ce26187f3baba9e0f914">&#9670;&nbsp;</a></span>spdk_pci_device_claim()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2790,8 +2793,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_
         <tr>
           <td class="memname">int spdk_pci_device_claim </td>
           <td>(</td>
-          <td class="paramtype">const struct <a class="el" href="structspdk__pci__addr.html">spdk_pci_addr</a> *&#160;</td>
-          <td class="paramname"><em>pci_addr</em></td><td>)</td>
+          <td class="paramtype">struct <a class="el" href="structspdk__pci__device.html">spdk_pci_device</a> *&#160;</td>
+          <td class="paramname"><em>dev</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -2799,13 +2802,14 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_
 
 <p>Claim a PCI device for exclusive SPDK userspace access. </p>
 <p>Uses F_SETLK on a shared memory file with the PCI address embedded in its name. As long as this file remains open with the lock acquired, other processes will not be able to successfully call this function on the same PCI device.</p>
+<p>The device can be un-claimed by the owning process with <a class="el" href="env_8h.html#a53e5710a5ece84d2d821b91351892da4" title="Undo spdk_pci_device_claim(). ">spdk_pci_device_unclaim()</a>. It will be also unclaimed automatically when detached.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">pci_addr</td><td>PCI address of the device to claim</td></tr>
+    <tr><td class="paramname">dev</td><td>PCI device to claim.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>-1 if the device has already been claimed, an fd otherwise. This fd should be closed when the application no longer needs access to the PCI device (including when it is hot removed). </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>-EACCES if the device has already been claimed, negative errno on unexpected errors, 0 on success. </dd></dl>
 
 </div>
 </div>
@@ -3263,6 +3267,32 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 on success. </dd></dl>
+
+</div>
+</div>
+<a id="a53e5710a5ece84d2d821b91351892da4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a53e5710a5ece84d2d821b91351892da4">&#9670;&nbsp;</a></span>spdk_pci_device_unclaim()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_pci_device_unclaim </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structspdk__pci__device.html">spdk_pci_device</a> *&#160;</td>
+          <td class="paramname"><em>dev</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Undo <a class="el" href="env_8h.html#ab641446baa33ce26187f3baba9e0f914" title="Claim a PCI device for exclusive SPDK userspace access. ">spdk_pci_device_claim()</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dev</td><td>PCI device to unclaim. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

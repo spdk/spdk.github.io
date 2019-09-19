@@ -1,5 +1,7 @@
 var NAVTREEINDEX21 =
 {
+"trace_8h.html#a01e4bb4f3e8d4f7e9fadb16bce93bf15":[13,0,49,36],
+"trace_8h.html#a2057ffa0d5eaf0680a8d970646c157af":[13,0,49,37],
 "trace_8h.html#a21ab2742df91d14f1bdd761f222180f2":[13,0,49,23],
 "trace_8h.html#a22d0ab509e9d6beda1e9ae84d793ba94":[13,0,49,13],
 "trace_8h.html#a26e4becda093930b12939d3860fae701":[13,0,49,10],
@@ -247,7 +249,5 @@ var NAVTREEINDEX21 =
 "unionspdk__nvme__intel__feat__led__pattern.html":[12,0,129],
 "unionspdk__nvme__intel__feat__led__pattern.html#a370d233a0e62c98f73ce402e3baaeec3":[12,0,129,3],
 "unionspdk__nvme__intel__feat__led__pattern.html#a623263a713c8d34a35b6721d64ea04f4":[12,0,129,2],
-"unionspdk__nvme__intel__feat__led__pattern.html#a9b872deb828d7b41a9dc56157623736d":[12,0,129,0],
-"unionspdk__nvme__intel__feat__led__pattern.html#aa672b651e209e0a30329e42ac87354dc":[12,0,129,1],
-"unionspdk__nvme__intel__feat__power__governor.html":[12,0,130]
+"unionspdk__nvme__intel__feat__led__pattern.html#a9b872deb828d7b41a9dc56157623736d":[12,0,129,0]
 };
