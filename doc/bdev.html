@@ -233,19 +233,19 @@ GPT (GUID Partition Table)</h1>
 <p>The GPT virtual bdev driver is enabled by default and does not require any configuration. It will automatically detect <a class="el" href="bdev.html#bdev_ug_gpt">SPDK GPT partition table</a> on any attached bdev and will create possibly multiple virtual bdevs.</p>
 <h2><a class="anchor" id="bdev_ug_gpt"></a>
 SPDK GPT partition table</h2>
-<p>The SPDK partition type GUID is <code>7c5222bd-8f5d-4087-9c00-bf9843c7b58c</code>. Existing SPDK bdevs can be exposed as Linux block devices via NBD and then ca be partitioned with standard partitioning tools. After partitioning, the bdevs will need to be deleted and attached again for the GPT bdev module to see any changes. NBD kernel module must be loaded first. To create NBD bdev user should use <code>start_nbd_disk</code> RPC command.</p>
+<p>The SPDK partition type GUID is <code>7c5222bd-8f5d-4087-9c00-bf9843c7b58c</code>. Existing SPDK bdevs can be exposed as Linux block devices via NBD and then ca be partitioned with standard partitioning tools. After partitioning, the bdevs will need to be deleted and attached again for the GPT bdev module to see any changes. NBD kernel module must be loaded first. To create NBD bdev user should use <code>nbd_start_disk</code> RPC command.</p>
 <p>Example command</p>
-<p><code>rpc.py start_nbd_disk Malloc0 /dev/nbd0</code></p>
+<p><code>rpc.py nbd_start_disk Malloc0 /dev/nbd0</code></p>
 <p>This will expose an SPDK bdev <code>Malloc0</code> under the <code>/dev/nbd0</code> block device.</p>
-<p>To remove NBD device user should use <code>stop_nbd_disk</code> RPC command.</p>
+<p>To remove NBD device user should use <code>nbd_stop_disk</code> RPC command.</p>
 <p>Example command</p>
-<p><code>rpc.py stop_nbd_disk /dev/nbd0</code></p>
-<p>To display full or specified nbd device list user should use <code>get_nbd_disks</code> RPC command.</p>
+<p><code>rpc.py nbd_stop_disk /dev/nbd0</code></p>
+<p>To display full or specified nbd device list user should use <code>nbd_get_disks</code> RPC command.</p>
 <p>Example command</p>
-<p><code>rpc.py stop_nbd_disk -n /dev/nbd0</code></p>
+<p><code>rpc.py nbd_stop_disk -n /dev/nbd0</code></p>
 <h2><a class="anchor" id="bdev_ug_gpt_create_part"></a>
 Creating a GPT partition table using NBD</h2>
-<div class="fragment"><div class="line"># Expose bdev Nvme0n1 as kernel block device /dev/nbd0 by JSON-RPC</div><div class="line">rpc.py start_nbd_disk Nvme0n1 /dev/nbd0</div><div class="line"></div><div class="line"># Create GPT partition table.</div><div class="line">parted -s /dev/nbd0 mklabel gpt</div><div class="line"></div><div class="line"># Add a partition consuming 50% of the available space.</div><div class="line">parted -s /dev/nbd0 mkpart MyPartition &#39;0%&#39; &#39;50%&#39;</div><div class="line"></div><div class="line"># Change the partition type to the SPDK GUID.</div><div class="line"># sgdisk is part of the gdisk package.</div><div class="line">sgdisk -t 1:7c5222bd-8f5d-4087-9c00-bf9843c7b58c /dev/nbd0</div><div class="line"></div><div class="line"># Stop the NBD device (stop exporting /dev/nbd0).</div><div class="line">rpc.py stop_nbd_disk /dev/nbd0</div><div class="line"></div><div class="line"># Now Nvme0n1 is configured with a GPT partition table, and</div><div class="line"># the first partition will be automatically exposed as</div><div class="line"># Nvme0n1p1 in SPDK applications.</div></div><!-- fragment --><h1><a class="anchor" id="bdev_config_iscsi"></a>
+<div class="fragment"><div class="line"># Expose bdev Nvme0n1 as kernel block device /dev/nbd0 by JSON-RPC</div><div class="line">rpc.py nbd_start_disk Nvme0n1 /dev/nbd0</div><div class="line"></div><div class="line"># Create GPT partition table.</div><div class="line">parted -s /dev/nbd0 mklabel gpt</div><div class="line"></div><div class="line"># Add a partition consuming 50% of the available space.</div><div class="line">parted -s /dev/nbd0 mkpart MyPartition &#39;0%&#39; &#39;50%&#39;</div><div class="line"></div><div class="line"># Change the partition type to the SPDK GUID.</div><div class="line"># sgdisk is part of the gdisk package.</div><div class="line">sgdisk -t 1:7c5222bd-8f5d-4087-9c00-bf9843c7b58c /dev/nbd0</div><div class="line"></div><div class="line"># Stop the NBD device (stop exporting /dev/nbd0).</div><div class="line">rpc.py nbd_stop_disk /dev/nbd0</div><div class="line"></div><div class="line"># Now Nvme0n1 is configured with a GPT partition table, and</div><div class="line"># the first partition will be automatically exposed as</div><div class="line"># Nvme0n1p1 in SPDK applications.</div></div><!-- fragment --><h1><a class="anchor" id="bdev_config_iscsi"></a>
 iSCSI bdev</h1>
 <p>The SPDK iSCSI bdev driver depends on libiscsi and hence is not enabled by default. In order to use it, build SPDK with an extra <code>--with-iscsi-initiator</code> configure option.</p>
 <p>The following command creates an <code>iSCSI0</code> bdev from a single LUN exposed at given iSCSI URL with <code>iqn.2016-06.io.spdk:init</code> as the reported initiator IQN.</p>
@@ -316,11 +316,11 @@ Lvols</h2>
 <p><code>rpc.py bdev_lvol_create lvol2 25 -u 330a6ab2-f468-11e7-983e-001e67edf35d</code></p>
 <h1><a class="anchor" id="bdev_ug_raid"></a>
 RAID</h1>
-<p>RAID virtual bdev module provides functionality to combine any SPDK bdevs into one RAID bdev. Currently SPDK supports only RAID 0. RAID functionality does not store on-disk metadata on the member disks, so user must reconstruct the RAID volume when restarting application. User may specify member disks to create RAID volume event if they do not exists yet - as the member disks are registered at a later time, the RAID module will claim them and will surface the RAID volume after all of the member disks are available. It is allowed to use disks of different sizes - the smallest disk size will be the amount of space used on each member disk.</p>
+<p>RAID virtual bdev module provides functionality to combine any SPDK bdevs into one RAID bdev. Currently SPDK supports only RAID 0. RAID functionality does not store on-disk metadata on the member disks, so user must recreate the RAID volume when restarting application. User may specify member disks to create RAID volume event if they do not exists yet - as the member disks are registered at a later time, the RAID module will claim them and will surface the RAID volume after all of the member disks are available. It is allowed to use disks of different sizes - the smallest disk size will be the amount of space used on each member disk.</p>
 <p>Example commands</p>
-<p><code>rpc.py construct_raid_bdev -n Raid0 -z 64 -r 0 -b "lvol0 lvol1 lvol2 lvol3"</code></p>
-<p><code>rpc.py get_raid_bdevs</code></p>
-<p><code>rpc.py destroy_raid_bdev Raid0</code></p>
+<p><code>rpc.py bdev_raid_create -n Raid0 -z 64 -r 0 -b "lvol0 lvol1 lvol2 lvol3"</code></p>
+<p><code>rpc.py bdev_raid_get_bdevs</code></p>
+<p><code>rpc.py bdev_raid_delete Raid0</code></p>
 <h1><a class="anchor" id="bdev_config_passthru"></a>
 Passthru</h1>
 <p>The SPDK Passthru virtual block device module serves as an example of how to write a virtual block device module. It implements the required functionality of a vbdev module and demonstrates some other basic features such as the use of per I/O context.</p>
@@ -349,20 +349,20 @@ Pmem</h1>
 Virtio Block</h1>
 <p>The Virtio-Block driver allows creating SPDK bdevs from Virtio-Block devices.</p>
 <p>The following command creates a Virtio-Block device named <code>VirtioBlk0</code> from a vhost-user socket <code>/tmp/vhost.0</code> exposed directly by SPDK <a class="el" href="vhost.html">vhost Target</a>. Optional <code>vq-count</code> and <code>vq-size</code> params specify number of request queues and queue depth to be used.</p>
-<p><code>rpc.py construct_virtio_dev --dev-type blk --trtype user --traddr /tmp/vhost.0 --vq-count 2 --vq-size 512 VirtioBlk0</code></p>
+<p><code>rpc.py bdev_virtio_attach_controller --dev-type blk --trtype user --traddr /tmp/vhost.0 --vq-count 2 --vq-size 512 VirtioBlk0</code></p>
 <p>The driver can be also used inside QEMU-based VMs. The following command creates a Virtio Block device named <code>VirtioBlk0</code> from a Virtio PCI device at address <code>0000:00:01.0</code>. The entire configuration will be read automatically from PCI Configuration Space. It will reflect all parameters passed to QEMU's vhost-user-scsi-pci device.</p>
-<p><code>rpc.py construct_virtio_dev --dev-type blk --trtype pci --traddr 0000:01:00.0 VirtioBlk1</code></p>
+<p><code>rpc.py bdev_virtio_attach_controller --dev-type blk --trtype pci --traddr 0000:01:00.0 VirtioBlk1</code></p>
 <p>Virtio-Block devices can be removed with the following command</p>
-<p><code>rpc.py remove_virtio_bdev VirtioBlk0</code></p>
+<p><code>rpc.py bdev_virtio_detach_controller VirtioBlk0</code></p>
 <h1><a class="anchor" id="bdev_config_virtio_scsi"></a>
 Virtio SCSI</h1>
 <p>The Virtio-SCSI driver allows creating SPDK block devices from Virtio-SCSI LUNs.</p>
-<p>Virtio-SCSI bdevs are constructed the same way as Virtio-Block ones.</p>
-<p><code>rpc.py construct_virtio_dev --dev-type scsi --trtype user --traddr /tmp/vhost.0 --vq-count 2 --vq-size 512 VirtioScsi0</code></p>
-<p><code>rpc.py construct_virtio_dev --dev-type scsi --trtype pci --traddr 0000:01:00.0 VirtioScsi0</code></p>
+<p>Virtio-SCSI bdevs are created the same way as Virtio-Block ones.</p>
+<p><code>rpc.py bdev_virtio_attach_controller --dev-type scsi --trtype user --traddr /tmp/vhost.0 --vq-count 2 --vq-size 512 VirtioScsi0</code></p>
+<p><code>rpc.py bdev_virtio_attach_controller --dev-type scsi --trtype pci --traddr 0000:01:00.0 VirtioScsi0</code></p>
 <p>Each Virtio-SCSI device may export up to 64 block devices named VirtioScsi0t0 ~ VirtioScsi0t63, one LUN (LUN0) per SCSI device. The above 2 commands will output names of all exposed bdevs.</p>
 <p>Virtio-SCSI devices can be removed with the following command</p>
-<p><code>rpc.py remove_virtio_bdev VirtioScsi0</code></p>
+<p><code>rpc.py bdev_virtio_detach_controller VirtioScsi0</code></p>
 <p>Removing a Virtio-SCSI device will destroy all its bdevs. </p>
 </div></div><!-- contents -->
 </div><!-- doc-content -->

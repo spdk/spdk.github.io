@@ -169,6 +169,18 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stru
 enum <a class="el" href="nvme__spec_8h.html#a7e72566466cae734d999e755524f7b20">spdk_nvme_cc_ams</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__ctrlr__opts.html#a183d97c9bda86a9ca47442bcbc69c444">arb_mechanism</a></td></tr>
 <tr class="memdesc:a183d97c9bda86a9ca47442bcbc69c444"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of arbitration mechanism. <br /></td></tr>
 <tr class="separator:a183d97c9bda86a9ca47442bcbc69c444"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76dd1c766edd9572dfddf9584f0e4e48"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__ctrlr__opts.html#a76dd1c766edd9572dfddf9584f0e4e48">arbitration_burst</a></td></tr>
+<tr class="memdesc:a76dd1c766edd9572dfddf9584f0e4e48"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum number of commands that the controller may launch at one time.  <a href="#a76dd1c766edd9572dfddf9584f0e4e48">More...</a><br /></td></tr>
+<tr class="separator:a76dd1c766edd9572dfddf9584f0e4e48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5098ae82e7bfecd254dd31cf629ccf05"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__ctrlr__opts.html#a5098ae82e7bfecd254dd31cf629ccf05">low_priority_weight</a></td></tr>
+<tr class="memdesc:a5098ae82e7bfecd254dd31cf629ccf05"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of commands that may be executed from the low priority queue in each arbitration round.  <a href="#a5098ae82e7bfecd254dd31cf629ccf05">More...</a><br /></td></tr>
+<tr class="separator:a5098ae82e7bfecd254dd31cf629ccf05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27a08a6255c8bd76a4476e08e1ed1816"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__ctrlr__opts.html#a27a08a6255c8bd76a4476e08e1ed1816">medium_priority_weight</a></td></tr>
+<tr class="memdesc:a27a08a6255c8bd76a4476e08e1ed1816"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of commands that may be executed from the medium priority queue in each arbitration round.  <a href="#a27a08a6255c8bd76a4476e08e1ed1816">More...</a><br /></td></tr>
+<tr class="separator:a27a08a6255c8bd76a4476e08e1ed1816"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f2adbe11e4650f48bdedcf23ab50646"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__ctrlr__opts.html#a6f2adbe11e4650f48bdedcf23ab50646">high_priority_weight</a></td></tr>
+<tr class="memdesc:a6f2adbe11e4650f48bdedcf23ab50646"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of commands that may be executed from the high priority queue in each arbitration round.  <a href="#a6f2adbe11e4650f48bdedcf23ab50646">More...</a><br /></td></tr>
+<tr class="separator:a6f2adbe11e4650f48bdedcf23ab50646"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2510f057d069ab99a00bfa9b747037b0"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__ctrlr__opts.html#a2510f057d069ab99a00bfa9b747037b0">keep_alive_timeout_ms</a></td></tr>
 <tr class="memdesc:a2510f057d069ab99a00bfa9b747037b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Keep alive timeout in milliseconds (0 = disabled).  <a href="#a2510f057d069ab99a00bfa9b747037b0">More...</a><br /></td></tr>
 <tr class="separator:a2510f057d069ab99a00bfa9b747037b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -232,6 +244,23 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 
 <p>Admin commands timeout in milliseconds (0 = no timeout). </p>
 <p>The timeout value is used for admin commands submitted internally by the nvme driver during initialization, before the user is able to call <a class="el" href="nvme_8h.html#aecec86e033e0d13e6fc67ead61a7028d" title="Register for timeout callback on a controller. ">spdk_nvme_ctrlr_register_timeout_callback()</a>. By default, this is set to 120 seconds, users can change it in the probing callback. </p>
+
+</div>
+</div>
+<a id="a76dd1c766edd9572dfddf9584f0e4e48"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a76dd1c766edd9572dfddf9584f0e4e48">&#9670;&nbsp;</a></span>arbitration_burst</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t spdk_nvme_ctrlr_opts::arbitration_burst</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Maximum number of commands that the controller may launch at one time. </p>
+<p>The value is expressed as a power of two, valid values are from 0-7, and 7 means unlimited. </p>
 
 </div>
 </div>
@@ -320,6 +349,23 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 
 </div>
 </div>
+<a id="a6f2adbe11e4650f48bdedcf23ab50646"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f2adbe11e4650f48bdedcf23ab50646">&#9670;&nbsp;</a></span>high_priority_weight</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t spdk_nvme_ctrlr_opts::high_priority_weight</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Number of commands that may be executed from the high priority queue in each arbitration round. </p>
+<p>This field is only valid when arb_mechanism is set to SPDK_NVME_CC_AMS_WRR (weighted round robin). </p>
+
+</div>
+</div>
 <a id="a810d9f0e2877c2264cf3393bc2919cb5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a810d9f0e2877c2264cf3393bc2919cb5">&#9670;&nbsp;</a></span>host_id</h2>
 
@@ -386,6 +432,40 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 
 <p>Keep alive timeout in milliseconds (0 = disabled). </p>
 <p>The NVMe library will set the Keep Alive Timer feature to this value and automatically send Keep Alive commands as needed. The library user must call <a class="el" href="nvme_8h.html#a10282695461985f58f54de022911745e" title="Process any outstanding completions for admin commands. ">spdk_nvme_ctrlr_process_admin_completions()</a> periodically to ensure Keep Alive commands are sent. </p>
+
+</div>
+</div>
+<a id="a5098ae82e7bfecd254dd31cf629ccf05"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5098ae82e7bfecd254dd31cf629ccf05">&#9670;&nbsp;</a></span>low_priority_weight</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t spdk_nvme_ctrlr_opts::low_priority_weight</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Number of commands that may be executed from the low priority queue in each arbitration round. </p>
+<p>This field is only valid when arb_mechanism is set to SPDK_NVME_CC_AMS_WRR (weighted round robin). </p>
+
+</div>
+</div>
+<a id="a27a08a6255c8bd76a4476e08e1ed1816"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a27a08a6255c8bd76a4476e08e1ed1816">&#9670;&nbsp;</a></span>medium_priority_weight</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t spdk_nvme_ctrlr_opts::medium_priority_weight</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Number of commands that may be executed from the medium priority queue in each arbitration round. </p>
+<p>This field is only valid when arb_mechanism is set to SPDK_NVME_CC_AMS_WRR (weighted round robin). </p>
 
 </div>
 </div>

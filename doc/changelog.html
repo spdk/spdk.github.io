@@ -158,6 +158,7 @@ v19.10: (Upcoming Release)</h1>
 <h2>nvme</h2>
 <p>Added <code>no_shn_notification</code> to NVMe controller initialization options, users can enable it for NVMe controllers. When the option is enabled, the controller will not do the shutdown process and just disable the controller, users can start their application later again to initialize the controller to the ready state.</p>
 <p>A controller flag <code>SPDK_NVME_CTRLR_WRR_SUPPORTED</code> was added to indicate the controller can support weighted round robin arbitration feature with submission queue.</p>
+<p>Added <code>arbitration_burst</code> option for arbitration feature, and added three <code>low/medium/high_priority_weight</code> options for weighted round robin arbitration.</p>
 <h2>iSCSI</h2>
 <p>Portals may no longer be associated with a cpumask. The scheduling of connections is moving to a more dynamic model.</p>
 <h2>delay bdev</h2>
@@ -170,7 +171,8 @@ v19.10: (Upcoming Release)</h1>
 <h2>event</h2>
 <p>start_subsystem_init RPC no longer stops the application on error during initialization.</p>
 <h2>rpc</h2>
-<p>Added optional parameter '&ndash;md-size'to 'construct_null_bdev' RPC method.</p>
+<p>Added optional parameters '&ndash;arbitration-burst' and '&ndash;low/medium/high-priority-weight' to 'bdev_nvme_set_options' RPC method.</p>
+<p>Added optional parameter '&ndash;md-size' to 'construct_null_bdev' RPC method.</p>
 <p>Added optional parameters '&ndash;dif-type' and '&ndash;dif-is-head-of-md' to 'construct_null_bdev' RPC method.</p>
 <h1><a class="anchor" id="changelog-v19-07"></a>
 v19.07:</h1>

@@ -165,12 +165,12 @@ var user_guides =
         [ "bdev_pmem_delete", "jsonrpc.html#rpc_bdev_pmem_delete", null ],
         [ "bdev_passthru_create", "jsonrpc.html#rpc_bdev_passthru_create", null ],
         [ "bdev_passthru_delete", "jsonrpc.html#rpc_bdev_passthru_delete", null ],
-        [ "construct_virtio_dev", "jsonrpc.html#rpc_construct_virtio_dev", null ],
-        [ "get_virtio_scsi_devs", "jsonrpc.html#rpc_get_virtio_scsi_devs", null ],
-        [ "remove_virtio_bdev", "jsonrpc.html#rpc_remove_virtio_bdev", null ]
+        [ "bdev_virtio_attach_controller", "jsonrpc.html#rpc_bdev_virtio_attach_controller", null ],
+        [ "bdev_virtio_scsi_get_devices", "jsonrpc.html#rpc_bdev_virtio_scsi_get_devices", null ],
+        [ "bdev_virtio_detach_controller", "jsonrpc.html#rpc_bdev_virtio_detach_controller", null ]
       ] ],
       [ "iSCSI Target", "jsonrpc.html#jsonrpc_components_iscsi_tgt", [
-        [ "set_iscsi_options method", "jsonrpc.html#rpc_set_iscsi_options", null ],
+        [ "iscsi_set_options method", "jsonrpc.html#rpc_iscsi_set_options", null ],
         [ "get_iscsi_global_params method", "jsonrpc.html#rpc_get_iscsi_global_params", null ],
         [ "set_iscsi_discovery_auth method", "jsonrpc.html#rpc_set_iscsi_discovery_auth", null ],
         [ "add_iscsi_auth_group method", "jsonrpc.html#rpc_add_iscsi_auth_group", [
@@ -178,7 +178,7 @@ var user_guides =
         ] ],
         [ "delete_iscsi_auth_group method", "jsonrpc.html#rpc_delete_iscsi_auth_group", null ],
         [ "get_iscsi_auth_groups", "jsonrpc.html#rpc_get_iscsi_auth_groups", null ],
-        [ "add_secret_to_iscsi_auth_group", "jsonrpc.html#rpc_add_secret_to_iscsi_auth_group", null ],
+        [ "iscsi_auth_group_add_secret", "jsonrpc.html#rpc_iscsi_auth_group_add_secret", null ],
         [ "delete_secret_from_iscsi_auth_group", "jsonrpc.html#rpc_delete_secret_from_iscsi_auth_group", null ],
         [ "iscsi_get_initiator_groups method", "jsonrpc.html#rpc_iscsi_get_initiator_groups", null ],
         [ "add_initiator_group method", "jsonrpc.html#rpc_add_initiator_group", null ],
@@ -247,16 +247,16 @@ var user_guides =
         [ "bdev_lvol_delete", "jsonrpc.html#rpc_bdev_lvol_delete", null ],
         [ "bdev_lvol_inflate", "jsonrpc.html#rpc_bdev_lvol_inflate", null ],
         [ "bdev_lvol_decouple_parent", "jsonrpc.html#rpc_bdev_lvol_decouple_parent", null ],
-        [ "get_raid_bdevs", "jsonrpc.html#rpc_get_raid_bdevs", null ],
-        [ "construct_raid_bdev", "jsonrpc.html#rpc_construct_raid_bdev", null ],
-        [ "destroy_raid_bdev", "jsonrpc.html#rpc_destroy_raid_bdev", null ],
+        [ "bdev_raid_get_bdevs", "jsonrpc.html#rpc_bdev_raid_get_bdevs", null ],
+        [ "bdev_raid_create", "jsonrpc.html#rpc_bdev_raid_create", null ],
+        [ "bdev_raid_delete", "jsonrpc.html#rpc_bdev_raid_delete", null ],
         [ "get_notification_types", "jsonrpc.html#rpc_get_notification_types", null ],
         [ "get_notifications", "jsonrpc.html#get_notifications", null ]
       ] ],
       [ "Linux Network Block Device (NBD)", "jsonrpc.html#jsonrpc_components_nbd", [
-        [ "start_nbd_disk", "jsonrpc.html#rpc_start_nbd_disk", null ],
-        [ "stop_nbd_disk", "jsonrpc.html#rpc_stop_nbd_disk", null ],
-        [ "get_nbd_disks", "jsonrpc.html#rpc_get_nbd_disks", null ],
+        [ "nbd_start_disk", "jsonrpc.html#rpc_nbd_start_disk", null ],
+        [ "nbd_stop_disk", "jsonrpc.html#rpc_nbd_stop_disk", null ],
+        [ "nbd_get_disks", "jsonrpc.html#rpc_nbd_get_disks", null ],
         [ "bdev_nvme_send_cmd", "jsonrpc.html#rpc_bdev_nvme_send_cmd", null ],
         [ "get_spdk_version", "jsonrpc.html#rpc_get_spdk_version", null ]
       ] ]

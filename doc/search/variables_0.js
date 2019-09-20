@@ -21,6 +21,7 @@ var searchData=
   ['apste',['apste',['../unionspdk__nvme__feat__autonomous__power__state__transition.html#a022cc1ba5b7ff365a6b69989c663333a',1,'spdk_nvme_feat_autonomous_power_state_transition']]],
   ['aqa',['aqa',['../structspdk__nvme__registers.html#a5bf760e2a616ecb3f8d8fd0a64d24e61',1,'spdk_nvme_registers']]],
   ['arb_5fmechanism',['arb_mechanism',['../structspdk__nvme__ctrlr__opts.html#a183d97c9bda86a9ca47442bcbc69c444',1,'spdk_nvme_ctrlr_opts']]],
+  ['arbitration_5fburst',['arbitration_burst',['../structspdk__nvme__ctrlr__opts.html#a76dd1c766edd9572dfddf9584f0e4e48',1,'spdk_nvme_ctrlr_opts']]],
   ['asc',['asc',['../structspdk__bdev__io_1_1____bdev__io__internal__fields.html#aa0f7b85e127d44d99957041f59dfc7dc',1,'spdk_bdev_io::__bdev_io_internal_fields']]],
   ['ascq',['ascq',['../structspdk__bdev__io_1_1____bdev__io__internal__fields.html#a0f0d6222023fca31e0e4a8e9d56a2f91',1,'spdk_bdev_io::__bdev_io_internal_fields']]],
   ['asqs',['asqs',['../unionspdk__nvme__aqa__register.html#ac8e473c82656d9f2a536618f9e2f55cb',1,'spdk_nvme_aqa_register']]],

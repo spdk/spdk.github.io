@@ -14,6 +14,7 @@ var searchData=
   ['log',['log',['../structspdk__app__opts.html#a7d2cba1a98fcd07a84302a4469fdb09c',1,'spdk_app_opts']]],
   ['log_5fpage_5fcount',['log_page_count',['../structspdk__nvme__reservation__notification__log.html#ad8bc8c37065d9cf1c8e2b171d53ba807',1,'spdk_nvme_reservation_notification_log']]],
   ['logical_5fblock_5fsize',['logical_block_size',['../structspdk__reduce__vol__params.html#a33c2c765f8aef22dbd55f80aa71c6ba5',1,'spdk_reduce_vol_params']]],
+  ['low_5fpriority_5fweight',['low_priority_weight',['../structspdk__nvme__ctrlr__opts.html#a5098ae82e7bfecd254dd31cf629ccf05',1,'spdk_nvme_ctrlr_opts']]],
   ['lpa',['lpa',['../structspdk__nvme__ctrlr__data.html#a788ef2ab5efb1b311d71dcb9f1885a81',1,'spdk_nvme_ctrlr_data']]],
   ['lpw',['lpw',['../unionspdk__nvme__feat__arbitration.html#a0eb3434752c3b8ea38f37556fa9fd116',1,'spdk_nvme_feat_arbitration']]]
 ];
