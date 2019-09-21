@@ -1,5 +1,6 @@
 var NAVTREEINDEX4 =
 {
+"json_8h.html#a4ed2b0ed4b598337db1ef401ccc24b2a":[13,0,26,24],
 "json_8h.html#a4f3a2705636d6abcfff09a9c2e3dc6cb":[13,0,26,51],
 "json_8h.html#a5989aa1a7e696d3ad7e394e4e96783da":[13,0,26,45],
 "json_8h.html#a5ba97519fb4d8431f8b5241379a06b2e":[13,0,26,19],
@@ -159,6 +160,7 @@ var NAVTREEINDEX4 =
 "jsonrpc.html#rpc_iscsi_get_portal_groups":[3,7,3,18],
 "jsonrpc.html#rpc_iscsi_get_target_nodes":[3,7,3,12],
 "jsonrpc.html#rpc_iscsi_initiator_group_add_initiators":[3,7,3,11],
+"jsonrpc.html#rpc_iscsi_set_discovery_auth":[3,7,3,2],
 "jsonrpc.html#rpc_iscsi_set_options":[3,7,3,0],
 "jsonrpc.html#rpc_iscsi_target_node_add_lun":[3,7,3,22],
 "jsonrpc.html#rpc_iscsi_target_node_add_pg_ig_maps":[3,7,3,15],
@@ -183,7 +185,6 @@ var NAVTREEINDEX4 =
 "jsonrpc.html#rpc_remove_vhost_scsi_target":[3,7,5,3],
 "jsonrpc.html#rpc_rpc_get_methods":[3,7,1,4],
 "jsonrpc.html#rpc_set_bdev_options":[3,7,2,0],
-"jsonrpc.html#rpc_set_iscsi_discovery_auth":[3,7,3,2],
 "jsonrpc.html#rpc_set_nvmf_target_config":[3,7,4,11],
 "jsonrpc.html#rpc_set_nvmf_target_max_subsystems":[3,7,4,10],
 "jsonrpc.html#rpc_set_vhost_controller_coalescing":[3,7,5,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX4 =
 "log_8h.html#aaa20a1f56503b0d9f16c82b451fb338b":[13,0,29,5],
 "log_8h.html#ab34f1c87d98113395ab04415dbee96d8":[13,0,29,17],
 "log_8h.html#abe2c8e734e26212d5aa718ef8de9d7e1":[13,0,29,2],
-"log_8h.html#ad360332e6a9699cdfecdac00f768c0b1":[13,0,29,8],
-"log_8h.html#af600090b2a4aa95b4e9e4dae27bf6c7e":[13,0,29,11]
+"log_8h.html#ad360332e6a9699cdfecdac00f768c0b1":[13,0,29,8]
 };

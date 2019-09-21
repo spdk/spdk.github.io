@@ -75,6 +75,7 @@ var bdev_8h =
     [ "spdk_bdev_get_qos_rpc_type", "bdev_8h.html#a9d79dd7fdd009d8bd1c6bb0161af1ec1", null ],
     [ "spdk_bdev_get_uuid", "bdev_8h.html#add8565cdbf3d57697b67202b869a7beb", null ],
     [ "spdk_bdev_get_weighted_io_time", "bdev_8h.html#a526ab43ba037b8637a23e9d42289884e", null ],
+    [ "spdk_bdev_get_write_unit_size", "bdev_8h.html#ab5775a23cadb2eb1d5381dc105577a37", null ],
     [ "spdk_bdev_has_write_cache", "bdev_8h.html#a93f6d6ce09da384501f09a49581caa37", null ],
     [ "spdk_bdev_histogram_enable", "bdev_8h.html#a0b4556cb07c52ae7b5b7e7f10cbdc637", null ],
     [ "spdk_bdev_histogram_get", "bdev_8h.html#aacf15571883da5a441297b5090e6aaf5", null ],

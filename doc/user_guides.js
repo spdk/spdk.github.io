@@ -172,7 +172,7 @@ var user_guides =
       [ "iSCSI Target", "jsonrpc.html#jsonrpc_components_iscsi_tgt", [
         [ "iscsi_set_options method", "jsonrpc.html#rpc_iscsi_set_options", null ],
         [ "get_iscsi_global_params method", "jsonrpc.html#rpc_get_iscsi_global_params", null ],
-        [ "set_iscsi_discovery_auth method", "jsonrpc.html#rpc_set_iscsi_discovery_auth", null ],
+        [ "iscsi_set_discovery_auth method", "jsonrpc.html#rpc_iscsi_set_discovery_auth", null ],
         [ "add_iscsi_auth_group method", "jsonrpc.html#rpc_add_iscsi_auth_group", [
           [ "secret", "jsonrpc.html#rpc_add_iscsi_auth_group_secret", null ]
         ] ],

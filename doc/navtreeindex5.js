@@ -1,5 +1,6 @@
 var NAVTREEINDEX5 =
 {
+"log_8h.html#af600090b2a4aa95b4e9e4dae27bf6c7e":[13,0,29,11],
 "logical_volumes.html":[5,1],
 "logical_volumes.html#lvol":[5,1,0,1],
 "logical_volumes.html#lvol_bdev":[5,1,0,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX5 =
 "nvme__intel_8h.html#a381eb66ecd7c1b69677ee540da6ae1a2a749fe4d89ff1269649a11c9da424837c":[13,0,35,14,5],
 "nvme__intel_8h.html#a381eb66ecd7c1b69677ee540da6ae1a2a7ae10d4b0594cb65697e621a84368d85":[13,0,35,14,8],
 "nvme__intel_8h.html#a381eb66ecd7c1b69677ee540da6ae1a2a8b58825ac75be3202ac6f5ac49dbcb25":[13,0,35,14,12],
-"nvme__intel_8h.html#a381eb66ecd7c1b69677ee540da6ae1a2a99e3eaa63dfb44a203aa3b8f18ed24d1":[13,0,35,14,3],
-"nvme__intel_8h.html#a381eb66ecd7c1b69677ee540da6ae1a2aa4f50b43c67e5162a5b888c1b736fd93":[13,0,35,14,0]
+"nvme__intel_8h.html#a381eb66ecd7c1b69677ee540da6ae1a2a99e3eaa63dfb44a203aa3b8f18ed24d1":[13,0,35,14,3]
 };

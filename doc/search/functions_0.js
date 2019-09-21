@@ -54,6 +54,7 @@ var searchData=
   ['spdk_5fbdev_5fget_5fqos_5frpc_5ftype',['spdk_bdev_get_qos_rpc_type',['../bdev_8h.html#a9d79dd7fdd009d8bd1c6bb0161af1ec1',1,'bdev.h']]],
   ['spdk_5fbdev_5fget_5fuuid',['spdk_bdev_get_uuid',['../bdev_8h.html#add8565cdbf3d57697b67202b869a7beb',1,'bdev.h']]],
   ['spdk_5fbdev_5fget_5fweighted_5fio_5ftime',['spdk_bdev_get_weighted_io_time',['../bdev_8h.html#a526ab43ba037b8637a23e9d42289884e',1,'bdev.h']]],
+  ['spdk_5fbdev_5fget_5fwrite_5funit_5fsize',['spdk_bdev_get_write_unit_size',['../bdev_8h.html#ab5775a23cadb2eb1d5381dc105577a37',1,'bdev.h']]],
   ['spdk_5fbdev_5fhas_5fwrite_5fcache',['spdk_bdev_has_write_cache',['../bdev_8h.html#a93f6d6ce09da384501f09a49581caa37',1,'bdev.h']]],
   ['spdk_5fbdev_5fhistogram_5fenable',['spdk_bdev_histogram_enable',['../bdev_8h.html#a0b4556cb07c52ae7b5b7e7f10cbdc637',1,'bdev.h']]],
   ['spdk_5fbdev_5fhistogram_5fget',['spdk_bdev_histogram_get',['../bdev_8h.html#aacf15571883da5a441297b5090e6aaf5',1,'bdev.h']]],

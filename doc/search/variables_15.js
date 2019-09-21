@@ -15,6 +15,7 @@ var searchData=
   ['write_5fexclusive',['write_exclusive',['../structspdk__nvme__ns__data.html#a40fd3c4f8d853d8835d958ec1b7d2a90',1,'spdk_nvme_ns_data']]],
   ['write_5fexclusive_5fall_5freg',['write_exclusive_all_reg',['../structspdk__nvme__ns__data.html#a10c7b734c09cfd79d88f4fb4c1ffb666',1,'spdk_nvme_ns_data']]],
   ['write_5fexclusive_5freg_5fonly',['write_exclusive_reg_only',['../structspdk__nvme__ns__data.html#a5d98f39aff9d34ffb633ffeb773a9554',1,'spdk_nvme_ns_data']]],
+  ['write_5funit_5fsize',['write_unit_size',['../structspdk__bdev.html#a1d7dcd12f4c3600eac4dbb202bdb4397',1,'spdk_bdev']]],
   ['write_5fzero_5fdeallocate',['write_zero_deallocate',['../structspdk__nvme__ns__data.html#ae0ed9489f16678899fafd54bec980ccb',1,'spdk_nvme_ns_data']]],
   ['ws_5fmin',['ws_min',['../structspdk__ocssd__geometry__data.html#a0f15dc726bcf4cac33752f0fab8a4e36',1,'spdk_ocssd_geometry_data']]],
   ['ws_5fopt',['ws_opt',['../structspdk__ocssd__geometry__data.html#a3d5ae53da075ef580a641bec35889c3d',1,'spdk_ocssd_geometry_data']]]
