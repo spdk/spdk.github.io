@@ -16,6 +16,24 @@
       "revId": "6713cc8e15fd062ce925dc265a5fa773dbae2d05",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "b177036e_be144bda",
+        "filename": "_posts/2019-09-24-prc_summit_presentations.md",
+        "patchSetId": 3
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 1011207
+      },
+      "writtenOn": "2019-09-25T01:58:28Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "633df6a7_64a71a50",
+      "revId": "6713cc8e15fd062ce925dc265a5fa773dbae2d05",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
     }
   ]
 }
