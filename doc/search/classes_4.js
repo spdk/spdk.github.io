@@ -11,6 +11,7 @@ var searchData=
   ['spdk_5fbdev_5fopts',['spdk_bdev_opts',['../structspdk__bdev__opts.html',1,'']]],
   ['spdk_5fbdev_5fpart',['spdk_bdev_part',['../structspdk__bdev__part.html',1,'']]],
   ['spdk_5fbdev_5fpart_5fchannel',['spdk_bdev_part_channel',['../structspdk__bdev__part__channel.html',1,'']]],
+  ['spdk_5fbdev_5fzone_5finfo',['spdk_bdev_zone_info',['../structspdk__bdev__zone__info.html',1,'']]],
   ['spdk_5fblob_5fopen_5fopts',['spdk_blob_open_opts',['../structspdk__blob__open__opts.html',1,'']]],
   ['spdk_5fblob_5fopts',['spdk_blob_opts',['../structspdk__blob__opts.html',1,'']]],
   ['spdk_5fblob_5fxattr_5fopts',['spdk_blob_xattr_opts',['../structspdk__blob__xattr__opts.html',1,'']]],

@@ -1,14 +1,15 @@
 var searchData=
 [
   ['message_20passing_20and_20concurrency',['Message Passing and Concurrency',['../concurrency.html',1,'concepts']]],
-  ['mask',['mask',['../structspdk__ocssd__chunk__notification__entry.html#a097fa8eeeb8cd97e6d193f804caa3600',1,'spdk_ocssd_chunk_notification_entry']]],
+  ['mask',['mask',['../structspdk__ocssd__chunk__notification__entry.html#ae670b23c95319931c88bf7f67da09fff',1,'spdk_ocssd_chunk_notification_entry']]],
   ['max_5fchannel_5fops',['max_channel_ops',['../structspdk__bs__opts.html#ac5417afa104f5061bab1bfae0769c3a6',1,'spdk_bs_opts']]],
   ['max_5fmd_5fops',['max_md_ops',['../structspdk__bs__opts.html#a63e0b619fedc29159dffd7feca08396b',1,'spdk_bs_opts']]],
+  ['max_5fopen_5fzones',['max_open_zones',['../structspdk__bdev.html#a9766b9a39169827156c768f78b940977',1,'spdk_bdev']]],
   ['maxh2cdata',['maxh2cdata',['../structspdk__nvme__tcp__ic__resp.html#ae19af16d43dd54e43ccfeccd7f6119dc',1,'spdk_nvme_tcp_ic_resp']]],
   ['maxoc',['maxoc',['../structspdk__ocssd__geometry__data.html#adecc1a99d16f94eace12b674c7b7bbfa',1,'spdk_ocssd_geometry_data']]],
   ['maxocpu',['maxocpu',['../structspdk__ocssd__geometry__data.html#a747b543789ad8efcfca1c54faeb95c52',1,'spdk_ocssd_geometry_data']]],
-  ['mc',['mc',['../structspdk__nvme__ns__data.html#af478469bd075ba3287c9f5fdfa8d9017',1,'spdk_nvme_ns_data']]],
-  ['mccap',['mccap',['../structspdk__ocssd__geometry__data.html#aeb0df60a55415e9b85ef052b4847717f',1,'spdk_ocssd_geometry_data']]],
+  ['mc',['mc',['../structspdk__nvme__ns__data.html#a69854a0fa028f9567ca6e7e8efecb1c0',1,'spdk_nvme_ns_data']]],
+  ['mccap',['mccap',['../structspdk__ocssd__geometry__data.html#af8821d3e8de742499b8b77fb17abd5e7',1,'spdk_ocssd_geometry_data']]],
   ['md_5fend',['md_end',['../structspdk__nvme__ns__data.html#ab511e295c151b4d17911e474711168b9',1,'spdk_nvme_ns_data']]],
   ['md_5finterleave',['md_interleave',['../structspdk__bdev.html#a4e68d5fa768ba5d3c8af32e68e1a992c',1,'spdk_bdev::md_interleave()'],['../structspdk__dif__ctx.html#a341adc2959c3449ba630601ebfb14cb9',1,'spdk_dif_ctx::md_interleave()']]],
   ['md_5flen',['md_len',['../structspdk__bdev.html#ab53361e758d7ebe3edec7598f86fa576',1,'spdk_bdev']]],

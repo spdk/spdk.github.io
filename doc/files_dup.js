@@ -5,6 +5,7 @@ var files_dup =
     [ "base64.h", "base64_8h.html", "base64_8h" ],
     [ "bdev.h", "bdev_8h.html", "bdev_8h" ],
     [ "bdev_module.h", "bdev__module_8h.html", "bdev__module_8h" ],
+    [ "bdev_zone.h", "bdev__zone_8h.html", "bdev__zone_8h" ],
     [ "bit_array.h", "bit__array_8h.html", "bit__array_8h" ],
     [ "blob.h", "blob_8h.html", "blob_8h" ],
     [ "blob_bdev.h", "blob__bdev_8h.html", "blob__bdev_8h" ],

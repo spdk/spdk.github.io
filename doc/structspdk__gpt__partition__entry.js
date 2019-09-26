@@ -1,6 +1,6 @@
 var structspdk__gpt__partition__entry =
 [
-    [ "attr", "structspdk__gpt__partition__entry.html#ac2c1f68ae2d3f2d865ad8acf63321407", null ],
+    [ "attr", "structspdk__gpt__partition__entry.html#afe9ab22c78d146ff6a14245d3404e716", null ],
     [ "ending_lba", "structspdk__gpt__partition__entry.html#a3320b98cb8581796faaee58ccc26c4ab", null ],
     [ "guid_specific", "structspdk__gpt__partition__entry.html#a21abaa88f93737d1139db1f75b18e4ca", null ],
     [ "legacy_bios_bootable", "structspdk__gpt__partition__entry.html#aba9bda1cc0f01103da490b738abba2c5", null ],

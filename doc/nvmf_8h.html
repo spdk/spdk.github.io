@@ -205,9 +205,18 @@ Functions</h2></td></tr>
 <tr class="memitem:a21638f4d81002e93d410cd0d267f608c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#a21638f4d81002e93d410cd0d267f608c">spdk_nvmf_tgt_destroy</a> (struct spdk_nvmf_tgt *tgt, spdk_nvmf_tgt_destroy_done_fn cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:a21638f4d81002e93d410cd0d267f608c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy an NVMe-oF target.  <a href="#a21638f4d81002e93d410cd0d267f608c">More...</a><br /></td></tr>
 <tr class="separator:a21638f4d81002e93d410cd0d267f608c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b6882b7cc35f2fe656c8a8c08f9af5a"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#a4b6882b7cc35f2fe656c8a8c08f9af5a">spdk_nvmf_tgt_get_name</a> (struct spdk_nvmf_tgt *tgt)</td></tr>
+<tr class="memdesc:a4b6882b7cc35f2fe656c8a8c08f9af5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the name of an NVMe-oF target.  <a href="#a4b6882b7cc35f2fe656c8a8c08f9af5a">More...</a><br /></td></tr>
+<tr class="separator:a4b6882b7cc35f2fe656c8a8c08f9af5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a43ac2675a2d592cc584ee403b8bb324a"><td class="memItemLeft" align="right" valign="top">struct spdk_nvmf_tgt *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#a43ac2675a2d592cc584ee403b8bb324a">spdk_nvmf_get_tgt</a> (const char *name)</td></tr>
 <tr class="memdesc:a43ac2675a2d592cc584ee403b8bb324a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a pointer to an NVMe-oF target.  <a href="#a43ac2675a2d592cc584ee403b8bb324a">More...</a><br /></td></tr>
 <tr class="separator:a43ac2675a2d592cc584ee403b8bb324a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a306b55570dbe1da898083657d382f6f5"><td class="memItemLeft" align="right" valign="top">struct spdk_nvmf_tgt *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#a306b55570dbe1da898083657d382f6f5">spdk_nvmf_get_first_tgt</a> (void)</td></tr>
+<tr class="memdesc:a306b55570dbe1da898083657d382f6f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the pointer to the first NVMe-oF target.  <a href="#a306b55570dbe1da898083657d382f6f5">More...</a><br /></td></tr>
+<tr class="separator:a306b55570dbe1da898083657d382f6f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1565a46b36efef782d8cee2f8c6489e8"><td class="memItemLeft" align="right" valign="top">struct spdk_nvmf_tgt *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#a1565a46b36efef782d8cee2f8c6489e8">spdk_nvmf_get_next_tgt</a> (struct spdk_nvmf_tgt *prev)</td></tr>
+<tr class="memdesc:a1565a46b36efef782d8cee2f8c6489e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the pointer to the first NVMe-oF target.  <a href="#a1565a46b36efef782d8cee2f8c6489e8">More...</a><br /></td></tr>
+<tr class="separator:a1565a46b36efef782d8cee2f8c6489e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2aad508811686a6d16f3bfd221ba99a9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#a2aad508811686a6d16f3bfd221ba99a9">spdk_nvmf_tgt_write_config_json</a> (struct spdk_json_write_ctx *w, struct spdk_nvmf_tgt *tgt)</td></tr>
 <tr class="memdesc:a2aad508811686a6d16f3bfd221ba99a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write NVMe-oF target configuration into provided JSON context.  <a href="#a2aad508811686a6d16f3bfd221ba99a9">More...</a><br /></td></tr>
 <tr class="separator:a2aad508811686a6d16f3bfd221ba99a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -500,6 +509,56 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="a306b55570dbe1da898083657d382f6f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a306b55570dbe1da898083657d382f6f5">&#9670;&nbsp;</a></span>spdk_nvmf_get_first_tgt()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct spdk_nvmf_tgt* spdk_nvmf_get_first_tgt </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the pointer to the first NVMe-oF target. </p>
+<p>Combined with spdk_nvmf_get_next_tgt to iterate over all available targets.</p>
+<dl class="section return"><dt>Returns</dt><dd>The first NVMe-oF target. </dd></dl>
+
+</div>
+</div>
+<a id="a1565a46b36efef782d8cee2f8c6489e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1565a46b36efef782d8cee2f8c6489e8">&#9670;&nbsp;</a></span>spdk_nvmf_get_next_tgt()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct spdk_nvmf_tgt* spdk_nvmf_get_next_tgt </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_nvmf_tgt *&#160;</td>
+          <td class="paramname"><em>prev</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the pointer to the first NVMe-oF target. </p>
+<p>Combined with spdk_nvmf_get_first_tgt to iterate over all available targets.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">prev</td><td>A pointer to the last NVMe-oF target.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The first NVMe-oF target. </dd></dl>
+
+</div>
+</div>
 <a id="a744188acd6e709ed4bc3f7f98a2230f8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a744188acd6e709ed4bc3f7f98a2230f8">&#9670;&nbsp;</a></span>spdk_nvmf_get_optimal_poll_group()</h2>
 
@@ -2477,6 +2536,33 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>a pointer to the NVMe-oF subsystem on success, or NULL on failure. </dd></dl>
+
+</div>
+</div>
+<a id="a4b6882b7cc35f2fe656c8a8c08f9af5a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b6882b7cc35f2fe656c8a8c08f9af5a">&#9670;&nbsp;</a></span>spdk_nvmf_tgt_get_name()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* spdk_nvmf_tgt_get_name </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_nvmf_tgt *&#160;</td>
+          <td class="paramname"><em>tgt</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the name of an NVMe-oF target. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tgt</td><td>The target from which to get the name.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The name of the target as a null terminated string. </dd></dl>
 
 </div>
 </div>

@@ -30,6 +30,8 @@ var bdev_8h =
       [ "SPDK_BDEV_IO_TYPE_NVME_IO_MD", "bdev_8h.html#a633029e24ab5ae4a689bffa2565a519faaed3a468fd479a2abb44a4c9354e9130", null ],
       [ "SPDK_BDEV_IO_TYPE_WRITE_ZEROES", "bdev_8h.html#a633029e24ab5ae4a689bffa2565a519fafe05a68dda7f3bdfa3d91bab8a92960a", null ],
       [ "SPDK_BDEV_IO_TYPE_ZCOPY", "bdev_8h.html#a633029e24ab5ae4a689bffa2565a519fa6471d47a721be4be33373ff4c36d5246", null ],
+      [ "SPDK_BDEV_IO_TYPE_GET_ZONE_INFO", "bdev_8h.html#a633029e24ab5ae4a689bffa2565a519facabcac1e5a1a6746bf8fe6b488f39f9f", null ],
+      [ "SPDK_BDEV_IO_TYPE_ZONE_MANAGEMENT", "bdev_8h.html#a633029e24ab5ae4a689bffa2565a519fa34ce78290ebe4963c471bf741689c113", null ],
       [ "SPDK_BDEV_NUM_IO_TYPES", "bdev_8h.html#a633029e24ab5ae4a689bffa2565a519fab8b20053cecdcd7973f1c2d0dce2b457", null ]
     ] ],
     [ "spdk_bdev_qos_rate_limit_type", "bdev_8h.html#aedfbfc44fa2113d7ee219d09a0994d93", [
@@ -89,6 +91,7 @@ var bdev_8h =
     [ "spdk_bdev_is_dif_head_of_md", "bdev_8h.html#a4e43a19692e14e5e46b3315e4cf0bc1d", null ],
     [ "spdk_bdev_is_md_interleaved", "bdev_8h.html#aa02f628c6ef7cae08b8b623b4800c74d", null ],
     [ "spdk_bdev_is_md_separate", "bdev_8h.html#ac8c880555f4d66991c1fd9dbd3abaf4f", null ],
+    [ "spdk_bdev_is_zoned", "bdev_8h.html#a2e334778f2dfb469e2f96bcd42c6343b", null ],
     [ "spdk_bdev_next", "bdev_8h.html#aa1c0b9cb8dde1177df3442206cf87d2d", null ],
     [ "spdk_bdev_next_leaf", "bdev_8h.html#a6ae4a6dad6562cdefd3476ec23bfcccb", null ],
     [ "spdk_bdev_nvme_admin_passthru", "group__bdev__io__submit__functions.html#gae2249ef71e7125338b6cebf935a881ab", null ],

@@ -233,6 +233,9 @@ Enumerations</h2></td></tr>
 &#160;&#160;<b>SPDK_BDEV_IO_TYPE_NVME_IO_MD</b>, 
 <b>SPDK_BDEV_IO_TYPE_WRITE_ZEROES</b>, 
 <b>SPDK_BDEV_IO_TYPE_ZCOPY</b>, 
+<b>SPDK_BDEV_IO_TYPE_GET_ZONE_INFO</b>, 
+<br />
+&#160;&#160;<b>SPDK_BDEV_IO_TYPE_ZONE_MANAGEMENT</b>, 
 <b>SPDK_BDEV_NUM_IO_TYPES</b>
 <br />
  }</td></tr>
@@ -348,6 +351,9 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_set_opts</b>
 <tr class="memitem:ac8c880555f4d66991c1fd9dbd3abaf4f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev_8h.html#ac8c880555f4d66991c1fd9dbd3abaf4f">spdk_bdev_is_md_separate</a> (const struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *bdev)</td></tr>
 <tr class="memdesc:ac8c880555f4d66991c1fd9dbd3abaf4f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Query whether metadata is interleaved with block data or separated from block data.  <a href="#ac8c880555f4d66991c1fd9dbd3abaf4f">More...</a><br /></td></tr>
 <tr class="separator:ac8c880555f4d66991c1fd9dbd3abaf4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e334778f2dfb469e2f96bcd42c6343b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev_8h.html#a2e334778f2dfb469e2f96bcd42c6343b">spdk_bdev_is_zoned</a> (const struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *bdev)</td></tr>
+<tr class="memdesc:a2e334778f2dfb469e2f96bcd42c6343b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if bdev supports zoned namespace semantics.  <a href="#a2e334778f2dfb469e2f96bcd42c6343b">More...</a><br /></td></tr>
+<tr class="separator:a2e334778f2dfb469e2f96bcd42c6343b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a84041f3948f91dc0dd0656895970061a"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev_8h.html#a84041f3948f91dc0dd0656895970061a">spdk_bdev_get_data_block_size</a> (const struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *bdev)</td></tr>
 <tr class="memdesc:a84041f3948f91dc0dd0656895970061a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get block device data block size.  <a href="#a84041f3948f91dc0dd0656895970061a">More...</a><br /></td></tr>
 <tr class="separator:a84041f3948f91dc0dd0656895970061a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -2003,6 +2009,33 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_set_opts</b>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if metadata is separated from block data, false otherwise.</dd></dl>
 <p>Note this function is valid only if there is metadata. </p>
+
+</div>
+</div>
+<a id="a2e334778f2dfb469e2f96bcd42c6343b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2e334778f2dfb469e2f96bcd42c6343b">&#9670;&nbsp;</a></span>spdk_bdev_is_zoned()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool spdk_bdev_is_zoned </td>
+          <td>(</td>
+          <td class="paramtype">const struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *&#160;</td>
+          <td class="paramname"><em>bdev</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Checks if bdev supports zoned namespace semantics. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bdev</td><td>Block device to query. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if device supports zoned namespace sementics. </dd></dl>
 
 </div>
 </div>

@@ -4,7 +4,7 @@ var structspdk__nvmf__fabric__connect__rsp =
     [ "cid", "structspdk__nvmf__fabric__connect__rsp.html#a92a43aa49c7941ede56a8d79c80aa309", null ],
     [ "cntlid", "structspdk__nvmf__fabric__connect__rsp.html#a430014082bfce37c4aa6364aca50561b", null ],
     [ "iattr", "structspdk__nvmf__fabric__connect__rsp.html#ab493286c42c84f20252ceb88068fe6b3", null ],
-    [ "invalid", "structspdk__nvmf__fabric__connect__rsp.html#a64d0eaa3117ed6f026f5b7206b1dd55f", null ],
+    [ "invalid", "structspdk__nvmf__fabric__connect__rsp.html#a3226c35d49e8f2e1c9dd6bddb5734de9", null ],
     [ "ipo", "structspdk__nvmf__fabric__connect__rsp.html#a5a48e004f5c8fd7eba5b8a8bf51d3985", null ],
     [ "raw", "structspdk__nvmf__fabric__connect__rsp.html#abc192ed82752821cbbe678d3318379dc", null ],
     [ "reserved", "structspdk__nvmf__fabric__connect__rsp.html#abb372f82df59334c1438b784301dc164", null ],
@@ -12,6 +12,6 @@ var structspdk__nvmf__fabric__connect__rsp =
     [ "reserved1", "structspdk__nvmf__fabric__connect__rsp.html#a0827d76fd8ed0f27bb7ca39597f32ff2", null ],
     [ "sqhd", "structspdk__nvmf__fabric__connect__rsp.html#ae13292d92189ffac9876ac42bb902fa7", null ],
     [ "status", "structspdk__nvmf__fabric__connect__rsp.html#a6d403ab149673ecfffa7c1b1dbe5b6ca", null ],
-    [ "status_code_specific", "structspdk__nvmf__fabric__connect__rsp.html#ac1b2d499eca9ca29a2bcfdee1bb262a4", null ],
-    [ "success", "structspdk__nvmf__fabric__connect__rsp.html#a416af3405e8ca35d0fdec5f87cbb3621", null ]
+    [ "status_code_specific", "structspdk__nvmf__fabric__connect__rsp.html#a129a5e6f698bd1069a66bb5b25ad95f6", null ],
+    [ "success", "structspdk__nvmf__fabric__connect__rsp.html#a6cad78422b7f481d73d13f06e4c91564", null ]
 ];

@@ -285,6 +285,9 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 <li>spdk_bdev_get_io_time()
 : <a class="el" href="bdev_8h.html#a8a082eb89d57860b2e57ebf7f5b3caa2">bdev.h</a>
 </li>
+<li>spdk_bdev_get_max_open_zones()
+: <a class="el" href="bdev__zone_8h.html#a7739e6335f06de1565e50d3afc247aa0">bdev_zone.h</a>
+</li>
 <li>spdk_bdev_get_md_size()
 : <a class="el" href="bdev_8h.html#abc3537d0315100b24da6acc95929e849">bdev.h</a>
 </li>
@@ -296,6 +299,9 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 </li>
 <li>spdk_bdev_get_optimal_io_boundary()
 : <a class="el" href="bdev_8h.html#aa79625889e23318204d235da36a4fa02">bdev.h</a>
+</li>
+<li>spdk_bdev_get_optimal_open_zones()
+: <a class="el" href="bdev__zone_8h.html#aa50981e9f75708e66f7174c96cf396f8">bdev_zone.h</a>
 </li>
 <li>spdk_bdev_get_product_name()
 : <a class="el" href="bdev_8h.html#a1cb4d1f8822c30be8c5d9c5dc3e62483">bdev.h</a>
@@ -320,6 +326,12 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 </li>
 <li>spdk_bdev_get_write_unit_size()
 : <a class="el" href="bdev_8h.html#ab5775a23cadb2eb1d5381dc105577a37">bdev.h</a>
+</li>
+<li>spdk_bdev_get_zone_info()
+: <a class="el" href="group__bdev__io__submit__functions.html#ga01f2a4fd5da187f568381fa3c55f603c">bdev_zone.h</a>
+</li>
+<li>spdk_bdev_get_zone_size()
+: <a class="el" href="bdev__zone_8h.html#ad5e6fcc674d5ebe932e2b2dcaa28f9b5">bdev_zone.h</a>
 </li>
 <li>spdk_bdev_has_write_cache()
 : <a class="el" href="bdev_8h.html#a93f6d6ce09da384501f09a49581caa37">bdev.h</a>
@@ -401,6 +413,9 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 </li>
 <li>spdk_bdev_is_md_separate()
 : <a class="el" href="bdev_8h.html#ac8c880555f4d66991c1fd9dbd3abaf4f">bdev.h</a>
+</li>
+<li>spdk_bdev_is_zoned()
+: <a class="el" href="bdev_8h.html#a2e334778f2dfb469e2f96bcd42c6343b">bdev.h</a>
 </li>
 <li>spdk_bdev_module_claim_bdev()
 : <a class="el" href="bdev__module_8h.html#a43188aae62750556bba04f4ddc81fa94">bdev_module.h</a>
@@ -587,6 +602,9 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 </li>
 <li>spdk_bdev_zcopy_start()
 : <a class="el" href="bdev_8h.html#a917e305a98e4545096ae025be764177c">bdev.h</a>
+</li>
+<li>spdk_bdev_zone_management()
+: <a class="el" href="group__bdev__io__submit__functions.html#ga9220b3c7c3f9591cfdfd73977ee69f91">bdev_zone.h</a>
 </li>
 <li>spdk_bit_array_capacity()
 : <a class="el" href="bit__array_8h.html#a050b7786c57f20a245db5510691f3f23">bit_array.h</a>
@@ -2325,11 +2343,11 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 <li>SPDK_NVME_SGLS_NOT_SUPPORTED
 : <a class="el" href="nvme__spec_8h.html#af3e4102cda177c51a05a6bb02fa62b87a5978d5c7ce04a60c9d86b157037cb2f0">nvme_spec.h</a>
 </li>
-<li>SPDK_NVME_SGLS_SUPPORTED
-: <a class="el" href="nvme__spec_8h.html#af3e4102cda177c51a05a6bb02fa62b87ade9828594ce1d9d11427a38182149d9d">nvme_spec.h</a>
-</li>
 <li>spdk_nvme_sgls_supported
 : <a class="el" href="nvme__spec_8h.html#af3e4102cda177c51a05a6bb02fa62b87">nvme_spec.h</a>
+</li>
+<li>SPDK_NVME_SGLS_SUPPORTED
+: <a class="el" href="nvme__spec_8h.html#af3e4102cda177c51a05a6bb02fa62b87ade9828594ce1d9d11427a38182149d9d">nvme_spec.h</a>
 </li>
 <li>SPDK_NVME_SGLS_SUPPORTED_DWORD_ALIGNED
 : <a class="el" href="nvme__spec_8h.html#af3e4102cda177c51a05a6bb02fa62b87a702868f6b85dd329c4baf00642e99fca">nvme_spec.h</a>
@@ -2444,6 +2462,12 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 </li>
 <li>SPDK_NVMF_CTRLR_MODEL_STATIC
 : <a class="el" href="nvme__spec_8h.html#a2b71fb615deb505826eaeddd093e06bca387c04ba873422f553eec7360e4ea599">nvme_spec.h</a>
+</li>
+<li>spdk_nvmf_get_first_tgt()
+: <a class="el" href="nvmf_8h.html#a306b55570dbe1da898083657d382f6f5">nvmf.h</a>
+</li>
+<li>spdk_nvmf_get_next_tgt()
+: <a class="el" href="nvmf_8h.html#a1565a46b36efef782d8cee2f8c6489e8">nvmf.h</a>
 </li>
 <li>spdk_nvmf_get_optimal_poll_group()
 : <a class="el" href="nvmf_8h.html#a744188acd6e709ed4bc3f7f98a2230f8">nvmf.h</a>
@@ -2660,6 +2684,9 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 </li>
 <li>spdk_nvmf_tgt_find_subsystem()
 : <a class="el" href="nvmf_8h.html#aae62b7fa6ac05a6ad022007f60068d16">nvmf.h</a>
+</li>
+<li>spdk_nvmf_tgt_get_name()
+: <a class="el" href="nvmf_8h.html#a4b6882b7cc35f2fe656c8a8c08f9af5a">nvmf.h</a>
 </li>
 <li>spdk_nvmf_tgt_get_transport()
 : <a class="el" href="nvmf_8h.html#a20b2b976575388f19737df4d435af092">nvmf.h</a>

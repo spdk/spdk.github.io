@@ -10,7 +10,7 @@ var structspdk__ftl__conf =
     [ "max_request_cnt", "structspdk__ftl__conf.html#ab616d5c9c1d384b4bd1c42cabdbc47e2", null ],
     [ "max_request_size", "structspdk__ftl__conf.html#a1f728a4303cf103117d3b1dfbd93d62a", null ],
     [ "num_interleave_units", "structspdk__ftl__conf.html#accce5642e65fa0802f480315ce2d7999", null ],
-    [ "nv_cache", "structspdk__ftl__conf.html#ab2387a8a2997e4cab555671d27141475", null ],
+    [ "nv_cache", "structspdk__ftl__conf.html#aa77e08d7956329898b0c64aa1b137adf", null ],
     [ "rwb_size", "structspdk__ftl__conf.html#af873e1c7d113de72fdf351479442744a", null ],
     [ "user_io_pool_size", "structspdk__ftl__conf.html#a1806a31e7d6c83f86d598e477474c102", null ]
 ];

@@ -10,15 +10,19 @@ var structspdk__bdev =
     [ "dif_type", "structspdk__bdev.html#abcf4e6c5be82c271a681db4b9b2fd427", null ],
     [ "fn_table", "structspdk__bdev.html#a1c3d6e810863f31e2301949bfd1c5d37", null ],
     [ "internal", "structspdk__bdev.html#af79765ae9547cde698fa00a46f7bfa68", null ],
+    [ "max_open_zones", "structspdk__bdev.html#a9766b9a39169827156c768f78b940977", null ],
     [ "md_interleave", "structspdk__bdev.html#a4e68d5fa768ba5d3c8af32e68e1a992c", null ],
     [ "md_len", "structspdk__bdev.html#ab53361e758d7ebe3edec7598f86fa576", null ],
     [ "module", "structspdk__bdev.html#afb6058d0394545714377a60c34682fa0", null ],
     [ "name", "structspdk__bdev.html#ab17e7679c64536f704ed4fe41555a70a", null ],
     [ "optimal_io_boundary", "structspdk__bdev.html#af2dcdd94b1bbfd2709c6040f861819fb", null ],
+    [ "optimal_open_zones", "structspdk__bdev.html#a11b4b1020556bd812c39731b057559f6", null ],
     [ "product_name", "structspdk__bdev.html#ad3abe8a06500954332614d8657eaf1d9", null ],
     [ "required_alignment", "structspdk__bdev.html#a149453df246d04c8640fb567c58a61f0", null ],
     [ "split_on_optimal_io_boundary", "structspdk__bdev.html#a85a794d02620e3e8730bb11791c0c592", null ],
     [ "uuid", "structspdk__bdev.html#a5cc1248944325a12c4cadaa3856f573a", null ],
     [ "write_cache", "structspdk__bdev.html#ac2ccb256340bc2e8b2d6f7793d977c0d", null ],
-    [ "write_unit_size", "structspdk__bdev.html#a1d7dcd12f4c3600eac4dbb202bdb4397", null ]
+    [ "write_unit_size", "structspdk__bdev.html#a1d7dcd12f4c3600eac4dbb202bdb4397", null ],
+    [ "zone_size", "structspdk__bdev.html#a054323b9bb1299a58497ca668d52b5a5", null ],
+    [ "zoned", "structspdk__bdev.html#aba3b4d21418e7f36047040c43d3e5976", null ]
 ];

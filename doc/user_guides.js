@@ -126,7 +126,7 @@ var user_guides =
         [ "thread_get_stats", "jsonrpc.html#rpc_thread_get_stats", null ]
       ] ],
       [ "Block Device Abstraction Layer", "jsonrpc.html#jsonrpc_components_bdev", [
-        [ "set_bdev_options", "jsonrpc.html#rpc_set_bdev_options", null ],
+        [ "bdev_set_options", "jsonrpc.html#rpc_bdev_set_options", null ],
         [ "bdev_get_bdevs", "jsonrpc.html#rpc_bdev_get_bdevs", null ],
         [ "bdev_get_iostat", "jsonrpc.html#rpc_bdev_get_iostat", null ],
         [ "bdev_enable_histogram", "jsonrpc.html#rpc_bdev_enable_histogram", null ],
@@ -171,18 +171,18 @@ var user_guides =
       ] ],
       [ "iSCSI Target", "jsonrpc.html#jsonrpc_components_iscsi_tgt", [
         [ "iscsi_set_options method", "jsonrpc.html#rpc_iscsi_set_options", null ],
-        [ "get_iscsi_global_params method", "jsonrpc.html#rpc_get_iscsi_global_params", null ],
+        [ "iscsi_get_options method", "jsonrpc.html#rpc_iscsi_get_options", null ],
         [ "iscsi_set_discovery_auth method", "jsonrpc.html#rpc_iscsi_set_discovery_auth", null ],
-        [ "add_iscsi_auth_group method", "jsonrpc.html#rpc_add_iscsi_auth_group", [
-          [ "secret", "jsonrpc.html#rpc_add_iscsi_auth_group_secret", null ]
+        [ "iscsi_create_auth_group method", "jsonrpc.html#rpc_iscsi_create_auth_group", [
+          [ "secret", "jsonrpc.html#rpc_iscsi_create_auth_group_secret", null ]
         ] ],
-        [ "delete_iscsi_auth_group method", "jsonrpc.html#rpc_delete_iscsi_auth_group", null ],
-        [ "get_iscsi_auth_groups", "jsonrpc.html#rpc_get_iscsi_auth_groups", null ],
+        [ "iscsi_delete_auth_group method", "jsonrpc.html#rpc_iscsi_delete_auth_group", null ],
+        [ "iscsi_get_auth_groups", "jsonrpc.html#rpc_iscsi_get_auth_groups", null ],
         [ "iscsi_auth_group_add_secret", "jsonrpc.html#rpc_iscsi_auth_group_add_secret", null ],
-        [ "delete_secret_from_iscsi_auth_group", "jsonrpc.html#rpc_delete_secret_from_iscsi_auth_group", null ],
+        [ "iscsi_auth_group_remove_secret", "jsonrpc.html#rpc_iscsi_auth_group_remove_secret", null ],
         [ "iscsi_get_initiator_groups method", "jsonrpc.html#rpc_iscsi_get_initiator_groups", null ],
-        [ "add_initiator_group method", "jsonrpc.html#rpc_add_initiator_group", null ],
-        [ "delete_initiator_group method", "jsonrpc.html#rpc_delete_initiator_group", null ],
+        [ "iscsi_create_initiator_group method", "jsonrpc.html#rpc_iscsi_create_initiator_group", null ],
+        [ "iscsi_delete_initiator_group method", "jsonrpc.html#rpc_iscsi_delete_initiator_group", null ],
         [ "iscsi_initiator_group_add_initiators method", "jsonrpc.html#rpc_iscsi_initiator_group_add_initiators", null ],
         [ "iscsi_get_target_nodes method", "jsonrpc.html#rpc_iscsi_get_target_nodes", null ],
         [ "iscsi_create_target_node method", "jsonrpc.html#rpc_iscsi_create_target_node", null ],
@@ -197,10 +197,12 @@ var user_guides =
         [ "iscsi_target_node_add_lun method", "jsonrpc.html#rpc_iscsi_target_node_add_lun", null ]
       ] ],
       [ "NVMe-oF Target", "jsonrpc.html#jsonrpc_components_nvmf_tgt", [
+        [ "nvmf_create_target method", "jsonrpc.html#rpc_nvmf_create_target", null ],
+        [ "nvmf_delete_target method", "jsonrpc.html#rpc_nvmf_delete_target", null ],
         [ "nvmf_create_transport method", "jsonrpc.html#rpc_nvmf_create_transport", null ],
-        [ "get_nvmf_subsystems method", "jsonrpc.html#rpc_get_nvmf_subsystems", null ],
-        [ "nvmf_subsystem_create method", "jsonrpc.html#rpc_nvmf_subsystem_create", null ],
-        [ "delete_nvmf_subsystem method", "jsonrpc.html#rpc_delete_nvmf_subsystem", null ],
+        [ "nvmf_get_subsystems method", "jsonrpc.html#rpc_nvmf_get_subsystems", null ],
+        [ "nvmf_create_subsystem method", "jsonrpc.html#rpc_nvmf_create_subsystem", null ],
+        [ "nvmf_delete_subsystem method", "jsonrpc.html#rpc_nvmf_delete_subsystem", null ],
         [ "nvmf_subsystem_add_listener  method", "jsonrpc.html#rpc_nvmf_subsystem_add_listener", [
           [ "listen_address", "jsonrpc.html#rpc_nvmf_listen_address", null ]
         ] ],
@@ -250,8 +252,8 @@ var user_guides =
         [ "bdev_raid_get_bdevs", "jsonrpc.html#rpc_bdev_raid_get_bdevs", null ],
         [ "bdev_raid_create", "jsonrpc.html#rpc_bdev_raid_create", null ],
         [ "bdev_raid_delete", "jsonrpc.html#rpc_bdev_raid_delete", null ],
-        [ "get_notification_types", "jsonrpc.html#rpc_get_notification_types", null ],
-        [ "get_notifications", "jsonrpc.html#get_notifications", null ]
+        [ "notify_get_types", "jsonrpc.html#rpc_notify_get_types", null ],
+        [ "notify_get_notifications", "jsonrpc.html#notify_get_notifications", null ]
       ] ],
       [ "Linux Network Block Device (NBD)", "jsonrpc.html#jsonrpc_components_nbd", [
         [ "nbd_start_disk", "jsonrpc.html#rpc_nbd_start_disk", null ],
