@@ -78,6 +78,7 @@ var searchData=
   ['spdk_5fnvme_5fns_5fextended_5flba_5fsupported',['SPDK_NVME_NS_EXTENDED_LBA_SUPPORTED',['../nvme_8h.html#a018f3b986b4345ee0c6931be9718c163a91203896ead47bbe22e9f7db8a63c14f',1,'nvme.h']]],
   ['spdk_5fnvme_5fns_5fflush_5fsupported',['SPDK_NVME_NS_FLUSH_SUPPORTED',['../nvme_8h.html#a018f3b986b4345ee0c6931be9718c163ad403aafc70c00560a1db768029933400',1,'nvme.h']]],
   ['spdk_5fnvme_5fns_5freservation_5fsupported',['SPDK_NVME_NS_RESERVATION_SUPPORTED',['../nvme_8h.html#a018f3b986b4345ee0c6931be9718c163a60edfdee88fbe811250e2f8ff63597d0',1,'nvme.h']]],
+  ['spdk_5fnvme_5fns_5fwrite_5funcorrectable_5fsupported',['SPDK_NVME_NS_WRITE_UNCORRECTABLE_SUPPORTED',['../nvme_8h.html#a018f3b986b4345ee0c6931be9718c163afe42f7e0cdcb93109b55b77cf89efd27',1,'nvme.h']]],
   ['spdk_5fnvme_5fns_5fwrite_5fzeroes_5fsupported',['SPDK_NVME_NS_WRITE_ZEROES_SUPPORTED',['../nvme_8h.html#a018f3b986b4345ee0c6931be9718c163a4e691401f3709b7cd66bd32c28ae109b',1,'nvme.h']]],
   ['spdk_5fnvme_5fsgls_5fnot_5fsupported',['SPDK_NVME_SGLS_NOT_SUPPORTED',['../nvme__spec_8h.html#af3e4102cda177c51a05a6bb02fa62b87a5978d5c7ce04a60c9d86b157037cb2f0',1,'nvme_spec.h']]],
   ['spdk_5fnvme_5fsgls_5fsupported',['SPDK_NVME_SGLS_SUPPORTED',['../nvme__spec_8h.html#af3e4102cda177c51a05a6bb02fa62b87ade9828594ce1d9d11427a38182149d9d',1,'nvme_spec.h']]],

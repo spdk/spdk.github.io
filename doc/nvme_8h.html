@@ -223,7 +223,8 @@ Enumerations</h2></td></tr>
 <a class="el" href="nvme_8h.html#a018f3b986b4345ee0c6931be9718c163a4e691401f3709b7cd66bd32c28ae109b">SPDK_NVME_NS_WRITE_ZEROES_SUPPORTED</a> = 0x8, 
 <br />
 &#160;&#160;<a class="el" href="nvme_8h.html#a018f3b986b4345ee0c6931be9718c163afe158b050528f0f3341e5af3129c61a7">SPDK_NVME_NS_DPS_PI_SUPPORTED</a> = 0x10, 
-<a class="el" href="nvme_8h.html#a018f3b986b4345ee0c6931be9718c163a91203896ead47bbe22e9f7db8a63c14f">SPDK_NVME_NS_EXTENDED_LBA_SUPPORTED</a> = 0x20
+<a class="el" href="nvme_8h.html#a018f3b986b4345ee0c6931be9718c163a91203896ead47bbe22e9f7db8a63c14f">SPDK_NVME_NS_EXTENDED_LBA_SUPPORTED</a> = 0x20, 
+<a class="el" href="nvme_8h.html#a018f3b986b4345ee0c6931be9718c163afe42f7e0cdcb93109b55b77cf89efd27">SPDK_NVME_NS_WRITE_UNCORRECTABLE_SUPPORTED</a> = 0x40
 <br />
  }</td></tr>
 <tr class="memdesc:a018f3b986b4345ee0c6931be9718c163"><td class="mdescLeft">&#160;</td><td class="mdescRight">Namespace command support flags.  <a href="nvme_8h.html#a018f3b986b4345ee0c6931be9718c163">More...</a><br /></td></tr>
@@ -483,6 +484,9 @@ Functions</h2></td></tr>
 <tr class="memitem:af02e8c701c5496f163a69917ad5397dd"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#af02e8c701c5496f163a69917ad5397dd">spdk_nvme_ns_cmd_write_zeroes</a> (struct spdk_nvme_ns *ns, struct spdk_nvme_qpair *qpair, uint64_t lba, uint32_t lba_count, <a class="el" href="nvme_8h.html#ac9779e9957d7089dde8e492cc60856d8">spdk_nvme_cmd_cb</a> cb_fn, void *cb_arg, uint32_t io_flags)</td></tr>
 <tr class="memdesc:af02e8c701c5496f163a69917ad5397dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submit a write zeroes I/O to the specified NVMe namespace.  <a href="#af02e8c701c5496f163a69917ad5397dd">More...</a><br /></td></tr>
 <tr class="separator:af02e8c701c5496f163a69917ad5397dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2f23130b6ebdb7b3e4086545e422e59"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#ab2f23130b6ebdb7b3e4086545e422e59">spdk_nvme_ns_cmd_write_uncorrectable</a> (struct spdk_nvme_ns *ns, struct spdk_nvme_qpair *qpair, uint64_t lba, uint32_t lba_count, <a class="el" href="nvme_8h.html#ac9779e9957d7089dde8e492cc60856d8">spdk_nvme_cmd_cb</a> cb_fn, void *cb_arg)</td></tr>
+<tr class="memdesc:ab2f23130b6ebdb7b3e4086545e422e59"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submit a write uncorrectable I/O to the specified NVMe namespace.  <a href="#ab2f23130b6ebdb7b3e4086545e422e59">More...</a><br /></td></tr>
+<tr class="separator:ab2f23130b6ebdb7b3e4086545e422e59"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a084c6ecb53bd810fbb5051100b79bec5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a084c6ecb53bd810fbb5051100b79bec5">spdk_nvme_ns_cmd_read</a> (struct spdk_nvme_ns *ns, struct spdk_nvme_qpair *qpair, void *payload, uint64_t lba, uint32_t lba_count, <a class="el" href="nvme_8h.html#ac9779e9957d7089dde8e492cc60856d8">spdk_nvme_cmd_cb</a> cb_fn, void *cb_arg, uint32_t io_flags)</td></tr>
 <tr class="memdesc:a084c6ecb53bd810fbb5051100b79bec5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submits a read I/O to the specified NVMe namespace.  <a href="#a084c6ecb53bd810fbb5051100b79bec5">More...</a><br /></td></tr>
 <tr class="separator:a084c6ecb53bd810fbb5051100b79bec5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -787,6 +791,8 @@ Functions</h2></td></tr>
 <tr><td class="fieldname"><a id="a018f3b986b4345ee0c6931be9718c163afe158b050528f0f3341e5af3129c61a7"></a>SPDK_NVME_NS_DPS_PI_SUPPORTED&#160;</td><td class="fielddoc"><p>The end-to-end data protection is supported. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a018f3b986b4345ee0c6931be9718c163a91203896ead47bbe22e9f7db8a63c14f"></a>SPDK_NVME_NS_EXTENDED_LBA_SUPPORTED&#160;</td><td class="fielddoc"><p>The extended lba format is supported, metadata is transferred as a contiguous part of the logical block that it is associated with. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a018f3b986b4345ee0c6931be9718c163afe42f7e0cdcb93109b55b77cf89efd27"></a>SPDK_NVME_NS_WRITE_UNCORRECTABLE_SUPPORTED&#160;</td><td class="fielddoc"><p>The write uncorrectable command is supported. </p>
 </td></tr>
 </table>
 
@@ -4322,6 +4328,73 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 if successfully submitted, negated errno if an nvme_request structure cannot be allocated for the I/O request </dd></dl>
+
+</div>
+</div>
+<a id="ab2f23130b6ebdb7b3e4086545e422e59"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab2f23130b6ebdb7b3e4086545e422e59">&#9670;&nbsp;</a></span>spdk_nvme_ns_cmd_write_uncorrectable()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_nvme_ns_cmd_write_uncorrectable </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_nvme_ns *&#160;</td>
+          <td class="paramname"><em>ns</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct spdk_nvme_qpair *&#160;</td>
+          <td class="paramname"><em>qpair</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>lba</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>lba_count</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="nvme_8h.html#ac9779e9957d7089dde8e492cc60856d8">spdk_nvme_cmd_cb</a>&#160;</td>
+          <td class="paramname"><em>cb_fn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>cb_arg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Submit a write uncorrectable I/O to the specified NVMe namespace. </p>
+<p>The command is submitted to a qpair allocated by <a class="el" href="nvme_8h.html#a13f745d239dab9b8f934fae2ad4984a2" title="Allocate an I/O queue pair (submission and completion queue). ">spdk_nvme_ctrlr_alloc_io_qpair()</a>. The user must ensure that only one thread submits I/O on a given qpair at any given time.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ns</td><td>NVMe namespace to submit the write uncorrectable I/O. </td></tr>
+    <tr><td class="paramname">qpair</td><td>I/O queue pair to submit the request. </td></tr>
+    <tr><td class="paramname">lba</td><td>Starting LBA for this command. </td></tr>
+    <tr><td class="paramname">lba_count</td><td>Length (in sectors) for the write uncorrectable operation. </td></tr>
+    <tr><td class="paramname">cb_fn</td><td>Callback function to invoke when the I/O is completed. </td></tr>
+    <tr><td class="paramname">cb_arg</td><td>Argument to pass to the callback function.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 if successfully submitted, negated errno if an nvme_request structure cannot be allocated for the I/O request. </dd></dl>
 
 </div>
 </div>

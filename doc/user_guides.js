@@ -116,7 +116,7 @@ var user_guides =
         ] ]
       ] ],
       [ "App Framework", "jsonrpc.html#jsonrpc_components_app", [
-        [ "kill_instance", "jsonrpc.html#rpc_kill_instance", null ],
+        [ "spdk_kill_instance", "jsonrpc.html#rpc_spdk_kill_instance", null ],
         [ "context_switch_monitor", "jsonrpc.html#rpc_context_switch_monitor", null ],
         [ "start_subsystem_init", "jsonrpc.html#rpc_start_subsystem_init", null ],
         [ "wait_subsystem_init", "jsonrpc.html#rpc_wait_subsystem_init", null ],
@@ -197,8 +197,6 @@ var user_guides =
         [ "iscsi_target_node_add_lun method", "jsonrpc.html#rpc_iscsi_target_node_add_lun", null ]
       ] ],
       [ "NVMe-oF Target", "jsonrpc.html#jsonrpc_components_nvmf_tgt", [
-        [ "nvmf_create_target method", "jsonrpc.html#rpc_nvmf_create_target", null ],
-        [ "nvmf_delete_target method", "jsonrpc.html#rpc_nvmf_delete_target", null ],
         [ "nvmf_create_transport method", "jsonrpc.html#rpc_nvmf_create_transport", null ],
         [ "nvmf_get_subsystems method", "jsonrpc.html#rpc_nvmf_get_subsystems", null ],
         [ "nvmf_create_subsystem method", "jsonrpc.html#rpc_nvmf_create_subsystem", null ],
@@ -213,9 +211,9 @@ var user_guides =
         [ "nvmf_subsystem_add_host method", "jsonrpc.html#rpc_nvmf_subsystem_add_host", null ],
         [ "nvmf_subsystem_remove_host method", "jsonrpc.html#rpc_nvmf_subsystem_remove_host", null ],
         [ "nvmf_subsystem_allow_any_host method", "jsonrpc.html#rpc_nvmf_subsystem_allow_any_host", null ],
-        [ "set_nvmf_target_max_subsystems", "jsonrpc.html#rpc_set_nvmf_target_max_subsystems", null ],
-        [ "set_nvmf_target_config", "jsonrpc.html#rpc_set_nvmf_target_config", null ],
-        [ "get_nvmf_transports method", "jsonrpc.html#rpc_get_nvmf_transports", null ],
+        [ "nvmf_set_max_subsystems", "jsonrpc.html#rpc_nvmf_set_max_subsystems", null ],
+        [ "nvmf_set_config", "jsonrpc.html#rpc_nvmf_set_config", null ],
+        [ "nvmf_get_transports method", "jsonrpc.html#rpc_nvmf_get_transports", null ],
         [ "nvmf_get_stats method", "jsonrpc.html#rpc_nvmf_get_stats", null ]
       ] ],
       [ "Vhost Target", "jsonrpc.html#jsonrpc_components_vhost_tgt", [
@@ -260,7 +258,7 @@ var user_guides =
         [ "nbd_stop_disk", "jsonrpc.html#rpc_nbd_stop_disk", null ],
         [ "nbd_get_disks", "jsonrpc.html#rpc_nbd_get_disks", null ],
         [ "bdev_nvme_send_cmd", "jsonrpc.html#rpc_bdev_nvme_send_cmd", null ],
-        [ "get_spdk_version", "jsonrpc.html#rpc_get_spdk_version", null ]
+        [ "spdk_get_version", "jsonrpc.html#rpc_spdk_get_version", null ]
       ] ]
     ] ],
     [ "JSON-RPC Remote access", "jsonrpc_proxy.html", null ]
