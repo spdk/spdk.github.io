@@ -68,3 +68,4 @@ helping make SPDK more secure.
 ## Threat Models by Use Case
 
 * [Use Case: Integrate NVMe Driver](https://dqtibwqq6s6ux.cloudfront.net/download/threat_models/NVMe-Threat-Model.pdf)
+* [Use Case: NVMe-oF target]
