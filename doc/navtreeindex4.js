@@ -182,6 +182,7 @@ var NAVTREEINDEX4 =
 "jsonrpc.html#rpc_iscsi_get_portal_groups":[3,7,3,18],
 "jsonrpc.html#rpc_iscsi_get_target_nodes":[3,7,3,12],
 "jsonrpc.html#rpc_iscsi_initiator_group_add_initiators":[3,7,3,11],
+"jsonrpc.html#rpc_iscsi_portal_group_set_auth":[3,7,3,20,0],
 "jsonrpc.html#rpc_iscsi_set_discovery_auth":[3,7,3,2],
 "jsonrpc.html#rpc_iscsi_set_options":[3,7,3,0],
 "jsonrpc.html#rpc_iscsi_target_node_add_lun":[3,7,3,22],
@@ -248,6 +249,5 @@ var NAVTREEINDEX4 =
 "jsonrpc_8h.html#ae7d1dc3ef99ed408859d9a5f6802ad65":[13,0,28,26],
 "jsonrpc_8h.html#af3d607f5a980bf9eb793ef2b553f679a":[13,0,28,23],
 "jsonrpc_proxy.html":[3,8],
-"likely_8h.html":[13,0,29],
-"likely_8h.html#a568e75eb7097ecf9ea2c735abc9f5844":[13,0,29,0]
+"likely_8h.html":[13,0,29]
 };

@@ -192,7 +192,9 @@ var user_guides =
         [ "delete_target_node method", "jsonrpc.html#rpc_delete_target_node", null ],
         [ "iscsi_get_portal_groups method", "jsonrpc.html#rpc_iscsi_get_portal_groups", null ],
         [ "iscsi_create_portal_group method", "jsonrpc.html#rpc_iscsi_create_portal_group", null ],
-        [ "iscsi_delete_portal_group method", "jsonrpc.html#rpc_iscsi_delete_portal_group", null ],
+        [ "iscsi_delete_portal_group method", "jsonrpc.html#rpc_iscsi_delete_portal_group", [
+          [ "iscsi_portal_group_set_auth method", "jsonrpc.html#rpc_iscsi_portal_group_set_auth", null ]
+        ] ],
         [ "iscsi_get_connections method", "jsonrpc.html#rpc_iscsi_get_connections", null ],
         [ "iscsi_target_node_add_lun method", "jsonrpc.html#rpc_iscsi_target_node_add_lun", null ]
       ] ],

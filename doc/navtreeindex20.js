@@ -1,5 +1,6 @@
 var NAVTREEINDEX20 =
 {
+"structspdk__pci__id.html#a39d3b6cf5257c8a8b344bf5e8687eadc":[12,0,233,0],
 "structspdk__pci__id.html#ae1f6dd7e42b4203d397b154fe1af2ed8":[12,0,233,3],
 "structspdk__pci__id.html#aedf53a294bbe914233d7ba3f00b20874":[12,0,233,1],
 "structspdk__reduce__backing__dev.html":[12,0,234],
@@ -248,6 +249,5 @@ var NAVTREEINDEX20 =
 "structspdk__uuid.html":[12,0,265],
 "structspdk__uuid.html#a6dd33f46f356703cbce843c6b19dd526":[12,0,265,1],
 "structspdk__uuid.html#a8a218370dc61ebfb25175b124febe10d":[12,0,265,0],
-"system_configuration.html":[3,0],
-"system_configuration.html#iommu_config":[3,0,0]
+"system_configuration.html":[3,0]
 };
