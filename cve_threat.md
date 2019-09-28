@@ -7,7 +7,8 @@ title:  "SPDK Common Vulnerabilities and Exposures (CVE) Process"
 
 * [CVE Process](#cve)
 * [Threat Modeling](#threat)
-* [Use Case: Integrate NVMe Driver](#nvmeuse)
+* [Use Case: Integrate NVMe Driver](#usecase)
+* [Use Case: NVMe over Fabrics Target](#usecase)
 
 <a id="cve"></a>
 ## Common Vulnerabilities and Exposures (CVE) Process
@@ -64,7 +65,8 @@ The community will hold hack-fests periodically, either at summits or developer 
 a use case and asked to find vulnerabilities based on the threat modeling. It will be a fun and interactive way of
 helping make SPDK more secure.
 
-<a id="nvmeuse"></a>
+<a id="usecase"></a>
 ## Threat Models by Use Case
 
 * [Use Case: Integrate NVMe Driver](https://dqtibwqq6s6ux.cloudfront.net/download/threat_models/NVMe-Threat-Model.pdf)
+* [Use Case: NVMe-oF target](https://dqtibwqq6s6ux.cloudfront.net/download/threat_models/NVMe-oF-Target-Threat-Model.pdf)
