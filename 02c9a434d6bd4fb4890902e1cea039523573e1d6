@@ -1,0 +1,119 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5040491a_d943ddaa",
+        "filename": "cn/debug_tip.md",
+        "patchSetId": 9
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 1011275
+      },
+      "writtenOn": "2019-09-30T17:07:04Z",
+      "side": 1,
+      "message": ";",
+      "range": {
+        "startLine": 15,
+        "startChar": 83,
+        "endLine": 15,
+        "endChar": 84
+      },
+      "revId": "02c9a434d6bd4fb4890902e1cea039523573e1d6",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "83371f9c_a9520619",
+        "filename": "cn/debug_tip.md",
+        "patchSetId": 9
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 1011275
+      },
+      "writtenOn": "2019-09-30T17:07:04Z",
+      "side": 1,
+      "message": "测试结果",
+      "range": {
+        "startLine": 17,
+        "startChar": 365,
+        "endLine": 17,
+        "endChar": 368
+      },
+      "revId": "02c9a434d6bd4fb4890902e1cea039523573e1d6",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "6c2f5846_808ab403",
+        "filename": "cn/debug_tip.md",
+        "patchSetId": 9
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 1011275
+      },
+      "writtenOn": "2019-09-30T17:07:04Z",
+      "side": 1,
+      "message": "触发",
+      "range": {
+        "startLine": 24,
+        "startChar": 170,
+        "endLine": 24,
+        "endChar": 172
+      },
+      "revId": "02c9a434d6bd4fb4890902e1cea039523573e1d6",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "6df6cf13_69a4cb81",
+        "filename": "cn/debug_tip.md",
+        "patchSetId": 9
+      },
+      "lineNbr": 62,
+      "author": {
+        "id": 1011275
+      },
+      "writtenOn": "2019-09-30T17:07:04Z",
+      "side": 1,
+      "message": "需要在提一个linux的配置。比如linux系统需要设置： echo \u0027core.%p\u0027 \u003e /proc/sys/kernel/core_pattern 来enable coredump file",
+      "range": {
+        "startLine": 62,
+        "startChar": 0,
+        "endLine": 62,
+        "endChar": 93
+      },
+      "revId": "02c9a434d6bd4fb4890902e1cea039523573e1d6",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "0fe24a0a_e5f71ea2",
+        "filename": "debug_tip.md",
+        "patchSetId": 9
+      },
+      "lineNbr": 61,
+      "author": {
+        "id": 1011275
+      },
+      "writtenOn": "2019-09-30T17:07:04Z",
+      "side": 1,
+      "message": "As mentioned in the Chinese word page, you need also mention how to enable coredump in linux.",
+      "range": {
+        "startLine": 61,
+        "startChar": 0,
+        "endLine": 61,
+        "endChar": 22
+      },
+      "revId": "02c9a434d6bd4fb4890902e1cea039523573e1d6",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    }
+  ]
+}
