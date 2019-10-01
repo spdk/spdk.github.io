@@ -117,9 +117,9 @@ var user_guides =
       ] ],
       [ "App Framework", "jsonrpc.html#jsonrpc_components_app", [
         [ "spdk_kill_instance", "jsonrpc.html#rpc_spdk_kill_instance", null ],
-        [ "context_switch_monitor", "jsonrpc.html#rpc_context_switch_monitor", null ],
-        [ "start_subsystem_init", "jsonrpc.html#rpc_start_subsystem_init", null ],
-        [ "wait_subsystem_init", "jsonrpc.html#rpc_wait_subsystem_init", null ],
+        [ "framework_monitor_context_switch", "jsonrpc.html#rpc_framework_monitor_context_switch", null ],
+        [ "framework_start_init", "jsonrpc.html#rpc_framework_start_init", null ],
+        [ "framework_wait_init", "jsonrpc.html#rpc_framework_wait_init", null ],
         [ "rpc_get_methods", "jsonrpc.html#rpc_rpc_get_methods", null ],
         [ "get_subsystems", "jsonrpc.html#rpc_get_subsystems", null ],
         [ "get_subsystem_config", "jsonrpc.html#rpc_get_subsystem_config", null ],
