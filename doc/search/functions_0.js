@@ -136,6 +136,8 @@ var searchData=
   ['spdk_5fbdev_5fwritev_5fblocks_5fwith_5fmd',['spdk_bdev_writev_blocks_with_md',['../group__bdev__io__submit__functions.html#ga635944e7a651c01ecf5d808f988d138d',1,'bdev.h']]],
   ['spdk_5fbdev_5fzcopy_5fend',['spdk_bdev_zcopy_end',['../bdev_8h.html#ac432e059187b2dee62418354664e87c2',1,'bdev.h']]],
   ['spdk_5fbdev_5fzcopy_5fstart',['spdk_bdev_zcopy_start',['../bdev_8h.html#a917e305a98e4545096ae025be764177c',1,'bdev.h']]],
+  ['spdk_5fbdev_5fzone_5fappend',['spdk_bdev_zone_append',['../group__bdev__io__submit__functions.html#ga17d6c2c7f25d21c5d2cdfb6e187e2033',1,'bdev_zone.h']]],
+  ['spdk_5fbdev_5fzone_5fappend_5fwith_5fmd',['spdk_bdev_zone_append_with_md',['../group__bdev__io__submit__functions.html#gab8a2fd5a40daa3d36c15b3f92c9a81a7',1,'bdev_zone.h']]],
   ['spdk_5fbdev_5fzone_5fmanagement',['spdk_bdev_zone_management',['../group__bdev__io__submit__functions.html#ga9220b3c7c3f9591cfdfd73977ee69f91',1,'bdev_zone.h']]],
   ['spdk_5fbit_5farray_5fcapacity',['spdk_bit_array_capacity',['../bit__array_8h.html#a050b7786c57f20a245db5510691f3f23',1,'bit_array.h']]],
   ['spdk_5fbit_5farray_5fclear',['spdk_bit_array_clear',['../bit__array_8h.html#a64d5256695898daf0b9403c54c47da04',1,'bit_array.h']]],

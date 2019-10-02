@@ -1,5 +1,10 @@
 var NAVTREEINDEX4 =
 {
+"iscsi__spec_8h.html#af6b4af2bfcecc7351955c4cd89e1e775":[13,0,26,44],
+"iscsi__spec_8h.html#afa03843ca64676b995bf1abe55713228":[13,0,26,96],
+"iscsi__spec_8h.html#afc1399a96e2809ab9bc4f0bb040a1c67":[13,0,26,71],
+"iscsi__spec_8h.html#afc8398dd60d41f2be91516402ff50704":[13,0,26,40],
+"iscsi__spec_8h.html#afe99d10120365a28ddbdee6f0d09abd7":[13,0,26,65],
 "iscsi__spec_8h.html#aff110ee78d96f5b484fa7ce91a71f96c":[13,0,26,52],
 "json_8h.html":[13,0,27],
 "json_8h.html#a01e5f7c9397f496f580d63c2735d280c":[13,0,27,14],
@@ -155,12 +160,11 @@ var NAVTREEINDEX4 =
 "jsonrpc.html#rpc_construct_vhost_nvme_controller":[3,7,5,4],
 "jsonrpc.html#rpc_construct_vhost_scsi_controller":[3,7,5,1],
 "jsonrpc.html#rpc_delete_nvme_controller":[3,7,2,20],
-"jsonrpc.html#rpc_delete_target_node":[3,7,3,17],
+"jsonrpc.html#rpc_framework_get_config":[3,7,1,6],
+"jsonrpc.html#rpc_framework_get_subsystems":[3,7,1,5],
 "jsonrpc.html#rpc_framework_monitor_context_switch":[3,7,1,1],
 "jsonrpc.html#rpc_framework_start_init":[3,7,1,2],
 "jsonrpc.html#rpc_framework_wait_init":[3,7,1,3],
-"jsonrpc.html#rpc_get_subsystem_config":[3,7,1,6],
-"jsonrpc.html#rpc_get_subsystems":[3,7,1,5],
 "jsonrpc.html#rpc_get_vhost_controllers":[3,7,5,7],
 "jsonrpc.html#rpc_get_vhost_controllers_blk":[3,7,5,7,1],
 "jsonrpc.html#rpc_get_vhost_controllers_nvme":[3,7,5,7,4],
@@ -177,6 +181,7 @@ var NAVTREEINDEX4 =
 "jsonrpc.html#rpc_iscsi_delete_auth_group":[3,7,3,4],
 "jsonrpc.html#rpc_iscsi_delete_initiator_group":[3,7,3,10],
 "jsonrpc.html#rpc_iscsi_delete_portal_group":[3,7,3,20],
+"jsonrpc.html#rpc_iscsi_delete_target_node":[3,7,3,17],
 "jsonrpc.html#rpc_iscsi_get_auth_groups":[3,7,3,5],
 "jsonrpc.html#rpc_iscsi_get_connections":[3,7,3,21],
 "jsonrpc.html#rpc_iscsi_get_initiator_groups":[3,7,3,8],
@@ -244,10 +249,5 @@ var NAVTREEINDEX4 =
 "jsonrpc_8h.html#ac5daba7e52db2743cc95dba00534ecd1":[13,0,28,6],
 "jsonrpc_8h.html#acdbb193a4b8ca1c57c2b43223165dfa6":[13,0,28,16],
 "jsonrpc_8h.html#ad5f5cca3e578e6eb3c0069e9662a1b79":[13,0,28,12],
-"jsonrpc_8h.html#adf8426aab51d139cff1597b5c4cf37e3":[13,0,28,8],
-"jsonrpc_8h.html#ae48bc3b476636afa0c58f7fd36cdc7d1":[13,0,28,3],
-"jsonrpc_8h.html#ae7d1dc3ef99ed408859d9a5f6802ad65":[13,0,28,26],
-"jsonrpc_8h.html#af3d607f5a980bf9eb793ef2b553f679a":[13,0,28,23],
-"jsonrpc_proxy.html":[3,8],
-"likely_8h.html":[13,0,29]
+"jsonrpc_8h.html#adf8426aab51d139cff1597b5c4cf37e3":[13,0,28,8]
 };

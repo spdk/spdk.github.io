@@ -32,6 +32,7 @@ var bdev_8h =
       [ "SPDK_BDEV_IO_TYPE_ZCOPY", "bdev_8h.html#a633029e24ab5ae4a689bffa2565a519fa6471d47a721be4be33373ff4c36d5246", null ],
       [ "SPDK_BDEV_IO_TYPE_GET_ZONE_INFO", "bdev_8h.html#a633029e24ab5ae4a689bffa2565a519facabcac1e5a1a6746bf8fe6b488f39f9f", null ],
       [ "SPDK_BDEV_IO_TYPE_ZONE_MANAGEMENT", "bdev_8h.html#a633029e24ab5ae4a689bffa2565a519fa34ce78290ebe4963c471bf741689c113", null ],
+      [ "SPDK_BDEV_IO_TYPE_ZONE_APPEND", "bdev_8h.html#a633029e24ab5ae4a689bffa2565a519fa0be425e7142d2e0adedd4a883ef0dc0f", null ],
       [ "SPDK_BDEV_NUM_IO_TYPES", "bdev_8h.html#a633029e24ab5ae4a689bffa2565a519fab8b20053cecdcd7973f1c2d0dce2b457", null ]
     ] ],
     [ "spdk_bdev_qos_rate_limit_type", "bdev_8h.html#aedfbfc44fa2113d7ee219d09a0994d93", [

@@ -121,8 +121,8 @@ var user_guides =
         [ "framework_start_init", "jsonrpc.html#rpc_framework_start_init", null ],
         [ "framework_wait_init", "jsonrpc.html#rpc_framework_wait_init", null ],
         [ "rpc_get_methods", "jsonrpc.html#rpc_rpc_get_methods", null ],
-        [ "get_subsystems", "jsonrpc.html#rpc_get_subsystems", null ],
-        [ "get_subsystem_config", "jsonrpc.html#rpc_get_subsystem_config", null ],
+        [ "framework_get_subsystems", "jsonrpc.html#rpc_framework_get_subsystems", null ],
+        [ "framework_get_config", "jsonrpc.html#rpc_framework_get_config", null ],
         [ "thread_get_stats", "jsonrpc.html#rpc_thread_get_stats", null ]
       ] ],
       [ "Block Device Abstraction Layer", "jsonrpc.html#jsonrpc_components_bdev", [
@@ -189,7 +189,7 @@ var user_guides =
         [ "iscsi_target_node_set_auth method", "jsonrpc.html#rpc_iscsi_target_node_set_auth", null ],
         [ "iscsi_target_node_add_pg_ig_maps method", "jsonrpc.html#rpc_iscsi_target_node_add_pg_ig_maps", null ],
         [ "iscsi_target_node_remove_pg_ig_maps method", "jsonrpc.html#rpc_iscsi_target_node_remove_pg_ig_maps", null ],
-        [ "delete_target_node method", "jsonrpc.html#rpc_delete_target_node", null ],
+        [ "iscsi_delete_target_node method", "jsonrpc.html#rpc_iscsi_delete_target_node", null ],
         [ "iscsi_get_portal_groups method", "jsonrpc.html#rpc_iscsi_get_portal_groups", null ],
         [ "iscsi_create_portal_group method", "jsonrpc.html#rpc_iscsi_create_portal_group", null ],
         [ "iscsi_delete_portal_group method", "jsonrpc.html#rpc_iscsi_delete_portal_group", [
