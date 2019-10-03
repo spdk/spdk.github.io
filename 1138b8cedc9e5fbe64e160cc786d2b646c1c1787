@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "6e829ca4_a93c645f",
+        "filename": "cve_threat.md",
+        "patchSetId": 3
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 1011289
+      },
+      "writtenOn": "2019-10-03T14:30:50Z",
+      "side": 1,
+      "message": "Please add a link to your use case here and sue the same internal link as mine. I probably should have names it #usecases but no big deal, its just an internal link",
+      "revId": "1138b8cedc9e5fbe64e160cc786d2b646c1c1787",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    }
+  ]
+}
