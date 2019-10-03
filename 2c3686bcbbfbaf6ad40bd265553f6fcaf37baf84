@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "036c50d8_62358a2f",
+        "filename": "cve_threat.md",
+        "patchSetId": 5
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 1011275
+      },
+      "writtenOn": "2019-10-03T17:54:58Z",
+      "side": 1,
+      "message": "Thanks Paul. I updated with the new patch",
+      "parentUuid": "3dc9a4e1_05e8d48e",
+      "revId": "2c3686bcbbfbaf6ad40bd265553f6fcaf37baf84",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "92b094c4_51d08fd6",
         "filename": "cve_threat.md",
         "patchSetId": 5
