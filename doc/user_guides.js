@@ -219,7 +219,7 @@ var user_guides =
         [ "nvmf_get_stats method", "jsonrpc.html#rpc_nvmf_get_stats", null ]
       ] ],
       [ "Vhost Target", "jsonrpc.html#jsonrpc_components_vhost_tgt", [
-        [ "set_vhost_controller_coalescing", "jsonrpc.html#rpc_set_vhost_controller_coalescing", null ],
+        [ "vhost_controller_set_coalescing", "jsonrpc.html#rpc_vhost_controller_set_coalescing", null ],
         [ "construct_vhost_scsi_controller", "jsonrpc.html#rpc_construct_vhost_scsi_controller", null ],
         [ "add_vhost_scsi_lun", "jsonrpc.html#rpc_add_vhost_scsi_lun", null ],
         [ "remove_vhost_scsi_target", "jsonrpc.html#rpc_remove_vhost_scsi_target", null ],
@@ -233,7 +233,7 @@ var user_guides =
           [ "Vhost SCSI LUN", "jsonrpc.html#rpc_get_vhost_controllers_scsi_luns", null ],
           [ "Vhost NVMe", "jsonrpc.html#rpc_get_vhost_controllers_nvme", null ]
         ] ],
-        [ "remove_vhost_controller", "jsonrpc.html#rpc_remove_vhost_controller", null ]
+        [ "vhost_delete_controller", "jsonrpc.html#rpc_vhost_delete_controller", null ]
       ] ],
       [ "Logical Volume", "jsonrpc.html#jsonrpc_components_lvol", [
         [ "bdev_lvol_create_lvstore", "jsonrpc.html#rpc_bdev_lvol_create_lvstore", null ],
