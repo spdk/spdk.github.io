@@ -6,7 +6,7 @@ jsfiles: js/meetings.js
 
 # Slack
 
-For real-time discussions, join us on [Slack](https://join.slack.com/t/spdk-team/shared_invite/enQtNjM0NDcxNzQyNzM3LWQ3M2FjZDgzMmU5MjkyZWU5MDRhMGZkNGY3ZjM1YjhhODkyZmRkYWNjODk1YTdiZDMxNzJjNzc0NTEyMTVhYTM).
+For real-time discussions, join us on [Slack](https://join.slack.com/t/spdk-team/shared_invite/enQtNzg2NTgxNTgzNzEyLWQ2Y2NmOGFkN2FlYjczMWY1ZDZiMzFjZTI4ZGIyZDc0YTA3ZjE5YWQ3MGVjYzI1MTg0OGYzMjFhZDczZDYwZmY).
 
 # Trello Board
 
