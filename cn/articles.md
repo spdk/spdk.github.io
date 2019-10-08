@@ -6,6 +6,10 @@ lang: cn
 
 **SPDK总体技术介绍**
 
+* [SPDK线程模型解析](https://mp.weixin.qq.com/s?__biz=MzI3NDA4ODY4MA==&mid=2653336301&idx=1&sn=893bceb88d7e775863ebc006e83f5532&chksm=f0cb456ac7bccc7cb720366f69941164e4e80cd5ceaef33bcbe16e7c761046aadc6e7137e4d7&token=1179202807&lang=zh_CN#rd)
+
+* [试试SPDK的trace](https://mp.weixin.qq.com/s?__biz=MzI3NDA4ODY4MA==&mid=2653336410&idx=1&sn=cbbb7a0e19b3322e16c3592959d1ec55&chksm=f0cb44ddc7bccdcbc45664d5c7dd63ef859c7871bd5867a2745b697280d36e84cb2dc61573f1&token=1179202807&lang=zh_CN#rd)
+
 * [SPDK: 单线程存储性能达到1039万IOPS](https://mp.weixin.qq.com/s?__biz=MzI3NDA4ODY4MA==&mid=2653335692&idx=1&sn=d76ec8f74b91759521fab28028d3989d&chksm=f0cb470bc7bcce1dd68e1710902763a0c331137453ba1458e86909f0612a4a6af3d534a3badb&token=155709156&lang=zh_CN#rd:)
 
 * [打造用户态存储利器，基于SPDK的存储引擎Blobstore & BlobFS](https://mp.weixin.qq.com/s/jiS3jUNLeL0XzcljF8OhQA)
@@ -65,6 +69,8 @@ lang: cn
 ******
 
 **SPDK和其他软件库的深度整合**
+
+* [信息安全如此重要，国密算法（SM3）终于支持](https://mp.weixin.qq.com/s?__biz=MzI3NDA4ODY4MA==&mid=2653336190&idx=1&sn=c564135f2135d128d5ee04dccdd3180c&chksm=f0cb45f9c7bcccefcfa3663a7cb412d54ed3a82ab18de896ea579ed17e3af64c8e8a0d642001&token=1179202807&lang=zh_CN#rd)
 
 * [缓存助力存储加速–OCF与SPDK介绍及用法](https://mp.weixin.qq.com/s?__biz=MzI3NDA4ODY4MA==&mid=2653335424&idx=1&sn=0f4dfc6c884cea4780c016902dab59e8&chksm=f0cb5807c7bcd111a815ded1bab1dd8260167c59eab71ba729e27ec1f76b266e23b5f1a08bf2&token=1477511457&lang=zh_CN#rd)
 
