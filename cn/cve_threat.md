@@ -7,7 +7,8 @@ title:  "SPDK常见漏洞与曝光(CVE)流程"
 
 * [CVE流程](#cve)
 * [威胁建模](#threat)
-* [案例：集成NVMe驱动](#nvmeuse)
+* [案例：集成NVMe驱动](#usecase)
+* [案例：NVMe over Fabrics Target](#usecase)
 
 <a id="cve"></a>
 ## 常见漏洞与曝光(CVE)流程
@@ -47,7 +48,8 @@ CVE小组成员联系方式：
 
 社区将定期举行hack-fests，无论是在峰会还是开发者聚会上，开发人员都会获得一个用例，并要求根据威胁建模查找漏洞。这将是一种有趣且互动的方式，有助于使SPDK更加安全。
 
-<a id="nvmeuse"></a>
+<a id="usecase"></a>
 ## 威胁建模案例
 
 * [案例: 集成NVMe驱动](https://dqtibwqq6s6ux.cloudfront.net/download/threat_models/NVMe-Threat-Model.pdf)
+* [案例: NVMe-oF Target](https://dqtibwqq6s6ux.cloudfront.net/download/threat_models/NVMe-oF-Target-Threat-Model.pdf)
