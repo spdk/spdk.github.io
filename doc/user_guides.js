@@ -220,9 +220,9 @@ var user_guides =
       ] ],
       [ "Vhost Target", "jsonrpc.html#jsonrpc_components_vhost_tgt", [
         [ "vhost_controller_set_coalescing", "jsonrpc.html#rpc_vhost_controller_set_coalescing", null ],
-        [ "construct_vhost_scsi_controller", "jsonrpc.html#rpc_construct_vhost_scsi_controller", null ],
-        [ "add_vhost_scsi_lun", "jsonrpc.html#rpc_add_vhost_scsi_lun", null ],
-        [ "remove_vhost_scsi_target", "jsonrpc.html#rpc_remove_vhost_scsi_target", null ],
+        [ "vhost_create_scsi_controller", "jsonrpc.html#rpc_vhost_create_scsi_controller", null ],
+        [ "vhost_scsi_controller_add_target", "jsonrpc.html#rpc_vhost_scsi_controller_add_target", null ],
+        [ "vhost_scsi_controller_remove_target", "jsonrpc.html#rpc_vhost_scsi_controller_remove_target", null ],
         [ "construct_vhost_nvme_controller", "jsonrpc.html#rpc_construct_vhost_nvme_controller", null ],
         [ "add_vhost_nvme_ns", "jsonrpc.html#rpc_add_vhost_nvme_ns", null ],
         [ "construct_vhost_blk_controller", "jsonrpc.html#rpc_construct_vhost_blk_controller", null ],
