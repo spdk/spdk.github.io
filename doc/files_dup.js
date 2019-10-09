@@ -10,6 +10,7 @@ var files_dup =
     [ "blob.h", "blob_8h.html", "blob_8h" ],
     [ "blob_bdev.h", "blob__bdev_8h.html", "blob__bdev_8h" ],
     [ "blobfs.h", "blobfs_8h.html", "blobfs_8h" ],
+    [ "blobfs_bdev.h", "blobfs__bdev_8h.html", "blobfs__bdev_8h" ],
     [ "conf.h", "conf_8h.html", "conf_8h" ],
     [ "copy_engine.h", "copy__engine_8h.html", "copy__engine_8h" ],
     [ "cpuset.h", "cpuset_8h.html", "cpuset_8h" ],

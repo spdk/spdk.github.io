@@ -1,5 +1,12 @@
 var NAVTREEINDEX18 =
 {
+"structspdk__nvme__tcp__transport__specific__address__subtype.html#ad01f99d21c4695bf3695018429355319":[12,0,173,0],
+"structspdk__nvme__telemetry__log__page__hdr.html":[12,0,174],
+"structspdk__nvme__telemetry__log__page__hdr.html#a0355cc15d7b4c13c5a49e7af2bd6fe0c":[12,0,174,7],
+"structspdk__nvme__telemetry__log__page__hdr.html#a3d2ee1238857dccf9ab9e4933713c6c9":[12,0,174,6],
+"structspdk__nvme__telemetry__log__page__hdr.html#a67c1ed52aaf111bfa0da878b7067b194":[12,0,174,3],
+"structspdk__nvme__telemetry__log__page__hdr.html#a67cfd7cfe30d010b7a88e8c076921cb3":[12,0,174,8],
+"structspdk__nvme__telemetry__log__page__hdr.html#a711e160525b30b8eb6af7f9bb9ad34d3":[12,0,174,1],
 "structspdk__nvme__telemetry__log__page__hdr.html#a89f1407e3259a10afb72b7b332c0ac5c":[12,0,174,0],
 "structspdk__nvme__telemetry__log__page__hdr.html#ac2cae5da0b4535110c6aa9e87e3a53c8":[12,0,174,4],
 "structspdk__nvme__telemetry__log__page__hdr.html#ad4637c407f3393ac5a03411f64a0bf52":[12,0,174,2],
@@ -242,12 +249,5 @@ var NAVTREEINDEX18 =
 "structspdk__nvmf__fc__lsdesc__disconn__cmd.html":[12,0,204],
 "structspdk__nvmf__fc__lsdesc__disconn__cmd.html#a19a9f663ffcff0d7379ec4d52f883341":[12,0,204,0],
 "structspdk__nvmf__fc__lsdesc__disconn__cmd.html#a42ec660067233d04d4721578624337c1":[12,0,204,4],
-"structspdk__nvmf__fc__lsdesc__disconn__cmd.html#a89a2ec413ca2ec2cf70718f4e954e954":[12,0,204,5],
-"structspdk__nvmf__fc__lsdesc__disconn__cmd.html#a94a26b8afa3d63514bf949415db1ab8d":[12,0,204,2],
-"structspdk__nvmf__fc__lsdesc__disconn__cmd.html#aa62cb1daedef503efe4b4473245444c5":[12,0,204,1],
-"structspdk__nvmf__fc__lsdesc__disconn__cmd.html#aac036a5ac7a102aec9af5d7ca036f8f9":[12,0,204,3],
-"structspdk__nvmf__fc__lsdesc__rjt.html":[12,0,205],
-"structspdk__nvmf__fc__lsdesc__rjt.html#a1d27bc588fcf33b57d6383b57df3240a":[12,0,205,0],
-"structspdk__nvmf__fc__lsdesc__rjt.html#a1d8c3af5045c3aad5d907cf47dac602c":[12,0,205,4],
-"structspdk__nvmf__fc__lsdesc__rjt.html#a2db8aba52f48bdbb56112f7489fd0e5b":[12,0,205,6]
+"structspdk__nvmf__fc__lsdesc__disconn__cmd.html#a89a2ec413ca2ec2cf70718f4e954e954":[12,0,204,5]
 };

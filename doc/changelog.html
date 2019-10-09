@@ -169,6 +169,10 @@ v19.10: (Upcoming Release)</h1>
 <p>New 'resize' event has been added to notify about change of block count property of block device. Event is delivered only if block device was opened with spdk_bdev_open_ext function.</p>
 <h2>blobstore</h2>
 <p>A new spdk_bdev_create_bs_dev_from_desc function has been added and spdk_bdev_create_bs_dev function has been deprecated. The new create function can cowork with spdk_bdev_open_ext function, which provides callback function that will be called by asynchronous event such as bdev removal.</p>
+<h2>blobfs_bdev</h2>
+<p>A new blobfs module <code>bdev</code> has been added to simplify the operations of blobfs on bdev.</p>
+<p>Function spdk_blobfs_bdev_detect is added to detect whether blobfs exists on the given block device.</p>
+<p>Function spdk_blobfs_bdev_create is added to create a blobfs on the given block device.</p>
 <h2>nvme</h2>
 <p>Added <code>no_shn_notification</code> to NVMe controller initialization options, users can enable it for NVMe controllers. When the option is enabled, the controller will not do the shutdown process and just disable the controller, users can start their application later again to initialize the controller to the ready state.</p>
 <p>A controller flag <code>SPDK_NVME_CTRLR_WRR_SUPPORTED</code> was added to indicate the controller can support weighted round robin arbitration feature with submission queue.</p>
@@ -190,6 +194,8 @@ v19.10: (Upcoming Release)</h1>
 <p>Added optional parameters '&ndash;arbitration-burst' and '&ndash;low/medium/high-priority-weight' to 'bdev_nvme_set_options' RPC method.</p>
 <p>Added optional parameter '&ndash;md-size' to 'construct_null_bdev' RPC method.</p>
 <p>Added optional parameters '&ndash;dif-type' and '&ndash;dif-is-head-of-md' to 'construct_null_bdev' RPC method.</p>
+<p>Added <code>blobfs_detect</code> RPC method to detect whether a blobfs exists on given bdev.</p>
+<p>Added <code>blobfs_create</code> RPC method to build blobfs on given bdev.</p>
 <h1><a class="anchor" id="changelog-v19-07"></a>
 v19.07:</h1>
 <h2>ftl</h2>

@@ -223,8 +223,8 @@ var user_guides =
         [ "vhost_create_scsi_controller", "jsonrpc.html#rpc_vhost_create_scsi_controller", null ],
         [ "vhost_scsi_controller_add_target", "jsonrpc.html#rpc_vhost_scsi_controller_add_target", null ],
         [ "vhost_scsi_controller_remove_target", "jsonrpc.html#rpc_vhost_scsi_controller_remove_target", null ],
-        [ "construct_vhost_nvme_controller", "jsonrpc.html#rpc_construct_vhost_nvme_controller", null ],
-        [ "add_vhost_nvme_ns", "jsonrpc.html#rpc_add_vhost_nvme_ns", null ],
+        [ "vhost_create_nvme_controller", "jsonrpc.html#rpc_vhost_create_nvme_controller", null ],
+        [ "vhost_nvme_controller_add_ns", "jsonrpc.html#rpc_vhost_nvme_controller_add_ns", null ],
         [ "construct_vhost_blk_controller", "jsonrpc.html#rpc_construct_vhost_blk_controller", null ],
         [ "get_vhost_controllers", "jsonrpc.html#rpc_get_vhost_controllers", [
           [ "Response", "jsonrpc.html#rpc_get_vhost_controllers_response", null ],
@@ -258,7 +258,11 @@ var user_guides =
       [ "Linux Network Block Device (NBD)", "jsonrpc.html#jsonrpc_components_nbd", [
         [ "nbd_start_disk", "jsonrpc.html#rpc_nbd_start_disk", null ],
         [ "nbd_stop_disk", "jsonrpc.html#rpc_nbd_stop_disk", null ],
-        [ "nbd_get_disks", "jsonrpc.html#rpc_nbd_get_disks", null ],
+        [ "nbd_get_disks", "jsonrpc.html#rpc_nbd_get_disks", null ]
+      ] ],
+      [ "Blobfs", "jsonrpc.html#jsonrpc_components_blobfs", [
+        [ "blobfs_detect", "jsonrpc.html#rpc_blobfs_detect", null ],
+        [ "blobfs_create", "jsonrpc.html#rpc_blobfs_create", null ],
         [ "bdev_nvme_send_cmd", "jsonrpc.html#rpc_bdev_nvme_send_cmd", null ],
         [ "spdk_get_version", "jsonrpc.html#rpc_spdk_get_version", null ]
       ] ]

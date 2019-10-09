@@ -1,5 +1,12 @@
 var NAVTREEINDEX17 =
 {
+"structspdk__nvme__ns__data.html#ad28697ee63156180d84ef76496ca030f":[12,0,141,28],
+"structspdk__nvme__ns__data.html#ad904cb4c17ff2b844198314bb7aeabbc":[12,0,141,44],
+"structspdk__nvme__ns__data.html#ada20f1609045a8615a7f90e561be6a7a":[12,0,141,58],
+"structspdk__nvme__ns__data.html#ada850d5cd15ecc2d5f216b845bd5c3e8":[12,0,141,42],
+"structspdk__nvme__ns__data.html#adc10938c25cd751dcf93a2a725040ec1":[12,0,141,7],
+"structspdk__nvme__ns__data.html#adcaa83fe20492da75c717524ec9a43ae":[12,0,141,5],
+"structspdk__nvme__ns__data.html#ae0ed9489f16678899fafd54bec980ccb":[12,0,141,65],
 "structspdk__nvme__ns__data.html#ae160752518b32469ce2a74908d74a6c8":[12,0,141,46],
 "structspdk__nvme__ns__data.html#ae71d2fb221f55dd1bc0981e94e67f49d":[12,0,141,23],
 "structspdk__nvme__ns__data.html#aea402a7306c769018aa67a77c1a406be":[12,0,141,55],
@@ -242,12 +249,5 @@ var NAVTREEINDEX17 =
 "structspdk__nvme__tcp__term__req__hdr.html#ac4a9186c72cafa21bae6a64c5900f59f":[12,0,172,1],
 "structspdk__nvme__tcp__term__req__hdr.html#ae08c10e9d71244b51eedad3e3f11d98b":[12,0,172,3],
 "structspdk__nvme__tcp__transport__specific__address__subtype.html":[12,0,173],
-"structspdk__nvme__tcp__transport__specific__address__subtype.html#aadd698f60438b09c6a29de7c72b3e400":[12,0,173,1],
-"structspdk__nvme__tcp__transport__specific__address__subtype.html#ad01f99d21c4695bf3695018429355319":[12,0,173,0],
-"structspdk__nvme__telemetry__log__page__hdr.html":[12,0,174],
-"structspdk__nvme__telemetry__log__page__hdr.html#a0355cc15d7b4c13c5a49e7af2bd6fe0c":[12,0,174,7],
-"structspdk__nvme__telemetry__log__page__hdr.html#a3d2ee1238857dccf9ab9e4933713c6c9":[12,0,174,6],
-"structspdk__nvme__telemetry__log__page__hdr.html#a67c1ed52aaf111bfa0da878b7067b194":[12,0,174,3],
-"structspdk__nvme__telemetry__log__page__hdr.html#a67cfd7cfe30d010b7a88e8c076921cb3":[12,0,174,8],
-"structspdk__nvme__telemetry__log__page__hdr.html#a711e160525b30b8eb6af7f9bb9ad34d3":[12,0,174,1]
+"structspdk__nvme__tcp__transport__specific__address__subtype.html#aadd698f60438b09c6a29de7c72b3e400":[12,0,173,1]
 };

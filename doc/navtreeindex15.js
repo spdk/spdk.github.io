@@ -1,5 +1,12 @@
 var NAVTREEINDEX15 =
 {
+"structspdk__ioat__pq__update__hw__desc.html#ab145fd1719d5d98bd63eaace68c87e73":[12,0,72,20],
+"structspdk__ioat__pq__update__hw__desc.html#ab210186acd56331633917b961d1548a3":[12,0,72,10],
+"structspdk__ioat__pq__update__hw__desc.html#abe8c8106969f88cc43753d100d7a349e":[12,0,72,18],
+"structspdk__ioat__pq__update__hw__desc.html#ac3116427cb29be5bdf74a52df3c518c3":[12,0,72,24],
+"structspdk__ioat__pq__update__hw__desc.html#ac3c3943fc2ce6e6bf272c270f03f8f12":[12,0,72,2],
+"structspdk__ioat__pq__update__hw__desc.html#ac8d882820dc5f6054a670b81c0a63ed8":[12,0,72,23],
+"structspdk__ioat__pq__update__hw__desc.html#ac8da4c2eb1540173e8ec21fa11c6f93d":[12,0,72,14],
 "structspdk__ioat__pq__update__hw__desc.html#acb19690be7030dae43a8216b32b08ece":[12,0,72,22],
 "structspdk__ioat__pq__update__hw__desc.html#af5595aa6b056341b81e0d1705eade665":[12,0,72,0],
 "structspdk__ioat__pq__update__hw__desc.html#afcd4b5b6479ab401bd771ad572673bb0":[12,0,72,1],
@@ -242,12 +249,5 @@ var NAVTREEINDEX15 =
 "structspdk__nvme__ctrlr__data.html#aa5a66788efbe912b16019c7b62b00a16":[12,0,101,10],
 "structspdk__nvme__ctrlr__data.html#aa75787a34d040b9e84136bca3b0431de":[12,0,101,105],
 "structspdk__nvme__ctrlr__data.html#aaa0dccb34a5e2fd1fbe52fdbdd83d09f":[12,0,101,97],
-"structspdk__nvme__ctrlr__data.html#aad0681365b9524dc8a1dca2d48a6c046":[12,0,101,63],
-"structspdk__nvme__ctrlr__data.html#aad38d27f983f2ed3293de0ae3b800c7b":[12,0,101,87],
-"structspdk__nvme__ctrlr__data.html#aafb1c02f48a1407a4700432fe9f9d1a3":[12,0,101,94],
-"structspdk__nvme__ctrlr__data.html#ab2ab97678318cd3a557650b17a0c133e":[12,0,101,101],
-"structspdk__nvme__ctrlr__data.html#ab3503f576c3c6d932918bfe7003f8a5f":[12,0,101,138],
-"structspdk__nvme__ctrlr__data.html#ab42eccec72aa0050441adc5065b9d525":[12,0,101,82],
-"structspdk__nvme__ctrlr__data.html#ab64b766b84e3f9843f51528057fc4916":[12,0,101,135],
-"structspdk__nvme__ctrlr__data.html#ab6fdd6546131a6f5d6d3f1e881e67069":[12,0,101,39]
+"structspdk__nvme__ctrlr__data.html#aad0681365b9524dc8a1dca2d48a6c046":[12,0,101,63]
 };

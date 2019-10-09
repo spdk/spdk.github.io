@@ -1911,8 +1911,8 @@ vhost_scsi_controller_remove_target</h2>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">request:</div><div class="line">{</div><div class="line">  &quot;params&quot;: {</div><div class="line">    &quot;scsi_target_num&quot;: 1,</div><div class="line">    &quot;ctrlr&quot;: &quot;VhostScsi0&quot;</div><div class="line">  },</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;method&quot;: &quot;vhost_scsi_controller_remove_target&quot;,</div><div class="line">  &quot;id&quot;: 1</div><div class="line">}</div></div><!-- fragment --><p>Example response:</p>
-<div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: true</div><div class="line">}</div></div><!-- fragment --><h2><a class="anchor" id="rpc_construct_vhost_nvme_controller"></a>
-construct_vhost_nvme_controller</h2>
+<div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: true</div><div class="line">}</div></div><!-- fragment --><h2><a class="anchor" id="rpc_vhost_create_nvme_controller"></a>
+vhost_create_nvme_controller</h2>
 <p>Construct empty vhost NVMe controller.</p>
 <h3>Parameters</h3>
 <table class="markdownTable">
@@ -1927,9 +1927,9 @@ construct_vhost_nvme_controller</h2>
 </table>
 <h3>Example</h3>
 <p>Example request:</p>
-<div class="fragment"><div class="line">{</div><div class="line">  &quot;params&quot;: {</div><div class="line">    &quot;cpumask&quot;: &quot;0x2&quot;,</div><div class="line">    &quot;io_queues&quot;: 4,</div><div class="line">    &quot;ctrlr&quot;: &quot;VhostNvme0&quot;</div><div class="line">  },</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;method&quot;: &quot;construct_vhost_nvme_controller&quot;,</div><div class="line">  &quot;id&quot;: 1</div><div class="line">}</div></div><!-- fragment --><p>Example response:</p>
-<div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: true</div><div class="line">}</div></div><!-- fragment --><h2><a class="anchor" id="rpc_add_vhost_nvme_ns"></a>
-add_vhost_nvme_ns</h2>
+<div class="fragment"><div class="line">{</div><div class="line">  &quot;params&quot;: {</div><div class="line">    &quot;cpumask&quot;: &quot;0x2&quot;,</div><div class="line">    &quot;io_queues&quot;: 4,</div><div class="line">    &quot;ctrlr&quot;: &quot;VhostNvme0&quot;</div><div class="line">  },</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;method&quot;: &quot;vhost_create_nvme_controller&quot;,</div><div class="line">  &quot;id&quot;: 1</div><div class="line">}</div></div><!-- fragment --><p>Example response:</p>
+<div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: true</div><div class="line">}</div></div><!-- fragment --><h2><a class="anchor" id="rpc_vhost_nvme_controller_add_ns"></a>
+vhost_nvme_controller_add_ns</h2>
 <p>Add namespace backed by <code>bdev_name</code></p>
 <h3>Parameters</h3>
 <table class="markdownTable">
@@ -1944,7 +1944,7 @@ add_vhost_nvme_ns</h2>
 </table>
 <h3>Example</h3>
 <p>Example request:</p>
-<div class="fragment"><div class="line">{</div><div class="line">  &quot;params&quot;: {</div><div class="line">    &quot;bdev_name&quot;: &quot;Malloc0&quot;,</div><div class="line">    &quot;ctrlr&quot;: &quot;VhostNvme0&quot;</div><div class="line">  },</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;method&quot;: &quot;add_vhost_nvme_ns&quot;,</div><div class="line">  &quot;id&quot;: 1</div><div class="line">}</div></div><!-- fragment --><p>Example response:</p>
+<div class="fragment"><div class="line">{</div><div class="line">  &quot;params&quot;: {</div><div class="line">    &quot;bdev_name&quot;: &quot;Malloc0&quot;,</div><div class="line">    &quot;ctrlr&quot;: &quot;VhostNvme0&quot;</div><div class="line">  },</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;method&quot;: &quot;vhost_nvme_controller_add_ns&quot;,</div><div class="line">  &quot;id&quot;: 1</div><div class="line">}</div></div><!-- fragment --><p>Example response:</p>
 <div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: true</div><div class="line">}</div></div><!-- fragment --><h2><a class="anchor" id="rpc_construct_vhost_blk_controller"></a>
 construct_vhost_blk_controller</h2>
 <p>Construct vhost block controller</p>
@@ -2410,7 +2410,39 @@ nbd_get_disks</h2>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;method&quot;: &quot;nbd_get_disks&quot;,</div><div class="line">  &quot;id&quot;: 1</div><div class="line">}</div></div><!-- fragment --><p>Example response:</p>
-<div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;:  [</div><div class="line">    {</div><div class="line">      &quot;bdev_name&quot;: &quot;Malloc0&quot;,</div><div class="line">      &quot;nbd_device&quot;: &quot;/dev/nbd0&quot;</div><div class="line">    },</div><div class="line">    {</div><div class="line">      &quot;bdev_name&quot;: &quot;Malloc1&quot;,</div><div class="line">      &quot;nbd_device&quot;: &quot;/dev/nbd1&quot;</div><div class="line">    }</div><div class="line">  ]</div><div class="line">}</div></div><!-- fragment --><h1>Miscellaneous RPC commands</h1>
+<div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;:  [</div><div class="line">    {</div><div class="line">      &quot;bdev_name&quot;: &quot;Malloc0&quot;,</div><div class="line">      &quot;nbd_device&quot;: &quot;/dev/nbd0&quot;</div><div class="line">    },</div><div class="line">    {</div><div class="line">      &quot;bdev_name&quot;: &quot;Malloc1&quot;,</div><div class="line">      &quot;nbd_device&quot;: &quot;/dev/nbd1&quot;</div><div class="line">    }</div><div class="line">  ]</div><div class="line">}</div></div><!-- fragment --><h1><a class="anchor" id="jsonrpc_components_blobfs"></a>
+Blobfs</h1>
+<h2><a class="anchor" id="rpc_blobfs_detect"></a>
+blobfs_detect</h2>
+<p>Detect whether a blobfs exists on bdev.</p>
+<h3>Parameters</h3>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Name  </th><th class="markdownTableHeadNone">Optional  </th><th class="markdownTableHeadNone">Type  </th><th class="markdownTableHeadNone">Description   </th></tr>
+<tr class="markdownTableBody" class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">bdev_name  </td><td class="markdownTableBodyNone">Required  </td><td class="markdownTableBodyNone">string  </td><td class="markdownTableBodyNone">Block device name to detect blobfs   </td></tr>
+</table>
+<h3>Response</h3>
+<p>True if a blobfs exists on the bdev; False otherwise.</p>
+<h3>Example</h3>
+<p>Example request:</p>
+<div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;method&quot;: &quot;blobfs_detect&quot;,</div><div class="line">  &quot;params&quot;: {</div><div class="line">    &quot;bdev_name&quot;: &quot;Malloc0&quot;</div><div class="line">  }</div><div class="line">}</div></div><!-- fragment --><p>Example response:</p>
+<div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: &quot;true&quot;</div><div class="line">}</div></div><!-- fragment --><h2><a class="anchor" id="rpc_blobfs_create"></a>
+blobfs_create</h2>
+<p>Build blobfs on bdev.</p>
+<h3>Parameters</h3>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Name  </th><th class="markdownTableHeadNone">Optional  </th><th class="markdownTableHeadNone">Type  </th><th class="markdownTableHeadNone">Description   </th></tr>
+<tr class="markdownTableBody" class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">bdev_name  </td><td class="markdownTableBodyNone">Required  </td><td class="markdownTableBodyNone">string  </td><td class="markdownTableBodyNone">Block device name to create blobfs   </td></tr>
+<tr class="markdownTableBody" class="markdownTableRowEven">
+<td class="markdownTableBodyNone">cluster_sz  </td><td class="markdownTableBodyNone">Optional  </td><td class="markdownTableBodyNone">number  </td><td class="markdownTableBodyNone">Size of cluster in bytes. Must be multiple of 4KiB page size, default and minimal value is 1M.   </td></tr>
+</table>
+<h3>Example</h3>
+<p>Example request:</p>
+<div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;method&quot;: &quot;blobfs_create&quot;,</div><div class="line">  &quot;params&quot;: {</div><div class="line">    &quot;bdev_name&quot;: &quot;Malloc0&quot;,</div><div class="line">    &quot;cluster_sz&quot;: 1M</div><div class="line">  }</div><div class="line">}</div></div><!-- fragment --><p>Example response:</p>
+<div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: &quot;true&quot;</div><div class="line">}</div></div><!-- fragment --><h1>Miscellaneous RPC commands</h1>
 <h2><a class="anchor" id="rpc_bdev_nvme_send_cmd"></a>
 bdev_nvme_send_cmd</h2>
 <p>Send NVMe command directly to NVMe controller or namespace. Parameters and responses encoded by base64 urlsafe need further processing.</p>

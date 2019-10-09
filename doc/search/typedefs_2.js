@@ -11,6 +11,7 @@ var searchData=
   ['spdk_5fblob_5fop_5fcomplete',['spdk_blob_op_complete',['../blob_8h.html#aca5253109581a768e06dd197429ef9e1',1,'blob.h']]],
   ['spdk_5fblob_5fop_5fwith_5fhandle_5fcomplete',['spdk_blob_op_with_handle_complete',['../blob_8h.html#aab6d19ccc3c952877c355030e2a286c1',1,'blob.h']]],
   ['spdk_5fblob_5fop_5fwith_5fid_5fcomplete',['spdk_blob_op_with_id_complete',['../blob_8h.html#a4955592d73cb1a262d699d10c8e2856f',1,'blob.h']]],
+  ['spdk_5fblobfs_5fbdev_5fop_5fcomplete',['spdk_blobfs_bdev_op_complete',['../blobfs__bdev_8h.html#aeba9eac67ee1c9c401df29609c8b917b',1,'blobfs_bdev.h']]],
   ['spdk_5fbs_5fdev_5fcpl',['spdk_bs_dev_cpl',['../blob_8h.html#afb1f64973b22548813723a645f9b8995',1,'blob.h']]],
   ['spdk_5fbs_5fop_5fcomplete',['spdk_bs_op_complete',['../blob_8h.html#a9c265d4eead39c3419cee4b620bf5052',1,'blob.h']]],
   ['spdk_5fbs_5fop_5fwith_5fhandle_5fcomplete',['spdk_bs_op_with_handle_complete',['../blob_8h.html#a40a976910f2112a4164ae6a12b946855',1,'blob.h']]],

@@ -179,6 +179,8 @@ var searchData=
   ['spdk_5fblob_5fset_5fread_5fonly',['spdk_blob_set_read_only',['../blob_8h.html#a1ea6db893423c045b8a40d1f0d0bd128',1,'blob.h']]],
   ['spdk_5fblob_5fset_5fxattr',['spdk_blob_set_xattr',['../blob_8h.html#a74beed7022f23df295149fd68ac8935d',1,'blob.h']]],
   ['spdk_5fblob_5fsync_5fmd',['spdk_blob_sync_md',['../blob_8h.html#a5acc48debefc30773518871e4f84480f',1,'blob.h']]],
+  ['spdk_5fblobfs_5fbdev_5fcreate',['spdk_blobfs_bdev_create',['../blobfs__bdev_8h.html#a3f6c4607f877cca80d12fa1d45be5b63',1,'blobfs_bdev.h']]],
+  ['spdk_5fblobfs_5fbdev_5fdetect',['spdk_blobfs_bdev_detect',['../blobfs__bdev_8h.html#a3adb6a7fa37fd5b762fa4d435b7c20e4',1,'blobfs_bdev.h']]],
   ['spdk_5fbs_5falloc_5fio_5fchannel',['spdk_bs_alloc_io_channel',['../blob_8h.html#a24d2b11e6038ad7367c796c6917d44b8',1,'blob.h']]],
   ['spdk_5fbs_5fbdev_5fclaim',['spdk_bs_bdev_claim',['../blob__bdev_8h.html#a0499e5f00e93f3406989f281bd7122a6',1,'blob_bdev.h']]],
   ['spdk_5fbs_5fblob_5fdecouple_5fparent',['spdk_bs_blob_decouple_parent',['../blob_8h.html#a7dee33b6b9df9b9a3d6b9957c71a779c',1,'blob.h']]],

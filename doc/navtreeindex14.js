@@ -1,5 +1,12 @@
 var NAVTREEINDEX14 =
 {
+"structspdk__d0__tper__features.html#a4b2b07f52d89d1afbc79f80cfdd651d3":[12,0,50,12],
+"structspdk__d0__tper__features.html#a65819f6d13620306bfa35f3b06c8e2ea":[12,0,50,3],
+"structspdk__d0__tper__features.html#a74e368e9d8e1f55366de5e007899f925":[12,0,50,13],
+"structspdk__d0__tper__features.html#a7bf59537ac5678009520c54d08da6de8":[12,0,50,8],
+"structspdk__d0__tper__features.html#a8754d79601d5f5f4e5644c1397d05f45":[12,0,50,1],
+"structspdk__d0__tper__features.html#a90da6bf5a2ab7cb539e6367fcaec119f":[12,0,50,11],
+"structspdk__d0__tper__features.html#a99c5b89526dcd84504c051e9710e9bdd":[12,0,50,2],
 "structspdk__d0__tper__features.html#aad0ed173000587a9dfc8fe0c3625d6ae":[12,0,50,0],
 "structspdk__d0__tper__features.html#ab8a3fc52013be236040cce11260ac595":[12,0,50,14],
 "structspdk__d0__tper__features.html#ae78c0bd713184683becad9ed83f2d66d":[12,0,50,7],
@@ -242,12 +249,5 @@ var NAVTREEINDEX14 =
 "structspdk__ioat__pq__update__hw__desc.html#a88276f32b19277254f4f24863ed8e703":[12,0,72,11],
 "structspdk__ioat__pq__update__hw__desc.html#a9000ed4801cf89ecc2229d7163597add":[12,0,72,17],
 "structspdk__ioat__pq__update__hw__desc.html#aa432c5738bef2b40bcbae8f7d0d1c558":[12,0,72,5],
-"structspdk__ioat__pq__update__hw__desc.html#aa89fea293afe48d1d99546904664949a":[12,0,72,13],
-"structspdk__ioat__pq__update__hw__desc.html#ab145fd1719d5d98bd63eaace68c87e73":[12,0,72,20],
-"structspdk__ioat__pq__update__hw__desc.html#ab210186acd56331633917b961d1548a3":[12,0,72,10],
-"structspdk__ioat__pq__update__hw__desc.html#abe8c8106969f88cc43753d100d7a349e":[12,0,72,18],
-"structspdk__ioat__pq__update__hw__desc.html#ac3116427cb29be5bdf74a52df3c518c3":[12,0,72,24],
-"structspdk__ioat__pq__update__hw__desc.html#ac3c3943fc2ce6e6bf272c270f03f8f12":[12,0,72,2],
-"structspdk__ioat__pq__update__hw__desc.html#ac8d882820dc5f6054a670b81c0a63ed8":[12,0,72,23],
-"structspdk__ioat__pq__update__hw__desc.html#ac8da4c2eb1540173e8ec21fa11c6f93d":[12,0,72,14]
+"structspdk__ioat__pq__update__hw__desc.html#aa89fea293afe48d1d99546904664949a":[12,0,72,13]
 };
