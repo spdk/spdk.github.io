@@ -7,7 +7,7 @@ var structspdk__app__opts =
     [ "hugedir", "structspdk__app__opts.html#a8fcfa061da5b1b5bfd9900c3074bf95f", null ],
     [ "hugepage_single_segments", "structspdk__app__opts.html#ad584493cb8e3ca1744f29fbf4302d73f", null ],
     [ "json_config_file", "structspdk__app__opts.html#aa167c7261b91f10450ac6f1bc0700c1e", null ],
-    [ "log", "structspdk__app__opts.html#a7d2cba1a98fcd07a84302a4469fdb09c", null ],
+    [ "log", "structspdk__app__opts.html#a4de9f5097a5cdc69c3b45b64db56eea0", null ],
     [ "master_core", "structspdk__app__opts.html#a8b1f0881077c7cba8c846a150364dee3", null ],
     [ "max_delay_us", "structspdk__app__opts.html#a54842105e519787ce90254a80177c001", null ],
     [ "mem_channel", "structspdk__app__opts.html#abd571128caea84190b31231105219b38", null ],

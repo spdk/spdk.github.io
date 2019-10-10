@@ -226,12 +226,12 @@ var user_guides =
         [ "vhost_create_nvme_controller", "jsonrpc.html#rpc_vhost_create_nvme_controller", null ],
         [ "vhost_nvme_controller_add_ns", "jsonrpc.html#rpc_vhost_nvme_controller_add_ns", null ],
         [ "construct_vhost_blk_controller", "jsonrpc.html#rpc_construct_vhost_blk_controller", null ],
-        [ "get_vhost_controllers", "jsonrpc.html#rpc_get_vhost_controllers", [
-          [ "Response", "jsonrpc.html#rpc_get_vhost_controllers_response", null ],
-          [ "Vhost block", "jsonrpc.html#rpc_get_vhost_controllers_blk", null ],
-          [ "Vhost SCSI", "jsonrpc.html#rpc_get_vhost_controllers_scsi", null ],
-          [ "Vhost SCSI LUN", "jsonrpc.html#rpc_get_vhost_controllers_scsi_luns", null ],
-          [ "Vhost NVMe", "jsonrpc.html#rpc_get_vhost_controllers_nvme", null ]
+        [ "vhost_get_controllers", "jsonrpc.html#rpc_vhost_get_controllers", [
+          [ "Response", "jsonrpc.html#rpc_vhost_get_controllers_response", null ],
+          [ "Vhost block", "jsonrpc.html#rpc_vhost_get_controllers_blk", null ],
+          [ "Vhost SCSI", "jsonrpc.html#rpc_vhost_get_controllers_scsi", null ],
+          [ "Vhost SCSI LUN", "jsonrpc.html#rpc_vhost_get_controllers_scsi_luns", null ],
+          [ "Vhost NVMe", "jsonrpc.html#rpc_vhost_get_controllers_nvme", null ]
         ] ],
         [ "vhost_delete_controller", "jsonrpc.html#rpc_vhost_delete_controller", null ]
       ] ],

@@ -3,7 +3,7 @@ var log_8h =
     [ "SPDK_ERRLOG", "log_8h.html#a6b7bfeecff42b840ca5ebd25ffa84439", null ],
     [ "SPDK_NOTICELOG", "log_8h.html#a4dcd04f102bfd52627f41e43123bc916", null ],
     [ "SPDK_WARNLOG", "log_8h.html#abe2c8e734e26212d5aa718ef8de9d7e1", null ],
-    [ "logfunc", "log_8h.html#a5c6dd1e4fd0382d5d45a08f61f3d8138", null ],
+    [ "logfunc", "log_8h.html#a759e79a44bb8dd5733e81c7d213fd730", null ],
     [ "spdk_log_level", "log_8h.html#a188d351bd05093cba1d8594ee9988efd", [
       [ "SPDK_LOG_DISABLED", "log_8h.html#a188d351bd05093cba1d8594ee9988efdaaaf05c57678e124375f03976b68940eb", null ],
       [ "SPDK_LOG_ERROR", "log_8h.html#a188d351bd05093cba1d8594ee9988efda1832db9861f6452883f70bf647378a36", null ],

@@ -310,6 +310,9 @@ static struct <a class="el" href="structspdk__bdev__io.html">spdk_bdev_io</a> *&
 <tr class="memitem:aed3ff2400cb02ba0f627000dddee322b"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev__module_8h.html#aed3ff2400cb02ba0f627000dddee322b">spdk_bdev_part_base_get_bdev</a> (struct spdk_bdev_part_base *part_base)</td></tr>
 <tr class="memdesc:aed3ff2400cb02ba0f627000dddee322b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a pointer to the <a class="el" href="structspdk__bdev.html">spdk_bdev</a> associated with an spdk_bdev_part_base.  <a href="#aed3ff2400cb02ba0f627000dddee322b">More...</a><br /></td></tr>
 <tr class="separator:aed3ff2400cb02ba0f627000dddee322b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65879a433b50a4b3236ba734ab8c4478"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev__module_8h.html#a65879a433b50a4b3236ba734ab8c4478">spdk_bdev_part_base_get_bdev_name</a> (struct spdk_bdev_part_base *part_base)</td></tr>
+<tr class="memdesc:a65879a433b50a4b3236ba734ab8c4478"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a <a class="el" href="structspdk__bdev.html">spdk_bdev</a> name of the corresponding spdk_bdev_part_base.  <a href="#a65879a433b50a4b3236ba734ab8c4478">More...</a><br /></td></tr>
+<tr class="separator:a65879a433b50a4b3236ba734ab8c4478"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa77a63a1e930928e8900c47354e4f626"><td class="memItemLeft" align="right" valign="top">struct spdk_bdev_desc *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev__module_8h.html#aa77a63a1e930928e8900c47354e4f626">spdk_bdev_part_base_get_desc</a> (struct spdk_bdev_part_base *part_base)</td></tr>
 <tr class="memdesc:aa77a63a1e930928e8900c47354e4f626"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a pointer to the spdk_bdev_descriptor associated with an spdk_bdev_part_base.  <a href="#aa77a63a1e930928e8900c47354e4f626">More...</a><br /></td></tr>
 <tr class="separator:aa77a63a1e930928e8900c47354e4f626"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1302,6 +1305,33 @@ typedef&#160;</td><td class="memItemRight" valign="bottom"><b>TAILQ_HEAD</b> (bd
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A pointer to the base's <a class="el" href="structspdk__bdev.html">spdk_bdev</a> struct. </dd></dl>
+
+</div>
+</div>
+<a id="a65879a433b50a4b3236ba734ab8c4478"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a65879a433b50a4b3236ba734ab8c4478">&#9670;&nbsp;</a></span>spdk_bdev_part_base_get_bdev_name()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* spdk_bdev_part_base_get_bdev_name </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_bdev_part_base *&#160;</td>
+          <td class="paramname"><em>part_base</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns a <a class="el" href="structspdk__bdev.html">spdk_bdev</a> name of the corresponding spdk_bdev_part_base. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">part_base</td><td>A pointer to an spdk_bdev_part_base object.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A text string representing the name of the base bdev. </dd></dl>
 
 </div>
 </div>

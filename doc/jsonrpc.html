@@ -1336,7 +1336,7 @@ iscsi_get_target_nodes method</h2>
 <div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;method&quot;: &quot;iscsi_get_target_nodes&quot;,</div><div class="line">  &quot;id&quot;: 1</div><div class="line">}</div></div><!-- fragment --><p>Example response:</p>
 <div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: [</div><div class="line">    {</div><div class="line">      &quot;luns&quot;: [</div><div class="line">        {</div><div class="line">          &quot;lun_id&quot;: 0,</div><div class="line">          &quot;bdev_name&quot;: &quot;Nvme0n1&quot;</div><div class="line">        }</div><div class="line">      ],</div><div class="line">      &quot;mutual_chap&quot;: false,</div><div class="line">      &quot;name&quot;: &quot;iqn.2016-06.io.spdk:target1&quot;,</div><div class="line">      &quot;alias_name&quot;: &quot;iscsi-target1-alias&quot;,</div><div class="line">      &quot;require_chap&quot;: false,</div><div class="line">      &quot;chap_group&quot;: 0,</div><div class="line">      &quot;pg_ig_maps&quot;: [</div><div class="line">        {</div><div class="line">          &quot;ig_tag&quot;: 1,</div><div class="line">          &quot;pg_tag&quot;: 1</div><div class="line">        }</div><div class="line">      ],</div><div class="line">      &quot;data_digest&quot;: false,</div><div class="line">      &quot;disable_chap&quot;: false,</div><div class="line">      &quot;header_digest&quot;: false,</div><div class="line">      &quot;queue_depth&quot;: 64</div><div class="line">    }</div><div class="line">  ]</div><div class="line">}</div></div><!-- fragment --><h2><a class="anchor" id="rpc_iscsi_create_target_node"></a>
 iscsi_create_target_node method</h2>
-<p>Add a iSCSI target node.</p>
+<p>Add an iSCSI target node.</p>
 <h3>Parameters</h3>
 <table class="markdownTable">
 <tr class="markdownTableHead">
@@ -1440,7 +1440,7 @@ iscsi_target_node_remove_pg_ig_maps method</h2>
 <div class="fragment"><div class="line">{</div><div class="line">  &quot;params&quot;: {</div><div class="line">    &quot;pg_ig_maps&quot;: [</div><div class="line">      {</div><div class="line">        &quot;ig_tag&quot;: 1,</div><div class="line">        &quot;pg_tag&quot;: 1</div><div class="line">      },</div><div class="line">      {</div><div class="line">        &quot;ig_tag&quot;: 2,</div><div class="line">        &quot;pg_tag&quot;: 2</div><div class="line">      },</div><div class="line">      {</div><div class="line">        &quot;ig_tag&quot;: 3,</div><div class="line">        &quot;pg_tag&quot;: 3</div><div class="line">      }</div><div class="line">    ],</div><div class="line">    &quot;name&quot;: &quot;iqn.2016-06.io.spdk:target3&quot;</div><div class="line">  },</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;method&quot;: &quot;iscsi_target_node_remove_pg_ig_maps&quot;,</div><div class="line">  &quot;id&quot;: 1</div><div class="line">}</div></div><!-- fragment --><p>Example response:</p>
 <div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: true</div><div class="line">}</div></div><!-- fragment --><h2><a class="anchor" id="rpc_iscsi_delete_target_node"></a>
 iscsi_delete_target_node method</h2>
-<p>Delete a iSCSI target node.</p>
+<p>Delete an iSCSI target node.</p>
 <h3>Parameters</h3>
 <table class="markdownTable">
 <tr class="markdownTableHead">
@@ -1965,8 +1965,8 @@ construct_vhost_blk_controller</h2>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div><div class="line">  &quot;params&quot;: {</div><div class="line">    &quot;dev_name&quot;: &quot;Malloc0&quot;,</div><div class="line">    &quot;ctrlr&quot;: &quot;VhostBlk0&quot;</div><div class="line">  },</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;method&quot;: &quot;construct_vhost_blk_controller&quot;,</div><div class="line">  &quot;id&quot;: 1</div><div class="line">}</div></div><!-- fragment --><p>Example response:</p>
-<div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: true</div><div class="line">}</div></div><!-- fragment --><h2><a class="anchor" id="rpc_get_vhost_controllers"></a>
-get_vhost_controllers</h2>
+<div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: true</div><div class="line">}</div></div><!-- fragment --><h2><a class="anchor" id="rpc_vhost_get_controllers"></a>
+vhost_get_controllers</h2>
 <p>Display information about all or specific vhost controller(s).</p>
 <h3>Parameters</h3>
 <p>The user may specify no parameters in order to list all controllers, or a controller may be specified by name.</p>
@@ -1976,7 +1976,7 @@ get_vhost_controllers</h2>
 <tr class="markdownTableBody" class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">name  </td><td class="markdownTableBodyNone">Optional  </td><td class="markdownTableBodyNone">string  </td><td class="markdownTableBodyNone">Vhost controller name   </td></tr>
 </table>
-<h3><a class="anchor" id="rpc_get_vhost_controllers_response"></a>
+<h3><a class="anchor" id="rpc_vhost_get_controllers_response"></a>
 Response</h3>
 <p>Response is an array of objects describing requested controller(s). Common fields are:</p>
 <table class="markdownTable">
@@ -1993,7 +1993,7 @@ Response</h3>
 <tr class="markdownTableBody" class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">backend_specific  </td><td class="markdownTableBodyNone">object  </td><td class="markdownTableBodyNone">Backend specific informations   </td></tr>
 </table>
-<h3><a class="anchor" id="rpc_get_vhost_controllers_blk"></a>
+<h3><a class="anchor" id="rpc_vhost_get_controllers_blk"></a>
 Vhost block</h3>
 <p><code>backend_specific</code> contains one <code>block</code> object of type:</p>
 <table class="markdownTable">
@@ -2004,7 +2004,7 @@ Vhost block</h3>
 <tr class="markdownTableBody" class="markdownTableRowEven">
 <td class="markdownTableBodyNone">readonly  </td><td class="markdownTableBodyNone">boolean  </td><td class="markdownTableBodyNone">True if controllers is readonly, false otherwise   </td></tr>
 </table>
-<h3><a class="anchor" id="rpc_get_vhost_controllers_scsi"></a>
+<h3><a class="anchor" id="rpc_vhost_get_controllers_scsi"></a>
 Vhost SCSI</h3>
 <p><code>backend_specific</code> contains <code>scsi</code> array of following objects:</p>
 <table class="markdownTable">
@@ -2017,9 +2017,9 @@ Vhost SCSI</h3>
 <tr class="markdownTableBody" class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">scsi_dev_num  </td><td class="markdownTableBodyNone">number  </td><td class="markdownTableBodyNone">SCSI target ID initiator will see when scanning this controller   </td></tr>
 <tr class="markdownTableBody" class="markdownTableRowEven">
-<td class="markdownTableBodyNone">luns  </td><td class="markdownTableBodyNone">array  </td><td class="markdownTableBodyNone">array of objects describing <a class="el" href="jsonrpc.html#rpc_get_vhost_controllers_scsi_luns">Vhost SCSI LUN</a>   </td></tr>
+<td class="markdownTableBodyNone">luns  </td><td class="markdownTableBodyNone">array  </td><td class="markdownTableBodyNone">array of objects describing <a class="el" href="jsonrpc.html#rpc_vhost_get_controllers_scsi_luns">Vhost SCSI LUN</a>   </td></tr>
 </table>
-<h3><a class="anchor" id="rpc_get_vhost_controllers_scsi_luns"></a>
+<h3><a class="anchor" id="rpc_vhost_get_controllers_scsi_luns"></a>
 Vhost SCSI LUN</h3>
 <p>Object of type:</p>
 <table class="markdownTable">
@@ -2030,7 +2030,7 @@ Vhost SCSI LUN</h3>
 <tr class="markdownTableBody" class="markdownTableRowEven">
 <td class="markdownTableBodyNone">bdev_name  </td><td class="markdownTableBodyNone">string  </td><td class="markdownTableBodyNone">Backing bdev name   </td></tr>
 </table>
-<h3><a class="anchor" id="rpc_get_vhost_controllers_nvme"></a>
+<h3><a class="anchor" id="rpc_vhost_get_controllers_nvme"></a>
 Vhost NVMe</h3>
 <p><code>backend_specific</code> contains <code>namespaces</code> array of following objects:</p>
 <table class="markdownTable">
@@ -2043,7 +2043,7 @@ Vhost NVMe</h3>
 </table>
 <h3>Example</h3>
 <p>Example request:</p>
-<div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;method&quot;: &quot;get_vhost_controllers&quot;,</div><div class="line">  &quot;id&quot;: 1</div><div class="line">}</div></div><!-- fragment --><p>Example response:</p>
+<div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;method&quot;: &quot;vhost_get_controllers&quot;,</div><div class="line">  &quot;id&quot;: 1</div><div class="line">}</div></div><!-- fragment --><p>Example response:</p>
 <div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: [</div><div class="line">    {</div><div class="line">      &quot;cpumask&quot;: &quot;0x2&quot;,</div><div class="line">      &quot;backend_specific&quot;: {</div><div class="line">        &quot;block&quot;: {</div><div class="line">          &quot;readonly&quot;: false,</div><div class="line">          &quot;bdev&quot;: &quot;Malloc0&quot;</div><div class="line">        }</div><div class="line">      },</div><div class="line">      &quot;iops_threshold&quot;: 60000,</div><div class="line">      &quot;ctrlr&quot;: &quot;VhostBlk0&quot;,</div><div class="line">      &quot;delay_base_us&quot;: 100</div><div class="line">    },</div><div class="line">    {</div><div class="line">      &quot;cpumask&quot;: &quot;0x2&quot;,</div><div class="line">      &quot;backend_specific&quot;: {</div><div class="line">        &quot;scsi&quot;: [</div><div class="line">          {</div><div class="line">            &quot;target_name&quot;: &quot;Target 2&quot;,</div><div class="line">            &quot;luns&quot;: [</div><div class="line">              {</div><div class="line">                &quot;id&quot;: 0,</div><div class="line">                &quot;bdev_name&quot;: &quot;Malloc1&quot;</div><div class="line">              }</div><div class="line">            ],</div><div class="line">            &quot;id&quot;: 0,</div><div class="line">            &quot;scsi_dev_num&quot;: 2</div><div class="line">          },</div><div class="line">          {</div><div class="line">            &quot;target_name&quot;: &quot;Target 5&quot;,</div><div class="line">            &quot;luns&quot;: [</div><div class="line">              {</div><div class="line">                &quot;id&quot;: 0,</div><div class="line">                &quot;bdev_name&quot;: &quot;Malloc2&quot;</div><div class="line">              }</div><div class="line">            ],</div><div class="line">            &quot;id&quot;: 1,</div><div class="line">            &quot;scsi_dev_num&quot;: 5</div><div class="line">          }</div><div class="line">        ]</div><div class="line">      },</div><div class="line">      &quot;iops_threshold&quot;: 60000,</div><div class="line">      &quot;ctrlr&quot;: &quot;VhostScsi0&quot;,</div><div class="line">      &quot;delay_base_us&quot;: 0</div><div class="line">    },</div><div class="line">    {</div><div class="line">      &quot;cpumask&quot;: &quot;0x2&quot;,</div><div class="line">      &quot;backend_specific&quot;: {</div><div class="line">        &quot;namespaces&quot;: [</div><div class="line">          {</div><div class="line">            &quot;bdev&quot;: &quot;Malloc3&quot;,</div><div class="line">            &quot;nsid&quot;: 1</div><div class="line">          },</div><div class="line">          {</div><div class="line">            &quot;bdev&quot;: &quot;Malloc4&quot;,</div><div class="line">            &quot;nsid&quot;: 2</div><div class="line">          }</div><div class="line">        ]</div><div class="line">      },</div><div class="line">      &quot;iops_threshold&quot;: 60000,</div><div class="line">      &quot;ctrlr&quot;: &quot;VhostNvme0&quot;,</div><div class="line">      &quot;delay_base_us&quot;: 0</div><div class="line">    }</div><div class="line">  ]</div><div class="line">}</div></div><!-- fragment --><h2><a class="anchor" id="rpc_vhost_delete_controller"></a>
 vhost_delete_controller</h2>
 <p>Remove vhost target.</p>
