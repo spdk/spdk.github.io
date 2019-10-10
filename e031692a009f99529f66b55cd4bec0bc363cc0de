@@ -1,0 +1,89 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "329c3751_19e1e93a",
+        "filename": "debug_tip.md",
+        "patchSetId": 11
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 1010531
+      },
+      "writtenOn": "2019-10-10T18:43:43Z",
+      "side": 1,
+      "message": "There are two test suites used in SPDK. One is the per-patch suite of tests which run on every proposed patch and generate the +1 or -1 verified votes in Gerrit. The other is the nightly test suite which is only run nightly. For this example, we\u0027ll debug a nightly test failure.",
+      "revId": "e031692a009f99529f66b55cd4bec0bc363cc0de",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "47c1ca81_33e90879",
+        "filename": "debug_tip.md",
+        "patchSetId": 11
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 1010531
+      },
+      "writtenOn": "2019-10-10T18:43:43Z",
+      "side": 1,
+      "message": "On the [CI Status Page](https://dqtibwqq6s6ux.cloudfront.net/) there is a `Job results` section with several links that contain contain the latest nightly test results. For example, the nightly test that tests SPDK master with DPDK master is [here](https://dqtibwqq6s6ux.cloudfront.net/public_build/autotest-nightly.html). On that page, you can find a failed nightly test and select it, bringing up a page that shows which individual test jobs failed. Selecting a given job brings up the test log. The most relevant information is typically in the file `build.log`, usually at the bottom.",
+      "revId": "e031692a009f99529f66b55cd4bec0bc363cc0de",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "3277d7d5_9c8206b8",
+        "filename": "debug_tip.md",
+        "patchSetId": 11
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 1010531
+      },
+      "writtenOn": "2019-10-10T18:43:43Z",
+      "side": 1,
+      "message": "Running the tests on a local machine",
+      "revId": "e031692a009f99529f66b55cd4bec0bc363cc0de",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "e8db951a_4d84c558",
+        "filename": "debug_tip.md",
+        "patchSetId": 11
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 1010531
+      },
+      "writtenOn": "2019-10-10T18:43:43Z",
+      "side": 1,
+      "message": "The test suite is kicked off by running autotest.sh with the proper configuration and environment.",
+      "revId": "e031692a009f99529f66b55cd4bec0bc363cc0de",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "cfb2505a_9bfb03a1",
+        "filename": "debug_tip.md",
+        "patchSetId": 11
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 1010531
+      },
+      "writtenOn": "2019-10-10T18:43:43Z",
+      "side": 1,
+      "message": "How does a user pass in this configuration file to autotest.sh? Is it the first parameter?",
+      "revId": "e031692a009f99529f66b55cd4bec0bc363cc0de",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    }
+  ]
+}
