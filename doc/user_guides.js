@@ -146,7 +146,7 @@ var user_guides =
         [ "bdev_nvme_set_hotplug", "jsonrpc.html#rpc_bdev_nvme_set_hotplug", null ],
         [ "bdev_nvme_attach_controller", "jsonrpc.html#rpc_bdev_nvme_attach_controller", null ],
         [ "bdev_nvme_get_controllers", "jsonrpc.html#rpc_bdev_nvme_get_controllers", null ],
-        [ "delete_nvme_controller", "jsonrpc.html#rpc_delete_nvme_controller", null ],
+        [ "bdev_nvme_detach_controller", "jsonrpc.html#rpc_bdev_nvme_detach_controller", null ],
         [ "bdev_rbd_create", "jsonrpc.html#rpc_bdev_rbd_create", null ],
         [ "bdev_rbd_delete", "jsonrpc.html#rpc_bdev_rbd_delete", null ],
         [ "bdev_delay_create", "jsonrpc.html#rpc_bdev_delay_create", null ],
@@ -225,7 +225,7 @@ var user_guides =
         [ "vhost_scsi_controller_remove_target", "jsonrpc.html#rpc_vhost_scsi_controller_remove_target", null ],
         [ "vhost_create_nvme_controller", "jsonrpc.html#rpc_vhost_create_nvme_controller", null ],
         [ "vhost_nvme_controller_add_ns", "jsonrpc.html#rpc_vhost_nvme_controller_add_ns", null ],
-        [ "construct_vhost_blk_controller", "jsonrpc.html#rpc_construct_vhost_blk_controller", null ],
+        [ "vhost_create_blk_controller", "jsonrpc.html#rpc_vhost_create_blk_controller", null ],
         [ "vhost_get_controllers", "jsonrpc.html#rpc_vhost_get_controllers", [
           [ "Response", "jsonrpc.html#rpc_vhost_get_controllers_response", null ],
           [ "Vhost block", "jsonrpc.html#rpc_vhost_get_controllers_blk", null ],

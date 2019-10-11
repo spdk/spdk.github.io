@@ -290,9 +290,9 @@ NVMe bdev</h1>
 <p>This command will create NVMe bdev of physical device in the system.</p>
 <p><code>rpc.py bdev_nvme_attach_controller -b Nvme0 -t RDMA -a 192.168.100.1 -f IPv4 -s 4420 -n nqn.2016-06.io.spdk:cnode1</code></p>
 <p>This command will create NVMe bdev of NVMe-oF resource.</p>
-<p>To remove a NVMe controller use the delete_nvme_controller command.</p>
-<p><code>rpc.py delete_nvme_controller Nvme0</code></p>
-<p>This command will remove NVMe controller named Nvme0.</p>
+<p>To remove an NVMe controller use the bdev_nvme_detach_controller command.</p>
+<p><code>rpc.py bdev_nvme_detach_controller Nvme0</code></p>
+<p>This command will remove NVMe bdev named Nvme0.</p>
 <h1><a class="anchor" id="bdev_ug_logical_volumes"></a>
 Logical volumes</h1>
 <p>The Logical Volumes library is a flexible storage space management system. It allows creating and managing virtual block devices with variable size on top of other bdevs. The SPDK Logical Volume library is built on top of <a class="el" href="blob.html">Blobstore Programmer's Guide</a>. For detailed description please refer to <a class="el" href="logical_volumes.html#lvol">Logical volume</a>.</p>
