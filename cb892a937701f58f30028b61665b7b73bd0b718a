@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "b432e4d3_92b0984a",
+        "filename": "cve_threat.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 1014935
+      },
+      "writtenOn": "2019-10-11T09:34:07Z",
+      "side": 1,
+      "message": "Sorry I didn\u0027t get it, I did add [Use Case .. ] line for vhost, so it\u0027s ok here?",
+      "parentUuid": "134c605f_e34320fc",
+      "revId": "cb892a937701f58f30028b61665b7b73bd0b718a",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "f2355b29_32d1a078",
         "filename": "cve_threat.md",
         "patchSetId": 2
@@ -33,6 +51,24 @@
       "revId": "cb892a937701f58f30028b61665b7b73bd0b718a",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "95726597_0fcbb320",
+        "filename": "cve_threat.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 72,
+      "author": {
+        "id": 1014935
+      },
+      "writtenOn": "2019-10-11T09:34:07Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "f2355b29_32d1a078",
+      "revId": "cb892a937701f58f30028b61665b7b73bd0b718a",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
     }
   ]
 }
