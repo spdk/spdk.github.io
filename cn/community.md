@@ -15,7 +15,7 @@ lang: cn
 
 # 邮件列表
 
-[SPDK邮件列表](https://lists.01.org/mailman/listinfo/spdk) ([归档](https://lists.01.org/pipermail/spdk/)) 可用于讨论使用、开发和设计问题。
+[SPDK邮件列表](https://lists.01.org/hyperkitty/list/spdk@lists.01.org/) 可用于讨论使用、开发和设计问题。
 
 # 社区会议
 

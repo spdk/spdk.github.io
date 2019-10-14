@@ -14,8 +14,9 @@ Find something to work on the backlog in your area of interest, or start/partici
 
 # Mailing List
 
-The [SPDK Mailing List](https://lists.01.org/mailman/listinfo/spdk) ([Archive](https://lists.01.org/pipermail/spdk/))
-is available for usage and development questions as well as design discussions.
+The
+[SPDK Mailing List](https://lists.01.org/hyperkitty/list/spdk@lists.01.org/) is
+available for usage and development questions as well as design discussions.
 
 # Community Meetings
 
