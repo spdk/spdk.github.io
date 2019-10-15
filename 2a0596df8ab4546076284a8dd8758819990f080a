@@ -1,0 +1,349 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "129ba8e1_f1ca9715",
+        "filename": "debug_tip.md",
+        "patchSetId": 12
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 1011289
+      },
+      "writtenOn": "2019-10-15T14:57:53Z",
+      "side": 1,
+      "message": "Can we change this to \"Investigating issues found in CI\" throughout?",
+      "range": {
+        "startLine": 8,
+        "startChar": 3,
+        "endLine": 8,
+        "endChar": 20
+      },
+      "revId": "2a0596df8ab4546076284a8dd8758819990f080a",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "ef3bc70e_cb569c0c",
+        "filename": "debug_tip.md",
+        "patchSetId": 12
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 1011289
+      },
+      "writtenOn": "2019-10-15T14:57:53Z",
+      "side": 1,
+      "message": "Lets\u0027s explain the different CI systems that are voting and how to identify which one is the one that \"counts\" (Jenkins vs \u0027other\u0027 but don\u0027t list the actual other ones as they may change)",
+      "range": {
+        "startLine": 15,
+        "startChar": 149,
+        "endLine": 15,
+        "endChar": 154
+      },
+      "revId": "2a0596df8ab4546076284a8dd8758819990f080a",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "11e76c03_35676570",
+        "filename": "debug_tip.md",
+        "patchSetId": 12
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 1011289
+      },
+      "writtenOn": "2019-10-15T14:57:53Z",
+      "side": 1,
+      "message": "execution",
+      "range": {
+        "startLine": 24,
+        "startChar": 674,
+        "endLine": 24,
+        "endChar": 681
+      },
+      "revId": "2a0596df8ab4546076284a8dd8758819990f080a",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "e89a7bda_b962cea6",
+        "filename": "debug_tip.md",
+        "patchSetId": 12
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 1011289
+      },
+      "writtenOn": "2019-10-15T14:57:53Z",
+      "side": 1,
+      "message": "I know what you\u0027re trying to say but can we just delete this last part?",
+      "range": {
+        "startLine": 24,
+        "startChar": 725,
+        "endLine": 24,
+        "endChar": 763
+      },
+      "revId": "2a0596df8ab4546076284a8dd8758819990f080a",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "ac06a4d7_43c2c125",
+        "filename": "debug_tip.md",
+        "patchSetId": 12
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 1011289
+      },
+      "writtenOn": "2019-10-15T14:57:53Z",
+      "side": 1,
+      "message": "encouraged",
+      "range": {
+        "startLine": 24,
+        "startChar": 601,
+        "endLine": 24,
+        "endChar": 612
+      },
+      "revId": "2a0596df8ab4546076284a8dd8758819990f080a",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "f555267f_6c99fd81",
+        "filename": "debug_tip.md",
+        "patchSetId": 12
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 1011289
+      },
+      "writtenOn": "2019-10-15T14:57:53Z",
+      "side": 1,
+      "message": "As soon as you can reproduce the CI issue locally, you are ready to debug it.",
+      "range": {
+        "startLine": 24,
+        "startChar": 427,
+        "endLine": 24,
+        "endChar": 574
+      },
+      "revId": "2a0596df8ab4546076284a8dd8758819990f080a",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "ffe37220_04ed359f",
+        "filename": "debug_tip.md",
+        "patchSetId": 12
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 1011289
+      },
+      "writtenOn": "2019-10-15T14:57:53Z",
+      "side": 1,
+      "message": "this sentence is confusing and I\u0027m not sure its even needed.  \"If anything I\u0027d say \"Running the tests locally should produce the same results as seen in CI.\"",
+      "range": {
+        "startLine": 24,
+        "startChar": 224,
+        "endLine": 24,
+        "endChar": 425
+      },
+      "revId": "2a0596df8ab4546076284a8dd8758819990f080a",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "daae923e_c3536e80",
+        "filename": "debug_tip.md",
+        "patchSetId": 12
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 1011289
+      },
+      "writtenOn": "2019-10-15T14:57:53Z",
+      "side": 1,
+      "message": "A configuration file is provided to specify which tests are to be executed as shown in the example below. Use `0` to unselect a test and `1` to select a test.",
+      "range": {
+        "startLine": 24,
+        "startChar": 0,
+        "endLine": 24,
+        "endChar": 223
+      },
+      "revId": "2a0596df8ab4546076284a8dd8758819990f080a",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "cf1167ff_30075526",
+        "filename": "debug_tip.md",
+        "patchSetId": 12
+      },
+      "lineNbr": 66,
+      "author": {
+        "id": 1011289
+      },
+      "writtenOn": "2019-10-15T14:57:53Z",
+      "side": 1,
+      "message": "as shown",
+      "range": {
+        "startLine": 66,
+        "startChar": 341,
+        "endLine": 66,
+        "endChar": 345
+      },
+      "revId": "2a0596df8ab4546076284a8dd8758819990f080a",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "b758149a_3c98d0d4",
+        "filename": "debug_tip.md",
+        "patchSetId": 12
+      },
+      "lineNbr": 66,
+      "author": {
+        "id": 1011289
+      },
+      "writtenOn": "2019-10-15T14:57:53Z",
+      "side": 1,
+      "message": "debug",
+      "range": {
+        "startLine": 66,
+        "startChar": 65,
+        "endLine": 66,
+        "endChar": 75
+      },
+      "revId": "2a0596df8ab4546076284a8dd8758819990f080a",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "043d08ea_3b7d5227",
+        "filename": "debug_tip.md",
+        "patchSetId": 12
+      },
+      "lineNbr": 66,
+      "author": {
+        "id": 1011289
+      },
+      "writtenOn": "2019-10-15T14:57:53Z",
+      "side": 1,
+      "message": "need",
+      "range": {
+        "startLine": 66,
+        "startChar": 164,
+        "endLine": 66,
+        "endChar": 177
+      },
+      "revId": "2a0596df8ab4546076284a8dd8758819990f080a",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "4ae15d1f_6de7387a",
+        "filename": "debug_tip.md",
+        "patchSetId": 12
+      },
+      "lineNbr": 66,
+      "author": {
+        "id": 1011289
+      },
+      "writtenOn": "2019-10-15T14:57:53Z",
+      "side": 1,
+      "message": "easy",
+      "range": {
+        "startLine": 66,
+        "startChar": 51,
+        "endLine": 66,
+        "endChar": 57
+      },
+      "revId": "2a0596df8ab4546076284a8dd8758819990f080a",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "1e07ce85_6375a408",
+        "filename": "debug_tip.md",
+        "patchSetId": 12
+      },
+      "lineNbr": 66,
+      "author": {
+        "id": 1011289
+      },
+      "writtenOn": "2019-10-15T14:57:53Z",
+      "side": 1,
+      "message": "dumps",
+      "range": {
+        "startLine": 66,
+        "startChar": 451,
+        "endLine": 66,
+        "endChar": 455
+      },
+      "revId": "2a0596df8ab4546076284a8dd8758819990f080a",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "8f92184e_6a148aa1",
+        "filename": "debug_tip.md",
+        "patchSetId": 12
+      },
+      "lineNbr": 66,
+      "author": {
+        "id": 1011289
+      },
+      "writtenOn": "2019-10-15T14:57:53Z",
+      "side": 1,
+      "message": "can",
+      "range": {
+        "startLine": 66,
+        "startChar": 402,
+        "endLine": 66,
+        "endChar": 407
+      },
+      "revId": "2a0596df8ab4546076284a8dd8758819990f080a",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "88f95b33_514e29b4",
+        "filename": "debug_tip.md",
+        "patchSetId": 12
+      },
+      "lineNbr": 95,
+      "author": {
+        "id": 1011289
+      },
+      "writtenOn": "2019-10-15T14:57:53Z",
+      "side": 1,
+      "message": "remove this",
+      "range": {
+        "startLine": 95,
+        "startChar": 23,
+        "endLine": 95,
+        "endChar": 39
+      },
+      "revId": "2a0596df8ab4546076284a8dd8758819990f080a",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    }
+  ]
+}
