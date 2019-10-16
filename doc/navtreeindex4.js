@@ -139,7 +139,7 @@ var NAVTREEINDEX4 =
 "jsonrpc.html#rpc_bdev_nvme_attach_controller":[3,7,2,18],
 "jsonrpc.html#rpc_bdev_nvme_detach_controller":[3,7,2,20],
 "jsonrpc.html#rpc_bdev_nvme_get_controllers":[3,7,2,19],
-"jsonrpc.html#rpc_bdev_nvme_send_cmd":[3,7,8,2],
+"jsonrpc.html#rpc_bdev_nvme_send_cmd":[3,7,8,3],
 "jsonrpc.html#rpc_bdev_nvme_set_hotplug":[3,7,2,17],
 "jsonrpc.html#rpc_bdev_nvme_set_options":[3,7,2,16],
 "jsonrpc.html#rpc_bdev_ocf_create":[3,7,2,6],
@@ -165,6 +165,7 @@ var NAVTREEINDEX4 =
 "jsonrpc.html#rpc_bdev_virtio_scsi_get_devices":[3,7,2,40],
 "jsonrpc.html#rpc_blobfs_create":[3,7,8,1],
 "jsonrpc.html#rpc_blobfs_detect":[3,7,8,0],
+"jsonrpc.html#rpc_blobfs_mount":[3,7,8,2],
 "jsonrpc.html#rpc_framework_get_config":[3,7,1,6],
 "jsonrpc.html#rpc_framework_get_subsystems":[3,7,1,5],
 "jsonrpc.html#rpc_framework_monitor_context_switch":[3,7,1,1],
@@ -216,7 +217,7 @@ var NAVTREEINDEX4 =
 "jsonrpc.html#rpc_nvmf_subsystem_remove_host":[3,7,4,8],
 "jsonrpc.html#rpc_nvmf_subsystem_remove_ns":[3,7,4,6],
 "jsonrpc.html#rpc_rpc_get_methods":[3,7,1,4],
-"jsonrpc.html#rpc_spdk_get_version":[3,7,8,3],
+"jsonrpc.html#rpc_spdk_get_version":[3,7,8,4],
 "jsonrpc.html#rpc_spdk_kill_instance":[3,7,1,0],
 "jsonrpc.html#rpc_thread_get_stats":[3,7,1,7],
 "jsonrpc.html#rpc_vhost_controller_set_coalescing":[3,7,5,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX4 =
 "jsonrpc_8h.html#a74afccd199dde8aaebd020ac513cf819":[13,0,29,9],
 "jsonrpc_8h.html#a7e40f9e08438d2468ac2f1a779801340":[13,0,29,24],
 "jsonrpc_8h.html#a88be481b43cb068b54a44595f0f3713f":[13,0,29,27],
-"jsonrpc_8h.html#a9185111b00d98e3e12adda0dce85a0e0":[13,0,29,10],
-"jsonrpc_8h.html#a97fe9c9d3f9eb731dd9cf320318d43aa":[13,0,29,2]
+"jsonrpc_8h.html#a9185111b00d98e3e12adda0dce85a0e0":[13,0,29,10]
 };

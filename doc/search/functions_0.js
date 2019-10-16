@@ -746,6 +746,7 @@ var searchData=
   ['spdk_5fsock_5fgroup_5fpoll',['spdk_sock_group_poll',['../sock_8h.html#aca9341be3f9ec5bd7e571f328e749328',1,'sock.h']]],
   ['spdk_5fsock_5fgroup_5fpoll_5fcount',['spdk_sock_group_poll_count',['../sock_8h.html#a73c5abe4d97ecc3521c37b345f7fbfd4',1,'sock.h']]],
   ['spdk_5fsock_5fgroup_5fremove_5fsock',['spdk_sock_group_remove_sock',['../sock_8h.html#ad52142b9c60b305a1eaaf869a321c790',1,'sock.h']]],
+  ['spdk_5fsock_5fis_5fconnected',['spdk_sock_is_connected',['../sock_8h.html#a60886d0bbf4dc4e6722e6300e7b3e10f',1,'sock.h']]],
   ['spdk_5fsock_5fis_5fipv4',['spdk_sock_is_ipv4',['../sock_8h.html#a73c174585e034587164b1a56d6e8a115',1,'sock.h']]],
   ['spdk_5fsock_5fis_5fipv6',['spdk_sock_is_ipv6',['../sock_8h.html#ae2fc8fd68b9988e2ec771a82914dcc80',1,'sock.h']]],
   ['spdk_5fsock_5flisten',['spdk_sock_listen',['../sock_8h.html#a4cc9153a7848b65e5487e5205f022909',1,'sock.h']]],

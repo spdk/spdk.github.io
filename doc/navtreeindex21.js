@@ -1,5 +1,7 @@
 var NAVTREEINDEX21 =
 {
+"structspdk__trace__register__fn.html#a2cd05182ab95ca91415b10eb95700a5e":[12,0,263,1],
+"structspdk__trace__register__fn.html#a3afb510e42a1289799babd284ea31cbc":[12,0,263,0],
 "structspdk__trace__register__fn.html#a8109be7fda1144908e5a3b67293ab5fb":[12,0,263,2],
 "structspdk__trace__register__fn.html#ab43c36349f9748fe3a0c45122e85a43b":[12,0,263,3],
 "structspdk__trace__tpoint.html":[12,0,264],
@@ -247,7 +249,5 @@ var NAVTREEINDEX21 =
 "unionspdk__nvme__feat__host__mem__buffer.html#a0d346a21c85bf84cc31c7470e7e9bae8":[12,0,112,0],
 "unionspdk__nvme__feat__host__mem__buffer.html#a68c28c2479533b01ab8edd60cdfed6a0":[12,0,112,2],
 "unionspdk__nvme__feat__host__mem__buffer.html#a9f2c6e219f3ca6eef1841c3791ecec4d":[12,0,112,4],
-"unionspdk__nvme__feat__host__mem__buffer.html#ae38cde477f1878b3ec094fade9da7772":[12,0,112,3],
-"unionspdk__nvme__feat__host__mem__buffer.html#af43cc748ba99dcecb59f3359fd731084":[12,0,112,1],
-"unionspdk__nvme__feat__interrupt__coalescing.html":[12,0,113]
+"unionspdk__nvme__feat__host__mem__buffer.html#ae38cde477f1878b3ec094fade9da7772":[12,0,112,3]
 };

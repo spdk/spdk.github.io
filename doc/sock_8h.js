@@ -13,6 +13,7 @@ var sock_8h =
     [ "spdk_sock_group_poll", "sock_8h.html#aca9341be3f9ec5bd7e571f328e749328", null ],
     [ "spdk_sock_group_poll_count", "sock_8h.html#a73c5abe4d97ecc3521c37b345f7fbfd4", null ],
     [ "spdk_sock_group_remove_sock", "sock_8h.html#ad52142b9c60b305a1eaaf869a321c790", null ],
+    [ "spdk_sock_is_connected", "sock_8h.html#a60886d0bbf4dc4e6722e6300e7b3e10f", null ],
     [ "spdk_sock_is_ipv4", "sock_8h.html#a73c174585e034587164b1a56d6e8a115", null ],
     [ "spdk_sock_is_ipv6", "sock_8h.html#ae2fc8fd68b9988e2ec771a82914dcc80", null ],
     [ "spdk_sock_listen", "sock_8h.html#a4cc9153a7848b65e5487e5205f022909", null ],

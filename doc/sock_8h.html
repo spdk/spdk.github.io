@@ -202,6 +202,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a73c174585e034587164b1a56d6e8a115"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sock_8h.html#a73c174585e034587164b1a56d6e8a115">spdk_sock_is_ipv4</a> (struct spdk_sock *sock)</td></tr>
 <tr class="memdesc:a73c174585e034587164b1a56d6e8a115"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check whether the address of socket is ipv4.  <a href="#a73c174585e034587164b1a56d6e8a115">More...</a><br /></td></tr>
 <tr class="separator:a73c174585e034587164b1a56d6e8a115"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60886d0bbf4dc4e6722e6300e7b3e10f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sock_8h.html#a60886d0bbf4dc4e6722e6300e7b3e10f">spdk_sock_is_connected</a> (struct spdk_sock *sock)</td></tr>
+<tr class="memdesc:a60886d0bbf4dc4e6722e6300e7b3e10f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check whether the socket is currently connected.  <a href="#a60886d0bbf4dc4e6722e6300e7b3e10f">More...</a><br /></td></tr>
+<tr class="separator:a60886d0bbf4dc4e6722e6300e7b3e10f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a06f3441fbe7ea447b7ae03e71e074e27"><td class="memItemLeft" align="right" valign="top">struct spdk_sock_group *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sock_8h.html#a06f3441fbe7ea447b7ae03e71e074e27">spdk_sock_group_create</a> (void *ctx)</td></tr>
 <tr class="memdesc:a06f3441fbe7ea447b7ae03e71e074e27"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new socket group with user provided pointer.  <a href="#a06f3441fbe7ea447b7ae03e71e074e27">More...</a><br /></td></tr>
 <tr class="separator:a06f3441fbe7ea447b7ae03e71e074e27"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -692,6 +695,33 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 on success, -1 on failure. </dd></dl>
+
+</div>
+</div>
+<a id="a60886d0bbf4dc4e6722e6300e7b3e10f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a60886d0bbf4dc4e6722e6300e7b3e10f">&#9670;&nbsp;</a></span>spdk_sock_is_connected()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool spdk_sock_is_connected </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_sock *&#160;</td>
+          <td class="paramname"><em>sock</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Check whether the socket is currently connected. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sock</td><td>Socket to check</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the socket is connected or false otherwise. </dd></dl>
 
 </div>
 </div>

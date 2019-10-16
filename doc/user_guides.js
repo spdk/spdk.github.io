@@ -263,6 +263,7 @@ var user_guides =
       [ "Blobfs", "jsonrpc.html#jsonrpc_components_blobfs", [
         [ "blobfs_detect", "jsonrpc.html#rpc_blobfs_detect", null ],
         [ "blobfs_create", "jsonrpc.html#rpc_blobfs_create", null ],
+        [ "blobfs_mount", "jsonrpc.html#rpc_blobfs_mount", null ],
         [ "bdev_nvme_send_cmd", "jsonrpc.html#rpc_bdev_nvme_send_cmd", null ],
         [ "spdk_get_version", "jsonrpc.html#rpc_spdk_get_version", null ]
       ] ]

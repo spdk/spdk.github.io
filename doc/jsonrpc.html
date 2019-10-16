@@ -2442,6 +2442,21 @@ blobfs_create</h2>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;method&quot;: &quot;blobfs_create&quot;,</div><div class="line">  &quot;params&quot;: {</div><div class="line">    &quot;bdev_name&quot;: &quot;Malloc0&quot;,</div><div class="line">    &quot;cluster_sz&quot;: 1M</div><div class="line">  }</div><div class="line">}</div></div><!-- fragment --><p>Example response:</p>
+<div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: &quot;true&quot;</div><div class="line">}</div></div><!-- fragment --><h2><a class="anchor" id="rpc_blobfs_mount"></a>
+blobfs_mount</h2>
+<p>Mount a blobfs on bdev to one host path through FUSE</p>
+<h3>Parameters</h3>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Name  </th><th class="markdownTableHeadNone">Optional  </th><th class="markdownTableHeadNone">Type  </th><th class="markdownTableHeadNone">Description   </th></tr>
+<tr class="markdownTableBody" class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">bdev_name  </td><td class="markdownTableBodyNone">Required  </td><td class="markdownTableBodyNone">string  </td><td class="markdownTableBodyNone">Block device name where the blobfs is   </td></tr>
+<tr class="markdownTableBody" class="markdownTableRowEven">
+<td class="markdownTableBodyNone">mountpoint  </td><td class="markdownTableBodyNone">Required  </td><td class="markdownTableBodyNone">string  </td><td class="markdownTableBodyNone">Mountpoint path in host to mount blobfs   </td></tr>
+</table>
+<h3>Example</h3>
+<p>Example request:</p>
+<div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;method&quot;: &quot;&quot;blobfs_mount&quot;&quot;,</div><div class="line">  &quot;params&quot;: {</div><div class="line">    &quot;bdev_name&quot;: &quot;Malloc0&quot;,</div><div class="line">    &quot;mountpoint&quot;: &quot;/mnt/&quot;</div><div class="line">  }</div><div class="line">}</div></div><!-- fragment --><p>Example response:</p>
 <div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: &quot;true&quot;</div><div class="line">}</div></div><!-- fragment --><h1>Miscellaneous RPC commands</h1>
 <h2><a class="anchor" id="rpc_bdev_nvme_send_cmd"></a>
 bdev_nvme_send_cmd</h2>
