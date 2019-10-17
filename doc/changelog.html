@@ -169,6 +169,8 @@ v19.10: (Upcoming Release)</h1>
 <p>New 'resize' event has been added to notify about change of block count property of block device. Event is delivered only if block device was opened with spdk_bdev_open_ext function.</p>
 <h2>blobstore</h2>
 <p>A new spdk_bdev_create_bs_dev_from_desc function has been added and spdk_bdev_create_bs_dev function has been deprecated. The new create function can cowork with spdk_bdev_open_ext function, which provides callback function that will be called by asynchronous event such as bdev removal.</p>
+<h2>DPDK</h2>
+<p>Updated DPDK submodule to DPDK 19.08.</p>
 <h2>blobfs_bdev</h2>
 <p>A new blobfs module <code>bdev</code> has been added to simplify the operations of blobfs on bdev.</p>
 <p>Function spdk_blobfs_bdev_detect is added to detect whether blobfs exists on the given block device.</p>
