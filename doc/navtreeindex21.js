@@ -1,5 +1,7 @@
 var NAVTREEINDEX21 =
 {
+"structspdk__trace__owner.html#ae1ff4de93399884bcd351861dff118f0":[12,0,262,1],
+"structspdk__trace__register__fn.html":[12,0,263],
 "structspdk__trace__register__fn.html#a2cd05182ab95ca91415b10eb95700a5e":[12,0,263,1],
 "structspdk__trace__register__fn.html#a3afb510e42a1289799babd284ea31cbc":[12,0,263,0],
 "structspdk__trace__register__fn.html#a8109be7fda1144908e5a3b67293ab5fb":[12,0,263,2],
@@ -247,7 +249,5 @@ var NAVTREEINDEX21 =
 "unionspdk__nvme__feat__host__identifier.html#abe582ebd57c5130773da6ec66e49007c":[12,0,111,1],
 "unionspdk__nvme__feat__host__mem__buffer.html":[12,0,112],
 "unionspdk__nvme__feat__host__mem__buffer.html#a0d346a21c85bf84cc31c7470e7e9bae8":[12,0,112,0],
-"unionspdk__nvme__feat__host__mem__buffer.html#a68c28c2479533b01ab8edd60cdfed6a0":[12,0,112,2],
-"unionspdk__nvme__feat__host__mem__buffer.html#a9f2c6e219f3ca6eef1841c3791ecec4d":[12,0,112,4],
-"unionspdk__nvme__feat__host__mem__buffer.html#ae38cde477f1878b3ec094fade9da7772":[12,0,112,3]
+"unionspdk__nvme__feat__host__mem__buffer.html#a68c28c2479533b01ab8edd60cdfed6a0":[12,0,112,2]
 };
