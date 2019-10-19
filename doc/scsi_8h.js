@@ -47,7 +47,7 @@ var scsi_8h =
     [ "spdk_scsi_dev_get_id", "scsi_8h.html#aa53c0ae5af6584eb19cfcc75799dfce8", null ],
     [ "spdk_scsi_dev_get_lun", "scsi_8h.html#ab5c7ed714025d329dc2a69fad041158f", null ],
     [ "spdk_scsi_dev_get_name", "scsi_8h.html#a6e92c13ec584430c7fb2ace1f84d4022", null ],
-    [ "spdk_scsi_dev_has_pending_tasks", "scsi_8h.html#a5438b53e8e2b7efdfcf8af756e23320b", null ],
+    [ "spdk_scsi_dev_has_pending_tasks", "scsi_8h.html#a7c9b33030b7b39787f8dc3b369a49382", null ],
     [ "spdk_scsi_dev_queue_mgmt_task", "scsi_8h.html#ab98745bdfde673aca36a6f5e140ec849", null ],
     [ "spdk_scsi_dev_queue_task", "scsi_8h.html#a715f198c4f072642eb951ecdddb0e624", null ],
     [ "spdk_scsi_fini", "scsi_8h.html#aaf02842cabd2b58b207945279a498a0e", null ],

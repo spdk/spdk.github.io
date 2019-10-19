@@ -266,9 +266,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="scsi
 <tr class="memitem:ab5c7ed714025d329dc2a69fad041158f"><td class="memItemLeft" align="right" valign="top">struct spdk_scsi_lun *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="scsi_8h.html#ab5c7ed714025d329dc2a69fad041158f">spdk_scsi_dev_get_lun</a> (struct spdk_scsi_dev *dev, int lun_id)</td></tr>
 <tr class="memdesc:ab5c7ed714025d329dc2a69fad041158f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the logical unit of the given SCSI device whose id is lun_id.  <a href="#ab5c7ed714025d329dc2a69fad041158f">More...</a><br /></td></tr>
 <tr class="separator:ab5c7ed714025d329dc2a69fad041158f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5438b53e8e2b7efdfcf8af756e23320b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="scsi_8h.html#a5438b53e8e2b7efdfcf8af756e23320b">spdk_scsi_dev_has_pending_tasks</a> (const struct spdk_scsi_dev *dev)</td></tr>
-<tr class="memdesc:a5438b53e8e2b7efdfcf8af756e23320b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check whether the SCSI device has any pending task.  <a href="#a5438b53e8e2b7efdfcf8af756e23320b">More...</a><br /></td></tr>
-<tr class="separator:a5438b53e8e2b7efdfcf8af756e23320b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c9b33030b7b39787f8dc3b369a49382"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="scsi_8h.html#a7c9b33030b7b39787f8dc3b369a49382">spdk_scsi_dev_has_pending_tasks</a> (const struct spdk_scsi_dev *dev, const struct spdk_scsi_port *initiator_port)</td></tr>
+<tr class="memdesc:a7c9b33030b7b39787f8dc3b369a49382"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check whether the SCSI device has any pending task.  <a href="#a7c9b33030b7b39787f8dc3b369a49382">More...</a><br /></td></tr>
+<tr class="separator:a7c9b33030b7b39787f8dc3b369a49382"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a40945295e5d0c3ffede09f50a7fa861d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="scsi_8h.html#a40945295e5d0c3ffede09f50a7fa861d">spdk_scsi_dev_destruct</a> (struct spdk_scsi_dev *dev, spdk_scsi_dev_destruct_cb_t cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:a40945295e5d0c3ffede09f50a7fa861d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destruct the SCSI decice.  <a href="#a40945295e5d0c3ffede09f50a7fa861d">More...</a><br /></td></tr>
 <tr class="separator:a40945295e5d0c3ffede09f50a7fa861d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -822,8 +822,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="scsi
 
 </div>
 </div>
-<a id="a5438b53e8e2b7efdfcf8af756e23320b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5438b53e8e2b7efdfcf8af756e23320b">&#9670;&nbsp;</a></span>spdk_scsi_dev_has_pending_tasks()</h2>
+<a id="a7c9b33030b7b39787f8dc3b369a49382"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7c9b33030b7b39787f8dc3b369a49382">&#9670;&nbsp;</a></span>spdk_scsi_dev_has_pending_tasks()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -832,8 +832,18 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="scsi
           <td class="memname">bool spdk_scsi_dev_has_pending_tasks </td>
           <td>(</td>
           <td class="paramtype">const struct spdk_scsi_dev *&#160;</td>
-          <td class="paramname"><em>dev</em></td><td>)</td>
+          <td class="paramname"><em>dev</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">const struct spdk_scsi_port *&#160;</td>
+          <td class="paramname"><em>initiator_port</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -841,7 +851,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="scsi
 <p>Check whether the SCSI device has any pending task. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">dev</td><td>SCSI device.</td></tr>
+    <tr><td class="paramname">dev</td><td>SCSI device. </td></tr>
+    <tr><td class="paramname">initiator_port</td><td>Check tasks only from the initiator if specified, or all all tasks otherwise.</td></tr>
   </table>
   </dd>
 </dl>
