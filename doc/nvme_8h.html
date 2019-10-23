@@ -1137,7 +1137,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>0 if successfully submitted, negated errno value otherwise. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>0 if successfully submitted, negated errno if resources could not be allocated for this request, -ENXIO if the admin qpair is failed at the transport layer. </dd></dl>
 
 </div>
 </div>
@@ -1207,7 +1207,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>0 on success, negated errno on failure. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>0 if successfully submitted, negated errno if resources could not be allocated for this request, -ENXIO if the admin qpair is failed at the transport layer. </dd></dl>
 
 </div>
 </div>
@@ -1283,7 +1283,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>0 if successfully submitted, ENOMEM if resources could not be allocated for this request. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>0 if successfully submitted, -ENOMEM if resources could not be allocated for this request, -ENXIO if the admin qpair is failed at the transport layer. </dd></dl>
 
 </div>
 </div>
@@ -1363,7 +1363,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>0 if successfully submitted, ENOMEM if resources could not be allocated for this request</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>0 if successfully submitted, -ENOMEM if resources could not be allocated for this request, -ENXIO if the admin qpair is failed at the transport layer.</dd></dl>
 <p>This function is thread safe and can be called at any point while the controller is attached to the SPDK NVMe driver.</p>
 <p>Call <a class="el" href="nvme_8h.html#a10282695461985f58f54de022911745e">spdk_nvme_ctrlr_process_admin_completions()</a> to poll for completion of commands submitted through this function.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="nvme_8h.html#a63fda1acce45c71590ed0db99220d26b" title="Set specific feature for the given NVMe controller and namespace ID. ">spdk_nvme_ctrlr_cmd_set_feature_ns()</a> </dd></dl>
@@ -1449,7 +1449,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>0 if successfully submitted, negated errno if resources could not be allocated for this request. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>0 if successfully submitted, negated errno if resources could not be allocated for this request, -ENXIO if the admin qpair is failed at the transport layer. </dd></dl>
 
 </div>
 </div>
@@ -1525,7 +1525,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>0 on success, negated errno on failure. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>0 if successfully submitted, negated errno if resources could not be allocated for this request, -ENXIO if the admin qpair is failed at the transport layer. </dd></dl>
 
 </div>
 </div>
@@ -1608,7 +1608,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>0 on success, negated errno on failure. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>0 if successfully submitted, negated errno if resources could not be allocated for this request, -ENXIO if the admin qpair is failed at the transport layer. </dd></dl>
 
 </div>
 </div>
@@ -1691,7 +1691,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>0 if successfully submitted, negated errno if resources could not be allocated for this request. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>0 if successfully submitted, negated errno if resources could not be allocated for this request, -ENXIO if the admin qpair is failed at the transport layer. </dd></dl>
 
 </div>
 </div>
@@ -1778,7 +1778,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>0 if successfully submitted, ENOMEM if resources could not be allocated for this request.</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>0 if successfully submitted, -ENOMEM if resources could not be allocated for this request, -ENXIO if the admin qpair is failed at the transport layer.</dd></dl>
 <p>This function is thread safe and can be called at any point while the controller is attached to the SPDK NVMe driver.</p>
 <p>Call <a class="el" href="nvme_8h.html#a10282695461985f58f54de022911745e">spdk_nvme_ctrlr_process_admin_completions()</a> to poll for completion of commands submitted through this function.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="nvme_8h.html#abc0f038c06c49df0e75148faf6cc4b51" title="Get specific feature from given NVMe controller. ">spdk_nvme_ctrlr_cmd_get_feature_ns()</a> </dd></dl>
@@ -2575,7 +2575,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>0 on success, negated errno on failure. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>0 if successfully submitted, -ENOMEN if resources could not be allocated for this request, -ENXIO if the admin qpair is failed at the transport layer. </dd></dl>
 
 </div>
 </div>
@@ -2751,7 +2751,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>number of completions processed (may be 0) or negated on error. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>number of completions processed (may be 0) or negated on error. -ENXIO in the special case that the qpair is failed at the transport layer. </dd></dl>
 
 </div>
 </div>
@@ -3238,7 +3238,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>0 if successfully submitted, negated errno if an nvme_request structure cannot be allocated for the I/O request. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>0 if successfully submitted, negated errnos on the following error conditions: -EINVAL: The request is malformed. -ENOMEM: The request cannot be allocated. -ENXIO: The qpair is failed at the transport level. </dd></dl>
 
 </div>
 </div>
@@ -3340,7 +3340,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>0 if successfully submitted, negated errno if an nvme_request structure cannot be allocated for the I/O request. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>0 if successfully submitted, negated errnos on the following error conditions: -EINVAL: The request is malformed. -ENOMEM: The request cannot be allocated. -ENXIO: The qpair is failed at the transport level. </dd></dl>
 
 </div>
 </div>
@@ -3428,7 +3428,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>0 if successfully submitted, negated errno if an nvme_request structure cannot be allocated for the I/O request. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>0 if successfully submitted, negated errnos on the following error conditions: -EINVAL: The request is malformed. -ENOMEM: The request cannot be allocated. -ENXIO: The qpair is failed at the transport level. </dd></dl>
 
 </div>
 </div>
@@ -3557,7 +3557,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>0 if successfully submitted, negated errno if an nvme_request structure cannot be allocated for the I/O request. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>0 if successfully submitted, negated errno if an nvme_request structure cannot be allocated for the I/O request, -ENXIO if the qpair is failed at the transport level. </dd></dl>
 
 </div>
 </div>
@@ -3638,7 +3638,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>0 if successfully submitted, negated errno if an nvme_request structure cannot be allocated for the I/O request. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>0 if successfully submitted, negated errnos on the following error conditions: -EINVAL: The request is malformed. -ENOMEM: The request cannot be allocated. -ENXIO: The qpair is failed at the transport level. </dd></dl>
 
 </div>
 </div>
@@ -3739,7 +3739,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>0 if successfully submitted, negated errno if an nvme_request structure cannot be allocated for the I/O request. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>0 if successfully submitted, negated errnos on the following error conditions: -EINVAL: The request is malformed. -ENOMEM: The request cannot be allocated. -ENXIO: The qpair is failed at the transport level. </dd></dl>
 
 </div>
 </div>
@@ -3827,7 +3827,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>0 if successfully submitted, negated errno if an nvme_request structure cannot be allocated for the I/O request. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>0 if successfully submitted, negated errnos on the following error conditions: -EINVAL: The request is malformed. -ENOMEM: The request cannot be allocated. -ENXIO: The qpair is failed at the transport level. </dd></dl>
 
 </div>
 </div>
@@ -3935,7 +3935,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>0 if successfully submitted, ENOMEM if an nvme_request structure cannot be allocated for the I/O request</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>0 if successfully submitted, negated errnos on the following error conditions: -EINVAL: The request is malformed. -ENOMEM: The request cannot be allocated. -ENXIO: The qpair is failed at the transport level.</dd></dl>
 <p>The command is submitted to a qpair allocated by <a class="el" href="nvme_8h.html#a13f745d239dab9b8f934fae2ad4984a2" title="Allocate an I/O queue pair (submission and completion queue). ">spdk_nvme_ctrlr_alloc_io_qpair()</a>. The user must ensure that only one thread submits I/O on a given qpair at any given time. </p>
 
 </div>
@@ -4017,7 +4017,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>0 if successfully submitted, negated errno if an nvme_request structure cannot be allocated for the I/O request. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>0 if successfully submitted, negated errno if an nvme_request structure cannot be allocated for the I/O request, -ENXIO if the qpair is failed at the transport level. </dd></dl>
 
 </div>
 </div>
@@ -4098,7 +4098,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>0 if successfully submitted, negated errno if an nvme_request structure cannot be allocated for the I/O request. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>0 if successfully submitted, negated errno if an nvme_request structure cannot be allocated for the I/O request, -ENXIO if the qpair is failed at the transport level. </dd></dl>
 
 </div>
 </div>
@@ -4179,7 +4179,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>0 if successfully submitted, negated errno if an nvme_request structure cannot be allocated for the I/O request. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>0 if successfully submitted, negated errno if an nvme_request structure cannot be allocated for the I/O request, -ENXIO if the qpair is failed at the transport level. </dd></dl>
 
 </div>
 </div>
@@ -4246,7 +4246,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>0 if successfully submitted, negated errno if an nvme_request structure cannot be allocated for the I/O request. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>0 if successfully submitted, negated errno if an nvme_request structure cannot be allocated for the I/O request, -ENXIO if the qpair is failed at the transport level. </dd></dl>
 
 </div>
 </div>
@@ -4327,7 +4327,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>0 if successfully submitted, negated errno if an nvme_request structure cannot be allocated for the I/O request </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>0 if successfully submitted, negated errnos on the following error conditions: -EINVAL: The request is malformed. -ENOMEM: The request cannot be allocated. -ENXIO: The qpair is failed at the transport level. </dd></dl>
 
 </div>
 </div>
@@ -4394,7 +4394,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>0 if successfully submitted, negated errno if an nvme_request structure cannot be allocated for the I/O request. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>0 if successfully submitted, negated errnos on the following error conditions: -EINVAL: The request is malformed. -ENOMEM: The request cannot be allocated. -ENXIO: The qpair is failed at the transport level. </dd></dl>
 
 </div>
 </div>
@@ -4496,7 +4496,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>0 if successfully submitted, negated errno if an nvme_request structure cannot be allocated for the I/O request. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>0 if successfully submitted, negated errnos on the following error conditions: -EINVAL: The request is malformed. -ENOMEM: The request cannot be allocated. -ENXIO: The qpair is failed at the transport level. </dd></dl>
 
 </div>
 </div>
@@ -4570,7 +4570,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>0 if successfully submitted, negated errno if an nvme_request structure cannot be allocated for the I/O request. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>0 if successfully submitted, negated errnos on the following error conditions: -EINVAL: The request is malformed. -ENOMEM: The request cannot be allocated. -ENXIO: The qpair is failed at the transport level. </dd></dl>
 
 </div>
 </div>
@@ -4658,7 +4658,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>0 if successfully submitted, negated errno if an nvme_request structure cannot be allocated for the I/O request. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>0 if successfully submitted, negated errnos on the following error conditions: -EINVAL: The request is malformed. -ENOMEM: The request cannot be allocated. -ENXIO: The qpair is failed at the transport level. </dd></dl>
 
 </div>
 </div>
@@ -4767,7 +4767,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>0 if successfully submitted, ENOMEM if an nvme_request structure cannot be allocated for the I/O request. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>0 if successfully submitted, negated errnos on the following error conditions: -EINVAL: The request is malformed. -ENOMEM: The request cannot be allocated. -ENXIO: The qpair is failed at the transport level. </dd></dl>
 
 </div>
 </div>
@@ -5635,7 +5635,7 @@ value other than 0 and -EAGAIN probe error with one controller. </dd></dl>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>number of completions processed (may be 0) or negated on error. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>number of completions processed (may be 0) or negated on error. -ENXIO in the special case that the qpair is failed at the transport layer. </dd></dl>
 
 </div>
 </div>
