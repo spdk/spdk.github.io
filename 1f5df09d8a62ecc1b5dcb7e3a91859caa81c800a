@@ -16,6 +16,24 @@
       "revId": "1f5df09d8a62ecc1b5dcb7e3a91859caa81c800a",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "1c623e47_8e0ff318",
+        "filename": "whitepaper.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1011207
+      },
+      "writtenOn": "2019-10-24T02:09:38Z",
+      "side": 0,
+      "message": "Done. Patch https://review.gerrithub.io/c/spdk/spdk.github.io/+/472233 created.",
+      "parentUuid": "54152a39_63da9655",
+      "revId": "1f5df09d8a62ecc1b5dcb7e3a91859caa81c800a",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
     }
   ]
 }
