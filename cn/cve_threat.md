@@ -1,6 +1,7 @@
 ---
 layout: default
 title:  "SPDK常见漏洞与曝光(CVE)流程"
+lang: cn
 ---
 
 # 本文包括:
