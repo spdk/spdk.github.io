@@ -1,6 +1,7 @@
 ---
 layout: default
 title:  "SPDK程序调试建议"
+lang: cn
 ---
 
 # 本文涉及到:
