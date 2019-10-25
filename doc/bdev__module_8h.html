@@ -280,9 +280,9 @@ typedef&#160;</td><td class="memItemRight" valign="bottom"><b>STAILQ_HEAD</b> (,
 <tr class="memitem:a3247574caabc2b31796861a10b2c9cab"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev__module_8h.html#a3247574caabc2b31796861a10b2c9cab">spdk_bdev_io_complete</a> (struct <a class="el" href="structspdk__bdev__io.html">spdk_bdev_io</a> *bdev_io, enum <a class="el" href="bdev__module_8h.html#aa35cc1485b6ba4351c2fb4fbd7125c93">spdk_bdev_io_status</a> status)</td></tr>
 <tr class="memdesc:a3247574caabc2b31796861a10b2c9cab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Complete a bdev_io.  <a href="#a3247574caabc2b31796861a10b2c9cab">More...</a><br /></td></tr>
 <tr class="separator:a3247574caabc2b31796861a10b2c9cab"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab6501226511ef3f463e42cbcbf2585c0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev__module_8h.html#ab6501226511ef3f463e42cbcbf2585c0">spdk_bdev_io_complete_nvme_status</a> (struct <a class="el" href="structspdk__bdev__io.html">spdk_bdev_io</a> *bdev_io, int sct, int sc)</td></tr>
-<tr class="memdesc:ab6501226511ef3f463e42cbcbf2585c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Complete a bdev_io with an NVMe status code.  <a href="#ab6501226511ef3f463e42cbcbf2585c0">More...</a><br /></td></tr>
-<tr class="separator:ab6501226511ef3f463e42cbcbf2585c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3341d564a521b3e7874f72fc1390f043"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev__module_8h.html#a3341d564a521b3e7874f72fc1390f043">spdk_bdev_io_complete_nvme_status</a> (struct <a class="el" href="structspdk__bdev__io.html">spdk_bdev_io</a> *bdev_io, uint32_t cdw0, int sct, int sc)</td></tr>
+<tr class="memdesc:a3341d564a521b3e7874f72fc1390f043"><td class="mdescLeft">&#160;</td><td class="mdescRight">Complete a bdev_io with an NVMe status code and DW0 completion queue entry.  <a href="#a3341d564a521b3e7874f72fc1390f043">More...</a><br /></td></tr>
+<tr class="separator:a3341d564a521b3e7874f72fc1390f043"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4271696fa055f456bedb6bdebce25dbd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev__module_8h.html#a4271696fa055f456bedb6bdebce25dbd">spdk_bdev_io_complete_scsi_status</a> (struct <a class="el" href="structspdk__bdev__io.html">spdk_bdev_io</a> *bdev_io, enum spdk_scsi_status sc, enum spdk_scsi_sense sk, uint8_t asc, uint8_t ascq)</td></tr>
 <tr class="memdesc:a4271696fa055f456bedb6bdebce25dbd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Complete a bdev_io with a SCSI status code.  <a href="#a4271696fa055f456bedb6bdebce25dbd">More...</a><br /></td></tr>
 <tr class="separator:a4271696fa055f456bedb6bdebce25dbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -627,8 +627,8 @@ typedef&#160;</td><td class="memItemRight" valign="bottom"><b>TAILQ_HEAD</b> (bd
 
 </div>
 </div>
-<a id="ab6501226511ef3f463e42cbcbf2585c0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab6501226511ef3f463e42cbcbf2585c0">&#9670;&nbsp;</a></span>spdk_bdev_io_complete_nvme_status()</h2>
+<a id="a3341d564a521b3e7874f72fc1390f043"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3341d564a521b3e7874f72fc1390f043">&#9670;&nbsp;</a></span>spdk_bdev_io_complete_nvme_status()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -638,6 +638,12 @@ typedef&#160;</td><td class="memItemRight" valign="bottom"><b>TAILQ_HEAD</b> (bd
           <td>(</td>
           <td class="paramtype">struct <a class="el" href="structspdk__bdev__io.html">spdk_bdev_io</a> *&#160;</td>
           <td class="paramname"><em>bdev_io</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>cdw0</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -659,10 +665,11 @@ typedef&#160;</td><td class="memItemRight" valign="bottom"><b>TAILQ_HEAD</b> (bd
       </table>
 </div><div class="memdoc">
 
-<p>Complete a bdev_io with an NVMe status code. </p>
+<p>Complete a bdev_io with an NVMe status code and DW0 completion queue entry. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">bdev_io</td><td>I/O to complete. </td></tr>
+    <tr><td class="paramname">cdw0</td><td>NVMe Completion Queue DW0 value (set to 0 if not applicable) </td></tr>
     <tr><td class="paramname">sct</td><td>NVMe Status Code Type. </td></tr>
     <tr><td class="paramname">sc</td><td>NVMe Status Code. </td></tr>
   </table>

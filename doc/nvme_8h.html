@@ -286,9 +286,18 @@ Functions</h2></td></tr>
 <tr class="memitem:a4b63c225c3cce6da60fdbfb6f54b11e2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a4b63c225c3cce6da60fdbfb6f54b11e2">spdk_nvme_detach</a> (struct spdk_nvme_ctrlr *ctrlr)</td></tr>
 <tr class="memdesc:a4b63c225c3cce6da60fdbfb6f54b11e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Detach specified device returned by <a class="el" href="nvme_8h.html#a225bbc386ec518ae21bd5536f21db45d" title="Enumerate the bus indicated by the transport ID and attach the userspace NVMe driver to each device f...">spdk_nvme_probe()</a>'s attach_cb from the NVMe driver.  <a href="#a4b63c225c3cce6da60fdbfb6f54b11e2">More...</a><br /></td></tr>
 <tr class="separator:a4b63c225c3cce6da60fdbfb6f54b11e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6eacd62ee8fbab40e1066bc0a53485f3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a6eacd62ee8fbab40e1066bc0a53485f3">spdk_nvme_ctrlr_set_trid</a> (struct spdk_nvme_ctrlr *ctrlr, struct <a class="el" href="structspdk__nvme__transport__id.html">spdk_nvme_transport_id</a> *trid)</td></tr>
+<tr class="memdesc:a6eacd62ee8fbab40e1066bc0a53485f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update the transport ID for a given controller.  <a href="#a6eacd62ee8fbab40e1066bc0a53485f3">More...</a><br /></td></tr>
+<tr class="separator:a6eacd62ee8fbab40e1066bc0a53485f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae13ccd2ea831842a5008eb95a32545c3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#ae13ccd2ea831842a5008eb95a32545c3">spdk_nvme_ctrlr_reset</a> (struct spdk_nvme_ctrlr *ctrlr)</td></tr>
 <tr class="memdesc:ae13ccd2ea831842a5008eb95a32545c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform a full hardware reset of the NVMe controller.  <a href="#ae13ccd2ea831842a5008eb95a32545c3">More...</a><br /></td></tr>
 <tr class="separator:ae13ccd2ea831842a5008eb95a32545c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b7578aeee6b6a092a4a4013a2f32ce5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a4b7578aeee6b6a092a4a4013a2f32ce5">spdk_nvme_ctrlr_fail</a> (struct spdk_nvme_ctrlr *ctrlr)</td></tr>
+<tr class="memdesc:a4b7578aeee6b6a092a4a4013a2f32ce5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fail the given NVMe controller.  <a href="#a4b7578aeee6b6a092a4a4013a2f32ce5">More...</a><br /></td></tr>
+<tr class="separator:a4b7578aeee6b6a092a4a4013a2f32ce5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1cdd28db5de54dfee308ea0a3c4f1442"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a1cdd28db5de54dfee308ea0a3c4f1442">spdk_nvme_ctrlr_is_failed</a> (struct spdk_nvme_ctrlr *ctrlr)</td></tr>
+<tr class="memdesc:a1cdd28db5de54dfee308ea0a3c4f1442"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function returns the failed status of a given controller.  <a href="#a1cdd28db5de54dfee308ea0a3c4f1442">More...</a><br /></td></tr>
+<tr class="separator:a1cdd28db5de54dfee308ea0a3c4f1442"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5a9daf15b5008ac36c12e7b8db7bdec9"><td class="memItemLeft" align="right" valign="top">const struct <a class="el" href="structspdk__nvme__ctrlr__data.html">spdk_nvme_ctrlr_data</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a5a9daf15b5008ac36c12e7b8db7bdec9">spdk_nvme_ctrlr_get_data</a> (struct spdk_nvme_ctrlr *ctrlr)</td></tr>
 <tr class="memdesc:a5a9daf15b5008ac36c12e7b8db7bdec9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the identify controller data as defined by the NVMe specification.  <a href="#a5a9daf15b5008ac36c12e7b8db7bdec9">More...</a><br /></td></tr>
 <tr class="separator:a5a9daf15b5008ac36c12e7b8db7bdec9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -340,6 +349,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a13f745d239dab9b8f934fae2ad4984a2"><td class="memItemLeft" align="right" valign="top">struct spdk_nvme_qpair *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a13f745d239dab9b8f934fae2ad4984a2">spdk_nvme_ctrlr_alloc_io_qpair</a> (struct spdk_nvme_ctrlr *ctrlr, const struct <a class="el" href="structspdk__nvme__io__qpair__opts.html">spdk_nvme_io_qpair_opts</a> *opts, size_t opts_size)</td></tr>
 <tr class="memdesc:a13f745d239dab9b8f934fae2ad4984a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate an I/O queue pair (submission and completion queue).  <a href="#a13f745d239dab9b8f934fae2ad4984a2">More...</a><br /></td></tr>
 <tr class="separator:a13f745d239dab9b8f934fae2ad4984a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e04d50b1f27f6cd163a4ea2024a6fbb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a1e04d50b1f27f6cd163a4ea2024a6fbb">spdk_nvme_ctrlr_reconnect_io_qpair</a> (struct spdk_nvme_qpair *qpair)</td></tr>
+<tr class="memdesc:a1e04d50b1f27f6cd163a4ea2024a6fbb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Attempt to reconnect the given qpair.  <a href="#a1e04d50b1f27f6cd163a4ea2024a6fbb">More...</a><br /></td></tr>
+<tr class="separator:a1e04d50b1f27f6cd163a4ea2024a6fbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a85ec189f50d0f78d73a54413370401f5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a85ec189f50d0f78d73a54413370401f5">spdk_nvme_ctrlr_free_io_qpair</a> (struct spdk_nvme_qpair *qpair)</td></tr>
 <tr class="memdesc:a85ec189f50d0f78d73a54413370401f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Free an I/O queue pair that was allocated by <a class="el" href="nvme_8h.html#a13f745d239dab9b8f934fae2ad4984a2" title="Allocate an I/O queue pair (submission and completion queue). ">spdk_nvme_ctrlr_alloc_io_qpair()</a>.  <a href="#a85ec189f50d0f78d73a54413370401f5">More...</a><br /></td></tr>
 <tr class="separator:a85ec189f50d0f78d73a54413370401f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -355,6 +367,9 @@ Functions</h2></td></tr>
 <tr class="memitem:aa331d140870e977722bfbb6826524782"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#aa331d140870e977722bfbb6826524782">spdk_nvme_qpair_process_completions</a> (struct spdk_nvme_qpair *qpair, uint32_t max_completions)</td></tr>
 <tr class="memdesc:aa331d140870e977722bfbb6826524782"><td class="mdescLeft">&#160;</td><td class="mdescRight">Process any outstanding completions for I/O submitted on a queue pair.  <a href="#aa331d140870e977722bfbb6826524782">More...</a><br /></td></tr>
 <tr class="separator:aa331d140870e977722bfbb6826524782"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd8ade16f6272f03af420ca0de2ad615"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#acd8ade16f6272f03af420ca0de2ad615">spdk_nvme_io_msg_process</a> (struct spdk_nvme_ctrlr *ctrlr)</td></tr>
+<tr class="memdesc:acd8ade16f6272f03af420ca0de2ad615"><td class="mdescLeft">&#160;</td><td class="mdescRight">Process IO message sent to controller from external module.  <a href="#acd8ade16f6272f03af420ca0de2ad615">More...</a><br /></td></tr>
+<tr class="separator:acd8ade16f6272f03af420ca0de2ad615"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afe2a9d3b715649b4d0a0e89196a13e6d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#afe2a9d3b715649b4d0a0e89196a13e6d">spdk_nvme_ctrlr_cmd_admin_raw</a> (struct spdk_nvme_ctrlr *ctrlr, struct <a class="el" href="structspdk__nvme__cmd.html">spdk_nvme_cmd</a> *cmd, void *buf, uint32_t len, <a class="el" href="nvme_8h.html#ac9779e9957d7089dde8e492cc60856d8">spdk_nvme_cmd_cb</a> cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:afe2a9d3b715649b4d0a0e89196a13e6d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send the given admin command to the NVMe controller.  <a href="#afe2a9d3b715649b4d0a0e89196a13e6d">More...</a><br /></td></tr>
 <tr class="separator:afe2a9d3b715649b4d0a0e89196a13e6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -544,6 +559,18 @@ Functions</h2></td></tr>
 <tr class="memitem:a82cdb425c9fad7b94ad0b8f5c27bb8b2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a82cdb425c9fad7b94ad0b8f5c27bb8b2">spdk_nvme_rdma_init_hooks</a> (struct <a class="el" href="structspdk__nvme__rdma__hooks.html">spdk_nvme_rdma_hooks</a> *hooks)</td></tr>
 <tr class="memdesc:a82cdb425c9fad7b94ad0b8f5c27bb8b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the global hooks for the RDMA transport, if necessary.  <a href="#a82cdb425c9fad7b94ad0b8f5c27bb8b2">More...</a><br /></td></tr>
 <tr class="separator:a82cdb425c9fad7b94ad0b8f5c27bb8b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc8c70873181a2561240944d3c63aae1"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#afc8c70873181a2561240944d3c63aae1">spdk_nvme_cuse_get_ctrlr_name</a> (struct spdk_nvme_ctrlr *ctrlr)</td></tr>
+<tr class="memdesc:afc8c70873181a2561240944d3c63aae1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get name of cuse device associated with NVMe controller.  <a href="#afc8c70873181a2561240944d3c63aae1">More...</a><br /></td></tr>
+<tr class="separator:afc8c70873181a2561240944d3c63aae1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4cd4052825486e483bff14f328040cf"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#ad4cd4052825486e483bff14f328040cf">spdk_nvme_cuse_get_ns_name</a> (struct spdk_nvme_ctrlr *ctrlr, uint32_t nsid)</td></tr>
+<tr class="memdesc:ad4cd4052825486e483bff14f328040cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get name of cuse device associated with NVMe namespace.  <a href="#ad4cd4052825486e483bff14f328040cf">More...</a><br /></td></tr>
+<tr class="separator:ad4cd4052825486e483bff14f328040cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a406b7ee1f53f568334e505365a281569"><td class="memItemLeft" align="right" valign="top"><a id="a406b7ee1f53f568334e505365a281569"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_cuse_register</b> (struct spdk_nvme_ctrlr *ctrlr, const char *dev_path)</td></tr>
+<tr class="separator:a406b7ee1f53f568334e505365a281569"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af071b3e57e51005c4e2b877eeda58b4b"><td class="memItemLeft" align="right" valign="top"><a id="af071b3e57e51005c4e2b877eeda58b4b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_cuse_unregister</b> (struct spdk_nvme_ctrlr *ctrlr)</td></tr>
+<tr class="separator:af071b3e57e51005c4e2b877eeda58b4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>NVMe driver public API. </p>
@@ -1911,6 +1938,33 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a4b7578aeee6b6a092a4a4013a2f32ce5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b7578aeee6b6a092a4a4013a2f32ce5">&#9670;&nbsp;</a></span>spdk_nvme_ctrlr_fail()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_nvme_ctrlr_fail </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_nvme_ctrlr *&#160;</td>
+          <td class="paramname"><em>ctrlr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Fail the given NVMe controller. </p>
+<p>This function gives the application the opportunity to fail a controller at will. When a controller is failed, any calls to process completions or submit I/O on qpairs associated with that controller will fail with an error code of -ENXIO. The controller can only be taken from the failed state by calling spdk_nvme_ctrlr_reset. After the controller has been successfully reset, any I/O pending when the controller was moved to failed will be aborted back to the application and can be resubmitted. I/O can then resume.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ctrlr</td><td>Opaque handle to an NVMe controller. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a9bb6973133e1fd5e7a1522ab104ac92b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9bb6973133e1fd5e7a1522ab104ac92b">&#9670;&nbsp;</a></span>spdk_nvme_ctrlr_format()</h2>
 
@@ -2645,6 +2699,33 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a1cdd28db5de54dfee308ea0a3c4f1442"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1cdd28db5de54dfee308ea0a3c4f1442">&#9670;&nbsp;</a></span>spdk_nvme_ctrlr_is_failed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool spdk_nvme_ctrlr_is_failed </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_nvme_ctrlr *&#160;</td>
+          <td class="paramname"><em>ctrlr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This function returns the failed status of a given controller. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ctrlr</td><td>Opaque handle to an NVMe controller.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the controller is failed, false otherwise. </dd></dl>
+
+</div>
+</div>
 <a id="a909b61e141b56eaa5895482aa1f18a3b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a909b61e141b56eaa5895482aa1f18a3b">&#9670;&nbsp;</a></span>spdk_nvme_ctrlr_is_feature_supported()</h2>
 
@@ -2752,6 +2833,34 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>number of completions processed (may be 0) or negated on error. -ENXIO in the special case that the qpair is failed at the transport layer. </dd></dl>
+
+</div>
+</div>
+<a id="a1e04d50b1f27f6cd163a4ea2024a6fbb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e04d50b1f27f6cd163a4ea2024a6fbb">&#9670;&nbsp;</a></span>spdk_nvme_ctrlr_reconnect_io_qpair()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_nvme_ctrlr_reconnect_io_qpair </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_nvme_qpair *&#160;</td>
+          <td class="paramname"><em>qpair</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Attempt to reconnect the given qpair. </p>
+<p>This function is intended to be called on qpairs that have already been connected, but have since entered a failed state as indicated by a return value of -ENXIO from either spdk_nvme_qpair_process_completions or one of the spdk_nvme_ns_cmd_* functions.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">qpair</td><td>The qpair to reconnect.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, or if the qpair was already connected. -EAGAIN if the driver was unable to reconnect during this call, but the controller is still connected and is either resetting or enabled. -ENODEV if the controller is removed. In this case, the controller cannot be recovered and the application will have to destroy it and the associated qpairs. -ENXIO if the controller is in a failed state but is not yet resetting. In this case, the application should call spdk_nvme_ctrlr_reset to reset the entire controller. </dd></dl>
 
 </div>
 </div>
@@ -3016,6 +3125,46 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a6eacd62ee8fbab40e1066bc0a53485f3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6eacd62ee8fbab40e1066bc0a53485f3">&#9670;&nbsp;</a></span>spdk_nvme_ctrlr_set_trid()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_nvme_ctrlr_set_trid </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_nvme_ctrlr *&#160;</td>
+          <td class="paramname"><em>ctrlr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structspdk__nvme__transport__id.html">spdk_nvme_transport_id</a> *&#160;</td>
+          <td class="paramname"><em>trid</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Update the transport ID for a given controller. </p>
+<p>This function allows the user to set a new trid for a controller only if the controller is failed. The controller's failed state can be obtained from <a class="el" href="nvme_8h.html#a1cdd28db5de54dfee308ea0a3c4f1442" title="This function returns the failed status of a given controller. ">spdk_nvme_ctrlr_is_failed()</a>. The controller can also be forced to the failed state using <a class="el" href="nvme_8h.html#a4b7578aeee6b6a092a4a4013a2f32ce5" title="Fail the given NVMe controller. ">spdk_nvme_ctrlr_fail()</a>.</p>
+<p>This function also requires that the transport type and subnqn of the new trid be the same as the old trid.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ctrlr</td><td>Opaque handle to an NVMe controller. </td></tr>
+    <tr><td class="paramname">trid</td><td>The new transport ID.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, -EINVAL if the trid is invalid, -EPERM if the ctrlr is not failed. </dd></dl>
+
+</div>
+</div>
 <a id="a7938b258a7614073065be4f6a35bd0e2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7938b258a7614073065be4f6a35bd0e2">&#9670;&nbsp;</a></span>spdk_nvme_ctrlr_update_firmware()</h2>
 
@@ -3080,6 +3229,71 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 if successfully submitted, ENOMEM if resources could not be allocated for this request, -1 if the size is not multiple of 4. </dd></dl>
+
+</div>
+</div>
+<a id="afc8c70873181a2561240944d3c63aae1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc8c70873181a2561240944d3c63aae1">&#9670;&nbsp;</a></span>spdk_nvme_cuse_get_ctrlr_name()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char* spdk_nvme_cuse_get_ctrlr_name </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_nvme_ctrlr *&#160;</td>
+          <td class="paramname"><em>ctrlr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get name of cuse device associated with NVMe controller. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ctrlr</td><td>Opaque handle to NVMe controller.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Pointer to the name of device. </dd></dl>
+
+</div>
+</div>
+<a id="ad4cd4052825486e483bff14f328040cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad4cd4052825486e483bff14f328040cf">&#9670;&nbsp;</a></span>spdk_nvme_cuse_get_ns_name()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char* spdk_nvme_cuse_get_ns_name </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_nvme_ctrlr *&#160;</td>
+          <td class="paramname"><em>ctrlr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>nsid</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get name of cuse device associated with NVMe namespace. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ctrlr</td><td>Opaque handle to NVMe controller. </td></tr>
+    <tr><td class="paramname">nsid</td><td>Namespace id.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Pointer to the name of device. </dd></dl>
 
 </div>
 </div>
@@ -3158,6 +3372,36 @@ Functions</h2></td></tr>
 <p>Unspecified fields of trid are left unmodified, so the caller must initialize hostid (for example, memset() to 0) before calling this function.</p>
 <p>This function should not be used with Fiber Channel or PCIe as these transports do not require host information for connections.</p>
 <dl class="section return"><dt>Returns</dt><dd>0 if parsing was successful and hostid is filled out, or negated errno values on failure. </dd></dl>
+
+</div>
+</div>
+<a id="acd8ade16f6272f03af420ca0de2ad615"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acd8ade16f6272f03af420ca0de2ad615">&#9670;&nbsp;</a></span>spdk_nvme_io_msg_process()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_nvme_io_msg_process </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_nvme_ctrlr *&#160;</td>
+          <td class="paramname"><em>ctrlr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Process IO message sent to controller from external module. </p>
+<p>This call process requests from the ring, send IO to an allocated qpair or admin commands in its context. This call is non-blocking and intended to be polled by SPDK thread to provide safe environment for NVMe request completition sent by external module to controller.</p>
+<p>The caller must ensure that each controller is polled by only one thread at a time.</p>
+<p>This function may be called at any point while the controller is attached to the SPDK NVMe driver.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ctrlr</td><td>Opaque handle to NVMe controller.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>number of processed external IO messages. </dd></dl>
 
 </div>
 </div>

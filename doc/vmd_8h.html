@@ -143,6 +143,7 @@ $(document).ready(function(){initNavTree('vmd_8h.html','');});
 <div class="header">
   <div class="summary">
 <a href="#define-members">Macros</a> &#124;
+<a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">vmd.h File Reference</div>  </div>
@@ -158,6 +159,20 @@ Macros</h2></td></tr>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>MAX_VMD_TARGET</b>&#160;&#160;&#160;24</td></tr>
 <tr class="separator:a80d2d2c79a93479422ada31a87d4664d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:acbf78271da1326a9e70fe8bb0aeb6a75"><td class="memItemLeft" align="right" valign="top"><a id="acbf78271da1326a9e70fe8bb0aeb6a75"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vmd_8h.html#acbf78271da1326a9e70fe8bb0aeb6a75">spdk_vmd_led_state</a> { <br />
+&#160;&#160;<b>SPDK_VMD_LED_STATE_OFF</b>, 
+<b>SPDK_VMD_LED_STATE_IDENTIFY</b>, 
+<b>SPDK_VMD_LED_STATE_FAULT</b>, 
+<b>SPDK_VMD_LED_STATE_REBUILD</b>, 
+<br />
+&#160;&#160;<b>SPDK_VMD_LED_STATE_UNKNOWN</b>
+<br />
+ }</td></tr>
+<tr class="memdesc:acbf78271da1326a9e70fe8bb0aeb6a75"><td class="mdescLeft">&#160;</td><td class="mdescRight">State of the LEDs. <br /></td></tr>
+<tr class="separator:acbf78271da1326a9e70fe8bb0aeb6a75"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a8ab093f9cdad46a637fac6aa07739ace"><td class="memItemLeft" align="right" valign="top"><a id="a8ab093f9cdad46a637fac6aa07739ace"></a>
@@ -166,9 +181,94 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_vmd_init</b> (voi
 <tr class="memitem:a5372b99a3024346162b47b9890d88f28"><td class="memItemLeft" align="right" valign="top"><a id="a5372b99a3024346162b47b9890d88f28"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_vmd_pci_device_list</b> (struct <a class="el" href="structspdk__pci__addr.html">spdk_pci_addr</a> vmd_addr, struct <a class="el" href="structspdk__pci__device.html">spdk_pci_device</a> *nvme_list)</td></tr>
 <tr class="separator:a5372b99a3024346162b47b9890d88f28"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca3923828bec8148b3e671420ba0f547"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vmd_8h.html#aca3923828bec8148b3e671420ba0f547">spdk_vmd_set_led_state</a> (struct <a class="el" href="structspdk__pci__device.html">spdk_pci_device</a> *pci_device, enum <a class="el" href="vmd_8h.html#acbf78271da1326a9e70fe8bb0aeb6a75">spdk_vmd_led_state</a> state)</td></tr>
+<tr class="memdesc:aca3923828bec8148b3e671420ba0f547"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the state of the LED on specified PCI device.  <a href="#aca3923828bec8148b3e671420ba0f547">More...</a><br /></td></tr>
+<tr class="separator:aca3923828bec8148b3e671420ba0f547"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a302cba203fd0abdafd3729c34822c3f3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vmd_8h.html#a302cba203fd0abdafd3729c34822c3f3">spdk_vmd_get_led_state</a> (struct <a class="el" href="structspdk__pci__device.html">spdk_pci_device</a> *pci_device, enum <a class="el" href="vmd_8h.html#acbf78271da1326a9e70fe8bb0aeb6a75">spdk_vmd_led_state</a> *state)</td></tr>
+<tr class="memdesc:a302cba203fd0abdafd3729c34822c3f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the state of the LED on specified PCI device.  <a href="#a302cba203fd0abdafd3729c34822c3f3">More...</a><br /></td></tr>
+<tr class="separator:a302cba203fd0abdafd3729c34822c3f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>VMD driver public interface. </p>
-</div></div><!-- contents -->
+</div><h2 class="groupheader">Function Documentation</h2>
+<a id="a302cba203fd0abdafd3729c34822c3f3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a302cba203fd0abdafd3729c34822c3f3">&#9670;&nbsp;</a></span>spdk_vmd_get_led_state()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_vmd_get_led_state </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structspdk__pci__device.html">spdk_pci_device</a> *&#160;</td>
+          <td class="paramname"><em>pci_device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">enum <a class="el" href="vmd_8h.html#acbf78271da1326a9e70fe8bb0aeb6a75">spdk_vmd_led_state</a> *&#160;</td>
+          <td class="paramname"><em>state</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Retrieves the state of the LED on specified PCI device. </p>
+<p>The device needs to be behind VMD.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pci_device</td><td>PCI device </td></tr>
+    <tr><td class="paramname">state</td><td>current LED state</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, negative errno otherwise </dd></dl>
+
+</div>
+</div>
+<a id="aca3923828bec8148b3e671420ba0f547"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca3923828bec8148b3e671420ba0f547">&#9670;&nbsp;</a></span>spdk_vmd_set_led_state()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_vmd_set_led_state </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structspdk__pci__device.html">spdk_pci_device</a> *&#160;</td>
+          <td class="paramname"><em>pci_device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">enum <a class="el" href="vmd_8h.html#acbf78271da1326a9e70fe8bb0aeb6a75">spdk_vmd_led_state</a>&#160;</td>
+          <td class="paramname"><em>state</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the state of the LED on specified PCI device. </p>
+<p>The device needs to be behind VMD.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pci_device</td><td>PCI device </td></tr>
+    <tr><td class="paramname">state</td><td>LED state to set</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, negative errno otherwise </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
 </div><!-- doc-content -->
 </div>

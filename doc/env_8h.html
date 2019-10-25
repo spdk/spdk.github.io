@@ -505,6 +505,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_
 <tr class="memitem:ac6cda84fe7f3ca98ee13683207ffeca5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_8h.html#ac6cda84fe7f3ca98ee13683207ffeca5">spdk_pci_unhook_device</a> (struct <a class="el" href="structspdk__pci__device.html">spdk_pci_device</a> *dev)</td></tr>
 <tr class="memdesc:ac6cda84fe7f3ca98ee13683207ffeca5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Un-hook a custom PCI device from the PCI layer.  <a href="#ac6cda84fe7f3ca98ee13683207ffeca5">More...</a><br /></td></tr>
 <tr class="separator:ac6cda84fe7f3ca98ee13683207ffeca5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a692040f0dc2155a370c4496a1f863c90"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_8h.html#a692040f0dc2155a370c4496a1f863c90">spdk_pci_device_get_type</a> (const struct <a class="el" href="structspdk__pci__device.html">spdk_pci_device</a> *dev)</td></tr>
+<tr class="memdesc:a692040f0dc2155a370c4496a1f863c90"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the type of the PCI device.  <a href="#a692040f0dc2155a370c4496a1f863c90">More...</a><br /></td></tr>
+<tr class="separator:a692040f0dc2155a370c4496a1f863c90"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a925f8e1d1ed12fc1b7eb057a5c5b7bfd"><td class="memItemLeft" align="right" valign="top"><a id="a925f8e1d1ed12fc1b7eb057a5c5b7bfd"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_8h.html#a925f8e1d1ed12fc1b7eb057a5c5b7bfd">spdk_unaffinitize_thread</a> (void)</td></tr>
 <tr class="memdesc:a925f8e1d1ed12fc1b7eb057a5c5b7bfd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove any CPU affinity from the current thread. <br /></td></tr>
@@ -3153,6 +3156,33 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>subvendor ID. </dd></dl>
+
+</div>
+</div>
+<a id="a692040f0dc2155a370c4496a1f863c90"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a692040f0dc2155a370c4496a1f863c90">&#9670;&nbsp;</a></span>spdk_pci_device_get_type()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* spdk_pci_device_get_type </td>
+          <td>(</td>
+          <td class="paramtype">const struct <a class="el" href="structspdk__pci__device.html">spdk_pci_device</a> *&#160;</td>
+          <td class="paramname"><em>dev</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Return the type of the PCI device. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dev</td><td>PCI device</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>string representing the type of the device </dd></dl>
 
 </div>
 </div>

@@ -11,5 +11,6 @@ var structspdk__pci__device =
     [ "map_bar", "structspdk__pci__device.html#abfd4d2fe4ff02074a9a0652853b868d8", null ],
     [ "parent", "structspdk__pci__device.html#a89015870c131e3b9236f0c90813999c7", null ],
     [ "socket_id", "structspdk__pci__device.html#a1dca220b8e88db1b94c36996002b6629", null ],
+    [ "type", "structspdk__pci__device.html#ae8f0f4ca43fa4eaec8a60d1e57848a74", null ],
     [ "unmap_bar", "structspdk__pci__device.html#a407b305cec81c217f76d1b66d166075f", null ]
 ];

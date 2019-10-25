@@ -59,5 +59,6 @@ var searchData=
   ['spdk_5focssd_5ffeat',['spdk_ocssd_feat',['../nvme__ocssd__spec_8h.html#a95b16b2164a4f7812a2d3b8dd461cfa5',1,'nvme_ocssd_spec.h']]],
   ['spdk_5focssd_5fio_5fopcode',['spdk_ocssd_io_opcode',['../nvme__ocssd__spec_8h.html#abd099b6b977a8e059b306ad0fe9935c5',1,'nvme_ocssd_spec.h']]],
   ['spdk_5focssd_5flog_5fpage',['spdk_ocssd_log_page',['../nvme__ocssd__spec_8h.html#ad778bee13251d6cdca7bb1bbadfbeb1d',1,'nvme_ocssd_spec.h']]],
-  ['spdk_5focssd_5fmedia_5ferror_5fstatus_5fcode',['spdk_ocssd_media_error_status_code',['../nvme__ocssd__spec_8h.html#ae66ff1776aa8a6560e7c762726777dea',1,'nvme_ocssd_spec.h']]]
+  ['spdk_5focssd_5fmedia_5ferror_5fstatus_5fcode',['spdk_ocssd_media_error_status_code',['../nvme__ocssd__spec_8h.html#ae66ff1776aa8a6560e7c762726777dea',1,'nvme_ocssd_spec.h']]],
+  ['spdk_5fvmd_5fled_5fstate',['spdk_vmd_led_state',['../vmd_8h.html#acbf78271da1326a9e70fe8bb0aeb6a75',1,'vmd.h']]]
 ];

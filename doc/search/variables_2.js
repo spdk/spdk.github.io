@@ -9,6 +9,7 @@ var searchData=
   ['ccsqe',['ccsqe',['../structspdk__nvme__tcp__cmd.html#aa23f18418baa0ef9405646f904aa0453',1,'spdk_nvme_tcp_cmd']]],
   ['cctemp',['cctemp',['../structspdk__nvme__ctrlr__data.html#a346ea97ceaffb3cbaad7b909eb250b14',1,'spdk_nvme_ctrlr_data']]],
   ['cd',['cd',['../unionspdk__nvme__feat__interrupt__vector__configuration.html#adf2595e5bc0014c1cb4cd087d8e3732d',1,'spdk_nvme_feat_interrupt_vector_configuration']]],
+  ['cdw0',['cdw0',['../structspdk__bdev__io_1_1____bdev__io__internal__fields.html#aa622aa498a09bc58f8e71ad301b4bd12',1,'spdk_bdev_io::__bdev_io_internal_fields']]],
   ['cfs',['cfs',['../unionspdk__nvme__csts__register.html#a9eadb3919064e4e1999d0a820de107f1',1,'spdk_nvme_csts_register']]],
   ['ch',['ch',['../structspdk__bdev__io_1_1____bdev__io__internal__fields.html#a24890c3258742ac4ca1d92e11bab07b9',1,'spdk_bdev_io::__bdev_io_internal_fields']]],
   ['ch_5fref',['ch_ref',['../structspdk__bdev__io.html#ae513a78b2095fbd1d0674fa11d26ef2b',1,'spdk_bdev_io']]],

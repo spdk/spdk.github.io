@@ -9,6 +9,7 @@ var structspdk__bdev__io_1_1____bdev__io__internal__fields =
     [ "buf_len", "structspdk__bdev__io_1_1____bdev__io__internal__fields.html#a8e969e9419d6f05b335eebc2f2b246a6", null ],
     [ "caller_ctx", "structspdk__bdev__io_1_1____bdev__io__internal__fields.html#a51d274b6003ff0f95466eca21bdd7dd1", null ],
     [ "cb", "structspdk__bdev__io_1_1____bdev__io__internal__fields.html#acc3511a74f557ca1ac31aa517ad719a9", null ],
+    [ "cdw0", "structspdk__bdev__io_1_1____bdev__io__internal__fields.html#aa622aa498a09bc58f8e71ad301b4bd12", null ],
     [ "ch", "structspdk__bdev__io_1_1____bdev__io__internal__fields.html#a24890c3258742ac4ca1d92e11bab07b9", null ],
     [ "desc", "structspdk__bdev__io_1_1____bdev__io__internal__fields.html#a9ec31d2c37d402f888525346bb2ad907", null ],
     [ "error", "structspdk__bdev__io_1_1____bdev__io__internal__fields.html#ab7005a68dc1c459464f335d8e9b5e3ff", null ],

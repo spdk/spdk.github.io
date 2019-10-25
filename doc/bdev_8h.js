@@ -86,7 +86,7 @@ var bdev_8h =
     [ "spdk_bdev_initialize", "bdev_8h.html#a854eb960c06597051071023a3d70e887", null ],
     [ "spdk_bdev_io_get_iovec", "bdev_8h.html#aa05d8c0e82bfbcc209af1eb958230ede", null ],
     [ "spdk_bdev_io_get_md_buf", "bdev_8h.html#a3ac624f9a0a153750242b70a805a7382", null ],
-    [ "spdk_bdev_io_get_nvme_status", "bdev_8h.html#afe43254747db3cd072dfb596be3bbf2f", null ],
+    [ "spdk_bdev_io_get_nvme_status", "bdev_8h.html#ae7e1bf90f44f042c2b2ad463b8667735", null ],
     [ "spdk_bdev_io_get_scsi_status", "bdev_8h.html#ac3c213b4317d5077197950253af1ac50", null ],
     [ "spdk_bdev_io_type_supported", "bdev_8h.html#a7cd5dff692dc162459801d5649fe7655", null ],
     [ "spdk_bdev_is_dif_check_enabled", "bdev_8h.html#a147389751cd351d30703e28f522e9610", null ],

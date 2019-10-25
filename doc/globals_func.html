@@ -337,7 +337,7 @@ $(document).ready(function(){initNavTree('globals_func.html','');});
 : <a class="el" href="bdev__module_8h.html#a3247574caabc2b31796861a10b2c9cab">bdev_module.h</a>
 </li>
 <li>spdk_bdev_io_complete_nvme_status()
-: <a class="el" href="bdev__module_8h.html#ab6501226511ef3f463e42cbcbf2585c0">bdev_module.h</a>
+: <a class="el" href="bdev__module_8h.html#a3341d564a521b3e7874f72fc1390f043">bdev_module.h</a>
 </li>
 <li>spdk_bdev_io_complete_scsi_status()
 : <a class="el" href="bdev__module_8h.html#a4271696fa055f456bedb6bdebce25dbd">bdev_module.h</a>
@@ -358,7 +358,7 @@ $(document).ready(function(){initNavTree('globals_func.html','');});
 : <a class="el" href="bdev_8h.html#a3ac624f9a0a153750242b70a805a7382">bdev.h</a>
 </li>
 <li>spdk_bdev_io_get_nvme_status()
-: <a class="el" href="bdev_8h.html#afe43254747db3cd072dfb596be3bbf2f">bdev.h</a>
+: <a class="el" href="bdev_8h.html#ae7e1bf90f44f042c2b2ad463b8667735">bdev.h</a>
 </li>
 <li>spdk_bdev_io_get_scsi_status()
 : <a class="el" href="bdev_8h.html#ac3c213b4317d5077197950253af1ac50">bdev.h</a>
@@ -1524,6 +1524,9 @@ $(document).ready(function(){initNavTree('globals_func.html','');});
 <li>spdk_nvme_ctrlr_detach_ns()
 : <a class="el" href="nvme_8h.html#ab562f58b5903071929d6a559fe984d0a">nvme.h</a>
 </li>
+<li>spdk_nvme_ctrlr_fail()
+: <a class="el" href="nvme_8h.html#a4b7578aeee6b6a092a4a4013a2f32ce5">nvme.h</a>
+</li>
 <li>spdk_nvme_ctrlr_format()
 : <a class="el" href="nvme_8h.html#a9bb6973133e1fd5e7a1522ab104ac92b">nvme.h</a>
 </li>
@@ -1590,6 +1593,9 @@ $(document).ready(function(){initNavTree('globals_func.html','');});
 <li>spdk_nvme_ctrlr_is_discovery()
 : <a class="el" href="nvme_8h.html#a39c91e2e6ae899f37b5a89c28a2207cf">nvme.h</a>
 </li>
+<li>spdk_nvme_ctrlr_is_failed()
+: <a class="el" href="nvme_8h.html#a1cdd28db5de54dfee308ea0a3c4f1442">nvme.h</a>
+</li>
 <li>spdk_nvme_ctrlr_is_feature_supported()
 : <a class="el" href="nvme_8h.html#a909b61e141b56eaa5895482aa1f18a3b">nvme.h</a>
 </li>
@@ -1601,6 +1607,9 @@ $(document).ready(function(){initNavTree('globals_func.html','');});
 </li>
 <li>spdk_nvme_ctrlr_process_admin_completions()
 : <a class="el" href="nvme_8h.html#a10282695461985f58f54de022911745e">nvme.h</a>
+</li>
+<li>spdk_nvme_ctrlr_reconnect_io_qpair()
+: <a class="el" href="nvme_8h.html#a1e04d50b1f27f6cd163a4ea2024a6fbb">nvme.h</a>
 </li>
 <li>spdk_nvme_ctrlr_register_aer_callback()
 : <a class="el" href="nvme_8h.html#a1505fc1ef6e8ccb00134c1fa15e0368b">nvme.h</a>
@@ -1617,14 +1626,26 @@ $(document).ready(function(){initNavTree('globals_func.html','');});
 <li>spdk_nvme_ctrlr_security_send()
 : <a class="el" href="nvme_8h.html#ada4ab089f73f3f43e9c5b8e6415e6f50">nvme.h</a>
 </li>
+<li>spdk_nvme_ctrlr_set_trid()
+: <a class="el" href="nvme_8h.html#a6eacd62ee8fbab40e1066bc0a53485f3">nvme.h</a>
+</li>
 <li>spdk_nvme_ctrlr_update_firmware()
 : <a class="el" href="nvme_8h.html#a7938b258a7614073065be4f6a35bd0e2">nvme.h</a>
+</li>
+<li>spdk_nvme_cuse_get_ctrlr_name()
+: <a class="el" href="nvme_8h.html#afc8c70873181a2561240944d3c63aae1">nvme.h</a>
+</li>
+<li>spdk_nvme_cuse_get_ns_name()
+: <a class="el" href="nvme_8h.html#ad4cd4052825486e483bff14f328040cf">nvme.h</a>
 </li>
 <li>spdk_nvme_detach()
 : <a class="el" href="nvme_8h.html#a4b63c225c3cce6da60fdbfb6f54b11e2">nvme.h</a>
 </li>
 <li>spdk_nvme_host_id_parse()
 : <a class="el" href="nvme_8h.html#ad068dd50f11160450098712422116785">nvme.h</a>
+</li>
+<li>spdk_nvme_io_msg_process()
+: <a class="el" href="nvme_8h.html#acd8ade16f6272f03af420ca0de2ad615">nvme.h</a>
 </li>
 <li>spdk_nvme_ns_cmd_compare()
 : <a class="el" href="nvme_8h.html#ad8aa3c9ff510fe73945549077df18436">nvme.h</a>
@@ -2111,6 +2132,9 @@ $(document).ready(function(){initNavTree('globals_func.html','');});
 </li>
 <li>spdk_pci_device_get_subvendor_id()
 : <a class="el" href="env_8h.html#ae488ab8a8a1b56ae22ca26b00185f7f8">env.h</a>
+</li>
+<li>spdk_pci_device_get_type()
+: <a class="el" href="env_8h.html#a692040f0dc2155a370c4496a1f863c90">env.h</a>
 </li>
 <li>spdk_pci_device_get_vendor_id()
 : <a class="el" href="env_8h.html#abe6b50f74ddb53ff6ee4552c20a053bc">env.h</a>
@@ -2648,6 +2672,12 @@ $(document).ready(function(){initNavTree('globals_func.html','');});
 </li>
 <li>spdk_vhost_unlock()
 : <a class="el" href="vhost_8h.html#adf01bd5ae7b0d761aa8e0e271de1ee9e">vhost.h</a>
+</li>
+<li>spdk_vmd_get_led_state()
+: <a class="el" href="vmd_8h.html#a302cba203fd0abdafd3729c34822c3f3">vmd.h</a>
+</li>
+<li>spdk_vmd_set_led_state()
+: <a class="el" href="vmd_8h.html#aca3923828bec8148b3e671420ba0f547">vmd.h</a>
 </li>
 <li>spdk_vsprintf_alloc()
 : <a class="el" href="string_8h.html#a6dc47e4a2855c519b30fc54b252f85cc">string.h</a>

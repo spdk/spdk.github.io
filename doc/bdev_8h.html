@@ -470,9 +470,9 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_set_opts</b>
 <tr class="memitem:aa478b43fc9e6e41c34438f5b2ef742d5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev_8h.html#aa478b43fc9e6e41c34438f5b2ef742d5">spdk_bdev_get_device_stat</a> (struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *bdev, struct <a class="el" href="structspdk__bdev__io__stat.html">spdk_bdev_io_stat</a> *stat, spdk_bdev_get_device_stat_cb cb, void *cb_arg)</td></tr>
 <tr class="memdesc:aa478b43fc9e6e41c34438f5b2ef742d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return I/O statistics for this bdev.  <a href="#aa478b43fc9e6e41c34438f5b2ef742d5">More...</a><br /></td></tr>
 <tr class="separator:aa478b43fc9e6e41c34438f5b2ef742d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afe43254747db3cd072dfb596be3bbf2f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev_8h.html#afe43254747db3cd072dfb596be3bbf2f">spdk_bdev_io_get_nvme_status</a> (const struct <a class="el" href="structspdk__bdev__io.html">spdk_bdev_io</a> *bdev_io, int *sct, int *sc)</td></tr>
-<tr class="memdesc:afe43254747db3cd072dfb596be3bbf2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the status of bdev_io as an NVMe status code.  <a href="#afe43254747db3cd072dfb596be3bbf2f">More...</a><br /></td></tr>
-<tr class="separator:afe43254747db3cd072dfb596be3bbf2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7e1bf90f44f042c2b2ad463b8667735"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev_8h.html#ae7e1bf90f44f042c2b2ad463b8667735">spdk_bdev_io_get_nvme_status</a> (const struct <a class="el" href="structspdk__bdev__io.html">spdk_bdev_io</a> *bdev_io, uint32_t *cdw0, int *sct, int *sc)</td></tr>
+<tr class="memdesc:ae7e1bf90f44f042c2b2ad463b8667735"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the status of bdev_io as an NVMe status code and command specific completion queue value.  <a href="#ae7e1bf90f44f042c2b2ad463b8667735">More...</a><br /></td></tr>
+<tr class="separator:ae7e1bf90f44f042c2b2ad463b8667735"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac3c213b4317d5077197950253af1ac50"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev_8h.html#ac3c213b4317d5077197950253af1ac50">spdk_bdev_io_get_scsi_status</a> (const struct <a class="el" href="structspdk__bdev__io.html">spdk_bdev_io</a> *bdev_io, int *sc, int *sk, int *asc, int *ascq)</td></tr>
 <tr class="memdesc:ac3c213b4317d5077197950253af1ac50"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the status of bdev_io as a SCSI status code.  <a href="#ac3c213b4317d5077197950253af1ac50">More...</a><br /></td></tr>
 <tr class="separator:ac3c213b4317d5077197950253af1ac50"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -577,7 +577,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_set_opts</b>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">bdev_io</td><td>Block device I/O that has completed. </td></tr>
-    <tr><td class="paramname">success</td><td>True if I/O completed successfully or false if it failed; additional error information may be retrieved from bdev_io by calling <a class="el" href="bdev_8h.html#afe43254747db3cd072dfb596be3bbf2f" title="Get the status of bdev_io as an NVMe status code. ">spdk_bdev_io_get_nvme_status()</a> or <a class="el" href="bdev_8h.html#ac3c213b4317d5077197950253af1ac50" title="Get the status of bdev_io as a SCSI status code. ">spdk_bdev_io_get_scsi_status()</a>. </td></tr>
+    <tr><td class="paramname">success</td><td>True if I/O completed successfully or false if it failed; additional error information may be retrieved from bdev_io by calling <a class="el" href="bdev_8h.html#ae7e1bf90f44f042c2b2ad463b8667735" title="Get the status of bdev_io as an NVMe status code and command specific completion queue value...">spdk_bdev_io_get_nvme_status()</a> or <a class="el" href="bdev_8h.html#ac3c213b4317d5077197950253af1ac50" title="Get the status of bdev_io as a SCSI status code. ">spdk_bdev_io_get_scsi_status()</a>. </td></tr>
     <tr><td class="paramname">cb_arg</td><td>Callback argument specified when bdev_io was submitted. </td></tr>
   </table>
   </dd>
@@ -1752,8 +1752,8 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_set_opts</b>
 
 </div>
 </div>
-<a id="afe43254747db3cd072dfb596be3bbf2f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afe43254747db3cd072dfb596be3bbf2f">&#9670;&nbsp;</a></span>spdk_bdev_io_get_nvme_status()</h2>
+<a id="ae7e1bf90f44f042c2b2ad463b8667735"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae7e1bf90f44f042c2b2ad463b8667735">&#9670;&nbsp;</a></span>spdk_bdev_io_get_nvme_status()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1763,6 +1763,12 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_set_opts</b>
           <td>(</td>
           <td class="paramtype">const struct <a class="el" href="structspdk__bdev__io.html">spdk_bdev_io</a> *&#160;</td>
           <td class="paramname"><em>bdev_io</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t *&#160;</td>
+          <td class="paramname"><em>cdw0</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1784,10 +1790,11 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_set_opts</b>
       </table>
 </div><div class="memdoc">
 
-<p>Get the status of bdev_io as an NVMe status code. </p>
+<p>Get the status of bdev_io as an NVMe status code and command specific completion queue value. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">bdev_io</td><td>I/O to get the status from. </td></tr>
+    <tr><td class="paramname">cdw0</td><td>Command specific completion queue value </td></tr>
     <tr><td class="paramname">sct</td><td>Status Code Type return value, as defined by the NVMe specification. </td></tr>
     <tr><td class="paramname">sc</td><td>Status Code return value, as defined by the NVMe specification. </td></tr>
   </table>

@@ -252,6 +252,13 @@ var user_guides =
         [ "bdev_raid_get_bdevs", "jsonrpc.html#rpc_bdev_raid_get_bdevs", null ],
         [ "bdev_raid_create", "jsonrpc.html#rpc_bdev_raid_create", null ],
         [ "bdev_raid_delete", "jsonrpc.html#rpc_bdev_raid_delete", null ],
+        [ "bdev_nvme_opal_init", "jsonrpc.html#rpc_bdev_nvme_opal_init", null ],
+        [ "bdev_nvme_opal_revert", "jsonrpc.html#rpc_bdev_nvme_opal_revert", null ],
+        [ "bdev_opal_create", "jsonrpc.html#rpc_bdev_opal_create", null ],
+        [ "bdev_opal_get_info", "jsonrpc.html#rpc_bdev_opal_get_info", null ],
+        [ "bdev_opal_delete", "jsonrpc.html#rpc_bdev_opal_delete", null ],
+        [ "bdev_opal_new_user", "jsonrpc.html#rpc_bdev_opal_new_user", null ],
+        [ "bdev_opal_set_lock_state", "jsonrpc.html#rpc_bdev_opal_set_lock_state", null ],
         [ "notify_get_types", "jsonrpc.html#rpc_notify_get_types", null ],
         [ "notify_get_notifications", "jsonrpc.html#notify_get_notifications", null ]
       ] ],

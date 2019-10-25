@@ -2322,6 +2322,132 @@ bdev_raid_delete</h2>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;method&quot;: &quot;bdev_raid_delete&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;params&quot;: {</div><div class="line">    &quot;name&quot;: &quot;Raid0&quot;</div><div class="line">  }</div><div class="line">}</div></div><!-- fragment --><p>Example response:</p>
+<div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: true</div><div class="line">}</div></div><!-- fragment --><h1>OPAL</h1>
+<h2><a class="anchor" id="rpc_bdev_nvme_opal_init"></a>
+bdev_nvme_opal_init</h2>
+<p>This is used to initialize OPAL of a given NVMe ctrlr, including taking ownership and activating.</p>
+<h3>Parameters</h3>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Name  </th><th class="markdownTableHeadNone">Optional  </th><th class="markdownTableHeadNone">Type  </th><th class="markdownTableHeadNone">Description   </th></tr>
+<tr class="markdownTableBody" class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">nvme_ctrlr_name  </td><td class="markdownTableBodyNone">Required  </td><td class="markdownTableBodyNone">string  </td><td class="markdownTableBodyNone">name of nvme ctrlr   </td></tr>
+<tr class="markdownTableBody" class="markdownTableRowEven">
+<td class="markdownTableBodyNone">password  </td><td class="markdownTableBodyNone">Required  </td><td class="markdownTableBodyNone">string  </td><td class="markdownTableBodyNone">admin password of OPAL   </td></tr>
+</table>
+<h3>Example</h3>
+<p>Example request:</p>
+<div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;method&quot;: &quot;bdev_nvme_opal_init&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;params&quot;: {</div><div class="line">    &quot;nvme_ctrlr_name&quot;: &quot;nvme0&quot;,</div><div class="line">    &quot;password&quot;: &quot;*****&quot;</div><div class="line">  }</div><div class="line">}</div></div><!-- fragment --><p>Example response:</p>
+<div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: true</div><div class="line">}</div></div><!-- fragment --><h2><a class="anchor" id="rpc_bdev_nvme_opal_revert"></a>
+bdev_nvme_opal_revert</h2>
+<p>This is used to revert OPAL to its factory settings. Erase all user configuration and data.</p>
+<h3>Parameters</h3>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Name  </th><th class="markdownTableHeadNone">Optional  </th><th class="markdownTableHeadNone">Type  </th><th class="markdownTableHeadNone">Description   </th></tr>
+<tr class="markdownTableBody" class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">nvme_ctrlr_name  </td><td class="markdownTableBodyNone">Required  </td><td class="markdownTableBodyNone">string  </td><td class="markdownTableBodyNone">name of nvme ctrlr   </td></tr>
+<tr class="markdownTableBody" class="markdownTableRowEven">
+<td class="markdownTableBodyNone">password  </td><td class="markdownTableBodyNone">Required  </td><td class="markdownTableBodyNone">string  </td><td class="markdownTableBodyNone">admin password of OPAL   </td></tr>
+</table>
+<h3>Example</h3>
+<p>Example request:</p>
+<div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;method&quot;: &quot;bdev_nvme_opal_revert&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;params&quot;: {</div><div class="line">    &quot;nvme_ctrlr_name&quot;: &quot;nvme0&quot;,</div><div class="line">    &quot;password&quot;: &quot;*****&quot;</div><div class="line">  }</div><div class="line">}</div></div><!-- fragment --><p>Example response:</p>
+<div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: true</div><div class="line">}</div></div><!-- fragment --><h2><a class="anchor" id="rpc_bdev_opal_create"></a>
+bdev_opal_create</h2>
+<p>This is used to create an OPAL virtual bdev.</p>
+<h3>Parameters</h3>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Name  </th><th class="markdownTableHeadNone">Optional  </th><th class="markdownTableHeadNone">Type  </th><th class="markdownTableHeadNone">Description   </th></tr>
+<tr class="markdownTableBody" class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">nvme_ctrlr_name  </td><td class="markdownTableBodyNone">Required  </td><td class="markdownTableBodyNone">string  </td><td class="markdownTableBodyNone">name of nvme ctrlr that supports OPAL   </td></tr>
+<tr class="markdownTableBody" class="markdownTableRowEven">
+<td class="markdownTableBodyNone">nsid  </td><td class="markdownTableBodyNone">Required  </td><td class="markdownTableBodyNone">number  </td><td class="markdownTableBodyNone">namespace ID   </td></tr>
+<tr class="markdownTableBody" class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">locking_range_id  </td><td class="markdownTableBodyNone">Required  </td><td class="markdownTableBodyNone">number  </td><td class="markdownTableBodyNone">OPAL locking range ID   </td></tr>
+<tr class="markdownTableBody" class="markdownTableRowEven">
+<td class="markdownTableBodyNone">range_start  </td><td class="markdownTableBodyNone">Required  </td><td class="markdownTableBodyNone">number  </td><td class="markdownTableBodyNone">locking range start LBA   </td></tr>
+<tr class="markdownTableBody" class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">range_length  </td><td class="markdownTableBodyNone">Required  </td><td class="markdownTableBodyNone">number  </td><td class="markdownTableBodyNone">locking range length   </td></tr>
+<tr class="markdownTableBody" class="markdownTableRowEven">
+<td class="markdownTableBodyNone">password  </td><td class="markdownTableBodyNone">Required  </td><td class="markdownTableBodyNone">string  </td><td class="markdownTableBodyNone">admin password of OPAL   </td></tr>
+</table>
+<h3>Response</h3>
+<p>The response is the name of created OPAL virtual bdev.</p>
+<h3>Example</h3>
+<p>Example request:</p>
+<div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;method&quot;: &quot;bdev_opal_create&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;params&quot;: {</div><div class="line">    &quot;nvme_ctrlr_name&quot;: &quot;nvme0&quot;,</div><div class="line">    &quot;nsid&quot;: 1,</div><div class="line">    &quot;locking_range_id&quot;: 1,</div><div class="line">    &quot;range_start&quot;: 0,</div><div class="line">    &quot;range_length&quot;: 4096,</div><div class="line">    &quot;password&quot;: &quot;*****&quot;</div><div class="line">  }</div><div class="line">}</div></div><!-- fragment --><p>Example response:</p>
+<div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: &quot;nvme0n1r1&quot;</div><div class="line">}</div></div><!-- fragment --><h2><a class="anchor" id="rpc_bdev_opal_get_info"></a>
+bdev_opal_get_info</h2>
+<p>This is used to get information of a given OPAL bdev.</p>
+<h3>Parameters</h3>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Name  </th><th class="markdownTableHeadNone">Optional  </th><th class="markdownTableHeadNone">Type  </th><th class="markdownTableHeadNone">Description   </th></tr>
+<tr class="markdownTableBody" class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">bdev_name  </td><td class="markdownTableBodyNone">Required  </td><td class="markdownTableBodyNone">string  </td><td class="markdownTableBodyNone">name of OPAL vbdev   </td></tr>
+<tr class="markdownTableBody" class="markdownTableRowEven">
+<td class="markdownTableBodyNone">password  </td><td class="markdownTableBodyNone">Required  </td><td class="markdownTableBodyNone">string  </td><td class="markdownTableBodyNone">admin password   </td></tr>
+</table>
+<h3>Response</h3>
+<p>The response is the locking info of OPAL virtual bdev.</p>
+<h3>Example</h3>
+<p>Example request:</p>
+<div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;method&quot;: &quot;bdev_opal_get_info&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;params&quot;: {</div><div class="line">    &quot;bdev_name&quot;: &quot;nvme0n1r1&quot;,</div><div class="line">    &quot;password&quot;: &quot;*****&quot;</div><div class="line">  }</div><div class="line">}</div></div><!-- fragment --><p>Example response:</p>
+<div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: {</div><div class="line">      &quot;name&quot;: &quot;nvme0n1r1&quot;,</div><div class="line">      &quot;range_start&quot;: 0,</div><div class="line">      &quot;range_length&quot;: 4096,</div><div class="line">      &quot;read_lock_enabled&quot;: true,</div><div class="line">      &quot;write_lock_enabled&quot;: true,</div><div class="line">      &quot;read_locked&quot;: false,</div><div class="line">      &quot;write_locked&quot;: false</div><div class="line">    }</div><div class="line">}</div></div><!-- fragment --><h2><a class="anchor" id="rpc_bdev_opal_delete"></a>
+bdev_opal_delete</h2>
+<p>This is used to delete OPAL vbdev.</p>
+<h3>Parameters</h3>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Name  </th><th class="markdownTableHeadNone">Optional  </th><th class="markdownTableHeadNone">Type  </th><th class="markdownTableHeadNone">Description   </th></tr>
+<tr class="markdownTableBody" class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">bdev_name  </td><td class="markdownTableBodyNone">Required  </td><td class="markdownTableBodyNone">string  </td><td class="markdownTableBodyNone">name of OPAL vbdev   </td></tr>
+<tr class="markdownTableBody" class="markdownTableRowEven">
+<td class="markdownTableBodyNone">password  </td><td class="markdownTableBodyNone">Required  </td><td class="markdownTableBodyNone">string  </td><td class="markdownTableBodyNone">admin password   </td></tr>
+</table>
+<h3>Example</h3>
+<p>Example request:</p>
+<div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;method&quot;: &quot;bdev_opal_delete&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;params&quot;: {</div><div class="line">    &quot;bdev_name&quot;: &quot;nvme0n1r1&quot;,</div><div class="line">    &quot;password&quot;: &quot;*****&quot;</div><div class="line">  }</div><div class="line">}</div></div><!-- fragment --><p>Example response:</p>
+<div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: true</div><div class="line">}</div></div><!-- fragment --><h2><a class="anchor" id="rpc_bdev_opal_new_user"></a>
+bdev_opal_new_user</h2>
+<p>This enables a new user to the specified opal bdev so that the user can lock/unlock the bdev. Recalling this for the same opal bdev, only the newest user will have the privilege.</p>
+<h3>Parameters</h3>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Name  </th><th class="markdownTableHeadNone">Optional  </th><th class="markdownTableHeadNone">Type  </th><th class="markdownTableHeadNone">Description   </th></tr>
+<tr class="markdownTableBody" class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">bdev_name  </td><td class="markdownTableBodyNone">Required  </td><td class="markdownTableBodyNone">string  </td><td class="markdownTableBodyNone">name of OPAL vbdev   </td></tr>
+<tr class="markdownTableBody" class="markdownTableRowEven">
+<td class="markdownTableBodyNone">admin_password  </td><td class="markdownTableBodyNone">Required  </td><td class="markdownTableBodyNone">string  </td><td class="markdownTableBodyNone">admin password   </td></tr>
+<tr class="markdownTableBody" class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">user_id  </td><td class="markdownTableBodyNone">Required  </td><td class="markdownTableBodyNone">number  </td><td class="markdownTableBodyNone">user ID   </td></tr>
+<tr class="markdownTableBody" class="markdownTableRowEven">
+<td class="markdownTableBodyNone">user_password  </td><td class="markdownTableBodyNone">Required  </td><td class="markdownTableBodyNone">string  </td><td class="markdownTableBodyNone">user password   </td></tr>
+</table>
+<h3>Example</h3>
+<p>Example request:</p>
+<div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;method&quot;: &quot;bdev_opal_new_user&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;params&quot;: {</div><div class="line">    &quot;bdev_name&quot;: &quot;nvme0n1r1&quot;,</div><div class="line">    &quot;admin_password&quot;: &quot;*****&quot;,</div><div class="line">    &quot;user_id&quot;: &quot;1&quot;,</div><div class="line">    &quot;user_password&quot;: &quot;********&quot;</div><div class="line">  }</div><div class="line">}</div></div><!-- fragment --><p>Example response:</p>
+<div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: true</div><div class="line">}</div></div><!-- fragment --><h2><a class="anchor" id="rpc_bdev_opal_set_lock_state"></a>
+bdev_opal_set_lock_state</h2>
+<p>This is used to lock/unlock specific opal bdev providing user ID and password.</p>
+<h3>Parameters</h3>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Name  </th><th class="markdownTableHeadNone">Optional  </th><th class="markdownTableHeadNone">Type  </th><th class="markdownTableHeadNone">Description   </th></tr>
+<tr class="markdownTableBody" class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">bdev_name  </td><td class="markdownTableBodyNone">Required  </td><td class="markdownTableBodyNone">string  </td><td class="markdownTableBodyNone">name of OPAL vbdev   </td></tr>
+<tr class="markdownTableBody" class="markdownTableRowEven">
+<td class="markdownTableBodyNone">user_id  </td><td class="markdownTableBodyNone">Required  </td><td class="markdownTableBodyNone">number  </td><td class="markdownTableBodyNone">user ID   </td></tr>
+<tr class="markdownTableBody" class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">password  </td><td class="markdownTableBodyNone">Required  </td><td class="markdownTableBodyNone">string  </td><td class="markdownTableBodyNone">user password   </td></tr>
+<tr class="markdownTableBody" class="markdownTableRowEven">
+<td class="markdownTableBodyNone">lock_state  </td><td class="markdownTableBodyNone">Required  </td><td class="markdownTableBodyNone">string  </td><td class="markdownTableBodyNone">lock state   </td></tr>
+</table>
+<h3>Example</h3>
+<p>Example request:</p>
+<div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;method&quot;: &quot;bdev_opal_set_lock_state&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;params&quot;: {</div><div class="line">    &quot;bdev_name&quot;: &quot;nvme0n1r1&quot;,</div><div class="line">    &quot;user_id&quot;: &quot;1&quot;,</div><div class="line">    &quot;user_password&quot;: &quot;********&quot;,</div><div class="line">    &quot;lock_state&quot;: &quot;rwlock&quot;</div><div class="line">  }</div><div class="line">}</div></div><!-- fragment --><p>Example response:</p>
 <div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: true</div><div class="line">}</div></div><!-- fragment --><h1>Notifications</h1>
 <h2><a class="anchor" id="rpc_notify_get_types"></a>
 notify_get_types</h2>
