@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "e168b119_fa37edc1",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1011207
+      },
+      "writtenOn": "2019-10-29T06:14:51Z",
+      "side": 1,
+      "message": "May update with below information to be more clear\n\nAdd recent SPDK Chinese technical article links",
+      "range": {
+        "startLine": 7,
+        "startChar": 0,
+        "endLine": 7,
+        "endChar": 14
+      },
+      "revId": "8407d6b855c434df3ec53927335f65d6448cf025",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "4b7ed534_391be2d8",
+        "filename": "cn/articles.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 1011207
+      },
+      "writtenOn": "2019-10-29T06:14:51Z",
+      "side": 1,
+      "message": "Please remove the extra space here",
+      "range": {
+        "startLine": 13,
+        "startChar": 2,
+        "endLine": 13,
+        "endChar": 3
+      },
+      "revId": "8407d6b855c434df3ec53927335f65d6448cf025",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    }
+  ]
+}
