@@ -149,12 +149,6 @@ $(document).ready(function(){initNavTree('changelog.html','');});
 v19.10: (Upcoming Release)</h1>
 <h2>bdev</h2>
 <p>Added new parameter <code>cdw0</code> to <code><a class="el" href="bdev__module_8h.html#a3341d564a521b3e7874f72fc1390f043" title="Complete a bdev_io with an NVMe status code and DW0 completion queue entry. ">spdk_bdev_io_complete_nvme_status()</a></code> and <code><a class="el" href="bdev_8h.html#ae7e1bf90f44f042c2b2ad463b8667735" title="Get the status of bdev_io as an NVMe status code and command specific completion queue value...">spdk_bdev_io_get_nvme_status()</a></code> that allows setting/getting the NVMe completion queue DW0 entry. This allows vendor specific IO commands to return commmand specific completion info back to the initiator.</p>
-<h2>bdev opal</h2>
-<p>EXPERIMENTAL: A new opal bdev has been added to support management of NVMe self-encrypting drives through the Opal specification. Users can create opal bdevs from an NVMe namespace bdev, if the controller containing that namespace supports Opal. Currently this is only supported for namespace ID=1. The following RPCs have been added to support Opal: <code>bdev_nvme_opal_init</code>, <code>bdev_nvme_opal_revert</code>, <code>bdev_opal_create</code>, <code>bdev_opal_delete</code>, <code>bdev_opal_get_info</code>, <code>bdev_opal_new_user</code>, <code>bdev_opal_set_lock_state</code>. It does not yet support recreating the opal bdevs after application restart. This bdev module should be considered very experimental, and the RPCs may change significantly in future releases.</p>
-<h2>bdev zone</h2>
-<p>Added new public header for zoned bdev. Zoned bdev is an extension of the bdev interface.</p>
-<p><code><a class="el" href="bdev__zone_8h.html#ad5e6fcc674d5ebe932e2b2dcaa28f9b5" title="Get device zone size in logical blocks. ">spdk_bdev_get_zone_size()</a></code>, <code><a class="el" href="bdev__zone_8h.html#a7739e6335f06de1565e50d3afc247aa0" title="Get device maximum number of open zones. ">spdk_bdev_get_max_open_zones()</a></code>, <code><a class="el" href="bdev__zone_8h.html#aa50981e9f75708e66f7174c96cf396f8" title="Get device optimal number of open zones. ">spdk_bdev_get_optimal_open_zones()</a></code> APIs were added for retrieving zoned device information. <code><a class="el" href="group__bdev__io__submit__functions.html#ga01f2a4fd5da187f568381fa3c55f603c" title="Submit a get_zone_info request to the bdev. ">spdk_bdev_get_zone_info()</a></code> API was added for retrieving information about zones in zoned device. Added <code><a class="el" href="group__bdev__io__submit__functions.html#ga9220b3c7c3f9591cfdfd73977ee69f91" title="Submit a zone_management request to the bdev. ">spdk_bdev_zone_management()</a></code> API for changing zone state. <code><a class="el" href="group__bdev__io__submit__functions.html#ga17d6c2c7f25d21c5d2cdfb6e187e2033" title="Submit a zone_append request to the bdev. ">spdk_bdev_zone_append()</a></code> and <code><a class="el" href="group__bdev__io__submit__functions.html#gab8a2fd5a40daa3d36c15b3f92c9a81a7" title="Submit a zone_append request with metadata to the bdev. ">spdk_bdev_zone_append_with_md()</a></code> APIs were added for appending data to a zone. Added <code>spdk_bdev_io_get_append location()</code> function for retrieving append location for I/O.</p>
-<h2>bdev</h2>
 <p>Added <code><a class="el" href="bdev_8h.html#ab5775a23cadb2eb1d5381dc105577a37" title="Get the write unit size for this bdev. ">spdk_bdev_get_write_unit_size()</a></code> function for retrieving required number of logical blocks for write operation.</p>
 <p>New zone-related fields were added to the result of the <code>get_bdevs</code> RPC call:</p><ul>
 <li><code>zoned</code>: indicates whether the device is zoned or a regular block device</li>
@@ -162,27 +156,20 @@ v19.10: (Upcoming Release)</h1>
 <li><code>max_open_zones</code>: maximum number of open zones</li>
 <li><code>optimal_open_zones</code>: optimal number of open zones The <code>zoned</code> field is a boolean and is always present, while the rest is only available for zoned bdevs.</li>
 </ul>
-<h2>nvmf</h2>
-<p>The <code>spdk_nvmf_tgt_create</code> function now accepts an object of type <code><a class="el" href="structspdk__nvmf__target__opts.html">spdk_nvmf_target_opts</a></code> as its only parameter. This new structure contains the max_subsystems parameter previously passed into that function.</p>
-<p>A new public API function <code>spdk_nvmf_get_tgt</code> has been added which allows users to retrieve a pointer to an <code>spdk_nvmf_tgt</code> object by supplying its name. In the special case where an RPC or application only creates a single target, this function can accept a null name parameter and will return the only available target.</p>
-<p>The majority of the NVMe-oF RPCs now accept an optional tgt_name parameter. This will allow those RPCs to work with applications that create more than one target.</p>
-<p>Three new NVMe-oF RPCs have been added <code>nvmf_create_target</code>, <code>nvmf_delete_target</code>, and <code>nvmf_get_targets</code>. These new RPCs provide a basic interface for managing multiple target objects. In SPDK the target object defines a unique discovery service. As of this release, these RPCs are not intended to be used with the in-tree SPDK target applications, spdk_tgt and nvmf_tgt, which use a single, global target structure. As such, they are not included in scripts/rpc.py</p>
-<p>Three new header functions have also been added to help deal with multiple targets. <code>spdk_nvmf_tgt_get_name</code> takes a target pointer as an argument and returns its human readable name. <code>spdk_nvmf_get_first_target</code> takes no arguments and returns the first target in the global list. <code>spdk_nvmf_get_next_tgt</code> takes a target pointer as an argument and returns the next one in the global list.</p>
-<p>The <code>spdk_nvmf_tgt_accept</code> takes additional argument allowing to pass arbitrary context information to the <code>new_qpair</code> callback. This will simplify the code when having multiple nvmf targets or when retrieving the context information from globals is not suitable.</p>
-<h2>bdev</h2>
-<p>A new spdk_bdev_open_ext function has been added and spdk_bdev_open function has been deprecated. The new open function introduces requirement to provide callback function that will be called by asynchronous event such as bdev removal. spdk_bdev_open_ext function takes bdev name as an argument instead of bdev structure to avoid a race condition that can happen when the bdev is being removed between a call to get its structure based on a name and actually openning it.</p>
-<p>New 'resize' event has been added to notify about change of block count property of block device. Event is delivered only if block device was opened with spdk_bdev_open_ext function.</p>
-<h2>blobstore</h2>
-<p>A new spdk_bdev_create_bs_dev_from_desc function has been added and spdk_bdev_create_bs_dev function has been deprecated. The new create function can cowork with spdk_bdev_open_ext function, which provides callback function that will be called by asynchronous event such as bdev removal.</p>
-<h2>DPDK</h2>
-<p>Updated DPDK submodule to DPDK 19.08.</p>
-<h2>blobfs_bdev</h2>
-<p>A new blobfs module <code>bdev</code> has been added to simplify the operations of blobfs on bdev.</p>
-<p>Function spdk_blobfs_bdev_detect is added to detect whether blobfs exists on the given block device.</p>
-<p>Function spdk_blobfs_bdev_create is added to create a blobfs on the given block device.</p>
-<p>Function spdk_blobfs_bdev_mount is added to mount a blobfs on the given block device to a host path by FUSE. Then, a new thread is created dedicatedly for one mountpoint to handle FUSE request by blobfs API.</p>
-<h2>build</h2>
-<p>Option to build FUSE components into blobfs_bdev module for mounting a blobfs filesystem. It requires the installation of libfuse3. By default, it is disabled. And it will be enabled if run <code>./configure</code> with <code>--with-fuse</code> option.</p>
+<p>A new <code>spdk_bdev_open_ext</code> function has been added and <code>spdk_bdev_open</code> function has been deprecated. The new open function introduces requirement to provide callback function that will be called by asynchronous event such as bdev removal. <code>spdk_bdev_open_ext</code> function takes bdev name as an argument instead of bdev structure to avoid a race condition that can happen when the bdev is being removed between a call to get its structure based on a name and actually openning it.</p>
+<p>New 'resize' event has been added to notify about change of block count property of block device. Event is delivered only if block device was opened with <code>spdk_bdev_open_ext</code> function.</p>
+<h2>bdev zone</h2>
+<p>Added new public header for zoned bdev. Zoned bdev is an extension of the bdev interface.</p>
+<p><code><a class="el" href="bdev__zone_8h.html#ad5e6fcc674d5ebe932e2b2dcaa28f9b5" title="Get device zone size in logical blocks. ">spdk_bdev_get_zone_size()</a></code>, <code><a class="el" href="bdev__zone_8h.html#a7739e6335f06de1565e50d3afc247aa0" title="Get device maximum number of open zones. ">spdk_bdev_get_max_open_zones()</a></code>, <code><a class="el" href="bdev__zone_8h.html#aa50981e9f75708e66f7174c96cf396f8" title="Get device optimal number of open zones. ">spdk_bdev_get_optimal_open_zones()</a></code> APIs were added for retrieving zoned device information. <code><a class="el" href="group__bdev__io__submit__functions.html#ga01f2a4fd5da187f568381fa3c55f603c" title="Submit a get_zone_info request to the bdev. ">spdk_bdev_get_zone_info()</a></code> API was added for retrieving information about zones in zoned device. Added <code><a class="el" href="group__bdev__io__submit__functions.html#ga9220b3c7c3f9591cfdfd73977ee69f91" title="Submit a zone_management request to the bdev. ">spdk_bdev_zone_management()</a></code> API for changing zone state. <code><a class="el" href="group__bdev__io__submit__functions.html#ga17d6c2c7f25d21c5d2cdfb6e187e2033" title="Submit a zone_append request to the bdev. ">spdk_bdev_zone_append()</a></code> and <code><a class="el" href="group__bdev__io__submit__functions.html#gab8a2fd5a40daa3d36c15b3f92c9a81a7" title="Submit a zone_append request with metadata to the bdev. ">spdk_bdev_zone_append_with_md()</a></code> APIs were added for appending data to a zone. Added <code>spdk_bdev_io_get_append location()</code> function for retrieving append location for I/O. Added <code><a class="el" href="bdev_8h.html#a2e334778f2dfb469e2f96bcd42c6343b" title="Checks if bdev supports zoned namespace semantics. ">spdk_bdev_is_zoned()</a></code> function for checking if bdev supports zoned namespace semantics.</p>
+<h2>bdev opal</h2>
+<p>EXPERIMENTAL: A new opal bdev has been added to support management of NVMe self-encrypting drives through the Opal specification. Users can create opal bdevs from an NVMe namespace bdev, if the controller containing that namespace supports Opal. Currently this is only supported for namespace ID=1. The following RPCs have been added to support Opal: <code>bdev_nvme_opal_init</code>, <code>bdev_nvme_opal_revert</code>, <code>bdev_opal_create</code>, <code>bdev_opal_delete</code>, <code>bdev_opal_get_info</code>, <code>bdev_opal_new_user</code>, <code>bdev_opal_set_lock_state</code>. It does not yet support recreating the opal bdevs after application restart. This bdev module should be considered very experimental, and the RPCs may change significantly in future releases.</p>
+<h2>delay bdev</h2>
+<p>The <code>bdev_delay_update_latency</code> has been added to allow users to update a latency value for a given delay bdev.</p>
+<h2>compress bdev</h2>
+<p>A new RPC <code>bdev_compress_get_orphans</code> has been added to list compress bdevs that were not loaded due to a missing pm metadata file. In this state they can only be deleted.</p>
+<h2>null bdev</h2>
+<p>Metadata support has been added to Null bdev module.</p>
+<p>Protection information support has been added to Null bdev module.</p>
 <h2>nvme</h2>
 <p>Added <code>no_shn_notification</code> to NVMe controller initialization options, users can enable it for NVMe controllers. When the option is enabled, the controller will not do the shutdown process and just disable the controller, users can start their application later again to initialize the controller to the ready state.</p>
 <p>A controller flag <code>SPDK_NVME_CTRLR_WRR_SUPPORTED</code> was added to indicate the controller can support weighted round robin arbitration feature with submission queue.</p>
@@ -193,18 +180,38 @@ v19.10: (Upcoming Release)</h1>
 <p>Modified the return behavior of several API functions to better indicate to applications when a qpair is failed. This list of functions includes:</p>
 <p><code>spdk_nvme_qpair_process_completions</code> <code>spdk_nvme_ns_cmd_*</code> <code>spdk_nvme_ctrlr_process_admin_completions</code> <code>spdk_nvme_ctrlr_cmd_*</code></p>
 <p>These functions now return -ENXIO when the qpair or controller on which they operate is failed.</p>
+<h2>nvmf</h2>
+<p>The <code>spdk_nvmf_tgt_create</code> function now accepts an object of type <code><a class="el" href="structspdk__nvmf__target__opts.html">spdk_nvmf_target_opts</a></code> as its only parameter. This new structure contains the max_subsystems parameter previously passed into that function.</p>
+<p>A new public API function <code>spdk_nvmf_get_tgt</code> has been added which allows users to retrieve a pointer to an <code>spdk_nvmf_tgt</code> object by supplying its name. In the special case where an RPC or application only creates a single target, this function can accept a null name parameter and will return the only available target.</p>
+<p>The majority of the NVMe-oF RPCs now accept an optional tgt_name parameter. This will allow those RPCs to work with applications that create more than one target.</p>
+<p>Three new NVMe-oF RPCs have been added <code>nvmf_create_target</code>, <code>nvmf_delete_target</code>, and <code>nvmf_get_targets</code>. These new RPCs provide a basic interface for managing multiple target objects. In SPDK the target object defines a unique discovery service. As of this release, these RPCs are not intended to be used with the in-tree SPDK target applications, spdk_tgt and nvmf_tgt, which use a single, global target structure. As such, they are not included in scripts/rpc.py</p>
+<p>Three new header functions have also been added to help deal with multiple targets. <code>spdk_nvmf_tgt_get_name</code> takes a target pointer as an argument and returns its human readable name. <code>spdk_nvmf_get_first_target</code> takes no arguments and returns the first target in the global list. <code>spdk_nvmf_get_next_tgt</code> takes a target pointer as an argument and returns the next one in the global list.</p>
+<p>The <code>spdk_nvmf_tgt_accept</code> takes additional argument allowing to pass arbitrary context information to the <code>new_qpair</code> callback. This will simplify the code when having multiple nvmf targets or when retrieving the context information from globals is not suitable.</p>
+<h2>blobstore</h2>
+<p>A new <code>spdk_bdev_create_bs_dev_from_desc</code> function has been added and <code>spdk_bdev_create_bs_dev</code> function has been deprecated. The new create function can cowork with <code>spdk_bdev_open_ext</code> function, which provides callback function that will be called by asynchronous event such as bdev removal.</p>
+<h2>blobfs_bdev</h2>
+<p>A new blobfs module <code>bdev</code> has been added to simplify the operations of blobfs on bdev.</p>
+<p>Function <code>spdk_blobfs_bdev_detect</code> is added to detect whether blobfs exists on the given block device.</p>
+<p>Function <code>spdk_blobfs_bdev_create</code> is added to create a blobfs on the given block device.</p>
+<p>Function <code>spdk_blobfs_bdev_mount</code> is added to mount a blobfs on the given block device to a host path by FUSE. Then, a new thread is created dedicatedly for one mountpoint to handle FUSE request by blobfs API.</p>
+<h2>build</h2>
+<p>Option to build FUSE components into blobfs_bdev module for mounting a blobfs filesystem. It requires the installation of libfuse3. By default, it is disabled. And it will be enabled if run <code>./configure</code> with <code>--with-fuse</code> option.</p>
 <h2>iSCSI</h2>
 <p>Portals may no longer be associated with a cpumask. The scheduling of connections is moving to a more dynamic model.</p>
 <p>An new RPC <code>iscsi_portal_group_set_auth</code> has been added to set CHAP authentication for discovery sessions specific for the existing iSCSI portal group. This RPC overwrites the setting by the global parameters for the iSCSI portal group.</p>
-<h2>delay bdev</h2>
-<p>The <code>bdev_delay_update_latency</code> has been added to allow users to update a latency value for a given delay bdev.</p>
-<h2>compress bdev</h2>
-<p>A new RPC <code>bdev_compress_get_orphans</code> has been added to list compress bdevs that were not loaded due to a missing pm metadata file. In this state they can only be deleted.</p>
-<h2>null bdev</h2>
-<p>Metadata support has been added to Null bdev module.</p>
-<p>Protection information support has been added to Null bdev module.</p>
+<h2>socket</h2>
+<p>Added <code>spdk_sock_is_connected</code> to check whether the socket is currently connected. <code>spdk_sock_group_poll</code> now returns number of events on success.</p>
+<h2>env</h2>
+<p>Added <code><a class="el" href="env_8h.html#a53e5710a5ece84d2d821b91351892da4" title="Undo spdk_pci_device_claim(). ">spdk_pci_device_unclaim()</a></code> function to cleanup pci claim file.</p>
 <h2>event</h2>
-<p>start_subsystem_init RPC no longer stops the application on error during initialization.</p>
+<p><code>framework_start_init</code> RPC no longer stops the application on error during initialization.</p>
+<h2>DPDK</h2>
+<p>Updated DPDK submodule to DPDK 19.08.</p>
+<h2>ocf</h2>
+<p>Updated OCF submodule to OCF v19.06</p>
+<p>Along with update, new cache mode 'write only' was added.</p>
+<p>New cache modes added to use via RPC, wi - write invalidate and wa - write around.</p>
+<p>New version of OCF provides fully asynchronous management API.</p>
 <h2>rpc</h2>
 <p>Added optional parameters '&ndash;arbitration-burst' and '&ndash;low/medium/high-priority-weight' to 'bdev_nvme_set_options' RPC method.</p>
 <p>Added optional parameter '&ndash;md-size' to 'construct_null_bdev' RPC method.</p>
@@ -212,11 +219,6 @@ v19.10: (Upcoming Release)</h1>
 <p>Added <code>blobfs_detect</code> RPC method to detect whether a blobfs exists on given bdev.</p>
 <p>Added <code>blobfs_create</code> RPC method to build blobfs on given bdev.</p>
 <p>Added <code>blobfs_mount</code> RPC method to mount blobfs on given bdev to a host path by FUSE. Then on the host path, user can directly do some file operations which will be mapped to blobfs.</p>
-<h2>ocf</h2>
-<p>Updated OCF submodule to OCF v19.06</p>
-<p>Along with update, new cache mode 'write only' was added.</p>
-<p>New cache modes added to use via RPC, wi - write invalidate and wa - write around.</p>
-<p>New version of OCF provides fully asynchronous management API.</p>
 <h1><a class="anchor" id="changelog-v19-07"></a>
 v19.07:</h1>
 <h2>ftl</h2>

@@ -2853,7 +2853,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_cuse_unregi
 </div><div class="memdoc">
 
 <p>Attempt to reconnect the given qpair. </p>
-<p>This function is intended to be called on qpairs that have already been connected, but have since entered a failed state as indicated by a return value of -ENXIO from either spdk_nvme_qpair_process_completions or one of the spdk_nvme_ns_cmd_* functions.</p>
+<p>This function is intended to be called on qpairs that have already been connected, but have since entered a failed state as indicated by a return value of -ENXIO from either spdk_nvme_qpair_process_completions or one of the spdk_nvme_ns_cmd_* functions. This function must be called from the same thread as spdk_nvme_qpair_process_completions and the spdk_nvme_ns_cmd_* functions.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">qpair</td><td>The qpair to reconnect.</td></tr>
