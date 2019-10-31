@@ -1,0 +1,72 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "830465d8_006555cb",
+        "filename": "development.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 234,
+      "author": {
+        "id": 1011222
+      },
+      "writtenOn": "2019-10-31T22:30:52Z",
+      "side": 1,
+      "message": "Can you add some brief text up front describing why this is important?  Ensures intermittent failures get fixed, prioritizes effort based on frequency, blah blah blah",
+      "revId": "29602220f7ab43244ea4cf6c6858042053f6607c",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "8c0d6993_aba5108e",
+        "filename": "development.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 235,
+      "author": {
+        "id": 1011222
+      },
+      "writtenOn": "2019-10-31T22:30:52Z",
+      "side": 1,
+      "message": "or, file\n\nI think this comma can be removed.",
+      "revId": "29602220f7ab43244ea4cf6c6858042053f6607c",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "799419ef_c0990870",
+        "filename": "development.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 236,
+      "author": {
+        "id": 1011222
+      },
+      "writtenOn": "2019-10-31T22:30:52Z",
+      "side": 1,
+      "message": "Let\u0027s put it in quotes - \"Intermittent Failure\"",
+      "revId": "29602220f7ab43244ea4cf6c6858042053f6607c",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "e846cc92_47328b69",
+        "filename": "development.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 246,
+      "author": {
+        "id": 1011222
+      },
+      "writtenOn": "2019-10-31T22:30:52Z",
+      "side": 1,
+      "message": "tothe \u003d\u003e to the",
+      "revId": "29602220f7ab43244ea4cf6c6858042053f6607c",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    }
+  ]
+}
