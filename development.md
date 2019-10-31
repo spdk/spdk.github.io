@@ -229,8 +229,22 @@ pending approval for a run through the CI system are listed under the 'Pending A
 When the CI system completes, it will post a comment on the Gerrit review with a +/-1 Verified flag, plus a link to the logs
 of the test run. This is particularly useful if the tests fail. Patches will not be merged without a +1 Verified from the CI system.
 
-If the CI system gives your patch a -1 but you believe it is in error (not related to your patch), add a comment to the patch
-that starts with the word "retrigger".  This will signal the CI system to re-run for the associated patch.
+<a id="integration_false_positive"></a>
+### False Positives and Retriggering Patches
+If the CI system gives your patch a -1 but you believe it is in error (not related to your patch), you should match it to an outstanding
+intermittent failure [GitHub Issue](https://github.com/spdk/spdk/issues?q=is%3Aopen+is%3Aissue+label%3A%22Intermittent+Failure%22) or, file
+a [new issue](https://github.com/spdk/spdk/issues/new). If you do create a new issue, be sure to add the intermittent failure label to it. Once
+you have obtained an issue number from GitHub, either by matching to an existing latent failure or creating your own, you can simply post a comment
+to your patch on GerritHub with the following form:
+
+~~~{.sh}
+# Replace 555 with your issue number.
+false positive: 555
+~~~
+
+The CI system will then take care of removing the -1 vote from your patch. It will also comment on the GitHub issue you referenced with a link
+tothe latest failure's log. If the system is unable to match your comment to a valid GitHub issue, it will post back a comment on GerritHub letting
+you know it was unable to retrigger your patch.
 
 <a id="local"></a>
 ## Local Testing
