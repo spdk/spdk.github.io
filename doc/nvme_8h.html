@@ -367,9 +367,6 @@ Functions</h2></td></tr>
 <tr class="memitem:aa331d140870e977722bfbb6826524782"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#aa331d140870e977722bfbb6826524782">spdk_nvme_qpair_process_completions</a> (struct spdk_nvme_qpair *qpair, uint32_t max_completions)</td></tr>
 <tr class="memdesc:aa331d140870e977722bfbb6826524782"><td class="mdescLeft">&#160;</td><td class="mdescRight">Process any outstanding completions for I/O submitted on a queue pair.  <a href="#aa331d140870e977722bfbb6826524782">More...</a><br /></td></tr>
 <tr class="separator:aa331d140870e977722bfbb6826524782"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acd8ade16f6272f03af420ca0de2ad615"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#acd8ade16f6272f03af420ca0de2ad615">spdk_nvme_io_msg_process</a> (struct spdk_nvme_ctrlr *ctrlr)</td></tr>
-<tr class="memdesc:acd8ade16f6272f03af420ca0de2ad615"><td class="mdescLeft">&#160;</td><td class="mdescRight">Process IO message sent to controller from external module.  <a href="#acd8ade16f6272f03af420ca0de2ad615">More...</a><br /></td></tr>
-<tr class="separator:acd8ade16f6272f03af420ca0de2ad615"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afe2a9d3b715649b4d0a0e89196a13e6d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#afe2a9d3b715649b4d0a0e89196a13e6d">spdk_nvme_ctrlr_cmd_admin_raw</a> (struct spdk_nvme_ctrlr *ctrlr, struct <a class="el" href="structspdk__nvme__cmd.html">spdk_nvme_cmd</a> *cmd, void *buf, uint32_t len, <a class="el" href="nvme_8h.html#ac9779e9957d7089dde8e492cc60856d8">spdk_nvme_cmd_cb</a> cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:afe2a9d3b715649b4d0a0e89196a13e6d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send the given admin command to the NVMe controller.  <a href="#afe2a9d3b715649b4d0a0e89196a13e6d">More...</a><br /></td></tr>
 <tr class="separator:afe2a9d3b715649b4d0a0e89196a13e6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -565,11 +562,11 @@ Functions</h2></td></tr>
 <tr class="memitem:ad4cd4052825486e483bff14f328040cf"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#ad4cd4052825486e483bff14f328040cf">spdk_nvme_cuse_get_ns_name</a> (struct spdk_nvme_ctrlr *ctrlr, uint32_t nsid)</td></tr>
 <tr class="memdesc:ad4cd4052825486e483bff14f328040cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get name of cuse device associated with NVMe namespace.  <a href="#ad4cd4052825486e483bff14f328040cf">More...</a><br /></td></tr>
 <tr class="separator:ad4cd4052825486e483bff14f328040cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a406b7ee1f53f568334e505365a281569"><td class="memItemLeft" align="right" valign="top"><a id="a406b7ee1f53f568334e505365a281569"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_cuse_register</b> (struct spdk_nvme_ctrlr *ctrlr, const char *dev_path)</td></tr>
+<tr class="memitem:a406b7ee1f53f568334e505365a281569"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a406b7ee1f53f568334e505365a281569">spdk_nvme_cuse_register</a> (struct spdk_nvme_ctrlr *ctrlr, const char *dev_path)</td></tr>
+<tr class="memdesc:a406b7ee1f53f568334e505365a281569"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a character device at the path specified (Experimental)  <a href="#a406b7ee1f53f568334e505365a281569">More...</a><br /></td></tr>
 <tr class="separator:a406b7ee1f53f568334e505365a281569"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af071b3e57e51005c4e2b877eeda58b4b"><td class="memItemLeft" align="right" valign="top"><a id="af071b3e57e51005c4e2b877eeda58b4b"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_cuse_unregister</b> (struct spdk_nvme_ctrlr *ctrlr)</td></tr>
+<tr class="memitem:af071b3e57e51005c4e2b877eeda58b4b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#af071b3e57e51005c4e2b877eeda58b4b">spdk_nvme_cuse_unregister</a> (struct spdk_nvme_ctrlr *ctrlr)</td></tr>
+<tr class="memdesc:af071b3e57e51005c4e2b877eeda58b4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove a previously created character device (Experimental)  <a href="#af071b3e57e51005c4e2b877eeda58b4b">More...</a><br /></td></tr>
 <tr class="separator:af071b3e57e51005c4e2b877eeda58b4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -3297,6 +3294,72 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_cuse_unregi
 
 </div>
 </div>
+<a id="a406b7ee1f53f568334e505365a281569"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a406b7ee1f53f568334e505365a281569">&#9670;&nbsp;</a></span>spdk_nvme_cuse_register()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_nvme_cuse_register </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_nvme_ctrlr *&#160;</td>
+          <td class="paramname"><em>ctrlr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>dev_path</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Create a character device at the path specified (Experimental) </p>
+<p>The character device can handle ioctls and is compatible with a standard Linux kernel NVMe device. Tools such as nvme-cli can be used to configure SPDK devices through this interface.</p>
+<p>The user is expected to be polling the admin qpair for this controller periodically for the CUSE device to function.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ctrlr</td><td>Opaque handle to the NVMe controller. </td></tr>
+    <tr><td class="paramname">dev_path</td><td>The path at which the device should appear. Ex. /dev/spdk/nvme0n1</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success. Negated errno on failure. </dd></dl>
+
+</div>
+</div>
+<a id="af071b3e57e51005c4e2b877eeda58b4b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af071b3e57e51005c4e2b877eeda58b4b">&#9670;&nbsp;</a></span>spdk_nvme_cuse_unregister()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_nvme_cuse_unregister </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_nvme_ctrlr *&#160;</td>
+          <td class="paramname"><em>ctrlr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Remove a previously created character device (Experimental) </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ctrlr</td><td>Opaque handle to the NVMe controller. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a4b63c225c3cce6da60fdbfb6f54b11e2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4b63c225c3cce6da60fdbfb6f54b11e2">&#9670;&nbsp;</a></span>spdk_nvme_detach()</h2>
 
@@ -3372,36 +3435,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_cuse_unregi
 <p>Unspecified fields of trid are left unmodified, so the caller must initialize hostid (for example, memset() to 0) before calling this function.</p>
 <p>This function should not be used with Fiber Channel or PCIe as these transports do not require host information for connections.</p>
 <dl class="section return"><dt>Returns</dt><dd>0 if parsing was successful and hostid is filled out, or negated errno values on failure. </dd></dl>
-
-</div>
-</div>
-<a id="acd8ade16f6272f03af420ca0de2ad615"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acd8ade16f6272f03af420ca0de2ad615">&#9670;&nbsp;</a></span>spdk_nvme_io_msg_process()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int spdk_nvme_io_msg_process </td>
-          <td>(</td>
-          <td class="paramtype">struct spdk_nvme_ctrlr *&#160;</td>
-          <td class="paramname"><em>ctrlr</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Process IO message sent to controller from external module. </p>
-<p>This call process requests from the ring, send IO to an allocated qpair or admin commands in its context. This call is non-blocking and intended to be polled by SPDK thread to provide safe environment for NVMe request completition sent by external module to controller.</p>
-<p>The caller must ensure that each controller is polled by only one thread at a time.</p>
-<p>This function may be called at any point while the controller is attached to the SPDK NVMe driver.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">ctrlr</td><td>Opaque handle to NVMe controller.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>number of processed external IO messages. </dd></dl>
 
 </div>
 </div>

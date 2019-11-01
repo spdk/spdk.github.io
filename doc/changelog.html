@@ -145,8 +145,10 @@ $(document).ready(function(){initNavTree('changelog.html','');});
 <div class="title">Changelog </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h1><a class="anchor" id="changelog-v19-10"></a>
-v19.10: (Upcoming Release)</h1>
+<div class="textblock"><h1><a class="anchor" id="changelog-v20-01"></a>
+v20.01: (Upcoming Release)</h1>
+<h1><a class="anchor" id="changelog-v19-10"></a>
+v19.10:</h1>
 <h2>bdev</h2>
 <p>Added new parameter <code>cdw0</code> to <code><a class="el" href="bdev__module_8h.html#a3341d564a521b3e7874f72fc1390f043" title="Complete a bdev_io with an NVMe status code and DW0 completion queue entry. ">spdk_bdev_io_complete_nvme_status()</a></code> and <code><a class="el" href="bdev_8h.html#ae7e1bf90f44f042c2b2ad463b8667735" title="Get the status of bdev_io as an NVMe status code and command specific completion queue value...">spdk_bdev_io_get_nvme_status()</a></code> that allows setting/getting the NVMe completion queue DW0 entry. This allows vendor specific IO commands to return commmand specific completion info back to the initiator.</p>
 <p>Added <code><a class="el" href="bdev_8h.html#ab5775a23cadb2eb1d5381dc105577a37" title="Get the write unit size for this bdev. ">spdk_bdev_get_write_unit_size()</a></code> function for retrieving required number of logical blocks for write operation.</p>
@@ -180,6 +182,7 @@ v19.10: (Upcoming Release)</h1>
 <p>Modified the return behavior of several API functions to better indicate to applications when a qpair is failed. This list of functions includes:</p>
 <p><code>spdk_nvme_qpair_process_completions</code> <code>spdk_nvme_ns_cmd_*</code> <code>spdk_nvme_ctrlr_process_admin_completions</code> <code>spdk_nvme_ctrlr_cmd_*</code></p>
 <p>These functions now return -ENXIO when the qpair or controller on which they operate is failed.</p>
+<p>EXPERIMENTAL: Added NVMe character device support to allow to create NVMe device nodes in Linux kernel for controller as well as for namespace and process ioctl requests as usual from linux environment.</p>
 <h2>nvmf</h2>
 <p>The <code>spdk_nvmf_tgt_create</code> function now accepts an object of type <code><a class="el" href="structspdk__nvmf__target__opts.html">spdk_nvmf_target_opts</a></code> as its only parameter. This new structure contains the max_subsystems parameter previously passed into that function.</p>
 <p>A new public API function <code>spdk_nvmf_get_tgt</code> has been added which allows users to retrieve a pointer to an <code>spdk_nvmf_tgt</code> object by supplying its name. In the special case where an RPC or application only creates a single target, this function can accept a null name parameter and will return the only available target.</p>

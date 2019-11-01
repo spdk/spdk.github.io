@@ -155,6 +155,7 @@ In this document</h1>
 <li><a class="el" href="nvme.html#nvme_fabrics_host">NVMe over Fabrics Host Support</a></li>
 <li><a class="el" href="nvme.html#nvme_multi_process">NVMe Multi Process</a></li>
 <li><a class="el" href="nvme.html#nvme_hotplug">NVMe Hotplug</a></li>
+<li><a class="el" href="nvme.html#nvme_cuse">NVMe Character Devices</a></li>
 </ul>
 <h1><a class="anchor" id="nvme_intro"></a>
 Introduction</h1>
@@ -269,7 +270,19 @@ NVMe Hotplug</h1>
 <li>Hotplug events detection: The user of the NVMe library can call <a class="el" href="nvme_8h.html#a225bbc386ec518ae21bd5536f21db45d" title="Enumerate the bus indicated by the transport ID and attach the userspace NVMe driver to each device f...">spdk_nvme_probe()</a> periodically to detect hotplug events. The probe_cb, followed by the attach_cb, will be called for each new device detected. The user may optionally also provide a remove_cb that will be called if a previously attached NVMe device is no longer present on the system. All subsequent I/O to the removed device will return an error.</li>
 <li>Hot remove NVMe with IO loads: When a device is hot removed while I/O is occurring, all access to the PCI BAR will result in a SIGBUS error. The NVMe driver automatically handles this case by installing a SIGBUS handler and remapping the PCI BAR to a new, placeholder memory location. This means I/O in flight during a hot remove will complete with an appropriate error code and will not crash the application.</li>
 </ol>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="nvme_8h.html#a225bbc386ec518ae21bd5536f21db45d" title="Enumerate the bus indicated by the transport ID and attach the userspace NVMe driver to each device f...">spdk_nvme_probe</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="nvme_8h.html#a225bbc386ec518ae21bd5536f21db45d" title="Enumerate the bus indicated by the transport ID and attach the userspace NVMe driver to each device f...">spdk_nvme_probe</a></dd></dl>
+<h1><a class="anchor" id="nvme_cuse"></a>
+NVMe Character Devices</h1>
+<p>This feature is considered as experimental.</p>
+<div class="image">
+<object type="image/svg+xml" data="nvme_cuse.svg">nvme_cuse.svg</object>
+<div class="caption">
+NVMe character devices processing diagram</div></div>
+<p> For each controller as well as namespace, character devices are created in the locations: </p><div class="fragment"><div class="line">/dev/&#39;dev_path&#39;</div><div class="line">/dev/&#39;dev_path&#39;nY</div><div class="line">...</div></div><!-- fragment --><p>Requests from CUSE are handled by pthreads when controller and namespaces are created. Those pass the I/O or admin commands via a ring to a thread that processes them using spdk_nvme_io_msg_process().</p>
+<p>Ioctls that request information attained when attaching NVMe controller receive an immediate response, without passing them through the ring.</p>
+<p>This interface reserves one qpair for sending down the I/O for each controller.</p>
+<h2>Enabling cuse support for NVMe</h2>
+<p>Cuse support is disabled by default. To enable support for NVMe devices SPDK must be compiled with "./configure --with-nvme-cuse". </p>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 </div>

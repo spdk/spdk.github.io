@@ -93,7 +93,9 @@ var user_guides =
       [ "OCF Virtual bdev", "bdev.html#bdev_config_cas", null ],
       [ "Malloc bdev", "bdev.html#bdev_config_malloc", null ],
       [ "Null", "bdev.html#bdev_config_null", null ],
-      [ "NVMe bdev", "bdev.html#bdev_config_nvme", null ],
+      [ "NVMe bdev", "bdev.html#bdev_config_nvme", [
+        [ "NVMe bdev character device", "bdev.html#bdev_config_nvme_cuse", null ]
+      ] ],
       [ "Logical volumes", "bdev.html#bdev_ug_logical_volumes", [
         [ "Logical volume store", "bdev.html#bdev_ug_lvol_store", null ],
         [ "Lvols", "bdev.html#bdev_ug_lvols", null ]
@@ -147,6 +149,8 @@ var user_guides =
         [ "bdev_nvme_attach_controller", "jsonrpc.html#rpc_bdev_nvme_attach_controller", null ],
         [ "bdev_nvme_get_controllers", "jsonrpc.html#rpc_bdev_nvme_get_controllers", null ],
         [ "bdev_nvme_detach_controller", "jsonrpc.html#rpc_bdev_nvme_detach_controller", null ],
+        [ "bdev_nvme_cuse_register", "jsonrpc.html#rpc_bdev_nvme_cuse_register", null ],
+        [ "bdev_nvme_cuse_unregister", "jsonrpc.html#rpc_bdev_nvme_cuse_unregister", null ],
         [ "bdev_rbd_create", "jsonrpc.html#rpc_bdev_rbd_create", null ],
         [ "bdev_rbd_delete", "jsonrpc.html#rpc_bdev_rbd_delete", null ],
         [ "bdev_delay_create", "jsonrpc.html#rpc_bdev_delay_create", null ],

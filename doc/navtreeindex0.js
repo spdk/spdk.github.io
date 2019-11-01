@@ -51,6 +51,7 @@ var NAVTREEINDEX0 =
 "bdev.html#bdev_config_malloc":[3,5,11],
 "bdev.html#bdev_config_null":[3,5,12],
 "bdev.html#bdev_config_nvme":[3,5,13],
+"bdev.html#bdev_config_nvme_cuse":[3,5,13,0],
 "bdev.html#bdev_config_passthru":[3,5,16],
 "bdev.html#bdev_config_pmem":[3,5,17],
 "bdev.html#bdev_config_rbd":[3,5,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX0 =
 "bit__array_8h.html#a2fa39a45a0605dcddf09d7039a2b6c0a":[13,0,6,8],
 "bit__array_8h.html#a3d9ed5f2c92771883db31e6b5b5a8c52":[13,0,6,10],
 "bit__array_8h.html#a42c782a3343ddb0253b7494d01e3369f":[13,0,6,6],
-"bit__array_8h.html#a64d5256695898daf0b9403c54c47da04":[13,0,6,1],
-"bit__array_8h.html#a7e47711078db91ec59ddbfaabe0a8696":[13,0,6,7]
+"bit__array_8h.html#a64d5256695898daf0b9403c54c47da04":[13,0,6,1]
 };

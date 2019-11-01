@@ -293,6 +293,14 @@ NVMe bdev</h1>
 <p>To remove an NVMe controller use the bdev_nvme_detach_controller command.</p>
 <p><code>rpc.py bdev_nvme_detach_controller Nvme0</code></p>
 <p>This command will remove NVMe bdev named Nvme0.</p>
+<h2><a class="anchor" id="bdev_config_nvme_cuse"></a>
+NVMe bdev character device</h2>
+<p>This feature is considered as experimental.</p>
+<p>Example commands</p>
+<p><code>rpc.py bdev_nvme_cuse_register -n Nvme0 -p spdk/nvme0</code></p>
+<p>This command will register /dev/spdk/nvme0 character device associated with Nvme0 controller. If there are namespaces created on Nvme0 controller, for each namespace device /dev/spdk/nvme0nX is created.</p>
+<p>Cuse devices are removed from system, when NVMe controller is detached or unregistered with command:</p>
+<p><code>rpc.py bdev_nvme_cuse_unregister -n Nvme0</code></p>
 <h1><a class="anchor" id="bdev_ug_logical_volumes"></a>
 Logical volumes</h1>
 <p>The Logical Volumes library is a flexible storage space management system. It allows creating and managing virtual block devices with variable size on top of other bdevs. The SPDK Logical Volume library is built on top of <a class="el" href="blob.html">Blobstore Programmer's Guide</a>. For detailed description please refer to <a class="el" href="logical_volumes.html#lvol">Logical volume</a>.</p>

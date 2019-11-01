@@ -1,5 +1,9 @@
 var NAVTREEINDEX22 =
 {
+"unionspdk__nvme__feat__autonomous__power__state__transition.html#a022cc1ba5b7ff365a6b69989c663333a":[12,0,108,0],
+"unionspdk__nvme__feat__autonomous__power__state__transition.html#a27833e384db296d369a2c9e048416b39":[12,0,108,1],
+"unionspdk__nvme__feat__autonomous__power__state__transition.html#a36867fe7bf800adeacf48b7940f74857":[12,0,108,2],
+"unionspdk__nvme__feat__autonomous__power__state__transition.html#a9311f1d84bfe298c3ea675dc2cfbdcdc":[12,0,108,3],
 "unionspdk__nvme__feat__error__recovery.html":[12,0,109],
 "unionspdk__nvme__feat__error__recovery.html#a3fea2c7498040b7d721143a1f4f472fb":[12,0,109,0],
 "unionspdk__nvme__feat__error__recovery.html#a470249122d177e128016ebe292f83085":[12,0,109,2],
