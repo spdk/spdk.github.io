@@ -151,6 +151,14 @@ v20.01: (Upcoming Release)</h1>
 <p>Updated ISA-L submodule to commit f3993f5c0b6911 which includes implementation and optimization for aarch64.</p>
 <h1><a class="anchor" id="changelog-v19-10"></a>
 v19.10:</h1>
+<h2>rpc</h2>
+<p>Many of SPDK's RPCs were renamed to be more consistent and intuitive in this release. The old names will continue to function, but will display a deprecation warning.</p>
+<p>Added optional parameters '&ndash;arbitration-burst' and '&ndash;low/medium/high-priority-weight' to 'bdev_nvme_set_options' RPC method.</p>
+<p>Added optional parameter '&ndash;md-size' to 'construct_null_bdev' RPC method.</p>
+<p>Added optional parameters '&ndash;dif-type' and '&ndash;dif-is-head-of-md' to 'construct_null_bdev' RPC method.</p>
+<p>Added <code>blobfs_detect</code> RPC method to detect whether a blobfs exists on given bdev.</p>
+<p>Added <code>blobfs_create</code> RPC method to build blobfs on given bdev.</p>
+<p>Added <code>blobfs_mount</code> RPC method to mount blobfs on given bdev to a host path by FUSE. Then on the host path, user can directly do some file operations which will be mapped to blobfs.</p>
 <h2>bdev</h2>
 <p>Added new parameter <code>cdw0</code> to <code><a class="el" href="bdev__module_8h.html#a3341d564a521b3e7874f72fc1390f043" title="Complete a bdev_io with an NVMe status code and DW0 completion queue entry. ">spdk_bdev_io_complete_nvme_status()</a></code> and <code><a class="el" href="bdev_8h.html#ae7e1bf90f44f042c2b2ad463b8667735" title="Get the status of bdev_io as an NVMe status code and command specific completion queue value...">spdk_bdev_io_get_nvme_status()</a></code> that allows setting/getting the NVMe completion queue DW0 entry. This allows vendor specific IO commands to return commmand specific completion info back to the initiator.</p>
 <p>Added <code><a class="el" href="bdev_8h.html#ab5775a23cadb2eb1d5381dc105577a37" title="Get the write unit size for this bdev. ">spdk_bdev_get_write_unit_size()</a></code> function for retrieving required number of logical blocks for write operation.</p>
@@ -217,13 +225,6 @@ v19.10:</h1>
 <p>Along with update, new cache mode 'write only' was added.</p>
 <p>New cache modes added to use via RPC, wi - write invalidate and wa - write around.</p>
 <p>New version of OCF provides fully asynchronous management API.</p>
-<h2>rpc</h2>
-<p>Added optional parameters '&ndash;arbitration-burst' and '&ndash;low/medium/high-priority-weight' to 'bdev_nvme_set_options' RPC method.</p>
-<p>Added optional parameter '&ndash;md-size' to 'construct_null_bdev' RPC method.</p>
-<p>Added optional parameters '&ndash;dif-type' and '&ndash;dif-is-head-of-md' to 'construct_null_bdev' RPC method.</p>
-<p>Added <code>blobfs_detect</code> RPC method to detect whether a blobfs exists on given bdev.</p>
-<p>Added <code>blobfs_create</code> RPC method to build blobfs on given bdev.</p>
-<p>Added <code>blobfs_mount</code> RPC method to mount blobfs on given bdev to a host path by FUSE. Then on the host path, user can directly do some file operations which will be mapped to blobfs.</p>
 <h1><a class="anchor" id="changelog-v19-07"></a>
 v19.07:</h1>
 <h2>ftl</h2>
