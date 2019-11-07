@@ -1,5 +1,6 @@
 var NAVTREEINDEX21 =
 {
+"structspdk__trace__entry.html#a8352d515ed92a1c37fc62c8a0473ef3d":[12,0,257,4],
 "structspdk__trace__entry.html#a9703554659f406f3d74ea78405def59e":[12,0,257,1],
 "structspdk__trace__entry.html#aed913017a27f04e7fa543af3323d430d":[12,0,257,0],
 "structspdk__trace__flags.html":[12,0,258],
@@ -44,6 +45,7 @@ var NAVTREEINDEX21 =
 "system_configuration.html":[3,0],
 "system_configuration.html#iommu_config":[3,0,0],
 "thread_8h.html":[13,0,50],
+"thread_8h.html#a07b662b152c21dad824ad2738d0733ec":[13,0,50,46],
 "thread_8h.html#a10aa5a8ec5228fa87db97f7655f8c0d6":[13,0,50,31],
 "thread_8h.html#a16bb098e6398d2a63577e805f1423a3e":[13,0,50,15],
 "thread_8h.html#a1d77f05c2461acb75f333e67e6aeb1ed":[13,0,50,33],
@@ -64,7 +66,6 @@ var NAVTREEINDEX21 =
 "thread_8h.html#a75aa6a61877f23f79bb75c8fc5e68202":[13,0,50,5],
 "thread_8h.html#a75f5c71056d8c39ff05a6610d55edcf5":[13,0,50,24],
 "thread_8h.html#a83adef6c3df9568bdea346b8e7dcbaa5":[13,0,50,21],
-"thread_8h.html#a84c8a9fbcb474dbf3b1e2b8b3848a1fb":[13,0,50,46],
 "thread_8h.html#a8537c42a7aa203b50578efed509d9ba8":[13,0,50,16],
 "thread_8h.html#a8ff9537d26ac923a7a93cd55ba315b5b":[13,0,50,20],
 "thread_8h.html#a939935cee4dac6636f2b7c6db0b2fec1":[13,0,50,23],
@@ -248,6 +249,5 @@ var NAVTREEINDEX21 =
 "unionspdk__nvme__feat__async__event__configuration.html#a7ab1c26cd44cb16c0f8473d174897a8e":[12,0,107,0],
 "unionspdk__nvme__feat__async__event__configuration.html#a7e369c599d81ab33f93c69b1a7f8c7bd":[12,0,107,1],
 "unionspdk__nvme__feat__async__event__configuration.html#a7e91f0feb90898c53fbf1bcd5e277b93":[12,0,107,4],
-"unionspdk__nvme__feat__async__event__configuration.html#af9edd911cbd0e44235cf4ac12d8c8c0e":[12,0,107,6],
-"unionspdk__nvme__feat__autonomous__power__state__transition.html":[12,0,108]
+"unionspdk__nvme__feat__async__event__configuration.html#af9edd911cbd0e44235cf4ac12d8c8c0e":[12,0,107,6]
 };

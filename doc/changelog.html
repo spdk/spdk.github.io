@@ -149,6 +149,11 @@ $(document).ready(function(){initNavTree('changelog.html','');});
 v20.01: (Upcoming Release)</h1>
 <h2>isa-l</h2>
 <p>Updated ISA-L submodule to commit f3993f5c0b6911 which includes implementation and optimization for aarch64.</p>
+<h2>thread</h2>
+<p><code>spdk_thread_send_msg</code> now returns int indicating if the message was successfully sent.</p>
+<h2>blobfs</h2>
+<p>Added boolean return value for function spdk_fs_set_cache_size to indicate its operation result.</p>
+<p>Added <code>blobfs_set_cache_size</code> RPC method to set cache size for blobstore filesystem.</p>
 <h1><a class="anchor" id="changelog-v19-10"></a>
 v19.10:</h1>
 <h2>rpc</h2>

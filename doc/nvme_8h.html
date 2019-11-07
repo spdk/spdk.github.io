@@ -1549,7 +1549,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>0 if successfully submitted, negated errno if resources could not be allocated for this request, -ENXIO if the admin qpair is failed at the transport layer. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>0 if successfully submitted, negated errnos on the following error conditions: -ENOMEM: The request cannot be allocated. -ENXIO: The qpair is failed at the transport level. -EFAULT: Invalid address was specified as part of payload. cb_fn is also called with error status including dnr=1 in this case. </dd></dl>
 
 </div>
 </div>
@@ -1632,7 +1632,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>0 if successfully submitted, negated errno if resources could not be allocated for this request, -ENXIO if the admin qpair is failed at the transport layer. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>0 if successfully submitted, negated errnos on the following error conditions: -ENOMEM: The request cannot be allocated. -ENXIO: The qpair is failed at the transport level. -EFAULT: Invalid address was specified as part of payload. cb_fn is also called with error status including dnr=1 in this case. </dd></dl>
 
 </div>
 </div>
@@ -2626,7 +2626,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>0 if successfully submitted, -ENOMEN if resources could not be allocated for this request, -ENXIO if the admin qpair is failed at the transport layer. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>0 if successfully submitted, negated errnos on the following error conditions: -ENOMEM: The request cannot be allocated. -ENXIO: The qpair is failed at the transport level. </dd></dl>
 
 </div>
 </div>
@@ -3515,7 +3515,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>0 if successfully submitted, negated errnos on the following error conditions: -EINVAL: The request is malformed. -ENOMEM: The request cannot be allocated. -ENXIO: The qpair is failed at the transport level. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>0 if successfully submitted, negated errnos on the following error conditions: -EINVAL: The request is malformed. -ENOMEM: The request cannot be allocated. -ENXIO: The qpair is failed at the transport level. -EFAULT: Invalid address was specified as part of payload. cb_fn is also called with error status including dnr=1 in this case. </dd></dl>
 
 </div>
 </div>
@@ -3617,7 +3617,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>0 if successfully submitted, negated errnos on the following error conditions: -EINVAL: The request is malformed. -ENOMEM: The request cannot be allocated. -ENXIO: The qpair is failed at the transport level. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>0 if successfully submitted, negated errnos on the following error conditions: -EINVAL: The request is malformed. -ENOMEM: The request cannot be allocated. -ENXIO: The qpair is failed at the transport level. -EFAULT: Invalid address was specified as part of payload. cb_fn is also called with error status including dnr=1 in this case. </dd></dl>
 
 </div>
 </div>
@@ -3705,7 +3705,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>0 if successfully submitted, negated errnos on the following error conditions: -EINVAL: The request is malformed. -ENOMEM: The request cannot be allocated. -ENXIO: The qpair is failed at the transport level. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>0 if successfully submitted, negated errnos on the following error conditions: -EINVAL: The request is malformed. -ENOMEM: The request cannot be allocated. -ENXIO: The qpair is failed at the transport level. -EFAULT: Invalid address was specified as part of payload. cb_fn is also called with error status including dnr=1 in this case. </dd></dl>
 
 </div>
 </div>
@@ -3766,7 +3766,6 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Submit a data set management request to the specified NVMe namespace. </p>
-<p>Data set management operations are designed to optimize interaction with the block translation layer inside the device. The most common type of operation is deallocate, which is often referred to as TRIM or UNMAP.</p>
 <p>The command is submitted to a qpair allocated by <a class="el" href="nvme_8h.html#a13f745d239dab9b8f934fae2ad4984a2" title="Allocate an I/O queue pair (submission and completion queue). ">spdk_nvme_ctrlr_alloc_io_qpair()</a>. The user must ensure that only one thread submits I/O on a given qpair at any given time.</p>
 <p>This is a convenience wrapper that will automatically allocate and construct the correct data buffers. Therefore, ranges does not need to be allocated from pinned memory and can be placed on the stack. If a higher performance, zero-copy version of DSM is required, simply build and submit a raw command using <a class="el" href="nvme_8h.html#a1e3def668122e76abbfb74305f118291" title="Send the given NVM I/O command to the NVMe controller. ">spdk_nvme_ctrlr_cmd_io_raw()</a>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -3781,7 +3780,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>0 if successfully submitted, negated POSIX errno values otherwise. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>0 if successfully submitted, negated errnos on the following error conditions: -ENOMEM: The request cannot be allocated. -ENXIO: The qpair is failed at the transport level. </dd></dl>
 
 </div>
 </div>
@@ -3834,7 +3833,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>0 if successfully submitted, negated errno if an nvme_request structure cannot be allocated for the I/O request, -ENXIO if the qpair is failed at the transport level. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>0 if successfully submitted, negated errnos on the following error conditions: -ENOMEM: The request cannot be allocated. -ENXIO: The qpair is failed at the transport level. </dd></dl>
 
 </div>
 </div>
@@ -3915,7 +3914,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>0 if successfully submitted, negated errnos on the following error conditions: -EINVAL: The request is malformed. -ENOMEM: The request cannot be allocated. -ENXIO: The qpair is failed at the transport level. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>0 if successfully submitted, negated errnos on the following error conditions: -EINVAL: The request is malformed. -ENOMEM: The request cannot be allocated. -ENXIO: The qpair is failed at the transport level. -EFAULT: Invalid address was specified as part of payload. cb_fn is also called with error status including dnr=1 in this case. </dd></dl>
 
 </div>
 </div>
@@ -4000,6 +3999,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Submits a read I/O to the specified NVMe namespace. </p>
+<p>The command is submitted to a qpair allocated by <a class="el" href="nvme_8h.html#a13f745d239dab9b8f934fae2ad4984a2" title="Allocate an I/O queue pair (submission and completion queue). ">spdk_nvme_ctrlr_alloc_io_qpair()</a>. The user must ensure that only one thread submits I/O on a given qpair at any given time.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">ns</td><td>NVMe namespace to submit the read I/O </td></tr>
@@ -4016,7 +4016,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>0 if successfully submitted, negated errnos on the following error conditions: -EINVAL: The request is malformed. -ENOMEM: The request cannot be allocated. -ENXIO: The qpair is failed at the transport level. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>0 if successfully submitted, negated errnos on the following error conditions: -EINVAL: The request is malformed. -ENOMEM: The request cannot be allocated. -ENXIO: The qpair is failed at the transport level. -EFAULT: Invalid address was specified as part of payload. cb_fn is also called with error status including dnr=1 in this case. </dd></dl>
 
 </div>
 </div>
@@ -4104,7 +4104,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>0 if successfully submitted, negated errnos on the following error conditions: -EINVAL: The request is malformed. -ENOMEM: The request cannot be allocated. -ENXIO: The qpair is failed at the transport level. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>0 if successfully submitted, negated errnos on the following error conditions: -EINVAL: The request is malformed. -ENOMEM: The request cannot be allocated. -ENXIO: The qpair is failed at the transport level. -EFAULT: Invalid address was specified as part of payload. cb_fn is also called with error status including dnr=1 in this case. </dd></dl>
 
 </div>
 </div>
@@ -4195,6 +4195,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Submit a read I/O to the specified NVMe namespace. </p>
+<p>The command is submitted to a qpair allocated by <a class="el" href="nvme_8h.html#a13f745d239dab9b8f934fae2ad4984a2" title="Allocate an I/O queue pair (submission and completion queue). ">spdk_nvme_ctrlr_alloc_io_qpair()</a>. The user must ensure that only one thread submits I/O on a given qpair at any given time.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">ns</td><td>NVMe namespace to submit the read I/O </td></tr>
@@ -4212,8 +4213,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>0 if successfully submitted, negated errnos on the following error conditions: -EINVAL: The request is malformed. -ENOMEM: The request cannot be allocated. -ENXIO: The qpair is failed at the transport level.</dd></dl>
-<p>The command is submitted to a qpair allocated by <a class="el" href="nvme_8h.html#a13f745d239dab9b8f934fae2ad4984a2" title="Allocate an I/O queue pair (submission and completion queue). ">spdk_nvme_ctrlr_alloc_io_qpair()</a>. The user must ensure that only one thread submits I/O on a given qpair at any given time. </p>
+<dl class="section return"><dt>Returns</dt><dd>0 if successfully submitted, negated errnos on the following error conditions: -EINVAL: The request is malformed. -ENOMEM: The request cannot be allocated. -ENXIO: The qpair is failed at the transport level. -EFAULT: Invalid address was specified as part of payload. cb_fn is also called with error status including dnr=1 in this case. </dd></dl>
 
 </div>
 </div>
@@ -4294,7 +4294,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>0 if successfully submitted, negated errno if an nvme_request structure cannot be allocated for the I/O request, -ENXIO if the qpair is failed at the transport level. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>0 if successfully submitted, negated errnos on the following error conditions: -ENOMEM: The request cannot be allocated. -ENXIO: The qpair is failed at the transport level. -EFAULT: Invalid address was specified as part of payload. cb_fn is also called with error status including dnr=1 in this case. </dd></dl>
 
 </div>
 </div>
@@ -4375,7 +4375,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>0 if successfully submitted, negated errno if an nvme_request structure cannot be allocated for the I/O request, -ENXIO if the qpair is failed at the transport level. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>0 if successfully submitted, negated errnos on the following error conditions: -ENOMEM: The request cannot be allocated. -ENXIO: The qpair is failed at the transport level. -EFAULT: Invalid address was specified as part of payload. cb_fn is also called with error status including dnr=1 in this case. </dd></dl>
 
 </div>
 </div>
@@ -4456,7 +4456,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>0 if successfully submitted, negated errno if an nvme_request structure cannot be allocated for the I/O request, -ENXIO if the qpair is failed at the transport level. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>0 if successfully submitted, negated errnos on the following error conditions: -ENOMEM: The request cannot be allocated. -ENXIO: The qpair is failed at the transport level. -EFAULT: Invalid address was specified as part of payload. cb_fn is also called with error status including dnr=1 in this case. </dd></dl>
 
 </div>
 </div>
@@ -4523,7 +4523,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>0 if successfully submitted, negated errno if an nvme_request structure cannot be allocated for the I/O request, -ENXIO if the qpair is failed at the transport level. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>0 if successfully submitted, negated errnos on the following error conditions: -ENOMEM: The request cannot be allocated. -ENXIO: The qpair is failed at the transport level. -EFAULT: Invalid address was specified as part of payload. cb_fn is also called with error status including dnr=1 in this case. </dd></dl>
 
 </div>
 </div>
@@ -4604,7 +4604,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>0 if successfully submitted, negated errnos on the following error conditions: -EINVAL: The request is malformed. -ENOMEM: The request cannot be allocated. -ENXIO: The qpair is failed at the transport level. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>0 if successfully submitted, negated errnos on the following error conditions: -EINVAL: The request is malformed. -ENOMEM: The request cannot be allocated. -ENXIO: The qpair is failed at the transport level. -EFAULT: Invalid address was specified as part of payload. cb_fn is also called with error status including dnr=1 in this case. </dd></dl>
 
 </div>
 </div>
@@ -4671,7 +4671,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>0 if successfully submitted, negated errnos on the following error conditions: -EINVAL: The request is malformed. -ENOMEM: The request cannot be allocated. -ENXIO: The qpair is failed at the transport level. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>0 if successfully submitted, negated errnos on the following error conditions: -EINVAL: The request is malformed. -ENOMEM: The request cannot be allocated. -ENXIO: The qpair is failed at the transport level. -EFAULT: Invalid address was specified as part of payload. cb_fn is also called with error status including dnr=1 in this case. </dd></dl>
 
 </div>
 </div>
@@ -4773,7 +4773,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>0 if successfully submitted, negated errnos on the following error conditions: -EINVAL: The request is malformed. -ENOMEM: The request cannot be allocated. -ENXIO: The qpair is failed at the transport level. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>0 if successfully submitted, negated errnos on the following error conditions: -EINVAL: The request is malformed. -ENOMEM: The request cannot be allocated. -ENXIO: The qpair is failed at the transport level. -EFAULT: Invalid address was specified as part of payload. cb_fn is also called with error status including dnr=1 in this case. </dd></dl>
 
 </div>
 </div>
@@ -4847,7 +4847,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>0 if successfully submitted, negated errnos on the following error conditions: -EINVAL: The request is malformed. -ENOMEM: The request cannot be allocated. -ENXIO: The qpair is failed at the transport level. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>0 if successfully submitted, negated errnos on the following error conditions: -EINVAL: The request is malformed. -ENOMEM: The request cannot be allocated. -ENXIO: The qpair is failed at the transport level. -EFAULT: Invalid address was specified as part of payload. cb_fn is also called with error status including dnr=1 in this case. </dd></dl>
 
 </div>
 </div>
@@ -4935,7 +4935,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>0 if successfully submitted, negated errnos on the following error conditions: -EINVAL: The request is malformed. -ENOMEM: The request cannot be allocated. -ENXIO: The qpair is failed at the transport level. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>0 if successfully submitted, negated errnos on the following error conditions: -EINVAL: The request is malformed. -ENOMEM: The request cannot be allocated. -ENXIO: The qpair is failed at the transport level. -EFAULT: Invalid address was specified as part of payload. cb_fn is also called with error status including dnr=1 in this case. </dd></dl>
 
 </div>
 </div>
@@ -5044,7 +5044,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>0 if successfully submitted, negated errnos on the following error conditions: -EINVAL: The request is malformed. -ENOMEM: The request cannot be allocated. -ENXIO: The qpair is failed at the transport level. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>0 if successfully submitted, negated errnos on the following error conditions: -EINVAL: The request is malformed. -ENOMEM: The request cannot be allocated. -ENXIO: The qpair is failed at the transport level. -EFAULT: Invalid address was specified as part of payload. cb_fn is also called with error status including dnr=1 in this case. </dd></dl>
 
 </div>
 </div>

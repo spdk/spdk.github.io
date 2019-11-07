@@ -271,9 +271,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a84c517aef4cc3ab2873995faaf662fb4"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blobfs_8h.html#a84c517aef4cc3ab2873995faaf662fb4">spdk_file_read</a> (struct spdk_file *file, struct spdk_fs_thread_ctx *ctx, void *payload, uint64_t offset, uint64_t length)</td></tr>
 <tr class="memdesc:a84c517aef4cc3ab2873995faaf662fb4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read data to user buffer from the given file.  <a href="#a84c517aef4cc3ab2873995faaf662fb4">More...</a><br /></td></tr>
 <tr class="separator:a84c517aef4cc3ab2873995faaf662fb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac5b00d339e2b771a26448afa282a82db"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blobfs_8h.html#ac5b00d339e2b771a26448afa282a82db">spdk_fs_set_cache_size</a> (uint64_t size_in_mb)</td></tr>
-<tr class="memdesc:ac5b00d339e2b771a26448afa282a82db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set cache size for the blobstore filesystem.  <a href="#ac5b00d339e2b771a26448afa282a82db">More...</a><br /></td></tr>
-<tr class="separator:ac5b00d339e2b771a26448afa282a82db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe0af54cbaff5257098153eb96ede5ea"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blobfs_8h.html#abe0af54cbaff5257098153eb96ede5ea">spdk_fs_set_cache_size</a> (uint64_t size_in_mb)</td></tr>
+<tr class="memdesc:abe0af54cbaff5257098153eb96ede5ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set cache size for the blobstore filesystem.  <a href="#abe0af54cbaff5257098153eb96ede5ea">More...</a><br /></td></tr>
+<tr class="separator:abe0af54cbaff5257098153eb96ede5ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a15d38cb108ad825b5cf4090ae3f5af49"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blobfs_8h.html#a15d38cb108ad825b5cf4090ae3f5af49">spdk_fs_get_cache_size</a> (void)</td></tr>
 <tr class="memdesc:a15d38cb108ad825b5cf4090ae3f5af49"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain the cache size.  <a href="#a15d38cb108ad825b5cf4090ae3f5af49">More...</a><br /></td></tr>
 <tr class="separator:a15d38cb108ad825b5cf4090ae3f5af49"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -2147,14 +2147,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ac5b00d339e2b771a26448afa282a82db"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac5b00d339e2b771a26448afa282a82db">&#9670;&nbsp;</a></span>spdk_fs_set_cache_size()</h2>
+<a id="abe0af54cbaff5257098153eb96ede5ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abe0af54cbaff5257098153eb96ede5ea">&#9670;&nbsp;</a></span>spdk_fs_set_cache_size()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void spdk_fs_set_cache_size </td>
+          <td class="memname">int spdk_fs_set_cache_size </td>
           <td>(</td>
           <td class="paramtype">uint64_t&#160;</td>
           <td class="paramname"><em>size_in_mb</em></td><td>)</td>
@@ -2166,10 +2166,11 @@ Functions</h2></td></tr>
 <p>Set cache size for the blobstore filesystem. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">size_in_mb</td><td>Cache size in megabytes. </td></tr>
+    <tr><td class="paramname">size_in_mb</td><td>Cache size in megabytes.</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, negative errno on failure. </dd></dl>
 
 </div>
 </div>
