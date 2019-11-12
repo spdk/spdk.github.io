@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "1118224a_6f5d9764",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 4
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 1011207
+      },
+      "writtenOn": "2019-11-12T07:58:55Z",
+      "side": 1,
+      "message": "This line of comment is not needed :).",
+      "range": {
+        "startLine": 8,
+        "startChar": 0,
+        "endLine": 8,
+        "endChar": 71
+      },
+      "revId": "40fbd77602a4bcff8d35e26e3b67286079ab87bb",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    }
+  ]
+}
