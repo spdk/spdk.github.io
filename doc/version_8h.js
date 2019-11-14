@@ -1,5 +1,7 @@
 var version_8h =
 [
+    [ "SPDK_GIT_COMMIT_STRING", "version_8h.html#aa71174a8a66c5481b6f934330a4ad2c0", null ],
+    [ "SPDK_GIT_COMMIT_STRING_SHA1", "version_8h.html#af9f7a9ba083abf5bbd40128bb4c16f4d", null ],
     [ "SPDK_VERSION", "version_8h.html#af45ea3cba76c12cc449b6556c1982038", null ],
     [ "SPDK_VERSION_MAJOR", "version_8h.html#a724bde57680bbd92b5dd6db6923a34f5", null ],
     [ "SPDK_VERSION_MAJOR_STRING", "version_8h.html#a6d465796648fae81c424d8faa4e2b093", null ],
