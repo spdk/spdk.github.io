@@ -32,5 +32,15 @@ var driver_modules =
     [ "Virtio driver", "virtio.html", [
       [ "Introduction", "virtio.html#virtio_intro", null ],
       [ "2MB hugepages", "virtio.html#virtio_2mb", null ]
+    ] ],
+    [ "VMD driver", "vmd.html", [
+      [ "In this document", "vmd.html#vmd_toc", null ],
+      [ "Introduction", "vmd.html#vmd_intro", null ],
+      [ "Public Interface", "vmd.html#vmd_interface", null ],
+      [ "Key Functions", "vmd.html#vmd_key_functions", null ],
+      [ "Configuration", "vmd.html#vmd_config", null ],
+      [ "Application framework", "vmd.html#vmd_app_frame", null ],
+      [ "Applications w/o application framework", "vmd.html#vmd_app", null ],
+      [ "LED management", "vmd.html#vmd_led", null ]
     ] ]
 ];

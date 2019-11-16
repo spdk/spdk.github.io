@@ -175,11 +175,11 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a8ab093f9cdad46a637fac6aa07739ace"><td class="memItemLeft" align="right" valign="top"><a id="a8ab093f9cdad46a637fac6aa07739ace"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_vmd_init</b> (void)</td></tr>
+<tr class="memitem:a8ab093f9cdad46a637fac6aa07739ace"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vmd_8h.html#a8ab093f9cdad46a637fac6aa07739ace">spdk_vmd_init</a> (void)</td></tr>
+<tr class="memdesc:a8ab093f9cdad46a637fac6aa07739ace"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enumerate VMD devices and hook them into the spdk pci subsystem.  <a href="#a8ab093f9cdad46a637fac6aa07739ace">More...</a><br /></td></tr>
 <tr class="separator:a8ab093f9cdad46a637fac6aa07739ace"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5372b99a3024346162b47b9890d88f28"><td class="memItemLeft" align="right" valign="top"><a id="a5372b99a3024346162b47b9890d88f28"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_vmd_pci_device_list</b> (struct <a class="el" href="structspdk__pci__addr.html">spdk_pci_addr</a> vmd_addr, struct <a class="el" href="structspdk__pci__device.html">spdk_pci_device</a> *nvme_list)</td></tr>
+<tr class="memitem:a5372b99a3024346162b47b9890d88f28"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vmd_8h.html#a5372b99a3024346162b47b9890d88f28">spdk_vmd_pci_device_list</a> (struct <a class="el" href="structspdk__pci__addr.html">spdk_pci_addr</a> vmd_addr, struct <a class="el" href="structspdk__pci__device.html">spdk_pci_device</a> *nvme_list)</td></tr>
+<tr class="memdesc:a5372b99a3024346162b47b9890d88f28"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a list of nvme devices found on the given vmd pci BDF.  <a href="#a5372b99a3024346162b47b9890d88f28">More...</a><br /></td></tr>
 <tr class="separator:a5372b99a3024346162b47b9890d88f28"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aca3923828bec8148b3e671420ba0f547"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vmd_8h.html#aca3923828bec8148b3e671420ba0f547">spdk_vmd_set_led_state</a> (struct <a class="el" href="structspdk__pci__device.html">spdk_pci_device</a> *pci_device, enum <a class="el" href="vmd_8h.html#acbf78271da1326a9e70fe8bb0aeb6a75">spdk_vmd_led_state</a> state)</td></tr>
 <tr class="memdesc:aca3923828bec8148b3e671420ba0f547"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the state of the LED on specified PCI device.  <a href="#aca3923828bec8148b3e671420ba0f547">More...</a><br /></td></tr>
@@ -252,6 +252,65 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_vmd_pci_device_li
 <p>Checks for hotplug/hotremove events of the devices behind the VMD. </p>
 <p>Needs to be called periodically to detect them.</p>
 <dl class="section return"><dt>Returns</dt><dd>number of hotplug events detected or negative errno in case of errors </dd></dl>
+
+</div>
+</div>
+<a id="a8ab093f9cdad46a637fac6aa07739ace"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8ab093f9cdad46a637fac6aa07739ace">&#9670;&nbsp;</a></span>spdk_vmd_init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_vmd_init </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Enumerate VMD devices and hook them into the spdk pci subsystem. </p>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, -1 on failure </dd></dl>
+
+</div>
+</div>
+<a id="a5372b99a3024346162b47b9890d88f28"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5372b99a3024346162b47b9890d88f28">&#9670;&nbsp;</a></span>spdk_vmd_pci_device_list()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_vmd_pci_device_list </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structspdk__pci__addr.html">spdk_pci_addr</a>&#160;</td>
+          <td class="paramname"><em>vmd_addr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structspdk__pci__device.html">spdk_pci_device</a> *&#160;</td>
+          <td class="paramname"><em>nvme_list</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns a list of nvme devices found on the given vmd pci BDF. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">vmd_addr</td><td>pci BDF of the vmd device to return end device list </td></tr>
+    <tr><td class="paramname">nvme_list</td><td>buffer of exactly MAX_VMD_TARGET to return <a class="el" href="structspdk__pci__device.html">spdk_pci_device</a> array.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Returns count of nvme device attached to input VMD. </dd></dl>
 
 </div>
 </div>
