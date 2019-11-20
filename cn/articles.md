@@ -84,7 +84,7 @@ lang: cn
 
 **SPDK和NVMe新特性**
 
-* [一文读懂SPDK用户态hotplug处理](https://mp.weixin.qq.com/s?__biz=MzI3NDA4ODY4MA==&mid=2653335398&idx=1&sn=a5576049b7386c21a3c5ebe55cc6d11f&chksm=f0cb58e1c7bcd1f72f25655be52ec26af4fb8066556e7602aa5a2ae7cdcdd1213a2ca6aaa8fe&token=533641352&lang=zh_CN#rd）
+* [一文读懂SPDK用户态hotplug处理](https://mp.weixin.qq.com/s?__biz=MzI3NDA4ODY4MA==&mid=2653335398&idx=1&sn=a5576049b7386c21a3c5ebe55cc6d11f&chksm=f0cb58e1c7bcd1f72f25655be52ec26af4fb8066556e7602aa5a2ae7cdcdd1213a2ca6aaa8fe&token=533641352&lang=zh_CN#rd)
 
 * [Zoned Namespace: NVMe Spec对标Open-Channel的解决方案（上篇）](https://mp.weixin.qq.com/s?__biz=MzI3NDA4ODY4MA==&mid=2653335330&idx=1&sn=db1821b20312a6a8ed627adf3c897eda&chksm=f0cb58a5c7bcd1b3e21fd4b0c1c57eb5981ae13d2624be9fa359c35f89b4182d69e9aa70bb1b&mpshare=1&scene=1&srcid=04100n8cVU4929zrWL7Ickmp&pass_ticket=I08wxcYqrorlEm9aY2xig3IeNMZGBl2nIICys%2BEBjYLRUYNzPhBPFQ%2FIe5HOO1dk#rd)
 
