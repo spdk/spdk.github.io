@@ -1227,7 +1227,7 @@ var searchData=
   ['spdk_5fscsi_5flun_5ffree_5fio_5fchannel',['spdk_scsi_lun_free_io_channel',['../scsi_8h.html#a82d0ac949e21e47c1ee5cf13c6ff3543',1,'scsi.h']]],
   ['spdk_5fscsi_5flun_5fget_5fbdev_5fname',['spdk_scsi_lun_get_bdev_name',['../scsi_8h.html#a58357a798eaf1fecc290699eb5dacc9a',1,'scsi.h']]],
   ['spdk_5fscsi_5flun_5fget_5fdev',['spdk_scsi_lun_get_dev',['../scsi_8h.html#aa87d45ae3bcf47ffa2db2ff3cf51ae21',1,'scsi.h']]],
-  ['spdk_5fscsi_5flun_5fget_5fdif_5fctx',['spdk_scsi_lun_get_dif_ctx',['../scsi_8h.html#acd0a72a4bd67f7807a69598fd26ef3fa',1,'scsi.h']]],
+  ['spdk_5fscsi_5flun_5fget_5fdif_5fctx',['spdk_scsi_lun_get_dif_ctx',['../scsi_8h.html#a1bc2bbc007c4a85a7966b230918b8204',1,'scsi.h']]],
   ['spdk_5fscsi_5flun_5fget_5fid',['spdk_scsi_lun_get_id',['../scsi_8h.html#af5ed1a133f6f137402c0eb7742077f17',1,'scsi.h']]],
   ['spdk_5fscsi_5flun_5fid_5ffmt_5fto_5fint',['spdk_scsi_lun_id_fmt_to_int',['../scsi_8h.html#a9cce391128bce2d403d87766248fb3c8',1,'scsi.h']]],
   ['spdk_5fscsi_5flun_5fid_5fint_5fto_5ffmt',['spdk_scsi_lun_id_int_to_fmt',['../scsi_8h.html#a96a370d3d453227d9ab94316e7b43a2f',1,'scsi.h']]],
