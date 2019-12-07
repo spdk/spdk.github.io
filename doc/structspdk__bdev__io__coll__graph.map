@@ -1,8 +1,10 @@
 <map id="spdk_bdev_io" name="spdk_bdev_io">
-<area shape="rect" id="node5" href="$structspdk__bdev__io_1_1____bdev__io__internal__fields.html" title="Fields that are used internally by the bdev subsystem. " alt="" coords="144,273,309,315"/>
-<area shape="rect" id="node2" href="$structspdk__nvme__cmd.html" title="spdk_nvme_cmd" alt="" coords="161,95,293,121"/>
-<area shape="rect" id="node3" href="$structspdk__nvme__sgl__descriptor.html" title="spdk_nvme_sgl_descriptor" alt="" coords="129,5,324,32"/>
-<area shape="rect" id="node4" href="$structspdk__io__channel.html" title="Represents a per&#45;thread channel for accessing an I/O device. " alt="" coords="5,95,136,121"/>
-<area shape="rect" id="node6" href="$structspdk__bdev__io__wait__entry.html" title="Structure to register a callback when an spdk_bdev_io becomes available. " alt="" coords="433,184,620,211"/>
-<area shape="rect" id="node7" href="$structspdk__bdev.html" title="spdk_bdev" alt="" coords="398,95,490,121"/>
+<area shape="rect" id="node7" href="$structspdk__bdev__io_1_1____bdev__io__internal__fields.html" title="Fields that are used internally by the bdev subsystem. " alt="" coords="867,63,1032,105"/>
+<area shape="rect" id="node2" href="$structspdk__nvme__cmd.html" title="spdk_nvme_cmd" alt="" coords="325,71,457,97"/>
+<area shape="rect" id="node3" href="$unionspdk__nvme__cmd__cdw10.html" title="spdk_nvme_cmd_cdw10" alt="" coords="12,20,193,47"/>
+<area shape="rect" id="node4" href="$unionspdk__nvme__cmd__cdw11.html" title="spdk_nvme_cmd_cdw11" alt="" coords="12,71,193,97"/>
+<area shape="rect" id="node5" href="$structspdk__nvme__sgl__descriptor.html" title="spdk_nvme_sgl_descriptor" alt="" coords="5,121,200,148"/>
+<area shape="rect" id="node6" href="$structspdk__io__channel.html" title="Represents a per&#45;thread channel for accessing an I/O device. " alt="" coords="326,5,457,32"/>
+<area shape="rect" id="node8" href="$structspdk__bdev__io__wait__entry.html" title="Structure to register a callback when an spdk_bdev_io becomes available. " alt="" coords="551,151,737,177"/>
+<area shape="rect" id="node9" href="$structspdk__bdev.html" title="spdk_bdev" alt="" coords="345,141,437,168"/>
 </map>

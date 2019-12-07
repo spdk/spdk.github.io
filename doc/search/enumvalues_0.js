@@ -31,6 +31,8 @@ var searchData=
   ['spdk_5fnvme_5ffeat_5fhost_5fcontrolled_5fthermal_5fmanagement',['SPDK_NVME_FEAT_HOST_CONTROLLED_THERMAL_MANAGEMENT',['../nvme__spec_8h.html#aeae5c5fb9df2c7a39215c71f9d9b4c25a833aa3633dbc0fc2c3565e65d1064b44',1,'nvme_spec.h']]],
   ['spdk_5fnvme_5ffeat_5fhost_5fidentifier',['SPDK_NVME_FEAT_HOST_IDENTIFIER',['../nvme__spec_8h.html#aeae5c5fb9df2c7a39215c71f9d9b4c25a3f79db4fe2b0055f0250f22078fd1f08',1,'nvme_spec.h']]],
   ['spdk_5fnvme_5ffeat_5fhost_5fmem_5fbuffer',['SPDK_NVME_FEAT_HOST_MEM_BUFFER',['../nvme__spec_8h.html#aeae5c5fb9df2c7a39215c71f9d9b4c25ade909edcdcac7111214408bb6f417086',1,'nvme_spec.h']]],
+  ['spdk_5fnvme_5ffeat_5fhost_5freserve_5fmask',['SPDK_NVME_FEAT_HOST_RESERVE_MASK',['../nvme__spec_8h.html#aeae5c5fb9df2c7a39215c71f9d9b4c25a2005df35e84b53a303fc7e420facb6a7',1,'nvme_spec.h']]],
+  ['spdk_5fnvme_5ffeat_5fhost_5freserve_5fpersist',['SPDK_NVME_FEAT_HOST_RESERVE_PERSIST',['../nvme__spec_8h.html#aeae5c5fb9df2c7a39215c71f9d9b4c25a591bf270723032d940b8ffdf38aac99e',1,'nvme_spec.h']]],
   ['spdk_5fnvme_5ffeat_5finterrupt_5fcoalescing',['SPDK_NVME_FEAT_INTERRUPT_COALESCING',['../nvme__spec_8h.html#aeae5c5fb9df2c7a39215c71f9d9b4c25af78a0869f0f08d1391b076ceaf76c0d1',1,'nvme_spec.h']]],
   ['spdk_5fnvme_5ffeat_5finterrupt_5fvector_5fconfiguration',['SPDK_NVME_FEAT_INTERRUPT_VECTOR_CONFIGURATION',['../nvme__spec_8h.html#aeae5c5fb9df2c7a39215c71f9d9b4c25adad470344a07decd9630bd42fa46baec',1,'nvme_spec.h']]],
   ['spdk_5fnvme_5ffeat_5fkeep_5falive_5ftimer',['SPDK_NVME_FEAT_KEEP_ALIVE_TIMER',['../nvme__spec_8h.html#aeae5c5fb9df2c7a39215c71f9d9b4c25a728ec04df238966b451f850cc53a3d5a',1,'nvme_spec.h']]],

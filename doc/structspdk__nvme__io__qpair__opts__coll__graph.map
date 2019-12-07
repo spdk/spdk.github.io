@@ -1,6 +1,8 @@
 <map id="spdk_nvme_io_qpair_opts" name="spdk_nvme_io_qpair_opts">
-<area shape="rect" id="node2" href="$structspdk__nvme__cmd.html" title="spdk_nvme_cmd" alt="" coords="47,95,179,121"/>
-<area shape="rect" id="node3" href="$structspdk__nvme__sgl__descriptor.html" title="spdk_nvme_sgl_descriptor" alt="" coords="5,5,200,32"/>
-<area shape="rect" id="node4" href="$structspdk__nvme__cpl.html" title="Completion queue entry. " alt="" coords="224,95,347,121"/>
-<area shape="rect" id="node5" href="$structspdk__nvme__status.html" title="spdk_nvme_status" alt="" coords="224,5,368,32"/>
+<area shape="rect" id="node2" href="$structspdk__nvme__cmd.html" title="spdk_nvme_cmd" alt="" coords="341,95,473,121"/>
+<area shape="rect" id="node3" href="$unionspdk__nvme__cmd__cdw10.html" title="spdk_nvme_cmd_cdw10" alt="" coords="5,5,187,32"/>
+<area shape="rect" id="node4" href="$unionspdk__nvme__cmd__cdw11.html" title="spdk_nvme_cmd_cdw11" alt="" coords="211,5,392,32"/>
+<area shape="rect" id="node5" href="$structspdk__nvme__sgl__descriptor.html" title="spdk_nvme_sgl_descriptor" alt="" coords="416,5,611,32"/>
+<area shape="rect" id="node6" href="$structspdk__nvme__cpl.html" title="Completion queue entry. " alt="" coords="571,95,693,121"/>
+<area shape="rect" id="node7" href="$structspdk__nvme__status.html" title="spdk_nvme_status" alt="" coords="635,5,779,32"/>
 </map>

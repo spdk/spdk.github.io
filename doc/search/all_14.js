@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['tailq_5fentry',['TAILQ_ENTRY',['../structspdk__bdev__io.html#a4c93fa89b3cc9789d2e6d7d7e2246e35',1,'spdk_bdev_io::TAILQ_ENTRY()'],['../structspdk__bdev__io_1_1____bdev__io__internal__fields.html#aca9aa23b8536ee8674cbcf3c906bcc2e',1,'spdk_bdev_io::__bdev_io_internal_fields::TAILQ_ENTRY()']]],
+  ['tailq_5fentry',['TAILQ_ENTRY',['../structspdk__bdev__io.html#a4c93fa89b3cc9789d2e6d7d7e2246e35',1,'spdk_bdev_io::TAILQ_ENTRY()'],['../structspdk__bdev__io_1_1____bdev__io__internal__fields.html#aca9aa23b8536ee8674cbcf3c906bcc2e',1,'spdk_bdev_io::__bdev_io_internal_fields::TAILQ_ENTRY(spdk_bdev_io) link'],['../structspdk__bdev__io_1_1____bdev__io__internal__fields.html#a01b27d58ba91739aae4f38292d44e4fc',1,'spdk_bdev_io::__bdev_io_internal_fields::TAILQ_ENTRY(spdk_bdev_io) ch_link']]],
   ['tailq_5fhead',['TAILQ_HEAD',['../structspdk__bdev.html#ad6af2c003c0428ec514d45fade176d22',1,'spdk_bdev::TAILQ_HEAD()'],['../structspdk__bdev_1_1____bdev__internal__fields.html#a920a1e86dea170c9234bb24f61b16226',1,'spdk_bdev::__bdev_internal_fields::TAILQ_HEAD()']]],
   ['tcp',['tcp',['../unionspdk__nvmf__transport__specific__address__subtype.html#aabbc28a7fc2edeca1244ff249a51edb7',1,'spdk_nvmf_transport_specific_address_subtype']]],
   ['tcrsm',['tcrsm',['../structspdk__ocssd__geometry__data.html#ad9b0daa6248be6bb99132912caa05942',1,'spdk_ocssd_geometry_data']]],
@@ -27,7 +27,7 @@ var searchData=
   ['transport_5fretry_5fcount',['transport_retry_count',['../structspdk__nvme__ctrlr__opts.html#aff1b2c63ae9c862d3d372c49b5fd8b8c',1,'spdk_nvme_ctrlr_opts']]],
   ['trdm',['trdm',['../structspdk__ocssd__geometry__data.html#a4126ac6e1846920ef940648bba63dd98',1,'spdk_ocssd_geometry_data']]],
   ['trdt',['trdt',['../structspdk__ocssd__geometry__data.html#a4ab0d6368b89242e78483d6e44d931a7',1,'spdk_ocssd_geometry_data']]],
-  ['treq',['treq',['../structspdk__nvmf__discovery__log__page__entry.html#a6f04dc87edcb0d1ab450428de6c0862d',1,'spdk_nvmf_discovery_log_page_entry']]],
+  ['treq',['treq',['../structspdk__nvmf__discovery__log__page__entry.html#a3625f3691a6b11dea0c492fc558b1d13',1,'spdk_nvmf_discovery_log_page_entry']]],
   ['trsvcid',['trsvcid',['../structspdk__nvme__transport__id.html#a1d77d6f4fb1d3245f03a2e64a63ce64a',1,'spdk_nvme_transport_id::trsvcid()'],['../structspdk__nvmf__discovery__log__page__entry.html#a4b3b3ff4bd5f94e6ffe8a11b90b08caa',1,'spdk_nvmf_discovery_log_page_entry::trsvcid()']]],
   ['trtype',['trtype',['../structspdk__nvme__transport__id.html#a9817e079d0324db582be6655ebe1d2d6',1,'spdk_nvme_transport_id::trtype()'],['../structspdk__nvmf__discovery__log__page__entry.html#ad5db7a511e5a7b5bf342391e77ecb27d',1,'spdk_nvmf_discovery_log_page_entry::trtype()']]],
   ['tsas',['tsas',['../structspdk__nvmf__discovery__log__page__entry.html#ae6926468815fd6dbdd5ff136a4905057',1,'spdk_nvmf_discovery_log_page_entry']]],

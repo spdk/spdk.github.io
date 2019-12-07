@@ -1,6 +1,6 @@
 var unionspdk__nvme__feat__interrupt__coalescing =
 [
-    [ "bits", "unionspdk__nvme__feat__interrupt__coalescing.html#a1e6abe134a573f2a6e53c21215549b7b", null ],
+    [ "bits", "unionspdk__nvme__feat__interrupt__coalescing.html#a8cd015bdbe56897bf625847bb1441603", null ],
     [ "raw", "unionspdk__nvme__feat__interrupt__coalescing.html#aaca01366f4b044fbb450d232a12f1f21", null ],
     [ "reserved", "unionspdk__nvme__feat__interrupt__coalescing.html#a0a3ddeb18ed4d798712502a972e5474d", null ],
     [ "thr", "unionspdk__nvme__feat__interrupt__coalescing.html#a6ddf8bc514b93939ff5a3ad2657ecb3a", null ],
