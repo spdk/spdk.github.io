@@ -1,5 +1,13 @@
 var NAVTREEINDEX19 =
 {
+"structspdk__nvmf__fc__ls__cr__conn__rqst.html#a9d0716774503dd2b458c7ba1e704b8f3":[12,0,199,2],
+"structspdk__nvmf__fc__ls__cr__conn__rqst.html#aa1d870bffd4ef50e24539742b66f9581":[12,0,199,3],
+"structspdk__nvmf__fc__ls__cr__conn__rqst.html#acf2c90e4e1a147943a2d212d37150004":[12,0,199,0],
+"structspdk__nvmf__fc__ls__disconnect__acc.html":[12,0,200],
+"structspdk__nvmf__fc__ls__disconnect__acc.html#a4e2f117fe0ecf2df8686f8aaea373ed9":[12,0,200,0],
+"structspdk__nvmf__fc__ls__disconnect__rqst.html":[12,0,201],
+"structspdk__nvmf__fc__ls__disconnect__rqst.html#a1ae9dfddab9f102bf2069e5b673a5a77":[12,0,201,2],
+"structspdk__nvmf__fc__ls__disconnect__rqst.html#aae543737685aa9e054e0cc7b87710954":[12,0,201,1],
 "structspdk__nvmf__fc__ls__disconnect__rqst.html#ac19f3a4093e72bd4663fe4286b091cc5":[12,0,201,3],
 "structspdk__nvmf__fc__ls__disconnect__rqst.html#ae07a3d38ccfd66f6ce83d723820757f8":[12,0,201,0],
 "structspdk__nvmf__fc__ls__rjt.html":[12,0,202],
@@ -241,13 +249,5 @@ var NAVTREEINDEX19 =
 "structspdk__opal__info.html#a61eb4d499170b42a48f1454d7a3fe5e5":[12,0,232,38],
 "structspdk__opal__info.html#a6ae2326503ce1ab5e92a6846d78050bd":[12,0,232,24],
 "structspdk__opal__info.html#a7099067bfca432a67f4eb9e55c657c14":[12,0,232,26],
-"structspdk__opal__info.html#a71a9342460b4f32d83bbf0ccabd522ac":[12,0,232,6],
-"structspdk__opal__info.html#a72963c0b366ba88888889bd108bfbe2d":[12,0,232,19],
-"structspdk__opal__info.html#a75a2ced5d5919ca59319ddfba3454708":[12,0,232,22],
-"structspdk__opal__info.html#a7ea16aa4c1ba4db6da1fff20e893b258":[12,0,232,7],
-"structspdk__opal__info.html#a870133049bf3a81233d78156a8f1cc27":[12,0,232,34],
-"structspdk__opal__info.html#a94df3f3f2669604ba5b324f51de62098":[12,0,232,17],
-"structspdk__opal__info.html#a993b6fc34041fc3b0a523362f1492b9e":[12,0,232,12],
-"structspdk__opal__info.html#aa2a6a4264f88ec9e2a987a99064cf591":[12,0,232,27],
-"structspdk__opal__info.html#aa97d689a52541dc70a54411449ba2641":[12,0,232,16]
+"structspdk__opal__info.html#a71a9342460b4f32d83bbf0ccabd522ac":[12,0,232,6]
 };

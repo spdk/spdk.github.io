@@ -9,6 +9,7 @@ var nvme_8h =
     [ "spdk_nvme_attach_cb", "nvme_8h.html#ac1eaa795f075495337b270667661ce5d", null ],
     [ "spdk_nvme_cmd_cb", "nvme_8h.html#ac9779e9957d7089dde8e492cc60856d8", null ],
     [ "spdk_nvme_probe_cb", "nvme_8h.html#a95f40d5179f8424b466a30ba0610ab4c", null ],
+    [ "spdk_nvme_qp_failure_reason", "nvme_8h.html#a3b2d01bfe80469fd5841cddaf8e1537f", null ],
     [ "spdk_nvme_remove_cb", "nvme_8h.html#a05f1aa545be57a03bb2dd0c6180172b6", null ],
     [ "spdk_nvme_req_next_sge_cb", "nvme_8h.html#a4ab95bea86f498c08510f6f0bcd2eb09", null ],
     [ "spdk_nvme_req_reset_sgl_cb", "nvme_8h.html#a0e1fcb43970ea531567ee00d4ee0675b", null ],
@@ -27,6 +28,12 @@ var nvme_8h =
       [ "SPDK_NVME_NS_DPS_PI_SUPPORTED", "nvme_8h.html#a018f3b986b4345ee0c6931be9718c163afe158b050528f0f3341e5af3129c61a7", null ],
       [ "SPDK_NVME_NS_EXTENDED_LBA_SUPPORTED", "nvme_8h.html#a018f3b986b4345ee0c6931be9718c163a91203896ead47bbe22e9f7db8a63c14f", null ],
       [ "SPDK_NVME_NS_WRITE_UNCORRECTABLE_SUPPORTED", "nvme_8h.html#a018f3b986b4345ee0c6931be9718c163afe42f7e0cdcb93109b55b77cf89efd27", null ]
+    ] ],
+    [ "spdk_nvme_qp_failure_reason", "nvme_8h.html#ab41e2d311eb6663957cd2f18bc8fb890", [
+      [ "SPDK_NVME_QPAIR_FAILURE_NONE", "nvme_8h.html#ab41e2d311eb6663957cd2f18bc8fb890aa17ee94f67f231985fd58e045e3a5e81", null ],
+      [ "SPDK_NVME_QPAIR_FAILURE_LOCAL", "nvme_8h.html#ab41e2d311eb6663957cd2f18bc8fb890ac51b77bfe0adc8526baa9287660b8010", null ],
+      [ "SPDK_NVME_QPAIR_FAILURE_REMOTE", "nvme_8h.html#ab41e2d311eb6663957cd2f18bc8fb890af0266f9f1425c6816d05ce01fd99ce38", null ],
+      [ "SPDK_NVME_QPAIR_FAILURE_UNKNOWN", "nvme_8h.html#ab41e2d311eb6663957cd2f18bc8fb890ae2f20f3907a7d0b164f5e5a1d9474625", null ]
     ] ],
     [ "spdk_nvme_transport_type", "nvme_8h.html#ae87a03c28984a2c0499d50ef5e9d0ece", [
       [ "SPDK_NVME_TRANSPORT_PCIE", "nvme_8h.html#ae87a03c28984a2c0499d50ef5e9d0ecea162afc05d1ae756b8a7969be140035ea", null ],
@@ -56,6 +63,7 @@ var nvme_8h =
     [ "spdk_nvme_ctrlr_format", "nvme_8h.html#a9bb6973133e1fd5e7a1522ab104ac92b", null ],
     [ "spdk_nvme_ctrlr_free_cmb_io_buffer", "nvme_8h.html#abb11b2a40d2cd45072f83624956b8b01", null ],
     [ "spdk_nvme_ctrlr_free_io_qpair", "nvme_8h.html#a85ec189f50d0f78d73a54413370401f5", null ],
+    [ "spdk_nvme_ctrlr_get_admin_qp_failure_reason", "nvme_8h.html#a4c11b5ae0a1f6d70f3ab99a13765ea75", null ],
     [ "spdk_nvme_ctrlr_get_data", "nvme_8h.html#a5a9daf15b5008ac36c12e7b8db7bdec9", null ],
     [ "spdk_nvme_ctrlr_get_default_ctrlr_opts", "nvme_8h.html#ac31bc692c6b3a84e2355eb63a8b01ccf", null ],
     [ "spdk_nvme_ctrlr_get_default_io_qpair_opts", "nvme_8h.html#a6964d09dc51882fae6f2a7cf94afc741", null ],
@@ -89,7 +97,7 @@ var nvme_8h =
     [ "spdk_nvme_ctrlr_update_firmware", "nvme_8h.html#a7938b258a7614073065be4f6a35bd0e2", null ],
     [ "spdk_nvme_cuse_get_ctrlr_name", "nvme_8h.html#afc8c70873181a2561240944d3c63aae1", null ],
     [ "spdk_nvme_cuse_get_ns_name", "nvme_8h.html#ad4cd4052825486e483bff14f328040cf", null ],
-    [ "spdk_nvme_cuse_register", "nvme_8h.html#a406b7ee1f53f568334e505365a281569", null ],
+    [ "spdk_nvme_cuse_register", "nvme_8h.html#a5ba8ee34c024d648a81d903b155cff97", null ],
     [ "spdk_nvme_cuse_unregister", "nvme_8h.html#af071b3e57e51005c4e2b877eeda58b4b", null ],
     [ "spdk_nvme_detach", "nvme_8h.html#a4b63c225c3cce6da60fdbfb6f54b11e2", null ],
     [ "spdk_nvme_host_id_parse", "nvme_8h.html#ad068dd50f11160450098712422116785", null ],
@@ -134,6 +142,7 @@ var nvme_8h =
     [ "spdk_nvme_probe_async", "nvme_8h.html#a02411bf7ae4827a350711e688316997e", null ],
     [ "spdk_nvme_probe_poll_async", "nvme_8h.html#aedea919a47bdd811b604656e29e3fcef", null ],
     [ "spdk_nvme_qpair_add_cmd_error_injection", "nvme_8h.html#acf6188764b8c71b2f64a74077d6bfabf", null ],
+    [ "spdk_nvme_qpair_get_failure_reason", "nvme_8h.html#ae2015f3c7dd76113e89a732eabe400ff", null ],
     [ "spdk_nvme_qpair_print_command", "nvme_8h.html#ac06275147a2cbb800440686b8ba9a73b", null ],
     [ "spdk_nvme_qpair_print_completion", "nvme_8h.html#ad4b2335194f9c4c24a5e2c15a9432f4a", null ],
     [ "spdk_nvme_qpair_process_completions", "nvme_8h.html#aa331d140870e977722bfbb6826524782", null ],

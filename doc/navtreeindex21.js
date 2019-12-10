@@ -1,5 +1,13 @@
 var NAVTREEINDEX21 =
 {
+"structspdk__scsi__vpd__ext__inquiry.html#a1044d03cc28a332a153f36dcadbd486e":[12,0,258,2],
+"structspdk__scsi__vpd__ext__inquiry.html#a1683585f9defe2c3d6e18de15c7dede9":[12,0,258,7],
+"structspdk__scsi__vpd__ext__inquiry.html#a2bdca53f901e6920aff6907c211a5e3c":[12,0,258,3],
+"structspdk__scsi__vpd__ext__inquiry.html#a5b7048f74213939d02f980a1b4089082":[12,0,258,0],
+"structspdk__scsi__vpd__ext__inquiry.html#a8881150e0ee0722d6a0716694830735b":[12,0,258,6],
+"structspdk__scsi__vpd__ext__inquiry.html#a8930fdecf9c05c3a889885527da57a87":[12,0,258,5],
+"structspdk__scsi__vpd__ext__inquiry.html#a9dddaf4c0384b79536e668c52308adcf":[12,0,258,1],
+"structspdk__scsi__vpd__ext__inquiry.html#ab8826d5e01f37429d78fda6cc22f8cad":[12,0,258,4],
 "structspdk__scsi__vpd__ext__inquiry.html#adb21a07f63af30407aab56e4c90b4cd9":[12,0,258,9],
 "structspdk__scsi__vpd__ext__inquiry.html#af52442dddfa08a8c0bc5cc7d5882894f":[12,0,258,8],
 "structspdk__scsi__vpd__page.html":[12,0,259],
@@ -241,13 +249,5 @@ var NAVTREEINDEX21 =
 "unionspdk__nvme__cmd__cdw10.html#a310c0f4a3fefeb8e2f13a7592ef51817":[12,0,96,26],
 "unionspdk__nvme__cmd__cdw10.html#a3b2ee43b66fccb426624b9f67b58ebda":[12,0,96,37],
 "unionspdk__nvme__cmd__cdw10.html#a3df72d040262eb11aa0c20341b2e8e9f":[12,0,96,18],
-"unionspdk__nvme__cmd__cdw10.html#a4b879a30c41c831678426a8df8b32838":[12,0,96,7],
-"unionspdk__nvme__cmd__cdw10.html#a54d3987691c1bd38c6a787fbb416d7bc":[12,0,96,39],
-"unionspdk__nvme__cmd__cdw10.html#a5f55b887542528510c0027f9ff4027ac":[12,0,96,29],
-"unionspdk__nvme__cmd__cdw10.html#a6706aee5febea395123018eb8540aff0":[12,0,96,21],
-"unionspdk__nvme__cmd__cdw10.html#a68b737acfea13c4d88efbe3972f697c8":[12,0,96,33],
-"unionspdk__nvme__cmd__cdw10.html#a718ede798170e061e999e73a76f1fd37":[12,0,96,28],
-"unionspdk__nvme__cmd__cdw10.html#a75efb2d1b095c048629c75c6a04a8f05":[12,0,96,35],
-"unionspdk__nvme__cmd__cdw10.html#a78e368a569df77f727c04f8001d8c622":[12,0,96,8],
-"unionspdk__nvme__cmd__cdw10.html#a84ed729414ce0cf6c301abb843800081":[12,0,96,11]
+"unionspdk__nvme__cmd__cdw10.html#a4b879a30c41c831678426a8df8b32838":[12,0,96,7]
 };

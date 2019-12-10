@@ -1,5 +1,13 @@
 var NAVTREEINDEX15 =
 {
+"structspdk__ioat__generic__hw__desc.html#af60f8ad79535e9d40552fdc257adadc9":[12,0,68,0],
+"structspdk__ioat__pq__ext__hw__desc.html":[12,0,70],
+"structspdk__ioat__pq__ext__hw__desc.html#a2340de5edbbc01e2221706ea8e603eec":[12,0,70,0],
+"structspdk__ioat__pq__ext__hw__desc.html#a3f72a6c67614d00ef56661e523839586":[12,0,70,4],
+"structspdk__ioat__pq__ext__hw__desc.html#a457841555f87bce91872a4b235a67547":[12,0,70,2],
+"structspdk__ioat__pq__ext__hw__desc.html#a677b6a0ee2c383c57e12c6b2f037a882":[12,0,70,1],
+"structspdk__ioat__pq__ext__hw__desc.html#a9dee38462694aae5ee3d5ce363af95ab":[12,0,70,5],
+"structspdk__ioat__pq__ext__hw__desc.html#aba13a30c2a0a1e0c974300d850ed5d75":[12,0,70,3],
 "structspdk__ioat__pq__ext__hw__desc.html#ada15834d02c5368df498f772620bbea6":[12,0,70,6],
 "structspdk__ioat__pq__hw__desc.html":[12,0,71],
 "structspdk__ioat__pq__hw__desc.html#a04633e0216d3489d3a507bcadd0fdaff":[12,0,71,12],
@@ -241,13 +249,5 @@ var NAVTREEINDEX15 =
 "structspdk__nvme__ctrlr__data.html#a475891f13ac9855e055a6a14c536d1e0":[12,0,103,35],
 "structspdk__nvme__ctrlr__data.html#a48e610a38b03a226bd225eaf408180c9":[12,0,103,91],
 "structspdk__nvme__ctrlr__data.html#a4a9eba40118c1c94141534c7938a0f3a":[12,0,103,114],
-"structspdk__nvme__ctrlr__data.html#a4c494b50fb5fb942fee33117438b7eed":[12,0,103,62],
-"structspdk__nvme__ctrlr__data.html#a4dad8c13bda97607785a59c50b2efa72":[12,0,103,75],
-"structspdk__nvme__ctrlr__data.html#a4f998f9dd58c77c3c8abbaa8a40980c5":[12,0,103,24],
-"structspdk__nvme__ctrlr__data.html#a532b4029c5c1210d8555378c6bd8f8d5":[12,0,103,77],
-"structspdk__nvme__ctrlr__data.html#a551038a898799fceb8eec6444c4014b6":[12,0,103,7],
-"structspdk__nvme__ctrlr__data.html#a56b8d434ef2d0e6ca6308f52371488d7":[12,0,103,18],
-"structspdk__nvme__ctrlr__data.html#a5b9650f02ffc24e94a6708b33272c415":[12,0,103,54],
-"structspdk__nvme__ctrlr__data.html#a5ddf345a4db05b7ded96311d771e899d":[12,0,103,81],
-"structspdk__nvme__ctrlr__data.html#a5e6150304b319f8313abbee9fe52b20d":[12,0,103,74]
+"structspdk__nvme__ctrlr__data.html#a4c494b50fb5fb942fee33117438b7eed":[12,0,103,62]
 };

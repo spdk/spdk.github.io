@@ -174,6 +174,9 @@ Data Structures</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
+<tr class="memitem:a3b2d01bfe80469fd5841cddaf8e1537f"><td class="memItemLeft" align="right" valign="top"><a id="a3b2d01bfe80469fd5841cddaf8e1537f"></a>
+typedef enum <a class="el" href="nvme_8h.html#ab41e2d311eb6663957cd2f18bc8fb890">spdk_nvme_qp_failure_reason</a>&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_qp_failure_reason</b></td></tr>
+<tr class="separator:a3b2d01bfe80469fd5841cddaf8e1537f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aae15274f006778f31211e555a5cab825"><td class="memItemLeft" align="right" valign="top"><a id="aae15274f006778f31211e555a5cab825"></a>
 typedef enum <a class="el" href="nvme_8h.html#ae87a03c28984a2c0499d50ef5e9d0ece">spdk_nvme_transport_type</a>&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_transport_type_t</b></td></tr>
 <tr class="separator:aae15274f006778f31211e555a5cab825"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -204,6 +207,13 @@ typedef enum <a class="el" href="nvme_8h.html#ae87a03c28984a2c0499d50ef5e9d0ece"
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
+<tr class="memitem:ab41e2d311eb6663957cd2f18bc8fb890"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#ab41e2d311eb6663957cd2f18bc8fb890">spdk_nvme_qp_failure_reason</a> { <b>SPDK_NVME_QPAIR_FAILURE_NONE</b> = 0, 
+<b>SPDK_NVME_QPAIR_FAILURE_LOCAL</b>, 
+<b>SPDK_NVME_QPAIR_FAILURE_REMOTE</b>, 
+<b>SPDK_NVME_QPAIR_FAILURE_UNKNOWN</b>
+ }</td></tr>
+<tr class="memdesc:ab41e2d311eb6663957cd2f18bc8fb890"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reason for qpair disconnect at the transport layer.  <a href="nvme_8h.html#ab41e2d311eb6663957cd2f18bc8fb890">More...</a><br /></td></tr>
+<tr class="separator:ab41e2d311eb6663957cd2f18bc8fb890"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae87a03c28984a2c0499d50ef5e9d0ece"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#ae87a03c28984a2c0499d50ef5e9d0ece">spdk_nvme_transport_type</a> { <a class="el" href="nvme_8h.html#ae87a03c28984a2c0499d50ef5e9d0ecea162afc05d1ae756b8a7969be140035ea">SPDK_NVME_TRANSPORT_PCIE</a> = 256, 
 <a class="el" href="nvme_8h.html#ae87a03c28984a2c0499d50ef5e9d0ecea140f1cb4edf258bddffeb1c7277d93d8">SPDK_NVME_TRANSPORT_RDMA</a> = SPDK_NVMF_TRTYPE_RDMA, 
 <a class="el" href="nvme_8h.html#ae87a03c28984a2c0499d50ef5e9d0eceabbda195aa6d0a4ad7b437ed5e9a0d01f">SPDK_NVME_TRANSPORT_FC</a> = SPDK_NVMF_TRTYPE_FC, 
@@ -352,6 +362,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a1e04d50b1f27f6cd163a4ea2024a6fbb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a1e04d50b1f27f6cd163a4ea2024a6fbb">spdk_nvme_ctrlr_reconnect_io_qpair</a> (struct spdk_nvme_qpair *qpair)</td></tr>
 <tr class="memdesc:a1e04d50b1f27f6cd163a4ea2024a6fbb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Attempt to reconnect the given qpair.  <a href="#a1e04d50b1f27f6cd163a4ea2024a6fbb">More...</a><br /></td></tr>
 <tr class="separator:a1e04d50b1f27f6cd163a4ea2024a6fbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c11b5ae0a1f6d70f3ab99a13765ea75"><td class="memItemLeft" align="right" valign="top"><a class="el" href="nvme_8h.html#ab41e2d311eb6663957cd2f18bc8fb890">spdk_nvme_qp_failure_reason</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a4c11b5ae0a1f6d70f3ab99a13765ea75">spdk_nvme_ctrlr_get_admin_qp_failure_reason</a> (struct spdk_nvme_ctrlr *ctrlr)</td></tr>
+<tr class="memdesc:a4c11b5ae0a1f6d70f3ab99a13765ea75"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the reason the admin qpair for a given controller is disconnected.  <a href="#a4c11b5ae0a1f6d70f3ab99a13765ea75">More...</a><br /></td></tr>
+<tr class="separator:a4c11b5ae0a1f6d70f3ab99a13765ea75"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a85ec189f50d0f78d73a54413370401f5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a85ec189f50d0f78d73a54413370401f5">spdk_nvme_ctrlr_free_io_qpair</a> (struct spdk_nvme_qpair *qpair)</td></tr>
 <tr class="memdesc:a85ec189f50d0f78d73a54413370401f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Free an I/O queue pair that was allocated by <a class="el" href="nvme_8h.html#a13f745d239dab9b8f934fae2ad4984a2" title="Allocate an I/O queue pair (submission and completion queue). ">spdk_nvme_ctrlr_alloc_io_qpair()</a>.  <a href="#a85ec189f50d0f78d73a54413370401f5">More...</a><br /></td></tr>
 <tr class="separator:a85ec189f50d0f78d73a54413370401f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -367,6 +380,9 @@ Functions</h2></td></tr>
 <tr class="memitem:aa331d140870e977722bfbb6826524782"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#aa331d140870e977722bfbb6826524782">spdk_nvme_qpair_process_completions</a> (struct spdk_nvme_qpair *qpair, uint32_t max_completions)</td></tr>
 <tr class="memdesc:aa331d140870e977722bfbb6826524782"><td class="mdescLeft">&#160;</td><td class="mdescRight">Process any outstanding completions for I/O submitted on a queue pair.  <a href="#aa331d140870e977722bfbb6826524782">More...</a><br /></td></tr>
 <tr class="separator:aa331d140870e977722bfbb6826524782"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2015f3c7dd76113e89a732eabe400ff"><td class="memItemLeft" align="right" valign="top"><a class="el" href="nvme_8h.html#ab41e2d311eb6663957cd2f18bc8fb890">spdk_nvme_qp_failure_reason</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#ae2015f3c7dd76113e89a732eabe400ff">spdk_nvme_qpair_get_failure_reason</a> (struct spdk_nvme_qpair *qpair)</td></tr>
+<tr class="memdesc:ae2015f3c7dd76113e89a732eabe400ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the reason the qpair is disconnected.  <a href="#ae2015f3c7dd76113e89a732eabe400ff">More...</a><br /></td></tr>
+<tr class="separator:ae2015f3c7dd76113e89a732eabe400ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afe2a9d3b715649b4d0a0e89196a13e6d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#afe2a9d3b715649b4d0a0e89196a13e6d">spdk_nvme_ctrlr_cmd_admin_raw</a> (struct spdk_nvme_ctrlr *ctrlr, struct <a class="el" href="structspdk__nvme__cmd.html">spdk_nvme_cmd</a> *cmd, void *buf, uint32_t len, <a class="el" href="nvme_8h.html#ac9779e9957d7089dde8e492cc60856d8">spdk_nvme_cmd_cb</a> cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:afe2a9d3b715649b4d0a0e89196a13e6d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send the given admin command to the NVMe controller.  <a href="#afe2a9d3b715649b4d0a0e89196a13e6d">More...</a><br /></td></tr>
 <tr class="separator:afe2a9d3b715649b4d0a0e89196a13e6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -562,9 +578,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ad4cd4052825486e483bff14f328040cf"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#ad4cd4052825486e483bff14f328040cf">spdk_nvme_cuse_get_ns_name</a> (struct spdk_nvme_ctrlr *ctrlr, uint32_t nsid)</td></tr>
 <tr class="memdesc:ad4cd4052825486e483bff14f328040cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get name of cuse device associated with NVMe namespace.  <a href="#ad4cd4052825486e483bff14f328040cf">More...</a><br /></td></tr>
 <tr class="separator:ad4cd4052825486e483bff14f328040cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a406b7ee1f53f568334e505365a281569"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a406b7ee1f53f568334e505365a281569">spdk_nvme_cuse_register</a> (struct spdk_nvme_ctrlr *ctrlr, const char *dev_path)</td></tr>
-<tr class="memdesc:a406b7ee1f53f568334e505365a281569"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a character device at the path specified (Experimental)  <a href="#a406b7ee1f53f568334e505365a281569">More...</a><br /></td></tr>
-<tr class="separator:a406b7ee1f53f568334e505365a281569"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ba8ee34c024d648a81d903b155cff97"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a5ba8ee34c024d648a81d903b155cff97">spdk_nvme_cuse_register</a> (struct spdk_nvme_ctrlr *ctrlr)</td></tr>
+<tr class="memdesc:a5ba8ee34c024d648a81d903b155cff97"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a character device at the path specified (Experimental)  <a href="#a5ba8ee34c024d648a81d903b155cff97">More...</a><br /></td></tr>
+<tr class="separator:a5ba8ee34c024d648a81d903b155cff97"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af071b3e57e51005c4e2b877eeda58b4b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#af071b3e57e51005c4e2b877eeda58b4b">spdk_nvme_cuse_unregister</a> (struct spdk_nvme_ctrlr *ctrlr)</td></tr>
 <tr class="memdesc:af071b3e57e51005c4e2b877eeda58b4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove a previously created character device (Experimental)  <a href="#af071b3e57e51005c4e2b877eeda58b4b">More...</a><br /></td></tr>
 <tr class="separator:af071b3e57e51005c4e2b877eeda58b4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -819,6 +835,23 @@ Functions</h2></td></tr>
 <tr><td class="fieldname"><a id="a018f3b986b4345ee0c6931be9718c163afe42f7e0cdcb93109b55b77cf89efd27"></a>SPDK_NVME_NS_WRITE_UNCORRECTABLE_SUPPORTED&#160;</td><td class="fielddoc"><p>The write uncorrectable command is supported. </p>
 </td></tr>
 </table>
+
+</div>
+</div>
+<a id="ab41e2d311eb6663957cd2f18bc8fb890"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab41e2d311eb6663957cd2f18bc8fb890">&#9670;&nbsp;</a></span>spdk_nvme_qp_failure_reason</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="nvme_8h.html#ab41e2d311eb6663957cd2f18bc8fb890">spdk_nvme_qp_failure_reason</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Reason for qpair disconnect at the transport layer. </p>
+<p>NONE implies that the qpair is still connected while UNKNOWN means that the qpair is disconnected, but the cause was not apparent. </p>
 
 </div>
 </div>
@@ -2081,6 +2114,33 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a4c11b5ae0a1f6d70f3ab99a13765ea75"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4c11b5ae0a1f6d70f3ab99a13765ea75">&#9670;&nbsp;</a></span>spdk_nvme_ctrlr_get_admin_qp_failure_reason()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="nvme_8h.html#ab41e2d311eb6663957cd2f18bc8fb890">spdk_nvme_qp_failure_reason</a> spdk_nvme_ctrlr_get_admin_qp_failure_reason </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_nvme_ctrlr *&#160;</td>
+          <td class="paramname"><em>ctrlr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the reason the admin qpair for a given controller is disconnected. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ctrlr</td><td>The controller to check.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>a valid spdk_nvme_qp_failure_reason. </dd></dl>
+
+</div>
+</div>
 <a id="a5a9daf15b5008ac36c12e7b8db7bdec9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5a9daf15b5008ac36c12e7b8db7bdec9">&#9670;&nbsp;</a></span>spdk_nvme_ctrlr_get_data()</h2>
 
@@ -3294,8 +3354,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a406b7ee1f53f568334e505365a281569"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a406b7ee1f53f568334e505365a281569">&#9670;&nbsp;</a></span>spdk_nvme_cuse_register()</h2>
+<a id="a5ba8ee34c024d648a81d903b155cff97"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ba8ee34c024d648a81d903b155cff97">&#9670;&nbsp;</a></span>spdk_nvme_cuse_register()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3304,18 +3364,8 @@ Functions</h2></td></tr>
           <td class="memname">int spdk_nvme_cuse_register </td>
           <td>(</td>
           <td class="paramtype">struct spdk_nvme_ctrlr *&#160;</td>
-          <td class="paramname"><em>ctrlr</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"><em>ctrlr</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>dev_path</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -3325,8 +3375,7 @@ Functions</h2></td></tr>
 <p>The user is expected to be polling the admin qpair for this controller periodically for the CUSE device to function.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">ctrlr</td><td>Opaque handle to the NVMe controller. </td></tr>
-    <tr><td class="paramname">dev_path</td><td>The path at which the device should appear. Ex. /dev/spdk/nvme0n1</td></tr>
+    <tr><td class="paramname">ctrlr</td><td>Opaque handle to the NVMe controller.</td></tr>
   </table>
   </dd>
 </dl>
@@ -5796,6 +5845,33 @@ value other than 0 and -EAGAIN probe error with one controller. </dd></dl>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 if successfully enabled, ENOMEM if an error command structure cannot be allocated.</dd></dl>
 <p>The function can be called multiple times to inject errors for different commands. If the opcode matches an existing entry, the existing entry will be updated with the values specified. </p>
+
+</div>
+</div>
+<a id="ae2015f3c7dd76113e89a732eabe400ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae2015f3c7dd76113e89a732eabe400ff">&#9670;&nbsp;</a></span>spdk_nvme_qpair_get_failure_reason()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="nvme_8h.html#ab41e2d311eb6663957cd2f18bc8fb890">spdk_nvme_qp_failure_reason</a> spdk_nvme_qpair_get_failure_reason </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_nvme_qpair *&#160;</td>
+          <td class="paramname"><em>qpair</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the reason the qpair is disconnected. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">qpair</td><td>The qpair to check.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>a valid spdk_nvme_qp_failure_reason. </dd></dl>
 
 </div>
 </div>

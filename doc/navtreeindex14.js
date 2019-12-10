@@ -1,5 +1,13 @@
 var NAVTREEINDEX14 =
 {
+"structspdk__d0__locking__features.html#ab7caa787d2e63e86766ef0fe95f4d005":[12,0,46,0],
+"structspdk__d0__locking__features.html#ad5e439372644b11a5cddcfbff97fc3da":[12,0,46,2],
+"structspdk__d0__locking__features.html#aeed3f2ace197932a98bab4205d4e9370":[12,0,46,7],
+"structspdk__d0__locking__features.html#af1a6daad312f975895d3d25fae748172":[12,0,46,8],
+"structspdk__d0__opal__v100.html":[12,0,47],
+"structspdk__d0__opal__v100.html#a19ac0c8deec0d8f2ece68741f82c159e":[12,0,47,2],
+"structspdk__d0__opal__v100.html#a1d2515d741aef3e4c137fa7e013177b9":[12,0,47,7],
+"structspdk__d0__opal__v100.html#a3d2669e53f739088e46067ecf7e24fd8":[12,0,47,3],
 "structspdk__d0__opal__v100.html#a594b5d0f29f8e13e774ad111bef22e1c":[12,0,47,5],
 "structspdk__d0__opal__v100.html#a663a6ea8308ceffc6e62ccb2eb1491a3":[12,0,47,1],
 "structspdk__d0__opal__v100.html#a9a8fc62cf84245f61bea06665c8b0029":[12,0,47,9],
@@ -241,13 +249,5 @@ var NAVTREEINDEX14 =
 "structspdk__ioat__generic__hw__desc.html#acc341ec729372eaf5adcf4b6dd3ce856":[12,0,68,5],
 "structspdk__ioat__generic__hw__desc.html#ae072e653d6376a17dce754062b8341e6":[12,0,68,9],
 "structspdk__ioat__generic__hw__desc.html#ae1d43a7a3a84bdb21295e1a385ce9098":[12,0,68,19],
-"structspdk__ioat__generic__hw__desc.html#ae42d76e90275e8a65b02e2e8ca473ae5":[12,0,68,4],
-"structspdk__ioat__generic__hw__desc.html#af60f8ad79535e9d40552fdc257adadc9":[12,0,68,0],
-"structspdk__ioat__pq__ext__hw__desc.html":[12,0,70],
-"structspdk__ioat__pq__ext__hw__desc.html#a2340de5edbbc01e2221706ea8e603eec":[12,0,70,0],
-"structspdk__ioat__pq__ext__hw__desc.html#a3f72a6c67614d00ef56661e523839586":[12,0,70,4],
-"structspdk__ioat__pq__ext__hw__desc.html#a457841555f87bce91872a4b235a67547":[12,0,70,2],
-"structspdk__ioat__pq__ext__hw__desc.html#a677b6a0ee2c383c57e12c6b2f037a882":[12,0,70,1],
-"structspdk__ioat__pq__ext__hw__desc.html#a9dee38462694aae5ee3d5ce363af95ab":[12,0,70,5],
-"structspdk__ioat__pq__ext__hw__desc.html#aba13a30c2a0a1e0c974300d850ed5d75":[12,0,70,3]
+"structspdk__ioat__generic__hw__desc.html#ae42d76e90275e8a65b02e2e8ca473ae5":[12,0,68,4]
 };

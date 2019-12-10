@@ -1,5 +1,13 @@
 var NAVTREEINDEX16 =
 {
+"structspdk__nvme__ctrlr__data.html#a4dad8c13bda97607785a59c50b2efa72":[12,0,103,75],
+"structspdk__nvme__ctrlr__data.html#a4f998f9dd58c77c3c8abbaa8a40980c5":[12,0,103,24],
+"structspdk__nvme__ctrlr__data.html#a532b4029c5c1210d8555378c6bd8f8d5":[12,0,103,77],
+"structspdk__nvme__ctrlr__data.html#a551038a898799fceb8eec6444c4014b6":[12,0,103,7],
+"structspdk__nvme__ctrlr__data.html#a56b8d434ef2d0e6ca6308f52371488d7":[12,0,103,18],
+"structspdk__nvme__ctrlr__data.html#a5b9650f02ffc24e94a6708b33272c415":[12,0,103,54],
+"structspdk__nvme__ctrlr__data.html#a5ddf345a4db05b7ded96311d771e899d":[12,0,103,81],
+"structspdk__nvme__ctrlr__data.html#a5e6150304b319f8313abbee9fe52b20d":[12,0,103,74],
 "structspdk__nvme__ctrlr__data.html#a5ee6008f5e2630512b140f90e2a6373c":[12,0,103,143],
 "structspdk__nvme__ctrlr__data.html#a606e6b01c50a19c45a8ebc412e302ab6":[12,0,103,89],
 "structspdk__nvme__ctrlr__data.html#a60af8e5e6eaaffa571623e549db76c1b":[12,0,103,132],
@@ -241,13 +249,5 @@ var NAVTREEINDEX16 =
 "structspdk__nvme__io__qpair__opts.html#a9a9ae75991da44a7fbf06a3c82161a6d":[12,0,144,6],
 "structspdk__nvme__io__qpair__opts.html#aa3d92d942325f923d4e1622a8522aa38":[12,0,144,5],
 "structspdk__nvme__io__qpair__opts.html#adbb8aa3f64bc021ea5e9fddec6796341":[12,0,144,4],
-"structspdk__nvme__io__qpair__opts.html#adbd6f687ad6a315dd4a25d5947f52bd7":[12,0,144,9],
-"structspdk__nvme__io__qpair__opts.html#aea395b806f8f7d645faa90416232829f":[12,0,144,1],
-"structspdk__nvme__ns__data.html":[12,0,145],
-"structspdk__nvme__ns__data.html#a058bfec34018c099918420fbc79fab27":[12,0,145,15],
-"structspdk__nvme__ns__data.html#a0b7ddedcecbedf9c549b3bb2dc5eabd7":[12,0,145,53],
-"structspdk__nvme__ns__data.html#a10c7b734c09cfd79d88f4fb4c1ffb666":[12,0,145,63],
-"structspdk__nvme__ns__data.html#a1295065f7156b27aeb749b1ef5c0cdc7":[12,0,145,22],
-"structspdk__nvme__ns__data.html#a13b7eda92524ba4b553197c702e1479b":[12,0,145,51],
-"structspdk__nvme__ns__data.html#a1d90d25be4a3d74fcc8097cdd437da25":[12,0,145,16]
+"structspdk__nvme__io__qpair__opts.html#adbd6f687ad6a315dd4a25d5947f52bd7":[12,0,144,9]
 };

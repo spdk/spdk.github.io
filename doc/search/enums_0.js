@@ -34,6 +34,7 @@ var searchData=
   ['spdk_5fnvme_5fns_5fmanagement_5ftype',['spdk_nvme_ns_management_type',['../nvme__spec_8h.html#ae4e10443176e941bea118b389679c345',1,'nvme_spec.h']]],
   ['spdk_5fnvme_5fnvm_5fopcode',['spdk_nvme_nvm_opcode',['../nvme__spec_8h.html#ac3953ec001514cffe849d9c1e3a913e3',1,'nvme_spec.h']]],
   ['spdk_5fnvme_5fpath_5fstatus_5fcode',['spdk_nvme_path_status_code',['../nvme__spec_8h.html#a33e755cbe54eafcfbe31e1f713e4d5b2',1,'nvme_spec.h']]],
+  ['spdk_5fnvme_5fqp_5ffailure_5freason',['spdk_nvme_qp_failure_reason',['../nvme_8h.html#ab41e2d311eb6663957cd2f18bc8fb890',1,'nvme.h']]],
   ['spdk_5fnvme_5fqprio',['spdk_nvme_qprio',['../nvme__spec_8h.html#ae83a61e254cf9d1fd59376ceedd1b4e6',1,'nvme_spec.h']]],
   ['spdk_5fnvme_5freservation_5facquire_5faction',['spdk_nvme_reservation_acquire_action',['../nvme__spec_8h.html#a95b3685443c2716ee0d125c30182aeac',1,'nvme_spec.h']]],
   ['spdk_5fnvme_5freservation_5fnotification_5flog_5fpage_5ftype',['spdk_nvme_reservation_notification_log_page_type',['../nvme__spec_8h.html#a48858ce224a290ff927e8954b31fdf67',1,'nvme_spec.h']]],

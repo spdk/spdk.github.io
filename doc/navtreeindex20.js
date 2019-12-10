@@ -1,5 +1,13 @@
 var NAVTREEINDEX20 =
 {
+"structspdk__opal__info.html#a72963c0b366ba88888889bd108bfbe2d":[12,0,232,19],
+"structspdk__opal__info.html#a75a2ced5d5919ca59319ddfba3454708":[12,0,232,22],
+"structspdk__opal__info.html#a7ea16aa4c1ba4db6da1fff20e893b258":[12,0,232,7],
+"structspdk__opal__info.html#a870133049bf3a81233d78156a8f1cc27":[12,0,232,34],
+"structspdk__opal__info.html#a94df3f3f2669604ba5b324f51de62098":[12,0,232,17],
+"structspdk__opal__info.html#a993b6fc34041fc3b0a523362f1492b9e":[12,0,232,12],
+"structspdk__opal__info.html#aa2a6a4264f88ec9e2a987a99064cf591":[12,0,232,27],
+"structspdk__opal__info.html#aa97d689a52541dc70a54411449ba2641":[12,0,232,16],
 "structspdk__opal__info.html#ab62b1269d61b5c328978422b7e455f16":[12,0,232,36],
 "structspdk__opal__info.html#ab98e963010620d6310474370394c4cbd":[12,0,232,11],
 "structspdk__opal__info.html#ac33bbb2e2189b06426cc75af88e931aa":[12,0,232,0],
@@ -241,13 +249,5 @@ var NAVTREEINDEX20 =
 "structspdk__scsi__unmap__bdesc.html#a514ee830753d52e54adf3f4e88714541":[12,0,257,1],
 "structspdk__scsi__unmap__bdesc.html#ae954762409a7249e0c36ae159dc6b9a5":[12,0,257,2],
 "structspdk__scsi__unmap__bdesc.html#aee26f6bb7cbfb226505fb2b58551a83d":[12,0,257,0],
-"structspdk__scsi__vpd__ext__inquiry.html":[12,0,258],
-"structspdk__scsi__vpd__ext__inquiry.html#a1044d03cc28a332a153f36dcadbd486e":[12,0,258,2],
-"structspdk__scsi__vpd__ext__inquiry.html#a1683585f9defe2c3d6e18de15c7dede9":[12,0,258,7],
-"structspdk__scsi__vpd__ext__inquiry.html#a2bdca53f901e6920aff6907c211a5e3c":[12,0,258,3],
-"structspdk__scsi__vpd__ext__inquiry.html#a5b7048f74213939d02f980a1b4089082":[12,0,258,0],
-"structspdk__scsi__vpd__ext__inquiry.html#a8881150e0ee0722d6a0716694830735b":[12,0,258,6],
-"structspdk__scsi__vpd__ext__inquiry.html#a8930fdecf9c05c3a889885527da57a87":[12,0,258,5],
-"structspdk__scsi__vpd__ext__inquiry.html#a9dddaf4c0384b79536e668c52308adcf":[12,0,258,1],
-"structspdk__scsi__vpd__ext__inquiry.html#ab8826d5e01f37429d78fda6cc22f8cad":[12,0,258,4]
+"structspdk__scsi__vpd__ext__inquiry.html":[12,0,258]
 };
