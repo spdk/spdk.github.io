@@ -1,14 +1,14 @@
 var searchData=
 [
-  ['mask',['mask',['../structspdk__ocssd__chunk__notification__entry.html#ae670b23c95319931c88bf7f67da09fff',1,'spdk_ocssd_chunk_notification_entry']]],
+  ['mask',['mask',['../structspdk__ocssd__chunk__notification__entry.html#a1b3d056b84ea5275e73ac36414556519',1,'spdk_ocssd_chunk_notification_entry']]],
   ['max_5fchannel_5fops',['max_channel_ops',['../structspdk__bs__opts.html#ac5417afa104f5061bab1bfae0769c3a6',1,'spdk_bs_opts']]],
   ['max_5fmd_5fops',['max_md_ops',['../structspdk__bs__opts.html#a63e0b619fedc29159dffd7feca08396b',1,'spdk_bs_opts']]],
   ['max_5fopen_5fzones',['max_open_zones',['../structspdk__bdev.html#a9766b9a39169827156c768f78b940977',1,'spdk_bdev']]],
   ['maxh2cdata',['maxh2cdata',['../structspdk__nvme__tcp__ic__resp.html#ae19af16d43dd54e43ccfeccd7f6119dc',1,'spdk_nvme_tcp_ic_resp']]],
   ['maxoc',['maxoc',['../structspdk__ocssd__geometry__data.html#adecc1a99d16f94eace12b674c7b7bbfa',1,'spdk_ocssd_geometry_data']]],
   ['maxocpu',['maxocpu',['../structspdk__ocssd__geometry__data.html#a747b543789ad8efcfca1c54faeb95c52',1,'spdk_ocssd_geometry_data']]],
-  ['mc',['mc',['../structspdk__nvme__ns__data.html#a425c750162b0028f50225853da25ba62',1,'spdk_nvme_ns_data']]],
-  ['mccap',['mccap',['../structspdk__ocssd__geometry__data.html#af8821d3e8de742499b8b77fb17abd5e7',1,'spdk_ocssd_geometry_data']]],
+  ['mc',['mc',['../structspdk__nvme__ns__data.html#a5a06a169109a284f80adfbc2b0df3c86',1,'spdk_nvme_ns_data']]],
+  ['mccap',['mccap',['../structspdk__ocssd__geometry__data.html#a32341d14bb6b6b21eb756068ed868f68',1,'spdk_ocssd_geometry_data']]],
   ['md_5fend',['md_end',['../structspdk__nvme__ns__data.html#ab511e295c151b4d17911e474711168b9',1,'spdk_nvme_ns_data']]],
   ['md_5finterleave',['md_interleave',['../structspdk__bdev.html#a4e68d5fa768ba5d3c8af32e68e1a992c',1,'spdk_bdev::md_interleave()'],['../structspdk__dif__ctx.html#a341adc2959c3449ba630601ebfb14cb9',1,'spdk_dif_ctx::md_interleave()']]],
   ['md_5flen',['md_len',['../structspdk__bdev.html#ab53361e758d7ebe3edec7598f86fa576',1,'spdk_bdev']]],

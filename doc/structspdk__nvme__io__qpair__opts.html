@@ -175,57 +175,65 @@ Data Fields</h2></td></tr>
 <tr class="memitem:a4af594ef7f8b7e590662633c926146b4"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__io__qpair__opts.html#a4af594ef7f8b7e590662633c926146b4">io_queue_requests</a></td></tr>
 <tr class="memdesc:a4af594ef7f8b7e590662633c926146b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">The number of requests to allocate for this NVMe I/O queue.  <a href="#a4af594ef7f8b7e590662633c926146b4">More...</a><br /></td></tr>
 <tr class="separator:a4af594ef7f8b7e590662633c926146b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a44d81a594ba280300928e7244c2612d0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__io__qpair__opts.html#a44d81a594ba280300928e7244c2612d0">delay_pcie_doorbell</a></td></tr>
-<tr class="memdesc:a44d81a594ba280300928e7244c2612d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">When submitting I/O via spdk_nvme_ns_read/write and similar functions, don't immediately write the submission queue doorbell.  <a href="#a44d81a594ba280300928e7244c2612d0">More...</a><br /></td></tr>
-<tr class="separator:a44d81a594ba280300928e7244c2612d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8422787821fa6da7e4df9a1f34b317b5"><td class="memItemLeft" >struct {</td></tr>
-<tr class="memitem:a2a691915ddc0c61f1db3a9f61ce5ba17"><td class="memItemLeft" >
+<tr class="memitem:a4212825367a435bdef9f2d55ab03d84c"><td class="memItemLeft" >union {</td></tr>
+<tr class="memitem:a9a4585b775a9bf36b66c74d4f8169bd2"><td class="memItemLeft" >
+&#160;&#160;&#160;bool&#160;&#160;&#160;<b>delay_cmd_submit</b></td></tr>
+<tr class="separator:a9a4585b775a9bf36b66c74d4f8169bd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb655b749e9d059b7d059cbb26b3cf80"><td class="memItemLeft" >
+&#160;&#160;&#160;bool&#160;&#160;&#160;<b>delay_pcie_doorbell</b></td></tr>
+<tr class="separator:acb655b749e9d059b7d059cbb26b3cf80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4212825367a435bdef9f2d55ab03d84c"><td class="memItemLeft" valign="top">};&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="memdesc:a4212825367a435bdef9f2d55ab03d84c"><td class="mdescLeft">&#160;</td><td class="mdescRight">When submitting I/O via spdk_nvme_ns_read/write and similar functions, don't immediately submit it to hardware.  <a href="#a4212825367a435bdef9f2d55ab03d84c">More...</a><br /></td></tr>
+<tr class="separator:a4212825367a435bdef9f2d55ab03d84c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1c1be3c40c578728c2efff560cfaf15"><td class="memItemLeft" >struct {</td></tr>
+<tr class="memitem:a6552eda13b99aa760a1f42d568134f56"><td class="memItemLeft" >
 &#160;&#160;&#160;struct <a class="el" href="structspdk__nvme__cmd.html">spdk_nvme_cmd</a> *&#160;&#160;&#160;<b>vaddr</b></td></tr>
-<tr class="separator:a2a691915ddc0c61f1db3a9f61ce5ba17"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5bd887fe597942e3eef49ab819e26dfd"><td class="memItemLeft" >
+<tr class="separator:a6552eda13b99aa760a1f42d568134f56"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ca56a5a191e14daec92164a0ceac9ec"><td class="memItemLeft" >
 &#160;&#160;&#160;uint64_t&#160;&#160;&#160;<b>paddr</b></td></tr>
-<tr class="separator:a5bd887fe597942e3eef49ab819e26dfd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8ec2297ad3d05c52cca70d97c583ec3f"><td class="memItemLeft" >
+<tr class="separator:a2ca56a5a191e14daec92164a0ceac9ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5788133647ff2fd030eb345ade389cee"><td class="memItemLeft" >
 &#160;&#160;&#160;uint64_t&#160;&#160;&#160;<b>buffer_size</b></td></tr>
-<tr class="separator:a8ec2297ad3d05c52cca70d97c583ec3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8422787821fa6da7e4df9a1f34b317b5"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__io__qpair__opts.html#a8422787821fa6da7e4df9a1f34b317b5">sq</a></td></tr>
-<tr class="memdesc:a8422787821fa6da7e4df9a1f34b317b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">These fields allow specifying the memory buffers for the submission and/or completion queues.  <a href="#a8422787821fa6da7e4df9a1f34b317b5">More...</a><br /></td></tr>
-<tr class="separator:a8422787821fa6da7e4df9a1f34b317b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aea395b806f8f7d645faa90416232829f"><td class="memItemLeft" ><a id="aea395b806f8f7d645faa90416232829f"></a>
+<tr class="separator:a5788133647ff2fd030eb345ade389cee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1c1be3c40c578728c2efff560cfaf15"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__io__qpair__opts.html#ac1c1be3c40c578728c2efff560cfaf15">sq</a></td></tr>
+<tr class="memdesc:ac1c1be3c40c578728c2efff560cfaf15"><td class="mdescLeft">&#160;</td><td class="mdescRight">These fields allow specifying the memory buffers for the submission and/or completion queues.  <a href="#ac1c1be3c40c578728c2efff560cfaf15">More...</a><br /></td></tr>
+<tr class="separator:ac1c1be3c40c578728c2efff560cfaf15"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d65fe6f110468b7a531702184dd81ab"><td class="memItemLeft" ><a id="a9d65fe6f110468b7a531702184dd81ab"></a>
 struct {</td></tr>
-<tr class="memitem:ac148d2761e65db6e8082142b524e6ad2"><td class="memItemLeft" >
+<tr class="memitem:aaf415112d0bf4d5c7c08027b505d1962"><td class="memItemLeft" >
 &#160;&#160;&#160;struct <a class="el" href="structspdk__nvme__cpl.html">spdk_nvme_cpl</a> *&#160;&#160;&#160;<b>vaddr</b></td></tr>
-<tr class="separator:ac148d2761e65db6e8082142b524e6ad2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab5b9c0fb60e2c1a16bdedc59eb0f25f1"><td class="memItemLeft" >
+<tr class="separator:aaf415112d0bf4d5c7c08027b505d1962"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad31c37acab9b9b41df757fa6d54cd449"><td class="memItemLeft" >
 &#160;&#160;&#160;uint64_t&#160;&#160;&#160;<b>paddr</b></td></tr>
-<tr class="separator:ab5b9c0fb60e2c1a16bdedc59eb0f25f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2cea822f582f6eeaf0b507fd33bb0c1f"><td class="memItemLeft" >
+<tr class="separator:ad31c37acab9b9b41df757fa6d54cd449"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35e73434bcca09a63b81aa985b881f3f"><td class="memItemLeft" >
 &#160;&#160;&#160;uint64_t&#160;&#160;&#160;<b>buffer_size</b></td></tr>
-<tr class="separator:a2cea822f582f6eeaf0b507fd33bb0c1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aea395b806f8f7d645faa90416232829f"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><b>cq</b></td></tr>
-<tr class="separator:aea395b806f8f7d645faa90416232829f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a35e73434bcca09a63b81aa985b881f3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d65fe6f110468b7a531702184dd81ab"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><b>cq</b></td></tr>
+<tr class="separator:a9d65fe6f110468b7a531702184dd81ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>NVMe I/O queue pair initialization options. </p>
 <p>These options may be passed to <a class="el" href="nvme_8h.html#a13f745d239dab9b8f934fae2ad4984a2" title="Allocate an I/O queue pair (submission and completion queue). ">spdk_nvme_ctrlr_alloc_io_qpair()</a> to configure queue pair options at queue creation time.</p>
 <p>The user may retrieve the default I/O queue pair creation options for a controller using <a class="el" href="nvme_8h.html#a6964d09dc51882fae6f2a7cf94afc741" title="Get the default options for I/O qpair creation for a specific NVMe controller. ">spdk_nvme_ctrlr_get_default_io_qpair_opts()</a>. </p>
 </div><h2 class="groupheader">Field Documentation</h2>
-<a id="a44d81a594ba280300928e7244c2612d0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a44d81a594ba280300928e7244c2612d0">&#9670;&nbsp;</a></span>delay_pcie_doorbell</h2>
+<a id="a4212825367a435bdef9f2d55ab03d84c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4212825367a435bdef9f2d55ab03d84c">&#9670;&nbsp;</a></span>@25</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool spdk_nvme_io_qpair_opts::delay_pcie_doorbell</td>
+          <td class="memname">union { ... } </td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>When submitting I/O via spdk_nvme_ns_read/write and similar functions, don't immediately write the submission queue doorbell. </p>
-<p>Instead, write to the doorbell as necessary inside <a class="el" href="nvme_8h.html#aa331d140870e977722bfbb6826524782" title="Process any outstanding completions for I/O submitted on a queue pair. ">spdk_nvme_qpair_process_completions()</a>.</p>
-<p>This results in better batching of I/O submission and consequently fewer MMIO writes to the doorbell, which may increase performance.</p>
-<p>This only applies to local PCIe devices. </p>
+<p>When submitting I/O via spdk_nvme_ns_read/write and similar functions, don't immediately submit it to hardware. </p>
+<p>Instead, queue up new commands and submit them to the hardware inside <a class="el" href="nvme_8h.html#aa331d140870e977722bfbb6826524782" title="Process any outstanding completions for I/O submitted on a queue pair. ">spdk_nvme_qpair_process_completions()</a>.</p>
+<p>This results in better batching of I/O commands. Often, it is more efficient to submit batches of commands to the underlying hardware than each command individually.</p>
+<p>This only applies to PCIe and RDMA transports.</p>
+<p>The flag was originally named delay_pcie_doorbell. To allow backward compatibility both names are kept in unnamed union. </p>
 
 </div>
 </div>
@@ -282,8 +290,8 @@ struct {</td></tr>
 
 </div>
 </div>
-<a id="a8422787821fa6da7e4df9a1f34b317b5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8422787821fa6da7e4df9a1f34b317b5">&#9670;&nbsp;</a></span>sq</h2>
+<a id="ac1c1be3c40c578728c2efff560cfaf15"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac1c1be3c40c578728c2efff560cfaf15">&#9670;&nbsp;</a></span>sq</h2>
 
 <div class="memitem">
 <div class="memproto">

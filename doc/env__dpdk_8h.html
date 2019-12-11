@@ -153,11 +153,11 @@ $(document).ready(function(){initNavTree('env__dpdk_8h.html','');});
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a4cad0e2fc2b5a9b8e588bc4e997e2ec7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env__dpdk_8h.html#a4cad0e2fc2b5a9b8e588bc4e997e2ec7">spdk_env_dpdk_post_init</a> (void)</td></tr>
-<tr class="memdesc:a4cad0e2fc2b5a9b8e588bc4e997e2ec7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the environment library after DPDK env is already initialized.  <a href="#a4cad0e2fc2b5a9b8e588bc4e997e2ec7">More...</a><br /></td></tr>
-<tr class="separator:a4cad0e2fc2b5a9b8e588bc4e997e2ec7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a160eba905ced9b233b67336651c954c7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env__dpdk_8h.html#a160eba905ced9b233b67336651c954c7">spdk_env_dpdk_post_init</a> (bool legacy_mem)</td></tr>
+<tr class="memdesc:a160eba905ced9b233b67336651c954c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the environment library after DPDK env is already initialized.  <a href="#a160eba905ced9b233b67336651c954c7">More...</a><br /></td></tr>
+<tr class="separator:a160eba905ced9b233b67336651c954c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aff24042058543bcee5a8a7ba0cd6b226"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env__dpdk_8h.html#aff24042058543bcee5a8a7ba0cd6b226">spdk_env_dpdk_post_fini</a> (void)</td></tr>
-<tr class="memdesc:aff24042058543bcee5a8a7ba0cd6b226"><td class="mdescLeft">&#160;</td><td class="mdescRight">Release any resources of the environment library that were alllocated with <a class="el" href="env__dpdk_8h.html#a4cad0e2fc2b5a9b8e588bc4e997e2ec7" title="Initialize the environment library after DPDK env is already initialized. ">spdk_env_dpdk_post_init()</a>.  <a href="#aff24042058543bcee5a8a7ba0cd6b226">More...</a><br /></td></tr>
+<tr class="memdesc:aff24042058543bcee5a8a7ba0cd6b226"><td class="mdescLeft">&#160;</td><td class="mdescRight">Release any resources of the environment library that were alllocated with <a class="el" href="env__dpdk_8h.html#a160eba905ced9b233b67336651c954c7" title="Initialize the environment library after DPDK env is already initialized. ">spdk_env_dpdk_post_init()</a>.  <a href="#aff24042058543bcee5a8a7ba0cd6b226">More...</a><br /></td></tr>
 <tr class="separator:aff24042058543bcee5a8a7ba0cd6b226"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae30c265cb90b9920025ee8699b9e9192"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env__dpdk_8h.html#ae30c265cb90b9920025ee8699b9e9192">spdk_env_dpdk_external_init</a> (void)</td></tr>
 <tr class="memdesc:ae30c265cb90b9920025ee8699b9e9192"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if DPDK was initialized external to the SPDK env_dpdk library.  <a href="#ae30c265cb90b9920025ee8699b9e9192">More...</a><br /></td></tr>
@@ -205,13 +205,13 @@ false otherwise </dd></dl>
       </table>
 </div><div class="memdoc">
 
-<p>Release any resources of the environment library that were alllocated with <a class="el" href="env__dpdk_8h.html#a4cad0e2fc2b5a9b8e588bc4e997e2ec7" title="Initialize the environment library after DPDK env is already initialized. ">spdk_env_dpdk_post_init()</a>. </p>
+<p>Release any resources of the environment library that were alllocated with <a class="el" href="env__dpdk_8h.html#a160eba905ced9b233b67336651c954c7" title="Initialize the environment library after DPDK env is already initialized. ">spdk_env_dpdk_post_init()</a>. </p>
 <p>After this call, no DPDK function calls may be made. It is expected that common usage of this function is to call it just before terminating the process. </p>
 
 </div>
 </div>
-<a id="a4cad0e2fc2b5a9b8e588bc4e997e2ec7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4cad0e2fc2b5a9b8e588bc4e997e2ec7">&#9670;&nbsp;</a></span>spdk_env_dpdk_post_init()</h2>
+<a id="a160eba905ced9b233b67336651c954c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a160eba905ced9b233b67336651c954c7">&#9670;&nbsp;</a></span>spdk_env_dpdk_post_init()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -219,8 +219,8 @@ false otherwise </dd></dl>
         <tr>
           <td class="memname">int spdk_env_dpdk_post_init </td>
           <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>legacy_mem</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -228,6 +228,12 @@ false otherwise </dd></dl>
 
 <p>Initialize the environment library after DPDK env is already initialized. </p>
 <p>If DPDK's rte_eal_init is already called, this function must be called instead of spdk_env_init, prior to using any other functions in SPDK env library.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">legacy_mem</td><td>Indicates whether DPDK was initialized with &ndash;legacy-mem eal parameter. </td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="section return"><dt>Returns</dt><dd>0 on success, or negative errno on failure. </dd></dl>
 
 </div>

@@ -70,7 +70,6 @@ var nvme__spec_8h =
     [ "spdk_nvme_fw_commit", "structspdk__nvme__fw__commit.html", "structspdk__nvme__fw__commit" ],
     [ "SPDK_NVME_ADMIN_QUEUE_MAX_ENTRIES", "nvme__spec_8h.html#afc394cf0b37e4ec245a604e0e48b2b82", null ],
     [ "SPDK_NVME_ADMIN_QUEUE_MIN_ENTRIES", "nvme__spec_8h.html#ae4c74c2bd741f5f291f3e4a032d04647", null ],
-    [ "spdk_nvme_async_event_config", "nvme__spec_8h.html#ac26384c8970df6b7c9c074c1f9c4e00e", null ],
     [ "SPDK_NVME_CAP_CSS_NVM", "nvme__spec_8h.html#a69a0ff119fce7fb11c4eb2a2f83c01d1", null ],
     [ "spdk_nvme_cpl_is_error", "nvme__spec_8h.html#a62b2e9dfaeda9fac684e7b456971c710", null ],
     [ "spdk_nvme_cpl_is_pi_error", "nvme__spec_8h.html#ab72a2ef691ff4d7321187797d6795414", null ],

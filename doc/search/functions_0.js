@@ -264,7 +264,7 @@ var searchData=
   ['spdk_5fdma_5fzmalloc_5fsocket',['spdk_dma_zmalloc_socket',['../env_8h.html#a7f4e9f571d0b77a46ef0192e4cfb13f0',1,'env.h']]],
   ['spdk_5fenv_5fdpdk_5fexternal_5finit',['spdk_env_dpdk_external_init',['../env__dpdk_8h.html#ae30c265cb90b9920025ee8699b9e9192',1,'env_dpdk.h']]],
   ['spdk_5fenv_5fdpdk_5fpost_5ffini',['spdk_env_dpdk_post_fini',['../env__dpdk_8h.html#aff24042058543bcee5a8a7ba0cd6b226',1,'env_dpdk.h']]],
-  ['spdk_5fenv_5fdpdk_5fpost_5finit',['spdk_env_dpdk_post_init',['../env__dpdk_8h.html#a4cad0e2fc2b5a9b8e588bc4e997e2ec7',1,'env_dpdk.h']]],
+  ['spdk_5fenv_5fdpdk_5fpost_5finit',['spdk_env_dpdk_post_init',['../env__dpdk_8h.html#a160eba905ced9b233b67336651c954c7',1,'env_dpdk.h']]],
   ['spdk_5fenv_5ffini',['spdk_env_fini',['../env_8h.html#a719b5099cc3aa62190a1f44642ba6f91',1,'env.h']]],
   ['spdk_5fenv_5fget_5fcore_5fcount',['spdk_env_get_core_count',['../env_8h.html#a4461ccdde430461ad2756b3799099330',1,'env.h']]],
   ['spdk_5fenv_5fget_5fcurrent_5fcore',['spdk_env_get_current_core',['../env_8h.html#a2483610a36d7daa9e6b067d9270d0087',1,'env.h']]],
