@@ -5,6 +5,7 @@ var nvmf_8h =
     [ "spdk_nvmf_poll_group_stat", "structspdk__nvmf__poll__group__stat.html", "structspdk__nvmf__poll__group__stat" ],
     [ "spdk_nvmf_rdma_device_stat", "structspdk__nvmf__rdma__device__stat.html", "structspdk__nvmf__rdma__device__stat" ],
     [ "spdk_nvmf_transport_poll_group_stat", "structspdk__nvmf__transport__poll__group__stat.html", "structspdk__nvmf__transport__poll__group__stat" ],
+    [ "spdk_nvmf_transport_ops", "structspdk__nvmf__transport__ops.html", "structspdk__nvmf__transport__ops" ],
     [ "spdk_nvmf_ns_opts", "structspdk__nvmf__ns__opts.html", "structspdk__nvmf__ns__opts" ],
     [ "NVMF_TGT_NAME_MAX_LENGTH", "nvmf_8h.html#aa14fa429c146d151fd9ef3d53df80da8", null ],
     [ "new_qpair_fn", "nvmf_8h.html#aa999ebee65c92711a5dce79d06cf81c2", null ],

@@ -166,6 +166,8 @@ Data Structures</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvmf__transport__poll__group__stat.html">spdk_nvmf_transport_poll_group_stat</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvmf__transport__ops.html">spdk_nvmf_transport_ops</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvmf__ns__opts.html">spdk_nvmf_ns_opts</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">NVMe-oF target namespace creation options.  <a href="structspdk__nvmf__ns__opts.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -178,15 +180,15 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
+<tr class="memitem:aa999ebee65c92711a5dce79d06cf81c2"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#aa999ebee65c92711a5dce79d06cf81c2">new_qpair_fn</a>) (struct spdk_nvmf_qpair *qpair, void *cb_arg)</td></tr>
+<tr class="memdesc:aa999ebee65c92711a5dce79d06cf81c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to be called for each newly discovered qpair.  <a href="#aa999ebee65c92711a5dce79d06cf81c2">More...</a><br /></td></tr>
+<tr class="separator:aa999ebee65c92711a5dce79d06cf81c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a26c5ae0565e487633e00cdd8819d2d00"><td class="memItemLeft" align="right" valign="top"><a id="a26c5ae0565e487633e00cdd8819d2d00"></a>
 typedef void()&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvmf_tgt_destroy_done_fn</b>(void *ctx, int status)</td></tr>
 <tr class="separator:a26c5ae0565e487633e00cdd8819d2d00"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a854e30bf69f07bb06b2cbcdd08ca7eba"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#a854e30bf69f07bb06b2cbcdd08ca7eba">spdk_nvmf_tgt_listen_done_fn</a>) (void *ctx, int status)</td></tr>
 <tr class="memdesc:a854e30bf69f07bb06b2cbcdd08ca7eba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to be called once the target is listening.  <a href="#a854e30bf69f07bb06b2cbcdd08ca7eba">More...</a><br /></td></tr>
 <tr class="separator:a854e30bf69f07bb06b2cbcdd08ca7eba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa999ebee65c92711a5dce79d06cf81c2"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#aa999ebee65c92711a5dce79d06cf81c2">new_qpair_fn</a>) (struct spdk_nvmf_qpair *qpair, void *cb_arg)</td></tr>
-<tr class="memdesc:aa999ebee65c92711a5dce79d06cf81c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to be called for each newly discovered qpair.  <a href="#aa999ebee65c92711a5dce79d06cf81c2">More...</a><br /></td></tr>
-<tr class="separator:aa999ebee65c92711a5dce79d06cf81c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abd02f30e6fcb57338c723ffd5c307f0d"><td class="memItemLeft" align="right" valign="top"><a id="abd02f30e6fcb57338c723ffd5c307f0d"></a>
 typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>nvmf_qpair_disconnect_cb</b>) (void *ctx)</td></tr>
 <tr class="separator:abd02f30e6fcb57338c723ffd5c307f0d"><td class="memSeparator" colspan="2">&#160;</td></tr>

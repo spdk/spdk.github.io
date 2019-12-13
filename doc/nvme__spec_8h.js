@@ -86,6 +86,7 @@ var nvme__spec_8h =
     [ "SPDK_NVME_IO_FLAGS_PRCHK_APPTAG", "nvme__spec_8h.html#ae3c69904e0cbefa87f348e7c076707a7", null ],
     [ "SPDK_NVME_IO_FLAGS_PRCHK_GUARD", "nvme__spec_8h.html#aa4b184c96a7354bee528ca16bd5f9e97", null ],
     [ "SPDK_NVME_IO_FLAGS_PRCHK_REFTAG", "nvme__spec_8h.html#a093f4f54c893a46cc3a776fa667d09a2", null ],
+    [ "SPDK_NVME_IO_FLAGS_VALID_MASK", "nvme__spec_8h.html#a0dc3156c004bc63cfa323254dacd5f06", null ],
     [ "SPDK_NVME_IO_QUEUE_MAX_ENTRIES", "nvme__spec_8h.html#a1a070303721766a8be74aa19fed086c5", null ],
     [ "SPDK_NVME_IO_QUEUE_MIN_ENTRIES", "nvme__spec_8h.html#a596eccf075cc180ef6148458bd953a22", null ],
     [ "SPDK_NVME_MAX_IO_QUEUES", "nvme__spec_8h.html#a16100e7649c94a89146d02fe4556537a", null ],

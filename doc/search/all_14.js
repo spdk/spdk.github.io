@@ -27,11 +27,11 @@ var searchData=
   ['transport_5fretry_5fcount',['transport_retry_count',['../structspdk__nvme__ctrlr__opts.html#aff1b2c63ae9c862d3d372c49b5fd8b8c',1,'spdk_nvme_ctrlr_opts']]],
   ['trdm',['trdm',['../structspdk__ocssd__geometry__data.html#a4126ac6e1846920ef940648bba63dd98',1,'spdk_ocssd_geometry_data']]],
   ['trdt',['trdt',['../structspdk__ocssd__geometry__data.html#a4ab0d6368b89242e78483d6e44d931a7',1,'spdk_ocssd_geometry_data']]],
-  ['treq',['treq',['../structspdk__nvmf__discovery__log__page__entry.html#a2524d66e4f84f189b972f8700eb1b8b0',1,'spdk_nvmf_discovery_log_page_entry']]],
+  ['treq',['treq',['../structspdk__nvmf__discovery__log__page__entry.html#a4b5707893fa0f896b4a0dbfdca3ddf47',1,'spdk_nvmf_discovery_log_page_entry']]],
   ['trsvcid',['trsvcid',['../structspdk__nvme__transport__id.html#a1d77d6f4fb1d3245f03a2e64a63ce64a',1,'spdk_nvme_transport_id::trsvcid()'],['../structspdk__nvmf__discovery__log__page__entry.html#a4b3b3ff4bd5f94e6ffe8a11b90b08caa',1,'spdk_nvmf_discovery_log_page_entry::trsvcid()']]],
   ['trtype',['trtype',['../structspdk__nvme__transport__id.html#a9817e079d0324db582be6655ebe1d2d6',1,'spdk_nvme_transport_id::trtype()'],['../structspdk__nvmf__discovery__log__page__entry.html#ad5db7a511e5a7b5bf342391e77ecb27d',1,'spdk_nvmf_discovery_log_page_entry::trtype()']]],
   ['tsas',['tsas',['../structspdk__nvmf__discovery__log__page__entry.html#ae6926468815fd6dbdd5ff136a4905057',1,'spdk_nvmf_discovery_log_page_entry']]],
   ['twrm',['twrm',['../structspdk__ocssd__geometry__data.html#a48998a2ff49cafa400bed7cc639db747',1,'spdk_ocssd_geometry_data']]],
   ['twrt',['twrt',['../structspdk__ocssd__geometry__data.html#ac37ab8c7d75446d554d10384030bad30',1,'spdk_ocssd_geometry_data']]],
-  ['type',['type',['../structspdk__bdev__io.html#a4105d5a8419a66a6620d690da5649fcb',1,'spdk_bdev_io::type()'],['../structspdk__json__val.html#a709cbbd71ebb3cdc9bb8daf5f2a19364',1,'spdk_json_val::type()'],['../structspdk__nvme__reservation__notification__log.html#ac3ec3beaa7aec5a7c2bc5dad10932d48',1,'spdk_nvme_reservation_notification_log::type()']]]
+  ['type',['type',['../structspdk__bdev__io.html#a4105d5a8419a66a6620d690da5649fcb',1,'spdk_bdev_io::type()'],['../structspdk__json__val.html#a709cbbd71ebb3cdc9bb8daf5f2a19364',1,'spdk_json_val::type()'],['../structspdk__nvme__reservation__notification__log.html#ac3ec3beaa7aec5a7c2bc5dad10932d48',1,'spdk_nvme_reservation_notification_log::type()'],['../structspdk__nvmf__transport__ops.html#a22ddd0d23a055a17e6bd10fe4927a4db',1,'spdk_nvmf_transport_ops::type()']]]
 ];

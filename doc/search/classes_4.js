@@ -201,6 +201,7 @@ var searchData=
   ['spdk_5fnvmf_5frdma_5frequest_5fprivate_5fdata',['spdk_nvmf_rdma_request_private_data',['../structspdk__nvmf__rdma__request__private__data.html',1,'']]],
   ['spdk_5fnvmf_5frdma_5ftransport_5fspecific_5faddress_5fsubtype',['spdk_nvmf_rdma_transport_specific_address_subtype',['../structspdk__nvmf__rdma__transport__specific__address__subtype.html',1,'']]],
   ['spdk_5fnvmf_5ftarget_5fopts',['spdk_nvmf_target_opts',['../structspdk__nvmf__target__opts.html',1,'']]],
+  ['spdk_5fnvmf_5ftransport_5fops',['spdk_nvmf_transport_ops',['../structspdk__nvmf__transport__ops.html',1,'']]],
   ['spdk_5fnvmf_5ftransport_5fopts',['spdk_nvmf_transport_opts',['../structspdk__nvmf__transport__opts.html',1,'']]],
   ['spdk_5fnvmf_5ftransport_5fpoll_5fgroup_5fstat',['spdk_nvmf_transport_poll_group_stat',['../structspdk__nvmf__transport__poll__group__stat.html',1,'']]],
   ['spdk_5fnvmf_5ftransport_5fspecific_5faddress_5fsubtype',['spdk_nvmf_transport_specific_address_subtype',['../unionspdk__nvmf__transport__specific__address__subtype.html',1,'']]],

@@ -18,7 +18,8 @@ var nvme_8h =
     [ "spdk_nvme_ctrlr_flags", "nvme_8h.html#add21ceb016f09949ac6cef50e0566818", [
       [ "SPDK_NVME_CTRLR_SGL_SUPPORTED", "nvme_8h.html#add21ceb016f09949ac6cef50e0566818a06c93626e819195260a55c69dba063c6", null ],
       [ "SPDK_NVME_CTRLR_SECURITY_SEND_RECV_SUPPORTED", "nvme_8h.html#add21ceb016f09949ac6cef50e0566818a7bddfe71a101581b0daa4812fbd93268", null ],
-      [ "SPDK_NVME_CTRLR_WRR_SUPPORTED", "nvme_8h.html#add21ceb016f09949ac6cef50e0566818ab7e2345d658ff0069c99427a5e0177d3", null ]
+      [ "SPDK_NVME_CTRLR_WRR_SUPPORTED", "nvme_8h.html#add21ceb016f09949ac6cef50e0566818ab7e2345d658ff0069c99427a5e0177d3", null ],
+      [ "SPDK_NVME_CTRLR_COMPARE_AND_WRITE_SUPPORTED", "nvme_8h.html#add21ceb016f09949ac6cef50e0566818ab2a269826d7e50f062924065df9cf6ec", null ]
     ] ],
     [ "spdk_nvme_ns_flags", "nvme_8h.html#a018f3b986b4345ee0c6931be9718c163", [
       [ "SPDK_NVME_NS_DEALLOCATE_SUPPORTED", "nvme_8h.html#a018f3b986b4345ee0c6931be9718c163a80dcd48a57fa9e14efba4757300ad729", null ],

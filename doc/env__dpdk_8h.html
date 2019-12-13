@@ -162,10 +162,39 @@ Functions</h2></td></tr>
 <tr class="memitem:ae30c265cb90b9920025ee8699b9e9192"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env__dpdk_8h.html#ae30c265cb90b9920025ee8699b9e9192">spdk_env_dpdk_external_init</a> (void)</td></tr>
 <tr class="memdesc:ae30c265cb90b9920025ee8699b9e9192"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if DPDK was initialized external to the SPDK env_dpdk library.  <a href="#ae30c265cb90b9920025ee8699b9e9192">More...</a><br /></td></tr>
 <tr class="separator:ae30c265cb90b9920025ee8699b9e9192"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0167c4daf5b4cbb4065a988433357caa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env__dpdk_8h.html#a0167c4daf5b4cbb4065a988433357caa">spdk_env_dpdk_dump_mem_stats</a> (FILE *file)</td></tr>
+<tr class="memdesc:a0167c4daf5b4cbb4065a988433357caa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dump the env allocated memory to the given file.  <a href="#a0167c4daf5b4cbb4065a988433357caa">More...</a><br /></td></tr>
+<tr class="separator:a0167c4daf5b4cbb4065a988433357caa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Encapsulated DPDK specific dependencies. </p>
 </div><h2 class="groupheader">Function Documentation</h2>
+<a id="a0167c4daf5b4cbb4065a988433357caa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0167c4daf5b4cbb4065a988433357caa">&#9670;&nbsp;</a></span>spdk_env_dpdk_dump_mem_stats()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_env_dpdk_dump_mem_stats </td>
+          <td>(</td>
+          <td class="paramtype">FILE *&#160;</td>
+          <td class="paramname"><em>file</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Dump the env allocated memory to the given file. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">file</td><td>The file object to write to. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="ae30c265cb90b9920025ee8699b9e9192"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae30c265cb90b9920025ee8699b9e9192">&#9670;&nbsp;</a></span>spdk_env_dpdk_external_init()</h2>
 

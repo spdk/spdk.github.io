@@ -1,5 +1,6 @@
 var NAVTREEINDEX4 =
 {
+"iscsi__spec_8h.html#ad2c30ed17419423b79a47fae8323408aaee3fe566a4328473900e8427fe46fb88":[13,0,27,93,6],
 "iscsi__spec_8h.html#ad2c30ed17419423b79a47fae8323408aafe979808875659d11a6ec4adecf5b896":[13,0,27,93,20],
 "iscsi__spec_8h.html#ad41a73596d194d0f14b96c1aacabeb48":[13,0,27,82],
 "iscsi__spec_8h.html#adb40c0a30ecc3598a564d9d78e1c6248":[13,0,27,45],
@@ -248,6 +249,5 @@ var NAVTREEINDEX4 =
 "jsonrpc.html#rpc_vhost_scsi_controller_add_target":[3,7,5,2],
 "jsonrpc.html#rpc_vhost_scsi_controller_remove_target":[3,7,5,3],
 "jsonrpc_8h.html":[13,0,29],
-"jsonrpc_8h.html#a0eb3dec195e22ff481e317f41b1b0d95":[13,0,29,4],
-"jsonrpc_8h.html#a1e2cef86b68fbf093df54c37ba1c2a4a":[13,0,29,1]
+"jsonrpc_8h.html#a0eb3dec195e22ff481e317f41b1b0d95":[13,0,29,4]
 };
