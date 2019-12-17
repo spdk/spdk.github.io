@@ -13,6 +13,7 @@ var bdev_8h =
     [ "spdk_bdev_histogram_status_cb", "bdev_8h.html#ab34045ef60486be1ea00198807bd66c8", null ],
     [ "spdk_bdev_init_cb", "bdev_8h.html#aa6a8987bb3a1bc368881f6b81d249bd3", null ],
     [ "spdk_bdev_io_completion_cb", "bdev_8h.html#a0c5602dfd313f90032dd91683b9663e3", null ],
+    [ "spdk_bdev_io_timeout_cb", "bdev_8h.html#a83db84993554e784cbddf2d217f6ea4f", null ],
     [ "spdk_bdev_io_wait_cb", "bdev_8h.html#a9c7e19e090b8cdb22e8fc6b1984e5278", null ],
     [ "spdk_bdev_remove_cb_t", "bdev_8h.html#a51a55c97586c2d524fffcabc4d7910d6", null ],
     [ "spdk_bdev_event_type", "bdev_8h.html#a13e432c6b290dcf392335a406206fd83", [
@@ -112,6 +113,7 @@ var bdev_8h =
     [ "spdk_bdev_set_opts", "bdev_8h.html#a828be2f36a5c1e343488130c457f5bf5", null ],
     [ "spdk_bdev_set_qd_sampling_period", "bdev_8h.html#a9d37ad1d4da0bcb51ada76dbe4f4ce15", null ],
     [ "spdk_bdev_set_qos_rate_limits", "bdev_8h.html#a70520c668368881df8d7410fec9b1a08", null ],
+    [ "spdk_bdev_set_timeout", "bdev_8h.html#af0fc679da6beac3cf9677f1bf97c6974", null ],
     [ "spdk_bdev_subsystem_config_json", "bdev_8h.html#a57814ce5dc208380ebf39dab0e1ce9a8", null ],
     [ "spdk_bdev_unmap", "group__bdev__io__submit__functions.html#ga680c9c302998f7b003e2476e35d9ae4b", null ],
     [ "spdk_bdev_unmap_blocks", "group__bdev__io__submit__functions.html#ga7555fdd41019e29b40e535b72457d30b", null ],

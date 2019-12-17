@@ -240,6 +240,7 @@ var searchData=
   ['spdk_5fscsi_5funmap_5fbdesc',['spdk_scsi_unmap_bdesc',['../structspdk__scsi__unmap__bdesc.html',1,'']]],
   ['spdk_5fscsi_5fvpd_5fext_5finquiry',['spdk_scsi_vpd_ext_inquiry',['../structspdk__scsi__vpd__ext__inquiry.html',1,'']]],
   ['spdk_5fscsi_5fvpd_5fpage',['spdk_scsi_vpd_page',['../structspdk__scsi__vpd__page.html',1,'']]],
+  ['spdk_5fsock_5frequest',['spdk_sock_request',['../structspdk__sock__request.html',1,'']]],
   ['spdk_5fthread_5fstats',['spdk_thread_stats',['../structspdk__thread__stats.html',1,'']]],
   ['spdk_5ftrace_5fentry',['spdk_trace_entry',['../structspdk__trace__entry.html',1,'']]],
   ['spdk_5ftrace_5fflags',['spdk_trace_flags',['../structspdk__trace__flags.html',1,'']]],

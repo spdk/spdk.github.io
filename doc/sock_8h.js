@@ -1,5 +1,8 @@
 var sock_8h =
 [
+    [ "spdk_sock_request", "structspdk__sock__request.html", "structspdk__sock__request" ],
+    [ "__sock_request_internal", "structspdk__sock__request_1_1____sock__request__internal.html", "structspdk__sock__request_1_1____sock__request__internal" ],
+    [ "SPDK_SOCK_REQUEST_IOV", "sock_8h.html#af21c988574749f3ea04f1e78e9533aab", null ],
     [ "spdk_sock_cb", "sock_8h.html#ae297ae75e566b35635d20b959daa7741", null ],
     [ "spdk_sock_accept", "sock_8h.html#a5ea2c431e11b3e15e0fba18fb4faa954", null ],
     [ "spdk_sock_close", "sock_8h.html#a407c7aebae3d1a1556109da46a73213e", null ],
@@ -23,5 +26,6 @@ var sock_8h =
     [ "spdk_sock_set_recvbuf", "sock_8h.html#aec2209ac3d7d278cede96696116662d3", null ],
     [ "spdk_sock_set_recvlowat", "sock_8h.html#a4e8d8e1b8155267b4b0289710e3b792f", null ],
     [ "spdk_sock_set_sendbuf", "sock_8h.html#a0be72049ed7537c6f8efb99dbb44d20c", null ],
-    [ "spdk_sock_writev", "sock_8h.html#ad10e77b4f8d7ba40ec75c69247541ef7", null ]
+    [ "spdk_sock_writev", "sock_8h.html#ad10e77b4f8d7ba40ec75c69247541ef7", null ],
+    [ "spdk_sock_writev_async", "sock_8h.html#a7aa61e0b299d1f0dff273dcd48156d67", null ]
 ];

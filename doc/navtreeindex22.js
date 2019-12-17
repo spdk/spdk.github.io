@@ -1,5 +1,17 @@
 var NAVTREEINDEX22 =
 {
+"unionspdk__nvme__cc__register.html":[12,0,92],
+"unionspdk__nvme__cc__register.html#a0d237aa1570621e671975d972c3845f1":[12,0,92,1],
+"unionspdk__nvme__cc__register.html#a1f03038a3d6fd2b7f2df15b15a887ce6":[12,0,92,2],
+"unionspdk__nvme__cc__register.html#a6be5f13e66cd6fd34c1463147cdfb106":[12,0,92,4],
+"unionspdk__nvme__cc__register.html#a777a7cb16e88d976eca2f8073fde6c4b":[12,0,92,0],
+"unionspdk__nvme__cc__register.html#a882def8c3b82974ed18964df8b6b55bf":[12,0,92,7],
+"unionspdk__nvme__cc__register.html#a897917db042a1c27dfcd9a1d29753602":[12,0,92,10],
+"unionspdk__nvme__cc__register.html#aa04fbe301ce8a3d66ad4290e896549e1":[12,0,92,8],
+"unionspdk__nvme__cc__register.html#aa209d6cab6dc0a1f9e9b37f4f0a2d8b9":[12,0,92,5],
+"unionspdk__nvme__cc__register.html#ac2481b3896677b48183c0dd344760ddb":[12,0,92,9],
+"unionspdk__nvme__cc__register.html#adafe2d01d8a07098b6cb21fc9835dba6":[12,0,92,3],
+"unionspdk__nvme__cc__register.html#af8bb5fa3b86ff9cb654ec4da5fa5a31c":[12,0,92,6],
 "unionspdk__nvme__cmbloc__register.html":[12,0,93],
 "unionspdk__nvme__cmbloc__register.html#a12f58ebd196434ac7768545fde9c3340":[12,0,93,2],
 "unionspdk__nvme__cmbloc__register.html#a3c1a22c487cd5a1aad6154f404f48263":[12,0,93,3],
@@ -237,17 +249,5 @@ var NAVTREEINDEX22 =
 "unionspdk__nvme__intel__feat__power__governor.html":[12,0,135],
 "unionspdk__nvme__intel__feat__power__governor.html#a21a30353391b6569ff38a3aa0d3ae36d":[12,0,135,3],
 "unionspdk__nvme__intel__feat__power__governor.html#a87b59d2553682b8fa44b294f2a96ece1":[12,0,135,2],
-"unionspdk__nvme__intel__feat__power__governor.html#a98ff43079793e7ef7597ebb153786251":[12,0,135,0],
-"unionspdk__nvme__intel__feat__power__governor.html#aa25780c209e8e7d18133e16396cb235e":[12,0,135,1],
-"unionspdk__nvme__intel__feat__reset__timed__workload__counters.html":[12,0,136],
-"unionspdk__nvme__intel__feat__reset__timed__workload__counters.html#a6d4eb13eae3c57005a76fa79e808525c":[12,0,136,1],
-"unionspdk__nvme__intel__feat__reset__timed__workload__counters.html#a74b5ac6a6ea150d582cc269f6987757b":[12,0,136,3],
-"unionspdk__nvme__intel__feat__reset__timed__workload__counters.html#a9e39bb1660ef16c10217add156f73fed":[12,0,136,0],
-"unionspdk__nvme__intel__feat__reset__timed__workload__counters.html#abb7fd2e47365abcba82b98f12b8b95b3":[12,0,136,2],
-"unionspdk__nvme__intel__feat__smbus__address.html":[12,0,137],
-"unionspdk__nvme__intel__feat__smbus__address.html#a1e1bc8d96e7c60ff634b4b5dc28151b0":[12,0,137,1],
-"unionspdk__nvme__intel__feat__smbus__address.html#a49084bbf1cf7d967ed21e6c1dce76e9f":[12,0,137,2],
-"unionspdk__nvme__intel__feat__smbus__address.html#a70103b1857b0f6f47fc52853b2787eb3":[12,0,137,0],
-"unionspdk__nvme__intel__feat__smbus__address.html#ab9d22f2b03c70684d832df3a349c0f31":[12,0,137,4],
-"unionspdk__nvme__intel__feat__smbus__address.html#ae122cd0e8dc3d8b57632fea33ec8efa2":[12,0,137,3]
+"unionspdk__nvme__intel__feat__power__governor.html#a98ff43079793e7ef7597ebb153786251":[12,0,135,0]
 };

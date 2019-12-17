@@ -1,5 +1,7 @@
 var NAVTREEINDEX4 =
 {
+"iscsi__spec_8h.html#ad2c30ed17419423b79a47fae8323408aae3521bc387a1c631ef62633d8ad6a58b":[13,0,27,93,14],
+"iscsi__spec_8h.html#ad2c30ed17419423b79a47fae8323408aae864992fd225ecfe3409d7432ca90d00":[13,0,27,93,8],
 "iscsi__spec_8h.html#ad2c30ed17419423b79a47fae8323408aaee3fe566a4328473900e8427fe46fb88":[13,0,27,93,6],
 "iscsi__spec_8h.html#ad2c30ed17419423b79a47fae8323408aafe979808875659d11a6ec4adecf5b896":[13,0,27,93,20],
 "iscsi__spec_8h.html#ad41a73596d194d0f14b96c1aacabeb48":[13,0,27,82],
@@ -247,7 +249,5 @@ var NAVTREEINDEX4 =
 "jsonrpc.html#rpc_vhost_get_controllers_scsi_luns":[3,7,5,7,3],
 "jsonrpc.html#rpc_vhost_nvme_controller_add_ns":[3,7,5,5],
 "jsonrpc.html#rpc_vhost_scsi_controller_add_target":[3,7,5,2],
-"jsonrpc.html#rpc_vhost_scsi_controller_remove_target":[3,7,5,3],
-"jsonrpc_8h.html":[13,0,29],
-"jsonrpc_8h.html#a0eb3dec195e22ff481e317f41b1b0d95":[13,0,29,4]
+"jsonrpc.html#rpc_vhost_scsi_controller_remove_target":[3,7,5,3]
 };

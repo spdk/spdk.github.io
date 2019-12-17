@@ -197,6 +197,9 @@ Typedefs</h2></td></tr>
 <tr class="memitem:a1e2b47e30b56bc875b618beffced9662"><td class="memItemLeft" align="right" valign="top"><a id="a1e2b47e30b56bc875b618beffced9662"></a>
 typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_get_device_stat_cb</b>) (struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *bdev, struct <a class="el" href="structspdk__bdev__io__stat.html">spdk_bdev_io_stat</a> *stat, void *cb_arg, int rc)</td></tr>
 <tr class="separator:a1e2b47e30b56bc875b618beffced9662"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83db84993554e784cbddf2d217f6ea4f"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev_8h.html#a83db84993554e784cbddf2d217f6ea4f">spdk_bdev_io_timeout_cb</a>) (void *cb_arg, struct <a class="el" href="structspdk__bdev__io.html">spdk_bdev_io</a> *bdev_io)</td></tr>
+<tr class="memdesc:a83db84993554e784cbddf2d217f6ea4f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Block device channel IO timeout callback.  <a href="#a83db84993554e784cbddf2d217f6ea4f">More...</a><br /></td></tr>
+<tr class="separator:a83db84993554e784cbddf2d217f6ea4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9c7e19e090b8cdb22e8fc6b1984e5278"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev_8h.html#a9c7e19e090b8cdb22e8fc6b1984e5278">spdk_bdev_io_wait_cb</a>) (void *cb_arg)</td></tr>
 <tr class="memdesc:a9c7e19e090b8cdb22e8fc6b1984e5278"><td class="mdescLeft">&#160;</td><td class="mdescRight">Block device I/O wait callback.  <a href="#a9c7e19e090b8cdb22e8fc6b1984e5278">More...</a><br /></td></tr>
 <tr class="separator:a9c7e19e090b8cdb22e8fc6b1984e5278"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -302,6 +305,9 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_set_opts</b>
 <tr class="memitem:ac6418cfa0e9076ef7dafa7753c4c2028"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev_8h.html#ac6418cfa0e9076ef7dafa7753c4c2028">spdk_bdev_desc_get_bdev</a> (struct spdk_bdev_desc *desc)</td></tr>
 <tr class="memdesc:ac6418cfa0e9076ef7dafa7753c4c2028"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the bdev associated with a bdev descriptor.  <a href="#ac6418cfa0e9076ef7dafa7753c4c2028">More...</a><br /></td></tr>
 <tr class="separator:ac6418cfa0e9076ef7dafa7753c4c2028"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0fc679da6beac3cf9677f1bf97c6974"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev_8h.html#af0fc679da6beac3cf9677f1bf97c6974">spdk_bdev_set_timeout</a> (struct spdk_bdev_desc *desc, uint64_t timeout_in_sec, <a class="el" href="bdev_8h.html#a83db84993554e784cbddf2d217f6ea4f">spdk_bdev_io_timeout_cb</a> cb_fn, void *cb_arg)</td></tr>
+<tr class="memdesc:af0fc679da6beac3cf9677f1bf97c6974"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set a time limit for the timeout IO of the bdev and timeout callback.  <a href="#af0fc679da6beac3cf9677f1bf97c6974">More...</a><br /></td></tr>
+<tr class="separator:af0fc679da6beac3cf9677f1bf97c6974"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7cd5dff692dc162459801d5649fe7655"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev_8h.html#a7cd5dff692dc162459801d5649fe7655">spdk_bdev_io_type_supported</a> (struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *bdev, enum <a class="el" href="bdev_8h.html#a633029e24ab5ae4a689bffa2565a519f">spdk_bdev_io_type</a> io_type)</td></tr>
 <tr class="memdesc:a7cd5dff692dc162459801d5649fe7655"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check whether the block device supports the I/O type.  <a href="#a7cd5dff692dc162459801d5649fe7655">More...</a><br /></td></tr>
 <tr class="separator:a7cd5dff692dc162459801d5649fe7655"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -579,6 +585,29 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_set_opts</b>
     <tr><td class="paramname">bdev_io</td><td>Block device I/O that has completed. </td></tr>
     <tr><td class="paramname">success</td><td>True if I/O completed successfully or false if it failed; additional error information may be retrieved from bdev_io by calling <a class="el" href="bdev_8h.html#ae7e1bf90f44f042c2b2ad463b8667735" title="Get the status of bdev_io as an NVMe status code and command specific completion queue value...">spdk_bdev_io_get_nvme_status()</a> or <a class="el" href="bdev_8h.html#ac3c213b4317d5077197950253af1ac50" title="Get the status of bdev_io as a SCSI status code. ">spdk_bdev_io_get_scsi_status()</a>. </td></tr>
     <tr><td class="paramname">cb_arg</td><td>Callback argument specified when bdev_io was submitted. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a83db84993554e784cbddf2d217f6ea4f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a83db84993554e784cbddf2d217f6ea4f">&#9670;&nbsp;</a></span>spdk_bdev_io_timeout_cb</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void(* spdk_bdev_io_timeout_cb) (void *cb_arg, struct <a class="el" href="structspdk__bdev__io.html">spdk_bdev_io</a> *bdev_io)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Block device channel IO timeout callback. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cb_arg</td><td>Callback argument </td></tr>
+    <tr><td class="paramname">bdev_io</td><td>The IO cause the timeout </td></tr>
   </table>
   </dd>
 </dl>
@@ -2356,6 +2385,59 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_set_opts</b>
   </dd>
 </dl>
 <p>The limits are ordered based on the <a class="el" href="bdev_8h.html#aedfbfc44fa2113d7ee219d09a0994d93">spdk_bdev_qos_rate_limit_type</a> enum. </p>
+
+</div>
+</div>
+<a id="af0fc679da6beac3cf9677f1bf97c6974"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af0fc679da6beac3cf9677f1bf97c6974">&#9670;&nbsp;</a></span>spdk_bdev_set_timeout()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_bdev_set_timeout </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_bdev_desc *&#160;</td>
+          <td class="paramname"><em>desc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>timeout_in_sec</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="bdev_8h.html#a83db84993554e784cbddf2d217f6ea4f">spdk_bdev_io_timeout_cb</a>&#160;</td>
+          <td class="paramname"><em>cb_fn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>cb_arg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set a time limit for the timeout IO of the bdev and timeout callback. </p>
+<p>We can use this function to enable/disable the timeout handler. If the timeout_in_sec &gt; 0 then it means to enable the timeout IO handling or change the time limit. If the timeout_in_sec == 0 it means to disable the timeout IO handling. If you want to enable or change the timeout IO handle you need to specify the spdk_bdev_io_timeout_cb it means the upper user determines what to do if you meet the timeout IO, for example, you can reset the device or abort the IO. Note: This function must run in the desc's thread.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">desc</td><td>Block device descriptor. </td></tr>
+    <tr><td class="paramname">timeout_in_sec</td><td>Timeout value </td></tr>
+    <tr><td class="paramname">cb_fn</td><td>Bdev IO timeout callback </td></tr>
+    <tr><td class="paramname">cb_arg</td><td>Callback argument</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, negated errno on failure. </dd></dl>
 
 </div>
 </div>

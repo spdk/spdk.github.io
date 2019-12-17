@@ -142,6 +142,8 @@ $(document).ready(function(){initNavTree('sock_8h.html','');});
 
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Data Structures</a> &#124;
+<a href="#define-members">Macros</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
@@ -152,6 +154,21 @@ $(document).ready(function(){initNavTree('sock_8h.html','');});
 <p>TCP socket abstraction layer.  
 <a href="#details">More...</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Data Structures</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__sock__request.html">spdk_sock_request</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Anywhere this struct is used, an iovec array is assumed to immediately follow the last member in memory, without any padding.  <a href="structspdk__sock__request.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__sock__request_1_1____sock__request__internal.html">spdk_sock_request::__sock_request_internal</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">These fields are used by the socket layer and should not be modified.  <a href="structspdk__sock__request_1_1____sock__request__internal.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:af21c988574749f3ea04f1e78e9533aab"><td class="memItemLeft" align="right" valign="top"><a id="af21c988574749f3ea04f1e78e9533aab"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_SOCK_REQUEST_IOV</b>(req,  i)&#160;&#160;&#160;((struct iovec *)(((uint8_t *)req + sizeof(struct <a class="el" href="structspdk__sock__request.html">spdk_sock_request</a>)) + (sizeof(struct iovec) * i)))</td></tr>
+<tr class="separator:af21c988574749f3ea04f1e78e9533aab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
 <tr class="memitem:ae297ae75e566b35635d20b959daa7741"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sock_8h.html#ae297ae75e566b35635d20b959daa7741">spdk_sock_cb</a>) (void *arg, struct spdk_sock_group *group, struct spdk_sock *sock)</td></tr>
@@ -181,6 +198,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ad10e77b4f8d7ba40ec75c69247541ef7"><td class="memItemLeft" align="right" valign="top">ssize_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sock_8h.html#ad10e77b4f8d7ba40ec75c69247541ef7">spdk_sock_writev</a> (struct spdk_sock *sock, struct iovec *iov, int iovcnt)</td></tr>
 <tr class="memdesc:ad10e77b4f8d7ba40ec75c69247541ef7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write message to the given socket from the I/O vector array.  <a href="#ad10e77b4f8d7ba40ec75c69247541ef7">More...</a><br /></td></tr>
 <tr class="separator:ad10e77b4f8d7ba40ec75c69247541ef7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7aa61e0b299d1f0dff273dcd48156d67"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sock_8h.html#a7aa61e0b299d1f0dff273dcd48156d67">spdk_sock_writev_async</a> (struct spdk_sock *sock, struct <a class="el" href="structspdk__sock__request.html">spdk_sock_request</a> *req)</td></tr>
+<tr class="memdesc:a7aa61e0b299d1f0dff273dcd48156d67"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write data to the given socket asynchronously, calling the provided callback when the data has been written.  <a href="#a7aa61e0b299d1f0dff273dcd48156d67">More...</a><br /></td></tr>
+<tr class="separator:a7aa61e0b299d1f0dff273dcd48156d67"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aec412e1537891ed4a02c24615df619b0"><td class="memItemLeft" align="right" valign="top">ssize_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sock_8h.html#aec412e1537891ed4a02c24615df619b0">spdk_sock_readv</a> (struct spdk_sock *sock, struct iovec *iov, int iovcnt)</td></tr>
 <tr class="memdesc:aec412e1537891ed4a02c24615df619b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read message from the given socket to the I/O vector array.  <a href="#aec412e1537891ed4a02c24615df619b0">More...</a><br /></td></tr>
 <tr class="separator:aec412e1537891ed4a02c24615df619b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1102,6 +1122,43 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the length of written message on success, -1 on failure. </dd></dl>
+
+</div>
+</div>
+<a id="a7aa61e0b299d1f0dff273dcd48156d67"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7aa61e0b299d1f0dff273dcd48156d67">&#9670;&nbsp;</a></span>spdk_sock_writev_async()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_sock_writev_async </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_sock *&#160;</td>
+          <td class="paramname"><em>sock</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structspdk__sock__request.html">spdk_sock_request</a> *&#160;</td>
+          <td class="paramname"><em>req</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Write data to the given socket asynchronously, calling the provided callback when the data has been written. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sock</td><td>Socket to write to. </td></tr>
+    <tr><td class="paramname">req</td><td>The write request to submit. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

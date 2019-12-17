@@ -261,6 +261,7 @@ var annotated_dup =
     [ "spdk_scsi_unmap_bdesc", "structspdk__scsi__unmap__bdesc.html", "structspdk__scsi__unmap__bdesc" ],
     [ "spdk_scsi_vpd_ext_inquiry", "structspdk__scsi__vpd__ext__inquiry.html", "structspdk__scsi__vpd__ext__inquiry" ],
     [ "spdk_scsi_vpd_page", "structspdk__scsi__vpd__page.html", "structspdk__scsi__vpd__page" ],
+    [ "spdk_sock_request", "structspdk__sock__request.html", "structspdk__sock__request" ],
     [ "spdk_thread_stats", "structspdk__thread__stats.html", "structspdk__thread__stats" ],
     [ "spdk_trace_entry", "structspdk__trace__entry.html", "structspdk__trace__entry" ],
     [ "spdk_trace_flags", "structspdk__trace__flags.html", "structspdk__trace__flags" ],
