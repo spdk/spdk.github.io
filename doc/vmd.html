@@ -197,7 +197,8 @@ Applications w/o application framework</h1>
 <p>Applications need to call <a class="el" href="vmd_8h.html#a8ab093f9cdad46a637fac6aa07739ace" title="Enumerate VMD devices and hook them into the spdk pci subsystem. ">spdk_vmd_init()</a> to enumerate NVMe devices behind the VMD prior to calling spdk_nvme_(probe|connect). To support hot plugs <a class="el" href="vmd_8h.html#a290d82c8bf3daf4a4d9b8aa414142e2f" title="Checks for hotplug/hotremove events of the devices behind the VMD. ">spdk_vmd_hotplug_monitor()</a> needs to be called periodically.</p>
 <h1><a class="anchor" id="vmd_led"></a>
 LED management</h1>
-<p>VMD LED utility in the <a href="https://github.com/spdk/spdk/tree/master/examples/vmd/led">examples/vmd/led</a> could be used to set LED states. </p>
+<p>VMD LED utility in the <a href="https://github.com/spdk/spdk/tree/master/examples/vmd/led">examples/vmd/led</a> could be used to set LED states.</p>
+<p>In order to verify that a platform is correctly configured to support LED management, ledctl(8) can be utilized. For instructions on how to use it, consult the manual page of this utility. </p>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 </div>
