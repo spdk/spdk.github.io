@@ -7,6 +7,7 @@ var searchData=
   ['spdk_5fbdev_5fio',['spdk_bdev_io',['../structspdk__bdev__io.html',1,'']]],
   ['spdk_5fbdev_5fio_5fstat',['spdk_bdev_io_stat',['../structspdk__bdev__io__stat.html',1,'']]],
   ['spdk_5fbdev_5fio_5fwait_5fentry',['spdk_bdev_io_wait_entry',['../structspdk__bdev__io__wait__entry.html',1,'']]],
+  ['spdk_5fbdev_5fmedia_5fevent',['spdk_bdev_media_event',['../structspdk__bdev__media__event.html',1,'']]],
   ['spdk_5fbdev_5fmodule',['spdk_bdev_module',['../structspdk__bdev__module.html',1,'']]],
   ['spdk_5fbdev_5fopts',['spdk_bdev_opts',['../structspdk__bdev__opts.html',1,'']]],
   ['spdk_5fbdev_5fpart',['spdk_bdev_part',['../structspdk__bdev__part.html',1,'']]],

@@ -157,6 +157,9 @@ $(document).ready(function(){initNavTree('bdev_8h.html','');});
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev__media__event.html">spdk_bdev_media_event</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Media management event details.  <a href="structspdk__bdev__media__event.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev__io__stat.html">spdk_bdev_io_stat</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev__opts.html">spdk_bdev_opts</a></td></tr>
@@ -213,7 +216,8 @@ typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_h
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
 <tr class="memitem:a13e432c6b290dcf392335a406206fd83"><td class="memItemLeft" align="right" valign="top"><a id="a13e432c6b290dcf392335a406206fd83"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev_8h.html#a13e432c6b290dcf392335a406206fd83">spdk_bdev_event_type</a> { <b>SPDK_BDEV_EVENT_REMOVE</b>, 
-<b>SPDK_BDEV_EVENT_RESIZE</b>
+<b>SPDK_BDEV_EVENT_RESIZE</b>, 
+<b>SPDK_BDEV_EVENT_MEDIA_MANAGEMENT</b>
  }</td></tr>
 <tr class="memdesc:a13e432c6b290dcf392335a406206fd83"><td class="mdescLeft">&#160;</td><td class="mdescRight">Asynchronous event type. <br /></td></tr>
 <tr class="separator:a13e432c6b290dcf392335a406206fd83"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -494,6 +498,9 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_set_opts</b>
 <tr class="memitem:aacf15571883da5a441297b5090e6aaf5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev_8h.html#aacf15571883da5a441297b5090e6aaf5">spdk_bdev_histogram_get</a> (struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *bdev, struct <a class="el" href="structspdk__histogram__data.html">spdk_histogram_data</a> *histogram, spdk_bdev_histogram_data_cb cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:aacf15571883da5a441297b5090e6aaf5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get aggregated histogram data from a bdev.  <a href="#aacf15571883da5a441297b5090e6aaf5">More...</a><br /></td></tr>
 <tr class="separator:aacf15571883da5a441297b5090e6aaf5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af359a282820d73a253ffbbe127a30b96"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev_8h.html#af359a282820d73a253ffbbe127a30b96">spdk_bdev_get_media_events</a> (struct spdk_bdev_desc *bdev_desc, struct <a class="el" href="structspdk__bdev__media__event.html">spdk_bdev_media_event</a> *events, size_t max_events)</td></tr>
+<tr class="memdesc:af359a282820d73a253ffbbe127a30b96"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves media events.  <a href="#af359a282820d73a253ffbbe127a30b96">More...</a><br /></td></tr>
+<tr class="separator:af359a282820d73a253ffbbe127a30b96"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Block device abstraction layer. </p>
@@ -1222,6 +1229,52 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_set_opts</b>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Size of metadata for this bdev in bytes. </dd></dl>
+
+</div>
+</div>
+<a id="af359a282820d73a253ffbbe127a30b96"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af359a282820d73a253ffbbe127a30b96">&#9670;&nbsp;</a></span>spdk_bdev_get_media_events()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t spdk_bdev_get_media_events </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_bdev_desc *&#160;</td>
+          <td class="paramname"><em>bdev_desc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structspdk__bdev__media__event.html">spdk_bdev_media_event</a> *&#160;</td>
+          <td class="paramname"><em>events</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>max_events</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Retrieves media events. </p>
+<p>Can only be called from the context of SPDK_BDEV_EVENT_MEDIA_MANAGEMENT event callback. These events are sent by devices exposing raw access to the physical medium (e.g. Open Channel SSD).</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bdev_desc</td><td>Block device descriptor </td></tr>
+    <tr><td class="paramname">events</td><td>Array of media mangement event descriptors </td></tr>
+    <tr><td class="paramname">max_events</td><td>Size of the events array</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>number of events retrieved </dd></dl>
 
 </div>
 </div>

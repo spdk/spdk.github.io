@@ -267,6 +267,12 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 <tr class="memitem:a9c26cbd781063f5ee627d6aba2c73fe3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="thread_8h.html#a9c26cbd781063f5ee627d6aba2c73fe3">spdk_poller_unregister</a> (struct spdk_poller **ppoller)</td></tr>
 <tr class="memdesc:a9c26cbd781063f5ee627d6aba2c73fe3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unregister a poller on the current thread.  <a href="#a9c26cbd781063f5ee627d6aba2c73fe3">More...</a><br /></td></tr>
 <tr class="separator:a9c26cbd781063f5ee627d6aba2c73fe3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f0c05dd1c9cb0b31eee89213b89f3c3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="thread_8h.html#a0f0c05dd1c9cb0b31eee89213b89f3c3">spdk_poller_pause</a> (struct spdk_poller *poller)</td></tr>
+<tr class="memdesc:a0f0c05dd1c9cb0b31eee89213b89f3c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pause a poller on the current thread.  <a href="#a0f0c05dd1c9cb0b31eee89213b89f3c3">More...</a><br /></td></tr>
+<tr class="separator:a0f0c05dd1c9cb0b31eee89213b89f3c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3de0ffe9dfc29361b092d467d37017e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="thread_8h.html#ab3de0ffe9dfc29361b092d467d37017e">spdk_poller_resume</a> (struct spdk_poller *poller)</td></tr>
+<tr class="memdesc:ab3de0ffe9dfc29361b092d467d37017e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resume a poller on the current thread.  <a href="#ab3de0ffe9dfc29361b092d467d37017e">More...</a><br /></td></tr>
+<tr class="separator:ab3de0ffe9dfc29361b092d467d37017e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a75f5c71056d8c39ff05a6610d55edcf5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="thread_8h.html#a75f5c71056d8c39ff05a6610d55edcf5">spdk_io_device_register</a> (void *io_device, <a class="el" href="thread_8h.html#aed1d14292cfee8553d4a1ebb519b210a">spdk_io_channel_create_cb</a> create_cb, <a class="el" href="thread_8h.html#a75aa6a61877f23f79bb75c8fc5e68202">spdk_io_channel_destroy_cb</a> destroy_cb, uint32_t ctx_size, const char *name)</td></tr>
 <tr class="memdesc:a75f5c71056d8c39ff05a6610d55edcf5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register the opaque io_device context as an I/O device.  <a href="#a75f5c71056d8c39ff05a6610d55edcf5">More...</a><br /></td></tr>
 <tr class="separator:a75f5c71056d8c39ff05a6610d55edcf5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1015,6 +1021,33 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 
 </div>
 </div>
+<a id="a0f0c05dd1c9cb0b31eee89213b89f3c3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0f0c05dd1c9cb0b31eee89213b89f3c3">&#9670;&nbsp;</a></span>spdk_poller_pause()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_poller_pause </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_poller *&#160;</td>
+          <td class="paramname"><em>poller</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Pause a poller on the current thread. </p>
+<p>The poller is not run until it is resumed with <a class="el" href="thread_8h.html#ab3de0ffe9dfc29361b092d467d37017e" title="Resume a poller on the current thread. ">spdk_poller_resume()</a>. It is perfectly fine to pause an already paused poller.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">poller</td><td>The poller to pause. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a6b3e883ddce01ae8d93541304d1e9126"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6b3e883ddce01ae8d93541304d1e9126">&#9670;&nbsp;</a></span>spdk_poller_register()</h2>
 
@@ -1058,6 +1091,33 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>a pointer to the poller registered on the current thread on success or NULL on failure. </dd></dl>
+
+</div>
+</div>
+<a id="ab3de0ffe9dfc29361b092d467d37017e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab3de0ffe9dfc29361b092d467d37017e">&#9670;&nbsp;</a></span>spdk_poller_resume()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_poller_resume </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_poller *&#160;</td>
+          <td class="paramname"><em>poller</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Resume a poller on the current thread. </p>
+<p>Resumes a poller paused with <a class="el" href="thread_8h.html#a0f0c05dd1c9cb0b31eee89213b89f3c3" title="Pause a poller on the current thread. ">spdk_poller_pause()</a>. It is perfectly fine to resume an unpaused poller.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">poller</td><td>The poller to resume. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

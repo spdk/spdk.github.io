@@ -355,6 +355,12 @@ typedef&#160;</td><td class="memItemRight" valign="bottom"><b>TAILQ_HEAD</b> (bd
 <tr class="memitem:ac824d6bb007d80f33425a6cd81b60ce4"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev__module_8h.html#ac824d6bb007d80f33425a6cd81b60ce4">spdk_bdev_part_get_offset_blocks</a> (struct <a class="el" href="structspdk__bdev__part.html">spdk_bdev_part</a> *part)</td></tr>
 <tr class="memdesc:ac824d6bb007d80f33425a6cd81b60ce4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return this part's offset from the beginning of the base bdev.  <a href="#ac824d6bb007d80f33425a6cd81b60ce4">More...</a><br /></td></tr>
 <tr class="separator:ac824d6bb007d80f33425a6cd81b60ce4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae45503dc9070d0d9939eed65447deef3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev__module_8h.html#ae45503dc9070d0d9939eed65447deef3">spdk_bdev_push_media_events</a> (struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *bdev, const struct <a class="el" href="structspdk__bdev__media__event.html">spdk_bdev_media_event</a> *events, size_t num_events)</td></tr>
+<tr class="memdesc:ae45503dc9070d0d9939eed65447deef3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Push media management events.  <a href="#ae45503dc9070d0d9939eed65447deef3">More...</a><br /></td></tr>
+<tr class="separator:ae45503dc9070d0d9939eed65447deef3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82dd20b5702f2f97c1f8eec5cdc6d0d5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev__module_8h.html#a82dd20b5702f2f97c1f8eec5cdc6d0d5">spdk_bdev_notify_media_management</a> (struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *bdev)</td></tr>
+<tr class="memdesc:a82dd20b5702f2f97c1f8eec5cdc6d0d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send SPDK_BDEV_EVENT_MEDIA_MANAGEMENT to all open descriptors that have pending media events.  <a href="#a82dd20b5702f2f97c1f8eec5cdc6d0d5">More...</a><br /></td></tr>
+<tr class="separator:a82dd20b5702f2f97c1f8eec5cdc6d0d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Block Device Module Interface. </p>
@@ -1166,6 +1172,32 @@ typedef&#160;</td><td class="memItemRight" valign="bottom"><b>TAILQ_HEAD</b> (bd
 
 </div>
 </div>
+<a id="a82dd20b5702f2f97c1f8eec5cdc6d0d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a82dd20b5702f2f97c1f8eec5cdc6d0d5">&#9670;&nbsp;</a></span>spdk_bdev_notify_media_management()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_bdev_notify_media_management </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *&#160;</td>
+          <td class="paramname"><em>bdev</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Send SPDK_BDEV_EVENT_MEDIA_MANAGEMENT to all open descriptors that have pending media events. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bdev</td><td>Block device </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a338144e9efbe3da7b78f034f2bdb1f93"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a338144e9efbe3da7b78f034f2bdb1f93">&#9670;&nbsp;</a></span>spdk_bdev_part_base_construct()</h2>
 
@@ -1701,6 +1733,52 @@ typedef&#160;</td><td class="memItemRight" valign="bottom"><b>TAILQ_HEAD</b> (bd
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 on success or non-zero if submit request failed. </dd></dl>
+
+</div>
+</div>
+<a id="ae45503dc9070d0d9939eed65447deef3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae45503dc9070d0d9939eed65447deef3">&#9670;&nbsp;</a></span>spdk_bdev_push_media_events()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_bdev_push_media_events </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *&#160;</td>
+          <td class="paramname"><em>bdev</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const struct <a class="el" href="structspdk__bdev__media__event.html">spdk_bdev_media_event</a> *&#160;</td>
+          <td class="paramname"><em>events</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>num_events</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Push media management events. </p>
+<p>To send the notification that new events are available, spdk_bdev_notify_media_management needs to be called.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bdev</td><td>Block device </td></tr>
+    <tr><td class="paramname">events</td><td>Array of media events </td></tr>
+    <tr><td class="paramname">num_events</td><td>Size of the events array</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>number of events pushed or negative errno in case of failure </dd></dl>
 
 </div>
 </div>

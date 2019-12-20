@@ -16,6 +16,7 @@ var searchData=
   ['md_5fstart',['md_start',['../structspdk__nvme__ns__data.html#a1295065f7156b27aeb749b1ef5c0cdc7',1,'spdk_nvme_ns_data']]],
   ['mdts',['mdts',['../structspdk__nvme__ctrlr__data.html#aad0681365b9524dc8a1dca2d48a6c046',1,'spdk_nvme_ctrlr_data']]],
   ['measured_5fqueue_5fdepth',['measured_queue_depth',['../structspdk__bdev_1_1____bdev__internal__fields.html#a544e45acd435eb8c7269f08166841f41',1,'spdk_bdev::__bdev_internal_fields']]],
+  ['media_5fevents',['media_events',['../structspdk__bdev.html#acec83a7ec7f21c7a88d644dad2f0a8fe',1,'spdk_bdev']]],
   ['medium_5fpriority_5fweight',['medium_priority_weight',['../structspdk__nvme__ctrlr__opts.html#a27a08a6255c8bd76a4476e08e1ed1816',1,'spdk_nvme_ctrlr_opts']]],
   ['mjr',['mjr',['../structspdk__ocssd__geometry__data.html#a1e42dcab27a59b02df913acc08e129b4',1,'spdk_ocssd_geometry_data::mjr()'],['../unionspdk__nvme__vs__register.html#a605cba0b2c6abdee150cb3a6babc4bb8',1,'spdk_nvme_vs_register::mjr()']]],
   ['mn',['mn',['../structspdk__nvme__ctrlr__data.html#acbf277bda70785f22e70aae2196c2e92',1,'spdk_nvme_ctrlr_data']]],

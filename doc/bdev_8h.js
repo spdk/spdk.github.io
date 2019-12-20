@@ -1,5 +1,6 @@
 var bdev_8h =
 [
+    [ "spdk_bdev_media_event", "structspdk__bdev__media__event.html", "structspdk__bdev__media__event" ],
     [ "spdk_bdev_io_stat", "structspdk__bdev__io__stat.html", "structspdk__bdev__io__stat" ],
     [ "spdk_bdev_opts", "structspdk__bdev__opts.html", "structspdk__bdev__opts" ],
     [ "spdk_bdev_io_wait_entry", "structspdk__bdev__io__wait__entry.html", "structspdk__bdev__io__wait__entry" ],
@@ -18,7 +19,8 @@ var bdev_8h =
     [ "spdk_bdev_remove_cb_t", "bdev_8h.html#a51a55c97586c2d524fffcabc4d7910d6", null ],
     [ "spdk_bdev_event_type", "bdev_8h.html#a13e432c6b290dcf392335a406206fd83", [
       [ "SPDK_BDEV_EVENT_REMOVE", "bdev_8h.html#a13e432c6b290dcf392335a406206fd83a89f4612602ac5a085667f620b767f9b9", null ],
-      [ "SPDK_BDEV_EVENT_RESIZE", "bdev_8h.html#a13e432c6b290dcf392335a406206fd83acb97bc25f59f9d5ee74131c74d46febc", null ]
+      [ "SPDK_BDEV_EVENT_RESIZE", "bdev_8h.html#a13e432c6b290dcf392335a406206fd83acb97bc25f59f9d5ee74131c74d46febc", null ],
+      [ "SPDK_BDEV_EVENT_MEDIA_MANAGEMENT", "bdev_8h.html#a13e432c6b290dcf392335a406206fd83ac1bed935ec177b0aa93e5c1c9780d22e", null ]
     ] ],
     [ "spdk_bdev_io_type", "bdev_8h.html#a633029e24ab5ae4a689bffa2565a519f", [
       [ "SPDK_BDEV_IO_TYPE_INVALID", "bdev_8h.html#a633029e24ab5ae4a689bffa2565a519fa9772bec2b4589e73cb1482b22bf1d830", null ],
@@ -69,6 +71,7 @@ var bdev_8h =
     [ "spdk_bdev_get_io_stat", "bdev_8h.html#ab1ba28ba382edd1d792d51a054eb3aa2", null ],
     [ "spdk_bdev_get_io_time", "bdev_8h.html#a8a082eb89d57860b2e57ebf7f5b3caa2", null ],
     [ "spdk_bdev_get_md_size", "bdev_8h.html#abc3537d0315100b24da6acc95929e849", null ],
+    [ "spdk_bdev_get_media_events", "bdev_8h.html#af359a282820d73a253ffbbe127a30b96", null ],
     [ "spdk_bdev_get_name", "bdev_8h.html#ad97a853dcb945bf004817424b7aa28af", null ],
     [ "spdk_bdev_get_num_blocks", "bdev_8h.html#a86568eca8f0b4d0dc9bc59c5138fc7a5", null ],
     [ "spdk_bdev_get_optimal_io_boundary", "bdev_8h.html#aa79625889e23318204d235da36a4fa02", null ],
