@@ -233,10 +233,12 @@ git branch -D tmp # 清理'tmp'分支
 
 SPDK核心维护人员的主要职责是为SPDK项目提供技术监督。目前，SPDK核心维护者有：
 
-* Jim Harris (IRC: jimharris)
-* Changpeng Liu (IRC: changpe1)
-* Shuhei Matsumoto (IRC: Shuhei)
-* Ben Walker (IRC: bwalker)
+* Jim Harris
+* Changpeng Liu
+* Alexey Marchuk
+* Shuhei Matsumoto
+* Ben Walker
+* Tomek Zawadzki
 
 技术监督绝大部分是通过审查和批准补丁来实现的。补丁必须获得两个核心维护人员的+2票，并且从SPDK自动测试池中获得+1票，才能审批通过。只有核心维护人员有权利投出+2票和审批通过补丁。如果核心维护人员审阅了补丁，但是认为自己对这个补丁涉及的领域不熟悉，不能提供专业意见，也可以投出+1票。
 
