@@ -161,10 +161,11 @@ v20.01: (Upcoming Release)</h1>
 <p><code>spdk_pipe</code>, a new utility for buffering data from sockets or files for parsing has been added. The public API is available at <code><a class="el" href="pipe_8h.html" title="A pipe that is intended for buffering data between a source, such as a socket, and a sink...">include/spdk/pipe.h</a></code>.</p>
 <h2>nvme</h2>
 <p><code>delayed_pcie_doorbell</code> parameter in <code><a class="el" href="structspdk__nvme__io__qpair__opts.html" title="NVMe I/O queue pair initialization options. ">spdk_nvme_io_qpair_opts</a></code> was renamed to <code>delay_cmd_submit</code> to allow reuse in other transports.</p>
+<p>Added RDMA WR batching to NVMf RDMA initiator. Send and receive WRs are chained together and posted with a single call to ibv_post_send(receive) in the next call to qpair completion processing function. Batching is controlled by 'delay_cmd_submit' qpair option.</p>
 <h2>rpc</h2>
 <p>Added optional 'delay_cmd_submit' parameter to 'bdev_nvme_set_options' RPC method.</p>
 <h2>dpdk</h2>
-<p>DPDK submodule updated to include fix for vhost CVE-2019-14818.</p>
+<p>Updated DPDK submodule to DPDK 19.11.</p>
 <h1><a class="anchor" id="changelog-v19-10"></a>
 v19.10:</h1>
 <h2>rpc</h2>

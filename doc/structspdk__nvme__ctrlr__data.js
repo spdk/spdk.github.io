@@ -128,7 +128,7 @@ var structspdk__nvme__ctrlr__data =
     [ "sqes", "structspdk__nvme__ctrlr__data.html#aa0fd60bef8867156bf5522fb0305909b", null ],
     [ "sr_iov", "structspdk__nvme__ctrlr__data.html#a2d22ae5ba380cbfc4e670bec6ef2cccc", null ],
     [ "ssvid", "structspdk__nvme__ctrlr__data.html#a98bca935ffa3fbc83fd504055b8a228f", null ],
-    [ "subnqn", "structspdk__nvme__ctrlr__data.html#a09190cfceb68b41a8f3bc78385efd332", null ],
+    [ "subnqn", "structspdk__nvme__ctrlr__data.html#af408989ab2a10a583c118d0bb422c4ea", null ],
     [ "supported", "structspdk__nvme__ctrlr__data.html#a67327a265027227d37f9b7e947c06cfc", null ],
     [ "supported", "structspdk__nvme__ctrlr__data.html#ac4e4ebe470c1dead291ec42598c45bab", null ],
     [ "supported", "structspdk__nvme__ctrlr__data.html#a8f05d07451b8320f77ed0f546d596866", null ],
