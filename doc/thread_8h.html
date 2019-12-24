@@ -1656,7 +1656,7 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 </div><div class="memdoc">
 
 <p>Send a message to the given thread. </p>
-<p>The message may be sent asynchronously - i.e. spdk_thread_send_msg may return prior to <code>fn</code> being called.</p>
+<p>The message will be sent asynchronously - i.e. spdk_thread_send_msg will always return prior to <code>fn</code> being called.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">thread</td><td>The target thread. </td></tr>
