@@ -19,6 +19,40 @@
     },
     {
       "key": {
+        "uuid": "0cbc04d0_ade7aeb7",
+        "filename": "_posts/2019-12-20-us_summit_announce.md",
+        "patchSetId": 3
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 1010531
+      },
+      "writtenOn": "2019-12-27T18:18:31Z",
+      "side": 1,
+      "message": "PMDK, and VTune\n\nOxford commas matter!",
+      "revId": "420b537a91e4adcec1dbd4ae5135af8c227972b6",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "cf9b9941_0bc7eacb",
+        "filename": "_posts/2019-12-20-us_summit_announce.md",
+        "patchSetId": 3
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 1010531
+      },
+      "writtenOn": "2019-12-27T18:18:31Z",
+      "side": 1,
+      "message": "deep dives, and tech tutorials",
+      "revId": "420b537a91e4adcec1dbd4ae5135af8c227972b6",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "888cac9d_e513fdfa",
         "filename": "_posts/2019-12-20-us_summit_announce.md",
         "patchSetId": 3
