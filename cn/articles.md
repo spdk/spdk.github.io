@@ -6,6 +6,8 @@ lang: cn
 
 **SPDK总体技术介绍**
 
+* [SPDK block device 及其编程的简单介绍](https://mp.weixin.qq.com/s?__biz=MzI3NDA4ODY4MA==&mid=2653336658&idx=1&sn=6c81de4b2897fd78bfdabab9c1c316dd&chksm=f0cb43d5c7bccac3a531867010e43e32abe13c5f8607e61e458f19594402ae5974fd326f7960&token=1050568646&lang=zh_CN#rd)
+
 * [SPDK线程模型解析](https://mp.weixin.qq.com/s?__biz=MzI3NDA4ODY4MA==&mid=2653336301&idx=1&sn=893bceb88d7e775863ebc006e83f5532&chksm=f0cb456ac7bccc7cb720366f69941164e4e80cd5ceaef33bcbe16e7c761046aadc6e7137e4d7&token=1179202807&lang=zh_CN#rd)
 
 * [SPDK virtio 驱动模块介绍及使用](https://mp.weixin.qq.com/s?__biz=MzI3NDA4ODY4MA==&mid=2653336450&idx=1&sn=3a15cf91138031bec34abac774a41506&chksm=f0cb4405c7bccd1306a867d817a7691243814d83d7cb7b43f0f5b6677112b78bcd6a0f8efeba&token=765211277&lang=zh_CN#rd)
@@ -21,6 +23,8 @@ lang: cn
 ******
 
 **SPDK NVMe-oF target/initiator**
+
+* [SPDK NVMe-oF TCP transport 目前优化的一些工作和方向](https://mp.weixin.qq.com/s?__biz=MzI3NDA4ODY4MA==&mid=2653336799&idx=1&sn=cfcfd3a2688e147bb3ea0e6ab4d31226&chksm=f0cb4358c7bcca4e67d4cbebfa6ad3eb5419c5c1daf21d1d122b7615be6c8c5a1347bea1a0a2&token=1050568646&lang=zh_CN#rd)
 
 * [SPDK NVMe Reservation使用简介](https://mp.weixin.qq.com/s?__biz=MzI3NDA4ODY4MA==&mid=2653335852&idx=1&sn=5e08566473a1e2f14b9d1f697c4995cc&chksm=f0cb46abc7bccfbdc9aa982f87dc851a59c6bddb321f4d02f682549426226eca2ee1d973a32b&token=2145434935&lang=zh_CN#rd)
 
@@ -47,6 +51,8 @@ lang: cn
 ******
 
 **SPDK vhost**
+
+* [SPDK virtio 驱动模块介绍及使用](https://mp.weixin.qq.com/s?__biz=MzI3NDA4ODY4MA==&mid=2653336450&idx=1&sn=3a15cf91138031bec34abac774a41506&chksm=f0cb4405c7bccd1306a867d817a7691243814d83d7cb7b43f0f5b6677112b78bcd6a0f8efeba&token=1050568646&lang=zh_CN#rd)
 
 * [SPDK Vhost对Live Migration的支持](https://mp.weixin.qq.com/s?__biz=MzI3NDA4ODY4MA==&mid=2653334939&idx=1&sn=012fb74c571aed8093a5a17a38381f8d&chksm=f0cb5a1cc7bcd30a869d87df0e6e7efe2491ec4f3c62eff6d028961e9c6d41d056f00c47c6f9&token=431082989&lang=zh_CN#rd)
 
@@ -83,6 +89,8 @@ lang: cn
 ******
 
 **SPDK和NVMe新特性**
+
+* [唯快不破？ 只快可不够！NVMe 安全升级 —— SPDK 引入NVMe Opal bdev 支持](https://mp.weixin.qq.com/s?__biz=MzI3NDA4ODY4MA==&mid=2653336581&idx=1&sn=bb3ca69cee39576fe4c46c692d551060&chksm=f0cb4382c7bcca948e9ca458c7a036c8fe353916eb77b537ad69c10b6cde566a8c0d95607498&token=1050568646&lang=zh_CN#rd)
 
 * [一文读懂SPDK用户态hotplug处理](https://mp.weixin.qq.com/s?__biz=MzI3NDA4ODY4MA==&mid=2653335398&idx=1&sn=a5576049b7386c21a3c5ebe55cc6d11f&chksm=f0cb58e1c7bcd1f72f25655be52ec26af4fb8066556e7602aa5a2ae7cdcdd1213a2ca6aaa8fe&token=533641352&lang=zh_CN#rd)
 
