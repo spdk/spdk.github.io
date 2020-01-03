@@ -1,5 +1,6 @@
 var NAVTREEINDEX13 =
 {
+"structspdk__app__opts.html#a8b1f0881077c7cba8c846a150364dee3":[12,0,21,8],
 "structspdk__app__opts.html#a8fcfa061da5b1b5bfd9900c3074bf95f":[12,0,21,4],
 "structspdk__app__opts.html#a93ac293aa665a3628d0286745799c5a5":[12,0,21,22],
 "structspdk__app__opts.html#aa167c7261b91f10450ac6f1bc0700c1e":[12,0,21,6],
@@ -248,6 +249,5 @@ var NAVTREEINDEX13 =
 "structspdk__d0__geo__features.html#a8c2a260a37e03b1fdb962eb1568ac5da":[12,0,45,8],
 "structspdk__d0__geo__features.html#ada4acd2456fd328ef715e5595db2ed53":[12,0,45,1],
 "structspdk__d0__geo__features.html#aea599193f9376c97a67ddbbb9767b4f5":[12,0,45,4],
-"structspdk__d0__geo__features.html#af75a3eb7e681cad8637beac4ff2a1a99":[12,0,45,6],
-"structspdk__d0__header.html":[12,0,46]
+"structspdk__d0__geo__features.html#af75a3eb7e681cad8637beac4ff2a1a99":[12,0,45,6]
 };

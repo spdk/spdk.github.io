@@ -1610,7 +1610,7 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 </div><div class="memdoc">
 
 <p>Perform one iteration worth of processing on the thread. </p>
-<p>This includes both expired and continuous pollers as well as messages.</p>
+<p>This includes both expired and continuous pollers as well as messages. If the thread has exited, return immediately.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">thread</td><td>The thread to process </td></tr>
@@ -1619,7 +1619,7 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>1 if work was done. 0 if no work was done. -1 if thread has exited. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>1 if work was done. 0 if no work was done. </dd></dl>
 
 </div>
 </div>

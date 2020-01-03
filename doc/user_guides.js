@@ -125,6 +125,7 @@ var user_guides =
         [ "rpc_get_methods", "jsonrpc.html#rpc_rpc_get_methods", null ],
         [ "framework_get_subsystems", "jsonrpc.html#rpc_framework_get_subsystems", null ],
         [ "framework_get_config", "jsonrpc.html#rpc_framework_get_config", null ],
+        [ "framework_get_reactors", "jsonrpc.html#rpc_framework_get_reactors", null ],
         [ "thread_get_stats", "jsonrpc.html#rpc_thread_get_stats", null ]
       ] ],
       [ "Block Device Abstraction Layer", "jsonrpc.html#jsonrpc_components_bdev", [

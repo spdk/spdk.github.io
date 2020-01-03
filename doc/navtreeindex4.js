@@ -187,6 +187,7 @@ var NAVTREEINDEX4 =
 "jsonrpc.html#rpc_blobfs_mount":[3,7,8,2],
 "jsonrpc.html#rpc_blobfs_set_cache_size":[3,7,8,3],
 "jsonrpc.html#rpc_framework_get_config":[3,7,1,6],
+"jsonrpc.html#rpc_framework_get_reactors":[3,7,1,7],
 "jsonrpc.html#rpc_framework_get_subsystems":[3,7,1,5],
 "jsonrpc.html#rpc_framework_monitor_context_switch":[3,7,1,1],
 "jsonrpc.html#rpc_framework_start_init":[3,7,1,2],
@@ -239,7 +240,7 @@ var NAVTREEINDEX4 =
 "jsonrpc.html#rpc_rpc_get_methods":[3,7,1,4],
 "jsonrpc.html#rpc_spdk_get_version":[3,7,8,5],
 "jsonrpc.html#rpc_spdk_kill_instance":[3,7,1,0],
-"jsonrpc.html#rpc_thread_get_stats":[3,7,1,7],
+"jsonrpc.html#rpc_thread_get_stats":[3,7,1,8],
 "jsonrpc.html#rpc_vhost_controller_set_coalescing":[3,7,5,0],
 "jsonrpc.html#rpc_vhost_create_blk_controller":[3,7,5,6],
 "jsonrpc.html#rpc_vhost_create_nvme_controller":[3,7,5,4],
@@ -248,6 +249,5 @@ var NAVTREEINDEX4 =
 "jsonrpc.html#rpc_vhost_get_controllers":[3,7,5,7],
 "jsonrpc.html#rpc_vhost_get_controllers_blk":[3,7,5,7,1],
 "jsonrpc.html#rpc_vhost_get_controllers_nvme":[3,7,5,7,4],
-"jsonrpc.html#rpc_vhost_get_controllers_response":[3,7,5,7,0],
-"jsonrpc.html#rpc_vhost_get_controllers_scsi":[3,7,5,7,2]
+"jsonrpc.html#rpc_vhost_get_controllers_response":[3,7,5,7,0]
 };

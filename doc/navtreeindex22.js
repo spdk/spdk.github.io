@@ -1,5 +1,6 @@
 var NAVTREEINDEX22 =
 {
+"unionspdk__nvme__cap__register.html#a37a043c068e8992317712cc7d95e9249":[12,0,92,10],
 "unionspdk__nvme__cap__register.html#a4b8860fc60a762e66979666ae1ac3563":[12,0,92,12],
 "unionspdk__nvme__cap__register.html#a54fe32e6dcbb7e98f67b833a1aa3ab79":[12,0,92,1],
 "unionspdk__nvme__cap__register.html#a6d6c8f5ede010b705296692e72e0b645":[12,0,92,13],
@@ -248,6 +249,5 @@ var NAVTREEINDEX22 =
 "unionspdk__nvme__feat__write__atomicity.html":[12,0,128],
 "unionspdk__nvme__feat__write__atomicity.html#a4a67a4f708c90c0316820b707bb398fd":[12,0,128,1],
 "unionspdk__nvme__feat__write__atomicity.html#a8fd192e661b226064e4890a49c16ea6e":[12,0,128,2],
-"unionspdk__nvme__feat__write__atomicity.html#ada4a9129ffb571abc00b73298e8bf957":[12,0,128,3],
-"unionspdk__nvme__feat__write__atomicity.html#ae7c708eaf87fe8902f8171f2a157d0c6":[12,0,128,0]
+"unionspdk__nvme__feat__write__atomicity.html#ada4a9129ffb571abc00b73298e8bf957":[12,0,128,3]
 };
