@@ -1,5 +1,15 @@
 var NAVTREEINDEX4 =
 {
+"iscsi__spec_8h.html#ad2c30ed17419423b79a47fae8323408aa5de75df64b7154eefacce1f9e4e8734f":[13,0,27,93,12],
+"iscsi__spec_8h.html#ad2c30ed17419423b79a47fae8323408aa6fe94a2c069543f1ef7f3a587ed699f4":[13,0,27,93,22],
+"iscsi__spec_8h.html#ad2c30ed17419423b79a47fae8323408aa763fa11f089c7423127fdf73a3b2bff4":[13,0,27,93,16],
+"iscsi__spec_8h.html#ad2c30ed17419423b79a47fae8323408aa8d81b89e47c968366a9de7e505516bf3":[13,0,27,93,4],
+"iscsi__spec_8h.html#ad2c30ed17419423b79a47fae8323408aa932ed18678ba58f40fb0c4756ccd43cc":[13,0,27,93,1],
+"iscsi__spec_8h.html#ad2c30ed17419423b79a47fae8323408aa976cc949b0536cee9860bad913113b3a":[13,0,27,93,2],
+"iscsi__spec_8h.html#ad2c30ed17419423b79a47fae8323408aaa11179afd954aeeeadb459ef6391b5ba":[13,0,27,93,13],
+"iscsi__spec_8h.html#ad2c30ed17419423b79a47fae8323408aaa83ae84a485fd5d432afea2a82e79400":[13,0,27,93,19],
+"iscsi__spec_8h.html#ad2c30ed17419423b79a47fae8323408aaab4b714fcb61a3340155f9965dd72fff":[13,0,27,93,17],
+"iscsi__spec_8h.html#ad2c30ed17419423b79a47fae8323408aaaee5600a75ae650f611d1820caf8f202":[13,0,27,93,9],
 "iscsi__spec_8h.html#ad2c30ed17419423b79a47fae8323408aac88669cc577d85b32c16ef7f9dcf0dc2":[13,0,27,93,7],
 "iscsi__spec_8h.html#ad2c30ed17419423b79a47fae8323408aac9e74a154af5aafeec28dd392404ece9":[13,0,27,93,10],
 "iscsi__spec_8h.html#ad2c30ed17419423b79a47fae8323408aad06364a3f16234617b9e82b00ab58f05":[13,0,27,93,0],
@@ -239,15 +249,5 @@ var NAVTREEINDEX4 =
 "jsonrpc.html#rpc_nvmf_subsystem_remove_ns":[3,7,4,6],
 "jsonrpc.html#rpc_rpc_get_methods":[3,7,1,4],
 "jsonrpc.html#rpc_spdk_get_version":[3,7,8,5],
-"jsonrpc.html#rpc_spdk_kill_instance":[3,7,1,0],
-"jsonrpc.html#rpc_thread_get_stats":[3,7,1,8],
-"jsonrpc.html#rpc_vhost_controller_set_coalescing":[3,7,5,0],
-"jsonrpc.html#rpc_vhost_create_blk_controller":[3,7,5,6],
-"jsonrpc.html#rpc_vhost_create_nvme_controller":[3,7,5,4],
-"jsonrpc.html#rpc_vhost_create_scsi_controller":[3,7,5,1],
-"jsonrpc.html#rpc_vhost_delete_controller":[3,7,5,8],
-"jsonrpc.html#rpc_vhost_get_controllers":[3,7,5,7],
-"jsonrpc.html#rpc_vhost_get_controllers_blk":[3,7,5,7,1],
-"jsonrpc.html#rpc_vhost_get_controllers_nvme":[3,7,5,7,4],
-"jsonrpc.html#rpc_vhost_get_controllers_response":[3,7,5,7,0]
+"jsonrpc.html#rpc_spdk_kill_instance":[3,7,1,0]
 };

@@ -235,7 +235,8 @@ Enumerations</h2></td></tr>
 <br />
 &#160;&#160;<a class="el" href="nvme_8h.html#a018f3b986b4345ee0c6931be9718c163afe158b050528f0f3341e5af3129c61a7">SPDK_NVME_NS_DPS_PI_SUPPORTED</a> = 0x10, 
 <a class="el" href="nvme_8h.html#a018f3b986b4345ee0c6931be9718c163a91203896ead47bbe22e9f7db8a63c14f">SPDK_NVME_NS_EXTENDED_LBA_SUPPORTED</a> = 0x20, 
-<a class="el" href="nvme_8h.html#a018f3b986b4345ee0c6931be9718c163afe42f7e0cdcb93109b55b77cf89efd27">SPDK_NVME_NS_WRITE_UNCORRECTABLE_SUPPORTED</a> = 0x40
+<a class="el" href="nvme_8h.html#a018f3b986b4345ee0c6931be9718c163afe42f7e0cdcb93109b55b77cf89efd27">SPDK_NVME_NS_WRITE_UNCORRECTABLE_SUPPORTED</a> = 0x40, 
+<a class="el" href="nvme_8h.html#a018f3b986b4345ee0c6931be9718c163a568a13a9686985d4aa24543b52c122d6">SPDK_NVME_NS_COMPARE_SUPPORTED</a> = 0x80
 <br />
  }</td></tr>
 <tr class="memdesc:a018f3b986b4345ee0c6931be9718c163"><td class="mdescLeft">&#160;</td><td class="mdescRight">Namespace command support flags.  <a href="nvme_8h.html#a018f3b986b4345ee0c6931be9718c163">More...</a><br /></td></tr>
@@ -486,6 +487,9 @@ Functions</h2></td></tr>
 <tr class="memitem:aad367fec5a8963f5d930dfae485de6b3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#aad367fec5a8963f5d930dfae485de6b3">spdk_nvme_ns_supports_extended_lba</a> (struct spdk_nvme_ns *ns)</td></tr>
 <tr class="memdesc:aad367fec5a8963f5d930dfae485de6b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check whether if the namespace can support extended LBA when end-to-end data protection enabled.  <a href="#aad367fec5a8963f5d930dfae485de6b3">More...</a><br /></td></tr>
 <tr class="separator:aad367fec5a8963f5d930dfae485de6b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aacb2087b31ac4b4807a77b9b97d55b2c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#aacb2087b31ac4b4807a77b9b97d55b2c">spdk_nvme_ns_supports_compare</a> (struct spdk_nvme_ns *ns)</td></tr>
+<tr class="memdesc:aacb2087b31ac4b4807a77b9b97d55b2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check whether if the namespace supports compare operation.  <a href="#aacb2087b31ac4b4807a77b9b97d55b2c">More...</a><br /></td></tr>
+<tr class="separator:aacb2087b31ac4b4807a77b9b97d55b2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a42040dca95489218417539d2c08d815e"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="nvme__spec_8h.html#a1c06fbd66f7572c43c51e6f106215b8d">spdk_nvme_dealloc_logical_block_read_value</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a42040dca95489218417539d2c08d815e">spdk_nvme_ns_get_dealloc_logical_block_read_value</a> (struct spdk_nvme_ns *ns)</td></tr>
 <tr class="memdesc:a42040dca95489218417539d2c08d815e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine the value returned when reading deallocated blocks.  <a href="#a42040dca95489218417539d2c08d815e">More...</a><br /></td></tr>
 <tr class="separator:a42040dca95489218417539d2c08d815e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -552,6 +556,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a108d6b722c8837593dec16f30376d182"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a108d6b722c8837593dec16f30376d182">spdk_nvme_ns_cmd_comparev</a> (struct spdk_nvme_ns *ns, struct spdk_nvme_qpair *qpair, uint64_t lba, uint32_t lba_count, <a class="el" href="nvme_8h.html#ac9779e9957d7089dde8e492cc60856d8">spdk_nvme_cmd_cb</a> cb_fn, void *cb_arg, uint32_t io_flags, <a class="el" href="nvme_8h.html#a0e1fcb43970ea531567ee00d4ee0675b">spdk_nvme_req_reset_sgl_cb</a> reset_sgl_fn, <a class="el" href="nvme_8h.html#a4ab95bea86f498c08510f6f0bcd2eb09">spdk_nvme_req_next_sge_cb</a> next_sge_fn)</td></tr>
 <tr class="memdesc:a108d6b722c8837593dec16f30376d182"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submit a compare I/O to the specified NVMe namespace.  <a href="#a108d6b722c8837593dec16f30376d182">More...</a><br /></td></tr>
 <tr class="separator:a108d6b722c8837593dec16f30376d182"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47e7d5f0f025d25026f1225d2f6c9a4b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a47e7d5f0f025d25026f1225d2f6c9a4b">spdk_nvme_ns_cmd_comparev_with_md</a> (struct spdk_nvme_ns *ns, struct spdk_nvme_qpair *qpair, uint64_t lba, uint32_t lba_count, <a class="el" href="nvme_8h.html#ac9779e9957d7089dde8e492cc60856d8">spdk_nvme_cmd_cb</a> cb_fn, void *cb_arg, uint32_t io_flags, <a class="el" href="nvme_8h.html#a0e1fcb43970ea531567ee00d4ee0675b">spdk_nvme_req_reset_sgl_cb</a> reset_sgl_fn, <a class="el" href="nvme_8h.html#a4ab95bea86f498c08510f6f0bcd2eb09">spdk_nvme_req_next_sge_cb</a> next_sge_fn, void *metadata, uint16_t apptag_mask, uint16_t apptag)</td></tr>
+<tr class="memdesc:a47e7d5f0f025d25026f1225d2f6c9a4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submit a compare I/O to the specified NVMe namespace.  <a href="#a47e7d5f0f025d25026f1225d2f6c9a4b">More...</a><br /></td></tr>
+<tr class="separator:a47e7d5f0f025d25026f1225d2f6c9a4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4bf7a40872bfe623a5dfa31922263532"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a4bf7a40872bfe623a5dfa31922263532">spdk_nvme_ns_cmd_compare_with_md</a> (struct spdk_nvme_ns *ns, struct spdk_nvme_qpair *qpair, void *payload, void *metadata, uint64_t lba, uint32_t lba_count, <a class="el" href="nvme_8h.html#ac9779e9957d7089dde8e492cc60856d8">spdk_nvme_cmd_cb</a> cb_fn, void *cb_arg, uint32_t io_flags, uint16_t apptag_mask, uint16_t apptag)</td></tr>
 <tr class="memdesc:a4bf7a40872bfe623a5dfa31922263532"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submit a compare I/O to the specified NVMe namespace.  <a href="#a4bf7a40872bfe623a5dfa31922263532">More...</a><br /></td></tr>
 <tr class="separator:a4bf7a40872bfe623a5dfa31922263532"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -836,6 +843,8 @@ Functions</h2></td></tr>
 <tr><td class="fieldname"><a id="a018f3b986b4345ee0c6931be9718c163a91203896ead47bbe22e9f7db8a63c14f"></a>SPDK_NVME_NS_EXTENDED_LBA_SUPPORTED&#160;</td><td class="fielddoc"><p>The extended lba format is supported, metadata is transferred as a contiguous part of the logical block that it is associated with. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a018f3b986b4345ee0c6931be9718c163afe42f7e0cdcb93109b55b77cf89efd27"></a>SPDK_NVME_NS_WRITE_UNCORRECTABLE_SUPPORTED&#160;</td><td class="fielddoc"><p>The write uncorrectable command is supported. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a018f3b986b4345ee0c6931be9718c163a568a13a9686985d4aa24543b52c122d6"></a>SPDK_NVME_NS_COMPARE_SUPPORTED&#160;</td><td class="fielddoc"><p>The compare command is supported. </p>
 </td></tr>
 </table>
 
@@ -3761,6 +3770,115 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a47e7d5f0f025d25026f1225d2f6c9a4b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a47e7d5f0f025d25026f1225d2f6c9a4b">&#9670;&nbsp;</a></span>spdk_nvme_ns_cmd_comparev_with_md()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_nvme_ns_cmd_comparev_with_md </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_nvme_ns *&#160;</td>
+          <td class="paramname"><em>ns</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct spdk_nvme_qpair *&#160;</td>
+          <td class="paramname"><em>qpair</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>lba</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>lba_count</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="nvme_8h.html#ac9779e9957d7089dde8e492cc60856d8">spdk_nvme_cmd_cb</a>&#160;</td>
+          <td class="paramname"><em>cb_fn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>cb_arg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>io_flags</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="nvme_8h.html#a0e1fcb43970ea531567ee00d4ee0675b">spdk_nvme_req_reset_sgl_cb</a>&#160;</td>
+          <td class="paramname"><em>reset_sgl_fn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="nvme_8h.html#a4ab95bea86f498c08510f6f0bcd2eb09">spdk_nvme_req_next_sge_cb</a>&#160;</td>
+          <td class="paramname"><em>next_sge_fn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>metadata</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>apptag_mask</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>apptag</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Submit a compare I/O to the specified NVMe namespace. </p>
+<p>The command is submitted to a qpair allocated by <a class="el" href="nvme_8h.html#a13f745d239dab9b8f934fae2ad4984a2" title="Allocate an I/O queue pair (submission and completion queue). ">spdk_nvme_ctrlr_alloc_io_qpair()</a>. The user must ensure that only one thread submits I/O on a given qpair at any given time.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ns</td><td>NVMe namespace to submit the compare I/O. </td></tr>
+    <tr><td class="paramname">qpair</td><td>I/O queue pair to submit the request. </td></tr>
+    <tr><td class="paramname">lba</td><td>Starting LBA to compare the data. </td></tr>
+    <tr><td class="paramname">lba_count</td><td>Length (in sectors) for the compare operation. </td></tr>
+    <tr><td class="paramname">cb_fn</td><td>Callback function to invoke when the I/O is completed. </td></tr>
+    <tr><td class="paramname">cb_arg</td><td>Argument to pass to the callback function. </td></tr>
+    <tr><td class="paramname">io_flags</td><td>Set flags, defined in <a class="el" href="nvme__spec_8h.html" title="NVMe specification definitions. ">nvme_spec.h</a>, for this I/O. </td></tr>
+    <tr><td class="paramname">reset_sgl_fn</td><td>Callback function to reset scattered payload. </td></tr>
+    <tr><td class="paramname">next_sge_fn</td><td>Callback function to iterate each scattered payload memory segment. </td></tr>
+    <tr><td class="paramname">metadata</td><td>Virtual address pointer to the metadata payload, the length of metadata is specified by <a class="el" href="nvme_8h.html#ab48657f8cb6561b35e1c1b0bc18376d2" title="Get the metadata size, in bytes, of the given namespace. ">spdk_nvme_ns_get_md_size()</a> </td></tr>
+    <tr><td class="paramname">apptag_mask</td><td>Application tag mask. </td></tr>
+    <tr><td class="paramname">apptag</td><td>Application tag to use end-to-end protection information.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 if successfully submitted, negated errnos on the following error conditions: -EINVAL: The request is malformed. -ENOMEM: The request cannot be allocated. -ENXIO: The qpair is failed at the transport level. -EFAULT: Invalid address was specified as part of payload. cb_fn is also called with error status including dnr=1 in this case. </dd></dl>
+
+</div>
+</div>
 <a id="ac0c646dd18675c54ffcf834ce699658d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac0c646dd18675c54ffcf834ce699658d">&#9670;&nbsp;</a></span>spdk_nvme_ns_cmd_dataset_management()</h2>
 
@@ -5519,6 +5637,34 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if active, or false if inactive. </dd></dl>
+
+</div>
+</div>
+<a id="aacb2087b31ac4b4807a77b9b97d55b2c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aacb2087b31ac4b4807a77b9b97d55b2c">&#9670;&nbsp;</a></span>spdk_nvme_ns_supports_compare()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool spdk_nvme_ns_supports_compare </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_nvme_ns *&#160;</td>
+          <td class="paramname"><em>ns</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Check whether if the namespace supports compare operation. </p>
+<p>This function is thread safe and can be called at any point while the controller is attached to the SPDK NVMe driver.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ns</td><td>Namespace to query.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the namespace supports compare operation, or false otherwise. </dd></dl>
 
 </div>
 </div>

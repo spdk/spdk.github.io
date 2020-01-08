@@ -82,7 +82,11 @@ var nvme__spec_8h =
     [ "SPDK_NVME_DATASET_MANAGEMENT_MAX_RANGES", "nvme__spec_8h.html#ad2aa28f22c4dc7336caf96815cb70314", null ],
     [ "SPDK_NVME_DATASET_MANAGEMENT_RANGE_MAX_BLOCKS", "nvme__spec_8h.html#a26ca66ff5a40e3916763aabbfb22ce14", null ],
     [ "SPDK_NVME_GLOBAL_NS_TAG", "nvme__spec_8h.html#a49914175a8977c209595d436f71136bc", null ],
+    [ "SPDK_NVME_IO_FLAGS_CDW12_MASK", "nvme__spec_8h.html#acae4271834fedbb07dfa2e1a5c7a2a2d", null ],
     [ "SPDK_NVME_IO_FLAGS_FORCE_UNIT_ACCESS", "nvme__spec_8h.html#abd0db806408dd6b8ed6e032cde431d9d", null ],
+    [ "SPDK_NVME_IO_FLAGS_FUSE_FIRST", "nvme__spec_8h.html#aa12837c61bff3188e1f92d001506e5a0", null ],
+    [ "SPDK_NVME_IO_FLAGS_FUSE_MASK", "nvme__spec_8h.html#a6a5c4c0b0279583d688e44c7769d8e40", null ],
+    [ "SPDK_NVME_IO_FLAGS_FUSE_SECOND", "nvme__spec_8h.html#af35a202556b1279bc49a963c02bb3e78", null ],
     [ "SPDK_NVME_IO_FLAGS_LIMITED_RETRY", "nvme__spec_8h.html#a8360ce1240ec2117d8764bcdefb38acb", null ],
     [ "SPDK_NVME_IO_FLAGS_PRACT", "nvme__spec_8h.html#a927b883cde43d8000b7a32c1b4d6ed53", null ],
     [ "SPDK_NVME_IO_FLAGS_PRCHK_APPTAG", "nvme__spec_8h.html#ae3c69904e0cbefa87f348e7c076707a7", null ],
@@ -166,6 +170,11 @@ var nvme__spec_8h =
     ] ],
     [ "spdk_nvme_cc_css", "nvme__spec_8h.html#afafa64ef6a351ad580253d99ea1b3cd0", [
       [ "SPDK_NVME_CC_CSS_NVM", "nvme__spec_8h.html#afafa64ef6a351ad580253d99ea1b3cd0ae7696e91d29ce6f6f5d3ba3adf9b5016", null ]
+    ] ],
+    [ "spdk_nvme_cmd_fuse", "nvme__spec_8h.html#a221a4156b2e7883c4cb88847cbeaa069", [
+      [ "SPDK_NVMF_CMD_FUSE_NONE", "nvme__spec_8h.html#a221a4156b2e7883c4cb88847cbeaa069ae8af79cac0adb463c0fdbdca1288c067", null ],
+      [ "SPDK_NVME_CMD_FUSE_FIRST", "nvme__spec_8h.html#a221a4156b2e7883c4cb88847cbeaa069a5bc4ba22076a7b42f51c1ed6d76ceaf7", null ],
+      [ "SPDK_NVME_CMD_FUSE_SECOND", "nvme__spec_8h.html#a221a4156b2e7883c4cb88847cbeaa069ace5400bb9e50677e62cd5af8fad9e595", null ]
     ] ],
     [ "spdk_nvme_command_specific_status_code", "nvme__spec_8h.html#acb8784fad6a53be95d4c718ad3cf852e", [
       [ "SPDK_NVME_SC_COMPLETION_QUEUE_INVALID", "nvme__spec_8h.html#acb8784fad6a53be95d4c718ad3cf852ead6be90d650be8f24c4753c1cbf491c74", null ],

@@ -28,7 +28,8 @@ var nvme_8h =
       [ "SPDK_NVME_NS_WRITE_ZEROES_SUPPORTED", "nvme_8h.html#a018f3b986b4345ee0c6931be9718c163a4e691401f3709b7cd66bd32c28ae109b", null ],
       [ "SPDK_NVME_NS_DPS_PI_SUPPORTED", "nvme_8h.html#a018f3b986b4345ee0c6931be9718c163afe158b050528f0f3341e5af3129c61a7", null ],
       [ "SPDK_NVME_NS_EXTENDED_LBA_SUPPORTED", "nvme_8h.html#a018f3b986b4345ee0c6931be9718c163a91203896ead47bbe22e9f7db8a63c14f", null ],
-      [ "SPDK_NVME_NS_WRITE_UNCORRECTABLE_SUPPORTED", "nvme_8h.html#a018f3b986b4345ee0c6931be9718c163afe42f7e0cdcb93109b55b77cf89efd27", null ]
+      [ "SPDK_NVME_NS_WRITE_UNCORRECTABLE_SUPPORTED", "nvme_8h.html#a018f3b986b4345ee0c6931be9718c163afe42f7e0cdcb93109b55b77cf89efd27", null ],
+      [ "SPDK_NVME_NS_COMPARE_SUPPORTED", "nvme_8h.html#a018f3b986b4345ee0c6931be9718c163a568a13a9686985d4aa24543b52c122d6", null ]
     ] ],
     [ "spdk_nvme_qp_failure_reason", "nvme_8h.html#ab41e2d311eb6663957cd2f18bc8fb890", [
       [ "SPDK_NVME_QPAIR_FAILURE_NONE", "nvme_8h.html#ab41e2d311eb6663957cd2f18bc8fb890aa17ee94f67f231985fd58e045e3a5e81", null ],
@@ -105,6 +106,7 @@ var nvme_8h =
     [ "spdk_nvme_ns_cmd_compare", "nvme_8h.html#ad8aa3c9ff510fe73945549077df18436", null ],
     [ "spdk_nvme_ns_cmd_compare_with_md", "nvme_8h.html#a4bf7a40872bfe623a5dfa31922263532", null ],
     [ "spdk_nvme_ns_cmd_comparev", "nvme_8h.html#a108d6b722c8837593dec16f30376d182", null ],
+    [ "spdk_nvme_ns_cmd_comparev_with_md", "nvme_8h.html#a47e7d5f0f025d25026f1225d2f6c9a4b", null ],
     [ "spdk_nvme_ns_cmd_dataset_management", "nvme_8h.html#ac0c646dd18675c54ffcf834ce699658d", null ],
     [ "spdk_nvme_ns_cmd_flush", "nvme_8h.html#aed0b134e140121bb9bd8664d4a43a5c6", null ],
     [ "spdk_nvme_ns_cmd_read", "nvme_8h.html#a084c6ecb53bd810fbb5051100b79bec5", null ],
@@ -136,6 +138,7 @@ var nvme_8h =
     [ "spdk_nvme_ns_get_size", "nvme_8h.html#a9e8fb1bbe066260faf305581e16dde86", null ],
     [ "spdk_nvme_ns_get_uuid", "nvme_8h.html#a6c559063408299a4612fd2e62f97bc63", null ],
     [ "spdk_nvme_ns_is_active", "nvme_8h.html#af755eb3e5a5f767a5bdc544d85667898", null ],
+    [ "spdk_nvme_ns_supports_compare", "nvme_8h.html#aacb2087b31ac4b4807a77b9b97d55b2c", null ],
     [ "spdk_nvme_ns_supports_extended_lba", "nvme_8h.html#aad367fec5a8963f5d930dfae485de6b3", null ],
     [ "spdk_nvme_prchk_flags_parse", "nvme_8h.html#a0f14ec05ce3af11f089a79d47739bd74", null ],
     [ "spdk_nvme_prchk_flags_str", "nvme_8h.html#ae125f35c7ab6fd2f5e63bfac804f25e6", null ],

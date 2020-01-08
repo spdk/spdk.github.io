@@ -17,6 +17,7 @@ var bdev__module_8h =
     [ "spdk_bdev_part_base_free_fn", "bdev__module_8h.html#ad226e52efa62c0b31340be538000d1a8", null ],
     [ "spdk_bdev_unregister_cb", "bdev__module_8h.html#aaf30cdcd20a84d898099dd35bbfa3590", null ],
     [ "spdk_bdev_io_status", "bdev__module_8h.html#aa35cc1485b6ba4351c2fb4fbd7125c93", [
+      [ "SPDK_BDEV_IO_STATUS_MISCOMPARE", "bdev__module_8h.html#aa35cc1485b6ba4351c2fb4fbd7125c93a8cf0b3df0de6126ba841779d6dcdf9bd", null ],
       [ "SPDK_BDEV_IO_STATUS_NOMEM", "bdev__module_8h.html#aa35cc1485b6ba4351c2fb4fbd7125c93ac500ae7baaa5db4ace3bb92481e30ccb", null ],
       [ "SPDK_BDEV_IO_STATUS_SCSI_ERROR", "bdev__module_8h.html#aa35cc1485b6ba4351c2fb4fbd7125c93adce56f58e1dd18d652b459edf9f3bc28", null ],
       [ "SPDK_BDEV_IO_STATUS_NVME_ERROR", "bdev__module_8h.html#aa35cc1485b6ba4351c2fb4fbd7125c93ae9fd36cc0fcdcb3e37d0e5f1f43f06cc", null ],

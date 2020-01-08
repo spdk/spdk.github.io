@@ -189,6 +189,18 @@ Functions</h2></td></tr>
 <tr class="memitem:ga635944e7a651c01ecf5d808f988d138d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__bdev__io__submit__functions.html#ga635944e7a651c01ecf5d808f988d138d">spdk_bdev_writev_blocks_with_md</a> (struct spdk_bdev_desc *desc, struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *ch, struct iovec *iov, int iovcnt, void *md, uint64_t offset_blocks, uint64_t num_blocks, <a class="el" href="bdev_8h.html#a0c5602dfd313f90032dd91683b9663e3">spdk_bdev_io_completion_cb</a> cb, void *cb_arg)</td></tr>
 <tr class="memdesc:ga635944e7a651c01ecf5d808f988d138d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submit a write request to the bdev on the given channel.  <a href="#ga635944e7a651c01ecf5d808f988d138d">More...</a><br /></td></tr>
 <tr class="separator:ga635944e7a651c01ecf5d808f988d138d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0846ab7b6c938f0f52ac36cd09a75278"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__bdev__io__submit__functions.html#ga0846ab7b6c938f0f52ac36cd09a75278">spdk_bdev_compare_blocks</a> (struct spdk_bdev_desc *desc, struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *ch, void *buf, uint64_t offset_blocks, uint64_t num_blocks, <a class="el" href="bdev_8h.html#a0c5602dfd313f90032dd91683b9663e3">spdk_bdev_io_completion_cb</a> cb, void *cb_arg)</td></tr>
+<tr class="memdesc:ga0846ab7b6c938f0f52ac36cd09a75278"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submit a compare request to the bdev on the given channel.  <a href="#ga0846ab7b6c938f0f52ac36cd09a75278">More...</a><br /></td></tr>
+<tr class="separator:ga0846ab7b6c938f0f52ac36cd09a75278"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8a69444aaff6f046f7de8524e8c886d8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__bdev__io__submit__functions.html#ga8a69444aaff6f046f7de8524e8c886d8">spdk_bdev_compare_blocks_with_md</a> (struct spdk_bdev_desc *desc, struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *ch, void *buf, void *md, uint64_t offset_blocks, uint64_t num_blocks, <a class="el" href="bdev_8h.html#a0c5602dfd313f90032dd91683b9663e3">spdk_bdev_io_completion_cb</a> cb, void *cb_arg)</td></tr>
+<tr class="memdesc:ga8a69444aaff6f046f7de8524e8c886d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submit a compare request to the bdev on the given channel.  <a href="#ga8a69444aaff6f046f7de8524e8c886d8">More...</a><br /></td></tr>
+<tr class="separator:ga8a69444aaff6f046f7de8524e8c886d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf27fa5b35ac2a8d7d78cb31fa8500c8c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__bdev__io__submit__functions.html#gaf27fa5b35ac2a8d7d78cb31fa8500c8c">spdk_bdev_comparev_blocks</a> (struct spdk_bdev_desc *desc, struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *ch, struct iovec *iov, int iovcnt, uint64_t offset_blocks, uint64_t num_blocks, <a class="el" href="bdev_8h.html#a0c5602dfd313f90032dd91683b9663e3">spdk_bdev_io_completion_cb</a> cb, void *cb_arg)</td></tr>
+<tr class="memdesc:gaf27fa5b35ac2a8d7d78cb31fa8500c8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submit a compare request to the bdev on the given channel.  <a href="#gaf27fa5b35ac2a8d7d78cb31fa8500c8c">More...</a><br /></td></tr>
+<tr class="separator:gaf27fa5b35ac2a8d7d78cb31fa8500c8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga323ccdb094b61f56840f29745339ceb3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__bdev__io__submit__functions.html#ga323ccdb094b61f56840f29745339ceb3">spdk_bdev_comparev_blocks_with_md</a> (struct spdk_bdev_desc *desc, struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *ch, struct iovec *iov, int iovcnt, void *md, uint64_t offset_blocks, uint64_t num_blocks, <a class="el" href="bdev_8h.html#a0c5602dfd313f90032dd91683b9663e3">spdk_bdev_io_completion_cb</a> cb, void *cb_arg)</td></tr>
+<tr class="memdesc:ga323ccdb094b61f56840f29745339ceb3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submit a compare request to the bdev on the given channel.  <a href="#ga323ccdb094b61f56840f29745339ceb3">More...</a><br /></td></tr>
+<tr class="separator:ga323ccdb094b61f56840f29745339ceb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gadc50b78fec7f69190d9139aff29a9043"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__bdev__io__submit__functions.html#gadc50b78fec7f69190d9139aff29a9043">spdk_bdev_write_zeroes</a> (struct spdk_bdev_desc *desc, struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *ch, uint64_t offset, uint64_t len, <a class="el" href="bdev_8h.html#a0c5602dfd313f90032dd91683b9663e3">spdk_bdev_io_completion_cb</a> cb, void *cb_arg)</td></tr>
 <tr class="memdesc:gadc50b78fec7f69190d9139aff29a9043"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submit a write zeroes request to the bdev on the given channel.  <a href="#gadc50b78fec7f69190d9139aff29a9043">More...</a><br /></td></tr>
 <tr class="separator:gadc50b78fec7f69190d9139aff29a9043"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -236,6 +248,345 @@ Functions</h2></td></tr>
 <p>These functions submit a new I/O request to a bdev. </p>
 <p>The I/O request will be represented by an <a class="el" href="structspdk__bdev__io.html">spdk_bdev_io</a> structure allocated from a global pool. These functions will return -ENOMEM if the <a class="el" href="structspdk__bdev__io.html">spdk_bdev_io</a> pool is empty. </p>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="ga0846ab7b6c938f0f52ac36cd09a75278"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0846ab7b6c938f0f52ac36cd09a75278">&#9670;&nbsp;</a></span>spdk_bdev_compare_blocks()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_bdev_compare_blocks </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_bdev_desc *&#160;</td>
+          <td class="paramname"><em>desc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *&#160;</td>
+          <td class="paramname"><em>ch</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>buf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>offset_blocks</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>num_blocks</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="bdev_8h.html#a0c5602dfd313f90032dd91683b9663e3">spdk_bdev_io_completion_cb</a>&#160;</td>
+          <td class="paramname"><em>cb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>cb_arg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Submit a compare request to the bdev on the given channel. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">desc</td><td>Block device descriptor. </td></tr>
+    <tr><td class="paramname">ch</td><td>I/O channel. Obtained by calling <a class="el" href="bdev_8h.html#ab5bb9e746b030d7c4c89cbcf60076c7e" title="Obtain an I/O channel for the block device opened by the specified descriptor. ">spdk_bdev_get_io_channel()</a>. </td></tr>
+    <tr><td class="paramname">buf</td><td>Data buffer to compare to. </td></tr>
+    <tr><td class="paramname">offset_blocks</td><td>The offset, in blocks, from the start of the block device. </td></tr>
+    <tr><td class="paramname">num_blocks</td><td>The number of blocks to compare. buf must be greater than or equal to this size. </td></tr>
+    <tr><td class="paramname">cb</td><td>Called when the request is complete. </td></tr>
+    <tr><td class="paramname">cb_arg</td><td>Argument passed to cb.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success. On success, the callback will always be called (even if the request ultimately failed). Return negated errno on failure, in which case the callback will not be called.<ul>
+<li>-EINVAL - offset_blocks and/or num_blocks are out of range</li>
+<li>-ENOMEM - <a class="el" href="structspdk__bdev__io.html">spdk_bdev_io</a> buffer cannot be allocated </li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
+<a id="ga8a69444aaff6f046f7de8524e8c886d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8a69444aaff6f046f7de8524e8c886d8">&#9670;&nbsp;</a></span>spdk_bdev_compare_blocks_with_md()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_bdev_compare_blocks_with_md </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_bdev_desc *&#160;</td>
+          <td class="paramname"><em>desc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *&#160;</td>
+          <td class="paramname"><em>ch</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>buf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>md</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>offset_blocks</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>num_blocks</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="bdev_8h.html#a0c5602dfd313f90032dd91683b9663e3">spdk_bdev_io_completion_cb</a>&#160;</td>
+          <td class="paramname"><em>cb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>cb_arg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Submit a compare request to the bdev on the given channel. </p>
+<p>This function uses separate buffer for metadata transfer (valid only if bdev supports this mode).</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">desc</td><td>Block device descriptor. </td></tr>
+    <tr><td class="paramname">ch</td><td>I/O channel. Obtained by calling <a class="el" href="bdev_8h.html#ab5bb9e746b030d7c4c89cbcf60076c7e" title="Obtain an I/O channel for the block device opened by the specified descriptor. ">spdk_bdev_get_io_channel()</a>. </td></tr>
+    <tr><td class="paramname">buf</td><td>Data buffer to compare to. </td></tr>
+    <tr><td class="paramname">md</td><td>Metadata buffer. </td></tr>
+    <tr><td class="paramname">offset_blocks</td><td>The offset, in blocks, from the start of the block device. </td></tr>
+    <tr><td class="paramname">num_blocks</td><td>The number of blocks to compare. buf must be greater than or equal to this size. </td></tr>
+    <tr><td class="paramname">cb</td><td>Called when the request is complete. </td></tr>
+    <tr><td class="paramname">cb_arg</td><td>Argument passed to cb.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success. On success, the callback will always be called (even if the request ultimately failed). Return negated errno on failure, in which case the callback will not be called.<ul>
+<li>-EINVAL - offset_blocks and/or num_blocks are out of range or separate metadata is not supported</li>
+<li>-ENOMEM - <a class="el" href="structspdk__bdev__io.html">spdk_bdev_io</a> buffer cannot be allocated </li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
+<a id="gaf27fa5b35ac2a8d7d78cb31fa8500c8c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf27fa5b35ac2a8d7d78cb31fa8500c8c">&#9670;&nbsp;</a></span>spdk_bdev_comparev_blocks()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_bdev_comparev_blocks </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_bdev_desc *&#160;</td>
+          <td class="paramname"><em>desc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *&#160;</td>
+          <td class="paramname"><em>ch</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct iovec *&#160;</td>
+          <td class="paramname"><em>iov</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iovcnt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>offset_blocks</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>num_blocks</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="bdev_8h.html#a0c5602dfd313f90032dd91683b9663e3">spdk_bdev_io_completion_cb</a>&#160;</td>
+          <td class="paramname"><em>cb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>cb_arg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Submit a compare request to the bdev on the given channel. </p>
+<p>This differs from spdk_bdev_compare by allowing the data buffer to be described in a scatter gather list. Some physical devices place memory alignment requirements on data and may not be able to directly transfer out of the buffers provided. In this case, the request may fail.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">desc</td><td>Block device descriptor. </td></tr>
+    <tr><td class="paramname">ch</td><td>I/O channel. Obtained by calling <a class="el" href="bdev_8h.html#ab5bb9e746b030d7c4c89cbcf60076c7e" title="Obtain an I/O channel for the block device opened by the specified descriptor. ">spdk_bdev_get_io_channel()</a>. </td></tr>
+    <tr><td class="paramname">iov</td><td>A scatter gather list of buffers to be compared to. </td></tr>
+    <tr><td class="paramname">iovcnt</td><td>The number of elements in iov. </td></tr>
+    <tr><td class="paramname">offset_blocks</td><td>The offset, in blocks, from the start of the block device. </td></tr>
+    <tr><td class="paramname">num_blocks</td><td>The number of blocks to compare. </td></tr>
+    <tr><td class="paramname">cb</td><td>Called when the request is complete. </td></tr>
+    <tr><td class="paramname">cb_arg</td><td>Argument passed to cb.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success. On success, the callback will always be called (even if the request ultimately failed). Return negated errno on failure, in which case the callback will not be called.<ul>
+<li>-EINVAL - offset_blocks and/or num_blocks are out of range</li>
+<li>-ENOMEM - <a class="el" href="structspdk__bdev__io.html">spdk_bdev_io</a> buffer cannot be allocated </li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
+<a id="ga323ccdb094b61f56840f29745339ceb3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga323ccdb094b61f56840f29745339ceb3">&#9670;&nbsp;</a></span>spdk_bdev_comparev_blocks_with_md()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_bdev_comparev_blocks_with_md </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_bdev_desc *&#160;</td>
+          <td class="paramname"><em>desc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *&#160;</td>
+          <td class="paramname"><em>ch</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct iovec *&#160;</td>
+          <td class="paramname"><em>iov</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iovcnt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>md</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>offset_blocks</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>num_blocks</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="bdev_8h.html#a0c5602dfd313f90032dd91683b9663e3">spdk_bdev_io_completion_cb</a>&#160;</td>
+          <td class="paramname"><em>cb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>cb_arg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Submit a compare request to the bdev on the given channel. </p>
+<p>This differs from spdk_bdev_compare by allowing the data buffer to be described in a scatter gather list. Some physical devices place memory alignment requirements on data or metadata and may not be able to directly transfer out of the buffers provided. In this case, the request may fail. This function uses separate buffer for metadata transfer (valid only if bdev supports this mode).</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">desc</td><td>Block device descriptor. </td></tr>
+    <tr><td class="paramname">ch</td><td>I/O channel. Obtained by calling <a class="el" href="bdev_8h.html#ab5bb9e746b030d7c4c89cbcf60076c7e" title="Obtain an I/O channel for the block device opened by the specified descriptor. ">spdk_bdev_get_io_channel()</a>. </td></tr>
+    <tr><td class="paramname">iov</td><td>A scatter gather list of buffers to be compared to. </td></tr>
+    <tr><td class="paramname">iovcnt</td><td>The number of elements in iov. </td></tr>
+    <tr><td class="paramname">md</td><td>Metadata buffer. </td></tr>
+    <tr><td class="paramname">offset_blocks</td><td>The offset, in blocks, from the start of the block device. </td></tr>
+    <tr><td class="paramname">num_blocks</td><td>The number of blocks to compare. </td></tr>
+    <tr><td class="paramname">cb</td><td>Called when the request is complete. </td></tr>
+    <tr><td class="paramname">cb_arg</td><td>Argument passed to cb.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success. On success, the callback will always be called (even if the request ultimately failed). Return negated errno on failure, in which case the callback will not be called.<ul>
+<li>-EINVAL - offset_blocks and/or num_blocks are out of range or separate metadata is not supported</li>
+<li>-ENOMEM - <a class="el" href="structspdk__bdev__io.html">spdk_bdev_io</a> buffer cannot be allocated </li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
 <a id="ga7105b63cc84037543d9472ab33c8be93"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga7105b63cc84037543d9472ab33c8be93">&#9670;&nbsp;</a></span>spdk_bdev_flush()</h2>
 
