@@ -1,7 +1,6 @@
 <map id="spdk_ftl_dev_init_opts" name="spdk_ftl_dev_init_opts">
-<area shape="rect" id="node2" href="$structspdk__ftl__punit__range.html" title="spdk_ftl_punit_range" alt="" coords="5,95,164,121"/>
-<area shape="rect" id="node3" href="$structspdk__uuid.html" title="spdk_uuid" alt="" coords="189,95,277,121"/>
-<area shape="rect" id="node4" href="$structspdk__nvme__transport__id.html" title="NVMe transport identifier. " alt="" coords="301,95,484,121"/>
-<area shape="rect" id="node5" href="$structspdk__ftl__conf.html" title="spdk_ftl_conf" alt="" coords="509,95,618,121"/>
-<area shape="rect" id="node6" href="$structspdk__ftl__limit.html" title="spdk_ftl_limit" alt="" coords="508,5,619,32"/>
+<area shape="rect" id="node2" href="$structspdk__uuid.html" title="spdk_uuid" alt="" coords="5,95,93,121"/>
+<area shape="rect" id="node3" href="$structspdk__nvme__transport__id.html" title="NVMe transport identifier. " alt="" coords="118,95,301,121"/>
+<area shape="rect" id="node4" href="$structspdk__ftl__conf.html" title="spdk_ftl_conf" alt="" coords="325,95,435,121"/>
+<area shape="rect" id="node5" href="$structspdk__ftl__limit.html" title="spdk_ftl_limit" alt="" coords="325,5,435,32"/>
 </map>

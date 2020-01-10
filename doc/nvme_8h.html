@@ -397,6 +397,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a88c881cccf7873bbe4605320ffb0a81c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a88c881cccf7873bbe4605320ffb0a81c">spdk_nvme_ctrlr_cmd_get_log_page</a> (struct spdk_nvme_ctrlr *ctrlr, uint8_t log_page, uint32_t nsid, void *payload, uint32_t payload_size, uint64_t offset, <a class="el" href="nvme_8h.html#ac9779e9957d7089dde8e492cc60856d8">spdk_nvme_cmd_cb</a> cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:a88c881cccf7873bbe4605320ffb0a81c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a specific log page from the NVMe controller.  <a href="#a88c881cccf7873bbe4605320ffb0a81c">More...</a><br /></td></tr>
 <tr class="separator:a88c881cccf7873bbe4605320ffb0a81c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acffdfb142fa1db573a8c8515113f726c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#acffdfb142fa1db573a8c8515113f726c">spdk_nvme_ctrlr_cmd_get_log_page_ext</a> (struct spdk_nvme_ctrlr *ctrlr, uint8_t log_page, uint32_t nsid, void *payload, uint32_t payload_size, uint64_t offset, uint32_t cdw10, uint32_t cdw11, uint32_t cdw14, <a class="el" href="nvme_8h.html#ac9779e9957d7089dde8e492cc60856d8">spdk_nvme_cmd_cb</a> cb_fn, void *cb_arg)</td></tr>
+<tr class="memdesc:acffdfb142fa1db573a8c8515113f726c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a specific log page from the NVMe controller.  <a href="#acffdfb142fa1db573a8c8515113f726c">More...</a><br /></td></tr>
+<tr class="separator:acffdfb142fa1db573a8c8515113f726c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a724ed20a1a5adaf30c48db8c28d29677"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a724ed20a1a5adaf30c48db8c28d29677">spdk_nvme_ctrlr_cmd_abort</a> (struct spdk_nvme_ctrlr *ctrlr, struct spdk_nvme_qpair *qpair, uint16_t cid, <a class="el" href="nvme_8h.html#ac9779e9957d7089dde8e492cc60856d8">spdk_nvme_cmd_cb</a> cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:a724ed20a1a5adaf30c48db8c28d29677"><td class="mdescLeft">&#160;</td><td class="mdescRight">Abort a specific previously-submitted NVMe command.  <a href="#a724ed20a1a5adaf30c48db8c28d29677">More...</a><br /></td></tr>
 <tr class="separator:a724ed20a1a5adaf30c48db8c28d29677"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1513,6 +1516,111 @@ Functions</h2></td></tr>
     <tr><td class="paramname">payload</td><td>The pointer to the payload buffer. </td></tr>
     <tr><td class="paramname">payload_size</td><td>The size of payload buffer. </td></tr>
     <tr><td class="paramname">offset</td><td>Offset in bytes within the log page to start retrieving log page data. May only be non-zero if the controller supports extended data for Get Log Page as reported in the controller data log page attributes. </td></tr>
+    <tr><td class="paramname">cb_fn</td><td>Callback function to invoke when the log page has been retrieved. </td></tr>
+    <tr><td class="paramname">cb_arg</td><td>Argument to pass to the callback function.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 if successfully submitted, negated errno if resources could not be allocated for this request, -ENXIO if the admin qpair is failed at the transport layer. </dd></dl>
+
+</div>
+</div>
+<a id="acffdfb142fa1db573a8c8515113f726c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acffdfb142fa1db573a8c8515113f726c">&#9670;&nbsp;</a></span>spdk_nvme_ctrlr_cmd_get_log_page_ext()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_nvme_ctrlr_cmd_get_log_page_ext </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_nvme_ctrlr *&#160;</td>
+          <td class="paramname"><em>ctrlr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>log_page</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>nsid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>payload</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>payload_size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>offset</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>cdw10</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>cdw11</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>cdw14</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="nvme_8h.html#ac9779e9957d7089dde8e492cc60856d8">spdk_nvme_cmd_cb</a>&#160;</td>
+          <td class="paramname"><em>cb_fn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>cb_arg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get a specific log page from the NVMe controller. </p>
+<p>This function is thread safe and can be called at any point while the controller is attached to the SPDK NVMe driver.</p>
+<p>This function allows specifying extra fields in cdw10 and cdw11 such as Retain Asynchronous Event and Log Specific Field.</p>
+<p>Call <a class="el" href="nvme_8h.html#a10282695461985f58f54de022911745e" title="Process any outstanding completions for admin commands. ">spdk_nvme_ctrlr_process_admin_completions()</a> to poll for completion of commands submitted through this function.</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="nvme_8h.html#a7dc6bb842e168a68972ec46cc35591ae" title="Determine if a particular log page is supported by the given NVMe controller. ">spdk_nvme_ctrlr_is_log_page_supported()</a></dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ctrlr</td><td>Opaque handle to NVMe controller. </td></tr>
+    <tr><td class="paramname">log_page</td><td>The log page identifier. </td></tr>
+    <tr><td class="paramname">nsid</td><td>Depending on the log page, this may be 0, a namespace identifier, or SPDK_NVME_GLOBAL_NS_TAG. </td></tr>
+    <tr><td class="paramname">payload</td><td>The pointer to the payload buffer. </td></tr>
+    <tr><td class="paramname">payload_size</td><td>The size of payload buffer. </td></tr>
+    <tr><td class="paramname">offset</td><td>Offset in bytes within the log page to start retrieving log page data. May only be non-zero if the controller supports extended data for Get Log Page as reported in the controller data log page attributes. </td></tr>
+    <tr><td class="paramname">cdw10</td><td>Value to specify for cdw10. Specify 0 for numdl - it will be set by this function based on the payload_size parameter. Specify 0 for lid - it will be set by this function based on the log_page parameter. </td></tr>
+    <tr><td class="paramname">cdw11</td><td>Value to specify for cdw11. Specify 0 for numdu - it will be set by this function based on the payload_size. </td></tr>
+    <tr><td class="paramname">cdw14</td><td>Value to specify for cdw14. </td></tr>
     <tr><td class="paramname">cb_fn</td><td>Callback function to invoke when the log page has been retrieved. </td></tr>
     <tr><td class="paramname">cb_arg</td><td>Argument to pass to the callback function.</td></tr>
   </table>

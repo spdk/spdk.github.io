@@ -16,7 +16,6 @@ var searchData=
   ['fs_5frequest_5ffn',['fs_request_fn',['../blobfs_8h.html#ae18b6af02a2717f4a9094e0eb47caa3c',1,'blobfs.h']]],
   ['fs_5fsend_5frequest_5ffn',['fs_send_request_fn',['../blobfs_8h.html#adada3549eccda011ec15d08199c1328e',1,'blobfs.h']]],
   ['flash_20translation_20layer',['Flash Translation Layer',['../ftl.html',1,'prog_guides']]],
-  ['ftl_5fmodule_5finit_5fopts',['ftl_module_init_opts',['../structftl__module__init__opts.html',1,'']]],
   ['fuses',['fuses',['../structspdk__nvme__ctrlr__data.html#a512e4ee47f6e09bf5a6d2e8986f09567',1,'spdk_nvme_ctrlr_data']]],
   ['fw_5factivation_5fnotices',['fw_activation_notices',['../structspdk__nvme__ctrlr__data.html#a806b5f99e9d82388e663d0046b1a3bba',1,'spdk_nvme_ctrlr_data']]],
   ['fwug',['fwug',['../structspdk__nvme__ctrlr__data.html#a9f5dd6335c39603ffb5beff3c6d8a6eb',1,'spdk_nvme_ctrlr_data']]]

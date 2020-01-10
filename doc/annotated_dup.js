@@ -1,6 +1,5 @@
 var annotated_dup =
 [
-    [ "ftl_module_init_opts", "structftl__module__init__opts.html", "structftl__module__init__opts" ],
     [ "iscsi_ahs", "structiscsi__ahs.html", "structiscsi__ahs" ],
     [ "iscsi_bhs", "structiscsi__bhs.html", "structiscsi__bhs" ],
     [ "iscsi_bhs_async", "structiscsi__bhs__async.html", "structiscsi__bhs__async" ],
@@ -61,7 +60,6 @@ var annotated_dup =
     [ "spdk_ftl_conf", "structspdk__ftl__conf.html", "structspdk__ftl__conf" ],
     [ "spdk_ftl_dev_init_opts", "structspdk__ftl__dev__init__opts.html", "structspdk__ftl__dev__init__opts" ],
     [ "spdk_ftl_limit", "structspdk__ftl__limit.html", "structspdk__ftl__limit" ],
-    [ "spdk_ftl_punit_range", "structspdk__ftl__punit__range.html", "structspdk__ftl__punit__range" ],
     [ "spdk_gpt_guid", "structspdk__gpt__guid.html", "structspdk__gpt__guid" ],
     [ "spdk_gpt_header", "structspdk__gpt__header.html", "structspdk__gpt__header" ],
     [ "spdk_gpt_partition_entry", "structspdk__gpt__partition__entry.html", "structspdk__gpt__partition__entry" ],

@@ -178,6 +178,12 @@ Macros</h2></td></tr>
 <tr class="memitem:a58821926bcb68504a97ffa1545029398"><td class="memItemLeft" align="right" valign="top"><a id="a58821926bcb68504a97ffa1545029398"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_CEIL_DIV</b>(x,  y)&#160;&#160;&#160;(((x)+(y)-1)/(y))</td></tr>
 <tr class="separator:a58821926bcb68504a97ffa1545029398"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4fe89df2bed54dcdc8b0d33c53a694b6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8h.html#a4fe89df2bed54dcdc8b0d33c53a694b6">SPDK_ALIGN_FLOOR</a>(val,  align)&#160;&#160;&#160;(typeof(val))((val) &amp; (~((typeof(val))((align) - 1))))</td></tr>
+<tr class="memdesc:a4fe89df2bed54dcdc8b0d33c53a694b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Macro to align a value to a given power-of-two.  <a href="#a4fe89df2bed54dcdc8b0d33c53a694b6">More...</a><br /></td></tr>
+<tr class="separator:a4fe89df2bed54dcdc8b0d33c53a694b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61bd4178f177cf2265279944b0184fcd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8h.html#a61bd4178f177cf2265279944b0184fcd">SPDK_ALIGN_CEIL</a>(val,  align)&#160;&#160;&#160;<a class="el" href="util_8h.html#a4fe89df2bed54dcdc8b0d33c53a694b6">SPDK_ALIGN_FLOOR</a>(((val) + ((typeof(val)) (align) - 1)), align)</td></tr>
+<tr class="memdesc:a61bd4178f177cf2265279944b0184fcd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Macro to align a value to a given power-of-two.  <a href="#a61bd4178f177cf2265279944b0184fcd">More...</a><br /></td></tr>
+<tr class="separator:a61bd4178f177cf2265279944b0184fcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac14f2b75522d72317def37370adffca1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8h.html#ac14f2b75522d72317def37370adffca1">SPDK_CLANG_ANALYZER_PREINIT_PTR_ARRAY</a>(arr,  arr_size,  buf_size)</td></tr>
 <tr class="memdesc:ac14f2b75522d72317def37370adffca1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Scan build is really pessimistic and assumes that mempool functions can dequeue NULL buffers even if they return success.  <a href="#ac14f2b75522d72317def37370adffca1">More...</a><br /></td></tr>
 <tr class="separator:ac14f2b75522d72317def37370adffca1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -210,6 +216,68 @@ static uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_divid
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>General utility functions. </p>
 </div><h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="a61bd4178f177cf2265279944b0184fcd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a61bd4178f177cf2265279944b0184fcd">&#9670;&nbsp;</a></span>SPDK_ALIGN_CEIL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SPDK_ALIGN_CEIL</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">val, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">align&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="util_8h.html#a4fe89df2bed54dcdc8b0d33c53a694b6">SPDK_ALIGN_FLOOR</a>(((val) + ((typeof(val)) (align) - 1)), align)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Macro to align a value to a given power-of-two. </p>
+<p>The resultant value will be of the same type as the first parameter, and will be no lower than the first parameter. Second parameter must be a power-of-two value. </p>
+
+</div>
+</div>
+<a id="a4fe89df2bed54dcdc8b0d33c53a694b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4fe89df2bed54dcdc8b0d33c53a694b6">&#9670;&nbsp;</a></span>SPDK_ALIGN_FLOOR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SPDK_ALIGN_FLOOR</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">val, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">align&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;(typeof(val))((val) &amp; (~((typeof(val))((align) - 1))))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Macro to align a value to a given power-of-two. </p>
+<p>The resultant value will be of the same type as the first parameter, and will be no bigger than the first parameter. Second parameter must be a power-of-two value. </p>
+
+</div>
+</div>
 <a id="ac14f2b75522d72317def37370adffca1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac14f2b75522d72317def37370adffca1">&#9670;&nbsp;</a></span>SPDK_CLANG_ANALYZER_PREINIT_PTR_ARRAY</h2>
 

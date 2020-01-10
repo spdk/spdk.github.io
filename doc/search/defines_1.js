@@ -1,5 +1,7 @@
 var searchData=
 [
+  ['spdk_5falign_5fceil',['SPDK_ALIGN_CEIL',['../util_8h.html#a61bd4178f177cf2265279944b0184fcd',1,'util.h']]],
+  ['spdk_5falign_5ffloor',['SPDK_ALIGN_FLOOR',['../util_8h.html#a4fe89df2bed54dcdc8b0d33c53a694b6',1,'util.h']]],
   ['spdk_5fclang_5fanalyzer_5fpreinit_5fptr_5farray',['SPDK_CLANG_ANALYZER_PREINIT_PTR_ARRAY',['../util_8h.html#ac14f2b75522d72317def37370adffca1',1,'util.h']]],
   ['spdk_5fcompiler_5fbarrier',['spdk_compiler_barrier',['../barrier_8h.html#a67d1423a31a84ead0d1550fe54743c03',1,'barrier.h']]],
   ['spdk_5fcrc32_5fpolynomial_5freflect',['SPDK_CRC32_POLYNOMIAL_REFLECT',['../crc32_8h.html#a0017fa45727ebbc1acae94c8c7eaf3d6',1,'crc32.h']]],

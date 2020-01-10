@@ -1,6 +1,5 @@
 <map id="spdk_ftl_attrs" name="spdk_ftl_attrs">
-<area shape="rect" id="node2" href="$structspdk__ftl__punit__range.html" title="spdk_ftl_punit_range" alt="" coords="5,95,164,121"/>
-<area shape="rect" id="node3" href="$structspdk__uuid.html" title="spdk_uuid" alt="" coords="189,95,277,121"/>
-<area shape="rect" id="node4" href="$structspdk__ftl__conf.html" title="spdk_ftl_conf" alt="" coords="301,95,410,121"/>
-<area shape="rect" id="node5" href="$structspdk__ftl__limit.html" title="spdk_ftl_limit" alt="" coords="300,5,411,32"/>
+<area shape="rect" id="node2" href="$structspdk__uuid.html" title="spdk_uuid" alt="" coords="5,95,93,121"/>
+<area shape="rect" id="node3" href="$structspdk__ftl__conf.html" title="spdk_ftl_conf" alt="" coords="117,95,227,121"/>
+<area shape="rect" id="node4" href="$structspdk__ftl__limit.html" title="spdk_ftl_limit" alt="" coords="117,5,227,32"/>
 </map>
