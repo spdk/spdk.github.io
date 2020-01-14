@@ -1,5 +1,15 @@
 var NAVTREEINDEX23 =
 {
+"unionspdk__nvme__feat__reservation__persistence.html#a0728bce16796323608b9ed1c2a43d2e3":[12,0,122,1],
+"unionspdk__nvme__feat__reservation__persistence.html#a5f0c591cb1cb11e99fa7213eec360442":[12,0,122,2],
+"unionspdk__nvme__feat__reservation__persistence.html#a602d3beb0e3bfc46629d595f9ecf0b65":[12,0,122,0],
+"unionspdk__nvme__feat__reservation__persistence.html#a83ca08a4e357b0e8bd0885fb17f468aa":[12,0,122,3],
+"unionspdk__nvme__feat__software__progress__marker.html":[12,0,123],
+"unionspdk__nvme__feat__software__progress__marker.html#a01ddd858922b75c387b488f4ff4ee824":[12,0,123,0],
+"unionspdk__nvme__feat__software__progress__marker.html#a068b7aa9ea34b8e38dfcf7b8f7d25f70":[12,0,123,1],
+"unionspdk__nvme__feat__software__progress__marker.html#a22cdd614671f8b7a383463bebd28a384":[12,0,123,2],
+"unionspdk__nvme__feat__software__progress__marker.html#a7daee58fa1e18cf11a6e6989f98f6ff1":[12,0,123,3],
+"unionspdk__nvme__feat__temperature__threshold.html":[12,0,124],
 "unionspdk__nvme__feat__temperature__threshold.html#a1a7f71da8ec9548f346aae2171645a28":[12,0,124,0],
 "unionspdk__nvme__feat__temperature__threshold.html#a384b25c620ca81031b6260f6b0e16142":[12,0,124,3],
 "unionspdk__nvme__feat__temperature__threshold.html#a611a74458d69f25c9151ec7ae81a6b73":[12,0,124,4],

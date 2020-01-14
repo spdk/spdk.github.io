@@ -13,6 +13,7 @@ var searchData=
   ['listen',['listen',['../structspdk__nvmf__transport__ops.html#a434205e227615c534b70df154eeeaf33',1,'spdk_nvmf_transport_ops']]],
   ['listener_5fdiscover',['listener_discover',['../structspdk__nvmf__transport__ops.html#a26d773cfb4178b54b60a4e4212815f16',1,'spdk_nvmf_transport_ops']]],
   ['lists',['lists',['../unionspdk__nvme__cmbsz__register.html#a605db26c2b5a41b7b0cc40750e43527d',1,'spdk_nvme_cmbsz_register']]],
+  ['locked_5franges',['locked_ranges',['../structspdk__bdev_1_1____bdev__internal__fields.html#a7bada4fbc5c2a5de7f7fdf7aef9d876f',1,'spdk_bdev::__bdev_internal_fields']]],
   ['log',['log',['../structspdk__app__opts.html#a4de9f5097a5cdc69c3b45b64db56eea0',1,'spdk_app_opts']]],
   ['log_5fpage_5fcount',['log_page_count',['../structspdk__nvme__reservation__notification__log.html#ad8bc8c37065d9cf1c8e2b171d53ba807',1,'spdk_nvme_reservation_notification_log']]],
   ['logical_5fblock_5fsize',['logical_block_size',['../structspdk__reduce__vol__params.html#a33c2c765f8aef22dbd55f80aa71c6ba5',1,'spdk_reduce_vol_params']]],

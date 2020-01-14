@@ -239,6 +239,12 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stru
 <tr class="memitem:ad49ebdb41b6e0dc5954ff7a6039e40c5"><td class="memItemLeft" align="right" valign="top"><a id="ad49ebdb41b6e0dc5954ff7a6039e40c5"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>histogram_in_progress</b></td></tr>
 <tr class="separator:ad49ebdb41b6e0dc5954ff7a6039e40c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7bada4fbc5c2a5de7f7fdf7aef9d876f"><td class="memItemLeft" align="right" valign="top">lba_range_tailq_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev_1_1____bdev__internal__fields.html#a7bada4fbc5c2a5de7f7fdf7aef9d876f">locked_ranges</a></td></tr>
+<tr class="memdesc:a7bada4fbc5c2a5de7f7fdf7aef9d876f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Currently locked ranges for this bdev.  <a href="#a7bada4fbc5c2a5de7f7fdf7aef9d876f">More...</a><br /></td></tr>
+<tr class="separator:a7bada4fbc5c2a5de7f7fdf7aef9d876f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a293999636600108bc77ef672b62bf4f1"><td class="memItemLeft" align="right" valign="top">lba_range_tailq_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev_1_1____bdev__internal__fields.html#a293999636600108bc77ef672b62bf4f1">pending_locked_ranges</a></td></tr>
+<tr class="memdesc:a293999636600108bc77ef672b62bf4f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pending locked ranges for this bdev.  <a href="#a293999636600108bc77ef672b62bf4f1">More...</a><br /></td></tr>
+<tr class="separator:a293999636600108bc77ef672b62bf4f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Fields that are used internally by the bdev subsystem. </p>
@@ -299,6 +305,23 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>histogram_in_progress
 
 </div>
 </div>
+<a id="a7bada4fbc5c2a5de7f7fdf7aef9d876f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7bada4fbc5c2a5de7f7fdf7aef9d876f">&#9670;&nbsp;</a></span>locked_ranges</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">lba_range_tailq_t spdk_bdev::__bdev_internal_fields::locked_ranges</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Currently locked ranges for this bdev. </p>
+<p>Used to populate new channels. </p>
+
+</div>
+</div>
 <a id="a544e45acd435eb8c7269f08166841f41"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a544e45acd435eb8c7269f08166841f41">&#9670;&nbsp;</a></span>measured_queue_depth</h2>
 
@@ -312,6 +335,23 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>histogram_in_progress
 </div><div class="memdoc">
 
 <p>queue depth as calculated the last time the telemetry poller checked. </p>
+
+</div>
+</div>
+<a id="a293999636600108bc77ef672b62bf4f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a293999636600108bc77ef672b62bf4f1">&#9670;&nbsp;</a></span>pending_locked_ranges</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">lba_range_tailq_t spdk_bdev::__bdev_internal_fields::pending_locked_ranges</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Pending locked ranges for this bdev. </p>
+<p>These ranges are not currently locked due to overlapping with another locked range. </p>
 
 </div>
 </div>

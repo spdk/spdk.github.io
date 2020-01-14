@@ -258,6 +258,9 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 <tr class="memitem:a07b662b152c21dad824ad2738d0733ec"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="thread_8h.html#a07b662b152c21dad824ad2738d0733ec">spdk_thread_send_msg</a> (const struct spdk_thread *thread, <a class="el" href="thread_8h.html#adc0da6b1b784d4f165dcd48b526d12ad">spdk_msg_fn</a> fn, void *ctx)</td></tr>
 <tr class="memdesc:a07b662b152c21dad824ad2738d0733ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a message to the given thread.  <a href="#a07b662b152c21dad824ad2738d0733ec">More...</a><br /></td></tr>
 <tr class="separator:a07b662b152c21dad824ad2738d0733ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91a7e9d44c2a332dfcea5e23df471c8d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="thread_8h.html#a91a7e9d44c2a332dfcea5e23df471c8d">spdk_thread_send_critical_msg</a> (struct spdk_thread *thread, <a class="el" href="thread_8h.html#adc0da6b1b784d4f165dcd48b526d12ad">spdk_msg_fn</a> fn)</td></tr>
+<tr class="memdesc:a91a7e9d44c2a332dfcea5e23df471c8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a message to the given thread.  <a href="#a91a7e9d44c2a332dfcea5e23df471c8d">More...</a><br /></td></tr>
+<tr class="separator:a91a7e9d44c2a332dfcea5e23df471c8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a16bb098e6398d2a63577e805f1423a3e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="thread_8h.html#a16bb098e6398d2a63577e805f1423a3e">spdk_for_each_thread</a> (<a class="el" href="thread_8h.html#adc0da6b1b784d4f165dcd48b526d12ad">spdk_msg_fn</a> fn, void *ctx, <a class="el" href="thread_8h.html#adc0da6b1b784d4f165dcd48b526d12ad">spdk_msg_fn</a> cpl)</td></tr>
 <tr class="memdesc:a16bb098e6398d2a63577e805f1423a3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a message to each thread, serially.  <a href="#a16bb098e6398d2a63577e805f1423a3e">More...</a><br /></td></tr>
 <tr class="separator:a16bb098e6398d2a63577e805f1423a3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1620,6 +1623,48 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>1 if work was done. 0 if no work was done. </dd></dl>
+
+</div>
+</div>
+<a id="a91a7e9d44c2a332dfcea5e23df471c8d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a91a7e9d44c2a332dfcea5e23df471c8d">&#9670;&nbsp;</a></span>spdk_thread_send_critical_msg()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_thread_send_critical_msg </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_thread *&#160;</td>
+          <td class="paramname"><em>thread</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="thread_8h.html#adc0da6b1b784d4f165dcd48b526d12ad">spdk_msg_fn</a>&#160;</td>
+          <td class="paramname"><em>fn</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Send a message to the given thread. </p>
+<p>Only one critical message can be outstanding at the same time. It's intended to use this function in any cases that might interrupt the execution of the application, such as signal handlers.</p>
+<p>The message will be sent asynchronously - i.e. spdk_thread_send_critical_msg will always return prior to <code>fn</code> being called.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">thread</td><td>The target thread. </td></tr>
+    <tr><td class="paramname">fn</td><td>This function will be called on the given thread.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success </dd>
+<dd>
+-EIO if the message could not be sent to the destination thread, due to an already outstanding critical message </dd></dl>
 
 </div>
 </div>

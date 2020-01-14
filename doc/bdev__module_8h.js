@@ -70,5 +70,6 @@ var bdev__module_8h =
     [ "spdk_vbdev_register", "bdev__module_8h.html#a25e95f0667fb503988d09cc08dbad119", null ],
     [ "STAILQ_HEAD", "bdev__module_8h.html#a94d1006ca1ddf32201a5463179d35a32", null ],
     [ "TAILQ_HEAD", "bdev__module_8h.html#a0da20e00320e2b782d1717c8184d93a3", null ],
+    [ "TAILQ_HEAD", "bdev__module_8h.html#a400db1b2562970d33d8a9ef9ba8d04ff", null ],
     [ "TAILQ_HEAD", "bdev__module_8h.html#a1e12eb0cf1d416b15159529e194908a8", null ]
 ];

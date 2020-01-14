@@ -1,5 +1,14 @@
 var NAVTREEINDEX18 =
 {
+"structspdk__nvme__secondary__ctrl__entry.html#a1ef2a1e2dbe88c04cb6c45341cc8326b":[12,0,163,1],
+"structspdk__nvme__secondary__ctrl__entry.html#a21689c15024aef7fdfe2142b007188d7":[12,0,163,5],
+"structspdk__nvme__secondary__ctrl__entry.html#a8c752bf0b9cf14eec276442db6fb318a":[12,0,163,0],
+"structspdk__nvme__secondary__ctrl__entry.html#a8d09ba6b8bb964a9773947fbb614ec06":[12,0,163,2],
+"structspdk__nvme__secondary__ctrl__entry.html#a941dbde25b70baccfcb584599118545d":[12,0,163,7],
+"structspdk__nvme__secondary__ctrl__entry.html#ab0cb9dd6be3791b90fedb5d580f867f1":[12,0,163,4],
+"structspdk__nvme__secondary__ctrl__entry.html#ac896b4c210511e4dab53fbeacfb2cac4":[12,0,163,3],
+"structspdk__nvme__secondary__ctrl__entry.html#aceeb0796ff8bc1cf8e84a3fec5c553c9":[12,0,163,6],
+"structspdk__nvme__secondary__ctrl__list.html":[12,0,164],
 "structspdk__nvme__secondary__ctrl__list.html#a3422d2643a48f11972a62ad3eee04f53":[12,0,164,0],
 "structspdk__nvme__secondary__ctrl__list.html#a50f2e9507f25b988783bc8a688474609":[12,0,164,2],
 "structspdk__nvme__secondary__ctrl__list.html#aff0769e9ba5be1c63d599a9e349aab1a":[12,0,164,1],
@@ -240,14 +249,5 @@ var NAVTREEINDEX18 =
 "structspdk__nvmf__fc__cmnd__iu.html#a07bbba8f737b2f2bb48a5da7f60032e3":[12,0,191,4],
 "structspdk__nvmf__fc__cmnd__iu.html#a0cc89c9dbdca26ffa2ce00708c313d0a":[12,0,191,6],
 "structspdk__nvmf__fc__cmnd__iu.html#a366d9135caf7f9aba2e8b6990f64a597":[12,0,191,2],
-"structspdk__nvmf__fc__cmnd__iu.html#a665d3479229f7a9109456aeb1c62ad54":[12,0,191,7],
-"structspdk__nvmf__fc__cmnd__iu.html#a7ee84e2888116dbe038905e2b347b5be":[12,0,191,3],
-"structspdk__nvmf__fc__cmnd__iu.html#a884285ed6163106c70f1be8b8b14d38c":[12,0,191,9],
-"structspdk__nvmf__fc__cmnd__iu.html#a8dd9a49fb4fd80c952be094d68f1ddee":[12,0,191,1],
-"structspdk__nvmf__fc__cmnd__iu.html#aae230682b0f6426d8c81cc6d82ae080a":[12,0,191,8],
-"structspdk__nvmf__fc__cmnd__iu.html#ac668607c7a0a414ecf1f0cf105f22854":[12,0,191,5],
-"structspdk__nvmf__fc__cmnd__iu.html#ad439f57935d42019d7bb775b924f9139":[12,0,191,0],
-"structspdk__nvmf__fc__ersp__iu.html":[12,0,192],
-"structspdk__nvmf__fc__ersp__iu.html#a101c1fbd7c6180f2f70b64469857a4ee":[12,0,192,4],
-"structspdk__nvmf__fc__ersp__iu.html#a16d7f9d9f84f401bc78c5e34e71e1050":[12,0,192,6]
+"structspdk__nvmf__fc__cmnd__iu.html#a665d3479229f7a9109456aeb1c62ad54":[12,0,191,7]
 };

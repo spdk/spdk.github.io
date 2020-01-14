@@ -185,6 +185,10 @@ Data Fields</h2></td></tr>
 <tr class="memitem:a4105d5a8419a66a6620d690da5649fcb"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev__io.html#a4105d5a8419a66a6620d690da5649fcb">type</a></td></tr>
 <tr class="memdesc:a4105d5a8419a66a6620d690da5649fcb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enumerated value representing the I/O type.  <a href="#a4105d5a8419a66a6620d690da5649fcb">More...</a><br /></td></tr>
 <tr class="separator:a4105d5a8419a66a6620d690da5649fcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeaabc4aee05b2ae4337fe9cb5acda3d1"><td class="memItemLeft" align="right" valign="top"><a id="aeaabc4aee05b2ae4337fe9cb5acda3d1"></a>
+uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev__io.html#aeaabc4aee05b2ae4337fe9cb5acda3d1">num_retries</a></td></tr>
+<tr class="memdesc:aeaabc4aee05b2ae4337fe9cb5acda3d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of IO submission retries. <br /></td></tr>
+<tr class="separator:aeaabc4aee05b2ae4337fe9cb5acda3d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0429238075907c6f637249dda31f3235"><td class="memItemLeft" align="right" valign="top">struct iovec&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev__io.html#a0429238075907c6f637249dda31f3235">iov</a></td></tr>
 <tr class="memdesc:a0429238075907c6f637249dda31f3235"><td class="mdescLeft">&#160;</td><td class="mdescRight">A single iovec element for use by this bdev_io.  <a href="#a0429238075907c6f637249dda31f3235">More...</a><br /></td></tr>
 <tr class="separator:a0429238075907c6f637249dda31f3235"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -201,6 +205,13 @@ union {</td></tr>
 <tr class="memitem:a425495e59ceb8d8d41358359c4f2f8d1"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;int&#160;&#160;&#160;<a class="el" href="structspdk__bdev__io.html#aa9024a5714c4c242271cdcbb34b45a91">iovcnt</a></td></tr>
 <tr class="memdesc:a425495e59ceb8d8d41358359c4f2f8d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">For SG buffer cases, number of iovecs in iovec array.  <a href="#a425495e59ceb8d8d41358359c4f2f8d1">More...</a><br /></td></tr>
 <tr class="separator:a425495e59ceb8d8d41358359c4f2f8d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8863b3c092a5fce107609cc436829274"><td class="memItemLeft" >
+&#160;&#160;&#160;&#160;&#160;&#160;struct iovec *&#160;&#160;&#160;<a class="el" href="structspdk__bdev__io.html#a2a3448e66dcba2deaccc91d37ad89db1">fused_iovs</a></td></tr>
+<tr class="memdesc:a8863b3c092a5fce107609cc436829274"><td class="mdescLeft">&#160;</td><td class="mdescRight">For fused operations such as COMPARE_AND_WRITE, array of iovecs for the second operation. <br /></td></tr>
+<tr class="separator:a8863b3c092a5fce107609cc436829274"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c903d34857f3071c630c635fee921c6"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;int&#160;&#160;&#160;<a class="el" href="structspdk__bdev__io.html#aec576e7766af0ee744ced101de905ff5">fused_iovcnt</a></td></tr>
+<tr class="memdesc:a1c903d34857f3071c630c635fee921c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of iovecs in fused_iovs.  <a href="#a1c903d34857f3071c630c635fee921c6">More...</a><br /></td></tr>
+<tr class="separator:a1c903d34857f3071c630c635fee921c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5846d0ce75390dcd6163676a0f09ea4a"><td class="memItemLeft" >
 &#160;&#160;&#160;&#160;&#160;&#160;void *&#160;&#160;&#160;<b>md_buf</b></td></tr>
 <tr class="separator:a5846d0ce75390dcd6163676a0f09ea4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -362,6 +373,22 @@ uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="s
 </div><div class="memdoc">
 
 <p>Array of iovecs used for I/O splitting. </p>
+
+</div>
+</div>
+<a id="aec576e7766af0ee744ced101de905ff5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec576e7766af0ee744ced101de905ff5">&#9670;&nbsp;</a></span>fused_iovcnt</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_bdev_io::fused_iovcnt</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Number of iovecs in fused_iovs. </p>
 
 </div>
 </div>

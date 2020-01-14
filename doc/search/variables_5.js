@@ -11,6 +11,8 @@ var searchData=
   ['free',['free',['../structspdk__ocssd__chunk__information__entry.html#a8754f5436078bb51613dfa9531af3333',1,'spdk_ocssd_chunk_information_entry']]],
   ['frmw',['frmw',['../structspdk__nvme__ctrlr__data.html#ab1b04c13ee09990a88616b546999211c',1,'spdk_nvme_ctrlr_data']]],
   ['fs',['fs',['../structspdk__nvme__fw__commit.html#af5bbf67aa6f4a82d1fef951e436e34fe',1,'spdk_nvme_fw_commit']]],
+  ['fused_5fiovcnt',['fused_iovcnt',['../structspdk__bdev__io.html#aec576e7766af0ee744ced101de905ff5',1,'spdk_bdev_io']]],
+  ['fused_5fiovs',['fused_iovs',['../structspdk__bdev__io.html#a2a3448e66dcba2deaccc91d37ad89db1',1,'spdk_bdev_io']]],
   ['fuses',['fuses',['../structspdk__nvme__ctrlr__data.html#a512e4ee47f6e09bf5a6d2e8986f09567',1,'spdk_nvme_ctrlr_data']]],
   ['fw_5factivation_5fnotices',['fw_activation_notices',['../structspdk__nvme__ctrlr__data.html#a806b5f99e9d82388e663d0046b1a3bba',1,'spdk_nvme_ctrlr_data']]],
   ['fwug',['fwug',['../structspdk__nvme__ctrlr__data.html#a9f5dd6335c39603ffb5beff3c6d8a6eb',1,'spdk_nvme_ctrlr_data']]]

@@ -50,6 +50,7 @@ var searchData=
   ['num_5fio_5fqueues',['num_io_queues',['../structspdk__nvme__ctrlr__opts.html#a8960ea3aebb4966d5434747e7c2154f9',1,'spdk_nvme_ctrlr_opts']]],
   ['num_5fmd_5fpages',['num_md_pages',['../structspdk__bs__opts.html#a0c7b15264236f4b044731ca7c0de3014',1,'spdk_bs_opts']]],
   ['num_5fpu',['num_pu',['../structspdk__ocssd__geometry__data.html#a21184c8bd337762734f94dfe74025971',1,'spdk_ocssd_geometry_data']]],
+  ['num_5fretries',['num_retries',['../structspdk__bdev__io.html#aeaabc4aee05b2ae4337fe9cb5acda3d1',1,'spdk_bdev_io']]],
   ['number',['number',['../structspdk__nvme__secondary__ctrl__list.html#aff0769e9ba5be1c63d599a9e349aab1a',1,'spdk_nvme_secondary_ctrl_list']]],
   ['nuse',['nuse',['../structspdk__nvme__ns__data.html#a9ca1ea6d0d79fd1440a9a2003ac98253',1,'spdk_nvme_ns_data']]],
   ['nvi',['nvi',['../structspdk__nvme__secondary__ctrl__entry.html#a1ef2a1e2dbe88c04cb6c45341cc8326b',1,'spdk_nvme_secondary_ctrl_entry']]],

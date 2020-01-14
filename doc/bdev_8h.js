@@ -38,6 +38,7 @@ var bdev_8h =
       [ "SPDK_BDEV_IO_TYPE_ZONE_MANAGEMENT", "bdev_8h.html#a633029e24ab5ae4a689bffa2565a519fa34ce78290ebe4963c471bf741689c113", null ],
       [ "SPDK_BDEV_IO_TYPE_ZONE_APPEND", "bdev_8h.html#a633029e24ab5ae4a689bffa2565a519fa0be425e7142d2e0adedd4a883ef0dc0f", null ],
       [ "SPDK_BDEV_IO_TYPE_COMPARE", "bdev_8h.html#a633029e24ab5ae4a689bffa2565a519fa2df554da6afc1daaa7313fa25fb24623", null ],
+      [ "SPDK_BDEV_IO_TYPE_COMPARE_AND_WRITE", "bdev_8h.html#a633029e24ab5ae4a689bffa2565a519fa0475ddf806a6b7ee01dbd6336a5deb6f", null ],
       [ "SPDK_BDEV_NUM_IO_TYPES", "bdev_8h.html#a633029e24ab5ae4a689bffa2565a519fab8b20053cecdcd7973f1c2d0dce2b457", null ]
     ] ],
     [ "spdk_bdev_qos_rate_limit_type", "bdev_8h.html#aedfbfc44fa2113d7ee219d09a0994d93", [
@@ -55,6 +56,7 @@ var bdev_8h =
     [ "spdk_bdev_close", "bdev_8h.html#aaf5fc830851a2eb0aa34bbb40cf5eac6", null ],
     [ "spdk_bdev_compare_blocks", "group__bdev__io__submit__functions.html#ga0846ab7b6c938f0f52ac36cd09a75278", null ],
     [ "spdk_bdev_compare_blocks_with_md", "group__bdev__io__submit__functions.html#ga8a69444aaff6f046f7de8524e8c886d8", null ],
+    [ "spdk_bdev_comparev_and_writev_blocks", "group__bdev__io__submit__functions.html#gafaa766d5c5ca4bc2979e1f5f9015ef11", null ],
     [ "spdk_bdev_comparev_blocks", "group__bdev__io__submit__functions.html#gaf27fa5b35ac2a8d7d78cb31fa8500c8c", null ],
     [ "spdk_bdev_comparev_blocks_with_md", "group__bdev__io__submit__functions.html#ga323ccdb094b61f56840f29745339ceb3", null ],
     [ "spdk_bdev_config_text", "bdev_8h.html#a273c20b5f07dd8c727ec0d0b80b804fe", null ],

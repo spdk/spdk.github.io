@@ -1,5 +1,14 @@
 var NAVTREEINDEX14 =
 {
+"structspdk__bs__opts.html#ac5417afa104f5061bab1bfae0769c3a6":[12,0,39,5],
+"structspdk__bs__opts.html#ae4108b46bcac7c0fc9aecb949ea6c417":[12,0,39,0],
+"structspdk__bs__type.html":[12,0,40],
+"structspdk__bs__type.html#adeb32932fc964af4258f39060def5c38":[12,0,40,0],
+"structspdk__cpuset.html":[12,0,41],
+"structspdk__cpuset.html#a14d7af663cfbe0d7394cdcc10208cc61":[12,0,41,1],
+"structspdk__cpuset.html#ab0ef13363710a177ccdbcf040dea6ee0":[12,0,41,0],
+"structspdk__crc32__table.html":[12,0,42],
+"structspdk__crc32__table.html#a6a9ae230c2366f8be852db92ff6839ae":[12,0,42,0],
 "structspdk__d0__datastore__features.html":[12,0,43],
 "structspdk__d0__datastore__features.html#a154006bb3205fc0b39141e27537884f5":[12,0,43,3],
 "structspdk__d0__datastore__features.html#a2e388f4308c018de43ebc8b929550454":[12,0,43,4],
@@ -240,14 +249,5 @@ var NAVTREEINDEX14 =
 "structspdk__ioat__dma__hw__desc.html#ad159a6862b698e137d9aeb9f605b8347":[12,0,65,11],
 "structspdk__ioat__dma__hw__desc.html#af1fa05cd78a069458c720bd78ab7cd8e":[12,0,65,5],
 "structspdk__ioat__dma__hw__desc.html#af870a3b1f61bed780bd2b0fde5c797e6":[12,0,65,21],
-"structspdk__ioat__fill__hw__desc.html":[12,0,66],
-"structspdk__ioat__fill__hw__desc.html#a04426b2eeece29bedb419b750ae9ce2a":[12,0,66,18],
-"structspdk__ioat__fill__hw__desc.html#a191f26dc0861a1d70ba2b977d95b7acd":[12,0,66,1],
-"structspdk__ioat__fill__hw__desc.html#a1dee1ae6be34281674b5bd8201ff843b":[12,0,66,0],
-"structspdk__ioat__fill__hw__desc.html#a3a6422ad3dbf1424f32285febc3bd221":[12,0,66,2],
-"structspdk__ioat__fill__hw__desc.html#a3da4284f894ae8b646211db4c9469e81":[12,0,66,16],
-"structspdk__ioat__fill__hw__desc.html#a3dfcd95061b01cad5cc3a00d1e241fdd":[12,0,66,19],
-"structspdk__ioat__fill__hw__desc.html#a40f75ea8bcf3972a26f3cacc26c8eaac":[12,0,66,5],
-"structspdk__ioat__fill__hw__desc.html#a6105c4cd999497c9077de1d3f317e0ce":[12,0,66,7],
-"structspdk__ioat__fill__hw__desc.html#a708eb9cd916fbbcb78338869e7e14278":[12,0,66,3]
+"structspdk__ioat__fill__hw__desc.html":[12,0,66]
 };

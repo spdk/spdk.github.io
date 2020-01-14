@@ -4,6 +4,7 @@ var searchData=
   ['pcid',['pcid',['../structspdk__nvme__secondary__ctrl__entry.html#ac896b4c210511e4dab53fbeacfb2cac4',1,'spdk_nvme_secondary_ctrl_entry']]],
   ['pdo',['pdo',['../structspdk__nvme__tcp__common__pdu__hdr.html#a38b7a4969a2e82fe2ef37c2f1eb9aa43',1,'spdk_nvme_tcp_common_pdu_hdr']]],
   ['pdu_5ftype',['pdu_type',['../structspdk__nvme__tcp__common__pdu__hdr.html#ac8710fd9623254ef6408f38316dc2a74',1,'spdk_nvme_tcp_common_pdu_hdr']]],
+  ['pending_5flocked_5franges',['pending_locked_ranges',['../structspdk__bdev_1_1____bdev__internal__fields.html#a293999636600108bc77ef672b62bf4f1',1,'spdk_bdev::__bdev_internal_fields']]],
   ['per_5flcore_5fhistory',['per_lcore_history',['../structspdk__trace__histories.html#a66eb3d8f3f7fdcc8ee0eb3764db0d7e7',1,'spdk_trace_histories']]],
   ['period',['period',['../structspdk__bdev_1_1____bdev__internal__fields.html#a8155b9ed671033cf7e33d348c49bf980',1,'spdk_bdev::__bdev_internal_fields']]],
   ['persist',['persist',['../structspdk__nvme__ns__data.html#ada850d5cd15ecc2d5f216b845bd5c3e8',1,'spdk_nvme_ns_data']]],

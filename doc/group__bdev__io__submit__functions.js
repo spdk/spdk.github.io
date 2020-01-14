@@ -2,6 +2,7 @@ var group__bdev__io__submit__functions =
 [
     [ "spdk_bdev_compare_blocks", "group__bdev__io__submit__functions.html#ga0846ab7b6c938f0f52ac36cd09a75278", null ],
     [ "spdk_bdev_compare_blocks_with_md", "group__bdev__io__submit__functions.html#ga8a69444aaff6f046f7de8524e8c886d8", null ],
+    [ "spdk_bdev_comparev_and_writev_blocks", "group__bdev__io__submit__functions.html#gafaa766d5c5ca4bc2979e1f5f9015ef11", null ],
     [ "spdk_bdev_comparev_blocks", "group__bdev__io__submit__functions.html#gaf27fa5b35ac2a8d7d78cb31fa8500c8c", null ],
     [ "spdk_bdev_comparev_blocks_with_md", "group__bdev__io__submit__functions.html#ga323ccdb094b61f56840f29745339ceb3", null ],
     [ "spdk_bdev_flush", "group__bdev__io__submit__functions.html#ga7105b63cc84037543d9472ab33c8be93", null ],
