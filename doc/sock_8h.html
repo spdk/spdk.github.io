@@ -180,12 +180,12 @@ Functions</h2></td></tr>
 <tr class="memitem:ab596707e3e18b6f3e4ceb365369a3b8f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sock_8h.html#ab596707e3e18b6f3e4ceb365369a3b8f">spdk_sock_getaddr</a> (struct spdk_sock *sock, char *saddr, int slen, uint16_t *sport, char *caddr, int clen, uint16_t *cport)</td></tr>
 <tr class="memdesc:ab596707e3e18b6f3e4ceb365369a3b8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get client and server addresses of the given socket.  <a href="#ab596707e3e18b6f3e4ceb365369a3b8f">More...</a><br /></td></tr>
 <tr class="separator:ab596707e3e18b6f3e4ceb365369a3b8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4f624276a1f0122bb624b2e8c5eaba19"><td class="memItemLeft" align="right" valign="top">struct spdk_sock *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sock_8h.html#a4f624276a1f0122bb624b2e8c5eaba19">spdk_sock_connect</a> (const char *ip, int port)</td></tr>
-<tr class="memdesc:a4f624276a1f0122bb624b2e8c5eaba19"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a socket, connect the socket to the specified address and port (of the server), and then return the socket.  <a href="#a4f624276a1f0122bb624b2e8c5eaba19">More...</a><br /></td></tr>
-<tr class="separator:a4f624276a1f0122bb624b2e8c5eaba19"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4cc9153a7848b65e5487e5205f022909"><td class="memItemLeft" align="right" valign="top">struct spdk_sock *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sock_8h.html#a4cc9153a7848b65e5487e5205f022909">spdk_sock_listen</a> (const char *ip, int port)</td></tr>
-<tr class="memdesc:a4cc9153a7848b65e5487e5205f022909"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a socket, bind the socket to the specified address and port and listen on the socket, and then return the socket.  <a href="#a4cc9153a7848b65e5487e5205f022909">More...</a><br /></td></tr>
-<tr class="separator:a4cc9153a7848b65e5487e5205f022909"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afcbfb1e52df2160547b6f5e2bb8ec636"><td class="memItemLeft" align="right" valign="top">struct spdk_sock *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sock_8h.html#afcbfb1e52df2160547b6f5e2bb8ec636">spdk_sock_connect</a> (const char *ip, int port, char *impl_name)</td></tr>
+<tr class="memdesc:afcbfb1e52df2160547b6f5e2bb8ec636"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a socket using the specific sock implementation, connect the socket to the specified address and port (of the server), and then return the socket.  <a href="#afcbfb1e52df2160547b6f5e2bb8ec636">More...</a><br /></td></tr>
+<tr class="separator:afcbfb1e52df2160547b6f5e2bb8ec636"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47043c348fe296ba0ff0ad0d96050430"><td class="memItemLeft" align="right" valign="top">struct spdk_sock *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sock_8h.html#a47043c348fe296ba0ff0ad0d96050430">spdk_sock_listen</a> (const char *ip, int port, char *impl_name)</td></tr>
+<tr class="memdesc:a47043c348fe296ba0ff0ad0d96050430"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a socket using the specific sock implementation, bind the socket to the specified address and port and listen on the socket, and then return the socket.  <a href="#a47043c348fe296ba0ff0ad0d96050430">More...</a><br /></td></tr>
+<tr class="separator:a47043c348fe296ba0ff0ad0d96050430"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5ea2c431e11b3e15e0fba18fb4faa954"><td class="memItemLeft" align="right" valign="top">struct spdk_sock *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sock_8h.html#a5ea2c431e11b3e15e0fba18fb4faa954">spdk_sock_accept</a> (struct spdk_sock *sock)</td></tr>
 <tr class="memdesc:a5ea2c431e11b3e15e0fba18fb4faa954"><td class="mdescLeft">&#160;</td><td class="mdescRight">Accept a new connection from a client on the specified socket and return a socket structure which holds the connection.  <a href="#a5ea2c431e11b3e15e0fba18fb4faa954">More...</a><br /></td></tr>
 <tr class="separator:a5ea2c431e11b3e15e0fba18fb4faa954"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -332,8 +332,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a4f624276a1f0122bb624b2e8c5eaba19"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4f624276a1f0122bb624b2e8c5eaba19">&#9670;&nbsp;</a></span>spdk_sock_connect()</h2>
+<a id="afcbfb1e52df2160547b6f5e2bb8ec636"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afcbfb1e52df2160547b6f5e2bb8ec636">&#9670;&nbsp;</a></span>spdk_sock_connect()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -348,7 +348,13 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>port</em>&#160;</td>
+          <td class="paramname"><em>port</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>impl_name</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -358,12 +364,13 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Create a socket, connect the socket to the specified address and port (of the server), and then return the socket. </p>
+<p>Create a socket using the specific sock implementation, connect the socket to the specified address and port (of the server), and then return the socket. </p>
 <p>This function is used by client.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">ip</td><td>IP address of the server. </td></tr>
-    <tr><td class="paramname">port</td><td>Port number of the server.</td></tr>
+    <tr><td class="paramname">port</td><td>Port number of the server. </td></tr>
+    <tr><td class="paramname">impl_name</td><td>The sock_implementation to use, such as "posix". If impl_name is specified, it will <em>only</em> try to listen on that impl. If it is NULL, it will try all the sock implementations in order and uses the first sock implementation which can connect. For example, it will try vpp, posix as an example.</td></tr>
   </table>
   </dd>
 </dl>
@@ -799,8 +806,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a4cc9153a7848b65e5487e5205f022909"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4cc9153a7848b65e5487e5205f022909">&#9670;&nbsp;</a></span>spdk_sock_listen()</h2>
+<a id="a47043c348fe296ba0ff0ad0d96050430"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a47043c348fe296ba0ff0ad0d96050430">&#9670;&nbsp;</a></span>spdk_sock_listen()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -815,7 +822,13 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>port</em>&#160;</td>
+          <td class="paramname"><em>port</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>impl_name</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -825,12 +838,13 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Create a socket, bind the socket to the specified address and port and listen on the socket, and then return the socket. </p>
+<p>Create a socket using the specific sock implementation, bind the socket to the specified address and port and listen on the socket, and then return the socket. </p>
 <p>This function is used by server.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">ip</td><td>IP address to listen on. </td></tr>
-    <tr><td class="paramname">port</td><td>Port number.</td></tr>
+    <tr><td class="paramname">port</td><td>Port number. </td></tr>
+    <tr><td class="paramname">impl_name</td><td>The sock_implementation to use, such as "posix". If impl_name is specified, it will <em>only</em> try to listen on that impl. If it is NULL, it will try all the sock implementations in order and uses the first sock implementation which can listen. For example, it will try vpp, posix as an example.</td></tr>
   </table>
   </dd>
 </dl>

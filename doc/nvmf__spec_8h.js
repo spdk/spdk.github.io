@@ -51,6 +51,7 @@ var nvmf__spec_8h =
     [ "SPDK_NVMF_PROP_SIZE_4", "nvmf__spec_8h.html#a0578627f30113b62cb183438a4437b3f", null ],
     [ "SPDK_NVMF_PROP_SIZE_8", "nvmf__spec_8h.html#a5a16bb217b6d9b6c4cb96d1ea3011a4d", null ],
     [ "SPDK_NVMF_TRADDR_MAX_LEN", "nvmf__spec_8h.html#a4b8ccfb0108cce318e5a646b9be31021", null ],
+    [ "SPDK_NVMF_TRSTRING_MAX_LEN", "nvmf__spec_8h.html#a18887bbe75471024d236a9523480bf3b", null ],
     [ "SPDK_NVMF_TRSVCID_MAX_LEN", "nvmf__spec_8h.html#ae3b51e18dd25ae4dacef6741ca20d124", null ],
     [ "SPDK_NVMF_UUID_STRING_LEN", "nvmf__spec_8h.html#aa01e7a265c823f0014892390f9faa39f", null ],
     [ "spdk_nvme_tcp_pdu_type", "nvmf__spec_8h.html#ab42a038d2f0a46d2a5d2290cb91fdbfc", [

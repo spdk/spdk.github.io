@@ -1869,6 +1869,9 @@ $(document).ready(function(){initNavTree('globals_func.html','');});
 <li>spdk_nvme_transport_available()
 : <a class="el" href="nvme_8h.html#ab5735e7600f79c45871b3dc3adb292f2">nvme.h</a>
 </li>
+<li>spdk_nvme_transport_available_by_name()
+: <a class="el" href="nvme_8h.html#ab4541db53f0daadcb4fc1d4f950b4bb5">nvme.h</a>
+</li>
 <li>spdk_nvme_transport_id_adrfam_str()
 : <a class="el" href="nvme_8h.html#afb95c5452e84e2c5c1984341fc816ea7">nvme.h</a>
 </li>
@@ -1884,8 +1887,17 @@ $(document).ready(function(){initNavTree('globals_func.html','');});
 <li>spdk_nvme_transport_id_parse_trtype()
 : <a class="el" href="nvme_8h.html#ab2afed1cce9d9334dfd127db416ada4c">nvme.h</a>
 </li>
+<li>spdk_nvme_transport_id_populate_trstring()
+: <a class="el" href="nvme_8h.html#a5d0eb5d0f2e974c4d85fa251796486a3">nvme.h</a>
+</li>
 <li>spdk_nvme_transport_id_trtype_str()
 : <a class="el" href="nvme_8h.html#aa3a982eb5b757eae63fbc9305627090b">nvme.h</a>
+</li>
+<li>spdk_nvme_transport_register()
+: <a class="el" href="nvme_8h.html#a6e4165e918b05158286f5984a136acbf">nvme.h</a>
+</li>
+<li>spdk_nvme_trid_populate_transport()
+: <a class="el" href="nvme_8h.html#ab5ab0982e7e0191fd16f041a268966b5">nvme.h</a>
 </li>
 <li>spdk_nvmf_get_first_tgt()
 : <a class="el" href="nvmf_8h.html#a306b55570dbe1da898083657d382f6f5">nvmf.h</a>
@@ -2071,7 +2083,7 @@ $(document).ready(function(){initNavTree('globals_func.html','');});
 : <a class="el" href="nvmf_8h.html#a4b6882b7cc35f2fe656c8a8c08f9af5a">nvmf.h</a>
 </li>
 <li>spdk_nvmf_tgt_get_transport()
-: <a class="el" href="nvmf_8h.html#a20b2b976575388f19737df4d435af092">nvmf.h</a>
+: <a class="el" href="nvmf_8h.html#ad0eb8f58d51231f6fcaa1179e12128a6">nvmf.h</a>
 </li>
 <li>spdk_nvmf_tgt_listen()
 : <a class="el" href="nvmf_8h.html#a2c31e57f4634daadf4238bf213a989d6">nvmf.h</a>
@@ -2083,7 +2095,7 @@ $(document).ready(function(){initNavTree('globals_func.html','');});
 : <a class="el" href="nvmf_8h.html#a2aad508811686a6d16f3bfd221ba99a9">nvmf.h</a>
 </li>
 <li>spdk_nvmf_transport_create()
-: <a class="el" href="nvmf_8h.html#ad2ef4994182937ff7b724654e3dee2cf">nvmf.h</a>
+: <a class="el" href="nvmf_8h.html#a141be89e55c37dc017ddeb2494f508c7">nvmf.h</a>
 </li>
 <li>spdk_nvmf_transport_destroy()
 : <a class="el" href="nvmf_8h.html#ab3d5e7bc8701baac2be7858b34fa7baf">nvmf.h</a>
@@ -2095,16 +2107,19 @@ $(document).ready(function(){initNavTree('globals_func.html','');});
 : <a class="el" href="nvmf_8h.html#aa1316a2fe3bd765d755de1df15add5cc">nvmf.h</a>
 </li>
 <li>spdk_nvmf_transport_listen()
-: <a class="el" href="nvmf_8h.html#af3f67fe201cedd887ed6ad35792ff5e7">nvmf.h</a>
+: <a class="el" href="nvmf_8h.html#afa43090f9acc81ff2a5936c9cf783ef3">nvmf.h</a>
 </li>
 <li>spdk_nvmf_transport_opts_init()
-: <a class="el" href="nvmf_8h.html#a33f54dfed0f9cc21264f1c89bd708e94">nvmf.h</a>
+: <a class="el" href="nvmf_8h.html#a7c84fb153ce57c567e2b4c79400442f6">nvmf.h</a>
 </li>
 <li>spdk_nvmf_transport_poll_group_free_stat()
 : <a class="el" href="nvmf_8h.html#ab03fc0bf9946107905bf8148495966f9">nvmf.h</a>
 </li>
 <li>spdk_nvmf_transport_poll_group_get_stat()
 : <a class="el" href="nvmf_8h.html#ae4e59ef25ba7e6a45ab1d613c006f1bb">nvmf.h</a>
+</li>
+<li>spdk_nvmf_transport_register()
+: <a class="el" href="nvmf_8h.html#ab53a8667860940846986a85db26a7236">nvmf.h</a>
 </li>
 <li>spdk_parse_capacity()
 : <a class="el" href="string_8h.html#ab81c3a52c60c7390e54437dc5856996b">string.h</a>
@@ -2461,7 +2476,7 @@ $(document).ready(function(){initNavTree('globals_func.html','');});
 : <a class="el" href="sock_8h.html#a407c7aebae3d1a1556109da46a73213e">sock.h</a>
 </li>
 <li>spdk_sock_connect()
-: <a class="el" href="sock_8h.html#a4f624276a1f0122bb624b2e8c5eaba19">sock.h</a>
+: <a class="el" href="sock_8h.html#afcbfb1e52df2160547b6f5e2bb8ec636">sock.h</a>
 </li>
 <li>spdk_sock_get_optimal_sock_group()
 : <a class="el" href="sock_8h.html#a8d38ca36abb4f475b362c485116678b9">sock.h</a>
@@ -2500,7 +2515,7 @@ $(document).ready(function(){initNavTree('globals_func.html','');});
 : <a class="el" href="sock_8h.html#ae2fc8fd68b9988e2ec771a82914dcc80">sock.h</a>
 </li>
 <li>spdk_sock_listen()
-: <a class="el" href="sock_8h.html#a4cc9153a7848b65e5487e5205f022909">sock.h</a>
+: <a class="el" href="sock_8h.html#a47043c348fe296ba0ff0ad0d96050430">sock.h</a>
 </li>
 <li>spdk_sock_readv()
 : <a class="el" href="sock_8h.html#aec412e1537891ed4a02c24615df619b0">sock.h</a>

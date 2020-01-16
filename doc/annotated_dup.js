@@ -179,6 +179,7 @@ var annotated_dup =
     [ "spdk_nvme_tcp_transport_specific_address_subtype", "structspdk__nvme__tcp__transport__specific__address__subtype.html", "structspdk__nvme__tcp__transport__specific__address__subtype" ],
     [ "spdk_nvme_telemetry_log_page_hdr", "structspdk__nvme__telemetry__log__page__hdr.html", "structspdk__nvme__telemetry__log__page__hdr" ],
     [ "spdk_nvme_transport_id", "structspdk__nvme__transport__id.html", "structspdk__nvme__transport__id" ],
+    [ "spdk_nvme_transport_ops", "structspdk__nvme__transport__ops.html", "structspdk__nvme__transport__ops" ],
     [ "spdk_nvme_vs_register", "unionspdk__nvme__vs__register.html", "unionspdk__nvme__vs__register" ],
     [ "spdk_nvmf_capsule_cmd", "structspdk__nvmf__capsule__cmd.html", "structspdk__nvmf__capsule__cmd" ],
     [ "spdk_nvmf_discovery_log_page", "structspdk__nvmf__discovery__log__page.html", "structspdk__nvmf__discovery__log__page" ],

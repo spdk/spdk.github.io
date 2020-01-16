@@ -143,6 +143,7 @@ $(document).ready(function(){initNavTree('nvme_8h.html','');});
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Data Structures</a> &#124;
+<a href="#define-members">Macros</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
 <a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a>  </div>
@@ -171,6 +172,25 @@ Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__rdma__hooks.html">spdk_nvme_rdma_hooks</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">RDMA Transport Hooks.  <a href="structspdk__nvme__rdma__hooks.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__transport__ops.html">spdk_nvme_transport_ops</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:ab50510ef1ca103e1324417f2b2c80c95"><td class="memItemLeft" align="right" valign="top"><a id="ab50510ef1ca103e1324417f2b2c80c95"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_NVME_TRANSPORT_NAME_FC</b>&#160;&#160;&#160;&quot;FC&quot;</td></tr>
+<tr class="separator:ab50510ef1ca103e1324417f2b2c80c95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa027ac1fbd4b1aa4c992843aac953aac"><td class="memItemLeft" align="right" valign="top"><a id="aa027ac1fbd4b1aa4c992843aac953aac"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_NVME_TRANSPORT_NAME_PCIE</b>&#160;&#160;&#160;&quot;PCIE&quot;</td></tr>
+<tr class="separator:aa027ac1fbd4b1aa4c992843aac953aac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af80940dd87891e9632f6a309ec75f822"><td class="memItemLeft" align="right" valign="top"><a id="af80940dd87891e9632f6a309ec75f822"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_NVME_TRANSPORT_NAME_RDMA</b>&#160;&#160;&#160;&quot;RDMA&quot;</td></tr>
+<tr class="separator:af80940dd87891e9632f6a309ec75f822"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b7c74143a1df7101e6c81a24c9f01a0"><td class="memItemLeft" align="right" valign="top"><a id="a0b7c74143a1df7101e6c81a24c9f01a0"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_NVME_TRANSPORT_NAME_TCP</b>&#160;&#160;&#160;&quot;TCP&quot;</td></tr>
+<tr class="separator:a0b7c74143a1df7101e6c81a24c9f01a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6da5f02442d41a5233de049fb950a8f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_NVME_TRANSPORT_REGISTER</b>(name,  transport_ops)</td></tr>
+<tr class="separator:ac6da5f02442d41a5233de049fb950a8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
@@ -214,10 +234,14 @@ Enumerations</h2></td></tr>
  }</td></tr>
 <tr class="memdesc:ab41e2d311eb6663957cd2f18bc8fb890"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reason for qpair disconnect at the transport layer.  <a href="nvme_8h.html#ab41e2d311eb6663957cd2f18bc8fb890">More...</a><br /></td></tr>
 <tr class="separator:ab41e2d311eb6663957cd2f18bc8fb890"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae87a03c28984a2c0499d50ef5e9d0ece"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#ae87a03c28984a2c0499d50ef5e9d0ece">spdk_nvme_transport_type</a> { <a class="el" href="nvme_8h.html#ae87a03c28984a2c0499d50ef5e9d0ecea162afc05d1ae756b8a7969be140035ea">SPDK_NVME_TRANSPORT_PCIE</a> = 256, 
+<tr class="memitem:ae87a03c28984a2c0499d50ef5e9d0ece"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#ae87a03c28984a2c0499d50ef5e9d0ece">spdk_nvme_transport_type</a> { <br />
+&#160;&#160;<a class="el" href="nvme_8h.html#ae87a03c28984a2c0499d50ef5e9d0ecea162afc05d1ae756b8a7969be140035ea">SPDK_NVME_TRANSPORT_PCIE</a> = 256, 
 <a class="el" href="nvme_8h.html#ae87a03c28984a2c0499d50ef5e9d0ecea140f1cb4edf258bddffeb1c7277d93d8">SPDK_NVME_TRANSPORT_RDMA</a> = SPDK_NVMF_TRTYPE_RDMA, 
 <a class="el" href="nvme_8h.html#ae87a03c28984a2c0499d50ef5e9d0eceabbda195aa6d0a4ad7b437ed5e9a0d01f">SPDK_NVME_TRANSPORT_FC</a> = SPDK_NVMF_TRTYPE_FC, 
-<a class="el" href="nvme_8h.html#ae87a03c28984a2c0499d50ef5e9d0ecea1b74e6a5b484b71142aa6ac9821a6de3">SPDK_NVME_TRANSPORT_TCP</a> = SPDK_NVMF_TRTYPE_TCP
+<a class="el" href="nvme_8h.html#ae87a03c28984a2c0499d50ef5e9d0ecea1b74e6a5b484b71142aa6ac9821a6de3">SPDK_NVME_TRANSPORT_TCP</a> = SPDK_NVMF_TRTYPE_TCP, 
+<br />
+&#160;&#160;<a class="el" href="nvme_8h.html#ae87a03c28984a2c0499d50ef5e9d0ecead9c4d8737f8d49b432c3f2d9d0f86a0a">SPDK_NVME_TRANSPORT_CUSTOM</a> = 4096
+<br />
  }</td></tr>
 <tr class="memdesc:ae87a03c28984a2c0499d50ef5e9d0ece"><td class="mdescLeft">&#160;</td><td class="mdescRight">NVMe library transports.  <a href="nvme_8h.html#ae87a03c28984a2c0499d50ef5e9d0ece">More...</a><br /></td></tr>
 <tr class="separator:ae87a03c28984a2c0499d50ef5e9d0ece"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -253,9 +277,15 @@ Functions</h2></td></tr>
 <tr class="memitem:ac37484cc5d14777e4ae1fde031d0edf2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#ac37484cc5d14777e4ae1fde031d0edf2">spdk_nvme_transport_id_parse</a> (struct <a class="el" href="structspdk__nvme__transport__id.html">spdk_nvme_transport_id</a> *trid, const char *str)</td></tr>
 <tr class="memdesc:ac37484cc5d14777e4ae1fde031d0edf2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parse the string representation of a transport ID.  <a href="#ac37484cc5d14777e4ae1fde031d0edf2">More...</a><br /></td></tr>
 <tr class="separator:ac37484cc5d14777e4ae1fde031d0edf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5ab0982e7e0191fd16f041a268966b5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#ab5ab0982e7e0191fd16f041a268966b5">spdk_nvme_trid_populate_transport</a> (struct <a class="el" href="structspdk__nvme__transport__id.html">spdk_nvme_transport_id</a> *trid, enum <a class="el" href="nvme_8h.html#ae87a03c28984a2c0499d50ef5e9d0ece">spdk_nvme_transport_type</a> trtype)</td></tr>
+<tr class="memdesc:ab5ab0982e7e0191fd16f041a268966b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fill in the trtype and trstring fields of this trid based on a known transport type.  <a href="#ab5ab0982e7e0191fd16f041a268966b5">More...</a><br /></td></tr>
+<tr class="separator:ab5ab0982e7e0191fd16f041a268966b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad068dd50f11160450098712422116785"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#ad068dd50f11160450098712422116785">spdk_nvme_host_id_parse</a> (struct <a class="el" href="structspdk__nvme__host__id.html">spdk_nvme_host_id</a> *hostid, const char *str)</td></tr>
 <tr class="memdesc:ad068dd50f11160450098712422116785"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parse the string representation of a host ID.  <a href="#ad068dd50f11160450098712422116785">More...</a><br /></td></tr>
 <tr class="separator:ad068dd50f11160450098712422116785"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d0eb5d0f2e974c4d85fa251796486a3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a5d0eb5d0f2e974c4d85fa251796486a3">spdk_nvme_transport_id_populate_trstring</a> (struct <a class="el" href="structspdk__nvme__transport__id.html">spdk_nvme_transport_id</a> *trid, const char *trstring)</td></tr>
+<tr class="memdesc:a5d0eb5d0f2e974c4d85fa251796486a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parse the string representation of a transport ID tranport type into the trid struct.  <a href="#a5d0eb5d0f2e974c4d85fa251796486a3">More...</a><br /></td></tr>
+<tr class="separator:a5d0eb5d0f2e974c4d85fa251796486a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab2afed1cce9d9334dfd127db416ada4c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#ab2afed1cce9d9334dfd127db416ada4c">spdk_nvme_transport_id_parse_trtype</a> (enum <a class="el" href="nvme_8h.html#ae87a03c28984a2c0499d50ef5e9d0ece">spdk_nvme_transport_type</a> *trtype, const char *str)</td></tr>
 <tr class="memdesc:ab2afed1cce9d9334dfd127db416ada4c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parse the string representation of a transport ID tranport type.  <a href="#ab2afed1cce9d9334dfd127db416ada4c">More...</a><br /></td></tr>
 <tr class="separator:ab2afed1cce9d9334dfd127db416ada4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -280,6 +310,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ab5735e7600f79c45871b3dc3adb292f2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#ab5735e7600f79c45871b3dc3adb292f2">spdk_nvme_transport_available</a> (enum <a class="el" href="nvme_8h.html#ae87a03c28984a2c0499d50ef5e9d0ece">spdk_nvme_transport_type</a> trtype)</td></tr>
 <tr class="memdesc:ab5735e7600f79c45871b3dc3adb292f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine whether the NVMe library can handle a specific NVMe over Fabrics transport type.  <a href="#ab5735e7600f79c45871b3dc3adb292f2">More...</a><br /></td></tr>
 <tr class="separator:ab5735e7600f79c45871b3dc3adb292f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4541db53f0daadcb4fc1d4f950b4bb5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#ab4541db53f0daadcb4fc1d4f950b4bb5">spdk_nvme_transport_available_by_name</a> (const char *transport_name)</td></tr>
+<tr class="memdesc:ab4541db53f0daadcb4fc1d4f950b4bb5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine whether the NVMe library can handle a specific NVMe over Fabrics transport type.  <a href="#ab4541db53f0daadcb4fc1d4f950b4bb5">More...</a><br /></td></tr>
+<tr class="separator:ab4541db53f0daadcb4fc1d4f950b4bb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a225bbc386ec518ae21bd5536f21db45d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a225bbc386ec518ae21bd5536f21db45d">spdk_nvme_probe</a> (const struct <a class="el" href="structspdk__nvme__transport__id.html">spdk_nvme_transport_id</a> *trid, void *cb_ctx, <a class="el" href="nvme_8h.html#a95f40d5179f8424b466a30ba0610ab4c">spdk_nvme_probe_cb</a> probe_cb, <a class="el" href="nvme_8h.html#ac1eaa795f075495337b270667661ce5d">spdk_nvme_attach_cb</a> attach_cb, <a class="el" href="nvme_8h.html#a05f1aa545be57a03bb2dd0c6180172b6">spdk_nvme_remove_cb</a> remove_cb)</td></tr>
 <tr class="memdesc:a225bbc386ec518ae21bd5536f21db45d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enumerate the bus indicated by the transport ID and attach the userspace NVMe driver to each device found if desired.  <a href="#a225bbc386ec518ae21bd5536f21db45d">More...</a><br /></td></tr>
 <tr class="separator:a225bbc386ec518ae21bd5536f21db45d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -595,10 +628,42 @@ Functions</h2></td></tr>
 <tr class="memitem:af071b3e57e51005c4e2b877eeda58b4b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#af071b3e57e51005c4e2b877eeda58b4b">spdk_nvme_cuse_unregister</a> (struct spdk_nvme_ctrlr *ctrlr)</td></tr>
 <tr class="memdesc:af071b3e57e51005c4e2b877eeda58b4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove a previously created character device (Experimental)  <a href="#af071b3e57e51005c4e2b877eeda58b4b">More...</a><br /></td></tr>
 <tr class="separator:af071b3e57e51005c4e2b877eeda58b4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e4165e918b05158286f5984a136acbf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a6e4165e918b05158286f5984a136acbf">spdk_nvme_transport_register</a> (const struct <a class="el" href="structspdk__nvme__transport__ops.html">spdk_nvme_transport_ops</a> *ops)</td></tr>
+<tr class="memdesc:a6e4165e918b05158286f5984a136acbf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register the operations for a given transport type.  <a href="#a6e4165e918b05158286f5984a136acbf">More...</a><br /></td></tr>
+<tr class="separator:a6e4165e918b05158286f5984a136acbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>NVMe driver public API. </p>
-</div><h2 class="groupheader">Typedef Documentation</h2>
+</div><h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="ac6da5f02442d41a5233de049fb950a8f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac6da5f02442d41a5233de049fb950a8f">&#9670;&nbsp;</a></span>SPDK_NVME_TRANSPORT_REGISTER</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SPDK_NVME_TRANSPORT_REGISTER</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">name, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">transport_ops&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line"><span class="keyword">static</span> <span class="keywordtype">void</span> __attribute__((constructor)) spdk_nvme_transport_register_##name(<span class="keywordtype">void</span>) \</div><div class="line">{ \</div><div class="line">        spdk_nvme_transport_register(transport_ops); \</div><div class="line">}\</div></div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Typedef Documentation</h2>
 <a id="ae564dc7dced1dd7b474c1a6923734a6d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae564dc7dced1dd7b474c1a6923734a6d">&#9670;&nbsp;</a></span>spdk_nvme_aer_cb</h2>
 
@@ -893,6 +958,8 @@ Functions</h2></td></tr>
 <tr><td class="fieldname"><a id="ae87a03c28984a2c0499d50ef5e9d0eceabbda195aa6d0a4ad7b437ed5e9a0d01f"></a>SPDK_NVME_TRANSPORT_FC&#160;</td><td class="fielddoc"><p>Fibre Channel (FC) Transport. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="ae87a03c28984a2c0499d50ef5e9d0ecea1b74e6a5b484b71142aa6ac9821a6de3"></a>SPDK_NVME_TRANSPORT_TCP&#160;</td><td class="fielddoc"><p>TCP Transport. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ae87a03c28984a2c0499d50ef5e9d0ecead9c4d8737f8d49b432c3f2d9d0f86a0a"></a>SPDK_NVME_TRANSPORT_CUSTOM&#160;</td><td class="fielddoc"><p>Custom Transport (Not spec defined) </p>
 </td></tr>
 </table>
 
@@ -6345,7 +6412,34 @@ value other than 0 and -EAGAIN probe error with one controller. </dd></dl>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>true if trtype is supported or false if it is not supported. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>true if trtype is supported or false if it is not supported or if SPDK_NVME_TRANSPORT_CUSTOM is supplied as trtype since it can represent multiple transports. </dd></dl>
+
+</div>
+</div>
+<a id="ab4541db53f0daadcb4fc1d4f950b4bb5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab4541db53f0daadcb4fc1d4f950b4bb5">&#9670;&nbsp;</a></span>spdk_nvme_transport_available_by_name()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool spdk_nvme_transport_available_by_name </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>transport_name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Determine whether the NVMe library can handle a specific NVMe over Fabrics transport type. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">transport_name</td><td>Name of the NVMe over Fabrics transport type to check.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if transport_name is supported or false if it is not supported. </dd></dl>
 
 </div>
 </div>
@@ -6546,6 +6640,44 @@ value other than 0 and -EAGAIN probe error with one controller. </dd></dl>
 
 </div>
 </div>
+<a id="a5d0eb5d0f2e974c4d85fa251796486a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d0eb5d0f2e974c4d85fa251796486a3">&#9670;&nbsp;</a></span>spdk_nvme_transport_id_populate_trstring()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_nvme_transport_id_populate_trstring </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structspdk__nvme__transport__id.html">spdk_nvme_transport_id</a> *&#160;</td>
+          <td class="paramname"><em>trid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>trstring</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Parse the string representation of a transport ID tranport type into the trid struct. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">trid</td><td>The trid to write to </td></tr>
+    <tr><td class="paramname">trstring</td><td>Input string representation of transport type (e.g. "PCIe", "RDMA").</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 if parsing was successful and trtype is filled out, or negated errno values if the provided string was an invalid transport string. </dd></dl>
+
+</div>
+</div>
 <a id="aa3a982eb5b757eae63fbc9305627090b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa3a982eb5b757eae63fbc9305627090b">&#9670;&nbsp;</a></span>spdk_nvme_transport_id_trtype_str()</h2>
 
@@ -6570,6 +6702,70 @@ value other than 0 and -EAGAIN probe error with one controller. </dd></dl>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>static string constant describing trtype, or NULL if trtype not found. </dd></dl>
+
+</div>
+</div>
+<a id="a6e4165e918b05158286f5984a136acbf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e4165e918b05158286f5984a136acbf">&#9670;&nbsp;</a></span>spdk_nvme_transport_register()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_nvme_transport_register </td>
+          <td>(</td>
+          <td class="paramtype">const struct <a class="el" href="structspdk__nvme__transport__ops.html">spdk_nvme_transport_ops</a> *&#160;</td>
+          <td class="paramname"><em>ops</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Register the operations for a given transport type. </p>
+<p>This function should be invoked by referencing the macro SPDK_NVME_TRANSPORT_REGISTER macro in the transport's .c file.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ops</td><td>The operations associated with an NVMe-oF transport. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ab5ab0982e7e0191fd16f041a268966b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab5ab0982e7e0191fd16f041a268966b5">&#9670;&nbsp;</a></span>spdk_nvme_trid_populate_transport()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_nvme_trid_populate_transport </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structspdk__nvme__transport__id.html">spdk_nvme_transport_id</a> *&#160;</td>
+          <td class="paramname"><em>trid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">enum <a class="el" href="nvme_8h.html#ae87a03c28984a2c0499d50ef5e9d0ece">spdk_nvme_transport_type</a>&#160;</td>
+          <td class="paramname"><em>trtype</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Fill in the trtype and trstring fields of this trid based on a known transport type. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">trid</td><td>The trid to fill out. </td></tr>
+    <tr><td class="paramname">trtype</td><td>The transport type to use for filling the trid fields. Only valid for transport types referenced in the NVMe-oF spec. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

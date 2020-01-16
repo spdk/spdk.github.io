@@ -147,8 +147,15 @@ $(document).ready(function(){initNavTree('changelog.html','');});
 <div class="contents">
 <div class="textblock"><h1><a class="anchor" id="changelog-v20-01"></a>
 v20.01: (Upcoming Release)</h1>
+<h2>ftl</h2>
+<p>All NVMe dependencies were removed from ftl library. From now ftl library is using bdev_zone API. bdev_ftl becomes virtual bdev.</p>
+<p><code>ctrlr</code> and <code>trid</code> fields in <code><a class="el" href="structspdk__ftl__dev__init__opts.html">spdk_ftl_dev_init_opts</a></code> structure were replaced by <code>base_bdev_desc</code>.</p>
+<p><code>bdev_ftl_create</code> RPC method <code>trtype</code> and <code>traddr</code> parameters were replaced by <code>base_bdev</code> parameter.</p>
+<p><code>spdk_ftl_module_init</code> and <code>spdk_ftl_module_fini</code> functions were removed.</p>
+<p><code>spdk_ftl_punit_range</code> and <code>ftl_module_init_opts</code> structures were removed.</p>
 <h2>sock</h2>
 <p>Added spdk_sock_writev_async for performing asynchronous writes to sockets. This call will never return EAGAIN, instead queueing internally until the data has all been sent. This can simplify many code flows that create pollers to continue attempting to flush writes on sockets.</p>
+<p>Added <code>impl_name</code> parameter in spdk_sock_listen and spdk_sock_connect functions. Users may now specify the sock layer implementation they'd prefer to use. Valid implementations are currently "vpp" and "posix" and NULL, where NULL results in the previous behavior of the functions.</p>
 <h2>isa-l</h2>
 <p>Updated ISA-L submodule to commit f3993f5c0b6911 which includes implementation and optimization for aarch64.</p>
 <p>Enabled ISA-L on aarch64 by default in addition to x86.</p>

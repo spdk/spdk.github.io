@@ -150,6 +150,10 @@ $(document).ready(function(){initNavTree('structspdk__nvmf__transport__ops.html'
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
+<tr class="memitem:a2ed87a42a2882535b1833fcc3785ca95"><td class="memItemLeft" align="right" valign="top"><a id="a2ed87a42a2882535b1833fcc3785ca95"></a>
+char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvmf__transport__ops.html#a2ed87a42a2882535b1833fcc3785ca95">name</a> [SPDK_NVMF_TRSTRING_MAX_LEN]</td></tr>
+<tr class="memdesc:a2ed87a42a2882535b1833fcc3785ca95"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transport name. <br /></td></tr>
+<tr class="separator:a2ed87a42a2882535b1833fcc3785ca95"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a22ddd0d23a055a17e6bd10fe4927a4db"><td class="memItemLeft" align="right" valign="top"><a id="a22ddd0d23a055a17e6bd10fe4927a4db"></a>
 enum <a class="el" href="nvme_8h.html#ae87a03c28984a2c0499d50ef5e9d0ece">spdk_nvme_transport_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvmf__transport__ops.html#a22ddd0d23a055a17e6bd10fe4927a4db">type</a></td></tr>
 <tr class="memdesc:a22ddd0d23a055a17e6bd10fe4927a4db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transport type. <br /></td></tr>
@@ -166,9 +170,9 @@ struct spdk_nvmf_transport *(*&#160;</td><td class="memItemRight" valign="bottom
 int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvmf__transport__ops.html#acf56627c91b208e3531b0d2ecbde3405">destroy</a> )(struct spdk_nvmf_transport *transport)</td></tr>
 <tr class="memdesc:acf56627c91b208e3531b0d2ecbde3405"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy the transport. <br /></td></tr>
 <tr class="separator:acf56627c91b208e3531b0d2ecbde3405"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a434205e227615c534b70df154eeeaf33"><td class="memItemLeft" align="right" valign="top">int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvmf__transport__ops.html#a434205e227615c534b70df154eeeaf33">listen</a> )(struct spdk_nvmf_transport *transport, const struct <a class="el" href="structspdk__nvme__transport__id.html">spdk_nvme_transport_id</a> *trid)</td></tr>
-<tr class="memdesc:a434205e227615c534b70df154eeeaf33"><td class="mdescLeft">&#160;</td><td class="mdescRight">Instruct the transport to accept new connections at the address provided.  <a href="#a434205e227615c534b70df154eeeaf33">More...</a><br /></td></tr>
-<tr class="separator:a434205e227615c534b70df154eeeaf33"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b22c86aeea13d3b7ca7f29ee8dce100"><td class="memItemLeft" align="right" valign="top">int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvmf__transport__ops.html#a9b22c86aeea13d3b7ca7f29ee8dce100">listen</a> )(struct spdk_nvmf_transport *transport, const struct <a class="el" href="structspdk__nvme__transport__id.html">spdk_nvme_transport_id</a> *trid, <a class="el" href="nvmf_8h.html#a854e30bf69f07bb06b2cbcdd08ca7eba">spdk_nvmf_tgt_listen_done_fn</a> cb_fn, void *cb_arg)</td></tr>
+<tr class="memdesc:a9b22c86aeea13d3b7ca7f29ee8dce100"><td class="mdescLeft">&#160;</td><td class="mdescRight">Instruct the transport to accept new connections at the address provided.  <a href="#a9b22c86aeea13d3b7ca7f29ee8dce100">More...</a><br /></td></tr>
+<tr class="separator:a9b22c86aeea13d3b7ca7f29ee8dce100"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2d160f44677431f2179416ebd7768c5a"><td class="memItemLeft" align="right" valign="top"><a id="a2d160f44677431f2179416ebd7768c5a"></a>
 int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvmf__transport__ops.html#a2d160f44677431f2179416ebd7768c5a">stop_listen</a> )(struct spdk_nvmf_transport *transport, const struct <a class="el" href="structspdk__nvme__transport__id.html">spdk_nvme_transport_id</a> *trid)</td></tr>
 <tr class="memdesc:a2d160f44677431f2179416ebd7768c5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stop accepting new connections at the given address. <br /></td></tr>
@@ -234,14 +238,14 @@ void(*&#160;</td><td class="memItemRight" valign="bottom"><b>poll_group_free_sta
 <tr class="separator:af75a8f9214c03164a00dae20747fdb14"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Field Documentation</h2>
-<a id="a434205e227615c534b70df154eeeaf33"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a434205e227615c534b70df154eeeaf33">&#9670;&nbsp;</a></span>listen</h2>
+<a id="a9b22c86aeea13d3b7ca7f29ee8dce100"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9b22c86aeea13d3b7ca7f29ee8dce100">&#9670;&nbsp;</a></span>listen</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int(* spdk_nvmf_transport_ops::listen) (struct spdk_nvmf_transport *transport, const struct <a class="el" href="structspdk__nvme__transport__id.html">spdk_nvme_transport_id</a> *trid)</td>
+          <td class="memname">int(* spdk_nvmf_transport_ops::listen) (struct spdk_nvmf_transport *transport, const struct <a class="el" href="structspdk__nvme__transport__id.html">spdk_nvme_transport_id</a> *trid, <a class="el" href="nvmf_8h.html#a854e30bf69f07bb06b2cbcdd08ca7eba">spdk_nvmf_tgt_listen_done_fn</a> cb_fn, void *cb_arg)</td>
         </tr>
       </table>
 </div><div class="memdoc">

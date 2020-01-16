@@ -2,6 +2,7 @@ var structspdk__bdev =
 [
     [ "__bdev_internal_fields", "structspdk__bdev_1_1____bdev__internal__fields.html", "structspdk__bdev_1_1____bdev__internal__fields" ],
     [ "TAILQ_HEAD", "structspdk__bdev.html#ad6af2c003c0428ec514d45fade176d22", null ],
+    [ "acwu", "structspdk__bdev.html#ab10f57ea24409424fd71a3b53d6fe31e", null ],
     [ "blockcnt", "structspdk__bdev.html#aef65d7444968b8981d46d0c520fd5287", null ],
     [ "blocklen", "structspdk__bdev.html#ac737d9458e1184f313aed88b8af9b862", null ],
     [ "ctxt", "structspdk__bdev.html#a0329aa7395f9784d4dc8c596efc4ac8c", null ],

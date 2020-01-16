@@ -159,6 +159,7 @@ var searchData=
   ['spdk_5fnvme_5ftcp_5ftransport_5fspecific_5faddress_5fsubtype',['spdk_nvme_tcp_transport_specific_address_subtype',['../structspdk__nvme__tcp__transport__specific__address__subtype.html',1,'']]],
   ['spdk_5fnvme_5ftelemetry_5flog_5fpage_5fhdr',['spdk_nvme_telemetry_log_page_hdr',['../structspdk__nvme__telemetry__log__page__hdr.html',1,'']]],
   ['spdk_5fnvme_5ftransport_5fid',['spdk_nvme_transport_id',['../structspdk__nvme__transport__id.html',1,'']]],
+  ['spdk_5fnvme_5ftransport_5fops',['spdk_nvme_transport_ops',['../structspdk__nvme__transport__ops.html',1,'']]],
   ['spdk_5fnvme_5fvs_5fregister',['spdk_nvme_vs_register',['../unionspdk__nvme__vs__register.html',1,'']]],
   ['spdk_5fnvmf_5fcapsule_5fcmd',['spdk_nvmf_capsule_cmd',['../structspdk__nvmf__capsule__cmd.html',1,'']]],
   ['spdk_5fnvmf_5fdiscovery_5flog_5fpage',['spdk_nvmf_discovery_log_page',['../structspdk__nvmf__discovery__log__page.html',1,'']]],
