@@ -166,11 +166,15 @@ v20.01: (Upcoming Release)</h1>
 <p>Added <code>blobfs_set_cache_size</code> RPC method to set cache size for blobstore filesystem.</p>
 <h2>nvmf</h2>
 <p>Add SockPriority option in [Transport] section, this can be used for NVMe-oF target on TCP transport to set sock priority for the incomming TCP connections.</p>
+<p>The NVMe-oF target now supports plugging out of tree NVMe-oF transports. In order to facilitate this feature, several small API changes have been made:</p>
+<p>The <code><a class="el" href="structspdk__nvme__transport__id.html" title="NVMe transport identifier. ">spdk_nvme_transport_id</a></code> struct now contains a trstring member used to identify the transport. <code>spdk_nvmf_tgt_get_transport</code>, <code>spdk_nvmf_transport_opts_init</code>, and <code>spdk_nvmf_transport_create</code> all have been modified to take a string. A function table, <code><a class="el" href="structspdk__nvmf__transport__ops.html">spdk_nvmf_transport_ops</a></code>, and macro, <code>SPDK_NVMF_TRANSPORT_REGISTER</code>, have been added which enable registering out of tree transports.</p>
 <h2>util</h2>
 <p><code>spdk_pipe</code>, a new utility for buffering data from sockets or files for parsing has been added. The public API is available at <code><a class="el" href="pipe_8h.html" title="A pipe that is intended for buffering data between a source, such as a socket, and a sink...">include/spdk/pipe.h</a></code>.</p>
 <h2>nvme</h2>
 <p><code>delayed_pcie_doorbell</code> parameter in <code><a class="el" href="structspdk__nvme__io__qpair__opts.html" title="NVMe I/O queue pair initialization options. ">spdk_nvme_io_qpair_opts</a></code> was renamed to <code>delay_cmd_submit</code> to allow reuse in other transports.</p>
 <p>Added RDMA WR batching to NVMf RDMA initiator. Send and receive WRs are chained together and posted with a single call to ibv_post_send(receive) in the next call to qpair completion processing function. Batching is controlled by 'delay_cmd_submit' qpair option.</p>
+<p>The NVMe-oF initiator now supports plugging out of tree NVMe-oF transports. In order to facilitate this feature, several small API changes have been made:</p>
+<p>The <code><a class="el" href="structspdk__nvme__transport__id.html" title="NVMe transport identifier. ">spdk_nvme_transport_id</a></code> struct now contains a trstring member used to identify the transport. A new function, <code>spdk_nvme_transport_available_by_name</code>, has been added. A function table, <code><a class="el" href="structspdk__nvme__transport__ops.html">spdk_nvme_transport_ops</a></code>, and macro, <code>SPDK_NVME_TRANSPORT_REGISTER</code>, have been added which enable registering out of tree transports.</p>
 <h2>rpc</h2>
 <p>Added optional 'delay_cmd_submit' parameter to 'bdev_nvme_set_options' RPC method.</p>
 <p>An new RPC <code>framework_get_reactors</code> has been added to retrieve list of all reactors.</p>

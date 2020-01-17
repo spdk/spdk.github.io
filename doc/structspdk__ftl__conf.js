@@ -12,5 +12,6 @@ var structspdk__ftl__conf =
     [ "num_interleave_units", "structspdk__ftl__conf.html#accce5642e65fa0802f480315ce2d7999", null ],
     [ "nv_cache", "structspdk__ftl__conf.html#aa77e08d7956329898b0c64aa1b137adf", null ],
     [ "rwb_size", "structspdk__ftl__conf.html#af873e1c7d113de72fdf351479442744a", null ],
+    [ "use_append", "structspdk__ftl__conf.html#a616721ee96e7cd1f7721ed19f59dc247", null ],
     [ "user_io_pool_size", "structspdk__ftl__conf.html#a1806a31e7d6c83f86d598e477474c102", null ]
 ];
