@@ -1848,6 +1848,16 @@ nvmf_set_config</h2>
 <th class="markdownTableHeadNone">Name  </th><th class="markdownTableHeadNone">Optional  </th><th class="markdownTableHeadNone">Type  </th><th class="markdownTableHeadNone">Description   </th></tr>
 <tr class="markdownTableBody" class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">acceptor_poll_rate  </td><td class="markdownTableBodyNone">Optional  </td><td class="markdownTableBodyNone">number  </td><td class="markdownTableBodyNone">Polling interval of the acceptor for incoming connections (microseconds)   </td></tr>
+<tr class="markdownTableBody" class="markdownTableRowEven">
+<td class="markdownTableBodyNone">admin_cmd_passthru  </td><td class="markdownTableBodyNone">Optional  </td><td class="markdownTableBodyNone">object  </td><td class="markdownTableBodyNone">Admin command passthru configuration   </td></tr>
+</table>
+<h3><a class="anchor" id="spdk_nvmf_admin_passthru_conf"></a>
+admin_cmd_passthru</h3>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Name  </th><th class="markdownTableHeadNone">Optional  </th><th class="markdownTableHeadNone">Type  </th><th class="markdownTableHeadNone">Description   </th></tr>
+<tr class="markdownTableBody" class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">identify_ctrlr  </td><td class="markdownTableBodyNone">Required  </td><td class="markdownTableBodyNone">bool  </td><td class="markdownTableBodyNone">If true, enables custom identify handler that reports some identify attributes from the underlying NVMe drive   </td></tr>
 </table>
 <h3>Example</h3>
 <p>Example request:</p>

@@ -1,5 +1,11 @@
 var NAVTREEINDEX20 =
 {
+"structspdk__nvmf__transport__poll__group__stat.html#aa8d8af58f65384927b478f92a5f06eeb":[12,0,224,1],
+"structspdk__nvmf__transport__poll__group__stat.html#ab272d50892901746c53962bd4389588d":[12,0,224,3],
+"structspdk__nvmf__transport__poll__group__stat.html#ae48623b8668c953062ba5fece118e072":[12,0,224,4],
+"structspdk__ocssd__chunk__information__entry.html":[12,0,226],
+"structspdk__ocssd__chunk__information__entry.html#a0a502a1c81f58d37630d8380e6794ffe":[12,0,226,13],
+"structspdk__ocssd__chunk__information__entry.html#a1fc2a46fc77b068996c02c36e1b740a3":[12,0,226,0],
 "structspdk__ocssd__chunk__information__entry.html#a2df5f77549b5dd37fd7b2a1f65be5b45":[12,0,226,5],
 "structspdk__ocssd__chunk__information__entry.html#a423d06c2f9276a7ae37e9efe25a7d9bd":[12,0,226,8],
 "structspdk__ocssd__chunk__information__entry.html#a63a9df88fa5e6bd58efacfec74ba6437":[12,0,226,9],
@@ -243,11 +249,5 @@ var NAVTREEINDEX20 =
 "structspdk__scsi__port__desc.html":[12,0,247],
 "structspdk__scsi__port__desc.html#a1122aceae5f88a71a7dc11ace3c17c7f":[12,0,247,5],
 "structspdk__scsi__port__desc.html#a3af2d30cad186c3639f38cd352cfe8e9":[12,0,247,7],
-"structspdk__scsi__port__desc.html#a3d858684ae76bd76a5cdddd7ef34c9a0":[12,0,247,2],
-"structspdk__scsi__port__desc.html#a55834f658b996093a6c0f16914056757":[12,0,247,6],
-"structspdk__scsi__port__desc.html#aa70015f373882ede492e8e71eec43e6d":[12,0,247,0],
-"structspdk__scsi__port__desc.html#ad0a6fe47eaf6aab5f91f867591b61369":[12,0,247,1],
-"structspdk__scsi__port__desc.html#ae68a067069a8b28aff3dd68b4f43c8a9":[12,0,247,3],
-"structspdk__scsi__port__desc.html#af8ed6665420b4cc5ab3dc0567a41553a":[12,0,247,4],
-"structspdk__scsi__pr__in__full__status__data.html":[12,0,248]
+"structspdk__scsi__port__desc.html#a3d858684ae76bd76a5cdddd7ef34c9a0":[12,0,247,2]
 };

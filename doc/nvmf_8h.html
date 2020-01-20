@@ -380,6 +380,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a0f3fbe4ab1d90cda9a1f3fcbf2cb857d"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="nvmf__spec_8h.html#a808272f050cc373f3a90871c1528afd4">spdk_nvmf_subtype</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#a0f3fbe4ab1d90cda9a1f3fcbf2cb857d">spdk_nvmf_subsystem_get_type</a> (struct spdk_nvmf_subsystem *subsystem)</td></tr>
 <tr class="memdesc:a0f3fbe4ab1d90cda9a1f3fcbf2cb857d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the type of the specified subsystem.  <a href="#a0f3fbe4ab1d90cda9a1f3fcbf2cb857d">More...</a><br /></td></tr>
 <tr class="separator:a0f3fbe4ab1d90cda9a1f3fcbf2cb857d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acfae99734ec18b90dbb6ef39d1b73860"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#acfae99734ec18b90dbb6ef39d1b73860">spdk_nvmf_subsystem_get_max_nsid</a> (struct spdk_nvmf_subsystem *subsystem)</td></tr>
+<tr class="memdesc:acfae99734ec18b90dbb6ef39d1b73860"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get maximum namespace id of the specified subsystem.  <a href="#acfae99734ec18b90dbb6ef39d1b73860">More...</a><br /></td></tr>
+<tr class="separator:acfae99734ec18b90dbb6ef39d1b73860"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7c84fb153ce57c567e2b4c79400442f6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#a7c84fb153ce57c567e2b4c79400442f6">spdk_nvmf_transport_opts_init</a> (const char *transport_name, struct <a class="el" href="structspdk__nvmf__transport__opts.html">spdk_nvmf_transport_opts</a> *opts)</td></tr>
 <tr class="memdesc:a7c84fb153ce57c567e2b4c79400442f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize transport options.  <a href="#a7c84fb153ce57c567e2b4c79400442f6">More...</a><br /></td></tr>
 <tr class="separator:a7c84fb153ce57c567e2b4c79400442f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1641,6 +1644,33 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Maximum number of namespaces allowed in the subsystem, or 0 for unlimited. </dd></dl>
+
+</div>
+</div>
+<a id="acfae99734ec18b90dbb6ef39d1b73860"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acfae99734ec18b90dbb6ef39d1b73860">&#9670;&nbsp;</a></span>spdk_nvmf_subsystem_get_max_nsid()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t spdk_nvmf_subsystem_get_max_nsid </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_nvmf_subsystem *&#160;</td>
+          <td class="paramname"><em>subsystem</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get maximum namespace id of the specified subsystem. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">subsystem</td><td>Subsystem to query.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>maximum namespace id </dd></dl>
 
 </div>
 </div>

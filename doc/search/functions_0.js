@@ -618,6 +618,7 @@ var searchData=
   ['spdk_5fnvmf_5fsubsystem_5fget_5ffirst_5flistener',['spdk_nvmf_subsystem_get_first_listener',['../nvmf_8h.html#ab1bccfb86fd4d727c2943ab810d5d862',1,'nvmf.h']]],
   ['spdk_5fnvmf_5fsubsystem_5fget_5ffirst_5fns',['spdk_nvmf_subsystem_get_first_ns',['../nvmf_8h.html#ab797c6df2dc8fab9833de1711b6fe7f4',1,'nvmf.h']]],
   ['spdk_5fnvmf_5fsubsystem_5fget_5fmax_5fnamespaces',['spdk_nvmf_subsystem_get_max_namespaces',['../nvmf_8h.html#a414b91bad7200ab931f14a06585ccc74',1,'nvmf.h']]],
+  ['spdk_5fnvmf_5fsubsystem_5fget_5fmax_5fnsid',['spdk_nvmf_subsystem_get_max_nsid',['../nvmf_8h.html#acfae99734ec18b90dbb6ef39d1b73860',1,'nvmf.h']]],
   ['spdk_5fnvmf_5fsubsystem_5fget_5fmn',['spdk_nvmf_subsystem_get_mn',['../nvmf_8h.html#a802a4bacfab2f4e57fbc12cef490dfda',1,'nvmf.h']]],
   ['spdk_5fnvmf_5fsubsystem_5fget_5fnext',['spdk_nvmf_subsystem_get_next',['../nvmf_8h.html#a8f4f438960707410f3a85258137cf9d3',1,'nvmf.h']]],
   ['spdk_5fnvmf_5fsubsystem_5fget_5fnext_5fhost',['spdk_nvmf_subsystem_get_next_host',['../nvmf_8h.html#a5265a9a3d6338c43d9fa03afd1fa9b12',1,'nvmf.h']]],

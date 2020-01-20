@@ -153,6 +153,10 @@ v20.01: (Upcoming Release)</h1>
 <p><code>bdev_ftl_create</code> RPC method <code>trtype</code> and <code>traddr</code> parameters were replaced by <code>base_bdev</code> parameter.</p>
 <p><code>spdk_ftl_module_init</code> and <code>spdk_ftl_module_fini</code> functions were removed.</p>
 <p><code>spdk_ftl_punit_range</code> and <code>ftl_module_init_opts</code> structures were removed.</p>
+<h2>nvmf</h2>
+<p>Support for custom NVMe admin command handlers and admin command passthru in the NVMF subsystem.</p>
+<p>It is now possible to set a custom handler for a specific NVMe admin command. For example, vendor specific admin commands can now be intercepted by implementing a function handling the command. Further NVMe admin commands can be forwarded straight to an underlying NVMe bdev.</p>
+<p>The functions <code>spdk_nvmf_set_custom_admin_cmd_hdlr</code> and <code>spdk_nvmf_set_passthru_admin_cmd</code> in <code>spdk_internal/nvmf.h</code> expose this functionality. There is an example custom admin handler for the NVMe IDENTIFY CTRLR in <code>lib/nvmf/custom_cmd_hdlr.c</code>. This handler gets the SN, MN, FR, IEEE, FGUID attributes from the first NVMe drive in the NVMF subsystem and returns it to the NVMF initiator (sn and mn attributes specified during NVMF subsystem creation RPC will be overwritten). This handler can be enabled via the <code>nvmf_set_config</code> RPC. Note: In a future version of SPDK, this handler will be enabled by default.</p>
 <h2>sock</h2>
 <p>Added spdk_sock_writev_async for performing asynchronous writes to sockets. This call will never return EAGAIN, instead queueing internally until the data has all been sent. This can simplify many code flows that create pollers to continue attempting to flush writes on sockets.</p>
 <p>Added <code>impl_name</code> parameter in spdk_sock_listen and spdk_sock_connect functions. Users may now specify the sock layer implementation they'd prefer to use. Valid implementations are currently "vpp" and "posix" and NULL, where NULL results in the previous behavior of the functions.</p>

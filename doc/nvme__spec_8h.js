@@ -96,6 +96,7 @@ var nvme__spec_8h =
     [ "SPDK_NVME_IO_QUEUE_MAX_ENTRIES", "nvme__spec_8h.html#a1a070303721766a8be74aa19fed086c5", null ],
     [ "SPDK_NVME_IO_QUEUE_MIN_ENTRIES", "nvme__spec_8h.html#a596eccf075cc180ef6148458bd953a22", null ],
     [ "SPDK_NVME_MAX_IO_QUEUES", "nvme__spec_8h.html#a16100e7649c94a89146d02fe4556537a", null ],
+    [ "SPDK_NVME_MAX_OPC", "nvme__spec_8h.html#a6c547b319e840e73f4f43fb6bc595c20", null ],
     [ "SPDK_NVME_NQN_FIELD_SIZE", "nvme__spec_8h.html#a29b64360a774480298f7ed501ba62ea0", null ],
     [ "SPDK_NVME_NSSR_VALUE", "nvme__spec_8h.html#ad3ef13320c82eaf4abdef6aa56e8b5ba", null ],
     [ "SPDK_NVME_REGISTRATION_PREEMPTED_MASK", "nvme__spec_8h.html#af5aeace321594f3985745fec4b62b348", null ],
@@ -128,7 +129,8 @@ var nvme__spec_8h =
       [ "SPDK_NVME_OPC_FORMAT_NVM", "nvme__spec_8h.html#a3d96f5eb214b3cb58675276f19855bf5af221050902cd39f04af495ac45b3d2eb", null ],
       [ "SPDK_NVME_OPC_SECURITY_SEND", "nvme__spec_8h.html#a3d96f5eb214b3cb58675276f19855bf5ae323d3f4c46aefce391780b3c2bc4b99", null ],
       [ "SPDK_NVME_OPC_SECURITY_RECEIVE", "nvme__spec_8h.html#a3d96f5eb214b3cb58675276f19855bf5af8537d7238e24c821a7f513742a9b6e1", null ],
-      [ "SPDK_NVME_OPC_SANITIZE", "nvme__spec_8h.html#a3d96f5eb214b3cb58675276f19855bf5aa96d7caa91b75a376de46f5f363819ea", null ]
+      [ "SPDK_NVME_OPC_SANITIZE", "nvme__spec_8h.html#a3d96f5eb214b3cb58675276f19855bf5aa96d7caa91b75a376de46f5f363819ea", null ],
+      [ "SPDK_NVME_OPC_GET_LBA_STATUS", "nvme__spec_8h.html#a3d96f5eb214b3cb58675276f19855bf5a93ebd2386957cd522c9edff8a01d8b75", null ]
     ] ],
     [ "spdk_nvme_async_event_info_error", "nvme__spec_8h.html#a87a370c671a1dcad0106afc888af8d04", [
       [ "SPDK_NVME_ASYNC_EVENT_WRITE_INVALID_DB", "nvme__spec_8h.html#a87a370c671a1dcad0106afc888af8d04ae6f0b9779ac53824d2a1089641d415a3", null ],

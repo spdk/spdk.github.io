@@ -50,6 +50,7 @@ var structspdk__nvme__ctrlr__data =
     [ "fuses", "structspdk__nvme__ctrlr__data.html#a512e4ee47f6e09bf5a6d2e8986f09567", null ],
     [ "fw_activation_notices", "structspdk__nvme__ctrlr__data.html#a806b5f99e9d82388e663d0046b1a3bba", null ],
     [ "fwug", "structspdk__nvme__ctrlr__data.html#a9f5dd6335c39603ffb5beff3c6d8a6eb", null ],
+    [ "get_lba_status", "structspdk__nvme__ctrlr__data.html#a9ab0cc483799ed8fa05b03093b2e4cab", null ],
     [ "hctma", "structspdk__nvme__ctrlr__data.html#a7fe4a4fdda7b7db55a47d7ba11e00d10", null ],
     [ "hmmin", "structspdk__nvme__ctrlr__data.html#a781742ff21dddc10ff11b1376863c2b4", null ],
     [ "hmpre", "structspdk__nvme__ctrlr__data.html#aeb8704ba77e5799a23fea4ca52772ed2", null ],

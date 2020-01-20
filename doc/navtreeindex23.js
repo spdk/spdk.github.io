@@ -1,5 +1,11 @@
 var NAVTREEINDEX23 =
 {
+"unionspdk__nvme__feat__host__mem__buffer.html#af43cc748ba99dcecb59f3359fd731084":[12,0,113,1],
+"unionspdk__nvme__feat__interrupt__coalescing.html":[12,0,114],
+"unionspdk__nvme__feat__interrupt__coalescing.html#a0a3ddeb18ed4d798712502a972e5474d":[12,0,114,2],
+"unionspdk__nvme__feat__interrupt__coalescing.html#a422b96c8576c775b7ab47094da10ec6a":[12,0,114,0],
+"unionspdk__nvme__feat__interrupt__coalescing.html#a6aca8c444f46d0ace95f71cbef78e85e":[12,0,114,4],
+"unionspdk__nvme__feat__interrupt__coalescing.html#a6ddf8bc514b93939ff5a3ad2657ecb3a":[12,0,114,3],
 "unionspdk__nvme__feat__interrupt__coalescing.html#aaca01366f4b044fbb450d232a12f1f21":[12,0,114,1],
 "unionspdk__nvme__feat__interrupt__vector__configuration.html":[12,0,115],
 "unionspdk__nvme__feat__interrupt__vector__configuration.html#a43841c4b312e3df1d01ec339a7cf5667":[12,0,115,2],

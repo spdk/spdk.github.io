@@ -19,6 +19,7 @@ var NAVTREEINDEX5 =
 "jsonrpc.html#rpc_vhost_nvme_controller_add_ns":[3,7,5,5],
 "jsonrpc.html#rpc_vhost_scsi_controller_add_target":[3,7,5,2],
 "jsonrpc.html#rpc_vhost_scsi_controller_remove_target":[3,7,5,3],
+"jsonrpc.html#spdk_nvmf_admin_passthru_conf":[3,7,4,11,0],
 "jsonrpc_8h.html":[13,0,29],
 "jsonrpc_8h.html#a0eb3dec195e22ff481e317f41b1b0d95":[13,0,29,4],
 "jsonrpc_8h.html#a1e2cef86b68fbf093df54c37ba1c2a4a":[13,0,29,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX5 =
 "nvme_8h.html#a85ec189f50d0f78d73a54413370401f5":[13,0,36,47],
 "nvme_8h.html#a887db5ce5c84eba37a4d82f5d180d020":[13,0,36,59],
 "nvme_8h.html#a88c881cccf7873bbe4605320ffb0a81c":[13,0,36,35],
-"nvme_8h.html#a8c00b191b38472b57b06f3f394353ad3":[13,0,36,65],
-"nvme_8h.html#a8f3f5c5a738dc7ad7e3b2913bff4324c":[13,0,36,109]
+"nvme_8h.html#a8c00b191b38472b57b06f3f394353ad3":[13,0,36,65]
 };
