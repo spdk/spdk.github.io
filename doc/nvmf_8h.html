@@ -407,6 +407,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a63937e4be5fad005cfe7ce15cf60a198"><td class="memItemLeft" align="right" valign="top">spdk_nvme_transport_type_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#a63937e4be5fad005cfe7ce15cf60a198">spdk_nvmf_get_transport_type</a> (struct spdk_nvmf_transport *transport)</td></tr>
 <tr class="memdesc:a63937e4be5fad005cfe7ce15cf60a198"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the transport type for a given transport.  <a href="#a63937e4be5fad005cfe7ce15cf60a198">More...</a><br /></td></tr>
 <tr class="separator:a63937e4be5fad005cfe7ce15cf60a198"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5c4b952d4313986bb0771b6c03e6f9e"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#ac5c4b952d4313986bb0771b6c03e6f9e">spdk_nvmf_get_transport_name</a> (struct spdk_nvmf_transport *transport)</td></tr>
+<tr class="memdesc:ac5c4b952d4313986bb0771b6c03e6f9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the transport name for a given transport.  <a href="#ac5c4b952d4313986bb0771b6c03e6f9e">More...</a><br /></td></tr>
+<tr class="separator:ac5c4b952d4313986bb0771b6c03e6f9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aac996bda413ddfc830c6f46aab4fd181"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#aac996bda413ddfc830c6f46aab4fd181">spdk_nvmf_tgt_add_transport</a> (struct spdk_nvmf_tgt *tgt, struct spdk_nvmf_transport *transport, <a class="el" href="nvmf_8h.html#a53086e85e4a7103ab2b714483b4f2aec">spdk_nvmf_tgt_add_transport_done_fn</a> cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:aac996bda413ddfc830c6f46aab4fd181"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a transport to a target.  <a href="#aac996bda413ddfc830c6f46aab4fd181">More...</a><br /></td></tr>
 <tr class="separator:aac996bda413ddfc830c6f46aab4fd181"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -657,6 +660,33 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The target with the given name, or NULL if no match was found. </dd></dl>
+
+</div>
+</div>
+<a id="ac5c4b952d4313986bb0771b6c03e6f9e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac5c4b952d4313986bb0771b6c03e6f9e">&#9670;&nbsp;</a></span>spdk_nvmf_get_transport_name()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* spdk_nvmf_get_transport_name </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_nvmf_transport *&#160;</td>
+          <td class="paramname"><em>transport</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the transport name for a given transport. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">transport</td><td>The transport to query</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the transport name for the given transport </dd></dl>
 
 </div>
 </div>

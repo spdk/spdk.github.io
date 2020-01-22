@@ -1029,6 +1029,7 @@ var searchData=
   ['spdk_5fnvmf_5fget_5fnext_5ftgt',['spdk_nvmf_get_next_tgt',['../nvmf_8h.html#a1565a46b36efef782d8cee2f8c6489e8',1,'nvmf.h']]],
   ['spdk_5fnvmf_5fget_5foptimal_5fpoll_5fgroup',['spdk_nvmf_get_optimal_poll_group',['../nvmf_8h.html#a744188acd6e709ed4bc3f7f98a2230f8',1,'nvmf.h']]],
   ['spdk_5fnvmf_5fget_5ftgt',['spdk_nvmf_get_tgt',['../nvmf_8h.html#a43ac2675a2d592cc584ee403b8bb324a',1,'nvmf.h']]],
+  ['spdk_5fnvmf_5fget_5ftransport_5fname',['spdk_nvmf_get_transport_name',['../nvmf_8h.html#ac5c4b952d4313986bb0771b6c03e6f9e',1,'nvmf.h']]],
   ['spdk_5fnvmf_5fget_5ftransport_5fopts',['spdk_nvmf_get_transport_opts',['../nvmf_8h.html#a31057e91a342d9e799254ee66e3533ba',1,'nvmf.h']]],
   ['spdk_5fnvmf_5fget_5ftransport_5ftype',['spdk_nvmf_get_transport_type',['../nvmf_8h.html#a63937e4be5fad005cfe7ce15cf60a198',1,'nvmf.h']]],
   ['spdk_5fnvmf_5fhost_5fget_5fnqn',['spdk_nvmf_host_get_nqn',['../nvmf_8h.html#acec4ed75ff9a25a5477d40f43a430677',1,'nvmf.h']]],

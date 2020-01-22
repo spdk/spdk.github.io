@@ -1,5 +1,6 @@
 var NAVTREEINDEX19 =
 {
+"structspdk__nvmf__fabric__connect__rsp.html#abc192ed82752821cbbe678d3318379dc":[12,0,188,6],
 "structspdk__nvmf__fabric__connect__rsp.html#ae13292d92189ffac9876ac42bb902fa7":[12,0,188,10],
 "structspdk__nvmf__fabric__connect__rsp.html#af0d291c73a1df07a77c97eb815c27840":[12,0,188,12],
 "structspdk__nvmf__fabric__prop__get__cmd.html":[12,0,189],
@@ -248,6 +249,5 @@ var NAVTREEINDEX19 =
 "structspdk__nvmf__transport__opts.html#ac029aacb2caf552303ef1cc7f51f7bb9":[12,0,223,11],
 "structspdk__nvmf__transport__opts.html#ae21e50b3980d7d03575b8394f9694b13":[12,0,223,12],
 "structspdk__nvmf__transport__poll__group__stat.html":[12,0,224],
-"structspdk__nvmf__transport__poll__group__stat.html#a1559b932a181386d54c029e0de833ff3":[12,0,224,2],
-"structspdk__nvmf__transport__poll__group__stat.html#a5dfc2d94998990b1955a11593c4950e7":[12,0,224,0]
+"structspdk__nvmf__transport__poll__group__stat.html#a1559b932a181386d54c029e0de833ff3":[12,0,224,2]
 };
