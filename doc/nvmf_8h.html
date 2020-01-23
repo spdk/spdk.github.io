@@ -227,6 +227,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a2c31e57f4634daadf4238bf213a989d6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#a2c31e57f4634daadf4238bf213a989d6">spdk_nvmf_tgt_listen</a> (struct spdk_nvmf_tgt *tgt, struct <a class="el" href="structspdk__nvme__transport__id.html">spdk_nvme_transport_id</a> *trid, <a class="el" href="nvmf_8h.html#a854e30bf69f07bb06b2cbcdd08ca7eba">spdk_nvmf_tgt_listen_done_fn</a> cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:a2c31e57f4634daadf4238bf213a989d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Begin accepting new connections at the address provided.  <a href="#a2c31e57f4634daadf4238bf213a989d6">More...</a><br /></td></tr>
 <tr class="separator:a2c31e57f4634daadf4238bf213a989d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac796e8f25381f344119ef0f44c2a017c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#ac796e8f25381f344119ef0f44c2a017c">spdk_nvmf_tgt_stop_listen</a> (struct spdk_nvmf_tgt *tgt, struct <a class="el" href="structspdk__nvme__transport__id.html">spdk_nvme_transport_id</a> *trid)</td></tr>
+<tr class="memdesc:ac796e8f25381f344119ef0f44c2a017c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stop accepting new connections at the provided address.  <a href="#ac796e8f25381f344119ef0f44c2a017c">More...</a><br /></td></tr>
+<tr class="separator:ac796e8f25381f344119ef0f44c2a017c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa39b568e5ae11462a3e0aef59f8e9fd3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#aa39b568e5ae11462a3e0aef59f8e9fd3">spdk_nvmf_tgt_accept</a> (struct spdk_nvmf_tgt *tgt, <a class="el" href="nvmf_8h.html#aa999ebee65c92711a5dce79d06cf81c2">new_qpair_fn</a> cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:aa39b568e5ae11462a3e0aef59f8e9fd3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Poll the target for incoming connections.  <a href="#aa39b568e5ae11462a3e0aef59f8e9fd3">More...</a><br /></td></tr>
 <tr class="separator:aa39b568e5ae11462a3e0aef59f8e9fd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -312,7 +315,7 @@ Functions</h2></td></tr>
 <tr class="memdesc:a46521b556107a0ab58998adfeee8795f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Accept new connections on the address provided.  <a href="#a46521b556107a0ab58998adfeee8795f">More...</a><br /></td></tr>
 <tr class="separator:a46521b556107a0ab58998adfeee8795f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af77830eafd0e5bdf209be8d9c196fc11"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#af77830eafd0e5bdf209be8d9c196fc11">spdk_nvmf_subsystem_remove_listener</a> (struct spdk_nvmf_subsystem *subsystem, const struct <a class="el" href="structspdk__nvme__transport__id.html">spdk_nvme_transport_id</a> *trid)</td></tr>
-<tr class="memdesc:af77830eafd0e5bdf209be8d9c196fc11"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stop accepting new connections on the address provided.  <a href="#af77830eafd0e5bdf209be8d9c196fc11">More...</a><br /></td></tr>
+<tr class="memdesc:af77830eafd0e5bdf209be8d9c196fc11"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove the listener from subsystem.  <a href="#af77830eafd0e5bdf209be8d9c196fc11">More...</a><br /></td></tr>
 <tr class="separator:af77830eafd0e5bdf209be8d9c196fc11"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aafcef3c424a983337eaa28ff71e03e2e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#aafcef3c424a983337eaa28ff71e03e2e">spdk_nvmf_subsystem_listener_allowed</a> (struct spdk_nvmf_subsystem *subsystem, struct <a class="el" href="structspdk__nvme__transport__id.html">spdk_nvme_transport_id</a> *trid)</td></tr>
 <tr class="memdesc:aafcef3c424a983337eaa28ff71e03e2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if connections originated from the given address are allowed to connect to the subsystem.  <a href="#aafcef3c424a983337eaa28ff71e03e2e">More...</a><br /></td></tr>
@@ -1325,6 +1328,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Accept new connections on the address provided. </p>
+<p>This does not start the listener. Use <a class="el" href="nvmf_8h.html#a2c31e57f4634daadf4238bf213a989d6" title="Begin accepting new connections at the address provided. ">spdk_nvmf_tgt_listen()</a> for that.</p>
 <p>May only be performed on subsystems in the PAUSED or INACTIVE states.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -2178,7 +2182,8 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Stop accepting new connections on the address provided. </p>
+<p>Remove the listener from subsystem. </p>
+<p>New connections to the address won't be propagated to the subsystem. However to stop listening at target level one must use the <a class="el" href="nvmf_8h.html#ac796e8f25381f344119ef0f44c2a017c" title="Stop accepting new connections at the provided address. ">spdk_nvmf_tgt_stop_listen()</a>.</p>
 <p>May only be performed on subsystems in the PAUSED or INACTIVE states.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -2828,6 +2833,45 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>void. The callback status argument will be 0 on success or a negated errno on failure. </dd></dl>
+
+</div>
+</div>
+<a id="ac796e8f25381f344119ef0f44c2a017c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac796e8f25381f344119ef0f44c2a017c">&#9670;&nbsp;</a></span>spdk_nvmf_tgt_stop_listen()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_nvmf_tgt_stop_listen </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_nvmf_tgt *&#160;</td>
+          <td class="paramname"><em>tgt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structspdk__nvme__transport__id.html">spdk_nvme_transport_id</a> *&#160;</td>
+          <td class="paramname"><em>trid</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Stop accepting new connections at the provided address. </p>
+<p>This is a counterpart to <a class="el" href="nvmf_8h.html#a2c31e57f4634daadf4238bf213a989d6" title="Begin accepting new connections at the address provided. ">spdk_nvmf_tgt_listen()</a>.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tgt</td><td>The target associated with the listen address. </td></tr>
+    <tr><td class="paramname">trid</td><td>The address to stop listening at.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>int. 0 on success or a negated errno on failure. </dd></dl>
 
 </div>
 </div>

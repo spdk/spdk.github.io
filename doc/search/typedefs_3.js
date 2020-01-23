@@ -5,6 +5,7 @@ var searchData=
   ['spdk_5fbdev_5ffini_5fcb',['spdk_bdev_fini_cb',['../bdev_8h.html#ad33efc88148d8984b353e54b7ee0058f',1,'bdev.h']]],
   ['spdk_5fbdev_5finit_5fcb',['spdk_bdev_init_cb',['../bdev_8h.html#aa6a8987bb3a1bc368881f6b81d249bd3',1,'bdev.h']]],
   ['spdk_5fbdev_5fio_5fcompletion_5fcb',['spdk_bdev_io_completion_cb',['../bdev_8h.html#a0c5602dfd313f90032dd91683b9663e3',1,'bdev.h']]],
+  ['spdk_5fbdev_5fio_5fget_5faux_5fbuf_5fcb',['spdk_bdev_io_get_aux_buf_cb',['../bdev__module_8h.html#a78a004a98b02f2d1b2346b6b25e1c945',1,'bdev_module.h']]],
   ['spdk_5fbdev_5fio_5fget_5fbuf_5fcb',['spdk_bdev_io_get_buf_cb',['../bdev__module_8h.html#a2562fbcad733a35efaca67e9fb53a382',1,'bdev_module.h']]],
   ['spdk_5fbdev_5fio_5ftimeout_5fcb',['spdk_bdev_io_timeout_cb',['../bdev_8h.html#a83db84993554e784cbddf2d217f6ea4f',1,'bdev.h']]],
   ['spdk_5fbdev_5fio_5fwait_5fcb',['spdk_bdev_io_wait_cb',['../bdev_8h.html#a9c7e19e090b8cdb22e8fc6b1984e5278',1,'bdev.h']]],

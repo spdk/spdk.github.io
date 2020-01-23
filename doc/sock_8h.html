@@ -192,6 +192,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a407c7aebae3d1a1556109da46a73213e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sock_8h.html#a407c7aebae3d1a1556109da46a73213e">spdk_sock_close</a> (struct spdk_sock **sock)</td></tr>
 <tr class="memdesc:a407c7aebae3d1a1556109da46a73213e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Close a socket.  <a href="#a407c7aebae3d1a1556109da46a73213e">More...</a><br /></td></tr>
 <tr class="separator:a407c7aebae3d1a1556109da46a73213e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1501ed80f4cbac9912d10f4e1900905d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sock_8h.html#a1501ed80f4cbac9912d10f4e1900905d">spdk_sock_flush</a> (struct spdk_sock *sock)</td></tr>
+<tr class="memdesc:a1501ed80f4cbac9912d10f4e1900905d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flush a socket from data gathered in previous writev_async calls.  <a href="#a1501ed80f4cbac9912d10f4e1900905d">More...</a><br /></td></tr>
+<tr class="separator:a1501ed80f4cbac9912d10f4e1900905d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abab9e8eaebfc2857e05848580fba864e"><td class="memItemLeft" align="right" valign="top">ssize_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sock_8h.html#abab9e8eaebfc2857e05848580fba864e">spdk_sock_recv</a> (struct spdk_sock *sock, void *buf, size_t len)</td></tr>
 <tr class="memdesc:abab9e8eaebfc2857e05848580fba864e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Receive a message from the given socket.  <a href="#abab9e8eaebfc2857e05848580fba864e">More...</a><br /></td></tr>
 <tr class="separator:abab9e8eaebfc2857e05848580fba864e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -375,6 +378,33 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>a pointer to the connected socket on success, or NULL on failure. </dd></dl>
+
+</div>
+</div>
+<a id="a1501ed80f4cbac9912d10f4e1900905d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1501ed80f4cbac9912d10f4e1900905d">&#9670;&nbsp;</a></span>spdk_sock_flush()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_sock_flush </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_sock *&#160;</td>
+          <td class="paramname"><em>sock</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Flush a socket from data gathered in previous writev_async calls. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sock</td><td>Socket to flush.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, -1 on failure. </dd></dl>
 
 </div>
 </div>

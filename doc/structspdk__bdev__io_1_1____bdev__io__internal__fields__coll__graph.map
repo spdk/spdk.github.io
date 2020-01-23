@@ -1,5 +1,5 @@
 <map id="spdk_bdev_io::__bdev_io_internal_fields" name="spdk_bdev_io::__bdev_io_internal_fields">
-<area shape="rect" id="node5" href="$structspdk__bdev__io.html" title="spdk_bdev_io" alt="" coords="175,288,286,315"/>
+<area shape="rect" id="node5" href="$structspdk__bdev__io.html" title="spdk_bdev_io" alt="" coords="183,303,294,329"/>
 <area shape="rect" id="node2" href="$structspdk__io__channel.html" title="Represents a per&#45;thread channel for accessing an I/O device. " alt="" coords="5,95,136,121"/>
 <area shape="rect" id="node3" href="$structspdk__bdev__io__wait__entry.html" title="Structure to register a callback when an spdk_bdev_io becomes available. " alt="" coords="160,95,347,121"/>
 <area shape="rect" id="node4" href="$structspdk__bdev.html" title="spdk_bdev" alt="" coords="273,5,365,32"/>

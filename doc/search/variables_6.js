@@ -1,6 +1,7 @@
 var searchData=
 [
   ['gen',['gen',['../structspdk__nvme__reservation__status__data.html#afba0189f3d11b8e6ae22405d07613c92',1,'spdk_nvme_reservation_status_data']]],
+  ['get_5faux_5fbuf_5fcb',['get_aux_buf_cb',['../structspdk__bdev__io_1_1____bdev__io__internal__fields.html#a08e05615305a536b1c1b893a4fe8c693',1,'spdk_bdev_io::__bdev_io_internal_fields']]],
   ['get_5fbuf_5fcb',['get_buf_cb',['../structspdk__bdev__io_1_1____bdev__io__internal__fields.html#a320a717c3bfbfae0a88e37806a4b11cb',1,'spdk_bdev_io::__bdev_io_internal_fields']]],
   ['get_5fctx_5fsize',['get_ctx_size',['../structspdk__bdev__module.html#a490337d850141809c1cc930fb7b2e552',1,'spdk_bdev_module']]],
   ['get_5fibv_5fpd',['get_ibv_pd',['../structspdk__nvme__rdma__hooks.html#ab740946922279f0ff1dbe567885f5bca',1,'spdk_nvme_rdma_hooks']]],
