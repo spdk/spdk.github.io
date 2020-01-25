@@ -7,5 +7,9 @@ var misc =
       [ "Determining device support", "peer_2_peer.html#p2p_support", null ],
       [ "cmb_copy: An example P2P Application", "peer_2_peer.html#p2p_cmb_copy", null ],
       [ "Issues with P2P", "peer_2_peer.html#p2p_issues", null ]
+    ] ],
+    [ "SPDK and Containers", "containers.html", [
+      [ "In this document", "containers.html#containers_toc", null ],
+      [ "Containerizing an SPDK Application for Docker", "containers.html#spdk_in_docker", null ]
     ] ]
 ];

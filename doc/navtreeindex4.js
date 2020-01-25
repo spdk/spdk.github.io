@@ -1,5 +1,8 @@
 var NAVTREEINDEX4 =
 {
+"iscsi__spec_8h.html#acad962b6a473cfcd30e1c0b7de567a95":[13,0,27,60],
+"iscsi__spec_8h.html#acbd33e0c97f289193ef7493ef81768e6":[13,0,27,86],
+"iscsi__spec_8h.html#acf506c32bf9f465d24e4db4e1fbf15a6":[13,0,27,28],
 "iscsi__spec_8h.html#ad2c30ed17419423b79a47fae8323408a":[13,0,27,93],
 "iscsi__spec_8h.html#ad2c30ed17419423b79a47fae8323408aa0245e59b40b8914352af5d2dd18202a4":[13,0,27,93,5],
 "iscsi__spec_8h.html#ad2c30ed17419423b79a47fae8323408aa0aa55c85896d21acfc801b374defb7e0":[13,0,27,93,15],
@@ -246,8 +249,5 @@ var NAVTREEINDEX4 =
 "jsonrpc.html#rpc_nvmf_get_transports":[3,7,4,12],
 "jsonrpc.html#rpc_nvmf_listen_address":[3,7,4,4,0],
 "jsonrpc.html#rpc_nvmf_namespace":[3,7,4,5,0],
-"jsonrpc.html#rpc_nvmf_set_config":[3,7,4,11],
-"jsonrpc.html#rpc_nvmf_set_max_subsystems":[3,7,4,10],
-"jsonrpc.html#rpc_nvmf_subsystem_add_host":[3,7,4,7],
-"jsonrpc.html#rpc_nvmf_subsystem_add_listener":[3,7,4,4]
+"jsonrpc.html#rpc_nvmf_set_config":[3,7,4,11]
 };
