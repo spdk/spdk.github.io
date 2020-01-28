@@ -7,7 +7,7 @@ lang: cn
 
 # IRC即时通信
 
-加入我们[#spdk](irc://irc.freenode.net/%23spdk) ([归档](https://dqtibwqq6s6ux.cloudfront.net/irclog/index.html))频道的[freenode](https://freenode.net/) IRC网络。
+加入我们[#spdk](irc://irc.freenode.net/%23spdk) ([归档](https://ci.spdk.io/irclog/index.html))频道的[freenode](https://freenode.net/) IRC网络。
 
 # Trello项目概览
 
