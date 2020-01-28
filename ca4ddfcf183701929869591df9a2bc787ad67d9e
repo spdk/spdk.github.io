@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "75cab5c6_b505a036",
+        "filename": "_posts/2020-01-28-us_summit_announce.md",
+        "patchSetId": 5
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 1011314
+      },
+      "writtenOn": "2020-01-28T20:49:07Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "ef11da58_fbf3d3cd",
+      "revId": "ca4ddfcf183701929869591df9a2bc787ad67d9e",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "a06dd01c_4be33316",
         "filename": "_posts/2020-01-28-us_summit_announce.md",
         "patchSetId": 5
@@ -33,6 +51,24 @@
       "revId": "ca4ddfcf183701929869591df9a2bc787ad67d9e",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "0d351e11_d8a1c68f",
+        "filename": "_posts/2020-01-28-us_summit_announce.md",
+        "patchSetId": 5
+      },
+      "lineNbr": 27,
+      "author": {
+        "id": 1011314
+      },
+      "writtenOn": "2020-01-28T20:49:07Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "a06dd01c_4be33316",
+      "revId": "ca4ddfcf183701929869591df9a2bc787ad67d9e",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
     }
   ]
 }
