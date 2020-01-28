@@ -403,14 +403,14 @@ Macros</h2></td></tr>
 <tr class="memitem:ab72a2ef691ff4d7321187797d6795414"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_cpl_is_pi_error</b>(cpl)</td></tr>
 <tr class="separator:ab72a2ef691ff4d7321187797d6795414"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa12837c61bff3188e1f92d001506e5a0"><td class="memItemLeft" align="right" valign="top"><a id="aa12837c61bff3188e1f92d001506e5a0"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme__spec_8h.html#aa12837c61bff3188e1f92d001506e5a0">SPDK_NVME_IO_FLAGS_FUSE_FIRST</a>&#160;&#160;&#160;(1U &lt;&lt; 0)</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme__spec_8h.html#aa12837c61bff3188e1f92d001506e5a0">SPDK_NVME_IO_FLAGS_FUSE_FIRST</a>&#160;&#160;&#160;(<a class="el" href="nvme__spec_8h.html#a221a4156b2e7883c4cb88847cbeaa069a5bc4ba22076a7b42f51c1ed6d76ceaf7">SPDK_NVME_CMD_FUSE_FIRST</a> &lt;&lt; 0)</td></tr>
 <tr class="memdesc:aa12837c61bff3188e1f92d001506e5a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set fused operation. <br /></td></tr>
 <tr class="separator:aa12837c61bff3188e1f92d001506e5a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af35a202556b1279bc49a963c02bb3e78"><td class="memItemLeft" align="right" valign="top"><a id="af35a202556b1279bc49a963c02bb3e78"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_NVME_IO_FLAGS_FUSE_SECOND</b>&#160;&#160;&#160;(1U &lt;&lt; 1)</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_NVME_IO_FLAGS_FUSE_SECOND</b>&#160;&#160;&#160;(<a class="el" href="nvme__spec_8h.html#a221a4156b2e7883c4cb88847cbeaa069ace5400bb9e50677e62cd5af8fad9e595">SPDK_NVME_CMD_FUSE_SECOND</a> &lt;&lt; 0)</td></tr>
 <tr class="separator:af35a202556b1279bc49a963c02bb3e78"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6a5c4c0b0279583d688e44c7769d8e40"><td class="memItemLeft" align="right" valign="top"><a id="a6a5c4c0b0279583d688e44c7769d8e40"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_NVME_IO_FLAGS_FUSE_MASK</b>&#160;&#160;&#160;(3U &lt;&lt; 0)</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_NVME_IO_FLAGS_FUSE_MASK</b>&#160;&#160;&#160;(<a class="el" href="nvme__spec_8h.html#a221a4156b2e7883c4cb88847cbeaa069a4d70183823094788f80f33943dfc5bf1">SPDK_NVME_CMD_FUSE_MASK</a> &lt;&lt; 0)</td></tr>
 <tr class="separator:a6a5c4c0b0279583d688e44c7769d8e40"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a093f4f54c893a46cc3a776fa667d09a2"><td class="memItemLeft" align="right" valign="top"><a id="a093f4f54c893a46cc3a776fa667d09a2"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme__spec_8h.html#a093f4f54c893a46cc3a776fa667d09a2">SPDK_NVME_IO_FLAGS_PRCHK_REFTAG</a>&#160;&#160;&#160;(1U &lt;&lt; 26)</td></tr>
@@ -498,9 +498,10 @@ Enumerations</h2></td></tr>
  }</td></tr>
 <tr class="memdesc:a7e72566466cae734d999e755524f7b20"><td class="mdescLeft">&#160;</td><td class="mdescRight">Arbitration Mechanism Selected to the controller.  <a href="nvme__spec_8h.html#a7e72566466cae734d999e755524f7b20">More...</a><br /></td></tr>
 <tr class="separator:a7e72566466cae734d999e755524f7b20"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a221a4156b2e7883c4cb88847cbeaa069"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme__spec_8h.html#a221a4156b2e7883c4cb88847cbeaa069">spdk_nvme_cmd_fuse</a> { <a class="el" href="nvme__spec_8h.html#a221a4156b2e7883c4cb88847cbeaa069ae8af79cac0adb463c0fdbdca1288c067">SPDK_NVMF_CMD_FUSE_NONE</a> = 0x0, 
+<tr class="memitem:a221a4156b2e7883c4cb88847cbeaa069"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme__spec_8h.html#a221a4156b2e7883c4cb88847cbeaa069">spdk_nvme_cmd_fuse</a> { <a class="el" href="nvme__spec_8h.html#a221a4156b2e7883c4cb88847cbeaa069a0288d507675f7b7ba765ac38eb83c425">SPDK_NVME_CMD_FUSE_NONE</a> = 0x0, 
 <a class="el" href="nvme__spec_8h.html#a221a4156b2e7883c4cb88847cbeaa069a5bc4ba22076a7b42f51c1ed6d76ceaf7">SPDK_NVME_CMD_FUSE_FIRST</a> = 0x1, 
-<a class="el" href="nvme__spec_8h.html#a221a4156b2e7883c4cb88847cbeaa069ace5400bb9e50677e62cd5af8fad9e595">SPDK_NVME_CMD_FUSE_SECOND</a> = 0x2
+<a class="el" href="nvme__spec_8h.html#a221a4156b2e7883c4cb88847cbeaa069ace5400bb9e50677e62cd5af8fad9e595">SPDK_NVME_CMD_FUSE_SECOND</a> = 0x2, 
+<a class="el" href="nvme__spec_8h.html#a221a4156b2e7883c4cb88847cbeaa069a4d70183823094788f80f33943dfc5bf1">SPDK_NVME_CMD_FUSE_MASK</a> = 0x3
  }</td></tr>
 <tr class="memdesc:a221a4156b2e7883c4cb88847cbeaa069"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fused Operation.  <a href="nvme__spec_8h.html#a221a4156b2e7883c4cb88847cbeaa069">More...</a><br /></td></tr>
 <tr class="separator:a221a4156b2e7883c4cb88847cbeaa069"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1340,11 +1341,13 @@ Functions</h2></td></tr>
 
 <p>Fused Operation. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a221a4156b2e7883c4cb88847cbeaa069ae8af79cac0adb463c0fdbdca1288c067"></a>SPDK_NVMF_CMD_FUSE_NONE&#160;</td><td class="fielddoc"><p>normal operation </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a221a4156b2e7883c4cb88847cbeaa069a0288d507675f7b7ba765ac38eb83c425"></a>SPDK_NVME_CMD_FUSE_NONE&#160;</td><td class="fielddoc"><p>normal operation </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a221a4156b2e7883c4cb88847cbeaa069a5bc4ba22076a7b42f51c1ed6d76ceaf7"></a>SPDK_NVME_CMD_FUSE_FIRST&#160;</td><td class="fielddoc"><p>fused operation, first command </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a221a4156b2e7883c4cb88847cbeaa069ace5400bb9e50677e62cd5af8fad9e595"></a>SPDK_NVME_CMD_FUSE_SECOND&#160;</td><td class="fielddoc"><p>fused operation, second command </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a221a4156b2e7883c4cb88847cbeaa069a4d70183823094788f80f33943dfc5bf1"></a>SPDK_NVME_CMD_FUSE_MASK&#160;</td><td class="fielddoc"><p>fused operation flags mask </p>
 </td></tr>
 </table>
 

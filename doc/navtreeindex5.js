@@ -1,5 +1,8 @@
 var NAVTREEINDEX5 =
 {
+"jsonrpc.html#rpc_nvmf_listen_address":[3,7,4,4,0],
+"jsonrpc.html#rpc_nvmf_namespace":[3,7,4,5,0],
+"jsonrpc.html#rpc_nvmf_set_config":[3,7,4,11],
 "jsonrpc.html#rpc_nvmf_set_max_subsystems":[3,7,4,10],
 "jsonrpc.html#rpc_nvmf_subsystem_add_host":[3,7,4,7],
 "jsonrpc.html#rpc_nvmf_subsystem_add_listener":[3,7,4,4],
@@ -175,6 +178,7 @@ var NAVTREEINDEX5 =
 "nvme.html#nvme_fabrics_host":[7,0,5],
 "nvme.html#nvme_fabrics_trid":[7,0,5,0],
 "nvme.html#nvme_fioplugin":[7,0,2,1],
+"nvme.html#nvme_fuses":[7,0,4,0,0],
 "nvme.html#nvme_helloworld":[7,0,2,0],
 "nvme.html#nvme_hotplug":[7,0,7],
 "nvme.html#nvme_interface":[7,0,3],
@@ -185,7 +189,7 @@ var NAVTREEINDEX5 =
 "nvme.html#nvme_multi_process_configuration":[7,0,6,0],
 "nvme.html#nvme_multi_process_limitations":[7,0,6,1],
 "nvme.html#nvme_perf":[7,0,2,2],
-"nvme.html#nvme_scaling":[7,0,4,0,0],
+"nvme.html#nvme_scaling":[7,0,4,0,1],
 "nvme.html#nvme_toc":[7,0,0],
 "nvme_8h.html":[13,0,36],
 "nvme_8h.html#a018f3b986b4345ee0c6931be9718c163":[13,0,36,22],
@@ -245,9 +249,5 @@ var NAVTREEINDEX5 =
 "nvme_8h.html#a6e4165e918b05158286f5984a136acbf":[13,0,36,144],
 "nvme_8h.html#a6eacd62ee8fbab40e1066bc0a53485f3":[13,0,36,78],
 "nvme_8h.html#a6f01fb8a5f404e41e6fa224a7942be08":[13,0,36,56],
-"nvme_8h.html#a724ed20a1a5adaf30c48db8c28d29677":[13,0,36,31],
-"nvme_8h.html#a7938b258a7614073065be4f6a35bd0e2":[13,0,36,79],
-"nvme_8h.html#a7c522609f730db26f66e7f5b6b3501e0":[13,0,36,114],
-"nvme_8h.html#a7c62e2d4555a5ebc3a3b6f9632c51e1a":[13,0,36,42],
-"nvme_8h.html#a7dc6bb842e168a68972ec46cc35591ae":[13,0,36,70]
+"nvme_8h.html#a724ed20a1a5adaf30c48db8c28d29677":[13,0,36,31]
 };

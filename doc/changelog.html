@@ -189,6 +189,9 @@ v20.01: (Upcoming Release)</h1>
 <p>Updated DPDK submodule to DPDK 19.11.</p>
 <h2>event</h2>
 <p>The functions <code>spdk_reactor_enable_framework_monitor_context_switch()</code> and <code>spdk_reactor_framework_monitor_context_switch_enabled()</code> have been changed to <code><a class="el" href="event_8h.html#a367fa3d40d7f507cc4f258b27592fb43" title="Enable or disable monitoring of context switches. ">spdk_framework_enable_context_switch_monitor()</a></code> and <code><a class="el" href="event_8h.html#aa6e70166c6ac9e7e7399d1b140979d29" title="Return whether context switch monitoring is enabled. ">spdk_framework_context_switch_monitor_enabled()</a></code>, respectively.</p>
+<h2>bdev</h2>
+<p>Added spdk_bdev_io_get_nvme_fused_status function for translating bdev_io status to NVMe status code for fused compare-and-write operation.</p>
+<p>Added spdk_bdev_get_acwu function for getting block device atomic compare and write unit size.</p>
 <h1><a class="anchor" id="changelog-v19-10"></a>
 v19.10:</h1>
 <h2>rpc</h2>

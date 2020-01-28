@@ -491,6 +491,7 @@ Functions</h2></td></tr>
 <p>For bdevs that do not natively support atomic compare-and-write, the bdev layer will quiesce I/O to the specified LBA range, before performing the read, compare and write operations.</p>
 <p>Currently this supports compare-and-write of only one block.</p>
 <p>The data buffers for both the compare and write operations are described in a scatter gather list. Some physical devices place memory alignment requirements on data and may not be able to directly transfer out of the buffers provided. In this case, the request may fail.</p>
+<p><a class="el" href="bdev_8h.html#a44c7d2a0cf76be7d06d9dc5e09553ec8" title="Get the status of bdev_io as an NVMe status codes and command specific completion queue value for fus...">spdk_bdev_io_get_nvme_fused_status()</a> function should be called in callback function to get status for the individual operation.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">desc</td><td>Block device descriptor. </td></tr>

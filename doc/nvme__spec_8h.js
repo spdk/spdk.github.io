@@ -174,9 +174,10 @@ var nvme__spec_8h =
       [ "SPDK_NVME_CC_CSS_NVM", "nvme__spec_8h.html#afafa64ef6a351ad580253d99ea1b3cd0ae7696e91d29ce6f6f5d3ba3adf9b5016", null ]
     ] ],
     [ "spdk_nvme_cmd_fuse", "nvme__spec_8h.html#a221a4156b2e7883c4cb88847cbeaa069", [
-      [ "SPDK_NVMF_CMD_FUSE_NONE", "nvme__spec_8h.html#a221a4156b2e7883c4cb88847cbeaa069ae8af79cac0adb463c0fdbdca1288c067", null ],
+      [ "SPDK_NVME_CMD_FUSE_NONE", "nvme__spec_8h.html#a221a4156b2e7883c4cb88847cbeaa069a0288d507675f7b7ba765ac38eb83c425", null ],
       [ "SPDK_NVME_CMD_FUSE_FIRST", "nvme__spec_8h.html#a221a4156b2e7883c4cb88847cbeaa069a5bc4ba22076a7b42f51c1ed6d76ceaf7", null ],
-      [ "SPDK_NVME_CMD_FUSE_SECOND", "nvme__spec_8h.html#a221a4156b2e7883c4cb88847cbeaa069ace5400bb9e50677e62cd5af8fad9e595", null ]
+      [ "SPDK_NVME_CMD_FUSE_SECOND", "nvme__spec_8h.html#a221a4156b2e7883c4cb88847cbeaa069ace5400bb9e50677e62cd5af8fad9e595", null ],
+      [ "SPDK_NVME_CMD_FUSE_MASK", "nvme__spec_8h.html#a221a4156b2e7883c4cb88847cbeaa069a4d70183823094788f80f33943dfc5bf1", null ]
     ] ],
     [ "spdk_nvme_command_specific_status_code", "nvme__spec_8h.html#acb8784fad6a53be95d4c718ad3cf852e", [
       [ "SPDK_NVME_SC_COMPLETION_QUEUE_INVALID", "nvme__spec_8h.html#acb8784fad6a53be95d4c718ad3cf852ead6be90d650be8f24c4753c1cbf491c74", null ],

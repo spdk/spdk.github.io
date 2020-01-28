@@ -19,7 +19,6 @@ var structspdk__nvmf__transport__ops =
     [ "qpair_get_listen_trid", "structspdk__nvmf__transport__ops.html#a15dfb20fe53524c3a7a741b1fbae58fc", null ],
     [ "qpair_get_local_trid", "structspdk__nvmf__transport__ops.html#a0fe4ff0447262fe7a8aa198d308c8f08", null ],
     [ "qpair_get_peer_trid", "structspdk__nvmf__transport__ops.html#a458ca8aa8ed3d70fc4cb9687ef8d9a0b", null ],
-    [ "qpair_set_sqsize", "structspdk__nvmf__transport__ops.html#a93b6c032af08230cf084ae7e1400ec58", null ],
     [ "req_complete", "structspdk__nvmf__transport__ops.html#a144fd3bb2efe4616a2d9b78f93f969e6", null ],
     [ "req_free", "structspdk__nvmf__transport__ops.html#a36202727719ed813d03da75bc70e4868", null ],
     [ "stop_listen", "structspdk__nvmf__transport__ops.html#a2d160f44677431f2179416ebd7768c5a", null ],

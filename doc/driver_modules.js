@@ -11,6 +11,7 @@ var driver_modules =
       [ "Public Interface", "nvme.html#nvme_interface", null ],
       [ "NVMe Driver Design", "nvme.html#nvme_design", [
         [ "NVMe I/O Submission", "nvme.html#nvme_io_submission", [
+          [ "Fused operations", "nvme.html#nvme_fuses", null ],
           [ "Scaling Performance", "nvme.html#nvme_scaling", null ]
         ] ],
         [ "NVMe Driver Internal Memory Usage", "nvme.html#nvme_memory_usage", null ]

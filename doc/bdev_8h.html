@@ -357,6 +357,9 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_set_opts</b>
 <tr class="memitem:add8565cdbf3d57697b67202b869a7beb"><td class="memItemLeft" align="right" valign="top">const struct <a class="el" href="structspdk__uuid.html">spdk_uuid</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev_8h.html#add8565cdbf3d57697b67202b869a7beb">spdk_bdev_get_uuid</a> (const struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *bdev)</td></tr>
 <tr class="memdesc:add8565cdbf3d57697b67202b869a7beb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a bdev's UUID.  <a href="#add8565cdbf3d57697b67202b869a7beb">More...</a><br /></td></tr>
 <tr class="separator:add8565cdbf3d57697b67202b869a7beb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8414b6c4af71136f0c1cb7af4a8d33fa"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev_8h.html#a8414b6c4af71136f0c1cb7af4a8d33fa">spdk_bdev_get_acwu</a> (const struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *bdev)</td></tr>
+<tr class="memdesc:a8414b6c4af71136f0c1cb7af4a8d33fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get block device atomic compare and write unit.  <a href="#a8414b6c4af71136f0c1cb7af4a8d33fa">More...</a><br /></td></tr>
+<tr class="separator:a8414b6c4af71136f0c1cb7af4a8d33fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abc3537d0315100b24da6acc95929e849"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev_8h.html#abc3537d0315100b24da6acc95929e849">spdk_bdev_get_md_size</a> (const struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *bdev)</td></tr>
 <tr class="memdesc:abc3537d0315100b24da6acc95929e849"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get block device metadata size.  <a href="#abc3537d0315100b24da6acc95929e849">More...</a><br /></td></tr>
 <tr class="separator:abc3537d0315100b24da6acc95929e849"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -501,6 +504,9 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_set_opts</b>
 <tr class="memitem:ae7e1bf90f44f042c2b2ad463b8667735"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev_8h.html#ae7e1bf90f44f042c2b2ad463b8667735">spdk_bdev_io_get_nvme_status</a> (const struct <a class="el" href="structspdk__bdev__io.html">spdk_bdev_io</a> *bdev_io, uint32_t *cdw0, int *sct, int *sc)</td></tr>
 <tr class="memdesc:ae7e1bf90f44f042c2b2ad463b8667735"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the status of bdev_io as an NVMe status code and command specific completion queue value.  <a href="#ae7e1bf90f44f042c2b2ad463b8667735">More...</a><br /></td></tr>
 <tr class="separator:ae7e1bf90f44f042c2b2ad463b8667735"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44c7d2a0cf76be7d06d9dc5e09553ec8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev_8h.html#a44c7d2a0cf76be7d06d9dc5e09553ec8">spdk_bdev_io_get_nvme_fused_status</a> (const struct <a class="el" href="structspdk__bdev__io.html">spdk_bdev_io</a> *bdev_io, uint32_t *cdw0, int *first_sct, int *first_sc, int *second_sct, int *second_sc)</td></tr>
+<tr class="memdesc:a44c7d2a0cf76be7d06d9dc5e09553ec8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the status of bdev_io as an NVMe status codes and command specific completion queue value for fused operations such as compare-and-write.  <a href="#a44c7d2a0cf76be7d06d9dc5e09553ec8">More...</a><br /></td></tr>
+<tr class="separator:a44c7d2a0cf76be7d06d9dc5e09553ec8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac3c213b4317d5077197950253af1ac50"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev_8h.html#ac3c213b4317d5077197950253af1ac50">spdk_bdev_io_get_scsi_status</a> (const struct <a class="el" href="structspdk__bdev__io.html">spdk_bdev_io</a> *bdev_io, int *sc, int *sk, int *asc, int *ascq)</td></tr>
 <tr class="memdesc:ac3c213b4317d5077197950253af1ac50"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the status of bdev_io as a SCSI status code.  <a href="#ac3c213b4317d5077197950253af1ac50">More...</a><br /></td></tr>
 <tr class="separator:ac3c213b4317d5077197950253af1ac50"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -931,6 +937,33 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_set_opts</b>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="a8414b6c4af71136f0c1cb7af4a8d33fa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8414b6c4af71136f0c1cb7af4a8d33fa">&#9670;&nbsp;</a></span>spdk_bdev_get_acwu()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t spdk_bdev_get_acwu </td>
+          <td>(</td>
+          <td class="paramtype">const struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *&#160;</td>
+          <td class="paramname"><em>bdev</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get block device atomic compare and write unit. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bdev</td><td>Block device to query. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Atomic compare and write unit for this bdev in blocks. </dd></dl>
 
 </div>
 </div>
@@ -1849,6 +1882,71 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_set_opts</b>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Pointer to metadata buffer, NULL if the IO doesn't use separate buffer for metadata transfer. </dd></dl>
+
+</div>
+</div>
+<a id="a44c7d2a0cf76be7d06d9dc5e09553ec8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a44c7d2a0cf76be7d06d9dc5e09553ec8">&#9670;&nbsp;</a></span>spdk_bdev_io_get_nvme_fused_status()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_bdev_io_get_nvme_fused_status </td>
+          <td>(</td>
+          <td class="paramtype">const struct <a class="el" href="structspdk__bdev__io.html">spdk_bdev_io</a> *&#160;</td>
+          <td class="paramname"><em>bdev_io</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t *&#160;</td>
+          <td class="paramname"><em>cdw0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>first_sct</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>first_sc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>second_sct</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>second_sc</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the status of bdev_io as an NVMe status codes and command specific completion queue value for fused operations such as compare-and-write. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bdev_io</td><td>I/O to get the status from. </td></tr>
+    <tr><td class="paramname">cdw0</td><td>Command specific completion queue value </td></tr>
+    <tr><td class="paramname">first_sct</td><td>Status Code Type return value for the first operation, as defined by the NVMe specification. </td></tr>
+    <tr><td class="paramname">first_sc</td><td>Status Code return value for the first operation, as defined by the NVMe specification. </td></tr>
+    <tr><td class="paramname">second_sct</td><td>Status Code Type return value for the second operation, as defined by the NVMe specification. </td></tr>
+    <tr><td class="paramname">second_sc</td><td>Status Code return value for the second operation, as defined by the NVMe specification. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
