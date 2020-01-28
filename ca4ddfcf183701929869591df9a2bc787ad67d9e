@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "ef11da58_fbf3d3cd",
+        "filename": "_posts/2020-01-28-us_summit_announce.md",
+        "patchSetId": 5
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 1010531
+      },
+      "writtenOn": "2020-01-28T18:19:32Z",
+      "side": 1,
+      "message": "comma after deep dives",
+      "revId": "ca4ddfcf183701929869591df9a2bc787ad67d9e",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "a06dd01c_4be33316",
+        "filename": "_posts/2020-01-28-us_summit_announce.md",
+        "patchSetId": 5
+      },
+      "lineNbr": 27,
+      "author": {
+        "id": 1010531
+      },
+      "writtenOn": "2020-01-28T18:19:32Z",
+      "side": 1,
+      "message": "lower case the talk or demo",
+      "revId": "ca4ddfcf183701929869591df9a2bc787ad67d9e",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    }
+  ]
+}
