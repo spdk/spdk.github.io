@@ -13,7 +13,7 @@ lang: cn
 > “高性能和易扩展性：全闪存 + SPDK NVMe-oF”
 
 ## 百度
-* [百度赤兔存储结合SPDK NVMe-oF应用介绍](https://dqtibwqq6s6ux.cloudfront.net/download/papers/Introduction_of_Baidu_Chitu_Storage_with_SPDK_NVMe-oF_CN.pdf)
+* [百度赤兔存储结合SPDK NVMe-oF应用介绍](https://ci.spdk.io/download/papers/Introduction_of_Baidu_Chitu_Storage_with_SPDK_NVMe-oF_CN.pdf)
 > “数据通路关键模块以及用户态程序高效开发和运维：SPDK NVMe-oF”
 
 ## UCloud

@@ -7,6 +7,6 @@ categories: news
 
 The following SPDK 18.04 Performance Reports have been published in the [Documentation](http://www.spdk.io/doc/) tab on www.spdk.io.
 
-[SPDK 18.04 NVMe BDEV Performance Report](https://dqtibwqq6s6ux.cloudfront.net/download/performance-reports/SPDK_nvme_bdev_perf_report_18.04.pdf)
+[SPDK 18.04 NVMe BDEV Performance Report](https://ci.spdk.io/download/performance-reports/SPDK_nvme_bdev_perf_report_18.04.pdf)
 
-[SPDK 18.04 NVMe-oF Performance Report](https://dqtibwqq6s6ux.cloudfront.net/download/performance-reports/SPDK_nvmeof_perf_report_18.04.pdf)
+[SPDK 18.04 NVMe-oF Performance Report](https://ci.spdk.io/download/performance-reports/SPDK_nvmeof_perf_report_18.04.pdf)

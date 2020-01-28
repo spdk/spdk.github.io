@@ -222,7 +222,7 @@ real NVMe SSDs. The tests are all checked in to the main SPDK repository (follow
 That means that users can add tests to the CI system by simply submitting a patch. Tests are required to be added in the
 same patch as the new code they are testing.
 
-The [status of the CI system](https://dqtibwqq6s6ux.cloudfront.net/) includes an overview of the queued patches. Note that patches will not
+The [status of the CI system](https://ci.spdk.io/) includes an overview of the queued patches. Note that patches will not
 automatically be queued up, but instead require a cursory approval from one of the SPDK maintainers before they run. Patches
 pending approval for a run through the CI system are listed under the 'Pending Approval' table on the CI status page.
 
@@ -304,7 +304,7 @@ sudo gdb ./spdk/test/unit/lib/bdev/bdev.c/bdev_ut
 ### vhost Tests
 
 The vhost tests under `test/vhost` require the presence of a virtual machine image on the host machine. We have made a tarball containing a working vm image
-that is available for download [here](https://dqtibwqq6s6ux.cloudfront.net/download/test_resources/vhost_vm_image.tar.gz). Please feel free to
+that is available for download [here](https://ci.spdk.io/download/test_resources/vhost_vm_image.tar.gz). Please feel free to
 download and use this image as the guest when running the vhost tests locally. The credentials are below:
 
 ~~~{.sh}

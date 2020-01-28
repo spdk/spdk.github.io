@@ -13,9 +13,9 @@ lang: cn
 <a id="ci_jenkins"></a>
 ## 查看自动化SPDK CI Jenkins的测试结果
 
-在[SPDK CI](https://dqtibwqq6s6ux.cloudfront.net/)持续化测试网页上，主要有两类自动化测试。其中一类是针对每个改动的测试；还有一类是每晚跑一次的测试。每晚跑一次的测试会跑的更久，涉及更多的测试覆盖。这里我们以每晚跑一次的测试作为例子，来分享一些调试小建议。这些建议同样适用到针对每次改动的测试。
+在[SPDK CI](https://ci.spdk.io/)持续化测试网页上，主要有两类自动化测试。其中一类是针对每个改动的测试；还有一类是每晚跑一次的测试。每晚跑一次的测试会跑的更久，涉及更多的测试覆盖。这里我们以每晚跑一次的测试作为例子，来分享一些调试小建议。这些建议同样适用到针对每次改动的测试。
 
-当测试完成后，在[SPDK CI webpage](https://dqtibwqq6s6ux.cloudfront.net/)页面上有个`Job results`部分，有多个相关测试结果的链接，比如每晚跑的测试失败的链接[Autotest-Nightly-Failing](https://dqtibwqq6s6ux.cloudfront.net/public_build/autotest-nightly-failing.html)。在这个链接里，包括了最近跑的失败的测试，按最近到最远时间顺序排序。我们拿[29-September 06:41:22](https://dqtibwqq6s6ux.cloudfront.net/public_build/autotest-nightly-failing_454.html)这次测试结果作为例子，点开链接后，所有子测试任务和对应的测试结果都列出来了。我们可以点击`Test Failure`状态的子任务来具体查看该任务执行的情况，从[例子页面](https://dqtibwqq6s6ux.cloudfront.net/results/autotest-nightly-failing/builds/454/archive/vhost_autotest_nightly/index.html)上找到相关的`build.log`文件，比如[参考失败log文件](https://dqtibwqq6s6ux.cloudfront.net/results/autotest-nightly-failing/builds/454/archive/vhost_autotest_nightly/build.log)可以查看具体测试失败的原因。拉到网页最下面可以大致获得更多失败信息。
+当测试完成后，在[SPDK CI webpage](https://ci.spdk.io/)页面上有个`Job results`部分，有多个相关测试结果的链接，比如每晚跑的测试失败的链接[Autotest-Nightly-Failing](https://ci.spdk.io/public_build/autotest-nightly-failing.html)。在这个链接里，包括了最近跑的失败的测试，按最近到最远时间顺序排序。我们拿[29-September 06:41:22](https://ci.spdk.io/public_build/autotest-nightly-failing_454.html)这次测试结果作为例子，点开链接后，所有子测试任务和对应的测试结果都列出来了。我们可以点击`Test Failure`状态的子任务来具体查看该任务执行的情况，从[例子页面](https://ci.spdk.io/results/autotest-nightly-failing/builds/454/archive/vhost_autotest_nightly/index.html)上找到相关的`build.log`文件，比如[参考失败log文件](https://ci.spdk.io/results/autotest-nightly-failing/builds/454/archive/vhost_autotest_nightly/build.log)可以查看具体测试失败的原因。拉到网页最下面可以大致获得更多失败信息。
 
 <a id="local_run"></a>
 ## 在本地机器上跑自动化测试

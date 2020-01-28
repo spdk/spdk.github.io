@@ -14,7 +14,7 @@ title:  "SPDK Debugging Tips"
 
 There are two test suites used in SPDK. One is the per-patch suite of tests which run on every proposed patch and generate the `+1` or `-1` verified vote from `SPDK CI Jenkins` in Gerrit. The other is the nightly test suite which is only run nightly. For this example, we'll debug a nightly test failure. These debugging tips are also apply to the per-patch test.
 
-On the [CI Status Page](https://dqtibwqq6s6ux.cloudfront.net/) there is a `Job results` section with several links that contain contain the latest nightly test results. For example, the nightly test that tests SPDK master with DPDK master is [here](https://dqtibwqq6s6ux.cloudfront.net/public_build/autotest-nightly.html). On that page, you can find a failed nightly test and select it, bringing up a page that shows which individual test jobs failed. Selecting a given job brings up the test log. The most relevant information is typically in the file `build.log`, usually at the bottom.
+On the [CI Status Page](https://ci.spdk.io/) there is a `Job results` section with several links that contain contain the latest nightly test results. For example, the nightly test that tests SPDK master with DPDK master is [here](https://ci.spdk.io/public_build/autotest-nightly.html). On that page, you can find a failed nightly test and select it, bringing up a page that shows which individual test jobs failed. Selecting a given job brings up the test log. The most relevant information is typically in the file `build.log`, usually at the bottom.
 
 <a id="local_run"></a>
 ## Running the tests on a local machine
