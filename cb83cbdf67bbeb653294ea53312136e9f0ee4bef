@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "84dd1392_75f93187",
+        "filename": "_posts/2020-01-30-20.01_release.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 1011221
+      },
+      "writtenOn": "2020-01-30T14:04:17Z",
+      "side": 1,
+      "message": "doh, will put out new patch set in sec",
+      "range": {
+        "startLine": 13,
+        "startChar": 0,
+        "endLine": 13,
+        "endChar": 41
+      },
+      "revId": "cb83cbdf67bbeb653294ea53312136e9f0ee4bef",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    }
+  ]
+}
