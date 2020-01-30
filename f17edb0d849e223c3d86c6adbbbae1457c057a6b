@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "d4ed76b7_57430169",
+        "filename": "_posts/2020-01-30-20.01_release.md",
+        "patchSetId": 4
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 1012251
+      },
+      "writtenOn": "2020-01-30T21:43:13Z",
+      "side": 1,
+      "message": "\". This\" -\u003e \"this\" ?",
+      "range": {
+        "startLine": 18,
+        "startChar": 160,
+        "endLine": 18,
+        "endChar": 166
+      },
+      "revId": "f17edb0d849e223c3d86c6adbbbae1457c057a6b",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "b07e82f5_db450d03",
+        "filename": "_posts/2020-01-30-20.01_release.md",
+        "patchSetId": 4
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 1012251
+      },
+      "writtenOn": "2020-01-30T21:43:13Z",
+      "side": 1,
+      "message": "NVMe-oF ?",
+      "range": {
+        "startLine": 19,
+        "startChar": 231,
+        "endLine": 19,
+        "endChar": 236
+      },
+      "revId": "f17edb0d849e223c3d86c6adbbbae1457c057a6b",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    }
+  ]
+}
