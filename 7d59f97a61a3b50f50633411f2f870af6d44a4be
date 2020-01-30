@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "abc559ec_73780328",
+        "filename": "_posts/2020-01-30-20.01_release.md",
+        "patchSetId": 3
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 1010531
+      },
+      "writtenOn": "2020-01-30T18:36:26Z",
+      "side": 1,
+      "message": "The 20.01 release will be SPDK\u0027s first long term support release. This release will be supported for 1 year and will have bug fix releases quarterly. This release will guarantee API stability (but not ABI stability) for its lifetime.",
+      "parentUuid": "f88e5dc4_692d06f5",
+      "revId": "7d59f97a61a3b50f50633411f2f870af6d44a4be",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "1aed8369_b5fb3d90",
         "filename": "_posts/2020-01-30-20.01_release.md",
         "patchSetId": 3
@@ -30,6 +48,24 @@
       "writtenOn": "2020-01-30T17:53:01Z",
       "side": 1,
       "message": "Add Significant performance improvements for NVMe-oF/TCP.",
+      "revId": "7d59f97a61a3b50f50633411f2f870af6d44a4be",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "af86265d_12de3de2",
+        "filename": "_posts/2020-01-30-20.01_release.md",
+        "patchSetId": 3
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 1010531
+      },
+      "writtenOn": "2020-01-30T18:36:26Z",
+      "side": 1,
+      "message": "**NVMe-oF/TCP and iSCSI performance improvements:*** The posix module in SPDK\u0027s socket abstraction layer has received a number of major improvements, including an asynchronous writev that automatically batches writes to minimize syscalls and support for MSG_ZEROCOPY. Further improvements have been made specifically to NVMe-oF/TCP to batch receives. These improvements yield as much as 3x improvements in I/Ops per core on some workloads.",
+      "parentUuid": "1aed8369_b5fb3d90",
       "revId": "7d59f97a61a3b50f50633411f2f870af6d44a4be",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": true
