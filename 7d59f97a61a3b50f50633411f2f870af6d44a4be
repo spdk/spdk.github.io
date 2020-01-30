@@ -37,6 +37,24 @@
     },
     {
       "key": {
+        "uuid": "1f5e6398_814ef7f4",
+        "filename": "_posts/2020-01-30-20.01_release.md",
+        "patchSetId": 3
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 1011221
+      },
+      "writtenOn": "2020-01-30T18:42:33Z",
+      "side": 1,
+      "message": "Thanks !",
+      "parentUuid": "abc559ec_73780328",
+      "revId": "7d59f97a61a3b50f50633411f2f870af6d44a4be",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "1aed8369_b5fb3d90",
         "filename": "_posts/2020-01-30-20.01_release.md",
         "patchSetId": 3
@@ -69,6 +87,24 @@
       "revId": "7d59f97a61a3b50f50633411f2f870af6d44a4be",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "4e94cf82_e6299328",
+        "filename": "_posts/2020-01-30-20.01_release.md",
+        "patchSetId": 3
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 1011221
+      },
+      "writtenOn": "2020-01-30T18:42:33Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "af86265d_12de3de2",
+      "revId": "7d59f97a61a3b50f50633411f2f870af6d44a4be",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
     }
   ]
 }
