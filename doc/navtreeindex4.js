@@ -1,5 +1,6 @@
 var NAVTREEINDEX4 =
 {
+"iscsi__spec_8h.html#abd5b963858ccc52de9f15f5e8d51a6c1":[13,0,27,29],
 "iscsi__spec_8h.html#ac0d62ee26187ded38ce90884321ba988":[13,0,27,37],
 "iscsi__spec_8h.html#ac58aab09b28936beaa924bbe49acfb03":[13,0,27,70],
 "iscsi__spec_8h.html#ac975d253c4743d7cb89b6f3b0328a460":[13,0,27,33],
@@ -248,6 +249,5 @@ var NAVTREEINDEX4 =
 "jsonrpc.html#rpc_nvmf_create_transport":[3,7,4,0],
 "jsonrpc.html#rpc_nvmf_delete_subsystem":[3,7,4,3],
 "jsonrpc.html#rpc_nvmf_get_stats":[3,7,4,13],
-"jsonrpc.html#rpc_nvmf_get_subsystems":[3,7,4,1],
-"jsonrpc.html#rpc_nvmf_get_transports":[3,7,4,12]
+"jsonrpc.html#rpc_nvmf_get_subsystems":[3,7,4,1]
 };

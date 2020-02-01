@@ -14,7 +14,7 @@ var intro =
       [ "Running An Example", "vagrant.html#vagrant_example", null ]
     ] ],
     [ "Changelog", "changelog.html", [
-      [ "v20.01: (Upcoming Release)", "changelog.html#changelog-v20-01", null ],
+      [ "v20.04: (Upcoming Release)", "changelog.html#changelog-v20-04", null ],
       [ "v19.10:", "changelog.html#changelog-v19-10", null ],
       [ "v19.07:", "changelog.html#changelog-v19-07", null ],
       [ "v19.04:", "changelog.html#changelog-v19-04", null ],

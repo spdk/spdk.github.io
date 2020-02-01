@@ -145,8 +145,9 @@ $(document).ready(function(){initNavTree('changelog.html','');});
 <div class="title">Changelog </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h1><a class="anchor" id="changelog-v20-01"></a>
-v20.01: (Upcoming Release)</h1>
+<div class="textblock"><h1><a class="anchor" id="changelog-v20-04"></a>
+v20.04: (Upcoming Release)</h1>
+<h1>v20.01</h1>
 <h2>bdev</h2>
 <p>A new function, <code>spdk_bdev_set_timeout</code>, has been added to set per descriptor I/O timeouts.</p>
 <p>A new class of functions <code>spdk_bdev_compare*</code>, have been added to allow native bdev support of block comparisons and compare-and-write.</p>
@@ -155,6 +156,8 @@ v20.01: (Upcoming Release)</h1>
 <h2>blobfs</h2>
 <p>Added boolean return value for function spdk_fs_set_cache_size to indicate its operation result.</p>
 <p>Added <code>blobfs_set_cache_size</code> RPC method to set cache size for blobstore filesystem.</p>
+<h2>blobstore</h2>
+<p>Added new <code>use_extent_table</code> option to <code><a class="el" href="structspdk__blob__opts.html">spdk_blob_opts</a></code> for creating blobs with Extent Table descriptor. Using this metadata format, dramatically decreases number of writes required to persist each cluster allocation for thin provisioned blobs. Extent Table descriptor is enabled by default. See the <a href="https://spdk.io/doc/blob.html#blob_pg_cluster_layout">Blobstore Programmer's Guide</a> for more details.</p>
 <h2>dpdk</h2>
 <p>Updated DPDK submodule to DPDK 19.11.</p>
 <h2>env_dpdk</h2>

@@ -25,6 +25,7 @@ var NAVTREEINDEX1 =
 "bit__array_8h.html#ae001c8cd7e32e65b5a109a46647d33a0":[13,0,6,5],
 "blob.html":[4,0],
 "blob.html#blob_pg_audience":[4,0,0,0],
+"blob.html#blob_pg_cluster_layout":[4,0,0,6,0],
 "blob.html#blob_pg_component":[4,0,0,6],
 "blob.html#blob_pg_config":[4,0,0,5],
 "blob.html#blob_pg_design":[4,0,0,3],
@@ -187,7 +188,7 @@ var NAVTREEINDEX1 =
 "changelog.html#changelog-v19-04":[1,3,3],
 "changelog.html#changelog-v19-07":[1,3,2],
 "changelog.html#changelog-v19-10":[1,3,1],
-"changelog.html#changelog-v20-01":[1,3,0],
+"changelog.html#changelog-v20-04":[1,3,0],
 "classes.html":[12,1],
 "concepts.html":[2],
 "concurrency.html":[2,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX1 =
 "crc32_8h.html#a7441b68a63656725b315959668b11866":[13,0,15,5],
 "crc32_8h.html#a948b27ad88d886a6136cdf7e7f20dd91":[13,0,15,4],
 "crc32_8h.html#ac770c030146f6feaaee33aac5196f451":[13,0,15,2],
-"driver_modules.html":[7],
-"endian_8h.html":[13,0,16]
+"driver_modules.html":[7]
 };

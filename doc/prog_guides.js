@@ -8,7 +8,9 @@ var prog_guides =
         [ "Design Considerations", "blob.html#blob_pg_design", null ],
         [ "Examples", "blob.html#blob_pg_examples", null ],
         [ "Configuration", "blob.html#blob_pg_config", null ],
-        [ "Component Detail", "blob.html#blob_pg_component", null ]
+        [ "Component Detail", "blob.html#blob_pg_component", [
+          [ "Blob cluster layout", "blob.html#blob_pg_cluster_layout", null ]
+        ] ]
       ] ]
     ] ],
     [ "Block Device Layer Programming Guide", "bdev_pg.html", null ],

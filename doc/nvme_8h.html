@@ -1164,7 +1164,7 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">ctrlr</td><td>NVMe controller for which to allocate the I/O queue pair. </td></tr>
-    <tr><td class="paramname">opts</td><td>I/O qpair creation options, or NULL to use the defaults as returned by <a class="el" href="nvme_8h.html#a13f745d239dab9b8f934fae2ad4984a2" title="Allocate an I/O queue pair (submission and completion queue). ">spdk_nvme_ctrlr_alloc_io_qpair()</a>. </td></tr>
+    <tr><td class="paramname">opts</td><td>I/O qpair creation options, or NULL to use the defaults as returned by <a class="el" href="nvme_8h.html#a6964d09dc51882fae6f2a7cf94afc741" title="Get the default options for I/O qpair creation for a specific NVMe controller. ">spdk_nvme_ctrlr_get_default_io_qpair_opts()</a>. </td></tr>
     <tr><td class="paramname">opts_size</td><td>Must be set to sizeof(struct spdk_nvme_io_qpair_opts), or 0 if opts is NULL.</td></tr>
   </table>
   </dd>

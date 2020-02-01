@@ -1,5 +1,6 @@
 var NAVTREEINDEX18 =
 {
+"structspdk__nvme__reservation__notification__log.html#ad8bc8c37065d9cf1c8e2b171d53ba807":[12,0,156,0],
 "structspdk__nvme__reservation__notification__log.html#afaf84897c0b7a58fcaed09685b382031":[12,0,156,3],
 "structspdk__nvme__reservation__register__data.html":[12,0,157],
 "structspdk__nvme__reservation__register__data.html#a3d7c7c2bdf9cb826c607345c9ff16f2d":[12,0,157,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX18 =
 "structspdk__nvmf__fabric__connect__cmd.html#afd8d3d635e857880a5d7940e535bf4c1":[12,0,186,12],
 "structspdk__nvmf__fabric__connect__data.html":[12,0,187],
 "structspdk__nvmf__fabric__connect__data.html#a306ebb005098511f3ed4c23c679895cd":[12,0,187,0],
-"structspdk__nvmf__fabric__connect__data.html#a5dc5b810754c991dbdbc858413fc6d55":[12,0,187,2],
-"structspdk__nvmf__fabric__connect__data.html#a5ed1b7fae823e34162e4a674a9729249":[12,0,187,5]
+"structspdk__nvmf__fabric__connect__data.html#a5dc5b810754c991dbdbc858413fc6d55":[12,0,187,2]
 };
