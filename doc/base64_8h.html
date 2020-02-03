@@ -210,7 +210,7 @@ Functions</h2></td></tr>
 <p>Base 64 Decoding with Standard Base64 Alphabet defined in RFC4684. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">dst</td><td>Buffer address of decoded raw data. Its length should be enough to contain decoded raw data, so it needs to be at least as long as spdk_base64_get_decoded_len(encoded_strlen). </td></tr>
+    <tr><td class="paramname">dst</td><td>Buffer address of decoded raw data. Its length should be enough to contain decoded raw data, so it needs to be at least as long as spdk_base64_get_decoded_len(encoded_strlen). If NULL, only dst_len will be populated indicating the exact decoded length. </td></tr>
     <tr><td class="paramname">dst_len</td><td>Output parameter for the length of actual decoded raw data. If NULL, the actual decoded length won't be returned. </td></tr>
     <tr><td class="paramname">src</td><td>Data buffer for base64 string to be decoded.</td></tr>
   </table>
@@ -218,7 +218,7 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 on success. </dd>
 <dd>
--EINVAL if dst or src is NULL, or content of src is illegal. </dd></dl>
+-EINVAL if src is NULL, or content of src is illegal. </dd></dl>
 
 </div>
 </div>
@@ -294,9 +294,10 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Calculate length of raw buffer based on strlen of encoded Base64. </p>
+<p>This length will be the max possible decoded len. The exact decoded length could be shorter depending on if there was padding in the Base64 string.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">encoded_strlen</td><td>Length of enocded Base64 string, excluding terminating null byte ('\0'). </td></tr>
+    <tr><td class="paramname">encoded_strlen</td><td>Length of encoded Base64 string, excluding terminating null byte ('\0'). </td></tr>
   </table>
   </dd>
 </dl>
@@ -375,7 +376,7 @@ Functions</h2></td></tr>
 <p>Base 64 Decoding with URL and Filename Safe Alphabet. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">dst</td><td>Buffer address of decoded raw data. Its length should be enough to contain decoded raw data, so it needs to be at least as long as spdk_base64_get_decoded_len(encoded_strlen). </td></tr>
+    <tr><td class="paramname">dst</td><td>Buffer address of decoded raw data. Its length should be enough to contain decoded raw data, so it needs to be at least as long as spdk_base64_get_decoded_len(encoded_strlen). If NULL, only dst_len will be populated indicating the exact decoded length. </td></tr>
     <tr><td class="paramname">dst_len</td><td>Output parameter for the length of actual decoded raw data. If NULL, the actual decoded length won't be returned. </td></tr>
     <tr><td class="paramname">src</td><td>Data buffer for base64 string to be decoded.</td></tr>
   </table>
@@ -383,7 +384,7 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 on success. </dd>
 <dd>
--EINVAL if dst or src is NULL, or content of src is illegal. </dd></dl>
+-EINVAL if src is NULL, or content of src is illegal. </dd></dl>
 
 </div>
 </div>
