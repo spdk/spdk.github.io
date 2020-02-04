@@ -9,7 +9,7 @@ title:  "SPDK Development"
 * [Source Code](#source)
 * [Contributing](#contributing)
 * [Development Guidelines](#guidelines)
-* [GerritHub Configuration](#gerrithub)
+* [Gerrit Configuration](#Gerrit)
 * [Submitting a Patch](#patch)
 * [Continuous Integration](#integration)
 * [Local Testing](#local)
@@ -37,7 +37,7 @@ All submitted code must carry the appropriate license.
 
 SPDK's source code is hosted by [GitHub](https://github.com/spdk/spdk) and
 patch submission and review is done through
-[GerritHub](https://review.gerrithub.io/q/projects:spdk+status:open).
+[Gerrit](https://review.spdk.io/q/projects:spdk+status:open).
 
 Instructions for building the libraries and examples are located in the
 [README](https://github.com/spdk/spdk/blob/master/README.md).
@@ -48,7 +48,7 @@ Instructions for building the libraries and examples are located in the
 Everyone is welcome to contribute! Design pre-work and general discussion occurs via one of the
 communications channels described on the [Community](/community/) page.
 
-Patch submission is done through GerritHub where patches are voted on by everyone in the community.
+Patch submission is done through Gerrit where patches are voted on by everyone in the community.
 A patch usually requires a minimum of two +2 votes before it will be merged. +2 votes are reserved for
 the [core maintainers](#core) who can be contacted on the mailing list or in Slack.
 
@@ -57,7 +57,7 @@ the [core maintainers](#core) who can be contacted on the mailing list or in Sla
 
 These general guidelines help ensure that the SPDK development community remains fun, fair, and efficient.
 
-* Developers should strive to be active on GerritHub in order to stay in the loop on upcoming changes.
+* Developers should strive to be active on Gerrit in order to stay in the loop on upcoming changes.
 * [Trello](https://www.trello.com/spdk/) is where we maintain our backlog and is a great place for design
 material for more complex patches. Once code has been merged, however, the documentation in the repository
 supersedes any materials found on Trello (i.e., collateral found on Trello is not maintained once a feature is merged).
@@ -73,10 +73,10 @@ community developers interact with each other.
 * Patch authors, including core maintainers, may not vote +1 or +2 on their own patches.  They may vote -1 on
 their own patches to signify that the patch should not be committed.
 
-<a id="gerrithub"></a>
-## GerritHub Configuration
+<a id="Gerrit"></a>
+## Gerrit Configuration
 
-Log into [GerritHub](https://review.gerrithub.io) using your GitHub account credentials. Once logged in, in the
+Log into [Gerrit](https://review.spdk.io) using your GitHub account credentials. Once logged in, in the
 top right corner click your user name and select 'Settings'. You should set up the following:
 
 * `Profile`: Verify that the information is correct here.
@@ -94,22 +94,22 @@ top right corner click your user name and select 'Settings'. You should set up t
   You can probably also delete the other entries in there. This will add a link at the top of the page
   under "My" that will show you a nice dashboard of all of the SPDK review activity.
 
-Now that you're configured, you can clone the GerritHub repository locally:
+Now that you're configured, you can clone the Gerrit repository locally:
 
 ~~~{.sh}
-git clone https://review.gerrithub.io/spdk/spdk
+git clone https://review.spdk.io/spdk/spdk
 cd spdk
 git submodule update --init
 ~~~
 
-Or if you already cloned directly from GitHub, you can change your repository to point at GerritHub by doing:
+Or if you already cloned directly from GitHub, you can change your repository to point at Gerrit by doing:
 
 ~~~{.sh}
-git remote set-url origin https://review.gerrithub.io/spdk/spdk
+git remote set-url origin https://review.spdk.io/spdk/spdk
 ~~~
 
 When you later push a patch, you'll be prompted for a password. That password
-is the one generated in the `HTTP Password` section of the GerritHub settings,
+is the one generated in the `HTTP Password` section of the Gerrit settings,
 not your GitHub password. To make it easy, turn on the
 [git credential helper](https://git-scm.com/docs/git-credential-store) to store
 your password for you. You can enable it for the SPDK repository with:
@@ -122,7 +122,7 @@ Finally, you'll need to install the Gerrit commit-msg hook. This inserts a uniqu
 commit and is **required** for Gerrit to work.
 
 ~~~{.sh}
-curl -Lo .git/hooks/commit-msg https://review.gerrithub.io/tools/hooks/commit-msg
+curl -Lo .git/hooks/commit-msg https://review.spdk.io/tools/hooks/commit-msg
 chmod +x .git/hooks/commit-msg
 ~~~
 
@@ -130,7 +130,7 @@ Now open .git/config in a text editor and add these lines: (this will make pushi
 
 ~~~
 [remote "review"]
-  url = https://review.gerrithub.io/spdk/spdk
+  url = https://review.spdk.io/spdk/spdk
   push = HEAD:refs/for/master
 ~~~
 
@@ -172,7 +172,7 @@ There should be a blank line between this first line and the rest of the commit 
 * If your commit fixes a GitHub issue, please include "Fixes #issue number" on a separate line so that GitHub can link the two.
 
 Development on SPDK is all done based on the `master` branch, so start by making sure you have the latest. The below
-assumes `origin` is pointed at GerritHub.
+assumes `origin` is pointed at Gerrit.
 
 ~~~{.sh}
 git checkout master
@@ -203,7 +203,7 @@ git push review
 ~~~
 
 If prompted for a password, remember that it is the password from the `HTTP
-Password` section of the GerritHub settings. If you enabled the git credential
+Password` section of the Gerrit settings. If you enabled the git credential
 helper, you'll only be prompted once.
 
 <a id="integration"></a>
@@ -217,7 +217,7 @@ are **not** run through the CI system.  While a developer may specify reviewers 
 is highly suggested one either sends email to the SPDK mailing list or a message on the IRC SPDK channel to bring
 attention to this type of patch for discussion.
 
-The SPDK CI system periodically looks at GerritHub, pulls the patches down, and runs them on a pool of multiple machines with
+The SPDK CI system periodically looks at Gerrit, pulls the patches down, and runs them on a pool of multiple machines with
 real NVMe SSDs. The tests are all checked in to the main SPDK repository (follow `autorun.sh` in the root of the repository).
 That means that users can add tests to the CI system by simply submitting a patch. Tests are required to be added in the
 same patch as the new code they are testing.
@@ -239,7 +239,7 @@ If the CI system gives your patch a -1 but you believe it is in error (not relat
 intermittent failure [GitHub Issue](https://github.com/spdk/spdk/issues?q=is%3Aopen+is%3Aissue+label%3A%22Intermittent+Failure%22) or file
 a [new issue](https://github.com/spdk/spdk/issues/new). If you do create a new issue, be sure to add the "Intermittent Failure" label to it. Once
 you have obtained an issue number from GitHub, either by matching to an existing latent failure or creating your own, you can simply post a comment
-to your patch on GerritHub with the following form:
+to your patch on Gerrit with the following form:
 
 ~~~{.sh}
 # Replace 555 with your issue number.
@@ -248,7 +248,7 @@ false positive: 555
 
 The CI system will then take care of removing the -1 vote from your patch. It will also comment on the GitHub issue you referenced with a link
 to the latest failure's log. We will prioritize tacking down and fixing these issues based on the number of comments on each one. If the system
-is unable to match your comment to a valid GitHub issue, it will post back a comment on GerritHub letting you know it was unable to retrigger
+is unable to match your comment to a valid GitHub issue, it will post back a comment on Gerrit letting you know it was unable to retrigger
 your patch.
 
 <a id="local"></a>

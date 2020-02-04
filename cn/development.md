@@ -10,7 +10,7 @@ lang: cn
 * [源代码](#source)
 * [贡献代码](#contributing)
 * [开发指南](#guidelines)
-* [GerritHub配置](#gerrithub)
+* [Gerrit配置](#Gerrit)
 * [提交补丁](#patch)
 * [持续集成](#integration)
 * [代码评审](#review)
@@ -31,7 +31,7 @@ SPDK主要使用BSD-3条款授权的许可证。某些可选或实用程序代�
 <a id="source"></a>
 ## 源代码
 SPDK的源代码由 [GitHub](https://github.com/spdk/spdk)托管，补丁提交和审核是通过
-[GerritHub](https://review.gerrithub.io/q/projects:spdk+status:open)完成的。
+[Gerrit](https://review.spdk.io/q/projects:spdk+status:open)完成的。
 
 构建库的说明和示例位于
 [README](https://github.com/spdk/spdk/blob/master/README.md)文件中。
@@ -41,14 +41,14 @@ SPDK的源代码由 [GitHub](https://github.com/spdk/spdk)托管，补丁提交�
 
 欢迎大家踊跃贡献代码！通过[社区](/cn/community/) 页面提供的任意一种的交流方式，可以参与设计前期工作和广泛的讨论。
 
-补丁通过GerritHub提交，并且社区中的每个人会为补丁进行投票。通常，一个补丁需要至少两个+2票才能被merge。+2票权限保留给[核心维护人员](#core)，可以在收件人列表或IRC中联系他们。
+补丁通过Gerrit提交，并且社区中的每个人会为补丁进行投票。通常，一个补丁需要至少两个+2票才能被merge。+2票权限保留给[核心维护人员](#core)，可以在收件人列表或IRC中联系他们。
 
 <a id="guidelines"></a>
 ## 开发指南
 
 这些基本准则有助于确保SPDK开发社区保持有趣、公平和高效。
 
-* 开发人员应尽量在GerritHub上保持活跃，以便对可能到来的变更保持关注。
+* 开发人员应尽量在Gerrit上保持活跃，以便对可能到来的变更保持关注。
 * [Trello](https://www.trello.com/spdk/) 是我们管理未完成事务的地方，也是为更复杂的补丁设计资料的绝佳之处。代码合并之后，代码仓库中的文档将取代Trello上一切相关材料（即，一旦特性合并，Trello上的资料就不会保留）。
 * 应始终遵守编码和提交指南 （即保证提交信息的明确与简洁）
 * 开发人员无需向补丁中添加特定的审阅人员。相反，社区维护人员和社区中的其他人应当始终关注提交的新补丁。开发人员有权利完全自由地参与某个补丁的审阅工作，或者让其他人成为补丁的审阅人员。
@@ -56,10 +56,10 @@ SPDK的源代码由 [GitHub](https://github.com/spdk/spdk)托管，补丁提交�
 * 补丁没有最长或最短的存留时间限制。一个补丁可能在数小时，数周甚至更长时间内被接受。社区开发人员的良好互动会直接提高社区的运作效率。
 * 补丁提交者，包括核心维护人员，不能给他们自己提交的补丁投+1或+2票。他们可以给自己的补丁投-1票，用以表示此补丁不应生效。
 
-<a id="gerrithub"></a>
-## GerritHub配置
+<a id="Gerrit"></a>
+## Gerrit配置
 
-用户可使用GitHub帐户登录GerritHub。登录后，在右上角单击您的用户名并选择“设置”。你应该设置以下内容:
+用户可使用GitHub帐户登录Gerrit。登录后，在右上角单击您的用户名并选择“设置”。你应该设置以下内容:
 
 * `Profile`: 确保这里的信息准确无误
 * `HTTP Password`: 设置密码，在git提示时将使用此密码（不是GitHub密码）
@@ -75,21 +75,21 @@ SPDK的源代码由 [GitHub](https://github.com/spdk/spdk)托管，补丁提交�
 
 您也可以删除其中的其他条目。这将在页面顶部添加一个链接，位于“My”下方，该链接将指向一个显示您的所有SPDK评论活动的板块。
 
-完成以上步骤则配置完成，您可以在本地克隆GerritHub存储库:
+完成以上步骤则配置完成，您可以在本地克隆Gerrit存储库:
 
 ~~~{.sh}
-git clone https://review.gerrithub.io/spdk/spdk
+git clone https://review.spdk.io/spdk/spdk
 cd spdk
 git submodule update --init
 ~~~
 
-或者，如果您已经直接从GitHub克隆，则可以通过执行以下操作将您的存储库更改为指向GerritHub：
+或者，如果您已经直接从GitHub克隆，则可以通过执行以下操作将您的存储库更改为指向Gerrit：
 
 ~~~{.sh}
-git remote set-url origin https://review.gerrithub.io/spdk/spdk
+git remote set-url origin https://review.spdk.io/spdk/spdk
 ~~~
 
-当您稍后推送补丁时，系统会提示您输入密码。该密码是在GerritHub设置的`HTTP Password` 部分生成的，而不是您的GitHub密码。为了方便起见，请打开[git凭证助手](https://git-scm.com/docs/git-credential-store)为您存储密码。您可以通过以下方式为SPDK存储库启用它：
+当您稍后推送补丁时，系统会提示您输入密码。该密码是在Gerrit设置的`HTTP Password` 部分生成的，而不是您的GitHub密码。为了方便起见，请打开[git凭证助手](https://git-scm.com/docs/git-credential-store)为您存储密码。您可以通过以下方式为SPDK存储库启用它：
 
 ~~~{.sh}
 git config credential.helper store
@@ -98,7 +98,7 @@ git config credential.helper store
 最后，您需要安装Gerrit commit-msg hook。这会在您每次提交时插入唯一的更改ID，并且Gerrit**需要**它才能工作。
 
 ~~~{.sh}
-curl -Lo .git/hooks/commit-msg https://review.gerrithub.io/tools/hooks/commit-msg
+curl -Lo .git/hooks/commit-msg https://review.spdk.io/tools/hooks/commit-msg
 chmod +x .git/hooks/commit-msg
 ~~~
 
@@ -106,7 +106,7 @@ chmod +x .git/hooks/commit-msg
 
 ~~~
 [remote "review"]
-  url = https://review.gerrithub.io/spdk/spdk
+  url = https://review.spdk.io/spdk/spdk
   push = HEAD:refs/for/master
 ~~~
 
@@ -138,7 +138,7 @@ git config core.hooksPath .githooks
 
 SPDK的开发都是基于master分支完成的，所以首先要保证你有最新的版本。
 
-下面假设 `origin` 指向GerritHub。
+下面假设 `origin` 指向Gerrit。
 
 ~~~{.sh}
 git checkout master
@@ -166,12 +166,12 @@ git rebase -i master
 git push review
 ~~~
 
-如果提示输入密码，请记住该密码来自GerritHub设置的`HTTP Password`部分。如果启用了git凭证助手，那么只会提示您一次。
+如果提示输入密码，请记住该密码来自Gerrit设置的`HTTP Password`部分。如果启用了git凭证助手，那么只会提示您一次。
 
 <a id="integration"></a>
 ## 持续集成
 
-SPDK采用了持续集成（CI, Continuous Integration），这意味着所有的补丁在被审阅之前都要经过一系列的测试。SPDK CI系统定期查看GerritHub，将补丁拉下，并将它们运行在具有物理NVMe SSD的多台计算机池中。所有测试都被检入到主SPDK存储库（遵循库根目录的`autorun.sh`文件）。这意味着用户只需提交一个补丁就可以向CI系统添加测试。
+SPDK采用了持续集成（CI, Continuous Integration），这意味着所有的补丁在被审阅之前都要经过一系列的测试。SPDK CI系统定期查看Gerrit，将补丁拉下，并将它们运行在具有物理NVMe SSD的多台计算机池中。所有测试都被检入到主SPDK存储库（遵循库根目录的`autorun.sh`文件）。这意味着用户只需提交一个补丁就可以向CI系统添加测试。
 
 [CI系统状态](https://ci.spdk.io/) 涵盖了对排队的补丁的概述。请注意，补丁不会自动排队，而是需要SPDK维护人员在测试之前粗略地批准。CI状态页面上的“待批准”表格中列出了待批准通过CI系统测试的补丁。
 
