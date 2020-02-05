@@ -1168,7 +1168,7 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 
 <p>Release a reference to an I/O channel. </p>
 <p>This happens asynchronously.</p>
-<p>Actual release will happen on the same thread that called <a class="el" href="thread_8h.html#a8537c42a7aa203b50578efed509d9ba8" title="Get an I/O channel for the specified io_device to be used by the calling thread. ">spdk_get_io_channel()</a> for the specified I/O channel. If this releases the last reference to the I/O channel, The destroy_cb function specified in <a class="el" href="thread_8h.html#a75f5c71056d8c39ff05a6610d55edcf5" title="Register the opaque io_device context as an I/O device. ">spdk_io_device_register()</a> will be invoked to release any associated resources.</p>
+<p>This must be called on the same thread that called <a class="el" href="thread_8h.html#a8537c42a7aa203b50578efed509d9ba8" title="Get an I/O channel for the specified io_device to be used by the calling thread. ">spdk_get_io_channel()</a> for the specified I/O channel. If this releases the last reference to the I/O channel, The destroy_cb function specified in <a class="el" href="thread_8h.html#a75f5c71056d8c39ff05a6610d55edcf5" title="Register the opaque io_device context as an I/O device. ">spdk_io_device_register()</a> will be invoked to release any associated resources.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">ch</td><td>I/O channel to release a reference. </td></tr>

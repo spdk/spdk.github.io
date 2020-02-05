@@ -24,8 +24,11 @@ var prog_guides =
       ] ],
       [ "Usage", "ftl.html#ftl_usage", [
         [ "Prerequisites", "ftl.html#ftl_prereq", null ],
+        [ "FTL bdev creation", "ftl.html#ftl_create", null ],
+        [ "FTL usage with OCSSD nvme bdev", "ftl.html#ftl_ocssd", null ],
         [ "Configuring QEMU", "ftl.html#ftl_qemu_config", null ],
-        [ "Configuring SPDK", "ftl.html#ftl_spdk_config", null ]
+        [ "Configuring SPDK", "ftl.html#ftl_spdk_config", null ],
+        [ "FTL usage with zone block bdev", "ftl.html#ftl_zone_block", null ]
       ] ]
     ] ],
     [ "GDB Macros User Guide", "gdb_macros.html", null ],

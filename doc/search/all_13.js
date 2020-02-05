@@ -1450,6 +1450,7 @@ var searchData=
   ['spdk_5fvhost_5fshutdown_5fcb',['spdk_vhost_shutdown_cb',['../vhost_8h.html#afd7159f8eb1e0d65dad5bedaa6cc5e43',1,'vhost.h']]],
   ['spdk_5fvhost_5ftrylock',['spdk_vhost_trylock',['../vhost_8h.html#a04d81053d41a72f5df978f7c05dfebd7',1,'vhost.h']]],
   ['spdk_5fvhost_5funlock',['spdk_vhost_unlock',['../vhost_8h.html#adf01bd5ae7b0d761aa8e0e271de1ee9e',1,'vhost.h']]],
+  ['spdk_5fvmd_5ffini',['spdk_vmd_fini',['../vmd_8h.html#a9c7f724bd925940eafd73c98299a0cb0',1,'vmd.h']]],
   ['spdk_5fvmd_5fget_5fled_5fstate',['spdk_vmd_get_led_state',['../vmd_8h.html#a302cba203fd0abdafd3729c34822c3f3',1,'vmd.h']]],
   ['spdk_5fvmd_5fhotplug_5fmonitor',['spdk_vmd_hotplug_monitor',['../vmd_8h.html#a290d82c8bf3daf4a4d9b8aa414142e2f',1,'vmd.h']]],
   ['spdk_5fvmd_5finit',['spdk_vmd_init',['../vmd_8h.html#a8ab093f9cdad46a637fac6aa07739ace',1,'vmd.h']]],

@@ -8,6 +8,7 @@ var vmd_8h =
       [ "SPDK_VMD_LED_STATE_REBUILD", "vmd_8h.html#acbf78271da1326a9e70fe8bb0aeb6a75ad898705795b34aeb83a172297709c1a9", null ],
       [ "SPDK_VMD_LED_STATE_UNKNOWN", "vmd_8h.html#acbf78271da1326a9e70fe8bb0aeb6a75ab287491f3df8293dd73d6bc74ddc51a0", null ]
     ] ],
+    [ "spdk_vmd_fini", "vmd_8h.html#a9c7f724bd925940eafd73c98299a0cb0", null ],
     [ "spdk_vmd_get_led_state", "vmd_8h.html#a302cba203fd0abdafd3729c34822c3f3", null ],
     [ "spdk_vmd_hotplug_monitor", "vmd_8h.html#a290d82c8bf3daf4a4d9b8aa414142e2f", null ],
     [ "spdk_vmd_init", "vmd_8h.html#a8ab093f9cdad46a637fac6aa07739ace", null ],

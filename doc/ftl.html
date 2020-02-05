@@ -145,26 +145,26 @@ $(document).ready(function(){initNavTree('ftl.html','');});
 <div class="title">Flash Translation Layer </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p>The Flash Translation Layer library provides block device access on top of non-block SSDs implementing Open Channel interface. It handles the logical to physical address mapping, responds to the asynchronous media management events, and manages the defragmentation process.</p>
+<div class="textblock"><p>The Flash Translation Layer library provides block device access on top of devices implementing bdev_zone interface. It handles the logical to physical address mapping, responds to the asynchronous media management events, and manages the defragmentation process.</p>
 <h1><a class="anchor" id="ftl_terminology"></a>
 Terminology</h1>
 <h2>Logical to physical address map</h2>
 <ul>
 <li>Shorthand: L2P</li>
 </ul>
-<p>Contains the mapping of the logical addresses (LBA) to their on-disk physical location (PPA). The LBAs are contiguous and in range from 0 to the number of surfaced blocks (the number of spare blocks are calculated during device formation and are subtracted from the available address space). The spare blocks account for chunks going offline throughout the lifespan of the device as well as provide necessary buffer for data <a href="#ftl_reloc">defragmentation</a>.</p>
+<p>Contains the mapping of the logical addresses (LBA) to their on-disk physical location. The LBAs are contiguous and in range from 0 to the number of surfaced blocks (the number of spare blocks are calculated during device formation and are subtracted from the available address space). The spare blocks account for zones going offline throughout the lifespan of the device as well as provide necessary buffer for data <a href="#ftl_reloc">defragmentation</a>.</p>
 <h2><a class="anchor" id="ftl_band"></a>
 Band</h2>
-<p>Band describes a collection of chunks, each belonging to a different parallel unit. All writes to the band follow the same pattern - a batch of logical blocks is written to one chunk, another batch to the next one and so on. This ensures the parallelism of the write operations, as they can be executed independently on a different chunks. Each band keeps track of the LBAs it consists of, as well as their validity, as some of the data will be invalidated by subsequent writes to the same logical address. The L2P mapping can be restored from the SSD by reading this information in order from the oldest band to the youngest. </p><pre class="fragment">         +--------------+        +--------------+                        +--------------+
-band 1   |   chunk 1    +--------+     chk 1    +---- --- --- --- --- ---+     chk 1    |
+<p>A band describes a collection of zones, each belonging to a different parallel unit. All writes to a band follow the same pattern - a batch of logical blocks is written to one zone, another batch to the next one and so on. This ensures the parallelism of the write operations, as they can be executed independently on different zones. Each band keeps track of the LBAs it consists of, as well as their validity, as some of the data will be invalidated by subsequent writes to the same logical address. The L2P mapping can be restored from the SSD by reading this information in order from the oldest band to the youngest. </p><pre class="fragment">         +--------------+        +--------------+                        +--------------+
+band 1   |   zone 1     +--------+    zone 1    +---- --- --- --- --- ---+     zone 1   |
          +--------------+        +--------------+                        +--------------+
-band 2   |   chunk 2    +--------+     chk 2    +---- --- --- --- --- ---+     chk 2    |
+band 2   |   zone 2    +--------+     zone 2    +---- --- --- --- --- ---+     zone 2   |
          +--------------+        +--------------+                        +--------------+
-band 3   |   chunk 3    +--------+     chk 3    +---- --- --- --- --- ---+     chk 3    |
+band 3   |   zone 3    +--------+     zone 3    +---- --- --- --- --- ---+     zone 3   |
          +--------------+        +--------------+                        +--------------+
          |     ...      |        |     ...      |                        |     ...      |
          +--------------+        +--------------+                        +--------------+
-band m   |   chunk m    +--------+     chk m    +---- --- --- --- --- ---+     chk m    |
+band m   |   zone m    +--------+     zone m    +---- --- --- --- --- ---+     zone m   |
          +--------------+        +--------------+                        +--------------+
          |     ...      |        |     ...      |                        |     ...      |
          +--------------+        +--------------+                        +--------------+
@@ -175,11 +175,11 @@ band m   |   chunk m    +--------+     chk m    +---- --- --- --- --- ---+     c
 <li>the tail part, containing the address map and the valid map, located at the end of the band.</li>
 </ul>
 <pre class="fragment">   head metadata               band's data               tail metadata
-+-------------------+-------------------------------+----------------------+
-|chk 1|...|chk n|...|...|chk 1|...|                 | ... |chk  m-1 |chk  m|
-|lbk 1|   |lbk 1|   |   |lbk x|   |                 |     |lblk y   |lblk y|
-+-------------------+-------------+-----------------+----------------------+
-</pre><p>Bands are being written sequentially (in a way that was described earlier). Before a band can be written to, all of its chunks need to be erased. During that time, the band is considered to be in a <code>PREP</code> state. After that is done, the band transitions to the <code>OPENING</code> state, in which head metadata is being written. Then the band moves to the <code>OPEN</code> state and actual user data can be written to the band. Once the whole available space is filled, tail metadata is written and the band transitions to <code>CLOSING</code> state. When that finishes the band becomes <code>CLOSED</code>.</p>
++-------------------+-------------------------------+------------------------+
+|zone 1 |...|zone n |...|...|zone 1 |...|           | ... |zone  m-1 |zone  m|
+|block 1|   |block 1|   |   |block x|   |           |     |block y   |block y|
++-------------------+-------------+-----------------+------------------------+
+</pre><p>Bands are written sequentially (in a way that was described earlier). Before a band can be written to, all of its zones need to be erased. During that time, the band is considered to be in a <code>PREP</code> state. After that is done, the band transitions to the <code>OPENING</code> state, in which head metadata is being written. Then the band moves to the <code>OPEN</code> state and actual user data can be written to the band. Once the whole available space is filled, tail metadata is written and the band transitions to <code>CLOSING</code> state. When that finishes the band becomes <code>CLOSED</code>.</p>
 <h2><a class="anchor" id="ftl_rwb"></a>
 Ring write buffer</h2>
 <ul>
@@ -207,7 +207,7 @@ Defragmentation and relocation</h2>
 <ul>
 <li>Shorthand: defrag, reloc</li>
 </ul>
-<p>Since a write to the same LBA invalidates its previous physical location, some of the blocks on a band might contain old data that basically wastes space. As there is no way to overwrite an already written block, this data will stay there until the whole chunk is reset. This might create a situation in which all of the bands contain some valid data and no band can be erased, so no writes can be executed anymore. Therefore a mechanism is needed to move valid data and invalidate whole bands, so that they can be reused. </p><pre class="fragment">                band                                             band
+<p>Since a write to the same LBA invalidates its previous physical location, some of the blocks on a band might contain old data that basically wastes space. As there is no way to overwrite an already written block, this data will stay there until the whole zone is reset. This might create a situation in which all of the bands contain some valid data and no band can be erased, so no writes can be executed anymore. Therefore a mechanism is needed to move valid data and invalidate whole bands, so that they can be reused. </p><pre class="fragment">                band                                             band
 +-----------------------------------+            +-----------------------------------+
 | ** *    * ***      *    *** * *   |            |                                   |
 |**  *       *    *    * *     *   *|   +----&gt;   |                                   |
@@ -215,13 +215,24 @@ Defragmentation and relocation</h2>
 +-----------------------------------+            +-----------------------------------+
 </pre><p>Valid blocks are marked with an asterisk '*'.</p>
 <p>Another reason for data relocation might be an event from the SSD telling us that the data might become corrupt if it's not relocated. This might happen due to its old age (if it was written a long time ago) or due to read disturb (media characteristic, that causes corruption of neighbouring blocks during a read operation).</p>
-<p>Module responsible for data relocation is called <code>reloc</code>. When a band is chosen for defragmentation or an ANM (asynchronous NAND management) event is received, the appropriate blocks are marked as required to be moved. The <code>reloc</code> module takes a band that has some of such blocks marked, checks their validity and, if they're still valid, copies them.</p>
-<p>Choosing a band for defragmentation depends on several factors: its valid ratio (1) (proportion of valid blocks to all user blocks), its age (2) (when was it written) and its write count / wear level index of its chunks (3) (how many times the band was written to). The lower the ratio (1), the higher its age (2) and the lower its write count (3), the higher the chance the band will be chosen for defrag.</p>
+<p>Module responsible for data relocation is called <code>reloc</code>. When a band is chosen for defragmentation or a media management event is received, the appropriate blocks are marked as required to be moved. The <code>reloc</code> module takes a band that has some of such blocks marked, checks their validity and, if they're still valid, copies them.</p>
+<p>Choosing a band for defragmentation depends on several factors: its valid ratio (1) (proportion of valid blocks to all user blocks), its age (2) (when was it written) and its write count / wear level index of its zones (3) (how many times the band was written to). The lower the ratio (1), the higher its age (2) and the lower its write count (3), the higher the chance the band will be chosen for defrag.</p>
 <h1><a class="anchor" id="ftl_usage"></a>
 Usage</h1>
 <h2><a class="anchor" id="ftl_prereq"></a>
 Prerequisites</h2>
-<p>In order to use the FTL module, an Open Channel SSD is required. The easiest way to obtain one is to emulate it using QEMU. The QEMU with the patches providing Open Channel support can be found on the SPDK's QEMU fork on <a href="https://github.com/spdk/qemu/tree/spdk-3.0.0">spdk-3.0.0</a> branch.</p>
+<p>In order to use the FTL module, a device capable of zoned interface is required e.g. <code>zone_block</code> bdev or OCSSD <code>nvme</code> bdev.</p>
+<h2><a class="anchor" id="ftl_create"></a>
+FTL bdev creation</h2>
+<p>Similar to other bdevs, the FTL bdevs can be created either based on JSON config files or via RPC. Both interfaces require the same arguments which are described by the <code>--help</code> option of the <code>bdev_ftl_create</code> RPC call, which are:</p><ul>
+<li>bdev's name</li>
+<li>base bdev's name (base bdev must implement bdev_zone API)</li>
+<li>UUID of the FTL device (if the FTL is to be restored from the SSD)</li>
+</ul>
+<h2><a class="anchor" id="ftl_ocssd"></a>
+FTL usage with OCSSD nvme bdev</h2>
+<p>This option requires an Open Channel SSD, which can be emulated using QEMU.</p>
+<p>The QEMU with the patches providing Open Channel support can be found on the SPDK's QEMU fork on <a href="https://github.com/spdk/qemu/tree/spdk-3.0.0">spdk-3.0.0</a> branch.</p>
 <h2><a class="anchor" id="ftl_qemu_config"></a>
 Configuring QEMU</h2>
 <p>To emulate an Open Channel device, QEMU expects parameters describing the characteristics and geometry of the SSD:</p><ul>
@@ -261,19 +272,11 @@ Configuring QEMU</h2>
 <div class="fragment"><div class="line">$ fallocate -l 384G /path/to/data/file</div></div><!-- fragment --><h2><a class="anchor" id="ftl_spdk_config"></a>
 Configuring SPDK</h2>
 <p>To verify that the drive is emulated correctly, one can check the output of the NVMe identify app (assuming that <code>scripts/setup.sh</code> was called before and the driver has been changed for that device):</p>
-<div class="fragment"><div class="line">$ examples/nvme/identify/identify</div><div class="line">=====================================================</div><div class="line">NVMe Controller at 0000:00:0a.0 [1d1d:1f1f]</div><div class="line">=====================================================</div><div class="line">Controller Capabilities/Features</div><div class="line">================================</div><div class="line">Vendor ID:                             1d1d</div><div class="line">Subsystem Vendor ID:                   1af4</div><div class="line">Serial Number:                         deadbeef</div><div class="line">Model Number:                          QEMU NVMe Ctrl</div><div class="line"></div><div class="line">... other info ...</div><div class="line"></div><div class="line">Namespace OCSSD Geometry</div><div class="line">=======================</div><div class="line">OC version: maj:2 min:0</div><div class="line"></div><div class="line">... other info ...</div><div class="line"></div><div class="line">Groups (channels): 1</div><div class="line">PUs (LUNs) per group: 8</div><div class="line">Chunks per LUN: 512</div><div class="line">Logical blks per chunk: 24576</div><div class="line"></div><div class="line">... other info ...</div></div><!-- fragment --><p>Similarly to other bdevs, the FTL bdevs can be created either based on config files or via RPC. Both interfaces require the same arguments which are described by the <code>--help</code> option of the <code>bdev_ftl_create</code> RPC call, which are:</p><ul>
-<li>bdev's name</li>
-<li>transport type of the device (e.g. PCIe)</li>
-<li>transport address of the device (e.g. <code>00:0a.0</code>)</li>
-<li>parallel unit range</li>
-<li>UUID of the FTL device (if the FTL is to be restored from the SSD)</li>
-</ul>
-<p>Example config:</p>
-<div class="fragment"><div class="line">[Ftl]</div><div class="line"> TransportID &quot;trtype:PCIe traddr:00:0a.0&quot; nvme0 &quot;0-3&quot; 00000000-0000-0000-0000-000000000000</div><div class="line"> TransportID &quot;trtype:PCIe traddr:00:0a.0&quot; nvme1 &quot;4-5&quot; e9825835-b03c-49d7-bc3e-5827cbde8a88</div></div><!-- fragment --><p>The above will result in creation of two devices:</p><ul>
-<li><code>nvme0</code> on <code>00:0a.0</code> using parallel units 0-3, created from scratch</li>
-<li><code>nvme1</code> on the same device using parallel units 4-5, restored from the SSD using the UUID provided</li>
-</ul>
-<p>The same can be achieved with the following two RPC calls:</p>
-<div class="fragment"><div class="line">$ scripts/rpc.py bdev_ftl_create -b nvme0 -l 0-3 -a 00:0a.0</div><div class="line">{</div><div class="line">        &quot;name&quot;: &quot;nvme0&quot;,</div><div class="line">        &quot;uuid&quot;: &quot;b4624a89-3174-476a-b9e5-5fd27d73e870&quot;</div><div class="line">}</div><div class="line">$ scripts/rpc.py bdev_ftl_create -b nvme1 -l 0-3 -a 00:0a.0 -u e9825835-b03c-49d7-bc3e-5827cbde8a88</div><div class="line">{</div><div class="line">        &quot;name&quot;: &quot;nvme1&quot;,</div><div class="line">        &quot;uuid&quot;: &quot;e9825835-b03c-49d7-bc3e-5827cbde8a88&quot;</div><div class="line">}</div></div><!-- fragment --> </div></div><!-- contents -->
+<div class="fragment"><div class="line">$ examples/nvme/identify/identify</div><div class="line">=====================================================</div><div class="line">NVMe Controller at 0000:00:0a.0 [1d1d:1f1f]</div><div class="line">=====================================================</div><div class="line">Controller Capabilities/Features</div><div class="line">================================</div><div class="line">Vendor ID:                             1d1d</div><div class="line">Subsystem Vendor ID:                   1af4</div><div class="line">Serial Number:                         deadbeef</div><div class="line">Model Number:                          QEMU NVMe Ctrl</div><div class="line"></div><div class="line">... other info ...</div><div class="line"></div><div class="line">Namespace OCSSD Geometry</div><div class="line">=======================</div><div class="line">OC version: maj:2 min:0</div><div class="line"></div><div class="line">... other info ...</div><div class="line"></div><div class="line">Groups (channels): 1</div><div class="line">PUs (LUNs) per group: 8</div><div class="line">Chunks per LUN: 512</div><div class="line">Logical blks per chunk: 24576</div><div class="line"></div><div class="line">... other info ...</div></div><!-- fragment --><p>In order to create FTL on top Open Channel SSD, the following steps are required: 1) Attach OCSSD NVMe controller 2) Create OCSSD bdev on the controller attached in step 1 (user could specify parallel unit range and create multiple OCSSD bdevs on single OCSSD NVMe controller) 3) Create FTL bdev on top of bdev created in step 2</p>
+<p>Example: </p><div class="fragment"><div class="line">$ scripts/rpc.py bdev_nvme_attach_controller -b nvme0 -a 00:0a.0 -t pcie</div><div class="line"></div><div class="line">$ scripts/rpc.py bdev_ocssd_create -c nvme0 -b nvme0n1</div><div class="line">        nvme0n1</div><div class="line"></div><div class="line">$ scripts/rpc.py bdev_ftl_create -b ftl0 -d nvme0n1</div><div class="line">{</div><div class="line">        &quot;name&quot;: &quot;ftl0&quot;,</div><div class="line">        &quot;uuid&quot;: &quot;3b469565-1fa5-4bfb-8341-747ec9fca9b9&quot;</div><div class="line">}</div></div><!-- fragment --><h2><a class="anchor" id="ftl_zone_block"></a>
+FTL usage with zone block bdev</h2>
+<p>Zone block bdev is a bdev adapter between regular <code>bdev</code> and <code>bdev_zone</code>. It emulates a zoned interface on top of a regular block device.</p>
+<p>In order to create FTL on to of a regular bdev: 1) Create regular bdev e.g. <code>bdev_nvme</code>, <code>bdev_null</code>, <code>bdev_malloc</code> 2) Create zone block bdev on top of a regular bdev created in step 1 (user could specify zone capacity and optimal number of open zones) 3) Create FTL bdev on top of bdev created in step 2</p>
+<p>Example: </p><div class="fragment"><div class="line">$ scripts/rpc.py bdev_nvme_attach_controller -b nvme0 -a 00:05.0 -t pcie</div><div class="line">        nvme0n1</div><div class="line"></div><div class="line">$ scripts/rpc.py bdev_zone_block_create -b zone1 -n nvme0n1 -z 4096 -o 32</div><div class="line">        zone1</div><div class="line"></div><div class="line">$ scripts/rpc.py bdev_ftl_create -b ftl0 -d zone1</div><div class="line">{</div><div class="line">        &quot;name&quot;: &quot;ftl0&quot;,</div><div class="line">        &quot;uuid&quot;: &quot;3b469565-1fa5-4bfb-8341-747ec9f3a9b9&quot;</div><div class="line">}</div></div><!-- fragment --> </div></div><!-- contents -->
 </div><!-- doc-content -->
 </div>
