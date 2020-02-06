@@ -170,7 +170,8 @@ band m   |   zone m    +--------+     zone m    +---- --- --- --- --- ---+     z
          +--------------+        +--------------+                        +--------------+
 
           parallel unit 1              pu 2                                    pu n
-</pre><p>The address map and valid map are, along with a several other things (e.g. UUID of the device it's part of, number of surfaced LBAs, band's sequence number, etc.), parts of the band's metadata. The metadata is split in two parts:</p><ul>
+</pre><p>The address map and valid map are, along with a several other things (e.g. UUID of the device it's part of, number of surfaced LBAs, band's sequence number, etc.), parts of the band's metadata. The metadata is split in two parts:</p>
+<ul>
 <li>the head part, containing information already known when opening the band (device's UUID, band's sequence number, etc.), located at the beginning blocks of the band,</li>
 <li>the tail part, containing the address map and the valid map, located at the end of the band.</li>
 </ul>
@@ -224,7 +225,8 @@ Prerequisites</h2>
 <p>In order to use the FTL module, a device capable of zoned interface is required e.g. <code>zone_block</code> bdev or OCSSD <code>nvme</code> bdev.</p>
 <h2><a class="anchor" id="ftl_create"></a>
 FTL bdev creation</h2>
-<p>Similar to other bdevs, the FTL bdevs can be created either based on JSON config files or via RPC. Both interfaces require the same arguments which are described by the <code>--help</code> option of the <code>bdev_ftl_create</code> RPC call, which are:</p><ul>
+<p>Similar to other bdevs, the FTL bdevs can be created either based on JSON config files or via RPC. Both interfaces require the same arguments which are described by the <code>--help</code> option of the <code>bdev_ftl_create</code> RPC call, which are:</p>
+<ul>
 <li>bdev's name</li>
 <li>base bdev's name (base bdev must implement bdev_zone API)</li>
 <li>UUID of the FTL device (if the FTL is to be restored from the SSD)</li>
@@ -235,7 +237,8 @@ FTL usage with OCSSD nvme bdev</h2>
 <p>The QEMU with the patches providing Open Channel support can be found on the SPDK's QEMU fork on <a href="https://github.com/spdk/qemu/tree/spdk-3.0.0">spdk-3.0.0</a> branch.</p>
 <h2><a class="anchor" id="ftl_qemu_config"></a>
 Configuring QEMU</h2>
-<p>To emulate an Open Channel device, QEMU expects parameters describing the characteristics and geometry of the SSD:</p><ul>
+<p>To emulate an Open Channel device, QEMU expects parameters describing the characteristics and geometry of the SSD:</p>
+<ul>
 <li><code>serial</code> - serial number,</li>
 <li><code>lver</code> - version of the OCSSD standard (0 - disabled, 1 - "1.2", 2 - "2.0"), libftl only supports 2.0,</li>
 <li><code>lba_index</code> - default LBA format. Possible values (libftl only supports lba_index &gt;= 3): <table class="markdownTable">
@@ -272,7 +275,8 @@ Configuring QEMU</h2>
 <div class="fragment"><div class="line">$ fallocate -l 384G /path/to/data/file</div></div><!-- fragment --><h2><a class="anchor" id="ftl_spdk_config"></a>
 Configuring SPDK</h2>
 <p>To verify that the drive is emulated correctly, one can check the output of the NVMe identify app (assuming that <code>scripts/setup.sh</code> was called before and the driver has been changed for that device):</p>
-<div class="fragment"><div class="line">$ examples/nvme/identify/identify</div><div class="line">=====================================================</div><div class="line">NVMe Controller at 0000:00:0a.0 [1d1d:1f1f]</div><div class="line">=====================================================</div><div class="line">Controller Capabilities/Features</div><div class="line">================================</div><div class="line">Vendor ID:                             1d1d</div><div class="line">Subsystem Vendor ID:                   1af4</div><div class="line">Serial Number:                         deadbeef</div><div class="line">Model Number:                          QEMU NVMe Ctrl</div><div class="line"></div><div class="line">... other info ...</div><div class="line"></div><div class="line">Namespace OCSSD Geometry</div><div class="line">=======================</div><div class="line">OC version: maj:2 min:0</div><div class="line"></div><div class="line">... other info ...</div><div class="line"></div><div class="line">Groups (channels): 1</div><div class="line">PUs (LUNs) per group: 8</div><div class="line">Chunks per LUN: 512</div><div class="line">Logical blks per chunk: 24576</div><div class="line"></div><div class="line">... other info ...</div></div><!-- fragment --><p>In order to create FTL on top Open Channel SSD, the following steps are required: 1) Attach OCSSD NVMe controller 2) Create OCSSD bdev on the controller attached in step 1 (user could specify parallel unit range and create multiple OCSSD bdevs on single OCSSD NVMe controller) 3) Create FTL bdev on top of bdev created in step 2</p>
+<div class="fragment"><div class="line">$ examples/nvme/identify/identify</div><div class="line">=====================================================</div><div class="line">NVMe Controller at 0000:00:0a.0 [1d1d:1f1f]</div><div class="line">=====================================================</div><div class="line">Controller Capabilities/Features</div><div class="line">================================</div><div class="line">Vendor ID:                             1d1d</div><div class="line">Subsystem Vendor ID:                   1af4</div><div class="line">Serial Number:                         deadbeef</div><div class="line">Model Number:                          QEMU NVMe Ctrl</div><div class="line"></div><div class="line">... other info ...</div><div class="line"></div><div class="line">Namespace OCSSD Geometry</div><div class="line">=======================</div><div class="line">OC version: maj:2 min:0</div><div class="line"></div><div class="line">... other info ...</div><div class="line"></div><div class="line">Groups (channels): 1</div><div class="line">PUs (LUNs) per group: 8</div><div class="line">Chunks per LUN: 512</div><div class="line">Logical blks per chunk: 24576</div><div class="line"></div><div class="line">... other info ...</div></div><!-- fragment --><p>In order to create FTL on top Open Channel SSD, the following steps are required:</p>
+<p>1) Attach OCSSD NVMe controller 2) Create OCSSD bdev on the controller attached in step 1 (user could specify parallel unit range and create multiple OCSSD bdevs on single OCSSD NVMe controller) 3) Create FTL bdev on top of bdev created in step 2</p>
 <p>Example: </p><div class="fragment"><div class="line">$ scripts/rpc.py bdev_nvme_attach_controller -b nvme0 -a 00:0a.0 -t pcie</div><div class="line"></div><div class="line">$ scripts/rpc.py bdev_ocssd_create -c nvme0 -b nvme0n1</div><div class="line">        nvme0n1</div><div class="line"></div><div class="line">$ scripts/rpc.py bdev_ftl_create -b ftl0 -d nvme0n1</div><div class="line">{</div><div class="line">        &quot;name&quot;: &quot;ftl0&quot;,</div><div class="line">        &quot;uuid&quot;: &quot;3b469565-1fa5-4bfb-8341-747ec9fca9b9&quot;</div><div class="line">}</div></div><!-- fragment --><h2><a class="anchor" id="ftl_zone_block"></a>
 FTL usage with zone block bdev</h2>
 <p>Zone block bdev is a bdev adapter between regular <code>bdev</code> and <code>bdev_zone</code>. It emulates a zoned interface on top of a regular block device.</p>

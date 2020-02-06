@@ -148,15 +148,23 @@ $(document).ready(function(){initNavTree('nvme-cli.html','');});
 <div class="textblock"><h1>nvme-cli with SPDK Getting Started Guide</h1>
 <p>Now nvme-cli can support both kernel driver and SPDK user mode driver for most of its available commands and Intel specific commands.</p>
 <ol type="1">
-<li>Clone the nvme-cli repository from the SPDK GitHub fork. Make sure you check out the spdk-1.6 branch. <div class="fragment"><div class="line">git clone -b spdk-1.6 https://github.com/spdk/nvme-cli.git</div></div><!-- fragment --></li>
+<li>Clone the nvme-cli repository from the SPDK GitHub fork. Make sure you check out the spdk-1.6 branch.</li>
+</ol>
+<div class="fragment"><div class="line">git clone -b spdk-1.6 https://github.com/spdk/nvme-cli.git</div></div><!-- fragment --><ol type="1">
 <li>Clone the SPDK repository from <a href="https://github.com/spdk/spdk">https://github.com/spdk/spdk</a> under the nvme-cli folder.</li>
 <li>Refer to the "README.md" under SPDK folder to properly build SPDK.</li>
 <li>Refer to the "README.md" under nvme-cli folder to properly build nvme-cli.</li>
 <li>Execute "&lt;spdk_folder&gt;/scripts/setup.sh" with the "root" account.</li>
-<li>Update the "spdk.conf" file under nvme-cli folder to properly configure the SPDK. Notes as following: <div class="fragment"><div class="line">spdk=1</div><div class="line">Indicates whether or not to use spdk. Can be 0 (off) or 1 (on).</div><div class="line">Defaults to 1 which assumes that you have run &quot;&lt;spdk_folder&gt;/scripts/setup.sh&quot;, unbinding your drives from the kernel.</div><div class="line"></div><div class="line"></div><div class="line">core_mask=0x1</div><div class="line">A bitmask representing which core(s) to use for nvme-cli operations.</div><div class="line">Defaults to core 0.</div><div class="line"></div><div class="line">mem_size=512</div><div class="line">The amount of reserved hugepage memory to use for nvme-cli (in MB).</div><div class="line">Defaults to 512MB.</div><div class="line"></div><div class="line">shm_id=0</div><div class="line">Indicates the shared memory ID for the spdk application with which your NVMe drives are associated,</div><div class="line">and should be adjusted accordingly.</div><div class="line">Defaults to 0.</div></div><!-- fragment --></li>
+<li>Update the "spdk.conf" file under nvme-cli folder to properly configure the SPDK. Notes as following:</li>
+</ol>
+<div class="fragment"><div class="line">spdk=1</div><div class="line">Indicates whether or not to use spdk. Can be 0 (off) or 1 (on).</div><div class="line">Defaults to 1 which assumes that you have run &quot;&lt;spdk_folder&gt;/scripts/setup.sh&quot;, unbinding your drives from the kernel.</div><div class="line"></div><div class="line">core_mask=0x1</div><div class="line">A bitmask representing which core(s) to use for nvme-cli operations.</div><div class="line">Defaults to core 0.</div><div class="line"></div><div class="line">mem_size=512</div><div class="line">The amount of reserved hugepage memory to use for nvme-cli (in MB).</div><div class="line">Defaults to 512MB.</div><div class="line"></div><div class="line">shm_id=0</div><div class="line">Indicates the shared memory ID for the spdk application with which your NVMe drives are associated,</div><div class="line">and should be adjusted accordingly.</div><div class="line">Defaults to 0.</div></div><!-- fragment --><ol type="1">
 <li>Run the "./nvme list" command to get the domain:bus:device.function for each found NVMe SSD.</li>
-<li>Run the other nvme commands with domain:bus:device.function instead of "/dev/nvmeX" for the specified device. <div class="fragment"><div class="line">Example: ./nvme smart-log 0000:01:00.0</div></div><!-- fragment --></li>
-<li>Run the "./nvme intel" commands for Intel specific commands against Intel NVMe SSD. <div class="fragment"><div class="line">Example: ./nvme intel internal-log 0000:08:00.0</div></div><!-- fragment --></li>
+<li>Run the other nvme commands with domain:bus:device.function instead of "/dev/nvmeX" for the specified device.</li>
+</ol>
+<div class="fragment"><div class="line">Example: ./nvme smart-log 0000:01:00.0</div></div><!-- fragment --><ol type="1">
+<li>Run the "./nvme intel" commands for Intel specific commands against Intel NVMe SSD.</li>
+</ol>
+<div class="fragment"><div class="line">Example: ./nvme intel internal-log 0000:08:00.0</div></div><!-- fragment --><ol type="1">
 <li>Execute "&lt;spdk_folder&gt;/scripts/setup.sh reset" with the "root" account and update "spdk=0" in spdk.conf to use the kernel driver if wanted.</li>
 </ol>
 <h2>Use scenarios</h2>
@@ -172,10 +180,12 @@ $(document).ready(function(){initNavTree('nvme-cli.html','');});
 </ol>
 <h3>Run with other running SPDK applications on non-shared NVMe SSDs</h3>
 <ol type="1">
-<li>Properly configure the other running SPDK applications. <div class="fragment"><div class="line">a. Only access the NVMe SSDs it wants.</div><div class="line">b. Allocate a fixed number of memory instead of all available memory.</div></div><!-- fragment --></li>
-<li>Properly configure the spdk.conf setting for nvme-cli. <div class="fragment"><div class="line">a. Not access the NVMe SSDs from other SPDK applications.</div><div class="line">b. Change the mem_size to a proper size.</div></div><!-- fragment --></li>
+<li>Properly configure the other running SPDK applications.</li>
 </ol>
-<h2>Note</h2>
+<div class="fragment"><div class="line">a. Only access the NVMe SSDs it wants.</div><div class="line">b. Allocate a fixed number of memory instead of all available memory.</div></div><!-- fragment --><ol type="1">
+<li>Properly configure the spdk.conf setting for nvme-cli.</li>
+</ol>
+<div class="fragment"><div class="line">a. Not access the NVMe SSDs from other SPDK applications.</div><div class="line">b. Change the mem_size to a proper size.</div></div><!-- fragment --><h2>Note</h2>
 <ol type="1">
 <li>To run the newly built nvme-cli, either explicitly run as "./nvme" or added it into the $PATH to avoid invoke other already installed version.</li>
 <li>To run the newly built nvme-cli with SPDK support in arbitrary directory, copy "spdk.conf" to that directory from the nvme cli folder and update the configuration as suggested. </li>

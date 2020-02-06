@@ -165,22 +165,27 @@ $(document).ready(function(){initNavTree('vpp_integration.html','');});
 <p>VPP can be configured using a VPP startup file and the <code>vppctl</code> command; By default, the VPP startup file is <code>/etc/vpp/startup.conf</code>, however, you can pass any file with the <code>-c</code> vpp command argument.</p>
 <h2>Startup configuration</h2>
 <p>Some key values from iSCSI point of view includes:</p>
-<p>CPU section (<code>cpu</code>):</p><ul>
+<p>CPU section (<code>cpu</code>):</p>
+<ul>
 <li><code>main-core &lt;lcore&gt;</code> &ndash; logical CPU core used for main thread.</li>
 <li><code>corelist-workers &lt;lcore list&gt;</code> &ndash; logical CPU cores where worker threads are running.</li>
 </ul>
-<p>DPDK section (<code>dpdk</code>):</p><ul>
+<p>DPDK section (<code>dpdk</code>):</p>
+<ul>
 <li><code>num-rx-queues &lt;num&gt;</code> &ndash; number of receive queues.</li>
 <li><code>num-tx-queues &lt;num&gt;</code> &ndash; number of transmit queues.</li>
 <li><code>dev &lt;PCI address&gt;</code> &ndash; whitelisted device.</li>
 </ul>
-<p>Session section (<code>session</code>):</p><ul>
+<p>Session section (<code>session</code>):</p>
+<ul>
 <li><code>evt_qs_memfd_seg</code> &ndash; uses a memfd segment for event queues. This is required for SPDK.</li>
 </ul>
-<p>Socket server session (<code>socksvr</code>):</p><ul>
+<p>Socket server session (<code>socksvr</code>):</p>
+<ul>
 <li><code>socket-name &lt;path&gt;</code> &ndash; configure API socket filename (curently SPDK uses default path <code>/run/vpp-api.sock</code>).</li>
 </ul>
-<p>Plugins section (<code>plugins</code>):</p><ul>
+<p>Plugins section (<code>plugins</code>):</p>
+<ul>
 <li><code>plugin &lt;plugin name&gt; { [enable|disable] }</code> &ndash; enable or disable VPP plugin.</li>
 </ul>
 <h3>Example:</h3>

@@ -173,7 +173,8 @@ QEMU/SPDK vhost data flow</div></div>
  <h1><a class="anchor" id="vhost_processing_init"></a>
 Device initialization</h1>
 <p>All initialization and management information is exchanged using Vhost-user messages. The connection always starts with the feature negotiation. Both the Master and the Slave exposes a list of their implemented features and upon negotiation they choose a common set of those. Most of these features are implementation-related, but also regard e.g. multiqueue support or live migration.</p>
-<p>After the negotiation, the Vhost-user driver shares its memory, so that the vhost device (SPDK) can access it directly. The memory can be fragmented into multiple physically-discontiguous regions and Vhost-user specification puts a limit on their number - currently 8. The driver sends a single message for each region with the following data:</p><ul>
+<p>After the negotiation, the Vhost-user driver shares its memory, so that the vhost device (SPDK) can access it directly. The memory can be fragmented into multiple physically-discontiguous regions and Vhost-user specification puts a limit on their number - currently 8. The driver sends a single message for each region with the following data:</p>
+<ul>
 <li>file descriptor - for mmap</li>
 <li>user address - for memory translations in Vhost-user messages (e.g. translating vring addresses)</li>
 <li>guest address - for buffers addresses translations in vrings (for QEMU this is a physical address inside the guest)</li>
@@ -182,7 +183,8 @@ Device initialization</h1>
 </ul>
 <p>The Master will send new memory regions after each memory change - usually hotplug/hotremove. The previous mappings will be removed.</p>
 <p>Drivers may also request a device config, consisting of e.g. disk geometry. Vhost-SCSI drivers, however, don't need to implement this functionality as they use common SCSI I/O to inquiry the underlying disk(s).</p>
-<p>Afterwards, the driver requests the number of maximum supported queues and starts sending virtqueue data, which consists of:</p><ul>
+<p>Afterwards, the driver requests the number of maximum supported queues and starts sending virtqueue data, which consists of:</p>
+<ul>
 <li>unique virtqueue id</li>
 <li>index of the last processed vring descriptor</li>
 <li>vring addresses (from user address space)</li>

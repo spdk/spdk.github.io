@@ -259,7 +259,8 @@ NVMe Multi Process</h1>
 <h2><a class="anchor" id="nvme_multi_process_configuration"></a>
 Configuration</h2>
 <p>DPDK EAL allows different types of processes to be spawned, each with different permissions on the hugepage memory used by the applications.</p>
-<p>There are two types of processes:</p><ol type="1">
+<p>There are two types of processes:</p>
+<ol type="1">
 <li>a primary process which initializes the shared memory and has full privileges and</li>
 <li>a secondary process which can attach to the primary process by mapping its shared memory regions and perform NVMe operations including creating queue pairs.</li>
 </ol>

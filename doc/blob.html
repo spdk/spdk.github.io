@@ -258,7 +258,8 @@ Design Considerations</h2>
 <h3>Sub-page Sized Operations</h3>
 <p>Blobstore is only capable of doing page sized read/write operations. If the application requires finer granularity it will have to accommodate that itself.</p>
 <h3>Threads</h3>
-<p>As mentioned earlier, Blobstore can share a single thread with an application or the application can define any number of threads, within resource constraints, that makes sense. The basic considerations that must be followed are:</p><ul>
+<p>As mentioned earlier, Blobstore can share a single thread with an application or the application can define any number of threads, within resource constraints, that makes sense. The basic considerations that must be followed are:</p>
+<ul>
 <li>Metadata operations (API with MD in the name) should be isolated from each other as there is no internal locking on the memory structures affected by these API.</li>
 <li>Metadata operations should be isolated from conflicting IO operations (an example of a conflicting IO would be one that is reading/writing to an area of a blob that a metadata operation is deallocating).</li>
 <li>Asynchronous callbacks will always take place on the calling thread.</li>
@@ -307,7 +308,8 @@ Component Detail</h2>
 <h3><a class="anchor" id="blob_pg_cluster_layout"></a>
 Blob cluster layout</h3>
 <p>Each blob is an ordered list of clusters, where starting LBA of a cluster is called extent. A blob can be thin provisioned, resulting in no extent for some of the clusters. When first write operation occurs to the unallocated cluster - new extent is chosen. This information is stored in RAM and on-disk.</p>
-<p>There are two extent representations on-disk, dependent on <code>use_extent_table</code> (default:true) opts used when creating a blob.</p><ul>
+<p>There are two extent representations on-disk, dependent on <code>use_extent_table</code> (default:true) opts used when creating a blob.</p>
+<ul>
 <li><b>use_extent_table=true</b>: EXTENT_PAGE descriptor is not part of linked list of pages. It contains extents that are not run-length encoded. Each extent page is referenced by EXTENT_TABLE descriptor, which is serialized as part of linked list of pages. Extent table is run-length encoding all unallocated extent pages. Every new cluster allocation updates a single extent page, in case when extent page was previously allocated. Otherwise additionally incurs serializing whole linked list of pages for the blob.</li>
 <li><b>use_extent_table=false</b>: EXTENT_RLE descriptor is serialized as part of linked list of pages. Extents pointing to contiguous LBA are run-length encoded, including unallocated extents represented by 0. Every new cluster allocation incurs serializing whole linked list of pages for the blob.</li>
 </ul>
@@ -322,7 +324,8 @@ Blob cluster layout</h3>
 <div class="fragment"><div class="line">struct spdk_bs_super_block</div></div><!-- fragment --><p> The super block is an on-disk structure that contains all of the relevant information that's in the in-memory Blobstore structure just discussed along with other elements one would expect to see here such as signature, version, checksum, etc.</p>
 <h3>Code Layout and Common Conventions</h3>
 <p>In general, <code>Blobstore.c</code> is laid out with groups of related functions blocked together with descriptive comments. For example,</p>
-<div class="fragment"><div class="line">/* START spdk_bs_md_delete_blob */</div><div class="line">&lt; relevant functions to accomplish the deletion of a blob &gt;</div><div class="line">/* END spdk_bs_md_delete_blob */</div></div><!-- fragment --><p>And for the most part the following conventions are followed throughout:</p><ul>
+<div class="fragment"><div class="line">/* START spdk_bs_md_delete_blob */</div><div class="line">&lt; relevant functions to accomplish the deletion of a blob &gt;</div><div class="line">/* END spdk_bs_md_delete_blob */</div></div><!-- fragment --><p>And for the most part the following conventions are followed throughout:</p>
+<ul>
 <li>functions beginning with an underscore are called internally only</li>
 <li>functions or variables with the letters <code>cpl</code> are related to set or callback completions </li>
 </ul>

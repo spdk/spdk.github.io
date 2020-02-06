@@ -229,12 +229,14 @@ v19.10:</h1>
 <h2>bdev</h2>
 <p>Added new parameter <code>cdw0</code> to <code><a class="el" href="bdev__module_8h.html#a3341d564a521b3e7874f72fc1390f043" title="Complete a bdev_io with an NVMe status code and DW0 completion queue entry. ">spdk_bdev_io_complete_nvme_status()</a></code> and <code><a class="el" href="bdev_8h.html#ae7e1bf90f44f042c2b2ad463b8667735" title="Get the status of bdev_io as an NVMe status code and command specific completion queue value...">spdk_bdev_io_get_nvme_status()</a></code> that allows setting/getting the NVMe completion queue DW0 entry. This allows vendor specific IO commands to return commmand specific completion info back to the initiator.</p>
 <p>Added <code><a class="el" href="bdev_8h.html#ab5775a23cadb2eb1d5381dc105577a37" title="Get the write unit size for this bdev. ">spdk_bdev_get_write_unit_size()</a></code> function for retrieving required number of logical blocks for write operation.</p>
-<p>New zone-related fields were added to the result of the <code>get_bdevs</code> RPC call:</p><ul>
+<p>New zone-related fields were added to the result of the <code>get_bdevs</code> RPC call:</p>
+<ul>
 <li><code>zoned</code>: indicates whether the device is zoned or a regular block device</li>
 <li><code>zone_size</code>: number of blocks in a single zone</li>
 <li><code>max_open_zones</code>: maximum number of open zones</li>
-<li><code>optimal_open_zones</code>: optimal number of open zones The <code>zoned</code> field is a boolean and is always present, while the rest is only available for zoned bdevs.</li>
+<li><code>optimal_open_zones</code>: optimal number of open zones</li>
 </ul>
+<p>The <code>zoned</code> field is a boolean and is always present, while the rest is only available for zoned bdevs.</p>
 <p>A new <code>spdk_bdev_open_ext</code> function has been added and <code>spdk_bdev_open</code> function has been deprecated. The new open function introduces requirement to provide callback function that will be called by asynchronous event such as bdev removal. <code>spdk_bdev_open_ext</code> function takes bdev name as an argument instead of bdev structure to avoid a race condition that can happen when the bdev is being removed between a call to get its structure based on a name and actually openning it.</p>
 <p>New 'resize' event has been added to notify about change of block count property of block device. Event is delivered only if block device was opened with <code>spdk_bdev_open_ext</code> function.</p>
 <h2>bdev zone</h2>
@@ -454,7 +456,8 @@ v19.01:</h1>
 <p>A custom hugetlbfs directory can now be specified via <a class="el" href="structspdk__app__opts.html" title="Event framework initialization options. ">spdk_app_opts</a>. This can be used to configure hugepages with different sizes, a different size limit, or different access permissions than the system's default hugepage pool. SPDK applications can specify a custom hugetlbfs mount with the <code>--huge-dir</code> option.</p>
 <h2>environment</h2>
 <p><a class="el" href="env_8h.html#ac6a932523e0f4cb86d2b90dfe113b171" title="Get the physical address of a buffer. ">spdk_vtophys()</a> has been refactored to accept length of the translated region as a new parameter. The function will now update that parameter with the largest possible value for which the memory is contiguous in the physical memory address space.</p>
-<p>The following functions were removed:</p><ul>
+<p>The following functions were removed:</p>
+<ul>
 <li>spdk_pci_nvme_device_attach()</li>
 <li>spdk_pci_nvme_enumerate()</li>
 <li>spdk_pci_ioat_device_attach()</li>
@@ -462,7 +465,8 @@ v19.01:</h1>
 <li>spdk_pci_virtio_device_attach()</li>
 <li>spdk_pci_virtio_enumerate()</li>
 </ul>
-<p>They were replaced with generic <a class="el" href="env_8h.html#ac6aa2606617cc3913fd5d6b7d218eba4" title="Attach a PCI device. ">spdk_pci_device_attach()</a> and <a class="el" href="env_8h.html#a8e2430eaebf3d756c8608aea6957b614" title="Enumerate all PCI devices supported by the provided driver and try to attach those that weren&#39;t attac...">spdk_pci_enumerate()</a> which require a new spdk_pci_driver object to be provided. It can be one of the following:</p><ul>
+<p>They were replaced with generic <a class="el" href="env_8h.html#ac6aa2606617cc3913fd5d6b7d218eba4" title="Attach a PCI device. ">spdk_pci_device_attach()</a> and <a class="el" href="env_8h.html#a8e2430eaebf3d756c8608aea6957b614" title="Enumerate all PCI devices supported by the provided driver and try to attach those that weren&#39;t attac...">spdk_pci_enumerate()</a> which require a new spdk_pci_driver object to be provided. It can be one of the following:</p>
+<ul>
 <li><a class="el" href="env_8h.html#aa4a5c3c4f51c1eaac132f6093fe219f4" title="Get the NVMe PCI driver object. ">spdk_pci_nvme_get_driver()</a></li>
 <li><a class="el" href="env_8h.html#ad9d208ba1e19b37b76bb993c358b5760" title="Get the I/OAT PCI driver object. ">spdk_pci_ioat_get_driver()</a></li>
 <li><a class="el" href="env_8h.html#ac7fabe1b4dba0227ab07e5bd91fe8816" title="Get the Virtio PCI driver object. ">spdk_pci_virtio_get_driver()</a></li>
@@ -520,7 +524,8 @@ v19.01:</h1>
 <p>DPDK submodule was updated to DPDK 18.11. Note that SPDK does not fully leverage the new multi-process device hotplug yet and continues to work the same way it always did.</p>
 <p>Dropped support for DPDK 16.07 and earlier, which SPDK won't even compile with right now.</p>
 <h2>RPC</h2>
-<p>The following RPC commands deprecated in the previous release are now removed:</p><ul>
+<p>The following RPC commands deprecated in the previous release are now removed:</p>
+<ul>
 <li>construct_virtio_user_scsi_bdev</li>
 <li>construct_virtio_pci_scsi_bdev</li>
 <li>construct_virtio_user_blk_bdev</li>
@@ -580,7 +585,8 @@ v18.10:</h1>
 <p>A Python script has been added to enable conversion of old INI config file to new JSON-RPC config file format. This script can be found at scripts/config_converter.py. Example how this script can be used: </p><div class="fragment"><div class="line">cat old_format.ini | scripts/config_converter.py &gt; new_json_format.json</div></div><!-- fragment --><h2>Sock</h2>
 <p>Two additional parameters were added to spdk_sock_get_addr() for the server port and client port. These parameters are named "sport" and "cport" respectively.</p>
 <h2>Virtio</h2>
-<p>The following RPC commands have been deprecated:</p><ul>
+<p>The following RPC commands have been deprecated:</p>
+<ul>
 <li>construct_virtio_user_scsi_bdev</li>
 <li>construct_virtio_pci_scsi_bdev</li>
 <li>construct_virtio_user_blk_bdev</li>
@@ -592,7 +598,8 @@ v18.10:</h1>
 <p><a class="el" href="blobfs_8h.html#a816f18c23723f7211b0a5a277904b202" title="Get the unique ID for the file. ">spdk_file_get_id()</a> returning unique ID for the file was added.</p>
 <h2>JSON</h2>
 <p>Added jsonrpc-client C library intended for issuing RPC commands from applications.</p>
-<p>Added API enabling iteration over JSON object:</p><ul>
+<p>Added API enabling iteration over JSON object:</p>
+<ul>
 <li><a class="el" href="json_8h.html#a5fc65c7d1961c23a747b3e2aa2169f4a" title="Return JSON value asociated with key key_name. ">spdk_json_find()</a></li>
 <li><a class="el" href="json_8h.html#a04601f5c6dc82ac1ddedc387a510249d" title="The same as calling spdk_json_find() function with type set to SPDK_JSON_VAL_STRING. ">spdk_json_find_string()</a></li>
 <li><a class="el" href="json_8h.html#a0512cd8ee58901ec15f5ef372d6cafc6" title="The same as calling spdk_json_key() function with type set to SPDK_JSON_VAL_ARRAY_BEGIN. ">spdk_json_find_array()</a></li>
@@ -763,7 +770,8 @@ v17.10: Logical Volumes</h1>
 <p>An <a href="http://github.com/axboe/fio">fio</a> plugin was added that can route I/O to the bdev layer. See the <a href="https://github.com/spdk/spdk/tree/master/examples/bdev/fio_plugin/">plugin documentation</a> for more information.</p>
 <p><a class="el" href="group__bdev__io__submit__functions.html#ga680c9c302998f7b003e2476e35d9ae4b" title="Submit an unmap request to the block device. ">spdk_bdev_unmap()</a> was modified to take an offset and a length in bytes as arguments instead of requiring the user to provide an array of SCSI unmap descriptors. This limits unmaps to a single contiguous range.</p>
 <p><a class="el" href="group__bdev__io__submit__functions.html#gadc50b78fec7f69190d9139aff29a9043" title="Submit a write zeroes request to the bdev on the given channel. ">spdk_bdev_write_zeroes()</a> was introduced. It ensures that all specified blocks will be zeroed out. If a block device doesn't natively support a write zeroes command, the bdev layer emulates it using write commands.</p>
-<p>New API functions that accept I/O parameters in units of blocks instead of bytes have been added:</p><ul>
+<p>New API functions that accept I/O parameters in units of blocks instead of bytes have been added:</p>
+<ul>
 <li><a class="el" href="group__bdev__io__submit__functions.html#gaeec9efd151e2fb34ee3d22a1edbbb53f" title="Submit a read request to the bdev on the given channel. ">spdk_bdev_read_blocks()</a>, <a class="el" href="group__bdev__io__submit__functions.html#ga55483d5ae010c514b37b976ad803b4b2" title="Submit a read request to the bdev on the given channel. ">spdk_bdev_readv_blocks()</a></li>
 <li><a class="el" href="group__bdev__io__submit__functions.html#ga12da8917f525a6e11cbf22b2b7652c89" title="Submit a write request to the bdev on the given channel. ">spdk_bdev_write_blocks()</a>, <a class="el" href="group__bdev__io__submit__functions.html#gaf5849064d12de9f140a41522d1f7c95b" title="Submit a write request to the bdev on the given channel. ">spdk_bdev_writev_blocks()</a></li>
 <li><a class="el" href="group__bdev__io__submit__functions.html#ga047f8a9f8d0a3d1d7bfcdf0a9838b261" title="Submit a write zeroes request to the bdev on the given channel. ">spdk_bdev_write_zeroes_blocks()</a></li>
@@ -824,7 +832,8 @@ v17.07: Build system improvements, userspace vhost-blk target, and GPT bdev</h1>
 <p>The environment abstraction layer has been updated to include several new functions in order to wrap additional DPDK functionality. See <code><a class="el" href="env_8h.html" title="Encapsulated third-party dependencies. ">include/spdk/env.h</a></code> for the current set of functions.</p>
 <h2>SPDK Performance Analysis with Intel® VTune™ Amplifier</h2>
 <p>Support for SPDK performance analysis has been added to Intel® VTune™ Amplifier 2018.</p>
-<p>This analysis provides:</p><ul>
+<p>This analysis provides:</p>
+<ul>
 <li>I/O performance monitoring (calculating standard I/O metrics like IOPS, throughput, etc.)</li>
 <li>Tuning insights on the interplay of I/O and compute devices by estimating how many cores would be reasonable to provide for SPDK to keep up with a current storage workload.</li>
 </ul>
@@ -869,7 +878,8 @@ v16.12: NVMe over Fabrics host, hotplug, and multi-process</h1>
 <h1><a class="anchor" id="changelog-v16-08"></a>
 v16.08: iSCSI target, NVMe over Fabrics maturity</h1>
 <p>This release adds a userspace iSCSI target. The iSCSI target is capable of exporting NVMe devices over a network using the iSCSI protocol. The application is located in app/iscsi_tgt and a documented configuration file can be found at etc/spdk/spdk.conf.in.</p>
-<p>This release also significantly improves the existing NVMe over Fabrics target.</p><ul>
+<p>This release also significantly improves the existing NVMe over Fabrics target.</p>
+<ul>
 <li>The configuration file format was changed, which will require updates to any existing nvmf.conf files (see <code>etc/spdk/nvmf.conf.in</code>):<ul>
 <li><code>SubsystemGroup</code> was renamed to <code>Subsystem</code>.</li>
 <li><code>AuthFile</code> was removed (it was unimplemented).</li>
@@ -883,7 +893,8 @@ v16.08: iSCSI target, NVMe over Fabrics maturity</h1>
 <li>Many bug fixes and cleanups were applied to the <code>nvmf_tgt</code> app and library.</li>
 <li>The target now supports discovery.</li>
 </ul>
-<p>This release also adds one new feature and provides some better examples and tools for the NVMe driver.</p><ul>
+<p>This release also adds one new feature and provides some better examples and tools for the NVMe driver.</p>
+<ul>
 <li>The Weighted Round Robin arbitration method is now supported. This allows the user to specify different priorities on a per-I/O-queue basis. To enable WRR, set the <code>arb_mechanism</code> field during <code><a class="el" href="nvme_8h.html#a225bbc386ec518ae21bd5536f21db45d" title="Enumerate the bus indicated by the transport ID and attach the userspace NVMe driver to each device f...">spdk_nvme_probe()</a></code>.</li>
 <li>A simplified "Hello World" example was added to show the proper way to use the NVMe library API; see <code>examples/nvme/hello_world/hello_world.c</code>.</li>
 <li>A test for measuring software overhead was added. See <code>test/lib/nvme/overhead</code>.</li>
@@ -934,7 +945,8 @@ v16.06: NVMf userspace target</h1>
 </ul>
 <h1>v1.0.0: NVMe user-space driver</h1>
 <p>This is the initial open source release of the Storage Performance Development Kit (SPDK).</p>
-<p>Features:</p><ul>
+<p>Features:</p>
+<ul>
 <li>NVMe user-space driver</li>
 <li>NVMe example programs<ul>
 <li><code>examples/nvme/perf</code> tests performance (IOPS) using the NVMe user-space driver</li>

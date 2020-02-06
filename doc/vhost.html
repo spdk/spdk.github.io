@@ -229,7 +229,8 @@ Advanced Topics</h1>
 <h2><a class="anchor" id="vhost_multiqueue"></a>
 Multi-Queue Block Layer (blk-mq)</h2>
 <p>For best performance use the Linux kernel block multi-queue feature with vhost. To enable it on Linux, it is required to modify kernel options inside the virtual machine.</p>
-<p>Instructions below for Ubuntu OS:</p><ol type="1">
+<p>Instructions below for Ubuntu OS:</p>
+<ol type="1">
 <li><code>vi /etc/default/grub</code></li>
 <li>Make sure mq is enabled: <code>GRUB_CMDLINE_LINUX="scsi_mod.use_blk_mq=1"</code></li>
 <li><code>sudo update-grub</code></li>
