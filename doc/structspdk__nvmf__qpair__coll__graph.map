@@ -1,0 +1,12 @@
+<map id="spdk_nvmf_qpair" name="spdk_nvmf_qpair">
+<area shape="rect" id="node4" href="$structspdk__nvmf__request.html" title="spdk_nvmf_request" alt="" coords="909,129,1060,156"/>
+<area shape="rect" id="node2" href="$structspdk__nvmf__poll__group.html" title="spdk_nvmf_poll_group" alt="" coords="288,192,457,219"/>
+<area shape="rect" id="node3" href="$structspdk__nvmf__poll__group__stat.html" title="spdk_nvmf_poll_group_stat" alt="" coords="5,192,207,219"/>
+<area shape="rect" id="node5" href="$structspdk__nvmf__dif__info.html" title="spdk_nvmf_dif_info" alt="" coords="589,5,740,32"/>
+<area shape="rect" id="node6" href="$unionnvmf__h2c__msg.html" title="nvmf_h2c_msg" alt="" coords="604,56,725,83"/>
+<area shape="rect" id="node7" href="$unionnvmf__c2h__msg.html" title="nvmf_c2h_msg" alt="" coords="604,107,725,133"/>
+<area shape="rect" id="node8" href="$structspdk__bdev__io__wait__entry.html" title="Structure to register a callback when an spdk_bdev_io becomes available. " alt="" coords="571,157,758,184"/>
+<area shape="rect" id="node9" href="$structspdk__nvmf__transport.html" title="spdk_nvmf_transport" alt="" coords="293,283,453,309"/>
+<area shape="rect" id="node10" href="$structspdk__nvmf__transport__ops.html" title="spdk_nvmf_transport_ops" alt="" coords="569,296,760,323"/>
+<area shape="rect" id="node11" href="$structspdk__nvmf__transport__opts.html" title="spdk_nvmf_transport_opts" alt="" coords="9,283,203,309"/>
+</map>

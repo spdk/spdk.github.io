@@ -212,9 +212,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="thre
 <tr class="memitem:a60dac2a0fc19b23be6fecb1e5b6f8a7a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="thread_8h.html#a60dac2a0fc19b23be6fecb1e5b6f8a7a">spdk_set_thread</a> (struct spdk_thread *thread)</td></tr>
 <tr class="memdesc:a60dac2a0fc19b23be6fecb1e5b6f8a7a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Force the current system thread to act as if executing the given SPDK thread.  <a href="#a60dac2a0fc19b23be6fecb1e5b6f8a7a">More...</a><br /></td></tr>
 <tr class="separator:a60dac2a0fc19b23be6fecb1e5b6f8a7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac42fa5ed7447767885f700875b28a84b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="thread_8h.html#ac42fa5ed7447767885f700875b28a84b">spdk_thread_exit</a> (struct spdk_thread *thread)</td></tr>
-<tr class="memdesc:ac42fa5ed7447767885f700875b28a84b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mark the thread as exited, failing all future <a class="el" href="thread_8h.html#ad9e3693e8e9e6c9063ea36414294ae91" title="Perform one iteration worth of processing on the thread. ">spdk_thread_poll()</a> calls.  <a href="#ac42fa5ed7447767885f700875b28a84b">More...</a><br /></td></tr>
-<tr class="separator:ac42fa5ed7447767885f700875b28a84b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5132d2abe39a40a0e14e19bb2bd15489"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="thread_8h.html#a5132d2abe39a40a0e14e19bb2bd15489">spdk_thread_exit</a> (struct spdk_thread *thread)</td></tr>
+<tr class="memdesc:a5132d2abe39a40a0e14e19bb2bd15489"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mark the thread as exited, failing all future <a class="el" href="thread_8h.html#ad9e3693e8e9e6c9063ea36414294ae91" title="Perform one iteration worth of processing on the thread. ">spdk_thread_poll()</a> calls.  <a href="#a5132d2abe39a40a0e14e19bb2bd15489">More...</a><br /></td></tr>
+<tr class="separator:a5132d2abe39a40a0e14e19bb2bd15489"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae99859eb37714e4ed7c6110ea71ab142"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="thread_8h.html#ae99859eb37714e4ed7c6110ea71ab142">spdk_thread_is_exited</a> (struct spdk_thread *thread)</td></tr>
+<tr class="memdesc:ae99859eb37714e4ed7c6110ea71ab142"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether the thread is marked as exited.  <a href="#ae99859eb37714e4ed7c6110ea71ab142">More...</a><br /></td></tr>
+<tr class="separator:ae99859eb37714e4ed7c6110ea71ab142"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a10aa5a8ec5228fa87db97f7655f8c0d6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="thread_8h.html#a10aa5a8ec5228fa87db97f7655f8c0d6">spdk_thread_destroy</a> (struct spdk_thread *thread)</td></tr>
 <tr class="memdesc:a10aa5a8ec5228fa87db97f7655f8c0d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy a thread, releasing all of its resources.  <a href="#a10aa5a8ec5228fa87db97f7655f8c0d6">More...</a><br /></td></tr>
 <tr class="separator:a10aa5a8ec5228fa87db97f7655f8c0d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1269,14 +1272,14 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 
 </div>
 </div>
-<a id="ac42fa5ed7447767885f700875b28a84b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac42fa5ed7447767885f700875b28a84b">&#9670;&nbsp;</a></span>spdk_thread_exit()</h2>
+<a id="a5132d2abe39a40a0e14e19bb2bd15489"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5132d2abe39a40a0e14e19bb2bd15489">&#9670;&nbsp;</a></span>spdk_thread_exit()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void spdk_thread_exit </td>
+          <td class="memname">int spdk_thread_exit </td>
           <td>(</td>
           <td class="paramtype">struct spdk_thread *&#160;</td>
           <td class="paramname"><em>thread</em></td><td>)</td>
@@ -1287,13 +1290,14 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 
 <p>Mark the thread as exited, failing all future <a class="el" href="thread_8h.html#ad9e3693e8e9e6c9063ea36414294ae91" title="Perform one iteration worth of processing on the thread. ">spdk_thread_poll()</a> calls. </p>
 <p>May only be called within an spdk poller or message.</p>
+<p>All I/O channel references associated with the thread must be released using <a class="el" href="thread_8h.html#a717571a5011db0cdd730498146f25f9a" title="Release a reference to an I/O channel. ">spdk_put_io_channel()</a>, and all active pollers associated with the thread must be unregistered using <a class="el" href="thread_8h.html#a9c26cbd781063f5ee627d6aba2c73fe3" title="Unregister a poller on the current thread. ">spdk_poller_unregister()</a>, prior to calling this function.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">thread</td><td>The thread to destroy.</td></tr>
   </table>
   </dd>
 </dl>
-<p>All I/O channel references associated with the thread must be released using <a class="el" href="thread_8h.html#a717571a5011db0cdd730498146f25f9a" title="Release a reference to an I/O channel. ">spdk_put_io_channel()</a> prior to calling this function. </p>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, negated errno on failure. </dd></dl>
 
 </div>
 </div>
@@ -1483,6 +1487,33 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if there is any active poller, false otherwise. </dd></dl>
+
+</div>
+</div>
+<a id="ae99859eb37714e4ed7c6110ea71ab142"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae99859eb37714e4ed7c6110ea71ab142">&#9670;&nbsp;</a></span>spdk_thread_is_exited()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool spdk_thread_is_exited </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_thread *&#160;</td>
+          <td class="paramname"><em>thread</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns whether the thread is marked as exited. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">thread</td><td>The thread to query.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if marked as exited, false otherwise. </dd></dl>
 
 </div>
 </div>

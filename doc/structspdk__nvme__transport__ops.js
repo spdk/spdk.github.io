@@ -14,7 +14,6 @@ var structspdk__nvme__transport__ops =
     [ "ctrlr_get_max_xfer_size", "structspdk__nvme__transport__ops.html#ab65df816938e10df9c78319454d84b10", null ],
     [ "ctrlr_get_reg_4", "structspdk__nvme__transport__ops.html#a2dcae4877d57039870bdc598178d0a54", null ],
     [ "ctrlr_get_reg_8", "structspdk__nvme__transport__ops.html#ac37117d2ec9c18a508bdeb4d17f17442", null ],
-    [ "ctrlr_get_registers", "structspdk__nvme__transport__ops.html#acc03d0127fc903a705a8b68e8c0d6bfb", null ],
     [ "ctrlr_scan", "structspdk__nvme__transport__ops.html#a09c53260eded8a7dfedc59d4ca9606be", null ],
     [ "ctrlr_set_reg_4", "structspdk__nvme__transport__ops.html#ac92b8a574a5647569715cada60d4e19f", null ],
     [ "ctrlr_set_reg_8", "structspdk__nvme__transport__ops.html#aa2b680e54e16dee664b4dd0fc461271e", null ],

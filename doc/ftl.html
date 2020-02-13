@@ -158,13 +158,13 @@ Band</h2>
 <p>A band describes a collection of zones, each belonging to a different parallel unit. All writes to a band follow the same pattern - a batch of logical blocks is written to one zone, another batch to the next one and so on. This ensures the parallelism of the write operations, as they can be executed independently on different zones. Each band keeps track of the LBAs it consists of, as well as their validity, as some of the data will be invalidated by subsequent writes to the same logical address. The L2P mapping can be restored from the SSD by reading this information in order from the oldest band to the youngest. </p><pre class="fragment">         +--------------+        +--------------+                        +--------------+
 band 1   |   zone 1     +--------+    zone 1    +---- --- --- --- --- ---+     zone 1   |
          +--------------+        +--------------+                        +--------------+
-band 2   |   zone 2    +--------+     zone 2    +---- --- --- --- --- ---+     zone 2   |
+band 2   |   zone 2     +--------+     zone 2   +---- --- --- --- --- ---+     zone 2   |
          +--------------+        +--------------+                        +--------------+
-band 3   |   zone 3    +--------+     zone 3    +---- --- --- --- --- ---+     zone 3   |
+band 3   |   zone 3     +--------+     zone 3   +---- --- --- --- --- ---+     zone 3   |
          +--------------+        +--------------+                        +--------------+
          |     ...      |        |     ...      |                        |     ...      |
          +--------------+        +--------------+                        +--------------+
-band m   |   zone m    +--------+     zone m    +---- --- --- --- --- ---+     zone m   |
+band m   |   zone m     +--------+     zone m   +---- --- --- --- --- ---+     zone m   |
          +--------------+        +--------------+                        +--------------+
          |     ...      |        |     ...      |                        |     ...      |
          +--------------+        +--------------+                        +--------------+
@@ -280,7 +280,7 @@ Configuring SPDK</h2>
 <p>Example: </p><div class="fragment"><div class="line">$ scripts/rpc.py bdev_nvme_attach_controller -b nvme0 -a 00:0a.0 -t pcie</div><div class="line"></div><div class="line">$ scripts/rpc.py bdev_ocssd_create -c nvme0 -b nvme0n1</div><div class="line">        nvme0n1</div><div class="line"></div><div class="line">$ scripts/rpc.py bdev_ftl_create -b ftl0 -d nvme0n1</div><div class="line">{</div><div class="line">        &quot;name&quot;: &quot;ftl0&quot;,</div><div class="line">        &quot;uuid&quot;: &quot;3b469565-1fa5-4bfb-8341-747ec9fca9b9&quot;</div><div class="line">}</div></div><!-- fragment --><h2><a class="anchor" id="ftl_zone_block"></a>
 FTL usage with zone block bdev</h2>
 <p>Zone block bdev is a bdev adapter between regular <code>bdev</code> and <code>bdev_zone</code>. It emulates a zoned interface on top of a regular block device.</p>
-<p>In order to create FTL on to of a regular bdev: 1) Create regular bdev e.g. <code>bdev_nvme</code>, <code>bdev_null</code>, <code>bdev_malloc</code> 2) Create zone block bdev on top of a regular bdev created in step 1 (user could specify zone capacity and optimal number of open zones) 3) Create FTL bdev on top of bdev created in step 2</p>
+<p>In order to create FTL on top of a regular bdev: 1) Create regular bdev e.g. <code>bdev_nvme</code>, <code>bdev_null</code>, <code>bdev_malloc</code> 2) Create zone block bdev on top of a regular bdev created in step 1 (user could specify zone capacity and optimal number of open zones) 3) Create FTL bdev on top of bdev created in step 2</p>
 <p>Example: </p><div class="fragment"><div class="line">$ scripts/rpc.py bdev_nvme_attach_controller -b nvme0 -a 00:05.0 -t pcie</div><div class="line">        nvme0n1</div><div class="line"></div><div class="line">$ scripts/rpc.py bdev_zone_block_create -b zone1 -n nvme0n1 -z 4096 -o 32</div><div class="line">        zone1</div><div class="line"></div><div class="line">$ scripts/rpc.py bdev_ftl_create -b ftl0 -d zone1</div><div class="line">{</div><div class="line">        &quot;name&quot;: &quot;ftl0&quot;,</div><div class="line">        &quot;uuid&quot;: &quot;3b469565-1fa5-4bfb-8341-747ec9f3a9b9&quot;</div><div class="line">}</div></div><!-- fragment --> </div></div><!-- contents -->
 </div><!-- doc-content -->
 </div>

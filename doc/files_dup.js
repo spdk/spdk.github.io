@@ -43,6 +43,7 @@ var files_dup =
     [ "nvme_spec.h", "nvme__spec_8h.html", "nvme__spec_8h" ],
     [ "nvmf.h", "nvmf_8h.html", "nvmf_8h" ],
     [ "nvmf_spec.h", "nvmf__spec_8h.html", "nvmf__spec_8h" ],
+    [ "nvmf_transport.h", "nvmf__transport_8h.html", "nvmf__transport_8h" ],
     [ "pci_ids.h", "pci__ids_8h.html", "pci__ids_8h" ],
     [ "pipe.h", "pipe_8h.html", "pipe_8h" ],
     [ "reduce.h", "reduce_8h.html", "reduce_8h" ],
