@@ -165,7 +165,7 @@ Introduction</h2>
 <p>The Blobstore is designed primarily to run on "next generation" media, which means the device supports fast random reads and writes, with no required background garbage collection. However, in practice the design will run well on NAND too.</p>
 <h2><a class="anchor" id="blob_pg_theory"></a>
 Theory of Operation</h2>
-<h3>Abstractions:</h3>
+<h3>Abstractions</h3>
 <p>The Blobstore defines a hierarchy of storage abstractions as follows.</p>
 <ul>
 <li><b>Logical Block</b>: Logical blocks are exposed by the disk itself, which are numbered from 0 to N, where N is the number of blocks in the disk. A logical block is typically either 512B or 4KiB.</li>
@@ -203,7 +203,6 @@ Theory of Operation</h2>
                                         (clusterWidth / 2) + (i * clusterWidth),
                                         35,
                                         { alignment: 'center', fill: 'white' });
-
 
         for (var j = 0; j < 4; j++) {
             let pageWidth = 100;

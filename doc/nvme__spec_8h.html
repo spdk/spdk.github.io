@@ -170,6 +170,10 @@ Data Structures</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">union &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unionspdk__nvme__cmbsz__register.html">spdk_nvme_cmbsz_register</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">union &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unionspdk__nvme__cmbmsc__register.html">spdk_nvme_cmbmsc_register</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">union &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unionspdk__nvme__cmbsts__register.html">spdk_nvme_cmbsts_register</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">union &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unionspdk__nvme__bpinfo__register.html">spdk_nvme_bpinfo_register</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Boot partition information.  <a href="unionspdk__nvme__bpinfo__register.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -959,6 +963,12 @@ Functions</h2></td></tr>
 <tr class="memitem:a2a3d3c5777535c4e41cf6cfbbd965531"><td class="memItemLeft" align="right" valign="top"><a id="a2a3d3c5777535c4e41cf6cfbbd965531"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_STATIC_ASSERT</b> (sizeof(union <a class="el" href="unionspdk__nvme__cmbsz__register.html">spdk_nvme_cmbsz_register</a>)==4, &quot;Incorrect size&quot;)</td></tr>
 <tr class="separator:a2a3d3c5777535c4e41cf6cfbbd965531"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9483faa113250b617f8fd0a4e35cd60"><td class="memItemLeft" align="right" valign="top"><a id="aa9483faa113250b617f8fd0a4e35cd60"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_STATIC_ASSERT</b> (sizeof(union <a class="el" href="unionspdk__nvme__cmbmsc__register.html">spdk_nvme_cmbmsc_register</a>)==8, &quot;Incorrect size&quot;)</td></tr>
+<tr class="separator:aa9483faa113250b617f8fd0a4e35cd60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac905bc010920f2f0cf66af34bc223a26"><td class="memItemLeft" align="right" valign="top"><a id="ac905bc010920f2f0cf66af34bc223a26"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_STATIC_ASSERT</b> (sizeof(union <a class="el" href="unionspdk__nvme__cmbsts__register.html">spdk_nvme_cmbsts_register</a>)==4, &quot;Incorrect size&quot;)</td></tr>
+<tr class="separator:ac905bc010920f2f0cf66af34bc223a26"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a73fddcee6b4cd4df31016b2d81b27e5b"><td class="memItemLeft" align="right" valign="top"><a id="a73fddcee6b4cd4df31016b2d81b27e5b"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_STATIC_ASSERT</b> (sizeof(union <a class="el" href="unionspdk__nvme__bpinfo__register.html">spdk_nvme_bpinfo_register</a>)==4, &quot;Incorrect size&quot;)</td></tr>
 <tr class="separator:a73fddcee6b4cd4df31016b2d81b27e5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1010,6 +1020,12 @@ Functions</h2></td></tr>
 <tr class="memitem:a175b8e573ea13ec1f79e16f4faa785d5"><td class="memItemLeft" align="right" valign="top"><a id="a175b8e573ea13ec1f79e16f4faa785d5"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_STATIC_ASSERT</b> (0x48==offsetof(struct spdk_nvme_registers, bpmbl), &quot;Incorrect register offset&quot;)</td></tr>
 <tr class="separator:a175b8e573ea13ec1f79e16f4faa785d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1081fff9267a22e74fb2454cce71cac"><td class="memItemLeft" align="right" valign="top"><a id="ab1081fff9267a22e74fb2454cce71cac"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_STATIC_ASSERT</b> (0x50==offsetof(struct spdk_nvme_registers, cmbmsc), &quot;Incorrect register offset&quot;)</td></tr>
+<tr class="separator:ab1081fff9267a22e74fb2454cce71cac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa66b43870bd0d31ca1b3002c23df1b34"><td class="memItemLeft" align="right" valign="top"><a id="aa66b43870bd0d31ca1b3002c23df1b34"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_STATIC_ASSERT</b> (0x58==offsetof(struct spdk_nvme_registers, cmbsts), &quot;Incorrect register offset&quot;)</td></tr>
+<tr class="separator:aa66b43870bd0d31ca1b3002c23df1b34"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a29153190d32f8e78a450ee3490a903a1"><td class="memItemLeft" align="right" valign="top"><a id="a29153190d32f8e78a450ee3490a903a1"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_STATIC_ASSERT</b> (sizeof(struct <a class="el" href="structspdk__nvme__sgl__descriptor.html">spdk_nvme_sgl_descriptor</a>)==16, &quot;Incorrect size&quot;)</td></tr>
 <tr class="separator:a29153190d32f8e78a450ee3490a903a1"><td class="memSeparator" colspan="2">&#160;</td></tr>

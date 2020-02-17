@@ -1,11 +1,5 @@
 var NAVTREEINDEX4 =
 {
-"iscsi__spec_8h.html#aad99955677fa3a626e46ae0652d5d6e7":[13,0,27,80],
-"iscsi__spec_8h.html#aaf0efdb1c7553e000d37efe043ef0b9f":[13,0,27,62],
-"iscsi__spec_8h.html#ab3dd961367e041a9b049546cfeccaa78":[13,0,27,89],
-"iscsi__spec_8h.html#abd5b963858ccc52de9f15f5e8d51a6c1":[13,0,27,29],
-"iscsi__spec_8h.html#ac0d62ee26187ded38ce90884321ba988":[13,0,27,37],
-"iscsi__spec_8h.html#ac58aab09b28936beaa924bbe49acfb03":[13,0,27,70],
 "iscsi__spec_8h.html#ac975d253c4743d7cb89b6f3b0328a460":[13,0,27,33],
 "iscsi__spec_8h.html#acad962b6a473cfcd30e1c0b7de567a95":[13,0,27,60],
 "iscsi__spec_8h.html#acbd33e0c97f289193ef7493ef81768e6":[13,0,27,86],
@@ -249,5 +243,11 @@ var NAVTREEINDEX4 =
 "jsonrpc.html#rpc_nbd_stop_disk":[3,7,7,1],
 "jsonrpc.html#rpc_notify_get_types":[3,7,6,23],
 "jsonrpc.html#rpc_nvmf_create_subsystem":[3,7,4,2],
-"jsonrpc.html#rpc_nvmf_create_transport":[3,7,4,0]
+"jsonrpc.html#rpc_nvmf_create_transport":[3,7,4,0],
+"jsonrpc.html#rpc_nvmf_delete_subsystem":[3,7,4,3],
+"jsonrpc.html#rpc_nvmf_get_stats":[3,7,4,13],
+"jsonrpc.html#rpc_nvmf_get_subsystems":[3,7,4,1],
+"jsonrpc.html#rpc_nvmf_get_transports":[3,7,4,12],
+"jsonrpc.html#rpc_nvmf_listen_address":[3,7,4,4,0],
+"jsonrpc.html#rpc_nvmf_namespace":[3,7,4,5,0]
 };

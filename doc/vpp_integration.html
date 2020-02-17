@@ -188,7 +188,7 @@ $(document).ready(function(){initNavTree('vpp_integration.html','');});
 <ul>
 <li><code>plugin &lt;plugin name&gt; { [enable|disable] }</code> &ndash; enable or disable VPP plugin.</li>
 </ul>
-<h3>Example:</h3>
+<h3>Example</h3>
 <div class="fragment"><div class="line">unix {</div><div class="line">        nodaemon</div><div class="line">        cli-listen /run/vpp/cli.sock</div><div class="line">}</div><div class="line">cpu {</div><div class="line">        main-core 1</div><div class="line">}</div><div class="line">session {</div><div class="line">        evt_qs_memfd_seg</div><div class="line">}</div><div class="line">socksvr {</div><div class="line">        socket-name /run/vpp-api.sock</div><div class="line">}</div><div class="line">plugins {</div><div class="line">        plugin default { disable }</div><div class="line">        plugin dpdk_plugin.so { enable }</div><div class="line">}</div></div><!-- fragment --><h2>vppctl command tool</h2>
 <p>The <code>vppctl</code> command tool allows users to control VPP at runtime via a command prompt </p><div class="fragment"><div class="line">sudo vppctl</div></div><!-- fragment --><p>Or, by sending single command directly. For example to display interfaces within VPP: </p><div class="fragment"><div class="line">sudo vppctl show interface</div></div><!-- fragment --><p>Useful commands:</p>
 <ul>

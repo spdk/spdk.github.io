@@ -187,7 +187,7 @@ FC transport support</h2>
 <p>To build nvmf_tgt with the FC transport, there is an additional FC LLD (Low Level Driver) code dependency. Please contact your FC vendor for instructions to obtain FC driver module.</p>
 <h3>Broadcom FC LLD code</h3>
 <p>FC LLD driver for Broadcom FC NVMe capable adapters can be obtained from, <a href="https://github.com/ecdufcdrvr/bcmufctdrvr">https://github.com/ecdufcdrvr/bcmufctdrvr</a>.</p>
-<h3>Fetch FC LLD module and then build SPDK with FC enabled:</h3>
+<h3>Fetch FC LLD module and then build SPDK with FC enabled</h3>
 <p>After cloning SPDK repo and initialize submodules, FC LLD library is built which then can be linked with the fc transport.</p>
 <div class="fragment"><div class="line">git clone https://github.com/spdk/spdk spdk</div><div class="line">git clone https://github.com/ecdufcdrvr/bcmufctdrvr fc</div><div class="line">cd spdk</div><div class="line">git submodule update --init</div><div class="line">cd ../fc</div><div class="line">make DPDK_DIR=../spdk/dpdk/build SPDK_DIR=../spdk</div><div class="line">cd ../spdk</div><div class="line">./configure --with-fc=../fc/build</div><div class="line">make</div></div><!-- fragment --><h3><a class="anchor" id="nvmf_config_rpc"></a>
 Using RPCs</h3>

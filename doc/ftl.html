@@ -173,14 +173,10 @@ band m   |   zone m     +--------+     zone m   +---- --- --- --- --- ---+     z
 </pre><p>The address map and valid map are, along with a several other things (e.g. UUID of the device it's part of, number of surfaced LBAs, band's sequence number, etc.), parts of the band's metadata. The metadata is split in two parts:</p>
 <ul>
 <li>the head part, containing information already known when opening the band (device's UUID, band's sequence number, etc.), located at the beginning blocks of the band,</li>
-<li>the tail part, containing the address map and the valid map, located at the end of the band.</li>
+<li>the tail part, containing the address map and the valid map, located at the end of the band. <pre class="fragment">head metadata               band's data               tail metadata
+</pre> +----------------&mdash;+----------------------------&mdash;+---------------------&mdash;+ |zone 1 |...|zone n |...|...|zone 1 |...| | ... |zone m-1 |zone m| |block 1| |block 1| | |block x| | | |block y |block y| +----------------&mdash;+----------&mdash;+--------------&mdash;+---------------------&mdash;+</li>
 </ul>
-<pre class="fragment">   head metadata               band's data               tail metadata
-+-------------------+-------------------------------+------------------------+
-|zone 1 |...|zone n |...|...|zone 1 |...|           | ... |zone  m-1 |zone  m|
-|block 1|   |block 1|   |   |block x|   |           |     |block y   |block y|
-+-------------------+-------------+-----------------+------------------------+
-</pre><p>Bands are written sequentially (in a way that was described earlier). Before a band can be written to, all of its zones need to be erased. During that time, the band is considered to be in a <code>PREP</code> state. After that is done, the band transitions to the <code>OPENING</code> state, in which head metadata is being written. Then the band moves to the <code>OPEN</code> state and actual user data can be written to the band. Once the whole available space is filled, tail metadata is written and the band transitions to <code>CLOSING</code> state. When that finishes the band becomes <code>CLOSED</code>.</p>
+<p>Bands are written sequentially (in a way that was described earlier). Before a band can be written to, all of its zones need to be erased. During that time, the band is considered to be in a <code>PREP</code> state. After that is done, the band transitions to the <code>OPENING</code> state, in which head metadata is being written. Then the band moves to the <code>OPEN</code> state and actual user data can be written to the band. Once the whole available space is filled, tail metadata is written and the band transitions to <code>CLOSING</code> state. When that finishes the band becomes <code>CLOSED</code>.</p>
 <h2><a class="anchor" id="ftl_rwb"></a>
 Ring write buffer</h2>
 <ul>
