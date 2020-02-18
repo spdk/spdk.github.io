@@ -1,5 +1,6 @@
 var files_dup =
 [
+    [ "accel_engine.h", "accel__engine_8h.html", "accel__engine_8h" ],
     [ "assert.h", "assert_8h.html", "assert_8h" ],
     [ "barrier.h", "barrier_8h.html", "barrier_8h" ],
     [ "base64.h", "base64_8h.html", "base64_8h" ],
@@ -12,7 +13,6 @@ var files_dup =
     [ "blobfs.h", "blobfs_8h.html", "blobfs_8h" ],
     [ "blobfs_bdev.h", "blobfs__bdev_8h.html", "blobfs__bdev_8h" ],
     [ "conf.h", "conf_8h.html", "conf_8h" ],
-    [ "copy_engine.h", "copy__engine_8h.html", "copy__engine_8h" ],
     [ "cpuset.h", "cpuset_8h.html", "cpuset_8h" ],
     [ "crc16.h", "crc16_8h.html", "crc16_8h" ],
     [ "crc32.h", "crc32_8h.html", "crc32_8h" ],

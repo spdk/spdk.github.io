@@ -1,5 +1,6 @@
 var NAVTREEINDEX20 =
 {
+"structspdk__nvmf__rdma__device__stat.html":[12,0,223],
 "structspdk__nvmf__rdma__device__stat.html#a2ac4b216b0d2d04fc13a49a13e2a5121":[12,0,223,6],
 "structspdk__nvmf__rdma__device__stat.html#a4a5109f3871d2f5145dbf88dc327ee4c":[12,0,223,7],
 "structspdk__nvmf__rdma__device__stat.html#a54204f566db74ecd465dbb75c3dee219":[12,0,223,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX20 =
 "structspdk__opal__locking__range__info.html#abd31e1bf1d46a4e155b2f5883f649e4d":[12,0,245,5],
 "structspdk__opal__locking__range__info.html#ac4d2ff3af11244142466a28e029acbc2":[12,0,245,6],
 "structspdk__opal__locking__range__info.html#aef10c2546c5157dd06024526caa8eae0":[12,0,245,0],
-"structspdk__opal__packet.html":[12,0,246],
-"structspdk__opal__packet.html#a178cb24f0d1be743eb20b81d502c4a90":[12,0,246,5]
+"structspdk__opal__packet.html":[12,0,246]
 };

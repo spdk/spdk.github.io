@@ -147,10 +147,14 @@ $(document).ready(function(){initNavTree('changelog.html','');});
 <div class="contents">
 <div class="textblock"><h1><a class="anchor" id="changelog-v20-04"></a>
 v20.04: (Upcoming Release)</h1>
+<h2>copy</h2>
+<p>The copy engine library, modules and public APIs have been renamed. Use of the word <code>copy</code> has been replaced with the word <code>accel</code> short for accelerator in preparation for adding new capabilities in the future. Additionally, APIs for what was previously called the <code>memcpy</code> engine have been renamed to identify the engine as a software accelerator.</p>
 <h2>vmd</h2>
 <p>A new function, <code>spdk_vmd_fini</code>, has been added. It releases all resources acquired by the VMD library through the <code>spdk_vmd_init</code> call.</p>
 <h2>Miscellaneous</h2>
 <p><code>--json-ignore-init-errors</code> command line param has been added to ignore initialization errors on JSON config load.</p>
+<h2>crypto</h2>
+<p>Support for AES_XTS was added for the QAT polled mode driver (pmd). The create RPC <code>bdev_crypto_create</code> has 2 new optional parameters: cipher and key2. Cipher can be either AES_CBC (default) or AES_XTS. AES_XTS isonly valid when using the QAT polled mode driver. The key2 parameter is the second key required for AES_XTS.</p>
 <h1>v20.01</h1>
 <h2>bdev</h2>
 <p>A new function, <code>spdk_bdev_set_timeout</code>, has been added to set per descriptor I/O timeouts.</p>
