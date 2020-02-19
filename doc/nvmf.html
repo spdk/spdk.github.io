@@ -159,8 +159,8 @@ RDMA transport support</h2>
 <p>It requires an RDMA-capable NIC with its corresponding OFED (OpenFabrics Enterprise Distribution) software package installed to run. Maybe OS distributions provide packages, but OFED is also available <a href="https://downloads.openfabrics.org/OFED/">here</a>.</p>
 <h3><a class="anchor" id="nvmf_prereqs"></a>
 Prerequisites</h3>
-<p>To build nvmf_tgt with the RDMA transport, there are some additional dependencies.</p>
-<p>Fedora: </p><div class="fragment"><div class="line">dnf install libibverbs-devel librdmacm-devel</div></div><!-- fragment --><p>Ubuntu: </p><div class="fragment"><div class="line">apt-get install libibverbs-dev librdmacm-dev</div></div><!-- fragment --><p>Then build SPDK with RDMA enabled:</p>
+<p>To build nvmf_tgt with the RDMA transport, there are some additional dependencies, which can be install using pkgdep.sh script.</p>
+<div class="fragment"><div class="line">sudo scripts/pkgdep.sh --rdma</div></div><!-- fragment --><p>Then build SPDK with RDMA enabled:</p>
 <div class="fragment"><div class="line">./configure --with-rdma &lt;other config parameters&gt;</div><div class="line">make</div></div><!-- fragment --><p>Once built, the binary will be in <code>app/nvmf_tgt</code>.</p>
 <h3><a class="anchor" id="nvmf_prereqs_verbs"></a>
 Prerequisites for InfiniBand/RDMA Verbs</h3>
