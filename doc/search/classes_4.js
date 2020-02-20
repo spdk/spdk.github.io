@@ -196,6 +196,7 @@ var searchData=
   ['spdk_5fnvmf_5ffc_5flsdesc_5frqst',['spdk_nvmf_fc_lsdesc_rqst',['../structspdk__nvmf__fc__lsdesc__rqst.html',1,'']]],
   ['spdk_5fnvmf_5ffc_5fwwn',['spdk_nvmf_fc_wwn',['../structspdk__nvmf__fc__wwn.html',1,'']]],
   ['spdk_5fnvmf_5ffc_5fxfer_5frdy_5fiu',['spdk_nvmf_fc_xfer_rdy_iu',['../structspdk__nvmf__fc__xfer__rdy__iu.html',1,'']]],
+  ['spdk_5fnvmf_5flistener',['spdk_nvmf_listener',['../structspdk__nvmf__listener.html',1,'']]],
   ['spdk_5fnvmf_5fns_5fopts',['spdk_nvmf_ns_opts',['../structspdk__nvmf__ns__opts.html',1,'']]],
   ['spdk_5fnvmf_5fpoll_5fgroup',['spdk_nvmf_poll_group',['../structspdk__nvmf__poll__group.html',1,'']]],
   ['spdk_5fnvmf_5fpoll_5fgroup_5fstat',['spdk_nvmf_poll_group_stat',['../structspdk__nvmf__poll__group__stat.html',1,'']]],

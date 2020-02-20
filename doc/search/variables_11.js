@@ -31,7 +31,7 @@ var searchData=
   ['stat',['stat',['../structspdk__bdev_1_1____bdev__internal__fields.html#a65f5698e232c6756471cc8a87c1cc0c6',1,'spdk_bdev::__bdev_internal_fields']]],
   ['state',['state',['../structspdk__ocssd__chunk__notification__entry.html#a3441eab386d62a06fc70d0ecd84452f6',1,'spdk_ocssd_chunk_notification_entry']]],
   ['status',['status',['../structspdk__bdev_1_1____bdev__internal__fields.html#a75eb824f166523af1bb44edc6b209e89',1,'spdk_bdev::__bdev_internal_fields::status()'],['../structspdk__bdev__io_1_1____bdev__io__internal__fields.html#ad9bec0eeba2c9ca9cb7cf62e8c516e5a',1,'spdk_bdev_io::__bdev_io_internal_fields::status()']]],
-  ['stop_5flisten',['stop_listen',['../structspdk__nvmf__transport__ops.html#a2d160f44677431f2179416ebd7768c5a',1,'spdk_nvmf_transport_ops']]],
+  ['stop_5flisten',['stop_listen',['../structspdk__nvmf__transport__ops.html#a79190a46c19b7d92d8929a7470afeb94',1,'spdk_nvmf_transport_ops']]],
   ['stored_5fuser_5fcb',['stored_user_cb',['../structspdk__bdev__io.html#a35905e31d0aa54cd00dbb34e7d56656a',1,'spdk_bdev_io']]],
   ['submit_5frequest',['submit_request',['../structspdk__bdev__fn__table.html#ae80a9002371becdc6fb1c13f8f5173bf',1,'spdk_bdev_fn_table']]],
   ['submit_5ftsc',['submit_tsc',['../structspdk__bdev__io_1_1____bdev__io__internal__fields.html#a3e0b8fe4a5a6b8636d6aeb61348f9c4a',1,'spdk_bdev_io::__bdev_io_internal_fields']]],

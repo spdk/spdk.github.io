@@ -1,5 +1,15 @@
 var NAVTREEINDEX24 =
 {
+"userspace.html#userspace_control":[2,0,0],
+"userspace.html#userspace_interrupts":[2,0,1],
+"userspace.html#userspace_threading":[2,0,2],
+"util_8h.html":[13,0,54],
+"util_8h.html#a21e1907187f8bf2c4b0c0de12c113ed6":[13,0,54,6],
+"util_8h.html#a22383e04171a98834c5f21f0c460e322":[13,0,54,11],
+"util_8h.html#a23a7b8dc5a8b680176bac1c7bd384406":[13,0,54,12],
+"util_8h.html#a3a1ed8f80bbc8e22d1f778a6615512e7":[13,0,54,13],
+"util_8h.html#a4bf38bbd457a764604d5ba26ed3c8565":[13,0,54,14],
+"util_8h.html#a4ef0b5332740873cf0414a8b44000128":[13,0,54,7],
 "util_8h.html#a4fe89df2bed54dcdc8b0d33c53a694b6":[13,0,54,1],
 "util_8h.html#a5212715fed856a30641ba319bad995a7":[13,0,54,16],
 "util_8h.html#a58821926bcb68504a97ffa1545029398":[13,0,54,3],

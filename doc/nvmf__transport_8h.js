@@ -8,6 +8,7 @@ var nvmf__transport_8h =
     [ "spdk_nvmf_transport_pg_cache_buf", "structspdk__nvmf__transport__pg__cache__buf.html", "structspdk__nvmf__transport__pg__cache__buf" ],
     [ "spdk_nvmf_transport_poll_group", "structspdk__nvmf__transport__poll__group.html", "structspdk__nvmf__transport__poll__group" ],
     [ "spdk_nvmf_poll_group", "structspdk__nvmf__poll__group.html", "structspdk__nvmf__poll__group" ],
+    [ "spdk_nvmf_listener", "structspdk__nvmf__listener.html", "structspdk__nvmf__listener" ],
     [ "spdk_nvmf_transport", "structspdk__nvmf__transport.html", "structspdk__nvmf__transport" ],
     [ "spdk_nvmf_transport_ops", "structspdk__nvmf__transport__ops.html", "structspdk__nvmf__transport__ops" ],
     [ "NVMF_DATA_BUFFER_ALIGNMENT", "nvmf__transport_8h.html#a1611ae11b4ca2690f1a2fdc7e85057d2", null ],

@@ -184,7 +184,7 @@ var nvme__spec_8h =
     [ "spdk_nvme_command_specific_status_code", "nvme__spec_8h.html#acb8784fad6a53be95d4c718ad3cf852e", [
       [ "SPDK_NVME_SC_COMPLETION_QUEUE_INVALID", "nvme__spec_8h.html#acb8784fad6a53be95d4c718ad3cf852ead6be90d650be8f24c4753c1cbf491c74", null ],
       [ "SPDK_NVME_SC_INVALID_QUEUE_IDENTIFIER", "nvme__spec_8h.html#acb8784fad6a53be95d4c718ad3cf852ea0531cbe476f31cb53f88f2c21819b7c4", null ],
-      [ "SPDK_NVME_SC_MAXIMUM_QUEUE_SIZE_EXCEEDED", "nvme__spec_8h.html#acb8784fad6a53be95d4c718ad3cf852eae887d046ada95b771b50344ba13beac5", null ],
+      [ "SPDK_NVME_SC_INVALID_QUEUE_SIZE", "nvme__spec_8h.html#acb8784fad6a53be95d4c718ad3cf852ea04bf00aefb4c5da83d4e2a656683b8f4", null ],
       [ "SPDK_NVME_SC_ABORT_COMMAND_LIMIT_EXCEEDED", "nvme__spec_8h.html#acb8784fad6a53be95d4c718ad3cf852eafaa17f3ba3079532a7b423dc0dcc99f0", null ],
       [ "SPDK_NVME_SC_ASYNC_EVENT_REQUEST_LIMIT_EXCEEDED", "nvme__spec_8h.html#acb8784fad6a53be95d4c718ad3cf852ea32c54251c32f5db051a78adfc744098d", null ],
       [ "SPDK_NVME_SC_INVALID_FIRMWARE_SLOT", "nvme__spec_8h.html#acb8784fad6a53be95d4c718ad3cf852ea949102c08b8136559a787d523051e038", null ],

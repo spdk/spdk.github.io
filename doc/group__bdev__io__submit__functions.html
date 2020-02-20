@@ -243,9 +243,15 @@ Functions</h2></td></tr>
 <tr class="memitem:ga17d6c2c7f25d21c5d2cdfb6e187e2033"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__bdev__io__submit__functions.html#ga17d6c2c7f25d21c5d2cdfb6e187e2033">spdk_bdev_zone_append</a> (struct spdk_bdev_desc *desc, struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *ch, void *buf, uint64_t zone_id, uint64_t num_blocks, <a class="el" href="bdev_8h.html#a0c5602dfd313f90032dd91683b9663e3">spdk_bdev_io_completion_cb</a> cb, void *cb_arg)</td></tr>
 <tr class="memdesc:ga17d6c2c7f25d21c5d2cdfb6e187e2033"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submit a zone_append request to the bdev.  <a href="#ga17d6c2c7f25d21c5d2cdfb6e187e2033">More...</a><br /></td></tr>
 <tr class="separator:ga17d6c2c7f25d21c5d2cdfb6e187e2033"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1daf4494389f26c35e8925fa9e992e32"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__bdev__io__submit__functions.html#ga1daf4494389f26c35e8925fa9e992e32">spdk_bdev_zone_appendv</a> (struct spdk_bdev_desc *desc, struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *ch, struct iovec *iov, int iovcnt, uint64_t zone_id, uint64_t num_blocks, <a class="el" href="bdev_8h.html#a0c5602dfd313f90032dd91683b9663e3">spdk_bdev_io_completion_cb</a> cb, void *cb_arg)</td></tr>
+<tr class="memdesc:ga1daf4494389f26c35e8925fa9e992e32"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submit a zone_append request to the bdev.  <a href="#ga1daf4494389f26c35e8925fa9e992e32">More...</a><br /></td></tr>
+<tr class="separator:ga1daf4494389f26c35e8925fa9e992e32"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gab8a2fd5a40daa3d36c15b3f92c9a81a7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__bdev__io__submit__functions.html#gab8a2fd5a40daa3d36c15b3f92c9a81a7">spdk_bdev_zone_append_with_md</a> (struct spdk_bdev_desc *desc, struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *ch, void *buf, void *md, uint64_t zone_id, uint64_t num_blocks, <a class="el" href="bdev_8h.html#a0c5602dfd313f90032dd91683b9663e3">spdk_bdev_io_completion_cb</a> cb, void *cb_arg)</td></tr>
 <tr class="memdesc:gab8a2fd5a40daa3d36c15b3f92c9a81a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submit a zone_append request with metadata to the bdev.  <a href="#gab8a2fd5a40daa3d36c15b3f92c9a81a7">More...</a><br /></td></tr>
 <tr class="separator:gab8a2fd5a40daa3d36c15b3f92c9a81a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4bf5e1763727644d0e0638d3b5aed6aa"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__bdev__io__submit__functions.html#ga4bf5e1763727644d0e0638d3b5aed6aa">spdk_bdev_zone_appendv_with_md</a> (struct spdk_bdev_desc *desc, struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *ch, struct iovec *iov, int iovcnt, void *md, uint64_t zone_id, uint64_t num_blocks, <a class="el" href="bdev_8h.html#a0c5602dfd313f90032dd91683b9663e3">spdk_bdev_io_completion_cb</a> cb, void *cb_arg)</td></tr>
+<tr class="memdesc:ga4bf5e1763727644d0e0638d3b5aed6aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submit a zone_append request with metadata to the bdev.  <a href="#ga4bf5e1763727644d0e0638d3b5aed6aa">More...</a><br /></td></tr>
+<tr class="separator:ga4bf5e1763727644d0e0638d3b5aed6aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>These functions submit a new I/O request to a bdev. </p>
@@ -2660,6 +2666,182 @@ Functions</h2></td></tr>
     <tr><td class="paramname">desc</td><td>Block device descriptor. </td></tr>
     <tr><td class="paramname">ch</td><td>I/O channel. Obtained by calling <a class="el" href="bdev_8h.html#ab5bb9e746b030d7c4c89cbcf60076c7e" title="Obtain an I/O channel for the block device opened by the specified descriptor. ">spdk_bdev_get_io_channel()</a>. </td></tr>
     <tr><td class="paramname">buf</td><td>Data buffer to written from. </td></tr>
+    <tr><td class="paramname">md</td><td>Metadata buffer. </td></tr>
+    <tr><td class="paramname">zone_id</td><td>First logical block of a zone. </td></tr>
+    <tr><td class="paramname">num_blocks</td><td>The number of blocks to write. buf must be greater than or equal to this size. </td></tr>
+    <tr><td class="paramname">cb</td><td>Called when the request is complete. </td></tr>
+    <tr><td class="paramname">cb_arg</td><td>Argument passed to cb.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success. On success, the callback will always be called (even if the request ultimately failed). Appended logical block address can be obtained with <a class="el" href="bdev__zone_8h.html#a0cea148aa2c84159056cee565772a4ca" title="Get append location (offset in blocks of the bdev) for this I/O. ">spdk_bdev_io_get_append_location()</a>. Return negated errno on failure, in which case the callback will not be called.<ul>
+<li>-ENOMEM - <a class="el" href="structspdk__bdev__io.html">spdk_bdev_io</a> buffer cannot be allocated </li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
+<a id="ga1daf4494389f26c35e8925fa9e992e32"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1daf4494389f26c35e8925fa9e992e32">&#9670;&nbsp;</a></span>spdk_bdev_zone_appendv()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_bdev_zone_appendv </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_bdev_desc *&#160;</td>
+          <td class="paramname"><em>desc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *&#160;</td>
+          <td class="paramname"><em>ch</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct iovec *&#160;</td>
+          <td class="paramname"><em>iov</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iovcnt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>zone_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>num_blocks</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="bdev_8h.html#a0c5602dfd313f90032dd91683b9663e3">spdk_bdev_io_completion_cb</a>&#160;</td>
+          <td class="paramname"><em>cb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>cb_arg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Submit a zone_append request to the bdev. </p>
+<p>This differs from spdk_bdev_zone_append by allowing the data buffer to be described in a scatter gather list.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">desc</td><td>Block device descriptor. </td></tr>
+    <tr><td class="paramname">ch</td><td>I/O channel. Obtained by calling <a class="el" href="bdev_8h.html#ab5bb9e746b030d7c4c89cbcf60076c7e" title="Obtain an I/O channel for the block device opened by the specified descriptor. ">spdk_bdev_get_io_channel()</a>. </td></tr>
+    <tr><td class="paramname">iov</td><td>A scatter gather list of buffers to be written from. </td></tr>
+    <tr><td class="paramname">iovcnt</td><td>The number of elements in iov. </td></tr>
+    <tr><td class="paramname">zone_id</td><td>First logical block of a zone. </td></tr>
+    <tr><td class="paramname">num_blocks</td><td>The number of blocks to write. buf must be greater than or equal to this size. </td></tr>
+    <tr><td class="paramname">cb</td><td>Called when the request is complete. </td></tr>
+    <tr><td class="paramname">cb_arg</td><td>Argument passed to cb.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success. On success, the callback will always be called (even if the request ultimately failed). Appended logical block address can be obtained with <a class="el" href="bdev__zone_8h.html#a0cea148aa2c84159056cee565772a4ca" title="Get append location (offset in blocks of the bdev) for this I/O. ">spdk_bdev_io_get_append_location()</a>. Return negated errno on failure, in which case the callback will not be called.<ul>
+<li>-ENOMEM - <a class="el" href="structspdk__bdev__io.html">spdk_bdev_io</a> buffer cannot be allocated </li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
+<a id="ga4bf5e1763727644d0e0638d3b5aed6aa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4bf5e1763727644d0e0638d3b5aed6aa">&#9670;&nbsp;</a></span>spdk_bdev_zone_appendv_with_md()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_bdev_zone_appendv_with_md </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_bdev_desc *&#160;</td>
+          <td class="paramname"><em>desc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *&#160;</td>
+          <td class="paramname"><em>ch</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct iovec *&#160;</td>
+          <td class="paramname"><em>iov</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iovcnt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>md</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>zone_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>num_blocks</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="bdev_8h.html#a0c5602dfd313f90032dd91683b9663e3">spdk_bdev_io_completion_cb</a>&#160;</td>
+          <td class="paramname"><em>cb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>cb_arg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Submit a zone_append request with metadata to the bdev. </p>
+<p>This differs from spdk_bdev_zone_append by allowing the data buffer to be described in a scatter gather list.</p>
+<p>This function uses separate buffer for metadata transfer (valid only if bdev supports this mode).</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">desc</td><td>Block device descriptor. </td></tr>
+    <tr><td class="paramname">ch</td><td>I/O channel. Obtained by calling <a class="el" href="bdev_8h.html#ab5bb9e746b030d7c4c89cbcf60076c7e" title="Obtain an I/O channel for the block device opened by the specified descriptor. ">spdk_bdev_get_io_channel()</a>. </td></tr>
+    <tr><td class="paramname">iov</td><td>A scatter gather list of buffers to be written from. </td></tr>
+    <tr><td class="paramname">iovcnt</td><td>The number of elements in iov. </td></tr>
     <tr><td class="paramname">md</td><td>Metadata buffer. </td></tr>
     <tr><td class="paramname">zone_id</td><td>First logical block of a zone. </td></tr>
     <tr><td class="paramname">num_blocks</td><td>The number of blocks to write. buf must be greater than or equal to this size. </td></tr>

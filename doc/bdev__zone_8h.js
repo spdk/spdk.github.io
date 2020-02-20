@@ -22,5 +22,7 @@ var bdev__zone_8h =
     [ "spdk_bdev_io_get_append_location", "bdev__zone_8h.html#a0cea148aa2c84159056cee565772a4ca", null ],
     [ "spdk_bdev_zone_append", "group__bdev__io__submit__functions.html#ga17d6c2c7f25d21c5d2cdfb6e187e2033", null ],
     [ "spdk_bdev_zone_append_with_md", "group__bdev__io__submit__functions.html#gab8a2fd5a40daa3d36c15b3f92c9a81a7", null ],
+    [ "spdk_bdev_zone_appendv", "group__bdev__io__submit__functions.html#ga1daf4494389f26c35e8925fa9e992e32", null ],
+    [ "spdk_bdev_zone_appendv_with_md", "group__bdev__io__submit__functions.html#ga4bf5e1763727644d0e0638d3b5aed6aa", null ],
     [ "spdk_bdev_zone_management", "group__bdev__io__submit__functions.html#ga9220b3c7c3f9591cfdfd73977ee69f91", null ]
 ];
