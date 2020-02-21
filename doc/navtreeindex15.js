@@ -1,5 +1,6 @@
 var NAVTREEINDEX15 =
 {
+"structspdk__ftl__dev__init__opts.html#ab2e1b64fcf541e3b59d449a2a773307a":[12,0,60,1],
 "structspdk__ftl__limit.html":[12,0,61],
 "structspdk__ftl__limit.html#a1b00f356c3b2c6d8bae3e3e7d1bef024":[12,0,61,1],
 "structspdk__ftl__limit.html#ab498061ee63395f83c45d28455ab058d":[12,0,61,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX15 =
 "structspdk__mbr.html#a4e42d4804fd6cc5f0fb9002be7d68467":[12,0,82,4],
 "structspdk__mbr.html#a7eb8e86e3ef12057d356582b06269473":[12,0,82,0],
 "structspdk__mbr.html#a8c0408ccc974678c65b123d0a460f75b":[12,0,82,1],
-"structspdk__mbr__chs.html":[12,0,83],
-"structspdk__mbr__chs.html#a0851c4b7be4d74e08fccee220d24c5b2":[12,0,83,0]
+"structspdk__mbr__chs.html":[12,0,83]
 };

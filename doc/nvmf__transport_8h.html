@@ -188,11 +188,11 @@ Macros</h2></td></tr>
 <tr class="memitem:ae453aa517acad83342a4798360ad95bb"><td class="memItemLeft" align="right" valign="top"><a id="ae453aa517acad83342a4798360ad95bb"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>NVMF_REQ_MAX_BUFFERS</b>&#160;&#160;&#160;(SPDK_NVMF_MAX_SGL_ENTRIES * 2)</td></tr>
 <tr class="separator:ae453aa517acad83342a4798360ad95bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab5a0ef718167ebff630dab0aa5c54d43"><td class="memItemLeft" align="right" valign="top"><a id="ab5a0ef718167ebff630dab0aa5c54d43"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>SHIFT_4KB</b>&#160;&#160;&#160;12u</td></tr>
-<tr class="separator:ab5a0ef718167ebff630dab0aa5c54d43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae84fdea87fa192fcc47760098167eb8a"><td class="memItemLeft" align="right" valign="top"><a id="ae84fdea87fa192fcc47760098167eb8a"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>NVMF_SHIFT_4KB</b>&#160;&#160;&#160;12u</td></tr>
+<tr class="separator:ae84fdea87fa192fcc47760098167eb8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1611ae11b4ca2690f1a2fdc7e85057d2"><td class="memItemLeft" align="right" valign="top"><a id="a1611ae11b4ca2690f1a2fdc7e85057d2"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>NVMF_DATA_BUFFER_ALIGNMENT</b>&#160;&#160;&#160;(1u &lt;&lt; SHIFT_4KB)</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>NVMF_DATA_BUFFER_ALIGNMENT</b>&#160;&#160;&#160;(1u &lt;&lt; NVMF_SHIFT_4KB)</td></tr>
 <tr class="separator:a1611ae11b4ca2690f1a2fdc7e85057d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab29b985af2f42b89aa85e34c11c5f7ac"><td class="memItemLeft" align="right" valign="top"><a id="ab29b985af2f42b89aa85e34c11c5f7ac"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>NVMF_DATA_BUFFER_MASK</b>&#160;&#160;&#160;(NVMF_DATA_BUFFER_ALIGNMENT - 1LL)</td></tr>
@@ -253,6 +253,9 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvmf_request_free
 <tr class="memitem:a4256612baa1f8b906592d85e59f27e70"><td class="memItemLeft" align="right" valign="top"><a id="a4256612baa1f8b906592d85e59f27e70"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvmf_request_complete</b> (struct <a class="el" href="structspdk__nvmf__request.html">spdk_nvmf_request</a> *req)</td></tr>
 <tr class="separator:a4256612baa1f8b906592d85e59f27e70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e1187651747d823aa32669905db2d89"><td class="memItemLeft" align="right" valign="top">struct spdk_nvmf_subsystem *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf__transport_8h.html#a4e1187651747d823aa32669905db2d89">spdk_nvmf_ctrlr_get_subsystem</a> (struct spdk_nvmf_ctrlr *ctrlr)</td></tr>
+<tr class="memdesc:a4e1187651747d823aa32669905db2d89"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the NVMe-oF subsystem associated with this controller.  <a href="#a4e1187651747d823aa32669905db2d89">More...</a><br /></td></tr>
+<tr class="separator:a4e1187651747d823aa32669905db2d89"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a78965f1c8f05b2fb9b6d7f6ce016448a"><td class="memItemLeft" align="right" valign="top"><a id="a78965f1c8f05b2fb9b6d7f6ce016448a"></a>
 static enum <a class="el" href="nvme__spec_8h.html#adbe38e042bb939183ed8fd5c1685b2fc">spdk_nvme_data_transfer</a>&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvmf_req_get_xfer</b> (struct <a class="el" href="structspdk__nvmf__request.html">spdk_nvmf_request</a> *req)</td></tr>
 <tr class="separator:a78965f1c8f05b2fb9b6d7f6ce016448a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -289,6 +292,33 @@ static enum <a class="el" href="nvme__spec_8h.html#adbe38e042bb939183ed8fd5c1685
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="a4e1187651747d823aa32669905db2d89"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e1187651747d823aa32669905db2d89">&#9670;&nbsp;</a></span>spdk_nvmf_ctrlr_get_subsystem()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct spdk_nvmf_subsystem* spdk_nvmf_ctrlr_get_subsystem </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_nvmf_ctrlr *&#160;</td>
+          <td class="paramname"><em>ctrlr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the NVMe-oF subsystem associated with this controller. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ctrlr</td><td>The NVMe-oF controller</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The NVMe-oF subsystem </dd></dl>
+
+</div>
+</div>
 <a id="ab53a8667860940846986a85db26a7236"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab53a8667860940846986a85db26a7236">&#9670;&nbsp;</a></span>spdk_nvmf_transport_register()</h2>
 

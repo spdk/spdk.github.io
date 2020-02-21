@@ -14,7 +14,7 @@ var nvmf__transport_8h =
     [ "NVMF_DATA_BUFFER_ALIGNMENT", "nvmf__transport_8h.html#a1611ae11b4ca2690f1a2fdc7e85057d2", null ],
     [ "NVMF_DATA_BUFFER_MASK", "nvmf__transport_8h.html#ab29b985af2f42b89aa85e34c11c5f7ac", null ],
     [ "NVMF_REQ_MAX_BUFFERS", "nvmf__transport_8h.html#ae453aa517acad83342a4798360ad95bb", null ],
-    [ "SHIFT_4KB", "nvmf__transport_8h.html#ab5a0ef718167ebff630dab0aa5c54d43", null ],
+    [ "NVMF_SHIFT_4KB", "nvmf__transport_8h.html#ae84fdea87fa192fcc47760098167eb8a", null ],
     [ "SPDK_NVMF_MAX_SGL_ENTRIES", "nvmf__transport_8h.html#aa49d6244da02774d39e7482f56463619", null ],
     [ "SPDK_NVMF_TRANSPORT_REGISTER", "nvmf__transport_8h.html#abeebe98da8b8183865537af9d2fd42f6", null ],
     [ "spdk_nvmf_state_change_done", "nvmf__transport_8h.html#aada9c18bb825f6aa67e13444d93abd38", null ],
@@ -25,6 +25,7 @@ var nvmf__transport_8h =
       [ "SPDK_NVMF_QPAIR_ERROR", "nvmf__transport_8h.html#aae2f46da7cfac38ce46c51446985a286a33289f1ec940d6ca01ea350878586ee0", null ]
     ] ],
     [ "spdk_nvmf_ctrlr_connect", "nvmf__transport_8h.html#a246103af98d69ad6a1d74d2a4f9e6f7e", null ],
+    [ "spdk_nvmf_ctrlr_get_subsystem", "nvmf__transport_8h.html#a4e1187651747d823aa32669905db2d89", null ],
     [ "spdk_nvmf_req_get_xfer", "nvmf__transport_8h.html#a78965f1c8f05b2fb9b6d7f6ce016448a", null ],
     [ "spdk_nvmf_request_complete", "nvmf__transport_8h.html#a4256612baa1f8b906592d85e59f27e70", null ],
     [ "spdk_nvmf_request_exec", "nvmf__transport_8h.html#a65dd062126788a0f2ad96548c63667df", null ],
