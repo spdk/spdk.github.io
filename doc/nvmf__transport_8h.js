@@ -11,6 +11,7 @@ var nvmf__transport_8h =
     [ "spdk_nvmf_listener", "structspdk__nvmf__listener.html", "structspdk__nvmf__listener" ],
     [ "spdk_nvmf_transport", "structspdk__nvmf__transport.html", "structspdk__nvmf__transport" ],
     [ "spdk_nvmf_transport_ops", "structspdk__nvmf__transport__ops.html", "structspdk__nvmf__transport__ops" ],
+    [ "spdk_nvmf_registers", "structspdk__nvmf__registers.html", "structspdk__nvmf__registers" ],
     [ "NVMF_DATA_BUFFER_ALIGNMENT", "nvmf__transport_8h.html#a1611ae11b4ca2690f1a2fdc7e85057d2", null ],
     [ "NVMF_DATA_BUFFER_MASK", "nvmf__transport_8h.html#ab29b985af2f42b89aa85e34c11c5f7ac", null ],
     [ "NVMF_REQ_MAX_BUFFERS", "nvmf__transport_8h.html#ae453aa517acad83342a4798360ad95bb", null ],
@@ -25,6 +26,7 @@ var nvmf__transport_8h =
       [ "SPDK_NVMF_QPAIR_ERROR", "nvmf__transport_8h.html#aae2f46da7cfac38ce46c51446985a286a33289f1ec940d6ca01ea350878586ee0", null ]
     ] ],
     [ "spdk_nvmf_ctrlr_connect", "nvmf__transport_8h.html#a246103af98d69ad6a1d74d2a4f9e6f7e", null ],
+    [ "spdk_nvmf_ctrlr_get_regs", "nvmf__transport_8h.html#a87cc10db83a3c4e44ed38ce031646e58", null ],
     [ "spdk_nvmf_ctrlr_get_subsystem", "nvmf__transport_8h.html#a4e1187651747d823aa32669905db2d89", null ],
     [ "spdk_nvmf_req_get_xfer", "nvmf__transport_8h.html#a78965f1c8f05b2fb9b6d7f6ce016448a", null ],
     [ "spdk_nvmf_request_complete", "nvmf__transport_8h.html#a4256612baa1f8b906592d85e59f27e70", null ],

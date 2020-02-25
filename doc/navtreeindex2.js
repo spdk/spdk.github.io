@@ -247,7 +247,7 @@ var NAVTREEINDEX2 =
 "globals_defs.html":[13,1,5],
 "globals_enum.html":[13,1,3],
 "globals_eval.html":[13,1,4],
-"globals_func.html":[13,1,1,0],
 "globals_func.html":[13,1,1],
+"globals_func.html":[13,1,1,0],
 "globals_i.html":[13,1,0,1]
 };

@@ -179,6 +179,9 @@ Data Structures</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvmf__transport__ops.html">spdk_nvmf_transport_ops</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvmf__registers.html">spdk_nvmf_registers</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A subset of struct <a class="el" href="structspdk__nvme__registers.html">spdk_nvme_registers</a> that are emulated by a fabrics device.  <a href="structspdk__nvmf__registers.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
@@ -229,6 +232,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a246103af98d69ad6a1d74d2a4f9e6f7e"><td class="memItemLeft" align="right" valign="top"><a id="a246103af98d69ad6a1d74d2a4f9e6f7e"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvmf_ctrlr_connect</b> (struct <a class="el" href="structspdk__nvmf__request.html">spdk_nvmf_request</a> *req)</td></tr>
 <tr class="separator:a246103af98d69ad6a1d74d2a4f9e6f7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87cc10db83a3c4e44ed38ce031646e58"><td class="memItemLeft" align="right" valign="top"><a id="a87cc10db83a3c4e44ed38ce031646e58"></a>
+const struct <a class="el" href="structspdk__nvmf__registers.html">spdk_nvmf_registers</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvmf_ctrlr_get_regs</b> (struct spdk_nvmf_ctrlr *ctrlr)</td></tr>
+<tr class="separator:a87cc10db83a3c4e44ed38ce031646e58"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a40c75ab705e466b8fc6263aea23db255"><td class="memItemLeft" align="right" valign="top"><a id="a40c75ab705e466b8fc6263aea23db255"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvmf_request_free_buffers</b> (struct <a class="el" href="structspdk__nvmf__request.html">spdk_nvmf_request</a> *req, struct <a class="el" href="structspdk__nvmf__transport__poll__group.html">spdk_nvmf_transport_poll_group</a> *group, struct <a class="el" href="structspdk__nvmf__transport.html">spdk_nvmf_transport</a> *transport)</td></tr>
 <tr class="separator:a40c75ab705e466b8fc6263aea23db255"><td class="memSeparator" colspan="2">&#160;</td></tr>

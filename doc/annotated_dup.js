@@ -229,6 +229,7 @@ var annotated_dup =
     [ "spdk_nvmf_rdma_reject_private_data", "structspdk__nvmf__rdma__reject__private__data.html", "structspdk__nvmf__rdma__reject__private__data" ],
     [ "spdk_nvmf_rdma_request_private_data", "structspdk__nvmf__rdma__request__private__data.html", "structspdk__nvmf__rdma__request__private__data" ],
     [ "spdk_nvmf_rdma_transport_specific_address_subtype", "structspdk__nvmf__rdma__transport__specific__address__subtype.html", "structspdk__nvmf__rdma__transport__specific__address__subtype" ],
+    [ "spdk_nvmf_registers", "structspdk__nvmf__registers.html", "structspdk__nvmf__registers" ],
     [ "spdk_nvmf_request", "structspdk__nvmf__request.html", "structspdk__nvmf__request" ],
     [ "spdk_nvmf_target_opts", "structspdk__nvmf__target__opts.html", "structspdk__nvmf__target__opts" ],
     [ "spdk_nvmf_transport", "structspdk__nvmf__transport.html", "structspdk__nvmf__transport" ],

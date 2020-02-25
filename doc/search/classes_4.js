@@ -207,6 +207,7 @@ var searchData=
   ['spdk_5fnvmf_5frdma_5freject_5fprivate_5fdata',['spdk_nvmf_rdma_reject_private_data',['../structspdk__nvmf__rdma__reject__private__data.html',1,'']]],
   ['spdk_5fnvmf_5frdma_5frequest_5fprivate_5fdata',['spdk_nvmf_rdma_request_private_data',['../structspdk__nvmf__rdma__request__private__data.html',1,'']]],
   ['spdk_5fnvmf_5frdma_5ftransport_5fspecific_5faddress_5fsubtype',['spdk_nvmf_rdma_transport_specific_address_subtype',['../structspdk__nvmf__rdma__transport__specific__address__subtype.html',1,'']]],
+  ['spdk_5fnvmf_5fregisters',['spdk_nvmf_registers',['../structspdk__nvmf__registers.html',1,'']]],
   ['spdk_5fnvmf_5frequest',['spdk_nvmf_request',['../structspdk__nvmf__request.html',1,'']]],
   ['spdk_5fnvmf_5ftarget_5fopts',['spdk_nvmf_target_opts',['../structspdk__nvmf__target__opts.html',1,'']]],
   ['spdk_5fnvmf_5ftransport',['spdk_nvmf_transport',['../structspdk__nvmf__transport.html',1,'']]],

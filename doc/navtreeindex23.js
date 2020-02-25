@@ -1,5 +1,14 @@
 var NAVTREEINDEX23 =
 {
+"unionspdk__nvme__cmbsz__register.html":[12,0,97],
+"unionspdk__nvme__cmbsz__register.html#a03af53ff83c581ce0f02f72195f1c6f2":[12,0,97,7],
+"unionspdk__nvme__cmbsz__register.html#a3481600cf80fa69860ba5dbb445afc5f":[12,0,97,6],
+"unionspdk__nvme__cmbsz__register.html#a5259febaf27ced21d1358b97bd1cb831":[12,0,97,8],
+"unionspdk__nvme__cmbsz__register.html#a605db26c2b5a41b7b0cc40750e43527d":[12,0,97,2],
+"unionspdk__nvme__cmbsz__register.html#a79fbfeb57825c60398ad99aff7dea6c4":[12,0,97,3],
+"unionspdk__nvme__cmbsz__register.html#aa017da4c8e3418285501ca07822bdbf2":[12,0,97,4],
+"unionspdk__nvme__cmbsz__register.html#ad0aa06b3cce740ca6fdb26bf8c515167":[12,0,97,5],
+"unionspdk__nvme__cmbsz__register.html#ad934781cb8247d65136131504d5cd05d":[12,0,97,9],
 "unionspdk__nvme__cmbsz__register.html#ae7e3dba04a9d8cc646cf453d24f97ee8":[12,0,97,0],
 "unionspdk__nvme__cmbsz__register.html#af1ceb7a8fd105d746f14edf48a672d08":[12,0,97,1],
 "unionspdk__nvme__cmd__cdw10.html":[12,0,99],
@@ -240,14 +249,5 @@ var NAVTREEINDEX23 =
 "unionspdk__nvme__vs__register.html#a606617023ad17e6cd547b7ba0c17af06":[12,0,184,4],
 "unionspdk__nvme__vs__register.html#a607eecc53661c6bb736ace86c1ca38bf":[12,0,184,3],
 "unionspdk__nvme__vs__register.html#aa3594707db69a9e777e69c31e4735333":[12,0,184,0],
-"unionspdk__nvme__vs__register.html#af3cf51c1c70771d507686f9a5979ab39":[12,0,184,2],
-"unionspdk__nvmf__rdma__private__data.html":[12,0,225],
-"unionspdk__nvmf__rdma__private__data.html#a12eb26a169c9c79b890f3c9ae77fa5da":[12,0,225,2],
-"unionspdk__nvmf__rdma__private__data.html#a45b093b37ee0fa095571310d812c00b0":[12,0,225,0],
-"unionspdk__nvmf__rdma__private__data.html#aedcc391f20afe529847ddcab58d40970":[12,0,225,1],
-"unionspdk__nvmf__transport__specific__address__subtype.html":[12,0,237],
-"unionspdk__nvmf__transport__specific__address__subtype.html#a8098cbc03f727ae8ae707dfbf69d3469":[12,0,237,0],
-"unionspdk__nvmf__transport__specific__address__subtype.html#aabae1c961d6f86f0d6b1e61cdaa7a9ce":[12,0,237,1],
-"unionspdk__nvmf__transport__specific__address__subtype.html#aabbc28a7fc2edeca1244ff249a51edb7":[12,0,237,2],
-"user_guides.html":[3]
+"unionspdk__nvme__vs__register.html#af3cf51c1c70771d507686f9a5979ab39":[12,0,184,2]
 };
