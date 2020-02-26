@@ -1,5 +1,7 @@
 var NAVTREEINDEX21 =
 {
+"structspdk__opal__info.html#ac33bbb2e2189b06426cc75af88e931aa":[12,0,246,0],
+"structspdk__opal__info.html#ac3ca11fa394e6d2b9ea93ab06478f488":[12,0,246,41],
 "structspdk__opal__info.html#ac9a5711c0abc42feea7a4cab62a6ef5b":[12,0,246,8],
 "structspdk__opal__info.html#acf2bf0918172fd6c59d15c132124cd55":[12,0,246,40],
 "structspdk__opal__info.html#adfce4e50851769042ab9acbd634bb64a":[12,0,246,33],
@@ -247,7 +249,5 @@ var NAVTREEINDEX21 =
 "structspdk__scsi__vpd__ext__inquiry.html#a9dddaf4c0384b79536e668c52308adcf":[12,0,272,1],
 "structspdk__scsi__vpd__ext__inquiry.html#ab8826d5e01f37429d78fda6cc22f8cad":[12,0,272,4],
 "structspdk__scsi__vpd__ext__inquiry.html#adb21a07f63af30407aab56e4c90b4cd9":[12,0,272,9],
-"structspdk__scsi__vpd__ext__inquiry.html#af52442dddfa08a8c0bc5cc7d5882894f":[12,0,272,8],
-"structspdk__scsi__vpd__page.html":[12,0,273],
-"structspdk__scsi__vpd__page.html#a8328ae11c2bd1f64ac347121de15da70":[12,0,273,1]
+"structspdk__scsi__vpd__ext__inquiry.html#af52442dddfa08a8c0bc5cc7d5882894f":[12,0,272,8]
 };

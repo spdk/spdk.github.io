@@ -147,6 +147,8 @@ $(document).ready(function(){initNavTree('changelog.html','');});
 <div class="contents">
 <div class="textblock"><h1><a class="anchor" id="changelog-v20-04"></a>
 v20.04: (Upcoming Release)</h1>
+<h2>nvme</h2>
+<p>Export internal nvme_ctrlr_cmd_security_receive/send() APIs as public APIs with "spdk_" prefix.</p>
 <h2>copy</h2>
 <p>The copy engine library, modules and public APIs have been renamed. Use of the word <code>copy</code> has been replaced with the word <code>accel</code> short for accelerator in preparation for adding new capabilities in the future. Additionally, APIs for what was previously called the <code>memcpy</code> engine have been renamed to identify the engine as a software accelerator.</p>
 <h2>vmd</h2>
@@ -547,7 +549,7 @@ v20.04: (Upcoming Release)</h1>
 <p>JSON RPC client is now running in non-blocking mode. Requests are sent and received during spdk_jsonrpc_client_poll. JSON RPC server can now recieve a callback on connection termination or server shutdown using <code>spdk_jsonrpc_conn_add_close_cb</code> and <code>spdk_jsonrpc_conn_del_close_cb</code>.</p>
 <h1>v18.10</h1>
 <h2>nvme</h2>
-<p>spdk_nvme_ctrlr_cmd_security_send() and spdk_nvme_ctrlr_cmd_security_receive() were added to support sending or receiving security protocol data to or from nvme controller.</p>
+<p><a class="el" href="nvme_8h.html#a0e7a6bb3ac85f99f936290f679399039" title="Send security protocol data to controller. ">spdk_nvme_ctrlr_cmd_security_send()</a> and <a class="el" href="nvme_8h.html#ae7bcc2decc2d4ce01b041601c5cdecea" title="Receive security protocol data from controller. ">spdk_nvme_ctrlr_cmd_security_receive()</a> were added to support sending or receiving security protocol data to or from nvme controller.</p>
 <p><a class="el" href="nvme_8h.html#a8f3f5c5a738dc7ad7e3b2913bff4324c" title="Get the extended sector size, in bytes, of the given namespace. ">spdk_nvme_ns_get_extended_sector_size()</a> was added. This function includes the metadata size per sector (if any). <a class="el" href="nvme_8h.html#a0d24c0b2b0b2a22b0c0af2ca2e157e04" title="Get the sector size, in bytes, of the given namespace. ">spdk_nvme_ns_get_sector_size()</a> still returns only the data size per sector, not including metadata.</p>
 <p>New <code>send_nvme_cmd</code> RPC was added to allow sending NVMe commands directly to NVMe controller. See the <a href="http://spdk.io/doc/jsonrpc.html#rpc_send_nvme_cmd">send_nvme_cmd</a> documentation for more details.</p>
 <h2>Build System</h2>

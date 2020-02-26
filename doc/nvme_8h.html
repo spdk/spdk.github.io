@@ -448,6 +448,12 @@ Functions</h2></td></tr>
 <tr class="memitem:a63fda1acce45c71590ed0db99220d26b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a63fda1acce45c71590ed0db99220d26b">spdk_nvme_ctrlr_cmd_set_feature_ns</a> (struct spdk_nvme_ctrlr *ctrlr, uint8_t feature, uint32_t cdw11, uint32_t cdw12, void *payload, uint32_t payload_size, <a class="el" href="nvme_8h.html#ac9779e9957d7089dde8e492cc60856d8">spdk_nvme_cmd_cb</a> cb_fn, void *cb_arg, uint32_t ns_id)</td></tr>
 <tr class="memdesc:a63fda1acce45c71590ed0db99220d26b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set specific feature for the given NVMe controller and namespace ID.  <a href="#a63fda1acce45c71590ed0db99220d26b">More...</a><br /></td></tr>
 <tr class="separator:a63fda1acce45c71590ed0db99220d26b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7bcc2decc2d4ce01b041601c5cdecea"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#ae7bcc2decc2d4ce01b041601c5cdecea">spdk_nvme_ctrlr_cmd_security_receive</a> (struct spdk_nvme_ctrlr *ctrlr, uint8_t secp, uint16_t spsp, uint8_t nssf, void *payload, uint32_t payload_size, <a class="el" href="nvme_8h.html#ac9779e9957d7089dde8e492cc60856d8">spdk_nvme_cmd_cb</a> cb_fn, void *cb_arg)</td></tr>
+<tr class="memdesc:ae7bcc2decc2d4ce01b041601c5cdecea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Receive security protocol data from controller.  <a href="#ae7bcc2decc2d4ce01b041601c5cdecea">More...</a><br /></td></tr>
+<tr class="separator:ae7bcc2decc2d4ce01b041601c5cdecea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e7a6bb3ac85f99f936290f679399039"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a0e7a6bb3ac85f99f936290f679399039">spdk_nvme_ctrlr_cmd_security_send</a> (struct spdk_nvme_ctrlr *ctrlr, uint8_t secp, uint16_t spsp, uint8_t nssf, void *payload, uint32_t payload_size, <a class="el" href="nvme_8h.html#ac9779e9957d7089dde8e492cc60856d8">spdk_nvme_cmd_cb</a> cb_fn, void *cb_arg)</td></tr>
+<tr class="memdesc:a0e7a6bb3ac85f99f936290f679399039"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send security protocol data to controller.  <a href="#a0e7a6bb3ac85f99f936290f679399039">More...</a><br /></td></tr>
+<tr class="separator:a0e7a6bb3ac85f99f936290f679399039"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5175d6805225d84d6e4aa4e0f1546c69"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a5175d6805225d84d6e4aa4e0f1546c69">spdk_nvme_ctrlr_security_receive</a> (struct spdk_nvme_ctrlr *ctrlr, uint8_t secp, uint16_t spsp, uint8_t nssf, void *payload, size_t size)</td></tr>
 <tr class="memdesc:a5175d6805225d84d6e4aa4e0f1546c69"><td class="mdescLeft">&#160;</td><td class="mdescRight">Receive security protocol data from controller.  <a href="#a5175d6805225d84d6e4aa4e0f1546c69">More...</a><br /></td></tr>
 <tr class="separator:a5175d6805225d84d6e4aa4e0f1546c69"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1853,6 +1859,168 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 if successfully submitted, negated errnos on the following error conditions: -ENOMEM: The request cannot be allocated. -ENXIO: The qpair is failed at the transport level. -EFAULT: Invalid address was specified as part of payload. cb_fn is also called with error status including dnr=1 in this case. </dd></dl>
+
+</div>
+</div>
+<a id="ae7bcc2decc2d4ce01b041601c5cdecea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae7bcc2decc2d4ce01b041601c5cdecea">&#9670;&nbsp;</a></span>spdk_nvme_ctrlr_cmd_security_receive()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_nvme_ctrlr_cmd_security_receive </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_nvme_ctrlr *&#160;</td>
+          <td class="paramname"><em>ctrlr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>secp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>spsp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>nssf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>payload</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>payload_size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="nvme_8h.html#ac9779e9957d7089dde8e492cc60856d8">spdk_nvme_cmd_cb</a>&#160;</td>
+          <td class="paramname"><em>cb_fn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>cb_arg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Receive security protocol data from controller. </p>
+<p>This function is thread safe and can be called at any point after <a class="el" href="nvme_8h.html#a225bbc386ec518ae21bd5536f21db45d" title="Enumerate the bus indicated by the transport ID and attach the userspace NVMe driver to each device f...">spdk_nvme_probe()</a>.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ctrlr</td><td>NVMe controller to use for security receive command submission. </td></tr>
+    <tr><td class="paramname">secp</td><td>Security Protocol that is used. </td></tr>
+    <tr><td class="paramname">spsp</td><td>Security Protocol Specific field. </td></tr>
+    <tr><td class="paramname">nssf</td><td>NVMe Security Specific field. Indicate RPMB target when using Security Protocol EAh. </td></tr>
+    <tr><td class="paramname">payload</td><td>The pointer to the payload buffer. </td></tr>
+    <tr><td class="paramname">payload_size</td><td>The size of payload buffer. </td></tr>
+    <tr><td class="paramname">cb_fn</td><td>Callback function to invoke when the command has been completed. </td></tr>
+    <tr><td class="paramname">cb_arg</td><td>Argument to pass to the callback function.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 if successfully submitted, negated errno if resources could not be allocated for this request. </dd></dl>
+
+</div>
+</div>
+<a id="a0e7a6bb3ac85f99f936290f679399039"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e7a6bb3ac85f99f936290f679399039">&#9670;&nbsp;</a></span>spdk_nvme_ctrlr_cmd_security_send()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_nvme_ctrlr_cmd_security_send </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_nvme_ctrlr *&#160;</td>
+          <td class="paramname"><em>ctrlr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>secp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>spsp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>nssf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>payload</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>payload_size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="nvme_8h.html#ac9779e9957d7089dde8e492cc60856d8">spdk_nvme_cmd_cb</a>&#160;</td>
+          <td class="paramname"><em>cb_fn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>cb_arg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Send security protocol data to controller. </p>
+<p>This function is thread safe and can be called at any point after <a class="el" href="nvme_8h.html#a225bbc386ec518ae21bd5536f21db45d" title="Enumerate the bus indicated by the transport ID and attach the userspace NVMe driver to each device f...">spdk_nvme_probe()</a>.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ctrlr</td><td>NVMe controller to use for security send command submission. </td></tr>
+    <tr><td class="paramname">secp</td><td>Security Protocol that is used. </td></tr>
+    <tr><td class="paramname">spsp</td><td>Security Protocol Specific field. </td></tr>
+    <tr><td class="paramname">nssf</td><td>NVMe Security Specific field. Indicate RPMB target when using Security Protocol EAh. </td></tr>
+    <tr><td class="paramname">payload</td><td>The pointer to the payload buffer. </td></tr>
+    <tr><td class="paramname">payload_size</td><td>The size of payload buffer. </td></tr>
+    <tr><td class="paramname">cb_fn</td><td>Callback function to invoke when the command has been completed. </td></tr>
+    <tr><td class="paramname">cb_arg</td><td>Argument to pass to the callback function.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 if successfully submitted, negated errno if resources could not be allocated for this request. </dd></dl>
 
 </div>
 </div>
