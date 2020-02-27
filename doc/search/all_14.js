@@ -24,6 +24,7 @@ var searchData=
   ['tpoint_5fcount',['tpoint_count',['../structspdk__trace__history.html#a5d36fc5a17dddc7e14b32aa1598a7ee8',1,'spdk_trace_history']]],
   ['trace_2eh',['trace.h',['../trace_8h.html',1,'']]],
   ['traddr',['traddr',['../structspdk__nvme__transport__id.html#a4f8ed78319dff1a70923ab107c241b1b',1,'spdk_nvme_transport_id::traddr()'],['../structspdk__nvmf__discovery__log__page__entry.html#a549e9bb635b7ae387daceef8e5b27e68',1,'spdk_nvmf_discovery_log_page_entry::traddr()']]],
+  ['transport_5fack_5ftimeout',['transport_ack_timeout',['../structspdk__nvme__ctrlr__opts.html#a070ee4322069e538ed3d3565c0f6c467',1,'spdk_nvme_ctrlr_opts']]],
   ['transport_5fretry_5fcount',['transport_retry_count',['../structspdk__nvme__ctrlr__opts.html#aff1b2c63ae9c862d3d372c49b5fd8b8c',1,'spdk_nvme_ctrlr_opts']]],
   ['trdm',['trdm',['../structspdk__ocssd__geometry__data.html#a4126ac6e1846920ef940648bba63dd98',1,'spdk_ocssd_geometry_data']]],
   ['trdt',['trdt',['../structspdk__ocssd__geometry__data.html#a4ab0d6368b89242e78483d6e44d931a7',1,'spdk_ocssd_geometry_data']]],

@@ -61,6 +61,8 @@ var searchData=
   ['spdk_5fsock_5fcb',['spdk_sock_cb',['../sock_8h.html#ae297ae75e566b35635d20b959daa7741',1,'sock.h']]],
   ['spdk_5fstart_5fpoller',['spdk_start_poller',['../thread_8h.html#a6f70f5e9b4d498e843f81f1a6ada6370',1,'thread.h']]],
   ['spdk_5fstop_5fpoller',['spdk_stop_poller',['../thread_8h.html#adfddbbbb13145f26741106cb8296a05a',1,'thread.h']]],
+  ['spdk_5fthread_5fop_5ffn',['spdk_thread_op_fn',['../thread_8h.html#a9f0ad3a2bcbb6d304401b579ab63aeba',1,'thread.h']]],
+  ['spdk_5fthread_5fop_5fsupported_5ffn',['spdk_thread_op_supported_fn',['../thread_8h.html#af791c24e496b96c886fe8bad088eb0cb',1,'thread.h']]],
   ['spdk_5fthread_5fpass_5fmsg',['spdk_thread_pass_msg',['../thread_8h.html#a4a0e155fc3fa0150aa4a505dd1801e91',1,'thread.h']]],
   ['spdk_5fvhost_5fevent_5ffn',['spdk_vhost_event_fn',['../vhost_8h.html#ac2c4b62eaf6503e5f5e520394f9f9fe1',1,'vhost.h']]],
   ['spdk_5fvhost_5ffini_5fcb',['spdk_vhost_fini_cb',['../vhost_8h.html#a8b37106ad173f20d05da87f89714700b',1,'vhost.h']]],

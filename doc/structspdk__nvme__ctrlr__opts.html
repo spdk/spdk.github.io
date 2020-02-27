@@ -225,6 +225,9 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 <tr class="memitem:ade3ae305f17864bd4904e89ac9a6a02c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__ctrlr__opts.html#ade3ae305f17864bd4904e89ac9a6a02c">disable_error_logging</a></td></tr>
 <tr class="memdesc:ade3ae305f17864bd4904e89ac9a6a02c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disable logging of requests that are completed with error status.  <a href="#ade3ae305f17864bd4904e89ac9a6a02c">More...</a><br /></td></tr>
 <tr class="separator:ade3ae305f17864bd4904e89ac9a6a02c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a070ee4322069e538ed3d3565c0f6c467"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__ctrlr__opts.html#a070ee4322069e538ed3d3565c0f6c467">transport_ack_timeout</a></td></tr>
+<tr class="memdesc:a070ee4322069e538ed3d3565c0f6c467"><td class="mdescLeft">&#160;</td><td class="mdescRight">It is used for RDMA transport Specify the transport ACK timeout.  <a href="#a070ee4322069e538ed3d3565c0f6c467">More...</a><br /></td></tr>
+<tr class="separator:a070ee4322069e538ed3d3565c0f6c467"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>NVMe controller initialization options. </p>
@@ -500,6 +503,23 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 
 <p>Source service ID (port) for NVMe-oF connections. </p>
 <p>Set src_addr and src_svcid to empty strings if no source address should be specified. </p>
+
+</div>
+</div>
+<a id="a070ee4322069e538ed3d3565c0f6c467"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a070ee4322069e538ed3d3565c0f6c467">&#9670;&nbsp;</a></span>transport_ack_timeout</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t spdk_nvme_ctrlr_opts::transport_ack_timeout</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>It is used for RDMA transport Specify the transport ACK timeout. </p>
+<p>The value should be in range 0-31 where 0 means use driver-specific default value. The value is applied to each RDMA qpair and affects the time that qpair waits for transport layer acknowledgement until it retransmits a packet. The value should be chosen empirically to meet the needs of a particular application. A low value means less time the qpair waits for ACK which can increase the number of retransmissions. A large value can increase the time the connection is closed. The value of ACK timeout is calculated according to the formula 4.096 * 2^(transport_ack_timeout) usec. </p>
 
 </div>
 </div>

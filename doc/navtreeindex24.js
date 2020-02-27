@@ -1,5 +1,15 @@
 var NAVTREEINDEX24 =
 {
+"unionspdk__nvme__intel__feat__smbus__address.html":[12,0,140],
+"unionspdk__nvme__intel__feat__smbus__address.html#a1e1bc8d96e7c60ff634b4b5dc28151b0":[12,0,140,1],
+"unionspdk__nvme__intel__feat__smbus__address.html#a49084bbf1cf7d967ed21e6c1dce76e9f":[12,0,140,2],
+"unionspdk__nvme__intel__feat__smbus__address.html#a70103b1857b0f6f47fc52853b2787eb3":[12,0,140,0],
+"unionspdk__nvme__intel__feat__smbus__address.html#ab9d22f2b03c70684d832df3a349c0f31":[12,0,140,4],
+"unionspdk__nvme__intel__feat__smbus__address.html#ae122cd0e8dc3d8b57632fea33ec8efa2":[12,0,140,3],
+"unionspdk__nvme__vs__register.html":[12,0,184],
+"unionspdk__nvme__vs__register.html#a605cba0b2c6abdee150cb3a6babc4bb8":[12,0,184,1],
+"unionspdk__nvme__vs__register.html#a606617023ad17e6cd547b7ba0c17af06":[12,0,184,4],
+"unionspdk__nvme__vs__register.html#a607eecc53661c6bb736ace86c1ca38bf":[12,0,184,3],
 "unionspdk__nvme__vs__register.html#aa3594707db69a9e777e69c31e4735333":[12,0,184,0],
 "unionspdk__nvme__vs__register.html#af3cf51c1c70771d507686f9a5979ab39":[12,0,184,2],
 "unionspdk__nvmf__rdma__private__data.html":[12,0,225],

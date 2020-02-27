@@ -144,6 +144,7 @@ $(document).ready(function(){initNavTree('thread_8h.html','');});
   <div class="summary">
 <a href="#nested-classes">Data Structures</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
+<a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">thread.h File Reference</div>  </div>
@@ -166,6 +167,14 @@ Typedefs</h2></td></tr>
 <tr class="memitem:afab3d4339c5bca4dfde209816a9e560f"><td class="memItemLeft" align="right" valign="top">typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="thread_8h.html#afab3d4339c5bca4dfde209816a9e560f">spdk_new_thread_fn</a>) (struct spdk_thread *thread)</td></tr>
 <tr class="memdesc:afab3d4339c5bca4dfde209816a9e560f"><td class="mdescLeft">&#160;</td><td class="mdescRight">A function that is called each time a new thread is created.  <a href="#afab3d4339c5bca4dfde209816a9e560f">More...</a><br /></td></tr>
 <tr class="separator:afab3d4339c5bca4dfde209816a9e560f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f0ad3a2bcbb6d304401b579ab63aeba"><td class="memItemLeft" align="right" valign="top"><a id="a9f0ad3a2bcbb6d304401b579ab63aeba"></a>
+typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="thread_8h.html#a9f0ad3a2bcbb6d304401b579ab63aeba">spdk_thread_op_fn</a>) (struct spdk_thread *thread, enum <a class="el" href="thread_8h.html#aa0d064c5b2e0268ad751a682fa8ed6a6">spdk_thread_op</a> op)</td></tr>
+<tr class="memdesc:a9f0ad3a2bcbb6d304401b579ab63aeba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to be called for SPDK thread operation. <br /></td></tr>
+<tr class="separator:a9f0ad3a2bcbb6d304401b579ab63aeba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af791c24e496b96c886fe8bad088eb0cb"><td class="memItemLeft" align="right" valign="top"><a id="af791c24e496b96c886fe8bad088eb0cb"></a>
+typedef bool(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="thread_8h.html#af791c24e496b96c886fe8bad088eb0cb">spdk_thread_op_supported_fn</a>) (enum <a class="el" href="thread_8h.html#aa0d064c5b2e0268ad751a682fa8ed6a6">spdk_thread_op</a> op)</td></tr>
+<tr class="memdesc:af791c24e496b96c886fe8bad088eb0cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to check whether the SPDK thread operation is supported. <br /></td></tr>
+<tr class="separator:af791c24e496b96c886fe8bad088eb0cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adc0da6b1b784d4f165dcd48b526d12ad"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="thread_8h.html#adc0da6b1b784d4f165dcd48b526d12ad">spdk_msg_fn</a>) (void *ctx)</td></tr>
 <tr class="memdesc:adc0da6b1b784d4f165dcd48b526d12ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">A function that will be called on the target thread.  <a href="#adc0da6b1b784d4f165dcd48b526d12ad">More...</a><br /></td></tr>
 <tr class="separator:adc0da6b1b784d4f165dcd48b526d12ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -197,11 +206,22 @@ Typedefs</h2></td></tr>
 <tr class="memdesc:a96f03fe115196f1de03292ed6d86fd46"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="thread_8h.html#aa7a2ca9bd0497544e852c65fd5263cd1" title="Call &#39;fn&#39; on each channel associated with io_device. ">spdk_for_each_channel()</a> callback.  <a href="#a96f03fe115196f1de03292ed6d86fd46">More...</a><br /></td></tr>
 <tr class="separator:a96f03fe115196f1de03292ed6d86fd46"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:aa0d064c5b2e0268ad751a682fa8ed6a6"><td class="memItemLeft" align="right" valign="top"><a id="aa0d064c5b2e0268ad751a682fa8ed6a6"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="thread_8h.html#aa0d064c5b2e0268ad751a682fa8ed6a6">spdk_thread_op</a> { <b>SPDK_THREAD_OP_NEW</b>, 
+<b>SPDK_THREAD_OP_RESCHED</b>
+ }</td></tr>
+<tr class="memdesc:aa0d064c5b2e0268ad751a682fa8ed6a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">SPDK thread operation type. <br /></td></tr>
+<tr class="separator:aa0d064c5b2e0268ad751a682fa8ed6a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a96c6e1cadb3b5a83c5723487e3f02c23"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="thread_8h.html#a96c6e1cadb3b5a83c5723487e3f02c23">spdk_thread_lib_init</a> (<a class="el" href="thread_8h.html#afab3d4339c5bca4dfde209816a9e560f">spdk_new_thread_fn</a> new_thread_fn, size_t ctx_sz)</td></tr>
 <tr class="memdesc:a96c6e1cadb3b5a83c5723487e3f02c23"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the threading library.  <a href="#a96c6e1cadb3b5a83c5723487e3f02c23">More...</a><br /></td></tr>
 <tr class="separator:a96c6e1cadb3b5a83c5723487e3f02c23"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a820faedd428f6e689ecb28d721a8d0bf"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="thread_8h.html#a820faedd428f6e689ecb28d721a8d0bf">spdk_thread_lib_init_ext</a> (<a class="el" href="thread_8h.html#a9f0ad3a2bcbb6d304401b579ab63aeba">spdk_thread_op_fn</a> thread_op_fn, <a class="el" href="thread_8h.html#af791c24e496b96c886fe8bad088eb0cb">spdk_thread_op_supported_fn</a> thread_op_supported_fn, size_t ctx_sz)</td></tr>
+<tr class="memdesc:a820faedd428f6e689ecb28d721a8d0bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the threading library.  <a href="#a820faedd428f6e689ecb28d721a8d0bf">More...</a><br /></td></tr>
+<tr class="separator:a820faedd428f6e689ecb28d721a8d0bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afe409bf16664f461daa516b6a6d1682c"><td class="memItemLeft" align="right" valign="top"><a id="afe409bf16664f461daa516b6a6d1682c"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="thread_8h.html#afe409bf16664f461daa516b6a6d1682c">spdk_thread_lib_fini</a> (void)</td></tr>
 <tr class="memdesc:afe409bf16664f461daa516b6a6d1682c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Release all resources associated with this library. <br /></td></tr>
@@ -213,7 +233,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="thre
 <tr class="memdesc:a60dac2a0fc19b23be6fecb1e5b6f8a7a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Force the current system thread to act as if executing the given SPDK thread.  <a href="#a60dac2a0fc19b23be6fecb1e5b6f8a7a">More...</a><br /></td></tr>
 <tr class="separator:a60dac2a0fc19b23be6fecb1e5b6f8a7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5132d2abe39a40a0e14e19bb2bd15489"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="thread_8h.html#a5132d2abe39a40a0e14e19bb2bd15489">spdk_thread_exit</a> (struct spdk_thread *thread)</td></tr>
-<tr class="memdesc:a5132d2abe39a40a0e14e19bb2bd15489"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mark the thread as exited, failing all future <a class="el" href="thread_8h.html#ad9e3693e8e9e6c9063ea36414294ae91" title="Perform one iteration worth of processing on the thread. ">spdk_thread_poll()</a> calls.  <a href="#a5132d2abe39a40a0e14e19bb2bd15489">More...</a><br /></td></tr>
+<tr class="memdesc:a5132d2abe39a40a0e14e19bb2bd15489"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mark the thread as exited, failing all future <a class="el" href="thread_8h.html#a07b662b152c21dad824ad2738d0733ec" title="Send a message to the given thread. ">spdk_thread_send_msg()</a>, <a class="el" href="thread_8h.html#a6b3e883ddce01ae8d93541304d1e9126" title="Register a poller on the current thread. ">spdk_poller_register()</a>, and <a class="el" href="thread_8h.html#a8537c42a7aa203b50578efed509d9ba8" title="Get an I/O channel for the specified io_device to be used by the calling thread. ">spdk_get_io_channel()</a> calls.  <a href="#a5132d2abe39a40a0e14e19bb2bd15489">More...</a><br /></td></tr>
 <tr class="separator:a5132d2abe39a40a0e14e19bb2bd15489"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae99859eb37714e4ed7c6110ea71ab142"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="thread_8h.html#ae99859eb37714e4ed7c6110ea71ab142">spdk_thread_is_exited</a> (struct spdk_thread *thread)</td></tr>
 <tr class="memdesc:ae99859eb37714e4ed7c6110ea71ab142"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether the thread is marked as exited.  <a href="#ae99859eb37714e4ed7c6110ea71ab142">More...</a><br /></td></tr>
@@ -227,6 +247,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="thre
 <tr class="memitem:a9f06d559046d570e025d6b67c7e8d507"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structspdk__cpuset.html">spdk_cpuset</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="thread_8h.html#a9f06d559046d570e025d6b67c7e8d507">spdk_thread_get_cpumask</a> (struct spdk_thread *thread)</td></tr>
 <tr class="memdesc:a9f06d559046d570e025d6b67c7e8d507"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the thread's cpumask.  <a href="#a9f06d559046d570e025d6b67c7e8d507">More...</a><br /></td></tr>
 <tr class="separator:a9f06d559046d570e025d6b67c7e8d507"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44c27f304a333a80bbdb48f1df12721f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="thread_8h.html#a44c27f304a333a80bbdb48f1df12721f">spdk_thread_set_cpumask</a> (struct <a class="el" href="structspdk__cpuset.html">spdk_cpuset</a> *cpumask)</td></tr>
+<tr class="memdesc:a44c27f304a333a80bbdb48f1df12721f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the current thread's cpumask to the specified value.  <a href="#a44c27f304a333a80bbdb48f1df12721f">More...</a><br /></td></tr>
+<tr class="separator:a44c27f304a333a80bbdb48f1df12721f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af813fe52c71ec5e254f8671570f57bdc"><td class="memItemLeft" align="right" valign="top">struct spdk_thread *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="thread_8h.html#af813fe52c71ec5e254f8671570f57bdc">spdk_thread_get_from_ctx</a> (void *ctx)</td></tr>
 <tr class="memdesc:af813fe52c71ec5e254f8671570f57bdc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the thread object associated with the context handle previously obtained by calling <a class="el" href="thread_8h.html#a1deb97a85a8240119cf46fa8a0b71388" title="Return a pointer to this thread&#39;s context. ">spdk_thread_get_ctx()</a>.  <a href="#af813fe52c71ec5e254f8671570f57bdc">More...</a><br /></td></tr>
 <tr class="separator:af813fe52c71ec5e254f8671570f57bdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -255,6 +278,12 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 <tr class="memitem:ae367048fa89366e845d72015064e6f76"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="thread_8h.html#ae367048fa89366e845d72015064e6f76">spdk_thread_get_name</a> (const struct spdk_thread *thread)</td></tr>
 <tr class="memdesc:ae367048fa89366e845d72015064e6f76"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a thread's name.  <a href="#ae367048fa89366e845d72015064e6f76">More...</a><br /></td></tr>
 <tr class="separator:ae367048fa89366e845d72015064e6f76"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aead9239fedaf5af9f24b5614f6c0c8fb"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="thread_8h.html#aead9239fedaf5af9f24b5614f6c0c8fb">spdk_thread_get_id</a> (const struct spdk_thread *thread)</td></tr>
+<tr class="memdesc:aead9239fedaf5af9f24b5614f6c0c8fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a thread's ID.  <a href="#aead9239fedaf5af9f24b5614f6c0c8fb">More...</a><br /></td></tr>
+<tr class="separator:aead9239fedaf5af9f24b5614f6c0c8fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24c90cd523aad947dad7e651074d9f1d"><td class="memItemLeft" align="right" valign="top">struct spdk_thread *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="thread_8h.html#a24c90cd523aad947dad7e651074d9f1d">spdk_thread_get_by_id</a> (uint64_t id)</td></tr>
+<tr class="memdesc:a24c90cd523aad947dad7e651074d9f1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the thread by the ID.  <a href="#a24c90cd523aad947dad7e651074d9f1d">More...</a><br /></td></tr>
+<tr class="separator:a24c90cd523aad947dad7e651074d9f1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab6f07dd00b0b4140155713aca312d46b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="thread_8h.html#ab6f07dd00b0b4140155713aca312d46b">spdk_thread_get_stats</a> (struct <a class="el" href="structspdk__thread__stats.html">spdk_thread_stats</a> *stats)</td></tr>
 <tr class="memdesc:ab6f07dd00b0b4140155713aca312d46b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get statistics about the current thread.  <a href="#ab6f07dd00b0b4140155713aca312d46b">More...</a><br /></td></tr>
 <tr class="separator:ab6f07dd00b0b4140155713aca312d46b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1288,7 +1317,7 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
       </table>
 </div><div class="memdoc">
 
-<p>Mark the thread as exited, failing all future <a class="el" href="thread_8h.html#ad9e3693e8e9e6c9063ea36414294ae91" title="Perform one iteration worth of processing on the thread. ">spdk_thread_poll()</a> calls. </p>
+<p>Mark the thread as exited, failing all future <a class="el" href="thread_8h.html#a07b662b152c21dad824ad2738d0733ec" title="Send a message to the given thread. ">spdk_thread_send_msg()</a>, <a class="el" href="thread_8h.html#a6b3e883ddce01ae8d93541304d1e9126" title="Register a poller on the current thread. ">spdk_poller_register()</a>, and <a class="el" href="thread_8h.html#a8537c42a7aa203b50578efed509d9ba8" title="Get an I/O channel for the specified io_device to be used by the calling thread. ">spdk_get_io_channel()</a> calls. </p>
 <p>May only be called within an spdk poller or message.</p>
 <p>All I/O channel references associated with the thread must be released using <a class="el" href="thread_8h.html#a717571a5011db0cdd730498146f25f9a" title="Release a reference to an I/O channel. ">spdk_put_io_channel()</a>, and all active pollers associated with the thread must be unregistered using <a class="el" href="thread_8h.html#a9c26cbd781063f5ee627d6aba2c73fe3" title="Unregister a poller on the current thread. ">spdk_poller_unregister()</a>, prior to calling this function.</p>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -1298,6 +1327,33 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 on success, negated errno on failure. </dd></dl>
+
+</div>
+</div>
+<a id="a24c90cd523aad947dad7e651074d9f1d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a24c90cd523aad947dad7e651074d9f1d">&#9670;&nbsp;</a></span>spdk_thread_get_by_id()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct spdk_thread* spdk_thread_get_by_id </td>
+          <td>(</td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>id</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the thread by the ID. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">id</td><td>ID of the thread. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Thread whose ID matches or NULL otherwise. </dd></dl>
 
 </div>
 </div>
@@ -1379,6 +1435,33 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The associated thread. </dd></dl>
+
+</div>
+</div>
+<a id="aead9239fedaf5af9f24b5614f6c0c8fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aead9239fedaf5af9f24b5614f6c0c8fb">&#9670;&nbsp;</a></span>spdk_thread_get_id()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint64_t spdk_thread_get_id </td>
+          <td>(</td>
+          <td class="paramtype">const struct spdk_thread *&#160;</td>
+          <td class="paramname"><em>thread</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get a thread's ID. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">thread</td><td>Thread to query.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the ID of the thread.. </dd></dl>
 
 </div>
 </div>
@@ -1583,6 +1666,53 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 
 </div>
 </div>
+<a id="a820faedd428f6e689ecb28d721a8d0bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a820faedd428f6e689ecb28d721a8d0bf">&#9670;&nbsp;</a></span>spdk_thread_lib_init_ext()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_thread_lib_init_ext </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="thread_8h.html#a9f0ad3a2bcbb6d304401b579ab63aeba">spdk_thread_op_fn</a>&#160;</td>
+          <td class="paramname"><em>thread_op_fn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="thread_8h.html#af791c24e496b96c886fe8bad088eb0cb">spdk_thread_op_supported_fn</a>&#160;</td>
+          <td class="paramname"><em>thread_op_supported_fn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>ctx_sz</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Initialize the threading library. </p>
+<p>Must be called once prior to allocating any threads</p>
+<p>Both thread_op_fn and thread_op_type_supported_fn have to be specified or not specified together.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">thread_op_fn</td><td>Called for SPDK thread operation. </td></tr>
+    <tr><td class="paramname">thread_op_supported_fn</td><td>Called to check whether the SPDK thread operation is supported. </td></tr>
+    <tr><td class="paramname">ctx_sz</td><td>For each thread allocated, for use by the thread scheduler. A pointer to this region may be obtained by calling <a class="el" href="thread_8h.html#a1deb97a85a8240119cf46fa8a0b71388" title="Return a pointer to this thread&#39;s context. ">spdk_thread_get_ctx()</a>.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success. Negated errno on failure. </dd></dl>
+
+</div>
+</div>
 <a id="a474fcfc5c14928eda42c684ba2b4cba9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a474fcfc5c14928eda42c684ba2b4cba9">&#9670;&nbsp;</a></span>spdk_thread_next_poller_expiration()</h2>
 
@@ -1746,6 +1876,35 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 -ENOMEM if the message could not be allocated </dd>
 <dd>
 -EIO if the message could not be sent to the destination thread </dd></dl>
+
+</div>
+</div>
+<a id="a44c27f304a333a80bbdb48f1df12721f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a44c27f304a333a80bbdb48f1df12721f">&#9670;&nbsp;</a></span>spdk_thread_set_cpumask()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_thread_set_cpumask </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structspdk__cpuset.html">spdk_cpuset</a> *&#160;</td>
+          <td class="paramname"><em>cpumask</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the current thread's cpumask to the specified value. </p>
+<p>The thread may be rescheduled to one of the CPUs specified in the cpumask.</p>
+<p>This API requires SPDK thread operation supports SPDK_THREAD_OP_RESCHED.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cpumask</td><td>The new cpumask for the thread.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, negated errno otherwise. </dd></dl>
 
 </div>
 </div>
