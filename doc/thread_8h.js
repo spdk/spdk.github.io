@@ -2,6 +2,7 @@ var thread_8h =
 [
     [ "spdk_io_channel", "structspdk__io__channel.html", "structspdk__io__channel" ],
     [ "spdk_thread_stats", "structspdk__thread__stats.html", "structspdk__thread__stats" ],
+    [ "SPDK_POLLER_REGISTER", "thread_8h.html#a17cf88195e46bb118ac03528f7f5eee0", null ],
     [ "spdk_channel_for_each_cpl", "thread_8h.html#a96f03fe115196f1de03292ed6d86fd46", null ],
     [ "spdk_channel_msg", "thread_8h.html#a2dd91f3094f8b4cf60f460e3f88bbf0c", null ],
     [ "spdk_io_channel_create_cb", "thread_8h.html#aed1d14292cfee8553d4a1ebb519b210a", null ],
@@ -34,6 +35,7 @@ var thread_8h =
     [ "spdk_io_device_unregister", "thread_8h.html#a4c6c3df3a611c10c176cb87966c622f0", null ],
     [ "spdk_poller_pause", "thread_8h.html#a0f0c05dd1c9cb0b31eee89213b89f3c3", null ],
     [ "spdk_poller_register", "thread_8h.html#a6b3e883ddce01ae8d93541304d1e9126", null ],
+    [ "spdk_poller_register_named", "thread_8h.html#a4e1086db1bd40b0a1720bd148967d82d", null ],
     [ "spdk_poller_resume", "thread_8h.html#ab3de0ffe9dfc29361b092d467d37017e", null ],
     [ "spdk_poller_unregister", "thread_8h.html#a9c26cbd781063f5ee627d6aba2c73fe3", null ],
     [ "spdk_put_io_channel", "thread_8h.html#a717571a5011db0cdd730498146f25f9a", null ],

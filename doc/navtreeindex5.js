@@ -17,6 +17,7 @@ var NAVTREEINDEX5 =
 "jsonrpc.html#rpc_spdk_get_version":[3,7,8,5],
 "jsonrpc.html#rpc_spdk_kill_instance":[3,7,1,0],
 "jsonrpc.html#rpc_thread_get_stats":[3,7,1,8],
+"jsonrpc.html#rpc_thread_set_cpumask":[3,7,1,9],
 "jsonrpc.html#rpc_vhost_controller_set_coalescing":[3,7,5,0],
 "jsonrpc.html#rpc_vhost_create_blk_controller":[3,7,5,6],
 "jsonrpc.html#rpc_vhost_create_nvme_controller":[3,7,5,4],
@@ -248,6 +249,5 @@ var NAVTREEINDEX5 =
 "nvme_8h.html#a63fda1acce45c71590ed0db99220d26b":[13,0,36,42],
 "nvme_8h.html#a6943191f9c88c3cec504f87672b9acf8":[13,0,36,62],
 "nvme_8h.html#a6964d09dc51882fae6f2a7cf94afc741":[13,0,36,53],
-"nvme_8h.html#a6b4ebba22f1585b98e4ca20932d75434":[13,0,36,33],
-"nvme_8h.html#a6c559063408299a4612fd2e62f97bc63":[13,0,36,121]
+"nvme_8h.html#a6b4ebba22f1585b98e4ca20932d75434":[13,0,36,33]
 };

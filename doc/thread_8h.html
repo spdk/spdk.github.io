@@ -143,6 +143,7 @@ $(document).ready(function(){initNavTree('thread_8h.html','');});
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Data Structures</a> &#124;
+<a href="#define-members">Macros</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
 <a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a>  </div>
@@ -161,6 +162,12 @@ Data Structures</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__thread__stats.html">spdk_thread_stats</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:a17cf88195e46bb118ac03528f7f5eee0"><td class="memItemLeft" align="right" valign="top"><a id="a17cf88195e46bb118ac03528f7f5eee0"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_POLLER_REGISTER</b>(fn,  arg,  period_microseconds)&#160;&#160;&#160;<a class="el" href="thread_8h.html#a4e1086db1bd40b0a1720bd148967d82d">spdk_poller_register_named</a>(fn, arg, period_microseconds, #fn)</td></tr>
+<tr class="separator:a17cf88195e46bb118ac03528f7f5eee0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
@@ -299,6 +306,9 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 <tr class="memitem:a6b3e883ddce01ae8d93541304d1e9126"><td class="memItemLeft" align="right" valign="top">struct spdk_poller *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="thread_8h.html#a6b3e883ddce01ae8d93541304d1e9126">spdk_poller_register</a> (<a class="el" href="thread_8h.html#a35c421accdc2a0a61bb7be916106293b">spdk_poller_fn</a> fn, void *arg, uint64_t period_microseconds)</td></tr>
 <tr class="memdesc:a6b3e883ddce01ae8d93541304d1e9126"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register a poller on the current thread.  <a href="#a6b3e883ddce01ae8d93541304d1e9126">More...</a><br /></td></tr>
 <tr class="separator:a6b3e883ddce01ae8d93541304d1e9126"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e1086db1bd40b0a1720bd148967d82d"><td class="memItemLeft" align="right" valign="top">struct spdk_poller *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="thread_8h.html#a4e1086db1bd40b0a1720bd148967d82d">spdk_poller_register_named</a> (<a class="el" href="thread_8h.html#a35c421accdc2a0a61bb7be916106293b">spdk_poller_fn</a> fn, void *arg, uint64_t period_microseconds, const char *name)</td></tr>
+<tr class="memdesc:a4e1086db1bd40b0a1720bd148967d82d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register a poller on the current thread with arbitrary name.  <a href="#a4e1086db1bd40b0a1720bd148967d82d">More...</a><br /></td></tr>
+<tr class="separator:a4e1086db1bd40b0a1720bd148967d82d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9c26cbd781063f5ee627d6aba2c73fe3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="thread_8h.html#a9c26cbd781063f5ee627d6aba2c73fe3">spdk_poller_unregister</a> (struct spdk_poller **ppoller)</td></tr>
 <tr class="memdesc:a9c26cbd781063f5ee627d6aba2c73fe3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unregister a poller on the current thread.  <a href="#a9c26cbd781063f5ee627d6aba2c73fe3">More...</a><br /></td></tr>
 <tr class="separator:a9c26cbd781063f5ee627d6aba2c73fe3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1122,6 +1132,59 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
     <tr><td class="paramname">fn</td><td>This function will be called every <code>period_microseconds</code>. </td></tr>
     <tr><td class="paramname">arg</td><td>Argument passed to fn. </td></tr>
     <tr><td class="paramname">period_microseconds</td><td>How often to call <code>fn</code>. If 0, call <code>fn</code> as often as possible.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>a pointer to the poller registered on the current thread on success or NULL on failure. </dd></dl>
+
+</div>
+</div>
+<a id="a4e1086db1bd40b0a1720bd148967d82d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e1086db1bd40b0a1720bd148967d82d">&#9670;&nbsp;</a></span>spdk_poller_register_named()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct spdk_poller* spdk_poller_register_named </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="thread_8h.html#a35c421accdc2a0a61bb7be916106293b">spdk_poller_fn</a>&#160;</td>
+          <td class="paramname"><em>fn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>arg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>period_microseconds</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>name</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Register a poller on the current thread with arbitrary name. </p>
+<p>The poller can be unregistered by calling <a class="el" href="thread_8h.html#a9c26cbd781063f5ee627d6aba2c73fe3" title="Unregister a poller on the current thread. ">spdk_poller_unregister()</a>.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fn</td><td>This function will be called every <code>period_microseconds</code>. </td></tr>
+    <tr><td class="paramname">arg</td><td>Argument passed to fn. </td></tr>
+    <tr><td class="paramname">period_microseconds</td><td>How often to call <code>fn</code>. If 0, call <code>fn</code> as often as possible. </td></tr>
+    <tr><td class="paramname">name</td><td>Human readable name for the poller. Pointer of the poller function name is set if NULL.</td></tr>
   </table>
   </dd>
 </dl>

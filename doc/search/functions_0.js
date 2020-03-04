@@ -725,6 +725,7 @@ var searchData=
   ['spdk_5fpipe_5fwriter_5fget_5fbuffer',['spdk_pipe_writer_get_buffer',['../pipe_8h.html#a34858f01fe285ba81743b9a3a4a6ee9f',1,'pipe.h']]],
   ['spdk_5fpoller_5fpause',['spdk_poller_pause',['../thread_8h.html#a0f0c05dd1c9cb0b31eee89213b89f3c3',1,'thread.h']]],
   ['spdk_5fpoller_5fregister',['spdk_poller_register',['../thread_8h.html#a6b3e883ddce01ae8d93541304d1e9126',1,'thread.h']]],
+  ['spdk_5fpoller_5fregister_5fnamed',['spdk_poller_register_named',['../thread_8h.html#a4e1086db1bd40b0a1720bd148967d82d',1,'thread.h']]],
   ['spdk_5fpoller_5fresume',['spdk_poller_resume',['../thread_8h.html#ab3de0ffe9dfc29361b092d467d37017e',1,'thread.h']]],
   ['spdk_5fpoller_5funregister',['spdk_poller_unregister',['../thread_8h.html#a9c26cbd781063f5ee627d6aba2c73fe3',1,'thread.h']]],
   ['spdk_5fposix_5ffile_5fload',['spdk_posix_file_load',['../file_8h.html#a9d88b741d9149009e0d437e1bfaa6cda',1,'file.h']]],
