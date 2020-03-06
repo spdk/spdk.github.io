@@ -181,9 +181,6 @@ Typedefs</h2></td></tr>
 <tr class="memitem:aa999ebee65c92711a5dce79d06cf81c2"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#aa999ebee65c92711a5dce79d06cf81c2">new_qpair_fn</a>) (struct <a class="el" href="structspdk__nvmf__qpair.html">spdk_nvmf_qpair</a> *qpair, void *cb_arg)</td></tr>
 <tr class="memdesc:aa999ebee65c92711a5dce79d06cf81c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to be called for each newly discovered qpair.  <a href="#aa999ebee65c92711a5dce79d06cf81c2">More...</a><br /></td></tr>
 <tr class="separator:aa999ebee65c92711a5dce79d06cf81c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a854e30bf69f07bb06b2cbcdd08ca7eba"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#a854e30bf69f07bb06b2cbcdd08ca7eba">spdk_nvmf_tgt_listen_done_fn</a>) (void *ctx, int status)</td></tr>
-<tr class="memdesc:a854e30bf69f07bb06b2cbcdd08ca7eba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to be called once the target is listening.  <a href="#a854e30bf69f07bb06b2cbcdd08ca7eba">More...</a><br /></td></tr>
-<tr class="separator:a854e30bf69f07bb06b2cbcdd08ca7eba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a26c5ae0565e487633e00cdd8819d2d00"><td class="memItemLeft" align="right" valign="top"><a id="a26c5ae0565e487633e00cdd8819d2d00"></a>
 typedef void()&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvmf_tgt_destroy_done_fn</b>(void *ctx, int status)</td></tr>
 <tr class="separator:a26c5ae0565e487633e00cdd8819d2d00"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -220,9 +217,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a2aad508811686a6d16f3bfd221ba99a9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#a2aad508811686a6d16f3bfd221ba99a9">spdk_nvmf_tgt_write_config_json</a> (struct spdk_json_write_ctx *w, struct spdk_nvmf_tgt *tgt)</td></tr>
 <tr class="memdesc:a2aad508811686a6d16f3bfd221ba99a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write NVMe-oF target configuration into provided JSON context.  <a href="#a2aad508811686a6d16f3bfd221ba99a9">More...</a><br /></td></tr>
 <tr class="separator:a2aad508811686a6d16f3bfd221ba99a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2c31e57f4634daadf4238bf213a989d6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#a2c31e57f4634daadf4238bf213a989d6">spdk_nvmf_tgt_listen</a> (struct spdk_nvmf_tgt *tgt, struct <a class="el" href="structspdk__nvme__transport__id.html">spdk_nvme_transport_id</a> *trid, <a class="el" href="nvmf_8h.html#a854e30bf69f07bb06b2cbcdd08ca7eba">spdk_nvmf_tgt_listen_done_fn</a> cb_fn, void *cb_arg)</td></tr>
-<tr class="memdesc:a2c31e57f4634daadf4238bf213a989d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Begin accepting new connections at the address provided.  <a href="#a2c31e57f4634daadf4238bf213a989d6">More...</a><br /></td></tr>
-<tr class="separator:a2c31e57f4634daadf4238bf213a989d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6b8416b526f4b1ee76abd82fe588c3b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#ac6b8416b526f4b1ee76abd82fe588c3b">spdk_nvmf_tgt_listen</a> (struct spdk_nvmf_tgt *tgt, struct <a class="el" href="structspdk__nvme__transport__id.html">spdk_nvme_transport_id</a> *trid)</td></tr>
+<tr class="memdesc:ac6b8416b526f4b1ee76abd82fe588c3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Begin accepting new connections at the address provided.  <a href="#ac6b8416b526f4b1ee76abd82fe588c3b">More...</a><br /></td></tr>
+<tr class="separator:ac6b8416b526f4b1ee76abd82fe588c3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac796e8f25381f344119ef0f44c2a017c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#ac796e8f25381f344119ef0f44c2a017c">spdk_nvmf_tgt_stop_listen</a> (struct spdk_nvmf_tgt *tgt, struct <a class="el" href="structspdk__nvme__transport__id.html">spdk_nvme_transport_id</a> *trid)</td></tr>
 <tr class="memdesc:ac796e8f25381f344119ef0f44c2a017c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stop accepting new connections at the provided address.  <a href="#ac796e8f25381f344119ef0f44c2a017c">More...</a><br /></td></tr>
 <tr class="separator:ac796e8f25381f344119ef0f44c2a017c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -412,9 +409,9 @@ Functions</h2></td></tr>
 <tr class="memitem:aac996bda413ddfc830c6f46aab4fd181"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#aac996bda413ddfc830c6f46aab4fd181">spdk_nvmf_tgt_add_transport</a> (struct spdk_nvmf_tgt *tgt, struct <a class="el" href="structspdk__nvmf__transport.html">spdk_nvmf_transport</a> *transport, <a class="el" href="nvmf_8h.html#a53086e85e4a7103ab2b714483b4f2aec">spdk_nvmf_tgt_add_transport_done_fn</a> cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:aac996bda413ddfc830c6f46aab4fd181"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a transport to a target.  <a href="#aac996bda413ddfc830c6f46aab4fd181">More...</a><br /></td></tr>
 <tr class="separator:aac996bda413ddfc830c6f46aab4fd181"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afa43090f9acc81ff2a5936c9cf783ef3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#afa43090f9acc81ff2a5936c9cf783ef3">spdk_nvmf_transport_listen</a> (struct <a class="el" href="structspdk__nvmf__transport.html">spdk_nvmf_transport</a> *transport, const struct <a class="el" href="structspdk__nvme__transport__id.html">spdk_nvme_transport_id</a> *trid, <a class="el" href="nvmf_8h.html#a854e30bf69f07bb06b2cbcdd08ca7eba">spdk_nvmf_tgt_listen_done_fn</a> cb_fn, void *cb_arg)</td></tr>
-<tr class="memdesc:afa43090f9acc81ff2a5936c9cf783ef3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add listener to transport and begin accepting new connections.  <a href="#afa43090f9acc81ff2a5936c9cf783ef3">More...</a><br /></td></tr>
-<tr class="separator:afa43090f9acc81ff2a5936c9cf783ef3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3f67fe201cedd887ed6ad35792ff5e7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#af3f67fe201cedd887ed6ad35792ff5e7">spdk_nvmf_transport_listen</a> (struct <a class="el" href="structspdk__nvmf__transport.html">spdk_nvmf_transport</a> *transport, const struct <a class="el" href="structspdk__nvme__transport__id.html">spdk_nvme_transport_id</a> *trid)</td></tr>
+<tr class="memdesc:af3f67fe201cedd887ed6ad35792ff5e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add listener to transport and begin accepting new connections.  <a href="#af3f67fe201cedd887ed6ad35792ff5e7">More...</a><br /></td></tr>
+<tr class="separator:af3f67fe201cedd887ed6ad35792ff5e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae261eff09a7b8e6d14d2710c169b17df"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#ae261eff09a7b8e6d14d2710c169b17df">spdk_nvmf_transport_stop_listen</a> (struct <a class="el" href="structspdk__nvmf__transport.html">spdk_nvmf_transport</a> *transport, const struct <a class="el" href="structspdk__nvme__transport__id.html">spdk_nvme_transport_id</a> *trid)</td></tr>
 <tr class="memdesc:ae261eff09a7b8e6d14d2710c169b17df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove listener from transport and stop accepting new connections.  <a href="#ae261eff09a7b8e6d14d2710c169b17df">More...</a><br /></td></tr>
 <tr class="separator:ae261eff09a7b8e6d14d2710c169b17df"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -497,29 +494,6 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">cb_arg</td><td>Callback argument passed to this function. </td></tr>
-    <tr><td class="paramname">status</td><td>0 if it completed successfully, or negative errno if it failed. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a854e30bf69f07bb06b2cbcdd08ca7eba"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a854e30bf69f07bb06b2cbcdd08ca7eba">&#9670;&nbsp;</a></span>spdk_nvmf_tgt_listen_done_fn</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef void(* spdk_nvmf_tgt_listen_done_fn) (void *ctx, int status)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Function to be called once the target is listening. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">ctx</td><td>Context argument passed to this function. </td></tr>
     <tr><td class="paramname">status</td><td>0 if it completed successfully, or negative errno if it failed. </td></tr>
   </table>
   </dd>
@@ -1268,7 +1242,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Accept new connections on the address provided. </p>
-<p>This does not start the listener. Use <a class="el" href="nvmf_8h.html#a2c31e57f4634daadf4238bf213a989d6" title="Begin accepting new connections at the address provided. ">spdk_nvmf_tgt_listen()</a> for that.</p>
+<p>This does not start the listener. Use <a class="el" href="nvmf_8h.html#ac6b8416b526f4b1ee76abd82fe588c3b" title="Begin accepting new connections at the address provided. ">spdk_nvmf_tgt_listen()</a> for that.</p>
 <p>May only be performed on subsystems in the PAUSED or INACTIVE states.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -2750,14 +2724,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a2c31e57f4634daadf4238bf213a989d6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2c31e57f4634daadf4238bf213a989d6">&#9670;&nbsp;</a></span>spdk_nvmf_tgt_listen()</h2>
+<a id="ac6b8416b526f4b1ee76abd82fe588c3b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac6b8416b526f4b1ee76abd82fe588c3b">&#9670;&nbsp;</a></span>spdk_nvmf_tgt_listen()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void spdk_nvmf_tgt_listen </td>
+          <td class="memname">int spdk_nvmf_tgt_listen </td>
           <td>(</td>
           <td class="paramtype">struct spdk_nvmf_tgt *&#160;</td>
           <td class="paramname"><em>tgt</em>, </td>
@@ -2766,19 +2740,7 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">struct <a class="el" href="structspdk__nvme__transport__id.html">spdk_nvme_transport_id</a> *&#160;</td>
-          <td class="paramname"><em>trid</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="nvmf_8h.html#a854e30bf69f07bb06b2cbcdd08ca7eba">spdk_nvmf_tgt_listen_done_fn</a>&#160;</td>
-          <td class="paramname"><em>cb_fn</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>cb_arg</em>&#160;</td>
+          <td class="paramname"><em>trid</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -2793,13 +2755,11 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">tgt</td><td>The target associated with this listen address. </td></tr>
-    <tr><td class="paramname">trid</td><td>The address to listen at. </td></tr>
-    <tr><td class="paramname">cb_fn</td><td>A callback that will be called once the target is listening </td></tr>
-    <tr><td class="paramname">cb_arg</td><td>A context argument passed to cb_fn.</td></tr>
+    <tr><td class="paramname">trid</td><td>The address to listen at.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>void. The callback status argument will be 0 on success or a negated errno on failure. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success or a negated errno on failure. </dd></dl>
 
 </div>
 </div>
@@ -2830,7 +2790,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Stop accepting new connections at the provided address. </p>
-<p>This is a counterpart to <a class="el" href="nvmf_8h.html#a2c31e57f4634daadf4238bf213a989d6" title="Begin accepting new connections at the address provided. ">spdk_nvmf_tgt_listen()</a>.</p>
+<p>This is a counterpart to <a class="el" href="nvmf_8h.html#ac6b8416b526f4b1ee76abd82fe588c3b" title="Begin accepting new connections at the address provided. ">spdk_nvmf_tgt_listen()</a>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">tgt</td><td>The target associated with the listen address. </td></tr>
@@ -3035,8 +2995,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="afa43090f9acc81ff2a5936c9cf783ef3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afa43090f9acc81ff2a5936c9cf783ef3">&#9670;&nbsp;</a></span>spdk_nvmf_transport_listen()</h2>
+<a id="af3f67fe201cedd887ed6ad35792ff5e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af3f67fe201cedd887ed6ad35792ff5e7">&#9670;&nbsp;</a></span>spdk_nvmf_transport_listen()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3051,19 +3011,7 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const struct <a class="el" href="structspdk__nvme__transport__id.html">spdk_nvme_transport_id</a> *&#160;</td>
-          <td class="paramname"><em>trid</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="nvmf_8h.html#a854e30bf69f07bb06b2cbcdd08ca7eba">spdk_nvmf_tgt_listen_done_fn</a>&#160;</td>
-          <td class="paramname"><em>cb_fn</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>cb_arg</em>&#160;</td>
+          <td class="paramname"><em>trid</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -3077,9 +3025,7 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">transport</td><td>The transport to add listener to </td></tr>
-    <tr><td class="paramname">trid</td><td>Address to listen at </td></tr>
-    <tr><td class="paramname">cb_fn</td><td>A callback that will be called once the listener is created </td></tr>
-    <tr><td class="paramname">cb_arg</td><td>A context argument passed to cb_fn.</td></tr>
+    <tr><td class="paramname">trid</td><td>Address to listen at</td></tr>
   </table>
   </dd>
 </dl>

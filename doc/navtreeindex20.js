@@ -1,5 +1,6 @@
 var NAVTREEINDEX20 =
 {
+"structspdk__nvmf__qpair.html#a088e32a2258aaba2781f42bdb63d74f3":[12,0,222,0],
 "structspdk__nvmf__qpair.html#a0e2e7f8b9bb90bf1d0b0ed9e197cd290":[12,0,222,7],
 "structspdk__nvmf__qpair.html#a2fd38a526e3d5d07cde1b52cf5fda6d8":[12,0,222,3],
 "structspdk__nvmf__qpair.html#a419c7cb5490055b0eeaca52aeb1baea7":[12,0,222,1],
@@ -88,12 +89,12 @@ var NAVTREEINDEX20 =
 "structspdk__nvmf__transport__ops.html#a26d773cfb4178b54b60a4e4212815f16":[12,0,233,5],
 "structspdk__nvmf__transport__ops.html#a2ed87a42a2882535b1833fcc3785ca95":[12,0,233,6],
 "structspdk__nvmf__transport__ops.html#a36202727719ed813d03da75bc70e4868":[12,0,233,20],
+"structspdk__nvmf__transport__ops.html#a434205e227615c534b70df154eeeaf33":[12,0,233,4],
 "structspdk__nvmf__transport__ops.html#a458ca8aa8ed3d70fc4cb9687ef8d9a0b":[12,0,233,18],
 "structspdk__nvmf__transport__ops.html#a5ef93b45156117554b4707487229e157":[12,0,233,13],
 "structspdk__nvmf__transport__ops.html#a78af963ea1a308f972fccc7d16c9c1a5":[12,0,233,8],
 "structspdk__nvmf__transport__ops.html#a79190a46c19b7d92d8929a7470afeb94":[12,0,233,21],
 "structspdk__nvmf__transport__ops.html#a9ac9bcd6d458f709884dd8168b382496":[12,0,233,0],
-"structspdk__nvmf__transport__ops.html#a9b22c86aeea13d3b7ca7f29ee8dce100":[12,0,233,4],
 "structspdk__nvmf__transport__ops.html#ac029bafb3ebbfb3466ad803229dd2c75":[12,0,233,12],
 "structspdk__nvmf__transport__ops.html#ac32c0c33dd13799e4bbc730325da2bc8":[12,0,233,10],
 "structspdk__nvmf__transport__ops.html#acf56627c91b208e3531b0d2ecbde3405":[12,0,233,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX20 =
 "structspdk__opal__info.html#a870133049bf3a81233d78156a8f1cc27":[12,0,246,34],
 "structspdk__opal__info.html#a94df3f3f2669604ba5b324f51de62098":[12,0,246,17],
 "structspdk__opal__info.html#a993b6fc34041fc3b0a523362f1492b9e":[12,0,246,12],
-"structspdk__opal__info.html#aa2a6a4264f88ec9e2a987a99064cf591":[12,0,246,27],
-"structspdk__opal__info.html#aa97d689a52541dc70a54411449ba2641":[12,0,246,16]
+"structspdk__opal__info.html#aa2a6a4264f88ec9e2a987a99064cf591":[12,0,246,27]
 };

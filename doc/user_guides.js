@@ -127,7 +127,8 @@ var user_guides =
         [ "framework_get_config", "jsonrpc.html#rpc_framework_get_config", null ],
         [ "framework_get_reactors", "jsonrpc.html#rpc_framework_get_reactors", null ],
         [ "thread_get_stats", "jsonrpc.html#rpc_thread_get_stats", null ],
-        [ "thread_set_cpumask", "jsonrpc.html#rpc_thread_set_cpumask", null ]
+        [ "thread_set_cpumask", "jsonrpc.html#rpc_thread_set_cpumask", null ],
+        [ "thread_get_pollers", "jsonrpc.html#rpc_thread_get_pollers", null ]
       ] ],
       [ "Block Device Abstraction Layer", "jsonrpc.html#jsonrpc_components_bdev", [
         [ "bdev_set_options", "jsonrpc.html#rpc_bdev_set_options", null ],
