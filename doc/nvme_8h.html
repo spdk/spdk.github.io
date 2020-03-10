@@ -634,6 +634,9 @@ Functions</h2></td></tr>
 <tr class="memitem:af071b3e57e51005c4e2b877eeda58b4b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#af071b3e57e51005c4e2b877eeda58b4b">spdk_nvme_cuse_unregister</a> (struct spdk_nvme_ctrlr *ctrlr)</td></tr>
 <tr class="memdesc:af071b3e57e51005c4e2b877eeda58b4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove a previously created character device (Experimental)  <a href="#af071b3e57e51005c4e2b877eeda58b4b">More...</a><br /></td></tr>
 <tr class="separator:af071b3e57e51005c4e2b877eeda58b4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59cf9ac4711064c37d22e1f736f1b0bb"><td class="memItemLeft" align="right" valign="top"><a id="a59cf9ac4711064c37d22e1f736f1b0bb"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_map_prps</b> (void *prv, struct <a class="el" href="structspdk__nvme__cmd.html">spdk_nvme_cmd</a> *cmd, struct iovec *iovs, uint32_t len, size_t mps, void *(*gpa_to_vva)(void *prv, uint64_t addr, uint64_t len))</td></tr>
+<tr class="separator:a59cf9ac4711064c37d22e1f736f1b0bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6e4165e918b05158286f5984a136acbf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a6e4165e918b05158286f5984a136acbf">spdk_nvme_transport_register</a> (const struct <a class="el" href="structspdk__nvme__transport__ops.html">spdk_nvme_transport_ops</a> *ops)</td></tr>
 <tr class="memdesc:a6e4165e918b05158286f5984a136acbf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register the operations for a given transport type.  <a href="#a6e4165e918b05158286f5984a136acbf">More...</a><br /></td></tr>
 <tr class="separator:a6e4165e918b05158286f5984a136acbf"><td class="memSeparator" colspan="2">&#160;</td></tr>

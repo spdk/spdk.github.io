@@ -155,6 +155,7 @@ v20.04: (Upcoming Release)</h1>
 <p>A new function, <code>spdk_vmd_fini</code>, has been added. It releases all resources acquired by the VMD library through the <code>spdk_vmd_init</code> call.</p>
 <h2>Miscellaneous</h2>
 <p><code>--json-ignore-init-errors</code> command line param has been added to ignore initialization errors on JSON config load.</p>
+<p>The public header file io_channel.h has been removed. Please use <a class="el" href="thread_8h.html" title="Thread. ">thread.h</a> which has the exact same API.</p>
 <h2>crypto</h2>
 <p>Support for AES_XTS was added for the QAT polled mode driver (pmd). The create RPC <code>bdev_crypto_create</code> has 2 new optional parameters: cipher and key2. Cipher can be either AES_CBC (default) or AES_XTS. AES_XTS isonly valid when using the QAT polled mode driver. The key2 parameter is the second key required for AES_XTS.</p>
 <h1>v20.01</h1>
@@ -650,7 +651,7 @@ v20.04: (Upcoming Release)</h1>
 <p>The DPDK submodule has been rebased on the DPDK 18.05 release. DPDK 18.05 supports dynamic memory allocation, but due to some issues found after the DPDK 18.05 release, that support is not enabled for SPDK 18.07. Therefore, SPDK 18.07 will continue to use the legacy memory allocation model. The plan is to enable dynamic memory allocation after the DPDK 18.08 release which should fix these issues.</p>
 <h2>Environment Abstraction Layer and Event Framework</h2>
 <p>The <a class="el" href="env_8h.html#a99549dc9905683f1dea50ff79d0c5651" title="Look up the translation of a virtual address in a memory map. ">spdk_mem_map_translate()</a> function now takes a size parameter to indicate the size of the memory region. This can be used by environment implementations to validate the requested translation.</p>
-<p>The I/O Channel implementation has been moved to its own library - lib/thread. The public API that was previously in <a class="el" href="io__channel_8h.html" title="IO channel. ">spdk/io_channel.h</a> is now in <a class="el" href="thread_8h.html" title="Thread. ">spdk/thread.h</a> The file <a class="el" href="io__channel_8h.html" title="IO channel. ">spdk/io_channel.h</a> remains and includes <a class="el" href="thread_8h.html" title="Thread. ">spdk/thread.h</a>.</p>
+<p>The I/O Channel implementation has been moved to its own library - lib/thread. The public API that was previously in spdk/io_channel.h is now in <a class="el" href="thread_8h.html" title="Thread. ">spdk/thread.h</a> The file spdk/io_channel.h remains and includes <a class="el" href="thread_8h.html" title="Thread. ">spdk/thread.h</a>.</p>
 <p>spdk_reactor_get_tsc_stats was added to return interesting statistics for each reactor.</p>
 <h2>IOAT</h2>
 <p>IOAT for copy engine is disabled by default. It can be enabled by specifying the Enable option with "Yes" in <code>[Ioat]</code> section of the configuration file. The Disable option is now deprecated and will be removed in a future release.</p>
@@ -722,10 +723,10 @@ v18.01: Blobstore Thin Provisioning</h1>
 <h2>RPC</h2>
 <p>A JSON RPC listener is now enabled by default using a UNIX domain socket at /var/run/spdk.sock. A -r option command line option has been added to enable an alternative UNIX domain socket location, or a TCP port in the format ip_addr:tcp_port (i.e. 127.0.0.1:5260). The Rpc configuration file section is now deprecated and will be removed in the v18.04 release.</p>
 <h2>I/O Channels</h2>
-<p><a class="el" href="thread_8h.html#a6b3e883ddce01ae8d93541304d1e9126" title="Register a poller on the current thread. ">spdk_poller_register()</a> and <a class="el" href="thread_8h.html#a9c26cbd781063f5ee627d6aba2c73fe3" title="Unregister a poller on the current thread. ">spdk_poller_unregister()</a> were moved from the event framework (<a class="el" href="event_8h.html" title="Event framework public API. ">include/spdk/event.h</a>) to the I/O channel library (<a class="el" href="io__channel_8h.html" title="IO channel. ">include/spdk/io_channel.h</a>). This allows code that doesn't depend on the event framework to request registration and unregistration of pollers.</p>
+<p><a class="el" href="thread_8h.html#a6b3e883ddce01ae8d93541304d1e9126" title="Register a poller on the current thread. ">spdk_poller_register()</a> and <a class="el" href="thread_8h.html#a9c26cbd781063f5ee627d6aba2c73fe3" title="Unregister a poller on the current thread. ">spdk_poller_unregister()</a> were moved from the event framework (<a class="el" href="event_8h.html" title="Event framework public API. ">include/spdk/event.h</a>) to the I/O channel library (include/spdk/io_channel.h). This allows code that doesn't depend on the event framework to request registration and unregistration of pollers.</p>
 <p><a class="el" href="thread_8h.html#aa7a2ca9bd0497544e852c65fd5263cd1" title="Call &#39;fn&#39; on each channel associated with io_device. ">spdk_for_each_channel()</a> now allows asynchronous operations during iteration. Instead of immediately continuing the interation upon returning from the iteration callback, the user must call <a class="el" href="thread_8h.html#a4e87fc8c0fc870769c068a2752cdc359" title="Helper function to iterate all channels for spdk_for_each_channel(). ">spdk_for_each_channel_continue()</a> to resume iteration.</p>
 <h2>Block Device Abstraction Layer (bdev)</h2>
-<p>The poller abstraction was removed from the bdev layer. There is now a general purpose abstraction for pollers available in <a class="el" href="io__channel_8h.html" title="IO channel. ">include/spdk/io_channel.h</a></p>
+<p>The poller abstraction was removed from the bdev layer. There is now a general purpose abstraction for pollers available in include/spdk/io_channel.h</p>
 <h2>Lib</h2>
 <p>A set of changes were made in the SPDK's lib code altering, instances of calls to <code>exit()</code> and <code>abort()</code> to return a failure instead wherever reasonably possible. This has resulted in return type changes of the API for:</p>
 <ul>

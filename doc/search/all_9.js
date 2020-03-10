@@ -6,7 +6,6 @@ var searchData=
   ['in_5fsubmit_5frequest',['in_submit_request',['../structspdk__bdev__io_1_1____bdev__io__internal__fields.html#a79f4b610c4db721dbe99f5698d1886f6',1,'spdk_bdev_io::__bdev_io_internal_fields']]],
   ['init_5fcomplete',['init_complete',['../structspdk__bdev__module.html#af0eb0fbec1bdc7813911e981357e89a8',1,'spdk_bdev_module']]],
   ['introduction',['Introduction',['../intro.html',1,'']]],
-  ['io_5fchannel_2eh',['io_channel.h',['../io__channel_8h.html',1,'']]],
   ['io_5fcmds_5fsupported',['io_cmds_supported',['../structspdk__nvme__cmds__and__effect__log__page.html#ad66203d89e455d298ed3b1cb2c428d57',1,'spdk_nvme_cmds_and_effect_log_page']]],
   ['io_5fqueue_5frequests',['io_queue_requests',['../structspdk__nvme__ctrlr__opts.html#a552e09920f8e8a21243dee31ab05f581',1,'spdk_nvme_ctrlr_opts::io_queue_requests()'],['../structspdk__nvme__io__qpair__opts.html#a4af594ef7f8b7e590662633c926146b4',1,'spdk_nvme_io_qpair_opts::io_queue_requests()']]],
   ['io_5fqueue_5fsize',['io_queue_size',['../structspdk__nvme__ctrlr__opts.html#a1c91126df78ac91d651dfcdc5236332b',1,'spdk_nvme_ctrlr_opts::io_queue_size()'],['../structspdk__nvme__io__qpair__opts.html#adbb8aa3f64bc021ea5e9fddec6796341',1,'spdk_nvme_io_qpair_opts::io_queue_size()']]],
