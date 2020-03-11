@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="Content-Type" content="text/xhtml; charset=utf-8">
   <meta name="generator" content="Doxygen 1.8.14">
-  <title>SPDK: spdk_d0_tper_features Struct Reference</title>
+  <title>SPDK: spdk_opal_d0_locking_feat Struct Reference</title>
   <script type="text/javascript" src="jquery.js"></script>
   <script type="text/javascript" src="dynsections.js"></script>
   <script type="text/javascript" src="two.min.js"></script>
@@ -122,7 +122,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-$(document).ready(function(){initNavTree('structspdk__d0__tper__features.html','');});
+$(document).ready(function(){initNavTree('structspdk__opal__d0__locking__feat.html','');});
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -144,57 +144,56 @@ $(document).ready(function(){initNavTree('structspdk__d0__tper__features.html','
   <div class="summary">
 <a href="#pub-attribs">Data Fields</a>  </div>
   <div class="headertitle">
-<div class="title">spdk_d0_tper_features Struct Reference</div>  </div>
+<div class="title">spdk_opal_d0_locking_feat Struct Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+<div class="dynheader">
+Collaboration diagram for spdk_opal_d0_locking_feat:</div>
+<div class="dyncontent">
+<div class="center"><img src="structspdk__opal__d0__locking__feat__coll__graph.png" border="0" usemap="#spdk__opal__d0__locking__feat_coll__map" alt="Collaboration graph"/></div>
+<map name="spdk__opal__d0__locking__feat_coll__map" id="spdk__opal__d0__locking__feat_coll__map">
+<area shape="rect" id="node2" href="structspdk__opal__d0__feat__hdr.html" title="spdk_opal_d0_feat_hdr" alt="" coords="19,5,191,32"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:a3c949916f1d51ea14bc32b9485e69aa2"><td class="memItemLeft" align="right" valign="top"><a id="a3c949916f1d51ea14bc32b9485e69aa2"></a>
-uint16_t&#160;</td><td class="memItemRight" valign="bottom"><b>feature_code</b></td></tr>
-<tr class="separator:a3c949916f1d51ea14bc32b9485e69aa2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1419287c2aec3d15bcf79b6cb741836c"><td class="memItemLeft" align="right" valign="top"><a id="a1419287c2aec3d15bcf79b6cb741836c"></a>
-uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>reserved_0</b>: 4</td></tr>
-<tr class="separator:a1419287c2aec3d15bcf79b6cb741836c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab8a3fc52013be236040cce11260ac595"><td class="memItemLeft" align="right" valign="top"><a id="ab8a3fc52013be236040cce11260ac595"></a>
-uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>version</b>: 4</td></tr>
-<tr class="separator:ab8a3fc52013be236040cce11260ac595"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a106c8e829bfb16795b91cb9e3334b24c"><td class="memItemLeft" align="right" valign="top"><a id="a106c8e829bfb16795b91cb9e3334b24c"></a>
-uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>length</b></td></tr>
-<tr class="separator:a106c8e829bfb16795b91cb9e3334b24c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a74e368e9d8e1f55366de5e007899f925"><td class="memItemLeft" align="right" valign="top"><a id="a74e368e9d8e1f55366de5e007899f925"></a>
-uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>sync</b>: 1</td></tr>
-<tr class="separator:a74e368e9d8e1f55366de5e007899f925"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8754d79601d5f5f4e5644c1397d05f45"><td class="memItemLeft" align="right" valign="top"><a id="a8754d79601d5f5f4e5644c1397d05f45"></a>
-uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>async</b>: 1</td></tr>
-<tr class="separator:a8754d79601d5f5f4e5644c1397d05f45"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aad0ed173000587a9dfc8fe0c3625d6ae"><td class="memItemLeft" align="right" valign="top"><a id="aad0ed173000587a9dfc8fe0c3625d6ae"></a>
-uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>acknack</b>: 1</td></tr>
-<tr class="separator:aad0ed173000587a9dfc8fe0c3625d6ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a99c5b89526dcd84504c051e9710e9bdd"><td class="memItemLeft" align="right" valign="top"><a id="a99c5b89526dcd84504c051e9710e9bdd"></a>
-uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>buffer_management</b>: 1</td></tr>
-<tr class="separator:a99c5b89526dcd84504c051e9710e9bdd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4b2b07f52d89d1afbc79f80cfdd651d3"><td class="memItemLeft" align="right" valign="top"><a id="a4b2b07f52d89d1afbc79f80cfdd651d3"></a>
-uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>streaming</b>: 1</td></tr>
-<tr class="separator:a4b2b07f52d89d1afbc79f80cfdd651d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae78c0bd713184683becad9ed83f2d66d"><td class="memItemLeft" align="right" valign="top"><a id="ae78c0bd713184683becad9ed83f2d66d"></a>
+<tr class="memitem:af2fd2a50817b8e0213155d0d86d19756"><td class="memItemLeft" align="right" valign="top"><a id="af2fd2a50817b8e0213155d0d86d19756"></a>
+struct <a class="el" href="structspdk__opal__d0__feat__hdr.html">spdk_opal_d0_feat_hdr</a>&#160;</td><td class="memItemRight" valign="bottom"><b>hdr</b></td></tr>
+<tr class="separator:af2fd2a50817b8e0213155d0d86d19756"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4be0c8990adcbb5cffa9387917a5758b"><td class="memItemLeft" align="right" valign="top"><a id="a4be0c8990adcbb5cffa9387917a5758b"></a>
+uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>locking_supported</b>: 1</td></tr>
+<tr class="separator:a4be0c8990adcbb5cffa9387917a5758b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a420975a18375bd4019b9dde42eda0b"><td class="memItemLeft" align="right" valign="top"><a id="a6a420975a18375bd4019b9dde42eda0b"></a>
+uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>locking_enabled</b>: 1</td></tr>
+<tr class="separator:a6a420975a18375bd4019b9dde42eda0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6c75e6cc584770b1cbc9648e8f33ed3"><td class="memItemLeft" align="right" valign="top"><a id="aa6c75e6cc584770b1cbc9648e8f33ed3"></a>
+uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>locked</b>: 1</td></tr>
+<tr class="separator:aa6c75e6cc584770b1cbc9648e8f33ed3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adfd1ba7ea6dab2ddb3a7b7ea362b59de"><td class="memItemLeft" align="right" valign="top"><a id="adfd1ba7ea6dab2ddb3a7b7ea362b59de"></a>
+uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>media_encryption</b>: 1</td></tr>
+<tr class="separator:adfd1ba7ea6dab2ddb3a7b7ea362b59de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae54770a56102d3ff5efec234b904b28"><td class="memItemLeft" align="right" valign="top"><a id="aae54770a56102d3ff5efec234b904b28"></a>
+uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>mbr_enabled</b>: 1</td></tr>
+<tr class="separator:aae54770a56102d3ff5efec234b904b28"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c336885e3f16d33590c64f9479e59ad"><td class="memItemLeft" align="right" valign="top"><a id="a0c336885e3f16d33590c64f9479e59ad"></a>
+uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>mbr_done</b>: 1</td></tr>
+<tr class="separator:a0c336885e3f16d33590c64f9479e59ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95ba242b1129032ffd2eb6de6d0868bd"><td class="memItemLeft" align="right" valign="top"><a id="a95ba242b1129032ffd2eb6de6d0868bd"></a>
 uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>reserved_1</b>: 1</td></tr>
-<tr class="separator:ae78c0bd713184683becad9ed83f2d66d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a65819f6d13620306bfa35f3b06c8e2ea"><td class="memItemLeft" align="right" valign="top"><a id="a65819f6d13620306bfa35f3b06c8e2ea"></a>
-uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>comid_management</b>: 1</td></tr>
-<tr class="separator:a65819f6d13620306bfa35f3b06c8e2ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7bf59537ac5678009520c54d08da6de8"><td class="memItemLeft" align="right" valign="top"><a id="a7bf59537ac5678009520c54d08da6de8"></a>
+<tr class="separator:a95ba242b1129032ffd2eb6de6d0868bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe72b552924893d7031c0855ebe7569a"><td class="memItemLeft" align="right" valign="top"><a id="afe72b552924893d7031c0855ebe7569a"></a>
 uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>reserved_2</b>: 1</td></tr>
-<tr class="separator:a7bf59537ac5678009520c54d08da6de8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0bc8da829aac36711a6696338048d2fa"><td class="memItemLeft" align="right" valign="top"><a id="a0bc8da829aac36711a6696338048d2fa"></a>
+<tr class="separator:afe72b552924893d7031c0855ebe7569a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89a4fb9b933a08b2a41f31a9426ac09d"><td class="memItemLeft" align="right" valign="top"><a id="a89a4fb9b933a08b2a41f31a9426ac09d"></a>
 uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>reserved_3</b> [3]</td></tr>
-<tr class="separator:a0bc8da829aac36711a6696338048d2fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af1dbdb236708c6b279810c6cf754d09e"><td class="memItemLeft" align="right" valign="top"><a id="af1dbdb236708c6b279810c6cf754d09e"></a>
+<tr class="separator:a89a4fb9b933a08b2a41f31a9426ac09d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a005e6cf8090730a1c3732541c6dfc529"><td class="memItemLeft" align="right" valign="top"><a id="a005e6cf8090730a1c3732541c6dfc529"></a>
 uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>reserved_4</b></td></tr>
-<tr class="separator:af1dbdb236708c6b279810c6cf754d09e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a90da6bf5a2ab7cb539e6367fcaec119f"><td class="memItemLeft" align="right" valign="top"><a id="a90da6bf5a2ab7cb539e6367fcaec119f"></a>
+<tr class="separator:a005e6cf8090730a1c3732541c6dfc529"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8bf99a9540f8dd2980d998300df8a4c6"><td class="memItemLeft" align="right" valign="top"><a id="a8bf99a9540f8dd2980d998300df8a4c6"></a>
 uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>reserved_5</b></td></tr>
-<tr class="separator:a90da6bf5a2ab7cb539e6367fcaec119f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a8bf99a9540f8dd2980d998300df8a4c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li>opal_spec.h</li>
