@@ -84,14 +84,14 @@ var NAVTREEINDEX =
 "structspdk__bdev__media__event.html#ad626f4fa126283d121eb4194f0fcaed9",
 "structspdk__ioat__generic__hw__desc.html#a16c24646428a74fca92cd4485a076445",
 "structspdk__nvme__ctrlr__data.html#a2d0e6792956b8ec94cf0217c0b17cb03",
-"structspdk__nvme__intel__smart__information__page.html",
-"structspdk__nvme__sgl__descriptor.html#a7e4d752dac52bdfbdeb3654ac2b7d670",
-"structspdk__nvmf__fabric__prop__set__cmd.html#a64e6eeb0b5a8979dd420242f469e5783",
-"structspdk__nvmf__transport__ops.html#ac029bafb3ebbfb3466ad803229dd2c75",
-"structspdk__pci__device.html#af7d6a15271c10ae097804f1a0a8007b4",
-"structspdk__trace__owner.html#ae1ff4de93399884bcd351861dff118f0",
-"unionspdk__nvme__cmd__cdw10.html#a853c258067093fc61cd390c8982eb1b6",
-"uuid_8h.html"
+"structspdk__nvme__intel__smart__attribute.html#a93b8a8291c6f9be4c633499bf1d5d7c5",
+"structspdk__nvme__sgl__descriptor.html#a4c95708745878215a7349524ef5d561a",
+"structspdk__nvmf__fabric__prop__set__cmd.html#a63814e0a30033af8aeb80ebdd7e93d05",
+"structspdk__nvmf__transport__ops.html#aa9af1fecfc0f12012902ec0106b498b9",
+"structspdk__pci__device.html#ae8f0f4ca43fa4eaec8a60d1e57848a74",
+"structspdk__trace__owner.html#a2133648f6a0da49b9880547ed7ad7c81",
+"unionspdk__nvme__cmd__cdw10.html#a78e368a569df77f727c04f8001d8c622",
+"util_8h.html#afb0c0f2282517becd79ba3f60768b6c4"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

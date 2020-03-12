@@ -11,6 +11,7 @@ var searchData=
   ['actual',['actual',['../structspdk__dif__error.html#a99e10c98889d74c9dedd9a5b4c2be836',1,'spdk_dif_error']]],
   ['acwu',['acwu',['../structspdk__bdev.html#ab10f57ea24409424fd71a3b53d6fe31e',1,'spdk_bdev::acwu()'],['../structspdk__nvme__ctrlr__data.html#aa4a9189b9c5616ab345b02540277782c',1,'spdk_nvme_ctrlr_data::acwu()']]],
   ['admin_5fcmds_5fsupported',['admin_cmds_supported',['../structspdk__nvme__cmds__and__effect__log__page.html#a8e4e4d1032629199462b5affa2d7c440',1,'spdk_nvme_cmds_and_effect_log_page']]],
+  ['admin_5fqueue_5fsize',['admin_queue_size',['../structspdk__nvme__ctrlr__opts.html#ad508875fdb8f634aa15fbdcb5e60d391',1,'spdk_nvme_ctrlr_opts']]],
   ['admin_5ftimeout_5fms',['admin_timeout_ms',['../structspdk__nvme__ctrlr__opts.html#afba53e83e949e751ab895765f32a9486',1,'spdk_nvme_ctrlr_opts']]],
   ['adrfam',['adrfam',['../structspdk__nvme__transport__id.html#aad0be45ed276ef7c88b93a22b23e72ae',1,'spdk_nvme_transport_id::adrfam()'],['../structspdk__nvmf__discovery__log__page__entry.html#adf9f35d61b31aa0199ae32ef638a3107',1,'spdk_nvmf_discovery_log_page_entry::adrfam()']]],
   ['aerl',['aerl',['../structspdk__nvme__ctrlr__data.html#a3d47479941d4eb691e54d4ac207cb048',1,'spdk_nvme_ctrlr_data']]],

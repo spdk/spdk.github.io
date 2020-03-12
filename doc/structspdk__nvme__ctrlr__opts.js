@@ -1,5 +1,6 @@
 var structspdk__nvme__ctrlr__opts =
 [
+    [ "admin_queue_size", "structspdk__nvme__ctrlr__opts.html#ad508875fdb8f634aa15fbdcb5e60d391", null ],
     [ "admin_timeout_ms", "structspdk__nvme__ctrlr__opts.html#afba53e83e949e751ab895765f32a9486", null ],
     [ "arb_mechanism", "structspdk__nvme__ctrlr__opts.html#a183d97c9bda86a9ca47442bcbc69c444", null ],
     [ "arbitration_burst", "structspdk__nvme__ctrlr__opts.html#a76dd1c766edd9572dfddf9584f0e4e48", null ],
