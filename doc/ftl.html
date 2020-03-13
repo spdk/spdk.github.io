@@ -170,11 +170,14 @@ band m   |   zone m     +--------+     zone m   +---- --- --- --- --- ---+     z
          +--------------+        +--------------+                        +--------------+
 
           parallel unit 1              pu 2                                    pu n
-</pre><p>The address map and valid map are, along with a several other things (e.g. UUID of the device it's part of, number of surfaced LBAs, band's sequence number, etc.), parts of the band's metadata. The metadata is split in two parts:</p>
-<ul>
+</pre><p>The address map and valid map are, along with a several other things (e.g. UUID of the device it's part of, number of surfaced LBAs, band's sequence number, etc.), parts of the band's metadata. The metadata is split in two parts: </p><pre class="fragment">   head metadata               band's data               tail metadata
++-------------------+-------------------------------+------------------------+
+|zone 1 |...|zone n |...|...|zone 1 |...|           | ... |zone  m-1 |zone  m|
+|block 1|   |block 1|   |   |block x|   |           |     |block y   |block y|
++-------------------+-------------+-----------------+------------------------+
+</pre><ul>
 <li>the head part, containing information already known when opening the band (device's UUID, band's sequence number, etc.), located at the beginning blocks of the band,</li>
-<li>the tail part, containing the address map and the valid map, located at the end of the band. <pre class="fragment">head metadata               band's data               tail metadata
-</pre> +----------------&mdash;+----------------------------&mdash;+---------------------&mdash;+ |zone 1 |...|zone n |...|...|zone 1 |...| | ... |zone m-1 |zone m| |block 1| |block 1| | |block x| | | |block y |block y| +----------------&mdash;+----------&mdash;+--------------&mdash;+---------------------&mdash;+</li>
+<li>the tail part, containing the address map and the valid map, located at the end of the band.</li>
 </ul>
 <p>Bands are written sequentially (in a way that was described earlier). Before a band can be written to, all of its zones need to be erased. During that time, the band is considered to be in a <code>PREP</code> state. After that is done, the band transitions to the <code>OPENING</code> state, in which head metadata is being written. Then the band moves to the <code>OPEN</code> state and actual user data can be written to the band. Once the whole available space is filled, tail metadata is written and the band transitions to <code>CLOSING</code> state. When that finishes the band becomes <code>CLOSED</code>.</p>
 <h2><a class="anchor" id="ftl_rwb"></a>
@@ -237,25 +240,7 @@ Configuring QEMU</h2>
 <ul>
 <li><code>serial</code> - serial number,</li>
 <li><code>lver</code> - version of the OCSSD standard (0 - disabled, 1 - "1.2", 2 - "2.0"), libftl only supports 2.0,</li>
-<li><code>lba_index</code> - default LBA format. Possible values (libftl only supports lba_index &gt;= 3): <table class="markdownTable">
-<tr class="markdownTableHead">
-<th class="markdownTableHeadNone">lba_index  </th><th class="markdownTableHeadNone">data  </th><th class="markdownTableHeadNone">metadata   </th></tr>
-<tr class="markdownTableBody" class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">0  </td><td class="markdownTableBodyNone">512B  </td><td class="markdownTableBodyNone">0B   </td></tr>
-<tr class="markdownTableBody" class="markdownTableRowEven">
-<td class="markdownTableBodyNone">1  </td><td class="markdownTableBodyNone">512B  </td><td class="markdownTableBodyNone">8B   </td></tr>
-<tr class="markdownTableBody" class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">2  </td><td class="markdownTableBodyNone">512B  </td><td class="markdownTableBodyNone">16B   </td></tr>
-<tr class="markdownTableBody" class="markdownTableRowEven">
-<td class="markdownTableBodyNone">3  </td><td class="markdownTableBodyNone">4096B  </td><td class="markdownTableBodyNone">0B   </td></tr>
-<tr class="markdownTableBody" class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">4  </td><td class="markdownTableBodyNone">4096B  </td><td class="markdownTableBodyNone">64B   </td></tr>
-<tr class="markdownTableBody" class="markdownTableRowEven">
-<td class="markdownTableBodyNone">5  </td><td class="markdownTableBodyNone">4096B  </td><td class="markdownTableBodyNone">128B   </td></tr>
-<tr class="markdownTableBody" class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">6  </td><td class="markdownTableBodyNone">4096B  </td><td class="markdownTableBodyNone">16B   </td></tr>
-</table>
-</li>
+<li><code>lba_index</code> - default LBA format. Possible values can be found in the table below (libftl only supports lba_index &gt;= 3):</li>
 <li><code>lnum_ch</code> - number of groups,</li>
 <li><code>lnum_lun</code> - number of parallel units</li>
 <li><code>lnum_pln</code> - number of planes (logical blocks from all planes constitute a chunk)</li>
@@ -263,7 +248,16 @@ Configuring QEMU</h2>
 <li><code>lsecs_per_pg</code> - number of sectors in a page</li>
 <li><code>lblks_per_pln</code> - number of chunks in a parallel unit</li>
 <li><code>laer_thread_sleep</code> - timeout in ms between asynchronous events requesting the host to relocate the data based on media feedback</li>
-<li><code>lmetadata</code> - metadata file</li>
+<li><code>lmetadata</code> - metadata file <pre class="fragment"> |lba_index| data| metadata|
+ |---------|-----|---------|
+ |    0    | 512B|    0B   |
+ |    1    | 512B|    8B   |
+ |    2    | 512B|   16B   |
+ |    3    |4096B|    0B   |
+ |    4    |4096B|   64B   |
+ |    5    |4096B|  128B   |
+ |    6    |4096B|   16B   |
+</pre></li>
 </ul>
 <p>For more detailed description of the available options, consult the <code>hw/block/nvme.c</code> file in the QEMU repository.</p>
 <p>Example:</p>
