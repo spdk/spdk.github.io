@@ -22,8 +22,7 @@ available for usage and development questions as well as design discussions.
 
 SPDK Community meetings are open to everyone and all are encouraged to
 participate. The primary purpose is to cover topics where verbal communication
-is more efficient than email or IRC. The meetings are hosted using
-[FreeConferenceCall](https://www.freeconferencecall.com).
+is more efficient than email or IRC. The meetings are hosted using Skype.
 
 There is a community meeting each week at alternating time slots selected so
 that one week is a Euro-friendly time and the following week is an
@@ -43,7 +42,7 @@ All meetings use the same conference information. It is shown below in a
 slightly distored image to help prevent bots from joining our calls. Adding
 a bookmark with the link below should make it easy to join weekly.
 
-![SPDK](../img/spdk_free.jpg "SPDK").
+![SPDK](../img/spdk_skype.jpg "SPDK").
 
 ## Next Euro-Friendly Community Meeting
 <div id="euro-mtg"></div>
