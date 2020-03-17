@@ -153,6 +153,8 @@ v20.04: (Upcoming Release)</h1>
 <p>The copy engine library, modules and public APIs have been renamed. Use of the word <code>copy</code> has been replaced with the word <code>accel</code> short for accelerator in preparation for adding new capabilities in the future. Additionally, APIs for what was previously called the <code>memcpy</code> engine have been renamed to identify the engine as a software accelerator.</p>
 <h2>vmd</h2>
 <p>A new function, <code>spdk_vmd_fini</code>, has been added. It releases all resources acquired by the VMD library through the <code>spdk_vmd_init</code> call.</p>
+<h2>nvmf</h2>
+<p><code><a class="el" href="nvmf_8h.html#a12a23b74ddfec6b8683b3a0afccba10d" title="Destroy a poll group. ">spdk_nvmf_poll_group_destroy()</a></code> is now asynchronous and accepts a completion callback.</p>
 <h2>Miscellaneous</h2>
 <p><code>--json-ignore-init-errors</code> command line param has been added to ignore initialization errors on JSON config load.</p>
 <p>The public header file io_channel.h has been removed. Please use <a class="el" href="thread_8h.html" title="Thread. ">thread.h</a> which has the exact same API.</p>

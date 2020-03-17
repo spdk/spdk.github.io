@@ -187,6 +187,9 @@ Typedefs</h2></td></tr>
 <tr class="memitem:a26c5ae0565e487633e00cdd8819d2d00"><td class="memItemLeft" align="right" valign="top"><a id="a26c5ae0565e487633e00cdd8819d2d00"></a>
 typedef void()&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvmf_tgt_destroy_done_fn</b>(void *ctx, int status)</td></tr>
 <tr class="separator:a26c5ae0565e487633e00cdd8819d2d00"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a00f59bb3a8fc493a6cf4c3e8744dab"><td class="memItemLeft" align="right" valign="top"><a id="a9a00f59bb3a8fc493a6cf4c3e8744dab"></a>
+typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvmf_poll_group_destroy_done_fn</b>) (void *cb_arg, int status)</td></tr>
+<tr class="separator:a9a00f59bb3a8fc493a6cf4c3e8744dab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abd02f30e6fcb57338c723ffd5c307f0d"><td class="memItemLeft" align="right" valign="top"><a id="abd02f30e6fcb57338c723ffd5c307f0d"></a>
 typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>nvmf_qpair_disconnect_cb</b>) (void *ctx)</td></tr>
 <tr class="separator:abd02f30e6fcb57338c723ffd5c307f0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -235,9 +238,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a744188acd6e709ed4bc3f7f98a2230f8"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structspdk__nvmf__poll__group.html">spdk_nvmf_poll_group</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#a744188acd6e709ed4bc3f7f98a2230f8">spdk_nvmf_get_optimal_poll_group</a> (struct <a class="el" href="structspdk__nvmf__qpair.html">spdk_nvmf_qpair</a> *qpair)</td></tr>
 <tr class="memdesc:a744188acd6e709ed4bc3f7f98a2230f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get optimal nvmf poll group for the qpair.  <a href="#a744188acd6e709ed4bc3f7f98a2230f8">More...</a><br /></td></tr>
 <tr class="separator:a744188acd6e709ed4bc3f7f98a2230f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa38d9ac50a79883df08d7faf3a647018"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#aa38d9ac50a79883df08d7faf3a647018">spdk_nvmf_poll_group_destroy</a> (struct <a class="el" href="structspdk__nvmf__poll__group.html">spdk_nvmf_poll_group</a> *group)</td></tr>
-<tr class="memdesc:aa38d9ac50a79883df08d7faf3a647018"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy a poll group.  <a href="#aa38d9ac50a79883df08d7faf3a647018">More...</a><br /></td></tr>
-<tr class="separator:aa38d9ac50a79883df08d7faf3a647018"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12a23b74ddfec6b8683b3a0afccba10d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#a12a23b74ddfec6b8683b3a0afccba10d">spdk_nvmf_poll_group_destroy</a> (struct <a class="el" href="structspdk__nvmf__poll__group.html">spdk_nvmf_poll_group</a> *group, spdk_nvmf_poll_group_destroy_done_fn cb_fn, void *cb_arg)</td></tr>
+<tr class="memdesc:a12a23b74ddfec6b8683b3a0afccba10d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy a poll group.  <a href="#a12a23b74ddfec6b8683b3a0afccba10d">More...</a><br /></td></tr>
+<tr class="separator:a12a23b74ddfec6b8683b3a0afccba10d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a37eea41a3c3856e0ea2cd383af20183d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#a37eea41a3c3856e0ea2cd383af20183d">spdk_nvmf_poll_group_add</a> (struct <a class="el" href="structspdk__nvmf__poll__group.html">spdk_nvmf_poll_group</a> *group, struct <a class="el" href="structspdk__nvmf__qpair.html">spdk_nvmf_qpair</a> *qpair)</td></tr>
 <tr class="memdesc:a37eea41a3c3856e0ea2cd383af20183d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add the given qpair to the poll group.  <a href="#a37eea41a3c3856e0ea2cd383af20183d">More...</a><br /></td></tr>
 <tr class="separator:a37eea41a3c3856e0ea2cd383af20183d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -941,8 +944,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="aa38d9ac50a79883df08d7faf3a647018"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa38d9ac50a79883df08d7faf3a647018">&#9670;&nbsp;</a></span>spdk_nvmf_poll_group_destroy()</h2>
+<a id="a12a23b74ddfec6b8683b3a0afccba10d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a12a23b74ddfec6b8683b3a0afccba10d">&#9670;&nbsp;</a></span>spdk_nvmf_poll_group_destroy()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -951,8 +954,24 @@ Functions</h2></td></tr>
           <td class="memname">void spdk_nvmf_poll_group_destroy </td>
           <td>(</td>
           <td class="paramtype">struct <a class="el" href="structspdk__nvmf__poll__group.html">spdk_nvmf_poll_group</a> *&#160;</td>
-          <td class="paramname"><em>group</em></td><td>)</td>
+          <td class="paramname"><em>group</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">spdk_nvmf_poll_group_destroy_done_fn&#160;</td>
+          <td class="paramname"><em>cb_fn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>cb_arg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -961,6 +980,8 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">group</td><td>The poll group to destroy. </td></tr>
+    <tr><td class="paramname">cb_fn</td><td>A callback that will be called once the poll group is destroyed. </td></tr>
+    <tr><td class="paramname">cb_arg</td><td>A context argument passed to cb_fn. </td></tr>
   </table>
   </dd>
 </dl>
