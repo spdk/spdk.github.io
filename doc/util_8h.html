@@ -187,6 +187,9 @@ Macros</h2></td></tr>
 <tr class="memitem:ac14f2b75522d72317def37370adffca1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8h.html#ac14f2b75522d72317def37370adffca1">SPDK_CLANG_ANALYZER_PREINIT_PTR_ARRAY</a>(arr,  arr_size,  buf_size)</td></tr>
 <tr class="memdesc:ac14f2b75522d72317def37370adffca1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Scan build is really pessimistic and assumes that mempool functions can dequeue NULL buffers even if they return success.  <a href="#ac14f2b75522d72317def37370adffca1">More...</a><br /></td></tr>
 <tr class="separator:ac14f2b75522d72317def37370adffca1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a744d1bf5de56a453f235c5eb58ec4d00"><td class="memItemLeft" align="right" valign="top"><a id="a744d1bf5de56a453f235c5eb58ec4d00"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_SN32_CMPMAX</b>&#160;&#160;&#160;(1U &lt;&lt; (32 - 1))</td></tr>
+<tr class="separator:a744d1bf5de56a453f235c5eb58ec4d00"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -212,6 +215,15 @@ static uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_divid
 <tr class="memitem:a4bf38bbd457a764604d5ba26ed3c8565"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8h.html#a4bf38bbd457a764604d5ba26ed3c8565">spdk_iovcpy</a> (struct iovec *siov, size_t siovcnt, struct iovec *diov, size_t diovcnt)</td></tr>
 <tr class="memdesc:a4bf38bbd457a764604d5ba26ed3c8565"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy the data described by the source iovec to the destination iovec.  <a href="#a4bf38bbd457a764604d5ba26ed3c8565">More...</a><br /></td></tr>
 <tr class="separator:a4bf38bbd457a764604d5ba26ed3c8565"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d8a81dd9f89050cdc2de023d10f1d31"><td class="memItemLeft" align="right" valign="top">static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8h.html#a9d8a81dd9f89050cdc2de023d10f1d31">spdk_sn32_add</a> (uint32_t s1, uint32_t s2)</td></tr>
+<tr class="memdesc:a9d8a81dd9f89050cdc2de023d10f1d31"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add two sequece numbers s1 and s2.  <a href="#a9d8a81dd9f89050cdc2de023d10f1d31">More...</a><br /></td></tr>
+<tr class="separator:a9d8a81dd9f89050cdc2de023d10f1d31"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a731ba4d3d89bf3d1c31c3e6481fc07b7"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8h.html#a731ba4d3d89bf3d1c31c3e6481fc07b7">spdk_sn32_lt</a> (uint32_t s1, uint32_t s2)</td></tr>
+<tr class="memdesc:a731ba4d3d89bf3d1c31c3e6481fc07b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compare if sequence number s1 is less than s2.  <a href="#a731ba4d3d89bf3d1c31c3e6481fc07b7">More...</a><br /></td></tr>
+<tr class="separator:a731ba4d3d89bf3d1c31c3e6481fc07b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d7841db36c180f3fcac21e2314e2ef2"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8h.html#a3d7841db36c180f3fcac21e2314e2ef2">spdk_sn32_gt</a> (uint32_t s1, uint32_t s2)</td></tr>
+<tr class="memdesc:a3d7841db36c180f3fcac21e2314e2ef2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compare if sequence number s1 is greater than s2.  <a href="#a3d7841db36c180f3fcac21e2314e2ef2">More...</a><br /></td></tr>
+<tr class="separator:a3d7841db36c180f3fcac21e2314e2ef2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>General utility functions. </p>
@@ -356,6 +368,144 @@ static uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_divid
 
 <p>Copy the data described by the source iovec to the destination iovec. </p>
 <dl class="section return"><dt>Returns</dt><dd>The number of bytes copied. </dd></dl>
+
+</div>
+</div>
+<a id="a9d8a81dd9f89050cdc2de023d10f1d31"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9d8a81dd9f89050cdc2de023d10f1d31">&#9670;&nbsp;</a></span>spdk_sn32_add()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static uint32_t spdk_sn32_add </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>s1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>s2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Add two sequece numbers s1 and s2. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">s1</td><td>First sequence number </td></tr>
+    <tr><td class="paramname">s2</td><td>Second sequence number</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Sum of s1 and s2 based on serial number arithmetic. </dd></dl>
+
+</div>
+</div>
+<a id="a3d7841db36c180f3fcac21e2314e2ef2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d7841db36c180f3fcac21e2314e2ef2">&#9670;&nbsp;</a></span>spdk_sn32_gt()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool spdk_sn32_gt </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>s1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>s2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Compare if sequence number s1 is greater than s2. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">s1</td><td>First sequence number </td></tr>
+    <tr><td class="paramname">s2</td><td>Second sequence number</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if s1 is greater than s2, or false otherwise. </dd></dl>
+
+</div>
+</div>
+<a id="a731ba4d3d89bf3d1c31c3e6481fc07b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a731ba4d3d89bf3d1c31c3e6481fc07b7">&#9670;&nbsp;</a></span>spdk_sn32_lt()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool spdk_sn32_lt </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>s1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>s2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Compare if sequence number s1 is less than s2. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">s1</td><td>First sequence number </td></tr>
+    <tr><td class="paramname">s2</td><td>Second sequence number</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if s1 is less than s2, or false otherwise. </dd></dl>
 
 </div>
 </div>

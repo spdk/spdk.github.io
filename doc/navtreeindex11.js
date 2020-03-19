@@ -1,6 +1,5 @@
 var NAVTREEINDEX11 =
 {
-"scsi__spec_8h.html#a96387d2993d5af1bd6559aa5a2f63b9d":[13,0,47,24],
 "scsi__spec_8h.html#a97b1cf77713d9482f66aa21cc7f2304c":[13,0,47,89],
 "scsi__spec_8h.html#a97b1cf77713d9482f66aa21cc7f2304ca7ed1a527c767041fbf32d62f41a1017c":[13,0,47,89,0],
 "scsi__spec_8h.html#a97b1cf77713d9482f66aa21cc7f2304cae52b2b41ab8ae31bedfbabfa21ae7a4f":[13,0,47,89,1],
@@ -249,5 +248,6 @@ var NAVTREEINDEX11 =
 "sock_8h.html#afcbfb1e52df2160547b6f5e2bb8ec636":[13,0,48,6],
 "spdkcli.html":[8,0],
 "ssd_internals.html":[2,3],
-"stdinc_8h.html":[13,0,49]
+"stdinc_8h.html":[13,0,49],
+"string_8h.html":[13,0,50]
 };

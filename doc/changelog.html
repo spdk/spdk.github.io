@@ -160,6 +160,8 @@ v20.04: (Upcoming Release)</h1>
 <p>The public header file io_channel.h has been removed. Please use <a class="el" href="thread_8h.html" title="Thread. ">thread.h</a> which has the exact same API.</p>
 <h2>crypto</h2>
 <p>Support for AES_XTS was added for the QAT polled mode driver (pmd). The create RPC <code>bdev_crypto_create</code> has 2 new optional parameters: cipher and key2. Cipher can be either AES_CBC (default) or AES_XTS. AES_XTS isonly valid when using the QAT polled mode driver. The key2 parameter is the second key required for AES_XTS.</p>
+<h2>util</h2>
+<p>New functions <code>spdk_sn32_lt</code> and <code>spdk_sn32_gt</code> have been added. They compare two sequence numbers based on serial number arithmetic.</p>
 <h1>v20.01</h1>
 <h2>bdev</h2>
 <p>A new function, <code>spdk_bdev_set_timeout</code>, has been added to set per descriptor I/O timeouts.</p>
