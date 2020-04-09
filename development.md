@@ -237,7 +237,7 @@ these failures to GitHub that allows us to track their frequency and allocate re
 
 If the CI system gives your patch a -1 but you believe it is in error (not related to your patch), you should match it to an outstanding
 intermittent failure [GitHub Issue](https://github.com/spdk/spdk/issues?q=is%3Aopen+is%3Aissue+label%3A%22Intermittent+Failure%22) or file
-a [new issue](https://github.com/spdk/spdk/issues/new). If you do create a new issue, be sure to add the "Intermittent Failure" label to it. Once
+a [new issue](https://github.com/spdk/spdk/issues/new/choose). If you do create a new issue, be sure to add the "Intermittent Failure" label to it. Once
 you have obtained an issue number from GitHub, either by matching to an existing latent failure or creating your own, you can simply post a comment
 to your patch on Gerrit with the following form:
 
