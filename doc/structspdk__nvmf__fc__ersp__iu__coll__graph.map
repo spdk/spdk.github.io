@@ -1,4 +1,5 @@
 <map id="spdk_nvmf_fc_ersp_iu" name="spdk_nvmf_fc_ersp_iu">
-<area shape="rect" id="node2" href="$structspdk__nvme__cpl.html" title="Completion queue entry. " alt="" coords="27,95,150,121"/>
-<area shape="rect" id="node3" href="$structspdk__nvme__status.html" title="spdk_nvme_status" alt="" coords="17,5,161,32"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,184,172,211"/>
+<area shape="rect" id="node2" href="$structspdk__nvme__cpl.html" title="Completion queue entry." alt="" coords="27,95,150,121"/>
+<area shape="rect" id="node3" href="$structspdk__nvme__status.html" title=" " alt="" coords="17,5,161,32"/>
 </map>

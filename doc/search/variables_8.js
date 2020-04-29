@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['icdoff',['icdoff',['../structspdk__nvme__ctrlr__data.html#a7f7c1a80ede2f22cf432bd2efada1a0f',1,'spdk_nvme_ctrlr_data']]],
+  ['icdoff',['icdoff',['../structspdk__nvme__cdata__nvmf__specific.html#ae07d73592397eefff0a54086d11161db',1,'spdk_nvme_cdata_nvmf_specific']]],
   ['ieee',['ieee',['../structspdk__nvme__ctrlr__data.html#a5b9650f02ffc24e94a6708b33272c415',1,'spdk_nvme_ctrlr_data']]],
   ['ignore_5fexisting_5fkey',['ignore_existing_key',['../structspdk__nvme__ns__data.html#aa324a3eeb1fb7252010f8ec486a8cedb',1,'spdk_nvme_ns_data']]],
   ['in_5fsubmit_5frequest',['in_submit_request',['../structspdk__bdev__io_1_1____bdev__io__internal__fields.html#a79f4b610c4db721dbe99f5698d1886f6',1,'spdk_bdev_io::__bdev_io_internal_fields']]],
@@ -11,9 +11,9 @@ var searchData=
   ['io_5fsubmit_5fch',['io_submit_ch',['../structspdk__bdev__io_1_1____bdev__io__internal__fields.html#a538e1a5baf1242b0b41489e4f0f411f9',1,'spdk_bdev_io::__bdev_io_internal_fields']]],
   ['io_5ftime',['io_time',['../structspdk__bdev_1_1____bdev__internal__fields.html#a55d6103a185f6c50c9b5d58976d08508',1,'spdk_bdev::__bdev_internal_fields']]],
   ['io_5ftype_5fsupported',['io_type_supported',['../structspdk__bdev__fn__table.html#a20ec74cad9e56c5ac8ee9db239d8f46e',1,'spdk_bdev_fn_table']]],
-  ['ioccsz',['ioccsz',['../structspdk__nvme__ctrlr__data.html#ac6c0c28dbff6a34416a723cd77c4064a',1,'spdk_nvme_ctrlr_data']]],
+  ['ioccsz',['ioccsz',['../structspdk__nvme__cdata__nvmf__specific.html#a760ac459f1386e94310809765b5577d8',1,'spdk_nvme_cdata_nvmf_specific']]],
   ['iocqes',['iocqes',['../unionspdk__nvme__cc__register.html#a6be5f13e66cd6fd34c1463147cdfb106',1,'spdk_nvme_cc_register']]],
-  ['iorcsz',['iorcsz',['../structspdk__nvme__ctrlr__data.html#a7234a2b9f5741883bba676b1036781e0',1,'spdk_nvme_ctrlr_data']]],
+  ['iorcsz',['iorcsz',['../structspdk__nvme__cdata__nvmf__specific.html#ac2ad3d852b70ca6fd78dad1f6fac8fd6',1,'spdk_nvme_cdata_nvmf_specific']]],
   ['iosqes',['iosqes',['../unionspdk__nvme__cc__register.html#aa209d6cab6dc0a1f9e9b37f4f0a2d8b9',1,'spdk_nvme_cc_register']]],
   ['iov',['iov',['../structspdk__bdev__io.html#a0429238075907c6f637249dda31f3235',1,'spdk_bdev_io']]],
   ['iovcnt',['iovcnt',['../structspdk__bdev__io.html#aa9024a5714c4c242271cdcbb34b45a91',1,'spdk_bdev_io']]],

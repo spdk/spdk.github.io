@@ -1,4 +1,5 @@
 <map id="spdk_bdev_part" name="spdk_bdev_part">
+<area shape="rect" id="node1" title=" " alt="" coords="25,199,151,225"/>
 <area shape="rect" id="node2" href="$structspdk__bdev__part_1_1bdev__part__internal__fields.html" title="Fields that are used internally by part.c These fields should only be accessed from a module using an..." alt="" coords="5,95,171,136"/>
-<area shape="rect" id="node3" href="$structspdk__bdev.html" title="spdk_bdev" alt="" coords="42,5,134,32"/>
+<area shape="rect" id="node3" href="$structspdk__bdev.html" title=" " alt="" coords="42,5,134,32"/>
 </map>

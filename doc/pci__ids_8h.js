@@ -1,5 +1,6 @@
 var pci__ids_8h =
 [
+    [ "PCI_DEVICE_ID_INTEL_IDXD", "pci__ids_8h.html#aaa521901e0567caa1ad6dbe44f9c04d6", null ],
     [ "PCI_DEVICE_ID_INTEL_IOAT_BDX0", "pci__ids_8h.html#a88a385415205a0256b28b3feb42341f5", null ],
     [ "PCI_DEVICE_ID_INTEL_IOAT_BDX1", "pci__ids_8h.html#a4517a485b149298811a2b1afc1d9bfcf", null ],
     [ "PCI_DEVICE_ID_INTEL_IOAT_BDX2", "pci__ids_8h.html#afabafbc73837c05e98195162e2137c89", null ],

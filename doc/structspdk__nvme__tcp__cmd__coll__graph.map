@@ -1,7 +1,8 @@
 <map id="spdk_nvme_tcp_cmd" name="spdk_nvme_tcp_cmd">
-<area shape="rect" id="node2" href="$structspdk__nvme__cmd.html" title="spdk_nvme_cmd" alt="" coords="235,102,367,129"/>
-<area shape="rect" id="node3" href="$unionspdk__nvme__cmd__cdw10.html" title="spdk_nvme_cmd_cdw10" alt="" coords="5,5,187,32"/>
-<area shape="rect" id="node4" href="$unionspdk__nvme__cmd__cdw11.html" title="spdk_nvme_cmd_cdw11" alt="" coords="211,5,392,32"/>
-<area shape="rect" id="node5" href="$structspdk__nvme__sgl__descriptor.html" title="spdk_nvme_sgl_descriptor" alt="" coords="416,5,611,32"/>
-<area shape="rect" id="node6" href="$structspdk__nvme__tcp__common__pdu__hdr.html" title="Common NVMe/TCP PDU header. " alt="" coords="391,95,579,136"/>
+<area shape="rect" id="node1" title="CapsuleCmd." alt="" coords="359,199,518,225"/>
+<area shape="rect" id="node2" href="$structspdk__nvme__cmd.html" title=" " alt="" coords="235,102,367,129"/>
+<area shape="rect" id="node3" href="$unionspdk__nvme__cmd__cdw10.html" title=" " alt="" coords="5,5,187,32"/>
+<area shape="rect" id="node4" href="$unionspdk__nvme__cmd__cdw11.html" title=" " alt="" coords="211,5,392,32"/>
+<area shape="rect" id="node5" href="$structspdk__nvme__sgl__descriptor.html" title=" " alt="" coords="416,5,611,32"/>
+<area shape="rect" id="node6" href="$structspdk__nvme__tcp__common__pdu__hdr.html" title="Common NVMe/TCP PDU header." alt="" coords="391,95,579,136"/>
 </map>

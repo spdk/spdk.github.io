@@ -1,0 +1,4 @@
+<map id="spdk_nvmf_ctrlr_data" name="spdk_nvmf_ctrlr_data">
+<area shape="rect" id="node1" title="A subset of struct spdk_nvme_ctrlr_data that are emulated by a fabrics device." alt="" coords="15,109,177,136"/>
+<area shape="rect" id="node2" href="$structspdk__nvme__cdata__nvmf__specific.html" title="Identify Controller data NVMe over Fabrics&#45;specific fields." alt="" coords="5,5,187,47"/>
+</map>

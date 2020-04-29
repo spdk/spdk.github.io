@@ -24,6 +24,7 @@ var files_dup =
     [ "file.h", "file_8h.html", "file_8h" ],
     [ "gpt_spec.h", "gpt__spec_8h.html", "gpt__spec_8h" ],
     [ "histogram_data.h", "histogram__data_8h.html", "histogram__data_8h" ],
+    [ "idxd.h", "idxd_8h.html", "idxd_8h" ],
     [ "ioat.h", "ioat_8h.html", "ioat_8h" ],
     [ "ioat_spec.h", "ioat__spec_8h.html", "ioat__spec_8h" ],
     [ "iscsi_spec.h", "iscsi__spec_8h.html", "iscsi__spec_8h" ],

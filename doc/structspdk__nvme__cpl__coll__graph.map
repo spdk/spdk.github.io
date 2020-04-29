@@ -1,3 +1,4 @@
 <map id="spdk_nvme_cpl" name="spdk_nvme_cpl">
-<area shape="rect" id="node2" href="$structspdk__nvme__status.html" title="spdk_nvme_status" alt="" coords="5,5,149,32"/>
+<area shape="rect" id="node1" title="Completion queue entry." alt="" coords="16,95,139,121"/>
+<area shape="rect" id="node2" href="$structspdk__nvme__status.html" title=" " alt="" coords="5,5,149,32"/>
 </map>

@@ -1,5 +1,6 @@
 <map id="spdk_nvmf_fc_ls_cr_conn_rqst" name="spdk_nvmf_fc_ls_cr_conn_rqst">
-<area shape="rect" id="node2" href="$structspdk__nvmf__fc__lsdesc__assoc__id.html" title="spdk_nvmf_fc_lsdesc\l_assoc_id" alt="" coords="19,5,181,47"/>
-<area shape="rect" id="node3" href="$structspdk__nvmf__fc__lsdesc__cr__conn__cmd.html" title="spdk_nvmf_fc_lsdesc\l_cr_conn_cmd" alt="" coords="19,71,181,112"/>
-<area shape="rect" id="node4" href="$structspdk__nvmf__fc__ls__rqst__w0.html" title="spdk_nvmf_fc_ls_rqst_w0" alt="" coords="5,137,195,163"/>
+<area shape="rect" id="node1" title=" " alt="" coords="333,71,484,112"/>
+<area shape="rect" id="node2" href="$structspdk__nvmf__fc__lsdesc__assoc__id.html" title=" " alt="" coords="19,5,181,47"/>
+<area shape="rect" id="node3" href="$structspdk__nvmf__fc__lsdesc__cr__conn__cmd.html" title=" " alt="" coords="19,71,181,112"/>
+<area shape="rect" id="node4" href="$structspdk__nvmf__fc__ls__rqst__w0.html" title=" " alt="" coords="5,137,195,163"/>
 </map>

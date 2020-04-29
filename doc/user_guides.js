@@ -157,6 +157,7 @@ var user_guides =
         [ "bdev_nvme_cuse_unregister", "jsonrpc.html#rpc_bdev_nvme_cuse_unregister", null ],
         [ "bdev_rbd_create", "jsonrpc.html#rpc_bdev_rbd_create", null ],
         [ "bdev_rbd_delete", "jsonrpc.html#rpc_bdev_rbd_delete", null ],
+        [ "bdev_rbd_resize", "jsonrpc.html#rpc_bdev_rbd_resize", null ],
         [ "bdev_delay_create", "jsonrpc.html#rpc_bdev_delay_create", null ],
         [ "bdev_delay_delete", "jsonrpc.html#rpc_bdev_delay_delete", null ],
         [ "bdev_delay_update_latency", "jsonrpc.html#rpc_bdev_delay_update_latency", null ],

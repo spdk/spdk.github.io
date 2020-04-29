@@ -3,6 +3,6 @@ var structspdk__nvmf__transport__poll__group__stat =
     [ "devices", "structspdk__nvmf__transport__poll__group__stat.html#a5dfc2d94998990b1955a11593c4950e7", null ],
     [ "num_devices", "structspdk__nvmf__transport__poll__group__stat.html#aa8d8af58f65384927b478f92a5f06eeb", null ],
     [ "pending_data_buffer", "structspdk__nvmf__transport__poll__group__stat.html#a1559b932a181386d54c029e0de833ff3", null ],
-    [ "rdma", "structspdk__nvmf__transport__poll__group__stat.html#a0a6d15beea625b98efa3800c6e1b1ffb", null ],
+    [ "rdma", "structspdk__nvmf__transport__poll__group__stat.html#a741f29d83958d1d09913126e09f18a25", null ],
     [ "trtype", "structspdk__nvmf__transport__poll__group__stat.html#ae48623b8668c953062ba5fece118e072", null ]
 ];

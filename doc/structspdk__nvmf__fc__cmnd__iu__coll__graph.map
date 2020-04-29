@@ -1,6 +1,7 @@
 <map id="spdk_nvmf_fc_cmnd_iu" name="spdk_nvmf_fc_cmnd_iu">
-<area shape="rect" id="node2" href="$structspdk__nvme__cmd.html" title="spdk_nvme_cmd" alt="" coords="235,95,367,121"/>
-<area shape="rect" id="node3" href="$unionspdk__nvme__cmd__cdw10.html" title="spdk_nvme_cmd_cdw10" alt="" coords="5,5,187,32"/>
-<area shape="rect" id="node4" href="$unionspdk__nvme__cmd__cdw11.html" title="spdk_nvme_cmd_cdw11" alt="" coords="211,5,392,32"/>
-<area shape="rect" id="node5" href="$structspdk__nvme__sgl__descriptor.html" title="spdk_nvme_sgl_descriptor" alt="" coords="416,5,611,32"/>
+<area shape="rect" id="node1" title=" " alt="" coords="214,184,389,211"/>
+<area shape="rect" id="node2" href="$structspdk__nvme__cmd.html" title=" " alt="" coords="235,95,367,121"/>
+<area shape="rect" id="node3" href="$unionspdk__nvme__cmd__cdw10.html" title=" " alt="" coords="5,5,187,32"/>
+<area shape="rect" id="node4" href="$unionspdk__nvme__cmd__cdw11.html" title=" " alt="" coords="211,5,392,32"/>
+<area shape="rect" id="node5" href="$structspdk__nvme__sgl__descriptor.html" title=" " alt="" coords="416,5,611,32"/>
 </map>

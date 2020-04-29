@@ -27,6 +27,7 @@ var searchData=
   ['portid',['portid',['../structspdk__nvme__primary__ctrl__capabilities.html#af8c71651dc0bb0fc40917e3bfc55183d',1,'spdk_nvme_primary_ctrl_capabilities::portid()'],['../structspdk__nvmf__discovery__log__page__entry.html#afe04107ae81316f7e1c189472a881e52',1,'spdk_nvmf_discovery_log_page_entry::portid()']]],
   ['power_5fgovernor_5fsetting',['power_governor_setting',['../unionspdk__nvme__intel__feat__power__governor.html#aa25780c209e8e7d18133e16396cb235e',1,'spdk_nvme_intel_feat_power_governor']]],
   ['pp',['pp',['../unionspdk__nvme__csts__register.html#a36a07e6c600537241f579d52604b1de8',1,'spdk_nvme_csts_register']]],
+  ['priority',['priority',['../structspdk__nvme__transport__id.html#a9f42a63dd75253a00f7bff861f4057a4',1,'spdk_nvme_transport_id::priority()'],['../structspdk__sock__opts.html#a0e826e7a46eadaeb53f38c4926cd3bbf',1,'spdk_sock_opts::priority()']]],
   ['prkey',['prkey',['../structspdk__nvme__reservation__acquire__data.html#a7777dded0893794c13c35fd71173514f',1,'spdk_nvme_reservation_acquire_data']]],
   ['product_5fname',['product_name',['../structspdk__bdev.html#ad3abe8a06500954332614d8657eaf1d9',1,'spdk_bdev']]],
   ['programmer_20guides',['Programmer Guides',['../prog_guides.html',1,'']]],

@@ -1,13 +1,14 @@
 <map id="spdk_nvme_registers" name="spdk_nvme_registers">
-<area shape="rect" id="node2" href="$unionspdk__nvme__cap__register.html" title="spdk_nvme_cap_register" alt="" coords="21,5,205,32"/>
-<area shape="rect" id="node3" href="$unionspdk__nvme__vs__register.html" title="spdk_nvme_vs_register" alt="" coords="25,56,201,83"/>
-<area shape="rect" id="node4" href="$unionspdk__nvme__bprsel__register.html" title="Boot partition read select. " alt="" coords="13,107,214,133"/>
-<area shape="rect" id="node5" href="$unionspdk__nvme__cmbsz__register.html" title="spdk_nvme_cmbsz_register" alt="" coords="12,157,215,184"/>
-<area shape="rect" id="node6" href="$unionspdk__nvme__csts__register.html" title="spdk_nvme_csts_register" alt="" coords="20,208,207,235"/>
-<area shape="rect" id="node7" href="$unionspdk__nvme__cc__register.html" title="spdk_nvme_cc_register" alt="" coords="26,259,201,285"/>
-<area shape="rect" id="node8" href="$unionspdk__nvme__cmbmsc__register.html" title="spdk_nvme_cmbmsc_register" alt="" coords="5,309,221,336"/>
-<area shape="rect" id="node9" href="$unionspdk__nvme__aqa__register.html" title="spdk_nvme_aqa_register" alt="" coords="21,360,206,387"/>
-<area shape="rect" id="node10" href="$unionspdk__nvme__bpinfo__register.html" title="Boot partition information. " alt="" coords="12,411,215,437"/>
-<area shape="rect" id="node11" href="$unionspdk__nvme__cmbsts__register.html" title="spdk_nvme_cmbsts_register" alt="" coords="9,461,217,488"/>
-<area shape="rect" id="node12" href="$unionspdk__nvme__cmbloc__register.html" title="spdk_nvme_cmbloc_register" alt="" coords="9,512,217,539"/>
+<area shape="rect" id="node1" title=" " alt="" coords="329,259,491,285"/>
+<area shape="rect" id="node2" href="$unionspdk__nvme__cap__register.html" title=" " alt="" coords="21,5,205,32"/>
+<area shape="rect" id="node3" href="$unionspdk__nvme__vs__register.html" title=" " alt="" coords="25,56,201,83"/>
+<area shape="rect" id="node4" href="$unionspdk__nvme__bprsel__register.html" title="Boot partition read select." alt="" coords="13,107,214,133"/>
+<area shape="rect" id="node5" href="$unionspdk__nvme__cmbsz__register.html" title=" " alt="" coords="12,157,215,184"/>
+<area shape="rect" id="node6" href="$unionspdk__nvme__csts__register.html" title=" " alt="" coords="20,208,207,235"/>
+<area shape="rect" id="node7" href="$unionspdk__nvme__cc__register.html" title=" " alt="" coords="26,259,201,285"/>
+<area shape="rect" id="node8" href="$unionspdk__nvme__cmbmsc__register.html" title=" " alt="" coords="5,309,221,336"/>
+<area shape="rect" id="node9" href="$unionspdk__nvme__aqa__register.html" title=" " alt="" coords="21,360,206,387"/>
+<area shape="rect" id="node10" href="$unionspdk__nvme__bpinfo__register.html" title="Boot partition information." alt="" coords="12,411,215,437"/>
+<area shape="rect" id="node11" href="$unionspdk__nvme__cmbsts__register.html" title=" " alt="" coords="9,461,217,488"/>
+<area shape="rect" id="node12" href="$unionspdk__nvme__cmbloc__register.html" title=" " alt="" coords="9,512,217,539"/>
 </map>

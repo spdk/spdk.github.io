@@ -49,6 +49,7 @@ var thread_8h =
     [ "spdk_thread_get_ctx", "thread_8h.html#a1deb97a85a8240119cf46fa8a0b71388", null ],
     [ "spdk_thread_get_from_ctx", "thread_8h.html#af813fe52c71ec5e254f8671570f57bdc", null ],
     [ "spdk_thread_get_id", "thread_8h.html#aead9239fedaf5af9f24b5614f6c0c8fb", null ],
+    [ "spdk_thread_get_last_tsc", "thread_8h.html#ae8d7fd3db7cd91ff37c3898e69811f7a", null ],
     [ "spdk_thread_get_name", "thread_8h.html#ae367048fa89366e845d72015064e6f76", null ],
     [ "spdk_thread_get_stats", "thread_8h.html#ab6f07dd00b0b4140155713aca312d46b", null ],
     [ "spdk_thread_has_active_pollers", "thread_8h.html#a5a143ecbc5ce7edcd57e76cffd74bde5", null ],

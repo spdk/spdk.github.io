@@ -1,5 +1,8 @@
 <map id="spdk_nvmf_transport" name="spdk_nvmf_transport">
-<area shape="rect" id="node2" href="$structspdk__nvmf__transport__ops.html" title="spdk_nvmf_transport_ops" alt="" coords="9,303,200,329"/>
-<area shape="rect" id="node3" href="$structspdk__nvmf__transport__poll__group.html" title="spdk_nvmf_transport\l_poll_group" alt="" coords="70,184,230,225"/>
-<area shape="rect" id="node4" href="$structspdk__nvmf__transport__opts.html" title="spdk_nvmf_transport_opts" alt="" coords="52,5,247,32"/>
+<area shape="rect" id="node1" title=" " alt="" coords="168,199,328,225"/>
+<area shape="rect" id="node4" href="$structspdk__nvmf__transport__ops.html" title=" " alt="" coords="107,407,298,433"/>
+<area shape="rect" id="node5" href="$structspdk__nvmf__transport__poll__group.html" title=" " alt="" coords="168,288,328,329"/>
+<area shape="rect" id="node2" href="$structspdk__nvmf__ctrlr__data.html" title="A subset of struct spdk_nvme_ctrlr_data that are emulated by a fabrics device." alt="" coords="15,109,177,136"/>
+<area shape="rect" id="node3" href="$structspdk__nvme__cdata__nvmf__specific.html" title="Identify Controller data NVMe over Fabrics&#45;specific fields." alt="" coords="5,5,187,47"/>
+<area shape="rect" id="node6" href="$structspdk__nvmf__transport__opts.html" title=" " alt="" coords="201,109,396,136"/>
 </map>

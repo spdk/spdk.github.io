@@ -1,3 +1,4 @@
 <map id="spdk_bs_dev" name="spdk_bs_dev">
-<area shape="rect" id="node2" href="$structspdk__io__channel.html" title="Represents a per&#45;thread channel for accessing an I/O device. " alt="" coords="5,5,136,32"/>
+<area shape="rect" id="node1" title=" " alt="" coords="17,95,124,121"/>
+<area shape="rect" id="node2" href="$structspdk__io__channel.html" title="Represents a per&#45;thread channel for accessing an I/O device." alt="" coords="5,5,136,32"/>
 </map>

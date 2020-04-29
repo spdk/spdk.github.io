@@ -1,10 +1,11 @@
 <map id="spdk_bdev_io" name="spdk_bdev_io">
-<area shape="rect" id="node7" href="$structspdk__bdev__io_1_1____bdev__io__internal__fields.html" title="Fields that are used internally by the bdev subsystem. " alt="" coords="867,74,1032,115"/>
-<area shape="rect" id="node2" href="$structspdk__nvme__cmd.html" title="spdk_nvme_cmd" alt="" coords="325,81,457,108"/>
-<area shape="rect" id="node3" href="$unionspdk__nvme__cmd__cdw10.html" title="spdk_nvme_cmd_cdw10" alt="" coords="12,31,193,57"/>
-<area shape="rect" id="node4" href="$unionspdk__nvme__cmd__cdw11.html" title="spdk_nvme_cmd_cdw11" alt="" coords="12,81,193,108"/>
-<area shape="rect" id="node5" href="$structspdk__nvme__sgl__descriptor.html" title="spdk_nvme_sgl_descriptor" alt="" coords="5,132,200,159"/>
-<area shape="rect" id="node6" href="$structspdk__io__channel.html" title="Represents a per&#45;thread channel for accessing an I/O device. " alt="" coords="326,16,457,43"/>
-<area shape="rect" id="node8" href="$structspdk__bdev__io__wait__entry.html" title="Structure to register a callback when an spdk_bdev_io becomes available. " alt="" coords="551,161,737,188"/>
-<area shape="rect" id="node9" href="$structspdk__bdev.html" title="spdk_bdev" alt="" coords="345,152,437,179"/>
+<area shape="rect" id="node1" title=" " alt="" coords="589,101,699,128"/>
+<area shape="rect" id="node7" href="$structspdk__bdev__io_1_1____bdev__io__internal__fields.html" title="Fields that are used internally by the bdev subsystem." alt="" coords="867,74,1032,115"/>
+<area shape="rect" id="node2" href="$structspdk__nvme__cmd.html" title=" " alt="" coords="325,81,457,108"/>
+<area shape="rect" id="node3" href="$unionspdk__nvme__cmd__cdw10.html" title=" " alt="" coords="12,31,193,57"/>
+<area shape="rect" id="node4" href="$unionspdk__nvme__cmd__cdw11.html" title=" " alt="" coords="12,81,193,108"/>
+<area shape="rect" id="node5" href="$structspdk__nvme__sgl__descriptor.html" title=" " alt="" coords="5,132,200,159"/>
+<area shape="rect" id="node6" href="$structspdk__io__channel.html" title="Represents a per&#45;thread channel for accessing an I/O device." alt="" coords="326,16,457,43"/>
+<area shape="rect" id="node8" href="$structspdk__bdev__io__wait__entry.html" title="Structure to register a callback when an spdk_bdev_io becomes available." alt="" coords="551,161,737,188"/>
+<area shape="rect" id="node9" href="$structspdk__bdev.html" title=" " alt="" coords="345,152,437,179"/>
 </map>

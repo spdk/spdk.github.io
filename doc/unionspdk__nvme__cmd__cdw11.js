@@ -10,6 +10,8 @@ var unionspdk__nvme__cmd__cdw11 =
     [ "feat_async_event_cfg", "unionspdk__nvme__cmd__cdw11.html#aeca69a9de968c8b46d1a8e5c5364383c", null ],
     [ "feat_error_recovery", "unionspdk__nvme__cmd__cdw11.html#a3681d17e007d5ff98c5719f4f72b1634", null ],
     [ "feat_host_identifier", "unionspdk__nvme__cmd__cdw11.html#ab0042a83055c388f3b21ebd856c71136", null ],
+    [ "feat_interrupt_coalescing", "unionspdk__nvme__cmd__cdw11.html#ad97637261bb396bec59a50cb423e4b2f", null ],
+    [ "feat_interrupt_vector_configuration", "unionspdk__nvme__cmd__cdw11.html#af2b461b324e5d1f375b65e7e2d424e14", null ],
     [ "feat_keep_alive_timer", "unionspdk__nvme__cmd__cdw11.html#aad224850e40d2d0cc65800a3e5edba5e", null ],
     [ "feat_lba_range_type", "unionspdk__nvme__cmd__cdw11.html#aefc193d553ef41b473ea465459f3f3a4", null ],
     [ "feat_num_of_queues", "unionspdk__nvme__cmd__cdw11.html#acbeabd212ceaacea72d5f7ad6a97ed1e", null ],

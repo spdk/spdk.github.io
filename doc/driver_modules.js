@@ -30,6 +30,11 @@ var driver_modules =
       [ "Public Interface", "ioat.html#ioat_interface", null ],
       [ "Key Functions", "ioat.html#ioat_key_functions", null ]
     ] ],
+    [ "IDXD Driver", "idxd.html", [
+      [ "Public Interface", "idxd.html#idxd_interface", null ],
+      [ "Key Functions", "idxd.html#idxd_key_functions", null ],
+      [ "Pre-defined configurations", "idxd.html#idxd_configs", null ]
+    ] ],
     [ "Virtio driver", "virtio.html", [
       [ "Introduction", "virtio.html#virtio_intro", null ],
       [ "2MB hugepages", "virtio.html#virtio_2mb", null ]

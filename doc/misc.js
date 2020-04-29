@@ -10,6 +10,7 @@ var misc =
     ] ],
     [ "SPDK and Containers", "containers.html", [
       [ "In this document", "containers.html#containers_toc", null ],
+      [ "Using SPDK vhost target to provide volume service to Kata Containers and Docker", "containers.html#kata_containers_with_spdk_vhost", null ],
       [ "Containerizing an SPDK Application for Docker", "containers.html#spdk_in_docker", null ]
     ] ]
 ];

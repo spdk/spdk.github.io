@@ -216,7 +216,8 @@ var NAVTREEINDEX1 =
 "conf_8h.html#aff953daa748287171dadcd8ecdfae6c9":[13,0,12,9],
 "containers.html":[6,1],
 "containers.html#containers_toc":[6,1,0],
-"containers.html#spdk_in_docker":[6,1,1],
+"containers.html#kata_containers_with_spdk_vhost":[6,1,1],
+"containers.html#spdk_in_docker":[6,1,2],
 "cpuset_8h.html":[13,0,13],
 "cpuset_8h.html#a1be5b681ccac1865c26965adca7767a7":[13,0,13,8],
 "cpuset_8h.html#a2e99e47041ef7d8bd8dedfa00a8f9e6c":[13,0,13,9],
@@ -248,6 +249,5 @@ var NAVTREEINDEX1 =
 "endian_8h.html":[13,0,16],
 "endian_8h.html#a1a4d465029018803013fd7993a901722":[13,0,16,6],
 "endian_8h.html#a265f8e947e2070d1a0520a357f5251f5":[13,0,16,9],
-"endian_8h.html#a2e88d5ce0038ecdc88c879c1d68333a4":[13,0,16,8],
-"endian_8h.html#a38022e35d82ec8f6deb1fa7b80cbf7cf":[13,0,16,5]
+"endian_8h.html#a2e88d5ce0038ecdc88c879c1d68333a4":[13,0,16,8]
 };
