@@ -1,5 +1,14 @@
 var NAVTREEINDEX5 =
 {
+"jsonrpc.html#rpc_iscsi_create_auth_group_secret":[3,7,3,3,0],
+"jsonrpc.html#rpc_iscsi_create_initiator_group":[3,7,3,9],
+"jsonrpc.html#rpc_iscsi_create_portal_group":[3,7,3,19],
+"jsonrpc.html#rpc_iscsi_create_target_node":[3,7,3,13],
+"jsonrpc.html#rpc_iscsi_delete_auth_group":[3,7,3,4],
+"jsonrpc.html#rpc_iscsi_delete_initiator_group":[3,7,3,10],
+"jsonrpc.html#rpc_iscsi_delete_portal_group":[3,7,3,20],
+"jsonrpc.html#rpc_iscsi_delete_target_node":[3,7,3,17],
+"jsonrpc.html#rpc_iscsi_get_auth_groups":[3,7,3,5],
 "jsonrpc.html#rpc_iscsi_get_connections":[3,7,3,21],
 "jsonrpc.html#rpc_iscsi_get_initiator_groups":[3,7,3,8],
 "jsonrpc.html#rpc_iscsi_get_options":[3,7,3,1],
@@ -240,14 +249,5 @@ var NAVTREEINDEX5 =
 "nvme_8h.html#a10282695461985f58f54de022911745e":[13,0,36,76],
 "nvme_8h.html#a108d6b722c8837593dec16f30376d182":[13,0,36,96],
 "nvme_8h.html#a13f745d239dab9b8f934fae2ad4984a2":[13,0,36,30],
-"nvme_8h.html#a1505fc1ef6e8ccb00134c1fa15e0368b":[13,0,36,78],
-"nvme_8h.html#a1cdd28db5de54dfee308ea0a3c4f1442":[13,0,36,72],
-"nvme_8h.html#a1e04d50b1f27f6cd163a4ea2024a6fbb":[13,0,36,77],
-"nvme_8h.html#a1e3def668122e76abbfb74305f118291":[13,0,36,38],
-"nvme_8h.html#a225bbc386ec518ae21bd5536f21db45d":[13,0,36,139],
-"nvme_8h.html#a260b335960b9d81ac1a2601b003b99cd":[13,0,36,65],
-"nvme_8h.html#a2640aeebb82108e9b507dcccb1e564c2":[13,0,36,114],
-"nvme_8h.html#a2a353011316a46ee6e6857f7286488d1":[13,0,36,134],
-"nvme_8h.html#a2ba2d2f9571a62a47e04ef16e65f9e7b":[13,0,36,48],
-"nvme_8h.html#a2cd4f33cc8dc7741290b9cdf02fc691c":[13,0,36,90]
+"nvme_8h.html#a1505fc1ef6e8ccb00134c1fa15e0368b":[13,0,36,78]
 };

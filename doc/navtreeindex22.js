@@ -1,5 +1,14 @@
 var NAVTREEINDEX22 =
 {
+"structspdk__scsi__tgt__port__desc.html#a3d7abed7b610535f8894020b44c498ea":[12,0,273,4],
+"structspdk__scsi__tgt__port__desc.html#a55d5e6e7e8f9aaf4a258e0f0cb79affe":[12,0,273,3],
+"structspdk__scsi__tgt__port__desc.html#a5e85fd80fc7a37609f4c0020d096edf5":[12,0,273,2],
+"structspdk__scsi__tgt__port__desc.html#a90730b0714e0295fcc363599229c509a":[12,0,273,0],
+"structspdk__scsi__tgt__port__desc.html#ac3080c209c823539b031d014bb82cd43":[12,0,273,1],
+"structspdk__scsi__unmap__bdesc.html":[12,0,274],
+"structspdk__scsi__unmap__bdesc.html#a514ee830753d52e54adf3f4e88714541":[12,0,274,1],
+"structspdk__scsi__unmap__bdesc.html#ae954762409a7249e0c36ae159dc6b9a5":[12,0,274,2],
+"structspdk__scsi__unmap__bdesc.html#aee26f6bb7cbfb226505fb2b58551a83d":[12,0,274,0],
 "structspdk__scsi__vpd__ext__inquiry.html":[12,0,275],
 "structspdk__scsi__vpd__ext__inquiry.html#a1044d03cc28a332a153f36dcadbd486e":[12,0,275,2],
 "structspdk__scsi__vpd__ext__inquiry.html#a1683585f9defe2c3d6e18de15c7dede9":[12,0,275,7],
@@ -240,14 +249,5 @@ var NAVTREEINDEX22 =
 "unionspdk__nvme__cap__register.html#a6d6c8f5ede010b705296692e72e0b645":[12,0,84,13],
 "unionspdk__nvme__cap__register.html#a75640e3e0a03f22456503acbebc20f46":[12,0,84,0],
 "unionspdk__nvme__cap__register.html#a7ca23ffbd756451f561b8972160f8281":[12,0,84,8],
-"unionspdk__nvme__cap__register.html#a9930c21595d81e7eefa8cca0e118450a":[12,0,84,7],
-"unionspdk__nvme__cap__register.html#a9bbd0513d0df169766c0f74adfc4dde1":[12,0,84,2],
-"unionspdk__nvme__cap__register.html#ac8d0f8ca7261552f9fa5894b0c637fd5":[12,0,84,9],
-"unionspdk__nvme__cap__register.html#ad4b6659be786f840893818e951fc1f3d":[12,0,84,6],
-"unionspdk__nvme__cap__register.html#ad8004bf4870d89a73f8d4d95db5d746d":[12,0,84,3],
-"unionspdk__nvme__cap__register.html#adae67761c7519837503eef9e72c3250f":[12,0,84,14],
-"unionspdk__nvme__cap__register.html#af726e8465f09c36be0185475ec67fbce":[12,0,84,5],
-"unionspdk__nvme__cap__register.html#afd09628d065cb825bc58e1d4eaa938a1":[12,0,84,4],
-"unionspdk__nvme__cc__register.html":[12,0,85],
-"unionspdk__nvme__cc__register.html#a0d237aa1570621e671975d972c3845f1":[12,0,85,1]
+"unionspdk__nvme__cap__register.html#a9930c21595d81e7eefa8cca0e118450a":[12,0,84,7]
 };

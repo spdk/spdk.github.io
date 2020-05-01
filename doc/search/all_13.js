@@ -32,6 +32,7 @@ var searchData=
   ['spdk_5faccel_5fengine_5finitialize',['spdk_accel_engine_initialize',['../accel__engine_8h.html#af0ba5139fd29c095256d77f29b65a205',1,'accel_engine.h']]],
   ['spdk_5faccel_5fengine_5fmodule_5ffinish',['spdk_accel_engine_module_finish',['../accel__engine_8h.html#a8505077f98b662aa948eef070c4be155',1,'accel_engine.h']]],
   ['spdk_5faccel_5ffini_5fcb',['spdk_accel_fini_cb',['../accel__engine_8h.html#a545ea1cc4167924acee2803aed824877',1,'accel_engine.h']]],
+  ['spdk_5faccel_5fget_5fcapabilities',['spdk_accel_get_capabilities',['../accel__engine_8h.html#a88cc170fc07d06224a37cd00d04bd2e9',1,'accel_engine.h']]],
   ['spdk_5faccel_5fsubmit_5fcopy',['spdk_accel_submit_copy',['../accel__engine_8h.html#a165823e33b9a1bd61ca015b03fd0bc26',1,'accel_engine.h']]],
   ['spdk_5faccel_5fsubmit_5ffill',['spdk_accel_submit_fill',['../accel__engine_8h.html#a069e8bf561424ee3e78226721341a7b9',1,'accel_engine.h']]],
   ['spdk_5faccel_5ftask_5fsize',['spdk_accel_task_size',['../accel__engine_8h.html#af39d975565772672ebbae4e5d22b40d8',1,'accel_engine.h']]],

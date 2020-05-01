@@ -1,5 +1,14 @@
 var NAVTREEINDEX19 =
 {
+"structspdk__nvmf__fabric__connect__cmd.html#a6bae3d02c2ea2b66bb2fb59d318bb95f":[12,0,185,2],
+"structspdk__nvmf__fabric__connect__cmd.html#a85f2665a879ac23df282f641341f01c0":[12,0,185,4],
+"structspdk__nvmf__fabric__connect__cmd.html#a8e5688469a4f7cfa586cd872b414fa73":[12,0,185,8],
+"structspdk__nvmf__fabric__connect__cmd.html#aad283d59cae07b39d5471e5f0ed895c7":[12,0,185,5],
+"structspdk__nvmf__fabric__connect__cmd.html#ab70986379a85910749bb57a492e3cd2a":[12,0,185,11],
+"structspdk__nvmf__fabric__connect__cmd.html#ad50a559d8da03253076c873f38445455":[12,0,185,0],
+"structspdk__nvmf__fabric__connect__cmd.html#adae6499d32240c57c032dc122799f5b8":[12,0,185,6],
+"structspdk__nvmf__fabric__connect__cmd.html#afd8d3d635e857880a5d7940e535bf4c1":[12,0,185,12],
+"structspdk__nvmf__fabric__connect__data.html":[12,0,186],
 "structspdk__nvmf__fabric__connect__data.html#a306ebb005098511f3ed4c23c679895cd":[12,0,186,0],
 "structspdk__nvmf__fabric__connect__data.html#a5dc5b810754c991dbdbc858413fc6d55":[12,0,186,2],
 "structspdk__nvmf__fabric__connect__data.html#a5ed1b7fae823e34162e4a674a9729249":[12,0,186,5],
@@ -240,14 +249,5 @@ var NAVTREEINDEX19 =
 "structspdk__nvmf__rdma__request__private__data.html":[12,0,221],
 "structspdk__nvmf__rdma__request__private__data.html#a183766f5d8261ed37ea4843609fee4fc":[12,0,221,0],
 "structspdk__nvmf__rdma__request__private__data.html#a46e0677b276600cbf7c27a4187e1777e":[12,0,221,5],
-"structspdk__nvmf__rdma__request__private__data.html#a58bc4e90c851c25ad7a44d4063d9b6ff":[12,0,221,1],
-"structspdk__nvmf__rdma__request__private__data.html#a76b70ab22c5a0d873d0b580cabfb46e7":[12,0,221,4],
-"structspdk__nvmf__rdma__request__private__data.html#a80d55d553f30809c46eb5c9f1d4b03b2":[12,0,221,2],
-"structspdk__nvmf__rdma__request__private__data.html#af3a3378e9669836eda97a3ac42775b50":[12,0,221,3],
-"structspdk__nvmf__rdma__transport__specific__address__subtype.html":[12,0,222],
-"structspdk__nvmf__rdma__transport__specific__address__subtype.html#a09218738c5c6c2ef9464d61286cb6348":[12,0,222,0],
-"structspdk__nvmf__rdma__transport__specific__address__subtype.html#a108fd99032da3e1f4f3f4cecdd05fec5":[12,0,222,2],
-"structspdk__nvmf__rdma__transport__specific__address__subtype.html#a384471df35ffecbd7abf408e655b0ee2":[12,0,222,4],
-"structspdk__nvmf__rdma__transport__specific__address__subtype.html#a7332600a60a55d05f8573789ce6a2ccf":[12,0,222,3],
-"structspdk__nvmf__rdma__transport__specific__address__subtype.html#a84940f112e43ee8aecc61b6eaf938567":[12,0,222,1]
+"structspdk__nvmf__rdma__request__private__data.html#a58bc4e90c851c25ad7a44d4063d9b6ff":[12,0,221,1]
 };
