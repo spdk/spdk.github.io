@@ -2,6 +2,7 @@ var log_8h =
 [
     [ "SPDK_ERRLOG", "log_8h.html#a6b7bfeecff42b840ca5ebd25ffa84439", null ],
     [ "SPDK_NOTICELOG", "log_8h.html#a4dcd04f102bfd52627f41e43123bc916", null ],
+    [ "SPDK_PRINTF", "log_8h.html#a013363047e6662f5353b8bffe1c079e6", null ],
     [ "SPDK_WARNLOG", "log_8h.html#abe2c8e734e26212d5aa718ef8de9d7e1", null ],
     [ "logfunc", "log_8h.html#a759e79a44bb8dd5733e81c7d213fd730", null ],
     [ "spdk_log_level", "log_8h.html#a188d351bd05093cba1d8594ee9988efd", [
