@@ -247,7 +247,7 @@ var NAVTREEINDEX9 =
 "overview.html#dir_tests":[2,6,0,6],
 "pages.html":[],
 "pci__ids_8h.html":[13,0,44],
-"pci__ids_8h.html#a01906a75cccea8dc0fa90fc44866128b":[13,0,44,63],
+"pci__ids_8h.html#a01906a75cccea8dc0fa90fc44866128b":[13,0,44,65],
 "pci__ids_8h.html#a08c71d77139622716929e3481b0e2b98":[13,0,44,44],
 "pci__ids_8h.html#a091d9d0b8e3f9d289a4b609466a68229":[13,0,44,42]
 };
