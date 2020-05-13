@@ -171,6 +171,12 @@ There should be a blank line between this first line and the rest of the commit 
 
 * If your commit fixes a GitHub issue, please include "Fixes #issue number" on a separate line so that GitHub can link the two.
 
+* If your commit adds a public API function, make sure that function begins with the `spdk_` prefix, add that function to the corresponding
+map file found in the same directory as the c file to which it belongs, and add it to a header file in `include/spdk` or `include/spdk_internal`.
+
+* Any library functions that are not to be exported outside of their parent library should not begin with the `spdk` prefix and should instead by
+properly namespaced by prepending the name of the library to the function name (e.g. nvme_, nvmf_, bdev_).
+
 Development on SPDK is all done based on the `master` branch, so start by making sure you have the latest. The below
 assumes `origin` is pointed at Gerrit.
 
