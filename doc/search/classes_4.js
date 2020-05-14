@@ -22,7 +22,6 @@ var searchData=
   ['spdk_5fbs_5fopts',['spdk_bs_opts',['../structspdk__bs__opts.html',1,'']]],
   ['spdk_5fbs_5ftype',['spdk_bs_type',['../structspdk__bs__type.html',1,'']]],
   ['spdk_5fcpuset',['spdk_cpuset',['../structspdk__cpuset.html',1,'']]],
-  ['spdk_5fcrc32_5ftable',['spdk_crc32_table',['../structspdk__crc32__table.html',1,'']]],
   ['spdk_5fdif',['spdk_dif',['../structspdk__dif.html',1,'']]],
   ['spdk_5fdif_5fctx',['spdk_dif_ctx',['../structspdk__dif__ctx.html',1,'']]],
   ['spdk_5fdif_5ferror',['spdk_dif_error',['../structspdk__dif__error.html',1,'']]],

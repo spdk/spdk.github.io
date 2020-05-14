@@ -1,10 +1,6 @@
 var NAVTREEINDEX2 =
 {
-"crc32_8h.html#a51fc46bdf29f35610a0c99ae6ad0e009":[13,0,15,6],
-"crc32_8h.html#a5320d8945f28627a2c5e5b15f1a997ee":[13,0,15,3],
-"crc32_8h.html#a7441b68a63656725b315959668b11866":[13,0,15,5],
-"crc32_8h.html#a948b27ad88d886a6136cdf7e7f20dd91":[13,0,15,4],
-"crc32_8h.html#ac770c030146f6feaaee33aac5196f451":[13,0,15,2],
+"crc32_8h.html#a5320d8945f28627a2c5e5b15f1a997ee":[13,0,15,0],
 "driver_modules.html":[7],
 "endian_8h.html":[13,0,16],
 "endian_8h.html#a1a4d465029018803013fd7993a901722":[13,0,16,6],
@@ -249,5 +245,9 @@ var NAVTREEINDEX2 =
 "gdb_macros.html":[4,5],
 "general.html":[5],
 "getting_started.html":[1,1],
-"getting_started.html#getting_started_building":[1,1,2]
+"getting_started.html#getting_started_building":[1,1,2],
+"getting_started.html#getting_started_examples":[1,1,4],
+"getting_started.html#getting_started_prerequisites":[1,1,1],
+"getting_started.html#getting_started_source":[1,1,0],
+"getting_started.html#getting_started_unittests":[1,1,3]
 };

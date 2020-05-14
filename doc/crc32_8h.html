@@ -142,8 +142,6 @@ $(document).ready(function(){initNavTree('crc32_8h.html','');});
 
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Data Structures</a> &#124;
-<a href="#define-members">Macros</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">crc32.h File Reference</div>  </div>
@@ -153,30 +151,8 @@ $(document).ready(function(){initNavTree('crc32_8h.html','');});
 <p>CRC-32 utility functions.  
 <a href="#details">More...</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Data Structures</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__crc32__table.html">spdk_crc32_table</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
-Macros</h2></td></tr>
-<tr class="memitem:a0017fa45727ebbc1acae94c8c7eaf3d6"><td class="memItemLeft" align="right" valign="top"><a id="a0017fa45727ebbc1acae94c8c7eaf3d6"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="crc32_8h.html#a0017fa45727ebbc1acae94c8c7eaf3d6">SPDK_CRC32_POLYNOMIAL_REFLECT</a>&#160;&#160;&#160;0xedb88320UL</td></tr>
-<tr class="memdesc:a0017fa45727ebbc1acae94c8c7eaf3d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">IEEE CRC-32 polynomial (bit reflected) <br /></td></tr>
-<tr class="separator:a0017fa45727ebbc1acae94c8c7eaf3d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac770c030146f6feaaee33aac5196f451"><td class="memItemLeft" align="right" valign="top"><a id="ac770c030146f6feaaee33aac5196f451"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="crc32_8h.html#ac770c030146f6feaaee33aac5196f451">SPDK_CRC32C_POLYNOMIAL_REFLECT</a>&#160;&#160;&#160;0x82f63b78UL</td></tr>
-<tr class="memdesc:ac770c030146f6feaaee33aac5196f451"><td class="mdescLeft">&#160;</td><td class="mdescRight">CRC-32C (Castagnoli) polynomial (bit reflected) <br /></td></tr>
-<tr class="separator:ac770c030146f6feaaee33aac5196f451"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a948b27ad88d886a6136cdf7e7f20dd91"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="crc32_8h.html#a948b27ad88d886a6136cdf7e7f20dd91">spdk_crc32_table_init</a> (struct <a class="el" href="structspdk__crc32__table.html">spdk_crc32_table</a> *table, uint32_t polynomial_reflect)</td></tr>
-<tr class="memdesc:a948b27ad88d886a6136cdf7e7f20dd91"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize a CRC32 lookup table for a given polynomial.  <a href="#a948b27ad88d886a6136cdf7e7f20dd91">More...</a><br /></td></tr>
-<tr class="separator:a948b27ad88d886a6136cdf7e7f20dd91"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7441b68a63656725b315959668b11866"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="crc32_8h.html#a7441b68a63656725b315959668b11866">spdk_crc32_update</a> (const struct <a class="el" href="structspdk__crc32__table.html">spdk_crc32_table</a> *table, const void *buf, size_t len, uint32_t crc)</td></tr>
-<tr class="memdesc:a7441b68a63656725b315959668b11866"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate a partial CRC-32 checksum.  <a href="#a7441b68a63656725b315959668b11866">More...</a><br /></td></tr>
-<tr class="separator:a7441b68a63656725b315959668b11866"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5320d8945f28627a2c5e5b15f1a997ee"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="crc32_8h.html#a5320d8945f28627a2c5e5b15f1a997ee">spdk_crc32_ieee_update</a> (const void *buf, size_t len, uint32_t crc)</td></tr>
 <tr class="memdesc:a5320d8945f28627a2c5e5b15f1a997ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate a partial CRC-32 IEEE checksum.  <a href="#a5320d8945f28627a2c5e5b15f1a997ee">More...</a><br /></td></tr>
 <tr class="separator:a5320d8945f28627a2c5e5b15f1a997ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -222,95 +198,6 @@ Functions</h2></td></tr>
 <p>Calculate a partial CRC-32 IEEE checksum. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">buf</td><td>Data buffer to checksum. </td></tr>
-    <tr><td class="paramname">len</td><td>Length of buf in bytes. </td></tr>
-    <tr><td class="paramname">crc</td><td>Previous CRC-32 value. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Updated CRC-32 value. </dd></dl>
-
-</div>
-</div>
-<a id="a948b27ad88d886a6136cdf7e7f20dd91"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a948b27ad88d886a6136cdf7e7f20dd91">&#9670;&nbsp;</a></span>spdk_crc32_table_init()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void spdk_crc32_table_init </td>
-          <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structspdk__crc32__table.html">spdk_crc32_table</a> *&#160;</td>
-          <td class="paramname"><em>table</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>polynomial_reflect</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Initialize a CRC32 lookup table for a given polynomial. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">table</td><td>Table to fill with precalculated CRC-32 data. </td></tr>
-    <tr><td class="paramname">polynomial_reflect</td><td>Bit-reflected CRC-32 polynomial. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a7441b68a63656725b315959668b11866"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7441b68a63656725b315959668b11866">&#9670;&nbsp;</a></span>spdk_crc32_update()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint32_t spdk_crc32_update </td>
-          <td>(</td>
-          <td class="paramtype">const struct <a class="el" href="structspdk__crc32__table.html">spdk_crc32_table</a> *&#160;</td>
-          <td class="paramname"><em>table</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const void *&#160;</td>
-          <td class="paramname"><em>buf</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>len</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>crc</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Calculate a partial CRC-32 checksum. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">table</td><td>CRC-32 table initialized with <a class="el" href="crc32_8h.html#a948b27ad88d886a6136cdf7e7f20dd91" title="Initialize a CRC32 lookup table for a given polynomial.">spdk_crc32_table_init()</a>. </td></tr>
     <tr><td class="paramname">buf</td><td>Data buffer to checksum. </td></tr>
     <tr><td class="paramname">len</td><td>Length of buf in bytes. </td></tr>
     <tr><td class="paramname">crc</td><td>Previous CRC-32 value. </td></tr>

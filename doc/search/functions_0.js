@@ -269,8 +269,6 @@ var searchData=
   ['spdk_5fcrc16_5ft10dif',['spdk_crc16_t10dif',['../crc16_8h.html#ac2cd983682857afc5394119d54c4861c',1,'crc16.h']]],
   ['spdk_5fcrc16_5ft10dif_5fcopy',['spdk_crc16_t10dif_copy',['../crc16_8h.html#abccce65e1e6b10d17ab6d4615d4a9407',1,'crc16.h']]],
   ['spdk_5fcrc32_5fieee_5fupdate',['spdk_crc32_ieee_update',['../crc32_8h.html#a5320d8945f28627a2c5e5b15f1a997ee',1,'crc32.h']]],
-  ['spdk_5fcrc32_5ftable_5finit',['spdk_crc32_table_init',['../crc32_8h.html#a948b27ad88d886a6136cdf7e7f20dd91',1,'crc32.h']]],
-  ['spdk_5fcrc32_5fupdate',['spdk_crc32_update',['../crc32_8h.html#a7441b68a63656725b315959668b11866',1,'crc32.h']]],
   ['spdk_5fcrc32c_5fupdate',['spdk_crc32c_update',['../crc32_8h.html#a51fc46bdf29f35610a0c99ae6ad0e009',1,'crc32.h']]],
   ['spdk_5fdelay_5fus',['spdk_delay_us',['../env_8h.html#ab2e338ce2d6510489ae83bfff226b8b1',1,'env.h']]],
   ['spdk_5fdma_5ffree',['spdk_dma_free',['../env_8h.html#acd01324e661a5d6deb59bd2bc6230de3',1,'env.h']]],
