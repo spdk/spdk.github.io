@@ -12,5 +12,6 @@ var idxd_8h =
     [ "spdk_idxd_reconfigure_chan", "idxd_8h.html#ad63e987b9046d9bfcd00a560dda8e1d2", null ],
     [ "spdk_idxd_set_config", "idxd_8h.html#acda8cf00ce61e00149a51bba5d8d2ec9", null ],
     [ "spdk_idxd_submit_copy", "idxd_8h.html#ac4e441dcb5b00b9f97835c07017f32ed", null ],
+    [ "spdk_idxd_submit_crc32c", "idxd_8h.html#abf5fb2b8e9bd7b8b2e01a665f7a0f16a", null ],
     [ "spdk_idxd_submit_fill", "idxd_8h.html#ac469f33c1519f5454b2dad56686a5d2f", null ]
 ];

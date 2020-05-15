@@ -171,7 +171,7 @@ Enumerations</h2></td></tr>
 <b>ACCEL_COMPARE</b> = 1 &lt;&lt; 3, 
 <br />
 &#160;&#160;<b>ACCEL_BATCH</b> = 1 &lt;&lt; 4, 
-<b>ACCEL_CRC</b> = 1 &lt;&lt; 5, 
+<b>ACCEL_CRC32C</b> = 1 &lt;&lt; 5, 
 <b>ACCEL_DIF</b> = 1 &lt;&lt; 6
 <br />
  }</td></tr>
@@ -204,6 +204,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="acce
 <tr class="memitem:a069e8bf561424ee3e78226721341a7b9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="accel__engine_8h.html#a069e8bf561424ee3e78226721341a7b9">spdk_accel_submit_fill</a> (struct spdk_accel_task *accel_req, struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *ch, void *dst, uint8_t fill, uint64_t nbytes, <a class="el" href="accel__engine_8h.html#a48593db52501b3dec9233f7112d37872">spdk_accel_completion_cb</a> cb)</td></tr>
 <tr class="memdesc:a069e8bf561424ee3e78226721341a7b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submit a fill request.  <a href="#a069e8bf561424ee3e78226721341a7b9">More...</a><br /></td></tr>
 <tr class="separator:a069e8bf561424ee3e78226721341a7b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe15a3c00b47461d6cd2e66fbae011ba"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="accel__engine_8h.html#afe15a3c00b47461d6cd2e66fbae011ba">spdk_accel_submit_crc32c</a> (struct spdk_accel_task *accel_req, struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *ch, uint32_t *dst, void *src, uint32_t seed, uint64_t nbytes, <a class="el" href="accel__engine_8h.html#a48593db52501b3dec9233f7112d37872">spdk_accel_completion_cb</a> cb)</td></tr>
+<tr class="memdesc:afe15a3c00b47461d6cd2e66fbae011ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submit a CRC-32C calculation request.  <a href="#afe15a3c00b47461d6cd2e66fbae011ba">More...</a><br /></td></tr>
+<tr class="separator:afe15a3c00b47461d6cd2e66fbae011ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af39d975565772672ebbae4e5d22b40d8"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="accel__engine_8h.html#af39d975565772672ebbae4e5d22b40d8">spdk_accel_task_size</a> (void)</td></tr>
 <tr class="memdesc:af39d975565772672ebbae4e5d22b40d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the size of an acceleration task.  <a href="#af39d975565772672ebbae4e5d22b40d8">More...</a><br /></td></tr>
 <tr class="separator:af39d975565772672ebbae4e5d22b40d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -452,6 +455,80 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="acce
     <tr><td class="paramname">src</td><td>Source to copy from. </td></tr>
     <tr><td class="paramname">nbytes</td><td>Length in bytes to copy. </td></tr>
     <tr><td class="paramname">cb</td><td>Called when this copy operation completes.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, negative errno on failure. </dd></dl>
+
+</div>
+</div>
+<a id="afe15a3c00b47461d6cd2e66fbae011ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afe15a3c00b47461d6cd2e66fbae011ba">&#9670;&nbsp;</a></span>spdk_accel_submit_crc32c()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_accel_submit_crc32c </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_accel_task *&#160;</td>
+          <td class="paramname"><em>accel_req</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *&#160;</td>
+          <td class="paramname"><em>ch</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t *&#160;</td>
+          <td class="paramname"><em>dst</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>src</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>seed</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>nbytes</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="accel__engine_8h.html#a48593db52501b3dec9233f7112d37872">spdk_accel_completion_cb</a>&#160;</td>
+          <td class="paramname"><em>cb</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Submit a CRC-32C calculation request. </p>
+<p>This operation will calculate the 4 byte CRC32-C for the given data.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">accel_req</td><td>Accel request task. </td></tr>
+    <tr><td class="paramname">ch</td><td>I/O channel to submit request to the accel engine. This channel can be obtained by the function <a class="el" href="accel__engine_8h.html#aedef5318137c2b093932164e23c93f0c" title="Get the I/O channel registered on the acceleration engine.">spdk_accel_engine_get_io_channel()</a>. </td></tr>
+    <tr><td class="paramname">dst</td><td>Destination to write the CRC-32C to. </td></tr>
+    <tr><td class="paramname">src</td><td>The source address for the data. </td></tr>
+    <tr><td class="paramname">seed</td><td>Four byte seed value. </td></tr>
+    <tr><td class="paramname">nbytes</td><td>Length in bytes. </td></tr>
+    <tr><td class="paramname">cb</td><td>Called when this CRC-32C operation completes.</td></tr>
   </table>
   </dd>
 </dl>

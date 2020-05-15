@@ -1,5 +1,8 @@
 var NAVTREEINDEX23 =
 {
+"unionspdk__nvme__cap__register.html#a9930c21595d81e7eefa8cca0e118450a":[12,0,83,7],
+"unionspdk__nvme__cap__register.html#a9bbd0513d0df169766c0f74adfc4dde1":[12,0,83,2],
+"unionspdk__nvme__cap__register.html#ac8d0f8ca7261552f9fa5894b0c637fd5":[12,0,83,9],
 "unionspdk__nvme__cap__register.html#ad4b6659be786f840893818e951fc1f3d":[12,0,83,6],
 "unionspdk__nvme__cap__register.html#ad8004bf4870d89a73f8d4d95db5d746d":[12,0,83,3],
 "unionspdk__nvme__cap__register.html#adae67761c7519837503eef9e72c3250f":[12,0,83,14],
@@ -246,8 +249,5 @@ var NAVTREEINDEX23 =
 "unionspdk__nvme__feat__temperature__threshold.html#a84d5fd17ea632d89dfab432a9e4f5833":[12,0,120,1],
 "unionspdk__nvme__feat__temperature__threshold.html#ad0c1659bef91e533c0ffe784e39871de":[12,0,120,5],
 "unionspdk__nvme__feat__temperature__threshold.html#af06b3af6385ffe96d1348a88232cbe54":[12,0,120,0],
-"unionspdk__nvme__feat__volatile__write__cache.html":[12,0,121],
-"unionspdk__nvme__feat__volatile__write__cache.html#a64ab3e6857bc95927e20aefd46d90b85":[12,0,121,1],
-"unionspdk__nvme__feat__volatile__write__cache.html#a910973ce5eb628dd9b06ab0c72a1cd33":[12,0,121,3],
-"unionspdk__nvme__feat__volatile__write__cache.html#a9c739134c216fc84bde9622d6d01eb58":[12,0,121,2]
+"unionspdk__nvme__feat__volatile__write__cache.html":[12,0,121]
 };
