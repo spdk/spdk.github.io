@@ -214,7 +214,7 @@ Configuring iSCSI Initiator</h2>
 <div class="fragment"><div class="line">echo noop &gt; /sys/block/sdc/queue/scheduler</div></div><!-- fragment --><p>Disable merging/coalescing (can be useful for precise workload measurements)</p>
 <div class="fragment"><div class="line">echo &quot;2&quot; &gt; /sys/block/sdc/queue/nomerges</div></div><!-- fragment --><p>Increase requests for block queue</p>
 <div class="fragment"><div class="line">echo &quot;1024&quot; &gt; /sys/block/sdc/queue/nr_requests</div></div><!-- fragment --><h3>Example: Configure simple iSCSI Target with one portal and two LUNs</h3>
-<p>Assuming we have one iSCSI Target server with portal at 10.0.0.1:3200, two LUNs (Malloc0 and Malloc), and accepting initiators on 10.0.0.2/32, like on diagram below:</p>
+<p>Assuming we have one iSCSI Target server with portal at 10.0.0.1:3200, two LUNs (Malloc0 and Malloc1), and accepting initiators on 10.0.0.2/32, like on diagram below:</p>
 <div class="image">
 <object type="image/svg+xml" data="iscsi_example.svg">iscsi_example.svg</object>
 <div class="caption">
