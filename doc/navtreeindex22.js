@@ -1,5 +1,6 @@
 var NAVTREEINDEX22 =
 {
+"structspdk__scsi__task.html#afc9a5efc76a958e8d228fb6316e4eccb":[12,0,271,22],
 "structspdk__scsi__tgt__port__desc.html":[12,0,272],
 "structspdk__scsi__tgt__port__desc.html#a3d7abed7b610535f8894020b44c498ea":[12,0,272,4],
 "structspdk__scsi__tgt__port__desc.html#a55d5e6e7e8f9aaf4a258e0f0cb79affe":[12,0,272,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX22 =
 "unionspdk__nvme__cap__register.html#a4b8860fc60a762e66979666ae1ac3563":[12,0,83,12],
 "unionspdk__nvme__cap__register.html#a54fe32e6dcbb7e98f67b833a1aa3ab79":[12,0,83,1],
 "unionspdk__nvme__cap__register.html#a6d6c8f5ede010b705296692e72e0b645":[12,0,83,13],
-"unionspdk__nvme__cap__register.html#a75640e3e0a03f22456503acbebc20f46":[12,0,83,0],
-"unionspdk__nvme__cap__register.html#a7ca23ffbd756451f561b8972160f8281":[12,0,83,8]
+"unionspdk__nvme__cap__register.html#a75640e3e0a03f22456503acbebc20f46":[12,0,83,0]
 };
