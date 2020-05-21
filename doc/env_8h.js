@@ -60,6 +60,7 @@ var env_8h =
     [ "spdk_mem_map_set_translation", "env_8h.html#a3314f2917141bf11f5b125c306d4397d", null ],
     [ "spdk_mem_map_translate", "env_8h.html#a99549dc9905683f1dea50ff79d0c5651", null ],
     [ "spdk_mem_register", "env_8h.html#ae046c45de2849d15f29dedc52e915ad7", null ],
+    [ "spdk_mem_reserve", "env_8h.html#a981ce6d12bb1d9eeb828c6c7bd2ab585", null ],
     [ "spdk_mem_unregister", "env_8h.html#a3ffa0c74e2d73703266cad2d5d103f09", null ],
     [ "spdk_mempool_count", "env_8h.html#a434cdf73691c745e717b8b794b2acb52", null ],
     [ "spdk_mempool_create", "env_8h.html#a8d4f7842191990b49694495bba10fcbd", null ],

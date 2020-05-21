@@ -1,5 +1,8 @@
 var NAVTREEINDEX24 =
 {
+"unionspdk__nvme__feat__temperature__threshold.html#a84d5fd17ea632d89dfab432a9e4f5833":[12,0,120,1],
+"unionspdk__nvme__feat__temperature__threshold.html#ad0c1659bef91e533c0ffe784e39871de":[12,0,120,5],
+"unionspdk__nvme__feat__temperature__threshold.html#af06b3af6385ffe96d1348a88232cbe54":[12,0,120,0],
 "unionspdk__nvme__feat__volatile__write__cache.html":[12,0,121],
 "unionspdk__nvme__feat__volatile__write__cache.html#a64ab3e6857bc95927e20aefd46d90b85":[12,0,121,1],
 "unionspdk__nvme__feat__volatile__write__cache.html#a910973ce5eb628dd9b06ab0c72a1cd33":[12,0,121,3],

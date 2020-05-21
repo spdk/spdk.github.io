@@ -151,10 +151,15 @@ v20.07: (Upcoming Release)</h1>
 <p>A new API was added <code>spdk_accel_get_capabilities</code> that allows applications to query the capabilities of the currently enabled accel engine back-end.</p>
 <p>A new capability, CRC-32C, was added via <code>spdk_accel_submit_crc32c</code>.</p>
 <p>The software accel engine implemenation has added support for CRC-32C.</p>
+<p>A new capability, compare, was added via <code>spdk_accel_submit_compare</code>.</p>
+<p>The software accel engine implemenation has added support forCRC-32Cc and compare.</p>
 <h2>idxd</h2>
 <p>IDXD engine support for CRC-32C has been added.</p>
+<h2>rdma</h2>
+<p>A new <code>rdma</code> library has been added. It is an abstraction layer over different RDMA providers. Two providers are available - verbs (used by default when RDMA is enabled or enabled explicitly using &ndash;with-rdma=verbs) and mlx5 Direct Verbs aka DV (enabled by &ndash;with-rdma=mlx5_dv). Using mlx5_dv requires libmlx5 installed on the system.</p>
 <h1><a class="anchor" id="changelog-v20-04"></a>
 v20.04:</h1>
+<p>IDXD engine support for compare has been added.</p>
 <h2>configuration</h2>
 <p>Legacy INI style configuration for SPDK applications has been deprecated and will be removed in future release. Please switch to JSON-RPC configuration files and/or RPC driven run-time configuration.</p>
 <h2>copy</h2>

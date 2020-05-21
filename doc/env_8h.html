@@ -539,6 +539,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_
 <tr class="memitem:a3ffa0c74e2d73703266cad2d5d103f09"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_8h.html#a3ffa0c74e2d73703266cad2d5d103f09">spdk_mem_unregister</a> (void *vaddr, size_t len)</td></tr>
 <tr class="memdesc:a3ffa0c74e2d73703266cad2d5d103f09"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unregister the specified memory region from vtophys address translation.  <a href="#a3ffa0c74e2d73703266cad2d5d103f09">More...</a><br /></td></tr>
 <tr class="separator:a3ffa0c74e2d73703266cad2d5d103f09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a981ce6d12bb1d9eeb828c6c7bd2ab585"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_8h.html#a981ce6d12bb1d9eeb828c6c7bd2ab585">spdk_mem_reserve</a> (void *vaddr, size_t len)</td></tr>
+<tr class="memdesc:a981ce6d12bb1d9eeb828c6c7bd2ab585"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reserve the address space specified in all memory maps.  <a href="#a981ce6d12bb1d9eeb828c6c7bd2ab585">More...</a><br /></td></tr>
+<tr class="separator:a981ce6d12bb1d9eeb828c6c7bd2ab585"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Encapsulated third-party dependencies. </p>
@@ -1601,6 +1604,45 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 on success, negative errno on failure. </dd></dl>
+
+</div>
+</div>
+<a id="a981ce6d12bb1d9eeb828c6c7bd2ab585"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a981ce6d12bb1d9eeb828c6c7bd2ab585">&#9670;&nbsp;</a></span>spdk_mem_reserve()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_mem_reserve </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>vaddr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Reserve the address space specified in all memory maps. </p>
+<p>This pre-allocates the necessary space in the memory maps such that future calls to <a class="el" href="env_8h.html#ae046c45de2849d15f29dedc52e915ad7" title="Register the specified memory region for address translation.">spdk_mem_register()</a> on that region require no internal memory allocations.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">vaddr</td><td>Virtual address to reserve </td></tr>
+    <tr><td class="paramname">len</td><td>Length in bytes of vaddr</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, negated errno on failure. </dd></dl>
 
 </div>
 </div>

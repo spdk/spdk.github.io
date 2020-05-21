@@ -201,6 +201,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="acce
 <tr class="memitem:a165823e33b9a1bd61ca015b03fd0bc26"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="accel__engine_8h.html#a165823e33b9a1bd61ca015b03fd0bc26">spdk_accel_submit_copy</a> (struct spdk_accel_task *accel_req, struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *ch, void *dst, void *src, uint64_t nbytes, <a class="el" href="accel__engine_8h.html#a48593db52501b3dec9233f7112d37872">spdk_accel_completion_cb</a> cb)</td></tr>
 <tr class="memdesc:a165823e33b9a1bd61ca015b03fd0bc26"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submit a copy request.  <a href="#a165823e33b9a1bd61ca015b03fd0bc26">More...</a><br /></td></tr>
 <tr class="separator:a165823e33b9a1bd61ca015b03fd0bc26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a025d630589ff531b63024ff41276e7a2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="accel__engine_8h.html#a025d630589ff531b63024ff41276e7a2">spdk_accel_submit_compare</a> (struct spdk_accel_task *accel_req, struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *ch, void *src1, void *src2, uint64_t nbytes, <a class="el" href="accel__engine_8h.html#a48593db52501b3dec9233f7112d37872">spdk_accel_completion_cb</a> cb)</td></tr>
+<tr class="memdesc:a025d630589ff531b63024ff41276e7a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submit a compare request.  <a href="#a025d630589ff531b63024ff41276e7a2">More...</a><br /></td></tr>
+<tr class="separator:a025d630589ff531b63024ff41276e7a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a069e8bf561424ee3e78226721341a7b9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="accel__engine_8h.html#a069e8bf561424ee3e78226721341a7b9">spdk_accel_submit_fill</a> (struct spdk_accel_task *accel_req, struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *ch, void *dst, uint8_t fill, uint64_t nbytes, <a class="el" href="accel__engine_8h.html#a48593db52501b3dec9233f7112d37872">spdk_accel_completion_cb</a> cb)</td></tr>
 <tr class="memdesc:a069e8bf561424ee3e78226721341a7b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submit a fill request.  <a href="#a069e8bf561424ee3e78226721341a7b9">More...</a><br /></td></tr>
 <tr class="separator:a069e8bf561424ee3e78226721341a7b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -393,6 +396,72 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="acce
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>bitmap of capabilities defined by enum accel_capability. </dd></dl>
+
+</div>
+</div>
+<a id="a025d630589ff531b63024ff41276e7a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a025d630589ff531b63024ff41276e7a2">&#9670;&nbsp;</a></span>spdk_accel_submit_compare()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_accel_submit_compare </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_accel_task *&#160;</td>
+          <td class="paramname"><em>accel_req</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *&#160;</td>
+          <td class="paramname"><em>ch</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>src1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>src2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>nbytes</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="accel__engine_8h.html#a48593db52501b3dec9233f7112d37872">spdk_accel_completion_cb</a>&#160;</td>
+          <td class="paramname"><em>cb</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Submit a compare request. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">accel_req</td><td>Accel request task. </td></tr>
+    <tr><td class="paramname">ch</td><td>I/O channel to submit request to the accel engine. This channel can be obtained by the function <a class="el" href="accel__engine_8h.html#aedef5318137c2b093932164e23c93f0c" title="Get the I/O channel registered on the acceleration engine.">spdk_accel_engine_get_io_channel()</a>. </td></tr>
+    <tr><td class="paramname">src1</td><td>First location to perform compare on. </td></tr>
+    <tr><td class="paramname">src2</td><td>Second location to perform compare on. </td></tr>
+    <tr><td class="paramname">nbytes</td><td>Length in bytes to compare. </td></tr>
+    <tr><td class="paramname">cb</td><td>Called when this compare operation completes.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, any other value means there was a miscompare. </dd></dl>
 
 </div>
 </div>

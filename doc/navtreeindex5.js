@@ -1,5 +1,8 @@
 var NAVTREEINDEX5 =
 {
+"jsonrpc.html#rpc_iscsi_auth_group_remove_secret":[3,7,3,7],
+"jsonrpc.html#rpc_iscsi_create_auth_group":[3,7,3,3],
+"jsonrpc.html#rpc_iscsi_create_auth_group_secret":[3,7,3,3,0],
 "jsonrpc.html#rpc_iscsi_create_initiator_group":[3,7,3,9],
 "jsonrpc.html#rpc_iscsi_create_portal_group":[3,7,3,19],
 "jsonrpc.html#rpc_iscsi_create_target_node":[3,7,3,13],
@@ -246,8 +249,5 @@ var NAVTREEINDEX5 =
 "nvme_8h.html#a0d24c0b2b0b2a22b0c0af2ca2e157e04":[13,0,36,125],
 "nvme_8h.html#a0e1fcb43970ea531567ee00d4ee0675b":[13,0,36,20],
 "nvme_8h.html#a0e7a6bb3ac85f99f936290f679399039":[13,0,36,41],
-"nvme_8h.html#a0f14ec05ce3af11f089a79d47739bd74":[13,0,36,137],
-"nvme_8h.html#a10282695461985f58f54de022911745e":[13,0,36,76],
-"nvme_8h.html#a108d6b722c8837593dec16f30376d182":[13,0,36,96],
-"nvme_8h.html#a13f745d239dab9b8f934fae2ad4984a2":[13,0,36,30]
+"nvme_8h.html#a0f14ec05ce3af11f089a79d47739bd74":[13,0,36,137]
 };
