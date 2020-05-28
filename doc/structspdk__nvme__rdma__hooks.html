@@ -159,6 +159,9 @@ Data Fields</h2></td></tr>
 <tr class="memitem:ab20f458fc7c024017bf09979a85037d8"><td class="memItemLeft" align="right" valign="top">uint64_t(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__rdma__hooks.html#ab20f458fc7c024017bf09979a85037d8">get_rkey</a> )(struct ibv_pd *pd, void *buf, size_t size)</td></tr>
 <tr class="memdesc:ab20f458fc7c024017bf09979a85037d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get an InfiniBand Verbs memory region for a buffer.  <a href="#ab20f458fc7c024017bf09979a85037d8">More...</a><br /></td></tr>
 <tr class="separator:ab20f458fc7c024017bf09979a85037d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf04de4700ca8baf3570b77f92fa68df"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__rdma__hooks.html#abf04de4700ca8baf3570b77f92fa68df">put_rkey</a> )(uint64_t key)</td></tr>
+<tr class="memdesc:abf04de4700ca8baf3570b77f92fa68df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Put back keys got from get_rkey.  <a href="#abf04de4700ca8baf3570b77f92fa68df">More...</a><br /></td></tr>
+<tr class="separator:abf04de4700ca8baf3570b77f92fa68df"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>RDMA Transport Hooks. </p>
@@ -209,6 +212,28 @@ Data Fields</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Infiniband remote key (rkey) for this buf </dd></dl>
+
+</div>
+</div>
+<a id="abf04de4700ca8baf3570b77f92fa68df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf04de4700ca8baf3570b77f92fa68df">&#9670;&nbsp;</a></span>put_rkey</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void(* spdk_nvme_rdma_hooks::put_rkey) (uint64_t key)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Put back keys got from get_rkey. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">key</td><td>The Infiniband remote key (rkey) got from get_rkey </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
