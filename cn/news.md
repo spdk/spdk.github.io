@@ -39,7 +39,11 @@ lang: cn
 > “ ……2018年双11，随着存储计算分离技术的大规模使用，标志着数据库进入了一个新的时代……”
 
 ## 红包场景
-[SPDK+NVMe SSD对接Virtio支撑红包场景性能](https://mp.weixin.qq.com/s/nP62NpX0NAo4BZhpkAWaQg)
+### [SPDK+NVMe SSD对接Virtio支撑红包场景性能](https://mp.weixin.qq.com/s/nP62NpX0NAo4BZhpkAWaQg)
 > “最终在块设备层使用了标准virtio blk驱动；硬件驱动使用了SPDK工具集；硬件使用了NVMe SSD……”
+
+## 深信服(Sangfor)
+### [三万英尺看分布式存储中本地存储引擎](https://mp.weixin.qq.com/s?__biz=MjM5ODI5Njc2MA==&mid=2655831732&idx=2&sn=2ef2f5b338fc7145d87fe7685d9335aa&chksm=bd748b638a03027558f6925d48fe12ba27aedd5aa749dddad5e40592bf7e79249c144d27a200&mpshare=1&scene=1&srcid=&sharer_sharetime=1590671665398&sharer_shareid=bce63ba0449f498eb13c109c5eaef06d&exportkey=A%2FGUxq5dqdlstzBGYEhU9l0%3D&pass_ticket=QOTscjJWy3u2k7TmQww%2FS9XnYJkCuG109UsYE3PYjmwWTEFMXGD09hVFmSqMD30e#rd)
+> “我们简单介绍深信服企业级分布式存储EDS团队在高性能本地存储的实践之路。PFStore(Phoenix Fast Store)是EDS团队自研的基于SPDK的用户态本地存储引擎......”
 
 ## 更多SPDK使用案例，请参考[news]({{ baseurl_rel }}/news)页面
