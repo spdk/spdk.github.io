@@ -149,7 +149,7 @@ $(document).ready(function(){initNavTree('idxd_8h.html','');});
 </div><!--header-->
 <div class="contents">
 
-<p>IDXD DMA engine driver public interface.  
+<p>IDXD accel engine driver public interface.  
 <a href="#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
@@ -182,13 +182,13 @@ Functions</h2></td></tr>
 <tr class="memdesc:acda8cf00ce61e00149a51bba5d8d2ec9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the IDXD configuration.  <a href="#acda8cf00ce61e00149a51bba5d8d2ec9">More...</a><br /></td></tr>
 <tr class="separator:acda8cf00ce61e00149a51bba5d8d2ec9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac4e441dcb5b00b9f97835c07017f32ed"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="idxd_8h.html#ac4e441dcb5b00b9f97835c07017f32ed">spdk_idxd_submit_copy</a> (struct spdk_idxd_io_channel *chan, void *dst, const void *src, uint64_t nbytes, <a class="el" href="idxd_8h.html#a75c066c5425700c49f077e20484b50c1">spdk_idxd_req_cb</a> cb_fn, void *cb_arg)</td></tr>
-<tr class="memdesc:ac4e441dcb5b00b9f97835c07017f32ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Build and submit a DMA engine memory copy request.  <a href="#ac4e441dcb5b00b9f97835c07017f32ed">More...</a><br /></td></tr>
+<tr class="memdesc:ac4e441dcb5b00b9f97835c07017f32ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Build and submit a accel engine memory copy request.  <a href="#ac4e441dcb5b00b9f97835c07017f32ed">More...</a><br /></td></tr>
 <tr class="separator:ac4e441dcb5b00b9f97835c07017f32ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a13e5209991017f518cfcc95e7d978aff"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="idxd_8h.html#a13e5209991017f518cfcc95e7d978aff">spdk_idxd_submit_compare</a> (struct spdk_idxd_io_channel *chan, void *src1, const void *src2, uint64_t nbytes, <a class="el" href="idxd_8h.html#a75c066c5425700c49f077e20484b50c1">spdk_idxd_req_cb</a> cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:a13e5209991017f518cfcc95e7d978aff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Build and submit a memory compare request.  <a href="#a13e5209991017f518cfcc95e7d978aff">More...</a><br /></td></tr>
 <tr class="separator:a13e5209991017f518cfcc95e7d978aff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac469f33c1519f5454b2dad56686a5d2f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="idxd_8h.html#ac469f33c1519f5454b2dad56686a5d2f">spdk_idxd_submit_fill</a> (struct spdk_idxd_io_channel *chan, void *dst, uint64_t fill_pattern, uint64_t nbytes, <a class="el" href="idxd_8h.html#a75c066c5425700c49f077e20484b50c1">spdk_idxd_req_cb</a> cb_fn, void *cb_arg)</td></tr>
-<tr class="memdesc:ac469f33c1519f5454b2dad56686a5d2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Build and submit a DMA engine memory fill request.  <a href="#ac469f33c1519f5454b2dad56686a5d2f">More...</a><br /></td></tr>
+<tr class="memdesc:ac469f33c1519f5454b2dad56686a5d2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Build and submit a accel engine memory fill request.  <a href="#ac469f33c1519f5454b2dad56686a5d2f">More...</a><br /></td></tr>
 <tr class="separator:ac469f33c1519f5454b2dad56686a5d2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abf5fb2b8e9bd7b8b2e01a665f7a0f16a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="idxd_8h.html#abf5fb2b8e9bd7b8b2e01a665f7a0f16a">spdk_idxd_submit_crc32c</a> (struct spdk_idxd_io_channel *chan, uint32_t *dst, void *src, uint32_t seed, uint64_t nbytes, <a class="el" href="idxd_8h.html#a75c066c5425700c49f077e20484b50c1">spdk_idxd_req_cb</a> cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:abf5fb2b8e9bd7b8b2e01a665f7a0f16a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Build and submit a memory CRC32-C request.  <a href="#abf5fb2b8e9bd7b8b2e01a665f7a0f16a">More...</a><br /></td></tr>
@@ -204,7 +204,7 @@ Functions</h2></td></tr>
 <tr class="separator:a0de9abe0697950149cd1fe830717be90"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>IDXD DMA engine driver public interface. </p>
+<div class="textblock"><p>IDXD accel engine driver public interface. </p>
 </div><h2 class="groupheader">Typedef Documentation</h2>
 <a id="a73cec9547e6aac6d71a033c27f3de188"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a73cec9547e6aac6d71a033c27f3de188">&#9670;&nbsp;</a></span>spdk_idxd_attach_cb</h2>
@@ -638,7 +638,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Build and submit a DMA engine memory copy request. </p>
+<p>Build and submit a accel engine memory copy request. </p>
 <p>This function will build the copy descriptor and then immediately submit by writing to the proper device portal.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -779,7 +779,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Build and submit a DMA engine memory fill request. </p>
+<p>Build and submit a accel engine memory fill request. </p>
 <p>This function will build the fill descriptor and then immediately submit by writing to the proper device portal.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
