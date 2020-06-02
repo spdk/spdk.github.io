@@ -80,18 +80,18 @@ var NAVTREEINDEX =
 "pci__ids_8h.html#a08c71d77139622716929e3481b0e2b98",
 "scsi__spec_8h.html#a3fddde96c410de00042329c0da4142aea2a6692637a930fb120586e485c937951",
 "scsi__spec_8h.html#aca4b95e35566a60195e59be74e5a1218a7c4c65276097701c11ae39f802144cb4",
-"structiscsi__bhs__r2t.html#a9f156cd5af22f2c9a58e6682eb805f9c",
-"structspdk__bdev__io.html#aec576e7766af0ee744ced101de905ff5",
-"structspdk__io__channel.html#ad223d5801448c0a8f859323ba44cb927",
-"structspdk__nvme__cmd.html#a7b4026ea90f5dc802c19b919da41c9c1",
-"structspdk__nvme__fw__commit.html#af5bbf67aa6f4a82d1fef951e436e34fe",
-"structspdk__nvme__reservation__notification__log.html#ac3ec3beaa7aec5a7c2bc5dad10932d48",
-"structspdk__nvmf__fabric__connect__cmd.html",
-"structspdk__nvmf__rdma__reject__private__data.html#a5122d45baefbf1559b0540e2e12921c2",
-"structspdk__opal__d0__tper__feat.html#a2047a09b5516d0e93fc494f24d07c4ba",
-"structspdk__scsi__task.html#aeb209bc3f191f792707c7d4e7b1fe4e4",
-"unionspdk__nvme__cap__register.html#a4b8860fc60a762e66979666ae1ac3563",
-"unionspdk__nvme__feat__temperature__threshold.html#a6e4f94cd47b15cc2e3dab12b7f222044"
+"structiscsi__bhs__r2t.html#a920822bf62b0c3a0a43c701f4b7d021a",
+"structspdk__bdev__io.html#aea98eb4a235dc71bc9bf4040c53a5977",
+"structspdk__io__channel.html#a33ad82beb7b687af8b504cc5556c62fa",
+"structspdk__nvme__cmd.html#a52074e9fb54722f7363705b8e24842bd",
+"structspdk__nvme__fw__commit.html#a5533adaa1a3efdd7c6f5c02c4f86f6d7",
+"structspdk__nvme__reservation__notification__log.html#a5dff08d5f382d17e429ff5509eef9aa8",
+"structspdk__nvmf__fabric__auth__send__cmd.html#ac7fa2e1f4d8b36f5ab1a7a490d795c41",
+"structspdk__nvmf__rdma__device__stat.html#ae96d8d2c558315a1a24710752ab14a63",
+"structspdk__opal__d0__single__user__mode__feat.html#af55f412611aa8f2b5b3448931542d39a",
+"structspdk__scsi__task.html#acc6e7264981c87c73d1634091130ec97",
+"unionspdk__nvme__bprsel__register.html#a615e9f455cb7a36f1820dae8fd9dc3ae",
+"unionspdk__nvme__feat__software__progress__marker.html#a7daee58fa1e18cf11a6e6989f98f6ff1"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

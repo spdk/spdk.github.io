@@ -1,5 +1,10 @@
 var NAVTREEINDEX23 =
 {
+"unionspdk__nvme__bprsel__register.html#a615e9f455cb7a36f1820dae8fd9dc3ae":[12,0,82,2],
+"unionspdk__nvme__bprsel__register.html#aec5aa2286f6c15c07cd269ac3ef35613":[12,0,82,1],
+"unionspdk__nvme__cap__register.html":[12,0,83],
+"unionspdk__nvme__cap__register.html#a0735764b17145514c455788b5c3ed21d":[12,0,83,11],
+"unionspdk__nvme__cap__register.html#a37a043c068e8992317712cc7d95e9249":[12,0,83,10],
 "unionspdk__nvme__cap__register.html#a4b8860fc60a762e66979666ae1ac3563":[12,0,83,12],
 "unionspdk__nvme__cap__register.html#a54fe32e6dcbb7e98f67b833a1aa3ab79":[12,0,83,1],
 "unionspdk__nvme__cap__register.html#a6d6c8f5ede010b705296692e72e0b645":[12,0,83,13],
@@ -244,10 +249,5 @@ var NAVTREEINDEX23 =
 "unionspdk__nvme__feat__reservation__persistence.html#af5cc2a7cdbf76b267dea8ea970ae3643":[12,0,118,0],
 "unionspdk__nvme__feat__software__progress__marker.html":[12,0,119],
 "unionspdk__nvme__feat__software__progress__marker.html#a068b7aa9ea34b8e38dfcf7b8f7d25f70":[12,0,119,1],
-"unionspdk__nvme__feat__software__progress__marker.html#a22cdd614671f8b7a383463bebd28a384":[12,0,119,2],
-"unionspdk__nvme__feat__software__progress__marker.html#a7daee58fa1e18cf11a6e6989f98f6ff1":[12,0,119,3],
-"unionspdk__nvme__feat__software__progress__marker.html#ac87cb16512398e30a3be25bdf02adecc":[12,0,119,0],
-"unionspdk__nvme__feat__temperature__threshold.html":[12,0,120],
-"unionspdk__nvme__feat__temperature__threshold.html#a384b25c620ca81031b6260f6b0e16142":[12,0,120,3],
-"unionspdk__nvme__feat__temperature__threshold.html#a611a74458d69f25c9151ec7ae81a6b73":[12,0,120,4]
+"unionspdk__nvme__feat__software__progress__marker.html#a22cdd614671f8b7a383463bebd28a384":[12,0,119,2]
 };

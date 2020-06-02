@@ -2,6 +2,7 @@ var sock_8h =
 [
     [ "spdk_sock_request", "structspdk__sock__request.html", "structspdk__sock__request" ],
     [ "__sock_request_internal", "structspdk__sock__request_1_1____sock__request__internal.html", "structspdk__sock__request_1_1____sock__request__internal" ],
+    [ "spdk_sock_impl_opts", "structspdk__sock__impl__opts.html", "structspdk__sock__impl__opts" ],
     [ "spdk_sock_opts", "structspdk__sock__opts.html", "structspdk__sock__opts" ],
     [ "SPDK_SOCK_REQUEST_IOV", "sock_8h.html#af21c988574749f3ea04f1e78e9533aab", null ],
     [ "spdk_sock_cb", "sock_8h.html#ae297ae75e566b35635d20b959daa7741", null ],
@@ -20,6 +21,8 @@ var sock_8h =
     [ "spdk_sock_group_poll", "sock_8h.html#aca9341be3f9ec5bd7e571f328e749328", null ],
     [ "spdk_sock_group_poll_count", "sock_8h.html#a73c5abe4d97ecc3521c37b345f7fbfd4", null ],
     [ "spdk_sock_group_remove_sock", "sock_8h.html#ad52142b9c60b305a1eaaf869a321c790", null ],
+    [ "spdk_sock_impl_get_opts", "sock_8h.html#ab6cbdc2532b80f5c9404af222ee03d23", null ],
+    [ "spdk_sock_impl_set_opts", "sock_8h.html#a81541bb1b8ae42b952c82988c482e99d", null ],
     [ "spdk_sock_is_connected", "sock_8h.html#a60886d0bbf4dc4e6722e6300e7b3e10f", null ],
     [ "spdk_sock_is_ipv4", "sock_8h.html#a73c174585e034587164b1a56d6e8a115", null ],
     [ "spdk_sock_is_ipv6", "sock_8h.html#ae2fc8fd68b9988e2ec771a82914dcc80", null ],

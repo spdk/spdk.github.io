@@ -157,6 +157,9 @@ v20.07: (Upcoming Release)</h1>
 <p>IDXD engine support for CRC-32C has been added.</p>
 <h2>rdma</h2>
 <p>A new <code>rdma</code> library has been added. It is an abstraction layer over different RDMA providers. Two providers are available - verbs (used by default when RDMA is enabled or enabled explicitly using &ndash;with-rdma=verbs) and mlx5 Direct Verbs aka DV (enabled by &ndash;with-rdma=mlx5_dv). Using mlx5_dv requires libmlx5 installed on the system.</p>
+<h2>sock</h2>
+<p>Added <code>spdk_sock_impl_get_opts</code> and <code>spdk_sock_impl_set_opts</code> functions to set/get socket layer configuration options. Options can be set independently for each implementation.</p>
+<p>Added <code>recv_buf_size</code> and 'send_buf_size' socket layer options. They are used only in posix implementation.</p>
 <h1><a class="anchor" id="changelog-v20-04"></a>
 v20.04:</h1>
 <p>IDXD engine support for compare has been added.</p>
