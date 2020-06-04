@@ -1668,28 +1668,30 @@ nvmf_create_transport method</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">max_queue_depth  </td><td class="markdownTableBodyNone">Optional  </td><td class="markdownTableBodyNone">number  </td><td class="markdownTableBodyNone">Max number of outstanding I/O per queue   </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">max_qpairs_per_ctrlr  </td><td class="markdownTableBodyNone">Optional  </td><td class="markdownTableBodyNone">number  </td><td class="markdownTableBodyNone">Max number of SQ and CQ per controller   </td></tr>
+<td class="markdownTableBodyNone">max_qpairs_per_ctrlr  </td><td class="markdownTableBodyNone">Optional  </td><td class="markdownTableBodyNone">number  </td><td class="markdownTableBodyNone">Max number of SQ and CQ per controller (deprecated, use max_io_qpairs_per_ctrlr)   </td></tr>
 <tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">max_io_qpairs_per_ctrlr  </td><td class="markdownTableBodyNone">Optional  </td><td class="markdownTableBodyNone">number  </td><td class="markdownTableBodyNone">Max number of IO qpairs per controller   </td></tr>
+<tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">in_capsule_data_size  </td><td class="markdownTableBodyNone">Optional  </td><td class="markdownTableBodyNone">number  </td><td class="markdownTableBodyNone">Max number of in-capsule data size   </td></tr>
-<tr class="markdownTableRowEven">
+<tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">max_io_size  </td><td class="markdownTableBodyNone">Optional  </td><td class="markdownTableBodyNone">number  </td><td class="markdownTableBodyNone">Max I/O size (bytes)   </td></tr>
-<tr class="markdownTableRowOdd">
+<tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">io_unit_size  </td><td class="markdownTableBodyNone">Optional  </td><td class="markdownTableBodyNone">number  </td><td class="markdownTableBodyNone">I/O unit size (bytes)   </td></tr>
-<tr class="markdownTableRowEven">
+<tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">max_aq_depth  </td><td class="markdownTableBodyNone">Optional  </td><td class="markdownTableBodyNone">number  </td><td class="markdownTableBodyNone">Max number of admin cmds per AQ   </td></tr>
-<tr class="markdownTableRowOdd">
+<tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">num_shared_buffers  </td><td class="markdownTableBodyNone">Optional  </td><td class="markdownTableBodyNone">number  </td><td class="markdownTableBodyNone">The number of pooled data buffers available to the transport   </td></tr>
-<tr class="markdownTableRowEven">
+<tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">buf_cache_size  </td><td class="markdownTableBodyNone">Optional  </td><td class="markdownTableBodyNone">number  </td><td class="markdownTableBodyNone">The number of shared buffers to reserve for each poll group   </td></tr>
-<tr class="markdownTableRowOdd">
+<tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">max_srq_depth  </td><td class="markdownTableBodyNone">Optional  </td><td class="markdownTableBodyNone">number  </td><td class="markdownTableBodyNone">The number of elements in a per-thread shared receive queue (RDMA only)   </td></tr>
-<tr class="markdownTableRowEven">
+<tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">no_srq  </td><td class="markdownTableBodyNone">Optional  </td><td class="markdownTableBodyNone">boolean  </td><td class="markdownTableBodyNone">Disable shared receive queue even for devices that support it. (RDMA only)   </td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">c2h_success  </td><td class="markdownTableBodyNone">Optional  </td><td class="markdownTableBodyNone">boolean  </td><td class="markdownTableBodyNone">Disable C2H success optimization (TCP only)   </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">dif_insert_or_strip  </td><td class="markdownTableBodyNone">Optional  </td><td class="markdownTableBodyNone">boolean  </td><td class="markdownTableBodyNone">Enable DIF insert for write I/O and DIF strip for read I/O DIF (TCP only)   </td></tr>
+<td class="markdownTableBodyNone">c2h_success  </td><td class="markdownTableBodyNone">Optional  </td><td class="markdownTableBodyNone">boolean  </td><td class="markdownTableBodyNone">Disable C2H success optimization (TCP only)   </td></tr>
 <tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">dif_insert_or_strip  </td><td class="markdownTableBodyNone">Optional  </td><td class="markdownTableBodyNone">boolean  </td><td class="markdownTableBodyNone">Enable DIF insert for write I/O and DIF strip for read I/O DIF   </td></tr>
+<tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">sock_priority  </td><td class="markdownTableBodyNone">Optional  </td><td class="markdownTableBodyNone">number  </td><td class="markdownTableBodyNone">The socket priority of the connection owned by this transport (TCP only)   </td></tr>
 </table>
 <h3>Example</h3>
@@ -1927,7 +1929,7 @@ nvmf_get_transports method</h2>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;method&quot;: &quot;nvmf_get_transports&quot;</div><div class="line">}</div></div><!-- fragment --><p>Example response:</p>
-<div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: [</div><div class="line">    {</div><div class="line">      &quot;type&quot;: &quot;RDMA&quot;.</div><div class="line">      &quot;max_queue_depth&quot;: 128,</div><div class="line">      &quot;max_qpairs_per_ctrlr&quot;: 64,</div><div class="line">      &quot;in_capsule_data_size&quot;: 4096,</div><div class="line">      &quot;max_io_size&quot;: 131072,</div><div class="line">      &quot;io_unit_size&quot;: 131072</div><div class="line">    }</div><div class="line">  ]</div><div class="line">}</div></div><!-- fragment --><h2><a class="anchor" id="rpc_nvmf_get_stats"></a>
+<div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: [</div><div class="line">    {</div><div class="line">      &quot;type&quot;: &quot;RDMA&quot;.</div><div class="line">      &quot;max_queue_depth&quot;: 128,</div><div class="line">      &quot;max_io_qpairs_per_ctrlr&quot;: 64,</div><div class="line">      &quot;in_capsule_data_size&quot;: 4096,</div><div class="line">      &quot;max_io_size&quot;: 131072,</div><div class="line">      &quot;io_unit_size&quot;: 131072</div><div class="line">    }</div><div class="line">  ]</div><div class="line">}</div></div><!-- fragment --><h2><a class="anchor" id="rpc_nvmf_get_stats"></a>
 nvmf_get_stats method</h2>
 <p>Retrieve current statistics of the NVMf subsystem.</p>
 <h3>Parameters</h3>
