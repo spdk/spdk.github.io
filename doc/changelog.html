@@ -147,12 +147,16 @@ $(document).ready(function(){initNavTree('changelog.html','');});
 <div class="contents">
 <div class="textblock"><h1><a class="anchor" id="changelog-v20-07"></a>
 v20.07: (Upcoming Release)</h1>
+<h2>nvme</h2>
+<p>Add <code>opts_size</code> in <code><a class="el" href="structspdk__nvme__ctrlr__opts.html" title="NVMe controller initialization options.">spdk_nvme_ctrlr_opts</a></code> structure in order to solve the compatiblity issue for different ABI version.</p>
 <h2>accel</h2>
 <p>A new API was added <code>spdk_accel_get_capabilities</code> that allows applications to query the capabilities of the currently enabled accel engine back-end.</p>
 <p>A new capability, CRC-32C, was added via <code>spdk_accel_submit_crc32c</code>.</p>
 <p>The software accel engine implemenation has added support for CRC-32C.</p>
 <p>A new capability, compare, was added via <code>spdk_accel_submit_compare</code>.</p>
 <p>The software accel engine implemenation has added support for compare.</p>
+<h2>dpdk</h2>
+<p>Updated DPDK submodule to DPDK 19.11.2, which includes fixes for DPDK vulnerabilities: CVE-2020-10722, CVE-2020-10723, CVE-2020-10724, CVE-2020-10725, CVE-2020-10724.</p>
 <h2>idxd</h2>
 <p>IDXD engine support for CRC-32C has been added.</p>
 <h2>rdma</h2>

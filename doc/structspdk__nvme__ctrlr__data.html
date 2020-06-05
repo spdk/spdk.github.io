@@ -152,10 +152,11 @@ Collaboration diagram for spdk_nvme_ctrlr_data:</div>
 <div class="dyncontent">
 <div class="center"><img src="structspdk__nvme__ctrlr__data__coll__graph.png" border="0" usemap="#spdk__nvme__ctrlr__data_coll__map" alt="Collaboration graph"/></div>
 <map name="spdk__nvme__ctrlr__data_coll__map" id="spdk__nvme__ctrlr__data_coll__map">
-<area shape="rect"  title=" " alt="" coords="213,109,379,136"/>
-<area shape="rect"  href="unionspdk__nvme__vs__register.html" title=" " alt="" coords="5,13,181,39"/>
-<area shape="rect"  href="structspdk__nvme__cdata__nvmf__specific.html" title="Identify Controller data NVMe over Fabrics&#45;specific fields." alt="" coords="205,5,387,47"/>
-<area shape="rect"  href="structspdk__nvme__power__state.html" title=" " alt="" coords="411,13,595,39"/>
+<area shape="rect"  title=" " alt="" coords="332,85,499,112"/>
+<area shape="rect"  href="structspdk__nvme__cdata__sgls.html" title="Identify Controller data SGL support." alt="" coords="11,5,184,32"/>
+<area shape="rect"  href="unionspdk__nvme__vs__register.html" title=" " alt="" coords="9,56,185,83"/>
+<area shape="rect"  href="structspdk__nvme__cdata__nvmf__specific.html" title="Identify Controller data NVMe over Fabrics&#45;specific fields." alt="" coords="7,107,188,149"/>
+<area shape="rect"  href="structspdk__nvme__power__state.html" title=" " alt="" coords="5,173,189,200"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -450,17 +451,17 @@ union {</td></tr>
 <tr class="memitem:a35b6920824d3add8f8bf842b087cef37"><td class="memItemLeft" >
 &#160;&#160;&#160;uint8_t&#160;&#160;&#160;<b>raw</b></td></tr>
 <tr class="separator:a35b6920824d3add8f8bf842b087cef37"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4006a8b36c0dff0704fc5a230c979089"><td class="memItemLeft" >
+<tr class="memitem:af7206d7ecc2d51759243ee305cdec1f4"><td class="memItemLeft" >
 &#160;&#160;&#160;struct {</td></tr>
-<tr class="memitem:a622e4f8e9faf93915e610cd2ff809b09"><td class="memItemLeft" >
+<tr class="memitem:a9c1ca61050206e80eddbf473d571f1af"><td class="memItemLeft" >
 &#160;&#160;&#160;&#160;&#160;&#160;uint8_t&#160;&#160;&#160;<a class="el" href="structspdk__nvme__ctrlr__data.html#a606e6b01c50a19c45a8ebc412e302ab6">one_only</a>: 1</td></tr>
-<tr class="memdesc:a622e4f8e9faf93915e610cd2ff809b09"><td class="mdescLeft">&#160;</td><td class="mdescRight">Device supports only one device self-test operation at a time. <br /></td></tr>
-<tr class="separator:a622e4f8e9faf93915e610cd2ff809b09"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7c5f345914aac98cd81bde7ddc95780c"><td class="memItemLeft" >
+<tr class="memdesc:a9c1ca61050206e80eddbf473d571f1af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Device supports only one device self-test operation at a time. <br /></td></tr>
+<tr class="separator:a9c1ca61050206e80eddbf473d571f1af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8803e8beb9a4ad5562dcf071de6ceff"><td class="memItemLeft" >
 &#160;&#160;&#160;&#160;&#160;&#160;uint8_t&#160;&#160;&#160;<b>reserved</b>: 7</td></tr>
-<tr class="separator:a7c5f345914aac98cd81bde7ddc95780c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4006a8b36c0dff0704fc5a230c979089"><td class="memItemLeft" valign="top">&#160;&#160;&#160;}&#160;&#160;&#160;<b>bits</b></td></tr>
-<tr class="separator:a4006a8b36c0dff0704fc5a230c979089"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:ad8803e8beb9a4ad5562dcf071de6ceff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7206d7ecc2d51759243ee305cdec1f4"><td class="memItemLeft" valign="top">&#160;&#160;&#160;}&#160;&#160;&#160;<b>bits</b></td></tr>
+<tr class="separator:af7206d7ecc2d51759243ee305cdec1f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a09aa6e631fcc696f62795740d53a495c"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__ctrlr__data.html#a09aa6e631fcc696f62795740d53a495c">dsto</a></td></tr>
 <tr class="memdesc:a09aa6e631fcc696f62795740d53a495c"><td class="mdescLeft">&#160;</td><td class="mdescRight">device self-test options <br /></td></tr>
 <tr class="separator:a09aa6e631fcc696f62795740d53a495c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -475,16 +476,16 @@ union {</td></tr>
 <tr class="memitem:accf0559b3074cf6be3ea04a525a42468"><td class="memItemLeft" >
 &#160;&#160;&#160;uint16_t&#160;&#160;&#160;<b>raw</b></td></tr>
 <tr class="separator:accf0559b3074cf6be3ea04a525a42468"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abf21ba154b7da33b5173ba42b931e9a1"><td class="memItemLeft" >
+<tr class="memitem:a2d167e5763b4e09e00a3c2e0dd654cca"><td class="memItemLeft" >
 &#160;&#160;&#160;struct {</td></tr>
-<tr class="memitem:a5ef1423658d17562162934afb1ad3019"><td class="memItemLeft" >
+<tr class="memitem:ae61ad7bd5697933603885da95c79b350"><td class="memItemLeft" >
 &#160;&#160;&#160;&#160;&#160;&#160;uint16_t&#160;&#160;&#160;<b>supported</b>: 1</td></tr>
-<tr class="separator:a5ef1423658d17562162934afb1ad3019"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4c3b520ea9e44028612928be0f037352"><td class="memItemLeft" >
+<tr class="separator:ae61ad7bd5697933603885da95c79b350"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae37ad273e524376a8c548b8660ecbfd3"><td class="memItemLeft" >
 &#160;&#160;&#160;&#160;&#160;&#160;uint16_t&#160;&#160;&#160;<b>reserved</b>: 15</td></tr>
-<tr class="separator:a4c3b520ea9e44028612928be0f037352"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abf21ba154b7da33b5173ba42b931e9a1"><td class="memItemLeft" valign="top">&#160;&#160;&#160;}&#160;&#160;&#160;<b>bits</b></td></tr>
-<tr class="separator:abf21ba154b7da33b5173ba42b931e9a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:ae37ad273e524376a8c548b8660ecbfd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d167e5763b4e09e00a3c2e0dd654cca"><td class="memItemLeft" valign="top">&#160;&#160;&#160;}&#160;&#160;&#160;<b>bits</b></td></tr>
+<tr class="separator:a2d167e5763b4e09e00a3c2e0dd654cca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0c84ab3b9e7038b9cd507369da35e9e9"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__ctrlr__data.html#a0c84ab3b9e7038b9cd507369da35e9e9">hctma</a></td></tr>
 <tr class="memdesc:a0c84ab3b9e7038b9cd507369da35e9e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Host controlled thermal management attributes. <br /></td></tr>
 <tr class="separator:a0c84ab3b9e7038b9cd507369da35e9e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -501,22 +502,22 @@ union {</td></tr>
 <tr class="memitem:a564c2b4093638517536d2dea0e4850a0"><td class="memItemLeft" >
 &#160;&#160;&#160;uint32_t&#160;&#160;&#160;<b>raw</b></td></tr>
 <tr class="separator:a564c2b4093638517536d2dea0e4850a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aad3938aa4be135dec70e981678e19993"><td class="memItemLeft" >
+<tr class="memitem:afc6053eefba4d5f56b3d4c457e9dbfcf"><td class="memItemLeft" >
 &#160;&#160;&#160;struct {</td></tr>
-<tr class="memitem:ab3b8ec0d1f82852279f32792577b3962"><td class="memItemLeft" >
+<tr class="memitem:add654613620e395b3d585736dff36eb7"><td class="memItemLeft" >
 &#160;&#160;&#160;&#160;&#160;&#160;uint32_t&#160;&#160;&#160;<b>crypto_erase</b>: 1</td></tr>
-<tr class="separator:ab3b8ec0d1f82852279f32792577b3962"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abb27e2587f375bb4ccf8975751dce069"><td class="memItemLeft" >
+<tr class="separator:add654613620e395b3d585736dff36eb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9e40a7b6706e035678762f93cded7eb"><td class="memItemLeft" >
 &#160;&#160;&#160;&#160;&#160;&#160;uint32_t&#160;&#160;&#160;<b>block_erase</b>: 1</td></tr>
-<tr class="separator:abb27e2587f375bb4ccf8975751dce069"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a74e7dafb5e5ed7841bcdb68dd5b66587"><td class="memItemLeft" >
+<tr class="separator:aa9e40a7b6706e035678762f93cded7eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa299b1dca5875deacd0c3ad6b4c12be1"><td class="memItemLeft" >
 &#160;&#160;&#160;&#160;&#160;&#160;uint32_t&#160;&#160;&#160;<b>overwrite</b>: 1</td></tr>
-<tr class="separator:a74e7dafb5e5ed7841bcdb68dd5b66587"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abe098202e294a452b8d53e8cbb68d53e"><td class="memItemLeft" >
+<tr class="separator:aa299b1dca5875deacd0c3ad6b4c12be1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af027a89074b012ddae6dc3ef3eafeb61"><td class="memItemLeft" >
 &#160;&#160;&#160;&#160;&#160;&#160;uint32_t&#160;&#160;&#160;<b>reserved</b>: 29</td></tr>
-<tr class="separator:abe098202e294a452b8d53e8cbb68d53e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aad3938aa4be135dec70e981678e19993"><td class="memItemLeft" valign="top">&#160;&#160;&#160;}&#160;&#160;&#160;<b>bits</b></td></tr>
-<tr class="separator:aad3938aa4be135dec70e981678e19993"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:af027a89074b012ddae6dc3ef3eafeb61"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc6053eefba4d5f56b3d4c457e9dbfcf"><td class="memItemLeft" valign="top">&#160;&#160;&#160;}&#160;&#160;&#160;<b>bits</b></td></tr>
+<tr class="separator:afc6053eefba4d5f56b3d4c457e9dbfcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa902d4402a6129f155e158db7360c5be"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__ctrlr__data.html#aa902d4402a6129f155e158db7360c5be">sanicap</a></td></tr>
 <tr class="memdesc:aa902d4402a6129f155e158db7360c5be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sanitize capabilities. <br /></td></tr>
 <tr class="separator:aa902d4402a6129f155e158db7360c5be"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -645,41 +646,9 @@ uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 <tr class="memitem:ad7d5fadb681d082243965973c4d4850b"><td class="memItemLeft" align="right" valign="top"><a id="ad7d5fadb681d082243965973c4d4850b"></a>
 uint16_t&#160;</td><td class="memItemRight" valign="bottom"><b>reserved534</b></td></tr>
 <tr class="separator:ad7d5fadb681d082243965973c4d4850b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad3ddcf1b6418da89f2d2a823dd6556ed"><td class="memItemLeft" ><a id="ad3ddcf1b6418da89f2d2a823dd6556ed"></a>
-struct {</td></tr>
-<tr class="memitem:a975e02c4e6685eaf2ca8d54ae4287ea8"><td class="memItemLeft" >
-&#160;&#160;&#160;uint32_t&#160;&#160;&#160;<b>supported</b>: 2</td></tr>
-<tr class="separator:a975e02c4e6685eaf2ca8d54ae4287ea8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2bdde115fafbf81c20cea05e5477cc12"><td class="memItemLeft" >
-&#160;&#160;&#160;uint32_t&#160;&#160;&#160;<b>keyed_sgl</b>: 1</td></tr>
-<tr class="separator:a2bdde115fafbf81c20cea05e5477cc12"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abb0604dafb52afd0f1264a1d0af14226"><td class="memItemLeft" >
-&#160;&#160;&#160;uint32_t&#160;&#160;&#160;<b>reserved1</b>: 13</td></tr>
-<tr class="separator:abb0604dafb52afd0f1264a1d0af14226"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0d3363cff3b8b52c9909f0640e918095"><td class="memItemLeft" >
-&#160;&#160;&#160;uint32_t&#160;&#160;&#160;<b>bit_bucket_descriptor</b>: 1</td></tr>
-<tr class="separator:a0d3363cff3b8b52c9909f0640e918095"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab0b19cf4b59b61b71a5e21f8c66c1afe"><td class="memItemLeft" >
-&#160;&#160;&#160;uint32_t&#160;&#160;&#160;<b>metadata_pointer</b>: 1</td></tr>
-<tr class="separator:ab0b19cf4b59b61b71a5e21f8c66c1afe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6befdd684a2c1be0a68043152b9ce88f"><td class="memItemLeft" >
-&#160;&#160;&#160;uint32_t&#160;&#160;&#160;<b>oversized_sgl</b>: 1</td></tr>
-<tr class="separator:a6befdd684a2c1be0a68043152b9ce88f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab76a78bea14e3116d5113db4b110a5e6"><td class="memItemLeft" >
-&#160;&#160;&#160;uint32_t&#160;&#160;&#160;<b>metadata_address</b>: 1</td></tr>
-<tr class="separator:ab76a78bea14e3116d5113db4b110a5e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a58e768a463fcaae57c16d3f68cff36fe"><td class="memItemLeft" >
-&#160;&#160;&#160;uint32_t&#160;&#160;&#160;<b>sgl_offset</b>: 1</td></tr>
-<tr class="separator:a58e768a463fcaae57c16d3f68cff36fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af4c701e6b0f08ef71da9551a2a30e970"><td class="memItemLeft" >
-&#160;&#160;&#160;uint32_t&#160;&#160;&#160;<b>transport_sgl</b>: 1</td></tr>
-<tr class="separator:af4c701e6b0f08ef71da9551a2a30e970"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4cc12a46a86f3cc1094768574b80a3a8"><td class="memItemLeft" >
-&#160;&#160;&#160;uint32_t&#160;&#160;&#160;<b>reserved2</b>: 10</td></tr>
-<tr class="separator:a4cc12a46a86f3cc1094768574b80a3a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad3ddcf1b6418da89f2d2a823dd6556ed"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__ctrlr__data.html#ad3ddcf1b6418da89f2d2a823dd6556ed">sgls</a></td></tr>
-<tr class="memdesc:ad3ddcf1b6418da89f2d2a823dd6556ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">SGL support. <br /></td></tr>
-<tr class="separator:ad3ddcf1b6418da89f2d2a823dd6556ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a547d284aee789cfb70e0b1bb6eeae214"><td class="memItemLeft" align="right" valign="top"><a id="a547d284aee789cfb70e0b1bb6eeae214"></a>
+struct <a class="el" href="structspdk__nvme__cdata__sgls.html">spdk_nvme_cdata_sgls</a>&#160;</td><td class="memItemRight" valign="bottom"><b>sgls</b></td></tr>
+<tr class="separator:a547d284aee789cfb70e0b1bb6eeae214"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a38381fd95d94f9dc52a8f33ff05b542f"><td class="memItemLeft" align="right" valign="top"><a id="a38381fd95d94f9dc52a8f33ff05b542f"></a>
 uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>reserved4</b> [228]</td></tr>
 <tr class="separator:a38381fd95d94f9dc52a8f33ff05b542f"><td class="memSeparator" colspan="2">&#160;</td></tr>

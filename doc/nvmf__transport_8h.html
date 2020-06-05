@@ -232,9 +232,6 @@ Functions</h2></td></tr>
 <tr class="memitem:a246103af98d69ad6a1d74d2a4f9e6f7e"><td class="memItemLeft" align="right" valign="top"><a id="a246103af98d69ad6a1d74d2a4f9e6f7e"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvmf_ctrlr_connect</b> (struct <a class="el" href="structspdk__nvmf__request.html">spdk_nvmf_request</a> *req)</td></tr>
 <tr class="separator:a246103af98d69ad6a1d74d2a4f9e6f7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa6c60afe39a34d2dc2ee870429fe094f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf__transport_8h.html#aa6c60afe39a34d2dc2ee870429fe094f">spdk_nvmf_ctrlr_data_init</a> (struct <a class="el" href="structspdk__nvmf__transport__opts.html">spdk_nvmf_transport_opts</a> *opts, struct <a class="el" href="structspdk__nvmf__ctrlr__data.html">spdk_nvmf_ctrlr_data</a> *cdata)</td></tr>
-<tr class="memdesc:aa6c60afe39a34d2dc2ee870429fe094f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize NVMe-oF controller capabilities.  <a href="#aa6c60afe39a34d2dc2ee870429fe094f">More...</a><br /></td></tr>
-<tr class="separator:aa6c60afe39a34d2dc2ee870429fe094f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a87cc10db83a3c4e44ed38ce031646e58"><td class="memItemLeft" align="right" valign="top"><a id="a87cc10db83a3c4e44ed38ce031646e58"></a>
 const struct <a class="el" href="structspdk__nvmf__registers.html">spdk_nvmf_registers</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvmf_ctrlr_get_regs</b> (struct spdk_nvmf_ctrlr *ctrlr)</td></tr>
 <tr class="separator:a87cc10db83a3c4e44ed38ce031646e58"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -301,44 +298,6 @@ static enum <a class="el" href="nvme__spec_8h.html#adbe38e042bb939183ed8fd5c1685
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="aa6c60afe39a34d2dc2ee870429fe094f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa6c60afe39a34d2dc2ee870429fe094f">&#9670;&nbsp;</a></span>spdk_nvmf_ctrlr_data_init()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void spdk_nvmf_ctrlr_data_init </td>
-          <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structspdk__nvmf__transport__opts.html">spdk_nvmf_transport_opts</a> *&#160;</td>
-          <td class="paramname"><em>opts</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">struct <a class="el" href="structspdk__nvmf__ctrlr__data.html">spdk_nvmf_ctrlr_data</a> *&#160;</td>
-          <td class="paramname"><em>cdata</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Initialize NVMe-oF controller capabilities. </p>
-<p>After that call transport specific layer can override the settings but internally must enforce the conditions on when it can be updated (e.g. no connections active).</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">opts</td><td>transport options </td></tr>
-    <tr><td class="paramname">cdata</td><td>subset of ctrlr capabilities </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
 <a id="a4e1187651747d823aa32669905db2d89"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4e1187651747d823aa32669905db2d89">&#9670;&nbsp;</a></span>spdk_nvmf_ctrlr_get_subsystem()</h2>
 

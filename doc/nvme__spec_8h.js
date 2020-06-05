@@ -42,6 +42,7 @@ var nvme__spec_8h =
     [ "spdk_nvme_dsm_range", "structspdk__nvme__dsm__range.html", "structspdk__nvme__dsm__range" ],
     [ "spdk_nvme_power_state", "structspdk__nvme__power__state.html", "structspdk__nvme__power__state" ],
     [ "spdk_nvme_cdata_nvmf_specific", "structspdk__nvme__cdata__nvmf__specific.html", "structspdk__nvme__cdata__nvmf__specific" ],
+    [ "spdk_nvme_cdata_sgls", "structspdk__nvme__cdata__sgls.html", "structspdk__nvme__cdata__sgls" ],
     [ "spdk_nvme_ctrlr_data", "structspdk__nvme__ctrlr__data.html", "structspdk__nvme__ctrlr__data" ],
     [ "spdk_nvme_primary_ctrl_capabilities", "structspdk__nvme__primary__ctrl__capabilities.html", "structspdk__nvme__primary__ctrl__capabilities" ],
     [ "spdk_nvme_secondary_ctrl_entry", "structspdk__nvme__secondary__ctrl__entry.html", "structspdk__nvme__secondary__ctrl__entry" ],

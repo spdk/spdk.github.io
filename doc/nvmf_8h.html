@@ -421,9 +421,6 @@ Functions</h2></td></tr>
 <tr class="memitem:ae261eff09a7b8e6d14d2710c169b17df"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#ae261eff09a7b8e6d14d2710c169b17df">spdk_nvmf_transport_stop_listen</a> (struct <a class="el" href="structspdk__nvmf__transport.html">spdk_nvmf_transport</a> *transport, const struct <a class="el" href="structspdk__nvme__transport__id.html">spdk_nvme_transport_id</a> *trid)</td></tr>
 <tr class="memdesc:ae261eff09a7b8e6d14d2710c169b17df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove listener from transport and stop accepting new connections.  <a href="#ae261eff09a7b8e6d14d2710c169b17df">More...</a><br /></td></tr>
 <tr class="separator:ae261eff09a7b8e6d14d2710c169b17df"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a056f7ac8ac8f7b34366650cb1a2bb940"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#a056f7ac8ac8f7b34366650cb1a2bb940">spdk_nvmf_tgt_transport_write_config_json</a> (struct spdk_json_write_ctx *w, struct spdk_nvmf_tgt *tgt)</td></tr>
-<tr class="memdesc:a056f7ac8ac8f7b34366650cb1a2bb940"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write NVMe-oF target's transport configurations into provided JSON context.  <a href="#a056f7ac8ac8f7b34366650cb1a2bb940">More...</a><br /></td></tr>
-<tr class="separator:a056f7ac8ac8f7b34366650cb1a2bb940"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae4e59ef25ba7e6a45ab1d613c006f1bb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#ae4e59ef25ba7e6a45ab1d613c006f1bb">spdk_nvmf_transport_poll_group_get_stat</a> (struct spdk_nvmf_tgt *tgt, struct <a class="el" href="structspdk__nvmf__transport.html">spdk_nvmf_transport</a> *transport, struct <a class="el" href="structspdk__nvmf__transport__poll__group__stat.html">spdk_nvmf_transport_poll_group_stat</a> **stat)</td></tr>
 <tr class="memdesc:ae4e59ef25ba7e6a45ab1d613c006f1bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get current transport poll group statistics.  <a href="#ae4e59ef25ba7e6a45ab1d613c006f1bb">More...</a><br /></td></tr>
 <tr class="separator:ae4e59ef25ba7e6a45ab1d613c006f1bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -2859,43 +2856,6 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>int. 0 on success or a negated errno on failure. </dd></dl>
-
-</div>
-</div>
-<a id="a056f7ac8ac8f7b34366650cb1a2bb940"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a056f7ac8ac8f7b34366650cb1a2bb940">&#9670;&nbsp;</a></span>spdk_nvmf_tgt_transport_write_config_json()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void spdk_nvmf_tgt_transport_write_config_json </td>
-          <td>(</td>
-          <td class="paramtype">struct spdk_json_write_ctx *&#160;</td>
-          <td class="paramname"><em>w</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">struct spdk_nvmf_tgt *&#160;</td>
-          <td class="paramname"><em>tgt</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Write NVMe-oF target's transport configurations into provided JSON context. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">w</td><td>JSON write context </td></tr>
-    <tr><td class="paramname">tgt</td><td>The NVMe-oF target </td></tr>
-  </table>
-  </dd>
-</dl>
 
 </div>
 </div>

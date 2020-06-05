@@ -2,7 +2,7 @@ var structspdk__nvme__registered__ctrlr__data =
 [
     [ "cntlid", "structspdk__nvme__registered__ctrlr__data.html#a2e894687fc82c9126c09b6e0140f9741", null ],
     [ "hostid", "structspdk__nvme__registered__ctrlr__data.html#ab682e5b79cec29a2afa63032b79da1ec", null ],
-    [ "rcsts", "structspdk__nvme__registered__ctrlr__data.html#aabb10fbbc40f9d63e4a4d56f8060f6d1", null ],
+    [ "rcsts", "structspdk__nvme__registered__ctrlr__data.html#afe97c5f1ceb948f24e84f1fddf9cac31", null ],
     [ "reserved1", "structspdk__nvme__registered__ctrlr__data.html#a075d1404606ac1a01c4f741b6c4f387c", null ],
     [ "reserved2", "structspdk__nvme__registered__ctrlr__data.html#a3c1506fc679cefd655bde97e97a95e3c", null ],
     [ "rkey", "structspdk__nvme__registered__ctrlr__data.html#a587d165328e3824ca07bd0d37a407934", null ],

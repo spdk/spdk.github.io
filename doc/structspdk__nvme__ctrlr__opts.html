@@ -232,6 +232,9 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__ctrlr__opts.html#ad508875fdb8f634aa15fbdcb5e60d391">admin_queue_size</a></td></tr>
 <tr class="memdesc:ad508875fdb8f634aa15fbdcb5e60d391"><td class="mdescLeft">&#160;</td><td class="mdescRight">The queue depth of NVMe Admin queue. <br /></td></tr>
 <tr class="separator:ad508875fdb8f634aa15fbdcb5e60d391"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad1d8f2afb4a1617023934e770b103de"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__ctrlr__opts.html#aad1d8f2afb4a1617023934e770b103de">opts_size</a></td></tr>
+<tr class="memdesc:aad1d8f2afb4a1617023934e770b103de"><td class="mdescLeft">&#160;</td><td class="mdescRight">The size of <a class="el" href="structspdk__nvme__ctrlr__opts.html" title="NVMe controller initialization options.">spdk_nvme_ctrlr_opts</a> according to the caller of this library is used for ABI compatibility.  <a href="#aad1d8f2afb4a1617023934e770b103de">More...</a><br /></td></tr>
+<tr class="separator:aad1d8f2afb4a1617023934e770b103de"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>NVMe controller initialization options. </p>
@@ -473,6 +476,23 @@ uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 
 <p>Number of commands that may be executed from the medium priority queue in each arbitration round. </p>
 <p>This field is only valid when arb_mechanism is set to SPDK_NVME_CC_AMS_WRR (weighted round robin). </p>
+
+</div>
+</div>
+<a id="aad1d8f2afb4a1617023934e770b103de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aad1d8f2afb4a1617023934e770b103de">&#9670;&nbsp;</a></span>opts_size</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t spdk_nvme_ctrlr_opts::opts_size</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The size of <a class="el" href="structspdk__nvme__ctrlr__opts.html" title="NVMe controller initialization options.">spdk_nvme_ctrlr_opts</a> according to the caller of this library is used for ABI compatibility. </p>
+<p>The library uses this field to know how many fields in this structure are valid. And the library will populate any remaining fields with default values. </p>
 
 </div>
 </div>

@@ -296,7 +296,6 @@ NVMe character devices processing diagram</div></div>
 <h2>Enabling cuse support for NVMe</h2>
 <p>Cuse support is disabled by default. To enable support for NVMe devices SPDK must be compiled with "./configure --with-nvme-cuse".</p>
 <h2>Limitations</h2>
-<p>NVMe CUSE presents character device for controller and namespaces only at the time the controller is being attached. Dynamic creation/deletion of namespaces is not supported yet.</p>
 <p>NVMe namespaces are created as character devices and their use may be limited for tools expecting block devices.</p>
 <p>Sysfs is not updated by SPDK.</p>
 <p>SPDK NVMe CUSE creates nodes in "/dev/spdk/" directory to explicitly differentiate from other devices. Tools that only search in the "/dev" directory might not work with SPDK NVMe CUSE.</p>
