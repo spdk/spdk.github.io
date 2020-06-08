@@ -14,7 +14,7 @@ var structspdk__nvme__registers =
     [ "cmbsz", "structspdk__nvme__registers.html#a4d9a1bd35de790accaf112507cd89565", null ],
     [ "cq_hdbl", "structspdk__nvme__registers.html#a9d88ec002d49b7dfc2620cadfd7408ee", null ],
     [ "csts", "structspdk__nvme__registers.html#acbfbb6b7aa5876e2a6c58badc2737152", null ],
-    [ "doorbell", "structspdk__nvme__registers.html#a607c3ab75ed0ead2daaf0b8d63227f8a", null ],
+    [ "doorbell", "structspdk__nvme__registers.html#af759e3d7871ad79f1b99c4269a946cee", null ],
     [ "intmc", "structspdk__nvme__registers.html#aa8a82f6563f310e7fda91e63adf4fe81", null ],
     [ "intms", "structspdk__nvme__registers.html#a300788de41e57f43bef902ec259ed4da", null ],
     [ "nssr", "structspdk__nvme__registers.html#aa4774c23e63ced526fed163298f003db", null ],

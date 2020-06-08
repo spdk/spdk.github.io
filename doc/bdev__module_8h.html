@@ -212,15 +212,17 @@ typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_p
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
 <tr class="memitem:aa35cc1485b6ba4351c2fb4fbd7125c93"><td class="memItemLeft" align="right" valign="top"><a id="aa35cc1485b6ba4351c2fb4fbd7125c93"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev__module_8h.html#aa35cc1485b6ba4351c2fb4fbd7125c93">spdk_bdev_io_status</a> { <br />
-&#160;&#160;<b>SPDK_BDEV_IO_STATUS_FIRST_FUSED_FAILED</b> = -6, 
+&#160;&#160;<b>SPDK_BDEV_IO_STATUS_ABORTED</b> = -7, 
+<b>SPDK_BDEV_IO_STATUS_FIRST_FUSED_FAILED</b> = -6, 
 <b>SPDK_BDEV_IO_STATUS_MISCOMPARE</b> = -5, 
 <b>SPDK_BDEV_IO_STATUS_NOMEM</b> = -4, 
-<b>SPDK_BDEV_IO_STATUS_SCSI_ERROR</b> = -3, 
 <br />
-&#160;&#160;<b>SPDK_BDEV_IO_STATUS_NVME_ERROR</b> = -2, 
+&#160;&#160;<b>SPDK_BDEV_IO_STATUS_SCSI_ERROR</b> = -3, 
+<b>SPDK_BDEV_IO_STATUS_NVME_ERROR</b> = -2, 
 <b>SPDK_BDEV_IO_STATUS_FAILED</b> = -1, 
 <b>SPDK_BDEV_IO_STATUS_PENDING</b> = 0, 
-<b>SPDK_BDEV_IO_STATUS_SUCCESS</b> = 1
+<br />
+&#160;&#160;<b>SPDK_BDEV_IO_STATUS_SUCCESS</b> = 1
 <br />
  }</td></tr>
 <tr class="memdesc:aa35cc1485b6ba4351c2fb4fbd7125c93"><td class="mdescLeft">&#160;</td><td class="mdescRight">bdev I/O completion status <br /></td></tr>

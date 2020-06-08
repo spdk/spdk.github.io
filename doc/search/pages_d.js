@@ -2,6 +2,7 @@ var searchData=
 [
   ['spdk_20and_20containers',['SPDK and Containers',['../containers.html',1,'misc']]],
   ['storage_20performance_20development_20kit',['Storage Performance Development Kit',['../index.html',1,'']]],
+  ['spdk_20libraries',['SPDK Libraries',['../libraries.html',1,'user_guides']]],
   ['submitting_20i_2fo_20to_20an_20nvme_20device',['Submitting I/O to an NVMe Device',['../nvme_spec.html',1,'concepts']]],
   ['spdk_20structural_20overview',['SPDK Structural Overview',['../overview.html',1,'concepts']]],
   ['spdk_20porting_20guide',['SPDK Porting Guide',['../porting.html',1,'concepts']]],

@@ -248,7 +248,8 @@ Enumerations</h2></td></tr>
 <b>SPDK_BDEV_IO_TYPE_COMPARE</b>, 
 <b>SPDK_BDEV_IO_TYPE_COMPARE_AND_WRITE</b>, 
 <br />
-&#160;&#160;<b>SPDK_BDEV_NUM_IO_TYPES</b>
+&#160;&#160;<b>SPDK_BDEV_IO_TYPE_ABORT</b>, 
+<b>SPDK_BDEV_NUM_IO_TYPES</b>
 <br />
  }</td></tr>
 <tr class="memdesc:a633029e24ab5ae4a689bffa2565a519f"><td class="mdescLeft">&#160;</td><td class="mdescRight">bdev I/O type <br /></td></tr>
@@ -480,6 +481,9 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_set_opts</b>
 <tr class="memitem:gaca574d3e94be6150343823dd2e7ecf46"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__bdev__io__submit__functions.html#gaca574d3e94be6150343823dd2e7ecf46">spdk_bdev_reset</a> (struct spdk_bdev_desc *desc, struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *ch, <a class="el" href="bdev_8h.html#a0c5602dfd313f90032dd91683b9663e3">spdk_bdev_io_completion_cb</a> cb, void *cb_arg)</td></tr>
 <tr class="memdesc:gaca574d3e94be6150343823dd2e7ecf46"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submit a reset request to the bdev on the given channel.  <a href="group__bdev__io__submit__functions.html#gaca574d3e94be6150343823dd2e7ecf46">More...</a><br /></td></tr>
 <tr class="separator:gaca574d3e94be6150343823dd2e7ecf46"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a841dcef50460f33c8b5e321e187dc3dd"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev_8h.html#a841dcef50460f33c8b5e321e187dc3dd">spdk_bdev_abort</a> (struct spdk_bdev_desc *desc, struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *ch, void *bio_cb_arg, <a class="el" href="bdev_8h.html#a0c5602dfd313f90032dd91683b9663e3">spdk_bdev_io_completion_cb</a> cb, void *cb_arg)</td></tr>
+<tr class="memdesc:a841dcef50460f33c8b5e321e187dc3dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submit abort requests to abort all I/Os which has bio_cb_arg as its callback context to the bdev on the given channel.  <a href="#a841dcef50460f33c8b5e321e187dc3dd">More...</a><br /></td></tr>
+<tr class="separator:a841dcef50460f33c8b5e321e187dc3dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gae2249ef71e7125338b6cebf935a881ab"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__bdev__io__submit__functions.html#gae2249ef71e7125338b6cebf935a881ab">spdk_bdev_nvme_admin_passthru</a> (struct spdk_bdev_desc *desc, struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *ch, const struct <a class="el" href="structspdk__nvme__cmd.html">spdk_nvme_cmd</a> *cmd, void *buf, size_t nbytes, <a class="el" href="bdev_8h.html#a0c5602dfd313f90032dd91683b9663e3">spdk_bdev_io_completion_cb</a> cb, void *cb_arg)</td></tr>
 <tr class="memdesc:gae2249ef71e7125338b6cebf935a881ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submit an NVMe Admin command to the bdev.  <a href="group__bdev__io__submit__functions.html#gae2249ef71e7125338b6cebf935a881ab">More...</a><br /></td></tr>
 <tr class="separator:gae2249ef71e7125338b6cebf935a881ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -516,6 +520,9 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_set_opts</b>
 <tr class="memitem:a3ac624f9a0a153750242b70a805a7382"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev_8h.html#a3ac624f9a0a153750242b70a805a7382">spdk_bdev_io_get_md_buf</a> (struct <a class="el" href="structspdk__bdev__io.html">spdk_bdev_io</a> *bdev_io)</td></tr>
 <tr class="memdesc:a3ac624f9a0a153750242b70a805a7382"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get metadata buffer.  <a href="#a3ac624f9a0a153750242b70a805a7382">More...</a><br /></td></tr>
 <tr class="separator:a3ac624f9a0a153750242b70a805a7382"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64e77ef346fd873d97328e9816ceda57"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev_8h.html#a64e77ef346fd873d97328e9816ceda57">spdk_bdev_io_get_cb_arg</a> (struct <a class="el" href="structspdk__bdev__io.html">spdk_bdev_io</a> *bdev_io)</td></tr>
+<tr class="memdesc:a64e77ef346fd873d97328e9816ceda57"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the callback argument of bdev_io to abort it by spdk_bdev_abort.  <a href="#a64e77ef346fd873d97328e9816ceda57">More...</a><br /></td></tr>
+<tr class="separator:a64e77ef346fd873d97328e9816ceda57"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0b4556cb07c52ae7b5b7e7f10cbdc637"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev_8h.html#a0b4556cb07c52ae7b5b7e7f10cbdc637">spdk_bdev_histogram_enable</a> (struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *bdev, spdk_bdev_histogram_status_cb cb_fn, void *cb_arg, bool enable)</td></tr>
 <tr class="memdesc:a0b4556cb07c52ae7b5b7e7f10cbdc637"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable or disable collecting histogram data on a bdev.  <a href="#a0b4556cb07c52ae7b5b7e7f10cbdc637">More...</a><br /></td></tr>
 <tr class="separator:a0b4556cb07c52ae7b5b7e7f10cbdc637"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -714,6 +721,71 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_set_opts</b>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="a841dcef50460f33c8b5e321e187dc3dd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a841dcef50460f33c8b5e321e187dc3dd">&#9670;&nbsp;</a></span>spdk_bdev_abort()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_bdev_abort </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_bdev_desc *&#160;</td>
+          <td class="paramname"><em>desc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *&#160;</td>
+          <td class="paramname"><em>ch</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>bio_cb_arg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="bdev_8h.html#a0c5602dfd313f90032dd91683b9663e3">spdk_bdev_io_completion_cb</a>&#160;</td>
+          <td class="paramname"><em>cb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>cb_arg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Submit abort requests to abort all I/Os which has bio_cb_arg as its callback context to the bdev on the given channel. </p>
+<p>This goes all the way down to the bdev driver module and attempts to abort all I/Os which have bio_cb_arg as their callback context if they exist. This is a best effort command. Upon completion of this, the status SPDK_BDEV_IO_STATUS_SUCCESS indicates all the I/Os were successfully aborted, or the status SPDK_BDEV_IO_STATUS_FAILED indicates any I/O was failed to abort for any reason or no I/O which has bio_cb_arg as its callback context was found.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">desc</td><td>Block device descriptor. </td></tr>
+    <tr><td class="paramname">ch</td><td>The I/O channel which the I/Os to be aborted are associated with. </td></tr>
+    <tr><td class="paramname">bio_cb_arg</td><td>Callback argument for the outstanding requests which this function attempts to abort. </td></tr>
+    <tr><td class="paramname">cb</td><td>Called when the abort request is completed. </td></tr>
+    <tr><td class="paramname">cb_arg</td><td>Argument passed to cb.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success. On success, the callback will always be called (even if the request ultimately failed). Return negated errno on failure, in which case the callback will not be called.<ul>
+<li>-EINVAL - bio_cb_arg was not specified.</li>
+<li>-ENOMEM - <a class="el" href="structspdk__bdev__io.html">spdk_bdev_io</a> buffer cannot be allocated.</li>
+<li>-ENOTSUP - the bdev does not support abort. </li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
 <a id="aaf5fc830851a2eb0aa34bbb40cf5eac6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aaf5fc830851a2eb0aa34bbb40cf5eac6">&#9670;&nbsp;</a></span>spdk_bdev_close()</h2>
 
@@ -1810,6 +1882,33 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_set_opts</b>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="a64e77ef346fd873d97328e9816ceda57"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a64e77ef346fd873d97328e9816ceda57">&#9670;&nbsp;</a></span>spdk_bdev_io_get_cb_arg()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* spdk_bdev_io_get_cb_arg </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structspdk__bdev__io.html">spdk_bdev_io</a> *&#160;</td>
+          <td class="paramname"><em>bdev_io</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the callback argument of bdev_io to abort it by spdk_bdev_abort. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bdev_io</td><td>I/O to get the callback argument from. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Callback argument of bdev_io. </dd></dl>
 
 </div>
 </div>

@@ -3,6 +3,22 @@ var user_guides =
     [ "System Configuration User Guide", "system_configuration.html", [
       [ "IOMMU configuration", "system_configuration.html#iommu_config", null ]
     ] ],
+    [ "SPDK Libraries", "libraries.html", [
+      [ "Directory Structure", "libraries.html#structure", [
+        [ "lib", "libraries.html#lib", null ],
+        [ "module", "libraries.html#module", null ]
+      ] ],
+      [ "Library Conventions", "libraries.html#conventions", [
+        [ "Headers", "libraries.html#headers", null ],
+        [ "Naming Conventions", "libraries.html#naming", null ],
+        [ "Map Files", "libraries.html#map", null ]
+      ] ],
+      [ "SPDK Shared Objects", "libraries.html#shared_objects", [
+        [ "Shared Object Versioning", "libraries.html#versioning", null ],
+        [ "Linking to Shared Objects", "libraries.html#so_linking", null ],
+        [ "Replacing the env abstraction", "libraries.html#env_replacement", null ]
+      ] ]
+    ] ],
     [ "An Overview of SPDK Applications", "app_overview.html", [
       [ "Configuring SPDK Applications", "app_overview.html#app_config", [
         [ "Command Line Parameters", "app_overview.html#app_cmd_line_args", [

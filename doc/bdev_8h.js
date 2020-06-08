@@ -39,6 +39,7 @@ var bdev_8h =
       [ "SPDK_BDEV_IO_TYPE_ZONE_APPEND", "bdev_8h.html#a633029e24ab5ae4a689bffa2565a519fa0be425e7142d2e0adedd4a883ef0dc0f", null ],
       [ "SPDK_BDEV_IO_TYPE_COMPARE", "bdev_8h.html#a633029e24ab5ae4a689bffa2565a519fa2df554da6afc1daaa7313fa25fb24623", null ],
       [ "SPDK_BDEV_IO_TYPE_COMPARE_AND_WRITE", "bdev_8h.html#a633029e24ab5ae4a689bffa2565a519fa0475ddf806a6b7ee01dbd6336a5deb6f", null ],
+      [ "SPDK_BDEV_IO_TYPE_ABORT", "bdev_8h.html#a633029e24ab5ae4a689bffa2565a519fa57d0b0477d9c04c9df1119d223c14ca4", null ],
       [ "SPDK_BDEV_NUM_IO_TYPES", "bdev_8h.html#a633029e24ab5ae4a689bffa2565a519fab8b20053cecdcd7973f1c2d0dce2b457", null ]
     ] ],
     [ "spdk_bdev_qos_rate_limit_type", "bdev_8h.html#aedfbfc44fa2113d7ee219d09a0994d93", [
@@ -53,6 +54,7 @@ var bdev_8h =
       [ "SPDK_BDEV_STATUS_READY", "bdev_8h.html#ad6c166f5d928c2995df57c96a2977862a81b16f97132d8245c61f02fd94b4ec11", null ],
       [ "SPDK_BDEV_STATUS_REMOVING", "bdev_8h.html#ad6c166f5d928c2995df57c96a2977862a82598753017f84c485785b04f9dcf5fa", null ]
     ] ],
+    [ "spdk_bdev_abort", "bdev_8h.html#a841dcef50460f33c8b5e321e187dc3dd", null ],
     [ "spdk_bdev_close", "bdev_8h.html#aaf5fc830851a2eb0aa34bbb40cf5eac6", null ],
     [ "spdk_bdev_compare_blocks", "group__bdev__io__submit__functions.html#ga0846ab7b6c938f0f52ac36cd09a75278", null ],
     [ "spdk_bdev_compare_blocks_with_md", "group__bdev__io__submit__functions.html#ga8a69444aaff6f046f7de8524e8c886d8", null ],
@@ -96,6 +98,7 @@ var bdev_8h =
     [ "spdk_bdev_histogram_enable", "bdev_8h.html#a0b4556cb07c52ae7b5b7e7f10cbdc637", null ],
     [ "spdk_bdev_histogram_get", "bdev_8h.html#aacf15571883da5a441297b5090e6aaf5", null ],
     [ "spdk_bdev_initialize", "bdev_8h.html#a854eb960c06597051071023a3d70e887", null ],
+    [ "spdk_bdev_io_get_cb_arg", "bdev_8h.html#a64e77ef346fd873d97328e9816ceda57", null ],
     [ "spdk_bdev_io_get_iovec", "bdev_8h.html#aa05d8c0e82bfbcc209af1eb958230ede", null ],
     [ "spdk_bdev_io_get_md_buf", "bdev_8h.html#a3ac624f9a0a153750242b70a805a7382", null ],
     [ "spdk_bdev_io_get_nvme_fused_status", "bdev_8h.html#a44c7d2a0cf76be7d06d9dc5e09553ec8", null ],

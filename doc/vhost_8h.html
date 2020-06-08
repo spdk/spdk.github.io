@@ -228,9 +228,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vhos
 <tr class="memitem:aa6eba1ce0ac89c3287b755567795869b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vhost_8h.html#aa6eba1ce0ac89c3287b755567795869b">spdk_vhost_dev_remove</a> (struct spdk_vhost_dev *vdev)</td></tr>
 <tr class="memdesc:aa6eba1ce0ac89c3287b755567795869b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove a vhost device.  <a href="#aa6eba1ce0ac89c3287b755567795869b">More...</a><br /></td></tr>
 <tr class="separator:aa6eba1ce0ac89c3287b755567795869b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a549f9903be61ca447578b8bacf9eea81"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vhost_8h.html#a549f9903be61ca447578b8bacf9eea81">spdk_vhost_blk_get_dev</a> (struct spdk_vhost_dev *ctrlr)</td></tr>
-<tr class="memdesc:a549f9903be61ca447578b8bacf9eea81"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get underlying SPDK bdev from vhost blk device.  <a href="#a549f9903be61ca447578b8bacf9eea81">More...</a><br /></td></tr>
-<tr class="separator:a549f9903be61ca447578b8bacf9eea81"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>SPDK vhost. </p>
@@ -356,34 +353,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vhos
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 on success, negative errno on error. </dd></dl>
-
-</div>
-</div>
-<a id="a549f9903be61ca447578b8bacf9eea81"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a549f9903be61ca447578b8bacf9eea81">&#9670;&nbsp;</a></span>spdk_vhost_blk_get_dev()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a>* spdk_vhost_blk_get_dev </td>
-          <td>(</td>
-          <td class="paramtype">struct spdk_vhost_dev *&#160;</td>
-          <td class="paramname"><em>ctrlr</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Get underlying SPDK bdev from vhost blk device. </p>
-<p>The bdev might be NULL, as it could have been hotremoved.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">ctrlr</td><td>vhost blk device.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>SPDK bdev associated with given vdev. </dd></dl>
 
 </div>
 </div>

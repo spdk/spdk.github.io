@@ -149,6 +149,8 @@ $(document).ready(function(){initNavTree('changelog.html','');});
 v20.07: (Upcoming Release)</h1>
 <h2>nvme</h2>
 <p>Add <code>opts_size</code> in <code><a class="el" href="structspdk__nvme__ctrlr__opts.html" title="NVMe controller initialization options.">spdk_nvme_ctrlr_opts</a></code> structure in order to solve the compatiblity issue for different ABI version.</p>
+<h2>RPC</h2>
+<p>Command line parameters <code>-r</code> and <code>--rpc-socket</code> will longer accept TCP ports. RPC server must now be started on a Unix domain socket. Exposing RPC on the network, as well as providing proper authentication (if needed) is now a responsibility of the user.</p>
 <h2>accel</h2>
 <p>A new API was added <code>spdk_accel_get_capabilities</code> that allows applications to query the capabilities of the currently enabled accel engine back-end.</p>
 <p>A new capability, CRC-32C, was added via <code>spdk_accel_submit_crc32c</code>.</p>
@@ -167,6 +169,8 @@ v20.07: (Upcoming Release)</h1>
 <h2>sock</h2>
 <p>Added <code>spdk_sock_impl_get_opts</code> and <code>spdk_sock_impl_set_opts</code> functions to set/get socket layer configuration options. Options can be set independently for each implementation.</p>
 <p>Added <code>recv_buf_size</code> and 'send_buf_size' socket layer options. They are used only in posix implementation.</p>
+<h2>vhost</h2>
+<p>The function <code>spdk_vhost_blk_get_dev</code> has been removed.</p>
 <h1><a class="anchor" id="changelog-v20-04"></a>
 v20.04:</h1>
 <p>IDXD engine support for compare has been added.</p>

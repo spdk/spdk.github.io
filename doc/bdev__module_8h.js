@@ -18,6 +18,7 @@ var bdev__module_8h =
     [ "spdk_bdev_part_base_free_fn", "bdev__module_8h.html#ad226e52efa62c0b31340be538000d1a8", null ],
     [ "spdk_bdev_unregister_cb", "bdev__module_8h.html#aaf30cdcd20a84d898099dd35bbfa3590", null ],
     [ "spdk_bdev_io_status", "bdev__module_8h.html#aa35cc1485b6ba4351c2fb4fbd7125c93", [
+      [ "SPDK_BDEV_IO_STATUS_ABORTED", "bdev__module_8h.html#aa35cc1485b6ba4351c2fb4fbd7125c93aa7e7c5c151a858b09de01627b63cf2ca", null ],
       [ "SPDK_BDEV_IO_STATUS_FIRST_FUSED_FAILED", "bdev__module_8h.html#aa35cc1485b6ba4351c2fb4fbd7125c93a63b7c72cf0b1bb0bd969e50da64d46c5", null ],
       [ "SPDK_BDEV_IO_STATUS_MISCOMPARE", "bdev__module_8h.html#aa35cc1485b6ba4351c2fb4fbd7125c93a8cf0b3df0de6126ba841779d6dcdf9bd", null ],
       [ "SPDK_BDEV_IO_STATUS_NOMEM", "bdev__module_8h.html#aa35cc1485b6ba4351c2fb4fbd7125c93ac500ae7baaa5db4ace3bb92481e30ccb", null ],

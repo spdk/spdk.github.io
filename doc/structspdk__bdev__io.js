@@ -2,8 +2,12 @@ var structspdk__bdev__io =
 [
     [ "__bdev_io_internal_fields", "structspdk__bdev__io_1_1____bdev__io__internal__fields.html", "structspdk__bdev__io_1_1____bdev__io__internal__fields" ],
     [ "TAILQ_ENTRY", "structspdk__bdev__io.html#a4c93fa89b3cc9789d2e6d7d7e2246e35", null ],
+    [ "abort", "structspdk__bdev__io.html#aac9a280e60a21368133043b139d0fb77", null ],
+    [ "abort", "structspdk__bdev__io.html#a5cd26295d532eaaba66ca99e229d8b11", null ],
     [ "bdev", "structspdk__bdev__io.html#a096518d708e224b91e03897b79431afd", null ],
     [ "bdev", "structspdk__bdev__io.html#aef2930470cfbaffe5e5f74b2a7c9da9e", null ],
+    [ "bio_cb_arg", "structspdk__bdev__io.html#ac70f00f4fb59c7d646dcfd6d97134a75", null ],
+    [ "bio_to_abort", "structspdk__bdev__io.html#a56b77cacd3d1ac83d081fec94b74e03a", null ],
     [ "buf", "structspdk__bdev__io.html#ad54769b6194caf65b0dd626c399bd41d", null ],
     [ "ch_ref", "structspdk__bdev__io.html#ae513a78b2095fbd1d0674fa11d26ef2b", null ],
     [ "child_iov", "structspdk__bdev__io.html#a5ca4051718acb2e55adcca49ea829420", null ],
@@ -22,7 +26,7 @@ var structspdk__bdev__io =
     [ "num_blocks", "structspdk__bdev__io.html#afafe443c58056c9c246fd3c32eaa4ece", null ],
     [ "num_retries", "structspdk__bdev__io.html#aeaabc4aee05b2ae4337fe9cb5acda3d1", null ],
     [ "num_zones", "structspdk__bdev__io.html#a178f3c2949cc29cac9d21fe5968803c7", null ],
-    [ "nvme_passthru", "structspdk__bdev__io.html#a9c6b53b8e503c998e80090b986385cef", null ],
+    [ "nvme_passthru", "structspdk__bdev__io.html#a01a01ef5ae746f0c4a5123f6eaea836d", null ],
     [ "offset_blocks", "structspdk__bdev__io.html#ab7ce7385dd41efaffdc0ca4dea2df6a8", null ],
     [ "populate", "structspdk__bdev__io.html#acb8e8c688f321a1655a7db6caffa060e", null ],
     [ "reset", "structspdk__bdev__io.html#a3af0e726ab6ba3ad2bb54a7e6ab4e6f2", null ],
@@ -33,8 +37,8 @@ var structspdk__bdev__io =
     [ "stored_user_cb", "structspdk__bdev__io.html#a35905e31d0aa54cd00dbb34e7d56656a", null ],
     [ "type", "structspdk__bdev__io.html#a4105d5a8419a66a6620d690da5649fcb", null ],
     [ "u", "structspdk__bdev__io.html#a529af99d06d12cec343f6aeb03beced2", null ],
-    [ "zcopy", "structspdk__bdev__io.html#af898bbedc6e0fc75778c9cf8b8e6331c", null ],
+    [ "zcopy", "structspdk__bdev__io.html#a5e5648ec5454f708f89c8329aea81ae8", null ],
     [ "zone_action", "structspdk__bdev__io.html#aac955461036be742686107500f778782", null ],
     [ "zone_id", "structspdk__bdev__io.html#aa14a89234acf807b866f8020ebe66817", null ],
-    [ "zone_mgmt", "structspdk__bdev__io.html#a3a071b2f0c4a593c9609e7ace1867572", null ]
+    [ "zone_mgmt", "structspdk__bdev__io.html#a156f1593e8b0fca09c5e5dbc28befbfc", null ]
 ];

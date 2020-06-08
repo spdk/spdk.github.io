@@ -6,7 +6,7 @@ var structspdk__ocssd__chunk__notification__entry =
     [ "error_rate_medium", "structspdk__ocssd__chunk__notification__entry.html#a9637d6ca62e95d11f7cd99fbd38513fa", null ],
     [ "lba", "structspdk__ocssd__chunk__notification__entry.html#a2d96d597c27edd7e457218d85c01915d", null ],
     [ "lblk", "structspdk__ocssd__chunk__notification__entry.html#aadf9079a7a4aa1acd37f7535b5249c60", null ],
-    [ "mask", "structspdk__ocssd__chunk__notification__entry.html#a1b3d056b84ea5275e73ac36414556519", null ],
+    [ "mask", "structspdk__ocssd__chunk__notification__entry.html#a3a9bef3c50f3c60586ce094536c94df2", null ],
     [ "nc", "structspdk__ocssd__chunk__notification__entry.html#a7ba839c30cf67b09f5f0cbc30db5a153", null ],
     [ "nlb", "structspdk__ocssd__chunk__notification__entry.html#abc2b04eefd137a69be0153bf2377dda3", null ],
     [ "nsid", "structspdk__ocssd__chunk__notification__entry.html#ae73c05a35172bb876aa3860acfbfb9ee", null ],
@@ -14,7 +14,7 @@ var structspdk__ocssd__chunk__notification__entry =
     [ "refreshed", "structspdk__ocssd__chunk__notification__entry.html#a018188382405987a8f86d387b26690fd", null ],
     [ "rsvd", "structspdk__ocssd__chunk__notification__entry.html#af27b51304ef91eb1a5c55d0f01bceca4", null ],
     [ "rsvd2", "structspdk__ocssd__chunk__notification__entry.html#a3d3a1360c9d0760187dffecfb4995d96", null ],
-    [ "state", "structspdk__ocssd__chunk__notification__entry.html#a3441eab386d62a06fc70d0ecd84452f6", null ],
+    [ "state", "structspdk__ocssd__chunk__notification__entry.html#a203c3ba3d698ea9ac85db81cdd6f13e0", null ],
     [ "unrecoverable", "structspdk__ocssd__chunk__notification__entry.html#acf2668e09d087e0294af2b2f42160ad7", null ],
     [ "wit_exceeded", "structspdk__ocssd__chunk__notification__entry.html#a1eade6a5ef1b6fdcdca02938776b5533", null ]
 ];

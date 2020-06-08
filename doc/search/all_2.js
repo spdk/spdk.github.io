@@ -10,6 +10,8 @@ var searchData=
   ['bdev_5fpart_5finternal_5ffields',['bdev_part_internal_fields',['../structspdk__bdev__part_1_1bdev__part__internal__fields.html',1,'spdk_bdev_part']]],
   ['block_20device_20layer_20programming_20guide',['Block Device Layer Programming Guide',['../bdev_pg.html',1,'prog_guides']]],
   ['bdev_5fzone_2eh',['bdev_zone.h',['../bdev__zone_8h.html',1,'']]],
+  ['bio_5fcb_5farg',['bio_cb_arg',['../structspdk__bdev__io.html#ac70f00f4fb59c7d646dcfd6d97134a75',1,'spdk_bdev_io']]],
+  ['bio_5fto_5fabort',['bio_to_abort',['../structspdk__bdev__io.html#a56b77cacd3d1ac83d081fec94b74e03a',1,'spdk_bdev_io']]],
   ['bir',['bir',['../unionspdk__nvme__cmbloc__register.html#a7a72b6bb85d7c446b0ad55f74d91e13a',1,'spdk_nvme_cmbloc_register']]],
   ['bit_5farray_2eh',['bit_array.h',['../bit__array_8h.html',1,'']]],
   ['blobstore_20programmer_27s_20guide',['Blobstore Programmer&apos;s Guide',['../blob.html',1,'prog_guides']]],
