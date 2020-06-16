@@ -152,7 +152,7 @@ $(document).ready(function(){initNavTree('spdkcli.html','');});
 <li>configshell</li>
 </ul>
 <h3>Run SPDK application instance</h3>
-<div class="fragment"><div class="line">./scripts/setup.sh</div><div class="line">./app/vhost/vhost -c vhost.conf</div></div><!-- fragment --><h3>Run SPDK CLI</h3>
+<div class="fragment"><div class="line">./scripts/setup.sh</div><div class="line">./build/bin/vhost -c vhost.conf</div></div><!-- fragment --><h3>Run SPDK CLI</h3>
 <p>Spdkcli should be run with the same privileges as SPDK application. In order to use SPDK CLI in interactive mode please use: </p><div class="fragment"><div class="line">scripts/spdkcli.py</div></div><!-- fragment --><p> Use "help" command to get a list of available commands for each tree node.</p>
 <p>It is also possible to use SPDK CLI to run just a single command, just use the command as an argument to the application. For example, to view current configuration and immediately exit: </p><div class="fragment"><div class="line">scripts/spdkcli.py ls</div></div><!-- fragment --><h3>Optional - create Python virtual environment</h3>
 <p>You can use Python virtual environment if you don't want to litter your system Python installation.</p>

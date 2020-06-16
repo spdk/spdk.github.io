@@ -147,10 +147,15 @@ $(document).ready(function(){initNavTree('changelog.html','');});
 <div class="contents">
 <div class="textblock"><h1><a class="anchor" id="changelog-v20-07"></a>
 v20.07: (Upcoming Release)</h1>
+<h2>nvmf</h2>
+<p>The NVMe-oF target no longer supports connecting scheduling configuration and instead always uses what was previously called "transport" scheduling.</p>
+<p><code>spdk_nvmf_tgt_accept</code> no longer takes a function pointer as an argument. New connections are automatically assigned to poll groups by the underlying transport.</p>
 <h2>nvme</h2>
 <p>Add <code>opts_size</code> in <code><a class="el" href="structspdk__nvme__ctrlr__opts.html" title="NVMe controller initialization options.">spdk_nvme_ctrlr_opts</a></code> structure in order to solve the compatiblity issue for different ABI version.</p>
 <h2>RPC</h2>
 <p>Command line parameters <code>-r</code> and <code>--rpc-socket</code> will longer accept TCP ports. RPC server must now be started on a Unix domain socket. Exposing RPC on the network, as well as providing proper authentication (if needed) is now a responsibility of the user.</p>
+<h2>build</h2>
+<p>The fio plugins now compile to <code>build/fio</code> and are named <code><a class="el" href="structspdk__bdev.html">spdk_bdev</a></code> and <code>spdk_nvme</code>. Existing fio configuration files will need to be updated.</p>
 <h2>accel</h2>
 <p>A new API was added <code>spdk_accel_get_capabilities</code> that allows applications to query the capabilities of the currently enabled accel engine back-end.</p>
 <p>A new capability, CRC-32C, was added via <code>spdk_accel_submit_crc32c</code>.</p>

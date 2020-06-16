@@ -178,9 +178,6 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:aa999ebee65c92711a5dce79d06cf81c2"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#aa999ebee65c92711a5dce79d06cf81c2">new_qpair_fn</a>) (struct <a class="el" href="structspdk__nvmf__qpair.html">spdk_nvmf_qpair</a> *qpair, void *cb_arg)</td></tr>
-<tr class="memdesc:aa999ebee65c92711a5dce79d06cf81c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to be called for each newly discovered qpair.  <a href="#aa999ebee65c92711a5dce79d06cf81c2">More...</a><br /></td></tr>
-<tr class="separator:aa999ebee65c92711a5dce79d06cf81c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aad52ac090dcb26b03da0e689ea71df89"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#aad52ac090dcb26b03da0e689ea71df89">spdk_nvmf_tgt_subsystem_listen_done_fn</a>) (void *ctx, int status)</td></tr>
 <tr class="memdesc:aad52ac090dcb26b03da0e689ea71df89"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to be called once the listener is associated with a subsystem.  <a href="#aad52ac090dcb26b03da0e689ea71df89">More...</a><br /></td></tr>
 <tr class="separator:aad52ac090dcb26b03da0e689ea71df89"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -229,9 +226,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ac796e8f25381f344119ef0f44c2a017c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#ac796e8f25381f344119ef0f44c2a017c">spdk_nvmf_tgt_stop_listen</a> (struct spdk_nvmf_tgt *tgt, struct <a class="el" href="structspdk__nvme__transport__id.html">spdk_nvme_transport_id</a> *trid)</td></tr>
 <tr class="memdesc:ac796e8f25381f344119ef0f44c2a017c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stop accepting new connections at the provided address.  <a href="#ac796e8f25381f344119ef0f44c2a017c">More...</a><br /></td></tr>
 <tr class="separator:ac796e8f25381f344119ef0f44c2a017c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa39b568e5ae11462a3e0aef59f8e9fd3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#aa39b568e5ae11462a3e0aef59f8e9fd3">spdk_nvmf_tgt_accept</a> (struct spdk_nvmf_tgt *tgt, <a class="el" href="nvmf_8h.html#aa999ebee65c92711a5dce79d06cf81c2">new_qpair_fn</a> cb_fn, void *cb_arg)</td></tr>
-<tr class="memdesc:aa39b568e5ae11462a3e0aef59f8e9fd3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Poll the target for incoming connections.  <a href="#aa39b568e5ae11462a3e0aef59f8e9fd3">More...</a><br /></td></tr>
-<tr class="separator:aa39b568e5ae11462a3e0aef59f8e9fd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9e9743486cd0d27ff50b7cd081e860b"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#ab9e9743486cd0d27ff50b7cd081e860b">spdk_nvmf_tgt_accept</a> (struct spdk_nvmf_tgt *tgt)</td></tr>
+<tr class="memdesc:ab9e9743486cd0d27ff50b7cd081e860b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Poll the target for incoming connections.  <a href="#ab9e9743486cd0d27ff50b7cd081e860b">More...</a><br /></td></tr>
+<tr class="separator:ab9e9743486cd0d27ff50b7cd081e860b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3b1de2ab69c992ce2c732c354a08238f"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structspdk__nvmf__poll__group.html">spdk_nvmf_poll_group</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#a3b1de2ab69c992ce2c732c354a08238f">spdk_nvmf_poll_group_create</a> (struct spdk_nvmf_tgt *tgt)</td></tr>
 <tr class="memdesc:a3b1de2ab69c992ce2c732c354a08238f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a poll group.  <a href="#a3b1de2ab69c992ce2c732c354a08238f">More...</a><br /></td></tr>
 <tr class="separator:a3b1de2ab69c992ce2c732c354a08238f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -434,29 +431,6 @@ Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>NVMe over Fabrics target public API. </p>
 </div><h2 class="groupheader">Typedef Documentation</h2>
-<a id="aa999ebee65c92711a5dce79d06cf81c2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa999ebee65c92711a5dce79d06cf81c2">&#9670;&nbsp;</a></span>new_qpair_fn</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef void(* new_qpair_fn) (struct <a class="el" href="structspdk__nvmf__qpair.html">spdk_nvmf_qpair</a> *qpair, void *cb_arg)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Function to be called for each newly discovered qpair. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">qpair</td><td>The newly discovered qpair. </td></tr>
-    <tr><td class="paramname">cb_arg</td><td>A context argument passed to this function. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
 <a id="aec7dc3c1e2f740c1cbffa028ad5c5bff"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aec7dc3c1e2f740c1cbffa028ad5c5bff">&#9670;&nbsp;</a></span>spdk_nvmf_subsystem_state_change_done</h2>
 
@@ -2510,45 +2484,26 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="aa39b568e5ae11462a3e0aef59f8e9fd3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa39b568e5ae11462a3e0aef59f8e9fd3">&#9670;&nbsp;</a></span>spdk_nvmf_tgt_accept()</h2>
+<a id="ab9e9743486cd0d27ff50b7cd081e860b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab9e9743486cd0d27ff50b7cd081e860b">&#9670;&nbsp;</a></span>spdk_nvmf_tgt_accept()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void spdk_nvmf_tgt_accept </td>
+          <td class="memname">uint32_t spdk_nvmf_tgt_accept </td>
           <td>(</td>
           <td class="paramtype">struct spdk_nvmf_tgt *&#160;</td>
-          <td class="paramname"><em>tgt</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"><em>tgt</em></td><td>)</td>
           <td></td>
-          <td class="paramtype"><a class="el" href="nvmf_8h.html#aa999ebee65c92711a5dce79d06cf81c2">new_qpair_fn</a>&#160;</td>
-          <td class="paramname"><em>cb_fn</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>cb_arg</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Poll the target for incoming connections. </p>
-<p>The new_qpair_fn cb_fn will be called for each newly discovered qpair. The user is expected to add that qpair to a poll group to establish the connection.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">tgt</td><td>The target associated with the listen address. </td></tr>
-    <tr><td class="paramname">cb_fn</td><td>Called for each newly discovered qpair. </td></tr>
-    <tr><td class="paramname">cb_arg</td><td>A context argument passed to cb_fn. </td></tr>
   </table>
   </dd>
 </dl>

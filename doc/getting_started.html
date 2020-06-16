@@ -169,7 +169,7 @@ Running the Example Applications</h1>
 <div class="fragment"><div class="line">sudo HUGEMEM=4096 scripts/setup.sh</div></div><!-- fragment --><p>On Linux machines HUGEMEM will be rounded up to system-default huge page size boundary.</p>
 <p>All available params can be viewed by running</p>
 <div class="fragment"><div class="line">scripts/setup.sh help</div></div><!-- fragment --><p>Example code is located in the examples directory. The examples are compiled automatically as part of the build process. Simply call any of the examples with no arguments to see the help output. If your system has its IOMMU enabled you can run the examples as your regular user. If it doesn't, you'll need to run as a privileged user (root).</p>
-<p>A good example to start with is <code>examples/nvme/identify/identify</code>, which prints out information about all of the NVMe devices on your system.</p>
+<p>A good example to start with is <code>build/examples/identify</code>, which prints out information about all of the NVMe devices on your system.</p>
 <p>Larger, more fully functional applications are available in the <code>app</code> directory. This includes the iSCSI and NVMe-oF target. </p>
 </div></div><!-- PageDoc -->
 </div><!-- contents -->

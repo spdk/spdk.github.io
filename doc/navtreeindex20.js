@@ -1,5 +1,6 @@
 var NAVTREEINDEX20 =
 {
+"structspdk__nvmf__poll__group__stat.html#af35cb7b40dc36493333df1698ca17eda":[12,0,215,1],
 "structspdk__nvmf__qpair.html":[12,0,216],
 "structspdk__nvmf__qpair.html#a088e32a2258aaba2781f42bdb63d74f3":[12,0,216,0],
 "structspdk__nvmf__qpair.html#a0e2e7f8b9bb90bf1d0b0ed9e197cd290":[12,0,216,7],
@@ -95,7 +96,6 @@ var NAVTREEINDEX20 =
 "structspdk__nvmf__transport__ops.html#a5ef93b45156117554b4707487229e157":[12,0,227,15],
 "structspdk__nvmf__transport__ops.html#a78af963ea1a308f972fccc7d16c9c1a5":[12,0,227,10],
 "structspdk__nvmf__transport__ops.html#a79190a46c19b7d92d8929a7470afeb94":[12,0,227,23],
-"structspdk__nvmf__transport__ops.html#a9ac9bcd6d458f709884dd8168b382496":[12,0,227,0],
 "structspdk__nvmf__transport__ops.html#aa9af1fecfc0f12012902ec0106b498b9":[12,0,227,6],
 "structspdk__nvmf__transport__ops.html#ac029bafb3ebbfb3466ad803229dd2c75":[12,0,227,14],
 "structspdk__nvmf__transport__ops.html#ac32c0c33dd13799e4bbc730325da2bc8":[12,0,227,12],
@@ -104,6 +104,7 @@ var NAVTREEINDEX20 =
 "structspdk__nvmf__transport__ops.html#ad85e8fada80fc3301d5adc2ba909e312":[12,0,227,1],
 "structspdk__nvmf__transport__ops.html#af75a8f9214c03164a00dae20747fdb14":[12,0,227,13],
 "structspdk__nvmf__transport__ops.html#afa8e71018c357d6f6ea2293e178fe295":[12,0,227,9],
+"structspdk__nvmf__transport__ops.html#afec7aaf8fdb9d6547f776006b8f29148":[12,0,227,0],
 "structspdk__nvmf__transport__opts.html":[12,0,228],
 "structspdk__nvmf__transport__opts.html#a063b1c1080343c707a3d51ced615628f":[12,0,228,5],
 "structspdk__nvmf__transport__opts.html#a12c798cc83976f1edaf15c3627d31c70":[12,0,228,6],
@@ -248,6 +249,5 @@ var NAVTREEINDEX20 =
 "structspdk__opal__d0__geo__feat.html#ae0054ccec4f931e2e5579a478369de32":[12,0,242,5],
 "structspdk__opal__d0__geo__feat.html#afbe1656e43f505725524d5104832fc37":[12,0,242,2],
 "structspdk__opal__d0__hdr.html":[12,0,243],
-"structspdk__opal__d0__hdr.html#a2c9e8aa79824852998eb935c3d9f32cf":[12,0,243,1],
-"structspdk__opal__d0__hdr.html#a5e204faaf2de5be3d77e6ba952199a9d":[12,0,243,3]
+"structspdk__opal__d0__hdr.html#a2c9e8aa79824852998eb935c3d9f32cf":[12,0,243,1]
 };

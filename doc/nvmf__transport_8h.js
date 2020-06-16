@@ -18,6 +18,7 @@ var nvmf__transport_8h =
     [ "NVMF_REQ_MAX_BUFFERS", "nvmf__transport_8h.html#ae453aa517acad83342a4798360ad95bb", null ],
     [ "SPDK_NVMF_MAX_SGL_ENTRIES", "nvmf__transport_8h.html#aa49d6244da02774d39e7482f56463619", null ],
     [ "SPDK_NVMF_TRANSPORT_REGISTER", "nvmf__transport_8h.html#abeebe98da8b8183865537af9d2fd42f6", null ],
+    [ "new_qpair_fn", "nvmf__transport_8h.html#aa999ebee65c92711a5dce79d06cf81c2", null ],
     [ "spdk_nvmf_state_change_done", "nvmf__transport_8h.html#aada9c18bb825f6aa67e13444d93abd38", null ],
     [ "spdk_nvmf_qpair_state", "nvmf__transport_8h.html#aae2f46da7cfac38ce46c51446985a286", [
       [ "SPDK_NVMF_QPAIR_UNINITIALIZED", "nvmf__transport_8h.html#aae2f46da7cfac38ce46c51446985a286a234516b19c54f2684d634e0dc3c41d24", null ],

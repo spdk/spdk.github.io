@@ -3,7 +3,7 @@ var searchData=
   ['ab',['ab',['../unionspdk__nvme__feat__arbitration.html#a47fb9a1efe9cd17abfa3a8b198919e34',1,'spdk_nvme_feat_arbitration']]],
   ['abpid',['abpid',['../unionspdk__nvme__bpinfo__register.html#a30aaf50ed21f4eabcb3f0107dcb23ddd',1,'spdk_nvme_bpinfo_register']]],
   ['accel_5fengine_2eh',['accel_engine.h',['../accel__engine_8h.html',1,'']]],
-  ['accept',['accept',['../structspdk__nvmf__transport__ops.html#a9ac9bcd6d458f709884dd8168b382496',1,'spdk_nvmf_transport_ops']]],
+  ['accept',['accept',['../structspdk__nvmf__transport__ops.html#afec7aaf8fdb9d6547f776006b8f29148',1,'spdk_nvmf_transport_ops']]],
   ['access_5fsize',['access_size',['../structspdk__nvme__dsm__range.html#a3caca88fc730017972f9c9ae066e1a2f',1,'spdk_nvme_dsm_range']]],
   ['acl',['acl',['../structspdk__nvme__ctrlr__data.html#a9e68c27ce1964a7af30716a286d14a16',1,'spdk_nvme_ctrlr_data']]],
   ['acqs',['acqs',['../unionspdk__nvme__aqa__register.html#a3f5ae033d3569600cfe59e2fc4add132',1,'spdk_nvme_aqa_register']]],

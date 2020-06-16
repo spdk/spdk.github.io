@@ -1,5 +1,6 @@
 var structspdk__env__opts =
 [
+    [ "base_virtaddr", "structspdk__env__opts.html#aa9fe4ad9bba48500a0f56d0de9faa465", null ],
     [ "core_mask", "structspdk__env__opts.html#a4b9a11722fabf2671d9c22deefe3ccec", null ],
     [ "env_context", "structspdk__env__opts.html#a54e6333e5067530db7e69b95ef8808ca", null ],
     [ "hugedir", "structspdk__env__opts.html#a0d600a89bcfc18ad9af0919c9d1fe967", null ],
