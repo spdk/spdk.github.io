@@ -184,6 +184,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ac4e441dcb5b00b9f97835c07017f32ed"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="idxd_8h.html#ac4e441dcb5b00b9f97835c07017f32ed">spdk_idxd_submit_copy</a> (struct spdk_idxd_io_channel *chan, void *dst, const void *src, uint64_t nbytes, <a class="el" href="idxd_8h.html#a75c066c5425700c49f077e20484b50c1">spdk_idxd_req_cb</a> cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:ac4e441dcb5b00b9f97835c07017f32ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Build and submit a accel engine memory copy request.  <a href="#ac4e441dcb5b00b9f97835c07017f32ed">More...</a><br /></td></tr>
 <tr class="separator:ac4e441dcb5b00b9f97835c07017f32ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef2f83b678ea127b1818f759a615bdef"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="idxd_8h.html#aef2f83b678ea127b1818f759a615bdef">spdk_idxd_submit_dualcast</a> (struct spdk_idxd_io_channel *chan, void *dst1, void *dst2, const void *src, uint64_t nbytes, <a class="el" href="idxd_8h.html#a75c066c5425700c49f077e20484b50c1">spdk_idxd_req_cb</a> cb_fn, void *cb_arg)</td></tr>
+<tr class="memdesc:aef2f83b678ea127b1818f759a615bdef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Build and submit an accel engine dual cast copy request.  <a href="#aef2f83b678ea127b1818f759a615bdef">More...</a><br /></td></tr>
+<tr class="separator:aef2f83b678ea127b1818f759a615bdef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a13e5209991017f518cfcc95e7d978aff"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="idxd_8h.html#a13e5209991017f518cfcc95e7d978aff">spdk_idxd_submit_compare</a> (struct spdk_idxd_io_channel *chan, void *src1, const void *src2, uint64_t nbytes, <a class="el" href="idxd_8h.html#a75c066c5425700c49f077e20484b50c1">spdk_idxd_req_cb</a> cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:a13e5209991017f518cfcc95e7d978aff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Build and submit a memory compare request.  <a href="#a13e5209991017f518cfcc95e7d978aff">More...</a><br /></td></tr>
 <tr class="separator:a13e5209991017f518cfcc95e7d978aff"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -722,6 +725,80 @@ Functions</h2></td></tr>
     <tr><td class="paramname">nbytes</td><td>Number of bytes to calculate on. </td></tr>
     <tr><td class="paramname">cb_fn</td><td>Callback function which will be called when the request is complete. </td></tr>
     <tr><td class="paramname">cb_arg</td><td>Opaque value which will be passed back as the cb_arg parameter in the completion callback.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, negative errno on failure. </dd></dl>
+
+</div>
+</div>
+<a id="aef2f83b678ea127b1818f759a615bdef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef2f83b678ea127b1818f759a615bdef">&#9670;&nbsp;</a></span>spdk_idxd_submit_dualcast()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_idxd_submit_dualcast </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_idxd_io_channel *&#160;</td>
+          <td class="paramname"><em>chan</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>dst1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>dst2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>src</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>nbytes</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="idxd_8h.html#a75c066c5425700c49f077e20484b50c1">spdk_idxd_req_cb</a>&#160;</td>
+          <td class="paramname"><em>cb_fn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>cb_arg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Build and submit an accel engine dual cast copy request. </p>
+<p>This function will build the dual cast descriptor and then immediately submit by writing to the proper device portal.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">chan</td><td>IDXD channel to submit request. </td></tr>
+    <tr><td class="paramname">dst1</td><td>First destination virtual address (must be 4K aligned). </td></tr>
+    <tr><td class="paramname">dst2</td><td>Second destination virtual address (must be 4K aligned). </td></tr>
+    <tr><td class="paramname">src</td><td>Source virtual address. </td></tr>
+    <tr><td class="paramname">nbytes</td><td>Number of bytes to copy. </td></tr>
+    <tr><td class="paramname">cb_fn</td><td>Callback function which will be called when the request is complete. </td></tr>
+    <tr><td class="paramname">cb_arg</td><td>Opaque value which will be passed back as the arg parameter in the completion callback.</td></tr>
   </table>
   </dd>
 </dl>

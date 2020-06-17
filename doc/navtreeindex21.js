@@ -1,5 +1,8 @@
 var NAVTREEINDEX21 =
 {
+"structspdk__opal__d0__geo__feat.html#afbe1656e43f505725524d5104832fc37":[12,0,242,2],
+"structspdk__opal__d0__hdr.html":[12,0,243],
+"structspdk__opal__d0__hdr.html#a2c9e8aa79824852998eb935c3d9f32cf":[12,0,243,1],
 "structspdk__opal__d0__hdr.html#a5e204faaf2de5be3d77e6ba952199a9d":[12,0,243,3],
 "structspdk__opal__d0__hdr.html#ab11e1708ccfa5b1410d77318275cb194":[12,0,243,2],
 "structspdk__opal__d0__hdr.html#ababd006c50c2e23d5fd1328fdbeeff92":[12,0,243,4],
@@ -246,8 +249,5 @@ var NAVTREEINDEX21 =
 "structspdk__scsi__pr__out__param__list.html#ac0b4102c74fb95be8b31e4645d487ab3":[12,0,270,5],
 "structspdk__scsi__pr__out__param__list.html#adf717cce996b7136aea6b75b2e46b994":[12,0,270,1],
 "structspdk__scsi__pr__out__param__list.html#ae81580fac858295baa51c58d9a71a750":[12,0,270,8],
-"structspdk__scsi__pr__out__param__list.html#afd2b9b1342b53a9bd033df702b2803e3":[12,0,270,3],
-"structspdk__scsi__pr__out__reg__and__move__param__list.html":[12,0,271],
-"structspdk__scsi__pr__out__reg__and__move__param__list.html#a128194af49bc4a4a966314e242802ed4":[12,0,271,0],
-"structspdk__scsi__pr__out__reg__and__move__param__list.html#a1d74b121e844229939c9806578904b6e":[12,0,271,7]
+"structspdk__scsi__pr__out__param__list.html#afd2b9b1342b53a9bd033df702b2803e3":[12,0,270,3]
 };

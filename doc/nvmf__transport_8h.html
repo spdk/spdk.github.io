@@ -262,6 +262,9 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvmf_request_free
 <tr class="memitem:a4256612baa1f8b906592d85e59f27e70"><td class="memItemLeft" align="right" valign="top"><a id="a4256612baa1f8b906592d85e59f27e70"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvmf_request_complete</b> (struct <a class="el" href="structspdk__nvmf__request.html">spdk_nvmf_request</a> *req)</td></tr>
 <tr class="separator:a4256612baa1f8b906592d85e59f27e70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ea012aeb9897f188acdf41481c0217f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf__transport_8h.html#a9ea012aeb9897f188acdf41481c0217f">spdk_nvmf_poll_group_remove</a> (struct <a class="el" href="structspdk__nvmf__qpair.html">spdk_nvmf_qpair</a> *qpair)</td></tr>
+<tr class="memdesc:a9ea012aeb9897f188acdf41481c0217f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove the given qpair from the poll group.  <a href="#a9ea012aeb9897f188acdf41481c0217f">More...</a><br /></td></tr>
+<tr class="separator:a9ea012aeb9897f188acdf41481c0217f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4e1187651747d823aa32669905db2d89"><td class="memItemLeft" align="right" valign="top">struct spdk_nvmf_subsystem *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf__transport_8h.html#a4e1187651747d823aa32669905db2d89">spdk_nvmf_ctrlr_get_subsystem</a> (struct spdk_nvmf_ctrlr *ctrlr)</td></tr>
 <tr class="memdesc:a4e1187651747d823aa32669905db2d89"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the NVMe-oF subsystem associated with this controller.  <a href="#a4e1187651747d823aa32669905db2d89">More...</a><br /></td></tr>
 <tr class="separator:a4e1187651747d823aa32669905db2d89"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -349,6 +352,32 @@ static enum <a class="el" href="nvme__spec_8h.html#adbe38e042bb939183ed8fd5c1685
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The NVMe-oF subsystem </dd></dl>
+
+</div>
+</div>
+<a id="a9ea012aeb9897f188acdf41481c0217f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ea012aeb9897f188acdf41481c0217f">&#9670;&nbsp;</a></span>spdk_nvmf_poll_group_remove()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_nvmf_poll_group_remove </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structspdk__nvmf__qpair.html">spdk_nvmf_qpair</a> *&#160;</td>
+          <td class="paramname"><em>qpair</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Remove the given qpair from the poll group. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">qpair</td><td>The qpair to remove. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

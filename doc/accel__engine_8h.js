@@ -20,6 +20,7 @@ var accel__engine_8h =
     [ "spdk_accel_submit_compare", "accel__engine_8h.html#a025d630589ff531b63024ff41276e7a2", null ],
     [ "spdk_accel_submit_copy", "accel__engine_8h.html#a165823e33b9a1bd61ca015b03fd0bc26", null ],
     [ "spdk_accel_submit_crc32c", "accel__engine_8h.html#afe15a3c00b47461d6cd2e66fbae011ba", null ],
+    [ "spdk_accel_submit_dualcast", "accel__engine_8h.html#af2a407ee1475245d36eb6feabeaa72b3", null ],
     [ "spdk_accel_submit_fill", "accel__engine_8h.html#a069e8bf561424ee3e78226721341a7b9", null ],
     [ "spdk_accel_task_size", "accel__engine_8h.html#af39d975565772672ebbae4e5d22b40d8", null ],
     [ "spdk_accel_write_config_json", "accel__engine_8h.html#a308671b4f55c2adc9469e59b941a6dcc", null ]

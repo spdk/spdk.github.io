@@ -1,5 +1,8 @@
 var NAVTREEINDEX24 =
 {
+"unionspdk__nvme__feat__non__operational__power__state__config.html#a386211360198cf58433639c3a5763a14":[12,0,115,0],
+"unionspdk__nvme__feat__non__operational__power__state__config.html#a8f512d6ffa8611e38141e169898efb4b":[12,0,115,1],
+"unionspdk__nvme__feat__number__of__queues.html":[12,0,116],
 "unionspdk__nvme__feat__number__of__queues.html#a333d356ec56d5cbbc18d680c17f8eb44":[12,0,116,2],
 "unionspdk__nvme__feat__number__of__queues.html#a441891f8e5495ab0b720c0a97904f685":[12,0,116,0],
 "unionspdk__nvme__feat__number__of__queues.html#a48012c7a713f82d0e9b375cf363d4af2":[12,0,116,1],
