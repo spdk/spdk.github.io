@@ -208,9 +208,6 @@ Typedefs</h2></td></tr>
 <tr class="memitem:aada9c18bb825f6aa67e13444d93abd38"><td class="memItemLeft" align="right" valign="top"><a id="aada9c18bb825f6aa67e13444d93abd38"></a>
 typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvmf_state_change_done</b>) (void *cb_arg, int status)</td></tr>
 <tr class="separator:aada9c18bb825f6aa67e13444d93abd38"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa999ebee65c92711a5dce79d06cf81c2"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf__transport_8h.html#aa999ebee65c92711a5dce79d06cf81c2">new_qpair_fn</a>) (struct <a class="el" href="structspdk__nvmf__qpair.html">spdk_nvmf_qpair</a> *qpair, void *cb_arg)</td></tr>
-<tr class="memdesc:aa999ebee65c92711a5dce79d06cf81c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to be called for each newly discovered qpair.  <a href="#aa999ebee65c92711a5dce79d06cf81c2">More...</a><br /></td></tr>
-<tr class="separator:aa999ebee65c92711a5dce79d06cf81c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
@@ -235,6 +232,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a246103af98d69ad6a1d74d2a4f9e6f7e"><td class="memItemLeft" align="right" valign="top"><a id="a246103af98d69ad6a1d74d2a4f9e6f7e"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvmf_ctrlr_connect</b> (struct <a class="el" href="structspdk__nvmf__request.html">spdk_nvmf_request</a> *req)</td></tr>
 <tr class="separator:a246103af98d69ad6a1d74d2a4f9e6f7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae540481943a9be15eacf93e111714db9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf__transport_8h.html#ae540481943a9be15eacf93e111714db9">spdk_nvmf_tgt_new_qpair</a> (struct spdk_nvmf_tgt *tgt, struct <a class="el" href="structspdk__nvmf__qpair.html">spdk_nvmf_qpair</a> *qpair)</td></tr>
+<tr class="memdesc:ae540481943a9be15eacf93e111714db9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to be called for each newly discovered qpair.  <a href="#ae540481943a9be15eacf93e111714db9">More...</a><br /></td></tr>
+<tr class="separator:ae540481943a9be15eacf93e111714db9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a87cc10db83a3c4e44ed38ce031646e58"><td class="memItemLeft" align="right" valign="top"><a id="a87cc10db83a3c4e44ed38ce031646e58"></a>
 const struct <a class="el" href="structspdk__nvmf__registers.html">spdk_nvmf_registers</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvmf_ctrlr_get_regs</b> (struct spdk_nvmf_ctrlr *ctrlr)</td></tr>
 <tr class="separator:a87cc10db83a3c4e44ed38ce031646e58"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -303,30 +303,6 @@ static enum <a class="el" href="nvme__spec_8h.html#adbe38e042bb939183ed8fd5c1685
 <b>Value:</b><div class="fragment"><div class="line"><span class="keyword">static</span> <span class="keywordtype">void</span> __attribute__((constructor)) _spdk_nvmf_transport_register_##name(<span class="keywordtype">void</span>) \</div><div class="line">{ \</div><div class="line">        spdk_nvmf_transport_register(transport_ops); \</div><div class="line">}\</div></div><!-- fragment -->
 </div>
 </div>
-<h2 class="groupheader">Typedef Documentation</h2>
-<a id="aa999ebee65c92711a5dce79d06cf81c2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa999ebee65c92711a5dce79d06cf81c2">&#9670;&nbsp;</a></span>new_qpair_fn</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef void(* new_qpair_fn) (struct <a class="el" href="structspdk__nvmf__qpair.html">spdk_nvmf_qpair</a> *qpair, void *cb_arg)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Function to be called for each newly discovered qpair. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">qpair</td><td>The newly discovered qpair. </td></tr>
-    <tr><td class="paramname">cb_arg</td><td>A context argument passed to this function. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="a4e1187651747d823aa32669905db2d89"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4e1187651747d823aa32669905db2d89">&#9670;&nbsp;</a></span>spdk_nvmf_ctrlr_get_subsystem()</h2>
@@ -375,6 +351,43 @@ static enum <a class="el" href="nvme__spec_8h.html#adbe38e042bb939183ed8fd5c1685
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">qpair</td><td>The qpair to remove. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ae540481943a9be15eacf93e111714db9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae540481943a9be15eacf93e111714db9">&#9670;&nbsp;</a></span>spdk_nvmf_tgt_new_qpair()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_nvmf_tgt_new_qpair </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_nvmf_tgt *&#160;</td>
+          <td class="paramname"><em>tgt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structspdk__nvmf__qpair.html">spdk_nvmf_qpair</a> *&#160;</td>
+          <td class="paramname"><em>qpair</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Function to be called for each newly discovered qpair. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tgt</td><td>The nvmf target </td></tr>
+    <tr><td class="paramname">qpair</td><td>The newly discovered qpair. </td></tr>
   </table>
   </dd>
 </dl>

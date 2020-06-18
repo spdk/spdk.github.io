@@ -1,6 +1,5 @@
 var NAVTREEINDEX4 =
 {
-"iscsi__spec_8h.html#a6ae501611baca9225cc96bf6cf087450a3546acfc24f211b3b8cd2a90444a8f40":[13,0,27,94,5],
 "iscsi__spec_8h.html#a6ae501611baca9225cc96bf6cf087450a64a4553f7faad7d50488d38beb3ac726":[13,0,27,94,7],
 "iscsi__spec_8h.html#a6ae501611baca9225cc96bf6cf087450a65ca8ffe7f4c93b39503ec01d9fc5b5d":[13,0,27,94,3],
 "iscsi__spec_8h.html#a6ae501611baca9225cc96bf6cf087450a72ad77a739bc2ecbde32ec9f2ca4cc99":[13,0,27,94,0],
@@ -249,5 +248,6 @@ var NAVTREEINDEX4 =
 "jsonrpc.html#rpc_blobfs_detect":[3,8,8,0],
 "jsonrpc.html#rpc_blobfs_mount":[3,8,8,2],
 "jsonrpc.html#rpc_blobfs_set_cache_size":[3,8,8,3],
-"jsonrpc.html#rpc_framework_get_config":[3,8,1,6]
+"jsonrpc.html#rpc_framework_get_config":[3,8,1,6],
+"jsonrpc.html#rpc_framework_get_reactors":[3,8,1,7]
 };

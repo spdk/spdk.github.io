@@ -1,6 +1,5 @@
 var NAVTREEINDEX10 =
 {
-"nvmf_tgt_tracepoints.html":[10],
 "nvmf_tgt_tracepoints.html#add_tracepoints":[10,4],
 "nvmf_tgt_tracepoints.html#capture_trace_events":[10,3],
 "nvmf_tgt_tracepoints.html#capture_tracepoints":[10,2],
@@ -249,5 +248,6 @@ var NAVTREEINDEX10 =
 "scsi__spec_8h.html#a35efeaeb4d8fb7a9b406846a2138b389aa43af601413036c21d9057b34880e3e9":[13,0,48,76,5],
 "scsi__spec_8h.html#a35efeaeb4d8fb7a9b406846a2138b389aa76380f78f79cf196184ac5e11d6988f":[13,0,48,76,52],
 "scsi__spec_8h.html#a35efeaeb4d8fb7a9b406846a2138b389aad1a5650e55824a3ec628ada85ea826d":[13,0,48,76,39],
-"scsi__spec_8h.html#a35efeaeb4d8fb7a9b406846a2138b389ab0b2e2e54a40f139e12f27dbdd2a872b":[13,0,48,76,32]
+"scsi__spec_8h.html#a35efeaeb4d8fb7a9b406846a2138b389ab0b2e2e54a40f139e12f27dbdd2a872b":[13,0,48,76,32],
+"scsi__spec_8h.html#a35efeaeb4d8fb7a9b406846a2138b389ab62a8bbf609f78cb02906200fb75cb61":[13,0,48,76,27]
 };

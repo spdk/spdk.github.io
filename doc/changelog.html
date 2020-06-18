@@ -149,7 +149,7 @@ $(document).ready(function(){initNavTree('changelog.html','');});
 v20.07: (Upcoming Release)</h1>
 <h2>nvmf</h2>
 <p>The NVMe-oF target no longer supports connecting scheduling configuration and instead always uses what was previously called "transport" scheduling.</p>
-<p><code>spdk_nvmf_tgt_accept</code> no longer takes a function pointer as an argument. New connections are automatically assigned to poll groups by the underlying transport.</p>
+<p><code>spdk_nvmf_tgt_accept</code> no longer takes a function pointer as an argument. New connections are automatically assigned to poll groups by the underlying transport. Further, <code><a class="el" href="structspdk__nvmf__transport__ops.html">spdk_nvmf_transport_ops</a></code> has changed such that the accept function pointer no longer takes a function pointer as an argument. Instead, transports should call <code>spdk_nvmf_tgt_new_qpair</code> whenever they previously would have called that callback.</p>
 <h2>nvme</h2>
 <p>Add <code>opts_size</code> in <code><a class="el" href="structspdk__nvme__ctrlr__opts.html" title="NVMe controller initialization options.">spdk_nvme_ctrlr_opts</a></code> structure in order to solve the compatiblity issue for different ABI version.</p>
 <h2>RPC</h2>

@@ -13,12 +13,11 @@ var NAVTREEINDEX3 =
 "globals_defs.html":[13,1,5],
 "globals_enum.html":[13,1,3],
 "globals_eval.html":[13,1,4],
-"globals_func.html":[13,1,1,0],
 "globals_func.html":[13,1,1],
+"globals_func.html":[13,1,1,0],
 "globals_i.html":[13,1,0,1],
 "globals_l.html":[13,1,0,2],
-"globals_n.html":[13,1,0,3],
-"globals_s.html":[13,1,0,4],
+"globals_s.html":[13,1,0,3],
 "globals_type.html":[13,1,2],
 "gpt__spec_8h.html":[13,0,22],
 "gpt__spec_8h.html#a399a8083219f4094fdb860b5c580ba0a":[13,0,22,10],
@@ -249,5 +248,6 @@ var NAVTREEINDEX3 =
 "iscsi__spec_8h.html#a64aadc6f469d1fccc4bffd83790f8f18":[13,0,27,92],
 "iscsi__spec_8h.html#a67325e98b5da1a3d468cb7f57a0ed301":[13,0,27,73],
 "iscsi__spec_8h.html#a681ced3781459c23be348ac9c1b9c678":[13,0,27,23],
-"iscsi__spec_8h.html#a6ae501611baca9225cc96bf6cf087450":[13,0,27,94]
+"iscsi__spec_8h.html#a6ae501611baca9225cc96bf6cf087450":[13,0,27,94],
+"iscsi__spec_8h.html#a6ae501611baca9225cc96bf6cf087450a3546acfc24f211b3b8cd2a90444a8f40":[13,0,27,94,5]
 };
