@@ -5,6 +5,7 @@ var structspdk__env__opts =
     [ "env_context", "structspdk__env__opts.html#a54e6333e5067530db7e69b95ef8808ca", null ],
     [ "hugedir", "structspdk__env__opts.html#a0d600a89bcfc18ad9af0919c9d1fe967", null ],
     [ "hugepage_single_segments", "structspdk__env__opts.html#a04de220e31274ee239f4f2de62608263", null ],
+    [ "iova_mode", "structspdk__env__opts.html#a2b16cae71c7e958824279b85576a3804", null ],
     [ "master_core", "structspdk__env__opts.html#a1c0f73e63994e6819201a473122f56ae", null ],
     [ "mem_channel", "structspdk__env__opts.html#aa2f18340dae1a40ec69fec08f5ce3b0b", null ],
     [ "mem_size", "structspdk__env__opts.html#ae57b5f0c41ed9f5f450a39839a1ec452", null ],

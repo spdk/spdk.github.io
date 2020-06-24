@@ -6,6 +6,7 @@ var structspdk__app__opts =
     [ "env_context", "structspdk__app__opts.html#a7e520897d6a9e39c3e62cc4259bd2ea3", null ],
     [ "hugedir", "structspdk__app__opts.html#a8fcfa061da5b1b5bfd9900c3074bf95f", null ],
     [ "hugepage_single_segments", "structspdk__app__opts.html#ad584493cb8e3ca1744f29fbf4302d73f", null ],
+    [ "iova_mode", "structspdk__app__opts.html#a637cccc4c5bfefe84643fcb14943cd72", null ],
     [ "json_config_file", "structspdk__app__opts.html#aa167c7261b91f10450ac6f1bc0700c1e", null ],
     [ "json_config_ignore_errors", "structspdk__app__opts.html#a22921866228db3a1c2831638650a26f6", null ],
     [ "log", "structspdk__app__opts.html#a4de9f5097a5cdc69c3b45b64db56eea0", null ],
