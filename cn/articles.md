@@ -8,6 +8,8 @@ lang: cn
 
 * [SPDK block device 及其编程的简单介绍](https://mp.weixin.qq.com/s?__biz=MzI3NDA4ODY4MA==&mid=2653336658&idx=1&sn=6c81de4b2897fd78bfdabab9c1c316dd&chksm=f0cb43d5c7bccac3a531867010e43e32abe13c5f8607e61e458f19594402ae5974fd326f7960&token=1050568646&lang=zh_CN#rd)
 
+* [SPDK Block Device 及其编程的简单介绍(二):初始化](https://mp.weixin.qq.com/s?__biz=MzI3NDA4ODY4MA==&mid=2653337067&idx=1&sn=9629dff3ee8ec3e6f70bd4a7dbe763cb&chksm=f0cb426cc7bccb7a3816b9888c547038113a173d4f3f4519fe9cf0f4bf18844074538bfa9781&token=468503366&lang=zh_CN#rd)
+
 * [SPDK线程模型解析](https://mp.weixin.qq.com/s?__biz=MzI3NDA4ODY4MA==&mid=2653336301&idx=1&sn=893bceb88d7e775863ebc006e83f5532&chksm=f0cb456ac7bccc7cb720366f69941164e4e80cd5ceaef33bcbe16e7c761046aadc6e7137e4d7&token=1179202807&lang=zh_CN#rd)
 
 * [SPDK virtio 驱动模块介绍及使用](https://mp.weixin.qq.com/s?__biz=MzI3NDA4ODY4MA==&mid=2653336450&idx=1&sn=3a15cf91138031bec34abac774a41506&chksm=f0cb4405c7bccd1306a867d817a7691243814d83d7cb7b43f0f5b6677112b78bcd6a0f8efeba&token=765211277&lang=zh_CN#rd)
@@ -42,11 +44,15 @@ lang: cn
 
 * [在虚拟机上使用SoftRoCE部署SPDK NVMe-oF](https://mp.weixin.qq.com/s?__biz=MzI3NDA4ODY4MA==&mid=2653334915&idx=1&sn=196ca1105b9da3b3358caa1d09f0f41f&chksm=f0cb5a04c7bcd31249703bc6ca703133cfb6d58283e4d0c3b00bf4ed4793a5f9f1cae57fda54&token=431082989&lang=zh_CN#rd)
 
+* [网络编程的未来，io_uring?](https://mp.weixin.qq.com/s?__biz=MzI3NDA4ODY4MA==&mid=2653337201&idx=1&sn=4a4c1473fafe002255faac5a9096d523&chksm=f0cb41f6c7bcc8e04aaee729055b4221fcac8ab2136e2c8a22d4b40469e7e1c2414eb5f47041&token=468503366&lang=zh_CN#rd)
+
 ******
 
 **SPDK iSCSI target/initiator**
 
 * [SPDK用户态 iSCSI 客户端库功能介绍](https://mp.weixin.qq.com/s/RHisv2B_9f6Ql5_7iKa_Yw)
+
+* [Fuzz方法在SPDK iSCSI的应用实例](https://mp.weixin.qq.com/s?__biz=MzI3NDA4ODY4MA==&mid=2653337187&idx=1&sn=40504e53764a47cdb7088392de613ab3&chksm=f0cb41e4c7bcc8f2584d8dad76e08183578829e2e43a20a4a061340f2e3cb717b84c4a9b077a&token=468503366&lang=zh_CN#rd)
 
 ******
 
@@ -55,6 +61,8 @@ lang: cn
 * [SPDK virtio 驱动模块介绍及使用](https://mp.weixin.qq.com/s?__biz=MzI3NDA4ODY4MA==&mid=2653336450&idx=1&sn=3a15cf91138031bec34abac774a41506&chksm=f0cb4405c7bccd1306a867d817a7691243814d83d7cb7b43f0f5b6677112b78bcd6a0f8efeba&token=1050568646&lang=zh_CN#rd)
 
 * [SPDK Vhost对Live Migration的支持](https://mp.weixin.qq.com/s?__biz=MzI3NDA4ODY4MA==&mid=2653334939&idx=1&sn=012fb74c571aed8093a5a17a38381f8d&chksm=f0cb5a1cc7bcd30a869d87df0e6e7efe2491ec4f3c62eff6d028961e9c6d41d056f00c47c6f9&token=431082989&lang=zh_CN#rd)
+
+* [SPDK Vhost在线恢复：让I/O飞一会儿](https://mp.weixin.qq.com/s?__biz=MzI3NDA4ODY4MA==&mid=2653336929&idx=1&sn=0fba4d1922daeeb1da9c1df2d08aca7b&chksm=f0cb42e6c7bccbf0b724f7fe0fb5bf6c1dea4235bb49adc55b5134907d33a4c93dbec5ba1d03&token=468503366&lang=zh_CN#rd)
 
 ******
 
@@ -86,6 +94,8 @@ lang: cn
 
 * [火爆业界的明星，下一代存储技术的先行: NVDIMM 你了解吗?](https://mp.weixin.qq.com/s?__biz=MzI3NDA4ODY4MA==&mid=2653335049&idx=1&sn=e3523d28b4e3d79c5584c20d04432e24&pass_ticket=6pPQwgtuLLkHv4fBlZcTWzepH4S%2FWbUWUxESD8lfM6BTwdPB7U%2FMlij2UeHFvzDB)
 
+* [Intel VMD技术和SPDK VMD驱动模块介绍及使用](https://mp.weixin.qq.com/s?__biz=MzI3NDA4ODY4MA==&mid=2653336956&idx=1&sn=3fd65203018991b1c2d06f57cad1bf8d&chksm=f0cb42fbc7bccbedd59ab5b60918fcde64c2e306c89926956a9b525c80ad977ae1fe9b078a7f&token=468503366&lang=zh_CN#rd)
+
 ******
 
 **SPDK和NVMe新特性**
@@ -99,3 +109,5 @@ lang: cn
 * [Zoned Namespace_NVMe Spec对标Open-Channel的解决方案（下篇）](https://mp.weixin.qq.com/s?__biz=MzI3NDA4ODY4MA==&mid=2653335343&idx=1&sn=94a07928e66b388c54b470d5551cf990&chksm=f0cb58a8c7bcd1beec8c85abfee9564a7f9be01e10011dacb870e2cd8d0ad2a8cb2d8889a177&mpshare=1&scene=1&srcid=&pass_ticket=I08wxcYqrorlEm9aY2xig3IeNMZGBl2nIICys%2BEBjYLRUYNzPhBPFQ%2FIe5HOO1dk#rd)
 
 * [Liblightnvm, 在用户态操作Open-Channel SSD](https://mp.weixin.qq.com/s/wVfVhDvF8b0owlUxNjPLXw)
+
+* [用户态NVMe运维利器 -- SPDK NVMe 字符设备](https://mp.weixin.qq.com/s?__biz=MzI3NDA4ODY4MA==&mid=2653336872&idx=1&sn=160bc5517d67c6e9900c54ba9ebab22d&chksm=f0cb42afc7bccbb9314c443d706f06161e38060f2bb82106c4a631081051e71761aa24389c50&token=468503366&lang=zh_CN#rd)
