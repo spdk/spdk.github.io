@@ -12,6 +12,8 @@ var searchData=
   ['spdk_5fmalloc_5fshare',['SPDK_MALLOC_SHARE',['../env_8h.html#ad1660ffa6731090ef3f480c295a87dba',1,'env.h']]],
   ['spdk_5fmb',['spdk_mb',['../barrier_8h.html#a745a3ecabbce4b44d1728d08f9bf8623',1,'barrier.h']]],
   ['spdk_5fmemzone_5fno_5fiova_5fcontig',['SPDK_MEMZONE_NO_IOVA_CONTIG',['../env_8h.html#a723c2f644ec11282b96e1568f3124d07',1,'env.h']]],
+  ['spdk_5fnvme_5fcap_5fcss_5fiocs',['SPDK_NVME_CAP_CSS_IOCS',['../nvme__spec_8h.html#af7e3abad4c4c265fccce437bbb7832f1',1,'nvme_spec.h']]],
+  ['spdk_5fnvme_5fcap_5fcss_5fnoio',['SPDK_NVME_CAP_CSS_NOIO',['../nvme__spec_8h.html#a31ff3cbe0e2664095e3abc096a9ea81f',1,'nvme_spec.h']]],
   ['spdk_5fnvme_5fcap_5fcss_5fnvm',['SPDK_NVME_CAP_CSS_NVM',['../nvme__spec_8h.html#a69a0ff119fce7fb11c4eb2a2f83c01d1',1,'nvme_spec.h']]],
   ['spdk_5fnvme_5fdataset_5fmanagement_5fmax_5franges',['SPDK_NVME_DATASET_MANAGEMENT_MAX_RANGES',['../nvme__spec_8h.html#ad2aa28f22c4dc7336caf96815cb70314',1,'nvme_spec.h']]],
   ['spdk_5fnvme_5fdataset_5fmanagement_5frange_5fmax_5fblocks',['SPDK_NVME_DATASET_MANAGEMENT_RANGE_MAX_BLOCKS',['../nvme__spec_8h.html#a26ca66ff5a40e3916763aabbfb22ce14',1,'nvme_spec.h']]],
