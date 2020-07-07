@@ -169,6 +169,7 @@ var NAVTREEINDEX4 =
 "jsonrpc.html#jsonrpc_components_lvol":[3,8,6],
 "jsonrpc.html#jsonrpc_components_nbd":[3,8,7],
 "jsonrpc.html#jsonrpc_components_nvmf_tgt":[3,8,4],
+"jsonrpc.html#jsonrpc_components_sock":[3,8,9],
 "jsonrpc.html#jsonrpc_components_vhost_tgt":[3,8,5],
 "jsonrpc.html#jsonrpc_error_message":[3,8,0,0],
 "jsonrpc.html#jsonrpc_invalid_params":[3,8,0,0,1],
@@ -214,7 +215,7 @@ var NAVTREEINDEX4 =
 "jsonrpc.html#rpc_bdev_nvme_get_controllers":[3,8,2,19],
 "jsonrpc.html#rpc_bdev_nvme_opal_init":[3,8,6,16],
 "jsonrpc.html#rpc_bdev_nvme_opal_revert":[3,8,6,17],
-"jsonrpc.html#rpc_bdev_nvme_send_cmd":[3,8,8,4],
+"jsonrpc.html#rpc_bdev_nvme_send_cmd":[3,8,9,2],
 "jsonrpc.html#rpc_bdev_nvme_set_hotplug":[3,8,2,17],
 "jsonrpc.html#rpc_bdev_nvme_set_options":[3,8,2,16],
 "jsonrpc.html#rpc_bdev_ocf_create":[3,8,2,6],
@@ -248,6 +249,5 @@ var NAVTREEINDEX4 =
 "jsonrpc.html#rpc_blobfs_detect":[3,8,8,0],
 "jsonrpc.html#rpc_blobfs_mount":[3,8,8,2],
 "jsonrpc.html#rpc_blobfs_set_cache_size":[3,8,8,3],
-"jsonrpc.html#rpc_framework_get_config":[3,8,1,6],
-"jsonrpc.html#rpc_framework_get_reactors":[3,8,1,7]
+"jsonrpc.html#rpc_framework_get_config":[3,8,1,6]
 };

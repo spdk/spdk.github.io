@@ -20,6 +20,10 @@ var thread_8h =
       [ "SPDK_THREAD_OP_NEW", "thread_8h.html#aa0d064c5b2e0268ad751a682fa8ed6a6a37f413cce870e5539efe6fe4607c543e", null ],
       [ "SPDK_THREAD_OP_RESCHED", "thread_8h.html#aa0d064c5b2e0268ad751a682fa8ed6a6aa758368d3b8b5b8724b9baa3692aa0d7", null ]
     ] ],
+    [ "spdk_thread_poller_rc", "thread_8h.html#a9df2d253885de944794d6810ff98fc4e", [
+      [ "SPDK_POLLER_IDLE", "thread_8h.html#a9df2d253885de944794d6810ff98fc4ea8ad008a1b922191348b72f1b0a0223d0", null ],
+      [ "SPDK_POLLER_BUSY", "thread_8h.html#a9df2d253885de944794d6810ff98fc4ea0008a2defd401c21f63973cacdddd73f", null ]
+    ] ],
     [ "spdk_for_each_channel", "thread_8h.html#aa7a2ca9bd0497544e852c65fd5263cd1", null ],
     [ "spdk_for_each_channel_continue", "thread_8h.html#a4e87fc8c0fc870769c068a2752cdc359", null ],
     [ "spdk_for_each_thread", "thread_8h.html#a16bb098e6398d2a63577e805f1423a3e", null ],

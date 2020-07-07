@@ -2709,6 +2709,42 @@ blobfs_set_cache_size</h2>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;method&quot;: &quot;blobfs_set_cache_size&quot;,</div><div class="line">  &quot;params&quot;: {</div><div class="line">    &quot;size_in_mb&quot;: 512,</div><div class="line">  }</div><div class="line">}</div></div><!-- fragment --><p>Example response:</p>
+<div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: true</div><div class="line">}</div></div><!-- fragment --><h1><a class="anchor" id="jsonrpc_components_sock"></a>
+Socket layer</h1>
+<h2><a class="anchor" id="rpc_sock_impl_get_options"></a>
+sock_impl_get_options</h2>
+<p>Get parameters for the socket layer implementation.</p>
+<h3>Parameters</h3>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Name  </th><th class="markdownTableHeadNone">Optional  </th><th class="markdownTableHeadNone">Type  </th><th class="markdownTableHeadNone">Description   </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">impl_name  </td><td class="markdownTableBodyNone">Required  </td><td class="markdownTableBodyNone">string  </td><td class="markdownTableBodyNone">Name of socket implementation, e.g. posix   </td></tr>
+</table>
+<h3>Response</h3>
+<p>Response is an object with current socket layer options for requested implementation.</p>
+<h3>Example</h3>
+<p>Example request:</p>
+<div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;method&quot;: &quot;sock_impl_get_options&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;params&quot;: {</div><div class="line">    &quot;impl_name&quot;: &quot;posix&quot;</div><div class="line">  }</div><div class="line">}</div></div><!-- fragment --><p>Example response:</p>
+<div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: {</div><div class="line">    &quot;recv_buf_size&quot;: 2097152,</div><div class="line">    &quot;send_buf_size&quot;: 2097152</div><div class="line">  }</div><div class="line">}</div></div><!-- fragment --><h2><a class="anchor" id="rpc_sock_impl_set_options"></a>
+sock_impl_set_options</h2>
+<p>Set parameters for the socket layer implementation.</p>
+<h3>Parameters</h3>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Name  </th><th class="markdownTableHeadNone">Optional  </th><th class="markdownTableHeadNone">Type  </th><th class="markdownTableHeadNone">Description   </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">impl_name  </td><td class="markdownTableBodyNone">Required  </td><td class="markdownTableBodyNone">string  </td><td class="markdownTableBodyNone">Name of socket implementation, e.g. posix   </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">recv_buf_size  </td><td class="markdownTableBodyNone">Optional  </td><td class="markdownTableBodyNone">number  </td><td class="markdownTableBodyNone">Size of socket receive buffer in bytes   </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">send_buf_size  </td><td class="markdownTableBodyNone">Optional  </td><td class="markdownTableBodyNone">number  </td><td class="markdownTableBodyNone">Size of socket send buffer in bytes   </td></tr>
+</table>
+<h3>Response</h3>
+<p>True if socket layer options were set successfully.</p>
+<h3>Example</h3>
+<p>Example request:</p>
+<div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;method&quot;: &quot;sock_impl_set_options&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;params&quot;: {</div><div class="line">    &quot;impl_name&quot;: &quot;posix&quot;,</div><div class="line">    &quot;recv_buf_size&quot;: 2097152,</div><div class="line">    &quot;send_buf_size&quot;: 2097152</div><div class="line">  }</div><div class="line">}</div></div><!-- fragment --><p>Example response:</p>
 <div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: true</div><div class="line">}</div></div><!-- fragment --><h1>Miscellaneous RPC commands</h1>
 <h2><a class="anchor" id="rpc_bdev_nvme_send_cmd"></a>
 bdev_nvme_send_cmd</h2>

@@ -298,7 +298,11 @@ var user_guides =
         [ "blobfs_detect", "jsonrpc.html#rpc_blobfs_detect", null ],
         [ "blobfs_create", "jsonrpc.html#rpc_blobfs_create", null ],
         [ "blobfs_mount", "jsonrpc.html#rpc_blobfs_mount", null ],
-        [ "blobfs_set_cache_size", "jsonrpc.html#rpc_blobfs_set_cache_size", null ],
+        [ "blobfs_set_cache_size", "jsonrpc.html#rpc_blobfs_set_cache_size", null ]
+      ] ],
+      [ "Socket layer", "jsonrpc.html#jsonrpc_components_sock", [
+        [ "sock_impl_get_options", "jsonrpc.html#rpc_sock_impl_get_options", null ],
+        [ "sock_impl_set_options", "jsonrpc.html#rpc_sock_impl_set_options", null ],
         [ "bdev_nvme_send_cmd", "jsonrpc.html#rpc_bdev_nvme_send_cmd", null ],
         [ "spdk_get_version", "jsonrpc.html#rpc_spdk_get_version", null ]
       ] ]

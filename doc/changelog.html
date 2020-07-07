@@ -171,6 +171,7 @@ v20.07: (Upcoming Release)</h1>
 <h2>rpc</h2>
 <p>Parameter <code>-p</code> or <code>--max-qpairs-per-ctrlr</code> of <code>nvmf_create_transport</code> RPC command accepted by the rpc.py script is deprecated, new parameter <code>-m</code> or <code>--max-io-qpairs-per-ctrlr</code> is added.</p>
 <p>Parameter <code>max_qpairs_per_ctrlr</code> of <code>nvmf_create_transport</code> RPC command accepted by the NVMF target is deprecated, new parameter <code>max_io_qpairs_per_ctrlr</code> is added.</p>
+<p>Added <code>sock_impl_get_options</code> and <code>sock_impl_set_options</code> RPC methods.</p>
 <h2>sock</h2>
 <p>Added <code>spdk_sock_impl_get_opts</code> and <code>spdk_sock_impl_set_opts</code> functions to set/get socket layer configuration options. Options can be set independently for each implementation.</p>
 <p>Added <code>recv_buf_size</code> and 'send_buf_size' socket layer options. They are used only in posix implementation.</p>
