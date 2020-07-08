@@ -219,6 +219,9 @@ int(*&#160;</td><td class="memItemRight" valign="bottom"><b>qpair_submit_request
 <tr class="memitem:a5458bb1632ec29bee07337b0640d0904"><td class="memItemLeft" align="right" valign="top"><a id="a5458bb1632ec29bee07337b0640d0904"></a>
 int32_t(*&#160;</td><td class="memItemRight" valign="bottom"><b>qpair_process_completions</b> )(struct spdk_nvme_qpair *qpair, uint32_t max_completions)</td></tr>
 <tr class="separator:a5458bb1632ec29bee07337b0640d0904"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8bf5fca73cd5309b7a2c3ae332a43332"><td class="memItemLeft" align="right" valign="top"><a id="a8bf5fca73cd5309b7a2c3ae332a43332"></a>
+int(*&#160;</td><td class="memItemRight" valign="bottom"><b>qpair_iterate_requests</b> )(struct spdk_nvme_qpair *qpair, int(*iter_fn)(struct nvme_request *req, void *arg), void *arg)</td></tr>
+<tr class="separator:a8bf5fca73cd5309b7a2c3ae332a43332"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1ffcad44fad3120e3d619c7c8d853d4e"><td class="memItemLeft" align="right" valign="top"><a id="a1ffcad44fad3120e3d619c7c8d853d4e"></a>
 void(*&#160;</td><td class="memItemRight" valign="bottom"><b>admin_qpair_abort_aers</b> )(struct spdk_nvme_qpair *qpair)</td></tr>
 <tr class="separator:a1ffcad44fad3120e3d619c7c8d853d4e"><td class="memSeparator" colspan="2">&#160;</td></tr>

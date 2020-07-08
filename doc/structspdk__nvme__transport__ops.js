@@ -27,6 +27,7 @@ var structspdk__nvme__transport__ops =
     [ "poll_group_process_completions", "structspdk__nvme__transport__ops.html#af4f407aac18045e28284311c0f912ea0", null ],
     [ "poll_group_remove", "structspdk__nvme__transport__ops.html#a28695d7e0dcbc155350dff5514fe257c", null ],
     [ "qpair_abort_reqs", "structspdk__nvme__transport__ops.html#a338505f67b76bc75584483f93cad21dc", null ],
+    [ "qpair_iterate_requests", "structspdk__nvme__transport__ops.html#a8bf5fca73cd5309b7a2c3ae332a43332", null ],
     [ "qpair_process_completions", "structspdk__nvme__transport__ops.html#a5458bb1632ec29bee07337b0640d0904", null ],
     [ "qpair_reset", "structspdk__nvme__transport__ops.html#ae01bbca0f937eb59be85e3b95339ccc7", null ],
     [ "qpair_submit_request", "structspdk__nvme__transport__ops.html#ac6dd28d786b8a38bddad48677f5f8c57", null ],

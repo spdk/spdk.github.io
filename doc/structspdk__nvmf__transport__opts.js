@@ -1,5 +1,6 @@
 var structspdk__nvmf__transport__opts =
 [
+    [ "acceptor_backlog", "structspdk__nvmf__transport__opts.html#a5826b0dbf7380725eec4538a3a04830e", null ],
     [ "buf_cache_size", "structspdk__nvmf__transport__opts.html#aa4f37cf3674a2bf984fdb9b63cc30223", null ],
     [ "c2h_success", "structspdk__nvmf__transport__opts.html#ab85a4ce19153bc2ef4c2ee96a89ccdce", null ],
     [ "dif_insert_or_strip", "structspdk__nvmf__transport__opts.html#a2b6ff1cfeceb9e5543a8c44d0aded628", null ],

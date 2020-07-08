@@ -268,6 +268,9 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvmf_request_comp
 <tr class="memitem:a4e1187651747d823aa32669905db2d89"><td class="memItemLeft" align="right" valign="top">struct spdk_nvmf_subsystem *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf__transport_8h.html#a4e1187651747d823aa32669905db2d89">spdk_nvmf_ctrlr_get_subsystem</a> (struct spdk_nvmf_ctrlr *ctrlr)</td></tr>
 <tr class="memdesc:a4e1187651747d823aa32669905db2d89"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the NVMe-oF subsystem associated with this controller.  <a href="#a4e1187651747d823aa32669905db2d89">More...</a><br /></td></tr>
 <tr class="separator:a4e1187651747d823aa32669905db2d89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4be21e1e7c78a65458f3cb7d8ed08997"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf__transport_8h.html#a4be21e1e7c78a65458f3cb7d8ed08997">spdk_nvmf_ctrlr_get_id</a> (struct spdk_nvmf_ctrlr *ctrlr)</td></tr>
+<tr class="memdesc:a4be21e1e7c78a65458f3cb7d8ed08997"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the NVMe-oF controller ID.  <a href="#a4be21e1e7c78a65458f3cb7d8ed08997">More...</a><br /></td></tr>
+<tr class="separator:a4be21e1e7c78a65458f3cb7d8ed08997"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a78965f1c8f05b2fb9b6d7f6ce016448a"><td class="memItemLeft" align="right" valign="top"><a id="a78965f1c8f05b2fb9b6d7f6ce016448a"></a>
 static enum <a class="el" href="nvme__spec_8h.html#adbe38e042bb939183ed8fd5c1685b2fc">spdk_nvme_data_transfer</a>&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvmf_req_get_xfer</b> (struct <a class="el" href="structspdk__nvmf__request.html">spdk_nvmf_request</a> *req)</td></tr>
 <tr class="separator:a78965f1c8f05b2fb9b6d7f6ce016448a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -304,6 +307,33 @@ static enum <a class="el" href="nvme__spec_8h.html#adbe38e042bb939183ed8fd5c1685
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="a4be21e1e7c78a65458f3cb7d8ed08997"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4be21e1e7c78a65458f3cb7d8ed08997">&#9670;&nbsp;</a></span>spdk_nvmf_ctrlr_get_id()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t spdk_nvmf_ctrlr_get_id </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_nvmf_ctrlr *&#160;</td>
+          <td class="paramname"><em>ctrlr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the NVMe-oF controller ID. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ctrlr</td><td>The NVMe-oF controller</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The NVMe-oF controller ID </dd></dl>
+
+</div>
+</div>
 <a id="a4e1187651747d823aa32669905db2d89"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4e1187651747d823aa32669905db2d89">&#9670;&nbsp;</a></span>spdk_nvmf_ctrlr_get_subsystem()</h2>
 

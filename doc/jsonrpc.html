@@ -1698,6 +1698,8 @@ nvmf_create_transport method</h2>
 <td class="markdownTableBodyNone">dif_insert_or_strip  </td><td class="markdownTableBodyNone">Optional  </td><td class="markdownTableBodyNone">boolean  </td><td class="markdownTableBodyNone">Enable DIF insert for write I/O and DIF strip for read I/O DIF   </td></tr>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">sock_priority  </td><td class="markdownTableBodyNone">Optional  </td><td class="markdownTableBodyNone">number  </td><td class="markdownTableBodyNone">The socket priority of the connection owned by this transport (TCP only)   </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">acceptor_backlog  </td><td class="markdownTableBodyNone">Optional  </td><td class="markdownTableBodyNone">number  </td><td class="markdownTableBodyNone">The number of pending connections allowed in backlog before failing new connection attempts (RDMA only)   </td></tr>
 </table>
 <h3>Example</h3>
 <p>Example request:</p>

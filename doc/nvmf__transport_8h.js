@@ -26,6 +26,7 @@ var nvmf__transport_8h =
       [ "SPDK_NVMF_QPAIR_ERROR", "nvmf__transport_8h.html#aae2f46da7cfac38ce46c51446985a286a33289f1ec940d6ca01ea350878586ee0", null ]
     ] ],
     [ "spdk_nvmf_ctrlr_connect", "nvmf__transport_8h.html#a246103af98d69ad6a1d74d2a4f9e6f7e", null ],
+    [ "spdk_nvmf_ctrlr_get_id", "nvmf__transport_8h.html#a4be21e1e7c78a65458f3cb7d8ed08997", null ],
     [ "spdk_nvmf_ctrlr_get_regs", "nvmf__transport_8h.html#a87cc10db83a3c4e44ed38ce031646e58", null ],
     [ "spdk_nvmf_ctrlr_get_subsystem", "nvmf__transport_8h.html#a4e1187651747d823aa32669905db2d89", null ],
     [ "spdk_nvmf_poll_group_remove", "nvmf__transport_8h.html#a9ea012aeb9897f188acdf41481c0217f", null ],
