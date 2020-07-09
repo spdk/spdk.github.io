@@ -1,5 +1,6 @@
 var structspdk__app__opts =
 [
+    [ "base_virtaddr", "structspdk__app__opts.html#a74c03a91caa15961c35374bf2465a279", null ],
     [ "config_file", "structspdk__app__opts.html#a6d21685102b759248a42bb8874c42409", null ],
     [ "delay_subsystem_init", "structspdk__app__opts.html#a703388c6f0075cf0396e05925364ebc5", null ],
     [ "enable_coredump", "structspdk__app__opts.html#ac21faa67a906aa0e70194b96e7700142", null ],

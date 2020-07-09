@@ -1,5 +1,6 @@
 var NAVTREEINDEX24 =
 {
+"unionspdk__nvme__feat__host__mem__buffer.html#af43cc748ba99dcecb59f3359fd731084":[12,0,110,1],
 "unionspdk__nvme__feat__interrupt__coalescing.html":[12,0,111],
 "unionspdk__nvme__feat__interrupt__coalescing.html#a0a3ddeb18ed4d798712502a972e5474d":[12,0,111,2],
 "unionspdk__nvme__feat__interrupt__coalescing.html#a58d9c1b2f7bbe8d3b38a8a2a849a358c":[12,0,111,0],
