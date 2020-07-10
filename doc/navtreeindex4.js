@@ -1,5 +1,13 @@
 var NAVTREEINDEX4 =
 {
+"iscsi__spec_8h.html#a5e194ce14bf7875eb7f8ab0201018f57":[13,0,27,77],
+"iscsi__spec_8h.html#a625616d916ae6b8697cfd3e94163fefa":[13,0,27,41],
+"iscsi__spec_8h.html#a6260633a960877910a301fe74dd0ad9a":[13,0,27,76],
+"iscsi__spec_8h.html#a64aadc6f469d1fccc4bffd83790f8f18":[13,0,27,92],
+"iscsi__spec_8h.html#a67325e98b5da1a3d468cb7f57a0ed301":[13,0,27,73],
+"iscsi__spec_8h.html#a681ced3781459c23be348ac9c1b9c678":[13,0,27,23],
+"iscsi__spec_8h.html#a6ae501611baca9225cc96bf6cf087450":[13,0,27,94],
+"iscsi__spec_8h.html#a6ae501611baca9225cc96bf6cf087450a3546acfc24f211b3b8cd2a90444a8f40":[13,0,27,94,5],
 "iscsi__spec_8h.html#a6ae501611baca9225cc96bf6cf087450a64a4553f7faad7d50488d38beb3ac726":[13,0,27,94,7],
 "iscsi__spec_8h.html#a6ae501611baca9225cc96bf6cf087450a65ca8ffe7f4c93b39503ec01d9fc5b5d":[13,0,27,94,3],
 "iscsi__spec_8h.html#a6ae501611baca9225cc96bf6cf087450a72ad77a739bc2ecbde32ec9f2ca4cc99":[13,0,27,94,0],
@@ -241,13 +249,5 @@ var NAVTREEINDEX4 =
 "jsonrpc.html#rpc_bdev_rbd_delete":[3,8,2,24],
 "jsonrpc.html#rpc_bdev_rbd_resize":[3,8,2,25],
 "jsonrpc.html#rpc_bdev_set_options":[3,8,2,0],
-"jsonrpc.html#rpc_bdev_set_qos_limit":[3,8,2,5],
-"jsonrpc.html#rpc_bdev_virtio_attach_controller":[3,8,2,42],
-"jsonrpc.html#rpc_bdev_virtio_detach_controller":[3,8,2,44],
-"jsonrpc.html#rpc_bdev_virtio_scsi_get_devices":[3,8,2,43],
-"jsonrpc.html#rpc_blobfs_create":[3,8,8,1],
-"jsonrpc.html#rpc_blobfs_detect":[3,8,8,0],
-"jsonrpc.html#rpc_blobfs_mount":[3,8,8,2],
-"jsonrpc.html#rpc_blobfs_set_cache_size":[3,8,8,3],
-"jsonrpc.html#rpc_framework_get_config":[3,8,1,6]
+"jsonrpc.html#rpc_bdev_set_qos_limit":[3,8,2,5]
 };

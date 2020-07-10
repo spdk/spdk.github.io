@@ -1,5 +1,15 @@
 var NAVTREEINDEX14 =
 {
+"structspdk__bdev_1_1____bdev__internal__fields.html#ad8ffb00efc69dca7d686f17220027742":[12,0,23,0,12],
+"structspdk__bdev_1_1____bdev__internal__fields.html#add102c5c15292b5d497ed7442a0b30b4":[12,0,23,0,13],
+"structspdk__bdev_1_1____bdev__internal__fields.html#ae3603bee677af4d8eaafffce32e0deea":[12,0,23,0,14],
+"structspdk__bdev_1_1____bdev__internal__fields.html#afad02fdc83417a632d9ecc7f3c437c47":[12,0,23,0,17],
+"structspdk__bdev_1_1____bdev__internal__fields.html#afbc0b1652cb9968462a77765a081ef32":[12,0,23,0,8],
+"structspdk__bdev__alias.html":[12,0,24],
+"structspdk__bdev__alias.html#a52b461e690c47ebf67bd061399e8f713":[12,0,24,1],
+"structspdk__bdev__alias.html#aede6aa6d7d3ea96f3a36637f972faec6":[12,0,24,0],
+"structspdk__bdev__fn__table.html":[12,0,25],
+"structspdk__bdev__fn__table.html#a20ec74cad9e56c5ac8ee9db239d8f46e":[12,0,25,4],
 "structspdk__bdev__fn__table.html#a233c08c7269afc1108c3f734cc545ff4":[12,0,25,6],
 "structspdk__bdev__fn__table.html#a417860f5598560a20b7bd4b5e8b4c3b0":[12,0,25,1],
 "structspdk__bdev__fn__table.html#a8a76c50a2b20205ec9fffe4afb9e3a15":[12,0,25,0],
@@ -239,15 +249,5 @@ var NAVTREEINDEX14 =
 "structspdk__ftl__conf.html#a1f728a4303cf103117d3b1dfbd93d62a":[12,0,50,10],
 "structspdk__ftl__conf.html#a328e94a59f30ee22d9e562eb0816f836":[12,0,50,6],
 "structspdk__ftl__conf.html#a383d7e6efd84a1ff5c94ae0502531d19":[12,0,50,7],
-"structspdk__ftl__conf.html#a529cbd0089f91d8d6249263f8e40ead4":[12,0,50,4],
-"structspdk__ftl__conf.html#a616721ee96e7cd1f7721ed19f59dc247":[12,0,50,12],
-"structspdk__ftl__conf.html#ab616d5c9c1d384b4bd1c42cabdbc47e2":[12,0,50,9],
-"structspdk__ftl__conf.html#ab9c76758916fcabfe00ac708f4b3b674":[12,0,50,14],
-"structspdk__ftl__conf.html#abe2ed93f4a6a64b722b4eee1daff3690":[12,0,50,2],
-"structspdk__ftl__conf.html#acbf45e9a381fdc4c3771a2a5ebfc3caa":[12,0,50,3],
-"structspdk__ftl__conf.html#ae126f27ebee5897098817e710aa5b3a4":[12,0,50,1],
-"structspdk__ftl__conf.html#af6ce7933ea875575b107dc20384a41a7":[12,0,50,8],
-"structspdk__ftl__dev__init__opts.html":[12,0,51],
-"structspdk__ftl__dev__init__opts.html#a05a5417f8575cf0f6a5b15ba942c9161":[12,0,51,2],
-"structspdk__ftl__dev__init__opts.html#a32a1e469a21c1e3baa9e1fc9b3b402bd":[12,0,51,0]
+"structspdk__ftl__conf.html#a529cbd0089f91d8d6249263f8e40ead4":[12,0,50,4]
 };

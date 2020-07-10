@@ -1,5 +1,15 @@
 var NAVTREEINDEX19 =
 {
+"structspdk__nvmf__capsule__cmd.html#a8b70646aa9f5f556052c3353559edbaf":[12,0,178,2],
+"structspdk__nvmf__capsule__cmd.html#aa563c6ed7e1616accc06048b8aff7ef6":[12,0,178,3],
+"structspdk__nvmf__capsule__cmd.html#aa84dfc81da13e098711d8cf0c315430e":[12,0,178,5],
+"structspdk__nvmf__capsule__cmd.html#ac7515fab690df55fdd91026dbda85bea":[12,0,178,4],
+"structspdk__nvmf__ctrlr__data.html":[12,0,179],
+"structspdk__nvmf__ctrlr__data.html#a06dba533d308ce3fa37ea3f54cb85230":[12,0,179,1],
+"structspdk__nvmf__ctrlr__data.html#a27be983669469a841be27fc4eaebdb49":[12,0,179,2],
+"structspdk__nvmf__ctrlr__data.html#a41abe60015ca9471608c85c3b31abb48":[12,0,179,0],
+"structspdk__nvmf__dif__info.html":[12,0,180],
+"structspdk__nvmf__dif__info.html#a7df22e84211b4b607b6f298a8b6c1f09":[12,0,180,1],
 "structspdk__nvmf__dif__info.html#aa00aa0b04de2ee2160bf8f44beba5c2e":[12,0,180,3],
 "structspdk__nvmf__dif__info.html#aa884bee2f67f1c88293c9d145c46fd80":[12,0,180,0],
 "structspdk__nvmf__dif__info.html#ab36d0ffae58ad8da78ecd337bb5065d6":[12,0,180,2],
@@ -239,15 +249,5 @@ var NAVTREEINDEX19 =
 "structspdk__nvmf__fc__lsdesc__rjt.html#ac24823839800720b240225671eed439b":[12,0,208,2],
 "structspdk__nvmf__fc__lsdesc__rjt.html#ac6f1eecabdf0ff4b7c01f7ae249534e6":[12,0,208,1],
 "structspdk__nvmf__fc__lsdesc__rqst.html":[12,0,209],
-"structspdk__nvmf__fc__lsdesc__rqst.html#a1a09fc4150f6b26ab54c47b31f391d13":[12,0,209,3],
-"structspdk__nvmf__fc__lsdesc__rqst.html#a21b50e4776c185e51852e7c84ea77855":[12,0,209,2],
-"structspdk__nvmf__fc__lsdesc__rqst.html#a570be30d56b1dd52cf921cc733dada5e":[12,0,209,0],
-"structspdk__nvmf__fc__lsdesc__rqst.html#abdc4a2fcff34e5d6372d95bcb1b9a893":[12,0,209,1],
-"structspdk__nvmf__fc__wwn.html":[12,0,210],
-"structspdk__nvmf__fc__wwn.html#a161162c1f8743d16dba6705f54bf21d4":[12,0,210,0],
-"structspdk__nvmf__fc__wwn.html#a198b3f48e6801eb52d131fa4ad4b3ff9":[12,0,210,2],
-"structspdk__nvmf__fc__wwn.html#a8bd94669c0e00dfe5ecc21dae483357a":[12,0,210,1],
-"structspdk__nvmf__fc__xfer__rdy__iu.html":[12,0,211],
-"structspdk__nvmf__fc__xfer__rdy__iu.html#a4b2d00a559fb70b78d15f8086dbcc307":[12,0,211,2],
-"structspdk__nvmf__fc__xfer__rdy__iu.html#a5cb6f3066e0e6efc9987b294202d16ba":[12,0,211,1]
+"structspdk__nvmf__fc__lsdesc__rqst.html#a1a09fc4150f6b26ab54c47b31f391d13":[12,0,209,3]
 };

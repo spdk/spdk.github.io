@@ -166,6 +166,8 @@ var nvme_8h =
     [ "spdk_nvme_poll_group_remove", "nvme_8h.html#a2ef925aeb99c7791bcec5c7305c03422", null ],
     [ "spdk_nvme_prchk_flags_parse", "nvme_8h.html#a0f14ec05ce3af11f089a79d47739bd74", null ],
     [ "spdk_nvme_prchk_flags_str", "nvme_8h.html#ae125f35c7ab6fd2f5e63bfac804f25e6", null ],
+    [ "spdk_nvme_print_command", "nvme_8h.html#a8145be511777b2c8dc218b1c1e1e2c89", null ],
+    [ "spdk_nvme_print_completion", "nvme_8h.html#aebe027f765f35a6cf532c236a90df5b7", null ],
     [ "spdk_nvme_probe", "nvme_8h.html#a225bbc386ec518ae21bd5536f21db45d", null ],
     [ "spdk_nvme_probe_async", "nvme_8h.html#a02411bf7ae4827a350711e688316997e", null ],
     [ "spdk_nvme_probe_poll_async", "nvme_8h.html#aedea919a47bdd811b604656e29e3fcef", null ],

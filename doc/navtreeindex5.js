@@ -1,5 +1,13 @@
 var NAVTREEINDEX5 =
 {
+"jsonrpc.html#rpc_bdev_virtio_attach_controller":[3,8,2,42],
+"jsonrpc.html#rpc_bdev_virtio_detach_controller":[3,8,2,44],
+"jsonrpc.html#rpc_bdev_virtio_scsi_get_devices":[3,8,2,43],
+"jsonrpc.html#rpc_blobfs_create":[3,8,8,1],
+"jsonrpc.html#rpc_blobfs_detect":[3,8,8,0],
+"jsonrpc.html#rpc_blobfs_mount":[3,8,8,2],
+"jsonrpc.html#rpc_blobfs_set_cache_size":[3,8,8,3],
+"jsonrpc.html#rpc_framework_get_config":[3,8,1,6],
 "jsonrpc.html#rpc_framework_get_reactors":[3,8,1,7],
 "jsonrpc.html#rpc_framework_get_subsystems":[3,8,1,5],
 "jsonrpc.html#rpc_framework_monitor_context_switch":[3,8,1,1],
@@ -241,13 +249,5 @@ var NAVTREEINDEX5 =
 "nvme.html#nvme_helloworld":[7,0,2,0],
 "nvme.html#nvme_hotplug":[7,0,7],
 "nvme.html#nvme_interface":[7,0,3],
-"nvme.html#nvme_intro":[7,0,1],
-"nvme.html#nvme_io_submission":[7,0,4,0],
-"nvme.html#nvme_memory_usage":[7,0,4,1],
-"nvme.html#nvme_multi_process":[7,0,6],
-"nvme.html#nvme_multi_process_configuration":[7,0,6,0],
-"nvme.html#nvme_multi_process_limitations":[7,0,6,1],
-"nvme.html#nvme_perf":[7,0,2,2],
-"nvme.html#nvme_scaling":[7,0,4,0,1],
-"nvme.html#nvme_toc":[7,0,0]
+"nvme.html#nvme_intro":[7,0,1]
 };

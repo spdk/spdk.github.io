@@ -657,6 +657,12 @@ Functions</h2></td></tr>
 <tr class="memitem:ad4b2335194f9c4c24a5e2c15a9432f4a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#ad4b2335194f9c4c24a5e2c15a9432f4a">spdk_nvme_qpair_print_completion</a> (struct spdk_nvme_qpair *qpair, struct <a class="el" href="structspdk__nvme__cpl.html">spdk_nvme_cpl</a> *cpl)</td></tr>
 <tr class="memdesc:ad4b2335194f9c4c24a5e2c15a9432f4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prints (SPDK_NOTICELOG) the contents of an NVMe completion queue entry.  <a href="#ad4b2335194f9c4c24a5e2c15a9432f4a">More...</a><br /></td></tr>
 <tr class="separator:ad4b2335194f9c4c24a5e2c15a9432f4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8145be511777b2c8dc218b1c1e1e2c89"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a8145be511777b2c8dc218b1c1e1e2c89">spdk_nvme_print_command</a> (uint16_t qid, struct <a class="el" href="structspdk__nvme__cmd.html">spdk_nvme_cmd</a> *cmd)</td></tr>
+<tr class="memdesc:a8145be511777b2c8dc218b1c1e1e2c89"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prints (SPDK_NOTICELOG) the contents of an NVMe submission queue entry (command).  <a href="#a8145be511777b2c8dc218b1c1e1e2c89">More...</a><br /></td></tr>
+<tr class="separator:a8145be511777b2c8dc218b1c1e1e2c89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aebe027f765f35a6cf532c236a90df5b7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#aebe027f765f35a6cf532c236a90df5b7">spdk_nvme_print_completion</a> (uint16_t qid, struct <a class="el" href="structspdk__nvme__cpl.html">spdk_nvme_cpl</a> *cpl)</td></tr>
+<tr class="memdesc:aebe027f765f35a6cf532c236a90df5b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prints (SPDK_NOTICELOG) the contents of an NVMe completion queue entry.  <a href="#aebe027f765f35a6cf532c236a90df5b7">More...</a><br /></td></tr>
+<tr class="separator:aebe027f765f35a6cf532c236a90df5b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a82cdb425c9fad7b94ad0b8f5c27bb8b2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a82cdb425c9fad7b94ad0b8f5c27bb8b2">spdk_nvme_rdma_init_hooks</a> (struct <a class="el" href="structspdk__nvme__rdma__hooks.html">spdk_nvme_rdma_hooks</a> *hooks)</td></tr>
 <tr class="memdesc:a82cdb425c9fad7b94ad0b8f5c27bb8b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the global hooks for the RDMA transport, if necessary.  <a href="#a82cdb425c9fad7b94ad0b8f5c27bb8b2">More...</a><br /></td></tr>
 <tr class="separator:a82cdb425c9fad7b94ad0b8f5c27bb8b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -6491,6 +6497,80 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_map_prps</b>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>static string constant describing PI check settings. If prchk_flags is 0, NULL is returned. </dd></dl>
+
+</div>
+</div>
+<a id="a8145be511777b2c8dc218b1c1e1e2c89"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8145be511777b2c8dc218b1c1e1e2c89">&#9670;&nbsp;</a></span>spdk_nvme_print_command()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_nvme_print_command </td>
+          <td>(</td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>qid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structspdk__nvme__cmd.html">spdk_nvme_cmd</a> *&#160;</td>
+          <td class="paramname"><em>cmd</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Prints (SPDK_NOTICELOG) the contents of an NVMe submission queue entry (command). </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">qid</td><td>Queue identifier. </td></tr>
+    <tr><td class="paramname">cmd</td><td>Pointer to the submission queue command to be formatted. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aebe027f765f35a6cf532c236a90df5b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aebe027f765f35a6cf532c236a90df5b7">&#9670;&nbsp;</a></span>spdk_nvme_print_completion()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_nvme_print_completion </td>
+          <td>(</td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>qid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structspdk__nvme__cpl.html">spdk_nvme_cpl</a> *&#160;</td>
+          <td class="paramname"><em>cpl</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Prints (SPDK_NOTICELOG) the contents of an NVMe completion queue entry. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">qid</td><td>Queue identifier. </td></tr>
+    <tr><td class="paramname">cpl</td><td>Pointer to the completion queue element to be formatted. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
