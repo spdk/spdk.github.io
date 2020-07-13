@@ -1,5 +1,7 @@
 var NAVTREEINDEX18 =
 {
+"structspdk__nvme__primary__ctrl__capabilities.html#ad656bd7e104327d7b85959b0b5a4196e":[12,0,145,13],
+"structspdk__nvme__primary__ctrl__capabilities.html#aeab109efd1eae5f155c06105e8d097ed":[12,0,145,18],
 "structspdk__nvme__primary__ctrl__capabilities.html#af479618cd4737243b1ef31942c690282":[12,0,145,11],
 "structspdk__nvme__primary__ctrl__capabilities.html#af8c71651dc0bb0fc40917e3bfc55183d":[12,0,145,2],
 "structspdk__nvme__protection__info.html":[12,0,146],
@@ -247,7 +249,5 @@ var NAVTREEINDEX18 =
 "structspdk__nvme__transport__ops.html#ae01bbca0f937eb59be85e3b95339ccc7":[12,0,176,29],
 "structspdk__nvme__transport__ops.html#ae5520a930bea2319b55ee5ef9e7af08b":[12,0,176,17],
 "structspdk__nvme__transport__ops.html#af4f407aac18045e28284311c0f912ea0":[12,0,176,24],
-"structspdk__nvmf__capsule__cmd.html":[12,0,178],
-"structspdk__nvmf__capsule__cmd.html#a0f13be97db1c8a5db554e53895e1f5f8":[12,0,178,1],
-"structspdk__nvmf__capsule__cmd.html#a67c4556be001abc54b794468d15d7981":[12,0,178,0]
+"structspdk__nvmf__capsule__cmd.html":[12,0,178]
 };

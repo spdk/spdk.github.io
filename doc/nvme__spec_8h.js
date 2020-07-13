@@ -78,6 +78,7 @@ var nvme__spec_8h =
     [ "SPDK_NVME_CAP_CSS_IOCS", "nvme__spec_8h.html#af7e3abad4c4c265fccce437bbb7832f1", null ],
     [ "SPDK_NVME_CAP_CSS_NOIO", "nvme__spec_8h.html#a31ff3cbe0e2664095e3abc096a9ea81f", null ],
     [ "SPDK_NVME_CAP_CSS_NVM", "nvme__spec_8h.html#a69a0ff119fce7fb11c4eb2a2f83c01d1", null ],
+    [ "spdk_nvme_cpl_is_abort_success", "nvme__spec_8h.html#a0b81081fe23a883691e03d32eb1f0c35", null ],
     [ "spdk_nvme_cpl_is_error", "nvme__spec_8h.html#a62b2e9dfaeda9fac684e7b456971c710", null ],
     [ "spdk_nvme_cpl_is_pi_error", "nvme__spec_8h.html#ab72a2ef691ff4d7321187797d6795414", null ],
     [ "spdk_nvme_cpl_is_success", "nvme__spec_8h.html#a4436d1b2f1f18bae6ad197033aa68c96", null ],

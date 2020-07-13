@@ -420,6 +420,9 @@ Macros</h2></td></tr>
 <tr class="separator:a4436d1b2f1f18bae6ad197033aa68c96"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab72a2ef691ff4d7321187797d6795414"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_cpl_is_pi_error</b>(cpl)</td></tr>
 <tr class="separator:ab72a2ef691ff4d7321187797d6795414"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b81081fe23a883691e03d32eb1f0c35"><td class="memItemLeft" align="right" valign="top"><a id="a0b81081fe23a883691e03d32eb1f0c35"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_cpl_is_abort_success</b>(cpl)&#160;&#160;&#160;(spdk_nvme_cpl_is_success(cpl) &amp;&amp; !((cpl)-&gt;cdw0 &amp; 1U))</td></tr>
+<tr class="separator:a0b81081fe23a883691e03d32eb1f0c35"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa12837c61bff3188e1f92d001506e5a0"><td class="memItemLeft" align="right" valign="top"><a id="aa12837c61bff3188e1f92d001506e5a0"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme__spec_8h.html#aa12837c61bff3188e1f92d001506e5a0">SPDK_NVME_IO_FLAGS_FUSE_FIRST</a>&#160;&#160;&#160;(<a class="el" href="nvme__spec_8h.html#a221a4156b2e7883c4cb88847cbeaa069a5bc4ba22076a7b42f51c1ed6d76ceaf7">SPDK_NVME_CMD_FUSE_FIRST</a> &lt;&lt; 0)</td></tr>
 <tr class="memdesc:aa12837c61bff3188e1f92d001506e5a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set fused operation. <br /></td></tr>

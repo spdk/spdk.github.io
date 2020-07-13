@@ -270,6 +270,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a81541bb1b8ae42b952c82988c482e99d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sock_8h.html#a81541bb1b8ae42b952c82988c482e99d">spdk_sock_impl_set_opts</a> (const char *impl_name, const struct <a class="el" href="structspdk__sock__impl__opts.html">spdk_sock_impl_opts</a> *opts, size_t len)</td></tr>
 <tr class="memdesc:a81541bb1b8ae42b952c82988c482e99d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set socket implementation options.  <a href="#a81541bb1b8ae42b952c82988c482e99d">More...</a><br /></td></tr>
 <tr class="separator:a81541bb1b8ae42b952c82988c482e99d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a255128969e1129a8d9d0c2f2b24697b5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sock_8h.html#a255128969e1129a8d9d0c2f2b24697b5">spdk_sock_write_config_json</a> (struct spdk_json_write_ctx *w)</td></tr>
+<tr class="memdesc:a255128969e1129a8d9d0c2f2b24697b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write socket subsystem configuration into provided JSON context.  <a href="#a255128969e1129a8d9d0c2f2b24697b5">More...</a><br /></td></tr>
+<tr class="separator:a255128969e1129a8d9d0c2f2b24697b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>TCP socket abstraction layer. </p>
@@ -1323,6 +1326,32 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 on success, -1 on failure. </dd></dl>
+
+</div>
+</div>
+<a id="a255128969e1129a8d9d0c2f2b24697b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a255128969e1129a8d9d0c2f2b24697b5">&#9670;&nbsp;</a></span>spdk_sock_write_config_json()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_sock_write_config_json </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_json_write_ctx *&#160;</td>
+          <td class="paramname"><em>w</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Write socket subsystem configuration into provided JSON context. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">w</td><td>JSON write context </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

@@ -1,5 +1,7 @@
 var NAVTREEINDEX23 =
 {
+"trace_8h.html#a6e4ac750b250bebb9fdca7fdb8733c6f":[13,0,53,19],
+"trace_8h.html#a6f2131f1fc35d495f51552eb2838630b":[13,0,53,44],
 "trace_8h.html#a78c1e25f823c6e98da3f99c515715ebe":[13,0,53,41],
 "trace_8h.html#a7cdec16a6ee14c87b0bf5d0666d9a0cb":[13,0,53,26],
 "trace_8h.html#a7ecb50e2b95e9c75eeddd9884ec0aafe":[13,0,53,28],
@@ -247,7 +249,5 @@ var NAVTREEINDEX23 =
 "unionspdk__nvme__feat__error__recovery.html#ae572c4a161ba9dcd9f26129dcb926fc3":[12,0,107,3],
 "unionspdk__nvme__feat__host__controlled__thermal__management.html":[12,0,108],
 "unionspdk__nvme__feat__host__controlled__thermal__management.html#a196363adf5f14463140d5c3d7d7a0564":[12,0,108,2],
-"unionspdk__nvme__feat__host__controlled__thermal__management.html#a683af96774029ba95fcbb43ef78d487e":[12,0,108,3],
-"unionspdk__nvme__feat__host__controlled__thermal__management.html#a6fc6fa3c710df89eb548fdefc5e334e7":[12,0,108,0],
-"unionspdk__nvme__feat__host__controlled__thermal__management.html#aed69c683b8bf4f7c1698fcfc62d66c7c":[12,0,108,1]
+"unionspdk__nvme__feat__host__controlled__thermal__management.html#a683af96774029ba95fcbb43ef78d487e":[12,0,108,3]
 };

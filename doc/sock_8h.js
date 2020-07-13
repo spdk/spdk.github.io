@@ -33,6 +33,7 @@ var sock_8h =
     [ "spdk_sock_set_recvbuf", "sock_8h.html#aec2209ac3d7d278cede96696116662d3", null ],
     [ "spdk_sock_set_recvlowat", "sock_8h.html#a4e8d8e1b8155267b4b0289710e3b792f", null ],
     [ "spdk_sock_set_sendbuf", "sock_8h.html#a0be72049ed7537c6f8efb99dbb44d20c", null ],
+    [ "spdk_sock_write_config_json", "sock_8h.html#a255128969e1129a8d9d0c2f2b24697b5", null ],
     [ "spdk_sock_writev", "sock_8h.html#ad10e77b4f8d7ba40ec75c69247541ef7", null ],
     [ "spdk_sock_writev_async", "sock_8h.html#a7aa61e0b299d1f0dff273dcd48156d67", null ]
 ];

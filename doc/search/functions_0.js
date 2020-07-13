@@ -861,6 +861,7 @@ var searchData=
   ['spdk_5fsock_5fset_5frecvbuf',['spdk_sock_set_recvbuf',['../sock_8h.html#aec2209ac3d7d278cede96696116662d3',1,'sock.h']]],
   ['spdk_5fsock_5fset_5frecvlowat',['spdk_sock_set_recvlowat',['../sock_8h.html#a4e8d8e1b8155267b4b0289710e3b792f',1,'sock.h']]],
   ['spdk_5fsock_5fset_5fsendbuf',['spdk_sock_set_sendbuf',['../sock_8h.html#a0be72049ed7537c6f8efb99dbb44d20c',1,'sock.h']]],
+  ['spdk_5fsock_5fwrite_5fconfig_5fjson',['spdk_sock_write_config_json',['../sock_8h.html#a255128969e1129a8d9d0c2f2b24697b5',1,'sock.h']]],
   ['spdk_5fsock_5fwritev',['spdk_sock_writev',['../sock_8h.html#ad10e77b4f8d7ba40ec75c69247541ef7',1,'sock.h']]],
   ['spdk_5fsock_5fwritev_5fasync',['spdk_sock_writev_async',['../sock_8h.html#a7aa61e0b299d1f0dff273dcd48156d67',1,'sock.h']]],
   ['spdk_5fsprintf_5falloc',['spdk_sprintf_alloc',['../string_8h.html#ac80f349c77c57bc28690f46e5de7fe03',1,'string.h']]],
