@@ -13,7 +13,10 @@ var structspdk__nvmf__request =
     [ "iov", "structspdk__nvmf__request.html#abd8a5aa92bdc3a3b98f2eb21f21e03b3", null ],
     [ "iovcnt", "structspdk__nvmf__request.html#a0ddf1cbaf2632b4621befe77f0fd4497", null ],
     [ "length", "structspdk__nvmf__request.html#ad45b579554eaa2a8ab6bad16dd077457", null ],
+    [ "poller", "structspdk__nvmf__request.html#ac6ddb04138ba386b68d2355fa9b55430", null ],
     [ "qpair", "structspdk__nvmf__request.html#a304463ec4c44227e688f772ed09df989", null ],
+    [ "req_to_abort", "structspdk__nvmf__request.html#a049e86d7c375f5f5c08dc07c208d0419", null ],
     [ "rsp", "structspdk__nvmf__request.html#a4af9520e47b3e49ecfdc7e569ce1772f", null ],
+    [ "timeout_tsc", "structspdk__nvmf__request.html#ae405604e4160ec1916926c146b3a852e", null ],
     [ "xfer", "structspdk__nvmf__request.html#a6b037c8915d678872f7e3e6535840b3a", null ]
 ];

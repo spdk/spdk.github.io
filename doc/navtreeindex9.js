@@ -1,5 +1,6 @@
 var NAVTREEINDEX9 =
 {
+"nvmf.html#nvmf_getting_started":[3,4,0],
 "nvmf.html#nvmf_host":[3,4,0,4],
 "nvmf.html#nvmf_prereqs":[3,4,0,0,0],
 "nvmf.html#nvmf_prereqs_rdma_nics":[3,4,0,0,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX9 =
 "nvmf__spec_8h.html#afe211ef1057af77c5e60e98b31cb0353":[13,0,42,115],
 "nvmf__spec_8h.html#aff5273904fb7543f0d7274814151ad56":[13,0,42,30],
 "nvmf__transport_8h.html":[13,0,43],
-"nvmf__transport_8h.html#a13750c21ee2e562b0244a8d907c96e14":[13,0,43,32],
-"nvmf__transport_8h.html#a1611ae11b4ca2690f1a2fdc7e85057d2":[13,0,43,13]
+"nvmf__transport_8h.html#a13750c21ee2e562b0244a8d907c96e14":[13,0,43,32]
 };

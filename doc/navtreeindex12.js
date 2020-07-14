@@ -1,5 +1,6 @@
 var NAVTREEINDEX12 =
 {
+"scsi__spec_8h.html#ac9b82b35110c44cfa49ad3b5ce89c384a5be57e75134fdbbb8789038afcd47e00":[13,0,48,88,20],
 "scsi__spec_8h.html#ac9b82b35110c44cfa49ad3b5ce89c384a5bedbc5f5aa6c3e4277884b558199472":[13,0,48,88,36],
 "scsi__spec_8h.html#ac9b82b35110c44cfa49ad3b5ce89c384a6b7bef79b6ac967355ae95a0cf711f45":[13,0,48,88,6],
 "scsi__spec_8h.html#ac9b82b35110c44cfa49ad3b5ce89c384a6d9ecd4fae7f5f4a536257c5e5de300c":[13,0,48,88,32],
@@ -248,6 +249,5 @@ var NAVTREEINDEX12 =
 "structiscsi__bhs__logout__resp.html#a434d6ac6a7ead0d1e76014315d88874b":[12,0,8,4],
 "structiscsi__bhs__logout__resp.html#a6e9485ffc68516d1104dd27026f1bc99":[12,0,8,0],
 "structiscsi__bhs__logout__resp.html#a75d4af85d69cc5239568abb60002a9ed":[12,0,8,10],
-"structiscsi__bhs__logout__resp.html#a7a0f32817bf0f3be1d0b88fca8212aaa":[12,0,8,14],
-"structiscsi__bhs__logout__resp.html#a812c2508482f549794314914493cc8e5":[12,0,8,11]
+"structiscsi__bhs__logout__resp.html#a7a0f32817bf0f3be1d0b88fca8212aaa":[12,0,8,14]
 };

@@ -154,7 +154,7 @@ Collaboration diagram for spdk_nvmf_request:</div>
 <div class="center"><img src="structspdk__nvmf__request__coll__graph.png" border="0" usemap="#spdk__nvmf__request_coll__map" alt="Collaboration graph"/></div>
 <map name="spdk__nvmf__request_coll__map" id="spdk__nvmf__request_coll__map">
 <area shape="rect"  title=" " alt="" coords="716,312,867,339"/>
-<area shape="rect"  href="structspdk__nvmf__qpair.html" title=" " alt="" coords="1025,233,1160,260"/>
+<area shape="rect"  href="structspdk__nvmf__qpair.html" title=" " alt="" coords="1025,223,1160,249"/>
 <area shape="rect"  href="structspdk__nvmf__dif__info.html" title=" " alt="" coords="399,68,550,95"/>
 <area shape="rect"  href="structspdk__dif__ctx.html" title="DIF context information." alt="" coords="69,5,173,32"/>
 <area shape="rect"  href="unionnvmf__h2c__msg.html" title=" " alt="" coords="414,209,535,236"/>
@@ -167,8 +167,8 @@ Collaboration diagram for spdk_nvmf_request:</div>
 <area shape="rect"  href="structspdk__nvme__cpl.html" title="Completion queue entry." alt="" coords="59,340,182,367"/>
 <area shape="rect"  href="structspdk__nvmf__fabric__prop__get__rsp.html" title=" " alt="" coords="33,391,208,433"/>
 <area shape="rect"  href="structspdk__nvmf__fabric__connect__rsp.html" title=" " alt="" coords="9,457,232,484"/>
-<area shape="rect"  href="structspdk__nvmf__poll__group.html" title=" " alt="" coords="707,157,876,184"/>
-<area shape="rect"  href="structspdk__nvmf__transport.html" title=" " alt="" coords="711,208,871,235"/>
+<area shape="rect"  href="structspdk__nvmf__poll__group.html" title=" " alt="" coords="707,143,876,169"/>
+<area shape="rect"  href="structspdk__nvmf__transport.html" title=" " alt="" coords="711,193,871,220"/>
 <area shape="rect"  href="structspdk__bdev__io__wait__entry.html" title="Structure to register a callback when an spdk_bdev_io becomes available." alt="" coords="381,457,568,484"/>
 <area shape="rect"  href="structspdk__bdev.html" title=" " alt="" coords="75,508,167,535"/>
 </map>
@@ -227,6 +227,15 @@ spdk_nvmf_nvme_passthru_cmd_cb&#160;</td><td class="memItemRight" valign="bottom
 <tr class="memitem:a9157c88a81b8edfd08f98482c6d430e0"><td class="memItemLeft" align="right" valign="top"><a id="a9157c88a81b8edfd08f98482c6d430e0"></a>
 struct <a class="el" href="structspdk__nvmf__request.html">spdk_nvmf_request</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>first_fused_req</b></td></tr>
 <tr class="separator:a9157c88a81b8edfd08f98482c6d430e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a049e86d7c375f5f5c08dc07c208d0419"><td class="memItemLeft" align="right" valign="top"><a id="a049e86d7c375f5f5c08dc07c208d0419"></a>
+struct <a class="el" href="structspdk__nvmf__request.html">spdk_nvmf_request</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>req_to_abort</b></td></tr>
+<tr class="separator:a049e86d7c375f5f5c08dc07c208d0419"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6ddb04138ba386b68d2355fa9b55430"><td class="memItemLeft" align="right" valign="top"><a id="ac6ddb04138ba386b68d2355fa9b55430"></a>
+struct spdk_poller *&#160;</td><td class="memItemRight" valign="bottom"><b>poller</b></td></tr>
+<tr class="separator:ac6ddb04138ba386b68d2355fa9b55430"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae405604e4160ec1916926c146b3a852e"><td class="memItemLeft" align="right" valign="top"><a id="ae405604e4160ec1916926c146b3a852e"></a>
+uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>timeout_tsc</b></td></tr>
+<tr class="separator:ae405604e4160ec1916926c146b3a852e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li><a class="el" href="nvmf__transport_8h.html">nvmf_transport.h</a></li>

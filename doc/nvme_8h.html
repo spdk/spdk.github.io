@@ -453,6 +453,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a724ed20a1a5adaf30c48db8c28d29677"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a724ed20a1a5adaf30c48db8c28d29677">spdk_nvme_ctrlr_cmd_abort</a> (struct spdk_nvme_ctrlr *ctrlr, struct spdk_nvme_qpair *qpair, uint16_t cid, <a class="el" href="nvme_8h.html#ac9779e9957d7089dde8e492cc60856d8">spdk_nvme_cmd_cb</a> cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:a724ed20a1a5adaf30c48db8c28d29677"><td class="mdescLeft">&#160;</td><td class="mdescRight">Abort a specific previously-submitted NVMe command.  <a href="#a724ed20a1a5adaf30c48db8c28d29677">More...</a><br /></td></tr>
 <tr class="separator:a724ed20a1a5adaf30c48db8c28d29677"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa02bff8a2cebfc7eb69e5cf23cd36afd"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#aa02bff8a2cebfc7eb69e5cf23cd36afd">spdk_nvme_ctrlr_cmd_abort_ext</a> (struct spdk_nvme_ctrlr *ctrlr, struct spdk_nvme_qpair *qpair, void *cmd_cb_arg, <a class="el" href="nvme_8h.html#ac9779e9957d7089dde8e492cc60856d8">spdk_nvme_cmd_cb</a> cb_fn, void *cb_arg)</td></tr>
+<tr class="memdesc:aa02bff8a2cebfc7eb69e5cf23cd36afd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Abort previously submitted commands which have cmd_cb_arg as its callback argument.  <a href="#aa02bff8a2cebfc7eb69e5cf23cd36afd">More...</a><br /></td></tr>
+<tr class="separator:aa02bff8a2cebfc7eb69e5cf23cd36afd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa9507cb98ee30e5df98474bc82190476"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#aa9507cb98ee30e5df98474bc82190476">spdk_nvme_ctrlr_cmd_set_feature</a> (struct spdk_nvme_ctrlr *ctrlr, uint8_t feature, uint32_t cdw11, uint32_t cdw12, void *payload, uint32_t payload_size, <a class="el" href="nvme_8h.html#ac9779e9957d7089dde8e492cc60856d8">spdk_nvme_cmd_cb</a> cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:aa9507cb98ee30e5df98474bc82190476"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set specific feature for the given NVMe controller.  <a href="#aa9507cb98ee30e5df98474bc82190476">More...</a><br /></td></tr>
 <tr class="separator:aa9507cb98ee30e5df98474bc82190476"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1297,6 +1300,65 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_map_prps</b>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 if successfully submitted, negated errno if resources could not be allocated for this request, -ENXIO if the admin qpair is failed at the transport layer. </dd></dl>
+
+</div>
+</div>
+<a id="aa02bff8a2cebfc7eb69e5cf23cd36afd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa02bff8a2cebfc7eb69e5cf23cd36afd">&#9670;&nbsp;</a></span>spdk_nvme_ctrlr_cmd_abort_ext()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_nvme_ctrlr_cmd_abort_ext </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_nvme_ctrlr *&#160;</td>
+          <td class="paramname"><em>ctrlr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct spdk_nvme_qpair *&#160;</td>
+          <td class="paramname"><em>qpair</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>cmd_cb_arg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="nvme_8h.html#ac9779e9957d7089dde8e492cc60856d8">spdk_nvme_cmd_cb</a>&#160;</td>
+          <td class="paramname"><em>cb_fn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>cb_arg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Abort previously submitted commands which have cmd_cb_arg as its callback argument. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ctrlr</td><td>NVMe controller to which the commands were submitted. </td></tr>
+    <tr><td class="paramname">qpair</td><td>NVMe queue pair to which the commands were submitted. For admin commands, pass NULL for the qpair. </td></tr>
+    <tr><td class="paramname">cmd_cb_arg</td><td>Callback argument for the NVMe commands which this function attempts to abort. </td></tr>
+    <tr><td class="paramname">cb_fn</td><td>Callback function to invoke when this function has completed. </td></tr>
+    <tr><td class="paramname">cb_arg</td><td>Argument to pass to the callback function.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 if successfully submitted, negated errno otherwise. </dd></dl>
 
 </div>
 </div>
