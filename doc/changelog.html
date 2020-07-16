@@ -175,6 +175,7 @@ v20.07: (Upcoming Release)</h1>
 <h2>sock</h2>
 <p>Added <code>spdk_sock_impl_get_opts</code> and <code>spdk_sock_impl_set_opts</code> functions to set/get socket layer configuration options. Options can be set independently for each implementation.</p>
 <p>Added <code>recv_buf_size</code> and 'send_buf_size' socket layer options. They are used only in posix implementation.</p>
+<p>Added <code>uring</code> based socket implementation, the code is located in module/sock/uring. This feature is only available in Linux which requires kernel version is greater than 5.4.3. Currently, our CI pool added the uring based socket tests for iSCSI target and also the tests for SPDK NVMe-oF tcp transport.</p>
 <h2>vhost</h2>
 <p>The function <code>spdk_vhost_blk_get_dev</code> has been removed.</p>
 <h1><a class="anchor" id="changelog-v20-04"></a>

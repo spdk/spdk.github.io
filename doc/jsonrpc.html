@@ -1700,6 +1700,8 @@ nvmf_create_transport method</h2>
 <td class="markdownTableBodyNone">sock_priority  </td><td class="markdownTableBodyNone">Optional  </td><td class="markdownTableBodyNone">number  </td><td class="markdownTableBodyNone">The socket priority of the connection owned by this transport (TCP only)   </td></tr>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">acceptor_backlog  </td><td class="markdownTableBodyNone">Optional  </td><td class="markdownTableBodyNone">number  </td><td class="markdownTableBodyNone">The number of pending connections allowed in backlog before failing new connection attempts (RDMA only)   </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">abort_timeout_sec  </td><td class="markdownTableBodyNone">Optional  </td><td class="markdownTableBodyNone">number  </td><td class="markdownTableBodyNone">Abort execution timeout value, in seconds   </td></tr>
 </table>
 <h3>Example</h3>
 <p>Example request:</p>
@@ -1936,7 +1938,7 @@ nvmf_get_transports method</h2>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;method&quot;: &quot;nvmf_get_transports&quot;</div><div class="line">}</div></div><!-- fragment --><p>Example response:</p>
-<div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: [</div><div class="line">    {</div><div class="line">      &quot;type&quot;: &quot;RDMA&quot;.</div><div class="line">      &quot;max_queue_depth&quot;: 128,</div><div class="line">      &quot;max_io_qpairs_per_ctrlr&quot;: 64,</div><div class="line">      &quot;in_capsule_data_size&quot;: 4096,</div><div class="line">      &quot;max_io_size&quot;: 131072,</div><div class="line">      &quot;io_unit_size&quot;: 131072</div><div class="line">    }</div><div class="line">  ]</div><div class="line">}</div></div><!-- fragment --><h2><a class="anchor" id="rpc_nvmf_get_stats"></a>
+<div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: [</div><div class="line">    {</div><div class="line">      &quot;type&quot;: &quot;RDMA&quot;.</div><div class="line">      &quot;max_queue_depth&quot;: 128,</div><div class="line">      &quot;max_io_qpairs_per_ctrlr&quot;: 64,</div><div class="line">      &quot;in_capsule_data_size&quot;: 4096,</div><div class="line">      &quot;max_io_size&quot;: 131072,</div><div class="line">      &quot;io_unit_size&quot;: 131072,</div><div class="line">      &quot;abort_timeout_sec&quot;: 1</div><div class="line">    }</div><div class="line">  ]</div><div class="line">}</div></div><!-- fragment --><h2><a class="anchor" id="rpc_nvmf_get_stats"></a>
 nvmf_get_stats method</h2>
 <p>Retrieve current statistics of the NVMf subsystem.</p>
 <h3>Parameters</h3>
