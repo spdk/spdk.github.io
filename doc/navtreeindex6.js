@@ -1,5 +1,6 @@
 var NAVTREEINDEX6 =
 {
+"nvme.html#nvme_intro":[7,0,1],
 "nvme.html#nvme_io_submission":[7,0,4,0],
 "nvme.html#nvme_memory_usage":[7,0,4,1],
 "nvme.html#nvme_multi_process":[7,0,6],
@@ -248,6 +249,5 @@ var NAVTREEINDEX6 =
 "nvme__ocssd__spec_8h.html#a42b34558cb1809ea9157f873441c919da17822237ff045bebf515bedfad16dd8c":[13,0,39,7,0],
 "nvme__ocssd__spec_8h.html#a4b36d556463b5fe4bb924a3da299fca0":[13,0,39,15],
 "nvme__ocssd__spec_8h.html#a584df915ebdcf6a753a2370d5cbd784f":[13,0,39,13],
-"nvme__ocssd__spec_8h.html#a6e889e465d0062a5325c457c07d39adb":[13,0,39,16],
-"nvme__ocssd__spec_8h.html#a795ecd2378b97c445193b2cdc1be99bb":[13,0,39,12]
+"nvme__ocssd__spec_8h.html#a6e889e465d0062a5325c457c07d39adb":[13,0,39,16]
 };

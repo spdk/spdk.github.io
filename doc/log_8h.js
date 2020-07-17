@@ -1,5 +1,6 @@
 var log_8h =
 [
+    [ "SPDK_DEBUGLOG_FLAG_ENABLED", "log_8h.html#a708ac484a189572de867c299fcbbe5be", null ],
     [ "SPDK_ERRLOG", "log_8h.html#a6b7bfeecff42b840ca5ebd25ffa84439", null ],
     [ "SPDK_NOTICELOG", "log_8h.html#a4dcd04f102bfd52627f41e43123bc916", null ],
     [ "SPDK_PRINTF", "log_8h.html#a013363047e6662f5353b8bffe1c079e6", null ],
