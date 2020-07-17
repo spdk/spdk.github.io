@@ -257,6 +257,15 @@ to the latest failure's log. We will prioritize tacking down and fixing these is
 is unable to match your comment to a valid GitHub issue, it will post back a comment on Gerrit letting you know it was unable to retrigger
 your patch.
 
+#### Mellanox Build Bot
+
+If Mellanox Build Bot gives your patch a -1 and you believe that this failure is not related to your patch, you can re-trigger a new
+build by posting a comment with the following content:
+
+~~~{.sh}
+Mellanox:retest
+~~~
+
 <a id="local"></a>
 ## Local Testing
 
