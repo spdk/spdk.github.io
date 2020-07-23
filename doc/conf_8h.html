@@ -198,6 +198,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a2c19833437dd2be7bafc4d7ca07668d8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="conf_8h.html#a2c19833437dd2be7bafc4d7ca07668d8">spdk_conf_set_as_default</a> (struct spdk_conf *cp)</td></tr>
 <tr class="memdesc:a2c19833437dd2be7bafc4d7ca07668d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the configuration as the default.  <a href="#a2c19833437dd2be7bafc4d7ca07668d8">More...</a><br /></td></tr>
 <tr class="separator:a2c19833437dd2be7bafc4d7ca07668d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9539a403b39779056af14942b1d7d95"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="conf_8h.html#af9539a403b39779056af14942b1d7d95">spdk_conf_disable_sections_merge</a> (struct spdk_conf *cp)</td></tr>
+<tr class="memdesc:af9539a403b39779056af14942b1d7d95"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disable sections merging during '<a class="el" href="conf_8h.html#a85d8fdbc25d15752e765240ce0d53d03" title="Read configuration file for spdk_conf struct.">spdk_conf_read()</a>'.  <a href="#af9539a403b39779056af14942b1d7d95">More...</a><br /></td></tr>
+<tr class="separator:af9539a403b39779056af14942b1d7d95"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Configuration file parser. </p>
@@ -220,6 +223,32 @@ Functions</h2></td></tr>
 
 <p>Allocate a configuration struct used for the initialization of SPDK app. </p>
 <dl class="section return"><dt>Returns</dt><dd>a pointer to the allocated configuration struct. </dd></dl>
+
+</div>
+</div>
+<a id="af9539a403b39779056af14942b1d7d95"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af9539a403b39779056af14942b1d7d95">&#9670;&nbsp;</a></span>spdk_conf_disable_sections_merge()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_conf_disable_sections_merge </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_conf *&#160;</td>
+          <td class="paramname"><em>cp</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Disable sections merging during '<a class="el" href="conf_8h.html#a85d8fdbc25d15752e765240ce0d53d03" title="Read configuration file for spdk_conf struct.">spdk_conf_read()</a>'. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cp</td><td>Configuration to be read </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

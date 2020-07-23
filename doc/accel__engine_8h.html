@@ -213,15 +213,27 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="acce
 <tr class="memitem:a79a616b6386fceb00734032a3ff0ebb7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="accel__engine_8h.html#a79a616b6386fceb00734032a3ff0ebb7">spdk_accel_batch_prep_copy</a> (struct spdk_accel_task *accel_req, struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *ch, struct spdk_accel_batch *batch, void *dst, void *src, uint64_t nbytes, <a class="el" href="accel__engine_8h.html#a48593db52501b3dec9233f7112d37872">spdk_accel_completion_cb</a> cb)</td></tr>
 <tr class="memdesc:a79a616b6386fceb00734032a3ff0ebb7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Synchronous call to prepare a copy request into a previously initialized batch created with <a class="el" href="accel__engine_8h.html#aaba9b97bbc71f37e3fd1287224eb897e" title="Synchronous call to create a batch sequence.">spdk_accel_batch_create()</a>.  <a href="#a79a616b6386fceb00734032a3ff0ebb7">More...</a><br /></td></tr>
 <tr class="separator:a79a616b6386fceb00734032a3ff0ebb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af428ab97f2863215d76909a834b93436"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="accel__engine_8h.html#af428ab97f2863215d76909a834b93436">spdk_accel_batch_prep_dualcast</a> (struct spdk_accel_task *accel_req, struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *ch, struct spdk_accel_batch *batch, void *dst1, void *dst2, void *src, uint64_t nbytes, <a class="el" href="accel__engine_8h.html#a48593db52501b3dec9233f7112d37872">spdk_accel_completion_cb</a> cb)</td></tr>
+<tr class="memdesc:af428ab97f2863215d76909a834b93436"><td class="mdescLeft">&#160;</td><td class="mdescRight">Synchronous call to prepare a dualcast request into a previously initialized batch created with <a class="el" href="accel__engine_8h.html#aaba9b97bbc71f37e3fd1287224eb897e" title="Synchronous call to create a batch sequence.">spdk_accel_batch_create()</a>.  <a href="#af428ab97f2863215d76909a834b93436">More...</a><br /></td></tr>
+<tr class="separator:af428ab97f2863215d76909a834b93436"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af2a407ee1475245d36eb6feabeaa72b3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="accel__engine_8h.html#af2a407ee1475245d36eb6feabeaa72b3">spdk_accel_submit_dualcast</a> (struct spdk_accel_task *accel_req, struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *ch, void *dst1, void *dst2, void *src, uint64_t nbytes, <a class="el" href="accel__engine_8h.html#a48593db52501b3dec9233f7112d37872">spdk_accel_completion_cb</a> cb)</td></tr>
 <tr class="memdesc:af2a407ee1475245d36eb6feabeaa72b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submit a dual cast copy request.  <a href="#af2a407ee1475245d36eb6feabeaa72b3">More...</a><br /></td></tr>
 <tr class="separator:af2a407ee1475245d36eb6feabeaa72b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d679db4d34fb27526145aa541b30afa"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="accel__engine_8h.html#a9d679db4d34fb27526145aa541b30afa">spdk_accel_batch_prep_compare</a> (struct spdk_accel_task *accel_req, struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *ch, struct spdk_accel_batch *batch, void *src1, void *src2, uint64_t nbytes, <a class="el" href="accel__engine_8h.html#a48593db52501b3dec9233f7112d37872">spdk_accel_completion_cb</a> cb)</td></tr>
+<tr class="memdesc:a9d679db4d34fb27526145aa541b30afa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Synchronous call to prepare a compare request into a previously initialized batch created with <a class="el" href="accel__engine_8h.html#aaba9b97bbc71f37e3fd1287224eb897e" title="Synchronous call to create a batch sequence.">spdk_accel_batch_create()</a>.  <a href="#a9d679db4d34fb27526145aa541b30afa">More...</a><br /></td></tr>
+<tr class="separator:a9d679db4d34fb27526145aa541b30afa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a025d630589ff531b63024ff41276e7a2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="accel__engine_8h.html#a025d630589ff531b63024ff41276e7a2">spdk_accel_submit_compare</a> (struct spdk_accel_task *accel_req, struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *ch, void *src1, void *src2, uint64_t nbytes, <a class="el" href="accel__engine_8h.html#a48593db52501b3dec9233f7112d37872">spdk_accel_completion_cb</a> cb)</td></tr>
 <tr class="memdesc:a025d630589ff531b63024ff41276e7a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submit a compare request.  <a href="#a025d630589ff531b63024ff41276e7a2">More...</a><br /></td></tr>
 <tr class="separator:a025d630589ff531b63024ff41276e7a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a925b142b8761575b4aa893517f824fa2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="accel__engine_8h.html#a925b142b8761575b4aa893517f824fa2">spdk_accel_batch_prep_fill</a> (struct spdk_accel_task *accel_req, struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *ch, struct spdk_accel_batch *batch, void *dst, uint8_t fill, uint64_t nbytes, <a class="el" href="accel__engine_8h.html#a48593db52501b3dec9233f7112d37872">spdk_accel_completion_cb</a> cb)</td></tr>
+<tr class="memdesc:a925b142b8761575b4aa893517f824fa2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Synchronous call to prepare a fill request into a previously initialized batch created with <a class="el" href="accel__engine_8h.html#aaba9b97bbc71f37e3fd1287224eb897e" title="Synchronous call to create a batch sequence.">spdk_accel_batch_create()</a>.  <a href="#a925b142b8761575b4aa893517f824fa2">More...</a><br /></td></tr>
+<tr class="separator:a925b142b8761575b4aa893517f824fa2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a069e8bf561424ee3e78226721341a7b9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="accel__engine_8h.html#a069e8bf561424ee3e78226721341a7b9">spdk_accel_submit_fill</a> (struct spdk_accel_task *accel_req, struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *ch, void *dst, uint8_t fill, uint64_t nbytes, <a class="el" href="accel__engine_8h.html#a48593db52501b3dec9233f7112d37872">spdk_accel_completion_cb</a> cb)</td></tr>
 <tr class="memdesc:a069e8bf561424ee3e78226721341a7b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submit a fill request.  <a href="#a069e8bf561424ee3e78226721341a7b9">More...</a><br /></td></tr>
 <tr class="separator:a069e8bf561424ee3e78226721341a7b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8da9cb2f64238a8014b4a741a6ac2483"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="accel__engine_8h.html#a8da9cb2f64238a8014b4a741a6ac2483">spdk_accel_batch_prep_crc32c</a> (struct spdk_accel_task *accel_req, struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *ch, struct spdk_accel_batch *batch, uint32_t *dst, void *src, uint32_t seed, uint64_t nbytes, <a class="el" href="accel__engine_8h.html#a48593db52501b3dec9233f7112d37872">spdk_accel_completion_cb</a> cb)</td></tr>
+<tr class="memdesc:a8da9cb2f64238a8014b4a741a6ac2483"><td class="mdescLeft">&#160;</td><td class="mdescRight">Synchronous call to prepare a crc32c request into a previously initialized batch created with <a class="el" href="accel__engine_8h.html#aaba9b97bbc71f37e3fd1287224eb897e" title="Synchronous call to create a batch sequence.">spdk_accel_batch_create()</a>.  <a href="#a8da9cb2f64238a8014b4a741a6ac2483">More...</a><br /></td></tr>
+<tr class="separator:a8da9cb2f64238a8014b4a741a6ac2483"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afe15a3c00b47461d6cd2e66fbae011ba"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="accel__engine_8h.html#afe15a3c00b47461d6cd2e66fbae011ba">spdk_accel_submit_crc32c</a> (struct spdk_accel_task *accel_req, struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *ch, uint32_t *dst, void *src, uint32_t seed, uint64_t nbytes, <a class="el" href="accel__engine_8h.html#a48593db52501b3dec9233f7112d37872">spdk_accel_completion_cb</a> cb)</td></tr>
 <tr class="memdesc:afe15a3c00b47461d6cd2e66fbae011ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submit a CRC-32C calculation request.  <a href="#afe15a3c00b47461d6cd2e66fbae011ba">More...</a><br /></td></tr>
 <tr class="separator:afe15a3c00b47461d6cd2e66fbae011ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -336,6 +348,80 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="acce
 
 </div>
 </div>
+<a id="a9d679db4d34fb27526145aa541b30afa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9d679db4d34fb27526145aa541b30afa">&#9670;&nbsp;</a></span>spdk_accel_batch_prep_compare()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_accel_batch_prep_compare </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_accel_task *&#160;</td>
+          <td class="paramname"><em>accel_req</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *&#160;</td>
+          <td class="paramname"><em>ch</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct spdk_accel_batch *&#160;</td>
+          <td class="paramname"><em>batch</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>src1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>src2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>nbytes</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="accel__engine_8h.html#a48593db52501b3dec9233f7112d37872">spdk_accel_completion_cb</a>&#160;</td>
+          <td class="paramname"><em>cb</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Synchronous call to prepare a compare request into a previously initialized batch created with <a class="el" href="accel__engine_8h.html#aaba9b97bbc71f37e3fd1287224eb897e" title="Synchronous call to create a batch sequence.">spdk_accel_batch_create()</a>. </p>
+<p>The callback will be called when the comapre completes after the batch has been submitted by an asynchronous call to <a class="el" href="accel__engine_8h.html#a8c54cf484a6d97f19cd710ca2307d6f2" title="Asynchronous call to submit a batch sequence.">spdk_accel_batch_submit()</a>.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">accel_req</td><td>Accel request task. </td></tr>
+    <tr><td class="paramname">ch</td><td>I/O channel to submit request to the accel engine. </td></tr>
+    <tr><td class="paramname">batch</td><td>Handle provided when the batch was started with <a class="el" href="accel__engine_8h.html#aaba9b97bbc71f37e3fd1287224eb897e" title="Synchronous call to create a batch sequence.">spdk_accel_batch_create()</a>. </td></tr>
+    <tr><td class="paramname">src1</td><td>First location to perform compare on. </td></tr>
+    <tr><td class="paramname">src2</td><td>Second location to perform compare on. </td></tr>
+    <tr><td class="paramname">nbytes</td><td>Length in bytes to compare. </td></tr>
+    <tr><td class="paramname">cb</td><td>Called when this operation completes.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, negative errno on failure. </dd></dl>
+
+</div>
+</div>
 <a id="a79a616b6386fceb00734032a3ff0ebb7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a79a616b6386fceb00734032a3ff0ebb7">&#9670;&nbsp;</a></span>spdk_accel_batch_prep_copy()</h2>
 
@@ -402,6 +488,242 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="acce
     <tr><td class="paramname">dst</td><td>Destination to copy to. </td></tr>
     <tr><td class="paramname">src</td><td>Source to copy from. </td></tr>
     <tr><td class="paramname">nbytes</td><td>Length in bytes to copy. </td></tr>
+    <tr><td class="paramname">cb</td><td>Called when this operation completes.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, negative errno on failure. </dd></dl>
+
+</div>
+</div>
+<a id="a8da9cb2f64238a8014b4a741a6ac2483"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8da9cb2f64238a8014b4a741a6ac2483">&#9670;&nbsp;</a></span>spdk_accel_batch_prep_crc32c()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_accel_batch_prep_crc32c </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_accel_task *&#160;</td>
+          <td class="paramname"><em>accel_req</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *&#160;</td>
+          <td class="paramname"><em>ch</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct spdk_accel_batch *&#160;</td>
+          <td class="paramname"><em>batch</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t *&#160;</td>
+          <td class="paramname"><em>dst</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>src</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>seed</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>nbytes</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="accel__engine_8h.html#a48593db52501b3dec9233f7112d37872">spdk_accel_completion_cb</a>&#160;</td>
+          <td class="paramname"><em>cb</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Synchronous call to prepare a crc32c request into a previously initialized batch created with <a class="el" href="accel__engine_8h.html#aaba9b97bbc71f37e3fd1287224eb897e" title="Synchronous call to create a batch sequence.">spdk_accel_batch_create()</a>. </p>
+<p>The callback will be called when the crc32c completes after the batch has been submitted by an asynchronous call to <a class="el" href="accel__engine_8h.html#a8c54cf484a6d97f19cd710ca2307d6f2" title="Asynchronous call to submit a batch sequence.">spdk_accel_batch_submit()</a>.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">accel_req</td><td>Accel request task. </td></tr>
+    <tr><td class="paramname">ch</td><td>I/O channel to submit request to the accel engine. </td></tr>
+    <tr><td class="paramname">batch</td><td>Handle provided when the batch was started with <a class="el" href="accel__engine_8h.html#aaba9b97bbc71f37e3fd1287224eb897e" title="Synchronous call to create a batch sequence.">spdk_accel_batch_create()</a>. </td></tr>
+    <tr><td class="paramname">dst</td><td>Destination to write the CRC-32C to. </td></tr>
+    <tr><td class="paramname">src</td><td>The source address for the data. </td></tr>
+    <tr><td class="paramname">seed</td><td>Four byte seed value. </td></tr>
+    <tr><td class="paramname">nbytes</td><td>Length in bytes. </td></tr>
+    <tr><td class="paramname">cb</td><td>Called when this operation completes.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, negative errno on failure. </dd></dl>
+
+</div>
+</div>
+<a id="af428ab97f2863215d76909a834b93436"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af428ab97f2863215d76909a834b93436">&#9670;&nbsp;</a></span>spdk_accel_batch_prep_dualcast()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_accel_batch_prep_dualcast </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_accel_task *&#160;</td>
+          <td class="paramname"><em>accel_req</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *&#160;</td>
+          <td class="paramname"><em>ch</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct spdk_accel_batch *&#160;</td>
+          <td class="paramname"><em>batch</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>dst1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>dst2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>src</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>nbytes</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="accel__engine_8h.html#a48593db52501b3dec9233f7112d37872">spdk_accel_completion_cb</a>&#160;</td>
+          <td class="paramname"><em>cb</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Synchronous call to prepare a dualcast request into a previously initialized batch created with <a class="el" href="accel__engine_8h.html#aaba9b97bbc71f37e3fd1287224eb897e" title="Synchronous call to create a batch sequence.">spdk_accel_batch_create()</a>. </p>
+<p>The callback will be called when the dualcast completes after the batch has been submitted by an asynchronous call to <a class="el" href="accel__engine_8h.html#a8c54cf484a6d97f19cd710ca2307d6f2" title="Asynchronous call to submit a batch sequence.">spdk_accel_batch_submit()</a>.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">accel_req</td><td>Accel request task. </td></tr>
+    <tr><td class="paramname">ch</td><td>I/O channel associated with this call. </td></tr>
+    <tr><td class="paramname">batch</td><td>Handle provided when the batch was started with <a class="el" href="accel__engine_8h.html#aaba9b97bbc71f37e3fd1287224eb897e" title="Synchronous call to create a batch sequence.">spdk_accel_batch_create()</a>. </td></tr>
+    <tr><td class="paramname">dst1</td><td>First destination to copy to (must be 4K aligned). </td></tr>
+    <tr><td class="paramname">dst2</td><td>Second destination to copy to (must be 4K aligned). </td></tr>
+    <tr><td class="paramname">src</td><td>Source to copy from. </td></tr>
+    <tr><td class="paramname">nbytes</td><td>Length in bytes to copy. </td></tr>
+    <tr><td class="paramname">cb</td><td>Called when this operation completes.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, negative errno on failure. </dd></dl>
+
+</div>
+</div>
+<a id="a925b142b8761575b4aa893517f824fa2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a925b142b8761575b4aa893517f824fa2">&#9670;&nbsp;</a></span>spdk_accel_batch_prep_fill()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_accel_batch_prep_fill </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_accel_task *&#160;</td>
+          <td class="paramname"><em>accel_req</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *&#160;</td>
+          <td class="paramname"><em>ch</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct spdk_accel_batch *&#160;</td>
+          <td class="paramname"><em>batch</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>dst</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>fill</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>nbytes</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="accel__engine_8h.html#a48593db52501b3dec9233f7112d37872">spdk_accel_completion_cb</a>&#160;</td>
+          <td class="paramname"><em>cb</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Synchronous call to prepare a fill request into a previously initialized batch created with <a class="el" href="accel__engine_8h.html#aaba9b97bbc71f37e3fd1287224eb897e" title="Synchronous call to create a batch sequence.">spdk_accel_batch_create()</a>. </p>
+<p>The callback will be called when the fill completes after the batch has been submitted by an asynchronous call to <a class="el" href="accel__engine_8h.html#a8c54cf484a6d97f19cd710ca2307d6f2" title="Asynchronous call to submit a batch sequence.">spdk_accel_batch_submit()</a>.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">accel_req</td><td>Accel request task. </td></tr>
+    <tr><td class="paramname">ch</td><td>I/O channel to submit request to the accel engine. </td></tr>
+    <tr><td class="paramname">batch</td><td>Handle provided when the batch was started with <a class="el" href="accel__engine_8h.html#aaba9b97bbc71f37e3fd1287224eb897e" title="Synchronous call to create a batch sequence.">spdk_accel_batch_create()</a>. </td></tr>
+    <tr><td class="paramname">dst</td><td>Destination to fill. </td></tr>
+    <tr><td class="paramname">fill</td><td>Constant byte to fill to the destination. </td></tr>
+    <tr><td class="paramname">nbytes</td><td>Length in bytes to fill. </td></tr>
     <tr><td class="paramname">cb</td><td>Called when this operation completes.</td></tr>
   </table>
   </dd>

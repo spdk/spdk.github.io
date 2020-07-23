@@ -1,5 +1,14 @@
 var NAVTREEINDEX24 =
 {
+"unionspdk__nvme__feat__async__event__configuration.html#a7e91f0feb90898c53fbf1bcd5e277b93":[12,0,105,4],
+"unionspdk__nvme__feat__async__event__configuration.html#af9edd911cbd0e44235cf4ac12d8c8c0e":[12,0,105,6],
+"unionspdk__nvme__feat__autonomous__power__state__transition.html":[12,0,106],
+"unionspdk__nvme__feat__autonomous__power__state__transition.html#a022cc1ba5b7ff365a6b69989c663333a":[12,0,106,0],
+"unionspdk__nvme__feat__autonomous__power__state__transition.html#a36867fe7bf800adeacf48b7940f74857":[12,0,106,2],
+"unionspdk__nvme__feat__autonomous__power__state__transition.html#a9311f1d84bfe298c3ea675dc2cfbdcdc":[12,0,106,3],
+"unionspdk__nvme__feat__autonomous__power__state__transition.html#afda6e6991a66b46d17d9e35bec39316a":[12,0,106,1],
+"unionspdk__nvme__feat__error__recovery.html":[12,0,107],
+"unionspdk__nvme__feat__error__recovery.html#a1c60ab7ecb7fb0b4488a10ff00fbebcd":[12,0,107,0],
 "unionspdk__nvme__feat__error__recovery.html#a470249122d177e128016ebe292f83085":[12,0,107,2],
 "unionspdk__nvme__feat__error__recovery.html#a85c441ab749eca8500b09add45336e0d":[12,0,107,1],
 "unionspdk__nvme__feat__error__recovery.html#ab5a2e6ab3de7f3011338acb2289817bd":[12,0,107,4],
@@ -240,14 +249,5 @@ var NAVTREEINDEX24 =
 "vmd.html#vmd_app_frame":[7,4,5],
 "vmd.html#vmd_config":[7,4,4],
 "vmd.html#vmd_interface":[7,4,2],
-"vmd.html#vmd_intro":[7,4,1],
-"vmd.html#vmd_key_functions":[7,4,3],
-"vmd.html#vmd_led":[7,4,7],
-"vmd.html#vmd_toc":[7,4,0],
-"vmd_8h.html":[13,0,58],
-"vmd_8h.html#a290d82c8bf3daf4a4d9b8aa414142e2f":[13,0,58,4],
-"vmd_8h.html#a302cba203fd0abdafd3729c34822c3f3":[13,0,58,3],
-"vmd_8h.html#a5372b99a3024346162b47b9890d88f28":[13,0,58,6],
-"vmd_8h.html#a80d2d2c79a93479422ada31a87d4664d":[13,0,58,0],
-"vmd_8h.html#a8ab093f9cdad46a637fac6aa07739ace":[13,0,58,5]
+"vmd.html#vmd_intro":[7,4,1]
 };

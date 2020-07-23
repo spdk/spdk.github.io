@@ -1,5 +1,14 @@
 var NAVTREEINDEX15 =
 {
+"structspdk__ftl__attrs.html#ab398d419db70dd7e3de3d69c676a2723":[12,0,49,6],
+"structspdk__ftl__attrs.html#ac3b0da2c0116f01b8eff6f5201b24fa3":[12,0,49,4],
+"structspdk__ftl__attrs.html#ad15f3edcd31d6ed16308bea3a1c83d06":[12,0,49,0],
+"structspdk__ftl__attrs.html#ae1bfc8ee509fbbdcf33264b92f4060b9":[12,0,49,5],
+"structspdk__ftl__conf.html":[12,0,50],
+"structspdk__ftl__conf.html#a0ea94001a8f25e32ea91bc919b8830c1":[12,0,50,5],
+"structspdk__ftl__conf.html#a1363805a414bea4d514df53229e44630":[12,0,50,0],
+"structspdk__ftl__conf.html#a1806a31e7d6c83f86d598e477474c102":[12,0,50,13],
+"structspdk__ftl__conf.html#a1db3ad5fda8413054cc6963eebf9a693":[12,0,50,11],
 "structspdk__ftl__conf.html#a1f728a4303cf103117d3b1dfbd93d62a":[12,0,50,10],
 "structspdk__ftl__conf.html#a328e94a59f30ee22d9e562eb0816f836":[12,0,50,6],
 "structspdk__ftl__conf.html#a383d7e6efd84a1ff5c94ae0502531d19":[12,0,50,7],
@@ -240,14 +249,5 @@ var NAVTREEINDEX15 =
 "structspdk__ioat__xor__hw__desc.html#ac75369616118a562812fcc21756972dc":[12,0,68,14],
 "structspdk__ioat__xor__hw__desc.html#ac92b5474f72ac562a34798a7f876acd7":[12,0,68,11],
 "structspdk__ioat__xor__hw__desc.html#ad2084a26b29723fbc1986b93741ae4aa":[12,0,68,3],
-"structspdk__ioat__xor__hw__desc.html#ad5132becbbf1d3ad1b9b0d6cf3b9cd45":[12,0,68,16],
-"structspdk__ioat__xor__hw__desc.html#aebbe290c07ef8c88ac4e14a1329dd368":[12,0,68,13],
-"structspdk__ioat__xor__hw__desc.html#afc217d72348f20f8ee53dcb7f884bf5a":[12,0,68,19],
-"structspdk__json__object__decoder.html":[12,0,69],
-"structspdk__json__object__decoder.html#a41e20bfeca48896002d95ea65925edba":[12,0,69,1],
-"structspdk__json__object__decoder.html#a4dece31cc98654d7cd55d74c76d0c0f6":[12,0,69,2],
-"structspdk__json__object__decoder.html#a962c3316db3dbdaff1a72b3955aa837b":[12,0,69,0],
-"structspdk__json__object__decoder.html#ad4f8aab87ac1de690799dad3487e92df":[12,0,69,3],
-"structspdk__json__val.html":[12,0,70],
-"structspdk__json__val.html#a709cbbd71ebb3cdc9bb8daf5f2a19364":[12,0,70,2]
+"structspdk__ioat__xor__hw__desc.html#ad5132becbbf1d3ad1b9b0d6cf3b9cd45":[12,0,68,16]
 };

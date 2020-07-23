@@ -1,6 +1,7 @@
 var conf_8h =
 [
     [ "spdk_conf_allocate", "conf_8h.html#adf0cf8d93adadd85dedd3c24004fc67e", null ],
+    [ "spdk_conf_disable_sections_merge", "conf_8h.html#af9539a403b39779056af14942b1d7d95", null ],
     [ "spdk_conf_find_section", "conf_8h.html#a10385cdb327c80b2cbe5b94f025cf019", null ],
     [ "spdk_conf_first_section", "conf_8h.html#a50caf66f4c8cc0c93d0d9ae89a16816c", null ],
     [ "spdk_conf_free", "conf_8h.html#adc6ca4eabe0f86a0e9560c464f982030", null ],

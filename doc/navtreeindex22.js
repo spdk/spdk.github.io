@@ -1,5 +1,14 @@
 var NAVTREEINDEX22 =
 {
+"structspdk__scsi__pr__in__full__status__desc.html#ad7215f35a82a0b99769deed4193c7ff3":[12,0,265,2],
+"structspdk__scsi__pr__in__full__status__desc.html#aeb5ae5395abfc2f89e2e43021fbbccfa":[12,0,265,9],
+"structspdk__scsi__pr__in__read__header.html":[12,0,266],
+"structspdk__scsi__pr__in__read__header.html#a6af3ac3f08b1af386eb124efc1e8c1ec":[12,0,266,0],
+"structspdk__scsi__pr__in__read__header.html#a91d8b07366a32aec322ee7f554a18ad2":[12,0,266,1],
+"structspdk__scsi__pr__in__read__keys__data.html":[12,0,267],
+"structspdk__scsi__pr__in__read__keys__data.html#a1c9633583beaee62f4e13c70b35d6e1b":[12,0,267,1],
+"structspdk__scsi__pr__in__read__keys__data.html#a6e25a31a72bb39b34d31984e157bed6e":[12,0,267,0],
+"structspdk__scsi__pr__in__read__reservations__data.html":[12,0,268],
 "structspdk__scsi__pr__in__read__reservations__data.html#a161cd1aaa9468de3b8f88745455c9f4c":[12,0,268,4],
 "structspdk__scsi__pr__in__read__reservations__data.html#a1d2f6e4d0bbc3b08afe0e5cc5a01a0d8":[12,0,268,3],
 "structspdk__scsi__pr__in__read__reservations__data.html#a699fa37a6c279d775f79ce2b9d6d5183":[12,0,268,0],
@@ -240,14 +249,5 @@ var NAVTREEINDEX22 =
 "trace_8h.html#a00bc7e8ba17d526c39dd5582b1e66395":[13,0,53,27],
 "trace_8h.html#a01e4bb4f3e8d4f7e9fadb16bce93bf15":[13,0,53,36],
 "trace_8h.html#a2057ffa0d5eaf0680a8d970646c157af":[13,0,53,37],
-"trace_8h.html#a21ab2742df91d14f1bdd761f222180f2":[13,0,53,23],
-"trace_8h.html#a22d0ab509e9d6beda1e9ae84d793ba94":[13,0,53,13],
-"trace_8h.html#a26e4becda093930b12939d3860fae701":[13,0,53,10],
-"trace_8h.html#a272510f870f932fd0e081481f6e51e58":[13,0,53,40],
-"trace_8h.html#a27e155bb110177b48dd7e3b20b754021":[13,0,53,12],
-"trace_8h.html#a2f65bc76d39a775d401996a01bcba195":[13,0,53,46],
-"trace_8h.html#a31bfd9fba3352fdc899b3b5033481b27":[13,0,53,24],
-"trace_8h.html#a346327ec1addd7eeb87963b40cec1821":[13,0,53,35],
-"trace_8h.html#a3c9eb705c608a7ffb0724dd7520d61ad":[13,0,53,30],
-"trace_8h.html#a483ad47f18a34c86bca85e1a228dd655":[13,0,53,32]
+"trace_8h.html#a21ab2742df91d14f1bdd761f222180f2":[13,0,53,23]
 };

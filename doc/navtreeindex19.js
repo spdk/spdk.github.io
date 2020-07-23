@@ -1,5 +1,14 @@
 var NAVTREEINDEX19 =
 {
+"structspdk__nvme__transport__ops.html#aa53e4bd83259554348460405d7afd654":[12,0,176,18],
+"structspdk__nvme__transport__ops.html#ab65df816938e10df9c78319454d84b10":[12,0,176,9],
+"structspdk__nvme__transport__ops.html#ac37117d2ec9c18a508bdeb4d17f17442":[12,0,176,11],
+"structspdk__nvme__transport__ops.html#ac6dd28d786b8a38bddad48677f5f8c57":[12,0,176,30],
+"structspdk__nvme__transport__ops.html#ac92b8a574a5647569715cada60d4e19f":[12,0,176,15],
+"structspdk__nvme__transport__ops.html#ad1aba600476558d62c47fecb61b19ed6":[12,0,176,2],
+"structspdk__nvme__transport__ops.html#adcb4e210b3b1b31463de8ffe68ea0e54":[12,0,176,13],
+"structspdk__nvme__transport__ops.html#ae01bbca0f937eb59be85e3b95339ccc7":[12,0,176,29],
+"structspdk__nvme__transport__ops.html#ae5520a930bea2319b55ee5ef9e7af08b":[12,0,176,17],
 "structspdk__nvme__transport__ops.html#af4f407aac18045e28284311c0f912ea0":[12,0,176,24],
 "structspdk__nvmf__capsule__cmd.html":[12,0,178],
 "structspdk__nvmf__capsule__cmd.html#a0f13be97db1c8a5db554e53895e1f5f8":[12,0,178,1],
@@ -240,14 +249,5 @@ var NAVTREEINDEX19 =
 "structspdk__nvmf__fc__lsdesc__disconn__cmd.html":[12,0,207],
 "structspdk__nvmf__fc__lsdesc__disconn__cmd.html#a19a9f663ffcff0d7379ec4d52f883341":[12,0,207,0],
 "structspdk__nvmf__fc__lsdesc__disconn__cmd.html#a42ec660067233d04d4721578624337c1":[12,0,207,4],
-"structspdk__nvmf__fc__lsdesc__disconn__cmd.html#a89a2ec413ca2ec2cf70718f4e954e954":[12,0,207,5],
-"structspdk__nvmf__fc__lsdesc__disconn__cmd.html#a94a26b8afa3d63514bf949415db1ab8d":[12,0,207,2],
-"structspdk__nvmf__fc__lsdesc__disconn__cmd.html#aa62cb1daedef503efe4b4473245444c5":[12,0,207,1],
-"structspdk__nvmf__fc__lsdesc__disconn__cmd.html#aac036a5ac7a102aec9af5d7ca036f8f9":[12,0,207,3],
-"structspdk__nvmf__fc__lsdesc__rjt.html":[12,0,208],
-"structspdk__nvmf__fc__lsdesc__rjt.html#a1d27bc588fcf33b57d6383b57df3240a":[12,0,208,0],
-"structspdk__nvmf__fc__lsdesc__rjt.html#a1d8c3af5045c3aad5d907cf47dac602c":[12,0,208,4],
-"structspdk__nvmf__fc__lsdesc__rjt.html#a2db8aba52f48bdbb56112f7489fd0e5b":[12,0,208,6],
-"structspdk__nvmf__fc__lsdesc__rjt.html#a358164651c3b900478f7a5eaf16b5c03":[12,0,208,5],
-"structspdk__nvmf__fc__lsdesc__rjt.html#a7261629252541f3651227c991aecb642":[12,0,208,3]
+"structspdk__nvmf__fc__lsdesc__disconn__cmd.html#a89a2ec413ca2ec2cf70718f4e954e954":[12,0,207,5]
 };

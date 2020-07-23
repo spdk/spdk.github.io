@@ -149,7 +149,7 @@ $(document).ready(function(){initNavTree('idxd_8h.html','');});
 </div><!--header-->
 <div class="contents">
 
-<p>IDXD accel engine driver public interface.  
+<p>IDXD driver public interface.  
 <a href="#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
@@ -193,20 +193,32 @@ Functions</h2></td></tr>
 <tr class="memitem:a00a2b8ec301e7c8a89532e3198b8d6d9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="idxd_8h.html#a00a2b8ec301e7c8a89532e3198b8d6d9">spdk_idxd_batch_prep_copy</a> (struct spdk_idxd_io_channel *chan, struct idxd_batch *batch, void *dst, const void *src, uint64_t nbytes, <a class="el" href="idxd_8h.html#a75c066c5425700c49f077e20484b50c1">spdk_idxd_req_cb</a> cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:a00a2b8ec301e7c8a89532e3198b8d6d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Synchronous call to prepare a copy request into a previously initialized batch created with <a class="el" href="idxd_8h.html#af852541005333162d65230b70983b3e0" title="Create a batch sequence.">spdk_idxd_batch_create()</a>.  <a href="#a00a2b8ec301e7c8a89532e3198b8d6d9">More...</a><br /></td></tr>
 <tr class="separator:a00a2b8ec301e7c8a89532e3198b8d6d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac01301f26f9fb1ac4606b934fe3df9f4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="idxd_8h.html#ac01301f26f9fb1ac4606b934fe3df9f4">spdk_idxd_batch_prep_dualcast</a> (struct spdk_idxd_io_channel *chan, struct idxd_batch *batch, void *dst1, void *dst2, const void *src, uint64_t nbytes, <a class="el" href="idxd_8h.html#a75c066c5425700c49f077e20484b50c1">spdk_idxd_req_cb</a> cb_fn, void *cb_arg)</td></tr>
+<tr class="memdesc:ac01301f26f9fb1ac4606b934fe3df9f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Synchronous call to prepare a dualcast request into a previously initialized batch created with <a class="el" href="idxd_8h.html#af852541005333162d65230b70983b3e0" title="Create a batch sequence.">spdk_idxd_batch_create()</a>.  <a href="#ac01301f26f9fb1ac4606b934fe3df9f4">More...</a><br /></td></tr>
+<tr class="separator:ac01301f26f9fb1ac4606b934fe3df9f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac4e441dcb5b00b9f97835c07017f32ed"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="idxd_8h.html#ac4e441dcb5b00b9f97835c07017f32ed">spdk_idxd_submit_copy</a> (struct spdk_idxd_io_channel *chan, void *dst, const void *src, uint64_t nbytes, <a class="el" href="idxd_8h.html#a75c066c5425700c49f077e20484b50c1">spdk_idxd_req_cb</a> cb_fn, void *cb_arg)</td></tr>
-<tr class="memdesc:ac4e441dcb5b00b9f97835c07017f32ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Build and submit a idxd memory copy request.  <a href="#ac4e441dcb5b00b9f97835c07017f32ed">More...</a><br /></td></tr>
+<tr class="memdesc:ac4e441dcb5b00b9f97835c07017f32ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Build and submit an idxd memory copy request.  <a href="#ac4e441dcb5b00b9f97835c07017f32ed">More...</a><br /></td></tr>
 <tr class="separator:ac4e441dcb5b00b9f97835c07017f32ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aef2f83b678ea127b1818f759a615bdef"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="idxd_8h.html#aef2f83b678ea127b1818f759a615bdef">spdk_idxd_submit_dualcast</a> (struct spdk_idxd_io_channel *chan, void *dst1, void *dst2, const void *src, uint64_t nbytes, <a class="el" href="idxd_8h.html#a75c066c5425700c49f077e20484b50c1">spdk_idxd_req_cb</a> cb_fn, void *cb_arg)</td></tr>
-<tr class="memdesc:aef2f83b678ea127b1818f759a615bdef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Build and submit an idxd dual cast copy request.  <a href="#aef2f83b678ea127b1818f759a615bdef">More...</a><br /></td></tr>
+<tr class="memdesc:aef2f83b678ea127b1818f759a615bdef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Build and submit an idxd dualcast request.  <a href="#aef2f83b678ea127b1818f759a615bdef">More...</a><br /></td></tr>
 <tr class="separator:aef2f83b678ea127b1818f759a615bdef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29321770dd18270ac63feaf7ed1624ae"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="idxd_8h.html#a29321770dd18270ac63feaf7ed1624ae">spdk_idxd_batch_prep_compare</a> (struct spdk_idxd_io_channel *chan, struct idxd_batch *batch, void *src1, void *src2, uint64_t nbytes, <a class="el" href="idxd_8h.html#a75c066c5425700c49f077e20484b50c1">spdk_idxd_req_cb</a> cb_fn, void *cb_arg)</td></tr>
+<tr class="memdesc:a29321770dd18270ac63feaf7ed1624ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Synchronous call to prepare a compare request into a previously initialized batch created with <a class="el" href="idxd_8h.html#af852541005333162d65230b70983b3e0" title="Create a batch sequence.">spdk_idxd_batch_create()</a>.  <a href="#a29321770dd18270ac63feaf7ed1624ae">More...</a><br /></td></tr>
+<tr class="separator:a29321770dd18270ac63feaf7ed1624ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a13e5209991017f518cfcc95e7d978aff"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="idxd_8h.html#a13e5209991017f518cfcc95e7d978aff">spdk_idxd_submit_compare</a> (struct spdk_idxd_io_channel *chan, void *src1, const void *src2, uint64_t nbytes, <a class="el" href="idxd_8h.html#a75c066c5425700c49f077e20484b50c1">spdk_idxd_req_cb</a> cb_fn, void *cb_arg)</td></tr>
-<tr class="memdesc:a13e5209991017f518cfcc95e7d978aff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Build and submit an idxd memory compare request.  <a href="#a13e5209991017f518cfcc95e7d978aff">More...</a><br /></td></tr>
+<tr class="memdesc:a13e5209991017f518cfcc95e7d978aff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Build and submit a memory compare request.  <a href="#a13e5209991017f518cfcc95e7d978aff">More...</a><br /></td></tr>
 <tr class="separator:a13e5209991017f518cfcc95e7d978aff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa806021f07d866c4551698cc7ded62d4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="idxd_8h.html#aa806021f07d866c4551698cc7ded62d4">spdk_idxd_batch_prep_fill</a> (struct spdk_idxd_io_channel *chan, struct idxd_batch *batch, void *dst, uint64_t fill_pattern, uint64_t nbytes, <a class="el" href="idxd_8h.html#a75c066c5425700c49f077e20484b50c1">spdk_idxd_req_cb</a> cb_fn, void *cb_arg)</td></tr>
+<tr class="memdesc:aa806021f07d866c4551698cc7ded62d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Synchronous call to prepare a fill request into a previously initialized batch created with <a class="el" href="idxd_8h.html#af852541005333162d65230b70983b3e0" title="Create a batch sequence.">spdk_idxd_batch_create()</a>.  <a href="#aa806021f07d866c4551698cc7ded62d4">More...</a><br /></td></tr>
+<tr class="separator:aa806021f07d866c4551698cc7ded62d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac469f33c1519f5454b2dad56686a5d2f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="idxd_8h.html#ac469f33c1519f5454b2dad56686a5d2f">spdk_idxd_submit_fill</a> (struct spdk_idxd_io_channel *chan, void *dst, uint64_t fill_pattern, uint64_t nbytes, <a class="el" href="idxd_8h.html#a75c066c5425700c49f077e20484b50c1">spdk_idxd_req_cb</a> cb_fn, void *cb_arg)</td></tr>
-<tr class="memdesc:ac469f33c1519f5454b2dad56686a5d2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Build and submit an idxd memory fill request.  <a href="#ac469f33c1519f5454b2dad56686a5d2f">More...</a><br /></td></tr>
+<tr class="memdesc:ac469f33c1519f5454b2dad56686a5d2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Build and submit a idxd memory fill request.  <a href="#ac469f33c1519f5454b2dad56686a5d2f">More...</a><br /></td></tr>
 <tr class="separator:ac469f33c1519f5454b2dad56686a5d2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70d818022010bca83142dd77f8d24303"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="idxd_8h.html#a70d818022010bca83142dd77f8d24303">spdk_idxd_batch_prep_crc32c</a> (struct spdk_idxd_io_channel *chan, struct idxd_batch *batch, uint32_t *dst, void *src, uint32_t seed, uint64_t nbytes, <a class="el" href="idxd_8h.html#a75c066c5425700c49f077e20484b50c1">spdk_idxd_req_cb</a> cb_fn, void *cb_arg)</td></tr>
+<tr class="memdesc:a70d818022010bca83142dd77f8d24303"><td class="mdescLeft">&#160;</td><td class="mdescRight">Synchronous call to prepare a crc32c request into a previously initialized batch created with <a class="el" href="idxd_8h.html#af852541005333162d65230b70983b3e0" title="Create a batch sequence.">spdk_idxd_batch_create()</a>.  <a href="#a70d818022010bca83142dd77f8d24303">More...</a><br /></td></tr>
+<tr class="separator:a70d818022010bca83142dd77f8d24303"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abf5fb2b8e9bd7b8b2e01a665f7a0f16a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="idxd_8h.html#abf5fb2b8e9bd7b8b2e01a665f7a0f16a">spdk_idxd_submit_crc32c</a> (struct spdk_idxd_io_channel *chan, uint32_t *dst, void *src, uint32_t seed, uint64_t nbytes, <a class="el" href="idxd_8h.html#a75c066c5425700c49f077e20484b50c1">spdk_idxd_req_cb</a> cb_fn, void *cb_arg)</td></tr>
-<tr class="memdesc:abf5fb2b8e9bd7b8b2e01a665f7a0f16a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Build and submit an idxd memory CRC32-C request.  <a href="#abf5fb2b8e9bd7b8b2e01a665f7a0f16a">More...</a><br /></td></tr>
+<tr class="memdesc:abf5fb2b8e9bd7b8b2e01a665f7a0f16a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Build and submit a memory CRC32-C request.  <a href="#abf5fb2b8e9bd7b8b2e01a665f7a0f16a">More...</a><br /></td></tr>
 <tr class="separator:abf5fb2b8e9bd7b8b2e01a665f7a0f16a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6ae2b6bd3783cadfb3fc32f090b2c624"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="idxd_8h.html#a6ae2b6bd3783cadfb3fc32f090b2c624">spdk_idxd_process_events</a> (struct spdk_idxd_io_channel *chan)</td></tr>
 <tr class="memdesc:a6ae2b6bd3783cadfb3fc32f090b2c624"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check for completed requests on an IDXD channel.  <a href="#a6ae2b6bd3783cadfb3fc32f090b2c624">More...</a><br /></td></tr>
@@ -219,7 +231,7 @@ Functions</h2></td></tr>
 <tr class="separator:a0de9abe0697950149cd1fe830717be90"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>IDXD accel engine driver public interface. </p>
+<div class="textblock"><p>IDXD driver public interface. </p>
 </div><h2 class="groupheader">Typedef Documentation</h2>
 <a id="a73cec9547e6aac6d71a033c27f3de188"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a73cec9547e6aac6d71a033c27f3de188">&#9670;&nbsp;</a></span>spdk_idxd_attach_cb</h2>
@@ -341,6 +353,80 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a29321770dd18270ac63feaf7ed1624ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a29321770dd18270ac63feaf7ed1624ae">&#9670;&nbsp;</a></span>spdk_idxd_batch_prep_compare()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_idxd_batch_prep_compare </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_idxd_io_channel *&#160;</td>
+          <td class="paramname"><em>chan</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct idxd_batch *&#160;</td>
+          <td class="paramname"><em>batch</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>src1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>src2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>nbytes</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="idxd_8h.html#a75c066c5425700c49f077e20484b50c1">spdk_idxd_req_cb</a>&#160;</td>
+          <td class="paramname"><em>cb_fn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>cb_arg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Synchronous call to prepare a compare request into a previously initialized batch created with <a class="el" href="idxd_8h.html#af852541005333162d65230b70983b3e0" title="Create a batch sequence.">spdk_idxd_batch_create()</a>. </p>
+<p>The callback will be called when the compare completes after the batch has been submitted by an asynchronous call to <a class="el" href="idxd_8h.html#aed7821b612c995cd3c97faab55379418" title="Submit a batch sequence.">spdk_idxd_batch_submit()</a>.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">chan</td><td>IDXD channel to submit request. </td></tr>
+    <tr><td class="paramname">batch</td><td>Handle provided when the batch was started with <a class="el" href="idxd_8h.html#af852541005333162d65230b70983b3e0" title="Create a batch sequence.">spdk_idxd_batch_create()</a>. </td></tr>
+    <tr><td class="paramname">src1</td><td>First source to compare. </td></tr>
+    <tr><td class="paramname">src2</td><td>Second source to compare. </td></tr>
+    <tr><td class="paramname">nbytes</td><td>Number of bytes to compare. </td></tr>
+    <tr><td class="paramname">cb_fn</td><td>Callback function which will be called when the request is complete. </td></tr>
+    <tr><td class="paramname">cb_arg</td><td>Opaque value which will be passed back as the arg parameter in the completion callback.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, negative errno on failure. </dd></dl>
+
+</div>
+</div>
 <a id="a00a2b8ec301e7c8a89532e3198b8d6d9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a00a2b8ec301e7c8a89532e3198b8d6d9">&#9670;&nbsp;</a></span>spdk_idxd_batch_prep_copy()</h2>
 
@@ -406,6 +492,242 @@ Functions</h2></td></tr>
     <tr><td class="paramname">dst</td><td>Destination virtual address. </td></tr>
     <tr><td class="paramname">src</td><td>Source virtual address. </td></tr>
     <tr><td class="paramname">nbytes</td><td>Number of bytes to copy. </td></tr>
+    <tr><td class="paramname">cb_fn</td><td>Callback function which will be called when the request is complete. </td></tr>
+    <tr><td class="paramname">cb_arg</td><td>Opaque value which will be passed back as the arg parameter in the completion callback.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, negative errno on failure. </dd></dl>
+
+</div>
+</div>
+<a id="a70d818022010bca83142dd77f8d24303"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a70d818022010bca83142dd77f8d24303">&#9670;&nbsp;</a></span>spdk_idxd_batch_prep_crc32c()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_idxd_batch_prep_crc32c </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_idxd_io_channel *&#160;</td>
+          <td class="paramname"><em>chan</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct idxd_batch *&#160;</td>
+          <td class="paramname"><em>batch</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t *&#160;</td>
+          <td class="paramname"><em>dst</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>src</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>seed</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>nbytes</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="idxd_8h.html#a75c066c5425700c49f077e20484b50c1">spdk_idxd_req_cb</a>&#160;</td>
+          <td class="paramname"><em>cb_fn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>cb_arg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Synchronous call to prepare a crc32c request into a previously initialized batch created with <a class="el" href="idxd_8h.html#af852541005333162d65230b70983b3e0" title="Create a batch sequence.">spdk_idxd_batch_create()</a>. </p>
+<p>The callback will be called when the crc32c completes after the batch has been submitted by an asynchronous call to <a class="el" href="idxd_8h.html#aed7821b612c995cd3c97faab55379418" title="Submit a batch sequence.">spdk_idxd_batch_submit()</a>.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">chan</td><td>IDXD channel to submit request. </td></tr>
+    <tr><td class="paramname">batch</td><td>Handle provided when the batch was started with <a class="el" href="idxd_8h.html#af852541005333162d65230b70983b3e0" title="Create a batch sequence.">spdk_idxd_batch_create()</a>. </td></tr>
+    <tr><td class="paramname">dst</td><td>Resulting calculation. </td></tr>
+    <tr><td class="paramname">src</td><td>Source virtual address. </td></tr>
+    <tr><td class="paramname">seed</td><td>Four byte CRC-32C seed value. </td></tr>
+    <tr><td class="paramname">nbytes</td><td>Number of bytes to calculate on. </td></tr>
+    <tr><td class="paramname">cb_fn</td><td>Callback function which will be called when the request is complete. </td></tr>
+    <tr><td class="paramname">cb_arg</td><td>Opaque value which will be passed back as the arg parameter in the completion callback.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, negative errno on failure. </dd></dl>
+
+</div>
+</div>
+<a id="ac01301f26f9fb1ac4606b934fe3df9f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac01301f26f9fb1ac4606b934fe3df9f4">&#9670;&nbsp;</a></span>spdk_idxd_batch_prep_dualcast()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_idxd_batch_prep_dualcast </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_idxd_io_channel *&#160;</td>
+          <td class="paramname"><em>chan</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct idxd_batch *&#160;</td>
+          <td class="paramname"><em>batch</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>dst1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>dst2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>src</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>nbytes</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="idxd_8h.html#a75c066c5425700c49f077e20484b50c1">spdk_idxd_req_cb</a>&#160;</td>
+          <td class="paramname"><em>cb_fn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>cb_arg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Synchronous call to prepare a dualcast request into a previously initialized batch created with <a class="el" href="idxd_8h.html#af852541005333162d65230b70983b3e0" title="Create a batch sequence.">spdk_idxd_batch_create()</a>. </p>
+<p>The callback will be called when the dualcast completes after the batch has been submitted by an asynchronous call to <a class="el" href="idxd_8h.html#aed7821b612c995cd3c97faab55379418" title="Submit a batch sequence.">spdk_idxd_batch_submit()</a>.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">chan</td><td>IDXD channel to submit request. </td></tr>
+    <tr><td class="paramname">batch</td><td>Handle provided when the batch was started with <a class="el" href="idxd_8h.html#af852541005333162d65230b70983b3e0" title="Create a batch sequence.">spdk_idxd_batch_create()</a>. </td></tr>
+    <tr><td class="paramname">dst1</td><td>First destination virtual address (must be 4K aligned). </td></tr>
+    <tr><td class="paramname">dst2</td><td>Second destination virtual address (must be 4K aligned). </td></tr>
+    <tr><td class="paramname">src</td><td>Source virtual address. </td></tr>
+    <tr><td class="paramname">nbytes</td><td>Number of bytes to copy. </td></tr>
+    <tr><td class="paramname">cb_fn</td><td>Callback function which will be called when the request is complete. </td></tr>
+    <tr><td class="paramname">cb_arg</td><td>Opaque value which will be passed back as the arg parameter in the completion callback.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, negative errno on failure. </dd></dl>
+
+</div>
+</div>
+<a id="aa806021f07d866c4551698cc7ded62d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa806021f07d866c4551698cc7ded62d4">&#9670;&nbsp;</a></span>spdk_idxd_batch_prep_fill()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_idxd_batch_prep_fill </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_idxd_io_channel *&#160;</td>
+          <td class="paramname"><em>chan</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct idxd_batch *&#160;</td>
+          <td class="paramname"><em>batch</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>dst</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>fill_pattern</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>nbytes</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="idxd_8h.html#a75c066c5425700c49f077e20484b50c1">spdk_idxd_req_cb</a>&#160;</td>
+          <td class="paramname"><em>cb_fn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>cb_arg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Synchronous call to prepare a fill request into a previously initialized batch created with <a class="el" href="idxd_8h.html#af852541005333162d65230b70983b3e0" title="Create a batch sequence.">spdk_idxd_batch_create()</a>. </p>
+<p>The callback will be called when the fill completes after the batch has been submitted by an asynchronous call to <a class="el" href="idxd_8h.html#aed7821b612c995cd3c97faab55379418" title="Submit a batch sequence.">spdk_idxd_batch_submit()</a>.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">chan</td><td>IDXD channel to submit request. </td></tr>
+    <tr><td class="paramname">batch</td><td>Handle provided when the batch was started with <a class="el" href="idxd_8h.html#af852541005333162d65230b70983b3e0" title="Create a batch sequence.">spdk_idxd_batch_create()</a>. </td></tr>
+    <tr><td class="paramname">dst</td><td>Destination virtual address. </td></tr>
+    <tr><td class="paramname">fill_pattern</td><td>Repeating eight-byte pattern to use for memory fill. </td></tr>
+    <tr><td class="paramname">nbytes</td><td>Number of bytes to fill. </td></tr>
     <tr><td class="paramname">cb_fn</td><td>Callback function which will be called when the request is complete. </td></tr>
     <tr><td class="paramname">cb_arg</td><td>Opaque value which will be passed back as the arg parameter in the completion callback.</td></tr>
   </table>
@@ -760,7 +1082,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Build and submit an idxd memory compare request. </p>
+<p>Build and submit a memory compare request. </p>
 <p>This function will build the compare descriptor and then immediately submit by writing to the proper device portal.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -827,7 +1149,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Build and submit a idxd memory copy request. </p>
+<p>Build and submit an idxd memory copy request. </p>
 <p>This function will build the copy descriptor and then immediately submit by writing to the proper device portal.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -900,7 +1222,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Build and submit an idxd memory CRC32-C request. </p>
+<p>Build and submit a memory CRC32-C request. </p>
 <p>This function will build the CRC-32C descriptor and then immediately submit by writing to the proper device portal.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -974,7 +1296,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Build and submit an idxd dual cast copy request. </p>
+<p>Build and submit an idxd dualcast request. </p>
 <p>This function will build the dual cast descriptor and then immediately submit by writing to the proper device portal.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -1042,7 +1364,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Build and submit an idxd memory fill request. </p>
+<p>Build and submit a idxd memory fill request. </p>
 <p>This function will build the fill descriptor and then immediately submit by writing to the proper device portal.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">

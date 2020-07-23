@@ -1,5 +1,14 @@
 var NAVTREEINDEX14 =
 {
+"structspdk__bdev_1_1____bdev__internal__fields.html#a293999636600108bc77ef672b62bf4f1":[12,0,23,0,9],
+"structspdk__bdev_1_1____bdev__internal__fields.html#a37797b9f43314a231214f04edb5c7029":[12,0,23,0,11],
+"structspdk__bdev_1_1____bdev__internal__fields.html#a544e45acd435eb8c7269f08166841f41":[12,0,23,0,7],
+"structspdk__bdev_1_1____bdev__internal__fields.html#a55d6103a185f6c50c9b5d58976d08508":[12,0,23,0,5],
+"structspdk__bdev_1_1____bdev__internal__fields.html#a65f5698e232c6756471cc8a87c1cc0c6":[12,0,23,0,15],
+"structspdk__bdev_1_1____bdev__internal__fields.html#a740740056a9b6f061a8d71dd755d54d9":[12,0,23,0,0],
+"structspdk__bdev_1_1____bdev__internal__fields.html#a75eb824f166523af1bb44edc6b209e89":[12,0,23,0,16],
+"structspdk__bdev_1_1____bdev__internal__fields.html#a7bada4fbc5c2a5de7f7fdf7aef9d876f":[12,0,23,0,6],
+"structspdk__bdev_1_1____bdev__internal__fields.html#a8155b9ed671033cf7e33d348c49bf980":[12,0,23,0,10],
 "structspdk__bdev_1_1____bdev__internal__fields.html#a920a1e86dea170c9234bb24f61b16226":[12,0,23,0,1],
 "structspdk__bdev_1_1____bdev__internal__fields.html#aac5fe7bcf1bbbf3f984874e1c75a580a":[12,0,23,0,19],
 "structspdk__bdev_1_1____bdev__internal__fields.html#ad010a75a238dd2290faf44545c43109e":[12,0,23,0,3],
@@ -240,14 +249,5 @@ var NAVTREEINDEX14 =
 "structspdk__ftl__attrs.html#a171ec0781950b25e61bbf192b8cda73c":[12,0,49,7],
 "structspdk__ftl__attrs.html#a4d113de40e95d6b1b4e3bb97f2a6231e":[12,0,49,3],
 "structspdk__ftl__attrs.html#a73a6ea72556da5a99ad9568b1a8ae7ba":[12,0,49,1],
-"structspdk__ftl__attrs.html#a7a46215b86677b00e81e09d5289bca38":[12,0,49,2],
-"structspdk__ftl__attrs.html#ab398d419db70dd7e3de3d69c676a2723":[12,0,49,6],
-"structspdk__ftl__attrs.html#ac3b0da2c0116f01b8eff6f5201b24fa3":[12,0,49,4],
-"structspdk__ftl__attrs.html#ad15f3edcd31d6ed16308bea3a1c83d06":[12,0,49,0],
-"structspdk__ftl__attrs.html#ae1bfc8ee509fbbdcf33264b92f4060b9":[12,0,49,5],
-"structspdk__ftl__conf.html":[12,0,50],
-"structspdk__ftl__conf.html#a0ea94001a8f25e32ea91bc919b8830c1":[12,0,50,5],
-"structspdk__ftl__conf.html#a1363805a414bea4d514df53229e44630":[12,0,50,0],
-"structspdk__ftl__conf.html#a1806a31e7d6c83f86d598e477474c102":[12,0,50,13],
-"structspdk__ftl__conf.html#a1db3ad5fda8413054cc6963eebf9a693":[12,0,50,11]
+"structspdk__ftl__attrs.html#a7a46215b86677b00e81e09d5289bca38":[12,0,49,2]
 };

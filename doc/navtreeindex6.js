@@ -1,5 +1,14 @@
 var NAVTREEINDEX6 =
 {
+"nvme.html#nvme_design":[7,0,4],
+"nvme.html#nvme_examples":[7,0,2],
+"nvme.html#nvme_fabrics_host":[7,0,5],
+"nvme.html#nvme_fabrics_trid":[7,0,5,0],
+"nvme.html#nvme_fioplugin":[7,0,2,1],
+"nvme.html#nvme_fuses":[7,0,4,0,0],
+"nvme.html#nvme_helloworld":[7,0,2,0],
+"nvme.html#nvme_hotplug":[7,0,7],
+"nvme.html#nvme_interface":[7,0,3],
 "nvme.html#nvme_intro":[7,0,1],
 "nvme.html#nvme_io_submission":[7,0,4,0],
 "nvme.html#nvme_memory_usage":[7,0,4,1],
@@ -240,14 +249,5 @@ var NAVTREEINDEX6 =
 "nvme__ocssd_8h.html#a4d52b5c15242a9b9e1d117d382814a71":[13,0,38,3],
 "nvme__ocssd_8h.html#a5da8caafd526dce7092840b88e472c54":[13,0,38,6],
 "nvme__ocssd_8h.html#a76454ff0913def2ef8d7e6be81cc29ae":[13,0,38,5],
-"nvme__ocssd_8h.html#a7a847fc1de3eaa2aca06503268196b53":[13,0,38,7],
-"nvme__ocssd_8h.html#ac1b56c33cf573acccda1d68cbb5dcbbb":[13,0,38,1],
-"nvme__ocssd_8h.html#ae26d22cefdddebb298f5b78324617904":[13,0,38,4],
-"nvme__ocssd__spec_8h.html":[13,0,39],
-"nvme__ocssd__spec_8h.html#a191404a5f78f1cadcadb5443e874f84f":[13,0,39,6],
-"nvme__ocssd__spec_8h.html#a42b34558cb1809ea9157f873441c919d":[13,0,39,7],
-"nvme__ocssd__spec_8h.html#a42b34558cb1809ea9157f873441c919da17822237ff045bebf515bedfad16dd8c":[13,0,39,7,0],
-"nvme__ocssd__spec_8h.html#a4b36d556463b5fe4bb924a3da299fca0":[13,0,39,15],
-"nvme__ocssd__spec_8h.html#a584df915ebdcf6a753a2370d5cbd784f":[13,0,39,13],
-"nvme__ocssd__spec_8h.html#a6e889e465d0062a5325c457c07d39adb":[13,0,39,16]
+"nvme__ocssd_8h.html#a7a847fc1de3eaa2aca06503268196b53":[13,0,38,7]
 };

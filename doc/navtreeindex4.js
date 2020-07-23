@@ -1,5 +1,14 @@
 var NAVTREEINDEX4 =
 {
+"iscsi__spec_8h.html#a5037d9a0c3f411d3ac5fea3bbb6367fa":[13,0,27,32],
+"iscsi__spec_8h.html#a507069bdb66a86eb825aa8a38c51886b":[13,0,27,91],
+"iscsi__spec_8h.html#a547ed77b2ea5d2b98d9a9a683e98c3fb":[13,0,27,67],
+"iscsi__spec_8h.html#a596b7838a8985d6902db1901ab7e0001":[13,0,27,75],
+"iscsi__spec_8h.html#a5b2d47d4cfd763493f56a1286cebbd2c":[13,0,27,53],
+"iscsi__spec_8h.html#a5b64dc60c844737f5b71f58c3becffd4":[13,0,27,66],
+"iscsi__spec_8h.html#a5bde03fa5cdf757697683bc7d517e664":[13,0,27,25],
+"iscsi__spec_8h.html#a5d40d20a885a45bea766a064b938e156":[13,0,27,63],
+"iscsi__spec_8h.html#a5db7a6ab1571e78ba55d08a6fa4c4b1c":[13,0,27,26],
 "iscsi__spec_8h.html#a5e194ce14bf7875eb7f8ab0201018f57":[13,0,27,77],
 "iscsi__spec_8h.html#a625616d916ae6b8697cfd3e94163fefa":[13,0,27,41],
 "iscsi__spec_8h.html#a6260633a960877910a301fe74dd0ad9a":[13,0,27,76],
@@ -240,14 +249,5 @@ var NAVTREEINDEX4 =
 "jsonrpc.html#rpc_bdev_pmem_create":[3,8,2,38],
 "jsonrpc.html#rpc_bdev_pmem_create_pool":[3,8,2,35],
 "jsonrpc.html#rpc_bdev_pmem_delete":[3,8,2,39],
-"jsonrpc.html#rpc_bdev_pmem_delete_pool":[3,8,2,37],
-"jsonrpc.html#rpc_bdev_pmem_get_pool_info":[3,8,2,36],
-"jsonrpc.html#rpc_bdev_raid_create":[3,8,6,14],
-"jsonrpc.html#rpc_bdev_raid_delete":[3,8,6,15],
-"jsonrpc.html#rpc_bdev_raid_get_bdevs":[3,8,6,13],
-"jsonrpc.html#rpc_bdev_rbd_create":[3,8,2,23],
-"jsonrpc.html#rpc_bdev_rbd_delete":[3,8,2,24],
-"jsonrpc.html#rpc_bdev_rbd_resize":[3,8,2,25],
-"jsonrpc.html#rpc_bdev_set_options":[3,8,2,0],
-"jsonrpc.html#rpc_bdev_set_qos_limit":[3,8,2,5]
+"jsonrpc.html#rpc_bdev_pmem_delete_pool":[3,8,2,37]
 };

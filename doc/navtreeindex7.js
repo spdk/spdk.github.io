@@ -1,5 +1,14 @@
 var NAVTREEINDEX7 =
 {
+"nvme__ocssd_8h.html#ac1b56c33cf573acccda1d68cbb5dcbbb":[13,0,38,1],
+"nvme__ocssd_8h.html#ae26d22cefdddebb298f5b78324617904":[13,0,38,4],
+"nvme__ocssd__spec_8h.html":[13,0,39],
+"nvme__ocssd__spec_8h.html#a191404a5f78f1cadcadb5443e874f84f":[13,0,39,6],
+"nvme__ocssd__spec_8h.html#a42b34558cb1809ea9157f873441c919d":[13,0,39,7],
+"nvme__ocssd__spec_8h.html#a42b34558cb1809ea9157f873441c919da17822237ff045bebf515bedfad16dd8c":[13,0,39,7,0],
+"nvme__ocssd__spec_8h.html#a4b36d556463b5fe4bb924a3da299fca0":[13,0,39,15],
+"nvme__ocssd__spec_8h.html#a584df915ebdcf6a753a2370d5cbd784f":[13,0,39,13],
+"nvme__ocssd__spec_8h.html#a6e889e465d0062a5325c457c07d39adb":[13,0,39,16],
 "nvme__ocssd__spec_8h.html#a795ecd2378b97c445193b2cdc1be99bb":[13,0,39,12],
 "nvme__ocssd__spec_8h.html#a7d96f9d96a27db374c495e271f84d765":[13,0,39,5],
 "nvme__ocssd__spec_8h.html#a95b16b2164a4f7812a2d3b8dd461cfa5":[13,0,39,8],
@@ -240,14 +249,5 @@ var NAVTREEINDEX7 =
 "nvme__spec_8h.html#a87a370c671a1dcad0106afc888af8d04ae6f0b9779ac53824d2a1089641d415a3":[13,0,40,111,0],
 "nvme__spec_8h.html#a8852d0082322ce91f8e6b01b887fc2e9":[13,0,40,218],
 "nvme__spec_8h.html#a8858611e6d9abf1df675afb6610a0f98":[13,0,40,233],
-"nvme__spec_8h.html#a888c2303da97ca32db3a2539d5cfdf1f":[13,0,40,174],
-"nvme__spec_8h.html#a8a39b70da00db2155c29253b686186ca":[13,0,40,225],
-"nvme__spec_8h.html#a8dc5b9c51b1feaee9bddb3f6e0797656":[13,0,40,235],
-"nvme__spec_8h.html#a927b883cde43d8000b7a32c1b4d6ed53":[13,0,40,95],
-"nvme__spec_8h.html#a93024f56dab3e1ca2695c54211527df5":[13,0,40,190],
-"nvme__spec_8h.html#a9342d3625b8d7bc0f94a90d8ef9bb47e":[13,0,40,203],
-"nvme__spec_8h.html#a95b3685443c2716ee0d125c30182aeac":[13,0,40,141],
-"nvme__spec_8h.html#a95b3685443c2716ee0d125c30182aeaca5f91fa00ef9d01dcb7421e34ed5faa83":[13,0,40,141,2],
-"nvme__spec_8h.html#a95b3685443c2716ee0d125c30182aeaca926f36bd99128cb9e77894cd9efc47bf":[13,0,40,141,0],
-"nvme__spec_8h.html#a95b3685443c2716ee0d125c30182aeaca9de76196431cd0117b6585b84aef6e44":[13,0,40,141,1]
+"nvme__spec_8h.html#a888c2303da97ca32db3a2539d5cfdf1f":[13,0,40,174]
 };

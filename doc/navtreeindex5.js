@@ -1,5 +1,14 @@
 var NAVTREEINDEX5 =
 {
+"jsonrpc.html#rpc_bdev_pmem_get_pool_info":[3,8,2,36],
+"jsonrpc.html#rpc_bdev_raid_create":[3,8,6,14],
+"jsonrpc.html#rpc_bdev_raid_delete":[3,8,6,15],
+"jsonrpc.html#rpc_bdev_raid_get_bdevs":[3,8,6,13],
+"jsonrpc.html#rpc_bdev_rbd_create":[3,8,2,23],
+"jsonrpc.html#rpc_bdev_rbd_delete":[3,8,2,24],
+"jsonrpc.html#rpc_bdev_rbd_resize":[3,8,2,25],
+"jsonrpc.html#rpc_bdev_set_options":[3,8,2,0],
+"jsonrpc.html#rpc_bdev_set_qos_limit":[3,8,2,5],
 "jsonrpc.html#rpc_bdev_virtio_attach_controller":[3,8,2,42],
 "jsonrpc.html#rpc_bdev_virtio_detach_controller":[3,8,2,44],
 "jsonrpc.html#rpc_bdev_virtio_scsi_get_devices":[3,8,2,43],
@@ -240,14 +249,5 @@ var NAVTREEINDEX5 =
 "notify.html#rpc_calls":[4,7,4],
 "nvme-cli.html":[8,1],
 "nvme.html":[7,0],
-"nvme.html#nvme_cuse":[7,0,8],
-"nvme.html#nvme_design":[7,0,4],
-"nvme.html#nvme_examples":[7,0,2],
-"nvme.html#nvme_fabrics_host":[7,0,5],
-"nvme.html#nvme_fabrics_trid":[7,0,5,0],
-"nvme.html#nvme_fioplugin":[7,0,2,1],
-"nvme.html#nvme_fuses":[7,0,4,0,0],
-"nvme.html#nvme_helloworld":[7,0,2,0],
-"nvme.html#nvme_hotplug":[7,0,7],
-"nvme.html#nvme_interface":[7,0,3]
+"nvme.html#nvme_cuse":[7,0,8]
 };
