@@ -181,6 +181,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a5da102ae08cc5bd5fbf89b01d8ef1807"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ioat_8h.html#a5da102ae08cc5bd5fbf89b01d8ef1807">spdk_ioat_detach</a> (struct spdk_ioat_chan *ioat)</td></tr>
 <tr class="memdesc:a5da102ae08cc5bd5fbf89b01d8ef1807"><td class="mdescLeft">&#160;</td><td class="mdescRight">Detach specified device returned by <a class="el" href="ioat_8h.html#a784c1a69962e0964cf6988badd945b6f" title="Enumerate the I/OAT devices attached to the system and attach the userspace I/OAT driver to them if d...">spdk_ioat_probe()</a> from the I/OAT driver.  <a href="#a5da102ae08cc5bd5fbf89b01d8ef1807">More...</a><br /></td></tr>
 <tr class="separator:a5da102ae08cc5bd5fbf89b01d8ef1807"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0dec8c7cb29c0199ea318cfe6a5a0fbc"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ioat_8h.html#a0dec8c7cb29c0199ea318cfe6a5a0fbc">spdk_ioat_get_max_descriptors</a> (struct spdk_ioat_chan *chan)</td></tr>
+<tr class="memdesc:a0dec8c7cb29c0199ea318cfe6a5a0fbc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the maximum number of descriptors supported by the library.  <a href="#a0dec8c7cb29c0199ea318cfe6a5a0fbc">More...</a><br /></td></tr>
+<tr class="separator:a0dec8c7cb29c0199ea318cfe6a5a0fbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a294362e2a3c1520666a190a9fd183e45"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ioat_8h.html#a294362e2a3c1520666a190a9fd183e45">spdk_ioat_build_copy</a> (struct spdk_ioat_chan *chan, void *cb_arg, <a class="el" href="ioat_8h.html#a143b0bad5a250a1a6d27b087be67627b">spdk_ioat_req_cb</a> cb_fn, void *dst, const void *src, uint64_t nbytes)</td></tr>
 <tr class="memdesc:a294362e2a3c1520666a190a9fd183e45"><td class="mdescLeft">&#160;</td><td class="mdescRight">Build a DMA engine memory copy request.  <a href="#a294362e2a3c1520666a190a9fd183e45">More...</a><br /></td></tr>
 <tr class="separator:a294362e2a3c1520666a190a9fd183e45"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -511,6 +514,33 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>a combination of flags from <a class="el" href="ioat_8h.html#a9e773693f3aadb3dc526810a2e387402" title="DMA engine capability flags.">spdk_ioat_dma_capability_flags()</a>. </dd></dl>
+
+</div>
+</div>
+<a id="a0dec8c7cb29c0199ea318cfe6a5a0fbc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0dec8c7cb29c0199ea318cfe6a5a0fbc">&#9670;&nbsp;</a></span>spdk_ioat_get_max_descriptors()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t spdk_ioat_get_max_descriptors </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_ioat_chan *&#160;</td>
+          <td class="paramname"><em>chan</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the maximum number of descriptors supported by the library. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">chan</td><td>I/OAT channel</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>maximum number of descriptors. </dd></dl>
 
 </div>
 </div>

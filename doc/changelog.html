@@ -147,11 +147,22 @@ $(document).ready(function(){initNavTree('changelog.html','');});
 <div class="contents">
 <div class="textblock"><h1><a class="anchor" id="changelog-v20-07"></a>
 v20.07: (Upcoming Release)</h1>
+<h2>accel_fw</h2>
+<p>The accel_fw was updated to support compare, dualcast, crc32c.</p>
+<p>The accel_fw introduced batching support for all commands in all plug-ins. See docs for detailed information.</p>
+<h2>idxd</h2>
+<p>The idxd library and plug-in module for the accel_fw were updated to support all accel_fw commands as well as batching. Batching is supported both through the library and the plug-in module.</p>
+<h2>ioat</h2>
+<p>A new API <code>spdk_ioat_get_max_descriptors</code> was added.</p>
 <h2>nvmf</h2>
 <p>The NVMe-oF target no longer supports connecting scheduling configuration and instead always uses what was previously called "transport" scheduling.</p>
 <p><code>spdk_nvmf_tgt_accept</code> no longer takes a function pointer as an argument. New connections are automatically assigned to poll groups by the underlying transport. Further, <code><a class="el" href="structspdk__nvmf__transport__ops.html">spdk_nvmf_transport_ops</a></code> has changed such that the accept function pointer no longer takes a function pointer as an argument. Instead, transports should call <code>spdk_nvmf_tgt_new_qpair</code> whenever they previously would have called that callback.</p>
+<p>The NVMe-oF target now supports aborting any submitted NVM or Admin command. Previously, the NVMe-oF target could abort only Asynchronous Event Request commands.</p>
 <h2>nvme</h2>
 <p>Add <code>opts_size</code> in <code><a class="el" href="structspdk__nvme__ctrlr__opts.html" title="NVMe controller initialization options.">spdk_nvme_ctrlr_opts</a></code> structure in order to solve the compatiblity issue for different ABI version.</p>
+<p>A new API <code>spdk_nvme_ctrlr_cmd_abort_ext</code> has been added to abort previously submitted commands whose callback argument match.</p>
+<h2>bdev</h2>
+<p>A new API <code>spdk_bdev_abort</code> has been added to submit abort requests to abort all I/Os whose callback context match to the bdev on the given channel.</p>
 <h2>RPC</h2>
 <p>Command line parameters <code>-r</code> and <code>--rpc-socket</code> will longer accept TCP ports. RPC server must now be started on a Unix domain socket. Exposing RPC on the network, as well as providing proper authentication (if needed) is now a responsibility of the user.</p>
 <h2>build</h2>
@@ -176,6 +187,8 @@ v20.07: (Upcoming Release)</h1>
 <p>Added <code>spdk_sock_impl_get_opts</code> and <code>spdk_sock_impl_set_opts</code> functions to set/get socket layer configuration options. Options can be set independently for each implementation.</p>
 <p>Added <code>recv_buf_size</code> and 'send_buf_size' socket layer options. They are used only in posix implementation.</p>
 <p>Added <code>uring</code> based socket implementation, the code is located in module/sock/uring. This feature is only available in Linux which requires kernel version is greater than 5.4.3. Currently, our CI pool added the uring based socket tests for iSCSI target and also the tests for SPDK NVMe-oF tcp transport.</p>
+<p>Added <code>enable_recv_pipe</code> socket layer option to allow disabling of double buffering on receive. New option is used only in posix implementation.</p>
+<p>Added <code>enable_zerocopy_send</code> socket layer option to allow disabling of zero copy flow on send. New option is used only in posix implementation.</p>
 <h2>vhost</h2>
 <p>The function <code>spdk_vhost_blk_get_dev</code> has been removed.</p>
 <h1><a class="anchor" id="changelog-v20-04"></a>

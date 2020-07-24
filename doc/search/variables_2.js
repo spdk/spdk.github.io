@@ -21,6 +21,7 @@ var searchData=
   ['chunk',['chunk',['../structspdk__ocssd__chunk__notification__entry.html#a99356830ad1d8aae77c4bf5726af51ec',1,'spdk_ocssd_chunk_notification_entry']]],
   ['chunk_5fsize',['chunk_size',['../structspdk__reduce__vol__params.html#ab0345c39a844c449cbdb78550939f0fb',1,'spdk_reduce_vol_params']]],
   ['claim_5fmodule',['claim_module',['../structspdk__bdev_1_1____bdev__internal__fields.html#a218d92ccd2079d21b672edfb0168cfe1',1,'spdk_bdev::__bdev_internal_fields']]],
+  ['class_5fid',['class_id',['../structspdk__pci__id.html#ae1c6aff160ab9ee99e18e84c1f321680',1,'spdk_pci_id']]],
   ['clba',['clba',['../structspdk__ocssd__geometry__data.html#a277515978925f74508441bce44027a4c',1,'spdk_ocssd_geometry_data']]],
   ['clear_5fmethod',['clear_method',['../structspdk__bs__opts.html#a51903fecf7741006c5d14a6dc0cc9c67',1,'spdk_bs_opts']]],
   ['closed',['closed',['../structspdk__ocssd__chunk__information__entry.html#a1fc2a46fc77b068996c02c36e1b740a3',1,'spdk_ocssd_chunk_information_entry']]],

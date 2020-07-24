@@ -1,5 +1,14 @@
 var NAVTREEINDEX2 =
 {
+"containers.html#containers_toc":[6,1,0],
+"containers.html#kata_containers_with_spdk_vhost":[6,1,1],
+"containers.html#spdk_in_docker":[6,1,2],
+"cpuset_8h.html":[13,0,13],
+"cpuset_8h.html#a1be5b681ccac1865c26965adca7767a7":[13,0,13,8],
+"cpuset_8h.html#a2e99e47041ef7d8bd8dedfa00a8f9e6c":[13,0,13,9],
+"cpuset_8h.html#a4733870b58db6231bc873e48fbf0db57":[13,0,13,15],
+"cpuset_8h.html#a6b074a91a1c38c1f0dbd271cf622669c":[13,0,13,12],
+"cpuset_8h.html#a6d0a7edc8e1d37e998c73840ad9ee03f":[13,0,13,10],
 "cpuset_8h.html#a6fd6dc0a95e6d00a50b34678b7792bab":[13,0,13,5],
 "cpuset_8h.html#a732f84c568f135a7ff5346994fe9032d":[13,0,13,1],
 "cpuset_8h.html#a7fc0bc4b98070f9868b4286a0e8d8a2f":[13,0,13,14],
@@ -240,14 +249,5 @@ var NAVTREEINDEX2 =
 "functions_vars_d.html":[12,2,2,3],
 "functions_vars_e.html":[12,2,2,4],
 "functions_vars_f.html":[12,2,2,5],
-"functions_vars_g.html":[12,2,2,6],
-"functions_vars_h.html":[12,2,2,7],
-"functions_vars_i.html":[12,2,2,8],
-"functions_vars_k.html":[12,2,2,9],
-"functions_vars_l.html":[12,2,2,10],
-"functions_vars_m.html":[12,2,2,11],
-"functions_vars_n.html":[12,2,2,12],
-"functions_vars_o.html":[12,2,2,13],
-"functions_vars_p.html":[12,2,2,14],
-"functions_vars_q.html":[12,2,2,15]
+"functions_vars_g.html":[12,2,2,6]
 };

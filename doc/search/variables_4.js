@@ -5,6 +5,8 @@ var searchData=
   ['elpe',['elpe',['../structspdk__nvme__ctrlr__data.html#a475891f13ac9855e055a6a14c536d1e0',1,'spdk_nvme_ctrlr_data']]],
   ['en',['en',['../unionspdk__nvme__cc__register.html#adafe2d01d8a07098b6cb21fc9835dba6',1,'spdk_nvme_cc_register']]],
   ['enable',['enable',['../unionspdk__nvme__intel__feat__latency__tracking.html#a3f7d5e23bb986ab742716254101bfe30',1,'spdk_nvme_intel_feat_latency_tracking']]],
+  ['enable_5frecv_5fpipe',['enable_recv_pipe',['../structspdk__sock__impl__opts.html#a35575361b08cbdbd502ee741fadfa46b',1,'spdk_sock_impl_opts']]],
+  ['enable_5fzerocopy_5fsend',['enable_zerocopy_send',['../structspdk__sock__impl__opts.html#af38850a321bda94d83c8830537825240',1,'spdk_sock_impl_opts']]],
   ['entries',['entries',['../structspdk__trace__history.html#a09f645e9d5c19fb4e4fe71b4faaa3951',1,'spdk_trace_history']]],
   ['env_5fcontext',['env_context',['../structspdk__env__opts.html#a54e6333e5067530db7e69b95ef8808ca',1,'spdk_env_opts::env_context()'],['../structspdk__app__opts.html#a7e520897d6a9e39c3e62cc4259bd2ea3',1,'spdk_app_opts::env_context()']]],
   ['err_5foffset',['err_offset',['../structspdk__dif__error.html#a596249f0c0d8883a9228788314ab0c39',1,'spdk_dif_error']]],

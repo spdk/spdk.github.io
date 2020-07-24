@@ -28,5 +28,16 @@ var general =
       [ "4. Configure VPP", "vpp_integration.html#vpp_config", null ],
       [ "5. Building SPDK with VPP", "vpp_integration.html#vpp_built_into_spdk", null ],
       [ "6. Running SPDK with VPP", "vpp_integration.html#vpp_running_with_spdk", null ]
+    ] ],
+    [ "Acceleration Framework", "accel_fw.html", [
+      [ "Acceleration Framework Functions", "accel_fw.html#accel_functions", null ],
+      [ "Acceleration Framework Design Considerations", "accel_fw.html#accel_dc", null ],
+      [ "Acceleration Low Level Libraries", "accel_fw.html#accel_libs", null ],
+      [ "Acceleration Plug-In Modules", "accel_fw.html#accel_modules", [
+        [ "IOAT Module", "accel_fw.html#accel_ioat", null ],
+        [ "IDXD Module", "accel_fw.html#accel_idxd", null ],
+        [ "Software Module", "accel_fw.html#accel_sw", null ],
+        [ "Batching", "accel_fw.html#batching", null ]
+      ] ]
     ] ]
 ];

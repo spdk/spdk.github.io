@@ -1,5 +1,15 @@
 var NAVTREEINDEX5 =
 {
+"jsonrpc.html#rpc_bdev_opal_delete":[3,8,6,20],
+"jsonrpc.html#rpc_bdev_opal_get_info":[3,8,6,19],
+"jsonrpc.html#rpc_bdev_opal_new_user":[3,8,6,21],
+"jsonrpc.html#rpc_bdev_opal_set_lock_state":[3,8,6,22],
+"jsonrpc.html#rpc_bdev_passthru_create":[3,8,2,40],
+"jsonrpc.html#rpc_bdev_passthru_delete":[3,8,2,41],
+"jsonrpc.html#rpc_bdev_pmem_create":[3,8,2,38],
+"jsonrpc.html#rpc_bdev_pmem_create_pool":[3,8,2,35],
+"jsonrpc.html#rpc_bdev_pmem_delete":[3,8,2,39],
+"jsonrpc.html#rpc_bdev_pmem_delete_pool":[3,8,2,37],
 "jsonrpc.html#rpc_bdev_pmem_get_pool_info":[3,8,2,36],
 "jsonrpc.html#rpc_bdev_raid_create":[3,8,6,14],
 "jsonrpc.html#rpc_bdev_raid_delete":[3,8,6,15],
@@ -239,15 +249,5 @@ var NAVTREEINDEX5 =
 "net_8h.html#ac3e34350c22f49e14e598551a0a122f9":[13,0,35,7],
 "net_8h.html#ac4a70159fdffa7bd9100c92b602b2608":[13,0,35,3],
 "net_8h.html#ac7c753b6d6c747f51ca8bf26a7a7d63a":[13,0,35,8],
-"net_8h.html#af110dcf710bf13d7e302002606e842ad":[13,0,35,10],
-"net_8h.html#af43d41aa26eb866db7cdb63b69eb7bb5":[13,0,35,4],
-"notify.html":[4,7],
-"notify.html#notify_get_info":[4,7,1],
-"notify.html#notify_listen":[4,7,2],
-"notify.html#notify_register":[4,7,0],
-"notify.html#notify_send":[4,7,3],
-"notify.html#rpc_calls":[4,7,4],
-"nvme-cli.html":[8,1],
-"nvme.html":[7,0],
-"nvme.html#nvme_cuse":[7,0,8]
+"net_8h.html#af110dcf710bf13d7e302002606e842ad":[13,0,35,10]
 };

@@ -4,7 +4,6 @@ var structspdk__pci__device =
     [ "addr", "structspdk__pci__device.html#a2348ac8846646340935df9b77490c113", null ],
     [ "cfg_read", "structspdk__pci__device.html#ace5ed5bde292395cee8d0de26ce049dd", null ],
     [ "cfg_write", "structspdk__pci__device.html#a95f4ccc44463ca7099dd5b399304c1c5", null ],
-    [ "detach", "structspdk__pci__device.html#a100e06207ed1daa739b8ebe241ed7d0c", null ],
     [ "dev_handle", "structspdk__pci__device.html#af862ae8f5abaf025ca2d94210ad1a073", null ],
     [ "id", "structspdk__pci__device.html#af7d6a15271c10ae097804f1a0a8007b4", null ],
     [ "internal", "structspdk__pci__device.html#acf5bb1ac8866442bd12587452e531c6c", null ],

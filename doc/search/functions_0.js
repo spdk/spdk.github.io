@@ -394,6 +394,7 @@ var searchData=
   ['spdk_5fioat_5fdetach',['spdk_ioat_detach',['../ioat_8h.html#a5da102ae08cc5bd5fbf89b01d8ef1807',1,'ioat.h']]],
   ['spdk_5fioat_5fflush',['spdk_ioat_flush',['../ioat_8h.html#a8028fafacd41824b97ca6305413f16de',1,'ioat.h']]],
   ['spdk_5fioat_5fget_5fdma_5fcapabilities',['spdk_ioat_get_dma_capabilities',['../ioat_8h.html#a87ce4a1c8bdd3fb69079ac51e00f92e5',1,'ioat.h']]],
+  ['spdk_5fioat_5fget_5fmax_5fdescriptors',['spdk_ioat_get_max_descriptors',['../ioat_8h.html#a0dec8c7cb29c0199ea318cfe6a5a0fbc',1,'ioat.h']]],
   ['spdk_5fioat_5fprobe',['spdk_ioat_probe',['../ioat_8h.html#a784c1a69962e0964cf6988badd945b6f',1,'ioat.h']]],
   ['spdk_5fioat_5fprocess_5fevents',['spdk_ioat_process_events',['../ioat_8h.html#a90034d709755853f316cf47b541d48a9',1,'ioat.h']]],
   ['spdk_5fioat_5fsubmit_5fcopy',['spdk_ioat_submit_copy',['../ioat_8h.html#ac1de22182996edecb435f9583665008d',1,'ioat.h']]],
