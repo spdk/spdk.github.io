@@ -148,6 +148,8 @@ $(document).ready(function(){initNavTree('changelog.html','');});
 <div class="textblock"><h1><a class="anchor" id="changelog-v20-07"></a>
 v20.07: (Upcoming Release)</h1>
 <h2>accel_fw</h2>
+<p>The accel_fw was updated to no longer require the app to allocate an accel_task on its behalf. All public APIs now take a callback arg as the parameter that used to be the accel_task.</p>
+<p>The accel_fw API <code>spdk_accel_task_size</code> was removed as it is no longer required.</p>
 <p>The accel_fw was updated to support compare, dualcast, crc32c.</p>
 <p>The accel_fw introduced batching support for all commands in all plug-ins. See docs for detailed information.</p>
 <h2>idxd</h2>
@@ -174,7 +176,7 @@ v20.07: (Upcoming Release)</h1>
 <p>A new capability, compare, was added via <code>spdk_accel_submit_compare</code>.</p>
 <p>The software accel engine implemenation has added support for compare.</p>
 <h2>dpdk</h2>
-<p>Updated DPDK submodule to DPDK 19.11.2, which includes fixes for DPDK vulnerabilities: CVE-2020-10722, CVE-2020-10723, CVE-2020-10724, CVE-2020-10725, CVE-2020-10724.</p>
+<p>Updated DPDK submodule to DPDK 20.05.</p>
 <h2>idxd</h2>
 <p>IDXD engine support for CRC-32C has been added.</p>
 <h2>rdma</h2>
@@ -454,7 +456,7 @@ v20.04:</h1>
 <h2>env</h2>
 <p>The parameter <code>free_space</code> has been added to <a class="el" href="env_8h.html#a96a046de83d31127e79a7b16760b4776" title="Queue the array of objects (with length count) on the ring.">spdk_ring_enqueue()</a> to wait when the ring is almost full and resume when there is enough space available in the ring.</p>
 <p>A new API <code>spdk_mempool_lookup</code> has been added to lookup the memory pool created by the primary process.</p>
-<p>Added <a class="el" href="env_8h.html#ac98526545d85af08018dcbaebca8c49c" title="Begin iterating over enumerated PCI device by calling this function to get the first PCI device.">spdk_pci_get_first_device()</a> and <a class="el" href="env_8h.html#ad5292c669ec570b15694bfd1952f0868" title="Continue iterating over enumerated PCI devices.">spdk_pci_get_next_device()</a> to allow iterating over PCI devices detected by SPDK. Because of this, all SPDK APIs to attach/detach PCI devices are no longer thread safe. They are now meant to be called from only a single thread only, the same only that called <a class="el" href="env_8h.html#a402ca8ae67be57c2c258a7a2bf22cfec" title="Initialize the environment library.">spdk_env_init()</a>. This applies to the newly added APIs as well.</p>
+<p>Added <a class="el" href="env_8h.html#ac98526545d85af08018dcbaebca8c49c" title="Begin iterating over enumerated PCI device by calling this function to get the first PCI device.">spdk_pci_get_first_device()</a> and <a class="el" href="env_8h.html#ad5292c669ec570b15694bfd1952f0868" title="Continue iterating over enumerated PCI devices.">spdk_pci_get_next_device()</a> to allow iterating over PCI devices detected by SPDK. Because of this, all SPDK APIs to attach/detach PCI devices are no longer thread safe. They are now meant to be called from only a single thread only, the same only that called <a class="el" href="env_8h.html#a402ca8ae67be57c2c258a7a2bf22cfec" title="Initialize or reinitialize the environment library.">spdk_env_init()</a>. This applies to the newly added APIs as well.</p>
 <h2>vpp</h2>
 <p>SPDK now supports VPP version 19.04.2, up from VPP 18.01.</p>
 <p>VPP socket abstraction now uses VPP Session API, instead of VLC (VPP Communications Library). This allows for better control over sessions and queues. Please see VPP documentation for more details: <a href="https://wiki.fd.io/view/VPP/HostStack">VPP Host Stack</a></p>
@@ -521,7 +523,7 @@ v20.04:</h1>
 <p>The <code>phys_addr</code> parameter in <a class="el" href="env_8h.html#a668370523a786a75a7d08a8e8f4b28b9" title="Allocate dma/sharable memory based on a given dma_flg.">spdk_malloc()</a> and <a class="el" href="env_8h.html#a49ad245dae3554cf96d62e9b2b0b1596" title="Allocate dma/sharable memory based on a given dma_flg.">spdk_zmalloc()</a> has been deprecated. For retrieving physical addresses, <a class="el" href="env_8h.html#ac6a932523e0f4cb86d2b90dfe113b171" title="Get the physical address of a buffer.">spdk_vtophys()</a> should be used instead.</p>
 <p><a class="el" href="env_8h.html#acbf96e1e440b86ba23728e226b0745c6" title="Resize a dma/sharable memory buffer with the given new size and alignment.">spdk_realloc()</a> has been added to reallocate DMA/shared memory.</p>
 <p><a class="el" href="env_8h.html#aa81297d98a464efeea8b33cee11f35dc" title="Check if device was requested to be removed from the process.">spdk_pci_device_is_removed()</a> has been added to let the upper-layer SPDK drivers know that device has a pending external hotremove request.</p>
-<p><a class="el" href="env_8h.html#a719b5099cc3aa62190a1f44642ba6f91" title="Release any resources of the environment library that were alllocated with spdk_env_init().">spdk_env_fini()</a> and <a class="el" href="env__dpdk_8h.html#aff24042058543bcee5a8a7ba0cd6b226" title="Release any resources of the environment library that were alllocated with spdk_env_dpdk_post_init().">spdk_env_dpdk_post_fini()</a> were added to release any resources allocated by <a class="el" href="env_8h.html#a402ca8ae67be57c2c258a7a2bf22cfec" title="Initialize the environment library.">spdk_env_init()</a> or <a class="el" href="env__dpdk_8h.html#a160eba905ced9b233b67336651c954c7" title="Initialize the environment library after DPDK env is already initialized.">spdk_env_dpdk_post_init()</a> respectively. It is expected that common usage of those functions is to call them just before terminating the process.</p>
+<p><a class="el" href="env_8h.html#a719b5099cc3aa62190a1f44642ba6f91" title="Release any resources of the environment library that were allocated with spdk_env_init().">spdk_env_fini()</a> and <a class="el" href="env__dpdk_8h.html#aff24042058543bcee5a8a7ba0cd6b226" title="Release any resources of the environment library that were alllocated with spdk_env_dpdk_post_init().">spdk_env_dpdk_post_fini()</a> were added to release any resources allocated by <a class="el" href="env_8h.html#a402ca8ae67be57c2c258a7a2bf22cfec" title="Initialize or reinitialize the environment library.">spdk_env_init()</a> or <a class="el" href="env__dpdk_8h.html#a160eba905ced9b233b67336651c954c7" title="Initialize the environment library after DPDK env is already initialized.">spdk_env_dpdk_post_init()</a> respectively. It is expected that common usage of those functions is to call them just before terminating the process.</p>
 <p>Added <a class="el" href="env_8h.html#ab7e36d9cc7a1aa8ae701bec368502273" title="Reports whether the SPDK application is using the IOMMU for DMA.">spdk_iommu_is_enabled()</a> to report if SPDK application is using IOMMU for DMA.</p>
 <h2>DPDK</h2>
 <p>Dropped support for DPDK 17.07 and earlier, which SPDK won't even compile with right now.</p>
@@ -831,7 +833,7 @@ v18.01: Blobstore Thin Provisioning</h1>
 <h2>Lib</h2>
 <p>A set of changes were made in the SPDK's lib code altering, instances of calls to <code>exit()</code> and <code>abort()</code> to return a failure instead wherever reasonably possible. This has resulted in return type changes of the API for:</p>
 <ul>
-<li><a class="el" href="env_8h.html#a402ca8ae67be57c2c258a7a2bf22cfec" title="Initialize the environment library.">spdk_env_init()</a> from type <code>void</code> to <code>int</code>.</li>
+<li><a class="el" href="env_8h.html#a402ca8ae67be57c2c258a7a2bf22cfec" title="Initialize or reinitialize the environment library.">spdk_env_init()</a> from type <code>void</code> to <code>int</code>.</li>
 <li>spdk_mem_map_init() from type <code>void</code> to <code>int</code>.</li>
 </ul>
 <p>Applications making use of these APIs should be modified to check for a non-zero return value instead of relying on them to fail without return.</p>

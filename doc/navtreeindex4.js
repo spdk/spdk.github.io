@@ -1,5 +1,11 @@
 var NAVTREEINDEX4 =
 {
+"iscsi__spec_8h.html#a04b6541ec6c56cd9b1524a2bf9c1f05f":[13,0,27,27],
+"iscsi__spec_8h.html#a0fcf5898a9d4194105b5e88cb79f4d51":[13,0,27,85],
+"iscsi__spec_8h.html#a18b6fd1414e2d3ff815838256ea86618":[13,0,27,54],
+"iscsi__spec_8h.html#a1b765df5955c72f1ecb08a653d9f6454":[13,0,27,51],
+"iscsi__spec_8h.html#a1ec3457d9e23e18074a7cb0b2f24ffcc":[13,0,27,83],
+"iscsi__spec_8h.html#a1f1892161fb79f55be417dccef9603a7":[13,0,27,20],
 "iscsi__spec_8h.html#a2041b2b7853dc050cb11133dbd945d09":[13,0,27,57],
 "iscsi__spec_8h.html#a2501d0cce0c544a6e15a1e5d5ebab52b":[13,0,27,24],
 "iscsi__spec_8h.html#a331155368bbc9a89783fbaf64eba38c5":[13,0,27,46],
@@ -243,11 +249,5 @@ var NAVTREEINDEX4 =
 "jsonrpc.html#rpc_bdev_nvme_opal_init":[3,8,6,16],
 "jsonrpc.html#rpc_bdev_nvme_opal_revert":[3,8,6,17],
 "jsonrpc.html#rpc_bdev_nvme_send_cmd":[3,8,9,2],
-"jsonrpc.html#rpc_bdev_nvme_set_hotplug":[3,8,2,17],
-"jsonrpc.html#rpc_bdev_nvme_set_options":[3,8,2,16],
-"jsonrpc.html#rpc_bdev_ocf_create":[3,8,2,6],
-"jsonrpc.html#rpc_bdev_ocf_delete":[3,8,2,7],
-"jsonrpc.html#rpc_bdev_ocf_get_bdevs":[3,8,2,9],
-"jsonrpc.html#rpc_bdev_ocf_get_stats":[3,8,2,8],
-"jsonrpc.html#rpc_bdev_opal_create":[3,8,6,18]
+"jsonrpc.html#rpc_bdev_nvme_set_hotplug":[3,8,2,17]
 };

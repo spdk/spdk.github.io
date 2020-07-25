@@ -28,6 +28,8 @@ var searchData=
   ['spdk_5fnvme_5focssd_5fmax_5flbal_5fentries',['SPDK_NVME_OCSSD_MAX_LBAL_ENTRIES',['../nvme__ocssd__spec_8h.html#a7d96f9d96a27db374c495e271f84d765',1,'nvme_ocssd_spec.h']]],
   ['spdk_5fnvme_5fversion',['SPDK_NVME_VERSION',['../nvme__spec_8h.html#a9760bf73611488342b5903ba702fd7b6',1,'nvme_spec.h']]],
   ['spdk_5fpci_5fclass_5fnvme',['SPDK_PCI_CLASS_NVME',['../pci__ids_8h.html#a787047f67cc4dc5cdfb478bcd9066db2',1,'pci_ids.h']]],
+  ['spdk_5fpci_5fdriver_5fneed_5fmapping',['SPDK_PCI_DRIVER_NEED_MAPPING',['../env_8h.html#af804d200bbd6b9aa3ddf5d37f602b5e5',1,'env.h']]],
+  ['spdk_5fpci_5fdriver_5fwc_5factivate',['SPDK_PCI_DRIVER_WC_ACTIVATE',['../env_8h.html#a8a8b7b86b3bec06b90bd2f1677f97735',1,'env.h']]],
   ['spdk_5frmb',['spdk_rmb',['../barrier_8h.html#a876d9f9e955882ee02432d8796c63213',1,'barrier.h']]],
   ['spdk_5fsmp_5fmb',['spdk_smp_mb',['../barrier_8h.html#a07ef3ca027c4f24491ec4114c0e0a727',1,'barrier.h']]],
   ['spdk_5fsmp_5frmb',['spdk_smp_rmb',['../barrier_8h.html#a9b87848d3379310e4ade28a63fc038d5',1,'barrier.h']]],
