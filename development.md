@@ -12,6 +12,7 @@ title:  "SPDK Development"
 * [Gerrit Configuration](#Gerrit)
 * [Submitting a Patch](#patch)
 * [Continuous Integration](#integration)
+* [False Positives in CI](#integration_false_positive)
 * [Local Testing](#local)
 * [Code Review](#review)
 * [Review Hashtags](#hashtags)
