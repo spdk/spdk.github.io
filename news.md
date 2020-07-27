@@ -5,6 +5,11 @@ title:  "SPDK In The News"
 
 # News items
 
+## 2020 USENIX Annual Technical Conference, July 15–17, 2020
+
+### [Spool: Reliable Virtualized NVMe Storage Pool in Public Cloud Infrastructure](https://www.usenix.org/system/files/atc20-xue_0.pdf)
+> In this paper, members of AliCloud and Shanghai Jiao Tong University together propose Spool, a reliable NVMe virtualization system. Spool is proposed based on the SPDK NVMe driver but focuses on the reliability of the virtualized storage system. The bedrock of SPDK is a userspace, polled-mode, asynchronous, lockless NVMe driver. Usermode drivers help improve the stability of the host operating system because they can only access the address space of the processes running them, and a buggy implementation does not cause system-wide problems. Spool has three key advantages including diagnosability of different failure types, consistency and correctness of the data and reduced restart time.
+
 ## Radian Memory Systems® Announces Zoned Flash SSD with SPDK
 
 ### [Radian Completes Integration and Testing of Zoned Flash SSD with SPDK](https://www.prnewswire.com/news-releases/radian-completes-integration-and-testing-of-zoned-flash-ssd-with-spdk-301096896.html)

@@ -10,6 +10,9 @@ lang: cn
 ### [高性能云服务器：本地SSD](https://promotion.aliyun.com/ntms/act/ecshighperformance.html?open_id=1d8213d3-b437-4596-a88a-d27798942d3a-&open_cid=4703)
 > “本地存储设计：NVMe SSD+先进的SPDK存储技术……”
 
+### [阿里云解决大规模高性能存储可靠性问题再次被系统领域顶会认可!](https://mp.weixin.qq.com/s?__biz=MzUxNjE3MTcwMg==&mid=2247484531&idx=1&sn=a2e2403553f35bd95dede1c20008c701&chksm=f9aa36aaceddbfbc2ad61322d1429541c65433f0187cfed43da1abc5b0a74324b7f5e48b6664&mpshare=1&scene=1&srcid=0725GYCQ4umImcE9RTra9b7Q&sharer_sharetime=1595633885692&sharer_shareid=1e1dec1b9475e3734b8e5a5d756cd987&exportkey=A7u3lgJYloOKluHO9Anx%2FlU%3D&pass_ticket=79U82s1g4cln4qPznk2LWHFfonukEua2qL0xjsaXGItU%2F7R8VRtV8ob3jpgdu23g&wx_header=0#rd)
+> “阿里云操作系统团队，阿里云存储团队以及上海交通大学新兴并行计算研究中心一起合作的论文(Spool: Reliable Virtualized NVMe Storage Pool in Public Cloud Infrastructure)被系统领域著名会议USENIX ATC'20录用为长论文。Spool是我们4年前提出并在阿里云块存储持续落地的解决方案，Spool阐述了阿里云如何解决本地SSD实例存储服务的可靠性，以2.97%的性能损失，减少94%的数据丢失和90.58%的启动时间，并帮助基于SPDK的NVMe大规模稳定可靠的应用于生产，目前包括阿里云最新一代云存储ESSD也一直沿用Spool技术，这次我们的工作也又一次得到了系统顶级学术会议的认可，我们将在这篇文章中详细介绍Spool的工作细节。”
+
 
 ## 华为云
 ### [打造极致性能&领先时代的云存储](https://mp.weixin.qq.com/s?__biz=MzU2MDQyODg5OQ==&mid=2247483678&idx=1&sn=1ae7ba94c9a1eb700b281f334349bcdd&chksm=fc096312cb7eea04806cb1a79730c0b20a26be30cc598c9a48984c314e5a6ff9a2883d4548c0&mpshare=1&scene=1&srcid=1011i0o8g9PMom1NJvNc6M1F&pass_ticket=78pFPUJXIj2jXUbDK37gFxL1pHBmmS0LyvDfYau6Um90HlQij9oDVpABPtHWgusn#rd)
