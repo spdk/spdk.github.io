@@ -11,6 +11,7 @@ var accel__engine_8h =
       [ "ACCEL_CRC32C", "accel__engine_8h.html#ae410399fafe6cf6b578da1601337678ea0ab5eb4b17cf0952c07f85e8def9b864", null ],
       [ "ACCEL_DIF", "accel__engine_8h.html#ae410399fafe6cf6b578da1601337678ea95a7957e0e6a69a9971db19d59df00fa", null ]
     ] ],
+    [ "spdk_accel_batch_cancel", "accel__engine_8h.html#a0ceb1461f95fc03ed55a3029a2ec4121", null ],
     [ "spdk_accel_batch_create", "accel__engine_8h.html#aaba9b97bbc71f37e3fd1287224eb897e", null ],
     [ "spdk_accel_batch_get_max", "accel__engine_8h.html#a8277ce869732641070df3fefac5e77b7", null ],
     [ "spdk_accel_batch_prep_compare", "accel__engine_8h.html#af5363d4aaa841c2da04b7ddc3378552e", null ],

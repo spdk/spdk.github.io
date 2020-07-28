@@ -190,6 +190,9 @@ Functions</h2></td></tr>
 <tr class="memitem:aed7821b612c995cd3c97faab55379418"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="idxd_8h.html#aed7821b612c995cd3c97faab55379418">spdk_idxd_batch_submit</a> (struct spdk_idxd_io_channel *chan, struct idxd_batch *batch, <a class="el" href="idxd_8h.html#a75c066c5425700c49f077e20484b50c1">spdk_idxd_req_cb</a> cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:aed7821b612c995cd3c97faab55379418"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submit a batch sequence.  <a href="#aed7821b612c995cd3c97faab55379418">More...</a><br /></td></tr>
 <tr class="separator:aed7821b612c995cd3c97faab55379418"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a257b49d3c7123f3b6dbafe43353e3b39"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="idxd_8h.html#a257b49d3c7123f3b6dbafe43353e3b39">spdk_idxd_batch_cancel</a> (struct spdk_idxd_io_channel *chan, struct idxd_batch *batch)</td></tr>
+<tr class="memdesc:a257b49d3c7123f3b6dbafe43353e3b39"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cancel a batch sequence.  <a href="#a257b49d3c7123f3b6dbafe43353e3b39">More...</a><br /></td></tr>
+<tr class="separator:a257b49d3c7123f3b6dbafe43353e3b39"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a00a2b8ec301e7c8a89532e3198b8d6d9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="idxd_8h.html#a00a2b8ec301e7c8a89532e3198b8d6d9">spdk_idxd_batch_prep_copy</a> (struct spdk_idxd_io_channel *chan, struct idxd_batch *batch, void *dst, const void *src, uint64_t nbytes, <a class="el" href="idxd_8h.html#a75c066c5425700c49f077e20484b50c1">spdk_idxd_req_cb</a> cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:a00a2b8ec301e7c8a89532e3198b8d6d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Synchronous call to prepare a copy request into a previously initialized batch created with <a class="el" href="idxd_8h.html#af852541005333162d65230b70983b3e0" title="Create a batch sequence.">spdk_idxd_batch_create()</a>.  <a href="#a00a2b8ec301e7c8a89532e3198b8d6d9">More...</a><br /></td></tr>
 <tr class="separator:a00a2b8ec301e7c8a89532e3198b8d6d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -305,6 +308,44 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="a257b49d3c7123f3b6dbafe43353e3b39"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a257b49d3c7123f3b6dbafe43353e3b39">&#9670;&nbsp;</a></span>spdk_idxd_batch_cancel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_idxd_batch_cancel </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_idxd_io_channel *&#160;</td>
+          <td class="paramname"><em>chan</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct idxd_batch *&#160;</td>
+          <td class="paramname"><em>batch</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Cancel a batch sequence. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">chan</td><td>IDXD channel to submit request. </td></tr>
+    <tr><td class="paramname">batch</td><td>Handle provided when the batch was started with <a class="el" href="idxd_8h.html#af852541005333162d65230b70983b3e0" title="Create a batch sequence.">spdk_idxd_batch_create()</a>.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, negative errno on failure. </dd></dl>
+
+</div>
+</div>
 <a id="af852541005333162d65230b70983b3e0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af852541005333162d65230b70983b3e0">&#9670;&nbsp;</a></span>spdk_idxd_batch_create()</h2>
 

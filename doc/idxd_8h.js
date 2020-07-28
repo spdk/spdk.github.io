@@ -3,6 +3,7 @@ var idxd_8h =
     [ "spdk_idxd_attach_cb", "idxd_8h.html#a73cec9547e6aac6d71a033c27f3de188", null ],
     [ "spdk_idxd_probe_cb", "idxd_8h.html#a1b1789a24972053221a9df6a9a9029f2", null ],
     [ "spdk_idxd_req_cb", "idxd_8h.html#a75c066c5425700c49f077e20484b50c1", null ],
+    [ "spdk_idxd_batch_cancel", "idxd_8h.html#a257b49d3c7123f3b6dbafe43353e3b39", null ],
     [ "spdk_idxd_batch_create", "idxd_8h.html#af852541005333162d65230b70983b3e0", null ],
     [ "spdk_idxd_batch_get_max", "idxd_8h.html#ab78b75ce7715fb720c0883f0851d9aae", null ],
     [ "spdk_idxd_batch_prep_compare", "idxd_8h.html#a29321770dd18270ac63feaf7ed1624ae", null ],

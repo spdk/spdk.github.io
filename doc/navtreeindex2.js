@@ -1,5 +1,6 @@
 var NAVTREEINDEX2 =
 {
+"containers.html#containers_toc":[6,1,0],
 "containers.html#kata_containers_with_spdk_vhost":[6,1,1],
 "containers.html#spdk_in_docker":[6,1,2],
 "cpuset_8h.html":[13,0,13],
@@ -248,6 +249,5 @@ var NAVTREEINDEX2 =
 "functions_t.html":[12,2,0,18],
 "functions_u.html":[12,2,0,19],
 "functions_v.html":[12,2,0,20],
-"functions_vars.html":[12,2,2],
-"functions_vars.html":[12,2,2,0]
+"functions_vars.html":[12,2,2]
 };
