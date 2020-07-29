@@ -153,6 +153,8 @@ v20.07: (Upcoming Release)</h1>
 <p>The software accel engine implemenation has added support for CRC-32C.</p>
 <p>A new capability, compare, was added via <code>spdk_accel_submit_compare</code>.</p>
 <p>The software accel engine implemenation has added support for compare.</p>
+<p>Several APIs were added to <code><a class="el" href="accel__engine_8h.html" title="Acceleration engine abstraction layer.">accel_engine.h</a></code> to support batched submission of operations.</p>
+<p>Several APIs were added to <code><a class="el" href="accel__engine_8h.html" title="Acceleration engine abstraction layer.">accel_engine.h</a></code> to support dualcast operations.</p>
 <h2>accel_fw</h2>
 <p>The accel_fw was updated to no longer require the app to allocate an accel_task on its behalf. All public APIs now take a callback arg as the parameter that used to be the accel_task.</p>
 <p>The accel_fw API <code>spdk_accel_task_size</code> was removed as it is no longer required.</p>
@@ -164,14 +166,20 @@ v20.07: (Upcoming Release)</h1>
 <p>The fio plugins now compile to <code>build/fio</code> and are named <code><a class="el" href="structspdk__bdev.html">spdk_bdev</a></code> and <code>spdk_nvme</code>. Existing fio configuration files will need to be updated.</p>
 <h2>dpdk</h2>
 <p>Updated DPDK submodule to DPDK 20.05.</p>
+<h2>env</h2>
+<p>A new public API <code>spdk_env_get_primary_core</code> returns the index of the primary core of the SPDK process.</p>
+<p>Several new APIs have been added to provide greater flexibility in registering and accessing polled mode PCI drivers. See <code><a class="el" href="env_8h.html" title="Encapsulated third-party dependencies.">env.h</a></code> for more details.</p>
 <h2>idxd</h2>
 <p>The idxd library and plug-in module for the accel_fw were updated to support all accel_fw commands as well as batching. Batching is supported both through the library and the plug-in module.</p>
 <p>IDXD engine support for CRC-32C has been added.</p>
 <h2>ioat</h2>
 <p>A new API <code>spdk_ioat_get_max_descriptors</code> was added.</p>
 <h2>nvme</h2>
-<p>Add <code>opts_size</code> in <code><a class="el" href="structspdk__nvme__ctrlr__opts.html" title="NVMe controller initialization options.">spdk_nvme_ctrlr_opts</a></code> structure in order to solve the compatiblity issue for different ABI version.</p>
+<p>An <code>opts_size</code>element was added in the <code><a class="el" href="structspdk__nvme__ctrlr__opts.html" title="NVMe controller initialization options.">spdk_nvme_ctrlr_opts</a></code> structure to solve the ABI compatiblity issue between different SPDK version.</p>
 <p>A new API <code>spdk_nvme_ctrlr_cmd_abort_ext</code> has been added to abort previously submitted commands whose callback argument match.</p>
+<p>Convenience functions, <code>spdk_nvme_print_command</code> and <code>spdk_nvme-print_completion</code> were added to the public API.</p>
+<p>A new function, <code>spdk_nvmf_cuse_update_namespaces</code>, updates the cuse representation of an NVMe controller.</p>
+<p>A new function <code>qpair_iterate_requests</code> has been added to the nvme transport interface. ALl implementations of the transport interface will have to implement that function.</p>
 <h2>nvmf</h2>
 <p>The NVMe-oF target no longer supports connecting scheduling configuration and instead always uses what was previously called "transport" scheduling.</p>
 <p><code>spdk_nvmf_tgt_accept</code> no longer takes a function pointer as an argument. New connections are automatically assigned to poll groups by the underlying transport. Further, <code><a class="el" href="structspdk__nvmf__transport__ops.html">spdk_nvmf_transport_ops</a></code> has changed such that the accept function pointer no longer takes a function pointer as an argument. Instead, transports should call <code>spdk_nvmf_tgt_new_qpair</code> whenever they previously would have called that callback.</p>
@@ -179,16 +187,19 @@ v20.07: (Upcoming Release)</h1>
 <h2>rdma</h2>
 <p>A new <code>rdma</code> library has been added. It is an abstraction layer over different RDMA providers. Two providers are available - verbs (used by default when RDMA is enabled or enabled explicitly using &ndash;with-rdma=verbs) and mlx5 Direct Verbs aka DV (enabled by &ndash;with-rdma=mlx5_dv). Using mlx5_dv requires libmlx5 installed on the system.</p>
 <h2>rpc</h2>
-<p>Parameter <code>-p</code> or <code>--max-qpairs-per-ctrlr</code> of <code>nvmf_create_transport</code> RPC command accepted by the rpc.py script is deprecated, new parameter <code>-m</code> or <code>--max-io-qpairs-per-ctrlr</code> is added.</p>
-<p>Parameter <code>max_qpairs_per_ctrlr</code> of <code>nvmf_create_transport</code> RPC command accepted by the NVMF target is deprecated, new parameter <code>max_io_qpairs_per_ctrlr</code> is added.</p>
+<p>Parameter <code>-p</code> or <code>--max-qpairs-per-ctrlr</code> of <code>nvmf_create_transport</code> RPC command accepted by the rpc.py script is deprecated, new parameter <code>-m</code> or <code>--max-io-qpairs-per-ctrlr</code> was added.</p>
 <p>Added <code>sock_impl_get_options</code> and <code>sock_impl_set_options</code> RPC methods.</p>
 <p>Command line parameters <code>-r</code> and <code>--rpc-socket</code> will longer accept TCP ports. RPC server must now be started on a Unix domain socket. Exposing RPC on the network, as well as providing proper authentication (if needed) is now a responsibility of the user.</p>
+<p>The <code>bdev_set_options</code> RPC has a new option, <code>bdev_auto_examine</code> to control the auto examine function of bdev modules.</p>
+<p>New RPCs <code>sock_impl_get_options</code> and <code>sock_impl_set_options</code> been added to expose new socket features. See <code>sock</code> section for more details.</p>
 <h2>sock</h2>
 <p>Added <code>spdk_sock_impl_get_opts</code> and <code>spdk_sock_impl_set_opts</code> functions to set/get socket layer configuration options. Options can be set independently for each implementation.</p>
 <p>Added <code>recv_buf_size</code> and 'send_buf_size' socket layer options. They are used only in posix implementation.</p>
 <p>Added <code>uring</code> based socket implementation, the code is located in module/sock/uring. This feature is only available in Linux which requires kernel version is greater than 5.4.3. Currently, our CI pool added the uring based socket tests for iSCSI target and also the tests for SPDK NVMe-oF tcp transport.</p>
 <p>Added <code>enable_recv_pipe</code> socket layer option to allow disabling of double buffering on receive. New option is used only in posix implementation.</p>
 <p>Added <code>enable_zerocopy_send</code> socket layer option to allow disabling of zero copy flow on send. New option is used only in posix implementation.</p>
+<h2>util</h2>
+<p>Some previously exposed CRC32 functions have been removed from the public API - <code>spdk_crc32_update</code>, <code>spdk_crc32_table_init</code>, and the <code>spdk_crc32_table</code> struct.</p>
 <h2>vhost</h2>
 <p>The function <code>spdk_vhost_blk_get_dev</code> has been removed.</p>
 <h1><a class="anchor" id="changelog-v20-04"></a>
