@@ -387,7 +387,6 @@ var searchData=
   ['spdk_5fenv_5fget_5ffirst_5fcore',['spdk_env_get_first_core',['../env_8h.html#a2127ecc88ceb8e4b1242c316634de50e',1,'env.h']]],
   ['spdk_5fenv_5fget_5flast_5fcore',['spdk_env_get_last_core',['../env_8h.html#ad66fc19d0c23cb21ff456581f0385a2b',1,'env.h']]],
   ['spdk_5fenv_5fget_5fnext_5fcore',['spdk_env_get_next_core',['../env_8h.html#ab480f817ecdd801a0e53a4d8494ffc67',1,'env.h']]],
-  ['spdk_5fenv_5fget_5fprimary_5fcore',['spdk_env_get_primary_core',['../env_8h.html#a83fdcf24efd5f05521f65a6fa8937601',1,'env.h']]],
   ['spdk_5fenv_5fget_5fsocket_5fid',['spdk_env_get_socket_id',['../env_8h.html#ab18052aa1bc0ff634ffc0ce11c577d65',1,'env.h']]],
   ['spdk_5fenv_5finit',['spdk_env_init',['../env_8h.html#a402ca8ae67be57c2c258a7a2bf22cfec',1,'env.h']]],
   ['spdk_5fenv_5fopts',['spdk_env_opts',['../structspdk__env__opts.html',1,'']]],
