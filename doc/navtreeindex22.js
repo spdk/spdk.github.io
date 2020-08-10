@@ -1,5 +1,7 @@
 var NAVTREEINDEX22 =
 {
+"structspdk__scsi__port__desc.html#a3af2d30cad186c3639f38cd352cfe8e9":[12,0,263,7],
+"structspdk__scsi__port__desc.html#a3d858684ae76bd76a5cdddd7ef34c9a0":[12,0,263,2],
 "structspdk__scsi__port__desc.html#a55834f658b996093a6c0f16914056757":[12,0,263,6],
 "structspdk__scsi__port__desc.html#aa70015f373882ede492e8e71eec43e6d":[12,0,263,0],
 "structspdk__scsi__port__desc.html#ad0a6fe47eaf6aab5f91f867591b61369":[12,0,263,1],
@@ -132,10 +134,11 @@ var NAVTREEINDEX22 =
 "structspdk__scsi__vpd__page.html#ac62f5b7a0b08a2ec4572bf002ce29399":[12,0,276,2],
 "structspdk__scsi__vpd__page.html#ae6185e80a408f83694f930378d8a5c03":[12,0,276,3],
 "structspdk__sock__impl__opts.html":[12,0,277],
-"structspdk__sock__impl__opts.html#a35575361b08cbdbd502ee741fadfa46b":[12,0,277,0],
-"structspdk__sock__impl__opts.html#ae34d38383f98affcc7c880ab16bd9b72":[12,0,277,2],
-"structspdk__sock__impl__opts.html#ae57696011bed6b45751719d836b81886":[12,0,277,3],
-"structspdk__sock__impl__opts.html#af38850a321bda94d83c8830537825240":[12,0,277,1],
+"structspdk__sock__impl__opts.html#a35575361b08cbdbd502ee741fadfa46b":[12,0,277,1],
+"structspdk__sock__impl__opts.html#ae34d38383f98affcc7c880ab16bd9b72":[12,0,277,3],
+"structspdk__sock__impl__opts.html#ae57696011bed6b45751719d836b81886":[12,0,277,4],
+"structspdk__sock__impl__opts.html#af38850a321bda94d83c8830537825240":[12,0,277,2],
+"structspdk__sock__impl__opts.html#afdb21e60863bdb7c5d7e15ed1c2e9828":[12,0,277,0],
 "structspdk__sock__opts.html":[12,0,278],
 "structspdk__sock__opts.html#a0e826e7a46eadaeb53f38c4926cd3bbf":[12,0,278,1],
 "structspdk__sock__opts.html#ac8dbf1e759082939e4fc6318122931e7":[12,0,278,0],
@@ -246,8 +249,5 @@ var NAVTREEINDEX22 =
 "thread_8h.html#aa0d064c5b2e0268ad751a682fa8ed6a6aa758368d3b8b5b8724b9baa3692aa0d7":[13,0,52,16,1],
 "thread_8h.html#aa7a2ca9bd0497544e852c65fd5263cd1":[13,0,52,18],
 "thread_8h.html#ab3de0ffe9dfc29361b092d467d37017e":[13,0,52,34],
-"thread_8h.html#ab6f07dd00b0b4140155713aca312d46b":[13,0,52,49],
-"thread_8h.html#ad9e3693e8e9e6c9063ea36414294ae91":[13,0,52,58],
-"thread_8h.html#adbf6e22252bc768003c7bbc165fc3c51":[13,0,52,24],
-"thread_8h.html#adc0da6b1b784d4f165dcd48b526d12ad":[13,0,52,8]
+"thread_8h.html#ab6f07dd00b0b4140155713aca312d46b":[13,0,52,49]
 };

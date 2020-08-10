@@ -14,7 +14,8 @@ var intro =
       [ "Running An Example", "vagrant.html#vagrant_example", null ]
     ] ],
     [ "Changelog", "changelog.html", [
-      [ "v20.07: (Upcoming Release)", "changelog.html#changelog-v20-07", null ],
+      [ "v20.10: (Upcoming Release)", "changelog.html#changelog-v20-10", null ],
+      [ "v20.07:", "changelog.html#changelog-v20-07", null ],
       [ "v20.04:", "changelog.html#changelog-v20-04", null ],
       [ "v18.04: Logical Volume Snapshot/Clone, iSCSI Initiator, Bdev QoS, VPP Userspace TCP/IP", "changelog.html#changelog-v18-04", null ],
       [ "v18.01: Blobstore Thin Provisioning", "changelog.html#changelog-v18-01", null ],

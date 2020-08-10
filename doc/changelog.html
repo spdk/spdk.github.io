@@ -145,8 +145,10 @@ $(document).ready(function(){initNavTree('changelog.html','');});
 <div class="title">Changelog </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h1><a class="anchor" id="changelog-v20-07"></a>
-v20.07: (Upcoming Release)</h1>
+<div class="textblock"><h1><a class="anchor" id="changelog-v20-10"></a>
+v20.10: (Upcoming Release)</h1>
+<h1><a class="anchor" id="changelog-v20-07"></a>
+v20.07:</h1>
 <h2>accel</h2>
 <p>A new API was added <code>spdk_accel_get_capabilities</code> that allows applications to query the capabilities of the currently enabled accel engine back-end.</p>
 <p>A new capability, CRC-32C, was added via <code>spdk_accel_submit_crc32c</code>.</p>
@@ -167,7 +169,6 @@ v20.07: (Upcoming Release)</h1>
 <h2>dpdk</h2>
 <p>Updated DPDK submodule to DPDK 20.05.</p>
 <h2>env</h2>
-<p>A new public API <code>spdk_env_get_primary_core</code> returns the index of the primary core of the SPDK process.</p>
 <p>Several new APIs have been added to provide greater flexibility in registering and accessing polled mode PCI drivers. See <code><a class="el" href="env_8h.html" title="Encapsulated third-party dependencies.">env.h</a></code> for more details.</p>
 <h2>idxd</h2>
 <p>The idxd library and plug-in module for the accel_fw were updated to support all accel_fw commands as well as batching. Batching is supported both through the library and the plug-in module.</p>

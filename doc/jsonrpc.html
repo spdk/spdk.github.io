@@ -672,7 +672,7 @@ bdev_nvme_set_hotplug</h2>
 <div class="fragment"><div class="line">request:</div><div class="line">{</div><div class="line">  &quot;params&quot;: {</div><div class="line">    &quot;enabled&quot;: true,</div><div class="line">    &quot;period_us&quot;: 2000</div><div class="line">  },</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;method&quot;: &quot;bdev_nvme_set_hotplug&quot;,</div><div class="line">  &quot;id&quot;: 1</div><div class="line">}</div></div><!-- fragment --><p>Example response:</p>
 <div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: true</div><div class="line">}</div></div><!-- fragment --><h2><a class="anchor" id="rpc_bdev_nvme_attach_controller"></a>
 bdev_nvme_attach_controller</h2>
-<p>Construct <a class="el" href="bdev.html#bdev_config_nvme">NVMe bdev</a></p>
+<p>Construct <a class="el" href="bdev.html#bdev_config_nvme">NVMe bdev</a>. This RPC can also be used to add additional paths to an existing controller to enable multipathing. This is done by specifying the <code>name</code> parameter as an existing controller. When adding an additional path, the hostnqn, hostsvcid, hostaddr, prchk_reftag, and prchk_guard_arguments must not be specified and are assumed to have the same value as the existing path.</p>
 <h3>Result</h3>
 <p>Array of names of newly created bdevs.</p>
 <h3>Parameters</h3>
@@ -2415,13 +2415,13 @@ bdev_raid_create</h2>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">strip_size_kb  </td><td class="markdownTableBodyNone">Required  </td><td class="markdownTableBodyNone">number  </td><td class="markdownTableBodyNone">Strip size in KB   </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">raid_level  </td><td class="markdownTableBodyNone">Required  </td><td class="markdownTableBodyNone">number  </td><td class="markdownTableBodyNone">RAID level   </td></tr>
+<td class="markdownTableBodyNone">raid_level  </td><td class="markdownTableBodyNone">Required  </td><td class="markdownTableBodyNone">string  </td><td class="markdownTableBodyNone">RAID level   </td></tr>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">base_bdevs  </td><td class="markdownTableBodyNone">Required  </td><td class="markdownTableBodyNone">string  </td><td class="markdownTableBodyNone">Base bdevs name, whitespace separated list in quotes   </td></tr>
 </table>
 <h3>Example</h3>
 <p>Example request:</p>
-<div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;method&quot;: &quot;bdev_raid_create&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;params&quot;: {</div><div class="line">    &quot;name&quot;: &quot;Raid0&quot;,</div><div class="line">    &quot;raid_level&quot;: 0,</div><div class="line">    &quot;base_bdevs&quot;: [</div><div class="line">      &quot;Malloc0&quot;,</div><div class="line">      &quot;Malloc1&quot;,</div><div class="line">      &quot;Malloc2&quot;,</div><div class="line">      &quot;Malloc3&quot;</div><div class="line">    ],</div><div class="line">    &quot;strip_size&quot;: 4096</div><div class="line">  }</div><div class="line">}</div></div><!-- fragment --><p>Example response:</p>
+<div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;method&quot;: &quot;bdev_raid_create&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;params&quot;: {</div><div class="line">    &quot;name&quot;: &quot;Raid0&quot;,</div><div class="line">    &quot;raid_level&quot;: &quot;0&quot;,</div><div class="line">    &quot;base_bdevs&quot;: [</div><div class="line">      &quot;Malloc0&quot;,</div><div class="line">      &quot;Malloc1&quot;,</div><div class="line">      &quot;Malloc2&quot;,</div><div class="line">      &quot;Malloc3&quot;</div><div class="line">    ],</div><div class="line">    &quot;strip_size&quot;: 4096</div><div class="line">  }</div><div class="line">}</div></div><!-- fragment --><p>Example response:</p>
 <div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: true</div><div class="line">}</div></div><!-- fragment --><h2><a class="anchor" id="rpc_bdev_raid_delete"></a>
 bdev_raid_delete</h2>
 <p>Removes RAID bdev.</p>
@@ -2747,12 +2747,14 @@ sock_impl_set_options</h2>
 <td class="markdownTableBodyNone">enable_recv_pipe  </td><td class="markdownTableBodyNone">Optional  </td><td class="markdownTableBodyNone">boolean  </td><td class="markdownTableBodyNone">Enable or disable receive pipe   </td></tr>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">enable_zerocopy_send  </td><td class="markdownTableBodyNone">Optional  </td><td class="markdownTableBodyNone">boolean  </td><td class="markdownTableBodyNone">Enable or disable zero copy on send   </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">enable_quick_ack  </td><td class="markdownTableBodyNone">Optional  </td><td class="markdownTableBodyNone">boolean  </td><td class="markdownTableBodyNone">Enable or disable quick ACK   </td></tr>
 </table>
 <h3>Response</h3>
 <p>True if socket layer options were set successfully.</p>
 <h3>Example</h3>
 <p>Example request:</p>
-<div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;method&quot;: &quot;sock_impl_set_options&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;params&quot;: {</div><div class="line">    &quot;impl_name&quot;: &quot;posix&quot;,</div><div class="line">    &quot;recv_buf_size&quot;: 2097152,</div><div class="line">    &quot;send_buf_size&quot;: 2097152,</div><div class="line">    &quot;enable_recv_pipe&quot;: false</div><div class="line">    &quot;enable_zerocopy_send&quot;: true</div><div class="line">  }</div><div class="line">}</div></div><!-- fragment --><p>Example response:</p>
+<div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;method&quot;: &quot;sock_impl_set_options&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;params&quot;: {</div><div class="line">    &quot;impl_name&quot;: &quot;posix&quot;,</div><div class="line">    &quot;recv_buf_size&quot;: 2097152,</div><div class="line">    &quot;send_buf_size&quot;: 2097152,</div><div class="line">    &quot;enable_recv_pipe&quot;: false,</div><div class="line">    &quot;enable_zerocopy_send&quot;: true,</div><div class="line">    &quot;enable_quick_ack&quot;: false</div><div class="line">  }</div><div class="line">}</div></div><!-- fragment --><p>Example response:</p>
 <div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: true</div><div class="line">}</div></div><!-- fragment --><h1>Miscellaneous RPC commands</h1>
 <h2><a class="anchor" id="rpc_bdev_nvme_send_cmd"></a>
 bdev_nvme_send_cmd</h2>
