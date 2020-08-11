@@ -1217,6 +1217,7 @@ var searchData=
   ['spdk_5fnvmf_5ftransport_5fregister',['spdk_nvmf_transport_register',['../nvmf__transport_8h.html#ab53a8667860940846986a85db26a7236',1,'nvmf_transport.h']]],
   ['spdk_5fnvmf_5ftransport_5fspecific_5faddress_5fsubtype',['spdk_nvmf_transport_specific_address_subtype',['../unionspdk__nvmf__transport__specific__address__subtype.html',1,'']]],
   ['spdk_5fnvmf_5ftransport_5fstop_5flisten',['spdk_nvmf_transport_stop_listen',['../nvmf_8h.html#ae261eff09a7b8e6d14d2710c169b17df',1,'nvmf.h']]],
+  ['spdk_5fnvmf_5ftransport_5fstop_5flisten_5fasync',['spdk_nvmf_transport_stop_listen_async',['../nvmf_8h.html#a8f456c0ef4f8b11aef74df3ea98fdf9d',1,'nvmf.h']]],
   ['spdk_5fnvmf_5ftreq_5fsecure_5fchannel',['spdk_nvmf_treq_secure_channel',['../nvmf__spec_8h.html#a0a92190b8c6824182974e20f84ee0a3c',1,'nvmf_spec.h']]],
   ['spdk_5fnvmf_5ftreq_5fsecure_5fchannel_5fnot_5frequired',['SPDK_NVMF_TREQ_SECURE_CHANNEL_NOT_REQUIRED',['../nvmf__spec_8h.html#a0a92190b8c6824182974e20f84ee0a3cac21a79c4125f0b8653d475367df146dd',1,'nvmf_spec.h']]],
   ['spdk_5fnvmf_5ftreq_5fsecure_5fchannel_5fnot_5fspecified',['SPDK_NVMF_TREQ_SECURE_CHANNEL_NOT_SPECIFIED',['../nvmf__spec_8h.html#a0a92190b8c6824182974e20f84ee0a3caf4fd6f0b6aed9a7b43c0b1ba04b8e03f',1,'nvmf_spec.h']]],

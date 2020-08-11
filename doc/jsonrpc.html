@@ -723,13 +723,24 @@ bdev_nvme_get_controllers</h2>
 <div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;method&quot;: &quot;bdev_nvme_get_controllers&quot;,</div><div class="line">  &quot;params&quot;: {</div><div class="line">    &quot;name&quot;: &quot;Nvme0&quot;</div><div class="line">  }</div><div class="line">}</div></div><!-- fragment --><p>Example response:</p>
 <div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: [</div><div class="line">    {</div><div class="line">      &quot;name&quot;: &quot;Nvme0&quot;,</div><div class="line">      &quot;trid&quot;: {</div><div class="line">        &quot;trtype&quot;: &quot;PCIe&quot;,</div><div class="line">        &quot;traddr&quot;: &quot;0000:05:00.0&quot;</div><div class="line">      }</div><div class="line">    }</div><div class="line">  ]</div><div class="line">}</div></div><!-- fragment --><h2><a class="anchor" id="rpc_bdev_nvme_detach_controller"></a>
 bdev_nvme_detach_controller</h2>
-<p>Detach NVMe controller and delete any associated bdevs.</p>
+<p>Detach NVMe controller and delete any associated bdevs. Optionally, If all of the transport ID options are specified, only remove that transport path from the specified controller. If that is the only available path for the controller, this will also result in the controller being detached and the associated bdevs being deleted.</p>
+<p>returns true if the controller and bdevs were successfully destroyed or the address was properly removed, false otherwise.</p>
 <h3>Parameters</h3>
 <table class="markdownTable">
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name  </th><th class="markdownTableHeadNone">Optional  </th><th class="markdownTableHeadNone">Type  </th><th class="markdownTableHeadNone">Description   </th></tr>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">name  </td><td class="markdownTableBodyNone">Required  </td><td class="markdownTableBodyNone">string  </td><td class="markdownTableBodyNone">Controller name   </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">trtype  </td><td class="markdownTableBodyNone">Optional  </td><td class="markdownTableBodyNone">string  </td><td class="markdownTableBodyNone">NVMe-oF target trtype: rdma or tcp   </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">traddr  </td><td class="markdownTableBodyNone">Optional  </td><td class="markdownTableBodyNone">string  </td><td class="markdownTableBodyNone">NVMe-oF target address: ip or BDF   </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">adrfam  </td><td class="markdownTableBodyNone">Optional  </td><td class="markdownTableBodyNone">string  </td><td class="markdownTableBodyNone">NVMe-oF target adrfam: ipv4, ipv6, ib, fc, intra_host   </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">trsvcid  </td><td class="markdownTableBodyNone">Optional  </td><td class="markdownTableBodyNone">string  </td><td class="markdownTableBodyNone">NVMe-oF target trsvcid: port number   </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">subnqn  </td><td class="markdownTableBodyNone">Optional  </td><td class="markdownTableBodyNone">string  </td><td class="markdownTableBodyNone">NVMe-oF target subnqn   </td></tr>
 </table>
 <h3>Example</h3>
 <p>Example requests:</p>
@@ -1555,7 +1566,7 @@ iscsi_get_portal_groups method</h2>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">request:</div><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;method&quot;: &quot;iscsi_get_portal_groups&quot;,</div><div class="line">  &quot;id&quot;: 1</div><div class="line">}</div></div><!-- fragment --><p>Example response:</p>
-<div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: [</div><div class="line">    {</div><div class="line">      &quot;portals&quot;: [</div><div class="line">        {</div><div class="line">          &quot;host&quot;: &quot;127.0.0.1&quot;,</div><div class="line">          &quot;port&quot;: &quot;3260&quot;</div><div class="line">        }</div><div class="line">      ],</div><div class="line">      &quot;tag&quot;: 1</div><div class="line">    }</div><div class="line">  ]</div><div class="line">}</div></div><!-- fragment --><h2><a class="anchor" id="rpc_iscsi_create_portal_group"></a>
+<div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: [</div><div class="line">    {</div><div class="line">      &quot;portals&quot;: [</div><div class="line">        {</div><div class="line">          &quot;host&quot;: &quot;127.0.0.1&quot;,</div><div class="line">          &quot;port&quot;: &quot;3260&quot;</div><div class="line">        }</div><div class="line">      ],</div><div class="line">      &quot;tag&quot;: 1,</div><div class="line">      &quot;private&quot;: false</div><div class="line">    }</div><div class="line">  ]</div><div class="line">}</div></div><!-- fragment --><h2><a class="anchor" id="rpc_iscsi_create_portal_group"></a>
 iscsi_create_portal_group method</h2>
 <p>Add a portal group.</p>
 <h3>Parameters</h3>
@@ -1566,6 +1577,8 @@ iscsi_create_portal_group method</h2>
 <td class="markdownTableBodyNone">tag  </td><td class="markdownTableBodyNone">Required  </td><td class="markdownTableBodyNone">number  </td><td class="markdownTableBodyNone">Portal group tag   </td></tr>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">portals  </td><td class="markdownTableBodyNone">Required  </td><td class="markdownTableBodyNone">array  </td><td class="markdownTableBodyNone">Not empty array of portals   </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">private  </td><td class="markdownTableBodyNone">Optional  </td><td class="markdownTableBodyNone">boolean  </td><td class="markdownTableBodyNone">When true, portals in this group are not returned by a discovery session. Used for login redirection. (default: <code>false</code>)   </td></tr>
 </table>
 <p>Portal object</p>
 <table class="markdownTable">
@@ -1657,6 +1670,26 @@ iscsi_target_node_add_lun method</h2>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div><div class="line">  &quot;params&quot;: {</div><div class="line">    &quot;lun_id&quot;: 2,</div><div class="line">    &quot;name&quot;: &quot;iqn.2016-06.io.spdk:target1&quot;,</div><div class="line">    &quot;bdev_name&quot;: &quot;Malloc0&quot;</div><div class="line">  },</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;method&quot;: &quot;iscsi_target_node_add_lun&quot;,</div><div class="line">  &quot;id&quot;: 1</div><div class="line">}</div></div><!-- fragment --><p>Example response:</p>
+<div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: true</div><div class="line">}</div></div><!-- fragment --><h2><a class="anchor" id="rpc_iscsi_target_node_set_redirect"></a>
+iscsi_target_node_set_redirect method</h2>
+<p>Update redirect portal of the primary portal group for the target node, and send asynchronous logout request to all corresponding initiators.</p>
+<h3>Parameters</h3>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Name  </th><th class="markdownTableHeadNone">Optional  </th><th class="markdownTableHeadNone">Type  </th><th class="markdownTableHeadNone">Description   </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">name  </td><td class="markdownTableBodyNone">Required  </td><td class="markdownTableBodyNone">string  </td><td class="markdownTableBodyNone">Target node name (ASCII)   </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">pg_tag  </td><td class="markdownTableBodyNone">Required  </td><td class="markdownTableBodyNone">number  </td><td class="markdownTableBodyNone">Existing portal group tag   </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">redirect_host  </td><td class="markdownTableBodyNone">Optional  </td><td class="markdownTableBodyNone">string  </td><td class="markdownTableBodyNone">Numeric IP address to which the target node is redirected   </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">redirect_port  </td><td class="markdownTableBodyNone">Optional  </td><td class="markdownTableBodyNone">string  </td><td class="markdownTableBodyNone">Numeric TCP port to which the target node is redirected   </td></tr>
+</table>
+<p>If both redirect_host and redirect_port are omitted, clear the redirect portal.</p>
+<h3>Example</h3>
+<p>Example request:</p>
+<div class="fragment"><div class="line">{</div><div class="line">  &quot;params&quot;: {</div><div class="line">    &quot;name&quot;: &quot;iqn.2016-06.io.spdk:target1&quot;,</div><div class="line">    &quot;pg_tag&quot;: 1,</div><div class="line">    &quot;redirect_host&quot;: &quot;10.0.0.3&quot;,</div><div class="line">    &quot;redirect_port&quot;: &quot;3260&quot;</div><div class="line">  },</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;method&quot;: &quot;iscsi_target_node_set_redirect&quot;,</div><div class="line">  &quot;id&quot;: 1</div><div class="line">}</div></div><!-- fragment --><p>Example response:</p>
 <div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: true</div><div class="line">}</div></div><!-- fragment --><h1><a class="anchor" id="jsonrpc_components_nvmf_tgt"></a>
 NVMe-oF Target</h1>
 <h2><a class="anchor" id="rpc_nvmf_create_transport"></a>

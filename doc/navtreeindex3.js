@@ -39,8 +39,8 @@ var NAVTREEINDEX3 =
 "globals_defs.html":[13,1,5],
 "globals_enum.html":[13,1,3],
 "globals_eval.html":[13,1,4],
-"globals_func.html":[13,1,1],
 "globals_func.html":[13,1,1,0],
+"globals_func.html":[13,1,1],
 "globals_i.html":[13,1,0,1],
 "globals_l.html":[13,1,0,2],
 "globals_s.html":[13,1,0,3],
@@ -247,7 +247,7 @@ var NAVTREEINDEX3 =
 "iscsi.html#iscsi_config_lcore":[3,3,0,1,0],
 "iscsi.html#iscsi_getting_started":[3,3,0],
 "iscsi.html#iscsi_hotplug":[3,3,1],
-"iscsi.html#iscsi_hotplug_bugs":[3,3,1,0],
 "iscsi.html#iscsi_initiator":[3,3,0,3],
+"iscsi.html#iscsi_login_redirection":[3,3,2],
 "iscsi.html#iscsi_lun":[3,3,0,1,1]
 };

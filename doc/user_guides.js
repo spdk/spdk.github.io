@@ -47,9 +47,8 @@ var user_guides =
         [ "Configuring iSCSI Target via RPC method", "iscsi.html#iscsi_rpc", null ],
         [ "Configuring iSCSI Initiator", "iscsi.html#iscsi_initiator", null ]
       ] ],
-      [ "iSCSI Hotplug", "iscsi.html#iscsi_hotplug", [
-        [ "Known bugs and limitations", "iscsi.html#iscsi_hotplug_bugs", null ]
-      ] ]
+      [ "iSCSI Hotplug", "iscsi.html#iscsi_hotplug", null ],
+      [ "iSCSI Login Redirection", "iscsi.html#iscsi_login_redirection", null ]
     ] ],
     [ "NVMe over Fabrics Target", "nvmf.html", [
       [ "NVMe-oF Target Getting Started Guide", "nvmf.html#nvmf_getting_started", [
@@ -221,7 +220,8 @@ var user_guides =
           [ "iscsi_portal_group_set_auth method", "jsonrpc.html#rpc_iscsi_portal_group_set_auth", null ]
         ] ],
         [ "iscsi_get_connections method", "jsonrpc.html#rpc_iscsi_get_connections", null ],
-        [ "iscsi_target_node_add_lun method", "jsonrpc.html#rpc_iscsi_target_node_add_lun", null ]
+        [ "iscsi_target_node_add_lun method", "jsonrpc.html#rpc_iscsi_target_node_add_lun", null ],
+        [ "iscsi_target_node_set_redirect method", "jsonrpc.html#rpc_iscsi_target_node_set_redirect", null ]
       ] ],
       [ "NVMe-oF Target", "jsonrpc.html#jsonrpc_components_nvmf_tgt", [
         [ "nvmf_create_transport method", "jsonrpc.html#rpc_nvmf_create_transport", null ],
