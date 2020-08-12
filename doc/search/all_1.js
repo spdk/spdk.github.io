@@ -20,6 +20,7 @@ var searchData=
   ['af',['af',['../structspdk__nvme__dsm__range.html#a1ae2cac2417c24137dcb3e160eb3836c',1,'spdk_nvme_dsm_range']]],
   ['al',['al',['../structspdk__nvme__dsm__range.html#a85b10586b5cb2d6cbe0e4e8d92f913ef',1,'spdk_nvme_dsm_range']]],
   ['ams',['ams',['../unionspdk__nvme__cap__register.html#a75640e3e0a03f22456503acbebc20f46',1,'spdk_nvme_cap_register::ams()'],['../unionspdk__nvme__cc__register.html#a777a7cb16e88d976eca2f8073fde6c4b',1,'spdk_nvme_cc_register::ams()']]],
+  ['anagrpid',['anagrpid',['../structspdk__nvme__ns__data.html#a84357d9c3c97e9eec914e8992ad914fa',1,'spdk_nvme_ns_data']]],
   ['an_20overview_20of_20spdk_20applications',['An Overview of SPDK Applications',['../app_overview.html',1,'user_guides']]],
   ['app_5ftag',['app_tag',['../structspdk__dif__ctx.html#a1a7fa6ed12d7ca935e24e20f1a4fac88',1,'spdk_dif_ctx']]],
   ['apsta',['apsta',['../structspdk__nvme__ctrlr__data.html#ae110e92a07c5e5fc1491501b5a88d383',1,'spdk_nvme_ctrlr_data']]],

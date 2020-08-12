@@ -1,5 +1,14 @@
 var NAVTREEINDEX14 =
 {
+"structspdk__bdev.html":[12,0,23],
+"structspdk__bdev.html#a0329aa7395f9784d4dc8c596efc4ac8c":[12,0,23,5],
+"structspdk__bdev.html#a054323b9bb1299a58497ca668d52b5a5":[12,0,23,25],
+"structspdk__bdev.html#a11b4b1020556bd812c39731b057559f6":[12,0,23,18],
+"structspdk__bdev.html#a149453df246d04c8640fb567c58a61f0":[12,0,23,20],
+"structspdk__bdev.html#a1872fa3d723b5bef069c0681ec3bcfd6":[12,0,23,6],
+"structspdk__bdev.html#a1a6b7f9bd595b3b800f35cc63efa3aab":[12,0,23,7],
+"structspdk__bdev.html#a1c3d6e810863f31e2301949bfd1c5d37":[12,0,23,9],
+"structspdk__bdev.html#a1d7dcd12f4c3600eac4dbb202bdb4397":[12,0,23,24],
 "structspdk__bdev.html#a4e68d5fa768ba5d3c8af32e68e1a992c":[12,0,23,12],
 "structspdk__bdev.html#a5cc1248944325a12c4cadaa3856f573a":[12,0,23,22],
 "structspdk__bdev.html#a85a794d02620e3e8730bb11791c0c592":[12,0,23,21],
@@ -240,14 +249,5 @@ var NAVTREEINDEX14 =
 "structspdk__dif__ctx.html#aafb02a3a698fd60230e4a5fc3da883f4":[12,0,45,9],
 "structspdk__dif__ctx.html#ac30213e15851be73f73780752b5c49a2":[12,0,45,1],
 "structspdk__dif__ctx.html#ac5d6870db5b4eb661b7a37f94ff81dc8":[12,0,45,8],
-"structspdk__dif__ctx.html#adac7e6a0e70395682a50e1b3d678d792":[12,0,45,13],
-"structspdk__dif__ctx.html#aef0637cad47cfd8bc20bb0f085c59479":[12,0,45,12],
-"structspdk__dif__error.html":[12,0,46],
-"structspdk__dif__error.html#a596249f0c0d8883a9228788314ab0c39":[12,0,46,1],
-"structspdk__dif__error.html#a77e96c6a1eb3364f9491ad128b05cb86":[12,0,46,2],
-"structspdk__dif__error.html#a99e10c98889d74c9dedd9a5b4c2be836":[12,0,46,0],
-"structspdk__dif__error.html#a9b85800d2326eb0506821b9efce20215":[12,0,46,3],
-"structspdk__env__opts.html":[12,0,47],
-"structspdk__env__opts.html#a04de220e31274ee239f4f2de62608263":[12,0,47,4],
-"structspdk__env__opts.html#a0d600a89bcfc18ad9af0919c9d1fe967":[12,0,47,3]
+"structspdk__dif__ctx.html#adac7e6a0e70395682a50e1b3d678d792":[12,0,45,13]
 };

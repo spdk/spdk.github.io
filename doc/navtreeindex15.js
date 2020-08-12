@@ -1,5 +1,14 @@
 var NAVTREEINDEX15 =
 {
+"structspdk__dif__ctx.html#aef0637cad47cfd8bc20bb0f085c59479":[12,0,45,12],
+"structspdk__dif__error.html":[12,0,46],
+"structspdk__dif__error.html#a596249f0c0d8883a9228788314ab0c39":[12,0,46,1],
+"structspdk__dif__error.html#a77e96c6a1eb3364f9491ad128b05cb86":[12,0,46,2],
+"structspdk__dif__error.html#a99e10c98889d74c9dedd9a5b4c2be836":[12,0,46,0],
+"structspdk__dif__error.html#a9b85800d2326eb0506821b9efce20215":[12,0,46,3],
+"structspdk__env__opts.html":[12,0,47],
+"structspdk__env__opts.html#a04de220e31274ee239f4f2de62608263":[12,0,47,4],
+"structspdk__env__opts.html#a0d600a89bcfc18ad9af0919c9d1fe967":[12,0,47,3],
 "structspdk__env__opts.html#a11ccc25f2ee295249469986682f5a9fb":[12,0,47,15],
 "structspdk__env__opts.html#a1c0f73e63994e6819201a473122f56ae":[12,0,47,6],
 "structspdk__env__opts.html#a219395a9251a17820f7ee21572021d04":[12,0,47,10],
@@ -240,14 +249,5 @@ var NAVTREEINDEX15 =
 "structspdk__ioat__registers.html#ace94a30b1031fbcd11dd574c13cda0eb":[12,0,66,14],
 "structspdk__ioat__registers.html#adb9e062e8bdc8ed0bba44ef302498454":[12,0,66,8],
 "structspdk__ioat__registers.html#adf690ee683933dda6598cfcc43ae1790":[12,0,66,18],
-"structspdk__ioat__registers.html#ae8b82a9d34cc2e05578f10085f1a3c2a":[12,0,66,2],
-"structspdk__ioat__registers.html#aeaf4219dcd1a8013bbd9488b3b973f44":[12,0,66,1],
-"structspdk__ioat__registers.html#af02720f9ab35390841b863df59dc2492":[12,0,66,4],
-"structspdk__ioat__registers.html#af144a2829bb55992379bcb938822b295":[12,0,66,17],
-"structspdk__ioat__registers.html#af27017a133da1e7f8e49ae3a417b8157":[12,0,66,10],
-"structspdk__ioat__xor__ext__hw__desc.html":[12,0,67],
-"structspdk__ioat__xor__ext__hw__desc.html#a1c07c7948cb30329055ee5e3ba052b71":[12,0,67,0],
-"structspdk__ioat__xor__ext__hw__desc.html#a82ea5cbd2daa694775d16283504fce9b":[12,0,67,1],
-"structspdk__ioat__xor__ext__hw__desc.html#a88a7000c7eaf77795394e7230982285a":[12,0,67,2],
-"structspdk__ioat__xor__ext__hw__desc.html#aa9a9295d56ccf291bb8600d54d3e2486":[12,0,67,3]
+"structspdk__ioat__registers.html#ae8b82a9d34cc2e05578f10085f1a3c2a":[12,0,66,2]
 };

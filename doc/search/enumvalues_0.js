@@ -75,6 +75,7 @@ var searchData=
   ['spdk_5fnvme_5fidentify_5fns_5fiocs',['SPDK_NVME_IDENTIFY_NS_IOCS',['../nvme__spec_8h.html#a1491a0118eccaa91ff5cb9fb5d02c2c6a1467469cbc0b200c7577613bb9fd6b46',1,'nvme_spec.h']]],
   ['spdk_5fnvme_5fidentify_5fprimary_5fctrlr_5fcap',['SPDK_NVME_IDENTIFY_PRIMARY_CTRLR_CAP',['../nvme__spec_8h.html#a1491a0118eccaa91ff5cb9fb5d02c2c6a529c0f24ec3362cef551610db7d9642a',1,'nvme_spec.h']]],
   ['spdk_5fnvme_5fidentify_5fsecondary_5fctrlr_5flist',['SPDK_NVME_IDENTIFY_SECONDARY_CTRLR_LIST',['../nvme__spec_8h.html#a1491a0118eccaa91ff5cb9fb5d02c2c6acf0506a0b05a13ae3cd613dc3caf365b',1,'nvme_spec.h']]],
+  ['spdk_5fnvme_5flog_5fasymmetric_5fnamespace_5faccess',['SPDK_NVME_LOG_ASYMMETRIC_NAMESPACE_ACCESS',['../nvme__spec_8h.html#a3d5e453e4d95b0f5b9bb4de04ace78c4a61628a94b6b41cd37e2b631ef551fc15',1,'nvme_spec.h']]],
   ['spdk_5fnvme_5flog_5fchanged_5fns_5flist',['SPDK_NVME_LOG_CHANGED_NS_LIST',['../nvme__spec_8h.html#a3d5e453e4d95b0f5b9bb4de04ace78c4aaa4a483997b6fa41a9e73755441d2186',1,'nvme_spec.h']]],
   ['spdk_5fnvme_5flog_5fcommand_5feffects_5flog',['SPDK_NVME_LOG_COMMAND_EFFECTS_LOG',['../nvme__spec_8h.html#a3d5e453e4d95b0f5b9bb4de04ace78c4aab219389150398bc1b23da1df91e634c',1,'nvme_spec.h']]],
   ['spdk_5fnvme_5flog_5fdevice_5fself_5ftest',['SPDK_NVME_LOG_DEVICE_SELF_TEST',['../nvme__spec_8h.html#a3d5e453e4d95b0f5b9bb4de04ace78c4aa41fe741a7a29377a4cfa29717aa94c0',1,'nvme_spec.h']]],
