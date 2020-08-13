@@ -88,13 +88,10 @@ var user_guides =
       [ "Known bugs and limitations", "vhost.html#vhost_bugs", null ]
     ] ],
     [ "Block Device User Guide", "bdev.html", [
+      [ "Target Audience", "bdev.html#bdev_ug_targetaudience", null ],
       [ "Introduction", "bdev.html#bdev_ug_introduction", null ],
       [ "Prerequisites", "bdev.html#bdev_ug_prerequisites", null ],
-      [ "General Purpose RPCs", "bdev.html#bdev_ug_general_rpcs", [
-        [ "bdev_get_bdevs", "bdev.html#bdev_ug_get_bdevs", null ],
-        [ "bdev_set_qos_limit", "bdev.html#bdev_set_qos_limit", null ],
-        [ "Histograms", "bdev.html#rpc_bdev_histogram", null ]
-      ] ],
+      [ "Configuring Block Device Modules", "bdev.html#bdev_ug_general_rpcs", null ],
       [ "Ceph RBD", "bdev.html#bdev_config_rbd", null ],
       [ "Compression Virtual Bdev Module", "bdev.html#bdev_config_compress", null ],
       [ "Crypto Virtual Bdev Module", "bdev.html#bdev_config_crypto", null ],
@@ -118,6 +115,7 @@ var user_guides =
       [ "RAID", "bdev.html#bdev_ug_raid", null ],
       [ "Passthru", "bdev.html#bdev_config_passthru", null ],
       [ "Pmem", "bdev.html#bdev_config_pmem", null ],
+      [ "Uring", "bdev.html#bdev_ug_uring", null ],
       [ "Virtio Block", "bdev.html#bdev_config_virtio_blk", null ],
       [ "Virtio SCSI", "bdev.html#bdev_config_virtio_scsi", null ]
     ] ],

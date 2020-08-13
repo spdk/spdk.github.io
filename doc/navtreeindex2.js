@@ -1,6 +1,5 @@
 var NAVTREEINDEX2 =
 {
-"conf_8h.html#aff953daa748287171dadcd8ecdfae6c9":[13,0,12,10],
 "containers.html":[6,1],
 "containers.html#containers_toc":[6,1,0],
 "containers.html#kata_containers_with_spdk_vhost":[6,1,1],
@@ -249,5 +248,6 @@ var NAVTREEINDEX2 =
 "functions_s.html":[12,2,0,17],
 "functions_t.html":[12,2,0,18],
 "functions_u.html":[12,2,0,19],
-"functions_v.html":[12,2,0,20]
+"functions_v.html":[12,2,0,20],
+"functions_vars.html":[12,2,2]
 };

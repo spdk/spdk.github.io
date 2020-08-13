@@ -1,6 +1,5 @@
 var NAVTREEINDEX3 =
 {
-"functions_vars.html":[12,2,2],
 "functions_vars.html":[12,2,2,0],
 "functions_vars_b.html":[12,2,2,1],
 "functions_vars_c.html":[12,2,2,2],
@@ -249,5 +248,6 @@ var NAVTREEINDEX3 =
 "iscsi.html#iscsi_hotplug":[3,3,1],
 "iscsi.html#iscsi_initiator":[3,3,0,3],
 "iscsi.html#iscsi_login_redirection":[3,3,2],
-"iscsi.html#iscsi_lun":[3,3,0,1,1]
+"iscsi.html#iscsi_lun":[3,3,0,1,1],
+"iscsi.html#iscsi_prereqs":[3,3,0,0]
 };

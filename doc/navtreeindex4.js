@@ -1,6 +1,5 @@
 var NAVTREEINDEX4 =
 {
-"iscsi.html#iscsi_prereqs":[3,3,0,0],
 "iscsi.html#iscsi_rpc":[3,3,0,2],
 "iscsi__spec_8h.html":[13,0,27],
 "iscsi__spec_8h.html#a04b6541ec6c56cd9b1524a2bf9c1f05f":[13,0,27,27],
@@ -249,5 +248,6 @@ var NAVTREEINDEX4 =
 "jsonrpc.html#rpc_bdev_nvme_cuse_unregister":[3,8,2,22],
 "jsonrpc.html#rpc_bdev_nvme_detach_controller":[3,8,2,20],
 "jsonrpc.html#rpc_bdev_nvme_get_controllers":[3,8,2,19],
-"jsonrpc.html#rpc_bdev_nvme_opal_init":[3,8,6,16]
+"jsonrpc.html#rpc_bdev_nvme_opal_init":[3,8,6,16],
+"jsonrpc.html#rpc_bdev_nvme_opal_revert":[3,8,6,17]
 };
