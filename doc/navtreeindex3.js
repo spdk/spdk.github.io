@@ -1,5 +1,12 @@
 var NAVTREEINDEX3 =
 {
+"functions_q.html":[12,2,0,15],
+"functions_r.html":[12,2,0,16],
+"functions_s.html":[12,2,0,17],
+"functions_t.html":[12,2,0,18],
+"functions_u.html":[12,2,0,19],
+"functions_v.html":[12,2,0,20],
+"functions_vars.html":[12,2,2],
 "functions_vars.html":[12,2,2,0],
 "functions_vars_b.html":[12,2,2,1],
 "functions_vars_c.html":[12,2,2,2],
@@ -242,12 +249,5 @@ var NAVTREEINDEX3 =
 "ioat__spec_8h.html#ae763c4e8f46ead2c1ab8aa85bb40716f":[13,0,26,45],
 "ioat__spec_8h.html#afc40161ff89b7599a591441bc4699e5d":[13,0,26,30],
 "iscsi.html":[3,3],
-"iscsi.html#iscsi_config":[3,3,0,1],
-"iscsi.html#iscsi_config_lcore":[3,3,0,1,0],
-"iscsi.html#iscsi_getting_started":[3,3,0],
-"iscsi.html#iscsi_hotplug":[3,3,1],
-"iscsi.html#iscsi_initiator":[3,3,0,3],
-"iscsi.html#iscsi_login_redirection":[3,3,2],
-"iscsi.html#iscsi_lun":[3,3,0,1,1],
-"iscsi.html#iscsi_prereqs":[3,3,0,0]
+"iscsi.html#iscsi_config":[3,3,0,1]
 };

@@ -112,9 +112,9 @@ var user_guides =
         [ "Logical volume store", "bdev.html#bdev_ug_lvol_store", null ],
         [ "Lvols", "bdev.html#bdev_ug_lvols", null ]
       ] ],
-      [ "RAID", "bdev.html#bdev_ug_raid", null ],
       [ "Passthru", "bdev.html#bdev_config_passthru", null ],
       [ "Pmem", "bdev.html#bdev_config_pmem", null ],
+      [ "RAID", "bdev.html#bdev_ug_raid", null ],
       [ "Uring", "bdev.html#bdev_ug_uring", null ],
       [ "Virtio Block", "bdev.html#bdev_config_virtio_blk", null ],
       [ "Virtio SCSI", "bdev.html#bdev_config_virtio_scsi", null ]
@@ -219,7 +219,8 @@ var user_guides =
         ] ],
         [ "iscsi_get_connections method", "jsonrpc.html#rpc_iscsi_get_connections", null ],
         [ "iscsi_target_node_add_lun method", "jsonrpc.html#rpc_iscsi_target_node_add_lun", null ],
-        [ "iscsi_target_node_set_redirect method", "jsonrpc.html#rpc_iscsi_target_node_set_redirect", null ]
+        [ "iscsi_target_node_set_redirect method", "jsonrpc.html#rpc_iscsi_target_node_set_redirect", null ],
+        [ "iscsi_target_node_request_logout method", "jsonrpc.html#rpc_iscsi_target_node_request_logout", null ]
       ] ],
       [ "NVMe-oF Target", "jsonrpc.html#jsonrpc_components_nvmf_tgt", [
         [ "nvmf_create_transport method", "jsonrpc.html#rpc_nvmf_create_transport", null ],

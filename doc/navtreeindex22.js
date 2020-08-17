@@ -1,5 +1,13 @@
 var NAVTREEINDEX22 =
 {
+"structspdk__scsi__cdb__inquiry.html":[12,0,260],
+"structspdk__scsi__cdb__inquiry.html#a55fada52ece3c4316b81a7435ca142fc":[12,0,260,0],
+"structspdk__scsi__cdb__inquiry.html#a75a3e5867bfe4d9fb146b805a676c022":[12,0,260,1],
+"structspdk__scsi__cdb__inquiry.html#a9d1c98f012ae7a1ad59be3eded0c2fa4":[12,0,260,2],
+"structspdk__scsi__cdb__inquiry.html#ab013216c463b8ec87928be7733e5e2e2":[12,0,260,3],
+"structspdk__scsi__cdb__inquiry.html#acfde5de35522fa912d068e06845e5338":[12,0,260,4],
+"structspdk__scsi__cdb__inquiry__data.html":[12,0,261],
+"structspdk__scsi__cdb__inquiry__data.html#a05cb723309cab0cdb7e4dae3607fd855":[12,0,261,4],
 "structspdk__scsi__cdb__inquiry__data.html#a1daab14f20a744dc3d0b6b381f260e0a":[12,0,261,1],
 "structspdk__scsi__cdb__inquiry__data.html#a235a6eb7d85750379c5f4b90ea12fbb4":[12,0,261,0],
 "structspdk__scsi__cdb__inquiry__data.html#a278734d26c79f7a226927354d7d0363a":[12,0,261,6],
@@ -241,13 +249,5 @@ var NAVTREEINDEX22 =
 "system_configuration.html":[3,0],
 "system_configuration.html#iommu_config":[3,0,0],
 "thread_8h.html":[13,0,52],
-"thread_8h.html#a07b662b152c21dad824ad2738d0733ec":[13,0,52,60],
-"thread_8h.html#a0f0c05dd1c9cb0b31eee89213b89f3c3":[13,0,52,31],
-"thread_8h.html#a10aa5a8ec5228fa87db97f7655f8c0d6":[13,0,52,39],
-"thread_8h.html#a16bb098e6398d2a63577e805f1423a3e":[13,0,52,20],
-"thread_8h.html#a17cf88195e46bb118ac03528f7f5eee0":[13,0,52,2],
-"thread_8h.html#a1d77f05c2461acb75f333e67e6aeb1ed":[13,0,52,42],
-"thread_8h.html#a1deb97a85a8240119cf46fa8a0b71388":[13,0,52,44],
-"thread_8h.html#a24c90cd523aad947dad7e651074d9f1d":[13,0,52,41],
-"thread_8h.html#a2dd91f3094f8b4cf60f460e3f88bbf0c":[13,0,52,4]
+"thread_8h.html#a07b662b152c21dad824ad2738d0733ec":[13,0,52,60]
 };

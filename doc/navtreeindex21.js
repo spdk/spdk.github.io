@@ -1,5 +1,13 @@
 var NAVTREEINDEX21 =
 {
+"structspdk__nvmf__transport__poll__group__stat.html#a1559b932a181386d54c029e0de833ff3":[12,0,233,2],
+"structspdk__nvmf__transport__poll__group__stat.html#a5dfc2d94998990b1955a11593c4950e7":[12,0,233,0],
+"structspdk__nvmf__transport__poll__group__stat.html#aa8d8af58f65384927b478f92a5f06eeb":[12,0,233,1],
+"structspdk__nvmf__transport__poll__group__stat.html#abf8aa05fb0060303f9106151c100147f":[12,0,233,3],
+"structspdk__nvmf__transport__poll__group__stat.html#ae48623b8668c953062ba5fece118e072":[12,0,233,4],
+"structspdk__ocssd__chunk__information__entry.html":[12,0,235],
+"structspdk__ocssd__chunk__information__entry.html#a0a502a1c81f58d37630d8380e6794ffe":[12,0,235,13],
+"structspdk__ocssd__chunk__information__entry.html#a1fc2a46fc77b068996c02c36e1b740a3":[12,0,235,0],
 "structspdk__ocssd__chunk__information__entry.html#a2df5f77549b5dd37fd7b2a1f65be5b45":[12,0,235,5],
 "structspdk__ocssd__chunk__information__entry.html#a423d06c2f9276a7ae37e9efe25a7d9bd":[12,0,235,8],
 "structspdk__ocssd__chunk__information__entry.html#a5073c4e77a04bc67071328df639d52f7":[12,0,235,2],
@@ -241,13 +249,5 @@ var NAVTREEINDEX21 =
 "structspdk__reduce__vol__params.html#a8702d36eea6d40a62076a434e91aa3ca":[12,0,259,0],
 "structspdk__reduce__vol__params.html#ab0345c39a844c449cbdb78550939f0fb":[12,0,259,1],
 "structspdk__reduce__vol__params.html#ae4c8834d1e1c76455842b97c4489ce47":[12,0,259,4],
-"structspdk__reduce__vol__params.html#ae7112c3b0cf5e3bc25a0178fb9846abb":[12,0,259,3],
-"structspdk__scsi__cdb__inquiry.html":[12,0,260],
-"structspdk__scsi__cdb__inquiry.html#a55fada52ece3c4316b81a7435ca142fc":[12,0,260,0],
-"structspdk__scsi__cdb__inquiry.html#a75a3e5867bfe4d9fb146b805a676c022":[12,0,260,1],
-"structspdk__scsi__cdb__inquiry.html#a9d1c98f012ae7a1ad59be3eded0c2fa4":[12,0,260,2],
-"structspdk__scsi__cdb__inquiry.html#ab013216c463b8ec87928be7733e5e2e2":[12,0,260,3],
-"structspdk__scsi__cdb__inquiry.html#acfde5de35522fa912d068e06845e5338":[12,0,260,4],
-"structspdk__scsi__cdb__inquiry__data.html":[12,0,261],
-"structspdk__scsi__cdb__inquiry__data.html#a05cb723309cab0cdb7e4dae3607fd855":[12,0,261,4]
+"structspdk__reduce__vol__params.html#ae7112c3b0cf5e3bc25a0178fb9846abb":[12,0,259,3]
 };

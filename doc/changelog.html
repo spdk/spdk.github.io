@@ -148,7 +148,7 @@ $(document).ready(function(){initNavTree('changelog.html','');});
 <div class="textblock"><h1><a class="anchor" id="changelog-v20-10"></a>
 v20.10: (Upcoming Release)</h1>
 <h1><a class="anchor" id="changelog-v20-07"></a>
-v20.07:</h1>
+v20.07: SPDK CSI driver, new accel_fw commands, I/O abort support</h1>
 <h2>accel</h2>
 <p>A new API was added <code>spdk_accel_get_capabilities</code> that allows applications to query the capabilities of the currently enabled accel engine back-end.</p>
 <p>A new capability, CRC-32C, was added via <code>spdk_accel_submit_crc32c</code>.</p>
@@ -204,7 +204,7 @@ v20.07:</h1>
 <h2>vhost</h2>
 <p>The function <code>spdk_vhost_blk_get_dev</code> has been removed.</p>
 <h1><a class="anchor" id="changelog-v20-04"></a>
-v20.04:</h1>
+v20.04: SPDK Top, IDXD, NVMe qpair groups</h1>
 <p>IDXD engine support for compare has been added.</p>
 <h2>configuration</h2>
 <p>Legacy INI style configuration for SPDK applications has been deprecated and will be removed in future release. Please switch to JSON-RPC configuration files and/or RPC driven run-time configuration.</p>
@@ -271,7 +271,8 @@ v20.04:</h1>
 <p>Poll groups per session have been replaced by SPDK threads per vhost controller.</p>
 <h2>vmd</h2>
 <p>A new function, <code>spdk_vmd_fini</code>, has been added. It releases all resources acquired by the VMD library through the <code>spdk_vmd_init</code> call.</p>
-<h1>v20.01</h1>
+<h1><a class="anchor" id="changelog-v20-01"></a>
+v20.01: Optimized thin provisioning, FTL bdev, VMD hot plug, FUSED support</h1>
 <h2>bdev</h2>
 <p>A new function, <code>spdk_bdev_set_timeout</code>, has been added to set per descriptor I/O timeouts.</p>
 <p>A new class of functions <code>spdk_bdev_compare*</code>, have been added to allow native bdev support of block comparisons and compare-and-write.</p>
@@ -339,7 +340,8 @@ v20.04:</h1>
 <h2>bdev</h2>
 <p>Added spdk_bdev_io_get_nvme_fused_status function for translating bdev_io status to NVMe status code for fused compare-and-write operation.</p>
 <p>Added spdk_bdev_get_acwu function for getting block device atomic compare and write unit size.</p>
-<h1>v19.10</h1>
+<h1><a class="anchor" id="changelog-v19-10"></a>
+v19.10: Zoned bdev API, Opal bdev, NVMe character devices</h1>
 <h2>rpc</h2>
 <p>Many of SPDK's RPCs were renamed to be more consistent and intuitive in this release. The old names will continue to function, but will display a deprecation warning.</p>
 <p>Added optional parameters '&ndash;arbitration-burst' and '&ndash;low/medium/high-priority-weight' to 'bdev_nvme_set_options' RPC method.</p>
@@ -416,7 +418,8 @@ v20.04:</h1>
 <p>Along with update, new cache mode 'write only' was added.</p>
 <p>New cache modes added to use via RPC, wi - write invalidate and wa - write around.</p>
 <p>New version of OCF provides fully asynchronous management API.</p>
-<h1>v19.07</h1>
+<h1><a class="anchor" id="changelog-v19-07"></a>
+v19.07: NVMe-oF FC Transport, VMD, NVMe-oF Persistent reservations, Bdev I/O with separate metadata</h1>
 <h2>ftl</h2>
 <p>EXPERIMENTAL: Added ability to mirror writes to persistent write buffer cache to allow for recovery from dirty shutdown event.</p>
 <p>Added handling of Asynchronous Nand Management Events (ANM).</p>
@@ -494,7 +497,8 @@ v20.04:</h1>
 <h2>thread</h2>
 <p>Exposed <a class="el" href="thread_8h.html#a60dac2a0fc19b23be6fecb1e5b6f8a7a" title="Force the current system thread to act as if executing the given SPDK thread.">spdk_set_thread()</a> in order for applications to associate with SPDK thread when necessary.</p>
 <p>Added <a class="el" href="thread_8h.html#a10aa5a8ec5228fa87db97f7655f8c0d6" title="Destroy a thread, releasing all of its resources.">spdk_thread_destroy()</a> to allow framework polling the thread to release resources associated with that thread.</p>
-<h1>v19.04</h1>
+<h1><a class="anchor" id="changelog-v19-04"></a>
+v19.04: Compression bdev, Notification library, NVMe Opal support</h1>
 <h2>nvme</h2>
 <p>Added asynchronous probe support. New APIs <a class="el" href="nvme_8h.html#a02411bf7ae4827a350711e688316997e" title="Probe and add controllers to the probe context list.">spdk_nvme_probe_async()</a>, <a class="el" href="nvme_8h.html#ae8a8762934973d124cbad92fce47a351" title="Connect the NVMe driver to the device located at the given transport ID.">spdk_nvme_connect_async()</a> and <a class="el" href="nvme_8h.html#aedea919a47bdd811b604656e29e3fcef" title="Start controllers in the context list.">spdk_nvme_probe_poll_async()</a> were added to enable this feature. <a class="el" href="nvme_8h.html#a02411bf7ae4827a350711e688316997e" title="Probe and add controllers to the probe context list.">spdk_nvme_probe_async()</a> and <a class="el" href="nvme_8h.html#ae8a8762934973d124cbad92fce47a351" title="Connect the NVMe driver to the device located at the given transport ID.">spdk_nvme_connect_async()</a> return a context associated with the specified controllers. Users then call <a class="el" href="nvme_8h.html#aedea919a47bdd811b604656e29e3fcef" title="Start controllers in the context list.">spdk_nvme_probe_poll_async()</a> until it returns 0, indicating that the operation completed.</p>
 <p>A new qpair creation option, delay_pcie_doorbell, was added. This can be passed to spdk_nvme_alloc_io_qpair(). This makes the I/O submission functions, such as spdk_nvme_ns_writev(), skip ringing the submission queue doorbell. Instead the doorbell will be rung as necessary inside <a class="el" href="nvme_8h.html#aa331d140870e977722bfbb6826524782" title="Process any outstanding completions for I/O submitted on a queue pair.">spdk_nvme_qpair_process_completions()</a>. This can result in significantly fewer MMIO writes to the doorbell register under heavy load, greatly improving performance.</p>
@@ -566,7 +570,8 @@ v20.04:</h1>
 <p>Options to easily compile with profile guided optimization have been added to <code>configure</code>. To use profile guided optimization with SPDK, run <code>./configure --with-pgo-capture</code>, build SPDK, then run a workload of your choosing. Then, simply run <code>./configure --with-pgo-enable</code> and recompile to build using the generated profile data. Profile guided optimization can yield very large performance improvements, especially on GCC 8 and clang 7. This may be combined with link time optimization which has been available under the <code>--enable-lto</code> configure option for several releases.</p>
 <h2>compression bdev/reduce library</h2>
 <p>Added "reduce" block compression scheme based on using SSDs for storing compressed blocks of storage and presistent memory for metadata. Please see <a href="https://spdk.io/doc/bdev.html">compression</a> for more details.</p>
-<h1>v19.01</h1>
+<h1><a class="anchor" id="changelog-v19-01"></a>
+v19.01: NVMe-oF TCP/IP Transport, Open Channel SSD Flash Translation Layer, Caching bdev based on OCF, ISA-L Support, DIF/DIX library</h1>
 <h2>ocf bdev</h2>
 <p>New virtual bdev module based on <a href="https://open-cas.github.io/">Open CAS Framework</a> has been added. This module allows for the use of one bdev to act as a high performance cache in front of another bdev. Please see <a href="https://spdk.io/doc/bdev.html#bdev_config_cas">documentation</a> for more details. Only write through mode is currently supported and this feature is considered experimental.</p>
 <h2>event framework</h2>
@@ -662,7 +667,8 @@ v20.04:</h1>
 <p>Added <code>spdk_rpc_is_method_allowed</code> function for checking whether method is permitted in a given state. Added <code>spdk_rpc_get_state</code> to check current state of RPC server. RPC <code>wait_subsystem_init</code> has been added to allow clients to block untill all subsystems are initialized.</p>
 <h2>json rpc</h2>
 <p>JSON RPC client is now running in non-blocking mode. Requests are sent and received during spdk_jsonrpc_client_poll. JSON RPC server can now recieve a callback on connection termination or server shutdown using <code>spdk_jsonrpc_conn_add_close_cb</code> and <code>spdk_jsonrpc_conn_del_close_cb</code>.</p>
-<h1>v18.10</h1>
+<h1><a class="anchor" id="changelog-v18-10"></a>
+v18.10: Dynamic memory allocation, Crypto Virtual Bdev, jsonrpc-client, SPDKCLI iSCSI and NVMe-oF support</h1>
 <h2>nvme</h2>
 <p><a class="el" href="nvme_8h.html#a0e7a6bb3ac85f99f936290f679399039" title="Send security protocol data to controller.">spdk_nvme_ctrlr_cmd_security_send()</a> and <a class="el" href="nvme_8h.html#ae7bcc2decc2d4ce01b041601c5cdecea" title="Receive security protocol data from controller.">spdk_nvme_ctrlr_cmd_security_receive()</a> were added to support sending or receiving security protocol data to or from nvme controller.</p>
 <p><a class="el" href="nvme_8h.html#a8f3f5c5a738dc7ad7e3b2913bff4324c" title="Get the extended sector size, in bytes, of the given namespace.">spdk_nvme_ns_get_extended_sector_size()</a> was added. This function includes the metadata size per sector (if any). <a class="el" href="nvme_8h.html#a0d24c0b2b0b2a22b0c0af2ca2e157e04" title="Get the sector size, in bytes, of the given namespace.">spdk_nvme_ns_get_sector_size()</a> still returns only the data size per sector, not including metadata.</p>
@@ -729,7 +735,8 @@ v20.04:</h1>
 <p>Blobstore I/O operations are now based on io_units, instead of blobstore page size. The io_unit size is now the same as the underlying block device's block size. Logical volumes built on a block device with 512B block size can now be used as boot devices in QEMU.</p>
 <h2>SPDKCLI</h2>
 <p>The SPDKCLI interactive command tool for managing SPDK is no longer considered experimental. Support for the iSCSI and NVMe-oF targets has been added.</p>
-<h1>v18.07</h1>
+<h1><a class="anchor" id="changelog-v18-07"></a>
+v18.07: Raid, Infrastructure Improvements, Bug Fixes</h1>
 <h2>bdev</h2>
 <p>A new public header file <a class="el" href="bdev__module_8h.html" title="Block Device Module Interface.">bdev_module.h</a> has been introduced to facilitate the development of new bdev modules. This header includes an interface for the <a class="el" href="structspdk__bdev__part.html">spdk_bdev_part</a> and spdk_bdev_part_base objects to enable the creation of multiple virtual bdevs on top of a single base bdev and should act as the primary API for module authors.</p>
 <p>spdk_bdev_get_opts() and spdk_bdev_set_opts() were added to set bdev-wide options.</p>

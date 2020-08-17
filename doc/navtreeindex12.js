@@ -1,5 +1,13 @@
 var NAVTREEINDEX12 =
 {
+"scsi__spec_8h.html#ac65383e9735b97c4b7e1f0f0cef7f8b4":[13,0,48,42],
+"scsi__spec_8h.html#ac6783ec106db5bbecc37a3ae1ee21588":[13,0,48,38],
+"scsi__spec_8h.html#ac791b66a82093c303b1b2aaf4f185edea043857d8757abd627a2eacc78a2c4d8a":[13,0,48,50],
+"scsi__spec_8h.html#ac791b66a82093c303b1b2aaf4f185edea06adb707793daf7ecb384f1646d459ea":[13,0,48,62],
+"scsi__spec_8h.html#ac791b66a82093c303b1b2aaf4f185edea0896d9dad4d1753dc0504f43ae6d1e99":[13,0,48,48],
+"scsi__spec_8h.html#ac791b66a82093c303b1b2aaf4f185edea1c42fa6bc5fdbae2a73b8bdbc4029692":[13,0,48,65],
+"scsi__spec_8h.html#ac791b66a82093c303b1b2aaf4f185edea20b446521f668d8d5bc5d728a29cc786":[13,0,48,63],
+"scsi__spec_8h.html#ac791b66a82093c303b1b2aaf4f185edea2585bb4d9162728dd252a2309b256f16":[13,0,48,54],
 "scsi__spec_8h.html#ac791b66a82093c303b1b2aaf4f185edea2afe69eb64db52a3c09483633e2dff7a":[13,0,48,64],
 "scsi__spec_8h.html#ac791b66a82093c303b1b2aaf4f185edea2c2ca9407b7adb292d1699520cad7f37":[13,0,48,74],
 "scsi__spec_8h.html#ac791b66a82093c303b1b2aaf4f185edea33f12a9f636ed52bfdb41322de4e757b":[13,0,48,49],
@@ -241,13 +249,5 @@ var NAVTREEINDEX12 =
 "structiscsi__bhs__login__req.html#aa277cfb67e4843e5f0ef505d3da6b0db":[12,0,5,3],
 "structiscsi__bhs__login__req.html#ab0012806d5ac4a066598813f92a7ebab":[12,0,5,15],
 "structiscsi__bhs__login__req.html#ac378cef9ba25b1d356ef8b545d78fcbb":[12,0,5,0],
-"structiscsi__bhs__login__req.html#ac7bd08a869f115a555f761947baa18bd":[12,0,5,2],
-"structiscsi__bhs__login__req.html#ad32b684d316061b52f22bf73470cd539":[12,0,5,5],
-"structiscsi__bhs__login__req.html#ad415c2d6c3bebce78fdefe1cd798b1d9":[12,0,5,10],
-"structiscsi__bhs__login__req.html#ad5b25dba5310f44ebf0b96e31fa52278":[12,0,5,12],
-"structiscsi__bhs__login__req.html#ae2828cb29254e6c3170c9a75bde56ce0":[12,0,5,9],
-"structiscsi__bhs__login__req.html#af3e3f53608a0dc5fae343f3b1233f1d4":[12,0,5,6],
-"structiscsi__bhs__login__req.html#afad740541d1bff392b468075ab063d26":[12,0,5,11],
-"structiscsi__bhs__login__rsp.html":[12,0,6],
-"structiscsi__bhs__login__rsp.html#a08dec8d2dd02d11daef7320fd36b90b8":[12,0,6,4]
+"structiscsi__bhs__login__req.html#ac7bd08a869f115a555f761947baa18bd":[12,0,5,2]
 };

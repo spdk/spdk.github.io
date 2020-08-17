@@ -394,7 +394,7 @@ Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">ip</td><td>IP address of the server. </td></tr>
     <tr><td class="paramname">port</td><td>Port number of the server. </td></tr>
-    <tr><td class="paramname">impl_name</td><td>The sock_implementation to use, such as "posix". If impl_name is specified, it will <em>only</em> try to connect on that impl. If it is NULL, it will try all the sock implementations in order and uses the first sock implementation which can connect. For example, it may try vpp first, then fall back to posix.</td></tr>
+    <tr><td class="paramname">impl_name</td><td>The sock_implementation to use, such as "posix". If impl_name is specified, it will <em>only</em> try to connect on that impl. If it is NULL, it will try all the sock implementations in order and uses the first sock implementation which can connect.</td></tr>
   </table>
   </dd>
 </dl>
@@ -446,7 +446,7 @@ Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">ip</td><td>IP address of the server. </td></tr>
     <tr><td class="paramname">port</td><td>Port number of the server. </td></tr>
-    <tr><td class="paramname">impl_name</td><td>The sock_implementation to use, such as "posix". If impl_name is specified, it will <em>only</em> try to connect on that impl. If it is NULL, it will try all the sock implementations in order and uses the first sock implementation which can connect. For example, it may try vpp first, then fall back to posix. </td></tr>
+    <tr><td class="paramname">impl_name</td><td>The sock_implementation to use, such as "posix". If impl_name is specified, it will <em>only</em> try to connect on that impl. If it is NULL, it will try all the sock implementations in order and uses the first sock implementation which can connect. </td></tr>
     <tr><td class="paramname">opts</td><td>The sock option pointer provided by the user which should not be NULL pointer.</td></tr>
   </table>
   </dd>
@@ -1064,7 +1064,7 @@ Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">ip</td><td>IP address to listen on. </td></tr>
     <tr><td class="paramname">port</td><td>Port number. </td></tr>
-    <tr><td class="paramname">impl_name</td><td>The sock_implementation to use, such as "posix". If impl_name is specified, it will <em>only</em> try to listen on that impl. If it is NULL, it will try all the sock implementations in order and uses the first sock implementation which can listen. For example, it may try vpp first, then fall back to posix.</td></tr>
+    <tr><td class="paramname">impl_name</td><td>The sock_implementation to use, such as "posix". If impl_name is specified, it will <em>only</em> try to listen on that impl. If it is NULL, it will try all the sock implementations in order and uses the first sock implementation which can listen.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1116,7 +1116,7 @@ Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">ip</td><td>IP address to listen on. </td></tr>
     <tr><td class="paramname">port</td><td>Port number. </td></tr>
-    <tr><td class="paramname">impl_name</td><td>The sock_implementation to use, such as "posix". If impl_name is specified, it will <em>only</em> try to listen on that impl. If it is NULL, it will try all the sock implementations in order and uses the first sock implementation which can listen. For example, it may try vpp first, then fall back to posix. </td></tr>
+    <tr><td class="paramname">impl_name</td><td>The sock_implementation to use, such as "posix". If impl_name is specified, it will <em>only</em> try to listen on that impl. If it is NULL, it will try all the sock implementations in order and uses the first sock implementation which can listen. </td></tr>
     <tr><td class="paramname">opts</td><td>The sock option pointer provided by the user, which should not be NULL pointer.</td></tr>
   </table>
   </dd>

@@ -20,7 +20,6 @@ var searchData=
   ['vmd_20driver',['VMD driver',['../vmd.html',1,'driver_modules']]],
   ['vmd_2eh',['vmd.h',['../vmd_8h.html',1,'']]],
   ['vol_5fsize',['vol_size',['../structspdk__reduce__vol__params.html#ae4c8834d1e1c76455842b97c4489ce47',1,'spdk_reduce_vol_params']]],
-  ['vector_20packet_20processing',['Vector Packet Processing',['../vpp_integration.html',1,'general']]],
   ['vqfrsm',['vqfrsm',['../structspdk__nvme__primary__ctrl__capabilities.html#a8b523874842beb9c88efbd2962a0950f',1,'spdk_nvme_primary_ctrl_capabilities']]],
   ['vqfrt',['vqfrt',['../structspdk__nvme__primary__ctrl__capabilities.html#a6b22f6c1cc50ed2395c5e86a4883ca1c',1,'spdk_nvme_primary_ctrl_capabilities']]],
   ['vqgran',['vqgran',['../structspdk__nvme__primary__ctrl__capabilities.html#a6232822783419f4f479f28aba250e9f4',1,'spdk_nvme_primary_ctrl_capabilities']]],

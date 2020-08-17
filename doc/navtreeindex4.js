@@ -1,5 +1,12 @@
 var NAVTREEINDEX4 =
 {
+"iscsi.html#iscsi_config_lcore":[3,3,0,1,0],
+"iscsi.html#iscsi_getting_started":[3,3,0],
+"iscsi.html#iscsi_hotplug":[3,3,1],
+"iscsi.html#iscsi_initiator":[3,3,0,3],
+"iscsi.html#iscsi_login_redirection":[3,3,2],
+"iscsi.html#iscsi_lun":[3,3,0,1,1],
+"iscsi.html#iscsi_prereqs":[3,3,0,0],
 "iscsi.html#iscsi_rpc":[3,3,0,2],
 "iscsi__spec_8h.html":[13,0,27],
 "iscsi__spec_8h.html#a04b6541ec6c56cd9b1524a2bf9c1f05f":[13,0,27,27],
@@ -242,12 +249,5 @@ var NAVTREEINDEX4 =
 "jsonrpc.html#rpc_bdev_malloc_create":[3,8,2,10],
 "jsonrpc.html#rpc_bdev_malloc_delete":[3,8,2,11],
 "jsonrpc.html#rpc_bdev_null_create":[3,8,2,12],
-"jsonrpc.html#rpc_bdev_null_delete":[3,8,2,13],
-"jsonrpc.html#rpc_bdev_nvme_attach_controller":[3,8,2,18],
-"jsonrpc.html#rpc_bdev_nvme_cuse_register":[3,8,2,21],
-"jsonrpc.html#rpc_bdev_nvme_cuse_unregister":[3,8,2,22],
-"jsonrpc.html#rpc_bdev_nvme_detach_controller":[3,8,2,20],
-"jsonrpc.html#rpc_bdev_nvme_get_controllers":[3,8,2,19],
-"jsonrpc.html#rpc_bdev_nvme_opal_init":[3,8,6,16],
-"jsonrpc.html#rpc_bdev_nvme_opal_revert":[3,8,6,17]
+"jsonrpc.html#rpc_bdev_null_delete":[3,8,2,13]
 };

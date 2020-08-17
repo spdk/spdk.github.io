@@ -1,5 +1,12 @@
 var NAVTREEINDEX2 =
 {
+"conf_8h.html#a99964f1d40567e8d1e9c54d09811ab9e":[13,0,12,12],
+"conf_8h.html#aa4e4afaac4d34264eb17c67655c0cd31":[13,0,12,13],
+"conf_8h.html#aaf66351ff668ecea51178af3f643e0d9":[13,0,12,5],
+"conf_8h.html#adc6ca4eabe0f86a0e9560c464f982030":[13,0,12,4],
+"conf_8h.html#adf0cf8d93adadd85dedd3c24004fc67e":[13,0,12,0],
+"conf_8h.html#af9539a403b39779056af14942b1d7d95":[13,0,12,1],
+"conf_8h.html#aff953daa748287171dadcd8ecdfae6c9":[13,0,12,10],
 "containers.html":[6,1],
 "containers.html#containers_toc":[6,1,0],
 "containers.html#kata_containers_with_spdk_vhost":[6,1,1],
@@ -242,12 +249,5 @@ var NAVTREEINDEX2 =
 "functions_m.html":[12,2,0,11],
 "functions_n.html":[12,2,0,12],
 "functions_o.html":[12,2,0,13],
-"functions_p.html":[12,2,0,14],
-"functions_q.html":[12,2,0,15],
-"functions_r.html":[12,2,0,16],
-"functions_s.html":[12,2,0,17],
-"functions_t.html":[12,2,0,18],
-"functions_u.html":[12,2,0,19],
-"functions_v.html":[12,2,0,20],
-"functions_vars.html":[12,2,2]
+"functions_p.html":[12,2,0,14]
 };

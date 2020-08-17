@@ -316,13 +316,6 @@ Lvols</h2>
 <p>Example commands</p>
 <p><code>rpc.py bdev_lvol_create lvol1 25 -l lvs</code></p>
 <p><code>rpc.py bdev_lvol_create lvol2 25 -u 330a6ab2-f468-11e7-983e-001e67edf35d</code></p>
-<h1><a class="anchor" id="bdev_ug_raid"></a>
-RAID</h1>
-<p>RAID virtual bdev module provides functionality to combine any SPDK bdevs into one RAID bdev. Currently SPDK supports only RAID 0. RAID functionality does not store on-disk metadata on the member disks, so user must recreate the RAID volume when restarting application. User may specify member disks to create RAID volume event if they do not exists yet - as the member disks are registered at a later time, the RAID module will claim them and will surface the RAID volume after all of the member disks are available. It is allowed to use disks of different sizes - the smallest disk size will be the amount of space used on each member disk.</p>
-<p>Example commands</p>
-<p><code>rpc.py bdev_raid_create -n Raid0 -z 64 -r 0 -b "lvol0 lvol1 lvol2 lvol3"</code></p>
-<p><code>rpc.py bdev_raid_get_bdevs</code></p>
-<p><code>rpc.py bdev_raid_delete Raid0</code></p>
 <h1><a class="anchor" id="bdev_config_passthru"></a>
 Passthru</h1>
 <p>The SPDK Passthru virtual block device module serves as an example of how to write a virtual block device module. It implements the required functionality of a vbdev module and demonstrates some other basic features such as the use of per I/O context.</p>
@@ -347,6 +340,13 @@ Pmem</h1>
 <p><code>rpc.py bdev_pmem_create /path/to/pmem_pool -n pmem</code></p>
 <p>To remove a block device representation use the bdev_pmem_delete command.</p>
 <p><code>rpc.py bdev_pmem_delete pmem</code></p>
+<h1><a class="anchor" id="bdev_ug_raid"></a>
+RAID</h1>
+<p>RAID virtual bdev module provides functionality to combine any SPDK bdevs into one RAID bdev. Currently SPDK supports only RAID 0. RAID functionality does not store on-disk metadata on the member disks, so user must recreate the RAID volume when restarting application. User may specify member disks to create RAID volume event if they do not exists yet - as the member disks are registered at a later time, the RAID module will claim them and will surface the RAID volume after all of the member disks are available. It is allowed to use disks of different sizes - the smallest disk size will be the amount of space used on each member disk.</p>
+<p>Example commands</p>
+<p><code>rpc.py bdev_raid_create -n Raid0 -z 64 -r 0 -b "lvol0 lvol1 lvol2 lvol3"</code></p>
+<p><code>rpc.py bdev_raid_get_bdevs</code></p>
+<p><code>rpc.py bdev_raid_delete Raid0</code></p>
 <h1><a class="anchor" id="bdev_ug_uring"></a>
 Uring</h1>
 <p>The uring bdev module issues I/O to kernel block devices using the io_uring Linux kernel API. This module requires liburing. For more information on io_uring refer to kernel <a href="https://kernel.dk/io_uring.pdf">IO_uring</a></p>
