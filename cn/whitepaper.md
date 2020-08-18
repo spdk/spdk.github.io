@@ -12,6 +12,9 @@ lang: cn
 * [H3C分布式架构全闪存存储集成SPDK NVMe-oF技术来实现高性能和易扩展性](https://www.intel.cn/content/www/cn/zh/technology-provider/products-and-solutions/storage/nvme-storage.html)
 > “高性能和易扩展性：全闪存 + SPDK NVMe-oF”
 
+* [基于全新英特尔® 架构的新华三 ONEStor 分布式存储系统](https://www.intel.cn/content/www/cn/zh/architecture-and-technology/h3c-onestor-distributed-storag-system.html)
+> “为了提升 H3C ONEStor 分布式存储系统的性能，H3C 与英特尔进行了合作，结合英特尔® 傲腾™ 持久内存、第二代英特尔®至强® 可扩展处理器、英特尔® SPDK 性能工具包等产品，对全闪存分布式存储进行了针对性的性能优化。”
+
 ## 百度
 * [百度赤兔存储结合SPDK NVMe-oF应用介绍](https://ci.spdk.io/download/papers/Introduction_of_Baidu_Chitu_Storage_with_SPDK_NVMe-oF_CN.pdf)
 > “数据通路关键模块以及用户态程序高效开发和运维：SPDK NVMe-oF”
