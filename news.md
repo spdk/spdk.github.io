@@ -5,6 +5,11 @@ title:  "SPDK In The News"
 
 # News items
 
+## DAOS: Revolutionizing High-Performance Storage with Intel® Optane™ Technology, SPDK and PMDK
+
+### [DAOS Sets New Records with Intel Optane Persistent Memory](https://software.intel.com/content/www/us/en/develop/articles/daos-sets-new-records-with-intel-optane-persistent-memory.html)
+> DAOS is entirely in userspace, utilizing the PMDK and SPDK open source libraries, not only bypassing the performance limitations of I/O through the kernel, but also alleviating other issues such as jitter, ease of administration, etc. DAOS also breaks free from the performance limitations of the POSIX interface, relying on the more performant optimistic concurrency control rather than the pessimistic concurrency control of POSIX. 
+
 ## 2020 USENIX Annual Technical Conference, July 15–17, 2020
 
 ### [Spool: Reliable Virtualized NVMe Storage Pool in Public Cloud Infrastructure](https://www.usenix.org/system/files/atc20-xue_0.pdf)
