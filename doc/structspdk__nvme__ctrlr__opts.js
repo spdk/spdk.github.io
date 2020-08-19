@@ -8,6 +8,7 @@ var structspdk__nvme__ctrlr__opts =
     [ "data_digest", "structspdk__nvme__ctrlr__opts.html#a031524a539fbc57e1ca66c6fef875eea", null ],
     [ "disable_error_logging", "structspdk__nvme__ctrlr__opts.html#ade3ae305f17864bd4904e89ac9a6a02c", null ],
     [ "extended_host_id", "structspdk__nvme__ctrlr__opts.html#afa9c5708ea859200abb5406b59faaede", null ],
+    [ "fabrics_connect_timeout_us", "structspdk__nvme__ctrlr__opts.html#ab75f6717b27136d7688339eea1fde789", null ],
     [ "header_digest", "structspdk__nvme__ctrlr__opts.html#a2a1ee1f756d767ae8833875256c57864", null ],
     [ "high_priority_weight", "structspdk__nvme__ctrlr__opts.html#a6f2adbe11e4650f48bdedcf23ab50646", null ],
     [ "host_id", "structspdk__nvme__ctrlr__opts.html#a810d9f0e2877c2264cf3393bc2919cb5", null ],

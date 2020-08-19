@@ -1,5 +1,6 @@
 var NAVTREEINDEX25 =
 {
+"vagrant.html#vagrant_intro":[1,2,0],
 "version_8h.html":[13,0,56],
 "version_8h.html#a044fb88313d084d910632cea5a06c620":[13,0,56,10],
 "version_8h.html#a1636e53b1038906ece3a9addb0473bf0":[13,0,56,13],
