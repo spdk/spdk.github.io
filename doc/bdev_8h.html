@@ -274,6 +274,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_get_opts</b
 <tr class="memitem:a828be2f36a5c1e343488130c457f5bf5"><td class="memItemLeft" align="right" valign="top"><a id="a828be2f36a5c1e343488130c457f5bf5"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_set_opts</b> (struct <a class="el" href="structspdk__bdev__opts.html">spdk_bdev_opts</a> *opts)</td></tr>
 <tr class="separator:a828be2f36a5c1e343488130c457f5bf5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae720ef13c98f9ba40e6562d4a8582427"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev_8h.html#ae720ef13c98f9ba40e6562d4a8582427">spdk_bdev_examine</a> (const char *name)</td></tr>
+<tr class="memdesc:ae720ef13c98f9ba40e6562d4a8582427"><td class="mdescLeft">&#160;</td><td class="mdescRight">Examine a block device explicitly.  <a href="#ae720ef13c98f9ba40e6562d4a8582427">More...</a><br /></td></tr>
+<tr class="separator:ae720ef13c98f9ba40e6562d4a8582427"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a854eb960c06597051071023a3d70e887"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev_8h.html#a854eb960c06597051071023a3d70e887">spdk_bdev_initialize</a> (<a class="el" href="bdev_8h.html#aa6a8987bb3a1bc368881f6b81d249bd3">spdk_bdev_init_cb</a> cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:a854eb960c06597051071023a3d70e887"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize block device modules.  <a href="#a854eb960c06597051071023a3d70e887">More...</a><br /></td></tr>
 <tr class="separator:a854eb960c06597051071023a3d70e887"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -902,6 +905,33 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_set_opts</b>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 on success, negated errno on failure. </dd></dl>
+
+</div>
+</div>
+<a id="ae720ef13c98f9ba40e6562d4a8582427"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae720ef13c98f9ba40e6562d4a8582427">&#9670;&nbsp;</a></span>spdk_bdev_examine()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_bdev_examine </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Examine a block device explicitly. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>the name or alias of the block device </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 if block device was examined successfully, suitable errno value otherwise </dd></dl>
 
 </div>
 </div>
