@@ -6,6 +6,7 @@ var nvme_8h =
     [ "spdk_nvme_io_qpair_opts", "structspdk__nvme__io__qpair__opts.html", "structspdk__nvme__io__qpair__opts" ],
     [ "spdk_nvme_rdma_hooks", "structspdk__nvme__rdma__hooks.html", "structspdk__nvme__rdma__hooks" ],
     [ "spdk_nvme_transport_ops", "structspdk__nvme__transport__ops.html", "structspdk__nvme__transport__ops" ],
+    [ "SPDK_NVME_TRANSPORT_NAME_CUSTOM", "nvme_8h.html#a2a3e787dfb5847e18568831e760af1f3", null ],
     [ "SPDK_NVME_TRANSPORT_NAME_FC", "nvme_8h.html#ab50510ef1ca103e1324417f2b2c80c95", null ],
     [ "SPDK_NVME_TRANSPORT_NAME_PCIE", "nvme_8h.html#aa027ac1fbd4b1aa4c992843aac953aac", null ],
     [ "SPDK_NVME_TRANSPORT_NAME_RDMA", "nvme_8h.html#af80940dd87891e9632f6a309ec75f822", null ],

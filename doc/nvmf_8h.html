@@ -331,6 +331,9 @@ Functions</h2></td></tr>
 <tr class="memitem:afcb0340cf28f2f072bb3fa26c43870ab"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#afcb0340cf28f2f072bb3fa26c43870ab">spdk_nvmf_subsytem_any_listener_allowed</a> (struct spdk_nvmf_subsystem *subsystem)</td></tr>
 <tr class="memdesc:afcb0340cf28f2f072bb3fa26c43870ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check whether a subsystem allows any listen address or only addresses in the allowed list.  <a href="#afcb0340cf28f2f072bb3fa26c43870ab">More...</a><br /></td></tr>
 <tr class="separator:afcb0340cf28f2f072bb3fa26c43870ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a488442d5a27c5e3c4a88184bd8a5301b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#a488442d5a27c5e3c4a88184bd8a5301b">spdk_nvmf_subsystem_set_ana_reporting</a> (struct spdk_nvmf_subsystem *subsystem, bool ana_reporting)</td></tr>
+<tr class="memdesc:a488442d5a27c5e3c4a88184bd8a5301b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set whether a subsystem supports Asymmetric Namespace Access (ANA) reporting.  <a href="#a488442d5a27c5e3c4a88184bd8a5301b">More...</a><br /></td></tr>
+<tr class="separator:a488442d5a27c5e3c4a88184bd8a5301b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa97d60b3fba2761118d21e411a08e542"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#aa97d60b3fba2761118d21e411a08e542">spdk_nvmf_ns_opts_get_defaults</a> (struct <a class="el" href="structspdk__nvmf__ns__opts.html">spdk_nvmf_ns_opts</a> *opts, size_t opts_size)</td></tr>
 <tr class="memdesc:aa97d60b3fba2761118d21e411a08e542"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get default namespace creation options.  <a href="#aa97d60b3fba2761118d21e411a08e542">More...</a><br /></td></tr>
 <tr class="separator:aa97d60b3fba2761118d21e411a08e542"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -2288,6 +2291,45 @@ Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">subsystem</td><td>Subsystem to modify. </td></tr>
     <tr><td class="paramname">allow_any_host</td><td>true to allow any host to connect to this subsystem, or false to enforce the whitelist configured with <a class="el" href="nvmf_8h.html#a19b3442b7eb75c234c3e3090d2b5add3" title="Allow the given host NQN to connect to the given subsystem.">spdk_nvmf_subsystem_add_host()</a>.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, or negated errno value on failure. </dd></dl>
+
+</div>
+</div>
+<a id="a488442d5a27c5e3c4a88184bd8a5301b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a488442d5a27c5e3c4a88184bd8a5301b">&#9670;&nbsp;</a></span>spdk_nvmf_subsystem_set_ana_reporting()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_nvmf_subsystem_set_ana_reporting </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_nvmf_subsystem *&#160;</td>
+          <td class="paramname"><em>subsystem</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>ana_reporting</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set whether a subsystem supports Asymmetric Namespace Access (ANA) reporting. </p>
+<p>May only be performed on subsystems in the INACTIVE state.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">subsystem</td><td>Subsystem to modify. </td></tr>
+    <tr><td class="paramname">ana_reporting</td><td>true to support or false not to support ANA reporting.</td></tr>
   </table>
   </dd>
 </dl>

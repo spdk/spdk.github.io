@@ -700,6 +700,7 @@ var searchData=
   ['spdk_5fnvmf_5fsubsystem_5fremove_5fns',['spdk_nvmf_subsystem_remove_ns',['../nvmf_8h.html#aa10ac07a403de72643a5e9801e9fec0b',1,'nvmf.h']]],
   ['spdk_5fnvmf_5fsubsystem_5fresume',['spdk_nvmf_subsystem_resume',['../nvmf_8h.html#aac21e50a3e893cf2629955dd553e9e32',1,'nvmf.h']]],
   ['spdk_5fnvmf_5fsubsystem_5fset_5fallow_5fany_5fhost',['spdk_nvmf_subsystem_set_allow_any_host',['../nvmf_8h.html#ad6453b746f3c470e00e23fa4a194cfbd',1,'nvmf.h']]],
+  ['spdk_5fnvmf_5fsubsystem_5fset_5fana_5freporting',['spdk_nvmf_subsystem_set_ana_reporting',['../nvmf_8h.html#a488442d5a27c5e3c4a88184bd8a5301b',1,'nvmf.h']]],
   ['spdk_5fnvmf_5fsubsystem_5fset_5fmn',['spdk_nvmf_subsystem_set_mn',['../nvmf_8h.html#a270a2bbd77c6b97116c7e61b4f1a56ce',1,'nvmf.h']]],
   ['spdk_5fnvmf_5fsubsystem_5fset_5fsn',['spdk_nvmf_subsystem_set_sn',['../nvmf_8h.html#abb053c9573460d29898b184957ce05fd',1,'nvmf.h']]],
   ['spdk_5fnvmf_5fsubsystem_5fstart',['spdk_nvmf_subsystem_start',['../nvmf_8h.html#a0584bea11782561b13355b89de25b6c0',1,'nvmf.h']]],
