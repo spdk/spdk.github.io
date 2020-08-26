@@ -150,6 +150,7 @@ var NAVTREEINDEX12 =
 "sock_8h.html#aec412e1537891ed4a02c24615df619b0":[13,0,49,28],
 "sock_8h.html#af21c988574749f3ea04f1e78e9533aab":[13,0,49,4],
 "sock_8h.html#afcbfb1e52df2160547b6f5e2bb8ec636":[13,0,49,8],
+"spdk_top.html":[8,3],
 "spdkcli.html":[8,0],
 "ssd_internals.html":[2,3],
 "stdinc_8h.html":[13,0,50],
@@ -248,6 +249,5 @@ var NAVTREEINDEX12 =
 "structiscsi__bhs__login__req.html#a3729a6d8002aeafb759015fc762cadf3":[12,0,5,1],
 "structiscsi__bhs__login__req.html#a53db40220c720345032914ca54a93507":[12,0,5,8],
 "structiscsi__bhs__login__req.html#a877d88a43400c0139faaf1d403b043b1":[12,0,5,14],
-"structiscsi__bhs__login__req.html#a8bed387f3b7c65f30373990afc052382":[12,0,5,4],
-"structiscsi__bhs__login__req.html#a995af0fd68ce88b334b4c68bba6f6d18":[12,0,5,13]
+"structiscsi__bhs__login__req.html#a8bed387f3b7c65f30373990afc052382":[12,0,5,4]
 };
