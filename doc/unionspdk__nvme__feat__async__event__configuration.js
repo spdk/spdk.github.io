@@ -1,5 +1,6 @@
 var unionspdk__nvme__feat__async__event__configuration =
 [
+    [ "ana_change_notice", "unionspdk__nvme__feat__async__event__configuration.html#aaf74397f2e67778152f91a1ad81dec2c", null ],
     [ "bits", "unionspdk__nvme__feat__async__event__configuration.html#a37abe819da9413bb8500c0fc8b16a05f", null ],
     [ "crit_warn", "unionspdk__nvme__feat__async__event__configuration.html#a7e369c599d81ab33f93c69b1a7f8c7bd", null ],
     [ "fw_activation_notice", "unionspdk__nvme__feat__async__event__configuration.html#a572b3c7f8773804b8d0f3fa66ce9a35e", null ],

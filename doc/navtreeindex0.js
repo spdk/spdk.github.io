@@ -96,8 +96,8 @@ var NAVTREEINDEX0 =
 "bdev.html#bdev_config_passthru":[3,6,16],
 "bdev.html#bdev_config_pmem":[3,6,17],
 "bdev.html#bdev_config_rbd":[3,6,4],
-"bdev.html#bdev_config_virtio_blk":[3,6,20],
-"bdev.html#bdev_config_virtio_scsi":[3,6,21],
+"bdev.html#bdev_config_virtio_blk":[3,6,21],
+"bdev.html#bdev_config_virtio_scsi":[3,6,22],
 "bdev.html#bdev_ug_general_rpcs":[3,6,3],
 "bdev.html#bdev_ug_gpt":[3,6,8,0],
 "bdev.html#bdev_ug_gpt_create_part":[3,6,8,1],
@@ -107,8 +107,9 @@ var NAVTREEINDEX0 =
 "bdev.html#bdev_ug_lvols":[3,6,15,1],
 "bdev.html#bdev_ug_prerequisites":[3,6,2],
 "bdev.html#bdev_ug_raid":[3,6,18],
+"bdev.html#bdev_ug_split":[3,6,19],
 "bdev.html#bdev_ug_targetaudience":[3,6,0],
-"bdev.html#bdev_ug_uring":[3,6,19],
+"bdev.html#bdev_ug_uring":[3,6,20],
 "bdev_8h.html":[13,0,4],
 "bdev_8h.html#a08c63fbd418d5a77f34ddca9a4268f41":[13,0,4,57],
 "bdev_8h.html#a0b4556cb07c52ae7b5b7e7f10cbdc637":[13,0,4,63],
@@ -248,6 +249,5 @@ var NAVTREEINDEX0 =
 "bdev__module_8h.html#a78a004a98b02f2d1b2346b6b25e1c945":[13,0,5,13],
 "bdev__module_8h.html#a7f2edd5a040a818752112d2cc709efca":[13,0,5,41],
 "bdev__module_8h.html#a82dd20b5702f2f97c1f8eec5cdc6d0d5":[13,0,5,42],
-"bdev__module_8h.html#a8d51d8e113f0dffb1bbe535ea01c495f":[13,0,5,21],
-"bdev__module_8h.html#a8db6bfb953294c571c83d5bc21835b31":[13,0,5,11]
+"bdev__module_8h.html#a8d51d8e113f0dffb1bbe535ea01c495f":[13,0,5,21]
 };

@@ -1,5 +1,6 @@
 var NAVTREEINDEX4 =
 {
+"iscsi.html":[3,3],
 "iscsi.html#iscsi_config":[3,3,0,1],
 "iscsi.html#iscsi_config_lcore":[3,3,0,1,0],
 "iscsi.html#iscsi_getting_started":[3,3,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX4 =
 "jsonrpc.html#rpc_bdev_lvol_set_read_only":[3,8,6,9],
 "jsonrpc.html#rpc_bdev_lvol_snapshot":[3,8,6,5],
 "jsonrpc.html#rpc_bdev_malloc_create":[3,8,2,10],
-"jsonrpc.html#rpc_bdev_malloc_delete":[3,8,2,11],
-"jsonrpc.html#rpc_bdev_null_create":[3,8,2,12]
+"jsonrpc.html#rpc_bdev_malloc_delete":[3,8,2,11]
 };

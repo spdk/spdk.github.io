@@ -347,6 +347,16 @@ RAID</h1>
 <p><code>rpc.py bdev_raid_create -n Raid0 -z 64 -r 0 -b "lvol0 lvol1 lvol2 lvol3"</code></p>
 <p><code>rpc.py bdev_raid_get_bdevs</code></p>
 <p><code>rpc.py bdev_raid_delete Raid0</code></p>
+<h1><a class="anchor" id="bdev_ug_split"></a>
+Split</h1>
+<p>The split block device module takes an underlying block device and splits it into several smaller equal-sized virtual block devices. This serves as an example to create more vbdevs on a given base bdev for user testing.</p>
+<p>Example commands</p>
+<p>To create four split bdevs with base bdev_b0 use the <code>bdev_split_create</code> command. Each split bdev will be one fourth the size of the base bdev.</p>
+<p><code>rpc.py bdev_split_create bdev_b0 4</code></p>
+<p>The <code>split_size_mb</code>(-s) parameter restricts the size of each split bdev. The total size of all split bdevs must not exceed the base bdev size.</p>
+<p><code>rpc.py bdev_split_create bdev_b0 4 -s 128</code></p>
+<p>To remove the split bdevs, use the <code>bdev_split_delete</code> command with the base bdev name.</p>
+<p><code>rpc.py bdev_split_delete bdev_b0</code></p>
 <h1><a class="anchor" id="bdev_ug_uring"></a>
 Uring</h1>
 <p>The uring bdev module issues I/O to kernel block devices using the io_uring Linux kernel API. This module requires liburing. For more information on io_uring refer to kernel <a href="https://kernel.dk/io_uring.pdf">IO_uring</a></p>

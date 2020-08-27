@@ -115,6 +115,7 @@ var user_guides =
       [ "Passthru", "bdev.html#bdev_config_passthru", null ],
       [ "Pmem", "bdev.html#bdev_config_pmem", null ],
       [ "RAID", "bdev.html#bdev_ug_raid", null ],
+      [ "Split", "bdev.html#bdev_ug_split", null ],
       [ "Uring", "bdev.html#bdev_ug_uring", null ],
       [ "Virtio Block", "bdev.html#bdev_config_virtio_blk", null ],
       [ "Virtio SCSI", "bdev.html#bdev_config_virtio_scsi", null ]

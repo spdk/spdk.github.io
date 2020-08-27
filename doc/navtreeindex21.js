@@ -1,5 +1,13 @@
 var NAVTREEINDEX21 =
 {
+"structspdk__nvmf__transport__opts.html#ab85a4ce19153bc2ef4c2ee96a89ccdce":[12,0,230,4],
+"structspdk__nvmf__transport__opts.html#ac029aacb2caf552303ef1cc7f51f7bb9":[12,0,230,14],
+"structspdk__nvmf__transport__opts.html#ae21e50b3980d7d03575b8394f9694b13":[12,0,230,15],
+"structspdk__nvmf__transport__pg__cache__buf.html":[12,0,231],
+"structspdk__nvmf__transport__pg__cache__buf.html#ac9135e1d7d9c0fd9b1f9b947c42c992a":[12,0,231,0],
+"structspdk__nvmf__transport__poll__group.html":[12,0,232],
+"structspdk__nvmf__transport__poll__group.html#a2a6ace898895102a3aa74672b09440aa":[12,0,232,1],
+"structspdk__nvmf__transport__poll__group.html#a310a357189576dfd39c2b9c5c8013394":[12,0,232,4],
 "structspdk__nvmf__transport__poll__group.html#a5c6a9992761a4a66ea17da16acbc5b3f":[12,0,232,6],
 "structspdk__nvmf__transport__poll__group.html#a7b589c06293a7149f0c8d1c0f27b7268":[12,0,232,0],
 "structspdk__nvmf__transport__poll__group.html#ad1e5c9a3614ab86dd19d0f7d1f0907a8":[12,0,232,5],
@@ -241,13 +249,5 @@ var NAVTREEINDEX21 =
 "structspdk__pci__id.html#aedf53a294bbe914233d7ba3f00b20874":[12,0,256,2],
 "structspdk__reduce__backing__dev.html":[12,0,257],
 "structspdk__reduce__backing__dev.html#a0811da1e615e6a31cad4810e8327cfbe":[12,0,257,3],
-"structspdk__reduce__backing__dev.html#a3bbbe463964804c1289bd3876ff262fe":[12,0,257,4],
-"structspdk__reduce__backing__dev.html#a59745a0da2cf2bcf55bd19009cc093ff":[12,0,257,0],
-"structspdk__reduce__backing__dev.html#aa5d23ba4f13d91c3c79a2cd99f61edc7":[12,0,257,1],
-"structspdk__reduce__backing__dev.html#ac5a48d92ad0a0c27f5b443a641e0f264":[12,0,257,2],
-"structspdk__reduce__backing__dev.html#ad23a4e33b6b615acc350eb64aa429465":[12,0,257,5],
-"structspdk__reduce__backing__dev.html#af33de4b96028f7377b857038ff1b19a6":[12,0,257,6],
-"structspdk__reduce__vol__cb__args.html":[12,0,258],
-"structspdk__reduce__vol__cb__args.html#a66f86300cc6cbfd6247517c2e20cce68":[12,0,258,0],
-"structspdk__reduce__vol__cb__args.html#ae6ca2ffa896fb538f00efdbcba388080":[12,0,258,1]
+"structspdk__reduce__backing__dev.html#a3bbbe463964804c1289bd3876ff262fe":[12,0,257,4]
 };

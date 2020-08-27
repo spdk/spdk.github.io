@@ -660,7 +660,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">__attribute__((constructor)) <span class="keyword">static</span> <span class="keywordtype">void</span> pci_drv ## _register(<span class="keywordtype">void</span>)     \</div><div class="line">{                                                                       \</div><div class="line">        spdk_pci_driver_register(name, id_table, flags);                \</div><div class="line">}</div></div><!-- fragment -->
+<b>Value:</b><div class="fragment"><div class="line">__attribute__((constructor)) <span class="keyword">static</span> <span class="keywordtype">void</span> _spdk_pci_driver_register_##name(<span class="keywordtype">void</span>) \</div><div class="line">{ \</div><div class="line">        spdk_pci_driver_register(#name, id_table, flags); \</div><div class="line">}</div></div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Typedef Documentation</h2>

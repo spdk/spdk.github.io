@@ -242,8 +242,14 @@ struct {</td></tr>
 <tr class="memdesc:aad445a2f7945986e04ad3861d28e25b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Supports sending Firmware Activation Notices.  <a href="#aad445a2f7945986e04ad3861d28e25b5">More...</a><br /></td></tr>
 <tr class="separator:aad445a2f7945986e04ad3861d28e25b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3d10be6a4640ba138360e5161c79b49a"><td class="memItemLeft" >
-&#160;&#160;&#160;uint32_t&#160;&#160;&#160;<b>reserved2</b>: 22</td></tr>
+&#160;&#160;&#160;uint32_t&#160;&#160;&#160;<b>reserved2</b>: 1</td></tr>
 <tr class="separator:a3d10be6a4640ba138360e5161c79b49a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36e622966cb1e34f1077118975d8a8a2"><td class="memItemLeft" >&#160;&#160;&#160;uint32_t&#160;&#160;&#160;<a class="el" href="structspdk__nvme__ctrlr__data.html#a017f57d1bfd77c827e1d9e12e36f6ff5">ana_change_notices</a>: 1</td></tr>
+<tr class="memdesc:a36e622966cb1e34f1077118975d8a8a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Supports Asymmetric Namespace Access Change Notices.  <a href="#a36e622966cb1e34f1077118975d8a8a2">More...</a><br /></td></tr>
+<tr class="separator:a36e622966cb1e34f1077118975d8a8a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57a7fde9b6b1618ae97d9c1c82955438"><td class="memItemLeft" >
+&#160;&#160;&#160;uint32_t&#160;&#160;&#160;<b>reserved3</b>: 20</td></tr>
+<tr class="separator:a57a7fde9b6b1618ae97d9c1c82955438"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4c8464e8577557e6002af6cccf3526ba"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__ctrlr__data.html#a4c8464e8577557e6002af6cccf3526ba">oaes</a></td></tr>
 <tr class="memdesc:a4c8464e8577557e6002af6cccf3526ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">optional asynchronous events supported <br /></td></tr>
 <tr class="separator:a4c8464e8577557e6002af6cccf3526ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -524,9 +530,13 @@ union {</td></tr>
 <tr class="memitem:a10de5d7669b39dfc8b06f0ed5654b850"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__ctrlr__data.html#a10de5d7669b39dfc8b06f0ed5654b850">sanicap</a></td></tr>
 <tr class="memdesc:a10de5d7669b39dfc8b06f0ed5654b850"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sanitize capabilities. <br /></td></tr>
 <tr class="separator:a10de5d7669b39dfc8b06f0ed5654b850"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adf6cb10877455c13e0a153c46c4106f7"><td class="memItemLeft" align="right" valign="top"><a id="adf6cb10877455c13e0a153c46c4106f7"></a>
-uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>reserved3</b> [11]</td></tr>
-<tr class="separator:adf6cb10877455c13e0a153c46c4106f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f45352b58e4d2e70d969a492f775689"><td class="memItemLeft" align="right" valign="top"><a id="a0f45352b58e4d2e70d969a492f775689"></a>
+uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>reserved3</b> [10]</td></tr>
+<tr class="separator:a0f45352b58e4d2e70d969a492f775689"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aceee2ab6519aad61ac341f181f09819b"><td class="memItemLeft" align="right" valign="top"><a id="aceee2ab6519aad61ac341f181f09819b"></a>
+uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__ctrlr__data.html#aceee2ab6519aad61ac341f181f09819b">anatt</a></td></tr>
+<tr class="memdesc:aceee2ab6519aad61ac341f181f09819b"><td class="mdescLeft">&#160;</td><td class="mdescRight">ANA transition time. <br /></td></tr>
+<tr class="separator:aceee2ab6519aad61ac341f181f09819b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a95bee0fd0eae7d34ae38b7664ee3d978"><td class="memItemLeft" ><a id="a95bee0fd0eae7d34ae38b7664ee3d978"></a>
 struct {</td></tr>
 <tr class="memitem:a93d9eb5cee143792b151ce958f5bcf1e"><td class="memItemLeft" >
@@ -712,6 +722,22 @@ uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>vs</b> [1024]</td>
 <tr class="separator:ae63047f0f3868424dc424c608521ed45"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Field Documentation</h2>
+<a id="a017f57d1bfd77c827e1d9e12e36f6ff5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a017f57d1bfd77c827e1d9e12e36f6ff5">&#9670;&nbsp;</a></span>ana_change_notices</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t spdk_nvme_ctrlr_data::ana_change_notices</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Supports Asymmetric Namespace Access Change Notices. </p>
+
+</div>
+</div>
 <a id="a806b5f99e9d82388e663d0046b1a3bba"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a806b5f99e9d82388e663d0046b1a3bba">&#9670;&nbsp;</a></span>fw_activation_notices</h2>
 
