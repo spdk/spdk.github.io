@@ -18,6 +18,7 @@ var log_8h =
     [ "spdk_log_clear_flag", "log_8h.html#a253e880aa9fd469afd825d77fe9a3211", null ],
     [ "spdk_log_close", "log_8h.html#a41cdc17423a58c475fa785fd491f00e9", null ],
     [ "spdk_log_dump", "log_8h.html#ad360332e6a9699cdfecdac00f768c0b1", null ],
+    [ "spdk_log_enable_timestamps", "log_8h.html#add982626769fe03db599037b3357f730", null ],
     [ "spdk_log_get_flag", "log_8h.html#a66ec4ca21d549ea445c7c662b3f1c637", null ],
     [ "spdk_log_get_level", "log_8h.html#af600090b2a4aa95b4e9e4dae27bf6c7e", null ],
     [ "spdk_log_get_print_level", "log_8h.html#a880b1e27d71328429dbf4f65e02ff145", null ],

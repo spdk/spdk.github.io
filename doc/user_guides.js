@@ -142,6 +142,7 @@ var user_guides =
         [ "framework_get_reactors", "jsonrpc.html#rpc_framework_get_reactors", null ],
         [ "thread_get_stats", "jsonrpc.html#rpc_thread_get_stats", null ],
         [ "thread_set_cpumask", "jsonrpc.html#rpc_thread_set_cpumask", null ],
+        [ "log_enable_timestamps", "jsonrpc.html#rpc_log_enable_timestamps", null ],
         [ "thread_get_pollers", "jsonrpc.html#rpc_thread_get_pollers", null ],
         [ "thread_get_io_channels", "jsonrpc.html#rpc_thread_get_io_channels", null ]
       ] ],

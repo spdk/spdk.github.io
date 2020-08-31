@@ -325,6 +325,19 @@ thread_set_cpumask</h2>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;method&quot;: &quot;thread_set_cpumask&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;params&quot;: {</div><div class="line">    &quot;id&quot;: &quot;1&quot;,</div><div class="line">    &quot;cpumask&quot;: &quot;1&quot;</div><div class="line">  }</div><div class="line">}</div></div><!-- fragment --><p>Example response:</p>
+<div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: true</div><div class="line">}</div></div><!-- fragment --><h2><a class="anchor" id="rpc_log_enable_timestamps"></a>
+log_enable_timestamps</h2>
+<p>Enable or disable timestamps.</p>
+<h3>Parameters</h3>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Name  </th><th class="markdownTableHeadNone">Optional  </th><th class="markdownTableHeadNone">Type  </th><th class="markdownTableHeadNone">Description   </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">enabled  </td><td class="markdownTableBodyNone">Required  </td><td class="markdownTableBodyNone">boolean  </td><td class="markdownTableBodyNone">on or off   </td></tr>
+</table>
+<h3>Example</h3>
+<p>Example request:</p>
+<div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;method&quot;: &quot;log_enable_timestamps&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;params&quot;: {</div><div class="line">    &quot;enabled&quot;: true</div><div class="line">  }</div><div class="line">}</div></div><!-- fragment --><p>Example response:</p>
 <div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: true</div><div class="line">}</div></div><!-- fragment --><h2><a class="anchor" id="rpc_thread_get_pollers"></a>
 thread_get_pollers</h2>
 <p>Retrieve current pollers of all the threads.</p>
@@ -566,11 +579,11 @@ bdev_null_create</h2>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">uuid  </td><td class="markdownTableBodyNone">Optional  </td><td class="markdownTableBodyNone">string  </td><td class="markdownTableBodyNone">UUID of new bdev   </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">md_size  </td><td class="markdownTableBodyNone">Optional  </td><td class="markdownTableBodyNone">number  </td><td class="markdownTableBodyNone">Metadata size in bytes   </td></tr>
+<td class="markdownTableBodyNone">md_size  </td><td class="markdownTableBodyNone">Optional  </td><td class="markdownTableBodyNone">number  </td><td class="markdownTableBodyNone">Metadata size for this bdev. Default=0.   </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">dif_type  </td><td class="markdownTableBodyNone">Optional  </td><td class="markdownTableBodyNone">number  </td><td class="markdownTableBodyNone">Protection information type (0, 1, 2 or 3). Default: 0 - no protection.   </td></tr>
+<td class="markdownTableBodyNone">dif_type  </td><td class="markdownTableBodyNone">Optional  </td><td class="markdownTableBodyNone">number  </td><td class="markdownTableBodyNone">Protection information type. Parameter &ndash;md-size needs to be set along &ndash;dif-type. Default=0 - no protection.   </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">dif_is_head_of_md  </td><td class="markdownTableBodyNone">Optional  </td><td class="markdownTableBodyNone">boolean  </td><td class="markdownTableBodyNone">Protection information is in the first 8 bytes of MD. Default: in the last 8 bytes.   </td></tr>
+<td class="markdownTableBodyNone">dif_is_head_of_md  </td><td class="markdownTableBodyNone">Optional  </td><td class="markdownTableBodyNone">boolean  </td><td class="markdownTableBodyNone">Protection information is in the first 8 bytes of metadata. Default=false.   </td></tr>
 </table>
 <h3>Result</h3>
 <p>Name of newly created bdev.</p>

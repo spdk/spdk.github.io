@@ -1,5 +1,7 @@
 var NAVTREEINDEX22 =
 {
+"structspdk__reduce__backing__dev.html#a59745a0da2cf2bcf55bd19009cc093ff":[12,0,257,0],
+"structspdk__reduce__backing__dev.html#aa5d23ba4f13d91c3c79a2cd99f61edc7":[12,0,257,1],
 "structspdk__reduce__backing__dev.html#ac5a48d92ad0a0c27f5b443a641e0f264":[12,0,257,2],
 "structspdk__reduce__backing__dev.html#ad23a4e33b6b615acc350eb64aa429465":[12,0,257,5],
 "structspdk__reduce__backing__dev.html#af33de4b96028f7377b857038ff1b19a6":[12,0,257,6],
@@ -247,7 +249,5 @@ var NAVTREEINDEX22 =
 "structspdk__trace__register__fn.html#a8109be7fda1144908e5a3b67293ab5fb":[12,0,289,2],
 "structspdk__trace__register__fn.html#ab43c36349f9748fe3a0c45122e85a43b":[12,0,289,3],
 "structspdk__trace__tpoint.html":[12,0,290],
-"structspdk__trace__tpoint.html#a0f01e931e5212379d1720697cea4525f":[12,0,290,5],
-"structspdk__trace__tpoint.html#a317eccf6a1a97bcaa0fb21002fe174ce":[12,0,290,7],
-"structspdk__trace__tpoint.html#a36b0a929e3dc31f1a224ee53858cb04b":[12,0,290,0]
+"structspdk__trace__tpoint.html#a0f01e931e5212379d1720697cea4525f":[12,0,290,5]
 };
