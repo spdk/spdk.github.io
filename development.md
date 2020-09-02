@@ -80,7 +80,7 @@ their own patches to signify that the patch should not be committed.
 Log into [Gerrit](https://review.spdk.io) using your GitHub account credentials. Once logged in, in the
 top right corner click your user name and select 'Settings'. You should set up the following:
 
-* `Profile`: Verify that the information is correct here.
+* `Profile`: Verify that the information is correct here. This includes registering the e-mail address in your profile. The e-mail address must be registered before generating an HTTP password.
 * `HTTP Password`: Generate a password. You'll use this password when prompted by git (not your GitHub password!).
 * `Preferences`:
   * Set Maximum Page Size to 100 rows per page. Otherwise you'll be hitting 'next' a lot.
