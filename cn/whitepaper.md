@@ -30,3 +30,7 @@ lang: cn
 ## 深信服
 * [深信服EDS与Intel合作，让性能与低价不必“二选一”](https://mp.weixin.qq.com/s?__biz=MzI3NDA4ODY4MA==&mid=2653337220&idx=1&sn=6b9b97739f8c3cd72a65ebaef531bac1&chksm=f0cb4103c7bcc815398e2905cfb29c0ecc5067805e9ff930a2aa6356411d9a3267c6ed86c302&mpshare=1&scene=1&srcid=0709TnWbQGyYMKjrKjKuKqDP&sharer_sharetime=1594299545037&sharer_shareid=bce63ba0449f498eb13c109c5eaef06d&exportkey=AzO8WIfAkDPV%2F3Jb7FH8hok%3D&pass_ticket=uQuJ1Meb%2BWlub1ZGYEXdpLrLxAvbfxFU%2FcnIZnB%2FUSEEHD3GrlvKUhxm%2FL5EZCv9&wx_header=0#rd)
 > “这次合作中，深信服EDS基于SPDK开发套件设计的存储引擎，不仅充分发挥出Intel硬件的性能，还构筑起高性能、低成本的存储架构，这其中离不开深信服EDS研发团队在软件定义存储领域的深厚积累与软件开发能力，期待今后进一步合作，为用户的数字化转型构建存储基石。”
+
+## 金山云
+* [英特尔助力金山云构建混合云存储产品，加速企业数字化转型](https://ci.spdk.io/download/papers/Intel_Technology_Accelerates_Kingsoft_Cloud_For_Hybrid_Cloud_Storage_Products_CN.pdf)
+> “使用SPDK之后，用户态的驱动通过轮询硬件而不是依赖中断来完成，这可以降低总延迟和减少延迟差异，并且和内核驱动相比，在每个CPU内核的IOPS上具有更明显的性能优势；此外，SPDK具备I/O路径的无锁高性能模式，避免了所有在I/O关键路径中的锁，而是依靠消息传递在多个线程中共享资源，从而提高了并行性。总体而言，SPDK可以有效整合英特尔的网络、数据和存储技术，将固态存储介质的性能潜力充分发挥出来。”
