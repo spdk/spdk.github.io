@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "SPDK Recent Technical Whitepapers with Customers"
+title:  "Recent Technical Whitepapers Referencing SPDK"
 author: Gang Cao
 categories: news
 ---
