@@ -1,5 +1,0 @@
-<map id="spdk_scsi_dev" name="spdk_scsi_dev">
-<area shape="rect" id="node2" href="$structspdk__scsi__lun.html" title="Represents a SCSI LUN. " alt="" coords="157,95,263,121"/>
-<area shape="rect" id="node4" href="$structspdk__scsi__port.html" title="spdk_scsi_port" alt="" coords="5,95,116,121"/>
-<area shape="rect" id="node3" href="$structspdk__bdev.html" title="SPDK block device. " alt="" coords="223,5,309,32"/>
-</map>

@@ -1,7 +1,0 @@
-<map id="spdk_bdev_io" name="spdk_bdev_io">
-<area shape="rect" id="node2" href="$structspdk__event.html" title="An event is a function that is passed to and called on an lcore. " alt="" coords="5,96,95,123"/>
-<area shape="rect" id="node3" href="$structspdk__scsi__unmap__bdesc.html" title="spdk_scsi_unmap_bdesc" alt="" coords="172,96,341,123"/>
-<area shape="rect" id="node4" href="$structspdk__bdev.html" title="SPDK block device. " alt="" coords="366,96,451,123"/>
-<area shape="rect" id="node5" href="$structspdk__bdev__fn__table.html" title="Function table for a block device backend. " alt="" coords="270,5,409,32"/>
-<area shape="rect" id="node6" href="$structspdk__poller.html" title="A poller is a function that is repeatedly called on an lcore. " alt="" coords="433,5,521,32"/>
-</map>

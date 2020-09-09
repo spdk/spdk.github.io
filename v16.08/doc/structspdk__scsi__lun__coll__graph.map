@@ -1,7 +1,0 @@
-<map id="spdk_scsi_lun" name="spdk_scsi_lun">
-<area shape="rect" id="node2" href="$structspdk__scsi__dev.html" title="spdk_scsi_dev" alt="" coords="88,273,197,300"/>
-<area shape="rect" id="node3" href="$structspdk__scsi__port.html" title="spdk_scsi_port" alt="" coords="87,363,198,389"/>
-<area shape="rect" id="node4" href="$structspdk__bdev.html" title="SPDK block device. " alt="" coords="100,95,185,121"/>
-<area shape="rect" id="node5" href="$structspdk__bdev__fn__table.html" title="Function table for a block device backend. " alt="" coords="5,5,144,32"/>
-<area shape="rect" id="node6" href="$structspdk__poller.html" title="A poller is a function that is repeatedly called on an lcore. " alt="" coords="168,5,256,32"/>
-</map>

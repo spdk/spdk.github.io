@@ -1,4 +1,0 @@
-<map id="spdk_bdev" name="spdk_bdev">
-<area shape="rect" id="node2" href="$structspdk__bdev__fn__table.html" title="Function table for a block device backend. " alt="" coords="5,5,144,32"/>
-<area shape="rect" id="node3" href="$structspdk__poller.html" title="A poller is a function that is repeatedly called on an lcore. " alt="" coords="168,5,256,32"/>
-</map>

@@ -1,4 +1,0 @@
-<map id="spdk_nvmf_discovery_log_page_entry" name="spdk_nvmf_discovery_log_page_entry">
-<area shape="rect" id="node2" href="$unionspdk__nvmf__transport__specific__address__subtype.html" title="Transport&#45;specific address subtype. " alt="" coords="5,109,185,151"/>
-<area shape="rect" id="node3" href="$structspdk__nvmf__rdma__transport__specific__address__subtype.html" title="RDMA transport&#45;specific address subtype. " alt="" coords="5,5,185,47"/>
-</map>
