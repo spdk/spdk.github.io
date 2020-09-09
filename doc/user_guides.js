@@ -232,6 +232,7 @@ var user_guides =
         [ "nvmf_subsystem_add_listener  method", "jsonrpc.html#rpc_nvmf_subsystem_add_listener", [
           [ "listen_address", "jsonrpc.html#rpc_nvmf_listen_address", null ]
         ] ],
+        [ "nvmf_subsystem_remove_listener  method", "jsonrpc.html#rpc_nvmf_subsystem_remove_listener", null ],
         [ "nvmf_subsystem_add_ns method", "jsonrpc.html#rpc_nvmf_subsystem_add_ns", [
           [ "namespace", "jsonrpc.html#rpc_nvmf_namespace", null ]
         ] ],
@@ -240,6 +241,8 @@ var user_guides =
         [ "nvmf_subsystem_remove_host method", "jsonrpc.html#rpc_nvmf_subsystem_remove_host", null ],
         [ "nvmf_subsystem_allow_any_host method", "jsonrpc.html#rpc_nvmf_subsystem_allow_any_host", null ],
         [ "nvmf_subsystem_get_controllers", "jsonrpc.html#rpc_nvmf_subsystem_get_controllers", null ],
+        [ "nvmf_subsystem_get_qpairs", "jsonrpc.html#rpc_nvmf_subsystem_get_qpairs", null ],
+        [ "nvmf_subsystem_get_listeners", "jsonrpc.html#rpc_nvmf_subsystem_get_listeners", null ],
         [ "nvmf_set_max_subsystems", "jsonrpc.html#rpc_nvmf_set_max_subsystems", null ],
         [ "nvmf_set_config", "jsonrpc.html#rpc_nvmf_set_config", [
           [ "admin_cmd_passthru", "jsonrpc.html#spdk_nvmf_admin_passthru_conf", null ]
