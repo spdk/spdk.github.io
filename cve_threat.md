@@ -1,16 +1,21 @@
 ---
 layout: default
 title:  "SPDK Common Vulnerabilities and Exposures (CVE) Process"
+
+toc:
+  - title: CVE Process
+    url: "#cve"
+  - title: Current CVEs
+    url: "#current"
+  - title: Threat Modeling
+    url: "#threat"
+  - title: "Use Case: Integrate NVMe Driver"
+    url: "#usecase"
+  - title: "Use Case: NVMe over Fabrics Target"
+    url: "#usecase"
+  - title: "Use Case: Vhost integration"
+    url: "#usecase"
 ---
-
-# In this document:
-
-* [CVE Process](#cve)
-* [Current CVEs](#current)
-* [Threat Modeling](#threat)
-* [Use Case: Integrate NVMe Driver](#usecase)
-* [Use Case: NVMe over Fabrics Target](#usecase)
-* [Use Case: Vhost integration](#usecase)
 
 <a id="cve"></a>
 ## Common Vulnerabilities and Exposures (CVE) Process

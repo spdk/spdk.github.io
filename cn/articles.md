@@ -1,7 +1,17 @@
 ---
-layout: news
+layout: default
 title: 技术文章
 lang: cn
+
+toc:
+  - title: 用户案例
+    url: ../news
+  - title: 技术文章
+    url: ../articles
+  - title: 白皮书
+    url: ../whitepaper
+  - title: 在线分享
+    url: ../webinar
 ---
 
 **SPDK总体技术介绍**

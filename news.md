@@ -1,9 +1,17 @@
 ---
-layout: news
+layout: default
 title:  "SPDK In The News"
----
 
-# News items
+toc:
+  - title: News
+    url: ../news
+  - title: Technical Articles
+    url: ../articles
+  - title: Whitepapers
+    url: ../whitepaper
+  - title: Webinars
+    url: ../webinar
+---
 
 ## SPDK on Microsoft Windows
 
@@ -23,7 +31,7 @@ title:  "SPDK In The News"
 ## DAOS: Revolutionizing High-Performance Storage with Intel® Optane™ Technology, SPDK and PMDK
 
 ### [DAOS Sets New Records with Intel Optane Persistent Memory](https://software.intel.com/content/www/us/en/develop/articles/daos-sets-new-records-with-intel-optane-persistent-memory.html)
-> DAOS is entirely in userspace, utilizing the PMDK and SPDK open source libraries, not only bypassing the performance limitations of I/O through the kernel, but also alleviating other issues such as jitter, ease of administration, etc. DAOS also breaks free from the performance limitations of the POSIX interface, relying on the more performant optimistic concurrency control rather than the pessimistic concurrency control of POSIX. 
+> DAOS is entirely in userspace, utilizing the PMDK and SPDK open source libraries, not only bypassing the performance limitations of I/O through the kernel, but also alleviating other issues such as jitter, ease of administration, etc. DAOS also breaks free from the performance limitations of the POSIX interface, relying on the more performant optimistic concurrency control rather than the pessimistic concurrency control of POSIX.
 
 ## 2020 USENIX Annual Technical Conference, July 15–17, 2020
 
@@ -33,7 +41,7 @@ title:  "SPDK In The News"
 ## Radian Memory Systems® Announces Zoned Flash SSD with SPDK
 
 ### [Radian Completes Integration and Testing of Zoned Flash SSD with SPDK](https://www.prnewswire.com/news-releases/radian-completes-integration-and-testing-of-zoned-flash-ssd-with-spdk-301096896.html)
-> Radian ported their host Block Translation Layer (BTL) for zoned Flash from the Linux® Kernel to SPDK. The company has posted a [technical deep dive video](https://www.youtube.com/watch?v=ESgrIu0eT3I) that discusses this effort, which includes a comparative, system level analysis between the Linux® Kernel and SPDK implementations. 
+> Radian ported their host Block Translation Layer (BTL) for zoned Flash from the Linux® Kernel to SPDK. The company has posted a [technical deep dive video](https://www.youtube.com/watch?v=ESgrIu0eT3I) that discusses this effort, which includes a comparative, system level analysis between the Linux® Kernel and SPDK implementations.
 
 ## VAST Data Universal Storage 3.0 Webinar
 

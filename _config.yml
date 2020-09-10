@@ -16,43 +16,27 @@ permalink: pretty
 include: [.well-known]
 
 boxes:
-  - title: home
-    title-cn: 主页
-    url: /
-    ico: home
   - title: download
     title-cn: 下载
     url: /releases/
-    ico: download-alt
   - title: documentation
     title-cn: 文档
     url: /doc/
-    ico: book
   - title: development
     title-cn: 开发
     url: /development/
-    ico: wrench
   - title: CI status
     title-cn: 集成测试
     url: /ci/
-    ico: ok
   - title: community
     title-cn: 社区
     url: /community/
-    ico: envelope
   - title: Blog
     title-cn: 博客
     url: /blog/
-    ico: comment
   - title: Roadmap
     title-cn: 路线图
     url: https://trello.com/b/MN8auadQ/spdk-roadmap
-    ico: map-marker
   - title: News
     title-cn: 动态
     url: /news/
-    ico: bullhorn
-
-
-plugins:
-  - jekyll-feed

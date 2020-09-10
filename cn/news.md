@@ -1,10 +1,18 @@
 ---
-layout: news
+layout: default
 title:  "SPDK用户案例"
 lang: cn
----
 
-# 新闻条目
+toc:
+  - title: 用户案例
+    url: ../news
+  - title: 技术文章
+    url: ../articles
+  - title: 白皮书
+    url: ../whitepaper
+  - title: 在线分享
+    url: ../webinar
+---
 
 ## 阿里云
 ### [高性能云服务器：本地SSD](https://promotion.aliyun.com/ntms/act/ecshighperformance.html?open_id=1d8213d3-b437-4596-a88a-d27798942d3a-&open_cid=4703)

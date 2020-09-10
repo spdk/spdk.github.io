@@ -1,27 +1,112 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
   {% include head.html %}
 
   <body>
-    <div class="container-fluid">
-      <div class="row no-gutters">
-        <div class="col-xs-12">
-          {% include header.html %}
-          {% include banner.html %}
+    {% include header.html %}
+
+    <div class="masthead" id="content" role="main">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 order-md-1 mt-3">
+            <h1 class="mb-3">Build Ultra High-Performance Storage Applications with the Storage Performance Development Kit</h1>
+            <p class="lead mb-4">
+              The Storage Performance Development Kit (SPDK) provides a set of tools and libraries for writing high performance, scalable, user-mode storage applications.</p>
+            <div>
+              <a href="/doc/" class="btn btn-lg btn-dark mb-3 mr-md-3">Get started</a>
+              <a href="/releases/" class="btn btn-lg btn-outline-dark mb-3">Download</a>
+            </div>
+          </div>
+          <div class="col-md-6 order-md-2 mt-3">
+            <img src="{{ baseurl_rel }}/img/spdk.svg" alt="Storage Performance Development Kit" />
+          </div>
         </div>
       </div>
-
-      <div class="row">
-        <div class="col-xs-8">
-          <section id="content" class="content text-center">
-            {{ content }}
-          </section>
-        </div>
-        <div class="col-xs-4">
-          {% include news.html %}
-        </div>
-      </div>
-
     </div>
+
+    <div class="followup">
+      <div class="container">
+        <div class="row">
+          <!-- Put NVMe logo on left?-->
+          <div class="col-md-6 p-3">
+            <h2>Cutting Edge</h2>
+            <ul>
+              <li>Leverage the latest NVMe features</li>
+              <li>User-mode drivers with minimal Linux version dependencies</li>
+              <li>Poll-mode and event-loop design for maximum performance</li>
+              <li>Lockless, thread-per-core design</li>
+            </ul>
+
+            <div>
+              <a href="/doc/" class="btn btn-lg btn-dark mb-3 mr-md-3">Performance Reports</a>
+              <a href="/blog/" class="btn btn-lg btn-outline-dark mb-3">Blog</a>
+            </div>
+          </div>
+
+          <div class="col-md-6 p-3">
+            <h2>Open Source Community</h2>
+            <ul>
+              <li>Active, engaged community</li>
+              <li>BSD 3-Clause License</li>
+            </ul>
+
+            <div>
+              <a href="/community/" class="btn btn-lg btn-dark mb-3 mr-md-3">Join Us</a>
+              <a href="https://github.com/spdk/spdk" class="btn btn-lg btn-outline-dark mb-3">GitHub</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6 p-3">
+            <h2>Production Ready</h2>
+            <ul>
+              <li>Widely deployed, powering many critical services</li>
+              <li>Automated continuous integration</li>
+            </ul>
+
+            <div>
+              <a href="/development/" class="btn btn-lg btn-dark mb-3 mr-md-3">Learn More</a>
+              <a href="https://github.com/spdk/spdk" class="btn btn-lg btn-outline-dark mb-3">CI Status</a>
+            </div>
+          </div>
+
+          <div class="col-md-6 p-3">
+            <h2>Well Documented</h2>
+            <ul>
+              <li>Extensive documentation</li>
+              <li>Strict, quarterly release process</li>
+              <li>API stability. ABI versioning</li>
+            </ul>
+
+            <div>
+              <a href="/doc/" class="btn btn-lg btn-dark mb-3 mr-md-3">Guides</a>
+              <a href="https://github.com/spdk/spdk" class="btn btn-lg btn-outline-dark mb-3">API Documentation</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="news">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+
+            <section id="blog" class="blog">
+              {% for post in site.posts limit:10 %}
+                <div class="blog-section">
+                  <a class="text-primary" href="{{ baseurl_rel }}{{ post.url }}"><h2 class="blog-heading text-primary">{{ post.title }}</h2></a>
+                  <div class="blog-author">{{ post.date | date: "%b %-d, %Y" }} • {{ post.author }}</div>
+                  <div class="content">{{ post.excerpt }}  <a class="text-primary" href="{{ baseurl_rel }}{{ post.url }}">Continue...</a></div>
+                </div>
+              {% endfor %}
+            </section>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
   </body>
 </html>

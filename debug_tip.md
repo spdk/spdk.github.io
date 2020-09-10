@@ -1,13 +1,15 @@
 ---
 layout: default
 title:  "SPDK Debugging Tips"
+
+toc:
+  - title: Investigating issues found in SPDK CI Jenkins
+    url: "#ci_jenkins"
+  - title: Running autotest locally
+    url: "#local_run"
+  - title: Live debugging with GDB
+    url: "#gdb"
 ---
-
-# In this document:
-
-* [Investigating issues found in SPDK CI Jenkins](#ci_jenkins)
-* [Running autotest locally](#local_run)
-* [Live debugging with GDB](#gdb)
 
 <a id="ci_jenkins"></a>
 ## Investigating issues found in SPDK CI Jenkins

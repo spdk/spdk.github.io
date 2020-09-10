@@ -2,22 +2,40 @@
 layout: default
 title:  "SPDK Community"
 jsfiles: js/meetings.js
+
+toc:
+  - title: Slack
+    url: "#slack"
+  - title: Trello
+    url: "#trello"
+  - title: Mailing List
+    url: "#mailing_list"
+  - title: Community Meetings
+    url: "#meetings"
+  - title: Become a Contributor
+    url: "#contributing"
+  - title: Holidays
+    url: "#holidays"
 ---
 
+<a id="slack"></a>
 # Slack
 
 For real-time discussions, join us on [Slack](https://join.slack.com/t/spdk-team/shared_invite/enQtNzg2NTgxNTgzNzEyLWQ2Y2NmOGFkN2FlYjczMWY1ZDZiMzFjZTI4ZGIyZDc0YTA3ZjE5YWQ3MGVjYzI1MTg0OGYzMjFhZDczZDYwZmY).
 
+<a id="trello"></a>
 # Trello Board
 
 Find something to work on the backlog in your area of interest, or start/participate in a design discussion on any of the [SPDK Trello Boards](../trello/).
 
+<a id="mailing_list"></a>
 # Mailing List
 
 The
 [SPDK Mailing List](https://lists.01.org/hyperkitty/list/spdk@lists.01.org/) is
 available for usage and development questions as well as design discussions.
 
+<a id="meetings"></a>
 # Community Meetings
 
 SPDK Community meetings are open to everyone and all are encouraged to
@@ -56,10 +74,12 @@ a bookmark with the link below should make it easy to join weekly.
 ## Next Asia-Friendly Github Issue Review Meeting
 <div id="asia-bug-mtg"></div>
 
+<a id="contributing"></a>
 # Contributing
 
 See the [Development](/development/) page for more information on how to contribute to SPDK.
 
+<a id="holidays"></a>
 # Holidays
 
 Community meetings scheduled on the following days will be cancelled:

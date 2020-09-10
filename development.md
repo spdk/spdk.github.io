@@ -1,30 +1,50 @@
 ---
 layout: default
 title:  "SPDK Development"
+
+toc:
+  - title: Process
+    url: "#"
+    items:
+    - title: License
+      url: "#license"
+    - title: Source
+      url: "#source"
+    - title: Contributing
+      url: "#contributing"
+    - title: Development Guidelines
+      url: "#guidelines"
+    - title: Gerrit Configuration
+      url: "#Gerrit"
+    - title: Submitting a Patch
+      url: "#patch"
+    - title: Continuous Integration
+      url: "#integration"
+    - title: False Positives in CI
+      url: "#integration_false_positive"
+    - title: Local Testing
+      url: "#local"
+    - title: Code Review
+      url: "#review"
+    - title: Review Hashtags
+      url: "#hashtags"
+    - title: Revising Patches
+      url: "#revise"
+    - title: Multi-Commit Patch Series
+      url: "#multi"
+    - title: Managing Submodule Patches
+      url: "#submodule"
+    - title: Core Maintainers
+      url: "#core"
+  - title: Continuous Integration
+    url: "../ci/"
+  - title: Roadmap
+    url: "https://trello.com/b/MN8auadQ/spdk-roadmap"
+  - title: CVE Process and Threat Modeling
+    url: "../cve_threat/"
+  - title: Debugging Tips
+    url: "../debug_tip/"
 ---
-
-# In this document:
-
-* [License](#license)
-* [Source Code](#source)
-* [Contributing](#contributing)
-* [Development Guidelines](#guidelines)
-* [Gerrit Configuration](#Gerrit)
-* [Submitting a Patch](#patch)
-* [Continuous Integration](#integration)
-* [False Positives in CI](#integration_false_positive)
-* [Local Testing](#local)
-* [Code Review](#review)
-* [Review Hashtags](#hashtags)
-* [Revising Patches](#revise)
-* [Multi-Commit Patch Series](#multi)
-* [Managing Submodule Patches](#submodule)
-* [Core Maintainers](#core)
-
-# Additional Documents
-
-* [CVE Process and Threat Modeling](../cve_threat/)
-* [Debugging Tips](../debug_tip/)
 
 <a id="license"></a>
 ## License

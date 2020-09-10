@@ -1,6 +1,16 @@
 ---
-layout: news
+layout: default
 title:  "SPDK Webinars"
+
+toc:
+  - title: News
+    url: ../news
+  - title: Technical Articles
+    url: ../articles
+  - title: Whitepapers
+    url: ../whitepaper
+  - title: Webinars
+    url: ../webinar
 ---
 
 ## [SPDK on YouTube](https://www.youtube.com/channel/UCBJymdv0AXCcnbLtEw7jvBQ)
