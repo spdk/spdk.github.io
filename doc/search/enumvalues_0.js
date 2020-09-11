@@ -87,6 +87,7 @@ var searchData=
   ['spdk_5fnvme_5flog_5fsanitize_5fstatus',['SPDK_NVME_LOG_SANITIZE_STATUS',['../nvme__spec_8h.html#a3d5e453e4d95b0f5b9bb4de04ace78c4a96d86f9eff782b5207b78ea26c6e3b2b',1,'nvme_spec.h']]],
   ['spdk_5fnvme_5flog_5ftelemetry_5fctrlr_5finitiated',['SPDK_NVME_LOG_TELEMETRY_CTRLR_INITIATED',['../nvme__spec_8h.html#a3d5e453e4d95b0f5b9bb4de04ace78c4aa21d97922f4ef61731fd20986d30b2c8',1,'nvme_spec.h']]],
   ['spdk_5fnvme_5flog_5ftelemetry_5fhost_5finitiated',['SPDK_NVME_LOG_TELEMETRY_HOST_INITIATED',['../nvme__spec_8h.html#a3d5e453e4d95b0f5b9bb4de04ace78c4a6b0a3950980fadba16d971811a31afa0',1,'nvme_spec.h']]],
+  ['spdk_5fnvme_5fnidt_5fcsi',['SPDK_NVME_NIDT_CSI',['../nvme__spec_8h.html#a3711b38213aaa9ff7a2aa7d1efe8e2f1a364f577e8060e2006727124050c6fcfb',1,'nvme_spec.h']]],
   ['spdk_5fnvme_5fnidt_5feui64',['SPDK_NVME_NIDT_EUI64',['../nvme__spec_8h.html#a3711b38213aaa9ff7a2aa7d1efe8e2f1a782356d3092200ea469f992d0677f08c',1,'nvme_spec.h']]],
   ['spdk_5fnvme_5fnidt_5fnguid',['SPDK_NVME_NIDT_NGUID',['../nvme__spec_8h.html#a3711b38213aaa9ff7a2aa7d1efe8e2f1aa49a14ce8e55eb9ebefca7e0d6b4df82',1,'nvme_spec.h']]],
   ['spdk_5fnvme_5fnidt_5fuuid',['SPDK_NVME_NIDT_UUID',['../nvme__spec_8h.html#a3711b38213aaa9ff7a2aa7d1efe8e2f1ae4257777f26428ed69c6122ad06a46de',1,'nvme_spec.h']]],

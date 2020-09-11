@@ -1,5 +1,11 @@
 var NAVTREEINDEX20 =
 {
+"structspdk__nvmf__fc__ersp__iu.html#a16d7f9d9f84f401bc78c5e34e71e1050":[12,0,194,6],
+"structspdk__nvmf__fc__ersp__iu.html#a29ee75736d01045eee025178d31fa547":[12,0,194,1],
+"structspdk__nvmf__fc__ersp__iu.html#a8fd3ff518a639c115737838bef4f8535":[12,0,194,2],
+"structspdk__nvmf__fc__ersp__iu.html#aa4b805d04cfa3df5c4ce95cfffc7c9f9":[12,0,194,0],
+"structspdk__nvmf__fc__ersp__iu.html#ac5766e4b2bada3fc635295b7e9e04cc2":[12,0,194,3],
+"structspdk__nvmf__fc__ersp__iu.html#aff30c9429fd31545756d9e182920e375":[12,0,194,5],
 "structspdk__nvmf__fc__frame__hdr.html":[12,0,195],
 "structspdk__nvmf__fc__frame__hdr.html#a0c7da7d606ac5d21f0e6c8b7bdbc19be":[12,0,195,1],
 "structspdk__nvmf__fc__frame__hdr.html#a0fc0df05af69c8e46c413696a3a51558":[12,0,195,9],
@@ -101,7 +107,7 @@ var NAVTREEINDEX20 =
 "structspdk__nvmf__fc__wwn.html":[12,0,212],
 "structspdk__nvmf__fc__wwn.html#a161162c1f8743d16dba6705f54bf21d4":[12,0,212,0],
 "structspdk__nvmf__fc__wwn.html#a198b3f48e6801eb52d131fa4ad4b3ff9":[12,0,212,2],
-"structspdk__nvmf__fc__wwn.html#a35380f6e8be11b74faa6cd775fa35e3b":[12,0,212,1],
+"structspdk__nvmf__fc__wwn.html#a685bf57112fd266d7245c156b2af9145":[12,0,212,1],
 "structspdk__nvmf__fc__xfer__rdy__iu.html":[12,0,213],
 "structspdk__nvmf__fc__xfer__rdy__iu.html#a4b2d00a559fb70b78d15f8086dbcc307":[12,0,213,2],
 "structspdk__nvmf__fc__xfer__rdy__iu.html#a5cb6f3066e0e6efc9987b294202d16ba":[12,0,213,1],
@@ -243,11 +249,5 @@ var NAVTREEINDEX20 =
 "structspdk__nvmf__transport__opts.html":[12,0,230],
 "structspdk__nvmf__transport__opts.html#a063b1c1080343c707a3d51ced615628f":[12,0,230,8],
 "structspdk__nvmf__transport__opts.html#a12c798cc83976f1edaf15c3627d31c70":[12,0,230,9],
-"structspdk__nvmf__transport__opts.html#a1c5194a083b544bd71072267c4d341e0":[12,0,230,13],
-"structspdk__nvmf__transport__opts.html#a2b6ff1cfeceb9e5543a8c44d0aded628":[12,0,230,5],
-"structspdk__nvmf__transport__opts.html#a2da208b1331d736622c84eb575ef48b9":[12,0,230,0],
-"structspdk__nvmf__transport__opts.html#a51e173174fe161295fcf24c1e0c18438":[12,0,230,6],
-"structspdk__nvmf__transport__opts.html#a5826b0dbf7380725eec4538a3a04830e":[12,0,230,1],
-"structspdk__nvmf__transport__opts.html#a7a21914db32fb20482f749e95c99f013":[12,0,230,12],
-"structspdk__nvmf__transport__opts.html#a7e6e60442ef1d45efab0e6159d060a8e":[12,0,230,7]
+"structspdk__nvmf__transport__opts.html#a1c5194a083b544bd71072267c4d341e0":[12,0,230,13]
 };

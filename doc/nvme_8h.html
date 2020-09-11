@@ -585,6 +585,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a6c559063408299a4612fd2e62f97bc63"><td class="memItemLeft" align="right" valign="top">const struct <a class="el" href="structspdk__uuid.html">spdk_uuid</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a6c559063408299a4612fd2e62f97bc63">spdk_nvme_ns_get_uuid</a> (const struct spdk_nvme_ns *ns)</td></tr>
 <tr class="memdesc:a6c559063408299a4612fd2e62f97bc63"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the UUID for the given namespace.  <a href="#a6c559063408299a4612fd2e62f97bc63">More...</a><br /></td></tr>
 <tr class="separator:a6c559063408299a4612fd2e62f97bc63"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8740d083341479c3c22861f16582795c"><td class="memItemLeft" align="right" valign="top">enum spdk_nvme_csi&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a8740d083341479c3c22861f16582795c">spdk_nvme_ns_get_csi</a> (const struct spdk_nvme_ns *ns)</td></tr>
+<tr class="memdesc:a8740d083341479c3c22861f16582795c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the Command Set Identifier for the given namespace.  <a href="#a8740d083341479c3c22861f16582795c">More...</a><br /></td></tr>
+<tr class="separator:a8740d083341479c3c22861f16582795c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5eff1c1b6fbfb348a1f158b3cf70626f"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a5eff1c1b6fbfb348a1f158b3cf70626f">spdk_nvme_ns_get_flags</a> (struct spdk_nvme_ns *ns)</td></tr>
 <tr class="memdesc:a5eff1c1b6fbfb348a1f158b3cf70626f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the flags for the given namespace.  <a href="#a5eff1c1b6fbfb348a1f158b3cf70626f">More...</a><br /></td></tr>
 <tr class="separator:a5eff1c1b6fbfb348a1f158b3cf70626f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -5815,6 +5818,33 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_map_prps</b>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 if successfully submitted, negated errnos on the following error conditions: -EINVAL: The request is malformed. -ENOMEM: The request cannot be allocated. -ENXIO: The qpair is failed at the transport level. -EFAULT: Invalid address was specified as part of payload. cb_fn is also called with error status including dnr=1 in this case. </dd></dl>
+
+</div>
+</div>
+<a id="a8740d083341479c3c22861f16582795c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8740d083341479c3c22861f16582795c">&#9670;&nbsp;</a></span>spdk_nvme_ns_get_csi()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum spdk_nvme_csi spdk_nvme_ns_get_csi </td>
+          <td>(</td>
+          <td class="paramtype">const struct spdk_nvme_ns *&#160;</td>
+          <td class="paramname"><em>ns</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the Command Set Identifier for the given namespace. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ns</td><td>Namespace to query.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the namespace Command Set Identifier. </dd></dl>
 
 </div>
 </div>

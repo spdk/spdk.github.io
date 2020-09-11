@@ -951,10 +951,16 @@ Enumerations</h2></td></tr>
 <tr class="separator:ae4e10443176e941bea118b389679c345"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3711b38213aaa9ff7a2aa7d1efe8e2f1"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme__spec_8h.html#a3711b38213aaa9ff7a2aa7d1efe8e2f1">spdk_nvme_nidt</a> { <a class="el" href="nvme__spec_8h.html#a3711b38213aaa9ff7a2aa7d1efe8e2f1a782356d3092200ea469f992d0677f08c">SPDK_NVME_NIDT_EUI64</a> = 0x01, 
 <a class="el" href="nvme__spec_8h.html#a3711b38213aaa9ff7a2aa7d1efe8e2f1aa49a14ce8e55eb9ebefca7e0d6b4df82">SPDK_NVME_NIDT_NGUID</a> = 0x02, 
-<a class="el" href="nvme__spec_8h.html#a3711b38213aaa9ff7a2aa7d1efe8e2f1ae4257777f26428ed69c6122ad06a46de">SPDK_NVME_NIDT_UUID</a> = 0x03
+<a class="el" href="nvme__spec_8h.html#a3711b38213aaa9ff7a2aa7d1efe8e2f1ae4257777f26428ed69c6122ad06a46de">SPDK_NVME_NIDT_UUID</a> = 0x03, 
+<a class="el" href="nvme__spec_8h.html#a3711b38213aaa9ff7a2aa7d1efe8e2f1a364f577e8060e2006727124050c6fcfb">SPDK_NVME_NIDT_CSI</a> = 0x04
  }</td></tr>
 <tr class="memdesc:a3711b38213aaa9ff7a2aa7d1efe8e2f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Namespace identification descriptor type.  <a href="nvme__spec_8h.html#a3711b38213aaa9ff7a2aa7d1efe8e2f1">More...</a><br /></td></tr>
 <tr class="separator:a3711b38213aaa9ff7a2aa7d1efe8e2f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d4465980e10527d891eb3654957f6be"><td class="memItemLeft" align="right" valign="top"><a id="a8d4465980e10527d891eb3654957f6be"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_csi</b> { <b>SPDK_NVME_CSI_NVM</b> = 0x0, 
+<b>SPDK_NVME_CSI_KV</b> = 0x1, 
+<b>SPDK_NVME_CSI_ZNS</b> = 0x2
+ }</td></tr>
+<tr class="separator:a8d4465980e10527d891eb3654957f6be"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa0e5f56ea65cdec493d43ca67dc69a33"><td class="memItemLeft" align="right" valign="top"><a id="aa0e5f56ea65cdec493d43ca67dc69a33"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_secure_erase_setting</b> { <b>SPDK_NVME_FMT_NVM_SES_NO_SECURE_ERASE</b> = 0x0, 
 <b>SPDK_NVME_FMT_NVM_SES_USER_DATA_ERASE</b> = 0x1, 
 <b>SPDK_NVME_FMT_NVM_SES_CRYPTO_ERASE</b> = 0x2
@@ -1722,6 +1728,8 @@ Functions</h2></td></tr>
 <tr><td class="fieldname"><a id="a3711b38213aaa9ff7a2aa7d1efe8e2f1aa49a14ce8e55eb9ebefca7e0d6b4df82"></a>SPDK_NVME_NIDT_NGUID&#160;</td><td class="fielddoc"><p>Namespace GUID. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a3711b38213aaa9ff7a2aa7d1efe8e2f1ae4257777f26428ed69c6122ad06a46de"></a>SPDK_NVME_NIDT_UUID&#160;</td><td class="fielddoc"><p>Namespace UUID. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a3711b38213aaa9ff7a2aa7d1efe8e2f1a364f577e8060e2006727124050c6fcfb"></a>SPDK_NVME_NIDT_CSI&#160;</td><td class="fielddoc"><p>Namespace Command Set Identifier. </p>
 </td></tr>
 </table>
 

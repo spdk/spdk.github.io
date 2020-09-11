@@ -2875,12 +2875,14 @@ sock_impl_set_options</h2>
 <td class="markdownTableBodyNone">enable_zerocopy_send  </td><td class="markdownTableBodyNone">Optional  </td><td class="markdownTableBodyNone">boolean  </td><td class="markdownTableBodyNone">Enable or disable zero copy on send   </td></tr>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">enable_quick_ack  </td><td class="markdownTableBodyNone">Optional  </td><td class="markdownTableBodyNone">boolean  </td><td class="markdownTableBodyNone">Enable or disable quick ACK   </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">enable_placement_id  </td><td class="markdownTableBodyNone">Optional  </td><td class="markdownTableBodyNone">boolean  </td><td class="markdownTableBodyNone">Enable or disable placement_id   </td></tr>
 </table>
 <h3>Response</h3>
 <p>True if socket layer options were set successfully.</p>
 <h3>Example</h3>
 <p>Example request:</p>
-<div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;method&quot;: &quot;sock_impl_set_options&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;params&quot;: {</div><div class="line">    &quot;impl_name&quot;: &quot;posix&quot;,</div><div class="line">    &quot;recv_buf_size&quot;: 2097152,</div><div class="line">    &quot;send_buf_size&quot;: 2097152,</div><div class="line">    &quot;enable_recv_pipe&quot;: false,</div><div class="line">    &quot;enable_zerocopy_send&quot;: true,</div><div class="line">    &quot;enable_quick_ack&quot;: false</div><div class="line">  }</div><div class="line">}</div></div><!-- fragment --><p>Example response:</p>
+<div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;method&quot;: &quot;sock_impl_set_options&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;params&quot;: {</div><div class="line">    &quot;impl_name&quot;: &quot;posix&quot;,</div><div class="line">    &quot;recv_buf_size&quot;: 2097152,</div><div class="line">    &quot;send_buf_size&quot;: 2097152,</div><div class="line">    &quot;enable_recv_pipe&quot;: false,</div><div class="line">    &quot;enable_zerocopy_send&quot;: true,</div><div class="line">    &quot;enable_quick_ack&quot;: false,</div><div class="line">    &quot;enable_placement_id&quot;: false</div><div class="line">  }</div><div class="line">}</div></div><!-- fragment --><p>Example response:</p>
 <div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: true</div><div class="line">}</div></div><!-- fragment --><h1>Miscellaneous RPC commands</h1>
 <h2><a class="anchor" id="rpc_bdev_nvme_send_cmd"></a>
 bdev_nvme_send_cmd</h2>

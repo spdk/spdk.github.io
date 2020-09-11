@@ -240,6 +240,11 @@ var nvme__spec_8h =
       [ "SPDK_NVME_SC_INVALID_PROTECTION_INFO", "nvme__spec_8h.html#acb8784fad6a53be95d4c718ad3cf852ea6c56e9d4179e4b79b50854982b3d86f8", null ],
       [ "SPDK_NVME_SC_ATTEMPTED_WRITE_TO_RO_RANGE", "nvme__spec_8h.html#acb8784fad6a53be95d4c718ad3cf852ea24a73fa586b632d528c3953d07734d8c", null ]
     ] ],
+    [ "spdk_nvme_csi", "nvme__spec_8h.html#a8d4465980e10527d891eb3654957f6be", [
+      [ "SPDK_NVME_CSI_NVM", "nvme__spec_8h.html#a8d4465980e10527d891eb3654957f6bea82bc889e4822faf517a6c63213efc89b", null ],
+      [ "SPDK_NVME_CSI_KV", "nvme__spec_8h.html#a8d4465980e10527d891eb3654957f6bea5169dc84cc9ad66704b1a02f3e3d29ef", null ],
+      [ "SPDK_NVME_CSI_ZNS", "nvme__spec_8h.html#a8d4465980e10527d891eb3654957f6beacda6f340e1616ad06a454e3822c89646", null ]
+    ] ],
     [ "spdk_nvme_data_transfer", "nvme__spec_8h.html#adbe38e042bb939183ed8fd5c1685b2fc", [
       [ "SPDK_NVME_DATA_NONE", "nvme__spec_8h.html#adbe38e042bb939183ed8fd5c1685b2fca4d074786dad4f37c0211563ec0376974", null ],
       [ "SPDK_NVME_DATA_HOST_TO_CONTROLLER", "nvme__spec_8h.html#adbe38e042bb939183ed8fd5c1685b2fca7f08188b3c5f57f2f694f6ef13ad0110", null ],
@@ -377,7 +382,8 @@ var nvme__spec_8h =
     [ "spdk_nvme_nidt", "nvme__spec_8h.html#a3711b38213aaa9ff7a2aa7d1efe8e2f1", [
       [ "SPDK_NVME_NIDT_EUI64", "nvme__spec_8h.html#a3711b38213aaa9ff7a2aa7d1efe8e2f1a782356d3092200ea469f992d0677f08c", null ],
       [ "SPDK_NVME_NIDT_NGUID", "nvme__spec_8h.html#a3711b38213aaa9ff7a2aa7d1efe8e2f1aa49a14ce8e55eb9ebefca7e0d6b4df82", null ],
-      [ "SPDK_NVME_NIDT_UUID", "nvme__spec_8h.html#a3711b38213aaa9ff7a2aa7d1efe8e2f1ae4257777f26428ed69c6122ad06a46de", null ]
+      [ "SPDK_NVME_NIDT_UUID", "nvme__spec_8h.html#a3711b38213aaa9ff7a2aa7d1efe8e2f1ae4257777f26428ed69c6122ad06a46de", null ],
+      [ "SPDK_NVME_NIDT_CSI", "nvme__spec_8h.html#a3711b38213aaa9ff7a2aa7d1efe8e2f1a364f577e8060e2006727124050c6fcfb", null ]
     ] ],
     [ "spdk_nvme_ns_attach_type", "nvme__spec_8h.html#a3828a2c3688ee12cc4c2ffce0d43031f", [
       [ "SPDK_NVME_NS_CTRLR_ATTACH", "nvme__spec_8h.html#a3828a2c3688ee12cc4c2ffce0d43031fafa253447e0333bfea5df7c75e1874f99", null ],
