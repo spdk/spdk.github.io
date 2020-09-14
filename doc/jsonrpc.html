@@ -465,6 +465,63 @@ bdev_set_qos_limit</h2>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;method&quot;: &quot;bdev_set_qos_limit&quot;,</div><div class="line">  &quot;params&quot;: {</div><div class="line">    &quot;name&quot;: &quot;Malloc0&quot;</div><div class="line">    &quot;rw_ios_per_sec&quot;: 20000</div><div class="line">    &quot;rw_mbytes_per_sec&quot;: 100</div><div class="line">    &quot;r_mbytes_per_sec&quot;: 50</div><div class="line">    &quot;w_mbytes_per_sec&quot;: 50</div><div class="line">  }</div><div class="line">}</div></div><!-- fragment --><p>Example response:</p>
+<div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: true</div><div class="line">}</div></div><!-- fragment --><h2><a class="anchor" id="rpc_bdev_compress_create"></a>
+bdev_compress_create</h2>
+<p>Create a new compress bdev on a given base bdev.</p>
+<h3>Parameters</h3>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Name  </th><th class="markdownTableHeadNone">Optional  </th><th class="markdownTableHeadNone">Type  </th><th class="markdownTableHeadNone">Description   </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">base_bdev_name  </td><td class="markdownTableBodyNone">Required  </td><td class="markdownTableBodyNone">string  </td><td class="markdownTableBodyNone">Name of the base bdev   </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">pm_path  </td><td class="markdownTableBodyNone">Required  </td><td class="markdownTableBodyNone">string  </td><td class="markdownTableBodyNone">Path to persistent memory   </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">lb_size  </td><td class="markdownTableBodyNone">Optional  </td><td class="markdownTableBodyNone">int  </td><td class="markdownTableBodyNone">Compressed vol logical block size (512 or 4096)   </td></tr>
+</table>
+<h3>Result</h3>
+<p>Name of newly created bdev.</p>
+<h3>Example</h3>
+<p>Example request:</p>
+<div class="fragment"><div class="line">{</div><div class="line">  &quot;params&quot;: {</div><div class="line">    &quot;base_bdev_name&quot;: &quot;Nvme0n1&quot;,</div><div class="line">    &quot;pm_path&quot;: &quot;/pm_files&quot;,</div><div class="line">    &quot;lb_size&quot;: 4096</div><div class="line">  },</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;method&quot;: &quot;bdev_compress_create&quot;,</div><div class="line">  &quot;id&quot;: 1</div><div class="line">}</div></div><!-- fragment --><h2><a class="anchor" id="rpc_bdev_compress_delete"></a>
+bdev_compress_delete</h2>
+<p>Delete a compressed bdev.</p>
+<h3>Parameters</h3>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Name  </th><th class="markdownTableHeadNone">Optional  </th><th class="markdownTableHeadNone">Type  </th><th class="markdownTableHeadNone">Description   </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">name  </td><td class="markdownTableBodyNone">Required  </td><td class="markdownTableBodyNone">string  </td><td class="markdownTableBodyNone">Name of the compress bdev   </td></tr>
+</table>
+<h3>Example</h3>
+<p>Example request:</p>
+<div class="fragment"><div class="line">{</div><div class="line">  &quot;params&quot;: {</div><div class="line">    &quot;name&quot;: &quot;COMP_Nvme0n1&quot;</div><div class="line">  },</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;method&quot;: &quot;bdev_compress_delete&quot;,</div><div class="line">  &quot;id&quot;: 1</div><div class="line">}</div></div><!-- fragment --><p>Example response:</p>
+<div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: true</div><div class="line">}</div></div><!-- fragment --><h2><a class="anchor" id="rpc_bdev_compress_get_orphans"></a>
+bdev_compress_get_orphans</h2>
+<p>Get a list of compressed volumes that are missing their pmem metadata.</p>
+<h3>Parameters</h3>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Name  </th><th class="markdownTableHeadNone">Optional  </th><th class="markdownTableHeadNone">Type  </th><th class="markdownTableHeadNone">Description   </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">name  </td><td class="markdownTableBodyNone">Required  </td><td class="markdownTableBodyNone">string  </td><td class="markdownTableBodyNone">Name of the compress bdev   </td></tr>
+</table>
+<h3>Example</h3>
+<p>Example request:</p>
+<div class="fragment"><div class="line">{</div><div class="line">  &quot;params&quot;: {</div><div class="line">    &quot;name&quot;: &quot;COMP_Nvme0n1&quot;</div><div class="line">  },</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;method&quot;: &quot;bdev_compress_get_orphans&quot;,</div><div class="line">  &quot;id&quot;: 1</div><div class="line">}</div></div><!-- fragment --><p>Example response:</p>
+<div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;name&quot;: &quot;COMP_Nvme0n1&quot;</div><div class="line">}</div></div><!-- fragment --><h2><a class="anchor" id="rpc_bdev_compress_set_pmd"></a>
+bdev_compress_set_pmd</h2>
+<p>Select the DPDK polled mode driver (pmd) for a compressed bdev, 0 = auto-select, 1= QAT only, 2 = ISAL only.</p>
+<h3>Parameters</h3>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Name  </th><th class="markdownTableHeadNone">Optional  </th><th class="markdownTableHeadNone">Type  </th><th class="markdownTableHeadNone">Description   </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">pmd  </td><td class="markdownTableBodyNone">Required  </td><td class="markdownTableBodyNone">int  </td><td class="markdownTableBodyNone">pmd selection   </td></tr>
+</table>
+<h3>Example</h3>
+<p>Example request:</p>
+<div class="fragment"><div class="line">{</div><div class="line">  &quot;params&quot;: {</div><div class="line">    &quot;pmd&quot;: 1</div><div class="line">  },</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;method&quot;: &quot;bdev_compress_set_pmd&quot;,</div><div class="line">  &quot;id&quot;: 1</div><div class="line">}</div></div><!-- fragment --><p>Example response:</p>
 <div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: true</div><div class="line">}</div></div><!-- fragment --><h2><a class="anchor" id="rpc_bdev_ocf_create"></a>
 bdev_ocf_create</h2>
 <p>Construct new OCF bdev. Command accepts cache mode that is going to be used. Currently, we support Write-Through, Pass-Through and Write-Back OCF cache modes.</p>

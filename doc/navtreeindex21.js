@@ -1,5 +1,8 @@
 var NAVTREEINDEX21 =
 {
+"structspdk__nvmf__transport__opts.html#a063b1c1080343c707a3d51ced615628f":[12,0,230,8],
+"structspdk__nvmf__transport__opts.html#a12c798cc83976f1edaf15c3627d31c70":[12,0,230,9],
+"structspdk__nvmf__transport__opts.html#a1c5194a083b544bd71072267c4d341e0":[12,0,230,13],
 "structspdk__nvmf__transport__opts.html#a2b6ff1cfeceb9e5543a8c44d0aded628":[12,0,230,5],
 "structspdk__nvmf__transport__opts.html#a2da208b1331d736622c84eb575ef48b9":[12,0,230,0],
 "structspdk__nvmf__transport__opts.html#a51e173174fe161295fcf24c1e0c18438":[12,0,230,6],
@@ -246,8 +249,5 @@ var NAVTREEINDEX21 =
 "structspdk__pci__device.html#af862ae8f5abaf025ca2d94210ad1a073":[12,0,255,4],
 "structspdk__pci__device_1_1__spdk__pci__device__internal.html":[12,0,255,0],
 "structspdk__pci__device_1_1__spdk__pci__device__internal.html#a2b514abfed62001b229bfeb65985ade4":[12,0,255,0,1],
-"structspdk__pci__device_1_1__spdk__pci__device__internal.html#a2e0aa2853572332cd67c037e6a90c4a3":[12,0,255,0,5],
-"structspdk__pci__device_1_1__spdk__pci__device__internal.html#a7593c55137b63f8f8aada2d974acdc34":[12,0,255,0,2],
-"structspdk__pci__device_1_1__spdk__pci__device__internal.html#a9283b58bdd73e40901b788728a81f19d":[12,0,255,0,0],
-"structspdk__pci__device_1_1__spdk__pci__device__internal.html#aaee18ce18587afdd407c6668ef9220ce":[12,0,255,0,4]
+"structspdk__pci__device_1_1__spdk__pci__device__internal.html#a2e0aa2853572332cd67c037e6a90c4a3":[12,0,255,0,5]
 };
