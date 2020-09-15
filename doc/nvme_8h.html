@@ -519,6 +519,12 @@ Functions</h2></td></tr>
 <tr class="memitem:abb7ae9abf97b7c6b57777d06eaa1258a"><td class="memItemLeft" align="right" valign="top">const struct <a class="el" href="structspdk__nvme__transport__id.html">spdk_nvme_transport_id</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#abb7ae9abf97b7c6b57777d06eaa1258a">spdk_nvme_ctrlr_get_transport_id</a> (struct spdk_nvme_ctrlr *ctrlr)</td></tr>
 <tr class="memdesc:abb7ae9abf97b7c6b57777d06eaa1258a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the transport ID for a given NVMe controller.  <a href="#abb7ae9abf97b7c6b57777d06eaa1258a">More...</a><br /></td></tr>
 <tr class="separator:abb7ae9abf97b7c6b57777d06eaa1258a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8505b00dfaa6123d784c17c293cf3ffc"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a8505b00dfaa6123d784c17c293cf3ffc">spdk_nvme_ctrlr_alloc_qid</a> (struct spdk_nvme_ctrlr *ctrlr)</td></tr>
+<tr class="memdesc:a8505b00dfaa6123d784c17c293cf3ffc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Alloc NVMe I/O queue identifier.  <a href="#a8505b00dfaa6123d784c17c293cf3ffc">More...</a><br /></td></tr>
+<tr class="separator:a8505b00dfaa6123d784c17c293cf3ffc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c2054305f5c7453045eab833b1d4281"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a4c2054305f5c7453045eab833b1d4281">spdk_nvme_ctrlr_free_qid</a> (struct spdk_nvme_ctrlr *ctrlr, uint16_t qid)</td></tr>
+<tr class="memdesc:a4c2054305f5c7453045eab833b1d4281"><td class="mdescLeft">&#160;</td><td class="mdescRight">Free NVMe I/O queue identifier.  <a href="#a4c2054305f5c7453045eab833b1d4281">More...</a><br /></td></tr>
+<tr class="separator:a4c2054305f5c7453045eab833b1d4281"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a81b43dcf46edea01d74bd915b0fe2a3d"><td class="memItemLeft" align="right" valign="top">struct spdk_nvme_poll_group *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a81b43dcf46edea01d74bd915b0fe2a3d">spdk_nvme_poll_group_create</a> (void *ctx)</td></tr>
 <tr class="memdesc:a81b43dcf46edea01d74bd915b0fe2a3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new poll group.  <a href="#a81b43dcf46edea01d74bd915b0fe2a3d">More...</a><br /></td></tr>
 <tr class="separator:a81b43dcf46edea01d74bd915b0fe2a3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1199,6 +1205,34 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_map_prps</b>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>a pointer to the allocated I/O queue pair. </dd></dl>
+
+</div>
+</div>
+<a id="a8505b00dfaa6123d784c17c293cf3ffc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8505b00dfaa6123d784c17c293cf3ffc">&#9670;&nbsp;</a></span>spdk_nvme_ctrlr_alloc_qid()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t spdk_nvme_ctrlr_alloc_qid </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_nvme_ctrlr *&#160;</td>
+          <td class="paramname"><em>ctrlr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Alloc NVMe I/O queue identifier. </p>
+<p>This function is only needed for the non-standard case of allocating queues using the raw command interface. In most cases <a class="el" href="nvme_8h.html#a13f745d239dab9b8f934fae2ad4984a2">spdk_nvme_ctrlr_alloc_io_qpair</a> should be sufficient.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ctrlr</td><td>Opaque handle to NVMe controller. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>qid on success, -1 on failure. </dd></dl>
 
 </div>
 </div>
@@ -2572,6 +2606,44 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_map_prps</b>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 on success, -1 on failure. </dd></dl>
+
+</div>
+</div>
+<a id="a4c2054305f5c7453045eab833b1d4281"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4c2054305f5c7453045eab833b1d4281">&#9670;&nbsp;</a></span>spdk_nvme_ctrlr_free_qid()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_nvme_ctrlr_free_qid </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_nvme_ctrlr *&#160;</td>
+          <td class="paramname"><em>ctrlr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>qid</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Free NVMe I/O queue identifier. </p>
+<p>This function must only be called with qids previously allocated with <a class="el" href="nvme_8h.html#a8505b00dfaa6123d784c17c293cf3ffc">spdk_nvme_ctrlr_alloc_qid</a>.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ctrlr</td><td>Opaque handle to NVMe controller. </td></tr>
+    <tr><td class="paramname">qid</td><td>NVMe Queue Identifier. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
