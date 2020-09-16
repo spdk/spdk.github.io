@@ -1928,6 +1928,25 @@ nvmf_subsystem_remove_listener  method</h2>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;method&quot;: &quot;nvmf_subsystem_remove_listener&quot;,</div><div class="line">  &quot;params&quot;: {</div><div class="line">    &quot;nqn&quot;: &quot;nqn.2016-06.io.spdk:cnode1&quot;,</div><div class="line">    &quot;listen_address&quot;: {</div><div class="line">      &quot;trtype&quot;: &quot;RDMA&quot;,</div><div class="line">      &quot;adrfam&quot;: &quot;IPv4&quot;,</div><div class="line">      &quot;traddr&quot;: &quot;192.168.0.123&quot;,</div><div class="line">      &quot;trsvcid&quot;: &quot;4420&quot;</div><div class="line">    }</div><div class="line">  }</div><div class="line">}</div></div><!-- fragment --><p>Example response:</p>
+<div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: true</div><div class="line">}</div></div><!-- fragment --><h2><a class="anchor" id="rpc_nvmf_subsystem_listener_set_ana_state"></a>
+nvmf_subsystem_listener_set_ana_state  method</h2>
+<p>Set ANA state of a listener for an NVMe-oF subsystem.</p>
+<h3>Parameters</h3>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Name  </th><th class="markdownTableHeadNone">Optional  </th><th class="markdownTableHeadNone">Type  </th><th class="markdownTableHeadNone">Description   </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">nqn  </td><td class="markdownTableBodyNone">Required  </td><td class="markdownTableBodyNone">string  </td><td class="markdownTableBodyNone">Subsystem NQN   </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">tgt_name  </td><td class="markdownTableBodyNone">Optional  </td><td class="markdownTableBodyNone">string  </td><td class="markdownTableBodyNone">Parent NVMe-oF target name.   </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">listen_address  </td><td class="markdownTableBodyNone">Required  </td><td class="markdownTableBodyNone">object  </td><td class="markdownTableBodyNone"><a class="el" href="jsonrpc.html#rpc_nvmf_listen_address">listen_address</a> object   </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">ana_state  </td><td class="markdownTableBodyNone">Required  </td><td class="markdownTableBodyNone">string  </td><td class="markdownTableBodyNone">ANA state to set ("optimized", "non_optimized", or "inaccessible")   </td></tr>
+</table>
+<h3>Example</h3>
+<p>Example request:</p>
+<div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;method&quot;: &quot;nvmf_subsystem_listener_set_ana_state&quot;,</div><div class="line">  &quot;params&quot;: {</div><div class="line">    &quot;nqn&quot;: &quot;nqn.2016-06.io.spdk:cnode1&quot;,</div><div class="line">    &quot;listen_address&quot;: {</div><div class="line">      &quot;trtype&quot;: &quot;RDMA&quot;,</div><div class="line">      &quot;adrfam&quot;: &quot;IPv4&quot;,</div><div class="line">      &quot;traddr&quot;: &quot;192.168.0.123&quot;,</div><div class="line">      &quot;trsvcid&quot;: &quot;4420&quot;</div><div class="line">    },</div><div class="line">    &quot;ana_state&quot;, &quot;inaccessible&quot;</div><div class="line">  }</div><div class="line">}</div></div><!-- fragment --><p>Example response:</p>
 <div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: true</div><div class="line">}</div></div><!-- fragment --><h2><a class="anchor" id="rpc_nvmf_subsystem_add_ns"></a>
 nvmf_subsystem_add_ns method</h2>
 <p>Add a namespace to a subsystem. The namespace ID is returned as the result.</p>

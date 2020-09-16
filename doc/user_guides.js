@@ -237,6 +237,7 @@ var user_guides =
           [ "listen_address", "jsonrpc.html#rpc_nvmf_listen_address", null ]
         ] ],
         [ "nvmf_subsystem_remove_listener  method", "jsonrpc.html#rpc_nvmf_subsystem_remove_listener", null ],
+        [ "nvmf_subsystem_listener_set_ana_state  method", "jsonrpc.html#rpc_nvmf_subsystem_listener_set_ana_state", null ],
         [ "nvmf_subsystem_add_ns method", "jsonrpc.html#rpc_nvmf_subsystem_add_ns", [
           [ "namespace", "jsonrpc.html#rpc_nvmf_namespace", null ]
         ] ],
