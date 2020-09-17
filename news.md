@@ -5,6 +5,11 @@ title:  "SPDK In The News"
 
 # News items
 
+## Intel & Nutanix Joint Innovation Lab
+
+### [Nutanix Architecture and Performance Optimization](https://www.nutanix.com/viewer?type=pdf&path=/content/dam/nutanix/resources/white-papers/wp-esg-technical-review-nutanix-performance-optimization.pdf)
+> Blockstore and SPDK improved application performance and reduced latency in synthetic and real-world testing in the next-generation NX-8170 cluster with Intel® Optane™ SSDs and Intel® SSD DC P4510 NVMe SSDs. Intel and Nutanix benchmarked several workloads on a four-node Nutanix NX-8170-G7 cluster. The PostgreSQL DB benchmarks showed a 66% improvement in DB transactions and latency was reduced by 45% on the next-generation NX-8170 cluster vs the previous generation NX-3060 cluster with SATA SSDs.
+
 ## DAOS: Revolutionizing High-Performance Storage with Intel® Optane™ Technology, SPDK and PMDK
 
 ### [DAOS Sets New Records with Intel Optane Persistent Memory](https://software.intel.com/content/www/us/en/develop/articles/daos-sets-new-records-with-intel-optane-persistent-memory.html)
