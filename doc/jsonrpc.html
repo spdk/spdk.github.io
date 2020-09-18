@@ -325,7 +325,77 @@ thread_set_cpumask</h2>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;method&quot;: &quot;thread_set_cpumask&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;params&quot;: {</div><div class="line">    &quot;id&quot;: &quot;1&quot;,</div><div class="line">    &quot;cpumask&quot;: &quot;1&quot;</div><div class="line">  }</div><div class="line">}</div></div><!-- fragment --><p>Example response:</p>
-<div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: true</div><div class="line">}</div></div><!-- fragment --><h2><a class="anchor" id="rpc_log_enable_timestamps"></a>
+<div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: true</div><div class="line">}</div></div><!-- fragment --><h2><a class="anchor" id="rpc_log_set_print_level"></a>
+log_set_print_level</h2>
+<p>Set the current level at which output will additionally be sent to the current console.</p>
+<h3>Parameters</h3>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Name  </th><th class="markdownTableHeadNone">Optional  </th><th class="markdownTableHeadNone">Type  </th><th class="markdownTableHeadNone">Description   </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">level  </td><td class="markdownTableBodyNone">Required  </td><td class="markdownTableBodyNone">string  </td><td class="markdownTableBodyNone">ERROR, WARNING, NOTICE, INFO, DEBUG   </td></tr>
+</table>
+<h3>Example</h3>
+<p>Example request:</p>
+<div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;method&quot;: &quot;log_set_print_level&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;params&quot;: {</div><div class="line">    &quot;level&quot;: &quot;ERROR&quot;</div><div class="line">  }</div><div class="line">}</div></div><!-- fragment --><p>Example response:</p>
+<div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: true</div><div class="line">}</div></div><!-- fragment --><h2><a class="anchor" id="rpc_log_get_print_level"></a>
+log_get_print_level</h2>
+<p>Get the current level at which output will additionally be sent to the current console.</p>
+<h3>Example</h3>
+<p>Example request:</p>
+<div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;method&quot;: &quot;log_get_print_level&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">}</div></div><!-- fragment --><p>Example response:</p>
+<div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: &quot;NOTICE&quot;</div><div class="line">}</div></div><!-- fragment --><h2><a class="anchor" id="rpc_log_set_level"></a>
+log_set_level</h2>
+<p>Set the current logging level output by the <code>log</code> module.</p>
+<h3>Parameters</h3>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Name  </th><th class="markdownTableHeadNone">Optional  </th><th class="markdownTableHeadNone">Type  </th><th class="markdownTableHeadNone">Description   </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">level  </td><td class="markdownTableBodyNone">Required  </td><td class="markdownTableBodyNone">string  </td><td class="markdownTableBodyNone">ERROR, WARNING, NOTICE, INFO, DEBUG   </td></tr>
+</table>
+<h3>Example</h3>
+<p>Example request:</p>
+<div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;method&quot;: &quot;log_set_level&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;params&quot;: {</div><div class="line">    &quot;level&quot;: &quot;ERROR&quot;</div><div class="line">  }</div><div class="line">}</div></div><!-- fragment --><p>Example response:</p>
+<div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: true</div><div class="line">}</div></div><!-- fragment --><h2><a class="anchor" id="rpc_log_get_level"></a>
+log_get_level</h2>
+<p>Get the current logging level output by the <code>log</code> module.</p>
+<h3>Example</h3>
+<p>Example request:</p>
+<div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;method&quot;: &quot;log_get_level&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">}</div></div><!-- fragment --><p>Example response:</p>
+<div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: &quot;NOTICE&quot;</div><div class="line">}</div></div><!-- fragment --><h2><a class="anchor" id="rpc_log_set_flag"></a>
+log_set_flag</h2>
+<p>Enable logging for specific portions of the application. The list of possible log flags can be obtained using the <code>log_get_flags</code> RPC and may be different for each application.</p>
+<h3>Parameters</h3>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Name  </th><th class="markdownTableHeadNone">Optional  </th><th class="markdownTableHeadNone">Type  </th><th class="markdownTableHeadNone">Description   </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">flag  </td><td class="markdownTableBodyNone">Required  </td><td class="markdownTableBodyNone">string  </td><td class="markdownTableBodyNone">A log flag, or 'all'   </td></tr>
+</table>
+<h3>Example</h3>
+<p>Example request:</p>
+<div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;method&quot;: &quot;log_set_flag&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;params&quot;: {</div><div class="line">    &quot;flag&quot;: &quot;all&quot;</div><div class="line">  }</div><div class="line">}</div></div><!-- fragment --><p>Example response:</p>
+<div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: true</div><div class="line">}</div></div><!-- fragment --><h2><a class="anchor" id="rpc_log_clear_flag"></a>
+log_clear_flag</h2>
+<p>Disable logging for specific portions of the application. The list of possible log flags can be obtained using the <code>log_get_flags</code> RPC and may be different for each application.</p>
+<h3>Parameters</h3>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Name  </th><th class="markdownTableHeadNone">Optional  </th><th class="markdownTableHeadNone">Type  </th><th class="markdownTableHeadNone">Description   </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">flag  </td><td class="markdownTableBodyNone">Required  </td><td class="markdownTableBodyNone">string  </td><td class="markdownTableBodyNone">A log flag, or 'all'   </td></tr>
+</table>
+<h3>Example</h3>
+<p>Example request:</p>
+<div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;method&quot;: &quot;log_clear_flag&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;params&quot;: {</div><div class="line">    &quot;flag&quot;: &quot;all&quot;</div><div class="line">  }</div><div class="line">}</div></div><!-- fragment --><p>Example response:</p>
+<div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: true</div><div class="line">}</div></div><!-- fragment --><h2><a class="anchor" id="rpc_log_get_flags"></a>
+log_get_flags</h2>
+<p>Get the list of valid flags for this application and whether they are currently enabled.</p>
+<h3>Example</h3>
+<p>Example request:</p>
+<div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;method&quot;: &quot;log_get_flags&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">}</div></div><!-- fragment --><p>Example response:</p>
+<div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: {</div><div class="line">    &quot;nvmf&quot;: true,</div><div class="line">    &quot;nvme&quot;: true,</div><div class="line">    &quot;aio&quot;: false,</div><div class="line">    &quot;bdev&quot; false</div><div class="line">  }</div><div class="line">}</div></div><!-- fragment --><h2><a class="anchor" id="rpc_log_enable_timestamps"></a>
 log_enable_timestamps</h2>
 <p>Enable or disable timestamps.</p>
 <h3>Parameters</h3>
@@ -389,7 +459,22 @@ bdev_get_bdevs</h2>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;method&quot;: &quot;bdev_get_bdevs&quot;,</div><div class="line">  &quot;params&quot;: {</div><div class="line">    &quot;name&quot;: &quot;Malloc0&quot;</div><div class="line">  }</div><div class="line">}</div></div><!-- fragment --><p>Example response:</p>
-<div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: [</div><div class="line">    {</div><div class="line">      &quot;name&quot;: &quot;Malloc0&quot;,</div><div class="line">      &quot;product_name&quot;: &quot;Malloc disk&quot;,</div><div class="line">      &quot;block_size&quot;: 512,</div><div class="line">      &quot;num_blocks&quot;: 20480,</div><div class="line">      &quot;claimed&quot;: false,</div><div class="line">      &quot;zoned&quot;: false,</div><div class="line">      &quot;supported_io_types&quot;: {</div><div class="line">        &quot;read&quot;: true,</div><div class="line">        &quot;write&quot;: true,</div><div class="line">        &quot;unmap&quot;: true,</div><div class="line">        &quot;write_zeroes&quot;: true,</div><div class="line">        &quot;flush&quot;: true,</div><div class="line">        &quot;reset&quot;: true,</div><div class="line">        &quot;nvme_admin&quot;: false,</div><div class="line">        &quot;nvme_io&quot;: false</div><div class="line">      },</div><div class="line">      &quot;driver_specific&quot;: {}</div><div class="line">    }</div><div class="line">  ]</div><div class="line">}</div></div><!-- fragment --><h2><a class="anchor" id="rpc_bdev_get_iostat"></a>
+<div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: [</div><div class="line">    {</div><div class="line">      &quot;name&quot;: &quot;Malloc0&quot;,</div><div class="line">      &quot;product_name&quot;: &quot;Malloc disk&quot;,</div><div class="line">      &quot;block_size&quot;: 512,</div><div class="line">      &quot;num_blocks&quot;: 20480,</div><div class="line">      &quot;claimed&quot;: false,</div><div class="line">      &quot;zoned&quot;: false,</div><div class="line">      &quot;supported_io_types&quot;: {</div><div class="line">        &quot;read&quot;: true,</div><div class="line">        &quot;write&quot;: true,</div><div class="line">        &quot;unmap&quot;: true,</div><div class="line">        &quot;write_zeroes&quot;: true,</div><div class="line">        &quot;flush&quot;: true,</div><div class="line">        &quot;reset&quot;: true,</div><div class="line">        &quot;nvme_admin&quot;: false,</div><div class="line">        &quot;nvme_io&quot;: false</div><div class="line">      },</div><div class="line">      &quot;driver_specific&quot;: {}</div><div class="line">    }</div><div class="line">  ]</div><div class="line">}</div></div><!-- fragment --><h2><a class="anchor" id="rpc_bdev_examine"></a>
+bdev_examine</h2>
+<p>Request that the bdev layer examines the given bdev for metadata and creates new bdevs if metadata is found. This is only necessary if <code>auto_examine</code> has been set to false using <code>bdev_set_options</code>. By default, <code>auto_examine</code> is true and bdev examination is automatic.</p>
+<h3>Parameters</h3>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Name  </th><th class="markdownTableHeadNone">Optional  </th><th class="markdownTableHeadNone">Type  </th><th class="markdownTableHeadNone">Description   </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">name  </td><td class="markdownTableBodyNone">Required  </td><td class="markdownTableBodyNone">string  </td><td class="markdownTableBodyNone">Block device name   </td></tr>
+</table>
+<h3>Response</h3>
+<p>The response is an array of objects containing I/O statistics of the requested block devices.</p>
+<h3>Example</h3>
+<p>Example request:</p>
+<div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;method&quot;: &quot;bdev_examine&quot;,</div><div class="line">  &quot;params&quot;: {</div><div class="line">    &quot;name&quot;: &quot;Nvme0n1&quot;</div><div class="line">  }</div><div class="line">}</div></div><!-- fragment --><p>Example response:</p>
+<div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: true</div><div class="line">}</div></div><!-- fragment --><h2><a class="anchor" id="rpc_bdev_get_iostat"></a>
 bdev_get_iostat</h2>
 <p>Get I/O statistics of block devices (bdevs).</p>
 <h3>Parameters</h3>
@@ -1479,6 +1564,23 @@ iscsi_initiator_group_add_initiators method</h2>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">request:</div><div class="line">{</div><div class="line">  &quot;params&quot;: {</div><div class="line">    &quot;initiators&quot;: [</div><div class="line">      &quot;iqn.2016-06.io.spdk:host3&quot;</div><div class="line">    ],</div><div class="line">    &quot;tag&quot;: 1,</div><div class="line">    &quot;netmasks&quot;: [</div><div class="line">      &quot;255.255.255.1&quot;</div><div class="line">    ]</div><div class="line">  },</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;method&quot;: &quot;iscsi_initiator_group_add_initiators&quot;,</div><div class="line">  &quot;id&quot;: 1</div><div class="line">}</div></div><!-- fragment --><p>Example response:</p>
+<div class="fragment"><div class="line">response:</div><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: true</div><div class="line">}</div></div><!-- fragment --><h2><a class="anchor" id="rpc_iscsi_initiator_group_remove_initiators"></a>
+iscsi_initiator_group_remove_initiators method</h2>
+<p>Remove initiators from an initiator group.</p>
+<h3>Parameters</h3>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Name  </th><th class="markdownTableHeadNone">Optional  </th><th class="markdownTableHeadNone">Type  </th><th class="markdownTableHeadNone">Description   </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">tag  </td><td class="markdownTableBodyNone">Required  </td><td class="markdownTableBodyNone">number  </td><td class="markdownTableBodyNone">Existing initiator group tag.   </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">initiators  </td><td class="markdownTableBodyNone">Optional  </td><td class="markdownTableBodyNone">array  </td><td class="markdownTableBodyNone">Array of initiator hostnames or IP addresses   </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">netmasks  </td><td class="markdownTableBodyNone">Optional  </td><td class="markdownTableBodyNone">array  </td><td class="markdownTableBodyNone">Array of initiator netmasks   </td></tr>
+</table>
+<h3>Example</h3>
+<p>Example request:</p>
+<div class="fragment"><div class="line">request:</div><div class="line">{</div><div class="line">  &quot;params&quot;: {</div><div class="line">    &quot;initiators&quot;: [</div><div class="line">      &quot;iqn.2016-06.io.spdk:host3&quot;</div><div class="line">    ],</div><div class="line">    &quot;tag&quot;: 1,</div><div class="line">    &quot;netmasks&quot;: [</div><div class="line">      &quot;255.255.255.1&quot;</div><div class="line">    ]</div><div class="line">  },</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;method&quot;: &quot;iscsi_initiator_group_remove_initiators&quot;,</div><div class="line">  &quot;id&quot;: 1</div><div class="line">}</div></div><!-- fragment --><p>Example response:</p>
 <div class="fragment"><div class="line">response:</div><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: true</div><div class="line">}</div></div><!-- fragment --><h2><a class="anchor" id="rpc_iscsi_get_target_nodes"></a>
 iscsi_get_target_nodes method</h2>
 <p>Show information about all available iSCSI target nodes.</p>
@@ -1679,8 +1781,8 @@ iscsi_delete_portal_group method</h2>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div><div class="line">  &quot;params&quot;: {</div><div class="line">    &quot;tag&quot;: 1</div><div class="line">  },</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;method&quot;: &quot;iscsi_delete_portal_group&quot;,</div><div class="line">  &quot;id&quot;: 1</div><div class="line">}</div></div><!-- fragment --><p>Example response:</p>
-<div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: true</div><div class="line">}</div></div><!-- fragment --><h3><a class="anchor" id="rpc_iscsi_portal_group_set_auth"></a>
-iscsi_portal_group_set_auth method</h3>
+<div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: true</div><div class="line">}</div></div><!-- fragment --><h2><a class="anchor" id="rpc_iscsi_portal_group_set_auth"></a>
+iscsi_portal_group_set_auth method</h2>
 <p>Set CHAP authentication for discovery sessions specific for the existing iSCSI portal group. This RPC overwrites the setting by the global parameters for the iSCSI portal group.</p>
 <h3>Parameters</h3>
 <table class="markdownTable">

@@ -1,5 +1,14 @@
 var NAVTREEINDEX23 =
 {
+"structspdk__sock__request_1_1____sock__request__internal.html#aa8e991746081b335c62e2d7d81d96bce":[12,0,281,0,1],
+"structspdk__thread__stats.html":[12,0,282],
+"structspdk__thread__stats.html#a44439fc6eaac867fb8073114cbf7d922":[12,0,282,1],
+"structspdk__thread__stats.html#a78d02e3ab20fa99a5e84132920233472":[12,0,282,0],
+"structspdk__trace__entry.html":[12,0,283],
+"structspdk__trace__entry.html#a0e513114ecc56fd39f92437ef7935389":[12,0,283,5],
+"structspdk__trace__entry.html#a53d1df54f12eb3a41e75dfcf33544c6e":[12,0,283,2],
+"structspdk__trace__entry.html#a713d879c3f525d9f12b95178b9110d3f":[12,0,283,3],
+"structspdk__trace__entry.html#a8352d515ed92a1c37fc62c8a0473ef3d":[12,0,283,4],
 "structspdk__trace__entry.html#a9703554659f406f3d74ea78405def59e":[12,0,283,1],
 "structspdk__trace__entry.html#aed913017a27f04e7fa543af3323d430d":[12,0,283,0],
 "structspdk__trace__flags.html":[12,0,284],
@@ -240,14 +249,5 @@ var NAVTREEINDEX23 =
 "unionspdk__nvme__cmbmsc__register.html#a24bd223d88e079a215a07ea9025154cc":[12,0,90,5],
 "unionspdk__nvme__cmbmsc__register.html#a35d113e3fbcfff431074dea3765cbe7e":[12,0,90,2],
 "unionspdk__nvme__cmbmsc__register.html#a4b057d9bcef1afbfe13da30bee5fb032":[12,0,90,4],
-"unionspdk__nvme__cmbsts__register.html":[12,0,91],
-"unionspdk__nvme__cmbsts__register.html#a181df083eb80bca9450ef02ac21b700f":[12,0,91,2],
-"unionspdk__nvme__cmbsts__register.html#a54604b4b4110e749c3a843f3620ed74e":[12,0,91,3],
-"unionspdk__nvme__cmbsts__register.html#a5998dda138a19e69602822179d4547be":[12,0,91,1],
-"unionspdk__nvme__cmbsts__register.html#aa2d50adf52ec00b64ccaa89b8dc8e8aa":[12,0,91,0],
-"unionspdk__nvme__cmbsz__register.html":[12,0,92],
-"unionspdk__nvme__cmbsz__register.html#a03af53ff83c581ce0f02f72195f1c6f2":[12,0,92,7],
-"unionspdk__nvme__cmbsz__register.html#a1f140936631569233f2b14c3af4ed22d":[12,0,92,0],
-"unionspdk__nvme__cmbsz__register.html#a3481600cf80fa69860ba5dbb445afc5f":[12,0,92,6],
-"unionspdk__nvme__cmbsz__register.html#a5259febaf27ced21d1358b97bd1cb831":[12,0,92,8]
+"unionspdk__nvme__cmbsts__register.html":[12,0,91]
 };

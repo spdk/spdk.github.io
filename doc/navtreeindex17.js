@@ -1,5 +1,14 @@
 var NAVTREEINDEX17 =
 {
+"structspdk__nvme__ctrlr__data.html#a3d47479941d4eb691e54d4ac207cb048":[12,0,101,4],
+"structspdk__nvme__ctrlr__data.html#a475891f13ac9855e055a6a14c536d1e0":[12,0,101,43],
+"structspdk__nvme__ctrlr__data.html#a48e610a38b03a226bd225eaf408180c9":[12,0,101,96],
+"structspdk__nvme__ctrlr__data.html#a4a9eba40118c1c94141534c7938a0f3a":[12,0,101,121],
+"structspdk__nvme__ctrlr__data.html#a4baf40c59305a44041aa2a1f71e453e9":[12,0,101,54],
+"structspdk__nvme__ctrlr__data.html#a4c494b50fb5fb942fee33117438b7eed":[12,0,101,67],
+"structspdk__nvme__ctrlr__data.html#a4dad8c13bda97607785a59c50b2efa72":[12,0,101,80],
+"structspdk__nvme__ctrlr__data.html#a4f998f9dd58c77c3c8abbaa8a40980c5":[12,0,101,34],
+"structspdk__nvme__ctrlr__data.html#a5231b29a4db8e5c3c7ea5917ad5c1e48":[12,0,101,113],
 "structspdk__nvme__ctrlr__data.html#a532b4029c5c1210d8555378c6bd8f8d5":[12,0,101,83],
 "structspdk__nvme__ctrlr__data.html#a547d284aee789cfb70e0b1bb6eeae214":[12,0,101,126],
 "structspdk__nvme__ctrlr__data.html#a551038a898799fceb8eec6444c4014b6":[12,0,101,17],
@@ -240,14 +249,5 @@ var NAVTREEINDEX17 =
 "structspdk__nvme__intel__temperature__page.html#a78ade1f977aafd2b2fe85672d2d46c5d":[12,0,141,2],
 "structspdk__nvme__intel__temperature__page.html#a7f4bbf3945dbf1a7a97a398019d45c05":[12,0,141,0],
 "structspdk__nvme__intel__temperature__page.html#ab64ba504715b6e017466e98e113d2ddb":[12,0,141,4],
-"structspdk__nvme__intel__temperature__page.html#ac1371c45719883bac0fdd22ab692f10d":[12,0,141,7],
-"structspdk__nvme__intel__temperature__page.html#ac31567dc016fffef64cb48facb521b02":[12,0,141,8],
-"structspdk__nvme__intel__temperature__page.html#acd5b3858d54a5189778bf8bde2d16119":[12,0,141,3],
-"structspdk__nvme__intel__temperature__page.html#af180ca8f9fd6342bf56fe133b511832a":[12,0,141,5],
-"structspdk__nvme__intel__temperature__page.html#af9d0279b72f478d6edef742332267578":[12,0,141,9],
-"structspdk__nvme__io__qpair__opts.html":[12,0,142],
-"structspdk__nvme__io__qpair__opts.html#a0717adbaee25e65da1cbc98e1a3098fe":[12,0,142,1],
-"structspdk__nvme__io__qpair__opts.html#a0cf0ca9709ef76cd67bcfd4c3601963c":[12,0,142,3],
-"structspdk__nvme__io__qpair__opts.html#a44d81a594ba280300928e7244c2612d0":[12,0,142,4],
-"structspdk__nvme__io__qpair__opts.html#a46b4b303a90d96576e8ed2feb216e93b":[12,0,142,0]
+"structspdk__nvme__intel__temperature__page.html#ac1371c45719883bac0fdd22ab692f10d":[12,0,141,7]
 };

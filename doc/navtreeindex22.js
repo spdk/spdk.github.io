@@ -1,5 +1,14 @@
 var NAVTREEINDEX22 =
 {
+"structspdk__opal__packet.html#a3b325849986a42d4fd8ebbb03ec9ae9a":[12,0,253,2],
+"structspdk__opal__packet.html#a59f39ab9738ed769db12d52f3f9e1ec5":[12,0,253,3],
+"structspdk__opal__packet.html#a6a9ac0b86a7b5664d08daf8d6a0aab5e":[12,0,253,6],
+"structspdk__opal__packet.html#a9ddc588200aad39538ef1250bb130c9a":[12,0,253,4],
+"structspdk__opal__packet.html#ac705c4d9cd50caa3dca236134542fb35":[12,0,253,0],
+"structspdk__opal__packet.html#adb44d4ad6d686ecf7bb780be8fb43e61":[12,0,253,1],
+"structspdk__pci__addr.html":[12,0,254],
+"structspdk__pci__addr.html#a4b8677cfade6b86f0f12339a404bb539":[12,0,254,2],
+"structspdk__pci__addr.html#a4cd7b095b28771b4ce54540ce43e3eaa":[12,0,254,3],
 "structspdk__pci__addr.html#adb5104016db3f448f3e90c3a151fd70f":[12,0,254,0],
 "structspdk__pci__addr.html#af0fce229a3e9836a886ab84b108330b5":[12,0,254,1],
 "structspdk__pci__device.html":[12,0,255],
@@ -240,14 +249,5 @@ var NAVTREEINDEX22 =
 "structspdk__sock__request.html#a38309e0c8fd9b9defcf70a33137feda1":[12,0,281,1],
 "structspdk__sock__request.html#a4722314bfc95b97c9f02d3d7ac3cc9d2":[12,0,281,4],
 "structspdk__sock__request_1_1____sock__request__internal.html":[12,0,281,0],
-"structspdk__sock__request_1_1____sock__request__internal.html#a8cce9cfe205d8ac5d69af664aed6c753":[12,0,281,0,0],
-"structspdk__sock__request_1_1____sock__request__internal.html#aa8e991746081b335c62e2d7d81d96bce":[12,0,281,0,1],
-"structspdk__thread__stats.html":[12,0,282],
-"structspdk__thread__stats.html#a44439fc6eaac867fb8073114cbf7d922":[12,0,282,1],
-"structspdk__thread__stats.html#a78d02e3ab20fa99a5e84132920233472":[12,0,282,0],
-"structspdk__trace__entry.html":[12,0,283],
-"structspdk__trace__entry.html#a0e513114ecc56fd39f92437ef7935389":[12,0,283,5],
-"structspdk__trace__entry.html#a53d1df54f12eb3a41e75dfcf33544c6e":[12,0,283,2],
-"structspdk__trace__entry.html#a713d879c3f525d9f12b95178b9110d3f":[12,0,283,3],
-"structspdk__trace__entry.html#a8352d515ed92a1c37fc62c8a0473ef3d":[12,0,283,4]
+"structspdk__sock__request_1_1____sock__request__internal.html#a8cce9cfe205d8ac5d69af664aed6c753":[12,0,281,0,0]
 };

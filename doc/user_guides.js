@@ -142,6 +142,13 @@ var user_guides =
         [ "framework_get_reactors", "jsonrpc.html#rpc_framework_get_reactors", null ],
         [ "thread_get_stats", "jsonrpc.html#rpc_thread_get_stats", null ],
         [ "thread_set_cpumask", "jsonrpc.html#rpc_thread_set_cpumask", null ],
+        [ "log_set_print_level", "jsonrpc.html#rpc_log_set_print_level", null ],
+        [ "log_get_print_level", "jsonrpc.html#rpc_log_get_print_level", null ],
+        [ "log_set_level", "jsonrpc.html#rpc_log_set_level", null ],
+        [ "log_get_level", "jsonrpc.html#rpc_log_get_level", null ],
+        [ "log_set_flag", "jsonrpc.html#rpc_log_set_flag", null ],
+        [ "log_clear_flag", "jsonrpc.html#rpc_log_clear_flag", null ],
+        [ "log_get_flags", "jsonrpc.html#rpc_log_get_flags", null ],
         [ "log_enable_timestamps", "jsonrpc.html#rpc_log_enable_timestamps", null ],
         [ "thread_get_pollers", "jsonrpc.html#rpc_thread_get_pollers", null ],
         [ "thread_get_io_channels", "jsonrpc.html#rpc_thread_get_io_channels", null ]
@@ -149,6 +156,7 @@ var user_guides =
       [ "Block Device Abstraction Layer", "jsonrpc.html#jsonrpc_components_bdev", [
         [ "bdev_set_options", "jsonrpc.html#rpc_bdev_set_options", null ],
         [ "bdev_get_bdevs", "jsonrpc.html#rpc_bdev_get_bdevs", null ],
+        [ "bdev_examine", "jsonrpc.html#rpc_bdev_examine", null ],
         [ "bdev_get_iostat", "jsonrpc.html#rpc_bdev_get_iostat", null ],
         [ "bdev_enable_histogram", "jsonrpc.html#rpc_bdev_enable_histogram", null ],
         [ "bdev_get_histogram", "jsonrpc.html#rpc_bdev_get_histogram", null ],
@@ -212,6 +220,7 @@ var user_guides =
         [ "iscsi_create_initiator_group method", "jsonrpc.html#rpc_iscsi_create_initiator_group", null ],
         [ "iscsi_delete_initiator_group method", "jsonrpc.html#rpc_iscsi_delete_initiator_group", null ],
         [ "iscsi_initiator_group_add_initiators method", "jsonrpc.html#rpc_iscsi_initiator_group_add_initiators", null ],
+        [ "iscsi_initiator_group_remove_initiators method", "jsonrpc.html#rpc_iscsi_initiator_group_remove_initiators", null ],
         [ "iscsi_get_target_nodes method", "jsonrpc.html#rpc_iscsi_get_target_nodes", null ],
         [ "iscsi_create_target_node method", "jsonrpc.html#rpc_iscsi_create_target_node", null ],
         [ "iscsi_target_node_set_auth method", "jsonrpc.html#rpc_iscsi_target_node_set_auth", null ],
@@ -220,9 +229,8 @@ var user_guides =
         [ "iscsi_delete_target_node method", "jsonrpc.html#rpc_iscsi_delete_target_node", null ],
         [ "iscsi_get_portal_groups method", "jsonrpc.html#rpc_iscsi_get_portal_groups", null ],
         [ "iscsi_create_portal_group method", "jsonrpc.html#rpc_iscsi_create_portal_group", null ],
-        [ "iscsi_delete_portal_group method", "jsonrpc.html#rpc_iscsi_delete_portal_group", [
-          [ "iscsi_portal_group_set_auth method", "jsonrpc.html#rpc_iscsi_portal_group_set_auth", null ]
-        ] ],
+        [ "iscsi_delete_portal_group method", "jsonrpc.html#rpc_iscsi_delete_portal_group", null ],
+        [ "iscsi_portal_group_set_auth method", "jsonrpc.html#rpc_iscsi_portal_group_set_auth", null ],
         [ "iscsi_get_connections method", "jsonrpc.html#rpc_iscsi_get_connections", null ],
         [ "iscsi_target_node_add_lun method", "jsonrpc.html#rpc_iscsi_target_node_add_lun", null ],
         [ "iscsi_target_node_set_redirect method", "jsonrpc.html#rpc_iscsi_target_node_set_redirect", null ],
