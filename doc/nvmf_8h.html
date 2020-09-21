@@ -226,9 +226,6 @@ Functions</h2></td></tr>
 <tr class="memitem:ac796e8f25381f344119ef0f44c2a017c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#ac796e8f25381f344119ef0f44c2a017c">spdk_nvmf_tgt_stop_listen</a> (struct spdk_nvmf_tgt *tgt, struct <a class="el" href="structspdk__nvme__transport__id.html">spdk_nvme_transport_id</a> *trid)</td></tr>
 <tr class="memdesc:ac796e8f25381f344119ef0f44c2a017c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stop accepting new connections at the provided address.  <a href="#ac796e8f25381f344119ef0f44c2a017c">More...</a><br /></td></tr>
 <tr class="separator:ac796e8f25381f344119ef0f44c2a017c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab9e9743486cd0d27ff50b7cd081e860b"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#ab9e9743486cd0d27ff50b7cd081e860b">spdk_nvmf_tgt_accept</a> (struct spdk_nvmf_tgt *tgt)</td></tr>
-<tr class="memdesc:ab9e9743486cd0d27ff50b7cd081e860b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Poll the target for incoming connections.  <a href="#ab9e9743486cd0d27ff50b7cd081e860b">More...</a><br /></td></tr>
-<tr class="separator:ab9e9743486cd0d27ff50b7cd081e860b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3b1de2ab69c992ce2c732c354a08238f"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structspdk__nvmf__poll__group.html">spdk_nvmf_poll_group</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#a3b1de2ab69c992ce2c732c354a08238f">spdk_nvmf_poll_group_create</a> (struct spdk_nvmf_tgt *tgt)</td></tr>
 <tr class="memdesc:a3b1de2ab69c992ce2c732c354a08238f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a poll group.  <a href="#a3b1de2ab69c992ce2c732c354a08238f">More...</a><br /></td></tr>
 <tr class="separator:a3b1de2ab69c992ce2c732c354a08238f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -2527,32 +2524,6 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if this subsystem allows dynamic management of listen address list, or false if only allows addresses in the whitelist configured during subsystem setup. </dd></dl>
-
-</div>
-</div>
-<a id="ab9e9743486cd0d27ff50b7cd081e860b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab9e9743486cd0d27ff50b7cd081e860b">&#9670;&nbsp;</a></span>spdk_nvmf_tgt_accept()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint32_t spdk_nvmf_tgt_accept </td>
-          <td>(</td>
-          <td class="paramtype">struct spdk_nvmf_tgt *&#160;</td>
-          <td class="paramname"><em>tgt</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Poll the target for incoming connections. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">tgt</td><td>The target associated with the listen address. </td></tr>
-  </table>
-  </dd>
-</dl>
 
 </div>
 </div>
