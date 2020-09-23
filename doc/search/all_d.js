@@ -1,6 +1,7 @@
 var searchData=
 [
   ['message_20passing_20and_20concurrency',['Message Passing and Concurrency',['../concurrency.html',1,'concepts']]],
+  ['mar',['mar',['../structspdk__nvme__ns__data__zns.html#a0a1983f740178e39ed6409a0950afedc',1,'spdk_nvme_ns_data_zns']]],
   ['mask',['mask',['../structspdk__ocssd__chunk__notification__entry.html#a3a9bef3c50f3c60586ce094536c94df2',1,'spdk_ocssd_chunk_notification_entry']]],
   ['max_5fchannel_5fops',['max_channel_ops',['../structspdk__bs__opts.html#ac5417afa104f5061bab1bfae0769c3a6',1,'spdk_bs_opts']]],
   ['max_5fmd_5fops',['max_md_ops',['../structspdk__bs__opts.html#a63e0b619fedc29159dffd7feca08396b',1,'spdk_bs_opts']]],
@@ -28,6 +29,7 @@ var searchData=
   ['module',['module',['../structspdk__bdev.html#afb6058d0394545714377a60c34682fa0',1,'spdk_bdev']]],
   ['module_5ffini',['module_fini',['../structspdk__bdev__module.html#ae807abce0f70eafe6ca75435f4f3d5b1',1,'spdk_bdev_module']]],
   ['module_5finit',['module_init',['../structspdk__bdev__module.html#a1f13de8e5d02c74738c6119cedde3c53',1,'spdk_bdev_module']]],
+  ['mor',['mor',['../structspdk__nvme__ns__data__zns.html#a526dfe5ab2e417628f2c46a56c288214',1,'spdk_nvme_ns_data_zns']]],
   ['mps',['mps',['../unionspdk__nvme__cc__register.html#af8bb5fa3b86ff9cb654ec4da5fa5a31c',1,'spdk_nvme_cc_register']]],
   ['mpsmax',['mpsmax',['../unionspdk__nvme__cap__register.html#ad4b6659be786f840893818e951fc1f3d',1,'spdk_nvme_cap_register']]],
   ['mpsmin',['mpsmin',['../unionspdk__nvme__cap__register.html#a9930c21595d81e7eefa8cca0e118450a',1,'spdk_nvme_cap_register']]],

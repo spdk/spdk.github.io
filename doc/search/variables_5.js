@@ -10,6 +10,7 @@ var searchData=
   ['fpi',['fpi',['../structspdk__nvme__ns__data.html#a3564fb6533c25d19f316f4896faa2103',1,'spdk_nvme_ns_data']]],
   ['fr',['fr',['../structspdk__nvme__ctrlr__data.html#a37704a665cf4f0a397f01ff3e97995a0',1,'spdk_nvme_ctrlr_data']]],
   ['free',['free',['../structspdk__ocssd__chunk__information__entry.html#a8754f5436078bb51613dfa9531af3333',1,'spdk_ocssd_chunk_information_entry']]],
+  ['frl',['frl',['../structspdk__nvme__ns__data__zns.html#af72a109be999997644bf847c904f5c42',1,'spdk_nvme_ns_data_zns']]],
   ['frmw',['frmw',['../structspdk__nvme__ctrlr__data.html#ae346bcd8f1a9f74ca97bfe654322b90c',1,'spdk_nvme_ctrlr_data']]],
   ['fs',['fs',['../structspdk__nvme__fw__commit.html#af5bbf67aa6f4a82d1fef951e436e34fe',1,'spdk_nvme_fw_commit']]],
   ['fused_5fiovcnt',['fused_iovcnt',['../structspdk__bdev__io.html#aec576e7766af0ee744ced101de905ff5',1,'spdk_bdev_io']]],
