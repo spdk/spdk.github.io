@@ -145,6 +145,8 @@ var nvme_8h =
     [ "spdk_nvme_ns_cmd_write_zeroes", "nvme_8h.html#af02e8c701c5496f163a69917ad5397dd", null ],
     [ "spdk_nvme_ns_cmd_writev", "nvme_8h.html#adfcbb5d31f0b572847cc8ae8b07dfcfb", null ],
     [ "spdk_nvme_ns_cmd_writev_with_md", "nvme_8h.html#ab4d42660e3de76f75f4b5d79ed9b1d01", null ],
+    [ "spdk_nvme_ns_get_ana_group_id", "nvme_8h.html#aae2886938b54c456dfb12861305bed24", null ],
+    [ "spdk_nvme_ns_get_ana_state", "nvme_8h.html#a204d7f2669bc34a9d45ec28d3a661b21", null ],
     [ "spdk_nvme_ns_get_csi", "nvme_8h.html#a8740d083341479c3c22861f16582795c", null ],
     [ "spdk_nvme_ns_get_ctrlr", "nvme_8h.html#a2640aeebb82108e9b507dcccb1e564c2", null ],
     [ "spdk_nvme_ns_get_data", "nvme_8h.html#ab1863b5dccf2bcc49fe92275bc1e5a2a", null ],

@@ -161,6 +161,10 @@ v20.10: (Upcoming Release)</h1>
 <p>The <code>enable_placement_id</code> field was added in the struct <a class="el" href="structspdk__sock__impl__opts.html" title="SPDK socket implementation options.">spdk_sock_impl_opts</a> to make the placement_id feature configurable by users. The default setting is not enabled.</p>
 <h2>rpc</h2>
 <p>A new optional parameter <code>enable_placement_id</code> was added to the <code>sock_impl_set_options</code> RPC.</p>
+<h2>Miscellaneous</h2>
+<p>The contents of the log_rpc library have been moved to the event library. The log_rpc library now no longer exists.</p>
+<p>The contents of the app_rpc library have been moved to the event library. The app_rpc library now no longer exists.</p>
+<p>The contents of the bdev_rpc library have been moved to the bdev library. The app_rpc library now no longer exists.</p>
 <h1><a class="anchor" id="changelog-v20-07"></a>
 v20.07: SPDK CSI driver, new accel_fw commands, I/O abort support</h1>
 <h2>accel</h2>

@@ -55,7 +55,6 @@ var searchData=
   ['spdk_5fmbr_5fchs',['spdk_mbr_chs',['../structspdk__mbr__chs.html',1,'']]],
   ['spdk_5fmbr_5fpartition_5fentry',['spdk_mbr_partition_entry',['../structspdk__mbr__partition__entry.html',1,'']]],
   ['spdk_5fmem_5fmap_5fops',['spdk_mem_map_ops',['../structspdk__mem__map__ops.html',1,'']]],
-  ['spdk_5fnet_5fframework',['spdk_net_framework',['../structspdk__net__framework.html',1,'']]],
   ['spdk_5fnotify_5fevent',['spdk_notify_event',['../structspdk__notify__event.html',1,'']]],
   ['spdk_5fnvme_5fana_5fgroup_5fdescriptor',['spdk_nvme_ana_group_descriptor',['../structspdk__nvme__ana__group__descriptor.html',1,'']]],
   ['spdk_5fnvme_5fana_5fpage',['spdk_nvme_ana_page',['../structspdk__nvme__ana__page.html',1,'']]],

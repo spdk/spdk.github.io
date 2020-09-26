@@ -142,9 +142,6 @@ $(document).ready(function(){initNavTree('net_8h.html','');});
 
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Data Structures</a> &#124;
-<a href="#define-members">Macros</a> &#124;
-<a href="#typedef-members">Typedefs</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">net.h File Reference</div>  </div>
@@ -154,30 +151,8 @@ $(document).ready(function(){initNavTree('net_8h.html','');});
 <p>Net framework abstraction layer.  
 <a href="#details">More...</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Data Structures</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__net__framework.html">spdk_net_framework</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
-Macros</h2></td></tr>
-<tr class="memitem:a211cc36f4e31e54093389cd09a5b253b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_NET_FRAMEWORK_REGISTER</b>(name,  frame)</td></tr>
-<tr class="separator:a211cc36f4e31e54093389cd09a5b253b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
-Typedefs</h2></td></tr>
-<tr class="memitem:ac4a70159fdffa7bd9100c92b602b2608"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="net_8h.html#ac4a70159fdffa7bd9100c92b602b2608">spdk_net_init_cb</a>) (void *cb_arg, int rc)</td></tr>
-<tr class="memdesc:ac4a70159fdffa7bd9100c92b602b2608"><td class="mdescLeft">&#160;</td><td class="mdescRight">Net framework initialization callback.  <a href="#ac4a70159fdffa7bd9100c92b602b2608">More...</a><br /></td></tr>
-<tr class="separator:ac4a70159fdffa7bd9100c92b602b2608"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a005afc5c521c3f92ff7d80900cdc3af9"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="net_8h.html#a005afc5c521c3f92ff7d80900cdc3af9">spdk_net_fini_cb</a>) (void *cb_arg)</td></tr>
-<tr class="memdesc:a005afc5c521c3f92ff7d80900cdc3af9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Net framework finish callback.  <a href="#a005afc5c521c3f92ff7d80900cdc3af9">More...</a><br /></td></tr>
-<tr class="separator:a005afc5c521c3f92ff7d80900cdc3af9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:abc3295d98c59921fecdef4de0e944afd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="net_8h.html#abc3295d98c59921fecdef4de0e944afd">spdk_net_framework_register</a> (struct <a class="el" href="structspdk__net__framework.html">spdk_net_framework</a> *frame)</td></tr>
-<tr class="memdesc:abc3295d98c59921fecdef4de0e944afd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register a net framework.  <a href="#abc3295d98c59921fecdef4de0e944afd">More...</a><br /></td></tr>
-<tr class="separator:abc3295d98c59921fecdef4de0e944afd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8ddcb56f1e677b845c5ebd5363002fb5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="net_8h.html#a8ddcb56f1e677b845c5ebd5363002fb5">spdk_interface_init</a> (void)</td></tr>
 <tr class="memdesc:a8ddcb56f1e677b845c5ebd5363002fb5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the network interfaces by getting information through netlink socket.  <a href="#a8ddcb56f1e677b845c5ebd5363002fb5">More...</a><br /></td></tr>
 <tr class="separator:a8ddcb56f1e677b845c5ebd5363002fb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -185,98 +160,10 @@ Functions</h2></td></tr>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="net_8h.html#af43d41aa26eb866db7cdb63b69eb7bb5">spdk_interface_destroy</a> (void)</td></tr>
 <tr class="memdesc:af43d41aa26eb866db7cdb63b69eb7bb5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy the network interfaces. <br /></td></tr>
 <tr class="separator:af43d41aa26eb866db7cdb63b69eb7bb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac7c753b6d6c747f51ca8bf26a7a7d63a"><td class="memItemLeft" align="right" valign="top"><a id="ac7c753b6d6c747f51ca8bf26a7a7d63a"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_net_framework_init_next</b> (int rc)</td></tr>
-<tr class="separator:ac7c753b6d6c747f51ca8bf26a7a7d63a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af110dcf710bf13d7e302002606e842ad"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="net_8h.html#af110dcf710bf13d7e302002606e842ad">spdk_net_framework_start</a> (<a class="el" href="net_8h.html#ac4a70159fdffa7bd9100c92b602b2608">spdk_net_init_cb</a> cb_fn, void *cb_arg)</td></tr>
-<tr class="memdesc:af110dcf710bf13d7e302002606e842ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start all registered frameworks.  <a href="#af110dcf710bf13d7e302002606e842ad">More...</a><br /></td></tr>
-<tr class="separator:af110dcf710bf13d7e302002606e842ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac3e34350c22f49e14e598551a0a122f9"><td class="memItemLeft" align="right" valign="top"><a id="ac3e34350c22f49e14e598551a0a122f9"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_net_framework_fini_next</b> (void)</td></tr>
-<tr class="separator:ac3e34350c22f49e14e598551a0a122f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab75ca6bf8726218208b00ef552122031"><td class="memItemLeft" align="right" valign="top"><a id="ab75ca6bf8726218208b00ef552122031"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="net_8h.html#ab75ca6bf8726218208b00ef552122031">spdk_net_framework_fini</a> (<a class="el" href="net_8h.html#a005afc5c521c3f92ff7d80900cdc3af9">spdk_net_fini_cb</a> cb_fn, void *cb_arg)</td></tr>
-<tr class="memdesc:ab75ca6bf8726218208b00ef552122031"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stop all registered frameworks. <br /></td></tr>
-<tr class="separator:ab75ca6bf8726218208b00ef552122031"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Net framework abstraction layer. </p>
-</div><h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="a211cc36f4e31e54093389cd09a5b253b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a211cc36f4e31e54093389cd09a5b253b">&#9670;&nbsp;</a></span>SPDK_NET_FRAMEWORK_REGISTER</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SPDK_NET_FRAMEWORK_REGISTER</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">name, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">frame&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><span class="keyword">static</span> <span class="keywordtype">void</span> __attribute__((constructor)) net_framework_register_##name(<span class="keywordtype">void</span>) \</div><div class="line">{ \</div><div class="line">        spdk_net_framework_register(frame); \</div><div class="line">}</div></div><!-- fragment -->
-</div>
-</div>
-<h2 class="groupheader">Typedef Documentation</h2>
-<a id="a005afc5c521c3f92ff7d80900cdc3af9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a005afc5c521c3f92ff7d80900cdc3af9">&#9670;&nbsp;</a></span>spdk_net_fini_cb</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef void(* spdk_net_fini_cb) (void *cb_arg)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Net framework finish callback. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">cb_arg</td><td>Callback argument. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="ac4a70159fdffa7bd9100c92b602b2608"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac4a70159fdffa7bd9100c92b602b2608">&#9670;&nbsp;</a></span>spdk_net_init_cb</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef void(* spdk_net_init_cb) (void *cb_arg, int rc)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Net framework initialization callback. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">cb_arg</td><td>Callback argument. </td></tr>
-    <tr><td class="paramname">rc</td><td>0 if net framework initialized successfully or negative errno if it failed. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<h2 class="groupheader">Function Documentation</h2>
+</div><h2 class="groupheader">Function Documentation</h2>
 <a id="a8ddcb56f1e677b845c5ebd5363002fb5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8ddcb56f1e677b845c5ebd5363002fb5">&#9670;&nbsp;</a></span>spdk_interface_init()</h2>
 
@@ -295,63 +182,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="net_
 
 <p>Initialize the network interfaces by getting information through netlink socket. </p>
 <dl class="section return"><dt>Returns</dt><dd>0 on success, 1 on failure. </dd></dl>
-
-</div>
-</div>
-<a id="abc3295d98c59921fecdef4de0e944afd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abc3295d98c59921fecdef4de0e944afd">&#9670;&nbsp;</a></span>spdk_net_framework_register()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void spdk_net_framework_register </td>
-          <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structspdk__net__framework.html">spdk_net_framework</a> *&#160;</td>
-          <td class="paramname"><em>frame</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Register a net framework. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">frame</td><td>Net framework to register. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="af110dcf710bf13d7e302002606e842ad"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af110dcf710bf13d7e302002606e842ad">&#9670;&nbsp;</a></span>spdk_net_framework_start()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void spdk_net_framework_start </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="net_8h.html#ac4a70159fdffa7bd9100c92b602b2608">spdk_net_init_cb</a>&#160;</td>
-          <td class="paramname"><em>cb_fn</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>cb_arg</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Start all registered frameworks. </p>
-<dl class="section return"><dt>Returns</dt><dd>0 on success. </dd></dl>
 
 </div>
 </div>
