@@ -297,12 +297,18 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="scsi
 <tr class="memitem:a671d549d699bbfdaef3bab87bd583dc5"><td class="memItemLeft" align="right" valign="top">struct spdk_scsi_dev *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="scsi_8h.html#a671d549d699bbfdaef3bab87bd583dc5">spdk_scsi_dev_construct</a> (const char *name, const char *bdev_name_list[], int *lun_id_list, int num_luns, uint8_t protocol_id, void(*hotremove_cb)(const struct spdk_scsi_lun *, void *), void *hotremove_ctx)</td></tr>
 <tr class="memdesc:a671d549d699bbfdaef3bab87bd583dc5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a SCSI device object using the given parameters.  <a href="#a671d549d699bbfdaef3bab87bd583dc5">More...</a><br /></td></tr>
 <tr class="separator:a671d549d699bbfdaef3bab87bd583dc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a43af88cd09b4922fb6594775e177e4"><td class="memItemLeft" align="right" valign="top">struct spdk_scsi_dev *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="scsi_8h.html#a2a43af88cd09b4922fb6594775e177e4">spdk_scsi_dev_construct_ext</a> (const char *name, const char *bdev_name_list[], int *lun_id_list, int num_luns, uint8_t protocol_id, void(*resize_cb)(const struct spdk_scsi_lun *, void *), void *resize_ctx, void(*hotremove_cb)(const struct spdk_scsi_lun *, void *), void *hotremove_ctx)</td></tr>
+<tr class="memdesc:a2a43af88cd09b4922fb6594775e177e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a SCSI device object using the more given parameters.  <a href="#a2a43af88cd09b4922fb6594775e177e4">More...</a><br /></td></tr>
+<tr class="separator:a2a43af88cd09b4922fb6594775e177e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abbacc6adf74a9790630dedda8b97940e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="scsi_8h.html#abbacc6adf74a9790630dedda8b97940e">spdk_scsi_dev_delete_lun</a> (struct spdk_scsi_dev *dev, struct spdk_scsi_lun *lun)</td></tr>
 <tr class="memdesc:abbacc6adf74a9790630dedda8b97940e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delete a logical unit of the given SCSI device.  <a href="#abbacc6adf74a9790630dedda8b97940e">More...</a><br /></td></tr>
 <tr class="separator:abbacc6adf74a9790630dedda8b97940e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae2a96b70c616896d33f6904ead1b7e5b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="scsi_8h.html#ae2a96b70c616896d33f6904ead1b7e5b">spdk_scsi_dev_add_lun</a> (struct spdk_scsi_dev *dev, const char *bdev_name, int lun_id, void(*hotremove_cb)(const struct spdk_scsi_lun *, void *), void *hotremove_ctx)</td></tr>
 <tr class="memdesc:ae2a96b70c616896d33f6904ead1b7e5b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a new logical unit to the given SCSI device.  <a href="#ae2a96b70c616896d33f6904ead1b7e5b">More...</a><br /></td></tr>
 <tr class="separator:ae2a96b70c616896d33f6904ead1b7e5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4fcfd06b7efaba45b8ae4e3aac3a02e0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="scsi_8h.html#a4fcfd06b7efaba45b8ae4e3aac3a02e0">spdk_scsi_dev_add_lun_ext</a> (struct spdk_scsi_dev *dev, const char *bdev_name, int lun_id, void(*resize_cb)(const struct spdk_scsi_lun *, void *), void *resize_ctx, void(*hotremove_cb)(const struct spdk_scsi_lun *, void *), void *hotremove_ctx)</td></tr>
+<tr class="memdesc:a4fcfd06b7efaba45b8ae4e3aac3a02e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a new logical unit to the given SCSI device with more callbacks.  <a href="#a4fcfd06b7efaba45b8ae4e3aac3a02e0">More...</a><br /></td></tr>
+<tr class="separator:a4fcfd06b7efaba45b8ae4e3aac3a02e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a295b1a0566c6b1dc9f5245724cb68179"><td class="memItemLeft" align="right" valign="top">struct spdk_scsi_port *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="scsi_8h.html#a295b1a0566c6b1dc9f5245724cb68179">spdk_scsi_port_create</a> (uint64_t id, uint16_t index, const char *name)</td></tr>
 <tr class="memdesc:a295b1a0566c6b1dc9f5245724cb68179"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new SCSI port.  <a href="#a295b1a0566c6b1dc9f5245724cb68179">More...</a><br /></td></tr>
 <tr class="separator:a295b1a0566c6b1dc9f5245724cb68179"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -420,6 +426,78 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="scsi
     <tr><td class="paramname">dev</td><td>SCSI device. </td></tr>
     <tr><td class="paramname">bdev_name</td><td>Name of the bdev attached to the logical unit. </td></tr>
     <tr><td class="paramname">lun_id</td><td>LUN id for the new logical unit. </td></tr>
+    <tr><td class="paramname">hotremove_cb</td><td>Callback to lun hotremoval. Will be called once hotremove is first triggered. </td></tr>
+    <tr><td class="paramname">hotremove_ctx</td><td>Additional argument to hotremove_cb. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a4fcfd06b7efaba45b8ae4e3aac3a02e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4fcfd06b7efaba45b8ae4e3aac3a02e0">&#9670;&nbsp;</a></span>spdk_scsi_dev_add_lun_ext()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_scsi_dev_add_lun_ext </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_scsi_dev *&#160;</td>
+          <td class="paramname"><em>dev</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>bdev_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>lun_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void(*)(const struct spdk_scsi_lun *, void *)&#160;</td>
+          <td class="paramname"><em>resize_cb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>resize_ctx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void(*)(const struct spdk_scsi_lun *, void *)&#160;</td>
+          <td class="paramname"><em>hotremove_cb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>hotremove_ctx</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Add a new logical unit to the given SCSI device with more callbacks. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dev</td><td>SCSI device. </td></tr>
+    <tr><td class="paramname">bdev_name</td><td>Name of the bdev attached to the logical unit. </td></tr>
+    <tr><td class="paramname">lun_id</td><td>LUN id for the new logical unit. </td></tr>
+    <tr><td class="paramname">resize_cb</td><td>Callback of lun resize. </td></tr>
+    <tr><td class="paramname">resize_ctx</td><td>Additional argument to resize_cb. </td></tr>
     <tr><td class="paramname">hotremove_cb</td><td>Callback to lun hotremoval. Will be called once hotremove is first triggered. </td></tr>
     <tr><td class="paramname">hotremove_ctx</td><td>Additional argument to hotremove_cb. </td></tr>
   </table>
@@ -564,6 +642,93 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="scsi
     <tr><td class="paramname">lun_id_list</td><td>List of LUN IDs for the LUN in this SCSI device. Caller is responsible for managing the memory containing this list. lun_id_list[x] is the LUN ID for lun_list[x]. </td></tr>
     <tr><td class="paramname">num_luns</td><td>Number of entries in lun_list and lun_id_list. </td></tr>
     <tr><td class="paramname">protocol_id</td><td>SCSI SPC protocol identifier to report in INQUIRY data </td></tr>
+    <tr><td class="paramname">hotremove_cb</td><td>Callback to lun hotremoval. Will be called once hotremove is first triggered. </td></tr>
+    <tr><td class="paramname">hotremove_ctx</td><td>Additional argument to hotremove_cb.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the constructed spdk_scsi_dev object. </dd></dl>
+
+</div>
+</div>
+<a id="a2a43af88cd09b4922fb6594775e177e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2a43af88cd09b4922fb6594775e177e4">&#9670;&nbsp;</a></span>spdk_scsi_dev_construct_ext()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct spdk_scsi_dev* spdk_scsi_dev_construct_ext </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>bdev_name_list</em>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>lun_id_list</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>num_luns</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>protocol_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void(*)(const struct spdk_scsi_lun *, void *)&#160;</td>
+          <td class="paramname"><em>resize_cb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>resize_ctx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void(*)(const struct spdk_scsi_lun *, void *)&#160;</td>
+          <td class="paramname"><em>hotremove_cb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>hotremove_ctx</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Construct a SCSI device object using the more given parameters. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>Name for the SCSI device. </td></tr>
+    <tr><td class="paramname">bdev_name_list</td><td>List of bdev names to attach to the LUNs for this SCSI device. </td></tr>
+    <tr><td class="paramname">lun_id_list</td><td>List of LUN IDs for the LUN in this SCSI device. Caller is responsible for managing the memory containing this list. lun_id_list[x] is the LUN ID for lun_list[x]. </td></tr>
+    <tr><td class="paramname">num_luns</td><td>Number of entries in lun_list and lun_id_list. </td></tr>
+    <tr><td class="paramname">protocol_id</td><td>SCSI SPC protocol identifier to report in INQUIRY data </td></tr>
+    <tr><td class="paramname">resize_cb</td><td>Callback of lun resize. </td></tr>
+    <tr><td class="paramname">resize_ctx</td><td>Additional argument to resize_cb. </td></tr>
     <tr><td class="paramname">hotremove_cb</td><td>Callback to lun hotremoval. Will be called once hotremove is first triggered. </td></tr>
     <tr><td class="paramname">hotremove_ctx</td><td>Additional argument to hotremove_cb.</td></tr>
   </table>

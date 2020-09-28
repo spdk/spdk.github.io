@@ -36,9 +36,11 @@ var scsi_8h =
       [ "SPDK_SCSI_TASK_MGMT_RESP_REJECT_FUNC_NOT_SUPPORTED", "scsi_8h.html#a5c7f47e943239407061a2b5bc7f804b3ab4a0ed59bd036b7397f5d154fdb2644a", null ]
     ] ],
     [ "spdk_scsi_dev_add_lun", "scsi_8h.html#ae2a96b70c616896d33f6904ead1b7e5b", null ],
+    [ "spdk_scsi_dev_add_lun_ext", "scsi_8h.html#a4fcfd06b7efaba45b8ae4e3aac3a02e0", null ],
     [ "spdk_scsi_dev_add_port", "scsi_8h.html#a7c5b012a7e8efabf6a08690cf8d6cc3b", null ],
     [ "spdk_scsi_dev_allocate_io_channels", "scsi_8h.html#a2b0b6fb0de39e57cbfca41ee8e33618f", null ],
     [ "spdk_scsi_dev_construct", "scsi_8h.html#a671d549d699bbfdaef3bab87bd583dc5", null ],
+    [ "spdk_scsi_dev_construct_ext", "scsi_8h.html#a2a43af88cd09b4922fb6594775e177e4", null ],
     [ "spdk_scsi_dev_delete_lun", "scsi_8h.html#abbacc6adf74a9790630dedda8b97940e", null ],
     [ "spdk_scsi_dev_delete_port", "scsi_8h.html#a4c9187606cadea64f9e8dabe5cfb473a", null ],
     [ "spdk_scsi_dev_destruct", "scsi_8h.html#a40945295e5d0c3ffede09f50a7fa861d", null ],
