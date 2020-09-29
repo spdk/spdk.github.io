@@ -22,7 +22,7 @@ var searchData=
   ['spdk_5faccel_5fsubmit_5ffill',['spdk_accel_submit_fill',['../accel__engine_8h.html#adb62b1e99d9a010c140987eea57f5dc4',1,'accel_engine.h']]],
   ['spdk_5faccel_5fwrite_5fconfig_5fjson',['spdk_accel_write_config_json',['../accel__engine_8h.html#a308671b4f55c2adc9469e59b941a6dcc',1,'accel_engine.h']]],
   ['spdk_5fapp_5ffini',['spdk_app_fini',['../event_8h.html#ab6ea643e128d25d5ac40e29b76d94c43',1,'event.h']]],
-  ['spdk_5fapp_5fget_5fcore_5fmask',['spdk_app_get_core_mask',['../event_8h.html#a44d0192357622c56e902136132dd89f0',1,'event.h']]],
+  ['spdk_5fapp_5fget_5fcore_5fmask',['spdk_app_get_core_mask',['../event_8h.html#a87e702ddd13e8fbc9df32b94f229da6f',1,'event.h']]],
   ['spdk_5fapp_5fget_5frunning_5fconfig',['spdk_app_get_running_config',['../event_8h.html#a74ff463ced05d4fab6baae4506c27f46',1,'event.h']]],
   ['spdk_5fapp_5fget_5fshm_5fid',['spdk_app_get_shm_id',['../event_8h.html#ac64ac17f456e8ac388d959c2e7a4a13b',1,'event.h']]],
   ['spdk_5fapp_5fopts_5finit',['spdk_app_opts_init',['../event_8h.html#a2c8af9052967bf98ff65e514ec7fa276',1,'event.h']]],

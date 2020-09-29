@@ -52,7 +52,7 @@ var searchData=
   ['spdk_5falign_5fceil',['SPDK_ALIGN_CEIL',['../util_8h.html#a61bd4178f177cf2265279944b0184fcd',1,'util.h']]],
   ['spdk_5falign_5ffloor',['SPDK_ALIGN_FLOOR',['../util_8h.html#a4fe89df2bed54dcdc8b0d33c53a694b6',1,'util.h']]],
   ['spdk_5fapp_5ffini',['spdk_app_fini',['../event_8h.html#ab6ea643e128d25d5ac40e29b76d94c43',1,'event.h']]],
-  ['spdk_5fapp_5fget_5fcore_5fmask',['spdk_app_get_core_mask',['../event_8h.html#a44d0192357622c56e902136132dd89f0',1,'event.h']]],
+  ['spdk_5fapp_5fget_5fcore_5fmask',['spdk_app_get_core_mask',['../event_8h.html#a87e702ddd13e8fbc9df32b94f229da6f',1,'event.h']]],
   ['spdk_5fapp_5fget_5frunning_5fconfig',['spdk_app_get_running_config',['../event_8h.html#a74ff463ced05d4fab6baae4506c27f46',1,'event.h']]],
   ['spdk_5fapp_5fget_5fshm_5fid',['spdk_app_get_shm_id',['../event_8h.html#ac64ac17f456e8ac388d959c2e7a4a13b',1,'event.h']]],
   ['spdk_5fapp_5fopts',['spdk_app_opts',['../structspdk__app__opts.html',1,'']]],
