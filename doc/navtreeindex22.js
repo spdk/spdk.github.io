@@ -1,5 +1,7 @@
 var NAVTREEINDEX22 =
 {
+"structspdk__opal__d0__v200__feat.html#af936416d50d2f62ebac6c56fea545b6d":[12,0,251,8],
+"structspdk__opal__data__subpacket.html":[12,0,252],
 "structspdk__opal__data__subpacket.html#a71ceb71a86888e7da7d5f8d9f979e5a7":[12,0,252,2],
 "structspdk__opal__data__subpacket.html#a9966ed1a17cfbe9f1b4a15580819341f":[12,0,252,0],
 "structspdk__opal__data__subpacket.html#ad262aba1216f9f4bc0820ff87889e986":[12,0,252,1],
@@ -247,7 +249,5 @@ var NAVTREEINDEX22 =
 "structspdk__scsi__vpd__page.html#ab01c44b30881fa4acc268253888f8fe4":[12,0,279,0],
 "structspdk__scsi__vpd__page.html#ac62f5b7a0b08a2ec4572bf002ce29399":[12,0,279,2],
 "structspdk__scsi__vpd__page.html#ae6185e80a408f83694f930378d8a5c03":[12,0,279,3],
-"structspdk__sock__impl__opts.html":[12,0,280],
-"structspdk__sock__impl__opts.html#a09960a9c0e5a9916f237656696f54339":[12,0,280,0],
-"structspdk__sock__impl__opts.html#a35575361b08cbdbd502ee741fadfa46b":[12,0,280,2]
+"structspdk__sock__impl__opts.html":[12,0,280]
 };

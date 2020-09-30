@@ -12,5 +12,5 @@ var searchData=
   ['optimal_5fopen_5fzones',['optimal_open_zones',['../structspdk__bdev.html#a11b4b1020556bd812c39731b057559f6',1,'spdk_bdev']]],
   ['opts_5finit',['opts_init',['../structspdk__nvmf__transport__ops.html#afa8e71018c357d6f6ea2293e178fe295',1,'spdk_nvmf_transport_ops']]],
   ['opts_5fsize',['opts_size',['../structspdk__nvme__ctrlr__opts.html#aad1d8f2afb4a1617023934e770b103de',1,'spdk_nvme_ctrlr_opts::opts_size()'],['../structspdk__sock__opts.html#ac8dbf1e759082939e4fc6318122931e7',1,'spdk_sock_opts::opts_size()']]],
-  ['ozcs',['ozcs',['../structspdk__nvme__ns__data__zns.html#a67180b4f66ccb141b3192a6e30e8c212',1,'spdk_nvme_ns_data_zns']]]
+  ['ozcs',['ozcs',['../structspdk__nvme__zns__ns__data.html#a6401852c678f3336d91f8da4febd4430',1,'spdk_nvme_zns_ns_data']]]
 ];
