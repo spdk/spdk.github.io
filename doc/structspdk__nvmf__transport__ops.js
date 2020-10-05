@@ -25,5 +25,6 @@ var structspdk__nvmf__transport__ops =
     [ "req_complete", "structspdk__nvmf__transport__ops.html#a144fd3bb2efe4616a2d9b78f93f969e6", null ],
     [ "req_free", "structspdk__nvmf__transport__ops.html#a36202727719ed813d03da75bc70e4868", null ],
     [ "stop_listen", "structspdk__nvmf__transport__ops.html#a79190a46c19b7d92d8929a7470afeb94", null ],
+    [ "subsystem_opts_parse", "structspdk__nvmf__transport__ops.html#ac807b4ed3a942167fe6e63b7adc42442", null ],
     [ "type", "structspdk__nvmf__transport__ops.html#a22ddd0d23a055a17e6bd10fe4927a4db", null ]
 ];

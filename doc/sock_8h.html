@@ -270,6 +270,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a81541bb1b8ae42b952c82988c482e99d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sock_8h.html#a81541bb1b8ae42b952c82988c482e99d">spdk_sock_impl_set_opts</a> (const char *impl_name, const struct <a class="el" href="structspdk__sock__impl__opts.html">spdk_sock_impl_opts</a> *opts, size_t len)</td></tr>
 <tr class="memdesc:a81541bb1b8ae42b952c82988c482e99d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set socket implementation options.  <a href="#a81541bb1b8ae42b952c82988c482e99d">More...</a><br /></td></tr>
 <tr class="separator:a81541bb1b8ae42b952c82988c482e99d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec93142cc59937fe35f5e2ddf025ad13"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sock_8h.html#aec93142cc59937fe35f5e2ddf025ad13">spdk_sock_set_default_impl</a> (const char *impl_name)</td></tr>
+<tr class="memdesc:aec93142cc59937fe35f5e2ddf025ad13"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the given sock implementation to be used a default one.  <a href="#aec93142cc59937fe35f5e2ddf025ad13">More...</a><br /></td></tr>
+<tr class="separator:aec93142cc59937fe35f5e2ddf025ad13"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a255128969e1129a8d9d0c2f2b24697b5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sock_8h.html#a255128969e1129a8d9d0c2f2b24697b5">spdk_sock_write_config_json</a> (struct spdk_json_write_ctx *w)</td></tr>
 <tr class="memdesc:a255128969e1129a8d9d0c2f2b24697b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write socket subsystem configuration into provided JSON context.  <a href="#a255128969e1129a8d9d0c2f2b24697b5">More...</a><br /></td></tr>
 <tr class="separator:a255128969e1129a8d9d0c2f2b24697b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1212,6 +1215,34 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the length of the received message on success, -1 on failure. </dd></dl>
+
+</div>
+</div>
+<a id="aec93142cc59937fe35f5e2ddf025ad13"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec93142cc59937fe35f5e2ddf025ad13">&#9670;&nbsp;</a></span>spdk_sock_set_default_impl()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_sock_set_default_impl </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>impl_name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the given sock implementation to be used a default one. </p>
+<p>Note: passing a specific sock implementation name in some sock API functions (such as <a class="el" href="sock_8h.html#afcbfb1e52df2160547b6f5e2bb8ec636">spdk_sock_connect</a>, <a class="el" href="sock_8h.html#a47043c348fe296ba0ff0ad0d96050430">spdk_sock_listen</a> and etc) ignores the default value set by this function.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">impl_name</td><td>The socket implementation to use, such as "posix". </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, -1 on failure. errno is set to indicate the reason of failure. </dd></dl>
 
 </div>
 </div>

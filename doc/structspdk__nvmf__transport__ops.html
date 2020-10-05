@@ -173,6 +173,10 @@ enum <a class="el" href="nvme_8h.html#ae87a03c28984a2c0499d50ef5e9d0ece">spdk_nv
 void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvmf__transport__ops.html#afa8e71018c357d6f6ea2293e178fe295">opts_init</a> )(struct <a class="el" href="structspdk__nvmf__transport__opts.html">spdk_nvmf_transport_opts</a> *opts)</td></tr>
 <tr class="memdesc:afa8e71018c357d6f6ea2293e178fe295"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize transport options to default value. <br /></td></tr>
 <tr class="separator:afa8e71018c357d6f6ea2293e178fe295"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac807b4ed3a942167fe6e63b7adc42442"><td class="memItemLeft" align="right" valign="top"><a id="ac807b4ed3a942167fe6e63b7adc42442"></a>
+int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvmf__transport__ops.html#ac807b4ed3a942167fe6e63b7adc42442">subsystem_opts_parse</a> )(struct <a class="el" href="structspdk__nvmf__transport.html">spdk_nvmf_transport</a> *transport, const struct spdk_nvmf_subsystem *subsystem, const struct <a class="el" href="structspdk__json__val.html">spdk_json_val</a> *opts)</td></tr>
+<tr class="memdesc:ac807b4ed3a942167fe6e63b7adc42442"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parse a subsystem opts. <br /></td></tr>
+<tr class="separator:ac807b4ed3a942167fe6e63b7adc42442"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1c70d537837f405619d127ea6a926694"><td class="memItemLeft" align="right" valign="top"><a id="a1c70d537837f405619d127ea6a926694"></a>
 struct <a class="el" href="structspdk__nvmf__transport.html">spdk_nvmf_transport</a> *(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvmf__transport__ops.html#a1c70d537837f405619d127ea6a926694">create</a> )(struct <a class="el" href="structspdk__nvmf__transport__opts.html">spdk_nvmf_transport_opts</a> *opts)</td></tr>
 <tr class="memdesc:a1c70d537837f405619d127ea6a926694"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a transport for the given transport opts. <br /></td></tr>

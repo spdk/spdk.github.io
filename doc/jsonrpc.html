@@ -3000,8 +3000,7 @@ blobfs_mount</h2>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;method&quot;: &quot;&quot;blobfs_mount&quot;&quot;,</div><div class="line">  &quot;params&quot;: {</div><div class="line">    &quot;bdev_name&quot;: &quot;Malloc0&quot;,</div><div class="line">    &quot;mountpoint&quot;: &quot;/mnt/&quot;</div><div class="line">  }</div><div class="line">}</div></div><!-- fragment --><p>Example response:</p>
-<p>~~~ { "jsonrpc": "2.0", "id": 1, "result": "true" } ~~</p>
-<h2><a class="anchor" id="rpc_blobfs_set_cache_size"></a>
+<div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: &quot;true&quot;</div><div class="line">}</div></div><!-- fragment --><h2><a class="anchor" id="rpc_blobfs_set_cache_size"></a>
 blobfs_set_cache_size</h2>
 <p>Set cache pool size for blobfs filesystems. This RPC is only permitted when the cache pool is not already initialized.</p>
 <p>The cache pool is initialized when the first blobfs filesystem is initialized or loaded. It is freed when the all initialized or loaded filesystems are unloaded.</p>
@@ -3061,6 +3060,21 @@ sock_impl_set_options</h2>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;method&quot;: &quot;sock_impl_set_options&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;params&quot;: {</div><div class="line">    &quot;impl_name&quot;: &quot;posix&quot;,</div><div class="line">    &quot;recv_buf_size&quot;: 2097152,</div><div class="line">    &quot;send_buf_size&quot;: 2097152,</div><div class="line">    &quot;enable_recv_pipe&quot;: false,</div><div class="line">    &quot;enable_zerocopy_send&quot;: true,</div><div class="line">    &quot;enable_quick_ack&quot;: false,</div><div class="line">    &quot;enable_placement_id&quot;: false</div><div class="line">  }</div><div class="line">}</div></div><!-- fragment --><p>Example response:</p>
+<div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: true</div><div class="line">}</div></div><!-- fragment --><h2><a class="anchor" id="rpc_sock_set_default_impl"></a>
+sock_set_default_impl</h2>
+<p>Set the default sock implementation.</p>
+<h3>Parameters</h3>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Name  </th><th class="markdownTableHeadNone">Optional  </th><th class="markdownTableHeadNone">Type  </th><th class="markdownTableHeadNone">Description   </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">impl_name  </td><td class="markdownTableBodyNone">Required  </td><td class="markdownTableBodyNone">string  </td><td class="markdownTableBodyNone">Name of socket implementation, e.g. posix   </td></tr>
+</table>
+<h3>Response</h3>
+<p>True if the default socket layer configuration was set successfully.</p>
+<h3>Example</h3>
+<p>Example request:</p>
+<div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;method&quot;: &quot;sock_set_default_impl&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;params&quot;: {</div><div class="line">    &quot;impl_name&quot;: &quot;posix&quot;</div><div class="line">  }</div><div class="line">}</div></div><!-- fragment --><p>Example response:</p>
 <div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: true</div><div class="line">}</div></div><!-- fragment --><h1>Miscellaneous RPC commands</h1>
 <h2><a class="anchor" id="rpc_bdev_nvme_send_cmd"></a>
 bdev_nvme_send_cmd</h2>
