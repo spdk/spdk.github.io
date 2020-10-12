@@ -73,6 +73,9 @@ var NAVTREEINDEX23 =
 "structspdk__uuid.html#a8a218370dc61ebfb25175b124febe10d":[12,0,292,0],
 "system_configuration.html":[3,0],
 "system_configuration.html#iommu_config":[3,0,0],
+"system_configuration.html#system_configuration_nonroot":[3,0,1],
+"system_configuration.html#system_configuration_nonroot_device_access":[3,0,1,0],
+"system_configuration.html#system_configuration_nonroot_memory_constraints":[3,0,1,1],
 "thread_8h.html":[13,0,53],
 "thread_8h.html#a07b662b152c21dad824ad2738d0733ec":[13,0,53,60],
 "thread_8h.html#a0f0c05dd1c9cb0b31eee89213b89f3c3":[13,0,53,31],
@@ -246,8 +249,5 @@ var NAVTREEINDEX23 =
 "unionspdk__nvme__cap__register.html#af726e8465f09c36be0185475ec67fbce":[12,0,84,5],
 "unionspdk__nvme__cap__register.html#afd09628d065cb825bc58e1d4eaa938a1":[12,0,84,4],
 "unionspdk__nvme__cc__register.html":[12,0,85],
-"unionspdk__nvme__cc__register.html#a006d611a4a37f82aaaa84d028d743407":[12,0,85,1],
-"unionspdk__nvme__cc__register.html#a1f03038a3d6fd2b7f2df15b15a887ce6":[12,0,85,2],
-"unionspdk__nvme__cc__register.html#a6be5f13e66cd6fd34c1463147cdfb106":[12,0,85,4],
-"unionspdk__nvme__cc__register.html#a777a7cb16e88d976eca2f8073fde6c4b":[12,0,85,0]
+"unionspdk__nvme__cc__register.html#a006d611a4a37f82aaaa84d028d743407":[12,0,85,1]
 };

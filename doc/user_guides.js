@@ -1,7 +1,11 @@
 var user_guides =
 [
     [ "System Configuration User Guide", "system_configuration.html", [
-      [ "IOMMU configuration", "system_configuration.html#iommu_config", null ]
+      [ "IOMMU configuration", "system_configuration.html#iommu_config", null ],
+      [ "Running SPDK as non-priviledged user", "system_configuration.html#system_configuration_nonroot", [
+        [ "Device access", "system_configuration.html#system_configuration_nonroot_device_access", null ],
+        [ "Memory constraints", "system_configuration.html#system_configuration_nonroot_memory_constraints", null ]
+      ] ]
     ] ],
     [ "SPDK Libraries", "libraries.html", [
       [ "Directory Structure", "libraries.html#structure", [

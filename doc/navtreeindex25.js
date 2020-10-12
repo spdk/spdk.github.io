@@ -1,5 +1,8 @@
 var NAVTREEINDEX25 =
 {
+"unionspdk__nvme__feat__write__atomicity.html#a4a67a4f708c90c0316820b707bb398fd":[12,0,124,1],
+"unionspdk__nvme__feat__write__atomicity.html#a8fd192e661b226064e4890a49c16ea6e":[12,0,124,2],
+"unionspdk__nvme__feat__write__atomicity.html#ada4a9129ffb571abc00b73298e8bf957":[12,0,124,3],
 "unionspdk__nvme__intel__feat__latency__tracking.html":[12,0,130],
 "unionspdk__nvme__intel__feat__latency__tracking.html#a3f7d5e23bb986ab742716254101bfe30":[12,0,130,1],
 "unionspdk__nvme__intel__feat__latency__tracking.html#a853aff120e2d0063588ffaac6473b7c9":[12,0,130,2],
