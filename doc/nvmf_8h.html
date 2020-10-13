@@ -284,7 +284,7 @@ Functions</h2></td></tr>
 <tr class="memdesc:a19b3442b7eb75c234c3e3090d2b5add3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allow the given host NQN to connect to the given subsystem.  <a href="#a19b3442b7eb75c234c3e3090d2b5add3">More...</a><br /></td></tr>
 <tr class="separator:a19b3442b7eb75c234c3e3090d2b5add3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a028b2b8739dfdd896414b5c2fb84faf6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#a028b2b8739dfdd896414b5c2fb84faf6">spdk_nvmf_subsystem_remove_host</a> (struct spdk_nvmf_subsystem *subsystem, const char *hostnqn)</td></tr>
-<tr class="memdesc:a028b2b8739dfdd896414b5c2fb84faf6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove the given host NQN from the allowed hosts whitelist.  <a href="#a028b2b8739dfdd896414b5c2fb84faf6">More...</a><br /></td></tr>
+<tr class="memdesc:a028b2b8739dfdd896414b5c2fb84faf6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove the given host NQN from the list of allowed hosts.  <a href="#a028b2b8739dfdd896414b5c2fb84faf6">More...</a><br /></td></tr>
 <tr class="separator:a028b2b8739dfdd896414b5c2fb84faf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad6453b746f3c470e00e23fa4a194cfbd"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#ad6453b746f3c470e00e23fa4a194cfbd">spdk_nvmf_subsystem_set_allow_any_host</a> (struct spdk_nvmf_subsystem *subsystem, bool allow_any_host)</td></tr>
 <tr class="memdesc:ad6453b746f3c470e00e23fa4a194cfbd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set whether a subsystem should allow any host or only hosts in the allowed list.  <a href="#ad6453b746f3c470e00e23fa4a194cfbd">More...</a><br /></td></tr>
@@ -1225,7 +1225,6 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Allow the given host NQN to connect to the given subsystem. </p>
-<p>May only be performed on subsystems in the PAUSED or INACTIVE states.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">subsystem</td><td>Subsystem to add host to. </td></tr>
@@ -2119,8 +2118,8 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Remove the given host NQN from the allowed hosts whitelist. </p>
-<p>May only be performed on subsystems in the PAUSED or INACTIVE states.</p>
+<p>Remove the given host NQN from the list of allowed hosts. </p>
+<p>This call only removes the host from the allowed list of hosts. If a host with the given NQN is already connected it will not be disconnected, but it will not be able to create new connections.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">subsystem</td><td>Subsystem to remove host from. </td></tr>
@@ -2283,7 +2282,6 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Set whether a subsystem should allow any host or only hosts in the allowed list. </p>
-<p>May only be performed on subsystems in the PAUSED or INACTIVE states.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">subsystem</td><td>Subsystem to modify. </td></tr>
