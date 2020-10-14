@@ -50,6 +50,7 @@ var searchData=
   ['spdk_5fjson_5fobject_5fdecoder',['spdk_json_object_decoder',['../structspdk__json__object__decoder.html',1,'']]],
   ['spdk_5fjson_5fval',['spdk_json_val',['../structspdk__json__val.html',1,'']]],
   ['spdk_5fjsonrpc_5fclient_5fresponse',['spdk_jsonrpc_client_response',['../structspdk__jsonrpc__client__response.html',1,'']]],
+  ['spdk_5flog_5fflag',['spdk_log_flag',['../structspdk__log__flag.html',1,'']]],
   ['spdk_5flvs_5fopts',['spdk_lvs_opts',['../structspdk__lvs__opts.html',1,'']]],
   ['spdk_5fmbr',['spdk_mbr',['../structspdk__mbr.html',1,'']]],
   ['spdk_5fmbr_5fchs',['spdk_mbr_chs',['../structspdk__mbr__chs.html',1,'']]],

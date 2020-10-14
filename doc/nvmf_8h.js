@@ -37,6 +37,7 @@ var nvmf_8h =
     [ "spdk_nvmf_subsystem_add_host", "nvmf_8h.html#a19b3442b7eb75c234c3e3090d2b5add3", null ],
     [ "spdk_nvmf_subsystem_add_listener", "nvmf_8h.html#a96ece790c05df3a1f410ef617b2e5cb4", null ],
     [ "spdk_nvmf_subsystem_add_ns", "nvmf_8h.html#a81b63417dea01e5a4fe15a4f3322c63c", null ],
+    [ "spdk_nvmf_subsystem_add_ns_ext", "nvmf_8h.html#a9778ef2894d69144defb4f1547bfec15", null ],
     [ "spdk_nvmf_subsystem_allow_any_listener", "nvmf_8h.html#ad5747c07b3d4ce75b4825597ecf32fde", null ],
     [ "spdk_nvmf_subsystem_create", "nvmf_8h.html#ad1b7f34d31e34d784fb54b70b02bdb15", null ],
     [ "spdk_nvmf_subsystem_destroy", "nvmf_8h.html#a1609f4c58179de803a755cc38c5c2940", null ],

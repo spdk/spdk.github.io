@@ -142,6 +142,7 @@ $(document).ready(function(){initNavTree('log_8h.html','');});
 
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Data Structures</a> &#124;
 <a href="#define-members">Macros</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
 <a href="#enum-members">Enumerations</a> &#124;
@@ -154,6 +155,11 @@ $(document).ready(function(){initNavTree('log_8h.html','');});
 <p>Logging interfaces.  
 <a href="#details">More...</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Data Structures</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__log__flag.html">spdk_log_flag</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
 <tr class="memitem:a708ac484a189572de867c299fcbbe5be"><td class="memItemLeft" align="right" valign="top"><a id="a708ac484a189572de867c299fcbbe5be"></a>
@@ -171,6 +177,16 @@ Macros</h2></td></tr>
 <tr class="memitem:a013363047e6662f5353b8bffe1c079e6"><td class="memItemLeft" align="right" valign="top"><a id="a013363047e6662f5353b8bffe1c079e6"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_PRINTF</b>(...)&#160;&#160;&#160;<a class="el" href="log_8h.html#aaa20a1f56503b0d9f16c82b451fb338b">spdk_log</a>(SPDK_LOG_NOTICE, NULL, -1, NULL, __VA_ARGS__)</td></tr>
 <tr class="separator:a013363047e6662f5353b8bffe1c079e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a006f81539904967c51f6a26f93d908be"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_INFOLOG</b>(FLAG, ...)</td></tr>
+<tr class="separator:a006f81539904967c51f6a26f93d908be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae38b49633346c10edf505c9ec5a11af6"><td class="memItemLeft" align="right" valign="top"><a id="ae38b49633346c10edf505c9ec5a11af6"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_DEBUGLOG</b>(...)&#160;&#160;&#160;do { } while (0)</td></tr>
+<tr class="separator:ae38b49633346c10edf505c9ec5a11af6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec36027084c167aa798f9f4cb33e639a"><td class="memItemLeft" align="right" valign="top"><a id="aec36027084c167aa798f9f4cb33e639a"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_LOGDUMP</b>(...)&#160;&#160;&#160;do { } while (0)</td></tr>
+<tr class="separator:aec36027084c167aa798f9f4cb33e639a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78b00284a14bd0963fcad2585fd090b2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_LOG_REGISTER_COMPONENT</b>(FLAG)</td></tr>
+<tr class="separator:a78b00284a14bd0963fcad2585fd090b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
@@ -225,6 +241,15 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log_
 <tr class="memitem:ad360332e6a9699cdfecdac00f768c0b1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log_8h.html#ad360332e6a9699cdfecdac00f768c0b1">spdk_log_dump</a> (FILE *fp, const char *label, const void *buf, size_t len)</td></tr>
 <tr class="memdesc:ad360332e6a9699cdfecdac00f768c0b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Log the contents of a raw buffer to a file.  <a href="#ad360332e6a9699cdfecdac00f768c0b1">More...</a><br /></td></tr>
 <tr class="separator:ad360332e6a9699cdfecdac00f768c0b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50fb7357e436ac28171ba7b2f32920a3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log_8h.html#a50fb7357e436ac28171ba7b2f32920a3">spdk_log_register_flag</a> (const char *name, struct <a class="el" href="structspdk__log__flag.html">spdk_log_flag</a> *flag)</td></tr>
+<tr class="memdesc:a50fb7357e436ac28171ba7b2f32920a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register a log flag.  <a href="#a50fb7357e436ac28171ba7b2f32920a3">More...</a><br /></td></tr>
+<tr class="separator:a50fb7357e436ac28171ba7b2f32920a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a023176df95c75961f857891a5aa6e987"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structspdk__log__flag.html">spdk_log_flag</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log_8h.html#a023176df95c75961f857891a5aa6e987">spdk_log_get_first_flag</a> (void)</td></tr>
+<tr class="memdesc:a023176df95c75961f857891a5aa6e987"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the first registered log flag.  <a href="#a023176df95c75961f857891a5aa6e987">More...</a><br /></td></tr>
+<tr class="separator:a023176df95c75961f857891a5aa6e987"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80d1557908e5d42aa110a9db432b35a0"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structspdk__log__flag.html">spdk_log_flag</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log_8h.html#a80d1557908e5d42aa110a9db432b35a0">spdk_log_get_next_flag</a> (struct <a class="el" href="structspdk__log__flag.html">spdk_log_flag</a> *flag)</td></tr>
+<tr class="memdesc:a80d1557908e5d42aa110a9db432b35a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the next registered log flag.  <a href="#a80d1557908e5d42aa110a9db432b35a0">More...</a><br /></td></tr>
+<tr class="separator:a80d1557908e5d42aa110a9db432b35a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a66ec4ca21d549ea445c7c662b3f1c637"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log_8h.html#a66ec4ca21d549ea445c7c662b3f1c637">spdk_log_get_flag</a> (const char *flag)</td></tr>
 <tr class="memdesc:a66ec4ca21d549ea445c7c662b3f1c637"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check whether the log flag exists and is enabled.  <a href="#a66ec4ca21d549ea445c7c662b3f1c637">More...</a><br /></td></tr>
 <tr class="separator:a66ec4ca21d549ea445c7c662b3f1c637"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -240,7 +265,56 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log_
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Logging interfaces. </p>
-</div><h2 class="groupheader">Typedef Documentation</h2>
+</div><h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="a006f81539904967c51f6a26f93d908be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a006f81539904967c51f6a26f93d908be">&#9670;&nbsp;</a></span>SPDK_INFOLOG</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SPDK_INFOLOG</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">FLAG, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>...</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">do</span> {                                                                                    \</div><div class="line">                if (<a class="code" href="log_8h.html#a66ec4ca21d549ea445c7c662b3f1c637">spdk_log_get_flag</a>(#FLAG)) {                                                 \</div><div class="line">                        spdk_log(SPDK_LOG_INFO, __FILE__, __LINE__, __func__, __VA_ARGS__);     \</div><div class="line">                }                                                                               \</div><div class="line">        } <span class="keywordflow">while</span> (0)</div><div class="ttc" id="log_8h_html_a66ec4ca21d549ea445c7c662b3f1c637"><div class="ttname"><a href="log_8h.html#a66ec4ca21d549ea445c7c662b3f1c637">spdk_log_get_flag</a></div><div class="ttdeci">bool spdk_log_get_flag(const char *flag)</div><div class="ttdoc">Check whether the log flag exists and is enabled.</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a78b00284a14bd0963fcad2585fd090b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a78b00284a14bd0963fcad2585fd090b2">&#9670;&nbsp;</a></span>SPDK_LOG_REGISTER_COMPONENT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SPDK_LOG_REGISTER_COMPONENT</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">FLAG</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line"><span class="keyword">struct </span><a class="code" href="structspdk__log__flag.html">spdk_log_flag</a> SPDK_LOG_##FLAG = { \</div><div class="line">        .enabled = <span class="keyword">false</span>, \</div><div class="line">        .name = #FLAG, \</div><div class="line">}; \</div><div class="line">__attribute__((constructor)) <span class="keyword">static</span> <span class="keywordtype">void</span> register_flag_##FLAG(<span class="keywordtype">void</span>) \</div><div class="line">{ \</div><div class="line">        spdk_log_register_flag(#FLAG, &amp;SPDK_LOG_##FLAG); \</div><div class="line">}</div><div class="ttc" id="structspdk__log__flag_html"><div class="ttname"><a href="structspdk__log__flag.html">spdk_log_flag</a></div><div class="ttdef"><b>Definition:</b> log.h:199</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Typedef Documentation</h2>
 <a id="a759e79a44bb8dd5733e81c7d213fd730"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a759e79a44bb8dd5733e81c7d213fd730">&#9670;&nbsp;</a></span>logfunc</h2>
 
@@ -452,6 +526,27 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log_
 
 </div>
 </div>
+<a id="a023176df95c75961f857891a5aa6e987"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a023176df95c75961f857891a5aa6e987">&#9670;&nbsp;</a></span>spdk_log_get_first_flag()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="structspdk__log__flag.html">spdk_log_flag</a>* spdk_log_get_first_flag </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the first registered log flag. </p>
+<dl class="section return"><dt>Returns</dt><dd>The first registered log flag. </dd></dl>
+
+</div>
+</div>
 <a id="a66ec4ca21d549ea445c7c662b3f1c637"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a66ec4ca21d549ea445c7c662b3f1c637">&#9670;&nbsp;</a></span>spdk_log_get_flag()</h2>
 
@@ -494,6 +589,33 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log_
 
 </div>
 </div>
+<a id="a80d1557908e5d42aa110a9db432b35a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a80d1557908e5d42aa110a9db432b35a0">&#9670;&nbsp;</a></span>spdk_log_get_next_flag()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="structspdk__log__flag.html">spdk_log_flag</a>* spdk_log_get_next_flag </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structspdk__log__flag.html">spdk_log_flag</a> *&#160;</td>
+          <td class="paramname"><em>flag</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the next registered log flag. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">flag</td><td>The current log flag.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The next registered log flag. </dd></dl>
+
+</div>
+</div>
 <a id="a880b1e27d71328429dbf4f65e02ff145"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a880b1e27d71328429dbf4f65e02ff145">&#9670;&nbsp;</a></span>spdk_log_get_print_level()</h2>
 
@@ -533,6 +655,43 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log_
 
 <p>Initialize the logging module. </p>
 <p>Messages prior to this call will be dropped. </p>
+
+</div>
+</div>
+<a id="a50fb7357e436ac28171ba7b2f32920a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a50fb7357e436ac28171ba7b2f32920a3">&#9670;&nbsp;</a></span>spdk_log_register_flag()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_log_register_flag </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structspdk__log__flag.html">spdk_log_flag</a> *&#160;</td>
+          <td class="paramname"><em>flag</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Register a log flag. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>Name of the log flag. </td></tr>
+    <tr><td class="paramname">flag</td><td>Log flag to be added. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
