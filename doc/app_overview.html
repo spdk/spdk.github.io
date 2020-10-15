@@ -199,7 +199,7 @@ Command Line Parameters</h2>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">&ndash;huge-dir  </td><td class="markdownTableBodyNone">string  </td><td class="markdownTableBodyNone">the first discovered  </td><td class="markdownTableBodyNone">allocate hugepages from a specific mount   </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">-L  </td><td class="markdownTableBodyNone">&ndash;logflag  </td><td class="markdownTableBodyNone">string  </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"><a class="el" href="app_overview.html#cmd_arg_debug_log_flags">Debug log</a>   </td></tr>
+<td class="markdownTableBodyNone">-L  </td><td class="markdownTableBodyNone">&ndash;logflag  </td><td class="markdownTableBodyNone">string  </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"><a class="el" href="app_overview.html#cmd_arg_log_flags">Log flag</a>   </td></tr>
 </table>
 <h3><a class="anchor" id="cmd_arg_config_file"></a>
 Configuration file</h3>
@@ -237,9 +237,9 @@ PCI address blacklist and whitelist</h3>
 <h3><a class="anchor" id="cmd_arg_huge_unlink"></a>
 Unlink hugepage files after initialization</h3>
 <p>By default, each DPDK-based application tries to remove any orphaned hugetlbfs files during its initialization. This option removes hugetlbfs files of the current process as soon as they're created, but is not compatible with <code>--shm-id</code>.</p>
-<h3><a class="anchor" id="cmd_arg_debug_log_flags"></a>
-Debug log</h3>
-<p>Enable a specific debug log type. This option can be used more than once. A list of all available types is provided in the <code>--help</code> output, with <code>--logflag all</code> enabling all of them. Debug logs are only available in debug builds of SPDK.</p>
+<h3><a class="anchor" id="cmd_arg_log_flags"></a>
+Log flag</h3>
+<p>Enable a specific log type. This option can be used more than once. A list of all available types is provided in the <code>--help</code> output, with <code>--logflag all</code> enabling all of them. Additionally enables debug print level in debug builds of SPDK.</p>
 <h2><a class="anchor" id="cpu_mask"></a>
 CPU mask</h2>
 <p>Whenever the <code>CPU mask</code> is mentioned it is a string in one of the following formats:</p>

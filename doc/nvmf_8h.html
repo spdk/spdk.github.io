@@ -286,6 +286,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a028b2b8739dfdd896414b5c2fb84faf6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#a028b2b8739dfdd896414b5c2fb84faf6">spdk_nvmf_subsystem_remove_host</a> (struct spdk_nvmf_subsystem *subsystem, const char *hostnqn)</td></tr>
 <tr class="memdesc:a028b2b8739dfdd896414b5c2fb84faf6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove the given host NQN from the list of allowed hosts.  <a href="#a028b2b8739dfdd896414b5c2fb84faf6">More...</a><br /></td></tr>
 <tr class="separator:a028b2b8739dfdd896414b5c2fb84faf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18b4cfdef8236b13193ad8e69be247fe"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#a18b4cfdef8236b13193ad8e69be247fe">spdk_nvmf_subsystem_disconnect_host</a> (struct spdk_nvmf_subsystem *subsystem, const char *hostnqn, <a class="el" href="nvmf_8h.html#aad52ac090dcb26b03da0e689ea71df89">spdk_nvmf_tgt_subsystem_listen_done_fn</a> cb_fn, void *cb_arg)</td></tr>
+<tr class="memdesc:a18b4cfdef8236b13193ad8e69be247fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disconnect all connections originating from the provided hostnqn.  <a href="#a18b4cfdef8236b13193ad8e69be247fe">More...</a><br /></td></tr>
+<tr class="separator:a18b4cfdef8236b13193ad8e69be247fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad6453b746f3c470e00e23fa4a194cfbd"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#ad6453b746f3c470e00e23fa4a194cfbd">spdk_nvmf_subsystem_set_allow_any_host</a> (struct spdk_nvmf_subsystem *subsystem, bool allow_any_host)</td></tr>
 <tr class="memdesc:ad6453b746f3c470e00e23fa4a194cfbd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set whether a subsystem should allow any host or only hosts in the allowed list.  <a href="#ad6453b746f3c470e00e23fa4a194cfbd">More...</a><br /></td></tr>
 <tr class="separator:ad6453b746f3c470e00e23fa4a194cfbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1526,6 +1529,59 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="a18b4cfdef8236b13193ad8e69be247fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a18b4cfdef8236b13193ad8e69be247fe">&#9670;&nbsp;</a></span>spdk_nvmf_subsystem_disconnect_host()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_nvmf_subsystem_disconnect_host </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_nvmf_subsystem *&#160;</td>
+          <td class="paramname"><em>subsystem</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>hostnqn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="nvmf_8h.html#aad52ac090dcb26b03da0e689ea71df89">spdk_nvmf_tgt_subsystem_listen_done_fn</a>&#160;</td>
+          <td class="paramname"><em>cb_fn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>cb_arg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Disconnect all connections originating from the provided hostnqn. </p>
+<p>To disconnect and block all new connections from a host, first call <a class="el" href="nvmf_8h.html#a028b2b8739dfdd896414b5c2fb84faf6" title="Remove the given host NQN from the list of allowed hosts.">spdk_nvmf_subsystem_remove_host()</a> to remove it from the list of allowed hosts, then call <a class="el" href="nvmf_8h.html#a18b4cfdef8236b13193ad8e69be247fe" title="Disconnect all connections originating from the provided hostnqn.">spdk_nvmf_subsystem_disconnect_host()</a> to close any remaining connections.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">subsystem</td><td>Subsystem to operate on </td></tr>
+    <tr><td class="paramname">hostnqn</td><td>The NQN for the host </td></tr>
+    <tr><td class="paramname">cb_fn</td><td>The function to call on completion. </td></tr>
+    <tr><td class="paramname">cb_arg</td><td>The argument to pass to the cb_fn.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>int. 0 when the asynchronous process starts successfully or a negated errno on failure. </dd></dl>
 
 </div>
 </div>

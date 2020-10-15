@@ -36,7 +36,7 @@ var user_guides =
           [ "Disable PCI access", "app_overview.html#cmd_arg_disable_pci_access", null ],
           [ "PCI address blacklist and whitelist", "app_overview.html#cmd_arg_pci_blacklist_whitelist", null ],
           [ "Unlink hugepage files after initialization", "app_overview.html#cmd_arg_huge_unlink", null ],
-          [ "Debug log", "app_overview.html#cmd_arg_debug_log_flags", null ]
+          [ "Log flag", "app_overview.html#cmd_arg_log_flags", null ]
         ] ],
         [ "CPU mask", "app_overview.html#cpu_mask", null ]
       ] ]
