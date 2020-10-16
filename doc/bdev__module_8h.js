@@ -54,6 +54,7 @@ var bdev__module_8h =
     [ "spdk_bdev_notify_blockcnt_change", "bdev__module_8h.html#a7f2edd5a040a818752112d2cc709efca", null ],
     [ "spdk_bdev_notify_media_management", "bdev__module_8h.html#a82dd20b5702f2f97c1f8eec5cdc6d0d5", null ],
     [ "spdk_bdev_part_base_construct", "bdev__module_8h.html#a338144e9efbe3da7b78f034f2bdb1f93", null ],
+    [ "spdk_bdev_part_base_construct_ext", "bdev__module_8h.html#a2a279a58afa5c5ed8a68820fcea0efaa", null ],
     [ "spdk_bdev_part_base_free", "bdev__module_8h.html#ac496f9870a5626441ef14a073ef5e137", null ],
     [ "spdk_bdev_part_base_get_bdev", "bdev__module_8h.html#aed3ff2400cb02ba0f627000dddee322b", null ],
     [ "spdk_bdev_part_base_get_bdev_name", "bdev__module_8h.html#a65879a433b50a4b3236ba734ab8c4478", null ],

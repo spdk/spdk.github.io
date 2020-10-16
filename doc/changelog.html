@@ -148,7 +148,7 @@ $(document).ready(function(){initNavTree('changelog.html','');});
 <div class="textblock"><h1><a class="anchor" id="changelog-v20-10"></a>
 v20.10: (Upcoming Release)</h1>
 <h2>bdev</h2>
-<p>A new API was added <code>bdev_examine_bdev</code> that allows users to examine a bdev explicitly. It can be used only if auto_examine is disabled.</p>
+<p>A new <code>spdk_bdev_part_base_construct_ext</code> function has been added and the <code>spdk_bdev_part_base_construct</code> has been deprecated. The <code>spdk_bdev_part_base_construct_ext</code> function takes bdev name as an argument instead of bdev structure to avoid a race condition that can happen when the bdev is being removed between a call to get its structure based on a name and actually openning it.</p>
 <h2>dpdk</h2>
 <p>Updated DPDK submodule to DPDK 20.08.</p>
 <h2>intel-ipsec-mb</h2>
@@ -164,6 +164,7 @@ v20.10: (Upcoming Release)</h1>
 <p>The <code>enable_placement_id</code> field was added in the struct <a class="el" href="structspdk__sock__impl__opts.html" title="SPDK socket implementation options.">spdk_sock_impl_opts</a> to make the placement_id feature configurable by users. The default setting is not enabled.</p>
 <h2>rpc</h2>
 <p>A new optional parameter <code>enable_placement_id</code> was added to the <code>sock_impl_set_options</code> RPC.</p>
+<p>A new RPC <code>bdev_examine_bdev</code> was added to allow users to examine a bdev explicitly. It can be used only if bdev_auto_examine is set to false by the RPC <code>bdev_set_options</code>.</p>
 <h2>Miscellaneous</h2>
 <p>The contents of the log_rpc library have been moved to the event library. The log_rpc library now no longer exists.</p>
 <p>The contents of the app_rpc library have been moved to the event library. The app_rpc library now no longer exists.</p>

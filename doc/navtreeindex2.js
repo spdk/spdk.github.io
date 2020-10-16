@@ -1,5 +1,6 @@
 var NAVTREEINDEX2 =
 {
+"changelog.html#changelog-v20-01":[1,3,3],
 "changelog.html#changelog-v20-04":[1,3,2],
 "changelog.html#changelog-v20-07":[1,3,1],
 "changelog.html#changelog-v20-10":[1,3,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX2 =
 "ftl.html#ftl_spdk_config":[4,4,1,4],
 "ftl.html#ftl_terminology":[4,4,0],
 "ftl.html#ftl_usage":[4,4,1],
-"ftl.html#ftl_zone_block":[4,4,1,5],
-"functions.html":[12,2,0]
+"ftl.html#ftl_zone_block":[4,4,1,5]
 };
