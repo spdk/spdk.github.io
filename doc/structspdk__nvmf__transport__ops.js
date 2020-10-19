@@ -4,6 +4,7 @@ var structspdk__nvmf__transport__ops =
     [ "cdata_init", "structspdk__nvmf__transport__ops.html#ad85e8fada80fc3301d5adc2ba909e312", null ],
     [ "create", "structspdk__nvmf__transport__ops.html#a1c70d537837f405619d127ea6a926694", null ],
     [ "destroy", "structspdk__nvmf__transport__ops.html#acf56627c91b208e3531b0d2ecbde3405", null ],
+    [ "dump_opts", "structspdk__nvmf__transport__ops.html#a1d7d193990382233f3c4296d4456ef09", null ],
     [ "get_optimal_poll_group", "structspdk__nvmf__transport__ops.html#a0a4b65e9d7fe480b70bc37ffe88e89fc", null ],
     [ "listen", "structspdk__nvmf__transport__ops.html#a434205e227615c534b70df154eeeaf33", null ],
     [ "listen_associate", "structspdk__nvmf__transport__ops.html#a5c0ed21883564670cf8b3a6a84717b57", null ],

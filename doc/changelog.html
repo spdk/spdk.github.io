@@ -151,6 +151,8 @@ v20.10: (Upcoming Release)</h1>
 <p>A new <code>spdk_bdev_part_base_construct_ext</code> function has been added and the <code>spdk_bdev_part_base_construct</code> has been deprecated. The <code>spdk_bdev_part_base_construct_ext</code> function takes bdev name as an argument instead of bdev structure to avoid a race condition that can happen when the bdev is being removed between a call to get its structure based on a name and actually openning it.</p>
 <h2>dpdk</h2>
 <p>Updated DPDK submodule to DPDK 20.08.</p>
+<h2>gpt</h2>
+<p>Removed option to disable GPT probing via legacy configuration. Please use generic bdev functionality to replicate the behavior. See <code>bdev_set_options --disable-auto-examine</code> and <code>bdev_examine</code> RPC.</p>
 <h2>intel-ipsec-mb</h2>
 <p>Updated intel-ipsec-mb submodule to v0.54</p>
 <h2>isa-l</h2>
@@ -172,8 +174,11 @@ v20.10: (Upcoming Release)</h1>
 <h2>scsi</h2>
 <p>Two new APIs have been added <code>spdk_scsi_dev_construct_ext</code> and <code>spdk_scsi_dev_add_lun_ext</code> that allow the upper layer(e.g. vhost-scsi) to receive the notification when the scsi bdev has been resized.</p>
 <p>The <code>spdk_scsi_dev_construct</code> and <code>spdk_scsi_dev_add_lun</code> eventually may be deprecated and removed.</p>
+<h2>nvmf</h2>
+<p>NVMf Target transports can now parse any additional JSON params in the nvmf_create_transport RPC through the JSON context provided via spdk_nvmf_target_opts-&gt;transport_specific.</p>
 <h1><a class="anchor" id="changelog-v20-07"></a>
 v20.07: SPDK CSI driver, new accel_fw commands, I/O abort support</h1>
+<p>spdk_json_free_object() was added to free memory allocated by spdk_json_decode_object().</p>
 <h2>accel</h2>
 <p>A new API was added <code>spdk_accel_get_capabilities</code> that allows applications to query the capabilities of the currently enabled accel engine back-end.</p>
 <p>A new capability, CRC-32C, was added via <code>spdk_accel_submit_crc32c</code>.</p>

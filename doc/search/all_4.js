@@ -23,5 +23,6 @@ var searchData=
   ['dstrd',['dstrd',['../unionspdk__nvme__cap__register.html#af726e8465f09c36be0185475ec67fbce',1,'spdk_nvme_cap_register']]],
   ['dulbe',['dulbe',['../unionspdk__nvme__feat__error__recovery.html#a85c441ab749eca8500b09add45336e0d',1,'spdk_nvme_feat_error_recovery']]],
   ['dump_5finfo_5fjson',['dump_info_json',['../structspdk__bdev__fn__table.html#a417860f5598560a20b7bd4b5e8b4c3b0',1,'spdk_bdev_fn_table']]],
+  ['dump_5fopts',['dump_opts',['../structspdk__nvmf__transport__ops.html#a1d7d193990382233f3c4296d4456ef09',1,'spdk_nvmf_transport_ops']]],
   ['direct_20memory_20access_20_28dma_29_20from_20user_20space',['Direct Memory Access (DMA) From User Space',['../memory.html',1,'concepts']]]
 ];
