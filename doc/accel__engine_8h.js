@@ -20,7 +20,6 @@ var accel__engine_8h =
     [ "spdk_accel_batch_prep_dualcast", "accel__engine_8h.html#acc4985a99f3530a6086324e02c1062bd", null ],
     [ "spdk_accel_batch_prep_fill", "accel__engine_8h.html#aa32805adbe8590f186595f9c66fa87e7", null ],
     [ "spdk_accel_batch_submit", "accel__engine_8h.html#afc0003901c7e38a40892a64f829aee86", null ],
-    [ "spdk_accel_engine_config_text", "accel__engine_8h.html#a8712842b28f0efe1acb0cc84487535c4", null ],
     [ "spdk_accel_engine_finish", "accel__engine_8h.html#a6bf01a71e66d69942c8d22d11de7d359", null ],
     [ "spdk_accel_engine_get_io_channel", "accel__engine_8h.html#aedef5318137c2b093932164e23c93f0c", null ],
     [ "spdk_accel_engine_initialize", "accel__engine_8h.html#af0ba5139fd29c095256d77f29b65a205", null ],

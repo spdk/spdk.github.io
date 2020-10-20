@@ -147,8 +147,12 @@ $(document).ready(function(){initNavTree('changelog.html','');});
 <div class="contents">
 <div class="textblock"><h1><a class="anchor" id="changelog-v20-10"></a>
 v20.10: (Upcoming Release)</h1>
+<h2>vhost</h2>
+<p>SPDK has switched to DPDK's rte_vhost library since 19.07 release, removed the internal rte_vhost library which is used for DPDK older than 19.05, removed the experimental vhost nvme target which depends on the internal rte_vhost library.</p>
 <h2>bdev</h2>
 <p>A new <code>spdk_bdev_part_base_construct_ext</code> function has been added and the <code>spdk_bdev_part_base_construct</code> has been deprecated. The <code>spdk_bdev_part_base_construct_ext</code> function takes bdev name as an argument instead of bdev structure to avoid a race condition that can happen when the bdev is being removed between a call to get its structure based on a name and actually openning it.</p>
+<h2>blobstore</h2>
+<p>A new <code>spdk_bdev_create_bs_dev_ext</code> function has been added and <code>spdk_bdev_create_bs_dev_from_desc</code> function has been deprecated.</p>
 <h2>dpdk</h2>
 <p>Updated DPDK submodule to DPDK 20.08.</p>
 <h2>gpt</h2>

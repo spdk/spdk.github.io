@@ -2327,40 +2327,6 @@ vhost_scsi_controller_remove_target</h2>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">request:</div><div class="line">{</div><div class="line">  &quot;params&quot;: {</div><div class="line">    &quot;scsi_target_num&quot;: 1,</div><div class="line">    &quot;ctrlr&quot;: &quot;VhostScsi0&quot;</div><div class="line">  },</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;method&quot;: &quot;vhost_scsi_controller_remove_target&quot;,</div><div class="line">  &quot;id&quot;: 1</div><div class="line">}</div></div><!-- fragment --><p>Example response:</p>
-<div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: true</div><div class="line">}</div></div><!-- fragment --><h2><a class="anchor" id="rpc_vhost_create_nvme_controller"></a>
-vhost_create_nvme_controller</h2>
-<p>Construct empty vhost NVMe controller.</p>
-<h3>Parameters</h3>
-<table class="markdownTable">
-<tr class="markdownTableHead">
-<th class="markdownTableHeadNone">Name  </th><th class="markdownTableHeadNone">Optional  </th><th class="markdownTableHeadNone">Type  </th><th class="markdownTableHeadNone">Description   </th></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">ctrlr  </td><td class="markdownTableBodyNone">Required  </td><td class="markdownTableBodyNone">string  </td><td class="markdownTableBodyNone">Controller name   </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">io_queues  </td><td class="markdownTableBodyNone">Required  </td><td class="markdownTableBodyNone">number  </td><td class="markdownTableBodyNone">Number between 1 and 31 of IO queues for the controller   </td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">cpumask  </td><td class="markdownTableBodyNone">Optional  </td><td class="markdownTableBodyNone">string  </td><td class="markdownTableBodyNone"><a class="el" href="app_overview.html#cpu_mask">CPU mask</a> for this controller   </td></tr>
-</table>
-<h3>Example</h3>
-<p>Example request:</p>
-<div class="fragment"><div class="line">{</div><div class="line">  &quot;params&quot;: {</div><div class="line">    &quot;cpumask&quot;: &quot;0x2&quot;,</div><div class="line">    &quot;io_queues&quot;: 4,</div><div class="line">    &quot;ctrlr&quot;: &quot;VhostNvme0&quot;</div><div class="line">  },</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;method&quot;: &quot;vhost_create_nvme_controller&quot;,</div><div class="line">  &quot;id&quot;: 1</div><div class="line">}</div></div><!-- fragment --><p>Example response:</p>
-<div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: true</div><div class="line">}</div></div><!-- fragment --><h2><a class="anchor" id="rpc_vhost_nvme_controller_add_ns"></a>
-vhost_nvme_controller_add_ns</h2>
-<p>Add namespace backed by <code>bdev_name</code></p>
-<h3>Parameters</h3>
-<table class="markdownTable">
-<tr class="markdownTableHead">
-<th class="markdownTableHeadNone">Name  </th><th class="markdownTableHeadNone">Optional  </th><th class="markdownTableHeadNone">Type  </th><th class="markdownTableHeadNone">Description   </th></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">ctrlr  </td><td class="markdownTableBodyNone">Required  </td><td class="markdownTableBodyNone">string  </td><td class="markdownTableBodyNone">Controller name   </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">bdev_name  </td><td class="markdownTableBodyNone">Required  </td><td class="markdownTableBodyNone">string  </td><td class="markdownTableBodyNone">Name of bdev to expose as a namespace   </td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">cpumask  </td><td class="markdownTableBodyNone">Optional  </td><td class="markdownTableBodyNone">string  </td><td class="markdownTableBodyNone"><a class="el" href="app_overview.html#cpu_mask">CPU mask</a> for this controller   </td></tr>
-</table>
-<h3>Example</h3>
-<p>Example request:</p>
-<div class="fragment"><div class="line">{</div><div class="line">  &quot;params&quot;: {</div><div class="line">    &quot;bdev_name&quot;: &quot;Malloc0&quot;,</div><div class="line">    &quot;ctrlr&quot;: &quot;VhostNvme0&quot;</div><div class="line">  },</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;method&quot;: &quot;vhost_nvme_controller_add_ns&quot;,</div><div class="line">  &quot;id&quot;: 1</div><div class="line">}</div></div><!-- fragment --><p>Example response:</p>
 <div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: true</div><div class="line">}</div></div><!-- fragment --><h2><a class="anchor" id="rpc_vhost_create_blk_controller"></a>
 vhost_create_blk_controller</h2>
 <p>Create vhost block controller</p>

@@ -6,6 +6,7 @@ var structspdk__bs__dev =
     [ "destroy", "structspdk__bs__dev.html#a7ae3bb18bf006e0f40f1ad36166a8369", null ],
     [ "destroy_channel", "structspdk__bs__dev.html#a0ba5e6b593abc0fa5c9be89e51b8d79d", null ],
     [ "flush", "structspdk__bs__dev.html#a0447419a84f9f1b4e883d9111d61e8ec", null ],
+    [ "get_base_bdev", "structspdk__bs__dev.html#ab3a4996a37bdfe0ee29f88f2b97543e7", null ],
     [ "read", "structspdk__bs__dev.html#a4e782b655106c1d25b543960b7ba2c0f", null ],
     [ "readv", "structspdk__bs__dev.html#a75564a4d0f1815b99c1fe1e1965b3770", null ],
     [ "unmap", "structspdk__bs__dev.html#ac3f9b4422f8c651e6a1975f77f1b4b62", null ],

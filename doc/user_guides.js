@@ -272,8 +272,6 @@ var user_guides =
         [ "vhost_create_scsi_controller", "jsonrpc.html#rpc_vhost_create_scsi_controller", null ],
         [ "vhost_scsi_controller_add_target", "jsonrpc.html#rpc_vhost_scsi_controller_add_target", null ],
         [ "vhost_scsi_controller_remove_target", "jsonrpc.html#rpc_vhost_scsi_controller_remove_target", null ],
-        [ "vhost_create_nvme_controller", "jsonrpc.html#rpc_vhost_create_nvme_controller", null ],
-        [ "vhost_nvme_controller_add_ns", "jsonrpc.html#rpc_vhost_nvme_controller_add_ns", null ],
         [ "vhost_create_blk_controller", "jsonrpc.html#rpc_vhost_create_blk_controller", null ],
         [ "vhost_get_controllers", "jsonrpc.html#rpc_vhost_get_controllers", [
           [ "Response", "jsonrpc.html#rpc_vhost_get_controllers_response", null ],

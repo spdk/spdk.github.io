@@ -1,6 +1,5 @@
 var NAVTREEINDEX1 =
 {
-"bdev__module_8h.html#a8d51d8e113f0dffb1bbe535ea01c495f":[13,0,5,21],
 "bdev__module_8h.html#a8db6bfb953294c571c83d5bc21835b31":[13,0,5,11],
 "bdev__module_8h.html#a934c7e96e8bdc0aea6cbcc0f414c71ba":[13,0,5,28],
 "bdev__module_8h.html#a94d1006ca1ddf32201a5463179d35a32":[13,0,5,64],
@@ -173,9 +172,10 @@ var NAVTREEINDEX1 =
 "blob_8h.html#afc0d1f620d9e5d1e740ee4c4e456c34e":[13,0,9,36],
 "blob_8h.html#afe49b3a95d13aed755726bed94f79344":[13,0,9,27],
 "blob__bdev_8h.html":[13,0,10],
-"blob__bdev_8h.html#a0499e5f00e93f3406989f281bd7122a6":[13,0,10,2],
-"blob__bdev_8h.html#a50e55d90f683106c46a66a77373eebb1":[13,0,10,1],
+"blob__bdev_8h.html#a0499e5f00e93f3406989f281bd7122a6":[13,0,10,3],
+"blob__bdev_8h.html#a50e55d90f683106c46a66a77373eebb1":[13,0,10,2],
 "blob__bdev_8h.html#ad9acd1de03901617a7564d6cd4aec2bf":[13,0,10,0],
+"blob__bdev_8h.html#af2318a373aae926c6ce9300e06e8bb81":[13,0,10,1],
 "blobfs.html":[3,7],
 "blobfs.html#blobfs_getting_started":[3,7,0],
 "blobfs.html#blobfs_rocksdb":[3,7,1],

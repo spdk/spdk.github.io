@@ -152,8 +152,13 @@ Collaboration diagram for spdk_bs_dev:</div>
 <div class="dyncontent">
 <div class="center"><img src="structspdk__bs__dev__coll__graph.png" border="0" usemap="#spdk__bs__dev_coll__map" alt="Collaboration graph"/></div>
 <map name="spdk__bs__dev_coll__map" id="spdk__bs__dev_coll__map">
-<area shape="rect"  title=" " alt="" coords="17,95,124,121"/>
-<area shape="rect"  href="structspdk__io__channel.html" title="Represents a per&#45;thread channel for accessing an I/O device." alt="" coords="5,5,136,32"/>
+<area shape="rect"  title=" " alt="" coords="5,288,112,315"/>
+<area shape="rect"  href="structspdk__io__channel.html" title="Represents a per&#45;thread channel for accessing an I/O device." alt="" coords="29,5,160,32"/>
+<area shape="rect"  href="structspdk__bdev__fn__table.html" title="Function table for a block device backend." alt="" coords="75,102,227,129"/>
+<area shape="rect"  href="structspdk__bdev.html" title=" " alt="" coords="229,199,321,225"/>
+<area shape="rect"  href="structspdk__bdev__module.html" title="Block device module." alt="" coords="221,5,369,32"/>
+<area shape="rect"  href="structspdk__bdev_1_1____bdev__internal__fields.html" title="Fields that are used internally by the bdev subsystem." alt="" coords="352,95,555,136"/>
+<area shape="rect"  href="structspdk__uuid.html" title=" " alt="" coords="579,102,667,129"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -189,6 +194,9 @@ void(*&#160;</td><td class="memItemRight" valign="bottom"><b>write_zeroes</b> )(
 <tr class="memitem:ac3f9b4422f8c651e6a1975f77f1b4b62"><td class="memItemLeft" align="right" valign="top"><a id="ac3f9b4422f8c651e6a1975f77f1b4b62"></a>
 void(*&#160;</td><td class="memItemRight" valign="bottom"><b>unmap</b> )(struct <a class="el" href="structspdk__bs__dev.html">spdk_bs_dev</a> *dev, struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *channel, uint64_t lba, uint32_t lba_count, struct <a class="el" href="structspdk__bs__dev__cb__args.html">spdk_bs_dev_cb_args</a> *cb_args)</td></tr>
 <tr class="separator:ac3f9b4422f8c651e6a1975f77f1b4b62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3a4996a37bdfe0ee29f88f2b97543e7"><td class="memItemLeft" align="right" valign="top"><a id="ab3a4996a37bdfe0ee29f88f2b97543e7"></a>
+struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *(*&#160;</td><td class="memItemRight" valign="bottom"><b>get_base_bdev</b> )(struct <a class="el" href="structspdk__bs__dev.html">spdk_bs_dev</a> *dev)</td></tr>
+<tr class="separator:ab3a4996a37bdfe0ee29f88f2b97543e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6c67b881f2f954ef2eb879796a4dee5a"><td class="memItemLeft" align="right" valign="top"><a id="a6c67b881f2f954ef2eb879796a4dee5a"></a>
 uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>blockcnt</b></td></tr>
 <tr class="separator:a6c67b881f2f954ef2eb879796a4dee5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
