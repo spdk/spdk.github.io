@@ -283,9 +283,6 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_set_opts</b>
 <tr class="memitem:a7263aeb5393b46fa5af8e04760f62ea4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev_8h.html#a7263aeb5393b46fa5af8e04760f62ea4">spdk_bdev_finish</a> (<a class="el" href="bdev_8h.html#ad33efc88148d8984b353e54b7ee0058f">spdk_bdev_fini_cb</a> cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:a7263aeb5393b46fa5af8e04760f62ea4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform cleanup work to remove the registered block device modules.  <a href="#a7263aeb5393b46fa5af8e04760f62ea4">More...</a><br /></td></tr>
 <tr class="separator:a7263aeb5393b46fa5af8e04760f62ea4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a273c20b5f07dd8c727ec0d0b80b804fe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev_8h.html#a273c20b5f07dd8c727ec0d0b80b804fe">spdk_bdev_config_text</a> (FILE *fp)</td></tr>
-<tr class="memdesc:a273c20b5f07dd8c727ec0d0b80b804fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the configuration options for the registered block device modules.  <a href="#a273c20b5f07dd8c727ec0d0b80b804fe">More...</a><br /></td></tr>
-<tr class="separator:a273c20b5f07dd8c727ec0d0b80b804fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a57814ce5dc208380ebf39dab0e1ce9a8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev_8h.html#a57814ce5dc208380ebf39dab0e1ce9a8">spdk_bdev_subsystem_config_json</a> (struct spdk_json_write_ctx *w)</td></tr>
 <tr class="memdesc:a57814ce5dc208380ebf39dab0e1ce9a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the full configuration options for the registered block device modules and created bdevs.  <a href="#a57814ce5dc208380ebf39dab0e1ce9a8">More...</a><br /></td></tr>
 <tr class="separator:a57814ce5dc208380ebf39dab0e1ce9a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -810,32 +807,6 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_set_opts</b>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">desc</td><td>Block device descriptor to close. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a273c20b5f07dd8c727ec0d0b80b804fe"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a273c20b5f07dd8c727ec0d0b80b804fe">&#9670;&nbsp;</a></span>spdk_bdev_config_text()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void spdk_bdev_config_text </td>
-          <td>(</td>
-          <td class="paramtype">FILE *&#160;</td>
-          <td class="paramname"><em>fp</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Get the configuration options for the registered block device modules. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">fp</td><td>The pointer to a file that will be written to the configuration options. </td></tr>
   </table>
   </dd>
 </dl>

@@ -42,6 +42,7 @@ var files_dup =
     [ "nvme_ocssd.h", "nvme__ocssd_8h.html", "nvme__ocssd_8h" ],
     [ "nvme_ocssd_spec.h", "nvme__ocssd__spec_8h.html", "nvme__ocssd__spec_8h" ],
     [ "nvme_spec.h", "nvme__spec_8h.html", "nvme__spec_8h" ],
+    [ "nvme_zns.h", "nvme__zns_8h.html", "nvme__zns_8h" ],
     [ "nvmf.h", "nvmf_8h.html", "nvmf_8h" ],
     [ "nvmf_spec.h", "nvmf__spec_8h.html", "nvmf__spec_8h" ],
     [ "nvmf_transport.h", "nvmf__transport_8h.html", "nvmf__transport_8h" ],

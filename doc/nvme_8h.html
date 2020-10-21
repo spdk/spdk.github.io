@@ -345,6 +345,12 @@ Functions</h2></td></tr>
 <tr class="memitem:a4b63c225c3cce6da60fdbfb6f54b11e2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a4b63c225c3cce6da60fdbfb6f54b11e2">spdk_nvme_detach</a> (struct spdk_nvme_ctrlr *ctrlr)</td></tr>
 <tr class="memdesc:a4b63c225c3cce6da60fdbfb6f54b11e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Detach specified device returned by <a class="el" href="nvme_8h.html#a225bbc386ec518ae21bd5536f21db45d" title="Enumerate the bus indicated by the transport ID and attach the userspace NVMe driver to each device f...">spdk_nvme_probe()</a>'s attach_cb from the NVMe driver.  <a href="#a4b63c225c3cce6da60fdbfb6f54b11e2">More...</a><br /></td></tr>
 <tr class="separator:a4b63c225c3cce6da60fdbfb6f54b11e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30f8edb4791c426ccec2b815ca0ed791"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a30f8edb4791c426ccec2b815ca0ed791">spdk_nvme_detach_async</a> (struct spdk_nvme_ctrlr *ctrlr, struct spdk_nvme_detach_ctx **detach_ctx)</td></tr>
+<tr class="memdesc:a30f8edb4791c426ccec2b815ca0ed791"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate a context to track detachment of multiple controllers if this call is the first successful start of detachment in a sequence, or use the passed context otherwise.  <a href="#a30f8edb4791c426ccec2b815ca0ed791">More...</a><br /></td></tr>
+<tr class="separator:a30f8edb4791c426ccec2b815ca0ed791"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19178860f90bdd522eaa329d0ff837fe"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a19178860f90bdd522eaa329d0ff837fe">spdk_nvme_detach_poll_async</a> (struct spdk_nvme_detach_ctx *detach_ctx)</td></tr>
+<tr class="memdesc:a19178860f90bdd522eaa329d0ff837fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Poll detachment of multiple controllers until they complete.  <a href="#a19178860f90bdd522eaa329d0ff837fe">More...</a><br /></td></tr>
+<tr class="separator:a19178860f90bdd522eaa329d0ff837fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6eacd62ee8fbab40e1066bc0a53485f3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a6eacd62ee8fbab40e1066bc0a53485f3">spdk_nvme_ctrlr_set_trid</a> (struct spdk_nvme_ctrlr *ctrlr, struct <a class="el" href="structspdk__nvme__transport__id.html">spdk_nvme_transport_id</a> *trid)</td></tr>
 <tr class="memdesc:a6eacd62ee8fbab40e1066bc0a53485f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update the transport ID for a given controller.  <a href="#a6eacd62ee8fbab40e1066bc0a53485f3">More...</a><br /></td></tr>
 <tr class="separator:a6eacd62ee8fbab40e1066bc0a53485f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -702,12 +708,6 @@ Functions</h2></td></tr>
 <tr class="memitem:a59cf9ac4711064c37d22e1f736f1b0bb"><td class="memItemLeft" align="right" valign="top"><a id="a59cf9ac4711064c37d22e1f736f1b0bb"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_map_prps</b> (void *prv, struct <a class="el" href="structspdk__nvme__cmd.html">spdk_nvme_cmd</a> *cmd, struct iovec *iovs, uint32_t len, size_t mps, void *(*gpa_to_vva)(void *prv, uint64_t addr, uint64_t len))</td></tr>
 <tr class="separator:a59cf9ac4711064c37d22e1f736f1b0bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2060f12903d107efb4d7c26a9c0a83a8"><td class="memItemLeft" align="right" valign="top">const struct <a class="el" href="structspdk__nvme__zns__ns__data.html">spdk_nvme_zns_ns_data</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a2060f12903d107efb4d7c26a9c0a83a8">spdk_nvme_zns_ns_get_data</a> (struct spdk_nvme_ns *ns)</td></tr>
-<tr class="memdesc:a2060f12903d107efb4d7c26a9c0a83a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the Zoned Namespace Command Set Specific Identify Namespace data as defined by the NVMe Zoned Namespace Command Set Specification.  <a href="#a2060f12903d107efb4d7c26a9c0a83a8">More...</a><br /></td></tr>
-<tr class="separator:a2060f12903d107efb4d7c26a9c0a83a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7e44f2e8ad190636f5b7e18bbfe3d301"><td class="memItemLeft" align="right" valign="top">const struct <a class="el" href="structspdk__nvme__zns__ctrlr__data.html">spdk_nvme_zns_ctrlr_data</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a7e44f2e8ad190636f5b7e18bbfe3d301">spdk_nvme_zns_ctrlr_get_data</a> (struct spdk_nvme_ctrlr *ctrlr)</td></tr>
-<tr class="memdesc:a7e44f2e8ad190636f5b7e18bbfe3d301"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the Zoned Namespace Command Set Specific Identify Controller data as defined by the NVMe Zoned Namespace Command Set Specification.  <a href="#a7e44f2e8ad190636f5b7e18bbfe3d301">More...</a><br /></td></tr>
-<tr class="separator:a7e44f2e8ad190636f5b7e18bbfe3d301"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac8157e10a468a618d04accf1830d59cd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#ac8157e10a468a618d04accf1830d59cd">spdk_nvme_cuse_update_namespaces</a> (struct spdk_nvme_ctrlr *ctrlr)</td></tr>
 <tr class="memdesc:ac8157e10a468a618d04accf1830d59cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update and populate namespace CUSE devices (Experimental)  <a href="#ac8157e10a468a618d04accf1830d59cd">More...</a><br /></td></tr>
 <tr class="separator:ac8157e10a468a618d04accf1830d59cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -3649,7 +3649,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_map_prps</b>
 
 <p>Perform a full hardware reset of the NVMe controller. </p>
 <p>This function should be called from a single thread while no other threads are actively using the NVMe device.</p>
-<p>Any pointers returned from <a class="el" href="nvme_8h.html#a6f01fb8a5f404e41e6fa224a7942be08" title="Get a handle to a namespace for the given controller.">spdk_nvme_ctrlr_get_ns()</a>, <a class="el" href="nvme_8h.html#ab1863b5dccf2bcc49fe92275bc1e5a2a" title="Get the identify namespace data as defined by the NVMe specification.">spdk_nvme_ns_get_data()</a>, <a class="el" href="nvme_8h.html#a2060f12903d107efb4d7c26a9c0a83a8" title="Get the Zoned Namespace Command Set Specific Identify Namespace data as defined by the NVMe Zoned Nam...">spdk_nvme_zns_ns_get_data()</a>, and <a class="el" href="nvme_8h.html#a7e44f2e8ad190636f5b7e18bbfe3d301" title="Get the Zoned Namespace Command Set Specific Identify Controller data as defined by the NVMe Zoned Na...">spdk_nvme_zns_ctrlr_get_data()</a> may be invalidated by calling this function. The number of namespaces as returned by <a class="el" href="nvme_8h.html#a02b18deae44682a51177e8a4193af602" title="Get the number of namespaces for the given NVMe controller.">spdk_nvme_ctrlr_get_num_ns()</a> may also change.</p>
+<p>Any pointers returned from <a class="el" href="nvme_8h.html#a6f01fb8a5f404e41e6fa224a7942be08" title="Get a handle to a namespace for the given controller.">spdk_nvme_ctrlr_get_ns()</a>, <a class="el" href="nvme_8h.html#ab1863b5dccf2bcc49fe92275bc1e5a2a" title="Get the identify namespace data as defined by the NVMe specification.">spdk_nvme_ns_get_data()</a>, <a class="el" href="nvme__zns_8h.html#a2060f12903d107efb4d7c26a9c0a83a8" title="Get the Zoned Namespace Command Set Specific Identify Namespace data as defined by the NVMe Zoned Nam...">spdk_nvme_zns_ns_get_data()</a>, and <a class="el" href="nvme__zns_8h.html#a7e44f2e8ad190636f5b7e18bbfe3d301" title="Get the Zoned Namespace Command Set Specific Identify Controller data as defined by the NVMe Zoned Na...">spdk_nvme_zns_ctrlr_get_data()</a> may be invalidated by calling this function. The number of namespaces as returned by <a class="el" href="nvme_8h.html#a02b18deae44682a51177e8a4193af602" title="Get the number of namespaces for the given NVMe controller.">spdk_nvme_ctrlr_get_num_ns()</a> may also change.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">ctrlr</td><td>Opaque handle to NVMe controller.</td></tr>
@@ -4134,6 +4134,77 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_map_prps</b>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 on success, -1 on failure. </dd></dl>
+
+</div>
+</div>
+<a id="a30f8edb4791c426ccec2b815ca0ed791"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a30f8edb4791c426ccec2b815ca0ed791">&#9670;&nbsp;</a></span>spdk_nvme_detach_async()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_nvme_detach_async </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_nvme_ctrlr *&#160;</td>
+          <td class="paramname"><em>ctrlr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct spdk_nvme_detach_ctx **&#160;</td>
+          <td class="paramname"><em>detach_ctx</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Allocate a context to track detachment of multiple controllers if this call is the first successful start of detachment in a sequence, or use the passed context otherwise. </p>
+<p>Then, start detaching the specified device returned by <a class="el" href="nvme_8h.html#a225bbc386ec518ae21bd5536f21db45d" title="Enumerate the bus indicated by the transport ID and attach the userspace NVMe driver to each device f...">spdk_nvme_probe()</a>'s attach_cb from the NVMe driver, and append this detachment to the context.</p>
+<p>User must call <a class="el" href="nvme_8h.html#a19178860f90bdd522eaa329d0ff837fe" title="Poll detachment of multiple controllers until they complete.">spdk_nvme_detach_poll_async()</a> to complete the detachment.</p>
+<p>If the context is not allocated before this call, and if the specified device is detached locally from the caller process but any other process still attaches it or failed to be detached, context is not allocated.</p>
+<p>This function should be called from a single thread while no other threads are actively using the NVMe device.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ctrlr</td><td>Opaque handle to HVMe controller. </td></tr>
+    <tr><td class="paramname">detach_ctx</td><td>Reference to the context in a sequence. An new context is allocated if this call is the first successful start of detachment in a sequence, or use the passed context. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a19178860f90bdd522eaa329d0ff837fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a19178860f90bdd522eaa329d0ff837fe">&#9670;&nbsp;</a></span>spdk_nvme_detach_poll_async()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_nvme_detach_poll_async </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_nvme_detach_ctx *&#160;</td>
+          <td class="paramname"><em>detach_ctx</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Poll detachment of multiple controllers until they complete. </p>
+<p>User must call this function until it returns 0.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">detach_ctx</td><td>Context to track the detachment.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 if all detachments complete; the context is also freed and no longer valid. </dd>
+<dd>
+-EAGAIN if any detachment is still in progress; users must call <a class="el" href="nvme_8h.html#a19178860f90bdd522eaa329d0ff837fe" title="Poll detachment of multiple controllers until they complete.">spdk_nvme_detach_poll_async()</a> again to continue progress. </dd></dl>
 
 </div>
 </div>
@@ -7641,62 +7712,6 @@ value other than 0 and -EAGAIN probe error with one controller. </dd></dl>
   </table>
   </dd>
 </dl>
-
-</div>
-</div>
-<a id="a7e44f2e8ad190636f5b7e18bbfe3d301"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7e44f2e8ad190636f5b7e18bbfe3d301">&#9670;&nbsp;</a></span>spdk_nvme_zns_ctrlr_get_data()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const struct <a class="el" href="structspdk__nvme__zns__ctrlr__data.html">spdk_nvme_zns_ctrlr_data</a>* spdk_nvme_zns_ctrlr_get_data </td>
-          <td>(</td>
-          <td class="paramtype">struct spdk_nvme_ctrlr *&#160;</td>
-          <td class="paramname"><em>ctrlr</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Get the Zoned Namespace Command Set Specific Identify Controller data as defined by the NVMe Zoned Namespace Command Set Specification. </p>
-<p>This function is thread safe and can be called at any point while the controller is attached to the SPDK NVMe driver.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">ctrlr</td><td>Opaque handle to NVMe controller.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>pointer to the controller data, or NULL if the controller does not support the Zoned Command Set. </dd></dl>
-
-</div>
-</div>
-<a id="a2060f12903d107efb4d7c26a9c0a83a8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2060f12903d107efb4d7c26a9c0a83a8">&#9670;&nbsp;</a></span>spdk_nvme_zns_ns_get_data()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const struct <a class="el" href="structspdk__nvme__zns__ns__data.html">spdk_nvme_zns_ns_data</a>* spdk_nvme_zns_ns_get_data </td>
-          <td>(</td>
-          <td class="paramtype">struct spdk_nvme_ns *&#160;</td>
-          <td class="paramname"><em>ns</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Get the Zoned Namespace Command Set Specific Identify Namespace data as defined by the NVMe Zoned Namespace Command Set Specification. </p>
-<p>This function is thread safe and can be called at any point while the controller is attached to the SPDK NVMe driver.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">ns</td><td>Namespace.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>a pointer to the namespace data, or NULL if the namespace is not a Zoned Namespace. </dd></dl>
 
 </div>
 </div>

@@ -734,6 +734,12 @@ Enumerations</h2></td></tr>
  }</td></tr>
 <tr class="memdesc:ac3953ec001514cffe849d9c1e3a913e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">NVM command set opcodes. <br /></td></tr>
 <tr class="separator:ac3953ec001514cffe849d9c1e3a913e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5fdd2e185bd903ad4505e996a6096505"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme__spec_8h.html#a5fdd2e185bd903ad4505e996a6096505">spdk_nvme_zns_opcode</a> { <b>SPDK_NVME_OPC_ZONE_MGMT_SEND</b> = 0x79, 
+<b>SPDK_NVME_OPC_ZONE_MGMT_RECV</b> = 0x7a, 
+<b>SPDK_NVME_OPC_ZONE_APPEND</b> = 0x7d
+ }</td></tr>
+<tr class="memdesc:a5fdd2e185bd903ad4505e996a6096505"><td class="mdescLeft">&#160;</td><td class="mdescRight">Zoned Namespace command set opcodes.  <a href="nvme__spec_8h.html#a5fdd2e185bd903ad4505e996a6096505">More...</a><br /></td></tr>
+<tr class="separator:a5fdd2e185bd903ad4505e996a6096505"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adbe38e042bb939183ed8fd5c1685b2fc"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme__spec_8h.html#adbe38e042bb939183ed8fd5c1685b2fc">spdk_nvme_data_transfer</a> { <a class="el" href="nvme__spec_8h.html#adbe38e042bb939183ed8fd5c1685b2fca4d074786dad4f37c0211563ec0376974">SPDK_NVME_DATA_NONE</a> = 0, 
 <a class="el" href="nvme__spec_8h.html#adbe38e042bb939183ed8fd5c1685b2fca7f08188b3c5f57f2f694f6ef13ad0110">SPDK_NVME_DATA_HOST_TO_CONTROLLER</a> = 1, 
 <a class="el" href="nvme__spec_8h.html#adbe38e042bb939183ed8fd5c1685b2fca0de3a8ad0600034555094591e706fb50">SPDK_NVME_DATA_CONTROLLER_TO_HOST</a> = 2, 
@@ -997,6 +1003,16 @@ Enumerations</h2></td></tr>
  }</td></tr>
 <tr class="memdesc:ae4da1c1bec22eb22d1af72bbf37af36e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parameters for SPDK_NVME_OPC_FIRMWARE_COMMIT cdw10: commit action.  <a href="nvme__spec_8h.html#ae4da1c1bec22eb22d1af72bbf37af36e">More...</a><br /></td></tr>
 <tr class="separator:ae4da1c1bec22eb22d1af72bbf37af36e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c5aa8a68721d9c3148b46461766a07d"><td class="memItemLeft" align="right" valign="top"><a id="a5c5aa8a68721d9c3148b46461766a07d"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_zns_zone_send_action</b> { <br />
+&#160;&#160;<b>SPDK_NVME_ZONE_CLOSE</b> = 0x1, 
+<b>SPDK_NVME_ZONE_FINISH</b> = 0x2, 
+<b>SPDK_NVME_ZONE_OPEN</b> = 0x3, 
+<b>SPDK_NVME_ZONE_RESET</b> = 0x4, 
+<br />
+&#160;&#160;<b>SPDK_NVME_ZONE_OFFLINE</b> = 0x5
+<br />
+ }</td></tr>
+<tr class="separator:a5c5aa8a68721d9c3148b46461766a07d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -1783,6 +1799,23 @@ Functions</h2></td></tr>
 <tr><td class="fieldname"><a id="af3e4102cda177c51a05a6bb02fa62b87a702868f6b85dd329c4baf00642e99fca"></a>SPDK_NVME_SGLS_SUPPORTED_DWORD_ALIGNED&#160;</td><td class="fielddoc"><p>SGLs are supported with a DWORD alignment and granularity requirement. </p>
 </td></tr>
 </table>
+
+</div>
+</div>
+<a id="a5fdd2e185bd903ad4505e996a6096505"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5fdd2e185bd903ad4505e996a6096505">&#9670;&nbsp;</a></span>spdk_nvme_zns_opcode</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="nvme__spec_8h.html#a5fdd2e185bd903ad4505e996a6096505">spdk_nvme_zns_opcode</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Zoned Namespace command set opcodes. </p>
+<p>In addition to the opcodes of the NVM command set, the Zoned Namespace command set supports the following opcodes. </p>
 
 </div>
 </div>

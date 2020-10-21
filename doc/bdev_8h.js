@@ -61,7 +61,6 @@ var bdev_8h =
     [ "spdk_bdev_comparev_and_writev_blocks", "group__bdev__io__submit__functions.html#gafaa766d5c5ca4bc2979e1f5f9015ef11", null ],
     [ "spdk_bdev_comparev_blocks", "group__bdev__io__submit__functions.html#gaf27fa5b35ac2a8d7d78cb31fa8500c8c", null ],
     [ "spdk_bdev_comparev_blocks_with_md", "group__bdev__io__submit__functions.html#ga323ccdb094b61f56840f29745339ceb3", null ],
-    [ "spdk_bdev_config_text", "bdev_8h.html#a273c20b5f07dd8c727ec0d0b80b804fe", null ],
     [ "spdk_bdev_desc_get_bdev", "bdev_8h.html#ac6418cfa0e9076ef7dafa7753c4c2028", null ],
     [ "spdk_bdev_dump_info_json", "bdev_8h.html#a3ef2e861ccd2d6135bfe13257f047fb9", null ],
     [ "spdk_bdev_examine", "bdev_8h.html#ae720ef13c98f9ba40e6562d4a8582427", null ],
