@@ -27,6 +27,5 @@ var structspdk__app__opts =
     [ "shm_id", "structspdk__app__opts.html#a362c97242a5610d65e51e92183abc8d0", null ],
     [ "shutdown_cb", "structspdk__app__opts.html#a93ac293aa665a3628d0286745799c5a5", null ],
     [ "tpoint_group_mask", "structspdk__app__opts.html#a41fa1b1b7c5f2872c5fce6074960bfc5", null ],
-    [ "unlink_hugepage", "structspdk__app__opts.html#aa351d504364930c0e14bde70d3be60d7", null ],
-    [ "usr1_handler", "structspdk__app__opts.html#a5fd5fa9f315999524ff1d6d5536b45d1", null ]
+    [ "unlink_hugepage", "structspdk__app__opts.html#aa351d504364930c0e14bde70d3be60d7", null ]
 ];

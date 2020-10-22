@@ -343,6 +343,10 @@ Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__fw__commit.html">spdk_nvme_fw_commit</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parameters for SPDK_NVME_OPC_FIRMWARE_COMMIT cdw10.  <a href="structspdk__nvme__fw__commit.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__zns__zone__desc.html">spdk_nvme_zns_zone_desc</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__zns__zone__report.html">spdk_nvme_zns_zone_report</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
@@ -1013,6 +1017,22 @@ Enumerations</h2></td></tr>
 <br />
  }</td></tr>
 <tr class="separator:a5c5aa8a68721d9c3148b46461766a07d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2f360bdd081ba7cd355f3ab9887cf8c"><td class="memItemLeft" align="right" valign="top"><a id="ac2f360bdd081ba7cd355f3ab9887cf8c"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_zns_zone_receive_action</b> { <b>SPDK_NVME_ZONE_REPORT</b> = 0x0
+ }</td></tr>
+<tr class="separator:ac2f360bdd081ba7cd355f3ab9887cf8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a462b8d3200c46ce1b2f42a3221372769"><td class="memItemLeft" align="right" valign="top"><a id="a462b8d3200c46ce1b2f42a3221372769"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_zns_zra_report_opts</b> { <br />
+&#160;&#160;<b>SPDK_NVME_ZRA_LIST_ALL</b> = 0x0, 
+<b>SPDK_NVME_ZRA_LIST_ZSE</b> = 0x1, 
+<b>SPDK_NVME_ZRA_LIST_ZSIO</b> = 0x2, 
+<b>SPDK_NVME_ZRA_LIST_ZSEO</b> = 0x3, 
+<br />
+&#160;&#160;<b>SPDK_NVME_ZRA_LIST_ZSC</b> = 0x4, 
+<b>SPDK_NVME_ZRA_LIST_ZSF</b> = 0x5, 
+<b>SPDK_NVME_ZRA_LIST_ZSRO</b> = 0x6, 
+<b>SPDK_NVME_ZRA_LIST_ZSO</b> = 0x7
+<br />
+ }</td></tr>
+<tr class="separator:a462b8d3200c46ce1b2f42a3221372769"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -1289,6 +1309,12 @@ Functions</h2></td></tr>
 <tr class="memitem:a84f00caa7dfb77c3060a6759968cb53c"><td class="memItemLeft" align="right" valign="top"><a id="a84f00caa7dfb77c3060a6759968cb53c"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_STATIC_ASSERT</b> (sizeof(struct <a class="el" href="structspdk__nvme__fw__commit.html">spdk_nvme_fw_commit</a>)==4, &quot;Incorrect size&quot;)</td></tr>
 <tr class="separator:a84f00caa7dfb77c3060a6759968cb53c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a755f9d9f4456c16bc5a7309327c39c6d"><td class="memItemLeft" align="right" valign="top"><a id="a755f9d9f4456c16bc5a7309327c39c6d"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_STATIC_ASSERT</b> (sizeof(struct <a class="el" href="structspdk__nvme__zns__zone__desc.html">spdk_nvme_zns_zone_desc</a>)==64, &quot;Incorrect size&quot;)</td></tr>
+<tr class="separator:a755f9d9f4456c16bc5a7309327c39c6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6875c09d574d75b4972c98bf37a28576"><td class="memItemLeft" align="right" valign="top"><a id="a6875c09d574d75b4972c98bf37a28576"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_STATIC_ASSERT</b> (sizeof(struct <a class="el" href="structspdk__nvme__zns__zone__report.html">spdk_nvme_zns_zone_report</a>)==64, &quot;Incorrect size&quot;)</td></tr>
+<tr class="separator:a6875c09d574d75b4972c98bf37a28576"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>NVMe specification definitions. </p>

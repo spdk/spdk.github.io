@@ -212,9 +212,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="even
 <tr class="memitem:a40f3af1c0340f5c3eb915bc43e3cee83"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="event_8h.html#a40f3af1c0340f5c3eb915bc43e3cee83">spdk_app_stop</a> (int rc)</td></tr>
 <tr class="memdesc:a40f3af1c0340f5c3eb915bc43e3cee83"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stop the framework.  <a href="#a40f3af1c0340f5c3eb915bc43e3cee83">More...</a><br /></td></tr>
 <tr class="separator:a40f3af1c0340f5c3eb915bc43e3cee83"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a74ff463ced05d4fab6baae4506c27f46"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="event_8h.html#a74ff463ced05d4fab6baae4506c27f46">spdk_app_get_running_config</a> (char **config_str, char *name)</td></tr>
-<tr class="memdesc:a74ff463ced05d4fab6baae4506c27f46"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate a configuration file that corresponds to the current running state.  <a href="#a74ff463ced05d4fab6baae4506c27f46">More...</a><br /></td></tr>
-<tr class="separator:a74ff463ced05d4fab6baae4506c27f46"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac64ac17f456e8ac388d959c2e7a4a13b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="event_8h.html#ac64ac17f456e8ac388d959c2e7a4a13b">spdk_app_get_shm_id</a> (void)</td></tr>
 <tr class="memdesc:ac64ac17f456e8ac388d959c2e7a4a13b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the shared memory id for this application.  <a href="#ac64ac17f456e8ac388d959c2e7a4a13b">More...</a><br /></td></tr>
 <tr class="separator:ac64ac17f456e8ac388d959c2e7a4a13b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -311,44 +308,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="even
 
 <p>Get the mask of the CPU cores active for this application. </p>
 <dl class="section return"><dt>Returns</dt><dd>the bitmask of the active CPU cores. </dd></dl>
-
-</div>
-</div>
-<a id="a74ff463ced05d4fab6baae4506c27f46"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a74ff463ced05d4fab6baae4506c27f46">&#9670;&nbsp;</a></span>spdk_app_get_running_config()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int spdk_app_get_running_config </td>
-          <td>(</td>
-          <td class="paramtype">char **&#160;</td>
-          <td class="paramname"><em>config_str</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">char *&#160;</td>
-          <td class="paramname"><em>name</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Generate a configuration file that corresponds to the current running state. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">config_str</td><td>Values obtained from the generated configuration file. </td></tr>
-    <tr><td class="paramname">name</td><td>Prefix for name of temporary configuration file to save the current config.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>0 on success, -1 on failure. </dd></dl>
 
 </div>
 </div>

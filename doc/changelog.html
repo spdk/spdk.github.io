@@ -156,29 +156,45 @@ v20.10: (Upcoming Release)</h1>
 <p>A new <code>spdk_bdev_create_bs_dev_ext</code> function has been added and <code>spdk_bdev_create_bs_dev_from_desc</code> function has been deprecated.</p>
 <h2>event</h2>
 <p>Removed <code>spdk_subsystem_config</code> callback for submodules as part of legacy config removal.</p>
+<p>Removed <code>spdk_app_get_running_config</code> function that printed configuration in legacy format, and removed <code>usr1_handler</code> from <code>struct <a class="el" href="structspdk__app__opts.html" title="Event framework initialization options.">spdk_app_opts</a></code> callback that was used to call it.</p>
 <h2>dpdk</h2>
 <p>Updated DPDK submodule to DPDK 20.08.</p>
+<h2>fio</h2>
+<p>Bdev fio_plugin no longer supports legacy configuration files. Options <code>spdk_conf</code> and <code>spdk_json_conf</code> have to point to valid JSON configuration.</p>
 <h2>gpt</h2>
 <p>Removed option to disable GPT probing via legacy configuration. Please use generic bdev functionality to replicate the behavior. See <code>bdev_set_options --disable-auto-examine</code> and <code>bdev_examine</code> RPC.</p>
 <h2>intel-ipsec-mb</h2>
 <p>Updated intel-ipsec-mb submodule to v0.54</p>
 <h2>isa-l</h2>
 <p>Updated ISA-L submodule to v2.29.0.</p>
-<h1>log</h1>
+<h2>iscsi</h2>
+<p>The iSCSI target supports iSCSI login redirection feature to achieve fault tolerance and load balancing particularly in scale out iSCSI target system, which runs multiple SPDK iSCSI targets.</p>
+<h2>log</h2>
 <p>A log flag structure, <code>spdk_log_register_flag</code>, <code>spdk_log_get_first_flag</code>, <code>spdk_log_get_next_flag</code> and macro <code>SPDK_LOG_REGISTER_COMPONENT</code>, have been added which enable registering and interacting with log flags. Added <code>SPDK_INFOLOG</code>, <code>SPDK_DEBUGLOG</code> and <code>SPDK_LOGDUMP</code> macros to display logs for specified log flag.</p>
 <p>The log flags in the event framework <code>-L</code> and several SPDK applications has been enabled on release builds of SPDK. On debug builds this option will additionally set log print level to <code>SPDK_LOG_DEBUG</code>.</p>
+<h2>nvme</h2>
+<p>New APIs, <code>spdk_nvme_detach_async</code> and <code>spdk_nvme_detach_poll_async</code>, have been added to detach multiple controllers in parallel to mitigate lengthy shutdown notification of a few NVMe SSDs.</p>
+<p>New APIs, <code>spdk_nvme_ns_get_ana_group_id</code> and <code>spdk_nvme_ns_get_ana_state</code>, have been added to get ANA group ID and ANA state of the given namespace, respectively.</p>
+<h2>nvmf</h2>
+<p>A new API <code>spdk_nvmf_subsystem_add_ns_ext</code> has been added and the API <code>spdk_nvmf_subsystem_add_ns</code> has been deprecated.</p>
+<p>The NVMe-oF target now supports Asymmetric Namespace Access (ANA) Reporting to provide multipath to NVMe-oF initiator.</p>
 <h2>ocf</h2>
 <p>Updated OCF submodule to v20.03.1</p>
 <h2>sock</h2>
 <p>The <code>enable_placement_id</code> field was added in the struct <a class="el" href="structspdk__sock__impl__opts.html" title="SPDK socket implementation options.">spdk_sock_impl_opts</a> to make the placement_id feature configurable by users. The default setting is not enabled.</p>
+<p>The <code>enable_quick_ack</code> field was added in the struct <a class="el" href="structspdk__sock__impl__opts.html" title="SPDK socket implementation options.">spdk_sock_impl_opts</a> to enable or disable quick ack for the POSIX sock module. The default setting is not enabled.</p>
 <h2>rpc</h2>
-<p>A new optional parameter <code>enable_placement_id</code> was added to the <code>sock_impl_set_options</code> RPC.</p>
+<p>New optional parameters, <code>enable_placement_id</code> and <code>enable_quickack</code> were added to the <code>sock_impl_set_options</code> RPC.</p>
 <p>A new RPC <code>bdev_examine_bdev</code> was added to allow users to examine a bdev explicitly. It can be used only if bdev_auto_examine is set to false by the RPC <code>bdev_set_options</code>.</p>
 <p>Add optional 'no_wr_batching' parameter to 'nvmf_create_transport' RPC method.</p>
+<p>New RPCs, <code>iscsi_target_node_set_redirect</code> and <code>iscsi_target_node_request_logout</code>, have been added, and a new optional parameter <code>private</code> has been added to the RPC <code>iscsi_create_portal_group</code> to support iSCSI login redirection feature.</p>
+<p>A new optional parameter <code>ana_reporting</code> was added to the RPC <code>nvmf_create_subsystem</code>, and a new RPC <code>nvmf_subsystem_listner_set_ana_state</code> was added for ANA reporting.</p>
+<p>New RPCs, <code>nvmf_subsystem_get_listeners</code> and <code>nvmf_subsystem_get_qpairs</code>, were added to retrieve configuration of the NVMe-oF subsystem.</p>
 <h2>Miscellaneous</h2>
 <p>The contents of the log_rpc library have been moved to the event library. The log_rpc library now no longer exists.</p>
 <p>The contents of the app_rpc library have been moved to the event library. The app_rpc library now no longer exists.</p>
 <p>The contents of the bdev_rpc library have been moved to the bdev library. The app_rpc library now no longer exists.</p>
+<p>The bdevperf application now disables the zcopy API by default. Prior to this change, bdevperf enabled using the zcopy API by default which caused a performance impact of up to 25% on bdevs that don't natively support zcopy because the API emulates zero-copy by allocating a buffer. The bdevperf <code>-x</code> param was renamed to <code>-Z</code> and the default value changed to false. For bdevs that support zcopy, use the -Z flag to enable using zcopy API.</p>
 <h2>nvmf</h2>
 <p>Add 'no_wr_batching' parameter to '<a class="el" href="structspdk__nvmf__transport__opts.html">spdk_nvmf_transport_opts</a>' struct to disable Work Requests batching in RDMA transport.</p>
 <h2>scsi</h2>

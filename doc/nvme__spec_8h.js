@@ -76,6 +76,8 @@ var nvme__spec_8h =
     [ "spdk_nvme_protection_info", "structspdk__nvme__protection__info.html", "structspdk__nvme__protection__info" ],
     [ "spdk_nvme_sanitize", "structspdk__nvme__sanitize.html", "structspdk__nvme__sanitize" ],
     [ "spdk_nvme_fw_commit", "structspdk__nvme__fw__commit.html", "structspdk__nvme__fw__commit" ],
+    [ "spdk_nvme_zns_zone_desc", "structspdk__nvme__zns__zone__desc.html", "structspdk__nvme__zns__zone__desc" ],
+    [ "spdk_nvme_zns_zone_report", "structspdk__nvme__zns__zone__report.html", "structspdk__nvme__zns__zone__report" ],
     [ "SPDK_NVME_ADMIN_QUEUE_MAX_ENTRIES", "nvme__spec_8h.html#afc394cf0b37e4ec245a604e0e48b2b82", null ],
     [ "SPDK_NVME_ADMIN_QUEUE_MIN_ENTRIES", "nvme__spec_8h.html#ae4c74c2bd741f5f291f3e4a032d04647", null ],
     [ "SPDK_NVME_ARBITRATION_BURST_UNLIMITED", "nvme__spec_8h.html#afb89428235d096e1984dfac453b74c93", null ],
@@ -523,12 +525,25 @@ var nvme__spec_8h =
       [ "SPDK_NVME_OPC_ZONE_MGMT_RECV", "nvme__spec_8h.html#a5fdd2e185bd903ad4505e996a6096505a3e02ae253bf61c42ea46f67d0b7f3916", null ],
       [ "SPDK_NVME_OPC_ZONE_APPEND", "nvme__spec_8h.html#a5fdd2e185bd903ad4505e996a6096505af2318e50cfcdb0aebc8e2319d11490e0", null ]
     ] ],
+    [ "spdk_nvme_zns_zone_receive_action", "nvme__spec_8h.html#ac2f360bdd081ba7cd355f3ab9887cf8c", [
+      [ "SPDK_NVME_ZONE_REPORT", "nvme__spec_8h.html#ac2f360bdd081ba7cd355f3ab9887cf8caf04c82f9494ff1cb04fa084997ded65f", null ]
+    ] ],
     [ "spdk_nvme_zns_zone_send_action", "nvme__spec_8h.html#a5c5aa8a68721d9c3148b46461766a07d", [
       [ "SPDK_NVME_ZONE_CLOSE", "nvme__spec_8h.html#a5c5aa8a68721d9c3148b46461766a07da5b5e1a055e9283aa2e43babd54149963", null ],
       [ "SPDK_NVME_ZONE_FINISH", "nvme__spec_8h.html#a5c5aa8a68721d9c3148b46461766a07dad3b6b99891f2823d2e9fbf90abc90cc6", null ],
       [ "SPDK_NVME_ZONE_OPEN", "nvme__spec_8h.html#a5c5aa8a68721d9c3148b46461766a07da6d5314866c020e8e8e29130c32650f64", null ],
       [ "SPDK_NVME_ZONE_RESET", "nvme__spec_8h.html#a5c5aa8a68721d9c3148b46461766a07daa6d6fe5497c7ae9d759a6111c82eaf80", null ],
       [ "SPDK_NVME_ZONE_OFFLINE", "nvme__spec_8h.html#a5c5aa8a68721d9c3148b46461766a07da09004da73228783c85e78d85281a5740", null ]
+    ] ],
+    [ "spdk_nvme_zns_zra_report_opts", "nvme__spec_8h.html#a462b8d3200c46ce1b2f42a3221372769", [
+      [ "SPDK_NVME_ZRA_LIST_ALL", "nvme__spec_8h.html#a462b8d3200c46ce1b2f42a3221372769a7ee1550f843bbfbaddf401832582e5b8", null ],
+      [ "SPDK_NVME_ZRA_LIST_ZSE", "nvme__spec_8h.html#a462b8d3200c46ce1b2f42a3221372769aeafb7c0133d3474836fe661b0a1298c6", null ],
+      [ "SPDK_NVME_ZRA_LIST_ZSIO", "nvme__spec_8h.html#a462b8d3200c46ce1b2f42a3221372769a3ec3f58e1ac00d6b9f477d2b3e4e4c7a", null ],
+      [ "SPDK_NVME_ZRA_LIST_ZSEO", "nvme__spec_8h.html#a462b8d3200c46ce1b2f42a3221372769a3a9995effaec99950163627724f2924a", null ],
+      [ "SPDK_NVME_ZRA_LIST_ZSC", "nvme__spec_8h.html#a462b8d3200c46ce1b2f42a3221372769a3b09f8c1039e2aae669683cf2d70c50e", null ],
+      [ "SPDK_NVME_ZRA_LIST_ZSF", "nvme__spec_8h.html#a462b8d3200c46ce1b2f42a3221372769abe0063de498242d7f189bdf26cdb47fb", null ],
+      [ "SPDK_NVME_ZRA_LIST_ZSRO", "nvme__spec_8h.html#a462b8d3200c46ce1b2f42a3221372769aa49a5fd74b5fb6b3c6f725ac956591e5", null ],
+      [ "SPDK_NVME_ZRA_LIST_ZSO", "nvme__spec_8h.html#a462b8d3200c46ce1b2f42a3221372769a95fbe7e4051f3739d7c0793f29ab6f91", null ]
     ] ],
     [ "spdk_nvmf_ctrlr_model", "nvme__spec_8h.html#a2b71fb615deb505826eaeddd093e06bc", [
       [ "SPDK_NVMF_CTRLR_MODEL_DYNAMIC", "nvme__spec_8h.html#a2b71fb615deb505826eaeddd093e06bcaa69bdafb2302e973fb9c83f8bfff29c5", null ],
@@ -630,5 +645,7 @@ var nvme__spec_8h =
     [ "SPDK_STATIC_ASSERT", "nvme__spec_8h.html#a2be8d53b97a2c3cb3af9b321eb59d7c5", null ],
     [ "SPDK_STATIC_ASSERT", "nvme__spec_8h.html#a9c867478eb707af3711596989e487eed", null ],
     [ "SPDK_STATIC_ASSERT", "nvme__spec_8h.html#ac7fae325cfa4b22d44bf199795f3fcb0", null ],
-    [ "SPDK_STATIC_ASSERT", "nvme__spec_8h.html#a84f00caa7dfb77c3060a6759968cb53c", null ]
+    [ "SPDK_STATIC_ASSERT", "nvme__spec_8h.html#a84f00caa7dfb77c3060a6759968cb53c", null ],
+    [ "SPDK_STATIC_ASSERT", "nvme__spec_8h.html#a755f9d9f4456c16bc5a7309327c39c6d", null ],
+    [ "SPDK_STATIC_ASSERT", "nvme__spec_8h.html#a6875c09d574d75b4972c98bf37a28576", null ]
 ];

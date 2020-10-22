@@ -156,6 +156,12 @@ Functions</h2></td></tr>
 <tr class="memitem:a2060f12903d107efb4d7c26a9c0a83a8"><td class="memItemLeft" align="right" valign="top">const struct <a class="el" href="structspdk__nvme__zns__ns__data.html">spdk_nvme_zns_ns_data</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme__zns_8h.html#a2060f12903d107efb4d7c26a9c0a83a8">spdk_nvme_zns_ns_get_data</a> (struct spdk_nvme_ns *ns)</td></tr>
 <tr class="memdesc:a2060f12903d107efb4d7c26a9c0a83a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the Zoned Namespace Command Set Specific Identify Namespace data as defined by the NVMe Zoned Namespace Command Set Specification.  <a href="#a2060f12903d107efb4d7c26a9c0a83a8">More...</a><br /></td></tr>
 <tr class="separator:a2060f12903d107efb4d7c26a9c0a83a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19bdffc9a4c413f0f5d33dd9eff69702"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme__zns_8h.html#a19bdffc9a4c413f0f5d33dd9eff69702">spdk_nvme_zns_ns_get_zone_size</a> (struct spdk_nvme_ns *ns)</td></tr>
+<tr class="memdesc:a19bdffc9a4c413f0f5d33dd9eff69702"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the zone size, in bytes, of the given namespace.  <a href="#a19bdffc9a4c413f0f5d33dd9eff69702">More...</a><br /></td></tr>
+<tr class="separator:a19bdffc9a4c413f0f5d33dd9eff69702"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54494d19ee16b6fbf18f44ea15426de4"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme__zns_8h.html#a54494d19ee16b6fbf18f44ea15426de4">spdk_nvme_zns_ns_get_num_zones</a> (struct spdk_nvme_ns *ns)</td></tr>
+<tr class="memdesc:a54494d19ee16b6fbf18f44ea15426de4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the number of zones for the given namespace.  <a href="#a54494d19ee16b6fbf18f44ea15426de4">More...</a><br /></td></tr>
+<tr class="separator:a54494d19ee16b6fbf18f44ea15426de4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7e44f2e8ad190636f5b7e18bbfe3d301"><td class="memItemLeft" align="right" valign="top">const struct <a class="el" href="structspdk__nvme__zns__ctrlr__data.html">spdk_nvme_zns_ctrlr_data</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme__zns_8h.html#a7e44f2e8ad190636f5b7e18bbfe3d301">spdk_nvme_zns_ctrlr_get_data</a> (struct spdk_nvme_ctrlr *ctrlr)</td></tr>
 <tr class="memdesc:a7e44f2e8ad190636f5b7e18bbfe3d301"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the Zoned Namespace Command Set Specific Identify Controller data as defined by the NVMe Zoned Namespace Command Set Specification.  <a href="#a7e44f2e8ad190636f5b7e18bbfe3d301">More...</a><br /></td></tr>
 <tr class="separator:a7e44f2e8ad190636f5b7e18bbfe3d301"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -174,6 +180,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a5dbc02aa610c1861eca0f5e70689dec3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme__zns_8h.html#a5dbc02aa610c1861eca0f5e70689dec3">spdk_nvme_zns_offline_zone</a> (struct spdk_nvme_ns *ns, struct spdk_nvme_qpair *qpair, uint64_t slba, bool select_all, <a class="el" href="nvme_8h.html#ac9779e9957d7089dde8e492cc60856d8">spdk_nvme_cmd_cb</a> cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:a5dbc02aa610c1861eca0f5e70689dec3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submit a Offline Zone operation to the specified NVMe namespace.  <a href="#a5dbc02aa610c1861eca0f5e70689dec3">More...</a><br /></td></tr>
 <tr class="separator:a5dbc02aa610c1861eca0f5e70689dec3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a153d6ac1778c41164d101e748d75a9af"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme__zns_8h.html#a153d6ac1778c41164d101e748d75a9af">spdk_nvme_zns_report_zones</a> (struct spdk_nvme_ns *ns, struct spdk_nvme_qpair *qpair, void *payload, uint32_t payload_size, uint64_t slba, enum spdk_nvme_zns_zra_report_opts report_opts, bool partial_report, <a class="el" href="nvme_8h.html#ac9779e9957d7089dde8e492cc60856d8">spdk_nvme_cmd_cb</a> cb_fn, void *cb_arg)</td></tr>
+<tr class="memdesc:a153d6ac1778c41164d101e748d75a9af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a zone report from the specified NVMe namespace.  <a href="#a153d6ac1778c41164d101e748d75a9af">More...</a><br /></td></tr>
+<tr class="separator:a153d6ac1778c41164d101e748d75a9af"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>NVMe driver public API extension for Zoned Namespace Command Set. </p>
@@ -366,6 +375,62 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a54494d19ee16b6fbf18f44ea15426de4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a54494d19ee16b6fbf18f44ea15426de4">&#9670;&nbsp;</a></span>spdk_nvme_zns_ns_get_num_zones()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint64_t spdk_nvme_zns_ns_get_num_zones </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_nvme_ns *&#160;</td>
+          <td class="paramname"><em>ns</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the number of zones for the given namespace. </p>
+<p>This function is thread safe and can be called at any point while the controller is attached to the SPDK NVMe driver.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ns</td><td>Namespace to query.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the number of zones. </dd></dl>
+
+</div>
+</div>
+<a id="a19bdffc9a4c413f0f5d33dd9eff69702"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a19bdffc9a4c413f0f5d33dd9eff69702">&#9670;&nbsp;</a></span>spdk_nvme_zns_ns_get_zone_size()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint64_t spdk_nvme_zns_ns_get_zone_size </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_nvme_ns *&#160;</td>
+          <td class="paramname"><em>ns</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the zone size, in bytes, of the given namespace. </p>
+<p>This function is thread safe and can be called at any point while the controller is attached to the SPDK NVMe driver.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ns</td><td>Namespace to query.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the zone size of the given namespace in bytes. </dd></dl>
+
+</div>
+</div>
 <a id="a5dbc02aa610c1861eca0f5e70689dec3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5dbc02aa610c1861eca0f5e70689dec3">&#9670;&nbsp;</a></span>spdk_nvme_zns_offline_zone()</h2>
 
@@ -489,6 +554,93 @@ Functions</h2></td></tr>
     <tr><td class="paramname">qpair</td><td>I/O queue pair to submit the request. </td></tr>
     <tr><td class="paramname">slba</td><td>starting LBA of the zone to operate on. </td></tr>
     <tr><td class="paramname">select_all</td><td>If this is set, slba will be ignored, and operation will be performed on all zones that are in ZSC state. </td></tr>
+    <tr><td class="paramname">cb_fn</td><td>Callback function invoked when the I/O command completes. </td></tr>
+    <tr><td class="paramname">cb_arg</td><td>Argument passed to callback function.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success. Negated errno on failure. </dd></dl>
+
+</div>
+</div>
+<a id="a153d6ac1778c41164d101e748d75a9af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a153d6ac1778c41164d101e748d75a9af">&#9670;&nbsp;</a></span>spdk_nvme_zns_report_zones()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_nvme_zns_report_zones </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_nvme_ns *&#160;</td>
+          <td class="paramname"><em>ns</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct spdk_nvme_qpair *&#160;</td>
+          <td class="paramname"><em>qpair</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>payload</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>payload_size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>slba</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">enum spdk_nvme_zns_zra_report_opts&#160;</td>
+          <td class="paramname"><em>report_opts</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>partial_report</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="nvme_8h.html#ac9779e9957d7089dde8e492cc60856d8">spdk_nvme_cmd_cb</a>&#160;</td>
+          <td class="paramname"><em>cb_fn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>cb_arg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get a zone report from the specified NVMe namespace. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ns</td><td>Namespace. </td></tr>
+    <tr><td class="paramname">qpair</td><td>I/O queue pair to submit the request. </td></tr>
+    <tr><td class="paramname">payload</td><td>The pointer to the payload buffer. </td></tr>
+    <tr><td class="paramname">payload_size</td><td>The size of payload buffer. </td></tr>
+    <tr><td class="paramname">slba</td><td>starting LBA of the zone to operate on. </td></tr>
+    <tr><td class="paramname">report_opts</td><td>Filter on which zone states to include in the zone report. </td></tr>
+    <tr><td class="paramname">partial_report</td><td>If true, nr_zones field in the zone report indicates the number of zone descriptors that were successfully written to the zone report. If false, nr_zones field in the zone report indicates the number of zone descriptors that match the report_opts criteria. </td></tr>
     <tr><td class="paramname">cb_fn</td><td>Callback function invoked when the I/O command completes. </td></tr>
     <tr><td class="paramname">cb_arg</td><td>Argument passed to callback function.</td></tr>
   </table>

@@ -560,6 +560,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_
 <tr class="memitem:a981ce6d12bb1d9eeb828c6c7bd2ab585"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_8h.html#a981ce6d12bb1d9eeb828c6c7bd2ab585">spdk_mem_reserve</a> (void *vaddr, size_t len)</td></tr>
 <tr class="memdesc:a981ce6d12bb1d9eeb828c6c7bd2ab585"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reserve the address space specified in all memory maps.  <a href="#a981ce6d12bb1d9eeb828c6c7bd2ab585">More...</a><br /></td></tr>
 <tr class="separator:a981ce6d12bb1d9eeb828c6c7bd2ab585"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab44e2bc97e1b87f737d664c047f6c3f2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_8h.html#ab44e2bc97e1b87f737d664c047f6c3f2">spdk_mem_get_fd_and_offset</a> (void *vaddr, uint64_t *offset)</td></tr>
+<tr class="memdesc:ab44e2bc97e1b87f737d664c047f6c3f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the address's file descriptor and offset, it works with spdk memory allocation APIs.  <a href="#ab44e2bc97e1b87f737d664c047f6c3f2">More...</a><br /></td></tr>
+<tr class="separator:ab44e2bc97e1b87f737d664c047f6c3f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Encapsulated third-party dependencies. </p>
@@ -1430,6 +1433,44 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>a pointer to the allocated memory buffer. </dd></dl>
+
+</div>
+</div>
+<a id="ab44e2bc97e1b87f737d664c047f6c3f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab44e2bc97e1b87f737d664c047f6c3f2">&#9670;&nbsp;</a></span>spdk_mem_get_fd_and_offset()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_mem_get_fd_and_offset </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>vaddr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t *&#160;</td>
+          <td class="paramname"><em>offset</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the address's file descriptor and offset, it works with spdk memory allocation APIs. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">vaddr</td><td>Virtual address to get </td></tr>
+    <tr><td class="paramname">offset</td><td>Virtual address's map offset to the file descriptor</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>\ return negative errno on failure, otherwise return the file descriptor </p>
 
 </div>
 </div>

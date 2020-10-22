@@ -182,6 +182,8 @@ var annotated_dup =
     [ "spdk_nvme_vs_register", "unionspdk__nvme__vs__register.html", "unionspdk__nvme__vs__register" ],
     [ "spdk_nvme_zns_ctrlr_data", "structspdk__nvme__zns__ctrlr__data.html", "structspdk__nvme__zns__ctrlr__data" ],
     [ "spdk_nvme_zns_ns_data", "structspdk__nvme__zns__ns__data.html", "structspdk__nvme__zns__ns__data" ],
+    [ "spdk_nvme_zns_zone_desc", "structspdk__nvme__zns__zone__desc.html", "structspdk__nvme__zns__zone__desc" ],
+    [ "spdk_nvme_zns_zone_report", "structspdk__nvme__zns__zone__report.html", "structspdk__nvme__zns__zone__report" ],
     [ "spdk_nvmf_capsule_cmd", "structspdk__nvmf__capsule__cmd.html", "structspdk__nvmf__capsule__cmd" ],
     [ "spdk_nvmf_ctrlr_data", "structspdk__nvmf__ctrlr__data.html", "structspdk__nvmf__ctrlr__data" ],
     [ "spdk_nvmf_dif_info", "structspdk__nvmf__dif__info.html", "structspdk__nvmf__dif__info" ],

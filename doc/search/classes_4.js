@@ -160,6 +160,8 @@ var searchData=
   ['spdk_5fnvme_5fvs_5fregister',['spdk_nvme_vs_register',['../unionspdk__nvme__vs__register.html',1,'']]],
   ['spdk_5fnvme_5fzns_5fctrlr_5fdata',['spdk_nvme_zns_ctrlr_data',['../structspdk__nvme__zns__ctrlr__data.html',1,'']]],
   ['spdk_5fnvme_5fzns_5fns_5fdata',['spdk_nvme_zns_ns_data',['../structspdk__nvme__zns__ns__data.html',1,'']]],
+  ['spdk_5fnvme_5fzns_5fzone_5fdesc',['spdk_nvme_zns_zone_desc',['../structspdk__nvme__zns__zone__desc.html',1,'']]],
+  ['spdk_5fnvme_5fzns_5fzone_5freport',['spdk_nvme_zns_zone_report',['../structspdk__nvme__zns__zone__report.html',1,'']]],
   ['spdk_5fnvmf_5fcapsule_5fcmd',['spdk_nvmf_capsule_cmd',['../structspdk__nvmf__capsule__cmd.html',1,'']]],
   ['spdk_5fnvmf_5fctrlr_5fdata',['spdk_nvmf_ctrlr_data',['../structspdk__nvmf__ctrlr__data.html',1,'']]],
   ['spdk_5fnvmf_5fdif_5finfo',['spdk_nvmf_dif_info',['../structspdk__nvmf__dif__info.html',1,'']]],
