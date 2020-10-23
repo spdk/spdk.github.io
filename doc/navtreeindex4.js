@@ -1,6 +1,5 @@
 var NAVTREEINDEX4 =
 {
-"ioat__spec_8h.html#aad348ef54d834342368a825894b4a94b":[13,0,27,18],
 "ioat__spec_8h.html#ab47fb0695622ee3da3b857e0a93c461b":[13,0,27,41],
 "ioat__spec_8h.html#abad271de338abd80d0c5a8f0ea7309b6":[13,0,27,22],
 "ioat__spec_8h.html#abbcc20718fe5fe1f4f4d2dde66f43ec8":[13,0,27,14],
@@ -15,15 +14,13 @@ var NAVTREEINDEX4 =
 "ioat__spec_8h.html#ae763c4e8f46ead2c1ab8aa85bb40716f":[13,0,27,45],
 "ioat__spec_8h.html#afc40161ff89b7599a591441bc4699e5d":[13,0,27,30],
 "iscsi.html":[3,3],
-"iscsi.html#iscsi_config":[3,3,0,1],
-"iscsi.html#iscsi_config_lcore":[3,3,0,1,0],
+"iscsi.html#iscsi_config_lcore":[3,3,0,0,0],
 "iscsi.html#iscsi_getting_started":[3,3,0],
 "iscsi.html#iscsi_hotplug":[3,3,1],
-"iscsi.html#iscsi_initiator":[3,3,0,3],
+"iscsi.html#iscsi_initiator":[3,3,0,2],
 "iscsi.html#iscsi_login_redirection":[3,3,2],
-"iscsi.html#iscsi_lun":[3,3,0,1,1],
 "iscsi.html#iscsi_prereqs":[3,3,0,0],
-"iscsi.html#iscsi_rpc":[3,3,0,2],
+"iscsi.html#iscsi_rpc":[3,3,0,1],
 "iscsi__spec_8h.html":[13,0,28],
 "iscsi__spec_8h.html#a04b6541ec6c56cd9b1524a2bf9c1f05f":[13,0,28,27],
 "iscsi__spec_8h.html#a0fcf5898a9d4194105b5e88cb79f4d51":[13,0,28,85],
@@ -249,5 +246,8 @@ var NAVTREEINDEX4 =
 "jsonrpc.html#rpc_bdev_error_create":[3,8,2,34],
 "jsonrpc.html#rpc_bdev_error_delete":[3,8,2,35],
 "jsonrpc.html#rpc_bdev_examine":[3,8,2,2],
-"jsonrpc.html#rpc_bdev_ftl_create":[3,8,2,38]
+"jsonrpc.html#rpc_bdev_ftl_create":[3,8,2,38],
+"jsonrpc.html#rpc_bdev_ftl_delete":[3,8,2,39],
+"jsonrpc.html#rpc_bdev_get_bdevs":[3,8,2,1],
+"jsonrpc.html#rpc_bdev_get_histogram":[3,8,2,5]
 };

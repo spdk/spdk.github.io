@@ -43,10 +43,8 @@ var user_guides =
     ] ],
     [ "iSCSI Target", "iscsi.html", [
       [ "iSCSI Target Getting Started Guide", "iscsi.html#iscsi_getting_started", [
-        [ "Prerequisites", "iscsi.html#iscsi_prereqs", null ],
-        [ "Configuring iSCSI Target via config file", "iscsi.html#iscsi_config", [
-          [ "Assigning CPU Cores to the iSCSI Target", "iscsi.html#iscsi_config_lcore", null ],
-          [ "Configuring a LUN in the iSCSI Target", "iscsi.html#iscsi_lun", null ]
+        [ "Prerequisites", "iscsi.html#iscsi_prereqs", [
+          [ "Assigning CPU Cores to the iSCSI Target", "iscsi.html#iscsi_config_lcore", null ]
         ] ],
         [ "Configuring iSCSI Target via RPC method", "iscsi.html#iscsi_rpc", null ],
         [ "Configuring iSCSI Initiator", "iscsi.html#iscsi_initiator", null ]

@@ -159,22 +159,13 @@ Prerequisites</h2>
 <object type="image/svg+xml" data="iscsi.svg">iscsi.svg</object>
 <div class="caption">
 iSCSI structure</div></div>
-<h2><a class="anchor" id="iscsi_config"></a>
-Configuring iSCSI Target via config file</h2>
-<p>A <code>iscsi_tgt</code> specific configuration file is used to configure the iSCSI target. A fully documented example configuration file is located at <code>etc/spdk/iscsi.conf.in</code>.</p>
-<p>The configuration file is used to configure the SPDK iSCSI target. This file defines the following: TCP ports to use as iSCSI portals; general iSCSI parameters; initiator names and addresses to allow access to iSCSI target nodes; number and types of storage backends to export over iSCSI LUNs; iSCSI target node mappings between portal groups, initiator groups, and LUNs.</p>
-<p>You should make a copy of the example configuration file, modify it to suit your environment, and then run the iscsi_tgt application and pass it the configuration file using the -c option. Right now, the target requires elevated privileges (root) to run.</p>
-<div class="fragment"><div class="line">build/bin/iscsi_tgt -c /path/to/iscsi.conf</div></div><!-- fragment --><h3><a class="anchor" id="iscsi_config_lcore"></a>
+<h3><a class="anchor" id="iscsi_config_lcore"></a>
 Assigning CPU Cores to the iSCSI Target</h3>
 <p>SPDK uses the <a href="http://dpdk.org/doc/guides/prog_guide/env_abstraction_layer.html">DPDK Environment Abstraction Layer</a> to gain access to hardware resources such as huge memory pages and CPU core(s). DPDK EAL provides functions to assign threads to specific cores. To ensure the SPDK iSCSI target has the best performance, place the NICs and the NVMe devices on the same NUMA node and configure the target to run on CPU cores associated with that node. The following command line option is used to configure the SPDK iSCSI target:</p>
 <div class="fragment"><div class="line">-m 0xF000000</div></div><!-- fragment --><p>This is a hexadecimal bit mask of the CPU cores where the iSCSI target will start polling threads. In this example, CPU cores 24, 25, 26 and 27 would be used.</p>
-<h3><a class="anchor" id="iscsi_lun"></a>
-Configuring a LUN in the iSCSI Target</h3>
-<p>Each LUN in an iSCSI target node is associated with an SPDK block device. See <a class="el" href="bdev.html">Block Device User Guide</a> for details on configuring SPDK block devices. The block device to LUN mappings are specified in the configuration file as:</p>
-<div class="fragment"><div class="line">[TargetNodeX]</div><div class="line">  LUN0 Malloc0</div><div class="line">  LUN1 Nvme0n1</div></div><!-- fragment --><p>This exports a malloc'd target. The disk is a RAM disk that is a chunk of memory allocated by iscsi in user space. It will use offload engine to do the copy job instead of memcpy if the system has enough DMA channels.</p>
 <h2><a class="anchor" id="iscsi_rpc"></a>
 Configuring iSCSI Target via RPC method</h2>
-<p>In addition to the configuration file, the iSCSI target may also be configured via JSON-RPC calls. See <a class="el" href="jsonrpc.html">JSON-RPC Methods</a> for details.</p>
+<p>The iSCSI target is configured via JSON-RPC calls. See <a class="el" href="jsonrpc.html">JSON-RPC Methods</a> for details.</p>
 <h3>Portal groups</h3>
 <ul>
 <li>iscsi_create_portal_group &ndash; Add a portal group.</li>

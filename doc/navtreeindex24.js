@@ -1,8 +1,5 @@
 var NAVTREEINDEX24 =
 {
-"unionspdk__ioat__hw__desc.html#a2ee1dc602f0b3531ed63e072da771046":[12,0,61,5],
-"unionspdk__ioat__hw__desc.html#a45b4b856e702d5df38a18c0f394a48b6":[12,0,61,4],
-"unionspdk__ioat__hw__desc.html#a48bbbc028820ae86d53666e4311d261a":[12,0,61,8],
 "unionspdk__ioat__hw__desc.html#a7264931af60e6b279fed4d39813d9ed2":[12,0,61,2],
 "unionspdk__ioat__hw__desc.html#a9fe6cdd6a13b47da858887e401503ee6":[12,0,61,1],
 "unionspdk__ioat__hw__desc.html#aa434c5e1236bc50ee041510faeaf93da":[12,0,61,3],
@@ -249,5 +246,8 @@ var NAVTREEINDEX24 =
 "unionspdk__nvme__feat__interrupt__vector__configuration.html#a4972e1898a6f4ad031ace5ffe40732dd":[12,0,114,3],
 "unionspdk__nvme__feat__interrupt__vector__configuration.html#a7250196438d34e7adbae07116e526d5d":[12,0,114,4],
 "unionspdk__nvme__feat__interrupt__vector__configuration.html#adf2595e5bc0014c1cb4cd087d8e3732d":[12,0,114,1],
-"unionspdk__nvme__feat__keep__alive__timer.html":[12,0,115]
+"unionspdk__nvme__feat__keep__alive__timer.html":[12,0,115],
+"unionspdk__nvme__feat__keep__alive__timer.html#a1295377c1ebb2b62c58d29e43047827e":[12,0,115,1],
+"unionspdk__nvme__feat__keep__alive__timer.html#a3f5afa9c9250c557f1b393b6e9ff0c89":[12,0,115,0],
+"unionspdk__nvme__feat__keep__alive__timer.html#ac10f9a57ae75a0b0436117dcc6dbb913":[12,0,115,2]
 };

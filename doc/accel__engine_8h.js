@@ -7,7 +7,6 @@ var accel__engine_8h =
       [ "ACCEL_FILL", "accel__engine_8h.html#ae410399fafe6cf6b578da1601337678ea19897f5fe87ba00a2587b3de5b1bacc2", null ],
       [ "ACCEL_DUALCAST", "accel__engine_8h.html#ae410399fafe6cf6b578da1601337678ea85e8590eea41bb04a623c08b4178cba8", null ],
       [ "ACCEL_COMPARE", "accel__engine_8h.html#ae410399fafe6cf6b578da1601337678ea0a6f6a434801a938e5306454b9a1f3e8", null ],
-      [ "ACCEL_BATCH", "accel__engine_8h.html#ae410399fafe6cf6b578da1601337678ea3aea6eb4b7cdde9042ffacec57565c87", null ],
       [ "ACCEL_CRC32C", "accel__engine_8h.html#ae410399fafe6cf6b578da1601337678ea0ab5eb4b17cf0952c07f85e8def9b864", null ],
       [ "ACCEL_DIF", "accel__engine_8h.html#ae410399fafe6cf6b578da1601337678ea95a7957e0e6a69a9971db19d59df00fa", null ]
     ] ],

@@ -203,8 +203,7 @@ Command Line Parameters</h2>
 </table>
 <h3><a class="anchor" id="cmd_arg_config_file"></a>
 Configuration file</h3>
-<p>Historically, the SPDK applications were configured using a configuration file. This is still supported, but is considered deprecated in favor of JSON RPC configuration. See <a class="el" href="jsonrpc.html">JSON-RPC Methods</a> for details.</p>
-<p>Note that <code>--config</code> and <code>--wait-for-rpc</code> cannot be used at the same time.</p>
+<p>SPDK applications are configured using a JSON RPC configuration file. See <a class="el" href="jsonrpc.html">JSON-RPC Methods</a> for details.</p>
 <h3><a class="anchor" id="cmd_arg_limit_coredump"></a>
 Limit coredump</h3>
 <p>By default, an SPDK application will set resource limits for core file sizes to RLIM_INFINITY. Specifying <code>--limit-coredump</code> will not set the resource limits.</p>

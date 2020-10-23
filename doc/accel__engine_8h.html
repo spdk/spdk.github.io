@@ -170,9 +170,8 @@ Enumerations</h2></td></tr>
 <b>ACCEL_DUALCAST</b> = 1 &lt;&lt; 2, 
 <b>ACCEL_COMPARE</b> = 1 &lt;&lt; 3, 
 <br />
-&#160;&#160;<b>ACCEL_BATCH</b> = 1 &lt;&lt; 4, 
-<b>ACCEL_CRC32C</b> = 1 &lt;&lt; 5, 
-<b>ACCEL_DIF</b> = 1 &lt;&lt; 6
+&#160;&#160;<b>ACCEL_CRC32C</b> = 1 &lt;&lt; 4, 
+<b>ACCEL_DIF</b> = 1 &lt;&lt; 5
 <br />
  }</td></tr>
 <tr class="separator:ae410399fafe6cf6b578da1601337678e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -193,7 +192,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="acce
 <tr class="memdesc:aedef5318137c2b093932164e23c93f0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the I/O channel registered on the acceleration engine.  <a href="#aedef5318137c2b093932164e23c93f0c">More...</a><br /></td></tr>
 <tr class="separator:aedef5318137c2b093932164e23c93f0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a88cc170fc07d06224a37cd00d04bd2e9"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="accel__engine_8h.html#a88cc170fc07d06224a37cd00d04bd2e9">spdk_accel_get_capabilities</a> (struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *ch)</td></tr>
-<tr class="memdesc:a88cc170fc07d06224a37cd00d04bd2e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve accel engine capabilities.  <a href="#a88cc170fc07d06224a37cd00d04bd2e9">More...</a><br /></td></tr>
+<tr class="memdesc:a88cc170fc07d06224a37cd00d04bd2e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve accel engine HW acceleration capabilities.  <a href="#a88cc170fc07d06224a37cd00d04bd2e9">More...</a><br /></td></tr>
 <tr class="separator:a88cc170fc07d06224a37cd00d04bd2e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac0f663883c7d8087f9b1ca948b3aefc9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="accel__engine_8h.html#ac0f663883c7d8087f9b1ca948b3aefc9">spdk_accel_submit_copy</a> (struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *ch, void *dst, void *src, uint64_t nbytes, <a class="el" href="accel__engine_8h.html#a48593db52501b3dec9233f7112d37872">spdk_accel_completion_cb</a> cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:ac0f663883c7d8087f9b1ca948b3aefc9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submit a copy request.  <a href="#ac0f663883c7d8087f9b1ca948b3aefc9">More...</a><br /></td></tr>
@@ -916,14 +915,14 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="acce
       </table>
 </div><div class="memdoc">
 
-<p>Retrieve accel engine capabilities. </p>
+<p>Retrieve accel engine HW acceleration capabilities. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">ch</td><td>I/O channel associated with this call.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>bitmap of capabilities defined by enum accel_capability. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>bitmap of HW acceleration capabilities defined by enum accel_capability. </dd></dl>
 
 </div>
 </div>
