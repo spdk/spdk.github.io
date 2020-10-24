@@ -2,9 +2,11 @@ var thread_8h =
 [
     [ "spdk_io_channel", "structspdk__io__channel.html", "structspdk__io__channel" ],
     [ "spdk_thread_stats", "structspdk__thread__stats.html", "structspdk__thread__stats" ],
+    [ "SPDK_INTERRUPT_REGISTER", "thread_8h.html#ac15064b1cd3d036753e04c5c207ad71d", null ],
     [ "SPDK_POLLER_REGISTER", "thread_8h.html#a17cf88195e46bb118ac03528f7f5eee0", null ],
     [ "spdk_channel_for_each_cpl", "thread_8h.html#a96f03fe115196f1de03292ed6d86fd46", null ],
     [ "spdk_channel_msg", "thread_8h.html#a2dd91f3094f8b4cf60f460e3f88bbf0c", null ],
+    [ "spdk_interrupt_fn", "thread_8h.html#a61cfdc77d10970d7f3a8631df71e9588", null ],
     [ "spdk_io_channel_create_cb", "thread_8h.html#aed1d14292cfee8553d4a1ebb519b210a", null ],
     [ "spdk_io_channel_destroy_cb", "thread_8h.html#a75aa6a61877f23f79bb75c8fc5e68202", null ],
     [ "spdk_io_device_unregister_cb", "thread_8h.html#ae044f4141737c7f2df49cdfb03fd58ca", null ],
@@ -16,6 +18,11 @@ var thread_8h =
     [ "spdk_thread_op_fn", "thread_8h.html#a9f0ad3a2bcbb6d304401b579ab63aeba", null ],
     [ "spdk_thread_op_supported_fn", "thread_8h.html#af791c24e496b96c886fe8bad088eb0cb", null ],
     [ "spdk_thread_pass_msg", "thread_8h.html#a4a0e155fc3fa0150aa4a505dd1801e91", null ],
+    [ "spdk_interrupt_event_types", "thread_8h.html#a9f3b860a0c3ec1fb4f1e6743b1d746b6", [
+      [ "SPDK_INTERRUPT_EVENT_IN", "thread_8h.html#a9f3b860a0c3ec1fb4f1e6743b1d746b6a5d4cc88e0ae514336a79c553587f47f6", null ],
+      [ "SPDK_INTERRUPT_EVENT_OUT", "thread_8h.html#a9f3b860a0c3ec1fb4f1e6743b1d746b6a4852b6a4e09bd601a9cf695a17dc0929", null ],
+      [ "SPDK_INTERRUPT_EVENT_ET", "thread_8h.html#a9f3b860a0c3ec1fb4f1e6743b1d746b6acb9cc97e75bef6fb525d768a490dc4c9", null ]
+    ] ],
     [ "spdk_thread_op", "thread_8h.html#aa0d064c5b2e0268ad751a682fa8ed6a6", [
       [ "SPDK_THREAD_OP_NEW", "thread_8h.html#aa0d064c5b2e0268ad751a682fa8ed6a6a37f413cce870e5539efe6fe4607c543e", null ],
       [ "SPDK_THREAD_OP_RESCHED", "thread_8h.html#aa0d064c5b2e0268ad751a682fa8ed6a6aa758368d3b8b5b8724b9baa3692aa0d7", null ]
@@ -29,6 +36,11 @@ var thread_8h =
     [ "spdk_for_each_thread", "thread_8h.html#a16bb098e6398d2a63577e805f1423a3e", null ],
     [ "spdk_get_io_channel", "thread_8h.html#a8537c42a7aa203b50578efed509d9ba8", null ],
     [ "spdk_get_thread", "thread_8h.html#a34754a98debd5e095bf06889fbaed6aa", null ],
+    [ "spdk_interrupt_mode_enable", "thread_8h.html#a0cac0f188b5f46ff8bcdd5d4ffa37e84", null ],
+    [ "spdk_interrupt_mode_is_enabled", "thread_8h.html#a1f8be492b86ceface921634b9a627b7c", null ],
+    [ "spdk_interrupt_register", "thread_8h.html#aae58fe1101803d60c523891e7540a23c", null ],
+    [ "spdk_interrupt_set_event_types", "thread_8h.html#a6665332ac6d7781f7944f5f471ce1a21", null ],
+    [ "spdk_interrupt_unregister", "thread_8h.html#a45f3647a26ba93931beeb1782d39e56e", null ],
     [ "spdk_io_channel_from_ctx", "thread_8h.html#a9608b7b0fd448edec6ea5dd38ad04a57", null ],
     [ "spdk_io_channel_get_ctx", "thread_8h.html#adbf6e22252bc768003c7bbc165fc3c51", null ],
     [ "spdk_io_channel_get_thread", "thread_8h.html#a8ff9537d26ac923a7a93cd55ba315b5b", null ],
@@ -53,6 +65,7 @@ var thread_8h =
     [ "spdk_thread_get_ctx", "thread_8h.html#a1deb97a85a8240119cf46fa8a0b71388", null ],
     [ "spdk_thread_get_from_ctx", "thread_8h.html#af813fe52c71ec5e254f8671570f57bdc", null ],
     [ "spdk_thread_get_id", "thread_8h.html#aead9239fedaf5af9f24b5614f6c0c8fb", null ],
+    [ "spdk_thread_get_interrupt_fd", "thread_8h.html#a6b33abb26c349950555f71a34cf507c6", null ],
     [ "spdk_thread_get_last_tsc", "thread_8h.html#ae8d7fd3db7cd91ff37c3898e69811f7a", null ],
     [ "spdk_thread_get_name", "thread_8h.html#ae367048fa89366e845d72015064e6f76", null ],
     [ "spdk_thread_get_stats", "thread_8h.html#ab6f07dd00b0b4140155713aca312d46b", null ],

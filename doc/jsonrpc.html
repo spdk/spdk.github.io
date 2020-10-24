@@ -300,7 +300,22 @@ framework_get_reactors</h2>
 <h3>Response</h3>
 <p>The response is an array of all reactors.</p>
 <h3>Example</h3>
-<p>Example request: </p><div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;method&quot;: &quot;framework_get_reactors&quot;,</div><div class="line">  &quot;id&quot;: 1</div><div class="line">}</div></div><!-- fragment --><p>Example response: </p><div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: {</div><div class="line">    &quot;tick_rate&quot;: 2400000000,</div><div class="line">    &quot;reactors&quot;: [</div><div class="line">      {</div><div class="line">        &quot;lcore&quot;: 0,</div><div class="line">        &quot;busy&quot;: 41289723495,</div><div class="line">        &quot;idle&quot;: 3624832946,</div><div class="line">        &quot;lw_threads&quot;: [</div><div class="line">          {</div><div class="line">            &quot;name&quot;: &quot;app_thread&quot;,</div><div class="line">            &quot;id&quot;, 1,</div><div class="line">            &quot;cpumask&quot;: &quot;1&quot;,</div><div class="line">            &quot;elapsed&quot;: 44910853363</div><div class="line">          }</div><div class="line">        ]</div><div class="line">      }</div><div class="line">    ]</div><div class="line">  }</div><div class="line">}</div></div><!-- fragment --><h2><a class="anchor" id="rpc_thread_get_stats"></a>
+<p>Example request: </p><div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;method&quot;: &quot;framework_get_reactors&quot;,</div><div class="line">  &quot;id&quot;: 1</div><div class="line">}</div></div><!-- fragment --><p>Example response: </p><div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: {</div><div class="line">    &quot;tick_rate&quot;: 2400000000,</div><div class="line">    &quot;reactors&quot;: [</div><div class="line">      {</div><div class="line">        &quot;lcore&quot;: 0,</div><div class="line">        &quot;busy&quot;: 41289723495,</div><div class="line">        &quot;idle&quot;: 3624832946,</div><div class="line">        &quot;lw_threads&quot;: [</div><div class="line">          {</div><div class="line">            &quot;name&quot;: &quot;app_thread&quot;,</div><div class="line">            &quot;id&quot;, 1,</div><div class="line">            &quot;cpumask&quot;: &quot;1&quot;,</div><div class="line">            &quot;elapsed&quot;: 44910853363</div><div class="line">          }</div><div class="line">        ]</div><div class="line">      }</div><div class="line">    ]</div><div class="line">  }</div><div class="line">}</div></div><!-- fragment --><h2><a class="anchor" id="rpc_framework_set_scheduler"></a>
+framework_set_scheduler</h2>
+<p>Select thread scheduler that will be activated. This feature is considered as experimental.</p>
+<h3>Parameters</h3>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Name  </th><th class="markdownTableHeadNone">Optional  </th><th class="markdownTableHeadNone">Type  </th><th class="markdownTableHeadNone">Description   </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">name  </td><td class="markdownTableBodyNone">Required  </td><td class="markdownTableBodyNone">string  </td><td class="markdownTableBodyNone">Name of a scheduler   </td></tr>
+</table>
+<h3>Response</h3>
+<p>Completion status of the operation is returned as a boolean.</p>
+<h3>Example</h3>
+<p>Example request:</p>
+<div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;method&quot;: &quot;framework_set_scheduler&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;params&quot;: {</div><div class="line">    &quot;name&quot;: &quot;static&quot;</div><div class="line">  }</div><div class="line">}</div></div><!-- fragment --><p>Example response:</p>
+<div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: true</div><div class="line">}</div></div><!-- fragment --><h2><a class="anchor" id="rpc_thread_get_stats"></a>
 thread_get_stats</h2>
 <p>Retrieve current statistics of all the threads.</p>
 <h3>Parameters</h3>

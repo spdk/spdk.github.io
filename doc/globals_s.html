@@ -1215,11 +1215,35 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 <li>spdk_event_fn
 : <a class="el" href="event_8h.html#a69f0f17c0f9a03840c327672df37b3bb">event.h</a>
 </li>
+<li>spdk_fd_fn
+: <a class="el" href="fd__group_8h.html#a743712229809e8ec96fcfc866978a08c">fd_group.h</a>
+</li>
 <li>spdk_fd_get_blocklen()
 : <a class="el" href="fd_8h.html#a74ae0495e45784365711604b91b28cfe">fd.h</a>
 </li>
 <li>spdk_fd_get_size()
 : <a class="el" href="fd_8h.html#aea888b14525013b904e80542fb360a80">fd.h</a>
+</li>
+<li>spdk_fd_group_add()
+: <a class="el" href="fd__group_8h.html#a8a292c2497e0ee9a4168c3ebb35d0afc">fd_group.h</a>
+</li>
+<li>spdk_fd_group_create()
+: <a class="el" href="fd__group_8h.html#ad89615da09728bed934cd4e74dee0972">fd_group.h</a>
+</li>
+<li>spdk_fd_group_destroy()
+: <a class="el" href="fd__group_8h.html#a5608adf454545d5588a0488291dc3968">fd_group.h</a>
+</li>
+<li>spdk_fd_group_event_modify()
+: <a class="el" href="fd__group_8h.html#aa9202f833c0b499860baf4d1ae6318ab">fd_group.h</a>
+</li>
+<li>spdk_fd_group_get_fd()
+: <a class="el" href="fd__group_8h.html#a7956923fc280cf4f3a024ef837a634cf">fd_group.h</a>
+</li>
+<li>spdk_fd_group_remove()
+: <a class="el" href="fd__group_8h.html#add1e704767a6e1f5b88f00e477e2b003">fd_group.h</a>
+</li>
+<li>spdk_fd_group_wait()
+: <a class="el" href="fd__group_8h.html#a5855fa2ed6454dcbb48c7fdc834573c0">fd_group.h</a>
 </li>
 <li>spdk_file_close()
 : <a class="el" href="blobfs_8h.html#a83be140303855fa7b4baa08c217c4d28">blobfs.h</a>
@@ -1457,6 +1481,24 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 </li>
 <li>spdk_interface_init()
 : <a class="el" href="net_8h.html#a8ddcb56f1e677b845c5ebd5363002fb5">net.h</a>
+</li>
+<li>spdk_interrupt_fn
+: <a class="el" href="thread_8h.html#a61cfdc77d10970d7f3a8631df71e9588">thread.h</a>
+</li>
+<li>spdk_interrupt_mode_enable()
+: <a class="el" href="thread_8h.html#a0cac0f188b5f46ff8bcdd5d4ffa37e84">thread.h</a>
+</li>
+<li>spdk_interrupt_mode_is_enabled()
+: <a class="el" href="thread_8h.html#a1f8be492b86ceface921634b9a627b7c">thread.h</a>
+</li>
+<li>spdk_interrupt_register()
+: <a class="el" href="thread_8h.html#aae58fe1101803d60c523891e7540a23c">thread.h</a>
+</li>
+<li>spdk_interrupt_set_event_types()
+: <a class="el" href="thread_8h.html#a6665332ac6d7781f7944f5f471ce1a21">thread.h</a>
+</li>
+<li>spdk_interrupt_unregister()
+: <a class="el" href="thread_8h.html#a45f3647a26ba93931beeb1782d39e56e">thread.h</a>
 </li>
 <li>spdk_io_channel_create_cb
 : <a class="el" href="thread_8h.html#aed1d14292cfee8553d4a1ebb519b210a">thread.h</a>
@@ -2772,11 +2814,11 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 <li>SPDK_NVME_SGLS_NOT_SUPPORTED
 : <a class="el" href="nvme__spec_8h.html#af3e4102cda177c51a05a6bb02fa62b87a5978d5c7ce04a60c9d86b157037cb2f0">nvme_spec.h</a>
 </li>
-<li>SPDK_NVME_SGLS_SUPPORTED
-: <a class="el" href="nvme__spec_8h.html#af3e4102cda177c51a05a6bb02fa62b87ade9828594ce1d9d11427a38182149d9d">nvme_spec.h</a>
-</li>
 <li>spdk_nvme_sgls_supported
 : <a class="el" href="nvme__spec_8h.html#af3e4102cda177c51a05a6bb02fa62b87">nvme_spec.h</a>
+</li>
+<li>SPDK_NVME_SGLS_SUPPORTED
+: <a class="el" href="nvme__spec_8h.html#af3e4102cda177c51a05a6bb02fa62b87ade9828594ce1d9d11427a38182149d9d">nvme_spec.h</a>
 </li>
 <li>SPDK_NVME_SGLS_SUPPORTED_DWORD_ALIGNED
 : <a class="el" href="nvme__spec_8h.html#af3e4102cda177c51a05a6bb02fa62b87a702868f6b85dd329c4baf00642e99fca">nvme_spec.h</a>
@@ -3884,6 +3926,9 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 </li>
 <li>spdk_thread_get_id()
 : <a class="el" href="thread_8h.html#aead9239fedaf5af9f24b5614f6c0c8fb">thread.h</a>
+</li>
+<li>spdk_thread_get_interrupt_fd()
+: <a class="el" href="thread_8h.html#a6b33abb26c349950555f71a34cf507c6">thread.h</a>
 </li>
 <li>spdk_thread_get_last_tsc()
 : <a class="el" href="thread_8h.html#ae8d7fd3db7cd91ff37c3898e69811f7a">thread.h</a>

@@ -142,6 +142,7 @@ var user_guides =
         [ "framework_get_subsystems", "jsonrpc.html#rpc_framework_get_subsystems", null ],
         [ "framework_get_config", "jsonrpc.html#rpc_framework_get_config", null ],
         [ "framework_get_reactors", "jsonrpc.html#rpc_framework_get_reactors", null ],
+        [ "framework_set_scheduler", "jsonrpc.html#rpc_framework_set_scheduler", null ],
         [ "thread_get_stats", "jsonrpc.html#rpc_thread_get_stats", null ],
         [ "thread_set_cpumask", "jsonrpc.html#rpc_thread_set_cpumask", null ],
         [ "log_set_print_level", "jsonrpc.html#rpc_log_set_print_level", null ],

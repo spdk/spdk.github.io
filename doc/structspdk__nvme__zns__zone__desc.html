@@ -151,25 +151,64 @@ $(document).ready(function(){initNavTree('structspdk__nvme__zns__zone__desc.html
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
 <tr class="memitem:a073bd35744902ae0a7e4507de790a47e"><td class="memItemLeft" align="right" valign="top"><a id="a073bd35744902ae0a7e4507de790a47e"></a>
-uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>zt</b></td></tr>
+uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__zns__zone__desc.html#a073bd35744902ae0a7e4507de790a47e">zt</a>: 4</td></tr>
+<tr class="memdesc:a073bd35744902ae0a7e4507de790a47e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Zone Type. <br /></td></tr>
 <tr class="separator:a073bd35744902ae0a7e4507de790a47e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1691489a32138132a721cc4a293f27a"><td class="memItemLeft" align="right" valign="top"><a id="af1691489a32138132a721cc4a293f27a"></a>
+uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>rsvd0</b>: 4</td></tr>
+<tr class="separator:af1691489a32138132a721cc4a293f27a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa30059688627734924c38d15a29b7d63"><td class="memItemLeft" align="right" valign="top"><a id="aa30059688627734924c38d15a29b7d63"></a>
+uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>rsvd1</b>: 4</td></tr>
+<tr class="separator:aa30059688627734924c38d15a29b7d63"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1c3005e11734a7b2808adc8887f180fc"><td class="memItemLeft" align="right" valign="top"><a id="a1c3005e11734a7b2808adc8887f180fc"></a>
-uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>zs</b></td></tr>
+uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__zns__zone__desc.html#a1c3005e11734a7b2808adc8887f180fc">zs</a>: 4</td></tr>
+<tr class="memdesc:a1c3005e11734a7b2808adc8887f180fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Zone State. <br /></td></tr>
 <tr class="separator:a1c3005e11734a7b2808adc8887f180fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adae306c6ec3abf3bc967a8bc2cac9367"><td class="memItemLeft" align="right" valign="top"><a id="adae306c6ec3abf3bc967a8bc2cac9367"></a>
-uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>za</b></td></tr>
-<tr class="separator:adae306c6ec3abf3bc967a8bc2cac9367"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a447c5c3e500f1bcd39d7a1396bab2ea6"><td class="memItemLeft" align="right" valign="top"><a id="a447c5c3e500f1bcd39d7a1396bab2ea6"></a>
-uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>reserved3</b> [5]</td></tr>
-<tr class="separator:a447c5c3e500f1bcd39d7a1396bab2ea6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76753ea58bd6346644ecd8ee1b319206"><td class="memItemLeft" ><a id="a76753ea58bd6346644ecd8ee1b319206"></a>
+union {</td></tr>
+<tr class="memitem:a9a1958f048a9159a5102e1128dca3ad2"><td class="memItemLeft" >
+&#160;&#160;&#160;uint8_t&#160;&#160;&#160;<b>raw</b></td></tr>
+<tr class="separator:a9a1958f048a9159a5102e1128dca3ad2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4377f57737b29226b3506c3d09bedc47"><td class="memItemLeft" >
+&#160;&#160;&#160;struct {</td></tr>
+<tr class="memitem:abba6b32ab87bd3946e57542a4834849f"><td class="memItemLeft" >
+&#160;&#160;&#160;&#160;&#160;&#160;uint8_t&#160;&#160;&#160;<a class="el" href="structspdk__nvme__zns__zone__desc.html#a672fa0f469cdf75a2f3bb86dfec8ac3c">zfc</a>: 1</td></tr>
+<tr class="memdesc:abba6b32ab87bd3946e57542a4834849f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Zone Finished by controller. <br /></td></tr>
+<tr class="separator:abba6b32ab87bd3946e57542a4834849f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae17f44b8c0fe5f33fea45cc1faa7400"><td class="memItemLeft" >
+&#160;&#160;&#160;&#160;&#160;&#160;uint8_t&#160;&#160;&#160;<a class="el" href="structspdk__nvme__zns__zone__desc.html#ab2b9b09200da4a404cf84597f3490a54">zfr</a>: 1</td></tr>
+<tr class="memdesc:aae17f44b8c0fe5f33fea45cc1faa7400"><td class="mdescLeft">&#160;</td><td class="mdescRight">Zone Finish Recommended. <br /></td></tr>
+<tr class="separator:aae17f44b8c0fe5f33fea45cc1faa7400"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80e1634b700bc20c46e716c0337040c8"><td class="memItemLeft" >
+&#160;&#160;&#160;&#160;&#160;&#160;uint8_t&#160;&#160;&#160;<a class="el" href="structspdk__nvme__zns__zone__desc.html#ab606ccfe298d4c20d97a5382f794d255">rzr</a>: 1</td></tr>
+<tr class="memdesc:a80e1634b700bc20c46e716c0337040c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset Zone Recommended. <br /></td></tr>
+<tr class="separator:a80e1634b700bc20c46e716c0337040c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5cd91af1f7478a634ff0e25c929b76d3"><td class="memItemLeft" >
+&#160;&#160;&#160;&#160;&#160;&#160;uint8_t&#160;&#160;&#160;<b>rsvd3</b>: 4</td></tr>
+<tr class="separator:a5cd91af1f7478a634ff0e25c929b76d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a340a7840710ae37ab9947c4242808242"><td class="memItemLeft" >
+&#160;&#160;&#160;&#160;&#160;&#160;uint8_t&#160;&#160;&#160;<a class="el" href="structspdk__nvme__zns__zone__desc.html#a4dcb54aaf80f7f8a14853c209e858e46">zdev</a>: 1</td></tr>
+<tr class="memdesc:a340a7840710ae37ab9947c4242808242"><td class="mdescLeft">&#160;</td><td class="mdescRight">Zone Descriptor Valid. <br /></td></tr>
+<tr class="separator:a340a7840710ae37ab9947c4242808242"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4377f57737b29226b3506c3d09bedc47"><td class="memItemLeft" valign="top">&#160;&#160;&#160;}&#160;&#160;&#160;<b>bits</b></td></tr>
+<tr class="separator:a4377f57737b29226b3506c3d09bedc47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76753ea58bd6346644ecd8ee1b319206"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__zns__zone__desc.html#a76753ea58bd6346644ecd8ee1b319206">za</a></td></tr>
+<tr class="memdesc:a76753ea58bd6346644ecd8ee1b319206"><td class="mdescLeft">&#160;</td><td class="mdescRight">Zone Attributes. <br /></td></tr>
+<tr class="separator:a76753ea58bd6346644ecd8ee1b319206"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6cac5b7a3197554cafb4e695906cb66c"><td class="memItemLeft" align="right" valign="top"><a id="a6cac5b7a3197554cafb4e695906cb66c"></a>
+uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>reserved</b> [5]</td></tr>
+<tr class="separator:a6cac5b7a3197554cafb4e695906cb66c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1bd360e8c54b4cf58538e88cedf3c0f7"><td class="memItemLeft" align="right" valign="top"><a id="a1bd360e8c54b4cf58538e88cedf3c0f7"></a>
-uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>zcap</b></td></tr>
+uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__zns__zone__desc.html#a1bd360e8c54b4cf58538e88cedf3c0f7">zcap</a></td></tr>
+<tr class="memdesc:a1bd360e8c54b4cf58538e88cedf3c0f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Zone Capacity (in number of LBAs) <br /></td></tr>
 <tr class="separator:a1bd360e8c54b4cf58538e88cedf3c0f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2e109ed5efdad9303bd515619f353120"><td class="memItemLeft" align="right" valign="top"><a id="a2e109ed5efdad9303bd515619f353120"></a>
-uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>zslba</b></td></tr>
+uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__zns__zone__desc.html#a2e109ed5efdad9303bd515619f353120">zslba</a></td></tr>
+<tr class="memdesc:a2e109ed5efdad9303bd515619f353120"><td class="mdescLeft">&#160;</td><td class="mdescRight">Zone Start LBA. <br /></td></tr>
 <tr class="separator:a2e109ed5efdad9303bd515619f353120"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1f7ee3f826226731b4e7187a2815a699"><td class="memItemLeft" align="right" valign="top"><a id="a1f7ee3f826226731b4e7187a2815a699"></a>
-uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>wp</b></td></tr>
+uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__zns__zone__desc.html#a1f7ee3f826226731b4e7187a2815a699">wp</a></td></tr>
+<tr class="memdesc:a1f7ee3f826226731b4e7187a2815a699"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write Pointer (LBA) <br /></td></tr>
 <tr class="separator:a1f7ee3f826226731b4e7187a2815a699"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab82c74a23865a7546bbb4976092aa64a"><td class="memItemLeft" align="right" valign="top"><a id="ab82c74a23865a7546bbb4976092aa64a"></a>
 uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>reserved32</b> [32]</td></tr>
