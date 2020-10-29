@@ -9,3 +9,4 @@ title:  "SPDK Whitepapers"
 * [Alibaba Cloud POLARDB: An Innovative Cloud-Hosted Database](https://www.intel.com/content/dam/www/public/us/en/documents/solution-briefs/alibaba-polardb-solution-brief.pdf)
 * [SANGFOR EDS works with Intel to achieve high performance at low cost](https://ci.spdk.io/download/papers/SANGFOR_EDS_works_with_Intel_to_achieve_high_performance_at_low_cost.pdf)
 * [Intel Technology Accelerates H3C ONEStor Distributed Storage System](https://ci.spdk.io/download/papers/Intel_Technology_Accelerates_H3C_ONEStor_Distributed_Storage_System.pdf)
+* [Intel Helps Kingsoft Cloud Create Hybrid Cloud Storage Products to Accelerate the Digital Transformation of Enterprises](https://ci.spdk.io/download/papers/Intel_Technology_Accelerates_Kingsoft_Cloud_For_Hybrid_Cloud_Storage_Products_EN.pdf)
