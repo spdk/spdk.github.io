@@ -340,7 +340,7 @@ Functions</h2></td></tr>
 <tr class="memdesc:a02411bf7ae4827a350711e688316997e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Probe and add controllers to the probe context list.  <a href="#a02411bf7ae4827a350711e688316997e">More...</a><br /></td></tr>
 <tr class="separator:a02411bf7ae4827a350711e688316997e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aedea919a47bdd811b604656e29e3fcef"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#aedea919a47bdd811b604656e29e3fcef">spdk_nvme_probe_poll_async</a> (struct spdk_nvme_probe_ctx *probe_ctx)</td></tr>
-<tr class="memdesc:aedea919a47bdd811b604656e29e3fcef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start controllers in the context list.  <a href="#aedea919a47bdd811b604656e29e3fcef">More...</a><br /></td></tr>
+<tr class="memdesc:aedea919a47bdd811b604656e29e3fcef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Proceed with attaching contollers associated with the probe context.  <a href="#aedea919a47bdd811b604656e29e3fcef">More...</a><br /></td></tr>
 <tr class="separator:aedea919a47bdd811b604656e29e3fcef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4b63c225c3cce6da60fdbfb6f54b11e2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a4b63c225c3cce6da60fdbfb6f54b11e2">spdk_nvme_detach</a> (struct spdk_nvme_ctrlr *ctrlr)</td></tr>
 <tr class="memdesc:a4b63c225c3cce6da60fdbfb6f54b11e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Detach specified device returned by <a class="el" href="nvme_8h.html#a225bbc386ec518ae21bd5536f21db45d" title="Enumerate the bus indicated by the transport ID and attach the userspace NVMe driver to each device f...">spdk_nvme_probe()</a>'s attach_cb from the NVMe driver.  <a href="#a4b63c225c3cce6da60fdbfb6f54b11e2">More...</a><br /></td></tr>
@@ -1133,7 +1133,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_map_prps</b>
 </div><div class="memdoc">
 
 <p>Connect the NVMe driver to the device located at the given transport ID. </p>
-<p>The function will return a probe context on success, controller associates with the context is not ready for use, user must call <a class="el" href="nvme_8h.html#aedea919a47bdd811b604656e29e3fcef" title="Start controllers in the context list.">spdk_nvme_probe_poll_async()</a> until <a class="el" href="nvme_8h.html#aedea919a47bdd811b604656e29e3fcef" title="Start controllers in the context list.">spdk_nvme_probe_poll_async()</a> returns 0.</p>
+<p>The function will return a probe context on success, controller associates with the context is not ready for use, user must call <a class="el" href="nvme_8h.html#aedea919a47bdd811b604656e29e3fcef" title="Proceed with attaching contollers associated with the probe context.">spdk_nvme_probe_poll_async()</a> until <a class="el" href="nvme_8h.html#aedea919a47bdd811b604656e29e3fcef" title="Proceed with attaching contollers associated with the probe context.">spdk_nvme_probe_poll_async()</a> returns 0.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">trid</td><td>The transport ID indicating which device to connect. If the trtype is PCIe, this will connect the local PCIe bus. If the trtype is RDMA, the traddr and trsvcid must point at the location of an NVMe-oF service. </td></tr>
@@ -6990,7 +6990,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_map_prps</b>
 </div><div class="memdoc">
 
 <p>Probe and add controllers to the probe context list. </p>
-<p>Users must call <a class="el" href="nvme_8h.html#aedea919a47bdd811b604656e29e3fcef" title="Start controllers in the context list.">spdk_nvme_probe_poll_async()</a> to initialize controllers in the probe context list to the READY state.</p>
+<p>Users must call <a class="el" href="nvme_8h.html#aedea919a47bdd811b604656e29e3fcef" title="Proceed with attaching contollers associated with the probe context.">spdk_nvme_probe_poll_async()</a> to initialize controllers in the probe context list to the READY state.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">trid</td><td>The transport ID indicating which bus to enumerate. If the trtype is PCIe or trid is NULL, this will scan the local PCIe bus. If the trtype is RDMA, the traddr and trsvcid must point at the location of an NVMe-oF discovery service. </td></tr>
@@ -7021,8 +7021,9 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_map_prps</b>
       </table>
 </div><div class="memdoc">
 
-<p>Start controllers in the context list. </p>
-<p>Users may call the function util it returns True.</p>
+<p>Proceed with attaching contollers associated with the probe context. </p>
+<p>The probe context is one returned from a previous call to <a class="el" href="nvme_8h.html#a02411bf7ae4827a350711e688316997e" title="Probe and add controllers to the probe context list.">spdk_nvme_probe_async()</a>. Users must call this function on the probe context until it returns 0.</p>
+<p>If any controllers fail to attach, there is no explicit notification. Users can detect attachment failure by comparing attach_cb invocations with the number of times where the user returned true for the probe_cb.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">probe_ctx</td><td>Context used to track probe actions.</td></tr>
@@ -7031,9 +7032,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_map_prps</b>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 if all probe operations are complete; the probe_ctx is also freed and no longer valid. </dd>
 <dd>
--EAGAIN if there are still pending probe operations; user must call spdk_nvme_probe_poll_async again to continue progress. </dd>
-<dd>
-value other than 0 and -EAGAIN probe error with one controller. </dd></dl>
+-EAGAIN if there are still pending probe operations; user must call spdk_nvme_probe_poll_async again to continue progress. </dd></dl>
 
 </div>
 </div>
