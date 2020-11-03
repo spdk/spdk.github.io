@@ -3572,6 +3572,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_
 
 <p>Enumerate all PCI devices supported by the provided driver and try to attach those that weren't attached yet. </p>
 <p>The provided callback will be called for each such device and its return code will decide whether that device is attached or not. Attached devices have to be manually detached with <a class="el" href="env_8h.html#aa98502fc8d794fadaae348496d421082" title="Release all resources associated with the given device and detach it.">spdk_pci_device_detach()</a> to be attach-able again.</p>
+<p>During enumeration all registered pci devices with exposed access to userspace are getting probed internally unless not explicitly specified on denylist. Because of that it becomes not possible to either use such devices with another application or unbind the driver (e.g. vfio).</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">driver</td><td>Driver for a specific device type. </td></tr>
