@@ -931,12 +931,16 @@ Enumerations</h2></td></tr>
  }</td></tr>
 <tr class="memdesc:a41c0f1b0cb703d0a995b87f763a8e6ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Asynchronous Event Information for SMART/Health Status. <br /></td></tr>
 <tr class="separator:a41c0f1b0cb703d0a995b87f763a8e6ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af0fe403c0712860a8e0b9763844d25b6"><td class="memItemLeft" align="right" valign="top"><a id="af0fe403c0712860a8e0b9763844d25b6"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme__spec_8h.html#af0fe403c0712860a8e0b9763844d25b6">spdk_nvme_async_event_info_notice</a> { <b>SPDK_NVME_ASYNC_EVENT_NS_ATTR_CHANGED</b> = 0x0, 
+<tr class="memitem:af0fe403c0712860a8e0b9763844d25b6"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme__spec_8h.html#af0fe403c0712860a8e0b9763844d25b6">spdk_nvme_async_event_info_notice</a> { <br />
+&#160;&#160;<b>SPDK_NVME_ASYNC_EVENT_NS_ATTR_CHANGED</b> = 0x0, 
 <b>SPDK_NVME_ASYNC_EVENT_FW_ACTIVATION_START</b> = 0x1, 
 <b>SPDK_NVME_ASYNC_EVENT_TELEMETRY_LOG_CHANGED</b> = 0x2, 
-<b>SPDK_NVME_ASYNC_EVENT_ANA_CHANGE</b> = 0x3
+<b>SPDK_NVME_ASYNC_EVENT_ANA_CHANGE</b> = 0x3, 
+<br />
+&#160;&#160;<a class="el" href="nvme__spec_8h.html#af0fe403c0712860a8e0b9763844d25b6a189c23f4e119914a1f39ecd76ef0dd84">SPDK_NVME_ASYNC_EVENT_DISCOVERY_LOG_CHANGE</a> = 0xF0
+<br />
  }</td></tr>
-<tr class="memdesc:af0fe403c0712860a8e0b9763844d25b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Asynchronous Event Information for Notice. <br /></td></tr>
+<tr class="memdesc:af0fe403c0712860a8e0b9763844d25b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Asynchronous Event Information for Notice.  <a href="nvme__spec_8h.html#af0fe403c0712860a8e0b9763844d25b6">More...</a><br /></td></tr>
 <tr class="separator:af0fe403c0712860a8e0b9763844d25b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0e5dcf2fc37bcc793ab08c92d11ae78a"><td class="memItemLeft" align="right" valign="top"><a id="a0e5dcf2fc37bcc793ab08c92d11ae78a"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme__spec_8h.html#a0e5dcf2fc37bcc793ab08c92d11ae78a">spdk_nvme_async_event_info_nvm_command_set</a> { <b>SPDK_NVME_ASYNC_EVENT_RESERVATION_LOG_AVAIL</b> = 0x0, 
 <b>SPDK_NVME_ASYNC_EVENT_SANITIZE_COMPLETED</b> = 0x1
@@ -1407,6 +1411,26 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
+<a id="af0fe403c0712860a8e0b9763844d25b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af0fe403c0712860a8e0b9763844d25b6">&#9670;&nbsp;</a></span>spdk_nvme_async_event_info_notice</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="nvme__spec_8h.html#af0fe403c0712860a8e0b9763844d25b6">spdk_nvme_async_event_info_notice</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Asynchronous Event Information for Notice. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="af0fe403c0712860a8e0b9763844d25b6a189c23f4e119914a1f39ecd76ef0dd84"></a>SPDK_NVME_ASYNC_EVENT_DISCOVERY_LOG_CHANGE&#160;</td><td class="fielddoc"><p>Discovery log change event(refer to the NVMe over Fabrics specification) </p>
+</td></tr>
+</table>
+
+</div>
+</div>
 <a id="adf6ad5ec9f8c1aa4c7efc45ee9d646b6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#adf6ad5ec9f8c1aa4c7efc45ee9d646b6">&#9670;&nbsp;</a></span>spdk_nvme_cap_ams</h2>
 

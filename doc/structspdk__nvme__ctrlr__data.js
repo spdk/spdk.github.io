@@ -38,6 +38,7 @@ var structspdk__nvme__ctrlr__data =
     [ "ctratt", "structspdk__nvme__ctrlr__data.html#af1dcd0f72671fef9b9cf16f348a86beb", null ],
     [ "device_self_test", "structspdk__nvme__ctrlr__data.html#a9ebd530b8658005e835c70dc3bfdfae7", null ],
     [ "directives", "structspdk__nvme__ctrlr__data.html#abdedfae00071e963b364d3df594c452c", null ],
+    [ "discovery_log_change_notices", "structspdk__nvme__ctrlr__data.html#af1cdb2351fe0c4fb6593328db1abccca", null ],
     [ "doorbell_buffer_config", "structspdk__nvme__ctrlr__data.html#ae45ad3fe90019ede3be0d9077d907a93", null ],
     [ "dsm", "structspdk__nvme__ctrlr__data.html#ae78d652e54076207d43e32deed67da87", null ],
     [ "dsto", "structspdk__nvme__ctrlr__data.html#a1cebb9b756be4608cae1231ce526de85", null ],

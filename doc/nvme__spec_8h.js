@@ -164,7 +164,8 @@ var nvme__spec_8h =
       [ "SPDK_NVME_ASYNC_EVENT_NS_ATTR_CHANGED", "nvme__spec_8h.html#af0fe403c0712860a8e0b9763844d25b6a94e514b5e58d1e31fb8fbd089570c150", null ],
       [ "SPDK_NVME_ASYNC_EVENT_FW_ACTIVATION_START", "nvme__spec_8h.html#af0fe403c0712860a8e0b9763844d25b6ab28cfae4d80cf86515c6f4b7bea26ae4", null ],
       [ "SPDK_NVME_ASYNC_EVENT_TELEMETRY_LOG_CHANGED", "nvme__spec_8h.html#af0fe403c0712860a8e0b9763844d25b6a59acbf9d61b55a556dc1ae6a07de07d6", null ],
-      [ "SPDK_NVME_ASYNC_EVENT_ANA_CHANGE", "nvme__spec_8h.html#af0fe403c0712860a8e0b9763844d25b6abc63e75ad72900e1b092f8879d2087db", null ]
+      [ "SPDK_NVME_ASYNC_EVENT_ANA_CHANGE", "nvme__spec_8h.html#af0fe403c0712860a8e0b9763844d25b6abc63e75ad72900e1b092f8879d2087db", null ],
+      [ "SPDK_NVME_ASYNC_EVENT_DISCOVERY_LOG_CHANGE", "nvme__spec_8h.html#af0fe403c0712860a8e0b9763844d25b6a189c23f4e119914a1f39ecd76ef0dd84", null ]
     ] ],
     [ "spdk_nvme_async_event_info_nvm_command_set", "nvme__spec_8h.html#a0e5dcf2fc37bcc793ab08c92d11ae78a", [
       [ "SPDK_NVME_ASYNC_EVENT_RESERVATION_LOG_AVAIL", "nvme__spec_8h.html#a0e5dcf2fc37bcc793ab08c92d11ae78aa33be07499a0e8833206a3677b0cf38ff", null ],

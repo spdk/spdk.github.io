@@ -1,5 +1,8 @@
 var NAVTREEINDEX25 =
 {
+"unionspdk__nvme__feat__async__event__configuration.html#aaf74397f2e67778152f91a1ad81dec2c":[12,0,107,0],
+"unionspdk__nvme__feat__async__event__configuration.html#af9edd911cbd0e44235cf4ac12d8c8c0e":[12,0,107,8],
+"unionspdk__nvme__feat__autonomous__power__state__transition.html":[12,0,108],
 "unionspdk__nvme__feat__autonomous__power__state__transition.html#a022cc1ba5b7ff365a6b69989c663333a":[12,0,108,0],
 "unionspdk__nvme__feat__autonomous__power__state__transition.html#a36867fe7bf800adeacf48b7940f74857":[12,0,108,2],
 "unionspdk__nvme__feat__autonomous__power__state__transition.html#a9311f1d84bfe298c3ea675dc2cfbdcdc":[12,0,108,3],
@@ -246,8 +249,5 @@ var NAVTREEINDEX25 =
 "vmd.html#vmd_app_frame":[7,4,5],
 "vmd.html#vmd_config":[7,4,4],
 "vmd.html#vmd_interface":[7,4,2],
-"vmd.html#vmd_intro":[7,4,1],
-"vmd.html#vmd_key_functions":[7,4,3],
-"vmd.html#vmd_led":[7,4,7],
-"vmd.html#vmd_toc":[7,4,0]
+"vmd.html#vmd_intro":[7,4,1]
 };

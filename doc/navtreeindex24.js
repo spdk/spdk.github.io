@@ -1,5 +1,7 @@
 var NAVTREEINDEX24 =
 {
+"trace_8h.html#a31bfd9fba3352fdc899b3b5033481b27":[13,0,56,24],
+"trace_8h.html#a346327ec1addd7eeb87963b40cec1821":[13,0,56,35],
 "trace_8h.html#a3c9eb705c608a7ffb0724dd7520d61ad":[13,0,56,30],
 "trace_8h.html#a483ad47f18a34c86bca85e1a228dd655":[13,0,56,32],
 "trace_8h.html#a4a0cd434921adc03a501f9e133aa45b6":[13,0,56,11],
@@ -241,13 +243,11 @@ var NAVTREEINDEX24 =
 "unionspdk__nvme__feat__arbitration.html#a6604bba2a2a419cd8bde785fc99e97a3":[12,0,106,1],
 "unionspdk__nvme__feat__arbitration.html#af12378890a3a12fc4a54e10b6103859e":[12,0,106,6],
 "unionspdk__nvme__feat__async__event__configuration.html":[12,0,107],
-"unionspdk__nvme__feat__async__event__configuration.html#a042e849ee18c493b3b0e04759745486e":[12,0,107,6],
+"unionspdk__nvme__feat__async__event__configuration.html#a042e849ee18c493b3b0e04759745486e":[12,0,107,7],
+"unionspdk__nvme__feat__async__event__configuration.html#a25886e351bc018031dca59f5652b01c8":[12,0,107,3],
 "unionspdk__nvme__feat__async__event__configuration.html#a37abe819da9413bb8500c0fc8b16a05f":[12,0,107,1],
-"unionspdk__nvme__feat__async__event__configuration.html#a572b3c7f8773804b8d0f3fa66ce9a35e":[12,0,107,3],
-"unionspdk__nvme__feat__async__event__configuration.html#a6230ed5b0608170ebde7bccee61cc50f":[12,0,107,4],
+"unionspdk__nvme__feat__async__event__configuration.html#a572b3c7f8773804b8d0f3fa66ce9a35e":[12,0,107,4],
+"unionspdk__nvme__feat__async__event__configuration.html#a6230ed5b0608170ebde7bccee61cc50f":[12,0,107,5],
 "unionspdk__nvme__feat__async__event__configuration.html#a7e369c599d81ab33f93c69b1a7f8c7bd":[12,0,107,2],
-"unionspdk__nvme__feat__async__event__configuration.html#a7e91f0feb90898c53fbf1bcd5e277b93":[12,0,107,5],
-"unionspdk__nvme__feat__async__event__configuration.html#aaf74397f2e67778152f91a1ad81dec2c":[12,0,107,0],
-"unionspdk__nvme__feat__async__event__configuration.html#af9edd911cbd0e44235cf4ac12d8c8c0e":[12,0,107,7],
-"unionspdk__nvme__feat__autonomous__power__state__transition.html":[12,0,108]
+"unionspdk__nvme__feat__async__event__configuration.html#a7e91f0feb90898c53fbf1bcd5e277b93":[12,0,107,6]
 };
