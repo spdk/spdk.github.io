@@ -453,6 +453,7 @@ var searchData=
   ['spdk_5fjsonrpc_5fend_5frequest',['spdk_jsonrpc_end_request',['../jsonrpc_8h.html#a9ae1b767ebb4ad59a9c4739beea1c6f4',1,'jsonrpc.h']]],
   ['spdk_5fjsonrpc_5fend_5fresult',['spdk_jsonrpc_end_result',['../jsonrpc_8h.html#af3d607f5a980bf9eb793ef2b553f679a',1,'jsonrpc.h']]],
   ['spdk_5fjsonrpc_5fget_5fconn',['spdk_jsonrpc_get_conn',['../jsonrpc_8h.html#a7e40f9e08438d2468ac2f1a779801340',1,'jsonrpc.h']]],
+  ['spdk_5fjsonrpc_5fsend_5fbool_5fresponse',['spdk_jsonrpc_send_bool_response',['../jsonrpc_8h.html#a27bade57c1aa87a5e962373c35ef82fc',1,'jsonrpc.h']]],
   ['spdk_5fjsonrpc_5fsend_5ferror_5fresponse',['spdk_jsonrpc_send_error_response',['../jsonrpc_8h.html#a506661cfdfda6f549c69a6f4a988a026',1,'jsonrpc.h']]],
   ['spdk_5fjsonrpc_5fsend_5ferror_5fresponse_5ffmt',['spdk_jsonrpc_send_error_response_fmt',['../jsonrpc_8h.html#ae7d1dc3ef99ed408859d9a5f6802ad65',1,'jsonrpc.h']]],
   ['spdk_5fjsonrpc_5fserver_5flisten',['spdk_jsonrpc_server_listen',['../jsonrpc_8h.html#a88be481b43cb068b54a44595f0f3713f',1,'jsonrpc.h']]],

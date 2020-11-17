@@ -218,6 +218,9 @@ Functions</h2></td></tr>
 <tr class="memitem:af3d607f5a980bf9eb793ef2b553f679a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jsonrpc_8h.html#af3d607f5a980bf9eb793ef2b553f679a">spdk_jsonrpc_end_result</a> (struct spdk_jsonrpc_request *request, struct spdk_json_write_ctx *w)</td></tr>
 <tr class="memdesc:af3d607f5a980bf9eb793ef2b553f679a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Complete and send a JSON-RPC response.  <a href="#af3d607f5a980bf9eb793ef2b553f679a">More...</a><br /></td></tr>
 <tr class="separator:af3d607f5a980bf9eb793ef2b553f679a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27bade57c1aa87a5e962373c35ef82fc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jsonrpc_8h.html#a27bade57c1aa87a5e962373c35ef82fc">spdk_jsonrpc_send_bool_response</a> (struct spdk_jsonrpc_request *request, bool value)</td></tr>
+<tr class="memdesc:a27bade57c1aa87a5e962373c35ef82fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Complete a JSON-RPC response and write bool result.  <a href="#a27bade57c1aa87a5e962373c35ef82fc">More...</a><br /></td></tr>
+<tr class="separator:a27bade57c1aa87a5e962373c35ef82fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a506661cfdfda6f549c69a6f4a988a026"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jsonrpc_8h.html#a506661cfdfda6f549c69a6f4a988a026">spdk_jsonrpc_send_error_response</a> (struct spdk_jsonrpc_request *request, int error_code, const char *msg)</td></tr>
 <tr class="memdesc:a506661cfdfda6f549c69a6f4a988a026"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send an error response to a JSON-RPC request.  <a href="#a506661cfdfda6f549c69a6f4a988a026">More...</a><br /></td></tr>
 <tr class="separator:a506661cfdfda6f549c69a6f4a988a026"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -820,6 +823,43 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>JSON RPC server connection </dd></dl>
+
+</div>
+</div>
+<a id="a27bade57c1aa87a5e962373c35ef82fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a27bade57c1aa87a5e962373c35ef82fc">&#9670;&nbsp;</a></span>spdk_jsonrpc_send_bool_response()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_jsonrpc_send_bool_response </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_jsonrpc_request *&#160;</td>
+          <td class="paramname"><em>request</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Complete a JSON-RPC response and write bool result. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">request</td><td>Request to complete the response for. </td></tr>
+    <tr><td class="paramname">value</td><td>Write bool result value. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
