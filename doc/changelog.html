@@ -148,6 +148,7 @@ $(document).ready(function(){initNavTree('changelog.html','');});
 <div class="textblock"><h1><a class="anchor" id="changelog-v21-01"></a>
 v21.01: (Upcoming Release)</h1>
 <h2>nvmf</h2>
+<p>The function <code>qpair_fini</code> in the transport interface now accepts a cb_fn and cb_arg to call upon completion, and its execution can be asynchronous.</p>
 <p>The SPDK nvmf target now supports async event notification for discovery log changes. This allows the initiator to create persistent connection to discovery controller and be notified of any discovery log changes.</p>
 <h2>json</h2>
 <p>A new API <code>spdk_jsonrpc_send_bool_response</code> was added to allow sending response for writing json bool results into one function.</p>
@@ -215,7 +216,7 @@ v20.10:</h1>
 <p>A new RPC <code>bdev_examine_bdev</code> was added to allow users to examine a bdev explicitly. It can be used only if bdev_auto_examine is set to false by the RPC <code>bdev_set_options</code>.</p>
 <p>New optional parameters <code>no_wr_batching</code> and <code>control_msg_num</code> were added to the RPC 'nvmf_create_transport'.</p>
 <p>New RPCs, <code>iscsi_target_node_set_redirect</code> and <code>iscsi_target_node_request_logout</code>, have been added, and a new optional parameter <code>private</code> has been added to the RPC <code>iscsi_create_portal_group</code> to support iSCSI login redirection feature.</p>
-<p>A new optional parameter <code>ana_reporting</code> was added to the RPC <code>nvmf_create_subsystem</code>, and a new RPC <code>nvmf_subsystem_listner_set_ana_state</code> was added for ANA reporting.</p>
+<p>A new optional parameter <code>ana_reporting</code> was added to the RPC <code>nvmf_create_subsystem</code>, and a new RPC <code>nvmf_subsystem_listener_set_ana_state</code> was added for ANA reporting.</p>
 <p>New RPCs, <code>nvmf_subsystem_get_listeners</code> and <code>nvmf_subsystem_get_qpairs</code>, were added to retrieve configuration of the NVMe-oF subsystem.</p>
 <h2>scsi</h2>
 <p>Two new APIs have been added <code>spdk_scsi_dev_construct_ext</code> and <code>spdk_scsi_dev_add_lun_ext</code> that allow the upper layer(e.g. vhost-scsi) to receive the notification when the scsi bdev has been resized.</p>
