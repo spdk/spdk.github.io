@@ -5,6 +5,11 @@ title:  "SPDK In The News"
 
 # News items
 
+## OpenEBS Mayastor: Accelerating Container Attached Storage with Intel® Optane™ Technology and SPDK
+
+### [Mayastor NVMe-TCP performance](https://openebs.io/blog/mayastor-nvme-of-tcp-performance/)
+> The OpenEBS Mayastor storage engine uses Intel® Optane™ SSD DC P4800X Series and the SPDK NVMe-oF target to deliver high-performance, disaggregated storage to Kubernetes for high-performance workloads. MayaData benchmarked several workloads and demonstrated that the performance overhead of Mayastor was less than 10% when it used SPDK NVMe-oF target to export the Intel® Optane™ SSD over the network vs. locally accessing the SSD. Furthermore, [MayaData provides a solution](https://mayadata.io/assets/pdf/benchmarking-3-million-writes-with-cassandra-on-k8s-and-kubera-propel.pdf) that can deliver over 1 million IOPS to a single container.
+
 ## Intel & Nutanix Joint Innovation Lab
 
 ### [Nutanix Architecture and Performance Optimization](https://www.nutanix.com/viewer?type=pdf&path=/content/dam/nutanix/resources/white-papers/wp-esg-technical-review-nutanix-performance-optimization.pdf)
