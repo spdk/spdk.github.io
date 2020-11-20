@@ -46,7 +46,6 @@ CVE Sub-Team Members:
 * Changpeng Liu, changpeng.liu@intel.com
 * Paul Luse, paul.e.luse@intel.com
 * Shuhei Matsumoto, shuhei.matsumoto.xt@hitachi.com
-* Darek Stojaczyk, dariusz.stojaczyk@intel.com
 * Ben Walker, benjamin.walker@intel.com
 * Anna Wan, qun.wan@intel.com
 * Tomek Zawadzki, tomasz.zawadzki@intel.com

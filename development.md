@@ -454,7 +454,6 @@ The current list of SPDK core maintainers includes:
 * Changpeng Liu
 * Alexey Marchuk
 * Shuhei Matsumoto
-* Darek Stojaczyk
 * Ben Walker
 * Tomek Zawadzki
 
@@ -478,4 +477,5 @@ Other roles and responsibilities of the core maintainers include:
 
 ### Core Maintainers Emeritus
 
+* Darek Stojaczyk (2018-2020)
 * Daniel Verkamp (2015-2018)
