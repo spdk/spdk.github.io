@@ -679,6 +679,7 @@ var searchData=
   ['spdk_5fnvme_5ftrid_5fpopulate_5ftransport',['spdk_nvme_trid_populate_transport',['../nvme_8h.html#ab5ab0982e7e0191fd16f041a268966b5',1,'nvme.h']]],
   ['spdk_5fnvme_5fzns_5fclose_5fzone',['spdk_nvme_zns_close_zone',['../nvme__zns_8h.html#a873628c3e2395e9bc8b45e050527c0cd',1,'nvme_zns.h']]],
   ['spdk_5fnvme_5fzns_5fctrlr_5fget_5fdata',['spdk_nvme_zns_ctrlr_get_data',['../nvme__zns_8h.html#a7e44f2e8ad190636f5b7e18bbfe3d301',1,'nvme_zns.h']]],
+  ['spdk_5fnvme_5fzns_5fctrlr_5fget_5fmax_5fzone_5fappend_5fsize',['spdk_nvme_zns_ctrlr_get_max_zone_append_size',['../nvme__zns_8h.html#a617d5c38aafe14358922c3eeffa6c93b',1,'nvme_zns.h']]],
   ['spdk_5fnvme_5fzns_5ffinish_5fzone',['spdk_nvme_zns_finish_zone',['../nvme__zns_8h.html#a78c8da36da7f1e66ec0aceee68e326d5',1,'nvme_zns.h']]],
   ['spdk_5fnvme_5fzns_5fns_5fget_5fdata',['spdk_nvme_zns_ns_get_data',['../nvme__zns_8h.html#a2060f12903d107efb4d7c26a9c0a83a8',1,'nvme_zns.h']]],
   ['spdk_5fnvme_5fzns_5fns_5fget_5fnum_5fzones',['spdk_nvme_zns_ns_get_num_zones',['../nvme__zns_8h.html#a54494d19ee16b6fbf18f44ea15426de4',1,'nvme_zns.h']]],

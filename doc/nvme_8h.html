@@ -256,12 +256,13 @@ Enumerations</h2></td></tr>
 <tr class="memdesc:ae87a03c28984a2c0499d50ef5e9d0ece"><td class="mdescLeft">&#160;</td><td class="mdescRight">NVMe library transports.  <a href="nvme_8h.html#ae87a03c28984a2c0499d50ef5e9d0ece">More...</a><br /></td></tr>
 <tr class="separator:ae87a03c28984a2c0499d50ef5e9d0ece"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:add21ceb016f09949ac6cef50e0566818"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#add21ceb016f09949ac6cef50e0566818">spdk_nvme_ctrlr_flags</a> { <br />
-&#160;&#160;<a class="el" href="nvme_8h.html#add21ceb016f09949ac6cef50e0566818a06c93626e819195260a55c69dba063c6">SPDK_NVME_CTRLR_SGL_SUPPORTED</a> = 0x1, 
-<a class="el" href="nvme_8h.html#add21ceb016f09949ac6cef50e0566818a7bddfe71a101581b0daa4812fbd93268">SPDK_NVME_CTRLR_SECURITY_SEND_RECV_SUPPORTED</a> = 0x2, 
-<a class="el" href="nvme_8h.html#add21ceb016f09949ac6cef50e0566818ab7e2345d658ff0069c99427a5e0177d3">SPDK_NVME_CTRLR_WRR_SUPPORTED</a> = 0x4, 
-<a class="el" href="nvme_8h.html#add21ceb016f09949ac6cef50e0566818ab2a269826d7e50f062924065df9cf6ec">SPDK_NVME_CTRLR_COMPARE_AND_WRITE_SUPPORTED</a> = 0x8, 
+&#160;&#160;<a class="el" href="nvme_8h.html#add21ceb016f09949ac6cef50e0566818a06c93626e819195260a55c69dba063c6">SPDK_NVME_CTRLR_SGL_SUPPORTED</a> = 1 &lt;&lt; 0, 
+<a class="el" href="nvme_8h.html#add21ceb016f09949ac6cef50e0566818a7bddfe71a101581b0daa4812fbd93268">SPDK_NVME_CTRLR_SECURITY_SEND_RECV_SUPPORTED</a> = 1 &lt;&lt; 1, 
+<a class="el" href="nvme_8h.html#add21ceb016f09949ac6cef50e0566818ab7e2345d658ff0069c99427a5e0177d3">SPDK_NVME_CTRLR_WRR_SUPPORTED</a> = 1 &lt;&lt; 2, 
+<a class="el" href="nvme_8h.html#add21ceb016f09949ac6cef50e0566818ab2a269826d7e50f062924065df9cf6ec">SPDK_NVME_CTRLR_COMPARE_AND_WRITE_SUPPORTED</a> = 1 &lt;&lt; 3, 
 <br />
-&#160;&#160;<a class="el" href="nvme_8h.html#add21ceb016f09949ac6cef50e0566818afb90e96b743634d16ce84716e3250e0d">SPDK_NVME_CTRLR_SGL_REQUIRES_DWORD_ALIGNMENT</a> = 0x10
+&#160;&#160;<a class="el" href="nvme_8h.html#add21ceb016f09949ac6cef50e0566818afb90e96b743634d16ce84716e3250e0d">SPDK_NVME_CTRLR_SGL_REQUIRES_DWORD_ALIGNMENT</a> = 1 &lt;&lt; 4, 
+<a class="el" href="nvme_8h.html#add21ceb016f09949ac6cef50e0566818a47e0066f0e7c2c8f3d0fba8ce612dc73">SPDK_NVME_CTRLR_ZONE_APPEND_SUPPORTED</a> = 1 &lt;&lt; 5
 <br />
  }</td></tr>
 <tr class="separator:add21ceb016f09949ac6cef50e0566818"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -964,6 +965,8 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_map_prps</b>
 <tr><td class="fieldname"><a id="add21ceb016f09949ac6cef50e0566818ab2a269826d7e50f062924065df9cf6ec"></a>SPDK_NVME_CTRLR_COMPARE_AND_WRITE_SUPPORTED&#160;</td><td class="fielddoc"><p>Compare and write fused operations supported. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="add21ceb016f09949ac6cef50e0566818afb90e96b743634d16ce84716e3250e0d"></a>SPDK_NVME_CTRLR_SGL_REQUIRES_DWORD_ALIGNMENT&#160;</td><td class="fielddoc"><p>Dword alignment is required for SGL. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="add21ceb016f09949ac6cef50e0566818a47e0066f0e7c2c8f3d0fba8ce612dc73"></a>SPDK_NVME_CTRLR_ZONE_APPEND_SUPPORTED&#160;</td><td class="fielddoc"><p>Zone Append is supported (within Zoned Namespaces) </p>
 </td></tr>
 </table>
 
@@ -2867,6 +2870,12 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_map_prps</b>
 </div><div class="memdoc">
 
 <p>Get the maximum data transfer size of a given NVMe controller. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ctrlr</td><td>Opaque handle to NVMe controller.</td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="section return"><dt>Returns</dt><dd>Maximum data transfer size of the NVMe controller in bytes.</dd></dl>
 <p>The I/O command helper functions, such as <a class="el" href="nvme_8h.html#a084c6ecb53bd810fbb5051100b79bec5" title="Submits a read I/O to the specified NVMe namespace.">spdk_nvme_ns_cmd_read()</a>, will split large I/Os automatically; however, it is up to the user to obey this limit for commands submitted with the raw command functions, such as <a class="el" href="nvme_8h.html#a1e3def668122e76abbfb74305f118291" title="Send the given NVM I/O command to the NVMe controller.">spdk_nvme_ctrlr_cmd_io_raw()</a>. </p>
 

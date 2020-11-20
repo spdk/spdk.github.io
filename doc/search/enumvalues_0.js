@@ -26,6 +26,7 @@ var searchData=
   ['spdk_5fnvme_5fctrlr_5fsgl_5frequires_5fdword_5falignment',['SPDK_NVME_CTRLR_SGL_REQUIRES_DWORD_ALIGNMENT',['../nvme_8h.html#add21ceb016f09949ac6cef50e0566818afb90e96b743634d16ce84716e3250e0d',1,'nvme.h']]],
   ['spdk_5fnvme_5fctrlr_5fsgl_5fsupported',['SPDK_NVME_CTRLR_SGL_SUPPORTED',['../nvme_8h.html#add21ceb016f09949ac6cef50e0566818a06c93626e819195260a55c69dba063c6',1,'nvme.h']]],
   ['spdk_5fnvme_5fctrlr_5fwrr_5fsupported',['SPDK_NVME_CTRLR_WRR_SUPPORTED',['../nvme_8h.html#add21ceb016f09949ac6cef50e0566818ab7e2345d658ff0069c99427a5e0177d3',1,'nvme.h']]],
+  ['spdk_5fnvme_5fctrlr_5fzone_5fappend_5fsupported',['SPDK_NVME_CTRLR_ZONE_APPEND_SUPPORTED',['../nvme_8h.html#add21ceb016f09949ac6cef50e0566818a47e0066f0e7c2c8f3d0fba8ce612dc73',1,'nvme.h']]],
   ['spdk_5fnvme_5fdata_5fbidirectional',['SPDK_NVME_DATA_BIDIRECTIONAL',['../nvme__spec_8h.html#adbe38e042bb939183ed8fd5c1685b2fcaa550f0ebf32623c8161ca7d5d8cbb0c2',1,'nvme_spec.h']]],
   ['spdk_5fnvme_5fdata_5fcontroller_5fto_5fhost',['SPDK_NVME_DATA_CONTROLLER_TO_HOST',['../nvme__spec_8h.html#adbe38e042bb939183ed8fd5c1685b2fca0de3a8ad0600034555094591e706fb50',1,'nvme_spec.h']]],
   ['spdk_5fnvme_5fdata_5fhost_5fto_5fcontroller',['SPDK_NVME_DATA_HOST_TO_CONTROLLER',['../nvme__spec_8h.html#adbe38e042bb939183ed8fd5c1685b2fca7f08188b3c5f57f2f694f6ef13ad0110',1,'nvme_spec.h']]],

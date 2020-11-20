@@ -1,5 +1,7 @@
 var NAVTREEINDEX26 =
 {
+"vmd.html#vmd_app_frame":[7,4,5],
+"vmd.html#vmd_config":[7,4,4],
 "vmd.html#vmd_interface":[7,4,2],
 "vmd.html#vmd_intro":[7,4,1],
 "vmd.html#vmd_key_functions":[7,4,3],
