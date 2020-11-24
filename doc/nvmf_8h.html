@@ -193,6 +193,9 @@ typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>nvmf_qpair_
 <tr class="memitem:aec7dc3c1e2f740c1cbffa028ad5c5bff"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#aec7dc3c1e2f740c1cbffa028ad5c5bff">spdk_nvmf_subsystem_state_change_done</a>) (struct spdk_nvmf_subsystem *subsystem, void *cb_arg, int status)</td></tr>
 <tr class="memdesc:aec7dc3c1e2f740c1cbffa028ad5c5bff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to be called once the subsystem has changed state.  <a href="#aec7dc3c1e2f740c1cbffa028ad5c5bff">More...</a><br /></td></tr>
 <tr class="separator:aec7dc3c1e2f740c1cbffa028ad5c5bff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc4f9aa851bdf5f3a5e2f8e384ba74c2"><td class="memItemLeft" align="right" valign="top"><a id="afc4f9aa851bdf5f3a5e2f8e384ba74c2"></a>
+typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvmf_transport_destroy_done_cb</b>) (void *cb_arg)</td></tr>
+<tr class="separator:afc4f9aa851bdf5f3a5e2f8e384ba74c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a53086e85e4a7103ab2b714483b4f2aec"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#a53086e85e4a7103ab2b714483b4f2aec">spdk_nvmf_tgt_add_transport_done_fn</a>) (void *cb_arg, int status)</td></tr>
 <tr class="memdesc:a53086e85e4a7103ab2b714483b4f2aec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to be called once transport add is complete.  <a href="#a53086e85e4a7103ab2b714483b4f2aec">More...</a><br /></td></tr>
 <tr class="separator:a53086e85e4a7103ab2b714483b4f2aec"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -394,9 +397,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a141be89e55c37dc017ddeb2494f508c7"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structspdk__nvmf__transport.html">spdk_nvmf_transport</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#a141be89e55c37dc017ddeb2494f508c7">spdk_nvmf_transport_create</a> (const char *transport_name, struct <a class="el" href="structspdk__nvmf__transport__opts.html">spdk_nvmf_transport_opts</a> *opts)</td></tr>
 <tr class="memdesc:a141be89e55c37dc017ddeb2494f508c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a protocol transport.  <a href="#a141be89e55c37dc017ddeb2494f508c7">More...</a><br /></td></tr>
 <tr class="separator:a141be89e55c37dc017ddeb2494f508c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab3d5e7bc8701baac2be7858b34fa7baf"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#ab3d5e7bc8701baac2be7858b34fa7baf">spdk_nvmf_transport_destroy</a> (struct <a class="el" href="structspdk__nvmf__transport.html">spdk_nvmf_transport</a> *transport)</td></tr>
-<tr class="memdesc:ab3d5e7bc8701baac2be7858b34fa7baf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy a protocol transport.  <a href="#ab3d5e7bc8701baac2be7858b34fa7baf">More...</a><br /></td></tr>
-<tr class="separator:ab3d5e7bc8701baac2be7858b34fa7baf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af35ee91438fbca24adac655694c64a27"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#af35ee91438fbca24adac655694c64a27">spdk_nvmf_transport_destroy</a> (struct <a class="el" href="structspdk__nvmf__transport.html">spdk_nvmf_transport</a> *transport, spdk_nvmf_transport_destroy_done_cb cb_fn, void *cb_arg)</td></tr>
+<tr class="memdesc:af35ee91438fbca24adac655694c64a27"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy a protocol transport.  <a href="#af35ee91438fbca24adac655694c64a27">More...</a><br /></td></tr>
+<tr class="separator:af35ee91438fbca24adac655694c64a27"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad0eb8f58d51231f6fcaa1179e12128a6"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structspdk__nvmf__transport.html">spdk_nvmf_transport</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#ad0eb8f58d51231f6fcaa1179e12128a6">spdk_nvmf_tgt_get_transport</a> (struct spdk_nvmf_tgt *tgt, const char *transport_name)</td></tr>
 <tr class="memdesc:ad0eb8f58d51231f6fcaa1179e12128a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get an existing transport from the target.  <a href="#ad0eb8f58d51231f6fcaa1179e12128a6">More...</a><br /></td></tr>
 <tr class="separator:ad0eb8f58d51231f6fcaa1179e12128a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -3023,8 +3026,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ab3d5e7bc8701baac2be7858b34fa7baf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab3d5e7bc8701baac2be7858b34fa7baf">&#9670;&nbsp;</a></span>spdk_nvmf_transport_destroy()</h2>
+<a id="af35ee91438fbca24adac655694c64a27"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af35ee91438fbca24adac655694c64a27">&#9670;&nbsp;</a></span>spdk_nvmf_transport_destroy()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3033,8 +3036,24 @@ Functions</h2></td></tr>
           <td class="memname">int spdk_nvmf_transport_destroy </td>
           <td>(</td>
           <td class="paramtype">struct <a class="el" href="structspdk__nvmf__transport.html">spdk_nvmf_transport</a> *&#160;</td>
-          <td class="paramname"><em>transport</em></td><td>)</td>
+          <td class="paramname"><em>transport</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">spdk_nvmf_transport_destroy_done_cb&#160;</td>
+          <td class="paramname"><em>cb_fn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>cb_arg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -3042,7 +3061,9 @@ Functions</h2></td></tr>
 <p>Destroy a protocol transport. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">transport</td><td>The transport to destory</td></tr>
+    <tr><td class="paramname">transport</td><td>The transport to destory </td></tr>
+    <tr><td class="paramname">cb_fn</td><td>A callback that will be called once the transport is destroyed </td></tr>
+    <tr><td class="paramname">cb_arg</td><td>A context argument passed to cb_fn.</td></tr>
   </table>
   </dd>
 </dl>

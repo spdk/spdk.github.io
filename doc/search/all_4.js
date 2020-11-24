@@ -4,7 +4,7 @@ var searchData=
   ['data_5ftransferred',['data_transferred',['../structspdk__scsi__task.html#aed0de3999a81a9aeb079f0d9e4c4f098',1,'spdk_scsi_task']]],
   ['dealloc_5for_5funwritten_5ferror',['dealloc_or_unwritten_error',['../structspdk__nvme__ns__data.html#a9db6d23a3a10ec735fb97ae62fba8432',1,'spdk_nvme_ns_data']]],
   ['desc',['desc',['../structspdk__bdev__io_1_1____bdev__io__internal__fields.html#a9ec31d2c37d402f888525346bb2ad907',1,'spdk_bdev_io::__bdev_io_internal_fields']]],
-  ['destroy',['destroy',['../structspdk__nvmf__transport__ops.html#acf56627c91b208e3531b0d2ecbde3405',1,'spdk_nvmf_transport_ops']]],
+  ['destroy',['destroy',['../structspdk__nvmf__transport__ops.html#add528f11c2846f57ced92a3da9457bd5',1,'spdk_nvmf_transport_ops']]],
   ['destruct',['destruct',['../structspdk__bdev__fn__table.html#a8a76c50a2b20205ec9fffe4afb9e3a15',1,'spdk_bdev_fn_table']]],
   ['device_5fid',['device_id',['../structspdk__pci__id.html#a39d3b6cf5257c8a8b344bf5e8687eadc',1,'spdk_pci_id']]],
   ['device_5fself_5ftest',['device_self_test',['../structspdk__nvme__ctrlr__data.html#a9ebd530b8658005e835c70dc3bfdfae7',1,'spdk_nvme_ctrlr_data']]],
