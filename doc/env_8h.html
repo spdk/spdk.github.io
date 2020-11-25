@@ -226,9 +226,9 @@ Typedefs</h2></td></tr>
 <tr class="memitem:a0083ace78471c3d3d247e21e4968d526"><td class="memItemLeft" align="right" valign="top"><a id="a0083ace78471c3d3d247e21e4968d526"></a>
 typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><b>thread_start_fn</b>) (void *)</td></tr>
 <tr class="separator:a0083ace78471c3d3d247e21e4968d526"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abdbcd903dfa26b4e625bdbef66b6d6a8"><td class="memItemLeft" align="right" valign="top"><a id="abdbcd903dfa26b4e625bdbef66b6d6a8"></a>
-typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_pci_enum_cb</b>) (void *enum_ctx, struct <a class="el" href="structspdk__pci__device.html">spdk_pci_device</a> *pci_dev)</td></tr>
-<tr class="separator:abdbcd903dfa26b4e625bdbef66b6d6a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0083aec1c2ac9ae023b744a80160af79"><td class="memItemLeft" align="right" valign="top">typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_8h.html#a0083aec1c2ac9ae023b744a80160af79">spdk_pci_enum_cb</a>) (void *enum_ctx, struct <a class="el" href="structspdk__pci__device.html">spdk_pci_device</a> *dev)</td></tr>
+<tr class="memdesc:a0083aec1c2ac9ae023b744a80160af79"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback for device attach handling.  <a href="#a0083aec1c2ac9ae023b744a80160af79">More...</a><br /></td></tr>
+<tr class="separator:a0083aec1c2ac9ae023b744a80160af79"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac018be4449e60d4e5992e1e4be9bbef3"><td class="memItemLeft" align="right" valign="top"><a id="ac018be4449e60d4e5992e1e4be9bbef3"></a>
 typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_mem_map_notify_cb</b>) (void *cb_ctx, struct spdk_mem_map *map, enum spdk_mem_map_notify_action action, void *vaddr, size_t size)</td></tr>
 <tr class="separator:ac018be4449e60d4e5992e1e4be9bbef3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -421,7 +421,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_pci_driver_regis
 <tr class="memitem:aa4a5c3c4f51c1eaac132f6093fe219f4"><td class="memItemLeft" align="right" valign="top">struct spdk_pci_driver *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_8h.html#aa4a5c3c4f51c1eaac132f6093fe219f4">spdk_pci_nvme_get_driver</a> (void)</td></tr>
 <tr class="memdesc:aa4a5c3c4f51c1eaac132f6093fe219f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the NVMe PCI driver object.  <a href="#aa4a5c3c4f51c1eaac132f6093fe219f4">More...</a><br /></td></tr>
 <tr class="separator:aa4a5c3c4f51c1eaac132f6093fe219f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8e2430eaebf3d756c8608aea6957b614"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_8h.html#a8e2430eaebf3d756c8608aea6957b614">spdk_pci_enumerate</a> (struct spdk_pci_driver *driver, spdk_pci_enum_cb enum_cb, void *enum_ctx)</td></tr>
+<tr class="memitem:a8e2430eaebf3d756c8608aea6957b614"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_8h.html#a8e2430eaebf3d756c8608aea6957b614">spdk_pci_enumerate</a> (struct spdk_pci_driver *driver, <a class="el" href="env_8h.html#a0083aec1c2ac9ae023b744a80160af79">spdk_pci_enum_cb</a> enum_cb, void *enum_ctx)</td></tr>
 <tr class="memdesc:a8e2430eaebf3d756c8608aea6957b614"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enumerate all PCI devices supported by the provided driver and try to attach those that weren't attached yet.  <a href="#a8e2430eaebf3d756c8608aea6957b614">More...</a><br /></td></tr>
 <tr class="separator:a8e2430eaebf3d756c8608aea6957b614"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac98526545d85af08018dcbaebca8c49c"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structspdk__pci__device.html">spdk_pci_device</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_8h.html#ac98526545d85af08018dcbaebca8c49c">spdk_pci_get_first_device</a> (void)</td></tr>
@@ -481,7 +481,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_pci_driver_regis
 <tr class="memitem:aa98502fc8d794fadaae348496d421082"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_8h.html#aa98502fc8d794fadaae348496d421082">spdk_pci_device_detach</a> (struct <a class="el" href="structspdk__pci__device.html">spdk_pci_device</a> *device)</td></tr>
 <tr class="memdesc:aa98502fc8d794fadaae348496d421082"><td class="mdescLeft">&#160;</td><td class="mdescRight">Release all resources associated with the given device and detach it.  <a href="#aa98502fc8d794fadaae348496d421082">More...</a><br /></td></tr>
 <tr class="separator:aa98502fc8d794fadaae348496d421082"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac6aa2606617cc3913fd5d6b7d218eba4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_8h.html#ac6aa2606617cc3913fd5d6b7d218eba4">spdk_pci_device_attach</a> (struct spdk_pci_driver *driver, spdk_pci_enum_cb enum_cb, void *enum_ctx, struct <a class="el" href="structspdk__pci__addr.html">spdk_pci_addr</a> *pci_address)</td></tr>
+<tr class="memitem:ac6aa2606617cc3913fd5d6b7d218eba4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_8h.html#ac6aa2606617cc3913fd5d6b7d218eba4">spdk_pci_device_attach</a> (struct spdk_pci_driver *driver, <a class="el" href="env_8h.html#a0083aec1c2ac9ae023b744a80160af79">spdk_pci_enum_cb</a> enum_cb, void *enum_ctx, struct <a class="el" href="structspdk__pci__addr.html">spdk_pci_addr</a> *pci_address)</td></tr>
 <tr class="memdesc:ac6aa2606617cc3913fd5d6b7d218eba4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Attach a PCI device.  <a href="#ac6aa2606617cc3913fd5d6b7d218eba4">More...</a><br /></td></tr>
 <tr class="separator:ac6aa2606617cc3913fd5d6b7d218eba4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1767ff2d8e3bc7788de264d3077905b7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_8h.html#a1767ff2d8e3bc7788de264d3077905b7">spdk_pci_device_cfg_read</a> (struct <a class="el" href="structspdk__pci__device.html">spdk_pci_device</a> *dev, void *buf, uint32_t len, uint32_t offset)</td></tr>
@@ -681,6 +681,30 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_
 
 <p>An object callback function for memory pool. </p>
 <p>Used by <a class="el" href="env_8h.html#a8981c2ba451d7214e157708a718db6c9" title="Create a thread-safe memory pool with user provided initialization function and argument.">spdk_mempool_create_ctor()</a>. </p>
+
+</div>
+</div>
+<a id="a0083aec1c2ac9ae023b744a80160af79"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0083aec1c2ac9ae023b744a80160af79">&#9670;&nbsp;</a></span>spdk_pci_enum_cb</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef int(* spdk_pci_enum_cb) (void *enum_ctx, struct <a class="el" href="structspdk__pci__device.html">spdk_pci_device</a> *dev)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Callback for device attach handling. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">enum_ctx</td><td>Opaque value. </td></tr>
+    <tr><td class="paramname">dev</td><td>PCI device.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>-1 if an error occurred, 0 if device attached successfully, 1 if device not attached. </dd></dl>
 
 </div>
 </div>
@@ -2541,7 +2565,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">spdk_pci_enum_cb&#160;</td>
+          <td class="paramtype"><a class="el" href="env_8h.html#a0083aec1c2ac9ae023b744a80160af79">spdk_pci_enum_cb</a>&#160;</td>
           <td class="paramname"><em>enum_cb</em>, </td>
         </tr>
         <tr>
@@ -2569,7 +2593,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">driver</td><td>Driver for a specific device type. The device will only be attached if it's supported by this driver. </td></tr>
-    <tr><td class="paramname">enum_cb</td><td>Callback to be called for the PCI device once it's found. The return code can be as follows: -1, 1 - an error occurred, fail the attach request entirely 0 - device attached successfully </td></tr>
+    <tr><td class="paramname">enum_cb</td><td>Callback to be called for the PCI device once it's found. </td></tr>
     <tr><td class="paramname">enum_ctx</td><td>Additional context passed to the callback function. </td></tr>
     <tr><td class="paramname">pci_address</td><td>Address of the device to attach.</td></tr>
   </table>
@@ -3553,7 +3577,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">spdk_pci_enum_cb&#160;</td>
+          <td class="paramtype"><a class="el" href="env_8h.html#a0083aec1c2ac9ae023b744a80160af79">spdk_pci_enum_cb</a>&#160;</td>
           <td class="paramname"><em>enum_cb</em>, </td>
         </tr>
         <tr>
@@ -3576,12 +3600,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">driver</td><td>Driver for a specific device type. </td></tr>
-    <tr><td class="paramname">enum_cb</td><td>Callback to be called for each non-attached PCI device. The return code can be as follows: -1 - device was not attached, the enumeration is stopped 0 - device attached successfully, enumeration continues 1 - device was not attached, enumeration continues </td></tr>
+    <tr><td class="paramname">enum_cb</td><td>Callback to be called for each non-attached PCI device. </td></tr>
     <tr><td class="paramname">enum_ctx</td><td>Additional context passed to the callback function.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>-1 if an internal error occured or the provided callback returned -1, 0 otherwise </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>-1 if an internal error occurred or the provided callback returned -1, 0 otherwise </dd></dl>
 
 </div>
 </div>
