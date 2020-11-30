@@ -22,6 +22,8 @@ lang: cn
 
 * [SPDK应用编程框架](https://mp.weixin.qq.com/s?__biz=MzI3NDA4ODY4MA==&mid=2653334735&idx=1&sn=b81c263cffc74cf42338d2edda371d2c&chksm=f0cb5b48c7bcd25e83634357c9dc667f02499e348382e011bac20fbc13f442ac58a1e1799704&token=431082989&lang=zh_CN#rd)
 
+* [Iostat.py: 输出SPDK Bdev IO子系统性能指标](https://mp.weixin.qq.com/s?__biz=MzI3NDA4ODY4MA==&mid=2653337235&idx=1&sn=18a86c9413d15f64038ad1ceae97161a&chksm=f0cb4114c7bcc8022e30570724c8125ae138918305210efc743cb32c31991d323ee051f37d1e&scene=0&xtrack=1&exportkey=A%2BOXWr460PmNQKEuT3dAhvM%3D&pass_ticket=w%2BZq2BsgB7kRtHy74eCg%2Bg3OzQ1%2BagIyRNE8HTReHBBzgY%2BPoBJ2KHsJWJVus9X2&wx_header=0#rd)
+
 ******
 
 **SPDK NVMe-oF target/initiator**
@@ -45,6 +47,12 @@ lang: cn
 * [在虚拟机上使用SoftRoCE部署SPDK NVMe-oF](https://mp.weixin.qq.com/s?__biz=MzI3NDA4ODY4MA==&mid=2653334915&idx=1&sn=196ca1105b9da3b3358caa1d09f0f41f&chksm=f0cb5a04c7bcd31249703bc6ca703133cfb6d58283e4d0c3b00bf4ed4793a5f9f1cae57fda54&token=431082989&lang=zh_CN#rd)
 
 * [网络编程的未来，io_uring?](https://mp.weixin.qq.com/s?__biz=MzI3NDA4ODY4MA==&mid=2653337201&idx=1&sn=4a4c1473fafe002255faac5a9096d523&chksm=f0cb41f6c7bcc8e04aaee729055b4221fcac8ab2136e2c8a22d4b40469e7e1c2414eb5f47041&token=468503366&lang=zh_CN#rd)
+
+* [使用SPDK lib搭建自己的NVMe-oF Target应用](https://mp.weixin.qq.com/s?__biz=MzI3NDA4ODY4MA==&mid=2653337267&idx=1&sn=6769c98e5a2a54222f876cb3e1a90b16&chksm=f0cb4134c7bcc822d52d949f8854f8a6f222cfeb415ea900af95ace800ee3d5adb463efdc49c&scene=0&xtrack=1&exportkey=AxWC0d%2FlABMRAA7rB8HbVlU%3D&pass_ticket=w%2BZq2BsgB7kRtHy74eCg%2Bg3OzQ1%2BagIyRNE8HTReHBBzgY%2BPoBJ2KHsJWJVus9X2&wx_header=0#rd)
+
+* [在SPDK中使能E810网卡ADQ特性](https://mp.weixin.qq.com/s?__biz=MzI3NDA4ODY4MA==&mid=2653337354&idx=1&sn=2bccc7b8681f5bde5a9e82b58d9f7e35&chksm=f0cb408dc7bcc99b37d4d77cd572de5c3ff092a4c0cb80766e3841050bec620c298d710842c0&scene=0&xtrack=1&exportkey=Aw4ff5FCzsijjG81i0a45J4%3D&pass_ticket=w%2BZq2BsgB7kRtHy74eCg%2Bg3OzQ1%2BagIyRNE8HTReHBBzgY%2BPoBJ2KHsJWJVus9X2&wx_header=0#rd)
+
+* [CVL网卡的ADQ特性在SPDK的NVMF测试中的应用实例 - 上篇](https://mp.weixin.qq.com/s?__biz=MzI3NDA4ODY4MA==&mid=2653337411&idx=1&sn=2c20d7e6be1e491e88453b35d664948c&chksm=f0cb40c4c7bcc9d2ebbe09f7f8762bc9194dae52a142d906e5d2382300d271ccca7b34dbc1d6&scene=0&xtrack=1&exportkey=A%2FEW6XpPuT0yaN4hynZT2fo%3D&pass_ticket=w%2BZq2BsgB7kRtHy74eCg%2Bg3OzQ1%2BagIyRNE8HTReHBBzgY%2BPoBJ2KHsJWJVus9X2&wx_header=0#rd)
 
 ******
 
@@ -95,6 +103,8 @@ lang: cn
 * [火爆业界的明星，下一代存储技术的先行: NVDIMM 你了解吗?](https://mp.weixin.qq.com/s?__biz=MzI3NDA4ODY4MA==&mid=2653335049&idx=1&sn=e3523d28b4e3d79c5584c20d04432e24&pass_ticket=6pPQwgtuLLkHv4fBlZcTWzepH4S%2FWbUWUxESD8lfM6BTwdPB7U%2FMlij2UeHFvzDB)
 
 * [Intel VMD技术和SPDK VMD驱动模块介绍及使用](https://mp.weixin.qq.com/s?__biz=MzI3NDA4ODY4MA==&mid=2653336956&idx=1&sn=3fd65203018991b1c2d06f57cad1bf8d&chksm=f0cb42fbc7bccbedd59ab5b60918fcde64c2e306c89926956a9b525c80ad977ae1fe9b078a7f&token=468503366&lang=zh_CN#rd)
+
+* [SPDK与io_uring新异步IO机制](https://mp.weixin.qq.com/s?__biz=MzI3NDA4ODY4MA==&mid=2653337255&idx=1&sn=ac3c6a2e5da26c740897cdd5b5853613&chksm=f0cb4120c7bcc836236a5e5ed5c527e77402f530214a271bde779b1e13bc962b4b55959f84ea&scene=0&xtrack=1&exportkey=A6M3uH7ELEkd9xZgxwA%2FqrA%3D&pass_ticket=w%2BZq2BsgB7kRtHy74eCg%2Bg3OzQ1%2BagIyRNE8HTReHBBzgY%2BPoBJ2KHsJWJVus9X2&wx_header=0#rd)
 
 ******
 
