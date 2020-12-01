@@ -73,6 +73,8 @@ var searchData=
   ['spdk_5fbdev_5fget_5fmax_5fopen_5fzones',['spdk_bdev_get_max_open_zones',['../bdev__zone_8h.html#a7739e6335f06de1565e50d3afc247aa0',1,'bdev_zone.h']]],
   ['spdk_5fbdev_5fget_5fmd_5fsize',['spdk_bdev_get_md_size',['../bdev_8h.html#abc3537d0315100b24da6acc95929e849',1,'bdev.h']]],
   ['spdk_5fbdev_5fget_5fmedia_5fevents',['spdk_bdev_get_media_events',['../bdev_8h.html#af359a282820d73a253ffbbe127a30b96',1,'bdev.h']]],
+  ['spdk_5fbdev_5fget_5fmodule_5fctx',['spdk_bdev_get_module_ctx',['../bdev_8h.html#a833f281dc52c09e6491ae9415cdb9980',1,'bdev.h']]],
+  ['spdk_5fbdev_5fget_5fmodule_5fname',['spdk_bdev_get_module_name',['../bdev_8h.html#acb85b88dd223598d61c464b026403174',1,'bdev.h']]],
   ['spdk_5fbdev_5fget_5fname',['spdk_bdev_get_name',['../bdev_8h.html#ad97a853dcb945bf004817424b7aa28af',1,'bdev.h']]],
   ['spdk_5fbdev_5fget_5fnum_5fblocks',['spdk_bdev_get_num_blocks',['../bdev_8h.html#a86568eca8f0b4d0dc9bc59c5138fc7a5',1,'bdev.h']]],
   ['spdk_5fbdev_5fget_5foptimal_5fio_5fboundary',['spdk_bdev_get_optimal_io_boundary',['../bdev_8h.html#aa79625889e23318204d235da36a4fa02',1,'bdev.h']]],

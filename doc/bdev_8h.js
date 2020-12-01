@@ -82,6 +82,8 @@ var bdev_8h =
     [ "spdk_bdev_get_io_time", "bdev_8h.html#a8a082eb89d57860b2e57ebf7f5b3caa2", null ],
     [ "spdk_bdev_get_md_size", "bdev_8h.html#abc3537d0315100b24da6acc95929e849", null ],
     [ "spdk_bdev_get_media_events", "bdev_8h.html#af359a282820d73a253ffbbe127a30b96", null ],
+    [ "spdk_bdev_get_module_ctx", "bdev_8h.html#a833f281dc52c09e6491ae9415cdb9980", null ],
+    [ "spdk_bdev_get_module_name", "bdev_8h.html#acb85b88dd223598d61c464b026403174", null ],
     [ "spdk_bdev_get_name", "bdev_8h.html#ad97a853dcb945bf004817424b7aa28af", null ],
     [ "spdk_bdev_get_num_blocks", "bdev_8h.html#a86568eca8f0b4d0dc9bc59c5138fc7a5", null ],
     [ "spdk_bdev_get_optimal_io_boundary", "bdev_8h.html#aa79625889e23318204d235da36a4fa02", null ],

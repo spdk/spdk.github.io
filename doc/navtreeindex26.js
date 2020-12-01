@@ -1,5 +1,8 @@
 var NAVTREEINDEX26 =
 {
+"virtio.html":[7,3],
+"virtio.html#virtio_2mb":[7,3,1],
+"virtio.html#virtio_intro":[7,3,0],
 "vmd.html":[7,4],
 "vmd.html#vmd_app":[7,4,6],
 "vmd.html#vmd_app_frame":[7,4,5],

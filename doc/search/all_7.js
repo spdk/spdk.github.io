@@ -9,6 +9,7 @@ var searchData=
   ['get_5fibv_5fpd',['get_ibv_pd',['../structspdk__nvme__rdma__hooks.html#ab740946922279f0ff1dbe567885f5bca',1,'spdk_nvme_rdma_hooks']]],
   ['get_5fio_5fchannel',['get_io_channel',['../structspdk__bdev__fn__table.html#adf37e8944ceb5bfdf5f93f1525a7da98',1,'spdk_bdev_fn_table']]],
   ['get_5flba_5fstatus',['get_lba_status',['../structspdk__nvme__ctrlr__data.html#a9ab0cc483799ed8fa05b03093b2e4cab',1,'spdk_nvme_ctrlr_data']]],
+  ['get_5fmodule_5fctx',['get_module_ctx',['../structspdk__bdev__fn__table.html#a541d4861e6d57c85c6ab659fbde4a417',1,'spdk_bdev_fn_table']]],
   ['get_5foptimal_5fpoll_5fgroup',['get_optimal_poll_group',['../structspdk__nvmf__transport__ops.html#a0a4b65e9d7fe480b70bc37ffe88e89fc',1,'spdk_nvmf_transport_ops']]],
   ['get_5frkey',['get_rkey',['../structspdk__nvme__rdma__hooks.html#ab20f458fc7c024017bf09979a85037d8',1,'spdk_nvme_rdma_hooks']]],
   ['get_5fspin_5ftime',['get_spin_time',['../structspdk__bdev__fn__table.html#aafc336b4a42290b7e944fa0e73558a62',1,'spdk_bdev_fn_table']]],

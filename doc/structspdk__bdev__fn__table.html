@@ -184,6 +184,9 @@ int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="str
 <tr class="memitem:aafc336b4a42290b7e944fa0e73558a62"><td class="memItemLeft" align="right" valign="top">uint64_t(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev__fn__table.html#aafc336b4a42290b7e944fa0e73558a62">get_spin_time</a> )(struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *ch)</td></tr>
 <tr class="memdesc:aafc336b4a42290b7e944fa0e73558a62"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get spin-time per I/O channel in microseconds.  <a href="#aafc336b4a42290b7e944fa0e73558a62">More...</a><br /></td></tr>
 <tr class="separator:aafc336b4a42290b7e944fa0e73558a62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a541d4861e6d57c85c6ab659fbde4a417"><td class="memItemLeft" align="right" valign="top">void *(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev__fn__table.html#a541d4861e6d57c85c6ab659fbde4a417">get_module_ctx</a> )(void *ctx)</td></tr>
+<tr class="memdesc:a541d4861e6d57c85c6ab659fbde4a417"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get bdev module context.  <a href="#a541d4861e6d57c85c6ab659fbde4a417">More...</a><br /></td></tr>
+<tr class="separator:a541d4861e6d57c85c6ab659fbde4a417"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Function table for a block device backend. </p>
@@ -220,6 +223,22 @@ int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="str
 </div><div class="memdoc">
 
 <p>Get an I/O channel for the specific bdev for the calling thread. </p>
+
+</div>
+</div>
+<a id="a541d4861e6d57c85c6ab659fbde4a417"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a541d4861e6d57c85c6ab659fbde4a417">&#9670;&nbsp;</a></span>get_module_ctx</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void*(* spdk_bdev_fn_table::get_module_ctx) (void *ctx)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get bdev module context. </p>
 
 </div>
 </div>

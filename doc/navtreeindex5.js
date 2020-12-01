@@ -1,5 +1,7 @@
 var NAVTREEINDEX5 =
 {
+"jsonrpc.html#rpc_bdev_compress_set_pmd":[3,8,2,10],
+"jsonrpc.html#rpc_bdev_delay_create":[3,8,2,31],
 "jsonrpc.html#rpc_bdev_delay_delete":[3,8,2,32],
 "jsonrpc.html#rpc_bdev_delay_update_latency":[3,8,2,33],
 "jsonrpc.html#rpc_bdev_enable_histogram":[3,8,2,4],
@@ -247,7 +249,5 @@ var NAVTREEINDEX5 =
 "log_8h.html#af600090b2a4aa95b4e9e4dae27bf6c7e":[13,0,33,19],
 "logical_volumes.html":[5,1],
 "logical_volumes.html#lvol":[5,1,0,1],
-"logical_volumes.html#lvol_bdev":[5,1,0,2],
-"logical_volumes.html#lvol_decoupling":[5,1,0,6],
-"logical_volumes.html#lvol_inflation":[5,1,0,5]
+"logical_volumes.html#lvol_bdev":[5,1,0,2]
 };

@@ -1,5 +1,8 @@
 var NAVTREEINDEX24 =
 {
+"trace_8h.html#a00bc7e8ba17d526c39dd5582b1e66395":[13,0,56,27],
+"trace_8h.html#a01e4bb4f3e8d4f7e9fadb16bce93bf15":[13,0,56,36],
+"trace_8h.html#a2057ffa0d5eaf0680a8d970646c157af":[13,0,56,37],
 "trace_8h.html#a21ab2742df91d14f1bdd761f222180f2":[13,0,56,23],
 "trace_8h.html#a22d0ab509e9d6beda1e9ae84d793ba94":[13,0,56,13],
 "trace_8h.html#a26e4becda093930b12939d3860fae701":[13,0,56,10],
@@ -246,8 +249,5 @@ var NAVTREEINDEX24 =
 "unionspdk__nvme__feat__arbitration.html#a1c72624e805ff324a05c6e9e592cd11a":[12,0,106,2],
 "unionspdk__nvme__feat__arbitration.html#a28d37ecf81e25a86b65539d93fb39e90":[12,0,106,4],
 "unionspdk__nvme__feat__arbitration.html#a47fb9a1efe9cd17abfa3a8b198919e34":[12,0,106,0],
-"unionspdk__nvme__feat__arbitration.html#a6604bba2a2a419cd8bde785fc99e97a3":[12,0,106,1],
-"unionspdk__nvme__feat__arbitration.html#af12378890a3a12fc4a54e10b6103859e":[12,0,106,6],
-"unionspdk__nvme__feat__async__event__configuration.html":[12,0,107],
-"unionspdk__nvme__feat__async__event__configuration.html#a042e849ee18c493b3b0e04759745486e":[12,0,107,7]
+"unionspdk__nvme__feat__arbitration.html#a6604bba2a2a419cd8bde785fc99e97a3":[12,0,106,1]
 };

@@ -1,5 +1,7 @@
 var NAVTREEINDEX2 =
 {
+"changelog.html#changelog-v20-01":[1,3,4],
+"changelog.html#changelog-v20-04":[1,3,3],
 "changelog.html#changelog-v20-07":[1,3,2],
 "changelog.html#changelog-v20-10":[1,3,1],
 "changelog.html#changelog-v21-01":[1,3,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX2 =
 "file_8h.html#a9d88b741d9149009e0d437e1bfaa6cda":[13,0,23,0],
 "files.html":[13,0],
 "ftl.html":[4,4],
-"ftl.html#ftl_band":[4,4,0,0],
-"ftl.html#ftl_create":[4,4,1,1],
-"ftl.html#ftl_ocssd":[4,4,1,2]
+"ftl.html#ftl_band":[4,4,0,0]
 };
