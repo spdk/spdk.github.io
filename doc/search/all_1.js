@@ -25,7 +25,7 @@ var searchData=
   ['anatt',['anatt',['../structspdk__nvme__ctrlr__data.html#aceee2ab6519aad61ac341f181f09819b',1,'spdk_nvme_ctrlr_data']]],
   ['an_20overview_20of_20spdk_20applications',['An Overview of SPDK Applications',['../app_overview.html',1,'user_guides']]],
   ['app_5ftag',['app_tag',['../structspdk__dif__ctx.html#a1a7fa6ed12d7ca935e24e20f1a4fac88',1,'spdk_dif_ctx']]],
-  ['apsta',['apsta',['../structspdk__nvme__ctrlr__data.html#a0ac8294738c0af73d1a8bb349e6fdc7b',1,'spdk_nvme_ctrlr_data']]],
+  ['apsta',['apsta',['../structspdk__nvme__ctrlr__data.html#a94d16b8e33a2c14a77e1824e088b18ac',1,'spdk_nvme_ctrlr_data']]],
   ['apste',['apste',['../unionspdk__nvme__feat__autonomous__power__state__transition.html#a022cc1ba5b7ff365a6b69989c663333a',1,'spdk_nvme_feat_autonomous_power_state_transition']]],
   ['aqa',['aqa',['../structspdk__nvme__registers.html#a5bf760e2a616ecb3f8d8fd0a64d24e61',1,'spdk_nvme_registers']]],
   ['arb_5fmechanism',['arb_mechanism',['../structspdk__nvme__ctrlr__opts.html#a183d97c9bda86a9ca47442bcbc69c444',1,'spdk_nvme_ctrlr_opts']]],
@@ -37,7 +37,7 @@ var searchData=
   ['assert_2eh',['assert.h',['../assert_8h.html',1,'']]],
   ['async_5ffini',['async_fini',['../structspdk__bdev__module.html#ac702870ef6b1865ad85a606021e0f039',1,'spdk_bdev_module']]],
   ['async_5finit',['async_init',['../structspdk__bdev__module.html#af3a57fb52458d82248fac0570c80cc52',1,'spdk_bdev_module']]],
-  ['avscc',['avscc',['../structspdk__nvme__ctrlr__data.html#add0961024c3be5b3e0feb2edcb02f81d',1,'spdk_nvme_ctrlr_data']]],
+  ['avscc',['avscc',['../structspdk__nvme__ctrlr__data.html#ac2bbc666da9d4ccbdc997b42a066aeb7',1,'spdk_nvme_ctrlr_data']]],
   ['awun',['awun',['../structspdk__nvme__ctrlr__data.html#aa5a66788efbe912b16019c7b62b00a16',1,'spdk_nvme_ctrlr_data']]],
   ['awupf',['awupf',['../structspdk__nvme__ctrlr__data.html#a77160c6bcaa3ab4a312b42991603860e',1,'spdk_nvme_ctrlr_data']]]
 ];

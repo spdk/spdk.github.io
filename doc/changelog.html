@@ -147,6 +147,12 @@ $(document).ready(function(){initNavTree('changelog.html','');});
 <div class="contents">
 <div class="textblock"><h1><a class="anchor" id="changelog-v21-01"></a>
 v21.01: (Upcoming Release)</h1>
+<h2>event</h2>
+<p>The pci_whitelist and pci_blacklist members of struct <a class="el" href="structspdk__app__opts.html" title="Event framework initialization options.">spdk_app_opts</a> have been deprecated. The new members are named pci_allowed and pci_blocked respectively.</p>
+<p>The &ndash;pci-blacklist command line option has been deprecated, replaced with &ndash;pci-blocked.</p>
+<p>The &ndash;pci-whitelist/-W command line options have been deprecated, replaced with &ndash;pci-allowed/-A.</p>
+<h2>env</h2>
+<p>The pci_whitelist, pci_blacklist and master_core members of struct <a class="el" href="structspdk__env__opts.html" title="Environment initialization options.">spdk_env_opts</a> have been deprecated. The new members are named pci_allowed, pci_blocked and main_core respectively.</p>
 <h2>nvmf</h2>
 <p>The functions <code>destroy</code> and <code>qpair_fini</code> in the transport interface now accept a cb_fn and cb_arg to call upon completion, and their execution can be asynchronous.</p>
 <p>The SPDK nvmf target now supports async event notification for discovery log changes. This allows the initiator to create persistent connection to discovery controller and be notified of any discovery log changes.</p>
@@ -154,6 +160,8 @@ v21.01: (Upcoming Release)</h1>
 <p>A new API <code>spdk_jsonrpc_send_bool_response</code> was added to allow sending response for writing json bool results into one function.</p>
 <h2>rpc</h2>
 <p>An new optional parameter <code>wait</code> was added to the RPC <code>iscsi_create_portal_group</code>, and an new RPC <code>iscsi_start_portal_group</code> was added. They will be used not to start listening on portals for a portal group until all associated target nodes are created at startup, otherwise some iSCSI initiators may fail to re-login when SPDK iSCSI target application restarts.</p>
+<h1>ioat</h1>
+<p>The PCI BDF whitelist option has been removed from the ioat_scan_accel_engine RPC. ioat PCI functions can still be allowed or denied using SPDK application command line options.</p>
 <h1><a class="anchor" id="changelog-v20-10"></a>
 v20.10:</h1>
 <h2>accel</h2>

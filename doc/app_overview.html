@@ -179,7 +179,7 @@ Command Line Parameters</h2>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">-n  </td><td class="markdownTableBodyNone">&ndash;mem-channels  </td><td class="markdownTableBodyNone">integer  </td><td class="markdownTableBodyNone">all channels  </td><td class="markdownTableBodyNone">number of memory channels used for DPDK   </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">-p  </td><td class="markdownTableBodyNone">&ndash;master-core  </td><td class="markdownTableBodyNone">integer  </td><td class="markdownTableBodyNone">first core in CPU mask  </td><td class="markdownTableBodyNone">master (primary) core for DPDK   </td></tr>
+<td class="markdownTableBodyNone">-p  </td><td class="markdownTableBodyNone">&ndash;main-core  </td><td class="markdownTableBodyNone">integer  </td><td class="markdownTableBodyNone">first core in CPU mask  </td><td class="markdownTableBodyNone">main (primary) core for DPDK   </td></tr>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">-r  </td><td class="markdownTableBodyNone">&ndash;rpc-socket  </td><td class="markdownTableBodyNone">string  </td><td class="markdownTableBodyNone">/var/tmp/spdk.sock  </td><td class="markdownTableBodyNone">RPC listen address   </td></tr>
 <tr class="markdownTableRowOdd">
@@ -191,9 +191,9 @@ Command Line Parameters</h2>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">&ndash;wait-for-rpc  </td><td class="markdownTableBodyNone">flag  </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"><a class="el" href="app_overview.html#cmd_arg_deferred_initialization">Deferred initialization</a>   </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">-B  </td><td class="markdownTableBodyNone">&ndash;pci-blacklist  </td><td class="markdownTableBodyNone">B:D:F  </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"><a class="el" href="app_overview.html#cmd_arg_pci_blacklist_whitelist">PCI address blacklist and whitelist</a>.   </td></tr>
+<td class="markdownTableBodyNone">-B  </td><td class="markdownTableBodyNone">&ndash;pci-blocked  </td><td class="markdownTableBodyNone">B:D:F  </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"><a class="el" href="app_overview.html#cmd_arg_pci_blocked_allowed">PCI address blocked and allowed lists</a>.   </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">-W  </td><td class="markdownTableBodyNone">&ndash;pci-whitelist  </td><td class="markdownTableBodyNone">B:D:F  </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"><a class="el" href="app_overview.html#cmd_arg_pci_blacklist_whitelist">PCI address blacklist and whitelist</a>.   </td></tr>
+<td class="markdownTableBodyNone">-A  </td><td class="markdownTableBodyNone">&ndash;pci-allowed  </td><td class="markdownTableBodyNone">B:D:F  </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"><a class="el" href="app_overview.html#cmd_arg_pci_blocked_allowed">PCI address blocked and allowed lists</a>.   </td></tr>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">-R  </td><td class="markdownTableBodyNone">&ndash;huge-unlink  </td><td class="markdownTableBodyNone">flag  </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"><a class="el" href="app_overview.html#cmd_arg_huge_unlink">Unlink hugepage files after initialization</a>   </td></tr>
 <tr class="markdownTableRowEven">
@@ -230,9 +230,9 @@ Memory size</h3>
 <h3><a class="anchor" id="cmd_arg_disable_pci_access"></a>
 Disable PCI access</h3>
 <p>If SPDK is run with PCI access disabled it won't detect any PCI devices. This includes primarily NVMe and IOAT devices. Also, the VFIO and UIO kernel modules are not required in this mode.</p>
-<h3><a class="anchor" id="cmd_arg_pci_blacklist_whitelist"></a>
-PCI address blacklist and whitelist</h3>
-<p>If blacklist is used, then all devices with the provided PCI address will be ignored. If a whitelist is used, only whitelisted devices will be probed. <code>-B</code> or <code>-W</code> can be used more than once, but cannot be mixed together. That is, <code>-B</code> and <code>-W</code> cannot be used at the same time.</p>
+<h3><a class="anchor" id="cmd_arg_pci_blocked_allowed"></a>
+PCI address blocked and allowed lists</h3>
+<p>If blocked list is used, then all devices with the provided PCI address will be ignored. If an allowed list is used, only allowed devices will be probed. <code>-B</code> or <code>-A</code> can be used more than once, but cannot be mixed together. That is, <code>-B</code> and <code>-A</code> cannot be used at the same time.</p>
 <h3><a class="anchor" id="cmd_arg_huge_unlink"></a>
 Unlink hugepage files after initialization</h3>
 <p>By default, each DPDK-based application tries to remove any orphaned hugetlbfs files during its initialization. This option removes hugetlbfs files of the current process as soon as they're created, but is not compatible with <code>--shm-id</code>.</p>

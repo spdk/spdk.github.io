@@ -1,7 +1,7 @@
 var unionspdk__nvme__critical__warning__state =
 [
     [ "available_spare", "unionspdk__nvme__critical__warning__state.html#a093845218b1e1dd96ecb69eeac9c241d", null ],
-    [ "bits", "unionspdk__nvme__critical__warning__state.html#a024e9fb66f99a290cd2c81ac6399febd", null ],
+    [ "bits", "unionspdk__nvme__critical__warning__state.html#a3077e78723b9b68024522e15434f74e5", null ],
     [ "device_reliability", "unionspdk__nvme__critical__warning__state.html#a113097459596a0a0d1d3dbc8b18accc3", null ],
     [ "raw", "unionspdk__nvme__critical__warning__state.html#a6ebadf678c6d64a9586b58eb6ad11365", null ],
     [ "read_only", "unionspdk__nvme__critical__warning__state.html#a220ca1988fe2546b3b61b00af7a74a05", null ],

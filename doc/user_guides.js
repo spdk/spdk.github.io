@@ -34,7 +34,7 @@ var user_guides =
           [ "Multi process mode", "app_overview.html#cmd_arg_multi_process", null ],
           [ "Memory size", "app_overview.html#cmd_arg_memory_size", null ],
           [ "Disable PCI access", "app_overview.html#cmd_arg_disable_pci_access", null ],
-          [ "PCI address blacklist and whitelist", "app_overview.html#cmd_arg_pci_blacklist_whitelist", null ],
+          [ "PCI address blocked and allowed lists", "app_overview.html#cmd_arg_pci_blocked_allowed", null ],
           [ "Unlink hugepage files after initialization", "app_overview.html#cmd_arg_huge_unlink", null ],
           [ "Log flag", "app_overview.html#cmd_arg_log_flags", null ]
         ] ],

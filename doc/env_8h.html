@@ -2589,7 +2589,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_
 </div><div class="memdoc">
 
 <p>Attach a PCI device. </p>
-<p>This will bypass all blacklist rules and explicitly attach a device at the provided address. The return code of the provided callback will decide whether that device is attached or not. Attached devices have to be manually detached with <a class="el" href="env_8h.html#aa98502fc8d794fadaae348496d421082" title="Release all resources associated with the given device and detach it.">spdk_pci_device_detach()</a> to be attach-able again.</p>
+<p>This will bypass all blocked list rules and explicitly attach a device at the provided address. The return code of the provided callback will decide whether that device is attached or not. Attached devices have to be manually detached with <a class="el" href="env_8h.html#aa98502fc8d794fadaae348496d421082" title="Release all resources associated with the given device and detach it.">spdk_pci_device_detach()</a> to be attach-able again.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">driver</td><td>Driver for a specific device type. The device will only be attached if it's supported by this driver. </td></tr>

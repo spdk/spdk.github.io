@@ -53,7 +53,7 @@ var NAVTREEINDEX0 =
 "app_overview.html#cmd_arg_log_flags":[3,2,0,0,10],
 "app_overview.html#cmd_arg_memory_size":[3,2,0,0,6],
 "app_overview.html#cmd_arg_multi_process":[3,2,0,0,5],
-"app_overview.html#cmd_arg_pci_blacklist_whitelist":[3,2,0,0,8],
+"app_overview.html#cmd_arg_pci_blocked_allowed":[3,2,0,0,8],
 "app_overview.html#cmd_arg_single_file_segments":[3,2,0,0,4],
 "app_overview.html#cpu_mask":[3,2,0,1],
 "assert_8h.html":[13,0,1],

@@ -1448,7 +1448,7 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">subsystem</td><td>Subsystem to allow dynamic listener assignment. </td></tr>
-    <tr><td class="paramname">allow_any_listener</td><td>true to allow dynamic listener assignment for this subsystem, or false to enforce the whitelist configured during subsystem setup. </td></tr>
+    <tr><td class="paramname">allow_any_listener</td><td>true to allow dynamic listener assignment for this subsystem, or false to enforce the list configured during subsystem setup. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1611,7 +1611,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>true if any host is allowed to connect to this subsystem, or false if connecting hosts must be in the whitelist configured with <a class="el" href="nvmf_8h.html#a19b3442b7eb75c234c3e3090d2b5add3" title="Allow the given host NQN to connect to the given subsystem.">spdk_nvmf_subsystem_add_host()</a>. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>true if any host is allowed to connect to this subsystem, or false if connecting hosts must be in the list configured with <a class="el" href="nvmf_8h.html#a19b3442b7eb75c234c3e3090d2b5add3" title="Allow the given host NQN to connect to the given subsystem.">spdk_nvmf_subsystem_add_host()</a>. </dd></dl>
 
 </div>
 </div>
@@ -2407,7 +2407,7 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">subsystem</td><td>Subsystem to modify. </td></tr>
-    <tr><td class="paramname">allow_any_host</td><td>true to allow any host to connect to this subsystem, or false to enforce the whitelist configured with <a class="el" href="nvmf_8h.html#a19b3442b7eb75c234c3e3090d2b5add3" title="Allow the given host NQN to connect to the given subsystem.">spdk_nvmf_subsystem_add_host()</a>.</td></tr>
+    <tr><td class="paramname">allow_any_host</td><td>true to allow any host to connect to this subsystem, or false to enforce the list configured with <a class="el" href="nvmf_8h.html#a19b3442b7eb75c234c3e3090d2b5add3" title="Allow the given host NQN to connect to the given subsystem.">spdk_nvmf_subsystem_add_host()</a>.</td></tr>
   </table>
   </dd>
 </dl>
@@ -2643,7 +2643,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>true if this subsystem allows dynamic management of listen address list, or false if only allows addresses in the whitelist configured during subsystem setup. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>true if this subsystem allows dynamic management of listen address list, or false if only allows addresses in the list configured during subsystem setup. </dd></dl>
 
 </div>
 </div>
@@ -2900,7 +2900,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Begin accepting new connections at the address provided. </p>
-<p>The connections will be matched with a subsystem, which may or may not allow the connection based on a subsystem-specific whitelist. See <a class="el" href="nvmf_8h.html#a19b3442b7eb75c234c3e3090d2b5add3" title="Allow the given host NQN to connect to the given subsystem.">spdk_nvmf_subsystem_add_host()</a> and <a class="el" href="nvmf_8h.html#a96ece790c05df3a1f410ef617b2e5cb4" title="Accept new connections on the address provided.">spdk_nvmf_subsystem_add_listener()</a></p>
+<p>The connections will be matched with a subsystem, which may or may not allow the connection based on a subsystem-specific list of allowed hosts. See <a class="el" href="nvmf_8h.html#a19b3442b7eb75c234c3e3090d2b5add3" title="Allow the given host NQN to connect to the given subsystem.">spdk_nvmf_subsystem_add_host()</a> and <a class="el" href="nvmf_8h.html#a96ece790c05df3a1f410ef617b2e5cb4" title="Accept new connections on the address provided.">spdk_nvmf_subsystem_add_listener()</a></p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">tgt</td><td>The target associated with this listen address. </td></tr>
