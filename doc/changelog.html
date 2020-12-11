@@ -147,6 +147,8 @@ $(document).ready(function(){initNavTree('changelog.html','');});
 <div class="contents">
 <div class="textblock"><h1><a class="anchor" id="changelog-v21-01"></a>
 v21.01: (Upcoming Release)</h1>
+<h2>nvmf</h2>
+<p>Broadcom FC LLD driver and SPDK NVMe-oF FC transport consolidated one LLD API, <code>nvmf_fc_init_poller_queues</code> into another LLD API <code>nvmf_fc_init_q</code>. Hence updating Broadcom FC LLD driver to the latest is required.</p>
 <h2>event</h2>
 <p>The pci_whitelist and pci_blacklist members of struct <a class="el" href="structspdk__app__opts.html" title="Event framework initialization options.">spdk_app_opts</a> have been deprecated. The new members are named pci_allowed and pci_blocked respectively.</p>
 <p>The &ndash;pci-blacklist command line option has been deprecated, replaced with &ndash;pci-blocked.</p>

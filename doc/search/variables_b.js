@@ -5,6 +5,7 @@ var searchData=
   ['max_5fchannel_5fops',['max_channel_ops',['../structspdk__bs__opts.html#ac5417afa104f5061bab1bfae0769c3a6',1,'spdk_bs_opts']]],
   ['max_5fmd_5fops',['max_md_ops',['../structspdk__bs__opts.html#a63e0b619fedc29159dffd7feca08396b',1,'spdk_bs_opts']]],
   ['max_5fopen_5fzones',['max_open_zones',['../structspdk__bdev.html#a9766b9a39169827156c768f78b940977',1,'spdk_bdev']]],
+  ['max_5fsegment_5fsize',['max_segment_size',['../structspdk__bdev.html#af33e3553f5bb1f626d137859c6933c64',1,'spdk_bdev']]],
   ['maxh2cdata',['maxh2cdata',['../structspdk__nvme__tcp__ic__resp.html#ae19af16d43dd54e43ccfeccd7f6119dc',1,'spdk_nvme_tcp_ic_resp']]],
   ['maxoc',['maxoc',['../structspdk__ocssd__geometry__data.html#adecc1a99d16f94eace12b674c7b7bbfa',1,'spdk_ocssd_geometry_data']]],
   ['maxocpu',['maxocpu',['../structspdk__ocssd__geometry__data.html#a747b543789ad8efcfca1c54faeb95c52',1,'spdk_ocssd_geometry_data']]],

@@ -220,6 +220,12 @@ uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev.html#af2dcdd94b1bbfd2709c6040f861819fb">optimal_io_boundary</a></td></tr>
 <tr class="memdesc:af2dcdd94b1bbfd2709c6040f861819fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Optimal I/O boundary in blocks, or 0 for no value reported. <br /></td></tr>
 <tr class="separator:af2dcdd94b1bbfd2709c6040f861819fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af33e3553f5bb1f626d137859c6933c64"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev.html#af33e3553f5bb1f626d137859c6933c64">max_segment_size</a></td></tr>
+<tr class="memdesc:af33e3553f5bb1f626d137859c6933c64"><td class="mdescLeft">&#160;</td><td class="mdescRight">Max io size in bytes of a single segment.  <a href="#af33e3553f5bb1f626d137859c6933c64">More...</a><br /></td></tr>
+<tr class="separator:af33e3553f5bb1f626d137859c6933c64"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad498826a1d9197050bd0ed110df96fb0"><td class="memItemLeft" align="right" valign="top"><a id="ad498826a1d9197050bd0ed110df96fb0"></a>
+uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>max_num_segments</b></td></tr>
+<tr class="separator:ad498826a1d9197050bd0ed110df96fb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5cc1248944325a12c4cadaa3856f573a"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structspdk__uuid.html">spdk_uuid</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev.html#a5cc1248944325a12c4cadaa3856f573a">uuid</a></td></tr>
 <tr class="memdesc:a5cc1248944325a12c4cadaa3856f573a"><td class="mdescLeft">&#160;</td><td class="mdescRight">UUID for this bdev.  <a href="#a5cc1248944325a12c4cadaa3856f573a">More...</a><br /></td></tr>
 <tr class="separator:a5cc1248944325a12c4cadaa3856f573a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -318,6 +324,23 @@ struct <a class="el" href="structspdk__bdev_1_1____bdev__internal__fields.html">
 
 <p>DIF type for this bdev. </p>
 <p>Note that this field is valid only if there is metadata. </p>
+
+</div>
+</div>
+<a id="af33e3553f5bb1f626d137859c6933c64"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af33e3553f5bb1f626d137859c6933c64">&#9670;&nbsp;</a></span>max_segment_size</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t spdk_bdev::max_segment_size</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Max io size in bytes of a single segment. </p>
+<p>Note: both max_segment_size and max_num_segments should be zero or non-zero. </p>
 
 </div>
 </div>
