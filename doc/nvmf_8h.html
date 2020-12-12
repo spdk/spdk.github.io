@@ -391,9 +391,9 @@ Functions</h2></td></tr>
 <tr class="memitem:acfae99734ec18b90dbb6ef39d1b73860"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#acfae99734ec18b90dbb6ef39d1b73860">spdk_nvmf_subsystem_get_max_nsid</a> (struct spdk_nvmf_subsystem *subsystem)</td></tr>
 <tr class="memdesc:acfae99734ec18b90dbb6ef39d1b73860"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get maximum namespace id of the specified subsystem.  <a href="#acfae99734ec18b90dbb6ef39d1b73860">More...</a><br /></td></tr>
 <tr class="separator:acfae99734ec18b90dbb6ef39d1b73860"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7c84fb153ce57c567e2b4c79400442f6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#a7c84fb153ce57c567e2b4c79400442f6">spdk_nvmf_transport_opts_init</a> (const char *transport_name, struct <a class="el" href="structspdk__nvmf__transport__opts.html">spdk_nvmf_transport_opts</a> *opts)</td></tr>
-<tr class="memdesc:a7c84fb153ce57c567e2b4c79400442f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize transport options.  <a href="#a7c84fb153ce57c567e2b4c79400442f6">More...</a><br /></td></tr>
-<tr class="separator:a7c84fb153ce57c567e2b4c79400442f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e8e8b2a3f7a8d4b8ab52e1beef87ab0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#a8e8e8b2a3f7a8d4b8ab52e1beef87ab0">spdk_nvmf_transport_opts_init</a> (const char *transport_name, struct <a class="el" href="structspdk__nvmf__transport__opts.html">spdk_nvmf_transport_opts</a> *opts, size_t opts_size)</td></tr>
+<tr class="memdesc:a8e8e8b2a3f7a8d4b8ab52e1beef87ab0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize transport options.  <a href="#a8e8e8b2a3f7a8d4b8ab52e1beef87ab0">More...</a><br /></td></tr>
+<tr class="separator:a8e8e8b2a3f7a8d4b8ab52e1beef87ab0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a141be89e55c37dc017ddeb2494f508c7"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structspdk__nvmf__transport.html">spdk_nvmf_transport</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#a141be89e55c37dc017ddeb2494f508c7">spdk_nvmf_transport_create</a> (const char *transport_name, struct <a class="el" href="structspdk__nvmf__transport__opts.html">spdk_nvmf_transport_opts</a> *opts)</td></tr>
 <tr class="memdesc:a141be89e55c37dc017ddeb2494f508c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a protocol transport.  <a href="#a141be89e55c37dc017ddeb2494f508c7">More...</a><br /></td></tr>
 <tr class="separator:a141be89e55c37dc017ddeb2494f508c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -3018,7 +3018,7 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">transport_name</td><td>The transport type to create </td></tr>
-    <tr><td class="paramname">opts</td><td>The transport options (e.g. max_io_size)</td></tr>
+    <tr><td class="paramname">opts</td><td>The transport options (e.g. max_io_size). It should not be NULL, and opts_size pointed in this structure should not be zero value.</td></tr>
   </table>
   </dd>
 </dl>
@@ -3163,8 +3163,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a7c84fb153ce57c567e2b4c79400442f6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7c84fb153ce57c567e2b4c79400442f6">&#9670;&nbsp;</a></span>spdk_nvmf_transport_opts_init()</h2>
+<a id="a8e8e8b2a3f7a8d4b8ab52e1beef87ab0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e8e8b2a3f7a8d4b8ab52e1beef87ab0">&#9670;&nbsp;</a></span>spdk_nvmf_transport_opts_init()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3179,7 +3179,13 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">struct <a class="el" href="structspdk__nvmf__transport__opts.html">spdk_nvmf_transport_opts</a> *&#160;</td>
-          <td class="paramname"><em>opts</em>&#160;</td>
+          <td class="paramname"><em>opts</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>opts_size</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -3193,7 +3199,8 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">transport_name</td><td>The transport type to create </td></tr>
-    <tr><td class="paramname">opts</td><td>The transport options (e.g. max_io_size)</td></tr>
+    <tr><td class="paramname">opts</td><td>The transport options (e.g. max_io_size) </td></tr>
+    <tr><td class="paramname">opts_size</td><td>Must be set to sizeof(struct spdk_nvmf_transport_opts).</td></tr>
   </table>
   </dd>
 </dl>

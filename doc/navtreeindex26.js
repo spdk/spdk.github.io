@@ -1,5 +1,6 @@
 var NAVTREEINDEX26 =
 {
+"vhost_8h.html#afd7159f8eb1e0d65dad5bedaa6cc5e43":[13,0,60,20],
 "vhost_8h.html#afe5b0a12a12a26d2ddfe6a64f2a8a5e2":[13,0,60,14],
 "vhost_processing.html":[2,5],
 "vhost_processing.html#vhost_processing_init":[2,5,3],

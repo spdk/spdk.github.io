@@ -88,7 +88,7 @@ var nvmf_8h =
     [ "spdk_nvmf_transport_get_first", "nvmf_8h.html#a1aeaade30bb4e457f5c35e2f3649d097", null ],
     [ "spdk_nvmf_transport_get_next", "nvmf_8h.html#aa1316a2fe3bd765d755de1df15add5cc", null ],
     [ "spdk_nvmf_transport_listen", "nvmf_8h.html#af3f67fe201cedd887ed6ad35792ff5e7", null ],
-    [ "spdk_nvmf_transport_opts_init", "nvmf_8h.html#a7c84fb153ce57c567e2b4c79400442f6", null ],
+    [ "spdk_nvmf_transport_opts_init", "nvmf_8h.html#a8e8e8b2a3f7a8d4b8ab52e1beef87ab0", null ],
     [ "spdk_nvmf_transport_poll_group_free_stat", "nvmf_8h.html#ab03fc0bf9946107905bf8148495966f9", null ],
     [ "spdk_nvmf_transport_poll_group_get_stat", "nvmf_8h.html#ae4e59ef25ba7e6a45ab1d613c006f1bb", null ],
     [ "spdk_nvmf_transport_stop_listen", "nvmf_8h.html#ae261eff09a7b8e6d14d2710c169b17df", null ],

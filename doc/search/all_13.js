@@ -1267,7 +1267,7 @@ var searchData=
   ['spdk_5fnvmf_5ftransport_5flisten',['spdk_nvmf_transport_listen',['../nvmf_8h.html#af3f67fe201cedd887ed6ad35792ff5e7',1,'nvmf.h']]],
   ['spdk_5fnvmf_5ftransport_5fops',['spdk_nvmf_transport_ops',['../structspdk__nvmf__transport__ops.html',1,'']]],
   ['spdk_5fnvmf_5ftransport_5fopts',['spdk_nvmf_transport_opts',['../structspdk__nvmf__transport__opts.html',1,'']]],
-  ['spdk_5fnvmf_5ftransport_5fopts_5finit',['spdk_nvmf_transport_opts_init',['../nvmf_8h.html#a7c84fb153ce57c567e2b4c79400442f6',1,'nvmf.h']]],
+  ['spdk_5fnvmf_5ftransport_5fopts_5finit',['spdk_nvmf_transport_opts_init',['../nvmf_8h.html#a8e8e8b2a3f7a8d4b8ab52e1beef87ab0',1,'nvmf.h']]],
   ['spdk_5fnvmf_5ftransport_5fpg_5fcache_5fbuf',['spdk_nvmf_transport_pg_cache_buf',['../structspdk__nvmf__transport__pg__cache__buf.html',1,'']]],
   ['spdk_5fnvmf_5ftransport_5fpoll_5fgroup',['spdk_nvmf_transport_poll_group',['../structspdk__nvmf__transport__poll__group.html',1,'']]],
   ['spdk_5fnvmf_5ftransport_5fpoll_5fgroup_5ffree_5fstat',['spdk_nvmf_transport_poll_group_free_stat',['../nvmf_8h.html#ab03fc0bf9946107905bf8148495966f9',1,'nvmf.h']]],

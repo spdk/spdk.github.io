@@ -195,7 +195,28 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>association_timeo
 <tr class="memitem:aab5c69d601c233497d19d6a81b9892ce"><td class="memItemLeft" align="right" valign="top"><a id="aab5c69d601c233497d19d6a81b9892ce"></a>
 const struct <a class="el" href="structspdk__json__val.html">spdk_json_val</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>transport_specific</b></td></tr>
 <tr class="separator:aab5c69d601c233497d19d6a81b9892ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac720992d2cf8950149ab6db89257c98e"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvmf__transport__opts.html#ac720992d2cf8950149ab6db89257c98e">opts_size</a></td></tr>
+<tr class="memdesc:ac720992d2cf8950149ab6db89257c98e"><td class="mdescLeft">&#160;</td><td class="mdescRight">The size of <a class="el" href="structspdk__nvmf__transport__opts.html">spdk_nvmf_transport_opts</a> according to the caller of this library is used for ABI compatibility.  <a href="#ac720992d2cf8950149ab6db89257c98e">More...</a><br /></td></tr>
+<tr class="separator:ac720992d2cf8950149ab6db89257c98e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Field Documentation</h2>
+<a id="ac720992d2cf8950149ab6db89257c98e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac720992d2cf8950149ab6db89257c98e">&#9670;&nbsp;</a></span>opts_size</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t spdk_nvmf_transport_opts::opts_size</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The size of <a class="el" href="structspdk__nvmf__transport__opts.html">spdk_nvmf_transport_opts</a> according to the caller of this library is used for ABI compatibility. </p>
+<p>The library uses this field to know how many fields in this structure are valid. And the library will populate any remaining fields with default values. After that, new added fields should be put after opts_size. </p>
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li><a class="el" href="nvmf_8h.html">nvmf.h</a></li>
 </ul>
