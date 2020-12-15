@@ -142,6 +142,7 @@ var NAVTREEINDEX5 =
 "jsonrpc.html#rpc_nvmf_subsystem_remove_host":[3,8,4,10],
 "jsonrpc.html#rpc_nvmf_subsystem_remove_listener":[3,8,4,5],
 "jsonrpc.html#rpc_nvmf_subsystem_remove_ns":[3,8,4,8],
+"jsonrpc.html#rpc_py":[3,8,0,1],
 "jsonrpc.html#rpc_rpc_get_methods":[3,8,1,4],
 "jsonrpc.html#rpc_sock_impl_get_options":[3,8,9,0],
 "jsonrpc.html#rpc_sock_impl_set_options":[3,8,9,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX5 =
 "log_8h.html#aec36027084c167aa798f9f4cb33e639a":[13,0,33,6],
 "log_8h.html#af600090b2a4aa95b4e9e4dae27bf6c7e":[13,0,33,19],
 "logical_volumes.html":[5,1],
-"logical_volumes.html#lvol":[5,1,0,1],
-"logical_volumes.html#lvol_bdev":[5,1,0,2]
+"logical_volumes.html#lvol":[5,1,0,1]
 };

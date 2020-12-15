@@ -126,12 +126,13 @@ var user_guides =
       [ "BlobFS Getting Started Guide", "blobfs.html#blobfs_getting_started", null ],
       [ "RocksDB Integration", "blobfs.html#blobfs_rocksdb", null ]
     ] ],
-    [ "JSON-RPC Methods", "jsonrpc.html", [
+    [ "JSON-RPC", "jsonrpc.html", [
       [ "Overview", "jsonrpc.html#jsonrpc_overview", [
         [ "Error response message", "jsonrpc.html#jsonrpc_error_message", [
           [ "Parser error", "jsonrpc.html#jsonrpc_parser_error", null ],
           [ "Invalid params", "jsonrpc.html#jsonrpc_invalid_params", null ]
-        ] ]
+        ] ],
+        [ "rpc.py", "jsonrpc.html#rpc_py", null ]
       ] ],
       [ "App Framework", "jsonrpc.html#jsonrpc_components_app", [
         [ "spdk_kill_instance", "jsonrpc.html#rpc_spdk_kill_instance", null ],

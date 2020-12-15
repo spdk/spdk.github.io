@@ -355,6 +355,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a6eacd62ee8fbab40e1066bc0a53485f3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a6eacd62ee8fbab40e1066bc0a53485f3">spdk_nvme_ctrlr_set_trid</a> (struct spdk_nvme_ctrlr *ctrlr, struct <a class="el" href="structspdk__nvme__transport__id.html">spdk_nvme_transport_id</a> *trid)</td></tr>
 <tr class="memdesc:a6eacd62ee8fbab40e1066bc0a53485f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update the transport ID for a given controller.  <a href="#a6eacd62ee8fbab40e1066bc0a53485f3">More...</a><br /></td></tr>
 <tr class="separator:a6eacd62ee8fbab40e1066bc0a53485f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab29a85672c9837b13e3041da7efce5e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#aab29a85672c9837b13e3041da7efce5e">spdk_nvme_ctrlr_set_remove_cb</a> (struct spdk_nvme_ctrlr *ctrlr, <a class="el" href="nvme_8h.html#a05f1aa545be57a03bb2dd0c6180172b6">spdk_nvme_remove_cb</a> remove_cb, void *remove_ctx)</td></tr>
+<tr class="memdesc:aab29a85672c9837b13e3041da7efce5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the remove callback and context to be invoked if the controller is removed.  <a href="#aab29a85672c9837b13e3041da7efce5e">More...</a><br /></td></tr>
+<tr class="separator:aab29a85672c9837b13e3041da7efce5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae13ccd2ea831842a5008eb95a32545c3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#ae13ccd2ea831842a5008eb95a32545c3">spdk_nvme_ctrlr_reset</a> (struct spdk_nvme_ctrlr *ctrlr)</td></tr>
 <tr class="memdesc:ae13ccd2ea831842a5008eb95a32545c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform a full hardware reset of the NVMe controller.  <a href="#ae13ccd2ea831842a5008eb95a32545c3">More...</a><br /></td></tr>
 <tr class="separator:ae13ccd2ea831842a5008eb95a32545c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -3802,6 +3805,52 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_map_prps</b>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 if successfully submitted, negated errno if resources could not be allocated for this request. </dd></dl>
+
+</div>
+</div>
+<a id="aab29a85672c9837b13e3041da7efce5e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab29a85672c9837b13e3041da7efce5e">&#9670;&nbsp;</a></span>spdk_nvme_ctrlr_set_remove_cb()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_nvme_ctrlr_set_remove_cb </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_nvme_ctrlr *&#160;</td>
+          <td class="paramname"><em>ctrlr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="nvme_8h.html#a05f1aa545be57a03bb2dd0c6180172b6">spdk_nvme_remove_cb</a>&#160;</td>
+          <td class="paramname"><em>remove_cb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>remove_ctx</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the remove callback and context to be invoked if the controller is removed. </p>
+<p>This will override any remove_cb and/or ctx specified when the controller was probed.</p>
+<p>This function may only be called from the primary process. This function has no effect if called from a secondary process.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ctrlr</td><td>Opaque handle to an NVMe controller. </td></tr>
+    <tr><td class="paramname">remove_cb</td><td>remove callback </td></tr>
+    <tr><td class="paramname">remove_ctx</td><td>remove callback context </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

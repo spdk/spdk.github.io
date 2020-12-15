@@ -588,6 +588,7 @@ var searchData=
   ['spdk_5fnvme_5fctrlr_5freset',['spdk_nvme_ctrlr_reset',['../nvme_8h.html#ae13ccd2ea831842a5008eb95a32545c3',1,'nvme.h']]],
   ['spdk_5fnvme_5fctrlr_5fsecurity_5freceive',['spdk_nvme_ctrlr_security_receive',['../nvme_8h.html#a5175d6805225d84d6e4aa4e0f1546c69',1,'nvme.h']]],
   ['spdk_5fnvme_5fctrlr_5fsecurity_5fsend',['spdk_nvme_ctrlr_security_send',['../nvme_8h.html#ada4ab089f73f3f43e9c5b8e6415e6f50',1,'nvme.h']]],
+  ['spdk_5fnvme_5fctrlr_5fset_5fremove_5fcb',['spdk_nvme_ctrlr_set_remove_cb',['../nvme_8h.html#aab29a85672c9837b13e3041da7efce5e',1,'nvme.h']]],
   ['spdk_5fnvme_5fctrlr_5fset_5ftrid',['spdk_nvme_ctrlr_set_trid',['../nvme_8h.html#a6eacd62ee8fbab40e1066bc0a53485f3',1,'nvme.h']]],
   ['spdk_5fnvme_5fctrlr_5funmap_5fcmb',['spdk_nvme_ctrlr_unmap_cmb',['../nvme_8h.html#a645844b863c5c40a0f3eb0c72d80e0ff',1,'nvme.h']]],
   ['spdk_5fnvme_5fctrlr_5fupdate_5ffirmware',['spdk_nvme_ctrlr_update_firmware',['../nvme_8h.html#a7938b258a7614073065be4f6a35bd0e2',1,'nvme.h']]],

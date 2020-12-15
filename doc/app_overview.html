@@ -203,7 +203,7 @@ Command Line Parameters</h2>
 </table>
 <h3><a class="anchor" id="cmd_arg_config_file"></a>
 Configuration file</h3>
-<p>SPDK applications are configured using a JSON RPC configuration file. See <a class="el" href="jsonrpc.html">JSON-RPC Methods</a> for details.</p>
+<p>SPDK applications are configured using a JSON RPC configuration file. See <a class="el" href="jsonrpc.html">JSON-RPC</a> for details.</p>
 <h3><a class="anchor" id="cmd_arg_limit_coredump"></a>
 Limit coredump</h3>
 <p>By default, an SPDK application will set resource limits for core file sizes to RLIM_INFINITY. Specifying <code>--limit-coredump</code> will not set the resource limits.</p>
@@ -216,7 +216,7 @@ Deferred initialization</h3>
 <p>SPDK applications progress through a set of states beginning with <code>STARTUP</code> and ending with <code>RUNTIME</code>.</p>
 <p>If the <code>--wait-for-rpc</code> parameter is provided SPDK will pause just before starting framework initialization. This state is called <code>STARTUP</code>. The JSON RPC server is ready but only a small subset of commands are available to set up initialization parameters. Those parameters can't be changed after the SPDK application enters <code>RUNTIME</code> state. When the client finishes configuring the SPDK subsystems it needs to issue the <a class="el" href="jsonrpc.html#rpc_framework_start_init">framework_start_init</a> RPC command to begin the initialization process. After <code>rpc_framework_start_init</code> returns <code>true</code> SPDK will enter the <code>RUNTIME</code> state and the list of available commands becomes much larger.</p>
 <p>To see which RPC methods are available in the current state, issue the <code>rpc_get_methods</code> with the parameter <code>current</code> set to <code>true</code>.</p>
-<p>For more details see <a class="el" href="jsonrpc.html">JSON-RPC Methods</a> documentation.</p>
+<p>For more details see <a class="el" href="jsonrpc.html">JSON-RPC</a> documentation.</p>
 <h3><a class="anchor" id="cmd_arg_single_file_segments"></a>
 Create just one hugetlbfs file</h3>
 <p>Instead of creating one hugetlbfs file per page, this option makes SPDK create one file per hugepages per socket. This is needed for <a class="el" href="virtio.html">Virtio driver</a> to be used with more than 8 hugepages. See <a class="el" href="virtio.html#virtio_2mb">2MB hugepages</a>.</p>

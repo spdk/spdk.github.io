@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="Content-Type" content="text/xhtml; charset=utf-8">
   <meta name="generator" content="Doxygen 1.8.15">
-  <title>SPDK: JSON-RPC Methods</title>
+  <title>SPDK: JSON-RPC</title>
   <script type="text/javascript" src="jquery.js"></script>
   <script type="text/javascript" src="dynsections.js"></script>
   <script type="text/javascript" src="two.min.js"></script>
@@ -142,7 +142,7 @@ $(document).ready(function(){initNavTree('jsonrpc.html','');});
 
 <div class="PageDoc"><div class="header">
   <div class="headertitle">
-<div class="title">JSON-RPC Methods </div>  </div>
+<div class="title">JSON-RPC </div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><h1><a class="anchor" id="jsonrpc_overview"></a>
@@ -192,7 +192,20 @@ Invalid params</h3>
 <li>Parameter domain check failed.</li>
 <li>Request is valid but some other error occurred during processing request. If possible message explains the error reason nature.</li>
 </ul>
-<h2>Adding external RPC methods</h2>
+<h2><a class="anchor" id="rpc_py"></a>
+rpc.py</h2>
+<p>SPDK provides a set of Python scripts which can invoke the JSON-RPC methods described in this document. 'rpc.py' in the scripts directory is the main script that users will invoke to execute a JSON-RPC method. The scripts/rpc directory contains modules that 'rpc.py' imports for definitions of each SPDK library's or module's methods.</p>
+<p>Example:</p>
+<div class="fragment"><div class="line">scripts/rpc.py bdev_nvme_attach_controller -b nvme0 -a 00:02.0 -t pcie</div></div><!-- fragment --><p>A brief description of each of the RPC methods and optional 'rpc.py' arguments can be viewed with:</p>
+<div class="fragment"><div class="line">scripts/rpc.py --help</div></div><!-- fragment --><p>A detailed description of each RPC method and its parameters is also available. For example:</p>
+<div class="fragment"><div class="line">scripts/rpc.py bdev_nvme_attach_controller --help</div></div><!-- fragment --><h3>Generate JSON-RPC methods for current configuration</h3>
+<p>An initial configuration can be specified for an SPDK application via the '-c' command line parameter. The configuration file is a JSON file containing all of the JSON-RPC method invocations necessary for the desired configuration. Writing these files by hand is extremely tedious however, so 'rpc.py' provides a mechanism to generate a JSON-RPC file based on the current configuration.</p>
+<div class="fragment"><div class="line">scripts/rpc.py save_config &gt; config.json</div></div><!-- fragment --><p>'config.json' can then be passed to a new SPDK application using the '-c' command line parameter to reproduce the same configuration.</p>
+<h3>JSON-RPC batching</h3>
+<p>'rpc.py' also supports batching of multiple JSON-RPC methods with one invocation. So instead of calling 'rpc.py' once for each JSON-RPC method, such as:</p>
+<div class="fragment"><div class="line">scripts/rpc.py bdev_malloc_create -b malloc0 64 512</div><div class="line">scripts/rpc.py nvmf_create_subsystem nqn.2016-06.io.spdk:cnode1 -a</div><div class="line">scripts/rpc.py nvmf_subsystem_add_ns nqn.2016-06.io.spdk:cnode1 malloc0</div><div class="line">scripts/rpc.py nvmf_create_transport -t tcp</div><div class="line">scripts/rpc.py nvmf_subsystem_add_listener nqn.2016-06.io.spdk:cnode1 -t tcp -a 127.0.0.1 -s 4420</div></div><!-- fragment --><p>you can put the following into a text file:</p>
+<div class="fragment"><div class="line">bdev_malloc_create -b malloc0 64 512</div><div class="line">nvmf_create_subsystem nqn.2016-06.io.spdk:cnode1 -a</div><div class="line">nvmf_subsystem_add_ns nqn.2016-06.io.spdk:cnode1 malloc0</div><div class="line">nvmf_create_transport -t tcp</div><div class="line">nvmf_subsystem_add_listener nqn.2016-06.io.spdk:cnode1 -t tcp -a 127.0.0.1 -s 4420</div></div><!-- fragment --><p>and then just do:</p>
+<div class="fragment"><div class="line">scripts/rpc.py &lt; rpc.txt</div></div><!-- fragment --><h3>Adding external RPC methods</h3>
 <p>SPDK includes both in-tree modules as well as the ability to use external modules. The in-tree modules include some python scripts to ease the process of sending RPCs to in-tree modules. External modules can utilize this same framework to add new RPC methods as follows:</p>
 <p>If PYTHONPATH doesn't include the location of the external RPC python script, it should be updated:</p>
 <div class="fragment"><div class="line">export PYTHONPATH=/home/user/plugin_example/</div></div><!-- fragment --><p>In provided location, create python module file (e.g. rpc_plugin.py) with new RPC methods. The file should contain spdk_rpc_plugin_initialize() method that will be called when the plugin is loaded to define new parsers for provided subparsers argument that adds new RPC calls (subparsers.add_parser()). The new parsers should use the client.call() method to call RPC functions registered within the external module using the SPDK_RPC_REGISTER() macro. Example:</p>
