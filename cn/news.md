@@ -49,4 +49,12 @@ lang: cn
 ### [三万英尺看分布式存储中本地存储引擎](https://mp.weixin.qq.com/s?__biz=MjM5ODI5Njc2MA==&mid=2655831732&idx=2&sn=2ef2f5b338fc7145d87fe7685d9335aa&chksm=bd748b638a03027558f6925d48fe12ba27aedd5aa749dddad5e40592bf7e79249c144d27a200&mpshare=1&scene=1&srcid=&sharer_sharetime=1590671665398&sharer_shareid=bce63ba0449f498eb13c109c5eaef06d&exportkey=A%2FGUxq5dqdlstzBGYEhU9l0%3D&pass_ticket=QOTscjJWy3u2k7TmQww%2FS9XnYJkCuG109UsYE3PYjmwWTEFMXGD09hVFmSqMD30e#rd)
 > “我们简单介绍深信服企业级分布式存储EDS团队在高性能本地存储的实践之路。PFStore(Phoenix Fast Store)是EDS团队自研的基于SPDK的用户态本地存储引擎......”
 
+## 金山云
+### [金山云+英特尔：混合云存储市场的“创新者”](https://www.sohu.com/a/418794638_351410)
+> “金山云使用SPDK之后，用户态的驱动通过轮询硬件而不是依赖中断来完成，这可以降低总延迟和减少延迟差异，并且和内核驱动相比，在每个CPU内核的IOPS上具有更明显的性能优势；同时，SPDK具备I/O路径的无锁高性能模式，避免了所有在I/O关键路径中的锁，而是依靠消息传递在多个线程中共享资源，从而提高了并行性。可以说，SPDK 有效整合了英特尔的网络、数据和存储技术，真正将固态存储介质的性能潜力充分发挥了出来......”
+
+## 中国移动
+### [干货分享|SPDK技术简介和一些实践经验](https://mp.weixin.qq.com/s?__biz=MzIzMzk0MDgxNQ==&mid=2247490879&idx=1&sn=40a0e5cbdd734599fb48eb9c112b3fa7&chksm=e8fcaf1fdf8b2609963fd4b8e9ddc65b4fd715d9df462caf7882a5d5845ef45f618eb0dc8ca1&mpshare=1&scene=1&srcid=1215BOAcuZ7lwU2fVkbm4OAr&sharer_sharetime=1608102337386&sharer_shareid=bce63ba0449f498eb13c109c5eaef06d&exportkey=A%2BQX%2BiRdm%2Bom2sojFFMlT%2B4%3D&pass_ticket=%2BFOpaf%2FRhmSk8QlTrXaIrM3MOdG3DByrpKT3%2F1pvRnoDbSG1NVORPrCDLUjU0PZ8&wx_header=0#rd)
+> “SPDK能有优异的性能，离不开它优异的线程模型，实际使用过程中核的分配相当重要，从上面可以看出，在后端是ceph的场景下，ceph线程运行的核如果没有规划......”
+
 ## 更多SPDK使用案例，请参考[news]({{ baseurl_rel }}/news)页面
