@@ -153,6 +153,7 @@ v21.01: (Upcoming Release)</h1>
 <p>The &ndash;pci-whitelist/-W command line options have been deprecated, replaced with &ndash;pci-allowed/-A.</p>
 <h2>env</h2>
 <p>The pci_whitelist, pci_blacklist and master_core members of struct <a class="el" href="structspdk__env__opts.html" title="Environment initialization options.">spdk_env_opts</a> have been deprecated. The new members are named pci_allowed, pci_blocked and main_core respectively.</p>
+<p>An <code>opts_size</code>element was added in the <code><a class="el" href="structspdk__app__opts.html" title="Event framework initialization options.">spdk_app_opts</a></code> structure to solve the ABI compatiblity issue between different SPDK version. An <code>opts_size</code> parameter is added into <code>spdk_app_opts_init</code> function.</p>
 <h2>nvmf</h2>
 <p>Broadcom FC LLD driver and SPDK NVMe-oF FC transport consolidated one LLD API, <code>nvmf_fc_init_poller_queues</code> into another LLD API <code>nvmf_fc_init_q</code>. Hence updating Broadcom FC LLD driver to the latest is required.</p>
 <p>The functions <code>destroy</code> and <code>qpair_fini</code> in the transport interface now accept a cb_fn and cb_arg to call upon completion, and their execution can be asynchronous.</p>
@@ -614,7 +615,7 @@ v19.04: Compression bdev, Notification library, NVMe Opal support</h1>
 <p><a class="el" href="thread_8h.html#a4eada7bac2a5c7ceaea891d57f8d3e21" title="Creates a new SPDK thread object.">spdk_thread_create()</a> now takes an optional CPU affinity mask that is passed to the scheduler.</p>
 <p><a class="el" href="thread_8h.html#a96c6e1cadb3b5a83c5723487e3f02c23" title="Initialize the threading library.">spdk_thread_lib_init()</a> now takes an optional context size. For each thread created, an additional region of memory of this size will be allocated. A pointer to this region of memory can be obtained by calling <a class="el" href="thread_8h.html#a1deb97a85a8240119cf46fa8a0b71388" title="Return a pointer to this thread&#39;s context.">spdk_thread_get_ctx()</a>. The inverse operation is also available via <a class="el" href="thread_8h.html#af813fe52c71ec5e254f8671570f57bdc" title="Return the thread object associated with the context handle previously obtained by calling spdk_threa...">spdk_thread_get_from_ctx()</a>.</p>
 <p><a class="el" href="thread_8h.html#ad9e3693e8e9e6c9063ea36414294ae91" title="Perform one iteration worth of processing on the thread.">spdk_thread_poll()</a> now optionally accepts the current time, in ticks. This can be used to avoid some calls to <a class="el" href="env_8h.html#a7d868d272aa0c000f6135966dfadc596" title="Get a monotonic timestamp counter.">spdk_get_ticks()</a> internally.</p>
-<p><a class="el" href="event_8h.html#ab4c22e2920f70becd9b2ef752efd7975" title="Start the framework.">spdk_app_start()</a> now only accepts a single context argument.</p>
+<p><a class="el" href="event_8h.html#a3901d9ed6c234d92296db9ec9252a0f5" title="Start the framework.">spdk_app_start()</a> now only accepts a single context argument.</p>
 <h2>bdev</h2>
 <p>An new API <code>spdk_bdev_get_data_block_size</code> has been added to get size of data block except for metadata.</p>
 <p><a class="el" href="bdev__module_8h.html#a25e95f0667fb503988d09cc08dbad119" title="Register a virtual bdev.">spdk_vbdev_register()</a> has been deprecated. <a class="el" href="bdev__module_8h.html#a5fef71f7761986298bb4aaf345736bb3" title="Register a new bdev.">spdk_bdev_register()</a> should be used instead.</p>
@@ -920,7 +921,7 @@ v18.04: Logical Volume Snapshot/Clone, iSCSI Initiator, Bdev QoS, VPP Userspace 
 <p>Resizing logical volumes is now supported via the <code>resize_lvol_bdev</code> RPC method.</p>
 <h2>Lib</h2>
 <p>A set of changes were made in the SPDK's lib code altering instances of calls to <code>exit()</code> and <code>abort()</code> to return a failure instead wherever reasonably possible.</p>
-<p><a class="el" href="event_8h.html#ab4c22e2920f70becd9b2ef752efd7975" title="Start the framework.">spdk_app_start()</a> no longer exit()'s on an internal failure, but instead returns a non-zero error status.</p>
+<p><a class="el" href="event_8h.html#a3901d9ed6c234d92296db9ec9252a0f5" title="Start the framework.">spdk_app_start()</a> no longer exit()'s on an internal failure, but instead returns a non-zero error status.</p>
 <p><a class="el" href="event_8h.html#acc52e8c68c8ccec4640e14f687157afe" title="Helper function for parsing arguments and printing usage messages.">spdk_app_parse_args()</a> no longer exit()'s on help, '-h', or an invalid option, but instead returns SPDK_APP_PARSE_ARGS_HELP and SPDK_APP_PARSE_ARGS_FAIL, respectively, and SPDK_APP_PARSE_ARGS_SUCCESS on success.</p>
 <p>spdk_pci_get_device() has been deprecated and will be removed in SPDK v18.07.</p>
 <h2>I/O Channels</h2>

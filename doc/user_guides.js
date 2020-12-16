@@ -169,6 +169,8 @@ var user_guides =
         [ "bdev_compress_delete", "jsonrpc.html#rpc_bdev_compress_delete", null ],
         [ "bdev_compress_get_orphans", "jsonrpc.html#rpc_bdev_compress_get_orphans", null ],
         [ "bdev_compress_set_pmd", "jsonrpc.html#rpc_bdev_compress_set_pmd", null ],
+        [ "bdev_crypto_create", "jsonrpc.html#rpc_bdev_crypto_create", null ],
+        [ "bdev_crypto_delete", "jsonrpc.html#rpc_bdev_crypto_delete", null ],
         [ "bdev_ocf_create", "jsonrpc.html#rpc_bdev_ocf_create", null ],
         [ "bdev_ocf_delete", "jsonrpc.html#rpc_bdev_ocf_delete", null ],
         [ "bdev_ocf_get_stats", "jsonrpc.html#rpc_bdev_ocf_get_stats", null ],

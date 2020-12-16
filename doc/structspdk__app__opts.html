@@ -268,6 +268,9 @@ uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>num_entries</b></
 <tr class="memitem:a74c03a91caa15961c35374bf2465a279"><td class="memItemLeft" align="right" valign="top"><a id="a74c03a91caa15961c35374bf2465a279"></a>
 uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>base_virtaddr</b></td></tr>
 <tr class="separator:a74c03a91caa15961c35374bf2465a279"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a7cefefd12eac2f22efdc24962da925"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__app__opts.html#a2a7cefefd12eac2f22efdc24962da925">opts_size</a></td></tr>
+<tr class="memdesc:a2a7cefefd12eac2f22efdc24962da925"><td class="mdescLeft">&#160;</td><td class="mdescRight">The size of <a class="el" href="structspdk__app__opts.html" title="Event framework initialization options.">spdk_app_opts</a> according to the caller of this library is used for ABI compatibility.  <a href="#a2a7cefefd12eac2f22efdc24962da925">More...</a><br /></td></tr>
+<tr class="separator:a2a7cefefd12eac2f22efdc24962da925"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Event framework initialization options. </p>
@@ -285,6 +288,23 @@ uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>base_virtaddr</b>
 </div><div class="memdoc">
 
 <p>Opaque context for use of the env implementation. </p>
+
+</div>
+</div>
+<a id="a2a7cefefd12eac2f22efdc24962da925"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2a7cefefd12eac2f22efdc24962da925">&#9670;&nbsp;</a></span>opts_size</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t spdk_app_opts::opts_size</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The size of <a class="el" href="structspdk__app__opts.html" title="Event framework initialization options.">spdk_app_opts</a> according to the caller of this library is used for ABI compatibility. </p>
+<p>The library uses this field to know how many fields in this structure are valid. And the library will populate any remaining fields with default values. After that, new added fields should be put after opts_size. </p>
 
 </div>
 </div>

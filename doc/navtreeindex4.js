@@ -245,8 +245,8 @@ var NAVTREEINDEX4 =
 "jsonrpc.html#jsonrpc_overview":[3,8,0],
 "jsonrpc.html#jsonrpc_parser_error":[3,8,0,0,0],
 "jsonrpc.html#notify_get_notifications":[3,8,6,24],
-"jsonrpc.html#rpc_bdev_aio_create":[3,8,2,19],
-"jsonrpc.html#rpc_bdev_aio_delete":[3,8,2,20],
+"jsonrpc.html#rpc_bdev_aio_create":[3,8,2,21],
+"jsonrpc.html#rpc_bdev_aio_delete":[3,8,2,22],
 "jsonrpc.html#rpc_bdev_compress_create":[3,8,2,7],
 "jsonrpc.html#rpc_bdev_compress_delete":[3,8,2,8],
 "jsonrpc.html#rpc_bdev_compress_get_orphans":[3,8,2,9]
