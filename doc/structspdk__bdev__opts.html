@@ -159,7 +159,28 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>bdev_io_cache_siz
 <tr class="memitem:aaeaa69bcf692e3f54cd75969007dd5e1"><td class="memItemLeft" align="right" valign="top"><a id="aaeaa69bcf692e3f54cd75969007dd5e1"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>bdev_auto_examine</b></td></tr>
 <tr class="separator:aaeaa69bcf692e3f54cd75969007dd5e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8bc8895a73d982fe8c5bc456aeccab49"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev__opts.html#a8bc8895a73d982fe8c5bc456aeccab49">opts_size</a></td></tr>
+<tr class="memdesc:a8bc8895a73d982fe8c5bc456aeccab49"><td class="mdescLeft">&#160;</td><td class="mdescRight">The size of <a class="el" href="structspdk__bdev__opts.html">spdk_bdev_opts</a> according to the caller of this library is used for ABI compatibility.  <a href="#a8bc8895a73d982fe8c5bc456aeccab49">More...</a><br /></td></tr>
+<tr class="separator:a8bc8895a73d982fe8c5bc456aeccab49"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Field Documentation</h2>
+<a id="a8bc8895a73d982fe8c5bc456aeccab49"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8bc8895a73d982fe8c5bc456aeccab49">&#9670;&nbsp;</a></span>opts_size</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t spdk_bdev_opts::opts_size</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The size of <a class="el" href="structspdk__bdev__opts.html">spdk_bdev_opts</a> according to the caller of this library is used for ABI compatibility. </p>
+<p>The library uses this field to know how many fields in this structure are valid. And the library will populate any remaining fields with default values. New added fields should be put at the end of the struct. </p>
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li><a class="el" href="bdev_8h.html">bdev.h</a></li>
 </ul>

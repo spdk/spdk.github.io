@@ -87,7 +87,7 @@ var bdev_8h =
     [ "spdk_bdev_get_name", "bdev_8h.html#ad97a853dcb945bf004817424b7aa28af", null ],
     [ "spdk_bdev_get_num_blocks", "bdev_8h.html#a86568eca8f0b4d0dc9bc59c5138fc7a5", null ],
     [ "spdk_bdev_get_optimal_io_boundary", "bdev_8h.html#aa79625889e23318204d235da36a4fa02", null ],
-    [ "spdk_bdev_get_opts", "bdev_8h.html#ae5b45f98f76615c2c9ee1fd3d11149b6", null ],
+    [ "spdk_bdev_get_opts", "bdev_8h.html#ab0c4412ed5d0e1869620965304d36b7f", null ],
     [ "spdk_bdev_get_product_name", "bdev_8h.html#a1cb4d1f8822c30be8c5d9c5dc3e62483", null ],
     [ "spdk_bdev_get_qd", "bdev_8h.html#a471f32e8948203f7aaf320396a1ae7c9", null ],
     [ "spdk_bdev_get_qd_sampling_period", "bdev_8h.html#adab852ac707702316bf869a3d7dfdc85", null ],

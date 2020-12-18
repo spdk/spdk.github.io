@@ -147,6 +147,8 @@ $(document).ready(function(){initNavTree('changelog.html','');});
 <div class="contents">
 <div class="textblock"><h1><a class="anchor" id="changelog-v21-01"></a>
 v21.01: (Upcoming Release)</h1>
+<h2>bdev</h2>
+<p>An <code>opts_size</code>element was added in the <code><a class="el" href="structspdk__bdev__opts.html">spdk_bdev_opts</a></code> structure to solve the ABI compatiblity issue between different SPDK version. And also add <code>opts_size</code> parameter in spdk_bdev_get_opts function.</p>
 <h2>event</h2>
 <p>The pci_whitelist and pci_blacklist members of struct <a class="el" href="structspdk__app__opts.html" title="Event framework initialization options.">spdk_app_opts</a> have been deprecated. The new members are named pci_allowed and pci_blocked respectively.</p>
 <p>The &ndash;pci-blacklist command line option has been deprecated, replaced with &ndash;pci-blocked.</p>
@@ -839,7 +841,7 @@ v18.10: Dynamic memory allocation, Crypto Virtual Bdev, jsonrpc-client, SPDKCLI 
 v18.07: Raid, Infrastructure Improvements, Bug Fixes</h1>
 <h2>bdev</h2>
 <p>A new public header file <a class="el" href="bdev__module_8h.html" title="Block Device Module Interface.">bdev_module.h</a> has been introduced to facilitate the development of new bdev modules. This header includes an interface for the <a class="el" href="structspdk__bdev__part.html">spdk_bdev_part</a> and spdk_bdev_part_base objects to enable the creation of multiple virtual bdevs on top of a single base bdev and should act as the primary API for module authors.</p>
-<p>spdk_bdev_get_opts() and spdk_bdev_set_opts() were added to set bdev-wide options.</p>
+<p><a class="el" href="bdev_8h.html#ab0c4412ed5d0e1869620965304d36b7f" title="Get the options for the bdev module.">spdk_bdev_get_opts()</a> and spdk_bdev_set_opts() were added to set bdev-wide options.</p>
 <p>A mechanism for handling out of memory condition errors (ENOMEM) returned from I/O submission requests at the bdev layer has been added. See <a class="el" href="bdev_8h.html#acc4beee18ded7837fa92bd7c34e7ef2e" title="Add an entry into the calling thread&#39;s queue to be notified when an spdk_bdev_io becomes available.">spdk_bdev_queue_io_wait()</a>.</p>
 <p>The <a class="el" href="bdev_8h.html#ab1ba28ba382edd1d792d51a054eb3aa2" title="Return I/O statistics for this channel.">spdk_bdev_get_io_stat()</a> function now returns cumulative totals instead of resetting on each call. This allows multiple callers to query I/O statistics without conflicting with each other. Existing users will need to adjust their code to record the previous I/O statistics to calculate the delta between calls.</p>
 <p>I/O queue depth tracking and samples options have been added. See <a class="el" href="bdev_8h.html#a471f32e8948203f7aaf320396a1ae7c9" title="Get the most recently measured queue depth from a bdev.">spdk_bdev_get_qd()</a>, <a class="el" href="bdev_8h.html#adab852ac707702316bf869a3d7dfdc85" title="Get the queue depth polling period.">spdk_bdev_get_qd_sampling_period()</a>, and <a class="el" href="bdev_8h.html#a9d37ad1d4da0bcb51ada76dbe4f4ce15" title="Enable or disable queue depth sampling for this bdev.">spdk_bdev_set_qd_sampling_period()</a>.</p>
