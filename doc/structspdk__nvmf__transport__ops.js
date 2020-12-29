@@ -6,7 +6,7 @@ var structspdk__nvmf__transport__ops =
     [ "destroy", "structspdk__nvmf__transport__ops.html#add528f11c2846f57ced92a3da9457bd5", null ],
     [ "dump_opts", "structspdk__nvmf__transport__ops.html#a1d7d193990382233f3c4296d4456ef09", null ],
     [ "get_optimal_poll_group", "structspdk__nvmf__transport__ops.html#a0a4b65e9d7fe480b70bc37ffe88e89fc", null ],
-    [ "listen", "structspdk__nvmf__transport__ops.html#a434205e227615c534b70df154eeeaf33", null ],
+    [ "listen", "structspdk__nvmf__transport__ops.html#a4f1a858ec5f255a3479941b0d511bb48", null ],
     [ "listen_associate", "structspdk__nvmf__transport__ops.html#a5c0ed21883564670cf8b3a6a84717b57", null ],
     [ "listener_discover", "structspdk__nvmf__transport__ops.html#a26d773cfb4178b54b60a4e4212815f16", null ],
     [ "name", "structspdk__nvmf__transport__ops.html#a2ed87a42a2882535b1833fcc3785ca95", null ],
@@ -26,6 +26,7 @@ var structspdk__nvmf__transport__ops =
     [ "req_complete", "structspdk__nvmf__transport__ops.html#a144fd3bb2efe4616a2d9b78f93f969e6", null ],
     [ "req_free", "structspdk__nvmf__transport__ops.html#a36202727719ed813d03da75bc70e4868", null ],
     [ "stop_listen", "structspdk__nvmf__transport__ops.html#a79190a46c19b7d92d8929a7470afeb94", null ],
-    [ "subsystem_opts_parse", "structspdk__nvmf__transport__ops.html#ac807b4ed3a942167fe6e63b7adc42442", null ],
+    [ "subsystem_add_ns", "structspdk__nvmf__transport__ops.html#a3cfc9284b5467a989daed1e59692eb5a", null ],
+    [ "subsystem_remove_ns", "structspdk__nvmf__transport__ops.html#af0c5a0e08b9fad80e893300411062d61", null ],
     [ "type", "structspdk__nvmf__transport__ops.html#a22ddd0d23a055a17e6bd10fe4927a4db", null ]
 ];

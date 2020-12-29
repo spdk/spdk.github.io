@@ -188,6 +188,9 @@ struct <a class="el" href="structspdk__bs__type.html">spdk_bs_type</a>&#160;</td
 <tr class="memitem:a7e0a18c6e415b9242c63eed9141736e3"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bs__opts.html#a7e0a18c6e415b9242c63eed9141736e3">iter_cb_arg</a></td></tr>
 <tr class="memdesc:a7e0a18c6e415b9242c63eed9141736e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Argument passed to iter_cb_fn for each blob.  <a href="#a7e0a18c6e415b9242c63eed9141736e3">More...</a><br /></td></tr>
 <tr class="separator:a7e0a18c6e415b9242c63eed9141736e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae08542c0960c45bc6acaffc68aaeaaab"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bs__opts.html#ae08542c0960c45bc6acaffc68aaeaaab">opts_size</a></td></tr>
+<tr class="memdesc:ae08542c0960c45bc6acaffc68aaeaaab"><td class="mdescLeft">&#160;</td><td class="mdescRight">The size of <a class="el" href="structspdk__bs__opts.html">spdk_bs_opts</a> according to the caller of this library is used for ABI compatibility.  <a href="#ae08542c0960c45bc6acaffc68aaeaaab">More...</a><br /></td></tr>
+<tr class="separator:ae08542c0960c45bc6acaffc68aaeaaab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Field Documentation</h2>
 <a id="aa9f80152a5720e25bc52ab4a89113cdf"></a>
@@ -236,6 +239,23 @@ struct <a class="el" href="structspdk__bs__type.html">spdk_bs_type</a>&#160;</td
 </div><div class="memdoc">
 
 <p>Callback function to invoke for each blob. </p>
+
+</div>
+</div>
+<a id="ae08542c0960c45bc6acaffc68aaeaaab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae08542c0960c45bc6acaffc68aaeaaab">&#9670;&nbsp;</a></span>opts_size</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t spdk_bs_opts::opts_size</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The size of <a class="el" href="structspdk__bs__opts.html">spdk_bs_opts</a> according to the caller of this library is used for ABI compatibility. </p>
+<p>The library uses this field to know how many fields in this structure are valid. And the library will populate any remaining fields with default values. After that, new added fields should be put in the end of the struct. </p>
 
 </div>
 </div>

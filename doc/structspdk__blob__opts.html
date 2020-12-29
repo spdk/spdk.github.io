@@ -175,7 +175,28 @@ struct <a class="el" href="structspdk__blob__xattr__opts.html">spdk_blob_xattr_o
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__blob__opts.html#a33c151fb11b4808154a1d93f4bbec5fc">use_extent_table</a></td></tr>
 <tr class="memdesc:a33c151fb11b4808154a1d93f4bbec5fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable separate extent pages in metadata. <br /></td></tr>
 <tr class="separator:a33c151fb11b4808154a1d93f4bbec5fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4cc3d1a37fb69323f972fda4134adb54"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__blob__opts.html#a4cc3d1a37fb69323f972fda4134adb54">opts_size</a></td></tr>
+<tr class="memdesc:a4cc3d1a37fb69323f972fda4134adb54"><td class="mdescLeft">&#160;</td><td class="mdescRight">The size of <a class="el" href="structspdk__blob__opts.html">spdk_blob_opts</a> according to the caller of this library is used for ABI compatibility.  <a href="#a4cc3d1a37fb69323f972fda4134adb54">More...</a><br /></td></tr>
+<tr class="separator:a4cc3d1a37fb69323f972fda4134adb54"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Field Documentation</h2>
+<a id="a4cc3d1a37fb69323f972fda4134adb54"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4cc3d1a37fb69323f972fda4134adb54">&#9670;&nbsp;</a></span>opts_size</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t spdk_blob_opts::opts_size</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The size of <a class="el" href="structspdk__blob__opts.html">spdk_blob_opts</a> according to the caller of this library is used for ABI compatibility. </p>
+<p>The library uses this field to know how many fields in this structure are valid. And the library will populate any remaining fields with default values. New added fields should be put at the end of the struct. </p>
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li><a class="el" href="blob_8h.html">blob.h</a></li>
 </ul>

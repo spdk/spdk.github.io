@@ -173,10 +173,6 @@ enum <a class="el" href="nvme_8h.html#ae87a03c28984a2c0499d50ef5e9d0ece">spdk_nv
 void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvmf__transport__ops.html#afa8e71018c357d6f6ea2293e178fe295">opts_init</a> )(struct <a class="el" href="structspdk__nvmf__transport__opts.html">spdk_nvmf_transport_opts</a> *opts)</td></tr>
 <tr class="memdesc:afa8e71018c357d6f6ea2293e178fe295"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize transport options to default value. <br /></td></tr>
 <tr class="separator:afa8e71018c357d6f6ea2293e178fe295"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac807b4ed3a942167fe6e63b7adc42442"><td class="memItemLeft" align="right" valign="top"><a id="ac807b4ed3a942167fe6e63b7adc42442"></a>
-int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvmf__transport__ops.html#ac807b4ed3a942167fe6e63b7adc42442">subsystem_opts_parse</a> )(struct <a class="el" href="structspdk__nvmf__transport.html">spdk_nvmf_transport</a> *transport, const struct spdk_nvmf_subsystem *subsystem, const struct <a class="el" href="structspdk__json__val.html">spdk_json_val</a> *opts)</td></tr>
-<tr class="memdesc:ac807b4ed3a942167fe6e63b7adc42442"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parse a subsystem opts. <br /></td></tr>
-<tr class="separator:ac807b4ed3a942167fe6e63b7adc42442"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1c70d537837f405619d127ea6a926694"><td class="memItemLeft" align="right" valign="top"><a id="a1c70d537837f405619d127ea6a926694"></a>
 struct <a class="el" href="structspdk__nvmf__transport.html">spdk_nvmf_transport</a> *(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvmf__transport__ops.html#a1c70d537837f405619d127ea6a926694">create</a> )(struct <a class="el" href="structspdk__nvmf__transport__opts.html">spdk_nvmf_transport_opts</a> *opts)</td></tr>
 <tr class="memdesc:a1c70d537837f405619d127ea6a926694"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a transport for the given transport opts. <br /></td></tr>
@@ -189,16 +185,22 @@ void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="st
 int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvmf__transport__ops.html#add528f11c2846f57ced92a3da9457bd5">destroy</a> )(struct <a class="el" href="structspdk__nvmf__transport.html">spdk_nvmf_transport</a> *transport, spdk_nvmf_transport_destroy_done_cb cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:add528f11c2846f57ced92a3da9457bd5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy the transport. <br /></td></tr>
 <tr class="separator:add528f11c2846f57ced92a3da9457bd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a434205e227615c534b70df154eeeaf33"><td class="memItemLeft" align="right" valign="top">int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvmf__transport__ops.html#a434205e227615c534b70df154eeeaf33">listen</a> )(struct <a class="el" href="structspdk__nvmf__transport.html">spdk_nvmf_transport</a> *transport, const struct <a class="el" href="structspdk__nvme__transport__id.html">spdk_nvme_transport_id</a> *trid)</td></tr>
-<tr class="memdesc:a434205e227615c534b70df154eeeaf33"><td class="mdescLeft">&#160;</td><td class="mdescRight">Instruct the transport to accept new connections at the address provided.  <a href="#a434205e227615c534b70df154eeeaf33">More...</a><br /></td></tr>
-<tr class="separator:a434205e227615c534b70df154eeeaf33"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f1a858ec5f255a3479941b0d511bb48"><td class="memItemLeft" align="right" valign="top">int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvmf__transport__ops.html#a4f1a858ec5f255a3479941b0d511bb48">listen</a> )(struct <a class="el" href="structspdk__nvmf__transport.html">spdk_nvmf_transport</a> *transport, const struct <a class="el" href="structspdk__nvme__transport__id.html">spdk_nvme_transport_id</a> *trid, struct <a class="el" href="structspdk__nvmf__listen__opts.html">spdk_nvmf_listen_opts</a> *opts)</td></tr>
+<tr class="memdesc:a4f1a858ec5f255a3479941b0d511bb48"><td class="mdescLeft">&#160;</td><td class="mdescRight">Instruct the transport to accept new connections at the address provided.  <a href="#a4f1a858ec5f255a3479941b0d511bb48">More...</a><br /></td></tr>
+<tr class="separator:a4f1a858ec5f255a3479941b0d511bb48"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a79190a46c19b7d92d8929a7470afeb94"><td class="memItemLeft" align="right" valign="top"><a id="a79190a46c19b7d92d8929a7470afeb94"></a>
 void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvmf__transport__ops.html#a79190a46c19b7d92d8929a7470afeb94">stop_listen</a> )(struct <a class="el" href="structspdk__nvmf__transport.html">spdk_nvmf_transport</a> *transport, const struct <a class="el" href="structspdk__nvme__transport__id.html">spdk_nvme_transport_id</a> *trid)</td></tr>
 <tr class="memdesc:a79190a46c19b7d92d8929a7470afeb94"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stop accepting new connections at the given address. <br /></td></tr>
 <tr class="separator:a79190a46c19b7d92d8929a7470afeb94"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5c0ed21883564670cf8b3a6a84717b57"><td class="memItemLeft" align="right" valign="top">int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvmf__transport__ops.html#a5c0ed21883564670cf8b3a6a84717b57">listen_associate</a> )(struct <a class="el" href="structspdk__nvmf__transport.html">spdk_nvmf_transport</a> *transport, const struct spdk_nvmf_subsystem *subsystem, const struct <a class="el" href="structspdk__nvme__transport__id.html">spdk_nvme_transport_id</a> *trid)</td></tr>
-<tr class="memdesc:a5c0ed21883564670cf8b3a6a84717b57"><td class="mdescLeft">&#160;</td><td class="mdescRight">A listener has been associated with a subsystem with the given NQN.  <a href="#a5c0ed21883564670cf8b3a6a84717b57">More...</a><br /></td></tr>
+<tr class="memdesc:a5c0ed21883564670cf8b3a6a84717b57"><td class="mdescLeft">&#160;</td><td class="mdescRight">It is a notification that a listener is being associated with the subsystem.  <a href="#a5c0ed21883564670cf8b3a6a84717b57">More...</a><br /></td></tr>
 <tr class="separator:a5c0ed21883564670cf8b3a6a84717b57"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3cfc9284b5467a989daed1e59692eb5a"><td class="memItemLeft" align="right" valign="top">int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvmf__transport__ops.html#a3cfc9284b5467a989daed1e59692eb5a">subsystem_add_ns</a> )(struct <a class="el" href="structspdk__nvmf__transport.html">spdk_nvmf_transport</a> *transport, const struct spdk_nvmf_subsystem *subsystem, struct spdk_nvmf_ns *ns)</td></tr>
+<tr class="memdesc:a3cfc9284b5467a989daed1e59692eb5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">It is a notification that a namespace is being added to the subsystem.  <a href="#a3cfc9284b5467a989daed1e59692eb5a">More...</a><br /></td></tr>
+<tr class="separator:a3cfc9284b5467a989daed1e59692eb5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0c5a0e08b9fad80e893300411062d61"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvmf__transport__ops.html#af0c5a0e08b9fad80e893300411062d61">subsystem_remove_ns</a> )(struct <a class="el" href="structspdk__nvmf__transport.html">spdk_nvmf_transport</a> *transport, const struct spdk_nvmf_subsystem *subsystem, uint32_t nsid)</td></tr>
+<tr class="memdesc:af0c5a0e08b9fad80e893300411062d61"><td class="mdescLeft">&#160;</td><td class="mdescRight">It is a notification that a namespace has been removed from the subsystem.  <a href="#af0c5a0e08b9fad80e893300411062d61">More...</a><br /></td></tr>
+<tr class="separator:af0c5a0e08b9fad80e893300411062d61"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7ae5eeb06fa51027664459a492154f43"><td class="memItemLeft" align="right" valign="top"><a id="a7ae5eeb06fa51027664459a492154f43"></a>
 uint32_t(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvmf__transport__ops.html#a7ae5eeb06fa51027664459a492154f43">accept</a> )(struct <a class="el" href="structspdk__nvmf__transport.html">spdk_nvmf_transport</a> *transport)</td></tr>
 <tr class="memdesc:a7ae5eeb06fa51027664459a492154f43"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check for new connections on the transport. <br /></td></tr>
@@ -264,14 +266,14 @@ void(*&#160;</td><td class="memItemRight" valign="bottom"><b>poll_group_free_sta
 <tr class="separator:af75a8f9214c03164a00dae20747fdb14"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Field Documentation</h2>
-<a id="a434205e227615c534b70df154eeeaf33"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a434205e227615c534b70df154eeeaf33">&#9670;&nbsp;</a></span>listen</h2>
+<a id="a4f1a858ec5f255a3479941b0d511bb48"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4f1a858ec5f255a3479941b0d511bb48">&#9670;&nbsp;</a></span>listen</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int(* spdk_nvmf_transport_ops::listen) (struct <a class="el" href="structspdk__nvmf__transport.html">spdk_nvmf_transport</a> *transport, const struct <a class="el" href="structspdk__nvme__transport__id.html">spdk_nvme_transport_id</a> *trid)</td>
+          <td class="memname">int(* spdk_nvmf_transport_ops::listen) (struct <a class="el" href="structspdk__nvmf__transport.html">spdk_nvmf_transport</a> *transport, const struct <a class="el" href="structspdk__nvme__transport__id.html">spdk_nvme_transport_id</a> *trid, struct <a class="el" href="structspdk__nvmf__listen__opts.html">spdk_nvmf_listen_opts</a> *opts)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -293,9 +295,44 @@ void(*&#160;</td><td class="memItemRight" valign="bottom"><b>poll_group_free_sta
       </table>
 </div><div class="memdoc">
 
-<p>A listener has been associated with a subsystem with the given NQN. </p>
-<p>This is only a notification. Most transports will not need to take any action here, as the enforcement of the association is done in the generic code.</p>
+<p>It is a notification that a listener is being associated with the subsystem. </p>
+<p>Most transports will not need to take any action here, as the enforcement of the association is done in the generic code.</p>
 <p>Returns a negated errno code to block the association. 0 to allow. </p>
+
+</div>
+</div>
+<a id="a3cfc9284b5467a989daed1e59692eb5a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3cfc9284b5467a989daed1e59692eb5a">&#9670;&nbsp;</a></span>subsystem_add_ns</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int(* spdk_nvmf_transport_ops::subsystem_add_ns) (struct <a class="el" href="structspdk__nvmf__transport.html">spdk_nvmf_transport</a> *transport, const struct spdk_nvmf_subsystem *subsystem, struct spdk_nvmf_ns *ns)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>It is a notification that a namespace is being added to the subsystem. </p>
+<p>Most transports will not need to take any action here.</p>
+<p>Returns a negated errno code to block the attachment. 0 to allow. </p>
+
+</div>
+</div>
+<a id="af0c5a0e08b9fad80e893300411062d61"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af0c5a0e08b9fad80e893300411062d61">&#9670;&nbsp;</a></span>subsystem_remove_ns</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void(* spdk_nvmf_transport_ops::subsystem_remove_ns) (struct <a class="el" href="structspdk__nvmf__transport.html">spdk_nvmf_transport</a> *transport, const struct spdk_nvmf_subsystem *subsystem, uint32_t nsid)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>It is a notification that a namespace has been removed from the subsystem. </p>
+<p>Most transports will not need to take any action here. </p>
 
 </div>
 </div>

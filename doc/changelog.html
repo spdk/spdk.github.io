@@ -148,7 +148,11 @@ $(document).ready(function(){initNavTree('changelog.html','');});
 <div class="textblock"><h1><a class="anchor" id="changelog-v21-01"></a>
 v21.01: (Upcoming Release)</h1>
 <h2>bdev</h2>
-<p>An <code>opts_size</code>element was added in the <code><a class="el" href="structspdk__bdev__opts.html">spdk_bdev_opts</a></code> structure to solve the ABI compatiblity issue between different SPDK version. And also add <code>opts_size</code> parameter in spdk_bdev_get_opts function.</p>
+<p>An <code>opts_size</code> element was added in the <code><a class="el" href="structspdk__bdev__opts.html">spdk_bdev_opts</a></code> structure to solve the ABI compatiblity issue between different SPDK version. And also add <code>opts_size</code> parameter in spdk_bdev_get_opts function. Two fields <code>small_buf_pool_size</code> and <code>large_buf_pool_size</code> were added into <a class="el" href="structspdk__bdev__opts.html">spdk_bdev_opts</a>, which were used to determine the small and large buffer pool size of the whole bdev module.</p>
+<h2>blob</h2>
+<p>An <code>opts_size</code> element was added in the <code><a class="el" href="structspdk__bs__opts.html">spdk_bs_opts</a></code> structure to solve the ABI compatiblity issue between different SPDK version. And also add <code>opts_size</code> parameter in <code>spdk_bs_opts_init</code> function.</p>
+<p>An <code>opts_size</code> element was added in the <code><a class="el" href="structspdk__blob__opts.html">spdk_blob_opts</a></code> structure to solve the ABI compatiblity issue between different SPDK version. And also add <code>opts_size</code> parameter in <code>spdk_blob_opts_init</code> function.</p>
+<p>An <code>opts_size</code> element was added in the <code><a class="el" href="structspdk__blob__open__opts.html">spdk_blob_open_opts</a></code> structure to solve the ABI compatiblity issue between different SPDK version. And also add <code>opts_size</code> parameter in <code>spdk_blob_open_opts_init</code> function.</p>
 <h2>event</h2>
 <p>The pci_whitelist and pci_blacklist members of struct <a class="el" href="structspdk__app__opts.html" title="Event framework initialization options.">spdk_app_opts</a> have been deprecated. The new members are named pci_allowed and pci_blocked respectively.</p>
 <p>The &ndash;pci-blacklist command line option has been deprecated, replaced with &ndash;pci-blocked.</p>
@@ -156,6 +160,8 @@ v21.01: (Upcoming Release)</h1>
 <h2>env</h2>
 <p>The pci_whitelist, pci_blacklist and master_core members of struct <a class="el" href="structspdk__env__opts.html" title="Environment initialization options.">spdk_env_opts</a> have been deprecated. The new members are named pci_allowed, pci_blocked and main_core respectively.</p>
 <p>An <code>opts_size</code>element was added in the <code><a class="el" href="structspdk__app__opts.html" title="Event framework initialization options.">spdk_app_opts</a></code> structure to solve the ABI compatiblity issue between different SPDK version. An <code>opts_size</code> parameter is added into <code>spdk_app_opts_init</code> function.</p>
+<h2>nbd</h2>
+<p>Change the return type of function <code>spdk_nbd_stop</code> from void to int. And update the <code>spdk_nbd_fini</code> with two parameters to make its behavior from sync to async.</p>
 <h2>nvmf</h2>
 <p>Broadcom FC LLD driver and SPDK NVMe-oF FC transport consolidated one LLD API, <code>nvmf_fc_init_poller_queues</code> into another LLD API <code>nvmf_fc_init_q</code>. Hence updating Broadcom FC LLD driver to the latest is required.</p>
 <p>The functions <code>destroy</code> and <code>qpair_fini</code> in the transport interface now accept a cb_fn and cb_arg to call upon completion, and their execution can be asynchronous.</p>
@@ -165,6 +171,7 @@ v21.01: (Upcoming Release)</h1>
 <p>A new API <code>spdk_jsonrpc_send_bool_response</code> was added to allow sending response for writing json bool results into one function. Update API <code>bdev_nvme_set_options</code> and add a keep_alive_timeout_ms parameter. Now you can specify the keep_alive_timeout before creating NVMe bdev.</p>
 <h2>rpc</h2>
 <p>An new optional parameter <code>wait</code> was added to the RPC <code>iscsi_create_portal_group</code>, and an new RPC <code>iscsi_start_portal_group</code> was added. They will be used not to start listening on portals for a portal group until all associated target nodes are created at startup, otherwise some iSCSI initiators may fail to re-login when SPDK iSCSI target application restarts.</p>
+<p>Two optional parameter <code>--small-buf-pool-size</code> and <code>--large-buf-pool-size</code> were added into <code>bdev_set_options</code> function.</p>
 <h1>ioat</h1>
 <p>The PCI BDF whitelist option has been removed from the ioat_scan_accel_engine RPC. ioat PCI functions can still be allowed or denied using SPDK application command line options.</p>
 <h1><a class="anchor" id="changelog-v20-10"></a>
