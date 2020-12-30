@@ -267,7 +267,7 @@ Design Considerations</h2>
 <h3>Data Buffer Memory</h3>
 <p>As with all SPDK based applications, Blobstore requires memory used for data buffers to be allocated with SPDK API.</p>
 <h3>Error Handling</h3>
-<p>Asynchronous Blobstore callbacks all include an error number that should be checked; non-zero values indicate and error. Synchronous calls will typically return an error value if applicable.</p>
+<p>Asynchronous Blobstore callbacks all include an error number that should be checked; non-zero values indicate an error. Synchronous calls will typically return an error value if applicable.</p>
 <h3>Asynchronous API</h3>
 <p>Asynchronous callbacks will return control not immediately, but at the point in execution where no more forward progress can be made without blocking. Therefore, no assumptions can be made about the progress of an asynchronous call until the callback has completed.</p>
 <h3>Xattrs</h3>
