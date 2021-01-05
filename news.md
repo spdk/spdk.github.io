@@ -5,6 +5,11 @@ title:  "SPDK In The News"
 
 # News items
 
+## SPDK on Microsoft Windows
+
+### [Windows Platform Development Kit (WPDK)](https://openebs.io/blog/storage-is-evolving/)
+> MayaData has created the Windows Platform Development Kit (WPDK) to act as a foundational layer to make it easier to port the SPDK to Windows. Additionally, they are working with the SPDK community to make a few changes to the code base to support WPDK. Are you interested in porting SPDK to Windows? Please head to https://wpdk.github.io to get started. Community contributions are welcomed and needed!
+
 ## OpenEBS Mayastor: Accelerating Container Attached Storage with Intel® Optane™ Technology and SPDK
 
 ### [Mayastor NVMe-TCP performance](https://openebs.io/blog/mayastor-nvme-of-tcp-performance/)
