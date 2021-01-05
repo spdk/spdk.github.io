@@ -54,7 +54,7 @@ var NAVTREEINDEX1 =
 "bdev__zone_8h.html#afe1568ea11e6fe221cc860af5a21c665af946cf25c1f252ae7263520d0d165c90":[14,0,6,2,3],
 "bdev_module.html":[4,2],
 "bdev_pg.html":[4,1],
-"bdevperf.html":[8,2],
+"bdevperf.html":[8,1],
 "bit__array_8h.html":[14,0,7],
 "bit__array_8h.html#a050b7786c57f20a245db5510691f3f23":[14,0,7,0],
 "bit__array_8h.html#a13e840dcdf80ee0614e24c49da16a412":[14,0,7,12],

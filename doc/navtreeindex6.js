@@ -75,7 +75,6 @@ var NAVTREEINDEX6 =
 "notify.html#notify_register":[4,7,0],
 "notify.html#notify_send":[4,7,3],
 "notify.html#rpc_calls":[4,7,4],
-"nvme-cli.html":[8,1],
 "nvme.html":[7,0],
 "nvme.html#nvme_cuse":[7,0,8],
 "nvme.html#nvme_design":[7,0,4],
@@ -249,5 +248,6 @@ var NAVTREEINDEX6 =
 "nvme_8h.html#ad8aa3c9ff510fe73945549077df18436":[14,0,38,102],
 "nvme_8h.html#ada4ab089f73f3f43e9c5b8e6415e6f50":[14,0,38,87],
 "nvme_8h.html#adc2aa2be0d657be0c63d5abc02b274ec":[14,0,38,118],
-"nvme_8h.html#add21ceb016f09949ac6cef50e0566818":[14,0,38,24]
+"nvme_8h.html#add21ceb016f09949ac6cef50e0566818":[14,0,38,24],
+"nvme_8h.html#add21ceb016f09949ac6cef50e0566818a06c93626e819195260a55c69dba063c6":[14,0,38,24,0]
 };

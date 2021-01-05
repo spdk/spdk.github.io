@@ -55,7 +55,6 @@ var searchData=
   ['nvi',['nvi',['../structspdk__nvme__secondary__ctrl__entry.html#a1ef2a1e2dbe88c04cb6c45341cc8326b',1,'spdk_nvme_secondary_ctrl_entry']]],
   ['nvmcap',['nvmcap',['../structspdk__nvme__ns__data.html#a62e4d6afbb536bedde34973cc6f1e234',1,'spdk_nvme_ns_data']]],
   ['nvme_20driver',['NVMe Driver',['../nvme.html',1,'driver_modules']]],
-  ['nvme_2dcli',['nvme-cli',['../nvme-cli.html',1,'tools']]],
   ['nvme_2eh',['nvme.h',['../nvme_8h.html',1,'']]],
   ['nvme_5fintel_2eh',['nvme_intel.h',['../nvme__intel_8h.html',1,'']]],
   ['nvme_5fmi',['nvme_mi',['../structspdk__nvme__ctrlr__data.html#ab42eccec72aa0050441adc5065b9d525',1,'spdk_nvme_ctrlr_data']]],

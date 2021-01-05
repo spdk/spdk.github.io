@@ -1,6 +1,5 @@
 var NAVTREEINDEX25 =
 {
-"unionspdk__nvme__cmd__cdw11.html#ad97637261bb396bec59a50cb423e4b2f":[13,0,95,11],
 "unionspdk__nvme__cmd__cdw11.html#ad9c6e51adda86abdba24be8a0a3b24ae":[13,0,95,24],
 "unionspdk__nvme__cmd__cdw11.html#ada983746f27d872191fdcaf6f6e5a2a4":[13,0,95,0],
 "unionspdk__nvme__cmd__cdw11.html#aeca69a9de968c8b46d1a8e5c5364383c":[13,0,95,8],
@@ -249,5 +248,6 @@ var NAVTREEINDEX25 =
 "vhost.html#vhost_multiqueue":[3,5,5,0],
 "vhost.html#vhost_prereqs":[3,5,2],
 "vhost.html#vhost_qemu_config":[3,5,4,2],
-"vhost.html#vhost_start":[3,5,3]
+"vhost.html#vhost_start":[3,5,3],
+"vhost.html#vhost_toc":[3,5,0]
 };
