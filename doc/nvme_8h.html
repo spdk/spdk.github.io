@@ -361,6 +361,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ae13ccd2ea831842a5008eb95a32545c3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#ae13ccd2ea831842a5008eb95a32545c3">spdk_nvme_ctrlr_reset</a> (struct spdk_nvme_ctrlr *ctrlr)</td></tr>
 <tr class="memdesc:ae13ccd2ea831842a5008eb95a32545c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform a full hardware reset of the NVMe controller.  <a href="#ae13ccd2ea831842a5008eb95a32545c3">More...</a><br /></td></tr>
 <tr class="separator:ae13ccd2ea831842a5008eb95a32545c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0547769c5a00f5b502ea4f71f2fff947"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a0547769c5a00f5b502ea4f71f2fff947">spdk_nvme_ctrlr_reset_subsystem</a> (struct spdk_nvme_ctrlr *ctrlr)</td></tr>
+<tr class="memdesc:a0547769c5a00f5b502ea4f71f2fff947"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform a NVMe subsystem reset.  <a href="#a0547769c5a00f5b502ea4f71f2fff947">More...</a><br /></td></tr>
+<tr class="separator:a0547769c5a00f5b502ea4f71f2fff947"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4b7578aeee6b6a092a4a4013a2f32ce5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a4b7578aeee6b6a092a4a4013a2f32ce5">spdk_nvme_ctrlr_fail</a> (struct spdk_nvme_ctrlr *ctrlr)</td></tr>
 <tr class="memdesc:a4b7578aeee6b6a092a4a4013a2f32ce5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fail the given NVMe controller.  <a href="#a4b7578aeee6b6a092a4a4013a2f32ce5">More...</a><br /></td></tr>
 <tr class="separator:a4b7578aeee6b6a092a4a4013a2f32ce5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -3669,6 +3672,35 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_map_prps</b>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 on success, -1 on failure. </dd></dl>
+
+</div>
+</div>
+<a id="a0547769c5a00f5b502ea4f71f2fff947"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0547769c5a00f5b502ea4f71f2fff947">&#9670;&nbsp;</a></span>spdk_nvme_ctrlr_reset_subsystem()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_nvme_ctrlr_reset_subsystem </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_nvme_ctrlr *&#160;</td>
+          <td class="paramname"><em>ctrlr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Perform a NVMe subsystem reset. </p>
+<p>This function should be called from a single thread while no other threads are actively using the NVMe device. A subsystem reset is typically seen by the OS as a hot remove, followed by a hot add event.</p>
+<p>Any pointers returned from <a class="el" href="nvme_8h.html#a6f01fb8a5f404e41e6fa224a7942be08" title="Get a handle to a namespace for the given controller.">spdk_nvme_ctrlr_get_ns()</a>, <a class="el" href="nvme_8h.html#ab1863b5dccf2bcc49fe92275bc1e5a2a" title="Get the identify namespace data as defined by the NVMe specification.">spdk_nvme_ns_get_data()</a>, <a class="el" href="nvme__zns_8h.html#a2060f12903d107efb4d7c26a9c0a83a8" title="Get the Zoned Namespace Command Set Specific Identify Namespace data as defined by the NVMe Zoned Nam...">spdk_nvme_zns_ns_get_data()</a>, and <a class="el" href="nvme__zns_8h.html#a7e44f2e8ad190636f5b7e18bbfe3d301" title="Get the Zoned Namespace Command Set Specific Identify Controller data as defined by the NVMe Zoned Na...">spdk_nvme_zns_ctrlr_get_data()</a> may be invalidated by calling this function. The number of namespaces as returned by <a class="el" href="nvme_8h.html#a02b18deae44682a51177e8a4193af602" title="Get the number of namespaces for the given NVMe controller.">spdk_nvme_ctrlr_get_num_ns()</a> may also change.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ctrlr</td><td>Opaque handle to NVMe controller.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, -1 on failure, -ENOTSUP if subsystem reset is not supported. </dd></dl>
 
 </div>
 </div>

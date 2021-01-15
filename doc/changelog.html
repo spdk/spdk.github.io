@@ -149,10 +149,13 @@ $(document).ready(function(){initNavTree('changelog.html','');});
 v21.01: (Upcoming Release)</h1>
 <h2>bdev</h2>
 <p>An <code>opts_size</code> element was added in the <code><a class="el" href="structspdk__bdev__opts.html">spdk_bdev_opts</a></code> structure to solve the ABI compatiblity issue between different SPDK version. And also add <code>opts_size</code> parameter in spdk_bdev_get_opts function. Two fields <code>small_buf_pool_size</code> and <code>large_buf_pool_size</code> were added into <a class="el" href="structspdk__bdev__opts.html">spdk_bdev_opts</a>, which were used to determine the small and large buffer pool size of the whole bdev module.</p>
+<p>A new API <code>spdk_bdev_wait_for_examine</code> was added to allow for checking state of examine process. Along with corresponding <code>bdev_wait_for_examine</code> RPC, which is now always called during <code>spdk_bdev_subsystem_config_json</code> making sure every bdev is ready to be used.</p>
 <h2>blob</h2>
 <p>An <code>opts_size</code> element was added in the <code><a class="el" href="structspdk__bs__opts.html">spdk_bs_opts</a></code> structure to solve the ABI compatiblity issue between different SPDK version. And also add <code>opts_size</code> parameter in <code>spdk_bs_opts_init</code> function.</p>
 <p>An <code>opts_size</code> element was added in the <code><a class="el" href="structspdk__blob__opts.html">spdk_blob_opts</a></code> structure to solve the ABI compatiblity issue between different SPDK version. And also add <code>opts_size</code> parameter in <code>spdk_blob_opts_init</code> function.</p>
 <p>An <code>opts_size</code> element was added in the <code><a class="el" href="structspdk__blob__open__opts.html">spdk_blob_open_opts</a></code> structure to solve the ABI compatiblity issue between different SPDK version. And also add <code>opts_size</code> parameter in <code>spdk_blob_open_opts_init</code> function.</p>
+<h2>nvme</h2>
+<p>Added a new function <code>spdk_nvme_ctrlr_reset_subsystem</code> to perform a NVMe subsystem reset. Note: The NVMf target does not support the subsystem reset yet.</p>
 <h2>event</h2>
 <p>The pci_whitelist and pci_blacklist members of struct <a class="el" href="structspdk__app__opts.html" title="Event framework initialization options.">spdk_app_opts</a> have been deprecated. The new members are named pci_allowed and pci_blocked respectively.</p>
 <p>The &ndash;pci-blacklist command line option has been deprecated, replaced with &ndash;pci-blocked.</p>
@@ -163,6 +166,8 @@ v21.01: (Upcoming Release)</h1>
 <h2>nbd</h2>
 <p>Change the return type of function <code>spdk_nbd_stop</code> from void to int. And update the <code>spdk_nbd_fini</code> with two parameters to make its behavior from sync to async.</p>
 <h2>nvmf</h2>
+<p>nvmf_fc_lld_fini() now takes callback and hence updating FC Broadcom LLD driver to the latest is required.</p>
+<p>FC transport supported primary tagging and VMID.</p>
 <p>Broadcom FC LLD driver and SPDK NVMe-oF FC transport consolidated one LLD API, <code>nvmf_fc_init_poller_queues</code> into another LLD API <code>nvmf_fc_init_q</code>. Hence updating Broadcom FC LLD driver to the latest is required.</p>
 <p>The functions <code>destroy</code> and <code>qpair_fini</code> in the transport interface now accept a cb_fn and cb_arg to call upon completion, and their execution can be asynchronous.</p>
 <p>The SPDK nvmf target now supports async event notification for discovery log changes. This allows the initiator to create persistent connection to discovery controller and be notified of any discovery log changes.</p>

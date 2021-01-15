@@ -191,6 +191,9 @@ Typedefs</h2></td></tr>
 <tr class="memitem:a0c5602dfd313f90032dd91683b9663e3"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev_8h.html#a0c5602dfd313f90032dd91683b9663e3">spdk_bdev_io_completion_cb</a>) (struct <a class="el" href="structspdk__bdev__io.html">spdk_bdev_io</a> *bdev_io, bool success, void *cb_arg)</td></tr>
 <tr class="memdesc:a0c5602dfd313f90032dd91683b9663e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Block device completion callback.  <a href="#a0c5602dfd313f90032dd91683b9663e3">More...</a><br /></td></tr>
 <tr class="separator:a0c5602dfd313f90032dd91683b9663e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8ee74dcabcf41f4332c7e75b4afa11a"><td class="memItemLeft" align="right" valign="top"><a id="af8ee74dcabcf41f4332c7e75b4afa11a"></a>
+typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_wait_for_examine_cb</b>) (void *arg)</td></tr>
+<tr class="separator:af8ee74dcabcf41f4332c7e75b4afa11a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa6a8987bb3a1bc368881f6b81d249bd3"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev_8h.html#aa6a8987bb3a1bc368881f6b81d249bd3">spdk_bdev_init_cb</a>) (void *cb_arg, int rc)</td></tr>
 <tr class="memdesc:aa6a8987bb3a1bc368881f6b81d249bd3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Block device initialization callback.  <a href="#aa6a8987bb3a1bc368881f6b81d249bd3">More...</a><br /></td></tr>
 <tr class="separator:aa6a8987bb3a1bc368881f6b81d249bd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -274,6 +277,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a828be2f36a5c1e343488130c457f5bf5"><td class="memItemLeft" align="right" valign="top"><a id="a828be2f36a5c1e343488130c457f5bf5"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_set_opts</b> (struct <a class="el" href="structspdk__bdev__opts.html">spdk_bdev_opts</a> *opts)</td></tr>
 <tr class="separator:a828be2f36a5c1e343488130c457f5bf5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e34f9d44b0d59b4e1d88967e77d9675"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev_8h.html#a4e34f9d44b0d59b4e1d88967e77d9675">spdk_bdev_wait_for_examine</a> (spdk_bdev_wait_for_examine_cb cb_fn, void *cb_arg)</td></tr>
+<tr class="memdesc:a4e34f9d44b0d59b4e1d88967e77d9675"><td class="mdescLeft">&#160;</td><td class="mdescRight">Report when all bdevs finished the examine process.  <a href="#a4e34f9d44b0d59b4e1d88967e77d9675">More...</a><br /></td></tr>
+<tr class="separator:a4e34f9d44b0d59b4e1d88967e77d9675"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae720ef13c98f9ba40e6562d4a8582427"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev_8h.html#ae720ef13c98f9ba40e6562d4a8582427">spdk_bdev_examine</a> (const char *name)</td></tr>
 <tr class="memdesc:ae720ef13c98f9ba40e6562d4a8582427"><td class="mdescLeft">&#160;</td><td class="mdescRight">Examine a block device explicitly.  <a href="#ae720ef13c98f9ba40e6562d4a8582427">More...</a><br /></td></tr>
 <tr class="separator:ae720ef13c98f9ba40e6562d4a8582427"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -2830,6 +2836,45 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_set_opts</b>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="a4e34f9d44b0d59b4e1d88967e77d9675"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e34f9d44b0d59b4e1d88967e77d9675">&#9670;&nbsp;</a></span>spdk_bdev_wait_for_examine()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_bdev_wait_for_examine </td>
+          <td>(</td>
+          <td class="paramtype">spdk_bdev_wait_for_examine_cb&#160;</td>
+          <td class="paramname"><em>cb_fn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>cb_arg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Report when all bdevs finished the examine process. </p>
+<p>The registered cb_fn will be called just once. This function needs to be called again to receive further reports on examine process.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cb_fn</td><td>Callback function. </td></tr>
+    <tr><td class="paramname">cb_arg</td><td>Callback argument. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 if function was registered, suitable errno value otherwise </dd></dl>
 
 </div>
 </div>

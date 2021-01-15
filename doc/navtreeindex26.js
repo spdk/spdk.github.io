@@ -1,5 +1,14 @@
 var NAVTREEINDEX26 =
 {
+"vhost.html#vhost_cmd_line_args":[3,5,2,0],
+"vhost.html#vhost_config":[3,5,4],
+"vhost.html#vhost_example":[3,5,4,3],
+"vhost.html#vhost_hotattach":[3,5,5,1],
+"vhost.html#vhost_intro":[3,5,1],
+"vhost.html#vhost_multiqueue":[3,5,5,0],
+"vhost.html#vhost_prereqs":[3,5,2],
+"vhost.html#vhost_qemu_config":[3,5,4,2],
+"vhost.html#vhost_start":[3,5,3],
 "vhost.html#vhost_toc":[3,5,0],
 "vhost.html#vhost_vdev_create":[3,5,4,1],
 "vhost_8h.html":[14,0,60],

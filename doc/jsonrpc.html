@@ -502,6 +502,16 @@ bdev_examine</h2>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;method&quot;: &quot;bdev_examine&quot;,</div><div class="line">  &quot;params&quot;: {</div><div class="line">    &quot;name&quot;: &quot;Nvme0n1&quot;</div><div class="line">  }</div><div class="line">}</div></div><!-- fragment --><p>Example response:</p>
+<div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: true</div><div class="line">}</div></div><!-- fragment --><h2><a class="anchor" id="rpc_bdev_wait_for_examine"></a>
+bdev_wait_for_examine</h2>
+<p>Report when all bdevs have been examined by every bdev module.</p>
+<h3>Parameters</h3>
+<p>None</p>
+<h3>Response</h3>
+<p>The response is sent when all bdev modules had a chance to examine every bdev.</p>
+<h3>Example</h3>
+<p>Example request:</p>
+<div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;method&quot;: &quot;bdev_wait_for_examine&quot;,</div><div class="line">  &quot;id&quot;: 1</div><div class="line">}</div></div><!-- fragment --><p>Example response:</p>
 <div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: true</div><div class="line">}</div></div><!-- fragment --><h2><a class="anchor" id="rpc_bdev_get_iostat"></a>
 bdev_get_iostat</h2>
 <p>Get I/O statistics of block devices (bdevs).</p>

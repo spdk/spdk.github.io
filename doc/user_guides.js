@@ -161,6 +161,7 @@ var user_guides =
         [ "bdev_set_options", "jsonrpc.html#rpc_bdev_set_options", null ],
         [ "bdev_get_bdevs", "jsonrpc.html#rpc_bdev_get_bdevs", null ],
         [ "bdev_examine", "jsonrpc.html#rpc_bdev_examine", null ],
+        [ "bdev_wait_for_examine", "jsonrpc.html#rpc_bdev_wait_for_examine", null ],
         [ "bdev_get_iostat", "jsonrpc.html#rpc_bdev_get_iostat", null ],
         [ "bdev_enable_histogram", "jsonrpc.html#rpc_bdev_enable_histogram", null ],
         [ "bdev_get_histogram", "jsonrpc.html#rpc_bdev_get_histogram", null ],

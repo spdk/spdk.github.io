@@ -216,6 +216,7 @@ var annotated_dup =
     [ "spdk_nvmf_fc_lsdesc_disconn_cmd", "structspdk__nvmf__fc__lsdesc__disconn__cmd.html", "structspdk__nvmf__fc__lsdesc__disconn__cmd" ],
     [ "spdk_nvmf_fc_lsdesc_rjt", "structspdk__nvmf__fc__lsdesc__rjt.html", "structspdk__nvmf__fc__lsdesc__rjt" ],
     [ "spdk_nvmf_fc_lsdesc_rqst", "structspdk__nvmf__fc__lsdesc__rqst.html", "structspdk__nvmf__fc__lsdesc__rqst" ],
+    [ "spdk_nvmf_fc_vm_header", "structspdk__nvmf__fc__vm__header.html", "structspdk__nvmf__fc__vm__header" ],
     [ "spdk_nvmf_fc_wwn", "structspdk__nvmf__fc__wwn.html", "structspdk__nvmf__fc__wwn" ],
     [ "spdk_nvmf_fc_xfer_rdy_iu", "structspdk__nvmf__fc__xfer__rdy__iu.html", "structspdk__nvmf__fc__xfer__rdy__iu" ],
     [ "spdk_nvmf_listen_opts", "structspdk__nvmf__listen__opts.html", "structspdk__nvmf__listen__opts" ],

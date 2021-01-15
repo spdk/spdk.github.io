@@ -1,5 +1,7 @@
 var NAVTREEINDEX4 =
 {
+"ioat__spec_8h.html#a63a95b4a9941d41b83a393e9075fffdb":[14,0,28,48],
+"ioat__spec_8h.html#a6bebd5cd3ef794485504b79b1573ac8e":[14,0,28,26],
 "ioat__spec_8h.html#a75acf46dfd6a8b07239128d49ec56158":[14,0,28,46],
 "ioat__spec_8h.html#a76b1e3387e204a6cabcd1148bf3af29c":[14,0,28,21],
 "ioat__spec_8h.html#a7bddd4276d66b04e468d82094b5f698b":[14,0,28,12],
@@ -246,8 +248,6 @@ var NAVTREEINDEX4 =
 "jsonrpc.html#jsonrpc_overview":[3,8,0],
 "jsonrpc.html#jsonrpc_parser_error":[3,8,0,0,0],
 "jsonrpc.html#notify_get_notifications":[3,8,6,24],
-"jsonrpc.html#rpc_bdev_aio_create":[3,8,2,21],
-"jsonrpc.html#rpc_bdev_aio_delete":[3,8,2,22],
-"jsonrpc.html#rpc_bdev_compress_create":[3,8,2,7],
-"jsonrpc.html#rpc_bdev_compress_delete":[3,8,2,8]
+"jsonrpc.html#rpc_bdev_aio_create":[3,8,2,22],
+"jsonrpc.html#rpc_bdev_aio_delete":[3,8,2,23]
 };

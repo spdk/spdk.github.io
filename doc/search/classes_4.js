@@ -194,6 +194,7 @@ var searchData=
   ['spdk_5fnvmf_5ffc_5flsdesc_5fdisconn_5fcmd',['spdk_nvmf_fc_lsdesc_disconn_cmd',['../structspdk__nvmf__fc__lsdesc__disconn__cmd.html',1,'']]],
   ['spdk_5fnvmf_5ffc_5flsdesc_5frjt',['spdk_nvmf_fc_lsdesc_rjt',['../structspdk__nvmf__fc__lsdesc__rjt.html',1,'']]],
   ['spdk_5fnvmf_5ffc_5flsdesc_5frqst',['spdk_nvmf_fc_lsdesc_rqst',['../structspdk__nvmf__fc__lsdesc__rqst.html',1,'']]],
+  ['spdk_5fnvmf_5ffc_5fvm_5fheader',['spdk_nvmf_fc_vm_header',['../structspdk__nvmf__fc__vm__header.html',1,'']]],
   ['spdk_5fnvmf_5ffc_5fwwn',['spdk_nvmf_fc_wwn',['../structspdk__nvmf__fc__wwn.html',1,'']]],
   ['spdk_5fnvmf_5ffc_5fxfer_5frdy_5fiu',['spdk_nvmf_fc_xfer_rdy_iu',['../structspdk__nvmf__fc__xfer__rdy__iu.html',1,'']]],
   ['spdk_5fnvmf_5flisten_5fopts',['spdk_nvmf_listen_opts',['../structspdk__nvmf__listen__opts.html',1,'']]],

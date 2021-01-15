@@ -17,6 +17,7 @@ var bdev_8h =
     [ "spdk_bdev_io_timeout_cb", "bdev_8h.html#a83db84993554e784cbddf2d217f6ea4f", null ],
     [ "spdk_bdev_io_wait_cb", "bdev_8h.html#a9c7e19e090b8cdb22e8fc6b1984e5278", null ],
     [ "spdk_bdev_remove_cb_t", "bdev_8h.html#a51a55c97586c2d524fffcabc4d7910d6", null ],
+    [ "spdk_bdev_wait_for_examine_cb", "bdev_8h.html#af8ee74dcabcf41f4332c7e75b4afa11a", null ],
     [ "spdk_bdev_event_type", "bdev_8h.html#a13e432c6b290dcf392335a406206fd83", [
       [ "SPDK_BDEV_EVENT_REMOVE", "bdev_8h.html#a13e432c6b290dcf392335a406206fd83a89f4612602ac5a085667f620b767f9b9", null ],
       [ "SPDK_BDEV_EVENT_RESIZE", "bdev_8h.html#a13e432c6b290dcf392335a406206fd83acb97bc25f59f9d5ee74131c74d46febc", null ],
@@ -134,6 +135,7 @@ var bdev_8h =
     [ "spdk_bdev_subsystem_config_json", "bdev_8h.html#a57814ce5dc208380ebf39dab0e1ce9a8", null ],
     [ "spdk_bdev_unmap", "group__bdev__io__submit__functions.html#ga680c9c302998f7b003e2476e35d9ae4b", null ],
     [ "spdk_bdev_unmap_blocks", "group__bdev__io__submit__functions.html#ga7555fdd41019e29b40e535b72457d30b", null ],
+    [ "spdk_bdev_wait_for_examine", "bdev_8h.html#a4e34f9d44b0d59b4e1d88967e77d9675", null ],
     [ "spdk_bdev_write", "group__bdev__io__submit__functions.html#gaa740a114ef34d6a2f126d4e3a9dd9e9b", null ],
     [ "spdk_bdev_write_blocks", "group__bdev__io__submit__functions.html#ga12da8917f525a6e11cbf22b2b7652c89", null ],
     [ "spdk_bdev_write_blocks_with_md", "group__bdev__io__submit__functions.html#ga01380182ca77b43e2a854aa59058fe12", null ],
