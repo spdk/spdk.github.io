@@ -1,5 +1,6 @@
 var NAVTREEINDEX26 =
 {
+"vhost.html#vhost_bugs":[3,5,6],
 "vhost.html#vhost_cmd_line_args":[3,5,2,0],
 "vhost.html#vhost_config":[3,5,4],
 "vhost.html#vhost_example":[3,5,4,3],

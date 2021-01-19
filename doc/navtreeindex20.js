@@ -1,5 +1,6 @@
 var NAVTREEINDEX20 =
 {
+"structspdk__nvme__zns__ns__data.html#ad119491b52edb9847751d19deb3fbc85":[13,0,181,8],
 "structspdk__nvme__zns__ns__data.html#adca9d47db6e68a38bb6a2e611eadd643":[13,0,181,16],
 "structspdk__nvme__zns__ns__data.html#ae225c34e4c17bafe3c52364b8ea7d498":[13,0,181,14],
 "structspdk__nvme__zns__ns__data.html#afb5a0a3551ecb7a92dbd5db2d4fdab31":[13,0,181,12],
@@ -248,6 +249,5 @@ var NAVTREEINDEX20 =
 "structspdk__nvmf__fc__lsdesc__cr__assoc__cmd.html#a435152927f226c41e880825c0f7f0868":[13,0,211,5],
 "structspdk__nvmf__fc__lsdesc__cr__assoc__cmd.html#a92c9a8de6f311bfe82524f88f42cab56":[13,0,211,4],
 "structspdk__nvmf__fc__lsdesc__cr__assoc__cmd.html#a9472a4b00e218961d028d028ac079f6a":[13,0,211,9],
-"structspdk__nvmf__fc__lsdesc__cr__assoc__cmd.html#a94bde3fa44a75ad63cccf84191564c77":[13,0,211,10],
-"structspdk__nvmf__fc__lsdesc__cr__assoc__cmd.html#aab8d107f259bc850124895b2bf1dcae3":[13,0,211,1]
+"structspdk__nvmf__fc__lsdesc__cr__assoc__cmd.html#a94bde3fa44a75ad63cccf84191564c77":[13,0,211,10]
 };

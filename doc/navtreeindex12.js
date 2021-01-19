@@ -1,5 +1,6 @@
 var NAVTREEINDEX12 =
 {
+"scsi__spec_8h.html#a5b1c00e75e7ab3fffcca57bde36d43faaeb308efc5de945c34625e5e3d455528f":[14,0,51,90,0],
 "scsi__spec_8h.html#a60097cd0704b01104d5ed33a596ffdfa":[14,0,51,99],
 "scsi__spec_8h.html#a610d71c82527a39fc473fd91a0191c96":[14,0,51,25],
 "scsi__spec_8h.html#a674c3a18fa06757a591915f1cedada5f":[14,0,51,33],
@@ -248,6 +249,5 @@ var NAVTREEINDEX12 =
 "shfmt.html#shfmt_overview":[9,0,1],
 "shfmt.html#shfmt_toc":[9,0,0],
 "shfmt.html#shfmt_usage":[9,0,2],
-"sock_8h.html":[14,0,52],
-"sock_8h.html#a06f3441fbe7ea447b7ae03e71e074e27":[14,0,52,16]
+"sock_8h.html":[14,0,52]
 };

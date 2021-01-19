@@ -180,6 +180,7 @@ var user_guides =
         [ "bdev_malloc_delete", "jsonrpc.html#rpc_bdev_malloc_delete", null ],
         [ "bdev_null_create", "jsonrpc.html#rpc_bdev_null_create", null ],
         [ "bdev_null_delete", "jsonrpc.html#rpc_bdev_null_delete", null ],
+        [ "bdev_null_resize", "jsonrpc.html#rpc_bdev_null_resize", null ],
         [ "bdev_aio_create", "jsonrpc.html#rpc_bdev_aio_create", null ],
         [ "bdev_aio_delete", "jsonrpc.html#rpc_bdev_aio_delete", null ],
         [ "bdev_nvme_set_options", "jsonrpc.html#rpc_bdev_nvme_set_options", null ],
