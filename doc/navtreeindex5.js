@@ -1,5 +1,8 @@
 var NAVTREEINDEX5 =
 {
+"jsonrpc.html#notify_get_notifications":[3,8,6,24],
+"jsonrpc.html#rpc_bdev_aio_create":[3,8,2,23],
+"jsonrpc.html#rpc_bdev_aio_delete":[3,8,2,24],
 "jsonrpc.html#rpc_bdev_compress_create":[3,8,2,8],
 "jsonrpc.html#rpc_bdev_compress_delete":[3,8,2,9],
 "jsonrpc.html#rpc_bdev_compress_get_orphans":[3,8,2,10],
@@ -246,8 +249,5 @@ var NAVTREEINDEX5 =
 "log_8h.html#a880b1e27d71328429dbf4f65e02ff145":[14,0,33,21],
 "log_8h.html#a99820ac7f38f6ad187be62b3bbdb7d64":[14,0,33,27],
 "log_8h.html#aa9419a88ede016c62feaa52fb0fed019":[14,0,33,24],
-"log_8h.html#aaa20a1f56503b0d9f16c82b451fb338b":[14,0,33,12],
-"log_8h.html#ab34f1c87d98113395ab04415dbee96d8":[14,0,33,26],
-"log_8h.html#abe2c8e734e26212d5aa718ef8de9d7e1":[14,0,33,9],
-"log_8h.html#ad360332e6a9699cdfecdac00f768c0b1":[14,0,33,15]
+"log_8h.html#aaa20a1f56503b0d9f16c82b451fb338b":[14,0,33,12]
 };

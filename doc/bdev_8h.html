@@ -526,6 +526,9 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_set_opts</b>
 <tr class="memitem:ac3c213b4317d5077197950253af1ac50"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev_8h.html#ac3c213b4317d5077197950253af1ac50">spdk_bdev_io_get_scsi_status</a> (const struct <a class="el" href="structspdk__bdev__io.html">spdk_bdev_io</a> *bdev_io, int *sc, int *sk, int *asc, int *ascq)</td></tr>
 <tr class="memdesc:ac3c213b4317d5077197950253af1ac50"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the status of bdev_io as a SCSI status code.  <a href="#ac3c213b4317d5077197950253af1ac50">More...</a><br /></td></tr>
 <tr class="separator:ac3c213b4317d5077197950253af1ac50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a701290c13896ad545b58f5c5fecfbd93"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev_8h.html#a701290c13896ad545b58f5c5fecfbd93">spdk_bdev_io_get_aio_status</a> (const struct <a class="el" href="structspdk__bdev__io.html">spdk_bdev_io</a> *bdev_io, int *aio_result)</td></tr>
+<tr class="memdesc:a701290c13896ad545b58f5c5fecfbd93"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the status of bdev_io as aio errno.  <a href="#a701290c13896ad545b58f5c5fecfbd93">More...</a><br /></td></tr>
+<tr class="separator:a701290c13896ad545b58f5c5fecfbd93"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa05d8c0e82bfbcc209af1eb958230ede"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev_8h.html#aa05d8c0e82bfbcc209af1eb958230ede">spdk_bdev_io_get_iovec</a> (struct <a class="el" href="structspdk__bdev__io.html">spdk_bdev_io</a> *bdev_io, struct iovec **iovp, int *iovcntp)</td></tr>
 <tr class="memdesc:aa05d8c0e82bfbcc209af1eb958230ede"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the iovec describing the data buffer of a bdev_io.  <a href="#aa05d8c0e82bfbcc209af1eb958230ede">More...</a><br /></td></tr>
 <tr class="separator:aa05d8c0e82bfbcc209af1eb958230ede"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1983,6 +1986,43 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_set_opts</b>
   <table class="params">
     <tr><td class="paramname">cb_fn</td><td>Called when the initialization is complete. </td></tr>
     <tr><td class="paramname">cb_arg</td><td>Argument passed to function cb_fn. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a701290c13896ad545b58f5c5fecfbd93"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a701290c13896ad545b58f5c5fecfbd93">&#9670;&nbsp;</a></span>spdk_bdev_io_get_aio_status()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_bdev_io_get_aio_status </td>
+          <td>(</td>
+          <td class="paramtype">const struct <a class="el" href="structspdk__bdev__io.html">spdk_bdev_io</a> *&#160;</td>
+          <td class="paramname"><em>bdev_io</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>aio_result</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the status of bdev_io as aio errno. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bdev_io</td><td>I/O to get the status from. </td></tr>
+    <tr><td class="paramname">aio_result</td><td>Negative errno returned from AIO. </td></tr>
   </table>
   </dd>
 </dl>

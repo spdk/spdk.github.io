@@ -1,5 +1,8 @@
 var NAVTREEINDEX4 =
 {
+"ioat__spec_8h.html#a46cf9ae20c6a26978dab7fbfdaef09f7":[14,0,28,47],
+"ioat__spec_8h.html#a574858fc24ea5bfae7eecaa88e2cb3c5":[14,0,28,42],
+"ioat__spec_8h.html#a611ff074a1188af7b1ccf5592145972e":[14,0,28,23],
 "ioat__spec_8h.html#a63a95b4a9941d41b83a393e9075fffdb":[14,0,28,48],
 "ioat__spec_8h.html#a6bebd5cd3ef794485504b79b1573ac8e":[14,0,28,26],
 "ioat__spec_8h.html#a75acf46dfd6a8b07239128d49ec56158":[14,0,28,46],
@@ -246,8 +249,5 @@ var NAVTREEINDEX4 =
 "jsonrpc.html#jsonrpc_error_message":[3,8,0,0],
 "jsonrpc.html#jsonrpc_invalid_params":[3,8,0,0,1],
 "jsonrpc.html#jsonrpc_overview":[3,8,0],
-"jsonrpc.html#jsonrpc_parser_error":[3,8,0,0,0],
-"jsonrpc.html#notify_get_notifications":[3,8,6,24],
-"jsonrpc.html#rpc_bdev_aio_create":[3,8,2,23],
-"jsonrpc.html#rpc_bdev_aio_delete":[3,8,2,24]
+"jsonrpc.html#jsonrpc_parser_error":[3,8,0,0,0]
 };

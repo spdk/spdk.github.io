@@ -18,6 +18,7 @@ var bdev__module_8h =
     [ "spdk_bdev_part_base_free_fn", "bdev__module_8h.html#ad226e52efa62c0b31340be538000d1a8", null ],
     [ "spdk_bdev_unregister_cb", "bdev__module_8h.html#aaf30cdcd20a84d898099dd35bbfa3590", null ],
     [ "spdk_bdev_io_status", "bdev__module_8h.html#aa35cc1485b6ba4351c2fb4fbd7125c93", [
+      [ "SPDK_BDEV_IO_STATUS_AIO_ERROR", "bdev__module_8h.html#aa35cc1485b6ba4351c2fb4fbd7125c93ae6ecaeb0839ed289f85ec9a92ff53d35", null ],
       [ "SPDK_BDEV_IO_STATUS_ABORTED", "bdev__module_8h.html#aa35cc1485b6ba4351c2fb4fbd7125c93aa7e7c5c151a858b09de01627b63cf2ca", null ],
       [ "SPDK_BDEV_IO_STATUS_FIRST_FUSED_FAILED", "bdev__module_8h.html#aa35cc1485b6ba4351c2fb4fbd7125c93a63b7c72cf0b1bb0bd969e50da64d46c5", null ],
       [ "SPDK_BDEV_IO_STATUS_MISCOMPARE", "bdev__module_8h.html#aa35cc1485b6ba4351c2fb4fbd7125c93a8cf0b3df0de6126ba841779d6dcdf9bd", null ],
@@ -34,6 +35,7 @@ var bdev__module_8h =
     [ "spdk_bdev_destruct_done", "bdev__module_8h.html#a8d51d8e113f0dffb1bbe535ea01c495f", null ],
     [ "spdk_bdev_get_aliases", "bdev__module_8h.html#a1d08fdcf7c3e636d41028fa7ea55aeb7", null ],
     [ "spdk_bdev_io_complete", "bdev__module_8h.html#a3247574caabc2b31796861a10b2c9cab", null ],
+    [ "spdk_bdev_io_complete_aio_status", "bdev__module_8h.html#afa76c6d38a121270bbe464117d1044ac", null ],
     [ "spdk_bdev_io_complete_nvme_status", "bdev__module_8h.html#a3341d564a521b3e7874f72fc1390f043", null ],
     [ "spdk_bdev_io_complete_scsi_status", "bdev__module_8h.html#a4271696fa055f456bedb6bdebce25dbd", null ],
     [ "spdk_bdev_io_from_ctx", "bdev__module_8h.html#a1d1a5d28d5d17381f15953cb13a4cc6c", null ],

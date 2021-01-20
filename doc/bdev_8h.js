@@ -101,6 +101,7 @@ var bdev_8h =
     [ "spdk_bdev_histogram_enable", "bdev_8h.html#a0b4556cb07c52ae7b5b7e7f10cbdc637", null ],
     [ "spdk_bdev_histogram_get", "bdev_8h.html#aacf15571883da5a441297b5090e6aaf5", null ],
     [ "spdk_bdev_initialize", "bdev_8h.html#a854eb960c06597051071023a3d70e887", null ],
+    [ "spdk_bdev_io_get_aio_status", "bdev_8h.html#a701290c13896ad545b58f5c5fecfbd93", null ],
     [ "spdk_bdev_io_get_cb_arg", "bdev_8h.html#a64e77ef346fd873d97328e9816ceda57", null ],
     [ "spdk_bdev_io_get_iovec", "bdev_8h.html#aa05d8c0e82bfbcc209af1eb958230ede", null ],
     [ "spdk_bdev_io_get_md_buf", "bdev_8h.html#a3ac624f9a0a153750242b70a805a7382", null ],

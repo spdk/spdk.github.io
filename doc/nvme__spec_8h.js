@@ -568,6 +568,7 @@ var nvme__spec_8h =
       [ "SPDK_NVME_SANITIZE_OVERWRITE", "nvme__spec_8h.html#a20ed86cc8749183d3db4640b6c4b0567a006beb39199cf9955d7654c46ec88a8e", null ],
       [ "SPDK_NVME_SANITIZE_CRYPTO_ERASE", "nvme__spec_8h.html#a20ed86cc8749183d3db4640b6c4b0567a8cb29a3f53cc673fb2fea118fe347462", null ]
     ] ],
+    [ "spdk_nvme_bytes_to_numd", "nvme__spec_8h.html#a50fdfa3375f98ed37cf1874689dca9d7", null ],
     [ "spdk_nvme_opc_get_data_transfer", "nvme__spec_8h.html#a3f96e024feb9e0cb23b941b847058102", null ],
     [ "SPDK_STATIC_ASSERT", "nvme__spec_8h.html#ae92cd8f6dbac0f9d6d858b6aa9f31f48", null ],
     [ "SPDK_STATIC_ASSERT", "nvme__spec_8h.html#ae45f7ec968470b6507b1f44ccc9898af", null ],

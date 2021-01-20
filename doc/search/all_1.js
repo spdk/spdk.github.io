@@ -18,6 +18,7 @@ var searchData=
   ['adrfam',['adrfam',['../structspdk__nvme__transport__id.html#aad0be45ed276ef7c88b93a22b23e72ae',1,'spdk_nvme_transport_id::adrfam()'],['../structspdk__nvmf__discovery__log__page__entry.html#adf9f35d61b31aa0199ae32ef638a3107',1,'spdk_nvmf_discovery_log_page_entry::adrfam()']]],
   ['aerl',['aerl',['../structspdk__nvme__ctrlr__data.html#a3d47479941d4eb691e54d4ac207cb048',1,'spdk_nvme_ctrlr_data']]],
   ['af',['af',['../structspdk__nvme__dsm__range.html#a1ae2cac2417c24137dcb3e160eb3836c',1,'spdk_nvme_dsm_range']]],
+  ['aio_5fresult',['aio_result',['../structspdk__bdev__io_1_1____bdev__io__internal__fields.html#ad27065f85b6585aa7399f7c7b87cb5cd',1,'spdk_bdev_io::__bdev_io_internal_fields']]],
   ['al',['al',['../structspdk__nvme__dsm__range.html#a85b10586b5cb2d6cbe0e4e8d92f913ef',1,'spdk_nvme_dsm_range']]],
   ['ams',['ams',['../unionspdk__nvme__cap__register.html#a75640e3e0a03f22456503acbebc20f46',1,'spdk_nvme_cap_register::ams()'],['../unionspdk__nvme__cc__register.html#a777a7cb16e88d976eca2f8073fde6c4b',1,'spdk_nvme_cc_register::ams()']]],
   ['ana_5fchange_5fnotices',['ana_change_notices',['../structspdk__nvme__ctrlr__data.html#a017f57d1bfd77c827e1d9e12e36f6ff5',1,'spdk_nvme_ctrlr_data']]],
