@@ -23,6 +23,7 @@ var user_guides =
         [ "Replacing the env abstraction", "libraries.html#env_replacement", null ]
       ] ]
     ] ],
+    [ "Linking SPDK applications with pkg-config", "pkgconfig.html", null ],
     [ "An Overview of SPDK Applications", "app_overview.html", [
       [ "Configuring SPDK Applications", "app_overview.html#app_config", [
         [ "Command Line Parameters", "app_overview.html#app_cmd_line_args", [

@@ -347,6 +347,12 @@ Data Structures</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__zns__zone__report.html">spdk_nvme_zns_zone_report</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__ns__identify__directive__param.html">spdk_nvme_ns_identify_directive_param</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__ns__streams__data.html">spdk_nvme_ns_streams_data</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__ns__streams__status.html">spdk_nvme_ns_streams_status</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
@@ -446,6 +452,10 @@ Macros</h2></td></tr>
 <tr class="memitem:a6a5c4c0b0279583d688e44c7769d8e40"><td class="memItemLeft" align="right" valign="top"><a id="a6a5c4c0b0279583d688e44c7769d8e40"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_NVME_IO_FLAGS_FUSE_MASK</b>&#160;&#160;&#160;(<a class="el" href="nvme__spec_8h.html#a221a4156b2e7883c4cb88847cbeaa069a4d70183823094788f80f33943dfc5bf1">SPDK_NVME_CMD_FUSE_MASK</a> &lt;&lt; 0)</td></tr>
 <tr class="separator:a6a5c4c0b0279583d688e44c7769d8e40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec316babbf58fdcfdaba900ce4f4eab2"><td class="memItemLeft" align="right" valign="top"><a id="aec316babbf58fdcfdaba900ce4f4eab2"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme__spec_8h.html#aec316babbf58fdcfdaba900ce4f4eab2">SPDK_NVME_IO_FLAGS_STREAMS_DIRECTIVE</a>&#160;&#160;&#160;(1U &lt;&lt; 20)</td></tr>
+<tr class="memdesc:aec316babbf58fdcfdaba900ce4f4eab2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable Directive type as streams. <br /></td></tr>
+<tr class="separator:aec316babbf58fdcfdaba900ce4f4eab2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a093f4f54c893a46cc3a776fa667d09a2"><td class="memItemLeft" align="right" valign="top"><a id="a093f4f54c893a46cc3a776fa667d09a2"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme__spec_8h.html#a093f4f54c893a46cc3a776fa667d09a2">SPDK_NVME_IO_FLAGS_PRCHK_REFTAG</a>&#160;&#160;&#160;(1U &lt;&lt; 26)</td></tr>
 <tr class="memdesc:a093f4f54c893a46cc3a776fa667d09a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable protection information checking of the Logical Block Reference Tag field. <br /></td></tr>
@@ -648,9 +658,11 @@ Enumerations</h2></td></tr>
 <b>SPDK_NVME_SC_IOCS_COMBINATION_REJECTED</b> = 0x2b, 
 <br />
 &#160;&#160;<b>SPDK_NVME_SC_INVALID_IOCS</b> = 0x2c, 
+<b>SPDK_NVME_SC_STREAM_RESOURCE_ALLOCATION_FAILED</b> = 0x7f, 
 <b>SPDK_NVME_SC_CONFLICTING_ATTRIBUTES</b> = 0x80, 
 <b>SPDK_NVME_SC_INVALID_PROTECTION_INFO</b> = 0x81, 
-<b>SPDK_NVME_SC_ATTEMPTED_WRITE_TO_RO_RANGE</b> = 0x82
+<br />
+&#160;&#160;<b>SPDK_NVME_SC_ATTEMPTED_WRITE_TO_RO_RANGE</b> = 0x82
 <br />
  }</td></tr>
 <tr class="memdesc:acb8784fad6a53be95d4c718ad3cf852e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Command specific status codes. <br /></td></tr>
@@ -1052,6 +1064,25 @@ Enumerations</h2></td></tr>
 <br />
  }</td></tr>
 <tr class="separator:a9425f4662c5c2328d6919db12efdd2bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e3a35c542e06c697a8685e49a74df55"><td class="memItemLeft" align="right" valign="top"><a id="a8e3a35c542e06c697a8685e49a74df55"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_directive_type</b> { <b>SPDK_NVME_DIRECTIVE_TYPE_IDENTIFY</b> = 0x0, 
+<b>SPDK_NVME_DIRECTIVE_TYPE_STREAMS</b> = 0x1
+ }</td></tr>
+<tr class="separator:a8e3a35c542e06c697a8685e49a74df55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2351b4680fb8de5405aeac788c35b389"><td class="memItemLeft" align="right" valign="top"><a id="a2351b4680fb8de5405aeac788c35b389"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_identify_directive_send_operation</b> { <b>SPDK_NVME_IDENTIFY_DIRECTIVE_SEND_ENABLED</b> = 0x1
+ }</td></tr>
+<tr class="separator:a2351b4680fb8de5405aeac788c35b389"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af46303bface444d804c9ac349efde95d"><td class="memItemLeft" align="right" valign="top"><a id="af46303bface444d804c9ac349efde95d"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_identify_directive_receive_operation</b> { <b>SPDK_NVME_IDENTIFY_DIRECTIVE_RECEIVE_RETURN_PARAM</b> = 0x1
+ }</td></tr>
+<tr class="separator:af46303bface444d804c9ac349efde95d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad08d7137955bee4a301efa4ff437d270"><td class="memItemLeft" align="right" valign="top"><a id="ad08d7137955bee4a301efa4ff437d270"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_streams_directive_receive_operation</b> { <b>SPDK_NVME_STREAMS_DIRECTIVE_RECEIVE_RETURN_PARAM</b> = 0x1, 
+<b>SPDK_NVME_STREAMS_DIRECTIVE_RECEIVE_GET_STATUS</b> = 0x2, 
+<b>SPDK_NVME_STREAMS_DIRECTIVE_RECEIVE_ALLOCATE_RESOURCE</b> = 0x3
+ }</td></tr>
+<tr class="separator:ad08d7137955bee4a301efa4ff437d270"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a541c34e5f943cb3453cd8525fec778"><td class="memItemLeft" align="right" valign="top"><a id="a4a541c34e5f943cb3453cd8525fec778"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_streams_directive_send_operation</b> { <b>SPDK_NVME_STREAMS_DIRECTIVE_SEND_RELEASE_ID</b> = 0x1, 
+<b>SPDK_NVME_STREAMS_DIRECTIVE_SEND_RELEASE_RESOURCE</b> = 0x2
+ }</td></tr>
+<tr class="separator:a4a541c34e5f943cb3453cd8525fec778"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -1337,6 +1368,15 @@ static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_
 <tr class="memitem:a6875c09d574d75b4972c98bf37a28576"><td class="memItemLeft" align="right" valign="top"><a id="a6875c09d574d75b4972c98bf37a28576"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_STATIC_ASSERT</b> (sizeof(struct <a class="el" href="structspdk__nvme__zns__zone__report.html">spdk_nvme_zns_zone_report</a>)==64, &quot;Incorrect size&quot;)</td></tr>
 <tr class="separator:a6875c09d574d75b4972c98bf37a28576"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2256730f6fa817529dba6d7595a79f63"><td class="memItemLeft" align="right" valign="top"><a id="a2256730f6fa817529dba6d7595a79f63"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_STATIC_ASSERT</b> (sizeof(struct <a class="el" href="structspdk__nvme__ns__identify__directive__param.html">spdk_nvme_ns_identify_directive_param</a>)==4096, &quot;Incorrect size&quot;)</td></tr>
+<tr class="separator:a2256730f6fa817529dba6d7595a79f63"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0e5de64555a90ef37cd75f70addbe3b"><td class="memItemLeft" align="right" valign="top"><a id="af0e5de64555a90ef37cd75f70addbe3b"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_STATIC_ASSERT</b> (sizeof(struct <a class="el" href="structspdk__nvme__ns__streams__data.html">spdk_nvme_ns_streams_data</a>)==32, &quot;Incorrect size&quot;)</td></tr>
+<tr class="separator:af0e5de64555a90ef37cd75f70addbe3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b9b89b206a5004f58936d15f9371d9c"><td class="memItemLeft" align="right" valign="top"><a id="a7b9b89b206a5004f58936d15f9371d9c"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_STATIC_ASSERT</b> (sizeof(struct <a class="el" href="structspdk__nvme__ns__streams__status.html">spdk_nvme_ns_streams_status</a>)==131072, &quot;Incorrect size&quot;)</td></tr>
+<tr class="separator:a7b9b89b206a5004f58936d15f9371d9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>NVMe specification definitions. </p>

@@ -3,8 +3,8 @@ var searchData=
   ['last_5fguard',['last_guard',['../structspdk__dif__ctx.html#aafb02a3a698fd60230e4a5fc3da883f4',1,'spdk_dif_ctx']]],
   ['lba',['lba',['../structspdk__ocssd__chunk__notification__entry.html#a2d96d597c27edd7e457218d85c01915d',1,'spdk_ocssd_chunk_notification_entry']]],
   ['lbads',['lbads',['../structspdk__nvme__ns__data.html#aad19d9beb62f0d1305c3a6874b11f284',1,'spdk_nvme_ns_data']]],
-  ['lbaf',['lbaf',['../structspdk__ocssd__geometry__data.html#a4eba476411cda99524796a82761f0823',1,'spdk_ocssd_geometry_data::lbaf()'],['../structspdk__nvme__ns__data.html#af97c753618b329b96a2bc9c437005d4d',1,'spdk_nvme_ns_data::lbaf()']]],
-  ['lbafe',['lbafe',['../structspdk__nvme__zns__ns__data.html#a831ea834dd2abe04d2f99e6059f7ba51',1,'spdk_nvme_zns_ns_data']]],
+  ['lbaf',['lbaf',['../structspdk__ocssd__geometry__data.html#a4eba476411cda99524796a82761f0823',1,'spdk_ocssd_geometry_data::lbaf()'],['../structspdk__nvme__ns__data.html#a8011fb5d302e79603c63b75cb20a0d8a',1,'spdk_nvme_ns_data::lbaf()']]],
+  ['lbafe',['lbafe',['../structspdk__nvme__zns__ns__data.html#a070a66af1433944f51c9439990f8c73d',1,'spdk_nvme_zns_ns_data']]],
   ['lbcc',['lbcc',['../structspdk__nvme__cmds__and__effect__entry.html#aeeae023e93acfbd4f995e4bfb2fd46d5',1,'spdk_nvme_cmds_and_effect_entry']]],
   ['lbk_5flen',['lbk_len',['../structspdk__ocssd__dev__lba__fmt.html#a73ecc33cdb5bbcf9140577c2eeb8451b',1,'spdk_ocssd_dev_lba_fmt']]],
   ['lblk',['lblk',['../structspdk__ocssd__chunk__notification__entry.html#aadf9079a7a4aa1acd37f7535b5249c60',1,'spdk_ocssd_chunk_notification_entry']]],
@@ -24,7 +24,8 @@ var searchData=
   ['logical_5fblock_5fsize',['logical_block_size',['../structspdk__reduce__vol__params.html#a33c2c765f8aef22dbd55f80aa71c6ba5',1,'spdk_reduce_vol_params']]],
   ['logical_20volumes',['Logical Volumes',['../logical_volumes.html',1,'general']]],
   ['low_5fpriority_5fweight',['low_priority_weight',['../structspdk__nvme__ctrlr__opts.html#a5098ae82e7bfecd254dd31cf629ccf05',1,'spdk_nvme_ctrlr_opts']]],
-  ['lpa',['lpa',['../structspdk__nvme__ctrlr__data.html#a49b5d714e22a5b62ebd92a9298e3807c',1,'spdk_nvme_ctrlr_data']]],
+  ['lpa',['lpa',['../structspdk__nvme__ctrlr__data.html#a27e052cd48a9ec6f981f5e2c16bf486c',1,'spdk_nvme_ctrlr_data']]],
   ['lpw',['lpw',['../unionspdk__nvme__feat__arbitration.html#a0eb3434752c3b8ea38f37556fa9fd116',1,'spdk_nvme_feat_arbitration']]],
-  ['lvol_2eh',['lvol.h',['../lvol_8h.html',1,'']]]
+  ['lvol_2eh',['lvol.h',['../lvol_8h.html',1,'']]],
+  ['linking_20spdk_20applications_20with_20pkg_2dconfig',['Linking SPDK applications with pkg-config',['../pkgconfig.html',1,'user_guides']]]
 ];

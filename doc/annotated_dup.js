@@ -145,7 +145,10 @@ var annotated_dup =
     [ "spdk_nvme_io_qpair_opts", "structspdk__nvme__io__qpair__opts.html", "structspdk__nvme__io__qpair__opts" ],
     [ "spdk_nvme_ns_data", "structspdk__nvme__ns__data.html", "structspdk__nvme__ns__data" ],
     [ "spdk_nvme_ns_id_desc", "structspdk__nvme__ns__id__desc.html", "structspdk__nvme__ns__id__desc" ],
+    [ "spdk_nvme_ns_identify_directive_param", "structspdk__nvme__ns__identify__directive__param.html", "structspdk__nvme__ns__identify__directive__param" ],
     [ "spdk_nvme_ns_list", "structspdk__nvme__ns__list.html", "structspdk__nvme__ns__list" ],
+    [ "spdk_nvme_ns_streams_data", "structspdk__nvme__ns__streams__data.html", "structspdk__nvme__ns__streams__data" ],
+    [ "spdk_nvme_ns_streams_status", "structspdk__nvme__ns__streams__status.html", "structspdk__nvme__ns__streams__status" ],
     [ "spdk_nvme_power_state", "structspdk__nvme__power__state.html", "structspdk__nvme__power__state" ],
     [ "spdk_nvme_primary_ctrl_capabilities", "structspdk__nvme__primary__ctrl__capabilities.html", "structspdk__nvme__primary__ctrl__capabilities" ],
     [ "spdk_nvme_protection_info", "structspdk__nvme__protection__info.html", "structspdk__nvme__protection__info" ],
@@ -297,5 +300,11 @@ var annotated_dup =
     [ "spdk_trace_owner", "structspdk__trace__owner.html", "structspdk__trace__owner" ],
     [ "spdk_trace_register_fn", "structspdk__trace__register__fn.html", "structspdk__trace__register__fn" ],
     [ "spdk_trace_tpoint", "structspdk__trace__tpoint.html", "structspdk__trace__tpoint" ],
-    [ "spdk_uuid", "structspdk__uuid.html", "structspdk__uuid" ]
+    [ "spdk_uuid", "structspdk__uuid.html", "structspdk__uuid" ],
+    [ "vfio_user_dma_region", "structvfio__user__dma__region.html", "structvfio__user__dma__region" ],
+    [ "vfio_user_dma_region_access", "structvfio__user__dma__region__access.html", "structvfio__user__dma__region__access" ],
+    [ "vfio_user_header", "structvfio__user__header.html", "structvfio__user__header" ],
+    [ "vfio_user_irq_info", "structvfio__user__irq__info.html", "structvfio__user__irq__info" ],
+    [ "vfio_user_region_access", "structvfio__user__region__access.html", "structvfio__user__region__access" ],
+    [ "vfio_user_version", "structvfio__user__version.html", "structvfio__user__version" ]
 ];

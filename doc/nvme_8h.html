@@ -189,6 +189,9 @@ Macros</h2></td></tr>
 <tr class="memitem:a0b7c74143a1df7101e6c81a24c9f01a0"><td class="memItemLeft" align="right" valign="top"><a id="a0b7c74143a1df7101e6c81a24c9f01a0"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_NVME_TRANSPORT_NAME_TCP</b>&#160;&#160;&#160;&quot;TCP&quot;</td></tr>
 <tr class="separator:a0b7c74143a1df7101e6c81a24c9f01a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68f6e3956c2d99568a36f7b48941134a"><td class="memItemLeft" align="right" valign="top"><a id="a68f6e3956c2d99568a36f7b48941134a"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_NVME_TRANSPORT_NAME_VFIOUSER</b>&#160;&#160;&#160;&quot;VFIOUSER&quot;</td></tr>
+<tr class="separator:a68f6e3956c2d99568a36f7b48941134a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2a3e787dfb5847e18568831e760af1f3"><td class="memItemLeft" align="right" valign="top"><a id="a2a3e787dfb5847e18568831e760af1f3"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_NVME_TRANSPORT_NAME_CUSTOM</b>&#160;&#160;&#160;&quot;CUSTOM&quot;</td></tr>
 <tr class="separator:a2a3e787dfb5847e18568831e760af1f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -250,7 +253,8 @@ Enumerations</h2></td></tr>
 <a class="el" href="nvme_8h.html#ae87a03c28984a2c0499d50ef5e9d0eceabbda195aa6d0a4ad7b437ed5e9a0d01f">SPDK_NVME_TRANSPORT_FC</a> = SPDK_NVMF_TRTYPE_FC, 
 <a class="el" href="nvme_8h.html#ae87a03c28984a2c0499d50ef5e9d0ecea1b74e6a5b484b71142aa6ac9821a6de3">SPDK_NVME_TRANSPORT_TCP</a> = SPDK_NVMF_TRTYPE_TCP, 
 <br />
-&#160;&#160;<a class="el" href="nvme_8h.html#ae87a03c28984a2c0499d50ef5e9d0ecead9c4d8737f8d49b432c3f2d9d0f86a0a">SPDK_NVME_TRANSPORT_CUSTOM</a> = 4096
+&#160;&#160;<a class="el" href="nvme_8h.html#ae87a03c28984a2c0499d50ef5e9d0ecea4a7f3a344a32bd10b0594726fa4eaa33">SPDK_NVME_TRANSPORT_VFIOUSER</a> = 1024, 
+<a class="el" href="nvme_8h.html#ae87a03c28984a2c0499d50ef5e9d0ecead9c4d8737f8d49b432c3f2d9d0f86a0a">SPDK_NVME_TRANSPORT_CUSTOM</a> = 4096
 <br />
  }</td></tr>
 <tr class="memdesc:ae87a03c28984a2c0499d50ef5e9d0ece"><td class="mdescLeft">&#160;</td><td class="mdescRight">NVMe library transports.  <a href="nvme_8h.html#ae87a03c28984a2c0499d50ef5e9d0ece">More...</a><br /></td></tr>
@@ -262,7 +266,8 @@ Enumerations</h2></td></tr>
 <a class="el" href="nvme_8h.html#add21ceb016f09949ac6cef50e0566818ab2a269826d7e50f062924065df9cf6ec">SPDK_NVME_CTRLR_COMPARE_AND_WRITE_SUPPORTED</a> = 1 &lt;&lt; 3, 
 <br />
 &#160;&#160;<a class="el" href="nvme_8h.html#add21ceb016f09949ac6cef50e0566818afb90e96b743634d16ce84716e3250e0d">SPDK_NVME_CTRLR_SGL_REQUIRES_DWORD_ALIGNMENT</a> = 1 &lt;&lt; 4, 
-<a class="el" href="nvme_8h.html#add21ceb016f09949ac6cef50e0566818a47e0066f0e7c2c8f3d0fba8ce612dc73">SPDK_NVME_CTRLR_ZONE_APPEND_SUPPORTED</a> = 1 &lt;&lt; 5
+<a class="el" href="nvme_8h.html#add21ceb016f09949ac6cef50e0566818a47e0066f0e7c2c8f3d0fba8ce612dc73">SPDK_NVME_CTRLR_ZONE_APPEND_SUPPORTED</a> = 1 &lt;&lt; 5, 
+<a class="el" href="nvme_8h.html#add21ceb016f09949ac6cef50e0566818a2ecf8c85bee974f9e7f35a684dff76ac">SPDK_NVME_CTRLR_DIRECTIVES_SUPPORTED</a> = 1 &lt;&lt; 6
 <br />
  }</td></tr>
 <tr class="separator:add21ceb016f09949ac6cef50e0566818"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -496,6 +501,12 @@ Functions</h2></td></tr>
 <tr class="memitem:ada4ab089f73f3f43e9c5b8e6415e6f50"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#ada4ab089f73f3f43e9c5b8e6415e6f50">spdk_nvme_ctrlr_security_send</a> (struct spdk_nvme_ctrlr *ctrlr, uint8_t secp, uint16_t spsp, uint8_t nssf, void *payload, size_t size)</td></tr>
 <tr class="memdesc:ada4ab089f73f3f43e9c5b8e6415e6f50"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send security protocol data to controller.  <a href="#ada4ab089f73f3f43e9c5b8e6415e6f50">More...</a><br /></td></tr>
 <tr class="separator:ada4ab089f73f3f43e9c5b8e6415e6f50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7094727eb390b36b56817b83d39d998"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#ab7094727eb390b36b56817b83d39d998">spdk_nvme_ctrlr_cmd_directive_receive</a> (struct spdk_nvme_ctrlr *ctrlr, uint32_t nsid, uint32_t doper, uint32_t dtype, uint32_t dspec, void *payload, uint32_t payload_size, uint32_t cdw12, uint32_t cdw13, <a class="el" href="nvme_8h.html#ac9779e9957d7089dde8e492cc60856d8">spdk_nvme_cmd_cb</a> cb_fn, void *cb_arg)</td></tr>
+<tr class="memdesc:ab7094727eb390b36b56817b83d39d998"><td class="mdescLeft">&#160;</td><td class="mdescRight">Receive data related to a specific Directive Type from the controller.  <a href="#ab7094727eb390b36b56817b83d39d998">More...</a><br /></td></tr>
+<tr class="separator:ab7094727eb390b36b56817b83d39d998"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada6d60e18019d520ac51ec2a5a598c48"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#ada6d60e18019d520ac51ec2a5a598c48">spdk_nvme_ctrlr_cmd_directive_send</a> (struct spdk_nvme_ctrlr *ctrlr, uint32_t nsid, uint32_t doper, uint32_t dtype, uint32_t dspec, void *payload, uint32_t payload_size, uint32_t cdw12, uint32_t cdw13, <a class="el" href="nvme_8h.html#ac9779e9957d7089dde8e492cc60856d8">spdk_nvme_cmd_cb</a> cb_fn, void *cb_arg)</td></tr>
+<tr class="memdesc:ada6d60e18019d520ac51ec2a5a598c48"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send data related to a specific Directive Type to the controller.  <a href="#ada6d60e18019d520ac51ec2a5a598c48">More...</a><br /></td></tr>
+<tr class="separator:ada6d60e18019d520ac51ec2a5a598c48"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af654a7a016511f265b29294fd06ce26e"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#af654a7a016511f265b29294fd06ce26e">spdk_nvme_ctrlr_get_flags</a> (struct spdk_nvme_ctrlr *ctrlr)</td></tr>
 <tr class="memdesc:af654a7a016511f265b29294fd06ce26e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get supported flags of the controller.  <a href="#af654a7a016511f265b29294fd06ce26e">More...</a><br /></td></tr>
 <tr class="separator:af654a7a016511f265b29294fd06ce26e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -974,6 +985,8 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_map_prps</b>
 </td></tr>
 <tr><td class="fieldname"><a id="add21ceb016f09949ac6cef50e0566818a47e0066f0e7c2c8f3d0fba8ce612dc73"></a>SPDK_NVME_CTRLR_ZONE_APPEND_SUPPORTED&#160;</td><td class="fielddoc"><p>Zone Append is supported (within Zoned Namespaces) </p>
 </td></tr>
+<tr><td class="fieldname"><a id="add21ceb016f09949ac6cef50e0566818a2ecf8c85bee974f9e7f35a684dff76ac"></a>SPDK_NVME_CTRLR_DIRECTIVES_SUPPORTED&#160;</td><td class="fielddoc"><p>The Directives is supported. </p>
+</td></tr>
 </table>
 
 </div>
@@ -1052,6 +1065,8 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_map_prps</b>
 <tr><td class="fieldname"><a id="ae87a03c28984a2c0499d50ef5e9d0eceabbda195aa6d0a4ad7b437ed5e9a0d01f"></a>SPDK_NVME_TRANSPORT_FC&#160;</td><td class="fielddoc"><p>Fibre Channel (FC) Transport. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="ae87a03c28984a2c0499d50ef5e9d0ecea1b74e6a5b484b71142aa6ac9821a6de3"></a>SPDK_NVME_TRANSPORT_TCP&#160;</td><td class="fielddoc"><p>TCP Transport. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ae87a03c28984a2c0499d50ef5e9d0ecea4a7f3a344a32bd10b0594726fa4eaa33"></a>SPDK_NVME_TRANSPORT_VFIOUSER&#160;</td><td class="fielddoc"><p>Custom VFIO User Transport (Not spec defined) </p>
 </td></tr>
 <tr><td class="fieldname"><a id="ae87a03c28984a2c0499d50ef5e9d0ecead9c4d8737f8d49b432c3f2d9d0f86a0a"></a>SPDK_NVME_TRANSPORT_CUSTOM&#160;</td><td class="fielddoc"><p>Custom Transport (Not spec defined) </p>
 </td></tr>
@@ -1490,6 +1505,212 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_map_prps</b>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 if successfully submitted, negated errno if resources could not be allocated for this request, -ENXIO if the admin qpair is failed at the transport layer. </dd></dl>
+
+</div>
+</div>
+<a id="ab7094727eb390b36b56817b83d39d998"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab7094727eb390b36b56817b83d39d998">&#9670;&nbsp;</a></span>spdk_nvme_ctrlr_cmd_directive_receive()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_nvme_ctrlr_cmd_directive_receive </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_nvme_ctrlr *&#160;</td>
+          <td class="paramname"><em>ctrlr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>nsid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>doper</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>dtype</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>dspec</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>payload</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>payload_size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>cdw12</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>cdw13</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="nvme_8h.html#ac9779e9957d7089dde8e492cc60856d8">spdk_nvme_cmd_cb</a>&#160;</td>
+          <td class="paramname"><em>cb_fn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>cb_arg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Receive data related to a specific Directive Type from the controller. </p>
+<p>This function is thread safe and can be called at any point after <a class="el" href="nvme_8h.html#a225bbc386ec518ae21bd5536f21db45d" title="Enumerate the bus indicated by the transport ID and attach the userspace NVMe driver to each device f...">spdk_nvme_probe()</a>.</p>
+<p>Call <a class="el" href="nvme_8h.html#a10282695461985f58f54de022911745e" title="Process any outstanding completions for admin commands.">spdk_nvme_ctrlr_process_admin_completions()</a> to poll for completion of commands submitted through this function.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ctrlr</td><td>NVMe controller to use for directive receive command submission. </td></tr>
+    <tr><td class="paramname">nsid</td><td>Specific Namespace Identifier. </td></tr>
+    <tr><td class="paramname">doper</td><td>Directive Operation defined in <a class="el" href="nvme__spec_8h.html" title="NVMe specification definitions.">nvme_spec.h</a>. </td></tr>
+    <tr><td class="paramname">dtype</td><td>Directive Type defined in <a class="el" href="nvme__spec_8h.html" title="NVMe specification definitions.">nvme_spec.h</a>. </td></tr>
+    <tr><td class="paramname">dspec</td><td>Directive Specific defined in <a class="el" href="nvme__spec_8h.html" title="NVMe specification definitions.">nvme_spec.h</a>. </td></tr>
+    <tr><td class="paramname">payload</td><td>The pointer to the payload buffer. </td></tr>
+    <tr><td class="paramname">payload_size</td><td>The size of payload buffer. </td></tr>
+    <tr><td class="paramname">cdw12</td><td>Command dword 12. </td></tr>
+    <tr><td class="paramname">cdw13</td><td>Command dword 13. </td></tr>
+    <tr><td class="paramname">cb_fn</td><td>Callback function to invoke when the command has been completed. </td></tr>
+    <tr><td class="paramname">cb_arg</td><td>Argument to pass to the callback function.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 if successfully submitted, negated errno if resources could not be allocated for this request. </dd></dl>
+
+</div>
+</div>
+<a id="ada6d60e18019d520ac51ec2a5a598c48"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ada6d60e18019d520ac51ec2a5a598c48">&#9670;&nbsp;</a></span>spdk_nvme_ctrlr_cmd_directive_send()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_nvme_ctrlr_cmd_directive_send </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_nvme_ctrlr *&#160;</td>
+          <td class="paramname"><em>ctrlr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>nsid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>doper</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>dtype</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>dspec</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>payload</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>payload_size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>cdw12</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>cdw13</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="nvme_8h.html#ac9779e9957d7089dde8e492cc60856d8">spdk_nvme_cmd_cb</a>&#160;</td>
+          <td class="paramname"><em>cb_fn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>cb_arg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Send data related to a specific Directive Type to the controller. </p>
+<p>This function is thread safe and can be called at any point after <a class="el" href="nvme_8h.html#a225bbc386ec518ae21bd5536f21db45d" title="Enumerate the bus indicated by the transport ID and attach the userspace NVMe driver to each device f...">spdk_nvme_probe()</a>.</p>
+<p>Call <a class="el" href="nvme_8h.html#a10282695461985f58f54de022911745e" title="Process any outstanding completions for admin commands.">spdk_nvme_ctrlr_process_admin_completions()</a> to poll for completion of commands submitted through this function.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ctrlr</td><td>NVMe controller to use for directive send command submission. </td></tr>
+    <tr><td class="paramname">nsid</td><td>Specific Namespace Identifier. </td></tr>
+    <tr><td class="paramname">doper</td><td>Directive Operation defined in <a class="el" href="nvme__spec_8h.html" title="NVMe specification definitions.">nvme_spec.h</a>. </td></tr>
+    <tr><td class="paramname">dtype</td><td>Directive Type defined in <a class="el" href="nvme__spec_8h.html" title="NVMe specification definitions.">nvme_spec.h</a>. </td></tr>
+    <tr><td class="paramname">dspec</td><td>Directive Specific defined in <a class="el" href="nvme__spec_8h.html" title="NVMe specification definitions.">nvme_spec.h</a>. </td></tr>
+    <tr><td class="paramname">payload</td><td>The pointer to the payload buffer. </td></tr>
+    <tr><td class="paramname">payload_size</td><td>The size of payload buffer. </td></tr>
+    <tr><td class="paramname">cdw12</td><td>Command dword 12. </td></tr>
+    <tr><td class="paramname">cdw13</td><td>Command dword 13. </td></tr>
+    <tr><td class="paramname">cb_fn</td><td>Callback function to invoke when the command has been completed. </td></tr>
+    <tr><td class="paramname">cb_arg</td><td>Argument to pass to the callback function.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 if successfully submitted, negated errno if resources could not be allocated for this request. </dd></dl>
 
 </div>
 </div>
