@@ -698,6 +698,8 @@ var searchData=
   ['spdk_5fnvme_5fzns_5fopen_5fzone',['spdk_nvme_zns_open_zone',['../nvme__zns_8h.html#a78bd7a40cc3d2e32224cdbfa596fe9f4',1,'nvme_zns.h']]],
   ['spdk_5fnvme_5fzns_5freport_5fzones',['spdk_nvme_zns_report_zones',['../nvme__zns_8h.html#a153d6ac1778c41164d101e748d75a9af',1,'nvme_zns.h']]],
   ['spdk_5fnvme_5fzns_5freset_5fzone',['spdk_nvme_zns_reset_zone',['../nvme__zns_8h.html#af976a7e45715b3a6db365f9baf8d3225',1,'nvme_zns.h']]],
+  ['spdk_5fnvme_5fzns_5fzone_5fappend',['spdk_nvme_zns_zone_append',['../nvme__zns_8h.html#afe28a5a089886cadf0008c7b2b03d5c9',1,'nvme_zns.h']]],
+  ['spdk_5fnvme_5fzns_5fzone_5fappend_5fwith_5fmd',['spdk_nvme_zns_zone_append_with_md',['../nvme__zns_8h.html#a56244b5a0d1f13aab39446ce18377df2',1,'nvme_zns.h']]],
   ['spdk_5fnvmf_5fctrlr_5fget_5fid',['spdk_nvmf_ctrlr_get_id',['../nvmf__transport_8h.html#a4be21e1e7c78a65458f3cb7d8ed08997',1,'nvmf_transport.h']]],
   ['spdk_5fnvmf_5fctrlr_5fget_5fsubsystem',['spdk_nvmf_ctrlr_get_subsystem',['../nvmf__transport_8h.html#a4e1187651747d823aa32669905db2d89',1,'nvmf_transport.h']]],
   ['spdk_5fnvmf_5fget_5ffirst_5ftgt',['spdk_nvmf_get_first_tgt',['../nvmf_8h.html#a306b55570dbe1da898083657d382f6f5',1,'nvmf.h']]],

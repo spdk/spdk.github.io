@@ -10,5 +10,7 @@ var nvme__zns_8h =
     [ "spdk_nvme_zns_offline_zone", "nvme__zns_8h.html#a5dbc02aa610c1861eca0f5e70689dec3", null ],
     [ "spdk_nvme_zns_open_zone", "nvme__zns_8h.html#a78bd7a40cc3d2e32224cdbfa596fe9f4", null ],
     [ "spdk_nvme_zns_report_zones", "nvme__zns_8h.html#a153d6ac1778c41164d101e748d75a9af", null ],
-    [ "spdk_nvme_zns_reset_zone", "nvme__zns_8h.html#af976a7e45715b3a6db365f9baf8d3225", null ]
+    [ "spdk_nvme_zns_reset_zone", "nvme__zns_8h.html#af976a7e45715b3a6db365f9baf8d3225", null ],
+    [ "spdk_nvme_zns_zone_append", "nvme__zns_8h.html#afe28a5a089886cadf0008c7b2b03d5c9", null ],
+    [ "spdk_nvme_zns_zone_append_with_md", "nvme__zns_8h.html#a56244b5a0d1f13aab39446ce18377df2", null ]
 ];

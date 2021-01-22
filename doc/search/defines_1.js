@@ -25,6 +25,7 @@ var searchData=
   ['spdk_5fnvme_5fio_5fflags_5fprchk_5freftag',['SPDK_NVME_IO_FLAGS_PRCHK_REFTAG',['../nvme__spec_8h.html#a093f4f54c893a46cc3a776fa667d09a2',1,'nvme_spec.h']]],
   ['spdk_5fnvme_5fio_5fflags_5fstreams_5fdirective',['SPDK_NVME_IO_FLAGS_STREAMS_DIRECTIVE',['../nvme__spec_8h.html#aec316babbf58fdcfdaba900ce4f4eab2',1,'nvme_spec.h']]],
   ['spdk_5fnvme_5fio_5fflags_5fvalid_5fmask',['SPDK_NVME_IO_FLAGS_VALID_MASK',['../nvme__spec_8h.html#a0dc3156c004bc63cfa323254dacd5f06',1,'nvme_spec.h']]],
+  ['spdk_5fnvme_5fio_5fflags_5fzone_5fappend_5fpiremap',['SPDK_NVME_IO_FLAGS_ZONE_APPEND_PIREMAP',['../nvme__spec_8h.html#a3cd413ddb31a2a9b2bc253f3dadf6765',1,'nvme_spec.h']]],
   ['spdk_5fnvme_5fnssr_5fvalue',['SPDK_NVME_NSSR_VALUE',['../nvme__spec_8h.html#ad3ef13320c82eaf4abdef6aa56e8b5ba',1,'nvme_spec.h']]],
   ['spdk_5fnvme_5focssd_5fmax_5flbal_5fentries',['SPDK_NVME_OCSSD_MAX_LBAL_ENTRIES',['../nvme__ocssd__spec_8h.html#a7d96f9d96a27db374c495e271f84d765',1,'nvme_ocssd_spec.h']]],
   ['spdk_5fnvme_5fversion',['SPDK_NVME_VERSION',['../nvme__spec_8h.html#a9760bf73611488342b5903ba702fd7b6',1,'nvme_spec.h']]],

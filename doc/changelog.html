@@ -157,6 +157,7 @@ v21.01: (Upcoming Release)</h1>
 <p>An <code>opts_size</code> element was added in the <code><a class="el" href="structspdk__blob__open__opts.html">spdk_blob_open_opts</a></code> structure to solve the ABI compatiblity issue between different SPDK version. And also add <code>opts_size</code> parameter in <code>spdk_blob_open_opts_init</code> function.</p>
 <h2>dpdk</h2>
 <p>Updated DPDK submodule to DPDK 20.11.</p>
+<p>Removed <code>--with-igb-uio-driver</code> configure option. Since DPDK 20.11 igb_uio driver was moved to separate dpdk-kmods repository. If required, users need to refer to dpdk-kmods repository to build the driver.</p>
 <h2>nvme</h2>
 <p>Directives support was added to the NVMe driver.</p>
 <p>Two async APIs 'spdk_nvme_ctrlr_cmd_directive_receive' and 'spdk_nvme_ctrlr_cmd_directive_send' are added for Directive Send and Directive Receive command, respectively.</p>
@@ -171,6 +172,8 @@ v21.01: (Upcoming Release)</h1>
 <h2>env</h2>
 <p>The pci_whitelist, pci_blacklist and master_core members of struct <a class="el" href="structspdk__env__opts.html" title="Environment initialization options.">spdk_env_opts</a> have been deprecated. The new members are named pci_allowed, pci_blocked and main_core respectively.</p>
 <p>An <code>opts_size</code>element was added in the <code><a class="el" href="structspdk__app__opts.html" title="Event framework initialization options.">spdk_app_opts</a></code> structure to solve the ABI compatiblity issue between different SPDK version. An <code>opts_size</code> parameter is added into <code>spdk_app_opts_init</code> function.</p>
+<h2>isa-l</h2>
+<p>Updated ISA-L submodule to v2.30.0.</p>
 <h2>nbd</h2>
 <p>Change the return type of function <code>spdk_nbd_stop</code> from void to int. And update the <code>spdk_nbd_fini</code> with two parameters to make its behavior from sync to async.</p>
 <h2>build</h2>
