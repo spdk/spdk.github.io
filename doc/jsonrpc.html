@@ -322,13 +322,34 @@ framework_set_scheduler</h2>
 <th class="markdownTableHeadNone">Name  </th><th class="markdownTableHeadNone">Optional  </th><th class="markdownTableHeadNone">Type  </th><th class="markdownTableHeadNone">Description   </th></tr>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">name  </td><td class="markdownTableBodyNone">Required  </td><td class="markdownTableBodyNone">string  </td><td class="markdownTableBodyNone">Name of a scheduler   </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">period  </td><td class="markdownTableBodyNone">Optional  </td><td class="markdownTableBodyNone">number  </td><td class="markdownTableBodyNone">Scheduler period   </td></tr>
 </table>
 <h3>Response</h3>
 <p>Completion status of the operation is returned as a boolean.</p>
 <h3>Example</h3>
 <p>Example request:</p>
-<div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;method&quot;: &quot;framework_set_scheduler&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;params&quot;: {</div><div class="line">    &quot;name&quot;: &quot;static&quot;</div><div class="line">  }</div><div class="line">}</div></div><!-- fragment --><p>Example response:</p>
-<div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: true</div><div class="line">}</div></div><!-- fragment --><h2><a class="anchor" id="rpc_thread_get_stats"></a>
+<div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;method&quot;: &quot;framework_set_scheduler&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;params&quot;: {</div><div class="line">    &quot;name&quot;: &quot;static&quot;,</div><div class="line">    &quot;period&quot;: &quot;1000000&quot;</div><div class="line">  }</div><div class="line">}</div></div><!-- fragment --><p>Example response:</p>
+<div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: true</div><div class="line">}</div></div><!-- fragment --><h3><a class="anchor" id="rpc_framework_get_scheduler"></a>
+framework_get_scheduler</h3>
+<p>Retrieve currently set scheduler name and period, along with current governor name.</p>
+<h3>Parameters</h3>
+<p>This method has no parameters.</p>
+<h3>Response</h3>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Name  </th><th class="markdownTableHeadNone">Description   </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">scheduler_name  </td><td class="markdownTableBodyNone">Current scheduler name   </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">scheduler_period  </td><td class="markdownTableBodyNone">Currently set scheduler period in microseconds   </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">governor_name  </td><td class="markdownTableBodyNone">Governor name   </td></tr>
+</table>
+<h3>Example</h3>
+<p>Example request:</p>
+<div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;method&quot;: &quot;framework_set_scheduler&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">}</div></div><!-- fragment --><p>Example response:</p>
+<div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: {</div><div class="line">    &quot;scheduler name&quot;: &quot;static&quot;,</div><div class="line">    &quot;scheduler period&quot;: 2800000000,</div><div class="line">    &quot;governor name&quot;: &quot;default&quot;</div><div class="line">  }</div><div class="line">}</div></div><!-- fragment --><h2><a class="anchor" id="rpc_thread_get_stats"></a>
 thread_get_stats</h2>
 <p>Retrieve current statistics of all the threads.</p>
 <h3>Parameters</h3>

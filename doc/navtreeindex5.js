@@ -85,6 +85,7 @@ var NAVTREEINDEX5 =
 "jsonrpc.html#rpc_blobfs_set_cache_size":[3,9,8,3],
 "jsonrpc.html#rpc_framework_get_config":[3,9,1,6],
 "jsonrpc.html#rpc_framework_get_reactors":[3,9,1,7],
+"jsonrpc.html#rpc_framework_get_scheduler":[3,9,1,8,0],
 "jsonrpc.html#rpc_framework_get_subsystems":[3,9,1,5],
 "jsonrpc.html#rpc_framework_monitor_context_switch":[3,9,1,1],
 "jsonrpc.html#rpc_framework_set_scheduler":[3,9,1,8],
@@ -248,6 +249,5 @@ var NAVTREEINDEX5 =
 "log_8h.html#a80d1557908e5d42aa110a9db432b35a0":[14,0,33,20],
 "log_8h.html#a880b1e27d71328429dbf4f65e02ff145":[14,0,33,21],
 "log_8h.html#a99820ac7f38f6ad187be62b3bbdb7d64":[14,0,33,27],
-"log_8h.html#aa9419a88ede016c62feaa52fb0fed019":[14,0,33,24],
-"log_8h.html#aaa20a1f56503b0d9f16c82b451fb338b":[14,0,33,12]
+"log_8h.html#aa9419a88ede016c62feaa52fb0fed019":[14,0,33,24]
 };
