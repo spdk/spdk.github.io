@@ -221,7 +221,7 @@ with the exception:
 
 * Patches containing [RFC] in the git commit message header are treated specially to spur comments only.  As such, these RFC patches
 are **not** run through the CI system.  While a developer may specify reviewers in Gerrit for these patches, it
-is highly suggested one either sends email to the SPDK mailing list or a message on the IRC SPDK channel to bring
+is highly suggested one either sends email to the SPDK mailing list or a message on the Slack to bring
 attention to this type of patch for discussion.
 
 The SPDK CI system periodically looks at Gerrit, pulls the patches down, and runs them on a pool of multiple machines with
