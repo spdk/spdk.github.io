@@ -145,8 +145,10 @@ $(document).ready(function(){initNavTree('changelog.html','');});
 <div class="title">Changelog </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h1><a class="anchor" id="changelog-v21-01"></a>
-v21.01: (Upcoming Release)</h1>
+<div class="textblock"><h1><a class="anchor" id="changelog-v21-04"></a>
+v21.04: (Upcoming Release)</h1>
+<h1><a class="anchor" id="changelog-v21-01"></a>
+v21.01:</h1>
 <h2>bdev</h2>
 <p>An <code>opts_size</code> element was added in the <code><a class="el" href="structspdk__bdev__opts.html">spdk_bdev_opts</a></code> structure to solve the ABI compatibility issue between different SPDK version. And also add <code>opts_size</code> parameter in spdk_bdev_get_opts function. Two fields <code>small_buf_pool_size</code> and <code>large_buf_pool_size</code> were added into <a class="el" href="structspdk__bdev__opts.html">spdk_bdev_opts</a>, which were used to determine the small and large buffer pool size of the whole bdev module.</p>
 <p>A new API <code>spdk_bdev_wait_for_examine</code> was added to allow for checking state of examine process. Along with corresponding <code>bdev_wait_for_examine</code> RPC, which is now always called during <code>spdk_bdev_subsystem_config_json</code> making sure every bdev is ready to be used.</p>
@@ -196,6 +198,7 @@ v21.01: (Upcoming Release)</h1>
 <p>Added a new custom vfio-user transport implementation in NVMe-oF which can provide emulated NVMe devices to QEMU and SPDK NVMe driver.</p>
 <p>Added new API <code>spdk_nvmf_tgt_listen_ext</code> that uses <code><a class="el" href="structspdk__nvmf__listen__opts.html">spdk_nvmf_listen_opts</a></code> to allow passing generic options to specific transport. This functionality replaces one provided with <code>nvmf_subsystem_set_options</code>. Also removed <code>nvmf_subsystem_set_options</code> RPC that allowed transport specific options within subsystem.</p>
 <p>The <code>trsvcid</code> in <code>nvmf_subsystem_add_listener</code> RPC is now optional.</p>
+<p>Pausing a subsystem now only pauses all admin queues. This allows for the management of hosts and listeners, plus the addition of namespaces without a full subsystem pause. Additionally, the target now allows for pausing individual namespaces within a subsystem. To remove a namespace from a subsystem, only the specific namespace must be paused. I/O will continue to other namespaces while these operations execute.</p>
 <h2>rpc</h2>
 <p>An new optional parameter <code>wait</code> was added to the RPC <code>iscsi_create_portal_group</code>, and an new RPC <code>iscsi_start_portal_group</code> was added. They will be used not to start listening on portals for a portal group until all associated target nodes are created at startup, otherwise some iSCSI initiators may fail to re-login when SPDK iSCSI target application restarts.</p>
 <p>Two optional parameter <code>--small-buf-pool-size</code> and <code>--large-buf-pool-size</code> were added into <code>bdev_set_options</code> function.</p>
