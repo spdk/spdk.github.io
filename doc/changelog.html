@@ -171,6 +171,7 @@ v21.01:</h1>
 <p>The <code>pci_whitelist</code> and <code>pci_blacklist</code> members of struct <code><a class="el" href="structspdk__app__opts.html" title="Event framework initialization options.">spdk_app_opts</a></code> have been deprecated. The new members are named <code>pci_allowed</code> and <code>pci_blocked</code> respectively.</p>
 <p>The <code>--pci-blacklist</code> command line option has been deprecated, replaced with <code>--pci-blocked</code>.</p>
 <p>The <code>--pci-whitelist/-W</code> command line options have been deprecated, replaced with <code>--pci-allowed/-A</code>.</p>
+<p>Added new experimental <code>dynamic</code> scheduler that rebalances idle threads, adjusts CPU frequency using dpdk_governor and turns idle reactor cores to interrupt mode. Please see <a href="https://www.spdk.io/doc/scheduler.html">scheduler documentation</a> for details.</p>
 <h1>ioat</h1>
 <p>The PCI BDF whitelist option has been removed from the <code>ioat_scan_accel_engine</code> RPC. IOAT PCI functions can still be allowed or denied using SPDK application command line options.</p>
 <h2>isa-l</h2>

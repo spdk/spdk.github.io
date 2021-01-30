@@ -247,7 +247,7 @@ var NAVTREEINDEX4 =
 "jsonrpc.html#jsonrpc_components_nvmf_tgt":[3,9,4],
 "jsonrpc.html#jsonrpc_components_sock":[3,9,9],
 "jsonrpc.html#jsonrpc_components_vhost_tgt":[3,9,5],
+"jsonrpc.html#jsonrpc_convert":[3,9,0,1,1],
 "jsonrpc.html#jsonrpc_error_message":[3,9,0,0],
-"jsonrpc.html#jsonrpc_invalid_params":[3,9,0,0,1],
-"jsonrpc.html#jsonrpc_overview":[3,9,0]
+"jsonrpc.html#jsonrpc_generate":[3,9,0,1,0]
 };

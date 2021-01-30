@@ -9,6 +9,7 @@ var general =
         [ "Application Framework", "event.html#event_component_app", null ]
       ] ]
     ] ],
+    [ "Scheduler", "scheduler.html", null ],
     [ "Logical Volumes", "logical_volumes.html", [
       [ "Terminology", "logical_volumes.html#lvol_terminology", [
         [ "Logical volume store", "logical_volumes.html#lvs", null ],

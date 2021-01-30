@@ -133,7 +133,10 @@ var user_guides =
           [ "Parser error", "jsonrpc.html#jsonrpc_parser_error", null ],
           [ "Invalid params", "jsonrpc.html#jsonrpc_invalid_params", null ]
         ] ],
-        [ "rpc.py", "jsonrpc.html#rpc_py", null ]
+        [ "rpc.py", "jsonrpc.html#rpc_py", [
+          [ "Generate JSON-RPC methods for current configuration", "jsonrpc.html#jsonrpc_generate", null ],
+          [ "Converting from legacy configuration", "jsonrpc.html#jsonrpc_convert", null ]
+        ] ]
       ] ],
       [ "App Framework", "jsonrpc.html#jsonrpc_components_app", [
         [ "spdk_kill_instance", "jsonrpc.html#rpc_spdk_kill_instance", null ],
