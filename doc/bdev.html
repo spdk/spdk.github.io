@@ -261,7 +261,7 @@ OCF Virtual bdev</h1>
 <p>To remove <code>Cache1</code>:</p>
 <p><code>rpc.py bdev_ocf_delete Cache1</code></p>
 <p>During removal OCF-cache will be stopped and all cached data will be written to the core device.</p>
-<p>Note that OCF has a per-device RAM requirement of about 56000 + <em>cache device size</em> * 58 / <em>cache line size</em> (in bytes). To get more information on OCF please visit <a href="https://open-cas.github.io/">OCF documentation</a>.</p>
+<p>Note that OCF has a per-device RAM requirement. More details can be found in the <a href="https://open-cas.github.io/guide_system_requirements.html">OCF documentation</a>.</p>
 <h1><a class="anchor" id="bdev_config_malloc"></a>
 Malloc bdev</h1>
 <p>Malloc bdevs are ramdisks. Because of its nature they are volatile. They are created from hugepage memory given to SPDK application.</p>

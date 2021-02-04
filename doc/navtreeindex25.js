@@ -1,5 +1,7 @@
 var NAVTREEINDEX25 =
 {
+"unionspdk__nvme__cc__register.html#aa209d6cab6dc0a1f9e9b37f4f0a2d8b9":[13,0,86,5],
+"unionspdk__nvme__cc__register.html#ac2481b3896677b48183c0dd344760ddb":[13,0,86,9],
 "unionspdk__nvme__cc__register.html#adafe2d01d8a07098b6cb21fc9835dba6":[13,0,86,3],
 "unionspdk__nvme__cc__register.html#af8bb5fa3b86ff9cb654ec4da5fa5a31c":[13,0,86,6],
 "unionspdk__nvme__cmbloc__register.html":[13,0,89],
@@ -247,7 +249,5 @@ var NAVTREEINDEX25 =
 "unionspdk__nvme__feat__volatile__write__cache.html#acf8f2e01b0a2d2fdc429536c4f7bfd5c":[13,0,124,0],
 "unionspdk__nvme__feat__write__atomicity.html":[13,0,125],
 "unionspdk__nvme__feat__write__atomicity.html#a4a67a4f708c90c0316820b707bb398fd":[13,0,125,1],
-"unionspdk__nvme__feat__write__atomicity.html#a6abf4c565d5c2ceb1a99315449f70bd1":[13,0,125,0],
-"unionspdk__nvme__feat__write__atomicity.html#a8fd192e661b226064e4890a49c16ea6e":[13,0,125,2],
-"unionspdk__nvme__feat__write__atomicity.html#ada4a9129ffb571abc00b73298e8bf957":[13,0,125,3]
+"unionspdk__nvme__feat__write__atomicity.html#a6abf4c565d5c2ceb1a99315449f70bd1":[13,0,125,0]
 };

@@ -1029,6 +1029,7 @@ var searchData=
   ['spdk_5fnvme_5fqp_5ffailure_5freason',['spdk_nvme_qp_failure_reason',['../nvme_8h.html#ab41e2d311eb6663957cd2f18bc8fb890',1,'nvme.h']]],
   ['spdk_5fnvme_5fqpair_5fadd_5fcmd_5ferror_5finjection',['spdk_nvme_qpair_add_cmd_error_injection',['../nvme_8h.html#acf6188764b8c71b2f64a74077d6bfabf',1,'nvme.h']]],
   ['spdk_5fnvme_5fqpair_5fget_5ffailure_5freason',['spdk_nvme_qpair_get_failure_reason',['../nvme_8h.html#ae2015f3c7dd76113e89a732eabe400ff',1,'nvme.h']]],
+  ['spdk_5fnvme_5fqpair_5fget_5foptimal_5fpoll_5fgroup',['spdk_nvme_qpair_get_optimal_poll_group',['../nvme_8h.html#a8a891c5683c340e0426cd0268d29d689',1,'nvme.h']]],
   ['spdk_5fnvme_5fqpair_5fprint_5fcommand',['spdk_nvme_qpair_print_command',['../nvme_8h.html#ac06275147a2cbb800440686b8ba9a73b',1,'nvme.h']]],
   ['spdk_5fnvme_5fqpair_5fprint_5fcompletion',['spdk_nvme_qpair_print_completion',['../nvme_8h.html#ad4b2335194f9c4c24a5e2c15a9432f4a',1,'nvme.h']]],
   ['spdk_5fnvme_5fqpair_5fprocess_5fcompletions',['spdk_nvme_qpair_process_completions',['../nvme_8h.html#aa331d140870e977722bfbb6826524782',1,'nvme.h']]],
