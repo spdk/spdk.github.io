@@ -167,8 +167,8 @@ IOAT Module</h2>
 <h2><a class="anchor" id="accel_idxd"></a>
 IDXD Module</h2>
 <p>To use the DSA engine, use the RPC <a href="https://spdk.io/doc/jsonrpc.html"><code>idxd_scan_accel_engine</code></a> with an optional parameter of <code>-c</code> and provide a configuration number of either 0 or 1. These pre-defined configurations determine how the DSA engine will be setup in terms of work queues and engines. The DSA engine is very flexible allowing for various configurations of these elements to either account for different quality of service requirements or to isolate hardware paths where the back end media is of varying latency (i.e. persistent memory vs DRAM). The pre-defined configurations are as follows:</p>
-<p>0: Four separate work queues each backed with one DSA engine. This is a generic configuration that provides 4 portals to submit operations to each with a single engine behind it providing some level of isolation as operations are submitted round-robin.</p>
-<p>1: Two separate work queues each backed with two DSA engines. This is another generic configuration that provides 2 portals to submit operations to and lets the DSA hardware decide which engine to select based on loading.</p>
+<p>0: A single work queue backed with four DSA engines. This is a generic configuration that enables the hardware to best determine which engine to use as it pulls in new operations.</p>
+<p>1: Two separate work queues each backed with two DSA engines. This is another generic configuration that is documented in the specification and allows the application to partition submissions across two work queues. This would be useful when different priorities might be desired per group.</p>
 <p>There are several other configurations that are possible that include quality of service parameters on the work queues that are not currently utilized by the module. Specialized use of DSA may require different configurations that can be added to the module as needed.</p>
 <h2><a class="anchor" id="accel_sw"></a>
 Software Module</h2>

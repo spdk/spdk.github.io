@@ -151,6 +151,10 @@ v21.04: (Upcoming Release)</h1>
 <p>Added <code>spdk_nvme_qpair_get_optimal_poll_group</code> function and <code>qpair_get_optimal_poll_group</code> function pointer in <a class="el" href="structspdk__nvmf__transport__ops.html">spdk_nvmf_transport_ops</a> structure in order to add the qpair to the most suitable polling group.</p>
 <h1><a class="anchor" id="changelog-v21-01"></a>
 v21.01:</h1>
+<h2>idxd</h2>
+<p>A new API <code>spdk_idxd_get_rebalance</code> was added so that users of the library can know whether they need to rebalance the flow control for the channel that was just added/removed. This is based on how the low level library shares devices amongst channels.</p>
+<p>The API <code>spdk_idxd_reconfigure_chan</code> had the <code>num_channels</code> removed as this is now tracked in the library. The app makes use the new API above to determine whether to rebalance or not. This applies to <code>spdk_idxd_configure_chan</code> as well.</p>
+<p>The API <code>spdk_idxd_put_channel</code> now returns the rebalance state for the underlying device.</p>
 <h2>bdev</h2>
 <p>An <code>opts_size</code> element was added in the <code><a class="el" href="structspdk__bdev__opts.html">spdk_bdev_opts</a></code> structure to solve the ABI compatibility issue between different SPDK version. And also add <code>opts_size</code> parameter in spdk_bdev_get_opts function. Two fields <code>small_buf_pool_size</code> and <code>large_buf_pool_size</code> were added into <a class="el" href="structspdk__bdev__opts.html">spdk_bdev_opts</a>, which were used to determine the small and large buffer pool size of the whole bdev module.</p>
 <p>A new API <code>spdk_bdev_wait_for_examine</code> was added to allow for checking state of examine process. Along with corresponding <code>bdev_wait_for_examine</code> RPC, which is now always called during <code>spdk_bdev_subsystem_config_json</code> making sure every bdev is ready to be used.</p>
