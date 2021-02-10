@@ -218,6 +218,9 @@ typedef enum <a class="el" href="nvme_8h.html#ae87a03c28984a2c0499d50ef5e9d0ece"
 <tr class="memitem:a05f1aa545be57a03bb2dd0c6180172b6"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a05f1aa545be57a03bb2dd0c6180172b6">spdk_nvme_remove_cb</a>) (void *cb_ctx, struct spdk_nvme_ctrlr *ctrlr)</td></tr>
 <tr class="memdesc:a05f1aa545be57a03bb2dd0c6180172b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback for spdk_nvme_remove() to report that a device attached to the userspace NVMe driver has been removed from the system.  <a href="#a05f1aa545be57a03bb2dd0c6180172b6">More...</a><br /></td></tr>
 <tr class="separator:a05f1aa545be57a03bb2dd0c6180172b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9335ab01f188f75b67c39b79b9206941"><td class="memItemLeft" align="right" valign="top"><a id="a9335ab01f188f75b67c39b79b9206941"></a>
+typedef bool(*&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_pcie_hotplug_filter_cb</b>) (const struct <a class="el" href="structspdk__pci__addr.html">spdk_pci_addr</a> *addr)</td></tr>
+<tr class="separator:a9335ab01f188f75b67c39b79b9206941"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac9779e9957d7089dde8e492cc60856d8"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#ac9779e9957d7089dde8e492cc60856d8">spdk_nvme_cmd_cb</a>) (void *, const struct <a class="el" href="structspdk__nvme__cpl.html">spdk_nvme_cpl</a> *)</td></tr>
 <tr class="memdesc:ac9779e9957d7089dde8e492cc60856d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Signature for callback function invoked when a command is completed.  <a href="#ac9779e9957d7089dde8e492cc60856d8">More...</a><br /></td></tr>
 <tr class="separator:ac9779e9957d7089dde8e492cc60856d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -333,6 +336,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ab4541db53f0daadcb4fc1d4f950b4bb5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#ab4541db53f0daadcb4fc1d4f950b4bb5">spdk_nvme_transport_available_by_name</a> (const char *transport_name)</td></tr>
 <tr class="memdesc:ab4541db53f0daadcb4fc1d4f950b4bb5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine whether the NVMe library can handle a specific NVMe over Fabrics transport type.  <a href="#ab4541db53f0daadcb4fc1d4f950b4bb5">More...</a><br /></td></tr>
 <tr class="separator:ab4541db53f0daadcb4fc1d4f950b4bb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a976b90cbbc1aa8a4117837758f65e6c7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a976b90cbbc1aa8a4117837758f65e6c7">spdk_nvme_pcie_set_hotplug_filter</a> (spdk_nvme_pcie_hotplug_filter_cb filter_cb)</td></tr>
+<tr class="memdesc:a976b90cbbc1aa8a4117837758f65e6c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register the associated function to allow filtering of hot-inserted PCIe SSDs.  <a href="#a976b90cbbc1aa8a4117837758f65e6c7">More...</a><br /></td></tr>
+<tr class="separator:a976b90cbbc1aa8a4117837758f65e6c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a225bbc386ec518ae21bd5536f21db45d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a225bbc386ec518ae21bd5536f21db45d">spdk_nvme_probe</a> (const struct <a class="el" href="structspdk__nvme__transport__id.html">spdk_nvme_transport_id</a> *trid, void *cb_ctx, <a class="el" href="nvme_8h.html#a95f40d5179f8424b466a30ba0610ab4c">spdk_nvme_probe_cb</a> probe_cb, <a class="el" href="nvme_8h.html#ac1eaa795f075495337b270667661ce5d">spdk_nvme_attach_cb</a> attach_cb, <a class="el" href="nvme_8h.html#a05f1aa545be57a03bb2dd0c6180172b6">spdk_nvme_remove_cb</a> remove_cb)</td></tr>
 <tr class="memdesc:a225bbc386ec518ae21bd5536f21db45d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enumerate the bus indicated by the transport ID and attach the userspace NVMe driver to each device found if desired.  <a href="#a225bbc386ec518ae21bd5536f21db45d">More...</a><br /></td></tr>
 <tr class="separator:a225bbc386ec518ae21bd5536f21db45d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -6850,6 +6856,34 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_map_prps</b>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if the namespace can support extended LBA when end-to-end data protection enabled, or false otherwise. </dd></dl>
+
+</div>
+</div>
+<a id="a976b90cbbc1aa8a4117837758f65e6c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a976b90cbbc1aa8a4117837758f65e6c7">&#9670;&nbsp;</a></span>spdk_nvme_pcie_set_hotplug_filter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_nvme_pcie_set_hotplug_filter </td>
+          <td>(</td>
+          <td class="paramtype">spdk_nvme_pcie_hotplug_filter_cb&#160;</td>
+          <td class="paramname"><em>filter_cb</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Register the associated function to allow filtering of hot-inserted PCIe SSDs. </p>
+<p>If an application is using <a class="el" href="nvme_8h.html#a225bbc386ec518ae21bd5536f21db45d" title="Enumerate the bus indicated by the transport ID and attach the userspace NVMe driver to each device f...">spdk_nvme_probe()</a> to detect hot-inserted SSDs, this function may be used to register a function to filter those SSDs. If the filter function returns true, the nvme library will notify the SPDK env layer to allow probing of the device.</p>
+<p>Registering a filter function is optional. If none is registered, the nvme library will allow probing of all hot-inserted SSDs.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filter_cb</td><td>Filter function callback routine </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

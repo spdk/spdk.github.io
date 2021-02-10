@@ -147,8 +147,11 @@ $(document).ready(function(){initNavTree('changelog.html','');});
 <div class="contents">
 <div class="textblock"><h1><a class="anchor" id="changelog-v21-04"></a>
 v21.04: (Upcoming Release)</h1>
+<h2>env</h2>
+<p>Added spdk_pci_device_allow API to allow applications to add PCI addresses to the allowed list after the application has started.</p>
 <h2>nvme</h2>
 <p>Added <code>spdk_nvme_qpair_get_optimal_poll_group</code> function and <code>qpair_get_optimal_poll_group</code> function pointer in <a class="el" href="structspdk__nvmf__transport__ops.html">spdk_nvmf_transport_ops</a> structure in order to add the qpair to the most suitable polling group.</p>
+<p>Added spdk_nvme_set_hotplug_filter API to allow applications to choose which hot-inserted SSDs should be probed. This is useful for use cases where multiple independent SPDK processes are running on one node. The filter function can then be implemented in these processes to decide which SSDs to probe based on the new SSD's PCI address.</p>
 <h1><a class="anchor" id="changelog-v21-01"></a>
 v21.01:</h1>
 <h2>idxd</h2>
