@@ -396,6 +396,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a260b335960b9d81ac1a2601b003b99cd"><td class="memItemLeft" align="right" valign="top">union <a class="el" href="unionspdk__nvme__cmbsz__register.html">spdk_nvme_cmbsz_register</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a260b335960b9d81ac1a2601b003b99cd">spdk_nvme_ctrlr_get_regs_cmbsz</a> (struct spdk_nvme_ctrlr *ctrlr)</td></tr>
 <tr class="memdesc:a260b335960b9d81ac1a2601b003b99cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the NVMe controller CMBSZ (Controller Memory Buffer Size) register.  <a href="#a260b335960b9d81ac1a2601b003b99cd">More...</a><br /></td></tr>
 <tr class="separator:a260b335960b9d81ac1a2601b003b99cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae98a4e77ad7bf29414a10966597416c"><td class="memItemLeft" align="right" valign="top">union <a class="el" href="unionspdk__nvme__pmrcap__register.html">spdk_nvme_pmrcap_register</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#aae98a4e77ad7bf29414a10966597416c">spdk_nvme_ctrlr_get_regs_pmrcap</a> (struct spdk_nvme_ctrlr *ctrlr)</td></tr>
+<tr class="memdesc:aae98a4e77ad7bf29414a10966597416c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the NVMe controller PMRCAP (Persistent Memory Region Capabilities) register.  <a href="#aae98a4e77ad7bf29414a10966597416c">More...</a><br /></td></tr>
+<tr class="separator:aae98a4e77ad7bf29414a10966597416c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a02b18deae44682a51177e8a4193af602"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a02b18deae44682a51177e8a4193af602">spdk_nvme_ctrlr_get_num_ns</a> (struct spdk_nvme_ctrlr *ctrlr)</td></tr>
 <tr class="memdesc:a02b18deae44682a51177e8a4193af602"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the number of namespaces for the given NVMe controller.  <a href="#a02b18deae44682a51177e8a4193af602">More...</a><br /></td></tr>
 <tr class="separator:a02b18deae44682a51177e8a4193af602"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -3359,6 +3362,33 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_map_prps</b>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the NVMe controller CSTS (Status) register. </dd></dl>
+
+</div>
+</div>
+<a id="aae98a4e77ad7bf29414a10966597416c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aae98a4e77ad7bf29414a10966597416c">&#9670;&nbsp;</a></span>spdk_nvme_ctrlr_get_regs_pmrcap()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">union <a class="el" href="unionspdk__nvme__pmrcap__register.html">spdk_nvme_pmrcap_register</a> spdk_nvme_ctrlr_get_regs_pmrcap </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_nvme_ctrlr *&#160;</td>
+          <td class="paramname"><em>ctrlr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the NVMe controller PMRCAP (Persistent Memory Region Capabilities) register. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ctrlr</td><td>Opaque handle to NVMe controller.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the NVMe controller PMRCAP (Persistent Memory Region Capabilities) register. </dd></dl>
 
 </div>
 </div>

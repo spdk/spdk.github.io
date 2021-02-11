@@ -12,7 +12,7 @@ var searchData=
   ['bdev_5fzone_2eh',['bdev_zone.h',['../bdev__zone_8h.html',1,'']]],
   ['bio_5fcb_5farg',['bio_cb_arg',['../structspdk__bdev__io.html#ac70f00f4fb59c7d646dcfd6d97134a75',1,'spdk_bdev_io']]],
   ['bio_5fto_5fabort',['bio_to_abort',['../structspdk__bdev__io.html#a56b77cacd3d1ac83d081fec94b74e03a',1,'spdk_bdev_io']]],
-  ['bir',['bir',['../unionspdk__nvme__cmbloc__register.html#a7a72b6bb85d7c446b0ad55f74d91e13a',1,'spdk_nvme_cmbloc_register']]],
+  ['bir',['bir',['../unionspdk__nvme__cmbloc__register.html#a7a72b6bb85d7c446b0ad55f74d91e13a',1,'spdk_nvme_cmbloc_register::bir()'],['../unionspdk__nvme__pmrcap__register.html#ac0333fd6c812b2b3876d6d5d14f788de',1,'spdk_nvme_pmrcap_register::bir()']]],
   ['bit_5farray_2eh',['bit_array.h',['../bit__array_8h.html',1,'']]],
   ['bit_5fpool_2eh',['bit_pool.h',['../bit__pool_8h.html',1,'']]],
   ['blobstore_20programmer_27s_20guide',['Blobstore Programmer&apos;s Guide',['../blob.html',1,'prog_guides']]],

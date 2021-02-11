@@ -152,18 +152,24 @@ Collaboration diagram for spdk_nvme_registers:</div>
 <div class="dyncontent">
 <div class="center"><img src="structspdk__nvme__registers__coll__graph.png" border="0" usemap="#spdk__nvme__registers_coll__map" alt="Collaboration graph"/></div>
 <map name="spdk__nvme__registers_coll__map" id="spdk__nvme__registers_coll__map">
-<area shape="rect"  title=" " alt="" coords="329,259,491,285"/>
-<area shape="rect"  href="unionspdk__nvme__cap__register.html" title=" " alt="" coords="21,5,205,32"/>
-<area shape="rect"  href="unionspdk__nvme__vs__register.html" title=" " alt="" coords="25,56,201,83"/>
-<area shape="rect"  href="unionspdk__nvme__bprsel__register.html" title="Boot partition read select." alt="" coords="13,107,214,133"/>
-<area shape="rect"  href="unionspdk__nvme__cmbsz__register.html" title=" " alt="" coords="12,157,215,184"/>
-<area shape="rect"  href="unionspdk__nvme__csts__register.html" title=" " alt="" coords="20,208,207,235"/>
-<area shape="rect"  href="unionspdk__nvme__cc__register.html" title=" " alt="" coords="26,259,201,285"/>
-<area shape="rect"  href="unionspdk__nvme__cmbmsc__register.html" title=" " alt="" coords="5,309,221,336"/>
-<area shape="rect"  href="unionspdk__nvme__aqa__register.html" title=" " alt="" coords="21,360,206,387"/>
-<area shape="rect"  href="unionspdk__nvme__bpinfo__register.html" title="Boot partition information." alt="" coords="12,411,215,437"/>
-<area shape="rect"  href="unionspdk__nvme__cmbsts__register.html" title=" " alt="" coords="9,461,217,488"/>
-<area shape="rect"  href="unionspdk__nvme__cmbloc__register.html" title=" " alt="" coords="9,512,217,539"/>
+<area shape="rect"  title=" " alt="" coords="333,411,495,437"/>
+<area shape="rect"  href="unionspdk__nvme__pmrswtp__register.html" title=" " alt="" coords="5,5,224,32"/>
+<area shape="rect"  href="unionspdk__nvme__cap__register.html" title=" " alt="" coords="23,56,207,83"/>
+<area shape="rect"  href="unionspdk__nvme__vs__register.html" title=" " alt="" coords="27,107,203,133"/>
+<area shape="rect"  href="unionspdk__nvme__bprsel__register.html" title="Boot partition read select." alt="" coords="14,157,215,184"/>
+<area shape="rect"  href="unionspdk__nvme__cmbsz__register.html" title=" " alt="" coords="13,208,216,235"/>
+<area shape="rect"  href="unionspdk__nvme__csts__register.html" title=" " alt="" coords="21,259,208,285"/>
+<area shape="rect"  href="unionspdk__nvme__cc__register.html" title=" " alt="" coords="27,309,202,336"/>
+<area shape="rect"  href="unionspdk__nvme__pmrctl__register.html" title=" " alt="" coords="13,360,216,387"/>
+<area shape="rect"  href="unionspdk__nvme__cmbmsc__register.html" title=" " alt="" coords="7,411,223,437"/>
+<area shape="rect"  href="unionspdk__nvme__aqa__register.html" title=" " alt="" coords="22,461,207,488"/>
+<area shape="rect"  href="unionspdk__nvme__pmrebs__register.html" title=" " alt="" coords="9,512,220,539"/>
+<area shape="rect"  href="unionspdk__nvme__pmrsts__register.html" title=" " alt="" coords="11,563,218,589"/>
+<area shape="rect"  href="unionspdk__nvme__bpinfo__register.html" title="Boot partition information." alt="" coords="13,613,216,640"/>
+<area shape="rect"  href="unionspdk__nvme__pmrmscl__register.html" title=" " alt="" coords="5,664,224,691"/>
+<area shape="rect"  href="unionspdk__nvme__pmrcap__register.html" title=" " alt="" coords="9,715,220,741"/>
+<area shape="rect"  href="unionspdk__nvme__cmbsts__register.html" title=" " alt="" coords="11,765,219,792"/>
+<area shape="rect"  href="unionspdk__nvme__cmbloc__register.html" title=" " alt="" coords="11,816,219,843"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -234,19 +240,49 @@ union <a class="el" href="unionspdk__nvme__cmbmsc__register.html">spdk_nvme_cmbm
 union <a class="el" href="unionspdk__nvme__cmbsts__register.html">spdk_nvme_cmbsts_register</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__registers.html#a25fb56bcf90b65102afccd4c33a2bbdc">cmbsts</a></td></tr>
 <tr class="memdesc:a25fb56bcf90b65102afccd4c33a2bbdc"><td class="mdescLeft">&#160;</td><td class="mdescRight">controller memory buffer status <br /></td></tr>
 <tr class="separator:a25fb56bcf90b65102afccd4c33a2bbdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2092e38a6b22c325f53e298d9c587acd"><td class="memItemLeft" align="right" valign="top"><a id="a2092e38a6b22c325f53e298d9c587acd"></a>
-uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>reserved3</b> [0x3e9]</td></tr>
-<tr class="separator:a2092e38a6b22c325f53e298d9c587acd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6b14d7b5670078acc35263b8a4455819"><td class="memItemLeft" ><a id="a6b14d7b5670078acc35263b8a4455819"></a>
+<tr class="memitem:a51e7bef9cb02ef7ed721edcece04ddcc"><td class="memItemLeft" align="right" valign="top"><a id="a51e7bef9cb02ef7ed721edcece04ddcc"></a>
+uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>reserved2</b> [0x369]</td></tr>
+<tr class="separator:a51e7bef9cb02ef7ed721edcece04ddcc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae207dfbb0bd8ed46fcf2b0fa3033257e"><td class="memItemLeft" align="right" valign="top"><a id="ae207dfbb0bd8ed46fcf2b0fa3033257e"></a>
+union <a class="el" href="unionspdk__nvme__pmrcap__register.html">spdk_nvme_pmrcap_register</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__registers.html#ae207dfbb0bd8ed46fcf2b0fa3033257e">pmrcap</a></td></tr>
+<tr class="memdesc:ae207dfbb0bd8ed46fcf2b0fa3033257e"><td class="mdescLeft">&#160;</td><td class="mdescRight">persistent memory region capabilities <br /></td></tr>
+<tr class="separator:ae207dfbb0bd8ed46fcf2b0fa3033257e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0b70f540bc5718d5c7f87f8c9107377"><td class="memItemLeft" align="right" valign="top"><a id="ae0b70f540bc5718d5c7f87f8c9107377"></a>
+union <a class="el" href="unionspdk__nvme__pmrctl__register.html">spdk_nvme_pmrctl_register</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__registers.html#ae0b70f540bc5718d5c7f87f8c9107377">pmrctl</a></td></tr>
+<tr class="memdesc:ae0b70f540bc5718d5c7f87f8c9107377"><td class="mdescLeft">&#160;</td><td class="mdescRight">persistent memory region control <br /></td></tr>
+<tr class="separator:ae0b70f540bc5718d5c7f87f8c9107377"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a027051ef09399cfc900e8a2c4b848bae"><td class="memItemLeft" align="right" valign="top"><a id="a027051ef09399cfc900e8a2c4b848bae"></a>
+union <a class="el" href="unionspdk__nvme__pmrsts__register.html">spdk_nvme_pmrsts_register</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__registers.html#a027051ef09399cfc900e8a2c4b848bae">pmrsts</a></td></tr>
+<tr class="memdesc:a027051ef09399cfc900e8a2c4b848bae"><td class="mdescLeft">&#160;</td><td class="mdescRight">persistent memory region status <br /></td></tr>
+<tr class="separator:a027051ef09399cfc900e8a2c4b848bae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeda531fa82a3ce5aa5228b5d0d8c64a4"><td class="memItemLeft" align="right" valign="top"><a id="aeda531fa82a3ce5aa5228b5d0d8c64a4"></a>
+union <a class="el" href="unionspdk__nvme__pmrebs__register.html">spdk_nvme_pmrebs_register</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__registers.html#aeda531fa82a3ce5aa5228b5d0d8c64a4">pmrebs</a></td></tr>
+<tr class="memdesc:aeda531fa82a3ce5aa5228b5d0d8c64a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">persistent memory region elasticity buffer size <br /></td></tr>
+<tr class="separator:aeda531fa82a3ce5aa5228b5d0d8c64a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a396608400db18f23b82429f9b4871ef0"><td class="memItemLeft" align="right" valign="top"><a id="a396608400db18f23b82429f9b4871ef0"></a>
+union <a class="el" href="unionspdk__nvme__pmrswtp__register.html">spdk_nvme_pmrswtp_register</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__registers.html#a396608400db18f23b82429f9b4871ef0">pmrswtp</a></td></tr>
+<tr class="memdesc:a396608400db18f23b82429f9b4871ef0"><td class="mdescLeft">&#160;</td><td class="mdescRight">persistent memory region sustained write throughput <br /></td></tr>
+<tr class="separator:a396608400db18f23b82429f9b4871ef0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a3ce15c26be8cf30a74e80ccac3bcca"><td class="memItemLeft" align="right" valign="top"><a id="a7a3ce15c26be8cf30a74e80ccac3bcca"></a>
+union <a class="el" href="unionspdk__nvme__pmrmscl__register.html">spdk_nvme_pmrmscl_register</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__registers.html#a7a3ce15c26be8cf30a74e80ccac3bcca">pmrmscl</a></td></tr>
+<tr class="memdesc:a7a3ce15c26be8cf30a74e80ccac3bcca"><td class="mdescLeft">&#160;</td><td class="mdescRight">persistent memory region memory space control lower <br /></td></tr>
+<tr class="separator:a7a3ce15c26be8cf30a74e80ccac3bcca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d40deb716b5c02d125ad3bcd1492d56"><td class="memItemLeft" align="right" valign="top"><a id="a8d40deb716b5c02d125ad3bcd1492d56"></a>
+uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>pmrmscu</b></td></tr>
+<tr class="separator:a8d40deb716b5c02d125ad3bcd1492d56"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0f31a6543ca9f254e46771d8c09e5f7"><td class="memItemLeft" align="right" valign="top"><a id="ac0f31a6543ca9f254e46771d8c09e5f7"></a>
+uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>reserved3</b> [0x79]</td></tr>
+<tr class="separator:ac0f31a6543ca9f254e46771d8c09e5f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae313ac2ed662eaa64d2427b9a4a9d647"><td class="memItemLeft" ><a id="ae313ac2ed662eaa64d2427b9a4a9d647"></a>
 struct {</td></tr>
-<tr class="memitem:aa8b07a38424848fa20cb14d8815af0ce"><td class="memItemLeft" >
+<tr class="memitem:a01f26ede85a6d37443296c0581f60b12"><td class="memItemLeft" >
 &#160;&#160;&#160;uint32_t&#160;&#160;&#160;<b>sq_tdbl</b></td></tr>
-<tr class="separator:aa8b07a38424848fa20cb14d8815af0ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7d70a4c29106195ed855c8c3fec09383"><td class="memItemLeft" >
+<tr class="separator:a01f26ede85a6d37443296c0581f60b12"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08c3d2b190baeccb94fa0d11f0857745"><td class="memItemLeft" >
 &#160;&#160;&#160;uint32_t&#160;&#160;&#160;<b>cq_hdbl</b></td></tr>
-<tr class="separator:a7d70a4c29106195ed855c8c3fec09383"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6b14d7b5670078acc35263b8a4455819"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><b>doorbell</b> [1]</td></tr>
-<tr class="separator:a6b14d7b5670078acc35263b8a4455819"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a08c3d2b190baeccb94fa0d11f0857745"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae313ac2ed662eaa64d2427b9a4a9d647"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><b>doorbell</b> [1]</td></tr>
+<tr class="separator:ae313ac2ed662eaa64d2427b9a4a9d647"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li><a class="el" href="nvme__spec_8h.html">nvme_spec.h</a></li>

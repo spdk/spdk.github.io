@@ -1,10 +1,10 @@
 var structspdk__nvme__zns__ns__data =
 [
     [ "frl", "structspdk__nvme__zns__ns__data.html#a1aec112ccca1fbcd111fee012bf8c720", null ],
-    [ "lbafe", "structspdk__nvme__zns__ns__data.html#a070a66af1433944f51c9439990f8c73d", null ],
+    [ "lbafe", "structspdk__nvme__zns__ns__data.html#abcc5db8c4bba5832d13ef113b5528256", null ],
     [ "mar", "structspdk__nvme__zns__ns__data.html#abdd0f008b8756f17892579fb42ab57c0", null ],
     [ "mor", "structspdk__nvme__zns__ns__data.html#a49c57b332bf45793fff2b3e795a0c03d", null ],
-    [ "ozcs", "structspdk__nvme__zns__ns__data.html#a7a13708b23572f005a6c1c797de508b8", null ],
+    [ "ozcs", "structspdk__nvme__zns__ns__data.html#a3804f3abcbfcacb5ae806e62828a71ff", null ],
     [ "read_across_zone_boundaries", "structspdk__nvme__zns__ns__data.html#a8c0d5add4037b02b9f7021557e648d6a", null ],
     [ "reserved0", "structspdk__nvme__zns__ns__data.html#aaca26a18cab116c766fbd2a99afa953d", null ],
     [ "reserved15", "structspdk__nvme__zns__ns__data.html#a2898d8733cc00de1d22e33e19a2e6293", null ],
@@ -14,7 +14,7 @@ var structspdk__nvme__zns__ns__data =
     [ "variable_zone_capacity", "structspdk__nvme__zns__ns__data.html#a60795ef319f8bfb561e93717876ba0b6", null ],
     [ "vendor_specific", "structspdk__nvme__zns__ns__data.html#afb5a0a3551ecb7a92dbd5db2d4fdab31", null ],
     [ "zdes", "structspdk__nvme__zns__ns__data.html#a689785f50f2dda21c0a7aa8c1fbb0412", null ],
-    [ "zoc", "structspdk__nvme__zns__ns__data.html#ac0a31ae3901d6670c3546050b099baf2", null ],
+    [ "zoc", "structspdk__nvme__zns__ns__data.html#a85f2a6d61a9b3f7ac49d57b4dde0bd53", null ],
     [ "zone_active_excursions", "structspdk__nvme__zns__ns__data.html#a428fbe41a5b270fbaf41f0aba2b34192", null ],
     [ "zsze", "structspdk__nvme__zns__ns__data.html#adca9d47db6e68a38bb6a2e611eadd643", null ]
 ];

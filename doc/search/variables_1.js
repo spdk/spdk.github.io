@@ -4,7 +4,7 @@ var searchData=
   ['bdev',['bdev',['../structspdk__bdev__io.html#a096518d708e224b91e03897b79431afd',1,'spdk_bdev_io']]],
   ['bio_5fcb_5farg',['bio_cb_arg',['../structspdk__bdev__io.html#ac70f00f4fb59c7d646dcfd6d97134a75',1,'spdk_bdev_io']]],
   ['bio_5fto_5fabort',['bio_to_abort',['../structspdk__bdev__io.html#a56b77cacd3d1ac83d081fec94b74e03a',1,'spdk_bdev_io']]],
-  ['bir',['bir',['../unionspdk__nvme__cmbloc__register.html#a7a72b6bb85d7c446b0ad55f74d91e13a',1,'spdk_nvme_cmbloc_register']]],
+  ['bir',['bir',['../unionspdk__nvme__cmbloc__register.html#a7a72b6bb85d7c446b0ad55f74d91e13a',1,'spdk_nvme_cmbloc_register::bir()'],['../unionspdk__nvme__pmrcap__register.html#ac0333fd6c812b2b3876d6d5d14f788de',1,'spdk_nvme_pmrcap_register::bir()']]],
   ['block_5fsize',['block_size',['../structspdk__dif__ctx.html#a2853eeaf8a9c7bb372d4632748c5105a',1,'spdk_dif_ctx']]],
   ['blockcnt',['blockcnt',['../structspdk__bdev.html#aef65d7444968b8981d46d0c520fd5287',1,'spdk_bdev']]],
   ['blocklen',['blocklen',['../structspdk__bdev.html#ac737d9458e1184f313aed88b8af9b862',1,'spdk_bdev']]],

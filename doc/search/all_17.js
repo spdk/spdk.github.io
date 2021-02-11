@@ -5,7 +5,7 @@ var searchData=
   ['waitq_5fentry',['waitq_entry',['../structspdk__bdev__io_1_1____bdev__io__internal__fields.html#ab4db59743b548a313586a12a3a72efeb',1,'spdk_bdev_io::__bdev_io_internal_fields']]],
   ['wce',['wce',['../unionspdk__nvme__feat__volatile__write__cache.html#a910973ce5eb628dd9b06ab0c72a1cd33',1,'spdk_nvme_feat_volatile_write_cache']]],
   ['wctemp',['wctemp',['../structspdk__nvme__ctrlr__data.html#a1bbdf8a81a2e7ad4c1969a24573a6649',1,'spdk_nvme_ctrlr_data']]],
-  ['wds',['wds',['../unionspdk__nvme__cmbsz__register.html#ad934781cb8247d65136131504d5cd05d',1,'spdk_nvme_cmbsz_register']]],
+  ['wds',['wds',['../unionspdk__nvme__cmbsz__register.html#ad934781cb8247d65136131504d5cd05d',1,'spdk_nvme_cmbsz_register::wds()'],['../unionspdk__nvme__pmrcap__register.html#a4a39e0a760b85de01ffbb754755af19c',1,'spdk_nvme_pmrcap_register::wds()']]],
   ['weighted_5fio_5ftime',['weighted_io_time',['../structspdk__bdev_1_1____bdev__internal__fields.html#a1ca4aa351052992223be9801674d8da8',1,'spdk_bdev::__bdev_internal_fields']]],
   ['wh',['wh',['../unionspdk__nvme__feat__power__management.html#a77632a40e3f55b8de36ca61c7d0a8b74',1,'spdk_nvme_feat_power_management']]],
   ['wit',['wit',['../structspdk__ocssd__geometry__data.html#ae8973c867a5d732a5367165a51d7c69c',1,'spdk_ocssd_geometry_data']]],

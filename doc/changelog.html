@@ -190,6 +190,7 @@ v21.01:</h1>
 <h2>nbd</h2>
 <p>Change the return type of function <code>spdk_nbd_stop</code> from void to int. And update the <code>spdk_nbd_fini</code> with two parameters to make its behavior from sync to async.</p>
 <h2>nvme</h2>
+<p>Added a new function <code>spdk_nvme_ctrlr_get_regs_pmrcap</code> to get the PMR capabilities.</p>
 <p>Directives support was added to the NVMe driver.</p>
 <p>Two async APIs <code>spdk_nvme_ctrlr_cmd_directive_receive</code> and <code>spdk_nvme_ctrlr_cmd_directive_send</code> are added for Directive Send and Directive Receive command, respectively.</p>
 <p>Added a new function <code>spdk_nvme_ctrlr_reset_subsystem</code> to perform a NVMe subsystem reset. Note: The NVMe-oF target does not support the subsystem reset yet.</p>
