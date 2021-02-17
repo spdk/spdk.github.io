@@ -275,15 +275,15 @@ Enumerations</h2></td></tr>
  }</td></tr>
 <tr class="separator:add21ceb016f09949ac6cef50e0566818"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a018f3b986b4345ee0c6931be9718c163"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a018f3b986b4345ee0c6931be9718c163">spdk_nvme_ns_flags</a> { <br />
-&#160;&#160;<a class="el" href="nvme_8h.html#a018f3b986b4345ee0c6931be9718c163a80dcd48a57fa9e14efba4757300ad729">SPDK_NVME_NS_DEALLOCATE_SUPPORTED</a> = 0x1, 
-<a class="el" href="nvme_8h.html#a018f3b986b4345ee0c6931be9718c163ad403aafc70c00560a1db768029933400">SPDK_NVME_NS_FLUSH_SUPPORTED</a> = 0x2, 
-<a class="el" href="nvme_8h.html#a018f3b986b4345ee0c6931be9718c163a60edfdee88fbe811250e2f8ff63597d0">SPDK_NVME_NS_RESERVATION_SUPPORTED</a> = 0x4, 
-<a class="el" href="nvme_8h.html#a018f3b986b4345ee0c6931be9718c163a4e691401f3709b7cd66bd32c28ae109b">SPDK_NVME_NS_WRITE_ZEROES_SUPPORTED</a> = 0x8, 
+&#160;&#160;<a class="el" href="nvme_8h.html#a018f3b986b4345ee0c6931be9718c163a80dcd48a57fa9e14efba4757300ad729">SPDK_NVME_NS_DEALLOCATE_SUPPORTED</a> = 1 &lt;&lt; 0, 
+<a class="el" href="nvme_8h.html#a018f3b986b4345ee0c6931be9718c163ad403aafc70c00560a1db768029933400">SPDK_NVME_NS_FLUSH_SUPPORTED</a> = 1 &lt;&lt; 1, 
+<a class="el" href="nvme_8h.html#a018f3b986b4345ee0c6931be9718c163a60edfdee88fbe811250e2f8ff63597d0">SPDK_NVME_NS_RESERVATION_SUPPORTED</a> = 1 &lt;&lt; 2, 
+<a class="el" href="nvme_8h.html#a018f3b986b4345ee0c6931be9718c163a4e691401f3709b7cd66bd32c28ae109b">SPDK_NVME_NS_WRITE_ZEROES_SUPPORTED</a> = 1 &lt;&lt; 3, 
 <br />
-&#160;&#160;<a class="el" href="nvme_8h.html#a018f3b986b4345ee0c6931be9718c163afe158b050528f0f3341e5af3129c61a7">SPDK_NVME_NS_DPS_PI_SUPPORTED</a> = 0x10, 
-<a class="el" href="nvme_8h.html#a018f3b986b4345ee0c6931be9718c163a91203896ead47bbe22e9f7db8a63c14f">SPDK_NVME_NS_EXTENDED_LBA_SUPPORTED</a> = 0x20, 
-<a class="el" href="nvme_8h.html#a018f3b986b4345ee0c6931be9718c163afe42f7e0cdcb93109b55b77cf89efd27">SPDK_NVME_NS_WRITE_UNCORRECTABLE_SUPPORTED</a> = 0x40, 
-<a class="el" href="nvme_8h.html#a018f3b986b4345ee0c6931be9718c163a568a13a9686985d4aa24543b52c122d6">SPDK_NVME_NS_COMPARE_SUPPORTED</a> = 0x80
+&#160;&#160;<a class="el" href="nvme_8h.html#a018f3b986b4345ee0c6931be9718c163afe158b050528f0f3341e5af3129c61a7">SPDK_NVME_NS_DPS_PI_SUPPORTED</a> = 1 &lt;&lt; 4, 
+<a class="el" href="nvme_8h.html#a018f3b986b4345ee0c6931be9718c163a91203896ead47bbe22e9f7db8a63c14f">SPDK_NVME_NS_EXTENDED_LBA_SUPPORTED</a> = 1 &lt;&lt; 5, 
+<a class="el" href="nvme_8h.html#a018f3b986b4345ee0c6931be9718c163afe42f7e0cdcb93109b55b77cf89efd27">SPDK_NVME_NS_WRITE_UNCORRECTABLE_SUPPORTED</a> = 1 &lt;&lt; 6, 
+<a class="el" href="nvme_8h.html#a018f3b986b4345ee0c6931be9718c163a568a13a9686985d4aa24543b52c122d6">SPDK_NVME_NS_COMPARE_SUPPORTED</a> = 1 &lt;&lt; 7
 <br />
  }</td></tr>
 <tr class="memdesc:a018f3b986b4345ee0c6931be9718c163"><td class="mdescLeft">&#160;</td><td class="mdescRight">Namespace command support flags.  <a href="nvme_8h.html#a018f3b986b4345ee0c6931be9718c163">More...</a><br /></td></tr>
@@ -714,6 +714,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ad4b2335194f9c4c24a5e2c15a9432f4a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#ad4b2335194f9c4c24a5e2c15a9432f4a">spdk_nvme_qpair_print_completion</a> (struct spdk_nvme_qpair *qpair, struct <a class="el" href="structspdk__nvme__cpl.html">spdk_nvme_cpl</a> *cpl)</td></tr>
 <tr class="memdesc:ad4b2335194f9c4c24a5e2c15a9432f4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prints (SPDK_NOTICELOG) the contents of an NVMe completion queue entry.  <a href="#ad4b2335194f9c4c24a5e2c15a9432f4a">More...</a><br /></td></tr>
 <tr class="separator:ad4b2335194f9c4c24a5e2c15a9432f4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add6ae73013499c8fc3c197f47231b8d2"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#add6ae73013499c8fc3c197f47231b8d2">spdk_nvme_qpair_get_id</a> (struct spdk_nvme_qpair *qpair)</td></tr>
+<tr class="memdesc:add6ae73013499c8fc3c197f47231b8d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the NVMe qpair ID for the specified qpair.  <a href="#add6ae73013499c8fc3c197f47231b8d2">More...</a><br /></td></tr>
+<tr class="separator:add6ae73013499c8fc3c197f47231b8d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8145be511777b2c8dc218b1c1e1e2c89"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a8145be511777b2c8dc218b1c1e1e2c89">spdk_nvme_print_command</a> (uint16_t qid, struct <a class="el" href="structspdk__nvme__cmd.html">spdk_nvme_cmd</a> *cmd)</td></tr>
 <tr class="memdesc:a8145be511777b2c8dc218b1c1e1e2c89"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prints (SPDK_NOTICELOG) the contents of an NVMe submission queue entry (command).  <a href="#a8145be511777b2c8dc218b1c1e1e2c89">More...</a><br /></td></tr>
 <tr class="separator:a8145be511777b2c8dc218b1c1e1e2c89"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -7519,6 +7522,33 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_map_prps</b>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>a valid spdk_nvme_qp_failure_reason. </dd></dl>
+
+</div>
+</div>
+<a id="add6ae73013499c8fc3c197f47231b8d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add6ae73013499c8fc3c197f47231b8d2">&#9670;&nbsp;</a></span>spdk_nvme_qpair_get_id()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t spdk_nvme_qpair_get_id </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_nvme_qpair *&#160;</td>
+          <td class="paramname"><em>qpair</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets the NVMe qpair ID for the specified qpair. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">qpair</td><td>Pointer to the NVMe queue pair. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>ID for the specified qpair. </dd></dl>
 
 </div>
 </div>

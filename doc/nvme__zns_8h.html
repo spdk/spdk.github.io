@@ -156,6 +156,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a2060f12903d107efb4d7c26a9c0a83a8"><td class="memItemLeft" align="right" valign="top">const struct <a class="el" href="structspdk__nvme__zns__ns__data.html">spdk_nvme_zns_ns_data</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme__zns_8h.html#a2060f12903d107efb4d7c26a9c0a83a8">spdk_nvme_zns_ns_get_data</a> (struct spdk_nvme_ns *ns)</td></tr>
 <tr class="memdesc:a2060f12903d107efb4d7c26a9c0a83a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the Zoned Namespace Command Set Specific Identify Namespace data as defined by the NVMe Zoned Namespace Command Set Specification.  <a href="#a2060f12903d107efb4d7c26a9c0a83a8">More...</a><br /></td></tr>
 <tr class="separator:a2060f12903d107efb4d7c26a9c0a83a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12e716be7a646187a3d9ec1933718669"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme__zns_8h.html#a12e716be7a646187a3d9ec1933718669">spdk_nvme_zns_ns_get_zone_size_sectors</a> (struct spdk_nvme_ns *ns)</td></tr>
+<tr class="memdesc:a12e716be7a646187a3d9ec1933718669"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the zone size, in number of sectors, of the given namespace.  <a href="#a12e716be7a646187a3d9ec1933718669">More...</a><br /></td></tr>
+<tr class="separator:a12e716be7a646187a3d9ec1933718669"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a19bdffc9a4c413f0f5d33dd9eff69702"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme__zns_8h.html#a19bdffc9a4c413f0f5d33dd9eff69702">spdk_nvme_zns_ns_get_zone_size</a> (struct spdk_nvme_ns *ns)</td></tr>
 <tr class="memdesc:a19bdffc9a4c413f0f5d33dd9eff69702"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the zone size, in bytes, of the given namespace.  <a href="#a19bdffc9a4c413f0f5d33dd9eff69702">More...</a><br /></td></tr>
 <tr class="separator:a19bdffc9a4c413f0f5d33dd9eff69702"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -174,6 +177,12 @@ Functions</h2></td></tr>
 <tr class="memitem:a56244b5a0d1f13aab39446ce18377df2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme__zns_8h.html#a56244b5a0d1f13aab39446ce18377df2">spdk_nvme_zns_zone_append_with_md</a> (struct spdk_nvme_ns *ns, struct spdk_nvme_qpair *qpair, void *buffer, void *metadata, uint64_t zslba, uint32_t lba_count, <a class="el" href="nvme_8h.html#ac9779e9957d7089dde8e492cc60856d8">spdk_nvme_cmd_cb</a> cb_fn, void *cb_arg, uint32_t io_flags, uint16_t apptag_mask, uint16_t apptag)</td></tr>
 <tr class="memdesc:a56244b5a0d1f13aab39446ce18377df2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submit a zone append I/O to the specified NVMe namespace.  <a href="#a56244b5a0d1f13aab39446ce18377df2">More...</a><br /></td></tr>
 <tr class="separator:a56244b5a0d1f13aab39446ce18377df2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad136263aca9103d001cdd2d7308999b0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme__zns_8h.html#ad136263aca9103d001cdd2d7308999b0">spdk_nvme_zns_zone_appendv</a> (struct spdk_nvme_ns *ns, struct spdk_nvme_qpair *qpair, uint64_t zslba, uint32_t lba_count, <a class="el" href="nvme_8h.html#ac9779e9957d7089dde8e492cc60856d8">spdk_nvme_cmd_cb</a> cb_fn, void *cb_arg, uint32_t io_flags, <a class="el" href="nvme_8h.html#a0e1fcb43970ea531567ee00d4ee0675b">spdk_nvme_req_reset_sgl_cb</a> reset_sgl_fn, <a class="el" href="nvme_8h.html#a4ab95bea86f498c08510f6f0bcd2eb09">spdk_nvme_req_next_sge_cb</a> next_sge_fn)</td></tr>
+<tr class="memdesc:ad136263aca9103d001cdd2d7308999b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submit a zone append I/O to the specified NVMe namespace.  <a href="#ad136263aca9103d001cdd2d7308999b0">More...</a><br /></td></tr>
+<tr class="separator:ad136263aca9103d001cdd2d7308999b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3de8024db27f027c6febe65655e0f013"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme__zns_8h.html#a3de8024db27f027c6febe65655e0f013">spdk_nvme_zns_zone_appendv_with_md</a> (struct spdk_nvme_ns *ns, struct spdk_nvme_qpair *qpair, uint64_t zslba, uint32_t lba_count, <a class="el" href="nvme_8h.html#ac9779e9957d7089dde8e492cc60856d8">spdk_nvme_cmd_cb</a> cb_fn, void *cb_arg, uint32_t io_flags, <a class="el" href="nvme_8h.html#a0e1fcb43970ea531567ee00d4ee0675b">spdk_nvme_req_reset_sgl_cb</a> reset_sgl_fn, <a class="el" href="nvme_8h.html#a4ab95bea86f498c08510f6f0bcd2eb09">spdk_nvme_req_next_sge_cb</a> next_sge_fn, void *metadata, uint16_t apptag_mask, uint16_t apptag)</td></tr>
+<tr class="memdesc:a3de8024db27f027c6febe65655e0f013"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submit a zone append I/O to the specified NVMe namespace.  <a href="#a3de8024db27f027c6febe65655e0f013">More...</a><br /></td></tr>
+<tr class="separator:a3de8024db27f027c6febe65655e0f013"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a873628c3e2395e9bc8b45e050527c0cd"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme__zns_8h.html#a873628c3e2395e9bc8b45e050527c0cd">spdk_nvme_zns_close_zone</a> (struct spdk_nvme_ns *ns, struct spdk_nvme_qpair *qpair, uint64_t slba, bool select_all, <a class="el" href="nvme_8h.html#ac9779e9957d7089dde8e492cc60856d8">spdk_nvme_cmd_cb</a> cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:a873628c3e2395e9bc8b45e050527c0cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submit a Close Zone operation to the specified NVMe namespace.  <a href="#a873628c3e2395e9bc8b45e050527c0cd">More...</a><br /></td></tr>
 <tr class="separator:a873628c3e2395e9bc8b45e050527c0cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -464,6 +473,34 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the zone size of the given namespace in bytes. </dd></dl>
+
+</div>
+</div>
+<a id="a12e716be7a646187a3d9ec1933718669"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a12e716be7a646187a3d9ec1933718669">&#9670;&nbsp;</a></span>spdk_nvme_zns_ns_get_zone_size_sectors()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint64_t spdk_nvme_zns_ns_get_zone_size_sectors </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_nvme_ns *&#160;</td>
+          <td class="paramname"><em>ns</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the zone size, in number of sectors, of the given namespace. </p>
+<p>This function is thread safe and can be called at any point while the controller is attached to the SPDK NVMe driver.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ns</td><td>Namespace to query.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the zone size of the given namespace in number of sectors. </dd></dl>
 
 </div>
 </div>
@@ -926,6 +963,203 @@ Functions</h2></td></tr>
     <tr><td class="paramname">cb_fn</td><td>Callback function to invoke when the I/O is completed. </td></tr>
     <tr><td class="paramname">cb_arg</td><td>Argument to pass to the callback function. </td></tr>
     <tr><td class="paramname">io_flags</td><td>Set flags, defined by the SPDK_NVME_IO_FLAGS_* entries in <a class="el" href="nvme__spec_8h.html" title="NVMe specification definitions.">spdk/nvme_spec.h</a>, for this I/O. </td></tr>
+    <tr><td class="paramname">apptag_mask</td><td>Application tag mask. </td></tr>
+    <tr><td class="paramname">apptag</td><td>Application tag to use end-to-end protection information.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 if successfully submitted, negated errnos on the following error conditions: -EINVAL: The request is malformed. -ENOMEM: The request cannot be allocated. -ENXIO: The qpair is failed at the transport level. </dd></dl>
+
+</div>
+</div>
+<a id="ad136263aca9103d001cdd2d7308999b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad136263aca9103d001cdd2d7308999b0">&#9670;&nbsp;</a></span>spdk_nvme_zns_zone_appendv()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_nvme_zns_zone_appendv </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_nvme_ns *&#160;</td>
+          <td class="paramname"><em>ns</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct spdk_nvme_qpair *&#160;</td>
+          <td class="paramname"><em>qpair</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>zslba</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>lba_count</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="nvme_8h.html#ac9779e9957d7089dde8e492cc60856d8">spdk_nvme_cmd_cb</a>&#160;</td>
+          <td class="paramname"><em>cb_fn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>cb_arg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>io_flags</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="nvme_8h.html#a0e1fcb43970ea531567ee00d4ee0675b">spdk_nvme_req_reset_sgl_cb</a>&#160;</td>
+          <td class="paramname"><em>reset_sgl_fn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="nvme_8h.html#a4ab95bea86f498c08510f6f0bcd2eb09">spdk_nvme_req_next_sge_cb</a>&#160;</td>
+          <td class="paramname"><em>next_sge_fn</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Submit a zone append I/O to the specified NVMe namespace. </p>
+<p>The command is submitted to a qpair allocated by <a class="el" href="nvme_8h.html#a13f745d239dab9b8f934fae2ad4984a2" title="Allocate an I/O queue pair (submission and completion queue).">spdk_nvme_ctrlr_alloc_io_qpair()</a>. The user must ensure that only one thread submits I/O on a given qpair at any given time.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ns</td><td>NVMe namespace to submit the zone append I/O. </td></tr>
+    <tr><td class="paramname">qpair</td><td>I/O queue pair to submit the request. </td></tr>
+    <tr><td class="paramname">zslba</td><td>Zone Start LBA of the zone that we are appending to. </td></tr>
+    <tr><td class="paramname">lba_count</td><td>Length (in sectors) for the zone append operation. </td></tr>
+    <tr><td class="paramname">cb_fn</td><td>Callback function to invoke when the I/O is completed. </td></tr>
+    <tr><td class="paramname">cb_arg</td><td>Argument to pass to the callback function. </td></tr>
+    <tr><td class="paramname">io_flags</td><td>Set flags, defined in <a class="el" href="nvme__spec_8h.html" title="NVMe specification definitions.">nvme_spec.h</a>, for this I/O. </td></tr>
+    <tr><td class="paramname">reset_sgl_fn</td><td>Callback function to reset scattered payload. </td></tr>
+    <tr><td class="paramname">next_sge_fn</td><td>Callback function to iterate each scattered payload memory segment.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 if successfully submitted, negated errnos on the following error conditions: -EINVAL: The request is malformed. -ENOMEM: The request cannot be allocated. -ENXIO: The qpair is failed at the transport level. </dd></dl>
+
+</div>
+</div>
+<a id="a3de8024db27f027c6febe65655e0f013"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3de8024db27f027c6febe65655e0f013">&#9670;&nbsp;</a></span>spdk_nvme_zns_zone_appendv_with_md()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_nvme_zns_zone_appendv_with_md </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_nvme_ns *&#160;</td>
+          <td class="paramname"><em>ns</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct spdk_nvme_qpair *&#160;</td>
+          <td class="paramname"><em>qpair</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>zslba</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>lba_count</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="nvme_8h.html#ac9779e9957d7089dde8e492cc60856d8">spdk_nvme_cmd_cb</a>&#160;</td>
+          <td class="paramname"><em>cb_fn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>cb_arg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>io_flags</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="nvme_8h.html#a0e1fcb43970ea531567ee00d4ee0675b">spdk_nvme_req_reset_sgl_cb</a>&#160;</td>
+          <td class="paramname"><em>reset_sgl_fn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="nvme_8h.html#a4ab95bea86f498c08510f6f0bcd2eb09">spdk_nvme_req_next_sge_cb</a>&#160;</td>
+          <td class="paramname"><em>next_sge_fn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>metadata</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>apptag_mask</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>apptag</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Submit a zone append I/O to the specified NVMe namespace. </p>
+<p>The command is submitted to a qpair allocated by <a class="el" href="nvme_8h.html#a13f745d239dab9b8f934fae2ad4984a2" title="Allocate an I/O queue pair (submission and completion queue).">spdk_nvme_ctrlr_alloc_io_qpair()</a>. The user must ensure that only one thread submits I/O on a given qpair at any given time.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ns</td><td>NVMe namespace to submit the zone append I/O. </td></tr>
+    <tr><td class="paramname">qpair</td><td>I/O queue pair to submit the request. </td></tr>
+    <tr><td class="paramname">zslba</td><td>Zone Start LBA of the zone that we are appending to. </td></tr>
+    <tr><td class="paramname">lba_count</td><td>Length (in sectors) for the zone append operation. </td></tr>
+    <tr><td class="paramname">cb_fn</td><td>Callback function to invoke when the I/O is completed. </td></tr>
+    <tr><td class="paramname">cb_arg</td><td>Argument to pass to the callback function. </td></tr>
+    <tr><td class="paramname">io_flags</td><td>Set flags, defined in <a class="el" href="nvme__spec_8h.html" title="NVMe specification definitions.">nvme_spec.h</a>, for this I/O. </td></tr>
+    <tr><td class="paramname">reset_sgl_fn</td><td>Callback function to reset scattered payload. </td></tr>
+    <tr><td class="paramname">next_sge_fn</td><td>Callback function to iterate each scattered payload memory segment. </td></tr>
+    <tr><td class="paramname">metadata</td><td>Virtual address pointer to the metadata payload, the length of metadata is specified by <a class="el" href="nvme_8h.html#ab48657f8cb6561b35e1c1b0bc18376d2" title="Get the metadata size, in bytes, of the given namespace.">spdk_nvme_ns_get_md_size()</a>. </td></tr>
     <tr><td class="paramname">apptag_mask</td><td>Application tag mask. </td></tr>
     <tr><td class="paramname">apptag</td><td>Application tag to use end-to-end protection information.</td></tr>
   </table>
