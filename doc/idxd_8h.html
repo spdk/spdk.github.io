@@ -223,9 +223,9 @@ Functions</h2></td></tr>
 <tr class="memitem:abf5fb2b8e9bd7b8b2e01a665f7a0f16a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="idxd_8h.html#abf5fb2b8e9bd7b8b2e01a665f7a0f16a">spdk_idxd_submit_crc32c</a> (struct spdk_idxd_io_channel *chan, uint32_t *dst, void *src, uint32_t seed, uint64_t nbytes, <a class="el" href="idxd_8h.html#a75c066c5425700c49f077e20484b50c1">spdk_idxd_req_cb</a> cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:abf5fb2b8e9bd7b8b2e01a665f7a0f16a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Build and submit a memory CRC32-C request.  <a href="#abf5fb2b8e9bd7b8b2e01a665f7a0f16a">More...</a><br /></td></tr>
 <tr class="separator:abf5fb2b8e9bd7b8b2e01a665f7a0f16a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6ae2b6bd3783cadfb3fc32f090b2c624"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="idxd_8h.html#a6ae2b6bd3783cadfb3fc32f090b2c624">spdk_idxd_process_events</a> (struct spdk_idxd_io_channel *chan)</td></tr>
-<tr class="memdesc:a6ae2b6bd3783cadfb3fc32f090b2c624"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check for completed requests on an IDXD channel.  <a href="#a6ae2b6bd3783cadfb3fc32f090b2c624">More...</a><br /></td></tr>
-<tr class="separator:a6ae2b6bd3783cadfb3fc32f090b2c624"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac92c2ac49b4b576f2538aa58846d93c3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="idxd_8h.html#ac92c2ac49b4b576f2538aa58846d93c3">spdk_idxd_process_events</a> (struct spdk_idxd_io_channel *chan)</td></tr>
+<tr class="memdesc:ac92c2ac49b4b576f2538aa58846d93c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check for completed requests on an IDXD channel.  <a href="#ac92c2ac49b4b576f2538aa58846d93c3">More...</a><br /></td></tr>
+<tr class="separator:ac92c2ac49b4b576f2538aa58846d93c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae8fa809d994d290b255dd3dab1f1903b"><td class="memItemLeft" align="right" valign="top">struct spdk_idxd_io_channel *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="idxd_8h.html#ae8fa809d994d290b255dd3dab1f1903b">spdk_idxd_get_channel</a> (struct spdk_idxd_device *idxd)</td></tr>
 <tr class="memdesc:ae8fa809d994d290b255dd3dab1f1903b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an IDXD channel for a given IDXD device.  <a href="#ae8fa809d994d290b255dd3dab1f1903b">More...</a><br /></td></tr>
 <tr class="separator:ae8fa809d994d290b255dd3dab1f1903b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -987,14 +987,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a6ae2b6bd3783cadfb3fc32f090b2c624"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6ae2b6bd3783cadfb3fc32f090b2c624">&#9670;&nbsp;</a></span>spdk_idxd_process_events()</h2>
+<a id="ac92c2ac49b4b576f2538aa58846d93c3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac92c2ac49b4b576f2538aa58846d93c3">&#9670;&nbsp;</a></span>spdk_idxd_process_events()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void spdk_idxd_process_events </td>
+          <td class="memname">int spdk_idxd_process_events </td>
           <td>(</td>
           <td class="paramtype">struct spdk_idxd_io_channel *&#160;</td>
           <td class="paramname"><em>chan</em></td><td>)</td>
@@ -1010,6 +1010,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>number of operations completed. </dd></dl>
 
 </div>
 </div>

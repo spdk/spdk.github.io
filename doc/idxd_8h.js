@@ -17,7 +17,7 @@ var idxd_8h =
     [ "spdk_idxd_device_needs_rebalance", "idxd_8h.html#aa63a7844507971ab2973fabbd1df2d46", null ],
     [ "spdk_idxd_get_channel", "idxd_8h.html#ae8fa809d994d290b255dd3dab1f1903b", null ],
     [ "spdk_idxd_probe", "idxd_8h.html#a24d52afbaccee42acaf9663d41eddcc7", null ],
-    [ "spdk_idxd_process_events", "idxd_8h.html#a6ae2b6bd3783cadfb3fc32f090b2c624", null ],
+    [ "spdk_idxd_process_events", "idxd_8h.html#ac92c2ac49b4b576f2538aa58846d93c3", null ],
     [ "spdk_idxd_put_channel", "idxd_8h.html#a5d1dc2a87145f5b932a22db3e41f39d6", null ],
     [ "spdk_idxd_reconfigure_chan", "idxd_8h.html#af21b012ab31e8c129f79e622bc1464ff", null ],
     [ "spdk_idxd_set_config", "idxd_8h.html#acda8cf00ce61e00149a51bba5d8d2ec9", null ],
