@@ -1,5 +1,7 @@
 var NAVTREEINDEX1 =
 {
+"bdev__module_8h.html#a65de686e7ddcf8caa6d7fa032e7023c6":[14,0,5,30],
+"bdev__module_8h.html#a78a004a98b02f2d1b2346b6b25e1c945":[14,0,5,13],
 "bdev__module_8h.html#a7f2edd5a040a818752112d2cc709efca":[14,0,5,42],
 "bdev__module_8h.html#a82dd20b5702f2f97c1f8eec5cdc6d0d5":[14,0,5,43],
 "bdev__module_8h.html#a8d51d8e113f0dffb1bbe535ea01c495f":[14,0,5,21],
@@ -247,7 +249,5 @@ var NAVTREEINDEX1 =
 "changelog.html#changelog-v17-03":[1,3,16],
 "changelog.html#changelog-v17-07":[1,3,15],
 "changelog.html#changelog-v17-10":[1,3,14],
-"changelog.html#changelog-v18-01":[1,3,13],
-"changelog.html#changelog-v18-04":[1,3,12],
-"changelog.html#changelog-v18-07":[1,3,11]
+"changelog.html#changelog-v18-01":[1,3,13]
 };

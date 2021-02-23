@@ -16,6 +16,7 @@ var accel__engine_8h =
     [ "spdk_accel_batch_prep_compare", "accel__engine_8h.html#af5363d4aaa841c2da04b7ddc3378552e", null ],
     [ "spdk_accel_batch_prep_copy", "accel__engine_8h.html#a67918379417286dd1d64703c38362d0f", null ],
     [ "spdk_accel_batch_prep_crc32c", "accel__engine_8h.html#a66de1247146b452361786c91a1391c07", null ],
+    [ "spdk_accel_batch_prep_crc32cv", "accel__engine_8h.html#a7a96251cf8f864178482dd5ab2c8a45f", null ],
     [ "spdk_accel_batch_prep_dualcast", "accel__engine_8h.html#acc4985a99f3530a6086324e02c1062bd", null ],
     [ "spdk_accel_batch_prep_fill", "accel__engine_8h.html#aa32805adbe8590f186595f9c66fa87e7", null ],
     [ "spdk_accel_batch_submit", "accel__engine_8h.html#afc0003901c7e38a40892a64f829aee86", null ],
@@ -27,6 +28,7 @@ var accel__engine_8h =
     [ "spdk_accel_submit_compare", "accel__engine_8h.html#a7ba82c135282c35831243dd787fbe907", null ],
     [ "spdk_accel_submit_copy", "accel__engine_8h.html#ac0f663883c7d8087f9b1ca948b3aefc9", null ],
     [ "spdk_accel_submit_crc32c", "accel__engine_8h.html#a65c5cfc170a655a791b3ff29cb7f1f1b", null ],
+    [ "spdk_accel_submit_crc32cv", "accel__engine_8h.html#ada6d09a870c29388eeed6746359413c9", null ],
     [ "spdk_accel_submit_dualcast", "accel__engine_8h.html#a402f5ed0f1fac5c37f965a55f0d0bf55", null ],
     [ "spdk_accel_submit_fill", "accel__engine_8h.html#adb62b1e99d9a010c140987eea57f5dc4", null ],
     [ "spdk_accel_write_config_json", "accel__engine_8h.html#a308671b4f55c2adc9469e59b941a6dcc", null ]

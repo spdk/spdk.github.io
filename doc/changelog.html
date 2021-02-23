@@ -151,6 +151,8 @@ v21.04: (Upcoming Release)</h1>
 <p>For <code>bdev_ocssd_create</code> RPC, the optional parameter <code>range</code> was removed. Only one OCSSD bdev can be created for one OCSSD namespace.</p>
 <h2>env</h2>
 <p>Added spdk_pci_device_allow API to allow applications to add PCI addresses to the allowed list after the application has started.</p>
+<h2>accel</h2>
+<p>Two new accelerated crc32 functions 'spdk_accel_submit_crc32cv' and 'spdk_accel_batch_prep_crc32cv' are added in order to provide the chained accelerated CRC32 computation support.</p>
 <h2>nvme</h2>
 <p>Added <code>spdk_nvme_qpair_get_optimal_poll_group</code> function and <code>qpair_get_optimal_poll_group</code> function pointer in <a class="el" href="structspdk__nvmf__transport__ops.html">spdk_nvmf_transport_ops</a> structure in order to add the qpair to the most suitable polling group.</p>
 <p>Added spdk_nvme_set_hotplug_filter API to allow applications to choose which hot-inserted SSDs should be probed. This is useful for use cases where multiple independent SPDK processes are running on one node. The filter function can then be implemented in these processes to decide which SSDs to probe based on the new SSD's PCI address.</p>

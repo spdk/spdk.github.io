@@ -233,9 +233,15 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="acce
 <tr class="memitem:a66de1247146b452361786c91a1391c07"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="accel__engine_8h.html#a66de1247146b452361786c91a1391c07">spdk_accel_batch_prep_crc32c</a> (struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *ch, struct spdk_accel_batch *batch, uint32_t *dst, void *src, uint32_t seed, uint64_t nbytes, <a class="el" href="accel__engine_8h.html#a48593db52501b3dec9233f7112d37872">spdk_accel_completion_cb</a> cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:a66de1247146b452361786c91a1391c07"><td class="mdescLeft">&#160;</td><td class="mdescRight">Synchronous call to prepare a crc32c request into a previously initialized batch created with <a class="el" href="accel__engine_8h.html#aaba9b97bbc71f37e3fd1287224eb897e" title="Synchronous call to create a batch sequence.">spdk_accel_batch_create()</a>.  <a href="#a66de1247146b452361786c91a1391c07">More...</a><br /></td></tr>
 <tr class="separator:a66de1247146b452361786c91a1391c07"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a96251cf8f864178482dd5ab2c8a45f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="accel__engine_8h.html#a7a96251cf8f864178482dd5ab2c8a45f">spdk_accel_batch_prep_crc32cv</a> (struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *ch, struct spdk_accel_batch *batch, uint32_t *dst, struct iovec *iovs, uint32_t iovcnt, uint32_t seed, <a class="el" href="accel__engine_8h.html#a48593db52501b3dec9233f7112d37872">spdk_accel_completion_cb</a> cb_fn, void *cb_arg)</td></tr>
+<tr class="memdesc:a7a96251cf8f864178482dd5ab2c8a45f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Synchronous call to prepare a chained crc32c request into a previously initialized batch created with <a class="el" href="accel__engine_8h.html#aaba9b97bbc71f37e3fd1287224eb897e" title="Synchronous call to create a batch sequence.">spdk_accel_batch_create()</a>.  <a href="#a7a96251cf8f864178482dd5ab2c8a45f">More...</a><br /></td></tr>
+<tr class="separator:a7a96251cf8f864178482dd5ab2c8a45f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a65c5cfc170a655a791b3ff29cb7f1f1b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="accel__engine_8h.html#a65c5cfc170a655a791b3ff29cb7f1f1b">spdk_accel_submit_crc32c</a> (struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *ch, uint32_t *dst, void *src, uint32_t seed, uint64_t nbytes, <a class="el" href="accel__engine_8h.html#a48593db52501b3dec9233f7112d37872">spdk_accel_completion_cb</a> cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:a65c5cfc170a655a791b3ff29cb7f1f1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submit a CRC-32C calculation request.  <a href="#a65c5cfc170a655a791b3ff29cb7f1f1b">More...</a><br /></td></tr>
 <tr class="separator:a65c5cfc170a655a791b3ff29cb7f1f1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada6d09a870c29388eeed6746359413c9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="accel__engine_8h.html#ada6d09a870c29388eeed6746359413c9">spdk_accel_submit_crc32cv</a> (struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *ch, uint32_t *dst, struct iovec *iovs, uint32_t iovcnt, uint32_t seed, <a class="el" href="accel__engine_8h.html#a48593db52501b3dec9233f7112d37872">spdk_accel_completion_cb</a> cb_fn, void *cb_arg)</td></tr>
+<tr class="memdesc:ada6d09a870c29388eeed6746359413c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submit a chained CRC-32C calculation request.  <a href="#ada6d09a870c29388eeed6746359413c9">More...</a><br /></td></tr>
+<tr class="separator:ada6d09a870c29388eeed6746359413c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a308671b4f55c2adc9469e59b941a6dcc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="accel__engine_8h.html#a308671b4f55c2adc9469e59b941a6dcc">spdk_accel_write_config_json</a> (struct spdk_json_write_ctx *w)</td></tr>
 <tr class="memdesc:a308671b4f55c2adc9469e59b941a6dcc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write Acceleration subsystem configuration into provided JSON context.  <a href="#a308671b4f55c2adc9469e59b941a6dcc">More...</a><br /></td></tr>
 <tr class="separator:a308671b4f55c2adc9469e59b941a6dcc"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -603,6 +609,87 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="acce
     <tr><td class="paramname">src</td><td>The source address for the data. </td></tr>
     <tr><td class="paramname">seed</td><td>Four byte seed value. </td></tr>
     <tr><td class="paramname">nbytes</td><td>Length in bytes. </td></tr>
+    <tr><td class="paramname">cb_fn</td><td>Called when this operation completes. </td></tr>
+    <tr><td class="paramname">cb_arg</td><td>Callback argument.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, negative errno on failure. </dd></dl>
+
+</div>
+</div>
+<a id="a7a96251cf8f864178482dd5ab2c8a45f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7a96251cf8f864178482dd5ab2c8a45f">&#9670;&nbsp;</a></span>spdk_accel_batch_prep_crc32cv()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_accel_batch_prep_crc32cv </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *&#160;</td>
+          <td class="paramname"><em>ch</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct spdk_accel_batch *&#160;</td>
+          <td class="paramname"><em>batch</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t *&#160;</td>
+          <td class="paramname"><em>dst</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct iovec *&#160;</td>
+          <td class="paramname"><em>iovs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>iovcnt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>seed</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="accel__engine_8h.html#a48593db52501b3dec9233f7112d37872">spdk_accel_completion_cb</a>&#160;</td>
+          <td class="paramname"><em>cb_fn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>cb_arg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Synchronous call to prepare a chained crc32c request into a previously initialized batch created with <a class="el" href="accel__engine_8h.html#aaba9b97bbc71f37e3fd1287224eb897e" title="Synchronous call to create a batch sequence.">spdk_accel_batch_create()</a>. </p>
+<p>The callback will be called when the crc32c completes after the batch has been submitted by an asynchronous call to <a class="el" href="accel__engine_8h.html#afc0003901c7e38a40892a64f829aee86" title="Asynchronous call to submit a batch sequence.">spdk_accel_batch_submit()</a>.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ch</td><td>I/O channel associated with this call. </td></tr>
+    <tr><td class="paramname">batch</td><td>Handle provided when the batch was started with <a class="el" href="accel__engine_8h.html#aaba9b97bbc71f37e3fd1287224eb897e" title="Synchronous call to create a batch sequence.">spdk_accel_batch_create()</a>. </td></tr>
+    <tr><td class="paramname">dst</td><td>Destination to write the CRC-32C to. </td></tr>
+    <tr><td class="paramname">iovs</td><td>The io vector array which stores the src data and len. </td></tr>
+    <tr><td class="paramname">iovcnt</td><td>The size of the iov. </td></tr>
+    <tr><td class="paramname">seed</td><td>Four byte seed value. </td></tr>
     <tr><td class="paramname">cb_fn</td><td>Called when this operation completes. </td></tr>
     <tr><td class="paramname">cb_arg</td><td>Callback argument.</td></tr>
   </table>
@@ -1123,6 +1210,80 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="acce
     <tr><td class="paramname">src</td><td>The source address for the data. </td></tr>
     <tr><td class="paramname">seed</td><td>Four byte seed value. </td></tr>
     <tr><td class="paramname">nbytes</td><td>Length in bytes. </td></tr>
+    <tr><td class="paramname">cb_fn</td><td>Called when this CRC-32C operation completes. </td></tr>
+    <tr><td class="paramname">cb_arg</td><td>Callback argument.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, negative errno on failure. </dd></dl>
+
+</div>
+</div>
+<a id="ada6d09a870c29388eeed6746359413c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ada6d09a870c29388eeed6746359413c9">&#9670;&nbsp;</a></span>spdk_accel_submit_crc32cv()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_accel_submit_crc32cv </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *&#160;</td>
+          <td class="paramname"><em>ch</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t *&#160;</td>
+          <td class="paramname"><em>dst</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct iovec *&#160;</td>
+          <td class="paramname"><em>iovs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>iovcnt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>seed</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="accel__engine_8h.html#a48593db52501b3dec9233f7112d37872">spdk_accel_completion_cb</a>&#160;</td>
+          <td class="paramname"><em>cb_fn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>cb_arg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Submit a chained CRC-32C calculation request. </p>
+<p>This operation will calculate the 4 byte CRC32-C for the given data.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ch</td><td>I/O channel associated with this call. </td></tr>
+    <tr><td class="paramname">dst</td><td>Destination to write the CRC-32C to. </td></tr>
+    <tr><td class="paramname">iovs</td><td>The io vector array which stores the src data and len. </td></tr>
+    <tr><td class="paramname">iovcnt</td><td>The size of the iov. </td></tr>
+    <tr><td class="paramname">seed</td><td>Four byte seed value. </td></tr>
     <tr><td class="paramname">cb_fn</td><td>Called when this CRC-32C operation completes. </td></tr>
     <tr><td class="paramname">cb_arg</td><td>Callback argument.</td></tr>
   </table>
