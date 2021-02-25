@@ -1,5 +1,7 @@
 var NAVTREEINDEX26 =
 {
+"unionspdk__nvme__feat__power__management.html#ad425c8a49e910e0413a6a45a67044fbe":[13,0,119,3],
+"unionspdk__nvme__feat__power__management.html#aec623e214bb5378d8ed67848cf028137":[13,0,119,0],
 "unionspdk__nvme__feat__power__management.html#af68e833134cda1b00b750992bdd91342":[13,0,119,1],
 "unionspdk__nvme__feat__reservation__notification__mask.html":[13,0,120],
 "unionspdk__nvme__feat__reservation__notification__mask.html#a00fe19c4570ec5917ae172b47d3fd7df":[13,0,120,2],

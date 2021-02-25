@@ -5,6 +5,8 @@ var nvme__zns_8h =
     [ "spdk_nvme_zns_ctrlr_get_max_zone_append_size", "nvme__zns_8h.html#a617d5c38aafe14358922c3eeffa6c93b", null ],
     [ "spdk_nvme_zns_finish_zone", "nvme__zns_8h.html#a78c8da36da7f1e66ec0aceee68e326d5", null ],
     [ "spdk_nvme_zns_ns_get_data", "nvme__zns_8h.html#a2060f12903d107efb4d7c26a9c0a83a8", null ],
+    [ "spdk_nvme_zns_ns_get_max_active_zones", "nvme__zns_8h.html#a7b031890e8233b4a788a799be333a18f", null ],
+    [ "spdk_nvme_zns_ns_get_max_open_zones", "nvme__zns_8h.html#a5d5e4b7899cd76fb944e9befd56f3f80", null ],
     [ "spdk_nvme_zns_ns_get_num_zones", "nvme__zns_8h.html#a54494d19ee16b6fbf18f44ea15426de4", null ],
     [ "spdk_nvme_zns_ns_get_zone_size", "nvme__zns_8h.html#a19bdffc9a4c413f0f5d33dd9eff69702", null ],
     [ "spdk_nvme_zns_ns_get_zone_size_sectors", "nvme__zns_8h.html#a12e716be7a646187a3d9ec1933718669", null ],

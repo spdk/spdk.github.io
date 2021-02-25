@@ -165,6 +165,12 @@ Functions</h2></td></tr>
 <tr class="memitem:a54494d19ee16b6fbf18f44ea15426de4"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme__zns_8h.html#a54494d19ee16b6fbf18f44ea15426de4">spdk_nvme_zns_ns_get_num_zones</a> (struct spdk_nvme_ns *ns)</td></tr>
 <tr class="memdesc:a54494d19ee16b6fbf18f44ea15426de4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the number of zones for the given namespace.  <a href="#a54494d19ee16b6fbf18f44ea15426de4">More...</a><br /></td></tr>
 <tr class="separator:a54494d19ee16b6fbf18f44ea15426de4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d5e4b7899cd76fb944e9befd56f3f80"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme__zns_8h.html#a5d5e4b7899cd76fb944e9befd56f3f80">spdk_nvme_zns_ns_get_max_open_zones</a> (struct spdk_nvme_ns *ns)</td></tr>
+<tr class="memdesc:a5d5e4b7899cd76fb944e9befd56f3f80"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the maximum number of open zones for the given namespace.  <a href="#a5d5e4b7899cd76fb944e9befd56f3f80">More...</a><br /></td></tr>
+<tr class="separator:a5d5e4b7899cd76fb944e9befd56f3f80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b031890e8233b4a788a799be333a18f"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme__zns_8h.html#a7b031890e8233b4a788a799be333a18f">spdk_nvme_zns_ns_get_max_active_zones</a> (struct spdk_nvme_ns *ns)</td></tr>
+<tr class="memdesc:a7b031890e8233b4a788a799be333a18f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the maximum number of active zones for the given namespace.  <a href="#a7b031890e8233b4a788a799be333a18f">More...</a><br /></td></tr>
+<tr class="separator:a7b031890e8233b4a788a799be333a18f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7e44f2e8ad190636f5b7e18bbfe3d301"><td class="memItemLeft" align="right" valign="top">const struct <a class="el" href="structspdk__nvme__zns__ctrlr__data.html">spdk_nvme_zns_ctrlr_data</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme__zns_8h.html#a7e44f2e8ad190636f5b7e18bbfe3d301">spdk_nvme_zns_ctrlr_get_data</a> (struct spdk_nvme_ctrlr *ctrlr)</td></tr>
 <tr class="memdesc:a7e44f2e8ad190636f5b7e18bbfe3d301"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the Zoned Namespace Command Set Specific Identify Controller data as defined by the NVMe Zoned Namespace Command Set Specification.  <a href="#a7e44f2e8ad190636f5b7e18bbfe3d301">More...</a><br /></td></tr>
 <tr class="separator:a7e44f2e8ad190636f5b7e18bbfe3d301"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -417,6 +423,66 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>a pointer to the namespace data, or NULL if the namespace is not a Zoned Namespace. </dd></dl>
+
+</div>
+</div>
+<a id="a7b031890e8233b4a788a799be333a18f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b031890e8233b4a788a799be333a18f">&#9670;&nbsp;</a></span>spdk_nvme_zns_ns_get_max_active_zones()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t spdk_nvme_zns_ns_get_max_active_zones </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_nvme_ns *&#160;</td>
+          <td class="paramname"><em>ns</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the maximum number of active zones for the given namespace. </p>
+<p>An active zone is a zone in any of the zone states: EXPLICIT OPEN, IMPLICIT OPEN or CLOSED.</p>
+<p>If this value is 0, there is no limit.</p>
+<p>This function is thread safe and can be called at any point while the controller is attached to the SPDK NVMe driver.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ns</td><td>Namespace to query.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the maximum number of active zones. </dd></dl>
+
+</div>
+</div>
+<a id="a5d5e4b7899cd76fb944e9befd56f3f80"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d5e4b7899cd76fb944e9befd56f3f80">&#9670;&nbsp;</a></span>spdk_nvme_zns_ns_get_max_open_zones()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t spdk_nvme_zns_ns_get_max_open_zones </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_nvme_ns *&#160;</td>
+          <td class="paramname"><em>ns</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the maximum number of open zones for the given namespace. </p>
+<p>An open zone is a zone in any of the zone states: EXPLICIT OPEN or IMPLICIT OPEN.</p>
+<p>If this value is 0, there is no limit.</p>
+<p>This function is thread safe and can be called at any point while the controller is attached to the SPDK NVMe driver.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ns</td><td>Namespace to query.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the maximum number of open zones. </dd></dl>
 
 </div>
 </div>
