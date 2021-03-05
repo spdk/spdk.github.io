@@ -1,7 +1,6 @@
 var structspdk__app__opts =
 [
     [ "base_virtaddr", "structspdk__app__opts.html#a74c03a91caa15961c35374bf2465a279", null ],
-    [ "config_file", "structspdk__app__opts.html#a6d21685102b759248a42bb8874c42409", null ],
     [ "delay_subsystem_init", "structspdk__app__opts.html#a703388c6f0075cf0396e05925364ebc5", null ],
     [ "enable_coredump", "structspdk__app__opts.html#ac21faa67a906aa0e70194b96e7700142", null ],
     [ "env_context", "structspdk__app__opts.html#a7e520897d6a9e39c3e62cc4259bd2ea3", null ],
@@ -12,8 +11,6 @@ var structspdk__app__opts =
     [ "json_config_ignore_errors", "structspdk__app__opts.html#a22921866228db3a1c2831638650a26f6", null ],
     [ "log", "structspdk__app__opts.html#a4de9f5097a5cdc69c3b45b64db56eea0", null ],
     [ "main_core", "structspdk__app__opts.html#aac6e234b1dec93b58c29239539d6c9f2", null ],
-    [ "master_core", "structspdk__app__opts.html#a8b1f0881077c7cba8c846a150364dee3", null ],
-    [ "max_delay_us", "structspdk__app__opts.html#a54842105e519787ce90254a80177c001", null ],
     [ "mem_channel", "structspdk__app__opts.html#abd571128caea84190b31231105219b38", null ],
     [ "mem_size", "structspdk__app__opts.html#ab3ad6ade4ff0ec041851e763bc29d6e7", null ],
     [ "name", "structspdk__app__opts.html#a6d8fad90703f6eb20d0bd2ecb5747f74", null ],
@@ -22,9 +19,7 @@ var structspdk__app__opts =
     [ "num_pci_addr", "structspdk__app__opts.html#a1588a2f9d5a96fa56c9081ad84b7902a", null ],
     [ "opts_size", "structspdk__app__opts.html#a2a7cefefd12eac2f22efdc24962da925", null ],
     [ "pci_allowed", "structspdk__app__opts.html#a7d3b920c3b813bcbf6e95d5551a242ed", null ],
-    [ "pci_blacklist", "structspdk__app__opts.html#af27c1872b7544e7d3d077ae9bd5f27e6", null ],
     [ "pci_blocked", "structspdk__app__opts.html#ac401e18cb6277ace32a2d24feca14255", null ],
-    [ "pci_whitelist", "structspdk__app__opts.html#a3b82ef17d584db64284a5851b5760e4c", null ],
     [ "print_level", "structspdk__app__opts.html#a3621332b57cec3e2968063c6484451ad", null ],
     [ "reactor_mask", "structspdk__app__opts.html#a2a264093fd74433b83da1a4edc757b59", null ],
     [ "rpc_addr", "structspdk__app__opts.html#a132140a9733933e19bde81ffb3421b6e", null ],

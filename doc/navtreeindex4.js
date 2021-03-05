@@ -1,7 +1,5 @@
 var NAVTREEINDEX4 =
 {
-"ioat__spec_8h.html#a19b3bfaf71d9e633a125103b115a193a":[14,0,28,35],
-"ioat__spec_8h.html#a1afd40fb951ab6012be748fe7358dd7d":[14,0,28,25],
 "ioat__spec_8h.html#a2decf3e956f98661476efce53a86953b":[14,0,28,43],
 "ioat__spec_8h.html#a368b3bb0d6879bc8b35d500d9d012af3":[14,0,28,13],
 "ioat__spec_8h.html#a36f209d9a4e881b58b0c56b9544693cc":[14,0,28,29],
@@ -249,5 +247,7 @@ var NAVTREEINDEX4 =
 "jsonrpc.html#jsonrpc_components_lvol":[3,9,6],
 "jsonrpc.html#jsonrpc_components_nbd":[3,9,7],
 "jsonrpc.html#jsonrpc_components_nvmf_tgt":[3,9,4],
-"jsonrpc.html#jsonrpc_components_sock":[3,9,9]
+"jsonrpc.html#jsonrpc_components_sock":[3,9,9],
+"jsonrpc.html#jsonrpc_components_vhost_tgt":[3,9,5],
+"jsonrpc.html#jsonrpc_convert":[3,9,0,1,1]
 };

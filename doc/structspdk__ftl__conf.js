@@ -11,7 +11,7 @@ var structspdk__ftl__conf =
     [ "max_reloc_qdepth", "structspdk__ftl__conf.html#af6ce7933ea875575b107dc20384a41a7", null ],
     [ "max_request_cnt", "structspdk__ftl__conf.html#ab616d5c9c1d384b4bd1c42cabdbc47e2", null ],
     [ "max_request_size", "structspdk__ftl__conf.html#a1f728a4303cf103117d3b1dfbd93d62a", null ],
-    [ "nv_cache", "structspdk__ftl__conf.html#a24e7e558117d07b4e68edfba25938dea", null ],
+    [ "nv_cache", "structspdk__ftl__conf.html#a1db3ad5fda8413054cc6963eebf9a693", null ],
     [ "use_append", "structspdk__ftl__conf.html#a616721ee96e7cd1f7721ed19f59dc247", null ],
     [ "user_io_pool_size", "structspdk__ftl__conf.html#a1806a31e7d6c83f86d598e477474c102", null ],
     [ "write_buffer_size", "structspdk__ftl__conf.html#ab9c76758916fcabfe00ac708f4b3b674", null ]

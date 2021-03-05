@@ -1,15 +1,5 @@
 var NAVTREEINDEX23 =
 {
-"structspdk__opal__locking__range__info.html#abd31e1bf1d46a4e155b2f5883f649e4d":[13,0,267,5],
-"structspdk__opal__locking__range__info.html#ac4d2ff3af11244142466a28e029acbc2":[13,0,267,6],
-"structspdk__opal__locking__range__info.html#aef10c2546c5157dd06024526caa8eae0":[13,0,267,0],
-"structspdk__opal__packet.html":[13,0,268],
-"structspdk__opal__packet.html#a178cb24f0d1be743eb20b81d502c4a90":[13,0,268,5],
-"structspdk__opal__packet.html#a3b325849986a42d4fd8ebbb03ec9ae9a":[13,0,268,2],
-"structspdk__opal__packet.html#a59f39ab9738ed769db12d52f3f9e1ec5":[13,0,268,3],
-"structspdk__opal__packet.html#a6a9ac0b86a7b5664d08daf8d6a0aab5e":[13,0,268,6],
-"structspdk__opal__packet.html#a9ddc588200aad39538ef1250bb130c9a":[13,0,268,4],
-"structspdk__opal__packet.html#ac705c4d9cd50caa3dca236134542fb35":[13,0,268,0],
 "structspdk__opal__packet.html#adb44d4ad6d686ecf7bb780be8fb43e61":[13,0,268,1],
 "structspdk__pci__addr.html":[13,0,269],
 "structspdk__pci__addr.html#a4b8677cfade6b86f0f12339a404bb539":[13,0,269,2],
@@ -249,5 +239,15 @@ var NAVTREEINDEX23 =
 "structspdk__sock__opts.html#a0e826e7a46eadaeb53f38c4926cd3bbf":[13,0,295,1],
 "structspdk__sock__opts.html#a3cdb293f2ccf10506e7926317e463d91":[13,0,295,2],
 "structspdk__sock__opts.html#ac8dbf1e759082939e4fc6318122931e7":[13,0,295,0],
-"structspdk__sock__request.html":[13,0,296]
+"structspdk__sock__request.html":[13,0,296],
+"structspdk__sock__request.html#a13281d16bf029f5e19725fab2ddbe91b":[13,0,296,3],
+"structspdk__sock__request.html#a1cc6c6eda156b113696fdc486c767b8f":[13,0,296,2],
+"structspdk__sock__request.html#a38309e0c8fd9b9defcf70a33137feda1":[13,0,296,1],
+"structspdk__sock__request.html#a4722314bfc95b97c9f02d3d7ac3cc9d2":[13,0,296,4],
+"structspdk__sock__request_1_1____sock__request__internal.html":[13,0,296,0],
+"structspdk__sock__request_1_1____sock__request__internal.html#a8cce9cfe205d8ac5d69af664aed6c753":[13,0,296,0,0],
+"structspdk__sock__request_1_1____sock__request__internal.html#aa8e991746081b335c62e2d7d81d96bce":[13,0,296,0,1],
+"structspdk__thread__stats.html":[13,0,297],
+"structspdk__thread__stats.html#a44439fc6eaac867fb8073114cbf7d922":[13,0,297,1],
+"structspdk__thread__stats.html#a78d02e3ab20fa99a5e84132920233472":[13,0,297,0]
 };

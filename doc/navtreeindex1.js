@@ -179,10 +179,8 @@ var NAVTREEINDEX1 =
 "blob_8h.html#afc0d1f620d9e5d1e740ee4c4e456c34e":[14,0,9,36],
 "blob_8h.html#afe49b3a95d13aed755726bed94f79344":[14,0,9,27],
 "blob__bdev_8h.html":[14,0,10],
-"blob__bdev_8h.html#a0499e5f00e93f3406989f281bd7122a6":[14,0,10,3],
-"blob__bdev_8h.html#a50e55d90f683106c46a66a77373eebb1":[14,0,10,2],
-"blob__bdev_8h.html#ad9acd1de03901617a7564d6cd4aec2bf":[14,0,10,0],
-"blob__bdev_8h.html#af2318a373aae926c6ce9300e06e8bb81":[14,0,10,1],
+"blob__bdev_8h.html#a0499e5f00e93f3406989f281bd7122a6":[14,0,10,1],
+"blob__bdev_8h.html#af2318a373aae926c6ce9300e06e8bb81":[14,0,10,0],
 "blobfs.html":[3,8],
 "blobfs.html#blobfs_getting_started":[3,8,0],
 "blobfs.html#blobfs_rocksdb":[3,8,1],
@@ -249,5 +247,7 @@ var NAVTREEINDEX1 =
 "changelog.html#changelog-v17-03":[1,3,16],
 "changelog.html#changelog-v17-07":[1,3,15],
 "changelog.html#changelog-v17-10":[1,3,14],
-"changelog.html#changelog-v18-01":[1,3,13]
+"changelog.html#changelog-v18-01":[1,3,13],
+"changelog.html#changelog-v18-04":[1,3,12],
+"changelog.html#changelog-v18-07":[1,3,11]
 };

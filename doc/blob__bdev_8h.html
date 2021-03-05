@@ -153,12 +153,6 @@ $(document).ready(function(){initNavTree('blob__bdev_8h.html','');});
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ad9acd1de03901617a7564d6cd4aec2bf"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structspdk__bs__dev.html">spdk_bs_dev</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blob__bdev_8h.html#ad9acd1de03901617a7564d6cd4aec2bf">spdk_bdev_create_bs_dev</a> (struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *bdev, <a class="el" href="bdev_8h.html#a51a55c97586c2d524fffcabc4d7910d6">spdk_bdev_remove_cb_t</a> remove_cb, void *remove_ctx)</td></tr>
-<tr class="memdesc:ad9acd1de03901617a7564d6cd4aec2bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a blobstore block device from a bdev (deprecated, please use spdk_bdev_create_bs_dev_ext).  <a href="#ad9acd1de03901617a7564d6cd4aec2bf">More...</a><br /></td></tr>
-<tr class="separator:ad9acd1de03901617a7564d6cd4aec2bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a50e55d90f683106c46a66a77373eebb1"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structspdk__bs__dev.html">spdk_bs_dev</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blob__bdev_8h.html#a50e55d90f683106c46a66a77373eebb1">spdk_bdev_create_bs_dev_from_desc</a> (struct spdk_bdev_desc *desc)</td></tr>
-<tr class="memdesc:a50e55d90f683106c46a66a77373eebb1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a blobstore block device from the descriptor of a bdev (deprecated, please use spdk_bdev_create_bs_dev_ext).  <a href="#a50e55d90f683106c46a66a77373eebb1">More...</a><br /></td></tr>
-<tr class="separator:a50e55d90f683106c46a66a77373eebb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af2318a373aae926c6ce9300e06e8bb81"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blob__bdev_8h.html#af2318a373aae926c6ce9300e06e8bb81">spdk_bdev_create_bs_dev_ext</a> (const char *bdev_name, <a class="el" href="bdev_8h.html#ab4755b1b0a2a204732c3be266b6e1b08">spdk_bdev_event_cb_t</a> event_cb, void *event_ctx, struct <a class="el" href="structspdk__bs__dev.html">spdk_bs_dev</a> **bs_dev)</td></tr>
 <tr class="memdesc:af2318a373aae926c6ce9300e06e8bb81"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a blobstore block device from a bdev.  <a href="#af2318a373aae926c6ce9300e06e8bb81">More...</a><br /></td></tr>
 <tr class="separator:af2318a373aae926c6ce9300e06e8bb81"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -169,51 +163,6 @@ Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Helper library to use <a class="el" href="structspdk__bdev.html">spdk_bdev</a> as the backing device for a blobstore. </p>
 </div><h2 class="groupheader">Function Documentation</h2>
-<a id="ad9acd1de03901617a7564d6cd4aec2bf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad9acd1de03901617a7564d6cd4aec2bf">&#9670;&nbsp;</a></span>spdk_bdev_create_bs_dev()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">struct <a class="el" href="structspdk__bs__dev.html">spdk_bs_dev</a>* spdk_bdev_create_bs_dev </td>
-          <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *&#160;</td>
-          <td class="paramname"><em>bdev</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="bdev_8h.html#a51a55c97586c2d524fffcabc4d7910d6">spdk_bdev_remove_cb_t</a>&#160;</td>
-          <td class="paramname"><em>remove_cb</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>remove_ctx</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Create a blobstore block device from a bdev (deprecated, please use spdk_bdev_create_bs_dev_ext). </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">bdev</td><td>Bdev to use. </td></tr>
-    <tr><td class="paramname">remove_cb</td><td>Called when the block device is removed. </td></tr>
-    <tr><td class="paramname">remove_ctx</td><td>Argument passed to function remove_cb.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>a pointer to the blobstore block device on success or NULL otherwise. </dd></dl>
-
-</div>
-</div>
 <a id="af2318a373aae926c6ce9300e06e8bb81"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af2318a373aae926c6ce9300e06e8bb81">&#9670;&nbsp;</a></span>spdk_bdev_create_bs_dev_ext()</h2>
 
@@ -263,33 +212,6 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 if operation is successful, or suitable errno value otherwise. </dd></dl>
-
-</div>
-</div>
-<a id="a50e55d90f683106c46a66a77373eebb1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a50e55d90f683106c46a66a77373eebb1">&#9670;&nbsp;</a></span>spdk_bdev_create_bs_dev_from_desc()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">struct <a class="el" href="structspdk__bs__dev.html">spdk_bs_dev</a>* spdk_bdev_create_bs_dev_from_desc </td>
-          <td>(</td>
-          <td class="paramtype">struct spdk_bdev_desc *&#160;</td>
-          <td class="paramname"><em>desc</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Create a blobstore block device from the descriptor of a bdev (deprecated, please use spdk_bdev_create_bs_dev_ext). </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">desc</td><td>Descriptor of a bdev. <a class="el" href="bdev_8h.html#aca93f44b46f0b877df9b6936ef9e0a9e" title="Open a block device for I/O operations.">spdk_bdev_open_ext()</a> is recommended to get the desc.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>a pointer to the blobstore block device on success or NULL otherwise. </dd></dl>
 
 </div>
 </div>
