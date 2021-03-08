@@ -148,33 +148,53 @@ $(document).ready(function(){initNavTree('spdk_top.html','');});
 <div class="textblock"><p>The spdk_top application is designed to resemble the standard top in that it provides a real-time insights into CPU cores usage by SPDK lightweight threads and pollers. Have you ever wondered which CPU core is used most by your SPDK instance? Are you building your own bdev or library and want to know if your code is running efficiently? Are your new pollers busy most of the time? The spdk_top application uses RPC calls to collect performance metrics and displays them in a report that you can analyze and determine if your code is running efficiently so that you can tune your implementation and get more from SPDK.</p>
 <p>Why doesn't the classic top utility work for SPDK? SPDK uses a polled-mode design; a reactor thread running on each CPU core assigned to an SPDK application schedules SPDK lightweight threads and pollers to run on the CPU core. Therefore, the standard Linux top utility is not effective for analyzing the CPU usage for polled-mode applications like SPDK because it just reports that they are using 100% of the CPU resources assigned to them. The spdk_top utility was developed to analyze and report the CPU cycles used to do real work vs just polling for work. The utility relies on instrumentation added to pollers to track when they are doing work vs. polling for work. The spdk_top utility gets the fine grained metrics from the pollers, analyzes and report the metrics on a per poller, thread and core basis. This information enables users to identify CPU cores that are busy doing real work so that they can determine if the application needs more or less CPU resources.</p>
 <h1>Run spdk_top</h1>
-<p>Before running spdk_top you need to run the SPDK application whose performance you want to analyze using spdk_top. For example, the nvmf_tgt application was running when we used the spdk_top to capture the screen shots in this documentation.</p>
+<p>Before running spdk_top you need to run the SPDK application whose performance you want to analyze using spdk_top.</p>
 <p>Run the spdk_top application</p>
-<div class="fragment"><div class="line">./build/bin/spdk_top</div></div><!-- fragment --><p>The spdk_top application has 3 tabs: the cores, threads and pollers tabs.</p>
+<div class="fragment"><div class="line">./build/bin/spdk_top</div></div><!-- fragment --><h1>Bottom menu</h1>
+<p>Menu at the bottom of SPDK top window shows many options for changing displayed data. Each menu item has a key associated with it in square brackets.</p>
+<ul>
+<li>Quit - quits the SPDK top application.</li>
+<li>TAB selection - allows to select THREADS/POLLERS/CORES tabs.</li>
+<li>Previous page/Next page - scrolls up/down to the next set of rows displayed. Indicator in the bottom-left corner shows current page and number of all available pages.</li>
+<li>Columns - enables/disables chosen columns in a column pop-up window.</li>
+<li>Sorting - allows to sort displayed data by column in a sorting pop-up.</li>
+<li>Refresh rate - takes user input from 0 to 255 and changes refresh rate to that value in seconds.</li>
+<li>Item details - displays details pop-up window for highlighted data row. Selection is changed by pressing UP and DOWN arrow keys.</li>
+<li>Total/Interval - changes displayed values in all tabs to either Total time (measured since start of SPDK application) or Interval time (measured since last refresh).</li>
+</ul>
 <h1>Threads Tab</h1>
-<p>The threads tab displays a line item for each spdk thread that includes information such as which CPU core the spdk thread is running on, how many pollers the thread is running and how many microseconds was the thread busy/idle. The pollers are grouped into active, timed and pause pollers. To learn more about spdk threads see <a class="el" href="concurrency.html">Message Passing and Concurrency</a>.</p>
-<div class="image">
-<img src="spdk_top_page1_threads.png" alt="spdk_top_page1_threads.png"/>
-<div class="caption">
-Threads Tab</div></div>
+<p>The threads tab displays a line item for each spdk thread. The information displayed shows:</p>
+<ul>
+<li>Thread name - name of SPDK thread.</li>
+<li>Core - core on which the thread is currently running.</li>
+<li>Active/Timed/Paused pollers - number of pollers grouped by type on this thread.</li>
+<li>Idle/Busy - how many microseconds the thread was idle/busy.</li>
+</ul>
+<p><br />
+By pressing ENTER key a pop-up window appears, showing above and a list of pollers running on selected thread (with poller name, type, run count and period). Pop-up then can be closed by pressing ESC key.</p>
+<p>To learn more about spdk threads see <a class="el" href="concurrency.html">Message Passing and Concurrency</a>.</p>
 <h1>Pollers Tab</h1>
-<p>The pollers tab displays a line item for each poller and a running counter of the number of times the poller has run so that you can see which pollers are running most frequently.</p>
-<div class="image">
-<img src="spdk_top_page2_pollers.png" alt="spdk_top_page2_pollers.png"/>
-<div class="caption">
-Pollers Tab</div></div>
+<p>The pollers tab displays a line item for each poller. The information displayed shows:</p>
+<ul>
+<li>Poller name - name of currently selected poller.</li>
+<li>Type - type of poller (Active/Paused/Timed).</li>
+<li>On thread - thread on which the poller is running.</li>
+<li>Run count - how many times poller was run.</li>
+<li>Period - poller period in microseconds. If period equals 0 then it is not displayed.</li>
+<li>Status - whether poller is currently Busy (red color) or Idle (blue color).</li>
+</ul>
+<p><br />
+Poller pop-up window can be displayed by pressing ENTER on a selected data row and displays above information. Pop-up can be closed by pressing ESC key.</p>
 <h1>Cores Tab</h1>
-<p>The cores tab provides insights into how the application is using the CPU cores assigned to it. It has a line item for each CPU core assigned to the application which shows the number of threads and poller running on the CPU core. The tab also indicates how busy/idle the each CPU core was in the last 1 second. The busy column displays how many microseconds the CPU core was doing actual work in the last 1 second. The idle column displays how many microseconds the CPU core was idle in the last 1 second, including the time when the CPU core ran pollers but did not find any work.</p>
-<div class="image">
-<img src="spdk_top_page3_cores.png" alt="spdk_top_page3_cores.png"/>
-<div class="caption">
-Cores Tab</div></div>
-<h1>Refresh Rate</h1>
-<p>You can control how often the spdk_top application refreshes the data displayed by hitting the 'r' key on your keyboard and specifying a value between 0 and 255 seconds.</p>
-<h1>Sorting</h1>
-<p>You can sort the data displayed by hitting the 's' key on your keyboard and selecting a column to sort by in the sub menu that is displayed.</p>
-<h1>Filtering</h1>
-<p>You can filter out any column by hitting the 'c' key on your keyboard and unselecting the column in the menu that is displayed. </p>
+<p>The cores tab provides insights into how the application is using the CPU cores assigned to it. The information displayed for each core shows:</p>
+<ul>
+<li>Core - core number.</li>
+<li>Thread count - number of threads currently running on core.</li>
+<li>Poller count - total number of pollers running on core.</li>
+<li>Idle/Busy - how many microseconds core was idle (including time when core ran pollers but did not find any work) or doing actual work.</li>
+</ul>
+<p><br />
+Pressing ENTER key makes a pop-up window appear, showing above information, along with a list of threads running on selected core. Cores details window allows to select a thread and display thread details pop-up on top of it. To close both pop-ups use ESC key. </p>
 </div></div><!-- PageDoc -->
 </div><!-- contents -->
 </div><!-- doc-content -->
