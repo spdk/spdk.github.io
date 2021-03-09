@@ -168,22 +168,22 @@ Data Fields</h2></td></tr>
 <tr class="memitem:afdb21e60863bdb7c5d7e15ed1c2e9828"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__sock__impl__opts.html#afdb21e60863bdb7c5d7e15ed1c2e9828">enable_quickack</a></td></tr>
 <tr class="memdesc:afdb21e60863bdb7c5d7e15ed1c2e9828"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable or disable quick ACK.  <a href="#afdb21e60863bdb7c5d7e15ed1c2e9828">More...</a><br /></td></tr>
 <tr class="separator:afdb21e60863bdb7c5d7e15ed1c2e9828"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a09960a9c0e5a9916f237656696f54339"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__sock__impl__opts.html#a09960a9c0e5a9916f237656696f54339">enable_placement_id</a></td></tr>
-<tr class="memdesc:a09960a9c0e5a9916f237656696f54339"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable or disable placement_id.  <a href="#a09960a9c0e5a9916f237656696f54339">More...</a><br /></td></tr>
-<tr class="separator:a09960a9c0e5a9916f237656696f54339"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7bf2c41ae7b77f4d76cf66ed692a955f"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__sock__impl__opts.html#a7bf2c41ae7b77f4d76cf66ed692a955f">enable_placement_id</a></td></tr>
+<tr class="memdesc:a7bf2c41ae7b77f4d76cf66ed692a955f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable or disable placement_id.  <a href="#a7bf2c41ae7b77f4d76cf66ed692a955f">More...</a><br /></td></tr>
+<tr class="separator:a7bf2c41ae7b77f4d76cf66ed692a955f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>SPDK socket implementation options. </p>
 <p>A pointer to this structure is used by <a class="el" href="sock_8h.html#ab6cbdc2532b80f5c9404af222ee03d23" title="Get current socket implementation options.">spdk_sock_impl_get_opts()</a> and <a class="el" href="sock_8h.html#a81541bb1b8ae42b952c82988c482e99d" title="Set socket implementation options.">spdk_sock_impl_set_opts()</a> to allow the user to request options for the socket module implementation. Each socket module defines which options from this structure are applicable to the module. </p>
 </div><h2 class="groupheader">Field Documentation</h2>
-<a id="a09960a9c0e5a9916f237656696f54339"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a09960a9c0e5a9916f237656696f54339">&#9670;&nbsp;</a></span>enable_placement_id</h2>
+<a id="a7bf2c41ae7b77f4d76cf66ed692a955f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7bf2c41ae7b77f4d76cf66ed692a955f">&#9670;&nbsp;</a></span>enable_placement_id</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool spdk_sock_impl_opts::enable_placement_id</td>
+          <td class="memname">uint32_t spdk_sock_impl_opts::enable_placement_id</td>
         </tr>
       </table>
 </div><div class="memdoc">

@@ -249,9 +249,6 @@ typedef&#160;</td><td class="memItemRight" valign="bottom"><b>TAILQ_HEAD</b> (, 
 <tr class="memitem:a8d51d8e113f0dffb1bbe535ea01c495f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev__module_8h.html#a8d51d8e113f0dffb1bbe535ea01c495f">spdk_bdev_destruct_done</a> (struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *bdev, int bdeverrno)</td></tr>
 <tr class="memdesc:a8d51d8e113f0dffb1bbe535ea01c495f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Invokes the unregister callback of a bdev backing a virtual bdev.  <a href="#a8d51d8e113f0dffb1bbe535ea01c495f">More...</a><br /></td></tr>
 <tr class="separator:a8d51d8e113f0dffb1bbe535ea01c495f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a25e95f0667fb503988d09cc08dbad119"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev__module_8h.html#a25e95f0667fb503988d09cc08dbad119">spdk_vbdev_register</a> (struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *vbdev, struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> **base_bdevs, int base_bdev_count)</td></tr>
-<tr class="memdesc:a25e95f0667fb503988d09cc08dbad119"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register a virtual bdev.  <a href="#a25e95f0667fb503988d09cc08dbad119">More...</a><br /></td></tr>
-<tr class="separator:a25e95f0667fb503988d09cc08dbad119"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad6ae712eb81a37a739cb82ca474e793b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev__module_8h.html#ad6ae712eb81a37a739cb82ca474e793b">spdk_bdev_module_examine_done</a> (struct <a class="el" href="structspdk__bdev__module.html">spdk_bdev_module</a> *module)</td></tr>
 <tr class="memdesc:ad6ae712eb81a37a739cb82ca474e793b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicate to the bdev layer that the module is done examining a bdev.  <a href="#ad6ae712eb81a37a739cb82ca474e793b">More...</a><br /></td></tr>
 <tr class="separator:ad6ae712eb81a37a739cb82ca474e793b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -354,9 +351,6 @@ typedef&#160;</td><td class="memItemRight" valign="bottom"><b>TAILQ_HEAD</b> (bd
 <tr class="memitem:acb0fee3c9c76e322208cf9d40fee152b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev__module_8h.html#acb0fee3c9c76e322208cf9d40fee152b">spdk_bdev_part_base_hotremove</a> (struct spdk_bdev_part_base *part_base, struct bdev_part_tailq *tailq)</td></tr>
 <tr class="memdesc:acb0fee3c9c76e322208cf9d40fee152b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calls spdk_bdev_unregister on the bdev for each part associated with base_bdev.  <a href="#acb0fee3c9c76e322208cf9d40fee152b">More...</a><br /></td></tr>
 <tr class="separator:acb0fee3c9c76e322208cf9d40fee152b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a338144e9efbe3da7b78f034f2bdb1f93"><td class="memItemLeft" align="right" valign="top">struct spdk_bdev_part_base *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev__module_8h.html#a338144e9efbe3da7b78f034f2bdb1f93">spdk_bdev_part_base_construct</a> (struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *bdev, <a class="el" href="bdev_8h.html#a51a55c97586c2d524fffcabc4d7910d6">spdk_bdev_remove_cb_t</a> remove_cb, struct <a class="el" href="structspdk__bdev__module.html">spdk_bdev_module</a> *module, struct <a class="el" href="structspdk__bdev__fn__table.html">spdk_bdev_fn_table</a> *fn_table, struct bdev_part_tailq *tailq, spdk_bdev_part_base_free_fn free_fn, void *ctx, uint32_t channel_size, <a class="el" href="thread_8h.html#aed1d14292cfee8553d4a1ebb519b210a">spdk_io_channel_create_cb</a> ch_create_cb, <a class="el" href="thread_8h.html#a75aa6a61877f23f79bb75c8fc5e68202">spdk_io_channel_destroy_cb</a> ch_destroy_cb)</td></tr>
-<tr class="memdesc:a338144e9efbe3da7b78f034f2bdb1f93"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new spdk_bdev_part_base on top of the provided bdev (deprecated.  <a href="#a338144e9efbe3da7b78f034f2bdb1f93">More...</a><br /></td></tr>
-<tr class="separator:a338144e9efbe3da7b78f034f2bdb1f93"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2a279a58afa5c5ed8a68820fcea0efaa"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev__module_8h.html#a2a279a58afa5c5ed8a68820fcea0efaa">spdk_bdev_part_base_construct_ext</a> (const char *bdev_name, <a class="el" href="bdev_8h.html#a51a55c97586c2d524fffcabc4d7910d6">spdk_bdev_remove_cb_t</a> remove_cb, struct <a class="el" href="structspdk__bdev__module.html">spdk_bdev_module</a> *module, struct <a class="el" href="structspdk__bdev__fn__table.html">spdk_bdev_fn_table</a> *fn_table, struct bdev_part_tailq *tailq, spdk_bdev_part_base_free_fn free_fn, void *ctx, uint32_t channel_size, <a class="el" href="thread_8h.html#aed1d14292cfee8553d4a1ebb519b210a">spdk_io_channel_create_cb</a> ch_create_cb, <a class="el" href="thread_8h.html#a75aa6a61877f23f79bb75c8fc5e68202">spdk_io_channel_destroy_cb</a> ch_destroy_cb, struct spdk_bdev_part_base **base)</td></tr>
 <tr class="memdesc:a2a279a58afa5c5ed8a68820fcea0efaa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new spdk_bdev_part_base on top of the provided bdev.  <a href="#a2a279a58afa5c5ed8a68820fcea0efaa">More...</a><br /></td></tr>
 <tr class="separator:a2a279a58afa5c5ed8a68820fcea0efaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1357,101 +1351,6 @@ typedef&#160;</td><td class="memItemRight" valign="bottom"><b>TAILQ_HEAD</b> (bd
 
 </div>
 </div>
-<a id="a338144e9efbe3da7b78f034f2bdb1f93"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a338144e9efbe3da7b78f034f2bdb1f93">&#9670;&nbsp;</a></span>spdk_bdev_part_base_construct()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">struct spdk_bdev_part_base* spdk_bdev_part_base_construct </td>
-          <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *&#160;</td>
-          <td class="paramname"><em>bdev</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="bdev_8h.html#a51a55c97586c2d524fffcabc4d7910d6">spdk_bdev_remove_cb_t</a>&#160;</td>
-          <td class="paramname"><em>remove_cb</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">struct <a class="el" href="structspdk__bdev__module.html">spdk_bdev_module</a> *&#160;</td>
-          <td class="paramname"><em>module</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">struct <a class="el" href="structspdk__bdev__fn__table.html">spdk_bdev_fn_table</a> *&#160;</td>
-          <td class="paramname"><em>fn_table</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">struct bdev_part_tailq *&#160;</td>
-          <td class="paramname"><em>tailq</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">spdk_bdev_part_base_free_fn&#160;</td>
-          <td class="paramname"><em>free_fn</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>ctx</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>channel_size</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="thread_8h.html#aed1d14292cfee8553d4a1ebb519b210a">spdk_io_channel_create_cb</a>&#160;</td>
-          <td class="paramname"><em>ch_create_cb</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="thread_8h.html#a75aa6a61877f23f79bb75c8fc5e68202">spdk_io_channel_destroy_cb</a>&#160;</td>
-          <td class="paramname"><em>ch_destroy_cb</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Construct a new spdk_bdev_part_base on top of the provided bdev (deprecated. </p>
-<p>please use spdk_bdev_part_base_construct_ext).</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">bdev</td><td>The <a class="el" href="structspdk__bdev.html">spdk_bdev</a> upon which this base will be built. </td></tr>
-    <tr><td class="paramname">remove_cb</td><td>Function to be called upon hotremove of the bdev. </td></tr>
-    <tr><td class="paramname">module</td><td>The module to which this bdev base belongs. </td></tr>
-    <tr><td class="paramname">fn_table</td><td>Function table for communicating with the bdev backend. </td></tr>
-    <tr><td class="paramname">tailq</td><td>The head of the list of all <a class="el" href="structspdk__bdev__part.html">spdk_bdev_part</a> structures registered to this base's module. </td></tr>
-    <tr><td class="paramname">free_fn</td><td>User provided function to free base related context upon bdev removal or shutdown. </td></tr>
-    <tr><td class="paramname">ctx</td><td>Module specific context for this bdev part base. </td></tr>
-    <tr><td class="paramname">channel_size</td><td>Channel size in bytes. </td></tr>
-    <tr><td class="paramname">ch_create_cb</td><td>Called after a new channel is allocated. </td></tr>
-    <tr><td class="paramname">ch_destroy_cb</td><td>Called upon channel deletion.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The part object on top of the bdev if operation is successful, or NULL otherwise. </dd></dl>
-
-</div>
-</div>
 <a id="a2a279a58afa5c5ed8a68820fcea0efaa"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2a279a58afa5c5ed8a68820fcea0efaa">&#9670;&nbsp;</a></span>spdk_bdev_part_base_construct_ext()</h2>
 
@@ -2173,58 +2072,6 @@ typedef&#160;</td><td class="memItemRight" valign="bottom"><b>TAILQ_HEAD</b> (bd
   </table>
   </dd>
 </dl>
-
-</div>
-</div>
-<a id="a25e95f0667fb503988d09cc08dbad119"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a25e95f0667fb503988d09cc08dbad119">&#9670;&nbsp;</a></span>spdk_vbdev_register()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int spdk_vbdev_register </td>
-          <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *&#160;</td>
-          <td class="paramname"><em>vbdev</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> **&#160;</td>
-          <td class="paramname"><em>base_bdevs</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>base_bdev_count</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Register a virtual bdev. </p>
-<p>This function is deprecated. Users should call spdk_bdev_register instead. The bdev layer currently makes no use of the base_bdevs array, so switching to spdk_bdev_register results in no loss of functionality.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">vbdev</td><td>Virtual bdev to register. </td></tr>
-    <tr><td class="paramname">base_bdevs</td><td>Array of bdevs upon which this vbdev is based. </td></tr>
-    <tr><td class="paramname">base_bdev_count</td><td>Number of bdevs in base_bdevs.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>0 on success </dd>
-<dd>
--EINVAL if the bdev name is NULL. </dd>
-<dd>
--EEXIST if the bdev already exists. </dd>
-<dd>
--ENOMEM if allocation of the base_bdevs array or the base bdevs vbdevs array fails. </dd></dl>
 
 </div>
 </div>

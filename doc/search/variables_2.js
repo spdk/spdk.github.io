@@ -38,7 +38,6 @@ var searchData=
   ['command_5fset',['command_set',['../structspdk__nvme__ctrlr__opts.html#a62b55ccfff58d8f91952d4c501a4c3ab',1,'spdk_nvme_ctrlr_opts']]],
   ['commit',['commit',['../structspdk__bdev__io.html#ace66bdb63c00a8549d466de17f553064',1,'spdk_bdev_io']]],
   ['config_5fjson',['config_json',['../structspdk__bdev__module.html#a0e9535f64f9807afa310c63dd4675a8c',1,'spdk_bdev_module']]],
-  ['config_5ftext',['config_text',['../structspdk__bdev__module.html#a62f46d0a9b8ead0a63e1f5637dacd37d',1,'spdk_bdev_module']]],
   ['cpda',['cpda',['../structspdk__nvme__tcp__ic__resp.html#aaf69d394b0b1130b31493381e7eb8553',1,'spdk_nvme_tcp_ic_resp']]],
   ['cqes',['cqes',['../structspdk__nvme__ctrlr__data.html#a4b8e6034e2b587226ef20bd5c75264d3',1,'spdk_nvme_ctrlr_data']]],
   ['cqr',['cqr',['../unionspdk__nvme__cap__register.html#ad8004bf4870d89a73f8d4d95db5d746d',1,'spdk_nvme_cap_register']]],

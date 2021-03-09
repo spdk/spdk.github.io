@@ -42,7 +42,6 @@ var searchData=
   ['concepts',['Concepts',['../concepts.html',1,'']]],
   ['conf_2eh',['conf.h',['../conf_8h.html',1,'']]],
   ['config_5fjson',['config_json',['../structspdk__bdev__module.html#a0e9535f64f9807afa310c63dd4675a8c',1,'spdk_bdev_module']]],
-  ['config_5ftext',['config_text',['../structspdk__bdev__module.html#a62f46d0a9b8ead0a63e1f5637dacd37d',1,'spdk_bdev_module']]],
   ['cpda',['cpda',['../structspdk__nvme__tcp__ic__resp.html#aaf69d394b0b1130b31493381e7eb8553',1,'spdk_nvme_tcp_ic_resp']]],
   ['cpuset_2eh',['cpuset.h',['../cpuset_8h.html',1,'']]],
   ['cqes',['cqes',['../structspdk__nvme__ctrlr__data.html#a4b8e6034e2b587226ef20bd5c75264d3',1,'spdk_nvme_ctrlr_data']]],

@@ -4,7 +4,6 @@ var structspdk__bdev__module =
     [ "async_fini", "structspdk__bdev__module.html#ac702870ef6b1865ad85a606021e0f039", null ],
     [ "async_init", "structspdk__bdev__module.html#af3a57fb52458d82248fac0570c80cc52", null ],
     [ "config_json", "structspdk__bdev__module.html#a0e9535f64f9807afa310c63dd4675a8c", null ],
-    [ "config_text", "structspdk__bdev__module.html#a62f46d0a9b8ead0a63e1f5637dacd37d", null ],
     [ "examine_config", "structspdk__bdev__module.html#a0a0f5d5d762258471ba6e41119b9f921", null ],
     [ "examine_disk", "structspdk__bdev__module.html#a18e49a0bccf1b515e51afbde09f8ac35", null ],
     [ "fini_start", "structspdk__bdev__module.html#ac23941435e8ed54a66a16d4fe8b7fe52", null ],

@@ -119,7 +119,6 @@ var bdev_8h =
     [ "spdk_bdev_nvme_admin_passthru", "group__bdev__io__submit__functions.html#gae2249ef71e7125338b6cebf935a881ab", null ],
     [ "spdk_bdev_nvme_io_passthru", "group__bdev__io__submit__functions.html#gab172cf6afc9ef154bd823b91b09dee87", null ],
     [ "spdk_bdev_nvme_io_passthru_md", "group__bdev__io__submit__functions.html#gac6b5933e4c0b2ad68bad591655b4f9e6", null ],
-    [ "spdk_bdev_open", "bdev_8h.html#aeacdfd5debd3917d84d18be0277203ff", null ],
     [ "spdk_bdev_open_ext", "bdev_8h.html#aca93f44b46f0b877df9b6936ef9e0a9e", null ],
     [ "spdk_bdev_queue_io_wait", "bdev_8h.html#acc4beee18ded7837fa92bd7c34e7ef2e", null ],
     [ "spdk_bdev_read", "group__bdev__io__submit__functions.html#ga4b500ce84df1d2551f76e635c9dafbd5", null ],

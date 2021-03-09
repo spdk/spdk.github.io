@@ -310,9 +310,6 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_set_opts</b>
 <tr class="memitem:a6ae4a6dad6562cdefd3476ec23bfcccb"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev_8h.html#a6ae4a6dad6562cdefd3476ec23bfcccb">spdk_bdev_next_leaf</a> (struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *prev)</td></tr>
 <tr class="memdesc:a6ae4a6dad6562cdefd3476ec23bfcccb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the next block device without virtual block devices on top.  <a href="#a6ae4a6dad6562cdefd3476ec23bfcccb">More...</a><br /></td></tr>
 <tr class="separator:a6ae4a6dad6562cdefd3476ec23bfcccb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeacdfd5debd3917d84d18be0277203ff"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev_8h.html#aeacdfd5debd3917d84d18be0277203ff">spdk_bdev_open</a> (struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *bdev, bool write, <a class="el" href="bdev_8h.html#a51a55c97586c2d524fffcabc4d7910d6">spdk_bdev_remove_cb_t</a> remove_cb, void *remove_ctx, struct spdk_bdev_desc **desc)</td></tr>
-<tr class="memdesc:aeacdfd5debd3917d84d18be0277203ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Open a block device for I/O operations (deprecated, please use spdk_bdev_open_ext).  <a href="#aeacdfd5debd3917d84d18be0277203ff">More...</a><br /></td></tr>
-<tr class="separator:aeacdfd5debd3917d84d18be0277203ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aca93f44b46f0b877df9b6936ef9e0a9e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev_8h.html#aca93f44b46f0b877df9b6936ef9e0a9e">spdk_bdev_open_ext</a> (const char *bdev_name, bool write, <a class="el" href="bdev_8h.html#ab4755b1b0a2a204732c3be266b6e1b08">spdk_bdev_event_cb_t</a> event_cb, void *event_ctx, struct spdk_bdev_desc **desc)</td></tr>
 <tr class="memdesc:aca93f44b46f0b877df9b6936ef9e0a9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Open a block device for I/O operations.  <a href="#aca93f44b46f0b877df9b6936ef9e0a9e">More...</a><br /></td></tr>
 <tr class="separator:aca93f44b46f0b877df9b6936ef9e0a9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -818,7 +815,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_set_opts</b>
 </div><div class="memdoc">
 
 <p>Close a previously opened block device. </p>
-<p>Must be called on the same thread that the <a class="el" href="bdev_8h.html#aeacdfd5debd3917d84d18be0277203ff" title="Open a block device for I/O operations (deprecated, please use spdk_bdev_open_ext).">spdk_bdev_open()</a> was performed on.</p>
+<p>Must be called on the same thread that the <a class="el" href="bdev_8h.html#aca93f44b46f0b877df9b6936ef9e0a9e" title="Open a block device for I/O operations.">spdk_bdev_open_ext()</a> was performed on.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">desc</td><td>Block device descriptor to close. </td></tr>
@@ -2544,65 +2541,6 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_set_opts</b>
 
 </div>
 </div>
-<a id="aeacdfd5debd3917d84d18be0277203ff"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aeacdfd5debd3917d84d18be0277203ff">&#9670;&nbsp;</a></span>spdk_bdev_open()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int spdk_bdev_open </td>
-          <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *&#160;</td>
-          <td class="paramname"><em>bdev</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>write</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="bdev_8h.html#a51a55c97586c2d524fffcabc4d7910d6">spdk_bdev_remove_cb_t</a>&#160;</td>
-          <td class="paramname"><em>remove_cb</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>remove_ctx</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">struct spdk_bdev_desc **&#160;</td>
-          <td class="paramname"><em>desc</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Open a block device for I/O operations (deprecated, please use spdk_bdev_open_ext). </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">bdev</td><td>Block device to open. </td></tr>
-    <tr><td class="paramname">write</td><td>true is read/write access requested, false if read-only </td></tr>
-    <tr><td class="paramname">remove_cb</td><td>notification callback to be called when the bdev gets hotremoved. This will always be called on the same thread that <a class="el" href="bdev_8h.html#aeacdfd5debd3917d84d18be0277203ff" title="Open a block device for I/O operations (deprecated, please use spdk_bdev_open_ext).">spdk_bdev_open()</a> was called on. It can be NULL, in which case the upper layer won't be notified about the bdev hotremoval. The descriptor will have to be manually closed to make the bdev unregister proceed. </td></tr>
-    <tr><td class="paramname">remove_ctx</td><td>param for remove_cb. </td></tr>
-    <tr><td class="paramname">desc</td><td>output parameter for the descriptor when operation is successful </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>0 if operation is successful, suitable errno value otherwise </dd></dl>
-
-</div>
-</div>
 <a id="aca93f44b46f0b877df9b6936ef9e0a9e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aca93f44b46f0b877df9b6936ef9e0a9e">&#9670;&nbsp;</a></span>spdk_bdev_open_ext()</h2>
 
@@ -2652,7 +2590,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_set_opts</b>
   <table class="params">
     <tr><td class="paramname">bdev_name</td><td>Block device name to open. </td></tr>
     <tr><td class="paramname">write</td><td>true is read/write access requested, false if read-only </td></tr>
-    <tr><td class="paramname">event_cb</td><td>notification callback to be called when the bdev triggers asynchronous event such as bdev removal. This will always be called on the same thread that <a class="el" href="bdev_8h.html#aeacdfd5debd3917d84d18be0277203ff" title="Open a block device for I/O operations (deprecated, please use spdk_bdev_open_ext).">spdk_bdev_open()</a> was called on. In case of removal event the descriptor will have to be manually closed to make the bdev unregister proceed. </td></tr>
+    <tr><td class="paramname">event_cb</td><td>notification callback to be called when the bdev triggers asynchronous event such as bdev removal. This will always be called on the same thread that <a class="el" href="bdev_8h.html#aca93f44b46f0b877df9b6936ef9e0a9e" title="Open a block device for I/O operations.">spdk_bdev_open_ext()</a> was called on. In case of removal event the descriptor will have to be manually closed to make the bdev unregister proceed. </td></tr>
     <tr><td class="paramname">event_ctx</td><td>param for event_cb. </td></tr>
     <tr><td class="paramname">desc</td><td>output parameter for the descriptor when operation is successful </td></tr>
   </table>

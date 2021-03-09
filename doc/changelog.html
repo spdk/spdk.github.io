@@ -149,6 +149,7 @@ $(document).ready(function(){initNavTree('changelog.html','');});
 v21.04: (Upcoming Release)</h1>
 <h2>bdev</h2>
 <p>For <code>bdev_ocssd_create</code> RPC, the optional parameter <code>range</code> was removed. Only one OCSSD bdev can be created for one OCSSD namespace.</p>
+<p>Removed the <code>spdk_bdev_open</code> from bdev library API. Removed the <code>spdk_vbdev_register</code> and <code>spdk_bdev_part_base_construct</code> from bdev module API. Removed the <code>config_text</code> function for bdev modules to report legacy config.</p>
 <h2>blobstore</h2>
 <p>Removed the <code>spdk_bdev_create_bs_dev_from_desc</code> and <code>spdk_bdev_create_bs_dev</code> API.</p>
 <h2>env</h2>
@@ -161,6 +162,8 @@ v21.04: (Upcoming Release)</h1>
 <h2>nvme</h2>
 <p>Added <code>spdk_nvme_qpair_get_optimal_poll_group</code> function and <code>qpair_get_optimal_poll_group</code> function pointer in <a class="el" href="structspdk__nvmf__transport__ops.html">spdk_nvmf_transport_ops</a> structure in order to add the qpair to the most suitable polling group.</p>
 <p>Added spdk_nvme_set_hotplug_filter API to allow applications to choose which hot-inserted SSDs should be probed. This is useful for use cases where multiple independent SPDK processes are running on one node. The filter function can then be implemented in these processes to decide which SSDs to probe based on the new SSD's PCI address.</p>
+<h2>sock</h2>
+<p>The type of enable_placement_id in struct <a class="el" href="structspdk__sock__impl__opts.html" title="SPDK socket implementation options.">spdk_sock_impl_opts</a> is changed from bool to int. We can use RPC to configure different value of enable_placement_id. Then we can leverage SO_INCOMING_CPU to get placement_id, which aims to utilize CPU cache locality, enabled by setting enable_placement_id=2.</p>
 <h1><a class="anchor" id="changelog-v21-01"></a>
 v21.01:</h1>
 <h2>idxd</h2>
@@ -677,7 +680,7 @@ v19.04: Compression bdev, Notification library, NVMe Opal support</h1>
 <p><a class="el" href="event_8h.html#a3901d9ed6c234d92296db9ec9252a0f5" title="Start the framework.">spdk_app_start()</a> now only accepts a single context argument.</p>
 <h2>bdev</h2>
 <p>An new API <code>spdk_bdev_get_data_block_size</code> has been added to get size of data block except for metadata.</p>
-<p><a class="el" href="bdev__module_8h.html#a25e95f0667fb503988d09cc08dbad119" title="Register a virtual bdev.">spdk_vbdev_register()</a> has been deprecated. <a class="el" href="bdev__module_8h.html#a5fef71f7761986298bb4aaf345736bb3" title="Register a new bdev.">spdk_bdev_register()</a> should be used instead.</p>
+<p>spdk_vbdev_register() has been deprecated. <a class="el" href="bdev__module_8h.html#a5fef71f7761986298bb4aaf345736bb3" title="Register a new bdev.">spdk_bdev_register()</a> should be used instead.</p>
 <p>A mechanism for acquiring and releasing data buffers from bdev modules, used to perform zero copy operations, was added.</p>
 <p>New APIs <a class="el" href="bdev_8h.html#abc3537d0315100b24da6acc95929e849" title="Get block device metadata size.">spdk_bdev_get_md_size()</a>, <a class="el" href="bdev_8h.html#aa02f628c6ef7cae08b8b623b4800c74d" title="Query whether metadata is interleaved with block data or separated with block data.">spdk_bdev_is_md_interleaved()</a>, <a class="el" href="bdev_8h.html#ac94b5900766ec42da5fc3658a5749858" title="Get DIF type of the block device.">spdk_bdev_get_dif_type()</a>, <a class="el" href="bdev_8h.html#a4e43a19692e14e5e46b3315e4cf0bc1d" title="Check whether DIF is set in the first 8 bytes or the last 8 bytes of metadata.">spdk_bdev_is_dif_head_of_md()</a>, and <a class="el" href="bdev_8h.html#a147389751cd351d30703e28f522e9610" title="Check whether the DIF check type is enabled.">spdk_bdev_is_dif_check_enabled()</a> have been added to get metadata and DIF settings.</p>
 <p>Bdevs claimed by the <code>examine_config</code> callback will be now further examined in the <code>examine_disk</code> callback.</p>

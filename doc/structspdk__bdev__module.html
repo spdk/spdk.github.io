@@ -181,9 +181,6 @@ Data Fields</h2></td></tr>
 <tr class="memitem:ae807abce0f70eafe6ca75435f4f3d5b1"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev__module.html#ae807abce0f70eafe6ca75435f4f3d5b1">module_fini</a> )(void)</td></tr>
 <tr class="memdesc:ae807abce0f70eafe6ca75435f4f3d5b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finish function for the module.  <a href="#ae807abce0f70eafe6ca75435f4f3d5b1">More...</a><br /></td></tr>
 <tr class="separator:ae807abce0f70eafe6ca75435f4f3d5b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a62f46d0a9b8ead0a63e1f5637dacd37d"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev__module.html#a62f46d0a9b8ead0a63e1f5637dacd37d">config_text</a> )(FILE *fp)</td></tr>
-<tr class="memdesc:a62f46d0a9b8ead0a63e1f5637dacd37d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function called to return a text string representing the module's configuration options for inclusion in a configuration file.  <a href="#a62f46d0a9b8ead0a63e1f5637dacd37d">More...</a><br /></td></tr>
-<tr class="separator:a62f46d0a9b8ead0a63e1f5637dacd37d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0e9535f64f9807afa310c63dd4675a8c"><td class="memItemLeft" align="right" valign="top">int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev__module.html#a0e9535f64f9807afa310c63dd4675a8c">config_json</a> )(struct spdk_json_write_ctx *w)</td></tr>
 <tr class="memdesc:a0e9535f64f9807afa310c63dd4675a8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function called to return a text string representing the module-level JSON RPCs required to regenerate the current configuration.  <a href="#a0e9535f64f9807afa310c63dd4675a8c">More...</a><br /></td></tr>
 <tr class="separator:a0e9535f64f9807afa310c63dd4675a8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -263,23 +260,6 @@ struct <a class="el" href="structspdk__bdev__module_1_1____bdev__module__interna
 <p>This will include module-level configuration options, or methods to construct bdevs when one RPC may generate multiple bdevs (for example, an NVMe controller with multiple namespaces).</p>
 <p>Per-bdev JSON RPCs (where one "construct" RPC always creates one bdev) may be implemented here, or by the bdev's write_config_json function - but not both. Bdev module implementers may choose which mechanism to use based on the module's design.</p>
 <dl class="section return"><dt>Returns</dt><dd>0 on success or Bdev specific negative error code. </dd></dl>
-
-</div>
-</div>
-<a id="a62f46d0a9b8ead0a63e1f5637dacd37d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a62f46d0a9b8ead0a63e1f5637dacd37d">&#9670;&nbsp;</a></span>config_text</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void(* spdk_bdev_module::config_text) (FILE *fp)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Function called to return a text string representing the module's configuration options for inclusion in a configuration file. </p>
-<p>(Deprecated and shall not be called by bdev layer) </p>
 
 </div>
 </div>
