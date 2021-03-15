@@ -1,5 +1,7 @@
 var NAVTREEINDEX6 =
 {
+"log_8h.html#a759e79a44bb8dd5733e81c7d213fd730":[14,0,33,10],
+"log_8h.html#a78b00284a14bd0963fcad2585fd090b2":[14,0,33,5],
 "log_8h.html#a80d1557908e5d42aa110a9db432b35a0":[14,0,33,20],
 "log_8h.html#a880b1e27d71328429dbf4f65e02ff145":[14,0,33,21],
 "log_8h.html#a99820ac7f38f6ad187be62b3bbdb7d64":[14,0,33,27],
@@ -247,7 +249,5 @@ var NAVTREEINDEX6 =
 "nvme_8h.html#ac06275147a2cbb800440686b8ba9a73b":[14,0,38,166],
 "nvme_8h.html#ac0c646dd18675c54ffcf834ce699658d":[14,0,38,112],
 "nvme_8h.html#ac1eaa795f075495337b270667661ce5d":[14,0,38,15],
-"nvme_8h.html#ac2aac85501f13bff557d3a224d8ec156":[14,0,38,137],
-"nvme_8h.html#ac31bc692c6b3a84e2355eb63a8b01ccf":[14,0,38,62],
-"nvme_8h.html#ac37484cc5d14777e4ae1fde031d0edf2":[14,0,38,175]
+"nvme_8h.html#ac2aac85501f13bff557d3a224d8ec156":[14,0,38,137]
 };

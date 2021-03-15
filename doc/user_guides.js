@@ -210,6 +210,8 @@ var user_guides =
         [ "bdev_iscsi_delete", "jsonrpc.html#rpc_bdev_iscsi_delete", null ],
         [ "bdev_ftl_create", "jsonrpc.html#rpc_bdev_ftl_create", null ],
         [ "bdev_ftl_delete", "jsonrpc.html#rpc_bdev_ftl_delete", null ],
+        [ "bdev_ocssd_create", "jsonrpc.html#rpc_bdev_ocssd_create", null ],
+        [ "bdev_ocssd_delete", "jsonrpc.html#rpc_bdev_ocssd_delete", null ],
         [ "bdev_pmem_create_pool", "jsonrpc.html#rpc_bdev_pmem_create_pool", null ],
         [ "bdev_pmem_get_pool_info", "jsonrpc.html#rpc_bdev_pmem_get_pool_info", null ],
         [ "bdev_pmem_delete_pool", "jsonrpc.html#rpc_bdev_pmem_delete_pool", null ],
