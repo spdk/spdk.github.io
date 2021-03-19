@@ -47,6 +47,7 @@ var searchData=
   ['spdk_5fmsg_5ffn',['spdk_msg_fn',['../thread_8h.html#adc0da6b1b784d4f165dcd48b526d12ad',1,'thread.h']]],
   ['spdk_5fnbd_5fstart_5fcb',['spdk_nbd_start_cb',['../nbd_8h.html#abed048e29b578c12e7db81e77df6877b',1,'nbd.h']]],
   ['spdk_5fnew_5fthread_5ffn',['spdk_new_thread_fn',['../thread_8h.html#afab3d4339c5bca4dfde209816a9e560f',1,'thread.h']]],
+  ['spdk_5fnvme_5faccel_5fcompletion_5fcb',['spdk_nvme_accel_completion_cb',['../nvme_8h.html#afff8aaa490f2db1119b20e36253196b7',1,'nvme.h']]],
   ['spdk_5fnvme_5faer_5fcb',['spdk_nvme_aer_cb',['../nvme_8h.html#ae564dc7dced1dd7b474c1a6923734a6d',1,'nvme.h']]],
   ['spdk_5fnvme_5fattach_5fcb',['spdk_nvme_attach_cb',['../nvme_8h.html#ac1eaa795f075495337b270667661ce5d',1,'nvme.h']]],
   ['spdk_5fnvme_5fcmd_5fcb',['spdk_nvme_cmd_cb',['../nvme_8h.html#ac9779e9957d7089dde8e492cc60856d8',1,'nvme.h']]],

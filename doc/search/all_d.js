@@ -3,6 +3,7 @@ var searchData=
   ['message_20passing_20and_20concurrency',['Message Passing and Concurrency',['../concurrency.html',1,'concepts']]],
   ['mar',['mar',['../structspdk__nvme__zns__ns__data.html#abdd0f008b8756f17892579fb42ab57c0',1,'spdk_nvme_zns_ns_data']]],
   ['mask',['mask',['../structspdk__ocssd__chunk__notification__entry.html#a3a9bef3c50f3c60586ce094536c94df2',1,'spdk_ocssd_chunk_notification_entry']]],
+  ['max_5factive_5fzones',['max_active_zones',['../structspdk__bdev.html#accb598558c9e263c57cde4cf3c919bbb',1,'spdk_bdev']]],
   ['max_5fchannel_5fops',['max_channel_ops',['../structspdk__bs__opts.html#ac5417afa104f5061bab1bfae0769c3a6',1,'spdk_bs_opts']]],
   ['max_5fmd_5fops',['max_md_ops',['../structspdk__bs__opts.html#a63e0b619fedc29159dffd7feca08396b',1,'spdk_bs_opts']]],
   ['max_5fopen_5fzones',['max_open_zones',['../structspdk__bdev.html#a9766b9a39169827156c768f78b940977',1,'spdk_bdev']]],

@@ -160,20 +160,26 @@ Data Structures</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:a5005214cc8ac8cb63611d774c2d01175"><td class="memItemLeft" align="right" valign="top"><a id="a5005214cc8ac8cb63611d774c2d01175"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_zone_action</b> { <b>SPDK_BDEV_ZONE_CLOSE</b>, 
+<tr class="memitem:a5005214cc8ac8cb63611d774c2d01175"><td class="memItemLeft" align="right" valign="top"><a id="a5005214cc8ac8cb63611d774c2d01175"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_zone_action</b> { <br />
+&#160;&#160;<b>SPDK_BDEV_ZONE_CLOSE</b>, 
 <b>SPDK_BDEV_ZONE_FINISH</b>, 
 <b>SPDK_BDEV_ZONE_OPEN</b>, 
-<b>SPDK_BDEV_ZONE_RESET</b>
+<b>SPDK_BDEV_ZONE_RESET</b>, 
+<br />
+&#160;&#160;<b>SPDK_BDEV_ZONE_OFFLINE</b>
+<br />
  }</td></tr>
 <tr class="separator:a5005214cc8ac8cb63611d774c2d01175"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afe1568ea11e6fe221cc860af5a21c665"><td class="memItemLeft" align="right" valign="top"><a id="afe1568ea11e6fe221cc860af5a21c665"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_zone_state</b> { <br />
-&#160;&#160;<b>SPDK_BDEV_ZONE_STATE_EMPTY</b>, 
-<b>SPDK_BDEV_ZONE_STATE_OPEN</b>, 
-<b>SPDK_BDEV_ZONE_STATE_FULL</b>, 
-<b>SPDK_BDEV_ZONE_STATE_CLOSED</b>, 
+&#160;&#160;<b>SPDK_BDEV_ZONE_STATE_EMPTY</b> = 0x0, 
+<b>SPDK_BDEV_ZONE_STATE_IMP_OPEN</b> = 0x1, 
+<b>SPDK_BDEV_ZONE_STATE_OPEN</b> = SPDK_BDEV_ZONE_STATE_IMP_OPEN, 
+<b>SPDK_BDEV_ZONE_STATE_FULL</b> = 0x2, 
 <br />
-&#160;&#160;<b>SPDK_BDEV_ZONE_STATE_READ_ONLY</b>, 
-<b>SPDK_BDEV_ZONE_STATE_OFFLINE</b>
+&#160;&#160;<b>SPDK_BDEV_ZONE_STATE_CLOSED</b> = 0x3, 
+<b>SPDK_BDEV_ZONE_STATE_READ_ONLY</b> = 0x4, 
+<b>SPDK_BDEV_ZONE_STATE_OFFLINE</b> = 0x5, 
+<b>SPDK_BDEV_ZONE_STATE_EXP_OPEN</b> = 0x6
 <br />
  }</td></tr>
 <tr class="separator:afe1568ea11e6fe221cc860af5a21c665"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -186,6 +192,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a7739e6335f06de1565e50d3afc247aa0"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev__zone_8h.html#a7739e6335f06de1565e50d3afc247aa0">spdk_bdev_get_max_open_zones</a> (const struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *bdev)</td></tr>
 <tr class="memdesc:a7739e6335f06de1565e50d3afc247aa0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get device maximum number of open zones.  <a href="#a7739e6335f06de1565e50d3afc247aa0">More...</a><br /></td></tr>
 <tr class="separator:a7739e6335f06de1565e50d3afc247aa0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b1a401f0d6131597efd6cfad7ccfe8a"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev__zone_8h.html#a4b1a401f0d6131597efd6cfad7ccfe8a">spdk_bdev_get_max_active_zones</a> (const struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *bdev)</td></tr>
+<tr class="memdesc:a4b1a401f0d6131597efd6cfad7ccfe8a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get device maximum number of active zones.  <a href="#a4b1a401f0d6131597efd6cfad7ccfe8a">More...</a><br /></td></tr>
+<tr class="separator:a4b1a401f0d6131597efd6cfad7ccfe8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa50981e9f75708e66f7174c96cf396f8"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev__zone_8h.html#aa50981e9f75708e66f7174c96cf396f8">spdk_bdev_get_optimal_open_zones</a> (const struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *bdev)</td></tr>
 <tr class="memdesc:aa50981e9f75708e66f7174c96cf396f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get device optimal number of open zones.  <a href="#aa50981e9f75708e66f7174c96cf396f8">More...</a><br /></td></tr>
 <tr class="separator:aa50981e9f75708e66f7174c96cf396f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -214,6 +223,35 @@ Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Zoned device public interface. </p>
 </div><h2 class="groupheader">Function Documentation</h2>
+<a id="a4b1a401f0d6131597efd6cfad7ccfe8a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b1a401f0d6131597efd6cfad7ccfe8a">&#9670;&nbsp;</a></span>spdk_bdev_get_max_active_zones()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t spdk_bdev_get_max_active_zones </td>
+          <td>(</td>
+          <td class="paramtype">const struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *&#160;</td>
+          <td class="paramname"><em>bdev</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get device maximum number of active zones. </p>
+<p>An active zone is defined as a zone being in zone state SPDK_BDEV_ZONE_STATE_IMP_OPEN, SPDK_BDEV_ZONE_STATE_EXP_OPEN or SPDK_BDEV_ZONE_STATE_CLOSED.</p>
+<p>If this value is 0, there is no limit.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bdev</td><td>Block device to query. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Maximum number of active zones for this zoned device. </dd></dl>
+
+</div>
+</div>
 <a id="a7739e6335f06de1565e50d3afc247aa0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7739e6335f06de1565e50d3afc247aa0">&#9670;&nbsp;</a></span>spdk_bdev_get_max_open_zones()</h2>
 
@@ -231,6 +269,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Get device maximum number of open zones. </p>
+<p>An open zone is defined as a zone being in zone state SPDK_BDEV_ZONE_STATE_IMP_OPEN or SPDK_BDEV_ZONE_STATE_EXP_OPEN.</p>
 <p>If this value is 0, there is no limit.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">

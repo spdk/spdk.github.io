@@ -477,7 +477,17 @@ thread_get_io_channels</h2>
 <h3>Response</h3>
 <p>The response is an array of objects containing IO channels of all the threads.</p>
 <h3>Example</h3>
-<p>Example request: </p><div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;method&quot;: &quot;thread_get_io_channels&quot;,</div><div class="line">  &quot;id&quot;: 1</div><div class="line">}</div></div><!-- fragment --><p>Example response: </p><div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: {</div><div class="line">    &quot;tick_rate&quot;: 2500000000,</div><div class="line">    &quot;threads&quot;: [</div><div class="line">      {</div><div class="line">        &quot;name&quot;: &quot;app_thread&quot;,</div><div class="line">        &quot;io_channels&quot;: [</div><div class="line">          {</div><div class="line">            &quot;name&quot;: &quot;nvmf_tgt&quot;,</div><div class="line">            &quot;ref&quot;: 1</div><div class="line">          }</div><div class="line">        ]</div><div class="line">      }</div><div class="line">    ]</div><div class="line">  }</div><div class="line">}</div></div><!-- fragment --> <h1><a class="anchor" id="jsonrpc_components_bdev"></a>
+<p>Example request: </p><div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;method&quot;: &quot;thread_get_io_channels&quot;,</div><div class="line">  &quot;id&quot;: 1</div><div class="line">}</div></div><!-- fragment --><p>Example response: </p><div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: {</div><div class="line">    &quot;tick_rate&quot;: 2500000000,</div><div class="line">    &quot;threads&quot;: [</div><div class="line">      {</div><div class="line">        &quot;name&quot;: &quot;app_thread&quot;,</div><div class="line">        &quot;io_channels&quot;: [</div><div class="line">          {</div><div class="line">            &quot;name&quot;: &quot;nvmf_tgt&quot;,</div><div class="line">            &quot;ref&quot;: 1</div><div class="line">          }</div><div class="line">        ]</div><div class="line">      }</div><div class="line">    ]</div><div class="line">  }</div><div class="line">}</div></div><!-- fragment --><h2><a class="anchor" id="rpc_env_dpdk_get_mem_stats"></a>
+env_dpdk_get_mem_stats</h2>
+<p>Write the dpdk memory stats to a file.</p>
+<h3>Parameters</h3>
+<p>This method has no parameters.</p>
+<h3>Response</h3>
+<p>The response is a pathname to a text file containing the memory stats.</p>
+<h3>Example</h3>
+<p>Example request:</p>
+<div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;method&quot;: &quot;env_dpdk_get_mem_stats&quot;,</div><div class="line">  &quot;id&quot;: 1</div><div class="line">}</div></div><!-- fragment --><p>Example response:</p>
+<div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: {</div><div class="line">    &quot;filename&quot;: &quot;/tmp/spdk_mem_dump.txt&quot;</div><div class="line">  }</div><div class="line">}</div></div><!-- fragment --><h1><a class="anchor" id="jsonrpc_components_bdev"></a>
 Block Device Abstraction Layer</h1>
 <h2><a class="anchor" id="rpc_bdev_set_options"></a>
 bdev_set_options</h2>
@@ -725,7 +735,7 @@ bdev_crypto_delete</h2>
 <div class="fragment"><div class="line">{</div><div class="line">  &quot;params&quot;: {</div><div class="line">    &quot;name&quot;: &quot;my_crypto_bdev&quot;</div><div class="line">  },</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;method&quot;: &quot;bdev_crypto_delete&quot;,</div><div class="line">  &quot;id&quot;: 1</div><div class="line">}</div></div><!-- fragment --><p>Example response:</p>
 <div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: true</div><div class="line">}</div></div><!-- fragment --><h2><a class="anchor" id="rpc_bdev_ocf_create"></a>
 bdev_ocf_create</h2>
-<p>Construct new OCF bdev. Command accepts cache mode that is going to be used. Currently, we support Write-Through, Pass-Through and Write-Back OCF cache modes.</p>
+<p>Construct new OCF bdev. Command accepts cache mode that is going to be used. You can find more details about supported cache modes in the <a href="https://open-cas.github.io/cache_configuration.html#cache-mode">OCF documentation</a></p>
 <h3>Parameters</h3>
 <table class="markdownTable">
 <tr class="markdownTableHead">
@@ -733,7 +743,7 @@ bdev_ocf_create</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">name  </td><td class="markdownTableBodyNone">Required  </td><td class="markdownTableBodyNone">string  </td><td class="markdownTableBodyNone">Bdev name to use   </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">mode  </td><td class="markdownTableBodyNone">Required  </td><td class="markdownTableBodyNone">string  </td><td class="markdownTableBodyNone">OCF cache mode ('wb' or 'wt' or 'pt')   </td></tr>
+<td class="markdownTableBodyNone">mode  </td><td class="markdownTableBodyNone">Required  </td><td class="markdownTableBodyNone">string  </td><td class="markdownTableBodyNone">OCF cache mode: wb, wt, pt, wa, wi, wo   </td></tr>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">cache_bdev_name  </td><td class="markdownTableBodyNone">Required  </td><td class="markdownTableBodyNone">string  </td><td class="markdownTableBodyNone">Name of underlying cache bdev   </td></tr>
 <tr class="markdownTableRowEven">
@@ -787,7 +797,24 @@ bdev_ocf_get_bdevs</h2>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;method&quot;: &quot;bdev_ocf_get_bdevs&quot;,</div><div class="line">  &quot;id&quot;: 1</div><div class="line">}</div></div><!-- fragment --><p>Example response:</p>
-<div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: [</div><div class="line">    {</div><div class="line">      &quot;name&quot;: &quot;PartCache&quot;,</div><div class="line">      &quot;started&quot;: false,</div><div class="line">      &quot;cache&quot;: {</div><div class="line">        &quot;name&quot;: &quot;Malloc0&quot;,</div><div class="line">        &quot;attached&quot;: true</div><div class="line">      },</div><div class="line">      &quot;core&quot;: {</div><div class="line">        &quot;name&quot;: &quot;Malloc1&quot;,</div><div class="line">        &quot;attached&quot;: false</div><div class="line">      }</div><div class="line">    }</div><div class="line">  ]</div><div class="line">}</div></div><!-- fragment --><h2><a class="anchor" id="rpc_bdev_malloc_create"></a>
+<div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: [</div><div class="line">    {</div><div class="line">      &quot;name&quot;: &quot;PartCache&quot;,</div><div class="line">      &quot;started&quot;: false,</div><div class="line">      &quot;cache&quot;: {</div><div class="line">        &quot;name&quot;: &quot;Malloc0&quot;,</div><div class="line">        &quot;attached&quot;: true</div><div class="line">      },</div><div class="line">      &quot;core&quot;: {</div><div class="line">        &quot;name&quot;: &quot;Malloc1&quot;,</div><div class="line">        &quot;attached&quot;: false</div><div class="line">      }</div><div class="line">    }</div><div class="line">  ]</div><div class="line">}</div></div><!-- fragment --><h2><a class="anchor" id="rpc_bdev_ocf_set_cache_mode"></a>
+bdev_ocf_set_cache_mode</h2>
+<p>Set new cache mode on OCF bdev.</p>
+<h3>Parameters</h3>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Name  </th><th class="markdownTableHeadNone">Optional  </th><th class="markdownTableHeadNone">Type  </th><th class="markdownTableHeadNone">Description   </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">name  </td><td class="markdownTableBodyNone">Required  </td><td class="markdownTableBodyNone">string  </td><td class="markdownTableBodyNone">Bdev name   </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">mode  </td><td class="markdownTableBodyNone">Required  </td><td class="markdownTableBodyNone">string  </td><td class="markdownTableBodyNone">OCF cache mode: wb, wt, pt, wa, wi, wo   </td></tr>
+</table>
+<h3>Response</h3>
+<p>New cache mode name.</p>
+<h3>Example</h3>
+<p>Example request:</p>
+<div class="fragment"><div class="line">{</div><div class="line">  &quot;params&quot;: {</div><div class="line">    &quot;name&quot;: &quot;ocf0&quot;,</div><div class="line">    &quot;mode&quot;: &quot;pt&quot;,</div><div class="line">  },</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;method&quot;: &quot;bdev_ocf_set_cache_mode&quot;,</div><div class="line">  &quot;id&quot;: 1</div><div class="line">}</div></div><!-- fragment --><p>Example response:</p>
+<div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: &quot;pt&quot;</div><div class="line">}</div></div><!-- fragment --><h2><a class="anchor" id="rpc_bdev_malloc_create"></a>
 bdev_malloc_create</h2>
 <p>Construct <a class="el" href="bdev.html#bdev_config_malloc">Malloc bdev</a></p>
 <h3>Parameters</h3>

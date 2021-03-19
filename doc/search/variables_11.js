@@ -34,6 +34,7 @@ var searchData=
   ['stop_5flisten',['stop_listen',['../structspdk__nvmf__transport__ops.html#a79190a46c19b7d92d8929a7470afeb94',1,'spdk_nvmf_transport_ops']]],
   ['stored_5fuser_5fcb',['stored_user_cb',['../structspdk__bdev__io.html#a35905e31d0aa54cd00dbb34e7d56656a',1,'spdk_bdev_io']]],
   ['subdevice_5fid',['subdevice_id',['../structspdk__pci__id.html#aedf53a294bbe914233d7ba3f00b20874',1,'spdk_pci_id']]],
+  ['submit_5faccel_5fcrc32c',['submit_accel_crc32c',['../structspdk__nvme__accel__fn__table.html#aa20b162bd3721e3773bb022523b0dc01',1,'spdk_nvme_accel_fn_table']]],
   ['submit_5frequest',['submit_request',['../structspdk__bdev__fn__table.html#ae80a9002371becdc6fb1c13f8f5173bf',1,'spdk_bdev_fn_table']]],
   ['submit_5ftsc',['submit_tsc',['../structspdk__bdev__io_1_1____bdev__io__internal__fields.html#a3e0b8fe4a5a6b8636d6aeb61348f9c4a',1,'spdk_bdev_io::__bdev_io_internal_fields']]],
   ['subnqn',['subnqn',['../structspdk__nvme__transport__id.html#a2ea706c15041f428b933b44b2b81b2ae',1,'spdk_nvme_transport_id::subnqn()'],['../structspdk__nvmf__discovery__log__page__entry.html#a797dfd34a151a7c7d9942a7ad179aac5',1,'spdk_nvmf_discovery_log_page_entry::subnqn()']]],

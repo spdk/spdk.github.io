@@ -147,6 +147,8 @@ $(document).ready(function(){initNavTree('changelog.html','');});
 <div class="contents">
 <div class="textblock"><h1><a class="anchor" id="changelog-v21-04"></a>
 v21.04: (Upcoming Release)</h1>
+<h2>nvme</h2>
+<p>Added an accelerated table pointer in spdk_nvme_poll_group which can be used provide the accelerated functions by users with hardware engine, such as crc32c accelerated function.</p>
 <h2>bdev</h2>
 <p>For <code>bdev_ocssd_create</code> RPC, the optional parameter <code>range</code> was removed. Only one OCSSD bdev can be created for one OCSSD namespace.</p>
 <p>Removed the <code>spdk_bdev_open</code> from bdev library API. Removed the <code>spdk_vbdev_register</code> and <code>spdk_bdev_part_base_construct</code> from bdev module API. Removed the <code>config_text</code> function for bdev modules to report legacy config.</p>
@@ -161,7 +163,27 @@ v21.04: (Upcoming Release)</h1>
 <p>Two new accelerated crc32 functions 'spdk_accel_submit_crc32cv' and 'spdk_accel_batch_prep_crc32cv' are added in order to provide the chained accelerated CRC32 computation support.</p>
 <h2>nvme</h2>
 <p>Added <code>spdk_nvme_qpair_get_optimal_poll_group</code> function and <code>qpair_get_optimal_poll_group</code> function pointer in <a class="el" href="structspdk__nvmf__transport__ops.html">spdk_nvmf_transport_ops</a> structure in order to add the qpair to the most suitable polling group.</p>
+<p>Add OPTPERF and namespace optimal performance fields to <a class="el" href="nvme__spec_8h.html" title="NVMe specification definitions.">nvme_spec.h</a>.</p>
 <p>Added spdk_nvme_set_hotplug_filter API to allow applications to choose which hot-inserted SSDs should be probed. This is useful for use cases where multiple independent SPDK processes are running on one node. The filter function can then be implemented in these processes to decide which SSDs to probe based on the new SSD's PCI address.</p>
+<h2>nvmf</h2>
+<p>Removed the <code>spdk_nvmf_tgt_listen</code> and <code>spdk_nvmf_subsystem_add_ns</code> API.</p>
+<p>Added new APIs:</p><ul>
+<li><code>spdk_nvmf_poll_group_dump_stat</code> (function in <code><a class="el" href="nvmf_8h.html" title="NVMe over Fabrics target public API.">nvmf.h</a></code>).</li>
+<li><code>poll_group_dump_stat</code> (transport op in <code><a class="el" href="nvmf__transport_8h.html" title="NVMe-oF Target transport plugin API.">nvmf_transport.h</a></code>).</li>
+</ul>
+<p>The following APIs have been deprecated and will be removed in a future release:</p><ul>
+<li><code>spdk_nvmf_poll_group_get_stat</code> (function in <code><a class="el" href="nvmf_8h.html" title="NVMe over Fabrics target public API.">nvmf.h</a></code>),</li>
+<li><code>spdk_nvmf_transport_poll_group_get_stat</code> (function in <code><a class="el" href="nvmf_8h.html" title="NVMe over Fabrics target public API.">nvmf.h</a></code>),</li>
+<li><code>spdk_nvmf_transport_poll_group_free_stat</code>(function in <code><a class="el" href="nvmf_8h.html" title="NVMe over Fabrics target public API.">nvmf.h</a></code>),</li>
+<li><code><a class="el" href="structspdk__nvmf__rdma__device__stat.html">spdk_nvmf_rdma_device_stat</a></code> (struct in <code><a class="el" href="nvmf_8h.html" title="NVMe over Fabrics target public API.">nvmf.h</a></code>),</li>
+<li><code><a class="el" href="structspdk__nvmf__transport__poll__group__stat.html">spdk_nvmf_transport_poll_group_stat</a></code> (struct in <code><a class="el" href="nvmf_8h.html" title="NVMe over Fabrics target public API.">nvmf.h</a></code>),</li>
+<li><code>poll_group_get_stat</code> (transport op in <code><a class="el" href="nvmf__transport_8h.html" title="NVMe-oF Target transport plugin API.">nvmf_transport.h</a></code>),</li>
+<li><code>poll_group_free_stat</code> (transport op in <code><a class="el" href="nvmf__transport_8h.html" title="NVMe-oF Target transport plugin API.">nvmf_transport.h</a></code>).</li>
+</ul>
+<p>See header files for details.</p>
+<p>The <code>trtype</code> field in JSON returned by <code>nvmf_get_stats</code> RPC contains now the name of the transport, which is the same as the type for defined transports and more informative for a custom transport.</p>
+<h2>opal</h2>
+<p>Removed the <code>spdk_opal_supported</code> API.</p>
 <h2>sock</h2>
 <p>The type of enable_placement_id in struct <a class="el" href="structspdk__sock__impl__opts.html" title="SPDK socket implementation options.">spdk_sock_impl_opts</a> is changed from bool to int. We can use RPC to configure different value of enable_placement_id. Then we can leverage SO_INCOMING_CPU to get placement_id, which aims to utilize CPU cache locality, enabled by setting enable_placement_id=2.</p>
 <h1><a class="anchor" id="changelog-v21-01"></a>

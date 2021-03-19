@@ -79,6 +79,7 @@ var annotated_dup =
     [ "spdk_mbr_partition_entry", "structspdk__mbr__partition__entry.html", "structspdk__mbr__partition__entry" ],
     [ "spdk_mem_map_ops", "structspdk__mem__map__ops.html", "structspdk__mem__map__ops" ],
     [ "spdk_notify_event", "structspdk__notify__event.html", "structspdk__notify__event" ],
+    [ "spdk_nvme_accel_fn_table", "structspdk__nvme__accel__fn__table.html", "structspdk__nvme__accel__fn__table" ],
     [ "spdk_nvme_ana_group_descriptor", "structspdk__nvme__ana__group__descriptor.html", "structspdk__nvme__ana__group__descriptor" ],
     [ "spdk_nvme_ana_page", "structspdk__nvme__ana__page.html", "structspdk__nvme__ana__page" ],
     [ "spdk_nvme_aqa_register", "unionspdk__nvme__aqa__register.html", "unionspdk__nvme__aqa__register" ],

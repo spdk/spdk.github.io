@@ -21,7 +21,8 @@ var user_guides =
         [ "Shared Object Versioning", "libraries.html#versioning", null ],
         [ "Linking to Shared Objects", "libraries.html#so_linking", null ],
         [ "Replacing the env abstraction", "libraries.html#env_replacement", null ]
-      ] ]
+      ] ],
+      [ "SPDK Static Objects", "libraries.html#static_objects", null ]
     ] ],
     [ "Linking SPDK applications with pkg-config", "pkgconfig.html", null ],
     [ "An Overview of SPDK Applications", "app_overview.html", [
@@ -161,7 +162,8 @@ var user_guides =
         [ "log_get_flags", "jsonrpc.html#rpc_log_get_flags", null ],
         [ "log_enable_timestamps", "jsonrpc.html#rpc_log_enable_timestamps", null ],
         [ "thread_get_pollers", "jsonrpc.html#rpc_thread_get_pollers", null ],
-        [ "thread_get_io_channels", "jsonrpc.html#rpc_thread_get_io_channels", null ]
+        [ "thread_get_io_channels", "jsonrpc.html#rpc_thread_get_io_channels", null ],
+        [ "env_dpdk_get_mem_stats", "jsonrpc.html#rpc_env_dpdk_get_mem_stats", null ]
       ] ],
       [ "Block Device Abstraction Layer", "jsonrpc.html#jsonrpc_components_bdev", [
         [ "bdev_set_options", "jsonrpc.html#rpc_bdev_set_options", null ],
@@ -183,6 +185,7 @@ var user_guides =
         [ "bdev_ocf_delete", "jsonrpc.html#rpc_bdev_ocf_delete", null ],
         [ "bdev_ocf_get_stats", "jsonrpc.html#rpc_bdev_ocf_get_stats", null ],
         [ "bdev_ocf_get_bdevs", "jsonrpc.html#rpc_bdev_ocf_get_bdevs", null ],
+        [ "bdev_ocf_set_cache_mode", "jsonrpc.html#rpc_bdev_ocf_set_cache_mode", null ],
         [ "bdev_malloc_create", "jsonrpc.html#rpc_bdev_malloc_create", null ],
         [ "bdev_malloc_delete", "jsonrpc.html#rpc_bdev_malloc_delete", null ],
         [ "bdev_null_create", "jsonrpc.html#rpc_bdev_null_create", null ],

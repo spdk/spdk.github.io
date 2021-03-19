@@ -180,8 +180,12 @@ struct {</td></tr>
 &#160;&#160;&#160;uint8_t&#160;&#160;&#160;<a class="el" href="structspdk__nvme__ns__data.html#a1d90d25be4a3d74fcc8097cdd437da25">guid_never_reused</a>: 1</td></tr>
 <tr class="memdesc:a08d0b41c1154e71028e11b2357f7e43c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Non-zero NGUID and EUI64 for namespace are never reused. <br /></td></tr>
 <tr class="separator:a08d0b41c1154e71028e11b2357f7e43c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad700b8a8ece3796a4bb664e7edead8a6"><td class="memItemLeft" >
+&#160;&#160;&#160;uint8_t&#160;&#160;&#160;<a class="el" href="structspdk__nvme__ns__data.html#a1a6b7a697e3eabceb3c2922e5410138d">optperf</a>: 1</td></tr>
+<tr class="memdesc:ad700b8a8ece3796a4bb664e7edead8a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Optimal Performance field. <br /></td></tr>
+<tr class="separator:ad700b8a8ece3796a4bb664e7edead8a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a321b27f54e96e4e285c1d4ae40076fce"><td class="memItemLeft" >
-&#160;&#160;&#160;uint8_t&#160;&#160;&#160;<b>reserved1</b>: 4</td></tr>
+&#160;&#160;&#160;uint8_t&#160;&#160;&#160;<b>reserved1</b>: 3</td></tr>
 <tr class="separator:a321b27f54e96e4e285c1d4ae40076fce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4e380960bc03cdefaecf9320b510344c"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__ns__data.html#a4e380960bc03cdefaecf9320b510344c">nsfeat</a></td></tr>
 <tr class="memdesc:a4e380960bc03cdefaecf9320b510344c"><td class="mdescLeft">&#160;</td><td class="mdescRight">namespace features <br /></td></tr>
@@ -385,9 +389,29 @@ uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__ns__data.html#a62e4d6afbb536bedde34973cc6f1e234">nvmcap</a> [2]</td></tr>
 <tr class="memdesc:a62e4d6afbb536bedde34973cc6f1e234"><td class="mdescLeft">&#160;</td><td class="mdescRight">NVM capacity. <br /></td></tr>
 <tr class="separator:a62e4d6afbb536bedde34973cc6f1e234"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adfcae96346a735d27759eed757e9624a"><td class="memItemLeft" align="right" valign="top"><a id="adfcae96346a735d27759eed757e9624a"></a>
-uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>reserved64</b> [28]</td></tr>
-<tr class="separator:adfcae96346a735d27759eed757e9624a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c55a3904036070910ed450d80b00264"><td class="memItemLeft" align="right" valign="top"><a id="a5c55a3904036070910ed450d80b00264"></a>
+uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__ns__data.html#a5c55a3904036070910ed450d80b00264">npwg</a></td></tr>
+<tr class="memdesc:a5c55a3904036070910ed450d80b00264"><td class="mdescLeft">&#160;</td><td class="mdescRight">Namespace Preferred Write Granularity. <br /></td></tr>
+<tr class="separator:a5c55a3904036070910ed450d80b00264"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2f566adce1f4b27334df6c5c92e291b"><td class="memItemLeft" align="right" valign="top"><a id="ac2f566adce1f4b27334df6c5c92e291b"></a>
+uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__ns__data.html#ac2f566adce1f4b27334df6c5c92e291b">npwa</a></td></tr>
+<tr class="memdesc:ac2f566adce1f4b27334df6c5c92e291b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Namespace Preferred Write Alignment. <br /></td></tr>
+<tr class="separator:ac2f566adce1f4b27334df6c5c92e291b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b2cdc6fffa5bcc3f734c1862e76a3bd"><td class="memItemLeft" align="right" valign="top"><a id="a6b2cdc6fffa5bcc3f734c1862e76a3bd"></a>
+uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__ns__data.html#a6b2cdc6fffa5bcc3f734c1862e76a3bd">npdg</a></td></tr>
+<tr class="memdesc:a6b2cdc6fffa5bcc3f734c1862e76a3bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Namespace Preferred Deallocate Granularity. <br /></td></tr>
+<tr class="separator:a6b2cdc6fffa5bcc3f734c1862e76a3bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa69b3f60c9e7e93a10363063d6622f6d"><td class="memItemLeft" align="right" valign="top"><a id="aa69b3f60c9e7e93a10363063d6622f6d"></a>
+uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__ns__data.html#aa69b3f60c9e7e93a10363063d6622f6d">npda</a></td></tr>
+<tr class="memdesc:aa69b3f60c9e7e93a10363063d6622f6d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Namespace Preferred Deallocate Alignment. <br /></td></tr>
+<tr class="separator:aa69b3f60c9e7e93a10363063d6622f6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21b97afc8b857343556a151a15dc6ef8"><td class="memItemLeft" align="right" valign="top"><a id="a21b97afc8b857343556a151a15dc6ef8"></a>
+uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__ns__data.html#a21b97afc8b857343556a151a15dc6ef8">nows</a></td></tr>
+<tr class="memdesc:a21b97afc8b857343556a151a15dc6ef8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Namespace Optimal Write Size. <br /></td></tr>
+<tr class="separator:a21b97afc8b857343556a151a15dc6ef8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9d13a25d6cfd06ffca73433aa478ead"><td class="memItemLeft" align="right" valign="top"><a id="af9d13a25d6cfd06ffca73433aa478ead"></a>
+uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>reserved64</b> [18]</td></tr>
+<tr class="separator:af9d13a25d6cfd06ffca73433aa478ead"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a84357d9c3c97e9eec914e8992ad914fa"><td class="memItemLeft" align="right" valign="top"><a id="a84357d9c3c97e9eec914e8992ad914fa"></a>
 uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__ns__data.html#a84357d9c3c97e9eec914e8992ad914fa">anagrpid</a></td></tr>
 <tr class="memdesc:a84357d9c3c97e9eec914e8992ad914fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">ANA group identifier. <br /></td></tr>

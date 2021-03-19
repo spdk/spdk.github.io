@@ -1,6 +1,7 @@
 var nvme_8h =
 [
     [ "spdk_nvme_ctrlr_opts", "structspdk__nvme__ctrlr__opts.html", "structspdk__nvme__ctrlr__opts" ],
+    [ "spdk_nvme_accel_fn_table", "structspdk__nvme__accel__fn__table.html", "structspdk__nvme__accel__fn__table" ],
     [ "spdk_nvme_transport_id", "structspdk__nvme__transport__id.html", "structspdk__nvme__transport__id" ],
     [ "spdk_nvme_host_id", "structspdk__nvme__host__id.html", "structspdk__nvme__host__id" ],
     [ "spdk_nvme_io_qpair_opts", "structspdk__nvme__io__qpair__opts.html", "structspdk__nvme__io__qpair__opts" ],
@@ -14,6 +15,7 @@ var nvme_8h =
     [ "SPDK_NVME_TRANSPORT_NAME_VFIOUSER", "nvme_8h.html#a68f6e3956c2d99568a36f7b48941134a", null ],
     [ "SPDK_NVME_TRANSPORT_REGISTER", "nvme_8h.html#ac6da5f02442d41a5233de049fb950a8f", null ],
     [ "SPDK_NVMF_PRIORITY_MAX_LEN", "nvme_8h.html#a3d857d25bb764050417a01ae2245bc0f", null ],
+    [ "spdk_nvme_accel_completion_cb", "nvme_8h.html#afff8aaa490f2db1119b20e36253196b7", null ],
     [ "spdk_nvme_aer_cb", "nvme_8h.html#ae564dc7dced1dd7b474c1a6923734a6d", null ],
     [ "spdk_nvme_attach_cb", "nvme_8h.html#ac1eaa795f075495337b270667661ce5d", null ],
     [ "spdk_nvme_cmd_cb", "nvme_8h.html#ac9779e9957d7089dde8e492cc60856d8", null ],
@@ -179,7 +181,7 @@ var nvme_8h =
     [ "spdk_nvme_ns_supports_extended_lba", "nvme_8h.html#aad367fec5a8963f5d930dfae485de6b3", null ],
     [ "spdk_nvme_pcie_set_hotplug_filter", "nvme_8h.html#a976b90cbbc1aa8a4117837758f65e6c7", null ],
     [ "spdk_nvme_poll_group_add", "nvme_8h.html#ade4eafe3d6b7b4a0a1c317a49b3ba1e5", null ],
-    [ "spdk_nvme_poll_group_create", "nvme_8h.html#a81b43dcf46edea01d74bd915b0fe2a3d", null ],
+    [ "spdk_nvme_poll_group_create", "nvme_8h.html#afb7c3d1cbb9ef2dbe39344ad65490f2d", null ],
     [ "spdk_nvme_poll_group_destroy", "nvme_8h.html#ac4cea1ea33592903a9478d75f809ded6", null ],
     [ "spdk_nvme_poll_group_get_ctx", "nvme_8h.html#a2a353011316a46ee6e6857f7286488d1", null ],
     [ "spdk_nvme_poll_group_process_completions", "nvme_8h.html#ac89c07198e8be3384ee6a0adc8439621", null ],
