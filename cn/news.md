@@ -57,4 +57,11 @@ lang: cn
 ### [干货分享|SPDK技术简介和一些实践经验](https://mp.weixin.qq.com/s?__biz=MzIzMzk0MDgxNQ==&mid=2247490879&idx=1&sn=40a0e5cbdd734599fb48eb9c112b3fa7&chksm=e8fcaf1fdf8b2609963fd4b8e9ddc65b4fd715d9df462caf7882a5d5845ef45f618eb0dc8ca1&mpshare=1&scene=1&srcid=1215BOAcuZ7lwU2fVkbm4OAr&sharer_sharetime=1608102337386&sharer_shareid=bce63ba0449f498eb13c109c5eaef06d&exportkey=A%2BQX%2BiRdm%2Bom2sojFFMlT%2B4%3D&pass_ticket=%2BFOpaf%2FRhmSk8QlTrXaIrM3MOdG3DByrpKT3%2F1pvRnoDbSG1NVORPrCDLUjU0PZ8&wx_header=0#rd)
 > “SPDK能有优异的性能，离不开它优异的线程模型，实际使用过程中核的分配相当重要，从上面可以看出，在后端是ceph的场景下，ceph线程运行的核如果没有规划......”
 
+## 美团
+### [Rocksdb加SPDK改善吞吐能力建设](https://mp.weixin.qq.com/s?__biz=MzI3NDA4ODY4MA==&mid=2653337548&idx=1&sn=126be7995677120b5da6f68f78875e61&chksm=f0cb404bc7bcc95d769f6e5abcb6c4e403fc4a2078270b151493277545a7608317c5afa38707&scene=0&xtrack=1&exportkey=A1sqiH%2BMBtpcYEqZYRxO3%2BY%3D&pass_ticket=Yqc82YTsvhRYO%2F9LVG0fQnlhT4AQex%2BS%2BcfddHU25xFgtLVwCovG%2BHck3uYODoz7&wx_header=0#rd)
+> “以上便是我们有关rocksdb吞吐能力建设所做的一些改进和尝试，核心内容主要围绕在如何与SPDK做有效整合，从而实现kernal旁路机制，以及如何通过异步化访问来提升整体吞吐。”
+
+### [速度与压缩比如何兼得？压缩算法在构建部署中的优化](https://mp.weixin.qq.com/s?__biz=MzI3NDA4ODY4MA==&mid=2653337496&idx=1&sn=7488f53349a8305402c31fb29a64548d&chksm=f0cb401fc7bcc909d804c39e86118be3b2b219bc5adcbe3c6e0a738745d47df52351560a5f73&scene=0&xtrack=1&exportkey=A3g9BgwANfOTTNkJuJvcc2c%3D&pass_ticket=Yqc82YTsvhRYO%2F9LVG0fQnlhT4AQex%2BS%2BcfddHU25xFgtLVwCovG%2BHck3uYODoz7&wx_header=0#rd)
+> “综合以上几点，决定一期采取 ISA-L 的方式加速，可以最稳定并且较高速地提升构建平台的效率”
+
 ## 更多SPDK使用案例，请参考[news]({{ baseurl_rel }}/news)页面

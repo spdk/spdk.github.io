@@ -54,6 +54,8 @@ lang: cn
 
 * [CVL网卡的ADQ特性在SPDK的NVMF测试中的应用实例 - 上篇](https://mp.weixin.qq.com/s?__biz=MzI3NDA4ODY4MA==&mid=2653337411&idx=1&sn=2c20d7e6be1e491e88453b35d664948c&chksm=f0cb40c4c7bcc9d2ebbe09f7f8762bc9194dae52a142d906e5d2382300d271ccca7b34dbc1d6&scene=0&xtrack=1&exportkey=A%2FEW6XpPuT0yaN4hynZT2fo%3D&pass_ticket=w%2BZq2BsgB7kRtHy74eCg%2Bg3OzQ1%2BagIyRNE8HTReHBBzgY%2BPoBJ2KHsJWJVus9X2&wx_header=0#rd)
 
+* [CVL网卡的ADQ特性在SPDK的NVMF测试中的应用实例 - 下篇](https://mp.weixin.qq.com/s?__biz=MzI3NDA4ODY4MA==&mid=2653337412&idx=1&sn=43d8e1579060c01a6ae885024a5d8b57&chksm=f0cb40c3c7bcc9d51385952f678a05a073af44fef3c2d80b31840f8fb5c367dd03e6a21be569&scene=0&xtrack=1&exportkey=A3ZNSgaNVrFI2XJD7u7AS04%3D&pass_ticket=vkau%2B%2F%2BpF2ANWH%2F%2B7AW%2B%2FZTZ49cBSWbTMZ7QKXhjW7wagOPKKr5iX9iRZYrUd8Ld&wx_header=0#rd)
+
 ******
 
 **SPDK iSCSI target/initiator**
@@ -90,9 +92,13 @@ lang: cn
 
 * [一文读懂SPDK加速关键应用：解析SPDK Perf应用](https://mp.weixin.qq.com/s?__biz=MzI3NDA4ODY4MA==&mid=2653335061&idx=1&sn=8c2bb8b1bf7d95d7ab3c0cf81bea0136&chksm=f0cb5992c7bcd084c6d1704e26033b7510b4986593b91a45743df2aea39596813511fa4b70ac&token=431082989&lang=zh_CN#rd)
 
+* [SPDK配置文件从INI到JSON的转换](https://mp.weixin.qq.com/s?__biz=MzI3NDA4ODY4MA==&mid=2653337483&idx=1&sn=229777e0455d1da1d5e1350fd7706f8b&chksm=f0cb400cc7bcc91a5f30529def1e7ec35d7ba35d8db7929fce9766780e989725d8cb4f8d40c5&scene=0&xtrack=1&exportkey=A0WVwxrr8sF%2BvUzgPioT0Z8%3D&pass_ticket=Yqc82YTsvhRYO%2F9LVG0fQnlhT4AQex%2BS%2BcfddHU25xFgtLVwCovG%2BHck3uYODoz7&wx_header=0#rd)
+
 ******
 
 **SPDK和其他软件库的深度整合**
+
+* [ISA-L加速库介绍以及在SPDK中的集成](https://mp.weixin.qq.com/s?__biz=MzI3NDA4ODY4MA==&mid=2653337450&idx=1&sn=fc4068ff5a2bd1378e6dd5a7a16c5fe6&chksm=f0cb40edc7bcc9fbc60e1da33ce7399143386a9d961ffa8f37be611adefbbcf0bd94281f404c&scene=0&xtrack=1&exportkey=A%2BxfIgS5m403pOrcBN5xNEw%3D&pass_ticket=Yqc82YTsvhRYO%2F9LVG0fQnlhT4AQex%2BS%2BcfddHU25xFgtLVwCovG%2BHck3uYODoz7&wx_header=0#rd)
 
 * [信息安全如此重要，国密算法（SM3）终于支持](https://mp.weixin.qq.com/s?__biz=MzI3NDA4ODY4MA==&mid=2653336190&idx=1&sn=c564135f2135d128d5ee04dccdd3180c&chksm=f0cb45f9c7bcccefcfa3663a7cb412d54ed3a82ab18de896ea579ed17e3af64c8e8a0d642001&token=1179202807&lang=zh_CN#rd)
 
