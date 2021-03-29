@@ -165,6 +165,10 @@ var user_guides =
         [ "thread_get_io_channels", "jsonrpc.html#rpc_thread_get_io_channels", null ],
         [ "env_dpdk_get_mem_stats", "jsonrpc.html#rpc_env_dpdk_get_mem_stats", null ]
       ] ],
+      [ "Acceleration Framework Layer", "jsonrpc.html#jsonrpc_components_accel_fw", [
+        [ "idxd_scan_accel_engine", "jsonrpc.html#rpc_idxd_scan_accel_engine", null ],
+        [ "ioat_scan_accel_engine", "jsonrpc.html#rpc_ioat_scan_accel_engine", null ]
+      ] ],
       [ "Block Device Abstraction Layer", "jsonrpc.html#jsonrpc_components_bdev", [
         [ "bdev_set_options", "jsonrpc.html#rpc_bdev_set_options", null ],
         [ "bdev_get_bdevs", "jsonrpc.html#rpc_bdev_get_bdevs", null ],

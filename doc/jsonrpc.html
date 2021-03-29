@@ -487,7 +487,30 @@ env_dpdk_get_mem_stats</h2>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;method&quot;: &quot;env_dpdk_get_mem_stats&quot;,</div><div class="line">  &quot;id&quot;: 1</div><div class="line">}</div></div><!-- fragment --><p>Example response:</p>
-<div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: {</div><div class="line">    &quot;filename&quot;: &quot;/tmp/spdk_mem_dump.txt&quot;</div><div class="line">  }</div><div class="line">}</div></div><!-- fragment --><h1><a class="anchor" id="jsonrpc_components_bdev"></a>
+<div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: {</div><div class="line">    &quot;filename&quot;: &quot;/tmp/spdk_mem_dump.txt&quot;</div><div class="line">  }</div><div class="line">}</div></div><!-- fragment --><h1><a class="anchor" id="jsonrpc_components_accel_fw"></a>
+Acceleration Framework Layer</h1>
+<h2><a class="anchor" id="rpc_idxd_scan_accel_engine"></a>
+idxd_scan_accel_engine</h2>
+<p>Set config and enable idxd accel engine offload. This feature is considered as experimental.</p>
+<h3>Parameters</h3>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Name  </th><th class="markdownTableHeadNone">Optional  </th><th class="markdownTableHeadNone">Type  </th><th class="markdownTableHeadNone">Description   </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">config_number  </td><td class="markdownTableBodyNone">Required  </td><td class="markdownTableBodyNone">number  </td><td class="markdownTableBodyNone">Pre-defined config # to use (ie 0, 1). See <a href="https://spdk.io/doc/idxd.html">docs.</a>   </td></tr>
+</table>
+<h3>Example</h3>
+<p>Example request:</p>
+<div class="fragment"><div class="line">{</div><div class="line">  &quot;params&quot;: {</div><div class="line">    &quot;config_number&quot;: 0</div><div class="line">  },</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;method&quot;: &quot;idxd_scan_accel_engine&quot;,</div><div class="line">  &quot;id&quot;: 1</div><div class="line">}</div></div><!-- fragment --><p>Example response:</p>
+<div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: true</div><div class="line">}</div></div><!-- fragment --><h2><a class="anchor" id="rpc_ioat_scan_accel_engine"></a>
+ioat_scan_accel_engine</h2>
+<p>Enable ioat accel engine offload.</p>
+<h3>Parameters</h3>
+<p>None</p>
+<h3>Example</h3>
+<p>Example request:</p>
+<div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;method&quot;: &quot;ioat_scan_accel_engine&quot;,</div><div class="line">  &quot;id&quot;: 1</div><div class="line">}</div></div><!-- fragment --><p>Example response:</p>
+<div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: true</div><div class="line">}</div></div><!-- fragment --><h1><a class="anchor" id="jsonrpc_components_bdev"></a>
 Block Device Abstraction Layer</h1>
 <h2><a class="anchor" id="rpc_bdev_set_options"></a>
 bdev_set_options</h2>

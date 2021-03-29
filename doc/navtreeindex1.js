@@ -40,7 +40,7 @@ var NAVTREEINDEX1 =
 "bdev__module_8h.html#af1079eae68fac856b56863f26bc5310f":[14,0,5,18],
 "bdev__module_8h.html#afa76c6d38a121270bbe464117d1044ac":[14,0,5,24],
 "bdev__zone_8h.html":[14,0,6],
-"bdev__zone_8h.html#a0cea148aa2c84159056cee565772a4ca":[14,0,6,8],
+"bdev__zone_8h.html#a0cea148aa2c84159056cee565772a4ca":[14,0,6,9],
 "bdev__zone_8h.html#a4b1a401f0d6131597efd6cfad7ccfe8a":[14,0,6,3],
 "bdev__zone_8h.html#a5005214cc8ac8cb63611d774c2d01175":[14,0,6,1],
 "bdev__zone_8h.html#a5005214cc8ac8cb63611d774c2d01175a2d06e4e1a4ba37da4581893a35693b39":[14,0,6,1,1],
@@ -48,9 +48,10 @@ var NAVTREEINDEX1 =
 "bdev__zone_8h.html#a5005214cc8ac8cb63611d774c2d01175ac31966616622f1cafc3dc7d48f22ef7b":[14,0,6,1,0],
 "bdev__zone_8h.html#a5005214cc8ac8cb63611d774c2d01175aeb6d6abaebd617e584eb0a38db09d7a5":[14,0,6,1,4],
 "bdev__zone_8h.html#a5005214cc8ac8cb63611d774c2d01175af7d55e54c57d647a6deea2a067c6b818":[14,0,6,1,2],
+"bdev__zone_8h.html#a5d6312645e22f70249c76cf8a12f3be9":[14,0,6,5],
 "bdev__zone_8h.html#a7739e6335f06de1565e50d3afc247aa0":[14,0,6,4],
-"bdev__zone_8h.html#aa50981e9f75708e66f7174c96cf396f8":[14,0,6,5],
-"bdev__zone_8h.html#ad5e6fcc674d5ebe932e2b2dcaa28f9b5":[14,0,6,7],
+"bdev__zone_8h.html#aa50981e9f75708e66f7174c96cf396f8":[14,0,6,6],
+"bdev__zone_8h.html#ad5e6fcc674d5ebe932e2b2dcaa28f9b5":[14,0,6,8],
 "bdev__zone_8h.html#afe1568ea11e6fe221cc860af5a21c665":[14,0,6,2],
 "bdev__zone_8h.html#afe1568ea11e6fe221cc860af5a21c665a26a30bfe94508ee363b642c18e237ee4":[14,0,6,2,3],
 "bdev__zone_8h.html#afe1568ea11e6fe221cc860af5a21c665a453fe10a092c9dd0338a549f94d5ec3c":[14,0,6,2,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX1 =
 "changelog.html#changelog-v17-03":[1,3,16],
 "changelog.html#changelog-v17-07":[1,3,15],
 "changelog.html#changelog-v17-10":[1,3,14],
-"changelog.html#changelog-v18-01":[1,3,13],
-"changelog.html#changelog-v18-04":[1,3,12]
+"changelog.html#changelog-v18-01":[1,3,13]
 };

@@ -1,5 +1,10 @@
 var NAVTREEINDEX26 =
 {
+"unionspdk__nvme__feat__lba__range__type.html":[13,0,117],
+"unionspdk__nvme__feat__lba__range__type.html#a88cee34602cee269d094fa55253e1b78":[13,0,117,0],
+"unionspdk__nvme__feat__lba__range__type.html#a8b36726d65af55a7c237962ea9065911":[13,0,117,2],
+"unionspdk__nvme__feat__lba__range__type.html#a9fcf5c790767d292adf15b5f05ab40cf":[13,0,117,1],
+"unionspdk__nvme__feat__lba__range__type.html#afd6c62577e98b12c7c497e003228621c":[13,0,117,3],
 "unionspdk__nvme__feat__non__operational__power__state__config.html":[13,0,118],
 "unionspdk__nvme__feat__non__operational__power__state__config.html#a1b89eeb1f322ef357d18aaad35517170":[13,0,118,3],
 "unionspdk__nvme__feat__non__operational__power__state__config.html#a29ca4fdf53d5699ee3008af19e639042":[13,0,118,2],
@@ -244,10 +249,5 @@ var NAVTREEINDEX26 =
 "vmd.html#vmd_app":[7,4,6],
 "vmd.html#vmd_app_frame":[7,4,5],
 "vmd.html#vmd_config":[7,4,4],
-"vmd.html#vmd_interface":[7,4,2],
-"vmd.html#vmd_intro":[7,4,1],
-"vmd.html#vmd_key_functions":[7,4,3],
-"vmd.html#vmd_led":[7,4,7],
-"vmd.html#vmd_toc":[7,4,0],
-"vmd_8h.html":[14,0,61]
+"vmd.html#vmd_interface":[7,4,2]
 };

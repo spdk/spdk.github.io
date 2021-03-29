@@ -15,6 +15,7 @@ var structspdk__bdev =
     [ "max_num_segments", "structspdk__bdev.html#ad498826a1d9197050bd0ed110df96fb0", null ],
     [ "max_open_zones", "structspdk__bdev.html#a9766b9a39169827156c768f78b940977", null ],
     [ "max_segment_size", "structspdk__bdev.html#af33e3553f5bb1f626d137859c6933c64", null ],
+    [ "max_zone_append_size", "structspdk__bdev.html#a83ca16e5fee5d658b6ac90433372a076", null ],
     [ "md_interleave", "structspdk__bdev.html#a4e68d5fa768ba5d3c8af32e68e1a992c", null ],
     [ "md_len", "structspdk__bdev.html#ab53361e758d7ebe3edec7598f86fa576", null ],
     [ "media_events", "structspdk__bdev.html#acec83a7ec7f21c7a88d644dad2f0a8fe", null ],
