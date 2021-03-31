@@ -156,25 +156,25 @@ Functions</h2></td></tr>
 <tr class="memitem:a461ee14ecf5dc7b71230084291062260"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme__ocssd_8h.html#a461ee14ecf5dc7b71230084291062260">spdk_nvme_ctrlr_is_ocssd_supported</a> (struct spdk_nvme_ctrlr *ctrlr)</td></tr>
 <tr class="memdesc:a461ee14ecf5dc7b71230084291062260"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine if OpenChannel is supported by the given NVMe controller.  <a href="#a461ee14ecf5dc7b71230084291062260">More...</a><br /></td></tr>
 <tr class="separator:a461ee14ecf5dc7b71230084291062260"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac1b56c33cf573acccda1d68cbb5dcbbb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme__ocssd_8h.html#ac1b56c33cf573acccda1d68cbb5dcbbb">spdk_nvme_ocssd_ctrlr_cmd_geometry</a> (struct spdk_nvme_ctrlr *ctrlr, uint32_t nsid, void *payload, uint32_t payload_size, <a class="el" href="nvme_8h.html#ac9779e9957d7089dde8e492cc60856d8">spdk_nvme_cmd_cb</a> cb_fn, void *cb_arg)</td></tr>
+<tr class="memitem:ac1b56c33cf573acccda1d68cbb5dcbbb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme__ocssd_8h.html#ac1b56c33cf573acccda1d68cbb5dcbbb">spdk_nvme_ocssd_ctrlr_cmd_geometry</a> (struct spdk_nvme_ctrlr *ctrlr, uint32_t nsid, void *payload, uint32_t payload_size, <a class="el" href="nvme_8h.html#a1786f9616afc773b20f752dc98ecd465">spdk_nvme_cmd_cb</a> cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:ac1b56c33cf573acccda1d68cbb5dcbbb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Identify geometry of the given namespace.  <a href="#ac1b56c33cf573acccda1d68cbb5dcbbb">More...</a><br /></td></tr>
 <tr class="separator:ac1b56c33cf573acccda1d68cbb5dcbbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a76454ff0913def2ef8d7e6be81cc29ae"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme__ocssd_8h.html#a76454ff0913def2ef8d7e6be81cc29ae">spdk_nvme_ocssd_ns_cmd_vector_reset</a> (struct spdk_nvme_ns *ns, struct spdk_nvme_qpair *qpair, uint64_t *lba_list, uint32_t num_lbas, struct <a class="el" href="structspdk__ocssd__chunk__information__entry.html">spdk_ocssd_chunk_information_entry</a> *chunk_info, <a class="el" href="nvme_8h.html#ac9779e9957d7089dde8e492cc60856d8">spdk_nvme_cmd_cb</a> cb_fn, void *cb_arg)</td></tr>
+<tr class="memitem:a76454ff0913def2ef8d7e6be81cc29ae"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme__ocssd_8h.html#a76454ff0913def2ef8d7e6be81cc29ae">spdk_nvme_ocssd_ns_cmd_vector_reset</a> (struct spdk_nvme_ns *ns, struct spdk_nvme_qpair *qpair, uint64_t *lba_list, uint32_t num_lbas, struct <a class="el" href="structspdk__ocssd__chunk__information__entry.html">spdk_ocssd_chunk_information_entry</a> *chunk_info, <a class="el" href="nvme_8h.html#a1786f9616afc773b20f752dc98ecd465">spdk_nvme_cmd_cb</a> cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:a76454ff0913def2ef8d7e6be81cc29ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submits a vector reset command to the specified NVMe namespace.  <a href="#a76454ff0913def2ef8d7e6be81cc29ae">More...</a><br /></td></tr>
 <tr class="separator:a76454ff0913def2ef8d7e6be81cc29ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5da8caafd526dce7092840b88e472c54"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme__ocssd_8h.html#a5da8caafd526dce7092840b88e472c54">spdk_nvme_ocssd_ns_cmd_vector_write</a> (struct spdk_nvme_ns *ns, struct spdk_nvme_qpair *qpair, void *buffer, uint64_t *lba_list, uint32_t num_lbas, <a class="el" href="nvme_8h.html#ac9779e9957d7089dde8e492cc60856d8">spdk_nvme_cmd_cb</a> cb_fn, void *cb_arg, uint32_t io_flags)</td></tr>
+<tr class="memitem:a5da8caafd526dce7092840b88e472c54"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme__ocssd_8h.html#a5da8caafd526dce7092840b88e472c54">spdk_nvme_ocssd_ns_cmd_vector_write</a> (struct spdk_nvme_ns *ns, struct spdk_nvme_qpair *qpair, void *buffer, uint64_t *lba_list, uint32_t num_lbas, <a class="el" href="nvme_8h.html#a1786f9616afc773b20f752dc98ecd465">spdk_nvme_cmd_cb</a> cb_fn, void *cb_arg, uint32_t io_flags)</td></tr>
 <tr class="memdesc:a5da8caafd526dce7092840b88e472c54"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submits a vector write command to the specified NVMe namespace.  <a href="#a5da8caafd526dce7092840b88e472c54">More...</a><br /></td></tr>
 <tr class="separator:a5da8caafd526dce7092840b88e472c54"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7a847fc1de3eaa2aca06503268196b53"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme__ocssd_8h.html#a7a847fc1de3eaa2aca06503268196b53">spdk_nvme_ocssd_ns_cmd_vector_write_with_md</a> (struct spdk_nvme_ns *ns, struct spdk_nvme_qpair *qpair, void *buffer, void *metadata, uint64_t *lba_list, uint32_t num_lbas, <a class="el" href="nvme_8h.html#ac9779e9957d7089dde8e492cc60856d8">spdk_nvme_cmd_cb</a> cb_fn, void *cb_arg, uint32_t io_flags)</td></tr>
+<tr class="memitem:a7a847fc1de3eaa2aca06503268196b53"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme__ocssd_8h.html#a7a847fc1de3eaa2aca06503268196b53">spdk_nvme_ocssd_ns_cmd_vector_write_with_md</a> (struct spdk_nvme_ns *ns, struct spdk_nvme_qpair *qpair, void *buffer, void *metadata, uint64_t *lba_list, uint32_t num_lbas, <a class="el" href="nvme_8h.html#a1786f9616afc773b20f752dc98ecd465">spdk_nvme_cmd_cb</a> cb_fn, void *cb_arg, uint32_t io_flags)</td></tr>
 <tr class="memdesc:a7a847fc1de3eaa2aca06503268196b53"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submits a vector write command to the specified NVMe namespace.  <a href="#a7a847fc1de3eaa2aca06503268196b53">More...</a><br /></td></tr>
 <tr class="separator:a7a847fc1de3eaa2aca06503268196b53"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4d52b5c15242a9b9e1d117d382814a71"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme__ocssd_8h.html#a4d52b5c15242a9b9e1d117d382814a71">spdk_nvme_ocssd_ns_cmd_vector_read</a> (struct spdk_nvme_ns *ns, struct spdk_nvme_qpair *qpair, void *buffer, uint64_t *lba_list, uint32_t num_lbas, <a class="el" href="nvme_8h.html#ac9779e9957d7089dde8e492cc60856d8">spdk_nvme_cmd_cb</a> cb_fn, void *cb_arg, uint32_t io_flags)</td></tr>
+<tr class="memitem:a4d52b5c15242a9b9e1d117d382814a71"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme__ocssd_8h.html#a4d52b5c15242a9b9e1d117d382814a71">spdk_nvme_ocssd_ns_cmd_vector_read</a> (struct spdk_nvme_ns *ns, struct spdk_nvme_qpair *qpair, void *buffer, uint64_t *lba_list, uint32_t num_lbas, <a class="el" href="nvme_8h.html#a1786f9616afc773b20f752dc98ecd465">spdk_nvme_cmd_cb</a> cb_fn, void *cb_arg, uint32_t io_flags)</td></tr>
 <tr class="memdesc:a4d52b5c15242a9b9e1d117d382814a71"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submits a vector read command to the specified NVMe namespace.  <a href="#a4d52b5c15242a9b9e1d117d382814a71">More...</a><br /></td></tr>
 <tr class="separator:a4d52b5c15242a9b9e1d117d382814a71"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae26d22cefdddebb298f5b78324617904"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme__ocssd_8h.html#ae26d22cefdddebb298f5b78324617904">spdk_nvme_ocssd_ns_cmd_vector_read_with_md</a> (struct spdk_nvme_ns *ns, struct spdk_nvme_qpair *qpair, void *buffer, void *metadata, uint64_t *lba_list, uint32_t num_lbas, <a class="el" href="nvme_8h.html#ac9779e9957d7089dde8e492cc60856d8">spdk_nvme_cmd_cb</a> cb_fn, void *cb_arg, uint32_t io_flags)</td></tr>
+<tr class="memitem:ae26d22cefdddebb298f5b78324617904"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme__ocssd_8h.html#ae26d22cefdddebb298f5b78324617904">spdk_nvme_ocssd_ns_cmd_vector_read_with_md</a> (struct spdk_nvme_ns *ns, struct spdk_nvme_qpair *qpair, void *buffer, void *metadata, uint64_t *lba_list, uint32_t num_lbas, <a class="el" href="nvme_8h.html#a1786f9616afc773b20f752dc98ecd465">spdk_nvme_cmd_cb</a> cb_fn, void *cb_arg, uint32_t io_flags)</td></tr>
 <tr class="memdesc:ae26d22cefdddebb298f5b78324617904"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submits a vector read command to the specified NVMe namespace.  <a href="#ae26d22cefdddebb298f5b78324617904">More...</a><br /></td></tr>
 <tr class="separator:ae26d22cefdddebb298f5b78324617904"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1a0924f567ba9a009654b9df5cc4253f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme__ocssd_8h.html#a1a0924f567ba9a009654b9df5cc4253f">spdk_nvme_ocssd_ns_cmd_vector_copy</a> (struct spdk_nvme_ns *ns, struct spdk_nvme_qpair *qpair, uint64_t *dst_lba_list, uint64_t *src_lba_list, uint32_t num_lbas, <a class="el" href="nvme_8h.html#ac9779e9957d7089dde8e492cc60856d8">spdk_nvme_cmd_cb</a> cb_fn, void *cb_arg, uint32_t io_flags)</td></tr>
+<tr class="memitem:a1a0924f567ba9a009654b9df5cc4253f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme__ocssd_8h.html#a1a0924f567ba9a009654b9df5cc4253f">spdk_nvme_ocssd_ns_cmd_vector_copy</a> (struct spdk_nvme_ns *ns, struct spdk_nvme_qpair *qpair, uint64_t *dst_lba_list, uint64_t *src_lba_list, uint32_t num_lbas, <a class="el" href="nvme_8h.html#a1786f9616afc773b20f752dc98ecd465">spdk_nvme_cmd_cb</a> cb_fn, void *cb_arg, uint32_t io_flags)</td></tr>
 <tr class="memdesc:a1a0924f567ba9a009654b9df5cc4253f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submits a vector copy command to the specified NVMe namespace.  <a href="#a1a0924f567ba9a009654b9df5cc4253f">More...</a><br /></td></tr>
 <tr class="separator:a1a0924f567ba9a009654b9df5cc4253f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -241,7 +241,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="nvme_8h.html#ac9779e9957d7089dde8e492cc60856d8">spdk_nvme_cmd_cb</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="nvme_8h.html#a1786f9616afc773b20f752dc98ecd465">spdk_nvme_cmd_cb</a>&#160;</td>
           <td class="paramname"><em>cb_fn</em>, </td>
         </tr>
         <tr>
@@ -313,7 +313,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="nvme_8h.html#ac9779e9957d7089dde8e492cc60856d8">spdk_nvme_cmd_cb</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="nvme_8h.html#a1786f9616afc773b20f752dc98ecd465">spdk_nvme_cmd_cb</a>&#160;</td>
           <td class="paramname"><em>cb_fn</em>, </td>
         </tr>
         <tr>
@@ -393,7 +393,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="nvme_8h.html#ac9779e9957d7089dde8e492cc60856d8">spdk_nvme_cmd_cb</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="nvme_8h.html#a1786f9616afc773b20f752dc98ecd465">spdk_nvme_cmd_cb</a>&#160;</td>
           <td class="paramname"><em>cb_fn</em>, </td>
         </tr>
         <tr>
@@ -479,7 +479,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="nvme_8h.html#ac9779e9957d7089dde8e492cc60856d8">spdk_nvme_cmd_cb</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="nvme_8h.html#a1786f9616afc773b20f752dc98ecd465">spdk_nvme_cmd_cb</a>&#160;</td>
           <td class="paramname"><em>cb_fn</em>, </td>
         </tr>
         <tr>
@@ -560,7 +560,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="nvme_8h.html#ac9779e9957d7089dde8e492cc60856d8">spdk_nvme_cmd_cb</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="nvme_8h.html#a1786f9616afc773b20f752dc98ecd465">spdk_nvme_cmd_cb</a>&#160;</td>
           <td class="paramname"><em>cb_fn</em>, </td>
         </tr>
         <tr>
@@ -633,7 +633,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="nvme_8h.html#ac9779e9957d7089dde8e492cc60856d8">spdk_nvme_cmd_cb</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="nvme_8h.html#a1786f9616afc773b20f752dc98ecd465">spdk_nvme_cmd_cb</a>&#160;</td>
           <td class="paramname"><em>cb_fn</em>, </td>
         </tr>
         <tr>
@@ -719,7 +719,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="nvme_8h.html#ac9779e9957d7089dde8e492cc60856d8">spdk_nvme_cmd_cb</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="nvme_8h.html#a1786f9616afc773b20f752dc98ecd465">spdk_nvme_cmd_cb</a>&#160;</td>
           <td class="paramname"><em>cb_fn</em>, </td>
         </tr>
         <tr>

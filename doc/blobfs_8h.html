@@ -202,19 +202,19 @@ typedef <a class="el" href="blob_8h.html#a9c265d4eead39c3419cee4b620bf5052">spdk
 <tr class="memitem:ae18b6af02a2717f4a9094e0eb47caa3c"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blobfs_8h.html#ae18b6af02a2717f4a9094e0eb47caa3c">fs_request_fn</a>) (void *arg)</td></tr>
 <tr class="memdesc:ae18b6af02a2717f4a9094e0eb47caa3c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function for a request of file system.  <a href="#ae18b6af02a2717f4a9094e0eb47caa3c">More...</a><br /></td></tr>
 <tr class="separator:ae18b6af02a2717f4a9094e0eb47caa3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adada3549eccda011ec15d08199c1328e"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blobfs_8h.html#adada3549eccda011ec15d08199c1328e">fs_send_request_fn</a>) (<a class="el" href="blobfs_8h.html#ae18b6af02a2717f4a9094e0eb47caa3c">fs_request_fn</a>, void *arg)</td></tr>
-<tr class="memdesc:adada3549eccda011ec15d08199c1328e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function for sending request.  <a href="#adada3549eccda011ec15d08199c1328e">More...</a><br /></td></tr>
-<tr class="separator:adada3549eccda011ec15d08199c1328e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9bb805dc6d3c5597905a3c029000aebe"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blobfs_8h.html#a9bb805dc6d3c5597905a3c029000aebe">fs_send_request_fn</a>) (<a class="el" href="blobfs_8h.html#ae18b6af02a2717f4a9094e0eb47caa3c">fs_request_fn</a> fn, void *arg)</td></tr>
+<tr class="memdesc:a9bb805dc6d3c5597905a3c029000aebe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function for sending request.  <a href="#a9bb805dc6d3c5597905a3c029000aebe">More...</a><br /></td></tr>
+<tr class="separator:a9bb805dc6d3c5597905a3c029000aebe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a8c6258a494c0ebf2460a6ffece101cfd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blobfs_8h.html#a8c6258a494c0ebf2460a6ffece101cfd">spdk_fs_opts_init</a> (struct <a class="el" href="structspdk__blobfs__opts.html">spdk_blobfs_opts</a> *opts)</td></tr>
 <tr class="memdesc:a8c6258a494c0ebf2460a6ffece101cfd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize a <a class="el" href="structspdk__blobfs__opts.html">spdk_blobfs_opts</a> structure to the default option values.  <a href="#a8c6258a494c0ebf2460a6ffece101cfd">More...</a><br /></td></tr>
 <tr class="separator:a8c6258a494c0ebf2460a6ffece101cfd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8e52f44e27ad58841f0a47d5efcb046a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blobfs_8h.html#a8e52f44e27ad58841f0a47d5efcb046a">spdk_fs_init</a> (struct <a class="el" href="structspdk__bs__dev.html">spdk_bs_dev</a> *dev, struct <a class="el" href="structspdk__blobfs__opts.html">spdk_blobfs_opts</a> *opt, <a class="el" href="blobfs_8h.html#adada3549eccda011ec15d08199c1328e">fs_send_request_fn</a> send_request_fn, <a class="el" href="blobfs_8h.html#aa52e9015dc9a3fd3d2167e7f0ae6bb55">spdk_fs_op_with_handle_complete</a> cb_fn, void *cb_arg)</td></tr>
+<tr class="memitem:a8e52f44e27ad58841f0a47d5efcb046a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blobfs_8h.html#a8e52f44e27ad58841f0a47d5efcb046a">spdk_fs_init</a> (struct <a class="el" href="structspdk__bs__dev.html">spdk_bs_dev</a> *dev, struct <a class="el" href="structspdk__blobfs__opts.html">spdk_blobfs_opts</a> *opt, <a class="el" href="blobfs_8h.html#a9bb805dc6d3c5597905a3c029000aebe">fs_send_request_fn</a> send_request_fn, <a class="el" href="blobfs_8h.html#aa52e9015dc9a3fd3d2167e7f0ae6bb55">spdk_fs_op_with_handle_complete</a> cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:a8e52f44e27ad58841f0a47d5efcb046a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize blobstore filesystem.  <a href="#a8e52f44e27ad58841f0a47d5efcb046a">More...</a><br /></td></tr>
 <tr class="separator:a8e52f44e27ad58841f0a47d5efcb046a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4f3c493505ea2dae2eb740a4834728ce"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blobfs_8h.html#a4f3c493505ea2dae2eb740a4834728ce">spdk_fs_load</a> (struct <a class="el" href="structspdk__bs__dev.html">spdk_bs_dev</a> *dev, <a class="el" href="blobfs_8h.html#adada3549eccda011ec15d08199c1328e">fs_send_request_fn</a> send_request_fn, <a class="el" href="blobfs_8h.html#aa52e9015dc9a3fd3d2167e7f0ae6bb55">spdk_fs_op_with_handle_complete</a> cb_fn, void *cb_arg)</td></tr>
+<tr class="memitem:a4f3c493505ea2dae2eb740a4834728ce"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blobfs_8h.html#a4f3c493505ea2dae2eb740a4834728ce">spdk_fs_load</a> (struct <a class="el" href="structspdk__bs__dev.html">spdk_bs_dev</a> *dev, <a class="el" href="blobfs_8h.html#a9bb805dc6d3c5597905a3c029000aebe">fs_send_request_fn</a> send_request_fn, <a class="el" href="blobfs_8h.html#aa52e9015dc9a3fd3d2167e7f0ae6bb55">spdk_fs_op_with_handle_complete</a> cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:a4f3c493505ea2dae2eb740a4834728ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load blobstore filesystem from the given blobstore block device.  <a href="#a4f3c493505ea2dae2eb740a4834728ce">More...</a><br /></td></tr>
 <tr class="separator:a4f3c493505ea2dae2eb740a4834728ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa71d29a4bce7f7b73114e466a013faea"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blobfs_8h.html#aa71d29a4bce7f7b73114e466a013faea">spdk_fs_unload</a> (struct spdk_filesystem *fs, spdk_fs_op_complete cb_fn, void *cb_arg)</td></tr>
@@ -348,14 +348,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="adada3549eccda011ec15d08199c1328e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adada3549eccda011ec15d08199c1328e">&#9670;&nbsp;</a></span>fs_send_request_fn</h2>
+<a id="a9bb805dc6d3c5597905a3c029000aebe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9bb805dc6d3c5597905a3c029000aebe">&#9670;&nbsp;</a></span>fs_send_request_fn</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef void(* fs_send_request_fn) (<a class="el" href="blobfs_8h.html#ae18b6af02a2717f4a9094e0eb47caa3c">fs_request_fn</a>, void *arg)</td>
+          <td class="memname">typedef void(* fs_send_request_fn) (<a class="el" href="blobfs_8h.html#ae18b6af02a2717f4a9094e0eb47caa3c">fs_request_fn</a> fn, void *arg)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -364,7 +364,7 @@ Functions</h2></td></tr>
 <p>This function will be invoked any time when the filesystem wants to pass a message to the main dispatch thread.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">fs_request_fn</td><td>A pointer to the request function. </td></tr>
+    <tr><td class="paramname">fn</td><td>A pointer to the request function. </td></tr>
     <tr><td class="paramname">arg</td><td>Argument to the request function. </td></tr>
   </table>
   </dd>
@@ -1746,7 +1746,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="blobfs_8h.html#adada3549eccda011ec15d08199c1328e">fs_send_request_fn</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="blobfs_8h.html#a9bb805dc6d3c5597905a3c029000aebe">fs_send_request_fn</a>&#160;</td>
           <td class="paramname"><em>send_request_fn</em>, </td>
         </tr>
         <tr>
@@ -1853,7 +1853,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="blobfs_8h.html#adada3549eccda011ec15d08199c1328e">fs_send_request_fn</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="blobfs_8h.html#a9bb805dc6d3c5597905a3c029000aebe">fs_send_request_fn</a>&#160;</td>
           <td class="paramname"><em>send_request_fn</em>, </td>
         </tr>
         <tr>
