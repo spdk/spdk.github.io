@@ -63,8 +63,8 @@ var user_guides =
           [ "RDMA Limitations", "nvmf.html#nvmf_rdma_limitations", null ]
         ] ],
         [ "TCP transport support", "nvmf.html#nvmf_tcp_transport", null ],
-        [ "Configuring the SPDK NVMe over Fabrics Target", "nvmf.html#nvmf_config", null ],
-        [ "FC transport support", "nvmf.html#nvmf_fc_transport", [
+        [ "FC transport support", "nvmf.html#nvmf_fc_transport", null ],
+        [ "Configuring the SPDK NVMe over Fabrics Target", "nvmf.html#nvmf_config", [
           [ "Using RPCs", "nvmf.html#nvmf_config_rpc", null ],
           [ "Assigning CPU Cores to the NVMe over Fabrics Target", "nvmf.html#nvmf_config_lcore", null ]
         ] ],
@@ -347,6 +347,7 @@ var user_guides =
         [ "sock_impl_set_options", "jsonrpc.html#rpc_sock_impl_set_options", null ],
         [ "sock_set_default_impl", "jsonrpc.html#rpc_sock_set_default_impl", null ],
         [ "bdev_nvme_send_cmd", "jsonrpc.html#rpc_bdev_nvme_send_cmd", null ],
+        [ "enable_vmd", "jsonrpc.html#rpc_enable_vmd", null ],
         [ "spdk_get_version", "jsonrpc.html#rpc_spdk_get_version", null ]
       ] ]
     ] ],

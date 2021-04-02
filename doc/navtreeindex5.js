@@ -96,6 +96,7 @@ var NAVTREEINDEX5 =
 "jsonrpc.html#rpc_blobfs_detect":[3,9,9,0],
 "jsonrpc.html#rpc_blobfs_mount":[3,9,9,2],
 "jsonrpc.html#rpc_blobfs_set_cache_size":[3,9,9,3],
+"jsonrpc.html#rpc_enable_vmd":[3,9,10,4],
 "jsonrpc.html#rpc_env_dpdk_get_mem_stats":[3,9,1,21],
 "jsonrpc.html#rpc_framework_get_config":[3,9,1,6],
 "jsonrpc.html#rpc_framework_get_reactors":[3,9,1,7],
@@ -174,7 +175,7 @@ var NAVTREEINDEX5 =
 "jsonrpc.html#rpc_sock_impl_get_options":[3,9,10,0],
 "jsonrpc.html#rpc_sock_impl_set_options":[3,9,10,1],
 "jsonrpc.html#rpc_sock_set_default_impl":[3,9,10,2],
-"jsonrpc.html#rpc_spdk_get_version":[3,9,10,4],
+"jsonrpc.html#rpc_spdk_get_version":[3,9,10,5],
 "jsonrpc.html#rpc_spdk_kill_instance":[3,9,1,0],
 "jsonrpc.html#rpc_thread_get_io_channels":[3,9,1,20],
 "jsonrpc.html#rpc_thread_get_pollers":[3,9,1,19],
@@ -248,6 +249,5 @@ var NAVTREEINDEX5 =
 "log_8h.html#a07465f114306f6d593ad4d3626b44b05":[14,0,33,22],
 "log_8h.html#a188d351bd05093cba1d8594ee9988efd":[14,0,33,11],
 "log_8h.html#a188d351bd05093cba1d8594ee9988efda0fd5c752b805673c5a6f3c7c0d0f785f":[14,0,33,11,3],
-"log_8h.html#a188d351bd05093cba1d8594ee9988efda1832db9861f6452883f70bf647378a36":[14,0,33,11,1],
-"log_8h.html#a188d351bd05093cba1d8594ee9988efda243175ec006c7a518e352d80c5c9bf84":[14,0,33,11,5]
+"log_8h.html#a188d351bd05093cba1d8594ee9988efda1832db9861f6452883f70bf647378a36":[14,0,33,11,1]
 };

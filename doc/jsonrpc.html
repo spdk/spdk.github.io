@@ -3333,7 +3333,16 @@ bdev_nvme_send_cmd</h2>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;method&quot;: &quot;bdev_nvme_send_cmd&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;params&quot;: {</div><div class="line">    &quot;name&quot;: &quot;Nvme0&quot;,</div><div class="line">    &quot;cmd_type&quot;: &quot;admin&quot;</div><div class="line">    &quot;data_direction&quot;: &quot;c2h&quot;,</div><div class="line">    &quot;cmdbuf&quot;: &quot;BgAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAsGUs9P5_AAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==&quot;,</div><div class="line">    &quot;data_len&quot;: 60,</div><div class="line">  }</div><div class="line">}</div></div><!-- fragment --><p>Example response:</p>
-<div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;:  {</div><div class="line">    &quot;cpl&quot;: &quot;AAAAAAAAAAARAAAAWrmwABAA==&quot;,</div><div class="line">    &quot;data&quot;: &quot;sIjg6AAAAACwiODoAAAAALCI4OgAAAAAAAYAAREAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&quot;</div><div class="line">  }</div><div class="line"></div><div class="line">}</div></div><!-- fragment --><h2><a class="anchor" id="rpc_spdk_get_version"></a>
+<div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;:  {</div><div class="line">    &quot;cpl&quot;: &quot;AAAAAAAAAAARAAAAWrmwABAA==&quot;,</div><div class="line">    &quot;data&quot;: &quot;sIjg6AAAAACwiODoAAAAALCI4OgAAAAAAAYAAREAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&quot;</div><div class="line">  }</div><div class="line"></div><div class="line">}</div></div><!-- fragment --><h2><a class="anchor" id="rpc_enable_vmd"></a>
+enable_vmd</h2>
+<p>Enable VMD enumeration.</p>
+<h3>Parameters</h3>
+<p>This method has no parameters.</p>
+<h3>Response</h3>
+<p>Completion status of enumeration is returned as a boolean. </p><h3>Example</h3>
+<p>Example request:</p>
+<div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;method&quot;: &quot;enable_vmd&quot;,</div><div class="line">  &quot;id&quot;: 1</div><div class="line">}</div></div><!-- fragment --><p>Example response:</p>
+<div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: true</div><div class="line">}</div></div><!-- fragment --><h2><a class="anchor" id="rpc_spdk_get_version"></a>
 spdk_get_version</h2>
 <p>Get the version info of the running SPDK application.</p>
 <h3>Parameters</h3>
