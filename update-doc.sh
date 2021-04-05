@@ -35,8 +35,11 @@ doc_version=$(cd $repo; git rev-parse HEAD)
 cp _doc_header.html $repo/doc/header.html
 cp _doc_footer.html $repo/doc/footer.html
 cp css/spdk.css $repo/doc/spdk.css
+cp Doxyfile $repo/doc/Doxyfile
 
 (cd $repo/doc; make clean; make)
+cp js/navtree.js $repo/doc/output/html
+cp css/navtree.css $repo/doc/output/html
 
 rm -rf doc
 cp -R $repo/doc/output/html doc
