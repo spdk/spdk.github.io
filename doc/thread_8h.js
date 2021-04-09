@@ -43,6 +43,7 @@ var thread_8h =
     [ "spdk_interrupt_unregister", "thread_8h.html#a45f3647a26ba93931beeb1782d39e56e", null ],
     [ "spdk_io_channel_from_ctx", "thread_8h.html#a9608b7b0fd448edec6ea5dd38ad04a57", null ],
     [ "spdk_io_channel_get_ctx", "thread_8h.html#adbf6e22252bc768003c7bbc165fc3c51", null ],
+    [ "spdk_io_channel_get_io_device", "thread_8h.html#a49adcba47a8dc22c6d6046bc05c47674", null ],
     [ "spdk_io_channel_get_thread", "thread_8h.html#a8ff9537d26ac923a7a93cd55ba315b5b", null ],
     [ "spdk_io_channel_iter_get_channel", "thread_8h.html#a83adef6c3df9568bdea346b8e7dcbaa5", null ],
     [ "spdk_io_channel_iter_get_ctx", "thread_8h.html#add3ebaac7b55dddb239c720c80d97dea", null ],

@@ -192,6 +192,8 @@ v21.04: (Upcoming Release)</h1>
 <p>Removed the <code>spdk_opal_supported</code> API.</p>
 <h2>sock</h2>
 <p>The type of enable_placement_id in struct <a class="el" href="structspdk__sock__impl__opts.html" title="SPDK socket implementation options.">spdk_sock_impl_opts</a> is changed from bool to int. We can use RPC to configure different value of enable_placement_id. Then we can leverage SO_INCOMING_CPU to get placement_id, which aims to utilize CPU cache locality, enabled by setting enable_placement_id=2.</p>
+<h2>thread</h2>
+<p>A new API <code>spdk_io_channel_get_io_device</code> was added to get the io_device for the specified I/O channel.</p>
 <h1><a class="anchor" id="changelog-v21-01"></a>
 v21.01:</h1>
 <h2>idxd</h2>

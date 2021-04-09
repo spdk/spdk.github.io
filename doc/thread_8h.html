@@ -369,6 +369,9 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 <tr class="memitem:add3ebaac7b55dddb239c720c80d97dea"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="thread_8h.html#add3ebaac7b55dddb239c720c80d97dea">spdk_io_channel_iter_get_ctx</a> (struct spdk_io_channel_iter *i)</td></tr>
 <tr class="memdesc:add3ebaac7b55dddb239c720c80d97dea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get context buffer from the I/O channel iterator.  <a href="#add3ebaac7b55dddb239c720c80d97dea">More...</a><br /></td></tr>
 <tr class="separator:add3ebaac7b55dddb239c720c80d97dea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49adcba47a8dc22c6d6046bc05c47674"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="thread_8h.html#a49adcba47a8dc22c6d6046bc05c47674">spdk_io_channel_get_io_device</a> (struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *ch)</td></tr>
+<tr class="memdesc:a49adcba47a8dc22c6d6046bc05c47674"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the io_device for the specified I/O channel.  <a href="#a49adcba47a8dc22c6d6046bc05c47674">More...</a><br /></td></tr>
+<tr class="separator:a49adcba47a8dc22c6d6046bc05c47674"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4e87fc8c0fc870769c068a2752cdc359"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="thread_8h.html#a4e87fc8c0fc870769c068a2752cdc359">spdk_for_each_channel_continue</a> (struct spdk_io_channel_iter *i, int status)</td></tr>
 <tr class="memdesc:a4e87fc8c0fc870769c068a2752cdc359"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper function to iterate all channels for <a class="el" href="thread_8h.html#aa7a2ca9bd0497544e852c65fd5263cd1" title="Call &#39;fn&#39; on each channel associated with io_device.">spdk_for_each_channel()</a>.  <a href="#a4e87fc8c0fc870769c068a2752cdc359">More...</a><br /></td></tr>
 <tr class="separator:a4e87fc8c0fc870769c068a2752cdc359"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1076,6 +1079,33 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>a pointer to the context buffer. </dd></dl>
+
+</div>
+</div>
+<a id="a49adcba47a8dc22c6d6046bc05c47674"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a49adcba47a8dc22c6d6046bc05c47674">&#9670;&nbsp;</a></span>spdk_io_channel_get_io_device()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* spdk_io_channel_get_io_device </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *&#160;</td>
+          <td class="paramname"><em>ch</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the io_device for the specified I/O channel. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ch</td><td>I/O channel.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>a pointer to the io_device for the I/O channel </dd></dl>
 
 </div>
 </div>

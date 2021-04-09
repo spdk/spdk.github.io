@@ -527,6 +527,7 @@ var searchData=
   ['spdk_5fio_5fchannel_5fdestroy_5fcb',['spdk_io_channel_destroy_cb',['../thread_8h.html#a75aa6a61877f23f79bb75c8fc5e68202',1,'thread.h']]],
   ['spdk_5fio_5fchannel_5ffrom_5fctx',['spdk_io_channel_from_ctx',['../thread_8h.html#a9608b7b0fd448edec6ea5dd38ad04a57',1,'thread.h']]],
   ['spdk_5fio_5fchannel_5fget_5fctx',['spdk_io_channel_get_ctx',['../thread_8h.html#adbf6e22252bc768003c7bbc165fc3c51',1,'thread.h']]],
+  ['spdk_5fio_5fchannel_5fget_5fio_5fdevice',['spdk_io_channel_get_io_device',['../thread_8h.html#a49adcba47a8dc22c6d6046bc05c47674',1,'thread.h']]],
   ['spdk_5fio_5fchannel_5fget_5fthread',['spdk_io_channel_get_thread',['../thread_8h.html#a8ff9537d26ac923a7a93cd55ba315b5b',1,'thread.h']]],
   ['spdk_5fio_5fchannel_5fiter_5fget_5fchannel',['spdk_io_channel_iter_get_channel',['../thread_8h.html#a83adef6c3df9568bdea346b8e7dcbaa5',1,'thread.h']]],
   ['spdk_5fio_5fchannel_5fiter_5fget_5fctx',['spdk_io_channel_iter_get_ctx',['../thread_8h.html#add3ebaac7b55dddb239c720c80d97dea',1,'thread.h']]],

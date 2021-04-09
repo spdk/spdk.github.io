@@ -1,5 +1,6 @@
 var NAVTREEINDEX26 =
 {
+"unionspdk__nvme__feat__keep__alive__timer.html#a27811e4057acab507eac9482218ab559":[13,0,116,0],
 "unionspdk__nvme__feat__keep__alive__timer.html#ac10f9a57ae75a0b0436117dcc6dbb913":[13,0,116,2],
 "unionspdk__nvme__feat__lba__range__type.html":[13,0,117],
 "unionspdk__nvme__feat__lba__range__type.html#a88cee34602cee269d094fa55253e1b78":[13,0,117,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX26 =
 "virtio.html#virtio_intro":[7,3,0],
 "vmd.html":[7,4],
 "vmd.html#vmd_app":[7,4,6],
-"vmd.html#vmd_app_frame":[7,4,5],
-"vmd.html#vmd_config":[7,4,4]
+"vmd.html#vmd_app_frame":[7,4,5]
 };
