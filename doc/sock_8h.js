@@ -6,6 +6,11 @@ var sock_8h =
     [ "spdk_sock_opts", "structspdk__sock__opts.html", "structspdk__sock__opts" ],
     [ "SPDK_SOCK_REQUEST_IOV", "sock_8h.html#af21c988574749f3ea04f1e78e9533aab", null ],
     [ "spdk_sock_cb", "sock_8h.html#ae297ae75e566b35635d20b959daa7741", null ],
+    [ "spdk_placement_mode", "sock_8h.html#a4d72186991093c81a612bb14b740f360", [
+      [ "PLACEMENT_NONE", "sock_8h.html#a4d72186991093c81a612bb14b740f360a1c7c35198c0faac5370b0497253dfbd6", null ],
+      [ "PLACEMENT_NAPI", "sock_8h.html#a4d72186991093c81a612bb14b740f360a740a0a7ef64324157d827260887e4647", null ],
+      [ "PLACEMENT_CPU", "sock_8h.html#a4d72186991093c81a612bb14b740f360ab11c713f248c0dbff5f02805b3b8288b", null ]
+    ] ],
     [ "spdk_sock_accept", "sock_8h.html#a5ea2c431e11b3e15e0fba18fb4faa954", null ],
     [ "spdk_sock_close", "sock_8h.html#a407c7aebae3d1a1556109da46a73213e", null ],
     [ "spdk_sock_connect", "sock_8h.html#afcbfb1e52df2160547b6f5e2bb8ec636", null ],
