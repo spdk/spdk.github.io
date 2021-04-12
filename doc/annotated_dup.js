@@ -272,6 +272,7 @@ var annotated_dup =
     [ "spdk_opal_packet", "structspdk__opal__packet.html", "structspdk__opal__packet" ],
     [ "spdk_pci_addr", "structspdk__pci__addr.html", "structspdk__pci__addr" ],
     [ "spdk_pci_device", "structspdk__pci__device.html", "structspdk__pci__device" ],
+    [ "spdk_pci_event", "structspdk__pci__event.html", "structspdk__pci__event" ],
     [ "spdk_pci_id", "structspdk__pci__id.html", "structspdk__pci__id" ],
     [ "spdk_reduce_backing_dev", "structspdk__reduce__backing__dev.html", "structspdk__reduce__backing__dev" ],
     [ "spdk_reduce_vol_cb_args", "structspdk__reduce__vol__cb__args.html", "structspdk__reduce__vol__cb__args" ],

@@ -171,6 +171,8 @@ Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__mem__map__ops.html">spdk_mem_map_ops</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A function table to be implemented by each memory map.  <a href="structspdk__mem__map__ops.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__pci__event.html">spdk_pci_event</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
@@ -235,6 +237,9 @@ typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_mem_map
 <tr class="memitem:a97d177f59e4dab8f7806c6fded1559da"><td class="memItemLeft" align="right" valign="top"><a id="a97d177f59e4dab8f7806c6fded1559da"></a>
 typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_mem_map_contiguous_translations</b>) (uint64_t addr_1, uint64_t addr_2)</td></tr>
 <tr class="separator:a97d177f59e4dab8f7806c6fded1559da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16a609191d398f6de37ca9c0a94ac76a"><td class="memItemLeft" align="right" valign="top"><a id="a16a609191d398f6de37ca9c0a94ac76a"></a>
+typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_pci_error_handler</b>) (siginfo_t *info, void *ctx)</td></tr>
+<tr class="separator:a16a609191d398f6de37ca9c0a94ac76a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
@@ -247,6 +252,10 @@ Enumerations</h2></td></tr>
 <b>SPDK_MEM_MAP_NOTIFY_UNREGISTER</b>
  }</td></tr>
 <tr class="separator:a96af19906abf2a01e9f1f2105f90722c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a5665e04f8196d456eafccbdb1302c9"><td class="memItemLeft" align="right" valign="top"><a id="a0a5665e04f8196d456eafccbdb1302c9"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>spdk_pci_event_type</b> { <b>SPDK_UEVENT_ADD</b> = 0, 
+<b>SPDK_UEVENT_REMOVE</b> = 1
+ }</td></tr>
+<tr class="separator:a0a5665e04f8196d456eafccbdb1302c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -566,6 +575,18 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_
 <tr class="memitem:ab44e2bc97e1b87f737d664c047f6c3f2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_8h.html#ab44e2bc97e1b87f737d664c047f6c3f2">spdk_mem_get_fd_and_offset</a> (void *vaddr, uint64_t *offset)</td></tr>
 <tr class="memdesc:ab44e2bc97e1b87f737d664c047f6c3f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the address's file descriptor and offset, it works with spdk memory allocation APIs.  <a href="#ab44e2bc97e1b87f737d664c047f6c3f2">More...</a><br /></td></tr>
 <tr class="separator:ab44e2bc97e1b87f737d664c047f6c3f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0a1b068221b7d1f1a1e2981ec3ba4d4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_8h.html#ac0a1b068221b7d1f1a1e2981ec3ba4d4">spdk_pci_event_listen</a> (void)</td></tr>
+<tr class="memdesc:ac0a1b068221b7d1f1a1e2981ec3ba4d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Begin listening for PCI bus events.  <a href="#ac0a1b068221b7d1f1a1e2981ec3ba4d4">More...</a><br /></td></tr>
+<tr class="separator:ac0a1b068221b7d1f1a1e2981ec3ba4d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35497ea1837fa72486971df83005c0a4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_8h.html#a35497ea1837fa72486971df83005c0a4">spdk_pci_get_event</a> (int fd, struct <a class="el" href="structspdk__pci__event.html">spdk_pci_event</a> *event)</td></tr>
+<tr class="memdesc:a35497ea1837fa72486971df83005c0a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the next PCI bus event.  <a href="#a35497ea1837fa72486971df83005c0a4">More...</a><br /></td></tr>
+<tr class="separator:a35497ea1837fa72486971df83005c0a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca05711bef2f8f8fa648e5715667f623"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_8h.html#aca05711bef2f8f8fa648e5715667f623">spdk_pci_register_error_handler</a> (spdk_pci_error_handler sighandler, void *ctx)</td></tr>
+<tr class="memdesc:aca05711bef2f8f8fa648e5715667f623"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register a signal handler to handle bus errors on the PCI bus.  <a href="#aca05711bef2f8f8fa648e5715667f623">More...</a><br /></td></tr>
+<tr class="separator:aca05711bef2f8f8fa648e5715667f623"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad72f63b1d6c62bfa7cc9fc2683af65d8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_8h.html#ad72f63b1d6c62bfa7cc9fc2683af65d8">spdk_pci_unregister_error_handler</a> (spdk_pci_error_handler sighandler)</td></tr>
+<tr class="memdesc:ad72f63b1d6c62bfa7cc9fc2683af65d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register a signal handler to handle bus errors on the PCI bus.  <a href="#ad72f63b1d6c62bfa7cc9fc2683af65d8">More...</a><br /></td></tr>
+<tr class="separator:ad72f63b1d6c62bfa7cc9fc2683af65d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Encapsulated third-party dependencies. </p>
@@ -3645,6 +3666,28 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_
 
 </div>
 </div>
+<a id="ac0a1b068221b7d1f1a1e2981ec3ba4d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac0a1b068221b7d1f1a1e2981ec3ba4d4">&#9670;&nbsp;</a></span>spdk_pci_event_listen()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_pci_event_listen </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Begin listening for PCI bus events. </p>
+<p>This is used to detect hot-insert and hot-remove events. Once the system is listening, events may be retrieved by calling <a class="el" href="env_8h.html#a35497ea1837fa72486971df83005c0a4" title="Get the next PCI bus event.">spdk_pci_get_event()</a> periodically.</p>
+<dl class="section return"><dt>Returns</dt><dd>negative errno on failure, otherwise, return a file descriptor that may be later passed to <a class="el" href="env_8h.html#a35497ea1837fa72486971df83005c0a4" title="Get the next PCI bus event.">spdk_pci_get_event()</a>. </dd></dl>
+
+</div>
+</div>
 <a id="a0cedd84c4dbf700c387d8fb6ebc42578"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0cedd84c4dbf700c387d8fb6ebc42578">&#9670;&nbsp;</a></span>spdk_pci_get_driver()</h2>
 
@@ -3663,6 +3706,44 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_
 
 <p>Get PCI driver by name (e.g. </p>
 <p>"nvme", "vmd", "ioat"). </p>
+
+</div>
+</div>
+<a id="a35497ea1837fa72486971df83005c0a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a35497ea1837fa72486971df83005c0a4">&#9670;&nbsp;</a></span>spdk_pci_get_event()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_pci_get_event </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>fd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structspdk__pci__event.html">spdk_pci_event</a> *&#160;</td>
+          <td class="paramname"><em>event</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the next PCI bus event. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fd</td><td>A file descriptor returned by <a class="el" href="env_8h.html#ac0a1b068221b7d1f1a1e2981ec3ba4d4" title="Begin listening for PCI bus events.">spdk_pci_event_listen()</a> </td></tr>
+    <tr><td class="paramname">event</td><td>An event on the PCI bus</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Negative errno on failure. 0 for no event. A positive number when an event has been returned </dd></dl>
 
 </div>
 </div>
@@ -3817,6 +3898,44 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_
 
 </div>
 </div>
+<a id="aca05711bef2f8f8fa648e5715667f623"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca05711bef2f8f8fa648e5715667f623">&#9670;&nbsp;</a></span>spdk_pci_register_error_handler()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_pci_register_error_handler </td>
+          <td>(</td>
+          <td class="paramtype">spdk_pci_error_handler&#160;</td>
+          <td class="paramname"><em>sighandler</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>ctx</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Register a signal handler to handle bus errors on the PCI bus. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sighandler</td><td>Signal bus handler of the PCI bus </td></tr>
+    <tr><td class="paramname">ctx</td><td>The arg pass to the registered signal bus handler.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>negative errno on failure, otherwise it means successful </dd></dl>
+
+</div>
+</div>
 <a id="ac6cda84fe7f3ca98ee13683207ffeca5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac6cda84fe7f3ca98ee13683207ffeca5">&#9670;&nbsp;</a></span>spdk_pci_unhook_device()</h2>
 
@@ -3838,6 +3957,32 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">dev</td><td>fully initialized PCI device struct </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ad72f63b1d6c62bfa7cc9fc2683af65d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad72f63b1d6c62bfa7cc9fc2683af65d8">&#9670;&nbsp;</a></span>spdk_pci_unregister_error_handler()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_pci_unregister_error_handler </td>
+          <td>(</td>
+          <td class="paramtype">spdk_pci_error_handler&#160;</td>
+          <td class="paramname"><em>sighandler</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Register a signal handler to handle bus errors on the PCI bus. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sighandler</td><td>Signal bus handler of the PCI bus </td></tr>
   </table>
   </dd>
 </dl>

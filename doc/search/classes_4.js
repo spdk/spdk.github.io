@@ -250,6 +250,7 @@ var searchData=
   ['spdk_5fopal_5fpacket',['spdk_opal_packet',['../structspdk__opal__packet.html',1,'']]],
   ['spdk_5fpci_5faddr',['spdk_pci_addr',['../structspdk__pci__addr.html',1,'']]],
   ['spdk_5fpci_5fdevice',['spdk_pci_device',['../structspdk__pci__device.html',1,'']]],
+  ['spdk_5fpci_5fevent',['spdk_pci_event',['../structspdk__pci__event.html',1,'']]],
   ['spdk_5fpci_5fid',['spdk_pci_id',['../structspdk__pci__id.html',1,'']]],
   ['spdk_5freduce_5fbacking_5fdev',['spdk_reduce_backing_dev',['../structspdk__reduce__backing__dev.html',1,'']]],
   ['spdk_5freduce_5fvol_5fcb_5fargs',['spdk_reduce_vol_cb_args',['../structspdk__reduce__vol__cb__args.html',1,'']]],

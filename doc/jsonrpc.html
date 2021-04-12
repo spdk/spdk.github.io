@@ -1612,7 +1612,15 @@ iscsi_get_options method</h2>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">request:</div><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;method&quot;: &quot;iscsi_get_options&quot;,</div><div class="line">  &quot;id&quot;: 1</div><div class="line">}</div></div><!-- fragment --><p>Example response:</p>
-<div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: {</div><div class="line">    &quot;allow_duplicated_isid&quot;: true,</div><div class="line">    &quot;default_time2retain&quot;: 60,</div><div class="line">    &quot;first_burst_length&quot;: 8192,</div><div class="line">    &quot;immediate_data&quot;: true,</div><div class="line">    &quot;node_base&quot;: &quot;iqn.2016-06.io.spdk&quot;,</div><div class="line">    &quot;mutual_chap&quot;: false,</div><div class="line">    &quot;nop_in_interval&quot;: 30,</div><div class="line">    &quot;chap_group&quot;: 0,</div><div class="line">    &quot;max_connections_per_session&quot;: 2,</div><div class="line">    &quot;max_queue_depth&quot;: 64,</div><div class="line">    &quot;nop_timeout&quot;: 30,</div><div class="line">    &quot;max_sessions&quot;: 128,</div><div class="line">    &quot;error_recovery_level&quot;: 0,</div><div class="line">    &quot;auth_file&quot;: &quot;/usr/local/etc/spdk/auth.conf&quot;,</div><div class="line">    &quot;disable_chap&quot;: true,</div><div class="line">    &quot;default_time2wait&quot;: 2,</div><div class="line">    &quot;require_chap&quot;: false,</div><div class="line">    &quot;max_large_datain_per_connection&quot;: 64,</div><div class="line">    &quot;max_r2t_per_connection&quot;: 4</div><div class="line">  }</div><div class="line">}</div></div><!-- fragment --> <h2><a class="anchor" id="rpc_iscsi_set_discovery_auth"></a>
+<div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: {</div><div class="line">    &quot;allow_duplicated_isid&quot;: true,</div><div class="line">    &quot;default_time2retain&quot;: 60,</div><div class="line">    &quot;first_burst_length&quot;: 8192,</div><div class="line">    &quot;immediate_data&quot;: true,</div><div class="line">    &quot;node_base&quot;: &quot;iqn.2016-06.io.spdk&quot;,</div><div class="line">    &quot;mutual_chap&quot;: false,</div><div class="line">    &quot;nop_in_interval&quot;: 30,</div><div class="line">    &quot;chap_group&quot;: 0,</div><div class="line">    &quot;max_connections_per_session&quot;: 2,</div><div class="line">    &quot;max_queue_depth&quot;: 64,</div><div class="line">    &quot;nop_timeout&quot;: 30,</div><div class="line">    &quot;max_sessions&quot;: 128,</div><div class="line">    &quot;error_recovery_level&quot;: 0,</div><div class="line">    &quot;auth_file&quot;: &quot;/usr/local/etc/spdk/auth.conf&quot;,</div><div class="line">    &quot;disable_chap&quot;: true,</div><div class="line">    &quot;default_time2wait&quot;: 2,</div><div class="line">    &quot;require_chap&quot;: false,</div><div class="line">    &quot;max_large_datain_per_connection&quot;: 64,</div><div class="line">    &quot;max_r2t_per_connection&quot;: 4</div><div class="line">  }</div><div class="line">}</div></div><!-- fragment --><h2><a class="anchor" id="rpc_scsi_get_devices"></a>
+scsi_get_devices</h2>
+<p>Display SCSI devices</p>
+<h3>Parameters</h3>
+<p>This method has no parameters.</p>
+<h3>Example</h3>
+<p>Example request:</p>
+<div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;method&quot;: &quot;scsi_get_devices&quot;,</div><div class="line">  &quot;id&quot;: 1</div><div class="line">}</div></div><!-- fragment --><p>Example response:</p>
+<div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: [</div><div class="line">    {</div><div class="line">      &quot;id&quot;: 0,</div><div class="line">      &quot;device_name&quot;: &quot;iqn.2016-06.io.spdk:Target3&quot;</div><div class="line">    }</div><div class="line">  ]</div><div class="line">}</div></div><!-- fragment --><h2><a class="anchor" id="rpc_iscsi_set_discovery_auth"></a>
 iscsi_set_discovery_auth method</h2>
 <p>Set CHAP authentication for sessions dynamically.</p>
 <h3>Parameters</h3>
@@ -2955,6 +2963,37 @@ bdev_raid_delete</h2>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;method&quot;: &quot;bdev_raid_delete&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;params&quot;: {</div><div class="line">    &quot;name&quot;: &quot;Raid0&quot;</div><div class="line">  }</div><div class="line">}</div></div><!-- fragment --><p>Example response:</p>
+<div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: true</div><div class="line">}</div></div><!-- fragment --><h1>SPLIT</h1>
+<h2><a class="anchor" id="rpc_bdev_split_create"></a>
+bdev_split_create</h2>
+<p>This is used to split an underlying block device and create several smaller equal-sized vbdevs.</p>
+<h3>Parameters</h3>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Name  </th><th class="markdownTableHeadNone">Optional  </th><th class="markdownTableHeadNone">Type  </th><th class="markdownTableHeadNone">Description   </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">base_bdev  </td><td class="markdownTableBodyNone">Required  </td><td class="markdownTableBodyNone">string  </td><td class="markdownTableBodyNone">base bdev name   </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">split_count  </td><td class="markdownTableBodyNone">Required  </td><td class="markdownTableBodyNone">number  </td><td class="markdownTableBodyNone">number of splits   </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">split_size_mb  </td><td class="markdownTableBodyNone">Optional  </td><td class="markdownTableBodyNone">number  </td><td class="markdownTableBodyNone">size in MB to restrict the size   </td></tr>
+</table>
+<h3>Example</h3>
+<p>Example request:</p>
+<div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;method&quot;: &quot;bdev_split_create&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;params&quot;: {</div><div class="line">    &quot;base_bdev&quot;: &quot;Malloc0&quot;,</div><div class="line">    &quot;split_count&quot;: 4</div><div class="line">  }</div><div class="line">}</div></div><!-- fragment --><p>Example response:</p>
+<div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: [</div><div class="line">    &quot;Malloc0p0&quot;,</div><div class="line">    &quot;Malloc0p1&quot;,</div><div class="line">    &quot;Malloc0p2&quot;,</div><div class="line">    &quot;Malloc0p3&quot;</div><div class="line">  ]</div><div class="line">}</div></div><!-- fragment --><h2><a class="anchor" id="rpc_bdev_split_delete"></a>
+bdev_split_delete</h2>
+<p>This is used to remove the split vbdevs.</p>
+<h3>Parameters</h3>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Name  </th><th class="markdownTableHeadNone">Optional  </th><th class="markdownTableHeadNone">Type  </th><th class="markdownTableHeadNone">Description   </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">base_bdev  </td><td class="markdownTableBodyNone">Required  </td><td class="markdownTableBodyNone">string  </td><td class="markdownTableBodyNone">base bdev name   </td></tr>
+</table>
+<h3>Example</h3>
+<p>Example request:</p>
+<div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;method&quot;: &quot;bdev_split_delete&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;params&quot;: {</div><div class="line">    &quot;base_bdev&quot;: &quot;Malloc0&quot;</div><div class="line">  }</div><div class="line">}</div></div><!-- fragment --><p>Example response:</p>
 <div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: true</div><div class="line">}</div></div><!-- fragment --><h1>OPAL</h1>
 <h2><a class="anchor" id="rpc_bdev_nvme_opal_init"></a>
 bdev_nvme_opal_init</h2>

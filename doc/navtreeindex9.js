@@ -1,5 +1,16 @@
 var NAVTREEINDEX9 =
 {
+"nvme__spec_8h.html#aa70e5bbfae3ba9ec66a65c78e1966a1dabef386b1b8f14d18b0fa29ac76cd8ed9":[14,0,42,147,14],
+"nvme__spec_8h.html#aa70e5bbfae3ba9ec66a65c78e1966a1dac28b3fca8f0ed8a4e0e8cf336f703131":[14,0,42,147,19],
+"nvme__spec_8h.html#aa70e5bbfae3ba9ec66a65c78e1966a1dac75cb8ae0f94c871afbcc9268a88311c":[14,0,42,147,10],
+"nvme__spec_8h.html#aa70e5bbfae3ba9ec66a65c78e1966a1dac9adc9b93da68613dee3c4ebd6cbaedb":[14,0,42,147,17],
+"nvme__spec_8h.html#aa70e5bbfae3ba9ec66a65c78e1966a1dacca4ba3c658469f5b351259d778da98f":[14,0,42,147,33],
+"nvme__spec_8h.html#aa70e5bbfae3ba9ec66a65c78e1966a1dacdb20d151e6b84a0cd4ed336a04a3fbb":[14,0,42,147,35],
+"nvme__spec_8h.html#aa70e5bbfae3ba9ec66a65c78e1966a1dad8abe4e7384649d31c37c1a313888744":[14,0,42,147,26],
+"nvme__spec_8h.html#aa70e5bbfae3ba9ec66a65c78e1966a1dadd7476769846ba8fa9be2a7f728ab879":[14,0,42,147,12],
+"nvme__spec_8h.html#aa70e5bbfae3ba9ec66a65c78e1966a1daed29bc065aa1fe6ae397e85384b3b9f2":[14,0,42,147,3],
+"nvme__spec_8h.html#aa70e5bbfae3ba9ec66a65c78e1966a1daee02308333cf9962b6f7a4dd8e1bb5a4":[14,0,42,147,29],
+"nvme__spec_8h.html#aa70e5bbfae3ba9ec66a65c78e1966a1daf2cf0b9814e51cb506c8d6b5f9661204":[14,0,42,147,6],
 "nvme__spec_8h.html#aa70e5bbfae3ba9ec66a65c78e1966a1daf3fcabff483d705fb563467f31a69067":[14,0,42,147,11],
 "nvme__spec_8h.html#aa70e5bbfae3ba9ec66a65c78e1966a1dafeca17bfa51f273ca2499b2ee43d8eaf":[14,0,42,147,30],
 "nvme__spec_8h.html#aa7e108757c0eebbac7e13b598a378210":[14,0,42,168],
@@ -238,16 +249,5 @@ var NAVTREEINDEX9 =
 "nvme__zns_8h.html#afe28a5a089886cadf0008c7b2b03d5c9":[14,0,43,14],
 "nvme_spec.html":[2,4],
 "nvmf.html":[3,5],
-"nvmf.html#nvmf_config":[3,5,0,3],
-"nvmf.html#nvmf_config_lcore":[3,5,0,3,1],
-"nvmf.html#nvmf_config_rpc":[3,5,0,3,0],
-"nvmf.html#nvmf_fc_transport":[3,5,0,2],
-"nvmf.html#nvmf_getting_started":[3,5,0],
-"nvmf.html#nvmf_host":[3,5,0,4],
-"nvmf.html#nvmf_prereqs":[3,5,0,0,0],
-"nvmf.html#nvmf_prereqs_rdma_nics":[3,5,0,0,2],
-"nvmf.html#nvmf_prereqs_verbs":[3,5,0,0,1],
-"nvmf.html#nvmf_rdma_limitations":[3,5,0,0,3],
-"nvmf.html#nvmf_rdma_transport":[3,5,0,0],
-"nvmf.html#nvmf_tcp_transport":[3,5,0,1]
+"nvmf.html#nvmf_config":[3,5,0,3]
 };

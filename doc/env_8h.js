@@ -6,6 +6,7 @@ var env_8h =
     [ "spdk_pci_device", "structspdk__pci__device.html", "structspdk__pci__device" ],
     [ "_spdk_pci_device_internal", "structspdk__pci__device_1_1__spdk__pci__device__internal.html", "structspdk__pci__device_1_1__spdk__pci__device__internal" ],
     [ "spdk_mem_map_ops", "structspdk__mem__map__ops.html", "structspdk__mem__map__ops" ],
+    [ "spdk_pci_event", "structspdk__pci__event.html", "structspdk__pci__event" ],
     [ "SPDK_ENV_FOREACH_CORE", "env_8h.html#a42d08df976f75c1e47ce174ebc446f95", null ],
     [ "SPDK_ENV_LCORE_ID_ANY", "env_8h.html#ab337c70c632ec69967444fcdd4ab17c2", null ],
     [ "SPDK_ENV_SOCKET_ID_ANY", "env_8h.html#a3e5247302342025f028c57bc024291b1", null ],
@@ -24,10 +25,15 @@ var env_8h =
     [ "spdk_mem_map_notify_cb", "env_8h.html#ac018be4449e60d4e5992e1e4be9bbef3", null ],
     [ "spdk_mempool_obj_cb_t", "env_8h.html#a039d3ef1514e326b6c2d8a527f6a6aaa", null ],
     [ "spdk_pci_enum_cb", "env_8h.html#a0083aec1c2ac9ae023b744a80160af79", null ],
+    [ "spdk_pci_error_handler", "env_8h.html#a16a609191d398f6de37ca9c0a94ac76a", null ],
     [ "thread_start_fn", "env_8h.html#a0083ace78471c3d3d247e21e4968d526", null ],
     [ "spdk_mem_map_notify_action", "env_8h.html#a96af19906abf2a01e9f1f2105f90722c", [
       [ "SPDK_MEM_MAP_NOTIFY_REGISTER", "env_8h.html#a96af19906abf2a01e9f1f2105f90722ca75012c88ab9a083bd6e8f511d7219c2e", null ],
       [ "SPDK_MEM_MAP_NOTIFY_UNREGISTER", "env_8h.html#a96af19906abf2a01e9f1f2105f90722ca1888a370f03fd205266a9e74772da233", null ]
+    ] ],
+    [ "spdk_pci_event_type", "env_8h.html#a0a5665e04f8196d456eafccbdb1302c9", [
+      [ "SPDK_UEVENT_ADD", "env_8h.html#a0a5665e04f8196d456eafccbdb1302c9acbceb945baeaecb978e78b42c9d4feca", null ],
+      [ "SPDK_UEVENT_REMOVE", "env_8h.html#a0a5665e04f8196d456eafccbdb1302c9ae4775d40c9e97684f0fecba42358e7e1", null ]
     ] ],
     [ "spdk_ring_type", "env_8h.html#a88610413d6db3cc0eaafa4bda0f2caa9", [
       [ "SPDK_RING_TYPE_SP_SC", "env_8h.html#a88610413d6db3cc0eaafa4bda0f2caa9a670b262d381270eebba94ba3df9c58fa", null ],
@@ -118,14 +124,18 @@ var env_8h =
     [ "spdk_pci_device_unmap_bar", "env_8h.html#a80b33324546e79d1478f25c185076336", null ],
     [ "spdk_pci_driver_register", "env_8h.html#a85a124d809ac4df6773ec12fdacc0bc1", null ],
     [ "spdk_pci_enumerate", "env_8h.html#a8e2430eaebf3d756c8608aea6957b614", null ],
+    [ "spdk_pci_event_listen", "env_8h.html#ac0a1b068221b7d1f1a1e2981ec3ba4d4", null ],
     [ "spdk_pci_get_driver", "env_8h.html#a0cedd84c4dbf700c387d8fb6ebc42578", null ],
+    [ "spdk_pci_get_event", "env_8h.html#a35497ea1837fa72486971df83005c0a4", null ],
     [ "spdk_pci_get_first_device", "env_8h.html#ac98526545d85af08018dcbaebca8c49c", null ],
     [ "spdk_pci_get_next_device", "env_8h.html#ad5292c669ec570b15694bfd1952f0868", null ],
     [ "spdk_pci_hook_device", "env_8h.html#ac3850938d8aaf6363bd76e690f17de30", null ],
     [ "spdk_pci_idxd_get_driver", "env_8h.html#aba107481f435164bef55ae65652775a8", null ],
     [ "spdk_pci_ioat_get_driver", "env_8h.html#ad9d208ba1e19b37b76bb993c358b5760", null ],
     [ "spdk_pci_nvme_get_driver", "env_8h.html#aa4a5c3c4f51c1eaac132f6093fe219f4", null ],
+    [ "spdk_pci_register_error_handler", "env_8h.html#aca05711bef2f8f8fa648e5715667f623", null ],
     [ "spdk_pci_unhook_device", "env_8h.html#ac6cda84fe7f3ca98ee13683207ffeca5", null ],
+    [ "spdk_pci_unregister_error_handler", "env_8h.html#ad72f63b1d6c62bfa7cc9fc2683af65d8", null ],
     [ "spdk_pci_virtio_get_driver", "env_8h.html#ac7fabe1b4dba0227ab07e5bd91fe8816", null ],
     [ "spdk_pci_vmd_get_driver", "env_8h.html#a9c62369cc020953b05f3bdac9ae67bed", null ],
     [ "spdk_process_is_primary", "env_8h.html#a798ae910c8563b33eea17af50cabb1ab", null ],

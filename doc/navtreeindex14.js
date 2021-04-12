@@ -1,5 +1,16 @@
 var NAVTREEINDEX14 =
 {
+"structiscsi__bhs__login__rsp.html#aceabfb88f4fa9a6661313896775c5567":[13,0,6,12],
+"structiscsi__bhs__login__rsp.html#af966efd28e31aeff5f1ca01576fbaf00":[13,0,6,2],
+"structiscsi__bhs__logout__req.html":[13,0,7],
+"structiscsi__bhs__logout__req.html#a0669c514512db3f14b7bc4aa96166235":[13,0,7,14],
+"structiscsi__bhs__logout__req.html#a2f65885b0f9c2d311aecf859cb435ae6":[13,0,7,5],
+"structiscsi__bhs__logout__req.html#a3fa855e70217fbdb24c0030f19d7ef42":[13,0,7,10],
+"structiscsi__bhs__logout__req.html#a4a8555c297ad80974458ba83fa563ca0":[13,0,7,13],
+"structiscsi__bhs__logout__req.html#a52243b49a475526771eb4560ed0a56ca":[13,0,7,12],
+"structiscsi__bhs__logout__req.html#a55fdd792974b6f6ad351fa5bf89ae722":[13,0,7,6],
+"structiscsi__bhs__logout__req.html#a59a823abded26fd1bbd21723d01ff8e4":[13,0,7,0],
+"structiscsi__bhs__logout__req.html#a70ee05ff5bef2d722466eb4e7ac343eb":[13,0,7,2],
 "structiscsi__bhs__logout__req.html#a7fa5c50f49dc42aeaa82908688bf8f9e":[13,0,7,9],
 "structiscsi__bhs__logout__req.html#a95da57f1ab779d1c1b22f739c95734ad":[13,0,7,8],
 "structiscsi__bhs__logout__req.html#aad8294d1ff9814a18b35e4b211c84578":[13,0,7,1],
@@ -238,16 +249,5 @@ var NAVTREEINDEX14 =
 "structspdk__bdev.html#a9766b9a39169827156c768f78b940977":[13,0,23,13],
 "structspdk__bdev.html#ab10f57ea24409424fd71a3b53d6fe31e":[13,0,23,2],
 "structspdk__bdev.html#ab17e7679c64536f704ed4fe41555a70a":[13,0,23,20],
-"structspdk__bdev.html#ab53361e758d7ebe3edec7598f86fa576":[13,0,23,17],
-"structspdk__bdev.html#aba3b4d21418e7f36047040c43d3e5976":[13,0,23,30],
-"structspdk__bdev.html#abcf4e6c5be82c271a681db4b9b2fd427":[13,0,23,8],
-"structspdk__bdev.html#ac2ccb256340bc2e8b2d6f7793d977c0d":[13,0,23,27],
-"structspdk__bdev.html#ac737d9458e1184f313aed88b8af9b862":[13,0,23,4],
-"structspdk__bdev.html#accb598558c9e263c57cde4cf3c919bbb":[13,0,23,11],
-"structspdk__bdev.html#acec83a7ec7f21c7a88d644dad2f0a8fe":[13,0,23,18],
-"structspdk__bdev.html#ad3abe8a06500954332614d8657eaf1d9":[13,0,23,23],
-"structspdk__bdev.html#ad498826a1d9197050bd0ed110df96fb0":[13,0,23,12],
-"structspdk__bdev.html#ad6af2c003c0428ec514d45fade176d22":[13,0,23,1],
-"structspdk__bdev.html#aef65d7444968b8981d46d0c520fd5287":[13,0,23,3],
-"structspdk__bdev.html#af2dcdd94b1bbfd2709c6040f861819fb":[13,0,23,21]
+"structspdk__bdev.html#ab53361e758d7ebe3edec7598f86fa576":[13,0,23,17]
 };

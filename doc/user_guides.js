@@ -233,6 +233,7 @@ var user_guides =
       [ "iSCSI Target", "jsonrpc.html#jsonrpc_components_iscsi_tgt", [
         [ "iscsi_set_options method", "jsonrpc.html#rpc_iscsi_set_options", null ],
         [ "iscsi_get_options method", "jsonrpc.html#rpc_iscsi_get_options", null ],
+        [ "scsi_get_devices", "jsonrpc.html#rpc_scsi_get_devices", null ],
         [ "iscsi_set_discovery_auth method", "jsonrpc.html#rpc_iscsi_set_discovery_auth", null ],
         [ "iscsi_create_auth_group method", "jsonrpc.html#rpc_iscsi_create_auth_group", [
           [ "secret", "jsonrpc.html#rpc_iscsi_create_auth_group_secret", null ]
@@ -321,6 +322,8 @@ var user_guides =
         [ "bdev_raid_get_bdevs", "jsonrpc.html#rpc_bdev_raid_get_bdevs", null ],
         [ "bdev_raid_create", "jsonrpc.html#rpc_bdev_raid_create", null ],
         [ "bdev_raid_delete", "jsonrpc.html#rpc_bdev_raid_delete", null ],
+        [ "bdev_split_create", "jsonrpc.html#rpc_bdev_split_create", null ],
+        [ "bdev_split_delete", "jsonrpc.html#rpc_bdev_split_delete", null ],
         [ "bdev_nvme_opal_init", "jsonrpc.html#rpc_bdev_nvme_opal_init", null ],
         [ "bdev_nvme_opal_revert", "jsonrpc.html#rpc_bdev_nvme_opal_revert", null ],
         [ "bdev_opal_create", "jsonrpc.html#rpc_bdev_opal_create", null ],
