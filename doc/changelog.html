@@ -171,6 +171,7 @@ v21.04: (Upcoming Release)</h1>
 <p>Added <code>spdk_nvme_qpair_get_optimal_poll_group</code> function and <code>qpair_get_optimal_poll_group</code> function pointer in <a class="el" href="structspdk__nvmf__transport__ops.html">spdk_nvmf_transport_ops</a> structure in order to add the qpair to the most suitable polling group.</p>
 <p>Add OPTPERF and namespace optimal performance fields to <a class="el" href="nvme__spec_8h.html" title="NVMe specification definitions.">nvme_spec.h</a>.</p>
 <p>Added spdk_nvme_set_hotplug_filter API to allow applications to choose which hot-inserted SSDs should be probed. This is useful for use cases where multiple independent SPDK processes are running on one node. The filter function can then be implemented in these processes to decide which SSDs to probe based on the new SSD's PCI address.</p>
+<p>New functions <code>spdk_nvme_poll_group_get_stats</code> and <code>spdk_nvme_poll_group_free_stats</code> added. These functions allow to get transport statistics per NVME poll group.</p>
 <h2>nvmf</h2>
 <p>Removed the <code>spdk_nvmf_tgt_listen</code> and <code>spdk_nvmf_subsystem_add_ns</code> API.</p>
 <p>Added new APIs:</p><ul>
@@ -194,6 +195,8 @@ v21.04: (Upcoming Release)</h1>
 <p>The type of enable_placement_id in struct <a class="el" href="structspdk__sock__impl__opts.html" title="SPDK socket implementation options.">spdk_sock_impl_opts</a> is changed from bool to int. We can use RPC to configure different value of enable_placement_id. Then we can leverage SO_INCOMING_CPU to get placement_id, which aims to utilize CPU cache locality, enabled by setting enable_placement_id=2.</p>
 <h2>thread</h2>
 <p>A new API <code>spdk_io_channel_get_io_device</code> was added to get the io_device for the specified I/O channel.</p>
+<h2>rpc</h2>
+<p>New RPC <code>bdev_nvme_get_transport_statistics</code> was added, it allows to get transport statistics of nvme poll groups.</p>
 <h1><a class="anchor" id="changelog-v21-01"></a>
 v21.01:</h1>
 <h2>idxd</h2>

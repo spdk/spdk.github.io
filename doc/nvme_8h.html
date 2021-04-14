@@ -169,6 +169,14 @@ Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__host__id.html">spdk_nvme_host_id</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">NVMe host identifier.  <a href="structspdk__nvme__host__id.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__rdma__device__stat.html">spdk_nvme_rdma_device_stat</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__pcie__stat.html">spdk_nvme_pcie_stat</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__transport__poll__group__stat.html">spdk_nvme_transport_poll_group_stat</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__poll__group__stat.html">spdk_nvme_poll_group_stat</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__io__qpair__opts.html">spdk_nvme_io_qpair_opts</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">NVMe I/O queue pair initialization options.  <a href="structspdk__nvme__io__qpair__opts.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -585,6 +593,12 @@ Functions</h2></td></tr>
 <tr class="memitem:a2a353011316a46ee6e6857f7286488d1"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a2a353011316a46ee6e6857f7286488d1">spdk_nvme_poll_group_get_ctx</a> (struct spdk_nvme_poll_group *group)</td></tr>
 <tr class="memdesc:a2a353011316a46ee6e6857f7286488d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve the user context for this specific poll group.  <a href="#a2a353011316a46ee6e6857f7286488d1">More...</a><br /></td></tr>
 <tr class="separator:a2a353011316a46ee6e6857f7286488d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18820817137a7fca589be8c08feedcc0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a18820817137a7fca589be8c08feedcc0">spdk_nvme_poll_group_get_stats</a> (struct spdk_nvme_poll_group *group, struct <a class="el" href="structspdk__nvme__poll__group__stat.html">spdk_nvme_poll_group_stat</a> **stats)</td></tr>
+<tr class="memdesc:a18820817137a7fca589be8c08feedcc0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves transport statistics for the given poll group.  <a href="#a18820817137a7fca589be8c08feedcc0">More...</a><br /></td></tr>
+<tr class="separator:a18820817137a7fca589be8c08feedcc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2448353b0d3024bb3b05d7b45eb8285"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#ae2448353b0d3024bb3b05d7b45eb8285">spdk_nvme_poll_group_free_stats</a> (struct spdk_nvme_poll_group *group, struct <a class="el" href="structspdk__nvme__poll__group__stat.html">spdk_nvme_poll_group_stat</a> *stat)</td></tr>
+<tr class="memdesc:ae2448353b0d3024bb3b05d7b45eb8285"><td class="mdescLeft">&#160;</td><td class="mdescRight">Frees poll group statistics retrieved using <b>spdk_nvme_poll_group_get_stats</b> function.  <a href="#ae2448353b0d3024bb3b05d7b45eb8285">More...</a><br /></td></tr>
+<tr class="separator:ae2448353b0d3024bb3b05d7b45eb8285"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab1863b5dccf2bcc49fe92275bc1e5a2a"><td class="memItemLeft" align="right" valign="top">const struct <a class="el" href="structspdk__nvme__ns__data.html">spdk_nvme_ns_data</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#ab1863b5dccf2bcc49fe92275bc1e5a2a">spdk_nvme_ns_get_data</a> (struct spdk_nvme_ns *ns)</td></tr>
 <tr class="memdesc:ab1863b5dccf2bcc49fe92275bc1e5a2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the identify namespace data as defined by the NVMe specification.  <a href="#ab1863b5dccf2bcc49fe92275bc1e5a2a">More...</a><br /></td></tr>
 <tr class="separator:ab1863b5dccf2bcc49fe92275bc1e5a2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -7053,6 +7067,43 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_map_prps</b>
 
 </div>
 </div>
+<a id="ae2448353b0d3024bb3b05d7b45eb8285"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae2448353b0d3024bb3b05d7b45eb8285">&#9670;&nbsp;</a></span>spdk_nvme_poll_group_free_stats()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_nvme_poll_group_free_stats </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_nvme_poll_group *&#160;</td>
+          <td class="paramname"><em>group</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structspdk__nvme__poll__group__stat.html">spdk_nvme_poll_group_stat</a> *&#160;</td>
+          <td class="paramname"><em>stat</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Frees poll group statistics retrieved using <b>spdk_nvme_poll_group_get_stats</b> function. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">group</td><td>Pointer to a poll group </td></tr>
+    <tr><td class="paramname">stat</td><td>Pointer to statistics to be released </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a2a353011316a46ee6e6857f7286488d1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2a353011316a46ee6e6857f7286488d1">&#9670;&nbsp;</a></span>spdk_nvme_poll_group_get_ctx()</h2>
 
@@ -7077,6 +7128,45 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_map_prps</b>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A pointer to the user provided poll group context. </dd></dl>
+
+</div>
+</div>
+<a id="a18820817137a7fca589be8c08feedcc0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a18820817137a7fca589be8c08feedcc0">&#9670;&nbsp;</a></span>spdk_nvme_poll_group_get_stats()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_nvme_poll_group_get_stats </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_nvme_poll_group *&#160;</td>
+          <td class="paramname"><em>group</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structspdk__nvme__poll__group__stat.html">spdk_nvme_poll_group_stat</a> **&#160;</td>
+          <td class="paramname"><em>stats</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Retrieves transport statistics for the given poll group. </p>
+<p>Note: the structure returned by this function should later be freed with <b>spdk_nvme_poll_group_free_stats</b> function</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">group</td><td>Pointer to NVME poll group </td></tr>
+    <tr><td class="paramname">stats</td><td>Double pointer to statistics to be filled by this function </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success or negated errno on failure </dd></dl>
 
 </div>
 </div>

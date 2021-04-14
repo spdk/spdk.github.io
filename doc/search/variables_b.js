@@ -1,7 +1,7 @@
 var searchData=
 [
   ['mar',['mar',['../structspdk__nvme__zns__ns__data.html#abdd0f008b8756f17892579fb42ab57c0',1,'spdk_nvme_zns_ns_data']]],
-  ['mask',['mask',['../structspdk__ocssd__chunk__notification__entry.html#a3a9bef3c50f3c60586ce094536c94df2',1,'spdk_ocssd_chunk_notification_entry']]],
+  ['mask',['mask',['../structspdk__ocssd__chunk__notification__entry.html#af2395de29aca1e814d827c7c0c79a2dc',1,'spdk_ocssd_chunk_notification_entry']]],
   ['max_5factive_5fzones',['max_active_zones',['../structspdk__bdev.html#accb598558c9e263c57cde4cf3c919bbb',1,'spdk_bdev']]],
   ['max_5fchannel_5fops',['max_channel_ops',['../structspdk__bs__opts.html#ac5417afa104f5061bab1bfae0769c3a6',1,'spdk_bs_opts']]],
   ['max_5fmd_5fops',['max_md_ops',['../structspdk__bs__opts.html#a63e0b619fedc29159dffd7feca08396b',1,'spdk_bs_opts']]],
@@ -11,8 +11,8 @@ var searchData=
   ['maxh2cdata',['maxh2cdata',['../structspdk__nvme__tcp__ic__resp.html#ae19af16d43dd54e43ccfeccd7f6119dc',1,'spdk_nvme_tcp_ic_resp']]],
   ['maxoc',['maxoc',['../structspdk__ocssd__geometry__data.html#adecc1a99d16f94eace12b674c7b7bbfa',1,'spdk_ocssd_geometry_data']]],
   ['maxocpu',['maxocpu',['../structspdk__ocssd__geometry__data.html#a747b543789ad8efcfca1c54faeb95c52',1,'spdk_ocssd_geometry_data']]],
-  ['mc',['mc',['../structspdk__nvme__ns__data.html#a682f7177f4b5788fbe9f03f284dd8daf',1,'spdk_nvme_ns_data']]],
-  ['mccap',['mccap',['../structspdk__ocssd__geometry__data.html#a1b7a72ec7501aad92979823fafc35384',1,'spdk_ocssd_geometry_data']]],
+  ['mc',['mc',['../structspdk__nvme__ns__data.html#aea5ec3b91bf35f50bbb6551fe6573fb2',1,'spdk_nvme_ns_data']]],
+  ['mccap',['mccap',['../structspdk__ocssd__geometry__data.html#ac016774cbef1f47fbe35daafc0bda0ed',1,'spdk_ocssd_geometry_data']]],
   ['md_5fend',['md_end',['../structspdk__nvme__ns__data.html#ab511e295c151b4d17911e474711168b9',1,'spdk_nvme_ns_data']]],
   ['md_5finterleave',['md_interleave',['../structspdk__bdev.html#a4e68d5fa768ba5d3c8af32e68e1a992c',1,'spdk_bdev::md_interleave()'],['../structspdk__dif__ctx.html#a341adc2959c3449ba630601ebfb14cb9',1,'spdk_dif_ctx::md_interleave()']]],
   ['md_5flen',['md_len',['../structspdk__bdev.html#ab53361e758d7ebe3edec7598f86fa576',1,'spdk_bdev']]],

@@ -272,6 +272,8 @@ Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__dsm__range.html">spdk_nvme_dsm_range</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dataset Management range.  <a href="structspdk__nvme__dsm__range.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__host__behavior.html">spdk_nvme_host_behavior</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__power__state.html">spdk_nvme_power_state</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__cdata__nvmf__specific.html">spdk_nvme_cdata_nvmf_specific</a></td></tr>
@@ -801,11 +803,19 @@ Enumerations</h2></td></tr>
 <a class="el" href="nvme__spec_8h.html#aeae5c5fb9df2c7a39215c71f9d9b4c25a833aa3633dbc0fc2c3565e65d1064b44">SPDK_NVME_FEAT_HOST_CONTROLLED_THERMAL_MANAGEMENT</a> = 0x10, 
 <br />
 &#160;&#160;<a class="el" href="nvme__spec_8h.html#aeae5c5fb9df2c7a39215c71f9d9b4c25a8a84d3c5c4ffccd722dad61b1e8a8a0c">SPDK_NVME_FEAT_NON_OPERATIONAL_POWER_STATE_CONFIG</a> = 0x11, 
-<a class="el" href="nvme__spec_8h.html#aeae5c5fb9df2c7a39215c71f9d9b4c25a8adf212ed4f7f1d01769a9be68683908">SPDK_NVME_FEAT_SOFTWARE_PROGRESS_MARKER</a> = 0x80, 
+<b>SPDK_NVME_FEAT_READ_RECOVERY_LEVEL_CONFIG</b> = 0x12, 
+<b>SPDK_NVME_FEAT_PREDICTABLE_LATENCY_MODE_CONFIG</b> = 0x13, 
+<b>SPDK_NVME_FEAT_PREDICTABLE_LATENCY_MODE_WINDOW</b> = 0x14, 
+<br />
+&#160;&#160;<b>SPDK_NVME_FEAT_LBA_STATUS_INFORMATION_ATTRIBUTES</b> = 0x15, 
+<a class="el" href="nvme__spec_8h.html#aeae5c5fb9df2c7a39215c71f9d9b4c25a1749c79457b5e762df54ee01a773a8bd">SPDK_NVME_FEAT_HOST_BEHAVIOR_SUPPORT</a> = 0x16, 
+<b>SPDK_NVME_FEAT_SANITIZE_CONFIG</b> = 0x17, 
+<b>SPDK_NVME_FEAT_ENDURANCE_GROUP_EVENT</b> = 0x18, 
+<br />
+&#160;&#160;<a class="el" href="nvme__spec_8h.html#aeae5c5fb9df2c7a39215c71f9d9b4c25a8adf212ed4f7f1d01769a9be68683908">SPDK_NVME_FEAT_SOFTWARE_PROGRESS_MARKER</a> = 0x80, 
 <a class="el" href="nvme__spec_8h.html#aeae5c5fb9df2c7a39215c71f9d9b4c25a3f79db4fe2b0055f0250f22078fd1f08">SPDK_NVME_FEAT_HOST_IDENTIFIER</a> = 0x81, 
 <a class="el" href="nvme__spec_8h.html#aeae5c5fb9df2c7a39215c71f9d9b4c25a2005df35e84b53a303fc7e420facb6a7">SPDK_NVME_FEAT_HOST_RESERVE_MASK</a> = 0x82, 
-<br />
-&#160;&#160;<a class="el" href="nvme__spec_8h.html#aeae5c5fb9df2c7a39215c71f9d9b4c25a591bf270723032d940b8ffdf38aac99e">SPDK_NVME_FEAT_HOST_RESERVE_PERSIST</a> = 0x83
+<a class="el" href="nvme__spec_8h.html#aeae5c5fb9df2c7a39215c71f9d9b4c25a591bf270723032d940b8ffdf38aac99e">SPDK_NVME_FEAT_HOST_RESERVE_PERSIST</a> = 0x83
 <br />
  }</td></tr>
 <tr class="separator:aeae5c5fb9df2c7a39215c71f9d9b4c25"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1321,6 +1331,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a50fdfa3375f98ed37cf1874689dca9d7"><td class="memItemLeft" align="right" valign="top"><a id="a50fdfa3375f98ed37cf1874689dca9d7"></a>
 static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_bytes_to_numd</b> (uint32_t len)</td></tr>
 <tr class="separator:a50fdfa3375f98ed37cf1874689dca9d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13be05e250d81d95907c0009c5aa03e7"><td class="memItemLeft" align="right" valign="top"><a id="a13be05e250d81d95907c0009c5aa03e7"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_STATIC_ASSERT</b> (sizeof(struct <a class="el" href="structspdk__nvme__host__behavior.html">spdk_nvme_host_behavior</a>)==512, &quot;Incorrect size&quot;)</td></tr>
+<tr class="separator:a13be05e250d81d95907c0009c5aa03e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaf09d50341e272b0fd0bfff5e48b7302"><td class="memItemLeft" align="right" valign="top"><a id="aaf09d50341e272b0fd0bfff5e48b7302"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_STATIC_ASSERT</b> (sizeof(struct <a class="el" href="structspdk__nvme__power__state.html">spdk_nvme_power_state</a>)==32, &quot;Incorrect size&quot;)</td></tr>
 <tr class="separator:aaf09d50341e272b0fd0bfff5e48b7302"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1740,6 +1753,8 @@ static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_
 <tr><td class="fieldname"><a id="aeae5c5fb9df2c7a39215c71f9d9b4c25a833aa3633dbc0fc2c3565e65d1064b44"></a>SPDK_NVME_FEAT_HOST_CONTROLLED_THERMAL_MANAGEMENT&#160;</td><td class="fielddoc"><p>cdw11 layout defined by <a class="el" href="unionspdk__nvme__feat__host__controlled__thermal__management.html">spdk_nvme_feat_host_controlled_thermal_management</a> </p>
 </td></tr>
 <tr><td class="fieldname"><a id="aeae5c5fb9df2c7a39215c71f9d9b4c25a8a84d3c5c4ffccd722dad61b1e8a8a0c"></a>SPDK_NVME_FEAT_NON_OPERATIONAL_POWER_STATE_CONFIG&#160;</td><td class="fielddoc"><p>cdw11 layout defined by <a class="el" href="unionspdk__nvme__feat__non__operational__power__state__config.html">spdk_nvme_feat_non_operational_power_state_config</a> </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aeae5c5fb9df2c7a39215c71f9d9b4c25a1749c79457b5e762df54ee01a773a8bd"></a>SPDK_NVME_FEAT_HOST_BEHAVIOR_SUPPORT&#160;</td><td class="fielddoc"><p>data buffer layout defined by <a class="el" href="structspdk__nvme__host__behavior.html">spdk_nvme_host_behavior</a> </p>
 </td></tr>
 <tr><td class="fieldname"><a id="aeae5c5fb9df2c7a39215c71f9d9b4c25a8adf212ed4f7f1d01769a9be68683908"></a>SPDK_NVME_FEAT_SOFTWARE_PROGRESS_MARKER&#160;</td><td class="fielddoc"><p>cdw11 layout defined by <a class="el" href="unionspdk__nvme__feat__software__progress__marker.html">spdk_nvme_feat_software_progress_marker</a> </p>
 </td></tr>

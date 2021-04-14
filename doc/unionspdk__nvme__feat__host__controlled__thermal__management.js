@@ -1,6 +1,6 @@
 var unionspdk__nvme__feat__host__controlled__thermal__management =
 [
-    [ "bits", "unionspdk__nvme__feat__host__controlled__thermal__management.html#ae31f34e0bd3cd844ed05cb14ca07ec39", null ],
+    [ "bits", "unionspdk__nvme__feat__host__controlled__thermal__management.html#a412a444bdf49a4bcbe8695d082c9558d", null ],
     [ "raw", "unionspdk__nvme__feat__host__controlled__thermal__management.html#aed69c683b8bf4f7c1698fcfc62d66c7c", null ],
     [ "tmt1", "unionspdk__nvme__feat__host__controlled__thermal__management.html#a196363adf5f14463140d5c3d7d7a0564", null ],
     [ "tmt2", "unionspdk__nvme__feat__host__controlled__thermal__management.html#a683af96774029ba95fcbb43ef78d487e", null ]

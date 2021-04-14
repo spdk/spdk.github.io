@@ -249,6 +249,12 @@ int64_t(*&#160;</td><td class="memItemRight" valign="bottom"><b>poll_group_proce
 <tr class="memitem:a1e6393b47925bf7e22ab89bc02cbde6d"><td class="memItemLeft" align="right" valign="top"><a id="a1e6393b47925bf7e22ab89bc02cbde6d"></a>
 int(*&#160;</td><td class="memItemRight" valign="bottom"><b>poll_group_destroy</b> )(struct spdk_nvme_transport_poll_group *tgroup)</td></tr>
 <tr class="separator:a1e6393b47925bf7e22ab89bc02cbde6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3089561a7434d57145c16c3b751ab12"><td class="memItemLeft" align="right" valign="top"><a id="ae3089561a7434d57145c16c3b751ab12"></a>
+int(*&#160;</td><td class="memItemRight" valign="bottom"><b>poll_group_get_stats</b> )(struct spdk_nvme_transport_poll_group *tgroup, struct <a class="el" href="structspdk__nvme__transport__poll__group__stat.html">spdk_nvme_transport_poll_group_stat</a> **stats)</td></tr>
+<tr class="separator:ae3089561a7434d57145c16c3b751ab12"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15d5f16fcc86d858c85d4b4bc228c930"><td class="memItemLeft" align="right" valign="top"><a id="a15d5f16fcc86d858c85d4b4bc228c930"></a>
+void(*&#160;</td><td class="memItemRight" valign="bottom"><b>poll_group_free_stats</b> )(struct spdk_nvme_transport_poll_group *tgroup, struct <a class="el" href="structspdk__nvme__transport__poll__group__stat.html">spdk_nvme_transport_poll_group_stat</a> *stats)</td></tr>
+<tr class="separator:a15d5f16fcc86d858c85d4b4bc228c930"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li><a class="el" href="nvme_8h.html">nvme.h</a></li>

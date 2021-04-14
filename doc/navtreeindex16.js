@@ -1,5 +1,16 @@
 var NAVTREEINDEX16 =
 {
+"structspdk__dif__ctx.html#a70bae2b0c71c14a91163f89d4e215802":[13,0,45,11],
+"structspdk__dif__ctx.html#a87509f51370bf129ab20993e1695c66a":[13,0,45,5],
+"structspdk__dif__ctx.html#aafb02a3a698fd60230e4a5fc3da883f4":[13,0,45,9],
+"structspdk__dif__ctx.html#ac30213e15851be73f73780752b5c49a2":[13,0,45,1],
+"structspdk__dif__ctx.html#ac5d6870db5b4eb661b7a37f94ff81dc8":[13,0,45,8],
+"structspdk__dif__ctx.html#adac7e6a0e70395682a50e1b3d678d792":[13,0,45,13],
+"structspdk__dif__ctx.html#aef0637cad47cfd8bc20bb0f085c59479":[13,0,45,12],
+"structspdk__dif__error.html":[13,0,46],
+"structspdk__dif__error.html#a596249f0c0d8883a9228788314ab0c39":[13,0,46,1],
+"structspdk__dif__error.html#a77e96c6a1eb3364f9491ad128b05cb86":[13,0,46,2],
+"structspdk__dif__error.html#a99e10c98889d74c9dedd9a5b4c2be836":[13,0,46,0],
 "structspdk__dif__error.html#a9b85800d2326eb0506821b9efce20215":[13,0,46,3],
 "structspdk__env__opts.html":[13,0,47],
 "structspdk__env__opts.html#a04de220e31274ee239f4f2de62608263":[13,0,47,4],
@@ -238,16 +249,5 @@ var NAVTREEINDEX16 =
 "structspdk__ioat__registers.html#a9a60747bc8b840c3559b8497ff8455d0":[13,0,66,21],
 "structspdk__ioat__registers.html#aa553f26d6542a95a52b263d4535c26a2":[13,0,66,0],
 "structspdk__ioat__registers.html#aa80cb27f649c5767df6f4928bba434f9":[13,0,66,16],
-"structspdk__ioat__registers.html#aba1111cd88413386ad10398f82a0f0ff":[13,0,66,12],
-"structspdk__ioat__registers.html#aca1f82844d5626588ec05b2666967fe9":[13,0,66,19],
-"structspdk__ioat__registers.html#acdc72712c4fcb745a7c9fccf97b174f6":[13,0,66,5],
-"structspdk__ioat__registers.html#ace94a30b1031fbcd11dd574c13cda0eb":[13,0,66,14],
-"structspdk__ioat__registers.html#adb9e062e8bdc8ed0bba44ef302498454":[13,0,66,8],
-"structspdk__ioat__registers.html#adf690ee683933dda6598cfcc43ae1790":[13,0,66,18],
-"structspdk__ioat__registers.html#ae8b82a9d34cc2e05578f10085f1a3c2a":[13,0,66,2],
-"structspdk__ioat__registers.html#aeaf4219dcd1a8013bbd9488b3b973f44":[13,0,66,1],
-"structspdk__ioat__registers.html#af02720f9ab35390841b863df59dc2492":[13,0,66,4],
-"structspdk__ioat__registers.html#af144a2829bb55992379bcb938822b295":[13,0,66,17],
-"structspdk__ioat__registers.html#af27017a133da1e7f8e49ae3a417b8157":[13,0,66,10],
-"structspdk__ioat__xor__ext__hw__desc.html":[13,0,67]
+"structspdk__ioat__registers.html#aba1111cd88413386ad10398f82a0f0ff":[13,0,66,12]
 };

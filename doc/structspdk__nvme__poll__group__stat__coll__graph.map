@@ -1,0 +1,6 @@
+<map id="spdk_nvme_poll_group_stat" name="spdk_nvme_poll_group_stat">
+<area shape="rect" id="node1" title=" " alt="" coords="121,199,325,225"/>
+<area shape="rect" id="node2" href="$structspdk__nvme__transport__poll__group__stat.html" title=" " alt="" coords="142,95,305,136"/>
+<area shape="rect" id="node3" href="$structspdk__nvme__rdma__device__stat.html" title=" " alt="" coords="5,5,225,32"/>
+<area shape="rect" id="node4" href="$structspdk__nvme__pcie__stat.html" title=" " alt="" coords="250,5,413,32"/>
+</map>
