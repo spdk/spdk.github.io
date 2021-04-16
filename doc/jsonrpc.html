@@ -1286,6 +1286,25 @@ bdev_error_delete</h2>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div><div class="line">  &quot;params&quot;: {</div><div class="line">    &quot;name&quot;: &quot;EE_Malloc0&quot;</div><div class="line">  },</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;method&quot;: &quot;bdev_error_delete&quot;,</div><div class="line">  &quot;id&quot;: 1</div><div class="line">}</div></div><!-- fragment --><p>Example response:</p>
+<div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: true</div><div class="line">}</div></div><!-- fragment --><h2><a class="anchor" id="rpc_bdev_error_inject_error"></a>
+bdev_error_inject_error</h2>
+<p>Inject an error via an error bdev. Create an error bdev on base bdev first. Default 'num' value is 1 and if 'num' is set to zero, the specified injection is disabled.</p>
+<h3>Parameters</h3>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Name  </th><th class="markdownTableHeadNone">Optional  </th><th class="markdownTableHeadNone">Type  </th><th class="markdownTableHeadNone">Description   </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">name  </td><td class="markdownTableBodyNone">Required  </td><td class="markdownTableBodyNone">string  </td><td class="markdownTableBodyNone">Name of the error injection bdev   </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">io_type  </td><td class="markdownTableBodyNone">Required  </td><td class="markdownTableBodyNone">string  </td><td class="markdownTableBodyNone">io type 'clear' 'read' 'write' 'unmap' 'flush' 'all'   </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">error_type  </td><td class="markdownTableBodyNone">Required  </td><td class="markdownTableBodyNone">string  </td><td class="markdownTableBodyNone">error type 'failure' 'pending'   </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">num  </td><td class="markdownTableBodyNone">Optional  </td><td class="markdownTableBodyNone">int  </td><td class="markdownTableBodyNone">the number of commands you want to fail.(default:1)   </td></tr>
+</table>
+<h3>Example</h3>
+<p>Example request:</p>
+<div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;method&quot;: &quot;bdev_error_inject_error&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;params&quot;: {</div><div class="line">    &quot;name&quot;: &quot;EE_Malloc0&quot;,</div><div class="line">    &quot;io_type&quot;: &quot;write&quot;,</div><div class="line">    &quot;error_type&quot;: &quot;pending&quot;,</div><div class="line">    &quot;num&quot;: 1</div><div class="line">  }</div><div class="line">}</div></div><!-- fragment --><p>Example response:</p>
 <div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: true</div><div class="line">}</div></div><!-- fragment --><h2><a class="anchor" id="rpc_bdev_iscsi_create"></a>
 bdev_iscsi_create</h2>
 <p>Connect to iSCSI target and create bdev backed by this connection.</p>

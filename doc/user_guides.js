@@ -214,6 +214,7 @@ var user_guides =
         [ "bdev_delay_update_latency", "jsonrpc.html#rpc_bdev_delay_update_latency", null ],
         [ "bdev_error_create", "jsonrpc.html#rpc_bdev_error_create", null ],
         [ "bdev_error_delete", "jsonrpc.html#rpc_bdev_error_delete", null ],
+        [ "bdev_error_inject_error", "jsonrpc.html#rpc_bdev_error_inject_error", null ],
         [ "bdev_iscsi_create", "jsonrpc.html#rpc_bdev_iscsi_create", null ],
         [ "bdev_iscsi_delete", "jsonrpc.html#rpc_bdev_iscsi_delete", null ],
         [ "bdev_ftl_create", "jsonrpc.html#rpc_bdev_ftl_create", null ],
