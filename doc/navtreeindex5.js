@@ -101,6 +101,7 @@ var NAVTREEINDEX5 =
 "jsonrpc.html#rpc_bdev_split_create":[3,9,7,16],
 "jsonrpc.html#rpc_bdev_split_delete":[3,9,7,17],
 "jsonrpc.html#rpc_bdev_virtio_attach_controller":[3,9,3,58],
+"jsonrpc.html#rpc_bdev_virtio_blk_set_hotplug":[3,9,3,61],
 "jsonrpc.html#rpc_bdev_virtio_detach_controller":[3,9,3,60],
 "jsonrpc.html#rpc_bdev_virtio_scsi_get_devices":[3,9,3,59],
 "jsonrpc.html#rpc_bdev_wait_for_examine":[3,9,3,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX5 =
 "libraries.html#module":[3,1,0,1],
 "libraries.html#naming":[3,1,1,1],
 "libraries.html#shared_objects":[3,1,2],
-"libraries.html#so_linking":[3,1,2,1],
-"libraries.html#static_objects":[3,1,3]
+"libraries.html#so_linking":[3,1,2,1]
 };

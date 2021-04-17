@@ -230,7 +230,8 @@ var user_guides =
         [ "bdev_passthru_delete", "jsonrpc.html#rpc_bdev_passthru_delete", null ],
         [ "bdev_virtio_attach_controller", "jsonrpc.html#rpc_bdev_virtio_attach_controller", null ],
         [ "bdev_virtio_scsi_get_devices", "jsonrpc.html#rpc_bdev_virtio_scsi_get_devices", null ],
-        [ "bdev_virtio_detach_controller", "jsonrpc.html#rpc_bdev_virtio_detach_controller", null ]
+        [ "bdev_virtio_detach_controller", "jsonrpc.html#rpc_bdev_virtio_detach_controller", null ],
+        [ "bdev_virtio_blk_set_hotplug", "jsonrpc.html#rpc_bdev_virtio_blk_set_hotplug", null ]
       ] ],
       [ "iSCSI Target", "jsonrpc.html#jsonrpc_components_iscsi_tgt", [
         [ "iscsi_set_options method", "jsonrpc.html#rpc_iscsi_set_options", null ],

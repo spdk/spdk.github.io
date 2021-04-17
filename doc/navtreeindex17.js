@@ -1,5 +1,6 @@
 var NAVTREEINDEX17 =
 {
+"structspdk__ioat__registers.html#aa80cb27f649c5767df6f4928bba434f9":[13,0,66,16],
 "structspdk__ioat__registers.html#aba1111cd88413386ad10398f82a0f0ff":[13,0,66,12],
 "structspdk__ioat__registers.html#aca1f82844d5626588ec05b2666967fe9":[13,0,66,19],
 "structspdk__ioat__registers.html#acdc72712c4fcb745a7c9fccf97b174f6":[13,0,66,5],
@@ -248,6 +249,5 @@ var NAVTREEINDEX17 =
 "structspdk__nvme__ctrlr__data.html#a92b9a91df91b887f5900779f9b48192a":[13,0,102,22],
 "structspdk__nvme__ctrlr__data.html#a98bca935ffa3fbc83fd504055b8a228f":[13,0,102,134],
 "structspdk__nvme__ctrlr__data.html#a98e9469a8c01c25805c423ef8366b2df":[13,0,102,140],
-"structspdk__nvme__ctrlr__data.html#a9923796b289062d3bc86509f4297c48a":[13,0,102,92],
-"structspdk__nvme__ctrlr__data.html#a9ab0cc483799ed8fa05b03093b2e4cab":[13,0,102,59]
+"structspdk__nvme__ctrlr__data.html#a9923796b289062d3bc86509f4297c48a":[13,0,102,92]
 };
