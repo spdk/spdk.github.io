@@ -941,6 +941,7 @@ var searchData=
   ['spdk_5fnvme_5flog_5fsanitize_5fstatus',['SPDK_NVME_LOG_SANITIZE_STATUS',['../nvme__spec_8h.html#a3d5e453e4d95b0f5b9bb4de04ace78c4a96d86f9eff782b5207b78ea26c6e3b2b',1,'nvme_spec.h']]],
   ['spdk_5fnvme_5flog_5ftelemetry_5fctrlr_5finitiated',['SPDK_NVME_LOG_TELEMETRY_CTRLR_INITIATED',['../nvme__spec_8h.html#a3d5e453e4d95b0f5b9bb4de04ace78c4aa21d97922f4ef61731fd20986d30b2c8',1,'nvme_spec.h']]],
   ['spdk_5fnvme_5flog_5ftelemetry_5fhost_5finitiated',['SPDK_NVME_LOG_TELEMETRY_HOST_INITIATED',['../nvme__spec_8h.html#a3d5e453e4d95b0f5b9bb4de04ace78c4a6b0a3950980fadba16d971811a31afa0',1,'nvme_spec.h']]],
+  ['spdk_5fnvme_5fmap_5fcmd',['spdk_nvme_map_cmd',['../nvme_8h.html#abe78bfe779380af49ed2416c8974cff3',1,'nvme.h']]],
   ['spdk_5fnvme_5fmedia_5ferror_5fstatus_5fcode',['spdk_nvme_media_error_status_code',['../nvme__spec_8h.html#ae2a432232311e948e133a1a56325418f',1,'nvme_spec.h']]],
   ['spdk_5fnvme_5fnidt',['spdk_nvme_nidt',['../nvme__spec_8h.html#a3711b38213aaa9ff7a2aa7d1efe8e2f1',1,'nvme_spec.h']]],
   ['spdk_5fnvme_5fnidt_5fcsi',['SPDK_NVME_NIDT_CSI',['../nvme__spec_8h.html#a3711b38213aaa9ff7a2aa7d1efe8e2f1a364f577e8060e2006727124050c6fcfb',1,'nvme_spec.h']]],
