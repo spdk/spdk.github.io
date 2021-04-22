@@ -207,6 +207,8 @@ var user_guides =
         [ "bdev_nvme_detach_controller", "jsonrpc.html#rpc_bdev_nvme_detach_controller", null ],
         [ "bdev_nvme_cuse_register", "jsonrpc.html#rpc_bdev_nvme_cuse_register", null ],
         [ "bdev_nvme_cuse_unregister", "jsonrpc.html#rpc_bdev_nvme_cuse_unregister", null ],
+        [ "bdev_zone_block_create", "jsonrpc.html#rpc_bdev_zone_block_create", null ],
+        [ "bdev_zone_block_delete", "jsonrpc.html#rpc_bdev_zone_block_delete", null ],
         [ "bdev_nvme_apply_firmware", "jsonrpc.html#rpc_bdev_nvme_apply_firmware", null ],
         [ "bdev_nvme_get_transport_statistics", "jsonrpc.html#rpc_bdev_nvme_get_transport_statistics", null ],
         [ "bdev_rbd_create", "jsonrpc.html#rpc_bdev_rbd_create", null ],
