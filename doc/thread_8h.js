@@ -13,6 +13,7 @@ var thread_8h =
     [ "spdk_msg_fn", "thread_8h.html#adc0da6b1b784d4f165dcd48b526d12ad", null ],
     [ "spdk_new_thread_fn", "thread_8h.html#afab3d4339c5bca4dfde209816a9e560f", null ],
     [ "spdk_poller_fn", "thread_8h.html#a35c421accdc2a0a61bb7be916106293b", null ],
+    [ "spdk_poller_set_interrupt_mode_cb", "thread_8h.html#aaa00024ffe78012bf1b7ade9aee0ab1a", null ],
     [ "spdk_start_poller", "thread_8h.html#a6f70f5e9b4d498e843f81f1a6ada6370", null ],
     [ "spdk_stop_poller", "thread_8h.html#adfddbbbb13145f26741106cb8296a05a", null ],
     [ "spdk_thread_op_fn", "thread_8h.html#a9f0ad3a2bcbb6d304401b579ab63aeba", null ],
@@ -52,6 +53,7 @@ var thread_8h =
     [ "spdk_io_device_unregister", "thread_8h.html#a4c6c3df3a611c10c176cb87966c622f0", null ],
     [ "spdk_poller_pause", "thread_8h.html#a0f0c05dd1c9cb0b31eee89213b89f3c3", null ],
     [ "spdk_poller_register", "thread_8h.html#a6b3e883ddce01ae8d93541304d1e9126", null ],
+    [ "spdk_poller_register_interrupt", "thread_8h.html#af6f06715375ed6a1bff5e037628a8558", null ],
     [ "spdk_poller_register_named", "thread_8h.html#a4e1086db1bd40b0a1720bd148967d82d", null ],
     [ "spdk_poller_resume", "thread_8h.html#ab3de0ffe9dfc29361b092d467d37017e", null ],
     [ "spdk_poller_unregister", "thread_8h.html#a9c26cbd781063f5ee627d6aba2c73fe3", null ],
@@ -81,5 +83,6 @@ var thread_8h =
     [ "spdk_thread_poll", "thread_8h.html#ad9e3693e8e9e6c9063ea36414294ae91", null ],
     [ "spdk_thread_send_critical_msg", "thread_8h.html#a91a7e9d44c2a332dfcea5e23df471c8d", null ],
     [ "spdk_thread_send_msg", "thread_8h.html#a07b662b152c21dad824ad2738d0733ec", null ],
-    [ "spdk_thread_set_cpumask", "thread_8h.html#a44c27f304a333a80bbdb48f1df12721f", null ]
+    [ "spdk_thread_set_cpumask", "thread_8h.html#a44c27f304a333a80bbdb48f1df12721f", null ],
+    [ "spdk_thread_set_interrupt_mode", "thread_8h.html#a5c98f015b55188cabb829aaf83a797c6", null ]
 ];

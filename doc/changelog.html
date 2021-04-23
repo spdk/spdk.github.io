@@ -166,6 +166,9 @@ v21.04: (Upcoming Release)</h1>
 <p>Removed the <code>pci_whitelist</code>, <code>pci_blacklist</code> and <code>master_core</code> members of struct <code><a class="el" href="structspdk__env__opts.html" title="Environment initialization options.">spdk_env_opts</a></code>.</p>
 <h2>event</h2>
 <p>Removed the <code>config_file</code>, <code>max_delay_us</code>, <code>pci_whitelist</code> and <code>pci_blacklist</code> members of struct <code><a class="el" href="structspdk__app__opts.html" title="Event framework initialization options.">spdk_app_opts</a></code>.</p>
+<h2>thread</h2>
+<p>Added <code>spdk_thread_set_interrupt_mode</code> function in order to set present spdk_thead into interrupt mode or back to poll mode. It is valid only when thread interrupt facility is enabled by <a class="el" href="thread_8h.html#a0cac0f188b5f46ff8bcdd5d4ffa37e84" title="Set SPDK run as event driven mode.">spdk_interrupt_mode_enable()</a>.</p>
+<p>Added <code>spdk_poller_register_interrupt</code> function to mark that the poller is capable of entering interrupt mode. Callback function will be called when the poller must transition into or out of interrupt mode.</p>
 <h2>iscsi</h2>
 <p>A security vulnerability has been identified and fixed in the SPDK iSCSI target. A TEXT PDU with no data, but CONTINUE flag set, would result in a NULL pointer dereference and crash the SPDK iSCSI target process. All users of the SPDK iSCSI target are recommended to update. All SPDK versions &lt;= v21.01 are affected.</p>
 <h2>accel</h2>
