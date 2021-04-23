@@ -1,5 +1,14 @@
 var NAVTREEINDEX22 =
 {
+"structspdk__nvmf__poll__group.html#a2032257806ec55661cd19c88eaac9ae8":[14,0,237,6],
+"structspdk__nvmf__poll__group.html#a3430311481af0a81ccdf7952f601adc3":[14,0,237,0],
+"structspdk__nvmf__poll__group.html#a35b33fc4bc8d044b83531c417bc43546":[14,0,237,9],
+"structspdk__nvmf__poll__group.html#a44051fa722dc9c61b9fed4d4a1ae8850":[14,0,237,3],
+"structspdk__nvmf__poll__group.html#a61e420c31fe45f08dd4efb43237f4884":[14,0,237,1],
+"structspdk__nvmf__poll__group.html#a83ac8e14a54372aa17c2c9ac4d12eceb":[14,0,237,4],
+"structspdk__nvmf__poll__group.html#ac59498d3fc905b4fd575454cda8707ff":[14,0,237,8],
+"structspdk__nvmf__poll__group.html#ad1682c942edc972b61450cdb7e775445":[14,0,237,5],
+"structspdk__nvmf__poll__group.html#ad8dd6675b21c245a6790338b7d4b796e":[14,0,237,7],
 "structspdk__nvmf__poll__group.html#aeef7e086f1560a61c196d74660665c10":[14,0,237,2],
 "structspdk__nvmf__poll__group__stat.html":[14,0,238],
 "structspdk__nvmf__poll__group__stat.html#a3c5e22c26f3daabb2bc56488bb5d3664":[14,0,238,0],
@@ -240,14 +249,5 @@ var NAVTREEINDEX22 =
 "structspdk__opal__compacket.html#abe67d76baafe8505e9401a457e53f1ba":[14,0,261,0],
 "structspdk__opal__compacket.html#ae805cde0506a350d4db1a630d6a79f80":[14,0,261,3],
 "structspdk__opal__compacket.html#af7af6ff2ae37ffd97dfbf568675c3677":[14,0,261,1],
-"structspdk__opal__d0__datastore__feat.html":[14,0,262],
-"structspdk__opal__d0__datastore__feat.html#a008649c44b46aba55d2c7ba8838e0620":[14,0,262,2],
-"structspdk__opal__d0__datastore__feat.html#a295989789470dddfbc929ac553d6055c":[14,0,262,0],
-"structspdk__opal__d0__datastore__feat.html#ad328de8b9ec25dc195379425e6f3023d":[14,0,262,1],
-"structspdk__opal__d0__datastore__feat.html#ad3f683eddd119478844453f109ed73af":[14,0,262,3],
-"structspdk__opal__d0__datastore__feat.html#afb80efa53c7b4499bfd97ce5caeed9ae":[14,0,262,4],
-"structspdk__opal__d0__feat__hdr.html":[14,0,263],
-"structspdk__opal__d0__feat__hdr.html#a069867c45c70edbc250156a7ade8ade7":[14,0,263,1],
-"structspdk__opal__d0__feat__hdr.html#a23ecef12200a5d4acf5f9d0498b2efcd":[14,0,263,2],
-"structspdk__opal__d0__feat__hdr.html#a6397c530e0e2f4a35c264dbd5ffc26e7":[14,0,263,3]
+"structspdk__opal__d0__datastore__feat.html":[14,0,262]
 };

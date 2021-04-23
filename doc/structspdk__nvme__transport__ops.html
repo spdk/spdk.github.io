@@ -195,6 +195,18 @@ void *(*&#160;</td><td class="memItemRight" valign="bottom"><b>ctrlr_map_cmb</b>
 <tr class="memitem:ae5520a930bea2319b55ee5ef9e7af08b"><td class="memItemLeft" align="right" valign="top"><a id="ae5520a930bea2319b55ee5ef9e7af08b"></a>
 int(*&#160;</td><td class="memItemRight" valign="bottom"><b>ctrlr_unmap_cmb</b> )(struct spdk_nvme_ctrlr *ctrlr)</td></tr>
 <tr class="separator:ae5520a930bea2319b55ee5ef9e7af08b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa419718b8b580046669c904758b49231"><td class="memItemLeft" align="right" valign="top"><a id="aa419718b8b580046669c904758b49231"></a>
+int(*&#160;</td><td class="memItemRight" valign="bottom"><b>ctrlr_enable_pmr</b> )(struct spdk_nvme_ctrlr *ctrlr)</td></tr>
+<tr class="separator:aa419718b8b580046669c904758b49231"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac806247ff6aabe8368412ee39ceb6f47"><td class="memItemLeft" align="right" valign="top"><a id="ac806247ff6aabe8368412ee39ceb6f47"></a>
+int(*&#160;</td><td class="memItemRight" valign="bottom"><b>ctrlr_disable_pmr</b> )(struct spdk_nvme_ctrlr *ctrlr)</td></tr>
+<tr class="separator:ac806247ff6aabe8368412ee39ceb6f47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2bbe47d5976108fb32c040bcaf9910cf"><td class="memItemLeft" align="right" valign="top"><a id="a2bbe47d5976108fb32c040bcaf9910cf"></a>
+void *(*&#160;</td><td class="memItemRight" valign="bottom"><b>ctrlr_map_pmr</b> )(struct spdk_nvme_ctrlr *ctrlr, size_t *size)</td></tr>
+<tr class="separator:a2bbe47d5976108fb32c040bcaf9910cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad981b4c48b39dcdaaa9b520ec6586e1d"><td class="memItemLeft" align="right" valign="top"><a id="ad981b4c48b39dcdaaa9b520ec6586e1d"></a>
+int(*&#160;</td><td class="memItemRight" valign="bottom"><b>ctrlr_unmap_pmr</b> )(struct spdk_nvme_ctrlr *ctrlr)</td></tr>
+<tr class="separator:ad981b4c48b39dcdaaa9b520ec6586e1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a001850e6c60e1a01a28ce12536252e30"><td class="memItemLeft" align="right" valign="top"><a id="a001850e6c60e1a01a28ce12536252e30"></a>
 struct spdk_nvme_qpair *(*&#160;</td><td class="memItemRight" valign="bottom"><b>ctrlr_create_io_qpair</b> )(struct spdk_nvme_ctrlr *ctrlr, uint16_t qid, const struct <a class="el" href="structspdk__nvme__io__qpair__opts.html">spdk_nvme_io_qpair_opts</a> *opts)</td></tr>
 <tr class="separator:a001850e6c60e1a01a28ce12536252e30"><td class="memSeparator" colspan="2">&#160;</td></tr>

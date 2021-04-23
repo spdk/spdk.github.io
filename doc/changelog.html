@@ -171,6 +171,8 @@ v21.04: (Upcoming Release)</h1>
 <h2>accel</h2>
 <p>Two new accelerated crc32 functions 'spdk_accel_submit_crc32cv' and 'spdk_accel_batch_prep_crc32cv' are added in order to provide the chained accelerated CRC32 computation support.</p>
 <h2>nvme</h2>
+<p>Added new functions <code>spdk_nvme_ctrlr_get_pmrsz</code>, <code>spdk_nvme_ctrlr_enable_pmr</code>, <code>spdk_nvme_ctrlr_disable_pmr</code>, <code>spdk_nvme_ctrlr_map_pmr</code> and <code>spdk_nvme_ctrlr_unmap_pmr</code>.</p>
+<p>Added NVMe transport operations to enable, disable, map and unmap the PMR.</p>
 <p>Added <code>spdk_nvme_qpair_get_optimal_poll_group</code> function and <code>qpair_get_optimal_poll_group</code> function pointer in <a class="el" href="structspdk__nvmf__transport__ops.html">spdk_nvmf_transport_ops</a> structure in order to add the qpair to the most suitable polling group.</p>
 <p>Add OPTPERF and namespace optimal performance fields to <a class="el" href="nvme__spec_8h.html" title="NVMe specification definitions.">nvme_spec.h</a>.</p>
 <p>Added spdk_nvme_set_hotplug_filter API to allow applications to choose which hot-inserted SSDs should be probed. This is useful for use cases where multiple independent SPDK processes are running on one node. The filter function can then be implemented in these processes to decide which SSDs to probe based on the new SSD's PCI address.</p>

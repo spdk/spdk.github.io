@@ -2139,8 +2139,14 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 <li>SPDK_NVME_CTRLR_DIRECTIVES_SUPPORTED
 : <a class="el" href="nvme_8h.html#add21ceb016f09949ac6cef50e0566818a2ecf8c85bee974f9e7f35a684dff76ac">nvme.h</a>
 </li>
+<li>spdk_nvme_ctrlr_disable_pmr()
+: <a class="el" href="nvme_8h.html#af8a3c1f4f6b5595426fb9bd8974a85fe">nvme.h</a>
+</li>
 <li>spdk_nvme_ctrlr_disconnect_io_qpair()
 : <a class="el" href="nvme_8h.html#a2ba2d2f9571a62a47e04ef16e65f9e7b">nvme.h</a>
+</li>
+<li>spdk_nvme_ctrlr_enable_pmr()
+: <a class="el" href="nvme_8h.html#a006a6050d45feefadbf0ce978ca009de">nvme.h</a>
 </li>
 <li>spdk_nvme_ctrlr_fail()
 : <a class="el" href="nvme_8h.html#a4b7578aeee6b6a092a4a4013a2f32ce5">nvme.h</a>
@@ -2190,6 +2196,9 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 <li>spdk_nvme_ctrlr_get_pci_device()
 : <a class="el" href="nvme_8h.html#a60d8173db83accb35f0c5fe1ec8261bf">nvme.h</a>
 </li>
+<li>spdk_nvme_ctrlr_get_pmrsz()
+: <a class="el" href="nvme_8h.html#a7642f1fc6eec21b93b5f60e386e3e36c">nvme.h</a>
+</li>
 <li>spdk_nvme_ctrlr_get_registers()
 : <a class="el" href="nvme_8h.html#a887db5ce5c84eba37a4d82f5d180d020">nvme.h</a>
 </li>
@@ -2235,6 +2244,9 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 <li>spdk_nvme_ctrlr_map_cmb()
 : <a class="el" href="nvme_8h.html#ae4fcdfd45c5b8a6a6ac4b99fff9c66b1">nvme.h</a>
 </li>
+<li>spdk_nvme_ctrlr_map_pmr()
+: <a class="el" href="nvme_8h.html#a85f53b3be86d9561f0dfbc87ee827821">nvme.h</a>
+</li>
 <li>spdk_nvme_ctrlr_process_admin_completions()
 : <a class="el" href="nvme_8h.html#a10282695461985f58f54de022911745e">nvme.h</a>
 </li>
@@ -2279,6 +2291,9 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 </li>
 <li>spdk_nvme_ctrlr_unmap_cmb()
 : <a class="el" href="nvme_8h.html#a645844b863c5c40a0f3eb0c72d80e0ff">nvme.h</a>
+</li>
+<li>spdk_nvme_ctrlr_unmap_pmr()
+: <a class="el" href="nvme_8h.html#a07bd04caa1e443e7709540e0dac7d4ee">nvme.h</a>
 </li>
 <li>spdk_nvme_ctrlr_update_firmware()
 : <a class="el" href="nvme_8h.html#a7938b258a7614073065be4f6a35bd0e2">nvme.h</a>
@@ -2895,11 +2910,11 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 <li>SPDK_NVME_SGLS_NOT_SUPPORTED
 : <a class="el" href="nvme__spec_8h.html#af3e4102cda177c51a05a6bb02fa62b87a5978d5c7ce04a60c9d86b157037cb2f0">nvme_spec.h</a>
 </li>
-<li>spdk_nvme_sgls_supported
-: <a class="el" href="nvme__spec_8h.html#af3e4102cda177c51a05a6bb02fa62b87">nvme_spec.h</a>
-</li>
 <li>SPDK_NVME_SGLS_SUPPORTED
 : <a class="el" href="nvme__spec_8h.html#af3e4102cda177c51a05a6bb02fa62b87ade9828594ce1d9d11427a38182149d9d">nvme_spec.h</a>
+</li>
+<li>spdk_nvme_sgls_supported
+: <a class="el" href="nvme__spec_8h.html#af3e4102cda177c51a05a6bb02fa62b87">nvme_spec.h</a>
 </li>
 <li>SPDK_NVME_SGLS_SUPPORTED_DWORD_ALIGNED
 : <a class="el" href="nvme__spec_8h.html#af3e4102cda177c51a05a6bb02fa62b87a702868f6b85dd329c4baf00642e99fca">nvme_spec.h</a>

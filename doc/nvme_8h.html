@@ -413,6 +413,9 @@ Functions</h2></td></tr>
 <tr class="memitem:aae98a4e77ad7bf29414a10966597416c"><td class="memItemLeft" align="right" valign="top">union <a class="el" href="unionspdk__nvme__pmrcap__register.html">spdk_nvme_pmrcap_register</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#aae98a4e77ad7bf29414a10966597416c">spdk_nvme_ctrlr_get_regs_pmrcap</a> (struct spdk_nvme_ctrlr *ctrlr)</td></tr>
 <tr class="memdesc:aae98a4e77ad7bf29414a10966597416c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the NVMe controller PMRCAP (Persistent Memory Region Capabilities) register.  <a href="#aae98a4e77ad7bf29414a10966597416c">More...</a><br /></td></tr>
 <tr class="separator:aae98a4e77ad7bf29414a10966597416c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7642f1fc6eec21b93b5f60e386e3e36c"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a7642f1fc6eec21b93b5f60e386e3e36c">spdk_nvme_ctrlr_get_pmrsz</a> (struct spdk_nvme_ctrlr *ctrlr)</td></tr>
+<tr class="memdesc:a7642f1fc6eec21b93b5f60e386e3e36c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the NVMe controller PMR size.  <a href="#a7642f1fc6eec21b93b5f60e386e3e36c">More...</a><br /></td></tr>
+<tr class="separator:a7642f1fc6eec21b93b5f60e386e3e36c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a02b18deae44682a51177e8a4193af602"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a02b18deae44682a51177e8a4193af602">spdk_nvme_ctrlr_get_num_ns</a> (struct spdk_nvme_ctrlr *ctrlr)</td></tr>
 <tr class="memdesc:a02b18deae44682a51177e8a4193af602"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the number of namespaces for the given NVMe controller.  <a href="#a02b18deae44682a51177e8a4193af602">More...</a><br /></td></tr>
 <tr class="separator:a02b18deae44682a51177e8a4193af602"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -563,6 +566,18 @@ Functions</h2></td></tr>
 <tr class="memitem:a645844b863c5c40a0f3eb0c72d80e0ff"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a645844b863c5c40a0f3eb0c72d80e0ff">spdk_nvme_ctrlr_unmap_cmb</a> (struct spdk_nvme_ctrlr *ctrlr)</td></tr>
 <tr class="memdesc:a645844b863c5c40a0f3eb0c72d80e0ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Free a controller memory I/O buffer.  <a href="#a645844b863c5c40a0f3eb0c72d80e0ff">More...</a><br /></td></tr>
 <tr class="separator:a645844b863c5c40a0f3eb0c72d80e0ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a006a6050d45feefadbf0ce978ca009de"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a006a6050d45feefadbf0ce978ca009de">spdk_nvme_ctrlr_enable_pmr</a> (struct spdk_nvme_ctrlr *ctrlr)</td></tr>
+<tr class="memdesc:a006a6050d45feefadbf0ce978ca009de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable the Persistent Memory Region.  <a href="#a006a6050d45feefadbf0ce978ca009de">More...</a><br /></td></tr>
+<tr class="separator:a006a6050d45feefadbf0ce978ca009de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8a3c1f4f6b5595426fb9bd8974a85fe"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#af8a3c1f4f6b5595426fb9bd8974a85fe">spdk_nvme_ctrlr_disable_pmr</a> (struct spdk_nvme_ctrlr *ctrlr)</td></tr>
+<tr class="memdesc:af8a3c1f4f6b5595426fb9bd8974a85fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disable the Persistent Memory Region.  <a href="#af8a3c1f4f6b5595426fb9bd8974a85fe">More...</a><br /></td></tr>
+<tr class="separator:af8a3c1f4f6b5595426fb9bd8974a85fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85f53b3be86d9561f0dfbc87ee827821"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a85f53b3be86d9561f0dfbc87ee827821">spdk_nvme_ctrlr_map_pmr</a> (struct spdk_nvme_ctrlr *ctrlr, size_t *size)</td></tr>
+<tr class="memdesc:a85f53b3be86d9561f0dfbc87ee827821"><td class="mdescLeft">&#160;</td><td class="mdescRight">Map the Persistent Memory Region so that it's data is visible from the CPU.  <a href="#a85f53b3be86d9561f0dfbc87ee827821">More...</a><br /></td></tr>
+<tr class="separator:a85f53b3be86d9561f0dfbc87ee827821"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07bd04caa1e443e7709540e0dac7d4ee"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a07bd04caa1e443e7709540e0dac7d4ee">spdk_nvme_ctrlr_unmap_pmr</a> (struct spdk_nvme_ctrlr *ctrlr)</td></tr>
+<tr class="memdesc:a07bd04caa1e443e7709540e0dac7d4ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Free the Persistent Memory Region.  <a href="#a07bd04caa1e443e7709540e0dac7d4ee">More...</a><br /></td></tr>
+<tr class="separator:a07bd04caa1e443e7709540e0dac7d4ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abb7ae9abf97b7c6b57777d06eaa1258a"><td class="memItemLeft" align="right" valign="top">const struct <a class="el" href="structspdk__nvme__transport__id.html">spdk_nvme_transport_id</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#abb7ae9abf97b7c6b57777d06eaa1258a">spdk_nvme_ctrlr_get_transport_id</a> (struct spdk_nvme_ctrlr *ctrlr)</td></tr>
 <tr class="memdesc:abb7ae9abf97b7c6b57777d06eaa1258a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the transport ID for a given NVMe controller.  <a href="#abb7ae9abf97b7c6b57777d06eaa1258a">More...</a><br /></td></tr>
 <tr class="separator:abb7ae9abf97b7c6b57777d06eaa1258a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -2783,6 +2798,33 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_map_prps</b>
 
 </div>
 </div>
+<a id="af8a3c1f4f6b5595426fb9bd8974a85fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af8a3c1f4f6b5595426fb9bd8974a85fe">&#9670;&nbsp;</a></span>spdk_nvme_ctrlr_disable_pmr()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_nvme_ctrlr_disable_pmr </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_nvme_ctrlr *&#160;</td>
+          <td class="paramname"><em>ctrlr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Disable the Persistent Memory Region. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ctrlr</td><td>Controller that contains the Persistent Memory Region</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success. Negated errno on the following error conditions: -ENOTSUP: PMR is not supported by the Controller. -EIO: Registers access failure. -EINVAL: PMR Time Units Invalid or PMR is already disabled. -ETIMEDOUT: Timed out to Disable PMR. -ENOSYS: Transport does not support Disable PMR function. </dd></dl>
+
+</div>
+</div>
 <a id="a2ba2d2f9571a62a47e04ef16e65f9e7b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2ba2d2f9571a62a47e04ef16e65f9e7b">&#9670;&nbsp;</a></span>spdk_nvme_ctrlr_disconnect_io_qpair()</h2>
 
@@ -2808,6 +2850,33 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_map_prps</b>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="a006a6050d45feefadbf0ce978ca009de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a006a6050d45feefadbf0ce978ca009de">&#9670;&nbsp;</a></span>spdk_nvme_ctrlr_enable_pmr()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_nvme_ctrlr_enable_pmr </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_nvme_ctrlr *&#160;</td>
+          <td class="paramname"><em>ctrlr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Enable the Persistent Memory Region. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ctrlr</td><td>Controller that contains the Persistent Memory Region</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success. Negated errno on the following error conditions: -ENOTSUP: PMR is not supported by the Controller. -EIO: Registers access failure. -EINVAL: PMR Time Units Invalid or PMR is already enabled. -ETIMEDOUT: Timed out to Enable PMR. -ENOSYS: Transport does not support Enable PMR function. </dd></dl>
 
 </div>
 </div>
@@ -3305,6 +3374,33 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_map_prps</b>
 
 </div>
 </div>
+<a id="a7642f1fc6eec21b93b5f60e386e3e36c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7642f1fc6eec21b93b5f60e386e3e36c">&#9670;&nbsp;</a></span>spdk_nvme_ctrlr_get_pmrsz()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint64_t spdk_nvme_ctrlr_get_pmrsz </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_nvme_ctrlr *&#160;</td>
+          <td class="paramname"><em>ctrlr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the NVMe controller PMR size. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ctrlr</td><td>Opaque handle to NVMe controller.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the NVMe controller PMR size or 0 if PMR is not supported. </dd></dl>
+
+</div>
+</div>
 <a id="a887db5ce5c84eba37a4d82f5d180d020"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a887db5ce5c84eba37a4d82f5d180d020">&#9670;&nbsp;</a></span>spdk_nvme_ctrlr_get_registers()</h2>
 
@@ -3768,6 +3864,44 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_map_prps</b>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Pointer to controller memory buffer, or NULL on failure. </dd></dl>
+
+</div>
+</div>
+<a id="a85f53b3be86d9561f0dfbc87ee827821"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a85f53b3be86d9561f0dfbc87ee827821">&#9670;&nbsp;</a></span>spdk_nvme_ctrlr_map_pmr()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* spdk_nvme_ctrlr_map_pmr </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_nvme_ctrlr *&#160;</td>
+          <td class="paramname"><em>ctrlr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t *&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Map the Persistent Memory Region so that it's data is visible from the CPU. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ctrlr</td><td>Controller that contains the Persistent Memory Region </td></tr>
+    <tr><td class="paramname">size</td><td>Size of the region that was mapped.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Pointer to Persistent Memory Region, or NULL on failure. </dd></dl>
 
 </div>
 </div>
@@ -4258,6 +4392,33 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_map_prps</b>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="a07bd04caa1e443e7709540e0dac7d4ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a07bd04caa1e443e7709540e0dac7d4ee">&#9670;&nbsp;</a></span>spdk_nvme_ctrlr_unmap_pmr()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_nvme_ctrlr_unmap_pmr </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_nvme_ctrlr *&#160;</td>
+          <td class="paramname"><em>ctrlr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Free the Persistent Memory Region. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ctrlr</td><td>Controller from which to unmap the Persistent Memory Region.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, negative errno on failure. -ENXIO: Either PMR is not supported by the Controller or the PMR is already unmapped. -ENOSYS: Transport does not support Unmap PMR function. </dd></dl>
 
 </div>
 </div>
