@@ -61,6 +61,8 @@ var NAVTREEINDEX2 =
 "crc32_8h.html":[15,0,16],
 "crc32_8h.html#a51fc46bdf29f35610a0c99ae6ad0e009":[15,0,16,1],
 "crc32_8h.html#a5320d8945f28627a2c5e5b15f1a997ee":[15,0,16,0],
+"deprecation.html":[1,4],
+"deprecation.html#deprecation-notices":[1,4,0],
 "driver_modules.html":[7],
 "endian_8h.html":[15,0,17],
 "endian_8h.html#a1a4d465029018803013fd7993a901722":[15,0,17,6],
@@ -247,7 +249,5 @@ var NAVTREEINDEX2 =
 "event_8h.html#ab6ea643e128d25d5ac40e29b76d94c43":[15,0,20,8],
 "event_8h.html#ac64ac17f456e8ac388d959c2e7a4a13b":[15,0,20,10],
 "event_8h.html#acc52e8c68c8ccec4640e14f687157afe":[15,0,20,12],
-"event_8h.html#ad6d27c63164846e87e44de2f39792024":[15,0,20,2],
-"event_8h.html#af0ae0584a4594f82b7c5294b4d4f6fe6":[15,0,20,1],
-"event_8h.html#af17b7963b6a6964e5eb18480193acedb":[15,0,20,19]
+"event_8h.html#ad6d27c63164846e87e44de2f39792024":[15,0,20,2]
 };
