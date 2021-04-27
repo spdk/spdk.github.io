@@ -9,6 +9,8 @@ var searchData=
   ['enable_5fquickack',['enable_quickack',['../structspdk__sock__impl__opts.html#afdb21e60863bdb7c5d7e15ed1c2e9828',1,'spdk_sock_impl_opts']]],
   ['enable_5frecv_5fpipe',['enable_recv_pipe',['../structspdk__sock__impl__opts.html#a35575361b08cbdbd502ee741fadfa46b',1,'spdk_sock_impl_opts']]],
   ['enable_5fzerocopy_5fsend',['enable_zerocopy_send',['../structspdk__sock__impl__opts.html#af38850a321bda94d83c8830537825240',1,'spdk_sock_impl_opts']]],
+  ['enable_5fzerocopy_5fsend_5fclient',['enable_zerocopy_send_client',['../structspdk__sock__impl__opts.html#a2bbb2ddb2593061fed80a7b50b110855',1,'spdk_sock_impl_opts']]],
+  ['enable_5fzerocopy_5fsend_5fserver',['enable_zerocopy_send_server',['../structspdk__sock__impl__opts.html#a0e1eab74b0d7c71ff588ccf888c647ee',1,'spdk_sock_impl_opts']]],
   ['entries',['entries',['../structspdk__trace__history.html#a09f645e9d5c19fb4e4fe71b4faaa3951',1,'spdk_trace_history']]],
   ['env_5fcontext',['env_context',['../structspdk__env__opts.html#a54e6333e5067530db7e69b95ef8808ca',1,'spdk_env_opts::env_context()'],['../structspdk__app__opts.html#a7e520897d6a9e39c3e62cc4259bd2ea3',1,'spdk_app_opts::env_context()']]],
   ['err',['err',['../unionspdk__nvme__pmrsts__register.html#a163fb77d9c83b77dbd31494484faeeeb',1,'spdk_nvme_pmrsts_register']]],

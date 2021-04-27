@@ -163,7 +163,7 @@ Data Fields</h2></td></tr>
 <tr class="memdesc:a35575361b08cbdbd502ee741fadfa46b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable or disable receive pipe.  <a href="#a35575361b08cbdbd502ee741fadfa46b">More...</a><br /></td></tr>
 <tr class="separator:a35575361b08cbdbd502ee741fadfa46b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af38850a321bda94d83c8830537825240"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__sock__impl__opts.html#af38850a321bda94d83c8830537825240">enable_zerocopy_send</a></td></tr>
-<tr class="memdesc:af38850a321bda94d83c8830537825240"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable or disable use of zero copy flow on send.  <a href="#af38850a321bda94d83c8830537825240">More...</a><br /></td></tr>
+<tr class="memdesc:af38850a321bda94d83c8830537825240"><td class="mdescLeft">&#160;</td><td class="mdescRight"><b>Deprecated, please use enable_zerocopy_send_server or enable_zerocopy_send_client instead</b> Enable or disable use of zero copy flow on send.  <a href="#af38850a321bda94d83c8830537825240">More...</a><br /></td></tr>
 <tr class="separator:af38850a321bda94d83c8830537825240"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afdb21e60863bdb7c5d7e15ed1c2e9828"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__sock__impl__opts.html#afdb21e60863bdb7c5d7e15ed1c2e9828">enable_quickack</a></td></tr>
 <tr class="memdesc:afdb21e60863bdb7c5d7e15ed1c2e9828"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable or disable quick ACK.  <a href="#afdb21e60863bdb7c5d7e15ed1c2e9828">More...</a><br /></td></tr>
@@ -171,6 +171,12 @@ Data Fields</h2></td></tr>
 <tr class="memitem:a7bf2c41ae7b77f4d76cf66ed692a955f"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__sock__impl__opts.html#a7bf2c41ae7b77f4d76cf66ed692a955f">enable_placement_id</a></td></tr>
 <tr class="memdesc:a7bf2c41ae7b77f4d76cf66ed692a955f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable or disable placement_id.  <a href="#a7bf2c41ae7b77f4d76cf66ed692a955f">More...</a><br /></td></tr>
 <tr class="separator:a7bf2c41ae7b77f4d76cf66ed692a955f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e1eab74b0d7c71ff588ccf888c647ee"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__sock__impl__opts.html#a0e1eab74b0d7c71ff588ccf888c647ee">enable_zerocopy_send_server</a></td></tr>
+<tr class="memdesc:a0e1eab74b0d7c71ff588ccf888c647ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable or disable use of zero copy flow on send for server sockets.  <a href="#a0e1eab74b0d7c71ff588ccf888c647ee">More...</a><br /></td></tr>
+<tr class="separator:a0e1eab74b0d7c71ff588ccf888c647ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2bbb2ddb2593061fed80a7b50b110855"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__sock__impl__opts.html#a2bbb2ddb2593061fed80a7b50b110855">enable_zerocopy_send_client</a></td></tr>
+<tr class="memdesc:a2bbb2ddb2593061fed80a7b50b110855"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable or disable use of zero copy flow on send for client sockets.  <a href="#a2bbb2ddb2593061fed80a7b50b110855">More...</a><br /></td></tr>
+<tr class="separator:a2bbb2ddb2593061fed80a7b50b110855"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>SPDK socket implementation options. </p>
@@ -239,7 +245,41 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Enable or disable use of zero copy flow on send. </p>
+<p><b>Deprecated, please use enable_zerocopy_send_server or enable_zerocopy_send_client instead</b> Enable or disable use of zero copy flow on send. </p>
+<p>Used by posix socket module. </p>
+
+</div>
+</div>
+<a id="a2bbb2ddb2593061fed80a7b50b110855"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2bbb2ddb2593061fed80a7b50b110855">&#9670;&nbsp;</a></span>enable_zerocopy_send_client</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool spdk_sock_impl_opts::enable_zerocopy_send_client</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Enable or disable use of zero copy flow on send for client sockets. </p>
+<p>Used by posix socket module. </p>
+
+</div>
+</div>
+<a id="a0e1eab74b0d7c71ff588ccf888c647ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e1eab74b0d7c71ff588ccf888c647ee">&#9670;&nbsp;</a></span>enable_zerocopy_send_server</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool spdk_sock_impl_opts::enable_zerocopy_send_server</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Enable or disable use of zero copy flow on send for server sockets. </p>
 <p>Used by posix socket module. </p>
 
 </div>

@@ -9,6 +9,8 @@ var searchData=
   ['enable_5fquickack',['enable_quickack',['../structspdk__sock__impl__opts.html#afdb21e60863bdb7c5d7e15ed1c2e9828',1,'spdk_sock_impl_opts']]],
   ['enable_5frecv_5fpipe',['enable_recv_pipe',['../structspdk__sock__impl__opts.html#a35575361b08cbdbd502ee741fadfa46b',1,'spdk_sock_impl_opts']]],
   ['enable_5fzerocopy_5fsend',['enable_zerocopy_send',['../structspdk__sock__impl__opts.html#af38850a321bda94d83c8830537825240',1,'spdk_sock_impl_opts']]],
+  ['enable_5fzerocopy_5fsend_5fclient',['enable_zerocopy_send_client',['../structspdk__sock__impl__opts.html#a2bbb2ddb2593061fed80a7b50b110855',1,'spdk_sock_impl_opts']]],
+  ['enable_5fzerocopy_5fsend_5fserver',['enable_zerocopy_send_server',['../structspdk__sock__impl__opts.html#a0e1eab74b0d7c71ff588ccf888c647ee',1,'spdk_sock_impl_opts']]],
   ['endian_2eh',['endian.h',['../endian_8h.html',1,'']]],
   ['entries',['entries',['../structspdk__trace__history.html#a09f645e9d5c19fb4e4fe71b4faaa3951',1,'spdk_trace_history']]],
   ['env_2eh',['env.h',['../env_8h.html',1,'']]],

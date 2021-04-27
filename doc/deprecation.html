@@ -162,6 +162,8 @@ Deprecation Notices</h1>
 <li><code>poll_group_get_stat</code> (transport op in <code><a class="el" href="nvmf__transport_8h.html" title="NVMe-oF Target transport plugin API.">nvmf_transport.h</a></code>),</li>
 <li><code>poll_group_free_stat</code> (transport op in <code><a class="el" href="nvmf__transport_8h.html" title="NVMe-oF Target transport plugin API.">nvmf_transport.h</a></code>). Please use <code>spdk_nvmf_poll_group_dump_stat</code> and <code>poll_group_dump_stat</code> instead.</li>
 </ul>
+<h2>rpc</h2>
+<p>Parameter <code>enable-zerocopy-send</code> of RPC <code>sock_impl_set_options</code> is deprecated and will be removed in SPDK 21.07, use <code>enable-zerocopy-send-server</code> or <code>enable-zerocopy-send-client</code> instead. Parameter <code>disable-zerocopy-send</code> of RPC <code>sock_impl_set_options</code> is deprecated and will be removed in SPDK 21.07, use <code>disable-zerocopy-send-server</code> or <code>disable-zerocopy-send-client</code> instead.</p>
 <h2>rpm</h2>
 <p><code>pkg/spdk.spec</code> is considered to be deprecated and scheduled for removal in SPDK 21.07. Please use <code>rpmbuild/spdk.spec</code> instead and see <a href="https://spdk.io/doc/rpm.html">RPM documentation</a> for more details. </p>
 </div></div><!-- PageDoc -->

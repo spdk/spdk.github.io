@@ -9,7 +9,8 @@ var sock_8h =
     [ "spdk_placement_mode", "sock_8h.html#a4d72186991093c81a612bb14b740f360", [
       [ "PLACEMENT_NONE", "sock_8h.html#a4d72186991093c81a612bb14b740f360a1c7c35198c0faac5370b0497253dfbd6", null ],
       [ "PLACEMENT_NAPI", "sock_8h.html#a4d72186991093c81a612bb14b740f360a740a0a7ef64324157d827260887e4647", null ],
-      [ "PLACEMENT_CPU", "sock_8h.html#a4d72186991093c81a612bb14b740f360ab11c713f248c0dbff5f02805b3b8288b", null ]
+      [ "PLACEMENT_CPU", "sock_8h.html#a4d72186991093c81a612bb14b740f360ab11c713f248c0dbff5f02805b3b8288b", null ],
+      [ "PLACEMENT_MARK", "sock_8h.html#a4d72186991093c81a612bb14b740f360a6821478357894e1459407043c662a788", null ]
     ] ],
     [ "spdk_sock_accept", "sock_8h.html#a5ea2c431e11b3e15e0fba18fb4faa954", null ],
     [ "spdk_sock_close", "sock_8h.html#a407c7aebae3d1a1556109da46a73213e", null ],

@@ -145,8 +145,10 @@ $(document).ready(function(){initNavTree('changelog.html','');});
 <div class="title">Changelog </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h1><a class="anchor" id="changelog-v21-04"></a>
-v21.04: (Upcoming Release)</h1>
+<div class="textblock"><h1><a class="anchor" id="changelog-v21-07"></a>
+v21.07: (Upcoming Release)</h1>
+<h1><a class="anchor" id="changelog-v21-04"></a>
+v21.04:</h1>
 <h2>accel</h2>
 <p>Two new accelerated crc32 functions <code>spdk_accel_submit_crc32cv</code> and <code>spdk_accel_batch_prep_crc32cv</code> are added in order to provide the chained accelerated CRC32 computation support.</p>
 <h2>bdev</h2>
@@ -216,10 +218,13 @@ v21.04: (Upcoming Release)</h1>
 <p>For <code>bdev_raid_create</code> RPC, the deprecated parameter <code>strip_size</code> was removed.</p>
 <h2>rpc</h2>
 <p>New RPC <code>bdev_nvme_get_transport_statistics</code> was added, it allows to get transport statistics of nvme poll groups.</p>
+<p>Parameter <code>enable-zerocopy-send</code> of RPC <code>sock_impl_set_options</code> is deprecated and will be removed in SPDK 21.07, use <code>enable-zerocopy-send-server</code> or <code>enable-zerocopy-send-client</code> instead. Parameter <code>disable-zerocopy-send</code> of RPC <code>sock_impl_set_options</code> is deprecated and will be removed in SPDK 21.07, use <code>disable-zerocopy-send-server</code> or <code>disable-zerocopy-send-client</code> instead.</p>
 <h2>rpm</h2>
 <p>Added support for new RPM spec, rpmbuild/spdk.spec, which can be used for packaging the SPDK. The pkg/spdk.spec is considered to be deprecated and scheduled for removal in SPDK 21.07. See <a href="https://spdk.io/doc/rpm.html">RPM documentation</a> for more details.</p>
 <h2>sock</h2>
 <p>The type of <code>enable_placement_id</code> in struct <code><a class="el" href="structspdk__sock__impl__opts.html" title="SPDK socket implementation options.">spdk_sock_impl_opts</a></code> is changed from bool to int. We can use RPC to configure different value of <code>enable_placement_id</code>. Then we can leverage SO_INCOMING_CPU to get placement_id, which aims to utilize CPU cache locality, enabled by setting enable_placement_id=2.</p>
+<p>A new socket placement mode called PLACEMENT_MARK has been added. Some NICs allow sockets to be marked using the SO_MARK socket option as a hint for which hardware queue they should be associated with. This mode leverages that by setting the same value for all sockets within a poll group.</p>
+<p>New parameters <code>enable_zerocopy_send_server</code> and <code>enable_zerocopy_send_client</code> were added to struct <a class="el" href="structspdk__sock__impl__opts.html" title="SPDK socket implementation options.">spdk_sock_impl_opts</a>, these parameters enable or disable zero copy send for server and client sockets which are created using <code>spdk_sock_listen</code> and <code>spdk_sock_listen_ext</code> (server); <code>spdk_sock_connect</code> and <code>spdk_sock_connect_ext</code> (client) functions. Existing parameter <code>enable_zerocopy_send</code> enables or disables zero copy send for both server and client sockets.</p>
 <h2>thread</h2>
 <p>A new API <code>spdk_io_channel_get_io_device</code> was added to get the io_device for the specified I/O channel.</p>
 <p>Added <code>spdk_thread_set_interrupt_mode</code> function in order to set present spdk_thread into interrupt mode or back to poll mode. It is valid only when thread interrupt facility is enabled by <code>spdk_interrupt_mode_enable</code>.</p>

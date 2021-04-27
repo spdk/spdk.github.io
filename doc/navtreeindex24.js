@@ -1,5 +1,8 @@
 var NAVTREEINDEX24 =
 {
+"structspdk__scsi__pr__in__report__capabilities__data.html#a11a0eb525a585f29b67af0e60eae9cd5":[14,0,293,2],
+"structspdk__scsi__pr__in__report__capabilities__data.html#a14a4175d4165c5c025cdf064c339fd30":[14,0,293,4],
+"structspdk__scsi__pr__in__report__capabilities__data.html#a18d71dea2bcf560015a453b6382d3c29":[14,0,293,11],
 "structspdk__scsi__pr__in__report__capabilities__data.html#a29a7afa553dcc572ec63b6331679f43d":[14,0,293,12],
 "structspdk__scsi__pr__in__report__capabilities__data.html#a3438faf62baebaabdf3e07b1093975c3":[14,0,293,5],
 "structspdk__scsi__pr__in__report__capabilities__data.html#a35bea65ca66c6fa628cec730eac860a1":[14,0,293,1],
@@ -94,10 +97,12 @@ var NAVTREEINDEX24 =
 "structspdk__scsi__vpd__page.html#ac62f5b7a0b08a2ec4572bf002ce29399":[14,0,300,2],
 "structspdk__scsi__vpd__page.html#ae6185e80a408f83694f930378d8a5c03":[14,0,300,3],
 "structspdk__sock__impl__opts.html":[14,0,301],
+"structspdk__sock__impl__opts.html#a0e1eab74b0d7c71ff588ccf888c647ee":[14,0,301,5],
+"structspdk__sock__impl__opts.html#a2bbb2ddb2593061fed80a7b50b110855":[14,0,301,4],
 "structspdk__sock__impl__opts.html#a35575361b08cbdbd502ee741fadfa46b":[14,0,301,2],
 "structspdk__sock__impl__opts.html#a7bf2c41ae7b77f4d76cf66ed692a955f":[14,0,301,0],
-"structspdk__sock__impl__opts.html#ae34d38383f98affcc7c880ab16bd9b72":[14,0,301,4],
-"structspdk__sock__impl__opts.html#ae57696011bed6b45751719d836b81886":[14,0,301,5],
+"structspdk__sock__impl__opts.html#ae34d38383f98affcc7c880ab16bd9b72":[14,0,301,6],
+"structspdk__sock__impl__opts.html#ae57696011bed6b45751719d836b81886":[14,0,301,7],
 "structspdk__sock__impl__opts.html#af38850a321bda94d83c8830537825240":[14,0,301,3],
 "structspdk__sock__impl__opts.html#afdb21e60863bdb7c5d7e15ed1c2e9828":[14,0,301,1],
 "structspdk__sock__opts.html":[14,0,302],
@@ -244,10 +249,5 @@ var NAVTREEINDEX24 =
 "thread_8h.html#a9c26cbd781063f5ee627d6aba2c73fe3":[15,0,55,46],
 "thread_8h.html#a9df2d253885de944794d6810ff98fc4e":[15,0,55,21],
 "thread_8h.html#a9df2d253885de944794d6810ff98fc4ea0008a2defd401c21f63973cacdddd73f":[15,0,55,21,1],
-"thread_8h.html#a9df2d253885de944794d6810ff98fc4ea8ad008a1b922191348b72f1b0a0223d0":[15,0,55,21,0],
-"thread_8h.html#a9f06d559046d570e025d6b67c7e8d507":[15,0,55,54],
-"thread_8h.html#a9f0ad3a2bcbb6d304401b579ab63aeba":[15,0,55,16],
-"thread_8h.html#a9f3b860a0c3ec1fb4f1e6743b1d746b6":[15,0,55,19],
-"thread_8h.html#a9f3b860a0c3ec1fb4f1e6743b1d746b6a4852b6a4e09bd601a9cf695a17dc0929":[15,0,55,19,1],
-"thread_8h.html#a9f3b860a0c3ec1fb4f1e6743b1d746b6a5d4cc88e0ae514336a79c553587f47f6":[15,0,55,19,0]
+"thread_8h.html#a9df2d253885de944794d6810ff98fc4ea8ad008a1b922191348b72f1b0a0223d0":[15,0,55,21,0]
 };

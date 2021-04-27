@@ -14,7 +14,8 @@ var intro =
       [ "Running An Example", "vagrant.html#vagrant_example", null ]
     ] ],
     [ "Changelog", "changelog.html", [
-      [ "v21.04: (Upcoming Release)", "changelog.html#changelog-v21-04", null ],
+      [ "v21.07: (Upcoming Release)", "changelog.html#changelog-v21-07", null ],
+      [ "v21.04:", "changelog.html#changelog-v21-04", null ],
       [ "v21.01:", "changelog.html#changelog-v21-01", null ],
       [ "v20.10:", "changelog.html#changelog-v20-10", null ],
       [ "v20.07: SPDK CSI driver, new accel_fw commands, I/O abort support", "changelog.html#changelog-v20-07", null ],
