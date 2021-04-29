@@ -193,13 +193,14 @@ git checkout -b <my_branch>
 ~~~
 
 Then, make your changes and commit as you go. You'll build up a branch off of master with a series of commits. Once you are
-done, pull the latest from master again and rebase your changes on top.
+done, pull the latest from master again, rebase your changes on top, and update the submodule pointers that SPDK relies on.
 
 ~~~{.sh}
 git checkout master
 git pull
 git checkout <my_branch>
 git rebase -i master
+git submodule update
 ~~~
 
 Now your branch should be based on the tip of master and you should have the tip of <my_branch> checked out. You can push
@@ -403,7 +404,7 @@ git push review
 ~~~
 
 Gerrit will create three reviews, each dependent on one another. Inevitably, a reviewer will ask you to make a change during
-code review on change #2. To address that feedback, you could do the following:
+code review on change #2. To address that feedback, you should do the following:
 
 ~~~{.sh}
 git checkout <sha of change #2>
@@ -412,6 +413,7 @@ git checkout -b tmp # 'tmp' or any name you want
 git commit -s -a --amend # The amend modifies change #2 to include your updates
 git checkout <my_series> # Points at change #3
 git rebase -i tmp # Move change #3 on top of the new change #2
+git submodule update
 git push review
 git branch -D tmp # Clean up the 'tmp' branch
 ~~~
