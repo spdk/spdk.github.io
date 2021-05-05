@@ -168,7 +168,8 @@ being solved, how was it discovered and how this patch solves the problem.  See 
 Request For Comments (RFC) type of patch.
 
 * The first line of your commit message should be in the form "component: short description of patch".
-There should be a blank line between this first line and the rest of the commit message.
+There should be a blank line between this first line and the rest of the commit message. For example:
+"nvme: add support for NVME_IOCTL_IO_CMD for cuse"
 
 * If your commit fixes a GitHub issue, please include "Fixes #issue number" on a separate line so that GitHub can link the two.
 
@@ -193,13 +194,14 @@ git checkout -b <my_branch>
 ~~~
 
 Then, make your changes and commit as you go. You'll build up a branch off of master with a series of commits. Once you are
-done, pull the latest from master again and rebase your changes on top.
+done, pull the latest from master again, rebase your changes on top, and update the submodule pointers that SPDK relies on.
 
 ~~~{.sh}
 git checkout master
 git pull
 git checkout <my_branch>
 git rebase -i master
+git submodule update
 ~~~
 
 Now your branch should be based on the tip of master and you should have the tip of <my_branch> checked out. You can push
@@ -403,7 +405,7 @@ git push review
 ~~~
 
 Gerrit will create three reviews, each dependent on one another. Inevitably, a reviewer will ask you to make a change during
-code review on change #2. To address that feedback, you could do the following:
+code review on change #2. To address that feedback, you should do the following:
 
 ~~~{.sh}
 git checkout <sha of change #2>
@@ -412,6 +414,7 @@ git checkout -b tmp # 'tmp' or any name you want
 git commit -s -a --amend # The amend modifies change #2 to include your updates
 git checkout <my_series> # Points at change #3
 git rebase -i tmp # Move change #3 on top of the new change #2
+git submodule update
 git push review
 git branch -D tmp # Clean up the 'tmp' branch
 ~~~
