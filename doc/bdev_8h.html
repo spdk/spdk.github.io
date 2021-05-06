@@ -382,6 +382,9 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_set_opts</b>
 <tr class="memitem:a84041f3948f91dc0dd0656895970061a"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev_8h.html#a84041f3948f91dc0dd0656895970061a">spdk_bdev_get_data_block_size</a> (const struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *bdev)</td></tr>
 <tr class="memdesc:a84041f3948f91dc0dd0656895970061a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get block device data block size.  <a href="#a84041f3948f91dc0dd0656895970061a">More...</a><br /></td></tr>
 <tr class="separator:a84041f3948f91dc0dd0656895970061a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c895e82c51c654a5b3f838f7254d690"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev_8h.html#a2c895e82c51c654a5b3f838f7254d690">spdk_bdev_get_physical_block_size</a> (const struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *bdev)</td></tr>
+<tr class="memdesc:a2c895e82c51c654a5b3f838f7254d690"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get block device physical block size.  <a href="#a2c895e82c51c654a5b3f838f7254d690">More...</a><br /></td></tr>
+<tr class="separator:a2c895e82c51c654a5b3f838f7254d690"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac94b5900766ec42da5fc3658a5749858"><td class="memItemLeft" align="right" valign="top">enum spdk_dif_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev_8h.html#ac94b5900766ec42da5fc3658a5749858">spdk_bdev_get_dif_type</a> (const struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *bdev)</td></tr>
 <tr class="memdesc:ac94b5900766ec42da5fc3658a5749858"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get DIF type of the block device.  <a href="#ac94b5900766ec42da5fc3658a5749858">More...</a><br /></td></tr>
 <tr class="separator:ac94b5900766ec42da5fc3658a5749858"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1584,6 +1587,33 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_set_opts</b>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="a2c895e82c51c654a5b3f838f7254d690"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c895e82c51c654a5b3f838f7254d690">&#9670;&nbsp;</a></span>spdk_bdev_get_physical_block_size()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t spdk_bdev_get_physical_block_size </td>
+          <td>(</td>
+          <td class="paramtype">const struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *&#160;</td>
+          <td class="paramname"><em>bdev</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get block device physical block size. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bdev</td><td>Block device to query. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Size of physical block size for this bdev in bytes. </dd></dl>
 
 </div>
 </div>

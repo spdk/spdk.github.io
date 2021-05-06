@@ -8,6 +8,7 @@ var searchData=
   ['per_5flcore_5fhistory',['per_lcore_history',['../structspdk__trace__histories.html#a66eb3d8f3f7fdcc8ee0eb3764db0d7e7',1,'spdk_trace_histories']]],
   ['period',['period',['../structspdk__bdev_1_1____bdev__internal__fields.html#a8155b9ed671033cf7e33d348c49bf980',1,'spdk_bdev::__bdev_internal_fields']]],
   ['persist',['persist',['../structspdk__nvme__ns__data.html#ada850d5cd15ecc2d5f216b845bd5c3e8',1,'spdk_nvme_ns_data']]],
+  ['phys_5fblocklen',['phys_blocklen',['../structspdk__bdev.html#afef4969020beb7938bcbac9b535d87e4',1,'spdk_bdev']]],
   ['pit',['pit',['../structspdk__nvme__ns__data.html#ac13a2b9435ad685be10f79affa76b821',1,'spdk_nvme_ns_data']]],
   ['pit1',['pit1',['../structspdk__nvme__ns__data.html#ad904cb4c17ff2b844198314bb7aeabbc',1,'spdk_nvme_ns_data']]],
   ['pit2',['pit2',['../structspdk__nvme__ns__data.html#a9ae8a74d4dbae2fec5e858007a7fa2a7',1,'spdk_nvme_ns_data']]],

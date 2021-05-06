@@ -23,6 +23,7 @@ var structspdk__bdev =
     [ "name", "structspdk__bdev.html#ab17e7679c64536f704ed4fe41555a70a", null ],
     [ "optimal_io_boundary", "structspdk__bdev.html#af2dcdd94b1bbfd2709c6040f861819fb", null ],
     [ "optimal_open_zones", "structspdk__bdev.html#a11b4b1020556bd812c39731b057559f6", null ],
+    [ "phys_blocklen", "structspdk__bdev.html#afef4969020beb7938bcbac9b535d87e4", null ],
     [ "product_name", "structspdk__bdev.html#ad3abe8a06500954332614d8657eaf1d9", null ],
     [ "required_alignment", "structspdk__bdev.html#a149453df246d04c8640fb567c58a61f0", null ],
     [ "split_on_optimal_io_boundary", "structspdk__bdev.html#a85a794d02620e3e8730bb11791c0c592", null ],

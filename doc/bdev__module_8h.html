@@ -231,6 +231,12 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:a43188aae62750556bba04f4ddc81fa94"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev__module_8h.html#a43188aae62750556bba04f4ddc81fa94">spdk_bdev_module_claim_bdev</a> (struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *bdev, struct spdk_bdev_desc *desc, struct <a class="el" href="structspdk__bdev__module.html">spdk_bdev_module</a> *module)</td></tr>
+<tr class="memdesc:a43188aae62750556bba04f4ddc81fa94"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called by a bdev module to lay exclusive write claim to a bdev.  <a href="#a43188aae62750556bba04f4ddc81fa94">More...</a><br /></td></tr>
+<tr class="separator:a43188aae62750556bba04f4ddc81fa94"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae57fe12af625d6fd37e92b786ef84e32"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev__module_8h.html#ae57fe12af625d6fd37e92b786ef84e32">spdk_bdev_module_release_bdev</a> (struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *bdev)</td></tr>
+<tr class="memdesc:ae57fe12af625d6fd37e92b786ef84e32"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called to release a write claim on a block device.  <a href="#ae57fe12af625d6fd37e92b786ef84e32">More...</a><br /></td></tr>
+<tr class="separator:ae57fe12af625d6fd37e92b786ef84e32"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0da20e00320e2b782d1717c8184d93a3"><td class="memItemLeft" align="right" valign="top"><a id="a0da20e00320e2b782d1717c8184d93a3"></a>
 typedef&#160;</td><td class="memItemRight" valign="bottom"><b>TAILQ_HEAD</b> (, <a class="el" href="structspdk__bdev__io.html">spdk_bdev_io</a>) bdev_io_tailq_t</td></tr>
 <tr class="separator:a0da20e00320e2b782d1717c8184d93a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -258,12 +264,6 @@ typedef&#160;</td><td class="memItemRight" valign="bottom"><b>TAILQ_HEAD</b> (, 
 <tr class="memitem:acc0701f07d82bbb8f0f3e57c81349574"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev__module_8h.html#acc0701f07d82bbb8f0f3e57c81349574">spdk_bdev_module_finish_done</a> (void)</td></tr>
 <tr class="memdesc:acc0701f07d82bbb8f0f3e57c81349574"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicate to the bdev layer that the module is done cleaning up.  <a href="#acc0701f07d82bbb8f0f3e57c81349574">More...</a><br /></td></tr>
 <tr class="separator:acc0701f07d82bbb8f0f3e57c81349574"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a43188aae62750556bba04f4ddc81fa94"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev__module_8h.html#a43188aae62750556bba04f4ddc81fa94">spdk_bdev_module_claim_bdev</a> (struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *bdev, struct spdk_bdev_desc *desc, struct <a class="el" href="structspdk__bdev__module.html">spdk_bdev_module</a> *module)</td></tr>
-<tr class="memdesc:a43188aae62750556bba04f4ddc81fa94"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called by a bdev module to lay exclusive write claim to a bdev.  <a href="#a43188aae62750556bba04f4ddc81fa94">More...</a><br /></td></tr>
-<tr class="separator:a43188aae62750556bba04f4ddc81fa94"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae57fe12af625d6fd37e92b786ef84e32"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev__module_8h.html#ae57fe12af625d6fd37e92b786ef84e32">spdk_bdev_module_release_bdev</a> (struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *bdev)</td></tr>
-<tr class="memdesc:ae57fe12af625d6fd37e92b786ef84e32"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called to release a write claim on a block device.  <a href="#ae57fe12af625d6fd37e92b786ef84e32">More...</a><br /></td></tr>
-<tr class="separator:ae57fe12af625d6fd37e92b786ef84e32"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af1079eae68fac856b56863f26bc5310f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev__module_8h.html#af1079eae68fac856b56863f26bc5310f">spdk_bdev_alias_add</a> (struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *bdev, const char *alias)</td></tr>
 <tr class="memdesc:af1079eae68fac856b56863f26bc5310f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add alias to block device names list.  <a href="#af1079eae68fac856b56863f26bc5310f">More...</a><br /></td></tr>
 <tr class="separator:af1079eae68fac856b56863f26bc5310f"><td class="memSeparator" colspan="2">&#160;</td></tr>
