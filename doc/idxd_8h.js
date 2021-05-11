@@ -1,7 +1,6 @@
 var idxd_8h =
 [
-    [ "spdk_idxd_attach_cb", "idxd_8h.html#a73cec9547e6aac6d71a033c27f3de188", null ],
-    [ "spdk_idxd_probe_cb", "idxd_8h.html#a1b1789a24972053221a9df6a9a9029f2", null ],
+    [ "spdk_idxd_attach_cb", "idxd_8h.html#a4d941aea0b11a77815cfdd10b1c3c22b", null ],
     [ "spdk_idxd_req_cb", "idxd_8h.html#a75c066c5425700c49f077e20484b50c1", null ],
     [ "spdk_idxd_batch_cancel", "idxd_8h.html#a257b49d3c7123f3b6dbafe43353e3b39", null ],
     [ "spdk_idxd_batch_create", "idxd_8h.html#af852541005333162d65230b70983b3e0", null ],
@@ -16,7 +15,7 @@ var idxd_8h =
     [ "spdk_idxd_detach", "idxd_8h.html#aa6e6f3dcce485f4b3b8ba36fe4c03f93", null ],
     [ "spdk_idxd_device_needs_rebalance", "idxd_8h.html#aa63a7844507971ab2973fabbd1df2d46", null ],
     [ "spdk_idxd_get_channel", "idxd_8h.html#ae8fa809d994d290b255dd3dab1f1903b", null ],
-    [ "spdk_idxd_probe", "idxd_8h.html#a24d52afbaccee42acaf9663d41eddcc7", null ],
+    [ "spdk_idxd_probe", "idxd_8h.html#a74f5b7dc38344c84bca48f07a83a2621", null ],
     [ "spdk_idxd_process_events", "idxd_8h.html#ac92c2ac49b4b576f2538aa58846d93c3", null ],
     [ "spdk_idxd_put_channel", "idxd_8h.html#a5d1dc2a87145f5b932a22db3e41f39d6", null ],
     [ "spdk_idxd_reconfigure_chan", "idxd_8h.html#af21b012ab31e8c129f79e622bc1464ff", null ],

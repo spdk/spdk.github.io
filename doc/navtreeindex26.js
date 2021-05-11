@@ -1,6 +1,5 @@
 var NAVTREEINDEX26 =
 {
-"unionspdk__nvme__cmd__cdw11.html#a7f7dd213e501a467bfd5157e9b805fed":[14,0,96,36],
 "unionspdk__nvme__cmd__cdw11.html#a852b62f23c3feaabe7e947e448987025":[14,0,96,23],
 "unionspdk__nvme__cmd__cdw11.html#a97cf183cb4a4370dd2c535eb3fde9a74":[14,0,96,20],
 "unionspdk__nvme__cmd__cdw11.html#a987705621700d3d632819780d9366f5a":[14,0,96,31],
@@ -249,5 +248,6 @@ var NAVTREEINDEX26 =
 "userspace.html#userspace_control":[2,0,0],
 "userspace.html#userspace_interrupts":[2,0,1],
 "userspace.html#userspace_threading":[2,0,2],
-"util_8h.html":[15,0,57]
+"util_8h.html":[15,0,57],
+"util_8h.html#a21e1907187f8bf2c4b0c0de12c113ed6":[15,0,57,6]
 };

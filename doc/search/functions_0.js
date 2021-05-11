@@ -399,7 +399,7 @@ var searchData=
   ['spdk_5fidxd_5fdetach',['spdk_idxd_detach',['../idxd_8h.html#aa6e6f3dcce485f4b3b8ba36fe4c03f93',1,'idxd.h']]],
   ['spdk_5fidxd_5fdevice_5fneeds_5frebalance',['spdk_idxd_device_needs_rebalance',['../idxd_8h.html#aa63a7844507971ab2973fabbd1df2d46',1,'idxd.h']]],
   ['spdk_5fidxd_5fget_5fchannel',['spdk_idxd_get_channel',['../idxd_8h.html#ae8fa809d994d290b255dd3dab1f1903b',1,'idxd.h']]],
-  ['spdk_5fidxd_5fprobe',['spdk_idxd_probe',['../idxd_8h.html#a24d52afbaccee42acaf9663d41eddcc7',1,'idxd.h']]],
+  ['spdk_5fidxd_5fprobe',['spdk_idxd_probe',['../idxd_8h.html#a74f5b7dc38344c84bca48f07a83a2621',1,'idxd.h']]],
   ['spdk_5fidxd_5fprocess_5fevents',['spdk_idxd_process_events',['../idxd_8h.html#ac92c2ac49b4b576f2538aa58846d93c3',1,'idxd.h']]],
   ['spdk_5fidxd_5fput_5fchannel',['spdk_idxd_put_channel',['../idxd_8h.html#a5d1dc2a87145f5b932a22db3e41f39d6',1,'idxd.h']]],
   ['spdk_5fidxd_5freconfigure_5fchan',['spdk_idxd_reconfigure_chan',['../idxd_8h.html#af21b012ab31e8c129f79e622bc1464ff',1,'idxd.h']]],

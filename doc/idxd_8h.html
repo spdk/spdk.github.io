@@ -157,12 +157,9 @@ Typedefs</h2></td></tr>
 <tr class="memitem:a75c066c5425700c49f077e20484b50c1"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="idxd_8h.html#a75c066c5425700c49f077e20484b50c1">spdk_idxd_req_cb</a>) (void *arg, int status)</td></tr>
 <tr class="memdesc:a75c066c5425700c49f077e20484b50c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Signature for callback function invoked when a request is completed.  <a href="#a75c066c5425700c49f077e20484b50c1">More...</a><br /></td></tr>
 <tr class="separator:a75c066c5425700c49f077e20484b50c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1b1789a24972053221a9df6a9a9029f2"><td class="memItemLeft" align="right" valign="top">typedef bool(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="idxd_8h.html#a1b1789a24972053221a9df6a9a9029f2">spdk_idxd_probe_cb</a>) (void *cb_ctx, struct <a class="el" href="structspdk__pci__device.html">spdk_pci_device</a> *pci_dev)</td></tr>
-<tr class="memdesc:a1b1789a24972053221a9df6a9a9029f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback for <a class="el" href="idxd_8h.html#a24d52afbaccee42acaf9663d41eddcc7" title="Enumerate the IDXD devices attached to the system and attach the userspace IDXD driver to them if des...">spdk_idxd_probe()</a> enumeration.  <a href="#a1b1789a24972053221a9df6a9a9029f2">More...</a><br /></td></tr>
-<tr class="separator:a1b1789a24972053221a9df6a9a9029f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a73cec9547e6aac6d71a033c27f3de188"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="idxd_8h.html#a73cec9547e6aac6d71a033c27f3de188">spdk_idxd_attach_cb</a>) (void *cb_ctx, struct <a class="el" href="structspdk__pci__device.html">spdk_pci_device</a> *pci_dev, struct spdk_idxd_device *idxd)</td></tr>
-<tr class="memdesc:a73cec9547e6aac6d71a033c27f3de188"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback for <a class="el" href="idxd_8h.html#a24d52afbaccee42acaf9663d41eddcc7" title="Enumerate the IDXD devices attached to the system and attach the userspace IDXD driver to them if des...">spdk_idxd_probe()</a> to report a device that has been attached to the userspace IDXD driver.  <a href="#a73cec9547e6aac6d71a033c27f3de188">More...</a><br /></td></tr>
-<tr class="separator:a73cec9547e6aac6d71a033c27f3de188"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d941aea0b11a77815cfdd10b1c3c22b"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="idxd_8h.html#a4d941aea0b11a77815cfdd10b1c3c22b">spdk_idxd_attach_cb</a>) (void *cb_ctx, struct spdk_idxd_device *idxd)</td></tr>
+<tr class="memdesc:a4d941aea0b11a77815cfdd10b1c3c22b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback for <a class="el" href="idxd_8h.html#a74f5b7dc38344c84bca48f07a83a2621" title="Enumerate the IDXD devices attached to the system and attach the userspace IDXD driver to them if des...">spdk_idxd_probe()</a> to report a device that has been attached to the userspace IDXD driver.  <a href="#a4d941aea0b11a77815cfdd10b1c3c22b">More...</a><br /></td></tr>
+<tr class="separator:a4d941aea0b11a77815cfdd10b1c3c22b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -172,11 +169,11 @@ Functions</h2></td></tr>
 <tr class="memitem:af21b012ab31e8c129f79e622bc1464ff"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="idxd_8h.html#af21b012ab31e8c129f79e622bc1464ff">spdk_idxd_reconfigure_chan</a> (struct spdk_idxd_io_channel *chan)</td></tr>
 <tr class="memdesc:af21b012ab31e8c129f79e622bc1464ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reconfigures this channel based on how many current channels there are.  <a href="#af21b012ab31e8c129f79e622bc1464ff">More...</a><br /></td></tr>
 <tr class="separator:af21b012ab31e8c129f79e622bc1464ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a24d52afbaccee42acaf9663d41eddcc7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="idxd_8h.html#a24d52afbaccee42acaf9663d41eddcc7">spdk_idxd_probe</a> (void *cb_ctx, <a class="el" href="idxd_8h.html#a1b1789a24972053221a9df6a9a9029f2">spdk_idxd_probe_cb</a> probe_cb, <a class="el" href="idxd_8h.html#a73cec9547e6aac6d71a033c27f3de188">spdk_idxd_attach_cb</a> attach_cb)</td></tr>
-<tr class="memdesc:a24d52afbaccee42acaf9663d41eddcc7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enumerate the IDXD devices attached to the system and attach the userspace IDXD driver to them if desired.  <a href="#a24d52afbaccee42acaf9663d41eddcc7">More...</a><br /></td></tr>
-<tr class="separator:a24d52afbaccee42acaf9663d41eddcc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74f5b7dc38344c84bca48f07a83a2621"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="idxd_8h.html#a74f5b7dc38344c84bca48f07a83a2621">spdk_idxd_probe</a> (void *cb_ctx, <a class="el" href="idxd_8h.html#a4d941aea0b11a77815cfdd10b1c3c22b">spdk_idxd_attach_cb</a> attach_cb)</td></tr>
+<tr class="memdesc:a74f5b7dc38344c84bca48f07a83a2621"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enumerate the IDXD devices attached to the system and attach the userspace IDXD driver to them if desired.  <a href="#a74f5b7dc38344c84bca48f07a83a2621">More...</a><br /></td></tr>
+<tr class="separator:a74f5b7dc38344c84bca48f07a83a2621"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa6e6f3dcce485f4b3b8ba36fe4c03f93"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="idxd_8h.html#aa6e6f3dcce485f4b3b8ba36fe4c03f93">spdk_idxd_detach</a> (struct spdk_idxd_device *idxd)</td></tr>
-<tr class="memdesc:aa6e6f3dcce485f4b3b8ba36fe4c03f93"><td class="mdescLeft">&#160;</td><td class="mdescRight">Detach specified device returned by <a class="el" href="idxd_8h.html#a24d52afbaccee42acaf9663d41eddcc7" title="Enumerate the IDXD devices attached to the system and attach the userspace IDXD driver to them if des...">spdk_idxd_probe()</a> from the IDXD driver.  <a href="#aa6e6f3dcce485f4b3b8ba36fe4c03f93">More...</a><br /></td></tr>
+<tr class="memdesc:aa6e6f3dcce485f4b3b8ba36fe4c03f93"><td class="mdescLeft">&#160;</td><td class="mdescRight">Detach specified device returned by <a class="el" href="idxd_8h.html#a74f5b7dc38344c84bca48f07a83a2621" title="Enumerate the IDXD devices attached to the system and attach the userspace IDXD driver to them if des...">spdk_idxd_probe()</a> from the IDXD driver.  <a href="#aa6e6f3dcce485f4b3b8ba36fe4c03f93">More...</a><br /></td></tr>
 <tr class="separator:aa6e6f3dcce485f4b3b8ba36fe4c03f93"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acda8cf00ce61e00149a51bba5d8d2ec9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="idxd_8h.html#acda8cf00ce61e00149a51bba5d8d2ec9">spdk_idxd_set_config</a> (uint32_t config_number)</td></tr>
 <tr class="memdesc:acda8cf00ce61e00149a51bba5d8d2ec9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the IDXD configuration.  <a href="#acda8cf00ce61e00149a51bba5d8d2ec9">More...</a><br /></td></tr>
@@ -239,51 +236,26 @@ Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>IDXD driver public interface. </p>
 </div><h2 class="groupheader">Typedef Documentation</h2>
-<a id="a73cec9547e6aac6d71a033c27f3de188"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a73cec9547e6aac6d71a033c27f3de188">&#9670;&nbsp;</a></span>spdk_idxd_attach_cb</h2>
+<a id="a4d941aea0b11a77815cfdd10b1c3c22b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d941aea0b11a77815cfdd10b1c3c22b">&#9670;&nbsp;</a></span>spdk_idxd_attach_cb</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef void(* spdk_idxd_attach_cb) (void *cb_ctx, struct <a class="el" href="structspdk__pci__device.html">spdk_pci_device</a> *pci_dev, struct spdk_idxd_device *idxd)</td>
+          <td class="memname">typedef void(* spdk_idxd_attach_cb) (void *cb_ctx, struct spdk_idxd_device *idxd)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Callback for <a class="el" href="idxd_8h.html#a24d52afbaccee42acaf9663d41eddcc7" title="Enumerate the IDXD devices attached to the system and attach the userspace IDXD driver to them if des...">spdk_idxd_probe()</a> to report a device that has been attached to the userspace IDXD driver. </p>
+<p>Callback for <a class="el" href="idxd_8h.html#a74f5b7dc38344c84bca48f07a83a2621" title="Enumerate the IDXD devices attached to the system and attach the userspace IDXD driver to them if des...">spdk_idxd_probe()</a> to report a device that has been attached to the userspace IDXD driver. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">cb_ctx</td><td>User-specified opaque value corresponding to cb_ctx from <a class="el" href="idxd_8h.html#a24d52afbaccee42acaf9663d41eddcc7" title="Enumerate the IDXD devices attached to the system and attach the userspace IDXD driver to them if des...">spdk_idxd_probe()</a>. </td></tr>
-    <tr><td class="paramname">pci_dev</td><td>PCI device that was attached to the driver. </td></tr>
+    <tr><td class="paramname">cb_ctx</td><td>User-specified opaque value corresponding to cb_ctx from <a class="el" href="idxd_8h.html#a74f5b7dc38344c84bca48f07a83a2621" title="Enumerate the IDXD devices attached to the system and attach the userspace IDXD driver to them if des...">spdk_idxd_probe()</a>. </td></tr>
     <tr><td class="paramname">idxd</td><td>IDXD device that was attached to the driver. </td></tr>
   </table>
   </dd>
 </dl>
-
-</div>
-</div>
-<a id="a1b1789a24972053221a9df6a9a9029f2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1b1789a24972053221a9df6a9a9029f2">&#9670;&nbsp;</a></span>spdk_idxd_probe_cb</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef bool(* spdk_idxd_probe_cb) (void *cb_ctx, struct <a class="el" href="structspdk__pci__device.html">spdk_pci_device</a> *pci_dev)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Callback for <a class="el" href="idxd_8h.html#a24d52afbaccee42acaf9663d41eddcc7" title="Enumerate the IDXD devices attached to the system and attach the userspace IDXD driver to them if des...">spdk_idxd_probe()</a> enumeration. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">cb_ctx</td><td>User-specified opaque value corresponding to cb_ctx from <a class="el" href="idxd_8h.html#a24d52afbaccee42acaf9663d41eddcc7" title="Enumerate the IDXD devices attached to the system and attach the userspace IDXD driver to them if des...">spdk_idxd_probe()</a>. </td></tr>
-    <tr><td class="paramname">pci_dev</td><td>PCI device that is being probed.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>true to attach to this device. </dd></dl>
 
 </div>
 </div>
@@ -876,7 +848,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Detach specified device returned by <a class="el" href="idxd_8h.html#a24d52afbaccee42acaf9663d41eddcc7" title="Enumerate the IDXD devices attached to the system and attach the userspace IDXD driver to them if des...">spdk_idxd_probe()</a> from the IDXD driver. </p>
+<p>Detach specified device returned by <a class="el" href="idxd_8h.html#a74f5b7dc38344c84bca48f07a83a2621" title="Enumerate the IDXD devices attached to the system and attach the userspace IDXD driver to them if des...">spdk_idxd_probe()</a> from the IDXD driver. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">idxd</td><td>IDXD device to detach from the driver. </td></tr>
@@ -940,8 +912,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a24d52afbaccee42acaf9663d41eddcc7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a24d52afbaccee42acaf9663d41eddcc7">&#9670;&nbsp;</a></span>spdk_idxd_probe()</h2>
+<a id="a74f5b7dc38344c84bca48f07a83a2621"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a74f5b7dc38344c84bca48f07a83a2621">&#9670;&nbsp;</a></span>spdk_idxd_probe()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -955,13 +927,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="idxd_8h.html#a1b1789a24972053221a9df6a9a9029f2">spdk_idxd_probe_cb</a>&#160;</td>
-          <td class="paramname"><em>probe_cb</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="idxd_8h.html#a73cec9547e6aac6d71a033c27f3de188">spdk_idxd_attach_cb</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="idxd_8h.html#a4d941aea0b11a77815cfdd10b1c3c22b">spdk_idxd_attach_cb</a>&#160;</td>
           <td class="paramname"><em>attach_cb</em>&#160;</td>
         </tr>
         <tr>
@@ -978,7 +944,6 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">cb_ctx</td><td>Opaque value which will be passed back in cb_ctx parameter of the callbacks. </td></tr>
-    <tr><td class="paramname">probe_cb</td><td>will be called once per IDXD device found in the system. </td></tr>
     <tr><td class="paramname">attach_cb</td><td>will be called for devices for which probe_cb returned true once the IDXD controller has been attached to the userspace driver.</td></tr>
   </table>
   </dd>
