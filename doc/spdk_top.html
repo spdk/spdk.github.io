@@ -1,99 +1,43 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <!-- For Mobile Devices -->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="Content-Type" content="text/xhtml; charset=utf-8">
-  <meta name="generator" content="Doxygen 1.8.15">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="generator" content="Doxygen 1.8.20" />
   <title>SPDK: spdk_top</title>
-  <script type="text/javascript" src="jquery.js"></script>
-  <script type="text/javascript" src="dynsections.js"></script>
-  <script type="text/javascript" src="two.min.js"></script>
-  <link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-  $(document).ready(initResizable);
-/* @license-end */</script>
-  <link href="search/search.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="search/searchdata.js"></script>
-<script type="text/javascript" src="search/search.js"></script>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,900" type="text/css">
-  <link href="../css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  <link rel="stylesheet" href="tabs.css" type="text/css">
-  <link href="stylesheet.css" rel="stylesheet" type="text/css"/>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="/js/doxyboot.js"></script>
+  <script type="text/javascript" src="navtree.js"></script>
+  <link href="/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link href="/css/spdk.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-<div class="container-fluid">
-  <div id="top">  <!-- do not remove this div, it is closed by doxygen! -->
-    <div class="row no-gutters">
-      <div class="col-xs-12">
-        <section id="nav">
-          <div class="navbar navbar-default navbar-static-top banner-tabs">
-            <ul class="nav navbar-nav">
-              <li role="presentation">
-                <a href="http://www.spdk.io/">
-                  <i class="glyphicon glyphicon-home"></i>
-                  <span class="box-name">home</span>
-                </a>
-              </li>
-              <li role="presentation">
-                <a href="http://www.spdk.io/releases/">
-                  <i class="glyphicon glyphicon-download-alt"></i>
-                  <span class="box-name">download</span>
-                </a>
-              </li>
-              <li class="active" role="presentation">
-                <a href="index.html">
-                  <i class="glyphicon glyphicon-book"></i>
-                  <span class="box-name">documentation</span>
-                </a>
-              </li>
-              <li role="presentation">
-                <a href="http://www.spdk.io/development/">
-                  <i class="glyphicon glyphicon-wrench"></i>
-                  <span class="box-name">development</span>
-                </a>
-              </li>
-              <li role="presentation">
-                <a href="https://spdk.io/ci/">
-                  <i class="glyphicon glyphicon-ok"></i>
-                  <span class="box-name">CI status</span>
-                </a>
-              </li>
-              <li role="presentation">
-                <a href="http://www.spdk.io/community/">
-                  <i class="glyphicon glyphicon-envelope"></i>
-                  <span class="box-name">community</span>
-                </a>
-              </li>
-              <li role="presentation">
-                <a href="http://www.spdk.io/blog/">
-                  <i class="glyphicon glyphicon-comment"></i>
-                  <span class="box-name">Blog</span>
-                </a>
-              </li>
-              <li role="presentation">
-                <a href="https://trello.com/b/MN8auadQ/spdk-roadmap">
-                  <i class="glyphicon glyphicon-map-marker"></i>
-                  <span class="box-name">Roadmap</span>
-                </a>
-              </li>
-              <li role="presentation">
-                <a href="http://www.spdk.io/news/">
-                  <i class="glyphicon glyphicon-bullhorn"></i>
-                  <span class="box-name">News</span>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </section>
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark px-2">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="/" aria-label="SPDK">
+      <img src="/img/spdk.svg"  width="36" height="36" alt="Storage Performance Development Kit" />
+    </a>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <div class="navbar-nav mr-auto">
+        <a class="nav-link header-link active" href="../doc/">Documentation</a>
+        <a class="nav-link header-link" href="../development/">Development</a>
+        <a class="nav-link header-link" href="../community/">Community</a>
+        <a class="nav-link header-link" href="../blog/">Blog</a>
+      </div>
+      <div class="navbar-nav ml-auto mr-3">
+        <a class="nav-link header-link" href="https://github.com/spdk/spdk">
+          <svg xmlns="http://www.w3.org/2000/svg" class="navbar-nav-svg"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+        </a>
       </div>
     </div>
-<!-- Generated by Doxygen 1.8.15 -->
+  </nav>
+  <div class="container-fluid doc">
+      <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<!-- Generated by Doxygen 1.8.20 -->
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 var searchBox = new SearchBox("searchBox", "search",false,'Search');
@@ -122,7 +66,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-$(document).ready(function(){initNavTree('spdk_top.html','');});
+$(document).ready(function(){initNavTree('spdk_top.html',''); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -145,12 +89,13 @@ $(document).ready(function(){initNavTree('spdk_top.html','');});
 <div class="title">spdk_top </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p>The spdk_top application is designed to resemble the standard top in that it provides a real-time insights into CPU cores usage by SPDK lightweight threads and pollers. Have you ever wondered which CPU core is used most by your SPDK instance? Are you building your own bdev or library and want to know if your code is running efficiently? Are your new pollers busy most of the time? The spdk_top application uses RPC calls to collect performance metrics and displays them in a report that you can analyze and determine if your code is running efficiently so that you can tune your implementation and get more from SPDK.</p>
+<div class="textblock"><p><a class="anchor" id="md_spdk_top"></a> The spdk_top application is designed to resemble the standard top in that it provides a real-time insights into CPU cores usage by SPDK lightweight threads and pollers. Have you ever wondered which CPU core is used most by your SPDK instance? Are you building your own bdev or library and want to know if your code is running efficiently? Are your new pollers busy most of the time? The spdk_top application uses RPC calls to collect performance metrics and displays them in a report that you can analyze and determine if your code is running efficiently so that you can tune your implementation and get more from SPDK.</p>
 <p>Why doesn't the classic top utility work for SPDK? SPDK uses a polled-mode design; a reactor thread running on each CPU core assigned to an SPDK application schedules SPDK lightweight threads and pollers to run on the CPU core. Therefore, the standard Linux top utility is not effective for analyzing the CPU usage for polled-mode applications like SPDK because it just reports that they are using 100% of the CPU resources assigned to them. The spdk_top utility was developed to analyze and report the CPU cycles used to do real work vs just polling for work. The utility relies on instrumentation added to pollers to track when they are doing work vs. polling for work. The spdk_top utility gets the fine grained metrics from the pollers, analyzes and report the metrics on a per poller, thread and core basis. This information enables users to identify CPU cores that are busy doing real work so that they can determine if the application needs more or less CPU resources.</p>
 <h1>Run spdk_top</h1>
 <p>Before running spdk_top you need to run the SPDK application whose performance you want to analyze using spdk_top.</p>
 <p>Run the spdk_top application</p>
-<div class="fragment"><div class="line">./build/bin/spdk_top</div></div><!-- fragment --><h1>Bottom menu</h1>
+<div class="fragment"><div class="line">./build/bin/spdk_top</div>
+</div><!-- fragment --><h1>Bottom menu</h1>
 <p>Menu at the bottom of SPDK top window shows many options for changing displayed data. Each menu item has a key associated with it in square brackets.</p>
 <ul>
 <li>Quit - quits the SPDK top application.</li>
@@ -170,7 +115,7 @@ $(document).ready(function(){initNavTree('spdk_top.html','');});
 <li>Active/Timed/Paused pollers - number of pollers grouped by type on this thread.</li>
 <li>Idle/Busy - how many microseconds the thread was idle/busy.</li>
 </ul>
-<p><br />
+<p><br  />
 By pressing ENTER key a pop-up window appears, showing above and a list of pollers running on selected thread (with poller name, type, run count and period). Pop-up then can be closed by pressing ESC key.</p>
 <p>To learn more about spdk threads see <a class="el" href="concurrency.html">Message Passing and Concurrency</a>.</p>
 <h1>Pollers Tab</h1>
@@ -183,7 +128,7 @@ By pressing ENTER key a pop-up window appears, showing above and a list of polle
 <li>Period - poller period in microseconds. If period equals 0 then it is not displayed.</li>
 <li>Status - whether poller is currently Busy (red color) or Idle (blue color).</li>
 </ul>
-<p><br />
+<p><br  />
 Poller pop-up window can be displayed by pressing ENTER on a selected data row and displays above information. Pop-up can be closed by pressing ESC key.</p>
 <h1>Cores Tab</h1>
 <p>The cores tab provides insights into how the application is using the CPU cores assigned to it. The information displayed for each core shows:</p>
@@ -193,9 +138,19 @@ Poller pop-up window can be displayed by pressing ENTER on a selected data row a
 <li>Poller count - total number of pollers running on core.</li>
 <li>Idle/Busy - how many microseconds core was idle (including time when core ran pollers but did not find any work) or doing actual work.</li>
 </ul>
-<p><br />
+<p><br  />
 Pressing ENTER key makes a pop-up window appear, showing above information, along with a list of threads running on selected core. Cores details window allows to select a thread and display thread details pop-up on top of it. To close both pop-ups use ESC key. </p>
-</div></div><!-- PageDoc -->
-</div><!-- contents -->
+</div></div><!-- contents -->
+</div><!-- PageDoc -->
 </div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.8.8-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+<ul>
+        <li class="footer">Generated on Wed May 12 2021 14:31:28 for SPDK by
+        <a href="http://www.doxygen.org/index.html">doxygen</a> 1.8.20 </li>
+</ul>
 </div>
+</div>
+</body>
+</html>

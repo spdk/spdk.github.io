@@ -1,99 +1,43 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <!-- For Mobile Devices -->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="Content-Type" content="text/xhtml; charset=utf-8">
-  <meta name="generator" content="Doxygen 1.8.15">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="generator" content="Doxygen 1.8.20" />
   <title>SPDK: vhost.h File Reference</title>
-  <script type="text/javascript" src="jquery.js"></script>
-  <script type="text/javascript" src="dynsections.js"></script>
-  <script type="text/javascript" src="two.min.js"></script>
-  <link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-  $(document).ready(initResizable);
-/* @license-end */</script>
-  <link href="search/search.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="search/searchdata.js"></script>
-<script type="text/javascript" src="search/search.js"></script>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,900" type="text/css">
-  <link href="../css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  <link rel="stylesheet" href="tabs.css" type="text/css">
-  <link href="stylesheet.css" rel="stylesheet" type="text/css"/>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="/js/doxyboot.js"></script>
+  <script type="text/javascript" src="navtree.js"></script>
+  <link href="/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link href="/css/spdk.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-<div class="container-fluid">
-  <div id="top">  <!-- do not remove this div, it is closed by doxygen! -->
-    <div class="row no-gutters">
-      <div class="col-xs-12">
-        <section id="nav">
-          <div class="navbar navbar-default navbar-static-top banner-tabs">
-            <ul class="nav navbar-nav">
-              <li role="presentation">
-                <a href="http://www.spdk.io/">
-                  <i class="glyphicon glyphicon-home"></i>
-                  <span class="box-name">home</span>
-                </a>
-              </li>
-              <li role="presentation">
-                <a href="http://www.spdk.io/releases/">
-                  <i class="glyphicon glyphicon-download-alt"></i>
-                  <span class="box-name">download</span>
-                </a>
-              </li>
-              <li class="active" role="presentation">
-                <a href="index.html">
-                  <i class="glyphicon glyphicon-book"></i>
-                  <span class="box-name">documentation</span>
-                </a>
-              </li>
-              <li role="presentation">
-                <a href="http://www.spdk.io/development/">
-                  <i class="glyphicon glyphicon-wrench"></i>
-                  <span class="box-name">development</span>
-                </a>
-              </li>
-              <li role="presentation">
-                <a href="https://spdk.io/ci/">
-                  <i class="glyphicon glyphicon-ok"></i>
-                  <span class="box-name">CI status</span>
-                </a>
-              </li>
-              <li role="presentation">
-                <a href="http://www.spdk.io/community/">
-                  <i class="glyphicon glyphicon-envelope"></i>
-                  <span class="box-name">community</span>
-                </a>
-              </li>
-              <li role="presentation">
-                <a href="http://www.spdk.io/blog/">
-                  <i class="glyphicon glyphicon-comment"></i>
-                  <span class="box-name">Blog</span>
-                </a>
-              </li>
-              <li role="presentation">
-                <a href="https://trello.com/b/MN8auadQ/spdk-roadmap">
-                  <i class="glyphicon glyphicon-map-marker"></i>
-                  <span class="box-name">Roadmap</span>
-                </a>
-              </li>
-              <li role="presentation">
-                <a href="http://www.spdk.io/news/">
-                  <i class="glyphicon glyphicon-bullhorn"></i>
-                  <span class="box-name">News</span>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </section>
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark px-2">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="/" aria-label="SPDK">
+      <img src="/img/spdk.svg"  width="36" height="36" alt="Storage Performance Development Kit" />
+    </a>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <div class="navbar-nav mr-auto">
+        <a class="nav-link header-link active" href="../doc/">Documentation</a>
+        <a class="nav-link header-link" href="../development/">Development</a>
+        <a class="nav-link header-link" href="../community/">Community</a>
+        <a class="nav-link header-link" href="../blog/">Blog</a>
+      </div>
+      <div class="navbar-nav ml-auto mr-3">
+        <a class="nav-link header-link" href="https://github.com/spdk/spdk">
+          <svg xmlns="http://www.w3.org/2000/svg" class="navbar-nav-svg"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+        </a>
       </div>
     </div>
-<!-- Generated by Doxygen 1.8.15 -->
+  </nav>
+  <div class="container-fluid doc">
+      <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<!-- Generated by Doxygen 1.8.20 -->
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 var searchBox = new SearchBox("searchBox", "search",false,'Search');
@@ -122,7 +66,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-$(document).ready(function(){initNavTree('vhost_8h.html','');});
+$(document).ready(function(){initNavTree('vhost_8h.html',''); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -155,78 +99,79 @@ $(document).ready(function(){initNavTree('vhost_8h.html','');});
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
 <tr class="memitem:aed34ffbfc5835716ba35a9ee050e1e74"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vhost_8h.html#aed34ffbfc5835716ba35a9ee050e1e74">spdk_vhost_init_cb</a>) (int rc)</td></tr>
-<tr class="memdesc:aed34ffbfc5835716ba35a9ee050e1e74"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback for <a class="el" href="vhost_8h.html#ab35076d7e06edf2098b814929a04c7d5" title="Init vhost environment.">spdk_vhost_init()</a>.  <a href="#aed34ffbfc5835716ba35a9ee050e1e74">More...</a><br /></td></tr>
+<tr class="memdesc:aed34ffbfc5835716ba35a9ee050e1e74"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback for <a class="el" href="vhost_8h.html#ab35076d7e06edf2098b814929a04c7d5" title="Init vhost environment.">spdk_vhost_init()</a>.  <a href="vhost_8h.html#aed34ffbfc5835716ba35a9ee050e1e74">More...</a><br /></td></tr>
 <tr class="separator:aed34ffbfc5835716ba35a9ee050e1e74"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8b37106ad173f20d05da87f89714700b"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vhost_8h.html#a8b37106ad173f20d05da87f89714700b">spdk_vhost_fini_cb</a>) (void)</td></tr>
-<tr class="memdesc:a8b37106ad173f20d05da87f89714700b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback for <a class="el" href="vhost_8h.html#af358eac95a16bd456349fcfaa00379bb" title="Clean up the environment of vhost.">spdk_vhost_fini()</a>.  <a href="#a8b37106ad173f20d05da87f89714700b">More...</a><br /></td></tr>
+<tr class="memitem:a8b37106ad173f20d05da87f89714700b"><td class="memItemLeft" align="right" valign="top"><a id="a8b37106ad173f20d05da87f89714700b"></a>
+typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vhost_8h.html#a8b37106ad173f20d05da87f89714700b">spdk_vhost_fini_cb</a>) (void)</td></tr>
+<tr class="memdesc:a8b37106ad173f20d05da87f89714700b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback for <a class="el" href="vhost_8h.html#af358eac95a16bd456349fcfaa00379bb" title="Clean up the environment of vhost.">spdk_vhost_fini()</a>. <br /></td></tr>
 <tr class="separator:a8b37106ad173f20d05da87f89714700b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac2c4b62eaf6503e5f5e520394f9f9fe1"><td class="memItemLeft" align="right" valign="top">typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vhost_8h.html#ac2c4b62eaf6503e5f5e520394f9f9fe1">spdk_vhost_event_fn</a>) (struct spdk_vhost_dev *vdev, void *arg)</td></tr>
-<tr class="memdesc:ac2c4b62eaf6503e5f5e520394f9f9fe1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Synchronized vhost event used for user callbacks.  <a href="#ac2c4b62eaf6503e5f5e520394f9f9fe1">More...</a><br /></td></tr>
+<tr class="memdesc:ac2c4b62eaf6503e5f5e520394f9f9fe1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Synchronized vhost event used for user callbacks.  <a href="vhost_8h.html#ac2c4b62eaf6503e5f5e520394f9f9fe1">More...</a><br /></td></tr>
 <tr class="separator:ac2c4b62eaf6503e5f5e520394f9f9fe1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a15921078a895d090283fbbeaaddee76c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vhost_8h.html#a15921078a895d090283fbbeaaddee76c">spdk_vhost_set_socket_path</a> (const char *basename)</td></tr>
-<tr class="memdesc:a15921078a895d090283fbbeaaddee76c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the path to the directory where vhost sockets will be created.  <a href="#a15921078a895d090283fbbeaaddee76c">More...</a><br /></td></tr>
+<tr class="memdesc:a15921078a895d090283fbbeaaddee76c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the path to the directory where vhost sockets will be created.  <a href="vhost_8h.html#a15921078a895d090283fbbeaaddee76c">More...</a><br /></td></tr>
 <tr class="separator:a15921078a895d090283fbbeaaddee76c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab35076d7e06edf2098b814929a04c7d5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vhost_8h.html#ab35076d7e06edf2098b814929a04c7d5">spdk_vhost_init</a> (<a class="el" href="vhost_8h.html#aed34ffbfc5835716ba35a9ee050e1e74">spdk_vhost_init_cb</a> init_cb)</td></tr>
-<tr class="memdesc:ab35076d7e06edf2098b814929a04c7d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Init vhost environment.  <a href="#ab35076d7e06edf2098b814929a04c7d5">More...</a><br /></td></tr>
+<tr class="memdesc:ab35076d7e06edf2098b814929a04c7d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Init vhost environment.  <a href="vhost_8h.html#ab35076d7e06edf2098b814929a04c7d5">More...</a><br /></td></tr>
 <tr class="separator:ab35076d7e06edf2098b814929a04c7d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af358eac95a16bd456349fcfaa00379bb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vhost_8h.html#af358eac95a16bd456349fcfaa00379bb">spdk_vhost_fini</a> (<a class="el" href="vhost_8h.html#a8b37106ad173f20d05da87f89714700b">spdk_vhost_fini_cb</a> fini_cb)</td></tr>
-<tr class="memdesc:af358eac95a16bd456349fcfaa00379bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clean up the environment of vhost.  <a href="#af358eac95a16bd456349fcfaa00379bb">More...</a><br /></td></tr>
+<tr class="memdesc:af358eac95a16bd456349fcfaa00379bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clean up the environment of vhost.  <a href="vhost_8h.html#af358eac95a16bd456349fcfaa00379bb">More...</a><br /></td></tr>
 <tr class="separator:af358eac95a16bd456349fcfaa00379bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a256ce5abb39df6f4627e3fac7863998f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vhost_8h.html#a256ce5abb39df6f4627e3fac7863998f">spdk_vhost_config_json</a> (struct spdk_json_write_ctx *w)</td></tr>
-<tr class="memdesc:a256ce5abb39df6f4627e3fac7863998f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write vhost subsystem configuration into provided JSON context.  <a href="#a256ce5abb39df6f4627e3fac7863998f">More...</a><br /></td></tr>
+<tr class="memdesc:a256ce5abb39df6f4627e3fac7863998f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write vhost subsystem configuration into provided JSON context.  <a href="vhost_8h.html#a256ce5abb39df6f4627e3fac7863998f">More...</a><br /></td></tr>
 <tr class="separator:a256ce5abb39df6f4627e3fac7863998f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afd7159f8eb1e0d65dad5bedaa6cc5e43"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vhost_8h.html#afd7159f8eb1e0d65dad5bedaa6cc5e43">spdk_vhost_shutdown_cb</a> (void)</td></tr>
-<tr class="memdesc:afd7159f8eb1e0d65dad5bedaa6cc5e43"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deinit vhost application.  <a href="#afd7159f8eb1e0d65dad5bedaa6cc5e43">More...</a><br /></td></tr>
+<tr class="memdesc:afd7159f8eb1e0d65dad5bedaa6cc5e43"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deinit vhost application.  <a href="vhost_8h.html#afd7159f8eb1e0d65dad5bedaa6cc5e43">More...</a><br /></td></tr>
 <tr class="separator:afd7159f8eb1e0d65dad5bedaa6cc5e43"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afd4fd557673a9bc3518add4f5c0d611b"><td class="memItemLeft" align="right" valign="top"><a id="afd4fd557673a9bc3518add4f5c0d611b"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vhost_8h.html#afd4fd557673a9bc3518add4f5c0d611b">spdk_vhost_lock</a> (void)</td></tr>
 <tr class="memdesc:afd4fd557673a9bc3518add4f5c0d611b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lock the global vhost mutex synchronizing all the vhost device accesses. <br /></td></tr>
 <tr class="separator:afd4fd557673a9bc3518add4f5c0d611b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a04d81053d41a72f5df978f7c05dfebd7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vhost_8h.html#a04d81053d41a72f5df978f7c05dfebd7">spdk_vhost_trylock</a> (void)</td></tr>
-<tr class="memdesc:a04d81053d41a72f5df978f7c05dfebd7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lock the global vhost mutex synchronizing all the vhost device accesses.  <a href="#a04d81053d41a72f5df978f7c05dfebd7">More...</a><br /></td></tr>
+<tr class="memdesc:a04d81053d41a72f5df978f7c05dfebd7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lock the global vhost mutex synchronizing all the vhost device accesses.  <a href="vhost_8h.html#a04d81053d41a72f5df978f7c05dfebd7">More...</a><br /></td></tr>
 <tr class="separator:a04d81053d41a72f5df978f7c05dfebd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adf01bd5ae7b0d761aa8e0e271de1ee9e"><td class="memItemLeft" align="right" valign="top"><a id="adf01bd5ae7b0d761aa8e0e271de1ee9e"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vhost_8h.html#adf01bd5ae7b0d761aa8e0e271de1ee9e">spdk_vhost_unlock</a> (void)</td></tr>
 <tr class="memdesc:adf01bd5ae7b0d761aa8e0e271de1ee9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unlock the global vhost mutex. <br /></td></tr>
 <tr class="separator:adf01bd5ae7b0d761aa8e0e271de1ee9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a08ca8ab0522c25869c31c163175e6299"><td class="memItemLeft" align="right" valign="top">struct spdk_vhost_dev *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vhost_8h.html#a08ca8ab0522c25869c31c163175e6299">spdk_vhost_dev_find</a> (const char *name)</td></tr>
-<tr class="memdesc:a08ca8ab0522c25869c31c163175e6299"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find a vhost device by name.  <a href="#a08ca8ab0522c25869c31c163175e6299">More...</a><br /></td></tr>
+<tr class="memdesc:a08ca8ab0522c25869c31c163175e6299"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find a vhost device by name.  <a href="vhost_8h.html#a08ca8ab0522c25869c31c163175e6299">More...</a><br /></td></tr>
 <tr class="separator:a08ca8ab0522c25869c31c163175e6299"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aed851ed4cfcdf69b6221c8cad4688353"><td class="memItemLeft" align="right" valign="top">struct spdk_vhost_dev *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vhost_8h.html#aed851ed4cfcdf69b6221c8cad4688353">spdk_vhost_dev_next</a> (struct spdk_vhost_dev *vdev)</td></tr>
-<tr class="memdesc:aed851ed4cfcdf69b6221c8cad4688353"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the next vhost device.  <a href="#aed851ed4cfcdf69b6221c8cad4688353">More...</a><br /></td></tr>
+<tr class="memdesc:aed851ed4cfcdf69b6221c8cad4688353"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the next vhost device.  <a href="vhost_8h.html#aed851ed4cfcdf69b6221c8cad4688353">More...</a><br /></td></tr>
 <tr class="separator:aed851ed4cfcdf69b6221c8cad4688353"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa06efc0d096d4414de40ed5c0b394622"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vhost_8h.html#aa06efc0d096d4414de40ed5c0b394622">spdk_vhost_dev_get_name</a> (struct spdk_vhost_dev *vdev)</td></tr>
-<tr class="memdesc:aa06efc0d096d4414de40ed5c0b394622"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the name of the vhost device.  <a href="#aa06efc0d096d4414de40ed5c0b394622">More...</a><br /></td></tr>
+<tr class="memdesc:aa06efc0d096d4414de40ed5c0b394622"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the name of the vhost device.  <a href="vhost_8h.html#aa06efc0d096d4414de40ed5c0b394622">More...</a><br /></td></tr>
 <tr class="separator:aa06efc0d096d4414de40ed5c0b394622"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6002d25166c3003efd3b6edb51cb84c0"><td class="memItemLeft" align="right" valign="top">const struct <a class="el" href="structspdk__cpuset.html">spdk_cpuset</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vhost_8h.html#a6002d25166c3003efd3b6edb51cb84c0">spdk_vhost_dev_get_cpumask</a> (struct spdk_vhost_dev *vdev)</td></tr>
-<tr class="memdesc:a6002d25166c3003efd3b6edb51cb84c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get cpuset of the vhost device.  <a href="#a6002d25166c3003efd3b6edb51cb84c0">More...</a><br /></td></tr>
+<tr class="memdesc:a6002d25166c3003efd3b6edb51cb84c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get cpuset of the vhost device.  <a href="vhost_8h.html#a6002d25166c3003efd3b6edb51cb84c0">More...</a><br /></td></tr>
 <tr class="separator:a6002d25166c3003efd3b6edb51cb84c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8b8c054fdc8ed4ad573b2d0bcf2d4797"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vhost_8h.html#a8b8c054fdc8ed4ad573b2d0bcf2d4797">spdk_vhost_set_coalescing</a> (struct spdk_vhost_dev *vdev, uint32_t delay_base_us, uint32_t iops_threshold)</td></tr>
-<tr class="memdesc:a8b8c054fdc8ed4ad573b2d0bcf2d4797"><td class="mdescLeft">&#160;</td><td class="mdescRight">By default, events are generated when asked, but for high queue depth and high IOPS this prove to be inefficient both for guest kernel that have to handle a lot more IO completions and for SPDK vhost that need to make more syscalls.  <a href="#a8b8c054fdc8ed4ad573b2d0bcf2d4797">More...</a><br /></td></tr>
+<tr class="memdesc:a8b8c054fdc8ed4ad573b2d0bcf2d4797"><td class="mdescLeft">&#160;</td><td class="mdescRight">By default, events are generated when asked, but for high queue depth and high IOPS this prove to be inefficient both for guest kernel that have to handle a lot more IO completions and for SPDK vhost that need to make more syscalls.  <a href="vhost_8h.html#a8b8c054fdc8ed4ad573b2d0bcf2d4797">More...</a><br /></td></tr>
 <tr class="separator:a8b8c054fdc8ed4ad573b2d0bcf2d4797"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8be392083ae01ad34cc05b1b5ce2b5e0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vhost_8h.html#a8be392083ae01ad34cc05b1b5ce2b5e0">spdk_vhost_get_coalescing</a> (struct spdk_vhost_dev *vdev, uint32_t *delay_base_us, uint32_t *iops_threshold)</td></tr>
-<tr class="memdesc:a8be392083ae01ad34cc05b1b5ce2b5e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get coalescing parameters.  <a href="#a8be392083ae01ad34cc05b1b5ce2b5e0">More...</a><br /></td></tr>
+<tr class="memdesc:a8be392083ae01ad34cc05b1b5ce2b5e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get coalescing parameters.  <a href="vhost_8h.html#a8be392083ae01ad34cc05b1b5ce2b5e0">More...</a><br /></td></tr>
 <tr class="separator:a8be392083ae01ad34cc05b1b5ce2b5e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a01b54a11439216fb05196474e3ee20d1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vhost_8h.html#a01b54a11439216fb05196474e3ee20d1">spdk_vhost_scsi_dev_construct</a> (const char *name, const char *cpumask)</td></tr>
-<tr class="memdesc:a01b54a11439216fb05196474e3ee20d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct an empty vhost SCSI device.  <a href="#a01b54a11439216fb05196474e3ee20d1">More...</a><br /></td></tr>
+<tr class="memdesc:a01b54a11439216fb05196474e3ee20d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct an empty vhost SCSI device.  <a href="vhost_8h.html#a01b54a11439216fb05196474e3ee20d1">More...</a><br /></td></tr>
 <tr class="separator:a01b54a11439216fb05196474e3ee20d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afe5b0a12a12a26d2ddfe6a64f2a8a5e2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vhost_8h.html#afe5b0a12a12a26d2ddfe6a64f2a8a5e2">spdk_vhost_scsi_dev_add_tgt</a> (struct spdk_vhost_dev *vdev, int scsi_tgt_num, const char *bdev_name)</td></tr>
-<tr class="memdesc:afe5b0a12a12a26d2ddfe6a64f2a8a5e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct and attach new SCSI target to the vhost SCSI device on given (unoccupied) slot.  <a href="#afe5b0a12a12a26d2ddfe6a64f2a8a5e2">More...</a><br /></td></tr>
+<tr class="memdesc:afe5b0a12a12a26d2ddfe6a64f2a8a5e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct and attach new SCSI target to the vhost SCSI device on given (unoccupied) slot.  <a href="vhost_8h.html#afe5b0a12a12a26d2ddfe6a64f2a8a5e2">More...</a><br /></td></tr>
 <tr class="separator:afe5b0a12a12a26d2ddfe6a64f2a8a5e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a540442ab4b6ec0ba4157e514a09f2379"><td class="memItemLeft" align="right" valign="top">struct spdk_scsi_dev *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vhost_8h.html#a540442ab4b6ec0ba4157e514a09f2379">spdk_vhost_scsi_dev_get_tgt</a> (struct spdk_vhost_dev *vdev, uint8_t num)</td></tr>
-<tr class="memdesc:a540442ab4b6ec0ba4157e514a09f2379"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get SCSI target from vhost SCSI device on given slot.  <a href="#a540442ab4b6ec0ba4157e514a09f2379">More...</a><br /></td></tr>
+<tr class="memdesc:a540442ab4b6ec0ba4157e514a09f2379"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get SCSI target from vhost SCSI device on given slot.  <a href="vhost_8h.html#a540442ab4b6ec0ba4157e514a09f2379">More...</a><br /></td></tr>
 <tr class="separator:a540442ab4b6ec0ba4157e514a09f2379"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae1ea27c8ae7616e92d916e5c6fc34231"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vhost_8h.html#ae1ea27c8ae7616e92d916e5c6fc34231">spdk_vhost_scsi_dev_remove_tgt</a> (struct spdk_vhost_dev *vdev, unsigned scsi_tgt_num, <a class="el" href="vhost_8h.html#ac2c4b62eaf6503e5f5e520394f9f9fe1">spdk_vhost_event_fn</a> cb_fn, void *cb_arg)</td></tr>
-<tr class="memdesc:ae1ea27c8ae7616e92d916e5c6fc34231"><td class="mdescLeft">&#160;</td><td class="mdescRight">Detach and destruct SCSI target from a vhost SCSI device.  <a href="#ae1ea27c8ae7616e92d916e5c6fc34231">More...</a><br /></td></tr>
+<tr class="memdesc:ae1ea27c8ae7616e92d916e5c6fc34231"><td class="mdescLeft">&#160;</td><td class="mdescRight">Detach and destruct SCSI target from a vhost SCSI device.  <a href="vhost_8h.html#ae1ea27c8ae7616e92d916e5c6fc34231">More...</a><br /></td></tr>
 <tr class="separator:ae1ea27c8ae7616e92d916e5c6fc34231"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2095d6d1e85f5841375ac04b5cff50ec"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vhost_8h.html#a2095d6d1e85f5841375ac04b5cff50ec">spdk_vhost_blk_construct</a> (const char *name, const char *cpumask, const char *dev_name, bool readonly, bool packed_ring)</td></tr>
-<tr class="memdesc:a2095d6d1e85f5841375ac04b5cff50ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a vhost blk device.  <a href="#a2095d6d1e85f5841375ac04b5cff50ec">More...</a><br /></td></tr>
+<tr class="memdesc:a2095d6d1e85f5841375ac04b5cff50ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a vhost blk device.  <a href="vhost_8h.html#a2095d6d1e85f5841375ac04b5cff50ec">More...</a><br /></td></tr>
 <tr class="separator:a2095d6d1e85f5841375ac04b5cff50ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa6eba1ce0ac89c3287b755567795869b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vhost_8h.html#aa6eba1ce0ac89c3287b755567795869b">spdk_vhost_dev_remove</a> (struct spdk_vhost_dev *vdev)</td></tr>
-<tr class="memdesc:aa6eba1ce0ac89c3287b755567795869b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove a vhost device.  <a href="#aa6eba1ce0ac89c3287b755567795869b">More...</a><br /></td></tr>
+<tr class="memdesc:aa6eba1ce0ac89c3287b755567795869b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove a vhost device.  <a href="vhost_8h.html#aa6eba1ce0ac89c3287b755567795869b">More...</a><br /></td></tr>
 <tr class="separator:aa6eba1ce0ac89c3287b755567795869b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -253,22 +198,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vhos
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 on success, -1 on failure. </dd></dl>
-
-</div>
-</div>
-<a id="a8b37106ad173f20d05da87f89714700b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8b37106ad173f20d05da87f89714700b">&#9670;&nbsp;</a></span>spdk_vhost_fini_cb</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef void(* spdk_vhost_fini_cb) (void)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Callback for <a class="el" href="vhost_8h.html#af358eac95a16bd456349fcfaa00379bb" title="Clean up the environment of vhost.">spdk_vhost_fini()</a>. </p>
 
 </div>
 </div>
@@ -915,4 +844,14 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vhos
 </div>
 </div><!-- contents -->
 </div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.8.8-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+<ul>
+        <li class="footer">Generated on Wed May 12 2021 14:31:28 for SPDK by
+        <a href="http://www.doxygen.org/index.html">doxygen</a> 1.8.20 </li>
+</ul>
 </div>
+</div>
+</body>
+</html>

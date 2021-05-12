@@ -1,99 +1,43 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <!-- For Mobile Devices -->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="Content-Type" content="text/xhtml; charset=utf-8">
-  <meta name="generator" content="Doxygen 1.8.15">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="generator" content="Doxygen 1.8.20" />
   <title>SPDK: Virtualized I/O with Vhost-user</title>
-  <script type="text/javascript" src="jquery.js"></script>
-  <script type="text/javascript" src="dynsections.js"></script>
-  <script type="text/javascript" src="two.min.js"></script>
-  <link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-  $(document).ready(initResizable);
-/* @license-end */</script>
-  <link href="search/search.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="search/searchdata.js"></script>
-<script type="text/javascript" src="search/search.js"></script>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,900" type="text/css">
-  <link href="../css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  <link rel="stylesheet" href="tabs.css" type="text/css">
-  <link href="stylesheet.css" rel="stylesheet" type="text/css"/>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="/js/doxyboot.js"></script>
+  <script type="text/javascript" src="navtree.js"></script>
+  <link href="/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link href="/css/spdk.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-<div class="container-fluid">
-  <div id="top">  <!-- do not remove this div, it is closed by doxygen! -->
-    <div class="row no-gutters">
-      <div class="col-xs-12">
-        <section id="nav">
-          <div class="navbar navbar-default navbar-static-top banner-tabs">
-            <ul class="nav navbar-nav">
-              <li role="presentation">
-                <a href="http://www.spdk.io/">
-                  <i class="glyphicon glyphicon-home"></i>
-                  <span class="box-name">home</span>
-                </a>
-              </li>
-              <li role="presentation">
-                <a href="http://www.spdk.io/releases/">
-                  <i class="glyphicon glyphicon-download-alt"></i>
-                  <span class="box-name">download</span>
-                </a>
-              </li>
-              <li class="active" role="presentation">
-                <a href="index.html">
-                  <i class="glyphicon glyphicon-book"></i>
-                  <span class="box-name">documentation</span>
-                </a>
-              </li>
-              <li role="presentation">
-                <a href="http://www.spdk.io/development/">
-                  <i class="glyphicon glyphicon-wrench"></i>
-                  <span class="box-name">development</span>
-                </a>
-              </li>
-              <li role="presentation">
-                <a href="https://spdk.io/ci/">
-                  <i class="glyphicon glyphicon-ok"></i>
-                  <span class="box-name">CI status</span>
-                </a>
-              </li>
-              <li role="presentation">
-                <a href="http://www.spdk.io/community/">
-                  <i class="glyphicon glyphicon-envelope"></i>
-                  <span class="box-name">community</span>
-                </a>
-              </li>
-              <li role="presentation">
-                <a href="http://www.spdk.io/blog/">
-                  <i class="glyphicon glyphicon-comment"></i>
-                  <span class="box-name">Blog</span>
-                </a>
-              </li>
-              <li role="presentation">
-                <a href="https://trello.com/b/MN8auadQ/spdk-roadmap">
-                  <i class="glyphicon glyphicon-map-marker"></i>
-                  <span class="box-name">Roadmap</span>
-                </a>
-              </li>
-              <li role="presentation">
-                <a href="http://www.spdk.io/news/">
-                  <i class="glyphicon glyphicon-bullhorn"></i>
-                  <span class="box-name">News</span>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </section>
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark px-2">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="/" aria-label="SPDK">
+      <img src="/img/spdk.svg"  width="36" height="36" alt="Storage Performance Development Kit" />
+    </a>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <div class="navbar-nav mr-auto">
+        <a class="nav-link header-link active" href="../doc/">Documentation</a>
+        <a class="nav-link header-link" href="../development/">Development</a>
+        <a class="nav-link header-link" href="../community/">Community</a>
+        <a class="nav-link header-link" href="../blog/">Blog</a>
+      </div>
+      <div class="navbar-nav ml-auto mr-3">
+        <a class="nav-link header-link" href="https://github.com/spdk/spdk">
+          <svg xmlns="http://www.w3.org/2000/svg" class="navbar-nav-svg"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+        </a>
       </div>
     </div>
-<!-- Generated by Doxygen 1.8.15 -->
+  </nav>
+  <div class="container-fluid doc">
+      <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<!-- Generated by Doxygen 1.8.20 -->
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 var searchBox = new SearchBox("searchBox", "search",false,'Search');
@@ -122,7 +66,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-$(document).ready(function(){initNavTree('vhost_processing.html','');});
+$(document).ready(function(){initNavTree('vhost_processing.html',''); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -145,7 +89,8 @@ $(document).ready(function(){initNavTree('vhost_processing.html','');});
 <div class="title">Virtualized I/O with Vhost-user </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h1><a class="anchor" id="vhost_processing_toc"></a>
+<div class="textblock"><p><a class="anchor" id="md_vhost_processing"></a> </p>
+<h1><a class="anchor" id="vhost_processing_toc"></a>
 Table of Contents</h1>
 <ul>
 <li><a class="el" href="vhost_processing.html#vhost_processing_intro">Introduction</a></li>
@@ -158,18 +103,34 @@ Table of Contents</h1>
 Introduction</h1>
 <p>This document is intended to provide an overview of how Vhost works behind the scenes. Code snippets used in this document might have been simplified for the sake of readability and should not be used as an API or implementation reference.</p>
 <p>Reading from the <a href="http://docs.oasis-open.org/virtio/virtio/v1.0/virtio-v1.0.html">Virtio specification</a>:</p>
-<div class="fragment"><div class="line">The purpose of virtio and [virtio] specification is that virtual environments</div><div class="line">and guests should have a straightforward, efficient, standard and extensible</div><div class="line">mechanism for virtual devices, rather than boutique per-environment or per-OS</div><div class="line">mechanisms.</div></div><!-- fragment --><p>Virtio devices use virtqueues to transport data efficiently. Virtqueue is a set of three different single-producer, single-consumer ring structures designed to store generic scatter-gatter I/O. Virtio is most commonly used in QEMU VMs, where the QEMU itself exposes a virtual PCI device and the guest OS communicates with it using a specific Virtio PCI driver. With only Virtio involved, it's always the QEMU process that handles all I/O traffic.</p>
+<div class="fragment"><div class="line">The purpose of virtio and [virtio] specification is that virtual environments</div>
+<div class="line">and guests should have a straightforward, efficient, standard and extensible</div>
+<div class="line">mechanism for virtual devices, rather than boutique per-environment or per-OS</div>
+<div class="line">mechanisms.</div>
+</div><!-- fragment --><p>Virtio devices use virtqueues to transport data efficiently. Virtqueue is a set of three different single-producer, single-consumer ring structures designed to store generic scatter-gatter I/O. Virtio is most commonly used in QEMU VMs, where the QEMU itself exposes a virtual PCI device and the guest OS communicates with it using a specific Virtio PCI driver. With only Virtio involved, it's always the QEMU process that handles all I/O traffic.</p>
 <p>Vhost is a protocol for devices accessible via inter-process communication. It uses the same virtqueue layout as Virtio to allow Vhost devices to be mapped directly to Virtio devices. This allows a Vhost device, exposed by an SPDK application, to be accessed directly by a guest OS inside a QEMU process with an existing Virtio (PCI) driver. Only the configuration, I/O submission notification, and I/O completion interruption are piped through QEMU. See also <a class="el" href="vhost_processing.html#vhost_spdk_optimizations">SPDK optimizations</a></p>
 <p>The initial vhost implementation is a part of the Linux kernel and uses ioctl interface to communicate with userspace applications. What makes it possible for SPDK to expose a vhost device is Vhost-user protocol.</p>
 <p>The <a href="https://git.qemu.org/?p=qemu.git;a=blob_plain;f=docs/interop/vhost-user.txt;hb=HEAD">Vhost-user specification</a> describes the protocol as follows:</p>
-<div class="fragment"><div class="line">[Vhost-user protocol] is aiming to complement the ioctl interface used to</div><div class="line">control the vhost implementation in the Linux kernel. It implements the control</div><div class="line">plane needed to establish virtqueue sharing with a user space process on the</div><div class="line">same host. It uses communication over a Unix domain socket to share file</div><div class="line">descriptors in the ancillary data of the message.</div><div class="line"></div><div class="line">The protocol defines 2 sides of the communication, master and slave. Master is</div><div class="line">the application that shares its virtqueues, in our case QEMU. Slave is the</div><div class="line">consumer of the virtqueues.</div><div class="line"></div><div class="line">In the current implementation QEMU is the Master, and the Slave is intended to</div><div class="line">be a software Ethernet switch running in user space, such as Snabbswitch.</div><div class="line"></div><div class="line">Master and slave can be either a client (i.e. connecting) or server (listening)</div><div class="line">in the socket communication.</div></div><!-- fragment --><p>SPDK vhost is a Vhost-user slave server. It exposes Unix domain sockets and allows external applications to connect.</p>
+<div class="fragment"><div class="line">[Vhost-user protocol] is aiming to complement the ioctl interface used to</div>
+<div class="line">control the vhost implementation in the Linux kernel. It implements the control</div>
+<div class="line">plane needed to establish virtqueue sharing with a user space process on the</div>
+<div class="line">same host. It uses communication over a Unix domain socket to share file</div>
+<div class="line">descriptors in the ancillary data of the message.</div>
+<div class="line"> </div>
+<div class="line">The protocol defines 2 sides of the communication, master and slave. Master is</div>
+<div class="line">the application that shares its virtqueues, in our case QEMU. Slave is the</div>
+<div class="line">consumer of the virtqueues.</div>
+<div class="line"> </div>
+<div class="line">In the current implementation QEMU is the Master, and the Slave is intended to</div>
+<div class="line">be a software Ethernet switch running in user space, such as Snabbswitch.</div>
+<div class="line"> </div>
+<div class="line">Master and slave can be either a client (i.e. connecting) or server (listening)</div>
+<div class="line">in the socket communication.</div>
+</div><!-- fragment --><p>SPDK vhost is a Vhost-user slave server. It exposes Unix domain sockets and allows external applications to connect.</p>
 <h1><a class="anchor" id="vhost_processing_qemu"></a>
 QEMU</h1>
 <p>One of major Vhost-user use cases is networking (DPDK) or storage (SPDK) offload in QEMU. The following diagram presents how QEMU-based VM communicates with SPDK Vhost-SCSI device.</p>
-<div class="image">
-<object type="image/svg+xml" data="qemu_vhost_data_flow.svg">qemu_vhost_data_flow.svg</object>
-<div class="caption">
-QEMU/SPDK vhost data flow</div></div>
+<p><img src="qemu_vhost_data_flow.svg" alt="" style="pointer-events: none;" class="inline" title="QEMU/SPDK vhost data flow"/>   </p>
 <h1><a class="anchor" id="vhost_processing_init"></a>
 Device initialization</h1>
 <p>All initialization and management information is exchanged using Vhost-user messages. The connection always starts with the feature negotiation. Both the Master and the Slave exposes a list of their implemented features and upon negotiation they choose a common set of those. Most of these features are implementation-related, but also regard e.g. multiqueue support or live migration.</p>
@@ -196,14 +157,51 @@ Device initialization</h1>
 I/O path</h1>
 <p>The Master sends I/O by allocating proper buffers in shared memory, filling the request data, and putting guest addresses of those buffers into virtqueues.</p>
 <p>A Virtio-Block request looks as follows.</p>
-<div class="fragment"><div class="line">struct virtio_blk_req {</div><div class="line">        uint32_t type; // READ, WRITE, FLUSH (read-only)</div><div class="line">        uint64_t offset; // offset in the disk (read-only)</div><div class="line">        struct iovec buffers[]; // scatter-gatter list (read/write)</div><div class="line">        uint8_t status; // I/O completion status (write-only)</div><div class="line">};</div></div><!-- fragment --><p> And a Virtio-SCSI request as follows.</p>
-<div class="fragment"><div class="line">struct virtio_scsi_req_cmd {</div><div class="line">  struct virtio_scsi_cmd_req *req; // request data (read-only)</div><div class="line">  struct iovec read_only_buffers[]; // scatter-gatter list for WRITE I/Os</div><div class="line">  struct virtio_scsi_cmd_resp *resp; // response data (write-only)</div><div class="line">  struct iovec write_only_buffers[]; // scatter-gatter list for READ I/Os</div><div class="line">}</div></div><!-- fragment --><p>Virtqueue generally consists of an array of descriptors and each I/O needs to be converted into a chain of such descriptors. A single descriptor can be either readable or writable, so each I/O request consists of at least two (request + response).</p>
-<div class="fragment"><div class="line">struct virtq_desc {</div><div class="line">        /* Address (guest-physical). */</div><div class="line">        le64 addr;</div><div class="line">        /* Length. */</div><div class="line">        le32 len;</div><div class="line"></div><div class="line">/* This marks a buffer as continuing via the next field. */</div><div class="line">#define VIRTQ_DESC_F_NEXT   1</div><div class="line">/* This marks a buffer as device write-only (otherwise device read-only). */</div><div class="line">#define VIRTQ_DESC_F_WRITE     2</div><div class="line">        /* The flags as indicated above. */</div><div class="line">        le16 flags;</div><div class="line">        /* Next field if flags &amp; NEXT */</div><div class="line">        le16 next;</div><div class="line">};</div></div><!-- fragment --><p>Legacy Virtio implementations used the name vring alongside virtqueue, and the name vring is still used in virtio data structures inside the code. Instead of <code>struct virtq_desc</code>, the <code>struct vring_desc</code> is much more likely to be found.</p>
+<div class="fragment"><div class="line">struct virtio_blk_req {</div>
+<div class="line">        uint32_t type; // READ, WRITE, FLUSH (read-only)</div>
+<div class="line">        uint64_t offset; // offset in the disk (read-only)</div>
+<div class="line">        struct iovec buffers[]; // scatter-gatter list (read/write)</div>
+<div class="line">        uint8_t status; // I/O completion status (write-only)</div>
+<div class="line">};</div>
+</div><!-- fragment --><p>And a Virtio-SCSI request as follows.</p>
+<div class="fragment"><div class="line">struct virtio_scsi_req_cmd {</div>
+<div class="line">  struct virtio_scsi_cmd_req *req; // request data (read-only)</div>
+<div class="line">  struct iovec read_only_buffers[]; // scatter-gatter list for WRITE I/Os</div>
+<div class="line">  struct virtio_scsi_cmd_resp *resp; // response data (write-only)</div>
+<div class="line">  struct iovec write_only_buffers[]; // scatter-gatter list for READ I/Os</div>
+<div class="line">}</div>
+</div><!-- fragment --><p>Virtqueue generally consists of an array of descriptors and each I/O needs to be converted into a chain of such descriptors. A single descriptor can be either readable or writable, so each I/O request consists of at least two (request + response).</p>
+<div class="fragment"><div class="line">struct virtq_desc {</div>
+<div class="line">        /* Address (guest-physical). */</div>
+<div class="line">        le64 addr;</div>
+<div class="line">        /* Length. */</div>
+<div class="line">        le32 len;</div>
+<div class="line"> </div>
+<div class="line">/* This marks a buffer as continuing via the next field. */</div>
+<div class="line">#define VIRTQ_DESC_F_NEXT   1</div>
+<div class="line">/* This marks a buffer as device write-only (otherwise device read-only). */</div>
+<div class="line">#define VIRTQ_DESC_F_WRITE     2</div>
+<div class="line">        /* The flags as indicated above. */</div>
+<div class="line">        le16 flags;</div>
+<div class="line">        /* Next field if flags &amp; NEXT */</div>
+<div class="line">        le16 next;</div>
+<div class="line">};</div>
+</div><!-- fragment --><p>Legacy Virtio implementations used the name vring alongside virtqueue, and the name vring is still used in virtio data structures inside the code. Instead of <code>struct virtq_desc</code>, the <code>struct vring_desc</code> is much more likely to be found.</p>
 <p>The device after polling this descriptor chain needs to translate and transform it back into the original request struct. It needs to know the request layout up-front, so each device backend (Vhost-Block/SCSI) has its own implementation for polling virtqueues. For each descriptor, the device performs a lookup in the Vhost-user memory region table and goes through a gpa_to_vva translation (guest physical address to vhost virtual address). SPDK enforces the request and response data to be contained within a single memory region. I/O buffers do not have such limitations and SPDK may automatically perform additional iovec splitting and gpa_to_vva translations if required. After forming the request structs, SPDK forwards such I/O to the underlying drive and polls for the completion. Once I/O completes, SPDK vhost fills the response buffer with proper data and interrupts the guest by doing an eventfd_write on the call descriptor for proper virtqueue. There are multiple interrupt coalescing features involved, but they are not be discussed in this document.</p>
 <h2><a class="anchor" id="vhost_spdk_optimizations"></a>
 SPDK optimizations</h2>
 <p>Due to its poll-mode nature, SPDK vhost removes the requirement for I/O submission notifications, drastically increasing the vhost server throughput and decreasing the guest overhead of submitting an I/O. A couple of different solutions exist to mitigate the I/O completion interrupt overhead (irqfd, vDPA), but those won't be discussed in this document. For the highest performance, a poll-mode <a class="el" href="virtio.html">Virtio driver</a> can be used, as it suppresses all I/O completion interrupts, making the I/O path to fully bypass the QEMU/KVM overhead. </p>
-</div></div><!-- PageDoc -->
-</div><!-- contents -->
+</div></div><!-- contents -->
+</div><!-- PageDoc -->
 </div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.8.8-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+<ul>
+        <li class="footer">Generated on Wed May 12 2021 14:31:29 for SPDK by
+        <a href="http://www.doxygen.org/index.html">doxygen</a> 1.8.20 </li>
+</ul>
 </div>
+</div>
+</body>
+</html>

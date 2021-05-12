@@ -1,99 +1,43 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <!-- For Mobile Devices -->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="Content-Type" content="text/xhtml; charset=utf-8">
-  <meta name="generator" content="Doxygen 1.8.15">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="generator" content="Doxygen 1.8.20" />
   <title>SPDK: Writing a Custom Block Device Module</title>
-  <script type="text/javascript" src="jquery.js"></script>
-  <script type="text/javascript" src="dynsections.js"></script>
-  <script type="text/javascript" src="two.min.js"></script>
-  <link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-  $(document).ready(initResizable);
-/* @license-end */</script>
-  <link href="search/search.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="search/searchdata.js"></script>
-<script type="text/javascript" src="search/search.js"></script>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,900" type="text/css">
-  <link href="../css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  <link rel="stylesheet" href="tabs.css" type="text/css">
-  <link href="stylesheet.css" rel="stylesheet" type="text/css"/>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="/js/doxyboot.js"></script>
+  <script type="text/javascript" src="navtree.js"></script>
+  <link href="/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link href="/css/spdk.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-<div class="container-fluid">
-  <div id="top">  <!-- do not remove this div, it is closed by doxygen! -->
-    <div class="row no-gutters">
-      <div class="col-xs-12">
-        <section id="nav">
-          <div class="navbar navbar-default navbar-static-top banner-tabs">
-            <ul class="nav navbar-nav">
-              <li role="presentation">
-                <a href="http://www.spdk.io/">
-                  <i class="glyphicon glyphicon-home"></i>
-                  <span class="box-name">home</span>
-                </a>
-              </li>
-              <li role="presentation">
-                <a href="http://www.spdk.io/releases/">
-                  <i class="glyphicon glyphicon-download-alt"></i>
-                  <span class="box-name">download</span>
-                </a>
-              </li>
-              <li class="active" role="presentation">
-                <a href="index.html">
-                  <i class="glyphicon glyphicon-book"></i>
-                  <span class="box-name">documentation</span>
-                </a>
-              </li>
-              <li role="presentation">
-                <a href="http://www.spdk.io/development/">
-                  <i class="glyphicon glyphicon-wrench"></i>
-                  <span class="box-name">development</span>
-                </a>
-              </li>
-              <li role="presentation">
-                <a href="https://spdk.io/ci/">
-                  <i class="glyphicon glyphicon-ok"></i>
-                  <span class="box-name">CI status</span>
-                </a>
-              </li>
-              <li role="presentation">
-                <a href="http://www.spdk.io/community/">
-                  <i class="glyphicon glyphicon-envelope"></i>
-                  <span class="box-name">community</span>
-                </a>
-              </li>
-              <li role="presentation">
-                <a href="http://www.spdk.io/blog/">
-                  <i class="glyphicon glyphicon-comment"></i>
-                  <span class="box-name">Blog</span>
-                </a>
-              </li>
-              <li role="presentation">
-                <a href="https://trello.com/b/MN8auadQ/spdk-roadmap">
-                  <i class="glyphicon glyphicon-map-marker"></i>
-                  <span class="box-name">Roadmap</span>
-                </a>
-              </li>
-              <li role="presentation">
-                <a href="http://www.spdk.io/news/">
-                  <i class="glyphicon glyphicon-bullhorn"></i>
-                  <span class="box-name">News</span>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </section>
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark px-2">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="/" aria-label="SPDK">
+      <img src="/img/spdk.svg"  width="36" height="36" alt="Storage Performance Development Kit" />
+    </a>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <div class="navbar-nav mr-auto">
+        <a class="nav-link header-link active" href="../doc/">Documentation</a>
+        <a class="nav-link header-link" href="../development/">Development</a>
+        <a class="nav-link header-link" href="../community/">Community</a>
+        <a class="nav-link header-link" href="../blog/">Blog</a>
+      </div>
+      <div class="navbar-nav ml-auto mr-3">
+        <a class="nav-link header-link" href="https://github.com/spdk/spdk">
+          <svg xmlns="http://www.w3.org/2000/svg" class="navbar-nav-svg"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+        </a>
       </div>
     </div>
-<!-- Generated by Doxygen 1.8.15 -->
+  </nav>
+  <div class="container-fluid doc">
+      <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<!-- Generated by Doxygen 1.8.20 -->
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 var searchBox = new SearchBox("searchBox", "search",false,'Search');
@@ -122,7 +66,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-$(document).ready(function(){initNavTree('bdev_module.html','');});
+$(document).ready(function(){initNavTree('bdev_module.html',''); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -145,30 +89,95 @@ $(document).ready(function(){initNavTree('bdev_module.html','');});
 <div class="title">Writing a Custom Block Device Module </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h2>Target Audience</h2>
+<div class="textblock"><p><a class="anchor" id="md_bdev_module"></a> </p><h1>Target Audience</h1>
 <p>This programming guide is intended for developers authoring their own block device modules to integrate with SPDK's bdev layer. For a guide on how to use the bdev layer, see <a class="el" href="bdev_pg.html">Block Device Layer Programming Guide</a>.</p>
-<h2>Introduction</h2>
+<h1>Introduction</h1>
 <p>A block device module is SPDK's equivalent of a device driver in a traditional operating system. The module provides a set of function pointers that are called to service block device I/O requests. SPDK provides a number of block device modules including NVMe, RAM-disk, and Ceph RBD. However, some users will want to write their own to interact with either custom hardware or to an existing storage software stack. This guide is intended to demonstrate exactly how to write a module.</p>
-<h2>Creating A New Module</h2>
+<h1>Creating A New Module</h1>
 <p>Block device modules are located in subdirectories under module/bdev today. It is not currently possible to place the code for a bdev module elsewhere, but updates to the build system could be made to enable this in the future. To create a module, add a new directory with a single C file and a Makefile. A great starting point is to copy the existing 'null' bdev module.</p>
 <p>The primary interface that bdev modules will interact with is in <a class="el" href="bdev__module_8h.html" title="Block Device Module Interface.">include/spdk/bdev_module.h</a>. In that header a macro is defined that registers a new bdev module - SPDK_BDEV_MODULE_REGISTER. This macro take as argument a pointer <a class="el" href="structspdk__bdev__module.html" title="Block device module.">spdk_bdev_module</a> structure that is used to register new bdev module.</p>
 <p>The <a class="el" href="structspdk__bdev__module.html" title="Block device module.">spdk_bdev_module</a> structure describes the module properties like initialization (<code>module_init</code>) and teardown (<code>module_fini</code>) functions, the function that returns context size (<code>get_ctx_size</code>) - scratch space that will be allocated in each I/O request for use by this module, and a callback that will be called each time a new bdev is registered by another module (<code>examine_config</code> and <code>examine_disk</code>). Please check the documentation of struct <a class="el" href="structspdk__bdev__module.html" title="Block device module.">spdk_bdev_module</a> for more details.</p>
-<h2>Creating Bdevs</h2>
+<h1>Creating Bdevs</h1>
 <p>New bdevs are created within the module by calling <a class="el" href="bdev__module_8h.html#a5fef71f7761986298bb4aaf345736bb3" title="Register a new bdev.">spdk_bdev_register()</a>. The module must allocate a struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a>, fill it out appropriately, and pass it to the register call. The most important field to fill out is <code>fn_table</code>, which points at this data structure:</p>
-<div class="fragment"><div class="line"><span class="comment">/*</span></div><div class="line"><span class="comment"> * Function table for a block device backend.</span></div><div class="line"><span class="comment"> *</span></div><div class="line"><span class="comment"> * The backend block device function table provides a set of APIs to allow</span></div><div class="line"><span class="comment"> * communication with a backend. The main commands are read/write API</span></div><div class="line"><span class="comment"> * calls for I/O via submit_request.</span></div><div class="line"><span class="comment"> */</span></div><div class="line"><span class="keyword">struct </span><a class="code" href="structspdk__bdev__fn__table.html">spdk_bdev_fn_table</a> {</div><div class="line">        <span class="comment">/* Destroy the backend block device object */</span></div><div class="line">        int (*<a class="code" href="structspdk__bdev__fn__table.html#a8a76c50a2b20205ec9fffe4afb9e3a15">destruct</a>)(<span class="keywordtype">void</span> *ctx);</div><div class="line"></div><div class="line">        <span class="comment">/* Process the IO. */</span></div><div class="line">        void (*<a class="code" href="structspdk__bdev__fn__table.html#ae80a9002371becdc6fb1c13f8f5173bf">submit_request</a>)(<span class="keyword">struct </span><a class="code" href="structspdk__io__channel.html">spdk_io_channel</a> *ch, <span class="keyword">struct </span><a class="code" href="structspdk__bdev__io.html">spdk_bdev_io</a> *);</div><div class="line"></div><div class="line">        <span class="comment">/* Check if the block device supports a specific I/O type. */</span></div><div class="line">        bool (*<a class="code" href="structspdk__bdev__fn__table.html#a20ec74cad9e56c5ac8ee9db239d8f46e">io_type_supported</a>)(<span class="keywordtype">void</span> *ctx, <span class="keyword">enum</span> <a class="code" href="bdev_8h.html#a633029e24ab5ae4a689bffa2565a519f">spdk_bdev_io_type</a>);</div><div class="line"></div><div class="line">        <span class="comment">/* Get an I/O channel for the specific bdev for the calling thread. */</span></div><div class="line">        <span class="keyword">struct </span><a class="code" href="structspdk__io__channel.html">spdk_io_channel</a> *(*get_io_channel)(<span class="keywordtype">void</span> *ctx);</div><div class="line"></div><div class="line">        <span class="comment">/*</span></div><div class="line"><span class="comment">         * Output driver-specific configuration to a JSON stream. Optional - may be NULL.</span></div><div class="line"><span class="comment">         *</span></div><div class="line"><span class="comment">         * The JSON write context will be initialized with an open object, so the bdev</span></div><div class="line"><span class="comment">         * driver should write a name (based on the driver name) followed by a JSON value</span></div><div class="line"><span class="comment">         * (most likely another nested object).</span></div><div class="line"><span class="comment">         */</span></div><div class="line">        int (*dump_config_json)(<span class="keywordtype">void</span> *ctx, <span class="keyword">struct </span>spdk_json_write_ctx *w);</div><div class="line"></div><div class="line">        <span class="comment">/* Get spin-time per I/O channel in microseconds.</span></div><div class="line"><span class="comment">         *  Optional - may be NULL.</span></div><div class="line"><span class="comment">         */</span></div><div class="line">        uint64_t (*<a class="code" href="structspdk__bdev__fn__table.html#aafc336b4a42290b7e944fa0e73558a62">get_spin_time</a>)(<span class="keyword">struct </span><a class="code" href="structspdk__io__channel.html">spdk_io_channel</a> *ch);</div><div class="line">};</div></div><!-- fragment --><p>The bdev module must implement these function callbacks.</p>
+<div class="fragment"><div class="line"><span class="comment">/*</span></div>
+<div class="line"><span class="comment"> * Function table for a block device backend.</span></div>
+<div class="line"><span class="comment"> *</span></div>
+<div class="line"><span class="comment"> * The backend block device function table provides a set of APIs to allow</span></div>
+<div class="line"><span class="comment"> * communication with a backend. The main commands are read/write API</span></div>
+<div class="line"><span class="comment"> * calls for I/O via submit_request.</span></div>
+<div class="line"><span class="comment"> */</span></div>
+<div class="line"><span class="keyword">struct </span><a class="code" href="structspdk__bdev__fn__table.html">spdk_bdev_fn_table</a> {</div>
+<div class="line">        <span class="comment">/* Destroy the backend block device object */</span></div>
+<div class="line">        int (*<a class="code" href="structspdk__bdev__fn__table.html#a8a76c50a2b20205ec9fffe4afb9e3a15">destruct</a>)(<span class="keywordtype">void</span> *ctx);</div>
+<div class="line"> </div>
+<div class="line">        <span class="comment">/* Process the IO. */</span></div>
+<div class="line">        void (*<a class="code" href="structspdk__bdev__fn__table.html#ae80a9002371becdc6fb1c13f8f5173bf">submit_request</a>)(<span class="keyword">struct </span><a class="code" href="structspdk__io__channel.html">spdk_io_channel</a> *ch, <span class="keyword">struct </span><a class="code" href="structspdk__bdev__io.html">spdk_bdev_io</a> *);</div>
+<div class="line"> </div>
+<div class="line">        <span class="comment">/* Check if the block device supports a specific I/O type. */</span></div>
+<div class="line">        bool (*<a class="code" href="structspdk__bdev__fn__table.html#a20ec74cad9e56c5ac8ee9db239d8f46e">io_type_supported</a>)(<span class="keywordtype">void</span> *ctx, <span class="keyword">enum</span> <a class="code" href="bdev_8h.html#a633029e24ab5ae4a689bffa2565a519f">spdk_bdev_io_type</a>);</div>
+<div class="line"> </div>
+<div class="line">        <span class="comment">/* Get an I/O channel for the specific bdev for the calling thread. */</span></div>
+<div class="line">        <span class="keyword">struct </span><a class="code" href="structspdk__io__channel.html">spdk_io_channel</a> *(*get_io_channel)(<span class="keywordtype">void</span> *ctx);</div>
+<div class="line"> </div>
+<div class="line">        <span class="comment">/*</span></div>
+<div class="line"><span class="comment">         * Output driver-specific configuration to a JSON stream. Optional - may be NULL.</span></div>
+<div class="line"><span class="comment">         *</span></div>
+<div class="line"><span class="comment">         * The JSON write context will be initialized with an open object, so the bdev</span></div>
+<div class="line"><span class="comment">         * driver should write a name (based on the driver name) followed by a JSON value</span></div>
+<div class="line"><span class="comment">         * (most likely another nested object).</span></div>
+<div class="line"><span class="comment">         */</span></div>
+<div class="line">        int (*dump_config_json)(<span class="keywordtype">void</span> *ctx, <span class="keyword">struct </span>spdk_json_write_ctx *w);</div>
+<div class="line"> </div>
+<div class="line">        <span class="comment">/* Get spin-time per I/O channel in microseconds.</span></div>
+<div class="line"><span class="comment">         *  Optional - may be NULL.</span></div>
+<div class="line"><span class="comment">         */</span></div>
+<div class="line">        uint64_t (*<a class="code" href="structspdk__bdev__fn__table.html#aafc336b4a42290b7e944fa0e73558a62">get_spin_time</a>)(<span class="keyword">struct </span><a class="code" href="structspdk__io__channel.html">spdk_io_channel</a> *ch);</div>
+<div class="line">};</div>
+</div><!-- fragment --><p>The bdev module must implement these function callbacks.</p>
 <p>The <code>destruct</code> function is called to tear down the device when the system no longer needs it. What <code>destruct</code> does is up to the module - it may just be freeing memory or it may be shutting down a piece of hardware.</p>
 <p>The <code>io_type_supported</code> function returns whether a particular I/O type is supported. The available I/O types are:</p>
-<div class="fragment"><div class="line"></div><div class="line"><span class="keyword">enum</span> <a class="code" href="bdev_8h.html#a633029e24ab5ae4a689bffa2565a519f">spdk_bdev_io_type</a> {</div><div class="line">        SPDK_BDEV_IO_TYPE_INVALID = 0,</div><div class="line">        SPDK_BDEV_IO_TYPE_READ,</div><div class="line">        SPDK_BDEV_IO_TYPE_WRITE,</div><div class="line">        SPDK_BDEV_IO_TYPE_UNMAP,</div><div class="line">        SPDK_BDEV_IO_TYPE_FLUSH,</div><div class="line">        SPDK_BDEV_IO_TYPE_RESET,</div><div class="line">        SPDK_BDEV_IO_TYPE_NVME_ADMIN,</div><div class="line">        SPDK_BDEV_IO_TYPE_NVME_IO,</div><div class="line">        SPDK_BDEV_IO_TYPE_NVME_IO_MD,</div><div class="line">        SPDK_BDEV_IO_TYPE_WRITE_ZEROES,</div><div class="line">};</div></div><!-- fragment --><p>For the simplest bdev modules, only <code>SPDK_BDEV_IO_TYPE_READ</code> and <code>SPDK_BDEV_IO_TYPE_WRITE</code> are necessary. <code>SPDK_BDEV_IO_TYPE_UNMAP</code> is often referred to as "trim" or "deallocate", and is a request to mark a set of blocks as no longer containing valid data. <code>SPDK_BDEV_IO_TYPE_FLUSH</code> is a request to make all previously completed writes durable. Many devices do not require flushes. <code>SPDK_BDEV_IO_TYPE_WRITE_ZEROES</code> is just like a regular write, but does not provide a data buffer (it would have just contained all 0's). If it isn't supported, the generic bdev code is capable of emulating it by sending regular write requests.</p>
+<div class="fragment"><div class="line"> </div>
+<div class="line"><span class="keyword">enum</span> <a class="code" href="bdev_8h.html#a633029e24ab5ae4a689bffa2565a519f">spdk_bdev_io_type</a> {</div>
+<div class="line">        SPDK_BDEV_IO_TYPE_INVALID = 0,</div>
+<div class="line">        SPDK_BDEV_IO_TYPE_READ,</div>
+<div class="line">        SPDK_BDEV_IO_TYPE_WRITE,</div>
+<div class="line">        SPDK_BDEV_IO_TYPE_UNMAP,</div>
+<div class="line">        SPDK_BDEV_IO_TYPE_FLUSH,</div>
+<div class="line">        SPDK_BDEV_IO_TYPE_RESET,</div>
+<div class="line">        SPDK_BDEV_IO_TYPE_NVME_ADMIN,</div>
+<div class="line">        SPDK_BDEV_IO_TYPE_NVME_IO,</div>
+<div class="line">        SPDK_BDEV_IO_TYPE_NVME_IO_MD,</div>
+<div class="line">        SPDK_BDEV_IO_TYPE_WRITE_ZEROES,</div>
+<div class="line">};</div>
+</div><!-- fragment --><p>For the simplest bdev modules, only <code>SPDK_BDEV_IO_TYPE_READ</code> and <code>SPDK_BDEV_IO_TYPE_WRITE</code> are necessary. <code>SPDK_BDEV_IO_TYPE_UNMAP</code> is often referred to as "trim" or "deallocate", and is a request to mark a set of blocks as no longer containing valid data. <code>SPDK_BDEV_IO_TYPE_FLUSH</code> is a request to make all previously completed writes durable. Many devices do not require flushes. <code>SPDK_BDEV_IO_TYPE_WRITE_ZEROES</code> is just like a regular write, but does not provide a data buffer (it would have just contained all 0's). If it isn't supported, the generic bdev code is capable of emulating it by sending regular write requests.</p>
 <p><code>SPDK_BDEV_IO_TYPE_RESET</code> is a request to abort all I/O and return the underlying device to its initial state. Do not complete the reset request until all I/O has been completed in some way.</p>
 <p><code>SPDK_BDEV_IO_TYPE_NVME_ADMIN</code>, <code>SPDK_BDEV_IO_TYPE_NVME_IO</code>, and <code>SPDK_BDEV_IO_TYPE_NVME_IO_MD</code> are all mechanisms for passing raw NVMe commands through the SPDK bdev layer. They're strictly optional, and it probably only makes sense to implement those if the backing storage device is capable of handling NVMe commands.</p>
 <p>The <code>get_io_channel</code> function should return an I/O channel. For a detailed explanation of I/O channels, see <a class="el" href="concurrency.html">Message Passing and Concurrency</a>. The generic bdev layer will call <code>get_io_channel</code> one time per thread, cache the result, and pass that result to <code>submit_request</code>. It will use the corresponding channel for the thread it calls <code>submit_request</code> on.</p>
 <p>The <code>submit_request</code> function is called to actually submit I/O requests to the block device. Once the I/O request is completed, the module must call <a class="el" href="bdev__module_8h.html#a3247574caabc2b31796861a10b2c9cab" title="Complete a bdev_io.">spdk_bdev_io_complete()</a>. The I/O does not have to finish within the calling context of <code>submit_request</code>.</p>
 <p>Integrating a new bdev module into the build system requires updates to various files in the /mk directory.</p>
-<h2>Creating Bdevs in an External Repository</h2>
+<h1>Creating Bdevs in an External Repository</h1>
 <p>A User can build their own bdev module and application on top of existing SPDK libraries. The example in test/external_code serves as a template for creating, building and linking an external bdev module. Refer to test/external_code/README.md and <a class="el" href="libraries.html#so_linking">Linking to Shared Objects</a> for further information.</p>
-<h2>Creating Virtual Bdevs</h2>
+<h1>Creating Virtual Bdevs</h1>
 <p>Block devices are considered virtual if they handle I/O requests by routing the I/O to other block devices. The canonical example would be a bdev module that implements RAID. Virtual bdevs are created in the same way as regular bdevs, but take one additional step. The module can look up the underlying bdevs it wishes to route I/O to using <a class="el" href="bdev_8h.html#a89c759c53d028e3e408d19156f0e1eb1" title="Get block device by the block device name.">spdk_bdev_get_by_name()</a>, where the string name is provided by the user via an RPC. The module then may proceed is normal by opening the bdev to obtain a descriptor, and creating I/O channels for the bdev (probably in response to the <code>get_io_channel</code> callback). The final step is to have the module use its open descriptor to call <a class="el" href="bdev__module_8h.html#a43188aae62750556bba04f4ddc81fa94" title="Called by a bdev module to lay exclusive write claim to a bdev.">spdk_bdev_module_claim_bdev()</a>, indicating that it is consuming the underlying bdev. This prevents other users from opening descriptors with write permissions. This effectively 'promotes' the descriptor to write-exclusive and is an operation only available to bdev modules. </p>
-</div></div><!-- PageDoc -->
-</div><!-- contents -->
+</div></div><!-- contents -->
+</div><!-- PageDoc -->
 </div><!-- doc-content -->
+<div class="ttc" id="astructspdk__bdev__fn__table_html"><div class="ttname"><a href="structspdk__bdev__fn__table.html">spdk_bdev_fn_table</a></div><div class="ttdoc">Function table for a block device backend.</div><div class="ttdef"><b>Definition:</b> bdev_module.h:203</div></div>
+<div class="ttc" id="astructspdk__bdev__fn__table_html_a20ec74cad9e56c5ac8ee9db239d8f46e"><div class="ttname"><a href="structspdk__bdev__fn__table.html#a20ec74cad9e56c5ac8ee9db239d8f46e">spdk_bdev_fn_table::io_type_supported</a></div><div class="ttdeci">bool(* io_type_supported)(void *ctx, enum spdk_bdev_io_type)</div><div class="ttdoc">Check if the block device supports a specific I/O type.</div><div class="ttdef"><b>Definition:</b> bdev_module.h:211</div></div>
+<div class="ttc" id="astructspdk__bdev__fn__table_html_a8a76c50a2b20205ec9fffe4afb9e3a15"><div class="ttname"><a href="structspdk__bdev__fn__table.html#a8a76c50a2b20205ec9fffe4afb9e3a15">spdk_bdev_fn_table::destruct</a></div><div class="ttdeci">int(* destruct)(void *ctx)</div><div class="ttdoc">Destroy the backend block device object.</div><div class="ttdef"><b>Definition:</b> bdev_module.h:205</div></div>
+<div class="ttc" id="abdev_8h_html_a633029e24ab5ae4a689bffa2565a519f"><div class="ttname"><a href="bdev_8h.html#a633029e24ab5ae4a689bffa2565a519f">spdk_bdev_io_type</a></div><div class="ttdeci">spdk_bdev_io_type</div><div class="ttdoc">bdev I/O type</div><div class="ttdef"><b>Definition:</b> bdev.h:125</div></div>
+<div class="ttc" id="astructspdk__bdev__fn__table_html_ae80a9002371becdc6fb1c13f8f5173bf"><div class="ttname"><a href="structspdk__bdev__fn__table.html#ae80a9002371becdc6fb1c13f8f5173bf">spdk_bdev_fn_table::submit_request</a></div><div class="ttdeci">void(* submit_request)(struct spdk_io_channel *ch, struct spdk_bdev_io *)</div><div class="ttdoc">Process the IO.</div><div class="ttdef"><b>Definition:</b> bdev_module.h:208</div></div>
+<div class="ttc" id="astructspdk__bdev__fn__table_html_aafc336b4a42290b7e944fa0e73558a62"><div class="ttname"><a href="structspdk__bdev__fn__table.html#aafc336b4a42290b7e944fa0e73558a62">spdk_bdev_fn_table::get_spin_time</a></div><div class="ttdeci">uint64_t(* get_spin_time)(struct spdk_io_channel *ch)</div><div class="ttdoc">Get spin-time per I/O channel in microseconds.</div><div class="ttdef"><b>Definition:</b> bdev_module.h:244</div></div>
+<div class="ttc" id="astructspdk__bdev__io_html"><div class="ttname"><a href="structspdk__bdev__io.html">spdk_bdev_io</a></div><div class="ttdef"><b>Definition:</b> bdev_module.h:532</div></div>
+<div class="ttc" id="astructspdk__io__channel_html"><div class="ttname"><a href="structspdk__io__channel.html">spdk_io_channel</a></div><div class="ttdoc">Represents a per-thread channel for accessing an I/O device.</div><div class="ttdef"><b>Definition:</b> thread.h:222</div></div>
+<!-- HTML footer for doxygen 1.8.8-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+<ul>
+        <li class="footer">Generated on Wed May 12 2021 14:31:28 for SPDK by
+        <a href="http://www.doxygen.org/index.html">doxygen</a> 1.8.20 </li>
+</ul>
 </div>
+</div>
+</body>
+</html>

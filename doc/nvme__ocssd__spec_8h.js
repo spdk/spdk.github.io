@@ -31,9 +31,9 @@ var nvme__ocssd__spec_8h =
       [ "SPDK_OCSSD_SC_OUT_OF_ORDER_WRITE", "nvme__ocssd__spec_8h.html#ae66ff1776aa8a6560e7c762726777deaa52972575b3058bfd5a4ccd9eb172da26", null ],
       [ "SPDK_OCSSD_SC_READ_HIGH_ECC", "nvme__ocssd__spec_8h.html#ae66ff1776aa8a6560e7c762726777deaa56501d789236d739e033e609d627b2f2", null ]
     ] ],
-    [ "SPDK_STATIC_ASSERT", "nvme__ocssd__spec_8h.html#a795ecd2378b97c445193b2cdc1be99bb", null ],
-    [ "SPDK_STATIC_ASSERT", "nvme__ocssd__spec_8h.html#a584df915ebdcf6a753a2370d5cbd784f", null ],
     [ "SPDK_STATIC_ASSERT", "nvme__ocssd__spec_8h.html#ae47104483611b04414d0a421b248d178", null ],
     [ "SPDK_STATIC_ASSERT", "nvme__ocssd__spec_8h.html#a4b36d556463b5fe4bb924a3da299fca0", null ],
+    [ "SPDK_STATIC_ASSERT", "nvme__ocssd__spec_8h.html#a795ecd2378b97c445193b2cdc1be99bb", null ],
+    [ "SPDK_STATIC_ASSERT", "nvme__ocssd__spec_8h.html#a584df915ebdcf6a753a2370d5cbd784f", null ],
     [ "SPDK_STATIC_ASSERT", "nvme__ocssd__spec_8h.html#a6e889e465d0062a5325c457c07d39adb", null ]
 ];

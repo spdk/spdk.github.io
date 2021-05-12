@@ -1,99 +1,43 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <!-- For Mobile Devices -->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="Content-Type" content="text/xhtml; charset=utf-8">
-  <meta name="generator" content="Doxygen 1.8.15">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="generator" content="Doxygen 1.8.20" />
   <title>SPDK: spdk_nvme_io_qpair_opts Struct Reference</title>
-  <script type="text/javascript" src="jquery.js"></script>
-  <script type="text/javascript" src="dynsections.js"></script>
-  <script type="text/javascript" src="two.min.js"></script>
-  <link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-  $(document).ready(initResizable);
-/* @license-end */</script>
-  <link href="search/search.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="search/searchdata.js"></script>
-<script type="text/javascript" src="search/search.js"></script>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,900" type="text/css">
-  <link href="../css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  <link rel="stylesheet" href="tabs.css" type="text/css">
-  <link href="stylesheet.css" rel="stylesheet" type="text/css"/>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="/js/doxyboot.js"></script>
+  <script type="text/javascript" src="navtree.js"></script>
+  <link href="/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link href="/css/spdk.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-<div class="container-fluid">
-  <div id="top">  <!-- do not remove this div, it is closed by doxygen! -->
-    <div class="row no-gutters">
-      <div class="col-xs-12">
-        <section id="nav">
-          <div class="navbar navbar-default navbar-static-top banner-tabs">
-            <ul class="nav navbar-nav">
-              <li role="presentation">
-                <a href="http://www.spdk.io/">
-                  <i class="glyphicon glyphicon-home"></i>
-                  <span class="box-name">home</span>
-                </a>
-              </li>
-              <li role="presentation">
-                <a href="http://www.spdk.io/releases/">
-                  <i class="glyphicon glyphicon-download-alt"></i>
-                  <span class="box-name">download</span>
-                </a>
-              </li>
-              <li class="active" role="presentation">
-                <a href="index.html">
-                  <i class="glyphicon glyphicon-book"></i>
-                  <span class="box-name">documentation</span>
-                </a>
-              </li>
-              <li role="presentation">
-                <a href="http://www.spdk.io/development/">
-                  <i class="glyphicon glyphicon-wrench"></i>
-                  <span class="box-name">development</span>
-                </a>
-              </li>
-              <li role="presentation">
-                <a href="https://spdk.io/ci/">
-                  <i class="glyphicon glyphicon-ok"></i>
-                  <span class="box-name">CI status</span>
-                </a>
-              </li>
-              <li role="presentation">
-                <a href="http://www.spdk.io/community/">
-                  <i class="glyphicon glyphicon-envelope"></i>
-                  <span class="box-name">community</span>
-                </a>
-              </li>
-              <li role="presentation">
-                <a href="http://www.spdk.io/blog/">
-                  <i class="glyphicon glyphicon-comment"></i>
-                  <span class="box-name">Blog</span>
-                </a>
-              </li>
-              <li role="presentation">
-                <a href="https://trello.com/b/MN8auadQ/spdk-roadmap">
-                  <i class="glyphicon glyphicon-map-marker"></i>
-                  <span class="box-name">Roadmap</span>
-                </a>
-              </li>
-              <li role="presentation">
-                <a href="http://www.spdk.io/news/">
-                  <i class="glyphicon glyphicon-bullhorn"></i>
-                  <span class="box-name">News</span>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </section>
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark px-2">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="/" aria-label="SPDK">
+      <img src="/img/spdk.svg"  width="36" height="36" alt="Storage Performance Development Kit" />
+    </a>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <div class="navbar-nav mr-auto">
+        <a class="nav-link header-link active" href="../doc/">Documentation</a>
+        <a class="nav-link header-link" href="../development/">Development</a>
+        <a class="nav-link header-link" href="../community/">Community</a>
+        <a class="nav-link header-link" href="../blog/">Blog</a>
+      </div>
+      <div class="navbar-nav ml-auto mr-3">
+        <a class="nav-link header-link" href="https://github.com/spdk/spdk">
+          <svg xmlns="http://www.w3.org/2000/svg" class="navbar-nav-svg"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+        </a>
       </div>
     </div>
-<!-- Generated by Doxygen 1.8.15 -->
+  </nav>
+  <div class="container-fluid doc">
+      <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<!-- Generated by Doxygen 1.8.20 -->
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 var searchBox = new SearchBox("searchBox", "search",false,'Search');
@@ -122,7 +66,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-$(document).ready(function(){initNavTree('structspdk__nvme__io__qpair__opts.html','');});
+$(document).ready(function(){initNavTree('structspdk__nvme__io__qpair__opts.html',''); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -153,28 +97,28 @@ $(document).ready(function(){initNavTree('structspdk__nvme__io__qpair__opts.html
 <div class="dynheader">
 Collaboration diagram for spdk_nvme_io_qpair_opts:</div>
 <div class="dyncontent">
-<div class="center"><img src="structspdk__nvme__io__qpair__opts__coll__graph.png" border="0" usemap="#spdk__nvme__io__qpair__opts_coll__map" alt="Collaboration graph"/></div>
-<map name="spdk__nvme__io__qpair__opts_coll__map" id="spdk__nvme__io__qpair__opts_coll__map">
-<area shape="rect"  title="NVMe I/O queue pair initialization options." alt="" coords="387,184,578,211"/>
-<area shape="rect"  href="structspdk__nvme__cmd.html" title=" " alt="" coords="341,95,473,121"/>
-<area shape="rect"  href="unionspdk__nvme__cmd__cdw10.html" title=" " alt="" coords="5,5,187,32"/>
-<area shape="rect"  href="unionspdk__nvme__cmd__cdw11.html" title=" " alt="" coords="211,5,392,32"/>
-<area shape="rect"  href="structspdk__nvme__sgl__descriptor.html" title=" " alt="" coords="416,5,611,32"/>
-<area shape="rect"  href="structspdk__nvme__cpl.html" title="Completion queue entry." alt="" coords="571,95,693,121"/>
-<area shape="rect"  href="structspdk__nvme__status.html" title=" " alt="" coords="635,5,779,32"/>
+<div class="center"><img src="structspdk__nvme__io__qpair__opts__coll__graph.png" border="0" usemap="#aspdk__nvme__io__qpair__opts_coll__map" alt="Collaboration graph"/></div>
+<map name="spdk__nvme__io__qpair__opts_coll__map" id="aspdk__nvme__io__qpair__opts_coll__map">
+<area shape="rect" title="NVMe I/O queue pair initialization options." alt="" coords="361,184,534,211"/>
+<area shape="rect" href="structspdk__nvme__cmd.html" title=" " alt="" coords="316,95,437,121"/>
+<area shape="rect" href="unionspdk__nvme__cmd__cdw10.html" title=" " alt="" coords="5,5,172,32"/>
+<area shape="rect" href="unionspdk__nvme__cmd__cdw11.html" title=" " alt="" coords="196,5,363,32"/>
+<area shape="rect" href="structspdk__nvme__sgl__descriptor.html" title=" " alt="" coords="387,5,564,32"/>
+<area shape="rect" href="structspdk__nvme__cpl.html" title="Completion queue entry." alt="" coords="529,95,643,121"/>
+<area shape="rect" href="structspdk__nvme__status.html" title=" " alt="" coords="588,5,720,32"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
 <tr class="memitem:a9a9ae75991da44a7fbf06a3c82161a6d"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="nvme__spec_8h.html#ae83a61e254cf9d1fd59376ceedd1b4e6">spdk_nvme_qprio</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__io__qpair__opts.html#a9a9ae75991da44a7fbf06a3c82161a6d">qprio</a></td></tr>
-<tr class="memdesc:a9a9ae75991da44a7fbf06a3c82161a6d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Queue priority for weighted round robin arbitration.  <a href="#a9a9ae75991da44a7fbf06a3c82161a6d">More...</a><br /></td></tr>
+<tr class="memdesc:a9a9ae75991da44a7fbf06a3c82161a6d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Queue priority for weighted round robin arbitration.  <a href="structspdk__nvme__io__qpair__opts.html#a9a9ae75991da44a7fbf06a3c82161a6d">More...</a><br /></td></tr>
 <tr class="separator:a9a9ae75991da44a7fbf06a3c82161a6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adbb8aa3f64bc021ea5e9fddec6796341"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__io__qpair__opts.html#adbb8aa3f64bc021ea5e9fddec6796341">io_queue_size</a></td></tr>
-<tr class="memdesc:adbb8aa3f64bc021ea5e9fddec6796341"><td class="mdescLeft">&#160;</td><td class="mdescRight">The queue depth of this NVMe I/O queue.  <a href="#adbb8aa3f64bc021ea5e9fddec6796341">More...</a><br /></td></tr>
+<tr class="memdesc:adbb8aa3f64bc021ea5e9fddec6796341"><td class="mdescLeft">&#160;</td><td class="mdescRight">The queue depth of this NVMe I/O queue.  <a href="structspdk__nvme__io__qpair__opts.html#adbb8aa3f64bc021ea5e9fddec6796341">More...</a><br /></td></tr>
 <tr class="separator:adbb8aa3f64bc021ea5e9fddec6796341"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4af594ef7f8b7e590662633c926146b4"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__io__qpair__opts.html#a4af594ef7f8b7e590662633c926146b4">io_queue_requests</a></td></tr>
-<tr class="memdesc:a4af594ef7f8b7e590662633c926146b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">The number of requests to allocate for this NVMe I/O queue.  <a href="#a4af594ef7f8b7e590662633c926146b4">More...</a><br /></td></tr>
+<tr class="memdesc:a4af594ef7f8b7e590662633c926146b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">The number of requests to allocate for this NVMe I/O queue.  <a href="structspdk__nvme__io__qpair__opts.html#a4af594ef7f8b7e590662633c926146b4">More...</a><br /></td></tr>
 <tr class="separator:a4af594ef7f8b7e590662633c926146b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab9fe15d01b6bd13749c7ad0083690ce5"><td class="memItemLeft" >union {</td></tr>
 <tr class="memitem:ae1839e643ffb20b87b46bb7d20b6d98e"><td class="memItemLeft" >
@@ -184,9 +128,9 @@ Data Fields</h2></td></tr>
 &#160;&#160;&#160;bool&#160;&#160;&#160;<b>delay_pcie_doorbell</b></td></tr>
 <tr class="separator:a73c74f61f723b1859c5415e149826971"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab9fe15d01b6bd13749c7ad0083690ce5"><td class="memItemLeft" valign="top">};&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
-<tr class="memdesc:ab9fe15d01b6bd13749c7ad0083690ce5"><td class="mdescLeft">&#160;</td><td class="mdescRight">When submitting I/O via spdk_nvme_ns_read/write and similar functions, don't immediately submit it to hardware.  <a href="#ab9fe15d01b6bd13749c7ad0083690ce5">More...</a><br /></td></tr>
+<tr class="memdesc:ab9fe15d01b6bd13749c7ad0083690ce5"><td class="mdescLeft">&#160;</td><td class="mdescRight">When submitting I/O via spdk_nvme_ns_read/write and similar functions, don't immediately submit it to hardware.  <a href="structspdk__nvme__io__qpair__opts.html#ab9fe15d01b6bd13749c7ad0083690ce5">More...</a><br /></td></tr>
 <tr class="separator:ab9fe15d01b6bd13749c7ad0083690ce5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2944d824b007d1454065a7bb5b47434f"><td class="memItemLeft" >struct {</td></tr>
+<tr class="memitem:a2a3147ec2b94758c91f8eca006721740"><td class="memItemLeft" >struct {</td></tr>
 <tr class="memitem:a29f2c52b75fe120b7d1093123416f7d1"><td class="memItemLeft" >
 &#160;&#160;&#160;struct <a class="el" href="structspdk__nvme__cmd.html">spdk_nvme_cmd</a> *&#160;&#160;&#160;<b>vaddr</b></td></tr>
 <tr class="separator:a29f2c52b75fe120b7d1093123416f7d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -196,10 +140,10 @@ Data Fields</h2></td></tr>
 <tr class="memitem:a775378f3a0cf94913775861158a9bc2f"><td class="memItemLeft" >
 &#160;&#160;&#160;uint64_t&#160;&#160;&#160;<b>buffer_size</b></td></tr>
 <tr class="separator:a775378f3a0cf94913775861158a9bc2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2944d824b007d1454065a7bb5b47434f"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__io__qpair__opts.html#a2944d824b007d1454065a7bb5b47434f">sq</a></td></tr>
-<tr class="memdesc:a2944d824b007d1454065a7bb5b47434f"><td class="mdescLeft">&#160;</td><td class="mdescRight">These fields allow specifying the memory buffers for the submission and/or completion queues.  <a href="#a2944d824b007d1454065a7bb5b47434f">More...</a><br /></td></tr>
-<tr class="separator:a2944d824b007d1454065a7bb5b47434f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5abf96ce1041579e0cad62f90bdfb676"><td class="memItemLeft" ><a id="a5abf96ce1041579e0cad62f90bdfb676"></a>
+<tr class="memitem:a2a3147ec2b94758c91f8eca006721740"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__io__qpair__opts.html#a2a3147ec2b94758c91f8eca006721740">sq</a></td></tr>
+<tr class="memdesc:a2a3147ec2b94758c91f8eca006721740"><td class="mdescLeft">&#160;</td><td class="mdescRight">These fields allow specifying the memory buffers for the submission and/or completion queues.  <a href="structspdk__nvme__io__qpair__opts.html#a2a3147ec2b94758c91f8eca006721740">More...</a><br /></td></tr>
+<tr class="separator:a2a3147ec2b94758c91f8eca006721740"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab90236d84faf91fe5e18c6e05e5bc05d"><td class="memItemLeft" ><a id="ab90236d84faf91fe5e18c6e05e5bc05d"></a>
 struct {</td></tr>
 <tr class="memitem:a279e886cb87bbb6cb48e772a5829049e"><td class="memItemLeft" >
 &#160;&#160;&#160;struct <a class="el" href="structspdk__nvme__cpl.html">spdk_nvme_cpl</a> *&#160;&#160;&#160;<b>vaddr</b></td></tr>
@@ -210,10 +154,10 @@ struct {</td></tr>
 <tr class="memitem:a0ffc0f452f0cb686ebe7958779fe6edf"><td class="memItemLeft" >
 &#160;&#160;&#160;uint64_t&#160;&#160;&#160;<b>buffer_size</b></td></tr>
 <tr class="separator:a0ffc0f452f0cb686ebe7958779fe6edf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5abf96ce1041579e0cad62f90bdfb676"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><b>cq</b></td></tr>
-<tr class="separator:a5abf96ce1041579e0cad62f90bdfb676"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab90236d84faf91fe5e18c6e05e5bc05d"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><b>cq</b></td></tr>
+<tr class="separator:ab90236d84faf91fe5e18c6e05e5bc05d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9de651bfea3d4f53d80c124530062ca5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__io__qpair__opts.html#a9de651bfea3d4f53d80c124530062ca5">create_only</a></td></tr>
-<tr class="memdesc:a9de651bfea3d4f53d80c124530062ca5"><td class="mdescLeft">&#160;</td><td class="mdescRight">This flag indicates to the alloc_io_qpair function that it should not perform the connect portion on this qpair.  <a href="#a9de651bfea3d4f53d80c124530062ca5">More...</a><br /></td></tr>
+<tr class="memdesc:a9de651bfea3d4f53d80c124530062ca5"><td class="mdescLeft">&#160;</td><td class="mdescRight">This flag indicates to the alloc_io_qpair function that it should not perform the connect portion on this qpair.  <a href="structspdk__nvme__io__qpair__opts.html#a9de651bfea3d4f53d80c124530062ca5">More...</a><br /></td></tr>
 <tr class="separator:a9de651bfea3d4f53d80c124530062ca5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -311,14 +255,14 @@ struct {</td></tr>
 
 </div>
 </div>
-<a id="a2944d824b007d1454065a7bb5b47434f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2944d824b007d1454065a7bb5b47434f">&#9670;&nbsp;</a></span>sq</h2>
+<a id="a2a3147ec2b94758c91f8eca006721740"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2a3147ec2b94758c91f8eca006721740">&#9670;&nbsp;</a></span>sq</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">struct { ... }   spdk_nvme_io_qpair_opts::sq</td>
+          <td class="memname">struct { ... }  spdk_nvme_io_qpair_opts::sq</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -333,4 +277,14 @@ struct {</td></tr>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.8.8-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+<ul>
+        <li class="footer">Generated on Wed May 12 2021 14:31:29 for SPDK by
+        <a href="http://www.doxygen.org/index.html">doxygen</a> 1.8.20 </li>
+</ul>
 </div>
+</div>
+</body>
+</html>

@@ -1,99 +1,43 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <!-- For Mobile Devices -->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="Content-Type" content="text/xhtml; charset=utf-8">
-  <meta name="generator" content="Doxygen 1.8.15">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="generator" content="Doxygen 1.8.20" />
   <title>SPDK: spdk_bdev::__bdev_internal_fields Struct Reference</title>
-  <script type="text/javascript" src="jquery.js"></script>
-  <script type="text/javascript" src="dynsections.js"></script>
-  <script type="text/javascript" src="two.min.js"></script>
-  <link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-  $(document).ready(initResizable);
-/* @license-end */</script>
-  <link href="search/search.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="search/searchdata.js"></script>
-<script type="text/javascript" src="search/search.js"></script>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,900" type="text/css">
-  <link href="../css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  <link rel="stylesheet" href="tabs.css" type="text/css">
-  <link href="stylesheet.css" rel="stylesheet" type="text/css"/>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="/js/doxyboot.js"></script>
+  <script type="text/javascript" src="navtree.js"></script>
+  <link href="/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link href="/css/spdk.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-<div class="container-fluid">
-  <div id="top">  <!-- do not remove this div, it is closed by doxygen! -->
-    <div class="row no-gutters">
-      <div class="col-xs-12">
-        <section id="nav">
-          <div class="navbar navbar-default navbar-static-top banner-tabs">
-            <ul class="nav navbar-nav">
-              <li role="presentation">
-                <a href="http://www.spdk.io/">
-                  <i class="glyphicon glyphicon-home"></i>
-                  <span class="box-name">home</span>
-                </a>
-              </li>
-              <li role="presentation">
-                <a href="http://www.spdk.io/releases/">
-                  <i class="glyphicon glyphicon-download-alt"></i>
-                  <span class="box-name">download</span>
-                </a>
-              </li>
-              <li class="active" role="presentation">
-                <a href="index.html">
-                  <i class="glyphicon glyphicon-book"></i>
-                  <span class="box-name">documentation</span>
-                </a>
-              </li>
-              <li role="presentation">
-                <a href="http://www.spdk.io/development/">
-                  <i class="glyphicon glyphicon-wrench"></i>
-                  <span class="box-name">development</span>
-                </a>
-              </li>
-              <li role="presentation">
-                <a href="https://spdk.io/ci/">
-                  <i class="glyphicon glyphicon-ok"></i>
-                  <span class="box-name">CI status</span>
-                </a>
-              </li>
-              <li role="presentation">
-                <a href="http://www.spdk.io/community/">
-                  <i class="glyphicon glyphicon-envelope"></i>
-                  <span class="box-name">community</span>
-                </a>
-              </li>
-              <li role="presentation">
-                <a href="http://www.spdk.io/blog/">
-                  <i class="glyphicon glyphicon-comment"></i>
-                  <span class="box-name">Blog</span>
-                </a>
-              </li>
-              <li role="presentation">
-                <a href="https://trello.com/b/MN8auadQ/spdk-roadmap">
-                  <i class="glyphicon glyphicon-map-marker"></i>
-                  <span class="box-name">Roadmap</span>
-                </a>
-              </li>
-              <li role="presentation">
-                <a href="http://www.spdk.io/news/">
-                  <i class="glyphicon glyphicon-bullhorn"></i>
-                  <span class="box-name">News</span>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </section>
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark px-2">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="/" aria-label="SPDK">
+      <img src="/img/spdk.svg"  width="36" height="36" alt="Storage Performance Development Kit" />
+    </a>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <div class="navbar-nav mr-auto">
+        <a class="nav-link header-link active" href="../doc/">Documentation</a>
+        <a class="nav-link header-link" href="../development/">Development</a>
+        <a class="nav-link header-link" href="../community/">Community</a>
+        <a class="nav-link header-link" href="../blog/">Blog</a>
+      </div>
+      <div class="navbar-nav ml-auto mr-3">
+        <a class="nav-link header-link" href="https://github.com/spdk/spdk">
+          <svg xmlns="http://www.w3.org/2000/svg" class="navbar-nav-svg"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+        </a>
       </div>
     </div>
-<!-- Generated by Doxygen 1.8.15 -->
+  </nav>
+  <div class="container-fluid doc">
+      <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<!-- Generated by Doxygen 1.8.20 -->
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 var searchBox = new SearchBox("searchBox", "search",false,'Search');
@@ -122,7 +66,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-$(document).ready(function(){initNavTree('structspdk__bdev_1_1____bdev__internal__fields.html','');});
+$(document).ready(function(){initNavTree('structspdk__bdev_1_1____bdev__internal__fields.html',''); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -154,24 +98,25 @@ $(document).ready(function(){initNavTree('structspdk__bdev_1_1____bdev__internal
 <div class="dynheader">
 Collaboration diagram for spdk_bdev::__bdev_internal_fields:</div>
 <div class="dyncontent">
-<div class="center"><img src="structspdk__bdev_1_1____bdev__internal__fields__coll__graph.png" border="0" usemap="#spdk__bdev_1_1____bdev__internal__fields_coll__map" alt="Collaboration graph"/></div>
-<map name="spdk__bdev_1_1____bdev__internal__fields_coll__map" id="spdk__bdev_1_1____bdev__internal__fields_coll__map">
-<area shape="rect"  title="Fields that are used internally by the bdev subsystem." alt="" coords="583,166,785,207"/>
-<area shape="rect"  href="structspdk__bdev.html" title=" " alt="" coords="908,125,1000,152"/>
-<area shape="rect"  href="structspdk__bdev__module.html" title="Block device module." alt="" coords="289,113,437,140"/>
-<area shape="rect"  href="structspdk__bdev__module_1_1____bdev__module__internal__fields.html" title="Fields that are used by the internal bdev subsystem." alt="" coords="5,99,187,155"/>
-<area shape="rect"  href="structspdk__bdev__io__stat.html" title=" " alt="" coords="292,179,435,205"/>
-<area shape="rect"  href="structspdk__bdev__io.html" title=" " alt="" coords="1113,111,1224,137"/>
-<area shape="rect"  href="structspdk__bdev__io_1_1____bdev__io__internal__fields.html" title="Fields that are used internally by the bdev subsystem." alt="" coords="1327,58,1492,99"/>
-<area shape="rect"  href="structspdk__nvme__cmd.html" title=" " alt="" coords="888,75,1020,101"/>
-<area shape="rect"  href="structspdk__io__channel.html" title="Represents a per&#45;thread channel for accessing an I/O device." alt="" coords="889,11,1019,37"/>
+<div class="center"><img src="structspdk__bdev_1_1____bdev__internal__fields__coll__graph.png" border="0" usemap="#aspdk__bdev_1_1____bdev__internal__fields_coll__map" alt="Collaboration graph"/></div>
+<map name="spdk__bdev_1_1____bdev__internal__fields_coll__map" id="aspdk__bdev_1_1____bdev__internal__fields_coll__map">
+<area shape="rect" title="Fields that are used internally by the bdev subsystem." alt="" coords="531,166,713,207"/>
+<area shape="rect" href="structspdk__bdev.html" title=" " alt="" coords="826,125,911,152"/>
+<area shape="rect" href="structspdk__bdev__module.html" title="Block device module." alt="" coords="263,113,397,140"/>
+<area shape="rect" href="structspdk__bdev__module_1_1____bdev__module__internal__fields.html" title="Fields that are used by the internal bdev subsystem." alt="" coords="5,99,168,155"/>
+<area shape="rect" href="structspdk__bdev__io__stat.html" title=" " alt="" coords="265,179,395,205"/>
+<area shape="rect" href="structspdk__bdev__io.html" title=" " alt="" coords="1019,111,1121,137"/>
+<area shape="rect" href="structspdk__bdev__io_1_1____bdev__io__internal__fields.html" title="Fields that are used internally by the bdev subsystem." alt="" coords="1216,58,1368,99"/>
+<area shape="rect" href="structspdk__nvme__cmd.html" title=" " alt="" coords="808,75,929,101"/>
+<area shape="rect" href="structspdk__io__channel.html" title="Represents a per&#45;thread channel for accessing an I/O device." alt="" coords="809,11,928,37"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a920a1e86dea170c9234bb24f61b16226"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev_1_1____bdev__internal__fields.html#a920a1e86dea170c9234bb24f61b16226">TAILQ_HEAD</a> (, spdk_bdev_desc) open_descs</td></tr>
-<tr class="memdesc:a920a1e86dea170c9234bb24f61b16226"><td class="mdescLeft">&#160;</td><td class="mdescRight">List of open descriptors for this block device.  <a href="#a920a1e86dea170c9234bb24f61b16226">More...</a><br /></td></tr>
+<tr class="memitem:a920a1e86dea170c9234bb24f61b16226"><td class="memItemLeft" align="right" valign="top"><a id="a920a1e86dea170c9234bb24f61b16226"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev_1_1____bdev__internal__fields.html#a920a1e86dea170c9234bb24f61b16226">TAILQ_HEAD</a> (, spdk_bdev_desc) open_descs</td></tr>
+<tr class="memdesc:a920a1e86dea170c9234bb24f61b16226"><td class="mdescLeft">&#160;</td><td class="mdescRight">List of open descriptors for this block device. <br /></td></tr>
 <tr class="separator:a920a1e86dea170c9234bb24f61b16226"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a740740056a9b6f061a8d71dd755d54d9"><td class="memItemLeft" align="right" valign="top"><a id="a740740056a9b6f061a8d71dd755d54d9"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>TAILQ_ENTRY</b> (<a class="el" href="structspdk__bdev.html">spdk_bdev</a>) link</td></tr>
@@ -196,17 +141,19 @@ enum <a class="el" href="bdev_8h.html#ad6c166f5d928c2995df57c96a2977862">spdk_bd
 <tr class="memdesc:a75eb824f166523af1bb44edc6b209e89"><td class="mdescLeft">&#160;</td><td class="mdescRight">The bdev status. <br /></td></tr>
 <tr class="separator:a75eb824f166523af1bb44edc6b209e89"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a218d92ccd2079d21b672edfb0168cfe1"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structspdk__bdev__module.html">spdk_bdev_module</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev_1_1____bdev__internal__fields.html#a218d92ccd2079d21b672edfb0168cfe1">claim_module</a></td></tr>
-<tr class="memdesc:a218d92ccd2079d21b672edfb0168cfe1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to the module that has claimed this bdev for purposes of creating virtual bdevs on top of it.  <a href="#a218d92ccd2079d21b672edfb0168cfe1">More...</a><br /></td></tr>
+<tr class="memdesc:a218d92ccd2079d21b672edfb0168cfe1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to the module that has claimed this bdev for purposes of creating virtual bdevs on top of it.  <a href="structspdk__bdev_1_1____bdev__internal__fields.html#a218d92ccd2079d21b672edfb0168cfe1">More...</a><br /></td></tr>
 <tr class="separator:a218d92ccd2079d21b672edfb0168cfe1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a19c909b97a282da2b6681fd46a0d9a69"><td class="memItemLeft" align="right" valign="top">spdk_bdev_unregister_cb&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev_1_1____bdev__internal__fields.html#a19c909b97a282da2b6681fd46a0d9a69">unregister_cb</a></td></tr>
-<tr class="memdesc:a19c909b97a282da2b6681fd46a0d9a69"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback function that will be called after bdev destruct is completed.  <a href="#a19c909b97a282da2b6681fd46a0d9a69">More...</a><br /></td></tr>
+<tr class="memitem:a19c909b97a282da2b6681fd46a0d9a69"><td class="memItemLeft" align="right" valign="top"><a id="a19c909b97a282da2b6681fd46a0d9a69"></a>
+spdk_bdev_unregister_cb&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev_1_1____bdev__internal__fields.html#a19c909b97a282da2b6681fd46a0d9a69">unregister_cb</a></td></tr>
+<tr class="memdesc:a19c909b97a282da2b6681fd46a0d9a69"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback function that will be called after bdev destruct is completed. <br /></td></tr>
 <tr class="separator:a19c909b97a282da2b6681fd46a0d9a69"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aac5fe7bcf1bbbf3f984874e1c75a580a"><td class="memItemLeft" align="right" valign="top"><a id="aac5fe7bcf1bbbf3f984874e1c75a580a"></a>
 void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev_1_1____bdev__internal__fields.html#aac5fe7bcf1bbbf3f984874e1c75a580a">unregister_ctx</a></td></tr>
 <tr class="memdesc:aac5fe7bcf1bbbf3f984874e1c75a580a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unregister call context. <br /></td></tr>
 <tr class="separator:aac5fe7bcf1bbbf3f984874e1c75a580a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae3603bee677af4d8eaafffce32e0deea"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structspdk__bdev__io.html">spdk_bdev_io</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev_1_1____bdev__internal__fields.html#ae3603bee677af4d8eaafffce32e0deea">reset_in_progress</a></td></tr>
-<tr class="memdesc:ae3603bee677af4d8eaafffce32e0deea"><td class="mdescLeft">&#160;</td><td class="mdescRight">points to a reset bdev_io if one is in progress.  <a href="#ae3603bee677af4d8eaafffce32e0deea">More...</a><br /></td></tr>
+<tr class="memitem:ae3603bee677af4d8eaafffce32e0deea"><td class="memItemLeft" align="right" valign="top"><a id="ae3603bee677af4d8eaafffce32e0deea"></a>
+struct <a class="el" href="structspdk__bdev__io.html">spdk_bdev_io</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev_1_1____bdev__internal__fields.html#ae3603bee677af4d8eaafffce32e0deea">reset_in_progress</a></td></tr>
+<tr class="memdesc:ae3603bee677af4d8eaafffce32e0deea"><td class="mdescLeft">&#160;</td><td class="mdescRight">points to a reset bdev_io if one is in progress. <br /></td></tr>
 <tr class="separator:ae3603bee677af4d8eaafffce32e0deea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a37797b9f43314a231214f04edb5c7029"><td class="memItemLeft" align="right" valign="top"><a id="a37797b9f43314a231214f04edb5c7029"></a>
 struct spdk_poller *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev_1_1____bdev__internal__fields.html#a37797b9f43314a231214f04edb5c7029">qd_poller</a></td></tr>
@@ -220,14 +167,15 @@ uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev_1_1____bdev__internal__fields.html#afad02fdc83417a632d9ecc7f3c437c47">temporary_queue_depth</a></td></tr>
 <tr class="memdesc:afad02fdc83417a632d9ecc7f3c437c47"><td class="mdescLeft">&#160;</td><td class="mdescRight">used to aggregate queue depth while iterating across the bdev's open channels <br /></td></tr>
 <tr class="separator:afad02fdc83417a632d9ecc7f3c437c47"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a544e45acd435eb8c7269f08166841f41"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev_1_1____bdev__internal__fields.html#a544e45acd435eb8c7269f08166841f41">measured_queue_depth</a></td></tr>
-<tr class="memdesc:a544e45acd435eb8c7269f08166841f41"><td class="mdescLeft">&#160;</td><td class="mdescRight">queue depth as calculated the last time the telemetry poller checked.  <a href="#a544e45acd435eb8c7269f08166841f41">More...</a><br /></td></tr>
+<tr class="memitem:a544e45acd435eb8c7269f08166841f41"><td class="memItemLeft" align="right" valign="top"><a id="a544e45acd435eb8c7269f08166841f41"></a>
+uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev_1_1____bdev__internal__fields.html#a544e45acd435eb8c7269f08166841f41">measured_queue_depth</a></td></tr>
+<tr class="memdesc:a544e45acd435eb8c7269f08166841f41"><td class="mdescLeft">&#160;</td><td class="mdescRight">queue depth as calculated the last time the telemetry poller checked. <br /></td></tr>
 <tr class="separator:a544e45acd435eb8c7269f08166841f41"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a55d6103a185f6c50c9b5d58976d08508"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev_1_1____bdev__internal__fields.html#a55d6103a185f6c50c9b5d58976d08508">io_time</a></td></tr>
-<tr class="memdesc:a55d6103a185f6c50c9b5d58976d08508"><td class="mdescLeft">&#160;</td><td class="mdescRight">most recent value of ticks spent performing I/O.  <a href="#a55d6103a185f6c50c9b5d58976d08508">More...</a><br /></td></tr>
+<tr class="memdesc:a55d6103a185f6c50c9b5d58976d08508"><td class="mdescLeft">&#160;</td><td class="mdescRight">most recent value of ticks spent performing I/O.  <a href="structspdk__bdev_1_1____bdev__internal__fields.html#a55d6103a185f6c50c9b5d58976d08508">More...</a><br /></td></tr>
 <tr class="separator:a55d6103a185f6c50c9b5d58976d08508"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1ca4aa351052992223be9801674d8da8"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev_1_1____bdev__internal__fields.html#a1ca4aa351052992223be9801674d8da8">weighted_io_time</a></td></tr>
-<tr class="memdesc:a1ca4aa351052992223be9801674d8da8"><td class="mdescLeft">&#160;</td><td class="mdescRight">weighted time performing I/O.  <a href="#a1ca4aa351052992223be9801674d8da8">More...</a><br /></td></tr>
+<tr class="memdesc:a1ca4aa351052992223be9801674d8da8"><td class="mdescLeft">&#160;</td><td class="mdescRight">weighted time performing I/O.  <a href="structspdk__bdev_1_1____bdev__internal__fields.html#a1ca4aa351052992223be9801674d8da8">More...</a><br /></td></tr>
 <tr class="separator:a1ca4aa351052992223be9801674d8da8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a65f5698e232c6756471cc8a87c1cc0c6"><td class="memItemLeft" align="right" valign="top"><a id="a65f5698e232c6756471cc8a87c1cc0c6"></a>
 struct <a class="el" href="structspdk__bdev__io__stat.html">spdk_bdev_io_stat</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev_1_1____bdev__internal__fields.html#a65f5698e232c6756471cc8a87c1cc0c6">stat</a></td></tr>
@@ -241,37 +189,16 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stru
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>histogram_in_progress</b></td></tr>
 <tr class="separator:ad49ebdb41b6e0dc5954ff7a6039e40c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7bada4fbc5c2a5de7f7fdf7aef9d876f"><td class="memItemLeft" align="right" valign="top">lba_range_tailq_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev_1_1____bdev__internal__fields.html#a7bada4fbc5c2a5de7f7fdf7aef9d876f">locked_ranges</a></td></tr>
-<tr class="memdesc:a7bada4fbc5c2a5de7f7fdf7aef9d876f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Currently locked ranges for this bdev.  <a href="#a7bada4fbc5c2a5de7f7fdf7aef9d876f">More...</a><br /></td></tr>
+<tr class="memdesc:a7bada4fbc5c2a5de7f7fdf7aef9d876f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Currently locked ranges for this bdev.  <a href="structspdk__bdev_1_1____bdev__internal__fields.html#a7bada4fbc5c2a5de7f7fdf7aef9d876f">More...</a><br /></td></tr>
 <tr class="separator:a7bada4fbc5c2a5de7f7fdf7aef9d876f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a293999636600108bc77ef672b62bf4f1"><td class="memItemLeft" align="right" valign="top">lba_range_tailq_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev_1_1____bdev__internal__fields.html#a293999636600108bc77ef672b62bf4f1">pending_locked_ranges</a></td></tr>
-<tr class="memdesc:a293999636600108bc77ef672b62bf4f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pending locked ranges for this bdev.  <a href="#a293999636600108bc77ef672b62bf4f1">More...</a><br /></td></tr>
+<tr class="memdesc:a293999636600108bc77ef672b62bf4f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pending locked ranges for this bdev.  <a href="structspdk__bdev_1_1____bdev__internal__fields.html#a293999636600108bc77ef672b62bf4f1">More...</a><br /></td></tr>
 <tr class="separator:a293999636600108bc77ef672b62bf4f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Fields that are used internally by the bdev subsystem. </p>
 <p>Bdev modules must not read or write to these fields. </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a920a1e86dea170c9234bb24f61b16226"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a920a1e86dea170c9234bb24f61b16226">&#9670;&nbsp;</a></span>TAILQ_HEAD()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">spdk_bdev::__bdev_internal_fields::TAILQ_HEAD </td>
-          <td>(</td>
-          <td class="paramtype">spdk_bdev_desc&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>List of open descriptors for this block device. </p>
-
-</div>
-</div>
-<h2 class="groupheader">Field Documentation</h2>
+</div><h2 class="groupheader">Field Documentation</h2>
 <a id="a218d92ccd2079d21b672edfb0168cfe1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a218d92ccd2079d21b672edfb0168cfe1">&#9670;&nbsp;</a></span>claim_module</h2>
 
@@ -323,22 +250,6 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>histogram_in_progress
 
 </div>
 </div>
-<a id="a544e45acd435eb8c7269f08166841f41"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a544e45acd435eb8c7269f08166841f41">&#9670;&nbsp;</a></span>measured_queue_depth</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint64_t spdk_bdev::__bdev_internal_fields::measured_queue_depth</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>queue depth as calculated the last time the telemetry poller checked. </p>
-
-</div>
-</div>
 <a id="a293999636600108bc77ef672b62bf4f1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a293999636600108bc77ef672b62bf4f1">&#9670;&nbsp;</a></span>pending_locked_ranges</h2>
 
@@ -353,38 +264,6 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>histogram_in_progress
 
 <p>Pending locked ranges for this bdev. </p>
 <p>These ranges are not currently locked due to overlapping with another locked range. </p>
-
-</div>
-</div>
-<a id="ae3603bee677af4d8eaafffce32e0deea"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae3603bee677af4d8eaafffce32e0deea">&#9670;&nbsp;</a></span>reset_in_progress</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">struct <a class="el" href="structspdk__bdev__io.html">spdk_bdev_io</a>* spdk_bdev::__bdev_internal_fields::reset_in_progress</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>points to a reset bdev_io if one is in progress. </p>
-
-</div>
-</div>
-<a id="a19c909b97a282da2b6681fd46a0d9a69"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a19c909b97a282da2b6681fd46a0d9a69">&#9670;&nbsp;</a></span>unregister_cb</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">spdk_bdev_unregister_cb spdk_bdev::__bdev_internal_fields::unregister_cb</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Callback function that will be called after bdev destruct is completed. </p>
 
 </div>
 </div>
@@ -410,4 +289,14 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>histogram_in_progress
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.8.8-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+<ul>
+        <li class="footer">Generated on Wed May 12 2021 14:31:29 for SPDK by
+        <a href="http://www.doxygen.org/index.html">doxygen</a> 1.8.20 </li>
+</ul>
 </div>
+</div>
+</body>
+</html>

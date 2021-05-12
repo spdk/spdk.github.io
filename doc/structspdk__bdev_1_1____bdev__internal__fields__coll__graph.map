@@ -1,11 +1,11 @@
 <map id="spdk_bdev::__bdev_internal_fields" name="spdk_bdev::__bdev_internal_fields">
-<area shape="rect" id="node1" title="Fields that are used internally by the bdev subsystem." alt="" coords="583,166,785,207"/>
-<area shape="rect" id="node9" href="$structspdk__bdev.html" title=" " alt="" coords="908,125,1000,152"/>
-<area shape="rect" id="node2" href="$structspdk__bdev__module.html" title="Block device module." alt="" coords="289,113,437,140"/>
-<area shape="rect" id="node3" href="$structspdk__bdev__module_1_1____bdev__module__internal__fields.html" title="Fields that are used by the internal bdev subsystem." alt="" coords="5,99,187,155"/>
-<area shape="rect" id="node4" href="$structspdk__bdev__io__stat.html" title=" " alt="" coords="292,179,435,205"/>
-<area shape="rect" id="node5" href="$structspdk__bdev__io.html" title=" " alt="" coords="1113,111,1224,137"/>
-<area shape="rect" id="node8" href="$structspdk__bdev__io_1_1____bdev__io__internal__fields.html" title="Fields that are used internally by the bdev subsystem." alt="" coords="1327,58,1492,99"/>
-<area shape="rect" id="node6" href="$structspdk__nvme__cmd.html" title=" " alt="" coords="888,75,1020,101"/>
-<area shape="rect" id="node7" href="$structspdk__io__channel.html" title="Represents a per&#45;thread channel for accessing an I/O device." alt="" coords="889,11,1019,37"/>
+<area shape="rect" id="node1" title="Fields that are used internally by the bdev subsystem." alt="" coords="531,166,713,207"/>
+<area shape="rect" id="node9" href="$structspdk__bdev.html" title=" " alt="" coords="826,125,911,152"/>
+<area shape="rect" id="node2" href="$structspdk__bdev__module.html" title="Block device module." alt="" coords="263,113,397,140"/>
+<area shape="rect" id="node3" href="$structspdk__bdev__module_1_1____bdev__module__internal__fields.html" title="Fields that are used by the internal bdev subsystem." alt="" coords="5,99,168,155"/>
+<area shape="rect" id="node4" href="$structspdk__bdev__io__stat.html" title=" " alt="" coords="265,179,395,205"/>
+<area shape="rect" id="node5" href="$structspdk__bdev__io.html" title=" " alt="" coords="1019,111,1121,137"/>
+<area shape="rect" id="node8" href="$structspdk__bdev__io_1_1____bdev__io__internal__fields.html" title="Fields that are used internally by the bdev subsystem." alt="" coords="1216,58,1368,99"/>
+<area shape="rect" id="node6" href="$structspdk__nvme__cmd.html" title=" " alt="" coords="808,75,929,101"/>
+<area shape="rect" id="node7" href="$structspdk__io__channel.html" title="Represents a per&#45;thread channel for accessing an I/O device." alt="" coords="809,11,928,37"/>
 </map>

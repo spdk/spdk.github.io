@@ -1,99 +1,43 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <!-- For Mobile Devices -->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="Content-Type" content="text/xhtml; charset=utf-8">
-  <meta name="generator" content="Doxygen 1.8.15">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="generator" content="Doxygen 1.8.20" />
   <title>SPDK: GDB Macros User Guide</title>
-  <script type="text/javascript" src="jquery.js"></script>
-  <script type="text/javascript" src="dynsections.js"></script>
-  <script type="text/javascript" src="two.min.js"></script>
-  <link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-  $(document).ready(initResizable);
-/* @license-end */</script>
-  <link href="search/search.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="search/searchdata.js"></script>
-<script type="text/javascript" src="search/search.js"></script>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,900" type="text/css">
-  <link href="../css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  <link rel="stylesheet" href="tabs.css" type="text/css">
-  <link href="stylesheet.css" rel="stylesheet" type="text/css"/>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="/js/doxyboot.js"></script>
+  <script type="text/javascript" src="navtree.js"></script>
+  <link href="/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link href="/css/spdk.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-<div class="container-fluid">
-  <div id="top">  <!-- do not remove this div, it is closed by doxygen! -->
-    <div class="row no-gutters">
-      <div class="col-xs-12">
-        <section id="nav">
-          <div class="navbar navbar-default navbar-static-top banner-tabs">
-            <ul class="nav navbar-nav">
-              <li role="presentation">
-                <a href="http://www.spdk.io/">
-                  <i class="glyphicon glyphicon-home"></i>
-                  <span class="box-name">home</span>
-                </a>
-              </li>
-              <li role="presentation">
-                <a href="http://www.spdk.io/releases/">
-                  <i class="glyphicon glyphicon-download-alt"></i>
-                  <span class="box-name">download</span>
-                </a>
-              </li>
-              <li class="active" role="presentation">
-                <a href="index.html">
-                  <i class="glyphicon glyphicon-book"></i>
-                  <span class="box-name">documentation</span>
-                </a>
-              </li>
-              <li role="presentation">
-                <a href="http://www.spdk.io/development/">
-                  <i class="glyphicon glyphicon-wrench"></i>
-                  <span class="box-name">development</span>
-                </a>
-              </li>
-              <li role="presentation">
-                <a href="https://spdk.io/ci/">
-                  <i class="glyphicon glyphicon-ok"></i>
-                  <span class="box-name">CI status</span>
-                </a>
-              </li>
-              <li role="presentation">
-                <a href="http://www.spdk.io/community/">
-                  <i class="glyphicon glyphicon-envelope"></i>
-                  <span class="box-name">community</span>
-                </a>
-              </li>
-              <li role="presentation">
-                <a href="http://www.spdk.io/blog/">
-                  <i class="glyphicon glyphicon-comment"></i>
-                  <span class="box-name">Blog</span>
-                </a>
-              </li>
-              <li role="presentation">
-                <a href="https://trello.com/b/MN8auadQ/spdk-roadmap">
-                  <i class="glyphicon glyphicon-map-marker"></i>
-                  <span class="box-name">Roadmap</span>
-                </a>
-              </li>
-              <li role="presentation">
-                <a href="http://www.spdk.io/news/">
-                  <i class="glyphicon glyphicon-bullhorn"></i>
-                  <span class="box-name">News</span>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </section>
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark px-2">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="/" aria-label="SPDK">
+      <img src="/img/spdk.svg"  width="36" height="36" alt="Storage Performance Development Kit" />
+    </a>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <div class="navbar-nav mr-auto">
+        <a class="nav-link header-link active" href="../doc/">Documentation</a>
+        <a class="nav-link header-link" href="../development/">Development</a>
+        <a class="nav-link header-link" href="../community/">Community</a>
+        <a class="nav-link header-link" href="../blog/">Blog</a>
+      </div>
+      <div class="navbar-nav ml-auto mr-3">
+        <a class="nav-link header-link" href="https://github.com/spdk/spdk">
+          <svg xmlns="http://www.w3.org/2000/svg" class="navbar-nav-svg"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+        </a>
       </div>
     </div>
-<!-- Generated by Doxygen 1.8.15 -->
+  </nav>
+  <div class="container-fluid doc">
+      <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<!-- Generated by Doxygen 1.8.20 -->
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 var searchBox = new SearchBox("searchBox", "search",false,'Search');
@@ -122,7 +66,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-$(document).ready(function(){initNavTree('gdb_macros.html','');});
+$(document).ready(function(){initNavTree('gdb_macros.html',''); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -145,32 +89,137 @@ $(document).ready(function(){initNavTree('gdb_macros.html','');});
 <div class="title">GDB Macros User Guide </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h1>Introduction</h1>
+<div class="textblock"><p><a class="anchor" id="md_gdb_macros"></a> </p><h1>Introduction</h1>
 <p>When debugging an spdk application using gdb we may need to view data structures in lists, e.g. information about bdevs or threads.</p>
 <p>If, for example I have several bdevs, and I wish to get information on bdev by the name 'test_vols3', I will need to manually iterate over the list as follows:</p>
-<div class="fragment"><div class="line">(gdb) p g_bdev_mgr-&gt;bdevs-&gt;tqh_first-&gt;name</div><div class="line">$5 = 0x7f7dcc0b21b0 &quot;test_vols1&quot;</div><div class="line">(gdb) p g_bdev_mgr-&gt;bdevs-&gt;tqh_first-&gt;internal-&gt;link-&gt;tqe_next-&gt;name</div><div class="line">$6 = 0x7f7dcc0b1a70 &quot;test_vols2&quot;</div><div class="line">(gdb) p</div><div class="line">g_bdev_mgr-&gt;bdevs-&gt;tqh_first-&gt;internal-&gt;link-&gt;tqe_next-&gt;internal-&gt;link-&gt;tqe_next-&gt;name</div><div class="line">$7 = 0x7f7dcc215a00 &quot;test_vols3&quot;</div><div class="line">(gdb) p</div><div class="line">g_bdev_mgr-&gt;bdevs-&gt;tqh_first-&gt;internal-&gt;link-&gt;tqe_next-&gt;internal-&gt;link-&gt;tqe_next</div><div class="line">$8 = (struct spdk_bdev *) 0x7f7dcc2c7c08</div></div><!-- fragment --><p>At this stage, we can start looking at the relevant fields of our bdev which now we know is in address 0x7f7dcc2c7c08.</p>
+<div class="fragment"><div class="line">(gdb) p g_bdev_mgr-&gt;bdevs-&gt;tqh_first-&gt;name</div>
+<div class="line">$5 = 0x7f7dcc0b21b0 &quot;test_vols1&quot;</div>
+<div class="line">(gdb) p g_bdev_mgr-&gt;bdevs-&gt;tqh_first-&gt;internal-&gt;link-&gt;tqe_next-&gt;name</div>
+<div class="line">$6 = 0x7f7dcc0b1a70 &quot;test_vols2&quot;</div>
+<div class="line">(gdb) p</div>
+<div class="line">g_bdev_mgr-&gt;bdevs-&gt;tqh_first-&gt;internal-&gt;link-&gt;tqe_next-&gt;internal-&gt;link-&gt;tqe_next-&gt;name</div>
+<div class="line">$7 = 0x7f7dcc215a00 &quot;test_vols3&quot;</div>
+<div class="line">(gdb) p</div>
+<div class="line">g_bdev_mgr-&gt;bdevs-&gt;tqh_first-&gt;internal-&gt;link-&gt;tqe_next-&gt;internal-&gt;link-&gt;tqe_next</div>
+<div class="line">$8 = (struct spdk_bdev *) 0x7f7dcc2c7c08</div>
+</div><!-- fragment --><p>At this stage, we can start looking at the relevant fields of our bdev which now we know is in address 0x7f7dcc2c7c08.</p>
 <p>This can be somewhat troublesome if there are 100 bdevs, and the one we need is 56th in the list...</p>
 <p>Instead, we can use a gdb macro in order to get information about all the devices.</p>
 <p>Examples:</p>
 <p>Printing bdevs:</p>
-<div class="fragment"><div class="line">(gdb) spdk_print_bdevs</div><div class="line"></div><div class="line">SPDK object of type struct spdk_bdev at 0x7f7dcc1642a8</div><div class="line">((struct spdk_bdev*) 0x7f7dcc1642a8)</div><div class="line">name 0x7f7dcc0b21b0 &quot;test_vols1&quot;</div><div class="line"></div><div class="line">---------------</div><div class="line"></div><div class="line">SPDK object of type struct spdk_bdev at 0x7f7dcc216008</div><div class="line">((struct spdk_bdev*) 0x7f7dcc216008)</div><div class="line">name 0x7f7dcc0b1a70 &quot;test_vols2&quot;</div><div class="line"></div><div class="line">---------------</div><div class="line"></div><div class="line">SPDK object of type struct spdk_bdev at 0x7f7dcc2c7c08</div><div class="line">((struct spdk_bdev*) 0x7f7dcc2c7c08)</div><div class="line">name 0x7f7dcc215a00 &quot;test_vols3&quot;</div><div class="line"></div><div class="line">---------------</div></div><!-- fragment --><p>Finding a bdev by name:</p>
-<div class="fragment"><div class="line">(gdb) spdk_find_bdev test_vols1</div><div class="line">test_vols1</div><div class="line"></div><div class="line">SPDK object of type struct spdk_bdev at 0x7f7dcc1642a8</div><div class="line">((struct spdk_bdev*) 0x7f7dcc1642a8)</div><div class="line">name 0x7f7dcc0b21b0 &quot;test_vols1&quot;</div></div><!-- fragment --><p>Printing spdk threads:</p>
-<div class="fragment"><div class="line">(gdb) spdk_print_threads</div><div class="line"></div><div class="line">SPDK object of type struct spdk_thread at 0x7fffd0008b50</div><div class="line">((struct spdk_thread*) 0x7fffd0008b50)</div><div class="line">name 0x7fffd00008e0 &quot;reactor_1&quot;</div><div class="line">IO Channels:</div><div class="line">        SPDK object of type struct spdk_io_channel at 0x7fffd0052610</div><div class="line">        ((struct spdk_io_channel*) 0x7fffd0052610)</div><div class="line">        name</div><div class="line">        ref 1</div><div class="line">        device 0x7fffd0008c80 (0x7fffd0008ce0 &quot;nvmf_tgt&quot;)</div><div class="line">        ---------------</div><div class="line"></div><div class="line">        SPDK object of type struct spdk_io_channel at 0x7fffd0056cd0</div><div class="line">        ((struct spdk_io_channel*) 0x7fffd0056cd0)</div><div class="line">        name</div><div class="line">        ref 2</div><div class="line">        device 0x7fffd0056bf0 (0x7fffd0008e70 &quot;test_vol1&quot;)</div><div class="line">        ---------------</div><div class="line"></div><div class="line">        SPDK object of type struct spdk_io_channel at 0x7fffd00582e0</div><div class="line">        ((struct spdk_io_channel*) 0x7fffd00582e0)</div><div class="line">        name</div><div class="line">        ref 1</div><div class="line">        device 0x7fffd0056c50 (0x7fffd0056cb0 &quot;bdev_test_vol1&quot;)</div><div class="line">        ---------------</div><div class="line"></div><div class="line">        SPDK object of type struct spdk_io_channel at 0x7fffd00583b0</div><div class="line">        ((struct spdk_io_channel*) 0x7fffd00583b0)</div><div class="line">        name</div><div class="line">        ref 1</div><div class="line">        device 0x7fffd0005630 (0x7fffd0005690 &quot;bdev_mgr&quot;)</div><div class="line">        ---------------</div></div><!-- fragment --><p>Printing nvmf subsystems:</p>
-<div class="fragment"><div class="line">(gdb) spdk_print_nvmf_subsystems</div><div class="line"></div><div class="line">SPDK object of type struct spdk_nvmf_subsystem at 0x7fffd0008d00</div><div class="line">((struct spdk_nvmf_subsystem*) 0x7fffd0008d00)</div><div class="line">name &quot;nqn.2014-08.org.nvmexpress.discovery&quot;, &#39;\000&#39; &lt;repeats 187 times&gt;</div><div class="line">nqn &quot;nqn.2014-08.org.nvmexpress.discovery&quot;, &#39;\000&#39; &lt;repeats 187 times&gt;</div><div class="line">ID 0</div><div class="line"></div><div class="line">---------------</div><div class="line"></div><div class="line">SPDK object of type struct spdk_nvmf_subsystem at 0x7fffd0055760</div><div class="line">((struct spdk_nvmf_subsystem*) 0x7fffd0055760)</div><div class="line">name &quot;nqn.2016-06.io.spdk.umgmt:cnode1&quot;, &#39;\000&#39; &lt;repeats 191 times&gt;</div><div class="line">nqn &quot;nqn.2016-06.io.spdk.umgmt:cnode1&quot;, &#39;\000&#39; &lt;repeats 191 times&gt;</div><div class="line">ID 1</div></div><!-- fragment --><h1>Loading The gdb Macros</h1>
+<div class="fragment"><div class="line">(gdb) spdk_print_bdevs</div>
+<div class="line"> </div>
+<div class="line">SPDK object of type struct spdk_bdev at 0x7f7dcc1642a8</div>
+<div class="line">((struct spdk_bdev*) 0x7f7dcc1642a8)</div>
+<div class="line">name 0x7f7dcc0b21b0 &quot;test_vols1&quot;</div>
+<div class="line"> </div>
+<div class="line">---------------</div>
+<div class="line"> </div>
+<div class="line">SPDK object of type struct spdk_bdev at 0x7f7dcc216008</div>
+<div class="line">((struct spdk_bdev*) 0x7f7dcc216008)</div>
+<div class="line">name 0x7f7dcc0b1a70 &quot;test_vols2&quot;</div>
+<div class="line"> </div>
+<div class="line">---------------</div>
+<div class="line"> </div>
+<div class="line">SPDK object of type struct spdk_bdev at 0x7f7dcc2c7c08</div>
+<div class="line">((struct spdk_bdev*) 0x7f7dcc2c7c08)</div>
+<div class="line">name 0x7f7dcc215a00 &quot;test_vols3&quot;</div>
+<div class="line"> </div>
+<div class="line">---------------</div>
+</div><!-- fragment --><p>Finding a bdev by name:</p>
+<div class="fragment"><div class="line">(gdb) spdk_find_bdev test_vols1</div>
+<div class="line">test_vols1</div>
+<div class="line"> </div>
+<div class="line">SPDK object of type struct spdk_bdev at 0x7f7dcc1642a8</div>
+<div class="line">((struct spdk_bdev*) 0x7f7dcc1642a8)</div>
+<div class="line">name 0x7f7dcc0b21b0 &quot;test_vols1&quot;</div>
+</div><!-- fragment --><p>Printing spdk threads:</p>
+<div class="fragment"><div class="line">(gdb) spdk_print_threads</div>
+<div class="line"> </div>
+<div class="line">SPDK object of type struct spdk_thread at 0x7fffd0008b50</div>
+<div class="line">((struct spdk_thread*) 0x7fffd0008b50)</div>
+<div class="line">name 0x7fffd00008e0 &quot;reactor_1&quot;</div>
+<div class="line">IO Channels:</div>
+<div class="line">        SPDK object of type struct spdk_io_channel at 0x7fffd0052610</div>
+<div class="line">        ((struct spdk_io_channel*) 0x7fffd0052610)</div>
+<div class="line">        name</div>
+<div class="line">        ref 1</div>
+<div class="line">        device 0x7fffd0008c80 (0x7fffd0008ce0 &quot;nvmf_tgt&quot;)</div>
+<div class="line">        ---------------</div>
+<div class="line"> </div>
+<div class="line">        SPDK object of type struct spdk_io_channel at 0x7fffd0056cd0</div>
+<div class="line">        ((struct spdk_io_channel*) 0x7fffd0056cd0)</div>
+<div class="line">        name</div>
+<div class="line">        ref 2</div>
+<div class="line">        device 0x7fffd0056bf0 (0x7fffd0008e70 &quot;test_vol1&quot;)</div>
+<div class="line">        ---------------</div>
+<div class="line"> </div>
+<div class="line">        SPDK object of type struct spdk_io_channel at 0x7fffd00582e0</div>
+<div class="line">        ((struct spdk_io_channel*) 0x7fffd00582e0)</div>
+<div class="line">        name</div>
+<div class="line">        ref 1</div>
+<div class="line">        device 0x7fffd0056c50 (0x7fffd0056cb0 &quot;bdev_test_vol1&quot;)</div>
+<div class="line">        ---------------</div>
+<div class="line"> </div>
+<div class="line">        SPDK object of type struct spdk_io_channel at 0x7fffd00583b0</div>
+<div class="line">        ((struct spdk_io_channel*) 0x7fffd00583b0)</div>
+<div class="line">        name</div>
+<div class="line">        ref 1</div>
+<div class="line">        device 0x7fffd0005630 (0x7fffd0005690 &quot;bdev_mgr&quot;)</div>
+<div class="line">        ---------------</div>
+</div><!-- fragment --><p>Printing nvmf subsystems:</p>
+<div class="fragment"><div class="line">(gdb) spdk_print_nvmf_subsystems</div>
+<div class="line"> </div>
+<div class="line">SPDK object of type struct spdk_nvmf_subsystem at 0x7fffd0008d00</div>
+<div class="line">((struct spdk_nvmf_subsystem*) 0x7fffd0008d00)</div>
+<div class="line">name &quot;nqn.2014-08.org.nvmexpress.discovery&quot;, &#39;\000&#39; &lt;repeats 187 times&gt;</div>
+<div class="line">nqn &quot;nqn.2014-08.org.nvmexpress.discovery&quot;, &#39;\000&#39; &lt;repeats 187 times&gt;</div>
+<div class="line">ID 0</div>
+<div class="line"> </div>
+<div class="line">---------------</div>
+<div class="line"> </div>
+<div class="line">SPDK object of type struct spdk_nvmf_subsystem at 0x7fffd0055760</div>
+<div class="line">((struct spdk_nvmf_subsystem*) 0x7fffd0055760)</div>
+<div class="line">name &quot;nqn.2016-06.io.spdk.umgmt:cnode1&quot;, &#39;\000&#39; &lt;repeats 191 times&gt;</div>
+<div class="line">nqn &quot;nqn.2016-06.io.spdk.umgmt:cnode1&quot;, &#39;\000&#39; &lt;repeats 191 times&gt;</div>
+<div class="line">ID 1</div>
+</div><!-- fragment --><h1>Loading The gdb Macros</h1>
 <p>Copy the gdb macros to the host where you are about to debug. It is best to copy the file either to somewhere within the PYTHONPATH, or to add the destination directory to the PYTHONPATH. This is not mandatory, and can be worked around, but can save a few steps when loading the module to gdb.</p>
 <p>From gdb, with the application core open, invoke python and load the modules.</p>
 <p>In the example below, I copied the macros to the /tmp directory which is not in the PYTHONPATH, so I had to manually add the directory to the path.</p>
-<div class="fragment"><div class="line">(gdb) python</div><div class="line">&gt;import sys</div><div class="line">&gt;sys.path.append(&#39;/tmp&#39;)</div><div class="line">&gt;import gdb_macros</div><div class="line">&gt;end</div><div class="line">(gdb) spdk_load_macros</div></div><!-- fragment --><h1>Using the gdb Data Directory</h1>
+<div class="fragment"><div class="line">(gdb) python</div>
+<div class="line">&gt;import sys</div>
+<div class="line">&gt;sys.path.append(&#39;/tmp&#39;)</div>
+<div class="line">&gt;import gdb_macros</div>
+<div class="line">&gt;end</div>
+<div class="line">(gdb) spdk_load_macros</div>
+</div><!-- fragment --><h1>Using the gdb Data Directory</h1>
 <p>On most systems, the data directory is /usr/share/gdb. The python script should be copied into the python/gdb/function (or python/gdb/command) directory under the data directory, e.g. /usr/share/gdb/python/gdb/function.</p>
 <p>If the python script is in there, then the only thing you need to do when starting gdb is type "spdk_load_macros".</p>
 <h1>Using .gdbinit To Load The Macros</h1>
 <p>.gdbinit can also be used in order to run automatically run the manual steps above prior to starting gdb.</p>
 <p>Exmaple .gdbinit:</p>
-<div class="fragment"><div class="line">source /opt/km/install/tools/gdb_macros/gdb_macros.py</div></div><!-- fragment --><p>When starting gdb you still have to call spdk_load_macros.</p>
+<div class="fragment"><div class="line">source /opt/km/install/tools/gdb_macros/gdb_macros.py</div>
+</div><!-- fragment --><p>When starting gdb you still have to call spdk_load_macros.</p>
 <h1>Why Do We Need to Explicitly Call spdk_load_macros</h1>
 <p>The reason is that the macros need to use globals provided by spdk in order to iterate the spdk lists and build iterable representations of the list objects. This will result in errors if these are not available which is very possible if gdb is used for reasons other than debugging spdk core dumps.</p>
 <p>In the example bellow, I attempted to load the macros when the globals are not available causing gdb to fail loading the gdb_macros:</p>
-<div class="fragment"><div class="line">(gdb) spdk_load_macros</div><div class="line">Traceback (most recent call last):</div><div class="line">  File &quot;/opt/km/install/tools/gdb_macros/gdb_macros.py&quot;, line 257, in invoke</div><div class="line">    spdk_print_threads()</div><div class="line">  File &quot;/opt/km/install/tools/gdb_macros/gdb_macros.py&quot;, line 241, in __init__</div><div class="line">    threads = SpdkThreads()</div><div class="line">  File &quot;/opt/km/install/tools/gdb_macros/gdb_macros.py&quot;, line 234, in __init__</div><div class="line">    super(SpdkThreads, self).__init__(&#39;g_threads&#39;, SpdkThread)</div><div class="line">  File &quot;/opt/km/install/tools/gdb_macros/gdb_macros.py&quot;, line 25, in __init__</div><div class="line">    [&#39;tailq&#39;])</div><div class="line">  File &quot;/opt/km/install/tools/gdb_macros/gdb_macros.py&quot;, line 10, in __init__</div><div class="line">    self.list = gdb.parse_and_eval(self.list_pointer)</div><div class="line">RuntimeError: No symbol table is loaded.  Use the &quot;file&quot; command.</div><div class="line">Error occurred in Python command: No symbol table is loaded.  Use the &quot;file&quot;</div><div class="line">command.</div></div><!-- fragment --><h1>Macros available</h1>
+<div class="fragment"><div class="line">(gdb) spdk_load_macros</div>
+<div class="line">Traceback (most recent call last):</div>
+<div class="line">  File &quot;/opt/km/install/tools/gdb_macros/gdb_macros.py&quot;, line 257, in invoke</div>
+<div class="line">    spdk_print_threads()</div>
+<div class="line">  File &quot;/opt/km/install/tools/gdb_macros/gdb_macros.py&quot;, line 241, in __init__</div>
+<div class="line">    threads = SpdkThreads()</div>
+<div class="line">  File &quot;/opt/km/install/tools/gdb_macros/gdb_macros.py&quot;, line 234, in __init__</div>
+<div class="line">    super(SpdkThreads, self).__init__(&#39;g_threads&#39;, SpdkThread)</div>
+<div class="line">  File &quot;/opt/km/install/tools/gdb_macros/gdb_macros.py&quot;, line 25, in __init__</div>
+<div class="line">    [&#39;tailq&#39;])</div>
+<div class="line">  File &quot;/opt/km/install/tools/gdb_macros/gdb_macros.py&quot;, line 10, in __init__</div>
+<div class="line">    self.list = gdb.parse_and_eval(self.list_pointer)</div>
+<div class="line">RuntimeError: No symbol table is loaded.  Use the &quot;file&quot; command.</div>
+<div class="line">Error occurred in Python command: No symbol table is loaded.  Use the &quot;file&quot;</div>
+<div class="line">command.</div>
+</div><!-- fragment --><h1>Macros available</h1>
 <ul>
 <li>spdk_load_macros: load the macros (use &ndash;reload in order to reload them)</li>
 <li>spdk_print_bdevs: information about bdevs</li>
@@ -191,7 +240,17 @@ $(document).ready(function(){initNavTree('gdb_macros.html','');});
 <li>SpdkNormalTailqList: represents a list which has 'tailq' as the tailq object</li>
 <li>SpdkArr: Iteration over an array (instead of a linked list) </li>
 </ul>
-</div></div><!-- PageDoc -->
-</div><!-- contents -->
+</div></div><!-- contents -->
+</div><!-- PageDoc -->
 </div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.8.8-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+<ul>
+        <li class="footer">Generated on Wed May 12 2021 14:31:28 for SPDK by
+        <a href="http://www.doxygen.org/index.html">doxygen</a> 1.8.20 </li>
+</ul>
 </div>
+</div>
+</body>
+</html>

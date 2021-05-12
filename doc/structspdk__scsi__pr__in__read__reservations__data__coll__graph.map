@@ -1,4 +1,4 @@
 <map id="spdk_scsi_pr_in_read_reservations_data" name="spdk_scsi_pr_in_read_reservations_data">
-<area shape="rect" id="node1" title=" " alt="" coords="5,109,165,151"/>
-<area shape="rect" id="node2" href="$structspdk__scsi__pr__in__read__header.html" title=" " alt="" coords="5,5,165,47"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,109,153,151"/>
+<area shape="rect" id="node2" href="$structspdk__scsi__pr__in__read__header.html" title=" " alt="" coords="5,5,153,47"/>
 </map>

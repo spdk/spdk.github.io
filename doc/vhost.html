@@ -1,99 +1,43 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <!-- For Mobile Devices -->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="Content-Type" content="text/xhtml; charset=utf-8">
-  <meta name="generator" content="Doxygen 1.8.15">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="generator" content="Doxygen 1.8.20" />
   <title>SPDK: vhost Target</title>
-  <script type="text/javascript" src="jquery.js"></script>
-  <script type="text/javascript" src="dynsections.js"></script>
-  <script type="text/javascript" src="two.min.js"></script>
-  <link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-  $(document).ready(initResizable);
-/* @license-end */</script>
-  <link href="search/search.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="search/searchdata.js"></script>
-<script type="text/javascript" src="search/search.js"></script>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,900" type="text/css">
-  <link href="../css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  <link rel="stylesheet" href="tabs.css" type="text/css">
-  <link href="stylesheet.css" rel="stylesheet" type="text/css"/>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="/js/doxyboot.js"></script>
+  <script type="text/javascript" src="navtree.js"></script>
+  <link href="/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link href="/css/spdk.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-<div class="container-fluid">
-  <div id="top">  <!-- do not remove this div, it is closed by doxygen! -->
-    <div class="row no-gutters">
-      <div class="col-xs-12">
-        <section id="nav">
-          <div class="navbar navbar-default navbar-static-top banner-tabs">
-            <ul class="nav navbar-nav">
-              <li role="presentation">
-                <a href="http://www.spdk.io/">
-                  <i class="glyphicon glyphicon-home"></i>
-                  <span class="box-name">home</span>
-                </a>
-              </li>
-              <li role="presentation">
-                <a href="http://www.spdk.io/releases/">
-                  <i class="glyphicon glyphicon-download-alt"></i>
-                  <span class="box-name">download</span>
-                </a>
-              </li>
-              <li class="active" role="presentation">
-                <a href="index.html">
-                  <i class="glyphicon glyphicon-book"></i>
-                  <span class="box-name">documentation</span>
-                </a>
-              </li>
-              <li role="presentation">
-                <a href="http://www.spdk.io/development/">
-                  <i class="glyphicon glyphicon-wrench"></i>
-                  <span class="box-name">development</span>
-                </a>
-              </li>
-              <li role="presentation">
-                <a href="https://spdk.io/ci/">
-                  <i class="glyphicon glyphicon-ok"></i>
-                  <span class="box-name">CI status</span>
-                </a>
-              </li>
-              <li role="presentation">
-                <a href="http://www.spdk.io/community/">
-                  <i class="glyphicon glyphicon-envelope"></i>
-                  <span class="box-name">community</span>
-                </a>
-              </li>
-              <li role="presentation">
-                <a href="http://www.spdk.io/blog/">
-                  <i class="glyphicon glyphicon-comment"></i>
-                  <span class="box-name">Blog</span>
-                </a>
-              </li>
-              <li role="presentation">
-                <a href="https://trello.com/b/MN8auadQ/spdk-roadmap">
-                  <i class="glyphicon glyphicon-map-marker"></i>
-                  <span class="box-name">Roadmap</span>
-                </a>
-              </li>
-              <li role="presentation">
-                <a href="http://www.spdk.io/news/">
-                  <i class="glyphicon glyphicon-bullhorn"></i>
-                  <span class="box-name">News</span>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </section>
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark px-2">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="/" aria-label="SPDK">
+      <img src="/img/spdk.svg"  width="36" height="36" alt="Storage Performance Development Kit" />
+    </a>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <div class="navbar-nav mr-auto">
+        <a class="nav-link header-link active" href="../doc/">Documentation</a>
+        <a class="nav-link header-link" href="../development/">Development</a>
+        <a class="nav-link header-link" href="../community/">Community</a>
+        <a class="nav-link header-link" href="../blog/">Blog</a>
+      </div>
+      <div class="navbar-nav ml-auto mr-3">
+        <a class="nav-link header-link" href="https://github.com/spdk/spdk">
+          <svg xmlns="http://www.w3.org/2000/svg" class="navbar-nav-svg"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+        </a>
       </div>
     </div>
-<!-- Generated by Doxygen 1.8.15 -->
+  </nav>
+  <div class="container-fluid doc">
+      <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<!-- Generated by Doxygen 1.8.20 -->
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 var searchBox = new SearchBox("searchBox", "search",false,'Search');
@@ -122,7 +66,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-$(document).ready(function(){initNavTree('vhost.html','');});
+$(document).ready(function(){initNavTree('vhost.html',''); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -145,7 +89,8 @@ $(document).ready(function(){initNavTree('vhost.html','');});
 <div class="title">vhost Target </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h1><a class="anchor" id="vhost_toc"></a>
+<div class="textblock"><p><a class="anchor" id="md_vhost"></a> </p>
+<h1><a class="anchor" id="vhost_toc"></a>
 Table of Contents</h1>
 <ul>
 <li><a class="el" href="vhost.html#vhost_intro">Introduction</a></li>
@@ -161,10 +106,7 @@ Table of Contents</h1>
 Introduction</h1>
 <p>A vhost target provides a local storage service as a process running on a local machine. It is capable of exposing virtualized block devices to QEMU instances or other arbitrary processes.</p>
 <p>The following diagram presents how QEMU-based VM communicates with SPDK Vhost-SCSI device.</p>
-<div class="image">
-<object type="image/svg+xml" data="qemu_vhost_data_flow.svg">qemu_vhost_data_flow.svg</object>
-<div class="caption">
-QEMU/SPDK vhost data flow</div></div>
+<p><img src="qemu_vhost_data_flow.svg" alt="" style="pointer-events: none;" class="inline" title="QEMU/SPDK vhost data flow"/>   </p>
 <p>The diagram, and the vhost protocol itself is described in <a class="el" href="vhost_processing.html">Virtualized I/O with Vhost-user</a> doc.</p>
 <p>SPDK provides an accelerated vhost target by applying the same user space and polling techniques as other components in SPDK. Since SPDK is polling for vhost submissions, it can signal the VM to skip notifications on submission. This avoids VMEXITs on I/O submission and can significantly reduce CPU usage in the VM on heavy I/O workloads.</p>
 <h1><a class="anchor" id="vhost_prereqs"></a>
@@ -183,43 +125,114 @@ Vhost Command Line Parameters</h2>
 <p>The guest OS must contain virtio-scsi or virtio-blk drivers. Most Linux and FreeBSD distributions include virtio drivers. <a href="https://fedoraproject.org/wiki/Windows_Virtio_Drivers">Windows virtio drivers</a> must be installed separately. The SPDK vhost target has been tested with recent versions of Ubuntu, Fedora, and Windows</p>
 <h2>QEMU</h2>
 <p>Userspace vhost-scsi target support was added to upstream QEMU in v2.10.0. Run the following command to confirm your QEMU supports userspace vhost-scsi.</p>
-<div class="fragment"><div class="line">qemu-system-x86_64 -device vhost-user-scsi-pci,help</div></div><!-- fragment --><p>Userspace vhost-blk target support was added to upstream QEMU in v2.12.0. Run the following command to confirm your QEMU supports userspace vhost-blk.</p>
-<div class="fragment"><div class="line">qemu-system-x86_64 -device vhost-user-blk-pci,help</div></div><!-- fragment --><p>Userspace vhost-nvme target was added as experimental feature for SPDK 18.04 release, patches for QEMU are available in SPDK's QEMU repository only.</p>
+<div class="fragment"><div class="line">qemu-system-x86_64 -device vhost-user-scsi-pci,help</div>
+</div><!-- fragment --><p>Userspace vhost-blk target support was added to upstream QEMU in v2.12.0. Run the following command to confirm your QEMU supports userspace vhost-blk.</p>
+<div class="fragment"><div class="line">qemu-system-x86_64 -device vhost-user-blk-pci,help</div>
+</div><!-- fragment --><p>Userspace vhost-nvme target was added as experimental feature for SPDK 18.04 release, patches for QEMU are available in SPDK's QEMU repository only.</p>
 <p>Run the following command to confirm your QEMU supports userspace vhost-nvme.</p>
-<div class="fragment"><div class="line">qemu-system-x86_64 -device vhost-user-nvme,help</div></div><!-- fragment --><h1><a class="anchor" id="vhost_start"></a>
+<div class="fragment"><div class="line">qemu-system-x86_64 -device vhost-user-nvme,help</div>
+</div><!-- fragment --><h1><a class="anchor" id="vhost_start"></a>
 Starting SPDK vhost target</h1>
 <p>First, run the SPDK setup.sh script to setup some hugepages for the SPDK vhost target application. This will allocate 4096MiB (4GiB) of hugepages, enough for the SPDK vhost target and the virtual machine.</p>
-<div class="fragment"><div class="line">HUGEMEM=4096 scripts/setup.sh</div></div><!-- fragment --><p>Next, start the SPDK vhost target application. The following command will start vhost on CPU cores 0 and 1 (cpumask 0x3) with all future socket files placed in /var/tmp. Vhost will fully occupy given CPU cores for I/O polling. Particular vhost devices can be restricted to run on a subset of these CPU cores. See <a class="el" href="vhost.html#vhost_vdev_create">Create a vhost device</a> for details.</p>
-<div class="fragment"><div class="line">build/bin/vhost -S /var/tmp -m 0x3</div></div><!-- fragment --><p>To list all available vhost options use the following command.</p>
-<div class="fragment"><div class="line">build/bin/vhost -h</div></div><!-- fragment --><h1><a class="anchor" id="vhost_config"></a>
+<div class="fragment"><div class="line">HUGEMEM=4096 scripts/setup.sh</div>
+</div><!-- fragment --><p>Next, start the SPDK vhost target application. The following command will start vhost on CPU cores 0 and 1 (cpumask 0x3) with all future socket files placed in /var/tmp. Vhost will fully occupy given CPU cores for I/O polling. Particular vhost devices can be restricted to run on a subset of these CPU cores. See <a class="el" href="vhost.html#vhost_vdev_create">Create a vhost device</a> for details.</p>
+<div class="fragment"><div class="line">build/bin/vhost -S /var/tmp -m 0x3</div>
+</div><!-- fragment --><p>To list all available vhost options use the following command.</p>
+<div class="fragment"><div class="line">build/bin/vhost -h</div>
+</div><!-- fragment --><h1><a class="anchor" id="vhost_config"></a>
 SPDK Configuration</h1>
 <h2><a class="anchor" id="vhost_bdev_create"></a>
 Create bdev (block device)</h2>
 <p>SPDK bdevs are block devices which will be exposed to the guest OS. For vhost-scsi, bdevs are exposed as SCSI LUNs on SCSI devices attached to the vhost-scsi controller in the guest OS. For vhost-blk, bdevs are exposed directly as block devices in the guest OS and are not associated at all with SCSI.</p>
 <p>SPDK supports several different types of storage backends, including NVMe, Linux AIO, malloc ramdisk and Ceph RBD. Refer to <a class="el" href="bdev.html">Block Device User Guide</a> for additional information on configuring SPDK storage backends.</p>
 <p>This guide will use a malloc bdev (ramdisk) named Malloc0. The following RPC will create a 64MB malloc bdev with 512-byte block size.</p>
-<div class="fragment"><div class="line">scripts/rpc.py bdev_malloc_create 64 512 -b Malloc0</div></div><!-- fragment --><h2><a class="anchor" id="vhost_vdev_create"></a>
+<div class="fragment"><div class="line">scripts/rpc.py bdev_malloc_create 64 512 -b Malloc0</div>
+</div><!-- fragment --><h2><a class="anchor" id="vhost_vdev_create"></a>
 Create a vhost device</h2>
 <h3>Vhost-SCSI</h3>
 <p>The following RPC will create a vhost-scsi controller which can be accessed by QEMU via /var/tmp/vhost.0. At the time of creation the controller will be bound to a single CPU core with the smallest number of vhost controllers. The optional <code>--cpumask</code> parameter can directly specify which cores should be taken into account - in this case always CPU 0. To achieve optimal performance on NUMA systems, the cpumask should specify cores on the same CPU socket as its associated VM.</p>
-<div class="fragment"><div class="line">scripts/rpc.py vhost_create_scsi_controller --cpumask 0x1 vhost.0</div></div><!-- fragment --><p>The following RPC will attach the Malloc0 bdev to the vhost.0 vhost-scsi controller. Malloc0 will appear as a single LUN on a SCSI device with target ID 0. SPDK Vhost-SCSI device currently supports only one LUN per SCSI target. Additional LUNs can be added by specifying a different target ID.</p>
-<div class="fragment"><div class="line">scripts/rpc.py vhost_scsi_controller_add_target vhost.0 0 Malloc0</div></div><!-- fragment --><p>To remove a bdev from a vhost-scsi controller use the following RPC:</p>
-<div class="fragment"><div class="line">scripts/rpc.py vhost_scsi_controller_remove_target vhost.0 0</div></div><!-- fragment --><h3>Vhost-BLK</h3>
+<div class="fragment"><div class="line">scripts/rpc.py vhost_create_scsi_controller --cpumask 0x1 vhost.0</div>
+</div><!-- fragment --><p>The following RPC will attach the Malloc0 bdev to the vhost.0 vhost-scsi controller. Malloc0 will appear as a single LUN on a SCSI device with target ID 0. SPDK Vhost-SCSI device currently supports only one LUN per SCSI target. Additional LUNs can be added by specifying a different target ID.</p>
+<div class="fragment"><div class="line">scripts/rpc.py vhost_scsi_controller_add_target vhost.0 0 Malloc0</div>
+</div><!-- fragment --><p>To remove a bdev from a vhost-scsi controller use the following RPC:</p>
+<div class="fragment"><div class="line">scripts/rpc.py vhost_scsi_controller_remove_target vhost.0 0</div>
+</div><!-- fragment --><h3>Vhost-BLK</h3>
 <p>The following RPC will create a vhost-blk device exposing Malloc0 bdev. The device will be accessible to QEMU via /var/tmp/vhost.1. All the I/O polling will be pinned to the least occupied CPU core within given cpumask - in this case always CPU 0. For NUMA systems, the cpumask should specify cores on the same CPU socket as its associated VM.</p>
-<div class="fragment"><div class="line">scripts/rpc.py vhost_create_blk_controller --cpumask 0x1 vhost.1 Malloc0</div></div><!-- fragment --><p>It is also possible to create a read-only vhost-blk device by specifying an extra <code>-r</code> or <code>--readonly</code> parameter.</p>
-<div class="fragment"><div class="line">scripts/rpc.py vhost_create_blk_controller --cpumask 0x1 -r vhost.1 Malloc0</div></div><!-- fragment --><h2><a class="anchor" id="vhost_qemu_config"></a>
+<div class="fragment"><div class="line">scripts/rpc.py vhost_create_blk_controller --cpumask 0x1 vhost.1 Malloc0</div>
+</div><!-- fragment --><p>It is also possible to create a read-only vhost-blk device by specifying an extra <code>-r</code> or <code>--readonly</code> parameter.</p>
+<div class="fragment"><div class="line">scripts/rpc.py vhost_create_blk_controller --cpumask 0x1 -r vhost.1 Malloc0</div>
+</div><!-- fragment --><h2><a class="anchor" id="vhost_qemu_config"></a>
 QEMU</h2>
 <p>Now the virtual machine can be started with QEMU. The following command-line parameters must be added to connect the virtual machine to its vhost controller.</p>
 <p>First, specify the memory backend for the virtual machine. Since QEMU must share the virtual machine's memory with the SPDK vhost target, the memory must be specified in this format with share=on.</p>
-<div class="fragment"><div class="line">-object memory-backend-file,id=mem,size=1G,mem-path=/dev/hugepages,share=on</div><div class="line">-numa node,memdev=mem</div></div><!-- fragment --><p>Second, ensure QEMU boots from the virtual machine image and not the SPDK malloc block device by specifying bootindex=0 for the boot image.</p>
-<div class="fragment"><div class="line">-drive file=guest_os_image.qcow2,if=none,id=disk</div><div class="line">-device ide-hd,drive=disk,bootindex=0</div></div><!-- fragment --><p>Finally, specify the SPDK vhost devices:</p>
+<div class="fragment"><div class="line">-object memory-backend-file,id=mem,size=1G,mem-path=/dev/hugepages,share=on</div>
+<div class="line">-numa node,memdev=mem</div>
+</div><!-- fragment --><p>Second, ensure QEMU boots from the virtual machine image and not the SPDK malloc block device by specifying bootindex=0 for the boot image.</p>
+<div class="fragment"><div class="line">-drive file=guest_os_image.qcow2,if=none,id=disk</div>
+<div class="line">-device ide-hd,drive=disk,bootindex=0</div>
+</div><!-- fragment --><p>Finally, specify the SPDK vhost devices:</p>
 <h3>Vhost-SCSI</h3>
-<div class="fragment"><div class="line">-chardev socket,id=char0,path=/var/tmp/vhost.0</div><div class="line">-device vhost-user-scsi-pci,id=scsi0,chardev=char0</div></div><!-- fragment --><h3>Vhost-BLK</h3>
-<div class="fragment"><div class="line">-chardev socket,id=char1,path=/var/tmp/vhost.1</div><div class="line">-device vhost-user-blk-pci,id=blk0,chardev=char1</div></div><!-- fragment --><h2><a class="anchor" id="vhost_example"></a>
+<div class="fragment"><div class="line">-chardev socket,id=char0,path=/var/tmp/vhost.0</div>
+<div class="line">-device vhost-user-scsi-pci,id=scsi0,chardev=char0</div>
+</div><!-- fragment --><h3>Vhost-BLK</h3>
+<div class="fragment"><div class="line">-chardev socket,id=char1,path=/var/tmp/vhost.1</div>
+<div class="line">-device vhost-user-blk-pci,id=blk0,chardev=char1</div>
+</div><!-- fragment --><h2><a class="anchor" id="vhost_example"></a>
 Example output</h2>
 <p>This example uses an NVMe bdev alongside Mallocs. SPDK vhost application is started on CPU cores 0 and 1, QEMU on cores 2 and 3.</p>
-<div class="fragment"><div class="line">host:~# HUGEMEM=2048 ./scripts/setup.sh</div><div class="line">0000:01:00.0 (8086 0953): nvme -&gt; vfio-pci</div></div><!-- fragment --><div class="fragment"><div class="line">host:~# ./build/bin/vhost -S /var/tmp -s 1024 -m 0x3 &amp;</div><div class="line">Starting DPDK 17.11.0 initialization...</div><div class="line">[ DPDK EAL parameters: vhost -c 3 -m 1024 --main-lcore=1 --file-prefix=spdk_pid156014 ]</div><div class="line">EAL: Detected 48 lcore(s)</div><div class="line">EAL: Probing VFIO support...</div><div class="line">EAL: VFIO support initialized</div><div class="line">app.c: 369:spdk_app_start: *NOTICE*: Total cores available: 2</div><div class="line">reactor.c: 668:spdk_reactors_init: *NOTICE*: Occupied cpu socket mask is 0x1</div><div class="line">reactor.c: 424:_spdk_reactor_run: *NOTICE*: Reactor started on core 1 on socket 0</div><div class="line">reactor.c: 424:_spdk_reactor_run: *NOTICE*: Reactor started on core 0 on socket 0</div></div><!-- fragment --><div class="fragment"><div class="line">host:~# ./scripts/rpc.py bdev_nvme_attach_controller -b Nvme0 -t pcie -a 0000:01:00.0</div><div class="line">EAL: PCI device 0000:01:00.0 on NUMA socket 0</div><div class="line">EAL:   probe driver: 8086:953 spdk_nvme</div><div class="line">EAL:   using IOMMU type 1 (Type 1)</div></div><!-- fragment --><div class="fragment"><div class="line">host:~# ./scripts/rpc.py bdev_malloc_create 128 4096 Malloc0</div><div class="line">Malloc0</div></div><!-- fragment --><div class="fragment"><div class="line">host:~# ./scripts/rpc.py vhost_create_scsi_controller --cpumask 0x1 vhost.0</div><div class="line">VHOST_CONFIG: vhost-user server: socket created, fd: 21</div><div class="line">VHOST_CONFIG: bind to /var/tmp/vhost.0</div><div class="line">vhost.c: 596:spdk_vhost_dev_construct: *NOTICE*: Controller vhost.0: new controller added</div></div><!-- fragment --><div class="fragment"><div class="line">host:~# ./scripts/rpc.py vhost_scsi_controller_add_target vhost.0 0 Nvme0n1</div><div class="line">vhost_scsi.c: 840:spdk_vhost_scsi_dev_add_tgt: *NOTICE*: Controller vhost.0: defined target &#39;Target 0&#39; using lun &#39;Nvme0&#39;</div></div><!-- fragment --><div class="fragment"><div class="line">host:~# ./scripts/rpc.py vhost_scsi_controller_add_target vhost.0 1 Malloc0</div><div class="line">vhost_scsi.c: 840:spdk_vhost_scsi_dev_add_tgt: *NOTICE*: Controller vhost.0: defined target &#39;Target 1&#39; using lun &#39;Malloc0&#39;</div></div><!-- fragment --><div class="fragment"><div class="line">host:~# ./scripts/rpc.py bdev_malloc_create 64 512 -b Malloc1</div><div class="line">Malloc1</div></div><!-- fragment --><div class="fragment"><div class="line">host:~# ./scripts/rpc.py vhost_create_blk_controller --cpumask 0x2 vhost.1 Malloc1</div><div class="line">vhost_blk.c: 719:spdk_vhost_blk_construct: *NOTICE*: Controller vhost.1: using bdev &#39;Malloc1&#39;</div></div><!-- fragment --><div class="fragment"><div class="line">host:~# taskset -c 2,3 qemu-system-x86_64 \</div><div class="line">  --enable-kvm \</div><div class="line">  -cpu host -smp 2 \</div><div class="line">  -m 1G -object memory-backend-file,id=mem0,size=1G,mem-path=/dev/hugepages,share=on -numa node,memdev=mem0 \</div><div class="line">  -drive file=guest_os_image.qcow2,if=none,id=disk \</div><div class="line">  -device ide-hd,drive=disk,bootindex=0 \</div><div class="line">  -chardev socket,id=spdk_vhost_scsi0,path=/var/tmp/vhost.0 \</div><div class="line">  -device vhost-user-scsi-pci,id=scsi0,chardev=spdk_vhost_scsi0,num_queues=4 \</div><div class="line">  -chardev socket,id=spdk_vhost_blk0,path=/var/tmp/vhost.1 \</div><div class="line">  -device vhost-user-blk-pci,chardev=spdk_vhost_blk0,num-queues=4</div></div><!-- fragment --><p>Please note the following two commands are run on the guest VM.</p>
-<div class="fragment"><div class="line">guest:~# lsblk --output &quot;NAME,KNAME,MODEL,HCTL,SIZE,VENDOR,SUBSYSTEMS&quot;</div><div class="line">NAME   KNAME MODEL            HCTL         SIZE VENDOR   SUBSYSTEMS</div><div class="line">sda    sda   QEMU HARDDISK    1:0:0:0       80G ATA      block:scsi:pci</div><div class="line">  sda1 sda1                                 80G          block:scsi:pci</div><div class="line">sdb    sdb   NVMe disk        2:0:0:0    372,6G INTEL    block:scsi:virtio:pci</div><div class="line">sdc    sdc   Malloc disk      2:0:1:0      128M INTEL    block:scsi:virtio:pci</div><div class="line">vda    vda                                 128M 0x1af4   block:virtio:pci</div></div><!-- fragment --><div class="fragment"><div class="line">guest:~# poweroff</div></div><!-- fragment --><div class="fragment"><div class="line">host:~# fg</div><div class="line">&lt;&lt; CTRL + C &gt;&gt;</div><div class="line">vhost.c:1006:session_shutdown: *NOTICE*: Exiting</div></div><!-- fragment --><p>We can see that <code>sdb</code> and <code>sdc</code> are SPDK vhost-scsi LUNs, and <code>vda</code> is SPDK a vhost-blk disk.</p>
+<div class="fragment"><div class="line">host:~# HUGEMEM=2048 ./scripts/setup.sh</div>
+<div class="line">0000:01:00.0 (8086 0953): nvme -&gt; vfio-pci</div>
+</div><!-- fragment --><div class="fragment"><div class="line">host:~# ./build/bin/vhost -S /var/tmp -s 1024 -m 0x3 &amp;</div>
+<div class="line">Starting DPDK 17.11.0 initialization...</div>
+<div class="line">[ DPDK EAL parameters: vhost -c 3 -m 1024 --main-lcore=1 --file-prefix=spdk_pid156014 ]</div>
+<div class="line">EAL: Detected 48 lcore(s)</div>
+<div class="line">EAL: Probing VFIO support...</div>
+<div class="line">EAL: VFIO support initialized</div>
+<div class="line">app.c: 369:spdk_app_start: *NOTICE*: Total cores available: 2</div>
+<div class="line">reactor.c: 668:spdk_reactors_init: *NOTICE*: Occupied cpu socket mask is 0x1</div>
+<div class="line">reactor.c: 424:_spdk_reactor_run: *NOTICE*: Reactor started on core 1 on socket 0</div>
+<div class="line">reactor.c: 424:_spdk_reactor_run: *NOTICE*: Reactor started on core 0 on socket 0</div>
+</div><!-- fragment --><div class="fragment"><div class="line">host:~# ./scripts/rpc.py bdev_nvme_attach_controller -b Nvme0 -t pcie -a 0000:01:00.0</div>
+<div class="line">EAL: PCI device 0000:01:00.0 on NUMA socket 0</div>
+<div class="line">EAL:   probe driver: 8086:953 spdk_nvme</div>
+<div class="line">EAL:   using IOMMU type 1 (Type 1)</div>
+</div><!-- fragment --><div class="fragment"><div class="line">host:~# ./scripts/rpc.py bdev_malloc_create 128 4096 Malloc0</div>
+<div class="line">Malloc0</div>
+</div><!-- fragment --><div class="fragment"><div class="line">host:~# ./scripts/rpc.py vhost_create_scsi_controller --cpumask 0x1 vhost.0</div>
+<div class="line">VHOST_CONFIG: vhost-user server: socket created, fd: 21</div>
+<div class="line">VHOST_CONFIG: bind to /var/tmp/vhost.0</div>
+<div class="line">vhost.c: 596:spdk_vhost_dev_construct: *NOTICE*: Controller vhost.0: new controller added</div>
+</div><!-- fragment --><div class="fragment"><div class="line">host:~# ./scripts/rpc.py vhost_scsi_controller_add_target vhost.0 0 Nvme0n1</div>
+<div class="line">vhost_scsi.c: 840:spdk_vhost_scsi_dev_add_tgt: *NOTICE*: Controller vhost.0: defined target &#39;Target 0&#39; using lun &#39;Nvme0&#39;</div>
+</div><!-- fragment --><div class="fragment"><div class="line">host:~# ./scripts/rpc.py vhost_scsi_controller_add_target vhost.0 1 Malloc0</div>
+<div class="line">vhost_scsi.c: 840:spdk_vhost_scsi_dev_add_tgt: *NOTICE*: Controller vhost.0: defined target &#39;Target 1&#39; using lun &#39;Malloc0&#39;</div>
+</div><!-- fragment --><div class="fragment"><div class="line">host:~# ./scripts/rpc.py bdev_malloc_create 64 512 -b Malloc1</div>
+<div class="line">Malloc1</div>
+</div><!-- fragment --><div class="fragment"><div class="line">host:~# ./scripts/rpc.py vhost_create_blk_controller --cpumask 0x2 vhost.1 Malloc1</div>
+<div class="line">vhost_blk.c: 719:spdk_vhost_blk_construct: *NOTICE*: Controller vhost.1: using bdev &#39;Malloc1&#39;</div>
+</div><!-- fragment --><div class="fragment"><div class="line">host:~# taskset -c 2,3 qemu-system-x86_64 \</div>
+<div class="line">  --enable-kvm \</div>
+<div class="line">  -cpu host -smp 2 \</div>
+<div class="line">  -m 1G -object memory-backend-file,id=mem0,size=1G,mem-path=/dev/hugepages,share=on -numa node,memdev=mem0 \</div>
+<div class="line">  -drive file=guest_os_image.qcow2,if=none,id=disk \</div>
+<div class="line">  -device ide-hd,drive=disk,bootindex=0 \</div>
+<div class="line">  -chardev socket,id=spdk_vhost_scsi0,path=/var/tmp/vhost.0 \</div>
+<div class="line">  -device vhost-user-scsi-pci,id=scsi0,chardev=spdk_vhost_scsi0,num_queues=4 \</div>
+<div class="line">  -chardev socket,id=spdk_vhost_blk0,path=/var/tmp/vhost.1 \</div>
+<div class="line">  -device vhost-user-blk-pci,chardev=spdk_vhost_blk0,num-queues=4</div>
+</div><!-- fragment --><p>Please note the following two commands are run on the guest VM.</p>
+<div class="fragment"><div class="line">guest:~# lsblk --output &quot;NAME,KNAME,MODEL,HCTL,SIZE,VENDOR,SUBSYSTEMS&quot;</div>
+<div class="line">NAME   KNAME MODEL            HCTL         SIZE VENDOR   SUBSYSTEMS</div>
+<div class="line">sda    sda   QEMU HARDDISK    1:0:0:0       80G ATA      block:scsi:pci</div>
+<div class="line">  sda1 sda1                                 80G          block:scsi:pci</div>
+<div class="line">sdb    sdb   NVMe disk        2:0:0:0    372,6G INTEL    block:scsi:virtio:pci</div>
+<div class="line">sdc    sdc   Malloc disk      2:0:1:0      128M INTEL    block:scsi:virtio:pci</div>
+<div class="line">vda    vda                                 128M 0x1af4   block:virtio:pci</div>
+</div><!-- fragment --><div class="fragment"><div class="line">guest:~# poweroff</div>
+</div><!-- fragment --><div class="fragment"><div class="line">host:~# fg</div>
+<div class="line">&lt;&lt; CTRL + C &gt;&gt;</div>
+<div class="line">vhost.c:1006:session_shutdown: *NOTICE*: Exiting</div>
+</div><!-- fragment --><p>We can see that <code>sdb</code> and <code>sdc</code> are SPDK vhost-scsi LUNs, and <code>vda</code> is SPDK a vhost-blk disk.</p>
 <h1><a class="anchor" id="vhost_advanced_topics"></a>
 Advanced Topics</h1>
 <h2><a class="anchor" id="vhost_multiqueue"></a>
@@ -239,10 +252,13 @@ Hot-attach/hot-detach</h2>
 <p>Please also note that hot-attach/detach is Vhost-SCSI-specific. There are no RPCs to hot-attach/detach the bdev from a Vhost-BLK device. If Vhost-BLK device exposes an NVMe bdev that is hotremoved, all the I/O traffic on that Vhost-BLK device will be aborted - possibly flooding a VM with syslog warnings and errors.</p>
 <h3>Hot-attach</h3>
 <p>Hot-attach is done by simply attaching a bdev to a vhost controller with a QEMU VM already started. No other extra action is necessary.</p>
-<div class="fragment"><div class="line">scripts/rpc.py vhost_scsi_controller_add_target vhost.0 0 Malloc0</div></div><!-- fragment --><h3>Hot-detach</h3>
+<div class="fragment"><div class="line">scripts/rpc.py vhost_scsi_controller_add_target vhost.0 0 Malloc0</div>
+</div><!-- fragment --><h3>Hot-detach</h3>
 <p>Just like hot-attach, the hot-detach is done by simply removing bdev from a controller when QEMU VM is already started.</p>
-<div class="fragment"><div class="line">scripts/rpc.py vhost_scsi_controller_remove_target vhost.0 0</div></div><!-- fragment --><p>Removing an entire bdev will hot-detach it from a controller as well.</p>
-<div class="fragment"><div class="line">scripts/rpc.py bdev_malloc_delete Malloc0</div></div><!-- fragment --><h1><a class="anchor" id="vhost_bugs"></a>
+<div class="fragment"><div class="line">scripts/rpc.py vhost_scsi_controller_remove_target vhost.0 0</div>
+</div><!-- fragment --><p>Removing an entire bdev will hot-detach it from a controller as well.</p>
+<div class="fragment"><div class="line">scripts/rpc.py bdev_malloc_delete Malloc0</div>
+</div><!-- fragment --><h1><a class="anchor" id="vhost_bugs"></a>
 Known bugs and limitations</h1>
 <h2>Vhost-NVMe (experimental) can only be supported with latest Linux kernel</h2>
 <p>Vhost-NVMe target was designed for one new feature of NVMe 1.3 specification, Doorbell Buffer Config Admin command, which is used for emulated NVMe controller only. Linux 4.12 added this feature, so a new Guest kernel later than 4.12 is required to test this feature.</p>
@@ -250,7 +266,17 @@ Known bugs and limitations</h1>
 <p>The Windows <code>viostor</code> driver before version 0.1.130-1 is buggy and does not correctly support vhost-blk devices with non-512-byte block size. See the <a href="https://bugzilla.redhat.com/show_bug.cgi?id=1411092">bug report</a> for more information.</p>
 <h2>QEMU vhost-user-blk</h2>
 <p>QEMU <a href="https://git.qemu.org/?p=qemu.git;a=commit;h=00343e4b54ba">vhost-user-blk</a> is supported from version 2.12. </p>
-</div></div><!-- PageDoc -->
-</div><!-- contents -->
+</div></div><!-- contents -->
+</div><!-- PageDoc -->
 </div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.8.8-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+<ul>
+        <li class="footer">Generated on Wed May 12 2021 14:31:28 for SPDK by
+        <a href="http://www.doxygen.org/index.html">doxygen</a> 1.8.20 </li>
+</ul>
 </div>
+</div>
+</body>
+</html>

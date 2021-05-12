@@ -1,99 +1,43 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <!-- For Mobile Devices -->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="Content-Type" content="text/xhtml; charset=utf-8">
-  <meta name="generator" content="Doxygen 1.8.15">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="generator" content="Doxygen 1.8.20" />
   <title>SPDK: iSCSI Target</title>
-  <script type="text/javascript" src="jquery.js"></script>
-  <script type="text/javascript" src="dynsections.js"></script>
-  <script type="text/javascript" src="two.min.js"></script>
-  <link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-  $(document).ready(initResizable);
-/* @license-end */</script>
-  <link href="search/search.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="search/searchdata.js"></script>
-<script type="text/javascript" src="search/search.js"></script>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,900" type="text/css">
-  <link href="../css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  <link rel="stylesheet" href="tabs.css" type="text/css">
-  <link href="stylesheet.css" rel="stylesheet" type="text/css"/>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="/js/doxyboot.js"></script>
+  <script type="text/javascript" src="navtree.js"></script>
+  <link href="/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link href="/css/spdk.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-<div class="container-fluid">
-  <div id="top">  <!-- do not remove this div, it is closed by doxygen! -->
-    <div class="row no-gutters">
-      <div class="col-xs-12">
-        <section id="nav">
-          <div class="navbar navbar-default navbar-static-top banner-tabs">
-            <ul class="nav navbar-nav">
-              <li role="presentation">
-                <a href="http://www.spdk.io/">
-                  <i class="glyphicon glyphicon-home"></i>
-                  <span class="box-name">home</span>
-                </a>
-              </li>
-              <li role="presentation">
-                <a href="http://www.spdk.io/releases/">
-                  <i class="glyphicon glyphicon-download-alt"></i>
-                  <span class="box-name">download</span>
-                </a>
-              </li>
-              <li class="active" role="presentation">
-                <a href="index.html">
-                  <i class="glyphicon glyphicon-book"></i>
-                  <span class="box-name">documentation</span>
-                </a>
-              </li>
-              <li role="presentation">
-                <a href="http://www.spdk.io/development/">
-                  <i class="glyphicon glyphicon-wrench"></i>
-                  <span class="box-name">development</span>
-                </a>
-              </li>
-              <li role="presentation">
-                <a href="https://spdk.io/ci/">
-                  <i class="glyphicon glyphicon-ok"></i>
-                  <span class="box-name">CI status</span>
-                </a>
-              </li>
-              <li role="presentation">
-                <a href="http://www.spdk.io/community/">
-                  <i class="glyphicon glyphicon-envelope"></i>
-                  <span class="box-name">community</span>
-                </a>
-              </li>
-              <li role="presentation">
-                <a href="http://www.spdk.io/blog/">
-                  <i class="glyphicon glyphicon-comment"></i>
-                  <span class="box-name">Blog</span>
-                </a>
-              </li>
-              <li role="presentation">
-                <a href="https://trello.com/b/MN8auadQ/spdk-roadmap">
-                  <i class="glyphicon glyphicon-map-marker"></i>
-                  <span class="box-name">Roadmap</span>
-                </a>
-              </li>
-              <li role="presentation">
-                <a href="http://www.spdk.io/news/">
-                  <i class="glyphicon glyphicon-bullhorn"></i>
-                  <span class="box-name">News</span>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </section>
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark px-2">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="/" aria-label="SPDK">
+      <img src="/img/spdk.svg"  width="36" height="36" alt="Storage Performance Development Kit" />
+    </a>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <div class="navbar-nav mr-auto">
+        <a class="nav-link header-link active" href="../doc/">Documentation</a>
+        <a class="nav-link header-link" href="../development/">Development</a>
+        <a class="nav-link header-link" href="../community/">Community</a>
+        <a class="nav-link header-link" href="../blog/">Blog</a>
+      </div>
+      <div class="navbar-nav ml-auto mr-3">
+        <a class="nav-link header-link" href="https://github.com/spdk/spdk">
+          <svg xmlns="http://www.w3.org/2000/svg" class="navbar-nav-svg"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+        </a>
       </div>
     </div>
-<!-- Generated by Doxygen 1.8.15 -->
+  </nav>
+  <div class="container-fluid doc">
+      <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<!-- Generated by Doxygen 1.8.20 -->
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 var searchBox = new SearchBox("searchBox", "search",false,'Search');
@@ -122,7 +66,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-$(document).ready(function(){initNavTree('iscsi.html','');});
+$(document).ready(function(){initNavTree('iscsi.html',''); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -145,7 +89,8 @@ $(document).ready(function(){initNavTree('iscsi.html','');});
 <div class="title">iSCSI Target </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h1><a class="anchor" id="iscsi_getting_started"></a>
+<div class="textblock"><p><a class="anchor" id="md_iscsi"></a> </p>
+<h1><a class="anchor" id="iscsi_getting_started"></a>
 iSCSI Target Getting Started Guide</h1>
 <p>The Storage Performance Development Kit iSCSI target application is named <code>iscsi_tgt</code>. This following section describes how to run iscsi from your cloned package.</p>
 <h2><a class="anchor" id="iscsi_prereqs"></a>
@@ -155,14 +100,12 @@ Prerequisites</h2>
 <p>If you want to kill the application by using signal, make sure use the SIGTERM, then the application will release all the shared memory resource before exit, the SIGKILL will make the shared memory resource have no chance to be released by applications, you may need to release the resource manually.</p>
 <h2>Introduction</h2>
 <p>The following diagram shows relations between different parts of iSCSI structure described in this document.</p>
-<div class="image">
-<object type="image/svg+xml" data="iscsi.svg">iscsi.svg</object>
-<div class="caption">
-iSCSI structure</div></div>
+<p><img src="iscsi.svg" alt="" style="pointer-events: none;" class="inline" title="iSCSI structure"/>   </p>
 <h3><a class="anchor" id="iscsi_config_lcore"></a>
 Assigning CPU Cores to the iSCSI Target</h3>
 <p>SPDK uses the <a href="http://dpdk.org/doc/guides/prog_guide/env_abstraction_layer.html">DPDK Environment Abstraction Layer</a> to gain access to hardware resources such as huge memory pages and CPU core(s). DPDK EAL provides functions to assign threads to specific cores. To ensure the SPDK iSCSI target has the best performance, place the NICs and the NVMe devices on the same NUMA node and configure the target to run on CPU cores associated with that node. The following command line option is used to configure the SPDK iSCSI target:</p>
-<div class="fragment"><div class="line">-m 0xF000000</div></div><!-- fragment --><p>This is a hexadecimal bit mask of the CPU cores where the iSCSI target will start polling threads. In this example, CPU cores 24, 25, 26 and 27 would be used.</p>
+<div class="fragment"><div class="line">-m 0xF000000</div>
+</div><!-- fragment --><p>This is a hexadecimal bit mask of the CPU cores where the iSCSI target will start polling threads. In this example, CPU cores 24, 25, 26 and 27 would be used.</p>
 <h2><a class="anchor" id="iscsi_rpc"></a>
 Configuring iSCSI Target via RPC method</h2>
 <p>The iSCSI target is configured via JSON-RPC calls. See <a class="el" href="jsonrpc.html">JSON-RPC</a> for details.</p>
@@ -174,54 +117,108 @@ Configuring iSCSI Target via RPC method</h2>
 <li>iscsi_target_node_remove_pg_ig_maps &ndash; Delete initiator group to portal group mappings from an existing iSCSI target node.</li>
 <li>iscsi_get_portal_groups &ndash; Show information about all available portal groups.</li>
 </ul>
-<div class="fragment"><div class="line">/path/to/spdk/scripts/rpc.py iscsi_create_portal_group 1 10.0.0.1:3260</div></div><!-- fragment --><h3>Initiator groups</h3>
+<div class="fragment"><div class="line">/path/to/spdk/scripts/rpc.py iscsi_create_portal_group 1 10.0.0.1:3260</div>
+</div><!-- fragment --><h3>Initiator groups</h3>
 <ul>
 <li>iscsi_create_initiator_group &ndash; Add an initiator group.</li>
 <li>iscsi_delete_initiator_group &ndash; Delete an existing initiator group.</li>
 <li>iscsi_initiator_group_add_initiators &ndash; Add initiators to an existing initiator group.</li>
 <li>iscsi_get_initiator_groups &ndash; Show information about all available initiator groups.</li>
 </ul>
-<div class="fragment"><div class="line">/path/to/spdk/scripts/rpc.py iscsi_create_initiator_group 2 ANY 10.0.0.2/32</div></div><!-- fragment --><h3>Target nodes</h3>
+<div class="fragment"><div class="line">/path/to/spdk/scripts/rpc.py iscsi_create_initiator_group 2 ANY 10.0.0.2/32</div>
+</div><!-- fragment --><h3>Target nodes</h3>
 <ul>
 <li>iscsi_create_target_node &ndash; Add an iSCSI target node.</li>
 <li>iscsi_delete_target_node &ndash; Delete an iSCSI target node.</li>
 <li>iscsi_target_node_add_lun &ndash; Add a LUN to an existing iSCSI target node.</li>
 <li>iscsi_get_target_nodes &ndash; Show information about all available iSCSI target nodes.</li>
 </ul>
-<div class="fragment"><div class="line">/path/to/spdk/scripts/rpc.py iscsi_create_target_node Target3 Target3_alias MyBdev:0 1:2 64 -d</div></div><!-- fragment --><h2><a class="anchor" id="iscsi_initiator"></a>
+<div class="fragment"><div class="line">/path/to/spdk/scripts/rpc.py iscsi_create_target_node Target3 Target3_alias MyBdev:0 1:2 64 -d</div>
+</div><!-- fragment --><h2><a class="anchor" id="iscsi_initiator"></a>
 Configuring iSCSI Initiator</h2>
 <p>The Linux initiator is open-iscsi.</p>
-<p>Installing open-iscsi package Fedora: </p><div class="fragment"><div class="line">yum install -y iscsi-initiator-utils</div></div><!-- fragment --><p>Ubuntu: </p><div class="fragment"><div class="line">apt-get install -y open-iscsi</div></div><!-- fragment --><h3>Setup</h3>
-<p>Edit /etc/iscsi/iscsid.conf </p><div class="fragment"><div class="line">node.session.cmds_max = 4096</div><div class="line">node.session.queue_depth = 128</div></div><!-- fragment --><p>iscsid must be restarted or receive SIGHUP for changes to take effect. To send SIGHUP, run: </p><div class="fragment"><div class="line">killall -HUP iscsid</div></div><!-- fragment --><p>Recommended changes to /etc/sysctl.conf </p><div class="fragment"><div class="line">net.ipv4.tcp_timestamps = 1</div><div class="line">net.ipv4.tcp_sack = 0</div><div class="line"></div><div class="line">net.ipv4.tcp_rmem = 10000000 10000000 10000000</div><div class="line">net.ipv4.tcp_wmem = 10000000 10000000 10000000</div><div class="line">net.ipv4.tcp_mem = 10000000 10000000 10000000</div><div class="line">net.core.rmem_default = 524287</div><div class="line">net.core.wmem_default = 524287</div><div class="line">net.core.rmem_max = 524287</div><div class="line">net.core.wmem_max = 524287</div><div class="line">net.core.optmem_max = 524287</div><div class="line">net.core.netdev_max_backlog = 300000</div></div><!-- fragment --><h3>Discovery</h3>
-<p>Assume target is at 10.0.0.1 </p><div class="fragment"><div class="line">iscsiadm -m discovery -t sendtargets -p 10.0.0.1</div></div><!-- fragment --><h3>Connect to target</h3>
-<div class="fragment"><div class="line">iscsiadm -m node --login</div></div><!-- fragment --><p>At this point the iSCSI target should show up as SCSI disks. Check dmesg to see what they came up as.</p>
+<p>Installing open-iscsi package Fedora: </p><div class="fragment"><div class="line">yum install -y iscsi-initiator-utils</div>
+</div><!-- fragment --><p>Ubuntu: </p><div class="fragment"><div class="line">apt-get install -y open-iscsi</div>
+</div><!-- fragment --><h3>Setup</h3>
+<p>Edit /etc/iscsi/iscsid.conf </p><div class="fragment"><div class="line">node.session.cmds_max = 4096</div>
+<div class="line">node.session.queue_depth = 128</div>
+</div><!-- fragment --><p>iscsid must be restarted or receive SIGHUP for changes to take effect. To send SIGHUP, run: </p><div class="fragment"><div class="line">killall -HUP iscsid</div>
+</div><!-- fragment --><p>Recommended changes to /etc/sysctl.conf </p><div class="fragment"><div class="line">net.ipv4.tcp_timestamps = 1</div>
+<div class="line">net.ipv4.tcp_sack = 0</div>
+<div class="line"> </div>
+<div class="line">net.ipv4.tcp_rmem = 10000000 10000000 10000000</div>
+<div class="line">net.ipv4.tcp_wmem = 10000000 10000000 10000000</div>
+<div class="line">net.ipv4.tcp_mem = 10000000 10000000 10000000</div>
+<div class="line">net.core.rmem_default = 524287</div>
+<div class="line">net.core.wmem_default = 524287</div>
+<div class="line">net.core.rmem_max = 524287</div>
+<div class="line">net.core.wmem_max = 524287</div>
+<div class="line">net.core.optmem_max = 524287</div>
+<div class="line">net.core.netdev_max_backlog = 300000</div>
+</div><!-- fragment --><h3>Discovery</h3>
+<p>Assume target is at 10.0.0.1 </p><div class="fragment"><div class="line">iscsiadm -m discovery -t sendtargets -p 10.0.0.1</div>
+</div><!-- fragment --><h3>Connect to target</h3>
+<div class="fragment"><div class="line">iscsiadm -m node --login</div>
+</div><!-- fragment --><p>At this point the iSCSI target should show up as SCSI disks. Check dmesg to see what they came up as.</p>
 <h3>Disconnect from target</h3>
-<div class="fragment"><div class="line">iscsiadm -m node --logout</div></div><!-- fragment --><h3>Deleting target node cache</h3>
-<div class="fragment"><div class="line">iscsiadm -m node -o delete</div></div><!-- fragment --><p>This will cause the initiator to forget all previously discovered iSCSI target nodes.</p>
+<div class="fragment"><div class="line">iscsiadm -m node --logout</div>
+</div><!-- fragment --><h3>Deleting target node cache</h3>
+<div class="fragment"><div class="line">iscsiadm -m node -o delete</div>
+</div><!-- fragment --><p>This will cause the initiator to forget all previously discovered iSCSI target nodes.</p>
 <h3>Finding /dev/sdX nodes for iSCSI LUNs</h3>
-<div class="fragment"><div class="line">iscsiadm -m session -P 3 | grep &quot;Attached scsi disk&quot; | awk &#39;{print $4}&#39;</div></div><!-- fragment --><p>This will show the /dev node name for each SCSI LUN in all logged in iSCSI sessions.</p>
+<div class="fragment"><div class="line">iscsiadm -m session -P 3 | grep &quot;Attached scsi disk&quot; | awk &#39;{print $4}&#39;</div>
+</div><!-- fragment --><p>This will show the /dev node name for each SCSI LUN in all logged in iSCSI sessions.</p>
 <h3>Tuning</h3>
 <p>After the targets are connected, they can be tuned. For example if /dev/sdc is an iSCSI disk then the following can be done: Set noop to scheduler</p>
-<div class="fragment"><div class="line">echo noop &gt; /sys/block/sdc/queue/scheduler</div></div><!-- fragment --><p>Disable merging/coalescing (can be useful for precise workload measurements)</p>
-<div class="fragment"><div class="line">echo &quot;2&quot; &gt; /sys/block/sdc/queue/nomerges</div></div><!-- fragment --><p>Increase requests for block queue</p>
-<div class="fragment"><div class="line">echo &quot;1024&quot; &gt; /sys/block/sdc/queue/nr_requests</div></div><!-- fragment --><h3>Example: Configure simple iSCSI Target with one portal and two LUNs</h3>
+<div class="fragment"><div class="line">echo noop &gt; /sys/block/sdc/queue/scheduler</div>
+</div><!-- fragment --><p>Disable merging/coalescing (can be useful for precise workload measurements)</p>
+<div class="fragment"><div class="line">echo &quot;2&quot; &gt; /sys/block/sdc/queue/nomerges</div>
+</div><!-- fragment --><p>Increase requests for block queue</p>
+<div class="fragment"><div class="line">echo &quot;1024&quot; &gt; /sys/block/sdc/queue/nr_requests</div>
+</div><!-- fragment --><h3>Example: Configure simple iSCSI Target with one portal and two LUNs</h3>
 <p>Assuming we have one iSCSI Target server with portal at 10.0.0.1:3200, two LUNs (Malloc0 and Malloc1), and accepting initiators on 10.0.0.2/32, like on diagram below:</p>
-<div class="image">
-<object type="image/svg+xml" data="iscsi_example.svg">iscsi_example.svg</object>
-<div class="caption">
-Sample iSCSI configuration</div></div>
+<p><img src="iscsi_example.svg" alt="" style="pointer-events: none;" class="inline" title="Sample iSCSI configuration"/>   </p>
 <h4>Configure iSCSI Target</h4>
-<p>Start iscsi_tgt application: </p><div class="fragment"><div class="line">./build/bin/iscsi_tgt</div></div><!-- fragment --><p>Construct two 64MB Malloc block devices with 512B sector size "Malloc0" and "Malloc1":</p>
-<div class="fragment"><div class="line">./scripts/rpc.py bdev_malloc_create -b Malloc0 64 512</div><div class="line">./scripts/rpc.py bdev_malloc_create -b Malloc1 64 512</div></div><!-- fragment --><p>Create new portal group with id 1, and address 10.0.0.1:3260:</p>
-<div class="fragment"><div class="line">./scripts/rpc.py iscsi_create_portal_group 1 10.0.0.1:3260</div></div><!-- fragment --><p>Create one initiator group with id 2 to accept any connection from 10.0.0.2/32:</p>
-<div class="fragment"><div class="line">./scripts/rpc.py iscsi_create_initiator_group 2 ANY 10.0.0.2/32</div></div><!-- fragment --><p>Finally construct one target using previously created bdevs as LUN0 (Malloc0) and LUN1 (Malloc1) with a name "disk1" and alias "Data Disk1" using portal group 1 and initiator group 2.</p>
-<div class="fragment"><div class="line">./scripts/rpc.py iscsi_create_target_node disk1 &quot;Data Disk1&quot; &quot;Malloc0:0 Malloc1:1&quot; 1:2 64 -d</div></div><!-- fragment --><h4>Configure initiator</h4>
+<p>Start iscsi_tgt application: </p><div class="fragment"><div class="line">./build/bin/iscsi_tgt</div>
+</div><!-- fragment --><p>Construct two 64MB Malloc block devices with 512B sector size "Malloc0" and "Malloc1":</p>
+<div class="fragment"><div class="line">./scripts/rpc.py bdev_malloc_create -b Malloc0 64 512</div>
+<div class="line">./scripts/rpc.py bdev_malloc_create -b Malloc1 64 512</div>
+</div><!-- fragment --><p>Create new portal group with id 1, and address 10.0.0.1:3260:</p>
+<div class="fragment"><div class="line">./scripts/rpc.py iscsi_create_portal_group 1 10.0.0.1:3260</div>
+</div><!-- fragment --><p>Create one initiator group with id 2 to accept any connection from 10.0.0.2/32:</p>
+<div class="fragment"><div class="line">./scripts/rpc.py iscsi_create_initiator_group 2 ANY 10.0.0.2/32</div>
+</div><!-- fragment --><p>Finally construct one target using previously created bdevs as LUN0 (Malloc0) and LUN1 (Malloc1) with a name "disk1" and alias "Data Disk1" using portal group 1 and initiator group 2.</p>
+<div class="fragment"><div class="line">./scripts/rpc.py iscsi_create_target_node disk1 &quot;Data Disk1&quot; &quot;Malloc0:0 Malloc1:1&quot; 1:2 64 -d</div>
+</div><!-- fragment --><h4>Configure initiator</h4>
 <p>Discover target</p>
-<div class="fragment"><div class="line">$ iscsiadm -m discovery -t sendtargets -p 10.0.0.1</div><div class="line">10.0.0.1:3260,1 iqn.2016-06.io.spdk:disk1</div></div><!-- fragment --><p>Connect to the target</p>
-<div class="fragment"><div class="line">iscsiadm -m node --login</div></div><!-- fragment --><p>At this point the iSCSI target should show up as SCSI disks.</p>
+<div class="fragment"><div class="line">$ iscsiadm -m discovery -t sendtargets -p 10.0.0.1</div>
+<div class="line">10.0.0.1:3260,1 iqn.2016-06.io.spdk:disk1</div>
+</div><!-- fragment --><p>Connect to the target</p>
+<div class="fragment"><div class="line">iscsiadm -m node --login</div>
+</div><!-- fragment --><p>At this point the iSCSI target should show up as SCSI disks.</p>
 <p>Check dmesg to see what they came up as. In this example it can look like below:</p>
-<div class="fragment"><div class="line">...</div><div class="line">[630111.860078] scsi host68: iSCSI Initiator over TCP/IP</div><div class="line">[630112.124743] scsi 68:0:0:0: Direct-Access     INTEL    Malloc disk      0001 PQ: 0 ANSI: 5</div><div class="line">[630112.125445] sd 68:0:0:0: [sdd] 131072 512-byte logical blocks: (67.1 MB/64.0 MiB)</div><div class="line">[630112.125468] sd 68:0:0:0: Attached scsi generic sg3 type 0</div><div class="line">[630112.125926] sd 68:0:0:0: [sdd] Write Protect is off</div><div class="line">[630112.125934] sd 68:0:0:0: [sdd] Mode Sense: 83 00 00 08</div><div class="line">[630112.126049] sd 68:0:0:0: [sdd] Write cache: enabled, read cache: disabled, doesn&#39;t support DPO or FUA</div><div class="line">[630112.126483] scsi 68:0:0:1: Direct-Access     INTEL    Malloc disk      0001 PQ: 0 ANSI: 5</div><div class="line">[630112.127096] sd 68:0:0:1: Attached scsi generic sg4 type 0</div><div class="line">[630112.127143] sd 68:0:0:1: [sde] 131072 512-byte logical blocks: (67.1 MB/64.0 MiB)</div><div class="line">[630112.127566] sd 68:0:0:1: [sde] Write Protect is off</div><div class="line">[630112.127573] sd 68:0:0:1: [sde] Mode Sense: 83 00 00 08</div><div class="line">[630112.127728] sd 68:0:0:1: [sde] Write cache: enabled, read cache: disabled, doesn&#39;t support DPO or FUA</div><div class="line">[630112.128246] sd 68:0:0:0: [sdd] Attached SCSI disk</div><div class="line">[630112.129789] sd 68:0:0:1: [sde] Attached SCSI disk</div><div class="line">...</div></div><!-- fragment --><p>You may also use simple bash command to find /dev/sdX nodes for each iSCSI LUN in all logged iSCSI sessions:</p>
-<div class="fragment"><div class="line">$ iscsiadm -m session -P 3 | grep &quot;Attached scsi disk&quot; | awk &#39;{print $4}&#39;</div><div class="line">sdd</div><div class="line">sde</div></div><!-- fragment --><h1><a class="anchor" id="iscsi_hotplug"></a>
+<div class="fragment"><div class="line">...</div>
+<div class="line">[630111.860078] scsi host68: iSCSI Initiator over TCP/IP</div>
+<div class="line">[630112.124743] scsi 68:0:0:0: Direct-Access     INTEL    Malloc disk      0001 PQ: 0 ANSI: 5</div>
+<div class="line">[630112.125445] sd 68:0:0:0: [sdd] 131072 512-byte logical blocks: (67.1 MB/64.0 MiB)</div>
+<div class="line">[630112.125468] sd 68:0:0:0: Attached scsi generic sg3 type 0</div>
+<div class="line">[630112.125926] sd 68:0:0:0: [sdd] Write Protect is off</div>
+<div class="line">[630112.125934] sd 68:0:0:0: [sdd] Mode Sense: 83 00 00 08</div>
+<div class="line">[630112.126049] sd 68:0:0:0: [sdd] Write cache: enabled, read cache: disabled, doesn&#39;t support DPO or FUA</div>
+<div class="line">[630112.126483] scsi 68:0:0:1: Direct-Access     INTEL    Malloc disk      0001 PQ: 0 ANSI: 5</div>
+<div class="line">[630112.127096] sd 68:0:0:1: Attached scsi generic sg4 type 0</div>
+<div class="line">[630112.127143] sd 68:0:0:1: [sde] 131072 512-byte logical blocks: (67.1 MB/64.0 MiB)</div>
+<div class="line">[630112.127566] sd 68:0:0:1: [sde] Write Protect is off</div>
+<div class="line">[630112.127573] sd 68:0:0:1: [sde] Mode Sense: 83 00 00 08</div>
+<div class="line">[630112.127728] sd 68:0:0:1: [sde] Write cache: enabled, read cache: disabled, doesn&#39;t support DPO or FUA</div>
+<div class="line">[630112.128246] sd 68:0:0:0: [sdd] Attached SCSI disk</div>
+<div class="line">[630112.129789] sd 68:0:0:1: [sde] Attached SCSI disk</div>
+<div class="line">...</div>
+</div><!-- fragment --><p>You may also use simple bash command to find /dev/sdX nodes for each iSCSI LUN in all logged iSCSI sessions:</p>
+<div class="fragment"><div class="line">$ iscsiadm -m session -P 3 | grep &quot;Attached scsi disk&quot; | awk &#39;{print $4}&#39;</div>
+<div class="line">sdd</div>
+<div class="line">sde</div>
+</div><!-- fragment --><h1><a class="anchor" id="iscsi_hotplug"></a>
 iSCSI Hotplug</h1>
 <p>At the iSCSI level, we provide the following support for Hotplug:</p>
 <ol type="1">
@@ -239,7 +236,17 @@ iSCSI Login Redirection</h1>
 <p>Initiators configure portals in public portal groups as target portals. When an initator logs in to a target through a portal in an associated public portal group, the target sends a temporary redirection response with a redirect portal. Then the initiator logs in to the target again through the redirect portal.</p>
 <p>Users set a portal group to public or private at creation using the <code>iscsi_create_portal_group</code> RPC, associate portal groups with a target using the <code>iscsi_create_target_node</code> RPC or the <code>iscsi_target_node_add_pg_ig_maps</code> RPC, specify a up-to-date redirect portal in a public portal group for a target using the <code>iscsi_target_node_set_redirect</code> RPC, and terminate the corresponding connections by asynchronous logout request using the <code>iscsi_target_node_request_logout</code> RPC.</p>
 <p>Typically users will use the login redirection feature in scale out iSCSI target system, which runs multiple SPDK iSCSI target applications. </p>
-</div></div><!-- PageDoc -->
-</div><!-- contents -->
+</div></div><!-- contents -->
+</div><!-- PageDoc -->
 </div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.8.8-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+<ul>
+        <li class="footer">Generated on Wed May 12 2021 14:31:28 for SPDK by
+        <a href="http://www.doxygen.org/index.html">doxygen</a> 1.8.20 </li>
+</ul>
 </div>
+</div>
+</body>
+</html>

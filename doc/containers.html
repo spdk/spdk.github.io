@@ -1,99 +1,43 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <!-- For Mobile Devices -->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="Content-Type" content="text/xhtml; charset=utf-8">
-  <meta name="generator" content="Doxygen 1.8.15">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="generator" content="Doxygen 1.8.20" />
   <title>SPDK: SPDK and Containers</title>
-  <script type="text/javascript" src="jquery.js"></script>
-  <script type="text/javascript" src="dynsections.js"></script>
-  <script type="text/javascript" src="two.min.js"></script>
-  <link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-  $(document).ready(initResizable);
-/* @license-end */</script>
-  <link href="search/search.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="search/searchdata.js"></script>
-<script type="text/javascript" src="search/search.js"></script>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,900" type="text/css">
-  <link href="../css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  <link rel="stylesheet" href="tabs.css" type="text/css">
-  <link href="stylesheet.css" rel="stylesheet" type="text/css"/>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="/js/doxyboot.js"></script>
+  <script type="text/javascript" src="navtree.js"></script>
+  <link href="/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link href="/css/spdk.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-<div class="container-fluid">
-  <div id="top">  <!-- do not remove this div, it is closed by doxygen! -->
-    <div class="row no-gutters">
-      <div class="col-xs-12">
-        <section id="nav">
-          <div class="navbar navbar-default navbar-static-top banner-tabs">
-            <ul class="nav navbar-nav">
-              <li role="presentation">
-                <a href="http://www.spdk.io/">
-                  <i class="glyphicon glyphicon-home"></i>
-                  <span class="box-name">home</span>
-                </a>
-              </li>
-              <li role="presentation">
-                <a href="http://www.spdk.io/releases/">
-                  <i class="glyphicon glyphicon-download-alt"></i>
-                  <span class="box-name">download</span>
-                </a>
-              </li>
-              <li class="active" role="presentation">
-                <a href="index.html">
-                  <i class="glyphicon glyphicon-book"></i>
-                  <span class="box-name">documentation</span>
-                </a>
-              </li>
-              <li role="presentation">
-                <a href="http://www.spdk.io/development/">
-                  <i class="glyphicon glyphicon-wrench"></i>
-                  <span class="box-name">development</span>
-                </a>
-              </li>
-              <li role="presentation">
-                <a href="https://spdk.io/ci/">
-                  <i class="glyphicon glyphicon-ok"></i>
-                  <span class="box-name">CI status</span>
-                </a>
-              </li>
-              <li role="presentation">
-                <a href="http://www.spdk.io/community/">
-                  <i class="glyphicon glyphicon-envelope"></i>
-                  <span class="box-name">community</span>
-                </a>
-              </li>
-              <li role="presentation">
-                <a href="http://www.spdk.io/blog/">
-                  <i class="glyphicon glyphicon-comment"></i>
-                  <span class="box-name">Blog</span>
-                </a>
-              </li>
-              <li role="presentation">
-                <a href="https://trello.com/b/MN8auadQ/spdk-roadmap">
-                  <i class="glyphicon glyphicon-map-marker"></i>
-                  <span class="box-name">Roadmap</span>
-                </a>
-              </li>
-              <li role="presentation">
-                <a href="http://www.spdk.io/news/">
-                  <i class="glyphicon glyphicon-bullhorn"></i>
-                  <span class="box-name">News</span>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </section>
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark px-2">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="/" aria-label="SPDK">
+      <img src="/img/spdk.svg"  width="36" height="36" alt="Storage Performance Development Kit" />
+    </a>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <div class="navbar-nav mr-auto">
+        <a class="nav-link header-link active" href="../doc/">Documentation</a>
+        <a class="nav-link header-link" href="../development/">Development</a>
+        <a class="nav-link header-link" href="../community/">Community</a>
+        <a class="nav-link header-link" href="../blog/">Blog</a>
+      </div>
+      <div class="navbar-nav ml-auto mr-3">
+        <a class="nav-link header-link" href="https://github.com/spdk/spdk">
+          <svg xmlns="http://www.w3.org/2000/svg" class="navbar-nav-svg"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+        </a>
       </div>
     </div>
-<!-- Generated by Doxygen 1.8.15 -->
+  </nav>
+  <div class="container-fluid doc">
+      <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<!-- Generated by Doxygen 1.8.20 -->
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 var searchBox = new SearchBox("searchBox", "search",false,'Search');
@@ -122,7 +66,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-$(document).ready(function(){initNavTree('containers.html','');});
+$(document).ready(function(){initNavTree('containers.html',''); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -145,7 +89,7 @@ $(document).ready(function(){initNavTree('containers.html','');});
 <div class="title">SPDK and Containers </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p>This is a living document as there are many ways to use containers with SPDK. As new usages are identified and tested, they will be documented here.</p>
+<div class="textblock"><p><a class="anchor" id="md_containers"></a> This is a living document as there are many ways to use containers with SPDK. As new usages are identified and tested, they will be documented here.</p>
 <h1><a class="anchor" id="containers_toc"></a>
 In this document</h1>
 <ul>
@@ -166,7 +110,25 @@ Containerizing an SPDK Application for Docker</h1>
 <li>Make sure your host has bound your nvme device to your userspace driver</li>
 <li>Write your Dockerfile. The following is a simple Dockerfile to containerize the nvme <code>hello_world</code> example:</li>
 </ol>
-<div class="fragment"><div class="line"># start with the latest Fedora</div><div class="line">FROM fedora</div><div class="line"></div><div class="line"># if you are behind a proxy, set that up now</div><div class="line">ADD dnf.conf /etc/dnf/dnf.conf</div><div class="line"></div><div class="line"># these are the min dependencies for the hello_world app</div><div class="line">RUN dnf install libaio-devel -y</div><div class="line">RUN dnf install numactl-devel -y</div><div class="line"></div><div class="line"># set our working dir</div><div class="line">WORKDIR /app</div><div class="line"></div><div class="line"># add the hello_world binary</div><div class="line">ADD hello_world hello_world</div><div class="line"></div><div class="line"># run the app</div><div class="line">CMD ./hello_world</div></div><!-- fragment --><ol type="1">
+<div class="fragment"><div class="line"># start with the latest Fedora</div>
+<div class="line">FROM fedora</div>
+<div class="line"> </div>
+<div class="line"># if you are behind a proxy, set that up now</div>
+<div class="line">ADD dnf.conf /etc/dnf/dnf.conf</div>
+<div class="line"> </div>
+<div class="line"># these are the min dependencies for the hello_world app</div>
+<div class="line">RUN dnf install libaio-devel -y</div>
+<div class="line">RUN dnf install numactl-devel -y</div>
+<div class="line"> </div>
+<div class="line"># set our working dir</div>
+<div class="line">WORKDIR /app</div>
+<div class="line"> </div>
+<div class="line"># add the hello_world binary</div>
+<div class="line">ADD hello_world hello_world</div>
+<div class="line"> </div>
+<div class="line"># run the app</div>
+<div class="line">CMD ./hello_world</div>
+</div><!-- fragment --><ol type="1">
 <li>Create your image</li>
 </ol>
 <p><code>sudo docker image build -t hello:1.0 .</code></p>
@@ -185,7 +147,29 @@ Containerizing an SPDK Application for Docker</h1>
 <li>If you need to use the host network (i.e. NVMF target application): <code>--network host</code></li>
 </ul>
 <p>Your output should look something like this:</p>
-<div class="fragment"><div class="line">$ sudo docker run --privileged -v //dev//hugepages://dev//hugepages hello:1.0</div><div class="line">Starting SPDK v20.01-pre git sha1 80da95481 // DPDK 19.11.0 initialization...</div><div class="line">[ DPDK EAL parameters: hello_world -c 0x1 --log-level=lib.eal:6 --log-level=lib.cryptodev:5 --log-level=user1:6 --iova-mode=pa --base-virtaddr=0x200000000000 --match-allocations --file-prefix=spdk0 --proc-type=auto ]</div><div class="line">EAL: No available hugepages reported in hugepages-1048576kB</div><div class="line">Initializing NVMe Controllers</div><div class="line">Attaching to 0000:06:00.0</div><div class="line">Attached to 0000:06:00.0</div><div class="line">Using controller INTEL SSDPEDMD400G4  (CVFT7203005M400LGN  ) with 1 namespaces.</div><div class="line">  Namespace ID: 1 size: 400GB</div><div class="line">Initialization complete.</div><div class="line">INFO: using host memory buffer for IO</div><div class="line">Hello world!</div></div><!-- fragment --> </div></div><!-- PageDoc -->
-</div><!-- contents -->
+<div class="fragment"><div class="line">$ sudo docker run --privileged -v //dev//hugepages://dev//hugepages hello:1.0</div>
+<div class="line">Starting SPDK v20.01-pre git sha1 80da95481 // DPDK 19.11.0 initialization...</div>
+<div class="line">[ DPDK EAL parameters: hello_world -c 0x1 --log-level=lib.eal:6 --log-level=lib.cryptodev:5 --log-level=user1:6 --iova-mode=pa --base-virtaddr=0x200000000000 --match-allocations --file-prefix=spdk0 --proc-type=auto ]</div>
+<div class="line">EAL: No available hugepages reported in hugepages-1048576kB</div>
+<div class="line">Initializing NVMe Controllers</div>
+<div class="line">Attaching to 0000:06:00.0</div>
+<div class="line">Attached to 0000:06:00.0</div>
+<div class="line">Using controller INTEL SSDPEDMD400G4  (CVFT7203005M400LGN  ) with 1 namespaces.</div>
+<div class="line">  Namespace ID: 1 size: 400GB</div>
+<div class="line">Initialization complete.</div>
+<div class="line">INFO: using host memory buffer for IO</div>
+<div class="line">Hello world!</div>
+</div><!-- fragment --> </div></div><!-- contents -->
+</div><!-- PageDoc -->
 </div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.8.8-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+<ul>
+        <li class="footer">Generated on Wed May 12 2021 14:31:28 for SPDK by
+        <a href="http://www.doxygen.org/index.html">doxygen</a> 1.8.20 </li>
+</ul>
 </div>
+</div>
+</body>
+</html>

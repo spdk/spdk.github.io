@@ -1,99 +1,43 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <!-- For Mobile Devices -->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="Content-Type" content="text/xhtml; charset=utf-8">
-  <meta name="generator" content="Doxygen 1.8.15">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="generator" content="Doxygen 1.8.20" />
   <title>SPDK: string.h File Reference</title>
-  <script type="text/javascript" src="jquery.js"></script>
-  <script type="text/javascript" src="dynsections.js"></script>
-  <script type="text/javascript" src="two.min.js"></script>
-  <link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-  $(document).ready(initResizable);
-/* @license-end */</script>
-  <link href="search/search.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="search/searchdata.js"></script>
-<script type="text/javascript" src="search/search.js"></script>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,900" type="text/css">
-  <link href="../css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  <link rel="stylesheet" href="tabs.css" type="text/css">
-  <link href="stylesheet.css" rel="stylesheet" type="text/css"/>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="/js/doxyboot.js"></script>
+  <script type="text/javascript" src="navtree.js"></script>
+  <link href="/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link href="/css/spdk.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-<div class="container-fluid">
-  <div id="top">  <!-- do not remove this div, it is closed by doxygen! -->
-    <div class="row no-gutters">
-      <div class="col-xs-12">
-        <section id="nav">
-          <div class="navbar navbar-default navbar-static-top banner-tabs">
-            <ul class="nav navbar-nav">
-              <li role="presentation">
-                <a href="http://www.spdk.io/">
-                  <i class="glyphicon glyphicon-home"></i>
-                  <span class="box-name">home</span>
-                </a>
-              </li>
-              <li role="presentation">
-                <a href="http://www.spdk.io/releases/">
-                  <i class="glyphicon glyphicon-download-alt"></i>
-                  <span class="box-name">download</span>
-                </a>
-              </li>
-              <li class="active" role="presentation">
-                <a href="index.html">
-                  <i class="glyphicon glyphicon-book"></i>
-                  <span class="box-name">documentation</span>
-                </a>
-              </li>
-              <li role="presentation">
-                <a href="http://www.spdk.io/development/">
-                  <i class="glyphicon glyphicon-wrench"></i>
-                  <span class="box-name">development</span>
-                </a>
-              </li>
-              <li role="presentation">
-                <a href="https://spdk.io/ci/">
-                  <i class="glyphicon glyphicon-ok"></i>
-                  <span class="box-name">CI status</span>
-                </a>
-              </li>
-              <li role="presentation">
-                <a href="http://www.spdk.io/community/">
-                  <i class="glyphicon glyphicon-envelope"></i>
-                  <span class="box-name">community</span>
-                </a>
-              </li>
-              <li role="presentation">
-                <a href="http://www.spdk.io/blog/">
-                  <i class="glyphicon glyphicon-comment"></i>
-                  <span class="box-name">Blog</span>
-                </a>
-              </li>
-              <li role="presentation">
-                <a href="https://trello.com/b/MN8auadQ/spdk-roadmap">
-                  <i class="glyphicon glyphicon-map-marker"></i>
-                  <span class="box-name">Roadmap</span>
-                </a>
-              </li>
-              <li role="presentation">
-                <a href="http://www.spdk.io/news/">
-                  <i class="glyphicon glyphicon-bullhorn"></i>
-                  <span class="box-name">News</span>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </section>
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark px-2">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="/" aria-label="SPDK">
+      <img src="/img/spdk.svg"  width="36" height="36" alt="Storage Performance Development Kit" />
+    </a>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <div class="navbar-nav mr-auto">
+        <a class="nav-link header-link active" href="../doc/">Documentation</a>
+        <a class="nav-link header-link" href="../development/">Development</a>
+        <a class="nav-link header-link" href="../community/">Community</a>
+        <a class="nav-link header-link" href="../blog/">Blog</a>
+      </div>
+      <div class="navbar-nav ml-auto mr-3">
+        <a class="nav-link header-link" href="https://github.com/spdk/spdk">
+          <svg xmlns="http://www.w3.org/2000/svg" class="navbar-nav-svg"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+        </a>
       </div>
     </div>
-<!-- Generated by Doxygen 1.8.15 -->
+  </nav>
+  <div class="container-fluid doc">
+      <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<!-- Generated by Doxygen 1.8.20 -->
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 var searchBox = new SearchBox("searchBox", "search",false,'Search');
@@ -122,7 +66,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-$(document).ready(function(){initNavTree('string_8h.html','');});
+$(document).ready(function(){initNavTree('string_8h.html',''); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -154,55 +98,55 @@ $(document).ready(function(){initNavTree('string_8h.html','');});
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:ac80f349c77c57bc28690f46e5de7fe03"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="string_8h.html#ac80f349c77c57bc28690f46e5de7fe03">spdk_sprintf_alloc</a> (const char *format,...)</td></tr>
-<tr class="memdesc:ac80f349c77c57bc28690f46e5de7fe03"><td class="mdescLeft">&#160;</td><td class="mdescRight">sprintf with automatic buffer allocation.  <a href="#ac80f349c77c57bc28690f46e5de7fe03">More...</a><br /></td></tr>
+<tr class="memdesc:ac80f349c77c57bc28690f46e5de7fe03"><td class="mdescLeft">&#160;</td><td class="mdescRight">sprintf with automatic buffer allocation.  <a href="string_8h.html#ac80f349c77c57bc28690f46e5de7fe03">More...</a><br /></td></tr>
 <tr class="separator:ac80f349c77c57bc28690f46e5de7fe03"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6dc47e4a2855c519b30fc54b252f85cc"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="string_8h.html#a6dc47e4a2855c519b30fc54b252f85cc">spdk_vsprintf_alloc</a> (const char *format, va_list args)</td></tr>
-<tr class="memdesc:a6dc47e4a2855c519b30fc54b252f85cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">vsprintf with automatic buffer allocation.  <a href="#a6dc47e4a2855c519b30fc54b252f85cc">More...</a><br /></td></tr>
+<tr class="memdesc:a6dc47e4a2855c519b30fc54b252f85cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">vsprintf with automatic buffer allocation.  <a href="string_8h.html#a6dc47e4a2855c519b30fc54b252f85cc">More...</a><br /></td></tr>
 <tr class="separator:a6dc47e4a2855c519b30fc54b252f85cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a749731b95349503d787f623980d32241"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="string_8h.html#a749731b95349503d787f623980d32241">spdk_sprintf_append_realloc</a> (char *buffer, const char *format,...)</td></tr>
-<tr class="memdesc:a749731b95349503d787f623980d32241"><td class="mdescLeft">&#160;</td><td class="mdescRight">Append string using vsprintf with automatic buffer re-allocation.  <a href="#a749731b95349503d787f623980d32241">More...</a><br /></td></tr>
+<tr class="memdesc:a749731b95349503d787f623980d32241"><td class="mdescLeft">&#160;</td><td class="mdescRight">Append string using vsprintf with automatic buffer re-allocation.  <a href="string_8h.html#a749731b95349503d787f623980d32241">More...</a><br /></td></tr>
 <tr class="separator:a749731b95349503d787f623980d32241"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8140b574a3934d00596aaf6a38c51f14"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="string_8h.html#a8140b574a3934d00596aaf6a38c51f14">spdk_vsprintf_append_realloc</a> (char *buffer, const char *format, va_list args)</td></tr>
-<tr class="memdesc:a8140b574a3934d00596aaf6a38c51f14"><td class="mdescLeft">&#160;</td><td class="mdescRight">Append string using vsprintf with automatic buffer re-allocation.  <a href="#a8140b574a3934d00596aaf6a38c51f14">More...</a><br /></td></tr>
+<tr class="memdesc:a8140b574a3934d00596aaf6a38c51f14"><td class="mdescLeft">&#160;</td><td class="mdescRight">Append string using vsprintf with automatic buffer re-allocation.  <a href="string_8h.html#a8140b574a3934d00596aaf6a38c51f14">More...</a><br /></td></tr>
 <tr class="separator:a8140b574a3934d00596aaf6a38c51f14"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aafc67eadec132156b4f7bd873d1cbc62"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="string_8h.html#aafc67eadec132156b4f7bd873d1cbc62">spdk_strlwr</a> (char *s)</td></tr>
-<tr class="memdesc:aafc67eadec132156b4f7bd873d1cbc62"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert string to lowercase in place.  <a href="#aafc67eadec132156b4f7bd873d1cbc62">More...</a><br /></td></tr>
+<tr class="memdesc:aafc67eadec132156b4f7bd873d1cbc62"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert string to lowercase in place.  <a href="string_8h.html#aafc67eadec132156b4f7bd873d1cbc62">More...</a><br /></td></tr>
 <tr class="separator:aafc67eadec132156b4f7bd873d1cbc62"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad39472adf37d067c2fbcf2b1454188c2"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="string_8h.html#ad39472adf37d067c2fbcf2b1454188c2">spdk_strsepq</a> (char **stringp, const char *delim)</td></tr>
-<tr class="memdesc:ad39472adf37d067c2fbcf2b1454188c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parse a delimited string with quote handling.  <a href="#ad39472adf37d067c2fbcf2b1454188c2">More...</a><br /></td></tr>
+<tr class="memdesc:ad39472adf37d067c2fbcf2b1454188c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parse a delimited string with quote handling.  <a href="string_8h.html#ad39472adf37d067c2fbcf2b1454188c2">More...</a><br /></td></tr>
 <tr class="separator:ad39472adf37d067c2fbcf2b1454188c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a93efecd5ee3d49df20a51b65718efbd1"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="string_8h.html#a93efecd5ee3d49df20a51b65718efbd1">spdk_str_trim</a> (char *s)</td></tr>
-<tr class="memdesc:a93efecd5ee3d49df20a51b65718efbd1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Trim whitespace from a string in place.  <a href="#a93efecd5ee3d49df20a51b65718efbd1">More...</a><br /></td></tr>
+<tr class="memdesc:a93efecd5ee3d49df20a51b65718efbd1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Trim whitespace from a string in place.  <a href="string_8h.html#a93efecd5ee3d49df20a51b65718efbd1">More...</a><br /></td></tr>
 <tr class="separator:a93efecd5ee3d49df20a51b65718efbd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a306d9e4d639bd6b6424eddc02324f0a2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="string_8h.html#a306d9e4d639bd6b6424eddc02324f0a2">spdk_strerror_r</a> (int errnum, char *buf, size_t buflen)</td></tr>
-<tr class="memdesc:a306d9e4d639bd6b6424eddc02324f0a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy the string version of an error into the user supplied buffer.  <a href="#a306d9e4d639bd6b6424eddc02324f0a2">More...</a><br /></td></tr>
+<tr class="memdesc:a306d9e4d639bd6b6424eddc02324f0a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy the string version of an error into the user supplied buffer.  <a href="string_8h.html#a306d9e4d639bd6b6424eddc02324f0a2">More...</a><br /></td></tr>
 <tr class="separator:a306d9e4d639bd6b6424eddc02324f0a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a166b61997b364910553051f1bc002e2c"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="string_8h.html#a166b61997b364910553051f1bc002e2c">spdk_strerror</a> (int errnum)</td></tr>
-<tr class="memdesc:a166b61997b364910553051f1bc002e2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the string version of an error from a static, thread-local buffer.  <a href="#a166b61997b364910553051f1bc002e2c">More...</a><br /></td></tr>
+<tr class="memdesc:a166b61997b364910553051f1bc002e2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the string version of an error from a static, thread-local buffer.  <a href="string_8h.html#a166b61997b364910553051f1bc002e2c">More...</a><br /></td></tr>
 <tr class="separator:a166b61997b364910553051f1bc002e2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a713ec7967f4c2c3cb8c031421edee78a"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="string_8h.html#a713ec7967f4c2c3cb8c031421edee78a">spdk_str_chomp</a> (char *s)</td></tr>
-<tr class="memdesc:a713ec7967f4c2c3cb8c031421edee78a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove trailing newlines from the end of a string in place.  <a href="#a713ec7967f4c2c3cb8c031421edee78a">More...</a><br /></td></tr>
+<tr class="memdesc:a713ec7967f4c2c3cb8c031421edee78a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove trailing newlines from the end of a string in place.  <a href="string_8h.html#a713ec7967f4c2c3cb8c031421edee78a">More...</a><br /></td></tr>
 <tr class="separator:a713ec7967f4c2c3cb8c031421edee78a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa333ebed7fc3529d446f819b647e2d88"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="string_8h.html#aa333ebed7fc3529d446f819b647e2d88">spdk_strcpy_pad</a> (void *dst, const char *src, size_t size, int pad)</td></tr>
-<tr class="memdesc:aa333ebed7fc3529d446f819b647e2d88"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy a string into a fixed-size buffer, padding extra bytes with a specific character.  <a href="#aa333ebed7fc3529d446f819b647e2d88">More...</a><br /></td></tr>
+<tr class="memdesc:aa333ebed7fc3529d446f819b647e2d88"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy a string into a fixed-size buffer, padding extra bytes with a specific character.  <a href="string_8h.html#aa333ebed7fc3529d446f819b647e2d88">More...</a><br /></td></tr>
 <tr class="separator:aa333ebed7fc3529d446f819b647e2d88"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3c8f770428a60f0d2836d479c4b1b4e7"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="string_8h.html#a3c8f770428a60f0d2836d479c4b1b4e7">spdk_strlen_pad</a> (const void *str, size_t size, int pad)</td></tr>
-<tr class="memdesc:a3c8f770428a60f0d2836d479c4b1b4e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find the length of a string that has been padded with a specific byte.  <a href="#a3c8f770428a60f0d2836d479c4b1b4e7">More...</a><br /></td></tr>
+<tr class="memdesc:a3c8f770428a60f0d2836d479c4b1b4e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find the length of a string that has been padded with a specific byte.  <a href="string_8h.html#a3c8f770428a60f0d2836d479c4b1b4e7">More...</a><br /></td></tr>
 <tr class="separator:a3c8f770428a60f0d2836d479c4b1b4e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad48498f237af5f5c25ca7cbca5300e12"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="string_8h.html#ad48498f237af5f5c25ca7cbca5300e12">spdk_parse_ip_addr</a> (char *ip, char **host, char **port)</td></tr>
-<tr class="memdesc:ad48498f237af5f5c25ca7cbca5300e12"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parse an IP address into its hostname and port components.  <a href="#ad48498f237af5f5c25ca7cbca5300e12">More...</a><br /></td></tr>
+<tr class="memdesc:ad48498f237af5f5c25ca7cbca5300e12"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parse an IP address into its hostname and port components.  <a href="string_8h.html#ad48498f237af5f5c25ca7cbca5300e12">More...</a><br /></td></tr>
 <tr class="separator:ad48498f237af5f5c25ca7cbca5300e12"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab81c3a52c60c7390e54437dc5856996b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="string_8h.html#ab81c3a52c60c7390e54437dc5856996b">spdk_parse_capacity</a> (const char *cap_str, uint64_t *cap, bool *has_prefix)</td></tr>
-<tr class="memdesc:ab81c3a52c60c7390e54437dc5856996b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parse a string representing a number possibly followed by a binary prefix.  <a href="#ab81c3a52c60c7390e54437dc5856996b">More...</a><br /></td></tr>
+<tr class="memdesc:ab81c3a52c60c7390e54437dc5856996b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parse a string representing a number possibly followed by a binary prefix.  <a href="string_8h.html#ab81c3a52c60c7390e54437dc5856996b">More...</a><br /></td></tr>
 <tr class="separator:ab81c3a52c60c7390e54437dc5856996b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae013400d8f031493f284ed3b614357e0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="string_8h.html#ae013400d8f031493f284ed3b614357e0">spdk_mem_all_zero</a> (const void *data, size_t size)</td></tr>
-<tr class="memdesc:ae013400d8f031493f284ed3b614357e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if a buffer is all zero (0x00) bytes or not.  <a href="#ae013400d8f031493f284ed3b614357e0">More...</a><br /></td></tr>
+<tr class="memdesc:ae013400d8f031493f284ed3b614357e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if a buffer is all zero (0x00) bytes or not.  <a href="string_8h.html#ae013400d8f031493f284ed3b614357e0">More...</a><br /></td></tr>
 <tr class="separator:ae013400d8f031493f284ed3b614357e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae12420e9e2ab3af9d14e518245691c15"><td class="memItemLeft" align="right" valign="top">long int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="string_8h.html#ae12420e9e2ab3af9d14e518245691c15">spdk_strtol</a> (const char *nptr, int base)</td></tr>
-<tr class="memdesc:ae12420e9e2ab3af9d14e518245691c15"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert the string in nptr to a long integer value according to the given base.  <a href="#ae12420e9e2ab3af9d14e518245691c15">More...</a><br /></td></tr>
+<tr class="memdesc:ae12420e9e2ab3af9d14e518245691c15"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert the string in nptr to a long integer value according to the given base.  <a href="string_8h.html#ae12420e9e2ab3af9d14e518245691c15">More...</a><br /></td></tr>
 <tr class="separator:ae12420e9e2ab3af9d14e518245691c15"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a317132c2abb23a53dc3d53846689e2b6"><td class="memItemLeft" align="right" valign="top">long long int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="string_8h.html#a317132c2abb23a53dc3d53846689e2b6">spdk_strtoll</a> (const char *nptr, int base)</td></tr>
-<tr class="memdesc:a317132c2abb23a53dc3d53846689e2b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert the string in nptr to a long long integer value according to the given base.  <a href="#a317132c2abb23a53dc3d53846689e2b6">More...</a><br /></td></tr>
+<tr class="memdesc:a317132c2abb23a53dc3d53846689e2b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert the string in nptr to a long long integer value according to the given base.  <a href="string_8h.html#a317132c2abb23a53dc3d53846689e2b6">More...</a><br /></td></tr>
 <tr class="separator:a317132c2abb23a53dc3d53846689e2b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -880,4 +824,14 @@ Functions</h2></td></tr>
 </div>
 </div><!-- contents -->
 </div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.8.8-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+<ul>
+        <li class="footer">Generated on Wed May 12 2021 14:31:28 for SPDK by
+        <a href="http://www.doxygen.org/index.html">doxygen</a> 1.8.20 </li>
+</ul>
 </div>
+</div>
+</body>
+</html>
