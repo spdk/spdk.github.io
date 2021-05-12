@@ -149,6 +149,8 @@ $(document).ready(function(){initNavTree('changelog.html','');});
 v21.07: (Upcoming Release)</h1>
 <h2>idxd</h2>
 <p>Remove the probe_cb parameter in spdk_idxd_probe function. And remove the definition of spdk_idxd_probe_cb function pointer. It should be implemented in idxd_user.c.</p>
+<h2>nvmf</h2>
+<p>Added <code>min_cntlid</code> and <code>max_cntlid</code> to <code>nvmf_create_subsystem</code> to limit the controller ID range.</p>
 <h1><a class="anchor" id="changelog-v21-04"></a>
 v21.04:</h1>
 <h2>accel</h2>
@@ -221,6 +223,10 @@ v21.04:</h1>
 <h2>rpc</h2>
 <p>New RPC <code>bdev_nvme_get_transport_statistics</code> was added, it allows to get transport statistics of nvme poll groups.</p>
 <p>Parameter <code>enable-zerocopy-send</code> of RPC <code>sock_impl_set_options</code> is deprecated and will be removed in SPDK 21.07, use <code>enable-zerocopy-send-server</code> or <code>enable-zerocopy-send-client</code> instead. Parameter <code>disable-zerocopy-send</code> of RPC <code>sock_impl_set_options</code> is deprecated and will be removed in SPDK 21.07, use <code>disable-zerocopy-send-server</code> or <code>disable-zerocopy-send-client</code> instead.</p>
+<p>Added cmd_parser.py used to parse the args from argparse. There are two benefit to use command parser:</p><ul>
+<li>Simplify the definition of rpc method. It will reduce the rpc method code.</li>
+<li>Make the rpc call more versatile. User can add private args into rpc method.</li>
+</ul>
 <h2>rpm</h2>
 <p>Added support for new RPM spec, rpmbuild/spdk.spec, which can be used for packaging the SPDK. The pkg/spdk.spec is considered to be deprecated and scheduled for removal in SPDK 21.07. See <a href="https://spdk.io/doc/rpm.html">RPM documentation</a> for more details.</p>
 <h2>sock</h2>

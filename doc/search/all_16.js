@@ -4,6 +4,7 @@ var searchData=
   ['vendor_5fid',['vendor_id',['../structspdk__pci__id.html#ae1f6dd7e42b4203d397b154fe1af2ed8',1,'spdk_pci_id']]],
   ['ver',['ver',['../structspdk__nvme__ctrlr__data.html#a72c56d5a31899269b4f615905f501b72',1,'spdk_nvme_ctrlr_data']]],
   ['version_2eh',['version.h',['../version_8h.html',1,'']]],
+  ['vfio_5fuser_5fdevice_5finfo',['vfio_user_device_info',['../structvfio__user__device__info.html',1,'']]],
   ['vfio_5fuser_5fdma_5fregion',['vfio_user_dma_region',['../structvfio__user__dma__region.html',1,'']]],
   ['vfio_5fuser_5fdma_5fregion_5faccess',['vfio_user_dma_region_access',['../structvfio__user__dma__region__access.html',1,'']]],
   ['vfio_5fuser_5fheader',['vfio_user_header',['../structvfio__user__header.html',1,'']]],

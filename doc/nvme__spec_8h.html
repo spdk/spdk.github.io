@@ -272,6 +272,9 @@ Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__dsm__range.html">spdk_nvme_dsm_range</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dataset Management range.  <a href="structspdk__nvme__dsm__range.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__scc__source__range.html">spdk_nvme_scc_source_range</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Simple Copy Command source range.  <a href="structspdk__nvme__scc__source__range.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__host__behavior.html">spdk_nvme_host_behavior</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__power__state.html">spdk_nvme_power_state</a></td></tr>
@@ -683,7 +686,8 @@ Enumerations</h2></td></tr>
 <b>SPDK_NVME_SC_CONFLICTING_ATTRIBUTES</b> = 0x80, 
 <b>SPDK_NVME_SC_INVALID_PROTECTION_INFO</b> = 0x81, 
 <br />
-&#160;&#160;<b>SPDK_NVME_SC_ATTEMPTED_WRITE_TO_RO_RANGE</b> = 0x82
+&#160;&#160;<b>SPDK_NVME_SC_ATTEMPTED_WRITE_TO_RO_RANGE</b> = 0x82, 
+<b>SPDK_NVME_SC_CMD_SIZE_LIMIT_SIZE_EXCEEDED</b> = 0x83
 <br />
  }</td></tr>
 <tr class="memdesc:acb8784fad6a53be95d4c718ad3cf852e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Command specific status codes. <br /></td></tr>
@@ -766,7 +770,8 @@ Enumerations</h2></td></tr>
 <br />
 &#160;&#160;<b>SPDK_NVME_OPC_RESERVATION_REPORT</b> = 0x0e, 
 <b>SPDK_NVME_OPC_RESERVATION_ACQUIRE</b> = 0x11, 
-<b>SPDK_NVME_OPC_RESERVATION_RELEASE</b> = 0x15
+<b>SPDK_NVME_OPC_RESERVATION_RELEASE</b> = 0x15, 
+<b>SPDK_NVME_OPC_COPY</b> = 0x19
 <br />
  }</td></tr>
 <tr class="memdesc:ac3953ec001514cffe849d9c1e3a913e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">NVM command set opcodes. <br /></td></tr>
@@ -1331,6 +1336,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a610a35e1a3abfd96ab8785680f73e136"><td class="memItemLeft" align="right" valign="top"><a id="a610a35e1a3abfd96ab8785680f73e136"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_STATIC_ASSERT</b> (sizeof(struct <a class="el" href="structspdk__nvme__dsm__range.html">spdk_nvme_dsm_range</a>)==16, &quot;Incorrect size&quot;)</td></tr>
 <tr class="separator:a610a35e1a3abfd96ab8785680f73e136"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac51bd6e7777d1fffb8b24dd6ca55e041"><td class="memItemLeft" align="right" valign="top"><a id="ac51bd6e7777d1fffb8b24dd6ca55e041"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_STATIC_ASSERT</b> (sizeof(struct <a class="el" href="structspdk__nvme__scc__source__range.html">spdk_nvme_scc_source_range</a>)==32, &quot;Incorrect size&quot;)</td></tr>
+<tr class="separator:ac51bd6e7777d1fffb8b24dd6ca55e041"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3f96e024feb9e0cb23b941b847058102"><td class="memItemLeft" align="right" valign="top">static enum <a class="el" href="nvme__spec_8h.html#adbe38e042bb939183ed8fd5c1685b2fc">spdk_nvme_data_transfer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme__spec_8h.html#a3f96e024feb9e0cb23b941b847058102">spdk_nvme_opc_get_data_transfer</a> (uint8_t opc)</td></tr>
 <tr class="memdesc:a3f96e024feb9e0cb23b941b847058102"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extract the Data Transfer bits from an NVMe opcode.  <a href="#a3f96e024feb9e0cb23b941b847058102">More...</a><br /></td></tr>
 <tr class="separator:a3f96e024feb9e0cb23b941b847058102"><td class="memSeparator" colspan="2">&#160;</td></tr>

@@ -363,6 +363,12 @@ Functions</h2></td></tr>
 <tr class="memitem:a414b91bad7200ab931f14a06585ccc74"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#a414b91bad7200ab931f14a06585ccc74">spdk_nvmf_subsystem_get_max_namespaces</a> (const struct spdk_nvmf_subsystem *subsystem)</td></tr>
 <tr class="memdesc:a414b91bad7200ab931f14a06585ccc74"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the maximum number of namespaces allowed in a subsystem.  <a href="#a414b91bad7200ab931f14a06585ccc74">More...</a><br /></td></tr>
 <tr class="separator:a414b91bad7200ab931f14a06585ccc74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b02975c7384755db60436a49e64faec"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#a5b02975c7384755db60436a49e64faec">spdk_nvmf_subsystem_get_min_cntlid</a> (const struct spdk_nvmf_subsystem *subsystem)</td></tr>
+<tr class="memdesc:a5b02975c7384755db60436a49e64faec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the minimum controller ID allowed in a subsystem.  <a href="#a5b02975c7384755db60436a49e64faec">More...</a><br /></td></tr>
+<tr class="separator:a5b02975c7384755db60436a49e64faec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afcf923218a78791aaea0653fbb61bfdc"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#afcf923218a78791aaea0653fbb61bfdc">spdk_nvmf_subsystem_get_max_cntlid</a> (const struct spdk_nvmf_subsystem *subsystem)</td></tr>
+<tr class="memdesc:afcf923218a78791aaea0653fbb61bfdc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the maximum controller ID allowed in a subsystem.  <a href="#afcf923218a78791aaea0653fbb61bfdc">More...</a><br /></td></tr>
+<tr class="separator:afcf923218a78791aaea0653fbb61bfdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afdcd2be73f2653c6c14141c4cb481fe2"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#afdcd2be73f2653c6c14141c4cb481fe2">spdk_nvmf_ns_get_id</a> (const struct spdk_nvmf_ns *ns)</td></tr>
 <tr class="memdesc:afdcd2be73f2653c6c14141c4cb481fe2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a namespace's NSID.  <a href="#afdcd2be73f2653c6c14141c4cb481fe2">More...</a><br /></td></tr>
 <tr class="separator:afdcd2be73f2653c6c14141c4cb481fe2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1744,6 +1750,33 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="afcf923218a78791aaea0653fbb61bfdc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afcf923218a78791aaea0653fbb61bfdc">&#9670;&nbsp;</a></span>spdk_nvmf_subsystem_get_max_cntlid()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t spdk_nvmf_subsystem_get_max_cntlid </td>
+          <td>(</td>
+          <td class="paramtype">const struct spdk_nvmf_subsystem *&#160;</td>
+          <td class="paramname"><em>subsystem</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the maximum controller ID allowed in a subsystem. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">subsystem</td><td>Subsystem to query.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Maximum controller ID allowed in the subsystem. </dd></dl>
+
+</div>
+</div>
 <a id="a414b91bad7200ab931f14a06585ccc74"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a414b91bad7200ab931f14a06585ccc74">&#9670;&nbsp;</a></span>spdk_nvmf_subsystem_get_max_namespaces()</h2>
 
@@ -1795,6 +1828,33 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>maximum namespace id </dd></dl>
+
+</div>
+</div>
+<a id="a5b02975c7384755db60436a49e64faec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b02975c7384755db60436a49e64faec">&#9670;&nbsp;</a></span>spdk_nvmf_subsystem_get_min_cntlid()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t spdk_nvmf_subsystem_get_min_cntlid </td>
+          <td>(</td>
+          <td class="paramtype">const struct spdk_nvmf_subsystem *&#160;</td>
+          <td class="paramname"><em>subsystem</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the minimum controller ID allowed in a subsystem. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">subsystem</td><td>Subsystem to query.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Minimum controller ID allowed in the subsystem. </dd></dl>
 
 </div>
 </div>

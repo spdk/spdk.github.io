@@ -802,15 +802,17 @@ bdev_ocf_create</h2>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">mode  </td><td class="markdownTableBodyNone">Required  </td><td class="markdownTableBodyNone">string  </td><td class="markdownTableBodyNone">OCF cache mode: wb, wt, pt, wa, wi, wo   </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">cache_bdev_name  </td><td class="markdownTableBodyNone">Required  </td><td class="markdownTableBodyNone">string  </td><td class="markdownTableBodyNone">Name of underlying cache bdev   </td></tr>
+<td class="markdownTableBodyNone">cache_line_size  </td><td class="markdownTableBodyNone">Optional  </td><td class="markdownTableBodyNone">int  </td><td class="markdownTableBodyNone">OCF cache line size in KiB: 4, 8, 16, 32, 64   </td></tr>
 <tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">cache_bdev_name  </td><td class="markdownTableBodyNone">Required  </td><td class="markdownTableBodyNone">string  </td><td class="markdownTableBodyNone">Name of underlying cache bdev   </td></tr>
+<tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">core_bdev_name  </td><td class="markdownTableBodyNone">Required  </td><td class="markdownTableBodyNone">string  </td><td class="markdownTableBodyNone">Name of underlying core bdev   </td></tr>
 </table>
 <h3>Result</h3>
 <p>Name of newly created bdev.</p>
 <h3>Example</h3>
 <p>Example request:</p>
-<div class="fragment"><div class="line">{</div><div class="line">  &quot;params&quot;: {</div><div class="line">    &quot;name&quot;: &quot;ocf0&quot;,</div><div class="line">    &quot;mode&quot;: &quot;wt&quot;,</div><div class="line">    &quot;cache_bdev_name&quot;: &quot;Nvme0n1&quot;</div><div class="line">    &quot;core_bdev_name&quot;: &quot;aio0&quot;</div><div class="line">  },</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;method&quot;: &quot;bdev_ocf_create&quot;,</div><div class="line">  &quot;id&quot;: 1</div><div class="line">}</div></div><!-- fragment --><p>Example response:</p>
+<div class="fragment"><div class="line">{</div><div class="line">  &quot;params&quot;: {</div><div class="line">    &quot;name&quot;: &quot;ocf0&quot;,</div><div class="line">    &quot;mode&quot;: &quot;wt&quot;,</div><div class="line">    &quot;cache_line_size&quot;: 64,</div><div class="line">    &quot;cache_bdev_name&quot;: &quot;Nvme0n1&quot;,</div><div class="line">    &quot;core_bdev_name&quot;: &quot;aio0&quot;</div><div class="line">  },</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;method&quot;: &quot;bdev_ocf_create&quot;,</div><div class="line">  &quot;id&quot;: 1</div><div class="line">}</div></div><!-- fragment --><p>Example response:</p>
 <div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: &quot;ocf0&quot;</div><div class="line">}</div></div><!-- fragment --><h2><a class="anchor" id="rpc_bdev_ocf_delete"></a>
 bdev_ocf_delete</h2>
 <p>Delete the OCF bdev</p>
@@ -2334,6 +2336,10 @@ nvmf_create_subsystem method</h2>
 <td class="markdownTableBodyNone">allow_any_host  </td><td class="markdownTableBodyNone">Optional  </td><td class="markdownTableBodyNone">boolean  </td><td class="markdownTableBodyNone">Allow any host (<code>true</code>) or enforce allowed host list (<code>false</code>). Default: <code>false</code>.   </td></tr>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">ana_reporting  </td><td class="markdownTableBodyNone">Optional  </td><td class="markdownTableBodyNone">boolean  </td><td class="markdownTableBodyNone">Enable ANA reporting feature (default: <code>false</code>).   </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">min_cntlid  </td><td class="markdownTableBodyNone">Optional  </td><td class="markdownTableBodyNone">number  </td><td class="markdownTableBodyNone">Minimum controller ID. Default: 1   </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">max_cntlid  </td><td class="markdownTableBodyNone">Optional  </td><td class="markdownTableBodyNone">number  </td><td class="markdownTableBodyNone">Maximum controller ID. Default: 0xffef   </td></tr>
 </table>
 <h3>Example</h3>
 <p>Example request:</p>

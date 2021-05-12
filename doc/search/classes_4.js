@@ -154,6 +154,7 @@ var searchData=
   ['spdk_5fnvme_5fsanitize',['spdk_nvme_sanitize',['../structspdk__nvme__sanitize.html',1,'']]],
   ['spdk_5fnvme_5fsanitize_5fstatus_5flog_5fpage',['spdk_nvme_sanitize_status_log_page',['../structspdk__nvme__sanitize__status__log__page.html',1,'']]],
   ['spdk_5fnvme_5fsanitize_5fstatus_5fsstat',['spdk_nvme_sanitize_status_sstat',['../structspdk__nvme__sanitize__status__sstat.html',1,'']]],
+  ['spdk_5fnvme_5fscc_5fsource_5frange',['spdk_nvme_scc_source_range',['../structspdk__nvme__scc__source__range.html',1,'']]],
   ['spdk_5fnvme_5fsecondary_5fctrl_5fentry',['spdk_nvme_secondary_ctrl_entry',['../structspdk__nvme__secondary__ctrl__entry.html',1,'']]],
   ['spdk_5fnvme_5fsecondary_5fctrl_5flist',['spdk_nvme_secondary_ctrl_list',['../structspdk__nvme__secondary__ctrl__list.html',1,'']]],
   ['spdk_5fnvme_5fsgl_5fdescriptor',['spdk_nvme_sgl_descriptor',['../structspdk__nvme__sgl__descriptor.html',1,'']]],
