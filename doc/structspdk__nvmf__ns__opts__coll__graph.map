@@ -1,4 +1,4 @@
 <map id="spdk_nvmf_ns_opts" name="spdk_nvmf_ns_opts">
-<area shape="rect" id="node1" title="NVMe&#45;oF target namespace creation options." alt="" coords="5,95,144,121"/>
-<area shape="rect" id="node2" href="$structspdk__uuid.html" title=" " alt="" coords="34,5,115,32"/>
+<area shape="rect" id="node1" title="NVMe&#45;oF target namespace creation options." alt="" coords="5,95,156,121"/>
+<area shape="rect" id="node2" href="$structspdk__uuid.html" title=" " alt="" coords="37,5,125,32"/>
 </map>

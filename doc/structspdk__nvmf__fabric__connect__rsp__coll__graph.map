@@ -1,4 +1,4 @@
 <map id="spdk_nvmf_fabric_connect_rsp" name="spdk_nvmf_fabric_connect_rsp">
-<area shape="rect" id="node1" title=" " alt="" coords="5,95,209,121"/>
-<area shape="rect" id="node2" href="$structspdk__nvme__status.html" title=" " alt="" coords="41,5,173,32"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,95,228,121"/>
+<area shape="rect" id="node2" href="$structspdk__nvme__status.html" title=" " alt="" coords="45,5,189,32"/>
 </map>

@@ -75,7 +75,7 @@ var bdev__module_8h =
     [ "spdk_bdev_unregister", "bdev__module_8h.html#a3d1fd8c9ecf144593313ea08cdeb8ca2", null ],
     [ "spdk_scsi_nvme_translate", "bdev__module_8h.html#ace2ce9b49ed9c51ff3c85075321164cc", null ],
     [ "STAILQ_HEAD", "bdev__module_8h.html#a94d1006ca1ddf32201a5463179d35a32", null ],
-    [ "TAILQ_HEAD", "bdev__module_8h.html#a400db1b2562970d33d8a9ef9ba8d04ff", null ],
     [ "TAILQ_HEAD", "bdev__module_8h.html#a0da20e00320e2b782d1717c8184d93a3", null ],
+    [ "TAILQ_HEAD", "bdev__module_8h.html#a400db1b2562970d33d8a9ef9ba8d04ff", null ],
     [ "TAILQ_HEAD", "bdev__module_8h.html#a1e12eb0cf1d416b15159529e194908a8", null ]
 ];

@@ -1,8 +1,8 @@
 var structspdk__nvmf__poll__group =
 [
     [ "TAILQ_ENTRY", "structspdk__nvmf__poll__group.html#a3430311481af0a81ccdf7952f601adc3", null ],
-    [ "TAILQ_HEAD", "structspdk__nvmf__poll__group.html#aeef7e086f1560a61c196d74660665c10", null ],
     [ "TAILQ_HEAD", "structspdk__nvmf__poll__group.html#a61e420c31fe45f08dd4efb43237f4884", null ],
+    [ "TAILQ_HEAD", "structspdk__nvmf__poll__group.html#aeef7e086f1560a61c196d74660665c10", null ],
     [ "destroy_cb_arg", "structspdk__nvmf__poll__group.html#a44051fa722dc9c61b9fed4d4a1ae8850", null ],
     [ "destroy_cb_fn", "structspdk__nvmf__poll__group.html#a83ac8e14a54372aa17c2c9ac4d12eceb", null ],
     [ "num_sgroups", "structspdk__nvmf__poll__group.html#ad1682c942edc972b61450cdb7e775445", null ],

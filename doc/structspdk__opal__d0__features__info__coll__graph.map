@@ -1,11 +1,11 @@
 <map id="spdk_opal_d0_features_info" name="spdk_opal_d0_features_info">
-<area shape="rect" id="node1" title=" " alt="" coords="543,173,727,200"/>
-<area shape="rect" id="node2" href="$structspdk__opal__d0__locking__feat.html" title=" " alt="" coords="239,5,417,32"/>
-<area shape="rect" id="node3" href="$structspdk__opal__d0__feat__hdr.html" title=" " alt="" coords="5,173,161,200"/>
-<area shape="rect" id="node4" href="$structspdk__opal__d0__single__user__mode__feat.html" title=" " alt="" coords="257,57,399,98"/>
-<area shape="rect" id="node5" href="$structspdk__opal__d0__v100__feat.html" title=" " alt="" coords="245,123,411,149"/>
-<area shape="rect" id="node6" href="$structspdk__opal__d0__v200__feat.html" title=" " alt="" coords="245,173,411,200"/>
-<area shape="rect" id="node7" href="$structspdk__opal__d0__datastore__feat.html" title=" " alt="" coords="232,224,424,251"/>
-<area shape="rect" id="node8" href="$structspdk__opal__d0__geo__feat.html" title=" " alt="" coords="249,275,407,301"/>
-<area shape="rect" id="node9" href="$structspdk__opal__d0__tper__feat.html" title=" " alt="" coords="248,325,408,352"/>
+<area shape="rect" id="node1" title=" " alt="" coords="591,173,795,200"/>
+<area shape="rect" id="node2" href="$structspdk__opal__d0__locking__feat.html" title=" " alt="" coords="258,5,457,32"/>
+<area shape="rect" id="node3" href="$structspdk__opal__d0__feat__hdr.html" title=" " alt="" coords="5,173,177,200"/>
+<area shape="rect" id="node4" href="$structspdk__opal__d0__single__user__mode__feat.html" title=" " alt="" coords="279,57,436,98"/>
+<area shape="rect" id="node5" href="$structspdk__opal__d0__v100__feat.html" title=" " alt="" coords="266,123,449,149"/>
+<area shape="rect" id="node6" href="$structspdk__opal__d0__v200__feat.html" title=" " alt="" coords="266,173,449,200"/>
+<area shape="rect" id="node7" href="$structspdk__opal__d0__datastore__feat.html" title=" " alt="" coords="251,224,464,251"/>
+<area shape="rect" id="node8" href="$structspdk__opal__d0__geo__feat.html" title=" " alt="" coords="270,275,445,301"/>
+<area shape="rect" id="node9" href="$structspdk__opal__d0__tper__feat.html" title=" " alt="" coords="269,325,446,352"/>
 </map>

@@ -1,8 +1,8 @@
 <map id="spdk_nvmf_transport_poll_group" name="spdk_nvmf_transport_poll_group">
-<area shape="rect" id="node1" title=" " alt="" coords="288,184,433,225"/>
-<area shape="rect" id="node5" href="$structspdk__nvmf__transport__ops.html" title=" " alt="" coords="207,303,381,329"/>
-<area shape="rect" id="node2" href="$structspdk__nvmf__poll__group.html" title=" " alt="" coords="285,95,437,121"/>
-<area shape="rect" id="node3" href="$structspdk__nvmf__poll__group__stat.html" title=" " alt="" coords="270,5,451,32"/>
-<area shape="rect" id="node4" href="$structspdk__nvmf__transport.html" title=" " alt="" coords="221,392,367,419"/>
-<area shape="rect" id="node6" href="$structspdk__nvmf__transport__opts.html" title=" " alt="" coords="5,303,183,329"/>
+<area shape="rect" id="node1" title=" " alt="" coords="312,184,472,225"/>
+<area shape="rect" id="node5" href="$structspdk__nvmf__transport__ops.html" title=" " alt="" coords="225,303,415,329"/>
+<area shape="rect" id="node2" href="$structspdk__nvmf__poll__group.html" title=" " alt="" coords="307,95,477,121"/>
+<area shape="rect" id="node3" href="$structspdk__nvmf__poll__group__stat.html" title=" " alt="" coords="291,5,493,32"/>
+<area shape="rect" id="node4" href="$structspdk__nvmf__transport.html" title=" " alt="" coords="240,392,400,419"/>
+<area shape="rect" id="node6" href="$structspdk__nvmf__transport__opts.html" title=" " alt="" coords="5,303,200,329"/>
 </map>

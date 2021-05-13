@@ -1,5 +1,5 @@
 <map id="spdk_nvmf_ctrlr_data" name="spdk_nvmf_ctrlr_data">
-<area shape="rect" id="node1" title="A subset of struct spdk_nvme_ctrlr_data that are emulated by a fabrics device." alt="" coords="103,109,250,136"/>
-<area shape="rect" id="node2" href="$structspdk__nvme__cdata__sgls.html" title="Identify Controller data SGL support." alt="" coords="5,13,164,39"/>
-<area shape="rect" id="node3" href="$structspdk__nvme__cdata__nvmf__specific.html" title="Identify Controller data NVMe over Fabrics&#45;specific fields." alt="" coords="188,5,352,47"/>
+<area shape="rect" id="node1" title="A subset of struct spdk_nvme_ctrlr_data that are emulated by a fabrics device." alt="" coords="111,109,273,136"/>
+<area shape="rect" id="node2" href="$structspdk__nvme__cdata__sgls.html" title="Identify Controller data SGL support." alt="" coords="5,13,179,39"/>
+<area shape="rect" id="node3" href="$structspdk__nvme__cdata__nvmf__specific.html" title="Identify Controller data NVMe over Fabrics&#45;specific fields." alt="" coords="203,5,384,47"/>
 </map>

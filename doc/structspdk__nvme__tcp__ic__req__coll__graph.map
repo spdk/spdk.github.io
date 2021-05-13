@@ -1,4 +1,4 @@
 <map id="spdk_nvme_tcp_ic_req" name="spdk_nvme_tcp_ic_req">
-<area shape="rect" id="node1" title="ICReq." alt="" coords="13,109,169,136"/>
-<area shape="rect" id="node2" href="$structspdk__nvme__tcp__common__pdu__hdr.html" title="Common NVMe/TCP PDU header." alt="" coords="5,5,176,47"/>
+<area shape="rect" id="node1" title="ICReq." alt="" coords="14,109,185,136"/>
+<area shape="rect" id="node2" href="$structspdk__nvme__tcp__common__pdu__hdr.html" title="Common NVMe/TCP PDU header." alt="" coords="5,5,193,47"/>
 </map>
