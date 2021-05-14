@@ -651,6 +651,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ac0c646dd18675c54ffcf834ce699658d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#ac0c646dd18675c54ffcf834ce699658d">spdk_nvme_ns_cmd_dataset_management</a> (struct spdk_nvme_ns *ns, struct spdk_nvme_qpair *qpair, uint32_t type, const struct <a class="el" href="structspdk__nvme__dsm__range.html">spdk_nvme_dsm_range</a> *ranges, uint16_t num_ranges, <a class="el" href="nvme_8h.html#a1786f9616afc773b20f752dc98ecd465">spdk_nvme_cmd_cb</a> cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:ac0c646dd18675c54ffcf834ce699658d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submit a data set management request to the specified NVMe namespace.  <a href="#ac0c646dd18675c54ffcf834ce699658d">More...</a><br /></td></tr>
 <tr class="separator:ac0c646dd18675c54ffcf834ce699658d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6604babca780495c910145f915d5ea2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#ad6604babca780495c910145f915d5ea2">spdk_nvme_ns_cmd_copy</a> (struct spdk_nvme_ns *ns, struct spdk_nvme_qpair *qpair, const struct <a class="el" href="structspdk__nvme__scc__source__range.html">spdk_nvme_scc_source_range</a> *ranges, uint16_t num_ranges, uint64_t dest_lba, <a class="el" href="nvme_8h.html#a1786f9616afc773b20f752dc98ecd465">spdk_nvme_cmd_cb</a> cb_fn, void *cb_arg)</td></tr>
+<tr class="memdesc:ad6604babca780495c910145f915d5ea2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submit a simple copy command request to the specified NVMe namespace.  <a href="#ad6604babca780495c910145f915d5ea2">More...</a><br /></td></tr>
+<tr class="separator:ad6604babca780495c910145f915d5ea2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aed0b134e140121bb9bd8664d4a43a5c6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#aed0b134e140121bb9bd8664d4a43a5c6">spdk_nvme_ns_cmd_flush</a> (struct spdk_nvme_ns *ns, struct spdk_nvme_qpair *qpair, <a class="el" href="nvme_8h.html#a1786f9616afc773b20f752dc98ecd465">spdk_nvme_cmd_cb</a> cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:aed0b134e140121bb9bd8664d4a43a5c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submit a flush request to the specified NVMe namespace.  <a href="#aed0b134e140121bb9bd8664d4a43a5c6">More...</a><br /></td></tr>
 <tr class="separator:aed0b134e140121bb9bd8664d4a43a5c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -5213,6 +5216,81 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_map_prps</b>
 
 </div>
 </div>
+<a id="ad6604babca780495c910145f915d5ea2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad6604babca780495c910145f915d5ea2">&#9670;&nbsp;</a></span>spdk_nvme_ns_cmd_copy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_nvme_ns_cmd_copy </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_nvme_ns *&#160;</td>
+          <td class="paramname"><em>ns</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct spdk_nvme_qpair *&#160;</td>
+          <td class="paramname"><em>qpair</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const struct <a class="el" href="structspdk__nvme__scc__source__range.html">spdk_nvme_scc_source_range</a> *&#160;</td>
+          <td class="paramname"><em>ranges</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>num_ranges</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>dest_lba</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="nvme_8h.html#a1786f9616afc773b20f752dc98ecd465">spdk_nvme_cmd_cb</a>&#160;</td>
+          <td class="paramname"><em>cb_fn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>cb_arg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Submit a simple copy command request to the specified NVMe namespace. </p>
+<p>The command is submitted to a qpair allocated by <a class="el" href="nvme_8h.html#a13f745d239dab9b8f934fae2ad4984a2" title="Allocate an I/O queue pair (submission and completion queue).">spdk_nvme_ctrlr_alloc_io_qpair()</a>. The user must ensure that only one thread submits I/O on a given qpair at any given time.</p>
+<p>This is a convenience wrapper that will automatically allocate and construct the correct data buffers. Therefore, ranges does not need to be allocated from pinned memory and can be placed on the stack. If a higher performance, zero-copy version of SCC is required, simply build and submit a raw command using <a class="el" href="nvme_8h.html#a1e3def668122e76abbfb74305f118291" title="Send the given NVM I/O command to the NVMe controller.">spdk_nvme_ctrlr_cmd_io_raw()</a>.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ns</td><td>NVMe namespace to submit the SCC request </td></tr>
+    <tr><td class="paramname">qpair</td><td>I/O queue pair to submit the request </td></tr>
+    <tr><td class="paramname">ranges</td><td>An array of <a class="el" href="structspdk__nvme__scc__source__range.html">spdk_nvme_scc_source_range</a> elements describing the LBAs to operate on. </td></tr>
+    <tr><td class="paramname">num_ranges</td><td>The number of elements in the ranges array. </td></tr>
+    <tr><td class="paramname">dest_lba</td><td>Destination LBA to copy the data. </td></tr>
+    <tr><td class="paramname">cb_fn</td><td>Callback function to invoke when the I/O is completed </td></tr>
+    <tr><td class="paramname">cb_arg</td><td>Argument to pass to the callback function</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 if successfully submitted, negated errnos on the following error conditions: -ENOMEM: The request cannot be allocated. -EINVAL: Invalid ranges. -ENXIO: The qpair is failed at the transport level. </dd></dl>
+
+</div>
+</div>
 <a id="ac0c646dd18675c54ffcf834ce699658d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac0c646dd18675c54ffcf834ce699658d">&#9670;&nbsp;</a></span>spdk_nvme_ns_cmd_dataset_management()</h2>
 
@@ -8465,7 +8543,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_map_prps</b>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
 <ul>
-        <li class="footer">Generated on Thu May 13 2021 04:04:12 for SPDK by
+        <li class="footer">Generated on Fri May 14 2021 04:08:32 for SPDK by
         <a href="http://www.doxygen.org/index.html">doxygen</a> 1.8.15 </li>
 </ul>
 </div>
