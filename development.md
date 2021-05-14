@@ -341,14 +341,8 @@ sudo gdb ./spdk/test/unit/lib/bdev/bdev.c/bdev_ut
 <a id="local_vhost"></a>
 ### vhost Tests
 
-The vhost tests under `test/vhost` require the presence of a virtual machine image on the host machine. We have made a tarball containing a working vm image
-that is available for download [here](https://ci.spdk.io/download/test_resources/vhost_vm_image.tar.gz). Please feel free to
-download and use this image as the guest when running the vhost tests locally. The credentials are below:
-
-~~~{.sh}
-uname: root
-pass: root
-~~~
+The vhost tests under `test/vhost` require the presence of a virtual machine image on the host machine.
+Please, see the [Virtual Test Configuration](https://github.com/spdk/spdk/blob/master/test/common/config/README.md) for steps to prepare it.
 
 <a id="review"></a>
 ## Code Review
