@@ -97,6 +97,8 @@ v21.07: (Upcoming Release)</h1>
 <p>Added <code>min_cntlid</code> and <code>max_cntlid</code> to <code>nvmf_create_subsystem</code> to limit the controller ID range.</p>
 <h2>nvme</h2>
 <p>Added a new function <code>spdk_nvme_ns_cmd_copy</code> to submit a Simple Copy Command to a Namespace.</p>
+<h2>rpc</h2>
+<p>New RPC <code>bdev_rbd_register_cluster</code> and <code>bdev_rbd_unregister_cluster</code> was added, it allows to create and delete the rados object cluster, then users can choose the cluster to create related rbd device.</p>
 <h1><a class="anchor" id="changelog-v21-04"></a>
 v21.04:</h1>
 <h2>accel</h2>
@@ -1264,7 +1266,7 @@ v16.06: NVMf userspace target</h1>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
 <ul>
-        <li class="footer">Generated on Sun May 16 2021 04:04:04 for SPDK by
+        <li class="footer">Generated on Mon May 17 2021 04:04:18 for SPDK by
         <a href="http://www.doxygen.org/index.html">doxygen</a> 1.8.15 </li>
 </ul>
 </div>

@@ -210,6 +210,8 @@ var user_guides =
         [ "bdev_zone_block_delete", "jsonrpc.html#rpc_bdev_zone_block_delete", null ],
         [ "bdev_nvme_apply_firmware", "jsonrpc.html#rpc_bdev_nvme_apply_firmware", null ],
         [ "bdev_nvme_get_transport_statistics", "jsonrpc.html#rpc_bdev_nvme_get_transport_statistics", null ],
+        [ "bdev_rbd_register_cluster", "jsonrpc.html#rpc_bdev_rbd_register_cluster", null ],
+        [ "bdev_rbd_unregister_cluster", "jsonrpc.html#rpc_bdev_rbd_unregister_cluster", null ],
         [ "bdev_rbd_create", "jsonrpc.html#rpc_bdev_rbd_create", null ],
         [ "bdev_rbd_delete", "jsonrpc.html#rpc_bdev_rbd_delete", null ],
         [ "bdev_rbd_resize", "jsonrpc.html#rpc_bdev_rbd_resize", null ],
