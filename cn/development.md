@@ -256,12 +256,7 @@ sudo gdb ./spdk/test/unit/lib/bdev/bdev.c/bdev_ut
 
 ### vhost测试
 
-vhost相关测试在`test/vhost`目录下，同时需要在主机上有个虚拟机的image。我们在[这里](https://ci.spdk.io/download/test_resources/vhost_vm_image.tar.gz)准备了一个可供下载和工作的虚拟机image。欢迎下载，使用它作为Guest来进行本地vhost测试。相应的账户信息如下：
-
-~~~{.sh}
-uname: root
-pass: root
-~~~
+vhost相关测试在`test/vhost`目录下，同时需要在主机上有个虚拟机的image。我们在[这里](https://github.com/spdk/spdk/blob/master/test/common/config/README.md)准备了详细文档供参考来准备环境。
 
 <a id="review"></a>
 ## 代码评审
