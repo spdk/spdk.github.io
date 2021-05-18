@@ -8,6 +8,7 @@ var searchData=
   ['zdev',['zdev',['../structspdk__nvme__zns__zone__desc.html#a4dcb54aaf80f7f8a14853c209e858e46',1,'spdk_nvme_zns_zone_desc']]],
   ['zfc',['zfc',['../structspdk__nvme__zns__zone__desc.html#a672fa0f469cdf75a2f3bb86dfec8ac3c',1,'spdk_nvme_zns_zone_desc']]],
   ['zfr',['zfr',['../structspdk__nvme__zns__zone__desc.html#ab2b9b09200da4a404cf84597f3490a54',1,'spdk_nvme_zns_zone_desc']]],
+  ['zipf_2eh',['zipf.h',['../zipf_8h.html',1,'']]],
   ['zoc',['zoc',['../structspdk__nvme__zns__ns__data.html#a6ba2a36b755134b3e8ad763919be4613',1,'spdk_nvme_zns_ns_data']]],
   ['zone_5fsize',['zone_size',['../structspdk__bdev.html#a054323b9bb1299a58497ca668d52b5a5',1,'spdk_bdev']]],
   ['zoned',['zoned',['../structspdk__bdev.html#aba3b4d21418e7f36047040c43d3e5976',1,'spdk_bdev']]],

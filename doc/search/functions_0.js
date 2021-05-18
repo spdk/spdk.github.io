@@ -1066,6 +1066,9 @@ var searchData=
   ['spdk_5fxattr_5fnames_5ffree',['spdk_xattr_names_free',['../blob_8h.html#ae17f3a52d52d9c3e9382cbcfae042c0a',1,'blob.h']]],
   ['spdk_5fxattr_5fnames_5fget_5fcount',['spdk_xattr_names_get_count',['../blob_8h.html#a113d71117843062da8a24906296b37a6',1,'blob.h']]],
   ['spdk_5fxattr_5fnames_5fget_5fname',['spdk_xattr_names_get_name',['../blob_8h.html#ad0d58654483ac10df65d4b55356eff84',1,'blob.h']]],
+  ['spdk_5fzipf_5fcreate',['spdk_zipf_create',['../zipf_8h.html#a3a154549b87e9aef0cdbb0363c94c491',1,'zipf.h']]],
+  ['spdk_5fzipf_5ffree',['spdk_zipf_free',['../zipf_8h.html#ae5169bdd1cd00263997198f572f14ee7',1,'zipf.h']]],
+  ['spdk_5fzipf_5fgenerate',['spdk_zipf_generate',['../zipf_8h.html#a1d0c4163406557239aefa1ab446c2422',1,'zipf.h']]],
   ['spdk_5fzmalloc',['spdk_zmalloc',['../env_8h.html#a49ad245dae3554cf96d62e9b2b0b1596',1,'env.h']]],
   ['stailq_5fentry',['STAILQ_ENTRY',['../structspdk__bdev__io_1_1____bdev__io__internal__fields.html#aa01c2efabe47df9c745086736f6f64ef',1,'spdk_bdev_io::__bdev_io_internal_fields']]]
 ];

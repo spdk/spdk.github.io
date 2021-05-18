@@ -144,5 +144,9 @@ var NAVTREEINDEX27 =
 "vmd_8h.html#acbf78271da1326a9e70fe8bb0aeb6a75a6dc9e7f963285aa701836154079dbd73":[14,0,61,1,0],
 "vmd_8h.html#acbf78271da1326a9e70fe8bb0aeb6a75ab287491f3df8293dd73d6bc74ddc51a0":[14,0,61,1,4],
 "vmd_8h.html#acbf78271da1326a9e70fe8bb0aeb6a75ad898705795b34aeb83a172297709c1a9":[14,0,61,1,3],
-"vmd_8h.html#acbf78271da1326a9e70fe8bb0aeb6a75aef274f94efbc0c85819a635dd58860a7":[14,0,61,1,1]
+"vmd_8h.html#acbf78271da1326a9e70fe8bb0aeb6a75aef274f94efbc0c85819a635dd58860a7":[14,0,61,1,1],
+"zipf_8h.html":[14,0,62],
+"zipf_8h.html#a1d0c4163406557239aefa1ab446c2422":[14,0,62,2],
+"zipf_8h.html#a3a154549b87e9aef0cdbb0363c94c491":[14,0,62,0],
+"zipf_8h.html#ae5169bdd1cd00263997198f572f14ee7":[14,0,62,1]
 };
