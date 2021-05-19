@@ -1214,15 +1214,22 @@ bdev_rbd_create</h2>
 <td class="markdownTableBodyNone">block_size  </td><td class="markdownTableBodyNone">Required  </td><td class="markdownTableBodyNone">number  </td><td class="markdownTableBodyNone">Block size   </td></tr>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">config  </td><td class="markdownTableBodyNone">Optional  </td><td class="markdownTableBodyNone">string map  </td><td class="markdownTableBodyNone">Explicit librados configuration   </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">cluster_name  </td><td class="markdownTableBodyNone">Optional  </td><td class="markdownTableBodyNone">string  </td><td class="markdownTableBodyNone">Rados cluster object name created in this module.   </td></tr>
 </table>
 <p>If no config is specified, Ceph configuration files must exist with all relevant settings for accessing the pool. If a config map is passed, the configuration files are ignored and instead all key/value pairs are passed to rados_conf_set to configure cluster access. In practice, "mon_host" (= list of monitor address+port) and "key" (= the secret key stored in Ceph keyrings) are enough.</p>
 <p>When accessing the image as some user other than "admin" (the default), the "user_id" has to be set.</p>
+<p>If provided with cluster_name option, it will use the Rados cluster object referenced by the name (created by bdev_rbd_register_cluster RPC) and ignores "user_id + config" combination to create its own Rados cluster.</p>
 <h3>Result</h3>
 <p>Name of newly created bdev.</p>
 <h3>Example</h3>
 <p>Example request with <code>key</code> from <code>/etc/ceph/ceph.client.admin.keyring</code>:</p>
 <div class="fragment"><div class="line">{</div><div class="line">  &quot;params&quot;: {</div><div class="line">    &quot;pool_name&quot;: &quot;rbd&quot;,</div><div class="line">    &quot;rbd_name&quot;: &quot;foo&quot;,</div><div class="line">    &quot;config&quot;: {</div><div class="line">      &quot;mon_host&quot;: &quot;192.168.7.1:6789,192.168.7.2:6789&quot;,</div><div class="line">      &quot;key&quot;: &quot;AQDwf8db7zR1GRAA5k7NKXjS5S5V4mntwUDnGQ==&quot;,</div><div class="line">    }</div><div class="line">    &quot;block_size&quot;: 4096</div><div class="line">  },</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;method&quot;: &quot;bdev_rbd_create&quot;,</div><div class="line">  &quot;id&quot;: 1</div><div class="line">}</div></div><!-- fragment --><p>Example response:</p>
-<div class="fragment"><div class="line">response:</div><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: &quot;Ceph0&quot;</div><div class="line">}</div></div><!-- fragment --><h2><a class="anchor" id="rpc_bdev_rbd_delete"></a>
+<div class="fragment"><div class="line">response:</div><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: &quot;Ceph0&quot;</div><div class="line">}</div></div><!-- fragment --><p>Example request with <code>cluster_name</code>:</p>
+<p>~~ { "params": { "pool_name": "rbd", "rbd_name": "foo", "block_size": 4096, "cluster_name": "rbd_cluster" }, "jsonrpc": "2.0", "method": "bdev_rbd_create", "id": 1 } ~~</p>
+<p>Example response:</p>
+<p>~~ response: { "jsonrpc": "2.0", "id": 1, "result": "Ceph0" } ~~</p>
+<h2><a class="anchor" id="rpc_bdev_rbd_delete"></a>
 bdev_rbd_delete</h2>
 <p>Delete <a class="el" href="bdev.html#bdev_config_rbd">Ceph RBD</a> bdev</p>
 <p>This method is available only if SPDK was build with Ceph RBD support.</p>
@@ -3539,7 +3546,7 @@ spdk_get_version</h2>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
 <ul>
-        <li class="footer">Generated on Tue May 18 2021 04:04:11 for SPDK by
+        <li class="footer">Generated on Wed May 19 2021 04:06:22 for SPDK by
         <a href="http://www.doxygen.org/index.html">doxygen</a> 1.8.15 </li>
 </ul>
 </div>

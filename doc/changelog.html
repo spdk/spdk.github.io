@@ -91,14 +91,18 @@ $(document).ready(function(){initNavTree('changelog.html','');});
 <div class="contents">
 <div class="textblock"><h1><a class="anchor" id="changelog-v21-07"></a>
 v21.07: (Upcoming Release)</h1>
+<h2>dpdk</h2>
+<p>Updated DPDK submodule to DPDK 21.02.</p>
 <h2>idxd</h2>
 <p>Remove the probe_cb parameter in spdk_idxd_probe function. And remove the definition of spdk_idxd_probe_cb function pointer. It should be implemented in idxd_user.c.</p>
 <h2>nvmf</h2>
 <p>Added <code>min_cntlid</code> and <code>max_cntlid</code> to <code>nvmf_create_subsystem</code> to limit the controller ID range.</p>
+<p><code>spdk_nvmf_request_get_buffers_multi</code> API is removed.</p>
 <h2>nvme</h2>
 <p>Added a new function <code>spdk_nvme_ns_cmd_copy</code> to submit a Simple Copy Command to a Namespace.</p>
 <h2>rpc</h2>
 <p>New RPC <code>bdev_rbd_register_cluster</code> and <code>bdev_rbd_unregister_cluster</code> was added, it allows to create and delete the rados object cluster, then users can choose the cluster to create related rbd device.</p>
+<p>Revised <code>bdev_rbd_create</code> parameter, it allows to use an optional parameter &ndash;cluster-name to create a rbd bdev with an already registered Rados Cluster Object.</p>
 <h1><a class="anchor" id="changelog-v21-04"></a>
 v21.04:</h1>
 <h2>accel</h2>
@@ -1266,7 +1270,7 @@ v16.06: NVMf userspace target</h1>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
 <ul>
-        <li class="footer">Generated on Tue May 18 2021 04:04:11 for SPDK by
+        <li class="footer">Generated on Wed May 19 2021 04:06:22 for SPDK by
         <a href="http://www.doxygen.org/index.html">doxygen</a> 1.8.15 </li>
 </ul>
 </div>
