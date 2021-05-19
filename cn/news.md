@@ -38,6 +38,9 @@ toc:
 ### [可怕！数据库竟然打破安迪-比尔定律](https://www.cnblogs.com/qcloud1001/p/9087911.html)
 > “ 对于单块的SSD Disk，相比传统的Direct IO方式，采用SPDK的直接数据传输无论在顺序读还是随机读模式都有超过一倍的性能提升，对比depth为1时的写性能，无论是随机写还是顺序写都有30%的性能提升。”
 
+## 腾讯云
+### [腾讯云存储发布三个性能第一新品，让高性能应用轻松上云](https://mp.weixin.qq.com/s?__biz=MjM5NDQyNDQ0Mw==&mid=2652396562&idx=1&sn=6da8907f5bdcb4f73dc7307a179d516b&chksm=bd6b0f068a1c86108a7401cb1cb5a56a63e8a9adf42aca59121c21a11685768c4a06a5543495&mpshare=1&scene=1&srcid=051836Xb2aZWt4X85oZP4k8G&sharer_sharetime=1621389350055&sharer_shareid=bce63ba0449f498eb13c109c5eaef06d&exportkey=A2I9cCxluXFCYkF8NqacmEM%3D&pass_ticket=BB1zGDOlf9tuiEOfomZl%2Bns5Dw6zh5OZZ7%2Fm90M4mBpsRWENC%2BaGtiJq7XyxXwnT&wx_header=0#rd)
+> “当前，腾讯云的快，主要有几大因素，一是硬件使用了RDMA、持久化内存；同时，软件上采用SPDK技术、并优化链路实现零拷贝技术；另外，EC纠删码和无损压缩技术也保持了成本的优势。”
 
 ## 双11
 ### [浅谈分布式存储系统Pangu2.0——它让双11运维变得智能起来](https://yq.aliyun.com/articles/291207)
