@@ -6,7 +6,8 @@ var general =
         [ "Events", "event.html#event_component_events", null ],
         [ "Reactors", "event.html#event_component_reactors", null ],
         [ "Pollers", "event.html#event_component_pollers", null ],
-        [ "Application Framework", "event.html#event_component_app", null ]
+        [ "Application Framework", "event.html#event_component_app", null ],
+        [ "Custom shutdown callback", "event.html#event_component_shutdown", null ]
       ] ]
     ] ],
     [ "Scheduler", "scheduler.html", null ],

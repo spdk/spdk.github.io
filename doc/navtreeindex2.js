@@ -227,6 +227,7 @@ var NAVTREEINDEX2 =
 "event.html#event_component_events":[5,0,1,0],
 "event.html#event_component_pollers":[5,0,1,2],
 "event.html#event_component_reactors":[5,0,1,1],
+"event.html#event_component_shutdown":[5,0,1,4],
 "event.html#event_components":[5,0,1],
 "event.html#event_design":[5,0,0],
 "event_8h.html":[14,0,20],
@@ -248,6 +249,5 @@ var NAVTREEINDEX2 =
 "event_8h.html#aa29c1f045de7ddaaba7fbd797edde6f0a3486f25aaddce81476c35d398ca7230c":[14,0,20,7,2],
 "event_8h.html#aa6e70166c6ac9e7e7399d1b140979d29":[14,0,20,20],
 "event_8h.html#ab6ea643e128d25d5ac40e29b76d94c43":[14,0,20,8],
-"event_8h.html#ac64ac17f456e8ac388d959c2e7a4a13b":[14,0,20,10],
-"event_8h.html#acc52e8c68c8ccec4640e14f687157afe":[14,0,20,12]
+"event_8h.html#ac64ac17f456e8ac388d959c2e7a4a13b":[14,0,20,10]
 };
