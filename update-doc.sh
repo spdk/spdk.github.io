@@ -35,7 +35,7 @@ doc_version=$(cd $repo; git rev-parse HEAD)
 cp _doc_header.html $repo/doc/header.html
 cp _doc_footer.html $repo/doc/footer.html
 cp css/spdk.css $repo/doc/spdk.css
-cp Doxyfile $repo/doc/Doxyfile
+sed -i 's/^HTML_EXTRA_STYLESHEET.*/HTML_EXTRA_STYLESHEET  = spdk.css/' $repo/doc/Doxyfile
 
 (cd $repo/doc; make clean; make)
 cp js/navtree.js $repo/doc/output/html
