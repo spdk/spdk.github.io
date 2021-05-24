@@ -135,9 +135,15 @@ struct <a class="el" href="structspdk__nvmf__qpair.html">spdk_nvmf_qpair</a> *&#
 <tr class="memitem:ad45b579554eaa2a8ab6bad16dd077457"><td class="memItemLeft" align="right" valign="top"><a id="ad45b579554eaa2a8ab6bad16dd077457"></a>
 uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>length</b></td></tr>
 <tr class="separator:ad45b579554eaa2a8ab6bad16dd077457"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6b037c8915d678872f7e3e6535840b3a"><td class="memItemLeft" align="right" valign="top"><a id="a6b037c8915d678872f7e3e6535840b3a"></a>
-enum <a class="el" href="nvme__spec_8h.html#adbe38e042bb939183ed8fd5c1685b2fc">spdk_nvme_data_transfer</a>&#160;</td><td class="memItemRight" valign="bottom"><b>xfer</b></td></tr>
-<tr class="separator:a6b037c8915d678872f7e3e6535840b3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d7a7b73198c6e8d4d892b446ef21eab"><td class="memItemLeft" align="right" valign="top"><a id="a6d7a7b73198c6e8d4d892b446ef21eab"></a>
+uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>xfer</b></td></tr>
+<tr class="separator:a6d7a7b73198c6e8d4d892b446ef21eab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8435a0e6965e3ed10a84c8e000226dc8"><td class="memItemLeft" align="right" valign="top"><a id="a8435a0e6965e3ed10a84c8e000226dc8"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>data_from_pool</b></td></tr>
+<tr class="separator:a8435a0e6965e3ed10a84c8e000226dc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95ae1e6f9092297556824f85b4242965"><td class="memItemLeft" align="right" valign="top"><a id="a95ae1e6f9092297556824f85b4242965"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>dif_enabled</b></td></tr>
+<tr class="separator:a95ae1e6f9092297556824f85b4242965"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad4050a61b10350d8839441d913ee6d60"><td class="memItemLeft" align="right" valign="top"><a id="ad4050a61b10350d8839441d913ee6d60"></a>
 void *&#160;</td><td class="memItemRight" valign="bottom"><b>data</b></td></tr>
 <tr class="separator:ad4050a61b10350d8839441d913ee6d60"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -147,24 +153,24 @@ union <a class="el" href="unionnvmf__h2c__msg.html">nvmf_h2c_msg</a> *&#160;</td
 <tr class="memitem:a4af9520e47b3e49ecfdc7e569ce1772f"><td class="memItemLeft" align="right" valign="top"><a id="a4af9520e47b3e49ecfdc7e569ce1772f"></a>
 union <a class="el" href="unionnvmf__c2h__msg.html">nvmf_c2h_msg</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>rsp</b></td></tr>
 <tr class="separator:a4af9520e47b3e49ecfdc7e569ce1772f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a301733c6aeeb72f33c15a760c8f0b018"><td class="memItemLeft" align="right" valign="top"><a id="a301733c6aeeb72f33c15a760c8f0b018"></a>
-void *&#160;</td><td class="memItemRight" valign="bottom"><b>buffers</b> [NVMF_REQ_MAX_BUFFERS]</td></tr>
-<tr class="separator:a301733c6aeeb72f33c15a760c8f0b018"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abd8a5aa92bdc3a3b98f2eb21f21e03b3"><td class="memItemLeft" align="right" valign="top"><a id="abd8a5aa92bdc3a3b98f2eb21f21e03b3"></a>
-struct iovec&#160;</td><td class="memItemRight" valign="bottom"><b>iov</b> [NVMF_REQ_MAX_BUFFERS]</td></tr>
-<tr class="separator:abd8a5aa92bdc3a3b98f2eb21f21e03b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae405604e4160ec1916926c146b3a852e"><td class="memItemLeft" align="right" valign="top"><a id="ae405604e4160ec1916926c146b3a852e"></a>
+uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>timeout_tsc</b></td></tr>
+<tr class="separator:ae405604e4160ec1916926c146b3a852e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0ddf1cbaf2632b4621befe77f0fd4497"><td class="memItemLeft" align="right" valign="top"><a id="a0ddf1cbaf2632b4621befe77f0fd4497"></a>
 uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>iovcnt</b></td></tr>
 <tr class="separator:a0ddf1cbaf2632b4621befe77f0fd4497"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8435a0e6965e3ed10a84c8e000226dc8"><td class="memItemLeft" align="right" valign="top"><a id="a8435a0e6965e3ed10a84c8e000226dc8"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>data_from_pool</b></td></tr>
-<tr class="separator:a8435a0e6965e3ed10a84c8e000226dc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a84e4ee7737756949d0d93a970bddc4ea"><td class="memItemLeft" align="right" valign="top"><a id="a84e4ee7737756949d0d93a970bddc4ea"></a>
-struct <a class="el" href="structspdk__bdev__io__wait__entry.html">spdk_bdev_io_wait_entry</a>&#160;</td><td class="memItemRight" valign="bottom"><b>bdev_io_wait</b></td></tr>
-<tr class="separator:a84e4ee7737756949d0d93a970bddc4ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd8a5aa92bdc3a3b98f2eb21f21e03b3"><td class="memItemLeft" align="right" valign="top"><a id="abd8a5aa92bdc3a3b98f2eb21f21e03b3"></a>
+struct iovec&#160;</td><td class="memItemRight" valign="bottom"><b>iov</b> [NVMF_REQ_MAX_BUFFERS]</td></tr>
+<tr class="separator:abd8a5aa92bdc3a3b98f2eb21f21e03b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a301733c6aeeb72f33c15a760c8f0b018"><td class="memItemLeft" align="right" valign="top"><a id="a301733c6aeeb72f33c15a760c8f0b018"></a>
+void *&#160;</td><td class="memItemRight" valign="bottom"><b>buffers</b> [NVMF_REQ_MAX_BUFFERS]</td></tr>
+<tr class="separator:a301733c6aeeb72f33c15a760c8f0b018"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae30b6b5bc1ef629f68f6bc5596895f02"><td class="memItemLeft" align="right" valign="top"><a id="ae30b6b5bc1ef629f68f6bc5596895f02"></a>
 struct <a class="el" href="structspdk__nvmf__dif__info.html">spdk_nvmf_dif_info</a>&#160;</td><td class="memItemRight" valign="bottom"><b>dif</b></td></tr>
 <tr class="separator:ae30b6b5bc1ef629f68f6bc5596895f02"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84e4ee7737756949d0d93a970bddc4ea"><td class="memItemLeft" align="right" valign="top"><a id="a84e4ee7737756949d0d93a970bddc4ea"></a>
+struct <a class="el" href="structspdk__bdev__io__wait__entry.html">spdk_bdev_io_wait_entry</a>&#160;</td><td class="memItemRight" valign="bottom"><b>bdev_io_wait</b></td></tr>
+<tr class="separator:a84e4ee7737756949d0d93a970bddc4ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a79045574915e8733d0ca739231601a0b"><td class="memItemLeft" align="right" valign="top"><a id="a79045574915e8733d0ca739231601a0b"></a>
 spdk_nvmf_nvme_passthru_cmd_cb&#160;</td><td class="memItemRight" valign="bottom"><b>cmd_cb_fn</b></td></tr>
 <tr class="separator:a79045574915e8733d0ca739231601a0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -177,9 +183,6 @@ struct <a class="el" href="structspdk__nvmf__request.html">spdk_nvmf_request</a>
 <tr class="memitem:ac6ddb04138ba386b68d2355fa9b55430"><td class="memItemLeft" align="right" valign="top"><a id="ac6ddb04138ba386b68d2355fa9b55430"></a>
 struct spdk_poller *&#160;</td><td class="memItemRight" valign="bottom"><b>poller</b></td></tr>
 <tr class="separator:ac6ddb04138ba386b68d2355fa9b55430"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae405604e4160ec1916926c146b3a852e"><td class="memItemLeft" align="right" valign="top"><a id="ae405604e4160ec1916926c146b3a852e"></a>
-uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>timeout_tsc</b></td></tr>
-<tr class="separator:ae405604e4160ec1916926c146b3a852e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li><a class="el" href="nvmf__transport_8h.html">nvmf_transport.h</a></li>
@@ -190,7 +193,7 @@ uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>timeout_tsc</b></
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
 <ul>
-        <li class="footer">Generated on Sun May 23 2021 04:04:20 for SPDK by
+        <li class="footer">Generated on Mon May 24 2021 04:04:32 for SPDK by
         <a href="http://www.doxygen.org/index.html">doxygen</a> 1.8.15 </li>
 </ul>
 </div>
