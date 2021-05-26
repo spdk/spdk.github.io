@@ -100,15 +100,16 @@ Collaboration diagram for spdk_bdev::__bdev_internal_fields:</div>
 <div class="dyncontent">
 <div class="center"><img src="structspdk__bdev_1_1____bdev__internal__fields__coll__graph.png" border="0" usemap="#spdk__bdev_1_1____bdev__internal__fields_coll__map" alt="Collaboration graph"/></div>
 <map name="spdk__bdev_1_1____bdev__internal__fields_coll__map" id="spdk__bdev_1_1____bdev__internal__fields_coll__map">
-<area shape="rect"  title="Fields that are used internally by the bdev subsystem." alt="" coords="583,166,785,207"/>
-<area shape="rect"  href="structspdk__bdev.html" title=" " alt="" coords="908,125,1000,152"/>
-<area shape="rect"  href="structspdk__bdev__module.html" title="Block device module." alt="" coords="289,113,437,140"/>
-<area shape="rect"  href="structspdk__bdev__module_1_1____bdev__module__internal__fields.html" title="Fields that are used by the internal bdev subsystem." alt="" coords="5,99,187,155"/>
-<area shape="rect"  href="structspdk__bdev__io__stat.html" title=" " alt="" coords="292,179,435,205"/>
-<area shape="rect"  href="structspdk__bdev__io.html" title=" " alt="" coords="1113,111,1224,137"/>
-<area shape="rect"  href="structspdk__bdev__io_1_1____bdev__io__internal__fields.html" title="Fields that are used internally by the bdev subsystem." alt="" coords="1327,58,1492,99"/>
-<area shape="rect"  href="structspdk__nvme__cmd.html" title=" " alt="" coords="888,75,1020,101"/>
-<area shape="rect"  href="structspdk__io__channel.html" title="Represents a per&#45;thread channel for accessing an I/O device." alt="" coords="889,11,1019,37"/>
+<area shape="rect"  title="Fields that are used internally by the bdev subsystem." alt="" coords="583,23,785,65"/>
+<area shape="rect"  href="structspdk__bdev.html" title=" " alt="" coords="908,99,1000,125"/>
+<area shape="rect"  href="structspdk__bdev__module.html" title="Block device module." alt="" coords="289,89,437,116"/>
+<area shape="rect"  href="structspdk__bdev__module_1_1____bdev__module__internal__fields.html" title="Fields that are used by the internal bdev subsystem." alt="" coords="5,75,187,131"/>
+<area shape="rect"  href="structspdk__bdev__name.html" title=" " alt="" coords="1113,11,1249,37"/>
+<area shape="rect"  href="structspdk__bdev__io.html" title=" " alt="" coords="1126,156,1237,183"/>
+<area shape="rect"  href="structspdk__bdev__io__stat.html" title=" " alt="" coords="292,20,435,47"/>
+<area shape="rect"  href="structspdk__bdev__io_1_1____bdev__io__internal__fields.html" title="Fields that are used internally by the bdev subsystem." alt="" coords="1352,194,1517,235"/>
+<area shape="rect"  href="structspdk__nvme__cmd.html" title=" " alt="" coords="888,156,1020,183"/>
+<area shape="rect"  href="structspdk__io__channel.html" title="Represents a per&#45;thread channel for accessing an I/O device." alt="" coords="889,225,1019,252"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -190,6 +191,10 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>histogram_in_progress
 <tr class="memitem:a293999636600108bc77ef672b62bf4f1"><td class="memItemLeft" align="right" valign="top">lba_range_tailq_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev_1_1____bdev__internal__fields.html#a293999636600108bc77ef672b62bf4f1">pending_locked_ranges</a></td></tr>
 <tr class="memdesc:a293999636600108bc77ef672b62bf4f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pending locked ranges for this bdev.  <a href="#a293999636600108bc77ef672b62bf4f1">More...</a><br /></td></tr>
 <tr class="separator:a293999636600108bc77ef672b62bf4f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04441c7b5f5cd2422a01df4cacf97a7b"><td class="memItemLeft" align="right" valign="top"><a id="a04441c7b5f5cd2422a01df4cacf97a7b"></a>
+struct <a class="el" href="structspdk__bdev__name.html">spdk_bdev_name</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev_1_1____bdev__internal__fields.html#a04441c7b5f5cd2422a01df4cacf97a7b">bdev_name</a></td></tr>
+<tr class="memdesc:a04441c7b5f5cd2422a01df4cacf97a7b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bdev name used for quick lookup. <br /></td></tr>
+<tr class="separator:a04441c7b5f5cd2422a01df4cacf97a7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Fields that are used internally by the bdev subsystem. </p>
@@ -358,7 +363,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>histogram_in_progress
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
 <ul>
-        <li class="footer">Generated on Tue May 25 2021 04:04:21 for SPDK by
+        <li class="footer">Generated on Wed May 26 2021 04:04:57 for SPDK by
         <a href="http://www.doxygen.org/index.html">doxygen</a> 1.8.15 </li>
 </ul>
 </div>

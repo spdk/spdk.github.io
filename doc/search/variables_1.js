@@ -2,6 +2,7 @@ var searchData=
 [
   ['backing_5fio_5funit_5fsize',['backing_io_unit_size',['../structspdk__reduce__vol__params.html#a8702d36eea6d40a62076a434e91aa3ca',1,'spdk_reduce_vol_params']]],
   ['bdev',['bdev',['../structspdk__bdev__io.html#a096518d708e224b91e03897b79431afd',1,'spdk_bdev_io']]],
+  ['bdev_5fname',['bdev_name',['../structspdk__bdev_1_1____bdev__internal__fields.html#a04441c7b5f5cd2422a01df4cacf97a7b',1,'spdk_bdev::__bdev_internal_fields']]],
   ['bio_5fcb_5farg',['bio_cb_arg',['../structspdk__bdev__io.html#ac70f00f4fb59c7d646dcfd6d97134a75',1,'spdk_bdev_io']]],
   ['bio_5fto_5fabort',['bio_to_abort',['../structspdk__bdev__io.html#a56b77cacd3d1ac83d081fec94b74e03a',1,'spdk_bdev_io']]],
   ['bir',['bir',['../unionspdk__nvme__cmbloc__register.html#a7a72b6bb85d7c446b0ad55f74d91e13a',1,'spdk_nvme_cmbloc_register::bir()'],['../unionspdk__nvme__pmrcap__register.html#ac0333fd6c812b2b3876d6d5d14f788de',1,'spdk_nvme_pmrcap_register::bir()']]],

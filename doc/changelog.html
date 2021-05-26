@@ -103,6 +103,7 @@ v21.07: (Upcoming Release)</h1>
 <h2>rpc</h2>
 <p>New RPC <code>bdev_rbd_register_cluster</code> and <code>bdev_rbd_unregister_cluster</code> was added, it allows to create and delete the rados object cluster, then users can choose the cluster to create related rbd device.</p>
 <p>Revised <code>bdev_rbd_create</code> parameter, it allows to use an optional parameter &ndash;cluster-name to create a rbd bdev with an already registered Rados Cluster Object.</p>
+<p>New RPC <code>bdev_rbd_get_clusters_info</code> was added, it allows to get the info of the registered Rados Cluster names.</p>
 <h1><a class="anchor" id="changelog-v21-04"></a>
 v21.04:</h1>
 <h2>accel</h2>
@@ -746,7 +747,7 @@ v19.04: Compression bdev, Notification library, NVMe Opal support</h1>
 <h2>sock</h2>
 <p>Added new API <a class="el" href="sock_8h.html#aec412e1537891ed4a02c24615df619b0" title="Read message from the given socket to the I/O vector array.">spdk_sock_readv()</a> to the sock library for performing vectored reads.</p>
 <h2>event</h2>
-<p>The function spdk_subsystem_init() no longer requires spdk_event as an argument.</p>
+<p>The function <a class="el" href="init_8h.html#aa0d0a3b14e1b3dbbfdc5868167099ef1" title="Begin the initialization process for all SPDK subsystems.">spdk_subsystem_init()</a> no longer requires spdk_event as an argument.</p>
 <p>Changed API of spdk_subsystem_config_json() to no longer be asynchronous.</p>
 <h2>io_uring</h2>
 <p>A bdev module that issues I/O to kernel block devices using the new io_uring Linux kernel API was added. This module requires liburing.</p>
@@ -1270,7 +1271,7 @@ v16.06: NVMf userspace target</h1>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
 <ul>
-        <li class="footer">Generated on Tue May 25 2021 04:04:21 for SPDK by
+        <li class="footer">Generated on Wed May 26 2021 04:04:57 for SPDK by
         <a href="http://www.doxygen.org/index.html">doxygen</a> 1.8.15 </li>
 </ul>
 </div>

@@ -1194,6 +1194,23 @@ bdev_rbd_unregister_cluster</h2>
 <p>~~ { "params": { "name": "rbd_cluster" }, "jsonrpc": "2.0", "method": "bdev_rbd_unregister_cluster", "id": 1 } ~~</p>
 <p>Example response:</p>
 <p>~~ { "jsonrpc": "2.0", "id": 1, "result": true } ~~</p>
+<h2><a class="anchor" id="rpc_bdev_rbd_get_clusters_info"></a>
+bdev_rbd_get_clusters_info</h2>
+<p>This method is available only if SPDK was build with Ceph RBD support.</p>
+<h3>Result</h3>
+<p>Returns the cluster info of the Rados Cluster name if provided. Otherwise, it returns the cluster info of every registered Raods Cluster name.</p>
+<h3>Parameters</h3>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Name  </th><th class="markdownTableHeadNone">Optional  </th><th class="markdownTableHeadNone">Type  </th><th class="markdownTableHeadNone">Description   </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">name  </td><td class="markdownTableBodyNone">Optional  </td><td class="markdownTableBodyNone">string  </td><td class="markdownTableBodyNone">Rados cluster object name   </td></tr>
+</table>
+<h3>Example</h3>
+<p>Example request:</p>
+<p>~~ { "params": { "name": "rbd_cluster" }, "jsonrpc": "2.0", "method": "bdev_rbd_get_clusters_info", "id": 1 } ~~</p>
+<p>Example response:</p>
+<p>~~ { "jsonrpc": "2.0", "cluster_name": "rbd_cluster" } ~~</p>
 <h2><a class="anchor" id="rpc_bdev_rbd_create"></a>
 bdev_rbd_create</h2>
 <p>Create <a class="el" href="bdev.html#bdev_config_rbd">Ceph RBD</a> bdev</p>
@@ -3546,7 +3563,7 @@ spdk_get_version</h2>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
 <ul>
-        <li class="footer">Generated on Tue May 25 2021 04:04:21 for SPDK by
+        <li class="footer">Generated on Wed May 26 2021 04:04:57 for SPDK by
         <a href="http://www.doxygen.org/index.html">doxygen</a> 1.8.15 </li>
 </ul>
 </div>

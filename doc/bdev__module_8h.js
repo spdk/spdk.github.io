@@ -3,6 +3,7 @@ var bdev__module_8h =
     [ "spdk_bdev_module", "structspdk__bdev__module.html", "structspdk__bdev__module" ],
     [ "__bdev_module_internal_fields", "structspdk__bdev__module_1_1____bdev__module__internal__fields.html", "structspdk__bdev__module_1_1____bdev__module__internal__fields" ],
     [ "spdk_bdev_fn_table", "structspdk__bdev__fn__table.html", "structspdk__bdev__fn__table" ],
+    [ "spdk_bdev_name", "structspdk__bdev__name.html", "structspdk__bdev__name" ],
     [ "spdk_bdev_alias", "structspdk__bdev__alias.html", "structspdk__bdev__alias" ],
     [ "spdk_bdev", "structspdk__bdev.html", "structspdk__bdev" ],
     [ "__bdev_internal_fields", "structspdk__bdev_1_1____bdev__internal__fields.html", "structspdk__bdev_1_1____bdev__internal__fields" ],

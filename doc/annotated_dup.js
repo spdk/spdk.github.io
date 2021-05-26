@@ -31,6 +31,7 @@ var annotated_dup =
     [ "spdk_bdev_io_wait_entry", "structspdk__bdev__io__wait__entry.html", "structspdk__bdev__io__wait__entry" ],
     [ "spdk_bdev_media_event", "structspdk__bdev__media__event.html", "structspdk__bdev__media__event" ],
     [ "spdk_bdev_module", "structspdk__bdev__module.html", "structspdk__bdev__module" ],
+    [ "spdk_bdev_name", "structspdk__bdev__name.html", "structspdk__bdev__name" ],
     [ "spdk_bdev_opts", "structspdk__bdev__opts.html", "structspdk__bdev__opts" ],
     [ "spdk_bdev_part", "structspdk__bdev__part.html", "structspdk__bdev__part" ],
     [ "spdk_bdev_part_channel", "structspdk__bdev__part__channel.html", "structspdk__bdev__part__channel" ],

@@ -2,7 +2,6 @@ var event_8h =
 [
     [ "spdk_app_opts", "structspdk__app__opts.html", "structspdk__app__opts" ],
     [ "SPDK_APP_GETOPT_STRING", "event_8h.html#af0ae0584a4594f82b7c5294b4d4f6fe6", null ],
-    [ "SPDK_DEFAULT_RPC_ADDR", "event_8h.html#ad6d27c63164846e87e44de2f39792024", null ],
     [ "spdk_app_parse_args_rvals_t", "event_8h.html#a1785f85b0668a4289be2cd98bea0f88c", null ],
     [ "spdk_app_shutdown_cb", "event_8h.html#af7e98d89bfe88c7b9d9ecfc78fac2cd2", null ],
     [ "spdk_event_fn", "event_8h.html#a69f0f17c0f9a03840c327672df37b3bb", null ],
