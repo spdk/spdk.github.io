@@ -103,9 +103,9 @@ Functions</h2></td></tr>
 <tr class="memitem:gaeec9efd151e2fb34ee3d22a1edbbb53f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__bdev__io__submit__functions.html#gaeec9efd151e2fb34ee3d22a1edbbb53f">spdk_bdev_read_blocks</a> (struct spdk_bdev_desc *desc, struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *ch, void *buf, uint64_t offset_blocks, uint64_t num_blocks, <a class="el" href="bdev_8h.html#a0c5602dfd313f90032dd91683b9663e3">spdk_bdev_io_completion_cb</a> cb, void *cb_arg)</td></tr>
 <tr class="memdesc:gaeec9efd151e2fb34ee3d22a1edbbb53f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submit a read request to the bdev on the given channel.  <a href="#gaeec9efd151e2fb34ee3d22a1edbbb53f">More...</a><br /></td></tr>
 <tr class="separator:gaeec9efd151e2fb34ee3d22a1edbbb53f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaeb22cbe62f8ae153ab96318b9761f9e4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__bdev__io__submit__functions.html#gaeb22cbe62f8ae153ab96318b9761f9e4">spdk_bdev_read_blocks_with_md</a> (struct spdk_bdev_desc *desc, struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *ch, void *buf, void *md, int64_t offset_blocks, uint64_t num_blocks, <a class="el" href="bdev_8h.html#a0c5602dfd313f90032dd91683b9663e3">spdk_bdev_io_completion_cb</a> cb, void *cb_arg)</td></tr>
-<tr class="memdesc:gaeb22cbe62f8ae153ab96318b9761f9e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submit a read request to the bdev on the given channel.  <a href="#gaeb22cbe62f8ae153ab96318b9761f9e4">More...</a><br /></td></tr>
-<tr class="separator:gaeb22cbe62f8ae153ab96318b9761f9e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadc8784109649bebb80df9f9535467b85"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__bdev__io__submit__functions.html#gadc8784109649bebb80df9f9535467b85">spdk_bdev_read_blocks_with_md</a> (struct spdk_bdev_desc *desc, struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *ch, void *buf, void *md, uint64_t offset_blocks, uint64_t num_blocks, <a class="el" href="bdev_8h.html#a0c5602dfd313f90032dd91683b9663e3">spdk_bdev_io_completion_cb</a> cb, void *cb_arg)</td></tr>
+<tr class="memdesc:gadc8784109649bebb80df9f9535467b85"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submit a read request to the bdev on the given channel.  <a href="#gadc8784109649bebb80df9f9535467b85">More...</a><br /></td></tr>
+<tr class="separator:gadc8784109649bebb80df9f9535467b85"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga9ac9efa882e87909acfd4bccaddb1778"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__bdev__io__submit__functions.html#ga9ac9efa882e87909acfd4bccaddb1778">spdk_bdev_readv</a> (struct spdk_bdev_desc *desc, struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *ch, struct iovec *iov, int iovcnt, uint64_t offset, uint64_t nbytes, <a class="el" href="bdev_8h.html#a0c5602dfd313f90032dd91683b9663e3">spdk_bdev_io_completion_cb</a> cb, void *cb_arg)</td></tr>
 <tr class="memdesc:ga9ac9efa882e87909acfd4bccaddb1778"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submit a read request to the bdev on the given channel.  <a href="#ga9ac9efa882e87909acfd4bccaddb1778">More...</a><br /></td></tr>
 <tr class="separator:ga9ac9efa882e87909acfd4bccaddb1778"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1268,8 +1268,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="gaeb22cbe62f8ae153ab96318b9761f9e4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaeb22cbe62f8ae153ab96318b9761f9e4">&#9670;&nbsp;</a></span>spdk_bdev_read_blocks_with_md()</h2>
+<a id="gadc8784109649bebb80df9f9535467b85"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gadc8784109649bebb80df9f9535467b85">&#9670;&nbsp;</a></span>spdk_bdev_read_blocks_with_md()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1301,7 +1301,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int64_t&#160;</td>
+          <td class="paramtype">uint64_t&#160;</td>
           <td class="paramname"><em>offset_blocks</em>, </td>
         </tr>
         <tr>
@@ -2876,7 +2876,7 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
 <ul>
-        <li class="footer">Generated on Wed May 26 2021 04:04:57 for SPDK by
+        <li class="footer">Generated on Thu May 27 2021 04:04:22 for SPDK by
         <a href="http://www.doxygen.org/index.html">doxygen</a> 1.8.15 </li>
 </ul>
 </div>

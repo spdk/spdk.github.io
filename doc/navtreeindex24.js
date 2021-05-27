@@ -1,5 +1,7 @@
 var NAVTREEINDEX24 =
 {
+"structspdk__scsi__mpage__policy__desc.html#a6efbcbc417759cfb7694d80357d5eebc":[13,0,288,2],
+"structspdk__scsi__mpage__policy__desc.html#aba233a7338dbf124fed52950c92f7f98":[13,0,288,0],
 "structspdk__scsi__mpage__policy__desc.html#af8a606e447e8d1fbbcdff2e93c22303b":[13,0,288,3],
 "structspdk__scsi__port__desc.html":[13,0,289],
 "structspdk__scsi__port__desc.html#a1122aceae5f88a71a7dc11ace3c17c7f":[13,0,289,5],
@@ -247,7 +249,5 @@ var NAVTREEINDEX24 =
 "system_configuration.html#system_configuration_nonroot":[3,0,1],
 "system_configuration.html#system_configuration_nonroot_device_access":[3,0,1,0],
 "system_configuration.html#system_configuration_nonroot_memory_constraints":[3,0,1,1],
-"thread_8h.html":[14,0,56],
-"thread_8h.html#a07b662b152c21dad824ad2738d0733ec":[14,0,56,72],
-"thread_8h.html#a0cac0f188b5f46ff8bcdd5d4ffa37e84":[14,0,56,27]
+"thread_8h.html":[14,0,56]
 };
