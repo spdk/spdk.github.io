@@ -40,5 +40,6 @@ var searchData=
   ['async_5finit',['async_init',['../structspdk__bdev__module.html#af3a57fb52458d82248fac0570c80cc52',1,'spdk_bdev_module']]],
   ['avscc',['avscc',['../structspdk__nvme__ctrlr__data.html#ae77a40746d311463b2608fca0584dd99',1,'spdk_nvme_ctrlr_data']]],
   ['awun',['awun',['../structspdk__nvme__ctrlr__data.html#aa5a66788efbe912b16019c7b62b00a16',1,'spdk_nvme_ctrlr_data']]],
-  ['awupf',['awupf',['../structspdk__nvme__ctrlr__data.html#a77160c6bcaa3ab4a312b42991603860e',1,'spdk_nvme_ctrlr_data']]]
+  ['awupf',['awupf',['../structspdk__nvme__ctrlr__data.html#a77160c6bcaa3ab4a312b42991603860e',1,'spdk_nvme_ctrlr_data']]],
+  ['abi_20and_20api_20deprecation',['ABI and API Deprecation',['../deprecation.html',1,'intro']]]
 ];
