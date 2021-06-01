@@ -1,5 +1,6 @@
 var NAVTREEINDEX27 =
 {
+"unionspdk__nvme__pmrctl__register.html#a75dc9f6cc5a6abc94780f427201a802e":[14,0,154,0],
 "unionspdk__nvme__pmrebs__register.html":[14,0,155],
 "unionspdk__nvme__pmrebs__register.html#a8c1bc63b833ba8549dd7c60f4632100d":[14,0,155,4],
 "unionspdk__nvme__pmrebs__register.html#a9acb2c195361410117d72398bbeb6287":[14,0,155,0],
