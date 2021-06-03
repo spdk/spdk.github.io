@@ -62,8 +62,9 @@ var NAVTREEINDEX2 =
 "crc16_8h.html#abccce65e1e6b10d17ab6d4615d4a9407":[15,0,15,2],
 "crc16_8h.html#ac2cd983682857afc5394119d54c4861c":[15,0,15,1],
 "crc32_8h.html":[15,0,16],
-"crc32_8h.html#a51fc46bdf29f35610a0c99ae6ad0e009":[15,0,16,1],
+"crc32_8h.html#a51fc46bdf29f35610a0c99ae6ad0e009":[15,0,16,2],
 "crc32_8h.html#a5320d8945f28627a2c5e5b15f1a997ee":[15,0,16,0],
+"crc32_8h.html#a795c03f1c01247672682572a79ef3c1a":[15,0,16,1],
 "deprecation.html":[1,4],
 "deprecation.html#deprecation-notices":[1,4,0],
 "driver_modules.html":[7],
@@ -248,6 +249,5 @@ var NAVTREEINDEX2 =
 "event_8h.html#aa29c1f045de7ddaaba7fbd797edde6f0":[15,0,20,6],
 "event_8h.html#aa29c1f045de7ddaaba7fbd797edde6f0a05cc1dabd84a3abe880a28cf4081d58e":[15,0,20,6,0],
 "event_8h.html#aa29c1f045de7ddaaba7fbd797edde6f0a2e183a7b593dfed9448add6eab1a9123":[15,0,20,6,1],
-"event_8h.html#aa29c1f045de7ddaaba7fbd797edde6f0a3486f25aaddce81476c35d398ca7230c":[15,0,20,6,2],
-"event_8h.html#aa6e70166c6ac9e7e7399d1b140979d29":[15,0,20,19]
+"event_8h.html#aa29c1f045de7ddaaba7fbd797edde6f0a3486f25aaddce81476c35d398ca7230c":[15,0,20,6,2]
 };

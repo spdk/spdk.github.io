@@ -103,6 +103,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a51fc46bdf29f35610a0c99ae6ad0e009"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="crc32_8h.html#a51fc46bdf29f35610a0c99ae6ad0e009">spdk_crc32c_update</a> (const void *buf, size_t len, uint32_t crc)</td></tr>
 <tr class="memdesc:a51fc46bdf29f35610a0c99ae6ad0e009"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate a partial CRC-32C checksum.  <a href="#a51fc46bdf29f35610a0c99ae6ad0e009">More...</a><br /></td></tr>
 <tr class="separator:a51fc46bdf29f35610a0c99ae6ad0e009"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a795c03f1c01247672682572a79ef3c1a"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="crc32_8h.html#a795c03f1c01247672682572a79ef3c1a">spdk_crc32c_iov_update</a> (struct iovec *iov, int iovcnt, uint32_t crc32c)</td></tr>
+<tr class="memdesc:a795c03f1c01247672682572a79ef3c1a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate a partial CRC-32C checksum.  <a href="#a795c03f1c01247672682572a79ef3c1a">More...</a><br /></td></tr>
+<tr class="separator:a795c03f1c01247672682572a79ef3c1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>CRC-32 utility functions. </p>
@@ -149,6 +152,51 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Updated CRC-32 value. </dd></dl>
+
+</div>
+</div>
+<a id="a795c03f1c01247672682572a79ef3c1a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a795c03f1c01247672682572a79ef3c1a">&#9670;&nbsp;</a></span>spdk_crc32c_iov_update()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t spdk_crc32c_iov_update </td>
+          <td>(</td>
+          <td class="paramtype">struct iovec *&#160;</td>
+          <td class="paramname"><em>iov</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iovcnt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>crc32c</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Calculate a partial CRC-32C checksum. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">iov</td><td>Data buffer vectors to checksum. </td></tr>
+    <tr><td class="paramname">iovcnt</td><td>size of iov parameter. </td></tr>
+    <tr><td class="paramname">crc32c</td><td>Previous CRC-32C value. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Updated CRC-32C value. </dd></dl>
 
 </div>
 </div>
@@ -203,7 +251,7 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
 <ul>
-        <li class="footer">Generated on Wed Jun 2 2021 04:04:21 for SPDK by
+        <li class="footer">Generated on Thu Jun 3 2021 04:04:16 for SPDK by
         <a href="http://www.doxygen.org/index.html">doxygen</a> 1.8.15 </li>
 </ul>
 </div>

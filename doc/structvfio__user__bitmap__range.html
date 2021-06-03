@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="generator" content="Doxygen 1.8.15" />
-  <title>SPDK: vfio_user_dma_region Struct Reference</title>
+  <title>SPDK: vfio_user_bitmap_range Struct Reference</title>
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
@@ -66,7 +66,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-$(document).ready(function(){initNavTree('structvfio__user__dma__region.html','');});
+$(document).ready(function(){initNavTree('structvfio__user__bitmap__range.html','');});
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -88,27 +88,30 @@ $(document).ready(function(){initNavTree('structvfio__user__dma__region.html',''
   <div class="summary">
 <a href="#pub-attribs">Data Fields</a>  </div>
   <div class="headertitle">
-<div class="title">vfio_user_dma_region Struct Reference</div>  </div>
+<div class="title">vfio_user_bitmap_range Struct Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+<div class="dynheader">
+Collaboration diagram for vfio_user_bitmap_range:</div>
+<div class="dyncontent">
+<div class="center"><img src="structvfio__user__bitmap__range__coll__graph.png" border="0" usemap="#vfio__user__bitmap__range_coll__map" alt="Collaboration graph"/></div>
+<map name="vfio__user__bitmap__range_coll__map" id="vfio__user__bitmap__range_coll__map">
+<area shape="rect"  title=" " alt="" coords="5,95,184,121"/>
+<area shape="rect"  href="structvfio__user__bitmap.html" title=" " alt="" coords="27,5,162,32"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:a0e22ebfde31214bfc9aa62e2a9255ace"><td class="memItemLeft" align="right" valign="top"><a id="a0e22ebfde31214bfc9aa62e2a9255ace"></a>
-uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>addr</b></td></tr>
-<tr class="separator:a0e22ebfde31214bfc9aa62e2a9255ace"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a197fe8da8f998bf2f6d9d4e4e320220b"><td class="memItemLeft" align="right" valign="top"><a id="a197fe8da8f998bf2f6d9d4e4e320220b"></a>
+<tr class="memitem:ad6d1655e6d1f43f2a2c82c1c495694f0"><td class="memItemLeft" align="right" valign="top"><a id="ad6d1655e6d1f43f2a2c82c1c495694f0"></a>
+uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>iova</b></td></tr>
+<tr class="separator:ad6d1655e6d1f43f2a2c82c1c495694f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a149572d37f8d2c7fc6cd44603df3d089"><td class="memItemLeft" align="right" valign="top"><a id="a149572d37f8d2c7fc6cd44603df3d089"></a>
 uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>size</b></td></tr>
-<tr class="separator:a197fe8da8f998bf2f6d9d4e4e320220b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abbb48a15e0f234f6b169ce243731d9a4"><td class="memItemLeft" align="right" valign="top"><a id="abbb48a15e0f234f6b169ce243731d9a4"></a>
-uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>offset</b></td></tr>
-<tr class="separator:abbb48a15e0f234f6b169ce243731d9a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a19edddd6406218d49f16cc3ec4b63a45"><td class="memItemLeft" align="right" valign="top"><a id="a19edddd6406218d49f16cc3ec4b63a45"></a>
-uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>prot</b></td></tr>
-<tr class="separator:a19edddd6406218d49f16cc3ec4b63a45"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0e07b3b2000fbc6b5a64d9671c3006e4"><td class="memItemLeft" align="right" valign="top"><a id="a0e07b3b2000fbc6b5a64d9671c3006e4"></a>
-uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>flags</b></td></tr>
-<tr class="separator:a0e07b3b2000fbc6b5a64d9671c3006e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a149572d37f8d2c7fc6cd44603df3d089"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9cd9fbe33946b6743203a42dd0170f86"><td class="memItemLeft" align="right" valign="top"><a id="a9cd9fbe33946b6743203a42dd0170f86"></a>
+struct <a class="el" href="structvfio__user__bitmap.html">vfio_user_bitmap</a>&#160;</td><td class="memItemRight" valign="bottom"><b>bitmap</b></td></tr>
+<tr class="separator:a9cd9fbe33946b6743203a42dd0170f86"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li>vfio_user_spec.h</li>
@@ -119,7 +122,7 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>flags</b></td></t
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
 <ul>
-        <li class="footer">Generated on Wed Jun 2 2021 04:04:22 for SPDK by
+        <li class="footer">Generated on Thu Jun 3 2021 04:04:17 for SPDK by
         <a href="http://www.doxygen.org/index.html">doxygen</a> 1.8.15 </li>
 </ul>
 </div>
