@@ -102,6 +102,7 @@ v21.07: (Upcoming Release)</h1>
 <h2>nvmf</h2>
 <p>Added <code>min_cntlid</code> and <code>max_cntlid</code> to <code>nvmf_create_subsystem</code> to limit the controller ID range.</p>
 <p><code>spdk_nvmf_request_get_buffers_multi</code> API is removed.</p>
+<p>Added the <code>nvmf_set_crdt</code> RPC for setting command retry delay times.</p>
 <h2>nvme</h2>
 <p>Added a new function <code>spdk_nvme_ns_cmd_copy</code> to submit a Simple Copy Command to a Namespace.</p>
 <p>Update the spdk_nvme_generic_command_status_code structure with new status code according to the definition in nvme 1.4 spec.</p>
@@ -109,6 +110,9 @@ v21.07: (Upcoming Release)</h1>
 <p>New RPC <code>bdev_rbd_register_cluster</code> and <code>bdev_rbd_unregister_cluster</code> was added, it allows to create and delete the rados object cluster, then users can choose the cluster to create related rbd device.</p>
 <p>Revised <code>bdev_rbd_create</code> parameter, it allows to use an optional parameter &ndash;cluster-name to create a rbd bdev with an already registered Rados Cluster Object.</p>
 <p>New RPC <code>bdev_rbd_get_clusters_info</code> was added, it allows to get the info of the registered Rados Cluster names.</p>
+<h2>bdev</h2>
+<p>Removed ZCOPY emulation: The bdev module can be checked to see if it supports ZCOPY and if not supported then use existing READ/WRITE commands.</p>
+<p>Added iov to spdk_bdev_zcopy_start</p>
 <h1><a class="anchor" id="changelog-v21-04"></a>
 v21.04:</h1>
 <h2>accel</h2>
@@ -1276,7 +1280,7 @@ v16.06: NVMf userspace target</h1>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
 <ul>
-        <li class="footer">Generated on Fri Jun 4 2021 04:04:19 for SPDK by
+        <li class="footer">Generated on Sat Jun 5 2021 04:04:22 for SPDK by
         <a href="http://www.doxygen.org/index.html">doxygen</a> 1.8.15 </li>
 </ul>
 </div>

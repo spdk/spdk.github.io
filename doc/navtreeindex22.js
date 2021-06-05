@@ -1,5 +1,6 @@
 var NAVTREEINDEX22 =
 {
+"structspdk__nvmf__fc__lsdesc__cr__conn__cmd.html":[14,0,229],
 "structspdk__nvmf__fc__lsdesc__cr__conn__cmd.html#a2029a1948398d671741473503593472b":[14,0,229,0],
 "structspdk__nvmf__fc__lsdesc__cr__conn__cmd.html#a26e54c45b497926b35fb065dd5d3604f":[14,0,229,1],
 "structspdk__nvmf__fc__lsdesc__cr__conn__cmd.html#a2f26309f55fda9cd196a235540788849":[14,0,229,7],
@@ -149,8 +150,9 @@ var NAVTREEINDEX22 =
 "structspdk__nvmf__request.html#ae30b6b5bc1ef629f68f6bc5596895f02":[14,0,249,8],
 "structspdk__nvmf__request.html#ae405604e4160ec1916926c146b3a852e":[14,0,249,18],
 "structspdk__nvmf__target__opts.html":[14,0,250],
-"structspdk__nvmf__target__opts.html#a2ae82b8728ac8fdaaef6f3e13fdd6ded":[14,0,250,1],
-"structspdk__nvmf__target__opts.html#a60daa0363a02ef52bf0e86e45fa63b8d":[14,0,250,2],
+"structspdk__nvmf__target__opts.html#a2ae82b8728ac8fdaaef6f3e13fdd6ded":[14,0,250,2],
+"structspdk__nvmf__target__opts.html#a60daa0363a02ef52bf0e86e45fa63b8d":[14,0,250,3],
+"structspdk__nvmf__target__opts.html#a80fe5f9a3b3f5787bb9f30303aea3441":[14,0,250,1],
 "structspdk__nvmf__target__opts.html#ae0678c1c76f00408b0743ae824bcbb5b":[14,0,250,0],
 "structspdk__nvmf__transport.html":[14,0,251],
 "structspdk__nvmf__transport.html#a1dbbd9db3cabac4f7c78703608f23d64":[14,0,251,1],
@@ -247,7 +249,5 @@ var NAVTREEINDEX22 =
 "structspdk__ocssd__chunk__notification__entry.html#a7ba839c30cf67b09f5f0cbc30db5a153":[14,0,259,7],
 "structspdk__ocssd__chunk__notification__entry.html#a9637d6ca62e95d11f7cd99fbd38513fa":[14,0,259,3],
 "structspdk__ocssd__chunk__notification__entry.html#a99356830ad1d8aae77c4bf5726af51ec":[14,0,259,0],
-"structspdk__ocssd__chunk__notification__entry.html#aadf9079a7a4aa1acd37f7535b5249c60":[14,0,259,5],
-"structspdk__ocssd__chunk__notification__entry.html#abc2b04eefd137a69be0153bf2377dda3":[14,0,259,8],
-"structspdk__ocssd__chunk__notification__entry.html#acf2668e09d087e0294af2b2f42160ad7":[14,0,259,15]
+"structspdk__ocssd__chunk__notification__entry.html#aadf9079a7a4aa1acd37f7535b5249c60":[14,0,259,5]
 };

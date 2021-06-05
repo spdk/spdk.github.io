@@ -298,7 +298,8 @@ var user_guides =
           [ "admin_cmd_passthru", "jsonrpc.html#spdk_nvmf_admin_passthru_conf", null ]
         ] ],
         [ "nvmf_get_transports method", "jsonrpc.html#rpc_nvmf_get_transports", null ],
-        [ "nvmf_get_stats method", "jsonrpc.html#rpc_nvmf_get_stats", null ]
+        [ "nvmf_get_stats method", "jsonrpc.html#rpc_nvmf_get_stats", null ],
+        [ "nvmf_set_crdt", "jsonrpc.html#rpc_nvmf_set_crdt", null ]
       ] ],
       [ "Vhost Target", "jsonrpc.html#jsonrpc_components_vhost_tgt", [
         [ "vhost_controller_set_coalescing", "jsonrpc.html#rpc_vhost_controller_set_coalescing", null ],

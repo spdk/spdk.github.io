@@ -192,6 +192,7 @@ var NAVTREEINDEX5 =
 "jsonrpc.html#rpc_nvmf_listen_address":[3,9,5,4,0],
 "jsonrpc.html#rpc_nvmf_namespace":[3,9,5,7,0],
 "jsonrpc.html#rpc_nvmf_set_config":[3,9,5,16],
+"jsonrpc.html#rpc_nvmf_set_crdt":[3,9,5,19],
 "jsonrpc.html#rpc_nvmf_set_max_subsystems":[3,9,5,15],
 "jsonrpc.html#rpc_nvmf_subsystem_add_host":[3,9,5,9],
 "jsonrpc.html#rpc_nvmf_subsystem_add_listener":[3,9,5,4],
@@ -248,6 +249,5 @@ var NAVTREEINDEX5 =
 "jsonrpc_8h.html#a74afccd199dde8aaebd020ac513cf819":[15,0,32,9],
 "jsonrpc_8h.html#a7e40f9e08438d2468ac2f1a779801340":[15,0,32,24],
 "jsonrpc_8h.html#a88be481b43cb068b54a44595f0f3713f":[15,0,32,28],
-"jsonrpc_8h.html#a9185111b00d98e3e12adda0dce85a0e0":[15,0,32,10],
-"jsonrpc_8h.html#a97fe9c9d3f9eb731dd9cf320318d43aa":[15,0,32,2]
+"jsonrpc_8h.html#a9185111b00d98e3e12adda0dce85a0e0":[15,0,32,10]
 };

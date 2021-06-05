@@ -146,5 +146,5 @@ var bdev_8h =
     [ "spdk_bdev_writev_blocks", "group__bdev__io__submit__functions.html#gaf5849064d12de9f140a41522d1f7c95b", null ],
     [ "spdk_bdev_writev_blocks_with_md", "group__bdev__io__submit__functions.html#ga635944e7a651c01ecf5d808f988d138d", null ],
     [ "spdk_bdev_zcopy_end", "bdev_8h.html#ac432e059187b2dee62418354664e87c2", null ],
-    [ "spdk_bdev_zcopy_start", "bdev_8h.html#a917e305a98e4545096ae025be764177c", null ]
+    [ "spdk_bdev_zcopy_start", "bdev_8h.html#a0ae02ac58ed10886d4a00ba3d94af4ce", null ]
 ];
