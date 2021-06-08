@@ -50,3 +50,7 @@ toc:
 ## 金山云
 * [英特尔助力金山云构建混合云存储产品，加速企业数字化转型](https://ci.spdk.io/download/papers/Intel_Technology_Accelerates_Kingsoft_Cloud_For_Hybrid_Cloud_Storage_Products_CN.pdf)
 > “使用SPDK之后，用户态的驱动通过轮询硬件而不是依赖中断来完成，这可以降低总延迟和减少延迟差异，并且和内核驱动相比，在每个CPU内核的IOPS上具有更明显的性能优势；此外，SPDK具备I/O路径的无锁高性能模式，避免了所有在I/O关键路径中的锁，而是依靠消息传递在多个线程中共享资源，从而提高了并行性。总体而言，SPDK可以有效整合英特尔的网络、数据和存储技术，将固态存储介质的性能潜力充分发挥出来。”
+
+## 腾讯云
+* [英特尔助力腾讯云深度优化云硬盘CBS 产品，打造极速云存储体验](https://ci.spdk.io/download/papers/202106_CN_Intel_Helps_Tencent_Cloud_Deeply_Optimize_its_Cloud_Block_Storage_to_Create_Ultra_Fast_Cloud_Storage_Experience.pdf)
+> “针对CBS产品的架构、存储引擎以及硬件基础设施，腾讯云加入了对远程直接数据存取(Remote Direct Memory Access，RDMA)协议的支持，并与英特尔携手，开展了多方位的优化，包括：加入轮询、算法优化、消除竞争以及消除锁等机制，优化CBS存储引擎；引入由英特尔提供的SPDK(Storage Performance Development Kit)开发套件，优化NVMe固态盘的IOPS和时延性能。”
