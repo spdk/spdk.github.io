@@ -93,6 +93,7 @@ $(document).ready(function(){initNavTree('changelog.html','');});
 v21.07: (Upcoming Release)</h1>
 <h2>bdev</h2>
 <p>Change <code>spdk_bdev_read_blocks_with_md</code> arg offset definiton from int64_t to uint64_t.</p>
+<p>Red-black tree has been used to organize the bdev names and aliases uniformly to provide faster lookup.</p>
 <h2>dpdk</h2>
 <p>Updated DPDK submodule to DPDK 21.02.</p>
 <h2>idxd</h2>
@@ -113,6 +114,10 @@ v21.07: (Upcoming Release)</h1>
 <h2>bdev</h2>
 <p>Removed ZCOPY emulation: The bdev module can be checked to see if it supports ZCOPY and if not supported then use existing READ/WRITE commands.</p>
 <p>Added iov to spdk_bdev_zcopy_start</p>
+<h2>thread</h2>
+<p>Red-black tree has been used for timed pollers to provide faster insertion and deletion and for io_devices to provide faster lookup.</p>
+<h2>util</h2>
+<p>Red-black tree macros has been added by using the macros provided by the FreeBSD operating system under the same BSD license.</p>
 <h1><a class="anchor" id="changelog-v21-04"></a>
 v21.04:</h1>
 <h2>accel</h2>
@@ -1280,7 +1285,7 @@ v16.06: NVMf userspace target</h1>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
 <ul>
-        <li class="footer">Generated on Mon Jun 7 2021 04:04:25 for SPDK by
+        <li class="footer">Generated on Tue Jun 8 2021 04:04:26 for SPDK by
         <a href="http://www.doxygen.org/index.html">doxygen</a> 1.8.15 </li>
 </ul>
 </div>

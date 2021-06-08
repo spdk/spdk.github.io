@@ -367,5 +367,6 @@ var user_guides =
         [ "spdk_get_version", "jsonrpc.html#rpc_spdk_get_version", null ]
       ] ]
     ] ],
-    [ "JSON-RPC Remote access", "jsonrpc_proxy.html", null ]
+    [ "JSON-RPC Remote access", "jsonrpc_proxy.html", null ],
+    [ "Userspace DTrace (USDT)", "usdt.html", null ]
 ];

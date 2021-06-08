@@ -1,5 +1,6 @@
 var NAVTREEINDEX27 =
 {
+"unionspdk__nvme__intel__feat__smbus__address.html#ae122cd0e8dc3d8b57632fea33ec8efa2":[14,0,138,3],
 "unionspdk__nvme__pmrcap__register.html":[14,0,153],
 "unionspdk__nvme__pmrcap__register.html#a3421780de67cc18841423fd384e9a3c8":[14,0,153,4],
 "unionspdk__nvme__pmrcap__register.html#a3a75648de51fe990e0bb0e4fa8bd85d0":[14,0,153,1],
@@ -60,6 +61,7 @@ var NAVTREEINDEX27 =
 "unionspdk__nvmf__transport__specific__address__subtype.html#a8098cbc03f727ae8ae707dfbf69d3469":[14,0,257,0],
 "unionspdk__nvmf__transport__specific__address__subtype.html#aabae1c961d6f86f0d6b1e61cdaa7a9ce":[14,0,257,1],
 "unionspdk__nvmf__transport__specific__address__subtype.html#aabbc28a7fc2edeca1244ff249a51edb7":[14,0,257,2],
+"usdt.html":[3,11],
 "user_guides.html":[3],
 "userspace.html":[2,0],
 "userspace.html#userspace_control":[2,0,0],

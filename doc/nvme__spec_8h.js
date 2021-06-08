@@ -122,6 +122,7 @@ var nvme__spec_8h =
     [ "SPDK_NVME_IO_QUEUE_MAX_ENTRIES", "nvme__spec_8h.html#a1a070303721766a8be74aa19fed086c5", null ],
     [ "SPDK_NVME_IO_QUEUE_MIN_ENTRIES", "nvme__spec_8h.html#a596eccf075cc180ef6148458bd953a22", null ],
     [ "spdk_nvme_log_page_is_vendor_specific", "nvme__spec_8h.html#a76da2650c4bc51a12b65436a2f3027bd", null ],
+    [ "SPDK_NVME_MAX_CHANGED_NAMESPACES", "nvme__spec_8h.html#a5974e1d01942a43f9b95d77a31c2123b", null ],
     [ "SPDK_NVME_MAX_IO_QUEUES", "nvme__spec_8h.html#a16100e7649c94a89146d02fe4556537a", null ],
     [ "SPDK_NVME_MAX_OPC", "nvme__spec_8h.html#a6c547b319e840e73f4f43fb6bc595c20", null ],
     [ "SPDK_NVME_NQN_FIELD_SIZE", "nvme__spec_8h.html#a29b64360a774480298f7ed501ba62ea0", null ],
