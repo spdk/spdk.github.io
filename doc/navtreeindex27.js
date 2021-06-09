@@ -1,5 +1,10 @@
 var NAVTREEINDEX27 =
 {
+"unionspdk__nvme__intel__feat__smbus__address.html":[14,0,138],
+"unionspdk__nvme__intel__feat__smbus__address.html#a1e1bc8d96e7c60ff634b4b5dc28151b0":[14,0,138,1],
+"unionspdk__nvme__intel__feat__smbus__address.html#a289a4655fbaff2eb085b59b67ee06672":[14,0,138,0],
+"unionspdk__nvme__intel__feat__smbus__address.html#a49084bbf1cf7d967ed21e6c1dce76e9f":[14,0,138,2],
+"unionspdk__nvme__intel__feat__smbus__address.html#ab9d22f2b03c70684d832df3a349c0f31":[14,0,138,4],
 "unionspdk__nvme__intel__feat__smbus__address.html#ae122cd0e8dc3d8b57632fea33ec8efa2":[14,0,138,3],
 "unionspdk__nvme__pmrcap__register.html":[14,0,153],
 "unionspdk__nvme__pmrcap__register.html#a3421780de67cc18841423fd384e9a3c8":[14,0,153,4],

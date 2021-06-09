@@ -7,7 +7,8 @@ var idxd_8h =
     [ "spdk_idxd_batch_get_max", "idxd_8h.html#ab78b75ce7715fb720c0883f0851d9aae", null ],
     [ "spdk_idxd_batch_prep_compare", "idxd_8h.html#a29321770dd18270ac63feaf7ed1624ae", null ],
     [ "spdk_idxd_batch_prep_copy", "idxd_8h.html#a00a2b8ec301e7c8a89532e3198b8d6d9", null ],
-    [ "spdk_idxd_batch_prep_crc32c", "idxd_8h.html#a70d818022010bca83142dd77f8d24303", null ],
+    [ "spdk_idxd_batch_prep_copy_crc32c", "idxd_8h.html#a37bb396a3e3f26c59da712afab3db993", null ],
+    [ "spdk_idxd_batch_prep_crc32c", "idxd_8h.html#a1b8466819414ff01486bd5fcbdba90b3", null ],
     [ "spdk_idxd_batch_prep_dualcast", "idxd_8h.html#ac01301f26f9fb1ac4606b934fe3df9f4", null ],
     [ "spdk_idxd_batch_prep_fill", "idxd_8h.html#aa806021f07d866c4551698cc7ded62d4", null ],
     [ "spdk_idxd_batch_submit", "idxd_8h.html#aed7821b612c995cd3c97faab55379418", null ],
@@ -22,6 +23,7 @@ var idxd_8h =
     [ "spdk_idxd_set_config", "idxd_8h.html#acda8cf00ce61e00149a51bba5d8d2ec9", null ],
     [ "spdk_idxd_submit_compare", "idxd_8h.html#a13e5209991017f518cfcc95e7d978aff", null ],
     [ "spdk_idxd_submit_copy", "idxd_8h.html#ac4e441dcb5b00b9f97835c07017f32ed", null ],
+    [ "spdk_idxd_submit_copy_crc32c", "idxd_8h.html#a1003dbd55efafcb1ccf2045241a3d715", null ],
     [ "spdk_idxd_submit_crc32c", "idxd_8h.html#abf5fb2b8e9bd7b8b2e01a665f7a0f16a", null ],
     [ "spdk_idxd_submit_dualcast", "idxd_8h.html#aef2f83b678ea127b1818f759a615bdef", null ],
     [ "spdk_idxd_submit_fill", "idxd_8h.html#ac469f33c1519f5454b2dad56686a5d2f", null ]

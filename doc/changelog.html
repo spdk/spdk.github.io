@@ -91,6 +91,9 @@ $(document).ready(function(){initNavTree('changelog.html','');});
 <div class="contents">
 <div class="textblock"><h1><a class="anchor" id="changelog-v21-07"></a>
 v21.07: (Upcoming Release)</h1>
+<h2>accel_fw</h2>
+<p>Added API <code>spdk_accel_submit_copy_crc32c</code> to perform a CRC32C while copying data.</p>
+<p>Added API <code>spdk_accel_batch_prep_copy_crc32c</code> to batch CRC32C + copy commands.</p>
 <h2>bdev</h2>
 <p>Change <code>spdk_bdev_read_blocks_with_md</code> arg offset definiton from int64_t to uint64_t.</p>
 <p>Red-black tree has been used to organize the bdev names and aliases uniformly to provide faster lookup.</p>
@@ -98,6 +101,8 @@ v21.07: (Upcoming Release)</h1>
 <p>Updated DPDK submodule to DPDK 21.02.</p>
 <h2>idxd</h2>
 <p>Remove the probe_cb parameter in spdk_idxd_probe function. And remove the definition of spdk_idxd_probe_cb function pointer. It should be implemented in idxd_user.c.</p>
+<p>Added API <code>spdk_idxd_submit_copy_crc32c</code> to perform a CRC32C while copying data.</p>
+<p>Added API <code>spdk_idxd_batch_prep_copy_crc32c</code> to prepare a batch operation to perform a CRC32C while copying data.</p>
 <h2>util</h2>
 <p><code>spdk_crc32c_iov_update</code> function was added to support calculating the crc32c of the iovs.</p>
 <h2>nvmf</h2>
@@ -1285,7 +1290,7 @@ v16.06: NVMf userspace target</h1>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
 <ul>
-        <li class="footer">Generated on Tue Jun 8 2021 04:04:26 for SPDK by
+        <li class="footer">Generated on Wed Jun 9 2021 04:04:24 for SPDK by
         <a href="http://www.doxygen.org/index.html">doxygen</a> 1.8.15 </li>
 </ul>
 </div>
