@@ -1,5 +1,6 @@
 var NAVTREEINDEX24 =
 {
+"structspdk__scsi__desig__desc.html":[14,0,286],
 "structspdk__scsi__desig__desc.html#a0f236a83a90ea0b1d960fa52c65f4781":[14,0,286,5],
 "structspdk__scsi__desig__desc.html#a41337da5acd2e07aea9ce9dab147f460":[14,0,286,6],
 "structspdk__scsi__desig__desc.html#a4df254d0487bd0664ccddc2e26f51084":[14,0,286,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX24 =
 "structvfio__user__dma__region__access.html":[14,0,320],
 "structvfio__user__dma__region__access.html#a7dfcc2ed9c92f9f2c68c9d99c2cfd8a5":[14,0,320,2],
 "structvfio__user__dma__region__access.html#a8e5a3b1661593f415fe429eec2a929b9":[14,0,320,1],
-"structvfio__user__dma__region__access.html#ae4e5166970c457815c00269e35adef32":[14,0,320,0],
-"structvfio__user__dma__unmap.html":[14,0,321]
+"structvfio__user__dma__region__access.html#ae4e5166970c457815c00269e35adef32":[14,0,320,0]
 };
