@@ -112,6 +112,7 @@ v21.07: (Upcoming Release)</h1>
 <h2>nvme</h2>
 <p>Added a new function <code>spdk_nvme_ns_cmd_copy</code> to submit a Simple Copy Command to a Namespace.</p>
 <p>Update the spdk_nvme_generic_command_status_code structure with new status code according to the definition in nvme 1.4 spec.</p>
+<p>spdk_nvme_ctrlr_get_default_ctrlr_opts now sets use_cmb_sqs to false. This means that is a controller has a CMB and supports SQs in the CMB, SPDK will not use the CMB for SQs by default - the user must set use_cmb_sqs to true in the <a class="el" href="structspdk__nvme__ctrlr__opts.html" title="NVMe controller initialization options.">spdk_nvme_ctrlr_opts</a> structure prior to controller attach.</p>
 <h2>rpc</h2>
 <p>New RPC <code>bdev_rbd_register_cluster</code> and <code>bdev_rbd_unregister_cluster</code> was added, it allows to create and delete the rados object cluster, then users can choose the cluster to create related rbd device.</p>
 <p>Revised <code>bdev_rbd_create</code> parameter, it allows to use an optional parameter &ndash;cluster-name to create a rbd bdev with an already registered Rados Cluster Object.</p>
@@ -1290,7 +1291,7 @@ v16.06: NVMf userspace target</h1>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
 <ul>
-        <li class="footer">Generated on Fri Jun 11 2021 04:04:24 for SPDK by
+        <li class="footer">Generated on Sat Jun 12 2021 04:04:20 for SPDK by
         <a href="http://www.doxygen.org/index.html">doxygen</a> 1.8.15 </li>
 </ul>
 </div>
