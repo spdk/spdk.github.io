@@ -122,10 +122,10 @@ Macros</h2></td></tr>
 <tr class="memitem:a58821926bcb68504a97ffa1545029398"><td class="memItemLeft" align="right" valign="top"><a id="a58821926bcb68504a97ffa1545029398"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_CEIL_DIV</b>(x,  y)&#160;&#160;&#160;(((x)+(y)-1)/(y))</td></tr>
 <tr class="separator:a58821926bcb68504a97ffa1545029398"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4fe89df2bed54dcdc8b0d33c53a694b6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8h.html#a4fe89df2bed54dcdc8b0d33c53a694b6">SPDK_ALIGN_FLOOR</a>(val,  align)&#160;&#160;&#160;(typeof(val))((val) &amp; (~((typeof(val))((align) - 1))))</td></tr>
+<tr class="memitem:a4fe89df2bed54dcdc8b0d33c53a694b6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8h.html#a4fe89df2bed54dcdc8b0d33c53a694b6">SPDK_ALIGN_FLOOR</a>(val,  align)&#160;&#160;&#160;(__typeof__(val))((val) &amp; (~((__typeof__(val))((align) - 1))))</td></tr>
 <tr class="memdesc:a4fe89df2bed54dcdc8b0d33c53a694b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Macro to align a value to a given power-of-two.  <a href="#a4fe89df2bed54dcdc8b0d33c53a694b6">More...</a><br /></td></tr>
 <tr class="separator:a4fe89df2bed54dcdc8b0d33c53a694b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a61bd4178f177cf2265279944b0184fcd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8h.html#a61bd4178f177cf2265279944b0184fcd">SPDK_ALIGN_CEIL</a>(val,  align)&#160;&#160;&#160;<a class="el" href="util_8h.html#a4fe89df2bed54dcdc8b0d33c53a694b6">SPDK_ALIGN_FLOOR</a>(((val) + ((typeof(val)) (align) - 1)), align)</td></tr>
+<tr class="memitem:a61bd4178f177cf2265279944b0184fcd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8h.html#a61bd4178f177cf2265279944b0184fcd">SPDK_ALIGN_CEIL</a>(val,  align)&#160;&#160;&#160;<a class="el" href="util_8h.html#a4fe89df2bed54dcdc8b0d33c53a694b6">SPDK_ALIGN_FLOOR</a>(((val) + ((__typeof__(val)) (align) - 1)), align)</td></tr>
 <tr class="memdesc:a61bd4178f177cf2265279944b0184fcd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Macro to align a value to a given power-of-two.  <a href="#a61bd4178f177cf2265279944b0184fcd">More...</a><br /></td></tr>
 <tr class="separator:a61bd4178f177cf2265279944b0184fcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac14f2b75522d72317def37370adffca1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8h.html#ac14f2b75522d72317def37370adffca1">SPDK_CLANG_ANALYZER_PREINIT_PTR_ARRAY</a>(arr,  arr_size,  buf_size)</td></tr>
@@ -193,7 +193,7 @@ static uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_divid
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;<a class="el" href="util_8h.html#a4fe89df2bed54dcdc8b0d33c53a694b6">SPDK_ALIGN_FLOOR</a>(((val) + ((typeof(val)) (align) - 1)), align)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="util_8h.html#a4fe89df2bed54dcdc8b0d33c53a694b6">SPDK_ALIGN_FLOOR</a>(((val) + ((__typeof__(val)) (align) - 1)), align)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -224,7 +224,7 @@ static uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_divid
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;(typeof(val))((val) &amp; (~((typeof(val))((align) - 1))))</td>
+          <td></td><td>&#160;&#160;&#160;(__typeof__(val))((val) &amp; (~((__typeof__(val))((align) - 1))))</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -459,7 +459,7 @@ static uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_divid
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
 <ul>
-        <li class="footer">Generated on Mon Jun 14 2021 04:04:31 for SPDK by
+        <li class="footer">Generated on Tue Jun 15 2021 04:04:23 for SPDK by
         <a href="http://www.doxygen.org/index.html">doxygen</a> 1.8.15 </li>
 </ul>
 </div>

@@ -181,9 +181,9 @@ typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_mem_map
 <tr class="memitem:a97d177f59e4dab8f7806c6fded1559da"><td class="memItemLeft" align="right" valign="top"><a id="a97d177f59e4dab8f7806c6fded1559da"></a>
 typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_mem_map_contiguous_translations</b>) (uint64_t addr_1, uint64_t addr_2)</td></tr>
 <tr class="separator:a97d177f59e4dab8f7806c6fded1559da"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a16a609191d398f6de37ca9c0a94ac76a"><td class="memItemLeft" align="right" valign="top"><a id="a16a609191d398f6de37ca9c0a94ac76a"></a>
-typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_pci_error_handler</b>) (siginfo_t *info, void *ctx)</td></tr>
-<tr class="separator:a16a609191d398f6de37ca9c0a94ac76a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0403fee5f2698d952790cd76a58dc794"><td class="memItemLeft" align="right" valign="top"><a id="a0403fee5f2698d952790cd76a58dc794"></a>
+typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_pci_error_handler</b>) (const void *failure_addr, void *ctx)</td></tr>
+<tr class="separator:a0403fee5f2698d952790cd76a58dc794"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
@@ -4341,7 +4341,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
 <ul>
-        <li class="footer">Generated on Mon Jun 14 2021 04:04:31 for SPDK by
+        <li class="footer">Generated on Tue Jun 15 2021 04:04:23 for SPDK by
         <a href="http://www.doxygen.org/index.html">doxygen</a> 1.8.15 </li>
 </ul>
 </div>

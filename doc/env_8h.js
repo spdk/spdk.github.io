@@ -25,7 +25,7 @@ var env_8h =
     [ "spdk_mem_map_notify_cb", "env_8h.html#ac018be4449e60d4e5992e1e4be9bbef3", null ],
     [ "spdk_mempool_obj_cb_t", "env_8h.html#a039d3ef1514e326b6c2d8a527f6a6aaa", null ],
     [ "spdk_pci_enum_cb", "env_8h.html#a0083aec1c2ac9ae023b744a80160af79", null ],
-    [ "spdk_pci_error_handler", "env_8h.html#a16a609191d398f6de37ca9c0a94ac76a", null ],
+    [ "spdk_pci_error_handler", "env_8h.html#a0403fee5f2698d952790cd76a58dc794", null ],
     [ "thread_start_fn", "env_8h.html#a0083ace78471c3d3d247e21e4968d526", null ],
     [ "spdk_mem_map_notify_action", "env_8h.html#a96af19906abf2a01e9f1f2105f90722c", [
       [ "SPDK_MEM_MAP_NOTIFY_REGISTER", "env_8h.html#a96af19906abf2a01e9f1f2105f90722ca75012c88ab9a083bd6e8f511d7219c2e", null ],
