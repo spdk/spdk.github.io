@@ -1724,6 +1724,12 @@ iscsi_set_options method</h2>
 <td class="markdownTableBodyNone">max_large_datain_per_connection  </td><td class="markdownTableBodyNone">Optional  </td><td class="markdownTableBodyNone">number  </td><td class="markdownTableBodyNone">Max number of outstanding split read I/Os per connection (default: 64)   </td></tr>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">max_r2t_per_connection  </td><td class="markdownTableBodyNone">Optional  </td><td class="markdownTableBodyNone">number  </td><td class="markdownTableBodyNone">Max number of outstanding R2Ts per connection (default: 4)   </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">pdu_pool_size  </td><td class="markdownTableBodyNone">Optional  </td><td class="markdownTableBodyNone">number  </td><td class="markdownTableBodyNone">Number of PDUs in the pool (default: approximately 2 * max_sessions * (max_queue_depth + max_connections_per_session))   </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">immediate_data_pool_size  </td><td class="markdownTableBodyNone">Optional  </td><td class="markdownTableBodyNone">number  </td><td class="markdownTableBodyNone">Number of immediate data buffers in the pool (default: 128 * max_sessions)   </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">data_out_pool_size  </td><td class="markdownTableBodyNone">Optional  </td><td class="markdownTableBodyNone">number  </td><td class="markdownTableBodyNone">Number of data out buffers in the pool (default: 16 * max_sessions)   </td></tr>
 </table>
 <p>To load CHAP shared secret file, its path is required to specify explicitly in the parameter <code>auth_file</code>.</p>
 <p>Parameters <code>disable_chap</code> and <code>require_chap</code> are mutually exclusive. Parameters <code>no_discovery_auth</code>, <code>req_discovery_auth</code>, <code>req_discovery_auth_mutual</code>, and <code>discovery_auth_group</code> are still available instead of <code>disable_chap</code>, <code>require_chap</code>, <code>mutual_chap</code>, and <code>chap_group</code>, respectivey but will be removed in future releases.</p>
@@ -3577,7 +3583,7 @@ spdk_get_version</h2>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
 <ul>
-        <li class="footer">Generated on Wed Jun 16 2021 04:04:23 for SPDK by
+        <li class="footer">Generated on Thu Jun 17 2021 04:04:25 for SPDK by
         <a href="http://www.doxygen.org/index.html">doxygen</a> 1.8.15 </li>
 </ul>
 </div>
