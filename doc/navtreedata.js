@@ -42,10 +42,6 @@ var NAVTREE =
       [ "Capturing sufficient trace events", "nvmf_tgt_tracepoints.html#capture_trace_events", null ],
       [ "Adding New Tracepoints", "nvmf_tgt_tracepoints.html#add_tracepoints", null ]
     ] ],
-    [ "RPMs", "rpms.html", [
-      [ "In this document", "rpms.html#rpms_toc", null ],
-      [ "Building SPDK RPMs", "rpms.html#building_rpms", null ]
-    ] ],
     [ "Modules", "modules.html", "modules" ],
     [ "Data Structures", "annotated.html", [
       [ "Data Structures", "annotated.html", "annotated_dup" ],
