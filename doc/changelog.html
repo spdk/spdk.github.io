@@ -119,6 +119,7 @@ v21.07: (Upcoming Release)</h1>
 <p>New RPC <code>bdev_rbd_register_cluster</code> and <code>bdev_rbd_unregister_cluster</code> was added, it allows to create and delete the rados object cluster, then users can choose the cluster to create related rbd device.</p>
 <p>Revised <code>bdev_rbd_create</code> parameter, it allows to use an optional parameter &ndash;cluster-name to create a rbd bdev with an already registered Rados Cluster Object.</p>
 <p>New RPC <code>bdev_rbd_get_clusters_info</code> was added, it allows to get the info of the registered Rados Cluster names.</p>
+<p>Revised a parameter <code>--stripe-size_kb</code> to <code>--stripe-size-kb</code> of <code>bdev_raid_create</code> method provided in <code>scripts/rpc.py</code> for consistency.</p>
 <h2>bdev</h2>
 <p>Removed ZCOPY emulation: The bdev module can be checked to see if it supports ZCOPY and if not supported then use existing READ/WRITE commands.</p>
 <p>Added iov to spdk_bdev_zcopy_start</p>
@@ -761,7 +762,7 @@ v19.04: Compression bdev, Notification library, NVMe Opal support</h1>
 <h2>AIO</h2>
 <p>AIO bdev module can now reap I/O completions directly from userspace, significantly improving the overall performance.</p>
 <h2>blobfs</h2>
-<p>Synchronous IO operations no longer use <a class="el" href="structspdk__io__channel.html" title="Represents a per-thread channel for accessing an I/O device.">spdk_io_channel</a>, but instead use spdk_fs_thread_ctx. The behavior is otherwise identical.</p>
+<p>Synchronous IO operations no longer use spdk_io_channel, but instead use spdk_fs_thread_ctx. The behavior is otherwise identical.</p>
 <h2>OCF</h2>
 <p>Added support for caching multiple bdevs using a single bdev as a cache.</p>
 <h2>notify</h2>
@@ -1293,7 +1294,7 @@ v16.06: NVMf userspace target</h1>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
 <ul>
-        <li class="footer">Generated on Thu Jun 24 2021 04:04:23 for SPDK by
+        <li class="footer">Generated on Fri Jun 25 2021 04:04:15 for SPDK by
         <a href="http://www.doxygen.org/index.html">doxygen</a> 1.8.15 </li>
 </ul>
 </div>

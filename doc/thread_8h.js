@@ -1,8 +1,8 @@
 var thread_8h =
 [
-    [ "spdk_io_channel", "structspdk__io__channel.html", "structspdk__io__channel" ],
     [ "spdk_thread_stats", "structspdk__thread__stats.html", "structspdk__thread__stats" ],
     [ "SPDK_INTERRUPT_REGISTER", "thread_8h.html#ac15064b1cd3d036753e04c5c207ad71d", null ],
+    [ "SPDK_IO_CHANNEL_STRUCT_SIZE", "thread_8h.html#a22af34e45fef3fcea2ed3612d9bde2e8", null ],
     [ "SPDK_POLLER_REGISTER", "thread_8h.html#a17cf88195e46bb118ac03528f7f5eee0", null ],
     [ "spdk_channel_for_each_cpl", "thread_8h.html#a96f03fe115196f1de03292ed6d86fd46", null ],
     [ "spdk_channel_msg", "thread_8h.html#a2dd91f3094f8b4cf60f460e3f88bbf0c", null ],

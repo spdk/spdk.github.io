@@ -3099,7 +3099,7 @@ bdev_raid_create</h2>
 </table>
 <h3>Example</h3>
 <p>Example request:</p>
-<div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;method&quot;: &quot;bdev_raid_create&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;params&quot;: {</div><div class="line">    &quot;name&quot;: &quot;Raid0&quot;,</div><div class="line">    &quot;raid_level&quot;: &quot;0&quot;,</div><div class="line">    &quot;base_bdevs&quot;: [</div><div class="line">      &quot;Malloc0&quot;,</div><div class="line">      &quot;Malloc1&quot;,</div><div class="line">      &quot;Malloc2&quot;,</div><div class="line">      &quot;Malloc3&quot;</div><div class="line">    ],</div><div class="line">    &quot;strip_size&quot;: 4096</div><div class="line">  }</div><div class="line">}</div></div><!-- fragment --><p>Example response:</p>
+<div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;method&quot;: &quot;bdev_raid_create&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;params&quot;: {</div><div class="line">    &quot;name&quot;: &quot;Raid0&quot;,</div><div class="line">    &quot;raid_level&quot;: &quot;0&quot;,</div><div class="line">    &quot;base_bdevs&quot;: [</div><div class="line">      &quot;Malloc0&quot;,</div><div class="line">      &quot;Malloc1&quot;,</div><div class="line">      &quot;Malloc2&quot;,</div><div class="line">      &quot;Malloc3&quot;</div><div class="line">    ],</div><div class="line">    &quot;strip_size_kb&quot;: 4</div><div class="line">  }</div><div class="line">}</div></div><!-- fragment --><p>Example response:</p>
 <div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: true</div><div class="line">}</div></div><!-- fragment --><h2><a class="anchor" id="rpc_bdev_raid_delete"></a>
 bdev_raid_delete</h2>
 <p>Removes RAID bdev.</p>
@@ -3583,7 +3583,7 @@ spdk_get_version</h2>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
 <ul>
-        <li class="footer">Generated on Thu Jun 24 2021 04:04:23 for SPDK by
+        <li class="footer">Generated on Fri Jun 25 2021 04:04:15 for SPDK by
         <a href="http://www.doxygen.org/index.html">doxygen</a> 1.8.15 </li>
 </ul>
 </div>

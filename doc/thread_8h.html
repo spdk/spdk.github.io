@@ -101,14 +101,14 @@ $(document).ready(function(){initNavTree('thread_8h.html','');});
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__io__channel.html">spdk_io_channel</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents a per-thread channel for accessing an I/O device.  <a href="structspdk__io__channel.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__thread__stats.html">spdk_thread_stats</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
+<tr class="memitem:a22af34e45fef3fcea2ed3612d9bde2e8"><td class="memItemLeft" align="right" valign="top"><a id="a22af34e45fef3fcea2ed3612d9bde2e8"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_IO_CHANNEL_STRUCT_SIZE</b>&#160;&#160;&#160;96</td></tr>
+<tr class="separator:a22af34e45fef3fcea2ed3612d9bde2e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a17cf88195e46bb118ac03528f7f5eee0"><td class="memItemLeft" align="right" valign="top"><a id="a17cf88195e46bb118ac03528f7f5eee0"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_POLLER_REGISTER</b>(fn,  arg,  period_microseconds)&#160;&#160;&#160;<a class="el" href="thread_8h.html#a4e1086db1bd40b0a1720bd148967d82d">spdk_poller_register_named</a>(fn, arg, period_microseconds, #fn)</td></tr>
 <tr class="separator:a17cf88195e46bb118ac03528f7f5eee0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -295,19 +295,19 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 <tr class="memitem:a4c6c3df3a611c10c176cb87966c622f0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="thread_8h.html#a4c6c3df3a611c10c176cb87966c622f0">spdk_io_device_unregister</a> (void *io_device, <a class="el" href="thread_8h.html#ae044f4141737c7f2df49cdfb03fd58ca">spdk_io_device_unregister_cb</a> unregister_cb)</td></tr>
 <tr class="memdesc:a4c6c3df3a611c10c176cb87966c622f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unregister the opaque io_device context as an I/O device.  <a href="#a4c6c3df3a611c10c176cb87966c622f0">More...</a><br /></td></tr>
 <tr class="separator:a4c6c3df3a611c10c176cb87966c622f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8537c42a7aa203b50578efed509d9ba8"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="thread_8h.html#a8537c42a7aa203b50578efed509d9ba8">spdk_get_io_channel</a> (void *io_device)</td></tr>
+<tr class="memitem:a8537c42a7aa203b50578efed509d9ba8"><td class="memItemLeft" align="right" valign="top">struct spdk_io_channel *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="thread_8h.html#a8537c42a7aa203b50578efed509d9ba8">spdk_get_io_channel</a> (void *io_device)</td></tr>
 <tr class="memdesc:a8537c42a7aa203b50578efed509d9ba8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get an I/O channel for the specified io_device to be used by the calling thread.  <a href="#a8537c42a7aa203b50578efed509d9ba8">More...</a><br /></td></tr>
 <tr class="separator:a8537c42a7aa203b50578efed509d9ba8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a717571a5011db0cdd730498146f25f9a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="thread_8h.html#a717571a5011db0cdd730498146f25f9a">spdk_put_io_channel</a> (struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *ch)</td></tr>
+<tr class="memitem:a717571a5011db0cdd730498146f25f9a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="thread_8h.html#a717571a5011db0cdd730498146f25f9a">spdk_put_io_channel</a> (struct spdk_io_channel *ch)</td></tr>
 <tr class="memdesc:a717571a5011db0cdd730498146f25f9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Release a reference to an I/O channel.  <a href="#a717571a5011db0cdd730498146f25f9a">More...</a><br /></td></tr>
 <tr class="separator:a717571a5011db0cdd730498146f25f9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adbf6e22252bc768003c7bbc165fc3c51"><td class="memItemLeft" align="right" valign="top">static void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="thread_8h.html#adbf6e22252bc768003c7bbc165fc3c51">spdk_io_channel_get_ctx</a> (struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *ch)</td></tr>
+<tr class="memitem:adbf6e22252bc768003c7bbc165fc3c51"><td class="memItemLeft" align="right" valign="top">static void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="thread_8h.html#adbf6e22252bc768003c7bbc165fc3c51">spdk_io_channel_get_ctx</a> (struct spdk_io_channel *ch)</td></tr>
 <tr class="memdesc:adbf6e22252bc768003c7bbc165fc3c51"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the context buffer associated with an I/O channel.  <a href="#adbf6e22252bc768003c7bbc165fc3c51">More...</a><br /></td></tr>
 <tr class="separator:adbf6e22252bc768003c7bbc165fc3c51"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9608b7b0fd448edec6ea5dd38ad04a57"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="thread_8h.html#a9608b7b0fd448edec6ea5dd38ad04a57">spdk_io_channel_from_ctx</a> (void *ctx)</td></tr>
+<tr class="memitem:a9608b7b0fd448edec6ea5dd38ad04a57"><td class="memItemLeft" align="right" valign="top">struct spdk_io_channel *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="thread_8h.html#a9608b7b0fd448edec6ea5dd38ad04a57">spdk_io_channel_from_ctx</a> (void *ctx)</td></tr>
 <tr class="memdesc:a9608b7b0fd448edec6ea5dd38ad04a57"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get I/O channel from the context buffer.  <a href="#a9608b7b0fd448edec6ea5dd38ad04a57">More...</a><br /></td></tr>
 <tr class="separator:a9608b7b0fd448edec6ea5dd38ad04a57"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8ff9537d26ac923a7a93cd55ba315b5b"><td class="memItemLeft" align="right" valign="top">struct spdk_thread *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="thread_8h.html#a8ff9537d26ac923a7a93cd55ba315b5b">spdk_io_channel_get_thread</a> (struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *ch)</td></tr>
+<tr class="memitem:a8ff9537d26ac923a7a93cd55ba315b5b"><td class="memItemLeft" align="right" valign="top">struct spdk_thread *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="thread_8h.html#a8ff9537d26ac923a7a93cd55ba315b5b">spdk_io_channel_get_thread</a> (struct spdk_io_channel *ch)</td></tr>
 <tr class="memdesc:a8ff9537d26ac923a7a93cd55ba315b5b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the thread associated with an I/O channel.  <a href="#a8ff9537d26ac923a7a93cd55ba315b5b">More...</a><br /></td></tr>
 <tr class="separator:a8ff9537d26ac923a7a93cd55ba315b5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa7a2ca9bd0497544e852c65fd5263cd1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="thread_8h.html#aa7a2ca9bd0497544e852c65fd5263cd1">spdk_for_each_channel</a> (void *io_device, <a class="el" href="thread_8h.html#a2dd91f3094f8b4cf60f460e3f88bbf0c">spdk_channel_msg</a> fn, void *ctx, <a class="el" href="thread_8h.html#a96f03fe115196f1de03292ed6d86fd46">spdk_channel_for_each_cpl</a> cpl)</td></tr>
@@ -316,13 +316,13 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 <tr class="memitem:a939935cee4dac6636f2b7c6db0b2fec1"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="thread_8h.html#a939935cee4dac6636f2b7c6db0b2fec1">spdk_io_channel_iter_get_io_device</a> (struct spdk_io_channel_iter *i)</td></tr>
 <tr class="memdesc:a939935cee4dac6636f2b7c6db0b2fec1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get io_device from the I/O channel iterator.  <a href="#a939935cee4dac6636f2b7c6db0b2fec1">More...</a><br /></td></tr>
 <tr class="separator:a939935cee4dac6636f2b7c6db0b2fec1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a83adef6c3df9568bdea346b8e7dcbaa5"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="thread_8h.html#a83adef6c3df9568bdea346b8e7dcbaa5">spdk_io_channel_iter_get_channel</a> (struct spdk_io_channel_iter *i)</td></tr>
+<tr class="memitem:a83adef6c3df9568bdea346b8e7dcbaa5"><td class="memItemLeft" align="right" valign="top">struct spdk_io_channel *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="thread_8h.html#a83adef6c3df9568bdea346b8e7dcbaa5">spdk_io_channel_iter_get_channel</a> (struct spdk_io_channel_iter *i)</td></tr>
 <tr class="memdesc:a83adef6c3df9568bdea346b8e7dcbaa5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get I/O channel from the I/O channel iterator.  <a href="#a83adef6c3df9568bdea346b8e7dcbaa5">More...</a><br /></td></tr>
 <tr class="separator:a83adef6c3df9568bdea346b8e7dcbaa5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:add3ebaac7b55dddb239c720c80d97dea"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="thread_8h.html#add3ebaac7b55dddb239c720c80d97dea">spdk_io_channel_iter_get_ctx</a> (struct spdk_io_channel_iter *i)</td></tr>
 <tr class="memdesc:add3ebaac7b55dddb239c720c80d97dea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get context buffer from the I/O channel iterator.  <a href="#add3ebaac7b55dddb239c720c80d97dea">More...</a><br /></td></tr>
 <tr class="separator:add3ebaac7b55dddb239c720c80d97dea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a49adcba47a8dc22c6d6046bc05c47674"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="thread_8h.html#a49adcba47a8dc22c6d6046bc05c47674">spdk_io_channel_get_io_device</a> (struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *ch)</td></tr>
+<tr class="memitem:a49adcba47a8dc22c6d6046bc05c47674"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="thread_8h.html#a49adcba47a8dc22c6d6046bc05c47674">spdk_io_channel_get_io_device</a> (struct spdk_io_channel *ch)</td></tr>
 <tr class="memdesc:a49adcba47a8dc22c6d6046bc05c47674"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the io_device for the specified I/O channel.  <a href="#a49adcba47a8dc22c6d6046bc05c47674">More...</a><br /></td></tr>
 <tr class="separator:a49adcba47a8dc22c6d6046bc05c47674"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4e87fc8c0fc870769c068a2752cdc359"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="thread_8h.html#a4e87fc8c0fc870769c068a2752cdc359">spdk_for_each_channel_continue</a> (struct spdk_io_channel_iter *i, int status)</td></tr>
@@ -793,7 +793,7 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a>* spdk_get_io_channel </td>
+          <td class="memname">struct spdk_io_channel* spdk_get_io_channel </td>
           <td>(</td>
           <td class="paramtype">void *&#160;</td>
           <td class="paramname"><em>io_device</em></td><td>)</td>
@@ -1003,7 +1003,7 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a>* spdk_io_channel_from_ctx </td>
+          <td class="memname">struct spdk_io_channel* spdk_io_channel_from_ctx </td>
           <td>(</td>
           <td class="paramtype">void *&#160;</td>
           <td class="paramname"><em>ctx</em></td><td>)</td>
@@ -1036,7 +1036,7 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
         <tr>
           <td class="memname">static void* spdk_io_channel_get_ctx </td>
           <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *&#160;</td>
+          <td class="paramtype">struct spdk_io_channel *&#160;</td>
           <td class="paramname"><em>ch</em></td><td>)</td>
           <td></td>
         </tr>
@@ -1068,7 +1068,7 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
         <tr>
           <td class="memname">void* spdk_io_channel_get_io_device </td>
           <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *&#160;</td>
+          <td class="paramtype">struct spdk_io_channel *&#160;</td>
           <td class="paramname"><em>ch</em></td><td>)</td>
           <td></td>
         </tr>
@@ -1095,7 +1095,7 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
         <tr>
           <td class="memname">struct spdk_thread* spdk_io_channel_get_thread </td>
           <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *&#160;</td>
+          <td class="paramtype">struct spdk_io_channel *&#160;</td>
           <td class="paramname"><em>ch</em></td><td>)</td>
           <td></td>
         </tr>
@@ -1120,7 +1120,7 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a>* spdk_io_channel_iter_get_channel </td>
+          <td class="memname">struct spdk_io_channel* spdk_io_channel_iter_get_channel </td>
           <td>(</td>
           <td class="paramtype">struct spdk_io_channel_iter *&#160;</td>
           <td class="paramname"><em>i</em></td><td>)</td>
@@ -1524,7 +1524,7 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
         <tr>
           <td class="memname">void spdk_put_io_channel </td>
           <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *&#160;</td>
+          <td class="paramtype">struct spdk_io_channel *&#160;</td>
           <td class="paramname"><em>ch</em></td><td>)</td>
           <td></td>
         </tr>
@@ -2328,7 +2328,7 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
 <ul>
-        <li class="footer">Generated on Thu Jun 24 2021 04:04:22 for SPDK by
+        <li class="footer">Generated on Fri Jun 25 2021 04:04:15 for SPDK by
         <a href="http://www.doxygen.org/index.html">doxygen</a> 1.8.15 </li>
 </ul>
 </div>

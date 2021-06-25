@@ -98,15 +98,14 @@ Collaboration diagram for spdk_bdev_io:</div>
 <div class="dyncontent">
 <div class="center"><img src="structspdk__bdev__io__coll__graph.png" border="0" usemap="#spdk__bdev__io_coll__map" alt="Collaboration graph"/></div>
 <map name="spdk__bdev__io_coll__map" id="spdk__bdev__io_coll__map">
-<area shape="rect"  title=" " alt="" coords="589,117,699,144"/>
-<area shape="rect"  href="structspdk__bdev__io_1_1____bdev__io__internal__fields.html" title="Fields that are used internally by the bdev subsystem." alt="" coords="867,90,1032,131"/>
-<area shape="rect"  href="structspdk__nvme__cmd.html" title=" " alt="" coords="325,83,457,109"/>
-<area shape="rect"  href="unionspdk__nvme__cmd__cdw10.html" title=" " alt="" coords="12,32,193,59"/>
-<area shape="rect"  href="unionspdk__nvme__cmd__cdw11.html" title=" " alt="" coords="12,83,193,109"/>
-<area shape="rect"  href="structspdk__nvme__sgl__descriptor.html" title=" " alt="" coords="5,133,200,160"/>
-<area shape="rect"  href="structspdk__io__channel.html" title="Represents a per&#45;thread channel for accessing an I/O device." alt="" coords="326,17,457,44"/>
-<area shape="rect"  href="structspdk__bdev__io__wait__entry.html" title="Structure to register a callback when an spdk_bdev_io becomes available." alt="" coords="551,171,737,197"/>
-<area shape="rect"  href="structspdk__bdev.html" title=" " alt="" coords="345,153,437,180"/>
+<area shape="rect"  title=" " alt="" coords="581,109,691,136"/>
+<area shape="rect"  href="structspdk__bdev__io_1_1____bdev__io__internal__fields.html" title="Fields that are used internally by the bdev subsystem." alt="" coords="884,73,1049,114"/>
+<area shape="rect"  href="structspdk__nvme__cmd.html" title=" " alt="" coords="325,109,457,136"/>
+<area shape="rect"  href="unionspdk__nvme__cmd__cdw10.html" title=" " alt="" coords="12,59,193,85"/>
+<area shape="rect"  href="unionspdk__nvme__cmd__cdw11.html" title=" " alt="" coords="12,109,193,136"/>
+<area shape="rect"  href="structspdk__nvme__sgl__descriptor.html" title=" " alt="" coords="5,160,200,187"/>
+<area shape="rect"  href="structspdk__bdev__io__wait__entry.html" title="Structure to register a callback when an spdk_bdev_io becomes available." alt="" coords="543,5,729,32"/>
+<area shape="rect"  href="structspdk__bdev.html" title=" " alt="" coords="345,35,437,61"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -209,7 +208,7 @@ union {</td></tr>
 <tr class="separator:a6e4a64cc4d862cf115451766c8e4f890"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8737ecb9e4ddccc64a6cf6446cdf5626"><td class="memItemLeft" >
 &#160;&#160;&#160;struct {</td></tr>
-<tr class="memitem:ae3d16ed976208504f5c029a4d705edde"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *&#160;&#160;&#160;<a class="el" href="structspdk__bdev__io.html#ae513a78b2095fbd1d0674fa11d26ef2b">ch_ref</a></td></tr>
+<tr class="memitem:ae3d16ed976208504f5c029a4d705edde"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;struct spdk_io_channel *&#160;&#160;&#160;<a class="el" href="structspdk__bdev__io.html#ae513a78b2095fbd1d0674fa11d26ef2b">ch_ref</a></td></tr>
 <tr class="memdesc:ae3d16ed976208504f5c029a4d705edde"><td class="mdescLeft">&#160;</td><td class="mdescRight">Channel reference held while messages for this reset are in progress.  <a href="#ae3d16ed976208504f5c029a4d705edde">More...</a><br /></td></tr>
 <tr class="separator:ae3d16ed976208504f5c029a4d705edde"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8737ecb9e4ddccc64a6cf6446cdf5626"><td class="memItemLeft" valign="top">&#160;&#160;&#160;}&#160;&#160;&#160;<b>reset</b></td></tr>
@@ -327,7 +326,7 @@ uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="s
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a>* spdk_bdev_io::ch_ref</td>
+          <td class="memname">struct spdk_io_channel* spdk_bdev_io::ch_ref</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -490,7 +489,7 @@ uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="s
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
 <ul>
-        <li class="footer">Generated on Thu Jun 24 2021 04:04:23 for SPDK by
+        <li class="footer">Generated on Fri Jun 25 2021 04:04:15 for SPDK by
         <a href="http://www.doxygen.org/index.html">doxygen</a> 1.8.15 </li>
 </ul>
 </div>

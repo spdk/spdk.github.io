@@ -96,47 +96,46 @@ Collaboration diagram for spdk_bs_dev:</div>
 <div class="dyncontent">
 <div class="center"><img src="structspdk__bs__dev__coll__graph.png" border="0" usemap="#spdk__bs__dev_coll__map" alt="Collaboration graph"/></div>
 <map name="spdk__bs__dev_coll__map" id="spdk__bs__dev_coll__map">
-<area shape="rect"  title=" " alt="" coords="5,288,112,315"/>
-<area shape="rect"  href="structspdk__io__channel.html" title="Represents a per&#45;thread channel for accessing an I/O device." alt="" coords="29,5,160,32"/>
-<area shape="rect"  href="structspdk__bdev__fn__table.html" title="Function table for a block device backend." alt="" coords="75,102,227,129"/>
-<area shape="rect"  href="structspdk__bdev.html" title=" " alt="" coords="229,199,321,225"/>
-<area shape="rect"  href="structspdk__bdev__module.html" title="Block device module." alt="" coords="221,5,369,32"/>
-<area shape="rect"  href="structspdk__bdev_1_1____bdev__internal__fields.html" title="Fields that are used internally by the bdev subsystem." alt="" coords="352,95,555,136"/>
-<area shape="rect"  href="structspdk__uuid.html" title=" " alt="" coords="579,102,667,129"/>
+<area shape="rect"  title=" " alt="" coords="309,288,415,315"/>
+<area shape="rect"  href="structspdk__bdev.html" title=" " alt="" coords="316,199,408,225"/>
+<area shape="rect"  href="structspdk__bdev__module.html" title="Block device module." alt="" coords="5,5,153,32"/>
+<area shape="rect"  href="structspdk__bdev_1_1____bdev__internal__fields.html" title="Fields that are used internally by the bdev subsystem." alt="" coords="135,95,338,136"/>
+<area shape="rect"  href="structspdk__uuid.html" title=" " alt="" coords="362,102,450,129"/>
+<area shape="rect"  href="structspdk__bdev__fn__table.html" title="Function table for a block device backend." alt="" coords="474,102,626,129"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
 <tr class="memitem:a6beeab94f487334af1a8c3a0ec330b52"><td class="memItemLeft" align="right" valign="top"><a id="a6beeab94f487334af1a8c3a0ec330b52"></a>
-struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *(*&#160;</td><td class="memItemRight" valign="bottom"><b>create_channel</b> )(struct <a class="el" href="structspdk__bs__dev.html">spdk_bs_dev</a> *dev)</td></tr>
+struct spdk_io_channel *(*&#160;</td><td class="memItemRight" valign="bottom"><b>create_channel</b> )(struct <a class="el" href="structspdk__bs__dev.html">spdk_bs_dev</a> *dev)</td></tr>
 <tr class="separator:a6beeab94f487334af1a8c3a0ec330b52"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0ba5e6b593abc0fa5c9be89e51b8d79d"><td class="memItemLeft" align="right" valign="top"><a id="a0ba5e6b593abc0fa5c9be89e51b8d79d"></a>
-void(*&#160;</td><td class="memItemRight" valign="bottom"><b>destroy_channel</b> )(struct <a class="el" href="structspdk__bs__dev.html">spdk_bs_dev</a> *dev, struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *channel)</td></tr>
+void(*&#160;</td><td class="memItemRight" valign="bottom"><b>destroy_channel</b> )(struct <a class="el" href="structspdk__bs__dev.html">spdk_bs_dev</a> *dev, struct spdk_io_channel *channel)</td></tr>
 <tr class="separator:a0ba5e6b593abc0fa5c9be89e51b8d79d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7ae3bb18bf006e0f40f1ad36166a8369"><td class="memItemLeft" align="right" valign="top"><a id="a7ae3bb18bf006e0f40f1ad36166a8369"></a>
 void(*&#160;</td><td class="memItemRight" valign="bottom"><b>destroy</b> )(struct <a class="el" href="structspdk__bs__dev.html">spdk_bs_dev</a> *dev)</td></tr>
 <tr class="separator:a7ae3bb18bf006e0f40f1ad36166a8369"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4e782b655106c1d25b543960b7ba2c0f"><td class="memItemLeft" align="right" valign="top"><a id="a4e782b655106c1d25b543960b7ba2c0f"></a>
-void(*&#160;</td><td class="memItemRight" valign="bottom"><b>read</b> )(struct <a class="el" href="structspdk__bs__dev.html">spdk_bs_dev</a> *dev, struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *channel, void *payload, uint64_t lba, uint32_t lba_count, struct <a class="el" href="structspdk__bs__dev__cb__args.html">spdk_bs_dev_cb_args</a> *cb_args)</td></tr>
+void(*&#160;</td><td class="memItemRight" valign="bottom"><b>read</b> )(struct <a class="el" href="structspdk__bs__dev.html">spdk_bs_dev</a> *dev, struct spdk_io_channel *channel, void *payload, uint64_t lba, uint32_t lba_count, struct <a class="el" href="structspdk__bs__dev__cb__args.html">spdk_bs_dev_cb_args</a> *cb_args)</td></tr>
 <tr class="separator:a4e782b655106c1d25b543960b7ba2c0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a20356550a4ade5c4f8954c57e5d679e2"><td class="memItemLeft" align="right" valign="top"><a id="a20356550a4ade5c4f8954c57e5d679e2"></a>
-void(*&#160;</td><td class="memItemRight" valign="bottom"><b>write</b> )(struct <a class="el" href="structspdk__bs__dev.html">spdk_bs_dev</a> *dev, struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *channel, void *payload, uint64_t lba, uint32_t lba_count, struct <a class="el" href="structspdk__bs__dev__cb__args.html">spdk_bs_dev_cb_args</a> *cb_args)</td></tr>
+void(*&#160;</td><td class="memItemRight" valign="bottom"><b>write</b> )(struct <a class="el" href="structspdk__bs__dev.html">spdk_bs_dev</a> *dev, struct spdk_io_channel *channel, void *payload, uint64_t lba, uint32_t lba_count, struct <a class="el" href="structspdk__bs__dev__cb__args.html">spdk_bs_dev_cb_args</a> *cb_args)</td></tr>
 <tr class="separator:a20356550a4ade5c4f8954c57e5d679e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a75564a4d0f1815b99c1fe1e1965b3770"><td class="memItemLeft" align="right" valign="top"><a id="a75564a4d0f1815b99c1fe1e1965b3770"></a>
-void(*&#160;</td><td class="memItemRight" valign="bottom"><b>readv</b> )(struct <a class="el" href="structspdk__bs__dev.html">spdk_bs_dev</a> *dev, struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *channel, struct iovec *iov, int iovcnt, uint64_t lba, uint32_t lba_count, struct <a class="el" href="structspdk__bs__dev__cb__args.html">spdk_bs_dev_cb_args</a> *cb_args)</td></tr>
+void(*&#160;</td><td class="memItemRight" valign="bottom"><b>readv</b> )(struct <a class="el" href="structspdk__bs__dev.html">spdk_bs_dev</a> *dev, struct spdk_io_channel *channel, struct iovec *iov, int iovcnt, uint64_t lba, uint32_t lba_count, struct <a class="el" href="structspdk__bs__dev__cb__args.html">spdk_bs_dev_cb_args</a> *cb_args)</td></tr>
 <tr class="separator:a75564a4d0f1815b99c1fe1e1965b3770"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a528b038c2389cf71b6739ac37ed6e7f6"><td class="memItemLeft" align="right" valign="top"><a id="a528b038c2389cf71b6739ac37ed6e7f6"></a>
-void(*&#160;</td><td class="memItemRight" valign="bottom"><b>writev</b> )(struct <a class="el" href="structspdk__bs__dev.html">spdk_bs_dev</a> *dev, struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *channel, struct iovec *iov, int iovcnt, uint64_t lba, uint32_t lba_count, struct <a class="el" href="structspdk__bs__dev__cb__args.html">spdk_bs_dev_cb_args</a> *cb_args)</td></tr>
+void(*&#160;</td><td class="memItemRight" valign="bottom"><b>writev</b> )(struct <a class="el" href="structspdk__bs__dev.html">spdk_bs_dev</a> *dev, struct spdk_io_channel *channel, struct iovec *iov, int iovcnt, uint64_t lba, uint32_t lba_count, struct <a class="el" href="structspdk__bs__dev__cb__args.html">spdk_bs_dev_cb_args</a> *cb_args)</td></tr>
 <tr class="separator:a528b038c2389cf71b6739ac37ed6e7f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0447419a84f9f1b4e883d9111d61e8ec"><td class="memItemLeft" align="right" valign="top"><a id="a0447419a84f9f1b4e883d9111d61e8ec"></a>
-void(*&#160;</td><td class="memItemRight" valign="bottom"><b>flush</b> )(struct <a class="el" href="structspdk__bs__dev.html">spdk_bs_dev</a> *dev, struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *channel, struct <a class="el" href="structspdk__bs__dev__cb__args.html">spdk_bs_dev_cb_args</a> *cb_args)</td></tr>
+void(*&#160;</td><td class="memItemRight" valign="bottom"><b>flush</b> )(struct <a class="el" href="structspdk__bs__dev.html">spdk_bs_dev</a> *dev, struct spdk_io_channel *channel, struct <a class="el" href="structspdk__bs__dev__cb__args.html">spdk_bs_dev_cb_args</a> *cb_args)</td></tr>
 <tr class="separator:a0447419a84f9f1b4e883d9111d61e8ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a68eb7818ed5a656facffe12decf695fe"><td class="memItemLeft" align="right" valign="top"><a id="a68eb7818ed5a656facffe12decf695fe"></a>
-void(*&#160;</td><td class="memItemRight" valign="bottom"><b>write_zeroes</b> )(struct <a class="el" href="structspdk__bs__dev.html">spdk_bs_dev</a> *dev, struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *channel, uint64_t lba, uint32_t lba_count, struct <a class="el" href="structspdk__bs__dev__cb__args.html">spdk_bs_dev_cb_args</a> *cb_args)</td></tr>
+void(*&#160;</td><td class="memItemRight" valign="bottom"><b>write_zeroes</b> )(struct <a class="el" href="structspdk__bs__dev.html">spdk_bs_dev</a> *dev, struct spdk_io_channel *channel, uint64_t lba, uint32_t lba_count, struct <a class="el" href="structspdk__bs__dev__cb__args.html">spdk_bs_dev_cb_args</a> *cb_args)</td></tr>
 <tr class="separator:a68eb7818ed5a656facffe12decf695fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac3f9b4422f8c651e6a1975f77f1b4b62"><td class="memItemLeft" align="right" valign="top"><a id="ac3f9b4422f8c651e6a1975f77f1b4b62"></a>
-void(*&#160;</td><td class="memItemRight" valign="bottom"><b>unmap</b> )(struct <a class="el" href="structspdk__bs__dev.html">spdk_bs_dev</a> *dev, struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *channel, uint64_t lba, uint32_t lba_count, struct <a class="el" href="structspdk__bs__dev__cb__args.html">spdk_bs_dev_cb_args</a> *cb_args)</td></tr>
+void(*&#160;</td><td class="memItemRight" valign="bottom"><b>unmap</b> )(struct <a class="el" href="structspdk__bs__dev.html">spdk_bs_dev</a> *dev, struct spdk_io_channel *channel, uint64_t lba, uint32_t lba_count, struct <a class="el" href="structspdk__bs__dev__cb__args.html">spdk_bs_dev_cb_args</a> *cb_args)</td></tr>
 <tr class="separator:ac3f9b4422f8c651e6a1975f77f1b4b62"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab3a4996a37bdfe0ee29f88f2b97543e7"><td class="memItemLeft" align="right" valign="top"><a id="ab3a4996a37bdfe0ee29f88f2b97543e7"></a>
 struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *(*&#160;</td><td class="memItemRight" valign="bottom"><b>get_base_bdev</b> )(struct <a class="el" href="structspdk__bs__dev.html">spdk_bs_dev</a> *dev)</td></tr>
@@ -157,7 +156,7 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>blocklen</b></td>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
 <ul>
-        <li class="footer">Generated on Thu Jun 24 2021 04:04:23 for SPDK by
+        <li class="footer">Generated on Fri Jun 25 2021 04:04:15 for SPDK by
         <a href="http://www.doxygen.org/index.html">doxygen</a> 1.8.15 </li>
 </ul>
 </div>

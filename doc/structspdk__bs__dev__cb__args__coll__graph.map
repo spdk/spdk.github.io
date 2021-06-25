@@ -1,4 +1,0 @@
-<map id="spdk_bs_dev_cb_args" name="spdk_bs_dev_cb_args">
-<area shape="rect" id="node1" title=" " alt="" coords="5,109,168,136"/>
-<area shape="rect" id="node2" href="$structspdk__io__channel.html" title="Represents a per&#45;thread channel for accessing an I/O device." alt="" coords="21,5,152,32"/>
-</map>

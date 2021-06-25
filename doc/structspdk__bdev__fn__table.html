@@ -94,15 +94,6 @@ $(document).ready(function(){initNavTree('structspdk__bdev__fn__table.html','');
 
 <p>Function table for a block device backend.  
  <a href="structspdk__bdev__fn__table.html#details">More...</a></p>
-<div class="dynheader">
-Collaboration diagram for spdk_bdev_fn_table:</div>
-<div class="dyncontent">
-<div class="center"><img src="structspdk__bdev__fn__table__coll__graph.png" border="0" usemap="#spdk__bdev__fn__table_coll__map" alt="Collaboration graph"/></div>
-<map name="spdk__bdev__fn__table_coll__map" id="spdk__bdev__fn__table_coll__map">
-<area shape="rect"  title="Function table for a block device backend." alt="" coords="5,95,157,121"/>
-<area shape="rect"  href="structspdk__io__channel.html" title="Represents a per&#45;thread channel for accessing an I/O device." alt="" coords="16,5,147,32"/>
-</map>
-<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
@@ -110,13 +101,13 @@ Data Fields</h2></td></tr>
 int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev__fn__table.html#a8a76c50a2b20205ec9fffe4afb9e3a15">destruct</a> )(void *ctx)</td></tr>
 <tr class="memdesc:a8a76c50a2b20205ec9fffe4afb9e3a15"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy the backend block device object. <br /></td></tr>
 <tr class="separator:a8a76c50a2b20205ec9fffe4afb9e3a15"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae80a9002371becdc6fb1c13f8f5173bf"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev__fn__table.html#ae80a9002371becdc6fb1c13f8f5173bf">submit_request</a> )(struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *ch, struct <a class="el" href="structspdk__bdev__io.html">spdk_bdev_io</a> *)</td></tr>
+<tr class="memitem:ae80a9002371becdc6fb1c13f8f5173bf"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev__fn__table.html#ae80a9002371becdc6fb1c13f8f5173bf">submit_request</a> )(struct spdk_io_channel *ch, struct <a class="el" href="structspdk__bdev__io.html">spdk_bdev_io</a> *)</td></tr>
 <tr class="memdesc:ae80a9002371becdc6fb1c13f8f5173bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Process the IO.  <a href="#ae80a9002371becdc6fb1c13f8f5173bf">More...</a><br /></td></tr>
 <tr class="separator:ae80a9002371becdc6fb1c13f8f5173bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a20ec74cad9e56c5ac8ee9db239d8f46e"><td class="memItemLeft" align="right" valign="top">bool(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev__fn__table.html#a20ec74cad9e56c5ac8ee9db239d8f46e">io_type_supported</a> )(void *ctx, enum <a class="el" href="bdev_8h.html#a633029e24ab5ae4a689bffa2565a519f">spdk_bdev_io_type</a>)</td></tr>
 <tr class="memdesc:a20ec74cad9e56c5ac8ee9db239d8f46e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the block device supports a specific I/O type.  <a href="#a20ec74cad9e56c5ac8ee9db239d8f46e">More...</a><br /></td></tr>
 <tr class="separator:a20ec74cad9e56c5ac8ee9db239d8f46e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adf37e8944ceb5bfdf5f93f1525a7da98"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev__fn__table.html#adf37e8944ceb5bfdf5f93f1525a7da98">get_io_channel</a> )(void *ctx)</td></tr>
+<tr class="memitem:adf37e8944ceb5bfdf5f93f1525a7da98"><td class="memItemLeft" align="right" valign="top">struct spdk_io_channel *(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev__fn__table.html#adf37e8944ceb5bfdf5f93f1525a7da98">get_io_channel</a> )(void *ctx)</td></tr>
 <tr class="memdesc:adf37e8944ceb5bfdf5f93f1525a7da98"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get an I/O channel for the specific bdev for the calling thread.  <a href="#adf37e8944ceb5bfdf5f93f1525a7da98">More...</a><br /></td></tr>
 <tr class="separator:adf37e8944ceb5bfdf5f93f1525a7da98"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a417860f5598560a20b7bd4b5e8b4c3b0"><td class="memItemLeft" align="right" valign="top">int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev__fn__table.html#a417860f5598560a20b7bd4b5e8b4c3b0">dump_info_json</a> )(void *ctx, struct spdk_json_write_ctx *w)</td></tr>
@@ -125,7 +116,7 @@ int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="str
 <tr class="memitem:a233c08c7269afc1108c3f734cc545ff4"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev__fn__table.html#a233c08c7269afc1108c3f734cc545ff4">write_config_json</a> )(struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *bdev, struct spdk_json_write_ctx *w)</td></tr>
 <tr class="memdesc:a233c08c7269afc1108c3f734cc545ff4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Output bdev-specific RPC configuration to a JSON stream.  <a href="#a233c08c7269afc1108c3f734cc545ff4">More...</a><br /></td></tr>
 <tr class="separator:a233c08c7269afc1108c3f734cc545ff4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aafc336b4a42290b7e944fa0e73558a62"><td class="memItemLeft" align="right" valign="top">uint64_t(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev__fn__table.html#aafc336b4a42290b7e944fa0e73558a62">get_spin_time</a> )(struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *ch)</td></tr>
+<tr class="memitem:aafc336b4a42290b7e944fa0e73558a62"><td class="memItemLeft" align="right" valign="top">uint64_t(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev__fn__table.html#aafc336b4a42290b7e944fa0e73558a62">get_spin_time</a> )(struct spdk_io_channel *ch)</td></tr>
 <tr class="memdesc:aafc336b4a42290b7e944fa0e73558a62"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get spin-time per I/O channel in microseconds.  <a href="#aafc336b4a42290b7e944fa0e73558a62">More...</a><br /></td></tr>
 <tr class="separator:aafc336b4a42290b7e944fa0e73558a62"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a541d4861e6d57c85c6ab659fbde4a417"><td class="memItemLeft" align="right" valign="top">void *(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev__fn__table.html#a541d4861e6d57c85c6ab659fbde4a417">get_module_ctx</a> )(void *ctx)</td></tr>
@@ -161,7 +152,7 @@ int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="str
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a>*(* spdk_bdev_fn_table::get_io_channel) (void *ctx)</td>
+          <td class="memname">struct spdk_io_channel*(* spdk_bdev_fn_table::get_io_channel) (void *ctx)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -193,7 +184,7 @@ int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="str
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint64_t(* spdk_bdev_fn_table::get_spin_time) (struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *ch)</td>
+          <td class="memname">uint64_t(* spdk_bdev_fn_table::get_spin_time) (struct spdk_io_channel *ch)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -226,7 +217,7 @@ int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="str
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void(* spdk_bdev_fn_table::submit_request) (struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *ch, struct <a class="el" href="structspdk__bdev__io.html">spdk_bdev_io</a> *)</td>
+          <td class="memname">void(* spdk_bdev_fn_table::submit_request) (struct spdk_io_channel *ch, struct <a class="el" href="structspdk__bdev__io.html">spdk_bdev_io</a> *)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -263,7 +254,7 @@ int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="str
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
 <ul>
-        <li class="footer">Generated on Thu Jun 24 2021 04:04:23 for SPDK by
+        <li class="footer">Generated on Fri Jun 25 2021 04:04:15 for SPDK by
         <a href="http://www.doxygen.org/index.html">doxygen</a> 1.8.15 </li>
 </ul>
 </div>

@@ -145,10 +145,10 @@ Typedefs</h2></td></tr>
 <tr class="memitem:aaf30cdcd20a84d898099dd35bbfa3590"><td class="memItemLeft" align="right" valign="top"><a id="aaf30cdcd20a84d898099dd35bbfa3590"></a>
 typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_unregister_cb</b>) (void *cb_arg, int rc)</td></tr>
 <tr class="separator:aaf30cdcd20a84d898099dd35bbfa3590"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2562fbcad733a35efaca67e9fb53a382"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev__module_8h.html#a2562fbcad733a35efaca67e9fb53a382">spdk_bdev_io_get_buf_cb</a>) (struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *ch, struct <a class="el" href="structspdk__bdev__io.html">spdk_bdev_io</a> *bdev_io, bool success)</td></tr>
+<tr class="memitem:a2562fbcad733a35efaca67e9fb53a382"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev__module_8h.html#a2562fbcad733a35efaca67e9fb53a382">spdk_bdev_io_get_buf_cb</a>) (struct spdk_io_channel *ch, struct <a class="el" href="structspdk__bdev__io.html">spdk_bdev_io</a> *bdev_io, bool success)</td></tr>
 <tr class="memdesc:a2562fbcad733a35efaca67e9fb53a382"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback when buffer is allocated for the bdev I/O.  <a href="#a2562fbcad733a35efaca67e9fb53a382">More...</a><br /></td></tr>
 <tr class="separator:a2562fbcad733a35efaca67e9fb53a382"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a78a004a98b02f2d1b2346b6b25e1c945"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev__module_8h.html#a78a004a98b02f2d1b2346b6b25e1c945">spdk_bdev_io_get_aux_buf_cb</a>) (struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *ch, struct <a class="el" href="structspdk__bdev__io.html">spdk_bdev_io</a> *bdev_io, void *aux_buf)</td></tr>
+<tr class="memitem:a78a004a98b02f2d1b2346b6b25e1c945"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev__module_8h.html#a78a004a98b02f2d1b2346b6b25e1c945">spdk_bdev_io_get_aux_buf_cb</a>) (struct spdk_io_channel *ch, struct <a class="el" href="structspdk__bdev__io.html">spdk_bdev_io</a> *bdev_io, void *aux_buf)</td></tr>
 <tr class="memdesc:a78a004a98b02f2d1b2346b6b25e1c945"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback when an auxiliary buffer is allocated for the bdev I/O.  <a href="#a78a004a98b02f2d1b2346b6b25e1c945">More...</a><br /></td></tr>
 <tr class="separator:a78a004a98b02f2d1b2346b6b25e1c945"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad226e52efa62c0b31340be538000d1a8"><td class="memItemLeft" align="right" valign="top"><a id="ad226e52efa62c0b31340be538000d1a8"></a>
@@ -252,7 +252,7 @@ typedef&#160;</td><td class="memItemRight" valign="bottom"><b>TAILQ_HEAD</b> (, 
 <tr class="memitem:ac5d86d9c4c086b2909207e6b7192caae"><td class="memItemLeft" align="right" valign="top">struct spdk_thread *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev__module_8h.html#ac5d86d9c4c086b2909207e6b7192caae">spdk_bdev_io_get_thread</a> (struct <a class="el" href="structspdk__bdev__io.html">spdk_bdev_io</a> *bdev_io)</td></tr>
 <tr class="memdesc:ac5d86d9c4c086b2909207e6b7192caae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a thread that given bdev_io was submitted on.  <a href="#ac5d86d9c4c086b2909207e6b7192caae">More...</a><br /></td></tr>
 <tr class="separator:ac5d86d9c4c086b2909207e6b7192caae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a65de686e7ddcf8caa6d7fa032e7023c6"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev__module_8h.html#a65de686e7ddcf8caa6d7fa032e7023c6">spdk_bdev_io_get_io_channel</a> (struct <a class="el" href="structspdk__bdev__io.html">spdk_bdev_io</a> *bdev_io)</td></tr>
+<tr class="memitem:a65de686e7ddcf8caa6d7fa032e7023c6"><td class="memItemLeft" align="right" valign="top">struct spdk_io_channel *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev__module_8h.html#a65de686e7ddcf8caa6d7fa032e7023c6">spdk_bdev_io_get_io_channel</a> (struct <a class="el" href="structspdk__bdev__io.html">spdk_bdev_io</a> *bdev_io)</td></tr>
 <tr class="memdesc:a65de686e7ddcf8caa6d7fa032e7023c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the bdev module's I/O channel that the given bdev_io was submitted on.  <a href="#a65de686e7ddcf8caa6d7fa032e7023c6">More...</a><br /></td></tr>
 <tr class="separator:a65de686e7ddcf8caa6d7fa032e7023c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7f2edd5a040a818752112d2cc709efca"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev__module_8h.html#a7f2edd5a040a818752112d2cc709efca">spdk_bdev_notify_blockcnt_change</a> (struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *bdev, uint64_t size)</td></tr>
@@ -365,7 +365,7 @@ typedef&#160;</td><td class="memItemRight" valign="bottom"><b>TAILQ_HEAD</b> (bd
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef void(* spdk_bdev_io_get_aux_buf_cb) (struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *ch, struct <a class="el" href="structspdk__bdev__io.html">spdk_bdev_io</a> *bdev_io, void *aux_buf)</td>
+          <td class="memname">typedef void(* spdk_bdev_io_get_aux_buf_cb) (struct spdk_io_channel *ch, struct <a class="el" href="structspdk__bdev__io.html">spdk_bdev_io</a> *bdev_io, void *aux_buf)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -389,7 +389,7 @@ typedef&#160;</td><td class="memItemRight" valign="bottom"><b>TAILQ_HEAD</b> (bd
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef void(* spdk_bdev_io_get_buf_cb) (struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a> *ch, struct <a class="el" href="structspdk__bdev__io.html">spdk_bdev_io</a> *bdev_io, bool success)</td>
+          <td class="memname">typedef void(* spdk_bdev_io_get_buf_cb) (struct spdk_io_channel *ch, struct <a class="el" href="structspdk__bdev__io.html">spdk_bdev_io</a> *bdev_io, bool success)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -856,7 +856,7 @@ typedef&#160;</td><td class="memItemRight" valign="bottom"><b>TAILQ_HEAD</b> (bd
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">struct <a class="el" href="structspdk__io__channel.html">spdk_io_channel</a>* spdk_bdev_io_get_io_channel </td>
+          <td class="memname">struct spdk_io_channel* spdk_bdev_io_get_io_channel </td>
           <td>(</td>
           <td class="paramtype">struct <a class="el" href="structspdk__bdev__io.html">spdk_bdev_io</a> *&#160;</td>
           <td class="paramname"><em>bdev_io</em></td><td>)</td>
@@ -2027,7 +2027,7 @@ typedef&#160;</td><td class="memItemRight" valign="bottom"><b>TAILQ_HEAD</b> (bd
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
 <ul>
-        <li class="footer">Generated on Thu Jun 24 2021 04:04:22 for SPDK by
+        <li class="footer">Generated on Fri Jun 25 2021 04:04:15 for SPDK by
         <a href="http://www.doxygen.org/index.html">doxygen</a> 1.8.15 </li>
 </ul>
 </div>

@@ -1,4 +1,0 @@
-<map id="spdk_bdev_fn_table" name="spdk_bdev_fn_table">
-<area shape="rect" id="node1" title="Function table for a block device backend." alt="" coords="5,95,157,121"/>
-<area shape="rect" id="node2" href="$structspdk__io__channel.html" title="Represents a per&#45;thread channel for accessing an I/O device." alt="" coords="16,5,147,32"/>
-</map>

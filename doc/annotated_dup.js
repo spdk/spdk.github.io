@@ -58,7 +58,6 @@ var annotated_dup =
     [ "spdk_gpt_header", "structspdk__gpt__header.html", "structspdk__gpt__header" ],
     [ "spdk_gpt_partition_entry", "structspdk__gpt__partition__entry.html", "structspdk__gpt__partition__entry" ],
     [ "spdk_histogram_data", "structspdk__histogram__data.html", "structspdk__histogram__data" ],
-    [ "spdk_io_channel", "structspdk__io__channel.html", "structspdk__io__channel" ],
     [ "spdk_ioat_dma_hw_desc", "structspdk__ioat__dma__hw__desc.html", "structspdk__ioat__dma__hw__desc" ],
     [ "spdk_ioat_fill_hw_desc", "structspdk__ioat__fill__hw__desc.html", "structspdk__ioat__fill__hw__desc" ],
     [ "spdk_ioat_generic_hw_desc", "structspdk__ioat__generic__hw__desc.html", "structspdk__ioat__generic__hw__desc" ],

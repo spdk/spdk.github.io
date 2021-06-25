@@ -36,7 +36,6 @@ var searchData=
   ['spdk_5fgpt_5fheader',['spdk_gpt_header',['../structspdk__gpt__header.html',1,'']]],
   ['spdk_5fgpt_5fpartition_5fentry',['spdk_gpt_partition_entry',['../structspdk__gpt__partition__entry.html',1,'']]],
   ['spdk_5fhistogram_5fdata',['spdk_histogram_data',['../structspdk__histogram__data.html',1,'']]],
-  ['spdk_5fio_5fchannel',['spdk_io_channel',['../structspdk__io__channel.html',1,'']]],
   ['spdk_5fioat_5fdma_5fhw_5fdesc',['spdk_ioat_dma_hw_desc',['../structspdk__ioat__dma__hw__desc.html',1,'']]],
   ['spdk_5fioat_5ffill_5fhw_5fdesc',['spdk_ioat_fill_hw_desc',['../structspdk__ioat__fill__hw__desc.html',1,'']]],
   ['spdk_5fioat_5fgeneric_5fhw_5fdesc',['spdk_ioat_generic_hw_desc',['../structspdk__ioat__generic__hw__desc.html',1,'']]],
