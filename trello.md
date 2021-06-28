@@ -15,7 +15,7 @@ types of pages:
 
 All of the SPDK team pages are publicly visible.  Edits may only be made by members of the SPDK
 Trello team.  If you would like to be added to the SPDK Trello team, please send an e-mail to
-the SPDK mailing list or a message to IRC with your Trello handle.
+the SPDK mailing list or a message to Slack with your Trello handle.
 
 Cards on backlog pages track features or tasks which are not completed, but may be in progress.
 These cards are organized into one of four columns, with each column corresponding to a level of

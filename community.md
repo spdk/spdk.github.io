@@ -40,7 +40,7 @@ available for usage and development questions as well as design discussions.
 
 SPDK Community meetings are open to everyone and all are encouraged to
 participate. The primary purpose is to cover topics where verbal communication
-is more efficient than email or IRC. The meetings are hosted using Skype.
+is more efficient than email or Slack. The meetings are hosted using Skype.
 
 There is a community meeting each week at alternating time slots selected so
 that one week is a Euro-friendly time and the following week is an
@@ -48,7 +48,7 @@ Asia-friendly time. Please see the bottom of this [page](#holidays) for holidays
 when regularly scheduled community meetings will be cancelled.
 
 Please post proposed topics for community meetings on [Trello](https://trello.com/b/DvM7XayJ)
-prior to the meeting. If you don't have a Trello login, sign up and then ask in IRC
+prior to the meeting. If you don't have a Trello login, sign up and then ask in Slack
 or on the mailing list to to be added to the board. If we are able to cover
 the posted topics before the end of the meeting we can use the time to discuss
 additional items.
