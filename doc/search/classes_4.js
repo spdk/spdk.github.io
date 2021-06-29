@@ -284,6 +284,7 @@ var searchData=
   ['spdk_5fsock_5fopts',['spdk_sock_opts',['../structspdk__sock__opts.html',1,'']]],
   ['spdk_5fsock_5frequest',['spdk_sock_request',['../structspdk__sock__request.html',1,'']]],
   ['spdk_5fthread_5fstats',['spdk_thread_stats',['../structspdk__thread__stats.html',1,'']]],
+  ['spdk_5ftrace_5fargument',['spdk_trace_argument',['../structspdk__trace__argument.html',1,'']]],
   ['spdk_5ftrace_5fentry',['spdk_trace_entry',['../structspdk__trace__entry.html',1,'']]],
   ['spdk_5ftrace_5fflags',['spdk_trace_flags',['../structspdk__trace__flags.html',1,'']]],
   ['spdk_5ftrace_5fhistories',['spdk_trace_histories',['../structspdk__trace__histories.html',1,'']]],
@@ -292,5 +293,6 @@ var searchData=
   ['spdk_5ftrace_5fowner',['spdk_trace_owner',['../structspdk__trace__owner.html',1,'']]],
   ['spdk_5ftrace_5fregister_5ffn',['spdk_trace_register_fn',['../structspdk__trace__register__fn.html',1,'']]],
   ['spdk_5ftrace_5ftpoint',['spdk_trace_tpoint',['../structspdk__trace__tpoint.html',1,'']]],
+  ['spdk_5ftrace_5ftpoint_5fopts',['spdk_trace_tpoint_opts',['../structspdk__trace__tpoint__opts.html',1,'']]],
   ['spdk_5fuuid',['spdk_uuid',['../structspdk__uuid.html',1,'']]]
 ];

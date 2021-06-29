@@ -106,6 +106,8 @@ Data Structures</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__trace__object.html">spdk_trace_object</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__trace__argument.html">spdk_trace_argument</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__trace__tpoint.html">spdk_trace_tpoint</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__trace__history.html">spdk_trace_history</a></td></tr>
@@ -113,6 +115,8 @@ Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__trace__flags.html">spdk_trace_flags</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__trace__histories.html">spdk_trace_histories</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__trace__tpoint__opts.html">spdk_trace_tpoint_opts</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__trace__register__fn.html">spdk_trace_register_fn</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -146,9 +150,29 @@ Macros</h2></td></tr>
 <tr class="memitem:aff01e55c161b73fd4ce5bfdb6afc4dab"><td class="memItemLeft" align="right" valign="top"><a id="aff01e55c161b73fd4ce5bfdb6afc4dab"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_TRACE_ARG_TYPE_STR</b>&#160;&#160;&#160;2</td></tr>
 <tr class="separator:aff01e55c161b73fd4ce5bfdb6afc4dab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8818f6bd266bcfd347016f43d6a0798"><td class="memItemLeft" align="right" valign="top"><a id="aa8818f6bd266bcfd347016f43d6a0798"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_TRACE_MAX_ARGS_COUNT</b>&#160;&#160;&#160;5</td></tr>
+<tr class="separator:aa8818f6bd266bcfd347016f43d6a0798"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a589fccd362899b2c59ce2e5860d2cb30"><td class="memItemLeft" align="right" valign="top"><a id="a589fccd362899b2c59ce2e5860d2cb30"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_TRACE_MAX_LCORE</b>&#160;&#160;&#160;128</td></tr>
 <tr class="separator:a589fccd362899b2c59ce2e5860d2cb30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc4636917de9d3ad99972041a0ca71a6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><b>_spdk_trace_record_tsc</b>(tsc,  tpoint_id,  poller_id,  size,  object_id,  num_args, ...)</td></tr>
+<tr class="separator:acc4636917de9d3ad99972041a0ca71a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8cab6995257437dddf64771b9687822c"><td class="memItemLeft" align="right" valign="top"><a id="a8cab6995257437dddf64771b9687822c"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_trace_num_args</b>(...)&#160;&#160;&#160;_spdk_trace_num_args(, ## __VA_ARGS__)</td></tr>
+<tr class="separator:a8cab6995257437dddf64771b9687822c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a405d192dbc336edc3bb5e9b1a88ffb28"><td class="memItemLeft" align="right" valign="top"><a id="a405d192dbc336edc3bb5e9b1a88ffb28"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>_spdk_trace_num_args</b>(...)&#160;&#160;&#160;__spdk_trace_num_args(__VA_ARGS__, 8, 7, 6, 5, 4, 3, 2, 1, 0)</td></tr>
+<tr class="separator:a405d192dbc336edc3bb5e9b1a88ffb28"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ed9661f598087b82073e6b72aad752a"><td class="memItemLeft" align="right" valign="top"><a id="a1ed9661f598087b82073e6b72aad752a"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>__spdk_trace_num_args</b>(v,  a1,  a2,  a3,  a4,  a5,  a6,  a7,  a8,  count, ...)&#160;&#160;&#160;count</td></tr>
+<tr class="separator:a1ed9661f598087b82073e6b72aad752a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9200d8670cb27a4569440782888087e0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="trace_8h.html#a9200d8670cb27a4569440782888087e0">spdk_trace_record_tsc</a>(tsc,  tpoint_id,  poller_id,  size,  object_id, ...)</td></tr>
+<tr class="memdesc:a9200d8670cb27a4569440782888087e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Record the current trace state for tracing tpoints.  <a href="#a9200d8670cb27a4569440782888087e0">More...</a><br /></td></tr>
+<tr class="separator:a9200d8670cb27a4569440782888087e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a583c35dff93e5c996bd7115c4593a457"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="trace_8h.html#a583c35dff93e5c996bd7115c4593a457">spdk_trace_record</a>(tpoint_id,  poller_id,  size,  object_id, ...)&#160;&#160;&#160;<a class="el" href="trace_8h.html#a9200d8670cb27a4569440782888087e0">spdk_trace_record_tsc</a>(0, tpoint_id, poller_id, size, object_id, ## __VA_ARGS__)</td></tr>
+<tr class="memdesc:a583c35dff93e5c996bd7115c4593a457"><td class="mdescLeft">&#160;</td><td class="mdescRight">Record the current trace state for tracing tpoints.  <a href="#a583c35dff93e5c996bd7115c4593a457">More...</a><br /></td></tr>
+<tr class="separator:a583c35dff93e5c996bd7115c4593a457"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4c1e2ffb45a46c4e82664cb8f7218d7f"><td class="memItemLeft" align="right" valign="top"><a id="a4c1e2ffb45a46c4e82664cb8f7218d7f"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>OWNER_NONE</b>&#160;&#160;&#160;0</td></tr>
 <tr class="separator:a4c1e2ffb45a46c4e82664cb8f7218d7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -169,15 +193,9 @@ static uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_get_t
 <tr class="memitem:a9e8521a36138b4e120faa1e0d5ef83da"><td class="memItemLeft" align="right" valign="top"><a id="a9e8521a36138b4e120faa1e0d5ef83da"></a>
 static struct <a class="el" href="structspdk__trace__history.html">spdk_trace_history</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_get_per_lcore_history</b> (struct <a class="el" href="structspdk__trace__histories.html">spdk_trace_histories</a> *trace_histories, unsigned lcore)</td></tr>
 <tr class="separator:a9e8521a36138b4e120faa1e0d5ef83da"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a81015aafde61e9a86178d81373a55494"><td class="memItemLeft" align="right" valign="top"><a id="a81015aafde61e9a86178d81373a55494"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>_spdk_trace_record</b> (uint64_t tsc, uint16_t tpoint_id, uint16_t poller_id, uint32_t size, uint64_t object_id, uint64_t arg1)</td></tr>
-<tr class="separator:a81015aafde61e9a86178d81373a55494"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afc39939001d5fd77c208808141534dde"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="trace_8h.html#afc39939001d5fd77c208808141534dde">spdk_trace_record</a> (uint16_t tpoint_id, uint16_t poller_id, uint32_t size, uint64_t object_id, uint64_t arg1)</td></tr>
-<tr class="memdesc:afc39939001d5fd77c208808141534dde"><td class="mdescLeft">&#160;</td><td class="mdescRight">Record the current trace state for tracing tpoints.  <a href="#afc39939001d5fd77c208808141534dde">More...</a><br /></td></tr>
-<tr class="separator:afc39939001d5fd77c208808141534dde"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa38bbe4d79cf0aca5a7d18956a0a62f7"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="trace_8h.html#aa38bbe4d79cf0aca5a7d18956a0a62f7">spdk_trace_record_tsc</a> (uint64_t tsc, uint16_t tpoint_id, uint16_t poller_id, uint32_t size, uint64_t object_id, uint64_t arg1)</td></tr>
-<tr class="memdesc:aa38bbe4d79cf0aca5a7d18956a0a62f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Record the current trace state for tracing tpoints.  <a href="#aa38bbe4d79cf0aca5a7d18956a0a62f7">More...</a><br /></td></tr>
-<tr class="separator:aa38bbe4d79cf0aca5a7d18956a0a62f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e97d3723f6605c49b5cf56c83294dee"><td class="memItemLeft" align="right" valign="top"><a id="a4e97d3723f6605c49b5cf56c83294dee"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>_spdk_trace_record</b> (uint64_t tsc, uint16_t tpoint_id, uint16_t poller_id, uint32_t size, uint64_t object_id, int num_args,...)</td></tr>
+<tr class="separator:a4e97d3723f6605c49b5cf56c83294dee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a346327ec1addd7eeb87963b40cec1821"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="trace_8h.html#a346327ec1addd7eeb87963b40cec1821">spdk_trace_get_tpoint_mask</a> (uint32_t group_id)</td></tr>
 <tr class="memdesc:a346327ec1addd7eeb87963b40cec1821"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current tpoint mask of the given tpoint group.  <a href="#a346327ec1addd7eeb87963b40cec1821">More...</a><br /></td></tr>
 <tr class="separator:a346327ec1addd7eeb87963b40cec1821"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -214,8 +232,11 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="trac
 <tr class="memdesc:a78c1e25f823c6e98da3f99c515715ebe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register the trace object.  <a href="#a78c1e25f823c6e98da3f99c515715ebe">More...</a><br /></td></tr>
 <tr class="separator:a78c1e25f823c6e98da3f99c515715ebe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a272510f870f932fd0e081481f6e51e58"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="trace_8h.html#a272510f870f932fd0e081481f6e51e58">spdk_trace_register_description</a> (const char *name, uint16_t tpoint_id, uint8_t owner_type, uint8_t object_type, uint8_t new_object, uint8_t arg1_type, const char *arg1_name)</td></tr>
-<tr class="memdesc:a272510f870f932fd0e081481f6e51e58"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register the description for the tpoint.  <a href="#a272510f870f932fd0e081481f6e51e58">More...</a><br /></td></tr>
+<tr class="memdesc:a272510f870f932fd0e081481f6e51e58"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register the description for a tpoint with a single argument.  <a href="#a272510f870f932fd0e081481f6e51e58">More...</a><br /></td></tr>
 <tr class="separator:a272510f870f932fd0e081481f6e51e58"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d34f0091a2eda78ea2749e40db1d625"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="trace_8h.html#a4d34f0091a2eda78ea2749e40db1d625">spdk_trace_register_description_ext</a> (const struct <a class="el" href="structspdk__trace__tpoint__opts.html">spdk_trace_tpoint_opts</a> *opts, size_t num_opts)</td></tr>
+<tr class="memdesc:a4d34f0091a2eda78ea2749e40db1d625"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register the description for a number of tpoints.  <a href="#a4d34f0091a2eda78ea2749e40db1d625">More...</a><br /></td></tr>
+<tr class="separator:a4d34f0091a2eda78ea2749e40db1d625"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a483ad47f18a34c86bca85e1a228dd655"><td class="memItemLeft" align="right" valign="top"><a id="a483ad47f18a34c86bca85e1a228dd655"></a>
 struct <a class="el" href="structspdk__trace__register__fn.html">spdk_trace_register_fn</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_trace_get_first_register_fn</b> (void)</td></tr>
 <tr class="separator:a483ad47f18a34c86bca85e1a228dd655"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -247,6 +268,189 @@ struct <a class="el" href="structspdk__trace__histories.html">spdk_trace_histori
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Tracepoint library. </p>
 </div><h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="acc4636917de9d3ad99972041a0ca71a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc4636917de9d3ad99972041a0ca71a6">&#9670;&nbsp;</a></span>_spdk_trace_record_tsc</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define _spdk_trace_record_tsc</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">tsc, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">tpoint_id, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">poller_id, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">size, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">object_id, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">num_args, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>...</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">do</span> {                                                                                    \</div><div class="line">                assert(tpoint_id &lt; SPDK_TRACE_MAX_TPOINT_ID);                                   \</div><div class="line">                if (g_trace_histories == NULL ||                                                \</div><div class="line">                    !((1ULL &lt;&lt; (tpoint_id &amp; 0x3F)) &amp;                                            \</div><div class="line">                      g_trace_histories-&gt;flags.tpoint_mask[tpoint_id &gt;&gt; 6])) {                  \</div><div class="line">                        break;                                                                  \</div><div class="line">                }                                                                               \</div><div class="line">                _spdk_trace_record(tsc, tpoint_id, poller_id, size, object_id,                  \</div><div class="line">                                   num_args, ## __VA_ARGS__);                                   \</div><div class="line">        } <span class="keywordflow">while</span> (0)</div></div><!-- fragment -->
+</div>
+</div>
+<a id="a583c35dff93e5c996bd7115c4593a457"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a583c35dff93e5c996bd7115c4593a457">&#9670;&nbsp;</a></span>spdk_trace_record</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define spdk_trace_record</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">tpoint_id, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">poller_id, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">size, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">object_id, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>...</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="trace_8h.html#a9200d8670cb27a4569440782888087e0">spdk_trace_record_tsc</a>(0, tpoint_id, poller_id, size, object_id, ## __VA_ARGS__)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Record the current trace state for tracing tpoints. </p>
+<p>Debug tool can read the information from shared memory to post-process the tpoint entries and display in a human-readable format. This macro will call <a class="el" href="env_8h.html#a7d868d272aa0c000f6135966dfadc596" title="Get a monotonic timestamp counter.">spdk_get_ticks()</a> to get the current tsc to save in the tracepoint.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tpoint_id</td><td>Tracepoint id to record. </td></tr>
+    <tr><td class="paramname">poller_id</td><td>Poller id to record. </td></tr>
+    <tr><td class="paramname">size</td><td>Size to record. </td></tr>
+    <tr><td class="paramname">object_id</td><td>Object id to record. </td></tr>
+    <tr><td class="paramname">...</td><td>Extra tracepoint arguments. The number, types, and order of the arguments must match the definition of the tracepoint. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a9200d8670cb27a4569440782888087e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9200d8670cb27a4569440782888087e0">&#9670;&nbsp;</a></span>spdk_trace_record_tsc</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define spdk_trace_record_tsc</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">tsc, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">tpoint_id, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">poller_id, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">size, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">object_id, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>...</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">_spdk_trace_record_tsc(tsc, tpoint_id, poller_id, size, object_id,      \</div><div class="line">                               spdk_trace_num_args(__VA_ARGS__), ## __VA_ARGS__)</div></div><!-- fragment -->
+<p>Record the current trace state for tracing tpoints. </p>
+<p>Debug tool can read the information from shared memory to post-process the tpoint entries and display in a human-readable format.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tsc</td><td>Current tsc. </td></tr>
+    <tr><td class="paramname">tpoint_id</td><td>Tracepoint id to record. </td></tr>
+    <tr><td class="paramname">poller_id</td><td>Poller id to record. </td></tr>
+    <tr><td class="paramname">size</td><td>Size to record. </td></tr>
+    <tr><td class="paramname">object_id</td><td>Object id to record. </td></tr>
+    <tr><td class="paramname">...</td><td>Extra tracepoint arguments. The number, types, and order of the arguments must match the definition of the tracepoint. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a4cdbdade1f743930b4b2ff0fd75d22d4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4cdbdade1f743930b4b2ff0fd75d22d4">&#9670;&nbsp;</a></span>SPDK_TRACE_REGISTER_FN</h2>
 
@@ -278,7 +482,7 @@ struct <a class="el" href="structspdk__trace__histories.html">spdk_trace_histori
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><span class="keyword">static</span> <span class="keywordtype">void</span> fn(<span class="keywordtype">void</span>);                                   \</div><div class="line">        struct <a class="code" href="structspdk__trace__register__fn.html">spdk_trace_register_fn</a> reg_ ## fn = {            \</div><div class="line">                .name = name_str,                               \</div><div class="line">                .tgroup_id = _tgroup_id,                        \</div><div class="line">                .reg_fn = fn,                                   \</div><div class="line">                .next = NULL,                                   \</div><div class="line">        };                                                      \</div><div class="line">        __attribute__((constructor)) <span class="keyword">static</span> <span class="keywordtype">void</span> _ ## fn(<span class="keywordtype">void</span>)  \</div><div class="line">        {                                                       \</div><div class="line">                spdk_trace_add_register_fn(&amp;reg_ ## fn);        \</div><div class="line">        }                                                       \</div><div class="line">        static <span class="keywordtype">void</span> fn(<span class="keywordtype">void</span>)</div><div class="ttc" id="structspdk__trace__register__fn_html"><div class="ttname"><a href="structspdk__trace__register__fn.html">spdk_trace_register_fn</a></div><div class="ttdef"><b>Definition:</b> trace.h:372</div></div>
+<b>Value:</b><div class="fragment"><div class="line"><span class="keyword">static</span> <span class="keywordtype">void</span> fn(<span class="keywordtype">void</span>);                                   \</div><div class="line">        struct <a class="code" href="structspdk__trace__register__fn.html">spdk_trace_register_fn</a> reg_ ## fn = {            \</div><div class="line">                .name = name_str,                               \</div><div class="line">                .tgroup_id = _tgroup_id,                        \</div><div class="line">                .reg_fn = fn,                                   \</div><div class="line">                .next = NULL,                                   \</div><div class="line">        };                                                      \</div><div class="line">        __attribute__((constructor)) <span class="keyword">static</span> <span class="keywordtype">void</span> _ ## fn(<span class="keywordtype">void</span>)  \</div><div class="line">        {                                                       \</div><div class="line">                spdk_trace_add_register_fn(&amp;reg_ ## fn);        \</div><div class="line">        }                                                       \</div><div class="line">        static <span class="keywordtype">void</span> fn(<span class="keywordtype">void</span>)</div><div class="ttc" id="structspdk__trace__register__fn_html"><div class="ttname"><a href="structspdk__trace__register__fn.html">spdk_trace_register_fn</a></div><div class="ttdef"><b>Definition:</b> trace.h:392</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -550,147 +754,6 @@ struct <a class="el" href="structspdk__trace__histories.html">spdk_trace_histori
 
 </div>
 </div>
-<a id="afc39939001d5fd77c208808141534dde"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afc39939001d5fd77c208808141534dde">&#9670;&nbsp;</a></span>spdk_trace_record()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static void spdk_trace_record </td>
-          <td>(</td>
-          <td class="paramtype">uint16_t&#160;</td>
-          <td class="paramname"><em>tpoint_id</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint16_t&#160;</td>
-          <td class="paramname"><em>poller_id</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>size</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint64_t&#160;</td>
-          <td class="paramname"><em>object_id</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint64_t&#160;</td>
-          <td class="paramname"><em>arg1</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Record the current trace state for tracing tpoints. </p>
-<p>Debug tool can read the information from shared memory to post-process the tpoint entries and display in a human-readable format. This function will call <a class="el" href="env_8h.html#a7d868d272aa0c000f6135966dfadc596" title="Get a monotonic timestamp counter.">spdk_get_ticks()</a> to get the current tsc to save in the tracepoint.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">tpoint_id</td><td>Tracepoint id to record. </td></tr>
-    <tr><td class="paramname">poller_id</td><td>Poller id to record. </td></tr>
-    <tr><td class="paramname">size</td><td>Size to record. </td></tr>
-    <tr><td class="paramname">object_id</td><td>Object id to record. </td></tr>
-    <tr><td class="paramname">arg1</td><td>Argument to record. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="aa38bbe4d79cf0aca5a7d18956a0a62f7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa38bbe4d79cf0aca5a7d18956a0a62f7">&#9670;&nbsp;</a></span>spdk_trace_record_tsc()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static void spdk_trace_record_tsc </td>
-          <td>(</td>
-          <td class="paramtype">uint64_t&#160;</td>
-          <td class="paramname"><em>tsc</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint16_t&#160;</td>
-          <td class="paramname"><em>tpoint_id</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint16_t&#160;</td>
-          <td class="paramname"><em>poller_id</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>size</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint64_t&#160;</td>
-          <td class="paramname"><em>object_id</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint64_t&#160;</td>
-          <td class="paramname"><em>arg1</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Record the current trace state for tracing tpoints. </p>
-<p>Debug tool can read the information from shared memory to post-process the tpoint entries and display in a human-readable format.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">tsc</td><td>Current tsc. </td></tr>
-    <tr><td class="paramname">tpoint_id</td><td>Tracepoint id to record. </td></tr>
-    <tr><td class="paramname">poller_id</td><td>Poller id to record. </td></tr>
-    <tr><td class="paramname">size</td><td>Size to record. </td></tr>
-    <tr><td class="paramname">object_id</td><td>Object id to record. </td></tr>
-    <tr><td class="paramname">arg1</td><td>Argument to record. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
 <a id="a272510f870f932fd0e081481f6e51e58"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a272510f870f932fd0e081481f6e51e58">&#9670;&nbsp;</a></span>spdk_trace_register_description()</h2>
 
@@ -747,7 +810,7 @@ struct <a class="el" href="structspdk__trace__histories.html">spdk_trace_histori
       </table>
 </div><div class="memdoc">
 
-<p>Register the description for the tpoint. </p>
+<p>Register the description for a tpoint with a single argument. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">name</td><td>Name for the tpoint. </td></tr>
@@ -757,6 +820,44 @@ struct <a class="el" href="structspdk__trace__histories.html">spdk_trace_histori
     <tr><td class="paramname">new_object</td><td>New object for the tpoint. </td></tr>
     <tr><td class="paramname">arg1_type</td><td>Type of arg1. </td></tr>
     <tr><td class="paramname">arg1_name</td><td>Name of argument. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a4d34f0091a2eda78ea2749e40db1d625"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d34f0091a2eda78ea2749e40db1d625">&#9670;&nbsp;</a></span>spdk_trace_register_description_ext()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_trace_register_description_ext </td>
+          <td>(</td>
+          <td class="paramtype">const struct <a class="el" href="structspdk__trace__tpoint__opts.html">spdk_trace_tpoint_opts</a> *&#160;</td>
+          <td class="paramname"><em>opts</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>num_opts</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Register the description for a number of tpoints. </p>
+<p>This function allows the user to register tracepoints with multiple arguments (up to 5).</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">opts</td><td>Array of structures describing tpoints and their arguments. </td></tr>
+    <tr><td class="paramname">num_opts</td><td>Number of tpoints to register (size of the opts array). </td></tr>
   </table>
   </dd>
 </dl>
@@ -906,7 +1007,7 @@ struct <a class="el" href="structspdk__trace__histories.html">spdk_trace_histori
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
 <ul>
-        <li class="footer">Generated on Mon Jun 28 2021 04:04:28 for SPDK by
+        <li class="footer">Generated on Tue Jun 29 2021 04:04:26 for SPDK by
         <a href="http://www.doxygen.org/index.html">doxygen</a> 1.8.15 </li>
 </ul>
 </div>

@@ -39,6 +39,8 @@ var searchData=
   ['spdk_5fsmp_5fwmb',['spdk_smp_wmb',['../barrier_8h.html#aee6be79189ae975da9922c3ff229ded5',1,'barrier.h']]],
   ['spdk_5fstatic_5fassert',['SPDK_STATIC_ASSERT',['../assert_8h.html#ab961047b92ac1428376ef1ae1e4fa1cf',1,'assert.h']]],
   ['spdk_5ft10dif_5fcrc16_5fpolynomial',['SPDK_T10DIF_CRC16_POLYNOMIAL',['../crc16_8h.html#a4c5c6b44eafbb4bb09df424150da7508',1,'crc16.h']]],
+  ['spdk_5ftrace_5frecord',['spdk_trace_record',['../trace_8h.html#a583c35dff93e5c996bd7115c4593a457',1,'trace.h']]],
+  ['spdk_5ftrace_5frecord_5ftsc',['spdk_trace_record_tsc',['../trace_8h.html#a9200d8670cb27a4569440782888087e0',1,'trace.h']]],
   ['spdk_5fversion',['SPDK_VERSION',['../version_8h.html#af45ea3cba76c12cc449b6556c1982038',1,'version.h']]],
   ['spdk_5fversion_5fmajor',['SPDK_VERSION_MAJOR',['../version_8h.html#a724bde57680bbd92b5dd6db6923a34f5',1,'version.h']]],
   ['spdk_5fversion_5fminor',['SPDK_VERSION_MINOR',['../version_8h.html#a3b5a59a1e949124decfd9cbe207966ad',1,'version.h']]],
