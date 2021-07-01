@@ -146,6 +146,7 @@ var nvme_8h =
     [ "spdk_nvme_cuse_update_namespaces", "nvme_8h.html#ac8157e10a468a618d04accf1830d59cd", null ],
     [ "spdk_nvme_detach", "nvme_8h.html#a4b63c225c3cce6da60fdbfb6f54b11e2", null ],
     [ "spdk_nvme_detach_async", "nvme_8h.html#a30f8edb4791c426ccec2b815ca0ed791", null ],
+    [ "spdk_nvme_detach_poll", "nvme_8h.html#a053bcfa48d3c4b20ac4a408fa5e61418", null ],
     [ "spdk_nvme_detach_poll_async", "nvme_8h.html#a19178860f90bdd522eaa329d0ff837fe", null ],
     [ "spdk_nvme_host_id_parse", "nvme_8h.html#ad068dd50f11160450098712422116785", null ],
     [ "spdk_nvme_map_cmd", "nvme_8h.html#abe78bfe779380af49ed2416c8974cff3", null ],
