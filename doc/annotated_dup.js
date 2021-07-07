@@ -308,6 +308,7 @@ var annotated_dup =
     [ "spdk_thread_stats", "structspdk__thread__stats.html", "structspdk__thread__stats" ],
     [ "spdk_trace_argument", "structspdk__trace__argument.html", "structspdk__trace__argument" ],
     [ "spdk_trace_entry", "structspdk__trace__entry.html", "structspdk__trace__entry" ],
+    [ "spdk_trace_entry_buffer", "structspdk__trace__entry__buffer.html", "structspdk__trace__entry__buffer" ],
     [ "spdk_trace_flags", "structspdk__trace__flags.html", "structspdk__trace__flags" ],
     [ "spdk_trace_histories", "structspdk__trace__histories.html", "structspdk__trace__histories" ],
     [ "spdk_trace_history", "structspdk__trace__history.html", "structspdk__trace__history" ],

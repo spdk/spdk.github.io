@@ -1650,6 +1650,7 @@ var searchData=
   ['spdk_5ftrace_5fdisable_5ftpoint_5fgroup',['spdk_trace_disable_tpoint_group',['../trace_8h.html#ace590b7acf549112daa89640dcb87447',1,'trace.h']]],
   ['spdk_5ftrace_5fenable_5ftpoint_5fgroup',['spdk_trace_enable_tpoint_group',['../trace_8h.html#a3c9eb705c608a7ffb0724dd7520d61ad',1,'trace.h']]],
   ['spdk_5ftrace_5fentry',['spdk_trace_entry',['../structspdk__trace__entry.html',1,'']]],
+  ['spdk_5ftrace_5fentry_5fbuffer',['spdk_trace_entry_buffer',['../structspdk__trace__entry__buffer.html',1,'']]],
   ['spdk_5ftrace_5fflags',['spdk_trace_flags',['../structspdk__trace__flags.html',1,'']]],
   ['spdk_5ftrace_5fflags_5finit',['spdk_trace_flags_init',['../trace_8h.html#a5cab6a78e0ce33319f02ea03ba221fc1',1,'trace.h']]],
   ['spdk_5ftrace_5fget_5ftpoint_5fgroup_5fmask',['spdk_trace_get_tpoint_group_mask',['../trace_8h.html#aa7331d8e039fadc27049efd27c1d49a8',1,'trace.h']]],

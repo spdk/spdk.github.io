@@ -102,6 +102,8 @@ $(document).ready(function(){initNavTree('trace_8h.html','');});
 Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__trace__entry.html">spdk_trace_entry</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__trace__entry__buffer.html">spdk_trace_entry_buffer</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__trace__owner.html">spdk_trace_owner</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__trace__object.html">spdk_trace_object</a></td></tr>
@@ -184,6 +186,9 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:a6117e9c017b65f62029a58f4dadf8cad"><td class="memItemLeft" align="right" valign="top"><a id="a6117e9c017b65f62029a58f4dadf8cad"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_STATIC_ASSERT</b> (sizeof(struct <a class="el" href="structspdk__trace__entry__buffer.html">spdk_trace_entry_buffer</a>)==sizeof(struct <a class="el" href="structspdk__trace__entry.html">spdk_trace_entry</a>), &quot;Invalid size of trace entry buffer&quot;)</td></tr>
+<tr class="separator:a6117e9c017b65f62029a58f4dadf8cad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a31bfd9fba3352fdc899b3b5033481b27"><td class="memItemLeft" align="right" valign="top"><a id="a31bfd9fba3352fdc899b3b5033481b27"></a>
 static uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_get_trace_history_size</b> (uint64_t num_entries)</td></tr>
 <tr class="separator:a31bfd9fba3352fdc899b3b5033481b27"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -482,7 +487,7 @@ struct <a class="el" href="structspdk__trace__histories.html">spdk_trace_histori
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><span class="keyword">static</span> <span class="keywordtype">void</span> fn(<span class="keywordtype">void</span>);                                   \</div><div class="line">        struct <a class="code" href="structspdk__trace__register__fn.html">spdk_trace_register_fn</a> reg_ ## fn = {            \</div><div class="line">                .name = name_str,                               \</div><div class="line">                .tgroup_id = _tgroup_id,                        \</div><div class="line">                .reg_fn = fn,                                   \</div><div class="line">                .next = NULL,                                   \</div><div class="line">        };                                                      \</div><div class="line">        __attribute__((constructor)) <span class="keyword">static</span> <span class="keywordtype">void</span> _ ## fn(<span class="keywordtype">void</span>)  \</div><div class="line">        {                                                       \</div><div class="line">                spdk_trace_add_register_fn(&amp;reg_ ## fn);        \</div><div class="line">        }                                                       \</div><div class="line">        static <span class="keywordtype">void</span> fn(<span class="keywordtype">void</span>)</div><div class="ttc" id="structspdk__trace__register__fn_html"><div class="ttname"><a href="structspdk__trace__register__fn.html">spdk_trace_register_fn</a></div><div class="ttdef"><b>Definition:</b> trace.h:392</div></div>
+<b>Value:</b><div class="fragment"><div class="line"><span class="keyword">static</span> <span class="keywordtype">void</span> fn(<span class="keywordtype">void</span>);                                   \</div><div class="line">        struct <a class="code" href="structspdk__trace__register__fn.html">spdk_trace_register_fn</a> reg_ ## fn = {            \</div><div class="line">                .name = name_str,                               \</div><div class="line">                .tgroup_id = _tgroup_id,                        \</div><div class="line">                .reg_fn = fn,                                   \</div><div class="line">                .next = NULL,                                   \</div><div class="line">        };                                                      \</div><div class="line">        __attribute__((constructor)) <span class="keyword">static</span> <span class="keywordtype">void</span> _ ## fn(<span class="keywordtype">void</span>)  \</div><div class="line">        {                                                       \</div><div class="line">                spdk_trace_add_register_fn(&amp;reg_ ## fn);        \</div><div class="line">        }                                                       \</div><div class="line">        static <span class="keywordtype">void</span> fn(<span class="keywordtype">void</span>)</div><div class="ttc" id="structspdk__trace__register__fn_html"><div class="ttname"><a href="structspdk__trace__register__fn.html">spdk_trace_register_fn</a></div><div class="ttdef"><b>Definition:</b> trace.h:402</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1007,7 +1012,7 @@ struct <a class="el" href="structspdk__trace__histories.html">spdk_trace_histori
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
 <ul>
-        <li class="footer">Generated on Tue Jul 6 2021 04:04:22 for SPDK by
+        <li class="footer">Generated on Wed Jul 7 2021 04:04:26 for SPDK by
         <a href="http://www.doxygen.org/index.html">doxygen</a> 1.8.15 </li>
 </ul>
 </div>

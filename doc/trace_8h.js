@@ -1,6 +1,7 @@
 var trace_8h =
 [
     [ "spdk_trace_entry", "structspdk__trace__entry.html", "structspdk__trace__entry" ],
+    [ "spdk_trace_entry_buffer", "structspdk__trace__entry__buffer.html", "structspdk__trace__entry__buffer" ],
     [ "spdk_trace_owner", "structspdk__trace__owner.html", "structspdk__trace__owner" ],
     [ "spdk_trace_object", "structspdk__trace__object.html", "structspdk__trace__object" ],
     [ "spdk_trace_argument", "structspdk__trace__argument.html", "structspdk__trace__argument" ],
@@ -34,6 +35,7 @@ var trace_8h =
     [ "spdk_get_per_lcore_history", "trace_8h.html#a9e8521a36138b4e120faa1e0d5ef83da", null ],
     [ "spdk_get_trace_histories_size", "trace_8h.html#a21ab2742df91d14f1bdd761f222180f2", null ],
     [ "spdk_get_trace_history_size", "trace_8h.html#a31bfd9fba3352fdc899b3b5033481b27", null ],
+    [ "SPDK_STATIC_ASSERT", "trace_8h.html#a6117e9c017b65f62029a58f4dadf8cad", null ],
     [ "spdk_trace_add_register_fn", "trace_8h.html#aa87447ad261172809a5394ee37f601df", null ],
     [ "spdk_trace_cleanup", "trace_8h.html#a7cdec16a6ee14c87b0bf5d0666d9a0cb", null ],
     [ "spdk_trace_clear_tpoint_group_mask", "trace_8h.html#a00bc7e8ba17d526c39dd5582b1e66395", null ],

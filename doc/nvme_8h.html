@@ -2924,13 +2924,14 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_map_prps</b>
 </div><div class="memdoc">
 
 <p>Free an I/O queue pair that was allocated by <a class="el" href="nvme_8h.html#a13f745d239dab9b8f934fae2ad4984a2" title="Allocate an I/O queue pair (submission and completion queue).">spdk_nvme_ctrlr_alloc_io_qpair()</a>. </p>
+<p>The qpair must not be accessed after calling this function.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">qpair</td><td>I/O queue pair to free.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>0 on success, -1 on failure. On failure, the caller should reset the controller and try to free the io qpair again after the reset. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success. This function will never return any value other than 0. </dd></dl>
 
 </div>
 </div>
@@ -8602,7 +8603,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_map_prps</b>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
 <ul>
-        <li class="footer">Generated on Tue Jul 6 2021 04:04:22 for SPDK by
+        <li class="footer">Generated on Wed Jul 7 2021 04:04:26 for SPDK by
         <a href="http://www.doxygen.org/index.html">doxygen</a> 1.8.15 </li>
 </ul>
 </div>

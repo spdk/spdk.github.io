@@ -286,6 +286,7 @@ var searchData=
   ['spdk_5fthread_5fstats',['spdk_thread_stats',['../structspdk__thread__stats.html',1,'']]],
   ['spdk_5ftrace_5fargument',['spdk_trace_argument',['../structspdk__trace__argument.html',1,'']]],
   ['spdk_5ftrace_5fentry',['spdk_trace_entry',['../structspdk__trace__entry.html',1,'']]],
+  ['spdk_5ftrace_5fentry_5fbuffer',['spdk_trace_entry_buffer',['../structspdk__trace__entry__buffer.html',1,'']]],
   ['spdk_5ftrace_5fflags',['spdk_trace_flags',['../structspdk__trace__flags.html',1,'']]],
   ['spdk_5ftrace_5fhistories',['spdk_trace_histories',['../structspdk__trace__histories.html',1,'']]],
   ['spdk_5ftrace_5fhistory',['spdk_trace_history',['../structspdk__trace__history.html',1,'']]],
