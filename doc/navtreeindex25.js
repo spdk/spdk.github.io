@@ -1,5 +1,6 @@
 var NAVTREEINDEX25 =
 {
+"structvfio__user__device__info.html#ab56196a4c6b2a5706783fb621332ced7":[13,0,320,2],
 "structvfio__user__dma__map.html":[13,0,321],
 "structvfio__user__dma__map.html#a7bb61a59a4188724f6ba5ce65735229c":[13,0,321,2],
 "structvfio__user__dma__map.html#a931b5266853705fb28d8ac18c850bd9e":[13,0,321,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX25 =
 "unionspdk__nvme__cc__register.html#a897917db042a1c27dfcd9a1d29753602":[13,0,87,10],
 "unionspdk__nvme__cc__register.html#aa04fbe301ce8a3d66ad4290e896549e1":[13,0,87,8],
 "unionspdk__nvme__cc__register.html#aa209d6cab6dc0a1f9e9b37f4f0a2d8b9":[13,0,87,5],
-"unionspdk__nvme__cc__register.html#ac2481b3896677b48183c0dd344760ddb":[13,0,87,9],
-"unionspdk__nvme__cc__register.html#adafe2d01d8a07098b6cb21fc9835dba6":[13,0,87,3]
+"unionspdk__nvme__cc__register.html#ac2481b3896677b48183c0dd344760ddb":[13,0,87,9]
 };

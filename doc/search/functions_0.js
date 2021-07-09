@@ -657,6 +657,7 @@ var searchData=
   ['spdk_5fnvme_5fns_5fget_5fid',['spdk_nvme_ns_get_id',['../nvme_8h.html#a54052303ef2870d6d1856f79ef6ff88a',1,'nvme.h']]],
   ['spdk_5fnvme_5fns_5fget_5fmax_5fio_5fxfer_5fsize',['spdk_nvme_ns_get_max_io_xfer_size',['../nvme_8h.html#ac2aac85501f13bff557d3a224d8ec156',1,'nvme.h']]],
   ['spdk_5fnvme_5fns_5fget_5fmd_5fsize',['spdk_nvme_ns_get_md_size',['../nvme_8h.html#ab48657f8cb6561b35e1c1b0bc18376d2',1,'nvme.h']]],
+  ['spdk_5fnvme_5fns_5fget_5fnguid',['spdk_nvme_ns_get_nguid',['../nvme_8h.html#a67c20210c6490d4545b40e43faa8af23',1,'nvme.h']]],
   ['spdk_5fnvme_5fns_5fget_5fnum_5fsectors',['spdk_nvme_ns_get_num_sectors',['../nvme_8h.html#a7c522609f730db26f66e7f5b6b3501e0',1,'nvme.h']]],
   ['spdk_5fnvme_5fns_5fget_5foptimal_5fio_5fboundary',['spdk_nvme_ns_get_optimal_io_boundary',['../nvme_8h.html#af58edc3021f8adcbecce5d3ebc5b6789',1,'nvme.h']]],
   ['spdk_5fnvme_5fns_5fget_5fpi_5ftype',['spdk_nvme_ns_get_pi_type',['../nvme_8h.html#a85806a7605a104a705e7f9d3d087e4cb',1,'nvme.h']]],

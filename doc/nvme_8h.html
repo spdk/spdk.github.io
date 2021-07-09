@@ -609,6 +609,9 @@ Functions</h2></td></tr>
 <tr class="memitem:af58edc3021f8adcbecce5d3ebc5b6789"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#af58edc3021f8adcbecce5d3ebc5b6789">spdk_nvme_ns_get_optimal_io_boundary</a> (struct spdk_nvme_ns *ns)</td></tr>
 <tr class="memdesc:af58edc3021f8adcbecce5d3ebc5b6789"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the optimal I/O boundary, in blocks, for the given namespace.  <a href="#af58edc3021f8adcbecce5d3ebc5b6789">More...</a><br /></td></tr>
 <tr class="separator:af58edc3021f8adcbecce5d3ebc5b6789"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67c20210c6490d4545b40e43faa8af23"><td class="memItemLeft" align="right" valign="top">const uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a67c20210c6490d4545b40e43faa8af23">spdk_nvme_ns_get_nguid</a> (const struct spdk_nvme_ns *ns)</td></tr>
+<tr class="memdesc:a67c20210c6490d4545b40e43faa8af23"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the NGUID for the given namespace.  <a href="#a67c20210c6490d4545b40e43faa8af23">More...</a><br /></td></tr>
+<tr class="separator:a67c20210c6490d4545b40e43faa8af23"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6c559063408299a4612fd2e62f97bc63"><td class="memItemLeft" align="right" valign="top">const struct <a class="el" href="structspdk__uuid.html">spdk_uuid</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a6c559063408299a4612fd2e62f97bc63">spdk_nvme_ns_get_uuid</a> (const struct spdk_nvme_ns *ns)</td></tr>
 <tr class="memdesc:a6c559063408299a4612fd2e62f97bc63"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the UUID for the given namespace.  <a href="#a6c559063408299a4612fd2e62f97bc63">More...</a><br /></td></tr>
 <tr class="separator:a6c559063408299a4612fd2e62f97bc63"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -7001,6 +7004,33 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_map_prps</b>
 
 </div>
 </div>
+<a id="a67c20210c6490d4545b40e43faa8af23"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a67c20210c6490d4545b40e43faa8af23">&#9670;&nbsp;</a></span>spdk_nvme_ns_get_nguid()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint8_t* spdk_nvme_ns_get_nguid </td>
+          <td>(</td>
+          <td class="paramtype">const struct spdk_nvme_ns *&#160;</td>
+          <td class="paramname"><em>ns</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the NGUID for the given namespace. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ns</td><td>Namespace to query.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>a pointer to namespace NGUID, or NULL if ns does not have a NGUID. </dd></dl>
+
+</div>
+</div>
 <a id="a7c522609f730db26f66e7f5b6b3501e0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7c522609f730db26f66e7f5b6b3501e0">&#9670;&nbsp;</a></span>spdk_nvme_ns_get_num_sectors()</h2>
 
@@ -8603,7 +8633,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_map_prps</b>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
 <ul>
-        <li class="footer">Generated on Thu Jul 8 2021 04:04:25 for SPDK by
+        <li class="footer">Generated on Fri Jul 9 2021 04:04:31 for SPDK by
         <a href="http://www.doxygen.org/index.html">doxygen</a> 1.8.15 </li>
 </ul>
 </div>
