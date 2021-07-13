@@ -78,7 +78,7 @@ var structspdk__nvme__ctrlr__data =
     [ "mnan", "structspdk__nvme__ctrlr__data.html#a6a63365fdfaab3b54ec611b262fddd90", null ],
     [ "mntmt", "structspdk__nvme__ctrlr__data.html#a2fe9eab0eea64b7e4ec406c59b154abb", null ],
     [ "mtfa", "structspdk__nvme__ctrlr__data.html#a33d743e0631e477035fdaec206d2964b", null ],
-    [ "multi_host", "structspdk__nvme__ctrlr__data.html#ad8a4bdda65bddbe42b60cc5e51d28489", null ],
+    [ "multi_ctrlr", "structspdk__nvme__ctrlr__data.html#ad882af6e489168627ce919e454fd0223", null ],
     [ "multi_port", "structspdk__nvme__ctrlr__data.html#a21eab30239b5fd84b901662f48aad0d4", null ],
     [ "mxtmt", "structspdk__nvme__ctrlr__data.html#a25cabf290433b1b9b13a1a604ca12f58", null ],
     [ "nanagrpid", "structspdk__nvme__ctrlr__data.html#a157fe964ca7c13eae83a01211788115e", null ],

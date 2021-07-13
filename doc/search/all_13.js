@@ -520,8 +520,6 @@ var searchData=
   ['spdk_5fidxd_5fsubmit_5fcrc32c',['spdk_idxd_submit_crc32c',['../idxd_8h.html#ad29163e49accd983322a1d1a10e9b5a6',1,'idxd.h']]],
   ['spdk_5fidxd_5fsubmit_5fdualcast',['spdk_idxd_submit_dualcast',['../idxd_8h.html#aef2f83b678ea127b1818f759a615bdef',1,'idxd.h']]],
   ['spdk_5fidxd_5fsubmit_5ffill',['spdk_idxd_submit_fill',['../idxd_8h.html#ac469f33c1519f5454b2dad56686a5d2f',1,'idxd.h']]],
-  ['spdk_5finterface_5fdestroy',['spdk_interface_destroy',['../net_8h.html#af43d41aa26eb866db7cdb63b69eb7bb5',1,'net.h']]],
-  ['spdk_5finterface_5finit',['spdk_interface_init',['../net_8h.html#a8ddcb56f1e677b845c5ebd5363002fb5',1,'net.h']]],
   ['spdk_5finterrupt_5ffn',['spdk_interrupt_fn',['../thread_8h.html#a61cfdc77d10970d7f3a8631df71e9588',1,'thread.h']]],
   ['spdk_5finterrupt_5fmode_5fenable',['spdk_interrupt_mode_enable',['../thread_8h.html#a0cac0f188b5f46ff8bcdd5d4ffa37e84',1,'thread.h']]],
   ['spdk_5finterrupt_5fmode_5fis_5fenabled',['spdk_interrupt_mode_is_enabled',['../thread_8h.html#a1f8be492b86ceface921634b9a627b7c',1,'thread.h']]],

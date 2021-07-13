@@ -1,8 +1,5 @@
 var NAVTREEINDEX18 =
 {
-"structspdk__nvme__ctrlr__data.html#a2fe9eab0eea64b7e4ec406c59b154abb":[13,0,102,76],
-"structspdk__nvme__ctrlr__data.html#a30b709ab88c62f5e1de93f81d87c01e5":[13,0,102,6],
-"structspdk__nvme__ctrlr__data.html#a3111113eeed360498c0b5ee94bb0591b":[13,0,102,142],
 "structspdk__nvme__ctrlr__data.html#a328fa76ce8ce615de4a58d1084111739":[13,0,102,69],
 "structspdk__nvme__ctrlr__data.html#a32d63a0490eaa7e6acdecbfd6c6e75f2":[13,0,102,110],
 "structspdk__nvme__ctrlr__data.html#a335f04784f0c06a63c414f8807d42571":[13,0,102,114],
@@ -101,7 +98,7 @@ var NAVTREEINDEX18 =
 "structspdk__nvme__ctrlr__data.html#ad127b779e06589ea05960ede328dbedf":[13,0,102,9],
 "structspdk__nvme__ctrlr__data.html#ad15a1a4aa57ba8d2fc2bf24749de4d71":[13,0,102,34],
 "structspdk__nvme__ctrlr__data.html#ad19a0ec7106a12455841bbfe9bec40c1":[13,0,102,10],
-"structspdk__nvme__ctrlr__data.html#ad8a4bdda65bddbe42b60cc5e51d28489":[13,0,102,78],
+"structspdk__nvme__ctrlr__data.html#ad882af6e489168627ce919e454fd0223":[13,0,102,78],
 "structspdk__nvme__ctrlr__data.html#ada8eb3b02e984f1ba4572378d1b1623f":[13,0,102,128],
 "structspdk__nvme__ctrlr__data.html#adaee5a2c9135512de6b815c7eceabf13":[13,0,102,38],
 "structspdk__nvme__ctrlr__data.html#adca008a12767c46e3b4a58a1a8d3990c":[13,0,102,96],
@@ -249,5 +246,8 @@ var NAVTREEINDEX18 =
 "structspdk__nvme__intel__log__page__directory.html#aebfc097fdec7ddfa8402f37c7376c0fb":[13,0,138,9],
 "structspdk__nvme__intel__marketing__description__page.html":[13,0,139],
 "structspdk__nvme__intel__marketing__description__page.html#a8b3f83a9b25fe4c383518d820d7e5b4b":[13,0,139,0],
-"structspdk__nvme__intel__marketing__description__page.html#ab79f2db131af4897f67b1e2353b63221":[13,0,139,1]
+"structspdk__nvme__intel__marketing__description__page.html#ab79f2db131af4897f67b1e2353b63221":[13,0,139,1],
+"structspdk__nvme__intel__rw__latency__page.html":[13,0,140],
+"structspdk__nvme__intel__rw__latency__page.html#a1ff29500f553318d2c52cb8a6cef9ea1":[13,0,140,4],
+"structspdk__nvme__intel__rw__latency__page.html#a2484fe801d576b2b65331fffa6361c3d":[13,0,140,2]
 };
