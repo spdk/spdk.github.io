@@ -476,10 +476,12 @@ idxd_scan_accel_engine</h2>
 <th class="markdownTableHeadNone">Name  </th><th class="markdownTableHeadNone">Optional  </th><th class="markdownTableHeadNone">Type  </th><th class="markdownTableHeadNone">Description   </th></tr>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">config_number  </td><td class="markdownTableBodyNone">Required  </td><td class="markdownTableBodyNone">number  </td><td class="markdownTableBodyNone">Pre-defined config # to use (ie 0, 1). See <a href="https://spdk.io/doc/idxd.html">docs.</a>   </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">config_kernel_mode  </td><td class="markdownTableBodyNone">Optional  </td><td class="markdownTableBodyNone">Boolean  </td><td class="markdownTableBodyNone">If set, will use kernel idxd driver.   </td></tr>
 </table>
 <h3>Example</h3>
 <p>Example request:</p>
-<div class="fragment"><div class="line">{</div><div class="line">  &quot;params&quot;: {</div><div class="line">    &quot;config_number&quot;: 0</div><div class="line">  },</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;method&quot;: &quot;idxd_scan_accel_engine&quot;,</div><div class="line">  &quot;id&quot;: 1</div><div class="line">}</div></div><!-- fragment --><p>Example response:</p>
+<div class="fragment"><div class="line">{</div><div class="line">  &quot;params&quot;: {</div><div class="line">    &quot;config_number&quot;: 0,</div><div class="line">    &quot;config_kernel_mode&quot;: false</div><div class="line">  },</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;method&quot;: &quot;idxd_scan_accel_engine&quot;,</div><div class="line">  &quot;id&quot;: 1</div><div class="line">}</div></div><!-- fragment --><p>Example response:</p>
 <div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: true</div><div class="line">}</div></div><!-- fragment --><h2><a class="anchor" id="rpc_ioat_scan_accel_engine"></a>
 ioat_scan_accel_engine</h2>
 <p>Enable ioat accel engine offload.</p>
@@ -950,29 +952,31 @@ bdev_nvme_set_options</h2>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">timeout_us  </td><td class="markdownTableBodyNone">Optional  </td><td class="markdownTableBodyNone">number  </td><td class="markdownTableBodyNone">Timeout for each command, in microseconds. If 0, don't track timeouts   </td></tr>
 <tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">timeout_admin_us  </td><td class="markdownTableBodyNone">Optional  </td><td class="markdownTableBodyNone">number  </td><td class="markdownTableBodyNone">Timeout for each admin command, in microseconds. If 0, treat same as io timeouts ('timeout_us')   </td></tr>
+<tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">keep_alive_timeout_ms  </td><td class="markdownTableBodyNone">Optional  </td><td class="markdownTableBodyNone">number  </td><td class="markdownTableBodyNone">Keep alive timeout period in milliseconds, default is 10s   </td></tr>
-<tr class="markdownTableRowEven">
+<tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">retry_count  </td><td class="markdownTableBodyNone">Optional  </td><td class="markdownTableBodyNone">number  </td><td class="markdownTableBodyNone">The number of attempts per I/O before an I/O fails   </td></tr>
-<tr class="markdownTableRowOdd">
+<tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">arbitration_burst  </td><td class="markdownTableBodyNone">Optional  </td><td class="markdownTableBodyNone">number  </td><td class="markdownTableBodyNone">The value is expressed as a power of two, a value of 111b indicates no limit   </td></tr>
-<tr class="markdownTableRowEven">
+<tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">low_priority_weight  </td><td class="markdownTableBodyNone">Optional  </td><td class="markdownTableBodyNone">number  </td><td class="markdownTableBodyNone">The maximum number of commands that the controller may launch at one time from a low priority queue   </td></tr>
-<tr class="markdownTableRowOdd">
+<tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">medium_priority_weight  </td><td class="markdownTableBodyNone">Optional  </td><td class="markdownTableBodyNone">number  </td><td class="markdownTableBodyNone">The maximum number of commands that the controller may launch at one time from a medium priority queue   </td></tr>
-<tr class="markdownTableRowEven">
+<tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">high_priority_weight  </td><td class="markdownTableBodyNone">Optional  </td><td class="markdownTableBodyNone">number  </td><td class="markdownTableBodyNone">The maximum number of commands that the controller may launch at one time from a high priority queue   </td></tr>
-<tr class="markdownTableRowOdd">
+<tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">nvme_adminq_poll_period_us  </td><td class="markdownTableBodyNone">Optional  </td><td class="markdownTableBodyNone">number  </td><td class="markdownTableBodyNone">How often the admin queue is polled for asynchronous events in microseconds   </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">nvme_ioq_poll_period_us  </td><td class="markdownTableBodyNone">Optional  </td><td class="markdownTableBodyNone">number  </td><td class="markdownTableBodyNone">How often I/O queues are polled for completions, in microseconds. Default: 0 (as fast as possible).   </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">io_queue_requests  </td><td class="markdownTableBodyNone">Optional  </td><td class="markdownTableBodyNone">number  </td><td class="markdownTableBodyNone">The number of requests allocated for each NVMe I/O queue. Default: 512.   </td></tr>
+<td class="markdownTableBodyNone">nvme_ioq_poll_period_us  </td><td class="markdownTableBodyNone">Optional  </td><td class="markdownTableBodyNone">number  </td><td class="markdownTableBodyNone">How often I/O queues are polled for completions, in microseconds. Default: 0 (as fast as possible).   </td></tr>
 <tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">io_queue_requests  </td><td class="markdownTableBodyNone">Optional  </td><td class="markdownTableBodyNone">number  </td><td class="markdownTableBodyNone">The number of requests allocated for each NVMe I/O queue. Default: 512.   </td></tr>
+<tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">delay_cmd_submit  </td><td class="markdownTableBodyNone">Optional  </td><td class="markdownTableBodyNone">boolean  </td><td class="markdownTableBodyNone">Enable delaying NVMe command submission to allow batching of multiple commands. Default: <code>true</code>.   </td></tr>
 </table>
 <h3>Example</h3>
 <p>Example request:</p>
-<div class="fragment"><div class="line">request:</div><div class="line">{</div><div class="line">  &quot;params&quot;: {</div><div class="line">    &quot;retry_count&quot;: 5,</div><div class="line">    &quot;arbitration_burst&quot;: 3,</div><div class="line">    &quot;low_priority_weight&quot;: 8,</div><div class="line">    &quot;medium_priority_weight&quot;:8,</div><div class="line">    &quot;high_priority_weight&quot;: 8,</div><div class="line">    &quot;nvme_adminq_poll_period_us&quot;: 2000,</div><div class="line">    &quot;timeout_us&quot;: 10000000,</div><div class="line">    &quot;keep_alive_timeout_ms&quot;: 600000,</div><div class="line">    &quot;action_on_timeout&quot;: &quot;reset&quot;,</div><div class="line">    &quot;io_queue_requests&quot; : 2048,</div><div class="line">    &quot;delay_cmd_submit&quot;: true</div><div class="line">  },</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;method&quot;: &quot;bdev_nvme_set_options&quot;,</div><div class="line">  &quot;id&quot;: 1</div><div class="line">}</div></div><!-- fragment --><p>Example response:</p>
+<div class="fragment"><div class="line">request:</div><div class="line">{</div><div class="line">  &quot;params&quot;: {</div><div class="line">    &quot;retry_count&quot;: 5,</div><div class="line">    &quot;arbitration_burst&quot;: 3,</div><div class="line">    &quot;low_priority_weight&quot;: 8,</div><div class="line">    &quot;medium_priority_weight&quot;:8,</div><div class="line">    &quot;high_priority_weight&quot;: 8,</div><div class="line">    &quot;nvme_adminq_poll_period_us&quot;: 2000,</div><div class="line">    &quot;timeout_us&quot;: 10000000,</div><div class="line">    &quot;timeout_admin_us&quot;: 20000000,</div><div class="line">    &quot;keep_alive_timeout_ms&quot;: 600000,</div><div class="line">    &quot;action_on_timeout&quot;: &quot;reset&quot;,</div><div class="line">    &quot;io_queue_requests&quot; : 2048,</div><div class="line">    &quot;delay_cmd_submit&quot;: true</div><div class="line">  },</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;method&quot;: &quot;bdev_nvme_set_options&quot;,</div><div class="line">  &quot;id&quot;: 1</div><div class="line">}</div></div><!-- fragment --><p>Example response:</p>
 <div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: true</div><div class="line">}</div></div><!-- fragment --><h2><a class="anchor" id="rpc_bdev_nvme_set_hotplug"></a>
 bdev_nvme_set_hotplug</h2>
 <p>Change settings of the NVMe hotplug feature. If enabled, PCIe NVMe bdevs will be automatically discovered on insertion and deleted on removal.</p>
@@ -3583,7 +3587,7 @@ spdk_get_version</h2>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
 <ul>
-        <li class="footer">Generated on Tue Jul 13 2021 04:04:27 for SPDK by
+        <li class="footer">Generated on Wed Jul 14 2021 04:04:29 for SPDK by
         <a href="http://www.doxygen.org/index.html">doxygen</a> 1.8.15 </li>
 </ul>
 </div>

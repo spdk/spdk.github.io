@@ -183,6 +183,9 @@ uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__ctrlr__opts.html#ab75f6717b27136d7688339eea1fde789">fabrics_connect_timeout_us</a></td></tr>
 <tr class="memdesc:ab75f6717b27136d7688339eea1fde789"><td class="mdescLeft">&#160;</td><td class="mdescRight">The amount of time to spend before timing out during fabric connect on qpairs associated with this controller in microseconds. <br /></td></tr>
 <tr class="separator:ab75f6717b27136d7688339eea1fde789"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa308f055321501aa80c9d100167cde8e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__ctrlr__opts.html#aa308f055321501aa80c9d100167cde8e">disable_read_ana_log_page</a></td></tr>
+<tr class="memdesc:aa308f055321501aa80c9d100167cde8e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disable reading ANA log page.  <a href="#aa308f055321501aa80c9d100167cde8e">More...</a><br /></td></tr>
+<tr class="separator:aa308f055321501aa80c9d100167cde8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>NVMe controller initialization options. </p>
@@ -201,7 +204,7 @@ uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 </div><div class="memdoc">
 
 <p>Admin commands timeout in milliseconds (0 = no timeout). </p>
-<p>The timeout value is used for admin commands submitted internally by the nvme driver during initialization, before the user is able to call <a class="el" href="nvme_8h.html#aecec86e033e0d13e6fc67ead61a7028d" title="Register for timeout callback on a controller.">spdk_nvme_ctrlr_register_timeout_callback()</a>. By default, this is set to 120 seconds, users can change it in the probing callback. </p>
+<p>The timeout value is used for admin commands submitted internally by the nvme driver during initialization, before the user is able to call <a class="el" href="nvme_8h.html#ae2957853179526e6176cf7623b19552b" title="Register for timeout callback on a controller.">spdk_nvme_ctrlr_register_timeout_callback()</a>. By default, this is set to 120 seconds, users can change it in the probing callback. </p>
 
 </div>
 </div>
@@ -270,6 +273,24 @@ uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 
 <p>Disable logging of requests that are completed with error status. </p>
 <p>Defaults to 'false' (errors are logged). </p>
+
+</div>
+</div>
+<a id="aa308f055321501aa80c9d100167cde8e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa308f055321501aa80c9d100167cde8e">&#9670;&nbsp;</a></span>disable_read_ana_log_page</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool spdk_nvme_ctrlr_opts::disable_read_ana_log_page</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Disable reading ANA log page. </p>
+<p>The upper layer should reading ANA log page instead if set to true.</p>
+<p>Default is <code>false</code> (ANA log page is read). </p>
 
 </div>
 </div>
@@ -504,7 +525,7 @@ uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
 <ul>
-        <li class="footer">Generated on Tue Jul 13 2021 04:04:27 for SPDK by
+        <li class="footer">Generated on Wed Jul 14 2021 04:04:29 for SPDK by
         <a href="http://www.doxygen.org/index.html">doxygen</a> 1.8.15 </li>
 </ul>
 </div>

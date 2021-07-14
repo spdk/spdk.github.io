@@ -393,9 +393,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a1505fc1ef6e8ccb00134c1fa15e0368b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a1505fc1ef6e8ccb00134c1fa15e0368b">spdk_nvme_ctrlr_register_aer_callback</a> (struct spdk_nvme_ctrlr *ctrlr, <a class="el" href="nvme_8h.html#a1d066bb761dc3481f081d0d6924766ee">spdk_nvme_aer_cb</a> aer_cb_fn, void *aer_cb_arg)</td></tr>
 <tr class="memdesc:a1505fc1ef6e8ccb00134c1fa15e0368b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register callback function invoked when an AER command is completed for the given NVMe controller.  <a href="#a1505fc1ef6e8ccb00134c1fa15e0368b">More...</a><br /></td></tr>
 <tr class="separator:a1505fc1ef6e8ccb00134c1fa15e0368b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aecec86e033e0d13e6fc67ead61a7028d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#aecec86e033e0d13e6fc67ead61a7028d">spdk_nvme_ctrlr_register_timeout_callback</a> (struct spdk_nvme_ctrlr *ctrlr, uint64_t timeout_us, <a class="el" href="nvme_8h.html#a53fe1c01a447be8fcd29821a668227a0">spdk_nvme_timeout_cb</a> cb_fn, void *cb_arg)</td></tr>
-<tr class="memdesc:aecec86e033e0d13e6fc67ead61a7028d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register for timeout callback on a controller.  <a href="#aecec86e033e0d13e6fc67ead61a7028d">More...</a><br /></td></tr>
-<tr class="separator:aecec86e033e0d13e6fc67ead61a7028d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2957853179526e6176cf7623b19552b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#ae2957853179526e6176cf7623b19552b">spdk_nvme_ctrlr_register_timeout_callback</a> (struct spdk_nvme_ctrlr *ctrlr, uint64_t timeout_io_us, uint64_t timeout_admin_us, <a class="el" href="nvme_8h.html#a53fe1c01a447be8fcd29821a668227a0">spdk_nvme_timeout_cb</a> cb_fn, void *cb_arg)</td></tr>
+<tr class="memdesc:ae2957853179526e6176cf7623b19552b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register for timeout callback on a controller.  <a href="#ae2957853179526e6176cf7623b19552b">More...</a><br /></td></tr>
+<tr class="separator:ae2957853179526e6176cf7623b19552b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6964d09dc51882fae6f2a7cf94afc741"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a6964d09dc51882fae6f2a7cf94afc741">spdk_nvme_ctrlr_get_default_io_qpair_opts</a> (struct spdk_nvme_ctrlr *ctrlr, struct <a class="el" href="structspdk__nvme__io__qpair__opts.html">spdk_nvme_io_qpair_opts</a> *opts, size_t opts_size)</td></tr>
 <tr class="memdesc:a6964d09dc51882fae6f2a7cf94afc741"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the default options for I/O qpair creation for a specific NVMe controller.  <a href="#a6964d09dc51882fae6f2a7cf94afc741">More...</a><br /></td></tr>
 <tr class="separator:a6964d09dc51882fae6f2a7cf94afc741"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -729,12 +729,6 @@ Functions</h2></td></tr>
 <tr class="memitem:a2cd4f33cc8dc7741290b9cdf02fc691c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a2cd4f33cc8dc7741290b9cdf02fc691c">spdk_nvme_cuse_unregister</a> (struct spdk_nvme_ctrlr *ctrlr)</td></tr>
 <tr class="memdesc:a2cd4f33cc8dc7741290b9cdf02fc691c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove a previously created character device (Experimental)  <a href="#a2cd4f33cc8dc7741290b9cdf02fc691c">More...</a><br /></td></tr>
 <tr class="separator:a2cd4f33cc8dc7741290b9cdf02fc691c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a59cf9ac4711064c37d22e1f736f1b0bb"><td class="memItemLeft" align="right" valign="top"><a id="a59cf9ac4711064c37d22e1f736f1b0bb"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_map_prps</b> (void *prv, struct <a class="el" href="structspdk__nvme__cmd.html">spdk_nvme_cmd</a> *cmd, struct iovec *iovs, uint32_t len, size_t mps, void *(*gpa_to_vva)(void *prv, uint64_t addr, uint64_t len))</td></tr>
-<tr class="separator:a59cf9ac4711064c37d22e1f736f1b0bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abe78bfe779380af49ed2416c8974cff3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#abe78bfe779380af49ed2416c8974cff3">spdk_nvme_map_cmd</a> (void *prv, struct <a class="el" href="structspdk__nvme__cmd.html">spdk_nvme_cmd</a> *cmd, struct iovec *iovs, uint32_t max_iovcnt, uint32_t len, size_t mps, void *(*gpa_to_vva)(void *prv, uint64_t addr, uint64_t len))</td></tr>
-<tr class="memdesc:abe78bfe779380af49ed2416c8974cff3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Map NVMe command data buffers sent from Virtual Machine to virtual addresses.  <a href="#abe78bfe779380af49ed2416c8974cff3">More...</a><br /></td></tr>
-<tr class="separator:abe78bfe779380af49ed2416c8974cff3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac8157e10a468a618d04accf1830d59cd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#ac8157e10a468a618d04accf1830d59cd">spdk_nvme_cuse_update_namespaces</a> (struct spdk_nvme_ctrlr *ctrlr)</td></tr>
 <tr class="memdesc:ac8157e10a468a618d04accf1830d59cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update and populate namespace CUSE devices (Experimental)  <a href="#ac8157e10a468a618d04accf1830d59cd">More...</a><br /></td></tr>
 <tr class="separator:ac8157e10a468a618d04accf1830d59cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1396,7 +1390,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_map_prps</b>
 </div><div class="memdoc">
 
 <p>Abort a specific previously-submitted NVMe command. </p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="nvme_8h.html#aecec86e033e0d13e6fc67ead61a7028d" title="Register for timeout callback on a controller.">spdk_nvme_ctrlr_register_timeout_callback()</a></dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="nvme_8h.html#ae2957853179526e6176cf7623b19552b" title="Register for timeout callback on a controller.">spdk_nvme_ctrlr_register_timeout_callback()</a></dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">ctrlr</td><td>NVMe controller to which the command was submitted. </td></tr>
@@ -3993,8 +3987,8 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_map_prps</b>
 
 </div>
 </div>
-<a id="aecec86e033e0d13e6fc67ead61a7028d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aecec86e033e0d13e6fc67ead61a7028d">&#9670;&nbsp;</a></span>spdk_nvme_ctrlr_register_timeout_callback()</h2>
+<a id="ae2957853179526e6176cf7623b19552b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae2957853179526e6176cf7623b19552b">&#9670;&nbsp;</a></span>spdk_nvme_ctrlr_register_timeout_callback()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4009,7 +4003,13 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_map_prps</b>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">uint64_t&#160;</td>
-          <td class="paramname"><em>timeout_us</em>, </td>
+          <td class="paramname"><em>timeout_io_us</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>timeout_admin_us</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -4036,7 +4036,8 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_map_prps</b>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">ctrlr</td><td>NVMe controller on which to monitor for timeout. </td></tr>
-    <tr><td class="paramname">timeout_us</td><td>Timeout value in microseconds. </td></tr>
+    <tr><td class="paramname">timeout_io_us</td><td>Timeout value in microseconds for io commands. </td></tr>
+    <tr><td class="paramname">timeout_admin_us</td><td>Timeout value in microseconds for admin commands. </td></tr>
     <tr><td class="paramname">cb_fn</td><td>A function pointer that points to the callback function. </td></tr>
     <tr><td class="paramname">cb_arg</td><td>Argument to the callback function. </td></tr>
   </table>
@@ -4824,78 +4825,6 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_map_prps</b>
 <p>Unspecified fields of trid are left unmodified, so the caller must initialize hostid (for example, memset() to 0) before calling this function.</p>
 <p>This function should not be used with Fiber Channel or PCIe as these transports do not require host information for connections.</p>
 <dl class="section return"><dt>Returns</dt><dd>0 if parsing was successful and hostid is filled out, or negated errno values on failure. </dd></dl>
-
-</div>
-</div>
-<a id="abe78bfe779380af49ed2416c8974cff3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abe78bfe779380af49ed2416c8974cff3">&#9670;&nbsp;</a></span>spdk_nvme_map_cmd()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int spdk_nvme_map_cmd </td>
-          <td>(</td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>prv</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">struct <a class="el" href="structspdk__nvme__cmd.html">spdk_nvme_cmd</a> *&#160;</td>
-          <td class="paramname"><em>cmd</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">struct iovec *&#160;</td>
-          <td class="paramname"><em>iovs</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>max_iovcnt</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>len</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>mps</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">void *(*)(void *prv, uint64_t addr, uint64_t len)&#160;</td>
-          <td class="paramname"><em>gpa_to_vva</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Map NVMe command data buffers sent from Virtual Machine to virtual addresses. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">prv</td><td>Opaque handle to gpa_to_vva callback </td></tr>
-    <tr><td class="paramname">cmd</td><td>NVMe command </td></tr>
-    <tr><td class="paramname">iovs</td><td>IO vectors used to point the data buffers in NVMe command </td></tr>
-    <tr><td class="paramname">max_iovcnt</td><td>Maximum IO vectors that can be used </td></tr>
-    <tr><td class="paramname">len</td><td>Total buffer length for the NVMe command </td></tr>
-    <tr><td class="paramname">mps</td><td>Memory page size </td></tr>
-    <tr><td class="paramname">gpa_to_vva</td><td>Callback to map memory from Guest Physical address to Virtual address </td></tr>
-  </table>
-  </dd>
-</dl>
 
 </div>
 </div>
@@ -8633,7 +8562,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_map_prps</b>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
 <ul>
-        <li class="footer">Generated on Tue Jul 13 2021 04:04:27 for SPDK by
+        <li class="footer">Generated on Wed Jul 14 2021 04:04:29 for SPDK by
         <a href="http://www.doxygen.org/index.html">doxygen</a> 1.8.15 </li>
 </ul>
 </div>
