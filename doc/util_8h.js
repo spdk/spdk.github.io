@@ -11,6 +11,7 @@ var util_8h =
     [ "spdk_min", "util_8h.html#a837456da8a8d13c0f84c1b362acfe482", null ],
     [ "SPDK_SEC_TO_NSEC", "util_8h.html#ac1fbd59e0e9f73e71f416385d606cc52", null ],
     [ "SPDK_SEC_TO_USEC", "util_8h.html#aaa368537876ed0aee8ae810a240b2dfb", null ],
+    [ "SPDK_SIZEOF_MEMBER", "util_8h.html#a84582307b17e6428bfdd287c9b8b5e3d", null ],
     [ "SPDK_SN32_CMPMAX", "util_8h.html#a744d1bf5de56a453f235c5eb58ec4d00", null ],
     [ "spdk_align32pow2", "util_8h.html#a22383e04171a98834c5f21f0c460e322", null ],
     [ "spdk_align64pow2", "util_8h.html#a23a7b8dc5a8b680176bac1c7bd384406", null ],

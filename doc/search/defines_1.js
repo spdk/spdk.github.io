@@ -34,6 +34,7 @@ var searchData=
   ['spdk_5fpci_5fdriver_5fneed_5fmapping',['SPDK_PCI_DRIVER_NEED_MAPPING',['../env_8h.html#af804d200bbd6b9aa3ddf5d37f602b5e5',1,'env.h']]],
   ['spdk_5fpci_5fdriver_5fwc_5factivate',['SPDK_PCI_DRIVER_WC_ACTIVATE',['../env_8h.html#a8a8b7b86b3bec06b90bd2f1677f97735',1,'env.h']]],
   ['spdk_5frmb',['spdk_rmb',['../barrier_8h.html#a876d9f9e955882ee02432d8796c63213',1,'barrier.h']]],
+  ['spdk_5fsizeof_5fmember',['SPDK_SIZEOF_MEMBER',['../util_8h.html#a84582307b17e6428bfdd287c9b8b5e3d',1,'util.h']]],
   ['spdk_5fsmp_5fmb',['spdk_smp_mb',['../barrier_8h.html#a07ef3ca027c4f24491ec4114c0e0a727',1,'barrier.h']]],
   ['spdk_5fsmp_5frmb',['spdk_smp_rmb',['../barrier_8h.html#a9b87848d3379310e4ade28a63fc038d5',1,'barrier.h']]],
   ['spdk_5fsmp_5fwmb',['spdk_smp_wmb',['../barrier_8h.html#aee6be79189ae975da9922c3ff229ded5',1,'barrier.h']]],
