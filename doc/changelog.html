@@ -94,6 +94,7 @@ v21.07: (Upcoming Release)</h1>
 <h2>accel_fw</h2>
 <p>Added API <code>spdk_accel_submit_copy_crc32c</code> to perform a CRC32C while copying data.</p>
 <p>Added API <code>spdk_accel_batch_prep_copy_crc32c</code> to batch CRC32C + copy commands.</p>
+<p>Added API <code>spdk_accel_submit_copy_crc32cv</code> to submit chained CRC32C + copy commands.</p>
 <h2>bdev</h2>
 <p>Change <code>spdk_bdev_read_blocks_with_md</code> arg offset definiton from int64_t to uint64_t.</p>
 <p>Red-black tree has been used to organize the bdev names and aliases uniformly to provide faster lookup.</p>
@@ -1304,7 +1305,7 @@ v16.06: NVMf userspace target</h1>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
 <ul>
-        <li class="footer">Generated on Thu Jul 15 2021 04:04:26 for SPDK by
+        <li class="footer">Generated on Fri Jul 16 2021 04:04:22 for SPDK by
         <a href="http://www.doxygen.org/index.html">doxygen</a> 1.8.15 </li>
 </ul>
 </div>
