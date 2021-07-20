@@ -475,6 +475,13 @@ Enumerations</h2></td></tr>
 <b>SPDK_NVME_SHST_COMPLETE</b> = 0x2
  }</td></tr>
 <tr class="separator:a53188eec68915208fab035bba9d6eba7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24df614b7b914804dfa719dc03dfbc4f"><td class="memItemLeft" align="right" valign="top"><a id="a24df614b7b914804dfa719dc03dfbc4f"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme__spec_8h.html#a24df614b7b914804dfa719dc03dfbc4f">spdk_nvme_brs_value</a> { <b>SPDK_NVME_BRS_NO_READ</b> = 0x0, 
+<b>SPDK_NVME_BRS_READ_IN_PROGRESS</b> = 0x1, 
+<b>SPDK_NVME_BRS_READ_SUCCESS</b> = 0x2, 
+<b>SPDK_NVME_BRS_READ_ERROR</b> = 0x3
+ }</td></tr>
+<tr class="memdesc:a24df614b7b914804dfa719dc03dfbc4f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Boot read status values. <br /></td></tr>
+<tr class="separator:a24df614b7b914804dfa719dc03dfbc4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6aa934b2f75a2d0fc8a22f14627f5000"><td class="memItemLeft" align="right" valign="top"><a id="a6aa934b2f75a2d0fc8a22f14627f5000"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_sgl_descriptor_type</b> { <br />
 &#160;&#160;<b>SPDK_NVME_SGL_TYPE_DATA_BLOCK</b> = 0x0, 
 <b>SPDK_NVME_SGL_TYPE_BIT_BUCKET</b> = 0x1, 
@@ -1005,10 +1012,15 @@ Enumerations</h2></td></tr>
 <b>SPDK_NVME_SANITIZE_CRYPTO_ERASE</b> = 0x4
  }</td></tr>
 <tr class="separator:a20ed86cc8749183d3db4640b6c4b0567"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae4da1c1bec22eb22d1af72bbf37af36e"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme__spec_8h.html#ae4da1c1bec22eb22d1af72bbf37af36e">spdk_nvme_fw_commit_action</a> { <a class="el" href="nvme__spec_8h.html#ae4da1c1bec22eb22d1af72bbf37af36eaf8349fa33534c363595859493747e93f">SPDK_NVME_FW_COMMIT_REPLACE_IMG</a> = 0x0, 
+<tr class="memitem:ae4da1c1bec22eb22d1af72bbf37af36e"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme__spec_8h.html#ae4da1c1bec22eb22d1af72bbf37af36e">spdk_nvme_fw_commit_action</a> { <br />
+&#160;&#160;<a class="el" href="nvme__spec_8h.html#ae4da1c1bec22eb22d1af72bbf37af36eaf8349fa33534c363595859493747e93f">SPDK_NVME_FW_COMMIT_REPLACE_IMG</a> = 0x0, 
 <a class="el" href="nvme__spec_8h.html#ae4da1c1bec22eb22d1af72bbf37af36ea85655a09e0cae5f157d3b005ba1f4b6f">SPDK_NVME_FW_COMMIT_REPLACE_AND_ENABLE_IMG</a> = 0x1, 
 <a class="el" href="nvme__spec_8h.html#ae4da1c1bec22eb22d1af72bbf37af36eab533ab92baec629b3cbeed4b81885c13">SPDK_NVME_FW_COMMIT_ENABLE_IMG</a> = 0x2, 
-<a class="el" href="nvme__spec_8h.html#ae4da1c1bec22eb22d1af72bbf37af36eab62fbc9f58fcf496f7207e7fa6233a0d">SPDK_NVME_FW_COMMIT_RUN_IMG</a> = 0x3
+<a class="el" href="nvme__spec_8h.html#ae4da1c1bec22eb22d1af72bbf37af36eab62fbc9f58fcf496f7207e7fa6233a0d">SPDK_NVME_FW_COMMIT_RUN_IMG</a> = 0x3, 
+<br />
+&#160;&#160;<a class="el" href="nvme__spec_8h.html#ae4da1c1bec22eb22d1af72bbf37af36ea8fdb4354da92942c3c324d6690f99f0c">SPDK_NVME_FW_COMMIT_REPLACE_BOOT_PARTITION</a> = 0x6, 
+<a class="el" href="nvme__spec_8h.html#ae4da1c1bec22eb22d1af72bbf37af36ea63a926a94e918914066d2c5a49ec00d8">SPDK_NVME_FW_COMMIT_ACTIVATE_BOOT_PARTITION</a> = 0x7
+<br />
  }</td></tr>
 <tr class="memdesc:ae4da1c1bec22eb22d1af72bbf37af36e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parameters for SPDK_NVME_OPC_FIRMWARE_COMMIT cdw10: commit action.  <a href="nvme__spec_8h.html#ae4da1c1bec22eb22d1af72bbf37af36e">More...</a><br /></td></tr>
 <tr class="separator:ae4da1c1bec22eb22d1af72bbf37af36e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1782,6 +1794,10 @@ static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_
 </td></tr>
 <tr><td class="fieldname"><a id="ae4da1c1bec22eb22d1af72bbf37af36eab62fbc9f58fcf496f7207e7fa6233a0d"></a>SPDK_NVME_FW_COMMIT_RUN_IMG&#160;</td><td class="fielddoc"><p>The image specified by the Firmware Slot field is requested to be activated immediately without reset. </p>
 </td></tr>
+<tr><td class="fieldname"><a id="ae4da1c1bec22eb22d1af72bbf37af36ea8fdb4354da92942c3c324d6690f99f0c"></a>SPDK_NVME_FW_COMMIT_REPLACE_BOOT_PARTITION&#160;</td><td class="fielddoc"><p>Downloaded image replaces the Boot Partition specified by the Boot Partition ID field. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ae4da1c1bec22eb22d1af72bbf37af36ea63a926a94e918914066d2c5a49ec00d8"></a>SPDK_NVME_FW_COMMIT_ACTIVATE_BOOT_PARTITION&#160;</td><td class="fielddoc"><p>Mark the Boot Partition specified in the BPID field as Active and update BPINFO.ABPID. </p>
+</td></tr>
 </table>
 
 </div>
@@ -2021,7 +2037,7 @@ static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
 <ul>
-        <li class="footer">Generated on Mon Jul 19 2021 04:04:31 for SPDK by
+        <li class="footer">Generated on Tue Jul 20 2021 04:04:25 for SPDK by
         <a href="http://www.doxygen.org/index.html">doxygen</a> 1.8.15 </li>
 </ul>
 </div>

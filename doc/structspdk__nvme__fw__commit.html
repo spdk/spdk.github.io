@@ -104,12 +104,32 @@ Data Fields</h2></td></tr>
 <tr class="memdesc:a5533adaa1a3efdd7c6f5c02c4f86f6d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Commit Action.  <a href="#a5533adaa1a3efdd7c6f5c02c4f86f6d7">More...</a><br /></td></tr>
 <tr class="separator:a5533adaa1a3efdd7c6f5c02c4f86f6d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abfdded09bf900eb301b631ec4ca5949c"><td class="memItemLeft" align="right" valign="top"><a id="abfdded09bf900eb301b631ec4ca5949c"></a>
-uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>reserved</b>: 26</td></tr>
+uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>reserved</b>: 25</td></tr>
 <tr class="separator:abfdded09bf900eb301b631ec4ca5949c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adceddb8b4669fb29ec4d5f45cf567dd7"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__fw__commit.html#adceddb8b4669fb29ec4d5f45cf567dd7">bpid</a>: 1</td></tr>
+<tr class="memdesc:adceddb8b4669fb29ec4d5f45cf567dd7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Boot Partition ID.  <a href="#adceddb8b4669fb29ec4d5f45cf567dd7">More...</a><br /></td></tr>
+<tr class="separator:adceddb8b4669fb29ec4d5f45cf567dd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Parameters for SPDK_NVME_OPC_FIRMWARE_COMMIT cdw10. </p>
 </div><h2 class="groupheader">Field Documentation</h2>
+<a id="adceddb8b4669fb29ec4d5f45cf567dd7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adceddb8b4669fb29ec4d5f45cf567dd7">&#9670;&nbsp;</a></span>bpid</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t spdk_nvme_fw_commit::bpid</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Boot Partition ID. </p>
+<p>Specifies the boot partition that shall be used for the Commit Action. </p>
+
+</div>
+</div>
 <a id="a5533adaa1a3efdd7c6f5c02c4f86f6d7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5533adaa1a3efdd7c6f5c02c4f86f6d7">&#9670;&nbsp;</a></span>ca</h2>
 
@@ -153,7 +173,7 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>reserved</b>: 26<
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
 <ul>
-        <li class="footer">Generated on Mon Jul 19 2021 04:04:32 for SPDK by
+        <li class="footer">Generated on Tue Jul 20 2021 04:04:25 for SPDK by
         <a href="http://www.doxygen.org/index.html">doxygen</a> 1.8.15 </li>
 </ul>
 </div>

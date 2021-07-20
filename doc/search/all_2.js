@@ -26,7 +26,7 @@ var searchData=
   ['blockcnt',['blockcnt',['../structspdk__bdev.html#aef65d7444968b8981d46d0c520fd5287',1,'spdk_bdev']]],
   ['blocklen',['blocklen',['../structspdk__bdev.html#ac737d9458e1184f313aed88b8af9b862',1,'spdk_bdev']]],
   ['bounce_5fiov',['bounce_iov',['../structspdk__bdev__io_1_1____bdev__io__internal__fields.html#aee2ed117d4aa174778f5920a3e150c2e',1,'spdk_bdev_io::__bdev_io_internal_fields']]],
-  ['bpid',['bpid',['../unionspdk__nvme__bprsel__register.html#aec5aa2286f6c15c07cd269ac3ef35613',1,'spdk_nvme_bprsel_register']]],
+  ['bpid',['bpid',['../unionspdk__nvme__bprsel__register.html#aec5aa2286f6c15c07cd269ac3ef35613',1,'spdk_nvme_bprsel_register::bpid()'],['../structspdk__nvme__fw__commit.html#adceddb8b4669fb29ec4d5f45cf567dd7',1,'spdk_nvme_fw_commit::bpid()']]],
   ['bpinfo',['bpinfo',['../structspdk__nvme__registers.html#a6c0a3def50fe28f4af603dd0fa116acf',1,'spdk_nvme_registers']]],
   ['bpmbl',['bpmbl',['../structspdk__nvme__registers.html#a5cc56fd2557ed7ffed6b00b3eac5bf31',1,'spdk_nvme_registers']]],
   ['bprof',['bprof',['../unionspdk__nvme__bprsel__register.html#a615e9f455cb7a36f1820dae8fd9dc3ae',1,'spdk_nvme_bprsel_register']]],

@@ -1,5 +1,13 @@
 var NAVTREEINDEX20 =
 {
+"structspdk__nvme__registers.html#a6aed4a0f7535a4efad2ee2af44e2d6c1":[13,0,166,7],
+"structspdk__nvme__registers.html#a6b09cae2aad064302d6415dbaf8346e2":[13,0,166,29],
+"structspdk__nvme__registers.html#a6c0a3def50fe28f4af603dd0fa116acf":[13,0,166,3],
+"structspdk__nvme__registers.html#a71e8bbdb5c54c51ae734e188a5e81559":[13,0,166,0],
+"structspdk__nvme__registers.html#a74f73747be7bf5656c0710e054f5191e":[13,0,166,2],
+"structspdk__nvme__registers.html#a7a3ce15c26be8cf30a74e80ccac3bcca":[13,0,166,21],
+"structspdk__nvme__registers.html#a8d40deb716b5c02d125ad3bcd1492d56":[13,0,166,22],
+"structspdk__nvme__registers.html#a8ebdc43df8106c398be6746904bbed9f":[13,0,166,9],
 "structspdk__nvme__registers.html#a92e20b1c798c1873b4e3e27f72e4bf07":[13,0,166,5],
 "structspdk__nvme__registers.html#a9d88ec002d49b7dfc2620cadfd7408ee":[13,0,166,12],
 "structspdk__nvme__registers.html#aa4774c23e63ced526fed163298f003db":[13,0,166,17],
@@ -241,13 +249,5 @@ var NAVTREEINDEX20 =
 "structspdk__nvme__zns__ns__data.html#a49c57b332bf45793fff2b3e795a0c03d":[13,0,197,3],
 "structspdk__nvme__zns__ns__data.html#a60795ef319f8bfb561e93717876ba0b6":[13,0,197,11],
 "structspdk__nvme__zns__ns__data.html#a689785f50f2dda21c0a7aa8c1fbb0412":[13,0,197,13],
-"structspdk__nvme__zns__ns__data.html#a6adfa6addd884906055f075aca9e399c":[13,0,197,9],
-"structspdk__nvme__zns__ns__data.html#a6ba2a36b755134b3e8ad763919be4613":[13,0,197,14],
-"structspdk__nvme__zns__ns__data.html#a7ec3330b0942e8a6a1be857ed3be85e7":[13,0,197,10],
-"structspdk__nvme__zns__ns__data.html#a8c0d5add4037b02b9f7021557e648d6a":[13,0,197,5],
-"structspdk__nvme__zns__ns__data.html#aaca26a18cab116c766fbd2a99afa953d":[13,0,197,6],
-"structspdk__nvme__zns__ns__data.html#abdd0f008b8756f17892579fb42ab57c0":[13,0,197,2],
-"structspdk__nvme__zns__ns__data.html#ad119491b52edb9847751d19deb3fbc85":[13,0,197,8],
-"structspdk__nvme__zns__ns__data.html#adca9d47db6e68a38bb6a2e611eadd643":[13,0,197,16],
-"structspdk__nvme__zns__ns__data.html#afb5a0a3551ecb7a92dbd5db2d4fdab31":[13,0,197,12]
+"structspdk__nvme__zns__ns__data.html#a6adfa6addd884906055f075aca9e399c":[13,0,197,9]
 };

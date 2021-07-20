@@ -198,6 +198,12 @@ var nvme__spec_8h =
       [ "SPDK_NVME_ASYNC_EVENT_TYPE_IO", "nvme__spec_8h.html#a36f8ec174eebd9dc8dcd78fbc9ef635aaa59355ebcfbf3717e206e1795ec47c41", null ],
       [ "SPDK_NVME_ASYNC_EVENT_TYPE_VENDOR", "nvme__spec_8h.html#a36f8ec174eebd9dc8dcd78fbc9ef635aaa3be5adef145761c023d754818eba89d", null ]
     ] ],
+    [ "spdk_nvme_brs_value", "nvme__spec_8h.html#a24df614b7b914804dfa719dc03dfbc4f", [
+      [ "SPDK_NVME_BRS_NO_READ", "nvme__spec_8h.html#a24df614b7b914804dfa719dc03dfbc4fa69e68b57bad051e0e9e82ef075e48eed", null ],
+      [ "SPDK_NVME_BRS_READ_IN_PROGRESS", "nvme__spec_8h.html#a24df614b7b914804dfa719dc03dfbc4fa7fccf34fabf67cd87ee2dc416b1aa1e3", null ],
+      [ "SPDK_NVME_BRS_READ_SUCCESS", "nvme__spec_8h.html#a24df614b7b914804dfa719dc03dfbc4fa90039361172e89a8bf5ddc59061eded3", null ],
+      [ "SPDK_NVME_BRS_READ_ERROR", "nvme__spec_8h.html#a24df614b7b914804dfa719dc03dfbc4fa4cf9b63d59f2f04bfe2037cac4aba40b", null ]
+    ] ],
     [ "spdk_nvme_cap_ams", "nvme__spec_8h.html#adf6ad5ec9f8c1aa4c7efc45ee9d646b6", [
       [ "SPDK_NVME_CAP_AMS_WRR", "nvme__spec_8h.html#adf6ad5ec9f8c1aa4c7efc45ee9d646b6ac8b3721eb6c714051f08db20938b31af", null ],
       [ "SPDK_NVME_CAP_AMS_VS", "nvme__spec_8h.html#adf6ad5ec9f8c1aa4c7efc45ee9d646b6a0bae550fd4027110273cc75986809274", null ]
@@ -326,7 +332,9 @@ var nvme__spec_8h =
       [ "SPDK_NVME_FW_COMMIT_REPLACE_IMG", "nvme__spec_8h.html#ae4da1c1bec22eb22d1af72bbf37af36eaf8349fa33534c363595859493747e93f", null ],
       [ "SPDK_NVME_FW_COMMIT_REPLACE_AND_ENABLE_IMG", "nvme__spec_8h.html#ae4da1c1bec22eb22d1af72bbf37af36ea85655a09e0cae5f157d3b005ba1f4b6f", null ],
       [ "SPDK_NVME_FW_COMMIT_ENABLE_IMG", "nvme__spec_8h.html#ae4da1c1bec22eb22d1af72bbf37af36eab533ab92baec629b3cbeed4b81885c13", null ],
-      [ "SPDK_NVME_FW_COMMIT_RUN_IMG", "nvme__spec_8h.html#ae4da1c1bec22eb22d1af72bbf37af36eab62fbc9f58fcf496f7207e7fa6233a0d", null ]
+      [ "SPDK_NVME_FW_COMMIT_RUN_IMG", "nvme__spec_8h.html#ae4da1c1bec22eb22d1af72bbf37af36eab62fbc9f58fcf496f7207e7fa6233a0d", null ],
+      [ "SPDK_NVME_FW_COMMIT_REPLACE_BOOT_PARTITION", "nvme__spec_8h.html#ae4da1c1bec22eb22d1af72bbf37af36ea8fdb4354da92942c3c324d6690f99f0c", null ],
+      [ "SPDK_NVME_FW_COMMIT_ACTIVATE_BOOT_PARTITION", "nvme__spec_8h.html#ae4da1c1bec22eb22d1af72bbf37af36ea63a926a94e918914066d2c5a49ec00d8", null ]
     ] ],
     [ "spdk_nvme_generic_command_status_code", "nvme__spec_8h.html#aa70e5bbfae3ba9ec66a65c78e1966a1d", [
       [ "SPDK_NVME_SC_SUCCESS", "nvme__spec_8h.html#aa70e5bbfae3ba9ec66a65c78e1966a1da2903f5b99e8ff5e80b5da057b1befb0f", null ],
