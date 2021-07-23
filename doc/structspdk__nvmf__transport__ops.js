@@ -15,8 +15,6 @@ var structspdk__nvmf__transport__ops =
     [ "poll_group_create", "structspdk__nvmf__transport__ops.html#a11dcdf38bd1dc16584dd6422a0274a34", null ],
     [ "poll_group_destroy", "structspdk__nvmf__transport__ops.html#ac32c0c33dd13799e4bbc730325da2bc8", null ],
     [ "poll_group_dump_stat", "structspdk__nvmf__transport__ops.html#a6bf60055493718fe8aa4e07d16002c2f", null ],
-    [ "poll_group_free_stat", "structspdk__nvmf__transport__ops.html#af75a8f9214c03164a00dae20747fdb14", null ],
-    [ "poll_group_get_stat", "structspdk__nvmf__transport__ops.html#ac029bafb3ebbfb3466ad803229dd2c75", null ],
     [ "poll_group_poll", "structspdk__nvmf__transport__ops.html#a5ef93b45156117554b4707487229e157", null ],
     [ "poll_group_remove", "structspdk__nvmf__transport__ops.html#a09da91b1d08d8e83f900ea18f74824d6", null ],
     [ "qpair_abort_request", "structspdk__nvmf__transport__ops.html#a4a449c09771f112062b805e5a404c5eb", null ],

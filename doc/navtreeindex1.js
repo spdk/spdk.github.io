@@ -249,5 +249,5 @@ var NAVTREEINDEX1 =
 "blobfs__bdev_8h.html#a3f6c4607f877cca80d12fa1d45be5b63":[14,0,12,1],
 "blobfs__bdev_8h.html#aeba9eac67ee1c9c401df29609c8b917b":[14,0,12,0],
 "changelog.html":[1,3],
-"changelog.html#changelog-v16-06":[1,3,20]
+"changelog.html#changelog-v16-06":[1,3,21]
 };

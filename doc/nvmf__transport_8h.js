@@ -26,6 +26,14 @@ var nvmf__transport_8h =
       [ "SPDK_NVMF_QPAIR_DEACTIVATING", "nvmf__transport_8h.html#aae2f46da7cfac38ce46c51446985a286a1de23ba5b159eb83c78f4ce538ed2c58", null ],
       [ "SPDK_NVMF_QPAIR_ERROR", "nvmf__transport_8h.html#aae2f46da7cfac38ce46c51446985a286a33289f1ec940d6ca01ea350878586ee0", null ]
     ] ],
+    [ "spdk_nvmf_zcopy_phase", "nvmf__transport_8h.html#ae58d26ffb4eacadd941c08e8e2615b13", [
+      [ "NVMF_ZCOPY_PHASE_NONE", "nvmf__transport_8h.html#ae58d26ffb4eacadd941c08e8e2615b13ab2b42495394b66ce6b77939e39c89942", null ],
+      [ "NVMF_ZCOPY_PHASE_INIT", "nvmf__transport_8h.html#ae58d26ffb4eacadd941c08e8e2615b13a1b843257260bacc54e7a46fea10e2537", null ],
+      [ "NVMF_ZCOPY_PHASE_EXECUTE", "nvmf__transport_8h.html#ae58d26ffb4eacadd941c08e8e2615b13a386d672af92605a4680bafaa55845ccc", null ],
+      [ "NVMF_ZCOPY_PHASE_END_PENDING", "nvmf__transport_8h.html#ae58d26ffb4eacadd941c08e8e2615b13aebca3dfd84642b9c3c431d870aaa2bdd", null ],
+      [ "NVMF_ZCOPY_PHASE_COMPLETE", "nvmf__transport_8h.html#ae58d26ffb4eacadd941c08e8e2615b13af2a4b5b0c3e3d9a73550d12073f1dd9d", null ],
+      [ "NVMF_ZCOPY_PHASE_INIT_FAILED", "nvmf__transport_8h.html#ae58d26ffb4eacadd941c08e8e2615b13a9a7f9ac4204c44569bc9f3bbbdd3ae8e", null ]
+    ] ],
     [ "spdk_nvmf_ctrlr_connect", "nvmf__transport_8h.html#a246103af98d69ad6a1d74d2a4f9e6f7e", null ],
     [ "spdk_nvmf_ctrlr_get_id", "nvmf__transport_8h.html#a4be21e1e7c78a65458f3cb7d8ed08997", null ],
     [ "spdk_nvmf_ctrlr_get_regs", "nvmf__transport_8h.html#a87cc10db83a3c4e44ed38ce031646e58", null ],
@@ -39,8 +47,11 @@ var nvmf__transport_8h =
     [ "spdk_nvmf_request_free_buffers", "nvmf__transport_8h.html#a40c75ab705e466b8fc6263aea23db255", null ],
     [ "spdk_nvmf_request_get_buffers", "nvmf__transport_8h.html#aedfcbfc3021b5f74c94cbbd6619bcd59", null ],
     [ "spdk_nvmf_request_get_dif_ctx", "nvmf__transport_8h.html#afad38775c3acad5fd71d1487bc3e56df", null ],
+    [ "spdk_nvmf_request_zcopy_end", "nvmf__transport_8h.html#aba7c5ffa3e11f0c8e46ffd8075b7ea10", null ],
+    [ "spdk_nvmf_request_zcopy_start", "nvmf__transport_8h.html#a54a09660b6b5e4de1ac6754213d23f7e", null ],
     [ "spdk_nvmf_tgt_new_qpair", "nvmf__transport_8h.html#ae540481943a9be15eacf93e111714db9", null ],
     [ "spdk_nvmf_transport_register", "nvmf__transport_8h.html#ab53a8667860940846986a85db26a7236", null ],
+    [ "spdk_nvmf_using_zcopy", "nvmf__transport_8h.html#a08498a68d0460b75fbd39ec6c9b21504", null ],
     [ "SPDK_STATIC_ASSERT", "nvmf__transport_8h.html#ab3968fc29615a6601f71cd98b55505b9", null ],
     [ "SPDK_STATIC_ASSERT", "nvmf__transport_8h.html#a7018b7c460c9e8d4bc99b14075291390", null ]
 ];

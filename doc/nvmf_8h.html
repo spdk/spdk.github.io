@@ -108,10 +108,6 @@ Data Structures</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvmf__poll__group__stat.html">spdk_nvmf_poll_group_stat</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvmf__rdma__device__stat.html">spdk_nvmf_rdma_device_stat</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvmf__transport__poll__group__stat.html">spdk_nvmf_transport_poll_group_stat</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvmf__ns__opts.html">spdk_nvmf_ns_opts</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">NVMe-oF target namespace creation options.  <a href="structspdk__nvmf__ns__opts.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -190,9 +186,6 @@ Functions</h2></td></tr>
 <tr class="memitem:a37eea41a3c3856e0ea2cd383af20183d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#a37eea41a3c3856e0ea2cd383af20183d">spdk_nvmf_poll_group_add</a> (struct <a class="el" href="structspdk__nvmf__poll__group.html">spdk_nvmf_poll_group</a> *group, struct <a class="el" href="structspdk__nvmf__qpair.html">spdk_nvmf_qpair</a> *qpair)</td></tr>
 <tr class="memdesc:a37eea41a3c3856e0ea2cd383af20183d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add the given qpair to the poll group.  <a href="#a37eea41a3c3856e0ea2cd383af20183d">More...</a><br /></td></tr>
 <tr class="separator:a37eea41a3c3856e0ea2cd383af20183d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac5d5611a2cd71a7d71a08c990cbd29e7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#ac5d5611a2cd71a7d71a08c990cbd29e7">spdk_nvmf_poll_group_get_stat</a> (struct spdk_nvmf_tgt *tgt, struct <a class="el" href="structspdk__nvmf__poll__group__stat.html">spdk_nvmf_poll_group_stat</a> *stat)</td></tr>
-<tr class="memdesc:ac5d5611a2cd71a7d71a08c990cbd29e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get current poll group statistics.  <a href="#ac5d5611a2cd71a7d71a08c990cbd29e7">More...</a><br /></td></tr>
-<tr class="separator:ac5d5611a2cd71a7d71a08c990cbd29e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afa33cb1cf39e04ee533f874ed82e24e5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#afa33cb1cf39e04ee533f874ed82e24e5">spdk_nvmf_qpair_disconnect</a> (struct <a class="el" href="structspdk__nvmf__qpair.html">spdk_nvmf_qpair</a> *qpair, nvmf_qpair_disconnect_cb cb_fn, void *ctx)</td></tr>
 <tr class="memdesc:afa33cb1cf39e04ee533f874ed82e24e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disconnect an NVMe-oF qpair.  <a href="#afa33cb1cf39e04ee533f874ed82e24e5">More...</a><br /></td></tr>
 <tr class="separator:afa33cb1cf39e04ee533f874ed82e24e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -382,12 +375,6 @@ Functions</h2></td></tr>
 <tr class="memitem:a8f456c0ef4f8b11aef74df3ea98fdf9d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#a8f456c0ef4f8b11aef74df3ea98fdf9d">spdk_nvmf_transport_stop_listen_async</a> (struct <a class="el" href="structspdk__nvmf__transport.html">spdk_nvmf_transport</a> *transport, const struct <a class="el" href="structspdk__nvme__transport__id.html">spdk_nvme_transport_id</a> *trid, <a class="el" href="nvmf_8h.html#aad52ac090dcb26b03da0e689ea71df89">spdk_nvmf_tgt_subsystem_listen_done_fn</a> cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:a8f456c0ef4f8b11aef74df3ea98fdf9d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stop accepting new connections at the provided address.  <a href="#a8f456c0ef4f8b11aef74df3ea98fdf9d">More...</a><br /></td></tr>
 <tr class="separator:a8f456c0ef4f8b11aef74df3ea98fdf9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae4e59ef25ba7e6a45ab1d613c006f1bb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#ae4e59ef25ba7e6a45ab1d613c006f1bb">spdk_nvmf_transport_poll_group_get_stat</a> (struct spdk_nvmf_tgt *tgt, struct <a class="el" href="structspdk__nvmf__transport.html">spdk_nvmf_transport</a> *transport, struct <a class="el" href="structspdk__nvmf__transport__poll__group__stat.html">spdk_nvmf_transport_poll_group_stat</a> **stat)</td></tr>
-<tr class="memdesc:ae4e59ef25ba7e6a45ab1d613c006f1bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get current transport poll group statistics.  <a href="#ae4e59ef25ba7e6a45ab1d613c006f1bb">More...</a><br /></td></tr>
-<tr class="separator:ae4e59ef25ba7e6a45ab1d613c006f1bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab03fc0bf9946107905bf8148495966f9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#ab03fc0bf9946107905bf8148495966f9">spdk_nvmf_transport_poll_group_free_stat</a> (struct <a class="el" href="structspdk__nvmf__transport.html">spdk_nvmf_transport</a> *transport, struct <a class="el" href="structspdk__nvmf__transport__poll__group__stat.html">spdk_nvmf_transport_poll_group_stat</a> *stat)</td></tr>
-<tr class="memdesc:ab03fc0bf9946107905bf8148495966f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Free statistics memory previously allocated with <a class="el" href="nvmf_8h.html#ae4e59ef25ba7e6a45ab1d613c006f1bb" title="Get current transport poll group statistics.">spdk_nvmf_transport_poll_group_get_stat()</a>.  <a href="#ab03fc0bf9946107905bf8148495966f9">More...</a><br /></td></tr>
-<tr class="separator:ab03fc0bf9946107905bf8148495966f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aba3584185c147f5b10cf8c2e2b3fa181"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#aba3584185c147f5b10cf8c2e2b3fa181">spdk_nvmf_poll_group_dump_stat</a> (struct <a class="el" href="structspdk__nvmf__poll__group.html">spdk_nvmf_poll_group</a> *group, struct spdk_json_write_ctx *w)</td></tr>
 <tr class="memdesc:aba3584185c147f5b10cf8c2e2b3fa181"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dump poll group statistics into JSON.  <a href="#aba3584185c147f5b10cf8c2e2b3fa181">More...</a><br /></td></tr>
 <tr class="separator:aba3584185c147f5b10cf8c2e2b3fa181"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -998,47 +985,6 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-
-</div>
-</div>
-<a id="ac5d5611a2cd71a7d71a08c990cbd29e7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac5d5611a2cd71a7d71a08c990cbd29e7">&#9670;&nbsp;</a></span>spdk_nvmf_poll_group_get_stat()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int spdk_nvmf_poll_group_get_stat </td>
-          <td>(</td>
-          <td class="paramtype">struct spdk_nvmf_tgt *&#160;</td>
-          <td class="paramname"><em>tgt</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">struct <a class="el" href="structspdk__nvmf__poll__group__stat.html">spdk_nvmf_poll_group_stat</a> *&#160;</td>
-          <td class="paramname"><em>stat</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Get current poll group statistics. </p>
-<p>(deprecated)</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">tgt</td><td>The NVMf target. </td></tr>
-    <tr><td class="paramname">stat</td><td>Pointer to allocated statistics structure to fill with values.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>0 upon success. </dd>
-<dd>
--EINVAL if either group or stat is NULL. </dd></dl>
 
 </div>
 </div>
@@ -3255,101 +3201,6 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ab03fc0bf9946107905bf8148495966f9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab03fc0bf9946107905bf8148495966f9">&#9670;&nbsp;</a></span>spdk_nvmf_transport_poll_group_free_stat()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void spdk_nvmf_transport_poll_group_free_stat </td>
-          <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structspdk__nvmf__transport.html">spdk_nvmf_transport</a> *&#160;</td>
-          <td class="paramname"><em>transport</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">struct <a class="el" href="structspdk__nvmf__transport__poll__group__stat.html">spdk_nvmf_transport_poll_group_stat</a> *&#160;</td>
-          <td class="paramname"><em>stat</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Free statistics memory previously allocated with <a class="el" href="nvmf_8h.html#ae4e59ef25ba7e6a45ab1d613c006f1bb" title="Get current transport poll group statistics.">spdk_nvmf_transport_poll_group_get_stat()</a>. </p>
-<p>(deprecated)</p>
-<p>Please use the flow with spdk_nvmf_poll_group_dump_stat.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">transport</td><td>The NVMf transport. </td></tr>
-    <tr><td class="paramname">stat</td><td>Pointer to transport poll group statistics structure. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="ae4e59ef25ba7e6a45ab1d613c006f1bb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae4e59ef25ba7e6a45ab1d613c006f1bb">&#9670;&nbsp;</a></span>spdk_nvmf_transport_poll_group_get_stat()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int spdk_nvmf_transport_poll_group_get_stat </td>
-          <td>(</td>
-          <td class="paramtype">struct spdk_nvmf_tgt *&#160;</td>
-          <td class="paramname"><em>tgt</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">struct <a class="el" href="structspdk__nvmf__transport.html">spdk_nvmf_transport</a> *&#160;</td>
-          <td class="paramname"><em>transport</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">struct <a class="el" href="structspdk__nvmf__transport__poll__group__stat.html">spdk_nvmf_transport_poll_group_stat</a> **&#160;</td>
-          <td class="paramname"><em>stat</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Get current transport poll group statistics. </p>
-<p>(deprecated)</p>
-<p>Please use the flow with spdk_nvmf_poll_group_dump_stat.</p>
-<p>This function allocates memory for statistics and returns it in <code>stat</code> parameter. Caller must free this memory with <a class="el" href="nvmf_8h.html#ab03fc0bf9946107905bf8148495966f9" title="Free statistics memory previously allocated with spdk_nvmf_transport_poll_group_get_stat().">spdk_nvmf_transport_poll_group_free_stat()</a> when it is not needed anymore.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">tgt</td><td>The NVMf target. </td></tr>
-    <tr><td class="paramname">transport</td><td>The NVMf transport. </td></tr>
-    <tr><td class="paramname">stat</td><td>Output parameter that will contain pointer to allocated statistics structure.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>0 upon success. </dd>
-<dd>
--ENOTSUP if transport does not support statistics. </dd>
-<dd>
--EINVAL if any of parameters is NULL. </dd>
-<dd>
--ENOENT if transport poll group is not found. </dd>
-<dd>
--ENOMEM if memory allocation failed. </dd></dl>
-
-</div>
-</div>
 <a id="ae261eff09a7b8e6d14d2710c169b17df"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae261eff09a7b8e6d14d2710c169b17df">&#9670;&nbsp;</a></span>spdk_nvmf_transport_stop_listen()</h2>
 
@@ -3447,7 +3298,7 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
 <ul>
-        <li class="footer">Generated on Thu Jul 22 2021 04:04:37 for SPDK by
+        <li class="footer">Generated on Fri Jul 23 2021 04:05:37 for SPDK by
         <a href="http://www.doxygen.org/index.html">doxygen</a> 1.8.15 </li>
 </ul>
 </div>

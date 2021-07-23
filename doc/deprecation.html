@@ -94,22 +94,6 @@ $(document).ready(function(){initNavTree('deprecation.html','');});
 <p>API and ABI deprecation notices shall be posted in the next section. Each entry must describe what will be removed and can suggest the future use or alternative. Specific future SPDK release for the removal must be provided. ABI cannot be removed without providing deprecation notice for at least single SPDK release.</p>
 <h1><a class="anchor" id="deprecation-notices"></a>
 Deprecation Notices</h1>
-<h2>net</h2>
-<p>The net library is deprecated and will be removed in the 21.07 release.</p>
-<h2>nvmf</h2>
-<p>The following APIs have been deprecated and will be removed in SPDK 21.07:</p><ul>
-<li><code>spdk_nvmf_poll_group_get_stat</code> (function in <code><a class="el" href="nvmf_8h.html" title="NVMe over Fabrics target public API.">nvmf.h</a></code>),</li>
-<li><code>spdk_nvmf_transport_poll_group_get_stat</code> (function in <code><a class="el" href="nvmf_8h.html" title="NVMe over Fabrics target public API.">nvmf.h</a></code>),</li>
-<li><code>spdk_nvmf_transport_poll_group_free_stat</code>(function in <code><a class="el" href="nvmf_8h.html" title="NVMe over Fabrics target public API.">nvmf.h</a></code>),</li>
-<li><code><a class="el" href="structspdk__nvmf__rdma__device__stat.html">spdk_nvmf_rdma_device_stat</a></code> (struct in <code><a class="el" href="nvmf_8h.html" title="NVMe over Fabrics target public API.">nvmf.h</a></code>),</li>
-<li><code><a class="el" href="structspdk__nvmf__transport__poll__group__stat.html">spdk_nvmf_transport_poll_group_stat</a></code> (struct in <code><a class="el" href="nvmf_8h.html" title="NVMe over Fabrics target public API.">nvmf.h</a></code>),</li>
-<li><code>poll_group_get_stat</code> (transport op in <code><a class="el" href="nvmf__transport_8h.html" title="NVMe-oF Target transport plugin API.">nvmf_transport.h</a></code>),</li>
-<li><code>poll_group_free_stat</code> (transport op in <code><a class="el" href="nvmf__transport_8h.html" title="NVMe-oF Target transport plugin API.">nvmf_transport.h</a></code>). Please use <code>spdk_nvmf_poll_group_dump_stat</code> and <code>poll_group_dump_stat</code> instead.</li>
-</ul>
-<h2>rpc</h2>
-<p>Parameter <code>enable-zerocopy-send</code> of RPC <code>sock_impl_set_options</code> is deprecated and will be removed in SPDK 21.07, use <code>enable-zerocopy-send-server</code> or <code>enable-zerocopy-send-client</code> instead. Parameter <code>disable-zerocopy-send</code> of RPC <code>sock_impl_set_options</code> is deprecated and will be removed in SPDK 21.07, use <code>disable-zerocopy-send-server</code> or <code>disable-zerocopy-send-client</code> instead.</p>
-<h2>rpm</h2>
-<p><code>pkg/spdk.spec</code> is considered to be deprecated and scheduled for removal in SPDK 21.07. Please use <code>rpmbuild/spdk.spec</code> instead and see <a href="https://spdk.io/doc/rpm.html">RPM documentation</a> for more details. </p>
 </div></div><!-- PageDoc -->
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -117,7 +101,7 @@ Deprecation Notices</h1>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
 <ul>
-        <li class="footer">Generated on Thu Jul 22 2021 04:04:37 for SPDK by
+        <li class="footer">Generated on Fri Jul 23 2021 04:05:37 for SPDK by
         <a href="http://www.doxygen.org/index.html">doxygen</a> 1.8.15 </li>
 </ul>
 </div>

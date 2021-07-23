@@ -4,8 +4,6 @@ var nvmf_8h =
     [ "spdk_nvmf_transport_opts", "structspdk__nvmf__transport__opts.html", "structspdk__nvmf__transport__opts" ],
     [ "spdk_nvmf_listen_opts", "structspdk__nvmf__listen__opts.html", "structspdk__nvmf__listen__opts" ],
     [ "spdk_nvmf_poll_group_stat", "structspdk__nvmf__poll__group__stat.html", "structspdk__nvmf__poll__group__stat" ],
-    [ "spdk_nvmf_rdma_device_stat", "structspdk__nvmf__rdma__device__stat.html", "structspdk__nvmf__rdma__device__stat" ],
-    [ "spdk_nvmf_transport_poll_group_stat", "structspdk__nvmf__transport__poll__group__stat.html", "structspdk__nvmf__transport__poll__group__stat" ],
     [ "spdk_nvmf_ns_opts", "structspdk__nvmf__ns__opts.html", "structspdk__nvmf__ns__opts" ],
     [ "NVMF_TGT_NAME_MAX_LENGTH", "nvmf_8h.html#aa14fa429c146d151fd9ef3d53df80da8", null ],
     [ "nvmf_qpair_disconnect_cb", "nvmf_8h.html#abd02f30e6fcb57338c723ffd5c307f0d", null ],
@@ -32,7 +30,6 @@ var nvmf_8h =
     [ "spdk_nvmf_poll_group_create", "nvmf_8h.html#a3b1de2ab69c992ce2c732c354a08238f", null ],
     [ "spdk_nvmf_poll_group_destroy", "nvmf_8h.html#a12a23b74ddfec6b8683b3a0afccba10d", null ],
     [ "spdk_nvmf_poll_group_dump_stat", "nvmf_8h.html#aba3584185c147f5b10cf8c2e2b3fa181", null ],
-    [ "spdk_nvmf_poll_group_get_stat", "nvmf_8h.html#ac5d5611a2cd71a7d71a08c990cbd29e7", null ],
     [ "spdk_nvmf_qpair_disconnect", "nvmf_8h.html#afa33cb1cf39e04ee533f874ed82e24e5", null ],
     [ "spdk_nvmf_qpair_get_listen_trid", "nvmf_8h.html#a261e8613de83e1a557e95a6e06bd0a19", null ],
     [ "spdk_nvmf_qpair_get_local_trid", "nvmf_8h.html#ad269e6b66abf6b758569453f4b6fd41a", null ],
@@ -93,8 +90,6 @@ var nvmf_8h =
     [ "spdk_nvmf_transport_get_next", "nvmf_8h.html#aa1316a2fe3bd765d755de1df15add5cc", null ],
     [ "spdk_nvmf_transport_listen", "nvmf_8h.html#aab4a5e4fcd04e30ea3fe4c079e4d9a3a", null ],
     [ "spdk_nvmf_transport_opts_init", "nvmf_8h.html#a8e8e8b2a3f7a8d4b8ab52e1beef87ab0", null ],
-    [ "spdk_nvmf_transport_poll_group_free_stat", "nvmf_8h.html#ab03fc0bf9946107905bf8148495966f9", null ],
-    [ "spdk_nvmf_transport_poll_group_get_stat", "nvmf_8h.html#ae4e59ef25ba7e6a45ab1d613c006f1bb", null ],
     [ "spdk_nvmf_transport_stop_listen", "nvmf_8h.html#ae261eff09a7b8e6d14d2710c169b17df", null ],
     [ "spdk_nvmf_transport_stop_listen_async", "nvmf_8h.html#a8f456c0ef4f8b11aef74df3ea98fdf9d", null ]
 ];

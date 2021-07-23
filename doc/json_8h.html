@@ -242,6 +242,9 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_json_write_int64<
 <tr class="memitem:a3555f5e2934c911ffd4d46f7b8671203"><td class="memItemLeft" align="right" valign="top"><a id="a3555f5e2934c911ffd4d46f7b8671203"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_json_write_uint64</b> (struct spdk_json_write_ctx *w, uint64_t val)</td></tr>
 <tr class="separator:a3555f5e2934c911ffd4d46f7b8671203"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a661b800fa5cc226f08eaba8b6a51d881"><td class="memItemLeft" align="right" valign="top"><a id="a661b800fa5cc226f08eaba8b6a51d881"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_json_write_uint128</b> (struct spdk_json_write_ctx *w, uint64_t low_val, uint64_t high_val)</td></tr>
+<tr class="separator:a661b800fa5cc226f08eaba8b6a51d881"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6d51ae041b9f8401a3e0a35287bfad5a"><td class="memItemLeft" align="right" valign="top"><a id="a6d51ae041b9f8401a3e0a35287bfad5a"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_json_write_string</b> (struct spdk_json_write_ctx *w, const char *val)</td></tr>
 <tr class="separator:a6d51ae041b9f8401a3e0a35287bfad5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -299,6 +302,9 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_json_write_named_
 <tr class="memitem:af58205394bbbfb6d05219e1c8b88023d"><td class="memItemLeft" align="right" valign="top"><a id="af58205394bbbfb6d05219e1c8b88023d"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_json_write_named_uint64</b> (struct spdk_json_write_ctx *w, const char *name, uint64_t val)</td></tr>
 <tr class="separator:af58205394bbbfb6d05219e1c8b88023d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1d5374092f6b7bc0e33c5b8a3547bc8"><td class="memItemLeft" align="right" valign="top"><a id="ab1d5374092f6b7bc0e33c5b8a3547bc8"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_json_write_named_uint128</b> (struct spdk_json_write_ctx *w, const char *name, uint64_t low_val, uint64_t high_val)</td></tr>
+<tr class="separator:ab1d5374092f6b7bc0e33c5b8a3547bc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4e2e5ec6ae83ecc0c88f8213825cf5d6"><td class="memItemLeft" align="right" valign="top"><a id="a4e2e5ec6ae83ecc0c88f8213825cf5d6"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_json_write_named_int64</b> (struct spdk_json_write_ctx *w, const char *name, int64_t val)</td></tr>
 <tr class="separator:a4e2e5ec6ae83ecc0c88f8213825cf5d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -768,7 +774,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_json_write_named_
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
 <ul>
-        <li class="footer">Generated on Thu Jul 22 2021 04:04:37 for SPDK by
+        <li class="footer">Generated on Fri Jul 23 2021 04:05:37 for SPDK by
         <a href="http://www.doxygen.org/index.html">doxygen</a> 1.8.15 </li>
 </ul>
 </div>
