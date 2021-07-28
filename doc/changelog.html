@@ -134,6 +134,7 @@ v21.07:</h1>
 <p>Added <code>spdk_nvme_ctrlr_is_fabrics</code> function to indicate whether a ctrlr handle is associated with a fabrics controller.</p>
 <h2>nvmf</h2>
 <p>Added <code>min_cntlid</code> and <code>max_cntlid</code> to <code>nvmf_create_subsystem</code> to limit the controller ID range. Added <code>spdk_nvmf_subsystem_get_min_cntlid</code> and <code>spdk_nvmf_subsystem_get_max_cntlid</code> to request those values.</p>
+<p>A new parameter, <code>poll_groups_mask</code> was added to the nvmf_set_config RPC that allows specifying a subset of cores for the nvmf poll groups. This helps to avoid imbalances when some cores are busy with periodic timer tasks that run very frequently.</p>
 <p><code>spdk_nvmf_request_get_buffers_multi</code> API is removed.</p>
 <p>Added the <code>nvmf_set_crdt</code> RPC for setting command retry delay times.</p>
 <p>Expanded <code><a class="el" href="structspdk__nvmf__poll__group__stat.html">spdk_nvmf_poll_group_stat</a></code> with current qpair count statistics.</p>
@@ -1334,7 +1335,7 @@ v16.06: NVMf userspace target</h1>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
 <ul>
-        <li class="footer">Generated on Tue Jul 27 2021 04:04:26 for SPDK by
+        <li class="footer">Generated on Wed Jul 28 2021 04:04:35 for SPDK by
         <a href="http://www.doxygen.org/index.html">doxygen</a> 1.8.15 </li>
 </ul>
 </div>
