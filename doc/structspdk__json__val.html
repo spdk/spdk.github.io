@@ -138,7 +138,8 @@ enum spdk_json_val_type&#160;</td><td class="memItemRight" valign="bottom"><a cl
 
 <p>Pointer to the location of the value within the parsed JSON input. </p>
 <p>For SPDK_JSON_VAL_STRING and SPDK_JSON_VAL_NAME, this points to the beginning of the decoded UTF-8 string without quotes.</p>
-<p>For SPDK_JSON_VAL_NUMBER, this points to the beginning of the number as represented in the original JSON (text representation, not converted to a numeric value). </p>
+<p>For SPDK_JSON_VAL_NUMBER, this points to the beginning of the number as represented in the original JSON (text representation, not converted to a numeric value).</p>
+<p>For JSON objects and arrays, this points to their beginning and has a type set to SPDK_JSON_VAL_OBJECT_BEGIN or SPDK_JSON_VAL_ARRAY_BEGIN respectively. </p>
 
 </div>
 </div>
@@ -151,7 +152,7 @@ enum spdk_json_val_type&#160;</td><td class="memItemRight" valign="bottom"><a cl
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
 <ul>
-        <li class="footer">Generated on Thu Jul 29 2021 04:04:36 for SPDK by
+        <li class="footer">Generated on Fri Jul 30 2021 04:04:30 for SPDK by
         <a href="http://www.doxygen.org/index.html">doxygen</a> 1.8.15 </li>
 </ul>
 </div>
