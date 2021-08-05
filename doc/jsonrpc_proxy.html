@@ -114,14 +114,14 @@ $(document).ready(function(){initNavTree('jsonrpc_proxy.html','');});
 <h2>Client side</h2>
 <p>Below is a sample python script acting as a client side. It sends <code>bdev_get_bdevs</code> method with optional <code>name</code> parameter and prints JSON object returned from remote_rpc script.</p>
 <div class="fragment"><div class="line">import json</div><div class="line">import requests</div><div class="line"></div><div class="line">if __name__ == &#39;__main__&#39;:</div><div class="line">        payload = {&#39;id&#39;:1, &#39;method&#39;: &#39;bdev_get_bdevs&#39;, &#39;params&#39;: {&#39;name&#39;: &#39;Malloc0&#39;}}</div><div class="line">        url = &#39;http://192.168.0.2:8000/&#39;</div><div class="line">        req = requests.post(url,</div><div class="line">                        data=json.dumps(payload),</div><div class="line">                        auth=(&#39;user&#39;, &#39;password&#39;),</div><div class="line">                        verify=False,</div><div class="line">                        timeout=30)</div><div class="line">        print (req.json())</div></div><!-- fragment --><p>Output:</p>
-<div class="fragment"><div class="line">python client.py</div><div class="line">[{u&#39;num_blocks&#39;: 2621440, u&#39;name&#39;: u&#39;Malloc0&#39;, u&#39;uuid&#39;: u&#39;fb57e59c-599d-42f1-8b89-3e46dbe12641&#39;, u&#39;claimed&#39;: True, u&#39;driver_specific&#39;: {}, u&#39;supported_io_types&#39;: {u&#39;reset&#39;: True, u&#39;nvme_admin&#39;: False, u&#39;unmap&#39;: True, u&#39;read&#39;: True, u&#39;nvme_io&#39;: False, u&#39;write&#39;: True, u&#39;flush&#39;: True, u&#39;write_zeroes&#39;: True}, u&#39;qos_ios_per_sec&#39;: 0, u&#39;block_size&#39;: 4096, u&#39;product_name&#39;: u&#39;Malloc disk&#39;, u&#39;aliases&#39;: []}]</div></div><!-- fragment --> </div></div><!-- PageDoc -->
+<div class="fragment"><div class="line">python client.py</div><div class="line">[{u&#39;num_blocks&#39;: 2621440, u&#39;name&#39;: u&#39;Malloc0&#39;, u&#39;uuid&#39;: u&#39;fb57e59c-599d-42f1-8b89-3e46dbe12641&#39;, u&#39;claimed&#39;: True,</div><div class="line">u&#39;driver_specific&#39;: {}, u&#39;supported_io_types&#39;: {u&#39;reset&#39;: True, u&#39;nvme_admin&#39;: False, u&#39;unmap&#39;: True, u&#39;read&#39;: True,</div><div class="line">u&#39;nvme_io&#39;: False, u&#39;write&#39;: True, u&#39;flush&#39;: True, u&#39;write_zeroes&#39;: True}, u&#39;qos_ios_per_sec&#39;: 0, u&#39;block_size&#39;: 4096,</div><div class="line">u&#39;product_name&#39;: u&#39;Malloc disk&#39;, u&#39;aliases&#39;: []}]</div></div><!-- fragment --> </div></div><!-- PageDoc -->
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
 <ul>
-        <li class="footer">Generated on Wed Aug 4 2021 04:07:16 for SPDK by
+        <li class="footer">Generated on Thu Aug 5 2021 04:04:26 for SPDK by
         <a href="http://www.doxygen.org/index.html">doxygen</a> 1.8.15 </li>
 </ul>
 </div>

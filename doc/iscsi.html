@@ -169,9 +169,13 @@ Sample iSCSI configuration</div></div>
 iSCSI Hotplug</h1>
 <p>At the iSCSI level, we provide the following support for Hotplug:</p>
 <ol type="1">
-<li>bdev/nvme: At the bdev/nvme level, we start one hotplug monitor which will call <a class="el" href="nvme_8h.html#a225bbc386ec518ae21bd5536f21db45d" title="Enumerate the bus indicated by the transport ID and attach the userspace NVMe driver to each device f...">spdk_nvme_probe()</a> periodically to get the hotplug events. We provide the private attach_cb and remove_cb for <a class="el" href="nvme_8h.html#a225bbc386ec518ae21bd5536f21db45d" title="Enumerate the bus indicated by the transport ID and attach the userspace NVMe driver to each device f...">spdk_nvme_probe()</a>. For the attach_cb, we will create the block device base on the NVMe device attached, and for the remove_cb, we will unregister the block device, which will also notify the upper level stack (for iSCSI target, the upper level stack is scsi/lun) to handle the hot-remove event.</li>
-<li>scsi/lun: When the LUN receive the hot-remove notification from block device layer, the LUN will be marked as removed, and all the IOs after this point will return with check condition status. Then the LUN starts one poller which will wait for all the commands which have already been submitted to block device to return back; after all the commands return back, the LUN will be deleted.</li>
+<li>bdev/nvme:</li>
 </ol>
+<p>At the bdev/nvme level, we start one hotplug monitor which will call <a class="el" href="nvme_8h.html#a225bbc386ec518ae21bd5536f21db45d" title="Enumerate the bus indicated by the transport ID and attach the userspace NVMe driver to each device f...">spdk_nvme_probe()</a> periodically to get the hotplug events. We provide the private attach_cb and remove_cb for <a class="el" href="nvme_8h.html#a225bbc386ec518ae21bd5536f21db45d" title="Enumerate the bus indicated by the transport ID and attach the userspace NVMe driver to each device f...">spdk_nvme_probe()</a>. For the attach_cb, we will create the block device base on the NVMe device attached, and for the remove_cb, we will unregister the block device, which will also notify the upper level stack (for iSCSI target, the upper level stack is scsi/lun) to handle the hot-remove event.</p>
+<ol type="1">
+<li>scsi/lun:</li>
+</ol>
+<p>When the LUN receive the hot-remove notification from block device layer, the LUN will be marked as removed, and all the IOs after this point will return with check condition status. Then the LUN starts one poller which will wait for all the commands which have already been submitted to block device to return back; after all the commands return back, the LUN will be deleted.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="nvme_8h.html#a225bbc386ec518ae21bd5536f21db45d" title="Enumerate the bus indicated by the transport ID and attach the userspace NVMe driver to each device f...">spdk_nvme_probe</a></dd></dl>
 <h1><a class="anchor" id="iscsi_login_redirection"></a>
 iSCSI Login Redirection</h1>
@@ -190,7 +194,7 @@ iSCSI Login Redirection</h1>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
 <ul>
-        <li class="footer">Generated on Wed Aug 4 2021 04:07:16 for SPDK by
+        <li class="footer">Generated on Thu Aug 5 2021 04:04:26 for SPDK by
         <a href="http://www.doxygen.org/index.html">doxygen</a> 1.8.15 </li>
 </ul>
 </div>

@@ -192,15 +192,15 @@ Configuring QEMU</h2>
 <li><code>lsecs_per_pg</code> - number of sectors in a page</li>
 <li><code>lblks_per_pln</code> - number of chunks in a parallel unit</li>
 <li><code>laer_thread_sleep</code> - timeout in ms between asynchronous events requesting the host to relocate the data based on media feedback</li>
-<li><code>lmetadata</code> - metadata file <pre class="fragment"> |lba_index| data| metadata|
- |---------|-----|---------|
- |    0    | 512B|    0B   |
- |    1    | 512B|    8B   |
- |    2    | 512B|   16B   |
- |    3    |4096B|    0B   |
- |    4    |4096B|   64B   |
- |    5    |4096B|  128B   |
- |    6    |4096B|   16B   |
+<li><code>lmetadata</code> - metadata file <pre class="fragment">  |lba_index| data| metadata|
+  |---------|-----|---------|
+  |    0    | 512B|    0B   |
+  |    1    | 512B|    8B   |
+  |    2    | 512B|   16B   |
+  |    3    |4096B|    0B   |
+  |    4    |4096B|   64B   |
+  |    5    |4096B|  128B   |
+  |    6    |4096B|   16B   |
 </pre></li>
 </ul>
 <p>For more detailed description of the available options, consult the <code>hw/block/nvme.c</code> file in the QEMU repository.</p>
@@ -222,7 +222,7 @@ FTL usage with zone block bdev</h2>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
 <ul>
-        <li class="footer">Generated on Wed Aug 4 2021 04:07:16 for SPDK by
+        <li class="footer">Generated on Thu Aug 5 2021 04:04:26 for SPDK by
         <a href="http://www.doxygen.org/index.html">doxygen</a> 1.8.15 </li>
 </ul>
 </div>

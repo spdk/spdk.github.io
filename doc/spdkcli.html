@@ -90,15 +90,15 @@ $(document).ready(function(){initNavTree('spdkcli.html','');});
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><p>Spdkcli is a command-line management application for SPDK. Spdkcli has support for a limited number of applications and bdev modules, and should be considered experimental for the v18.04 release. This experimental version was added for v18.04 to get early feedback that can be incorporated as spdkcli becomes more fully-featured for the next SPDK release.</p>
-<h3>Install needed dependencies</h3>
+<h2>Install needed dependencies</h2>
 <p>All dependencies should be handled by scripts/pkgdep.sh script. Package dependencies at the moment include:</p>
 <ul>
 <li>configshell</li>
 </ul>
-<h3>Run SPDK application instance</h3>
-<div class="fragment"><div class="line">./scripts/setup.sh</div><div class="line">./build/bin/vhost -c vhost.json</div></div><!-- fragment --><h3>Run SPDK CLI</h3>
+<h2>Run SPDK application instance</h2>
+<div class="fragment"><div class="line">./scripts/setup.sh</div><div class="line">./build/bin/vhost -c vhost.json</div></div><!-- fragment --><h2>Run SPDK CLI</h2>
 <p>Spdkcli should be run with the same privileges as SPDK application. In order to use SPDK CLI in interactive mode please use: </p><div class="fragment"><div class="line">scripts/spdkcli.py</div></div><!-- fragment --><p> Use "help" command to get a list of available commands for each tree node.</p>
-<p>It is also possible to use SPDK CLI to run just a single command, just use the command as an argument to the application. For example, to view current configuration and immediately exit: </p><div class="fragment"><div class="line">scripts/spdkcli.py ls</div></div><!-- fragment --><h3>Optional - create Python virtual environment</h3>
+<p>It is also possible to use SPDK CLI to run just a single command, just use the command as an argument to the application. For example, to view current configuration and immediately exit: </p><div class="fragment"><div class="line">scripts/spdkcli.py ls</div></div><!-- fragment --><h2>Optional - create Python virtual environment</h2>
 <p>You can use Python virtual environment if you don't want to litter your system Python installation.</p>
 <p>First create the virtual environment: </p><div class="fragment"><div class="line">cd spdk</div><div class="line">mkdir venv</div><div class="line">virtualenv-3 ./venv</div><div class="line">source ./venv/bin/activate</div></div><!-- fragment --><p>Then install the dependencies using pip. That way dependencies will be installed only inside the virtual environment. </p><div class="fragment"><div class="line">(venv) pip install configshell-fb</div></div><!-- fragment --><p>Tip: if you are using "sudo" instead of root account, it is suggested to do "sudo -s" before activating the environment. This is because venv might not work correctly when calling spdkcli with sudo, like "sudo python spdkcli.py" - some environment variables might not be passed and you will experience errors. </p>
 </div></div><!-- PageDoc -->
@@ -108,7 +108,7 @@ $(document).ready(function(){initNavTree('spdkcli.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
 <ul>
-        <li class="footer">Generated on Wed Aug 4 2021 04:07:16 for SPDK by
+        <li class="footer">Generated on Thu Aug 5 2021 04:04:26 for SPDK by
         <a href="http://www.doxygen.org/index.html">doxygen</a> 1.8.15 </li>
 </ul>
 </div>

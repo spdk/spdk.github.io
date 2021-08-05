@@ -129,14 +129,14 @@ Containerizing an SPDK Application for Docker</h1>
 <li>If you need to use the host network (i.e. NVMF target application): <code>--network host</code></li>
 </ul>
 <p>Your output should look something like this:</p>
-<div class="fragment"><div class="line">$ sudo docker run --privileged -v //dev//hugepages://dev//hugepages hello:1.0</div><div class="line">Starting SPDK v20.01-pre git sha1 80da95481 // DPDK 19.11.0 initialization...</div><div class="line">[ DPDK EAL parameters: hello_world -c 0x1 --log-level=lib.eal:6 --log-level=lib.cryptodev:5 --log-level=user1:6 --iova-mode=pa --base-virtaddr=0x200000000000 --match-allocations --file-prefix=spdk0 --proc-type=auto ]</div><div class="line">EAL: No available hugepages reported in hugepages-1048576kB</div><div class="line">Initializing NVMe Controllers</div><div class="line">Attaching to 0000:06:00.0</div><div class="line">Attached to 0000:06:00.0</div><div class="line">Using controller INTEL SSDPEDMD400G4  (CVFT7203005M400LGN  ) with 1 namespaces.</div><div class="line">  Namespace ID: 1 size: 400GB</div><div class="line">Initialization complete.</div><div class="line">INFO: using host memory buffer for IO</div><div class="line">Hello world!</div></div><!-- fragment --> </div></div><!-- PageDoc -->
+<div class="fragment"><div class="line">$ sudo docker run --privileged -v //dev//hugepages://dev//hugepages hello:1.0</div><div class="line">Starting SPDK v20.01-pre git sha1 80da95481 // DPDK 19.11.0 initialization...</div><div class="line">[ DPDK EAL parameters: hello_world -c 0x1 --log-level=lib.eal:6 --log-level=lib.cryptodev:5 --log-level=user1:6 --iova-mode=pa</div><div class="line">--base-virtaddr=0x200000000000 --match-allocations --file-prefix=spdk0 --proc-type=auto ]</div><div class="line">EAL: No available hugepages reported in hugepages-1048576kB</div><div class="line">Initializing NVMe Controllers</div><div class="line">Attaching to 0000:06:00.0</div><div class="line">Attached to 0000:06:00.0</div><div class="line">Using controller INTEL SSDPEDMD400G4  (CVFT7203005M400LGN  ) with 1 namespaces.</div><div class="line">  Namespace ID: 1 size: 400GB</div><div class="line">Initialization complete.</div><div class="line">INFO: using host memory buffer for IO</div><div class="line">Hello world!</div></div><!-- fragment --> </div></div><!-- PageDoc -->
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
 <ul>
-        <li class="footer">Generated on Wed Aug 4 2021 04:07:16 for SPDK by
+        <li class="footer">Generated on Thu Aug 5 2021 04:04:26 for SPDK by
         <a href="http://www.doxygen.org/index.html">doxygen</a> 1.8.15 </li>
 </ul>
 </div>
