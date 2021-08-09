@@ -305,7 +305,7 @@ thread_get_stats</h2>
 <h3>Response</h3>
 <p>The response is an array of objects containing threads statistics.</p>
 <h3>Example</h3>
-<p>Example request: </p><div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;method&quot;: &quot;thread_get_stats&quot;,</div><div class="line">  &quot;id&quot;: 1</div><div class="line">}</div></div><!-- fragment --><p>Example response: </p><div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: {</div><div class="line">    &quot;tick_rate&quot;: 2400000000,</div><div class="line">    &quot;threads&quot;: [</div><div class="line">      {</div><div class="line">        &quot;name&quot;: &quot;app_thread&quot;,</div><div class="line">        &quot;id&quot;: 1,</div><div class="line">        &quot;cpumask&quot;: &quot;1&quot;,</div><div class="line">        &quot;busy&quot;: 139223208,</div><div class="line">        &quot;idle&quot;: 8641080608,</div><div class="line">        &quot;active_pollers_count&quot;: 1,</div><div class="line">        &quot;timed_pollers_count&quot;: 2,</div><div class="line">        &quot;paused_pollers_count&quot;: 0</div><div class="line">      }</div><div class="line">    ]</div><div class="line">  }</div><div class="line">}</div></div><!-- fragment --><h2><a class="anchor" id="rpc_thread_set_cpumask"></a>
+<p>Example request: </p><div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;method&quot;: &quot;thread_get_stats&quot;,</div><div class="line">  &quot;id&quot;: 1</div><div class="line">}</div></div><!-- fragment --><p>Example response: </p><div class="fragment"><div class="line">{</div><div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div><div class="line">  &quot;id&quot;: 1,</div><div class="line">  &quot;result&quot;: {</div><div class="line">    &quot;tick_rate&quot;: 2400000000,</div><div class="line">    &quot;threads&quot;: [</div><div class="line">      {</div><div class="line">        &quot;name&quot;: &quot;app_thread&quot;,</div><div class="line">        &quot;id&quot;: 1,</div><div class="line">        &quot;cpumask&quot;: &quot;1&quot;,</div><div class="line">        &quot;busy&quot;: 139223208,</div><div class="line">        &quot;idle&quot;: 8641080608,</div><div class="line">        &quot;in_interrupt&quot;: false,</div><div class="line">        &quot;active_pollers_count&quot;: 1,</div><div class="line">        &quot;timed_pollers_count&quot;: 2,</div><div class="line">        &quot;paused_pollers_count&quot;: 0</div><div class="line">      }</div><div class="line">    ]</div><div class="line">  }</div><div class="line">}</div></div><!-- fragment --><h2><a class="anchor" id="rpc_thread_set_cpumask"></a>
 thread_set_cpumask</h2>
 <p>Set the cpumask of the thread to the specified value. The thread may be migrated to one of the specified CPUs.</p>
 <h3>Parameters</h3>
@@ -3618,7 +3618,7 @@ spdk_get_version</h2>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
 <ul>
-        <li class="footer">Generated on Sun Aug 8 2021 04:04:39 for SPDK by
+        <li class="footer">Generated on Mon Aug 9 2021 04:04:37 for SPDK by
         <a href="http://www.doxygen.org/index.html">doxygen</a> 1.8.15 </li>
 </ul>
 </div>
