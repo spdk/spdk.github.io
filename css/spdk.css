@@ -1703,6 +1703,11 @@ tt, code, kbd, samp
   display: inline-block;
   direction:ltr;
 }
+
+code {
+  text-indent: 0;
+}
+
 /* @end */
 
 u {
