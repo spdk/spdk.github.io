@@ -66,6 +66,7 @@ h6 {
 
 .content > p {
   text-indent: 2em;
+  text-align: justify;
 }
 
 .blog-section {
