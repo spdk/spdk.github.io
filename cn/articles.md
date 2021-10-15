@@ -32,7 +32,13 @@ toc:
 
 * [SPDK应用编程框架](https://mp.weixin.qq.com/s?__biz=MzI3NDA4ODY4MA==&mid=2653334735&idx=1&sn=b81c263cffc74cf42338d2edda371d2c&chksm=f0cb5b48c7bcd25e83634357c9dc667f02499e348382e011bac20fbc13f442ac58a1e1799704&token=431082989&lang=zh_CN#rd)
 
+* [SPDK加速框架介绍](https://mp.weixin.qq.com/s?__biz=MzI3NDA4ODY4MA==&mid=2653338017&idx=1&sn=160906234698b912c1ded4f3f02f5ae4&chksm=f0cb4e26c7bcc730397ad5d5960b4d79eb068c8a0f1b925011dd9f7b8fadc53a53fabc275e50&exportkey=A323MwZQp34snW8QpmY76sk%3D&pass_ticket=H6C1Cnqh76Sgtai%2FizQ89JxysFnMQG%2BxrCYau3eJvg83IpHMJBMwostZX%2BsJuDXp&wx_header=0#rd)
+
 * [Iostat.py: 输出SPDK Bdev IO子系统性能指标](https://mp.weixin.qq.com/s?__biz=MzI3NDA4ODY4MA==&mid=2653337235&idx=1&sn=18a86c9413d15f64038ad1ceae97161a&chksm=f0cb4114c7bcc8022e30570724c8125ae138918305210efc743cb32c31991d323ee051f37d1e&scene=0&xtrack=1&exportkey=A%2BOXWr460PmNQKEuT3dAhvM%3D&pass_ticket=w%2BZq2BsgB7kRtHy74eCg%2Bg3OzQ1%2BagIyRNE8HTReHBBzgY%2BPoBJ2KHsJWJVus9X2&wx_header=0#rd)
+
+* [SPDK负载均衡初探](https://mp.weixin.qq.com/s?__biz=MzI3NDA4ODY4MA==&mid=2653338036&idx=1&sn=56b40ba93e257a5b77d87aca90d6b413&chksm=f0cb4e33c7bcc7254750bdd5a579460bba0982d6556cee9e3f57be5fa455dc16a439be7ab3de&exportkey=A%2F4ItFW%2Fpwqx7ZPg0wWuTtQ%3D&pass_ticket=H6C1Cnqh76Sgtai%2FizQ89JxysFnMQG%2BxrCYau3eJvg83IpHMJBMwostZX%2BsJuDXp&wx_header=0#rd)
+
+* [SPDK动态负载均衡](https://mp.weixin.qq.com/s?__biz=MzI3NDA4ODY4MA==&mid=2653338117&idx=1&sn=5c961367150caf1098c5052792812a86&chksm=f0cb4d82c7bcc494c2e447c08607c88dde5214307d7e8ec2667430abf7d642dcf43171d09d46&mpshare=1&scene=1&srcid=1015omCRzPu5tSKM20FoxvsX&sharer_sharetime=1634259644537&sharer_shareid=bce63ba0449f498eb13c109c5eaef06d&exportkey=A2BQRGlmpj0p6jZa6pMy8Io%3D&pass_ticket=H6C1Cnqh76Sgtai%2FizQ89JxysFnMQG%2BxrCYau3eJvg83IpHMJBMwostZX%2BsJuDXp&wx_header=0#rd)
 
 ******
 
@@ -104,6 +110,8 @@ toc:
 
 * [SPDK配置文件从INI到JSON的转换](https://mp.weixin.qq.com/s?__biz=MzI3NDA4ODY4MA==&mid=2653337483&idx=1&sn=229777e0455d1da1d5e1350fd7706f8b&chksm=f0cb400cc7bcc91a5f30529def1e7ec35d7ba35d8db7929fce9766780e989725d8cb4f8d40c5&scene=0&xtrack=1&exportkey=A0WVwxrr8sF%2BvUzgPioT0Z8%3D&pass_ticket=Yqc82YTsvhRYO%2F9LVG0fQnlhT4AQex%2BS%2BcfddHU25xFgtLVwCovG%2BHck3uYODoz7&wx_header=0#rd)
 
+* [SPDK中常用的性能测试工具](https://mp.weixin.qq.com/s?__biz=MzI3NDA4ODY4MA==&mid=2653337823&idx=1&sn=815db74da9e0d5ca0309c0f1a12514f1&chksm=f0cb4f58c7bcc64e5b673b0330d89de71718dae1b2a41fc48f51033bc64563636bf08fb4502e&scene=0&xtrack=1&exportkey=Ay8l1i5XWgGDJcPchM1ZWhk%3D&pass_ticket=H6C1Cnqh76Sgtai%2FizQ89JxysFnMQG%2BxrCYau3eJvg83IpHMJBMwostZX%2BsJuDXp&wx_header=0#rd)
+
 ******
 
 **SPDK和其他软件库的深度整合**
@@ -121,6 +129,8 @@ toc:
 * [Intel VMD技术和SPDK VMD驱动模块介绍及使用](https://mp.weixin.qq.com/s?__biz=MzI3NDA4ODY4MA==&mid=2653336956&idx=1&sn=3fd65203018991b1c2d06f57cad1bf8d&chksm=f0cb42fbc7bccbedd59ab5b60918fcde64c2e306c89926956a9b525c80ad977ae1fe9b078a7f&token=468503366&lang=zh_CN#rd)
 
 * [SPDK与io_uring新异步IO机制](https://mp.weixin.qq.com/s?__biz=MzI3NDA4ODY4MA==&mid=2653337255&idx=1&sn=ac3c6a2e5da26c740897cdd5b5853613&chksm=f0cb4120c7bcc836236a5e5ed5c527e77402f530214a271bde779b1e13bc962b4b55959f84ea&scene=0&xtrack=1&exportkey=A6M3uH7ELEkd9xZgxwA%2FqrA%3D&pass_ticket=w%2BZq2BsgB7kRtHy74eCg%2Bg3OzQ1%2BagIyRNE8HTReHBBzgY%2BPoBJ2KHsJWJVus9X2&wx_header=0#rd)
+
+* [管中窥豹SPDK RBD bdev模块](https://mp.weixin.qq.com/s?__biz=MzI3NDA4ODY4MA==&mid=2653337737&idx=1&sn=4cae3aaf866e55da3b9a986c2147ae76&chksm=f0cb4f0ec7bcc6187c6594ee3cd79c001fe9e1697b80bacb7ba78d0620b9c2296cd68b530a0f&scene=0&xtrack=1&exportkey=A1lokdMubQCTFwj4YPJjRGg%3D&pass_ticket=H6C1Cnqh76Sgtai%2FizQ89JxysFnMQG%2BxrCYau3eJvg83IpHMJBMwostZX%2BsJuDXp&wx_header=0#rd)
 
 ******
 

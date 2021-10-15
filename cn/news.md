@@ -77,4 +77,8 @@ toc:
 ### [速度与压缩比如何兼得？压缩算法在构建部署中的优化](https://mp.weixin.qq.com/s?__biz=MzI3NDA4ODY4MA==&mid=2653337496&idx=1&sn=7488f53349a8305402c31fb29a64548d&chksm=f0cb401fc7bcc909d804c39e86118be3b2b219bc5adcbe3c6e0a738745d47df52351560a5f73&scene=0&xtrack=1&exportkey=A3g9BgwANfOTTNkJuJvcc2c%3D&pass_ticket=Yqc82YTsvhRYO%2F9LVG0fQnlhT4AQex%2BS%2BcfddHU25xFgtLVwCovG%2BHck3uYODoz7&wx_header=0#rd)
 > “综合以上几点，决定一期采取 ISA-L 的方式加速，可以最稳定并且较高速地提升构建平台的效率”
 
+## 浪潮
+### [软硬件结合，分布式数据库ZNBase存储架构优化实践软硬件结合，分布式数据库ZNBase存储架构优化实践](https://baijiahao.baidu.com/s?id=1708408682720278227&wfr=spider&for=pc)
+> “由于RocksDB采用LSM-Tree架构，同样也存在一定的问题。比如在大数据量下有比较高的读放大、写放大、空间放大，性能衰减也比较厉害。为了提高ZNBase在海量数据下的性能表现，ZNBase团队结合浪潮的硬件优势，开发了使用SPDK驱动在专用硬件ZNS SSD上进行软硬件融合的存储引擎......”
+
 ## 更多SPDK使用案例，请参考[news]({{ baseurl_rel }}/news)页面
