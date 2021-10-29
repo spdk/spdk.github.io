@@ -1,16 +1,15 @@
 var prog_guides =
 [
     [ "Blobstore Programmer's Guide", "blob.html", [
-      [ "In this document", "blob.html#blob_pg_toc", [
-        [ "Target Audience", "blob.html#blob_pg_audience", null ],
-        [ "Introduction", "blob.html#blob_pg_intro", null ],
-        [ "Theory of Operation", "blob.html#blob_pg_theory", null ],
-        [ "Design Considerations", "blob.html#blob_pg_design", null ],
-        [ "Examples", "blob.html#blob_pg_examples", null ],
-        [ "Configuration", "blob.html#blob_pg_config", null ],
-        [ "Component Detail", "blob.html#blob_pg_component", [
-          [ "Blob cluster layout", "blob.html#blob_pg_cluster_layout", null ]
-        ] ]
+      [ "In this document", "blob.html#blob_pg_toc", null ],
+      [ "Target Audience", "blob.html#blob_pg_audience", null ],
+      [ "Introduction", "blob.html#blob_pg_intro", null ],
+      [ "Theory of Operation", "blob.html#blob_pg_theory", null ],
+      [ "Design Considerations", "blob.html#blob_pg_design", null ],
+      [ "Examples", "blob.html#blob_pg_examples", null ],
+      [ "Configuration", "blob.html#blob_pg_config", null ],
+      [ "Component Detail", "blob.html#blob_pg_component", [
+        [ "Blob cluster layout", "blob.html#blob_pg_cluster_layout", null ]
       ] ]
     ] ],
     [ "Block Device Layer Programming Guide", "bdev_pg.html", null ],
@@ -24,12 +23,10 @@ var prog_guides =
       ] ],
       [ "Usage", "ftl.html#ftl_usage", [
         [ "Prerequisites", "ftl.html#ftl_prereq", null ],
-        [ "FTL bdev creation", "ftl.html#ftl_create", null ],
-        [ "FTL usage with OCSSD nvme bdev", "ftl.html#ftl_ocssd", null ],
-        [ "Configuring QEMU", "ftl.html#ftl_qemu_config", null ],
-        [ "Configuring SPDK", "ftl.html#ftl_spdk_config", null ],
-        [ "FTL usage with zone block bdev", "ftl.html#ftl_zone_block", null ]
-      ] ]
+        [ "FTL bdev creation", "ftl.html#ftl_create", null ]
+      ] ],
+      [ "Configuring SPDK", "ftl.html#ftl_spdk_config", null ],
+      [ "FTL usage with zone block bdev", "ftl.html#ftl_zone_block", null ]
     ] ],
     [ "GDB Macros User Guide", "gdb_macros.html", null ],
     [ "SPDK \"Reduce\" Block Compression Algorithm", "reduce.html", null ],

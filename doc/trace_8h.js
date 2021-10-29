@@ -26,6 +26,7 @@ var trace_8h =
     [ "SPDK_TRACE_MAX_LCORE", "trace_8h.html#a589fccd362899b2c59ce2e5860d2cb30", null ],
     [ "SPDK_TRACE_MAX_OBJECT", "trace_8h.html#a97958aabb667d95c141acf18f42a5000", null ],
     [ "SPDK_TRACE_MAX_OWNER", "trace_8h.html#ae4b117d97e55f2748e3c87dc21eb8277", null ],
+    [ "SPDK_TRACE_MAX_RELATIONS", "trace_8h.html#ad86ca6c28bf75e30a53d921b4a65ebe1", null ],
     [ "SPDK_TRACE_MAX_TPOINT_ID", "trace_8h.html#a6e4ac750b250bebb9fdca7fdb8733c6f", null ],
     [ "spdk_trace_num_args", "trace_8h.html#a8cab6995257437dddf64771b9687822c", null ],
     [ "spdk_trace_record", "trace_8h.html#a583c35dff93e5c996bd7115c4593a457", null ],
@@ -55,6 +56,7 @@ var trace_8h =
     [ "spdk_trace_register_owner", "trace_8h.html#a00597b31c0f7a67d7dbf306cb628e7fc", null ],
     [ "spdk_trace_set_tpoint_group_mask", "trace_8h.html#aa0ade5c1286d121c2eafeae8918169db", null ],
     [ "spdk_trace_set_tpoints", "trace_8h.html#a6f2131f1fc35d495f51552eb2838630b", null ],
+    [ "spdk_trace_tpoint_register_relation", "trace_8h.html#a0ec4843a02b23b8e0a8f4fe8c91fca3b", null ],
     [ "g_trace_flags", "trace_8h.html#a92b06e647e386cf0896e0a38499cf494", null ],
     [ "g_trace_histories", "trace_8h.html#a2f65bc76d39a775d401996a01bcba195", null ]
 ];

@@ -49,6 +49,8 @@ var bdev__module_8h =
     [ "spdk_bdev_io_set_md_buf", "bdev__module_8h.html#a4137556f7ff39fc2c0e816489f5803c4", null ],
     [ "spdk_bdev_module_claim_bdev", "bdev__module_8h.html#a43188aae62750556bba04f4ddc81fa94", null ],
     [ "spdk_bdev_module_examine_done", "bdev__module_8h.html#ad6ae712eb81a37a739cb82ca474e793b", null ],
+    [ "spdk_bdev_module_fini_done", "bdev__module_8h.html#a13dae91c3223ea829a78b979d34018c0", null ],
+    [ "spdk_bdev_module_fini_start_done", "bdev__module_8h.html#ac1f7fb72f765ee69d36569ecd5c1420d", null ],
     [ "spdk_bdev_module_finish_done", "bdev__module_8h.html#acc0701f07d82bbb8f0f3e57c81349574", null ],
     [ "spdk_bdev_module_init_done", "bdev__module_8h.html#a3a32d238f1617d87d407451e3874f1d1", null ],
     [ "spdk_bdev_module_list_add", "bdev__module_8h.html#acb2fe24ca4c312bc24aa8825189b2c97", null ],
@@ -76,7 +78,7 @@ var bdev__module_8h =
     [ "spdk_bdev_unregister", "bdev__module_8h.html#a3d1fd8c9ecf144593313ea08cdeb8ca2", null ],
     [ "spdk_scsi_nvme_translate", "bdev__module_8h.html#ace2ce9b49ed9c51ff3c85075321164cc", null ],
     [ "STAILQ_HEAD", "bdev__module_8h.html#a94d1006ca1ddf32201a5463179d35a32", null ],
-    [ "TAILQ_HEAD", "bdev__module_8h.html#a0da20e00320e2b782d1717c8184d93a3", null ],
     [ "TAILQ_HEAD", "bdev__module_8h.html#a400db1b2562970d33d8a9ef9ba8d04ff", null ],
+    [ "TAILQ_HEAD", "bdev__module_8h.html#a0da20e00320e2b782d1717c8184d93a3", null ],
     [ "TAILQ_HEAD", "bdev__module_8h.html#a1e12eb0cf1d416b15159529e194908a8", null ]
 ];

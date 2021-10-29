@@ -1,4 +1,4 @@
 <map id="spdk_bdev_module" name="spdk_bdev_module">
-<area shape="rect" id="node1" title="Block device module." alt="" coords="22,124,170,151"/>
-<area shape="rect" id="node2" href="$structspdk__bdev__module_1_1____bdev__module__internal__fields.html" title="Fields that are used by the internal bdev subsystem." alt="" coords="5,5,187,61"/>
+<area shape="rect" id="node1" title="Block device module." alt="" coords="19,124,154,151"/>
+<area shape="rect" id="node2" href="$structspdk__bdev__module_1_1____bdev__module__internal__fields.html" title="Fields that are used by the internal bdev subsystem." alt="" coords="5,5,168,61"/>
 </map>

@@ -1,6 +1,6 @@
 var unionspdk__nvme__intel__feat__smbus__address =
 [
-    [ "bits", "unionspdk__nvme__intel__feat__smbus__address.html#a289a4655fbaff2eb085b59b67ee06672", null ],
+    [ "bits", "unionspdk__nvme__intel__feat__smbus__address.html#a3be6c5708b4c73f3907ff3d329eb398f", null ],
     [ "raw", "unionspdk__nvme__intel__feat__smbus__address.html#a1e1bc8d96e7c60ff634b4b5dc28151b0", null ],
     [ "reserved", "unionspdk__nvme__intel__feat__smbus__address.html#a49084bbf1cf7d967ed21e6c1dce76e9f", null ],
     [ "reserved2", "unionspdk__nvme__intel__feat__smbus__address.html#ae122cd0e8dc3d8b57632fea33ec8efa2", null ],

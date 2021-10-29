@@ -10,7 +10,7 @@ var structspdk__bdev =
     [ "dif_is_head_of_md", "structspdk__bdev.html#a1a6b7f9bd595b3b800f35cc63efa3aab", null ],
     [ "dif_type", "structspdk__bdev.html#abcf4e6c5be82c271a681db4b9b2fd427", null ],
     [ "fn_table", "structspdk__bdev.html#a1c3d6e810863f31e2301949bfd1c5d37", null ],
-    [ "internal", "structspdk__bdev.html#af79765ae9547cde698fa00a46f7bfa68", null ],
+    [ "internal", "structspdk__bdev.html#a027888b234afc8af8282da025bec83fb", null ],
     [ "max_active_zones", "structspdk__bdev.html#accb598558c9e263c57cde4cf3c919bbb", null ],
     [ "max_num_segments", "structspdk__bdev.html#ad498826a1d9197050bd0ed110df96fb0", null ],
     [ "max_open_zones", "structspdk__bdev.html#a9766b9a39169827156c768f78b940977", null ],

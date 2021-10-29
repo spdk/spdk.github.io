@@ -44,33 +44,31 @@ var user_guides =
       ] ]
     ] ],
     [ "iSCSI Target", "iscsi.html", [
-      [ "iSCSI Target Getting Started Guide", "iscsi.html#iscsi_getting_started", [
-        [ "Prerequisites", "iscsi.html#iscsi_prereqs", [
-          [ "Assigning CPU Cores to the iSCSI Target", "iscsi.html#iscsi_config_lcore", null ]
-        ] ],
-        [ "Configuring iSCSI Target via RPC method", "iscsi.html#iscsi_rpc", null ],
-        [ "Configuring iSCSI Initiator", "iscsi.html#iscsi_initiator", null ]
+      [ "iSCSI Target Getting Started Guide", "iscsi.html#iscsi_getting_started", null ],
+      [ "Prerequisites", "iscsi.html#iscsi_prereqs", [
+        [ "Assigning CPU Cores to the iSCSI Target", "iscsi.html#iscsi_config_lcore", null ]
       ] ],
+      [ "Configuring iSCSI Target via RPC method", "iscsi.html#iscsi_rpc", null ],
+      [ "Configuring iSCSI Initiator", "iscsi.html#iscsi_initiator", null ],
       [ "iSCSI Hotplug", "iscsi.html#iscsi_hotplug", null ],
       [ "iSCSI Login Redirection", "iscsi.html#iscsi_login_redirection", null ]
     ] ],
     [ "NVMe over Fabrics Target", "nvmf.html", [
-      [ "NVMe-oF Target Getting Started Guide", "nvmf.html#nvmf_getting_started", [
-        [ "RDMA transport support", "nvmf.html#nvmf_rdma_transport", [
-          [ "Prerequisites", "nvmf.html#nvmf_prereqs", null ],
-          [ "Prerequisites for InfiniBand/RDMA Verbs", "nvmf.html#nvmf_prereqs_verbs", null ],
-          [ "Prerequisites for RDMA NICs", "nvmf.html#nvmf_prereqs_rdma_nics", null ],
-          [ "RDMA Limitations", "nvmf.html#nvmf_rdma_limitations", null ]
-        ] ],
-        [ "TCP transport support", "nvmf.html#nvmf_tcp_transport", null ],
-        [ "FC transport support", "nvmf.html#nvmf_fc_transport", null ],
-        [ "Configuring the SPDK NVMe over Fabrics Target", "nvmf.html#nvmf_config", [
-          [ "Using RPCs", "nvmf.html#nvmf_config_rpc", null ],
-          [ "Assigning CPU Cores to the NVMe over Fabrics Target", "nvmf.html#nvmf_config_lcore", null ]
-        ] ],
-        [ "Configuring the Linux NVMe over Fabrics Host", "nvmf.html#nvmf_host", null ],
-        [ "Enabling NVMe-oF target tracepoints for offline analysis and debug", "nvmf.html#nvmf_trace", null ]
-      ] ]
+      [ "NVMe-oF Target Getting Started Guide", "nvmf.html#nvmf_getting_started", null ],
+      [ "RDMA transport support", "nvmf.html#nvmf_rdma_transport", [
+        [ "Prerequisites", "nvmf.html#nvmf_prereqs", null ],
+        [ "Prerequisites for InfiniBand/RDMA Verbs", "nvmf.html#nvmf_prereqs_verbs", null ],
+        [ "Prerequisites for RDMA NICs", "nvmf.html#nvmf_prereqs_rdma_nics", null ],
+        [ "RDMA Limitations", "nvmf.html#nvmf_rdma_limitations", null ]
+      ] ],
+      [ "TCP transport support", "nvmf.html#nvmf_tcp_transport", null ],
+      [ "FC transport support", "nvmf.html#nvmf_fc_transport", null ],
+      [ "Configuring the SPDK NVMe over Fabrics Target", "nvmf.html#nvmf_config", [
+        [ "Using RPCs", "nvmf.html#nvmf_config_rpc", null ],
+        [ "Assigning CPU Cores to the NVMe over Fabrics Target", "nvmf.html#nvmf_config_lcore", null ]
+      ] ],
+      [ "Configuring the Linux NVMe over Fabrics Host", "nvmf.html#nvmf_host", null ],
+      [ "Enabling NVMe-oF target tracepoints for offline analysis and debug", "nvmf.html#nvmf_trace", null ]
     ] ],
     [ "vhost Target", "vhost.html", [
       [ "Table of Contents", "vhost.html#vhost_toc", null ],
@@ -129,15 +127,14 @@ var user_guides =
       [ "RocksDB Integration", "blobfs.html#blobfs_rocksdb", null ]
     ] ],
     [ "JSON-RPC", "jsonrpc.html", [
-      [ "Overview", "jsonrpc.html#jsonrpc_overview", [
-        [ "Error response message", "jsonrpc.html#jsonrpc_error_message", [
-          [ "Parser error", "jsonrpc.html#jsonrpc_parser_error", null ],
-          [ "Invalid params", "jsonrpc.html#jsonrpc_invalid_params", null ]
-        ] ],
-        [ "rpc.py", "jsonrpc.html#rpc_py", [
-          [ "Generate JSON-RPC methods for current configuration", "jsonrpc.html#jsonrpc_generate", null ],
-          [ "Converting from legacy configuration", "jsonrpc.html#jsonrpc_convert", null ]
-        ] ]
+      [ "Overview", "jsonrpc.html#jsonrpc_overview", null ],
+      [ "Error response message", "jsonrpc.html#jsonrpc_error_message", [
+        [ "Parser error", "jsonrpc.html#jsonrpc_parser_error", null ],
+        [ "Invalid params", "jsonrpc.html#jsonrpc_invalid_params", null ]
+      ] ],
+      [ "rpc.py", "jsonrpc.html#rpc_py", [
+        [ "Generate JSON-RPC methods for current configuration", "jsonrpc.html#jsonrpc_generate", null ],
+        [ "Converting from legacy configuration", "jsonrpc.html#jsonrpc_convert", null ]
       ] ],
       [ "App Framework", "jsonrpc.html#jsonrpc_components_app", [
         [ "spdk_kill_instance", "jsonrpc.html#rpc_spdk_kill_instance", null ],
@@ -228,8 +225,6 @@ var user_guides =
         [ "bdev_iscsi_delete", "jsonrpc.html#rpc_bdev_iscsi_delete", null ],
         [ "bdev_ftl_create", "jsonrpc.html#rpc_bdev_ftl_create", null ],
         [ "bdev_ftl_delete", "jsonrpc.html#rpc_bdev_ftl_delete", null ],
-        [ "bdev_ocssd_create", "jsonrpc.html#rpc_bdev_ocssd_create", null ],
-        [ "bdev_ocssd_delete", "jsonrpc.html#rpc_bdev_ocssd_delete", null ],
         [ "bdev_pmem_create_pool", "jsonrpc.html#rpc_bdev_pmem_create_pool", null ],
         [ "bdev_pmem_get_pool_info", "jsonrpc.html#rpc_bdev_pmem_get_pool_info", null ],
         [ "bdev_pmem_delete_pool", "jsonrpc.html#rpc_bdev_pmem_delete_pool", null ],
@@ -310,12 +305,12 @@ var user_guides =
         [ "vhost_scsi_controller_remove_target", "jsonrpc.html#rpc_vhost_scsi_controller_remove_target", null ],
         [ "vhost_create_blk_controller", "jsonrpc.html#rpc_vhost_create_blk_controller", null ],
         [ "vhost_get_controllers", "jsonrpc.html#rpc_vhost_get_controllers", [
-          [ "Response", "jsonrpc.html#rpc_vhost_get_controllers_response", null ],
-          [ "Vhost block", "jsonrpc.html#rpc_vhost_get_controllers_blk", null ],
-          [ "Vhost SCSI", "jsonrpc.html#rpc_vhost_get_controllers_scsi", null ],
-          [ "Vhost SCSI LUN", "jsonrpc.html#rpc_vhost_get_controllers_scsi_luns", null ],
-          [ "Vhost NVMe", "jsonrpc.html#rpc_vhost_get_controllers_nvme", null ]
+          [ "Response", "jsonrpc.html#rpc_vhost_get_controllers_response", null ]
         ] ],
+        [ "Vhost block", "jsonrpc.html#rpc_vhost_get_controllers_blk", null ],
+        [ "Vhost SCSI", "jsonrpc.html#rpc_vhost_get_controllers_scsi", null ],
+        [ "Vhost SCSI LUN", "jsonrpc.html#rpc_vhost_get_controllers_scsi_luns", null ],
+        [ "Vhost NVMe", "jsonrpc.html#rpc_vhost_get_controllers_nvme", null ],
         [ "vhost_delete_controller", "jsonrpc.html#rpc_vhost_delete_controller", null ]
       ] ],
       [ "Logical Volume", "jsonrpc.html#jsonrpc_components_lvol", [

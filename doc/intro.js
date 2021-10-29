@@ -14,11 +14,7 @@ var intro =
       [ "Running An Example", "vagrant.html#vagrant_example", null ]
     ] ],
     [ "Changelog", "changelog.html", [
-      [ "v21.10: (Upcoming Release)", "changelog.html#changelog-v21-10", null ],
-      [ "v21.07:", "changelog.html#changelog-v21-07", null ],
-      [ "v21.04:", "changelog.html#changelog-v21-04", null ],
-      [ "v21.01:", "changelog.html#changelog-v21-01", null ],
-      [ "v20.10:", "changelog.html#changelog-v20-10", null ],
+      [ "v22.01: (Upcoming Release)", "changelog.html#changelog-v22-01", null ],
       [ "v20.07: SPDK CSI driver, new accel_fw commands, I/O abort support", "changelog.html#changelog-v20-07", null ],
       [ "v20.04: SPDK Top, IDXD, NVMe qpair groups", "changelog.html#changelog-v20-04", null ],
       [ "v20.01: Optimized thin provisioning, FTL bdev, VMD hot plug, FUSED support", "changelog.html#changelog-v20-01", null ],
@@ -36,8 +32,5 @@ var intro =
       [ "v16.12: NVMe over Fabrics host, hotplug, and multi-process", "changelog.html#changelog-v16-12", null ],
       [ "v16.08: iSCSI target, NVMe over Fabrics maturity", "changelog.html#changelog-v16-08", null ],
       [ "v16.06: NVMf userspace target", "changelog.html#changelog-v16-06", null ]
-    ] ],
-    [ "ABI and API Deprecation", "deprecation.html", [
-      [ "Deprecation Notices", "deprecation.html#deprecation-notices", null ]
     ] ]
 ];

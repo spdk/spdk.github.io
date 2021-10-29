@@ -34,6 +34,7 @@ var log_8h =
     [ "spdk_log_set_flag", "log_8h.html#aa9419a88ede016c62feaa52fb0fed019", null ],
     [ "spdk_log_set_level", "log_8h.html#a422b7a65819b43157a4771be78f544ee", null ],
     [ "spdk_log_set_print_level", "log_8h.html#ab34f1c87d98113395ab04415dbee96d8", null ],
+    [ "spdk_log_to_syslog_level", "log_8h.html#adcae2250cdee22db5149c55a7c9f1e89", null ],
     [ "spdk_log_usage", "log_8h.html#a99820ac7f38f6ad187be62b3bbdb7d64", null ],
     [ "spdk_vlog", "log_8h.html#ae7a0943ae8fc36d9749bebd96a97fc21", null ]
 ];

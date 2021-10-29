@@ -19,15 +19,14 @@ var concepts =
       ] ]
     ] ],
     [ "SPDK Structural Overview", "overview.html", [
-      [ "Overview", "overview.html#dir_overview", [
-        [ "Applications", "overview.html#dir_app", null ],
-        [ "Libraries", "overview.html#dir_lib", null ],
-        [ "Documentation", "overview.html#dir_doc", null ],
-        [ "Examples", "overview.html#dir_examples", null ],
-        [ "Include", "overview.html#dir_include", null ],
-        [ "Scripts", "overview.html#dir_scripts", null ],
-        [ "Tests", "overview.html#dir_tests", null ]
-      ] ]
+      [ "Overview", "overview.html#dir_overview", null ],
+      [ "Applications", "overview.html#dir_app", null ],
+      [ "Libraries", "overview.html#dir_lib", null ],
+      [ "Documentation", "overview.html#dir_doc", null ],
+      [ "Examples", "overview.html#dir_examples", null ],
+      [ "Include", "overview.html#dir_include", null ],
+      [ "Scripts", "overview.html#dir_scripts", null ],
+      [ "Tests", "overview.html#dir_tests", null ]
     ] ],
     [ "SPDK Porting Guide", "porting.html", null ]
 ];

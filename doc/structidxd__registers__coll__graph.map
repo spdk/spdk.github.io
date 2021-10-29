@@ -1,0 +1,8 @@
+<map id="idxd_registers" name="idxd_registers">
+<area shape="rect" id="node1" title=" " alt="" coords="280,107,384,133"/>
+<area shape="rect" id="node2" href="$unionidxd__wqcap__register.html" title=" " alt="" coords="16,5,157,32"/>
+<area shape="rect" id="node3" href="$unionidxd__enginecap__register.html" title=" " alt="" coords="5,56,168,83"/>
+<area shape="rect" id="node4" href="$structidxd__opcap__register.html" title=" " alt="" coords="17,107,156,133"/>
+<area shape="rect" id="node5" href="$unionidxd__gencap__register.html" title=" " alt="" coords="14,157,159,184"/>
+<area shape="rect" id="node6" href="$unionidxd__groupcap__register.html" title=" " alt="" coords="9,208,165,235"/>
+</map>

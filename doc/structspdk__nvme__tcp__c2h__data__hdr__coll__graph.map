@@ -1,4 +1,4 @@
 <map id="spdk_nvme_tcp_c2h_data_hdr" name="spdk_nvme_tcp_c2h_data_hdr">
-<area shape="rect" id="node1" title="C2HData." alt="" coords="5,109,224,136"/>
-<area shape="rect" id="node2" href="$structspdk__nvme__tcp__common__pdu__hdr.html" title="Common NVMe/TCP PDU header." alt="" coords="21,5,209,47"/>
+<area shape="rect" id="node1" title="C2HData." alt="" coords="5,109,204,136"/>
+<area shape="rect" id="node2" href="$structspdk__nvme__tcp__common__pdu__hdr.html" title="Common NVMe/TCP PDU header." alt="" coords="19,5,190,47"/>
 </map>

@@ -1,5 +1,5 @@
 <map id="spdk_scsi_pr_in_full_status_data" name="spdk_scsi_pr_in_full_status_data">
-<area shape="rect" id="node1" title=" " alt="" coords="95,109,247,151"/>
-<area shape="rect" id="node2" href="$structspdk__scsi__pr__in__full__status__desc.html" title=" " alt="" coords="5,5,157,47"/>
-<area shape="rect" id="node3" href="$structspdk__scsi__pr__in__read__header.html" title=" " alt="" coords="181,5,341,47"/>
+<area shape="rect" id="node1" title=" " alt="" coords="89,109,229,151"/>
+<area shape="rect" id="node2" href="$structspdk__scsi__pr__in__full__status__desc.html" title=" " alt="" coords="5,5,145,47"/>
+<area shape="rect" id="node3" href="$structspdk__scsi__pr__in__read__header.html" title=" " alt="" coords="169,5,317,47"/>
 </map>

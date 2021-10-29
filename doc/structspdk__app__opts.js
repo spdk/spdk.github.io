@@ -2,6 +2,7 @@ var structspdk__app__opts =
 [
     [ "base_virtaddr", "structspdk__app__opts.html#a74c03a91caa15961c35374bf2465a279", null ],
     [ "delay_subsystem_init", "structspdk__app__opts.html#a703388c6f0075cf0396e05925364ebc5", null ],
+    [ "disable_signal_handlers", "structspdk__app__opts.html#a6e31b7a77928202250cb12f7e7d2b76b", null ],
     [ "enable_coredump", "structspdk__app__opts.html#ac21faa67a906aa0e70194b96e7700142", null ],
     [ "env_context", "structspdk__app__opts.html#a7e520897d6a9e39c3e62cc4259bd2ea3", null ],
     [ "hugedir", "structspdk__app__opts.html#a8fcfa061da5b1b5bfd9900c3074bf95f", null ],

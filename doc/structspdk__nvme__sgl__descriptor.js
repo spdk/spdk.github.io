@@ -1,9 +1,9 @@
 var structspdk__nvme__sgl__descriptor =
 [
     [ "address", "structspdk__nvme__sgl__descriptor.html#af1a89440a4c8c13289f3178242ec3054", null ],
-    [ "generic", "structspdk__nvme__sgl__descriptor.html#af3ac2df83aad90839a5ed90b23d61d2b", null ],
+    [ "generic", "structspdk__nvme__sgl__descriptor.html#aa0836d36b71c3c45d1f3894e9cf819d0", null ],
     [ "key", "structspdk__nvme__sgl__descriptor.html#a34d88c1b892cebe395a4160fa1961f9d", null ],
-    [ "keyed", "structspdk__nvme__sgl__descriptor.html#afccf4a364f353243a56209250f00f9b5", null ],
+    [ "keyed", "structspdk__nvme__sgl__descriptor.html#ac1ac539d5252efcd136215bf91c2665d", null ],
     [ "length", "structspdk__nvme__sgl__descriptor.html#ae95d8835dc0ad72a981e556c7dcc536c", null ],
     [ "length", "structspdk__nvme__sgl__descriptor.html#a43e70d1fbe8d2dccc572377aa55a57f8", null ],
     [ "reserved", "structspdk__nvme__sgl__descriptor.html#ae6756ad4ec4cd5f768a7c6ab522cb26c", null ],
@@ -11,5 +11,5 @@ var structspdk__nvme__sgl__descriptor =
     [ "subtype", "structspdk__nvme__sgl__descriptor.html#aa368a7c61afe48416d1bd70b0a869106", null ],
     [ "type", "structspdk__nvme__sgl__descriptor.html#a4c95708745878215a7349524ef5d561a", null ],
     [ "type", "structspdk__nvme__sgl__descriptor.html#af879bed45aa5c2ff4cd78f8b257368a9", null ],
-    [ "unkeyed", "structspdk__nvme__sgl__descriptor.html#afb78a47c6d4fd06e7768e06b249b0463", null ]
+    [ "unkeyed", "structspdk__nvme__sgl__descriptor.html#a266efd17b619225653b97d402aec772f", null ]
 ];

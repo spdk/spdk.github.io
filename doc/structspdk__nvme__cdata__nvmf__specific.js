@@ -1,6 +1,6 @@
 var structspdk__nvme__cdata__nvmf__specific =
 [
-    [ "ctrattr", "structspdk__nvme__cdata__nvmf__specific.html#afbe590e8b4de5dcad13bb8cecc3c8106", null ],
+    [ "ctrattr", "structspdk__nvme__cdata__nvmf__specific.html#af76cec6a31028352bd2537ee26dc4df9", null ],
     [ "ctrlr_model", "structspdk__nvme__cdata__nvmf__specific.html#a80557e12aafab3a50037fc7e2feb1326", null ],
     [ "icdoff", "structspdk__nvme__cdata__nvmf__specific.html#ae07d73592397eefff0a54086d11161db", null ],
     [ "ioccsz", "structspdk__nvme__cdata__nvmf__specific.html#a760ac459f1386e94310809765b5577d8", null ],

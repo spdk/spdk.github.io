@@ -8,6 +8,7 @@ var structspdk__nvmf__transport__ops =
     [ "get_optimal_poll_group", "structspdk__nvmf__transport__ops.html#a0a4b65e9d7fe480b70bc37ffe88e89fc", null ],
     [ "listen", "structspdk__nvmf__transport__ops.html#a4f1a858ec5f255a3479941b0d511bb48", null ],
     [ "listen_associate", "structspdk__nvmf__transport__ops.html#a5c0ed21883564670cf8b3a6a84717b57", null ],
+    [ "listen_dump_opts", "structspdk__nvmf__transport__ops.html#ae291f6b1041d0b4a65d3f82fc2184f81", null ],
     [ "listener_discover", "structspdk__nvmf__transport__ops.html#a26d773cfb4178b54b60a4e4212815f16", null ],
     [ "name", "structspdk__nvmf__transport__ops.html#a2ed87a42a2882535b1833fcc3785ca95", null ],
     [ "opts_init", "structspdk__nvmf__transport__ops.html#afa8e71018c357d6f6ea2293e178fe295", null ],

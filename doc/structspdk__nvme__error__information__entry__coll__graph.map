@@ -1,4 +1,4 @@
 <map id="spdk_nvme_error_information_entry" name="spdk_nvme_error_information_entry">
-<area shape="rect" id="node1" title="Error information log page (SPDK_NVME_LOG_ERROR)" alt="" coords="5,95,224,136"/>
-<area shape="rect" id="node2" href="$structspdk__nvme__status.html" title=" " alt="" coords="43,5,187,32"/>
+<area shape="rect" id="node1" title="Error information log page (SPDK_NVME_LOG_ERROR)" alt="" coords="5,95,199,136"/>
+<area shape="rect" id="node2" href="$structspdk__nvme__status.html" title=" " alt="" coords="36,5,168,32"/>
 </map>
