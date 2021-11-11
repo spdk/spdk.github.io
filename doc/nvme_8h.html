@@ -396,7 +396,7 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_trty
 <tr class="memdesc:a7642f1fc6eec21b93b5f60e386e3e36c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the NVMe controller PMR size.  <a href="nvme_8h.html#a7642f1fc6eec21b93b5f60e386e3e36c">More...</a><br /></td></tr>
 <tr class="separator:a7642f1fc6eec21b93b5f60e386e3e36c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a02b18deae44682a51177e8a4193af602"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a02b18deae44682a51177e8a4193af602">spdk_nvme_ctrlr_get_num_ns</a> (struct spdk_nvme_ctrlr *ctrlr)</td></tr>
-<tr class="memdesc:a02b18deae44682a51177e8a4193af602"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the number of namespaces for the given NVMe controller.  <a href="nvme_8h.html#a02b18deae44682a51177e8a4193af602">More...</a><br /></td></tr>
+<tr class="memdesc:a02b18deae44682a51177e8a4193af602"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the maximum NSID value that will ever be used for the given controller.  <a href="nvme_8h.html#a02b18deae44682a51177e8a4193af602">More...</a><br /></td></tr>
 <tr class="separator:a02b18deae44682a51177e8a4193af602"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a60d8173db83accb35f0c5fe1ec8261bf"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structspdk__pci__device.html">spdk_pci_device</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a60d8173db83accb35f0c5fe1ec8261bf">spdk_nvme_ctrlr_get_pci_device</a> (struct spdk_nvme_ctrlr *ctrlr)</td></tr>
 <tr class="memdesc:a60d8173db83accb35f0c5fe1ec8261bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the PCI device of a given NVMe controller.  <a href="nvme_8h.html#a60d8173db83accb35f0c5fe1ec8261bf">More...</a><br /></td></tr>
@@ -3373,7 +3373,7 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_trty
 </div><div class="memdoc">
 
 <p>Get a handle to a namespace for the given controller. </p>
-<p>Namespaces are numbered from 1 to the total number of namespaces. There will never be any gaps in the numbering. The number of namespaces is obtained by calling <a class="el" href="nvme_8h.html#a02b18deae44682a51177e8a4193af602" title="Get the number of namespaces for the given NVMe controller.">spdk_nvme_ctrlr_get_num_ns()</a>.</p>
+<p>Namespaces are numbered from 1 to the total number of namespaces. There will never be any gaps in the numbering. The number of namespaces is obtained by calling <a class="el" href="nvme_8h.html#a02b18deae44682a51177e8a4193af602" title="Get the maximum NSID value that will ever be used for the given controller.">spdk_nvme_ctrlr_get_num_ns()</a>.</p>
 <p>This function is thread safe and can be called at any point while the controller is attached to the SPDK NVMe driver.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -3402,9 +3402,10 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_trty
       </table>
 </div><div class="memdoc">
 
-<p>Get the number of namespaces for the given NVMe controller. </p>
+<p>Get the maximum NSID value that will ever be used for the given controller. </p>
 <p>This function is thread safe and can be called at any point while the controller is attached to the SPDK NVMe driver.</p>
 <p>This is equivalent to calling <a class="el" href="nvme_8h.html#a5a9daf15b5008ac36c12e7b8db7bdec9" title="Get the identify controller data as defined by the NVMe specification.">spdk_nvme_ctrlr_get_data()</a> to get the <a class="el" href="structspdk__nvme__ctrlr__data.html">spdk_nvme_ctrlr_data</a> and then reading the nn field.</p>
+<p>The NN field in the NVMe specification represents the maximum value that a namespace ID can ever have. Prior to NVMe 1.2, this was also the number of active namespaces, but from 1.2 onward the list of namespaces may be sparsely populated. Unfortunately, the meaning of this field is often misinterpreted by drive manufacturers and NVMe-oF implementers so it is not considered reliable. AVOID USING THIS FUNCTION WHENEVER POSSIBLE.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">ctrlr</td><td>Opaque handle to NVMe controller.</td></tr>
@@ -4379,7 +4380,7 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_trty
 
 <p>Perform a full hardware reset of the NVMe controller. </p>
 <p>This function should be called from a single thread while no other threads are actively using the NVMe device.</p>
-<p>Any pointers returned from <a class="el" href="nvme_8h.html#a6f01fb8a5f404e41e6fa224a7942be08" title="Get a handle to a namespace for the given controller.">spdk_nvme_ctrlr_get_ns()</a>, <a class="el" href="nvme_8h.html#ab1863b5dccf2bcc49fe92275bc1e5a2a" title="Get the identify namespace data as defined by the NVMe specification.">spdk_nvme_ns_get_data()</a>, <a class="el" href="nvme__zns_8h.html#a2060f12903d107efb4d7c26a9c0a83a8" title="Get the Zoned Namespace Command Set Specific Identify Namespace data as defined by the NVMe Zoned Nam...">spdk_nvme_zns_ns_get_data()</a>, and <a class="el" href="nvme__zns_8h.html#a7e44f2e8ad190636f5b7e18bbfe3d301" title="Get the Zoned Namespace Command Set Specific Identify Controller data as defined by the NVMe Zoned Na...">spdk_nvme_zns_ctrlr_get_data()</a> may be invalidated by calling this function. The number of namespaces as returned by <a class="el" href="nvme_8h.html#a02b18deae44682a51177e8a4193af602" title="Get the number of namespaces for the given NVMe controller.">spdk_nvme_ctrlr_get_num_ns()</a> may also change.</p>
+<p>Any pointers returned from <a class="el" href="nvme_8h.html#a6f01fb8a5f404e41e6fa224a7942be08" title="Get a handle to a namespace for the given controller.">spdk_nvme_ctrlr_get_ns()</a>, <a class="el" href="nvme_8h.html#ab1863b5dccf2bcc49fe92275bc1e5a2a" title="Get the identify namespace data as defined by the NVMe specification.">spdk_nvme_ns_get_data()</a>, <a class="el" href="nvme__zns_8h.html#a2060f12903d107efb4d7c26a9c0a83a8" title="Get the Zoned Namespace Command Set Specific Identify Namespace data as defined by the NVMe Zoned Nam...">spdk_nvme_zns_ns_get_data()</a>, and <a class="el" href="nvme__zns_8h.html#a7e44f2e8ad190636f5b7e18bbfe3d301" title="Get the Zoned Namespace Command Set Specific Identify Controller data as defined by the NVMe Zoned Na...">spdk_nvme_zns_ctrlr_get_data()</a> may be invalidated by calling this function. The number of namespaces as returned by <a class="el" href="nvme_8h.html#a02b18deae44682a51177e8a4193af602" title="Get the maximum NSID value that will ever be used for the given controller.">spdk_nvme_ctrlr_get_num_ns()</a> may also change.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">ctrlr</td><td>Opaque handle to NVMe controller.</td></tr>
@@ -4483,7 +4484,7 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_trty
 
 <p>Perform a NVMe subsystem reset. </p>
 <p>This function should be called from a single thread while no other threads are actively using the NVMe device. A subsystem reset is typically seen by the OS as a hot remove, followed by a hot add event.</p>
-<p>Any pointers returned from <a class="el" href="nvme_8h.html#a6f01fb8a5f404e41e6fa224a7942be08" title="Get a handle to a namespace for the given controller.">spdk_nvme_ctrlr_get_ns()</a>, <a class="el" href="nvme_8h.html#ab1863b5dccf2bcc49fe92275bc1e5a2a" title="Get the identify namespace data as defined by the NVMe specification.">spdk_nvme_ns_get_data()</a>, <a class="el" href="nvme__zns_8h.html#a2060f12903d107efb4d7c26a9c0a83a8" title="Get the Zoned Namespace Command Set Specific Identify Namespace data as defined by the NVMe Zoned Nam...">spdk_nvme_zns_ns_get_data()</a>, and <a class="el" href="nvme__zns_8h.html#a7e44f2e8ad190636f5b7e18bbfe3d301" title="Get the Zoned Namespace Command Set Specific Identify Controller data as defined by the NVMe Zoned Na...">spdk_nvme_zns_ctrlr_get_data()</a> may be invalidated by calling this function. The number of namespaces as returned by <a class="el" href="nvme_8h.html#a02b18deae44682a51177e8a4193af602" title="Get the number of namespaces for the given NVMe controller.">spdk_nvme_ctrlr_get_num_ns()</a> may also change.</p>
+<p>Any pointers returned from <a class="el" href="nvme_8h.html#a6f01fb8a5f404e41e6fa224a7942be08" title="Get a handle to a namespace for the given controller.">spdk_nvme_ctrlr_get_ns()</a>, <a class="el" href="nvme_8h.html#ab1863b5dccf2bcc49fe92275bc1e5a2a" title="Get the identify namespace data as defined by the NVMe specification.">spdk_nvme_ns_get_data()</a>, <a class="el" href="nvme__zns_8h.html#a2060f12903d107efb4d7c26a9c0a83a8" title="Get the Zoned Namespace Command Set Specific Identify Namespace data as defined by the NVMe Zoned Nam...">spdk_nvme_zns_ns_get_data()</a>, and <a class="el" href="nvme__zns_8h.html#a7e44f2e8ad190636f5b7e18bbfe3d301" title="Get the Zoned Namespace Command Set Specific Identify Controller data as defined by the NVMe Zoned Na...">spdk_nvme_zns_ctrlr_get_data()</a> may be invalidated by calling this function. The number of namespaces as returned by <a class="el" href="nvme_8h.html#a02b18deae44682a51177e8a4193af602" title="Get the maximum NSID value that will ever be used for the given controller.">spdk_nvme_ctrlr_get_num_ns()</a> may also change.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">ctrlr</td><td>Opaque handle to NVMe controller.</td></tr>
@@ -9165,7 +9166,7 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_trty
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
 <ul>
-        <li class="footer">Generated on Wed Nov 10 2021 04:04:33 for SPDK by
+        <li class="footer">Generated on Thu Nov 11 2021 04:04:31 for SPDK by
         <a href="http://www.doxygen.org/index.html">doxygen</a> 1.9.1 </li>
 </ul>
 </div>

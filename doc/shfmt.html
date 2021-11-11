@@ -101,6 +101,7 @@ In this document</h1>
 <h1><a class="anchor" id="shfmt_overview"></a>
 Overview</h1>
 <p>The majority of tests (and scripts overall) in the SPDK repo are written in Bash (with a quite significant emphasis on "Bashism"), thus a style formatter, shfmt, was introduced to help keep the .sh code consistent across the entire repo. For more details on the tool itself, please see <a href="https://github.com/mvdan/sh">shfmt</a>.</p>
+<p>We also advise to use 4.4 Bash as a minimum version to make sure scripts across the whole repo work as intended.</p>
 <h1><a class="anchor" id="shfmt_usage"></a>
 Usage</h1>
 <p>On the CI pool, the shfmt is run against all the updated .sh files that have been committed but not merged yet. Additionally, shfmt will pick all .sh present in the staging area when run locally from our pre-commit hook (via check_format.sh). In case any style errors are detected, a patch with needed changes is going to be generated and either build (CI) or the commit will be aborted. Said patch can be then easily applied:</p>
@@ -210,7 +211,7 @@ Examples</h1>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
 <ul>
-        <li class="footer">Generated on Wed Nov 10 2021 04:04:33 for SPDK by
+        <li class="footer">Generated on Thu Nov 11 2021 04:04:31 for SPDK by
         <a href="http://www.doxygen.org/index.html">doxygen</a> 1.9.1 </li>
 </ul>
 </div>
