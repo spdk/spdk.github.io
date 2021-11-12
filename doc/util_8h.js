@@ -22,5 +22,6 @@ var util_8h =
     [ "spdk_sn32_lt", "util_8h.html#a731ba4d3d89bf3d1c31c3e6481fc07b7", null ],
     [ "spdk_u32_is_pow2", "util_8h.html#a63e2af9bd97c1250c11a2e585336f377", null ],
     [ "spdk_u32log2", "util_8h.html#a5212715fed856a30641ba319bad995a7", null ],
+    [ "spdk_u64_is_pow2", "util_8h.html#ac2b85ac7ccc6fc631cb341ecae073e3e", null ],
     [ "spdk_u64log2", "util_8h.html#ada6ce4c7e52b50a49415fbbaaf2a73f5", null ]
 ];

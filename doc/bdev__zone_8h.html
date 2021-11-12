@@ -136,6 +136,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a9cd90ccbba809224555f05f357577c61"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev__zone_8h.html#a9cd90ccbba809224555f05f357577c61">spdk_bdev_get_num_zones</a> (const struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *bdev)</td></tr>
 <tr class="memdesc:a9cd90ccbba809224555f05f357577c61"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the number of zones for the given device.  <a href="bdev__zone_8h.html#a9cd90ccbba809224555f05f357577c61">More...</a><br /></td></tr>
 <tr class="separator:a9cd90ccbba809224555f05f357577c61"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d49096d8ad1681eb09b0f5be490356e"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev__zone_8h.html#a9d49096d8ad1681eb09b0f5be490356e">spdk_bdev_get_zone_id</a> (const struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *bdev, uint64_t offset_blocks)</td></tr>
+<tr class="memdesc:a9d49096d8ad1681eb09b0f5be490356e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the first logical block of a zone (known as zone_id or zslba) for a given offset.  <a href="bdev__zone_8h.html#a9d49096d8ad1681eb09b0f5be490356e">More...</a><br /></td></tr>
+<tr class="separator:a9d49096d8ad1681eb09b0f5be490356e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5d6312645e22f70249c76cf8a12f3be9"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev__zone_8h.html#a5d6312645e22f70249c76cf8a12f3be9">spdk_bdev_get_max_zone_append_size</a> (const struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *bdev)</td></tr>
 <tr class="memdesc:a5d6312645e22f70249c76cf8a12f3be9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get device maximum zone append data transfer size in logical blocks.  <a href="bdev__zone_8h.html#a5d6312645e22f70249c76cf8a12f3be9">More...</a><br /></td></tr>
 <tr class="separator:a5d6312645e22f70249c76cf8a12f3be9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -313,6 +316,44 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a9d49096d8ad1681eb09b0f5be490356e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9d49096d8ad1681eb09b0f5be490356e">&#9670;&nbsp;</a></span>spdk_bdev_get_zone_id()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint64_t spdk_bdev_get_zone_id </td>
+          <td>(</td>
+          <td class="paramtype">const struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *&#160;</td>
+          <td class="paramname"><em>bdev</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>offset_blocks</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the first logical block of a zone (known as zone_id or zslba) for a given offset. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bdev</td><td>Block device to query. </td></tr>
+    <tr><td class="paramname">offset_blocks</td><td>The offset, in blocks, from the start of the block device. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The zone_id (also known as zslba) for the given offset. </dd></dl>
+
+</div>
+</div>
 <a id="ad5e6fcc674d5ebe932e2b2dcaa28f9b5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad5e6fcc674d5ebe932e2b2dcaa28f9b5">&#9670;&nbsp;</a></span>spdk_bdev_get_zone_size()</h2>
 
@@ -372,7 +413,7 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
 <ul>
-        <li class="footer">Generated on Thu Nov 11 2021 04:04:31 for SPDK by
+        <li class="footer">Generated on Fri Nov 12 2021 04:04:32 for SPDK by
         <a href="http://www.doxygen.org/index.html">doxygen</a> 1.9.1 </li>
 </ul>
 </div>

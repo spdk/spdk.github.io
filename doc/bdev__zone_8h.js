@@ -23,6 +23,7 @@ var bdev__zone_8h =
     [ "spdk_bdev_get_max_zone_append_size", "bdev__zone_8h.html#a5d6312645e22f70249c76cf8a12f3be9", null ],
     [ "spdk_bdev_get_num_zones", "bdev__zone_8h.html#a9cd90ccbba809224555f05f357577c61", null ],
     [ "spdk_bdev_get_optimal_open_zones", "bdev__zone_8h.html#aa50981e9f75708e66f7174c96cf396f8", null ],
+    [ "spdk_bdev_get_zone_id", "bdev__zone_8h.html#a9d49096d8ad1681eb09b0f5be490356e", null ],
     [ "spdk_bdev_get_zone_info", "group__bdev__io__submit__functions.html#ga01f2a4fd5da187f568381fa3c55f603c", null ],
     [ "spdk_bdev_get_zone_size", "bdev__zone_8h.html#ad5e6fcc674d5ebe932e2b2dcaa28f9b5", null ],
     [ "spdk_bdev_io_get_append_location", "bdev__zone_8h.html#a0cea148aa2c84159056cee565772a4ca", null ],

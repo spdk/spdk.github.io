@@ -1,5 +1,6 @@
 var NAVTREEINDEX6 =
 {
+"jsonrpc.html#jsonrpc_components_nbd":[3,9,10],
 "jsonrpc.html#jsonrpc_components_nvmf_tgt":[3,9,7],
 "jsonrpc.html#jsonrpc_components_sock":[3,9,12],
 "jsonrpc.html#jsonrpc_components_vhost_tgt":[3,9,8],
@@ -248,6 +249,5 @@ var NAVTREEINDEX6 =
 "libraries.html#conventions":[3,1,1],
 "libraries.html#env_replacement":[3,1,2,2],
 "libraries.html#headers":[3,1,1,0],
-"libraries.html#lib":[3,1,0,0],
-"libraries.html#map":[3,1,1,2]
+"libraries.html#lib":[3,1,0,0]
 };

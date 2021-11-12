@@ -1,5 +1,6 @@
 var NAVTREEINDEX24 =
 {
+"structspdk__nvmf__rdma__transport__specific__address__subtype.html#afd6fec3eafdfacd986e62f2fe3093a85":[14,0,270,5],
 "structspdk__nvmf__registers.html":[14,0,271],
 "structspdk__nvmf__registers.html#a0dd8b2970c4db5945c34512be72ae62f":[14,0,271,3],
 "structspdk__nvmf__registers.html#a285fd2351a4aaed12e67d837b562a81a":[14,0,271,4],
@@ -248,6 +249,5 @@ var NAVTREEINDEX24 =
 "structspdk__opal__d0__tper__feat.html#a71d8c503d95d4fafbf63e9a8220e1a59":[14,0,293,5],
 "structspdk__opal__d0__tper__feat.html#a847e51fcbf8dad1f50cd4d741d3ae432":[14,0,293,1],
 "structspdk__opal__d0__tper__feat.html#a9424ed1b3750199b07b7f51558441048":[14,0,293,10],
-"structspdk__opal__d0__tper__feat.html#a985cf418b6ba9d155934435e17d86c9d":[14,0,293,9],
-"structspdk__opal__d0__tper__feat.html#ab5b2a906c2f3faffc341d2dadb64ed96":[14,0,293,2]
+"structspdk__opal__d0__tper__feat.html#a985cf418b6ba9d155934435e17d86c9d":[14,0,293,9]
 };
