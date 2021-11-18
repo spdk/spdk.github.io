@@ -2007,7 +2007,9 @@ bdev_malloc_create</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">num_blocks   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">Number of blocks    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">uuid   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">UUID of new bdev   </td></tr>
+<td class="markdownTableBodyNone">uuid   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">UUID of new bdev    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">optimal_io_boundary   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">Split on optimal IO boundary, in number of blocks, default 0   </td></tr>
 </table>
 <h3>Result</h3>
 <p>Name of newly created bdev.</p>
@@ -2018,7 +2020,8 @@ bdev_malloc_create</h2>
 <div class="line">    &quot;block_size&quot;: 4096,</div>
 <div class="line">    &quot;num_blocks&quot;: 16384,</div>
 <div class="line">    &quot;name&quot;: &quot;Malloc0&quot;,</div>
-<div class="line">    &quot;uuid&quot;: &quot;2b6601ba-eada-44fb-9a83-a20eb9eb9e90&quot;</div>
+<div class="line">    &quot;uuid&quot;: &quot;2b6601ba-eada-44fb-9a83-a20eb9eb9e90&quot;,</div>
+<div class="line">    &quot;optimal_io_boundary&quot;: 16</div>
 <div class="line">  },</div>
 <div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
 <div class="line">  &quot;method&quot;: &quot;bdev_malloc_create&quot;,</div>
@@ -7328,7 +7331,7 @@ spdk_get_version</h2>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
 <ul>
-        <li class="footer">Generated on Wed Nov 17 2021 04:04:29 for SPDK by
+        <li class="footer">Generated on Thu Nov 18 2021 04:04:32 for SPDK by
         <a href="http://www.doxygen.org/index.html">doxygen</a> 1.9.1 </li>
 </ul>
 </div>
