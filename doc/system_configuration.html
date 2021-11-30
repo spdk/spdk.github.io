@@ -97,7 +97,7 @@ IOMMU configuration</h1>
 <p>To disable the IOMMU or place it into passthrough mode, add <code>intel_iommu=off</code> or <code>amd_iommu=off</code> or <code>intel_iommu=on iommu=pt</code> to the GRUB command line on x86_64 system, or add <code>iommu.passthrough=1</code> on arm64 systems.</p>
 <p>There are also some instances where a user may not want to use <code>uio_pci_generic</code> or the kernel version they are using has a bug where <code>uio_pci_generic</code> <a href="https://github.com/spdk/spdk/issues/399">fails to bind to NVMe drives</a>. In these cases, users can build the <code>igb_uio</code> kernel module which can be found in dpdk-kmods repository. To ensure that the driver is properly bound, users should specify <code>DRIVER_OVERRIDE=/path/to/igb_uio.ko</code>.</p>
 <h1><a class="anchor" id="system_configuration_nonroot"></a>
-Running SPDK as non-priviledged user</h1>
+Running SPDK as non-privileged user</h1>
 <p>One of the benefits of using the <code>VFIO</code> Linux kernel driver is the ability to perform DMA operations with peripheral devices as unprivileged user. The permissions to access particular devices still need to be granted by the system administrator, but only on a one-time basis. Note that this functionality is supported with DPDK starting from version 18.11.</p>
 <h2>Hugetlbfs access</h2>
 <p>Make sure the target user has RW access to at least one hugepage mount. A good idea is to create a new mount specifically for SPDK:</p>
@@ -142,7 +142,7 @@ Memory constraints</h2>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
 <ul>
-        <li class="footer">Generated on Mon Nov 29 2021 04:04:35 for SPDK by
+        <li class="footer">Generated on Tue Nov 30 2021 04:04:34 for SPDK by
         <a href="http://www.doxygen.org/index.html">doxygen</a> 1.9.1 </li>
 </ul>
 </div>

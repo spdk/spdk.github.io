@@ -101,9 +101,9 @@ Acceleration Framework Design Considerations</h1>
 <h1><a class="anchor" id="accel_libs"></a>
 Acceleration Low Level Libraries</h1>
 <p>Low level libraries provide only the most basic functions that are specific to the hardware. Low level libraries are located in the '/lib' directory with the exception of the software implementation which is implemented as part of the framework itself. The software low level library does not expose a public API. Applications may choose to interact directly with a low level library if there are specific needs/considerations not met via accessing the library through the framework/module. Note that when using the low level libraries directly, the framework abstracted interface is bypassed as the application will call the public functions exposed by the individual low level libraries. Thus, code written this way needs to be certain that the underlying hardware exists everywhere that it runs.</p>
-<p>The low level library for IOAT is located in <code>/lib/ioat</code>. The low level library for DSA is in <code>/lib/idxd</code> (IDXD stands for Intel(R) Data Acceleration Driver). In <code>/lib/idxd</code> folder, SPDK supports to leverage both user space and kernel space driver to drive DSA devices. And the following describes each usage scenerio:</p>
+<p>The low level library for IOAT is located in <code>/lib/ioat</code>. The low level library for DSA is in <code>/lib/idxd</code> (IDXD stands for Intel(R) Data Acceleration Driver). In <code>/lib/idxd</code> folder, SPDK supports to leverage both user space and kernel space driver to drive DSA devices. And the following describes each usage scenario:</p>
 <p>Leveraging user space idxd driver: The DSA devices are managed by the user space driver in a dedicated SPDK process, then the device cannot be shared by another process. The benefit of this usage is no kernel dependency.</p>
-<p>Leveraging kernel space driver: The DSA devices are managed by kernel space drivers. And the Work queues inside the DSA device can be shared among different processes. Naturally, it can be used in cloud native scenerio. The drawback of this usage is the kernel dependency, i.e., idxd driver must be supported and loaded in the kernel.</p>
+<p>Leveraging kernel space driver: The DSA devices are managed by kernel space drivers. And the Work queues inside the DSA device can be shared among different processes. Naturally, it can be used in cloud native scenario. The drawback of this usage is the kernel dependency, i.e., idxd driver must be supported and loaded in the kernel.</p>
 <h1><a class="anchor" id="accel_modules"></a>
 Acceleration Plug-In Modules</h1>
 <p>Plug-in modules depend on low level libraries to interact with the hardware and add additional functionality such as queueing during busy conditions or flow control in some cases. The framework in turn depends on the modules to provide the complete implementation of the acceleration component. A module must be selected via startup RPC when the application is started. Otherwise, if no startup RPC is provided, the framework is available and will use the software plug-in module.</p>
@@ -145,7 +145,7 @@ Batching</h2>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
 <ul>
-        <li class="footer">Generated on Mon Nov 29 2021 04:04:35 for SPDK by
+        <li class="footer">Generated on Tue Nov 30 2021 04:04:34 for SPDK by
         <a href="http://www.doxygen.org/index.html">doxygen</a> 1.9.1 </li>
 </ul>
 </div>
