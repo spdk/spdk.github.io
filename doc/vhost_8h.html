@@ -759,7 +759,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vhos
 </div><div class="memdoc">
 
 <p>By default, events are generated when asked, but for high queue depth and high IOPS this prove to be inefficient both for guest kernel that have to handle a lot more IO completions and for SPDK vhost that need to make more syscalls. </p>
-<p>If enabled, limit amount of events (IRQs) sent to initiator by SPDK vhost effectively coalescing couple of completions. This of cource introduce IO latency penalty proportional to event delay time.</p>
+<p>If enabled, limit amount of events (IRQs) sent to initiator by SPDK vhost effectively coalescing couple of completions. This of course introduce IO latency penalty proportional to event delay time.</p>
 <p>Actual events delay time when is calculated according to below formula: if (delay_base == 0 || IOPS &lt; iops_threshold) { delay = 0; } else if (IOPS &lt; iops_threshold) { delay = delay_base * (iops - iops_threshold) / iops_threshold; }</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -848,7 +848,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vhos
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
 <ul>
-        <li class="footer">Generated on Tue Nov 30 2021 04:04:34 for SPDK by
+        <li class="footer">Generated on Wed Dec 1 2021 04:04:39 for SPDK by
         <a href="http://www.doxygen.org/index.html">doxygen</a> 1.9.1 </li>
 </ul>
 </div>

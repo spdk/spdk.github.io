@@ -342,10 +342,10 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_json_write_named_
 int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_json_write_named_object_begin</b> (struct spdk_json_write_ctx *w, const char *name)</td></tr>
 <tr class="separator:ab41e40a3d513cc859534cb5ed08a69ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5fc65c7d1961c23a747b3e2aa2169f4a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="json_8h.html#a5fc65c7d1961c23a747b3e2aa2169f4a">spdk_json_find</a> (struct <a class="el" href="structspdk__json__val.html">spdk_json_val</a> *object, const char *key_name, struct <a class="el" href="structspdk__json__val.html">spdk_json_val</a> **key, struct <a class="el" href="structspdk__json__val.html">spdk_json_val</a> **val, enum spdk_json_val_type type)</td></tr>
-<tr class="memdesc:a5fc65c7d1961c23a747b3e2aa2169f4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return JSON value asociated with key <code>key_name</code>.  <a href="json_8h.html#a5fc65c7d1961c23a747b3e2aa2169f4a">More...</a><br /></td></tr>
+<tr class="memdesc:a5fc65c7d1961c23a747b3e2aa2169f4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return JSON value associated with key <code>key_name</code>.  <a href="json_8h.html#a5fc65c7d1961c23a747b3e2aa2169f4a">More...</a><br /></td></tr>
 <tr class="separator:a5fc65c7d1961c23a747b3e2aa2169f4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a04601f5c6dc82ac1ddedc387a510249d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="json_8h.html#a04601f5c6dc82ac1ddedc387a510249d">spdk_json_find_string</a> (struct <a class="el" href="structspdk__json__val.html">spdk_json_val</a> *object, const char *key_name, struct <a class="el" href="structspdk__json__val.html">spdk_json_val</a> **key, struct <a class="el" href="structspdk__json__val.html">spdk_json_val</a> **val)</td></tr>
-<tr class="memdesc:a04601f5c6dc82ac1ddedc387a510249d"><td class="mdescLeft">&#160;</td><td class="mdescRight">The same as calling <code><a class="el" href="json_8h.html#a5fc65c7d1961c23a747b3e2aa2169f4a" title="Return JSON value asociated with key key_name.">spdk_json_find()</a></code> function with <code>type</code> set to <code>SPDK_JSON_VAL_STRING</code>.  <a href="json_8h.html#a04601f5c6dc82ac1ddedc387a510249d">More...</a><br /></td></tr>
+<tr class="memdesc:a04601f5c6dc82ac1ddedc387a510249d"><td class="mdescLeft">&#160;</td><td class="mdescRight">The same as calling <code><a class="el" href="json_8h.html#a5fc65c7d1961c23a747b3e2aa2169f4a" title="Return JSON value associated with key key_name.">spdk_json_find()</a></code> function with <code>type</code> set to <code>SPDK_JSON_VAL_STRING</code>.  <a href="json_8h.html#a04601f5c6dc82ac1ddedc387a510249d">More...</a><br /></td></tr>
 <tr class="separator:a04601f5c6dc82ac1ddedc387a510249d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0512cd8ee58901ec15f5ef372d6cafc6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="json_8h.html#a0512cd8ee58901ec15f5ef372d6cafc6">spdk_json_find_array</a> (struct <a class="el" href="structspdk__json__val.html">spdk_json_val</a> *object, const char *key_name, struct <a class="el" href="structspdk__json__val.html">spdk_json_val</a> **key, struct <a class="el" href="structspdk__json__val.html">spdk_json_val</a> **value)</td></tr>
 <tr class="memdesc:a0512cd8ee58901ec15f5ef372d6cafc6"><td class="mdescLeft">&#160;</td><td class="mdescRight">The same as calling <code>spdk_json_key()</code> function with <code>type</code> set to <code>SPDK_JSON_VAL_ARRAY_BEGIN</code>.  <a href="json_8h.html#a0512cd8ee58901ec15f5ef372d6cafc6">More...</a><br /></td></tr>
@@ -452,7 +452,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_json_write_named_
       </table>
 </div><div class="memdoc">
 
-<p>Return JSON value asociated with key <code>key_name</code>. </p>
+<p>Return JSON value associated with key <code>key_name</code>. </p>
 <p>Subobjects won't be searched.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -558,7 +558,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_json_write_named_
       </table>
 </div><div class="memdoc">
 
-<p>The same as calling <code><a class="el" href="json_8h.html#a5fc65c7d1961c23a747b3e2aa2169f4a" title="Return JSON value asociated with key key_name.">spdk_json_find()</a></code> function with <code>type</code> set to <code>SPDK_JSON_VAL_STRING</code>. </p>
+<p>The same as calling <code><a class="el" href="json_8h.html#a5fc65c7d1961c23a747b3e2aa2169f4a" title="Return JSON value associated with key key_name.">spdk_json_find()</a></code> function with <code>type</code> set to <code>SPDK_JSON_VAL_STRING</code>. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">object</td><td>JSON object to be examined </td></tr>
@@ -792,7 +792,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_json_write_named_
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
 <ul>
-        <li class="footer">Generated on Tue Nov 30 2021 04:04:33 for SPDK by
+        <li class="footer">Generated on Wed Dec 1 2021 04:04:39 for SPDK by
         <a href="http://www.doxygen.org/index.html">doxygen</a> 1.9.1 </li>
 </ul>
 </div>

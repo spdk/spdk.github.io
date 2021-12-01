@@ -202,7 +202,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="scsi
 <tr class="memdesc:a7c9b33030b7b39787f8dc3b369a49382"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check whether the SCSI device has any pending task.  <a href="scsi_8h.html#a7c9b33030b7b39787f8dc3b369a49382">More...</a><br /></td></tr>
 <tr class="separator:a7c9b33030b7b39787f8dc3b369a49382"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a40945295e5d0c3ffede09f50a7fa861d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="scsi_8h.html#a40945295e5d0c3ffede09f50a7fa861d">spdk_scsi_dev_destruct</a> (struct spdk_scsi_dev *dev, spdk_scsi_dev_destruct_cb_t cb_fn, void *cb_arg)</td></tr>
-<tr class="memdesc:a40945295e5d0c3ffede09f50a7fa861d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destruct the SCSI decice.  <a href="scsi_8h.html#a40945295e5d0c3ffede09f50a7fa861d">More...</a><br /></td></tr>
+<tr class="memdesc:a40945295e5d0c3ffede09f50a7fa861d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destruct the SCSI device.  <a href="scsi_8h.html#a40945295e5d0c3ffede09f50a7fa861d">More...</a><br /></td></tr>
 <tr class="separator:a40945295e5d0c3ffede09f50a7fa861d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab98745bdfde673aca36a6f5e140ec849"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="scsi_8h.html#ab98745bdfde673aca36a6f5e140ec849">spdk_scsi_dev_queue_mgmt_task</a> (struct spdk_scsi_dev *dev, struct <a class="el" href="structspdk__scsi__task.html">spdk_scsi_task</a> *task)</td></tr>
 <tr class="memdesc:ab98745bdfde673aca36a6f5e140ec849"><td class="mdescLeft">&#160;</td><td class="mdescRight">Execute the SCSI management task.  <a href="scsi_8h.html#ab98745bdfde673aca36a6f5e140ec849">More...</a><br /></td></tr>
@@ -777,7 +777,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="scsi
       </table>
 </div><div class="memdoc">
 
-<p>Destruct the SCSI decice. </p>
+<p>Destruct the SCSI device. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">dev</td><td>SCSI device. </td></tr>
@@ -1675,7 +1675,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="scsi
 <p>Construct a new SCSI task. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">task</td><td>SCSI task to consturct. </td></tr>
+    <tr><td class="paramname">task</td><td>SCSI task to construct. </td></tr>
     <tr><td class="paramname">cpl_fn</td><td>Called when the task is completed. </td></tr>
     <tr><td class="paramname">free_fn</td><td>Called when the task is freed </td></tr>
   </table>
@@ -1992,7 +1992,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="scsi
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
 <ul>
-        <li class="footer">Generated on Tue Nov 30 2021 04:04:34 for SPDK by
+        <li class="footer">Generated on Wed Dec 1 2021 04:04:39 for SPDK by
         <a href="http://www.doxygen.org/index.html">doxygen</a> 1.9.1 </li>
 </ul>
 </div>

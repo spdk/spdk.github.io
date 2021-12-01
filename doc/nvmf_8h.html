@@ -300,7 +300,7 @@ Functions</h2></td></tr>
 <tr class="memdesc:a9778ef2894d69144defb4f1547bfec15"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a namespace to a subsystems in the PAUSED or INACTIVE states.  <a href="nvmf_8h.html#a9778ef2894d69144defb4f1547bfec15">More...</a><br /></td></tr>
 <tr class="separator:a9778ef2894d69144defb4f1547bfec15"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa10ac07a403de72643a5e9801e9fec0b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#aa10ac07a403de72643a5e9801e9fec0b">spdk_nvmf_subsystem_remove_ns</a> (struct spdk_nvmf_subsystem *subsystem, uint32_t nsid)</td></tr>
-<tr class="memdesc:aa10ac07a403de72643a5e9801e9fec0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove a namespace from a subsytem.  <a href="nvmf_8h.html#aa10ac07a403de72643a5e9801e9fec0b">More...</a><br /></td></tr>
+<tr class="memdesc:aa10ac07a403de72643a5e9801e9fec0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove a namespace from a subsystem.  <a href="nvmf_8h.html#aa10ac07a403de72643a5e9801e9fec0b">More...</a><br /></td></tr>
 <tr class="separator:aa10ac07a403de72643a5e9801e9fec0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab797c6df2dc8fab9833de1711b6fe7f4"><td class="memItemLeft" align="right" valign="top">struct spdk_nvmf_ns *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#ab797c6df2dc8fab9833de1711b6fe7f4">spdk_nvmf_subsystem_get_first_ns</a> (struct spdk_nvmf_subsystem *subsystem)</td></tr>
 <tr class="memdesc:ab797c6df2dc8fab9833de1711b6fe7f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the first allocated namespace in a subsystem.  <a href="nvmf_8h.html#ab797c6df2dc8fab9833de1711b6fe7f4">More...</a><br /></td></tr>
@@ -1509,11 +1509,11 @@ Functions</h2></td></tr>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">0</td><td>if sybsystem is destroyed, <b>cpl_cb</b> is not called is that case </td></tr>
+    <tr><td class="paramname">0</td><td>if subsystem is destroyed, <b>cpl_cb</b> is not called is that case </td></tr>
     <tr><td class="paramname">-EINVAl</td><td>if <b>subsystem</b> is a NULL pointer </td></tr>
     <tr><td class="paramname">-EAGAIN</td><td>if <b>subsystem</b> is not in INACTIVE state </td></tr>
     <tr><td class="paramname">-EALREADY</td><td>if subsystem destruction is already started </td></tr>
-    <tr><td class="paramname">-EINPROGRESS</td><td>if subsystem is destroyed asyncronously, cpl_cb will be called in that case </td></tr>
+    <tr><td class="paramname">-EINPROGRESS</td><td>if subsystem is destroyed asynchronously, cpl_cb will be called in that case </td></tr>
   </table>
   </dd>
 </dl>
@@ -2366,7 +2366,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Remove a namespace from a subsytem. </p>
+<p>Remove a namespace from a subsystem. </p>
 <p>May only be performed on subsystems in the PAUSED or INACTIVE states. Additionally, the namespace must be paused.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -3116,7 +3116,7 @@ Functions</h2></td></tr>
 <p>Destroy a protocol transport. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">transport</td><td>The transport to destory </td></tr>
+    <tr><td class="paramname">transport</td><td>The transport to destroy </td></tr>
     <tr><td class="paramname">cb_fn</td><td>A callback that will be called once the transport is destroyed </td></tr>
     <tr><td class="paramname">cb_arg</td><td>A context argument passed to cb_fn.</td></tr>
   </table>
@@ -3367,7 +3367,7 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
 <ul>
-        <li class="footer">Generated on Tue Nov 30 2021 04:04:34 for SPDK by
+        <li class="footer">Generated on Wed Dec 1 2021 04:04:39 for SPDK by
         <a href="http://www.doxygen.org/index.html">doxygen</a> 1.9.1 </li>
 </ul>
 </div>

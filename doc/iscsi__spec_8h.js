@@ -31,7 +31,7 @@ var iscsi__spec_8h =
     [ "ISCSI_CLASS_REDIRECT", "iscsi__spec_8h.html#acf506c32bf9f465d24e4db4e1fbf15a6", null ],
     [ "ISCSI_CLASS_SUCCESS", "iscsi__spec_8h.html#abd5b963858ccc52de9f15f5e8d51a6c1", null ],
     [ "ISCSI_CLASS_TARGET_ERROR", "iscsi__spec_8h.html#af552fafd6804f9189aa98263f8bb5cd4", null ],
-    [ "ISCSI_DATAIN_ACKNOLWEDGE", "iscsi__spec_8h.html#ae6d03ff3ec2c19bc92280ae87a02da8a", null ],
+    [ "ISCSI_DATAIN_ACKNOWLEDGE", "iscsi__spec_8h.html#aac9cdbcfc17b258f8fd912c9b1cea7b7", null ],
     [ "ISCSI_DATAIN_OVERFLOW", "iscsi__spec_8h.html#a5037d9a0c3f411d3ac5fea3bbb6367fa", null ],
     [ "ISCSI_DATAIN_STATUS", "iscsi__spec_8h.html#ac975d253c4743d7cb89b6f3b0328a460", null ],
     [ "ISCSI_DATAIN_UNDERFLOW", "iscsi__spec_8h.html#a3ddc3b9300c5d4984fb872b834042b04", null ],

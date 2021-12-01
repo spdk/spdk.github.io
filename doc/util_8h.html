@@ -168,7 +168,7 @@ static uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_divid
 <tr class="memdesc:a4bf38bbd457a764604d5ba26ed3c8565"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy the data described by the source iovec to the destination iovec.  <a href="util_8h.html#a4bf38bbd457a764604d5ba26ed3c8565">More...</a><br /></td></tr>
 <tr class="separator:a4bf38bbd457a764604d5ba26ed3c8565"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9d8a81dd9f89050cdc2de023d10f1d31"><td class="memItemLeft" align="right" valign="top">static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8h.html#a9d8a81dd9f89050cdc2de023d10f1d31">spdk_sn32_add</a> (uint32_t s1, uint32_t s2)</td></tr>
-<tr class="memdesc:a9d8a81dd9f89050cdc2de023d10f1d31"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add two sequece numbers s1 and s2.  <a href="util_8h.html#a9d8a81dd9f89050cdc2de023d10f1d31">More...</a><br /></td></tr>
+<tr class="memdesc:a9d8a81dd9f89050cdc2de023d10f1d31"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add two sequence numbers s1 and s2.  <a href="util_8h.html#a9d8a81dd9f89050cdc2de023d10f1d31">More...</a><br /></td></tr>
 <tr class="separator:a9d8a81dd9f89050cdc2de023d10f1d31"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a731ba4d3d89bf3d1c31c3e6481fc07b7"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8h.html#a731ba4d3d89bf3d1c31c3e6481fc07b7">spdk_sn32_lt</a> (uint32_t s1, uint32_t s2)</td></tr>
 <tr class="memdesc:a731ba4d3d89bf3d1c31c3e6481fc07b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compare if sequence number s1 is less than s2.  <a href="util_8h.html#a731ba4d3d89bf3d1c31c3e6481fc07b7">More...</a><br /></td></tr>
@@ -282,7 +282,7 @@ static uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_divid
 <div class="line">        } <span class="keywordflow">while</span> (0)</div>
 </div><!-- fragment -->
 <p>Scan build is really pessimistic and assumes that mempool functions can dequeue NULL buffers even if they return success. </p>
-<p>This is obviously a false possitive, but the mempool dequeue can be done in a DPDK inline function that we can't decorate with usual assert(buf != NULL). Instead, we'll preinitialize the dequeued buffer array with some dummy objects. </p>
+<p>This is obviously a false positive, but the mempool dequeue can be done in a DPDK inline function that we can't decorate with usual assert(buf != NULL). Instead, we'll preinitialize the dequeued buffer array with some dummy objects. </p>
 
 </div>
 </div>
@@ -364,7 +364,7 @@ static uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_divid
 </table>
 </div><div class="memdoc">
 
-<p>Add two sequece numbers s1 and s2. </p>
+<p>Add two sequence numbers s1 and s2. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">s1</td><td>First sequence number </td></tr>
@@ -474,7 +474,7 @@ static uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_divid
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
 <ul>
-        <li class="footer">Generated on Tue Nov 30 2021 04:04:34 for SPDK by
+        <li class="footer">Generated on Wed Dec 1 2021 04:04:39 for SPDK by
         <a href="http://www.doxygen.org/index.html">doxygen</a> 1.9.1 </li>
 </ul>
 </div>
