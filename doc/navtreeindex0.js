@@ -41,11 +41,12 @@ var NAVTREEINDEX0 =
 "accel_fw.html#accel_dc":[5,3,1],
 "accel_fw.html#accel_functions":[5,3,0],
 "accel_fw.html#accel_idxd":[5,3,3,1],
+"accel_fw.html#accel_idxd_kernel":[5,3,3,2],
 "accel_fw.html#accel_ioat":[5,3,3,0],
 "accel_fw.html#accel_libs":[5,3,2],
 "accel_fw.html#accel_modules":[5,3,3],
-"accel_fw.html#accel_sw":[5,3,3,2],
-"accel_fw.html#batching":[5,3,3,3],
+"accel_fw.html#accel_sw":[5,3,3,3],
+"accel_fw.html#batching":[5,3,3,4],
 "annotated.html":[14,0],
 "app_overview.html":[3,3],
 "app_overview.html#app_cmd_line_args":[3,3,0,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX0 =
 "bdev__module_8h.html#a3d1fd8c9ecf144593313ea08cdeb8ca2":[15,0,5,64],
 "bdev__module_8h.html#a400db1b2562970d33d8a9ef9ba8d04ff":[15,0,5,67],
 "bdev__module_8h.html#a4137556f7ff39fc2c0e816489f5803c4":[15,0,5,35],
-"bdev__module_8h.html#a4271696fa055f456bedb6bdebce25dbd":[15,0,5,27],
-"bdev__module_8h.html#a43188aae62750556bba04f4ddc81fa94":[15,0,5,36]
+"bdev__module_8h.html#a4271696fa055f456bedb6bdebce25dbd":[15,0,5,27]
 };

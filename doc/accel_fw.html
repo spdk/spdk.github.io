@@ -117,7 +117,8 @@ IDXD Module</h2>
 <p>1: Two separate work queues each backed with two DSA engines. This is another generic configuration that is documented in the specification and allows the application to partition submissions across two work queues. This would be useful when different priorities might be desired per group.</p>
 <p>There are several other configurations that are possible that include quality of service parameters on the work queues that are not currently utilized by the module. Specialized use of DSA may require different configurations that can be added to the module as needed.</p>
 <p>When a new channel starts, a DSA device will be assigned to the channel. The accel idxd module has been tuned for the most likely best performance case. The result is that there is a limited number of channels that can be supported based on the number of DSA devices in the system. Additionally, for best performance, the accel idxd module will only use DSA devices on the same socket as the requesting channel/thread. If an error occurs on initialization indicating that there are no more DSA devices available either try fewer threads or, if on a 2 socket system, try spreading threads across cores if possible.</p>
-<h2>How to use kernel idxd driver (#accel_idxd_kernel)</h2>
+<h2><a class="anchor" id="accel_idxd_kernel"></a>
+How to use kernel idxd driver</h2>
 <p>There are several dependencies to leverage kernel idxd driver for driving DSA devices.</p>
 <p>1 Linux kernel support: To leverage kernel space idxd driver, you need to have a Linux kernel with <code>idxd</code> driver loaded with scalable mode. And currently SPDK uses the character device while <code>idxd</code> driver is enabled in the kernel. So when booting the machine, we need to add additional configuration in the grub, i.e, revise the kernel boot commandline <code>intel_iommu=on,sm_on</code> with VT-d turned on in BIOS.</p>
 <p>2 User library dependency: Users need to install <code>idxd-config</code> library. For example, users can download the library from <a href="https://github.com/intel/idxd-config">idxd-config repo</a>. After the library is installed, users can use the <code>accel-config</code> command to configure the work queues(WQs) of the idxd devices managed by the kernel with the following steps:</p>
@@ -145,7 +146,7 @@ Batching</h2>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
 <ul>
-        <li class="footer">Generated on Thu Dec 2 2021 04:04:31 for SPDK by
+        <li class="footer">Generated on Fri Dec 3 2021 04:04:40 for SPDK by
         <a href="http://www.doxygen.org/index.html">doxygen</a> 1.9.1 </li>
 </ul>
 </div>
