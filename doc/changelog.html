@@ -94,6 +94,8 @@ $(document).ready(function(){initNavTree('changelog.html',''); initResizable(); 
 v22.01: (Upcoming Release)</h1>
 <h2>nvme</h2>
 <p>API <code>spdk_nvme_trtype_is_fabrics</code> was added to return existing transport type is fabric or not.</p>
+<h2>bdev_nvme</h2>
+<p>Added <code>num_io_queues</code> to <code>bdev_nvme_attach_controller</code> RPC to allow specifying amount of requested IO queues.</p>
 <h2>bdev</h2>
 <p>The parameter <code>retry_count</code> of the RPC <code>bdev_nvme_set_options</code> was deprecated and will be removed in SPDK 22.04, and the parameter <code>transport_retry_count</code> is added and used instead.</p>
 <p>An new parameter <code>bdev_retry_count</code> is added to the RPC <code>bdev_nvme_set_options</code>.</p>
@@ -1403,7 +1405,7 @@ v16.06: NVMf userspace target</h1>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
 <ul>
-        <li class="footer">Generated on Sun Dec 5 2021 04:04:29 for SPDK by
+        <li class="footer">Generated on Mon Dec 6 2021 04:04:39 for SPDK by
         <a href="http://www.doxygen.org/index.html">doxygen</a> 1.9.1 </li>
 </ul>
 </div>

@@ -2354,7 +2354,9 @@ bdev_nvme_attach_controller</h2>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">fabrics_connect_timeout_us   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">bool   </td><td class="markdownTableBodyNone">Timeout for fabrics connect (in microseconds)    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">multipath   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Multipathing behavior: disable, failover, multipath. Default is failover.   </td></tr>
+<td class="markdownTableBodyNone">multipath   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Multipathing behavior: disable, failover, multipath. Default is failover.    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">num_io_queues   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint32_t   </td><td class="markdownTableBodyNone">The number of IO queues to request during initialization. Range: (0, UINT16_MAX + 1], Default is 1024.   </td></tr>
 </table>
 <h3>Example</h3>
 <p>Example request:</p>
@@ -7331,7 +7333,7 @@ spdk_get_version</h2>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
 <ul>
-        <li class="footer">Generated on Sun Dec 5 2021 04:04:30 for SPDK by
+        <li class="footer">Generated on Mon Dec 6 2021 04:04:39 for SPDK by
         <a href="http://www.doxygen.org/index.html">doxygen</a> 1.9.1 </li>
 </ul>
 </div>
