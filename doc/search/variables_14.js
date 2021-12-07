@@ -3,7 +3,7 @@ var searchData=
   ['vendor_5fid_4761',['vendor_id',['../structspdk__pci__id.html#ae1f6dd7e42b4203d397b154fe1af2ed8',1,'spdk_pci_id']]],
   ['ver_4762',['ver',['../structspdk__nvme__ctrlr__data.html#a72c56d5a31899269b4f615905f501b72',1,'spdk_nvme_ctrlr_data']]],
   ['vfn_4763',['vfn',['../structspdk__nvme__secondary__ctrl__entry.html#a1058df7181e33bc60bfd6d9782afd673',1,'spdk_nvme_secondary_ctrl_entry']]],
-  ['vid_4764',['vid',['../structspdk__nvme__ctrlr__data.html#ab3503f576c3c6d932918bfe7003f8a5f',1,'spdk_nvme_ctrlr_data']]],
+  ['vid_4764',['vid',['../structspdk__nvme__ctrlr__data.html#ab3503f576c3c6d932918bfe7003f8a5f',1,'spdk_nvme_ctrlr_data::vid()'],['../structspdk__nvmf__ctrlr__data.html#a66e70b6e69c57936c54e7fd9cf22d76a',1,'spdk_nvmf_ctrlr_data::vid()']]],
   ['vifrsm_4765',['vifrsm',['../structspdk__nvme__primary__ctrl__capabilities.html#a188fc422eddd794a1af2d164a29942a7',1,'spdk_nvme_primary_ctrl_capabilities']]],
   ['vifrt_4766',['vifrt',['../structspdk__nvme__primary__ctrl__capabilities.html#a931c061c11e9c31b6f33f09d5bc251dc',1,'spdk_nvme_primary_ctrl_capabilities']]],
   ['vigran_4767',['vigran',['../structspdk__nvme__primary__ctrl__capabilities.html#a0932f0fb2038aff45b5e25788e62eadc',1,'spdk_nvme_primary_ctrl_capabilities']]],
