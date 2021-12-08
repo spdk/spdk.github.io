@@ -99,6 +99,8 @@ v22.01: (Upcoming Release)</h1>
 <h2>bdev</h2>
 <p>The parameter <code>retry_count</code> of the RPC <code>bdev_nvme_set_options</code> was deprecated and will be removed in SPDK 22.04, and the parameter <code>transport_retry_count</code> is added and used instead.</p>
 <p>An new parameter <code>bdev_retry_count</code> is added to the RPC <code>bdev_nvme_set_options</code>.</p>
+<h2>nvme</h2>
+<p>New APIs, <code>spdk_nvme_ctrlr_disconnect</code>, <code>spdk_nvme_ctrlr_reconnect_async</code>, and <code>spdk_nvme_ctrlr_reconnect_poll_async</code>, have been added to improve error recovery, and the existing APIs,<code>spdk_nvme_ctrlr_reset_async</code> and <code>spdk_nvme_ctrlr_reset_poll_async</code> were deprecated.</p>
 <h1>v21.10</h1>
 <p>Structure <code><a class="el" href="structspdk__nvmf__target__opts.html">spdk_nvmf_target_opts</a></code> has been extended with new member <code>discovery_filter</code> which allows to specify filtering rules applied during discovery log generation. Refer to <code>enum spdk_nvmf_tgt_discovery_filter</code> for more info.</p>
 <h2>bdev</h2>
@@ -1405,7 +1407,7 @@ v16.06: NVMf userspace target</h1>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
 <ul>
-        <li class="footer">Generated on Tue Dec 7 2021 04:04:38 for SPDK by
+        <li class="footer">Generated on Wed Dec 8 2021 04:04:46 for SPDK by
         <a href="http://www.doxygen.org/index.html">doxygen</a> 1.9.1 </li>
 </ul>
 </div>

@@ -97,7 +97,9 @@ ABI and API Deprecation</h1>
 <h1><a class="anchor" id="deprecation-notices"></a>
 Deprecation Notices</h1>
 <h2>bdev</h2>
-<p>Deprecated <code>spdk_bdev_module_finish_done()</code> API, which will be removed in SPDK 22.01. Bdev modules should use <code><a class="el" href="bdev__module_8h.html#a13dae91c3223ea829a78b979d34018c0" title="Indicate that the module finish has completed.">spdk_bdev_module_fini_done()</a></code> instead. </p>
+<p>Deprecated <code>spdk_bdev_module_finish_done()</code> API, which will be removed in SPDK 22.01. Bdev modules should use <code><a class="el" href="bdev__module_8h.html#a13dae91c3223ea829a78b979d34018c0" title="Indicate that the module finish has completed.">spdk_bdev_module_fini_done()</a></code> instead.</p>
+<h2>nvme</h2>
+<p>Deprecated <code>spdk_nvme_ctrlr_reset_async</code> and <code>spdk_nvme_ctrlr_reset_poll_async</code> APIs, which will be removed in SPDK 22.01. <code>spdk_nvme_ctrlr_disconnect</code>, <code>spdk_nvme_ctrlr_reconnect_async</code>, and <code>spdk_nvme_ctrlr_reconnect_poll_async</code> should be used instead. </p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
@@ -105,7 +107,7 @@ Deprecation Notices</h1>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
 <ul>
-        <li class="footer">Generated on Tue Dec 7 2021 04:04:38 for SPDK by
+        <li class="footer">Generated on Wed Dec 8 2021 04:04:46 for SPDK by
         <a href="http://www.doxygen.org/index.html">doxygen</a> 1.9.1 </li>
 </ul>
 </div>
