@@ -1,16 +1,5 @@
 var NAVTREEINDEX4 =
 {
-"idxd_8h.html#a1003dbd55efafcb1ccf2045241a3d715":[15,0,27,23],
-"idxd_8h.html#a13e5209991017f518cfcc95e7d978aff":[15,0,27,21],
-"idxd_8h.html#a1b8466819414ff01486bd5fcbdba90b3":[15,0,27,8],
-"idxd_8h.html#a1f169006ec7e3188b630bbe33cbf46ad":[15,0,27,20],
-"idxd_8h.html#a257b49d3c7123f3b6dbafe43353e3b39":[15,0,27,2],
-"idxd_8h.html#a29321770dd18270ac63feaf7ed1624ae":[15,0,27,5],
-"idxd_8h.html#a37bb396a3e3f26c59da712afab3db993":[15,0,27,7],
-"idxd_8h.html#a4c60a627d58056083567495f0e7cb19e":[15,0,27,13],
-"idxd_8h.html#a4d941aea0b11a77815cfdd10b1c3c22b":[15,0,27,0],
-"idxd_8h.html#a627f2731d0965d9b6a7c8bc317af71eb":[15,0,27,16],
-"idxd_8h.html#a74f5b7dc38344c84bca48f07a83a2621":[15,0,27,17],
 "idxd_8h.html#a75c066c5425700c49f077e20484b50c1":[15,0,27,1],
 "idxd_8h.html#a8ffd7955fde05b71ed84d455bfd67287":[15,0,27,12],
 "idxd_8h.html#aa6e6f3dcce485f4b3b8ba36fe4c03f93":[15,0,27,14],
@@ -249,5 +238,16 @@ var NAVTREEINDEX4 =
 "ioat__spec_8h.html#a1afd40fb951ab6012be748fe7358dd7d":[15,0,31,25],
 "ioat__spec_8h.html#a2decf3e956f98661476efce53a86953b":[15,0,31,43],
 "ioat__spec_8h.html#a368b3bb0d6879bc8b35d500d9d012af3":[15,0,31,13],
-"ioat__spec_8h.html#a36f209d9a4e881b58b0c56b9544693cc":[15,0,31,29]
+"ioat__spec_8h.html#a36f209d9a4e881b58b0c56b9544693cc":[15,0,31,29],
+"ioat__spec_8h.html#a46cf9ae20c6a26978dab7fbfdaef09f7":[15,0,31,47],
+"ioat__spec_8h.html#a574858fc24ea5bfae7eecaa88e2cb3c5":[15,0,31,42],
+"ioat__spec_8h.html#a611ff074a1188af7b1ccf5592145972e":[15,0,31,23],
+"ioat__spec_8h.html#a63a95b4a9941d41b83a393e9075fffdb":[15,0,31,48],
+"ioat__spec_8h.html#a6bebd5cd3ef794485504b79b1573ac8e":[15,0,31,26],
+"ioat__spec_8h.html#a75acf46dfd6a8b07239128d49ec56158":[15,0,31,46],
+"ioat__spec_8h.html#a76b1e3387e204a6cabcd1148bf3af29c":[15,0,31,21],
+"ioat__spec_8h.html#a7bddd4276d66b04e468d82094b5f698b":[15,0,31,12],
+"ioat__spec_8h.html#a7e7e011f4b9bd84a154142569ce4952b":[15,0,31,37],
+"ioat__spec_8h.html#a7fc9ebe4b7ac117f02f0d6cc44993a6c":[15,0,31,39],
+"ioat__spec_8h.html#a8051d3f588a756ec89f6b336836987bf":[15,0,31,20]
 };

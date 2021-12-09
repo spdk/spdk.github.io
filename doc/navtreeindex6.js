@@ -1,16 +1,5 @@
 var NAVTREEINDEX6 =
 {
-"jsonrpc.html#jsonrpc_components_lvol":[3,9,9],
-"jsonrpc.html#jsonrpc_components_nbd":[3,9,10],
-"jsonrpc.html#jsonrpc_components_nvmf_tgt":[3,9,7],
-"jsonrpc.html#jsonrpc_components_sock":[3,9,12],
-"jsonrpc.html#jsonrpc_components_vhost_tgt":[3,9,8],
-"jsonrpc.html#jsonrpc_convert":[3,9,2,1],
-"jsonrpc.html#jsonrpc_error_message":[3,9,1],
-"jsonrpc.html#jsonrpc_generate":[3,9,2,0],
-"jsonrpc.html#jsonrpc_invalid_params":[3,9,1,1],
-"jsonrpc.html#jsonrpc_overview":[3,9,0],
-"jsonrpc.html#jsonrpc_parser_error":[3,9,1,0],
 "jsonrpc.html#notify_get_notifications":[3,9,9,28],
 "jsonrpc.html#rpc_bdev_aio_create":[3,9,5,25],
 "jsonrpc.html#rpc_bdev_aio_delete":[3,9,5,26],
@@ -249,5 +238,16 @@ var NAVTREEINDEX6 =
 "libraries.html":[3,1],
 "libraries.html#conventions":[3,1,1],
 "libraries.html#env_replacement":[3,1,2,2],
-"libraries.html#headers":[3,1,1,0]
+"libraries.html#headers":[3,1,1,0],
+"libraries.html#lib":[3,1,0,0],
+"libraries.html#map":[3,1,1,2],
+"libraries.html#module":[3,1,0,1],
+"libraries.html#naming":[3,1,1,1],
+"libraries.html#shared_objects":[3,1,2],
+"libraries.html#so_linking":[3,1,2,1],
+"libraries.html#static_objects":[3,1,3],
+"libraries.html#structure":[3,1,0],
+"libraries.html#versioning":[3,1,2,0],
+"likely_8h.html":[15,0,35],
+"likely_8h.html#a568e75eb7097ecf9ea2c735abc9f5844":[15,0,35,0]
 };

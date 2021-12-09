@@ -1,16 +1,5 @@
 var NAVTREEINDEX5 =
 {
-"ioat__spec_8h.html#a46cf9ae20c6a26978dab7fbfdaef09f7":[15,0,31,47],
-"ioat__spec_8h.html#a574858fc24ea5bfae7eecaa88e2cb3c5":[15,0,31,42],
-"ioat__spec_8h.html#a611ff074a1188af7b1ccf5592145972e":[15,0,31,23],
-"ioat__spec_8h.html#a63a95b4a9941d41b83a393e9075fffdb":[15,0,31,48],
-"ioat__spec_8h.html#a6bebd5cd3ef794485504b79b1573ac8e":[15,0,31,26],
-"ioat__spec_8h.html#a75acf46dfd6a8b07239128d49ec56158":[15,0,31,46],
-"ioat__spec_8h.html#a76b1e3387e204a6cabcd1148bf3af29c":[15,0,31,21],
-"ioat__spec_8h.html#a7bddd4276d66b04e468d82094b5f698b":[15,0,31,12],
-"ioat__spec_8h.html#a7e7e011f4b9bd84a154142569ce4952b":[15,0,31,37],
-"ioat__spec_8h.html#a7fc9ebe4b7ac117f02f0d6cc44993a6c":[15,0,31,39],
-"ioat__spec_8h.html#a8051d3f588a756ec89f6b336836987bf":[15,0,31,20],
 "ioat__spec_8h.html#a8a577292a762699af2083c4b086de9d7":[15,0,31,36],
 "ioat__spec_8h.html#a8d9a351c468542caf76a44004448b65e":[15,0,31,28],
 "ioat__spec_8h.html#a9185a495ef9770684636989038c9f031":[15,0,31,15],
@@ -249,5 +238,16 @@ var NAVTREEINDEX5 =
 "jsonrpc.html#jsonrpc_components_app":[3,9,3],
 "jsonrpc.html#jsonrpc_components_bdev":[3,9,5],
 "jsonrpc.html#jsonrpc_components_blobfs":[3,9,11],
-"jsonrpc.html#jsonrpc_components_iscsi_tgt":[3,9,6]
+"jsonrpc.html#jsonrpc_components_iscsi_tgt":[3,9,6],
+"jsonrpc.html#jsonrpc_components_lvol":[3,9,9],
+"jsonrpc.html#jsonrpc_components_nbd":[3,9,10],
+"jsonrpc.html#jsonrpc_components_nvmf_tgt":[3,9,7],
+"jsonrpc.html#jsonrpc_components_sock":[3,9,12],
+"jsonrpc.html#jsonrpc_components_vhost_tgt":[3,9,8],
+"jsonrpc.html#jsonrpc_convert":[3,9,2,1],
+"jsonrpc.html#jsonrpc_error_message":[3,9,1],
+"jsonrpc.html#jsonrpc_generate":[3,9,2,0],
+"jsonrpc.html#jsonrpc_invalid_params":[3,9,1,1],
+"jsonrpc.html#jsonrpc_overview":[3,9,0],
+"jsonrpc.html#jsonrpc_parser_error":[3,9,1,0]
 };

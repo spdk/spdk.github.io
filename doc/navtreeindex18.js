@@ -1,16 +1,5 @@
 var NAVTREEINDEX18 =
 {
-"structspdk__gpt__header.html#ae94d375dff9d140708b7d8d4ed36e021":[14,0,73,13],
-"structspdk__gpt__header.html#af82bb3a9b39e405b7f786cd50d56a608":[14,0,73,4],
-"structspdk__gpt__partition__entry.html":[14,0,74],
-"structspdk__gpt__partition__entry.html#a14e1a76354dc7b7e79405a73357151d0":[14,0,74,6],
-"structspdk__gpt__partition__entry.html#a21abaa88f93737d1139db1f75b18e4ca":[14,0,74,2],
-"structspdk__gpt__partition__entry.html#a3320b98cb8581796faaee58ccc26c4ab":[14,0,74,1],
-"structspdk__gpt__partition__entry.html#a43d1cdb9d84c50277025c9bc92e822e7":[14,0,74,9],
-"structspdk__gpt__partition__entry.html#a599b20cdd7340e7e6eb078fd03a49119":[14,0,74,7],
-"structspdk__gpt__partition__entry.html#a8ac5ebf4891dbfdf7a5c00232ff27bb3":[14,0,74,4],
-"structspdk__gpt__partition__entry.html#aa48004de4949638935e791acaa19bf8d":[14,0,74,5],
-"structspdk__gpt__partition__entry.html#ab0333da9d8f795f78b910843f6c7f293":[14,0,74,0],
 "structspdk__gpt__partition__entry.html#aba9bda1cc0f01103da490b738abba2c5":[14,0,74,3],
 "structspdk__gpt__partition__entry.html#ad36eb3f0eca48308d7b797a357b48c97":[14,0,74,8],
 "structspdk__gpt__partition__entry.html#ae461fe91ed53882a1a63d688247436b6":[14,0,74,10],
@@ -249,5 +238,16 @@ var NAVTREEINDEX18 =
 "structspdk__memory__domain__rdma__ctx.html#a654dd3407ba7508102c744552d7267a4":[14,0,97,0],
 "structspdk__memory__domain__rdma__ctx.html#a736eeba37346771009a8cab2d414d489":[14,0,97,1],
 "structspdk__memory__domain__translation__ctx.html":[14,0,98],
-"structspdk__memory__domain__translation__ctx.html#a07cab767e472f43789d9bc9d1b2589f2":[14,0,98,0]
+"structspdk__memory__domain__translation__ctx.html#a07cab767e472f43789d9bc9d1b2589f2":[14,0,98,0],
+"structspdk__memory__domain__translation__ctx.html#a4ef9d4b358a6cf9d2cc54a55b63a59c4":[14,0,98,2],
+"structspdk__memory__domain__translation__ctx.html#a6fd0b551080209779f989479771dce25":[14,0,98,1],
+"structspdk__memory__domain__translation__result.html":[14,0,99],
+"structspdk__memory__domain__translation__result.html#a0e51964ff28af4c63c3f58329e2e402d":[14,0,99,0],
+"structspdk__memory__domain__translation__result.html#a1004de6afe43478344c9f19369178205":[14,0,99,1],
+"structspdk__memory__domain__translation__result.html#a3c7490cb55135ece2eb89ff3e7e51953":[14,0,99,3],
+"structspdk__memory__domain__translation__result.html#a4374433d173b1a1811deb2a0256ea812":[14,0,99,2],
+"structspdk__memory__domain__translation__result.html#aa9bc66afc8c9400561605d0036e4d1e1":[14,0,99,5],
+"structspdk__memory__domain__translation__result.html#aad19b5d1f17f54a504439ae8967c161f":[14,0,99,6],
+"structspdk__memory__domain__translation__result.html#af7565fae3197f2e51dcd6af988e43b90":[14,0,99,7],
+"structspdk__memory__domain__translation__result.html#afb13df3074f7b9e36ba68b9e1fb93b22":[14,0,99,4]
 };
