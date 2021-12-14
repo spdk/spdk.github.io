@@ -103,6 +103,9 @@ v22.01: (Upcoming Release)</h1>
 <p>An new parameter <code>bdev_retry_count</code> is added to the RPC <code>bdev_nvme_set_options</code>.</p>
 <h2>nvme</h2>
 <p>New APIs, <code>spdk_nvme_ctrlr_disconnect</code>, <code>spdk_nvme_ctrlr_reconnect_async</code>, and <code>spdk_nvme_ctrlr_reconnect_poll_async</code>, have been added to improve error recovery, and the existing APIs,<code>spdk_nvme_ctrlr_reset_async</code> and <code>spdk_nvme_ctrlr_reset_poll_async</code> were deprecated.</p>
+<h2>env</h2>
+<p>Added spdk_pci_for_each_device.</p>
+<p>Removed spdk_pci_get_first_device and spdk_pci_get_next_device. These APIs were unsafe, because they did not account for PCI devices being inserted or removed while the caller was using handles returned from these APIs. Existing users of these APIs should switch to spdk_pci_for_each_device instead.</p>
 <h1>v21.10</h1>
 <p>Structure <code><a class="el" href="structspdk__nvmf__target__opts.html">spdk_nvmf_target_opts</a></code> has been extended with new member <code>discovery_filter</code> which allows to specify filtering rules applied during discovery log generation. Refer to <code>enum spdk_nvmf_tgt_discovery_filter</code> for more info.</p>
 <h2>bdev</h2>
@@ -784,7 +787,7 @@ v19.07: NVMe-oF FC Transport, VMD, NVMe-oF Persistent reservations, Bdev I/O wit
 <h2>env</h2>
 <p>The parameter <code>free_space</code> has been added to <a class="el" href="env_8h.html#a96a046de83d31127e79a7b16760b4776" title="Queue the array of objects (with length count) on the ring.">spdk_ring_enqueue()</a> to wait when the ring is almost full and resume when there is enough space available in the ring.</p>
 <p>A new API <code>spdk_mempool_lookup</code> has been added to lookup the memory pool created by the primary process.</p>
-<p>Added <a class="el" href="env_8h.html#ac98526545d85af08018dcbaebca8c49c" title="Begin iterating over enumerated PCI device by calling this function to get the first PCI device.">spdk_pci_get_first_device()</a> and <a class="el" href="env_8h.html#ad5292c669ec570b15694bfd1952f0868" title="Continue iterating over enumerated PCI devices.">spdk_pci_get_next_device()</a> to allow iterating over PCI devices detected by SPDK. Because of this, all SPDK APIs to attach/detach PCI devices are no longer thread safe. They are now meant to be called from only a single thread only, the same only that called <a class="el" href="env_8h.html#a402ca8ae67be57c2c258a7a2bf22cfec" title="Initialize or reinitialize the environment library.">spdk_env_init()</a>. This applies to the newly added APIs as well.</p>
+<p>Added spdk_pci_get_first_device() and spdk_pci_get_next_device() to allow iterating over PCI devices detected by SPDK. Because of this, all SPDK APIs to attach/detach PCI devices are no longer thread safe. They are now meant to be called from only a single thread only, the same only that called <a class="el" href="env_8h.html#a402ca8ae67be57c2c258a7a2bf22cfec" title="Initialize or reinitialize the environment library.">spdk_env_init()</a>. This applies to the newly added APIs as well.</p>
 <h2>vpp</h2>
 <p>SPDK now supports VPP version 19.04.2, up from VPP 18.01.</p>
 <p>VPP socket abstraction now uses VPP Session API, instead of VLC (VPP Communications Library). This allows for better control over sessions and queues. Please see VPP documentation for more details: <a href="https://wiki.fd.io/view/VPP/HostStack">VPP Host Stack</a></p>
@@ -1409,7 +1412,7 @@ v16.06: NVMf userspace target</h1>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
 <ul>
-        <li class="footer">Generated on Mon Dec 13 2021 04:04:38 for SPDK by
+        <li class="footer">Generated on Tue Dec 14 2021 04:04:36 for SPDK by
         <a href="http://www.doxygen.org/index.html">doxygen</a> 1.9.1 </li>
 </ul>
 </div>

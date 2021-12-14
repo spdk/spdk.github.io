@@ -7325,7 +7325,16 @@ spdk_get_version</h2>
 <p>The response is the version number including major version number, minor version number, patch level number and suffix string.</p>
 <h3>Example</h3>
 <p>Example request: ~~ { "jsonrpc": "2.0", "id": 1, "method": "spdk_get_version" } ~~</p>
-<p>Example response: ~~ { "jsonrpc": "2.0", "id": 1, "result": { "version": "19.04-pre", "fields" : { "major": 19, "minor": 4, "patch": 0, "suffix": "-pre" } } } ~~ </p>
+<p>Example response: ~~ { "jsonrpc": "2.0", "id": 1, "result": { "version": "19.04-pre", "fields" : { "major": 19, "minor": 4, "patch": 0, "suffix": "-pre" } } } ~~</p>
+<h2>framework_get_pci_devices</h2>
+<p>List PCIe devices attached to an SPDK application and the contents of their config space.</p>
+<h3>Parameters</h3>
+<p>This method has no parameters.</p>
+<h3>Response</h3>
+<p>The response is an array of attached PCIe devices.</p>
+<h3>Example</h3>
+<p>Example request: ~~ { "jsonrpc": "2.0", "id": 1, "method": "framework_get_pci_devices" } ~~</p>
+<p>Example response: Note that the config space buffer was trimmed. ~~ { "jsonrpc": "2.0", "id": 1, "result": { [ { "address": "0000:00:04.0", "config_space": "8680455807051000...0000000000000000" }, { "address": "0000:00:03.0", "config_space": "8680455807051000...0000000000000000" } ] } } ~~ </p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
@@ -7333,7 +7342,7 @@ spdk_get_version</h2>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
 <ul>
-        <li class="footer">Generated on Mon Dec 13 2021 04:04:38 for SPDK by
+        <li class="footer">Generated on Tue Dec 14 2021 04:04:36 for SPDK by
         <a href="http://www.doxygen.org/index.html">doxygen</a> 1.9.1 </li>
 </ul>
 </div>

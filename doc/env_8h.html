@@ -377,12 +377,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_pci_driver_regis
 <tr class="memitem:a8e2430eaebf3d756c8608aea6957b614"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_8h.html#a8e2430eaebf3d756c8608aea6957b614">spdk_pci_enumerate</a> (struct spdk_pci_driver *driver, <a class="el" href="env_8h.html#a0083aec1c2ac9ae023b744a80160af79">spdk_pci_enum_cb</a> enum_cb, void *enum_ctx)</td></tr>
 <tr class="memdesc:a8e2430eaebf3d756c8608aea6957b614"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enumerate all PCI devices supported by the provided driver and try to attach those that weren't attached yet.  <a href="env_8h.html#a8e2430eaebf3d756c8608aea6957b614">More...</a><br /></td></tr>
 <tr class="separator:a8e2430eaebf3d756c8608aea6957b614"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac98526545d85af08018dcbaebca8c49c"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structspdk__pci__device.html">spdk_pci_device</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_8h.html#ac98526545d85af08018dcbaebca8c49c">spdk_pci_get_first_device</a> (void)</td></tr>
-<tr class="memdesc:ac98526545d85af08018dcbaebca8c49c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Begin iterating over enumerated PCI device by calling this function to get the first PCI device.  <a href="env_8h.html#ac98526545d85af08018dcbaebca8c49c">More...</a><br /></td></tr>
-<tr class="separator:ac98526545d85af08018dcbaebca8c49c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad5292c669ec570b15694bfd1952f0868"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structspdk__pci__device.html">spdk_pci_device</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_8h.html#ad5292c669ec570b15694bfd1952f0868">spdk_pci_get_next_device</a> (struct <a class="el" href="structspdk__pci__device.html">spdk_pci_device</a> *prev)</td></tr>
-<tr class="memdesc:ad5292c669ec570b15694bfd1952f0868"><td class="mdescLeft">&#160;</td><td class="mdescRight">Continue iterating over enumerated PCI devices.  <a href="env_8h.html#ad5292c669ec570b15694bfd1952f0868">More...</a><br /></td></tr>
-<tr class="separator:ad5292c669ec570b15694bfd1952f0868"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4705df2fb00412d72deda48ab9bf088a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_8h.html#a4705df2fb00412d72deda48ab9bf088a">spdk_pci_for_each_device</a> (void *ctx, void(*fn)(void *ctx, struct <a class="el" href="structspdk__pci__device.html">spdk_pci_device</a> *dev))</td></tr>
+<tr class="memdesc:a4705df2fb00412d72deda48ab9bf088a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call the provided function pointer for every enumerated PCI device.  <a href="env_8h.html#a4705df2fb00412d72deda48ab9bf088a">More...</a><br /></td></tr>
+<tr class="separator:a4705df2fb00412d72deda48ab9bf088a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab1964fc8e4bdbe6c8fc3002f063a6747"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_8h.html#ab1964fc8e4bdbe6c8fc3002f063a6747">spdk_pci_device_map_bar</a> (struct <a class="el" href="structspdk__pci__device.html">spdk_pci_device</a> *dev, uint32_t bar, void **mapped_addr, uint64_t *phys_addr, uint64_t *size)</td></tr>
 <tr class="memdesc:ab1964fc8e4bdbe6c8fc3002f063a6747"><td class="mdescLeft">&#160;</td><td class="mdescRight">Map a PCI BAR in the current process.  <a href="env_8h.html#ab1964fc8e4bdbe6c8fc3002f063a6747">More...</a><br /></td></tr>
 <tr class="separator:ab1964fc8e4bdbe6c8fc3002f063a6747"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -3644,6 +3641,43 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_
 
 </div>
 </div>
+<a id="a4705df2fb00412d72deda48ab9bf088a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4705df2fb00412d72deda48ab9bf088a">&#9670;&nbsp;</a></span>spdk_pci_for_each_device()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_pci_for_each_device </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>ctx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void(*)(void *ctx, struct <a class="el" href="structspdk__pci__device.html">spdk_pci_device</a> *dev)&#160;</td>
+          <td class="paramname"><em>fn</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Call the provided function pointer for every enumerated PCI device. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ctx</td><td>Context parameter to pass to fn. </td></tr>
+    <tr><td class="paramname">fn</td><td>Function to call for each PCI device </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a0cedd84c4dbf700c387d8fb6ebc42578"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0cedd84c4dbf700c387d8fb6ebc42578">&#9670;&nbsp;</a></span>spdk_pci_get_driver()</h2>
 
@@ -3700,56 +3734,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Negative errno on failure. 0 for no event. A positive number when an event has been returned </dd></dl>
-
-</div>
-</div>
-<a id="ac98526545d85af08018dcbaebca8c49c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac98526545d85af08018dcbaebca8c49c">&#9670;&nbsp;</a></span>spdk_pci_get_first_device()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">struct <a class="el" href="structspdk__pci__device.html">spdk_pci_device</a>* spdk_pci_get_first_device </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Begin iterating over enumerated PCI device by calling this function to get the first PCI device. </p>
-<p>If there no PCI devices enumerated, return NULL</p>
-<dl class="section return"><dt>Returns</dt><dd>a pointer to a PCI device on success, NULL otherwise. </dd></dl>
-
-</div>
-</div>
-<a id="ad5292c669ec570b15694bfd1952f0868"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad5292c669ec570b15694bfd1952f0868">&#9670;&nbsp;</a></span>spdk_pci_get_next_device()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">struct <a class="el" href="structspdk__pci__device.html">spdk_pci_device</a>* spdk_pci_get_next_device </td>
-          <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structspdk__pci__device.html">spdk_pci_device</a> *&#160;</td>
-          <td class="paramname"><em>prev</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Continue iterating over enumerated PCI devices. </p>
-<p>If no additional PCI devices, return NULL</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">prev</td><td>Previous PCI device returned from <a class="el" href="env_8h.html#ac98526545d85af08018dcbaebca8c49c">spdk_pci_get_first_device</a> or <a class="el" href="env_8h.html#ad5292c669ec570b15694bfd1952f0868">spdk_pci_get_next_device</a></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>a pointer to the next PCI device on success, NULL otherwise. </dd></dl>
 
 </div>
 </div>
@@ -4353,7 +4337,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
 <ul>
-        <li class="footer">Generated on Mon Dec 13 2021 04:04:38 for SPDK by
+        <li class="footer">Generated on Tue Dec 14 2021 04:04:36 for SPDK by
         <a href="http://www.doxygen.org/index.html">doxygen</a> 1.9.1 </li>
 </ul>
 </div>

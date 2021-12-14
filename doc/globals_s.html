@@ -1567,6 +1567,9 @@ $(document).ready(function(){initNavTree('globals_s.html',''); initResizable(); 
 <li>spdk_iovcpy()
 : <a class="el" href="util_8h.html#a4bf38bbd457a764604d5ba26ed3c8565">util.h</a>
 </li>
+<li>spdk_ivdt_dcache
+: <a class="el" href="barrier_8h.html#ad08229e302bb629c373321c8277c7f36">barrier.h</a>
+</li>
 <li>spdk_json_array_first()
 : <a class="el" href="json_8h.html#aabfcbb30424e30c50ab85aae544a73da">json.h</a>
 </li>
@@ -2986,11 +2989,11 @@ $(document).ready(function(){initNavTree('globals_s.html',''); initResizable(); 
 <li>SPDK_NVME_SGLS_NOT_SUPPORTED
 : <a class="el" href="nvme__spec_8h.html#af3e4102cda177c51a05a6bb02fa62b87a5978d5c7ce04a60c9d86b157037cb2f0">nvme_spec.h</a>
 </li>
-<li>SPDK_NVME_SGLS_SUPPORTED
-: <a class="el" href="nvme__spec_8h.html#af3e4102cda177c51a05a6bb02fa62b87ade9828594ce1d9d11427a38182149d9d">nvme_spec.h</a>
-</li>
 <li>spdk_nvme_sgls_supported
 : <a class="el" href="nvme__spec_8h.html#af3e4102cda177c51a05a6bb02fa62b87">nvme_spec.h</a>
+</li>
+<li>SPDK_NVME_SGLS_SUPPORTED
+: <a class="el" href="nvme__spec_8h.html#af3e4102cda177c51a05a6bb02fa62b87ade9828594ce1d9d11427a38182149d9d">nvme_spec.h</a>
 </li>
 <li>SPDK_NVME_SGLS_SUPPORTED_DWORD_ALIGNED
 : <a class="el" href="nvme__spec_8h.html#af3e4102cda177c51a05a6bb02fa62b87a702868f6b85dd329c4baf00642e99fca">nvme_spec.h</a>
@@ -3697,17 +3700,14 @@ $(document).ready(function(){initNavTree('globals_s.html',''); initResizable(); 
 <li>spdk_pci_event_listen()
 : <a class="el" href="env_8h.html#ac0a1b068221b7d1f1a1e2981ec3ba4d4">env.h</a>
 </li>
+<li>spdk_pci_for_each_device()
+: <a class="el" href="env_8h.html#a4705df2fb00412d72deda48ab9bf088a">env.h</a>
+</li>
 <li>spdk_pci_get_driver()
 : <a class="el" href="env_8h.html#a0cedd84c4dbf700c387d8fb6ebc42578">env.h</a>
 </li>
 <li>spdk_pci_get_event()
 : <a class="el" href="env_8h.html#a35497ea1837fa72486971df83005c0a4">env.h</a>
-</li>
-<li>spdk_pci_get_first_device()
-: <a class="el" href="env_8h.html#ac98526545d85af08018dcbaebca8c49c">env.h</a>
-</li>
-<li>spdk_pci_get_next_device()
-: <a class="el" href="env_8h.html#ad5292c669ec570b15694bfd1952f0868">env.h</a>
 </li>
 <li>spdk_pci_hook_device()
 : <a class="el" href="env_8h.html#ac3850938d8aaf6363bd76e690f17de30">env.h</a>
@@ -4529,7 +4529,7 @@ $(document).ready(function(){initNavTree('globals_s.html',''); initResizable(); 
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
 <ul>
-        <li class="footer">Generated on Mon Dec 13 2021 04:04:39 for SPDK by
+        <li class="footer">Generated on Tue Dec 14 2021 04:04:36 for SPDK by
         <a href="http://www.doxygen.org/index.html">doxygen</a> 1.9.1 </li>
 </ul>
 </div>

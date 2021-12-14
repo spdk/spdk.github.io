@@ -1,5 +1,6 @@
 var NAVTREEINDEX3 =
 {
+"event.html#event_component_events":[5,0,1,0],
 "event.html#event_component_pollers":[5,0,1,2],
 "event.html#event_component_reactors":[5,0,1,1],
 "event.html#event_component_shutdown":[5,0,1,4],
@@ -117,8 +118,8 @@ var NAVTREEINDEX3 =
 "globals_defs.html":[15,1,5],
 "globals_enum.html":[15,1,3],
 "globals_eval.html":[15,1,4],
-"globals_func.html":[15,1,1],
 "globals_func.html":[15,1,1,0],
+"globals_func.html":[15,1,1],
 "globals_i.html":[15,1,0,1],
 "globals_l.html":[15,1,0,2],
 "globals_s.html":[15,1,0,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX3 =
 "idxd_8h.html#a37bb396a3e3f26c59da712afab3db993":[15,0,27,7],
 "idxd_8h.html#a4c60a627d58056083567495f0e7cb19e":[15,0,27,13],
 "idxd_8h.html#a4d941aea0b11a77815cfdd10b1c3c22b":[15,0,27,0],
-"idxd_8h.html#a627f2731d0965d9b6a7c8bc317af71eb":[15,0,27,16],
-"idxd_8h.html#a74f5b7dc38344c84bca48f07a83a2621":[15,0,27,17]
+"idxd_8h.html#a627f2731d0965d9b6a7c8bc317af71eb":[15,0,27,16]
 };

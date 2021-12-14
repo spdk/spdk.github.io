@@ -263,6 +263,9 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_json_write_string
 <tr class="memitem:a6be580d5ea07bb5a5456857971c4ef84"><td class="memItemLeft" align="right" valign="top"><a id="a6be580d5ea07bb5a5456857971c4ef84"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_json_write_string_raw</b> (struct spdk_json_write_ctx *w, const char *val, size_t len)</td></tr>
 <tr class="separator:a6be580d5ea07bb5a5456857971c4ef84"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a308fa2793e4472ca8740f23cd66ce64a"><td class="memItemLeft" align="right" valign="top"><a id="a308fa2793e4472ca8740f23cd66ce64a"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_json_write_bytearray</b> (struct spdk_json_write_ctx *w, const void *val, size_t len)</td></tr>
+<tr class="separator:a308fa2793e4472ca8740f23cd66ce64a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6f0f7b255a750c26d300957894c0a093"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="json_8h.html#a6f0f7b255a750c26d300957894c0a093">spdk_json_write_string_utf16le</a> (struct spdk_json_write_ctx *w, const uint16_t *val)</td></tr>
 <tr class="memdesc:a6f0f7b255a750c26d300957894c0a093"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write null-terminated UTF-16LE string.  <a href="json_8h.html#a6f0f7b255a750c26d300957894c0a093">More...</a><br /></td></tr>
 <tr class="separator:a6f0f7b255a750c26d300957894c0a093"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -335,6 +338,9 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_json_write_named_
 <tr class="memitem:a4f3a2705636d6abcfff09a9c2e3dc6cb"><td class="memItemLeft" align="right" valign="top"><a id="a4f3a2705636d6abcfff09a9c2e3dc6cb"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_json_write_named_string_fmt_v</b> (struct spdk_json_write_ctx *w, const char *name, const char *fmt, va_list args)</td></tr>
 <tr class="separator:a4f3a2705636d6abcfff09a9c2e3dc6cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0243b25b04a8f06ea1656c86d7621cf9"><td class="memItemLeft" align="right" valign="top"><a id="a0243b25b04a8f06ea1656c86d7621cf9"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_json_write_named_bytearray</b> (struct spdk_json_write_ctx *w, const char *name, const void *val, size_t len)</td></tr>
+<tr class="separator:a0243b25b04a8f06ea1656c86d7621cf9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad0964a3d06321a53281889c98128244a"><td class="memItemLeft" align="right" valign="top"><a id="ad0964a3d06321a53281889c98128244a"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_json_write_named_array_begin</b> (struct spdk_json_write_ctx *w, const char *name)</td></tr>
 <tr class="separator:ad0964a3d06321a53281889c98128244a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -792,7 +798,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_json_write_named_
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
 <ul>
-        <li class="footer">Generated on Mon Dec 13 2021 04:04:38 for SPDK by
+        <li class="footer">Generated on Tue Dec 14 2021 04:04:36 for SPDK by
         <a href="http://www.doxygen.org/index.html">doxygen</a> 1.9.1 </li>
 </ul>
 </div>

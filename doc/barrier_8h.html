@@ -125,6 +125,10 @@ Macros</h2></td></tr>
 #define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="barrier_8h.html#a07ef3ca027c4f24491ec4114c0e0a727">spdk_smp_mb</a>()&#160;&#160;&#160;_spdk_smp_mb()</td></tr>
 <tr class="memdesc:a07ef3ca027c4f24491ec4114c0e0a727"><td class="mdescLeft">&#160;</td><td class="mdescRight">SMP read/write memory barrier. <br /></td></tr>
 <tr class="separator:a07ef3ca027c4f24491ec4114c0e0a727"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad08229e302bb629c373321c8277c7f36"><td class="memItemLeft" align="right" valign="top"><a id="ad08229e302bb629c373321c8277c7f36"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="barrier_8h.html#ad08229e302bb629c373321c8277c7f36">spdk_ivdt_dcache</a>(pdata)&#160;&#160;&#160;_spdk_ivdt_dcache(pdata)</td></tr>
+<tr class="memdesc:ad08229e302bb629c373321c8277c7f36"><td class="mdescLeft">&#160;</td><td class="mdescRight">Invalidate data cache, input is data pointer. <br /></td></tr>
+<tr class="separator:ad08229e302bb629c373321c8277c7f36"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a69ccad1db5d54559b903ea5eec724897"><td class="memItemLeft" align="right" valign="top"><a id="a69ccad1db5d54559b903ea5eec724897"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>_spdk_rmb</b>()</td></tr>
 <tr class="separator:a69ccad1db5d54559b903ea5eec724897"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -143,6 +147,9 @@ Macros</h2></td></tr>
 <tr class="memitem:a4f528d9af892bd7bb374c794ce318597"><td class="memItemLeft" align="right" valign="top"><a id="a4f528d9af892bd7bb374c794ce318597"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>_spdk_smp_mb</b>()</td></tr>
 <tr class="separator:a4f528d9af892bd7bb374c794ce318597"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a156907a1a7cb926f432375af36a72818"><td class="memItemLeft" align="right" valign="top"><a id="a156907a1a7cb926f432375af36a72818"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>_spdk_ivdt_dcache</b>(pdata)</td></tr>
+<tr class="separator:a156907a1a7cb926f432375af36a72818"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Memory barriers. </p>
@@ -152,7 +159,7 @@ Macros</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
 <ul>
-        <li class="footer">Generated on Mon Dec 13 2021 04:04:38 for SPDK by
+        <li class="footer">Generated on Tue Dec 14 2021 04:04:35 for SPDK by
         <a href="http://www.doxygen.org/index.html">doxygen</a> 1.9.1 </li>
 </ul>
 </div>
