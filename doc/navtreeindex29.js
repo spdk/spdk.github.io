@@ -1,5 +1,6 @@
 var NAVTREEINDEX29 =
 {
+"unionspdk__nvme__feat__non__operational__power__state__config.html#a8f512d6ffa8611e38141e169898efb4b":[14,0,141,1],
 "unionspdk__nvme__feat__number__of__queues.html":[14,0,142],
 "unionspdk__nvme__feat__number__of__queues.html#a1b5d07026b4a693be3ee59308ca17d93":[14,0,142,0],
 "unionspdk__nvme__feat__number__of__queues.html#a333d356ec56d5cbbc18d680c17f8eb44":[14,0,142,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX29 =
 "vmd.html#vmd_led":[7,4,7],
 "vmd.html#vmd_toc":[7,4,0],
 "vmd_8h.html":[15,0,64],
-"vmd_8h.html#a290d82c8bf3daf4a4d9b8aa414142e2f":[15,0,64,4],
-"vmd_8h.html#a302cba203fd0abdafd3729c34822c3f3":[15,0,64,3]
+"vmd_8h.html#a290d82c8bf3daf4a4d9b8aa414142e2f":[15,0,64,4]
 };

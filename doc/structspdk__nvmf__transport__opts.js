@@ -1,6 +1,7 @@
 var structspdk__nvmf__transport__opts =
 [
     [ "abort_timeout_sec", "structspdk__nvmf__transport__opts.html#a2da208b1331d736622c84eb575ef48b9", null ],
+    [ "acceptor_poll_rate", "structspdk__nvmf__transport__opts.html#aaf76326ff42285ca5f129d173670b9c2", null ],
     [ "association_timeout", "structspdk__nvmf__transport__opts.html#a84d1741f0b23e6b519085a4efc2b18c9", null ],
     [ "buf_cache_size", "structspdk__nvmf__transport__opts.html#aa4f37cf3674a2bf984fdb9b63cc30223", null ],
     [ "dif_insert_or_strip", "structspdk__nvmf__transport__opts.html#a2b6ff1cfeceb9e5543a8c44d0aded628", null ],

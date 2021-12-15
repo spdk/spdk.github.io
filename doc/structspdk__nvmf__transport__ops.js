@@ -1,6 +1,5 @@
 var structspdk__nvmf__transport__ops =
 [
-    [ "accept", "structspdk__nvmf__transport__ops.html#a7ae5eeb06fa51027664459a492154f43", null ],
     [ "cdata_init", "structspdk__nvmf__transport__ops.html#ad85e8fada80fc3301d5adc2ba909e312", null ],
     [ "create", "structspdk__nvmf__transport__ops.html#a1c70d537837f405619d127ea6a926694", null ],
     [ "destroy", "structspdk__nvmf__transport__ops.html#add528f11c2846f57ced92a3da9457bd5", null ],
