@@ -86,6 +86,7 @@ $(document).ready(function(){initNavTree('util_8h.html',''); initResizable(); })
 
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Data Structures</a> &#124;
 <a href="#define-members">Macros</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
@@ -96,6 +97,12 @@ $(document).ready(function(){initNavTree('util_8h.html',''); initResizable(); })
 <p>General utility functions.  
 <a href="#details">More...</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Data Structures</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__ioviter.html">spdk_ioviter</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">An iovec iterator.  <a href="structspdk__ioviter.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
 <tr class="memitem:afb0c0f2282517becd79ba3f60768b6c4"><td class="memItemLeft" align="right" valign="top"><a id="afb0c0f2282517becd79ba3f60768b6c4"></a>
@@ -167,6 +174,12 @@ static uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_divid
 <tr class="memitem:a4bf38bbd457a764604d5ba26ed3c8565"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8h.html#a4bf38bbd457a764604d5ba26ed3c8565">spdk_iovcpy</a> (struct iovec *siov, size_t siovcnt, struct iovec *diov, size_t diovcnt)</td></tr>
 <tr class="memdesc:a4bf38bbd457a764604d5ba26ed3c8565"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy the data described by the source iovec to the destination iovec.  <a href="util_8h.html#a4bf38bbd457a764604d5ba26ed3c8565">More...</a><br /></td></tr>
 <tr class="separator:a4bf38bbd457a764604d5ba26ed3c8565"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac49e02ee794f8dc5048934504023d6d5"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8h.html#ac49e02ee794f8dc5048934504023d6d5">spdk_ioviter_first</a> (struct <a class="el" href="structspdk__ioviter.html">spdk_ioviter</a> *iter, struct iovec *siov, size_t siovcnt, struct iovec *diov, size_t diovcnt, void **src, void **dst)</td></tr>
+<tr class="memdesc:ac49e02ee794f8dc5048934504023d6d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize and move to the first common segment of the two given iovecs.  <a href="util_8h.html#ac49e02ee794f8dc5048934504023d6d5">More...</a><br /></td></tr>
+<tr class="separator:ac49e02ee794f8dc5048934504023d6d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0bbb80ad35ccd2da128fa69acedd2d90"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8h.html#a0bbb80ad35ccd2da128fa69acedd2d90">spdk_ioviter_next</a> (struct <a class="el" href="structspdk__ioviter.html">spdk_ioviter</a> *iter, void **src, void **dst)</td></tr>
+<tr class="memdesc:a0bbb80ad35ccd2da128fa69acedd2d90"><td class="mdescLeft">&#160;</td><td class="mdescRight">Move to the next segment in the iterator.  <a href="util_8h.html#a0bbb80ad35ccd2da128fa69acedd2d90">More...</a><br /></td></tr>
+<tr class="separator:a0bbb80ad35ccd2da128fa69acedd2d90"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9d8a81dd9f89050cdc2de023d10f1d31"><td class="memItemLeft" align="right" valign="top">static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8h.html#a9d8a81dd9f89050cdc2de023d10f1d31">spdk_sn32_add</a> (uint32_t s1, uint32_t s2)</td></tr>
 <tr class="memdesc:a9d8a81dd9f89050cdc2de023d10f1d31"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add two sequence numbers s1 and s2.  <a href="util_8h.html#a9d8a81dd9f89050cdc2de023d10f1d31">More...</a><br /></td></tr>
 <tr class="separator:a9d8a81dd9f89050cdc2de023d10f1d31"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -330,6 +343,104 @@ static uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_divid
 
 </div>
 </div>
+<a id="ac49e02ee794f8dc5048934504023d6d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac49e02ee794f8dc5048934504023d6d5">&#9670;&nbsp;</a></span>spdk_ioviter_first()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t spdk_ioviter_first </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structspdk__ioviter.html">spdk_ioviter</a> *&#160;</td>
+          <td class="paramname"><em>iter</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct iovec *&#160;</td>
+          <td class="paramname"><em>siov</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>siovcnt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct iovec *&#160;</td>
+          <td class="paramname"><em>diov</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>diovcnt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void **&#160;</td>
+          <td class="paramname"><em>src</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void **&#160;</td>
+          <td class="paramname"><em>dst</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Initialize and move to the first common segment of the two given iovecs. </p>
+<p>See <a class="el" href="util_8h.html#a0bbb80ad35ccd2da128fa69acedd2d90" title="Move to the next segment in the iterator.">spdk_ioviter_next()</a>. </p>
+
+</div>
+</div>
+<a id="a0bbb80ad35ccd2da128fa69acedd2d90"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0bbb80ad35ccd2da128fa69acedd2d90">&#9670;&nbsp;</a></span>spdk_ioviter_next()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t spdk_ioviter_next </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structspdk__ioviter.html">spdk_ioviter</a> *&#160;</td>
+          <td class="paramname"><em>iter</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void **&#160;</td>
+          <td class="paramname"><em>src</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void **&#160;</td>
+          <td class="paramname"><em>dst</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Move to the next segment in the iterator. </p>
+<p>This will iterate through the segments of the source and destination and return the individual segments, one by one. For example, if the source consists of one element of length 4k and the destination consists of 4 elements each of length 1k, this function will return 4 1k src+dst pairs of buffers, and then return 0 bytes to indicate the iteration is complete on the fifth call. </p>
+
+</div>
+</div>
 <a id="a9d8a81dd9f89050cdc2de023d10f1d31"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9d8a81dd9f89050cdc2de023d10f1d31">&#9670;&nbsp;</a></span>spdk_sn32_add()</h2>
 
@@ -474,7 +585,7 @@ static uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_divid
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
 <ul>
-        <li class="footer">Generated on Thu Dec 16 2021 04:04:38 for SPDK by
+        <li class="footer">Generated on Fri Dec 17 2021 04:04:34 for SPDK by
         <a href="http://www.doxygen.org/index.html">doxygen</a> 1.9.1 </li>
 </ul>
 </div>

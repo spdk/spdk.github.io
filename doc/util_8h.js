@@ -1,5 +1,6 @@
 var util_8h =
 [
+    [ "spdk_ioviter", "structspdk__ioviter.html", "structspdk__ioviter" ],
     [ "SPDK_ALIGN_CEIL", "util_8h.html#a61bd4178f177cf2265279944b0184fcd", null ],
     [ "SPDK_ALIGN_FLOOR", "util_8h.html#a4fe89df2bed54dcdc8b0d33c53a694b6", null ],
     [ "SPDK_CACHE_LINE_SIZE", "util_8h.html#afb0c0f2282517becd79ba3f60768b6c4", null ],
@@ -17,6 +18,8 @@ var util_8h =
     [ "spdk_align64pow2", "util_8h.html#a23a7b8dc5a8b680176bac1c7bd384406", null ],
     [ "spdk_divide_round_up", "util_8h.html#a3a1ed8f80bbc8e22d1f778a6615512e7", null ],
     [ "spdk_iovcpy", "util_8h.html#a4bf38bbd457a764604d5ba26ed3c8565", null ],
+    [ "spdk_ioviter_first", "util_8h.html#ac49e02ee794f8dc5048934504023d6d5", null ],
+    [ "spdk_ioviter_next", "util_8h.html#a0bbb80ad35ccd2da128fa69acedd2d90", null ],
     [ "spdk_sn32_add", "util_8h.html#a9d8a81dd9f89050cdc2de023d10f1d31", null ],
     [ "spdk_sn32_gt", "util_8h.html#a3d7841db36c180f3fcac21e2314e2ef2", null ],
     [ "spdk_sn32_lt", "util_8h.html#a731ba4d3d89bf3d1c31c3e6481fc07b7", null ],
