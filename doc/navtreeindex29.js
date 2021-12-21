@@ -1,5 +1,7 @@
 var NAVTREEINDEX29 =
 {
+"unionspdk__nvme__feat__keep__alive__timer.html":[14,0,140],
+"unionspdk__nvme__feat__keep__alive__timer.html#a1295377c1ebb2b62c58d29e43047827e":[14,0,140,1],
 "unionspdk__nvme__feat__keep__alive__timer.html#a7c599511b0fadaa2d2981c298bed2733":[14,0,140,0],
 "unionspdk__nvme__feat__keep__alive__timer.html#ac10f9a57ae75a0b0436117dcc6dbb913":[14,0,140,2],
 "unionspdk__nvme__feat__lba__range__type.html":[14,0,141],
@@ -247,7 +249,5 @@ var NAVTREEINDEX29 =
 "vhost_processing.html#vhost_processing_intro":[2,5,1],
 "vhost_processing.html#vhost_processing_io_path":[2,5,4],
 "vhost_processing.html#vhost_processing_qemu":[2,5,2],
-"vhost_processing.html#vhost_processing_toc":[2,5,0],
-"vhost_processing.html#vhost_spdk_optimizations":[2,5,4,0],
-"virtio.html":[7,3]
+"vhost_processing.html#vhost_processing_toc":[2,5,0]
 };

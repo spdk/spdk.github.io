@@ -1,5 +1,7 @@
 var NAVTREEINDEX30 =
 {
+"vhost_processing.html#vhost_spdk_optimizations":[2,5,4,0],
+"virtio.html":[7,3],
 "virtio.html#virtio_2mb":[7,3,1],
 "virtio.html#virtio_intro":[7,3,0],
 "vmd.html":[7,4],

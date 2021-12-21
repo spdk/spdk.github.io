@@ -386,9 +386,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ae261eff09a7b8e6d14d2710c169b17df"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#ae261eff09a7b8e6d14d2710c169b17df">spdk_nvmf_transport_stop_listen</a> (struct <a class="el" href="structspdk__nvmf__transport.html">spdk_nvmf_transport</a> *transport, const struct <a class="el" href="structspdk__nvme__transport__id.html">spdk_nvme_transport_id</a> *trid)</td></tr>
 <tr class="memdesc:ae261eff09a7b8e6d14d2710c169b17df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove listener from transport and stop accepting new connections.  <a href="nvmf_8h.html#ae261eff09a7b8e6d14d2710c169b17df">More...</a><br /></td></tr>
 <tr class="separator:ae261eff09a7b8e6d14d2710c169b17df"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8f456c0ef4f8b11aef74df3ea98fdf9d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#a8f456c0ef4f8b11aef74df3ea98fdf9d">spdk_nvmf_transport_stop_listen_async</a> (struct <a class="el" href="structspdk__nvmf__transport.html">spdk_nvmf_transport</a> *transport, const struct <a class="el" href="structspdk__nvme__transport__id.html">spdk_nvme_transport_id</a> *trid, <a class="el" href="nvmf_8h.html#aad52ac090dcb26b03da0e689ea71df89">spdk_nvmf_tgt_subsystem_listen_done_fn</a> cb_fn, void *cb_arg)</td></tr>
-<tr class="memdesc:a8f456c0ef4f8b11aef74df3ea98fdf9d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stop accepting new connections at the provided address.  <a href="nvmf_8h.html#a8f456c0ef4f8b11aef74df3ea98fdf9d">More...</a><br /></td></tr>
-<tr class="separator:a8f456c0ef4f8b11aef74df3ea98fdf9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51c3554ddcd16dc80f8d016c9d5d7c9f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#a51c3554ddcd16dc80f8d016c9d5d7c9f">spdk_nvmf_transport_stop_listen_async</a> (struct <a class="el" href="structspdk__nvmf__transport.html">spdk_nvmf_transport</a> *transport, const struct <a class="el" href="structspdk__nvme__transport__id.html">spdk_nvme_transport_id</a> *trid, struct spdk_nvmf_subsystem *subsystem, <a class="el" href="nvmf_8h.html#aad52ac090dcb26b03da0e689ea71df89">spdk_nvmf_tgt_subsystem_listen_done_fn</a> cb_fn, void *cb_arg)</td></tr>
+<tr class="memdesc:a51c3554ddcd16dc80f8d016c9d5d7c9f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stop accepting new connections at the provided address.  <a href="nvmf_8h.html#a51c3554ddcd16dc80f8d016c9d5d7c9f">More...</a><br /></td></tr>
+<tr class="separator:a51c3554ddcd16dc80f8d016c9d5d7c9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aba3584185c147f5b10cf8c2e2b3fa181"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#aba3584185c147f5b10cf8c2e2b3fa181">spdk_nvmf_poll_group_dump_stat</a> (struct <a class="el" href="structspdk__nvmf__poll__group.html">spdk_nvmf_poll_group</a> *group, struct spdk_json_write_ctx *w)</td></tr>
 <tr class="memdesc:aba3584185c147f5b10cf8c2e2b3fa181"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dump poll group statistics into JSON.  <a href="nvmf_8h.html#aba3584185c147f5b10cf8c2e2b3fa181">More...</a><br /></td></tr>
 <tr class="separator:aba3584185c147f5b10cf8c2e2b3fa181"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -459,7 +459,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Function to be called once asynchronous listen add and remove operations are completed. </p>
-<p>See <a class="el" href="nvmf_8h.html#a96ece790c05df3a1f410ef617b2e5cb4" title="Accept new connections on the address provided.">spdk_nvmf_subsystem_add_listener()</a> and <a class="el" href="nvmf_8h.html#a8f456c0ef4f8b11aef74df3ea98fdf9d" title="Stop accepting new connections at the provided address.">spdk_nvmf_transport_stop_listen_async()</a>.</p>
+<p>See <a class="el" href="nvmf_8h.html#a96ece790c05df3a1f410ef617b2e5cb4" title="Accept new connections on the address provided.">spdk_nvmf_subsystem_add_listener()</a> and <a class="el" href="nvmf_8h.html#a51c3554ddcd16dc80f8d016c9d5d7c9f" title="Stop accepting new connections at the provided address.">spdk_nvmf_transport_stop_listen_async()</a>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">ctx</td><td>Context argument passed to this function. </td></tr>
@@ -3307,8 +3307,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a8f456c0ef4f8b11aef74df3ea98fdf9d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8f456c0ef4f8b11aef74df3ea98fdf9d">&#9670;&nbsp;</a></span>spdk_nvmf_transport_stop_listen_async()</h2>
+<a id="a51c3554ddcd16dc80f8d016c9d5d7c9f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a51c3554ddcd16dc80f8d016c9d5d7c9f">&#9670;&nbsp;</a></span>spdk_nvmf_transport_stop_listen_async()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3324,6 +3324,12 @@ Functions</h2></td></tr>
           <td></td>
           <td class="paramtype">const struct <a class="el" href="structspdk__nvme__transport__id.html">spdk_nvme_transport_id</a> *&#160;</td>
           <td class="paramname"><em>trid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct spdk_nvmf_subsystem *&#160;</td>
+          <td class="paramname"><em>subsystem</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -3346,11 +3352,12 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Stop accepting new connections at the provided address. </p>
-<p>This is a counterpart to <a class="el" href="nvmf_8h.html#a82f711797bfc4bc5abf9264daf53b1ef" title="Begin accepting new connections at the address provided.">spdk_nvmf_tgt_listen_ext()</a>. It differs from <a class="el" href="nvmf_8h.html#ae261eff09a7b8e6d14d2710c169b17df" title="Remove listener from transport and stop accepting new connections.">spdk_nvmf_transport_stop_listen()</a> in that it also destroys all qpairs that are connected to the specified listener. Because this function disconnects the qpairs, it has to be asynchronous.</p>
+<p>This is a counterpart to <a class="el" href="nvmf_8h.html#a82f711797bfc4bc5abf9264daf53b1ef" title="Begin accepting new connections at the address provided.">spdk_nvmf_tgt_listen_ext()</a>. It differs from <a class="el" href="nvmf_8h.html#ae261eff09a7b8e6d14d2710c169b17df" title="Remove listener from transport and stop accepting new connections.">spdk_nvmf_transport_stop_listen()</a> in that it also destroys qpairs that are connected to the specified listener. Because this function disconnects the qpairs, it has to be asynchronous.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">transport</td><td>The transport associated with the listen address. </td></tr>
     <tr><td class="paramname">trid</td><td>The address to stop listening at. </td></tr>
+    <tr><td class="paramname">subsystem</td><td>The subsystem to match for qpairs with the specified trid. If NULL, it will disconnect all qpairs with the specified trid. </td></tr>
     <tr><td class="paramname">cb_fn</td><td>The function to call on completion. </td></tr>
     <tr><td class="paramname">cb_arg</td><td>The argument to pass to the cb_fn.</td></tr>
   </table>
@@ -3366,7 +3373,7 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
 <ul>
-        <li class="footer">Generated on Mon Dec 20 2021 04:04:34 for SPDK by
+        <li class="footer">Generated on Tue Dec 21 2021 04:04:36 for SPDK by
         <a href="http://www.doxygen.org/index.html">doxygen</a> 1.9.1 </li>
 </ul>
 </div>

@@ -193,6 +193,9 @@ typedef bool(*&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_p
 <tr class="memitem:a53fe1c01a447be8fcd29821a668227a0"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a53fe1c01a447be8fcd29821a668227a0">spdk_nvme_timeout_cb</a>) (void *cb_arg, struct spdk_nvme_ctrlr *ctrlr, struct spdk_nvme_qpair *qpair, uint16_t cid)</td></tr>
 <tr class="memdesc:a53fe1c01a447be8fcd29821a668227a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Signature for the callback function invoked when a timeout is detected on a request.  <a href="nvme_8h.html#a53fe1c01a447be8fcd29821a668227a0">More...</a><br /></td></tr>
 <tr class="separator:a53fe1c01a447be8fcd29821a668227a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e4bc7c0002363701bc9363ab2291e6e"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a4e4bc7c0002363701bc9363ab2291e6e">spdk_nvme_discovery_cb</a>) (void *cb_arg, int rc, const struct <a class="el" href="structspdk__nvme__cpl.html">spdk_nvme_cpl</a> *cpl, struct <a class="el" href="structspdk__nvmf__discovery__log__page.html">spdk_nvmf_discovery_log_page</a> *log_page)</td></tr>
+<tr class="memdesc:a4e4bc7c0002363701bc9363ab2291e6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Signature for the callback function when a <a class="el" href="nvme_8h.html#a87a228bf5b96e89305e52721d81920d7">spdk_nvme_ctrlr_get_discovery_log_page</a> operation is completed.  <a href="nvme_8h.html#a4e4bc7c0002363701bc9363ab2291e6e">More...</a><br /></td></tr>
+<tr class="separator:a4e4bc7c0002363701bc9363ab2291e6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:add892b5eaa7208ca3b08382431713390"><td class="memItemLeft" align="right" valign="top"><a id="add892b5eaa7208ca3b08382431713390"></a>
 typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#add892b5eaa7208ca3b08382431713390">spdk_nvme_disconnected_qpair_cb</a>) (struct spdk_nvme_qpair *qpair, void *poll_group_ctx)</td></tr>
 <tr class="memdesc:add892b5eaa7208ca3b08382431713390"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function alerts the user to disconnected qpairs when calling spdk_nvme_poll_group_process_completions. <br /></td></tr>
@@ -434,6 +437,9 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_trty
 <tr class="memitem:ae2957853179526e6176cf7623b19552b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#ae2957853179526e6176cf7623b19552b">spdk_nvme_ctrlr_register_timeout_callback</a> (struct spdk_nvme_ctrlr *ctrlr, uint64_t timeout_io_us, uint64_t timeout_admin_us, <a class="el" href="nvme_8h.html#a53fe1c01a447be8fcd29821a668227a0">spdk_nvme_timeout_cb</a> cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:ae2957853179526e6176cf7623b19552b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register for timeout callback on a controller.  <a href="nvme_8h.html#ae2957853179526e6176cf7623b19552b">More...</a><br /></td></tr>
 <tr class="separator:ae2957853179526e6176cf7623b19552b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87a228bf5b96e89305e52721d81920d7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a87a228bf5b96e89305e52721d81920d7">spdk_nvme_ctrlr_get_discovery_log_page</a> (struct spdk_nvme_ctrlr *ctrlr, <a class="el" href="nvme_8h.html#a4e4bc7c0002363701bc9363ab2291e6e">spdk_nvme_discovery_cb</a> cb_fn, void *cb_arg)</td></tr>
+<tr class="memdesc:a87a228bf5b96e89305e52721d81920d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a full discovery log page from the specified controller.  <a href="nvme_8h.html#a87a228bf5b96e89305e52721d81920d7">More...</a><br /></td></tr>
+<tr class="separator:a87a228bf5b96e89305e52721d81920d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6964d09dc51882fae6f2a7cf94afc741"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a6964d09dc51882fae6f2a7cf94afc741">spdk_nvme_ctrlr_get_default_io_qpair_opts</a> (struct spdk_nvme_ctrlr *ctrlr, struct <a class="el" href="structspdk__nvme__io__qpair__opts.html">spdk_nvme_io_qpair_opts</a> *opts, size_t opts_size)</td></tr>
 <tr class="memdesc:a6964d09dc51882fae6f2a7cf94afc741"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the default options for I/O qpair creation for a specific NVMe controller.  <a href="nvme_8h.html#a6964d09dc51882fae6f2a7cf94afc741">More...</a><br /></td></tr>
 <tr class="separator:a6964d09dc51882fae6f2a7cf94afc741"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -916,6 +922,31 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_trty
   <table class="params">
     <tr><td class="paramname">ctx</td><td>Callback context provided when the command was submitted. </td></tr>
     <tr><td class="paramname">cpl</td><td>Completion queue entry that contains the completion status. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a4e4bc7c0002363701bc9363ab2291e6e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e4bc7c0002363701bc9363ab2291e6e">&#9670;&nbsp;</a></span>spdk_nvme_discovery_cb</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void(* spdk_nvme_discovery_cb) (void *cb_arg, int rc, const struct <a class="el" href="structspdk__nvme__cpl.html">spdk_nvme_cpl</a> *cpl, struct <a class="el" href="structspdk__nvmf__discovery__log__page.html">spdk_nvmf_discovery_log_page</a> *log_page)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Signature for the callback function when a <a class="el" href="nvme_8h.html#a87a228bf5b96e89305e52721d81920d7">spdk_nvme_ctrlr_get_discovery_log_page</a> operation is completed. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cb_arg</td><td>Argument passed to callback function. </td></tr>
+    <tr><td class="paramname">rc</td><td>Status of operation. 0 means success, and that the cpl argument is valid. Failure indicated by negative errno value. </td></tr>
+    <tr><td class="paramname">cpl</td><td>NVMe completion status of the operation. NULL if rc != 0. If multiple completions with error status occurred during the operation, the cpl value for the first error will be used here. </td></tr>
+    <tr><td class="paramname">log_page</td><td>Pointer to the full discovery log page. The application is responsible for freeing this buffer using free(). </td></tr>
   </table>
   </dd>
 </dl>
@@ -3209,6 +3240,52 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_trty
     <tr><td class="paramdir"></td><td class="paramname">ctrlr</td><td>NVMe controller to retrieve the defaults from. </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">opts</td><td>Will be filled with the default options for <a class="el" href="nvme_8h.html#a13f745d239dab9b8f934fae2ad4984a2" title="Allocate an I/O queue pair (submission and completion queue).">spdk_nvme_ctrlr_alloc_io_qpair()</a>. </td></tr>
     <tr><td class="paramdir"></td><td class="paramname">opts_size</td><td>Must be set to sizeof(struct spdk_nvme_io_qpair_opts). </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a87a228bf5b96e89305e52721d81920d7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a87a228bf5b96e89305e52721d81920d7">&#9670;&nbsp;</a></span>spdk_nvme_ctrlr_get_discovery_log_page()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_nvme_ctrlr_get_discovery_log_page </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_nvme_ctrlr *&#160;</td>
+          <td class="paramname"><em>ctrlr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="nvme_8h.html#a4e4bc7c0002363701bc9363ab2291e6e">spdk_nvme_discovery_cb</a>&#160;</td>
+          <td class="paramname"><em>cb_fn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>cb_arg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get a full discovery log page from the specified controller. </p>
+<p>This function will first read the discovery log header to determine the total number of valid entries in the discovery log, then it will allocate a buffer to hold the entire log and issue multiple GET_LOG_PAGE commands to get all of the entries.</p>
+<p>The application is responsible for calling <a class="el" href="nvme_8h.html#a10282695461985f58f54de022911745e">spdk_nvme_ctrlr_process_admin_completions</a> to trigger processing of completions submitted by this function.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ctrlr</td><td>Pointer to the discovery controller. </td></tr>
+    <tr><td class="paramname">cb_fn</td><td>Function to call when the operation is complete. </td></tr>
+    <tr><td class="paramname">cb_arg</td><td>Argument to pass to cb_fn. </td></tr>
   </table>
   </dd>
 </dl>
@@ -9253,7 +9330,7 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_trty
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
 <ul>
-        <li class="footer">Generated on Mon Dec 20 2021 04:04:34 for SPDK by
+        <li class="footer">Generated on Tue Dec 21 2021 04:04:36 for SPDK by
         <a href="http://www.doxygen.org/index.html">doxygen</a> 1.9.1 </li>
 </ul>
 </div>

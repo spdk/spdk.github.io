@@ -98,5 +98,5 @@ var nvmf_8h =
     [ "spdk_nvmf_transport_listen", "nvmf_8h.html#aab4a5e4fcd04e30ea3fe4c079e4d9a3a", null ],
     [ "spdk_nvmf_transport_opts_init", "nvmf_8h.html#a8e8e8b2a3f7a8d4b8ab52e1beef87ab0", null ],
     [ "spdk_nvmf_transport_stop_listen", "nvmf_8h.html#ae261eff09a7b8e6d14d2710c169b17df", null ],
-    [ "spdk_nvmf_transport_stop_listen_async", "nvmf_8h.html#a8f456c0ef4f8b11aef74df3ea98fdf9d", null ]
+    [ "spdk_nvmf_transport_stop_listen_async", "nvmf_8h.html#a51c3554ddcd16dc80f8d016c9d5d7c9f", null ]
 ];
