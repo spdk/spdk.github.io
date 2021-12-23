@@ -128,9 +128,6 @@ Vhost Command Line Parameters</h2>
 <div class="fragment"><div class="line">qemu-system-x86_64 -device vhost-user-scsi-pci,help</div>
 </div><!-- fragment --><p>Userspace vhost-blk target support was added to upstream QEMU in v2.12.0. Run the following command to confirm your QEMU supports userspace vhost-blk.</p>
 <div class="fragment"><div class="line">qemu-system-x86_64 -device vhost-user-blk-pci,help</div>
-</div><!-- fragment --><p>Userspace vhost-nvme target was added as experimental feature for SPDK 18.04 release, patches for QEMU are available in SPDK's QEMU repository only.</p>
-<p>Run the following command to confirm your QEMU supports userspace vhost-nvme.</p>
-<div class="fragment"><div class="line">qemu-system-x86_64 -device vhost-user-nvme,help</div>
 </div><!-- fragment --><h1><a class="anchor" id="vhost_start"></a>
 Starting SPDK vhost target</h1>
 <p>First, run the SPDK setup.sh script to setup some hugepages for the SPDK vhost target application. This will allocate 4096MiB (4GiB) of hugepages, enough for the SPDK vhost target and the virtual machine.</p>
@@ -261,8 +258,6 @@ Hot-attach/hot-detach</h2>
 <div class="fragment"><div class="line">scripts/rpc.py bdev_malloc_delete Malloc0</div>
 </div><!-- fragment --><h1><a class="anchor" id="vhost_bugs"></a>
 Known bugs and limitations</h1>
-<h2>Vhost-NVMe (experimental) can only be supported with latest Linux kernel</h2>
-<p>Vhost-NVMe target was designed for one new feature of NVMe 1.3 specification, Doorbell Buffer Config Admin command, which is used for emulated NVMe controller only. Linux 4.12 added this feature, so a new Guest kernel later than 4.12 is required to test this feature.</p>
 <h2>Windows virtio-blk driver before version 0.1.130-1 only works with 512-byte sectors</h2>
 <p>The Windows <code>viostor</code> driver before version 0.1.130-1 is buggy and does not correctly support vhost-blk devices with non-512-byte block size. See the <a href="https://bugzilla.redhat.com/show_bug.cgi?id=1411092">bug report</a> for more information.</p>
 <h2>QEMU vhost-user-blk</h2>
@@ -274,7 +269,7 @@ Known bugs and limitations</h1>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
 <ul>
-        <li class="footer">Generated on Wed Dec 22 2021 04:04:38 for SPDK by
+        <li class="footer">Generated on Thu Dec 23 2021 04:04:36 for SPDK by
         <a href="http://www.doxygen.org/index.html">doxygen</a> 1.9.1 </li>
 </ul>
 </div>
