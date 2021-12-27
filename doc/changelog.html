@@ -376,7 +376,7 @@ v22.01: (Upcoming Release)</h1>
 <p>Broadcom FC LLD driver and SPDK NVMe-oF FC transport consolidated one LLD API, <code>nvmf_fc_init_poller_queues</code> into another LLD API <code>nvmf_fc_init_q</code>. Hence updating Broadcom FC LLD driver to the latest is required.</p>
 <p>The functions <code>destroy</code> and <code>qpair_fini</code> in the transport interface now accept a <code>cb_fn</code> and <code>cb_arg</code> to call upon completion, and their execution can be asynchronous.</p>
 <p>The SPDK NVMe-oF target now supports async event notification for discovery log changes. This allows the initiator to create persistent connection to discovery controller and be notified of any discovery log changes.</p>
-<p>An <code>opts_size</code> element was added in the <code><a class="el" href="structspdk__nvmf__transport__opts.html">spdk_nvmf_transport_opts</a></code> structure to solve the ABI compatiblity issue between different SPDK version. And also add <code>opts_size</code> parameter in <code>spdk_nvmf_transport_opts_init</code> function.</p>
+<p>An <code>opts_size</code> element was added in the <code><a class="el" href="structspdk__nvmf__transport__opts.html">spdk_nvmf_transport_opts</a></code> structure to solve the ABI compatibility issue between different SPDK version. And also add <code>opts_size</code> parameter in <code>spdk_nvmf_transport_opts_init</code> function.</p>
 <p>Added a new custom vfio-user transport implementation in NVMe-oF which can provide emulated NVMe devices to QEMU and SPDK NVMe driver.</p>
 <p>Added new API <code>spdk_nvmf_tgt_listen_ext</code> that uses <code><a class="el" href="structspdk__nvmf__listen__opts.html">spdk_nvmf_listen_opts</a></code> to allow passing generic options to specific transport. This functionality replaces one provided with <code>nvmf_subsystem_set_options</code>. Also removed <code>nvmf_subsystem_set_options</code> RPC that allowed transport specific options within subsystem.</p>
 <p>The <code>trsvcid</code> in <code>nvmf_subsystem_add_listener</code> RPC is now optional.</p>
@@ -472,9 +472,9 @@ v20.07: SPDK CSI driver, new accel_fw commands, I/O abort support</h1>
 <h2>accel</h2>
 <p>A new API was added <code>spdk_accel_get_capabilities</code> that allows applications to query the capabilities of the currently enabled accel engine back-end.</p>
 <p>A new capability, CRC-32C, was added via <code>spdk_accel_submit_crc32c</code>.</p>
-<p>The software accel engine implemenation has added support for CRC-32C.</p>
+<p>The software accel engine implementation has added support for CRC-32C.</p>
 <p>A new capability, compare, was added via <code>spdk_accel_submit_compare</code>.</p>
-<p>The software accel engine implemenation has added support for compare.</p>
+<p>The software accel engine implementation has added support for compare.</p>
 <p>Several APIs were added to <code><a class="el" href="accel__engine_8h.html" title="Acceleration engine abstraction layer.">accel_engine.h</a></code> to support batched submission of operations.</p>
 <p>Several APIs were added to <code><a class="el" href="accel__engine_8h.html" title="Acceleration engine abstraction layer.">accel_engine.h</a></code> to support dualcast operations.</p>
 <h2>accel_fw</h2>
@@ -496,7 +496,7 @@ v20.07: SPDK CSI driver, new accel_fw commands, I/O abort support</h1>
 <h2>ioat</h2>
 <p>A new API <code>spdk_ioat_get_max_descriptors</code> was added.</p>
 <h2>nvme</h2>
-<p>An <code>opts_size</code>element was added in the <code><a class="el" href="structspdk__nvme__ctrlr__opts.html" title="NVMe controller initialization options.">spdk_nvme_ctrlr_opts</a></code> structure to solve the ABI compatiblity issue between different SPDK version.</p>
+<p>An <code>opts_size</code>element was added in the <code><a class="el" href="structspdk__nvme__ctrlr__opts.html" title="NVMe controller initialization options.">spdk_nvme_ctrlr_opts</a></code> structure to solve the ABI compatibility issue between different SPDK version.</p>
 <p>A new API <code>spdk_nvme_ctrlr_cmd_abort_ext</code> has been added to abort previously submitted commands whose callback argument match.</p>
 <p>Convenience functions, <code>spdk_nvme_print_command</code> and <code>spdk_nvme-print_completion</code> were added to the public API.</p>
 <p>A new function, <code>spdk_nvmf_cuse_update_namespaces</code>, updates the cuse representation of an NVMe controller.</p>
@@ -628,7 +628,7 @@ v20.01: Optimized thin provisioning, FTL bdev, VMD hot plug, FUSED support</h1>
 <p>A new family of functions, <code>spdk_nvme_ns_compare*</code>, give the user access to submitting compare commands to NVMe namespaces.</p>
 <p>A new function, <code>spdk_nvme_ctrlr_cmd_get_log_page_ext</code>, gives users more granular control over the command dwords sent in log page requests.</p>
 <h2>nvmf</h2>
-<p>Add SockPriority option in [Transport] section, this can be used for NVMe-oF target on TCP transport to set sock priority for the incomming TCP connections.</p>
+<p>Add SockPriority option in [Transport] section, this can be used for NVMe-oF target on TCP transport to set sock priority for the incoming TCP connections.</p>
 <p>The NVMe-oF target now supports plugging out of tree NVMe-oF transports. In order to facilitate this feature, several small API changes have been made:</p>
 <p>The <code><a class="el" href="structspdk__nvme__transport__id.html" title="NVMe transport identifier.">spdk_nvme_transport_id</a></code> struct now contains a trstring member used to identify the transport. <code>spdk_nvmf_tgt_get_transport</code>, <code>spdk_nvmf_transport_opts_init</code>, and <code>spdk_nvmf_transport_create</code> all have been modified to take a string. A function table, <code><a class="el" href="structspdk__nvmf__transport__ops.html">spdk_nvmf_transport_ops</a></code>, and macro, <code>SPDK_NVMF_TRANSPORT_REGISTER</code>, have been added which enable registering out of tree transports.</p>
 <p>Add <code><a class="el" href="nvmf_8h.html#ac796e8f25381f344119ef0f44c2a017c" title="Stop accepting new connections at the provided address.">spdk_nvmf_tgt_stop_listen()</a></code> that can be used to stop listening for incoming connections for specified target and trid. Listener is not stopped implicitly upon destruction of a subsystem any more.</p>
@@ -671,7 +671,7 @@ v19.10: Zoned bdev API, Opal bdev, NVMe character devices</h1>
 <p>Added <code>blobfs_create</code> RPC method to build blobfs on given bdev.</p>
 <p>Added <code>blobfs_mount</code> RPC method to mount blobfs on given bdev to a host path by FUSE. Then on the host path, user can directly do some file operations which will be mapped to blobfs.</p>
 <h2>bdev</h2>
-<p>Added new parameter <code>cdw0</code> to <code><a class="el" href="bdev__module_8h.html#a3341d564a521b3e7874f72fc1390f043" title="Complete a bdev_io with an NVMe status code and DW0 completion queue entry.">spdk_bdev_io_complete_nvme_status()</a></code> and <code><a class="el" href="bdev_8h.html#ae7e1bf90f44f042c2b2ad463b8667735" title="Get the status of bdev_io as an NVMe status code and command specific completion queue value.">spdk_bdev_io_get_nvme_status()</a></code> that allows setting/getting the NVMe completion queue DW0 entry. This allows vendor specific IO commands to return commmand specific completion info back to the initiator.</p>
+<p>Added new parameter <code>cdw0</code> to <code><a class="el" href="bdev__module_8h.html#a3341d564a521b3e7874f72fc1390f043" title="Complete a bdev_io with an NVMe status code and DW0 completion queue entry.">spdk_bdev_io_complete_nvme_status()</a></code> and <code><a class="el" href="bdev_8h.html#ae7e1bf90f44f042c2b2ad463b8667735" title="Get the status of bdev_io as an NVMe status code and command specific completion queue value.">spdk_bdev_io_get_nvme_status()</a></code> that allows setting/getting the NVMe completion queue DW0 entry. This allows vendor specific IO commands to return command specific completion info back to the initiator.</p>
 <p>Added <code><a class="el" href="bdev_8h.html#ab5775a23cadb2eb1d5381dc105577a37" title="Get the write unit size for this bdev.">spdk_bdev_get_write_unit_size()</a></code> function for retrieving required number of logical blocks for write operation.</p>
 <p>New zone-related fields were added to the result of the <code>get_bdevs</code> RPC call:</p>
 <ul>
@@ -751,7 +751,7 @@ v19.07: NVMe-oF FC Transport, VMD, NVMe-oF Persistent reservations, Bdev I/O wit
 <p>Blobfs file asynchronous operations were added to public APIs.</p>
 <h2>util</h2>
 <p>A new file API <code>spdk_posix_file_load</code> was added to load file content into a data buffer.</p>
-<p>New APIs <code>spdk_dif_ctx_set_data_offset</code>, <code>spdk_dif_verify_stream</code>, <code>spdk_dif_get_range_with_md</code>, <code>spdk_dif_get_length_with_md</code> have been added, and existing APIs <code>spdk_dif_ctx_init</code>, <code>spdk_dif_set_md_interleave_iovs</code>, and <code>spdk_dif_generate_stream</code> have been refined to insert or strip DIF by stream fasion with any alignment.</p>
+<p>New APIs <code>spdk_dif_ctx_set_data_offset</code>, <code>spdk_dif_verify_stream</code>, <code>spdk_dif_get_range_with_md</code>, <code>spdk_dif_get_length_with_md</code> have been added, and existing APIs <code>spdk_dif_ctx_init</code>, <code>spdk_dif_set_md_interleave_iovs</code>, and <code>spdk_dif_generate_stream</code> have been refined to insert or strip DIF into iovs windows of any alignment.</p>
 <p>New APIs <code>spdk_dif_ctx_set_remapped_init_ref_tag</code>, <code>spdk_dif_remap_ref_tag</code>, and <code>spdk_dix_remap_ref_tag</code> have been added to remap DIF reference tag.</p>
 <p>New APIs <code>spdk_dif_update_crc32c</code> and <code>spdk_dif_update_crc32c_stream</code> have been added to compute CRC-32C checksum for extended LBA payload.</p>
 <p>Bdevperf and bdevio applications now support starting tests with application specific RPCs. Please see helper Python scripts in their respective directories. This is a move towards simpler RPC-only configuration for all main and auxiliary applications.</p>
@@ -760,7 +760,7 @@ v19.07: NVMe-oF FC Transport, VMD, NVMe-oF Persistent reservations, Bdev I/O wit
 <p>EXPERIMENTAL: A Fibre Channel transport that supports Broadcom HBAs has been added. This depends on the FC HBA driver at <a href="https://github.com/ecdufcdrvr/bcmufctdrvr">https://github.com/ecdufcdrvr/bcmufctdrvr</a>. See <a href="https://spdk.io/doc/nvmf.html#nvmf_fc_transport">the documentation</a> for more information.</p>
 <p>Persistent reservation emulation has been added to the NVMe-oF target. Persistent reservation state is stored in a JSON file on the local filesystem between target restart. To support this, an optional parameter to the RPC method <code>nvmf_subsystem_add_ns</code> called <code>--ptpl-file</code> was added. This allows the user to specify which file to store the persistent reservation state in. Note that this is done per namespace.</p>
 <p>The c2h success optimization under which a command capsule response is not sent for reads is turned on by default. A config knob was added to allow disabling the optimization. This will mostly be used for integration testing with 5.0.x kernels while some compatibility fixes make their way down the pipeline for 5.1.x kernels.</p>
-<p>The sock priority setting of the TCP connection owned by the tcp transport is added. It is used to optimize the TCP connection performance under designated traffic classes. And the priority is used to differeniate the sock priority between SPDK NVMe-oF TCP target application and other TCP based applications.</p>
+<p>The sock priority setting of the TCP connection owned by the tcp transport is added. It is used to optimize the TCP connection performance under designated traffic classes. And the priority is used to differentiate the sock priority between SPDK NVMe-oF TCP target application and other TCP based applications.</p>
 <p>Shared receive queue can now be disabled even for NICs that support it using the <code>nvmf_create_transport</code> RPC method parameter <code>no_srq</code>. The actual use of a shared receive queue is predicated on hardware support when this flag is not used.</p>
 <p>spdk_nvmf_get_optimal_poll_group was added, which is used to return the optimal poll group for the qpair. And <code>ConnectionScheduler</code> configuration is added into the [Nvmf] section in etc/spdk/nvmf.conf.in to demonstrate how to configure the connection scheduling strategy among different spdk threads.</p>
 <p>Added infrastructure to retrieve global and per poll group NVMf statistics.</p>
@@ -773,13 +773,13 @@ v19.07: NVMe-oF FC Transport, VMD, NVMe-oF Persistent reservations, Bdev I/O wit
 <p>The format of the data returned by the get_bdevs_iostat RPC has changed to make it easier to parse. It now returns an object with a "ticks" object and "bdevs" array with the per-bdev statistics.</p>
 <p>A new bdev module <code>delay</code> has been added which simulates a drive latency when placed on top of a Null bdev. This module is intended only for testing and can be created using the new RPC <code>bdev_delay_create</code>. That RPC takes the name of the underlying bdev as well as average and p99 latency arguments for both read and write operations. Average latency is defined as a value close to what you would expect a perf tool such as FIO to report back as the mean latency of all I/O submitted to the drive. p99 latency is defined as the value one would expect the drive to see the slowest 1% of I/O report. For underlying drives with already significant latency, the latency values provided to the drive will be additive. This should be taken into account if trying to achieve an artificial latency on top of an nvme drive or aio device.</p>
 <p>DIF reference tag remapping is now supported for partition type virtual bdev modules. When using partition type virtual bdevs, block address space is remapped during I/O processing and DIF reference tag is remapped accordingly.</p>
-<p>Added spdk_bdev_*_with_md() functions allowing for IO with metadata being transferred in separate buffer. To check support for separatate metadata, use <a class="el" href="bdev_8h.html#ac8c880555f4d66991c1fd9dbd3abaf4f" title="Query whether metadata is interleaved with block data or separated from block data.">spdk_bdev_is_md_separate()</a>.</p>
+<p>Added spdk_bdev_*_with_md() functions allowing for IO with metadata being transferred in separate buffer. To check support for separate metadata, use <a class="el" href="bdev_8h.html#ac8c880555f4d66991c1fd9dbd3abaf4f" title="Query whether metadata is interleaved with block data or separated from block data.">spdk_bdev_is_md_separate()</a>.</p>
 <p>All bdevs now have a UUID. For devices whose backing hardware does not provide a UUID, one is automatically generated. Across runs of SPDK, bdevs whose UUID is automatically generated may change.</p>
 <p>A new virtual bdev module <code>compress</code> has been added to provide compression services on top of a thinly provisioned logical volume. See documentation for complete details.</p>
 <h2>nvme</h2>
 <p>Added an optional parameter <code>--io-queue-requests</code> to RPC <code>set_bdev_nvme_options</code>, which can be used to change the number of requests allocated for one NVMe I/O queue. For very big I/O size, e.g. 128MiB, with this option user will not get an error due to limited requests in NVMe driver layer.</p>
 <p>Added <a class="el" href="nvme_8h.html#abb7ae9abf97b7c6b57777d06eaa1258a" title="Get the transport ID for a given NVMe controller.">spdk_nvme_ctrlr_get_transport_id()</a> to get the transport ID from a previously attached controller.</p>
-<p>Nvme Opal library spdk_opal_cmd deprecated. Adding seperate command APIs. NVMe Opal library add support for activating locking SP which will make the transaction from "Manufactured-Inactive" state to "Manufactured" state. Upon successfully invoking of this method, lock and unlock features will be enabled. NVMe Opal library add support for locking/unlocking range and list locking range info. NVMe opal library add support for multiuser. Admin can enable user and add user to specific locking range and the user can lock/unlock his range.</p>
+<p>Nvme Opal library spdk_opal_cmd deprecated. Adding separate command APIs. NVMe Opal library add support for activating locking SP which will make the transaction from "Manufactured-Inactive" state to "Manufactured" state. Upon successfully invoking of this method, lock and unlock features will be enabled. NVMe Opal library add support for locking/unlocking range and list locking range info. NVMe opal library add support for multiuser. Admin can enable user and add user to specific locking range and the user can lock/unlock his range.</p>
 <p>Added <a class="el" href="nvme_8h.html#a8c00b191b38472b57b06f3f394353ad3" title="Send the given NVM I/O command, I/O buffers, lists and all to the NVMe controller.">spdk_nvme_ctrlr_io_cmd_raw_no_payload_build()</a> allowing a caller to pass a completely formed command to an NVMe submission queue (buffer addresses and all). This is supported on the PCIe transport only.</p>
 <p>Added spdk_nvme_get_ctrlr_registers() to return a pointer to the virtual address of the NVMe controller registers. This is supported on the PCIe transport only.</p>
 <p>Added additional options to the spdk_nvme_ctrlr_alloc_qpair() option parameter structure to allow caller to override the virtual and optionally physical address of the submission and completion queue pair to be created. This is supported on the PCIe transport only.</p>
@@ -798,7 +798,7 @@ v19.07: NVMe-oF FC Transport, VMD, NVMe-oF Persistent reservations, Bdev I/O wit
 <p><a class="el" href="sock_8h.html#ae60bf2833f9b9bd99088c1c0929d6321" title="Get the ctx of the sock group.">spdk_sock_group_get_ctx()</a> was added to return the context of the spdk_sock_group. <a class="el" href="sock_8h.html#a06f3441fbe7ea447b7ae03e71e074e27" title="Create a new socket group with user provided pointer.">spdk_sock_group_create()</a> is updated to allow input the user provided ctx. spdk_sock_set_priority() is added to set the priority of the socket.</p>
 <h2>rpc</h2>
 <p>Added thread_get_stats RPC method to retrieve existing statistics.</p>
-<p>Added nvmf_get_stats RPC method to retrieve NVMf susbsystem statistics.</p>
+<p>Added nvmf_get_stats RPC method to retrieve NVMf subsystem statistics.</p>
 <p>Response buffers for RPC requests are now always pre-allocated, which implies that all <a class="el" href="jsonrpc_8h.html#a22757fb7d0f34984e29b3fe311dfed01" title="Begin building a response to a JSON-RPC request.">spdk_jsonrpc_begin_result()</a> calls always succeed and return a valid buffer for JSON response. RPC calls no longer need to check if the buffer is non-NULL.</p>
 <p>Added SPDK_RPC_REGISTER_ALIAS_DEPRECATED to help with deprecation process when renaming existing RPC. First time a deprecated alias is used, it will print a warning message.</p>
 <p>RPC <code>get_rpc_methods</code> was renamed <code>rpc_get_methods</code>. The old name is still usable, but is now deprecated.</p>
@@ -891,7 +891,7 @@ v19.04: Compression bdev, Notification library, NVMe Opal support</h1>
 <h2>build</h2>
 <p>Options to easily compile with profile guided optimization have been added to <code>configure</code>. To use profile guided optimization with SPDK, run <code>./configure --with-pgo-capture</code>, build SPDK, then run a workload of your choosing. Then, simply run <code>./configure --with-pgo-enable</code> and recompile to build using the generated profile data. Profile guided optimization can yield very large performance improvements, especially on GCC 8 and clang 7. This may be combined with link time optimization which has been available under the <code>--enable-lto</code> configure option for several releases.</p>
 <h2>compression bdev/reduce library</h2>
-<p>Added "reduce" block compression scheme based on using SSDs for storing compressed blocks of storage and presistent memory for metadata. Please see <a href="https://spdk.io/doc/bdev.html">compression</a> for more details.</p>
+<p>Added "reduce" block compression scheme based on using SSDs for storing compressed blocks of storage and persistent memory for metadata. Please see <a href="https://spdk.io/doc/bdev.html">compression</a> for more details.</p>
 <h1><a class="anchor" id="changelog-v19-01"></a>
 v19.01: NVMe-oF TCP/IP Transport, Open Channel SSD Flash Translation Layer, Caching bdev based on OCF, ISA-L Support, DIF/DIX library</h1>
 <h2>ocf bdev</h2>
@@ -940,7 +940,7 @@ v19.01: NVMe-oF TCP/IP Transport, Open Channel SSD Flash Translation Layer, Cach
 <p>Related to the previous change, the rpc <code>set_nvmf_target_options</code> has been renamed to <code>set_nvmf_target_max_subsystems</code> to indicate that this is the only target option available for the user to edit.</p>
 <p>Added fields <code>num_shared_buffers</code> and <code>buf_cache_size</code> in struct <a class="el" href="structspdk__nvmf__transport__opts.html">spdk_nvmf_transport_opts</a>, and also updated the related rpc function nvmf_create_transport, to make this configurable parameter available to users. The <code>num_shared_buffers</code> is used to configure the shared buffer numbers of the transport used by RDMA or TCP transport. <code>buf_cache_size</code> configures number of shared buffers to cache per poll group.</p>
 <h2>nvmf</h2>
-<p>Add a new TCP/IP transport (located in lib/nvmf/tcp.c). With this tranport, the SPDK NVMe-oF target can have a new transport, and can serve the NVMe-oF protocol via TCP/IP from the host.</p>
+<p>Add a new TCP/IP transport (located in lib/nvmf/tcp.c). With this transport, the SPDK NVMe-oF target can have a new transport, and can serve the NVMe-oF protocol via TCP/IP from the host.</p>
 <p>Added optional mechanism to modify the RDMA transport's behavior when creating protection domains and registering memory. By default, the RDMA transport will use the ibverbs library to create protection domains and register memory. Using <code>spdk_nvme_rdma_init_hooks</code> will subvert that and use an existing registration.</p>
 <h2>bdev</h2>
 <p>Added <code>enable_bdev_histogram</code> and <code>get_bdev_histogram</code> RPC commands to allow gathering latency data for specified bdev. Please see <a href="https://spdk.io/doc/bdev.html#rpc_bdev_histogram">documentation</a> for more details.</p>
@@ -948,7 +948,7 @@ v19.01: NVMe-oF TCP/IP Transport, Open Channel SSD Flash Translation Layer, Cach
 <p>On shutdown, bdev unregister now proceeds in top-down fashion, with claimed bdevs skipped (these will be unregistered later, when virtual bdev built on top of the respective base bdev unclaims it). This allows virtual bdevs to be shut down cleanly as opposed to the previous behavior that didn't differentiate between hotremove and planned shutdown.</p>
 <p>The <code>delete_bdev</code> RPC is now deprecated. Users should instead use the specific deletion RPC for the bdev type to be removed (i.e. delete_malloc_bdev).</p>
 <p>Added support for separate bandwidth rate limits for read and write to QoS in bdev layer.</p>
-<p>Bdev I/O statistics now track unmap opertations.</p>
+<p>Bdev I/O statistics now track unmap operations.</p>
 <h2>logical volumes</h2>
 <p>Logical volume bdev can now be marked as read only using <code>set_read_only_lvol_bdev</code> RPC. This allows for basing clones on top of lvol_bdev without first creating a snapshot.</p>
 <p>Added option to change method for data erasure when deleting lvol or resizing down. Default of unmapping clusters can now be changed to writing zeroes or no operation.</p>
@@ -988,7 +988,7 @@ v19.01: NVMe-oF TCP/IP Transport, Open Channel SSD Flash Translation Layer, Cach
 <h2>rpc</h2>
 <p>Added <code>spdk_rpc_is_method_allowed</code> function for checking whether method is permitted in a given state. Added <code>spdk_rpc_get_state</code> to check current state of RPC server. RPC <code>wait_subsystem_init</code> has been added to allow clients to block untill all subsystems are initialized.</p>
 <h2>json rpc</h2>
-<p>JSON RPC client is now running in non-blocking mode. Requests are sent and received during spdk_jsonrpc_client_poll. JSON RPC server can now recieve a callback on connection termination or server shutdown using <code>spdk_jsonrpc_conn_add_close_cb</code> and <code>spdk_jsonrpc_conn_del_close_cb</code>.</p>
+<p>JSON RPC client is now running in non-blocking mode. Requests are sent and received during spdk_jsonrpc_client_poll. JSON RPC server can now receive a callback on connection termination or server shutdown using <code>spdk_jsonrpc_conn_add_close_cb</code> and <code>spdk_jsonrpc_conn_del_close_cb</code>.</p>
 <h1><a class="anchor" id="changelog-v18-10"></a>
 v18.10: Dynamic memory allocation, Crypto Virtual Bdev, jsonrpc-client, SPDKCLI iSCSI and NVMe-oF support</h1>
 <h2>nvme</h2>
@@ -1027,7 +1027,7 @@ v18.10: Dynamic memory allocation, Crypto Virtual Bdev, jsonrpc-client, SPDKCLI 
 <p>Default config file pathnames have been removed from iscsi_tgt, nvmf_tgt and vhost. Config file pathnames may now only be specified using the -c command line option.</p>
 <p>Users may no longer set DPDK_DIR in their environment to specify the location of the DPDK installation used to build SPDK. Using DPDK_DIR has not been the documented nor recommended way to specify the DPDK location for several releases, but removing it ensures no unexpected surprises for users who may have DPDK_DIR defined for other reasons. Users should just use the "configure" script to specify the DPDK location before building SPDK.</p>
 <p>Although we know that many developers still use Python 2 we are officially switching to Python3 with requirement that all new code must be valid also for Python 2 up to the EOL which is year 2020.</p>
-<p>Invoking interpreter explicitly is forbidden for executable scripts. There is no need to use syntax like "python ./scripts/rpc.py". All executable scripts must contain proper shebang pointing to the right interpreter. Scripts without shebang musn't be executable.</p>
+<p>Invoking interpreter explicitly is forbidden for executable scripts. There is no need to use syntax like "python ./scripts/rpc.py". All executable scripts must contain proper shebang pointing to the right interpreter. Scripts without shebang mustn't be executable.</p>
 <p>A Python script has been added to enable conversion of old INI config file to new JSON-RPC config file format. This script can be found at scripts/config_converter.py. Example how this script can be used: </p><div class="fragment"><div class="line">cat old_format.ini | scripts/config_converter.py &gt; new_json_format.json</div>
 </div><!-- fragment --><h2>Sock</h2>
 <p>Two additional parameters were added to spdk_sock_get_addr() for the server port and client port. These parameters are named "sport" and "cport" respectively.</p>
@@ -1167,7 +1167,7 @@ v18.01: Blobstore Thin Provisioning</h1>
 <p>A JSON RPC listener is now enabled by default using a UNIX domain socket at /var/tmp/spdk.sock. A -r option command line option has been added to enable an alternative UNIX domain socket location, or a TCP port in the format ip_addr:tcp_port (i.e. 127.0.0.1:5260). The Rpc configuration file section is now deprecated and will be removed in the v18.04 release.</p>
 <h2>I/O Channels</h2>
 <p><a class="el" href="thread_8h.html#a6b3e883ddce01ae8d93541304d1e9126" title="Register a poller on the current thread.">spdk_poller_register()</a> and <a class="el" href="thread_8h.html#a9c26cbd781063f5ee627d6aba2c73fe3" title="Unregister a poller on the current thread.">spdk_poller_unregister()</a> were moved from the event framework (<a class="el" href="event_8h.html" title="Event framework public API.">include/spdk/event.h</a>) to the I/O channel library (include/spdk/io_channel.h). This allows code that doesn't depend on the event framework to request registration and unregistration of pollers.</p>
-<p><a class="el" href="thread_8h.html#aa7a2ca9bd0497544e852c65fd5263cd1" title="Call &#39;fn&#39; on each channel associated with io_device.">spdk_for_each_channel()</a> now allows asynchronous operations during iteration. Instead of immediately continuing the interation upon returning from the iteration callback, the user must call <a class="el" href="thread_8h.html#a4e87fc8c0fc870769c068a2752cdc359" title="Helper function to iterate all channels for spdk_for_each_channel().">spdk_for_each_channel_continue()</a> to resume iteration.</p>
+<p><a class="el" href="thread_8h.html#aa7a2ca9bd0497544e852c65fd5263cd1" title="Call &#39;fn&#39; on each channel associated with io_device.">spdk_for_each_channel()</a> now allows asynchronous operations during iteration. Instead of immediately continuing the interaction upon returning from the iteration callback, the user must call <a class="el" href="thread_8h.html#a4e87fc8c0fc870769c068a2752cdc359" title="Helper function to iterate all channels for spdk_for_each_channel().">spdk_for_each_channel_continue()</a> to resume iteration.</p>
 <h2>Block Device Abstraction Layer (bdev)</h2>
 <p>The poller abstraction was removed from the bdev layer. There is now a general purpose abstraction for pollers available in include/spdk/io_channel.h</p>
 <h2>Lib</h2>
@@ -1235,7 +1235,7 @@ v17.10: Logical Volumes</h1>
 <p><a class="el" href="nvme_8h.html#ae26375a74c2c935ec32f0c41a7ed93df" title="Connect the NVMe driver to the device located at the given transport ID.">spdk_nvme_connect()</a> was added to allow the user to connect directly to a single NVMe or NVMe-oF controller.</p>
 <h2>NVMe-oF Target (nvmf_tgt)</h2>
 <p>The NVMe-oF target no longer requires any in-capsule data buffers to run, and the feature is now entirely optional. Previously, at least 4 KiB in-capsule data buffers were required.</p>
-<p>NVMe-oF subsytems have a new configuration option, AllowAnyHost, to control whether the host NQN whitelist is enforced when accepting new connections. If no Host options have been specified and AllowAnyHost is disabled, the connection will be denied; this is a behavior change from previous releases, which allowed any host NQN to connect if the Host list was empty. AllowAnyHost is disabled by default.</p>
+<p>NVMe-oF subsystems have a new configuration option, AllowAnyHost, to control whether the host NQN whitelist is enforced when accepting new connections. If no Host options have been specified and AllowAnyHost is disabled, the connection will be denied; this is a behavior change from previous releases, which allowed any host NQN to connect if the Host list was empty. AllowAnyHost is disabled by default.</p>
 <p>NVMe-oF namespaces may now be assigned arbitrary namespace IDs, and the number of namespaces per subsystem is no longer limited.</p>
 <p>The NVMe-oF target now supports the Write Zeroes command.</p>
 <h2>Environment Abstraction Layer</h2>
@@ -1414,7 +1414,7 @@ v16.06: NVMf userspace target</h1>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
 <ul>
-        <li class="footer">Generated on Sun Dec 26 2021 05:06:52 for SPDK by
+        <li class="footer">Generated on Mon Dec 27 2021 04:19:46 for SPDK by
         <a href="http://www.doxygen.org/index.html">doxygen</a> 1.9.1 </li>
 </ul>
 </div>
