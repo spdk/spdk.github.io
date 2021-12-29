@@ -14,6 +14,10 @@ toc:
     url: ../webinar
 ---
 
+## 移动云
+* [Intel助力移动云百万IOPS云硬盘，打造极速云存储体验](https://ci.spdk.io/download/papers/202112_Intel_Accelerates_CMCC_Cloud_for_1M_IOPS_Cloud_Disk_with_Ultra_Cloud_Storage_Experience_CN.pdf)
+> “鉴于Intel SPDK IO低延时、高吞吐的巨大优势，移动云云存储团队与Intel进行深度合作，在结合Intel SPDK的基础上设计实现了百万IOPS的移动云极速型云硬盘产品。”
+
 ## 青云
 * [青云用英特尔存储“黑科技”加速关键业务高性能存储系统](https://www.intel.cn/content/www/cn/zh/architecture-and-technology/qingyun-casestudy.html?from=singlemessage&isappinstalled=0)
 > “极致的存储性能表现：全闪存 + SPDK”
