@@ -263,6 +263,9 @@ struct <a class="el" href="structspdk__trace__register__fn.html">spdk_trace_regi
 <tr class="memitem:a2057ffa0d5eaf0680a8d970646c157af"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="trace_8h.html#a2057ffa0d5eaf0680a8d970646c157af">spdk_trace_mask_usage</a> (FILE *f, const char *tmask_arg)</td></tr>
 <tr class="memdesc:a2057ffa0d5eaf0680a8d970646c157af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Show trace mask and its usage.  <a href="trace_8h.html#a2057ffa0d5eaf0680a8d970646c157af">More...</a><br /></td></tr>
 <tr class="separator:a2057ffa0d5eaf0680a8d970646c157af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f00b86acc0c5a41bf639c068d197b53"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="trace_8h.html#a5f00b86acc0c5a41bf639c068d197b53">spdk_trace_create_tpoint_group_mask</a> (const char *group_name)</td></tr>
+<tr class="memdesc:a5f00b86acc0c5a41bf639c068d197b53"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a tracepoint group mask from tracepoint group name.  <a href="trace_8h.html#a5f00b86acc0c5a41bf639c068d197b53">More...</a><br /></td></tr>
+<tr class="separator:a5f00b86acc0c5a41bf639c068d197b53"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa87447ad261172809a5394ee37f601df"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="trace_8h.html#aa87447ad261172809a5394ee37f601df">spdk_trace_add_register_fn</a> (struct <a class="el" href="structspdk__trace__register__fn.html">spdk_trace_register_fn</a> *reg_fn)</td></tr>
 <tr class="memdesc:aa87447ad261172809a5394ee37f601df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add new trace register function.  <a href="trace_8h.html#aa87447ad261172809a5394ee37f601df">More...</a><br /></td></tr>
 <tr class="separator:aa87447ad261172809a5394ee37f601df"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -517,7 +520,7 @@ struct <a class="el" href="structspdk__trace__histories.html">spdk_trace_histori
 <div class="line">                spdk_trace_add_register_fn(&amp;reg_ ## fn);        \</div>
 <div class="line">        }                                                       \</div>
 <div class="line">        static <span class="keywordtype">void</span> fn(<span class="keywordtype">void</span>)</div>
-<div class="ttc" id="astructspdk__trace__register__fn_html"><div class="ttname"><a href="structspdk__trace__register__fn.html">spdk_trace_register_fn</a></div><div class="ttdef"><b>Definition:</b> trace.h:419</div></div>
+<div class="ttc" id="astructspdk__trace__register__fn_html"><div class="ttname"><a href="structspdk__trace__register__fn.html">spdk_trace_register_fn</a></div><div class="ttdef"><b>Definition:</b> trace.h:427</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -608,6 +611,33 @@ struct <a class="el" href="structspdk__trace__histories.html">spdk_trace_histori
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="a5f00b86acc0c5a41bf639c068d197b53"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5f00b86acc0c5a41bf639c068d197b53">&#9670;&nbsp;</a></span>spdk_trace_create_tpoint_group_mask()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint64_t spdk_trace_create_tpoint_group_mask </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>group_name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Create a tracepoint group mask from tracepoint group name. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">group_name</td><td>tracepoint group name string </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>tpoint group mask on success, 0 on failure </dd></dl>
 
 </div>
 </div>
@@ -1087,7 +1117,7 @@ struct <a class="el" href="structspdk__trace__histories.html">spdk_trace_histori
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
 <ul>
-        <li class="footer">Generated on Tue Jan 4 2022 04:04:32 for SPDK by
+        <li class="footer">Generated on Wed Jan 5 2022 04:04:25 for SPDK by
         <a href="http://www.doxygen.org/index.html">doxygen</a> 1.9.1 </li>
 </ul>
 </div>

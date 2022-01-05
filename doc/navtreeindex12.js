@@ -248,6 +248,6 @@ var NAVTREEINDEX12 =
 "reduce_8h.html#ae0ffc9aa6f6f8ba73f52672abcccddbc":[15,0,51,7],
 "rpms.html":[6,2],
 "rpms.html#building_rpms":[6,2,1],
-"rpms.html#rpms_toc":[6,2,0],
-"scheduler.html":[5,1]
+"rpms.html#dpdk_devel":[6,2,2],
+"rpms.html#rpms_toc":[6,2,0]
 };

@@ -15,6 +15,7 @@ var misc =
     ] ],
     [ "RPMs", "rpms.html", [
       [ "In this document", "rpms.html#rpms_toc", null ],
-      [ "Building SPDK RPMs", "rpms.html#building_rpms", null ]
+      [ "Building SPDK RPMs", "rpms.html#building_rpms", null ],
+      [ "Special case for dpdk-devel", "rpms.html#dpdk_devel", null ]
     ] ]
 ];

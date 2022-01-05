@@ -94,6 +94,7 @@ $(document).ready(function(){initNavTree('rpms.html',''); initResizable(); });
 In this document</h1>
 <ul>
 <li><a class="el" href="rpms.html#building_rpms">Building SPDK RPMs</a></li>
+<li><a class="el" href="rpms.html#dpdk_devel">Special case for dpdk-devel</a></li>
 </ul>
 <h1><a class="anchor" id="building_rpms"></a>
 Building SPDK RPMs</h1>
@@ -108,6 +109,8 @@ Building SPDK RPMs</h1>
 <li>RPM_RELEASE - Target release version of the RPM packages. Default: 1</li>
 <li>REQUIREMENTS - Extra set of RPM dependencies if deemed as needed</li>
 <li>SPDK_VERSION - SPDK version. Default: currently checked out tag</li>
+<li>GEN_SPEC - Orders rpm.sh to only generate a valid .spec and print it on stdout. The content of the .spec is determined based mainly on the ./configure cmdline passed to rpm.sh.</li>
+<li>USE_DEFAULT_DIRS - Normally, rpm.sh will order rpmbuild to build under customizable set of directories. Since this may be not desired, especially when used together with GEN_SPEC, this option will preserve the default set of directories.</li>
 </ul>
 <div class="fragment"><div class="line"># DEPS=no MAKEFLAGS=&quot;-d -j1&quot; rpmbuild/rpm.sh --with-shared</div>
 </div><!-- fragment --><p>By default, all RPM packages should be created under $HOME directory of the target user:</p>
@@ -121,8 +124,11 @@ Building SPDK RPMs</h1>
 <li>spdk - provides all the binaries, common tooling, etc.</li>
 <li>spdk-devel - provides development files</li>
 <li>spdk-libs - provides target lib, .pc files (&ndash;with-shared)</li>
-<li>spdk-dpdk-libs - provides dpdk lib files (&ndash;with-shared|&ndash;with-dpdk) </li>
+<li>spdk-dpdk-libs - provides dpdk lib files (&ndash;with-shared|&ndash;with-dpdk)</li>
 </ul>
+<h1><a class="anchor" id="dpdk_devel"></a>
+Special case for dpdk-devel</h1>
+<p>When rpm.sh finds a bare &ndash;with-dpdk argument on the cmdline it will try to adjust the behavior of the rpmbuild to make sure only SPDK RPMs are built. Since this argument requests SPDK to be built against installed DPDK (e.g. dpdk-devel package) the spdk-dpdk-libs RPM won't be included. Moreover, the .spec will be armed with a build requirement to make sure dpdk-devel is present on the building system. The minimum required version of dpdk-devel is set to 19.11. </p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
@@ -130,7 +136,7 @@ Building SPDK RPMs</h1>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
 <ul>
-        <li class="footer">Generated on Tue Jan 4 2022 04:04:33 for SPDK by
+        <li class="footer">Generated on Wed Jan 5 2022 04:04:25 for SPDK by
         <a href="http://www.doxygen.org/index.html">doxygen</a> 1.9.1 </li>
 </ul>
 </div>

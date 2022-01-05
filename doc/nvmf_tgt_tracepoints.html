@@ -95,11 +95,28 @@ Introduction</h1>
 <p>SPDK has a tracing framework for capturing low-level event information at runtime. Tracepoints provide a high-performance tracing mechanism that is accessible at runtime. They are implemented as a circular buffer in shared memory that is accessible from other processes. The NVMe-oF target is instrumented with tracepoints to enable analysis of both performance and application crashes and it has to be configured beforehand using this <a href="https://spdk.io/doc/nvmf.html">guide</a>. (Note: the SPDK tracing framework should still be considered experimental. Work to formalize and document the framework is in progress.)</p>
 <h1><a class="anchor" id="enable_tracepoints"></a>
 Enabling Tracepoints</h1>
-<p>Tracepoints are placed in groups. They are enabled and disabled as a group. To enable the instrumentation of all the tracepoints group in an SPDK target application, start the target with -e parameter set to 0xFFFF:</p>
+<p>Tracepoints are placed in groups. They are enabled and disabled as a group or individually inside a group.</p>
+<h2>Enabling Tracepoints in Groups</h2>
+<p>To enable the instrumentation of all the tracepoints groups in an SPDK target application, start the target with <code>-e</code> parameter set to <code>0xFFFF</code> or <code>all</code>:</p>
 <div class="fragment"><div class="line">build/bin/nvmf_tgt -e 0xFFFF</div>
-</div><!-- fragment --><p>To enable the instrumentation of just the NVMe-oF RDMA tracepoints in an SPDK target application, start the target with the -e parameter set to 0x10:</p>
+</div><!-- fragment --><p>or</p>
+<div class="fragment"><div class="line">build/bin/nvmf_tgt -e all</div>
+</div><!-- fragment --><p>To enable the instrumentation of just the <code>NVMe-oF RDMA</code> tracepoints in an SPDK target application, start the target with the <code>-e</code> parameter set to <code>0x10</code>:</p>
 <div class="fragment"><div class="line">build/bin/nvmf_tgt -e 0x10</div>
-</div><!-- fragment --><p>When the target starts, a message is logged with the information you need to view the tracepoints in a human-readable format using the spdk_trace application. The target will also log information about the shared memory file.</p>
+</div><!-- fragment --><h2>Enabling Individual Tracepoints</h2>
+<p>To enable individual tracepoints inside a group:</p>
+<div class="fragment"><div class="line">build/bin/nvmf_tgt -e 0x10:B</div>
+</div><!-- fragment --><p>or</p>
+<div class="fragment"><div class="line">build/bin/nvmf_tgt -e nvmf_rdma:B</div>
+</div><!-- fragment --><p>where <code>:</code> is a separator and <code>B</code> is the tracepoint mask. This will enable only the first, second and fourth (binary: 1011) tracepoint inside <code>NVMe-oF RDMA</code> group.</p>
+<h2>Combining Tracepoint Masks</h2>
+<p>It is also possible to combine enabling whole groups of tpoints and individual ones:</p>
+<div class="fragment"><div class="line">build/bin/nvmf_tgt -e 0x10:2,0x400</div>
+</div><!-- fragment --><p>This will enable the second tracepoint inside <code>NVMe-oF RDMA</code> group (0x10) and all of the tracepoints defined by the <code>thread</code> group (0x400).</p>
+<h2>Tracepoint Group Values</h2>
+<p>iscsi (0x2), scsi (0x4), bdev (0x8), nvmf_rdma (0x10), nvmf_tcp (0x20), ftl (0x40), blobfs (0x80), nvmf_fc (0x100), idxd (0x200), thread (0x400), nvme_pcie (0x800)</p>
+<h2>Starting the SPDK Target</h2>
+<p>When the target starts, a message is logged with the information you need to view the tracepoints in a human-readable format using the spdk_trace application. The target will also log information about the shared memory file.</p>
 <div class="fragment"><div class="line">app.c: 527:spdk_app_setup_trace: *NOTICE*: Tracepoint Group Mask 0xFFFF specified.</div>
 <div class="line">app.c: 531:spdk_app_setup_trace: *NOTICE*: Use &#39;spdk_trace -s nvmf -p 24147&#39; to capture a snapshot of events at runtime.</div>
 <div class="line">app.c: 533:spdk_app_setup_trace: *NOTICE*: Or copy /dev/shm/nvmf_trace.pid24147 for offline analysis/debug.</div>
@@ -107,7 +124,7 @@ Enabling Tracepoints</h1>
 <h1><a class="anchor" id="capture_tracepoints"></a>
 Capturing a snapshot of events</h1>
 <p>Send I/Os to the SPDK target application to generate events. The following is an example usage of perf to send I/Os to the NVMe-oF target over an RDMA network interface for 10 minutes.</p>
-<div class="fragment"><div class="line">./perf -q 128 -s 4096 -w randread -t 600 -r &#39;trtype:RDMA adrfam:IPv4 traddr:192.168.100.2 trsvcid:4420&#39;</div>
+<div class="fragment"><div class="line">./perf -q 128 -o 4096 -w randread -t 600 -r &#39;trtype:RDMA adrfam:IPv4 traddr:192.168.100.2 trsvcid:4420&#39;</div>
 </div><!-- fragment --><p>The spdk_trace program can be found in the app/trace directory. To analyze the tracepoints on the same system running the NVMe-oF target, simply execute the command line shown in the log:</p>
 <div class="fragment"><div class="line">build/bin/spdk_trace -s nvmf -p 24147</div>
 </div><!-- fragment --><p>To analyze the tracepoints on a different system, first prepare the tracepoint file for transfer. The tracepoint file can be large, but usually compresses very well. This step can also be used to prepare a tracepoint file to attach to a GitHub issue for debugging NVMe-oF application crashes.</p>
@@ -165,7 +182,7 @@ Capturing sufficient trace events</h1>
 <p>Since the tracepoint file generated directly by SPDK application is a circular buffer in shared memory, the trace events captured by it may be insufficient for further analysis. The spdk_trace_record program can be found in the app/trace_record directory. spdk_trace_record is used to poll the spdk tracepoint shared memory, record new entries from it, and store all entries into specified output file at its shutdown on SIGINT or SIGTERM. After SPDK nvmf target is launched, simply execute the command line shown in the log:</p>
 <div class="fragment"><div class="line">build/bin/spdk_trace_record -q -s nvmf -p 24147 -f /tmp/spdk_nvmf_record.trace</div>
 </div><!-- fragment --><p>Also send I/Os to the SPDK target application to generate events by previous perf example for 10 minutes.</p>
-<div class="fragment"><div class="line">./perf -q 128 -s 4096 -w randread -t 600 -r &#39;trtype:RDMA adrfam:IPv4 traddr:192.168.100.2 trsvcid:4420&#39;</div>
+<div class="fragment"><div class="line">./perf -q 128 -o 4096 -w randread -t 600 -r &#39;trtype:RDMA adrfam:IPv4 traddr:192.168.100.2 trsvcid:4420&#39;</div>
 </div><!-- fragment --><p>After the completion of perf example, shut down spdk_trace_record by signal SIGINT (Ctrl + C). To analyze the tracepoints output file from spdk_trace_record, simply run spdk_trace program by:</p>
 <div class="fragment"><div class="line">build/bin/spdk_trace -f /tmp/spdk_nvmf_record.trace</div>
 </div><!-- fragment --><h1><a class="anchor" id="add_tracepoints"></a>
@@ -213,7 +230,7 @@ Adding New Tracepoints</h1>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
 <ul>
-        <li class="footer">Generated on Tue Jan 4 2022 04:04:33 for SPDK by
+        <li class="footer">Generated on Wed Jan 5 2022 04:04:25 for SPDK by
         <a href="http://www.doxygen.org/index.html">doxygen</a> 1.9.1 </li>
 </ul>
 </div>
