@@ -187,9 +187,6 @@ Functions</h2></td></tr>
 <tr class="memitem:a7018b7c460c9e8d4bc99b14075291390"><td class="memItemLeft" align="right" valign="top"><a id="a7018b7c460c9e8d4bc99b14075291390"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_STATIC_ASSERT</b> (sizeof(union <a class="el" href="unionnvmf__c2h__msg.html">nvmf_c2h_msg</a>)==16, &quot;Incorrect size&quot;)</td></tr>
 <tr class="separator:a7018b7c460c9e8d4bc99b14075291390"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a08498a68d0460b75fbd39ec6c9b21504"><td class="memItemLeft" align="right" valign="top"><a id="a08498a68d0460b75fbd39ec6c9b21504"></a>
-static bool&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvmf_using_zcopy</b> (enum spdk_nvmf_zcopy_phase phase)</td></tr>
-<tr class="separator:a08498a68d0460b75fbd39ec6c9b21504"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab53a8667860940846986a85db26a7236"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf__transport_8h.html#ab53a8667860940846986a85db26a7236">spdk_nvmf_transport_register</a> (const struct <a class="el" href="structspdk__nvmf__transport__ops.html">spdk_nvmf_transport_ops</a> *ops)</td></tr>
 <tr class="memdesc:ab53a8667860940846986a85db26a7236"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register the operations for a given transport type.  <a href="nvmf__transport_8h.html#ab53a8667860940846986a85db26a7236">More...</a><br /></td></tr>
 <tr class="separator:ab53a8667860940846986a85db26a7236"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -223,12 +220,15 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvmf_request_free
 <tr class="memitem:a4256612baa1f8b906592d85e59f27e70"><td class="memItemLeft" align="right" valign="top"><a id="a4256612baa1f8b906592d85e59f27e70"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvmf_request_complete</b> (struct <a class="el" href="structspdk__nvmf__request.html">spdk_nvmf_request</a> *req)</td></tr>
 <tr class="separator:a4256612baa1f8b906592d85e59f27e70"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a54a09660b6b5e4de1ac6754213d23f7e"><td class="memItemLeft" align="right" valign="top"><a id="a54a09660b6b5e4de1ac6754213d23f7e"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvmf_request_zcopy_start</b> (struct <a class="el" href="structspdk__nvmf__request.html">spdk_nvmf_request</a> *req)</td></tr>
-<tr class="separator:a54a09660b6b5e4de1ac6754213d23f7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a234b914dcebe62e4f84be72012c6f5f5"><td class="memItemLeft" align="right" valign="top"><a id="a234b914dcebe62e4f84be72012c6f5f5"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvmf_request_zcopy_end</b> (struct <a class="el" href="structspdk__nvmf__request.html">spdk_nvmf_request</a> *req, bool commit)</td></tr>
-<tr class="separator:a234b914dcebe62e4f84be72012c6f5f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0fec7ecc384b607d6cbdeb1426e602a2"><td class="memItemLeft" align="right" valign="top"><a id="a0fec7ecc384b607d6cbdeb1426e602a2"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvmf_request_zcopy_start</b> (struct <a class="el" href="structspdk__nvmf__request.html">spdk_nvmf_request</a> *req)</td></tr>
+<tr class="separator:a0fec7ecc384b607d6cbdeb1426e602a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afbf5a8355e84ee654a38b07f7c4e4d83"><td class="memItemLeft" align="right" valign="top"><a id="afbf5a8355e84ee654a38b07f7c4e4d83"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvmf_request_zcopy_end</b> (struct <a class="el" href="structspdk__nvmf__request.html">spdk_nvmf_request</a> *req, bool commit)</td></tr>
+<tr class="separator:afbf5a8355e84ee654a38b07f7c4e4d83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a71032e642d882bac0dfbac4e19fc6b"><td class="memItemLeft" align="right" valign="top"><a id="a6a71032e642d882bac0dfbac4e19fc6b"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvmf_request_using_zcopy</b> (const struct <a class="el" href="structspdk__nvmf__request.html">spdk_nvmf_request</a> *req)</td></tr>
+<tr class="separator:a6a71032e642d882bac0dfbac4e19fc6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9ea012aeb9897f188acdf41481c0217f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf__transport_8h.html#a9ea012aeb9897f188acdf41481c0217f">spdk_nvmf_poll_group_remove</a> (struct <a class="el" href="structspdk__nvmf__qpair.html">spdk_nvmf_qpair</a> *qpair)</td></tr>
 <tr class="memdesc:a9ea012aeb9897f188acdf41481c0217f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove the given qpair from the poll group.  <a href="nvmf__transport_8h.html#a9ea012aeb9897f188acdf41481c0217f">More...</a><br /></td></tr>
 <tr class="separator:a9ea012aeb9897f188acdf41481c0217f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -428,7 +428,7 @@ static enum <a class="el" href="nvme__spec_8h.html#adbe38e042bb939183ed8fd5c1685
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
 <ul>
-        <li class="footer">Generated on Thu Jan 6 2022 04:04:30 for SPDK by
+        <li class="footer">Generated on Fri Jan 7 2022 04:04:31 for SPDK by
         <a href="http://www.doxygen.org/index.html">doxygen</a> 1.9.1 </li>
 </ul>
 </div>
