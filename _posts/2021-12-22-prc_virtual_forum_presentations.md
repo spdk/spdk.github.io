@@ -7,7 +7,7 @@ categories: news
 
 Thank you all for attending the SPDK, PMDK and Intel® Performance Analyzers PRC Online Forum. We had a very successful Online Forum this year with awesome content and presenters. You can download the presentations using the links below. Please note these are static PDFs, but some of the presentations made use of animations, so something may be lost in translation.
 
-The videos will be available in our [YouTube channel](https://www.youtube.com/channel/UCBJymdv0AXCcnbLtEw7jvBQ) later.
+The videos are available in our [YouTube channel](https://www.youtube.com/watch?v=G78SeVxm9Ic&list=PL4eJZ5XvN_LT29d-QniJ-j9gMwRiu4qrN).
 
 ## SPDK Presentations
 1. [State of the Project](https://ci.spdk.io/download/2021-virtual-forum-prc/Topic_02_2021_PRC_SPDK_State_of_the_Union_Intel_Jim.pdf)
