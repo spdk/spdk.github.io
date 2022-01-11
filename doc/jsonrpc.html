@@ -2483,6 +2483,50 @@ bdev_nvme_reset_controller</h2>
 <div class="line">  &quot;id&quot;: 1,</div>
 <div class="line">  &quot;result&quot;: true</div>
 <div class="line">}</div>
+</div><!-- fragment --><h2><a class="anchor" id="rpc_bdev_nvme_start_discovery"></a>
+bdev_nvme_start_discovery</h2>
+<p>Start a discovery service for the discovery subsystem of the specified transport ID.</p>
+<p>The discovery service will read the discovery log page for the specified discovery subsystem, and automatically attach to any subsystems found in the log page. When determining a controller name to use when attaching, it will use the 'name' parameter as a prefix, followed by a unique integer for that discovery service. If the discovery service identifies a subsystem that has been previously attached but is listed with a different path, it will use the same controller name as the previous entry, and connect as a multipath.</p>
+<p>When the discovery service sees that a subsystem entry has been removed from the log page, it will automatically detach from that controller as well.</p>
+<p>The 'name' is also used to later stop the discovery service.</p>
+<h3>Parameters</h3>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Prefix for NVMe controllers    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">trtype   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">NVMe-oF target trtype: rdma or tcp    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">traddr   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">NVMe-oF target address: ip    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">adrfam   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">NVMe-oF target adrfam: ipv4, ipv6    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">trsvcid   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">NVMe-oF target trsvcid: port number    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">hostnqn   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">NVMe-oF target hostnqn   </td></tr>
+</table>
+<h3>Example</h3>
+<p>Example request:</p>
+<div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
+<div class="line">  &quot;method&quot;: &quot;bdev_nvme_start_discovery&quot;,</div>
+<div class="line">  &quot;id&quot;: 1,</div>
+<div class="line">  &quot;params&quot;: {</div>
+<div class="line">    &quot;name&quot;: &quot;nvme_auto&quot;,</div>
+<div class="line">    &quot;trtype&quot;: &quot;tcp&quot;,</div>
+<div class="line">    &quot;traddr&quot;: &quot;127.0.0.1&quot;,</div>
+<div class="line">    &quot;hostnqn&quot;: &quot;nqn.2021-12.io.spdk:host1&quot;,</div>
+<div class="line">    &quot;adrfam&quot;: &quot;ipv4&quot;,</div>
+<div class="line">    &quot;trsvcid&quot;: &quot;4420&quot;</div>
+<div class="line">  }</div>
+<div class="line">}</div>
+</div><!-- fragment --><p>Example response:</p>
+<div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
+<div class="line">  &quot;id&quot;: 1,</div>
+<div class="line">  &quot;result&quot;: true</div>
+<div class="line">}</div>
 </div><!-- fragment --><h2><a class="anchor" id="rpc_bdev_nvme_cuse_register"></a>
 bdev_nvme_cuse_register</h2>
 <p>Register CUSE device on NVMe controller. This feature is considered as experimental.</p>
@@ -7344,7 +7388,7 @@ spdk_get_version</h2>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
 <ul>
-        <li class="footer">Generated on Mon Jan 10 2022 04:04:34 for SPDK by
+        <li class="footer">Generated on Tue Jan 11 2022 04:04:31 for SPDK by
         <a href="http://www.doxygen.org/index.html">doxygen</a> 1.9.1 </li>
 </ul>
 </div>
