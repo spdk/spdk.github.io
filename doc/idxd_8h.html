@@ -140,36 +140,36 @@ Functions</h2></td></tr>
 <tr class="memitem:ac01301f26f9fb1ac4606b934fe3df9f4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="idxd_8h.html#ac01301f26f9fb1ac4606b934fe3df9f4">spdk_idxd_batch_prep_dualcast</a> (struct spdk_idxd_io_channel *chan, struct idxd_batch *batch, void *dst1, void *dst2, const void *src, uint64_t nbytes, <a class="el" href="idxd_8h.html#a75c066c5425700c49f077e20484b50c1">spdk_idxd_req_cb</a> cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:ac01301f26f9fb1ac4606b934fe3df9f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Synchronous call to prepare a dualcast request into a previously initialized batch created with <a class="el" href="idxd_8h.html#af852541005333162d65230b70983b3e0" title="Create a batch sequence.">spdk_idxd_batch_create()</a>.  <a href="idxd_8h.html#ac01301f26f9fb1ac4606b934fe3df9f4">More...</a><br /></td></tr>
 <tr class="separator:ac01301f26f9fb1ac4606b934fe3df9f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac4e441dcb5b00b9f97835c07017f32ed"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="idxd_8h.html#ac4e441dcb5b00b9f97835c07017f32ed">spdk_idxd_submit_copy</a> (struct spdk_idxd_io_channel *chan, void *dst, const void *src, uint64_t nbytes, <a class="el" href="idxd_8h.html#a75c066c5425700c49f077e20484b50c1">spdk_idxd_req_cb</a> cb_fn, void *cb_arg)</td></tr>
-<tr class="memdesc:ac4e441dcb5b00b9f97835c07017f32ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Build and submit an idxd memory copy request.  <a href="idxd_8h.html#ac4e441dcb5b00b9f97835c07017f32ed">More...</a><br /></td></tr>
-<tr class="separator:ac4e441dcb5b00b9f97835c07017f32ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab90d42b827d1c435c10701acc131accc"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="idxd_8h.html#ab90d42b827d1c435c10701acc131accc">spdk_idxd_submit_copy</a> (struct spdk_idxd_io_channel *chan, struct iovec *diov, uint32_t diovcnt, struct iovec *siov, uint32_t siovcnt, <a class="el" href="idxd_8h.html#a75c066c5425700c49f077e20484b50c1">spdk_idxd_req_cb</a> cb_fn, void *cb_arg)</td></tr>
+<tr class="memdesc:ab90d42b827d1c435c10701acc131accc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Build and submit an idxd memory copy request.  <a href="idxd_8h.html#ab90d42b827d1c435c10701acc131accc">More...</a><br /></td></tr>
+<tr class="separator:ab90d42b827d1c435c10701acc131accc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aef2f83b678ea127b1818f759a615bdef"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="idxd_8h.html#aef2f83b678ea127b1818f759a615bdef">spdk_idxd_submit_dualcast</a> (struct spdk_idxd_io_channel *chan, void *dst1, void *dst2, const void *src, uint64_t nbytes, <a class="el" href="idxd_8h.html#a75c066c5425700c49f077e20484b50c1">spdk_idxd_req_cb</a> cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:aef2f83b678ea127b1818f759a615bdef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Build and submit an idxd dualcast request.  <a href="idxd_8h.html#aef2f83b678ea127b1818f759a615bdef">More...</a><br /></td></tr>
 <tr class="separator:aef2f83b678ea127b1818f759a615bdef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a29321770dd18270ac63feaf7ed1624ae"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="idxd_8h.html#a29321770dd18270ac63feaf7ed1624ae">spdk_idxd_batch_prep_compare</a> (struct spdk_idxd_io_channel *chan, struct idxd_batch *batch, void *src1, void *src2, uint64_t nbytes, <a class="el" href="idxd_8h.html#a75c066c5425700c49f077e20484b50c1">spdk_idxd_req_cb</a> cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:a29321770dd18270ac63feaf7ed1624ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Synchronous call to prepare a compare request into a previously initialized batch created with <a class="el" href="idxd_8h.html#af852541005333162d65230b70983b3e0" title="Create a batch sequence.">spdk_idxd_batch_create()</a>.  <a href="idxd_8h.html#a29321770dd18270ac63feaf7ed1624ae">More...</a><br /></td></tr>
 <tr class="separator:a29321770dd18270ac63feaf7ed1624ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a13e5209991017f518cfcc95e7d978aff"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="idxd_8h.html#a13e5209991017f518cfcc95e7d978aff">spdk_idxd_submit_compare</a> (struct spdk_idxd_io_channel *chan, void *src1, const void *src2, uint64_t nbytes, <a class="el" href="idxd_8h.html#a75c066c5425700c49f077e20484b50c1">spdk_idxd_req_cb</a> cb_fn, void *cb_arg)</td></tr>
-<tr class="memdesc:a13e5209991017f518cfcc95e7d978aff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Build and submit a memory compare request.  <a href="idxd_8h.html#a13e5209991017f518cfcc95e7d978aff">More...</a><br /></td></tr>
-<tr class="separator:a13e5209991017f518cfcc95e7d978aff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9e003700345c1a896c97c1c44d3b2a9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="idxd_8h.html#ae9e003700345c1a896c97c1c44d3b2a9">spdk_idxd_submit_compare</a> (struct spdk_idxd_io_channel *chan, struct iovec *siov1, size_t siov1cnt, struct iovec *siov2, size_t siov2cnt, <a class="el" href="idxd_8h.html#a75c066c5425700c49f077e20484b50c1">spdk_idxd_req_cb</a> cb_fn, void *cb_arg)</td></tr>
+<tr class="memdesc:ae9e003700345c1a896c97c1c44d3b2a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Build and submit a memory compare request.  <a href="idxd_8h.html#ae9e003700345c1a896c97c1c44d3b2a9">More...</a><br /></td></tr>
+<tr class="separator:ae9e003700345c1a896c97c1c44d3b2a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa806021f07d866c4551698cc7ded62d4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="idxd_8h.html#aa806021f07d866c4551698cc7ded62d4">spdk_idxd_batch_prep_fill</a> (struct spdk_idxd_io_channel *chan, struct idxd_batch *batch, void *dst, uint64_t fill_pattern, uint64_t nbytes, <a class="el" href="idxd_8h.html#a75c066c5425700c49f077e20484b50c1">spdk_idxd_req_cb</a> cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:aa806021f07d866c4551698cc7ded62d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Synchronous call to prepare a fill request into a previously initialized batch created with <a class="el" href="idxd_8h.html#af852541005333162d65230b70983b3e0" title="Create a batch sequence.">spdk_idxd_batch_create()</a>.  <a href="idxd_8h.html#aa806021f07d866c4551698cc7ded62d4">More...</a><br /></td></tr>
 <tr class="separator:aa806021f07d866c4551698cc7ded62d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac469f33c1519f5454b2dad56686a5d2f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="idxd_8h.html#ac469f33c1519f5454b2dad56686a5d2f">spdk_idxd_submit_fill</a> (struct spdk_idxd_io_channel *chan, void *dst, uint64_t fill_pattern, uint64_t nbytes, <a class="el" href="idxd_8h.html#a75c066c5425700c49f077e20484b50c1">spdk_idxd_req_cb</a> cb_fn, void *cb_arg)</td></tr>
-<tr class="memdesc:ac469f33c1519f5454b2dad56686a5d2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Build and submit a idxd memory fill request.  <a href="idxd_8h.html#ac469f33c1519f5454b2dad56686a5d2f">More...</a><br /></td></tr>
-<tr class="separator:ac469f33c1519f5454b2dad56686a5d2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af545cb67644c2639f0d571e2f345c464"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="idxd_8h.html#af545cb67644c2639f0d571e2f345c464">spdk_idxd_submit_fill</a> (struct spdk_idxd_io_channel *chan, struct iovec *diov, size_t diovcnt, uint64_t fill_pattern, <a class="el" href="idxd_8h.html#a75c066c5425700c49f077e20484b50c1">spdk_idxd_req_cb</a> cb_fn, void *cb_arg)</td></tr>
+<tr class="memdesc:af545cb67644c2639f0d571e2f345c464"><td class="mdescLeft">&#160;</td><td class="mdescRight">Build and submit a idxd memory fill request.  <a href="idxd_8h.html#af545cb67644c2639f0d571e2f345c464">More...</a><br /></td></tr>
+<tr class="separator:af545cb67644c2639f0d571e2f345c464"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1b8466819414ff01486bd5fcbdba90b3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="idxd_8h.html#a1b8466819414ff01486bd5fcbdba90b3">spdk_idxd_batch_prep_crc32c</a> (struct spdk_idxd_io_channel *chan, struct idxd_batch *batch, uint32_t *crc_dst, void *src, uint32_t seed, uint64_t nbytes, <a class="el" href="idxd_8h.html#a75c066c5425700c49f077e20484b50c1">spdk_idxd_req_cb</a> cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:a1b8466819414ff01486bd5fcbdba90b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Synchronous call to prepare a crc32c request into a previously initialized batch created with <a class="el" href="idxd_8h.html#af852541005333162d65230b70983b3e0" title="Create a batch sequence.">spdk_idxd_batch_create()</a>.  <a href="idxd_8h.html#a1b8466819414ff01486bd5fcbdba90b3">More...</a><br /></td></tr>
 <tr class="separator:a1b8466819414ff01486bd5fcbdba90b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad29163e49accd983322a1d1a10e9b5a6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="idxd_8h.html#ad29163e49accd983322a1d1a10e9b5a6">spdk_idxd_submit_crc32c</a> (struct spdk_idxd_io_channel *chan, uint32_t *crc_dst, void *src, uint32_t seed, uint64_t nbytes, <a class="el" href="idxd_8h.html#a75c066c5425700c49f077e20484b50c1">spdk_idxd_req_cb</a> cb_fn, void *cb_arg)</td></tr>
-<tr class="memdesc:ad29163e49accd983322a1d1a10e9b5a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Build and submit a memory CRC32-C request.  <a href="idxd_8h.html#ad29163e49accd983322a1d1a10e9b5a6">More...</a><br /></td></tr>
-<tr class="separator:ad29163e49accd983322a1d1a10e9b5a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73c22c4687cbe17ca91bc82345448d82"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="idxd_8h.html#a73c22c4687cbe17ca91bc82345448d82">spdk_idxd_submit_crc32c</a> (struct spdk_idxd_io_channel *chan, struct iovec *siov, size_t siovcnt, uint32_t seed, uint32_t *crc_dst, <a class="el" href="idxd_8h.html#a75c066c5425700c49f077e20484b50c1">spdk_idxd_req_cb</a> cb_fn, void *cb_arg)</td></tr>
+<tr class="memdesc:a73c22c4687cbe17ca91bc82345448d82"><td class="mdescLeft">&#160;</td><td class="mdescRight">Build and submit a memory CRC32-C request.  <a href="idxd_8h.html#a73c22c4687cbe17ca91bc82345448d82">More...</a><br /></td></tr>
+<tr class="separator:a73c22c4687cbe17ca91bc82345448d82"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a37bb396a3e3f26c59da712afab3db993"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="idxd_8h.html#a37bb396a3e3f26c59da712afab3db993">spdk_idxd_batch_prep_copy_crc32c</a> (struct spdk_idxd_io_channel *chan, struct idxd_batch *batch, void *dst, void *src, uint32_t *crc_dst, uint32_t seed, uint64_t nbytes, <a class="el" href="idxd_8h.html#a75c066c5425700c49f077e20484b50c1">spdk_idxd_req_cb</a> cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:a37bb396a3e3f26c59da712afab3db993"><td class="mdescLeft">&#160;</td><td class="mdescRight">Synchronous call to prepare a copy combined with crc32c request into a previously initialized batch created with <a class="el" href="idxd_8h.html#af852541005333162d65230b70983b3e0" title="Create a batch sequence.">spdk_idxd_batch_create()</a>.  <a href="idxd_8h.html#a37bb396a3e3f26c59da712afab3db993">More...</a><br /></td></tr>
 <tr class="separator:a37bb396a3e3f26c59da712afab3db993"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1003dbd55efafcb1ccf2045241a3d715"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="idxd_8h.html#a1003dbd55efafcb1ccf2045241a3d715">spdk_idxd_submit_copy_crc32c</a> (struct spdk_idxd_io_channel *chan, void *dst, void *src, uint32_t *crc_dst, uint32_t seed, uint64_t nbytes, <a class="el" href="idxd_8h.html#a75c066c5425700c49f077e20484b50c1">spdk_idxd_req_cb</a> cb_fn, void *cb_arg)</td></tr>
-<tr class="memdesc:a1003dbd55efafcb1ccf2045241a3d715"><td class="mdescLeft">&#160;</td><td class="mdescRight">Build and submit a copy combined with CRC32-C request.  <a href="idxd_8h.html#a1003dbd55efafcb1ccf2045241a3d715">More...</a><br /></td></tr>
-<tr class="separator:a1003dbd55efafcb1ccf2045241a3d715"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ae6e10a40c1dc9c28a6ebd82fe45b38"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="idxd_8h.html#a2ae6e10a40c1dc9c28a6ebd82fe45b38">spdk_idxd_submit_copy_crc32c</a> (struct spdk_idxd_io_channel *chan, struct iovec *diov, size_t diovcnt, struct iovec *siov, size_t siovcnt, uint32_t seed, uint32_t *crc_dst, <a class="el" href="idxd_8h.html#a75c066c5425700c49f077e20484b50c1">spdk_idxd_req_cb</a> cb_fn, void *cb_arg)</td></tr>
+<tr class="memdesc:a2ae6e10a40c1dc9c28a6ebd82fe45b38"><td class="mdescLeft">&#160;</td><td class="mdescRight">Build and submit a copy combined with CRC32-C request.  <a href="idxd_8h.html#a2ae6e10a40c1dc9c28a6ebd82fe45b38">More...</a><br /></td></tr>
+<tr class="separator:a2ae6e10a40c1dc9c28a6ebd82fe45b38"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac92c2ac49b4b576f2538aa58846d93c3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="idxd_8h.html#ac92c2ac49b4b576f2538aa58846d93c3">spdk_idxd_process_events</a> (struct spdk_idxd_io_channel *chan)</td></tr>
 <tr class="memdesc:ac92c2ac49b4b576f2538aa58846d93c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check for completed requests on an IDXD channel.  <a href="idxd_8h.html#ac92c2ac49b4b576f2538aa58846d93c3">More...</a><br /></td></tr>
 <tr class="separator:ac92c2ac49b4b576f2538aa58846d93c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1107,8 +1107,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a13e5209991017f518cfcc95e7d978aff"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a13e5209991017f518cfcc95e7d978aff">&#9670;&nbsp;</a></span>spdk_idxd_submit_compare()</h2>
+<a id="ae9e003700345c1a896c97c1c44d3b2a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae9e003700345c1a896c97c1c44d3b2a9">&#9670;&nbsp;</a></span>spdk_idxd_submit_compare()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1122,20 +1122,26 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>src1</em>, </td>
+          <td class="paramtype">struct iovec *&#160;</td>
+          <td class="paramname"><em>siov1</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const void *&#160;</td>
-          <td class="paramname"><em>src2</em>, </td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>siov1cnt</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint64_t&#160;</td>
-          <td class="paramname"><em>nbytes</em>, </td>
+          <td class="paramtype">struct iovec *&#160;</td>
+          <td class="paramname"><em>siov2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>siov2cnt</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1162,9 +1168,10 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">chan</td><td>IDXD channel to submit request. </td></tr>
-    <tr><td class="paramname">src1</td><td>First source to compare. </td></tr>
-    <tr><td class="paramname">src2</td><td>Second source to compare. </td></tr>
-    <tr><td class="paramname">nbytes</td><td>Number of bytes to compare. </td></tr>
+    <tr><td class="paramname">siov1</td><td>First source iovec </td></tr>
+    <tr><td class="paramname">siov1cnt</td><td>Number of elements in siov1 </td></tr>
+    <tr><td class="paramname">siov2</td><td>Second source iovec </td></tr>
+    <tr><td class="paramname">siov2cnt</td><td>Number of elements in siov2 </td></tr>
     <tr><td class="paramname">cb_fn</td><td>Callback function which will be called when the request is complete. </td></tr>
     <tr><td class="paramname">cb_arg</td><td>Opaque value which will be passed back as the arg parameter in the completion callback.</td></tr>
   </table>
@@ -1174,8 +1181,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ac4e441dcb5b00b9f97835c07017f32ed"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac4e441dcb5b00b9f97835c07017f32ed">&#9670;&nbsp;</a></span>spdk_idxd_submit_copy()</h2>
+<a id="ab90d42b827d1c435c10701acc131accc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab90d42b827d1c435c10701acc131accc">&#9670;&nbsp;</a></span>spdk_idxd_submit_copy()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1189,20 +1196,26 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>dst</em>, </td>
+          <td class="paramtype">struct iovec *&#160;</td>
+          <td class="paramname"><em>diov</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const void *&#160;</td>
-          <td class="paramname"><em>src</em>, </td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>diovcnt</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint64_t&#160;</td>
-          <td class="paramname"><em>nbytes</em>, </td>
+          <td class="paramtype">struct iovec *&#160;</td>
+          <td class="paramname"><em>siov</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>siovcnt</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1229,9 +1242,10 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">chan</td><td>IDXD channel to submit request. </td></tr>
-    <tr><td class="paramname">dst</td><td>Destination virtual address. </td></tr>
-    <tr><td class="paramname">src</td><td>Source virtual address. </td></tr>
-    <tr><td class="paramname">nbytes</td><td>Number of bytes to copy. </td></tr>
+    <tr><td class="paramname">diov</td><td>Destination iovec </td></tr>
+    <tr><td class="paramname">diovcnt</td><td>Number of elements in diov </td></tr>
+    <tr><td class="paramname">siov</td><td>Source iovec </td></tr>
+    <tr><td class="paramname">siovcnt</td><td>Number of elements in siov </td></tr>
     <tr><td class="paramname">cb_fn</td><td>Callback function which will be called when the request is complete. </td></tr>
     <tr><td class="paramname">cb_arg</td><td>Opaque value which will be passed back as the arg parameter in the completion callback.</td></tr>
   </table>
@@ -1241,8 +1255,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a1003dbd55efafcb1ccf2045241a3d715"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1003dbd55efafcb1ccf2045241a3d715">&#9670;&nbsp;</a></span>spdk_idxd_submit_copy_crc32c()</h2>
+<a id="a2ae6e10a40c1dc9c28a6ebd82fe45b38"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ae6e10a40c1dc9c28a6ebd82fe45b38">&#9670;&nbsp;</a></span>spdk_idxd_submit_copy_crc32c()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1256,20 +1270,26 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>dst</em>, </td>
+          <td class="paramtype">struct iovec *&#160;</td>
+          <td class="paramname"><em>diov</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>src</em>, </td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>diovcnt</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint32_t *&#160;</td>
-          <td class="paramname"><em>crc_dst</em>, </td>
+          <td class="paramtype">struct iovec *&#160;</td>
+          <td class="paramname"><em>siov</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>siovcnt</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1280,8 +1300,8 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint64_t&#160;</td>
-          <td class="paramname"><em>nbytes</em>, </td>
+          <td class="paramtype">uint32_t *&#160;</td>
+          <td class="paramname"><em>crc_dst</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1308,11 +1328,12 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">chan</td><td>IDXD channel to submit request. </td></tr>
-    <tr><td class="paramname">dst</td><td>Destination virtual address. </td></tr>
-    <tr><td class="paramname">src</td><td>Source virtual address. </td></tr>
-    <tr><td class="paramname">crc_dst</td><td>Resulting calculation. </td></tr>
+    <tr><td class="paramname">diov</td><td>Destination iovec </td></tr>
+    <tr><td class="paramname">diovcnt</td><td>Number of elements in diov </td></tr>
+    <tr><td class="paramname">siov</td><td>Source iovec </td></tr>
+    <tr><td class="paramname">siovcnt</td><td>Number of elements in siov </td></tr>
     <tr><td class="paramname">seed</td><td>Four byte CRC-32C seed value. </td></tr>
-    <tr><td class="paramname">nbytes</td><td>Number of bytes to calculate on. </td></tr>
+    <tr><td class="paramname">crc_dst</td><td>Resulting calculation. </td></tr>
     <tr><td class="paramname">cb_fn</td><td>Callback function which will be called when the request is complete. </td></tr>
     <tr><td class="paramname">cb_arg</td><td>Opaque value which will be passed back as the cb_arg parameter in the completion callback.</td></tr>
   </table>
@@ -1322,8 +1343,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ad29163e49accd983322a1d1a10e9b5a6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad29163e49accd983322a1d1a10e9b5a6">&#9670;&nbsp;</a></span>spdk_idxd_submit_crc32c()</h2>
+<a id="a73c22c4687cbe17ca91bc82345448d82"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a73c22c4687cbe17ca91bc82345448d82">&#9670;&nbsp;</a></span>spdk_idxd_submit_crc32c()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1337,14 +1358,14 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint32_t *&#160;</td>
-          <td class="paramname"><em>crc_dst</em>, </td>
+          <td class="paramtype">struct iovec *&#160;</td>
+          <td class="paramname"><em>siov</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>src</em>, </td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>siovcnt</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1355,8 +1376,8 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint64_t&#160;</td>
-          <td class="paramname"><em>nbytes</em>, </td>
+          <td class="paramtype">uint32_t *&#160;</td>
+          <td class="paramname"><em>crc_dst</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1383,10 +1404,10 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">chan</td><td>IDXD channel to submit request. </td></tr>
-    <tr><td class="paramname">crc_dst</td><td>Resulting calculation. </td></tr>
-    <tr><td class="paramname">src</td><td>Source virtual address. </td></tr>
+    <tr><td class="paramname">siov</td><td>Source iovec </td></tr>
+    <tr><td class="paramname">siovcnt</td><td>Number of elements in siov </td></tr>
     <tr><td class="paramname">seed</td><td>Four byte CRC-32C seed value. </td></tr>
-    <tr><td class="paramname">nbytes</td><td>Number of bytes to calculate on. </td></tr>
+    <tr><td class="paramname">crc_dst</td><td>Resulting calculation. </td></tr>
     <tr><td class="paramname">cb_fn</td><td>Callback function which will be called when the request is complete. </td></tr>
     <tr><td class="paramname">cb_arg</td><td>Opaque value which will be passed back as the cb_arg parameter in the completion callback.</td></tr>
   </table>
@@ -1470,8 +1491,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ac469f33c1519f5454b2dad56686a5d2f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac469f33c1519f5454b2dad56686a5d2f">&#9670;&nbsp;</a></span>spdk_idxd_submit_fill()</h2>
+<a id="af545cb67644c2639f0d571e2f345c464"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af545cb67644c2639f0d571e2f345c464">&#9670;&nbsp;</a></span>spdk_idxd_submit_fill()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1485,20 +1506,20 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>dst</em>, </td>
+          <td class="paramtype">struct iovec *&#160;</td>
+          <td class="paramname"><em>diov</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>diovcnt</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">uint64_t&#160;</td>
           <td class="paramname"><em>fill_pattern</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint64_t&#160;</td>
-          <td class="paramname"><em>nbytes</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1525,9 +1546,9 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">chan</td><td>IDXD channel to submit request. </td></tr>
-    <tr><td class="paramname">dst</td><td>Destination virtual address. </td></tr>
+    <tr><td class="paramname">diov</td><td>Destination iovec </td></tr>
+    <tr><td class="paramname">diovcnt</td><td>Number of elements in diov </td></tr>
     <tr><td class="paramname">fill_pattern</td><td>Repeating eight-byte pattern to use for memory fill. </td></tr>
-    <tr><td class="paramname">nbytes</td><td>Number of bytes to fill. </td></tr>
     <tr><td class="paramname">cb_fn</td><td>Callback function which will be called when the request is complete. </td></tr>
     <tr><td class="paramname">cb_arg</td><td>Opaque value which will be passed back as the cb_arg parameter in the completion callback.</td></tr>
   </table>
@@ -1543,7 +1564,7 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
 <ul>
-        <li class="footer">Generated on Tue Jan 11 2022 04:04:30 for SPDK by
+        <li class="footer">Generated on Wed Jan 12 2022 04:04:47 for SPDK by
         <a href="http://www.doxygen.org/index.html">doxygen</a> 1.9.1 </li>
 </ul>
 </div>
