@@ -386,6 +386,15 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_pci_driver_regis
 <tr class="memitem:a80b33324546e79d1478f25c185076336"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_8h.html#a80b33324546e79d1478f25c185076336">spdk_pci_device_unmap_bar</a> (struct <a class="el" href="structspdk__pci__device.html">spdk_pci_device</a> *dev, uint32_t bar, void *mapped_addr)</td></tr>
 <tr class="memdesc:a80b33324546e79d1478f25c185076336"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unmap a PCI BAR from the current process.  <a href="env_8h.html#a80b33324546e79d1478f25c185076336">More...</a><br /></td></tr>
 <tr class="separator:a80b33324546e79d1478f25c185076336"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ca80b3a77dfc8b35e65dc281737019d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_8h.html#a3ca80b3a77dfc8b35e65dc281737019d">spdk_pci_device_enable_interrupt</a> (struct <a class="el" href="structspdk__pci__device.html">spdk_pci_device</a> *dev)</td></tr>
+<tr class="memdesc:a3ca80b3a77dfc8b35e65dc281737019d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable PCI device interrupts.  <a href="env_8h.html#a3ca80b3a77dfc8b35e65dc281737019d">More...</a><br /></td></tr>
+<tr class="separator:a3ca80b3a77dfc8b35e65dc281737019d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab796808f5105da215e5da178ad39e3ac"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_8h.html#ab796808f5105da215e5da178ad39e3ac">spdk_pci_device_disable_interrupt</a> (struct <a class="el" href="structspdk__pci__device.html">spdk_pci_device</a> *dev)</td></tr>
+<tr class="memdesc:ab796808f5105da215e5da178ad39e3ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disable PCI device interrupts.  <a href="env_8h.html#ab796808f5105da215e5da178ad39e3ac">More...</a><br /></td></tr>
+<tr class="separator:ab796808f5105da215e5da178ad39e3ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b50d57653132fb21a10a4ff120125c7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_8h.html#a6b50d57653132fb21a10a4ff120125c7">spdk_pci_device_get_interrupt_efd</a> (struct <a class="el" href="structspdk__pci__device.html">spdk_pci_device</a> *dev)</td></tr>
+<tr class="memdesc:a6b50d57653132fb21a10a4ff120125c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get an event file descriptor assosiated with a PCI device interrupt.  <a href="env_8h.html#a6b50d57653132fb21a10a4ff120125c7">More...</a><br /></td></tr>
+<tr class="separator:a6b50d57653132fb21a10a4ff120125c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a10b6650e48ccffaea6ca59fe0b875da5"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_8h.html#a10b6650e48ccffaea6ca59fe0b875da5">spdk_pci_device_get_domain</a> (struct <a class="el" href="structspdk__pci__device.html">spdk_pci_device</a> *dev)</td></tr>
 <tr class="memdesc:a10b6650e48ccffaea6ca59fe0b875da5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the domain of a PCI device.  <a href="env_8h.html#a10b6650e48ccffaea6ca59fe0b875da5">More...</a><br /></td></tr>
 <tr class="separator:a10b6650e48ccffaea6ca59fe0b875da5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -3042,6 +3051,62 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_
 
 </div>
 </div>
+<a id="ab796808f5105da215e5da178ad39e3ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab796808f5105da215e5da178ad39e3ac">&#9670;&nbsp;</a></span>spdk_pci_device_disable_interrupt()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_pci_device_disable_interrupt </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structspdk__pci__device.html">spdk_pci_device</a> *&#160;</td>
+          <td class="paramname"><em>dev</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Disable PCI device interrupts. </p>
+<p>(Experimental)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dev</td><td>PCI device.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, negative value on error. </dd></dl>
+
+</div>
+</div>
+<a id="a3ca80b3a77dfc8b35e65dc281737019d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ca80b3a77dfc8b35e65dc281737019d">&#9670;&nbsp;</a></span>spdk_pci_device_enable_interrupt()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_pci_device_enable_interrupt </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structspdk__pci__device.html">spdk_pci_device</a> *&#160;</td>
+          <td class="paramname"><em>dev</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Enable PCI device interrupts. </p>
+<p>(Experimental)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dev</td><td>PCI device.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, negative value on error. </dd></dl>
+
+</div>
+</div>
 <a id="a71622d665e7b50f34d2279e7e86b557e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a71622d665e7b50f34d2279e7e86b557e">&#9670;&nbsp;</a></span>spdk_pci_device_get_addr()</h2>
 
@@ -3228,6 +3293,34 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>PCI ID. </dd></dl>
+
+</div>
+</div>
+<a id="a6b50d57653132fb21a10a4ff120125c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b50d57653132fb21a10a4ff120125c7">&#9670;&nbsp;</a></span>spdk_pci_device_get_interrupt_efd()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_pci_device_get_interrupt_efd </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structspdk__pci__device.html">spdk_pci_device</a> *&#160;</td>
+          <td class="paramname"><em>dev</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get an event file descriptor assosiated with a PCI device interrupt. </p>
+<p>(Experimental)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dev</td><td>PCI device.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Event file descriptor on success, negative value on error. </dd></dl>
 
 </div>
 </div>
@@ -4337,7 +4430,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
 <ul>
-        <li class="footer">Generated on Thu Jan 13 2022 04:04:40 for SPDK by
+        <li class="footer">Generated on Fri Jan 14 2022 04:04:46 for SPDK by
         <a href="http://www.doxygen.org/index.html">doxygen</a> 1.9.1 </li>
 </ul>
 </div>

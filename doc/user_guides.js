@@ -151,6 +151,8 @@ var user_guides =
         [ "thread_set_cpumask", "jsonrpc.html#rpc_thread_set_cpumask", null ],
         [ "trace_enable_tpoint_group", "jsonrpc.html#rpc_trace_enable_tpoint_group", null ],
         [ "trace_disable_tpoint_group", "jsonrpc.html#rpc_trace_disable_tpoint_group", null ],
+        [ "trace_set_tpoint_mask", "jsonrpc.html#rpc_trace_set_tpoint_mask", null ],
+        [ "trace_clear_tpoint_mask", "jsonrpc.html#rpc_trace_clear_tpoint_mask", null ],
         [ "trace_get_tpoint_group_mask", "jsonrpc.html#rpc_trace_get_tpoint_group_mask", null ],
         [ "log_set_print_level", "jsonrpc.html#rpc_log_set_print_level", null ],
         [ "log_get_print_level", "jsonrpc.html#rpc_log_get_print_level", null ],
