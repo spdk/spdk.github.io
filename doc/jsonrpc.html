@@ -2377,6 +2377,7 @@ bdev_nvme_set_hotplug</h2>
 </div><!-- fragment --><h2><a class="anchor" id="rpc_bdev_nvme_attach_controller"></a>
 bdev_nvme_attach_controller</h2>
 <p>Construct <a class="el" href="bdev.html#bdev_config_nvme">NVMe bdev</a>. This RPC can also be used to add additional paths to an existing controller to enable multipathing. This is done by specifying the <code>name</code> parameter as an existing controller. When adding an additional path, the hostnqn, hostsvcid, hostaddr, prchk_reftag, and prchk_guard_arguments must not be specified and are assumed to have the same value as the existing path.</p>
+<p>The parameters, <code>ctrlr_loss_timeout_sec</code>, <code>reconnect_delay_sec</code>, and <code>fast_io_fail_timeout_sec</code>, are mutually dependent. If <code>reconnect_delay_sec</code> is non-zero, <code>ctrlr_loss_timeout_sec</code> has to be -1 or not less than <code>reconnect_delay_sec</code>. If <code>reconnect_delay_sec</code> is zero, <code>ctrlr_loss_timeout_sec</code> has to be zero. If <code>fast_io_fail_timeout_sec</code> is not zero, it has to be not less than <code>reconnect_delay_sec</code> and less than <code>ctrlr_loss_timeout_sec</code> if <code>ctrlr_loss_timeout_sec</code> is not -1.</p>
 <h3>Result</h3>
 <p>Array of names of newly created bdevs.</p>
 <h3>Parameters</h3>
@@ -2414,7 +2415,13 @@ bdev_nvme_attach_controller</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">multipath   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Multipathing behavior: disable, failover, multipath. Default is failover.    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">num_io_queues   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint32_t   </td><td class="markdownTableBodyNone">The number of IO queues to request during initialization. Range: (0, UINT16_MAX + 1], Default is 1024.   </td></tr>
+<td class="markdownTableBodyNone">num_io_queues   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint32_t   </td><td class="markdownTableBodyNone">The number of IO queues to request during initialization. Range: (0, UINT16_MAX + 1], Default is 1024.    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">ctrlr_loss_timeout_sec   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">Time to wait until ctrlr is reconnected before deleting ctrlr. -1 means infinite reconnects. 0 means no reconnect.    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">reconnect_delay_sec   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">Time to delay a reconnect trial. 0 means no reconnect.    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">fast_io_fail_timeout_sec   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">Time to wait until ctrlr is reconnected before failing I/O to ctrlr. 0 means no such timeout.   </td></tr>
 </table>
 <h3>Example</h3>
 <p>Example request:</p>
@@ -7474,7 +7481,7 @@ spdk_get_version</h2>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
 <ul>
-        <li class="footer">Generated on Mon Jan 17 2022 04:04:39 for SPDK by
+        <li class="footer">Generated on Tue Jan 18 2022 04:04:46 for SPDK by
         <a href="http://www.doxygen.org/index.html">doxygen</a> 1.9.1 </li>
 </ul>
 </div>
