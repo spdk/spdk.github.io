@@ -98,6 +98,7 @@ v22.01: (Upcoming Release)</h1>
 <p>Many APIs are now vectored rather than scalar, meaning they take iovecs instead of individual pointers.</p>
 <h2>nvme</h2>
 <p>API <code>spdk_nvme_trtype_is_fabrics</code> was added to return existing transport type is fabric or not.</p>
+<p>API <code>spdk_nvme_poll_group_remove</code> was limited to be available only for a disconnected qpair in the group.</p>
 <h2>bdev_nvme</h2>
 <p>Added <code>num_io_queues</code> to <code>bdev_nvme_attach_controller</code> RPC to allow specifying amount of requested IO queues.</p>
 <h2>bdev</h2>
@@ -1418,7 +1419,7 @@ v16.06: NVMf userspace target</h1>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
 <ul>
-        <li class="footer">Generated on Tue Jan 18 2022 04:04:46 for SPDK by
+        <li class="footer">Generated on Wed Jan 19 2022 04:04:45 for SPDK by
         <a href="http://www.doxygen.org/index.html">doxygen</a> 1.9.1 </li>
 </ul>
 </div>

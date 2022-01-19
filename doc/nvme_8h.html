@@ -600,7 +600,7 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_trty
 <tr class="memdesc:ade4eafe3d6b7b4a0a1c317a49b3ba1e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add an spdk_nvme_qpair to a poll group.  <a href="nvme_8h.html#ade4eafe3d6b7b4a0a1c317a49b3ba1e5">More...</a><br /></td></tr>
 <tr class="separator:ade4eafe3d6b7b4a0a1c317a49b3ba1e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2ef925aeb99c7791bcec5c7305c03422"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a2ef925aeb99c7791bcec5c7305c03422">spdk_nvme_poll_group_remove</a> (struct spdk_nvme_poll_group *group, struct spdk_nvme_qpair *qpair)</td></tr>
-<tr class="memdesc:a2ef925aeb99c7791bcec5c7305c03422"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove an spdk_nvme_qpair from a poll group.  <a href="nvme_8h.html#a2ef925aeb99c7791bcec5c7305c03422">More...</a><br /></td></tr>
+<tr class="memdesc:a2ef925aeb99c7791bcec5c7305c03422"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove a disconnected spdk_nvme_qpair from a poll group.  <a href="nvme_8h.html#a2ef925aeb99c7791bcec5c7305c03422">More...</a><br /></td></tr>
 <tr class="separator:a2ef925aeb99c7791bcec5c7305c03422"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac4cea1ea33592903a9478d75f809ded6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#ac4cea1ea33592903a9478d75f809ded6">spdk_nvme_poll_group_destroy</a> (struct spdk_nvme_poll_group *group)</td></tr>
 <tr class="memdesc:ac4cea1ea33592903a9478d75f809ded6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy an empty poll group.  <a href="nvme_8h.html#ac4cea1ea33592903a9478d75f809ded6">More...</a><br /></td></tr>
@@ -8287,7 +8287,7 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_trty
       </table>
 </div><div class="memdoc">
 
-<p>Remove an spdk_nvme_qpair from a poll group. </p>
+<p>Remove a disconnected spdk_nvme_qpair from a poll group. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">group</td><td>The group from which to remove the qpair. </td></tr>
@@ -8295,7 +8295,7 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_trty
   </table>
   </dd>
 </dl>
-<p>return 0 on success, -ENOENT if the qpair is not found in the group, or -EPROTO on a protocol (transport) specific failure. </p>
+<p>return 0 on success, -ENOENT if the qpair is not found in the group, -EINVAL if the qpair is not disconnected in the group, or -EPROTO on a protocol (transport) specific failure. </p>
 
 </div>
 </div>
@@ -9330,7 +9330,7 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_trty
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
 <ul>
-        <li class="footer">Generated on Tue Jan 18 2022 04:04:46 for SPDK by
+        <li class="footer">Generated on Wed Jan 19 2022 04:04:44 for SPDK by
         <a href="http://www.doxygen.org/index.html">doxygen</a> 1.9.1 </li>
 </ul>
 </div>

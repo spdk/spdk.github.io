@@ -1,16 +1,5 @@
 var NAVTREEINDEX18 =
 {
-"structspdk__gpt__header.html#aa541125aa4c3e8ec96cc3c502960047c":[14,0,73,10],
-"structspdk__gpt__header.html#ab0d0585f01964325ab224eeb6980d2b7":[14,0,73,3],
-"structspdk__gpt__header.html#ab9e76375ba12998aebd8ce3184a38937":[14,0,73,1],
-"structspdk__gpt__header.html#ae7c11865ae0b0003cec280abc7e4bcd4":[14,0,73,11],
-"structspdk__gpt__header.html#ae94d375dff9d140708b7d8d4ed36e021":[14,0,73,13],
-"structspdk__gpt__header.html#af82bb3a9b39e405b7f786cd50d56a608":[14,0,73,4],
-"structspdk__gpt__partition__entry.html":[14,0,74],
-"structspdk__gpt__partition__entry.html#a14e1a76354dc7b7e79405a73357151d0":[14,0,74,6],
-"structspdk__gpt__partition__entry.html#a21abaa88f93737d1139db1f75b18e4ca":[14,0,74,2],
-"structspdk__gpt__partition__entry.html#a3320b98cb8581796faaee58ccc26c4ab":[14,0,74,1],
-"structspdk__gpt__partition__entry.html#a43d1cdb9d84c50277025c9bc92e822e7":[14,0,74,9],
 "structspdk__gpt__partition__entry.html#a599b20cdd7340e7e6eb078fd03a49119":[14,0,74,7],
 "structspdk__gpt__partition__entry.html#a8ac5ebf4891dbfdf7a5c00232ff27bb3":[14,0,74,4],
 "structspdk__gpt__partition__entry.html#aa48004de4949638935e791acaa19bf8d":[14,0,74,5],
@@ -249,5 +238,16 @@ var NAVTREEINDEX18 =
 "structspdk__mbr__partition__entry.html":[14,0,95],
 "structspdk__mbr__partition__entry.html#a8bba2ff203f01fe4c2cb64faa66777ba":[14,0,95,4],
 "structspdk__mbr__partition__entry.html#ab56523303a39558a9ffa23ff6dd1ed23":[14,0,95,0],
-"structspdk__mbr__partition__entry.html#ab74ba691339bc32ed6e03af6f75927a1":[14,0,95,2]
+"structspdk__mbr__partition__entry.html#ab74ba691339bc32ed6e03af6f75927a1":[14,0,95,2],
+"structspdk__mbr__partition__entry.html#ab96ad021e0366090b99b89ef32784fe3":[14,0,95,1],
+"structspdk__mbr__partition__entry.html#ad49a544b0562f2c42fbe097bed2a3209":[14,0,95,6],
+"structspdk__mbr__partition__entry.html#ae82f31d2ed8398960fee591567137c73":[14,0,95,5],
+"structspdk__mbr__partition__entry.html#af28d34fafdf0c27e70cefdf1a6e5fbeb":[14,0,95,3],
+"structspdk__mem__map__ops.html":[14,0,96],
+"structspdk__mem__map__ops.html#a08ac3d51bc6941f140d262e02e233f55":[14,0,96,1],
+"structspdk__mem__map__ops.html#a31f979613595b1d324ffd58ff60cd69d":[14,0,96,0],
+"structspdk__memory__domain__ctx.html":[14,0,97],
+"structspdk__memory__domain__ctx.html#a9bcf2ca1a7b61974248616b10fe922a1":[14,0,97,0],
+"structspdk__memory__domain__ctx.html#aa1f0f4f3f824623ddcb028df383f4d10":[14,0,97,1],
+"structspdk__memory__domain__rdma__ctx.html":[14,0,98]
 };

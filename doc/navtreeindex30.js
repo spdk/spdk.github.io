@@ -1,16 +1,5 @@
 var NAVTREEINDEX30 =
 {
-"vhost_8h.html#aed851ed4cfcdf69b6221c8cad4688353":[15,0,63,8],
-"vhost_8h.html#af358eac95a16bd456349fcfaa00379bb":[15,0,63,10],
-"vhost_8h.html#afd4fd557673a9bc3518add4f5c0d611b":[15,0,63,13],
-"vhost_8h.html#afd7159f8eb1e0d65dad5bedaa6cc5e43":[15,0,63,20],
-"vhost_8h.html#afe5b0a12a12a26d2ddfe6a64f2a8a5e2":[15,0,63,14],
-"vhost_processing.html":[2,5],
-"vhost_processing.html#vhost_processing_init":[2,5,3],
-"vhost_processing.html#vhost_processing_intro":[2,5,1],
-"vhost_processing.html#vhost_processing_io_path":[2,5,4],
-"vhost_processing.html#vhost_processing_qemu":[2,5,2],
-"vhost_processing.html#vhost_processing_toc":[2,5,0],
 "vhost_processing.html#vhost_spdk_optimizations":[2,5,4,0],
 "virtio.html":[7,3],
 "virtio.html#virtio_2mb":[7,3,1],
