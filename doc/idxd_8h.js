@@ -2,7 +2,6 @@ var idxd_8h =
 [
     [ "spdk_idxd_attach_cb", "idxd_8h.html#a4d941aea0b11a77815cfdd10b1c3c22b", null ],
     [ "spdk_idxd_req_cb", "idxd_8h.html#a75c066c5425700c49f077e20484b50c1", null ],
-    [ "spdk_idxd_chan_get_max_operations", "idxd_8h.html#a8ffd7955fde05b71ed84d455bfd67287", null ],
     [ "spdk_idxd_detach", "idxd_8h.html#aa6e6f3dcce485f4b3b8ba36fe4c03f93", null ],
     [ "spdk_idxd_get_channel", "idxd_8h.html#ae8fa809d994d290b255dd3dab1f1903b", null ],
     [ "spdk_idxd_get_socket", "idxd_8h.html#a627f2731d0965d9b6a7c8bc317af71eb", null ],

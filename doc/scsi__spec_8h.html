@@ -284,9 +284,10 @@ Enumerations</h2></td></tr>
 &#160;&#160;<b>SPDK_SCSI_ASC_INVALID_FIELD_IN_CDB</b> = 0x24
 , <b>SPDK_SCSI_ASC_LOGICAL_UNIT_NOT_SUPPORTED</b> = 0x25
 , <b>SPDK_SCSI_ASC_WRITE_PROTECTED</b> = 0x27
-, <b>SPDK_SCSI_ASC_FORMAT_COMMAND_FAILED</b> = 0x31
+, <b>SPDK_SCSI_ASC_CAPACITY_DATA_HAS_CHANGED</b> = 0x2a
 , <br />
-&#160;&#160;<b>SPDK_SCSI_ASC_SAVING_PARAMETERS_NOT_SUPPORTED</b> = 0x39
+&#160;&#160;<b>SPDK_SCSI_ASC_FORMAT_COMMAND_FAILED</b> = 0x31
+, <b>SPDK_SCSI_ASC_SAVING_PARAMETERS_NOT_SUPPORTED</b> = 0x39
 , <b>SPDK_SCSI_ASC_INTERNAL_TARGET_FAILURE</b> = 0x44
 <br />
  }</td></tr>
@@ -303,6 +304,7 @@ Enumerations</h2></td></tr>
 , <b>SPDK_SCSI_ASCQ_POWER_LOSS_EXPECTED</b> = 0x08
 , <br />
 &#160;&#160;<b>SPDK_SCSI_ASCQ_INVALID_LU_IDENTIFIER</b> = 0x09
+, <b>SPDK_SCSI_ASCQ_CAPACITY_DATA_HAS_CHANGED</b> = 0x09
 <br />
  }</td></tr>
 <tr class="separator:a24ba0add244a77fed12d9b6d859a912e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -678,7 +680,7 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
 <ul>
-        <li class="footer">Generated on Wed Jan 19 2022 04:04:44 for SPDK by
+        <li class="footer">Generated on Thu Jan 20 2022 04:04:44 for SPDK by
         <a href="http://www.doxygen.org/index.html">doxygen</a> 1.9.1 </li>
 </ul>
 </div>

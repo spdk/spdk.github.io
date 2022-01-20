@@ -171,6 +171,7 @@ var scsi__spec_8h =
       [ "SPDK_SCSI_ASC_INVALID_FIELD_IN_CDB", "scsi__spec_8h.html#aa6d2fce08711be74571bbc61f48e9cfba648649120206505278e2a184e521c25d", null ],
       [ "SPDK_SCSI_ASC_LOGICAL_UNIT_NOT_SUPPORTED", "scsi__spec_8h.html#aa6d2fce08711be74571bbc61f48e9cfbaac33197cbf5a53b90ca3c3156e63797c", null ],
       [ "SPDK_SCSI_ASC_WRITE_PROTECTED", "scsi__spec_8h.html#aa6d2fce08711be74571bbc61f48e9cfbaed1831fece9bb0a1ef98dc2c167f2220", null ],
+      [ "SPDK_SCSI_ASC_CAPACITY_DATA_HAS_CHANGED", "scsi__spec_8h.html#aa6d2fce08711be74571bbc61f48e9cfbad855318ea7d2aa7a44c6553b98b65cea", null ],
       [ "SPDK_SCSI_ASC_FORMAT_COMMAND_FAILED", "scsi__spec_8h.html#aa6d2fce08711be74571bbc61f48e9cfbae98af4e3081326e272a4201626f75626", null ],
       [ "SPDK_SCSI_ASC_SAVING_PARAMETERS_NOT_SUPPORTED", "scsi__spec_8h.html#aa6d2fce08711be74571bbc61f48e9cfbac61942ba767d3125806821ffb2ffbefd", null ],
       [ "SPDK_SCSI_ASC_INTERNAL_TARGET_FAILURE", "scsi__spec_8h.html#aa6d2fce08711be74571bbc61f48e9cfba7fe3c3051b65e575a163d1d8bbd3a576", null ]
@@ -184,7 +185,8 @@ var scsi__spec_8h =
       [ "SPDK_SCSI_ASCQ_NO_ACCESS_RIGHTS", "scsi__spec_8h.html#a24ba0add244a77fed12d9b6d859a912eadf4512dfaec55cbbf4e9d5571c450410", null ],
       [ "SPDK_SCSI_ASCQ_LOGICAL_BLOCK_REF_TAG_CHECK_FAILED", "scsi__spec_8h.html#a24ba0add244a77fed12d9b6d859a912eac807bd7a4907ed235930a1bdae683aa9", null ],
       [ "SPDK_SCSI_ASCQ_POWER_LOSS_EXPECTED", "scsi__spec_8h.html#a24ba0add244a77fed12d9b6d859a912ea10ee6021a73395044a4f39372b145dcc", null ],
-      [ "SPDK_SCSI_ASCQ_INVALID_LU_IDENTIFIER", "scsi__spec_8h.html#a24ba0add244a77fed12d9b6d859a912ea039386083411554b1bb0f4cef7e92218", null ]
+      [ "SPDK_SCSI_ASCQ_INVALID_LU_IDENTIFIER", "scsi__spec_8h.html#a24ba0add244a77fed12d9b6d859a912ea039386083411554b1bb0f4cef7e92218", null ],
+      [ "SPDK_SCSI_ASCQ_CAPACITY_DATA_HAS_CHANGED", "scsi__spec_8h.html#a24ba0add244a77fed12d9b6d859a912eaa5e068ee0495536e9758e0de009bb170", null ]
     ] ],
     [ "spdk_scsi_group_code", "scsi__spec_8h.html#aba1130bf4d46d470c64c885c79e6156a", [
       [ "SPDK_SCSI_6BYTE_CMD", "scsi__spec_8h.html#aba1130bf4d46d470c64c885c79e6156aab9df17ce5b8fb78808d37a62359ed7db", null ],
