@@ -90,8 +90,9 @@ $(document).ready(function(){initNavTree('changelog.html',''); initResizable(); 
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><p><a class="anchor" id="md_changelog"></a> </p>
-<h1><a class="anchor" id="changelog-v22-01"></a>
-v22.01: (Upcoming Release)</h1>
+<h1><a class="anchor" id="changelog-v22-05"></a>
+v22.05: (Upcoming Release)</h1>
+<h1>v22.01</h1>
 <h2>accel</h2>
 <p>The batching capability was removed. Batching is now considered an implementation detail of the low level drivers.</p>
 <h2>idxd</h2>
@@ -99,11 +100,12 @@ v22.01: (Upcoming Release)</h1>
 <h2>nvme</h2>
 <p>API <code>spdk_nvme_trtype_is_fabrics</code> was added to return existing transport type is fabric or not.</p>
 <p>API <code>spdk_nvme_poll_group_remove</code> was limited to be available only for a disconnected qpair in the group.</p>
-<h2>bdev_nvme</h2>
-<p>Added <code>num_io_queues</code> to <code>bdev_nvme_attach_controller</code> RPC to allow specifying amount of requested IO queues.</p>
 <h2>bdev</h2>
+<p>The NVMe bdev module supports multipath and improved I/O error resiliency.</p>
 <p>The parameter <code>retry_count</code> of the RPC <code>bdev_nvme_set_options</code> was deprecated and will be removed in SPDK 22.04, and the parameter <code>transport_retry_count</code> is added and used instead.</p>
 <p>An new parameter <code>bdev_retry_count</code> is added to the RPC <code>bdev_nvme_set_options</code>.</p>
+<p>New parameters, <code>ctrlr_loss_timeout_sec</code>, <code>reconnect_delay_sec</code>, and <code>fast_io_fail_timeout_sec</code>, are added to the RPC <code>bdev_nvme_attach_controller</code>.</p>
+<p>An new parameter <code>num_io_queues</code> is added to <code>bdev_nvme_attach_controller</code> RPC to allow specifying amount of requested IO queues.</p>
 <p>Added 'key_file' parameter to the 'rbd_register_cluster' RPC. It is an optional parameter to specify a keyring file to connect to a RADOS cluster.</p>
 <h2>nvme</h2>
 <p>New APIs, <code>spdk_nvme_ctrlr_disconnect</code>, <code>spdk_nvme_ctrlr_reconnect_async</code>, and <code>spdk_nvme_ctrlr_reconnect_poll_async</code>, have been added to improve error recovery, and the existing APIs,<code>spdk_nvme_ctrlr_reset_async</code> and <code>spdk_nvme_ctrlr_reset_poll_async</code> were deprecated.</p>
@@ -1421,7 +1423,7 @@ v16.06: NVMf userspace target</h1>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
 <ul>
-        <li class="footer">Generated on Thu Jan 20 2022 04:04:45 for SPDK by
+        <li class="footer">Generated on Fri Jan 21 2022 04:04:49 for SPDK by
         <a href="http://www.doxygen.org/index.html">doxygen</a> 1.9.1 </li>
 </ul>
 </div>

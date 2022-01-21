@@ -14,7 +14,7 @@ var intro =
       [ "Running An Example", "vagrant.html#vagrant_example", null ]
     ] ],
     [ "Changelog", "changelog.html", [
-      [ "v22.01: (Upcoming Release)", "changelog.html#changelog-v22-01", null ],
+      [ "v22.05: (Upcoming Release)", "changelog.html#changelog-v22-05", null ],
       [ "v20.07: SPDK CSI driver, new accel_fw commands, I/O abort support", "changelog.html#changelog-v20-07", null ],
       [ "v20.04: SPDK Top, IDXD, NVMe qpair groups", "changelog.html#changelog-v20-04", null ],
       [ "v20.01: Optimized thin provisioning, FTL bdev, VMD hot plug, FUSED support", "changelog.html#changelog-v20-01", null ],

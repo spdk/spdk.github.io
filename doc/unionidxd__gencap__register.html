@@ -108,12 +108,12 @@ struct {</td></tr>
 <tr class="memitem:a64dc840b66b87aa6c4c9d87504ba8c91"><td class="memItemLeft" >
 &#160;&#160;&#160;uint64_t&#160;&#160;&#160;<b>cache_control_cache</b>: 1</td></tr>
 <tr class="separator:a64dc840b66b87aa6c4c9d87504ba8c91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca54e51b409927ae8dd27e2b9ad18650"><td class="memItemLeft" >
+&#160;&#160;&#160;uint64_t&#160;&#160;&#160;<b>command_cap</b>: 1</td></tr>
+<tr class="separator:aca54e51b409927ae8dd27e2b9ad18650"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acde77d387f6c7da7bf563bcda310ca2d"><td class="memItemLeft" >
 &#160;&#160;&#160;uint64_t&#160;&#160;&#160;<b>rsvd</b>: 3</td></tr>
 <tr class="separator:acde77d387f6c7da7bf563bcda310ca2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af88a60f692f52de99ff9ce569418672f"><td class="memItemLeft" >
-&#160;&#160;&#160;uint64_t&#160;&#160;&#160;<b>int_handle_req</b>: 1</td></tr>
-<tr class="separator:af88a60f692f52de99ff9ce569418672f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa32c577d2f815bb80c82a58497049261"><td class="memItemLeft" >
 &#160;&#160;&#160;uint64_t&#160;&#160;&#160;<b>dest_readback</b>: 1</td></tr>
 <tr class="separator:aa32c577d2f815bb80c82a58497049261"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -132,14 +132,11 @@ struct {</td></tr>
 <tr class="memitem:a7521a9c429fec172a328b293f71b2c9b"><td class="memItemLeft" >
 &#160;&#160;&#160;uint64_t&#160;&#160;&#160;<b>max_ims_mult</b>: 6</td></tr>
 <tr class="separator:a7521a9c429fec172a328b293f71b2c9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a61376eb14d84ca9f51da39b7d4a03c76"><td class="memItemLeft" >
-&#160;&#160;&#160;uint64_t&#160;&#160;&#160;<b>config_en</b>: 1</td></tr>
-<tr class="separator:a61376eb14d84ca9f51da39b7d4a03c76"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a75369527facc340101d15859888ee606"><td class="memItemLeft" >
-&#160;&#160;&#160;uint64_t&#160;&#160;&#160;<b>max_descs_per_engine</b>: 8</td></tr>
-<tr class="separator:a75369527facc340101d15859888ee606"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c538e0c06243199bf6b092b1a4c7789"><td class="memItemLeft" >
+&#160;&#160;&#160;uint64_t&#160;&#160;&#160;<b>config_support</b>: 1</td></tr>
+<tr class="separator:a5c538e0c06243199bf6b092b1a4c7789"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acd20606449a86bc67f347ced14b97a9c"><td class="memItemLeft" >
-&#160;&#160;&#160;uint64_t&#160;&#160;&#160;<b>rsvd3</b>: 24</td></tr>
+&#160;&#160;&#160;uint64_t&#160;&#160;&#160;<b>rsvd3</b>: 32</td></tr>
 <tr class="separator:acd20606449a86bc67f347ced14b97a9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa9defe4fc8eee570f7659f30080d92fe"><td class="memItemLeft" valign="top">};&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
 <tr class="separator:aa9defe4fc8eee570f7659f30080d92fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -156,7 +153,7 @@ uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>raw</b></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
 <ul>
-        <li class="footer">Generated on Thu Jan 20 2022 04:04:45 for SPDK by
+        <li class="footer">Generated on Fri Jan 21 2022 04:04:49 for SPDK by
         <a href="http://www.doxygen.org/index.html">doxygen</a> 1.9.1 </li>
 </ul>
 </div>

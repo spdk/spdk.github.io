@@ -47,6 +47,7 @@ var idxd__spec_8h =
     [ "PORTAL_SIZE", "idxd__spec_8h.html#a5167dc2784eb0af082b29729a7167edc", null ],
     [ "PORTAL_STRIDE", "idxd__spec_8h.html#ad9100635bc2dd992fe20dd422af2d33e", null ],
     [ "WQ_TOTAL_PORTAL_SIZE", "idxd__spec_8h.html#a4db95d22ddad06ff83e6c9ac64783406", null ],
+    [ "WQCFG_SHIFT", "idxd__spec_8h.html#a04754c7d25c3ab34b08a1f735e572d00", null ],
     [ "dsa_completion_status", "idxd__spec_8h.html#a779d8ce10ad90611e808db6366fd1a7e", [
       [ "IDXD_COMP_NONE", "idxd__spec_8h.html#a779d8ce10ad90611e808db6366fd1a7ea8f9b37bf616515883363aa12c1b57b98", null ],
       [ "IDXD_COMP_SUCCESS", "idxd__spec_8h.html#a779d8ce10ad90611e808db6366fd1a7eac63a4a6d36a163922afc31092887ab05", null ],
