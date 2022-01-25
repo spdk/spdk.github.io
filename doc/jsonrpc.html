@@ -2252,7 +2252,22 @@ bdev_aio_create</h2>
 <div class="line">  &quot;id&quot;: 1,</div>
 <div class="line">  &quot;result&quot;: &quot;Aio0&quot;</div>
 <div class="line">}</div>
-</div><!-- fragment --><h2><a class="anchor" id="rpc_bdev_aio_delete"></a>
+</div><!-- fragment --><h2><a class="anchor" id="rpc_bdev_aio_rescan"></a>
+bdev_aio_rescan</h2>
+<p>Rescan the size of <a class="el" href="bdev.html#bdev_config_aio">Linux AIO bdev</a>.</p>
+<h3>Parameters</h3>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Bdev name   </td></tr>
+</table>
+<h3>Example</h3>
+<p>Example request:</p>
+<p>~~json { "params": { "name": "Aio0" }, "jsonrpc": "2.0", "method": "bdev_aio_rescan", "id": 1 } ~~</p>
+<p>Example response:</p>
+<p>~~json { "jsonrpc": "2.0", "id": 1, "result": true } ~~</p>
+<h2><a class="anchor" id="rpc_bdev_aio_delete"></a>
 bdev_aio_delete</h2>
 <p>Delete <a class="el" href="bdev.html#bdev_config_aio">Linux AIO bdev</a>.</p>
 <h3>Parameters</h3>
@@ -7481,7 +7496,7 @@ spdk_get_version</h2>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
 <ul>
-        <li class="footer">Generated on Mon Jan 24 2022 04:04:41 for SPDK by
+        <li class="footer">Generated on Tue Jan 25 2022 04:04:43 for SPDK by
         <a href="http://www.doxygen.org/index.html">doxygen</a> 1.9.1 </li>
 </ul>
 </div>

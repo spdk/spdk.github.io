@@ -100,6 +100,8 @@ v22.05: (Upcoming Release)</h1>
 <h2>nvme</h2>
 <p>API <code>spdk_nvme_trtype_is_fabrics</code> was added to return existing transport type is fabric or not.</p>
 <p>API <code>spdk_nvme_poll_group_remove</code> was limited to be available only for a disconnected qpair in the group.</p>
+<h2>bdev_aio</h2>
+<p>Added <code>bdev_aio_rescan</code> RPC to allow rescaning the size of aio bdev</p>
 <h2>bdev</h2>
 <p>The NVMe bdev module supports multipath and improved I/O error resiliency.</p>
 <p>The parameter <code>retry_count</code> of the RPC <code>bdev_nvme_set_options</code> was deprecated and will be removed in SPDK 22.04, and the parameter <code>transport_retry_count</code> is added and used instead.</p>
@@ -1423,7 +1425,7 @@ v16.06: NVMf userspace target</h1>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
 <ul>
-        <li class="footer">Generated on Mon Jan 24 2022 04:04:40 for SPDK by
+        <li class="footer">Generated on Tue Jan 25 2022 04:04:43 for SPDK by
         <a href="http://www.doxygen.org/index.html">doxygen</a> 1.9.1 </li>
 </ul>
 </div>
