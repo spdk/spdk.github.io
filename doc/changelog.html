@@ -95,30 +95,44 @@ v22.05: (Upcoming Release)</h1>
 <h1>v22.01</h1>
 <h2>accel</h2>
 <p>The batching capability was removed. Batching is now considered an implementation detail of the low level drivers.</p>
-<h2>idxd</h2>
-<p>Many APIs are now vectored rather than scalar, meaning they take iovecs instead of individual pointers.</p>
-<h2>nvme</h2>
-<p>API <code>spdk_nvme_trtype_is_fabrics</code> was added to return existing transport type is fabric or not.</p>
-<p>API <code>spdk_nvme_poll_group_remove</code> was limited to be available only for a disconnected qpair in the group.</p>
-<h2>bdev_aio</h2>
-<p>Added <code>bdev_aio_rescan</code> RPC to allow rescaning the size of aio bdev</p>
 <h2>bdev</h2>
 <p>The NVMe bdev module supports multipath and improved I/O error resiliency.</p>
 <p>The parameter <code>retry_count</code> of the RPC <code>bdev_nvme_set_options</code> was deprecated and will be removed in SPDK 22.04, and the parameter <code>transport_retry_count</code> is added and used instead.</p>
 <p>An new parameter <code>bdev_retry_count</code> is added to the RPC <code>bdev_nvme_set_options</code>.</p>
 <p>New parameters, <code>ctrlr_loss_timeout_sec</code>, <code>reconnect_delay_sec</code>, and <code>fast_io_fail_timeout_sec</code>, are added to the RPC <code>bdev_nvme_attach_controller</code>.</p>
 <p>An new parameter <code>num_io_queues</code> is added to <code>bdev_nvme_attach_controller</code> RPC to allow specifying amount of requested IO queues.</p>
-<p>Added 'key_file' parameter to the 'rbd_register_cluster' RPC. It is an optional parameter to specify a keyring file to connect to a RADOS cluster.</p>
-<h2>nvme</h2>
-<p>New APIs, <code>spdk_nvme_ctrlr_disconnect</code>, <code>spdk_nvme_ctrlr_reconnect_async</code>, and <code>spdk_nvme_ctrlr_reconnect_poll_async</code>, have been added to improve error recovery, and the existing APIs,<code>spdk_nvme_ctrlr_reset_async</code> and <code>spdk_nvme_ctrlr_reset_poll_async</code> were deprecated.</p>
+<p>Added <code>key_file</code> parameter to the <code>rbd_register_cluster</code> RPC. It is an optional parameter to specify a keyring file to connect to a RADOS cluster.</p>
+<p>Added <code>spdk_bdev_get_zone_id</code> API to retrieve zone_id for a certain LBA.</p>
+<h2>bdev_aio</h2>
+<p>Added <code>bdev_aio_rescan</code> RPC to allow rescanning the size of aio bdev.</p>
+<h2>bdev_nvme</h2>
+<p>Added discovery service to bdev_nvme module, which now can connect to a discovery controller. bdev_nvme will connect to all current and future subsystems in the discovery controller. Added <code>bdev_nvme_start_discovery</code> and <code>bdev_nvme_stop_discovery</code> RPC.</p>
+<h2>dpdk</h2>
+<p>Updated DPDK submodule to DPDK 21.11.</p>
 <h2>env</h2>
-<p>Added spdk_pci_for_each_device.</p>
-<p>Removed spdk_pci_get_first_device and spdk_pci_get_next_device. These APIs were unsafe, because they did not account for PCI devices being inserted or removed while the caller was using handles returned from these APIs. Existing users of these APIs should switch to spdk_pci_for_each_device instead.</p>
+<p>Added <code>spdk_pci_for_each_device</code>.</p>
+<p>Removed <code>spdk_pci_get_first_device</code> and <code>spdk_pci_get_next_device</code>. These APIs were unsafe, because they did not account for PCI devices being inserted or removed while the caller was using handles returned from these APIs. Existing users of these APIs should switch to <code>spdk_pci_for_each_device</code> instead.</p>
 <p>Added 3 experimental APIs to handle PCI device interrupts (<code>spdk_pci_device_enable_interrupt</code>, <code>spdk_pci_device_disable_interrupt</code>, <code>spdk_pci_device_get_interrupt_efd</code>).</p>
+<p>Added <code>framework_get_pci_devices</code> RPC to list PCIe devices attached to an SPDK application.</p>
+<h2>idxd</h2>
+<p>Many APIs are now vectored rather than scalar, meaning they take iovecs instead of individual pointers.</p>
+<h2>json</h2>
+<p>Added <code>spdk_json_write_bytearray</code> API to serialize a buffer as a hex string.</p>
+<h2>nvme</h2>
+<p>API <code>spdk_nvme_trtype_is_fabrics</code> was added to return existing transport type is fabric or not.</p>
+<p>API <code>spdk_nvme_poll_group_remove</code> was limited to be available only for a disconnected qpair in the group.</p>
+<p>New APIs, <code>spdk_nvme_ctrlr_disconnect</code>, <code>spdk_nvme_ctrlr_reconnect_async</code>, and <code>spdk_nvme_ctrlr_reconnect_poll_async</code>, have been added to improve error recovery, and the existing APIs,<code>spdk_nvme_ctrlr_reset_async</code> and <code>spdk_nvme_ctrlr_reset_poll_async</code> were deprecated.</p>
+<p>Added <code>spdk_nvme_ctrlr_get_discovery_log_page</code> API for getting the full discovery log page from a discovery controller.</p>
 <h2>nvmf</h2>
-<p>Added a 'subsystem' parameter to spdk_nvmf_transport_stop_listen_async. When not NULL, it will only disconnect qpairs for controllers associated with the specified subsystem.</p>
+<p>Added a <code>subsystem</code> parameter to <code>spdk_nvmf_transport_stop_listen_async</code>. When not NULL, it will only disconnect qpairs for controllers associated with the specified subsystem.</p>
+<p>Removed accept poller from transport layer. Each transport can have its own policy of handling new connections. To notify transport layer <code>spdk_nvmf_poll_group_add</code> and <code>spdk_nvmf_tgt_new_qpair</code> can be used.</p>
 <h2>scsi</h2>
 <p>Structure <code>spdk_scsi_lun</code> has been extended with new member <code>resizing</code> so that SCSI layer now reports unit attention for disk resize.</p>
+<h2>trace</h2>
+<p>Added <code>spdk_trace_create_tpoint_group_mask</code> to return tracepoint group mask from a tracepoint group name.</p>
+<p>Added <code>trace_set_tpoint_mask</code> and <code>trace_clear_tpoint_mask</code> RPC to allow enabling individual traces.</p>
+<h2>util</h2>
+<p>Added <code>spdk_ioviter_first</code> and <code>spdk_ioviter_next</code> to iterate over two iovecs and yield pointers to common length segments.</p>
 <h1>v21.10</h1>
 <p>Structure <code><a class="el" href="structspdk__nvmf__target__opts.html">spdk_nvmf_target_opts</a></code> has been extended with new member <code>discovery_filter</code> which allows to specify filtering rules applied during discovery log generation. Refer to <code>enum spdk_nvmf_tgt_discovery_filter</code> for more info.</p>
 <h2>bdev</h2>
@@ -1425,7 +1439,7 @@ v16.06: NVMf userspace target</h1>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
 <ul>
-        <li class="footer">Generated on Thu Jan 27 2022 04:04:44 for SPDK by
+        <li class="footer">Generated on Fri Jan 28 2022 04:04:43 for SPDK by
         <a href="http://www.doxygen.org/index.html">doxygen</a> 1.9.1 </li>
 </ul>
 </div>
