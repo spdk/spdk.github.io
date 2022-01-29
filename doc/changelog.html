@@ -124,6 +124,7 @@ v22.05: (Upcoming Release)</h1>
 <p>New APIs, <code>spdk_nvme_ctrlr_disconnect</code>, <code>spdk_nvme_ctrlr_reconnect_async</code>, and <code>spdk_nvme_ctrlr_reconnect_poll_async</code>, have been added to improve error recovery, and the existing APIs,<code>spdk_nvme_ctrlr_reset_async</code> and <code>spdk_nvme_ctrlr_reset_poll_async</code> were deprecated.</p>
 <p>Added <code>spdk_nvme_ctrlr_get_discovery_log_page</code> API for getting the full discovery log page from a discovery controller.</p>
 <h2>nvmf</h2>
+<p>Added support for zero-copy operations in the NVMe-oF TCP target. It can be enabled via the <code>zcopy</code> parameter when creating a transport. The zero-copy operations are only used for requests not using in-capsule data.</p>
 <p>Added a <code>subsystem</code> parameter to <code>spdk_nvmf_transport_stop_listen_async</code>. When not NULL, it will only disconnect qpairs for controllers associated with the specified subsystem.</p>
 <p>Removed accept poller from transport layer. Each transport can have its own policy of handling new connections. To notify transport layer <code>spdk_nvmf_poll_group_add</code> and <code>spdk_nvmf_tgt_new_qpair</code> can be used.</p>
 <h2>scsi</h2>
@@ -1439,7 +1440,7 @@ v16.06: NVMf userspace target</h1>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
 <ul>
-        <li class="footer">Generated on Fri Jan 28 2022 04:04:43 for SPDK by
+        <li class="footer">Generated on Sat Jan 29 2022 04:04:42 for SPDK by
         <a href="http://www.doxygen.org/index.html">doxygen</a> 1.9.1 </li>
 </ul>
 </div>
