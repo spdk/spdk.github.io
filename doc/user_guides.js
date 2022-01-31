@@ -366,7 +366,9 @@ var user_guides =
         [ "sock_set_default_impl", "jsonrpc.html#rpc_sock_set_default_impl", null ],
         [ "bdev_nvme_send_cmd", "jsonrpc.html#rpc_bdev_nvme_send_cmd", null ],
         [ "enable_vmd", "jsonrpc.html#rpc_enable_vmd", null ],
-        [ "spdk_get_version", "jsonrpc.html#rpc_spdk_get_version", null ]
+        [ "spdk_get_version", "jsonrpc.html#rpc_spdk_get_version", null ],
+        [ "bdev_nvme_add_error_injection", "jsonrpc.html#rpc_bdev_nvme_add_error_injection", null ],
+        [ "bdev_nvme_remove_error_injection", "jsonrpc.html#rpc_bdev_nvme_remove_error_injection", null ]
       ] ]
     ] ],
     [ "JSON-RPC Remote access", "jsonrpc_proxy.html", null ],

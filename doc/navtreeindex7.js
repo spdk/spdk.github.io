@@ -1,5 +1,7 @@
 var NAVTREEINDEX7 =
 {
+"libraries.html#versioning":[3,1,2,0],
+"likely_8h.html":[15,0,35],
 "likely_8h.html#a568e75eb7097ecf9ea2c735abc9f5844":[15,0,35,0],
 "likely_8h.html#adbc72e18822cb8015657c3e8baba7bb5":[15,0,35,1],
 "log_8h.html":[15,0,36],
@@ -247,7 +249,5 @@ var NAVTREEINDEX7 =
 "nvme_8h.html#a9335ab01f188f75b67c39b79b9206941":[15,0,40,27],
 "nvme_8h.html#a9439b3f5985d8597ea9c8a41b92edb9f":[15,0,40,108],
 "nvme_8h.html#a95f40d5179f8424b466a30ba0610ab4c":[15,0,40,28],
-"nvme_8h.html#a976b90cbbc1aa8a4117837758f65e6c7":[15,0,40,182],
-"nvme_8h.html#a9878deb91f677a9a9583342f07dcef41":[15,0,40,210],
-"nvme_8h.html#a9a7b5944bda3fe9ef1c83fcd2025b39a":[15,0,40,153]
+"nvme_8h.html#a976b90cbbc1aa8a4117837758f65e6c7":[15,0,40,182]
 };
