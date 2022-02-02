@@ -178,7 +178,7 @@ Enumerations</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a43188aae62750556bba04f4ddc81fa94"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev__module_8h.html#a43188aae62750556bba04f4ddc81fa94">spdk_bdev_module_claim_bdev</a> (struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *bdev, struct spdk_bdev_desc *desc, struct <a class="el" href="structspdk__bdev__module.html">spdk_bdev_module</a> *module)</td></tr>
-<tr class="memdesc:a43188aae62750556bba04f4ddc81fa94"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called by a bdev module to lay exclusive write claim to a bdev.  <a href="bdev__module_8h.html#a43188aae62750556bba04f4ddc81fa94">More...</a><br /></td></tr>
+<tr class="memdesc:a43188aae62750556bba04f4ddc81fa94"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called by a bdev module to lay exclusive claim to a bdev.  <a href="bdev__module_8h.html#a43188aae62750556bba04f4ddc81fa94">More...</a><br /></td></tr>
 <tr class="separator:a43188aae62750556bba04f4ddc81fa94"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae57fe12af625d6fd37e92b786ef84e32"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev__module_8h.html#ae57fe12af625d6fd37e92b786ef84e32">spdk_bdev_module_release_bdev</a> (struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *bdev)</td></tr>
 <tr class="memdesc:ae57fe12af625d6fd37e92b786ef84e32"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called to release a write claim on a block device.  <a href="bdev__module_8h.html#ae57fe12af625d6fd37e92b786ef84e32">More...</a><br /></td></tr>
@@ -232,10 +232,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_module_fini
 <tr class="memdesc:a934c7e96e8bdc0aea6cbcc0f414c71ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate a buffer for given bdev_io.  <a href="bdev__module_8h.html#a934c7e96e8bdc0aea6cbcc0f414c71ba">More...</a><br /></td></tr>
 <tr class="separator:a934c7e96e8bdc0aea6cbcc0f414c71ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2bfea82499197ef270f7a3f6204ccea8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev__module_8h.html#a2bfea82499197ef270f7a3f6204ccea8">spdk_bdev_io_get_aux_buf</a> (struct <a class="el" href="structspdk__bdev__io.html">spdk_bdev_io</a> *bdev_io, <a class="el" href="bdev__module_8h.html#a78a004a98b02f2d1b2346b6b25e1c945">spdk_bdev_io_get_aux_buf_cb</a> cb)</td></tr>
-<tr class="memdesc:a2bfea82499197ef270f7a3f6204ccea8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate an auxillary buffer for given bdev_io.  <a href="bdev__module_8h.html#a2bfea82499197ef270f7a3f6204ccea8">More...</a><br /></td></tr>
+<tr class="memdesc:a2bfea82499197ef270f7a3f6204ccea8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate an auxiliary buffer for given bdev_io.  <a href="bdev__module_8h.html#a2bfea82499197ef270f7a3f6204ccea8">More...</a><br /></td></tr>
 <tr class="separator:a2bfea82499197ef270f7a3f6204ccea8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac3d88717b98b64a59816c8f03fc4b21d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev__module_8h.html#ac3d88717b98b64a59816c8f03fc4b21d">spdk_bdev_io_put_aux_buf</a> (struct <a class="el" href="structspdk__bdev__io.html">spdk_bdev_io</a> *bdev_io, void *aux_buf)</td></tr>
-<tr class="memdesc:ac3d88717b98b64a59816c8f03fc4b21d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Free an auxiliary buffer previously allocated by <code><a class="el" href="bdev__module_8h.html#a2bfea82499197ef270f7a3f6204ccea8" title="Allocate an auxillary buffer for given bdev_io.">spdk_bdev_io_get_aux_buf()</a></code>.  <a href="bdev__module_8h.html#ac3d88717b98b64a59816c8f03fc4b21d">More...</a><br /></td></tr>
+<tr class="memdesc:ac3d88717b98b64a59816c8f03fc4b21d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Free an auxiliary buffer previously allocated by <code><a class="el" href="bdev__module_8h.html#a2bfea82499197ef270f7a3f6204ccea8" title="Allocate an auxiliary buffer for given bdev_io.">spdk_bdev_io_get_aux_buf()</a></code>.  <a href="bdev__module_8h.html#ac3d88717b98b64a59816c8f03fc4b21d">More...</a><br /></td></tr>
 <tr class="separator:ac3d88717b98b64a59816c8f03fc4b21d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5db22de2bf8ceb0f640e05b92188bff5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev__module_8h.html#a5db22de2bf8ceb0f640e05b92188bff5">spdk_bdev_io_set_buf</a> (struct <a class="el" href="structspdk__bdev__io.html">spdk_bdev_io</a> *bdev_io, void *buf, size_t len)</td></tr>
 <tr class="memdesc:a5db22de2bf8ceb0f640e05b92188bff5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the given buffer as the data buffer described by this bdev_io.  <a href="bdev__module_8h.html#a5db22de2bf8ceb0f640e05b92188bff5">More...</a><br /></td></tr>
@@ -802,7 +802,7 @@ typedef&#160;</td><td class="memItemRight" valign="bottom"><b>TAILQ_HEAD</b> (bd
       </table>
 </div><div class="memdoc">
 
-<p>Allocate an auxillary buffer for given bdev_io. </p>
+<p>Allocate an auxiliary buffer for given bdev_io. </p>
 <p>The length of the buffer will be the same size as the bdev_io primary buffer. The buffer must be freed using <code><a class="el" href="bdev__module_8h.html#ac3d88717b98b64a59816c8f03fc4b21d" title="Free an auxiliary buffer previously allocated by spdk_bdev_io_get_aux_buf().">spdk_bdev_io_put_aux_buf()</a></code> before completing the associated bdev_io. This call will never fail. In case of lack of memory given callback <code>cb</code> will be deferred until enough memory is freed.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -939,7 +939,7 @@ typedef&#160;</td><td class="memItemRight" valign="bottom"><b>TAILQ_HEAD</b> (bd
       </table>
 </div><div class="memdoc">
 
-<p>Free an auxiliary buffer previously allocated by <code><a class="el" href="bdev__module_8h.html#a2bfea82499197ef270f7a3f6204ccea8" title="Allocate an auxillary buffer for given bdev_io.">spdk_bdev_io_get_aux_buf()</a></code>. </p>
+<p>Free an auxiliary buffer previously allocated by <code><a class="el" href="bdev__module_8h.html#a2bfea82499197ef270f7a3f6204ccea8" title="Allocate an auxiliary buffer for given bdev_io.">spdk_bdev_io_get_aux_buf()</a></code>. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">bdev_io</td><td>bdev_io specified when the aux_buf was allocated. </td></tr>
@@ -983,7 +983,7 @@ typedef&#160;</td><td class="memItemRight" valign="bottom"><b>TAILQ_HEAD</b> (bd
 </div><div class="memdoc">
 
 <p>Set the given buffer as the data buffer described by this bdev_io. </p>
-<p>The portion of the buffer used may be adjusted for memory alignement purposes.</p>
+<p>The portion of the buffer used may be adjusted for memory alignment purposes.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">bdev_io</td><td>I/O to set the buffer on. </td></tr>
@@ -1071,12 +1071,12 @@ typedef&#160;</td><td class="memItemRight" valign="bottom"><b>TAILQ_HEAD</b> (bd
       </table>
 </div><div class="memdoc">
 
-<p>Called by a bdev module to lay exclusive write claim to a bdev. </p>
-<p>Also upgrades that bdev's descriptor to have write access.</p>
+<p>Called by a bdev module to lay exclusive claim to a bdev. </p>
+<p>Also upgrades that bdev's descriptor to have write access if desc is not NULL.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">bdev</td><td>Block device to be claimed. </td></tr>
-    <tr><td class="paramname">desc</td><td>Descriptor for the above block device. </td></tr>
+    <tr><td class="paramname">desc</td><td>Descriptor for the above block device or NULL. </td></tr>
     <tr><td class="paramname">module</td><td>Bdev module attempting to claim bdev.</td></tr>
   </table>
   </dd>
@@ -2058,7 +2058,7 @@ typedef&#160;</td><td class="memItemRight" valign="bottom"><b>TAILQ_HEAD</b> (bd
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
 <ul>
-        <li class="footer">Generated on Tue Feb 1 2022 04:04:48 for SPDK by
+        <li class="footer">Generated on Wed Feb 2 2022 04:04:49 for SPDK by
         <a href="http://www.doxygen.org/index.html">doxygen</a> 1.9.1 </li>
 </ul>
 </div>

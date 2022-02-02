@@ -119,57 +119,16 @@ Theory of Operation</h1>
 <li><b>Blob</b>: A blob is an ordered list of clusters. Blobs are manipulated (created, sized, deleted, etc.) by the application and persist across power failures and reboots. Applications use a Blobstore provided identifier to access a particular blob. Blobs are read and written in units of pages by specifying an offset from the start of the blob. Applications can also store metadata in the form of key/value pairs with each blob which we'll refer to as xattrs (extended attributes).</li>
 <li><b>Blobstore</b>: An SSD which has been initialized by a Blobstore-based application is referred to as "a Blobstore." A Blobstore owns the entire underlying device which is made up of a private Blobstore metadata region and the collection of blobs as managed by the application.</li>
 </ul>
-<p> 
-
-  <div id="blob_hierarchy"></div>
-
-  <script>
-    let elem = document.getElementById('blob_hierarchy');
-
-    let canvasWidth = 800;
-    let canvasHeight = 200;
-    var two = new Two({ width: 800, height: 200 }).appendTo(elem);
-
-    var blobRect = two.makeRectangle(canvasWidth / 2, canvasHeight / 2, canvasWidth, canvasWidth);
-    blobRect.fill = '#7ED3F7';
-
-    var blobText = two.makeText('Blob', canvasWidth / 2, 10, { alignment: 'center'});
-
-    for (var i = 0; i < 2; i++) {
-        let clusterWidth = 400;
-        let clusterHeight = canvasHeight;
-        var clusterRect = two.makeRectangle((clusterWidth / 2) + (i * clusterWidth),
-                                            clusterHeight / 2,
-                                            clusterWidth - 10,
-                                            clusterHeight - 50);
-        clusterRect.fill = '#00AEEF';
-
-        var clusterText =  two.makeText('Cluster',
-                                        (clusterWidth / 2) + (i * clusterWidth),
-                                        35,
-                                        { alignment: 'center', fill: 'white' });
-
-        for (var j = 0; j < 4; j++) {
-            let pageWidth = 100;
-            let pageHeight = canvasHeight;
-            var pageRect = two.makeRectangle((pageWidth / 2) + (j * pageWidth) + (i * clusterWidth),
-                                             pageHeight / 2,
-                                             pageWidth - 20,
-                                             pageHeight - 100);
-            pageRect.fill = '#003C71';
-
-            var pageText =  two.makeText('Page',
-                                         (pageWidth / 2) + (j * pageWidth) + (i * clusterWidth),
-                                         pageHeight / 2,
-                                         { alignment: 'center', fill: 'white' });
-        }
-    }
-
-    two.update();
-  </script>
-
-</p>
-<h2>Atomicity</h2>
+<div class="fragment"><div class="line">+-----------------------------------------------------------------+</div>
+<div class="line">|                              Blob                               |</div>
+<div class="line">| +-----------------------------+ +-----------------------------+ |</div>
+<div class="line">| |           Cluster           | |           Cluster           | |</div>
+<div class="line">| | +----+ +----+ +----+ +----+ | | +----+ +----+ +----+ +----+ | |</div>
+<div class="line">| | |Page| |Page| |Page| |Page| | | |Page| |Page| |Page| |Page| | |</div>
+<div class="line">| | +----+ +----+ +----+ +----+ | | +----+ +----+ +----+ +----+ | |</div>
+<div class="line">| +-----------------------------+ +-----------------------------+ |</div>
+<div class="line">+-----------------------------------------------------------------+</div>
+</div><!-- fragment --><h2>Atomicity</h2>
 <p>For all Blobstore operations regarding atomicity, there is a dependency on the underlying device to guarantee atomic operations of at least one page size. Atomicity here can refer to multiple operations:</p>
 <ul>
 <li><b>Data Writes</b>: For the case of data writes, the unit of atomicity is one page. Therefore if a write operation of greater than one page is underway and the system suffers a power failure, the data on media will be consistent at a page size granularity (if a single page were in the middle of being updated when power was lost, the data at that page location will be as it was prior to the start of the write operation following power restoration.)</li>
@@ -290,7 +249,7 @@ Blob cluster layout</h2>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
 <ul>
-        <li class="footer">Generated on Tue Feb 1 2022 04:04:48 for SPDK by
+        <li class="footer">Generated on Wed Feb 2 2022 04:04:49 for SPDK by
         <a href="http://www.doxygen.org/index.html">doxygen</a> 1.9.1 </li>
 </ul>
 </div>
