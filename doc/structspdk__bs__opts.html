@@ -137,6 +137,9 @@ void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="st
 <tr class="memitem:ae08542c0960c45bc6acaffc68aaeaaab"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bs__opts.html#ae08542c0960c45bc6acaffc68aaeaaab">opts_size</a></td></tr>
 <tr class="memdesc:ae08542c0960c45bc6acaffc68aaeaaab"><td class="mdescLeft">&#160;</td><td class="mdescRight">The size of <a class="el" href="structspdk__bs__opts.html">spdk_bs_opts</a> according to the caller of this library is used for ABI compatibility.  <a href="structspdk__bs__opts.html#ae08542c0960c45bc6acaffc68aaeaaab">More...</a><br /></td></tr>
 <tr class="separator:ae08542c0960c45bc6acaffc68aaeaaab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1851835c41a4b162a050c82d22a88a7f"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bs__opts.html#a1851835c41a4b162a050c82d22a88a7f">force_recover</a></td></tr>
+<tr class="memdesc:a1851835c41a4b162a050c82d22a88a7f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Force recovery during import.  <a href="structspdk__bs__opts.html#a1851835c41a4b162a050c82d22a88a7f">More...</a><br /></td></tr>
+<tr class="separator:a1851835c41a4b162a050c82d22a88a7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Field Documentation</h2>
 <a id="aa9f80152a5720e25bc52ab4a89113cdf"></a>
@@ -153,6 +156,23 @@ void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="st
 
 <p>Size of cluster in bytes. </p>
 <p>Must be multiple of 4KiB page size. </p>
+
+</div>
+</div>
+<a id="a1851835c41a4b162a050c82d22a88a7f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1851835c41a4b162a050c82d22a88a7f">&#9670;&nbsp;</a></span>force_recover</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint64_t spdk_bs_opts::force_recover</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Force recovery during import. </p>
+<p>This is a uint64_t for padding reasons, treated as a bool. </p>
 
 </div>
 </div>
@@ -182,7 +202,7 @@ void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="st
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
 <ul>
-        <li class="footer">Generated on Thu Feb 3 2022 04:04:47 for SPDK by
+        <li class="footer">Generated on Fri Feb 4 2022 04:04:47 for SPDK by
         <a href="http://www.doxygen.org/index.html">doxygen</a> 1.9.1 </li>
 </ul>
 </div>

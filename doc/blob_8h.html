@@ -2465,6 +2465,8 @@ Functions</h2></td></tr>
 
 <p>Get the first blob of the blobstore. </p>
 <p>The obtained blob will be passed to the callback function.</p>
+<p>The user's cb_fn will be called with rc == -ENOENT when the iteration is complete.</p>
+<p>When the user's cb_fn is called with rc == 0, the associated blob is open. This means that the cb_fn may not attempt to unload the blobstore. It must complete the iteration before attempting to unload.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">bs</td><td>blobstore to traverse. </td></tr>
@@ -2516,6 +2518,8 @@ Functions</h2></td></tr>
 
 <p>Get the next blob by using the current blob. </p>
 <p>The obtained blob will be passed to the callback function.</p>
+<p>The user's cb_fn will be called with rc == -ENOENT when the iteration is complete.</p>
+<p>When the user's cb_fn is called with rc == 0, the associated blob is open. This means that the cb_fn may not attempt to unload the blobstore. It must complete the iteration before attempting to unload.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">bs</td><td>blobstore to traverse. </td></tr>
@@ -2983,7 +2987,7 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
 <ul>
-        <li class="footer">Generated on Thu Feb 3 2022 04:04:46 for SPDK by
+        <li class="footer">Generated on Fri Feb 4 2022 04:04:46 for SPDK by
         <a href="http://www.doxygen.org/index.html">doxygen</a> 1.9.1 </li>
 </ul>
 </div>
