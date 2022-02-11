@@ -31,8 +31,7 @@ var general =
         [ "IOAT Module", "accel_fw.html#accel_ioat", null ],
         [ "IDXD Module", "accel_fw.html#accel_idxd", null ],
         [ "How to use kernel idxd driver", "accel_fw.html#accel_idxd_kernel", null ],
-        [ "Software Module", "accel_fw.html#accel_sw", null ],
-        [ "Batching", "accel_fw.html#batching", null ]
+        [ "Software Module", "accel_fw.html#accel_sw", null ]
       ] ]
     ] ]
 ];

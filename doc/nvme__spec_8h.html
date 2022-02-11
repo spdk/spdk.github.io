@@ -327,14 +327,17 @@ Macros</h2></td></tr>
 <tr class="memitem:a16100e7649c94a89146d02fe4556537a"><td class="memItemLeft" align="right" valign="top"><a id="a16100e7649c94a89146d02fe4556537a"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_NVME_MAX_IO_QUEUES</b>&#160;&#160;&#160;(65535)</td></tr>
 <tr class="separator:a16100e7649c94a89146d02fe4556537a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa12336a44c7a5aa47ce2cf85e7bcc4c3"><td class="memItemLeft" align="right" valign="top"><a id="aa12336a44c7a5aa47ce2cf85e7bcc4c3"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_NVME_QUEUE_MIN_ENTRIES</b>&#160;&#160;&#160;(2)</td></tr>
+<tr class="separator:aa12336a44c7a5aa47ce2cf85e7bcc4c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae4c74c2bd741f5f291f3e4a032d04647"><td class="memItemLeft" align="right" valign="top"><a id="ae4c74c2bd741f5f291f3e4a032d04647"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_NVME_ADMIN_QUEUE_MIN_ENTRIES</b>&#160;&#160;&#160;2</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_NVME_ADMIN_QUEUE_MIN_ENTRIES</b>&#160;&#160;&#160;SPDK_NVME_QUEUE_MIN_ENTRIES</td></tr>
 <tr class="separator:ae4c74c2bd741f5f291f3e4a032d04647"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afc394cf0b37e4ec245a604e0e48b2b82"><td class="memItemLeft" align="right" valign="top"><a id="afc394cf0b37e4ec245a604e0e48b2b82"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_NVME_ADMIN_QUEUE_MAX_ENTRIES</b>&#160;&#160;&#160;4096</td></tr>
 <tr class="separator:afc394cf0b37e4ec245a604e0e48b2b82"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a596eccf075cc180ef6148458bd953a22"><td class="memItemLeft" align="right" valign="top"><a id="a596eccf075cc180ef6148458bd953a22"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_NVME_IO_QUEUE_MIN_ENTRIES</b>&#160;&#160;&#160;2</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_NVME_IO_QUEUE_MIN_ENTRIES</b>&#160;&#160;&#160;SPDK_NVME_QUEUE_MIN_ENTRIES</td></tr>
 <tr class="separator:a596eccf075cc180ef6148458bd953a22"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1a070303721766a8be74aa19fed086c5"><td class="memItemLeft" align="right" valign="top"><a id="a1a070303721766a8be74aa19fed086c5"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_NVME_IO_QUEUE_MAX_ENTRIES</b>&#160;&#160;&#160;65536</td></tr>
@@ -2106,7 +2109,7 @@ static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
 <ul>
-        <li class="footer">Generated on Thu Feb 10 2022 04:01:02 for SPDK by
+        <li class="footer">Generated on Fri Feb 11 2022 04:01:01 for SPDK by
         <a href="http://www.doxygen.org/index.html">doxygen</a> 1.9.1 </li>
 </ul>
 </div>

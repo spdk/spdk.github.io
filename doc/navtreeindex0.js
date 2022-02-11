@@ -35,7 +35,6 @@ var NAVTREEINDEX0 =
 "accel_fw.html#accel_libs":[5,3,2],
 "accel_fw.html#accel_modules":[5,3,3],
 "accel_fw.html#accel_sw":[5,3,3,3],
-"accel_fw.html#batching":[5,3,3,4],
 "annotated.html":[14,0],
 "app_overview.html":[3,3],
 "app_overview.html#app_cmd_line_args":[3,3,0,0],
@@ -249,5 +248,6 @@ var NAVTREEINDEX0 =
 "bdev__module_8h.html#a65de686e7ddcf8caa6d7fa032e7023c6":[15,0,5,31],
 "bdev__module_8h.html#a78a004a98b02f2d1b2346b6b25e1c945":[15,0,5,14],
 "bdev__module_8h.html#a7f2edd5a040a818752112d2cc709efca":[15,0,5,45],
-"bdev__module_8h.html#a82dd20b5702f2f97c1f8eec5cdc6d0d5":[15,0,5,46]
+"bdev__module_8h.html#a82dd20b5702f2f97c1f8eec5cdc6d0d5":[15,0,5,46],
+"bdev__module_8h.html#a8d51d8e113f0dffb1bbe535ea01c495f":[15,0,5,22]
 };

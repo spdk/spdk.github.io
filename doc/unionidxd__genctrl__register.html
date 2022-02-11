@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="generator" content="Doxygen 1.9.1" />
-  <title>SPDK: idxd_genstatus_register Union Reference</title>
+  <title>SPDK: idxd_genctrl_register Union Reference</title>
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
@@ -66,7 +66,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-$(document).ready(function(){initNavTree('unionidxd__genstatus__register.html',''); initResizable(); });
+$(document).ready(function(){initNavTree('unionidxd__genctrl__register.html',''); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -88,28 +88,28 @@ $(document).ready(function(){initNavTree('unionidxd__genstatus__register.html','
   <div class="summary">
 <a href="#pub-attribs">Data Fields</a>  </div>
   <div class="headertitle">
-<div class="title">idxd_genstatus_register Union Reference</div>  </div>
+<div class="title">idxd_genctrl_register Union Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:a2df5d4c193201da34835aa3c093d4b97"><td class="memItemLeft" ><a id="a2df5d4c193201da34835aa3c093d4b97"></a>
+<tr class="memitem:a2e0013c13e148312a521e9c2b76a4114"><td class="memItemLeft" ><a id="a2e0013c13e148312a521e9c2b76a4114"></a>
 struct {</td></tr>
-<tr class="memitem:a4d8d9bef9cc0fc1415d8a48908248446"><td class="memItemLeft" >
-&#160;&#160;&#160;uint32_t&#160;&#160;&#160;<b>state</b>: 2</td></tr>
-<tr class="separator:a4d8d9bef9cc0fc1415d8a48908248446"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a47d1fe2dd89f2b17a0c05cd1fd285b9d"><td class="memItemLeft" >
-&#160;&#160;&#160;uint32_t&#160;&#160;&#160;<b>reset_type</b>: 2</td></tr>
-<tr class="separator:a47d1fe2dd89f2b17a0c05cd1fd285b9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab3f455959285b8e3acc82b0006ec5706"><td class="memItemLeft" >
-&#160;&#160;&#160;uint32_t&#160;&#160;&#160;<b>rsvd</b>: 28</td></tr>
-<tr class="separator:ab3f455959285b8e3acc82b0006ec5706"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2df5d4c193201da34835aa3c093d4b97"><td class="memItemLeft" valign="top">};&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
-<tr class="separator:a2df5d4c193201da34835aa3c093d4b97"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aef70ffdb7216bcc90b163106ccfefcfa"><td class="memItemLeft" align="right" valign="top"><a id="aef70ffdb7216bcc90b163106ccfefcfa"></a>
+<tr class="memitem:aeb9864405350ab144b47a1eb14676b3a"><td class="memItemLeft" >
+&#160;&#160;&#160;uint32_t&#160;&#160;&#160;<b>sw_err_int_enable</b>: 1</td></tr>
+<tr class="separator:aeb9864405350ab144b47a1eb14676b3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4f889e973dc3656f7fd3d4abccf8269"><td class="memItemLeft" >
+&#160;&#160;&#160;uint32_t&#160;&#160;&#160;<b>halt_state_int_enable</b>: 1</td></tr>
+<tr class="separator:ac4f889e973dc3656f7fd3d4abccf8269"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51f64eec79269767ddca2ef9f8415acf"><td class="memItemLeft" >
+&#160;&#160;&#160;uint32_t&#160;&#160;&#160;<b>reserved</b>: 30</td></tr>
+<tr class="separator:a51f64eec79269767ddca2ef9f8415acf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e0013c13e148312a521e9c2b76a4114"><td class="memItemLeft" valign="top">};&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:a2e0013c13e148312a521e9c2b76a4114"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45b552bfa8b5d35b82ecf7a3f911981a"><td class="memItemLeft" align="right" valign="top"><a id="a45b552bfa8b5d35b82ecf7a3f911981a"></a>
 uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>raw</b></td></tr>
-<tr class="separator:aef70ffdb7216bcc90b163106ccfefcfa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a45b552bfa8b5d35b82ecf7a3f911981a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this union was generated from the following file:<ul>
 <li><a class="el" href="idxd__spec_8h.html">idxd_spec.h</a></li>
@@ -120,7 +120,7 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>raw</b></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
 <ul>
-        <li class="footer">Generated on Thu Feb 10 2022 04:01:03 for SPDK by
+        <li class="footer">Generated on Fri Feb 11 2022 04:01:01 for SPDK by
         <a href="http://www.doxygen.org/index.html">doxygen</a> 1.9.1 </li>
 </ul>
 </div>

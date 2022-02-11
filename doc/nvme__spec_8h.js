@@ -132,6 +132,7 @@ var nvme__spec_8h =
     [ "SPDK_NVME_MAX_OPC", "nvme__spec_8h.html#a6c547b319e840e73f4f43fb6bc595c20", null ],
     [ "SPDK_NVME_NQN_FIELD_SIZE", "nvme__spec_8h.html#a29b64360a774480298f7ed501ba62ea0", null ],
     [ "SPDK_NVME_NSSR_VALUE", "nvme__spec_8h.html#ad3ef13320c82eaf4abdef6aa56e8b5ba", null ],
+    [ "SPDK_NVME_QUEUE_MIN_ENTRIES", "nvme__spec_8h.html#aa12336a44c7a5aa47ce2cf85e7bcc4c3", null ],
     [ "SPDK_NVME_REGISTRATION_PREEMPTED_MASK", "nvme__spec_8h.html#af5aeace321594f3985745fec4b62b348", null ],
     [ "SPDK_NVME_RESERVATION_PREEMPTED_MASK", "nvme__spec_8h.html#a6fddb56c05ea34b5b495189a63274511", null ],
     [ "SPDK_NVME_RESERVATION_RELEASED_MASK", "nvme__spec_8h.html#a9e1c9608bf15aaa7bca0aa5a825f5e30", null ],

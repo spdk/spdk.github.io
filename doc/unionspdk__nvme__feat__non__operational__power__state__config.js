@@ -1,6 +1,6 @@
 var unionspdk__nvme__feat__non__operational__power__state__config =
 [
-    [ "bits", "unionspdk__nvme__feat__non__operational__power__state__config.html#a4598c20785753800a17632eb8eecf28a", null ],
+    [ "bits", "unionspdk__nvme__feat__non__operational__power__state__config.html#aea5894743fae6d5a055288ef96a1e919", null ],
     [ "noppme", "unionspdk__nvme__feat__non__operational__power__state__config.html#a8f512d6ffa8611e38141e169898efb4b", null ],
     [ "raw", "unionspdk__nvme__feat__non__operational__power__state__config.html#a29ca4fdf53d5699ee3008af19e639042", null ],
     [ "reserved", "unionspdk__nvme__feat__non__operational__power__state__config.html#a1b89eeb1f322ef357d18aaad35517170", null ]
