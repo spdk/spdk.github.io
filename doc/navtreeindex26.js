@@ -1,6 +1,5 @@
 var NAVTREEINDEX26 =
 {
-"structspdk__scsi__pr__in__report__capabilities__data.html#a29a7afa553dcc572ec63b6331679f43d":[14,0,326,12],
 "structspdk__scsi__pr__in__report__capabilities__data.html#a3438faf62baebaabdf3e07b1093975c3":[14,0,326,5],
 "structspdk__scsi__pr__in__report__capabilities__data.html#a35bea65ca66c6fa628cec730eac860a1":[14,0,326,1],
 "structspdk__scsi__pr__in__report__capabilities__data.html#a364ac62e61045f137de15d8051866775":[14,0,326,9],
@@ -249,5 +248,6 @@ var NAVTREEINDEX26 =
 "system_configuration.html":[3,0],
 "system_configuration.html#iommu_config":[3,0,0],
 "system_configuration.html#system_configuration_nonroot":[3,0,1],
-"system_configuration.html#system_configuration_nonroot_device_access":[3,0,1,0]
+"system_configuration.html#system_configuration_nonroot_device_access":[3,0,1,0],
+"system_configuration.html#system_configuration_nonroot_memory_constraints":[3,0,1,1]
 };

@@ -51,7 +51,6 @@ var bdev__module_8h =
     [ "spdk_bdev_module_examine_done", "bdev__module_8h.html#ad6ae712eb81a37a739cb82ca474e793b", null ],
     [ "spdk_bdev_module_fini_done", "bdev__module_8h.html#a13dae91c3223ea829a78b979d34018c0", null ],
     [ "spdk_bdev_module_fini_start_done", "bdev__module_8h.html#ac1f7fb72f765ee69d36569ecd5c1420d", null ],
-    [ "spdk_bdev_module_finish_done", "bdev__module_8h.html#acc0701f07d82bbb8f0f3e57c81349574", null ],
     [ "spdk_bdev_module_init_done", "bdev__module_8h.html#a3a32d238f1617d87d407451e3874f1d1", null ],
     [ "spdk_bdev_module_list_add", "bdev__module_8h.html#acb2fe24ca4c312bc24aa8825189b2c97", null ],
     [ "spdk_bdev_module_list_find", "bdev__module_8h.html#abc619dc4cb58c579a990ee2459a1ac7a", null ],

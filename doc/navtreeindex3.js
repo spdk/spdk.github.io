@@ -1,6 +1,5 @@
 var NAVTREEINDEX3 =
 {
-"event.html":[5,0],
 "event.html#event_component_app":[5,0,1,3],
 "event.html#event_component_events":[5,0,1,0],
 "event.html#event_component_pollers":[5,0,1,2],
@@ -249,5 +248,6 @@ var NAVTREEINDEX3 =
 "idxd_8h.html#a74f5b7dc38344c84bca48f07a83a2621":[15,0,27,5],
 "idxd_8h.html#a75c066c5425700c49f077e20484b50c1":[15,0,27,1],
 "idxd_8h.html#aa6e6f3dcce485f4b3b8ba36fe4c03f93":[15,0,27,2],
-"idxd_8h.html#ab90d42b827d1c435c10701acc131accc":[15,0,27,10]
+"idxd_8h.html#ab90d42b827d1c435c10701acc131accc":[15,0,27,10],
+"idxd_8h.html#ac92c2ac49b4b576f2538aa58846d93c3":[15,0,27,6]
 };
