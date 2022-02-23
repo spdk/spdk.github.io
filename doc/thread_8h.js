@@ -61,6 +61,7 @@ var thread_8h =
     [ "spdk_set_thread", "thread_8h.html#a60dac2a0fc19b23be6fecb1e5b6f8a7a", null ],
     [ "spdk_thread_create", "thread_8h.html#a4eada7bac2a5c7ceaea891d57f8d3e21", null ],
     [ "spdk_thread_destroy", "thread_8h.html#a10aa5a8ec5228fa87db97f7655f8c0d6", null ],
+    [ "spdk_thread_exec_msg", "thread_8h.html#a6695466847e7a751b768ab4b8bcd53d0", null ],
     [ "spdk_thread_exit", "thread_8h.html#a5132d2abe39a40a0e14e19bb2bd15489", null ],
     [ "spdk_thread_get_by_id", "thread_8h.html#a24c90cd523aad947dad7e651074d9f1d", null ],
     [ "spdk_thread_get_count", "thread_8h.html#a1d77f05c2461acb75f333e67e6aeb1ed", null ],

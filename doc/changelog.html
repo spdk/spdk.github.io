@@ -98,6 +98,8 @@ v22.05: (Upcoming Release)</h1>
 <p>Added <code>bdev_nvme_add_error_injection</code> and <code>bdev_nvme_remove_error_injection</code> RPCs to add and remove NVMe error injections.</p>
 <h2>nvmf</h2>
 <p>Removed deprecated max_qpairs_per_ctrlr parameter from nvmf_create_transport RPC. Use max_io_qpairs_per_ctrlr instead.</p>
+<h2>thread</h2>
+<p>Added <code><a class="el" href="thread_8h.html#a6695466847e7a751b768ab4b8bcd53d0" title="Run the msg callback on the given thread.">spdk_thread_exec_msg()</a></code> API.</p>
 <h1>v22.01</h1>
 <h2>accel</h2>
 <p>The batching capability was removed. Batching is now considered an implementation detail of the low level drivers.</p>
@@ -1446,7 +1448,7 @@ v16.06: NVMf userspace target</h1>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
 <ul>
-        <li class="footer">Generated on Fri Feb 18 2022 04:01:03 for SPDK by
+        <li class="footer">Generated on Wed Feb 23 2022 04:01:08 for SPDK by
         <a href="http://www.doxygen.org/index.html">doxygen</a> 1.9.1 </li>
 </ul>
 </div>

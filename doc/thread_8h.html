@@ -269,6 +269,9 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 <tr class="memitem:a91a7e9d44c2a332dfcea5e23df471c8d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="thread_8h.html#a91a7e9d44c2a332dfcea5e23df471c8d">spdk_thread_send_critical_msg</a> (struct spdk_thread *thread, <a class="el" href="thread_8h.html#adc0da6b1b784d4f165dcd48b526d12ad">spdk_msg_fn</a> fn)</td></tr>
 <tr class="memdesc:a91a7e9d44c2a332dfcea5e23df471c8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a message to the given thread.  <a href="thread_8h.html#a91a7e9d44c2a332dfcea5e23df471c8d">More...</a><br /></td></tr>
 <tr class="separator:a91a7e9d44c2a332dfcea5e23df471c8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6695466847e7a751b768ab4b8bcd53d0"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="thread_8h.html#a6695466847e7a751b768ab4b8bcd53d0">spdk_thread_exec_msg</a> (const struct spdk_thread *thread, <a class="el" href="thread_8h.html#adc0da6b1b784d4f165dcd48b526d12ad">spdk_msg_fn</a> fn, void *ctx)</td></tr>
+<tr class="memdesc:a6695466847e7a751b768ab4b8bcd53d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Run the msg callback on the given thread.  <a href="thread_8h.html#a6695466847e7a751b768ab4b8bcd53d0">More...</a><br /></td></tr>
+<tr class="separator:a6695466847e7a751b768ab4b8bcd53d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a16bb098e6398d2a63577e805f1423a3e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="thread_8h.html#a16bb098e6398d2a63577e805f1423a3e">spdk_for_each_thread</a> (<a class="el" href="thread_8h.html#adc0da6b1b784d4f165dcd48b526d12ad">spdk_msg_fn</a> fn, void *ctx, <a class="el" href="thread_8h.html#adc0da6b1b784d4f165dcd48b526d12ad">spdk_msg_fn</a> cpl)</td></tr>
 <tr class="memdesc:a16bb098e6398d2a63577e805f1423a3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a message to each thread, serially.  <a href="thread_8h.html#a16bb098e6398d2a63577e805f1423a3e">More...</a><br /></td></tr>
 <tr class="separator:a16bb098e6398d2a63577e805f1423a3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1635,6 +1638,64 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 
 </div>
 </div>
+<a id="a6695466847e7a751b768ab4b8bcd53d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6695466847e7a751b768ab4b8bcd53d0">&#9670;&nbsp;</a></span>spdk_thread_exec_msg()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int spdk_thread_exec_msg </td>
+          <td>(</td>
+          <td class="paramtype">const struct spdk_thread *&#160;</td>
+          <td class="paramname"><em>thread</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="thread_8h.html#adc0da6b1b784d4f165dcd48b526d12ad">spdk_msg_fn</a>&#160;</td>
+          <td class="paramname"><em>fn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>ctx</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Run the msg callback on the given thread. </p>
+<p>If this happens to be the current thread, the callback is executed immediately; otherwise a message is sent to the thread, and it's run asynchronously.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">thread</td><td>The target thread. </td></tr>
+    <tr><td class="paramname">fn</td><td>This function will be called on the given thread. </td></tr>
+    <tr><td class="paramname">ctx</td><td>This context will be passed to fn when called.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success </dd>
+<dd>
+-ENOMEM if the message could not be allocated </dd>
+<dd>
+-EIO if the message could not be sent to the destination thread </dd></dl>
+
+</div>
+</div>
 <a id="a5132d2abe39a40a0e14e19bb2bd15489"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5132d2abe39a40a0e14e19bb2bd15489">&#9670;&nbsp;</a></span>spdk_thread_exit()</h2>
 
@@ -2329,7 +2390,7 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
 <ul>
-        <li class="footer">Generated on Fri Feb 18 2022 04:01:03 for SPDK by
+        <li class="footer">Generated on Wed Feb 23 2022 04:01:08 for SPDK by
         <a href="http://www.doxygen.org/index.html">doxygen</a> 1.9.1 </li>
 </ul>
 </div>
