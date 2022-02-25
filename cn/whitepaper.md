@@ -14,6 +14,10 @@ toc:
     url: ../webinar
 ---
 
+## 爱奇艺
+* [英特尔助力爱奇艺深度优化 MySQL 数据库引擎性能，提供优质客户体验](https://ci.spdk.io/download/papers/202202_CN_Intel_Helps_iQIYI_Optimize_the_Performance_of_MySQL_Database_Engines_to_Improve_Customer_Experience.pdf)
+> “为了进一步挖掘MySQL潜能，爱奇艺使用英特尔®SPDK(Storage Performance Development Kit)对MySQL进行进一步优化。SPDK提供了一组用于编写高性能、可伸缩、用户态存储应用程序的工具和库。”
+
 ## 移动云
 * [Intel助力移动云百万IOPS云硬盘，打造极速云存储体验](https://ci.spdk.io/download/papers/202112_Intel_Accelerates_CMCC_Cloud_for_1M_IOPS_Cloud_Disk_with_Ultra_Cloud_Storage_Experience_CN.pdf)
 > “鉴于Intel SPDK IO低延时、高吞吐的巨大优势，移动云云存储团队与Intel进行深度合作，在结合Intel SPDK的基础上设计实现了百万IOPS的移动云极速型云硬盘产品。”
