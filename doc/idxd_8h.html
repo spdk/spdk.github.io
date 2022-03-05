@@ -86,6 +86,7 @@ $(document).ready(function(){initNavTree('idxd_8h.html',''); initResizable(); })
 
 <div class="header">
   <div class="summary">
+<a href="#define-members">Macros</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
@@ -96,6 +97,15 @@ $(document).ready(function(){initNavTree('idxd_8h.html',''); initResizable(); })
 <p>IDXD driver public interface.  
 <a href="#details">More...</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:a6604e6eda4d2763dd023b897c2c58968"><td class="memItemLeft" align="right" valign="top"><a id="a6604e6eda4d2763dd023b897c2c58968"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_IDXD_FLAG_NONTEMPORAL</b>&#160;&#160;&#160;IDXD_FLAG_CACHE_CONTROL</td></tr>
+<tr class="separator:a6604e6eda4d2763dd023b897c2c58968"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a252ac46d349fcaff8f6ed25793a7454b"><td class="memItemLeft" align="right" valign="top"><a id="a252ac46d349fcaff8f6ed25793a7454b"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_IDXD_FLAG_PERSISTENT</b>&#160;&#160;&#160;IDXD_FLAG_DEST_STEERING_TAG</td></tr>
+<tr class="separator:a252ac46d349fcaff8f6ed25793a7454b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
 <tr class="memitem:a75c066c5425700c49f077e20484b50c1"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="idxd_8h.html#a75c066c5425700c49f077e20484b50c1">spdk_idxd_req_cb</a>) (void *arg, int status)</td></tr>
@@ -119,24 +129,24 @@ Functions</h2></td></tr>
 <tr class="memitem:a1f169006ec7e3188b630bbe33cbf46ad"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="idxd_8h.html#a1f169006ec7e3188b630bbe33cbf46ad">spdk_idxd_set_config</a> (uint32_t config_number, bool kernel_mode)</td></tr>
 <tr class="memdesc:a1f169006ec7e3188b630bbe33cbf46ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the IDXD configuration.  <a href="idxd_8h.html#a1f169006ec7e3188b630bbe33cbf46ad">More...</a><br /></td></tr>
 <tr class="separator:a1f169006ec7e3188b630bbe33cbf46ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab90d42b827d1c435c10701acc131accc"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="idxd_8h.html#ab90d42b827d1c435c10701acc131accc">spdk_idxd_submit_copy</a> (struct spdk_idxd_io_channel *chan, struct iovec *diov, uint32_t diovcnt, struct iovec *siov, uint32_t siovcnt, <a class="el" href="idxd_8h.html#a75c066c5425700c49f077e20484b50c1">spdk_idxd_req_cb</a> cb_fn, void *cb_arg)</td></tr>
-<tr class="memdesc:ab90d42b827d1c435c10701acc131accc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Build and submit an idxd memory copy request.  <a href="idxd_8h.html#ab90d42b827d1c435c10701acc131accc">More...</a><br /></td></tr>
-<tr class="separator:ab90d42b827d1c435c10701acc131accc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aef2f83b678ea127b1818f759a615bdef"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="idxd_8h.html#aef2f83b678ea127b1818f759a615bdef">spdk_idxd_submit_dualcast</a> (struct spdk_idxd_io_channel *chan, void *dst1, void *dst2, const void *src, uint64_t nbytes, <a class="el" href="idxd_8h.html#a75c066c5425700c49f077e20484b50c1">spdk_idxd_req_cb</a> cb_fn, void *cb_arg)</td></tr>
-<tr class="memdesc:aef2f83b678ea127b1818f759a615bdef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Build and submit an idxd dualcast request.  <a href="idxd_8h.html#aef2f83b678ea127b1818f759a615bdef">More...</a><br /></td></tr>
-<tr class="separator:aef2f83b678ea127b1818f759a615bdef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae9e003700345c1a896c97c1c44d3b2a9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="idxd_8h.html#ae9e003700345c1a896c97c1c44d3b2a9">spdk_idxd_submit_compare</a> (struct spdk_idxd_io_channel *chan, struct iovec *siov1, size_t siov1cnt, struct iovec *siov2, size_t siov2cnt, <a class="el" href="idxd_8h.html#a75c066c5425700c49f077e20484b50c1">spdk_idxd_req_cb</a> cb_fn, void *cb_arg)</td></tr>
-<tr class="memdesc:ae9e003700345c1a896c97c1c44d3b2a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Build and submit a memory compare request.  <a href="idxd_8h.html#ae9e003700345c1a896c97c1c44d3b2a9">More...</a><br /></td></tr>
-<tr class="separator:ae9e003700345c1a896c97c1c44d3b2a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af545cb67644c2639f0d571e2f345c464"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="idxd_8h.html#af545cb67644c2639f0d571e2f345c464">spdk_idxd_submit_fill</a> (struct spdk_idxd_io_channel *chan, struct iovec *diov, size_t diovcnt, uint64_t fill_pattern, <a class="el" href="idxd_8h.html#a75c066c5425700c49f077e20484b50c1">spdk_idxd_req_cb</a> cb_fn, void *cb_arg)</td></tr>
-<tr class="memdesc:af545cb67644c2639f0d571e2f345c464"><td class="mdescLeft">&#160;</td><td class="mdescRight">Build and submit a idxd memory fill request.  <a href="idxd_8h.html#af545cb67644c2639f0d571e2f345c464">More...</a><br /></td></tr>
-<tr class="separator:af545cb67644c2639f0d571e2f345c464"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a73c22c4687cbe17ca91bc82345448d82"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="idxd_8h.html#a73c22c4687cbe17ca91bc82345448d82">spdk_idxd_submit_crc32c</a> (struct spdk_idxd_io_channel *chan, struct iovec *siov, size_t siovcnt, uint32_t seed, uint32_t *crc_dst, <a class="el" href="idxd_8h.html#a75c066c5425700c49f077e20484b50c1">spdk_idxd_req_cb</a> cb_fn, void *cb_arg)</td></tr>
-<tr class="memdesc:a73c22c4687cbe17ca91bc82345448d82"><td class="mdescLeft">&#160;</td><td class="mdescRight">Build and submit a memory CRC32-C request.  <a href="idxd_8h.html#a73c22c4687cbe17ca91bc82345448d82">More...</a><br /></td></tr>
-<tr class="separator:a73c22c4687cbe17ca91bc82345448d82"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2ae6e10a40c1dc9c28a6ebd82fe45b38"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="idxd_8h.html#a2ae6e10a40c1dc9c28a6ebd82fe45b38">spdk_idxd_submit_copy_crc32c</a> (struct spdk_idxd_io_channel *chan, struct iovec *diov, size_t diovcnt, struct iovec *siov, size_t siovcnt, uint32_t seed, uint32_t *crc_dst, <a class="el" href="idxd_8h.html#a75c066c5425700c49f077e20484b50c1">spdk_idxd_req_cb</a> cb_fn, void *cb_arg)</td></tr>
-<tr class="memdesc:a2ae6e10a40c1dc9c28a6ebd82fe45b38"><td class="mdescLeft">&#160;</td><td class="mdescRight">Build and submit a copy combined with CRC32-C request.  <a href="idxd_8h.html#a2ae6e10a40c1dc9c28a6ebd82fe45b38">More...</a><br /></td></tr>
-<tr class="separator:a2ae6e10a40c1dc9c28a6ebd82fe45b38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae52d7631d29803ad79831a18f731df6f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="idxd_8h.html#ae52d7631d29803ad79831a18f731df6f">spdk_idxd_submit_copy</a> (struct spdk_idxd_io_channel *chan, struct iovec *diov, uint32_t diovcnt, struct iovec *siov, uint32_t siovcnt, int flags, <a class="el" href="idxd_8h.html#a75c066c5425700c49f077e20484b50c1">spdk_idxd_req_cb</a> cb_fn, void *cb_arg)</td></tr>
+<tr class="memdesc:ae52d7631d29803ad79831a18f731df6f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Build and submit an idxd memory copy request.  <a href="idxd_8h.html#ae52d7631d29803ad79831a18f731df6f">More...</a><br /></td></tr>
+<tr class="separator:ae52d7631d29803ad79831a18f731df6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac18651e41ad36f5c0805959d11698b5e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="idxd_8h.html#ac18651e41ad36f5c0805959d11698b5e">spdk_idxd_submit_dualcast</a> (struct spdk_idxd_io_channel *chan, void *dst1, void *dst2, const void *src, uint64_t nbytes, int flags, <a class="el" href="idxd_8h.html#a75c066c5425700c49f077e20484b50c1">spdk_idxd_req_cb</a> cb_fn, void *cb_arg)</td></tr>
+<tr class="memdesc:ac18651e41ad36f5c0805959d11698b5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Build and submit an idxd dualcast request.  <a href="idxd_8h.html#ac18651e41ad36f5c0805959d11698b5e">More...</a><br /></td></tr>
+<tr class="separator:ac18651e41ad36f5c0805959d11698b5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a163ea97cda6e3eaf879860ef45f85e5e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="idxd_8h.html#a163ea97cda6e3eaf879860ef45f85e5e">spdk_idxd_submit_compare</a> (struct spdk_idxd_io_channel *chan, struct iovec *siov1, size_t siov1cnt, struct iovec *siov2, size_t siov2cnt, int flags, <a class="el" href="idxd_8h.html#a75c066c5425700c49f077e20484b50c1">spdk_idxd_req_cb</a> cb_fn, void *cb_arg)</td></tr>
+<tr class="memdesc:a163ea97cda6e3eaf879860ef45f85e5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Build and submit a memory compare request.  <a href="idxd_8h.html#a163ea97cda6e3eaf879860ef45f85e5e">More...</a><br /></td></tr>
+<tr class="separator:a163ea97cda6e3eaf879860ef45f85e5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31ff86efdf40d3af8c4b0362caa519b5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="idxd_8h.html#a31ff86efdf40d3af8c4b0362caa519b5">spdk_idxd_submit_fill</a> (struct spdk_idxd_io_channel *chan, struct iovec *diov, size_t diovcnt, uint64_t fill_pattern, int flags, <a class="el" href="idxd_8h.html#a75c066c5425700c49f077e20484b50c1">spdk_idxd_req_cb</a> cb_fn, void *cb_arg)</td></tr>
+<tr class="memdesc:a31ff86efdf40d3af8c4b0362caa519b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Build and submit a idxd memory fill request.  <a href="idxd_8h.html#a31ff86efdf40d3af8c4b0362caa519b5">More...</a><br /></td></tr>
+<tr class="separator:a31ff86efdf40d3af8c4b0362caa519b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab45fa3fdcbe21d2771b0a70f4831336e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="idxd_8h.html#ab45fa3fdcbe21d2771b0a70f4831336e">spdk_idxd_submit_crc32c</a> (struct spdk_idxd_io_channel *chan, struct iovec *siov, size_t siovcnt, uint32_t seed, uint32_t *crc_dst, int flags, <a class="el" href="idxd_8h.html#a75c066c5425700c49f077e20484b50c1">spdk_idxd_req_cb</a> cb_fn, void *cb_arg)</td></tr>
+<tr class="memdesc:ab45fa3fdcbe21d2771b0a70f4831336e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Build and submit a memory CRC32-C request.  <a href="idxd_8h.html#ab45fa3fdcbe21d2771b0a70f4831336e">More...</a><br /></td></tr>
+<tr class="separator:ab45fa3fdcbe21d2771b0a70f4831336e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a632b300672a61fbc53c19e190d9e3f40"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="idxd_8h.html#a632b300672a61fbc53c19e190d9e3f40">spdk_idxd_submit_copy_crc32c</a> (struct spdk_idxd_io_channel *chan, struct iovec *diov, size_t diovcnt, struct iovec *siov, size_t siovcnt, uint32_t seed, uint32_t *crc_dst, int flags, <a class="el" href="idxd_8h.html#a75c066c5425700c49f077e20484b50c1">spdk_idxd_req_cb</a> cb_fn, void *cb_arg)</td></tr>
+<tr class="memdesc:a632b300672a61fbc53c19e190d9e3f40"><td class="mdescLeft">&#160;</td><td class="mdescRight">Build and submit a copy combined with CRC32-C request.  <a href="idxd_8h.html#a632b300672a61fbc53c19e190d9e3f40">More...</a><br /></td></tr>
+<tr class="separator:a632b300672a61fbc53c19e190d9e3f40"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac92c2ac49b4b576f2538aa58846d93c3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="idxd_8h.html#ac92c2ac49b4b576f2538aa58846d93c3">spdk_idxd_process_events</a> (struct spdk_idxd_io_channel *chan)</td></tr>
 <tr class="memdesc:ac92c2ac49b4b576f2538aa58846d93c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check for completed requests on an IDXD channel.  <a href="idxd_8h.html#ac92c2ac49b4b576f2538aa58846d93c3">More...</a><br /></td></tr>
 <tr class="separator:ac92c2ac49b4b576f2538aa58846d93c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -407,8 +417,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ae9e003700345c1a896c97c1c44d3b2a9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae9e003700345c1a896c97c1c44d3b2a9">&#9670;&nbsp;</a></span>spdk_idxd_submit_compare()</h2>
+<a id="a163ea97cda6e3eaf879860ef45f85e5e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a163ea97cda6e3eaf879860ef45f85e5e">&#9670;&nbsp;</a></span>spdk_idxd_submit_compare()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -446,6 +456,12 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>flags</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype"><a class="el" href="idxd_8h.html#a75c066c5425700c49f077e20484b50c1">spdk_idxd_req_cb</a>&#160;</td>
           <td class="paramname"><em>cb_fn</em>, </td>
         </tr>
@@ -472,6 +488,7 @@ Functions</h2></td></tr>
     <tr><td class="paramname">siov1cnt</td><td>Number of elements in siov1 </td></tr>
     <tr><td class="paramname">siov2</td><td>Second source iovec </td></tr>
     <tr><td class="paramname">siov2cnt</td><td>Number of elements in siov2 </td></tr>
+    <tr><td class="paramname">flags</td><td>Flags, optional flags that can vary per operation. </td></tr>
     <tr><td class="paramname">cb_fn</td><td>Callback function which will be called when the request is complete. </td></tr>
     <tr><td class="paramname">cb_arg</td><td>Opaque value which will be passed back as the arg parameter in the completion callback.</td></tr>
   </table>
@@ -481,8 +498,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ab90d42b827d1c435c10701acc131accc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab90d42b827d1c435c10701acc131accc">&#9670;&nbsp;</a></span>spdk_idxd_submit_copy()</h2>
+<a id="ae52d7631d29803ad79831a18f731df6f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae52d7631d29803ad79831a18f731df6f">&#9670;&nbsp;</a></span>spdk_idxd_submit_copy()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -520,6 +537,12 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>flags</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype"><a class="el" href="idxd_8h.html#a75c066c5425700c49f077e20484b50c1">spdk_idxd_req_cb</a>&#160;</td>
           <td class="paramname"><em>cb_fn</em>, </td>
         </tr>
@@ -546,6 +569,7 @@ Functions</h2></td></tr>
     <tr><td class="paramname">diovcnt</td><td>Number of elements in diov </td></tr>
     <tr><td class="paramname">siov</td><td>Source iovec </td></tr>
     <tr><td class="paramname">siovcnt</td><td>Number of elements in siov </td></tr>
+    <tr><td class="paramname">flags</td><td>Flags, optional flags that can vary per operation. </td></tr>
     <tr><td class="paramname">cb_fn</td><td>Callback function which will be called when the request is complete. </td></tr>
     <tr><td class="paramname">cb_arg</td><td>Opaque value which will be passed back as the arg parameter in the completion callback.</td></tr>
   </table>
@@ -555,8 +579,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a2ae6e10a40c1dc9c28a6ebd82fe45b38"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2ae6e10a40c1dc9c28a6ebd82fe45b38">&#9670;&nbsp;</a></span>spdk_idxd_submit_copy_crc32c()</h2>
+<a id="a632b300672a61fbc53c19e190d9e3f40"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a632b300672a61fbc53c19e190d9e3f40">&#9670;&nbsp;</a></span>spdk_idxd_submit_copy_crc32c()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -606,6 +630,12 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>flags</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype"><a class="el" href="idxd_8h.html#a75c066c5425700c49f077e20484b50c1">spdk_idxd_req_cb</a>&#160;</td>
           <td class="paramname"><em>cb_fn</em>, </td>
         </tr>
@@ -634,6 +664,7 @@ Functions</h2></td></tr>
     <tr><td class="paramname">siovcnt</td><td>Number of elements in siov </td></tr>
     <tr><td class="paramname">seed</td><td>Four byte CRC-32C seed value. </td></tr>
     <tr><td class="paramname">crc_dst</td><td>Resulting calculation. </td></tr>
+    <tr><td class="paramname">flags</td><td>Flags, optional flags that can vary per operation. </td></tr>
     <tr><td class="paramname">cb_fn</td><td>Callback function which will be called when the request is complete. </td></tr>
     <tr><td class="paramname">cb_arg</td><td>Opaque value which will be passed back as the cb_arg parameter in the completion callback.</td></tr>
   </table>
@@ -643,8 +674,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a73c22c4687cbe17ca91bc82345448d82"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a73c22c4687cbe17ca91bc82345448d82">&#9670;&nbsp;</a></span>spdk_idxd_submit_crc32c()</h2>
+<a id="ab45fa3fdcbe21d2771b0a70f4831336e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab45fa3fdcbe21d2771b0a70f4831336e">&#9670;&nbsp;</a></span>spdk_idxd_submit_crc32c()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -682,6 +713,12 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>flags</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype"><a class="el" href="idxd_8h.html#a75c066c5425700c49f077e20484b50c1">spdk_idxd_req_cb</a>&#160;</td>
           <td class="paramname"><em>cb_fn</em>, </td>
         </tr>
@@ -708,6 +745,7 @@ Functions</h2></td></tr>
     <tr><td class="paramname">siovcnt</td><td>Number of elements in siov </td></tr>
     <tr><td class="paramname">seed</td><td>Four byte CRC-32C seed value. </td></tr>
     <tr><td class="paramname">crc_dst</td><td>Resulting calculation. </td></tr>
+    <tr><td class="paramname">flags</td><td>Flags, optional flags that can vary per operation. </td></tr>
     <tr><td class="paramname">cb_fn</td><td>Callback function which will be called when the request is complete. </td></tr>
     <tr><td class="paramname">cb_arg</td><td>Opaque value which will be passed back as the cb_arg parameter in the completion callback.</td></tr>
   </table>
@@ -717,8 +755,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="aef2f83b678ea127b1818f759a615bdef"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aef2f83b678ea127b1818f759a615bdef">&#9670;&nbsp;</a></span>spdk_idxd_submit_dualcast()</h2>
+<a id="ac18651e41ad36f5c0805959d11698b5e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac18651e41ad36f5c0805959d11698b5e">&#9670;&nbsp;</a></span>spdk_idxd_submit_dualcast()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -756,6 +794,12 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>flags</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype"><a class="el" href="idxd_8h.html#a75c066c5425700c49f077e20484b50c1">spdk_idxd_req_cb</a>&#160;</td>
           <td class="paramname"><em>cb_fn</em>, </td>
         </tr>
@@ -782,6 +826,7 @@ Functions</h2></td></tr>
     <tr><td class="paramname">dst2</td><td>Second destination virtual address (must be 4K aligned). </td></tr>
     <tr><td class="paramname">src</td><td>Source virtual address. </td></tr>
     <tr><td class="paramname">nbytes</td><td>Number of bytes to copy. </td></tr>
+    <tr><td class="paramname">flags</td><td>Flags, optional flags that can vary per operation. </td></tr>
     <tr><td class="paramname">cb_fn</td><td>Callback function which will be called when the request is complete. </td></tr>
     <tr><td class="paramname">cb_arg</td><td>Opaque value which will be passed back as the arg parameter in the completion callback.</td></tr>
   </table>
@@ -791,8 +836,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="af545cb67644c2639f0d571e2f345c464"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af545cb67644c2639f0d571e2f345c464">&#9670;&nbsp;</a></span>spdk_idxd_submit_fill()</h2>
+<a id="a31ff86efdf40d3af8c4b0362caa519b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a31ff86efdf40d3af8c4b0362caa519b5">&#9670;&nbsp;</a></span>spdk_idxd_submit_fill()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -824,6 +869,12 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>flags</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype"><a class="el" href="idxd_8h.html#a75c066c5425700c49f077e20484b50c1">spdk_idxd_req_cb</a>&#160;</td>
           <td class="paramname"><em>cb_fn</em>, </td>
         </tr>
@@ -849,6 +900,7 @@ Functions</h2></td></tr>
     <tr><td class="paramname">diov</td><td>Destination iovec </td></tr>
     <tr><td class="paramname">diovcnt</td><td>Number of elements in diov </td></tr>
     <tr><td class="paramname">fill_pattern</td><td>Repeating eight-byte pattern to use for memory fill. </td></tr>
+    <tr><td class="paramname">flags</td><td>Flags, optional flags that can vary per operation. </td></tr>
     <tr><td class="paramname">cb_fn</td><td>Callback function which will be called when the request is complete. </td></tr>
     <tr><td class="paramname">cb_arg</td><td>Opaque value which will be passed back as the cb_arg parameter in the completion callback.</td></tr>
   </table>
@@ -864,7 +916,7 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
 <ul>
-        <li class="footer">Generated on Fri Mar 4 2022 04:01:03 for SPDK by
+        <li class="footer">Generated on Sat Mar 5 2022 04:01:09 for SPDK by
         <a href="http://www.doxygen.org/index.html">doxygen</a> 1.9.1 </li>
 </ul>
 </div>

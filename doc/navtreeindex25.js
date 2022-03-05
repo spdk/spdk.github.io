@@ -1,5 +1,9 @@
 var NAVTREEINDEX25 =
 {
+"structspdk__opal__d0__features__info.html#aa53c3f9d18f31aab1b6dafdc79ad5324":[14,0,294,3],
+"structspdk__opal__d0__features__info.html#ac3bdc0eaa1dea42656aca886841e8454":[14,0,294,6],
+"structspdk__opal__d0__features__info.html#af2183ba2437bca102cdeca06d9f2b293":[14,0,294,5],
+"structspdk__opal__d0__geo__feat.html":[14,0,295],
 "structspdk__opal__d0__geo__feat.html#a3f416f4e4799a85328d5823c868521f7":[14,0,295,1],
 "structspdk__opal__d0__geo__feat.html#a4c1928ebc2517c5e221408da2a488081":[14,0,295,6],
 "structspdk__opal__d0__geo__feat.html#a629d86f59a92c1185606fd7cb67e10cb":[14,0,295,0],
@@ -245,9 +249,5 @@ var NAVTREEINDEX25 =
 "structspdk__scsi__pr__in__read__reservations__data.html#a8977e1d54d89556ae2bcf3234c4ec091":[14,0,325,2],
 "structspdk__scsi__pr__in__read__reservations__data.html#ac63d214d1ddc8bdc4bccae2f5ea1cb07":[14,0,325,5],
 "structspdk__scsi__pr__in__read__reservations__data.html#ae6fb0ae2a7eb76e126b66f4f13a0140a":[14,0,325,6],
-"structspdk__scsi__pr__in__report__capabilities__data.html":[14,0,326],
-"structspdk__scsi__pr__in__report__capabilities__data.html#a11a0eb525a585f29b67af0e60eae9cd5":[14,0,326,2],
-"structspdk__scsi__pr__in__report__capabilities__data.html#a14a4175d4165c5c025cdf064c339fd30":[14,0,326,4],
-"structspdk__scsi__pr__in__report__capabilities__data.html#a18d71dea2bcf560015a453b6382d3c29":[14,0,326,11],
-"structspdk__scsi__pr__in__report__capabilities__data.html#a29a7afa553dcc572ec63b6331679f43d":[14,0,326,12]
+"structspdk__scsi__pr__in__report__capabilities__data.html":[14,0,326]
 };

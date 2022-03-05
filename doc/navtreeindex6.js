@@ -1,5 +1,9 @@
 var NAVTREEINDEX6 =
 {
+"jsonrpc.html#jsonrpc_invalid_params":[3,9,1,1],
+"jsonrpc.html#jsonrpc_overview":[3,9,0],
+"jsonrpc.html#jsonrpc_parser_error":[3,9,1,0],
+"jsonrpc.html#notify_get_notifications":[3,9,9,28],
 "jsonrpc.html#rpc_bdev_aio_create":[3,9,5,25],
 "jsonrpc.html#rpc_bdev_aio_delete":[3,9,5,27],
 "jsonrpc.html#rpc_bdev_aio_rescan":[3,9,5,26],
@@ -245,9 +249,5 @@ var NAVTREEINDEX6 =
 "libraries.html#conventions":[3,1,1],
 "libraries.html#env_replacement":[3,1,2,2],
 "libraries.html#headers":[3,1,1,0],
-"libraries.html#lib":[3,1,0,0],
-"libraries.html#map":[3,1,1,2],
-"libraries.html#module":[3,1,0,1],
-"libraries.html#naming":[3,1,1,1],
-"libraries.html#shared_objects":[3,1,2]
+"libraries.html#lib":[3,1,0,0]
 };

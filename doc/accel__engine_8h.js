@@ -1,5 +1,6 @@
 var accel__engine_8h =
 [
+    [ "ACCEL_FLAG_PERSISTENT", "accel__engine_8h.html#a30934de571302d9de3dd14d657172896", null ],
     [ "spdk_accel_completion_cb", "accel__engine_8h.html#a48593db52501b3dec9233f7112d37872", null ],
     [ "spdk_accel_fini_cb", "accel__engine_8h.html#a545ea1cc4167924acee2803aed824877", null ],
     [ "accel_capability", "accel__engine_8h.html#ae410399fafe6cf6b578da1601337678e", [
@@ -17,12 +18,12 @@ var accel__engine_8h =
     [ "spdk_accel_engine_module_finish", "accel__engine_8h.html#a8505077f98b662aa948eef070c4be155", null ],
     [ "spdk_accel_get_capabilities", "accel__engine_8h.html#a88cc170fc07d06224a37cd00d04bd2e9", null ],
     [ "spdk_accel_submit_compare", "accel__engine_8h.html#a7ba82c135282c35831243dd787fbe907", null ],
-    [ "spdk_accel_submit_copy", "accel__engine_8h.html#ac0f663883c7d8087f9b1ca948b3aefc9", null ],
-    [ "spdk_accel_submit_copy_crc32c", "accel__engine_8h.html#a56424bc660d9b1bfe3d6f4ae3976d699", null ],
-    [ "spdk_accel_submit_copy_crc32cv", "accel__engine_8h.html#a40acd298d88d5f41eae9676699b4538f", null ],
+    [ "spdk_accel_submit_copy", "accel__engine_8h.html#a8414580180688f9334f9a8e3103a6e28", null ],
+    [ "spdk_accel_submit_copy_crc32c", "accel__engine_8h.html#a6e173da38e9c798f949a07149b9bf409", null ],
+    [ "spdk_accel_submit_copy_crc32cv", "accel__engine_8h.html#ad07e15079ef496a54d88a90ef65ab3c6", null ],
     [ "spdk_accel_submit_crc32c", "accel__engine_8h.html#ac4d750dd429c533295e9e73a864eae68", null ],
     [ "spdk_accel_submit_crc32cv", "accel__engine_8h.html#a6273dec7ea700cd19ab055ac08a5a97c", null ],
-    [ "spdk_accel_submit_dualcast", "accel__engine_8h.html#a402f5ed0f1fac5c37f965a55f0d0bf55", null ],
-    [ "spdk_accel_submit_fill", "accel__engine_8h.html#adb62b1e99d9a010c140987eea57f5dc4", null ],
+    [ "spdk_accel_submit_dualcast", "accel__engine_8h.html#aad9824886c1379235c90674e3a932483", null ],
+    [ "spdk_accel_submit_fill", "accel__engine_8h.html#ad5529e871a11d307e5aba2e21abeaa29", null ],
     [ "spdk_accel_write_config_json", "accel__engine_8h.html#a308671b4f55c2adc9469e59b941a6dcc", null ]
 ];

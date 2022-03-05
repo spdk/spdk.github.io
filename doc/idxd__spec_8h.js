@@ -30,6 +30,7 @@ var idxd__spec_8h =
     [ "IDXD_FLAG_CACHE_CONTROL", "idxd__spec_8h.html#a8d7dbd38ece690e50adc989032bcdaa5", null ],
     [ "IDXD_FLAG_COMPLETION_ADDR_VALID", "idxd__spec_8h.html#a8891269a6f4f84989ba714f0aa1ffa50", null ],
     [ "IDXD_FLAG_CRC_READ_CRC_SEED", "idxd__spec_8h.html#a3454642e7f419ae9c5b87c75727a5fd7", null ],
+    [ "IDXD_FLAG_DEST_STEERING_TAG", "idxd__spec_8h.html#a1f617179b6206d1fcd6db508b98f123c", null ],
     [ "IDXD_FLAG_FENCE", "idxd__spec_8h.html#a61b81f117ddf0bf87aefb5cf8d1ba92b", null ],
     [ "IDXD_FLAG_REQUEST_COMPLETION", "idxd__spec_8h.html#a0e35cbc93982b6a74977a87889d52403", null ],
     [ "IDXD_GENCAP_OFFSET", "idxd__spec_8h.html#a921cae568c43caacb36be3e372935e3a", null ],

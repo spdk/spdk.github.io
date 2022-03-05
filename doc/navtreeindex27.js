@@ -1,5 +1,9 @@
 var NAVTREEINDEX27 =
 {
+"system_configuration.html#iommu_config":[3,0,0],
+"system_configuration.html#system_configuration_nonroot":[3,0,1],
+"system_configuration.html#system_configuration_nonroot_device_access":[3,0,1,0],
+"system_configuration.html#system_configuration_nonroot_memory_constraints":[3,0,1,1],
 "thread_8h.html":[15,0,57],
 "thread_8h.html#a07b662b152c21dad824ad2738d0733ec":[15,0,57,73],
 "thread_8h.html#a0cac0f188b5f46ff8bcdd5d4ffa37e84":[15,0,57,27],
@@ -245,9 +249,5 @@ var NAVTREEINDEX27 =
 "unionidxd__offsets__register.html#a580d4224ca783068da581d39a61c5fe3":[14,0,14,2],
 "unionidxd__offsets__register.html#a942b86becefcd0fe0d924c88b032bb05":[14,0,14,3],
 "unionidxd__offsets__register.html#aa85019dbd22343af0ea489e164be0799":[14,0,14,5],
-"unionidxd__swerr__register.html":[14,0,17],
-"unionidxd__swerr__register.html#a025bbc36415c200c6e603cbb82bacbfe":[14,0,17,6],
-"unionidxd__swerr__register.html#a058df102fca7c0ecfbe3827ccb193bf8":[14,0,17,11],
-"unionidxd__swerr__register.html#a1b6507502bdd761d289484e8350f6a18":[14,0,17,13],
-"unionidxd__swerr__register.html#a26cfce45a58035eaab256e010f8e8ea5":[14,0,17,8]
+"unionidxd__swerr__register.html":[14,0,17]
 };
