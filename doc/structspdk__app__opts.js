@@ -14,6 +14,7 @@ var structspdk__app__opts =
     [ "main_core", "structspdk__app__opts.html#aac6e234b1dec93b58c29239539d6c9f2", null ],
     [ "mem_channel", "structspdk__app__opts.html#abd571128caea84190b31231105219b38", null ],
     [ "mem_size", "structspdk__app__opts.html#ab3ad6ade4ff0ec041851e763bc29d6e7", null ],
+    [ "msg_mempool_size", "structspdk__app__opts.html#a35bc2b8bc80d206be6565e7690f5ddbe", null ],
     [ "name", "structspdk__app__opts.html#a6d8fad90703f6eb20d0bd2ecb5747f74", null ],
     [ "no_pci", "structspdk__app__opts.html#a524584177bee58d89de5808d5580d0c7", null ],
     [ "num_entries", "structspdk__app__opts.html#a5181e4f5f9b4b87b42f26fb87b071faa", null ],

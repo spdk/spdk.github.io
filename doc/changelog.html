@@ -102,6 +102,8 @@ v22.05: (Upcoming Release)</h1>
 <p>A new flag <code>ACCEL_FLAG_PERSISTENT</code> was added to indicate the target memory is PMEM.</p>
 <h2>bdev_nvme</h2>
 <p>Added <code>bdev_nvme_add_error_injection</code> and <code>bdev_nvme_remove_error_injection</code> RPCs to add and remove NVMe error injections.</p>
+<h2>event</h2>
+<p>Added <code>msg_mempool_size</code> parameter to <code>spdk_reactors_init</code> and <code>spdk_thread_lib_init_ext</code>. The size of <code>g_spdk_msg_mempool</code> can now be controlled through the same-named user option of <code><a class="el" href="structspdk__app__opts.html" title="Event framework initialization options.">spdk_app_opts</a></code> structure.</p>
 <h2>nvmf</h2>
 <p>Removed deprecated max_qpairs_per_ctrlr parameter from nvmf_create_transport RPC. Use max_io_qpairs_per_ctrlr instead.</p>
 <p>Deprecated the ability for hosts to connect to the discovery subsystem automatically on any existing listener. Users should now explicitly add listeners for the discovery subsystem. Host can still connect to the discovery subsystem as before, but a warning message will be emitted if no listener was configured for the transport ID of the incoming connection.</p>
@@ -1455,7 +1457,7 @@ v16.06: NVMf userspace target</h1>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
 <ul>
-        <li class="footer">Generated on Sat Mar 5 2022 04:01:09 for SPDK by
+        <li class="footer">Generated on Wed Mar 9 2022 04:01:04 for SPDK by
         <a href="http://www.doxygen.org/index.html">doxygen</a> 1.9.1 </li>
 </ul>
 </div>

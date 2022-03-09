@@ -1,5 +1,6 @@
 var NAVTREEINDEX6 =
 {
+"jsonrpc.html#jsonrpc_generate":[3,9,2,0],
 "jsonrpc.html#jsonrpc_invalid_params":[3,9,1,1],
 "jsonrpc.html#jsonrpc_overview":[3,9,0],
 "jsonrpc.html#jsonrpc_parser_error":[3,9,1,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX6 =
 "libraries.html":[3,1],
 "libraries.html#conventions":[3,1,1],
 "libraries.html#env_replacement":[3,1,2,2],
-"libraries.html#headers":[3,1,1,0],
-"libraries.html#lib":[3,1,0,0]
+"libraries.html#headers":[3,1,1,0]
 };

@@ -192,6 +192,9 @@ uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>base_virtaddr</b>
 <tr class="memitem:a6e31b7a77928202250cb12f7e7d2b76b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__app__opts.html#a6e31b7a77928202250cb12f7e7d2b76b">disable_signal_handlers</a></td></tr>
 <tr class="memdesc:a6e31b7a77928202250cb12f7e7d2b76b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disable default signal handlers.  <a href="structspdk__app__opts.html#a6e31b7a77928202250cb12f7e7d2b76b">More...</a><br /></td></tr>
 <tr class="separator:a6e31b7a77928202250cb12f7e7d2b76b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35bc2b8bc80d206be6565e7690f5ddbe"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__app__opts.html#a35bc2b8bc80d206be6565e7690f5ddbe">msg_mempool_size</a></td></tr>
+<tr class="memdesc:a35bc2b8bc80d206be6565e7690f5ddbe"><td class="mdescLeft">&#160;</td><td class="mdescRight">The allocated size for the message pool used by the threading library.  <a href="structspdk__app__opts.html#a35bc2b8bc80d206be6565e7690f5ddbe">More...</a><br /></td></tr>
+<tr class="separator:a35bc2b8bc80d206be6565e7690f5ddbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Event framework initialization options. </p>
@@ -211,6 +214,23 @@ uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>base_virtaddr</b>
 <p>Disable default signal handlers. </p>
 <p>If set to <code>true</code>, the shutdown process is not started implicitly by process signals, hence the application is responsible for calling <a class="el" href="event_8h.html#a0bbbb23263a8ea9c93c3adf8aa3bce8e" title="Start shutting down the framework.">spdk_app_start_shutdown()</a>.</p>
 <p>Default is <code>false</code>. </p>
+
+</div>
+</div>
+<a id="a35bc2b8bc80d206be6565e7690f5ddbe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a35bc2b8bc80d206be6565e7690f5ddbe">&#9670;&nbsp;</a></span>msg_mempool_size</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t spdk_app_opts::msg_mempool_size</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The allocated size for the message pool used by the threading library. </p>
+<p>Default is <code>SPDK_DEFAULT_MSG_MEMPOOL_SIZE</code>. </p>
 
 </div>
 </div>
@@ -240,7 +260,7 @@ uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>base_virtaddr</b>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
 <ul>
-        <li class="footer">Generated on Sat Mar 5 2022 04:01:09 for SPDK by
+        <li class="footer">Generated on Wed Mar 9 2022 04:01:05 for SPDK by
         <a href="http://www.doxygen.org/index.html">doxygen</a> 1.9.1 </li>
 </ul>
 </div>
