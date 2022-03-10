@@ -1,5 +1,7 @@
 var NAVTREEINDEX26 =
 {
+"structspdk__scsi__pr__in__read__reservations__data.html#a8977e1d54d89556ae2bcf3234c4ec091":[14,0,325,2],
+"structspdk__scsi__pr__in__read__reservations__data.html#ac63d214d1ddc8bdc4bccae2f5ea1cb07":[14,0,325,5],
 "structspdk__scsi__pr__in__read__reservations__data.html#ae6fb0ae2a7eb76e126b66f4f13a0140a":[14,0,325,6],
 "structspdk__scsi__pr__in__report__capabilities__data.html":[14,0,326],
 "structspdk__scsi__pr__in__report__capabilities__data.html#a11a0eb525a585f29b67af0e60eae9cd5":[14,0,326,2],
@@ -247,7 +249,5 @@ var NAVTREEINDEX26 =
 "structvfio__user__region__access.html#a36926d14f9c7310a4d6f0af0469b98c5":[14,0,360,0],
 "structvfio__user__region__access.html#a4f0edcde076bdae35264919af0240cdb":[14,0,360,2],
 "structvfio__user__region__access.html#ac5a629b3d9e366349ae7a7f37215bf46":[14,0,360,1],
-"structvfio__user__version.html":[14,0,361],
-"structvfio__user__version.html#a3e28cccc95d172ce1e64ee6a3e04f04a":[14,0,361,2],
-"structvfio__user__version.html#ab4a19712c45fb4ecf80f370129225671":[14,0,361,1]
+"structvfio__user__version.html":[14,0,361]
 };
