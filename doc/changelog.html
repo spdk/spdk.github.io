@@ -102,6 +102,7 @@ v22.05: (Upcoming Release)</h1>
 <p>A new flag <code>ACCEL_FLAG_PERSISTENT</code> was added to indicate the target memory is PMEM.</p>
 <h2>bdev_nvme</h2>
 <p>Added <code>bdev_nvme_add_error_injection</code> and <code>bdev_nvme_remove_error_injection</code> RPCs to add and remove NVMe error injections.</p>
+<p>New parameters, <code>ctrlr_loss_timeout_sec</code>, <code>reconnect_delay_sec</code>, and <code>fast_io_fail_timeout_sec</code>, are added to the RPC <code>bdev_nvme_set_options</code>. They can be overridden if they are given by the RPC <code>bdev_nvme_attach_controller</code>.</p>
 <h2>event</h2>
 <p>Added <code>msg_mempool_size</code> parameter to <code>spdk_reactors_init</code> and <code>spdk_thread_lib_init_ext</code>. The size of <code>g_spdk_msg_mempool</code> can now be controlled through the same-named user option of <code><a class="el" href="structspdk__app__opts.html" title="Event framework initialization options.">spdk_app_opts</a></code> structure.</p>
 <h2>nvmf</h2>
@@ -1457,7 +1458,7 @@ v16.06: NVMf userspace target</h1>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
 <ul>
-        <li class="footer">Generated on Mon Mar 14 2022 04:01:02 for SPDK by
+        <li class="footer">Generated on Tue Mar 15 2022 04:01:32 for SPDK by
         <a href="http://www.doxygen.org/index.html">doxygen</a> 1.9.1 </li>
 </ul>
 </div>

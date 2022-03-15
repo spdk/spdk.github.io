@@ -2296,6 +2296,7 @@ bdev_aio_delete</h2>
 </div><!-- fragment --><h2><a class="anchor" id="rpc_bdev_nvme_set_options"></a>
 bdev_nvme_set_options</h2>
 <p>Set global parameters for all bdev NVMe. This RPC may only be called before SPDK subsystems have been initialized or any bdev NVMe has been created.</p>
+<p>Parameters, ctrlr_loss_timeout_sec, reconnect_delay_sec, and fast_io_fail_timeout_sec, are for I/O error resiliency. They can be overridden if they are given by the RPC bdev_nvme_attach_controller.</p>
 <h3>Parameters</h3>
 <table class="markdownTable">
 <tr class="markdownTableHead">
@@ -2331,7 +2332,13 @@ bdev_nvme_set_options</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">bdev_retry_count   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">The number of attempts per I/O in the bdev layer before an I/O fails. -1 means infinite retries.    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">transport_ack_timeout   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">Time to wait ack until packet retransmission. RDMA specific. Range 0-31 where 0 is driver-specific default value.   </td></tr>
+<td class="markdownTableBodyNone">transport_ack_timeout   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">Time to wait ack until packet retransmission. RDMA specific. Range 0-31 where 0 is driver-specific default value.    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">ctrlr_loss_timeout_sec   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">Time to wait until ctrlr is reconnected before deleting ctrlr. -1 means infinite reconnects. 0 means no reconnect.    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">reconnect_delay_sec   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">Time to delay a reconnect trial. 0 means no reconnect.    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">fast_io_fail_timeout_sec   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">Time to wait until ctrlr is reconnected before failing I/O to ctrlr. 0 means no such timeout.   </td></tr>
 </table>
 <h3>Example</h3>
 <p>Example request:</p>
@@ -7577,7 +7584,7 @@ bdev_nvme_remove_error_injection</h2>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
 <ul>
-        <li class="footer">Generated on Mon Mar 14 2022 04:01:02 for SPDK by
+        <li class="footer">Generated on Tue Mar 15 2022 04:01:32 for SPDK by
         <a href="http://www.doxygen.org/index.html">doxygen</a> 1.9.1 </li>
 </ul>
 </div>
