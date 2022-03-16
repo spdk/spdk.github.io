@@ -14,12 +14,13 @@ var searchData=
   ['get_5fmemory_5fdomains_264',['get_memory_domains',['../structspdk__bdev__fn__table.html#af73c1ef741a4751a64354eeb0532396c',1,'spdk_bdev_fn_table']]],
   ['get_5fmodule_5fctx_265',['get_module_ctx',['../structspdk__bdev__fn__table.html#a541d4861e6d57c85c6ab659fbde4a417',1,'spdk_bdev_fn_table']]],
   ['get_5foptimal_5fpoll_5fgroup_266',['get_optimal_poll_group',['../structspdk__nvmf__transport__ops.html#a0a4b65e9d7fe480b70bc37ffe88e89fc',1,'spdk_nvmf_transport_ops']]],
-  ['get_5frkey_267',['get_rkey',['../structspdk__nvme__rdma__hooks.html#ab20f458fc7c024017bf09979a85037d8',1,'spdk_nvme_rdma_hooks']]],
-  ['get_5fspin_5ftime_268',['get_spin_time',['../structspdk__bdev__fn__table.html#aafc336b4a42290b7e944fa0e73558a62',1,'spdk_bdev_fn_table']]],
-  ['getting_20started_269',['Getting Started',['../getting_started.html',1,'intro']]],
-  ['gpt_5fspec_2eh_270',['gpt_spec.h',['../gpt__spec_8h.html',1,'']]],
-  ['grp_5flen_271',['grp_len',['../structspdk__ocssd__dev__lba__fmt.html#a8b5ed3a8b5a46f41a1f6e6d389b8bbce',1,'spdk_ocssd_dev_lba_fmt']]],
-  ['guard_5finterval_272',['guard_interval',['../structspdk__dif__ctx.html#a593aef5de5694c4abd05554ed4ac92a7',1,'spdk_dif_ctx']]],
-  ['guard_5fvalue_273',['guard_value',['../structspdk__nvme__ns__data.html#a058bfec34018c099918420fbc79fab27',1,'spdk_nvme_ns_data']]],
-  ['guid_5fnever_5freused_274',['guid_never_reused',['../structspdk__nvme__ns__data.html#a1d90d25be4a3d74fcc8097cdd437da25',1,'spdk_nvme_ns_data']]]
+  ['get_5fopts_267',['get_opts',['../structspdk__scheduler.html#a47ad7f5c1e7105022f2696ba7e1c6846',1,'spdk_scheduler']]],
+  ['get_5frkey_268',['get_rkey',['../structspdk__nvme__rdma__hooks.html#ab20f458fc7c024017bf09979a85037d8',1,'spdk_nvme_rdma_hooks']]],
+  ['get_5fspin_5ftime_269',['get_spin_time',['../structspdk__bdev__fn__table.html#aafc336b4a42290b7e944fa0e73558a62',1,'spdk_bdev_fn_table']]],
+  ['getting_20started_270',['Getting Started',['../getting_started.html',1,'intro']]],
+  ['gpt_5fspec_2eh_271',['gpt_spec.h',['../gpt__spec_8h.html',1,'']]],
+  ['grp_5flen_272',['grp_len',['../structspdk__ocssd__dev__lba__fmt.html#a8b5ed3a8b5a46f41a1f6e6d389b8bbce',1,'spdk_ocssd_dev_lba_fmt']]],
+  ['guard_5finterval_273',['guard_interval',['../structspdk__dif__ctx.html#a593aef5de5694c4abd05554ed4ac92a7',1,'spdk_dif_ctx']]],
+  ['guard_5fvalue_274',['guard_value',['../structspdk__nvme__ns__data.html#a058bfec34018c099918420fbc79fab27',1,'spdk_nvme_ns_data']]],
+  ['guid_5fnever_5freused_275',['guid_never_reused',['../structspdk__nvme__ns__data.html#a1d90d25be4a3d74fcc8097cdd437da25',1,'spdk_nvme_ns_data']]]
 ];

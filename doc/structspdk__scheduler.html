@@ -117,6 +117,12 @@ void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="st
 <tr class="memitem:a96b47ed5d54cdd98d89538175aa9e96a"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__scheduler.html#a96b47ed5d54cdd98d89538175aa9e96a">balance</a> )(struct <a class="el" href="structspdk__scheduler__core__info.html">spdk_scheduler_core_info</a> *core_info, uint32_t count)</td></tr>
 <tr class="memdesc:a96b47ed5d54cdd98d89538175aa9e96a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to balance threads across cores by modifying the value of their lcore field.  <a href="structspdk__scheduler.html#a96b47ed5d54cdd98d89538175aa9e96a">More...</a><br /></td></tr>
 <tr class="separator:a96b47ed5d54cdd98d89538175aa9e96a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf38184e6082cd0840571a8e38665911"><td class="memItemLeft" align="right" valign="top">int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__scheduler.html#aaf38184e6082cd0840571a8e38665911">set_opts</a> )(const struct <a class="el" href="structspdk__json__val.html">spdk_json_val</a> *opts)</td></tr>
+<tr class="memdesc:aaf38184e6082cd0840571a8e38665911"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to set scheduler parameters like load_limit.  <a href="structspdk__scheduler.html#aaf38184e6082cd0840571a8e38665911">More...</a><br /></td></tr>
+<tr class="separator:aaf38184e6082cd0840571a8e38665911"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47ad7f5c1e7105022f2696ba7e1c6846"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__scheduler.html#a47ad7f5c1e7105022f2696ba7e1c6846">get_opts</a> )(struct spdk_json_write_ctx *ctx)</td></tr>
+<tr class="memdesc:a47ad7f5c1e7105022f2696ba7e1c6846"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to get current scheduler parameters like load_limit.  <a href="structspdk__scheduler.html#a47ad7f5c1e7105022f2696ba7e1c6846">More...</a><br /></td></tr>
+<tr class="separator:a47ad7f5c1e7105022f2696ba7e1c6846"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Thread scheduler. </p>
@@ -145,6 +151,28 @@ void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="st
 
 </div>
 </div>
+<a id="a47ad7f5c1e7105022f2696ba7e1c6846"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a47ad7f5c1e7105022f2696ba7e1c6846">&#9670;&nbsp;</a></span>get_opts</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void(* spdk_scheduler::get_opts) (struct spdk_json_write_ctx *ctx)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Function to get current scheduler parameters like load_limit. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ctx</td><td>Pointer to spdk_json_write_ctx struct to be filled with current parameters. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a6cbfa8fdd78ad15bfc12a8b9e9734085"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6cbfa8fdd78ad15bfc12a8b9e9734085">&#9670;&nbsp;</a></span>init</h2>
 
@@ -162,6 +190,28 @@ void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="st
 
 </div>
 </div>
+<a id="aaf38184e6082cd0840571a8e38665911"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf38184e6082cd0840571a8e38665911">&#9670;&nbsp;</a></span>set_opts</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int(* spdk_scheduler::set_opts) (const struct <a class="el" href="structspdk__json__val.html">spdk_json_val</a> *opts)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Function to set scheduler parameters like load_limit. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">opts</td><td>Pointer to <a class="el" href="structspdk__json__val.html">spdk_json_val</a> struct containing values of parameters to be set in scheduler. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li>scheduler.h</li>
 </ul>
@@ -171,7 +221,7 @@ void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="st
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
 <ul>
-        <li class="footer">Generated on Tue Mar 15 2022 04:01:32 for SPDK by
+        <li class="footer">Generated on Wed Mar 16 2022 04:01:36 for SPDK by
         <a href="http://www.doxygen.org/index.html">doxygen</a> 1.9.1 </li>
 </ul>
 </div>

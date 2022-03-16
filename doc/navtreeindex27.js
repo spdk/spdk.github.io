@@ -1,5 +1,7 @@
 var NAVTREEINDEX27 =
 {
+"structvfio__user__region__access.html#ac5a629b3d9e366349ae7a7f37215bf46":[14,0,360,1],
+"structvfio__user__version.html":[14,0,361],
 "structvfio__user__version.html#a3e28cccc95d172ce1e64ee6a3e04f04a":[14,0,361,2],
 "structvfio__user__version.html#ab4a19712c45fb4ecf80f370129225671":[14,0,361,1],
 "structvfio__user__version.html#af5e04313660bcdcd7dabc4a147eb0b5d":[14,0,361,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX27 =
 "unionidxd__intcause__register.html#acd3011987ed9a89a0c84b1367ba71474":[14,0,13,7],
 "unionidxd__intcause__register.html#ace198d9baaaa143b65d2bd1b5499917c":[14,0,13,6],
 "unionidxd__offsets__register.html":[14,0,14],
-"unionidxd__offsets__register.html#a08e771bd19ffe3fe6c4f15e930bc7cef":[14,0,14,0],
-"unionidxd__offsets__register.html#a16bbf9fa887e4804e714ec54d322bace":[14,0,14,6],
-"unionidxd__offsets__register.html#a43636517dbe127db642d7f6077146bea":[14,0,14,1]
+"unionidxd__offsets__register.html#a08e771bd19ffe3fe6c4f15e930bc7cef":[14,0,14,0]
 };
