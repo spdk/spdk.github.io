@@ -110,6 +110,9 @@ v22.05: (Upcoming Release)</h1>
 <p>Deprecated the ability for hosts to connect to the discovery subsystem automatically on any existing listener. Users should now explicitly add listeners for the discovery subsystem. Host can still connect to the discovery subsystem as before, but a warning message will be emitted if no listener was configured for the transport ID of the incoming connection.</p>
 <h2>thread</h2>
 <p>Added <code><a class="el" href="thread_8h.html#a6695466847e7a751b768ab4b8bcd53d0" title="Run the msg callback on the given thread.">spdk_thread_exec_msg()</a></code> API.</p>
+<h2>scheduler</h2>
+<p><code>framework_set_scheduler</code> can now be called after application initialization. Added callbacks to set custom parameters specific for each scheduler implementation and <code>framework_get_scheduler</code> to retrieve them.</p>
+<p>Added <code>dynamic</code> scheduler options: load_limit, core_limit, core_busy. Their descriptions are available in JSON-RPC document, in section <a href="jsonrpc.html#rpc_framework_set_scheduler">framework_set_scheduler</a>.</p>
 <h1>v22.01</h1>
 <h2>accel</h2>
 <p>The batching capability was removed. Batching is now considered an implementation detail of the low level drivers.</p>
@@ -1458,7 +1461,7 @@ v16.06: NVMf userspace target</h1>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
 <ul>
-        <li class="footer">Generated on Thu Mar 17 2022 04:01:00 for SPDK by
+        <li class="footer">Generated on Fri Mar 18 2022 04:01:02 for SPDK by
         <a href="http://www.doxygen.org/index.html">doxygen</a> 1.9.1 </li>
 </ul>
 </div>

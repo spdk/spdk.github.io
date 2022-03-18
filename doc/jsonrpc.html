@@ -631,7 +631,13 @@ framework_set_scheduler</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Name of a scheduler    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">period   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">Scheduler period   </td></tr>
+<td class="markdownTableBodyNone">period   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">Scheduler period    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">load_limit   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">Thread load limit in % (dynamic only)    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">core_limit   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">Load limit on the core to be considered full (dynamic only)    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">core_busy   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">Indicates at what load on core scheduler should move threads to a different core (dynamic only)   </td></tr>
 </table>
 <h3>Response</h3>
 <p>Completion status of the operation is returned as a boolean.</p>
@@ -7584,7 +7590,7 @@ bdev_nvme_remove_error_injection</h2>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
 <ul>
-        <li class="footer">Generated on Thu Mar 17 2022 04:01:00 for SPDK by
+        <li class="footer">Generated on Fri Mar 18 2022 04:01:02 for SPDK by
         <a href="http://www.doxygen.org/index.html">doxygen</a> 1.9.1 </li>
 </ul>
 </div>

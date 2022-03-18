@@ -101,15 +101,19 @@ $(document).ready(function(){initNavTree('scheduler.html',''); initResizable(); 
 <h3>Known limitation</h3>
 <p>When SMT (Hyperthreading) is enabled the two logical CPU cores sharing a single physical CPU core must run at the same frequency. If one of two of such logical CPU cores is outside the application cpu_mask, the policy and frequency on that core has to be managed by the administrator.</p>
 <h1>Scheduler implementations</h1>
-<p>The scheduler in use may be controlled by JSON-RPC. Please use the <a href="jsonrpc.md/#rpc_framework_set_scheduler">framework_set_scheduler</a> RPC to switch between schedulers or change their options.</p>
-<p><a href="spdk_top.md#spdk_top">spdk_top</a> is a useful tool to observe the behavior of schedulers in different scenarios and workloads.</p>
+<p>The scheduler in use may be controlled by JSON-RPC. Please use the <a href="jsonrpc.html#rpc_framework_set_scheduler">framework_set_scheduler</a> RPC to switch between schedulers or change their options. Currently only dynamic scheduler supports changing its parameters.</p>
+<p><a href="spdk_top.html#spdk_top">spdk_top</a> is a useful tool to observe the behavior of schedulers in different scenarios and workloads.</p>
 <h2>static [default]</h2>
 <p>The <code>static</code> scheduler is the default scheduler and does no dynamic scheduling. Lightweight threads are distributed round-robin among reactors, respecting their requested cpu_mask, and then they are never moved. This is equivalent to the previous behavior of the SPDK event/application framework.</p>
 <h2>dynamic</h2>
-<p>The <code>dynamic</code> scheduler is designed for power saving and reduction of CPU utilization, especially in cases where workloads show large variations over time.</p>
-<p>Active threads are distributed equally among reactors, taking cpu_mask into account. All idle threads are moved to the main core. Once an idle thread becomes active, it is redistributed again.</p>
+<p>The <code>dynamic</code> scheduler is designed for power saving and reduction of CPU utilization, especially in cases where workloads show large variations over time. In SPDK thread and core workloads are measured in CPU ticks. Those values are then compared with all the ticks since the last check, which allows to calculate <code>busy time</code>.</p>
+<p><code>busy time = busy ticks / (busy tick + idle tick) * 100 %</code></p>
+<p>The thread is considered to be active, if its busy time is over the <code>load limit</code> parameter.</p>
+<p>Active threads are distributed equally among reactors, taking cpu_mask into account. All idle threads are moved to the main core. Once an idle thread becomes active, it is redistributed again. Dynamic scheduler monitors core workloads and redistributes SPDK threads on cores in a way that none of them is over <code>core limit</code>. In case a core utilization surpasses this threshold, scheduler should move threads out of it until this condition no longer applies. Cores might also be in overloaded state, which indicates that moving threads out of this core will not decrease its utilization under the <code>core limit</code> and the threads are unable to process all the I/O they are capable of, because they share CPU ticks with other threads. The threshold to decide if a core is overloaded is called <code>core busy</code>. Note that threads residing on an overloaded core will not perform as good as other threads, because the CPU ticks intended for them are limited by other threads on the same core.</p>
 <p>When a reactor has no scheduled <code>spdk_thread</code>s it is switched into interrupt mode and stops actively polling. After enough threads become active, the reactor is switched back into poll mode and threads are assigned to it again.</p>
-<p>The main core can contain active threads only when their execution time does not exceed the sum of all idle threads. When no active threads are present on the main core, the frequency of that CPU core will decrease as the load decreases. All CPU cores corresponding to the other reactors remain at maximum frequency. </p>
+<p>The main core can contain active threads only when their execution time does not exceed the sum of all idle threads. When no active threads are present on the main core, the frequency of that CPU core will decrease as the load decreases. All CPU cores corresponding to the other reactors remain at maximum frequency.</p>
+<p>The dynamic scheduler is currently the only one that allows manual setting of its parameters.</p>
+<p>Current values of scheduler parameters can be displayed by using <a href="jsonrpc.html#rpc_framework_get_scheduler">framework_get_scheduler</a> RPC. </p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
@@ -117,7 +121,7 @@ $(document).ready(function(){initNavTree('scheduler.html',''); initResizable(); 
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
 <ul>
-        <li class="footer">Generated on Thu Mar 17 2022 04:01:00 for SPDK by
+        <li class="footer">Generated on Fri Mar 18 2022 04:01:02 for SPDK by
         <a href="http://www.doxygen.org/index.html">doxygen</a> 1.9.1 </li>
 </ul>
 </div>
