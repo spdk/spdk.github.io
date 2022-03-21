@@ -356,12 +356,6 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_trty
 <tr class="memitem:a849b2e9763c00d8195605c62cf511ea5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a849b2e9763c00d8195605c62cf511ea5">spdk_nvme_ctrlr_prepare_for_reset</a> (struct spdk_nvme_ctrlr *ctrlr)</td></tr>
 <tr class="memdesc:a849b2e9763c00d8195605c62cf511ea5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inform the driver that the application is preparing to reset the specified NVMe controller.  <a href="nvme_8h.html#a849b2e9763c00d8195605c62cf511ea5">More...</a><br /></td></tr>
 <tr class="separator:a849b2e9763c00d8195605c62cf511ea5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a154b2c0c41e8fd853bb5d9f84641fb5e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a154b2c0c41e8fd853bb5d9f84641fb5e">spdk_nvme_ctrlr_reset_async</a> (struct spdk_nvme_ctrlr *ctrlr, struct spdk_nvme_ctrlr_reset_ctx **reset_ctx)</td></tr>
-<tr class="memdesc:a154b2c0c41e8fd853bb5d9f84641fb5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a context object that can be polled to perform a full hardware reset of the NVMe controller.  <a href="nvme_8h.html#a154b2c0c41e8fd853bb5d9f84641fb5e">More...</a><br /></td></tr>
-<tr class="separator:a154b2c0c41e8fd853bb5d9f84641fb5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5af4b20b95c91da3a2f4619b8789e9e4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a5af4b20b95c91da3a2f4619b8789e9e4">spdk_nvme_ctrlr_reset_poll_async</a> (struct spdk_nvme_ctrlr_reset_ctx *ctrlr_reset_ctx)</td></tr>
-<tr class="memdesc:a5af4b20b95c91da3a2f4619b8789e9e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Proceed with resetting controller associated with the controller reset context.  <a href="nvme_8h.html#a5af4b20b95c91da3a2f4619b8789e9e4">More...</a><br /></td></tr>
-<tr class="separator:a5af4b20b95c91da3a2f4619b8789e9e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a458a65224a0f20c73d0acb44715d86dc"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a458a65224a0f20c73d0acb44715d86dc">spdk_nvme_ctrlr_disconnect</a> (struct spdk_nvme_ctrlr *ctrlr)</td></tr>
 <tr class="memdesc:a458a65224a0f20c73d0acb44715d86dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disconnect the given NVMe controller.  <a href="nvme_8h.html#a458a65224a0f20c73d0acb44715d86dc">More...</a><br /></td></tr>
 <tr class="separator:a458a65224a0f20c73d0acb44715d86dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -4550,83 +4544,6 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_trty
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 on success, -1 on failure. </dd></dl>
-
-</div>
-</div>
-<a id="a154b2c0c41e8fd853bb5d9f84641fb5e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a154b2c0c41e8fd853bb5d9f84641fb5e">&#9670;&nbsp;</a></span>spdk_nvme_ctrlr_reset_async()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int spdk_nvme_ctrlr_reset_async </td>
-          <td>(</td>
-          <td class="paramtype">struct spdk_nvme_ctrlr *&#160;</td>
-          <td class="paramname"><em>ctrlr</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">struct spdk_nvme_ctrlr_reset_ctx **&#160;</td>
-          <td class="paramname"><em>reset_ctx</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Create a context object that can be polled to perform a full hardware reset of the NVMe controller. </p>
-<p>(Deprecated, please use <a class="el" href="nvme_8h.html#a458a65224a0f20c73d0acb44715d86dc" title="Disconnect the given NVMe controller.">spdk_nvme_ctrlr_disconnect()</a>, <a class="el" href="nvme_8h.html#ad26e52f0881a802f40c5f7d1f19e19e3" title="Start re-enabling the given NVMe controller in a full reset sequence.">spdk_nvme_ctrlr_reconnect_async()</a>, and <a class="el" href="nvme_8h.html#acd56920dfc24752852b2c63fa5e4fd46" title="Proceed with re-enabling the given NVMe controller.">spdk_nvme_ctrlr_reconnect_poll_async()</a> instead.)</p>
-<p>The function will set the controller reset context on success, user must call <a class="el" href="nvme_8h.html#a5af4b20b95c91da3a2f4619b8789e9e4" title="Proceed with resetting controller associated with the controller reset context.">spdk_nvme_ctrlr_reset_poll_async()</a> until it returns a value other than -EAGAIN.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">ctrlr</td><td>Opaque handle to NVMe controller. </td></tr>
-    <tr><td class="paramname">reset_ctx</td><td>Double pointer to reset context.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>0 on success. </dd>
-<dd>
--ENOMEM if context could not be allocated. </dd>
-<dd>
--EBUSY if controller is already resetting. </dd>
-<dd>
--ENXIO if controller has been removed. </dd></dl>
-
-</div>
-</div>
-<a id="a5af4b20b95c91da3a2f4619b8789e9e4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5af4b20b95c91da3a2f4619b8789e9e4">&#9670;&nbsp;</a></span>spdk_nvme_ctrlr_reset_poll_async()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int spdk_nvme_ctrlr_reset_poll_async </td>
-          <td>(</td>
-          <td class="paramtype">struct spdk_nvme_ctrlr_reset_ctx *&#160;</td>
-          <td class="paramname"><em>ctrlr_reset_ctx</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Proceed with resetting controller associated with the controller reset context. </p>
-<p>(Deprecated, please use <a class="el" href="nvme_8h.html#a458a65224a0f20c73d0acb44715d86dc" title="Disconnect the given NVMe controller.">spdk_nvme_ctrlr_disconnect()</a>, <a class="el" href="nvme_8h.html#ad26e52f0881a802f40c5f7d1f19e19e3" title="Start re-enabling the given NVMe controller in a full reset sequence.">spdk_nvme_ctrlr_reconnect_async()</a>, and <a class="el" href="nvme_8h.html#acd56920dfc24752852b2c63fa5e4fd46" title="Proceed with re-enabling the given NVMe controller.">spdk_nvme_ctrlr_reconnect_poll_async()</a> instead.)</p>
-<p>The controller reset context is one returned from a previous call to <a class="el" href="nvme_8h.html#a154b2c0c41e8fd853bb5d9f84641fb5e" title="Create a context object that can be polled to perform a full hardware reset of the NVMe controller.">spdk_nvme_ctrlr_reset_async()</a>. Users must call this function on the controller reset context until it returns a value other than -EAGAIN.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">ctrlr_reset_ctx</td><td>Context used to track controller reset actions.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>0 if all controller reset operations are complete; the ctrlr_reset_ctx is also freed and no longer valid. </dd>
-<dd>
--EAGAIN if there are still pending controller reset operations; user must call spdk_nvme_ctrlr_reset_poll_async again to continue progress. </dd></dl>
 
 </div>
 </div>
@@ -9330,7 +9247,7 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_trty
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
 <ul>
-        <li class="footer">Generated on Sun Mar 20 2022 04:01:00 for SPDK by
+        <li class="footer">Generated on Mon Mar 21 2022 04:01:03 for SPDK by
         <a href="http://www.doxygen.org/index.html">doxygen</a> 1.9.1 </li>
 </ul>
 </div>
