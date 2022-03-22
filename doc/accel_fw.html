@@ -112,24 +112,25 @@ IOAT Module</h2>
 <p>To use the IOAT engine, use the RPC <a href="https://spdk.io/doc/jsonrpc.html"><code>ioat_scan_accel_engine</code></a> before starting the application.</p>
 <h2><a class="anchor" id="accel_idxd"></a>
 IDXD Module</h2>
-<p>To use the DSA engine, use the RPC <a href="https://spdk.io/doc/jsonrpc.html"><code>idxd_scan_accel_engine</code></a>. With an optional parameter of <code>-c</code> and providing a configuration number of either 0 or 1, users can determine which pre-defined configuration can be used. With an optional parameter of <code>-k</code> to use kernel or user space driver. These pre-defined configurations determine how the DSA engine will be setup in terms of work queues and engines. The DSA engine is very flexible allowing for various configurations of these elements to either account for different quality of service requirements or to isolate hardware paths where the back end media is of varying latency (i.e. persistent memory vs DRAM). The pre-defined configurations are as follows:</p>
-<p>0: A single work queue backed with four DSA engines. This is a generic configuration that enables the hardware to best determine which engine to use as it pulls in new operations.</p>
-<p>1: Two separate work queues each backed with two DSA engines. This is another generic configuration that is documented in the specification and allows the application to partition submissions across two work queues. This would be useful when different priorities might be desired per group.</p>
-<p>There are several other configurations that are possible that include quality of service parameters on the work queues that are not currently utilized by the module. Specialized use of DSA may require different configurations that can be added to the module as needed.</p>
-<p>When a new channel starts, a DSA device will be assigned to the channel. The accel idxd module has been tuned for the most likely best performance case. The result is that there is a limited number of channels that can be supported based on the number of DSA devices in the system. Additionally, for best performance, the accel idxd module will only use DSA devices on the same socket as the requesting channel/thread. If an error occurs on initialization indicating that there are no more DSA devices available either try fewer threads or, if on a 2 socket system, try spreading threads across cores if possible.</p>
+<p>To use the DSA engine, use the RPC <a href="https://spdk.io/doc/jsonrpc.html"><code>idxd_scan_accel_engine</code></a>. By default, this will attempt to load the SPDK user-space idxd driver. To use the built-in kernel driver on Linux, add the <code>-k</code> parameter. See the next section for details on using the kernel driver.</p>
+<p>The DSA hardware supports a limited queue depth and channels. This means that only a limited number of <code>spdk_thread</code>s will be able to acquire a channel. Design software to deal with the inability to get a channel.</p>
 <h2><a class="anchor" id="accel_idxd_kernel"></a>
 How to use kernel idxd driver</h2>
-<p>There are several dependencies to leverage kernel idxd driver for driving DSA devices.</p>
-<p>1 Linux kernel support: To leverage kernel space idxd driver, you need to have a Linux kernel with <code>idxd</code> driver loaded with scalable mode. And currently SPDK uses the character device while <code>idxd</code> driver is enabled in the kernel. So when booting the machine, we need to add additional configuration in the grub, i.e, revise the kernel boot commandline <code>intel_iommu=on,sm_on</code> with VT-d turned on in BIOS.</p>
-<p>2 User library dependency: Users need to install <code>idxd-config</code> library. For example, users can download the library from <a href="https://github.com/intel/idxd-config">idxd-config repo</a>. After the library is installed, users can use the <code>accel-config</code> command to configure the work queues(WQs) of the idxd devices managed by the kernel with the following steps:</p>
+<p>There are several dependencies to leverage the Linux idxd driver for driving DSA devices.</p>
+<p>1 Linux kernel support: You need to have a Linux kernel with the <code>idxd</code> driver loaded. Futher, add the following command line options to the kernel boot commands:</p>
+<div class="fragment"><div class="line">intel_iommu=on,sm_on</div>
+</div><!-- fragment --><p>2 User library dependency: Users need to install the <code>accel-config</code> library. This is often packaged, but the source is available on <a href="https://github.com/intel/idxd-config">GitHub</a>. After the library is installed, users can use the <code>accel-config</code> command to configure the work queues(WQs) of the idxd devices managed by the kernel with the following steps:</p>
 <div class="fragment"><div class="line">accel-config disable-wq dsa0/wq0.1</div>
 <div class="line">accel-config disable-device dsa0</div>
-<div class="line">accel-config config-wq --group-id=0 --mode=dedicated --wq-size=16 --type=user --name=&quot;MyApp1&quot;</div>
+<div class="line">accel-config config-wq --group-id=0 --mode=dedicated --wq-size=128 --type=user --name=&quot;MyApp1&quot;</div>
 <div class="line"> --priority=10 --block-on-fault=1 dsa0/wq0.1</div>
+<div class="line">accel-config config-engine dsa0/engine0.0 --group-id=0</div>
 <div class="line">accel-config config-engine dsa0/engine0.1 --group-id=0</div>
+<div class="line">accel-config config-engine dsa0/engine0.2 --group-id=0</div>
+<div class="line">accel-config config-engine dsa0/engine0.3 --group-id=0</div>
 <div class="line">accel-config enable-device dsa0</div>
 <div class="line">accel-config enable-wq dsa0/wq0.1</div>
-</div><!-- fragment --><p>For more details on the usage of <code>idxd-config</code>, please refer to <a href="https://github.com/intel/idxd-config/tree/master/Documentation/accfg">idxd-config usage</a>.</p>
+</div><!-- fragment --><p>DSA can be configured in many ways, but the above configuration is needed for use with SPDK.</p>
 <h2><a class="anchor" id="accel_sw"></a>
 Software Module</h2>
 <p>The software module is enabled by default. If no hardware engine is explicitly enabled via startup RPC as discussed earlier, the software module will use ISA-L if available for functions such as CRC32C. Otherwise, standard glibc calls are used to back the framework API. </p>
@@ -140,7 +141,7 @@ Software Module</h2>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
 <ul>
-        <li class="footer">Generated on Mon Mar 21 2022 04:01:03 for SPDK by
+        <li class="footer">Generated on Tue Mar 22 2022 04:01:01 for SPDK by
         <a href="http://www.doxygen.org/index.html">doxygen</a> 1.9.1 </li>
 </ul>
 </div>

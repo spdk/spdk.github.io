@@ -390,7 +390,7 @@ var searchData=
   ['spdk_5fidxd_5fprobe_3442',['spdk_idxd_probe',['../idxd_8h.html#a74f5b7dc38344c84bca48f07a83a2621',1,'idxd.h']]],
   ['spdk_5fidxd_5fprocess_5fevents_3443',['spdk_idxd_process_events',['../idxd_8h.html#ac92c2ac49b4b576f2538aa58846d93c3',1,'idxd.h']]],
   ['spdk_5fidxd_5fput_5fchannel_3444',['spdk_idxd_put_channel',['../idxd_8h.html#a0de9abe0697950149cd1fe830717be90',1,'idxd.h']]],
-  ['spdk_5fidxd_5fset_5fconfig_3445',['spdk_idxd_set_config',['../idxd_8h.html#a1f169006ec7e3188b630bbe33cbf46ad',1,'idxd.h']]],
+  ['spdk_5fidxd_5fset_5fconfig_3445',['spdk_idxd_set_config',['../idxd_8h.html#adc21f8258d04ffa6a365a54ff8173159',1,'idxd.h']]],
   ['spdk_5fidxd_5fsubmit_5fcompare_3446',['spdk_idxd_submit_compare',['../idxd_8h.html#a163ea97cda6e3eaf879860ef45f85e5e',1,'idxd.h']]],
   ['spdk_5fidxd_5fsubmit_5fcopy_3447',['spdk_idxd_submit_copy',['../idxd_8h.html#ae52d7631d29803ad79831a18f731df6f',1,'idxd.h']]],
   ['spdk_5fidxd_5fsubmit_5fcopy_5fcrc32c_3448',['spdk_idxd_submit_copy_crc32c',['../idxd_8h.html#a632b300672a61fbc53c19e190d9e3f40',1,'idxd.h']]],

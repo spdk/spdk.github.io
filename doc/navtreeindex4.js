@@ -1,11 +1,11 @@
 var NAVTREEINDEX4 =
 {
-"idxd_8h.html#a74f5b7dc38344c84bca48f07a83a2621":[15,0,27,7],
 "idxd_8h.html#a75c066c5425700c49f077e20484b50c1":[15,0,27,3],
 "idxd_8h.html#aa6e6f3dcce485f4b3b8ba36fe4c03f93":[15,0,27,4],
 "idxd_8h.html#ab45fa3fdcbe21d2771b0a70f4831336e":[15,0,27,14],
 "idxd_8h.html#ac18651e41ad36f5c0805959d11698b5e":[15,0,27,15],
 "idxd_8h.html#ac92c2ac49b4b576f2538aa58846d93c3":[15,0,27,8],
+"idxd_8h.html#adc21f8258d04ffa6a365a54ff8173159":[15,0,27,10],
 "idxd_8h.html#ae52d7631d29803ad79831a18f731df6f":[15,0,27,12],
 "idxd_8h.html#ae8fa809d994d290b255dd3dab1f1903b":[15,0,27,5],
 "idxd__spec_8h.html":[15,0,28],

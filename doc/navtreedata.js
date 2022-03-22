@@ -77,7 +77,7 @@ var NAVTREEINDEX =
 "bdev__module_8h.html#a8d51d8e113f0dffb1bbe535ea01c495f",
 "changelog.html#changelog-v18-01",
 "env__dpdk_8h.html#aff24042058543bcee5a8a7ba0cd6b226",
-"idxd_8h.html#a74f5b7dc38344c84bca48f07a83a2621",
+"idxd_8h.html#a75c066c5425700c49f077e20484b50c1",
 "ioat__spec_8h.html#a7fc9ebe4b7ac117f02f0d6cc44993a6c",
 "jsonrpc.html#jsonrpc_generate",
 "libraries.html#lib",

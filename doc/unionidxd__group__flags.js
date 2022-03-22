@@ -1,12 +1,12 @@
 var unionidxd__group__flags =
 [
+    [ "global_read_buffer_limit", "unionidxd__group__flags.html#a96d08fe4d189bf64af973a04d890044d", null ],
     [ "raw", "unionidxd__group__flags.html#a3b472a9959b8974346f45a39b98c4f04", null ],
-    [ "rsvd", "unionidxd__group__flags.html#a1099e27347be48722f697482cc4a2217", null ],
-    [ "rsvd2", "unionidxd__group__flags.html#ab7f576ed5afb00b7d0320c38291dc6a2", null ],
-    [ "rsvd3", "unionidxd__group__flags.html#aeedff5dddc9e70d9d132bad430d0ba0f", null ],
+    [ "read_buffers_allowed", "unionidxd__group__flags.html#a67a61643032e21a58f5667b44b670e98", null ],
+    [ "read_buffers_reserved", "unionidxd__group__flags.html#aaeeab304428fc0117a247e7add62eed8", null ],
+    [ "reserved0", "unionidxd__group__flags.html#a761455918649dd1919ec94c396b726d0", null ],
+    [ "reserved1", "unionidxd__group__flags.html#a651daf5e1978a84f4cfd37a1a943dcfc", null ],
+    [ "reserved2", "unionidxd__group__flags.html#a09824d069f24484830f6a6a935a3a71b", null ],
     [ "tc_a", "unionidxd__group__flags.html#a2d8c822fc1c847ff03b588f786a6d55a", null ],
-    [ "tc_b", "unionidxd__group__flags.html#a56246317ddfa24f3bde4d3688bba8979", null ],
-    [ "tokens_allowed", "unionidxd__group__flags.html#a45a441c1e99583af982da5dd67b37f25", null ],
-    [ "tokens_reserved", "unionidxd__group__flags.html#a78ea655f7712c299c208473dc19878fc", null ],
-    [ "use_token_limit", "unionidxd__group__flags.html#ae85c8837ed65bd85122ba454cd8dc8d9", null ]
+    [ "tc_b", "unionidxd__group__flags.html#a56246317ddfa24f3bde4d3688bba8979", null ]
 ];
