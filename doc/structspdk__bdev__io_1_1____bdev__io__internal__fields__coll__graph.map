@@ -1,7 +1,7 @@
 <map id="spdk_bdev_io::__bdev_io_internal_fields" name="spdk_bdev_io::__bdev_io_internal_fields">
-<area shape="rect" id="node1" title="Fields that are used internally by the bdev subsystem." alt="" coords="165,184,317,225"/>
-<area shape="rect" id="node5" href="$structspdk__bdev__io.html" title=" " alt="" coords="277,319,380,345"/>
-<area shape="rect" id="node2" href="$structspdk__bdev__io__wait__entry.html" title="Structure to register a callback when an spdk_bdev_io becomes available." alt="" coords="5,95,175,121"/>
-<area shape="rect" id="node3" href="$structspdk__bdev.html" title=" " alt="" coords="201,5,286,32"/>
-<area shape="rect" id="node4" href="$structspdk__bdev__ext__io__opts.html" title="Structure with optional IO request parameters The content of this structure must be valid until the I..." alt="" coords="199,95,357,121"/>
+<area shape="rect" id="node1" title="Fields that are used internally by the bdev subsystem." alt="" coords="107,199,259,240"/>
+<area shape="rect" id="node5" href="$structspdk__bdev__io.html" title=" " alt="" coords="97,333,199,360"/>
+<area shape="rect" id="node2" href="$structspdk__bdev__io__wait__entry.html" title="Structure to register a callback when an spdk_bdev_io becomes available." alt="" coords="65,95,234,121"/>
+<area shape="rect" id="node3" href="$structspdk__bdev.html" title=" " alt="" coords="5,5,91,32"/>
+<area shape="rect" id="node4" href="$structspdk__bdev__ext__io__opts.html" title="Structure with optional IO request parameters The content of this structure must be valid until the I..." alt="" coords="267,95,426,121"/>
 </map>

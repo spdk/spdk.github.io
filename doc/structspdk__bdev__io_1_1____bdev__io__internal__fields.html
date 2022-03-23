@@ -100,11 +100,11 @@ Collaboration diagram for spdk_bdev_io::__bdev_io_internal_fields:</div>
 <div class="dyncontent">
 <div class="center"><img src="structspdk__bdev__io_1_1____bdev__io__internal__fields__coll__graph.png" border="0" usemap="#aspdk__bdev__io_1_1____bdev__io__internal__fields_coll__map" alt="Collaboration graph"/></div>
 <map name="aspdk__bdev__io_1_1____bdev__io__internal__fields_coll__map" id="aspdk__bdev__io_1_1____bdev__io__internal__fields_coll__map">
-<area shape="rect" title="Fields that are used internally by the bdev subsystem." alt="" coords="165,184,317,225"/>
-<area shape="rect" href="structspdk__bdev__io.html" title=" " alt="" coords="277,319,380,345"/>
-<area shape="rect" href="structspdk__bdev__io__wait__entry.html" title="Structure to register a callback when an spdk_bdev_io becomes available." alt="" coords="5,95,175,121"/>
-<area shape="rect" href="structspdk__bdev.html" title=" " alt="" coords="201,5,286,32"/>
-<area shape="rect" href="structspdk__bdev__ext__io__opts.html" title="Structure with optional IO request parameters The content of this structure must be valid until the I..." alt="" coords="199,95,357,121"/>
+<area shape="rect" title="Fields that are used internally by the bdev subsystem." alt="" coords="107,199,259,240"/>
+<area shape="rect" href="structspdk__bdev__io.html" title=" " alt="" coords="97,333,199,360"/>
+<area shape="rect" href="structspdk__bdev__io__wait__entry.html" title="Structure to register a callback when an spdk_bdev_io becomes available." alt="" coords="65,95,234,121"/>
+<area shape="rect" href="structspdk__bdev.html" title=" " alt="" coords="5,5,91,32"/>
+<area shape="rect" href="structspdk__bdev__ext__io__opts.html" title="Structure with optional IO request parameters The content of this structure must be valid until the I..." alt="" coords="267,95,426,121"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -213,6 +213,9 @@ uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 struct iovec&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev__io_1_1____bdev__io__internal__fields.html#aee2ed117d4aa174778f5920a3e150c2e">bounce_iov</a></td></tr>
 <tr class="memdesc:aee2ed117d4aa174778f5920a3e150c2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">if the request is double buffered, store original request iovs here <br /></td></tr>
 <tr class="separator:aee2ed117d4aa174778f5920a3e150c2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80f5fe3879a5307baed2da67ec16f165"><td class="memItemLeft" align="right" valign="top"><a id="a80f5fe3879a5307baed2da67ec16f165"></a>
+struct iovec&#160;</td><td class="memItemRight" valign="bottom"><b>bounce_md_iov</b></td></tr>
+<tr class="separator:a80f5fe3879a5307baed2da67ec16f165"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a462c4d10967f1ab5c5442e55098cbecd"><td class="memItemLeft" align="right" valign="top"><a id="a462c4d10967f1ab5c5442e55098cbecd"></a>
 struct iovec&#160;</td><td class="memItemRight" valign="bottom"><b>orig_md_iov</b></td></tr>
 <tr class="separator:a462c4d10967f1ab5c5442e55098cbecd"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -238,6 +241,14 @@ struct <a class="el" href="structspdk__bdev__io__wait__entry.html">spdk_bdev_io_
 struct <a class="el" href="structspdk__bdev__ext__io__opts.html">spdk_bdev_ext_io_opts</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev__io_1_1____bdev__io__internal__fields.html#a28d152419a79d2e4934f26cf4d811684">ext_opts</a></td></tr>
 <tr class="memdesc:a28d152419a79d2e4934f26cf4d811684"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to a structure passed by the user in ext API. <br /></td></tr>
 <tr class="separator:a28d152419a79d2e4934f26cf4d811684"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44b5a0c0dd5503b6bbf36b58e260a316"><td class="memItemLeft" align="right" valign="top"><a id="a44b5a0c0dd5503b6bbf36b58e260a316"></a>
+struct <a class="el" href="structspdk__bdev__ext__io__opts.html">spdk_bdev_ext_io_opts</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev__io_1_1____bdev__io__internal__fields.html#a44b5a0c0dd5503b6bbf36b58e260a316">ext_opts_copy</a></td></tr>
+<tr class="memdesc:a44b5a0c0dd5503b6bbf36b58e260a316"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy of user's opts, used when I/O is split. <br /></td></tr>
+<tr class="separator:a44b5a0c0dd5503b6bbf36b58e260a316"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a132678b705d6d51d2fdfaf1d44b6428b"><td class="memItemLeft" align="right" valign="top"><a id="a132678b705d6d51d2fdfaf1d44b6428b"></a>
+void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev__io_1_1____bdev__io__internal__fields.html#a132678b705d6d51d2fdfaf1d44b6428b">data_transfer_cpl</a> )(void *ctx, int rc)</td></tr>
+<tr class="memdesc:a132678b705d6d51d2fdfaf1d44b6428b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Data transfer completion callback. <br /></td></tr>
+<tr class="separator:a132678b705d6d51d2fdfaf1d44b6428b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Fields that are used internally by the bdev subsystem. </p>
@@ -303,7 +314,7 @@ struct <a class="el" href="structspdk__bdev__ext__io__opts.html">spdk_bdev_ext_i
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
 <ul>
-        <li class="footer">Generated on Tue Mar 22 2022 04:01:01 for SPDK by
+        <li class="footer">Generated on Wed Mar 23 2022 04:01:02 for SPDK by
         <a href="http://www.doxygen.org/index.html">doxygen</a> 1.9.1 </li>
 </ul>
 </div>

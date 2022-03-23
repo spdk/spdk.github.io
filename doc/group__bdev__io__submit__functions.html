@@ -1609,7 +1609,7 @@ Functions</h2></td></tr>
     <tr><td class="paramname">num_blocks</td><td>The number of blocks to read. </td></tr>
     <tr><td class="paramname">cb</td><td>Called when the request is complete. </td></tr>
     <tr><td class="paramname">cb_arg</td><td>Argument passed to cb. </td></tr>
-    <tr><td class="paramname">opts</td><td>Optional structure with extended IO request options. If set, this structure must be valid until the IO is completed.</td></tr>
+    <tr><td class="paramname">opts</td><td>Optional structure with extended IO request options. If set, this structure must be valid until the IO is completed. <code>size</code> member of this structure is used for ABI compatibility and must be set to sizeof(struct spdk_bdev_ext_io_opts).</td></tr>
   </table>
   </dd>
 </dl>
@@ -2550,7 +2550,7 @@ Functions</h2></td></tr>
     <tr><td class="paramname">num_blocks</td><td>The number of blocks to write. </td></tr>
     <tr><td class="paramname">cb</td><td>Called when the request is complete. </td></tr>
     <tr><td class="paramname">cb_arg</td><td>Argument passed to cb. </td></tr>
-    <tr><td class="paramname">opts</td><td>Optional structure with extended IO request options. If set, this structure must be valid until the IO is completed.</td></tr>
+    <tr><td class="paramname">opts</td><td>Optional structure with extended IO request options. If set, this structure must be valid until the IO is completed. <code>size</code> member of this structure is used for ABI compatibility and must be set to sizeof(struct spdk_bdev_ext_io_opts).</td></tr>
   </table>
   </dd>
 </dl>
@@ -3067,7 +3067,7 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
 <ul>
-        <li class="footer">Generated on Tue Mar 22 2022 04:01:01 for SPDK by
+        <li class="footer">Generated on Wed Mar 23 2022 04:01:02 for SPDK by
         <a href="http://www.doxygen.org/index.html">doxygen</a> 1.9.1 </li>
 </ul>
 </div>

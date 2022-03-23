@@ -14,6 +14,7 @@ var structspdk__bdev__io =
     [ "cmd", "structspdk__bdev__io.html#aea98eb4a235dc71bc9bf4040c53a5977", null ],
     [ "commit", "structspdk__bdev__io.html#ace66bdb63c00a8549d466de17f553064", null ],
     [ "driver_ctx", "structspdk__bdev__io.html#ab1b334589d89261c8e0242fee614caa7", null ],
+    [ "ext_opts", "structspdk__bdev__io.html#a811f2702c53ffe02c25d04e2538cd866", null ],
     [ "fused_iovcnt", "structspdk__bdev__io.html#aec576e7766af0ee744ced101de905ff5", null ],
     [ "fused_iovs", "structspdk__bdev__io.html#a2a3448e66dcba2deaccc91d37ad89db1", null ],
     [ "internal", "structspdk__bdev__io.html#a93d55c24ee315fb1c81078d8283ca381", null ],
