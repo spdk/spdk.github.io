@@ -100,6 +100,9 @@ v22.05: (Upcoming Release)</h1>
 <h2>accel_fw</h2>
 <p>A new parameter <code>flags</code> was added to accel API. The APIs include: <code>spdk_accel_submit_copy</code> <code>spdk_accel_submit_dualcast</code> <code>spdk_accel_submit_fill</code> <code>spdk_accel_submit_copy_crc32c</code> <code>spdk_accel_submit_copy_crc32cv</code></p>
 <p>A new flag <code>ACCEL_FLAG_PERSISTENT</code> was added to indicate the target memory is PMEM.</p>
+<h2>crypto</h2>
+<p>Support for AES_XTS was added for MLX5 polled mode driver (pmd).</p>
+<p>bdev_crypto_create RPC now requires hexlified 'key' and 'key2' params for all pmd drivers. Unhexlifying is performed during RPC command processing and the vbdev crypto module runs on binary keys as before.</p>
 <h2>bdev_nvme</h2>
 <p>Added <code>bdev_nvme_add_error_injection</code> and <code>bdev_nvme_remove_error_injection</code> RPCs to add and remove NVMe error injections.</p>
 <p>New parameters, <code>ctrlr_loss_timeout_sec</code>, <code>reconnect_delay_sec</code>, and <code>fast_io_fail_timeout_sec</code>, are added to the RPC <code>bdev_nvme_set_options</code>. They can be overridden if they are given by the RPC <code>bdev_nvme_attach_controller</code>.</p>
@@ -1461,7 +1464,7 @@ v16.06: NVMf userspace target</h1>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
 <ul>
-        <li class="footer">Generated on Wed Mar 23 2022 04:01:01 for SPDK by
+        <li class="footer">Generated on Thu Mar 24 2022 04:01:05 for SPDK by
         <a href="http://www.doxygen.org/index.html">doxygen</a> 1.9.1 </li>
 </ul>
 </div>

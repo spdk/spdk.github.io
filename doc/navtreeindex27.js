@@ -1,12 +1,14 @@
 var NAVTREEINDEX27 =
 {
-"structvfio__user__region__access.html#a36926d14f9c7310a4d6f0af0469b98c5":[14,0,360,0],
-"structvfio__user__region__access.html#a4f0edcde076bdae35264919af0240cdb":[14,0,360,2],
-"structvfio__user__region__access.html#ac5a629b3d9e366349ae7a7f37215bf46":[14,0,360,1],
-"structvfio__user__version.html":[14,0,361],
-"structvfio__user__version.html#a3e28cccc95d172ce1e64ee6a3e04f04a":[14,0,361,2],
-"structvfio__user__version.html#ab4a19712c45fb4ecf80f370129225671":[14,0,361,1],
-"structvfio__user__version.html#af5e04313660bcdcd7dabc4a147eb0b5d":[14,0,361,0],
+"structvfio__user__region__access.html":[14,0,361],
+"structvfio__user__region__access.html#a0336183516d49390e0855e4e104587e2":[14,0,361,3],
+"structvfio__user__region__access.html#a36926d14f9c7310a4d6f0af0469b98c5":[14,0,361,0],
+"structvfio__user__region__access.html#a4f0edcde076bdae35264919af0240cdb":[14,0,361,2],
+"structvfio__user__region__access.html#ac5a629b3d9e366349ae7a7f37215bf46":[14,0,361,1],
+"structvfio__user__version.html":[14,0,362],
+"structvfio__user__version.html#a3e28cccc95d172ce1e64ee6a3e04f04a":[14,0,362,2],
+"structvfio__user__version.html#ab4a19712c45fb4ecf80f370129225671":[14,0,362,1],
+"structvfio__user__version.html#af5e04313660bcdcd7dabc4a147eb0b5d":[14,0,362,0],
 "system_configuration.html":[3,0],
 "system_configuration.html#iommu_config":[3,0,0],
 "system_configuration.html#system_configuration_nonroot":[3,0,1],
@@ -247,7 +249,5 @@ var NAVTREEINDEX27 =
 "unionidxd__intcause__register.html#a436fb67e35a01bbcee7d479431be8b28":[14,0,13,4],
 "unionidxd__intcause__register.html#a4c477ad720283c1830ffa8cc213ecbfc":[14,0,13,3],
 "unionidxd__intcause__register.html#a66ff61109157d2df2695b32b740c2a8f":[14,0,13,2],
-"unionidxd__intcause__register.html#acaac0055fb7a322ee0dbbc2c8d8449f4":[14,0,13,0],
-"unionidxd__intcause__register.html#acd3011987ed9a89a0c84b1367ba71474":[14,0,13,7],
-"unionidxd__intcause__register.html#ace198d9baaaa143b65d2bd1b5499917c":[14,0,13,6]
+"unionidxd__intcause__register.html#acaac0055fb7a322ee0dbbc2c8d8449f4":[14,0,13,0]
 };

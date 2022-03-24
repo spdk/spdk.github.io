@@ -142,18 +142,24 @@ Compression Virtual Bdev Module</h1>
 <p><code>rpc.py bdev_compress_get_orphans --name COMP_Nvme0n1</code></p>
 <h1><a class="anchor" id="bdev_config_crypto"></a>
 Crypto Virtual Bdev Module</h1>
-<p>The crypto virtual bdev module can be configured to provide at rest data encryption for any underlying bdev. The module relies on the DPDK CryptoDev Framework to provide all cryptographic functionality. The framework provides support for many different software only cryptographic modules as well hardware assisted support for the Intel QAT board. The framework also provides support for cipher, hash, authentication and AEAD functions. At this time the SPDK virtual bdev module supports cipher only as follows:</p>
+<p>The crypto virtual bdev module can be configured to provide at rest data encryption for any underlying bdev. The module relies on the DPDK CryptoDev Framework to provide all cryptographic functionality. The framework provides support for many different software only cryptographic modules as well hardware assisted support for the Intel QAT board and NVIDIA crypto enabled NICs. The framework also provides support for cipher, hash, authentication and AEAD functions. At this time the SPDK virtual bdev module supports cipher only as follows:</p>
 <ul>
 <li>AESN-NI Multi Buffer Crypto Poll Mode Driver: RTE_CRYPTO_CIPHER_AES128_CBC</li>
-<li>Intel(R) QuickAssist (QAT) Crypto Poll Mode Driver: RTE_CRYPTO_CIPHER_AES128_CBC (Note: QAT is functional however is marked as experimental until the hardware has been fully integrated with the SPDK CI system.)</li>
+<li>Intel(R) QuickAssist (QAT) Crypto Poll Mode Driver: RTE_CRYPTO_CIPHER_AES128_CBC, RTE_CRYPTO_CIPHER_AES128_XTS (Note: QAT is functional however is marked as experimental until the hardware has been fully integrated with the SPDK CI system.)</li>
+<li>MLX5 Crypto Poll Mode Driver: RTE_CRYPTO_CIPHER_AES256_XTS, RTE_CRYPTO_CIPHER_AES512_XTS</li>
 </ul>
 <p>In order to support using the bdev block offset (LBA) as the initialization vector (IV), the crypto module break up all I/O into crypto operations of a size equal to the block size of the underlying bdev. For example, a 4K I/O to a bdev with a 512B block size, would result in 8 cryptographic operations.</p>
 <p>For reads, the buffer provided to the crypto module will be used as the destination buffer for unencrypted data. For writes, however, a temporary scratch buffer is used as the destination buffer for encryption which is then passed on to the underlying bdev as the write buffer. This is done to avoid encrypting the data in the original source buffer which may cause problems in some use cases.</p>
 <p>Example command</p>
-<p><code>rpc.py bdev_crypto_create NVMe1n1 CryNvmeA crypto_aesni_mb 0123456789123456</code></p>
-<p>This command will create a crypto vbdev called 'CryNvmeA' on top of the NVMe bdev 'NVMe1n1' and will use the DPDK software driver 'crypto_aesni_mb' and the key '0123456789123456'.</p>
+<p><code>rpc.py bdev_crypto_create NVMe1n1 CryNvmeA crypto_aesni_mb 01234567891234560123456789123456</code></p>
+<p>This command will create a crypto vbdev called 'CryNvmeA' on top of the NVMe bdev 'NVMe1n1' and will use the DPDK software driver 'crypto_aesni_mb' and the key '01234567891234560123456789123456'.</p>
+<p>Please make sure the keys are provided in hexlified format. This means string passed to rpc.py must be twice as long than the key length in binary form.</p>
+<p>Example command</p>
+<p>rpc.py bdev_crypto_create -c AES_XTS -k2 7859243a027411e581e0c40a35c8228f NVMe1n1 CryNvmeA \ mlx5_pci d16a2f3a9e9f5b32daefacd7f5984f4578add84425be4a0baa489b9de8884b09</p>
+<p>This command will create a crypto vbdev called 'CryNvmeA' on top of the NVMe bdev 'NVMe1n1' and will use the DPDK software driver 'mlx5_pci', the AES key 'd16a2f3a9e9f5b32daefacd7f5984f4578add84425be4a0baa489b9de8884b09' and the XTS key '7859243a027411e581e0c40a35c8228f'. In other words, the compound AES_XTS key to be used is 'd16a2f3a9e9f5b32daefacd7f5984f4578add84425be4a0baa489b9de8884b097859243a027411e581e0c40a35c8228f'</p>
 <p>To remove the vbdev use the bdev_crypto_delete command.</p>
 <p><code>rpc.py bdev_crypto_delete CryNvmeA</code></p>
+<p>The MLX5 driver works with crypto enabled Nvidia NICs and requires special configuration of DPDK environment to enable crypto function. It can be done via SPDK event library by configuring <code>env_context</code> member of <code><a class="el" href="structspdk__app__opts.html" title="Event framework initialization options.">spdk_app_opts</a></code> structure or by passing corresponding CLI arguments in the following form: <code>--allow=BDF,class=crypto,wcs_file=/full/path/to/wrapped/credentials</code>, e.g. <code>--allow=0000:01:00.0,class=crypto,wcs_file=/path/credentials.txt</code>.</p>
 <h1><a class="anchor" id="bdev_config_delay"></a>
 Delay Bdev Module</h1>
 <p>The delay vbdev module is intended to apply a predetermined additional latency on top of a lower level bdev. This enables the simulation of the latency characteristics of a device during the functional or scalability testing of an SPDK application. For example, to simulate the effect of drive latency when processing I/Os, one could configure a NULL bdev with a delay bdev on top of it.</p>
@@ -367,7 +373,7 @@ Virtio SCSI</h1>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
 <ul>
-        <li class="footer">Generated on Wed Mar 23 2022 04:01:01 for SPDK by
+        <li class="footer">Generated on Thu Mar 24 2022 04:01:05 for SPDK by
         <a href="http://www.doxygen.org/index.html">doxygen</a> 1.9.1 </li>
 </ul>
 </div>
