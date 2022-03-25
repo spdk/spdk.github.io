@@ -111,6 +111,7 @@ v22.05: (Upcoming Release)</h1>
 <h2>nvmf</h2>
 <p>Removed deprecated max_qpairs_per_ctrlr parameter from nvmf_create_transport RPC. Use max_io_qpairs_per_ctrlr instead.</p>
 <p>Deprecated the ability for hosts to connect to the discovery subsystem automatically on any existing listener. Users should now explicitly add listeners for the discovery subsystem. Host can still connect to the discovery subsystem as before, but a warning message will be emitted if no listener was configured for the transport ID of the incoming connection.</p>
+<p>Added adaptive interrupt feature for vfio-user transport. New parameter <code>disable_adaptive_irq</code> is added to the RPC <code>nvmf_create_transport</code>.</p>
 <h2>thread</h2>
 <p>Added <code><a class="el" href="thread_8h.html#a6695466847e7a751b768ab4b8bcd53d0" title="Run the msg callback on the given thread.">spdk_thread_exec_msg()</a></code> API.</p>
 <h2>scheduler</h2>
@@ -1464,7 +1465,7 @@ v16.06: NVMf userspace target</h1>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
 <ul>
-        <li class="footer">Generated on Thu Mar 24 2022 04:01:05 for SPDK by
+        <li class="footer">Generated on Fri Mar 25 2022 04:01:02 for SPDK by
         <a href="http://www.doxygen.org/index.html">doxygen</a> 1.9.1 </li>
 </ul>
 </div>

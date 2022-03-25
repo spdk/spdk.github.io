@@ -142,9 +142,11 @@ var NAVTREEINDEX25 =
 "structspdk__reduce__backing__dev.html#a3bbbe463964804c1289bd3876ff262fe":[14,0,310,4],
 "structspdk__reduce__backing__dev.html#a59745a0da2cf2bcf55bd19009cc093ff":[14,0,310,0],
 "structspdk__reduce__backing__dev.html#aa5d23ba4f13d91c3c79a2cd99f61edc7":[14,0,310,1],
+"structspdk__reduce__backing__dev.html#ab3638c265ac4eb50955200f2a7b559ba":[14,0,310,6],
 "structspdk__reduce__backing__dev.html#ac5a48d92ad0a0c27f5b443a641e0f264":[14,0,310,2],
-"structspdk__reduce__backing__dev.html#ad23a4e33b6b615acc350eb64aa429465":[14,0,310,5],
-"structspdk__reduce__backing__dev.html#af33de4b96028f7377b857038ff1b19a6":[14,0,310,6],
+"structspdk__reduce__backing__dev.html#ad23a4e33b6b615acc350eb64aa429465":[14,0,310,7],
+"structspdk__reduce__backing__dev.html#af33de4b96028f7377b857038ff1b19a6":[14,0,310,8],
+"structspdk__reduce__backing__dev.html#afdc912ec69d16c46e53a7bef10949535":[14,0,310,5],
 "structspdk__reduce__vol__cb__args.html":[14,0,311],
 "structspdk__reduce__vol__cb__args.html#a66f86300cc6cbfd6247517c2e20cce68":[14,0,311,0],
 "structspdk__reduce__vol__cb__args.html#ae6ca2ffa896fb538f00efdbcba388080":[14,0,311,1],
@@ -247,7 +249,5 @@ var NAVTREEINDEX25 =
 "structspdk__scsi__pr__in__full__status__desc.html#aeb5ae5395abfc2f89e2e43021fbbccfa":[14,0,323,9],
 "structspdk__scsi__pr__in__read__header.html":[14,0,324],
 "structspdk__scsi__pr__in__read__header.html#a6af3ac3f08b1af386eb124efc1e8c1ec":[14,0,324,0],
-"structspdk__scsi__pr__in__read__header.html#a91d8b07366a32aec322ee7f554a18ad2":[14,0,324,1],
-"structspdk__scsi__pr__in__read__keys__data.html":[14,0,325],
-"structspdk__scsi__pr__in__read__keys__data.html#a1c9633583beaee62f4e13c70b35d6e1b":[14,0,325,1]
+"structspdk__scsi__pr__in__read__header.html#a91d8b07366a32aec322ee7f554a18ad2":[14,0,324,1]
 };
