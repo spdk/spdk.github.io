@@ -139,7 +139,11 @@ Data Structures</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structidxd__grpcfg.html">idxd_grpcfg</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structidxd__grptbl.html">idxd_grptbl</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">union &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unionidxd__wqcfg.html">idxd_wqcfg</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structidxd__wqtbl.html">idxd_wqtbl</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
@@ -174,51 +178,6 @@ Macros</h2></td></tr>
 <tr class="memitem:ad9445750f7d1bfe236d5e9e4774b68dd"><td class="memItemLeft" align="right" valign="top"><a id="ad9445750f7d1bfe236d5e9e4774b68dd"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>IDXD_CMD_SHIFT</b>&#160;&#160;&#160;20</td></tr>
 <tr class="separator:ad9445750f7d1bfe236d5e9e4774b68dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af405c2471af20fed5a36014b4c5e7d01"><td class="memItemLeft" align="right" valign="top"><a id="af405c2471af20fed5a36014b4c5e7d01"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>IDXD_VERSION_OFFSET</b>&#160;&#160;&#160;0x00</td></tr>
-<tr class="separator:af405c2471af20fed5a36014b4c5e7d01"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a921cae568c43caacb36be3e372935e3a"><td class="memItemLeft" align="right" valign="top"><a id="a921cae568c43caacb36be3e372935e3a"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>IDXD_GENCAP_OFFSET</b>&#160;&#160;&#160;0x10</td></tr>
-<tr class="separator:a921cae568c43caacb36be3e372935e3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeb754d0df2586791891f29d3971736fc"><td class="memItemLeft" align="right" valign="top"><a id="aeb754d0df2586791891f29d3971736fc"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>IDXD_WQCAP_OFFSET</b>&#160;&#160;&#160;0x20</td></tr>
-<tr class="separator:aeb754d0df2586791891f29d3971736fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab3abe56012e362b1ec028a8919a2f689"><td class="memItemLeft" align="right" valign="top"><a id="ab3abe56012e362b1ec028a8919a2f689"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>IDXD_GRPCAP_OFFSET</b>&#160;&#160;&#160;0x30</td></tr>
-<tr class="separator:ab3abe56012e362b1ec028a8919a2f689"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad011dccfac77f09cf43fd721d1609d42"><td class="memItemLeft" align="right" valign="top"><a id="ad011dccfac77f09cf43fd721d1609d42"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>IDXD_OPCAP_OFFSET</b>&#160;&#160;&#160;0x40</td></tr>
-<tr class="separator:ad011dccfac77f09cf43fd721d1609d42"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a55f09b78a42314c1b916e363e909e229"><td class="memItemLeft" align="right" valign="top"><a id="a55f09b78a42314c1b916e363e909e229"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>IDXD_ENGCAP_OFFSET</b>&#160;&#160;&#160;0x38</td></tr>
-<tr class="separator:a55f09b78a42314c1b916e363e909e229"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad011dccfac77f09cf43fd721d1609d42"><td class="memItemLeft" align="right" valign="top"><a id="ad011dccfac77f09cf43fd721d1609d42"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>IDXD_OPCAP_OFFSET</b>&#160;&#160;&#160;0x40</td></tr>
-<tr class="separator:ad011dccfac77f09cf43fd721d1609d42"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac27908c9ee60e331b9847e991af69e1b"><td class="memItemLeft" align="right" valign="top"><a id="ac27908c9ee60e331b9847e991af69e1b"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>IDXD_TABLE_OFFSET</b>&#160;&#160;&#160;0x60</td></tr>
-<tr class="separator:ac27908c9ee60e331b9847e991af69e1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeaf76fcfcac19aed3e5c0b5dad7c5add"><td class="memItemLeft" align="right" valign="top"><a id="aeaf76fcfcac19aed3e5c0b5dad7c5add"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>IDXD_GENCFG_OFFSET</b>&#160;&#160;&#160;0x80</td></tr>
-<tr class="separator:aeaf76fcfcac19aed3e5c0b5dad7c5add"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5b65a5780380d2c2e6da56ed1721d9b2"><td class="memItemLeft" align="right" valign="top"><a id="a5b65a5780380d2c2e6da56ed1721d9b2"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>IDXD_GENCTRL_OFFSET</b>&#160;&#160;&#160;0x88</td></tr>
-<tr class="separator:a5b65a5780380d2c2e6da56ed1721d9b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a224a83360e2bdfa4ae508cb87d3f805e"><td class="memItemLeft" align="right" valign="top"><a id="a224a83360e2bdfa4ae508cb87d3f805e"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>IDXD_GENSTATUS_OFFSET</b>&#160;&#160;&#160;0x90</td></tr>
-<tr class="separator:a224a83360e2bdfa4ae508cb87d3f805e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaf2c46ebc5779e1a30213eb24931afec"><td class="memItemLeft" align="right" valign="top"><a id="aaf2c46ebc5779e1a30213eb24931afec"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>IDXD_INTCAUSE_OFFSET</b>&#160;&#160;&#160;0x98</td></tr>
-<tr class="separator:aaf2c46ebc5779e1a30213eb24931afec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2b27139f31d67782807352e828916891"><td class="memItemLeft" align="right" valign="top"><a id="a2b27139f31d67782807352e828916891"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>IDXD_CMD_OFFSET</b>&#160;&#160;&#160;0xa0</td></tr>
-<tr class="separator:a2b27139f31d67782807352e828916891"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aedf72a56ac16fe98b86078743de41572"><td class="memItemLeft" align="right" valign="top"><a id="aedf72a56ac16fe98b86078743de41572"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>IDXD_CMDSTS_OFFSET</b>&#160;&#160;&#160;0xa8</td></tr>
-<tr class="separator:aedf72a56ac16fe98b86078743de41572"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a883bca5bebf50737a5999c54fe2b21ba"><td class="memItemLeft" align="right" valign="top"><a id="a883bca5bebf50737a5999c54fe2b21ba"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>IDXD_SWERR_OFFSET</b>&#160;&#160;&#160;0xc0</td></tr>
-<tr class="separator:a883bca5bebf50737a5999c54fe2b21ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abbccfbd26c9743d2bed8cf4a8c0aab5e"><td class="memItemLeft" align="right" valign="top"><a id="abbccfbd26c9743d2bed8cf4a8c0aab5e"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>IDXD_TABLE_OFFSET_MULT</b>&#160;&#160;&#160;0x100</td></tr>
 <tr class="separator:abbccfbd26c9743d2bed8cf4a8c0aab5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -432,9 +391,9 @@ struct <a class="el" href="structidxd__hw__desc.html">idxd_hw_desc</a>&#160;</td
 <tr class="memitem:a60724be552731a79494bf94f3693b383"><td class="memItemLeft" align="right" valign="top"><a id="a60724be552731a79494bf94f3693b383"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_STATIC_ASSERT</b> (sizeof(union <a class="el" href="unionidxd__group__flags.html">idxd_group_flags</a>)==4, &quot;size mismatch&quot;)</td></tr>
 <tr class="separator:a60724be552731a79494bf94f3693b383"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac9982308e101d53d8712a9154ad54e53"><td class="memItemLeft" align="right" valign="top"><a id="ac9982308e101d53d8712a9154ad54e53"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_STATIC_ASSERT</b> (sizeof(struct <a class="el" href="structidxd__grpcfg.html">idxd_grpcfg</a>)==48, &quot;size mismatch&quot;)</td></tr>
-<tr class="separator:ac9982308e101d53d8712a9154ad54e53"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8da69a8279bafa1a8ac5a7f6bba4e3c3"><td class="memItemLeft" align="right" valign="top"><a id="a8da69a8279bafa1a8ac5a7f6bba4e3c3"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_STATIC_ASSERT</b> (sizeof(struct <a class="el" href="structidxd__grpcfg.html">idxd_grpcfg</a>)==64, &quot;size mismatch&quot;)</td></tr>
+<tr class="separator:a8da69a8279bafa1a8ac5a7f6bba4e3c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad632f74171f563af355dbc2768d05947"><td class="memItemLeft" align="right" valign="top"><a id="ad632f74171f563af355dbc2768d05947"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_STATIC_ASSERT</b> (sizeof(union <a class="el" href="unionidxd__wqcfg.html">idxd_wqcfg</a>)==32, &quot;size mismatch&quot;)</td></tr>
 <tr class="separator:ad632f74171f563af355dbc2768d05947"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -642,7 +601,7 @@ struct <a class="el" href="structidxd__hw__comp__record.html">idxd_hw_comp_recor
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
 <ul>
-        <li class="footer">Generated on Fri Mar 25 2022 04:01:01 for SPDK by
+        <li class="footer">Generated on Sat Mar 26 2022 04:01:00 for SPDK by
         <a href="http://www.doxygen.org/index.html">doxygen</a> 1.9.1 </li>
 </ul>
 </div>
