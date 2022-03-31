@@ -1,11 +1,11 @@
 <map id="spdk_bdev" name="spdk_bdev">
-<area shape="rect" id="node1" title=" " alt="" coords="500,119,585,145"/>
-<area shape="rect" id="node6" href="$structspdk__bdev__name.html" title=" " alt="" coords="722,43,846,69"/>
-<area shape="rect" id="node8" href="$structspdk__bdev__io.html" title=" " alt="" coords="733,147,835,173"/>
-<area shape="rect" id="node2" href="$structspdk__bdev__module.html" title="Block device module." alt="" coords="265,28,399,55"/>
-<area shape="rect" id="node5" href="$structspdk__bdev_1_1____bdev__internal__fields.html" title="Fields that are used internally by the bdev subsystem." alt="" coords="1005,139,1188,181"/>
-<area shape="rect" id="node3" href="$structspdk__bdev__module_1_1____bdev__module__internal__fields.html" title="Fields that are used by the internal bdev subsystem." alt="" coords="5,13,168,69"/>
-<area shape="rect" id="node4" href="$structspdk__uuid.html" title=" " alt="" coords="291,93,373,120"/>
-<area shape="rect" id="node7" href="$structspdk__bdev__io__stat.html" title=" " alt="" coords="719,260,849,287"/>
-<area shape="rect" id="node9" href="$structspdk__bdev__fn__table.html" title="Function table for a block device backend." alt="" coords="263,144,401,171"/>
+<area shape="rect" id="node1" title=" " alt="" coords="547,119,639,145"/>
+<area shape="rect" id="node6" href="$structspdk__bdev__name.html" title=" " alt="" coords="787,43,923,69"/>
+<area shape="rect" id="node8" href="$structspdk__bdev__io.html" title=" " alt="" coords="800,147,911,173"/>
+<area shape="rect" id="node2" href="$structspdk__bdev__module.html" title="Block device module." alt="" coords="291,28,439,55"/>
+<area shape="rect" id="node5" href="$structspdk__bdev_1_1____bdev__internal__fields.html" title="Fields that are used internally by the bdev subsystem." alt="" coords="1095,139,1297,181"/>
+<area shape="rect" id="node3" href="$structspdk__bdev__module_1_1____bdev__module__internal__fields.html" title="Fields that are used by the internal bdev subsystem." alt="" coords="5,13,187,69"/>
+<area shape="rect" id="node4" href="$structspdk__uuid.html" title=" " alt="" coords="321,93,409,120"/>
+<area shape="rect" id="node7" href="$structspdk__bdev__io__stat.html" title=" " alt="" coords="784,260,927,287"/>
+<area shape="rect" id="node9" href="$structspdk__bdev__fn__table.html" title="Function table for a block device backend." alt="" coords="289,144,441,171"/>
 </map>

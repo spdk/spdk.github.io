@@ -1,4 +1,4 @@
 <map id="spdk_nvmf_dif_info" name="spdk_nvmf_dif_info">
-<area shape="rect" id="node1" title=" " alt="" coords="5,95,140,121"/>
-<area shape="rect" id="node2" href="$structspdk__dif__ctx.html" title="DIF context information." alt="" coords="25,5,121,32"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,95,156,121"/>
+<area shape="rect" id="node2" href="$structspdk__dif__ctx.html" title="DIF context information." alt="" coords="29,5,133,32"/>
 </map>

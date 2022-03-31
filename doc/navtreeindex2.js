@@ -1,6 +1,5 @@
 var NAVTREEINDEX2 =
 {
-"changelog.html#changelog-v18-01":[1,3,11],
 "changelog.html#changelog-v18-04":[1,3,10],
 "changelog.html#changelog-v18-07":[1,3,9],
 "changelog.html#changelog-v18-10":[1,3,8],
@@ -249,5 +248,6 @@ var NAVTREEINDEX2 =
 "env__dpdk_8h.html":[15,0,20],
 "env__dpdk_8h.html#a0167c4daf5b4cbb4065a988433357caa":[15,0,20,0],
 "env__dpdk_8h.html#a160eba905ced9b233b67336651c954c7":[15,0,20,3],
-"env__dpdk_8h.html#ae30c265cb90b9920025ee8699b9e9192":[15,0,20,1]
+"env__dpdk_8h.html#ae30c265cb90b9920025ee8699b9e9192":[15,0,20,1],
+"env__dpdk_8h.html#aff24042058543bcee5a8a7ba0cd6b226":[15,0,20,2]
 };

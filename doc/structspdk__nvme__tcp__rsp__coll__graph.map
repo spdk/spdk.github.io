@@ -1,6 +1,6 @@
 <map id="spdk_nvme_tcp_rsp" name="spdk_nvme_tcp_rsp">
-<area shape="rect" id="node1" title="CapsuleResp." alt="" coords="84,199,224,225"/>
-<area shape="rect" id="node2" href="$structspdk__nvme__cpl.html" title="Completion queue entry." alt="" coords="15,102,128,129"/>
-<area shape="rect" id="node3" href="$structspdk__nvme__status.html" title=" " alt="" coords="5,5,137,32"/>
-<area shape="rect" id="node4" href="$structspdk__nvme__tcp__common__pdu__hdr.html" title="Common NVMe/TCP PDU header." alt="" coords="153,95,323,136"/>
+<area shape="rect" id="node1" title="CapsuleResp." alt="" coords="91,199,242,225"/>
+<area shape="rect" id="node2" href="$structspdk__nvme__cpl.html" title="Completion queue entry." alt="" coords="16,102,139,129"/>
+<area shape="rect" id="node3" href="$structspdk__nvme__status.html" title=" " alt="" coords="5,5,149,32"/>
+<area shape="rect" id="node4" href="$structspdk__nvme__tcp__common__pdu__hdr.html" title="Common NVMe/TCP PDU header." alt="" coords="163,95,351,136"/>
 </map>

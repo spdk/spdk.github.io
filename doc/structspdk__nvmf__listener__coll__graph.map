@@ -1,4 +1,4 @@
 <map id="spdk_nvmf_listener" name="spdk_nvmf_listener">
-<area shape="rect" id="node1" title=" " alt="" coords="21,95,155,121"/>
-<area shape="rect" id="node2" href="$structspdk__nvme__transport__id.html" title="NVMe transport identifier." alt="" coords="5,5,171,32"/>
+<area shape="rect" id="node1" title=" " alt="" coords="21,95,172,121"/>
+<area shape="rect" id="node2" href="$structspdk__nvme__transport__id.html" title="NVMe transport identifier." alt="" coords="5,5,188,32"/>
 </map>

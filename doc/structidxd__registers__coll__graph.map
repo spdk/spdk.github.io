@@ -1,17 +1,17 @@
 <map id="idxd_registers" name="idxd_registers">
-<area shape="rect" id="node1" title=" " alt="" coords="280,335,384,361"/>
-<area shape="rect" id="node2" href="$unionidxd__gensts__register.html" title=" " alt="" coords="15,5,158,32"/>
-<area shape="rect" id="node3" href="$unionidxd__wqcap__register.html" title=" " alt="" coords="16,56,157,83"/>
-<area shape="rect" id="node4" href="$unionidxd__cmdsts__register.html" title=" " alt="" coords="13,107,160,133"/>
-<area shape="rect" id="node5" href="$unionidxd__swerr__register.html" title=" " alt="" coords="19,157,154,184"/>
-<area shape="rect" id="node6" href="$unionidxd__offsets__register.html" title=" " alt="" coords="15,208,158,235"/>
-<area shape="rect" id="node7" href="$unionidxd__enginecap__register.html" title=" " alt="" coords="5,259,168,285"/>
-<area shape="rect" id="node8" href="$unionidxd__gencfg__register.html" title=" " alt="" coords="15,309,158,336"/>
-<area shape="rect" id="node9" href="$unionidxd__intcause__register.html" title=" " alt="" coords="11,360,163,387"/>
-<area shape="rect" id="node10" href="$structidxd__opcap__register.html" title=" " alt="" coords="17,411,156,437"/>
-<area shape="rect" id="node11" href="$unionidxd__cmd__register.html" title=" " alt="" coords="23,461,151,488"/>
-<area shape="rect" id="node12" href="$unionidxd__gencap__register.html" title=" " alt="" coords="14,512,159,539"/>
-<area shape="rect" id="node13" href="$unionidxd__cmdcap__register.html" title=" " alt="" coords="12,563,161,589"/>
-<area shape="rect" id="node14" href="$unionidxd__genctrl__register.html" title=" " alt="" coords="15,613,158,640"/>
-<area shape="rect" id="node15" href="$unionidxd__groupcap__register.html" title=" " alt="" coords="9,664,165,691"/>
+<area shape="rect" id="node1" title=" " alt="" coords="307,335,421,361"/>
+<area shape="rect" id="node2" href="$unionidxd__gensts__register.html" title=" " alt="" coords="17,5,175,32"/>
+<area shape="rect" id="node3" href="$unionidxd__wqcap__register.html" title=" " alt="" coords="18,56,174,83"/>
+<area shape="rect" id="node4" href="$unionidxd__cmdsts__register.html" title=" " alt="" coords="15,107,177,133"/>
+<area shape="rect" id="node5" href="$unionidxd__swerr__register.html" title=" " alt="" coords="21,157,171,184"/>
+<area shape="rect" id="node6" href="$unionidxd__offsets__register.html" title=" " alt="" coords="17,208,175,235"/>
+<area shape="rect" id="node7" href="$unionidxd__enginecap__register.html" title=" " alt="" coords="5,259,187,285"/>
+<area shape="rect" id="node8" href="$unionidxd__gencfg__register.html" title=" " alt="" coords="17,309,175,336"/>
+<area shape="rect" id="node9" href="$unionidxd__intcause__register.html" title=" " alt="" coords="11,360,181,387"/>
+<area shape="rect" id="node10" href="$structidxd__opcap__register.html" title=" " alt="" coords="19,411,173,437"/>
+<area shape="rect" id="node11" href="$unionidxd__cmd__register.html" title=" " alt="" coords="25,461,167,488"/>
+<area shape="rect" id="node12" href="$unionidxd__gencap__register.html" title=" " alt="" coords="15,512,177,539"/>
+<area shape="rect" id="node13" href="$unionidxd__cmdcap__register.html" title=" " alt="" coords="13,563,179,589"/>
+<area shape="rect" id="node14" href="$unionidxd__genctrl__register.html" title=" " alt="" coords="17,613,175,640"/>
+<area shape="rect" id="node15" href="$unionidxd__groupcap__register.html" title=" " alt="" coords="9,664,183,691"/>
 </map>

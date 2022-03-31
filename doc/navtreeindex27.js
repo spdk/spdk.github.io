@@ -1,6 +1,5 @@
 var NAVTREEINDEX27 =
 {
-"structvfio__user__version.html#ab4a19712c45fb4ecf80f370129225671":[14,0,364,1],
 "structvfio__user__version.html#af5e04313660bcdcd7dabc4a147eb0b5d":[14,0,364,0],
 "system_configuration.html":[3,0],
 "system_configuration.html#iommu_config":[3,0,0],
@@ -249,5 +248,6 @@ var NAVTREEINDEX27 =
 "unionidxd__offsets__register.html#a08e771bd19ffe3fe6c4f15e930bc7cef":[14,0,15,0],
 "unionidxd__offsets__register.html#a16bbf9fa887e4804e714ec54d322bace":[14,0,15,6],
 "unionidxd__offsets__register.html#a43636517dbe127db642d7f6077146bea":[14,0,15,1],
-"unionidxd__offsets__register.html#a56c89a9743baa92e4915662c24bbaf38":[14,0,15,4]
+"unionidxd__offsets__register.html#a56c89a9743baa92e4915662c24bbaf38":[14,0,15,4],
+"unionidxd__offsets__register.html#a580d4224ca783068da581d39a61c5fe3":[14,0,15,2]
 };

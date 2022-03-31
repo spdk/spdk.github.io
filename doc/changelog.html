@@ -100,6 +100,7 @@ v22.05: (Upcoming Release)</h1>
 <h2>accel_fw</h2>
 <p>A new parameter <code>flags</code> was added to accel API. The APIs include: <code>spdk_accel_submit_copy</code> <code>spdk_accel_submit_dualcast</code> <code>spdk_accel_submit_fill</code> <code>spdk_accel_submit_copy_crc32c</code> <code>spdk_accel_submit_copy_crc32cv</code></p>
 <p>A new flag <code>ACCEL_FLAG_PERSISTENT</code> was added to indicate the target memory is PMEM.</p>
+<p>The API <code>spdk_accel_get_capabilities</code> has been removed.</p>
 <h2>crypto</h2>
 <p>Support for AES_XTS was added for MLX5 polled mode driver (pmd).</p>
 <p>bdev_crypto_create RPC now requires hexlified 'key' and 'key2' params for all pmd drivers. Unhexlifying is performed during RPC command processing and the vbdev crypto module runs on binary keys as before.</p>
@@ -1467,7 +1468,7 @@ v16.06: NVMf userspace target</h1>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
 <ul>
-        <li class="footer">Generated on Wed Mar 30 2022 04:01:02 for SPDK by
+        <li class="footer">Generated on Thu Mar 31 2022 04:01:05 for SPDK by
         <a href="http://www.doxygen.org/index.html">doxygen</a> 1.9.1 </li>
 </ul>
 </div>
