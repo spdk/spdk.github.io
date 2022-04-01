@@ -21,7 +21,6 @@ var annotated_dup =
     [ "idxd_swerr_register", "unionidxd__swerr__register.html", "unionidxd__swerr__register" ],
     [ "idxd_wqcap_register", "unionidxd__wqcap__register.html", "unionidxd__wqcap__register" ],
     [ "idxd_wqcfg", "unionidxd__wqcfg.html", "unionidxd__wqcfg" ],
-    [ "idxd_wqtbl", "structidxd__wqtbl.html", "structidxd__wqtbl" ],
     [ "iscsi_ahs", "structiscsi__ahs.html", "structiscsi__ahs" ],
     [ "iscsi_bhs", "structiscsi__bhs.html", "structiscsi__bhs" ],
     [ "iscsi_bhs_async", "structiscsi__bhs__async.html", "structiscsi__bhs__async" ],

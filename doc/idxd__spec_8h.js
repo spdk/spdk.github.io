@@ -21,7 +21,6 @@ var idxd__spec_8h =
     [ "idxd_grpcfg", "structidxd__grpcfg.html", "structidxd__grpcfg" ],
     [ "idxd_grptbl", "structidxd__grptbl.html", "structidxd__grptbl" ],
     [ "idxd_wqcfg", "unionidxd__wqcfg.html", "unionidxd__wqcfg" ],
-    [ "idxd_wqtbl", "structidxd__wqtbl.html", "structidxd__wqtbl" ],
     [ "CFG_ENGINE_OFFSET", "idxd__spec_8h.html#a6a9c46014498cf7135c74ca93e4ffdbe", null ],
     [ "CFG_FLAG_OFFSET", "idxd__spec_8h.html#afa8bfb6deea91afa255daaef7344d91d", null ],
     [ "IDXD_CLEAR_CRC_FLAGS", "idxd__spec_8h.html#acbdb7d226605fae4663bb25c6540130a", null ],

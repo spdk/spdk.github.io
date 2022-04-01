@@ -2057,6 +2057,41 @@ bdev_ocf_set_cache_mode</h2>
 <div class="line">  &quot;id&quot;: 1,</div>
 <div class="line">  &quot;result&quot;: &quot;pt&quot;</div>
 <div class="line">}</div>
+</div><!-- fragment --><h2><a class="anchor" id="rpc_bdev_ocf_set_seqcutoff"></a>
+bdev_ocf_set_seqcutoff</h2>
+<p>Set sequential cutoff parameters on all cores for the given OCF cache device. A brief description of this functionality can be found in <a href="https://open-cas.github.io/guide_tool_details.html#seq-cutoff">OpenCAS documentation</a>.</p>
+<h3>Parameters</h3>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Bdev name    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">policy   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Sequential cutoff policy: always, full, never    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">threshold   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">int   </td><td class="markdownTableBodyNone">Activation threshold in KiB    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">promotion_count   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">int   </td><td class="markdownTableBodyNone">Promotion request count   </td></tr>
+</table>
+<h3>Example</h3>
+<p>Example request:</p>
+<div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;params&quot;: {</div>
+<div class="line">    &quot;name&quot;: &quot;ocf0&quot;,</div>
+<div class="line">    &quot;policy&quot;: &quot;full&quot;,</div>
+<div class="line">    &quot;threshold&quot;: 4,</div>
+<div class="line">    &quot;promotion_count&quot;: 2</div>
+<div class="line">  },</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
+<div class="line">  &quot;method&quot;: &quot;bdev_ocf_set_seqcutoff&quot;,</div>
+<div class="line">  &quot;id&quot;: 1</div>
+<div class="line">}</div>
+</div><!-- fragment --><p>Example response:</p>
+<div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
+<div class="line">  &quot;id&quot;: 1,</div>
+<div class="line">  &quot;result&quot;: true</div>
+<div class="line">}</div>
 </div><!-- fragment --><h2><a class="anchor" id="rpc_bdev_malloc_create"></a>
 bdev_malloc_create</h2>
 <p>Construct <a class="el" href="bdev.html#bdev_config_malloc">Malloc bdev</a></p>
@@ -2601,10 +2636,12 @@ bdev_nvme_start_discovery</h2>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">hostnqn   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">NVMe-oF target hostnqn    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">ctrlr_loss_timeout_sec   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">Time to wait until ctrlr is reconnected before deleting ctrlr. -1 means infinite reconnects. 0 means no reconnect.    </td></tr>
+<td class="markdownTableBodyNone">wait_for_attach   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">bool   </td><td class="markdownTableBodyNone">Wait to complete until all discovered NVM subsystems are attached    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">reconnect_delay_sec   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">Time to delay a reconnect trial. 0 means no reconnect.    </td></tr>
+<td class="markdownTableBodyNone">ctrlr_loss_timeout_sec   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">Time to wait until ctrlr is reconnected before deleting ctrlr. -1 means infinite reconnects. 0 means no reconnect.    </td></tr>
 <tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">reconnect_delay_sec   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">Time to delay a reconnect trial. 0 means no reconnect.    </td></tr>
+<tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">fast_io_fail_timeout_sec   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">Time to wait until ctrlr is reconnected before failing I/O to ctrlr. 0 means no such timeout.   </td></tr>
 </table>
 <h3>Example</h3>
@@ -7598,7 +7635,7 @@ bdev_nvme_remove_error_injection</h2>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
 <ul>
-        <li class="footer">Generated on Thu Mar 31 2022 04:01:05 for SPDK by
+        <li class="footer">Generated on Fri Apr 1 2022 04:01:03 for SPDK by
         <a href="http://www.doxygen.org/index.html">doxygen</a> 1.9.1 </li>
 </ul>
 </div>
