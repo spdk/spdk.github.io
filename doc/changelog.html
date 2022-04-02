@@ -164,6 +164,8 @@ v22.05: (Upcoming Release)</h1>
 <p>Added <code>trace_set_tpoint_mask</code> and <code>trace_clear_tpoint_mask</code> RPC to allow enabling individual traces.</p>
 <h2>util</h2>
 <p>Added <code>spdk_ioviter_first</code> and <code>spdk_ioviter_next</code> to iterate over two iovecs and yield pointers to common length segments.</p>
+<h2>sock</h2>
+<p>A new parameter <code>hint</code> is added to <code>spdk_sock_get_optimal_sock_group</code>. It allows to suggest a poll group when no optimal poll group is found.</p>
 <h1>v21.10</h1>
 <p>Structure <code><a class="el" href="structspdk__nvmf__target__opts.html">spdk_nvmf_target_opts</a></code> has been extended with new member <code>discovery_filter</code> which allows to specify filtering rules applied during discovery log generation. Refer to <code>enum spdk_nvmf_tgt_discovery_filter</code> for more info.</p>
 <h2>bdev</h2>
@@ -850,7 +852,7 @@ v19.07: NVMe-oF FC Transport, VMD, NVMe-oF Persistent reservations, Bdev I/O wit
 <p>SPDK now supports VPP version 19.04.2, up from VPP 18.01.</p>
 <p>VPP socket abstraction now uses VPP Session API, instead of VLC (VPP Communications Library). This allows for better control over sessions and queues. Please see VPP documentation for more details: <a href="https://wiki.fd.io/view/VPP/HostStack">VPP Host Stack</a></p>
 <h2>sock</h2>
-<p>Add <a class="el" href="sock_8h.html#a8d38ca36abb4f475b362c485116678b9" title="Get the optimal sock group for this sock.">spdk_sock_get_optimal_sock_group()</a>, which returns the optimal sock group for this socket. When a socket is created, it is often assigned to a sock group using spdk_sock_group_add_sock so that a set of sockets can be polled more efficiently. For some network devices, it is optimal to assign particular sockets to specific sock groups. This API is intended to provide the user with that information.</p>
+<p>Add <a class="el" href="sock_8h.html#ad24c07b476251c95ed574ce3f61a2faa" title="Get the optimal sock group for this sock.">spdk_sock_get_optimal_sock_group()</a>, which returns the optimal sock group for this socket. When a socket is created, it is often assigned to a sock group using spdk_sock_group_add_sock so that a set of sockets can be polled more efficiently. For some network devices, it is optimal to assign particular sockets to specific sock groups. This API is intended to provide the user with that information.</p>
 <p><a class="el" href="sock_8h.html#ae60bf2833f9b9bd99088c1c0929d6321" title="Get the ctx of the sock group.">spdk_sock_group_get_ctx()</a> was added to return the context of the spdk_sock_group. <a class="el" href="sock_8h.html#a06f3441fbe7ea447b7ae03e71e074e27" title="Create a new socket group with user provided pointer.">spdk_sock_group_create()</a> is updated to allow input the user provided ctx. spdk_sock_set_priority() is added to set the priority of the socket.</p>
 <h2>rpc</h2>
 <p>Added thread_get_stats RPC method to retrieve existing statistics.</p>
@@ -1470,7 +1472,7 @@ v16.06: NVMf userspace target</h1>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
 <ul>
-        <li class="footer">Generated on Fri Apr 1 2022 04:01:03 for SPDK by
+        <li class="footer">Generated on Sat Apr 2 2022 04:01:02 for SPDK by
         <a href="http://www.doxygen.org/index.html">doxygen</a> 1.9.1 </li>
 </ul>
 </div>

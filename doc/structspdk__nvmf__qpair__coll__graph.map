@@ -1,14 +1,15 @@
 <map id="spdk_nvmf_qpair" name="spdk_nvmf_qpair">
-<area shape="rect" id="node1" title=" " alt="" coords="597,312,732,339"/>
-<area shape="rect" id="node4" href="$structspdk__nvmf__request.html" title=" " alt="" coords="909,157,1060,184"/>
-<area shape="rect" id="node2" href="$structspdk__nvmf__poll__group.html" title=" " alt="" coords="288,279,457,305"/>
-<area shape="rect" id="node3" href="$structspdk__nvmf__poll__group__stat.html" title=" " alt="" coords="5,279,207,305"/>
+<area shape="rect" id="node1" title=" " alt="" coords="597,363,732,389"/>
+<area shape="rect" id="node4" href="$structspdk__nvmf__request.html" title=" " alt="" coords="909,183,1060,209"/>
+<area shape="rect" id="node2" href="$structspdk__nvmf__poll__group.html" title=" " alt="" coords="288,329,457,356"/>
+<area shape="rect" id="node3" href="$structspdk__nvmf__poll__group__stat.html" title=" " alt="" coords="5,329,207,356"/>
 <area shape="rect" id="node5" href="$structspdk__nvmf__dif__info.html" title=" " alt="" coords="589,5,740,32"/>
 <area shape="rect" id="node6" href="$unionnvmf__h2c__msg.html" title=" " alt="" coords="604,56,725,83"/>
 <area shape="rect" id="node7" href="$unionnvmf__c2h__msg.html" title=" " alt="" coords="604,107,725,133"/>
 <area shape="rect" id="node8" href="$structspdk__bdev__io__wait__entry.html" title="Structure to register a callback when an spdk_bdev_io becomes available." alt="" coords="571,157,758,184"/>
-<area shape="rect" id="node9" href="$structspdk__bdev__io.html" title=" " alt="" coords="609,261,720,288"/>
-<area shape="rect" id="node10" href="$structspdk__nvmf__transport.html" title=" " alt="" coords="293,369,453,396"/>
-<area shape="rect" id="node11" href="$structspdk__nvmf__transport__ops.html" title=" " alt="" coords="569,383,760,409"/>
-<area shape="rect" id="node12" href="$structspdk__nvmf__transport__opts.html" title=" " alt="" coords="9,369,203,396"/>
+<area shape="rect" id="node9" href="$structspdk__nvmf__stripped__data.html" title=" " alt="" coords="569,208,760,235"/>
+<area shape="rect" id="node10" href="$structspdk__bdev__io.html" title=" " alt="" coords="609,312,720,339"/>
+<area shape="rect" id="node11" href="$structspdk__nvmf__transport.html" title=" " alt="" coords="293,420,453,447"/>
+<area shape="rect" id="node12" href="$structspdk__nvmf__transport__ops.html" title=" " alt="" coords="569,433,760,460"/>
+<area shape="rect" id="node13" href="$structspdk__nvmf__transport__opts.html" title=" " alt="" coords="9,420,203,447"/>
 </map>

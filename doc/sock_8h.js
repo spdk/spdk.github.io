@@ -18,7 +18,7 @@ var sock_8h =
     [ "spdk_sock_connect_ext", "sock_8h.html#ae4a2a815e571ea3401cb94ed915cf251", null ],
     [ "spdk_sock_flush", "sock_8h.html#a1501ed80f4cbac9912d10f4e1900905d", null ],
     [ "spdk_sock_get_default_opts", "sock_8h.html#a66cae415827aa6aa31adb05c120ba803", null ],
-    [ "spdk_sock_get_optimal_sock_group", "sock_8h.html#a8d38ca36abb4f475b362c485116678b9", null ],
+    [ "spdk_sock_get_optimal_sock_group", "sock_8h.html#ad24c07b476251c95ed574ce3f61a2faa", null ],
     [ "spdk_sock_getaddr", "sock_8h.html#ab596707e3e18b6f3e4ceb365369a3b8f", null ],
     [ "spdk_sock_group_add_sock", "sock_8h.html#aa07f7a676410527883e2f8159ea1bfea", null ],
     [ "spdk_sock_group_close", "sock_8h.html#ad75fdb315be08263dd42aa20e1ca5df9", null ],

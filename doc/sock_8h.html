@@ -215,9 +215,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ad75fdb315be08263dd42aa20e1ca5df9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sock_8h.html#ad75fdb315be08263dd42aa20e1ca5df9">spdk_sock_group_close</a> (struct spdk_sock_group **group)</td></tr>
 <tr class="memdesc:ad75fdb315be08263dd42aa20e1ca5df9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Close all registered sockets of the group and then remove the group.  <a href="sock_8h.html#ad75fdb315be08263dd42aa20e1ca5df9">More...</a><br /></td></tr>
 <tr class="separator:ad75fdb315be08263dd42aa20e1ca5df9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8d38ca36abb4f475b362c485116678b9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sock_8h.html#a8d38ca36abb4f475b362c485116678b9">spdk_sock_get_optimal_sock_group</a> (struct spdk_sock *sock, struct spdk_sock_group **group)</td></tr>
-<tr class="memdesc:a8d38ca36abb4f475b362c485116678b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the optimal sock group for this sock.  <a href="sock_8h.html#a8d38ca36abb4f475b362c485116678b9">More...</a><br /></td></tr>
-<tr class="separator:a8d38ca36abb4f475b362c485116678b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad24c07b476251c95ed574ce3f61a2faa"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sock_8h.html#ad24c07b476251c95ed574ce3f61a2faa">spdk_sock_get_optimal_sock_group</a> (struct spdk_sock *sock, struct spdk_sock_group **group, struct spdk_sock_group *hint)</td></tr>
+<tr class="memdesc:ad24c07b476251c95ed574ce3f61a2faa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the optimal sock group for this sock.  <a href="sock_8h.html#ad24c07b476251c95ed574ce3f61a2faa">More...</a><br /></td></tr>
+<tr class="separator:ad24c07b476251c95ed574ce3f61a2faa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab6cbdc2532b80f5c9404af222ee03d23"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sock_8h.html#ab6cbdc2532b80f5c9404af222ee03d23">spdk_sock_impl_get_opts</a> (const char *impl_name, struct <a class="el" href="structspdk__sock__impl__opts.html">spdk_sock_impl_opts</a> *opts, size_t *len)</td></tr>
 <tr class="memdesc:ab6cbdc2532b80f5c9404af222ee03d23"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get current socket implementation options.  <a href="sock_8h.html#ab6cbdc2532b80f5c9404af222ee03d23">More...</a><br /></td></tr>
 <tr class="separator:ab6cbdc2532b80f5c9404af222ee03d23"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -465,8 +465,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a8d38ca36abb4f475b362c485116678b9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8d38ca36abb4f475b362c485116678b9">&#9670;&nbsp;</a></span>spdk_sock_get_optimal_sock_group()</h2>
+<a id="ad24c07b476251c95ed574ce3f61a2faa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad24c07b476251c95ed574ce3f61a2faa">&#9670;&nbsp;</a></span>spdk_sock_get_optimal_sock_group()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -481,7 +481,13 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">struct spdk_sock_group **&#160;</td>
-          <td class="paramname"><em>group</em>&#160;</td>
+          <td class="paramname"><em>group</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct spdk_sock_group *&#160;</td>
+          <td class="paramname"><em>hint</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -495,7 +501,8 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">sock</td><td>The socket </td></tr>
-    <tr><td class="paramname">group</td><td>Returns the optimal sock group. If there is no optimal sock group, returns NULL.</td></tr>
+    <tr><td class="paramname">group</td><td>Returns the optimal sock group. If there is no optimal sock group, returns NULL. </td></tr>
+    <tr><td class="paramname">hint</td><td>When return is 0 and group is set to NULL, hint is used to set optimal sock group for the socket.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1428,7 +1435,7 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
 <ul>
-        <li class="footer">Generated on Fri Apr 1 2022 04:01:03 for SPDK by
+        <li class="footer">Generated on Sat Apr 2 2022 04:01:02 for SPDK by
         <a href="http://www.doxygen.org/index.html">doxygen</a> 1.9.1 </li>
 </ul>
 </div>

@@ -3,6 +3,7 @@ var nvmf__transport_8h =
     [ "nvmf_h2c_msg", "unionnvmf__h2c__msg.html", "unionnvmf__h2c__msg" ],
     [ "nvmf_c2h_msg", "unionnvmf__c2h__msg.html", "unionnvmf__c2h__msg" ],
     [ "spdk_nvmf_dif_info", "structspdk__nvmf__dif__info.html", "structspdk__nvmf__dif__info" ],
+    [ "spdk_nvmf_stripped_data", "structspdk__nvmf__stripped__data.html", "structspdk__nvmf__stripped__data" ],
     [ "spdk_nvmf_request", "structspdk__nvmf__request.html", "structspdk__nvmf__request" ],
     [ "spdk_nvmf_qpair", "structspdk__nvmf__qpair.html", "structspdk__nvmf__qpair" ],
     [ "spdk_nvmf_transport_pg_cache_buf", "structspdk__nvmf__transport__pg__cache__buf.html", "structspdk__nvmf__transport__pg__cache__buf" ],
