@@ -1,5 +1,6 @@
 var NAVTREEINDEX26 =
 {
+"structspdk__scsi__pr__in__read__reservations__data.html#a1d2f6e4d0bbc3b08afe0e5cc5a01a0d8":[14,0,328,3],
 "structspdk__scsi__pr__in__read__reservations__data.html#a699fa37a6c279d775f79ce2b9d6d5183":[14,0,328,0],
 "structspdk__scsi__pr__in__read__reservations__data.html#a88555dc64820e0f7296eab1d6f54903c":[14,0,328,1],
 "structspdk__scsi__pr__in__read__reservations__data.html#a8977e1d54d89556ae2bcf3234c4ec091":[14,0,328,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX26 =
 "structvfio__user__irq__info.html#ade42fc56773d521b17dcc9ecdd2638a7":[14,0,362,0],
 "structvfio__user__region__access.html":[14,0,363],
 "structvfio__user__region__access.html#a0336183516d49390e0855e4e104587e2":[14,0,363,3],
-"structvfio__user__region__access.html#a36926d14f9c7310a4d6f0af0469b98c5":[14,0,363,0],
-"structvfio__user__region__access.html#a4f0edcde076bdae35264919af0240cdb":[14,0,363,2]
+"structvfio__user__region__access.html#a36926d14f9c7310a4d6f0af0469b98c5":[14,0,363,0]
 };

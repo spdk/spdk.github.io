@@ -222,11 +222,12 @@ var NAVTREEINDEX0 =
 "bdev__module_8h.html":[15,0,5],
 "bdev__module_8h.html#a01b2b4c60b3a775324f796e6be387015":[15,0,5,50],
 "bdev__module_8h.html#a099c43cf183a48d23ec7ddad683da1ae":[15,0,5,60],
-"bdev__module_8h.html#a0da20e00320e2b782d1717c8184d93a3":[15,0,5,67],
+"bdev__module_8h.html#a0da20e00320e2b782d1717c8184d93a3":[15,0,5,68],
+"bdev__module_8h.html#a1135837fca4f720aa12e09daf04a90eb":[15,0,5,64],
 "bdev__module_8h.html#a13dae91c3223ea829a78b979d34018c0":[15,0,5,38],
 "bdev__module_8h.html#a1d08fdcf7c3e636d41028fa7ea55aeb7":[15,0,5,23],
 "bdev__module_8h.html#a1d1a5d28d5d17381f15953cb13a4cc6c":[15,0,5,28],
-"bdev__module_8h.html#a1e12eb0cf1d416b15159529e194908a8":[15,0,5,68],
+"bdev__module_8h.html#a1e12eb0cf1d416b15159529e194908a8":[15,0,5,69],
 "bdev__module_8h.html#a24c1e59da114916f39354813c0e761ee":[15,0,5,54],
 "bdev__module_8h.html#a2562fbcad733a35efaca67e9fb53a382":[15,0,5,15],
 "bdev__module_8h.html#a2a279a58afa5c5ed8a68820fcea0efaa":[15,0,5,46],
@@ -237,7 +238,7 @@ var NAVTREEINDEX0 =
 "bdev__module_8h.html#a38d791accba4b7e734c2968f4f5084cb":[15,0,5,52],
 "bdev__module_8h.html#a3a32d238f1617d87d407451e3874f1d1":[15,0,5,40],
 "bdev__module_8h.html#a3d1fd8c9ecf144593313ea08cdeb8ca2":[15,0,5,63],
-"bdev__module_8h.html#a400db1b2562970d33d8a9ef9ba8d04ff":[15,0,5,66],
+"bdev__module_8h.html#a400db1b2562970d33d8a9ef9ba8d04ff":[15,0,5,67],
 "bdev__module_8h.html#a4137556f7ff39fc2c0e816489f5803c4":[15,0,5,35],
 "bdev__module_8h.html#a4271696fa055f456bedb6bdebce25dbd":[15,0,5,27],
 "bdev__module_8h.html#a43188aae62750556bba04f4ddc81fa94":[15,0,5,36],
@@ -248,6 +249,5 @@ var NAVTREEINDEX0 =
 "bdev__module_8h.html#a65de686e7ddcf8caa6d7fa032e7023c6":[15,0,5,31],
 "bdev__module_8h.html#a78a004a98b02f2d1b2346b6b25e1c945":[15,0,5,14],
 "bdev__module_8h.html#a7f2edd5a040a818752112d2cc709efca":[15,0,5,44],
-"bdev__module_8h.html#a82dd20b5702f2f97c1f8eec5cdc6d0d5":[15,0,5,45],
-"bdev__module_8h.html#a8d51d8e113f0dffb1bbe535ea01c495f":[15,0,5,22]
+"bdev__module_8h.html#a82dd20b5702f2f97c1f8eec5cdc6d0d5":[15,0,5,45]
 };

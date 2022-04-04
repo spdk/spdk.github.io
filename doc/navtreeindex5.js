@@ -1,5 +1,6 @@
 var NAVTREEINDEX5 =
 {
+"ioat__spec_8h.html#ac21b86520103171bb2b8845536b580e4":[15,0,31,38],
 "ioat__spec_8h.html#ac8e2123ef0becc284074f97470b6fcca":[15,0,31,44],
 "ioat__spec_8h.html#acf92e6fa4c936c453363f5ab3d8dac17":[15,0,31,24],
 "ioat__spec_8h.html#ad6decf15f582db03646116195bf1795f":[15,0,31,16],
@@ -248,6 +249,5 @@ var NAVTREEINDEX5 =
 "jsonrpc.html#rpc_bdev_compress_set_pmd":[3,9,5,12],
 "jsonrpc.html#rpc_bdev_crypto_create":[3,9,5,13],
 "jsonrpc.html#rpc_bdev_crypto_delete":[3,9,5,14],
-"jsonrpc.html#rpc_bdev_delay_create":[3,9,5,50],
-"jsonrpc.html#rpc_bdev_delay_delete":[3,9,5,51]
+"jsonrpc.html#rpc_bdev_delay_create":[3,9,5,50]
 };

@@ -96,6 +96,7 @@ v22.05: (Upcoming Release)</h1>
 <p>A new parameter <code>bounce_iovcnt</code> was added to <code>spdk_dif_generate_copy</code> and <code>spdk_dif_verify_copy</code>. The <code>bounce_iovcnt</code> is used to specify the number of bounce_iov to support multiple block-aligned fragment copies.</p>
 <h2>bdev</h2>
 <p>Removed deprecated spdk_bdev_module_finish_done(). Use <a class="el" href="bdev__module_8h.html#a13dae91c3223ea829a78b979d34018c0" title="Indicate that the module finish has completed.">spdk_bdev_module_fini_done()</a> instead.</p>
+<p>A new API <code>spdk_bdev_unregister_by_name</code> was added to handle race conditions correctly.</p>
 <h2>idxd</h2>
 <p>A new parameter <code>flags</code> was added to all low level submission and preparation APIs to enable the caller to pass operation flags per the DSA specification.</p>
 <p>A new flag 'SPDK_IDXD_FLAG_PERSISTENT' was added to let DSA know that the destination is persistent.</p>
@@ -1472,7 +1473,7 @@ v16.06: NVMf userspace target</h1>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
 <ul>
-        <li class="footer">Generated on Sun Apr 3 2022 04:01:00 for SPDK by
+        <li class="footer">Generated on Mon Apr 4 2022 04:01:00 for SPDK by
         <a href="http://www.doxygen.org/index.html">doxygen</a> 1.9.1 </li>
 </ul>
 </div>
