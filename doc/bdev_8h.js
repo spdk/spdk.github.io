@@ -19,6 +19,7 @@ var bdev_8h =
     [ "spdk_bdev_io_wait_cb", "bdev_8h.html#a9c7e19e090b8cdb22e8fc6b1984e5278", null ],
     [ "spdk_bdev_remove_cb_t", "bdev_8h.html#a51a55c97586c2d524fffcabc4d7910d6", null ],
     [ "spdk_bdev_wait_for_examine_cb", "bdev_8h.html#af8ee74dcabcf41f4332c7e75b4afa11a", null ],
+    [ "spdk_for_each_bdev_fn", "bdev_8h.html#a4163854db79e0e3b211dd72ca031fbb0", null ],
     [ "spdk_bdev_event_type", "bdev_8h.html#a13e432c6b290dcf392335a406206fd83", [
       [ "SPDK_BDEV_EVENT_REMOVE", "bdev_8h.html#a13e432c6b290dcf392335a406206fd83a89f4612602ac5a085667f620b767f9b9", null ],
       [ "SPDK_BDEV_EVENT_RESIZE", "bdev_8h.html#a13e432c6b290dcf392335a406206fd83acb97bc25f59f9d5ee74131c74d46febc", null ],
@@ -150,5 +151,7 @@ var bdev_8h =
     [ "spdk_bdev_writev_blocks_ext", "group__bdev__io__submit__functions.html#ga418f6f4ab853a3152a7f7ba256894a3f", null ],
     [ "spdk_bdev_writev_blocks_with_md", "group__bdev__io__submit__functions.html#ga635944e7a651c01ecf5d808f988d138d", null ],
     [ "spdk_bdev_zcopy_end", "bdev_8h.html#ac432e059187b2dee62418354664e87c2", null ],
-    [ "spdk_bdev_zcopy_start", "bdev_8h.html#a0ae02ac58ed10886d4a00ba3d94af4ce", null ]
+    [ "spdk_bdev_zcopy_start", "bdev_8h.html#a0ae02ac58ed10886d4a00ba3d94af4ce", null ],
+    [ "spdk_for_each_bdev", "bdev_8h.html#ac93dda3868b191be70ac7e1517422c1f", null ],
+    [ "spdk_for_each_bdev_leaf", "bdev_8h.html#aeb680eb5205197872738e482204ab441", null ]
 ];

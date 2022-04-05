@@ -1,5 +1,8 @@
 var NAVTREEINDEX6 =
 {
+"jsonrpc.html#rpc_bdev_crypto_create":[3,9,5,13],
+"jsonrpc.html#rpc_bdev_crypto_delete":[3,9,5,14],
+"jsonrpc.html#rpc_bdev_delay_create":[3,9,5,50],
 "jsonrpc.html#rpc_bdev_delay_delete":[3,9,5,51],
 "jsonrpc.html#rpc_bdev_delay_update_latency":[3,9,5,52],
 "jsonrpc.html#rpc_bdev_enable_histogram":[3,9,5,5],
@@ -246,8 +249,5 @@ var NAVTREEINDEX6 =
 "libraries.html#structure":[3,1,0],
 "libraries.html#versioning":[3,1,2,0],
 "likely_8h.html":[15,0,35],
-"likely_8h.html#a568e75eb7097ecf9ea2c735abc9f5844":[15,0,35,0],
-"likely_8h.html#adbc72e18822cb8015657c3e8baba7bb5":[15,0,35,1],
-"log_8h.html":[15,0,36],
-"log_8h.html#a006f81539904967c51f6a26f93d908be":[15,0,36,4]
+"likely_8h.html#a568e75eb7097ecf9ea2c735abc9f5844":[15,0,35,0]
 };

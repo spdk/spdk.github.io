@@ -97,6 +97,7 @@ v22.05: (Upcoming Release)</h1>
 <h2>bdev</h2>
 <p>Removed deprecated spdk_bdev_module_finish_done(). Use <a class="el" href="bdev__module_8h.html#a13dae91c3223ea829a78b979d34018c0" title="Indicate that the module finish has completed.">spdk_bdev_module_fini_done()</a> instead.</p>
 <p>A new API <code>spdk_bdev_unregister_by_name</code> was added to handle race conditions correctly.</p>
+<p>New APIs, <code>spdk_for_each_bdev</code> and <code>spdk_for_each_bdev_leaf</code>, were added to provide iteration safe for race conditions.</p>
 <h2>idxd</h2>
 <p>A new parameter <code>flags</code> was added to all low level submission and preparation APIs to enable the caller to pass operation flags per the DSA specification.</p>
 <p>A new flag 'SPDK_IDXD_FLAG_PERSISTENT' was added to let DSA know that the destination is persistent.</p>
@@ -123,6 +124,8 @@ v22.05: (Upcoming Release)</h1>
 <h2>scheduler</h2>
 <p><code>framework_set_scheduler</code> can now be called after application initialization. Added callbacks to set custom parameters specific for each scheduler implementation and <code>framework_get_scheduler</code> to retrieve them.</p>
 <p>Added <code>dynamic</code> scheduler options: load_limit, core_limit, core_busy. Their descriptions are available in JSON-RPC document, in section <a href="jsonrpc.html#rpc_framework_set_scheduler">framework_set_scheduler</a>.</p>
+<h2>raid</h2>
+<p>Add concat as a special raid module. The concat module could create a virtual bdev. The virtual bdev combines multiple underlying bdevs together. The layout of the underlying bdevs is one after another. The concat bdev is extendable. When the free space of the concat bdev is not enough, the user can deconstruct the concat bdev, then reconstruct it with an additional underlying bdev.</p>
 <h1>v22.01</h1>
 <h2>accel</h2>
 <p>The batching capability was removed. Batching is now considered an implementation detail of the low level drivers.</p>
@@ -1473,7 +1476,7 @@ v16.06: NVMf userspace target</h1>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
 <ul>
-        <li class="footer">Generated on Mon Apr 4 2022 04:01:00 for SPDK by
+        <li class="footer">Generated on Tue Apr 5 2022 04:01:02 for SPDK by
         <a href="http://www.doxygen.org/index.html">doxygen</a> 1.9.1 </li>
 </ul>
 </div>

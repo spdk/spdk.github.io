@@ -153,6 +153,9 @@ typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_g
 <tr class="memitem:a83db84993554e784cbddf2d217f6ea4f"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev_8h.html#a83db84993554e784cbddf2d217f6ea4f">spdk_bdev_io_timeout_cb</a>) (void *cb_arg, struct <a class="el" href="structspdk__bdev__io.html">spdk_bdev_io</a> *bdev_io)</td></tr>
 <tr class="memdesc:a83db84993554e784cbddf2d217f6ea4f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Block device channel IO timeout callback.  <a href="bdev_8h.html#a83db84993554e784cbddf2d217f6ea4f">More...</a><br /></td></tr>
 <tr class="separator:a83db84993554e784cbddf2d217f6ea4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4163854db79e0e3b211dd72ca031fbb0"><td class="memItemLeft" align="right" valign="top">typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev_8h.html#a4163854db79e0e3b211dd72ca031fbb0">spdk_for_each_bdev_fn</a>) (void *ctx, struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *bdev)</td></tr>
+<tr class="memdesc:a4163854db79e0e3b211dd72ca031fbb0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback function for <a class="el" href="bdev_8h.html#ac93dda3868b191be70ac7e1517422c1f" title="Call the provided callback function for every registered block device.">spdk_for_each_bdev()</a> and <a class="el" href="bdev_8h.html#aeb680eb5205197872738e482204ab441" title="Call the provided callback function for every block device without virtual block devices on top.">spdk_for_each_bdev_leaf()</a>.  <a href="bdev_8h.html#a4163854db79e0e3b211dd72ca031fbb0">More...</a><br /></td></tr>
+<tr class="separator:a4163854db79e0e3b211dd72ca031fbb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9c7e19e090b8cdb22e8fc6b1984e5278"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev_8h.html#a9c7e19e090b8cdb22e8fc6b1984e5278">spdk_bdev_io_wait_cb</a>) (void *cb_arg)</td></tr>
 <tr class="memdesc:a9c7e19e090b8cdb22e8fc6b1984e5278"><td class="mdescLeft">&#160;</td><td class="mdescRight">Block device I/O wait callback.  <a href="bdev_8h.html#a9c7e19e090b8cdb22e8fc6b1984e5278">More...</a><br /></td></tr>
 <tr class="separator:a9c7e19e090b8cdb22e8fc6b1984e5278"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -263,6 +266,12 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_set_opts</b>
 <tr class="memitem:aaf5fc830851a2eb0aa34bbb40cf5eac6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev_8h.html#aaf5fc830851a2eb0aa34bbb40cf5eac6">spdk_bdev_close</a> (struct spdk_bdev_desc *desc)</td></tr>
 <tr class="memdesc:aaf5fc830851a2eb0aa34bbb40cf5eac6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Close a previously opened block device.  <a href="bdev_8h.html#aaf5fc830851a2eb0aa34bbb40cf5eac6">More...</a><br /></td></tr>
 <tr class="separator:aaf5fc830851a2eb0aa34bbb40cf5eac6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac93dda3868b191be70ac7e1517422c1f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev_8h.html#ac93dda3868b191be70ac7e1517422c1f">spdk_for_each_bdev</a> (void *ctx, <a class="el" href="bdev_8h.html#a4163854db79e0e3b211dd72ca031fbb0">spdk_for_each_bdev_fn</a> fn)</td></tr>
+<tr class="memdesc:ac93dda3868b191be70ac7e1517422c1f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call the provided callback function for every registered block device.  <a href="bdev_8h.html#ac93dda3868b191be70ac7e1517422c1f">More...</a><br /></td></tr>
+<tr class="separator:ac93dda3868b191be70ac7e1517422c1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb680eb5205197872738e482204ab441"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev_8h.html#aeb680eb5205197872738e482204ab441">spdk_for_each_bdev_leaf</a> (void *ctx, <a class="el" href="bdev_8h.html#a4163854db79e0e3b211dd72ca031fbb0">spdk_for_each_bdev_fn</a> fn)</td></tr>
+<tr class="memdesc:aeb680eb5205197872738e482204ab441"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call the provided callback function for every block device without virtual block devices on top.  <a href="bdev_8h.html#aeb680eb5205197872738e482204ab441">More...</a><br /></td></tr>
+<tr class="separator:aeb680eb5205197872738e482204ab441"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac6418cfa0e9076ef7dafa7753c4c2028"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev_8h.html#ac6418cfa0e9076ef7dafa7753c4c2028">spdk_bdev_desc_get_bdev</a> (struct spdk_bdev_desc *desc)</td></tr>
 <tr class="memdesc:ac6418cfa0e9076ef7dafa7753c4c2028"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the bdev associated with a bdev descriptor.  <a href="bdev_8h.html#ac6418cfa0e9076ef7dafa7753c4c2028">More...</a><br /></td></tr>
 <tr class="separator:ac6418cfa0e9076ef7dafa7753c4c2028"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -656,6 +665,29 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_set_opts</b>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">remove_ctx</td><td>Context for the removed block device. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a4163854db79e0e3b211dd72ca031fbb0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4163854db79e0e3b211dd72ca031fbb0">&#9670;&nbsp;</a></span>spdk_for_each_bdev_fn</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef int(* spdk_for_each_bdev_fn) (void *ctx, struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *bdev)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Callback function for <a class="el" href="bdev_8h.html#ac93dda3868b191be70ac7e1517422c1f" title="Call the provided callback function for every registered block device.">spdk_for_each_bdev()</a> and <a class="el" href="bdev_8h.html#aeb680eb5205197872738e482204ab441" title="Call the provided callback function for every block device without virtual block devices on top.">spdk_for_each_bdev_leaf()</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ctx</td><td>Context passed to the callback. </td></tr>
+    <tr><td class="paramname">bdev</td><td>Block device the callback handles. </td></tr>
   </table>
   </dd>
 </dl>
@@ -3029,13 +3061,92 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_set_opts</b>
 
 </div>
 </div>
+<a id="ac93dda3868b191be70ac7e1517422c1f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac93dda3868b191be70ac7e1517422c1f">&#9670;&nbsp;</a></span>spdk_for_each_bdev()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_for_each_bdev </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>ctx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="bdev_8h.html#a4163854db79e0e3b211dd72ca031fbb0">spdk_for_each_bdev_fn</a>&#160;</td>
+          <td class="paramname"><em>fn</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Call the provided callback function for every registered block device. </p>
+<p>If fn returns negated errno, <a class="el" href="bdev_8h.html#ac93dda3868b191be70ac7e1517422c1f" title="Call the provided callback function for every registered block device.">spdk_for_each_bdev()</a> terminates iteration.</p>
+<p><a class="el" href="bdev_8h.html#ac93dda3868b191be70ac7e1517422c1f" title="Call the provided callback function for every registered block device.">spdk_for_each_bdev()</a> opens before and closes after executing the provided callback function for each bdev internally.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ctx</td><td>Context passed to the callback function. </td></tr>
+    <tr><td class="paramname">fn</td><td>Callback function for each block device.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 if operation is sucessful, or suitable errno value one of the callback returned otherwise. </dd></dl>
+
+</div>
+</div>
+<a id="aeb680eb5205197872738e482204ab441"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeb680eb5205197872738e482204ab441">&#9670;&nbsp;</a></span>spdk_for_each_bdev_leaf()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_for_each_bdev_leaf </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>ctx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="bdev_8h.html#a4163854db79e0e3b211dd72ca031fbb0">spdk_for_each_bdev_fn</a>&#160;</td>
+          <td class="paramname"><em>fn</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Call the provided callback function for every block device without virtual block devices on top. </p>
+<p><a class="el" href="bdev_8h.html#aeb680eb5205197872738e482204ab441" title="Call the provided callback function for every block device without virtual block devices on top.">spdk_for_each_bdev_leaf()</a> opens before and closes after executing the provided callback function for each unclaimed bdev internally.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ctx</td><td>Context passed to the callback function. </td></tr>
+    <tr><td class="paramname">fn</td><td>Callback funciton for each block device without virtual block devices on top.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 if operation is successful, or suitable errno value one of the callback returned otherwise. </dd></dl>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
 <ul>
-        <li class="footer">Generated on Mon Apr 4 2022 04:01:00 for SPDK by
+        <li class="footer">Generated on Tue Apr 5 2022 04:01:02 for SPDK by
         <a href="http://www.doxygen.org/index.html">doxygen</a> 1.9.1 </li>
 </ul>
 </div>
