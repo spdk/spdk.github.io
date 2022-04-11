@@ -1069,7 +1069,7 @@ var searchData=
   ['spdk_5fuuid_5ffmt_5flower_4132',['spdk_uuid_fmt_lower',['../uuid_8h.html#acb2ce1f550e94b3c1f5f9a62a9219ec8',1,'uuid.h']]],
   ['spdk_5fuuid_5fgenerate_4133',['spdk_uuid_generate',['../uuid_8h.html#a397f151075d3a0a5651221bd74c13c66',1,'uuid.h']]],
   ['spdk_5fuuid_5fparse_4134',['spdk_uuid_parse',['../uuid_8h.html#a8cd6b61828b9ff4d0abbae64c81d1262',1,'uuid.h']]],
-  ['spdk_5fvhost_5fblk_5fconstruct_4135',['spdk_vhost_blk_construct',['../vhost_8h.html#a2095d6d1e85f5841375ac04b5cff50ec',1,'vhost.h']]],
+  ['spdk_5fvhost_5fblk_5fconstruct_4135',['spdk_vhost_blk_construct',['../vhost_8h.html#a31bf721b7ecbe86e38cfa5f82510d746',1,'vhost.h']]],
   ['spdk_5fvhost_5fconfig_5fjson_4136',['spdk_vhost_config_json',['../vhost_8h.html#a256ce5abb39df6f4627e3fac7863998f',1,'vhost.h']]],
   ['spdk_5fvhost_5fdev_5ffind_4137',['spdk_vhost_dev_find',['../vhost_8h.html#a08ca8ab0522c25869c31c163175e6299',1,'vhost.h']]],
   ['spdk_5fvhost_5fdev_5fget_5fcpumask_4138',['spdk_vhost_dev_get_cpumask',['../vhost_8h.html#a6002d25166c3003efd3b6edb51cb84c0',1,'vhost.h']]],

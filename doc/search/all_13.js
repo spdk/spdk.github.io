@@ -1778,7 +1778,7 @@ var searchData=
   ['spdk_5fversion_5fpatch_2422',['SPDK_VERSION_PATCH',['../version_8h.html#a89ca2b430a03f2a8b8a5f2a31c1ae647',1,'version.h']]],
   ['spdk_5fversion_5fstring_2423',['SPDK_VERSION_STRING',['../version_8h.html#a044fb88313d084d910632cea5a06c620',1,'version.h']]],
   ['spdk_5fversion_5fsuffix_2424',['SPDK_VERSION_SUFFIX',['../version_8h.html#a1636e53b1038906ece3a9addb0473bf0',1,'version.h']]],
-  ['spdk_5fvhost_5fblk_5fconstruct_2425',['spdk_vhost_blk_construct',['../vhost_8h.html#a2095d6d1e85f5841375ac04b5cff50ec',1,'vhost.h']]],
+  ['spdk_5fvhost_5fblk_5fconstruct_2425',['spdk_vhost_blk_construct',['../vhost_8h.html#a31bf721b7ecbe86e38cfa5f82510d746',1,'vhost.h']]],
   ['spdk_5fvhost_5fconfig_5fjson_2426',['spdk_vhost_config_json',['../vhost_8h.html#a256ce5abb39df6f4627e3fac7863998f',1,'vhost.h']]],
   ['spdk_5fvhost_5fdev_5ffind_2427',['spdk_vhost_dev_find',['../vhost_8h.html#a08ca8ab0522c25869c31c163175e6299',1,'vhost.h']]],
   ['spdk_5fvhost_5fdev_5fget_5fcpumask_2428',['spdk_vhost_dev_get_cpumask',['../vhost_8h.html#a6002d25166c3003efd3b6edb51cb84c0',1,'vhost.h']]],
