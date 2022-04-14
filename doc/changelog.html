@@ -92,6 +92,8 @@ $(document).ready(function(){initNavTree('changelog.html',''); initResizable(); 
 <div class="textblock"><p><a class="anchor" id="md_changelog"></a> </p>
 <h1><a class="anchor" id="changelog-v22-05"></a>
 v22.05: (Upcoming Release)</h1>
+<h2>sock</h2>
+<p>A new option <code>ack_timeout</code> was added to the <code><a class="el" href="structspdk__sock__opts.html" title="Spdk socket initialization options.">spdk_sock_opts</a></code> structure.</p>
 <h2>util</h2>
 <p>A new parameter <code>bounce_iovcnt</code> was added to <code>spdk_dif_generate_copy</code> and <code>spdk_dif_verify_copy</code>. The <code>bounce_iovcnt</code> is used to specify the number of bounce_iov to support multiple block-aligned fragment copies.</p>
 <h2>bdev</h2>
@@ -1476,7 +1478,7 @@ v16.06: NVMf userspace target</h1>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
 <ul>
-        <li class="footer">Generated on Wed Apr 13 2022 04:01:01 for SPDK by
+        <li class="footer">Generated on Thu Apr 14 2022 04:01:02 for SPDK by
         <a href="http://www.doxygen.org/index.html">doxygen</a> 1.9.1 </li>
 </ul>
 </div>
