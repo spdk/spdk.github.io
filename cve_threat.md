@@ -52,7 +52,7 @@ CVE Sub-Team Members:
 * Changpeng Liu, changpeng.liu@intel.com
 * Paul Luse, paul.e.luse@intel.com
 * Alexey Marchuk, alexeymar@nvidia.com
-* Shuhei Matsumoto, shuhei.matsumoto.xt@hitachi.com
+* Shuhei Matsumoto, smatsumoto@nvidia.com
 * Konrad Sztyber, konrad.sztyber@intel.com
 * Ben Walker, benjamin.walker@intel.com
 * Anna Wan, qun.wan@intel.com
