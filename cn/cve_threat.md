@@ -35,7 +35,7 @@ CVE小组成员联系方式：
 * Changpeng Liu, changpeng.liu@intel.com
 * Paul Luse, paul.e.luse@intel.com
 * Alexey Marchuk, alexeymar@nvidia.com
-* Shuhei Matsumoto, shuhei.matsumoto.xt@hitachi.com
+* Shuhei Matsumoto, smatsumoto@nvidia.com
 * Ben Walker, benjamin.walker@intel.com
 * Anna Wan, qun.wan@intel.com
 * Tomek Zawadzki, tomasz.zawadzki@intel.com
