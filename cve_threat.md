@@ -47,8 +47,8 @@ all, they should move to the new release.
 
 CVE Sub-Team Members:
 
-* Felipe Francosi, felipe@nutanix.com
 * Jim Harris, james.r.harris@intel.com
+* John Levon, john.levon@nutanix.com
 * Changpeng Liu, changpeng.liu@intel.com
 * Paul Luse, paul.e.luse@intel.com
 * Alexey Marchuk, alexeymar@nvidia.com
