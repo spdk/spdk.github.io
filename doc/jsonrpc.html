@@ -2373,7 +2373,7 @@ bdev_nvme_set_options</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">bdev_retry_count   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">The number of attempts per I/O in the bdev layer before an I/O fails. -1 means infinite retries.    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">transport_ack_timeout   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">Time to wait ack until packet retransmission. RDMA specific. Range 0-31 where 0 is driver-specific default value.    </td></tr>
+<td class="markdownTableBodyNone">transport_ack_timeout   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">Time to wait ack until retransmission for RDMA or connection close for TCP. Range 0-31 where 0 means use default.    </td></tr>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">ctrlr_loss_timeout_sec   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">Time to wait until ctrlr is reconnected before deleting ctrlr. -1 means infinite reconnects. 0 means no reconnect.    </td></tr>
 <tr class="markdownTableRowEven">
@@ -7635,7 +7635,7 @@ bdev_nvme_remove_error_injection</h2>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
 <ul>
-        <li class="footer">Generated on Tue Apr 19 2022 04:01:03 for SPDK by
+        <li class="footer">Generated on Wed Apr 20 2022 04:01:02 for SPDK by
         <a href="http://www.doxygen.org/index.html">doxygen</a> 1.9.1 </li>
 </ul>
 </div>

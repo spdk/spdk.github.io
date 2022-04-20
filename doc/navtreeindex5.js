@@ -1,9 +1,5 @@
 var NAVTREEINDEX5 =
 {
-"ioat__spec_8h.html#abe11ac520cafc0ecbfd7389608d01b56":[15,0,31,34],
-"ioat__spec_8h.html#ac127fc883ba5322b4ed702f128e69644":[15,0,31,32],
-"ioat__spec_8h.html#ac20a02f512ee201e0ccfab67e42c4124":[15,0,31,31],
-"ioat__spec_8h.html#ac21b86520103171bb2b8845536b580e4":[15,0,31,38],
 "ioat__spec_8h.html#ac8e2123ef0becc284074f97470b6fcca":[15,0,31,44],
 "ioat__spec_8h.html#acf92e6fa4c936c453363f5ab3d8dac17":[15,0,31,24],
 "ioat__spec_8h.html#ad6decf15f582db03646116195bf1795f":[15,0,31,16],
@@ -249,5 +245,9 @@ var NAVTREEINDEX5 =
 "jsonrpc.html#rpc_bdev_compress_create":[3,9,5,9],
 "jsonrpc.html#rpc_bdev_compress_delete":[3,9,5,10],
 "jsonrpc.html#rpc_bdev_compress_get_orphans":[3,9,5,11],
-"jsonrpc.html#rpc_bdev_compress_set_pmd":[3,9,5,12]
+"jsonrpc.html#rpc_bdev_compress_set_pmd":[3,9,5,12],
+"jsonrpc.html#rpc_bdev_crypto_create":[3,9,5,13],
+"jsonrpc.html#rpc_bdev_crypto_delete":[3,9,5,14],
+"jsonrpc.html#rpc_bdev_delay_create":[3,9,5,50],
+"jsonrpc.html#rpc_bdev_delay_delete":[3,9,5,51]
 };
