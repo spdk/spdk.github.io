@@ -100,6 +100,7 @@ v22.05: (Upcoming Release)</h1>
 <p>Removed deprecated spdk_bdev_module_finish_done(). Use <a class="el" href="bdev__module_8h.html#a13dae91c3223ea829a78b979d34018c0" title="Indicate that the module finish has completed.">spdk_bdev_module_fini_done()</a> instead.</p>
 <p>A new API <code>spdk_bdev_unregister_by_name</code> was added to handle race conditions correctly.</p>
 <p>New APIs, <code>spdk_for_each_bdev</code> and <code>spdk_for_each_bdev_leaf</code>, were added to provide iteration safe for race conditions.</p>
+<p>A new RPC <code>bdev_nvme_get_io_paths</code> was added to get all active I/O paths.</p>
 <h2>idxd</h2>
 <p>A new parameter <code>flags</code> was added to all low level submission and preparation APIs to enable the caller to pass operation flags per the DSA specification.</p>
 <p>A new flag 'SPDK_IDXD_FLAG_PERSISTENT' was added to let DSA know that the destination is persistent.</p>
@@ -1478,7 +1479,7 @@ v16.06: NVMf userspace target</h1>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
 <ul>
-        <li class="footer">Generated on Thu Apr 21 2022 04:01:02 for SPDK by
+        <li class="footer">Generated on Fri Apr 22 2022 04:01:15 for SPDK by
         <a href="http://www.doxygen.org/index.html">doxygen</a> 1.9.1 </li>
 </ul>
 </div>

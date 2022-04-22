@@ -2541,7 +2541,8 @@ bdev_nvme_get_controllers</h2>
 <div class="line">      &quot;trid&quot;: {</div>
 <div class="line">        &quot;trtype&quot;: &quot;PCIe&quot;,</div>
 <div class="line">        &quot;traddr&quot;: &quot;0000:05:00.0&quot;</div>
-<div class="line">      }</div>
+<div class="line">      },</div>
+<div class="line">      &quot;cntlid&quot;: 0</div>
 <div class="line">    }</div>
 <div class="line">  ]</div>
 <div class="line">}</div>
@@ -2690,6 +2691,47 @@ bdev_nvme_stop_discovery</h2>
 <div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
 <div class="line">  &quot;id&quot;: 1,</div>
 <div class="line">  &quot;result&quot;: true</div>
+<div class="line">}</div>
+</div><!-- fragment --><h2><a class="anchor" id="rpc_bdev_nvme_get_io_paths"></a>
+bdev_nvme_get_io_paths</h2>
+<p>Display all or the specified NVMe bdev's active I/O paths.</p>
+<h3>Parameters</h3>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Name of the NVMe bdev   </td></tr>
+</table>
+<h3>Example</h3>
+<p>Example request:</p>
+<div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
+<div class="line">  &quot;method&quot;: &quot;bdev_nvme_get_io_paths&quot;,</div>
+<div class="line">  &quot;id&quot;: 1,</div>
+<div class="line">  &quot;params&quot;: {</div>
+<div class="line">    &quot;name&quot;: &quot;Nvme0n1&quot;</div>
+<div class="line">  }</div>
+<div class="line">}</div>
+</div><!-- fragment --><p>Example response:</p>
+<div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
+<div class="line">  &quot;id&quot;: 1,</div>
+<div class="line">  &quot;result&quot;: {</div>
+<div class="line">    &quot;poll_groups&quot;: [</div>
+<div class="line">      {</div>
+<div class="line">        &quot;thread&quot;: &quot;app_thread&quot;,</div>
+<div class="line">        &quot;io_paths&quot;: [</div>
+<div class="line">          {</div>
+<div class="line">            &quot;bdev_name&quot;: &quot;Nvme0n1&quot;,</div>
+<div class="line">            &quot;cntlid&quot;: 0,</div>
+<div class="line">            &quot;current&quot;: true,</div>
+<div class="line">            &quot;connected&quot;: true,</div>
+<div class="line">            &quot;accessible&quot;: true</div>
+<div class="line">          }</div>
+<div class="line">        ]</div>
+<div class="line">      }</div>
+<div class="line">    ]</div>
+<div class="line">  }</div>
 <div class="line">}</div>
 </div><!-- fragment --><h2><a class="anchor" id="rpc_bdev_nvme_cuse_register"></a>
 bdev_nvme_cuse_register</h2>
@@ -7637,7 +7679,7 @@ bdev_nvme_remove_error_injection</h2>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
 <ul>
-        <li class="footer">Generated on Thu Apr 21 2022 04:01:02 for SPDK by
+        <li class="footer">Generated on Fri Apr 22 2022 04:01:15 for SPDK by
         <a href="http://www.doxygen.org/index.html">doxygen</a> 1.9.1 </li>
 </ul>
 </div>
