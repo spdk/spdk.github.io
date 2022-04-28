@@ -104,6 +104,7 @@ var NAVTREEINDEX26 =
 "structspdk__scsi__vpd__page.html#ac62f5b7a0b08a2ec4572bf002ce29399":[14,0,336,2],
 "structspdk__scsi__vpd__page.html#ae6185e80a408f83694f930378d8a5c03":[14,0,336,3],
 "structspdk__sock__impl__opts.html":[14,0,337],
+"structspdk__sock__impl__opts.html#a012ab72a1bfe745ce5239819c58e5cfc":[14,0,337,8],
 "structspdk__sock__impl__opts.html#a0e1eab74b0d7c71ff588ccf888c647ee":[14,0,337,5],
 "structspdk__sock__impl__opts.html#a2bbb2ddb2593061fed80a7b50b110855":[14,0,337,4],
 "structspdk__sock__impl__opts.html#a35575361b08cbdbd502ee741fadfa46b":[14,0,337,2],
@@ -123,8 +124,9 @@ var NAVTREEINDEX26 =
 "structspdk__sock__request.html#a38309e0c8fd9b9defcf70a33137feda1":[14,0,339,1],
 "structspdk__sock__request.html#a4722314bfc95b97c9f02d3d7ac3cc9d2":[14,0,339,4],
 "structspdk__sock__request_1_1____sock__request__internal.html":[14,0,339,0],
+"structspdk__sock__request_1_1____sock__request__internal.html#a1f464d68ec76443f01520a04cc030176":[14,0,339,0,1],
 "structspdk__sock__request_1_1____sock__request__internal.html#a8cce9cfe205d8ac5d69af664aed6c753":[14,0,339,0,0],
-"structspdk__sock__request_1_1____sock__request__internal.html#aa8e991746081b335c62e2d7d81d96bce":[14,0,339,0,1],
+"structspdk__sock__request_1_1____sock__request__internal.html#aa8e991746081b335c62e2d7d81d96bce":[14,0,339,0,2],
 "structspdk__thread__stats.html":[14,0,340],
 "structspdk__thread__stats.html#a44439fc6eaac867fb8073114cbf7d922":[14,0,340,1],
 "structspdk__thread__stats.html#a78d02e3ab20fa99a5e84132920233472":[14,0,340,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX26 =
 "structvfio__user__header.html#ac26f57c2a4710128eb10398b4ab71405":[14,0,361,2],
 "structvfio__user__header.html#acaaa5241337cb834839b75e01e27f294":[14,0,361,8],
 "structvfio__user__irq__info.html":[14,0,362],
-"structvfio__user__irq__info.html#ade42fc56773d521b17dcc9ecdd2638a7":[14,0,362,0],
-"structvfio__user__region__access.html":[14,0,363],
-"structvfio__user__region__access.html#a0336183516d49390e0855e4e104587e2":[14,0,363,3]
+"structvfio__user__irq__info.html#ade42fc56773d521b17dcc9ecdd2638a7":[14,0,362,0]
 };

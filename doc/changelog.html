@@ -129,6 +129,10 @@ v22.05: (Upcoming Release)</h1>
 <p>Added <code>dynamic</code> scheduler options: load_limit, core_limit, core_busy. Their descriptions are available in JSON-RPC document, in section <a href="jsonrpc.html#rpc_framework_set_scheduler">framework_set_scheduler</a>.</p>
 <h2>raid</h2>
 <p>Add concat as a special raid module. The concat module could create a virtual bdev. The virtual bdev combines multiple underlying bdevs together. The layout of the underlying bdevs is one after another. The concat bdev is extendable. When the free space of the concat bdev is not enough, the user can deconstruct the concat bdev, then reconstruct it with an additional underlying bdev.</p>
+<h2>sock</h2>
+<p>Allow MSG_ZEROCOPY flag to be set or not according to data size, which can be enabled and set by setting "zerocopy_threshold". zerocopy_threshold = 0 means disable this function; zerocopy_threshold &gt; 0 means enable it and use this value as the threshold.</p>
+<h2>rpc</h2>
+<p>Introduced <code>zerocopy_threshold</code> to enable zerocopy on send for server sockets according to data size to be flushed.</p>
 <h1>v22.01</h1>
 <h2>accel</h2>
 <p>The batching capability was removed. Batching is now considered an implementation detail of the low level drivers.</p>
@@ -1479,7 +1483,7 @@ v16.06: NVMf userspace target</h1>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
 <ul>
-        <li class="footer">Generated on Wed Apr 27 2022 04:00:58 for SPDK by
+        <li class="footer">Generated on Thu Apr 28 2022 04:01:01 for SPDK by
         <a href="http://www.doxygen.org/index.html">doxygen</a> 1.9.1 </li>
 </ul>
 </div>

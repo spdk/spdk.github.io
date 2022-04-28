@@ -121,6 +121,9 @@ Data Fields</h2></td></tr>
 <tr class="memitem:a2bbb2ddb2593061fed80a7b50b110855"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__sock__impl__opts.html#a2bbb2ddb2593061fed80a7b50b110855">enable_zerocopy_send_client</a></td></tr>
 <tr class="memdesc:a2bbb2ddb2593061fed80a7b50b110855"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable or disable use of zero copy flow on send for client sockets.  <a href="structspdk__sock__impl__opts.html#a2bbb2ddb2593061fed80a7b50b110855">More...</a><br /></td></tr>
 <tr class="separator:a2bbb2ddb2593061fed80a7b50b110855"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a012ab72a1bfe745ce5239819c58e5cfc"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__sock__impl__opts.html#a012ab72a1bfe745ce5239819c58e5cfc">zerocopy_threshold</a></td></tr>
+<tr class="memdesc:a012ab72a1bfe745ce5239819c58e5cfc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set zerocopy threshold in bytes.  <a href="structspdk__sock__impl__opts.html#a012ab72a1bfe745ce5239819c58e5cfc">More...</a><br /></td></tr>
+<tr class="separator:a012ab72a1bfe745ce5239819c58e5cfc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>SPDK socket implementation options. </p>
@@ -262,6 +265,23 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
+<a id="a012ab72a1bfe745ce5239819c58e5cfc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a012ab72a1bfe745ce5239819c58e5cfc">&#9670;&nbsp;</a></span>zerocopy_threshold</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t spdk_sock_impl_opts::zerocopy_threshold</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set zerocopy threshold in bytes. </p>
+<p>A consecutive sequence of requests' iovecs that fall below this threshold may be sent without zerocopy flag set. </p>
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li><a class="el" href="sock_8h.html">sock.h</a></li>
 </ul>
@@ -271,7 +291,7 @@ Data Fields</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
 <ul>
-        <li class="footer">Generated on Wed Apr 27 2022 04:00:58 for SPDK by
+        <li class="footer">Generated on Thu Apr 28 2022 04:01:02 for SPDK by
         <a href="http://www.doxygen.org/index.html">doxygen</a> 1.9.1 </li>
 </ul>
 </div>
