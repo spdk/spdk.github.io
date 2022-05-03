@@ -70,6 +70,7 @@ var pci__ids_8h =
     [ "SPDK_PCI_CLASS_ANY_ID", "pci__ids_8h.html#a042ba8450a6a6491a6046f8dc6b058f4", null ],
     [ "SPDK_PCI_CLASS_NVME", "pci__ids_8h.html#a787047f67cc4dc5cdfb478bcd9066db2", null ],
     [ "SPDK_PCI_VID_CNEXLABS", "pci__ids_8h.html#a45e560f5fd613e342084684052e9761d", null ],
+    [ "SPDK_PCI_VID_HUAWEI", "pci__ids_8h.html#a358bef85e1f6bbdfe81165b6780b3518", null ],
     [ "SPDK_PCI_VID_INTEL", "pci__ids_8h.html#af3e3907a2992839573168aa160157029", null ],
     [ "SPDK_PCI_VID_MEMBLAZE", "pci__ids_8h.html#a53070d685a30ad4d9cf5af78bc9d2afd", null ],
     [ "SPDK_PCI_VID_NUTANIX", "pci__ids_8h.html#a51b3a12cb0d617d2dfdbbf006e00871e", null ],
