@@ -1,5 +1,7 @@
 var NAVTREEINDEX12 =
 {
+"nvmf__spec_8h.html#a92be3e3b482cfb85521cea178af1f3ef":[15,0,47,96],
+"nvmf__spec_8h.html#a941c35b69297a259fb285e55e9efdbbb":[15,0,47,93],
 "nvmf__spec_8h.html#a9622eb1694074ca071754989ebb8ff78":[15,0,47,86],
 "nvmf__spec_8h.html#a9909d207f41934dacbc0917f083f2d43":[15,0,47,62],
 "nvmf__spec_8h.html#a9909d207f41934dacbc0917f083f2d43a07d9bc576d05772139a68c6e02e48429":[15,0,47,62,1],
@@ -247,7 +249,5 @@ var NAVTREEINDEX12 =
 "scheduler.html":[5,1],
 "scsi_8h.html":[15,0,52],
 "scsi_8h.html#a09579688597a2ab594671a00b20fd2cd":[15,0,52,23],
-"scsi_8h.html#a0ac8f6137429f32fa3506df2b92429ff":[15,0,52,56],
-"scsi_8h.html#a0b4dab3919530239f19a554405449219":[15,0,52,24],
-"scsi_8h.html#a1233743afd07fe9d572327a1b37f8229":[15,0,52,35]
+"scsi_8h.html#a0ac8f6137429f32fa3506df2b92429ff":[15,0,52,56]
 };

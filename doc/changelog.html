@@ -101,6 +101,8 @@ v22.05: (Upcoming Release)</h1>
 <p>A new API <code>spdk_bdev_unregister_by_name</code> was added to handle race conditions correctly.</p>
 <p>New APIs, <code>spdk_for_each_bdev</code> and <code>spdk_for_each_bdev_leaf</code>, were added to provide iteration safe for race conditions.</p>
 <p>A new RPC <code>bdev_nvme_get_io_paths</code> was added to get all active I/O paths.</p>
+<p>A new RPC <code>bdev_nvme_set_preferred_path</code> was added to set preferred I/O path for an NVMe bdev when in multipath mode. This RPC does not support NVMe bdevs in failover mode.</p>
+<p>A new RPC <code>bdev_nvme_set_multipath_policy</code> was added to set multipath policy of a NVMe bdev in multipath mode.</p>
 <h2>idxd</h2>
 <p>A new parameter <code>flags</code> was added to all low level submission and preparation APIs to enable the caller to pass operation flags per the DSA specification.</p>
 <p>A new flag 'SPDK_IDXD_FLAG_PERSISTENT' was added to let DSA know that the destination is persistent.</p>

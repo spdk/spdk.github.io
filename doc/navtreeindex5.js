@@ -248,6 +248,6 @@ var NAVTREEINDEX5 =
 "jsonrpc.html#rpc_bdev_compress_set_pmd":[3,9,5,12],
 "jsonrpc.html#rpc_bdev_crypto_create":[3,9,5,13],
 "jsonrpc.html#rpc_bdev_crypto_delete":[3,9,5,14],
-"jsonrpc.html#rpc_bdev_delay_create":[3,9,5,51],
-"jsonrpc.html#rpc_bdev_delay_delete":[3,9,5,52]
+"jsonrpc.html#rpc_bdev_delay_create":[3,9,5,53],
+"jsonrpc.html#rpc_bdev_delay_delete":[3,9,5,54]
 };
