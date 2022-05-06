@@ -208,6 +208,7 @@ var user_guides =
         [ "bdev_nvme_reset_controller", "jsonrpc.html#rpc_bdev_nvme_reset_controller", null ],
         [ "bdev_nvme_start_discovery", "jsonrpc.html#rpc_bdev_nvme_start_discovery", null ],
         [ "bdev_nvme_stop_discovery", "jsonrpc.html#rpc_bdev_nvme_stop_discovery", null ],
+        [ "bdev_nvme_get_discovery_info", "jsonrpc.html#rpc_bdev_nvme_get_discovery_info", null ],
         [ "bdev_nvme_get_io_paths", "jsonrpc.html#rpc_bdev_nvme_get_io_paths", null ],
         [ "bdev_nvme_set_preferred_path", "jsonrpc.html#rpc_bdev_nvme_set_preferred_path", null ],
         [ "bdev_nvme_set_multipath_policy", "jsonrpc.html#rpc_bdev_nvme_set_multipath_policy", null ],

@@ -2692,6 +2692,33 @@ bdev_nvme_stop_discovery</h2>
 <div class="line">  &quot;id&quot;: 1,</div>
 <div class="line">  &quot;result&quot;: true</div>
 <div class="line">}</div>
+</div><!-- fragment --><h2><a class="anchor" id="rpc_bdev_nvme_get_discovery_info"></a>
+bdev_nvme_get_discovery_info</h2>
+<p>Get information about the discovery service.</p>
+<h3>Example</h3>
+<p>Example request: </p><div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
+<div class="line">  &quot;method&quot;: &quot;bdev_nvme_get_discovery_info&quot;,</div>
+<div class="line">  &quot;id&quot;: 1</div>
+<div class="line">}</div>
+</div><!-- fragment --><p>Example response:</p>
+<div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
+<div class="line">  &quot;id&quot;: 1,</div>
+<div class="line">  &quot;result&quot;: [</div>
+<div class="line">    {</div>
+<div class="line">      &quot;name&quot;: &quot;nvme-disc&quot;,</div>
+<div class="line">      &quot;trid&quot;: {</div>
+<div class="line">        &quot;trtype&quot;: &quot;TCP&quot;,</div>
+<div class="line">        &quot;adrfam&quot;: &quot;IPv4&quot;,</div>
+<div class="line">        &quot;traddr&quot;: &quot;127.0.0.1&quot;,</div>
+<div class="line">        &quot;trsvcid&quot;: &quot;8009&quot;,</div>
+<div class="line">        &quot;subnqn&quot;: &quot;nqn.2014-08.org.nvmexpress.discovery&quot;</div>
+<div class="line">      },</div>
+<div class="line">      &quot;referrals&quot;: []</div>
+<div class="line">    }</div>
+<div class="line">  ]</div>
+<div class="line">}</div>
 </div><!-- fragment --><h2><a class="anchor" id="rpc_bdev_nvme_get_io_paths"></a>
 bdev_nvme_get_io_paths</h2>
 <p>Display all or the specified NVMe bdev's active I/O paths.</p>
