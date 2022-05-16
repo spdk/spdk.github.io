@@ -1,6 +1,7 @@
 var blob_8h =
 [
     [ "spdk_bs_dev_cb_args", "structspdk__bs__dev__cb__args.html", "structspdk__bs__dev__cb__args" ],
+    [ "spdk_blob_ext_io_opts", "structspdk__blob__ext__io__opts.html", "structspdk__blob__ext__io__opts" ],
     [ "spdk_bs_dev", "structspdk__bs__dev.html", "structspdk__bs__dev" ],
     [ "spdk_bs_type", "structspdk__bs__type.html", "structspdk__bs__type" ],
     [ "spdk_bs_opts", "structspdk__bs__opts.html", "structspdk__bs__opts" ],
@@ -39,10 +40,12 @@ var blob_8h =
     [ "spdk_blob_get_xattr_value", "blob_8h.html#afe49b3a95d13aed755726bed94f79344", null ],
     [ "spdk_blob_io_read", "blob_8h.html#a8753efc66a7bc29a63ae74730959b9c1", null ],
     [ "spdk_blob_io_readv", "blob_8h.html#ade242e483bcb3a50bb987acf2e0dfd4e", null ],
+    [ "spdk_blob_io_readv_ext", "blob_8h.html#a3f13ed71f6a04b33ef902ca0e320015f", null ],
     [ "spdk_blob_io_unmap", "blob_8h.html#a2dea7bc3f6cc4dcd2b5d039b14b8640a", null ],
     [ "spdk_blob_io_write", "blob_8h.html#a2835355d4266676fa6db5c987c506a77", null ],
     [ "spdk_blob_io_write_zeroes", "blob_8h.html#a0291498c4cac92556e0e7e7bf286bda6", null ],
     [ "spdk_blob_io_writev", "blob_8h.html#afa2fed3283426fb3ddf6abc61a44266b", null ],
+    [ "spdk_blob_io_writev_ext", "blob_8h.html#a6e6bb00cd582a2178f5f97479e67e9c3", null ],
     [ "spdk_blob_is_clone", "blob_8h.html#a4f057419129eae779eca2774f135718e", null ],
     [ "spdk_blob_is_read_only", "blob_8h.html#aee905d8842cf578dabd897ae68acc142", null ],
     [ "spdk_blob_is_snapshot", "blob_8h.html#afc0d1f620d9e5d1e740ee4c4e456c34e", null ],

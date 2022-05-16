@@ -1,5 +1,10 @@
 var NAVTREEINDEX6 =
 {
+"jsonrpc.html#rpc_bdev_compress_set_pmd":[3,9,5,12],
+"jsonrpc.html#rpc_bdev_crypto_create":[3,9,5,13],
+"jsonrpc.html#rpc_bdev_crypto_delete":[3,9,5,14],
+"jsonrpc.html#rpc_bdev_delay_create":[3,9,5,54],
+"jsonrpc.html#rpc_bdev_delay_delete":[3,9,5,55],
 "jsonrpc.html#rpc_bdev_delay_update_latency":[3,9,5,56],
 "jsonrpc.html#rpc_bdev_enable_histogram":[3,9,5,5],
 "jsonrpc.html#rpc_bdev_error_create":[3,9,5,57],
@@ -244,10 +249,5 @@ var NAVTREEINDEX6 =
 "libraries.html#module":[3,1,0,1],
 "libraries.html#naming":[3,1,1,1],
 "libraries.html#shared_objects":[3,1,2],
-"libraries.html#so_linking":[3,1,2,1],
-"libraries.html#static_objects":[3,1,3],
-"libraries.html#structure":[3,1,0],
-"libraries.html#versioning":[3,1,2,0],
-"likely_8h.html":[15,0,35],
-"likely_8h.html#a568e75eb7097ecf9ea2c735abc9f5844":[15,0,35,0]
+"libraries.html#so_linking":[3,1,2,1]
 };

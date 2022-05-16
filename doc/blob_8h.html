@@ -103,6 +103,9 @@ $(document).ready(function(){initNavTree('blob_8h.html',''); initResizable(); })
 Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bs__dev__cb__args.html">spdk_bs_dev_cb_args</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__blob__ext__io__opts.html">spdk_blob_ext_io_opts</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Structure with optional IO request parameters The content of this structure must be valid until the IO request is completed.  <a href="structspdk__blob__ext__io__opts.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bs__dev.html">spdk_bs_dev</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bs__type.html">spdk_bs_type</a></td></tr>
@@ -300,6 +303,12 @@ Functions</h2></td></tr>
 <tr class="memitem:ade242e483bcb3a50bb987acf2e0dfd4e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blob_8h.html#ade242e483bcb3a50bb987acf2e0dfd4e">spdk_blob_io_readv</a> (struct spdk_blob *blob, struct spdk_io_channel *channel, struct iovec *iov, int iovcnt, uint64_t offset, uint64_t length, <a class="el" href="blob_8h.html#aca5253109581a768e06dd197429ef9e1">spdk_blob_op_complete</a> cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:ade242e483bcb3a50bb987acf2e0dfd4e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read 'length' io_units starting at 'offset' io_units into the blob into the memory described by 'iov'.  <a href="blob_8h.html#ade242e483bcb3a50bb987acf2e0dfd4e">More...</a><br /></td></tr>
 <tr class="separator:ade242e483bcb3a50bb987acf2e0dfd4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e6bb00cd582a2178f5f97479e67e9c3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blob_8h.html#a6e6bb00cd582a2178f5f97479e67e9c3">spdk_blob_io_writev_ext</a> (struct spdk_blob *blob, struct spdk_io_channel *channel, struct iovec *iov, int iovcnt, uint64_t offset, uint64_t length, <a class="el" href="blob_8h.html#aca5253109581a768e06dd197429ef9e1">spdk_blob_op_complete</a> cb_fn, void *cb_arg, struct <a class="el" href="structspdk__blob__ext__io__opts.html">spdk_blob_ext_io_opts</a> *io_opts)</td></tr>
+<tr class="memdesc:a6e6bb00cd582a2178f5f97479e67e9c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write the data described by 'iov' to 'length' io_units beginning at 'offset' io_units into the blob.  <a href="blob_8h.html#a6e6bb00cd582a2178f5f97479e67e9c3">More...</a><br /></td></tr>
+<tr class="separator:a6e6bb00cd582a2178f5f97479e67e9c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f13ed71f6a04b33ef902ca0e320015f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blob_8h.html#a3f13ed71f6a04b33ef902ca0e320015f">spdk_blob_io_readv_ext</a> (struct spdk_blob *blob, struct spdk_io_channel *channel, struct iovec *iov, int iovcnt, uint64_t offset, uint64_t length, <a class="el" href="blob_8h.html#aca5253109581a768e06dd197429ef9e1">spdk_blob_op_complete</a> cb_fn, void *cb_arg, struct <a class="el" href="structspdk__blob__ext__io__opts.html">spdk_blob_ext_io_opts</a> *io_opts)</td></tr>
+<tr class="memdesc:a3f13ed71f6a04b33ef902ca0e320015f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read 'length' io_units starting at 'offset' io_units into the blob into the memory described by 'iov'.  <a href="blob_8h.html#a3f13ed71f6a04b33ef902ca0e320015f">More...</a><br /></td></tr>
+<tr class="separator:a3f13ed71f6a04b33ef902ca0e320015f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2dea7bc3f6cc4dcd2b5d039b14b8640a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blob_8h.html#a2dea7bc3f6cc4dcd2b5d039b14b8640a">spdk_blob_io_unmap</a> (struct spdk_blob *blob, struct spdk_io_channel *channel, uint64_t offset, uint64_t length, <a class="el" href="blob_8h.html#aca5253109581a768e06dd197429ef9e1">spdk_blob_op_complete</a> cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:a2dea7bc3f6cc4dcd2b5d039b14b8640a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unmap 'length' io_units beginning at 'offset' io_units on the blob as unused.  <a href="blob_8h.html#a2dea7bc3f6cc4dcd2b5d039b14b8640a">More...</a><br /></td></tr>
 <tr class="separator:a2dea7bc3f6cc4dcd2b5d039b14b8640a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -978,6 +987,93 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a3f13ed71f6a04b33ef902ca0e320015f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f13ed71f6a04b33ef902ca0e320015f">&#9670;&nbsp;</a></span>spdk_blob_io_readv_ext()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_blob_io_readv_ext </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_blob *&#160;</td>
+          <td class="paramname"><em>blob</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct spdk_io_channel *&#160;</td>
+          <td class="paramname"><em>channel</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct iovec *&#160;</td>
+          <td class="paramname"><em>iov</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iovcnt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>offset</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>length</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="blob_8h.html#aca5253109581a768e06dd197429ef9e1">spdk_blob_op_complete</a>&#160;</td>
+          <td class="paramname"><em>cb_fn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>cb_arg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structspdk__blob__ext__io__opts.html">spdk_blob_ext_io_opts</a> *&#160;</td>
+          <td class="paramname"><em>io_opts</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Read 'length' io_units starting at 'offset' io_units into the blob into the memory described by 'iov'. </p>
+<p>Accepts extended IO request options</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">blob</td><td>Blob to read. </td></tr>
+    <tr><td class="paramname">channel</td><td>I/O channel used to submit requests. </td></tr>
+    <tr><td class="paramname">iov</td><td>The pointer points to an array of iovec structures. </td></tr>
+    <tr><td class="paramname">iovcnt</td><td>The number of buffers. </td></tr>
+    <tr><td class="paramname">offset</td><td>Offset is in io units from the beginning of the blob. </td></tr>
+    <tr><td class="paramname">length</td><td>Size of data in io units. </td></tr>
+    <tr><td class="paramname">cb_fn</td><td>Called when the operation is complete. </td></tr>
+    <tr><td class="paramname">cb_arg</td><td>Argument passed to function cb_fn. </td></tr>
+    <tr><td class="paramname">io_opts</td><td>Optional extended IO request options </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a2dea7bc3f6cc4dcd2b5d039b14b8640a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2dea7bc3f6cc4dcd2b5d039b14b8640a">&#9670;&nbsp;</a></span>spdk_blob_io_unmap()</h2>
 
@@ -1254,6 +1350,93 @@ Functions</h2></td></tr>
     <tr><td class="paramname">length</td><td>Size of data in io units. </td></tr>
     <tr><td class="paramname">cb_fn</td><td>Called when the operation is complete. </td></tr>
     <tr><td class="paramname">cb_arg</td><td>Argument passed to function cb_fn. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a6e6bb00cd582a2178f5f97479e67e9c3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e6bb00cd582a2178f5f97479e67e9c3">&#9670;&nbsp;</a></span>spdk_blob_io_writev_ext()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_blob_io_writev_ext </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_blob *&#160;</td>
+          <td class="paramname"><em>blob</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct spdk_io_channel *&#160;</td>
+          <td class="paramname"><em>channel</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct iovec *&#160;</td>
+          <td class="paramname"><em>iov</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iovcnt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>offset</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>length</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="blob_8h.html#aca5253109581a768e06dd197429ef9e1">spdk_blob_op_complete</a>&#160;</td>
+          <td class="paramname"><em>cb_fn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>cb_arg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structspdk__blob__ext__io__opts.html">spdk_blob_ext_io_opts</a> *&#160;</td>
+          <td class="paramname"><em>io_opts</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Write the data described by 'iov' to 'length' io_units beginning at 'offset' io_units into the blob. </p>
+<p>Accepts extended IO request options</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">blob</td><td>Blob to write. </td></tr>
+    <tr><td class="paramname">channel</td><td>I/O channel used to submit requests. </td></tr>
+    <tr><td class="paramname">iov</td><td>The pointer points to an array of iovec structures. </td></tr>
+    <tr><td class="paramname">iovcnt</td><td>The number of buffers. </td></tr>
+    <tr><td class="paramname">offset</td><td>Offset is in io units from the beginning of the blob. </td></tr>
+    <tr><td class="paramname">length</td><td>Size of data in io units. </td></tr>
+    <tr><td class="paramname">cb_fn</td><td>Called when the operation is complete. </td></tr>
+    <tr><td class="paramname">cb_arg</td><td>Argument passed to function cb_fn. </td></tr>
+    <tr><td class="paramname">io_opts</td><td>Optional extended IO request options </td></tr>
   </table>
   </dd>
 </dl>

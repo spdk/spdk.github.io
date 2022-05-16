@@ -121,7 +121,7 @@ Macros</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
 <tr class="memitem:a8d7a0eee8d944cf100d3006b3f3f1774"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dma_8h.html#a8d7a0eee8d944cf100d3006b3f3f1774">spdk_memory_domain_data_cpl_cb</a>) (void *ctx, int rc)</td></tr>
-<tr class="memdesc:a8d7a0eee8d944cf100d3006b3f3f1774"><td class="mdescLeft">&#160;</td><td class="mdescRight">Definition of completion callback to be called by pull or push functions.  <a href="dma_8h.html#a8d7a0eee8d944cf100d3006b3f3f1774">More...</a><br /></td></tr>
+<tr class="memdesc:a8d7a0eee8d944cf100d3006b3f3f1774"><td class="mdescLeft">&#160;</td><td class="mdescRight">Definition of completion callback to be called by pull, push or memzero functions.  <a href="dma_8h.html#a8d7a0eee8d944cf100d3006b3f3f1774">More...</a><br /></td></tr>
 <tr class="separator:a8d7a0eee8d944cf100d3006b3f3f1774"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abf5cd879a09a8f23a30b45e94574e893"><td class="memItemLeft" align="right" valign="top">typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dma_8h.html#abf5cd879a09a8f23a30b45e94574e893">spdk_memory_domain_pull_data_cb</a>) (struct spdk_memory_domain *src_domain, void *src_domain_ctx, struct iovec *src_iov, uint32_t src_iovcnt, struct iovec *dst_iov, uint32_t dst_iovcnt, <a class="el" href="dma_8h.html#a8d7a0eee8d944cf100d3006b3f3f1774">spdk_memory_domain_data_cpl_cb</a> cpl_cb, void *cpl_cb_arg)</td></tr>
 <tr class="memdesc:abf5cd879a09a8f23a30b45e94574e893"><td class="mdescLeft">&#160;</td><td class="mdescRight">Definition of function which asynchronously pulles data from src_domain to local memory domain.  <a href="dma_8h.html#abf5cd879a09a8f23a30b45e94574e893">More...</a><br /></td></tr>
@@ -129,6 +129,9 @@ Typedefs</h2></td></tr>
 <tr class="memitem:a2f4b39300fc63eb3fe95530ca4c87305"><td class="memItemLeft" align="right" valign="top">typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dma_8h.html#a2f4b39300fc63eb3fe95530ca4c87305">spdk_memory_domain_push_data_cb</a>) (struct spdk_memory_domain *dst_domain, void *dst_domain_ctx, struct iovec *dst_iov, uint32_t dst_iovcnt, struct iovec *src_iov, uint32_t src_iovcnt, <a class="el" href="dma_8h.html#a8d7a0eee8d944cf100d3006b3f3f1774">spdk_memory_domain_data_cpl_cb</a> cpl_cb, void *cpl_cb_arg)</td></tr>
 <tr class="memdesc:a2f4b39300fc63eb3fe95530ca4c87305"><td class="mdescLeft">&#160;</td><td class="mdescRight">Definition of function which asynchronously pushes data from local memory to destination memory domain.  <a href="dma_8h.html#a2f4b39300fc63eb3fe95530ca4c87305">More...</a><br /></td></tr>
 <tr class="separator:a2f4b39300fc63eb3fe95530ca4c87305"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22484d6db47a04c8a41a84e67cdb4613"><td class="memItemLeft" align="right" valign="top">typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dma_8h.html#a22484d6db47a04c8a41a84e67cdb4613">spdk_memory_domain_memzero_cb</a>) (struct spdk_memory_domain *domain, void *domain_ctx, struct iovec *iov, uint32_t iovcnt, <a class="el" href="dma_8h.html#a8d7a0eee8d944cf100d3006b3f3f1774">spdk_memory_domain_data_cpl_cb</a> cpl_cb, void *cpl_cb_arg)</td></tr>
+<tr class="memdesc:a22484d6db47a04c8a41a84e67cdb4613"><td class="mdescLeft">&#160;</td><td class="mdescRight">Definition of function which asynchronously fills memory in <b>domain</b> with zeroes.  <a href="dma_8h.html#a22484d6db47a04c8a41a84e67cdb4613">More...</a><br /></td></tr>
+<tr class="separator:a22484d6db47a04c8a41a84e67cdb4613"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a80080465d2736a76d0ddf95d67c701bb"><td class="memItemLeft" align="right" valign="top">typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dma_8h.html#a80080465d2736a76d0ddf95d67c701bb">spdk_memory_domain_translate_memory_cb</a>) (struct spdk_memory_domain *src_domain, void *src_domain_ctx, struct spdk_memory_domain *dst_domain, struct <a class="el" href="structspdk__memory__domain__translation__ctx.html">spdk_memory_domain_translation_ctx</a> *dst_domain_ctx, void *addr, size_t len, struct <a class="el" href="structspdk__memory__domain__translation__result.html">spdk_memory_domain_translation_result</a> *result)</td></tr>
 <tr class="memdesc:a80080465d2736a76d0ddf95d67c701bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Definition of function which translates data from src_domain to a form accessible by dst_domain.  <a href="dma_8h.html#a80080465d2736a76d0ddf95d67c701bb">More...</a><br /></td></tr>
 <tr class="separator:a80080465d2736a76d0ddf95d67c701bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -156,6 +159,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a87db0ff92404fc6cb110e8fa98cce0dd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dma_8h.html#a87db0ff92404fc6cb110e8fa98cce0dd">spdk_memory_domain_set_push</a> (struct spdk_memory_domain *domain, <a class="el" href="dma_8h.html#a2f4b39300fc63eb3fe95530ca4c87305">spdk_memory_domain_push_data_cb</a> push_cb)</td></tr>
 <tr class="memdesc:a87db0ff92404fc6cb110e8fa98cce0dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set push function for memory domain.  <a href="dma_8h.html#a87db0ff92404fc6cb110e8fa98cce0dd">More...</a><br /></td></tr>
 <tr class="separator:a87db0ff92404fc6cb110e8fa98cce0dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abafa95a5bedcc6c320d09a2ccbbeedfc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dma_8h.html#abafa95a5bedcc6c320d09a2ccbbeedfc">spdk_memory_domain_set_memzero</a> (struct spdk_memory_domain *domain, <a class="el" href="dma_8h.html#a22484d6db47a04c8a41a84e67cdb4613">spdk_memory_domain_memzero_cb</a> memzero_cb)</td></tr>
+<tr class="memdesc:abafa95a5bedcc6c320d09a2ccbbeedfc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set memzero function for memory domain.  <a href="dma_8h.html#abafa95a5bedcc6c320d09a2ccbbeedfc">More...</a><br /></td></tr>
+<tr class="separator:abafa95a5bedcc6c320d09a2ccbbeedfc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac0277d9f5317fb5ae789c3394ba933b2"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structspdk__memory__domain__ctx.html">spdk_memory_domain_ctx</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dma_8h.html#ac0277d9f5317fb5ae789c3394ba933b2">spdk_memory_domain_get_context</a> (struct spdk_memory_domain *domain)</td></tr>
 <tr class="memdesc:ac0277d9f5317fb5ae789c3394ba933b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the context passed by the user in <a class="el" href="dma_8h.html#a6ddda62cbca17c587a2c6d201b4e6dff">spdk_memory_domain_create</a>.  <a href="dma_8h.html#ac0277d9f5317fb5ae789c3394ba933b2">More...</a><br /></td></tr>
 <tr class="separator:ac0277d9f5317fb5ae789c3394ba933b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -177,6 +183,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a05ad1c0fc1a4fa74ede9b48181e044b1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dma_8h.html#a05ad1c0fc1a4fa74ede9b48181e044b1">spdk_memory_domain_translate_data</a> (struct spdk_memory_domain *src_domain, void *src_domain_ctx, struct spdk_memory_domain *dst_domain, struct <a class="el" href="structspdk__memory__domain__translation__ctx.html">spdk_memory_domain_translation_ctx</a> *dst_domain_ctx, void *addr, size_t len, struct <a class="el" href="structspdk__memory__domain__translation__result.html">spdk_memory_domain_translation_result</a> *result)</td></tr>
 <tr class="memdesc:a05ad1c0fc1a4fa74ede9b48181e044b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Translate data located in <b>src_domain</b> space at address <b>addr</b> with size <b>len</b> into an equivalent description of memory in dst_domain.  <a href="dma_8h.html#a05ad1c0fc1a4fa74ede9b48181e044b1">More...</a><br /></td></tr>
 <tr class="separator:a05ad1c0fc1a4fa74ede9b48181e044b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4e0567f3920f46cb3644ced997573c7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dma_8h.html#ae4e0567f3920f46cb3644ced997573c7">spdk_memory_domain_memzero</a> (struct spdk_memory_domain *domain, void *domain_ctx, struct iovec *iov, uint32_t iovcnt, <a class="el" href="dma_8h.html#a8d7a0eee8d944cf100d3006b3f3f1774">spdk_memory_domain_data_cpl_cb</a> cpl_cb, void *cpl_cb_arg)</td></tr>
+<tr class="memdesc:ae4e0567f3920f46cb3644ced997573c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fills memory in <b>domain</b> with zeroes.  <a href="dma_8h.html#ae4e0567f3920f46cb3644ced997573c7">More...</a><br /></td></tr>
+<tr class="separator:ae4e0567f3920f46cb3644ced997573c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a76bda4c46e09079dd85d3ea2facdb39a"><td class="memItemLeft" align="right" valign="top">struct spdk_memory_domain *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dma_8h.html#a76bda4c46e09079dd85d3ea2facdb39a">spdk_memory_domain_get_first</a> (const char *id)</td></tr>
 <tr class="memdesc:a76bda4c46e09079dd85d3ea2facdb39a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the first memory domain.  <a href="dma_8h.html#a76bda4c46e09079dd85d3ea2facdb39a">More...</a><br /></td></tr>
 <tr class="separator:a76bda4c46e09079dd85d3ea2facdb39a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -199,7 +208,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition of completion callback to be called by pull or push functions. </p>
+<p>Definition of completion callback to be called by pull, push or memzero functions. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">ctx</td><td>User context passed to pull of push functions </td></tr>
@@ -207,6 +216,34 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="a22484d6db47a04c8a41a84e67cdb4613"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a22484d6db47a04c8a41a84e67cdb4613">&#9670;&nbsp;</a></span>spdk_memory_domain_memzero_cb</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef int(* spdk_memory_domain_memzero_cb) (struct spdk_memory_domain *domain, void *domain_ctx, struct iovec *iov, uint32_t iovcnt, <a class="el" href="dma_8h.html#a8d7a0eee8d944cf100d3006b3f3f1774">spdk_memory_domain_data_cpl_cb</a> cpl_cb, void *cpl_cb_arg)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition of function which asynchronously fills memory in <b>domain</b> with zeroes. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">domain</td><td>Memory domain in which address space data buffer is located </td></tr>
+    <tr><td class="paramname">domain_ctx</td><td>User defined context </td></tr>
+    <tr><td class="paramname">iov</td><td>iov in <b>domain</b> memory space to be filled with zeroes </td></tr>
+    <tr><td class="paramname">iovcnt</td><td><b>iov</b> array size </td></tr>
+    <tr><td class="paramname">cpl_cb</td><td>Completion callback </td></tr>
+    <tr><td class="paramname">cpl_cb_arg</td><td>Completion callback argument </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, negated errno on failure </dd></dl>
 
 </div>
 </div>
@@ -553,6 +590,72 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="ae4e0567f3920f46cb3644ced997573c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae4e0567f3920f46cb3644ced997573c7">&#9670;&nbsp;</a></span>spdk_memory_domain_memzero()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_memory_domain_memzero </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_memory_domain *&#160;</td>
+          <td class="paramname"><em>domain</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>domain_ctx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct iovec *&#160;</td>
+          <td class="paramname"><em>iov</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>iovcnt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="dma_8h.html#a8d7a0eee8d944cf100d3006b3f3f1774">spdk_memory_domain_data_cpl_cb</a>&#160;</td>
+          <td class="paramname"><em>cpl_cb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>cpl_cb_arg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Fills memory in <b>domain</b> with zeroes. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">domain</td><td>Memory domain in which address space data buffer is located </td></tr>
+    <tr><td class="paramname">domain_ctx</td><td>User defined context </td></tr>
+    <tr><td class="paramname">iov</td><td>iov in <b>domain</b> memory space to be filled with zeroes </td></tr>
+    <tr><td class="paramname">iovcnt</td><td><b>iov</b> array size </td></tr>
+    <tr><td class="paramname">cpl_cb</td><td>Completion callback </td></tr>
+    <tr><td class="paramname">cpl_cb_arg</td><td>Completion callback argument </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, negated errno on failure. memzero implementation must only call the callback when 0 is returned </dd></dl>
+
+</div>
+</div>
 <a id="ab766b91733e0939cdea6d13e77572d40"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab766b91733e0939cdea6d13e77572d40">&#9670;&nbsp;</a></span>spdk_memory_domain_pull_data()</h2>
 
@@ -710,6 +813,44 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 on success, negated errno on failure. push_cb implementation must only call the callback when 0 is returned </dd></dl>
+
+</div>
+</div>
+<a id="abafa95a5bedcc6c320d09a2ccbbeedfc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abafa95a5bedcc6c320d09a2ccbbeedfc">&#9670;&nbsp;</a></span>spdk_memory_domain_set_memzero()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_memory_domain_set_memzero </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_memory_domain *&#160;</td>
+          <td class="paramname"><em>domain</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="dma_8h.html#a22484d6db47a04c8a41a84e67cdb4613">spdk_memory_domain_memzero_cb</a>&#160;</td>
+          <td class="paramname"><em>memzero_cb</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set memzero function for memory domain. </p>
+<p>Overwrites existing memzero function.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">domain</td><td>Memory domain </td></tr>
+    <tr><td class="paramname">memzero_cb</td><td>memzero function </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
