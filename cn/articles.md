@@ -16,9 +16,15 @@ toc:
 
 **SPDK总体技术介绍**
 
+* [初识SPDK](https://mp.weixin.qq.com/s?__biz=MzI3NDA4ODY4MA==&mid=2653338468&idx=1&sn=20f395a7e5e22bdee6cba9351d72ebae&chksm=f0cb4ce3c7bcc5f586a40cbeb5917146e95f7b5842da9fefbf6ddbc9705a4a3ed2773072f7b9&mpshare=1&scene=1&srcid=0516z8wJk6QLtfchhp3GITgg&sharer_sharetime=1652678609846&sharer_shareid=16362cd686fb4155d775401692935830&exportkey=Aw9i14ut1qFcTFEAJOQCGpY%3D&acctmode=0&pass_ticket=CHRad0UIoz8%2FSPboNOugxVHCcm1xuslbDDvwdEvYLiqRKwiMWxn%2B%2B5UW4IrjUmQ6&wx_header=0#rd)
+
 * [SPDK block device 及其编程的简单介绍](https://mp.weixin.qq.com/s?__biz=MzI3NDA4ODY4MA==&mid=2653336658&idx=1&sn=6c81de4b2897fd78bfdabab9c1c316dd&chksm=f0cb43d5c7bccac3a531867010e43e32abe13c5f8607e61e458f19594402ae5974fd326f7960&token=1050568646&lang=zh_CN#rd)
 
 * [SPDK Block Device 及其编程的简单介绍(二):初始化](https://mp.weixin.qq.com/s?__biz=MzI3NDA4ODY4MA==&mid=2653337067&idx=1&sn=9629dff3ee8ec3e6f70bd4a7dbe763cb&chksm=f0cb426cc7bccb7a3816b9888c547038113a173d4f3f4519fe9cf0f4bf18844074538bfa9781&token=468503366&lang=zh_CN#rd)
+
+* [SPDK Delay Bdev介绍及应用实例](https://mp.weixin.qq.com/s?__biz=MzI3NDA4ODY4MA==&mid=2653338631&idx=1&sn=be869c38549ee3e0f6fcb4c9c7169367&chksm=f0cb4b80c7bcc29619fee03b27def72a6cc9b7b9d16066e57dd2acda234d2c3ec216bfbb4cca&mpshare=1&scene=1&srcid=05166r8YtcuKY5YZluH2I4JE&sharer_sharetime=1652678632034&sharer_shareid=16362cd686fb4155d775401692935830&exportkey=A1ZrvWPUCGw9cyHeraVQQz0%3D&acctmode=0&pass_ticket=CHRad0UIoz8%2FSPboNOugxVHCcm1xuslbDDvwdEvYLiqRKwiMWxn%2B%2B5UW4IrjUmQ6&wx_header=0#rd)
+
+* [基于SPDK加速框架的高性能PMEM Bdev](https://mp.weixin.qq.com/s?__biz=MzI3NDA4ODY4MA==&mid=2653338257&idx=1&sn=d73454d2d31086ca34a8122eb60bd7ba&chksm=f0cb4d16c7bcc40035a3d5c84132346daf5f673315add75b3303dfc7d5783e58d0ee53788191&mpshare=1&scene=1&srcid=0516KXyPRRqbaTFfR3o2X3Vr&sharer_sharetime=1652678580442&sharer_shareid=16362cd686fb4155d775401692935830&exportkey=A0ooqUTjQi5j0Z7xBxCpISM%3D&acctmode=0&pass_ticket=CHRad0UIoz8%2FSPboNOugxVHCcm1xuslbDDvwdEvYLiqRKwiMWxn%2B%2B5UW4IrjUmQ6&wx_header=0#rd)
 
 * [SPDK线程模型解析](https://mp.weixin.qq.com/s?__biz=MzI3NDA4ODY4MA==&mid=2653336301&idx=1&sn=893bceb88d7e775863ebc006e83f5532&chksm=f0cb456ac7bccc7cb720366f69941164e4e80cd5ceaef33bcbe16e7c761046aadc6e7137e4d7&token=1179202807&lang=zh_CN#rd)
 
@@ -55,6 +61,8 @@ toc:
 * [最新！SPDK宣布在NVMe-oF Fabrics中支持TCP transport](https://mp.weixin.qq.com/s?__biz=MzI3NDA4ODY4MA==&mid=2653335028&idx=1&sn=7dccf7eef694b974ab841d136b265cde&chksm=f0cb5a73c7bcd365f9d1cece44630c11dda3d537a405f7f91359676f9c1e3fdb9e1ed9f550c9&token=431082989&lang=zh_CN#rd)
 
 * [SPDK NVMe-oF target 多路功能介绍](https://mp.weixin.qq.com/s?__biz=MzI3NDA4ODY4MA==&mid=2653334954&idx=1&sn=7aa90dc8d2660b211cd353118570c8b6&chksm=f0cb5a2dc7bcd33b3dabcf17d2afbdd6c02597f48cbf64ce1f5144720061deff8d6e1d0ed44a&token=431082989&lang=zh_CN#rd)
+
+* [支持非对称命名空间访问的SPDK多路径验证](https://mp.weixin.qq.com/s?__biz=MzI3NDA4ODY4MA==&mid=2653338599&idx=1&sn=8c9fde9fc979e3dcacf8923d5aa1bc5e&chksm=f0cb4c60c7bcc576032dbb64ff9d31a5c761b9b1850e01d7047f54f292bf589147ffe55aef7b&mpshare=1&scene=1&srcid=0516YOjlTdHput7SudpIKiCI&sharer_sharetime=1652678624881&sharer_shareid=16362cd686fb4155d775401692935830&exportkey=A9Mq3XCF0kHE4g66QTdlxos%3D&acctmode=0&pass_ticket=CHRad0UIoz8%2FSPboNOugxVHCcm1xuslbDDvwdEvYLiqRKwiMWxn%2B%2B5UW4IrjUmQ6&wx_header=0#rd)
 
 * [用SoftRoCE测试SPDK NVMe-oF target](https://mp.weixin.qq.com/s?__biz=MzI3NDA4ODY4MA==&mid=2653334844&idx=1&sn=96383bab414ad4e6454c7d98707dc611&chksm=f0cb5abbc7bcd3adf9137b3dd444b5a2f50fcf55ad44cc6a5a8f7fd79f14aebfe954e148c97c&token=431082989&lang=zh_CN#rd)
 
@@ -95,6 +103,10 @@ toc:
 **SPDK的性能测试、调试以及生态工具**
 
 * [试试SPDK的trace](https://mp.weixin.qq.com/s?__biz=MzI3NDA4ODY4MA==&mid=2653336410&idx=1&sn=cbbb7a0e19b3322e16c3592959d1ec55&chksm=f0cb44ddc7bccdcbc45664d5c7dd63ef859c7871bd5867a2745b697280d36e84cb2dc61573f1&token=1179202807&lang=zh_CN#rd)
+
+* [SPDK Trace Log用法简介](https://mp.weixin.qq.com/s?__biz=MzI3NDA4ODY4MA==&mid=2653338377&idx=1&sn=e267c120af4fe661f2f7a306c163afda&chksm=f0cb4c8ec7bcc598225b43aac7366f80ef7f2738f3664790a6b2830a31913a5f568b5e61618c&mpshare=1&scene=1&srcid=0516NObW2EwV1QgVN8QOGSOr&sharer_sharetime=1652678596334&sharer_shareid=16362cd686fb4155d775401692935830&exportkey=A5TovvkIgptMwJKfMYFgxxk%3D&acctmode=0&pass_ticket=CHRad0UIoz8%2FSPboNOugxVHCcm1xuslbDDvwdEvYLiqRKwiMWxn%2B%2B5UW4IrjUmQ6&wx_header=0#rd)
+
+* [SPDK的BPF Tracing](https://mp.weixin.qq.com/s?__biz=MzI3NDA4ODY4MA==&mid=2653338225&idx=1&sn=9205b9612bf372be0cb26502f6d9c958&chksm=f0cb4df6c7bcc4e06996f3d7390733fc4a2a04bdb2ddebea1fe70a05526346b1de4b138f25e5&mpshare=1&scene=1&srcid=0516rsNcutXxHzEzTVNL1ncU&sharer_sharetime=1652678567698&sharer_shareid=16362cd686fb4155d775401692935830&exportkey=A3V5sSkXSC5w4WHhssezLJw%3D&acctmode=0&pass_ticket=CHRad0UIoz8%2FSPboNOugxVHCcm1xuslbDDvwdEvYLiqRKwiMWxn%2B%2B5UW4IrjUmQ6&wx_header=0#rd)
 
 * [在虚拟机上部署SPDK NVME测试案例](https://mp.weixin.qq.com/s?__biz=MzI3NDA4ODY4MA==&mid=2653336075&idx=1&sn=13c658b8c727ac730c8911088d680f20&chksm=f0cb458cc7bccc9ad4f3cd1c660e33a971a2419b683d79869769713c737da64f5d74181c1e6d&token=186149208&lang=zh_CN#rd)
 
