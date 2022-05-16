@@ -48,10 +48,14 @@ if [ "$TEST_MODE" -eq 0 ]; then
         rm -rf $repo
 fi
 
-echo "$doc_version" > _doc_version.txt
-git add _doc_version.txt
+if [ -n "$(git status --porcelain --untracked-files=no)" ]; then
+	echo "$doc_version" > _doc_version.txt
+	git add _doc_version.txt
 
-echo
-echo "New docs generated"
-echo
-git status
+	echo
+	echo "New docs generated"
+	echo
+	git status
+else
+	exit 0
+fi
