@@ -55,6 +55,7 @@ var bdev_8h =
     [ "spdk_bdev_status", "bdev_8h.html#ad6c166f5d928c2995df57c96a2977862", [
       [ "SPDK_BDEV_STATUS_INVALID", "bdev_8h.html#ad6c166f5d928c2995df57c96a2977862a8ae156ac27597e66878248e0b2ed0dff", null ],
       [ "SPDK_BDEV_STATUS_READY", "bdev_8h.html#ad6c166f5d928c2995df57c96a2977862a81b16f97132d8245c61f02fd94b4ec11", null ],
+      [ "SPDK_BDEV_STATUS_UNREGISTERING", "bdev_8h.html#ad6c166f5d928c2995df57c96a2977862a5d925fc967dea1f6d58c0acf82d6ef98", null ],
       [ "SPDK_BDEV_STATUS_REMOVING", "bdev_8h.html#ad6c166f5d928c2995df57c96a2977862a82598753017f84c485785b04f9dcf5fa", null ]
     ] ],
     [ "spdk_bdev_abort", "bdev_8h.html#a841dcef50460f33c8b5e321e187dc3dd", null ],

@@ -103,6 +103,7 @@ v22.05: (Upcoming Release)</h1>
 <p>A new RPC <code>bdev_nvme_get_io_paths</code> was added to get all active I/O paths.</p>
 <p>A new RPC <code>bdev_nvme_set_preferred_path</code> was added to set preferred I/O path for an NVMe bdev when in multipath mode. This RPC does not support NVMe bdevs in failover mode.</p>
 <p>A new RPC <code>bdev_nvme_set_multipath_policy</code> was added to set multipath policy of a NVMe bdev in multipath mode.</p>
+<p>A new option <code>disable_auto_failback</code> was added to the <code>bdev_nvme_set_options</code> RPC to disable automatic failback.</p>
 <h2>idxd</h2>
 <p>A new parameter <code>flags</code> was added to all low level submission and preparation APIs to enable the caller to pass operation flags per the DSA specification.</p>
 <p>A new flag 'SPDK_IDXD_FLAG_PERSISTENT' was added to let DSA know that the destination is persistent.</p>

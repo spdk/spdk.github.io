@@ -1,5 +1,7 @@
 var NAVTREEINDEX26 =
 {
+"structspdk__scsi__pr__in__full__status__desc.html#a21adb00ca4baec9638af3af2035afb72":[14,0,326,1],
+"structspdk__scsi__pr__in__full__status__desc.html#a4203ba8e2834a9934505a89cb6e6a0f7":[14,0,326,8],
 "structspdk__scsi__pr__in__full__status__desc.html#a516c7f0bca402c4f1aa5586f30311b5b":[14,0,326,4],
 "structspdk__scsi__pr__in__full__status__desc.html#a5dec3bb2565b6b4e4bd5417a616bf266":[14,0,326,10],
 "structspdk__scsi__pr__in__full__status__desc.html#a789d7ac489335df814320f8e7c2e5147":[14,0,326,7],
@@ -247,7 +249,5 @@ var NAVTREEINDEX26 =
 "structvfio__user__dma__region__access.html":[14,0,360],
 "structvfio__user__dma__region__access.html#a7dfcc2ed9c92f9f2c68c9d99c2cfd8a5":[14,0,360,2],
 "structvfio__user__dma__region__access.html#a8e5a3b1661593f415fe429eec2a929b9":[14,0,360,1],
-"structvfio__user__dma__region__access.html#ae4e5166970c457815c00269e35adef32":[14,0,360,0],
-"structvfio__user__dma__unmap.html":[14,0,361],
-"structvfio__user__dma__unmap.html#a4cd8cbba2b3d70e47224627b06deca81":[14,0,361,3]
+"structvfio__user__dma__region__access.html#ae4e5166970c457815c00269e35adef32":[14,0,360,0]
 };

@@ -377,5 +377,6 @@ var user_guides =
       ] ]
     ] ],
     [ "JSON-RPC Remote access", "jsonrpc_proxy.html", null ],
-    [ "Userspace DTrace (USDT)", "usdt.html", null ]
+    [ "Userspace DTrace (USDT)", "usdt.html", null ],
+    [ "NVMe Multipath", "nvme_multipath.html", null ]
 ];

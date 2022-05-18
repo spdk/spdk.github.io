@@ -1,5 +1,7 @@
 var NAVTREEINDEX27 =
 {
+"structvfio__user__dma__unmap.html":[14,0,361],
+"structvfio__user__dma__unmap.html#a4cd8cbba2b3d70e47224627b06deca81":[14,0,361,3],
 "structvfio__user__dma__unmap.html#a5e7d8b2aa49b8287437d91fbd52c6b6c":[14,0,361,1],
 "structvfio__user__dma__unmap.html#aade59e9449ea41b47c9400ba1fb48ba1":[14,0,361,2],
 "structvfio__user__dma__unmap.html#ad8d4589bb1b5e1da62b612b5bc90cd29":[14,0,361,4],
@@ -247,7 +249,5 @@ var NAVTREEINDEX27 =
 "unionidxd__group__flags.html#a2d8c822fc1c847ff03b588f786a6d55a":[14,0,8,7],
 "unionidxd__group__flags.html#a3b472a9959b8974346f45a39b98c4f04":[14,0,8,1],
 "unionidxd__group__flags.html#a56246317ddfa24f3bde4d3688bba8979":[14,0,8,8],
-"unionidxd__group__flags.html#a651daf5e1978a84f4cfd37a1a943dcfc":[14,0,8,5],
-"unionidxd__group__flags.html#a67a61643032e21a58f5667b44b670e98":[14,0,8,2],
-"unionidxd__group__flags.html#a761455918649dd1919ec94c396b726d0":[14,0,8,4]
+"unionidxd__group__flags.html#a651daf5e1978a84f4cfd37a1a943dcfc":[14,0,8,5]
 };

@@ -1,5 +1,6 @@
 var NAVTREEINDEX6 =
 {
+"jsonrpc.html#rpc_bdev_compress_get_orphans":[3,9,5,11],
 "jsonrpc.html#rpc_bdev_compress_set_pmd":[3,9,5,12],
 "jsonrpc.html#rpc_bdev_crypto_create":[3,9,5,13],
 "jsonrpc.html#rpc_bdev_crypto_delete":[3,9,5,14],
@@ -248,6 +249,5 @@ var NAVTREEINDEX6 =
 "libraries.html#map":[3,1,1,2],
 "libraries.html#module":[3,1,0,1],
 "libraries.html#naming":[3,1,1,1],
-"libraries.html#shared_objects":[3,1,2],
-"libraries.html#so_linking":[3,1,2,1]
+"libraries.html#shared_objects":[3,1,2]
 };

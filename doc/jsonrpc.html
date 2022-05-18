@@ -2379,7 +2379,9 @@ bdev_nvme_set_options</h2>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">reconnect_delay_sec   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">Time to delay a reconnect trial. 0 means no reconnect.    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">fast_io_fail_timeout_sec   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">Time to wait until ctrlr is reconnected before failing I/O to ctrlr. 0 means no such timeout.   </td></tr>
+<td class="markdownTableBodyNone">fast_io_fail_timeout_sec   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">Time to wait until ctrlr is reconnected before failing I/O to ctrlr. 0 means no such timeout.    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">disable_auto_failback   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Disable automatic failback. The RPC bdev_nvme_set_preferred_path can be used to do manual failback.   </td></tr>
 </table>
 <h3>Example</h3>
 <p>Example request:</p>
@@ -2639,10 +2641,12 @@ bdev_nvme_start_discovery</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">wait_for_attach   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">bool   </td><td class="markdownTableBodyNone">Wait to complete until all discovered NVM subsystems are attached    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">ctrlr_loss_timeout_sec   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">Time to wait until ctrlr is reconnected before deleting ctrlr. -1 means infinite reconnects. 0 means no reconnect.    </td></tr>
+<td class="markdownTableBodyNone">attach_timeout_ms   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">Time to wait until the discovery and all discovered NVM subsystems are attached    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">reconnect_delay_sec   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">Time to delay a reconnect trial. 0 means no reconnect.    </td></tr>
+<td class="markdownTableBodyNone">ctrlr_loss_timeout_sec   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">Time to wait until ctrlr is reconnected before deleting ctrlr. -1 means infinite reconnects. 0 means no reconnect.    </td></tr>
 <tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">reconnect_delay_sec   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">Time to delay a reconnect trial. 0 means no reconnect.    </td></tr>
+<tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">fast_io_fail_timeout_sec   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">Time to wait until ctrlr is reconnected before failing I/O to ctrlr. 0 means no such timeout.   </td></tr>
 </table>
 <h3>Example</h3>
