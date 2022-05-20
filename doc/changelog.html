@@ -123,6 +123,8 @@ v22.05: (Upcoming Release)</h1>
 <p>New functions <code>spdk_blob_io_writev_ext</code> and <code>spdk_blob_io_readv_ext</code> are added. The new functions accept <code><a class="el" href="structspdk__blob__ext__io__opts.html" title="Structure with optional IO request parameters The content of this structure must be valid until the I...">spdk_blob_ext_io_opts</a></code> structure with extended IO request options.</p>
 <h2>event</h2>
 <p>Added <code>msg_mempool_size</code> parameter to <code>spdk_reactors_init</code> and <code>spdk_thread_lib_init_ext</code>. The size of <code>g_spdk_msg_mempool</code> can now be controlled through the same-named user option of <code><a class="el" href="structspdk__app__opts.html" title="Event framework initialization options.">spdk_app_opts</a></code> structure.</p>
+<h2>nvme</h2>
+<p>The API <code><a class="el" href="nvme_8h.html#a849b2e9763c00d8195605c62cf511ea5" title="Inform the driver that the application is preparing to reset the specified NVMe controller.">spdk_nvme_ctrlr_prepare_for_reset()</a></code> was deprecated. The functionality provided by the <code><a class="el" href="nvme_8h.html#a849b2e9763c00d8195605c62cf511ea5" title="Inform the driver that the application is preparing to reset the specified NVMe controller.">spdk_nvme_ctrlr_prepare_for_reset()</a></code> was merged into the API <code><a class="el" href="nvme_8h.html#a458a65224a0f20c73d0acb44715d86dc" title="Disconnect the given NVMe controller.">spdk_nvme_ctrlr_disconnect()</a></code>.</p>
 <h2>nvmf</h2>
 <p>Removed deprecated max_qpairs_per_ctrlr parameter from nvmf_create_transport RPC. Use max_io_qpairs_per_ctrlr instead.</p>
 <p>Deprecated the ability for hosts to connect to the discovery subsystem automatically on any existing listener. Users should now explicitly add listeners for the discovery subsystem. Host can still connect to the discovery subsystem as before, but a warning message will be emitted if no listener was configured for the transport ID of the incoming connection.</p>
@@ -887,7 +889,7 @@ v19.07: NVMe-oF FC Transport, VMD, NVMe-oF Persistent reservations, Bdev I/O wit
 <p>A security vulnerability has been identified and fixed in SPDK Vhost-SCSI target. A malicious client (e.g. a virtual machine) could send a carefully prepared, invalid I/O request to crash the entire SPDK process. All users of SPDK Vhost-SCSI target are strongly recommended to update. All SPDK versions &lt; 19.07 are affected.</p>
 <p>By default, SPDK will now rely on upstream DPDK's rte_vhost instead of its fork located inside SPDK repo. The internal fork is still kept around to support older DPDK versions, but is considered legacy and will be eventually removed.</p>
 <p><code>configure</code> will now automatically use the upstream rte_vhost if the used DPDK version is &gt;= 19.05.</p>
-<p><a class="el" href="vhost_8h.html#ab35076d7e06edf2098b814929a04c7d5" title="Init vhost environment.">spdk_vhost_init()</a> is now asynchronous and accepts a completion callback.</p>
+<p>spdk_vhost_init() is now asynchronous and accepts a completion callback.</p>
 <h2>iscsi target</h2>
 <p>A security vulnerability has been identified and fixed in SPDK iSCSI target. A malicious client (e.g. an iSCSI initiator) could send a carefully prepared, invalid I/O request to crash the entire SPDK process. All users of SPDK iSCSI target are strongly recommended to update. All SPDK versions &lt; 19.07 are affected.</p>
 <h2>thread</h2>

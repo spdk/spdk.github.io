@@ -4181,6 +4181,7 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_trty
 </div><div class="memdoc">
 
 <p>Inform the driver that the application is preparing to reset the specified NVMe controller. </p>
+<p>(Deprecated, please use <a class="el" href="nvme_8h.html#a458a65224a0f20c73d0acb44715d86dc" title="Disconnect the given NVMe controller.">spdk_nvme_ctrlr_disconnect()</a> before freeing I/O qpairs instead.)</p>
 <p>This function allows the driver to make decisions knowing that a reset is about to happen. For example, the pcie transport in this case could skip sending DELETE_CQ and DELETE_SQ commands to the controller if an io qpair is freed after this function is called.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">

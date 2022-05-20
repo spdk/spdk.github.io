@@ -148,6 +148,7 @@ var NAVTREEINDEX14 =
 "shfmt.html#shfmt_overview":[9,0,1],
 "shfmt.html#shfmt_toc":[9,0,0],
 "shfmt.html#shfmt_usage":[9,0,2],
+"sma.html":[3,13],
 "sock_8h.html":[15,0,54],
 "sock_8h.html#a06f3441fbe7ea447b7ae03e71e074e27":[15,0,54,17],
 "sock_8h.html#a0be72049ed7537c6f8efb99dbb44d20c":[15,0,54,34],
@@ -248,6 +249,5 @@ var NAVTREEINDEX14 =
 "structidxd__hw__desc.html#a07dff4bb0994bcd611443e9818a176ab":[14,0,13,11],
 "structidxd__hw__desc.html#a0a8d468fdd6b252a7cf288b7e05d6f04":[14,0,13,38],
 "structidxd__hw__desc.html#a13a906b3c3ea03a92bd2fb87fa1886eb":[14,0,13,20],
-"structidxd__hw__desc.html#a1cbab68aedf29c2bd33c921aed1653b4":[14,0,13,36],
-"structidxd__hw__desc.html#a1d618e2203aaad22d845c76e28bd1b21":[14,0,13,34]
+"structidxd__hw__desc.html#a1cbab68aedf29c2bd33c921aed1653b4":[14,0,13,36]
 };

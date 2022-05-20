@@ -99,11 +99,11 @@ $(document).ready(function(){initNavTree('vhost_8h.html',''); initResizable(); }
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
 <tr class="memitem:aed34ffbfc5835716ba35a9ee050e1e74"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vhost_8h.html#aed34ffbfc5835716ba35a9ee050e1e74">spdk_vhost_init_cb</a>) (int rc)</td></tr>
-<tr class="memdesc:aed34ffbfc5835716ba35a9ee050e1e74"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback for <a class="el" href="vhost_8h.html#ab35076d7e06edf2098b814929a04c7d5" title="Init vhost environment.">spdk_vhost_init()</a>.  <a href="vhost_8h.html#aed34ffbfc5835716ba35a9ee050e1e74">More...</a><br /></td></tr>
+<tr class="memdesc:aed34ffbfc5835716ba35a9ee050e1e74"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback for spdk_vhost_init().  <a href="vhost_8h.html#aed34ffbfc5835716ba35a9ee050e1e74">More...</a><br /></td></tr>
 <tr class="separator:aed34ffbfc5835716ba35a9ee050e1e74"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8b37106ad173f20d05da87f89714700b"><td class="memItemLeft" align="right" valign="top"><a id="a8b37106ad173f20d05da87f89714700b"></a>
 typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vhost_8h.html#a8b37106ad173f20d05da87f89714700b">spdk_vhost_fini_cb</a>) (void)</td></tr>
-<tr class="memdesc:a8b37106ad173f20d05da87f89714700b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback for <a class="el" href="vhost_8h.html#af358eac95a16bd456349fcfaa00379bb" title="Clean up the environment of vhost.">spdk_vhost_fini()</a>. <br /></td></tr>
+<tr class="memdesc:a8b37106ad173f20d05da87f89714700b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback for spdk_vhost_fini(). <br /></td></tr>
 <tr class="separator:a8b37106ad173f20d05da87f89714700b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac2c4b62eaf6503e5f5e520394f9f9fe1"><td class="memItemLeft" align="right" valign="top">typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vhost_8h.html#ac2c4b62eaf6503e5f5e520394f9f9fe1">spdk_vhost_event_fn</a>) (struct spdk_vhost_dev *vdev, void *arg)</td></tr>
 <tr class="memdesc:ac2c4b62eaf6503e5f5e520394f9f9fe1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Synchronized vhost event used for user callbacks.  <a href="vhost_8h.html#ac2c4b62eaf6503e5f5e520394f9f9fe1">More...</a><br /></td></tr>
@@ -114,15 +114,24 @@ Functions</h2></td></tr>
 <tr class="memitem:a15921078a895d090283fbbeaaddee76c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vhost_8h.html#a15921078a895d090283fbbeaaddee76c">spdk_vhost_set_socket_path</a> (const char *basename)</td></tr>
 <tr class="memdesc:a15921078a895d090283fbbeaaddee76c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the path to the directory where vhost sockets will be created.  <a href="vhost_8h.html#a15921078a895d090283fbbeaaddee76c">More...</a><br /></td></tr>
 <tr class="separator:a15921078a895d090283fbbeaaddee76c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab35076d7e06edf2098b814929a04c7d5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vhost_8h.html#ab35076d7e06edf2098b814929a04c7d5">spdk_vhost_init</a> (<a class="el" href="vhost_8h.html#aed34ffbfc5835716ba35a9ee050e1e74">spdk_vhost_init_cb</a> init_cb)</td></tr>
-<tr class="memdesc:ab35076d7e06edf2098b814929a04c7d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Init vhost environment.  <a href="vhost_8h.html#ab35076d7e06edf2098b814929a04c7d5">More...</a><br /></td></tr>
-<tr class="separator:ab35076d7e06edf2098b814929a04c7d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af358eac95a16bd456349fcfaa00379bb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vhost_8h.html#af358eac95a16bd456349fcfaa00379bb">spdk_vhost_fini</a> (<a class="el" href="vhost_8h.html#a8b37106ad173f20d05da87f89714700b">spdk_vhost_fini_cb</a> fini_cb)</td></tr>
-<tr class="memdesc:af358eac95a16bd456349fcfaa00379bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clean up the environment of vhost.  <a href="vhost_8h.html#af358eac95a16bd456349fcfaa00379bb">More...</a><br /></td></tr>
-<tr class="separator:af358eac95a16bd456349fcfaa00379bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a256ce5abb39df6f4627e3fac7863998f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vhost_8h.html#a256ce5abb39df6f4627e3fac7863998f">spdk_vhost_config_json</a> (struct spdk_json_write_ctx *w)</td></tr>
-<tr class="memdesc:a256ce5abb39df6f4627e3fac7863998f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write vhost subsystem configuration into provided JSON context.  <a href="vhost_8h.html#a256ce5abb39df6f4627e3fac7863998f">More...</a><br /></td></tr>
-<tr class="separator:a256ce5abb39df6f4627e3fac7863998f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa0a16e2e24f4439d1457d9fa2b1a316"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vhost_8h.html#afa0a16e2e24f4439d1457d9fa2b1a316">spdk_vhost_scsi_init</a> (<a class="el" href="vhost_8h.html#aed34ffbfc5835716ba35a9ee050e1e74">spdk_vhost_init_cb</a> init_cb)</td></tr>
+<tr class="memdesc:afa0a16e2e24f4439d1457d9fa2b1a316"><td class="mdescLeft">&#160;</td><td class="mdescRight">Init vhost environment.  <a href="vhost_8h.html#afa0a16e2e24f4439d1457d9fa2b1a316">More...</a><br /></td></tr>
+<tr class="separator:afa0a16e2e24f4439d1457d9fa2b1a316"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92afea7023f0f61a2038047e2328dd85"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vhost_8h.html#a92afea7023f0f61a2038047e2328dd85">spdk_vhost_scsi_fini</a> (<a class="el" href="vhost_8h.html#a8b37106ad173f20d05da87f89714700b">spdk_vhost_fini_cb</a> fini_cb)</td></tr>
+<tr class="memdesc:a92afea7023f0f61a2038047e2328dd85"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clean up the environment of vhost.  <a href="vhost_8h.html#a92afea7023f0f61a2038047e2328dd85">More...</a><br /></td></tr>
+<tr class="separator:a92afea7023f0f61a2038047e2328dd85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0631424062751f68ec295722786370a8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vhost_8h.html#a0631424062751f68ec295722786370a8">spdk_vhost_scsi_config_json</a> (struct spdk_json_write_ctx *w)</td></tr>
+<tr class="memdesc:a0631424062751f68ec295722786370a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write vhost subsystem configuration into provided JSON context.  <a href="vhost_8h.html#a0631424062751f68ec295722786370a8">More...</a><br /></td></tr>
+<tr class="separator:a0631424062751f68ec295722786370a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa85eecef82ce3ee26fd16a210be9466"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vhost_8h.html#afa85eecef82ce3ee26fd16a210be9466">spdk_vhost_blk_init</a> (<a class="el" href="vhost_8h.html#aed34ffbfc5835716ba35a9ee050e1e74">spdk_vhost_init_cb</a> init_cb)</td></tr>
+<tr class="memdesc:afa85eecef82ce3ee26fd16a210be9466"><td class="mdescLeft">&#160;</td><td class="mdescRight">Init vhost environment.  <a href="vhost_8h.html#afa85eecef82ce3ee26fd16a210be9466">More...</a><br /></td></tr>
+<tr class="separator:afa85eecef82ce3ee26fd16a210be9466"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e41f1b4db2605981b3194b83d90c35a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vhost_8h.html#a4e41f1b4db2605981b3194b83d90c35a">spdk_vhost_blk_fini</a> (<a class="el" href="vhost_8h.html#a8b37106ad173f20d05da87f89714700b">spdk_vhost_fini_cb</a> fini_cb)</td></tr>
+<tr class="memdesc:a4e41f1b4db2605981b3194b83d90c35a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clean up the environment of vhost.  <a href="vhost_8h.html#a4e41f1b4db2605981b3194b83d90c35a">More...</a><br /></td></tr>
+<tr class="separator:a4e41f1b4db2605981b3194b83d90c35a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad817236a58d94b5993275ae16a567ec"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vhost_8h.html#aad817236a58d94b5993275ae16a567ec">spdk_vhost_blk_config_json</a> (struct spdk_json_write_ctx *w)</td></tr>
+<tr class="memdesc:aad817236a58d94b5993275ae16a567ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write vhost subsystem configuration into provided JSON context.  <a href="vhost_8h.html#aad817236a58d94b5993275ae16a567ec">More...</a><br /></td></tr>
+<tr class="separator:aad817236a58d94b5993275ae16a567ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afd7159f8eb1e0d65dad5bedaa6cc5e43"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vhost_8h.html#afd7159f8eb1e0d65dad5bedaa6cc5e43">spdk_vhost_shutdown_cb</a> (void)</td></tr>
 <tr class="memdesc:afd7159f8eb1e0d65dad5bedaa6cc5e43"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deinit vhost application.  <a href="vhost_8h.html#afd7159f8eb1e0d65dad5bedaa6cc5e43">More...</a><br /></td></tr>
 <tr class="separator:afd7159f8eb1e0d65dad5bedaa6cc5e43"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -213,7 +222,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vhos
       </table>
 </div><div class="memdoc">
 
-<p>Callback for <a class="el" href="vhost_8h.html#ab35076d7e06edf2098b814929a04c7d5" title="Init vhost environment.">spdk_vhost_init()</a>. </p>
+<p>Callback for spdk_vhost_init(). </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">rc</td><td>0 on success, negative errno on failure </td></tr>
@@ -224,6 +233,32 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vhos
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="aad817236a58d94b5993275ae16a567ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aad817236a58d94b5993275ae16a567ec">&#9670;&nbsp;</a></span>spdk_vhost_blk_config_json()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_vhost_blk_config_json </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_json_write_ctx *&#160;</td>
+          <td class="paramname"><em>w</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Write vhost subsystem configuration into provided JSON context. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">w</td><td>JSON write context </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a31bf721b7ecbe86e38cfa5f82510d746"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a31bf721b7ecbe86e38cfa5f82510d746">&#9670;&nbsp;</a></span>spdk_vhost_blk_construct()</h2>
 
@@ -278,26 +313,52 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vhos
 
 </div>
 </div>
-<a id="a256ce5abb39df6f4627e3fac7863998f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a256ce5abb39df6f4627e3fac7863998f">&#9670;&nbsp;</a></span>spdk_vhost_config_json()</h2>
+<a id="a4e41f1b4db2605981b3194b83d90c35a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e41f1b4db2605981b3194b83d90c35a">&#9670;&nbsp;</a></span>spdk_vhost_blk_fini()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void spdk_vhost_config_json </td>
+          <td class="memname">void spdk_vhost_blk_fini </td>
           <td>(</td>
-          <td class="paramtype">struct spdk_json_write_ctx *&#160;</td>
-          <td class="paramname"><em>w</em></td><td>)</td>
+          <td class="paramtype"><a class="el" href="vhost_8h.html#a8b37106ad173f20d05da87f89714700b">spdk_vhost_fini_cb</a>&#160;</td>
+          <td class="paramname"><em>fini_cb</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Write vhost subsystem configuration into provided JSON context. </p>
+<p>Clean up the environment of vhost. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">w</td><td>JSON write context </td></tr>
+    <tr><td class="paramname">fini_cb</td><td>Function to be called when the cleanup is complete. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="afa85eecef82ce3ee26fd16a210be9466"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa85eecef82ce3ee26fd16a210be9466">&#9670;&nbsp;</a></span>spdk_vhost_blk_init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_vhost_blk_init </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="vhost_8h.html#aed34ffbfc5835716ba35a9ee050e1e74">spdk_vhost_init_cb</a>&#160;</td>
+          <td class="paramname"><em>init_cb</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Init vhost environment. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">init_cb</td><td>Function to be called when the initialization is complete. </td></tr>
   </table>
   </dd>
 </dl>
@@ -437,32 +498,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vhos
 
 </div>
 </div>
-<a id="af358eac95a16bd456349fcfaa00379bb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af358eac95a16bd456349fcfaa00379bb">&#9670;&nbsp;</a></span>spdk_vhost_fini()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void spdk_vhost_fini </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="vhost_8h.html#a8b37106ad173f20d05da87f89714700b">spdk_vhost_fini_cb</a>&#160;</td>
-          <td class="paramname"><em>fini_cb</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Clean up the environment of vhost. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">fini_cb</td><td>Function to be called when the cleanup is complete. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
 <a id="a8be392083ae01ad34cc05b1b5ce2b5e0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8be392083ae01ad34cc05b1b5ce2b5e0">&#9670;&nbsp;</a></span>spdk_vhost_get_coalescing()</h2>
 
@@ -508,26 +543,26 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vhos
 
 </div>
 </div>
-<a id="ab35076d7e06edf2098b814929a04c7d5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab35076d7e06edf2098b814929a04c7d5">&#9670;&nbsp;</a></span>spdk_vhost_init()</h2>
+<a id="a0631424062751f68ec295722786370a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0631424062751f68ec295722786370a8">&#9670;&nbsp;</a></span>spdk_vhost_scsi_config_json()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void spdk_vhost_init </td>
+          <td class="memname">void spdk_vhost_scsi_config_json </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="vhost_8h.html#aed34ffbfc5835716ba35a9ee050e1e74">spdk_vhost_init_cb</a>&#160;</td>
-          <td class="paramname"><em>init_cb</em></td><td>)</td>
+          <td class="paramtype">struct spdk_json_write_ctx *&#160;</td>
+          <td class="paramname"><em>w</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Init vhost environment. </p>
+<p>Write vhost subsystem configuration into provided JSON context. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">init_cb</td><td>Function to be called when the initialization is complete. </td></tr>
+    <tr><td class="paramname">w</td><td>JSON write context </td></tr>
   </table>
   </dd>
 </dl>
@@ -719,6 +754,58 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vhos
 
 </div>
 </div>
+<a id="a92afea7023f0f61a2038047e2328dd85"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a92afea7023f0f61a2038047e2328dd85">&#9670;&nbsp;</a></span>spdk_vhost_scsi_fini()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_vhost_scsi_fini </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="vhost_8h.html#a8b37106ad173f20d05da87f89714700b">spdk_vhost_fini_cb</a>&#160;</td>
+          <td class="paramname"><em>fini_cb</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Clean up the environment of vhost. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fini_cb</td><td>Function to be called when the cleanup is complete. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="afa0a16e2e24f4439d1457d9fa2b1a316"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa0a16e2e24f4439d1457d9fa2b1a316">&#9670;&nbsp;</a></span>spdk_vhost_scsi_init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_vhost_scsi_init </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="vhost_8h.html#aed34ffbfc5835716ba35a9ee050e1e74">spdk_vhost_init_cb</a>&#160;</td>
+          <td class="paramname"><em>init_cb</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Init vhost environment. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">init_cb</td><td>Function to be called when the initialization is complete. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a8b8c054fdc8ed4ad573b2d0bcf2d4797"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8b8c054fdc8ed4ad573b2d0bcf2d4797">&#9670;&nbsp;</a></span>spdk_vhost_set_coalescing()</h2>
 
@@ -782,7 +869,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vhos
 </div><div class="memdoc">
 
 <p>Set the path to the directory where vhost sockets will be created. </p>
-<p>This function must be called before <a class="el" href="vhost_8h.html#ab35076d7e06edf2098b814929a04c7d5" title="Init vhost environment.">spdk_vhost_init()</a>.</p>
+<p>This function must be called before spdk_vhost_init().</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">basename</td><td>Path to vhost socket directory</td></tr>
