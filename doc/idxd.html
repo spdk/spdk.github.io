@@ -101,7 +101,7 @@ Key Functions</h1>
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Function   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone"><a class="el" href="idxd_8h.html#a74f5b7dc38344c84bca48f07a83a2621" title="Enumerate the IDXD devices attached to the system and attach the userspace IDXD driver to them if des...">spdk_idxd_probe()</a>   </td><td class="markdownTableBodyNone">Enumerate the IDXD devices attached to the system and attach the userspace IDXD driver to them if desired.    </td></tr>
+<td class="markdownTableBodyNone"><a class="el" href="idxd_8h.html#a9d1c79e79e6238cbfe5e3202850cce51" title="Enumerate the IDXD devices attached to the system and attach the userspace IDXD driver to them if des...">spdk_idxd_probe()</a>   </td><td class="markdownTableBodyNone">Enumerate the IDXD devices attached to the system and attach the userspace IDXD driver to them if desired.    </td></tr>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone"><a class="el" href="idxd_8h.html#ae52d7631d29803ad79831a18f731df6f" title="Build and submit an idxd memory copy request.">spdk_idxd_submit_copy()</a>   </td><td class="markdownTableBodyNone">Build and submit an idxd memory copy request.    </td></tr>
 <tr class="markdownTableRowOdd">
@@ -114,9 +114,9 @@ Key Functions</h1>
 <td class="markdownTableBodyNone"><a class="el" href="idxd_8h.html#a31ff86efdf40d3af8c4b0362caa519b5" title="Build and submit a idxd memory fill request.">spdk_idxd_submit_fill()</a>   </td><td class="markdownTableBodyNone">Build and submit a idxd memory fill request.   </td></tr>
 </table>
 <h1><a class="anchor" id="idxd_configs"></a>
-Pre-defined configurations</h1>
-<p>The RPC <code>idxd_scan_accel_engine</code> is used to both enable IDXD and set it's configuration to one of two pre-defined configs:</p>
-<p>Config #0: 4 groups, 1 work queue per group, 1 engine per group. Config #1: 2 groups, 2 work queues per group, 2 engines per group. </p>
+Pre-defined configuration</h1>
+<p>The low level library can be initialized either directly via <code>spdk_idxd_set_config</code> or through an RPC via one of the accelerator framework modules that rely on the low level IDXD library. Either way, the underlying hardware will be set to the pre-defined hardware configuration below:</p>
+<p>Config: 1 group, 1 work queue, 4 engines in the group. </p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->

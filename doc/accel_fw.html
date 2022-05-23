@@ -110,9 +110,10 @@ Acceleration Plug-In Modules</h1>
 <h2><a class="anchor" id="accel_ioat"></a>
 IOAT Module</h2>
 <p>To use the IOAT engine, use the RPC <a href="https://spdk.io/doc/jsonrpc.html"><code>ioat_scan_accel_engine</code></a> before starting the application.</p>
-<h2><a class="anchor" id="accel_idxd"></a>
-IDXD Module</h2>
-<p>To use the DSA engine, use the RPC <a href="https://spdk.io/doc/jsonrpc.html"><code>idxd_scan_accel_engine</code></a>. By default, this will attempt to load the SPDK user-space idxd driver. To use the built-in kernel driver on Linux, add the <code>-k</code> parameter. See the next section for details on using the kernel driver.</p>
+<h2><a class="anchor" id="accel_dsa"></a>
+DSA Module</h2>
+<p>The DSA module supports the DSA hardware and relies on the low level IDXD library.</p>
+<p>To use the DSA engine, use the RPC <a href="https://spdk.io/doc/jsonrpc.html"><code>dsa_scan_accel_engine</code></a>. By default, this will attempt to load the SPDK user-space idxd driver. To use the built-in kernel driver on Linux, add the <code>-k</code> parameter. See the next section for details on using the kernel driver.</p>
 <p>The DSA hardware supports a limited queue depth and channels. This means that only a limited number of <code>spdk_thread</code>s will be able to acquire a channel. Design software to deal with the inability to get a channel.</p>
 <h2><a class="anchor" id="accel_idxd_kernel"></a>
 How to use kernel idxd driver</h2>

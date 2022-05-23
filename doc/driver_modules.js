@@ -33,7 +33,7 @@ var driver_modules =
     [ "IDXD Driver", "idxd.html", [
       [ "Public Interface", "idxd.html#idxd_interface", null ],
       [ "Key Functions", "idxd.html#idxd_key_functions", null ],
-      [ "Pre-defined configurations", "idxd.html#idxd_configs", null ]
+      [ "Pre-defined configuration", "idxd.html#idxd_configs", null ]
     ] ],
     [ "Virtio driver", "virtio.html", [
       [ "Introduction", "virtio.html#virtio_intro", null ],

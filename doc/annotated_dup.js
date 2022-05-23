@@ -1,5 +1,7 @@
 var annotated_dup =
 [
+    [ "dsa_hw_comp_record", "structdsa__hw__comp__record.html", "structdsa__hw__comp__record" ],
+    [ "iaa_hw_comp_record", "structiaa__hw__comp__record.html", "structiaa__hw__comp__record" ],
     [ "idxd_cmd_register", "unionidxd__cmd__register.html", "unionidxd__cmd__register" ],
     [ "idxd_cmdcap_register", "unionidxd__cmdcap__register.html", "unionidxd__cmdcap__register" ],
     [ "idxd_cmdsts_register", "unionidxd__cmdsts__register.html", "unionidxd__cmdsts__register" ],
@@ -12,7 +14,6 @@ var annotated_dup =
     [ "idxd_groupcap_register", "unionidxd__groupcap__register.html", "unionidxd__groupcap__register" ],
     [ "idxd_grpcfg", "structidxd__grpcfg.html", "structidxd__grpcfg" ],
     [ "idxd_grptbl", "structidxd__grptbl.html", "structidxd__grptbl" ],
-    [ "idxd_hw_comp_record", "structidxd__hw__comp__record.html", "structidxd__hw__comp__record" ],
     [ "idxd_hw_desc", "structidxd__hw__desc.html", "structidxd__hw__desc" ],
     [ "idxd_intcause_register", "unionidxd__intcause__register.html", "unionidxd__intcause__register" ],
     [ "idxd_offsets_register", "unionidxd__offsets__register.html", "unionidxd__offsets__register" ],
