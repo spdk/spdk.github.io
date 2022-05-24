@@ -13,6 +13,11 @@ toc:
     url: ../webinar
 ---
 
+## 2021 19th USENIX Conference on File and Storage Technologies, February 23–25, 2021
+
+### [SpanDB: A Fast, Cost-Effective LSM-tree Based KV Store on Hybrid Storage](https://www.usenix.org/system/files/fast21-chen-hao.pdf)
+> We propose SpanDB, an LSM-tree-based KV store that adapts the popular RocksDB system to utilize selective deployment of high-speed SSDs. SpanDB allows users to host the bulk of their data on cheaper and larger SSDs, while relocating write-ahead logs (WAL) and the top levels of the LSM-tree to a much smaller and faster NVMe SSD. To better utilize this fast disk, SpanDB provides high-speed, parallel WAL writes via SPDK, and enables asynchronous request processing to mitigate inter-thread synchronization overhead and work efficiently with polling-based I/O.
+
 ## SPDK on Microsoft Windows
 
 ### [Windows Platform Development Kit (WPDK)](https://openebs.io/blog/storage-is-evolving/)
