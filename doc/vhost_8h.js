@@ -4,7 +4,7 @@ var vhost_8h =
     [ "spdk_vhost_fini_cb", "vhost_8h.html#a8b37106ad173f20d05da87f89714700b", null ],
     [ "spdk_vhost_init_cb", "vhost_8h.html#aed34ffbfc5835716ba35a9ee050e1e74", null ],
     [ "spdk_vhost_blk_config_json", "vhost_8h.html#aad817236a58d94b5993275ae16a567ec", null ],
-    [ "spdk_vhost_blk_construct", "vhost_8h.html#a31bf721b7ecbe86e38cfa5f82510d746", null ],
+    [ "spdk_vhost_blk_construct", "vhost_8h.html#ad2c49e6e73478eb1974dd38ecfb2eb3d", null ],
     [ "spdk_vhost_blk_fini", "vhost_8h.html#a4e41f1b4db2605981b3194b83d90c35a", null ],
     [ "spdk_vhost_blk_init", "vhost_8h.html#afa85eecef82ce3ee26fd16a210be9466", null ],
     [ "spdk_vhost_dev_find", "vhost_8h.html#a08ca8ab0522c25869c31c163175e6299", null ],

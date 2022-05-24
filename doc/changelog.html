@@ -90,8 +90,9 @@ $(document).ready(function(){initNavTree('changelog.html',''); initResizable(); 
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><p><a class="anchor" id="md_changelog"></a> </p>
-<h1><a class="anchor" id="changelog-v22-05"></a>
-v22.05: (Upcoming Release)</h1>
+<h1><a class="anchor" id="changelog-v22-09"></a>
+v22.09: (Upcoming Release)</h1>
+<h1>v22.05</h1>
 <h2>sock</h2>
 <p>A new option <code>ack_timeout</code> was added to the <code><a class="el" href="structspdk__sock__opts.html" title="Spdk socket initialization options.">spdk_sock_opts</a></code> structure.</p>
 <h2>util</h2>
@@ -108,9 +109,11 @@ v22.05: (Upcoming Release)</h1>
 <p>A new parameter <code>flags</code> was added to all low level submission and preparation APIs to enable the caller to pass operation flags per the DSA specification.</p>
 <p>A new flag 'SPDK_IDXD_FLAG_PERSISTENT' was added to let DSA know that the destination is persistent.</p>
 <p>The RPC <code>idxd_scan_accel_engine</code> has been renamed to <code>dsa_scan_accel_engine</code></p>
+<p>The RPC <code>iaa_scan_accel_engine</code> has been added.</p>
 <p>Many HW related structs/functions with the name <code>idxd</code> have been renamed <code>dsa</code> to more accurately represent the HW they are associated with.</p>
+<p>Two new functions were added to the library <code>spdk_idxd_submit_compress</code> and <code>spdk_idxd_submit_decompress</code></p>
 <h2>accel_fw</h2>
-<p>A new parameter <code>flags</code> was added to accel API. The APIs include: <code>spdk_accel_submit_copy</code> <code>spdk_accel_submit_dualcast</code> <code>spdk_accel_submit_fill</code> <code>spdk_accel_submit_copy_crc32c</code> <code>spdk_accel_submit_copy_crc32cv</code></p>
+<p>A new parameter <code>flags</code> was added to accel API. The APIs include: <code>spdk_accel_submit_copy</code> <code>spdk_accel_submit_dualcast</code> <code>spdk_accel_submit_fill</code> <code>spdk_accel_submit_copy_crc32c</code> <code>spdk_accel_submit_copy_crc32cv</code> <code>spdk_accel_submit_compress</code> <code>spdk_accel_submit_decompress</code></p>
 <p>A new flag <code>ACCEL_FLAG_PERSISTENT</code> was added to indicate the target memory is PMEM.</p>
 <p>The API <code>spdk_accel_get_capabilities</code> has been removed.</p>
 <h2>crypto</h2>

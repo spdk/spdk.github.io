@@ -150,6 +150,15 @@ Functions</h2></td></tr>
 <tr class="memitem:a632b300672a61fbc53c19e190d9e3f40"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="idxd_8h.html#a632b300672a61fbc53c19e190d9e3f40">spdk_idxd_submit_copy_crc32c</a> (struct spdk_idxd_io_channel *chan, struct iovec *diov, size_t diovcnt, struct iovec *siov, size_t siovcnt, uint32_t seed, uint32_t *crc_dst, int flags, <a class="el" href="idxd_8h.html#a75c066c5425700c49f077e20484b50c1">spdk_idxd_req_cb</a> cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:a632b300672a61fbc53c19e190d9e3f40"><td class="mdescLeft">&#160;</td><td class="mdescRight">Build and submit a copy combined with CRC32-C request.  <a href="idxd_8h.html#a632b300672a61fbc53c19e190d9e3f40">More...</a><br /></td></tr>
 <tr class="separator:a632b300672a61fbc53c19e190d9e3f40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a895426d77bd70c6d2688c7e8956516a3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="idxd_8h.html#a895426d77bd70c6d2688c7e8956516a3">spdk_idxd_submit_compress</a> (struct spdk_idxd_io_channel *chan, struct iovec *diov, uint32_t diovcnt, struct iovec *siov, uint32_t siovcnt, uint32_t *output_size, int flags, <a class="el" href="idxd_8h.html#a75c066c5425700c49f077e20484b50c1">spdk_idxd_req_cb</a> cb_fn, void *cb_arg)</td></tr>
+<tr class="memdesc:a895426d77bd70c6d2688c7e8956516a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Build and submit an IAA memory compress request.  <a href="idxd_8h.html#a895426d77bd70c6d2688c7e8956516a3">More...</a><br /></td></tr>
+<tr class="separator:a895426d77bd70c6d2688c7e8956516a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a152627581b35ac9cec6ef4eb8e36a4e3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="idxd_8h.html#a152627581b35ac9cec6ef4eb8e36a4e3">spdk_idxd_submit_decompress</a> (struct spdk_idxd_io_channel *chan, struct iovec *diov, uint32_t diovcnt, struct iovec *siov, uint32_t siovcnt, int flags, <a class="el" href="idxd_8h.html#a75c066c5425700c49f077e20484b50c1">spdk_idxd_req_cb</a> cb_fn, void *cb_arg)</td></tr>
+<tr class="memdesc:a152627581b35ac9cec6ef4eb8e36a4e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Build and submit an IAA memory decompress request.  <a href="idxd_8h.html#a152627581b35ac9cec6ef4eb8e36a4e3">More...</a><br /></td></tr>
+<tr class="separator:a152627581b35ac9cec6ef4eb8e36a4e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d3c2666201ade973ac2fe89a6346139"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="idxd_8h.html#a9d3c2666201ade973ac2fe89a6346139">spdk_idxd_submit_raw_desc</a> (struct spdk_idxd_io_channel *chan, struct <a class="el" href="structidxd__hw__desc.html">idxd_hw_desc</a> *desc, <a class="el" href="idxd_8h.html#a75c066c5425700c49f077e20484b50c1">spdk_idxd_req_cb</a> cb_fn, void *cb_arg)</td></tr>
+<tr class="memdesc:a9d3c2666201ade973ac2fe89a6346139"><td class="mdescLeft">&#160;</td><td class="mdescRight">Build and submit an IDXD raw request.  <a href="idxd_8h.html#a9d3c2666201ade973ac2fe89a6346139">More...</a><br /></td></tr>
+<tr class="separator:a9d3c2666201ade973ac2fe89a6346139"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac92c2ac49b4b576f2538aa58846d93c3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="idxd_8h.html#ac92c2ac49b4b576f2538aa58846d93c3">spdk_idxd_process_events</a> (struct spdk_idxd_io_channel *chan)</td></tr>
 <tr class="memdesc:ac92c2ac49b4b576f2538aa58846d93c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check for completed requests on an IDXD channel.  <a href="idxd_8h.html#ac92c2ac49b4b576f2538aa58846d93c3">More...</a><br /></td></tr>
 <tr class="separator:ac92c2ac49b4b576f2538aa58846d93c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -521,6 +530,94 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a895426d77bd70c6d2688c7e8956516a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a895426d77bd70c6d2688c7e8956516a3">&#9670;&nbsp;</a></span>spdk_idxd_submit_compress()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_idxd_submit_compress </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_idxd_io_channel *&#160;</td>
+          <td class="paramname"><em>chan</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct iovec *&#160;</td>
+          <td class="paramname"><em>diov</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>diovcnt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct iovec *&#160;</td>
+          <td class="paramname"><em>siov</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>siovcnt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t *&#160;</td>
+          <td class="paramname"><em>output_size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>flags</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="idxd_8h.html#a75c066c5425700c49f077e20484b50c1">spdk_idxd_req_cb</a>&#160;</td>
+          <td class="paramname"><em>cb_fn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>cb_arg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Build and submit an IAA memory compress request. </p>
+<p>This function will build the compress descriptor and then immediately submit by writing to the proper device portal.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">chan</td><td>IDXD channel to submit request. </td></tr>
+    <tr><td class="paramname">diov</td><td>Destination iovec. diov with diovcnt must be large enough to hold compressed data. </td></tr>
+    <tr><td class="paramname">diovcnt</td><td>Number of elements in diov for decompress buffer. </td></tr>
+    <tr><td class="paramname">siov</td><td>Source iovec </td></tr>
+    <tr><td class="paramname">siovcnt</td><td>Number of elements in siov </td></tr>
+    <tr><td class="paramname">output_size</td><td>The size of the compressed data </td></tr>
+    <tr><td class="paramname">flags</td><td>Flags, optional flags that can vary per operation. </td></tr>
+    <tr><td class="paramname">cb_fn</td><td>Callback function which will be called when the request is complete. </td></tr>
+    <tr><td class="paramname">cb_arg</td><td>Opaque value which will be passed back as the arg parameter in the completion callback.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, negative errno on failure. </dd></dl>
+
+</div>
+</div>
 <a id="ae52d7631d29803ad79831a18f731df6f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae52d7631d29803ad79831a18f731df6f">&#9670;&nbsp;</a></span>spdk_idxd_submit_copy()</h2>
 
@@ -778,6 +875,87 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a152627581b35ac9cec6ef4eb8e36a4e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a152627581b35ac9cec6ef4eb8e36a4e3">&#9670;&nbsp;</a></span>spdk_idxd_submit_decompress()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_idxd_submit_decompress </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_idxd_io_channel *&#160;</td>
+          <td class="paramname"><em>chan</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct iovec *&#160;</td>
+          <td class="paramname"><em>diov</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>diovcnt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct iovec *&#160;</td>
+          <td class="paramname"><em>siov</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>siovcnt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>flags</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="idxd_8h.html#a75c066c5425700c49f077e20484b50c1">spdk_idxd_req_cb</a>&#160;</td>
+          <td class="paramname"><em>cb_fn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>cb_arg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Build and submit an IAA memory decompress request. </p>
+<p>This function will build the decompress descriptor and then immediately submit by writing to the proper device portal.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">chan</td><td>IDXD channel to submit request. </td></tr>
+    <tr><td class="paramname">diov</td><td>Destination iovec. diov with diovcnt must be large enough to hold decompressed data. </td></tr>
+    <tr><td class="paramname">diovcnt</td><td>Number of elements in diov for decompress buffer. </td></tr>
+    <tr><td class="paramname">siov</td><td>Source iovec </td></tr>
+    <tr><td class="paramname">siovcnt</td><td>Number of elements in siov </td></tr>
+    <tr><td class="paramname">flags</td><td>Flags, optional flags that can vary per operation. </td></tr>
+    <tr><td class="paramname">cb_fn</td><td>Callback function which will be called when the request is complete. </td></tr>
+    <tr><td class="paramname">cb_arg</td><td>Opaque value which will be passed back as the arg parameter in the completion callback.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, negative errno on failure. </dd></dl>
+
+</div>
+</div>
 <a id="ac18651e41ad36f5c0805959d11698b5e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac18651e41ad36f5c0805959d11698b5e">&#9670;&nbsp;</a></span>spdk_idxd_submit_dualcast()</h2>
 
@@ -926,6 +1104,59 @@ Functions</h2></td></tr>
     <tr><td class="paramname">flags</td><td>Flags, optional flags that can vary per operation. </td></tr>
     <tr><td class="paramname">cb_fn</td><td>Callback function which will be called when the request is complete. </td></tr>
     <tr><td class="paramname">cb_arg</td><td>Opaque value which will be passed back as the cb_arg parameter in the completion callback.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, negative errno on failure. </dd></dl>
+
+</div>
+</div>
+<a id="a9d3c2666201ade973ac2fe89a6346139"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9d3c2666201ade973ac2fe89a6346139">&#9670;&nbsp;</a></span>spdk_idxd_submit_raw_desc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_idxd_submit_raw_desc </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_idxd_io_channel *&#160;</td>
+          <td class="paramname"><em>chan</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structidxd__hw__desc.html">idxd_hw_desc</a> *&#160;</td>
+          <td class="paramname"><em>desc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="idxd_8h.html#a75c066c5425700c49f077e20484b50c1">spdk_idxd_req_cb</a>&#160;</td>
+          <td class="paramname"><em>cb_fn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>cb_arg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Build and submit an IDXD raw request. </p>
+<p>This function will process the supplied descriptor and then immediately submit by writing to the proper device portal.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">chan</td><td>IDXD channel to submit request. </td></tr>
+    <tr><td class="paramname">desc</td><td>proprely formatted IDXD descriptor. Memory addresses should be physical. The completion address will be filled in by the lower level library. </td></tr>
+    <tr><td class="paramname">cb_fn</td><td>Callback function which will be called when the request is complete. </td></tr>
+    <tr><td class="paramname">cb_arg</td><td>Opaque value which will be passed back as the arg parameter in the completion callback.</td></tr>
   </table>
   </dd>
 </dl>

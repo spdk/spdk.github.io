@@ -1,6 +1,7 @@
 var annotated_dup =
 [
     [ "dsa_hw_comp_record", "structdsa__hw__comp__record.html", "structdsa__hw__comp__record" ],
+    [ "iaa_aecs", "structiaa__aecs.html", "structiaa__aecs" ],
     [ "iaa_hw_comp_record", "structiaa__hw__comp__record.html", "structiaa__hw__comp__record" ],
     [ "idxd_cmd_register", "unionidxd__cmd__register.html", "unionidxd__cmd__register" ],
     [ "idxd_cmdcap_register", "unionidxd__cmdcap__register.html", "unionidxd__cmdcap__register" ],

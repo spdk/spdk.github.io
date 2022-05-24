@@ -1217,6 +1217,24 @@ dsa_scan_accel_engine</h2>
 <div class="line">  &quot;id&quot;: 1,</div>
 <div class="line">  &quot;result&quot;: true</div>
 <div class="line">}</div>
+</div><!-- fragment --><h2><a class="anchor" id="rpc_iaa_scan_accel_engine"></a>
+iaa_scan_accel_engine</h2>
+<p>Enable IAA accel engine offload. This feature is considered as experimental.</p>
+<h3>Parameters</h3>
+<p>None</p>
+<h3>Example</h3>
+<p>Example request:</p>
+<div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
+<div class="line">  &quot;method&quot;: &quot;iaa_scan_accel_engine&quot;,</div>
+<div class="line">  &quot;id&quot;: 1</div>
+<div class="line">}</div>
+</div><!-- fragment --><p>Example response:</p>
+<div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
+<div class="line">  &quot;id&quot;: 1,</div>
+<div class="line">  &quot;result&quot;: true</div>
+<div class="line">}</div>
 </div><!-- fragment --><h2><a class="anchor" id="rpc_ioat_scan_accel_engine"></a>
 ioat_scan_accel_engine</h2>
 <p>Enable ioat accel engine offload.</p>
@@ -6096,6 +6114,32 @@ vhost_scsi_controller_remove_target</h2>
 <div class="line">  &quot;id&quot;: 1,</div>
 <div class="line">  &quot;result&quot;: true</div>
 <div class="line">}</div>
+</div><!-- fragment --><h2><a class="anchor" id="rpc_virtio_blk_create_transport"></a>
+virtio_blk_create_transport</h2>
+<p>Create virtio blk transport.</p>
+<h3>Parameters</h3>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Transport name   </td></tr>
+</table>
+<h3>Example</h3>
+<p>Example request:</p>
+<div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;params&quot;: {</div>
+<div class="line">    &quot;name&quot;: &quot;vhost_user_blk&quot;</div>
+<div class="line">  },</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
+<div class="line">  &quot;method&quot;: &quot;virtio_blk_create_transport&quot;,</div>
+<div class="line">  &quot;id&quot;: 1</div>
+<div class="line">}</div>
+</div><!-- fragment --><p>Example response:</p>
+<div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
+<div class="line">  &quot;id&quot;: 1,</div>
+<div class="line">  &quot;result&quot;: true</div>
+<div class="line">}</div>
 </div><!-- fragment --><h2><a class="anchor" id="rpc_vhost_create_blk_controller"></a>
 vhost_create_blk_controller</h2>
 <p>Create vhost block controller</p>
@@ -6111,7 +6155,9 @@ vhost_create_blk_controller</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">readonly   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">If true, this target will be read only (default: false)    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">cpumask   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone"><a class="el" href="app_overview.html#cpu_mask">CPU mask</a> for this controller   </td></tr>
+<td class="markdownTableBodyNone">cpumask   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone"><a class="el" href="app_overview.html#cpu_mask">CPU mask</a> for this controller    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">transport   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">virtio blk transport name (default: vhost_user_blk)   </td></tr>
 </table>
 <h3>Example</h3>
 <p>Example request:</p>

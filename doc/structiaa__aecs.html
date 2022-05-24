@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="generator" content="Doxygen 1.9.1" />
-  <title>SPDK: IDXD Driver</title>
+  <title>SPDK: iaa_aecs Struct Reference</title>
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
@@ -66,7 +66,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-$(document).ready(function(){initNavTree('idxd.html',''); initResizable(); });
+$(document).ready(function(){initNavTree('structiaa__aecs.html',''); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -84,40 +84,51 @@ $(document).ready(function(){initNavTree('idxd.html',''); initResizable(); });
 </iframe>
 </div>
 
-<div class="PageDoc"><div class="header">
+<div class="header">
+  <div class="summary">
+<a href="#pub-attribs">Data Fields</a>  </div>
   <div class="headertitle">
-<div class="title">IDXD Driver </div>  </div>
+<div class="title">iaa_aecs Struct Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><a class="anchor" id="md_idxd"></a> </p>
-<h1><a class="anchor" id="idxd_interface"></a>
-Public Interface</h1>
-<ul>
-<li><a class="el" href="idxd_8h.html" title="IDXD driver public interface.">spdk/idxd.h</a></li>
-</ul>
-<h1><a class="anchor" id="idxd_key_functions"></a>
-Key Functions</h1>
-<table class="markdownTable">
-<tr class="markdownTableHead">
-<th class="markdownTableHeadNone">Function   </th><th class="markdownTableHeadNone">Description    </th></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone"><a class="el" href="idxd_8h.html#a9d1c79e79e6238cbfe5e3202850cce51" title="Enumerate the IDXD devices attached to the system and attach the userspace IDXD driver to them if des...">spdk_idxd_probe()</a>   </td><td class="markdownTableBodyNone">Enumerate the IDXD devices attached to the system and attach the userspace IDXD driver to them if desired.    </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone"><a class="el" href="idxd_8h.html#ae52d7631d29803ad79831a18f731df6f" title="Build and submit an idxd memory copy request.">spdk_idxd_submit_copy()</a>   </td><td class="markdownTableBodyNone">Build and submit an idxd memory copy request.    </td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone"><a class="el" href="idxd_8h.html#a163ea97cda6e3eaf879860ef45f85e5e" title="Build and submit a memory compare request.">spdk_idxd_submit_compare()</a>   </td><td class="markdownTableBodyNone">Build and submit a memory compare request.    </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone"><a class="el" href="idxd_8h.html#ab45fa3fdcbe21d2771b0a70f4831336e" title="Build and submit a memory CRC32-C request.">spdk_idxd_submit_crc32c()</a>   </td><td class="markdownTableBodyNone">Build and submit a memory CRC32-C request.    </td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">spdk_idxd_submit_dualcast   </td><td class="markdownTableBodyNone">Build and submit an idxd dualcast request.    </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone"><a class="el" href="idxd_8h.html#a31ff86efdf40d3af8c4b0362caa519b5" title="Build and submit a idxd memory fill request.">spdk_idxd_submit_fill()</a>   </td><td class="markdownTableBodyNone">Build and submit a idxd memory fill request.   </td></tr>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Data Fields</h2></td></tr>
+<tr class="memitem:a1e863ca016b2431e2426136071d560ff"><td class="memItemLeft" align="right" valign="top"><a id="a1e863ca016b2431e2426136071d560ff"></a>
+uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>crc</b></td></tr>
+<tr class="separator:a1e863ca016b2431e2426136071d560ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aedead2ba83dc2dea2d55d431a7f5a09d"><td class="memItemLeft" align="right" valign="top"><a id="aedead2ba83dc2dea2d55d431a7f5a09d"></a>
+uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>xor_checksum</b></td></tr>
+<tr class="separator:aedead2ba83dc2dea2d55d431a7f5a09d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a57cda317366827ad830ba6fe84f17f"><td class="memItemLeft" align="right" valign="top"><a id="a4a57cda317366827ad830ba6fe84f17f"></a>
+uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>rsvd</b> [5]</td></tr>
+<tr class="separator:a4a57cda317366827ad830ba6fe84f17f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e41c1ffd4c09ab6ad04288a53b33e76"><td class="memItemLeft" align="right" valign="top"><a id="a9e41c1ffd4c09ab6ad04288a53b33e76"></a>
+uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>num_output_accum_bits</b></td></tr>
+<tr class="separator:a9e41c1ffd4c09ab6ad04288a53b33e76"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac021a1ae6aa746b81246d28301151fac"><td class="memItemLeft" align="right" valign="top"><a id="ac021a1ae6aa746b81246d28301151fac"></a>
+uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>output_accum</b> [256]</td></tr>
+<tr class="separator:ac021a1ae6aa746b81246d28301151fac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b021d23e52c83039fb9b31a55a174e1"><td class="memItemLeft" align="right" valign="top"><a id="a9b021d23e52c83039fb9b31a55a174e1"></a>
+uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>ll_sym</b> [286]</td></tr>
+<tr class="separator:a9b021d23e52c83039fb9b31a55a174e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a580634ccdd5fd59122a000a0f392477e"><td class="memItemLeft" align="right" valign="top"><a id="a580634ccdd5fd59122a000a0f392477e"></a>
+uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>rsvd1</b></td></tr>
+<tr class="separator:a580634ccdd5fd59122a000a0f392477e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a148d539b4ac853861bba5866ee2b8f3b"><td class="memItemLeft" align="right" valign="top"><a id="a148d539b4ac853861bba5866ee2b8f3b"></a>
+uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>rsvd3</b></td></tr>
+<tr class="separator:a148d539b4ac853861bba5866ee2b8f3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a693eda8deae5d32099af180e3fbd06a2"><td class="memItemLeft" align="right" valign="top"><a id="a693eda8deae5d32099af180e3fbd06a2"></a>
+uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>d_sym</b> [30]</td></tr>
+<tr class="separator:a693eda8deae5d32099af180e3fbd06a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b20352facdb5e4ebfaf0faac72337b2"><td class="memItemLeft" align="right" valign="top"><a id="a7b20352facdb5e4ebfaf0faac72337b2"></a>
+uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>pad</b> [2]</td></tr>
+<tr class="separator:a7b20352facdb5e4ebfaf0faac72337b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h1><a class="anchor" id="idxd_configs"></a>
-Kernel vs User</h1>
-<p>The low level library can be initialized either directly via <code>spdk_idxd_set_config</code>, passing in a value of <code>true</code> indicates that the IDXD kernel driver is loaded and that SPDK will use work queue(s) surfaced by the driver. Passing in <code>false</code> means that the SPDK user space driver will be used to initialize the hardware. </p>
-</div></div><!-- contents -->
-</div><!-- PageDoc -->
+<hr/>The documentation for this struct was generated from the following file:<ul>
+<li><a class="el" href="idxd__spec_8h.html">idxd_spec.h</a></li>
+</ul>
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->

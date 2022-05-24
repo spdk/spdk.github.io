@@ -176,9 +176,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vhos
 <tr class="memitem:ae1ea27c8ae7616e92d916e5c6fc34231"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vhost_8h.html#ae1ea27c8ae7616e92d916e5c6fc34231">spdk_vhost_scsi_dev_remove_tgt</a> (struct spdk_vhost_dev *vdev, unsigned scsi_tgt_num, <a class="el" href="vhost_8h.html#ac2c4b62eaf6503e5f5e520394f9f9fe1">spdk_vhost_event_fn</a> cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:ae1ea27c8ae7616e92d916e5c6fc34231"><td class="mdescLeft">&#160;</td><td class="mdescRight">Detach and destruct SCSI target from a vhost SCSI device.  <a href="vhost_8h.html#ae1ea27c8ae7616e92d916e5c6fc34231">More...</a><br /></td></tr>
 <tr class="separator:ae1ea27c8ae7616e92d916e5c6fc34231"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a31bf721b7ecbe86e38cfa5f82510d746"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vhost_8h.html#a31bf721b7ecbe86e38cfa5f82510d746">spdk_vhost_blk_construct</a> (const char *name, const char *cpumask, const char *dev_name, const struct <a class="el" href="structspdk__json__val.html">spdk_json_val</a> *params)</td></tr>
-<tr class="memdesc:a31bf721b7ecbe86e38cfa5f82510d746"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a vhost blk device.  <a href="vhost_8h.html#a31bf721b7ecbe86e38cfa5f82510d746">More...</a><br /></td></tr>
-<tr class="separator:a31bf721b7ecbe86e38cfa5f82510d746"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2c49e6e73478eb1974dd38ecfb2eb3d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vhost_8h.html#ad2c49e6e73478eb1974dd38ecfb2eb3d">spdk_vhost_blk_construct</a> (const char *name, const char *cpumask, const char *dev_name, const char *transport, const struct <a class="el" href="structspdk__json__val.html">spdk_json_val</a> *params)</td></tr>
+<tr class="memdesc:ad2c49e6e73478eb1974dd38ecfb2eb3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a vhost blk device.  <a href="vhost_8h.html#ad2c49e6e73478eb1974dd38ecfb2eb3d">More...</a><br /></td></tr>
+<tr class="separator:ad2c49e6e73478eb1974dd38ecfb2eb3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa6eba1ce0ac89c3287b755567795869b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vhost_8h.html#aa6eba1ce0ac89c3287b755567795869b">spdk_vhost_dev_remove</a> (struct spdk_vhost_dev *vdev)</td></tr>
 <tr class="memdesc:aa6eba1ce0ac89c3287b755567795869b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove a vhost device.  <a href="vhost_8h.html#aa6eba1ce0ac89c3287b755567795869b">More...</a><br /></td></tr>
 <tr class="separator:aa6eba1ce0ac89c3287b755567795869b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -259,8 +259,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vhos
 
 </div>
 </div>
-<a id="a31bf721b7ecbe86e38cfa5f82510d746"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a31bf721b7ecbe86e38cfa5f82510d746">&#9670;&nbsp;</a></span>spdk_vhost_blk_construct()</h2>
+<a id="ad2c49e6e73478eb1974dd38ecfb2eb3d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad2c49e6e73478eb1974dd38ecfb2eb3d">&#9670;&nbsp;</a></span>spdk_vhost_blk_construct()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -286,6 +286,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vhos
         <tr>
           <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>transport</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype">const struct <a class="el" href="structspdk__json__val.html">spdk_json_val</a> *&#160;</td>
           <td class="paramname"><em>params</em>&#160;</td>
         </tr>
@@ -305,6 +311,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vhos
     <tr><td class="paramname">name</td><td>name of the vhost blk device. The name will also be used for socket name, which is exactly <code>socket_base_dir/name</code> </td></tr>
     <tr><td class="paramname">cpumask</td><td>string containing cpumask in hex. The leading <em>0x</em> is allowed but not required. The mask itself can be constructed as: ((1 &lt;&lt; cpu0) | (1 &lt;&lt; cpu1) | ... | (1 &lt;&lt; cpuN)). </td></tr>
     <tr><td class="paramname">dev_name</td><td>bdev name to associate with this vhost device </td></tr>
+    <tr><td class="paramname">transport</td><td>virtio blk transport name (default: vhost_user_blk) </td></tr>
     <tr><td class="paramname">params</td><td>JSON value object containing variables: readonly if set, all writes to the device will fail with <code>VIRTIO_BLK_S_IOERR</code> error code. packed_ring this controller supports packed ring if set. packed_ring_recovery</td></tr>
   </table>
   </dd>

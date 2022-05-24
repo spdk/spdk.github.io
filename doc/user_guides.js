@@ -168,6 +168,7 @@ var user_guides =
       ] ],
       [ "Acceleration Framework Layer", "jsonrpc.html#jsonrpc_components_accel_fw", [
         [ "dsa_scan_accel_engine", "jsonrpc.html#rpc_dsa_scan_accel_engine", null ],
+        [ "iaa_scan_accel_engine", "jsonrpc.html#rpc_iaa_scan_accel_engine", null ],
         [ "ioat_scan_accel_engine", "jsonrpc.html#rpc_ioat_scan_accel_engine", null ]
       ] ],
       [ "Block Device Abstraction Layer", "jsonrpc.html#jsonrpc_components_bdev", [
@@ -313,6 +314,7 @@ var user_guides =
         [ "vhost_create_scsi_controller", "jsonrpc.html#rpc_vhost_create_scsi_controller", null ],
         [ "vhost_scsi_controller_add_target", "jsonrpc.html#rpc_vhost_scsi_controller_add_target", null ],
         [ "vhost_scsi_controller_remove_target", "jsonrpc.html#rpc_vhost_scsi_controller_remove_target", null ],
+        [ "virtio_blk_create_transport", "jsonrpc.html#rpc_virtio_blk_create_transport", null ],
         [ "vhost_create_blk_controller", "jsonrpc.html#rpc_vhost_create_blk_controller", null ],
         [ "vhost_get_controllers", "jsonrpc.html#rpc_vhost_get_controllers", [
           [ "Response", "jsonrpc.html#rpc_vhost_get_controllers_response", null ]

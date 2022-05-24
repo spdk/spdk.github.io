@@ -107,6 +107,8 @@ Data Structures</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structiaa__hw__comp__record.html">iaa_hw_comp_record</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structiaa__aecs.html">iaa_aecs</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">union &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unionidxd__gencap__register.html">idxd_gencap_register</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">union &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unionidxd__wqcap__register.html">idxd_wqcap_register</a></td></tr>
@@ -193,6 +195,18 @@ Macros</h2></td></tr>
 <tr class="memitem:a3454642e7f419ae9c5b87c75727a5fd7"><td class="memItemLeft" align="right" valign="top"><a id="a3454642e7f419ae9c5b87c75727a5fd7"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>IDXD_FLAG_CRC_READ_CRC_SEED</b>&#160;&#160;&#160;(1 &lt;&lt; 16)</td></tr>
 <tr class="separator:a3454642e7f419ae9c5b87c75727a5fd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98bc61369fa70376f3ecf2a57204260b"><td class="memItemLeft" align="right" valign="top"><a id="a98bc61369fa70376f3ecf2a57204260b"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>IAA_FLAG_RD_SRC2_AECS</b>&#160;&#160;&#160;(1 &lt;&lt; 16)</td></tr>
+<tr class="separator:a98bc61369fa70376f3ecf2a57204260b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64f0a31ad1e1fdbaf9049231ee96910c"><td class="memItemLeft" align="right" valign="top"><a id="a64f0a31ad1e1fdbaf9049231ee96910c"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>IAA_COMP_FLUSH_OUTPUT</b>&#160;&#160;&#160;(1 &lt;&lt; 1)</td></tr>
+<tr class="separator:a64f0a31ad1e1fdbaf9049231ee96910c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc4ec9f8ea0dd44fdf25c731fd82d3ef"><td class="memItemLeft" align="right" valign="top"><a id="acc4ec9f8ea0dd44fdf25c731fd82d3ef"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>IAA_COMP_APPEND_EOB</b>&#160;&#160;&#160;(1 &lt;&lt; 2)</td></tr>
+<tr class="separator:acc4ec9f8ea0dd44fdf25c731fd82d3ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad87524b85a5a2d161514a4b96634d4b8"><td class="memItemLeft" align="right" valign="top"><a id="ad87524b85a5a2d161514a4b96634d4b8"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>IAA_COMP_FLAGS</b>&#160;&#160;&#160;(IAA_COMP_FLUSH_OUTPUT | IAA_COMP_APPEND_EOB)</td></tr>
+<tr class="separator:ad87524b85a5a2d161514a4b96634d4b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
@@ -366,6 +380,9 @@ struct <a class="el" href="structidxd__hw__desc.html">idxd_hw_desc</a>&#160;</td
 <tr class="memitem:a40f284694ced286715dabdc8f70fd8b9"><td class="memItemLeft" align="right" valign="top"><a id="a40f284694ced286715dabdc8f70fd8b9"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_STATIC_ASSERT</b> (sizeof(struct <a class="el" href="structiaa__hw__comp__record.html">iaa_hw_comp_record</a>)==64, &quot;size mismatch&quot;)</td></tr>
 <tr class="separator:a40f284694ced286715dabdc8f70fd8b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca75b17b70907e384b4654962e6c01c2"><td class="memItemLeft" align="right" valign="top"><a id="aca75b17b70907e384b4654962e6c01c2"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_STATIC_ASSERT</b> (sizeof(struct <a class="el" href="structiaa__aecs.html">iaa_aecs</a>)==1568, &quot;size mismatch&quot;)</td></tr>
+<tr class="separator:aca75b17b70907e384b4654962e6c01c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad965a809e6562f153a226b2c2d55c2ad"><td class="memItemLeft" align="right" valign="top"><a id="ad965a809e6562f153a226b2c2d55c2ad"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_STATIC_ASSERT</b> (sizeof(union <a class="el" href="unionidxd__gencap__register.html">idxd_gencap_register</a>)==8, &quot;size mismatch&quot;)</td></tr>
 <tr class="separator:ad965a809e6562f153a226b2c2d55c2ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
