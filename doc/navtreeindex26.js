@@ -1,5 +1,13 @@
 var NAVTREEINDEX26 =
 {
+"structspdk__reduce__backing__dev.html#af33de4b96028f7377b857038ff1b19a6":[14,0,315,8],
+"structspdk__reduce__backing__dev.html#afdc912ec69d16c46e53a7bef10949535":[14,0,315,5],
+"structspdk__reduce__vol__cb__args.html":[14,0,316],
+"structspdk__reduce__vol__cb__args.html#a66f86300cc6cbfd6247517c2e20cce68":[14,0,316,0],
+"structspdk__reduce__vol__cb__args.html#ae6ca2ffa896fb538f00efdbcba388080":[14,0,316,1],
+"structspdk__reduce__vol__params.html":[14,0,317],
+"structspdk__reduce__vol__params.html#a33c2c765f8aef22dbd55f80aa71c6ba5":[14,0,317,2],
+"structspdk__reduce__vol__params.html#a8702d36eea6d40a62076a434e91aa3ca":[14,0,317,0],
 "structspdk__reduce__vol__params.html#ab0345c39a844c449cbdb78550939f0fb":[14,0,317,1],
 "structspdk__reduce__vol__params.html#ae4c8834d1e1c76455842b97c4489ce47":[14,0,317,4],
 "structspdk__reduce__vol__params.html#ae7112c3b0cf5e3bc25a0178fb9846abb":[14,0,317,3],
@@ -241,13 +249,5 @@ var NAVTREEINDEX26 =
 "structspdk__trace__entry.html#a0e513114ecc56fd39f92437ef7935389":[14,0,345,5],
 "structspdk__trace__entry.html#a53d1df54f12eb3a41e75dfcf33544c6e":[14,0,345,2],
 "structspdk__trace__entry.html#a713d879c3f525d9f12b95178b9110d3f":[14,0,345,3],
-"structspdk__trace__entry.html#a8352d515ed92a1c37fc62c8a0473ef3d":[14,0,345,4],
-"structspdk__trace__entry.html#a9703554659f406f3d74ea78405def59e":[14,0,345,1],
-"structspdk__trace__entry__buffer.html":[14,0,346],
-"structspdk__trace__entry__buffer.html#a2739eb0b727a4663714f2252e58a750a":[14,0,346,0],
-"structspdk__trace__entry__buffer.html#a716a51f1690f8fa7d7a15fe2424f10b3":[14,0,346,1],
-"structspdk__trace__entry__buffer.html#a879518fb26c9383526bb89c624a30c5c":[14,0,346,2],
-"structspdk__trace__flags.html":[14,0,347],
-"structspdk__trace__flags.html#a19f99697c48da079e6dd9802c58a6d90":[14,0,347,1],
-"structspdk__trace__flags.html#a3b9abc4c75c2d8f28609892e668f393c":[14,0,347,4]
+"structspdk__trace__entry.html#a8352d515ed92a1c37fc62c8a0473ef3d":[14,0,345,4]
 };

@@ -1,5 +1,13 @@
 var NAVTREEINDEX24 =
 {
+"structspdk__nvmf__fc__ls__cr__assoc__acc.html#a839bf4e6dd071c67a5587a6cf87d5eab":[14,0,253,0],
+"structspdk__nvmf__fc__ls__cr__assoc__acc.html#a9a6ee4f3bb911217248e120cdac521cf":[14,0,253,2],
+"structspdk__nvmf__fc__ls__cr__assoc__rqst.html":[14,0,254],
+"structspdk__nvmf__fc__ls__cr__assoc__rqst.html#a0ba7007b569c6ab07cca6b19e44d751b":[14,0,254,2],
+"structspdk__nvmf__fc__ls__cr__assoc__rqst.html#abdc237857e2569bac1674ea252155d34":[14,0,254,1],
+"structspdk__nvmf__fc__ls__cr__assoc__rqst.html#ac6e20a594f1890d284a06401fa193193":[14,0,254,0],
+"structspdk__nvmf__fc__ls__cr__conn__acc.html":[14,0,255],
+"structspdk__nvmf__fc__ls__cr__conn__acc.html#a800437bdc1bbfdf65e7a9e72dfa127e8":[14,0,255,1],
 "structspdk__nvmf__fc__ls__cr__conn__acc.html#a8764d4b054572a819a29c2aa8701fd75":[14,0,255,0],
 "structspdk__nvmf__fc__ls__cr__conn__rqst.html":[14,0,256],
 "structspdk__nvmf__fc__ls__cr__conn__rqst.html#a2bec66a0a02f0c36fc18e504033af34d":[14,0,256,1],
@@ -241,13 +249,5 @@ var NAVTREEINDEX24 =
 "structspdk__nvmf__transport__opts.html#aab5c69d601c233497d19d6a81b9892ce":[14,0,288,13],
 "structspdk__nvmf__transport__opts.html#aaf76326ff42285ca5f129d173670b9c2":[14,0,288,1],
 "structspdk__nvmf__transport__opts.html#ac029aacb2caf552303ef1cc7f51f7bb9":[14,0,288,11],
-"structspdk__nvmf__transport__opts.html#ac1d12000a6430c282a74731f0b4f19df":[14,0,288,14],
-"structspdk__nvmf__transport__opts.html#ac720992d2cf8950149ab6db89257c98e":[14,0,288,12],
-"structspdk__nvmf__transport__pg__cache__buf.html":[14,0,289],
-"structspdk__nvmf__transport__pg__cache__buf.html#ac9135e1d7d9c0fd9b1f9b947c42c992a":[14,0,289,0],
-"structspdk__nvmf__transport__poll__group.html":[14,0,290],
-"structspdk__nvmf__transport__poll__group.html#a2a6ace898895102a3aa74672b09440aa":[14,0,290,1],
-"structspdk__nvmf__transport__poll__group.html#a310a357189576dfd39c2b9c5c8013394":[14,0,290,4],
-"structspdk__nvmf__transport__poll__group.html#a5c6a9992761a4a66ea17da16acbc5b3f":[14,0,290,6],
-"structspdk__nvmf__transport__poll__group.html#a7b589c06293a7149f0c8d1c0f27b7268":[14,0,290,0]
+"structspdk__nvmf__transport__opts.html#ac1d12000a6430c282a74731f0b4f19df":[14,0,288,14]
 };

@@ -1,5 +1,13 @@
 var NAVTREEINDEX23 =
 {
+"structspdk__nvme__transport__ops.html#aa53e4bd83259554348460405d7afd654":[14,0,229,27],
+"structspdk__nvme__transport__ops.html#aae2f827165c85a9ef8bbd9d36cfccd6c":[14,0,229,24],
+"structspdk__nvme__transport__ops.html#aaf0399ba394a6ccf197f02191eb9859d":[14,0,229,14],
+"structspdk__nvme__transport__ops.html#ab65df816938e10df9c78319454d84b10":[14,0,229,11],
+"structspdk__nvme__transport__ops.html#abba06284c2ce1dd9168ae2022605fd00":[14,0,229,16],
+"structspdk__nvme__transport__ops.html#abdb91b1a46e3a17d588c8fb834e4497a":[14,0,229,12],
+"structspdk__nvme__transport__ops.html#ac37117d2ec9c18a508bdeb4d17f17442":[14,0,229,15],
+"structspdk__nvme__transport__ops.html#ac6dd28d786b8a38bddad48677f5f8c57":[14,0,229,42],
 "structspdk__nvme__transport__ops.html#ac806247ff6aabe8368412ee39ceb6f47":[14,0,229,6],
 "structspdk__nvme__transport__ops.html#ac92b8a574a5647569715cada60d4e19f":[14,0,229,21],
 "structspdk__nvme__transport__ops.html#ad1aba600476558d62c47fecb61b19ed6":[14,0,229,2],
@@ -241,13 +249,5 @@ var NAVTREEINDEX23 =
 "structspdk__nvmf__fc__ls__acc__hdr.html#a7a94251e962d8230a37125a9195b37d6":[14,0,252,1],
 "structspdk__nvmf__fc__ls__acc__hdr.html#af3454cf84f01d60e2c824c70e614e058":[14,0,252,0],
 "structspdk__nvmf__fc__ls__cr__assoc__acc.html":[14,0,253],
-"structspdk__nvmf__fc__ls__cr__assoc__acc.html#a44554ccd19638e7925e5b96335fbd193":[14,0,253,1],
-"structspdk__nvmf__fc__ls__cr__assoc__acc.html#a839bf4e6dd071c67a5587a6cf87d5eab":[14,0,253,0],
-"structspdk__nvmf__fc__ls__cr__assoc__acc.html#a9a6ee4f3bb911217248e120cdac521cf":[14,0,253,2],
-"structspdk__nvmf__fc__ls__cr__assoc__rqst.html":[14,0,254],
-"structspdk__nvmf__fc__ls__cr__assoc__rqst.html#a0ba7007b569c6ab07cca6b19e44d751b":[14,0,254,2],
-"structspdk__nvmf__fc__ls__cr__assoc__rqst.html#abdc237857e2569bac1674ea252155d34":[14,0,254,1],
-"structspdk__nvmf__fc__ls__cr__assoc__rqst.html#ac6e20a594f1890d284a06401fa193193":[14,0,254,0],
-"structspdk__nvmf__fc__ls__cr__conn__acc.html":[14,0,255],
-"structspdk__nvmf__fc__ls__cr__conn__acc.html#a800437bdc1bbfdf65e7a9e72dfa127e8":[14,0,255,1]
+"structspdk__nvmf__fc__ls__cr__assoc__acc.html#a44554ccd19638e7925e5b96335fbd193":[14,0,253,1]
 };
