@@ -120,6 +120,7 @@ var annotated_dup =
     [ "spdk_nvme_bprsel_register", "unionspdk__nvme__bprsel__register.html", "unionspdk__nvme__bprsel__register" ],
     [ "spdk_nvme_cap_register", "unionspdk__nvme__cap__register.html", "unionspdk__nvme__cap__register" ],
     [ "spdk_nvme_cc_register", "unionspdk__nvme__cc__register.html", "unionspdk__nvme__cc__register" ],
+    [ "spdk_nvme_cdata_fuses", "structspdk__nvme__cdata__fuses.html", "structspdk__nvme__cdata__fuses" ],
     [ "spdk_nvme_cdata_nvmf_specific", "structspdk__nvme__cdata__nvmf__specific.html", "structspdk__nvme__cdata__nvmf__specific" ],
     [ "spdk_nvme_cdata_oacs", "structspdk__nvme__cdata__oacs.html", "structspdk__nvme__cdata__oacs" ],
     [ "spdk_nvme_cdata_oncs", "structspdk__nvme__cdata__oncs.html", "structspdk__nvme__cdata__oncs" ],

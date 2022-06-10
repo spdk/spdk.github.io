@@ -1,9 +1,10 @@
 <map id="spdk_nvme_ctrlr_data" name="spdk_nvme_ctrlr_data">
-<area shape="rect" id="node1" title=" " alt="" coords="332,144,499,171"/>
+<area shape="rect" id="node1" title=" " alt="" coords="332,173,499,200"/>
 <area shape="rect" id="node2" href="$structspdk__nvme__cdata__sgls.html" title="Identify Controller data SGL support." alt="" coords="11,5,184,32"/>
 <area shape="rect" id="node3" href="$unionspdk__nvme__vs__register.html" title=" " alt="" coords="9,56,185,83"/>
 <area shape="rect" id="node4" href="$structspdk__nvme__cdata__nvmf__specific.html" title="Identify Controller data NVMe over Fabrics&#45;specific fields." alt="" coords="7,107,188,149"/>
 <area shape="rect" id="node5" href="$structspdk__nvme__power__state.html" title=" " alt="" coords="5,173,189,200"/>
-<area shape="rect" id="node6" href="$structspdk__nvme__cdata__oncs.html" title="Identify Controller data Optional NVM Command Support." alt="" coords="9,224,186,251"/>
-<area shape="rect" id="node7" href="$structspdk__nvme__cdata__oacs.html" title=" " alt="" coords="9,275,186,301"/>
+<area shape="rect" id="node6" href="$structspdk__nvme__cdata__fuses.html" title=" " alt="" coords="6,224,189,251"/>
+<area shape="rect" id="node7" href="$structspdk__nvme__cdata__oncs.html" title="Identify Controller data Optional NVM Command Support." alt="" coords="9,275,186,301"/>
+<area shape="rect" id="node8" href="$structspdk__nvme__cdata__oacs.html" title=" " alt="" coords="9,325,186,352"/>
 </map>

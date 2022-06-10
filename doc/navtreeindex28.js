@@ -1,5 +1,8 @@
 var NAVTREEINDEX28 =
 {
+"trace_8h.html#a92b06e647e386cf0896e0a38499cf494":[15,0,58,58],
+"trace_8h.html#a97958aabb667d95c141acf18f42a5000":[15,0,58,24],
+"trace_8h.html#a9e8521a36138b4e120faa1e0d5ef83da":[15,0,58,33],
 "trace_8h.html#aa0ade5c1286d121c2eafeae8918169db":[15,0,58,55],
 "trace_8h.html#aa7331d8e039fadc27049efd27c1d49a8":[15,0,58,47],
 "trace_8h.html#aa87447ad261172809a5394ee37f601df":[15,0,58,37],
@@ -217,7 +220,7 @@ var NAVTREEINDEX28 =
 "unionspdk__nvme__async__event__completion.html#a20c8319fea9c5a80c719b063324c5bac":[14,0,115,4],
 "unionspdk__nvme__async__event__completion.html#a337a8431d9cbeeb1d9f2037a033f7388":[14,0,115,6],
 "unionspdk__nvme__async__event__completion.html#a6a0f68993c8d4e9facb713ae1942c0a9":[14,0,115,3],
-"unionspdk__nvme__async__event__completion.html#ab7c93168f72598ba68b6d09d69321037":[14,0,115,2],
+"unionspdk__nvme__async__event__completion.html#a9d6985ead162f49d6d025dd162e045f9":[14,0,115,2],
 "unionspdk__nvme__async__event__completion.html#accdc3dc718fb2531d775ba0eb2106b23":[14,0,115,5],
 "unionspdk__nvme__bpinfo__register.html":[14,0,116],
 "unionspdk__nvme__bpinfo__register.html#a0a0f2d47ec4131b202ce50e301a22a43":[14,0,116,3],
@@ -246,8 +249,5 @@ var NAVTREEINDEX28 =
 "unionspdk__nvme__cap__register.html#a9930c21595d81e7eefa8cca0e118450a":[14,0,118,7],
 "unionspdk__nvme__cap__register.html#a9bbd0513d0df169766c0f74adfc4dde1":[14,0,118,2],
 "unionspdk__nvme__cap__register.html#ac8d0f8ca7261552f9fa5894b0c637fd5":[14,0,118,9],
-"unionspdk__nvme__cap__register.html#ad4b6659be786f840893818e951fc1f3d":[14,0,118,6],
-"unionspdk__nvme__cap__register.html#ad8004bf4870d89a73f8d4d95db5d746d":[14,0,118,3],
-"unionspdk__nvme__cap__register.html#adae67761c7519837503eef9e72c3250f":[14,0,118,15],
-"unionspdk__nvme__cap__register.html#af726e8465f09c36be0185475ec67fbce":[14,0,118,5]
+"unionspdk__nvme__cap__register.html#ad4b6659be786f840893818e951fc1f3d":[14,0,118,6]
 };

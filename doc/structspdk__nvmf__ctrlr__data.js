@@ -1,6 +1,7 @@
 var structspdk__nvmf__ctrlr__data =
 [
     [ "aerl", "structspdk__nvmf__ctrlr__data.html#a54108521d9bb848c42253c6371f580f9", null ],
+    [ "fuses", "structspdk__nvmf__ctrlr__data.html#a9fe27966345018a9e10be9ff7d37dc8e", null ],
     [ "ieee", "structspdk__nvmf__ctrlr__data.html#a11d883167d79b4668195116e3e7304fe", null ],
     [ "kas", "structspdk__nvmf__ctrlr__data.html#a41abe60015ca9471608c85c3b31abb48", null ],
     [ "nvmf_specific", "structspdk__nvmf__ctrlr__data.html#a06dba533d308ce3fa37ea3f54cb85230", null ],
