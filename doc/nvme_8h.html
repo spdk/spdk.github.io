@@ -188,7 +188,7 @@ typedef bool(*&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_p
 <tr class="memdesc:a1786f9616afc773b20f752dc98ecd465"><td class="mdescLeft">&#160;</td><td class="mdescRight">Signature for callback function invoked when a command is completed.  <a href="nvme_8h.html#a1786f9616afc773b20f752dc98ecd465">More...</a><br /></td></tr>
 <tr class="separator:a1786f9616afc773b20f752dc98ecd465"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1d066bb761dc3481f081d0d6924766ee"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a1d066bb761dc3481f081d0d6924766ee">spdk_nvme_aer_cb</a>) (void *aer_cb_arg, const struct <a class="el" href="structspdk__nvme__cpl.html">spdk_nvme_cpl</a> *cpl)</td></tr>
-<tr class="memdesc:a1d066bb761dc3481f081d0d6924766ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Signature for callback function invoked when an asynchronous error request command is completed.  <a href="nvme_8h.html#a1d066bb761dc3481f081d0d6924766ee">More...</a><br /></td></tr>
+<tr class="memdesc:a1d066bb761dc3481f081d0d6924766ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Signature for callback function invoked when an asynchronous event request command is completed.  <a href="nvme_8h.html#a1d066bb761dc3481f081d0d6924766ee">More...</a><br /></td></tr>
 <tr class="separator:a1d066bb761dc3481f081d0d6924766ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a53fe1c01a447be8fcd29821a668227a0"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a53fe1c01a447be8fcd29821a668227a0">spdk_nvme_timeout_cb</a>) (void *cb_arg, struct spdk_nvme_ctrlr *ctrlr, struct spdk_nvme_qpair *qpair, uint16_t cid)</td></tr>
 <tr class="memdesc:a53fe1c01a447be8fcd29821a668227a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Signature for the callback function invoked when a timeout is detected on a request.  <a href="nvme_8h.html#a53fe1c01a447be8fcd29821a668227a0">More...</a><br /></td></tr>
@@ -863,7 +863,7 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_trty
       </table>
 </div><div class="memdoc">
 
-<p>Signature for callback function invoked when an asynchronous error request command is completed. </p>
+<p>Signature for callback function invoked when an asynchronous event request command is completed. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">aer_cb_arg</td><td>Context specified by spdk_nvme_register_aer_callback(). </td></tr>
@@ -4424,7 +4424,7 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_trty
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">ctrlr</td><td>Opaque handle to NVMe controller. </td></tr>
-    <tr><td class="paramname">aer_cb_fn</td><td>Callback function invoked when an asynchronous error request command is completed. </td></tr>
+    <tr><td class="paramname">aer_cb_fn</td><td>Callback function invoked when an asynchronous event request command is completed. </td></tr>
     <tr><td class="paramname">aer_cb_arg</td><td>Argument passed to callback function. </td></tr>
   </table>
   </dd>
