@@ -40,6 +40,9 @@ toc:
 ### [可怕！数据库竟然打破安迪-比尔定律](https://www.cnblogs.com/qcloud1001/p/9087911.html)
 > “ 对于单块的SSD Disk，相比传统的Direct IO方式，采用SPDK的直接数据传输无论在顺序读还是随机读模式都有超过一倍的性能提升，对比depth为1时的写性能，无论是随机写还是顺序写都有30%的性能提升。”
 
+### [性能领跑云原生数据库市场！英特尔携手腾讯共建云原生技术生态](https://cloud.it168.com/a2022/0616/6747/000006747234.shtml)
+> “为进一步深入优化产品架构和技术实现，TDSQL-C与英特尔技术团队积极开展联合创新。结合最新一代英特尔® 至强® 可扩展处理器以及英特尔® 傲腾™ 持久内存(PMem) 的硬件特性重构二级缓存设计方案，新版本在IO bound场景中的读写性能提升了2倍以上。TDSQL-C还携手英特尔多方位优化存储方案设计，如加入轮询、算法优化、消除锁等机制，优化存储引擎等，并引入由英特尔提供的SPDK开发套件，优化NVMe固态盘的IOPS和时延性能。”
+
 ## 腾讯云
 ### [腾讯云存储发布三个性能第一新品，让高性能应用轻松上云](https://mp.weixin.qq.com/s?__biz=MjM5NDQyNDQ0Mw==&mid=2652396562&idx=1&sn=6da8907f5bdcb4f73dc7307a179d516b&chksm=bd6b0f068a1c86108a7401cb1cb5a56a63e8a9adf42aca59121c21a11685768c4a06a5543495&mpshare=1&scene=1&srcid=051836Xb2aZWt4X85oZP4k8G&sharer_sharetime=1621389350055&sharer_shareid=bce63ba0449f498eb13c109c5eaef06d&exportkey=A2I9cCxluXFCYkF8NqacmEM%3D&pass_ticket=BB1zGDOlf9tuiEOfomZl%2Bns5Dw6zh5OZZ7%2Fm90M4mBpsRWENC%2BaGtiJq7XyxXwnT&wx_header=0#rd)
 > “当前，腾讯云的快，主要有几大因素，一是硬件使用了RDMA、持久化内存；同时，软件上采用SPDK技术、并优化链路实现零拷贝技术；另外，EC纠删码和无损压缩技术也保持了成本的优势。”

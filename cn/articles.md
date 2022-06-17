@@ -34,6 +34,8 @@ toc:
 
 * [打造用户态存储利器，基于SPDK的存储引擎Blobstore & BlobFS](https://mp.weixin.qq.com/s/jiS3jUNLeL0XzcljF8OhQA)
 
+* [从SPDK Blobstore到BlobFS](https://mp.weixin.qq.com/s?__biz=MzI3NDA4ODY4MA==&mid=2653338658&idx=1&sn=7830690753ba3b95522c9bf5dd1411ce&chksm=f0cb4ba5c7bcc2b3fa4df9b5c6a39dbcdd8d26419adeebc087ac63c2c09fdf418588d7a47b59&exportkey=A2mZCP0OBzE6j8JBtzUQTBM%3D&acctmode=0&pass_ticket=gkNuBUcabkuy398EZ%2Fn44dkahwx5P9bUwD9RkWi%2FRvcd0QjuZ3rPuYVWxUrpBtLq&wx_header=0#rd)
+
 * [一篇文章让你入门，SPDK自动精简配置的逻辑卷使用](https://mp.weixin.qq.com/s?__biz=MzI3NDA4ODY4MA==&mid=2653334755&idx=1&sn=65adf4f6db28513f30b450c2da0edf7d&chksm=f0cb5b64c7bcd272f4524575737af666c25f6efc9bef5151178bdc59ed5d76c0d85c731dc841&token=431082989&lang=zh_CN#rd)
 
 * [SPDK应用编程框架](https://mp.weixin.qq.com/s?__biz=MzI3NDA4ODY4MA==&mid=2653334735&idx=1&sn=b81c263cffc74cf42338d2edda371d2c&chksm=f0cb5b48c7bcd25e83634357c9dc667f02499e348382e011bac20fbc13f442ac58a1e1799704&token=431082989&lang=zh_CN#rd)
@@ -97,6 +99,10 @@ toc:
 * [SPDK Vhost对Live Migration的支持](https://mp.weixin.qq.com/s?__biz=MzI3NDA4ODY4MA==&mid=2653334939&idx=1&sn=012fb74c571aed8093a5a17a38381f8d&chksm=f0cb5a1cc7bcd30a869d87df0e6e7efe2491ec4f3c62eff6d028961e9c6d41d056f00c47c6f9&token=431082989&lang=zh_CN#rd)
 
 * [SPDK Vhost在线恢复：让I/O飞一会儿](https://mp.weixin.qq.com/s?__biz=MzI3NDA4ODY4MA==&mid=2653336929&idx=1&sn=0fba4d1922daeeb1da9c1df2d08aca7b&chksm=f0cb42e6c7bccbf0b724f7fe0fb5bf6c1dea4235bb49adc55b5134907d33a4c93dbec5ba1d03&token=468503366&lang=zh_CN#rd)
+
+* [用户态虚拟化IO通道实现概览及实践(上)](https://mp.weixin.qq.com/s?__biz=MzI3NDA4ODY4MA==&mid=2653338679&idx=1&sn=76191140dcbaf2e513159e6a85106e86&chksm=f0cb4bb0c7bcc2a695e1fbf1e60f16e652b71b9cd1d290e02a2013960343d9d989956e40e2a3&exportkey=A3Gt11jUsyB3d5s4jOC1rdU%3D&acctmode=0&pass_ticket=gkNuBUcabkuy398EZ%2Fn44dkahwx5P9bUwD9RkWi%2FRvcd0QjuZ3rPuYVWxUrpBtLq&wx_header=0#rd)
+
+* [用户态虚拟化IO通道实现概览及实践(下)](https://mp.weixin.qq.com/s?__biz=MzI3NDA4ODY4MA==&mid=2653338707&idx=1&sn=de97572315fe3cf03fbc68785d19501c&chksm=f0cb4bd4c7bcc2c2f8f330f2a85097d86ba2f589f2f62447f7ac1ae2693da30dd7c21df909a4&exportkey=A%2F6tgR0%2BNSkRbev4WagSAaU%3D&acctmode=0&pass_ticket=gkNuBUcabkuy398EZ%2Fn44dkahwx5P9bUwD9RkWi%2FRvcd0QjuZ3rPuYVWxUrpBtLq&wx_header=0#rd)
 
 ******
 
