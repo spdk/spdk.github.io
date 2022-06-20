@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="generator" content="Doxygen 1.9.1" />
-  <title>SPDK: Using bdevperf application</title>
+  <title>SPDK: bdevperf</title>
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
@@ -86,14 +86,14 @@ $(document).ready(function(){initNavTree('bdevperf.html',''); initResizable(); }
 
 <div class="PageDoc"><div class="header">
   <div class="headertitle">
-<div class="title">Using bdevperf application </div>  </div>
+<div class="title">bdevperf </div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><p><a class="anchor" id="md_bdevperf"></a> </p><h1>Introduction</h1>
-<p>bdevperf is an SPDK application that is used for performance testing of block devices (bdevs) exposed by the SPDK bdev layer. It is an alternative to the SPDK bdev fio plugin for benchmarking SPDK bdevs. In some cases, bdevperf can provide much lower overhead than the fio plugin, resulting in much better performance for tests using a limited number of CPU cores.</p>
-<p>bdevperf exposes command line interface that allows to specify SPDK framework options as well as testing options. Since SPDK 20.07, bdevperf supports configuration file that is similar to FIO. It allows user to create jobs parameterized by filename, cpumask, blocksize, queuesize, etc.</p>
+<p>bdevperf is an SPDK application used for performance testing of block devices (bdevs) exposed by the SPDK bdev layer. It is an alternative to the SPDK bdev fio plugin for benchmarking SPDK bdevs. In some cases, bdevperf can provide lower overhead than the fio plugin, resulting in better performance and efficiency for tests using a limited number of CPU cores.</p>
+<p>bdevperf exposes command line interface that allows to specify SPDK framework options as well as testing options. bdevperf also supports a configuration file format similar to FIO. It allows user to create jobs parameterized by filename, cpumask, blocksize, queuesize, etc.</p>
 <h1>Config file</h1>
-<p>Bdevperf's config file is similar to FIO's config file format.</p>
+<p>bdevperf's config file format is similar to FIO.</p>
 <p>Below is an example config file that uses all available parameters:</p>
 <div class="fragment"><div class="line">[global]</div>
 <div class="line">filename=Malloc0:Malloc1</div>

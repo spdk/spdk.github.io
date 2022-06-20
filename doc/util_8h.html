@@ -180,6 +180,14 @@ static uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_divid
 <tr class="memitem:a0bbb80ad35ccd2da128fa69acedd2d90"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8h.html#a0bbb80ad35ccd2da128fa69acedd2d90">spdk_ioviter_next</a> (struct <a class="el" href="structspdk__ioviter.html">spdk_ioviter</a> *iter, void **src, void **dst)</td></tr>
 <tr class="memdesc:a0bbb80ad35ccd2da128fa69acedd2d90"><td class="mdescLeft">&#160;</td><td class="mdescRight">Move to the next segment in the iterator.  <a href="util_8h.html#a0bbb80ad35ccd2da128fa69acedd2d90">More...</a><br /></td></tr>
 <tr class="separator:a0bbb80ad35ccd2da128fa69acedd2d90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a260b1024edd3144707a2286ebf50839e"><td class="memItemLeft" align="right" valign="top"><a id="a260b1024edd3144707a2286ebf50839e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8h.html#a260b1024edd3144707a2286ebf50839e">spdk_copy_iovs_to_buf</a> (void *buf, size_t buf_len, struct iovec *iovs, int iovcnt)</td></tr>
+<tr class="memdesc:a260b1024edd3144707a2286ebf50839e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy iovs contents to buf through memcpy. <br /></td></tr>
+<tr class="separator:a260b1024edd3144707a2286ebf50839e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50613a64c93f060a3a9f6293d64da50d"><td class="memItemLeft" align="right" valign="top"><a id="a50613a64c93f060a3a9f6293d64da50d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8h.html#a50613a64c93f060a3a9f6293d64da50d">spdk_copy_buf_to_iovs</a> (struct iovec *iovs, int iovcnt, void *buf, size_t buf_len)</td></tr>
+<tr class="memdesc:a50613a64c93f060a3a9f6293d64da50d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy buf contents to iovs through memcpy. <br /></td></tr>
+<tr class="separator:a50613a64c93f060a3a9f6293d64da50d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9d8a81dd9f89050cdc2de023d10f1d31"><td class="memItemLeft" align="right" valign="top">static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8h.html#a9d8a81dd9f89050cdc2de023d10f1d31">spdk_sn32_add</a> (uint32_t s1, uint32_t s2)</td></tr>
 <tr class="memdesc:a9d8a81dd9f89050cdc2de023d10f1d31"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add two sequence numbers s1 and s2.  <a href="util_8h.html#a9d8a81dd9f89050cdc2de023d10f1d31">More...</a><br /></td></tr>
 <tr class="separator:a9d8a81dd9f89050cdc2de023d10f1d31"><td class="memSeparator" colspan="2">&#160;</td></tr>

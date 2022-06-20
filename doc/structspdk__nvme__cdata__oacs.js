@@ -1,5 +1,6 @@
 var structspdk__nvme__cdata__oacs =
 [
+    [ "command_feature_lockdown", "structspdk__nvme__cdata__oacs.html#aebe67ff44f6ef341119d8c4f67575b38", null ],
     [ "device_self_test", "structspdk__nvme__cdata__oacs.html#a1fca16ef604c26ac6d4b880b4cde58d1", null ],
     [ "directives", "structspdk__nvme__cdata__oacs.html#a2f870d0e5e779a0ec5c83b96323b0e7e", null ],
     [ "doorbell_buffer_config", "structspdk__nvme__cdata__oacs.html#ae684490e992710d3d334342144b4db17", null ],

@@ -7,6 +7,6 @@ var structspdk__trace__tpoint =
     [ "num_args", "structspdk__trace__tpoint.html#a77fa5c1c40c5a3ff6bef9f7fee8b110c", null ],
     [ "object_type", "structspdk__trace__tpoint.html#ab076ca5845f90898c78f9a64adac7237", null ],
     [ "owner_type", "structspdk__trace__tpoint.html#a0f01e931e5212379d1720697cea4525f", null ],
-    [ "related_objects", "structspdk__trace__tpoint.html#a57e684a10fb21c03413acc3377a70760", null ],
+    [ "related_objects", "structspdk__trace__tpoint.html#ab56e923542ddfcd69c7e6d8bc9afe77b", null ],
     [ "tpoint_id", "structspdk__trace__tpoint.html#a317eccf6a1a97bcaa0fb21002fe174ce", null ]
 ];

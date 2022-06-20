@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="generator" content="Doxygen 1.9.1" />
-  <title>SPDK: SPDK CLI</title>
+  <title>SPDK: spdkcli</title>
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
@@ -86,22 +86,25 @@ $(document).ready(function(){initNavTree('spdkcli.html',''); initResizable(); })
 
 <div class="PageDoc"><div class="header">
   <div class="headertitle">
-<div class="title">SPDK CLI </div>  </div>
+<div class="title">spdkcli </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><a class="anchor" id="md_spdkcli"></a> Spdkcli is a command-line management application for SPDK. Spdkcli has support for a limited number of applications and bdev modules, and should be considered experimental for the v18.04 release. This experimental version was added for v18.04 to get early feedback that can be incorporated as spdkcli becomes more fully-featured for the next SPDK release.</p>
-<h1>Install needed dependencies</h1>
-<p>All dependencies should be handled by scripts/pkgdep.sh script. Package dependencies at the moment include:</p>
+<div class="textblock"><p><a class="anchor" id="md_spdkcli"></a> spdkcli is a command-line management application for SPDK. spdkcli has support for most transport protocols and bdev modules.</p>
+<h1>Dependencies</h1>
+<p>Dependencies are installed by scripts/pkgdep.sh. Package dependencies at the moment include:</p>
 <ul>
 <li>configshell</li>
 </ul>
-<h1>Run SPDK application instance</h1>
+<p>Some distributions name the package configshell_fb.</p>
+<h1>Example usage</h1>
+<h2>Start SPDK application</h2>
 <div class="fragment"><div class="line">./scripts/setup.sh</div>
 <div class="line">./build/bin/vhost -c vhost.json</div>
-</div><!-- fragment --><h1>Run SPDK CLI</h1>
-<p>Spdkcli should be run with the same privileges as SPDK application. In order to use SPDK CLI in interactive mode please use: </p><div class="fragment"><div class="line">scripts/spdkcli.py</div>
+</div><!-- fragment --><h2>Run spdkcli</h2>
+<p>spdkcli should be run with the same privileges as SPDK application.</p>
+<p>To use spdkcli in interactive mode: </p><div class="fragment"><div class="line">scripts/spdkcli.py</div>
 </div><!-- fragment --><p> Use "help" command to get a list of available commands for each tree node.</p>
-<p>It is also possible to use SPDK CLI to run just a single command, just use the command as an argument to the application. For example, to view current configuration and immediately exit: </p><div class="fragment"><div class="line">scripts/spdkcli.py ls</div>
+<p>It is also possible to use spdkcli to run just a single command, just use the command as an argument to the application. For example, to view current configuration and immediately exit: </p><div class="fragment"><div class="line">scripts/spdkcli.py ls</div>
 </div><!-- fragment --><h1>Optional - create Python virtual environment</h1>
 <p>You can use Python virtual environment if you don't want to litter your system Python installation.</p>
 <p>First create the virtual environment: </p><div class="fragment"><div class="line">cd spdk</div>

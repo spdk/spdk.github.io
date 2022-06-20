@@ -16,6 +16,8 @@ var util_8h =
     [ "SPDK_SN32_CMPMAX", "util_8h.html#a744d1bf5de56a453f235c5eb58ec4d00", null ],
     [ "spdk_align32pow2", "util_8h.html#a22383e04171a98834c5f21f0c460e322", null ],
     [ "spdk_align64pow2", "util_8h.html#a23a7b8dc5a8b680176bac1c7bd384406", null ],
+    [ "spdk_copy_buf_to_iovs", "util_8h.html#a50613a64c93f060a3a9f6293d64da50d", null ],
+    [ "spdk_copy_iovs_to_buf", "util_8h.html#a260b1024edd3144707a2286ebf50839e", null ],
     [ "spdk_divide_round_up", "util_8h.html#a3a1ed8f80bbc8e22d1f778a6615512e7", null ],
     [ "spdk_iovcpy", "util_8h.html#a4bf38bbd457a764604d5ba26ed3c8565", null ],
     [ "spdk_ioviter_first", "util_8h.html#ac49e02ee794f8dc5048934504023d6d5", null ],

@@ -97,6 +97,7 @@ v22.09: (Upcoming Release)</h1>
 <p>A new option <code>ack_timeout</code> was added to the <code><a class="el" href="structspdk__sock__opts.html" title="Spdk socket initialization options.">spdk_sock_opts</a></code> structure.</p>
 <h2>util</h2>
 <p>A new parameter <code>bounce_iovcnt</code> was added to <code>spdk_dif_generate_copy</code> and <code>spdk_dif_verify_copy</code>. The <code>bounce_iovcnt</code> is used to specify the number of bounce_iov to support multiple block-aligned fragment copies.</p>
+<p>A new API <code>spdk_copy_iovs_to_buf</code> and <code>spdk_copy_buf_to_iovs</code> were added to copy iovs to buf or copy buf to iovs. There're many cases need to use these two APIs.</p>
 <h2>bdev</h2>
 <p>Removed deprecated spdk_bdev_module_finish_done(). Use <a class="el" href="bdev__module_8h.html#a13dae91c3223ea829a78b979d34018c0" title="Indicate that the module finish has completed.">spdk_bdev_module_fini_done()</a> instead.</p>
 <p>A new API <code>spdk_bdev_unregister_by_name</code> was added to handle race conditions correctly.</p>
