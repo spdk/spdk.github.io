@@ -202,9 +202,9 @@ Functions</h2></td></tr>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="thread_8h.html#afe409bf16664f461daa516b6a6d1682c">spdk_thread_lib_fini</a> (void)</td></tr>
 <tr class="memdesc:afe409bf16664f461daa516b6a6d1682c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Release all resources associated with this library. <br /></td></tr>
 <tr class="separator:afe409bf16664f461daa516b6a6d1682c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4eada7bac2a5c7ceaea891d57f8d3e21"><td class="memItemLeft" align="right" valign="top">struct spdk_thread *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="thread_8h.html#a4eada7bac2a5c7ceaea891d57f8d3e21">spdk_thread_create</a> (const char *name, struct <a class="el" href="structspdk__cpuset.html">spdk_cpuset</a> *cpumask)</td></tr>
-<tr class="memdesc:a4eada7bac2a5c7ceaea891d57f8d3e21"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new SPDK thread object.  <a href="thread_8h.html#a4eada7bac2a5c7ceaea891d57f8d3e21">More...</a><br /></td></tr>
-<tr class="separator:a4eada7bac2a5c7ceaea891d57f8d3e21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49abb69cad49e5f35363d9b8ee990ae2"><td class="memItemLeft" align="right" valign="top">struct spdk_thread *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="thread_8h.html#a49abb69cad49e5f35363d9b8ee990ae2">spdk_thread_create</a> (const char *name, const struct <a class="el" href="structspdk__cpuset.html">spdk_cpuset</a> *cpumask)</td></tr>
+<tr class="memdesc:a49abb69cad49e5f35363d9b8ee990ae2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new SPDK thread object.  <a href="thread_8h.html#a49abb69cad49e5f35363d9b8ee990ae2">More...</a><br /></td></tr>
+<tr class="separator:a49abb69cad49e5f35363d9b8ee990ae2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a60dac2a0fc19b23be6fecb1e5b6f8a7a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="thread_8h.html#a60dac2a0fc19b23be6fecb1e5b6f8a7a">spdk_set_thread</a> (struct spdk_thread *thread)</td></tr>
 <tr class="memdesc:a60dac2a0fc19b23be6fecb1e5b6f8a7a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Force the current system thread to act as if executing the given SPDK thread.  <a href="thread_8h.html#a60dac2a0fc19b23be6fecb1e5b6f8a7a">More...</a><br /></td></tr>
 <tr class="separator:a60dac2a0fc19b23be6fecb1e5b6f8a7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1576,8 +1576,8 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 
 </div>
 </div>
-<a id="a4eada7bac2a5c7ceaea891d57f8d3e21"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4eada7bac2a5c7ceaea891d57f8d3e21">&#9670;&nbsp;</a></span>spdk_thread_create()</h2>
+<a id="a49abb69cad49e5f35363d9b8ee990ae2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a49abb69cad49e5f35363d9b8ee990ae2">&#9670;&nbsp;</a></span>spdk_thread_create()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1591,7 +1591,7 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">struct <a class="el" href="structspdk__cpuset.html">spdk_cpuset</a> *&#160;</td>
+          <td class="paramtype">const struct <a class="el" href="structspdk__cpuset.html">spdk_cpuset</a> *&#160;</td>
           <td class="paramname"><em>cpumask</em>&#160;</td>
         </tr>
         <tr>
@@ -1605,7 +1605,7 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 <p>Creates a new SPDK thread object. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">name</td><td>Human-readable name for the thread; can be retrieved with <a class="el" href="thread_8h.html#ae367048fa89366e845d72015064e6f76" title="Get a thread&#39;s name.">spdk_thread_get_name()</a>. The string is copied, so the pointed-to data only needs to be valid during the <a class="el" href="thread_8h.html#a4eada7bac2a5c7ceaea891d57f8d3e21" title="Creates a new SPDK thread object.">spdk_thread_create()</a> call. May be NULL to specify no name. </td></tr>
+    <tr><td class="paramname">name</td><td>Human-readable name for the thread; can be retrieved with <a class="el" href="thread_8h.html#ae367048fa89366e845d72015064e6f76" title="Get a thread&#39;s name.">spdk_thread_get_name()</a>. The string is copied, so the pointed-to data only needs to be valid during the <a class="el" href="thread_8h.html#a49abb69cad49e5f35363d9b8ee990ae2" title="Creates a new SPDK thread object.">spdk_thread_create()</a> call. May be NULL to specify no name. </td></tr>
     <tr><td class="paramname">cpumask</td><td>Optional mask of CPU cores on which to schedule this thread. This is only a suggestion to the scheduler. The value is copied, so cpumask may be released when this function returns. May be NULL if no mask is required.</td></tr>
   </table>
   </dd>
