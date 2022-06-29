@@ -330,6 +330,7 @@ var user_guides =
         [ "bdev_lvol_delete_lvstore", "jsonrpc.html#rpc_bdev_lvol_delete_lvstore", null ],
         [ "bdev_lvol_get_lvstores", "jsonrpc.html#rpc_bdev_lvol_get_lvstores", null ],
         [ "bdev_lvol_rename_lvstore", "jsonrpc.html#rpc_bdev_lvol_rename_lvstore", null ],
+        [ "bdev_lvol_grow_lvstore", "jsonrpc.html#rpc_bdev_lvol_grow_lvstore", null ],
         [ "bdev_lvol_create", "jsonrpc.html#rpc_bdev_lvol_create", null ],
         [ "bdev_lvol_snapshot", "jsonrpc.html#rpc_bdev_lvol_snapshot", null ],
         [ "bdev_lvol_clone", "jsonrpc.html#rpc_bdev_lvol_clone", null ],

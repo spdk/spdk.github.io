@@ -1,5 +1,12 @@
 var NAVTREEINDEX21 =
 {
+"structspdk__nvme__error__information__entry.html#a34c3a0fecb79e2f01e6d8822fcf967f0":[14,0,143,4],
+"structspdk__nvme__error__information__entry.html#a5ba4864f79c46aa19feeb7919fbb88c5":[14,0,143,5],
+"structspdk__nvme__error__information__entry.html#a62d74f132da11b9b4fd95ee8326afdec":[14,0,143,8],
+"structspdk__nvme__error__information__entry.html#a678149b3c84b5b10f5d98c53106ba8aa":[14,0,143,0],
+"structspdk__nvme__error__information__entry.html#a6cda60f692066d8ced7e5323099db0da":[14,0,143,2],
+"structspdk__nvme__error__information__entry.html#aad6a1a6e16c3a8eea7cf0a84d340a903":[14,0,143,9],
+"structspdk__nvme__error__information__entry.html#aad97afea45fc17b3bac3c6829ace7b58":[14,0,143,12],
 "structspdk__nvme__error__information__entry.html#aaedfc50c23d68fd7dd565a655f2be272":[14,0,143,11],
 "structspdk__nvme__error__information__entry.html#adcc252b0f12c123739a7e29a32f24be0":[14,0,143,6],
 "structspdk__nvme__error__information__entry.html#aeb86c281ad13ccad6fbf242f77515b10":[14,0,143,3],
@@ -242,12 +249,5 @@ var NAVTREEINDEX21 =
 "structspdk__nvme__power__state.html#a08563dffd28f709727c252a0b125f132":[14,0,197,9],
 "structspdk__nvme__power__state.html#a0fda31def17bcc644e29c75eed41e095":[14,0,197,0],
 "structspdk__nvme__power__state.html#a182bcd1e5e35fef4ac952ca5b3ed655f":[14,0,197,15],
-"structspdk__nvme__power__state.html#a2df4913c8372a99adb7b700ba788aa5b":[14,0,197,6],
-"structspdk__nvme__power__state.html#a30424821aa55344985c48f3e70d948fc":[14,0,197,20],
-"structspdk__nvme__power__state.html#a319d7e8756645debe02b0cc3ec953a18":[14,0,197,2],
-"structspdk__nvme__power__state.html#a3d7b128791bcacc6b0681ddb31211f60":[14,0,197,7],
-"structspdk__nvme__power__state.html#a48bfad6dda1c71752d3c335d3e6657c0":[14,0,197,16],
-"structspdk__nvme__power__state.html#a4afb87ece74abcd56ba88ab38a0049e2":[14,0,197,11],
-"structspdk__nvme__power__state.html#a590a64286a4f7bbc67dbdca13a59cde0":[14,0,197,13],
-"structspdk__nvme__power__state.html#a5bdf4704a7d4ac5698e161cd0e3b5b9b":[14,0,197,19]
+"structspdk__nvme__power__state.html#a2df4913c8372a99adb7b700ba788aa5b":[14,0,197,6]
 };

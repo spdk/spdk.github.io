@@ -187,6 +187,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a003e23eb57e1318f2f60c5727cab54e2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lvol_8h.html#a003e23eb57e1318f2f60c5727cab54e2">spdk_lvs_load</a> (struct <a class="el" href="structspdk__bs__dev.html">spdk_bs_dev</a> *bs_dev, <a class="el" href="lvol_8h.html#a757eefd4ce0d68328e7dec58eb2e8a50">spdk_lvs_op_with_handle_complete</a> cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:a003e23eb57e1318f2f60c5727cab54e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load lvolstore from the given blobstore device.  <a href="lvol_8h.html#a003e23eb57e1318f2f60c5727cab54e2">More...</a><br /></td></tr>
 <tr class="separator:a003e23eb57e1318f2f60c5727cab54e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46ad389863de4d9fdf4284a0cd3d5f6c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lvol_8h.html#a46ad389863de4d9fdf4284a0cd3d5f6c">spdk_lvs_grow</a> (struct <a class="el" href="structspdk__bs__dev.html">spdk_bs_dev</a> *bs_dev, <a class="el" href="lvol_8h.html#a757eefd4ce0d68328e7dec58eb2e8a50">spdk_lvs_op_with_handle_complete</a> cb_fn, void *cb_arg)</td></tr>
+<tr class="memdesc:a46ad389863de4d9fdf4284a0cd3d5f6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Grow a lvstore to fill the underlying device.  <a href="lvol_8h.html#a46ad389863de4d9fdf4284a0cd3d5f6c">More...</a><br /></td></tr>
+<tr class="separator:a46ad389863de4d9fdf4284a0cd3d5f6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a25631f8da88352a540abc55f52c0ef2e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lvol_8h.html#a25631f8da88352a540abc55f52c0ef2e">spdk_lvol_open</a> (struct spdk_lvol *lvol, <a class="el" href="lvol_8h.html#a453c8a7896aafb644e21e1e960ab3759">spdk_lvol_op_with_handle_complete</a> cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:a25631f8da88352a540abc55f52c0ef2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Open a lvol.  <a href="lvol_8h.html#a25631f8da88352a540abc55f52c0ef2e">More...</a><br /></td></tr>
 <tr class="separator:a25631f8da88352a540abc55f52c0ef2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -837,6 +840,50 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 on success, negative errno on failure. </dd></dl>
+
+</div>
+</div>
+<a id="a46ad389863de4d9fdf4284a0cd3d5f6c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a46ad389863de4d9fdf4284a0cd3d5f6c">&#9670;&nbsp;</a></span>spdk_lvs_grow()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_lvs_grow </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structspdk__bs__dev.html">spdk_bs_dev</a> *&#160;</td>
+          <td class="paramname"><em>bs_dev</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="lvol_8h.html#a757eefd4ce0d68328e7dec58eb2e8a50">spdk_lvs_op_with_handle_complete</a>&#160;</td>
+          <td class="paramname"><em>cb_fn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>cb_arg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Grow a lvstore to fill the underlying device. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bs_dev</td><td>Pointer to the blobstore device. </td></tr>
+    <tr><td class="paramname">cb_fn</td><td>Completion callback. </td></tr>
+    <tr><td class="paramname">cb_arg</td><td>Completion callback custom arguments. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

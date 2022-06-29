@@ -1,5 +1,12 @@
 var NAVTREEINDEX30 =
 {
+"unionspdk__nvme__feat__host__mem__buffer.html#a149c5d7ebf2f4fb212520f84adf30fef":[14,0,150,0],
+"unionspdk__nvme__feat__host__mem__buffer.html#a68c28c2479533b01ab8edd60cdfed6a0":[14,0,150,2],
+"unionspdk__nvme__feat__host__mem__buffer.html#a9f2c6e219f3ca6eef1841c3791ecec4d":[14,0,150,4],
+"unionspdk__nvme__feat__host__mem__buffer.html#ae38cde477f1878b3ec094fade9da7772":[14,0,150,3],
+"unionspdk__nvme__feat__host__mem__buffer.html#af43cc748ba99dcecb59f3359fd731084":[14,0,150,1],
+"unionspdk__nvme__feat__interrupt__coalescing.html":[14,0,151],
+"unionspdk__nvme__feat__interrupt__coalescing.html#a071bda2a9a8a27708024dc15b7d9c531":[14,0,151,0],
 "unionspdk__nvme__feat__interrupt__coalescing.html#a0a3ddeb18ed4d798712502a972e5474d":[14,0,151,2],
 "unionspdk__nvme__feat__interrupt__coalescing.html#a6aca8c444f46d0ace95f71cbef78e85e":[14,0,151,4],
 "unionspdk__nvme__feat__interrupt__coalescing.html#a6ddf8bc514b93939ff5a3ad2657ecb3a":[14,0,151,3],
@@ -242,12 +249,5 @@ var NAVTREEINDEX30 =
 "vhost_8h.html#a540442ab4b6ec0ba4157e514a09f2379":[15,0,63,17],
 "vhost_8h.html#a6002d25166c3003efd3b6edb51cb84c0":[15,0,63,8],
 "vhost_8h.html#a8b37106ad173f20d05da87f89714700b":[15,0,63,1],
-"vhost_8h.html#a8b8c054fdc8ed4ad573b2d0bcf2d4797":[15,0,63,21],
-"vhost_8h.html#a8be392083ae01ad34cc05b1b5ce2b5e0":[15,0,63,12],
-"vhost_8h.html#a92afea7023f0f61a2038047e2328dd85":[15,0,63,19],
-"vhost_8h.html#aa06efc0d096d4414de40ed5c0b394622":[15,0,63,9],
-"vhost_8h.html#aa6eba1ce0ac89c3287b755567795869b":[15,0,63,11],
-"vhost_8h.html#aad817236a58d94b5993275ae16a567ec":[15,0,63,3],
-"vhost_8h.html#ac2c4b62eaf6503e5f5e520394f9f9fe1":[15,0,63,0],
-"vhost_8h.html#ad2c49e6e73478eb1974dd38ecfb2eb3d":[15,0,63,4]
+"vhost_8h.html#a8b8c054fdc8ed4ad573b2d0bcf2d4797":[15,0,63,21]
 };
