@@ -1,5 +1,8 @@
 var NAVTREEINDEX27 =
 {
+"structspdk__scsi__task.html#aed0de3999a81a9aeb079f0d9e4c4f098":[14,0,338,7],
+"structspdk__scsi__task.html#af64768a06fe99dea3b1c90791d5970b0":[14,0,338,23],
+"structspdk__scsi__task.html#afa26345de5d75d6850560cc6c1bbc5fe":[14,0,338,6],
 "structspdk__scsi__task.html#afc9a5efc76a958e8d228fb6316e4eccb":[14,0,338,22],
 "structspdk__scsi__tgt__port__desc.html":[14,0,339],
 "structspdk__scsi__tgt__port__desc.html#a3d7abed7b610535f8894020b44c498ea":[14,0,339,4],
@@ -39,10 +42,12 @@ var NAVTREEINDEX27 =
 "structspdk__sock__impl__opts.html#af38850a321bda94d83c8830537825240":[14,0,343,3],
 "structspdk__sock__impl__opts.html#afdb21e60863bdb7c5d7e15ed1c2e9828":[14,0,343,1],
 "structspdk__sock__opts.html":[14,0,344],
-"structspdk__sock__opts.html#a0e826e7a46eadaeb53f38c4926cd3bbf":[14,0,344,2],
+"structspdk__sock__opts.html#a0e826e7a46eadaeb53f38c4926cd3bbf":[14,0,344,3],
+"structspdk__sock__opts.html#a201ad9a6a646ebfb115334f732c04ae8":[14,0,344,1],
 "structspdk__sock__opts.html#a2594f3e53452b59d1f699c7a546c32ff":[14,0,344,0],
-"structspdk__sock__opts.html#a3cdb293f2ccf10506e7926317e463d91":[14,0,344,3],
-"structspdk__sock__opts.html#ac8dbf1e759082939e4fc6318122931e7":[14,0,344,1],
+"structspdk__sock__opts.html#a3cdb293f2ccf10506e7926317e463d91":[14,0,344,5],
+"structspdk__sock__opts.html#a85f69cec2069a63c2739f2ca671aaa1b":[14,0,344,4],
+"structspdk__sock__opts.html#ac8dbf1e759082939e4fc6318122931e7":[14,0,344,2],
 "structspdk__sock__request.html":[14,0,345],
 "structspdk__sock__request.html#a11711d340944496cdd8d25d34c7679c2":[14,0,345,3],
 "structspdk__sock__request.html#a1cc6c6eda156b113696fdc486c767b8f":[14,0,345,2],
@@ -244,10 +249,5 @@ var NAVTREEINDEX27 =
 "thread_8h.html#a9f3b860a0c3ec1fb4f1e6743b1d746b6":[15,0,57,20],
 "thread_8h.html#a9f3b860a0c3ec1fb4f1e6743b1d746b6a4852b6a4e09bd601a9cf695a17dc0929":[15,0,57,20,1],
 "thread_8h.html#a9f3b860a0c3ec1fb4f1e6743b1d746b6a5d4cc88e0ae514336a79c553587f47f6":[15,0,57,20,0],
-"thread_8h.html#a9f3b860a0c3ec1fb4f1e6743b1d746b6acb9cc97e75bef6fb525d768a490dc4c9":[15,0,57,20,2],
-"thread_8h.html#a9f877dd192ccdd30572941aa4e453c48":[15,0,57,65],
-"thread_8h.html#aa0d064c5b2e0268ad751a682fa8ed6a6":[15,0,57,21],
-"thread_8h.html#aa0d064c5b2e0268ad751a682fa8ed6a6a37f413cce870e5539efe6fe4607c543e":[15,0,57,21,0],
-"thread_8h.html#aa0d064c5b2e0268ad751a682fa8ed6a6aa758368d3b8b5b8724b9baa3692aa0d7":[15,0,57,21,1],
-"thread_8h.html#aa7a2ca9bd0497544e852c65fd5263cd1":[15,0,57,23]
+"thread_8h.html#a9f3b860a0c3ec1fb4f1e6743b1d746b6acb9cc97e75bef6fb525d768a490dc4c9":[15,0,57,20,2]
 };

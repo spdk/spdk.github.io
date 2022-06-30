@@ -1,7 +1,9 @@
 var structspdk__sock__opts =
 [
     [ "ack_timeout", "structspdk__sock__opts.html#a2594f3e53452b59d1f699c7a546c32ff", null ],
+    [ "ktls", "structspdk__sock__opts.html#a201ad9a6a646ebfb115334f732c04ae8", null ],
     [ "opts_size", "structspdk__sock__opts.html#ac8dbf1e759082939e4fc6318122931e7", null ],
     [ "priority", "structspdk__sock__opts.html#a0e826e7a46eadaeb53f38c4926cd3bbf", null ],
+    [ "tls_version", "structspdk__sock__opts.html#a85f69cec2069a63c2739f2ca671aaa1b", null ],
     [ "zcopy", "structspdk__sock__opts.html#a3cdb293f2ccf10506e7926317e463d91", null ]
 ];

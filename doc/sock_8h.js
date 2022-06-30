@@ -5,6 +5,9 @@ var sock_8h =
     [ "spdk_sock_impl_opts", "structspdk__sock__impl__opts.html", "structspdk__sock__impl__opts" ],
     [ "spdk_sock_opts", "structspdk__sock__opts.html", "structspdk__sock__opts" ],
     [ "SPDK_SOCK_REQUEST_IOV", "sock_8h.html#af21c988574749f3ea04f1e78e9533aab", null ],
+    [ "SPDK_TLS_VERSION_1_1", "sock_8h.html#ae93d4d352f971092e769f39e1f34d38b", null ],
+    [ "SPDK_TLS_VERSION_1_2", "sock_8h.html#a9f631331912a745166a23c3eef6323d0", null ],
+    [ "SPDK_TLS_VERSION_1_3", "sock_8h.html#a912fc4b077bcc17c5499ee524fe506f3", null ],
     [ "spdk_sock_cb", "sock_8h.html#ae297ae75e566b35635d20b959daa7741", null ],
     [ "spdk_placement_mode", "sock_8h.html#a4d72186991093c81a612bb14b740f360", [
       [ "PLACEMENT_NONE", "sock_8h.html#a4d72186991093c81a612bb14b740f360a1c7c35198c0faac5370b0497253dfbd6", null ],

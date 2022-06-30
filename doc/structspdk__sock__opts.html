@@ -112,6 +112,13 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stru
 uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__sock__opts.html#a2594f3e53452b59d1f699c7a546c32ff">ack_timeout</a></td></tr>
 <tr class="memdesc:a2594f3e53452b59d1f699c7a546c32ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Time in msec to wait ack until connection is closed forcefully. <br /></td></tr>
 <tr class="separator:a2594f3e53452b59d1f699c7a546c32ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85f69cec2069a63c2739f2ca671aaa1b"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__sock__opts.html#a85f69cec2069a63c2739f2ca671aaa1b">tls_version</a></td></tr>
+<tr class="memdesc:a85f69cec2069a63c2739f2ca671aaa1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">TLS protocol version.  <a href="structspdk__sock__opts.html#a85f69cec2069a63c2739f2ca671aaa1b">More...</a><br /></td></tr>
+<tr class="separator:a85f69cec2069a63c2739f2ca671aaa1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a201ad9a6a646ebfb115334f732c04ae8"><td class="memItemLeft" align="right" valign="top"><a id="a201ad9a6a646ebfb115334f732c04ae8"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__sock__opts.html#a201ad9a6a646ebfb115334f732c04ae8">ktls</a></td></tr>
+<tr class="memdesc:a201ad9a6a646ebfb115334f732c04ae8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used to enable or disable KTLS for ssl posix socket module. <br /></td></tr>
+<tr class="separator:a201ad9a6a646ebfb115334f732c04ae8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Spdk socket initialization options. </p>
@@ -131,6 +138,23 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 
 <p>The size of <a class="el" href="structspdk__sock__opts.html" title="Spdk socket initialization options.">spdk_sock_opts</a> according to the caller of this library is used for ABI compatibility. </p>
 <p>The library uses this field to know how many fields in this structure are valid. And the library will populate any remaining fields with default values. </p>
+
+</div>
+</div>
+<a id="a85f69cec2069a63c2739f2ca671aaa1b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a85f69cec2069a63c2739f2ca671aaa1b">&#9670;&nbsp;</a></span>tls_version</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t spdk_sock_opts::tls_version</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>TLS protocol version. </p>
+<p>Used by posix socket module. </p>
 
 </div>
 </div>
