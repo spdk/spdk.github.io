@@ -91,64 +91,30 @@ $(document).ready(function(){initNavTree('structspdk__ftl__conf.html',''); initR
 <div class="title">spdk_ftl_conf Struct Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="dynheader">
-Collaboration diagram for spdk_ftl_conf:</div>
-<div class="dyncontent">
-<div class="center"><img src="structspdk__ftl__conf__coll__graph.png" border="0" usemap="#aspdk__ftl__conf_coll__map" alt="Collaboration graph"/></div>
-<map name="aspdk__ftl__conf_coll__map" id="aspdk__ftl__conf_coll__map">
-<area shape="rect" title=" " alt="" coords="7,95,115,121"/>
-<area shape="rect" href="structspdk__ftl__limit.html" title=" " alt="" coords="5,5,116,32"/>
-</map>
-<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:a529cbd0089f91d8d6249263f8e40ead4"><td class="memItemLeft" align="right" valign="top"><a id="a529cbd0089f91d8d6249263f8e40ead4"></a>
-size_t&#160;</td><td class="memItemRight" valign="bottom"><b>lba_rsvd</b></td></tr>
-<tr class="separator:a529cbd0089f91d8d6249263f8e40ead4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab9c76758916fcabfe00ac708f4b3b674"><td class="memItemLeft" align="right" valign="top"><a id="ab9c76758916fcabfe00ac708f4b3b674"></a>
-size_t&#160;</td><td class="memItemRight" valign="bottom"><b>write_buffer_size</b></td></tr>
-<tr class="separator:ab9c76758916fcabfe00ac708f4b3b674"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae126f27ebee5897098817e710aa5b3a4"><td class="memItemLeft" align="right" valign="top"><a id="ae126f27ebee5897098817e710aa5b3a4"></a>
-size_t&#160;</td><td class="memItemRight" valign="bottom"><b>band_thld</b></td></tr>
-<tr class="separator:ae126f27ebee5897098817e710aa5b3a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af6ce7933ea875575b107dc20384a41a7"><td class="memItemLeft" align="right" valign="top"><a id="af6ce7933ea875575b107dc20384a41a7"></a>
-size_t&#160;</td><td class="memItemRight" valign="bottom"><b>max_reloc_qdepth</b></td></tr>
-<tr class="separator:af6ce7933ea875575b107dc20384a41a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a328e94a59f30ee22d9e562eb0816f836"><td class="memItemLeft" align="right" valign="top"><a id="a328e94a59f30ee22d9e562eb0816f836"></a>
-size_t&#160;</td><td class="memItemRight" valign="bottom"><b>max_active_relocs</b></td></tr>
-<tr class="separator:a328e94a59f30ee22d9e562eb0816f836"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a691d6d744e9f87fe44cf3cbfaa63f16f"><td class="memItemLeft" align="right" valign="top"><a id="a691d6d744e9f87fe44cf3cbfaa63f16f"></a>
+uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>overprovisioning</b></td></tr>
+<tr class="separator:a691d6d744e9f87fe44cf3cbfaa63f16f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2d8b8ee84ea01622204be9f6ba9d4fb"><td class="memItemLeft" align="right" valign="top"><a id="aa2d8b8ee84ea01622204be9f6ba9d4fb"></a>
+char *&#160;</td><td class="memItemRight" valign="bottom"><b>core_mask</b></td></tr>
+<tr class="separator:aa2d8b8ee84ea01622204be9f6ba9d4fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1806a31e7d6c83f86d598e477474c102"><td class="memItemLeft" align="right" valign="top"><a id="a1806a31e7d6c83f86d598e477474c102"></a>
 size_t&#160;</td><td class="memItemRight" valign="bottom"><b>user_io_pool_size</b></td></tr>
 <tr class="separator:a1806a31e7d6c83f86d598e477474c102"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abe2ed93f4a6a64b722b4eee1daff3690"><td class="memItemLeft" align="right" valign="top"><a id="abe2ed93f4a6a64b722b4eee1daff3690"></a>
-size_t&#160;</td><td class="memItemRight" valign="bottom"><b>invalid_thld</b></td></tr>
-<tr class="separator:abe2ed93f4a6a64b722b4eee1daff3690"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0ea94001a8f25e32ea91bc919b8830c1"><td class="memItemLeft" align="right" valign="top"><a id="a0ea94001a8f25e32ea91bc919b8830c1"></a>
-struct <a class="el" href="structspdk__ftl__limit.html">spdk_ftl_limit</a>&#160;</td><td class="memItemRight" valign="bottom"><b>limits</b> [SPDK_FTL_LIMIT_MAX]</td></tr>
-<tr class="separator:a0ea94001a8f25e32ea91bc919b8830c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1363805a414bea4d514df53229e44630"><td class="memItemLeft" align="right" valign="top"><a id="a1363805a414bea4d514df53229e44630"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>allow_open_bands</b></td></tr>
-<tr class="separator:a1363805a414bea4d514df53229e44630"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a616721ee96e7cd1f7721ed19f59dc247"><td class="memItemLeft" align="right" valign="top"><a id="a616721ee96e7cd1f7721ed19f59dc247"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>use_append</b></td></tr>
-<tr class="separator:a616721ee96e7cd1f7721ed19f59dc247"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a383d7e6efd84a1ff5c94ae0502531d19"><td class="memItemLeft" align="right" valign="top"><a id="a383d7e6efd84a1ff5c94ae0502531d19"></a>
-uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>max_io_channels</b></td></tr>
-<tr class="separator:a383d7e6efd84a1ff5c94ae0502531d19"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a987f19980cb142a25e3e2770a67061d0"><td class="memItemLeft" ><a id="a987f19980cb142a25e3e2770a67061d0"></a>
-struct {</td></tr>
-<tr class="memitem:aafbb2a8b2f1da16e2f40083a7dbd0a19"><td class="memItemLeft" >
-&#160;&#160;&#160;size_t&#160;&#160;&#160;<b>max_request_cnt</b></td></tr>
-<tr class="separator:aafbb2a8b2f1da16e2f40083a7dbd0a19"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2688e1b90574f32cf46ea57934fe17ac"><td class="memItemLeft" >
-&#160;&#160;&#160;size_t&#160;&#160;&#160;<b>max_request_size</b></td></tr>
-<tr class="separator:a2688e1b90574f32cf46ea57934fe17ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a987f19980cb142a25e3e2770a67061d0"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><b>nv_cache</b></td></tr>
-<tr class="separator:a987f19980cb142a25e3e2770a67061d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acbf45e9a381fdc4c3771a2a5ebfc3caa"><td class="memItemLeft" align="right" valign="top"><a id="acbf45e9a381fdc4c3771a2a5ebfc3caa"></a>
-const char *&#160;</td><td class="memItemRight" valign="bottom"><b>l2p_path</b></td></tr>
-<tr class="separator:acbf45e9a381fdc4c3771a2a5ebfc3caa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a087635eb4ee8d8182adb89e114b09aae"><td class="memItemLeft" align="right" valign="top"><a id="a087635eb4ee8d8182adb89e114b09aae"></a>
+uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>mode</b></td></tr>
+<tr class="separator:a087635eb4ee8d8182adb89e114b09aae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3c31d042527756de3ab66f707bea091"><td class="memItemLeft" align="right" valign="top"><a id="ae3c31d042527756de3ab66f707bea091"></a>
+char *&#160;</td><td class="memItemRight" valign="bottom"><b>base_bdev</b></td></tr>
+<tr class="separator:ae3c31d042527756de3ab66f707bea091"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6844bc6f6597f9e9ec5401ebf2cc390"><td class="memItemLeft" align="right" valign="top"><a id="ac6844bc6f6597f9e9ec5401ebf2cc390"></a>
+char *&#160;</td><td class="memItemRight" valign="bottom"><b>cache_bdev</b></td></tr>
+<tr class="separator:ac6844bc6f6597f9e9ec5401ebf2cc390"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad835c1a2e720866df66b3aa7902c5e20"><td class="memItemLeft" align="right" valign="top"><a id="ad835c1a2e720866df66b3aa7902c5e20"></a>
+uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>base_bdev_reclaim_unit_size</b></td></tr>
+<tr class="separator:ad835c1a2e720866df66b3aa7902c5e20"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li>ftl.h</li>

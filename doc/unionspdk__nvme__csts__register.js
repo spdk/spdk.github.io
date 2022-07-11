@@ -1,6 +1,6 @@
 var unionspdk__nvme__csts__register =
 [
-    [ "bits", "unionspdk__nvme__csts__register.html#a1b3198f55b55e6a93c8c96fae5c18343", null ],
+    [ "bits", "unionspdk__nvme__csts__register.html#aa5bdb65e204b5b80fd3c6df7ad117b03", null ],
     [ "cfs", "unionspdk__nvme__csts__register.html#a9eadb3919064e4e1999d0a820de107f1", null ],
     [ "nssro", "unionspdk__nvme__csts__register.html#a659cecacf4d834ccdb2c7e1675f5e409", null ],
     [ "pp", "unionspdk__nvme__csts__register.html#a36a07e6c600537241f579d52604b1de8", null ],
