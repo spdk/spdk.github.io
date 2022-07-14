@@ -1,5 +1,6 @@
 var NAVTREEINDEX26 =
 {
+"structspdk__pci__addr.html":[14,0,311],
 "structspdk__pci__addr.html#a4b8677cfade6b86f0f12339a404bb539":[14,0,311,2],
 "structspdk__pci__addr.html#a4cd7b095b28771b4ce54540ce43e3eaa":[14,0,311,3],
 "structspdk__pci__addr.html#adb5104016db3f448f3e90c3a151fd70f":[14,0,311,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX26 =
 "structspdk__scsi__vpd__ext__inquiry.html#adb21a07f63af30407aab56e4c90b4cd9":[14,0,338,9],
 "structspdk__scsi__vpd__ext__inquiry.html#af52442dddfa08a8c0bc5cc7d5882894f":[14,0,338,8],
 "structspdk__scsi__vpd__page.html":[14,0,339],
-"structspdk__scsi__vpd__page.html#a8328ae11c2bd1f64ac347121de15da70":[14,0,339,1],
-"structspdk__scsi__vpd__page.html#a974324dcedd8db9b34b4ed7e1747f6c2":[14,0,339,4]
+"structspdk__scsi__vpd__page.html#a8328ae11c2bd1f64ac347121de15da70":[14,0,339,1]
 };

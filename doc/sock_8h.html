@@ -185,6 +185,9 @@ Functions</h2></td></tr>
 <tr class="memitem:aec412e1537891ed4a02c24615df619b0"><td class="memItemLeft" align="right" valign="top">ssize_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sock_8h.html#aec412e1537891ed4a02c24615df619b0">spdk_sock_readv</a> (struct spdk_sock *sock, struct iovec *iov, int iovcnt)</td></tr>
 <tr class="memdesc:aec412e1537891ed4a02c24615df619b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read message from the given socket to the I/O vector array.  <a href="sock_8h.html#aec412e1537891ed4a02c24615df619b0">More...</a><br /></td></tr>
 <tr class="separator:aec412e1537891ed4a02c24615df619b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c50eded982e67fd11b004f3ffd78cb1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sock_8h.html#a5c50eded982e67fd11b004f3ffd78cb1">spdk_sock_readv_async</a> (struct spdk_sock *sock, struct <a class="el" href="structspdk__sock__request.html">spdk_sock_request</a> *req)</td></tr>
+<tr class="memdesc:a5c50eded982e67fd11b004f3ffd78cb1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read message from the given socket asynchronously, calling the provided callback when the whole buffer is filled or an error is encountered.  <a href="sock_8h.html#a5c50eded982e67fd11b004f3ffd78cb1">More...</a><br /></td></tr>
+<tr class="separator:a5c50eded982e67fd11b004f3ffd78cb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4e8d8e1b8155267b4b0289710e3b792f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sock_8h.html#a4e8d8e1b8155267b4b0289710e3b792f">spdk_sock_set_recvlowat</a> (struct spdk_sock *sock, int nbytes)</td></tr>
 <tr class="memdesc:a4e8d8e1b8155267b4b0289710e3b792f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the value used to specify the low water mark (in bytes) for this socket.  <a href="sock_8h.html#a4e8d8e1b8155267b4b0289710e3b792f">More...</a><br /></td></tr>
 <tr class="separator:a4e8d8e1b8155267b4b0289710e3b792f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1140,6 +1143,44 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the length of the received message on success, -1 on failure. </dd></dl>
+
+</div>
+</div>
+<a id="a5c50eded982e67fd11b004f3ffd78cb1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5c50eded982e67fd11b004f3ffd78cb1">&#9670;&nbsp;</a></span>spdk_sock_readv_async()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_sock_readv_async </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_sock *&#160;</td>
+          <td class="paramname"><em>sock</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structspdk__sock__request.html">spdk_sock_request</a> *&#160;</td>
+          <td class="paramname"><em>req</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Read message from the given socket asynchronously, calling the provided callback when the whole buffer is filled or an error is encountered. </p>
+<p>Only a single read request can be active at a time (including synchronous reads).</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sock</td><td>Socket to receive message. </td></tr>
+    <tr><td class="paramname">req</td><td>The read request to submit. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
