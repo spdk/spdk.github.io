@@ -1,5 +1,8 @@
 var NAVTREEINDEX30 =
 {
+"unionspdk__nvme__feat__keep__alive__timer.html#ac10f9a57ae75a0b0436117dcc6dbb913":[14,0,150,2],
+"unionspdk__nvme__feat__keep__alive__timer.html#af9caf28158704a22e4a90f21edcb1140":[14,0,150,0],
+"unionspdk__nvme__feat__lba__range__type.html":[14,0,151],
 "unionspdk__nvme__feat__lba__range__type.html#a24af5f41ea6126af58960a89edd6384a":[14,0,151,0],
 "unionspdk__nvme__feat__lba__range__type.html#a8b36726d65af55a7c237962ea9065911":[14,0,151,2],
 "unionspdk__nvme__feat__lba__range__type.html#a9fcf5c790767d292adf15b5f05ab40cf":[14,0,151,1],
@@ -246,8 +249,5 @@ var NAVTREEINDEX30 =
 "vhost_8h.html#afe5b0a12a12a26d2ddfe6a64f2a8a5e2":[15,0,63,15],
 "vhost_processing.html":[2,5],
 "vhost_processing.html#vhost_processing_init":[2,5,3],
-"vhost_processing.html#vhost_processing_intro":[2,5,1],
-"vhost_processing.html#vhost_processing_io_path":[2,5,4],
-"vhost_processing.html#vhost_processing_qemu":[2,5,2],
-"vhost_processing.html#vhost_processing_toc":[2,5,0]
+"vhost_processing.html#vhost_processing_intro":[2,5,1]
 };

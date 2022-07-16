@@ -1,5 +1,6 @@
 var NAVTREEINDEX4 =
 {
+"histogram__data_8h.html#ae971d398c77b2593e32203a2d9cd8df6":[15,0,26,9],
 "idxd.html":[7,2],
 "idxd.html#idxd_configs":[7,2,2],
 "idxd.html#idxd_interface":[7,2,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX4 =
 "init_8h.html#aa0d0a3b14e1b3dbbfdc5868167099ef1":[15,0,29,6],
 "init_8h.html#ab1fcc31d65d6c865fca23064ac4099b2":[15,0,29,2],
 "init_8h.html#ab7168c69aeb807fe235c2d1d6900ca72":[15,0,29,7],
-"init_8h.html#ad6d27c63164846e87e44de2f39792024":[15,0,29,0],
-"init_8h.html#ada2202d341585d983143604ff93fa411":[15,0,29,3]
+"init_8h.html#ad6d27c63164846e87e44de2f39792024":[15,0,29,0]
 };

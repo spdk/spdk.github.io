@@ -1,5 +1,6 @@
 var NAVTREEINDEX6 =
 {
+"json_8h.html#aae250e55eb9ac9183315695d5f84cd9fa8d2636d118e8554a8ca8711b90f23284":[15,0,33,11,1],
 "json_8h.html#aae250e55eb9ac9183315695d5f84cd9fac8d01fb95f49e164576b158eb771938d":[15,0,33,11,6],
 "json_8h.html#aae250e55eb9ac9183315695d5f84cd9facf4336ea4bc120de2dcdb2cd43c071ee":[15,0,33,11,9],
 "json_8h.html#aae250e55eb9ac9183315695d5f84cd9fae884cf89c4e3e4e1b20954ef882f50f8":[15,0,33,11,7],
@@ -142,11 +143,13 @@ var NAVTREEINDEX6 =
 "jsonrpc.html#rpc_bdev_split_delete":[3,9,9,18],
 "jsonrpc.html#rpc_bdev_uring_create":[3,9,9,19],
 "jsonrpc.html#rpc_bdev_uring_delete":[3,9,9,20],
-"jsonrpc.html#rpc_bdev_virtio_attach_controller":[3,9,5,71],
-"jsonrpc.html#rpc_bdev_virtio_blk_set_hotplug":[3,9,5,74],
-"jsonrpc.html#rpc_bdev_virtio_detach_controller":[3,9,5,73],
-"jsonrpc.html#rpc_bdev_virtio_scsi_get_devices":[3,9,5,72],
+"jsonrpc.html#rpc_bdev_virtio_attach_controller":[3,9,5,73],
+"jsonrpc.html#rpc_bdev_virtio_blk_set_hotplug":[3,9,5,76],
+"jsonrpc.html#rpc_bdev_virtio_detach_controller":[3,9,5,75],
+"jsonrpc.html#rpc_bdev_virtio_scsi_get_devices":[3,9,5,74],
 "jsonrpc.html#rpc_bdev_wait_for_examine":[3,9,5,3],
+"jsonrpc.html#rpc_bdev_xnvme_create":[3,9,5,71],
+"jsonrpc.html#rpc_bdev_xnvme_delete":[3,9,5,72],
 "jsonrpc.html#rpc_bdev_zone_block_create":[3,9,5,43],
 "jsonrpc.html#rpc_bdev_zone_block_delete":[3,9,5,44],
 "jsonrpc.html#rpc_blobfs_create":[3,9,11,1],
@@ -246,8 +249,5 @@ var NAVTREEINDEX6 =
 "jsonrpc.html#rpc_trace_enable_tpoint_group":[3,9,3,12],
 "jsonrpc.html#rpc_trace_get_tpoint_group_mask":[3,9,3,16],
 "jsonrpc.html#rpc_trace_set_tpoint_mask":[3,9,3,14],
-"jsonrpc.html#rpc_vhost_controller_set_coalescing":[3,9,8,0],
-"jsonrpc.html#rpc_vhost_create_blk_controller":[3,9,8,5],
-"jsonrpc.html#rpc_vhost_create_scsi_controller":[3,9,8,1],
-"jsonrpc.html#rpc_vhost_delete_controller":[3,9,8,11]
+"jsonrpc.html#rpc_vhost_controller_set_coalescing":[3,9,8,0]
 };

@@ -119,6 +119,7 @@ var user_guides =
       [ "RAID", "bdev.html#bdev_ug_raid", null ],
       [ "Split", "bdev.html#bdev_ug_split", null ],
       [ "Uring", "bdev.html#bdev_ug_uring", null ],
+      [ "xnvme", "bdev.html#bdev_ug_xnvme", null ],
       [ "Virtio Block", "bdev.html#bdev_config_virtio_blk", null ],
       [ "Virtio SCSI", "bdev.html#bdev_config_virtio_scsi", null ]
     ] ],
@@ -243,6 +244,8 @@ var user_guides =
         [ "bdev_pmem_delete", "jsonrpc.html#rpc_bdev_pmem_delete", null ],
         [ "bdev_passthru_create", "jsonrpc.html#rpc_bdev_passthru_create", null ],
         [ "bdev_passthru_delete", "jsonrpc.html#rpc_bdev_passthru_delete", null ],
+        [ "bdev_xnvme_create", "jsonrpc.html#rpc_bdev_xnvme_create", null ],
+        [ "bdev_xnvme_delete", "jsonrpc.html#rpc_bdev_xnvme_delete", null ],
         [ "bdev_virtio_attach_controller", "jsonrpc.html#rpc_bdev_virtio_attach_controller", null ],
         [ "bdev_virtio_scsi_get_devices", "jsonrpc.html#rpc_bdev_virtio_scsi_get_devices", null ],
         [ "bdev_virtio_detach_controller", "jsonrpc.html#rpc_bdev_virtio_detach_controller", null ],

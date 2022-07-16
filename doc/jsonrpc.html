@@ -3860,6 +3860,66 @@ bdev_passthru_delete</h2>
 <div class="line">  &quot;id&quot;: 1,</div>
 <div class="line">  &quot;result&quot;: true</div>
 <div class="line">}</div>
+</div><!-- fragment --><h2><a class="anchor" id="rpc_bdev_xnvme_create"></a>
+bdev_xnvme_create</h2>
+<p>Create xnvme bdev. This bdev type redirects all IO to its underlying backend.</p>
+<h3>Parameters</h3>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">name of xNVMe bdev to create    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">filename   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">path to device or file (ex: /dev/nvme0n1)    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">io_mechanism   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">IO mechanism to use (ex: libaio, io_uring, io_uring_cmd, etc.)   </td></tr>
+</table>
+<h3>Result</h3>
+<p>Name of newly created bdev.</p>
+<h3>Example</h3>
+<p>Example request:</p>
+<div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
+<div class="line">  &quot;method&quot;: &quot;bdev_xnvme_create&quot;,</div>
+<div class="line">  &quot;id&quot;: 1,</div>
+<div class="line">  &quot;params&quot;: {</div>
+<div class="line">    &quot;name&quot;: &quot;bdev_ng0n1&quot;,</div>
+<div class="line">    &quot;filename&quot;: &quot;/dev/ng0n1&quot;,</div>
+<div class="line">    &quot;io_mechanism&quot;: &quot;io_uring_cmd&quot;</div>
+<div class="line">  }</div>
+<div class="line">}</div>
+</div><!-- fragment --><p>Example response:</p>
+<div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
+<div class="line">  &quot;id&quot;: 1,</div>
+<div class="line">  &quot;result&quot;: &quot;bdev_ng0n1&quot;</div>
+<div class="line">}</div>
+</div><!-- fragment --><h2><a class="anchor" id="rpc_bdev_xnvme_delete"></a>
+bdev_xnvme_delete</h2>
+<p>Delete xnvme bdev.</p>
+<h3>Parameters</h3>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">name of xnvme bdev to delete   </td></tr>
+</table>
+<h3>Example</h3>
+<p>Example request:</p>
+<div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;params&quot;: {</div>
+<div class="line">    &quot;name&quot;: &quot;bdev_ng0n1&quot;</div>
+<div class="line">  },</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
+<div class="line">  &quot;method&quot;: &quot;bdev_xnvme_delete&quot;,</div>
+<div class="line">  &quot;id&quot;: 1</div>
+<div class="line">}</div>
+</div><!-- fragment --><p>Example response:</p>
+<div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
+<div class="line">  &quot;id&quot;: 1,</div>
+<div class="line">  &quot;result&quot;: true</div>
+<div class="line">}</div>
 </div><!-- fragment --><h2><a class="anchor" id="rpc_bdev_virtio_attach_controller"></a>
 bdev_virtio_attach_controller</h2>
 <p>Create new initiator <a class="el" href="bdev.html#bdev_config_virtio_scsi">Virtio SCSI</a> or <a class="el" href="bdev.html#bdev_config_virtio_blk">Virtio Block</a> and expose all found bdevs.</p>
