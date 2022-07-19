@@ -1,0 +1,4 @@
+<map id="spdk_sock_opts" name="spdk_sock_opts">
+<area shape="rect" id="node1" title="Spdk socket initialization options." alt="" coords="23,95,149,121"/>
+<area shape="rect" id="node2" href="$structspdk__sock__impl__opts.html" title="SPDK socket implementation options." alt="" coords="5,5,167,32"/>
+</map>

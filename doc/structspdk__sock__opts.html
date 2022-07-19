@@ -94,6 +94,15 @@ $(document).ready(function(){initNavTree('structspdk__sock__opts.html',''); init
 
 <p>Spdk socket initialization options.  
  <a href="structspdk__sock__opts.html#details">More...</a></p>
+<div class="dynheader">
+Collaboration diagram for spdk_sock_opts:</div>
+<div class="dyncontent">
+<div class="center"><img src="structspdk__sock__opts__coll__graph.png" border="0" usemap="#aspdk__sock__opts_coll__map" alt="Collaboration graph"/></div>
+<map name="aspdk__sock__opts_coll__map" id="aspdk__sock__opts_coll__map">
+<area shape="rect" title="Spdk socket initialization options." alt="" coords="23,95,149,121"/>
+<area shape="rect" href="structspdk__sock__impl__opts.html" title="SPDK socket implementation options." alt="" coords="5,5,167,32"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
@@ -119,11 +128,35 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__sock__opts.html#a201ad9a6a646ebfb115334f732c04ae8">ktls</a></td></tr>
 <tr class="memdesc:a201ad9a6a646ebfb115334f732c04ae8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used to enable or disable KTLS for ssl posix socket module. <br /></td></tr>
 <tr class="separator:a201ad9a6a646ebfb115334f732c04ae8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a328c0cf2f7ffeeaab0a77567597507bd"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structspdk__sock__impl__opts.html">spdk_sock_impl_opts</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__sock__opts.html#a328c0cf2f7ffeeaab0a77567597507bd">impl_opts</a></td></tr>
+<tr class="memdesc:a328c0cf2f7ffeeaab0a77567597507bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Socket implementation options.  <a href="structspdk__sock__opts.html#a328c0cf2f7ffeeaab0a77567597507bd">More...</a><br /></td></tr>
+<tr class="separator:a328c0cf2f7ffeeaab0a77567597507bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afce30ae74efc5b3b5aaa998e8fc4090d"><td class="memItemLeft" align="right" valign="top"><a id="afce30ae74efc5b3b5aaa998e8fc4090d"></a>
+size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__sock__opts.html#afce30ae74efc5b3b5aaa998e8fc4090d">impl_opts_size</a></td></tr>
+<tr class="memdesc:afce30ae74efc5b3b5aaa998e8fc4090d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Size of the impl_opts structure. <br /></td></tr>
+<tr class="separator:afce30ae74efc5b3b5aaa998e8fc4090d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Spdk socket initialization options. </p>
 <p>A pointer to this structure will be used by <a class="el" href="sock_8h.html#ace429a6a4c422da111effe7f17689dfd" title="Create a socket using the specific sock implementation, bind the socket to the specified address and ...">spdk_sock_listen_ext()</a> or <a class="el" href="sock_8h.html#ae4a2a815e571ea3401cb94ed915cf251" title="Create a socket using the specific sock implementation, connect the socket to the specified address a...">spdk_sock_connect_ext()</a> to allow the user to request non-default options on the socket. </p>
 </div><h2 class="groupheader">Field Documentation</h2>
+<a id="a328c0cf2f7ffeeaab0a77567597507bd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a328c0cf2f7ffeeaab0a77567597507bd">&#9670;&nbsp;</a></span>impl_opts</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="structspdk__sock__impl__opts.html">spdk_sock_impl_opts</a>* spdk_sock_opts::impl_opts</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Socket implementation options. </p>
+<p>If non-NULL, these will override those set by <a class="el" href="sock_8h.html#a81541bb1b8ae42b952c82988c482e99d" title="Set socket implementation options.">spdk_sock_impl_set_opts()</a>. The library copies this structure internally, so the user can free it immediately after a <a class="el" href="sock_8h.html#afcbfb1e52df2160547b6f5e2bb8ec636" title="Create a socket using the specific sock implementation, connect the socket to the specified address a...">spdk_sock_connect()</a>/spdk_sock_listen() call. </p>
+
+</div>
+</div>
 <a id="ac8dbf1e759082939e4fc6318122931e7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac8dbf1e759082939e4fc6318122931e7">&#9670;&nbsp;</a></span>opts_size</h2>
 

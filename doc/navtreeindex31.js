@@ -1,5 +1,7 @@
 var NAVTREEINDEX31 =
 {
+"vhost_processing.html#vhost_processing_init":[2,5,3],
+"vhost_processing.html#vhost_processing_intro":[2,5,1],
 "vhost_processing.html#vhost_processing_io_path":[2,5,4],
 "vhost_processing.html#vhost_processing_qemu":[2,5,2],
 "vhost_processing.html#vhost_processing_toc":[2,5,0],
