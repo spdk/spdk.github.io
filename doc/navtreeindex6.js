@@ -1,5 +1,6 @@
 var NAVTREEINDEX6 =
 {
+"json_8h.html#aae250e55eb9ac9183315695d5f84cd9fa7a0aa08d8ef6ddad9be8cd7cebaedc2c":[15,0,33,11,3],
 "json_8h.html#aae250e55eb9ac9183315695d5f84cd9fa8d2636d118e8554a8ca8711b90f23284":[15,0,33,11,1],
 "json_8h.html#aae250e55eb9ac9183315695d5f84cd9fac8d01fb95f49e164576b158eb771938d":[15,0,33,11,6],
 "json_8h.html#aae250e55eb9ac9183315695d5f84cd9facf4336ea4bc120de2dcdb2cd43c071ee":[15,0,33,11,9],
@@ -248,6 +249,5 @@ var NAVTREEINDEX6 =
 "jsonrpc.html#rpc_trace_disable_tpoint_group":[3,9,3,13],
 "jsonrpc.html#rpc_trace_enable_tpoint_group":[3,9,3,12],
 "jsonrpc.html#rpc_trace_get_tpoint_group_mask":[3,9,3,16],
-"jsonrpc.html#rpc_trace_set_tpoint_mask":[3,9,3,14],
-"jsonrpc.html#rpc_vhost_controller_set_coalescing":[3,9,8,0]
+"jsonrpc.html#rpc_trace_set_tpoint_mask":[3,9,3,14]
 };

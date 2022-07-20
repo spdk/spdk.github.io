@@ -1,5 +1,6 @@
 var NAVTREEINDEX15 =
 {
+"sock_8h.html#afcbfb1e52df2160547b6f5e2bb8ec636":[15,0,54,12],
 "spdk_top.html":[8,2],
 "spdkcli.html":[8,0],
 "ssd_internals.html":[2,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX15 =
 "structiscsi__bhs__login__req.html#aa277cfb67e4843e5f0ef505d3da6b0db":[14,0,28,3],
 "structiscsi__bhs__login__req.html#ab0012806d5ac4a066598813f92a7ebab":[14,0,28,15],
 "structiscsi__bhs__login__req.html#ac378cef9ba25b1d356ef8b545d78fcbb":[14,0,28,0],
-"structiscsi__bhs__login__req.html#ac7bd08a869f115a555f761947baa18bd":[14,0,28,2],
-"structiscsi__bhs__login__req.html#ad32b684d316061b52f22bf73470cd539":[14,0,28,5]
+"structiscsi__bhs__login__req.html#ac7bd08a869f115a555f761947baa18bd":[14,0,28,2]
 };

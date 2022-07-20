@@ -7,6 +7,7 @@ var bdev_8h =
     [ "spdk_bdev_io_wait_entry", "structspdk__bdev__io__wait__entry.html", "structspdk__bdev__io__wait__entry" ],
     [ "SPDK_BDEV_BUF_SIZE_WITH_MD", "bdev_8h.html#a60c60455b0ae9e1c8139bb24df036d6d", null ],
     [ "SPDK_BDEV_LARGE_BUF_MAX_SIZE", "bdev_8h.html#a9496c34e0fc135e1f309fd586e8e65d0", null ],
+    [ "SPDK_BDEV_MAX_INTERLEAVED_MD_SIZE", "bdev_8h.html#a9a20cbee5def3eb9f9893d60ba70103e", null ],
     [ "SPDK_BDEV_SMALL_BUF_MAX_SIZE", "bdev_8h.html#a22219ae3fb084dcb87bcc6d454b415aa", null ],
     [ "spdk_bdev_event_cb_t", "bdev_8h.html#ab4755b1b0a2a204732c3be266b6e1b08", null ],
     [ "spdk_bdev_fini_cb", "bdev_8h.html#ad33efc88148d8984b353e54b7ee0058f", null ],
