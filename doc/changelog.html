@@ -634,7 +634,7 @@ v20.04: SPDK Top, IDXD, NVMe qpair groups</h1>
 <h2>iscsi</h2>
 <p>The iSCSI target now creates a lightweight thread per poll group instead of assuming a pool of lightweight threads already exist at start up time. A poll group is a collection of unrelated iSCSI connections. Each poll group is only accessed from the associated lightweight thread.</p>
 <h2>ftl</h2>
-<p>Several changes have been made to the <code><a class="el" href="structspdk__ftl__conf.html">spdk_ftl_conf</a></code>, <code>spdk_ftl_dev_init_ops</code>, and <code>spdk_ftl_attrs</code> structs. Please see <code>include/spdk/ftl.h</code> for more details.</p>
+<p>Several changes have been made to the <code><a class="el" href="structspdk__ftl__conf.html">spdk_ftl_conf</a></code>, <code>spdk_ftl_dev_init_ops</code>, and <code><a class="el" href="structspdk__ftl__attrs.html">spdk_ftl_attrs</a></code> structs. Please see <code>include/spdk/ftl.h</code> for more details.</p>
 <h2>miscellaneous</h2>
 <p>The <code>--json-ignore-init-errors</code> command line parameter has been added to ignore initialization errors on JSON config load.</p>
 <p>The public header file io_channel.h has been removed. Please use <a class="el" href="thread_8h.html" title="Thread.">thread.h</a> which has the exact same API.</p>

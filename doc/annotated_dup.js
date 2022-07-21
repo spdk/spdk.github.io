@@ -75,6 +75,7 @@ var annotated_dup =
     [ "spdk_dif_error", "structspdk__dif__error.html", "structspdk__dif__error" ],
     [ "spdk_env_opts", "structspdk__env__opts.html", "structspdk__env__opts" ],
     [ "spdk_file_stat", "structspdk__file__stat.html", "structspdk__file__stat" ],
+    [ "spdk_ftl_attrs", "structspdk__ftl__attrs.html", "structspdk__ftl__attrs" ],
     [ "spdk_ftl_conf", "structspdk__ftl__conf.html", "structspdk__ftl__conf" ],
     [ "spdk_governor", "structspdk__governor.html", "structspdk__governor" ],
     [ "spdk_governor_capabilities", "structspdk__governor__capabilities.html", "structspdk__governor__capabilities" ],
