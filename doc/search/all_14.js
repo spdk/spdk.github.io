@@ -14,7 +14,7 @@ var searchData=
   ['thsel_2554',['thsel',['../unionspdk__nvme__feat__temperature__threshold.html#a384b25c620ca81031b6260f6b0e16142',1,'spdk_nvme_feat_temperature_threshold']]],
   ['time_2555',['time',['../unionspdk__nvme__feat__interrupt__coalescing.html#a6aca8c444f46d0ace95f71cbef78e85e',1,'spdk_nvme_feat_interrupt_coalescing']]],
   ['tler_2556',['tler',['../unionspdk__nvme__feat__error__recovery.html#ab5a2e6ab3de7f3011338acb2289817bd',1,'spdk_nvme_feat_error_recovery']]],
-  ['tls_5fversion_2557',['tls_version',['../structspdk__sock__opts.html#a85f69cec2069a63c2739f2ca671aaa1b',1,'spdk_sock_opts']]],
+  ['tls_5fversion_2557',['tls_version',['../structspdk__sock__impl__opts.html#ad81ccecfc115648e6616e92ad695e609',1,'spdk_sock_impl_opts']]],
   ['tmpsel_2558',['tmpsel',['../unionspdk__nvme__feat__temperature__threshold.html#a611a74458d69f25c9151ec7ae81a6b73',1,'spdk_nvme_feat_temperature_threshold']]],
   ['tmpth_2559',['tmpth',['../unionspdk__nvme__feat__temperature__threshold.html#ad0c1659bef91e533c0ffe784e39871de',1,'spdk_nvme_feat_temperature_threshold']]],
   ['tmt1_2560',['tmt1',['../unionspdk__nvme__feat__host__controlled__thermal__management.html#a196363adf5f14463140d5c3d7d7a0564',1,'spdk_nvme_feat_host_controlled_thermal_management']]],

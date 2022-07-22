@@ -7644,7 +7644,9 @@ sock_impl_get_options</h2>
 <div class="line">    &quot;enable_placement_id&quot;: 0,</div>
 <div class="line">    &quot;enable_zerocopy_send_server&quot;: true,</div>
 <div class="line">    &quot;enable_zerocopy_send_client&quot;: false,</div>
-<div class="line">    &quot;zerocopy_threshold&quot;: 0</div>
+<div class="line">    &quot;zerocopy_threshold&quot;: 0,</div>
+<div class="line">    &quot;tls_version&quot;: 13,</div>
+<div class="line">    &quot;enable_ktls&quot;: false</div>
 <div class="line">  }</div>
 <div class="line">}</div>
 </div><!-- fragment --><h2><a class="anchor" id="rpc_sock_impl_set_options"></a>
@@ -7673,7 +7675,7 @@ sock_impl_set_options</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">zerocopy_threshold   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">Set zerocopy_threshold in bytes. A consecutive sequence of requests' iovecs   </td></tr>
 </table>
-<p>that fall below this threshold may be sent without zerocopy flag set</p>
+<p>that fall below this threshold may be sent without zerocopy flag set tls_version | Optional | number | TLS protocol version, e.g. 13 for v1.3 (only applies when impl_name == ssl) enable_ktls | Optional | boolean | Enable or disable Kernel TLS (only applies when impl_name == ssl)</p>
 <h3>Response</h3>
 <p>True if socket layer options were set successfully.</p>
 <h3>Example</h3>
@@ -7691,7 +7693,9 @@ sock_impl_set_options</h2>
 <div class="line">    &quot;enable_placement_id&quot;: 0,</div>
 <div class="line">    &quot;enable_zerocopy_send_server&quot;: true,</div>
 <div class="line">    &quot;enable_zerocopy_send_client&quot;: false,</div>
-<div class="line">    &quot;zerocopy_threshold&quot;: 10240</div>
+<div class="line">    &quot;zerocopy_threshold&quot;: 10240,</div>
+<div class="line">    &quot;tls_version&quot;: 13,</div>
+<div class="line">    &quot;enable_ktls&quot;: false</div>
 <div class="line">  }</div>
 <div class="line">}</div>
 </div><!-- fragment --><p>Example response:</p>

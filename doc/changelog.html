@@ -101,7 +101,7 @@ v22.09: (Upcoming Release)</h1>
 <h2>lvol</h2>
 <p>Add num_md_pages_per_cluster_ratio parameter to the bdev_lvol_create_lvstore RPC. Calculate num_md_pages from num_md_pages_per_cluster_ratio, and pass it to <a class="el" href="structspdk__bs__opts.html">spdk_bs_opts</a>.</p>
 <h2>rpc</h2>
-<p>New options <code>ktls</code> and <code>tls_version</code> were added to the <code><a class="el" href="structspdk__sock__opts.html" title="Spdk socket initialization options.">spdk_sock_opts</a></code> structure.</p>
+<p>New options <code>enable_ktls</code> and <code>tls_version</code> were added to the <code>sock_impl_set_options</code> structure.</p>
 <p>Added warning message for <code>bdev_rbd_create</code>, if it is used without -c. <code>bdev_rbd_create()</code> API without specifying -c is deprecated and will be removed in future release.</p>
 <h1>v22.05</h1>
 <h2>sock</h2>

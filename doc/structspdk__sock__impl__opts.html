@@ -124,11 +124,34 @@ Data Fields</h2></td></tr>
 <tr class="memitem:a012ab72a1bfe745ce5239819c58e5cfc"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__sock__impl__opts.html#a012ab72a1bfe745ce5239819c58e5cfc">zerocopy_threshold</a></td></tr>
 <tr class="memdesc:a012ab72a1bfe745ce5239819c58e5cfc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set zerocopy threshold in bytes.  <a href="structspdk__sock__impl__opts.html#a012ab72a1bfe745ce5239819c58e5cfc">More...</a><br /></td></tr>
 <tr class="separator:a012ab72a1bfe745ce5239819c58e5cfc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad81ccecfc115648e6616e92ad695e609"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__sock__impl__opts.html#ad81ccecfc115648e6616e92ad695e609">tls_version</a></td></tr>
+<tr class="memdesc:ad81ccecfc115648e6616e92ad695e609"><td class="mdescLeft">&#160;</td><td class="mdescRight">TLS protocol version.  <a href="structspdk__sock__impl__opts.html#ad81ccecfc115648e6616e92ad695e609">More...</a><br /></td></tr>
+<tr class="separator:ad81ccecfc115648e6616e92ad695e609"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af97f15adfec2e08249ad80b97d2a3e41"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__sock__impl__opts.html#af97f15adfec2e08249ad80b97d2a3e41">enable_ktls</a></td></tr>
+<tr class="memdesc:af97f15adfec2e08249ad80b97d2a3e41"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable or disable kernel TLS.  <a href="structspdk__sock__impl__opts.html#af97f15adfec2e08249ad80b97d2a3e41">More...</a><br /></td></tr>
+<tr class="separator:af97f15adfec2e08249ad80b97d2a3e41"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>SPDK socket implementation options. </p>
 <p>A pointer to this structure is used by <a class="el" href="sock_8h.html#ab6cbdc2532b80f5c9404af222ee03d23" title="Get current socket implementation options.">spdk_sock_impl_get_opts()</a> and <a class="el" href="sock_8h.html#a81541bb1b8ae42b952c82988c482e99d" title="Set socket implementation options.">spdk_sock_impl_set_opts()</a> to allow the user to request options for the socket module implementation. Each socket module defines which options from this structure are applicable to the module. </p>
 </div><h2 class="groupheader">Field Documentation</h2>
+<a id="af97f15adfec2e08249ad80b97d2a3e41"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af97f15adfec2e08249ad80b97d2a3e41">&#9670;&nbsp;</a></span>enable_ktls</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool spdk_sock_impl_opts::enable_ktls</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Enable or disable kernel TLS. </p>
+<p>Used by ssl socket modules. </p>
+
+</div>
+</div>
 <a id="a7bf2c41ae7b77f4d76cf66ed692a955f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7bf2c41ae7b77f4d76cf66ed692a955f">&#9670;&nbsp;</a></span>enable_placement_id</h2>
 
@@ -262,6 +285,23 @@ Data Fields</h2></td></tr>
 
 <p>Size of sock send buffer. </p>
 <p>Used by posix and uring socket modules. </p>
+
+</div>
+</div>
+<a id="ad81ccecfc115648e6616e92ad695e609"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad81ccecfc115648e6616e92ad695e609">&#9670;&nbsp;</a></span>tls_version</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t spdk_sock_impl_opts::tls_version</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>TLS protocol version. </p>
+<p>Used by ssl socket module. </p>
 
 </div>
 </div>
