@@ -402,6 +402,7 @@ rpc_get_methods</h2>
 <div class="line">    &quot;framework_get_subsystems&quot;,</div>
 <div class="line">    &quot;framework_monitor_context_switch&quot;,</div>
 <div class="line">    &quot;spdk_kill_instance&quot;,</div>
+<div class="line">    &quot;accel_get_opc_assignments&quot;,</div>
 <div class="line">    &quot;ioat_scan_accel_engine&quot;,</div>
 <div class="line">    &quot;dsa_scan_accel_engine&quot;,</div>
 <div class="line">    &quot;bdev_virtio_attach_controller&quot;,</div>
@@ -426,7 +427,9 @@ rpc_get_methods</h2>
 <div class="line">    &quot;bdev_malloc_delete&quot;,</div>
 <div class="line">    &quot;bdev_malloc_create&quot;,</div>
 <div class="line">    &quot;bdev_ftl_delete&quot;,</div>
+<div class="line">    &quot;bdev_ftl_unload&quot;,</div>
 <div class="line">    &quot;bdev_ftl_create&quot;,</div>
+<div class="line">    &quot;bdev_ftl_load&quot;,</div>
 <div class="line">    &quot;bdev_lvol_get_lvstores&quot;,</div>
 <div class="line">    &quot;bdev_lvol_delete&quot;,</div>
 <div class="line">    &quot;bdev_lvol_resize&quot;,</div>
@@ -1191,7 +1194,74 @@ env_dpdk_get_mem_stats</h2>
 <div class="line">}</div>
 </div><!-- fragment --><h1><a class="anchor" id="jsonrpc_components_accel_fw"></a>
 Acceleration Framework Layer</h1>
-<h2><a class="anchor" id="rpc_dsa_scan_accel_engine"></a>
+<h2><a class="anchor" id="accel_get_engine_info"></a>
+accel_get_engine_info</h2>
+<p>Get a list of valid engine names and their supported operations.</p>
+<h3>Parameters</h3>
+<p>None</p>
+<h3>Example</h3>
+<p>Example request:</p>
+<div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
+<div class="line">  &quot;method&quot;: &quot;accel_get_engine_info&quot;,</div>
+<div class="line">  &quot;id&quot;: 1</div>
+<div class="line">}</div>
+</div><!-- fragment --><p>Example response:</p>
+<div class="fragment"><div class="line">[</div>
+<div class="line">  {</div>
+<div class="line">    &quot;engine&quot;: &quot;software&quot;,</div>
+<div class="line">    &quot;supported ops&quot;: [</div>
+<div class="line">      &quot;copy&quot;,</div>
+<div class="line">      &quot;fill&quot;,</div>
+<div class="line">      &quot;dualcast&quot;,</div>
+<div class="line">      &quot;compare&quot;,</div>
+<div class="line">      &quot;crc32c&quot;,</div>
+<div class="line">      &quot;copy_crc32c&quot;,</div>
+<div class="line">      &quot;compress&quot;,</div>
+<div class="line">      &quot;decompress&quot;</div>
+<div class="line">    ]</div>
+<div class="line">  },</div>
+<div class="line">  {</div>
+<div class="line">    &quot;engine&quot;: &quot;dsa&quot;,</div>
+<div class="line">    &quot;supported ops&quot;: [</div>
+<div class="line">      &quot;copy&quot;,</div>
+<div class="line">      &quot;fill&quot;,</div>
+<div class="line">      &quot;dualcast&quot;,</div>
+<div class="line">      &quot;compare&quot;,</div>
+<div class="line">      &quot;crc32c&quot;,</div>
+<div class="line">      &quot;copy_crc32c&quot;</div>
+<div class="line">    ]</div>
+<div class="line">  }</div>
+<div class="line">]</div>
+</div><!-- fragment --><h2><a class="anchor" id="rpc_accel_get_opc_assignments"></a>
+accel_get_opc_assignments</h2>
+<p>Get a list of opcode names and their assigned accel_fw modules.</p>
+<h3>Parameters</h3>
+<p>None</p>
+<h3>Example</h3>
+<p>Example request:</p>
+<div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
+<div class="line">  &quot;method&quot;: &quot;accel_get_opc_assignments&quot;,</div>
+<div class="line">  &quot;id&quot;: 1</div>
+<div class="line">}</div>
+</div><!-- fragment --><p>Example response:</p>
+<div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
+<div class="line">  &quot;id&quot;: 1,</div>
+<div class="line">  &quot;result&quot;: [</div>
+<div class="line">    {</div>
+<div class="line">      &quot;copy&quot;: &quot;software&quot;,</div>
+<div class="line">      &quot;fill&quot;: &quot;software&quot;,</div>
+<div class="line">      &quot;dualcast&quot;: &quot;software&quot;,</div>
+<div class="line">      &quot;compare&quot;: &quot;software&quot;,</div>
+<div class="line">      &quot;crc32c&quot;: &quot;software&quot;,</div>
+<div class="line">      &quot;copy_crc32c&quot;: &quot;software&quot;,</div>
+<div class="line">      &quot;compress&quot;: &quot;software&quot;,</div>
+<div class="line">      &quot;decompress&quot;: &quot;software&quot;</div>
+<div class="line">    }</div>
+<div class="line">}</div>
+</div><!-- fragment --><h2><a class="anchor" id="rpc_dsa_scan_accel_engine"></a>
 dsa_scan_accel_engine</h2>
 <p>Set config and enable dsa accel engine offload. This feature is considered as experimental.</p>
 <h3>Parameters</h3>
@@ -2323,10 +2393,21 @@ bdev_aio_rescan</h2>
 </table>
 <h3>Example</h3>
 <p>Example request:</p>
-<p>~~json { "params": { "name": "Aio0" }, "jsonrpc": "2.0", "method": "bdev_aio_rescan", "id": 1 } ~~</p>
-<p>Example response:</p>
-<p>~~json { "jsonrpc": "2.0", "id": 1, "result": true } ~~</p>
-<h2><a class="anchor" id="rpc_bdev_aio_delete"></a>
+<div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;params&quot;: {</div>
+<div class="line">    &quot;name&quot;: &quot;Aio0&quot;</div>
+<div class="line">  },</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
+<div class="line">  &quot;method&quot;: &quot;bdev_aio_rescan&quot;,</div>
+<div class="line">  &quot;id&quot;: 1</div>
+<div class="line">}</div>
+</div><!-- fragment --><p>Example response:</p>
+<div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
+<div class="line">  &quot;id&quot;: 1,</div>
+<div class="line">  &quot;result&quot;: true</div>
+<div class="line">}</div>
+</div><!-- fragment --><h2><a class="anchor" id="rpc_bdev_aio_delete"></a>
 bdev_aio_delete</h2>
 <p>Delete <a class="el" href="bdev.html#bdev_config_aio">Linux AIO bdev</a>.</p>
 <h3>Parameters</h3>
@@ -3582,15 +3663,15 @@ bdev_ftl_create</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Bdev name    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">trtype   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Transport type    </td></tr>
+<td class="markdownTableBodyNone">base_bdev   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Name of the base device    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">traddr   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">NVMe target address    </td></tr>
+<td class="markdownTableBodyNone">cache   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Name of the cache device    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">punits   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Parallel unit range in the form of start-end e.g 4-8    </td></tr>
-<tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">uuid   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">UUID of restored bdev (not applicable when creating new instance)    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">core_mask   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">CPU core(s) possible for placement of the ftl core thread, application main thread by default    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">cache   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Name of the bdev to be used as a write buffer cache   </td></tr>
+<td class="markdownTableBodyNone">overprovisioning   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">int   </td><td class="markdownTableBodyNone">Percentage of base device used for relocation, 20% by default   </td></tr>
 </table>
 <h3>Result</h3>
 <p>Name of newly created bdev.</p>
@@ -3598,11 +3679,12 @@ bdev_ftl_create</h2>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
 <div class="line">  &quot;params&quot;: {</div>
-<div class="line">    &quot;name&quot;: &quot;nvme0&quot;</div>
-<div class="line">    &quot;trtype&quot; &quot;pcie&quot;</div>
-<div class="line">    &quot;traddr&quot;: &quot;0000:00:04.0&quot;</div>
-<div class="line">    &quot;punits&quot;: &quot;0-3&quot;</div>
-<div class="line">    &quot;uuid&quot;: &quot;4a7481ce-786f-41a0-9b86-8f7465c8f4d3&quot;</div>
+<div class="line">    &quot;name&quot;: &quot;ftl0&quot;,</div>
+<div class="line">    &quot;base_bdev&quot;: &quot;nvme0n1&quot;,</div>
+<div class="line">    &quot;cache&quot;: &quot;nvme1n1&quot;,</div>
+<div class="line">    &quot;uuid&quot;: &quot;4a7481ce-786f-41a0-9b86-8f7465c8f4d3&quot;,</div>
+<div class="line">    &quot;core_mask&quot;: &quot;[0]&quot;,</div>
+<div class="line">    &quot;overprovisioning&quot;: 10</div>
 <div class="line">  },</div>
 <div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
 <div class="line">  &quot;method&quot;: &quot;bdev_ftl_create&quot;,</div>
@@ -3613,7 +3695,54 @@ bdev_ftl_create</h2>
 <div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
 <div class="line">  &quot;id&quot;: 1,</div>
 <div class="line">  &quot;result&quot;: {</div>
-<div class="line">      &quot;name&quot; : &quot;nvme0&quot;</div>
+<div class="line">      &quot;name&quot; : &quot;ftl0&quot;</div>
+<div class="line">      &quot;uuid&quot; : &quot;4a7481ce-786f-41a0-9b86-8f7465c8f4d3&quot;</div>
+<div class="line">  }</div>
+<div class="line">}</div>
+</div><!-- fragment --><h2><a class="anchor" id="rpc_bdev_ftl_load"></a>
+bdev_ftl_load</h2>
+<p>Loads FTL bdev.</p>
+<p>This RPC is subject to change.</p>
+<h3>Parameters</h3>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Bdev name    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">base_bdev   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Name of the base device    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">cache   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Name of the cache device    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">uuid   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">UUID of restored bdev    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">core_mask   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">CPU core(s) possible for placement of the ftl core thread, application main thread by default    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">overprovisioning   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">int   </td><td class="markdownTableBodyNone">Percentage of base device used for relocation, 20% by default   </td></tr>
+</table>
+<h3>Result</h3>
+<p>Name of loaded bdev.</p>
+<h3>Example</h3>
+<p>Example request:</p>
+<div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;params&quot;: {</div>
+<div class="line">    &quot;name&quot;: &quot;ftl0&quot;,</div>
+<div class="line">    &quot;base_bdev&quot;: &quot;nvme0n1&quot;,</div>
+<div class="line">    &quot;cache&quot;: &quot;nvme1n1&quot;,</div>
+<div class="line">    &quot;uuid&quot;: &quot;4a7481ce-786f-41a0-9b86-8f7465c8f4d3&quot;,</div>
+<div class="line">    &quot;core_mask&quot;: &quot;[0]&quot;,</div>
+<div class="line">    &quot;overprovisioning&quot;: 10</div>
+<div class="line">  },</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
+<div class="line">  &quot;method&quot;: &quot;bdev_ftl_load&quot;,</div>
+<div class="line">  &quot;id&quot;: 1</div>
+<div class="line">}</div>
+</div><!-- fragment --><p>Example response:</p>
+<div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
+<div class="line">  &quot;id&quot;: 1,</div>
+<div class="line">  &quot;result&quot;: {</div>
+<div class="line">      &quot;name&quot; : &quot;ftl0&quot;</div>
 <div class="line">      &quot;uuid&quot; : &quot;4a7481ce-786f-41a0-9b86-8f7465c8f4d3&quot;</div>
 <div class="line">  }</div>
 <div class="line">}</div>
@@ -3632,10 +3761,37 @@ bdev_ftl_delete</h2>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
 <div class="line">  &quot;params&quot;: {</div>
-<div class="line">    &quot;name&quot;: &quot;nvme0&quot;</div>
+<div class="line">    &quot;name&quot;: &quot;ftl0&quot;</div>
 <div class="line">  },</div>
 <div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
 <div class="line">  &quot;method&quot;: &quot;bdev_ftl_delete&quot;,</div>
+<div class="line">  &quot;id&quot;: 1</div>
+<div class="line">}</div>
+</div><!-- fragment --><p>Example response:</p>
+<div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
+<div class="line">  &quot;id&quot;: 1,</div>
+<div class="line">  &quot;result&quot;: true</div>
+<div class="line">}</div>
+</div><!-- fragment --><h2><a class="anchor" id="rpc_bdev_ftl_unload"></a>
+bdev_ftl_unload</h2>
+<p>Unloads FTL bdev.</p>
+<p>This RPC is subject to change.</p>
+<h3>Parameters</h3>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Bdev name   </td></tr>
+</table>
+<h3>Example</h3>
+<p>Example request:</p>
+<div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;params&quot;: {</div>
+<div class="line">    &quot;name&quot;: &quot;ftl0&quot;</div>
+<div class="line">  },</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
+<div class="line">  &quot;method&quot;: &quot;bdev_ftl_unload&quot;,</div>
 <div class="line">  &quot;id&quot;: 1</div>
 <div class="line">}</div>
 </div><!-- fragment --><p>Example response:</p>
@@ -7673,9 +7829,14 @@ sock_impl_set_options</h2>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">enable_zerocopy_send_client   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Enable or disable zero copy on send for client sockets    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">zerocopy_threshold   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">Set zerocopy_threshold in bytes. A consecutive sequence of requests' iovecs   </td></tr>
+<td class="markdownTableBodyNone">zerocopy_threshold   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">Set zerocopy_threshold in bytes. A consecutive sequence of requests' iovecs    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">&ndash;   </td><td class="markdownTableBodyNone">&ndash;   </td><td class="markdownTableBodyNone">&ndash;   </td><td class="markdownTableBodyNone">that fall below this threshold may be sent without zerocopy flag set    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">tls_version   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">TLS protocol version, e.g. 13 for v1.3 (only applies when impl_name == ssl)    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">enable_ktls   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Enable or disable Kernel TLS (only applies when impl_name == ssl)   </td></tr>
 </table>
-<p>that fall below this threshold may be sent without zerocopy flag set tls_version | Optional | number | TLS protocol version, e.g. 13 for v1.3 (only applies when impl_name == ssl) enable_ktls | Optional | boolean | Enable or disable Kernel TLS (only applies when impl_name == ssl)</p>
 <h3>Response</h3>
 <p>True if socket layer options were set successfully.</p>
 <h3>Example</h3>
@@ -7823,18 +7984,57 @@ spdk_get_version</h2>
 <h3>Response</h3>
 <p>The response is the version number including major version number, minor version number, patch level number and suffix string.</p>
 <h3>Example</h3>
-<p>Example request: ~~ { "jsonrpc": "2.0", "id": 1, "method": "spdk_get_version" } ~~</p>
-<p>Example response: ~~ { "jsonrpc": "2.0", "id": 1, "result": { "version": "19.04-pre", "fields" : { "major": 19, "minor": 4, "patch": 0, "suffix": "-pre" } } } ~~</p>
-<h2>framework_get_pci_devices</h2>
+<p>Example request:</p>
+<div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
+<div class="line">  &quot;id&quot;: 1,</div>
+<div class="line">  &quot;method&quot;: &quot;spdk_get_version&quot;</div>
+<div class="line">}</div>
+</div><!-- fragment --><p>Example response:</p>
+<div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
+<div class="line">  &quot;id&quot;: 1,</div>
+<div class="line">  &quot;result&quot;:  {</div>
+<div class="line">    &quot;version&quot;: &quot;19.04-pre&quot;,</div>
+<div class="line">    &quot;fields&quot; : {</div>
+<div class="line">      &quot;major&quot;: 19,</div>
+<div class="line">      &quot;minor&quot;: 4,</div>
+<div class="line">      &quot;patch&quot;: 0,</div>
+<div class="line">      &quot;suffix&quot;: &quot;-pre&quot;</div>
+<div class="line">    }</div>
+<div class="line">  }</div>
+<div class="line">}</div>
+</div><!-- fragment --><h2>framework_get_pci_devices</h2>
 <p>List PCIe devices attached to an SPDK application and the contents of their config space.</p>
 <h3>Parameters</h3>
 <p>This method has no parameters.</p>
 <h3>Response</h3>
 <p>The response is an array of attached PCIe devices.</p>
 <h3>Example</h3>
-<p>Example request: ~~ { "jsonrpc": "2.0", "id": 1, "method": "framework_get_pci_devices" } ~~</p>
-<p>Example response: Note that the config space buffer was trimmed. ~~ { "jsonrpc": "2.0", "id": 1, "result": { [ { "address": "0000:00:04.0", "config_space": "8680455807051000...0000000000000000" }, { "address": "0000:00:03.0", "config_space": "8680455807051000...0000000000000000" } ] } } ~~</p>
-<h2><a class="anchor" id="rpc_bdev_nvme_add_error_injection"></a>
+<p>Example request:</p>
+<div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
+<div class="line">  &quot;id&quot;: 1,</div>
+<div class="line">  &quot;method&quot;: &quot;framework_get_pci_devices&quot;</div>
+<div class="line">}</div>
+</div><!-- fragment --><p>Example response: Note that the config space buffer was trimmed.</p>
+<div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
+<div class="line">  &quot;id&quot;: 1,</div>
+<div class="line">  &quot;result&quot;: {</div>
+<div class="line">    [</div>
+<div class="line">      {</div>
+<div class="line">        &quot;address&quot;: &quot;0000:00:04.0&quot;,</div>
+<div class="line">        &quot;config_space&quot;: &quot;8680455807051000...0000000000000000&quot;</div>
+<div class="line">      },</div>
+<div class="line">      {</div>
+<div class="line">        &quot;address&quot;: &quot;0000:00:03.0&quot;,</div>
+<div class="line">        &quot;config_space&quot;: &quot;8680455807051000...0000000000000000&quot;</div>
+<div class="line">      }</div>
+<div class="line">    ]</div>
+<div class="line">  }</div>
+<div class="line">}</div>
+</div><!-- fragment --><h2><a class="anchor" id="rpc_bdev_nvme_add_error_injection"></a>
 bdev_nvme_add_error_injection</h2>
 <p>Add a NVMe command error injection for a bdev nvme controller.</p>
 <h3>Parameters</h3>

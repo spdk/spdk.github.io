@@ -18,6 +18,7 @@ var accel__engine_8h =
     [ "spdk_accel_engine_get_io_channel", "accel__engine_8h.html#aedef5318137c2b093932164e23c93f0c", null ],
     [ "spdk_accel_engine_initialize", "accel__engine_8h.html#af0ba5139fd29c095256d77f29b65a205", null ],
     [ "spdk_accel_engine_module_finish", "accel__engine_8h.html#a8505077f98b662aa948eef070c4be155", null ],
+    [ "spdk_accel_get_opc_engine_name", "accel__engine_8h.html#aa57eaf32d37d765a9d281f735fd02e0d", null ],
     [ "spdk_accel_submit_compare", "accel__engine_8h.html#a7ba82c135282c35831243dd787fbe907", null ],
     [ "spdk_accel_submit_compress", "accel__engine_8h.html#a5e1d191f3e5e72952b3fe19c1ef5f9bb", null ],
     [ "spdk_accel_submit_copy", "accel__engine_8h.html#a8414580180688f9334f9a8e3103a6e28", null ],
