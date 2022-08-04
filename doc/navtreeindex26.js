@@ -1,5 +1,6 @@
 var NAVTREEINDEX26 =
 {
+"structspdk__opal__data__subpacket.html#ad262aba1216f9f4bc0820ff87889e986":[14,0,309,1],
 "structspdk__opal__locking__range__info.html":[14,0,310],
 "structspdk__opal__locking__range__info.html#a17d47c3079e96cb05729d38a9e8c615b":[14,0,310,4],
 "structspdk__opal__locking__range__info.html#a2e5280c59512e237e41b7bcd35eede3f":[14,0,310,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX26 =
 "structspdk__scsi__tgt__port__desc.html#a3d7abed7b610535f8894020b44c498ea":[14,0,337,4],
 "structspdk__scsi__tgt__port__desc.html#a55d5e6e7e8f9aaf4a258e0f0cb79affe":[14,0,337,3],
 "structspdk__scsi__tgt__port__desc.html#a5e85fd80fc7a37609f4c0020d096edf5":[14,0,337,2],
-"structspdk__scsi__tgt__port__desc.html#a90730b0714e0295fcc363599229c509a":[14,0,337,0],
-"structspdk__scsi__tgt__port__desc.html#ac3080c209c823539b031d014bb82cd43":[14,0,337,1]
+"structspdk__scsi__tgt__port__desc.html#a90730b0714e0295fcc363599229c509a":[14,0,337,0]
 };

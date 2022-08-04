@@ -19,6 +19,7 @@ var structspdk__nvme__transport__ops =
     [ "ctrlr_get_reg_8_async", "structspdk__nvme__transport__ops.html#abba06284c2ce1dd9168ae2022605fd00", null ],
     [ "ctrlr_map_cmb", "structspdk__nvme__transport__ops.html#a9463b78cd40875fad675faa4e5c09c69", null ],
     [ "ctrlr_map_pmr", "structspdk__nvme__transport__ops.html#a2bbe47d5976108fb32c040bcaf9910cf", null ],
+    [ "ctrlr_ready", "structspdk__nvme__transport__ops.html#a1616c56789e00f829c21d69098c4d56d", null ],
     [ "ctrlr_reserve_cmb", "structspdk__nvme__transport__ops.html#adcb4e210b3b1b31463de8ffe68ea0e54", null ],
     [ "ctrlr_scan", "structspdk__nvme__transport__ops.html#a09c53260eded8a7dfedc59d4ca9606be", null ],
     [ "ctrlr_set_reg_4", "structspdk__nvme__transport__ops.html#ac92b8a574a5647569715cada60d4e19f", null ],
