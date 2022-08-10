@@ -170,6 +170,7 @@ var user_guides =
       [ "Acceleration Framework Layer", "jsonrpc.html#jsonrpc_components_accel_fw", [
         [ "accel_get_engine_info", "jsonrpc.html#accel_get_engine_info", null ],
         [ "accel_get_opc_assignments", "jsonrpc.html#rpc_accel_get_opc_assignments", null ],
+        [ "accel_assign_opc", "jsonrpc.html#rpc_accel_assign_opc", null ],
         [ "dsa_scan_accel_engine", "jsonrpc.html#rpc_dsa_scan_accel_engine", null ],
         [ "iaa_scan_accel_engine", "jsonrpc.html#rpc_iaa_scan_accel_engine", null ],
         [ "ioat_scan_accel_engine", "jsonrpc.html#rpc_ioat_scan_accel_engine", null ]

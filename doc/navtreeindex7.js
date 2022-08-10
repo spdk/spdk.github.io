@@ -1,5 +1,10 @@
 var NAVTREEINDEX7 =
 {
+"jsonrpc.html#rpc_spdk_kill_instance":[3,9,3,0],
+"jsonrpc.html#rpc_thread_get_io_channels":[3,9,3,26],
+"jsonrpc.html#rpc_thread_get_pollers":[3,9,3,25],
+"jsonrpc.html#rpc_thread_get_stats":[3,9,3,10],
+"jsonrpc.html#rpc_thread_set_cpumask":[3,9,3,11],
 "jsonrpc.html#rpc_trace_clear_tpoint_mask":[3,9,3,15],
 "jsonrpc.html#rpc_trace_disable_tpoint_group":[3,9,3,13],
 "jsonrpc.html#rpc_trace_enable_tpoint_group":[3,9,3,12],
@@ -244,10 +249,5 @@ var NAVTREEINDEX7 =
 "nvme_8h.html#a2cd4f33cc8dc7741290b9cdf02fc691c":[15,0,40,129],
 "nvme_8h.html#a2ef925aeb99c7791bcec5c7305c03422":[15,0,40,188],
 "nvme_8h.html#a3065f669d8b605efdcadffbf94a50538":[15,0,40,152],
-"nvme_8h.html#a30f8edb4791c426ccec2b815ca0ed791":[15,0,40,132],
-"nvme_8h.html#a39c91e2e6ae899f37b5a89c28a2207cf":[15,0,40,99],
-"nvme_8h.html#a3b2d01bfe80469fd5841cddaf8e1537f":[15,0,40,29],
-"nvme_8h.html#a3d857d25bb764050417a01ae2245bc0f":[15,0,40,20],
-"nvme_8h.html#a3e5da9877e5b3a256478f6dc698fbb0c":[15,0,40,125],
-"nvme_8h.html#a42040dca95489218417539d2c08d815e":[15,0,40,164]
+"nvme_8h.html#a30f8edb4791c426ccec2b815ca0ed791":[15,0,40,132]
 };

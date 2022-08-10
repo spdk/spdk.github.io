@@ -1,5 +1,9 @@
 var NAVTREEINDEX6 =
 {
+"json_8h.html#aae250e55eb9ac9183315695d5f84cd9fa08db8ec570f8d8a2dc5ebacd3d74431f":[15,0,33,11,5],
+"json_8h.html#aae250e55eb9ac9183315695d5f84cd9fa2e3826a114171e55f375f6203676f716":[15,0,33,11,8],
+"json_8h.html#aae250e55eb9ac9183315695d5f84cd9fa3767dfcb0f9445b3d90d1b9ffebc52f0":[15,0,33,11,0],
+"json_8h.html#aae250e55eb9ac9183315695d5f84cd9fa5ea82e1d0489f2cb52cdf7c01a47e180":[15,0,33,11,2],
 "json_8h.html#aae250e55eb9ac9183315695d5f84cd9fa60ed38100812e5edc356fea76bb225f5":[15,0,33,11,4],
 "json_8h.html#aae250e55eb9ac9183315695d5f84cd9fa7a0aa08d8ef6ddad9be8cd7cebaedc2c":[15,0,33,11,3],
 "json_8h.html#aae250e55eb9ac9183315695d5f84cd9fa8d2636d118e8554a8ca8711b90f23284":[15,0,33,11,1],
@@ -47,6 +51,7 @@ var NAVTREEINDEX6 =
 "jsonrpc.html#jsonrpc_overview":[3,9,0],
 "jsonrpc.html#jsonrpc_parser_error":[3,9,1,0],
 "jsonrpc.html#notify_get_notifications":[3,9,9,29],
+"jsonrpc.html#rpc_accel_assign_opc":[3,9,4,2],
 "jsonrpc.html#rpc_accel_get_opc_assignments":[3,9,4,1],
 "jsonrpc.html#rpc_bdev_aio_create":[3,9,5,26],
 "jsonrpc.html#rpc_bdev_aio_delete":[3,9,5,28],
@@ -162,7 +167,7 @@ var NAVTREEINDEX6 =
 "jsonrpc.html#rpc_blobfs_detect":[3,9,11,0],
 "jsonrpc.html#rpc_blobfs_mount":[3,9,11,2],
 "jsonrpc.html#rpc_blobfs_set_cache_size":[3,9,11,3],
-"jsonrpc.html#rpc_dsa_scan_accel_engine":[3,9,4,2],
+"jsonrpc.html#rpc_dsa_scan_accel_engine":[3,9,4,3],
 "jsonrpc.html#rpc_enable_vmd":[3,9,12,4],
 "jsonrpc.html#rpc_env_dpdk_get_mem_stats":[3,9,3,27],
 "jsonrpc.html#rpc_framework_get_config":[3,9,3,6],
@@ -173,8 +178,8 @@ var NAVTREEINDEX6 =
 "jsonrpc.html#rpc_framework_set_scheduler":[3,9,3,8],
 "jsonrpc.html#rpc_framework_start_init":[3,9,3,2],
 "jsonrpc.html#rpc_framework_wait_init":[3,9,3,3],
-"jsonrpc.html#rpc_iaa_scan_accel_engine":[3,9,4,3],
-"jsonrpc.html#rpc_ioat_scan_accel_engine":[3,9,4,4],
+"jsonrpc.html#rpc_iaa_scan_accel_engine":[3,9,4,4],
+"jsonrpc.html#rpc_ioat_scan_accel_engine":[3,9,4,5],
 "jsonrpc.html#rpc_iscsi_auth_group_add_secret":[3,9,6,7],
 "jsonrpc.html#rpc_iscsi_auth_group_remove_secret":[3,9,6,8],
 "jsonrpc.html#rpc_iscsi_create_auth_group":[3,9,6,4],
@@ -244,10 +249,5 @@ var NAVTREEINDEX6 =
 "jsonrpc.html#rpc_sock_impl_get_options":[3,9,12,0],
 "jsonrpc.html#rpc_sock_impl_set_options":[3,9,12,1],
 "jsonrpc.html#rpc_sock_set_default_impl":[3,9,12,2],
-"jsonrpc.html#rpc_spdk_get_version":[3,9,12,5],
-"jsonrpc.html#rpc_spdk_kill_instance":[3,9,3,0],
-"jsonrpc.html#rpc_thread_get_io_channels":[3,9,3,26],
-"jsonrpc.html#rpc_thread_get_pollers":[3,9,3,25],
-"jsonrpc.html#rpc_thread_get_stats":[3,9,3,10],
-"jsonrpc.html#rpc_thread_set_cpumask":[3,9,3,11]
+"jsonrpc.html#rpc_spdk_get_version":[3,9,12,5]
 };

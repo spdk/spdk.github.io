@@ -14,6 +14,7 @@ var accel__engine_8h =
       [ "ACCEL_OPC_DECOMPRESS", "accel__engine_8h.html#a009c73029ad0ef1eed6de0ca4406bf5ba82d2bf520759937a031f5fd7bef44022", null ],
       [ "ACCEL_OPC_LAST", "accel__engine_8h.html#a009c73029ad0ef1eed6de0ca4406bf5bac7aee028e81d8fa135ae717148af57ed", null ]
     ] ],
+    [ "spdk_accel_assign_opc", "accel__engine_8h.html#a4d8b25b197af0a838d38e2f12151dcc8", null ],
     [ "spdk_accel_engine_finish", "accel__engine_8h.html#a6bf01a71e66d69942c8d22d11de7d359", null ],
     [ "spdk_accel_engine_get_io_channel", "accel__engine_8h.html#aedef5318137c2b093932164e23c93f0c", null ],
     [ "spdk_accel_engine_initialize", "accel__engine_8h.html#af0ba5139fd29c095256d77f29b65a205", null ],

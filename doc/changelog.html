@@ -107,6 +107,7 @@ v22.09: (Upcoming Release)</h1>
 <p>Renamed the <code>raid5</code> module to <code>raid5f</code> to reflect that it is not a traditional RAID5 implementation - only full stripe writes are supported, partial stripe writes (read-modify-write) are not.</p>
 <h2>accel_fw</h2>
 <p>Added a new runtime RPC <code>accel_get_opc_assignments</code> to get a list of current opcode to engine assignements.</p>
+<p>Added a new startup RPC <code>accel_assign_opc</code> to assign/override a specific opcode to an engine.</p>
 <h1>v22.05</h1>
 <h2>sock</h2>
 <p>A new option <code>ack_timeout</code> was added to the <code><a class="el" href="structspdk__sock__opts.html" title="Spdk socket initialization options.">spdk_sock_opts</a></code> structure.</p>
