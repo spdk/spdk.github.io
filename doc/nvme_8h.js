@@ -67,7 +67,8 @@ var nvme_8h =
       [ "SPDK_NVME_TRANSPORT_FC", "nvme_8h.html#ae87a03c28984a2c0499d50ef5e9d0eceabbda195aa6d0a4ad7b437ed5e9a0d01f", null ],
       [ "SPDK_NVME_TRANSPORT_TCP", "nvme_8h.html#ae87a03c28984a2c0499d50ef5e9d0ecea1b74e6a5b484b71142aa6ac9821a6de3", null ],
       [ "SPDK_NVME_TRANSPORT_VFIOUSER", "nvme_8h.html#ae87a03c28984a2c0499d50ef5e9d0ecea4a7f3a344a32bd10b0594726fa4eaa33", null ],
-      [ "SPDK_NVME_TRANSPORT_CUSTOM", "nvme_8h.html#ae87a03c28984a2c0499d50ef5e9d0ecead9c4d8737f8d49b432c3f2d9d0f86a0a", null ]
+      [ "SPDK_NVME_TRANSPORT_CUSTOM", "nvme_8h.html#ae87a03c28984a2c0499d50ef5e9d0ecead9c4d8737f8d49b432c3f2d9d0f86a0a", null ],
+      [ "SPDK_NVME_TRANSPORT_CUSTOM_FABRICS", "nvme_8h.html#ae87a03c28984a2c0499d50ef5e9d0ecead22a6399d96bc2c38efb261319c04ffc", null ]
     ] ],
     [ "spdk_nvme_connect", "nvme_8h.html#ae26375a74c2c935ec32f0c41a7ed93df", null ],
     [ "spdk_nvme_connect_async", "nvme_8h.html#ae8a8762934973d124cbad92fce47a351", null ],
