@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="generator" content="Doxygen 1.9.1" />
-  <title>SPDK: accel_engine.h File Reference</title>
+  <title>SPDK: accel.h File Reference</title>
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
@@ -66,7 +66,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-$(document).ready(function(){initNavTree('accel__engine_8h.html',''); initResizable(); });
+$(document).ready(function(){initNavTree('accel_8h.html',''); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -91,7 +91,7 @@ $(document).ready(function(){initNavTree('accel__engine_8h.html',''); initResiza
 <a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
-<div class="title">accel_engine.h File Reference</div>  </div>
+<div class="title">accel.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
@@ -106,11 +106,11 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:a48593db52501b3dec9233f7112d37872"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="accel__engine_8h.html#a48593db52501b3dec9233f7112d37872">spdk_accel_completion_cb</a>) (void *ref, int status)</td></tr>
-<tr class="memdesc:a48593db52501b3dec9233f7112d37872"><td class="mdescLeft">&#160;</td><td class="mdescRight">Acceleration operation callback.  <a href="accel__engine_8h.html#a48593db52501b3dec9233f7112d37872">More...</a><br /></td></tr>
+<tr class="memitem:a48593db52501b3dec9233f7112d37872"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="accel_8h.html#a48593db52501b3dec9233f7112d37872">spdk_accel_completion_cb</a>) (void *ref, int status)</td></tr>
+<tr class="memdesc:a48593db52501b3dec9233f7112d37872"><td class="mdescLeft">&#160;</td><td class="mdescRight">Acceleration operation callback.  <a href="accel_8h.html#a48593db52501b3dec9233f7112d37872">More...</a><br /></td></tr>
 <tr class="separator:a48593db52501b3dec9233f7112d37872"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a545ea1cc4167924acee2803aed824877"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="accel__engine_8h.html#a545ea1cc4167924acee2803aed824877">spdk_accel_fini_cb</a>) (void *cb_arg)</td></tr>
-<tr class="memdesc:a545ea1cc4167924acee2803aed824877"><td class="mdescLeft">&#160;</td><td class="mdescRight">Acceleration engine finish callback.  <a href="accel__engine_8h.html#a545ea1cc4167924acee2803aed824877">More...</a><br /></td></tr>
+<tr class="memitem:a545ea1cc4167924acee2803aed824877"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="accel_8h.html#a545ea1cc4167924acee2803aed824877">spdk_accel_fini_cb</a>) (void *cb_arg)</td></tr>
+<tr class="memdesc:a545ea1cc4167924acee2803aed824877"><td class="mdescLeft">&#160;</td><td class="mdescRight">Acceleration engine finish callback.  <a href="accel_8h.html#a545ea1cc4167924acee2803aed824877">More...</a><br /></td></tr>
 <tr class="separator:a545ea1cc4167924acee2803aed824877"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
@@ -133,57 +133,57 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:af0ba5139fd29c095256d77f29b65a205"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="accel__engine_8h.html#af0ba5139fd29c095256d77f29b65a205">spdk_accel_engine_initialize</a> (void)</td></tr>
-<tr class="memdesc:af0ba5139fd29c095256d77f29b65a205"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the acceleration engine.  <a href="accel__engine_8h.html#af0ba5139fd29c095256d77f29b65a205">More...</a><br /></td></tr>
+<tr class="memitem:af0ba5139fd29c095256d77f29b65a205"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="accel_8h.html#af0ba5139fd29c095256d77f29b65a205">spdk_accel_engine_initialize</a> (void)</td></tr>
+<tr class="memdesc:af0ba5139fd29c095256d77f29b65a205"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the acceleration engine.  <a href="accel_8h.html#af0ba5139fd29c095256d77f29b65a205">More...</a><br /></td></tr>
 <tr class="separator:af0ba5139fd29c095256d77f29b65a205"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6bf01a71e66d69942c8d22d11de7d359"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="accel__engine_8h.html#a6bf01a71e66d69942c8d22d11de7d359">spdk_accel_engine_finish</a> (<a class="el" href="accel__engine_8h.html#a545ea1cc4167924acee2803aed824877">spdk_accel_fini_cb</a> cb_fn, void *cb_arg)</td></tr>
-<tr class="memdesc:a6bf01a71e66d69942c8d22d11de7d359"><td class="mdescLeft">&#160;</td><td class="mdescRight">Close the acceleration engine.  <a href="accel__engine_8h.html#a6bf01a71e66d69942c8d22d11de7d359">More...</a><br /></td></tr>
+<tr class="memitem:a6bf01a71e66d69942c8d22d11de7d359"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="accel_8h.html#a6bf01a71e66d69942c8d22d11de7d359">spdk_accel_engine_finish</a> (<a class="el" href="accel_8h.html#a545ea1cc4167924acee2803aed824877">spdk_accel_fini_cb</a> cb_fn, void *cb_arg)</td></tr>
+<tr class="memdesc:a6bf01a71e66d69942c8d22d11de7d359"><td class="mdescLeft">&#160;</td><td class="mdescRight">Close the acceleration engine.  <a href="accel_8h.html#a6bf01a71e66d69942c8d22d11de7d359">More...</a><br /></td></tr>
 <tr class="separator:a6bf01a71e66d69942c8d22d11de7d359"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8505077f98b662aa948eef070c4be155"><td class="memItemLeft" align="right" valign="top"><a id="a8505077f98b662aa948eef070c4be155"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="accel__engine_8h.html#a8505077f98b662aa948eef070c4be155">spdk_accel_engine_module_finish</a> (void)</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="accel_8h.html#a8505077f98b662aa948eef070c4be155">spdk_accel_engine_module_finish</a> (void)</td></tr>
 <tr class="memdesc:a8505077f98b662aa948eef070c4be155"><td class="mdescLeft">&#160;</td><td class="mdescRight">Close the acceleration engine module and perform any necessary cleanup. <br /></td></tr>
 <tr class="separator:a8505077f98b662aa948eef070c4be155"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aedef5318137c2b093932164e23c93f0c"><td class="memItemLeft" align="right" valign="top">struct spdk_io_channel *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="accel__engine_8h.html#aedef5318137c2b093932164e23c93f0c">spdk_accel_engine_get_io_channel</a> (void)</td></tr>
-<tr class="memdesc:aedef5318137c2b093932164e23c93f0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the I/O channel registered on the acceleration engine.  <a href="accel__engine_8h.html#aedef5318137c2b093932164e23c93f0c">More...</a><br /></td></tr>
+<tr class="memitem:aedef5318137c2b093932164e23c93f0c"><td class="memItemLeft" align="right" valign="top">struct spdk_io_channel *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="accel_8h.html#aedef5318137c2b093932164e23c93f0c">spdk_accel_engine_get_io_channel</a> (void)</td></tr>
+<tr class="memdesc:aedef5318137c2b093932164e23c93f0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the I/O channel registered on the acceleration engine.  <a href="accel_8h.html#aedef5318137c2b093932164e23c93f0c">More...</a><br /></td></tr>
 <tr class="separator:aedef5318137c2b093932164e23c93f0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8414580180688f9334f9a8e3103a6e28"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="accel__engine_8h.html#a8414580180688f9334f9a8e3103a6e28">spdk_accel_submit_copy</a> (struct spdk_io_channel *ch, void *dst, void *src, uint64_t nbytes, int flags, <a class="el" href="accel__engine_8h.html#a48593db52501b3dec9233f7112d37872">spdk_accel_completion_cb</a> cb_fn, void *cb_arg)</td></tr>
-<tr class="memdesc:a8414580180688f9334f9a8e3103a6e28"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submit a copy request.  <a href="accel__engine_8h.html#a8414580180688f9334f9a8e3103a6e28">More...</a><br /></td></tr>
+<tr class="memitem:a8414580180688f9334f9a8e3103a6e28"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="accel_8h.html#a8414580180688f9334f9a8e3103a6e28">spdk_accel_submit_copy</a> (struct spdk_io_channel *ch, void *dst, void *src, uint64_t nbytes, int flags, <a class="el" href="accel_8h.html#a48593db52501b3dec9233f7112d37872">spdk_accel_completion_cb</a> cb_fn, void *cb_arg)</td></tr>
+<tr class="memdesc:a8414580180688f9334f9a8e3103a6e28"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submit a copy request.  <a href="accel_8h.html#a8414580180688f9334f9a8e3103a6e28">More...</a><br /></td></tr>
 <tr class="separator:a8414580180688f9334f9a8e3103a6e28"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aad9824886c1379235c90674e3a932483"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="accel__engine_8h.html#aad9824886c1379235c90674e3a932483">spdk_accel_submit_dualcast</a> (struct spdk_io_channel *ch, void *dst1, void *dst2, void *src, uint64_t nbytes, int flags, <a class="el" href="accel__engine_8h.html#a48593db52501b3dec9233f7112d37872">spdk_accel_completion_cb</a> cb_fn, void *cb_arg)</td></tr>
-<tr class="memdesc:aad9824886c1379235c90674e3a932483"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submit a dual cast copy request.  <a href="accel__engine_8h.html#aad9824886c1379235c90674e3a932483">More...</a><br /></td></tr>
+<tr class="memitem:aad9824886c1379235c90674e3a932483"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="accel_8h.html#aad9824886c1379235c90674e3a932483">spdk_accel_submit_dualcast</a> (struct spdk_io_channel *ch, void *dst1, void *dst2, void *src, uint64_t nbytes, int flags, <a class="el" href="accel_8h.html#a48593db52501b3dec9233f7112d37872">spdk_accel_completion_cb</a> cb_fn, void *cb_arg)</td></tr>
+<tr class="memdesc:aad9824886c1379235c90674e3a932483"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submit a dual cast copy request.  <a href="accel_8h.html#aad9824886c1379235c90674e3a932483">More...</a><br /></td></tr>
 <tr class="separator:aad9824886c1379235c90674e3a932483"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7ba82c135282c35831243dd787fbe907"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="accel__engine_8h.html#a7ba82c135282c35831243dd787fbe907">spdk_accel_submit_compare</a> (struct spdk_io_channel *ch, void *src1, void *src2, uint64_t nbytes, <a class="el" href="accel__engine_8h.html#a48593db52501b3dec9233f7112d37872">spdk_accel_completion_cb</a> cb_fn, void *cb_arg)</td></tr>
-<tr class="memdesc:a7ba82c135282c35831243dd787fbe907"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submit a compare request.  <a href="accel__engine_8h.html#a7ba82c135282c35831243dd787fbe907">More...</a><br /></td></tr>
+<tr class="memitem:a7ba82c135282c35831243dd787fbe907"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="accel_8h.html#a7ba82c135282c35831243dd787fbe907">spdk_accel_submit_compare</a> (struct spdk_io_channel *ch, void *src1, void *src2, uint64_t nbytes, <a class="el" href="accel_8h.html#a48593db52501b3dec9233f7112d37872">spdk_accel_completion_cb</a> cb_fn, void *cb_arg)</td></tr>
+<tr class="memdesc:a7ba82c135282c35831243dd787fbe907"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submit a compare request.  <a href="accel_8h.html#a7ba82c135282c35831243dd787fbe907">More...</a><br /></td></tr>
 <tr class="separator:a7ba82c135282c35831243dd787fbe907"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad5529e871a11d307e5aba2e21abeaa29"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="accel__engine_8h.html#ad5529e871a11d307e5aba2e21abeaa29">spdk_accel_submit_fill</a> (struct spdk_io_channel *ch, void *dst, uint8_t fill, uint64_t nbytes, int flags, <a class="el" href="accel__engine_8h.html#a48593db52501b3dec9233f7112d37872">spdk_accel_completion_cb</a> cb_fn, void *cb_arg)</td></tr>
-<tr class="memdesc:ad5529e871a11d307e5aba2e21abeaa29"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submit a fill request.  <a href="accel__engine_8h.html#ad5529e871a11d307e5aba2e21abeaa29">More...</a><br /></td></tr>
+<tr class="memitem:ad5529e871a11d307e5aba2e21abeaa29"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="accel_8h.html#ad5529e871a11d307e5aba2e21abeaa29">spdk_accel_submit_fill</a> (struct spdk_io_channel *ch, void *dst, uint8_t fill, uint64_t nbytes, int flags, <a class="el" href="accel_8h.html#a48593db52501b3dec9233f7112d37872">spdk_accel_completion_cb</a> cb_fn, void *cb_arg)</td></tr>
+<tr class="memdesc:ad5529e871a11d307e5aba2e21abeaa29"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submit a fill request.  <a href="accel_8h.html#ad5529e871a11d307e5aba2e21abeaa29">More...</a><br /></td></tr>
 <tr class="separator:ad5529e871a11d307e5aba2e21abeaa29"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac4d750dd429c533295e9e73a864eae68"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="accel__engine_8h.html#ac4d750dd429c533295e9e73a864eae68">spdk_accel_submit_crc32c</a> (struct spdk_io_channel *ch, uint32_t *crc_dst, void *src, uint32_t seed, uint64_t nbytes, <a class="el" href="accel__engine_8h.html#a48593db52501b3dec9233f7112d37872">spdk_accel_completion_cb</a> cb_fn, void *cb_arg)</td></tr>
-<tr class="memdesc:ac4d750dd429c533295e9e73a864eae68"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submit a CRC-32C calculation request.  <a href="accel__engine_8h.html#ac4d750dd429c533295e9e73a864eae68">More...</a><br /></td></tr>
+<tr class="memitem:ac4d750dd429c533295e9e73a864eae68"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="accel_8h.html#ac4d750dd429c533295e9e73a864eae68">spdk_accel_submit_crc32c</a> (struct spdk_io_channel *ch, uint32_t *crc_dst, void *src, uint32_t seed, uint64_t nbytes, <a class="el" href="accel_8h.html#a48593db52501b3dec9233f7112d37872">spdk_accel_completion_cb</a> cb_fn, void *cb_arg)</td></tr>
+<tr class="memdesc:ac4d750dd429c533295e9e73a864eae68"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submit a CRC-32C calculation request.  <a href="accel_8h.html#ac4d750dd429c533295e9e73a864eae68">More...</a><br /></td></tr>
 <tr class="separator:ac4d750dd429c533295e9e73a864eae68"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6273dec7ea700cd19ab055ac08a5a97c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="accel__engine_8h.html#a6273dec7ea700cd19ab055ac08a5a97c">spdk_accel_submit_crc32cv</a> (struct spdk_io_channel *ch, uint32_t *crc_dst, struct iovec *iovs, uint32_t iovcnt, uint32_t seed, <a class="el" href="accel__engine_8h.html#a48593db52501b3dec9233f7112d37872">spdk_accel_completion_cb</a> cb_fn, void *cb_arg)</td></tr>
-<tr class="memdesc:a6273dec7ea700cd19ab055ac08a5a97c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submit a chained CRC-32C calculation request.  <a href="accel__engine_8h.html#a6273dec7ea700cd19ab055ac08a5a97c">More...</a><br /></td></tr>
+<tr class="memitem:a6273dec7ea700cd19ab055ac08a5a97c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="accel_8h.html#a6273dec7ea700cd19ab055ac08a5a97c">spdk_accel_submit_crc32cv</a> (struct spdk_io_channel *ch, uint32_t *crc_dst, struct iovec *iovs, uint32_t iovcnt, uint32_t seed, <a class="el" href="accel_8h.html#a48593db52501b3dec9233f7112d37872">spdk_accel_completion_cb</a> cb_fn, void *cb_arg)</td></tr>
+<tr class="memdesc:a6273dec7ea700cd19ab055ac08a5a97c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submit a chained CRC-32C calculation request.  <a href="accel_8h.html#a6273dec7ea700cd19ab055ac08a5a97c">More...</a><br /></td></tr>
 <tr class="separator:a6273dec7ea700cd19ab055ac08a5a97c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6e173da38e9c798f949a07149b9bf409"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="accel__engine_8h.html#a6e173da38e9c798f949a07149b9bf409">spdk_accel_submit_copy_crc32c</a> (struct spdk_io_channel *ch, void *dst, void *src, uint32_t *crc_dst, uint32_t seed, uint64_t nbytes, int flags, <a class="el" href="accel__engine_8h.html#a48593db52501b3dec9233f7112d37872">spdk_accel_completion_cb</a> cb_fn, void *cb_arg)</td></tr>
-<tr class="memdesc:a6e173da38e9c798f949a07149b9bf409"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submit a copy with CRC-32C calculation request.  <a href="accel__engine_8h.html#a6e173da38e9c798f949a07149b9bf409">More...</a><br /></td></tr>
+<tr class="memitem:a6e173da38e9c798f949a07149b9bf409"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="accel_8h.html#a6e173da38e9c798f949a07149b9bf409">spdk_accel_submit_copy_crc32c</a> (struct spdk_io_channel *ch, void *dst, void *src, uint32_t *crc_dst, uint32_t seed, uint64_t nbytes, int flags, <a class="el" href="accel_8h.html#a48593db52501b3dec9233f7112d37872">spdk_accel_completion_cb</a> cb_fn, void *cb_arg)</td></tr>
+<tr class="memdesc:a6e173da38e9c798f949a07149b9bf409"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submit a copy with CRC-32C calculation request.  <a href="accel_8h.html#a6e173da38e9c798f949a07149b9bf409">More...</a><br /></td></tr>
 <tr class="separator:a6e173da38e9c798f949a07149b9bf409"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad07e15079ef496a54d88a90ef65ab3c6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="accel__engine_8h.html#ad07e15079ef496a54d88a90ef65ab3c6">spdk_accel_submit_copy_crc32cv</a> (struct spdk_io_channel *ch, void *dst, struct iovec *src_iovs, uint32_t iovcnt, uint32_t *crc_dst, uint32_t seed, int flags, <a class="el" href="accel__engine_8h.html#a48593db52501b3dec9233f7112d37872">spdk_accel_completion_cb</a> cb_fn, void *cb_arg)</td></tr>
-<tr class="memdesc:ad07e15079ef496a54d88a90ef65ab3c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submit a chained copy + CRC-32C calculation request.  <a href="accel__engine_8h.html#ad07e15079ef496a54d88a90ef65ab3c6">More...</a><br /></td></tr>
+<tr class="memitem:ad07e15079ef496a54d88a90ef65ab3c6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="accel_8h.html#ad07e15079ef496a54d88a90ef65ab3c6">spdk_accel_submit_copy_crc32cv</a> (struct spdk_io_channel *ch, void *dst, struct iovec *src_iovs, uint32_t iovcnt, uint32_t *crc_dst, uint32_t seed, int flags, <a class="el" href="accel_8h.html#a48593db52501b3dec9233f7112d37872">spdk_accel_completion_cb</a> cb_fn, void *cb_arg)</td></tr>
+<tr class="memdesc:ad07e15079ef496a54d88a90ef65ab3c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submit a chained copy + CRC-32C calculation request.  <a href="accel_8h.html#ad07e15079ef496a54d88a90ef65ab3c6">More...</a><br /></td></tr>
 <tr class="separator:ad07e15079ef496a54d88a90ef65ab3c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5e1d191f3e5e72952b3fe19c1ef5f9bb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="accel__engine_8h.html#a5e1d191f3e5e72952b3fe19c1ef5f9bb">spdk_accel_submit_compress</a> (struct spdk_io_channel *ch, void *dst, void *src, uint64_t nbytes_dst, uint64_t nbytes_src, uint32_t *output_size, int flags, <a class="el" href="accel__engine_8h.html#a48593db52501b3dec9233f7112d37872">spdk_accel_completion_cb</a> cb_fn, void *cb_arg)</td></tr>
-<tr class="memdesc:a5e1d191f3e5e72952b3fe19c1ef5f9bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Build and submit a memory compress request.  <a href="accel__engine_8h.html#a5e1d191f3e5e72952b3fe19c1ef5f9bb">More...</a><br /></td></tr>
+<tr class="memitem:a5e1d191f3e5e72952b3fe19c1ef5f9bb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="accel_8h.html#a5e1d191f3e5e72952b3fe19c1ef5f9bb">spdk_accel_submit_compress</a> (struct spdk_io_channel *ch, void *dst, void *src, uint64_t nbytes_dst, uint64_t nbytes_src, uint32_t *output_size, int flags, <a class="el" href="accel_8h.html#a48593db52501b3dec9233f7112d37872">spdk_accel_completion_cb</a> cb_fn, void *cb_arg)</td></tr>
+<tr class="memdesc:a5e1d191f3e5e72952b3fe19c1ef5f9bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Build and submit a memory compress request.  <a href="accel_8h.html#a5e1d191f3e5e72952b3fe19c1ef5f9bb">More...</a><br /></td></tr>
 <tr class="separator:a5e1d191f3e5e72952b3fe19c1ef5f9bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3dc2afe79f93c53228d5e2f90305385b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="accel__engine_8h.html#a3dc2afe79f93c53228d5e2f90305385b">spdk_accel_submit_decompress</a> (struct spdk_io_channel *ch, void *dst, void *src, uint64_t nbytes_dst, uint64_t nbytes_src, int flags, <a class="el" href="accel__engine_8h.html#a48593db52501b3dec9233f7112d37872">spdk_accel_completion_cb</a> cb_fn, void *cb_arg)</td></tr>
-<tr class="memdesc:a3dc2afe79f93c53228d5e2f90305385b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Build and submit a memory decompress request.  <a href="accel__engine_8h.html#a3dc2afe79f93c53228d5e2f90305385b">More...</a><br /></td></tr>
+<tr class="memitem:a3dc2afe79f93c53228d5e2f90305385b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="accel_8h.html#a3dc2afe79f93c53228d5e2f90305385b">spdk_accel_submit_decompress</a> (struct spdk_io_channel *ch, void *dst, void *src, uint64_t nbytes_dst, uint64_t nbytes_src, int flags, <a class="el" href="accel_8h.html#a48593db52501b3dec9233f7112d37872">spdk_accel_completion_cb</a> cb_fn, void *cb_arg)</td></tr>
+<tr class="memdesc:a3dc2afe79f93c53228d5e2f90305385b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Build and submit a memory decompress request.  <a href="accel_8h.html#a3dc2afe79f93c53228d5e2f90305385b">More...</a><br /></td></tr>
 <tr class="separator:a3dc2afe79f93c53228d5e2f90305385b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa57eaf32d37d765a9d281f735fd02e0d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="accel__engine_8h.html#aa57eaf32d37d765a9d281f735fd02e0d">spdk_accel_get_opc_engine_name</a> (enum accel_opcode opcode, const char **engine_name)</td></tr>
-<tr class="memdesc:aa57eaf32d37d765a9d281f735fd02e0d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the name of the engine assigned to a specfic opcode.  <a href="accel__engine_8h.html#aa57eaf32d37d765a9d281f735fd02e0d">More...</a><br /></td></tr>
+<tr class="memitem:aa57eaf32d37d765a9d281f735fd02e0d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="accel_8h.html#aa57eaf32d37d765a9d281f735fd02e0d">spdk_accel_get_opc_engine_name</a> (enum accel_opcode opcode, const char **engine_name)</td></tr>
+<tr class="memdesc:aa57eaf32d37d765a9d281f735fd02e0d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the name of the engine assigned to a specfic opcode.  <a href="accel_8h.html#aa57eaf32d37d765a9d281f735fd02e0d">More...</a><br /></td></tr>
 <tr class="separator:aa57eaf32d37d765a9d281f735fd02e0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4d8b25b197af0a838d38e2f12151dcc8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="accel__engine_8h.html#a4d8b25b197af0a838d38e2f12151dcc8">spdk_accel_assign_opc</a> (enum accel_opcode opcode, const char *name)</td></tr>
-<tr class="memdesc:a4d8b25b197af0a838d38e2f12151dcc8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Override the assignment of an opcode to an engine.  <a href="accel__engine_8h.html#a4d8b25b197af0a838d38e2f12151dcc8">More...</a><br /></td></tr>
+<tr class="memitem:a4d8b25b197af0a838d38e2f12151dcc8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="accel_8h.html#a4d8b25b197af0a838d38e2f12151dcc8">spdk_accel_assign_opc</a> (enum accel_opcode opcode, const char *name)</td></tr>
+<tr class="memdesc:a4d8b25b197af0a838d38e2f12151dcc8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Override the assignment of an opcode to an engine.  <a href="accel_8h.html#a4d8b25b197af0a838d38e2f12151dcc8">More...</a><br /></td></tr>
 <tr class="separator:a4d8b25b197af0a838d38e2f12151dcc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a308671b4f55c2adc9469e59b941a6dcc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="accel__engine_8h.html#a308671b4f55c2adc9469e59b941a6dcc">spdk_accel_write_config_json</a> (struct spdk_json_write_ctx *w)</td></tr>
-<tr class="memdesc:a308671b4f55c2adc9469e59b941a6dcc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write Acceleration subsystem configuration into provided JSON context.  <a href="accel__engine_8h.html#a308671b4f55c2adc9469e59b941a6dcc">More...</a><br /></td></tr>
+<tr class="memitem:a308671b4f55c2adc9469e59b941a6dcc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="accel_8h.html#a308671b4f55c2adc9469e59b941a6dcc">spdk_accel_write_config_json</a> (struct spdk_json_write_ctx *w)</td></tr>
+<tr class="memdesc:a308671b4f55c2adc9469e59b941a6dcc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write Acceleration subsystem configuration into provided JSON context.  <a href="accel_8h.html#a308671b4f55c2adc9469e59b941a6dcc">More...</a><br /></td></tr>
 <tr class="separator:a308671b4f55c2adc9469e59b941a6dcc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -282,7 +282,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="acce
         <tr>
           <td class="memname">void spdk_accel_engine_finish </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="accel__engine_8h.html#a545ea1cc4167924acee2803aed824877">spdk_accel_fini_cb</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="accel_8h.html#a545ea1cc4167924acee2803aed824877">spdk_accel_fini_cb</a>&#160;</td>
           <td class="paramname"><em>cb_fn</em>, </td>
         </tr>
         <tr>
@@ -424,7 +424,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="acce
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="accel__engine_8h.html#a48593db52501b3dec9233f7112d37872">spdk_accel_completion_cb</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="accel_8h.html#a48593db52501b3dec9233f7112d37872">spdk_accel_completion_cb</a>&#160;</td>
           <td class="paramname"><em>cb_fn</em>, </td>
         </tr>
         <tr>
@@ -508,7 +508,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="acce
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="accel__engine_8h.html#a48593db52501b3dec9233f7112d37872">spdk_accel_completion_cb</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="accel_8h.html#a48593db52501b3dec9233f7112d37872">spdk_accel_completion_cb</a>&#160;</td>
           <td class="paramname"><em>cb_fn</em>, </td>
         </tr>
         <tr>
@@ -584,7 +584,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="acce
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="accel__engine_8h.html#a48593db52501b3dec9233f7112d37872">spdk_accel_completion_cb</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="accel_8h.html#a48593db52501b3dec9233f7112d37872">spdk_accel_completion_cb</a>&#160;</td>
           <td class="paramname"><em>cb_fn</em>, </td>
         </tr>
         <tr>
@@ -669,7 +669,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="acce
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="accel__engine_8h.html#a48593db52501b3dec9233f7112d37872">spdk_accel_completion_cb</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="accel_8h.html#a48593db52501b3dec9233f7112d37872">spdk_accel_completion_cb</a>&#160;</td>
           <td class="paramname"><em>cb_fn</em>, </td>
         </tr>
         <tr>
@@ -757,7 +757,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="acce
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="accel__engine_8h.html#a48593db52501b3dec9233f7112d37872">spdk_accel_completion_cb</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="accel_8h.html#a48593db52501b3dec9233f7112d37872">spdk_accel_completion_cb</a>&#160;</td>
           <td class="paramname"><em>cb_fn</em>, </td>
         </tr>
         <tr>
@@ -833,7 +833,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="acce
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="accel__engine_8h.html#a48593db52501b3dec9233f7112d37872">spdk_accel_completion_cb</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="accel_8h.html#a48593db52501b3dec9233f7112d37872">spdk_accel_completion_cb</a>&#160;</td>
           <td class="paramname"><em>cb_fn</em>, </td>
         </tr>
         <tr>
@@ -907,7 +907,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="acce
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="accel__engine_8h.html#a48593db52501b3dec9233f7112d37872">spdk_accel_completion_cb</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="accel_8h.html#a48593db52501b3dec9233f7112d37872">spdk_accel_completion_cb</a>&#160;</td>
           <td class="paramname"><em>cb_fn</em>, </td>
         </tr>
         <tr>
@@ -987,7 +987,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="acce
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="accel__engine_8h.html#a48593db52501b3dec9233f7112d37872">spdk_accel_completion_cb</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="accel_8h.html#a48593db52501b3dec9233f7112d37872">spdk_accel_completion_cb</a>&#160;</td>
           <td class="paramname"><em>cb_fn</em>, </td>
         </tr>
         <tr>
@@ -1068,7 +1068,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="acce
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="accel__engine_8h.html#a48593db52501b3dec9233f7112d37872">spdk_accel_completion_cb</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="accel_8h.html#a48593db52501b3dec9233f7112d37872">spdk_accel_completion_cb</a>&#160;</td>
           <td class="paramname"><em>cb_fn</em>, </td>
         </tr>
         <tr>
@@ -1142,7 +1142,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="acce
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="accel__engine_8h.html#a48593db52501b3dec9233f7112d37872">spdk_accel_completion_cb</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="accel_8h.html#a48593db52501b3dec9233f7112d37872">spdk_accel_completion_cb</a>&#160;</td>
           <td class="paramname"><em>cb_fn</em>, </td>
         </tr>
         <tr>

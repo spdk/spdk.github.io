@@ -7831,7 +7831,9 @@ sock_impl_get_options</h2>
 <div class="line">    &quot;enable_zerocopy_send_client&quot;: false,</div>
 <div class="line">    &quot;zerocopy_threshold&quot;: 0,</div>
 <div class="line">    &quot;tls_version&quot;: 13,</div>
-<div class="line">    &quot;enable_ktls&quot;: false</div>
+<div class="line">    &quot;enable_ktls&quot;: false,</div>
+<div class="line">    &quot;psk_key&quot;: &quot;1234567890ABCDEF&quot;,</div>
+<div class="line">    &quot;psk_identity&quot;: &quot;psk.spdk.io&quot;</div>
 <div class="line">  }</div>
 <div class="line">}</div>
 </div><!-- fragment --><h2><a class="anchor" id="rpc_sock_impl_set_options"></a>
@@ -7864,7 +7866,11 @@ sock_impl_set_options</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">tls_version   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">TLS protocol version, e.g. 13 for v1.3 (only applies when impl_name == ssl)    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">enable_ktls   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Enable or disable Kernel TLS (only applies when impl_name == ssl)   </td></tr>
+<td class="markdownTableBodyNone">enable_ktls   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Enable or disable Kernel TLS (only applies when impl_name == ssl)    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">psk_key   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Default PSK KEY in hexadecimal digits, e.g. 1234567890ABCDEF (only applies when impl_name == ssl)    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">psk_identity   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Default PSK ID, e.g. psk.spdk.io (only applies when impl_name == ssl)   </td></tr>
 </table>
 <h3>Response</h3>
 <p>True if socket layer options were set successfully.</p>
@@ -7885,7 +7891,9 @@ sock_impl_set_options</h2>
 <div class="line">    &quot;enable_zerocopy_send_client&quot;: false,</div>
 <div class="line">    &quot;zerocopy_threshold&quot;: 10240,</div>
 <div class="line">    &quot;tls_version&quot;: 13,</div>
-<div class="line">    &quot;enable_ktls&quot;: false</div>
+<div class="line">    &quot;enable_ktls&quot;: false,</div>
+<div class="line">    &quot;psk_key&quot;: &quot;1234567890ABCDEF&quot;,</div>
+<div class="line">    &quot;psk_identity&quot;: &quot;psk.spdk.io&quot;</div>
 <div class="line">  }</div>
 <div class="line">}</div>
 </div><!-- fragment --><p>Example response:</p>

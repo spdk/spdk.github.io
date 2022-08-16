@@ -465,6 +465,7 @@ var nvme__spec_8h =
       [ "SPDK_NVME_OPC_COMPARE", "nvme__spec_8h.html#ac3953ec001514cffe849d9c1e3a913e3aefd131dfd5a8d565d3065b1e647ecff3", null ],
       [ "SPDK_NVME_OPC_WRITE_ZEROES", "nvme__spec_8h.html#ac3953ec001514cffe849d9c1e3a913e3a04af85e89b2ad3b0edb4ccd1fe557a13", null ],
       [ "SPDK_NVME_OPC_DATASET_MANAGEMENT", "nvme__spec_8h.html#ac3953ec001514cffe849d9c1e3a913e3a024f3c853c3d6e8790514e71ae732b12", null ],
+      [ "SPDK_NVME_OPC_VERIFY", "nvme__spec_8h.html#ac3953ec001514cffe849d9c1e3a913e3a423ee828793cc47cf594b4fa172071bb", null ],
       [ "SPDK_NVME_OPC_RESERVATION_REGISTER", "nvme__spec_8h.html#ac3953ec001514cffe849d9c1e3a913e3af0d083f131162d685f419ff02ad22ea3", null ],
       [ "SPDK_NVME_OPC_RESERVATION_REPORT", "nvme__spec_8h.html#ac3953ec001514cffe849d9c1e3a913e3a1f23d45404c84e5a822cea40a6ca1b7c", null ],
       [ "SPDK_NVME_OPC_RESERVATION_ACQUIRE", "nvme__spec_8h.html#ac3953ec001514cffe849d9c1e3a913e3adbc83d1977e511d62596744e1cf2393a", null ],

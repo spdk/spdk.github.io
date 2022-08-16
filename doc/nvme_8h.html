@@ -693,6 +693,9 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_trty
 <tr class="memitem:af02e8c701c5496f163a69917ad5397dd"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#af02e8c701c5496f163a69917ad5397dd">spdk_nvme_ns_cmd_write_zeroes</a> (struct spdk_nvme_ns *ns, struct spdk_nvme_qpair *qpair, uint64_t lba, uint32_t lba_count, <a class="el" href="nvme_8h.html#a1786f9616afc773b20f752dc98ecd465">spdk_nvme_cmd_cb</a> cb_fn, void *cb_arg, uint32_t io_flags)</td></tr>
 <tr class="memdesc:af02e8c701c5496f163a69917ad5397dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submit a write zeroes I/O to the specified NVMe namespace.  <a href="nvme_8h.html#af02e8c701c5496f163a69917ad5397dd">More...</a><br /></td></tr>
 <tr class="separator:af02e8c701c5496f163a69917ad5397dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a686bdbdf30351e164ce8f8c317621ace"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a686bdbdf30351e164ce8f8c317621ace">spdk_nvme_ns_cmd_verify</a> (struct spdk_nvme_ns *ns, struct spdk_nvme_qpair *qpair, uint64_t lba, uint32_t lba_count, <a class="el" href="nvme_8h.html#a1786f9616afc773b20f752dc98ecd465">spdk_nvme_cmd_cb</a> cb_fn, void *cb_arg, uint32_t io_flags)</td></tr>
+<tr class="memdesc:a686bdbdf30351e164ce8f8c317621ace"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submit a verify I/O to the specified NVMe namespace.  <a href="nvme_8h.html#a686bdbdf30351e164ce8f8c317621ace">More...</a><br /></td></tr>
+<tr class="separator:a686bdbdf30351e164ce8f8c317621ace"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab2f23130b6ebdb7b3e4086545e422e59"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#ab2f23130b6ebdb7b3e4086545e422e59">spdk_nvme_ns_cmd_write_uncorrectable</a> (struct spdk_nvme_ns *ns, struct spdk_nvme_qpair *qpair, uint64_t lba, uint32_t lba_count, <a class="el" href="nvme_8h.html#a1786f9616afc773b20f752dc98ecd465">spdk_nvme_cmd_cb</a> cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:ab2f23130b6ebdb7b3e4086545e422e59"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submit a write uncorrectable I/O to the specified NVMe namespace.  <a href="nvme_8h.html#ab2f23130b6ebdb7b3e4086545e422e59">More...</a><br /></td></tr>
 <tr class="separator:ab2f23130b6ebdb7b3e4086545e422e59"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -6699,6 +6702,80 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_trty
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 if successfully submitted, negated errnos on the following error conditions: -ENOMEM: The request cannot be allocated. -ENXIO: The qpair is failed at the transport level. </dd></dl>
+
+</div>
+</div>
+<a id="a686bdbdf30351e164ce8f8c317621ace"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a686bdbdf30351e164ce8f8c317621ace">&#9670;&nbsp;</a></span>spdk_nvme_ns_cmd_verify()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_nvme_ns_cmd_verify </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_nvme_ns *&#160;</td>
+          <td class="paramname"><em>ns</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct spdk_nvme_qpair *&#160;</td>
+          <td class="paramname"><em>qpair</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>lba</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>lba_count</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="nvme_8h.html#a1786f9616afc773b20f752dc98ecd465">spdk_nvme_cmd_cb</a>&#160;</td>
+          <td class="paramname"><em>cb_fn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>cb_arg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>io_flags</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Submit a verify I/O to the specified NVMe namespace. </p>
+<p>The command is submitted to a qpair allocated by <a class="el" href="nvme_8h.html#a13f745d239dab9b8f934fae2ad4984a2" title="Allocate an I/O queue pair (submission and completion queue).">spdk_nvme_ctrlr_alloc_io_qpair()</a>. The user must ensure that only one thread submits I/O on a given qpair at any given time.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ns</td><td>NVMe namespace to submit the verify I/O. </td></tr>
+    <tr><td class="paramname">qpair</td><td>I/O queue pair to submit the request. </td></tr>
+    <tr><td class="paramname">lba</td><td>Starting LBA to verify the data. </td></tr>
+    <tr><td class="paramname">lba_count</td><td>Length (in sectors) for the verify operation. </td></tr>
+    <tr><td class="paramname">cb_fn</td><td>Callback function to invoke when the I/O is completed. </td></tr>
+    <tr><td class="paramname">cb_arg</td><td>Argument to pass to the callback function. </td></tr>
+    <tr><td class="paramname">io_flags</td><td>Set flags, defined by the SPDK_NVME_IO_FLAGS_* entries in <a class="el" href="nvme__spec_8h.html" title="NVMe specification definitions.">spdk/nvme_spec.h</a>, for this I/O.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 if successfully submitted, negated errnos on the following error conditions: -EINVAL: The request is malformed. -ENOMEM: The request cannot be allocated. -ENXIO: The qpair is failed at the transport level. </dd></dl>
 
 </div>
 </div>

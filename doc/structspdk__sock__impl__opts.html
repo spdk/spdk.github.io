@@ -130,6 +130,12 @@ Data Fields</h2></td></tr>
 <tr class="memitem:af97f15adfec2e08249ad80b97d2a3e41"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__sock__impl__opts.html#af97f15adfec2e08249ad80b97d2a3e41">enable_ktls</a></td></tr>
 <tr class="memdesc:af97f15adfec2e08249ad80b97d2a3e41"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable or disable kernel TLS.  <a href="structspdk__sock__impl__opts.html#af97f15adfec2e08249ad80b97d2a3e41">More...</a><br /></td></tr>
 <tr class="separator:af97f15adfec2e08249ad80b97d2a3e41"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a730f68745e01fa9a86e5d6497b69b81a"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__sock__impl__opts.html#a730f68745e01fa9a86e5d6497b69b81a">psk_key</a></td></tr>
+<tr class="memdesc:a730f68745e01fa9a86e5d6497b69b81a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set default PSK key.  <a href="structspdk__sock__impl__opts.html#a730f68745e01fa9a86e5d6497b69b81a">More...</a><br /></td></tr>
+<tr class="separator:a730f68745e01fa9a86e5d6497b69b81a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c59538d807ae11b134893068b0f6b21"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__sock__impl__opts.html#a9c59538d807ae11b134893068b0f6b21">psk_identity</a></td></tr>
+<tr class="memdesc:a9c59538d807ae11b134893068b0f6b21"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set default PSK identity.  <a href="structspdk__sock__impl__opts.html#a9c59538d807ae11b134893068b0f6b21">More...</a><br /></td></tr>
+<tr class="separator:a9c59538d807ae11b134893068b0f6b21"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>SPDK socket implementation options. </p>
@@ -251,6 +257,40 @@ Data Fields</h2></td></tr>
 
 <p>Enable or disable use of zero copy flow on send for server sockets. </p>
 <p>Used by posix and uring socket modules. </p>
+
+</div>
+</div>
+<a id="a9c59538d807ae11b134893068b0f6b21"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9c59538d807ae11b134893068b0f6b21">&#9670;&nbsp;</a></span>psk_identity</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char* spdk_sock_impl_opts::psk_identity</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set default PSK identity. </p>
+<p>Used by ssl socket module. </p>
+
+</div>
+</div>
+<a id="a730f68745e01fa9a86e5d6497b69b81a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a730f68745e01fa9a86e5d6497b69b81a">&#9670;&nbsp;</a></span>psk_key</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char* spdk_sock_impl_opts::psk_key</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set default PSK key. </p>
+<p>Used by ssl socket module. </p>
 
 </div>
 </div>

@@ -101,15 +101,17 @@ v22.09: (Upcoming Release)</h1>
 <h2>lvol</h2>
 <p>Add num_md_pages_per_cluster_ratio parameter to the bdev_lvol_create_lvstore RPC. Calculate num_md_pages from num_md_pages_per_cluster_ratio, and pass it to <a class="el" href="structspdk__bs__opts.html">spdk_bs_opts</a>.</p>
 <h2>rpc</h2>
-<p>New options <code>enable_ktls</code> and <code>tls_version</code> were added to the <code>sock_impl_set_options</code> structure.</p>
+<p>New options <code>enable_ktls</code> and <code>tls_version</code> were added to the <code>sock_impl_set_options</code> structure. New options <code>psk_key</code> and <code>psk_identity</code> were added to the <code>sock_impl_set_options</code> structure.</p>
 <p>Added warning message for <code>bdev_rbd_create</code>, if it is used without -c. <code>bdev_rbd_create()</code> API without specifying -c is deprecated and will be removed in future release.</p>
 <h2>raid</h2>
 <p>Renamed the <code>raid5</code> module to <code>raid5f</code> to reflect that it is not a traditional RAID5 implementation - only full stripe writes are supported, partial stripe writes (read-modify-write) are not.</p>
-<h2>accel_fw</h2>
+<h2>accel</h2>
+<p>Many names were changed in the accel framework to make them consistent both with themselves and the rest of SPDK. The primary public header file is now named <code><a class="el" href="accel_8h.html" title="Acceleration engine abstraction layer.">include/spdk/accel.h</a></code>.</p>
 <p>Added a new runtime RPC <code>accel_get_opc_assignments</code> to get a list of current opcode to engine assignements.</p>
 <p>Added a new startup RPC <code>accel_assign_opc</code> to assign/override a specific opcode to an engine.</p>
 <h2>nvme</h2>
 <p>Added SPDK_NVME_TRANSPORT_CUSTOM_FABRICS to enum spdk_nvme_transport_type to support custom fabric transport. SPDK_NVME_TRANSPORT_CUSTOM was intended to be non-fabric custom transport.</p>
+<p>Added a new function <code>spdk_nvme_ns_cmd_verify</code> to submit a Verify Command to a Namespace.</p>
 <h1>v22.05</h1>
 <h2>sock</h2>
 <p>A new option <code>ack_timeout</code> was added to the <code><a class="el" href="structspdk__sock__opts.html" title="Spdk socket initialization options.">spdk_sock_opts</a></code> structure.</p>
@@ -575,8 +577,8 @@ v20.07: SPDK CSI driver, new accel_fw commands, I/O abort support</h1>
 <p>The software accel engine implementation has added support for CRC-32C.</p>
 <p>A new capability, compare, was added via <code>spdk_accel_submit_compare</code>.</p>
 <p>The software accel engine implementation has added support for compare.</p>
-<p>Several APIs were added to <code><a class="el" href="accel__engine_8h.html" title="Acceleration engine abstraction layer.">accel_engine.h</a></code> to support batched submission of operations.</p>
-<p>Several APIs were added to <code><a class="el" href="accel__engine_8h.html" title="Acceleration engine abstraction layer.">accel_engine.h</a></code> to support dualcast operations.</p>
+<p>Several APIs were added to <code>accel_engine.h</code> to support batched submission of operations.</p>
+<p>Several APIs were added to <code>accel_engine.h</code> to support dualcast operations.</p>
 <h2>accel_fw</h2>
 <p>The accel_fw was updated to no longer require the app to allocate an accel_task on its behalf. All public APIs now take a callback arg as the parameter that used to be the accel_task.</p>
 <p>The accel_fw API <code>spdk_accel_task_size</code> was removed as it is no longer required.</p>

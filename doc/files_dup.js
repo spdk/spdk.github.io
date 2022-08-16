@@ -1,6 +1,6 @@
 var files_dup =
 [
-    [ "accel_engine.h", "accel__engine_8h.html", "accel__engine_8h" ],
+    [ "accel.h", "accel_8h.html", "accel_8h" ],
     [ "assert.h", "assert_8h.html", "assert_8h" ],
     [ "barrier.h", "barrier_8h.html", "barrier_8h" ],
     [ "base64.h", "base64_8h.html", "base64_8h" ],
