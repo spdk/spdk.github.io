@@ -3337,7 +3337,7 @@ bdev_rbd_create</h2>
 </table>
 <p>If no config is specified, Ceph configuration files must exist with all relevant settings for accessing the pool. If a config map is passed, the configuration files are ignored and instead all key/value pairs are passed to rados_conf_set to configure cluster access. In practice, "mon_host" (= list of monitor address+port) and "key" (= the secret key stored in Ceph keyrings) are enough.</p>
 <p>When accessing the image as some user other than "admin" (the default), the "user_id" has to be set.</p>
-<p>If provided with cluster_name option, it will use the Rados cluster object referenced by the name (created by bdev_rbd_register_cluster RPC) and ignores "user_id + config" combination to create its own Rados cluster.</p>
+<p>If provided with cluster_name option, it will use the Rados cluster object referenced by the name (created by bdev_rbd_register_cluster RPC) and ignores "user_id + config" combination to create its own Rados cluster. In this scenario, all the bdevs will share the same cluster with one connection of Ceph in librbd module. Performance tuning on the I/O workload could be done by estimating how many io_contxt threads and messager threads in Ceph side and how many cores would be reasonable to provide for SPDK to get up to your projections.</p>
 <h3>Result</h3>
 <p>Name of newly created bdev.</p>
 <h3>Example</h3>

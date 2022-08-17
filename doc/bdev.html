@@ -115,10 +115,16 @@ Configuring Block Device Modules</h1>
 <h1>Common Block Device Configuration Examples</h1>
 <h1><a class="anchor" id="bdev_config_rbd"></a>
 Ceph RBD</h1>
-<p>The SPDK RBD bdev driver provides SPDK block layer access to Ceph RADOS block devices (RBD). Ceph RBD devices are accessed via librbd and librados libraries to access the RADOS block device exported by Ceph. To create Ceph bdev RPC command <code>bdev_rbd_create</code> should be used.</p>
+<p>The SPDK RBD bdev driver provides SPDK block layer access to Ceph RADOS block devices (RBD). Ceph RBD devices are accessed via librbd and librados libraries to access the RADOS block device exported by Ceph. To create Ceph bdev RPC command <code>bdev_rbd_register_cluster</code> and <code>bdev_rbd_create</code> should be used.</p>
+<p>SPDK provides two ways of creating a RBD bdev. One is to create a new Rados cluster object for each RBD bdev. Another is to share the same Rados cluster object for multiple RBD bdevs. Each Rados cluster object creates a small number of io_context_pool and messenger threads. Ceph commands <code>ceph config help librados_thread_count</code> and <code>ceph config help ms_async_op_threads</code> could help to check these threads information. Besides, you can specify the number of threads by updating ceph.conf file or using Ceph config commands. For more information, please refer to <a href="https://docs.ceph.com/en/latest/rados/configuration/ceph-conf/">Ceph configuration</a> One set of threads may not be enough to maximize performance with a large number of RBD bdevs, but one set of threads per RBD bdev may add too much context switching. Therefore, performance tuning on the number of RBD bdevs per cluster object and thread may be required.</p>
 <p>Example command</p>
-<p><code>rpc.py bdev_rbd_create rbd foo 512</code></p>
-<p>This command will create a bdev that represents the 'foo' image from a pool called 'rbd'.</p>
+<p><code>rpc.py bdev_rbd_register_cluster rbd_cluster</code></p>
+<p>This command will register a cluster named rbd_cluster. Optional <code>--config-file</code> and <code>--key-file</code> params are specified for the cluster.</p>
+<p>To remove a registered cluster use the bdev_rbd_unregister_cluster command.</p>
+<p><code>rpc.py bdev_rbd_unregister_cluster rbd_cluster</code></p>
+<p>To create RBD bdev with a registered cluster.</p>
+<p><code>rpc.py bdev_rbd_create rbd foo 512 -c rbd_cluster</code></p>
+<p>This command will create a bdev that represents the 'foo' image from a pool called 'rbd'. When specifying -c for <code>bdev_rbd_create</code>, RBD bdevs will share the same rados cluster with one connection of Ceph in librbd module. Instead it will create a new rados cluster with one cluster connection for every bdev without specifying -c.</p>
 <p>To remove a block device representation use the bdev_rbd_delete command.</p>
 <p><code>rpc.py bdev_rbd_delete Rbd0</code></p>
 <p>To resize a bdev use the bdev_rbd_resize command.</p>
