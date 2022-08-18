@@ -171,6 +171,12 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:a9adaf62358930fae9a67fe5523d254a2"><td class="memItemLeft" align="right" valign="top"><a id="a9adaf62358930fae9a67fe5523d254a2"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_STATIC_ASSERT</b> (sizeof(struct <a class="el" href="structspdk__blob__ext__io__opts.html">spdk_blob_ext_io_opts</a>)==32, &quot;Incorrect size&quot;)</td></tr>
+<tr class="separator:a9adaf62358930fae9a67fe5523d254a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af79aa9b01b17644755777cf955c7b917"><td class="memItemLeft" align="right" valign="top"><a id="af79aa9b01b17644755777cf955c7b917"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_STATIC_ASSERT</b> (sizeof(struct <a class="el" href="structspdk__bs__opts.html">spdk_bs_opts</a>)==72, &quot;Incorrect size&quot;)</td></tr>
+<tr class="separator:af79aa9b01b17644755777cf955c7b917"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2d76e2deeb5cc5354d23370914b28e2a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blob_8h.html#a2d76e2deeb5cc5354d23370914b28e2a">spdk_bs_opts_init</a> (struct <a class="el" href="structspdk__bs__opts.html">spdk_bs_opts</a> *opts, size_t opts_size)</td></tr>
 <tr class="memdesc:a2d76e2deeb5cc5354d23370914b28e2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize a <a class="el" href="structspdk__bs__opts.html">spdk_bs_opts</a> structure to the default blobstore option values.  <a href="blob_8h.html#a2d76e2deeb5cc5354d23370914b28e2a">More...</a><br /></td></tr>
 <tr class="separator:a2d76e2deeb5cc5354d23370914b28e2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -225,6 +231,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a2484b76dc748921d2596a4e207b6a5a2"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blob_8h.html#a2484b76dc748921d2596a4e207b6a5a2">spdk_blob_get_num_clusters</a> (struct spdk_blob *blob)</td></tr>
 <tr class="memdesc:a2484b76dc748921d2596a4e207b6a5a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the number of clusters allocated to the blob.  <a href="blob_8h.html#a2484b76dc748921d2596a4e207b6a5a2">More...</a><br /></td></tr>
 <tr class="separator:a2484b76dc748921d2596a4e207b6a5a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0104dabd988a24e7be4cc19498f595b"><td class="memItemLeft" align="right" valign="top"><a id="ab0104dabd988a24e7be4cc19498f595b"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_STATIC_ASSERT</b> (sizeof(struct <a class="el" href="structspdk__blob__opts.html">spdk_blob_opts</a>)==64, &quot;Incorrect size&quot;)</td></tr>
+<tr class="separator:ab0104dabd988a24e7be4cc19498f595b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8bda964f26821899cfbc24c6caa3b748"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blob_8h.html#a8bda964f26821899cfbc24c6caa3b748">spdk_blob_opts_init</a> (struct <a class="el" href="structspdk__blob__opts.html">spdk_blob_opts</a> *opts, size_t opts_size)</td></tr>
 <tr class="memdesc:a8bda964f26821899cfbc24c6caa3b748"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize a <a class="el" href="structspdk__blob__opts.html">spdk_blob_opts</a> structure to the default blob option values.  <a href="blob_8h.html#a8bda964f26821899cfbc24c6caa3b748">More...</a><br /></td></tr>
 <tr class="separator:a8bda964f26821899cfbc24c6caa3b748"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -267,6 +276,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a7dee33b6b9df9b9a3d6b9957c71a779c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blob_8h.html#a7dee33b6b9df9b9a3d6b9957c71a779c">spdk_bs_blob_decouple_parent</a> (struct spdk_blob_store *bs, struct spdk_io_channel *channel, spdk_blob_id blobid, <a class="el" href="blob_8h.html#aca5253109581a768e06dd197429ef9e1">spdk_blob_op_complete</a> cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:a7dee33b6b9df9b9a3d6b9957c71a779c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove dependency on parent blob.  <a href="blob_8h.html#a7dee33b6b9df9b9a3d6b9957c71a779c">More...</a><br /></td></tr>
 <tr class="separator:a7dee33b6b9df9b9a3d6b9957c71a779c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa55ad224031a1b5cd0913debf18372fc"><td class="memItemLeft" align="right" valign="top"><a id="aa55ad224031a1b5cd0913debf18372fc"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_STATIC_ASSERT</b> (sizeof(struct <a class="el" href="structspdk__blob__open__opts.html">spdk_blob_open_opts</a>)==16, &quot;Incorrect size&quot;)</td></tr>
+<tr class="separator:aa55ad224031a1b5cd0913debf18372fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afa002adffb9648ae66b94223de70dc4f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blob_8h.html#afa002adffb9648ae66b94223de70dc4f">spdk_blob_open_opts_init</a> (struct <a class="el" href="structspdk__blob__open__opts.html">spdk_blob_open_opts</a> *opts, size_t opts_size)</td></tr>
 <tr class="memdesc:afa002adffb9648ae66b94223de70dc4f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize a <a class="el" href="structspdk__blob__open__opts.html">spdk_blob_open_opts</a> structure to the default blob option values.  <a href="blob_8h.html#afa002adffb9648ae66b94223de70dc4f">More...</a><br /></td></tr>
 <tr class="separator:afa002adffb9648ae66b94223de70dc4f"><td class="memSeparator" colspan="2">&#160;</td></tr>

@@ -1,5 +1,12 @@
 var NAVTREEINDEX6 =
 {
+"json_8h.html#a97b8231e8e3edf28b783a251568ab839":[15,0,33,43],
+"json_8h.html#a9818f28c01f95a44cbae78bedab604a0":[15,0,33,55],
+"json_8h.html#a9d7ab67c32e6f05b102e0c82f8bf2461":[15,0,33,59],
+"json_8h.html#aa38e53dfa61213b568f66aa25de29385":[15,0,33,67],
+"json_8h.html#aa9af35123c0d53784c760bf901d8a42a":[15,0,33,40],
+"json_8h.html#aabfcbb30424e30c50ab85aae544a73da":[15,0,33,12],
+"json_8h.html#aae250e55eb9ac9183315695d5f84cd9f":[15,0,33,11],
 "json_8h.html#aae250e55eb9ac9183315695d5f84cd9fa08db8ec570f8d8a2dc5ebacd3d74431f":[15,0,33,11,5],
 "json_8h.html#aae250e55eb9ac9183315695d5f84cd9fa2e3826a114171e55f375f6203676f716":[15,0,33,11,8],
 "json_8h.html#aae250e55eb9ac9183315695d5f84cd9fa3767dfcb0f9445b3d90d1b9ffebc52f0":[15,0,33,11,0],
@@ -242,12 +249,5 @@ var NAVTREEINDEX6 =
 "jsonrpc.html#rpc_nvmf_subsystem_listener_set_ana_state":[3,9,7,6],
 "jsonrpc.html#rpc_nvmf_subsystem_remove_host":[3,9,7,10],
 "jsonrpc.html#rpc_nvmf_subsystem_remove_listener":[3,9,7,5],
-"jsonrpc.html#rpc_nvmf_subsystem_remove_ns":[3,9,7,8],
-"jsonrpc.html#rpc_py":[3,9,2],
-"jsonrpc.html#rpc_rpc_get_methods":[3,9,3,4],
-"jsonrpc.html#rpc_scsi_get_devices":[3,9,6,2],
-"jsonrpc.html#rpc_sock_impl_get_options":[3,9,12,0],
-"jsonrpc.html#rpc_sock_impl_set_options":[3,9,12,1],
-"jsonrpc.html#rpc_sock_set_default_impl":[3,9,12,2],
-"jsonrpc.html#rpc_spdk_get_version":[3,9,12,5]
+"jsonrpc.html#rpc_nvmf_subsystem_remove_ns":[3,9,7,8]
 };

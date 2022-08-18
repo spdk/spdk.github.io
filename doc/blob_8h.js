@@ -86,6 +86,10 @@ var blob_8h =
     [ "spdk_bs_set_super", "blob_8h.html#a0c5c40c9c88d85ef5455ab32a1db3aa4", null ],
     [ "spdk_bs_total_data_cluster_count", "blob_8h.html#a3c090bf1ffd244cd1d2787d906d0d34f", null ],
     [ "spdk_bs_unload", "blob_8h.html#aa98e6633723afb306a763b9f571f2cc1", null ],
+    [ "SPDK_STATIC_ASSERT", "blob_8h.html#a9adaf62358930fae9a67fe5523d254a2", null ],
+    [ "SPDK_STATIC_ASSERT", "blob_8h.html#aa55ad224031a1b5cd0913debf18372fc", null ],
+    [ "SPDK_STATIC_ASSERT", "blob_8h.html#ab0104dabd988a24e7be4cc19498f595b", null ],
+    [ "SPDK_STATIC_ASSERT", "blob_8h.html#af79aa9b01b17644755777cf955c7b917", null ],
     [ "spdk_xattr_names_free", "blob_8h.html#ae17f3a52d52d9c3e9382cbcfae042c0a", null ],
     [ "spdk_xattr_names_get_count", "blob_8h.html#a113d71117843062da8a24906296b37a6", null ],
     [ "spdk_xattr_names_get_name", "blob_8h.html#ad0d58654483ac10df65d4b55356eff84", null ]
