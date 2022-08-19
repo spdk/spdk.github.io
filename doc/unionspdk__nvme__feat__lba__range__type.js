@@ -1,6 +1,6 @@
 var unionspdk__nvme__feat__lba__range__type =
 [
-    [ "bits", "unionspdk__nvme__feat__lba__range__type.html#a24af5f41ea6126af58960a89edd6384a", null ],
+    [ "bits", "unionspdk__nvme__feat__lba__range__type.html#a9126414924340504d607b194984d1d2c", null ],
     [ "num", "unionspdk__nvme__feat__lba__range__type.html#a9fcf5c790767d292adf15b5f05ab40cf", null ],
     [ "raw", "unionspdk__nvme__feat__lba__range__type.html#a8b36726d65af55a7c237962ea9065911", null ],
     [ "reserved", "unionspdk__nvme__feat__lba__range__type.html#afd6c62577e98b12c7c497e003228621c", null ]

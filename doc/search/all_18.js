@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['za_2661',['za',['../structspdk__nvme__zns__zone__desc.html#a63f0a61ca102d4b5a281222c4b804813',1,'spdk_nvme_zns_zone_desc']]],
+  ['za_2661',['za',['../structspdk__nvme__zns__zone__desc.html#aba0360929511d2f1bec1b209f703ee61',1,'spdk_nvme_zns_zone_desc']]],
   ['zasl_2662',['zasl',['../structspdk__nvme__zns__ctrlr__data.html#a81d94268a2a27eef18924ab29d4b56d4',1,'spdk_nvme_zns_ctrlr_data']]],
   ['zcap_2663',['zcap',['../structspdk__nvme__zns__zone__desc.html#a1bd360e8c54b4cf58538e88cedf3c0f7',1,'spdk_nvme_zns_zone_desc']]],
   ['zcopy_2664',['zcopy',['../structspdk__sock__opts.html#a3cdb293f2ccf10506e7926317e463d91',1,'spdk_sock_opts']]],
@@ -9,7 +9,7 @@ var searchData=
   ['zerocopy_5fthreshold_2667',['zerocopy_threshold',['../structspdk__sock__impl__opts.html#a012ab72a1bfe745ce5239819c58e5cfc',1,'spdk_sock_impl_opts']]],
   ['zfc_2668',['zfc',['../structspdk__nvme__zns__zone__desc.html#a672fa0f469cdf75a2f3bb86dfec8ac3c',1,'spdk_nvme_zns_zone_desc']]],
   ['zipf_2eh_2669',['zipf.h',['../zipf_8h.html',1,'']]],
-  ['zoc_2670',['zoc',['../structspdk__nvme__zns__ns__data.html#a5c3278baef9167cc8817c2822725f524',1,'spdk_nvme_zns_ns_data']]],
+  ['zoc_2670',['zoc',['../structspdk__nvme__zns__ns__data.html#af48ae8defdf4e205a5fd873f796628f1',1,'spdk_nvme_zns_ns_data']]],
   ['zone_5fsize_2671',['zone_size',['../structspdk__bdev.html#a054323b9bb1299a58497ca668d52b5a5',1,'spdk_bdev']]],
   ['zoned_2672',['zoned',['../structspdk__bdev.html#aba3b4d21418e7f36047040c43d3e5976',1,'spdk_bdev']]],
   ['zs_2673',['zs',['../structspdk__nvme__zns__zone__desc.html#a1c3005e11734a7b2808adc8887f180fc',1,'spdk_nvme_zns_zone_desc']]],
