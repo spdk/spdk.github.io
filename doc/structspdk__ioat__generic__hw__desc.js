@@ -2,7 +2,7 @@ var structspdk__ioat__generic__hw__desc =
 [
     [ "bundle", "structspdk__ioat__generic__hw__desc.html#af60f8ad79535e9d40552fdc257adadc9", null ],
     [ "completion_update", "structspdk__ioat__generic__hw__desc.html#a8b4d9e9d6416a6d2a0172670e7b49622", null ],
-    [ "control", "structspdk__ioat__generic__hw__desc.html#ab58eec32f2e543a4d51738f260d0c1e9", null ],
+    [ "control", "structspdk__ioat__generic__hw__desc.html#a52169a26ecd073ea598726658e295f7d", null ],
     [ "control_raw", "structspdk__ioat__generic__hw__desc.html#a2e05ce5964f28ed0fd5d68518a26ed39", null ],
     [ "dest_addr", "structspdk__ioat__generic__hw__desc.html#ae42d76e90275e8a65b02e2e8ca473ae5", null ],
     [ "dest_dca", "structspdk__ioat__generic__hw__desc.html#acc341ec729372eaf5adcf4b6dd3ce856", null ],
@@ -20,5 +20,5 @@ var structspdk__ioat__generic__hw__desc =
     [ "src_addr", "structspdk__ioat__generic__hw__desc.html#a5bb7c6031d57595e0bb8649c2d24b27a", null ],
     [ "src_page_break", "structspdk__ioat__generic__hw__desc.html#aa1a334da040df362ea6fbef453446f35", null ],
     [ "src_snoop_disable", "structspdk__ioat__generic__hw__desc.html#ae1d43a7a3a84bdb21295e1a385ce9098", null ],
-    [ "u", "structspdk__ioat__generic__hw__desc.html#ab832db828354e57608df63bf7343c085", null ]
+    [ "u", "structspdk__ioat__generic__hw__desc.html#ad1cddb6646b3ac9e808d4b84386730b5", null ]
 ];

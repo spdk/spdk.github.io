@@ -2,7 +2,7 @@ var structspdk__nvme__io__qpair__opts =
 [
     [ "async_mode", "structspdk__nvme__io__qpair__opts.html#a4a1213a3d3d5a83c1654d62449af5bdc", null ],
     [ "buffer_size", "structspdk__nvme__io__qpair__opts.html#a46b4b303a90d96576e8ed2feb216e93b", null ],
-    [ "cq", "structspdk__nvme__io__qpair__opts.html#a4a659a64895ed18f903960e15dab1453", null ],
+    [ "cq", "structspdk__nvme__io__qpair__opts.html#a0c66371e8003fede30af4b98c58e3bea", null ],
     [ "create_only", "structspdk__nvme__io__qpair__opts.html#a9de651bfea3d4f53d80c124530062ca5", null ],
     [ "delay_cmd_submit", "structspdk__nvme__io__qpair__opts.html#a0cf0ca9709ef76cd67bcfd4c3601963c", null ],
     [ "delay_pcie_doorbell", "structspdk__nvme__io__qpair__opts.html#a44d81a594ba280300928e7244c2612d0", null ],
@@ -12,7 +12,7 @@ var structspdk__nvme__io__qpair__opts =
     [ "qprio", "structspdk__nvme__io__qpair__opts.html#a9a9ae75991da44a7fbf06a3c82161a6d", null ],
     [ "reserved13", "structspdk__nvme__io__qpair__opts.html#a07d109dbf64b048e0fe692a970d52c81", null ],
     [ "reserved66", "structspdk__nvme__io__qpair__opts.html#afa44da854b021a9a818d3be17aaaade8", null ],
-    [ "sq", "structspdk__nvme__io__qpair__opts.html#ad19efdf751df5a25398dd26f5fff0067", null ],
+    [ "sq", "structspdk__nvme__io__qpair__opts.html#a723a090a8593d58279354fa188ff5f9c", null ],
     [ "vaddr", "structspdk__nvme__io__qpair__opts.html#a7236cf0caff96c7b46bda8c25e85fd01", null ],
     [ "vaddr", "structspdk__nvme__io__qpair__opts.html#adbd6f687ad6a315dd4a25d5947f52bd7", null ]
 ];

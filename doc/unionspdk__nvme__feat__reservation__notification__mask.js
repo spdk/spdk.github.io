@@ -1,6 +1,6 @@
 var unionspdk__nvme__feat__reservation__notification__mask =
 [
-    [ "bits", "unionspdk__nvme__feat__reservation__notification__mask.html#a12f329194d3c9efc692876450d767e3a", null ],
+    [ "bits", "unionspdk__nvme__feat__reservation__notification__mask.html#a9b2d3bcbb6e11757e58ce1260855f7e8", null ],
     [ "raw", "unionspdk__nvme__feat__reservation__notification__mask.html#aa4036e986efb17c708a9c0d0b7b2feee", null ],
     [ "regpre", "unionspdk__nvme__feat__reservation__notification__mask.html#a00fe19c4570ec5917ae172b47d3fd7df", null ],
     [ "reserved1", "unionspdk__nvme__feat__reservation__notification__mask.html#aba1da6db44e1bf1a1102bb329baaaea5", null ],
