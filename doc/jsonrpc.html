@@ -442,7 +442,9 @@ rpc_get_methods</h2>
 <div class="line">    &quot;bdev_lvol_create&quot;,</div>
 <div class="line">    &quot;bdev_lvol_delete_lvstore&quot;,</div>
 <div class="line">    &quot;bdev_lvol_rename_lvstore&quot;,</div>
-<div class="line">    &quot;bdev_lvol_create_lvstore&quot;</div>
+<div class="line">    &quot;bdev_lvol_create_lvstore&quot;,</div>
+<div class="line">    &quot;bdev_daos_delete&quot;,</div>
+<div class="line">    &quot;bdev_daos_create&quot;</div>
 <div class="line">  ]</div>
 <div class="line">}</div>
 </div><!-- fragment --><h2><a class="anchor" id="rpc_framework_get_subsystems"></a>
@@ -8145,6 +8147,74 @@ bdev_nvme_remove_error_injection</h2>
 <div class="line">    &quot;opc&quot;: 2,</div>
 <div class="line">    &quot;cmd_type&quot;: &quot;io&quot;</div>
 <div class="line">  }</div>
+<div class="line">}</div>
+</div><!-- fragment --><p>Example response:</p>
+<div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
+<div class="line">  &quot;id&quot;: 1,</div>
+<div class="line">  &quot;result&quot;: true</div>
+<div class="line">}</div>
+</div><!-- fragment --><h2><a class="anchor" id="rpc_bdev_daos_create"></a>
+bdev_daos_create</h2>
+<p>Construct <a class="el" href="bdev.html#bdev_config_daos">DAOS bdev</a></p>
+<h3>Parameters</h3>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Bdev name to use    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">pool   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">DAOS pool label or its uuid    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">cont   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">DAOS cont label or its uuid    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">block_size   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">Block size in bytes -must be multiple of 512    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">num_blocks   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">Number of blocks    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">uuid   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">UUID of new bdev   </td></tr>
+</table>
+<h3>Result</h3>
+<p>Name of newly created bdev.</p>
+<h3>Example</h3>
+<p>Example request:</p>
+<div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;params&quot;: {</div>
+<div class="line">    &quot;block_size&quot;: 4096,</div>
+<div class="line">    &quot;num_blocks&quot;: 16384,</div>
+<div class="line">    &quot;name&quot;: &quot;daosdev0&quot;,</div>
+<div class="line">    &quot;pool&quot;: &quot;test-pool&quot;,</div>
+<div class="line">    &quot;cont&quot;: &quot;test-cont&quot;,</div>
+<div class="line">  },</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
+<div class="line">  &quot;method&quot;: &quot;bdev_daos_create&quot;,</div>
+<div class="line">  &quot;id&quot;: 1</div>
+<div class="line">}</div>
+</div><!-- fragment --><p>Example response:</p>
+<div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
+<div class="line">  &quot;id&quot;: 1,</div>
+<div class="line">  &quot;result&quot;: &quot;daosdev0&quot;</div>
+<div class="line">}</div>
+</div><!-- fragment --><h2><a class="anchor" id="rpc_bdev_daos_delete"></a>
+bdev_daos_delete</h2>
+<p>Delete <a class="el" href="bdev.html#bdev_config_daos">DAOS bdev</a></p>
+<h3>Parameters</h3>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Bdev name   </td></tr>
+</table>
+<h3>Example</h3>
+<p>Example request:</p>
+<div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;params&quot;: {</div>
+<div class="line">    &quot;name&quot;: &quot;daosdev0&quot;</div>
+<div class="line">  },</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
+<div class="line">  &quot;method&quot;: &quot;bdev_daos_delete&quot;,</div>
+<div class="line">  &quot;id&quot;: 1</div>
 <div class="line">}</div>
 </div><!-- fragment --><p>Example response:</p>
 <div class="fragment"><div class="line">{</div>

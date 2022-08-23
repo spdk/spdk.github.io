@@ -121,7 +121,8 @@ var user_guides =
       [ "Uring", "bdev.html#bdev_ug_uring", null ],
       [ "xnvme", "bdev.html#bdev_ug_xnvme", null ],
       [ "Virtio Block", "bdev.html#bdev_config_virtio_blk", null ],
-      [ "Virtio SCSI", "bdev.html#bdev_config_virtio_scsi", null ]
+      [ "Virtio SCSI", "bdev.html#bdev_config_virtio_scsi", null ],
+      [ "DAOS bdev", "bdev.html#bdev_config_daos", null ]
     ] ],
     [ "BlobFS (Blobstore Filesystem)", "blobfs.html", [
       [ "BlobFS Getting Started Guide", "blobfs.html#blobfs_getting_started", null ],
@@ -384,7 +385,9 @@ var user_guides =
         [ "enable_vmd", "jsonrpc.html#rpc_enable_vmd", null ],
         [ "spdk_get_version", "jsonrpc.html#rpc_spdk_get_version", null ],
         [ "bdev_nvme_add_error_injection", "jsonrpc.html#rpc_bdev_nvme_add_error_injection", null ],
-        [ "bdev_nvme_remove_error_injection", "jsonrpc.html#rpc_bdev_nvme_remove_error_injection", null ]
+        [ "bdev_nvme_remove_error_injection", "jsonrpc.html#rpc_bdev_nvme_remove_error_injection", null ],
+        [ "bdev_daos_create", "jsonrpc.html#rpc_bdev_daos_create", null ],
+        [ "bdev_daos_delete", "jsonrpc.html#rpc_bdev_daos_delete", null ]
       ] ]
     ] ],
     [ "JSON-RPC Remote access", "jsonrpc_proxy.html", null ],

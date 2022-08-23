@@ -88,6 +88,7 @@ var NAVTREEINDEX0 =
 "bdev.html#bdev_config_cas":[3,7,11],
 "bdev.html#bdev_config_compress":[3,7,5],
 "bdev.html#bdev_config_crypto":[3,7,6],
+"bdev.html#bdev_config_daos":[3,7,24],
 "bdev.html#bdev_config_delay":[3,7,7],
 "bdev.html#bdev_config_gpt":[3,7,8],
 "bdev.html#bdev_config_iscsi":[3,7,9],
@@ -248,6 +249,5 @@ var NAVTREEINDEX0 =
 "bdev__module_8h.html#a2a279a58afa5c5ed8a68820fcea0efaa":[15,0,5,46],
 "bdev__module_8h.html#a2bfea82499197ef270f7a3f6204ccea8":[15,0,5,29],
 "bdev__module_8h.html#a3247574caabc2b31796861a10b2c9cab":[15,0,5,24],
-"bdev__module_8h.html#a3341d564a521b3e7874f72fc1390f043":[15,0,5,26],
-"bdev__module_8h.html#a340bfaab0ee5b3fd754759ad10f2dd4b":[15,0,5,55]
+"bdev__module_8h.html#a3341d564a521b3e7874f72fc1390f043":[15,0,5,26]
 };

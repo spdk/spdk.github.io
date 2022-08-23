@@ -1,5 +1,6 @@
 var NAVTREEINDEX4 =
 {
+"histogram__data_8h.html#a53978d25ccf67cafe65aeb24aa576ac9":[15,0,26,4],
 "histogram__data_8h.html#a5ed4b39b3c152d4d92b34d6f40cd3229":[15,0,26,2],
 "histogram__data_8h.html#a6d4941b5e55b7ba2dbd58fec419e6f73":[15,0,26,7],
 "histogram__data_8h.html#a78927969cf0d1905ed790e7caa8e8303":[15,0,26,19],
@@ -248,6 +249,5 @@ var NAVTREEINDEX4 =
 "idxd__spec_8h.html#aedab51c9bb2dbd7575f32acf2915741e":[15,0,28,93],
 "idxd__spec_8h.html#afa7e74cffda4cb9c33bcb4045b6bfa81":[15,0,28,54],
 "idxd__spec_8h.html#afa7e74cffda4cb9c33bcb4045b6bfa81a1b434a9aac413b2b042ba7161a0b4fe5":[15,0,28,54,0],
-"idxd__spec_8h.html#afa7e74cffda4cb9c33bcb4045b6bfa81a255908e61d8c978f1d2ee26a95f5fae8":[15,0,28,54,1],
-"idxd__spec_8h.html#afa7e74cffda4cb9c33bcb4045b6bfa81a6e5e94c4a84c43e34207bbd68ea65ed1":[15,0,28,54,3]
+"idxd__spec_8h.html#afa7e74cffda4cb9c33bcb4045b6bfa81a255908e61d8c978f1d2ee26a95f5fae8":[15,0,28,54,1]
 };
