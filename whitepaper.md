@@ -25,3 +25,4 @@ toc:
 * [Intel Helps Tencent Cloud Deeply Optimize its Cloud Block Storage (CBS) to Create Ultra-fast Cloud Storage Experience](https://ci.spdk.io/download/papers/202106_EN_Intel_Helps_Tencent_Cloud_Deeply_Optimize_its_Cloud_Block_Storage_to_Create_Ultra_Fast_Cloud_Storage_Experience.pdf)
 * [Intel Accelerates CMCC Cloud for 1M IOPS Cloud Disk with Ultra Cloud Storage Experience](https://ci.spdk.io/download/papers/202201_Intel_Accelerates_CMCC_Cloud_for_1M_IOPS_Cloud_Disk_with_Ultra_Cloud_Storage_Experience_EN.pdf)
 * [Intel Helps iQIYI Optimize the Performance of MySQL Database Engines to Improve Customer Experience](https://ci.spdk.io/download/papers/202202_EN_Intel_Helps_iQIYI_Optimize_the_Performance_of_MySQL_Database_Engines_to_Improve_Customer_Experience.pdf)
+* [Inspur InCloud Rail HCI All-in-One Based on Intel Technologies](https://ci.spdk.io/download/papers/202208_Inspur_InCloud_Rail_HCI_All-in-One_Based_on_Intel_Technologies_EN.pdf)

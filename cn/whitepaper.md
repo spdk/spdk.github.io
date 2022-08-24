@@ -14,6 +14,10 @@ toc:
     url: ../webinar
 ---
 
+## 浪潮
+* [基于英特尔®技术的浪潮云海®超融合一体机InCloud Rail解决方案](https://ci.spdk.io/download/papers/202208_Inspur_InCloud_Rail_HCI_All-in-One_Based_on_Intel_Technologies_CN.pdf)
+> “为了提升存储子系统的性能，浪潮使用了英特尔®存储性能开发套件(SPDK)，并通过NVMe over Fabrics(NVMe-oF)协议进行加速。”
+
 ## 爱奇艺
 * [英特尔助力爱奇艺深度优化 MySQL 数据库引擎性能，提供优质客户体验](https://ci.spdk.io/download/papers/202202_CN_Intel_Helps_iQIYI_Optimize_the_Performance_of_MySQL_Database_Engines_to_Improve_Customer_Experience.pdf)
 > “为了进一步挖掘MySQL潜能，爱奇艺使用英特尔®SPDK(Storage Performance Development Kit)对MySQL进行进一步优化。SPDK提供了一组用于编写高性能、可伸缩、用户态存储应用程序的工具和库。”
