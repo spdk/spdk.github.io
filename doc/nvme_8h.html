@@ -435,6 +435,9 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_trty
 <tr class="memitem:a1505fc1ef6e8ccb00134c1fa15e0368b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a1505fc1ef6e8ccb00134c1fa15e0368b">spdk_nvme_ctrlr_register_aer_callback</a> (struct spdk_nvme_ctrlr *ctrlr, <a class="el" href="nvme_8h.html#a1d066bb761dc3481f081d0d6924766ee">spdk_nvme_aer_cb</a> aer_cb_fn, void *aer_cb_arg)</td></tr>
 <tr class="memdesc:a1505fc1ef6e8ccb00134c1fa15e0368b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register callback function invoked when an AER command is completed for the given NVMe controller.  <a href="nvme_8h.html#a1505fc1ef6e8ccb00134c1fa15e0368b">More...</a><br /></td></tr>
 <tr class="separator:a1505fc1ef6e8ccb00134c1fa15e0368b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7708f291658bf471e399354d1247fabf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a7708f291658bf471e399354d1247fabf">spdk_nvme_ctrlr_disable_read_changed_ns_list_log_page</a> (struct spdk_nvme_ctrlr *ctrlr)</td></tr>
+<tr class="memdesc:a7708f291658bf471e399354d1247fabf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disable reading the CHANGED_NS_LIST log page for the specified controller.  <a href="nvme_8h.html#a7708f291658bf471e399354d1247fabf">More...</a><br /></td></tr>
+<tr class="separator:a7708f291658bf471e399354d1247fabf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae2957853179526e6176cf7623b19552b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#ae2957853179526e6176cf7623b19552b">spdk_nvme_ctrlr_register_timeout_callback</a> (struct spdk_nvme_ctrlr *ctrlr, uint64_t timeout_io_us, uint64_t timeout_admin_us, <a class="el" href="nvme_8h.html#a53fe1c01a447be8fcd29821a668227a0">spdk_nvme_timeout_cb</a> cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:ae2957853179526e6176cf7623b19552b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register for timeout callback on a controller.  <a href="nvme_8h.html#ae2957853179526e6176cf7623b19552b">More...</a><br /></td></tr>
 <tr class="separator:ae2957853179526e6176cf7623b19552b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -2893,6 +2896,34 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_trty
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 on success. Negated errno on the following error conditions: -ENOTSUP: PMR is not supported by the Controller. -EIO: Registers access failure. -EINVAL: PMR Time Units Invalid or PMR is already disabled. -ETIMEDOUT: Timed out to Disable PMR. -ENOSYS: Transport does not support Disable PMR function. </dd></dl>
+
+</div>
+</div>
+<a id="a7708f291658bf471e399354d1247fabf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7708f291658bf471e399354d1247fabf">&#9670;&nbsp;</a></span>spdk_nvme_ctrlr_disable_read_changed_ns_list_log_page()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_nvme_ctrlr_disable_read_changed_ns_list_log_page </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_nvme_ctrlr *&#160;</td>
+          <td class="paramname"><em>ctrlr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Disable reading the CHANGED_NS_LIST log page for the specified controller. </p>
+<p>Applications that register an AER callback may wish to read the CHANGED_NS_LIST log page itself, rather than relying on the driver to do it. Calling this function will ensure that the driver does not read this log page if the controller returns a NS_ATTR_CHANGED AEN.</p>
+<p>Reading of this log page can alternatively be disabled by setting the disable_read_changed_ns_list_log_page flag in the <a class="el" href="structspdk__nvme__ctrlr__opts.html" title="NVMe controller initialization options.">spdk_nvme_ctrlr_opts</a> when attaching the controller.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ctrlr</td><td>NVMe controller on which to disable the log page read. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
