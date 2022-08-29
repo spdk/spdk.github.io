@@ -89,19 +89,9 @@ $(document).ready(function(){initNavTree('usdt.html',''); initResizable(); });
 <div class="title">Userspace DTrace (USDT) </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><a class="anchor" id="md_usdt"></a> </p><h1>Package Dependencies</h1>
-<p>These dependencies are needed for building bpftrace and the sys/sdt.h header file that SPDK libraries will include for DTRACE_PROBE macro definitions.</p>
-<p>Fedora: libbpf gtest-devel gmock-devel bcc-devel systemtap-sdt-devel llvm-devel bison flex</p>
-<p>Ubuntu: systemtap-sdt-dev libbpfcc-dev libclang-7-dev bison flex</p>
-<h1>Building bpftrace</h1>
-<p>We have found issues with the packaged bpftrace on both Ubuntu 20.04 and Fedora 33. So bpftrace should be built and installed from source.</p>
-<div class="fragment"><div class="line">git clone https://github.com/iovisor/bpftrace.git</div>
-<div class="line">mkdir bpftrace/build</div>
-<div class="line">cd bpftrace/build</div>
-<div class="line">cmake -DCMAKE_BUILD_TYPE=Release ..</div>
-<div class="line">make</div>
-<div class="line">sudo make install</div>
-</div><!-- fragment --><h1>bpftrace.sh</h1>
+<div class="textblock"><p><a class="anchor" id="md_usdt"></a> </p><h1>Building bpftrace</h1>
+<p>We have found issues with the packaged bpftrace on both Ubuntu 20.04 and Fedora 33. So bpftrace should be built and installed from source. To build and install bpftrace go to <a href="https://github.com/iovisor/bpftrace/blob/master/INSTALL.md#building-bpftrace">building bpftraces</a></p>
+<h1>bpftrace.sh</h1>
 <p>bpftrace.sh is a helper script that facilitates running bpftrace scripts against a running SPDK application. Here is a typical usage:</p>
 <div class="fragment"><div class="line">scripts/bpftrace.sh `pidof spdk_tgt` scripts/bpf/nvmf.bt</div>
 </div><!-- fragment --><p>Attaching to USDT probes requires the full path of the binary in the probe description. SPDK bpftrace scripts can be written with an <b>EXE</b> marker instead of a full path name, and bpftrace.sh will dynamically replace that string with the full path name using information from procfs.</p>
