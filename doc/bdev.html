@@ -350,6 +350,8 @@ Uring</h1>
 <p>The uring bdev module issues I/O to kernel block devices using the io_uring Linux kernel API. This module requires liburing. For more information on io_uring refer to kernel <a href="https://kernel.dk/io_uring.pdf">IO_uring</a></p>
 <p>The user needs to configure SPDK to include io_uring support:</p>
 <p><code>configure --with-uring</code></p>
+<p>To enable uring bdev for ZNS devices use the following:</p>
+<p><code>configure --with-uring --with-uring-zns</code></p>
 <p>To create a uring bdev with given filename, bdev name and block size use the <code>bdev_uring_create</code> RPC.</p>
 <p><code>rpc.py bdev_uring_create /path/to/device bdev_u0 512</code></p>
 <p>To remove a uring bdev use the <code>bdev_uring_delete</code> RPC.</p>
