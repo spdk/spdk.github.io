@@ -3729,7 +3729,9 @@ bdev_ftl_create</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">core_mask   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">CPU core(s) possible for placement of the ftl core thread, application main thread by default    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">overprovisioning   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">int   </td><td class="markdownTableBodyNone">Percentage of base device used for relocation, 20% by default   </td></tr>
+<td class="markdownTableBodyNone">overprovisioning   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">int   </td><td class="markdownTableBodyNone">Percentage of base device used for relocation, 20% by default    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">fast_shutdown   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">bool   </td><td class="markdownTableBodyNone">When set FTL will minimize persisted data on target application shutdown and rely on shared memory during next load   </td></tr>
 </table>
 <h3>Result</h3>
 <p>Name of newly created bdev.</p>
@@ -3776,7 +3778,9 @@ bdev_ftl_load</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">core_mask   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">CPU core(s) possible for placement of the ftl core thread, application main thread by default    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">overprovisioning   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">int   </td><td class="markdownTableBodyNone">Percentage of base device used for relocation, 20% by default   </td></tr>
+<td class="markdownTableBodyNone">overprovisioning   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">int   </td><td class="markdownTableBodyNone">Percentage of base device used for relocation, 20% by default    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">fast_shutdown   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">bool   </td><td class="markdownTableBodyNone">When set FTL will minimize persisted data on target application shutdown and rely on shared memory during next load   </td></tr>
 </table>
 <h3>Result</h3>
 <p>Name of loaded bdev.</p>
@@ -3813,7 +3817,9 @@ bdev_ftl_delete</h2>
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Bdev name   </td></tr>
+<td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Bdev name    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">fast_shutdown   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">bool   </td><td class="markdownTableBodyNone">When set FTL will minimize persisted data during deletion and rely on shared memory during next load   </td></tr>
 </table>
 <h3>Example</h3>
 <p>Example request:</p>
@@ -3840,7 +3846,9 @@ bdev_ftl_unload</h2>
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Bdev name   </td></tr>
+<td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Bdev name    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">fast_shutdown   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">bool   </td><td class="markdownTableBodyNone">When set FTL will minimize persisted data during deletion and rely on shared memory during next load   </td></tr>
 </table>
 <h3>Example</h3>
 <p>Example request:</p>

@@ -4,6 +4,7 @@ var structspdk__ftl__conf =
     [ "cache_bdev", "structspdk__ftl__conf.html#ac6844bc6f6597f9e9ec5401ebf2cc390", null ],
     [ "chunk_compaction_threshold", "structspdk__ftl__conf.html#a459562ad609ee7cc2629ba11fff78900", null ],
     [ "core_mask", "structspdk__ftl__conf.html#aa2d8b8ee84ea01622204be9f6ba9d4fb", null ],
+    [ "fast_shutdown", "structspdk__ftl__conf.html#ad6c61ebafb7a18f2f1afe0520aee31b0", null ],
     [ "limits", "structspdk__ftl__conf.html#ad86cff38f1050e28f64ef88ac639b37e", null ],
     [ "mode", "structspdk__ftl__conf.html#a087635eb4ee8d8182adb89e114b09aae", null ],
     [ "name", "structspdk__ftl__conf.html#adf73e114ccf2dfff8f6791669d951f1b", null ],
