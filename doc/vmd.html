@@ -154,13 +154,13 @@ Application framework</h1>
 <div class="line">    &quot;subsystem&quot;: &quot;vmd&quot;,</div>
 <div class="line">    &quot;config&quot;: [</div>
 <div class="line">      {</div>
-<div class="line">        &quot;method&quot;: &quot;enable_vmd&quot;,</div>
+<div class="line">        &quot;method&quot;: &quot;vmd_enable&quot;,</div>
 <div class="line">        &quot;params&quot;: {}</div>
 <div class="line">      }</div>
 <div class="line">    ]</div>
 <div class="line">}</div>
 </div><!-- fragment --><p>or use RPC call before framework starts e.g. </p><div class="fragment"><div class="line">$ ./build/bin/spdk_tgt --wait_for_rpc</div>
-<div class="line">$ ./scripts/rpc.py enable_vmd</div>
+<div class="line">$ ./scripts/rpc.py vmd_enable</div>
 <div class="line">$ ./scripts/rpc.py framework_start_init</div>
 </div><!-- fragment --> <h1><a class="anchor" id="vmd_app"></a>
 Applications w/o application framework</h1>

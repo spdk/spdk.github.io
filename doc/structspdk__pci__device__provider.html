@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="generator" content="Doxygen 1.9.1" />
-  <title>SPDK: Data Fields - Variables</title>
+  <title>SPDK: spdk_pci_device_provider Struct Reference</title>
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
@@ -66,7 +66,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-$(document).ready(function(){initNavTree('functions_vars_d.html',''); initResizable(); });
+$(document).ready(function(){initNavTree('structspdk__pci__device__provider.html',''); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -84,108 +84,82 @@ $(document).ready(function(){initNavTree('functions_vars_d.html',''); initResiza
 </iframe>
 </div>
 
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-attribs">Data Fields</a>  </div>
+  <div class="headertitle">
+<div class="title">spdk_pci_device_provider Struct Reference</div>  </div>
+</div><!--header-->
 <div class="contents">
-&#160;
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:ab3e91beaa509739dc7b196dbd115a831"><td class="memItemLeft" align="right" valign="top"><a id="ab3e91beaa509739dc7b196dbd115a831"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>TAILQ_ENTRY</b> (<a class="el" href="structspdk__pci__device__provider.html">spdk_pci_device_provider</a>) tailq</td></tr>
+<tr class="separator:ab3e91beaa509739dc7b196dbd115a831"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Data Fields</h2></td></tr>
+<tr class="memitem:ae156e92ea89d05e7ff723caff8873755"><td class="memItemLeft" align="right" valign="top"><a id="ae156e92ea89d05e7ff723caff8873755"></a>
+const char *&#160;</td><td class="memItemRight" valign="bottom"><b>name</b></td></tr>
+<tr class="separator:ae156e92ea89d05e7ff723caff8873755"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b4305d8d5f9bb98eb09f41d48a0bbf7"><td class="memItemLeft" align="right" valign="top">int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__pci__device__provider.html#a7b4305d8d5f9bb98eb09f41d48a0bbf7">attach_cb</a> )(const struct <a class="el" href="structspdk__pci__addr.html">spdk_pci_addr</a> *addr)</td></tr>
+<tr class="memdesc:a7b4305d8d5f9bb98eb09f41d48a0bbf7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback executed to attach a PCI device on a given address.  <a href="structspdk__pci__device__provider.html#a7b4305d8d5f9bb98eb09f41d48a0bbf7">More...</a><br /></td></tr>
+<tr class="separator:a7b4305d8d5f9bb98eb09f41d48a0bbf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e6db45ddbdcb5a05d188c9f5642fb46"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__pci__device__provider.html#a1e6db45ddbdcb5a05d188c9f5642fb46">detach_cb</a> )(struct <a class="el" href="structspdk__pci__device.html">spdk_pci_device</a> *dev)</td></tr>
+<tr class="memdesc:a1e6db45ddbdcb5a05d188c9f5642fb46"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback executed to detach a given PCI device.  <a href="structspdk__pci__device__provider.html#a1e6db45ddbdcb5a05d188c9f5642fb46">More...</a><br /></td></tr>
+<tr class="separator:a1e6db45ddbdcb5a05d188c9f5642fb46"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Field Documentation</h2>
+<a id="a7b4305d8d5f9bb98eb09f41d48a0bbf7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b4305d8d5f9bb98eb09f41d48a0bbf7">&#9670;&nbsp;</a></span>attach_cb</h2>
 
-<h3><a id="index_d"></a>- d -</h3><ul>
-<li>data_digest
-: <a class="el" href="structspdk__nvme__ctrlr__opts.html#a031524a539fbc57e1ca66c6fef875eea">spdk_nvme_ctrlr_opts</a>
-</li>
-<li>data_transfer_cpl
-: <a class="el" href="structspdk__bdev__io_1_1____bdev__io__internal__fields.html#a132678b705d6d51d2fdfaf1d44b6428b">spdk_bdev_io::__bdev_io_internal_fields</a>
-</li>
-<li>data_transferred
-: <a class="el" href="structspdk__scsi__task.html#aed0de3999a81a9aeb079f0d9e4c4f098">spdk_scsi_task</a>
-</li>
-<li>dealloc_or_unwritten_error
-: <a class="el" href="structspdk__nvme__ns__data.html#a9db6d23a3a10ec735fb97ae62fba8432">spdk_nvme_ns_data</a>
-</li>
-<li>deinit
-: <a class="el" href="structspdk__governor.html#a68f4d3cf970e99e055f042e5e65745bc">spdk_governor</a>
-, <a class="el" href="structspdk__scheduler.html#acbac668eb963ca9df3a6295d6f639388">spdk_scheduler</a>
-</li>
-<li>desc
-: <a class="el" href="structspdk__bdev__io_1_1____bdev__io__internal__fields.html#a9ec31d2c37d402f888525346bb2ad907">spdk_bdev_io::__bdev_io_internal_fields</a>
-</li>
-<li>destroy
-: <a class="el" href="structspdk__nvmf__transport__ops.html#add528f11c2846f57ced92a3da9457bd5">spdk_nvmf_transport_ops</a>
-</li>
-<li>destruct
-: <a class="el" href="structspdk__bdev__fn__table.html#a8a76c50a2b20205ec9fffe4afb9e3a15">spdk_bdev_fn_table</a>
-</li>
-<li>detach_cb
-: <a class="el" href="structspdk__pci__device__provider.html#a1e6db45ddbdcb5a05d188c9f5642fb46">spdk_pci_device_provider</a>
-</li>
-<li>device_id
-: <a class="el" href="structspdk__pci__id.html#a39d3b6cf5257c8a8b344bf5e8687eadc">spdk_pci_id</a>
-</li>
-<li>device_self_test
-: <a class="el" href="structspdk__nvme__cdata__oacs.html#a1fca16ef604c26ac6d4b880b4cde58d1">spdk_nvme_cdata_oacs</a>
-</li>
-<li>dif_check_flags
-: <a class="el" href="structspdk__bdev.html#a1872fa3d723b5bef069c0681ec3bcfd6">spdk_bdev</a>
-</li>
-<li>dif_type
-: <a class="el" href="structspdk__bdev.html#abcf4e6c5be82c271a681db4b9b2fd427">spdk_bdev</a>
-, <a class="el" href="structspdk__dif__ctx.html#a87509f51370bf129ab20993e1695c66a">spdk_dif_ctx</a>
-</li>
-<li>directives
-: <a class="el" href="structspdk__nvme__cdata__oacs.html#a2f870d0e5e779a0ec5c83b96323b0e7e">spdk_nvme_cdata_oacs</a>
-</li>
-<li>disable_error_logging
-: <a class="el" href="structspdk__nvme__ctrlr__opts.html#ade3ae305f17864bd4904e89ac9a6a02c">spdk_nvme_ctrlr_opts</a>
-</li>
-<li>disable_read_ana_log_page
-: <a class="el" href="structspdk__nvme__ctrlr__opts.html#aa308f055321501aa80c9d100167cde8e">spdk_nvme_ctrlr_opts</a>
-</li>
-<li>disable_read_changed_ns_list_log_page
-: <a class="el" href="structspdk__nvme__ctrlr__opts.html#a2650095ea8d90e28b98900846a45efa2">spdk_nvme_ctrlr_opts</a>
-</li>
-<li>disable_signal_handlers
-: <a class="el" href="structspdk__app__opts.html#a6e31b7a77928202250cb12f7e7d2b76b">spdk_app_opts</a>
-</li>
-<li>disconnect
-: <a class="el" href="structspdk__nvme__cdata__nvmf__specific.html#a081118199a7c8c9ad3408fb69bb6868f">spdk_nvme_cdata_nvmf_specific</a>
-</li>
-<li>discovery_log_change_notice
-: <a class="el" href="unionspdk__nvme__feat__async__event__configuration.html#a14f3e2e2568f26a16527fb3e754114d2">spdk_nvme_feat_async_event_configuration</a>
-</li>
-<li>dlfeat
-: <a class="el" href="structspdk__nvme__ns__data.html#ae6922075e73e92212d7670a9859f4208">spdk_nvme_ns_data</a>
-</li>
-<li>dn
-: <a class="el" href="unionspdk__nvme__feat__write__atomicity.html#a4a67a4f708c90c0316820b707bb398fd">spdk_nvme_feat_write_atomicity</a>
-</li>
-<li>doorbell_buffer_config
-: <a class="el" href="structspdk__nvme__cdata__oacs.html#ae684490e992710d3d334342144b4db17">spdk_nvme_cdata_oacs</a>
-</li>
-<li>dpc
-: <a class="el" href="structspdk__nvme__ns__data.html#a7940fbdb97df0904f88e1744e5e2967f">spdk_nvme_ns_data</a>
-</li>
-<li>dps
-: <a class="el" href="structspdk__nvme__ns__data.html#a2ea434f5297b4a875896d7afe950bf31">spdk_nvme_ns_data</a>
-</li>
-<li>driver_ctx
-: <a class="el" href="structspdk__bdev__io.html#ab1b334589d89261c8e0242fee614caa7">spdk_bdev_io</a>
-</li>
-<li>dst_domain
-: <a class="el" href="structspdk__memory__domain__translation__result.html#a0e51964ff28af4c63c3f58329e2e402d">spdk_memory_domain_translation_result</a>
-</li>
-<li>dsto
-: <a class="el" href="structspdk__nvme__ctrlr__data.html#acc36df052c6c58f2f1ab16b0df355708">spdk_nvme_ctrlr_data</a>
-</li>
-<li>dstrd
-: <a class="el" href="unionspdk__nvme__cap__register.html#af726e8465f09c36be0185475ec67fbce">spdk_nvme_cap_register</a>
-</li>
-<li>dulbe
-: <a class="el" href="unionspdk__nvme__feat__error__recovery.html#a85c441ab749eca8500b09add45336e0d">spdk_nvme_feat_error_recovery</a>
-</li>
-<li>dump_info_json
-: <a class="el" href="structspdk__bdev__fn__table.html#a417860f5598560a20b7bd4b5e8b4c3b0">spdk_bdev_fn_table</a>
-</li>
-<li>dump_opts
-: <a class="el" href="structspdk__nvmf__transport__ops.html#a1d7d193990382233f3c4296d4456ef09">spdk_nvmf_transport_ops</a>
-</li>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int(* spdk_pci_device_provider::attach_cb) (const struct <a class="el" href="structspdk__pci__addr.html">spdk_pci_addr</a> *addr)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Callback executed to attach a PCI device on a given address. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">addr</td><td>address of the device.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 if the device was attached successfully, negative errno otherwise. </dd></dl>
+
+</div>
+</div>
+<a id="a1e6db45ddbdcb5a05d188c9f5642fb46"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e6db45ddbdcb5a05d188c9f5642fb46">&#9670;&nbsp;</a></span>detach_cb</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void(* spdk_pci_device_provider::detach_cb) (struct <a class="el" href="structspdk__pci__device.html">spdk_pci_device</a> *dev)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Callback executed to detach a given PCI device. </p>
+<p>The provider to detach the device is selected based on the type of the device and the name of the provider (i.e. dev-&gt;type == provider-&gt;name).</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dev</td><td>PCI device to detach. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<hr/>The documentation for this struct was generated from the following file:<ul>
+<li><a class="el" href="env_8h.html">env.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

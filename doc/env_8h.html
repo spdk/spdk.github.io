@@ -112,6 +112,8 @@ Data Structures</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__pci__device_1_1__spdk__pci__device__internal.html">spdk_pci_device::_spdk_pci_device_internal</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__pci__device__provider.html">spdk_pci_device_provider</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__mem__map__ops.html">spdk_mem_map_ops</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A function table to be implemented by each memory map.  <a href="structspdk__mem__map__ops.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -163,6 +165,8 @@ Macros</h2></td></tr>
 <tr class="separator:a6e2a2a0f55f73b122740643e55d82d31"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a35a1b0ba34d824e4bd0a63af0a331916"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_PCI_DRIVER_REGISTER</b>(name,  id_table,  flags)</td></tr>
 <tr class="separator:a35a1b0ba34d824e4bd0a63af0a331916"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d3845f913b94ec2c05711450fecc468"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_PCI_REGISTER_DEVICE_PROVIDER</b>(name,  provider)</td></tr>
+<tr class="separator:a5d3845f913b94ec2c05711450fecc468"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
@@ -482,15 +486,18 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_pci_driver_regis
 <tr class="memitem:a492c0520e80d8be841891e4d1bd7a446"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_8h.html#a492c0520e80d8be841891e4d1bd7a446">spdk_pci_addr_fmt</a> (char *bdf, size_t sz, const struct <a class="el" href="structspdk__pci__addr.html">spdk_pci_addr</a> *addr)</td></tr>
 <tr class="memdesc:a492c0520e80d8be841891e4d1bd7a446"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert a struct <a class="el" href="structspdk__pci__addr.html">spdk_pci_addr</a> to a string.  <a href="env_8h.html#a492c0520e80d8be841891e4d1bd7a446">More...</a><br /></td></tr>
 <tr class="separator:a492c0520e80d8be841891e4d1bd7a446"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac3850938d8aaf6363bd76e690f17de30"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_8h.html#ac3850938d8aaf6363bd76e690f17de30">spdk_pci_hook_device</a> (struct spdk_pci_driver *drv, struct <a class="el" href="structspdk__pci__device.html">spdk_pci_device</a> *dev)</td></tr>
-<tr class="memdesc:ac3850938d8aaf6363bd76e690f17de30"><td class="mdescLeft">&#160;</td><td class="mdescRight">Hook a custom PCI device into the PCI layer.  <a href="env_8h.html#ac3850938d8aaf6363bd76e690f17de30">More...</a><br /></td></tr>
-<tr class="separator:ac3850938d8aaf6363bd76e690f17de30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ed436524e4df7525045e488206aa648"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_8h.html#a4ed436524e4df7525045e488206aa648">spdk_pci_hook_device</a> (struct spdk_pci_driver *drv, struct <a class="el" href="structspdk__pci__device.html">spdk_pci_device</a> *dev)</td></tr>
+<tr class="memdesc:a4ed436524e4df7525045e488206aa648"><td class="mdescLeft">&#160;</td><td class="mdescRight">Hook a custom PCI device into the PCI layer.  <a href="env_8h.html#a4ed436524e4df7525045e488206aa648">More...</a><br /></td></tr>
+<tr class="separator:a4ed436524e4df7525045e488206aa648"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac6cda84fe7f3ca98ee13683207ffeca5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_8h.html#ac6cda84fe7f3ca98ee13683207ffeca5">spdk_pci_unhook_device</a> (struct <a class="el" href="structspdk__pci__device.html">spdk_pci_device</a> *dev)</td></tr>
 <tr class="memdesc:ac6cda84fe7f3ca98ee13683207ffeca5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Un-hook a custom PCI device from the PCI layer.  <a href="env_8h.html#ac6cda84fe7f3ca98ee13683207ffeca5">More...</a><br /></td></tr>
 <tr class="separator:ac6cda84fe7f3ca98ee13683207ffeca5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a692040f0dc2155a370c4496a1f863c90"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_8h.html#a692040f0dc2155a370c4496a1f863c90">spdk_pci_device_get_type</a> (const struct <a class="el" href="structspdk__pci__device.html">spdk_pci_device</a> *dev)</td></tr>
 <tr class="memdesc:a692040f0dc2155a370c4496a1f863c90"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the type of the PCI device.  <a href="env_8h.html#a692040f0dc2155a370c4496a1f863c90">More...</a><br /></td></tr>
 <tr class="separator:a692040f0dc2155a370c4496a1f863c90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af30e499f580512a07adde59837ea6b5e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_8h.html#af30e499f580512a07adde59837ea6b5e">spdk_pci_register_device_provider</a> (struct <a class="el" href="structspdk__pci__device__provider.html">spdk_pci_device_provider</a> *provider)</td></tr>
+<tr class="memdesc:af30e499f580512a07adde59837ea6b5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register a PCI device provdier.  <a href="env_8h.html#af30e499f580512a07adde59837ea6b5e">More...</a><br /></td></tr>
+<tr class="separator:af30e499f580512a07adde59837ea6b5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a925f8e1d1ed12fc1b7eb057a5c5b7bfd"><td class="memItemLeft" align="right" valign="top"><a id="a925f8e1d1ed12fc1b7eb057a5c5b7bfd"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_8h.html#a925f8e1d1ed12fc1b7eb057a5c5b7bfd">spdk_unaffinitize_thread</a> (void)</td></tr>
 <tr class="memdesc:a925f8e1d1ed12fc1b7eb057a5c5b7bfd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove any CPU affinity from the current thread. <br /></td></tr>
@@ -649,6 +656,38 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_
 <div class="line">{ \</div>
 <div class="line">        spdk_pci_driver_register(#name, id_table, flags); \</div>
 <div class="line">}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a5d3845f913b94ec2c05711450fecc468"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d3845f913b94ec2c05711450fecc468">&#9670;&nbsp;</a></span>SPDK_PCI_REGISTER_DEVICE_PROVIDER</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SPDK_PCI_REGISTER_DEVICE_PROVIDER</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">name, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">provider&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">        <span class="keyword">static</span> <span class="keywordtype">void</span> __attribute__((constructor)) _spdk_pci_register_device_provider_##name(<span class="keywordtype">void</span>) \</div>
+<div class="line">        { \</div>
+<div class="line">                spdk_pci_register_device_provider(provider); \</div>
+<div class="line">        }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -3830,14 +3869,14 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_
 
 </div>
 </div>
-<a id="ac3850938d8aaf6363bd76e690f17de30"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac3850938d8aaf6363bd76e690f17de30">&#9670;&nbsp;</a></span>spdk_pci_hook_device()</h2>
+<a id="a4ed436524e4df7525045e488206aa648"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ed436524e4df7525045e488206aa648">&#9670;&nbsp;</a></span>spdk_pci_hook_device()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void spdk_pci_hook_device </td>
+          <td class="memname">int spdk_pci_hook_device </td>
           <td>(</td>
           <td class="paramtype">struct spdk_pci_driver *&#160;</td>
           <td class="paramname"><em>drv</em>, </td>
@@ -3861,10 +3900,11 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">drv</td><td>driver that will be able to attach the device </td></tr>
-    <tr><td class="paramname">dev</td><td>fully initialized PCI device struct </td></tr>
+    <tr><td class="paramname">dev</td><td>fully initialized PCI device struct</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, negative errno otherwise. </dd></dl>
 
 </div>
 </div>
@@ -3928,6 +3968,32 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_
 
 <p>Get the NVMe PCI driver object. </p>
 <dl class="section return"><dt>Returns</dt><dd>PCI driver. </dd></dl>
+
+</div>
+</div>
+<a id="af30e499f580512a07adde59837ea6b5e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af30e499f580512a07adde59837ea6b5e">&#9670;&nbsp;</a></span>spdk_pci_register_device_provider()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_pci_register_device_provider </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structspdk__pci__device__provider.html">spdk_pci_device_provider</a> *&#160;</td>
+          <td class="paramname"><em>provider</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Register a PCI device provdier. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">provider</td><td>PCI device provider. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

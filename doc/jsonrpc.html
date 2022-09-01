@@ -8031,7 +8031,7 @@ bdev_nvme_send_cmd</h2>
 <div class="line"> </div>
 <div class="line">}</div>
 </div><!-- fragment --><h2><a class="anchor" id="rpc_enable_vmd"></a>
-enable_vmd</h2>
+vmd_enable</h2>
 <p>Enable VMD enumeration.</p>
 <h3>Parameters</h3>
 <p>This method has no parameters.</p>
@@ -8041,7 +8041,7 @@ enable_vmd</h2>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
 <div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
-<div class="line">  &quot;method&quot;: &quot;enable_vmd&quot;,</div>
+<div class="line">  &quot;method&quot;: &quot;vmd_enable&quot;,</div>
 <div class="line">  &quot;id&quot;: 1</div>
 <div class="line">}</div>
 </div><!-- fragment --><p>Example response:</p>
@@ -8049,6 +8049,52 @@ enable_vmd</h2>
 <div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
 <div class="line">  &quot;id&quot;: 1,</div>
 <div class="line">  &quot;result&quot;: true</div>
+<div class="line">}</div>
+</div><!-- fragment --><h2><a class="anchor" id="rpc_vmd_remove_device"></a>
+vmd_remove_device</h2>
+<p>Remove a device behind a VMD.</p>
+<h2>Parameters</h2>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">addr   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Address of the device to remove.   </td></tr>
+</table>
+<h2>Example</h2>
+<div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
+<div class="line">  &quot;method&quot;: &quot;vmd_remove_device&quot;,</div>
+<div class="line">  &quot;params&quot;: {</div>
+<div class="line">    &quot;addr&quot;: &quot;5d0505:01:00.0&quot;</div>
+<div class="line">  }</div>
+<div class="line">  &quot;id&quot;: 1</div>
+<div class="line">}</div>
+</div><!-- fragment --><p>Example response:</p>
+<div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
+<div class="line">  &quot;id&quot;: 1,</div>
+<div class="line">  &quot;result&quot;: true</div>
+<div class="line">}</div>
+</div><!-- fragment --><h2><a class="anchor" id="rpc_vmd_rescan"></a>
+vmd_rescan</h2>
+<p>Force a rescan of the devices behind VMD.</p>
+<h2>Parameters</h2>
+<p>This method has no parameters.</p>
+<h3>Response</h3>
+<p>The response is the number of new devices found.</p>
+<h2>Example</h2>
+<div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
+<div class="line">  &quot;method&quot;: &quot;vmd_rescan&quot;,</div>
+<div class="line">  &quot;id&quot;: 1</div>
+<div class="line">}</div>
+</div><!-- fragment --><p>Example response:</p>
+<div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
+<div class="line">  &quot;id&quot;: 1,</div>
+<div class="line">  &quot;result&quot;: {</div>
+<div class="line">    &quot;count&quot;: 1</div>
+<div class="line">  }</div>
 <div class="line">}</div>
 </div><!-- fragment --><h2><a class="anchor" id="rpc_spdk_get_version"></a>
 spdk_get_version</h2>

@@ -1,5 +1,16 @@
 var NAVTREEINDEX28 =
 {
+"structvfio__user__version.html#af5e04313660bcdcd7dabc4a147eb0b5d":[15,0,369,0],
+"system_configuration.html":[3,0],
+"system_configuration.html#iommu_config":[3,0,0],
+"system_configuration.html#system_configuration_nonroot":[3,0,1],
+"system_configuration.html#system_configuration_nonroot_device_access":[3,0,1,0],
+"system_configuration.html#system_configuration_nonroot_memory_constraints":[3,0,1,1],
+"thread_8h.html":[16,0,57],
+"thread_8h.html#a07b662b152c21dad824ad2738d0733ec":[16,0,57,74],
+"thread_8h.html#a0cac0f188b5f46ff8bcdd5d4ffa37e84":[16,0,57,28],
+"thread_8h.html#a0f0c05dd1c9cb0b31eee89213b89f3c3":[16,0,57,42],
+"thread_8h.html#a10aa5a8ec5228fa87db97f7655f8c0d6":[16,0,57,51],
 "thread_8h.html#a16bb098e6398d2a63577e805f1423a3e":[16,0,57,25],
 "thread_8h.html#a17cf88195e46bb118ac03528f7f5eee0":[16,0,57,4],
 "thread_8h.html#a1d77f05c2461acb75f333e67e6aeb1ed":[16,0,57,55],
@@ -238,16 +249,5 @@ var NAVTREEINDEX28 =
 "unionidxd__offsets__register.html#a16bbf9fa887e4804e714ec54d322bace":[15,0,17,6],
 "unionidxd__offsets__register.html#a43636517dbe127db642d7f6077146bea":[15,0,17,1],
 "unionidxd__offsets__register.html#a56c89a9743baa92e4915662c24bbaf38":[15,0,17,4],
-"unionidxd__offsets__register.html#a580d4224ca783068da581d39a61c5fe3":[15,0,17,2],
-"unionidxd__offsets__register.html#a942b86becefcd0fe0d924c88b032bb05":[15,0,17,3],
-"unionidxd__offsets__register.html#aa85019dbd22343af0ea489e164be0799":[15,0,17,5],
-"unionidxd__swerr__register.html":[15,0,20],
-"unionidxd__swerr__register.html#a025bbc36415c200c6e603cbb82bacbfe":[15,0,20,6],
-"unionidxd__swerr__register.html#a058df102fca7c0ecfbe3827ccb193bf8":[15,0,20,11],
-"unionidxd__swerr__register.html#a1b6507502bdd761d289484e8350f6a18":[15,0,20,13],
-"unionidxd__swerr__register.html#a26cfce45a58035eaab256e010f8e8ea5":[15,0,20,8],
-"unionidxd__swerr__register.html#a3012b31220871f43372da61bb57e50f2":[15,0,20,18],
-"unionidxd__swerr__register.html#a4a3b2a02f37f2d5c2bcb2d2d95e646fc":[15,0,20,10],
-"unionidxd__swerr__register.html#a4ae705e316f3bad49da1cf69d5585a8e":[15,0,20,2],
-"unionidxd__swerr__register.html#a5d60b68b80c919fc66749cd7a30aa93b":[15,0,20,4]
+"unionidxd__offsets__register.html#a580d4224ca783068da581d39a61c5fe3":[15,0,17,2]
 };

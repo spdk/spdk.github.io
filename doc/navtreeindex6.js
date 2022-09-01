@@ -1,5 +1,7 @@
 var NAVTREEINDEX6 =
 {
+"json_8h.html#a8f37bf6dcbc847325d5e6bcfe3dc1e59":[16,0,33,29],
+"json_8h.html#a91c8e2bb9f0a1af4824d5708b8afbf26":[16,0,33,5],
 "json_8h.html#a968950cbafd14720bdc2d9aba6a8c276":[16,0,33,41],
 "json_8h.html#a96d2603083c8aa2b43a9f26d5d040262":[16,0,33,21],
 "json_8h.html#a97b8231e8e3edf28b783a251568ab839":[16,0,33,43],
@@ -71,8 +73,8 @@ var NAVTREEINDEX6 =
 "jsonrpc.html#rpc_bdev_compress_set_pmd":[3,9,5,12],
 "jsonrpc.html#rpc_bdev_crypto_create":[3,9,5,13],
 "jsonrpc.html#rpc_bdev_crypto_delete":[3,9,5,14],
-"jsonrpc.html#rpc_bdev_daos_create":[3,9,12,8],
-"jsonrpc.html#rpc_bdev_daos_delete":[3,9,12,9],
+"jsonrpc.html#rpc_bdev_daos_create":[3,9,12,10],
+"jsonrpc.html#rpc_bdev_daos_delete":[3,9,12,11],
 "jsonrpc.html#rpc_bdev_delay_create":[3,9,5,54],
 "jsonrpc.html#rpc_bdev_delay_delete":[3,9,5,55],
 "jsonrpc.html#rpc_bdev_delay_update_latency":[3,9,5,56],
@@ -110,7 +112,7 @@ var NAVTREEINDEX6 =
 "jsonrpc.html#rpc_bdev_null_create":[3,9,5,23],
 "jsonrpc.html#rpc_bdev_null_delete":[3,9,5,24],
 "jsonrpc.html#rpc_bdev_null_resize":[3,9,5,25],
-"jsonrpc.html#rpc_bdev_nvme_add_error_injection":[3,9,12,6],
+"jsonrpc.html#rpc_bdev_nvme_add_error_injection":[3,9,12,8],
 "jsonrpc.html#rpc_bdev_nvme_apply_firmware":[3,9,5,45],
 "jsonrpc.html#rpc_bdev_nvme_attach_controller":[3,9,5,31],
 "jsonrpc.html#rpc_bdev_nvme_cuse_register":[3,9,5,41],
@@ -123,7 +125,7 @@ var NAVTREEINDEX6 =
 "jsonrpc.html#rpc_bdev_nvme_get_transport_statistics":[3,9,5,46],
 "jsonrpc.html#rpc_bdev_nvme_opal_init":[3,9,9,21],
 "jsonrpc.html#rpc_bdev_nvme_opal_revert":[3,9,9,22],
-"jsonrpc.html#rpc_bdev_nvme_remove_error_injection":[3,9,12,7],
+"jsonrpc.html#rpc_bdev_nvme_remove_error_injection":[3,9,12,9],
 "jsonrpc.html#rpc_bdev_nvme_reset_controller":[3,9,5,34],
 "jsonrpc.html#rpc_bdev_nvme_send_cmd":[3,9,12,3],
 "jsonrpc.html#rpc_bdev_nvme_set_hotplug":[3,9,5,30],
@@ -247,7 +249,5 @@ var NAVTREEINDEX6 =
 "jsonrpc.html#rpc_nvmf_subsystem_add_host":[3,9,7,9],
 "jsonrpc.html#rpc_nvmf_subsystem_add_listener":[3,9,7,4],
 "jsonrpc.html#rpc_nvmf_subsystem_add_ns":[3,9,7,7],
-"jsonrpc.html#rpc_nvmf_subsystem_allow_any_host":[3,9,7,11],
-"jsonrpc.html#rpc_nvmf_subsystem_get_controllers":[3,9,7,12],
-"jsonrpc.html#rpc_nvmf_subsystem_get_listeners":[3,9,7,14]
+"jsonrpc.html#rpc_nvmf_subsystem_allow_any_host":[3,9,7,11]
 };

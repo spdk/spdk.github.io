@@ -96,6 +96,7 @@ var nvme__spec_8h =
     [ "spdk_nvme_ns_streams_status", "structspdk__nvme__ns__streams__status.html", "structspdk__nvme__ns__streams__status" ],
     [ "SPDK_NVME_ADMIN_QUEUE_MAX_ENTRIES", "nvme__spec_8h.html#afc394cf0b37e4ec245a604e0e48b2b82", null ],
     [ "SPDK_NVME_ADMIN_QUEUE_MIN_ENTRIES", "nvme__spec_8h.html#ae4c74c2bd741f5f291f3e4a032d04647", null ],
+    [ "SPDK_NVME_ADMIN_QUEUE_QUIRK_ENTRIES_MULTIPLE", "nvme__spec_8h.html#aec0d1aa1b2261b17cdf0e397b9009574", null ],
     [ "SPDK_NVME_ARBITRATION_BURST_UNLIMITED", "nvme__spec_8h.html#afb89428235d096e1984dfac453b74c93", null ],
     [ "SPDK_NVME_CAP_CSS_IOCS", "nvme__spec_8h.html#af7e3abad4c4c265fccce437bbb7832f1", null ],
     [ "SPDK_NVME_CAP_CSS_NOIO", "nvme__spec_8h.html#a31ff3cbe0e2664095e3abc096a9ea81f", null ],
