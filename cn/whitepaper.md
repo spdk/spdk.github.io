@@ -68,5 +68,5 @@ toc:
 > “针对CBS产品的架构、存储引擎以及硬件基础设施，腾讯云加入了对远程直接数据存取(Remote Direct Memory Access，RDMA)协议的支持，并与英特尔携手，开展了多方位的优化，包括：加入轮询、算法优化、消除竞争以及消除锁等机制，优化CBS存储引擎；引入由英特尔提供的SPDK(Storage Performance Development Kit)开发套件，优化NVMe固态盘的IOPS和时延性能。”
 
 ## 华瑞指数云
-* [WiDE分布式存储引擎和英特尔®傲腾™固态盘联合解决方案技术白皮书](https://ci.spdk.io/download/papers/202208_Joint_Technical_Whitepaper_of_WiDE_Distributed_Storage_Engine_with_Intel_on_New_Storage_Media_CN.pdf)
+* [WiDE分布式引擎与英特尔®新一代平台联合解决方案技术白皮书](https://ci.spdk.io/download/papers/202208_Joint_Technical_Whitepaper_of_WiDE_Distributed_Storage_Engine_with_Intel_New_Platform_CN.pdf)
 > “为了适应高速IO处理的需求，过去十多年来学术界和工业界在本领域也提出了许多新想法，新技术，比如内存零拷贝、远程直接地址访问RDMA、无锁零中断IO处理、内核旁路(Bypass Kernel)、全用户态、RTC(Run to Completion)IO处理模型和异步轮询等。英特尔公司为了配合新的网络和存储介质的需要，主导推广了DPDK、SPDK开发套件和社区。”
