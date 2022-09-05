@@ -18,6 +18,8 @@ toc:
 
 * [初识SPDK](https://mp.weixin.qq.com/s?__biz=MzI3NDA4ODY4MA==&mid=2653338468&idx=1&sn=20f395a7e5e22bdee6cba9351d72ebae&chksm=f0cb4ce3c7bcc5f586a40cbeb5917146e95f7b5842da9fefbf6ddbc9705a4a3ed2773072f7b9&mpshare=1&scene=1&srcid=0516z8wJk6QLtfchhp3GITgg&sharer_sharetime=1652678609846&sharer_shareid=16362cd686fb4155d775401692935830&exportkey=Aw9i14ut1qFcTFEAJOQCGpY%3D&acctmode=0&pass_ticket=CHRad0UIoz8%2FSPboNOugxVHCcm1xuslbDDvwdEvYLiqRKwiMWxn%2B%2B5UW4IrjUmQ6&wx_header=0#rd)
 
+* [再探SPDK----使用方法及基础机制概览](https://mp.weixin.qq.com/s?__biz=MzI3NDA4ODY4MA==&mid=2653338740&idx=1&sn=8b501b666653f320525a43d5fe61bc67&chksm=f0cb4bf3c7bcc2e543dc987fb0609aaaa59cab404fc2aa92790314bef742cb9b82baf877b6b8&exportkey=A8zXqscxyyw65AVZQruRWQ0%3D&acctmode=0&pass_ticket=Mcd65zr9t1aqxnAnyC72VMWp8BxN1gvM8479hm7DTtV9slEtDJj4T5aOR1Dl1LU4&wx_header=0#rd)
+
 * [SPDK block device 及其编程的简单介绍](https://mp.weixin.qq.com/s?__biz=MzI3NDA4ODY4MA==&mid=2653336658&idx=1&sn=6c81de4b2897fd78bfdabab9c1c316dd&chksm=f0cb43d5c7bccac3a531867010e43e32abe13c5f8607e61e458f19594402ae5974fd326f7960&token=1050568646&lang=zh_CN#rd)
 
 * [SPDK Block Device 及其编程的简单介绍(二):初始化](https://mp.weixin.qq.com/s?__biz=MzI3NDA4ODY4MA==&mid=2653337067&idx=1&sn=9629dff3ee8ec3e6f70bd4a7dbe763cb&chksm=f0cb426cc7bccb7a3816b9888c547038113a173d4f3f4519fe9cf0f4bf18844074538bfa9781&token=468503366&lang=zh_CN#rd)
@@ -66,6 +68,8 @@ toc:
 
 * [支持非对称命名空间访问的SPDK多路径验证](https://mp.weixin.qq.com/s?__biz=MzI3NDA4ODY4MA==&mid=2653338599&idx=1&sn=8c9fde9fc979e3dcacf8923d5aa1bc5e&chksm=f0cb4c60c7bcc576032dbb64ff9d31a5c761b9b1850e01d7047f54f292bf589147ffe55aef7b&mpshare=1&scene=1&srcid=0516YOjlTdHput7SudpIKiCI&sharer_sharetime=1652678624881&sharer_shareid=16362cd686fb4155d775401692935830&exportkey=A9Mq3XCF0kHE4g66QTdlxos%3D&acctmode=0&pass_ticket=CHRad0UIoz8%2FSPboNOugxVHCcm1xuslbDDvwdEvYLiqRKwiMWxn%2B%2B5UW4IrjUmQ6&wx_header=0#rd)
 
+* [SPDK NVMe-oF多路径结合Delay Bdev使用场景](https://mp.weixin.qq.com/s?__biz=MzI3NDA4ODY4MA==&mid=2653338719&idx=1&sn=467131163b2c70bd9250148c582da4f8&chksm=f0cb4bd8c7bcc2ce2a4cf908b93985408e69840fb51fa8258752805dd9201032fc3456f72a98&exportkey=A97EhLslaESGI97keVfa6pw%3D&acctmode=0&pass_ticket=Mcd65zr9t1aqxnAnyC72VMWp8BxN1gvM8479hm7DTtV9slEtDJj4T5aOR1Dl1LU4&wx_header=0#rd)
+
 * [用SoftRoCE测试SPDK NVMe-oF target](https://mp.weixin.qq.com/s?__biz=MzI3NDA4ODY4MA==&mid=2653334844&idx=1&sn=96383bab414ad4e6454c7d98707dc611&chksm=f0cb5abbc7bcd3adf9137b3dd444b5a2f50fcf55ad44cc6a5a8f7fd79f14aebfe954e148c97c&token=431082989&lang=zh_CN#rd)
 
 * [基于SPDK的高效NVMe-oF target](https://mp.weixin.qq.com/s?__biz=MzI3NDA4ODY4MA==&mid=2653334751&idx=1&sn=eb13c596b3e938a093ef9dccc716dd97&chksm=f0cb5b58c7bcd24ee2c9a9d0a648f1dae83ab52d5449291af41655bc485be56f382809975aa7&token=431082989&lang=zh_CN#rd)
@@ -103,6 +107,8 @@ toc:
 * [用户态虚拟化IO通道实现概览及实践(上)](https://mp.weixin.qq.com/s?__biz=MzI3NDA4ODY4MA==&mid=2653338679&idx=1&sn=76191140dcbaf2e513159e6a85106e86&chksm=f0cb4bb0c7bcc2a695e1fbf1e60f16e652b71b9cd1d290e02a2013960343d9d989956e40e2a3&exportkey=A3Gt11jUsyB3d5s4jOC1rdU%3D&acctmode=0&pass_ticket=gkNuBUcabkuy398EZ%2Fn44dkahwx5P9bUwD9RkWi%2FRvcd0QjuZ3rPuYVWxUrpBtLq&wx_header=0#rd)
 
 * [用户态虚拟化IO通道实现概览及实践(下)](https://mp.weixin.qq.com/s?__biz=MzI3NDA4ODY4MA==&mid=2653338707&idx=1&sn=de97572315fe3cf03fbc68785d19501c&chksm=f0cb4bd4c7bcc2c2f8f330f2a85097d86ba2f589f2f62447f7ac1ae2693da30dd7c21df909a4&exportkey=A%2F6tgR0%2BNSkRbev4WagSAaU%3D&acctmode=0&pass_ticket=gkNuBUcabkuy398EZ%2Fn44dkahwx5P9bUwD9RkWi%2FRvcd0QjuZ3rPuYVWxUrpBtLq&wx_header=0#rd)
+
+* [SPDK vhost-user结合SPDK NVMe-oF RDMA性能调优参考](https://mp.weixin.qq.com/s?__biz=MzI3NDA4ODY4MA==&mid=2653338860&idx=1&sn=327e4ebb3ddb993b36159f7606e188f1&chksm=f0cb4b6bc7bcc27d70b7759467061e4b02d8927787e3ed929c798fc4958718ae482c2526afc9&exportkey=AxDHfl1rM%2FVs7ntolagttzg%3D&acctmode=0&pass_ticket=Mcd65zr9t1aqxnAnyC72VMWp8BxN1gvM8479hm7DTtV9slEtDJj4T5aOR1Dl1LU4&wx_header=0#rd)
 
 ******
 
