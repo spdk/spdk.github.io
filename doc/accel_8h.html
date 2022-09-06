@@ -95,7 +95,7 @@ $(document).ready(function(){initNavTree('accel_8h.html',''); initResizable(); }
 </div><!--header-->
 <div class="contents">
 
-<p>Acceleration engine abstraction layer.  
+<p>Acceleration Framework.  
 <a href="#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
@@ -110,7 +110,7 @@ Typedefs</h2></td></tr>
 <tr class="memdesc:a48593db52501b3dec9233f7112d37872"><td class="mdescLeft">&#160;</td><td class="mdescRight">Acceleration operation callback.  <a href="accel_8h.html#a48593db52501b3dec9233f7112d37872">More...</a><br /></td></tr>
 <tr class="separator:a48593db52501b3dec9233f7112d37872"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a545ea1cc4167924acee2803aed824877"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="accel_8h.html#a545ea1cc4167924acee2803aed824877">spdk_accel_fini_cb</a>) (void *cb_arg)</td></tr>
-<tr class="memdesc:a545ea1cc4167924acee2803aed824877"><td class="mdescLeft">&#160;</td><td class="mdescRight">Acceleration engine finish callback.  <a href="accel_8h.html#a545ea1cc4167924acee2803aed824877">More...</a><br /></td></tr>
+<tr class="memdesc:a545ea1cc4167924acee2803aed824877"><td class="mdescLeft">&#160;</td><td class="mdescRight">Acceleration framework finish callback.  <a href="accel_8h.html#a545ea1cc4167924acee2803aed824877">More...</a><br /></td></tr>
 <tr class="separator:a545ea1cc4167924acee2803aed824877"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
@@ -133,19 +133,15 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:af0ba5139fd29c095256d77f29b65a205"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="accel_8h.html#af0ba5139fd29c095256d77f29b65a205">spdk_accel_engine_initialize</a> (void)</td></tr>
-<tr class="memdesc:af0ba5139fd29c095256d77f29b65a205"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the acceleration engine.  <a href="accel_8h.html#af0ba5139fd29c095256d77f29b65a205">More...</a><br /></td></tr>
-<tr class="separator:af0ba5139fd29c095256d77f29b65a205"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6bf01a71e66d69942c8d22d11de7d359"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="accel_8h.html#a6bf01a71e66d69942c8d22d11de7d359">spdk_accel_engine_finish</a> (<a class="el" href="accel_8h.html#a545ea1cc4167924acee2803aed824877">spdk_accel_fini_cb</a> cb_fn, void *cb_arg)</td></tr>
-<tr class="memdesc:a6bf01a71e66d69942c8d22d11de7d359"><td class="mdescLeft">&#160;</td><td class="mdescRight">Close the acceleration engine.  <a href="accel_8h.html#a6bf01a71e66d69942c8d22d11de7d359">More...</a><br /></td></tr>
-<tr class="separator:a6bf01a71e66d69942c8d22d11de7d359"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8505077f98b662aa948eef070c4be155"><td class="memItemLeft" align="right" valign="top"><a id="a8505077f98b662aa948eef070c4be155"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="accel_8h.html#a8505077f98b662aa948eef070c4be155">spdk_accel_engine_module_finish</a> (void)</td></tr>
-<tr class="memdesc:a8505077f98b662aa948eef070c4be155"><td class="mdescLeft">&#160;</td><td class="mdescRight">Close the acceleration engine module and perform any necessary cleanup. <br /></td></tr>
-<tr class="separator:a8505077f98b662aa948eef070c4be155"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aedef5318137c2b093932164e23c93f0c"><td class="memItemLeft" align="right" valign="top">struct spdk_io_channel *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="accel_8h.html#aedef5318137c2b093932164e23c93f0c">spdk_accel_engine_get_io_channel</a> (void)</td></tr>
-<tr class="memdesc:aedef5318137c2b093932164e23c93f0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the I/O channel registered on the acceleration engine.  <a href="accel_8h.html#aedef5318137c2b093932164e23c93f0c">More...</a><br /></td></tr>
-<tr class="separator:aedef5318137c2b093932164e23c93f0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acbc9decf84ab594e9e04edac14e1b91b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="accel_8h.html#acbc9decf84ab594e9e04edac14e1b91b">spdk_accel_initialize</a> (void)</td></tr>
+<tr class="memdesc:acbc9decf84ab594e9e04edac14e1b91b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the acceleration framework.  <a href="accel_8h.html#acbc9decf84ab594e9e04edac14e1b91b">More...</a><br /></td></tr>
+<tr class="separator:acbc9decf84ab594e9e04edac14e1b91b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a75cbac98c1ed584e82d0172aa0bb81"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="accel_8h.html#a7a75cbac98c1ed584e82d0172aa0bb81">spdk_accel_finish</a> (<a class="el" href="accel_8h.html#a545ea1cc4167924acee2803aed824877">spdk_accel_fini_cb</a> cb_fn, void *cb_arg)</td></tr>
+<tr class="memdesc:a7a75cbac98c1ed584e82d0172aa0bb81"><td class="mdescLeft">&#160;</td><td class="mdescRight">Close the acceleration framework.  <a href="accel_8h.html#a7a75cbac98c1ed584e82d0172aa0bb81">More...</a><br /></td></tr>
+<tr class="separator:a7a75cbac98c1ed584e82d0172aa0bb81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a947dd411da094c21407afebfa6a38cdb"><td class="memItemLeft" align="right" valign="top">struct spdk_io_channel *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="accel_8h.html#a947dd411da094c21407afebfa6a38cdb">spdk_accel_get_io_channel</a> (void)</td></tr>
+<tr class="memdesc:a947dd411da094c21407afebfa6a38cdb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get an I/O channel for the acceleration framework.  <a href="accel_8h.html#a947dd411da094c21407afebfa6a38cdb">More...</a><br /></td></tr>
+<tr class="separator:a947dd411da094c21407afebfa6a38cdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8414580180688f9334f9a8e3103a6e28"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="accel_8h.html#a8414580180688f9334f9a8e3103a6e28">spdk_accel_submit_copy</a> (struct spdk_io_channel *ch, void *dst, void *src, uint64_t nbytes, int flags, <a class="el" href="accel_8h.html#a48593db52501b3dec9233f7112d37872">spdk_accel_completion_cb</a> cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:a8414580180688f9334f9a8e3103a6e28"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submit a copy request.  <a href="accel_8h.html#a8414580180688f9334f9a8e3103a6e28">More...</a><br /></td></tr>
 <tr class="separator:a8414580180688f9334f9a8e3103a6e28"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -187,7 +183,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="acce
 <tr class="separator:a308671b4f55c2adc9469e59b941a6dcc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Acceleration engine abstraction layer. </p>
+<div class="textblock"><p>Acceleration Framework. </p>
 </div><h2 class="groupheader">Typedef Documentation</h2>
 <a id="a48593db52501b3dec9233f7112d37872"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a48593db52501b3dec9233f7112d37872">&#9670;&nbsp;</a></span>spdk_accel_completion_cb</h2>
@@ -224,7 +220,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="acce
       </table>
 </div><div class="memdoc">
 
-<p>Acceleration engine finish callback. </p>
+<p>Acceleration framework finish callback. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">cb_arg</td><td>Callback argument. </td></tr>
@@ -273,14 +269,14 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="acce
 
 </div>
 </div>
-<a id="a6bf01a71e66d69942c8d22d11de7d359"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6bf01a71e66d69942c8d22d11de7d359">&#9670;&nbsp;</a></span>spdk_accel_engine_finish()</h2>
+<a id="a7a75cbac98c1ed584e82d0172aa0bb81"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7a75cbac98c1ed584e82d0172aa0bb81">&#9670;&nbsp;</a></span>spdk_accel_finish()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void spdk_accel_engine_finish </td>
+          <td class="memname">void spdk_accel_finish </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="accel_8h.html#a545ea1cc4167924acee2803aed824877">spdk_accel_fini_cb</a>&#160;</td>
           <td class="paramname"><em>cb_fn</em>, </td>
@@ -299,7 +295,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="acce
       </table>
 </div><div class="memdoc">
 
-<p>Close the acceleration engine. </p>
+<p>Close the acceleration framework. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">cb_fn</td><td>Called when the close operation completes. </td></tr>
@@ -310,14 +306,14 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="acce
 
 </div>
 </div>
-<a id="aedef5318137c2b093932164e23c93f0c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aedef5318137c2b093932164e23c93f0c">&#9670;&nbsp;</a></span>spdk_accel_engine_get_io_channel()</h2>
+<a id="a947dd411da094c21407afebfa6a38cdb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a947dd411da094c21407afebfa6a38cdb">&#9670;&nbsp;</a></span>spdk_accel_get_io_channel()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">struct spdk_io_channel* spdk_accel_engine_get_io_channel </td>
+          <td class="memname">struct spdk_io_channel* spdk_accel_get_io_channel </td>
           <td>(</td>
           <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
@@ -326,30 +322,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="acce
       </table>
 </div><div class="memdoc">
 
-<p>Get the I/O channel registered on the acceleration engine. </p>
-<p>This I/O channel is used to submit copy request.</p>
+<p>Get an I/O channel for the acceleration framework. </p>
+<p>This I/O channel is used to submit requests.</p>
 <dl class="section return"><dt>Returns</dt><dd>a pointer to the I/O channel on success, or NULL on failure. </dd></dl>
-
-</div>
-</div>
-<a id="af0ba5139fd29c095256d77f29b65a205"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af0ba5139fd29c095256d77f29b65a205">&#9670;&nbsp;</a></span>spdk_accel_engine_initialize()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int spdk_accel_engine_initialize </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Initialize the acceleration engine. </p>
-<dl class="section return"><dt>Returns</dt><dd>0 on success. </dd></dl>
 
 </div>
 </div>
@@ -388,6 +363,27 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="acce
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 if a valid engine name was provided. -EINVAL for invalid opcode or -ENOENT no engine was found at this time for the provided opcode. </dd></dl>
+
+</div>
+</div>
+<a id="acbc9decf84ab594e9e04edac14e1b91b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acbc9decf84ab594e9e04edac14e1b91b">&#9670;&nbsp;</a></span>spdk_accel_initialize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_accel_initialize </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Initialize the acceleration framework. </p>
+<dl class="section return"><dt>Returns</dt><dd>0 on success. </dd></dl>
 
 </div>
 </div>
