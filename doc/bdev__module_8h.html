@@ -154,6 +154,15 @@ typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_u
 <tr class="memitem:ad226e52efa62c0b31340be538000d1a8"><td class="memItemLeft" align="right" valign="top"><a id="ad226e52efa62c0b31340be538000d1a8"></a>
 typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_part_base_free_fn</b>) (void *ctx)</td></tr>
 <tr class="separator:ad226e52efa62c0b31340be538000d1a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab66511c6f3db7abcaecdea0536fc6067"><td class="memItemLeft" align="right" valign="top"><a id="ab66511c6f3db7abcaecdea0536fc6067"></a>
+typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_io_fn</b>) (void *ctx, struct <a class="el" href="structspdk__bdev__io.html">spdk_bdev_io</a> *bdev_io)</td></tr>
+<tr class="separator:ab66511c6f3db7abcaecdea0536fc6067"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72a8f679f4e45f3431ea7e450cb3ed7e"><td class="memItemLeft" align="right" valign="top"><a id="a72a8f679f4e45f3431ea7e450cb3ed7e"></a>
+typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_for_each_io_cb</b>) (void *ctx, int rc)</td></tr>
+<tr class="separator:a72a8f679f4e45f3431ea7e450cb3ed7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade4b64b36884d88964fc53a4bf65b993"><td class="memItemLeft" align="right" valign="top"><a id="ade4b64b36884d88964fc53a4bf65b993"></a>
+typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_get_current_qd_cb</b>) (struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *bdev, uint64_t current_qd, void *cb_arg, int rc)</td></tr>
+<tr class="separator:ade4b64b36884d88964fc53a4bf65b993"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
@@ -330,6 +339,12 @@ typedef&#160;</td><td class="memItemRight" valign="bottom"><b>TAILQ_HEAD</b> (bd
 <tr class="memitem:a82dd20b5702f2f97c1f8eec5cdc6d0d5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev__module_8h.html#a82dd20b5702f2f97c1f8eec5cdc6d0d5">spdk_bdev_notify_media_management</a> (struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *bdev)</td></tr>
 <tr class="memdesc:a82dd20b5702f2f97c1f8eec5cdc6d0d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send SPDK_BDEV_EVENT_MEDIA_MANAGEMENT to all open descriptors that have pending media events.  <a href="bdev__module_8h.html#a82dd20b5702f2f97c1f8eec5cdc6d0d5">More...</a><br /></td></tr>
 <tr class="separator:a82dd20b5702f2f97c1f8eec5cdc6d0d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5326cf21d1612a39bb3ba660790a8ec6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev__module_8h.html#a5326cf21d1612a39bb3ba660790a8ec6">spdk_bdev_for_each_bdev_io</a> (struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *bdev, void *ctx, spdk_bdev_io_fn fn, spdk_bdev_for_each_io_cb cb)</td></tr>
+<tr class="memdesc:a5326cf21d1612a39bb3ba660790a8ec6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call the provided function on the appropriate thread for each bdev_io submitted to the provided bdev.  <a href="bdev__module_8h.html#a5326cf21d1612a39bb3ba660790a8ec6">More...</a><br /></td></tr>
+<tr class="separator:a5326cf21d1612a39bb3ba660790a8ec6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35d1bb3f7b96e2e0d90e42f11f8f402d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev__module_8h.html#a35d1bb3f7b96e2e0d90e42f11f8f402d">spdk_bdev_get_current_qd</a> (struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *bdev, spdk_bdev_get_current_qd_cb cb_fn, void *cb_arg)</td></tr>
+<tr class="memdesc:a35d1bb3f7b96e2e0d90e42f11f8f402d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Measure and return the queue depth from a bdev.  <a href="bdev__module_8h.html#a35d1bb3f7b96e2e0d90e42f11f8f402d">More...</a><br /></td></tr>
+<tr class="separator:a35d1bb3f7b96e2e0d90e42f11f8f402d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Block Device Module Interface. </p>
@@ -566,6 +581,58 @@ typedef&#160;</td><td class="memItemRight" valign="bottom"><b>TAILQ_HEAD</b> (bd
 
 </div>
 </div>
+<a id="a5326cf21d1612a39bb3ba660790a8ec6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5326cf21d1612a39bb3ba660790a8ec6">&#9670;&nbsp;</a></span>spdk_bdev_for_each_bdev_io()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_bdev_for_each_bdev_io </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *&#160;</td>
+          <td class="paramname"><em>bdev</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>ctx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">spdk_bdev_io_fn&#160;</td>
+          <td class="paramname"><em>fn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">spdk_bdev_for_each_io_cb&#160;</td>
+          <td class="paramname"><em>cb</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Call the provided function on the appropriate thread for each bdev_io submitted to the provided bdev. </p>
+<p>Note: This function should be used only in the bdev module and it should be ensured that the bdev is not unregistered while executing the function. Both fn and cb are required to specify.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bdev</td><td>Block device to query. </td></tr>
+    <tr><td class="paramname">ctx</td><td>Context passed to the function for each bdev_io and the completion callback function. </td></tr>
+    <tr><td class="paramname">fn</td><td>Called on the appropriate thread for each bdev_io submitted to the bdev. </td></tr>
+    <tr><td class="paramname">cb</td><td>Called when this operation completes. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a1d08fdcf7c3e636d41028fa7ea55aeb7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1d08fdcf7c3e636d41028fa7ea55aeb7">&#9670;&nbsp;</a></span>spdk_bdev_get_aliases()</h2>
 
@@ -590,6 +657,51 @@ typedef&#160;</td><td class="memItemRight" valign="bottom"><b>TAILQ_HEAD</b> (bd
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Pointer to bdev aliases list. </dd></dl>
+
+</div>
+</div>
+<a id="a35d1bb3f7b96e2e0d90e42f11f8f402d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a35d1bb3f7b96e2e0d90e42f11f8f402d">&#9670;&nbsp;</a></span>spdk_bdev_get_current_qd()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_bdev_get_current_qd </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *&#160;</td>
+          <td class="paramname"><em>bdev</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">spdk_bdev_get_current_qd_cb&#160;</td>
+          <td class="paramname"><em>cb_fn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>cb_arg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Measure and return the queue depth from a bdev. </p>
+<p>Note: <a class="el" href="bdev_8h.html#a471f32e8948203f7aaf320396a1ae7c9" title="Get the most recently measured queue depth from a bdev.">spdk_bdev_get_qd()</a> works only when the user enables queue depth sampling, while this new function works even when queue depth sampling is disabled. The returned queue depth may not be exact, for example, some additional I/Os may have been submitted or completed during the for_each_channel operation. This function should be used only in the bdev module and it should be ensured that the dev is not unregistered while executing the function. cb_fn is required to specify.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bdev</td><td>Block device to query. </td></tr>
+    <tr><td class="paramname">cb_fn</td><td>Callback function to be called with queue depth measured for a bdev. </td></tr>
+    <tr><td class="paramname">cb_arg</td><td>Argument to pass to callback function. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

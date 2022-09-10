@@ -98,6 +98,8 @@ v22.09: (Upcoming Release)</h1>
 <p><code>spdk_subsystem_init_from_json_config</code> now fails if the JSON configuration file is not an object with an array named "subsystems".</p>
 <h2>bdev</h2>
 <p>New RPCs <code>bdev_xnvme_create</code> and <code>bdev_xnvme_delete</code> were added to support the xNVMe bdev.</p>
+<p>A new API <code>spdk_bdev_for_each_bdev_io</code> was added to execute the function on the appropriate thread for each bdev_io submitted to the bdev.</p>
+<p>A new API <code>spdk_bdev_get_current_qd</code> was added to measure and return the queue depth from a bdev. This API is available even when queue depth sampling is disabled.</p>
 <h2>sock</h2>
 <p>Added new <code>ssl</code> based socket implementation, the code is located in module/sock/posix. For now we are using hard-coded PSK and only support TLS 1.3</p>
 <h2>blobstore</h2>
@@ -121,6 +123,8 @@ v22.09: (Upcoming Release)</h1>
 <p>Added <code>spdk_nvme_ctrlr_disable_read_changed_ns_list_log_page</code> to allow an application to tell the driver to not read the CHANGED_NS_LIST log page in response to a NS_ATTR_CHANGED AEN. When called the application is required to read this log page instead to clear the AEN.</p>
 <h2>util</h2>
 <p>Added new functions: <code>spdk_hexlify</code> and <code>spdk_unhexlify</code>.</p>
+<h2>virtio</h2>
+<p>virtio-vhost-user no longer tries to support dynamic memory allocation. The vhost target does not support the high rate of SET_MEM_TABLE vhost messages that result from dynamic memory allocation, so a virtio-vhost-user device will now present an ERRLOG, assert, and skip the SET_MEM_TABLE vhost message if a memory notification is received outside of the normal device start/stop. Applications using the virtio library in vhost-user mode should now pre-allocate the application's memory using the -s/&ndash;mem-size option and use single shared memory file segments using the -g/&ndash;single-file-segments option.</p>
 <h1>v22.05</h1>
 <h2>sock</h2>
 <p>A new option <code>ack_timeout</code> was added to the <code><a class="el" href="structspdk__sock__opts.html" title="Spdk socket initialization options.">spdk_sock_opts</a></code> structure.</p>

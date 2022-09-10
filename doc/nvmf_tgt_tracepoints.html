@@ -190,36 +190,35 @@ Adding New Tracepoints</h1>
 <p>SPDK applications and libraries provide several trace points. You can add new tracepoints to the existing trace groups. For example, to add a new tracepoints to the SPDK RDMA library (lib/nvmf/rdma.c) trace group TRACE_GROUP_NVMF_RDMA, define the tracepoints and assigning them a unique ID using the SPDK_TPOINT_ID macro:</p>
 <div class="fragment"><div class="line"><span class="preprocessor">#define TRACE_GROUP_NVMF_RDMA   0x4</span></div>
 <div class="line"><span class="preprocessor">#define TRACE_RDMA_REQUEST_STATE_NEW    SPDK_TPOINT_ID(TRACE_GROUP_NVMF_RDMA, 0x0)</span></div>
+<div class="line"><span class="preprocessor">#define TRACE_RDMA_REQUEST_STATE_NEED_BUFFER    SPDK_TPOINT_ID(TRACE_GROUP_NVMF_RDMA, 0x1)</span></div>
 <div class="line">...</div>
 <div class="line">#define NEW_TRACE_POINT_NAME    SPDK_TPOINT_ID(TRACE_GROUP_NVMF_RDMA, UNIQUE_ID)</div>
 </div><!-- fragment --><p>You also need to register the new trace points in the SPDK_TRACE_REGISTER_FN macro call within the application/library using the spdk_trace_register_description function as shown below:</p>
-<div class="fragment"><div class="line">SPDK_TRACE_REGISTER_FN(nvmf_trace)</div>
+<div class="fragment"><div class="line">SPDK_TRACE_REGISTER_FN(nvmf_trace, <span class="stringliteral">&quot;nvmf_rdma&quot;</span>, TRACE_GROUP_NVMF_RDMA)</div>
 <div class="line">{</div>
 <div class="line">        <a class="code" href="trace_8h.html#a78c1e25f823c6e98da3f99c515715ebe">spdk_trace_register_object</a>(OBJECT_NVMF_RDMA_IO, <span class="charliteral">&#39;r&#39;</span>);</div>
-<div class="line">        <a class="code" href="trace_8h.html#a272510f870f932fd0e081481f6e51e58">spdk_trace_register_description</a>(<span class="stringliteral">&quot;RDMA_REQ_NEW&quot;</span>, <span class="stringliteral">&quot;&quot;</span>,</div>
-<div class="line">                                        TRACE_RDMA_REQUEST_STATE_NEW,</div>
+<div class="line">        <a class="code" href="trace_8h.html#a272510f870f932fd0e081481f6e51e58">spdk_trace_register_description</a>(<span class="stringliteral">&quot;RDMA_REQ_NEW&quot;</span>, TRACE_RDMA_REQUEST_STATE_NEW,</div>
 <div class="line">                                        OWNER_NONE, OBJECT_NVMF_RDMA_IO, 1,</div>
-<div class="line">                                        SPDK_TRACE_ARG_TYPE_PTR, <span class="stringliteral">&quot;cmid: &quot;</span>);</div>
-<div class="line">        ...</div>
-<div class="line">        <a class="code" href="trace_8h.html#a272510f870f932fd0e081481f6e51e58">spdk_trace_register_description</a>(<span class="stringliteral">&quot;NEW_RDMA_REQ_NAME&quot;</span>, <span class="stringliteral">&quot;&quot;</span>,</div>
-<div class="line">                                        NEW_TRACE_POINT_NAME,</div>
+<div class="line">                                        SPDK_TRACE_ARG_TYPE_PTR, <span class="stringliteral">&quot;qpair&quot;</span>);</div>
+<div class="line">        <a class="code" href="trace_8h.html#a272510f870f932fd0e081481f6e51e58">spdk_trace_register_description</a>(<span class="stringliteral">&quot;RDMA_REQ_NEED_BUFFER&quot;</span>, TRACE_RDMA_REQUEST_STATE_NEED_BUFFER,</div>
 <div class="line">                                        OWNER_NONE, OBJECT_NVMF_RDMA_IO, 0,</div>
-<div class="line">                                        SPDK_TRACE_ARG_TYPE_PTR, <span class="stringliteral">&quot;cmid: &quot;</span>);</div>
+<div class="line">                                        SPDK_TRACE_ARG_TYPE_PTR, <span class="stringliteral">&quot;qpair&quot;</span>);</div>
+<div class="line">        ...</div>
 <div class="line">}</div>
 <div class="ttc" id="atrace_8h_html_a272510f870f932fd0e081481f6e51e58"><div class="ttname"><a href="trace_8h.html#a272510f870f932fd0e081481f6e51e58">spdk_trace_register_description</a></div><div class="ttdeci">void spdk_trace_register_description(const char *name, uint16_t tpoint_id, uint8_t owner_type, uint8_t object_type, uint8_t new_object, uint8_t arg1_type, const char *arg1_name)</div><div class="ttdoc">Register the description for a tpoint with a single argument.</div></div>
 <div class="ttc" id="atrace_8h_html_a78c1e25f823c6e98da3f99c515715ebe"><div class="ttname"><a href="trace_8h.html#a78c1e25f823c6e98da3f99c515715ebe">spdk_trace_register_object</a></div><div class="ttdeci">void spdk_trace_register_object(uint8_t type, char id_prefix)</div><div class="ttdoc">Register the trace object.</div></div>
 </div><!-- fragment --><p>Finally, use the spdk_trace_record function at the appropriate point in the application/library to record the current trace state for the new trace points. The following example shows the usage of the spdk_trace_record function to record the current trace state of several tracepoints.</p>
 <div class="fragment"><div class="line"><span class="keywordflow">case</span> RDMA_REQUEST_STATE_NEW:</div>
-<div class="line">        <a class="code" href="trace_8h.html#a583c35dff93e5c996bd7115c4593a457">spdk_trace_record</a>(TRACE_RDMA_REQUEST_STATE_NEW, 0, 0, (uintptr_t)rdma_req, (uintptr_t)rqpair-&gt;cm_id);</div>
+<div class="line">        <a class="code" href="trace_8h.html#a583c35dff93e5c996bd7115c4593a457">spdk_trace_record</a>(TRACE_RDMA_REQUEST_STATE_NEW, 0, 0, (uintptr_t)rdma_req, (uintptr_t)rqpair);</div>
 <div class="line">        ...</div>
 <div class="line">        <span class="keywordflow">break</span>;</div>
 <div class="line"><span class="keywordflow">case</span> RDMA_REQUEST_STATE_NEED_BUFFER:</div>
-<div class="line">        <a class="code" href="trace_8h.html#a583c35dff93e5c996bd7115c4593a457">spdk_trace_record</a>(TRACE_RDMA_REQUEST_STATE_NEED_BUFFER, 0, 0, (uintptr_t)rdma_req, (uintptr_t)rqpair-&gt;cm_id);</div>
+<div class="line">        <a class="code" href="trace_8h.html#a583c35dff93e5c996bd7115c4593a457">spdk_trace_record</a>(TRACE_RDMA_REQUEST_STATE_NEED_BUFFER, 0, 0, (uintptr_t)rdma_req, (uintptr_t)rqpair);</div>
 <div class="line">        ...</div>
 <div class="line">        <span class="keywordflow">break</span>;</div>
-<div class="line"><span class="keywordflow">case</span> RDMA_REQUEST_STATE_TRANSFER_PENDING_HOST_TO_CONTROLLER:</div>
-<div class="line">        <a class="code" href="trace_8h.html#a583c35dff93e5c996bd7115c4593a457">spdk_trace_record</a>(TRACE_RDMA_REQUEST_STATE_TRANSFER_PENDING_HOST_TO_CONTROLLER, 0, 0,</div>
-<div class="line">                (uintptr_t)rdma_req, (uintptr_t)rqpair-&gt;cm_id);</div>
+<div class="line"><span class="keywordflow">case</span> RDMA_REQUEST_STATE_DATA_TRANSFER_TO_CONTROLLER_PENDING:</div>
+<div class="line">        <a class="code" href="trace_8h.html#a583c35dff93e5c996bd7115c4593a457">spdk_trace_record</a>(RDMA_REQUEST_STATE_DATA_TRANSFER_TO_CONTROLLER_PENDING, 0, 0,</div>
+<div class="line">                (uintptr_t)rdma_req, (uintptr_t)rqpair);</div>
 <div class="line">        ...</div>
 <div class="ttc" id="atrace_8h_html_a583c35dff93e5c996bd7115c4593a457"><div class="ttname"><a href="trace_8h.html#a583c35dff93e5c996bd7115c4593a457">spdk_trace_record</a></div><div class="ttdeci">#define spdk_trace_record(tpoint_id, poller_id, size, object_id,...)</div><div class="ttdoc">Record the current trace state for tracing tpoints.</div><div class="ttdef"><b>Definition:</b> trace.h:222</div></div>
 </div><!-- fragment --><p>All the tracing functions are documented in the <a href="https://spdk.io/doc/trace_8h.html">Tracepoint library documentation</a> </p>

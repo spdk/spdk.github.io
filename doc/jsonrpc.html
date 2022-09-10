@@ -430,6 +430,7 @@ rpc_get_methods</h2>
 <div class="line">    &quot;bdev_ftl_unload&quot;,</div>
 <div class="line">    &quot;bdev_ftl_create&quot;,</div>
 <div class="line">    &quot;bdev_ftl_load&quot;,</div>
+<div class="line">    &quot;bdev_ftl_unmap&quot;,</div>
 <div class="line">    &quot;bdev_lvol_get_lvstores&quot;,</div>
 <div class="line">    &quot;bdev_lvol_delete&quot;,</div>
 <div class="line">    &quot;bdev_lvol_resize&quot;,</div>
@@ -3629,14 +3630,14 @@ bdev_iscsi_set_options</h2>
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">timeout   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">Timeout for command, in seconds, if 0, don't track timeout   </td></tr>
+<td class="markdownTableBodyNone">timeout_sec   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">Timeout for command, in seconds, if 0, don't track timeout   </td></tr>
 </table>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">request:</div>
 <div class="line">{</div>
 <div class="line">  &quot;params&quot;: {</div>
-<div class="line">    &quot;timeout&quot;: 30</div>
+<div class="line">    &quot;timeout_sec&quot;: 30</div>
 <div class="line">  },</div>
 <div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
 <div class="line">  &quot;method&quot;: &quot;bdev_iscsi_set_options&quot;,</div>
@@ -3866,7 +3867,40 @@ bdev_ftl_unload</h2>
 <div class="line">  &quot;id&quot;: 1,</div>
 <div class="line">  &quot;result&quot;: true</div>
 <div class="line">}</div>
-</div><!-- fragment --><h2><a class="anchor" id="rpc_bdev_pmem_create_pool"></a>
+</div><!-- fragment --><h2><a class="anchor" id="rpc_bdev_ftl_unmap"></a>
+bdev_ftl_unmap</h2>
+<p>Unmap range of LBAs.</p>
+<p>This RPC is subject to change.</p>
+<h3>Parameters</h3>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Bdev name    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">lba   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">start lba, aligned to 1024    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">num_blocks   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">number of blocks, aligned to 1024   </td></tr>
+</table>
+<h3>Example</h3>
+<p>Example request:</p>
+<div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;params&quot;: {</div>
+<div class="line">    &quot;name&quot;: &quot;ftl0&quot;</div>
+<div class="line">    &quot;lba&quot;: &quot;0&quot;</div>
+<div class="line">    &quot;num_blocks&quot;: &quot;1024&quot;</div>
+<div class="line">  },</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
+<div class="line">  &quot;method&quot;: &quot;bdev_ftl_unmap&quot;,</div>
+<div class="line">  &quot;id&quot;: 1</div>
+<div class="line">}</div>
+</div><!-- fragment --><p>Example response:</p>
+<div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
+<div class="line">  &quot;id&quot;: 1,</div>
+<div class="line">  &quot;result&quot;: true</div>
+<div class="line">}</div>
+</div><!-- fragment --> <h2><a class="anchor" id="rpc_bdev_pmem_create_pool"></a>
 bdev_pmem_create_pool</h2>
 <p>Create a <a class="el" href="bdev.html#bdev_config_pmem">Pmem</a> blk pool file. It is equivalent of following <code>pmempool create</code> command:</p>
 <div class="fragment"><div class="line">pmempool create -s $((num_blocks * block_size)) blk $block_size $pmem_file</div>
