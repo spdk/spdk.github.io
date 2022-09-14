@@ -204,6 +204,9 @@ uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>reserved610</b> [7
 <tr class="memitem:a2650095ea8d90e28b98900846a45efa2"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__ctrlr__opts.html#a2650095ea8d90e28b98900846a45efa2">disable_read_changed_ns_list_log_page</a></td></tr>
 <tr class="memdesc:a2650095ea8d90e28b98900846a45efa2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disable reading CHANGED_NS_LIST log page in response to an NS_ATTR_CHANGED AEN The upper layer should reading CHANGED_NS_LIST log page instead if set to true.  <a href="structspdk__nvme__ctrlr__opts.html#a2650095ea8d90e28b98900846a45efa2">More...</a><br /></td></tr>
 <tr class="separator:a2650095ea8d90e28b98900846a45efa2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30f3fa93d23c91e76afa426fb74a8ece"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__ctrlr__opts.html#a30f3fa93d23c91e76afa426fb74a8ece">psk</a> [200]</td></tr>
+<tr class="memdesc:a30f3fa93d23c91e76afa426fb74a8ece"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set PSK and enable SSL socket implementation for NVMe/TCP only.  <a href="structspdk__nvme__ctrlr__opts.html#a30f3fa93d23c91e76afa426fb74a8ece">More...</a><br /></td></tr>
+<tr class="separator:a30f3fa93d23c91e76afa426fb74a8ece"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>NVMe controller initialization options. </p>
@@ -497,6 +500,23 @@ uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>reserved610</b> [7
 
 <p>The size of <a class="el" href="structspdk__nvme__ctrlr__opts.html" title="NVMe controller initialization options.">spdk_nvme_ctrlr_opts</a> according to the caller of this library is used for ABI compatibility. </p>
 <p>The library uses this field to know how many fields in this structure are valid. And the library will populate any remaining fields with default values. </p>
+
+</div>
+</div>
+<a id="a30f3fa93d23c91e76afa426fb74a8ece"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a30f3fa93d23c91e76afa426fb74a8ece">&#9670;&nbsp;</a></span>psk</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char spdk_nvme_ctrlr_opts::psk[200]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set PSK and enable SSL socket implementation for NVMe/TCP only. </p>
+<p>If empty, a default socket implementation will be used. The TLS PSK interchange format is: NVMeTLSkey-1:xx:[Base64 encoded string]: 12B (header) + 2B (hash) + 176B (base64 for 1024b + crc32) + 3B (colons) + 1B (NULL) + 6B (extra space for future) </p>
 
 </div>
 </div>

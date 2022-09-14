@@ -249,7 +249,7 @@ var nvme_8h =
     [ "spdk_nvme_transport_register", "nvme_8h.html#a6e4165e918b05158286f5984a136acbf", null ],
     [ "spdk_nvme_trid_populate_transport", "nvme_8h.html#ab5ab0982e7e0191fd16f041a268966b5", null ],
     [ "spdk_nvme_trtype_is_fabrics", "nvme_8h.html#a9d50c30580eef93831a6e473dfc00051", null ],
-    [ "SPDK_STATIC_ASSERT", "nvme_8h.html#add1701993b55e081f4c1e44465d5d07a", null ],
+    [ "SPDK_STATIC_ASSERT", "nvme_8h.html#a8281dbeb328a2de1549b09a8ace90f0a", null ],
     [ "SPDK_STATIC_ASSERT", "nvme_8h.html#aba57917b55ff781230c632b6a19897be", null ],
     [ "SPDK_STATIC_ASSERT", "nvme_8h.html#a1c7d8b5592cb9674eb0e270e33a8902d", null ]
 ];

@@ -47,10 +47,11 @@ var searchData=
   ['product_5fname_621',['product_name',['../structspdk__bdev.html#ad3abe8a06500954332614d8657eaf1d9',1,'spdk_bdev']]],
   ['programmer_20guides_622',['Programmer Guides',['../prog_guides.html',1,'']]],
   ['ps_623',['ps',['../unionspdk__nvme__feat__power__management.html#af68e833134cda1b00b750992bdd91342',1,'spdk_nvme_feat_power_management']]],
-  ['psk_5fidentity_624',['psk_identity',['../structspdk__sock__impl__opts.html#a9c59538d807ae11b134893068b0f6b21',1,'spdk_sock_impl_opts']]],
-  ['psk_5fkey_625',['psk_key',['../structspdk__sock__impl__opts.html#a730f68745e01fa9a86e5d6497b69b81a',1,'spdk_sock_impl_opts']]],
-  ['ptpls_626',['ptpls',['../structspdk__nvme__reservation__status__data.html#a0def9acff9ca8af6b789224d83821086',1,'spdk_nvme_reservation_status_data']]],
-  ['pu_627',['pu',['../structspdk__ocssd__chunk__notification__entry.html#a4f8a236375b150ce7b9a139f9cac7da5',1,'spdk_ocssd_chunk_notification_entry']]],
-  ['pu_5flen_628',['pu_len',['../structspdk__ocssd__dev__lba__fmt.html#ae20247c5bd5f2576b67957980bf58333',1,'spdk_ocssd_dev_lba_fmt']]],
-  ['put_5frkey_629',['put_rkey',['../structspdk__nvme__rdma__hooks.html#abf04de4700ca8baf3570b77f92fa68df',1,'spdk_nvme_rdma_hooks']]]
+  ['psk_624',['psk',['../structspdk__nvme__ctrlr__opts.html#a30f3fa93d23c91e76afa426fb74a8ece',1,'spdk_nvme_ctrlr_opts']]],
+  ['psk_5fidentity_625',['psk_identity',['../structspdk__sock__impl__opts.html#a9c59538d807ae11b134893068b0f6b21',1,'spdk_sock_impl_opts']]],
+  ['psk_5fkey_626',['psk_key',['../structspdk__sock__impl__opts.html#a730f68745e01fa9a86e5d6497b69b81a',1,'spdk_sock_impl_opts']]],
+  ['ptpls_627',['ptpls',['../structspdk__nvme__reservation__status__data.html#a0def9acff9ca8af6b789224d83821086',1,'spdk_nvme_reservation_status_data']]],
+  ['pu_628',['pu',['../structspdk__ocssd__chunk__notification__entry.html#a4f8a236375b150ce7b9a139f9cac7da5',1,'spdk_ocssd_chunk_notification_entry']]],
+  ['pu_5flen_629',['pu_len',['../structspdk__ocssd__dev__lba__fmt.html#ae20247c5bd5f2576b67957980bf58333',1,'spdk_ocssd_dev_lba_fmt']]],
+  ['put_5frkey_630',['put_rkey',['../structspdk__nvme__rdma__hooks.html#abf04de4700ca8baf3570b77f92fa68df',1,'spdk_nvme_rdma_hooks']]]
 ];

@@ -2619,7 +2619,9 @@ bdev_nvme_attach_controller</h2>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">reconnect_delay_sec   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">Time to delay a reconnect trial. 0 means no reconnect.    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">fast_io_fail_timeout_sec   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">Time to wait until ctrlr is reconnected before failing I/O to ctrlr. 0 means no such timeout.   </td></tr>
+<td class="markdownTableBodyNone">fast_io_fail_timeout_sec   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">Time to wait until ctrlr is reconnected before failing I/O to ctrlr. 0 means no such timeout.    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">psk   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">PSK in hexadecimal digits, e.g. 1234567890ABCDEF (Enables SSL socket implementation for TCP)   </td></tr>
 </table>
 <h3>Example</h3>
 <p>Example request:</p>

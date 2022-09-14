@@ -23,6 +23,7 @@ var structspdk__nvme__ctrlr__opts =
     [ "no_shn_notification", "structspdk__nvme__ctrlr__opts.html#a4ca76bf8a2554d9a0c13cbd0ac0b30e3", null ],
     [ "num_io_queues", "structspdk__nvme__ctrlr__opts.html#a8960ea3aebb4966d5434747e7c2154f9", null ],
     [ "opts_size", "structspdk__nvme__ctrlr__opts.html#aad1d8f2afb4a1617023934e770b103de", null ],
+    [ "psk", "structspdk__nvme__ctrlr__opts.html#a30f3fa93d23c91e76afa426fb74a8ece", null ],
     [ "reserved21", "structspdk__nvme__ctrlr__opts.html#a821eb495702ccbd66664a83e3f57379f", null ],
     [ "reserved570", "structspdk__nvme__ctrlr__opts.html#a7453dfef6adf7d71607c1738d87b2566", null ],
     [ "reserved586", "structspdk__nvme__ctrlr__opts.html#a19b49bb8c5e7dbfba661b20141fc9c58", null ],
