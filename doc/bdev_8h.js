@@ -44,6 +44,8 @@ var bdev_8h =
       [ "SPDK_BDEV_IO_TYPE_COMPARE", "bdev_8h.html#a633029e24ab5ae4a689bffa2565a519fa2df554da6afc1daaa7313fa25fb24623", null ],
       [ "SPDK_BDEV_IO_TYPE_COMPARE_AND_WRITE", "bdev_8h.html#a633029e24ab5ae4a689bffa2565a519fa0475ddf806a6b7ee01dbd6336a5deb6f", null ],
       [ "SPDK_BDEV_IO_TYPE_ABORT", "bdev_8h.html#a633029e24ab5ae4a689bffa2565a519fa57d0b0477d9c04c9df1119d223c14ca4", null ],
+      [ "SPDK_BDEV_IO_TYPE_SEEK_HOLE", "bdev_8h.html#a633029e24ab5ae4a689bffa2565a519fa8c86acecb32726a5430ab1b33865638b", null ],
+      [ "SPDK_BDEV_IO_TYPE_SEEK_DATA", "bdev_8h.html#a633029e24ab5ae4a689bffa2565a519fa1305efd089b10195eab818df329985e6", null ],
       [ "SPDK_BDEV_NUM_IO_TYPES", "bdev_8h.html#a633029e24ab5ae4a689bffa2565a519fab8b20053cecdcd7973f1c2d0dce2b457", null ]
     ] ],
     [ "spdk_bdev_qos_rate_limit_type", "bdev_8h.html#aedfbfc44fa2113d7ee219d09a0994d93", [
@@ -114,6 +116,7 @@ var bdev_8h =
     [ "spdk_bdev_io_get_nvme_fused_status", "bdev_8h.html#a44c7d2a0cf76be7d06d9dc5e09553ec8", null ],
     [ "spdk_bdev_io_get_nvme_status", "bdev_8h.html#ae7e1bf90f44f042c2b2ad463b8667735", null ],
     [ "spdk_bdev_io_get_scsi_status", "bdev_8h.html#ac3c213b4317d5077197950253af1ac50", null ],
+    [ "spdk_bdev_io_get_seek_offset", "bdev_8h.html#a03943b94f83f3402fb8da4093985a829", null ],
     [ "spdk_bdev_io_type_supported", "bdev_8h.html#a7cd5dff692dc162459801d5649fe7655", null ],
     [ "spdk_bdev_is_dif_check_enabled", "bdev_8h.html#a147389751cd351d30703e28f522e9610", null ],
     [ "spdk_bdev_is_dif_head_of_md", "bdev_8h.html#a4e43a19692e14e5e46b3315e4cf0bc1d", null ],
@@ -135,6 +138,8 @@ var bdev_8h =
     [ "spdk_bdev_readv_blocks_ext", "group__bdev__io__submit__functions.html#ga8125396dbfee45c78c73534c6e7f22f3", null ],
     [ "spdk_bdev_readv_blocks_with_md", "group__bdev__io__submit__functions.html#ga80f72a0b5b1e02a667ce15cc17ceefeb", null ],
     [ "spdk_bdev_reset", "group__bdev__io__submit__functions.html#gaca574d3e94be6150343823dd2e7ecf46", null ],
+    [ "spdk_bdev_seek_data", "group__bdev__io__submit__functions.html#ga368a41ccc1395faeaddc853a6f7f81d0", null ],
+    [ "spdk_bdev_seek_hole", "group__bdev__io__submit__functions.html#ga41233f5dd570c8ae72ea4749786a8172", null ],
     [ "spdk_bdev_set_opts", "bdev_8h.html#a828be2f36a5c1e343488130c457f5bf5", null ],
     [ "spdk_bdev_set_qd_sampling_period", "bdev_8h.html#a9d37ad1d4da0bcb51ada76dbe4f4ce15", null ],
     [ "spdk_bdev_set_qos_rate_limits", "bdev_8h.html#a70520c668368881df8d7410fec9b1a08", null ],

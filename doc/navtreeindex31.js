@@ -1,5 +1,16 @@
 var NAVTREEINDEX31 =
 {
+"userspace.html":[2,0],
+"userspace.html#userspace_control":[2,0,0],
+"userspace.html#userspace_interrupts":[2,0,1],
+"userspace.html#userspace_threading":[2,0,2],
+"util_8h.html":[16,0,60],
+"util_8h.html#a0bbb80ad35ccd2da128fa69acedd2d90":[16,0,60,21],
+"util_8h.html#a21e1907187f8bf2c4b0c0de12c113ed6":[16,0,60,7],
+"util_8h.html#a22383e04171a98834c5f21f0c460e322":[16,0,60,14],
+"util_8h.html#a23a7b8dc5a8b680176bac1c7bd384406":[16,0,60,15],
+"util_8h.html#a260b1024edd3144707a2286ebf50839e":[16,0,60,17],
+"util_8h.html#a3a1ed8f80bbc8e22d1f778a6615512e7":[16,0,60,18],
 "util_8h.html#a3d7841db36c180f3fcac21e2314e2ef2":[16,0,60,23],
 "util_8h.html#a4bf38bbd457a764604d5ba26ed3c8565":[16,0,60,19],
 "util_8h.html#a4ef0b5332740873cf0414a8b44000128":[16,0,60,8],

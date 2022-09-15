@@ -32,6 +32,8 @@ var blob_8h =
     [ "spdk_blob_close", "blob_8h.html#ac6ca1e83e9608eb1dea9fca62881d350", null ],
     [ "spdk_blob_get_clones", "blob_8h.html#a1482c72fb9cb040999a376096d3e7caf", null ],
     [ "spdk_blob_get_id", "blob_8h.html#a40ed8868e620ad0e15e2bc4b923ccff0", null ],
+    [ "spdk_blob_get_next_allocated_io_unit", "blob_8h.html#a1f1801ea07e30f5a56ecd043a7b4b55f", null ],
+    [ "spdk_blob_get_next_unallocated_io_unit", "blob_8h.html#a17bd599919d75e0f32bbd79edb2c062c", null ],
     [ "spdk_blob_get_num_clusters", "blob_8h.html#a2484b76dc748921d2596a4e207b6a5a2", null ],
     [ "spdk_blob_get_num_io_units", "blob_8h.html#a9787f698d1f47cca21b3543c0892ab3e", null ],
     [ "spdk_blob_get_num_pages", "blob_8h.html#a1e19ff1852cf29d6992591953e1964f2", null ],

@@ -1,5 +1,16 @@
 var NAVTREEINDEX28 =
 {
+"structvfio__user__header.html#a03b79c2757a48fe1cdeb3dabbc44a9ff":[15,0,366,6],
+"structvfio__user__header.html#a058ab14577aa8d041d2fd480088342b5":[15,0,366,4],
+"structvfio__user__header.html#a1072eea3401a2d0bbda4fc0d8bcdcb2d":[15,0,366,7],
+"structvfio__user__header.html#a192a548b281b126819c771b7a5c85766":[15,0,366,0],
+"structvfio__user__header.html#a4069787d02f5851e7c7652198505a102":[15,0,366,5],
+"structvfio__user__header.html#a84a9cffc2a2c08fe664de6620b5767a6":[15,0,366,3],
+"structvfio__user__header.html#a929c2ba18ce9462b9bf960939332a2df":[15,0,366,1],
+"structvfio__user__header.html#ac26f57c2a4710128eb10398b4ab71405":[15,0,366,2],
+"structvfio__user__header.html#acaaa5241337cb834839b75e01e27f294":[15,0,366,8],
+"structvfio__user__irq__info.html":[15,0,367],
+"structvfio__user__irq__info.html#ade42fc56773d521b17dcc9ecdd2638a7":[15,0,367,0],
 "structvfio__user__region__access.html":[15,0,368],
 "structvfio__user__region__access.html#a0336183516d49390e0855e4e104587e2":[15,0,368,3],
 "structvfio__user__region__access.html#a36926d14f9c7310a4d6f0af0469b98c5":[15,0,368,0],
@@ -238,16 +249,5 @@ var NAVTREEINDEX28 =
 "unionidxd__group__flags.html#aaeeab304428fc0117a247e7add62eed8":[15,0,11,3],
 "unionidxd__groupcap__register.html":[15,0,12],
 "unionidxd__groupcap__register.html#a0648f55c83d21ffbd74394365232d842":[15,0,12,4],
-"unionidxd__groupcap__register.html#a1929f4b5e876e1c3bafa6172017ea63c":[15,0,12,5],
-"unionidxd__groupcap__register.html#a2c171fb5d97a47331f2550367d149b17":[15,0,12,3],
-"unionidxd__groupcap__register.html#ad6b882bfbd8773d175e73f770e86314c":[15,0,12,0],
-"unionidxd__groupcap__register.html#addca3fbec53fd930f74db444f08be51c":[15,0,12,1],
-"unionidxd__groupcap__register.html#afc2e35b45ef6c26cb95bc890eba7f6e7":[15,0,12,2],
-"unionidxd__intcause__register.html":[15,0,16],
-"unionidxd__intcause__register.html#a3e5d35c66f56d2589d1478daf55ebfac":[15,0,16,5],
-"unionidxd__intcause__register.html#a40f01237127623b5ecee6cc75631c243":[15,0,16,1],
-"unionidxd__intcause__register.html#a436fb67e35a01bbcee7d479431be8b28":[15,0,16,4],
-"unionidxd__intcause__register.html#a4c477ad720283c1830ffa8cc213ecbfc":[15,0,16,3],
-"unionidxd__intcause__register.html#a66ff61109157d2df2695b32b740c2a8f":[15,0,16,2],
-"unionidxd__intcause__register.html#acaac0055fb7a322ee0dbbc2c8d8449f4":[15,0,16,0]
+"unionidxd__groupcap__register.html#a1929f4b5e876e1c3bafa6172017ea63c":[15,0,12,5]
 };

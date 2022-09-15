@@ -19,6 +19,8 @@ var group__bdev__io__submit__functions =
     [ "spdk_bdev_readv_blocks_ext", "group__bdev__io__submit__functions.html#ga8125396dbfee45c78c73534c6e7f22f3", null ],
     [ "spdk_bdev_readv_blocks_with_md", "group__bdev__io__submit__functions.html#ga80f72a0b5b1e02a667ce15cc17ceefeb", null ],
     [ "spdk_bdev_reset", "group__bdev__io__submit__functions.html#gaca574d3e94be6150343823dd2e7ecf46", null ],
+    [ "spdk_bdev_seek_data", "group__bdev__io__submit__functions.html#ga368a41ccc1395faeaddc853a6f7f81d0", null ],
+    [ "spdk_bdev_seek_hole", "group__bdev__io__submit__functions.html#ga41233f5dd570c8ae72ea4749786a8172", null ],
     [ "spdk_bdev_unmap", "group__bdev__io__submit__functions.html#ga680c9c302998f7b003e2476e35d9ae4b", null ],
     [ "spdk_bdev_unmap_blocks", "group__bdev__io__submit__functions.html#ga7555fdd41019e29b40e535b72457d30b", null ],
     [ "spdk_bdev_write", "group__bdev__io__submit__functions.html#gaa740a114ef34d6a2f126d4e3a9dd9e9b", null ],

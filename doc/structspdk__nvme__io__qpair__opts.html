@@ -120,45 +120,45 @@ Data Fields</h2></td></tr>
 <tr class="memitem:a4af594ef7f8b7e590662633c926146b4"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__io__qpair__opts.html#a4af594ef7f8b7e590662633c926146b4">io_queue_requests</a></td></tr>
 <tr class="memdesc:a4af594ef7f8b7e590662633c926146b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">The number of requests to allocate for this NVMe I/O queue.  <a href="structspdk__nvme__io__qpair__opts.html#a4af594ef7f8b7e590662633c926146b4">More...</a><br /></td></tr>
 <tr class="separator:a4af594ef7f8b7e590662633c926146b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adc8a40ceeb3dc1c2b653622175eb397d"><td class="memItemLeft" >union {</td></tr>
-<tr class="memitem:af01a9bcb5a4ae75d528006b482fb91b4"><td class="memItemLeft" >
+<tr class="memitem:a6f4be9e3cbd89dc72fccd8c3d260e786"><td class="memItemLeft" >union {</td></tr>
+<tr class="memitem:a4c02475e1c1600350606246ee7dc029f"><td class="memItemLeft" >
 &#160;&#160;&#160;bool&#160;&#160;&#160;<b>delay_cmd_submit</b></td></tr>
-<tr class="separator:af01a9bcb5a4ae75d528006b482fb91b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4673a9d10503a27b6ef481d28d6b8c79"><td class="memItemLeft" >
+<tr class="separator:a4c02475e1c1600350606246ee7dc029f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a534da56117cf1c9fff28d5b37f05ba7d"><td class="memItemLeft" >
 &#160;&#160;&#160;bool&#160;&#160;&#160;<b>delay_pcie_doorbell</b></td></tr>
-<tr class="separator:a4673a9d10503a27b6ef481d28d6b8c79"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adc8a40ceeb3dc1c2b653622175eb397d"><td class="memItemLeft" valign="top">};&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
-<tr class="memdesc:adc8a40ceeb3dc1c2b653622175eb397d"><td class="mdescLeft">&#160;</td><td class="mdescRight">When submitting I/O via spdk_nvme_ns_read/write and similar functions, don't immediately submit it to hardware.  <a href="structspdk__nvme__io__qpair__opts.html#adc8a40ceeb3dc1c2b653622175eb397d">More...</a><br /></td></tr>
-<tr class="separator:adc8a40ceeb3dc1c2b653622175eb397d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a534da56117cf1c9fff28d5b37f05ba7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f4be9e3cbd89dc72fccd8c3d260e786"><td class="memItemLeft" valign="top">};&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="memdesc:a6f4be9e3cbd89dc72fccd8c3d260e786"><td class="mdescLeft">&#160;</td><td class="mdescRight">When submitting I/O via spdk_nvme_ns_read/write and similar functions, don't immediately submit it to hardware.  <a href="structspdk__nvme__io__qpair__opts.html#a6f4be9e3cbd89dc72fccd8c3d260e786">More...</a><br /></td></tr>
+<tr class="separator:a6f4be9e3cbd89dc72fccd8c3d260e786"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a07d109dbf64b048e0fe692a970d52c81"><td class="memItemLeft" align="right" valign="top"><a id="a07d109dbf64b048e0fe692a970d52c81"></a>
 uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>reserved13</b> [3]</td></tr>
 <tr class="separator:a07d109dbf64b048e0fe692a970d52c81"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a723a090a8593d58279354fa188ff5f9c"><td class="memItemLeft" >struct {</td></tr>
-<tr class="memitem:a35cb6b6e1be9079f0d32f2352484d9fb"><td class="memItemLeft" >
+<tr class="memitem:ad7e7bf7be85c5509db5fa2fbf2f54050"><td class="memItemLeft" >struct {</td></tr>
+<tr class="memitem:a4ef384a2f1a59137e87f7959b5fde45f"><td class="memItemLeft" >
 &#160;&#160;&#160;struct <a class="el" href="structspdk__nvme__cmd.html">spdk_nvme_cmd</a> *&#160;&#160;&#160;<b>vaddr</b></td></tr>
-<tr class="separator:a35cb6b6e1be9079f0d32f2352484d9fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2780eacae466772a46ffa27289779571"><td class="memItemLeft" >
-&#160;&#160;&#160;uint64_t&#160;&#160;&#160;<b>paddr</b></td></tr>
-<tr class="separator:a2780eacae466772a46ffa27289779571"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4ed482265d1cf1b443f9d54409ab6791"><td class="memItemLeft" >
-&#160;&#160;&#160;uint64_t&#160;&#160;&#160;<b>buffer_size</b></td></tr>
-<tr class="separator:a4ed482265d1cf1b443f9d54409ab6791"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a723a090a8593d58279354fa188ff5f9c"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__io__qpair__opts.html#a723a090a8593d58279354fa188ff5f9c">sq</a></td></tr>
-<tr class="memdesc:a723a090a8593d58279354fa188ff5f9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">These fields allow specifying the memory buffers for the submission and/or completion queues.  <a href="structspdk__nvme__io__qpair__opts.html#a723a090a8593d58279354fa188ff5f9c">More...</a><br /></td></tr>
-<tr class="separator:a723a090a8593d58279354fa188ff5f9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0c66371e8003fede30af4b98c58e3bea"><td class="memItemLeft" ><a id="a0c66371e8003fede30af4b98c58e3bea"></a>
-struct {</td></tr>
-<tr class="memitem:ab8e6af7e18de390345888fdfa9dacf0d"><td class="memItemLeft" >
-&#160;&#160;&#160;struct <a class="el" href="structspdk__nvme__cpl.html">spdk_nvme_cpl</a> *&#160;&#160;&#160;<b>vaddr</b></td></tr>
-<tr class="separator:ab8e6af7e18de390345888fdfa9dacf0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a4ef384a2f1a59137e87f7959b5fde45f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6330ef4c3fab84c2f7b0ff8c36e2c1c7"><td class="memItemLeft" >
 &#160;&#160;&#160;uint64_t&#160;&#160;&#160;<b>paddr</b></td></tr>
 <tr class="separator:a6330ef4c3fab84c2f7b0ff8c36e2c1c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3443cbc486cbe0cf3368a6bdf775f6f2"><td class="memItemLeft" >
 &#160;&#160;&#160;uint64_t&#160;&#160;&#160;<b>buffer_size</b></td></tr>
 <tr class="separator:a3443cbc486cbe0cf3368a6bdf775f6f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0c66371e8003fede30af4b98c58e3bea"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><b>cq</b></td></tr>
-<tr class="separator:a0c66371e8003fede30af4b98c58e3bea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7e7bf7be85c5509db5fa2fbf2f54050"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__io__qpair__opts.html#ad7e7bf7be85c5509db5fa2fbf2f54050">sq</a></td></tr>
+<tr class="memdesc:ad7e7bf7be85c5509db5fa2fbf2f54050"><td class="mdescLeft">&#160;</td><td class="mdescRight">These fields allow specifying the memory buffers for the submission and/or completion queues.  <a href="structspdk__nvme__io__qpair__opts.html#ad7e7bf7be85c5509db5fa2fbf2f54050">More...</a><br /></td></tr>
+<tr class="separator:ad7e7bf7be85c5509db5fa2fbf2f54050"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34fccc5c7ea933fd4e52c45a629d8209"><td class="memItemLeft" ><a id="a34fccc5c7ea933fd4e52c45a629d8209"></a>
+struct {</td></tr>
+<tr class="memitem:a8cdaec66cbd8d50096baf366509f9d61"><td class="memItemLeft" >
+&#160;&#160;&#160;struct <a class="el" href="structspdk__nvme__cpl.html">spdk_nvme_cpl</a> *&#160;&#160;&#160;<b>vaddr</b></td></tr>
+<tr class="separator:a8cdaec66cbd8d50096baf366509f9d61"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0bfb46166cb2853b28e64d73320c3ef"><td class="memItemLeft" >
+&#160;&#160;&#160;uint64_t&#160;&#160;&#160;<b>paddr</b></td></tr>
+<tr class="separator:ae0bfb46166cb2853b28e64d73320c3ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8dbb2e9eb99cd2e6d7c77dd9d9972bf7"><td class="memItemLeft" >
+&#160;&#160;&#160;uint64_t&#160;&#160;&#160;<b>buffer_size</b></td></tr>
+<tr class="separator:a8dbb2e9eb99cd2e6d7c77dd9d9972bf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34fccc5c7ea933fd4e52c45a629d8209"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><b>cq</b></td></tr>
+<tr class="separator:a34fccc5c7ea933fd4e52c45a629d8209"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9de651bfea3d4f53d80c124530062ca5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__io__qpair__opts.html#a9de651bfea3d4f53d80c124530062ca5">create_only</a></td></tr>
 <tr class="memdesc:a9de651bfea3d4f53d80c124530062ca5"><td class="mdescLeft">&#160;</td><td class="mdescRight">This flag indicates to the alloc_io_qpair function that it should not perform the connect portion on this qpair.  <a href="structspdk__nvme__io__qpair__opts.html#a9de651bfea3d4f53d80c124530062ca5">More...</a><br /></td></tr>
 <tr class="separator:a9de651bfea3d4f53d80c124530062ca5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -174,8 +174,8 @@ uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>reserved66</b> [6]
 <p>These options may be passed to <a class="el" href="nvme_8h.html#a13f745d239dab9b8f934fae2ad4984a2" title="Allocate an I/O queue pair (submission and completion queue).">spdk_nvme_ctrlr_alloc_io_qpair()</a> to configure queue pair options at queue creation time.</p>
 <p>The user may retrieve the default I/O queue pair creation options for a controller using <a class="el" href="nvme_8h.html#a6964d09dc51882fae6f2a7cf94afc741" title="Get the default options for I/O qpair creation for a specific NVMe controller.">spdk_nvme_ctrlr_get_default_io_qpair_opts()</a>. </p>
 </div><h2 class="groupheader">Field Documentation</h2>
-<a id="adc8a40ceeb3dc1c2b653622175eb397d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adc8a40ceeb3dc1c2b653622175eb397d">&#9670;&nbsp;</a></span></h2>
+<a id="a6f4be9e3cbd89dc72fccd8c3d260e786"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f4be9e3cbd89dc72fccd8c3d260e786">&#9670;&nbsp;</a></span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -281,8 +281,8 @@ uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>reserved66</b> [6]
 
 </div>
 </div>
-<a id="a723a090a8593d58279354fa188ff5f9c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a723a090a8593d58279354fa188ff5f9c">&#9670;&nbsp;</a></span></h2>
+<a id="ad7e7bf7be85c5509db5fa2fbf2f54050"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad7e7bf7be85c5509db5fa2fbf2f54050">&#9670;&nbsp;</a></span></h2>
 
 <div class="memitem">
 <div class="memproto">

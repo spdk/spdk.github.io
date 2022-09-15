@@ -206,6 +206,8 @@ Enumerations</h2></td></tr>
 , <b>SPDK_BDEV_IO_TYPE_COMPARE_AND_WRITE</b>
 , <br />
 &#160;&#160;<b>SPDK_BDEV_IO_TYPE_ABORT</b>
+, <b>SPDK_BDEV_IO_TYPE_SEEK_HOLE</b>
+, <b>SPDK_BDEV_IO_TYPE_SEEK_DATA</b>
 , <b>SPDK_BDEV_NUM_IO_TYPES</b>
 <br />
  }</td></tr>
@@ -381,6 +383,12 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_set_opts</b>
 <tr class="memitem:a833f281dc52c09e6491ae9415cdb9980"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev_8h.html#a833f281dc52c09e6491ae9415cdb9980">spdk_bdev_get_module_ctx</a> (struct spdk_bdev_desc *desc)</td></tr>
 <tr class="memdesc:a833f281dc52c09e6491ae9415cdb9980"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain a bdev module context for the block device opened by the specified descriptor.  <a href="bdev_8h.html#a833f281dc52c09e6491ae9415cdb9980">More...</a><br /></td></tr>
 <tr class="separator:a833f281dc52c09e6491ae9415cdb9980"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga368a41ccc1395faeaddc853a6f7f81d0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__bdev__io__submit__functions.html#ga368a41ccc1395faeaddc853a6f7f81d0">spdk_bdev_seek_data</a> (struct spdk_bdev_desc *desc, struct spdk_io_channel *ch, uint64_t offset_blocks, <a class="el" href="bdev_8h.html#a0c5602dfd313f90032dd91683b9663e3">spdk_bdev_io_completion_cb</a> cb, void *cb_arg)</td></tr>
+<tr class="memdesc:ga368a41ccc1395faeaddc853a6f7f81d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submit a data seek request to the bdev on the given channel.  <a href="group__bdev__io__submit__functions.html#ga368a41ccc1395faeaddc853a6f7f81d0">More...</a><br /></td></tr>
+<tr class="separator:ga368a41ccc1395faeaddc853a6f7f81d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga41233f5dd570c8ae72ea4749786a8172"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__bdev__io__submit__functions.html#ga41233f5dd570c8ae72ea4749786a8172">spdk_bdev_seek_hole</a> (struct spdk_bdev_desc *desc, struct spdk_io_channel *ch, uint64_t offset_blocks, <a class="el" href="bdev_8h.html#a0c5602dfd313f90032dd91683b9663e3">spdk_bdev_io_completion_cb</a> cb, void *cb_arg)</td></tr>
+<tr class="memdesc:ga41233f5dd570c8ae72ea4749786a8172"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submit a hole seek request to the bdev on the given channel.  <a href="group__bdev__io__submit__functions.html#ga41233f5dd570c8ae72ea4749786a8172">More...</a><br /></td></tr>
+<tr class="separator:ga41233f5dd570c8ae72ea4749786a8172"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga4b500ce84df1d2551f76e635c9dafbd5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__bdev__io__submit__functions.html#ga4b500ce84df1d2551f76e635c9dafbd5">spdk_bdev_read</a> (struct spdk_bdev_desc *desc, struct spdk_io_channel *ch, void *buf, uint64_t offset, uint64_t nbytes, <a class="el" href="bdev_8h.html#a0c5602dfd313f90032dd91683b9663e3">spdk_bdev_io_completion_cb</a> cb, void *cb_arg)</td></tr>
 <tr class="memdesc:ga4b500ce84df1d2551f76e635c9dafbd5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submit a read request to the bdev on the given channel.  <a href="group__bdev__io__submit__functions.html#ga4b500ce84df1d2551f76e635c9dafbd5">More...</a><br /></td></tr>
 <tr class="separator:ga4b500ce84df1d2551f76e635c9dafbd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -510,6 +518,9 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_set_opts</b>
 <tr class="memitem:a64e77ef346fd873d97328e9816ceda57"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev_8h.html#a64e77ef346fd873d97328e9816ceda57">spdk_bdev_io_get_cb_arg</a> (struct <a class="el" href="structspdk__bdev__io.html">spdk_bdev_io</a> *bdev_io)</td></tr>
 <tr class="memdesc:a64e77ef346fd873d97328e9816ceda57"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the callback argument of bdev_io to abort it by spdk_bdev_abort.  <a href="bdev_8h.html#a64e77ef346fd873d97328e9816ceda57">More...</a><br /></td></tr>
 <tr class="separator:a64e77ef346fd873d97328e9816ceda57"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03943b94f83f3402fb8da4093985a829"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev_8h.html#a03943b94f83f3402fb8da4093985a829">spdk_bdev_io_get_seek_offset</a> (const struct <a class="el" href="structspdk__bdev__io.html">spdk_bdev_io</a> *bdev_io)</td></tr>
+<tr class="memdesc:a03943b94f83f3402fb8da4093985a829"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the result of a previous seek function.  <a href="bdev_8h.html#a03943b94f83f3402fb8da4093985a829">More...</a><br /></td></tr>
+<tr class="separator:a03943b94f83f3402fb8da4093985a829"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0b4556cb07c52ae7b5b7e7f10cbdc637"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev_8h.html#a0b4556cb07c52ae7b5b7e7f10cbdc637">spdk_bdev_histogram_enable</a> (struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *bdev, spdk_bdev_histogram_status_cb cb_fn, void *cb_arg, bool enable)</td></tr>
 <tr class="memdesc:a0b4556cb07c52ae7b5b7e7f10cbdc637"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable or disable collecting histogram data on a bdev.  <a href="bdev_8h.html#a0b4556cb07c52ae7b5b7e7f10cbdc637">More...</a><br /></td></tr>
 <tr class="separator:a0b4556cb07c52ae7b5b7e7f10cbdc637"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -2371,6 +2382,34 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_set_opts</b>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="a03943b94f83f3402fb8da4093985a829"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a03943b94f83f3402fb8da4093985a829">&#9670;&nbsp;</a></span>spdk_bdev_io_get_seek_offset()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint64_t spdk_bdev_io_get_seek_offset </td>
+          <td>(</td>
+          <td class="paramtype">const struct <a class="el" href="structspdk__bdev__io.html">spdk_bdev_io</a> *&#160;</td>
+          <td class="paramname"><em>bdev_io</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the result of a previous seek function. </p>
+<p>After calling spdk_bdev_seek_data or spdk_bdev_seek_hole, call this function to retrieve the offset of next allocated data or next unallocated hole.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bdev_io</td><td>I/O to get the status from.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>data/hole offset in blocks or UINT64_MAX if not found </dd></dl>
 
 </div>
 </div>

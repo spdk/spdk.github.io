@@ -97,6 +97,12 @@ $(document).ready(function(){initNavTree('group__bdev__io__submit__functions.htm
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:ga368a41ccc1395faeaddc853a6f7f81d0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__bdev__io__submit__functions.html#ga368a41ccc1395faeaddc853a6f7f81d0">spdk_bdev_seek_data</a> (struct spdk_bdev_desc *desc, struct spdk_io_channel *ch, uint64_t offset_blocks, <a class="el" href="bdev_8h.html#a0c5602dfd313f90032dd91683b9663e3">spdk_bdev_io_completion_cb</a> cb, void *cb_arg)</td></tr>
+<tr class="memdesc:ga368a41ccc1395faeaddc853a6f7f81d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submit a data seek request to the bdev on the given channel.  <a href="group__bdev__io__submit__functions.html#ga368a41ccc1395faeaddc853a6f7f81d0">More...</a><br /></td></tr>
+<tr class="separator:ga368a41ccc1395faeaddc853a6f7f81d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga41233f5dd570c8ae72ea4749786a8172"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__bdev__io__submit__functions.html#ga41233f5dd570c8ae72ea4749786a8172">spdk_bdev_seek_hole</a> (struct spdk_bdev_desc *desc, struct spdk_io_channel *ch, uint64_t offset_blocks, <a class="el" href="bdev_8h.html#a0c5602dfd313f90032dd91683b9663e3">spdk_bdev_io_completion_cb</a> cb, void *cb_arg)</td></tr>
+<tr class="memdesc:ga41233f5dd570c8ae72ea4749786a8172"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submit a hole seek request to the bdev on the given channel.  <a href="group__bdev__io__submit__functions.html#ga41233f5dd570c8ae72ea4749786a8172">More...</a><br /></td></tr>
+<tr class="separator:ga41233f5dd570c8ae72ea4749786a8172"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga4b500ce84df1d2551f76e635c9dafbd5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__bdev__io__submit__functions.html#ga4b500ce84df1d2551f76e635c9dafbd5">spdk_bdev_read</a> (struct spdk_bdev_desc *desc, struct spdk_io_channel *ch, void *buf, uint64_t offset, uint64_t nbytes, <a class="el" href="bdev_8h.html#a0c5602dfd313f90032dd91683b9663e3">spdk_bdev_io_completion_cb</a> cb, void *cb_arg)</td></tr>
 <tr class="memdesc:ga4b500ce84df1d2551f76e635c9dafbd5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submit a read request to the bdev on the given channel.  <a href="group__bdev__io__submit__functions.html#ga4b500ce84df1d2551f76e635c9dafbd5">More...</a><br /></td></tr>
 <tr class="separator:ga4b500ce84df1d2551f76e635c9dafbd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1762,6 +1768,134 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 on success. On success, the callback will always be called (even if the request ultimately failed). Return negated errno on failure, in which case the callback will not be called.<ul>
+<li>-ENOMEM - <a class="el" href="structspdk__bdev__io.html">spdk_bdev_io</a> buffer cannot be allocated </li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
+<a id="ga368a41ccc1395faeaddc853a6f7f81d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga368a41ccc1395faeaddc853a6f7f81d0">&#9670;&nbsp;</a></span>spdk_bdev_seek_data()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_bdev_seek_data </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_bdev_desc *&#160;</td>
+          <td class="paramname"><em>desc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct spdk_io_channel *&#160;</td>
+          <td class="paramname"><em>ch</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>offset_blocks</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="bdev_8h.html#a0c5602dfd313f90032dd91683b9663e3">spdk_bdev_io_completion_cb</a>&#160;</td>
+          <td class="paramname"><em>cb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>cb_arg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Submit a data seek request to the bdev on the given channel. </p>
+<p>Starting from offset_blocks, search for next allocated data: seek result can be obtained with spdk_bdev_io_get_seek_offset</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">desc</td><td>Block device descriptor. </td></tr>
+    <tr><td class="paramname">ch</td><td>I/O channel. Obtained by calling <a class="el" href="bdev_8h.html#ab5bb9e746b030d7c4c89cbcf60076c7e" title="Obtain an I/O channel for the block device opened by the specified descriptor.">spdk_bdev_get_io_channel()</a>. </td></tr>
+    <tr><td class="paramname">offset_blocks</td><td>The offset, in blocks, from the start of the block device. </td></tr>
+    <tr><td class="paramname">cb</td><td>Called when the request is complete. </td></tr>
+    <tr><td class="paramname">cb_arg</td><td>Argument passed to cb.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success. On success, the callback will always be called (even if the request ultimately failed). Return negated errno on failure, in which case the callback will not be called.<ul>
+<li>-EINVAL - offset_blocks is out of range</li>
+<li>-ENOMEM - <a class="el" href="structspdk__bdev__io.html">spdk_bdev_io</a> buffer cannot be allocated </li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
+<a id="ga41233f5dd570c8ae72ea4749786a8172"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga41233f5dd570c8ae72ea4749786a8172">&#9670;&nbsp;</a></span>spdk_bdev_seek_hole()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_bdev_seek_hole </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_bdev_desc *&#160;</td>
+          <td class="paramname"><em>desc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct spdk_io_channel *&#160;</td>
+          <td class="paramname"><em>ch</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>offset_blocks</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="bdev_8h.html#a0c5602dfd313f90032dd91683b9663e3">spdk_bdev_io_completion_cb</a>&#160;</td>
+          <td class="paramname"><em>cb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>cb_arg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Submit a hole seek request to the bdev on the given channel. </p>
+<p>Starting from offset_blocks, search for next unallocated hole: seek result can be obtained with spdk_bdev_io_get_seek_offset</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">desc</td><td>Block device descriptor. </td></tr>
+    <tr><td class="paramname">ch</td><td>I/O channel. Obtained by calling <a class="el" href="bdev_8h.html#ab5bb9e746b030d7c4c89cbcf60076c7e" title="Obtain an I/O channel for the block device opened by the specified descriptor.">spdk_bdev_get_io_channel()</a>. </td></tr>
+    <tr><td class="paramname">offset_blocks</td><td>The offset, in blocks, from the start of the block device. </td></tr>
+    <tr><td class="paramname">cb</td><td>Called when the request is complete. </td></tr>
+    <tr><td class="paramname">cb_arg</td><td>Argument passed to cb.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success. On success, the callback will always be called (even if the request ultimately failed). Return negated errno on failure, in which case the callback will not be called.<ul>
+<li>-EINVAL - offset_blocks is out of range</li>
 <li>-ENOMEM - <a class="el" href="structspdk__bdev__io.html">spdk_bdev_io</a> buffer cannot be allocated </li>
 </ul>
 </dd></dl>

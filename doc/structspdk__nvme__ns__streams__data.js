@@ -4,7 +4,7 @@ var structspdk__nvme__ns__streams__data =
     [ "nsa", "structspdk__nvme__ns__streams__data.html#ab1fe48a43253a094ba124596553e943f", null ],
     [ "nso", "structspdk__nvme__ns__streams__data.html#a3a086aaf0b31d7dded925b65931c4791", null ],
     [ "nssa", "structspdk__nvme__ns__streams__data.html#a8e9e68d22366fd266802b12c909a73c4", null ],
-    [ "nssc", "structspdk__nvme__ns__streams__data.html#a29b6f2aac2bdb5869d822f68e43e0db6", null ],
+    [ "nssc", "structspdk__nvme__ns__streams__data.html#abf81f18a0453a6539c5b563c2c93cfa2", null ],
     [ "nsso", "structspdk__nvme__ns__streams__data.html#a4a762eaba2e94edf45057a124ce15ee1", null ],
     [ "reserved", "structspdk__nvme__ns__streams__data.html#a7da63d714bc1b5c9a59ccdd1f4158697", null ],
     [ "reserved1", "structspdk__nvme__ns__streams__data.html#ab547e256ce1404b347244920311ce20e", null ],

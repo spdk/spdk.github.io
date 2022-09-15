@@ -112,6 +112,7 @@ v22.09: (Upcoming Release)</h1>
 <p>New options <code>enable_ktls</code> and <code>tls_version</code> were added to the <code>sock_impl_set_options</code> structure. New options <code>psk_key</code> and <code>psk_identity</code> were added to the <code>sock_impl_set_options</code> structure.</p>
 <p>Added warning message for <code>bdev_rbd_create</code>, if it is used without -c. <code>bdev_rbd_create()</code> API without specifying -c is deprecated and will be removed in future release.</p>
 <p>Renamed <code>enable_vmd</code> RPC to <code>vmd_enable</code> to make it consistent with our naming scheme of <code>&lt;subsystem&gt;_&lt;action&gt;</code>. For now, the old name is still available, but is marked as deprecated.</p>
+<p>New function <code>spdk_rpc_get_method_state_mask</code> was added to RPC library.</p>
 <h2>raid</h2>
 <p>Renamed the <code>raid5</code> module to <code>raid5f</code> to reflect that it is not a traditional RAID5 implementation - only full stripe writes are supported, partial stripe writes (read-modify-write) are not.</p>
 <h2>accel</h2>
