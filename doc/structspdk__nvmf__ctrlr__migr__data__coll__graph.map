@@ -1,0 +1,21 @@
+<map id="spdk_nvmf_ctrlr_migr_data" name="spdk_nvmf_ctrlr_migr_data">
+<area shape="rect" id="node1" title=" " alt="" coords="788,393,988,420"/>
+<area shape="rect" id="node2" href="$structspdk__nvmf__registers.html" title="A subset of struct spdk_nvme_registers that are emulated by a fabrics device." alt="" coords="474,132,633,159"/>
+<area shape="rect" id="node3" href="$unionspdk__nvme__cap__register.html" title=" " alt="" coords="16,5,200,32"/>
+<area shape="rect" id="node4" href="$unionspdk__nvme__vs__register.html" title=" " alt="" coords="20,56,196,83"/>
+<area shape="rect" id="node5" href="$unionspdk__nvme__csts__register.html" title=" " alt="" coords="15,107,201,133"/>
+<area shape="rect" id="node6" href="$unionspdk__nvme__cc__register.html" title=" " alt="" coords="21,157,195,184"/>
+<area shape="rect" id="node7" href="$unionspdk__nvme__aqa__register.html" title=" " alt="" coords="15,208,201,235"/>
+<area shape="rect" id="node8" href="$unionspdk__nvme__async__event__completion.html" title="Asynchronous Event Request Completion." alt="" coords="460,386,647,427"/>
+<area shape="rect" id="node9" href="$structspdk__nvmf__ctrlr__feat.html" title=" " alt="" coords="473,515,633,541"/>
+<area shape="rect" id="node10" href="$unionspdk__nvme__feat__error__recovery.html" title="Data used by Set Features/Get Features SPDK_NVME_FEAT_ERROR_RECOVERY." alt="" coords="24,259,192,301"/>
+<area shape="rect" id="node11" href="$unionspdk__nvme__feat__keep__alive__timer.html" title="Data used by Set Features/Get Features SPDK_NVME_FEAT_KEEP_ALIVE_TIMER." alt="" coords="24,325,192,366"/>
+<area shape="rect" id="node12" href="$unionspdk__nvme__feat__volatile__write__cache.html" title="Data used by Set Features/Get Features SPDK_NVME_FEAT_VOLATILE_WRITE_CACHE." alt="" coords="15,390,201,431"/>
+<area shape="rect" id="node13" href="$unionspdk__nvme__feat__arbitration.html" title="Data used by Set Features/Get Features SPDK_NVME_FEAT_ARBITRATION." alt="" coords="5,456,211,483"/>
+<area shape="rect" id="node14" href="$unionspdk__nvme__feat__interrupt__vector__configuration.html" title="Data used by Set Features/Get Features SPDK_NVME_FEAT_INTERRUPT_VECTOR_CONFIGURATION." alt="" coords="11,507,205,549"/>
+<area shape="rect" id="node15" href="$unionspdk__nvme__feat__interrupt__coalescing.html" title="Data used by Set Features/Get Features SPDK_NVME_FEAT_INTERRUPT_COALESCING." alt="" coords="11,573,205,614"/>
+<area shape="rect" id="node16" href="$unionspdk__nvme__feat__number__of__queues.html" title="Data used by Set Features/Get Features SPDK_NVME_FEAT_NUMBER_OF_QUEUES." alt="" coords="15,638,201,679"/>
+<area shape="rect" id="node17" href="$unionspdk__nvme__feat__power__management.html" title="Data used by Set Features/Get Features SPDK_NVME_FEAT_POWER_MANAGEMENT." alt="" coords="19,703,197,745"/>
+<area shape="rect" id="node18" href="$unionspdk__nvme__feat__write__atomicity.html" title="Data used by Set Features/Get Features SPDK_NVME_FEAT_WRITE_ATOMICITY." alt="" coords="23,769,193,810"/>
+<area shape="rect" id="node19" href="$unionspdk__nvme__feat__async__event__configuration.html" title="Data used by Set Features / Get Features SPDK_NVME_FEAT_ASYNC_EVENT_CONFIGURATION." alt="" coords="21,834,195,875"/>
+</map>

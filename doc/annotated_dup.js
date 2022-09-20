@@ -239,6 +239,8 @@ var annotated_dup =
     [ "spdk_nvme_zns_zone_report", "structspdk__nvme__zns__zone__report.html", "structspdk__nvme__zns__zone__report" ],
     [ "spdk_nvmf_capsule_cmd", "structspdk__nvmf__capsule__cmd.html", "structspdk__nvmf__capsule__cmd" ],
     [ "spdk_nvmf_ctrlr_data", "structspdk__nvmf__ctrlr__data.html", "structspdk__nvmf__ctrlr__data" ],
+    [ "spdk_nvmf_ctrlr_feat", "structspdk__nvmf__ctrlr__feat.html", "structspdk__nvmf__ctrlr__feat" ],
+    [ "spdk_nvmf_ctrlr_migr_data", "structspdk__nvmf__ctrlr__migr__data.html", "structspdk__nvmf__ctrlr__migr__data" ],
     [ "spdk_nvmf_dif_info", "structspdk__nvmf__dif__info.html", "structspdk__nvmf__dif__info" ],
     [ "spdk_nvmf_discovery_log_page", "structspdk__nvmf__discovery__log__page.html", "structspdk__nvmf__discovery__log__page" ],
     [ "spdk_nvmf_discovery_log_page_entry", "structspdk__nvmf__discovery__log__page__entry.html", "structspdk__nvmf__discovery__log__page__entry" ],

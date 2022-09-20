@@ -1,0 +1,14 @@
+<map id="spdk_nvmf_ctrlr_feat" name="spdk_nvmf_ctrlr_feat">
+<area shape="rect" id="node1" title=" " alt="" coords="721,300,881,327"/>
+<area shape="rect" id="node2" href="$unionspdk__nvme__feat__error__recovery.html" title="Data used by Set Features/Get Features SPDK_NVME_FEAT_ERROR_RECOVERY." alt="" coords="285,11,453,53"/>
+<area shape="rect" id="node3" href="$unionspdk__nvme__feat__keep__alive__timer.html" title="Data used by Set Features/Get Features SPDK_NVME_FEAT_KEEP_ALIVE_TIMER." alt="" coords="285,77,453,118"/>
+<area shape="rect" id="node4" href="$unionspdk__nvme__feat__volatile__write__cache.html" title="Data used by Set Features/Get Features SPDK_NVME_FEAT_VOLATILE_WRITE_CACHE." alt="" coords="276,142,463,183"/>
+<area shape="rect" id="node5" href="$unionspdk__nvme__feat__arbitration.html" title="Data used by Set Features/Get Features SPDK_NVME_FEAT_ARBITRATION." alt="" coords="267,208,472,235"/>
+<area shape="rect" id="node6" href="$unionspdk__nvme__feat__interrupt__vector__configuration.html" title="Data used by Set Features/Get Features SPDK_NVME_FEAT_INTERRUPT_VECTOR_CONFIGURATION." alt="" coords="273,259,466,301"/>
+<area shape="rect" id="node7" href="$unionspdk__nvme__feat__interrupt__coalescing.html" title="Data used by Set Features/Get Features SPDK_NVME_FEAT_INTERRUPT_COALESCING." alt="" coords="273,325,466,366"/>
+<area shape="rect" id="node8" href="$unionspdk__nvme__feat__number__of__queues.html" title="Data used by Set Features/Get Features SPDK_NVME_FEAT_NUMBER_OF_QUEUES." alt="" coords="276,390,463,431"/>
+<area shape="rect" id="node9" href="$unionspdk__nvme__feat__power__management.html" title="Data used by Set Features/Get Features SPDK_NVME_FEAT_POWER_MANAGEMENT." alt="" coords="281,455,458,497"/>
+<area shape="rect" id="node10" href="$unionspdk__nvme__feat__write__atomicity.html" title="Data used by Set Features/Get Features SPDK_NVME_FEAT_WRITE_ATOMICITY." alt="" coords="284,521,455,562"/>
+<area shape="rect" id="node11" href="$unionspdk__nvme__feat__async__event__configuration.html" title="Data used by Set Features / Get Features SPDK_NVME_FEAT_ASYNC_EVENT_CONFIGURATION." alt="" coords="282,586,457,627"/>
+<area shape="rect" id="node12" href="$unionspdk__nvme__critical__warning__state.html" title=" " alt="" coords="5,586,153,627"/>
+</map>
