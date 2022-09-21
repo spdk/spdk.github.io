@@ -1,6 +1,10 @@
 var annotated_dup =
 [
     [ "dsa_hw_comp_record", "structdsa__hw__comp__record.html", "structdsa__hw__comp__record" ],
+    [ "ftl_stats", "structftl__stats.html", "structftl__stats" ],
+    [ "ftl_stats_entry", "structftl__stats__entry.html", "structftl__stats__entry" ],
+    [ "ftl_stats_error", "structftl__stats__error.html", "structftl__stats__error" ],
+    [ "ftl_stats_group", "structftl__stats__group.html", "structftl__stats__group" ],
     [ "iaa_aecs", "structiaa__aecs.html", "structiaa__aecs" ],
     [ "iaa_hw_comp_record", "structiaa__hw__comp__record.html", "structiaa__hw__comp__record" ],
     [ "idxd_cmd_register", "unionidxd__cmd__register.html", "unionidxd__cmd__register" ],

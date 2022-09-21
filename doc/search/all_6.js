@@ -21,9 +21,13 @@ var searchData=
   ['fs_255',['fs',['../structspdk__nvme__fw__commit.html#af5bbf67aa6f4a82d1fef951e436e34fe',1,'spdk_nvme_fw_commit']]],
   ['fs_5frequest_5ffn_256',['fs_request_fn',['../blobfs_8h.html#ae18b6af02a2717f4a9094e0eb47caa3c',1,'blobfs.h']]],
   ['fs_5fsend_5frequest_5ffn_257',['fs_send_request_fn',['../blobfs_8h.html#a9bb805dc6d3c5597905a3c029000aebe',1,'blobfs.h']]],
-  ['fused_5fiovcnt_258',['fused_iovcnt',['../structspdk__bdev__io.html#aec576e7766af0ee744ced101de905ff5',1,'spdk_bdev_io']]],
-  ['fused_5fiovs_259',['fused_iovs',['../structspdk__bdev__io.html#a2a3448e66dcba2deaccc91d37ad89db1',1,'spdk_bdev_io']]],
-  ['fuses_260',['fuses',['../structspdk__nvme__ctrlr__data.html#af7340401290ec6691d858522a8932402',1,'spdk_nvme_ctrlr_data']]],
-  ['fwug_261',['fwug',['../structspdk__nvme__ctrlr__data.html#a9f5dd6335c39603ffb5beff3c6d8a6eb',1,'spdk_nvme_ctrlr_data']]],
-  ['fzr_262',['fzr',['../structspdk__nvme__zns__zone__desc.html#a8d70b1cfa360d12031eb39a0c367ccc8',1,'spdk_nvme_zns_zone_desc']]]
+  ['ftl_5fstats_258',['ftl_stats',['../structftl__stats.html',1,'']]],
+  ['ftl_5fstats_5fentry_259',['ftl_stats_entry',['../structftl__stats__entry.html',1,'']]],
+  ['ftl_5fstats_5ferror_260',['ftl_stats_error',['../structftl__stats__error.html',1,'']]],
+  ['ftl_5fstats_5fgroup_261',['ftl_stats_group',['../structftl__stats__group.html',1,'']]],
+  ['fused_5fiovcnt_262',['fused_iovcnt',['../structspdk__bdev__io.html#aec576e7766af0ee744ced101de905ff5',1,'spdk_bdev_io']]],
+  ['fused_5fiovs_263',['fused_iovs',['../structspdk__bdev__io.html#a2a3448e66dcba2deaccc91d37ad89db1',1,'spdk_bdev_io']]],
+  ['fuses_264',['fuses',['../structspdk__nvme__ctrlr__data.html#af7340401290ec6691d858522a8932402',1,'spdk_nvme_ctrlr_data']]],
+  ['fwug_265',['fwug',['../structspdk__nvme__ctrlr__data.html#a9f5dd6335c39603ffb5beff3c6d8a6eb',1,'spdk_nvme_ctrlr_data']]],
+  ['fzr_266',['fzr',['../structspdk__nvme__zns__zone__desc.html#a8d70b1cfa360d12031eb39a0c367ccc8',1,'spdk_nvme_zns_zone_desc']]]
 ];

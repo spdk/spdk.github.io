@@ -18,15 +18,19 @@ var prog_guides =
     [ "Flash Translation Layer", "ftl.html", [
       [ "Terminology", "ftl.html#ftl_terminology", [
         [ "Band", "ftl.html#ftl_band", null ],
-        [ "Ring write buffer", "ftl.html#ftl_rwb", null ],
-        [ "Defragmentation and relocation", "ftl.html#ftl_reloc", null ]
+        [ "Non volatile cache", "ftl.html#ftl_nvcache", null ],
+        [ "Garbage collection and relocation", "ftl.html#ftl_reloc", null ]
+      ] ],
+      [ "Metadata", "ftl.html#ftl_metadata", null ],
+      [ "Dirty shutdown recovery", "ftl.html#ftl_dirty_shutdown", [
+        [ "Shared memory recovery", "ftl.html#ftl_shm_recovery", null ],
+        [ "Trim", "ftl.html#ftl_trim", null ]
       ] ],
       [ "Usage", "ftl.html#ftl_usage", [
         [ "Prerequisites", "ftl.html#ftl_prereq", null ],
         [ "FTL bdev creation", "ftl.html#ftl_create", null ]
       ] ],
-      [ "Configuring SPDK", "ftl.html#ftl_spdk_config", null ],
-      [ "FTL usage with zone block bdev", "ftl.html#ftl_zone_block", null ]
+      [ "FTL bdev stack", "ftl.html#ftl_bdev_stack", null ]
     ] ],
     [ "GDB Macros User Guide", "gdb_macros.html", null ],
     [ "SPDK \"Reduce\" Block Compression Algorithm", "reduce.html", null ],

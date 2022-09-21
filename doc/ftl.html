@@ -89,14 +89,15 @@ $(document).ready(function(){initNavTree('ftl.html',''); initResizable(); });
 <div class="title">Flash Translation Layer </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><a class="anchor" id="md_ftl"></a> The Flash Translation Layer library provides block device access on top of devices implementing bdev_zone interface. It handles the logical to physical address mapping, responds to the asynchronous media management events, and manages the defragmentation process.</p>
+<div class="textblock"><p><a class="anchor" id="md_ftl"></a> The Flash Translation Layer library provides efficient 4K block device access on top of devices with &gt;4K write unit size (eg. raid5f bdev) or devices with large indirection units (some capacity-focused NAND drives), which don't handle 4K writes well. It handles the logical to physical address mapping and manages the garbage collection process.</p>
 <h1><a class="anchor" id="ftl_terminology"></a>
 Terminology</h1>
 <h2>Logical to physical address map</h2>
 <ul>
-<li>Shorthand: L2P</li>
+<li>Shorthand: <code>L2P</code></li>
 </ul>
-<p>Contains the mapping of the logical addresses (LBA) to their on-disk physical location. The LBAs are contiguous and in range from 0 to the number of surfaced blocks (the number of spare blocks are calculated during device formation and are subtracted from the available address space). The spare blocks account for zones going offline throughout the lifespan of the device as well as provide necessary buffer for data <a href="#ftl_reloc">defragmentation</a>.</p>
+<p>Contains the mapping of the logical addresses (LBA) to their on-disk physical location. The LBAs are contiguous and in range from 0 to the number of surfaced blocks (the number of spare blocks are calculated during device formation and are subtracted from the available address space). The spare blocks account for zones going offline throughout the lifespan of the device as well as provide necessary buffer for data <a href="#ftl_reloc">garbage collection</a>.</p>
+<p>Since the L2P would occupy a significant amount of DRAM (4B/LBA for drives smaller than 16TiB, 8B/LBA for bigger drives), FTL will, by default, store only the 2GiB of most recently used L2P addresses in memory (the amount is configurable), and page them in and out of the cache device as necessary.</p>
 <h2><a class="anchor" id="ftl_band"></a>
 Band</h2>
 <p>A band describes a collection of zones, each belonging to a different parallel unit. All writes to a band follow the same pattern - a batch of logical blocks is written to one zone, another batch to the next one and so on. This ensures the parallelism of the write operations, as they can be executed independently on different zones. Each band keeps track of the LBAs it consists of, as well as their validity, as some of the data will be invalidated by subsequent writes to the same logical address. The L2P mapping can be restored from the SSD by reading this information in order from the oldest band to the youngest.</p>
@@ -115,46 +116,39 @@ Band</h2>
 <div class="line">         +--------------+        +--------------+                        +--------------+</div>
 <div class="line"> </div>
 <div class="line">          parallel unit 1              pu 2                                    pu n</div>
-</div><!-- fragment --><p>The address map and valid map are, along with a several other things (e.g. UUID of the device it's part of, number of surfaced LBAs, band's sequence number, etc.), parts of the band's metadata. The metadata is split in two parts:</p>
-<div class="fragment"><div class="line">   head metadata               band&#39;s data               tail metadata</div>
+</div><!-- fragment --><p>The address map (<code>P2L</code>) is saved as a part of the band's metadata, at the end of each band:</p>
+<div class="fragment"><div class="line">                    band&#39;s data                        tail metadata</div>
 <div class="line">+-------------------+-------------------------------+------------------------+</div>
 <div class="line">|zone 1 |...|zone n |...|...|zone 1 |...|           | ... |zone  m-1 |zone  m|</div>
 <div class="line">|block 1|   |block 1|   |   |block x|   |           |     |block y   |block y|</div>
 <div class="line">+-------------------+-------------+-----------------+------------------------+</div>
-</div><!-- fragment --><ul>
-<li>the head part, containing information already known when opening the band (device's UUID, band's sequence number, etc.), located at the beginning blocks of the band,</li>
-<li>the tail part, containing the address map and the valid map, located at the end of the band.</li>
-</ul>
-<p>Bands are written sequentially (in a way that was described earlier). Before a band can be written to, all of its zones need to be erased. During that time, the band is considered to be in a <code>PREP</code> state. After that is done, the band transitions to the <code>OPENING</code> state, in which head metadata is being written. Then the band moves to the <code>OPEN</code> state and actual user data can be written to the band. Once the whole available space is filled, tail metadata is written and the band transitions to <code>CLOSING</code> state. When that finishes the band becomes <code>CLOSED</code>.</p>
-<h2><a class="anchor" id="ftl_rwb"></a>
-Ring write buffer</h2>
+</div><!-- fragment --><p>Bands are written sequentially (in a way that was described earlier). Before a band can be written to, all of its zones need to be erased. During that time, the band is considered to be in a <code>PREP</code> state. Then the band moves to the <code>OPEN</code> state and actual user data can be written to the band. Once the whole available space is filled, tail metadata is written and the band transitions to <code>CLOSING</code> state. When that finishes the band becomes <code>CLOSED</code>.</p>
+<h2><a class="anchor" id="ftl_nvcache"></a>
+Non volatile cache</h2>
 <ul>
-<li>Shorthand: RWB</li>
+<li>Shorthand: <code>nvcache</code></li>
 </ul>
-<p>Because the smallest write size the SSD may support can be a multiple of block size, in order to support writes to a single block, the data needs to be buffered. The write buffer is the solution to this problem. It consists of a number of pre-allocated buffers called batches, each of size allowing for a single transfer to the SSD. A single batch is divided into block-sized buffer entries.</p>
-<div class="fragment"><div class="line">             write buffer</div>
-<div class="line">+-----------------------------------+</div>
-<div class="line">|batch 1                            |</div>
-<div class="line">|   +-----------------------------+ |</div>
-<div class="line">|   |rwb    |rwb    | ... |rwb    | |</div>
-<div class="line">|   |entry 1|entry 2|     |entry n| |</div>
-<div class="line">|   +-----------------------------+ |</div>
-<div class="line">+-----------------------------------+</div>
-<div class="line">| ...                               |</div>
-<div class="line">+-----------------------------------+</div>
-<div class="line">|batch m                            |</div>
-<div class="line">|   +-----------------------------+ |</div>
-<div class="line">|   |rwb    |rwb    | ... |rwb    | |</div>
-<div class="line">|   |entry 1|entry 2|     |entry n| |</div>
-<div class="line">|   +-----------------------------+ |</div>
-<div class="line">+-----------------------------------+</div>
-</div><!-- fragment --><p>When a write is scheduled, it needs to acquire an entry for each of its blocks and copy the data onto this buffer. Once all blocks are copied, the write can be signalled as completed to the user. In the meantime, the <code>rwb</code> is polled for filled batches and, if one is found, it's sent to the SSD. After that operation is completed the whole batch can be freed. For the whole time the data is in the <code>rwb</code>, the L2P points at the buffer entry instead of a location on the SSD. This allows for servicing read requests from the buffer.</p>
-<h2><a class="anchor" id="ftl_reloc"></a>
-Defragmentation and relocation</h2>
+<p>Nvcache is a bdev that is used for buffering user writes and storing various metadata. Nvcache data space is divided into chunks. Chunks are written in sequential manner. When number of free chunks is below assigned threshold data from fully written chunks is moved to base_bdev. This process is called chunk compaction. </p><div class="fragment"><div class="line">                  nvcache</div>
+<div class="line">+-----------------------------------------+</div>
+<div class="line">|chunk 1                                  |</div>
+<div class="line">|   +--------------------------------- +  |</div>
+<div class="line">|   |blk 1 + md| blk 2 + md| blk n + md|  |</div>
+<div class="line">|   +----------------------------------|  |</div>
+<div class="line">+-----------------------------------------+</div>
+<div class="line">| ...                                     |</div>
+<div class="line">+-----------------------------------------+</div>
+<div class="line">+-----------------------------------------+</div>
+<div class="line">|chunk N                                  |</div>
+<div class="line">|   +--------------------------------- +  |</div>
+<div class="line">|   |blk 1 + md| blk 2 + md| blk n + md|  |</div>
+<div class="line">|   +----------------------------------|  |</div>
+<div class="line">+-----------------------------------------+</div>
+</div><!-- fragment --><h2><a class="anchor" id="ftl_reloc"></a>
+Garbage collection and relocation</h2>
 <ul>
-<li>Shorthand: defrag, reloc</li>
+<li>Shorthand: gc, reloc</li>
 </ul>
-<p>Since a write to the same LBA invalidates its previous physical location, some of the blocks on a band might contain old data that basically wastes space. As there is no way to overwrite an already written block, this data will stay there until the whole zone is reset. This might create a situation in which all of the bands contain some valid data and no band can be erased, so no writes can be executed anymore. Therefore a mechanism is needed to move valid data and invalidate whole bands, so that they can be reused.</p>
+<p>Since a write to the same LBA invalidates its previous physical location, some of the blocks on a band might contain old data that basically wastes space. As there is no way to overwrite an already written block for a ZNS drive, this data will stay there until the whole zone is reset. This might create a situation in which all of the bands contain some valid data and no band can be erased, so no writes can be executed anymore. Therefore a mechanism is needed to move valid data and invalidate whole bands, so that they can be reused.</p>
 <div class="fragment"><div class="line">                band                                             band</div>
 <div class="line">+-----------------------------------+            +-----------------------------------+</div>
 <div class="line">| ** *    * ***      *    *** * *   |            |                                   |</div>
@@ -162,48 +156,54 @@ Defragmentation and relocation</h2>
 <div class="line">|*     ***  *      *            *   |            |                                   |</div>
 <div class="line">+-----------------------------------+            +-----------------------------------+</div>
 </div><!-- fragment --><p>Valid blocks are marked with an asterisk '*'.</p>
-<p>Another reason for data relocation might be an event from the SSD telling us that the data might become corrupt if it's not relocated. This might happen due to its old age (if it was written a long time ago) or due to read disturb (media characteristic, that causes corruption of neighbouring blocks during a read operation).</p>
-<p>Module responsible for data relocation is called <code>reloc</code>. When a band is chosen for defragmentation or a media management event is received, the appropriate blocks are marked as required to be moved. The <code>reloc</code> module takes a band that has some of such blocks marked, checks their validity and, if they're still valid, copies them.</p>
-<p>Choosing a band for defragmentation depends on several factors: its valid ratio (1) (proportion of valid blocks to all user blocks), its age (2) (when was it written) and its write count / wear level index of its zones (3) (how many times the band was written to). The lower the ratio (1), the higher its age (2) and the lower its write count (3), the higher the chance the band will be chosen for defrag.</p>
+<p>Module responsible for data relocation is called <code>reloc</code>. When a band is chosen for garbage collection, the appropriate blocks are marked as required to be moved. The <code>reloc</code> module takes a band that has some of such blocks marked, checks their validity and, if they're still valid, copies them.</p>
+<p>Choosing a band for garbage collection depends its validity ratio (proportion of valid blocks to all user blocks). The lower the ratio, the higher the chance the band will be chosen for gc.</p>
+<h1><a class="anchor" id="ftl_metadata"></a>
+Metadata</h1>
+<p>In addition to the <a href="#ftl_l2p">L2P</a>, FTL will store additional metadata both on the cache, as well as on the base devices. The following types of metadata are persisted:</p>
+<ul>
+<li>Superblock - stores the global state of FTL; stored on cache, mirrored to the base device</li>
+<li>L2P - see the <a href="#ftl_l2p">L2P</a> section for details</li>
+<li>Band - stores the state of bands - write pointers, their OPEN/FREE/CLOSE state; stored on cache, mirrored to a different section of the cache device</li>
+<li>Valid map - bitmask of all the valid physical addresses, used for improving <a href="#ftl_reloc">relocation</a></li>
+<li>Chunk - stores the state of chunks - write pointers, their OPEN/FREE/CLOSE state; stored on cache, mirrored to a different section of the cache device</li>
+<li>P2L - stores the address mapping (P2L, see <a href="#ftl_band">band</a>) of currently open bands. This allows for the recovery of open bands after dirty shutdown without needing VSS DIX metadata on the base device; stored on the cache device</li>
+<li>Trim - stores information about unmapped (trimmed) LBAs; stored on cache, mirrored to a different section of the cache device</li>
+</ul>
+<h1><a class="anchor" id="ftl_dirty_shutdown"></a>
+Dirty shutdown recovery</h1>
+<p>After power failure, FTL needs to rebuild the whole L2P using the address maps (<code>P2L</code>) stored within each band/chunk. This needs to done, because while individual L2P pages may have been paged out and persisted to the cache device, there's no way to tell which, if any, pages were dirty before the power failure occured. The P2L consists of not only the mapping itself, but also a sequence id (<code>seq_id</code>), which describes the relative age of a given logical block (multiple writes to the same logical block would produce the same amount of P2L entries, only the last one having the current data).</p>
+<p>FTL will therefore rebuild the whole L2P by reading the P2L of all closed bands and chunks. For open bands, the P2L is stored on the cache device, in a separate metadata region (see <a href="#ftl_metadata">the P2L section</a>). Open chunks can be restored thanks to storing the mapping in the VSS DIX metadata, which the cache device must be formatted with.</p>
+<h2><a class="anchor" id="ftl_shm_recovery"></a>
+Shared memory recovery</h2>
+<p>In order to shorten the recovery after crash of the target application, FTL also stores its metadata in shared memory (<code>shm</code>) - this allows it to keep track of the dirty-ness state of individual pages and shortens the recovery time dramatically, as FTL will only need to mark any potential L2P pages which were paging out at the time of the crash as dirty and reissue the writes. There's no need to read the whole P2L in this case.</p>
+<h2><a class="anchor" id="ftl_trim"></a>
+Trim</h2>
+<p>Due to metadata size constraints and the difficulty of maintaining consistent data returned before and after dirty shutdown, FTL currently only allows for trims (unmaps) aligned to 4MiB (alignment concerns both the offset and length of the trim command).</p>
 <h1><a class="anchor" id="ftl_usage"></a>
 Usage</h1>
 <h2><a class="anchor" id="ftl_prereq"></a>
 Prerequisites</h2>
-<p>In order to use the FTL module, a device capable of zoned interface is required e.g. <code>zone_block</code> bdev or OCSSD <code>nvme</code> bdev.</p>
+<p>In order to use the FTL module, a cache device formatted with VSS DIX metadata is required.</p>
 <h2><a class="anchor" id="ftl_create"></a>
 FTL bdev creation</h2>
 <p>Similar to other bdevs, the FTL bdevs can be created either based on JSON config files or via RPC. Both interfaces require the same arguments which are described by the <code>--help</code> option of the <code>bdev_ftl_create</code> RPC call, which are:</p>
 <ul>
 <li>bdev's name</li>
-<li>base bdev's name (base bdev must implement bdev_zone API)</li>
+<li>base bdev's name</li>
+<li>cache bdev's name (cache bdev must support VSS DIX mode - could be emulated by providing SPDK_FTL_VSS_EMU=1 flag to make; emulating VSS should be done for testing purposes only, it is not power-fail safe)</li>
 <li>UUID of the FTL device (if the FTL is to be restored from the SSD)</li>
 </ul>
-<h1><a class="anchor" id="ftl_spdk_config"></a>
-Configuring SPDK</h1>
-<p>To verify that the drive is emulated correctly, one can check the output of the NVMe identify app (assuming that <code>scripts/setup.sh</code> was called before and the driver has been changed for that device):</p>
-<div class="fragment"><div class="line">$ build/examples/identify</div>
-<div class="line">=====================================================</div>
-<div class="line">NVMe Controller at 0000:00:0a.0 [1d1d:1f1f]</div>
-<div class="line">=====================================================</div>
-<div class="line">Controller Capabilities/Features</div>
-<div class="line">================================</div>
-<div class="line">Vendor ID:                             1d1d</div>
-<div class="line">Subsystem Vendor ID:                   1af4</div>
-<div class="line">Serial Number:                         deadbeef</div>
-<div class="line">Model Number:                          QEMU NVMe Ctrl</div>
-<div class="line"> </div>
-<div class="line">... other info ...</div>
-</div><!-- fragment --><h1><a class="anchor" id="ftl_zone_block"></a>
-FTL usage with zone block bdev</h1>
-<p>Zone block bdev is a bdev adapter between regular <code>bdev</code> and <code>bdev_zone</code>. It emulates a zoned interface on top of a regular block device.</p>
-<p>In order to create FTL on top of a regular bdev: 1) Create regular bdev e.g. <code>bdev_nvme</code>, <code>bdev_null</code>, <code>bdev_malloc</code> 2) Create zone block bdev on top of a regular bdev created in step 1 (user could specify zone capacity and optimal number of open zones) 3) Create FTL bdev on top of bdev created in step 2</p>
+<h1><a class="anchor" id="ftl_bdev_stack"></a>
+FTL bdev stack</h1>
+<p>In order to create FTL on top of a regular bdev: 1) Create regular bdev e.g. <code>bdev_nvme</code>, <code>bdev_null</code>, <code>bdev_malloc</code> 2) Create second regular bdev for nvcache 3) Create FTL bdev on top of bdev created in step 1 and step 2</p>
 <p>Example: </p><div class="fragment"><div class="line">$ scripts/rpc.py bdev_nvme_attach_controller -b nvme0 -a 00:05.0 -t pcie</div>
 <div class="line">        nvme0n1</div>
 <div class="line"> </div>
-<div class="line">$ scripts/rpc.py bdev_zone_block_create -b zone1 -n nvme0n1 -z 4096 -o 32</div>
-<div class="line">        zone1</div>
+<div class="line">$ scripts/rpc.py bdev_nvme_attach_controller -b nvme1 -a 00:06.0 -t pcie</div>
+<div class="line">        nvme1n1</div>
 <div class="line"> </div>
-<div class="line">$ scripts/rpc.py bdev_ftl_create -b ftl0 -d zone1</div>
+<div class="line">$ scripts/rpc.py bdev_ftl_create -b ftl0 -d nvme0n1 -c nvme1n1</div>
 <div class="line">{</div>
 <div class="line">        &quot;name&quot;: &quot;ftl0&quot;,</div>
 <div class="line">        &quot;uuid&quot;: &quot;3b469565-1fa5-4bfb-8341-747ec9f3a9b9&quot;</div>

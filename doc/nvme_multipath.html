@@ -100,6 +100,7 @@ $(document).ready(function(){initNavTree('nvme_multipath.html',''); initResizabl
 <h2>Path Error Recovery</h2>
 <p>If the NVMe driver detects an error on a qpair, it disconnects the qpair and notifies the error to the NVMe bdev module. Then the NVMe bdev module starts resetting the corresponding NVMe-oF controller. The NVMe-oF controller reset consists of the following steps: 1) disconnect and delete all I/O qpairs, 2) disconnect admin qpair, 3) connect admin qpair, 4) configure the NVMe-oF controller, and 5) create and connect all I/O qpairs.</p>
 <p>If the step 3, 4, or 5 fails, the reset reverts to the step 3 and then it is retried after <code>reconnect_delay_sec</code> seconds. Then the NVMe-oF controller is deleted automatically if it is not recovered within <code>ctrlr_loss_timeout_sec</code> seconds. If <code>ctrlr_loss_timeout_sec</code> is -1, it retries indefinitely.</p>
+<p>By default, error detection on a qpair is very slow for TCP and RDMA transports. For fast error detection, a global option, <code>transport_ack_timeout</code>, is useful.</p>
 <h2>Path Selection</h2>
 <p>Multipath mode supports two path selection policies, active-passive or active-active.</p>
 <p>For both path selection policies, only ANA optimal I/O paths are used unless there are no ANA optimal I/O paths available.</p>

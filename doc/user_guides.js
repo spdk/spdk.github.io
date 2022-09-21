@@ -169,12 +169,12 @@ var user_guides =
         [ "env_dpdk_get_mem_stats", "jsonrpc.html#rpc_env_dpdk_get_mem_stats", null ]
       ] ],
       [ "Acceleration Framework Layer", "jsonrpc.html#jsonrpc_components_accel_fw", [
-        [ "accel_get_engine_info", "jsonrpc.html#accel_get_engine_info", null ],
+        [ "accel_get_module_info", "jsonrpc.html#accel_get_module_info", null ],
         [ "accel_get_opc_assignments", "jsonrpc.html#rpc_accel_get_opc_assignments", null ],
         [ "accel_assign_opc", "jsonrpc.html#rpc_accel_assign_opc", null ],
-        [ "dsa_scan_accel_engine", "jsonrpc.html#rpc_dsa_scan_accel_engine", null ],
-        [ "iaa_scan_accel_engine", "jsonrpc.html#rpc_iaa_scan_accel_engine", null ],
-        [ "ioat_scan_accel_engine", "jsonrpc.html#rpc_ioat_scan_accel_engine", null ]
+        [ "dsa_scan_accel_module", "jsonrpc.html#rpc_dsa_scan_accel_module", null ],
+        [ "iaa_scan_accel_module", "jsonrpc.html#rpc_iaa_scan_accel_module", null ],
+        [ "ioat_scan_accel_module", "jsonrpc.html#rpc_ioat_scan_accel_module", null ]
       ] ],
       [ "Block Device Abstraction Layer", "jsonrpc.html#jsonrpc_components_bdev", [
         [ "bdev_set_options", "jsonrpc.html#rpc_bdev_set_options", null ],
@@ -245,6 +245,7 @@ var user_guides =
         [ "bdev_ftl_delete", "jsonrpc.html#rpc_bdev_ftl_delete", null ],
         [ "bdev_ftl_unload", "jsonrpc.html#rpc_bdev_ftl_unload", null ],
         [ "bdev_ftl_unmap", "jsonrpc.html#rpc_bdev_ftl_unmap", null ],
+        [ "bdev_ftl_get_stats", "jsonrpc.html#rpc_bdev_ftl_get_stats", null ],
         [ "bdev_pmem_create_pool", "jsonrpc.html#rpc_bdev_pmem_create_pool", null ],
         [ "bdev_pmem_get_pool_info", "jsonrpc.html#rpc_bdev_pmem_get_pool_info", null ],
         [ "bdev_pmem_delete_pool", "jsonrpc.html#rpc_bdev_pmem_delete_pool", null ],

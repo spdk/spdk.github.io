@@ -172,11 +172,11 @@ Functions</h2></td></tr>
 <tr class="memitem:a3dc2afe79f93c53228d5e2f90305385b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="accel_8h.html#a3dc2afe79f93c53228d5e2f90305385b">spdk_accel_submit_decompress</a> (struct spdk_io_channel *ch, void *dst, void *src, uint64_t nbytes_dst, uint64_t nbytes_src, int flags, <a class="el" href="accel_8h.html#a48593db52501b3dec9233f7112d37872">spdk_accel_completion_cb</a> cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:a3dc2afe79f93c53228d5e2f90305385b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Build and submit a memory decompress request.  <a href="accel_8h.html#a3dc2afe79f93c53228d5e2f90305385b">More...</a><br /></td></tr>
 <tr class="separator:a3dc2afe79f93c53228d5e2f90305385b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa57eaf32d37d765a9d281f735fd02e0d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="accel_8h.html#aa57eaf32d37d765a9d281f735fd02e0d">spdk_accel_get_opc_engine_name</a> (enum accel_opcode opcode, const char **engine_name)</td></tr>
-<tr class="memdesc:aa57eaf32d37d765a9d281f735fd02e0d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the name of the engine assigned to a specfic opcode.  <a href="accel_8h.html#aa57eaf32d37d765a9d281f735fd02e0d">More...</a><br /></td></tr>
-<tr class="separator:aa57eaf32d37d765a9d281f735fd02e0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab843fd7c6bfd2db2f2997fad376f687f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="accel_8h.html#ab843fd7c6bfd2db2f2997fad376f687f">spdk_accel_get_opc_module_name</a> (enum accel_opcode opcode, const char **module_name)</td></tr>
+<tr class="memdesc:ab843fd7c6bfd2db2f2997fad376f687f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the name of the module assigned to a specfic opcode.  <a href="accel_8h.html#ab843fd7c6bfd2db2f2997fad376f687f">More...</a><br /></td></tr>
+<tr class="separator:ab843fd7c6bfd2db2f2997fad376f687f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4d8b25b197af0a838d38e2f12151dcc8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="accel_8h.html#a4d8b25b197af0a838d38e2f12151dcc8">spdk_accel_assign_opc</a> (enum accel_opcode opcode, const char *name)</td></tr>
-<tr class="memdesc:a4d8b25b197af0a838d38e2f12151dcc8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Override the assignment of an opcode to an engine.  <a href="accel_8h.html#a4d8b25b197af0a838d38e2f12151dcc8">More...</a><br /></td></tr>
+<tr class="memdesc:a4d8b25b197af0a838d38e2f12151dcc8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Override the assignment of an opcode to an module.  <a href="accel_8h.html#a4d8b25b197af0a838d38e2f12151dcc8">More...</a><br /></td></tr>
 <tr class="separator:a4d8b25b197af0a838d38e2f12151dcc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a308671b4f55c2adc9469e59b941a6dcc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="accel_8h.html#a308671b4f55c2adc9469e59b941a6dcc">spdk_accel_write_config_json</a> (struct spdk_json_write_ctx *w)</td></tr>
 <tr class="memdesc:a308671b4f55c2adc9469e59b941a6dcc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write Acceleration subsystem configuration into provided JSON context.  <a href="accel_8h.html#a308671b4f55c2adc9469e59b941a6dcc">More...</a><br /></td></tr>
@@ -257,15 +257,15 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Override the assignment of an opcode to an engine. </p>
+<p>Override the assignment of an opcode to an module. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">opcode</td><td>Accel Framework Opcode enum value. Valid codes can be retrieved using <code>accel_get_opc_assignments</code> or <code>spdk_accel_get_opc_name</code>. </td></tr>
-    <tr><td class="paramname">name</td><td>Name of the engine to assign. Valid engine names may be retrieved with <code>spdk_accel_get_opc_engine_name</code></td></tr>
+    <tr><td class="paramname">name</td><td>Name of the module to assign. Valid module names may be retrieved with <code>spdk_accel_get_opc_module_name</code></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>0 if a valid opcode name was provided. -EINVAL for invalid opcode or if the framework has started (cannot change engines after startup) </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>0 if a valid opcode name was provided. -EINVAL for invalid opcode or if the framework has started (cannot change modules after startup) </dd></dl>
 
 </div>
 </div>
@@ -328,14 +328,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="aa57eaf32d37d765a9d281f735fd02e0d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa57eaf32d37d765a9d281f735fd02e0d">&#9670;&nbsp;</a></span>spdk_accel_get_opc_engine_name()</h2>
+<a id="ab843fd7c6bfd2db2f2997fad376f687f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab843fd7c6bfd2db2f2997fad376f687f">&#9670;&nbsp;</a></span>spdk_accel_get_opc_module_name()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int spdk_accel_get_opc_engine_name </td>
+          <td class="memname">int spdk_accel_get_opc_module_name </td>
           <td>(</td>
           <td class="paramtype">enum accel_opcode&#160;</td>
           <td class="paramname"><em>opcode</em>, </td>
@@ -344,7 +344,7 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const char **&#160;</td>
-          <td class="paramname"><em>engine_name</em>&#160;</td>
+          <td class="paramname"><em>module_name</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -354,15 +354,15 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Return the name of the engine assigned to a specfic opcode. </p>
+<p>Return the name of the module assigned to a specfic opcode. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">opcode</td><td>Accel Framework Opcode enum value. Valid codes can be retrieved using <code>accel_get_opc_assignments</code> or <code>spdk_accel_get_opc_name</code>. </td></tr>
-    <tr><td class="paramname">engine_name</td><td>Pointer to update with engine name.</td></tr>
+    <tr><td class="paramname">module_name</td><td>Pointer to update with module name.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>0 if a valid engine name was provided. -EINVAL for invalid opcode or -ENOENT no engine was found at this time for the provided opcode. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>0 if a valid module name was provided. -EINVAL for invalid opcode or -ENOENT no module was found at this time for the provided opcode. </dd></dl>
 
 </div>
 </div>

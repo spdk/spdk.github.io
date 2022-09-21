@@ -97,7 +97,7 @@ Acceleration Framework Functions</h1>
 Acceleration Framework Design Considerations</h1>
 <p>The general interface is defined by <code>/include/spdk/accel.h</code> and implemented in <code>/lib/accel</code>. These functions may be called by an SPDK application and in most cases, except where otherwise documented, are asynchronous and follow the standard SPDK model for callbacks with a callback argument.</p>
 <p>If the acceleration framework is started without initializing a hardware module, optimized software implementations of the operations will back the public API. All operations supported by the framework have a backing software implementation in the event that no hardware accelerators have been enabled for that operation.</p>
-<p>When multiple hardware engines are enabled the framework will assign each operation to an engine based on the order in which it was initialized. So, for example if two modules are enabled, IOAT and software, the software engine will be used for every operation except those supported by IOAT.</p>
+<p>When multiple hardware modules are enabled the framework will assign each operation to a module based on the order in which it was initialized. So, for example if two modules are enabled, IOAT and software, the software module will be used for every operation except those supported by IOAT.</p>
 <h1><a class="anchor" id="accel_libs"></a>
 Acceleration Low Level Libraries</h1>
 <p>Low level libraries provide only the most basic functions that are specific to the hardware. Low level libraries are located in the '/lib' directory with the exception of the software implementation which is implemented as part of the framework itself. The software low level library does not expose a public API. Applications may choose to interact directly with a low level library if there are specific needs/considerations not met via accessing the library through the framework/module. Note that when using the low level libraries directly, the framework abstracted interface is bypassed as the application will call the public functions exposed by the individual low level libraries. Thus, code written this way needs to be certain that the underlying hardware exists everywhere that it runs.</p>
@@ -109,11 +109,11 @@ Acceleration Plug-In Modules</h1>
 <p>Plug-in modules depend on low level libraries to interact with the hardware and add additional functionality such as queueing during busy conditions or flow control in some cases. The framework in turn depends on the modules to provide the complete implementation of the acceleration component. A module must be selected via startup RPC when the application is started. Otherwise, if no startup RPC is provided, the framework is available and will use the software plug-in module.</p>
 <h2><a class="anchor" id="accel_ioat"></a>
 IOAT Module</h2>
-<p>To use the IOAT engine, use the RPC <a href="https://spdk.io/doc/jsonrpc.html"><code>ioat_scan_accel_engine</code></a> before starting the application.</p>
+<p>To use the IOAT module, use the RPC <a href="https://spdk.io/doc/jsonrpc.html"><code>ioat_scan_accel_module</code></a> before starting the application.</p>
 <h2><a class="anchor" id="accel_dsa"></a>
 DSA Module</h2>
 <p>The DSA module supports the DSA hardware and relies on the low level IDXD library.</p>
-<p>To use the DSA engine, use the RPC <a href="https://spdk.io/doc/jsonrpc.html"><code>dsa_scan_accel_engine</code></a>. By default, this will attempt to load the SPDK user-space idxd driver. To use the built-in kernel driver on Linux, add the <code>-k</code> parameter. See the next section for details on using the kernel driver.</p>
+<p>To use the DSA module, use the RPC <a href="https://spdk.io/doc/jsonrpc.html"><code>dsa_scan_accel_module</code></a>. By default, this will attempt to load the SPDK user-space idxd driver. To use the built-in kernel driver on Linux, add the <code>-k</code> parameter. See the next section for details on using the kernel driver.</p>
 <p>The DSA hardware supports a limited queue depth and channels. This means that only a limited number of <code>spdk_thread</code>s will be able to acquire a channel. Design software to deal with the inability to get a channel.</p>
 <h2><a class="anchor" id="accel_idxd_kernel"></a>
 How to use kernel idxd driver</h2>
@@ -137,12 +137,12 @@ How to use kernel idxd driver</h2>
 <p>Note: you might need to run <code>sudo ./setup.sh reset</code> to unbind all drivers before performing the step above.</p>
 <h2><a class="anchor" id="accel_sw"></a>
 Software Module</h2>
-<p>The software module is enabled by default. If no hardware engine is explicitly enabled via startup RPC as discussed earlier, the software module will use ISA-L if available for functions such as CRC32C. Otherwise, standard glibc calls are used to back the framework API.</p>
+<p>The software module is enabled by default. If no hardware module is explicitly enabled via startup RPC as discussed earlier, the software module will use ISA-L if available for functions such as CRC32C. Otherwise, standard glibc calls are used to back the framework API.</p>
 <h2><a class="anchor" id="accel_assignments"></a>
-Engine to Operation Code Assignment</h2>
-<p>When multiple engines are initialized, the accel framework will assign op codes to engines by first assigning all op codes to the Software Engine and then overriding op code assignments to Hardware Engines in the order in which they were initialized. The RPC <code>accel_get_opc_assignments</code> can be used at any time to see the current assignment map including the names of valid operations. The RPC <code>accel_assign_opc</code> can be used after initializing the desired Hardware Engines but before starting the framework in the event that a specific override is desired. Note that to start an application and send startup RPC's use the <code>--wait-for-rpc</code> parameter and then use the <code>framework_start_init</code> RPC to continue. For example, assume the DSA Engine is initialized but for some reason the desire is to have the Software Module handle copies instead. The following RPCs would accomplish the copy override:</p>
-<p>`./scripts/rpc.py dsa_scan_accel_engine ./scripts/rpc.py accel_assign_opc -o copy -e software ./scripts/rpc.py framework_start_init ./scripts/rpc.py accel_get_opc_assignments { "copy": "software", "fill": "dsa", "dualcast": "dsa", "compare": "dsa", "crc32c": "dsa", "copy_crc32c": "dsa", "compress": "software", "decompress": "software" }`</p>
-<p>To detemine the name of available engines and their supported operations use the RPC <code>accel_get_engine_info</code>. </p>
+Module to Operation Code Assignment</h2>
+<p>When multiple modules are initialized, the accel framework will assign op codes to modules by first assigning all op codes to the Software Module and then overriding op code assignments to Hardware Modules in the order in which they were initialized. The RPC <code>accel_get_opc_assignments</code> can be used at any time to see the current assignment map including the names of valid operations. The RPC <code>accel_assign_opc</code> can be used after initializing the desired Hardware Modules but before starting the framework in the event that a specific override is desired. Note that to start an application and send startup RPC's use the <code>--wait-for-rpc</code> parameter and then use the <code>framework_start_init</code> RPC to continue. For example, assume the DSA Module is initialized but for some reason the desire is to have the Software Module handle copies instead. The following RPCs would accomplish the copy override:</p>
+<p>`./scripts/rpc.py dsa_scan_accel_module ./scripts/rpc.py accel_assign_opc -o copy -e software ./scripts/rpc.py framework_start_init ./scripts/rpc.py accel_get_opc_assignments { "copy": "software", "fill": "dsa", "dualcast": "dsa", "compare": "dsa", "crc32c": "dsa", "copy_crc32c": "dsa", "compress": "software", "decompress": "software" }`</p>
+<p>To detemine the name of available modules and their supported operations use the RPC <code>accel_get_module_info</code>. </p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->

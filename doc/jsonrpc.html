@@ -403,8 +403,8 @@ rpc_get_methods</h2>
 <div class="line">    &quot;framework_monitor_context_switch&quot;,</div>
 <div class="line">    &quot;spdk_kill_instance&quot;,</div>
 <div class="line">    &quot;accel_get_opc_assignments&quot;,</div>
-<div class="line">    &quot;ioat_scan_accel_engine&quot;,</div>
-<div class="line">    &quot;dsa_scan_accel_engine&quot;,</div>
+<div class="line">    &quot;ioat_scan_accel_module&quot;,</div>
+<div class="line">    &quot;dsa_scan_accel_module&quot;,</div>
 <div class="line">    &quot;bdev_virtio_attach_controller&quot;,</div>
 <div class="line">    &quot;bdev_virtio_scsi_get_devices&quot;,</div>
 <div class="line">    &quot;bdev_virtio_detach_controller&quot;,</div>
@@ -431,6 +431,7 @@ rpc_get_methods</h2>
 <div class="line">    &quot;bdev_ftl_create&quot;,</div>
 <div class="line">    &quot;bdev_ftl_load&quot;,</div>
 <div class="line">    &quot;bdev_ftl_unmap&quot;,</div>
+<div class="line">    &quot;bdev_ftl_get_stats&quot;,</div>
 <div class="line">    &quot;bdev_lvol_get_lvstores&quot;,</div>
 <div class="line">    &quot;bdev_lvol_delete&quot;,</div>
 <div class="line">    &quot;bdev_lvol_resize&quot;,</div>
@@ -1197,22 +1198,22 @@ env_dpdk_get_mem_stats</h2>
 <div class="line">}</div>
 </div><!-- fragment --><h1><a class="anchor" id="jsonrpc_components_accel_fw"></a>
 Acceleration Framework Layer</h1>
-<h2><a class="anchor" id="accel_get_engine_info"></a>
-accel_get_engine_info</h2>
-<p>Get a list of valid engine names and their supported operations.</p>
+<h2><a class="anchor" id="accel_get_module_info"></a>
+accel_get_module_info</h2>
+<p>Get a list of valid module names and their supported operations.</p>
 <h3>Parameters</h3>
 <p>None</p>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
 <div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
-<div class="line">  &quot;method&quot;: &quot;accel_get_engine_info&quot;,</div>
+<div class="line">  &quot;method&quot;: &quot;accel_get_module_info&quot;,</div>
 <div class="line">  &quot;id&quot;: 1</div>
 <div class="line">}</div>
 </div><!-- fragment --><p>Example response:</p>
 <div class="fragment"><div class="line">[</div>
 <div class="line">  {</div>
-<div class="line">    &quot;engine&quot;: &quot;software&quot;,</div>
+<div class="line">    &quot;module&quot;: &quot;software&quot;,</div>
 <div class="line">    &quot;supported ops&quot;: [</div>
 <div class="line">      &quot;copy&quot;,</div>
 <div class="line">      &quot;fill&quot;,</div>
@@ -1225,7 +1226,7 @@ accel_get_engine_info</h2>
 <div class="line">    ]</div>
 <div class="line">  },</div>
 <div class="line">  {</div>
-<div class="line">    &quot;engine&quot;: &quot;dsa&quot;,</div>
+<div class="line">    &quot;module&quot;: &quot;dsa&quot;,</div>
 <div class="line">    &quot;supported ops&quot;: [</div>
 <div class="line">      &quot;copy&quot;,</div>
 <div class="line">      &quot;fill&quot;,</div>
@@ -1266,7 +1267,7 @@ accel_get_opc_assignments</h2>
 <div class="line">}</div>
 </div><!-- fragment --><h2><a class="anchor" id="rpc_accel_assign_opc"></a>
 accel_assign_opc</h2>
-<p>Manually assign an operation to an engine.</p>
+<p>Manually assign an operation to a module.</p>
 <h3>Parameters</h3>
 <table class="markdownTable">
 <tr class="markdownTableHead">
@@ -1274,7 +1275,7 @@ accel_assign_opc</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">opname   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">name of operation    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">engine   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">name of engine   </td></tr>
+<td class="markdownTableBodyNone">module   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">name of module   </td></tr>
 </table>
 <h3>Example</h3>
 <p>Example request:</p>
@@ -1283,8 +1284,8 @@ accel_assign_opc</h2>
 <div class="line">  &quot;method&quot;: &quot;accel_assign_opc&quot;,</div>
 <div class="line">  &quot;id&quot;: 1,</div>
 <div class="line">  &quot;params&quot;: {</div>
-<div class="line">    &quot;opanme&quot;: &quot;copy&quot;,</div>
-<div class="line">    &quot;engine&quot;: &quot;software&quot;</div>
+<div class="line">    &quot;opname&quot;: &quot;copy&quot;,</div>
+<div class="line">    &quot;module&quot;: &quot;software&quot;</div>
 <div class="line">  }</div>
 <div class="line">}</div>
 </div><!-- fragment --><p>Example response:</p>
@@ -1293,9 +1294,9 @@ accel_assign_opc</h2>
 <div class="line">  &quot;id&quot;: 1,</div>
 <div class="line">  &quot;result&quot;: true</div>
 <div class="line">}</div>
-</div><!-- fragment --><h2><a class="anchor" id="rpc_dsa_scan_accel_engine"></a>
-dsa_scan_accel_engine</h2>
-<p>Set config and enable dsa accel engine offload. This feature is considered as experimental.</p>
+</div><!-- fragment --><h2><a class="anchor" id="rpc_dsa_scan_accel_module"></a>
+dsa_scan_accel_module</h2>
+<p>Set config and enable dsa accel module offload. This feature is considered as experimental.</p>
 <h3>Parameters</h3>
 <table class="markdownTable">
 <tr class="markdownTableHead">
@@ -1310,7 +1311,7 @@ dsa_scan_accel_engine</h2>
 <div class="line">    &quot;config_kernel_mode&quot;: false</div>
 <div class="line">  },</div>
 <div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
-<div class="line">  &quot;method&quot;: &quot;dsa_scan_accel_engine&quot;,</div>
+<div class="line">  &quot;method&quot;: &quot;dsa_scan_accel_module&quot;,</div>
 <div class="line">  &quot;id&quot;: 1</div>
 <div class="line">}</div>
 </div><!-- fragment --><p>Example response:</p>
@@ -1319,16 +1320,16 @@ dsa_scan_accel_engine</h2>
 <div class="line">  &quot;id&quot;: 1,</div>
 <div class="line">  &quot;result&quot;: true</div>
 <div class="line">}</div>
-</div><!-- fragment --><h2><a class="anchor" id="rpc_iaa_scan_accel_engine"></a>
-iaa_scan_accel_engine</h2>
-<p>Enable IAA accel engine offload. This feature is considered as experimental.</p>
+</div><!-- fragment --><h2><a class="anchor" id="rpc_iaa_scan_accel_module"></a>
+iaa_scan_accel_module</h2>
+<p>Enable IAA accel module offload. This feature is considered as experimental.</p>
 <h3>Parameters</h3>
 <p>None</p>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
 <div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
-<div class="line">  &quot;method&quot;: &quot;iaa_scan_accel_engine&quot;,</div>
+<div class="line">  &quot;method&quot;: &quot;iaa_scan_accel_module&quot;,</div>
 <div class="line">  &quot;id&quot;: 1</div>
 <div class="line">}</div>
 </div><!-- fragment --><p>Example response:</p>
@@ -1337,16 +1338,16 @@ iaa_scan_accel_engine</h2>
 <div class="line">  &quot;id&quot;: 1,</div>
 <div class="line">  &quot;result&quot;: true</div>
 <div class="line">}</div>
-</div><!-- fragment --><h2><a class="anchor" id="rpc_ioat_scan_accel_engine"></a>
-ioat_scan_accel_engine</h2>
-<p>Enable ioat accel engine offload.</p>
+</div><!-- fragment --><h2><a class="anchor" id="rpc_ioat_scan_accel_module"></a>
+ioat_scan_accel_module</h2>
+<p>Enable ioat accel module offload.</p>
 <h3>Parameters</h3>
 <p>None</p>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
 <div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
-<div class="line">  &quot;method&quot;: &quot;ioat_scan_accel_engine&quot;,</div>
+<div class="line">  &quot;method&quot;: &quot;ioat_scan_accel_module&quot;,</div>
 <div class="line">  &quot;id&quot;: 1</div>
 <div class="line">}</div>
 </div><!-- fragment --><p>Example response:</p>
@@ -3901,6 +3902,170 @@ bdev_ftl_unmap</h2>
 <div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
 <div class="line">  &quot;id&quot;: 1,</div>
 <div class="line">  &quot;result&quot;: true</div>
+<div class="line">}</div>
+</div><!-- fragment --><h2><a class="anchor" id="rpc_bdev_ftl_get_stats"></a>
+bdev_ftl_get_stats</h2>
+<p>Get IO statistics for FTL bdev</p>
+<p>This RPC is subject to change.</p>
+<h3>Parameters</h3>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Bdev name   </td></tr>
+</table>
+<h3>Response</h3>
+<p>The response is an object containing IO statistics for an FTL instance, split into multiple subobjects:</p>
+<ul>
+<li><code>user</code> - contains information about number of IOs, and errors for any incoming requests,</li>
+<li><code>cmp</code> - information about IO for the compaction process,</li>
+<li><code>gc</code> - information about IO for the garbage collection process,</li>
+<li><code>md_base</code> - internal metadata requests to the base FTL device,</li>
+<li><code>md_nv_cache</code> - internal metadata requests to the cache device,</li>
+<li><code>l2p</code> - requests done on the L2P cache region.</li>
+</ul>
+<p>Each subobject contains the following information:</p>
+<ul>
+<li><code>ios</code> - describes the total number of IOs requested,</li>
+<li><code>blocks</code> - the total number of requested blocks,</li>
+<li><code>errors</code> - describes the number of detected errors for a given operation, with the following distinctions:<ul>
+<li><code>media</code> - media errors,</li>
+<li><code>crc</code> - mismatch in calculated CRC versus saved checksum in the metadata,</li>
+<li><code>other</code> - any other errors.</li>
+</ul>
+</li>
+</ul>
+<h3>Example</h3>
+<p>Example request:</p>
+<div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;params&quot;: {</div>
+<div class="line">    &quot;name&quot;: &quot;ftl0&quot;</div>
+<div class="line">  },</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
+<div class="line">  &quot;method&quot;: &quot;bdev_ftl_get_stats&quot;,</div>
+<div class="line">  &quot;id&quot;: 1</div>
+<div class="line">}</div>
+</div><!-- fragment --><p>Example response:</p>
+<div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
+<div class="line">  &quot;id&quot;: 1,</div>
+<div class="line">  &quot;result&quot;: {</div>
+<div class="line">      &quot;name&quot;: &quot;ftl0&quot;,</div>
+<div class="line">      &quot;user&quot;: {</div>
+<div class="line">        &quot;read&quot;: {</div>
+<div class="line">          &quot;ios&quot;: 0,</div>
+<div class="line">          &quot;blocks&quot;: 0,</div>
+<div class="line">          &quot;errors&quot;: {</div>
+<div class="line">            &quot;media&quot;: 0,</div>
+<div class="line">            &quot;crc&quot;: 0,</div>
+<div class="line">            &quot;other&quot;: 0</div>
+<div class="line">          }</div>
+<div class="line">        },</div>
+<div class="line">        &quot;write&quot;: {</div>
+<div class="line">          &quot;ios&quot;: 318707,</div>
+<div class="line">          &quot;blocks&quot;: 318707,</div>
+<div class="line">          &quot;errors&quot;: {</div>
+<div class="line">            &quot;media&quot;: 0,</div>
+<div class="line">            &quot;other&quot;: 0</div>
+<div class="line">          }</div>
+<div class="line">        }</div>
+<div class="line">      },</div>
+<div class="line">      &quot;cmp&quot;: {</div>
+<div class="line">        &quot;read&quot;: {</div>
+<div class="line">          &quot;ios&quot;: 0,</div>
+<div class="line">          &quot;blocks&quot;: 0,</div>
+<div class="line">          &quot;errors&quot;: {</div>
+<div class="line">            &quot;media&quot;: 0,</div>
+<div class="line">            &quot;crc&quot;: 0,</div>
+<div class="line">            &quot;other&quot;: 0</div>
+<div class="line">          }</div>
+<div class="line">        },</div>
+<div class="line">        &quot;write&quot;: {</div>
+<div class="line">          &quot;ios&quot;: 0,</div>
+<div class="line">          &quot;blocks&quot;: 0,</div>
+<div class="line">          &quot;errors&quot;: {</div>
+<div class="line">            &quot;media&quot;: 0,</div>
+<div class="line">            &quot;other&quot;: 0</div>
+<div class="line">          }</div>
+<div class="line">        }</div>
+<div class="line">      },</div>
+<div class="line">      &quot;gc&quot;: {</div>
+<div class="line">        &quot;read&quot;: {</div>
+<div class="line">          &quot;ios&quot;: 0,</div>
+<div class="line">          &quot;blocks&quot;: 0,</div>
+<div class="line">          &quot;errors&quot;: {</div>
+<div class="line">            &quot;media&quot;: 0,</div>
+<div class="line">            &quot;crc&quot;: 0,</div>
+<div class="line">            &quot;other&quot;: 0</div>
+<div class="line">          }</div>
+<div class="line">        },</div>
+<div class="line">        &quot;write&quot;: {</div>
+<div class="line">          &quot;ios&quot;: 0,</div>
+<div class="line">          &quot;blocks&quot;: 0,</div>
+<div class="line">          &quot;errors&quot;: {</div>
+<div class="line">            &quot;media&quot;: 0,</div>
+<div class="line">            &quot;other&quot;: 0</div>
+<div class="line">          }</div>
+<div class="line">        }</div>
+<div class="line">      },</div>
+<div class="line">      &quot;md_base&quot;: {</div>
+<div class="line">        &quot;read&quot;: {</div>
+<div class="line">          &quot;ios&quot;: 0,</div>
+<div class="line">          &quot;blocks&quot;: 0,</div>
+<div class="line">          &quot;errors&quot;: {</div>
+<div class="line">            &quot;media&quot;: 0,</div>
+<div class="line">            &quot;crc&quot;: 0,</div>
+<div class="line">            &quot;other&quot;: 0</div>
+<div class="line">          }</div>
+<div class="line">        },</div>
+<div class="line">        &quot;write&quot;: {</div>
+<div class="line">          &quot;ios&quot;: 1,</div>
+<div class="line">          &quot;blocks&quot;: 32,</div>
+<div class="line">          &quot;errors&quot;: {</div>
+<div class="line">            &quot;media&quot;: 0,</div>
+<div class="line">            &quot;other&quot;: 0</div>
+<div class="line">          }</div>
+<div class="line">        }</div>
+<div class="line">      },</div>
+<div class="line">      &quot;md_nv_cache&quot;: {</div>
+<div class="line">        &quot;read&quot;: {</div>
+<div class="line">          &quot;ios&quot;: 0,</div>
+<div class="line">          &quot;blocks&quot;: 0,</div>
+<div class="line">          &quot;errors&quot;: {</div>
+<div class="line">            &quot;media&quot;: 0,</div>
+<div class="line">            &quot;crc&quot;: 0,</div>
+<div class="line">            &quot;other&quot;: 0</div>
+<div class="line">          }</div>
+<div class="line">        },</div>
+<div class="line">        &quot;write&quot;: {</div>
+<div class="line">          &quot;ios&quot;: 1064,</div>
+<div class="line">          &quot;blocks&quot;: 1073896,</div>
+<div class="line">          &quot;errors&quot;: {</div>
+<div class="line">            &quot;media&quot;: 0,</div>
+<div class="line">            &quot;other&quot;: 0</div>
+<div class="line">          }</div>
+<div class="line">        }</div>
+<div class="line">      },</div>
+<div class="line">      &quot;l2p&quot;: {</div>
+<div class="line">        &quot;read&quot;: {</div>
+<div class="line">          &quot;ios&quot;: 240659,</div>
+<div class="line">          &quot;blocks&quot;: 240659,</div>
+<div class="line">          &quot;errors&quot;: {</div>
+<div class="line">            &quot;media&quot;: 0,</div>
+<div class="line">            &quot;crc&quot;: 0,</div>
+<div class="line">            &quot;other&quot;: 0</div>
+<div class="line">          }</div>
+<div class="line">        },</div>
+<div class="line">        &quot;write&quot;: {</div>
+<div class="line">          &quot;ios&quot;: 235745,</div>
+<div class="line">          &quot;blocks&quot;: 235745,</div>
+<div class="line">          &quot;errors&quot;: {</div>
+<div class="line">            &quot;media&quot;: 0,</div>
+<div class="line">            &quot;other&quot;: 0</div>
+<div class="line">          }</div>
+<div class="line">        }</div>
+<div class="line">      }</div>
+<div class="line">    }</div>
 <div class="line">}</div>
 </div><!-- fragment --> <h2><a class="anchor" id="rpc_bdev_pmem_create_pool"></a>
 bdev_pmem_create_pool</h2>
