@@ -280,6 +280,43 @@ to the latest failure's log. We will prioritize tacking down and fixing these is
 is unable to match your comment to a valid GitHub issue, it will post back a comment on Gerrit letting you know it was unable to retrigger
 your patch.
 
+#### Triggering Specific Sub Job
+
+When debugging changes, it may be necessary to run a specific sub job without running the entire per-patch job. Especially when uploading 'Work in Progress'
+and [RFC] patches. To do this, you need to post a comment with the following content:
+
+~~~{.sh}
+tests:subjob1,subjob2,subjob3
+~~~
+
+where subjob is a job from the list:
+
+* BlobFS-autotest
+* centos7-vg-autotest
+* clang-vg-autotest
+* crypto-autotest
+* freebsd-vg-autotest
+* iscsi-vg-autotest
+* iscsi-uring-vg-autotest
+* lvol-vg-autotest
+* nvme-vg-autotest
+* nvme-cmb-pmr-vg-autotest
+* nvmf-phy-autotest
+* nvmf-phy-short-fuzz-autotest
+* nvmf-tcp-phy-autotest
+* nvmf-tcp-uring-vg-autotest
+* nvmf-tcp-vg-autotest
+* pmdk-vg-autotest
+* rocky8-vg-autotest
+* ubuntu18-vg-autotest
+* ubuntu20-vg-autotest
+* ubuntu22-vg-autotest
+* valgrind-vg-autotest
+* vfio-user-autotest
+* vhost-autotest
+* vhost-initiator-vg-autotest
+* zns-vg-autotest
+
 #### Mellanox Build Bot
 
 If Mellanox Build Bot gives your patch a -1 and you believe that this failure is not related to your patch, you can re-trigger a new
