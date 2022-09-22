@@ -1,5 +1,6 @@
 var NAVTREEINDEX28 =
 {
+"structspdk__trace__parser__entry.html#affe1d322d1f4c1d685c8f163e3415da4":[15,0,360,0],
 "structspdk__trace__parser__opts.html":[15,0,361],
 "structspdk__trace__parser__opts.html#a48ab7e723632da9d892cf486b0402692":[15,0,361,1],
 "structspdk__trace__parser__opts.html#a5da4eafe3f0b20fc1ff113ad5da35cb4":[15,0,361,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX28 =
 "unionidxd__cmdcap__register.html#a7ab2e8845ee38ad908c9c36e26a37914":[15,0,8,16],
 "unionidxd__cmdcap__register.html#ab077aa1ffb8c82314b8df3a1e9411ccf":[15,0,8,13],
 "unionidxd__cmdcap__register.html#ab63b5b4b55cd034a73ae7592de3f3e56":[15,0,8,9],
-"unionidxd__cmdcap__register.html#abefee72a05af32063dcea5c5165ee35c":[15,0,8,6],
-"unionidxd__cmdcap__register.html#adb1c3e31a13f01c41268150348dcb05b":[15,0,8,11]
+"unionidxd__cmdcap__register.html#abefee72a05af32063dcea5c5165ee35c":[15,0,8,6]
 };

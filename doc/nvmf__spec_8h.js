@@ -39,6 +39,7 @@ var nvmf__spec_8h =
     [ "SPDK_NVME_TCP_H2C_DATA_FLAGS_LAST_PDU", "nvmf__spec_8h.html#a371d8e6b4fc34313868d63c5b5b55329", null ],
     [ "SPDK_NVME_TCP_H2C_DATA_FLAGS_SUCCESS", "nvmf__spec_8h.html#af4eb2d509c76a2ee8dee9089285b8211", null ],
     [ "SPDK_NVME_TCP_H2C_DATA_PDO_MULT", "nvmf__spec_8h.html#a737ab20843b0e5ce0c4489c143052b43", null ],
+    [ "SPDK_NVME_TCP_HPDA_MAX", "nvmf__spec_8h.html#a9c56ab108fbfe2163ae51630f1317e68", null ],
     [ "SPDK_NVME_TCP_PDU_PDO_MAX_OFFSET", "nvmf__spec_8h.html#ab8d4456503173c69a460d24b3293b897", null ],
     [ "SPDK_NVME_TCP_TERM_REQ_ERROR_DATA_MAX_SIZE", "nvmf__spec_8h.html#ab94f61f0b21a683850d852df21fcff8b", null ],
     [ "SPDK_NVME_TCP_TERM_REQ_PDU_MAX_SIZE", "nvmf__spec_8h.html#a90e0edaad0f457a5141423717f84f12f", null ],
