@@ -1,6 +1,6 @@
 var unionspdk__nvme__intel__feat__power__governor =
 [
-    [ "bits", "unionspdk__nvme__intel__feat__power__governor.html#a717cd35eb036d1c84f87e5fa66c9f540", null ],
+    [ "bits", "unionspdk__nvme__intel__feat__power__governor.html#acfb9a6ec5a6225194c548935443f2d31", null ],
     [ "power_governor_setting", "unionspdk__nvme__intel__feat__power__governor.html#aa25780c209e8e7d18133e16396cb235e", null ],
     [ "raw", "unionspdk__nvme__intel__feat__power__governor.html#a87b59d2553682b8fa44b294f2a96ece1", null ],
     [ "reserved", "unionspdk__nvme__intel__feat__power__governor.html#a21a30353391b6569ff38a3aa0d3ae36d", null ]

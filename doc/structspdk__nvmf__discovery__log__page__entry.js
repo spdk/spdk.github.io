@@ -11,7 +11,7 @@ var structspdk__nvmf__discovery__log__page__entry =
     [ "subnqn", "structspdk__nvmf__discovery__log__page__entry.html#a797dfd34a151a7c7d9942a7ad179aac5", null ],
     [ "subtype", "structspdk__nvmf__discovery__log__page__entry.html#a2cc3f0c6ab0ebb7eb85cd3058f0f787f", null ],
     [ "traddr", "structspdk__nvmf__discovery__log__page__entry.html#a549e9bb635b7ae387daceef8e5b27e68", null ],
-    [ "treq", "structspdk__nvmf__discovery__log__page__entry.html#a2e87232a56920cab82e4306daec58677", null ],
+    [ "treq", "structspdk__nvmf__discovery__log__page__entry.html#aedae516702e0e19c5eb5d6211dba5199", null ],
     [ "trsvcid", "structspdk__nvmf__discovery__log__page__entry.html#a4b3b3ff4bd5f94e6ffe8a11b90b08caa", null ],
     [ "trtype", "structspdk__nvmf__discovery__log__page__entry.html#ad5db7a511e5a7b5bf342391e77ecb27d", null ],
     [ "tsas", "structspdk__nvmf__discovery__log__page__entry.html#ae6926468815fd6dbdd5ff136a4905057", null ]

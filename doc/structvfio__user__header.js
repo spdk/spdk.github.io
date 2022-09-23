@@ -3,7 +3,7 @@ var structvfio__user__header =
     [ "cmd", "structvfio__user__header.html#a192a548b281b126819c771b7a5c85766", null ],
     [ "error", "structvfio__user__header.html#a929c2ba18ce9462b9bf960939332a2df", null ],
     [ "error_no", "structvfio__user__header.html#ac26f57c2a4710128eb10398b4ab71405", null ],
-    [ "flags", "structvfio__user__header.html#a84a9cffc2a2c08fe664de6620b5767a6", null ],
+    [ "flags", "structvfio__user__header.html#a2a8ae19f72bdc6f3cf7134a49a26ee8b", null ],
     [ "msg_id", "structvfio__user__header.html#a058ab14577aa8d041d2fd480088342b5", null ],
     [ "msg_size", "structvfio__user__header.html#a4069787d02f5851e7c7652198505a102", null ],
     [ "no_reply", "structvfio__user__header.html#a03b79c2757a48fe1cdeb3dabbc44a9ff", null ],

@@ -234,6 +234,16 @@ union {</td></tr>
 &#160;&#160;&#160;&#160;&#160;&#160;struct spdk_io_channel *&#160;&#160;&#160;<a class="el" href="structspdk__bdev__io.html#ae513a78b2095fbd1d0674fa11d26ef2b">ch_ref</a></td></tr>
 <tr class="memdesc:ae3d16ed976208504f5c029a4d705edde"><td class="mdescLeft">&#160;</td><td class="mdescRight">Channel reference held while messages for this reset are in progress. <br /></td></tr>
 <tr class="separator:ae3d16ed976208504f5c029a4d705edde"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14849cb6240d0e807d7bf6ef1c31314a"><td class="memItemLeft" >
+&#160;&#160;&#160;&#160;&#160;&#160;struct {</td></tr>
+<tr class="memitem:afb6c698de8462e5b4a9d762ff529fd4f"><td class="memItemLeft" >
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;struct spdk_poller *&#160;&#160;&#160;<b>poller</b></td></tr>
+<tr class="separator:afb6c698de8462e5b4a9d762ff529fd4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ea6e4a9f360eed3b3e9fbcfad8d9042"><td class="memItemLeft" >
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;uint64_t&#160;&#160;&#160;<b>stop_time_tsc</b></td></tr>
+<tr class="separator:a0ea6e4a9f360eed3b3e9fbcfad8d9042"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14849cb6240d0e807d7bf6ef1c31314a"><td class="memItemLeft" valign="top">&#160;&#160;&#160;&#160;&#160;&#160;}&#160;&#160;&#160;<b>wait_poller</b></td></tr>
+<tr class="separator:a14849cb6240d0e807d7bf6ef1c31314a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa1866a5bfe8b5260ccfbd51814add86f"><td class="memItemLeft" valign="top">&#160;&#160;&#160;}&#160;&#160;&#160;<b>reset</b></td></tr>
 <tr class="separator:aa1866a5bfe8b5260ccfbd51814add86f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad873ba82661a4ad0df3088b964baa568"><td class="memItemLeft" >

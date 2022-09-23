@@ -13,6 +13,7 @@ var bdev__module_8h =
     [ "bdev_part_internal_fields", "structspdk__bdev__part_1_1bdev__part__internal__fields.html", "structspdk__bdev__part_1_1bdev__part__internal__fields" ],
     [ "spdk_bdev_part_channel", "structspdk__bdev__part__channel.html", "structspdk__bdev__part__channel" ],
     [ "BDEV_IO_NUM_CHILD_IOV", "bdev__module_8h.html#a8db6bfb953294c571c83d5bc21835b31", null ],
+    [ "BDEV_RESET_IO_DRAIN_RECOMMENDED_VALUE", "bdev__module_8h.html#af3d297f4a046afa476e833b020475aee", null ],
     [ "SPDK_BDEV_MODULE_REGISTER", "bdev__module_8h.html#af0e282f580c2bdda343c0421892e9d2a", null ],
     [ "spdk_bdev_for_each_io_cb", "bdev__module_8h.html#a72a8f679f4e45f3431ea7e450cb3ed7e", null ],
     [ "spdk_bdev_get_current_qd_cb", "bdev__module_8h.html#ade4b64b36884d88964fc53a4bf65b993", null ],

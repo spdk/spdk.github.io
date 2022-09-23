@@ -1,7 +1,7 @@
 var structspdk__nvme__ns__identify__directive__param =
 [
-    [ "directives_enabled", "structspdk__nvme__ns__identify__directive__param.html#ad6a3a0779ac13c8268d74c12762bf1e6", null ],
-    [ "directives_supported", "structspdk__nvme__ns__identify__directive__param.html#af065ad2903629c04a7d3517c42eca228", null ],
+    [ "directives_enabled", "structspdk__nvme__ns__identify__directive__param.html#a1053e2e8f787e39e9900057b64c80e36", null ],
+    [ "directives_supported", "structspdk__nvme__ns__identify__directive__param.html#ae96add5ea774e976dcb546f70f884fe5", null ],
     [ "identify", "structspdk__nvme__ns__identify__directive__param.html#ac50140a1ebe962b1efa9385d6be08b81", null ],
     [ "reserved", "structspdk__nvme__ns__identify__directive__param.html#aa89f4daa57bcfb35d5db09d9474707e9", null ],
     [ "reserved1", "structspdk__nvme__ns__identify__directive__param.html#a6fb6fdc10c5384e4dfe35bf644f74d08", null ],
