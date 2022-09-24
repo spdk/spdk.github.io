@@ -213,8 +213,16 @@ Macros</h2></td></tr>
 <tr class="memitem:a8ec8b31986c78a14b792b83c8e2c1f78"><td class="memItemLeft" align="right" valign="top"><a id="a8ec8b31986c78a14b792b83c8e2c1f78"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>IAA_DECOMP_ENABLE</b>&#160;&#160;&#160;(1 &lt;&lt; 0)</td></tr>
 <tr class="separator:a8ec8b31986c78a14b792b83c8e2c1f78"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4830c3e552e0042cd7e295652dd447ea"><td class="memItemLeft" align="right" valign="top"><a id="a4830c3e552e0042cd7e295652dd447ea"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>IAA_DECOMP_FLAGS</b>&#160;&#160;&#160;(IAA_DECOMP_ENABLE)</td></tr>
+<tr class="memitem:aba425b893ce85a8372191074f585b059"><td class="memItemLeft" align="right" valign="top"><a id="aba425b893ce85a8372191074f585b059"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>IAA_DECOMP_FLUSH_OUTPUT</b>&#160;&#160;&#160;(1 &lt;&lt; 1)</td></tr>
+<tr class="separator:aba425b893ce85a8372191074f585b059"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b01412f874503131a9a3fb7054a1db7"><td class="memItemLeft" align="right" valign="top"><a id="a1b01412f874503131a9a3fb7054a1db7"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>IAA_DECOMP_CHECK_FOR_EOB</b>&#160;&#160;&#160;(1 &lt;&lt; 2)</td></tr>
+<tr class="separator:a1b01412f874503131a9a3fb7054a1db7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6da4319ef7b5baf389b111f81b08c55"><td class="memItemLeft" align="right" valign="top"><a id="ad6da4319ef7b5baf389b111f81b08c55"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>IAA_DECOMP_STOP_ON_EOB</b>&#160;&#160;&#160;(1 &lt;&lt; 3)</td></tr>
+<tr class="separator:ad6da4319ef7b5baf389b111f81b08c55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4830c3e552e0042cd7e295652dd447ea"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><b>IAA_DECOMP_FLAGS</b></td></tr>
 <tr class="separator:a4830c3e552e0042cd7e295652dd447ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
@@ -679,7 +687,26 @@ struct <a class="el" href="structdsa__hw__comp__record.html">dsa_hw_comp_record<
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>IDXD specification definitions. </p>
-</div></div><!-- contents -->
+</div><h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="a4830c3e552e0042cd7e295652dd447ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4830c3e552e0042cd7e295652dd447ea">&#9670;&nbsp;</a></span>IAA_DECOMP_FLAGS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define IAA_DECOMP_FLAGS</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">                                        (IAA_DECOMP_ENABLE | \</div>
+<div class="line">                                        IAA_DECOMP_FLUSH_OUTPUT | \</div>
+<div class="line">                                        IAA_DECOMP_CHECK_FOR_EOB | \</div>
+<div class="line">                                        IAA_DECOMP_STOP_ON_EOB)</div>
+</div><!-- fragment -->
+</div>
+</div>
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->

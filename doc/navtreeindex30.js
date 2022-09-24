@@ -1,5 +1,8 @@
 var NAVTREEINDEX30 =
 {
+"unionspdk__nvme__cmbsts__register.html#a54604b4b4110e749c3a843f3620ed74e":[15,0,131,3],
+"unionspdk__nvme__cmbsts__register.html#a5998dda138a19e69602822179d4547be":[15,0,131,1],
+"unionspdk__nvme__cmbsz__register.html":[15,0,132],
 "unionspdk__nvme__cmbsz__register.html#a03af53ff83c581ce0f02f72195f1c6f2":[15,0,132,7],
 "unionspdk__nvme__cmbsz__register.html#a3481600cf80fa69860ba5dbb445afc5f":[15,0,132,6],
 "unionspdk__nvme__cmbsz__register.html#a5259febaf27ced21d1358b97bd1cb831":[15,0,132,8],
@@ -246,8 +249,5 @@ var NAVTREEINDEX30 =
 "unionspdk__nvme__intel__feat__power__governor.html#acfb9a6ec5a6225194c548935443f2d31":[15,0,174,0],
 "unionspdk__nvme__intel__feat__reset__timed__workload__counters.html":[15,0,175],
 "unionspdk__nvme__intel__feat__reset__timed__workload__counters.html#a6d4eb13eae3c57005a76fa79e808525c":[15,0,175,1],
-"unionspdk__nvme__intel__feat__reset__timed__workload__counters.html#a74b5ac6a6ea150d582cc269f6987757b":[15,0,175,3],
-"unionspdk__nvme__intel__feat__reset__timed__workload__counters.html#abb7fd2e47365abcba82b98f12b8b95b3":[15,0,175,2],
-"unionspdk__nvme__intel__feat__reset__timed__workload__counters.html#afe40532a148b2e8815571ea4b977bb6c":[15,0,175,0],
-"unionspdk__nvme__intel__feat__smbus__address.html":[15,0,176]
+"unionspdk__nvme__intel__feat__reset__timed__workload__counters.html#a74b5ac6a6ea150d582cc269f6987757b":[15,0,175,3]
 };
