@@ -1,5 +1,10 @@
 var NAVTREEINDEX7 =
 {
+"jsonrpc.html#rpc_log_clear_flag":[3,9,3,22],
+"jsonrpc.html#rpc_log_enable_timestamps":[3,9,3,24],
+"jsonrpc.html#rpc_log_get_flags":[3,9,3,23],
+"jsonrpc.html#rpc_log_get_level":[3,9,3,20],
+"jsonrpc.html#rpc_log_get_print_level":[3,9,3,18],
 "jsonrpc.html#rpc_log_set_flag":[3,9,3,21],
 "jsonrpc.html#rpc_log_set_level":[3,9,3,19],
 "jsonrpc.html#rpc_log_set_print_level":[3,9,3,17],
@@ -244,10 +249,5 @@ var NAVTREEINDEX7 =
 "nvme_8h.html":[16,0,40],
 "nvme_8h.html#a006a6050d45feefadbf0ce978ca009de":[16,0,40,69],
 "nvme_8h.html#a018f3b986b4345ee0c6931be9718c163":[16,0,40,37],
-"nvme_8h.html#a018f3b986b4345ee0c6931be9718c163a4e691401f3709b7cd66bd32c28ae109b":[16,0,40,37,3],
-"nvme_8h.html#a018f3b986b4345ee0c6931be9718c163a568a13a9686985d4aa24543b52c122d6":[16,0,40,37,7],
-"nvme_8h.html#a018f3b986b4345ee0c6931be9718c163a60edfdee88fbe811250e2f8ff63597d0":[16,0,40,37,2],
-"nvme_8h.html#a018f3b986b4345ee0c6931be9718c163a80dcd48a57fa9e14efba4757300ad729":[16,0,40,37,0],
-"nvme_8h.html#a018f3b986b4345ee0c6931be9718c163a91203896ead47bbe22e9f7db8a63c14f":[16,0,40,37,5],
-"nvme_8h.html#a018f3b986b4345ee0c6931be9718c163ad403aafc70c00560a1db768029933400":[16,0,40,37,1]
+"nvme_8h.html#a018f3b986b4345ee0c6931be9718c163a4e691401f3709b7cd66bd32c28ae109b":[16,0,40,37,3]
 };

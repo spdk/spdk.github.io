@@ -111,7 +111,7 @@ Command Line Parameters</h2>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">-d   </td><td class="markdownTableBodyNone">&ndash;limit-coredump   </td><td class="markdownTableBodyNone">flag   </td><td class="markdownTableBodyNone">false   </td><td class="markdownTableBodyNone"><a class="el" href="app_overview.html#cmd_arg_limit_coredump">Limit coredump</a>    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">-e   </td><td class="markdownTableBodyNone">&ndash;tpoint-group-mask   </td><td class="markdownTableBodyNone">integer   </td><td class="markdownTableBodyNone">0x0   </td><td class="markdownTableBodyNone"><a class="el" href="app_overview.html#cmd_arg_limit_tpoint_group_mask">Tracepoint group mask</a>    </td></tr>
+<td class="markdownTableBodyNone">-e   </td><td class="markdownTableBodyNone">&ndash;tpoint-group   </td><td class="markdownTableBodyNone">integer   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"><a class="el" href="app_overview.html#cmd_arg_limit_tpoint_group_mask">Tracepoint group mask</a>    </td></tr>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">-g   </td><td class="markdownTableBodyNone">&ndash;single-file-segments   </td><td class="markdownTableBodyNone">flag   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"><a class="el" href="app_overview.html#cmd_arg_single_file_segments">Create just one hugetlbfs file</a>    </td></tr>
 <tr class="markdownTableRowOdd">
@@ -153,7 +153,7 @@ Limit coredump</h3>
 <p>By default, an SPDK application will set resource limits for core file sizes to RLIM_INFINITY. Specifying <code>--limit-coredump</code> will not set the resource limits.</p>
 <h3><a class="anchor" id="cmd_arg_limit_tpoint_group_mask"></a>
 Tracepoint group mask</h3>
-<p>SPDK has an experimental low overhead tracing framework. Tracepoints in this framework are organized into tracepoint groups. By default, all tracepoint groups are disabled. <code>--tpoint-group-mask</code> can be used to enable a specific subset of tracepoint groups in the application.</p>
+<p>SPDK has an experimental low overhead tracing framework. Tracepoints in this framework are organized into tracepoint groups. By default, all tracepoint groups are disabled. <code>--tpoint-group</code> can be used to enable a specific subset of tracepoint groups in the application.</p>
 <p>Note: Additional documentation on the tracepoint framework is in progress.</p>
 <h3><a class="anchor" id="cmd_arg_deferred_initialization"></a>
 Deferred initialization</h3>

@@ -16,7 +16,13 @@ var bdev__zone_8h =
       [ "SPDK_BDEV_ZONE_STATE_CLOSED", "bdev__zone_8h.html#afe1568ea11e6fe221cc860af5a21c665af946cf25c1f252ae7263520d0d165c90", null ],
       [ "SPDK_BDEV_ZONE_STATE_READ_ONLY", "bdev__zone_8h.html#afe1568ea11e6fe221cc860af5a21c665aac077bfa4616f187cf284b60742a60c3", null ],
       [ "SPDK_BDEV_ZONE_STATE_OFFLINE", "bdev__zone_8h.html#afe1568ea11e6fe221cc860af5a21c665a59470918a7e9d8de42f04e456d733e4d", null ],
-      [ "SPDK_BDEV_ZONE_STATE_EXP_OPEN", "bdev__zone_8h.html#afe1568ea11e6fe221cc860af5a21c665af298cbf560a2bc36273987c71cf988d2", null ]
+      [ "SPDK_BDEV_ZONE_STATE_EXP_OPEN", "bdev__zone_8h.html#afe1568ea11e6fe221cc860af5a21c665af298cbf560a2bc36273987c71cf988d2", null ],
+      [ "SPDK_BDEV_ZONE_STATE_NOT_WP", "bdev__zone_8h.html#afe1568ea11e6fe221cc860af5a21c665a092b8209b3e98b1504a611a1d276b271", null ]
+    ] ],
+    [ "spdk_bdev_zone_type", "bdev__zone_8h.html#a781d04f95d62c6b8cad860fda69da5ed", [
+      [ "SPDK_BDEV_ZONE_TYPE_CNV", "bdev__zone_8h.html#a781d04f95d62c6b8cad860fda69da5eda39979173898cbc83067bd8e827b2c389", null ],
+      [ "SPDK_BDEV_ZONE_TYPE_SEQWR", "bdev__zone_8h.html#a781d04f95d62c6b8cad860fda69da5eda03b5a6dc3010af73acfc2db0f36f424e", null ],
+      [ "SPDK_BDEV_ZONE_TYPE_SEQWP", "bdev__zone_8h.html#a781d04f95d62c6b8cad860fda69da5edafca49398d09303ff2fddb8aadc59dd3b", null ]
     ] ],
     [ "spdk_bdev_get_max_active_zones", "bdev__zone_8h.html#a4b1a401f0d6131597efd6cfad7ccfe8a", null ],
     [ "spdk_bdev_get_max_open_zones", "bdev__zone_8h.html#a7739e6335f06de1565e50d3afc247aa0", null ],

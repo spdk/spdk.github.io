@@ -1,5 +1,10 @@
 var NAVTREEINDEX6 =
 {
+"json_8h.html#a31989bffad10e0f7e0f8534ce4a1b574":[16,0,33,76],
+"json_8h.html#a3555f5e2934c911ffd4d46f7b8671203":[16,0,33,75],
+"json_8h.html#a3b02f60a06a505520f6088b1f9ef6a40":[16,0,33,46],
+"json_8h.html#a3fd7603d5b1f769e75b6331be6f7a052":[16,0,33,17],
+"json_8h.html#a43134cf7b4e2eb1ed0ec9003f1aaaad0":[16,0,33,64],
 "json_8h.html#a441adbd4779f6063926f30e3efff3c19":[16,0,33,73],
 "json_8h.html#a4677d94bb35fe81cd0a1421a9429749d":[16,0,33,6],
 "json_8h.html#a4ae247a07382854c991faeb7131116c1":[16,0,33,49],
@@ -244,10 +249,5 @@ var NAVTREEINDEX6 =
 "jsonrpc.html#rpc_iscsi_target_node_remove_pg_ig_maps":[3,9,6,18],
 "jsonrpc.html#rpc_iscsi_target_node_request_logout":[3,9,6,28],
 "jsonrpc.html#rpc_iscsi_target_node_set_auth":[3,9,6,16],
-"jsonrpc.html#rpc_iscsi_target_node_set_redirect":[3,9,6,27],
-"jsonrpc.html#rpc_log_clear_flag":[3,9,3,22],
-"jsonrpc.html#rpc_log_enable_timestamps":[3,9,3,24],
-"jsonrpc.html#rpc_log_get_flags":[3,9,3,23],
-"jsonrpc.html#rpc_log_get_level":[3,9,3,20],
-"jsonrpc.html#rpc_log_get_print_level":[3,9,3,18]
+"jsonrpc.html#rpc_iscsi_target_node_set_redirect":[3,9,6,27]
 };
