@@ -6471,7 +6471,198 @@ nvmf_set_crdt</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">crdt3   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">Command Retry Delay Time 3   </td></tr>
 </table>
-<h1><a class="anchor" id="jsonrpc_components_vhost_tgt"></a>
+<h1>Vfio-user Target</h1>
+<h2><a class="anchor" id="rpc_vfu_tgt_set_base_path"></a>
+vfu_tgt_set_base_path</h2>
+<p>Set base path of Unix Domain socket file.</p>
+<h3>Parameters</h3>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">path   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Base path   </td></tr>
+</table>
+<h3>Example</h3>
+<p>Example request:</p>
+<div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;params&quot;: {</div>
+<div class="line">    &quot;path&quot;: &quot;/var/run/vfu_tgt&quot;</div>
+<div class="line">  },</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
+<div class="line">  &quot;method&quot;: &quot;vfu_tgt_set_base_path&quot;,</div>
+<div class="line">  &quot;id&quot;: 1</div>
+<div class="line">}</div>
+</div><!-- fragment --><p>Example response:</p>
+<div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
+<div class="line">  &quot;id&quot;: 1,</div>
+<div class="line">  &quot;result&quot;: true</div>
+<div class="line">}</div>
+</div><!-- fragment --><h2><a class="anchor" id="rpc_vfu_virtio_delete_endpoint"></a>
+vfu_virtio_delete_endpoint</h2>
+<p>Delete PCI device via endpoint name.</p>
+<h3>Parameters</h3>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Endpoint name   </td></tr>
+</table>
+<h3>Example</h3>
+<p>Example request:</p>
+<div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;params&quot;: {</div>
+<div class="line">    &quot;name&quot;: &quot;vfu.0&quot;</div>
+<div class="line">  },</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
+<div class="line">  &quot;method&quot;: &quot;vfu_virtio_delete_endpoint&quot;,</div>
+<div class="line">  &quot;id&quot;: 1</div>
+<div class="line">}</div>
+</div><!-- fragment --><p>Example response:</p>
+<div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
+<div class="line">  &quot;id&quot;: 1,</div>
+<div class="line">  &quot;result&quot;: true</div>
+<div class="line">}</div>
+</div><!-- fragment --><h2><a class="anchor" id="rpc_vfu_virtio_create_blk_endpoint"></a>
+vfu_virtio_create_blk_endpoint</h2>
+<p>Create vfio-user virtio-blk PCI endpoint.</p>
+<h3>Parameters</h3>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Endpoint name    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">bdev_name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Block device name    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">cpumask   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">CPU masks    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">num_queues   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">Number of queues    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">qsize   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">Queue size    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">packed_ring   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Enable packed ring   </td></tr>
+</table>
+<h3>Example</h3>
+<p>Example request:</p>
+<div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;params&quot;: {</div>
+<div class="line">    &quot;name&quot;: &quot;vfu.0&quot;,</div>
+<div class="line">    &quot;bdev_name&quot;: &quot;Malloc0&quot;,</div>
+<div class="line">    &quot;cpumask&quot;: &quot;0x2&quot;,</div>
+<div class="line">    &quot;num_queues&quot;: 4,</div>
+<div class="line">    &quot;qsize&quot;: 256</div>
+<div class="line">  },</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
+<div class="line">  &quot;method&quot;: &quot;vfu_virtio_create_blk_endpoint&quot;,</div>
+<div class="line">  &quot;id&quot;: 1</div>
+<div class="line">}</div>
+</div><!-- fragment --><p>Example response:</p>
+<div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
+<div class="line">  &quot;id&quot;: 1,</div>
+<div class="line">  &quot;result&quot;: true</div>
+<div class="line">}</div>
+</div><!-- fragment --><h2><a class="anchor" id="rpc_vfu_virtio_scsi_add_target"></a>
+vfu_virtio_scsi_add_target</h2>
+<p>Add block device to specified SCSI target of vfio-user virtio-scsi PCI endpoint.</p>
+<h3>Parameters</h3>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Endpoint name    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">scsi_target_num   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">SCSI target number    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">bdev_name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Block device name   </td></tr>
+</table>
+<h3>Example</h3>
+<p>Example request:</p>
+<div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;params&quot;: {</div>
+<div class="line">    &quot;name&quot;: &quot;vfu.0&quot;,</div>
+<div class="line">    &quot;scsi_target_num&quot;: 0,</div>
+<div class="line">    &quot;bdev_name&quot;: &quot;Malloc0&quot;</div>
+<div class="line">  },</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
+<div class="line">  &quot;method&quot;: &quot;vfu_virtio_scsi_add_target&quot;,</div>
+<div class="line">  &quot;id&quot;: 1</div>
+<div class="line">}</div>
+</div><!-- fragment --><p>Example response:</p>
+<div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
+<div class="line">  &quot;id&quot;: 1,</div>
+<div class="line">  &quot;result&quot;: true</div>
+<div class="line">}</div>
+</div><!-- fragment --><h2><a class="anchor" id="rpc_vfu_virtio_scsi_remove_target"></a>
+vfu_virtio_scsi_remove_target</h2>
+<p>Remove a SCSI target of vfio-user virtio-scsi PCI endpoint.</p>
+<h3>Parameters</h3>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Endpoint name    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">scsi_target_num   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">SCSI target number   </td></tr>
+</table>
+<h3>Example</h3>
+<p>Example request:</p>
+<div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;params&quot;: {</div>
+<div class="line">    &quot;name&quot;: &quot;vfu.0&quot;,</div>
+<div class="line">    &quot;scsi_target_num&quot;: 0</div>
+<div class="line">  },</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
+<div class="line">  &quot;method&quot;: &quot;vfu_virtio_scsi_remove_target&quot;,</div>
+<div class="line">  &quot;id&quot;: 1</div>
+<div class="line">}</div>
+</div><!-- fragment --><p>Example response:</p>
+<div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
+<div class="line">  &quot;id&quot;: 1,</div>
+<div class="line">  &quot;result&quot;: true</div>
+<div class="line">}</div>
+</div><!-- fragment --><h2><a class="anchor" id="rpc_vfu_virtio_create_scsi_endpoint"></a>
+vfu_virtio_create_scsi_endpoint</h2>
+<p>Create vfio-user virtio-scsi PCI endpoint.</p>
+<h3>Parameters</h3>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Endpoint name    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">cpumask   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">CPU masks    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">num_io_queues   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">Number of IO queues    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">qsize   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">Queue size    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">packed_ring   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Enable packed ring   </td></tr>
+</table>
+<h3>Example</h3>
+<p>Example request:</p>
+<div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;params&quot;: {</div>
+<div class="line">    &quot;name&quot;: &quot;vfu.0&quot;,</div>
+<div class="line">    &quot;cpumask&quot;: &quot;0x2&quot;,</div>
+<div class="line">    &quot;num_io_queues&quot;: 4,</div>
+<div class="line">    &quot;qsize&quot;: 256</div>
+<div class="line">  },</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
+<div class="line">  &quot;method&quot;: &quot;vfu_virtio_create_scsi_endpoint&quot;,</div>
+<div class="line">  &quot;id&quot;: 1</div>
+<div class="line">}</div>
+</div><!-- fragment --><p>Example response:</p>
+<div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
+<div class="line">  &quot;id&quot;: 1,</div>
+<div class="line">  &quot;result&quot;: true</div>
+<div class="line">}</div>
+</div><!-- fragment --><h1><a class="anchor" id="jsonrpc_components_vhost_tgt"></a>
 Vhost Target</h1>
 <p>The following common preconditions need to be met in all target types.</p>
 <p>Controller name will be used to create UNIX domain socket. This implies that name concatenated with vhost socket directory path needs to be valid UNIX socket name.</p>

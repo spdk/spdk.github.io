@@ -31,6 +31,7 @@ var structspdk__bdev =
     [ "required_alignment", "structspdk__bdev.html#a149453df246d04c8640fb567c58a61f0", null ],
     [ "reset_io_drain_timeout", "structspdk__bdev.html#a00db663b395d596c633624ed7554a440", null ],
     [ "split_on_optimal_io_boundary", "structspdk__bdev.html#a85a794d02620e3e8730bb11791c0c592", null ],
+    [ "split_on_write_unit", "structspdk__bdev.html#a19101e574d1a54c9f57f02a5077170b5", null ],
     [ "uuid", "structspdk__bdev.html#a5cc1248944325a12c4cadaa3856f573a", null ],
     [ "write_cache", "structspdk__bdev.html#ac2ccb256340bc2e8b2d6f7793d977c0d", null ],
     [ "write_unit_size", "structspdk__bdev.html#a1d7dcd12f4c3600eac4dbb202bdb4397", null ],

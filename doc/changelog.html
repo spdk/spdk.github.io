@@ -93,42 +93,61 @@ $(document).ready(function(){initNavTree('changelog.html',''); initResizable(); 
 <h1><a class="anchor" id="changelog-v23-01"></a>
 v23.01: (Upcoming Release)</h1>
 <h1>v22.09</h1>
-<h2>json</h2>
-<p>Added <code>spdk_json_find</code> API return errcode: EPROTOTYPE - json not enclosed in {}. <code>spdk_json_find</code> now returns -EPROTOTYPE instead of -ENOENT if the object parameter does not point to a JSON object (i.e. is not enclosed with {}).</p>
-<h2>init</h2>
-<p><code>spdk_subsystem_init_from_json_config</code> now fails if the JSON configuration file is not an object with an array named "subsystems".</p>
+<h2>accel</h2>
+<p>Many names were changed in the accel framework to make them consistent both with themselves and the rest of SPDK. The primary public header file is now named <code><a class="el" href="accel_8h.html" title="Acceleration Framework.">include/spdk/accel.h</a></code>.</p>
+<p>Added a new runtime RPC <code>accel_get_opc_assignments</code> to get a list of current opcode to engine assignments.</p>
+<p>Added a new startup RPC <code>accel_assign_opc</code> to assign/override a specific opcode to an engine.</p>
 <h2>bdev</h2>
 <p>New RPCs <code>bdev_xnvme_create</code> and <code>bdev_xnvme_delete</code> were added to support the xNVMe bdev.</p>
 <p>A new API <code>spdk_bdev_for_each_bdev_io</code> was added to execute the function on the appropriate thread for each bdev_io submitted to the bdev.</p>
 <p>A new API <code>spdk_bdev_get_current_qd</code> was added to measure and return the queue depth from a bdev. This API is available even when queue depth sampling is disabled.</p>
-<h2>sock</h2>
-<p>Added new <code>ssl</code> based socket implementation, the code is located in module/sock/posix. For now we are using hard-coded PSK and only support TLS 1.3</p>
+<p>Added <code>spdk_bdev_seek_data</code>, <code>spdk_bdev_seek_hole</code> and <code>spdk_bdev_io_get_seek_offset</code> functions that start from a given offset and seek for next data or for next hole. At this time only supported by lvol bdev module.</p>
+<p>A new parameter <code>io_drain_timeout</code> has been added to <code><a class="el" href="structspdk__bdev.html">spdk_bdev</a></code> structure. It controls how long a bdev reset must wait for IO to complete prior to issuing a reset to the underlying device. If there is no outstanding IO at the end of that period, the reset is skipped. Best defined for bdevs that share an underlying bdev, such as multiple lvol bdevs sharing an nvme device, to avoid unnecessarily resetting the underlying bdev and affecting other bdevs that are sharing it. Modifying this field is optional. Setting the value to 0 keeps the original behavior to always send resets immediately, even if there is no I/O outstanding.</p>
 <h2>blobstore</h2>
-<p>Reserve space for used_cluster bitmap. The reserved space could be used for blobstore growing in the future.</p>
+<p>Reserve space for <code>used_clusters</code> bitmap. The reserved space could be used for blobstore growing in the future.</p>
 <p>Added <code>is_zeroes</code> operation to <code><a class="el" href="structspdk__bs__dev.html">spdk_bs_dev</a></code>. It allows to detect if logical blocks are backed by zeroes device and do a shortcut in copy-on-write flow by excluding copy part from zeroes device.</p>
+<p>Added <code>spdk_blob_get_next_allocated_io_unit</code> and <code>spdk_blob_get_next_unallocated_io_unit</code> functions that start from a given offset and seek for first io_unit belonging to an allocated cluster or first io_unit belonging to an unallocated cluster.</p>
+<p>Added <code>spdk_bs_grow</code> function to grow blobstore size if the underlying bdev size is increased. This is used by lvol bdev via <code>bdev_lvol_grow_lvstore</code> RPC.</p>
+<h2>daos</h2>
+<p>Added new DAOS bdev module, that creates SPDK block device on top of DAOS DFS. Please see <a href="https://spdk.io/doc/bdev.html#bdev_config_daos">documentation</a> for more details.</p>
+<h2>env</h2>
+<p>Added <code>spdk_pci_register_device_provider</code> and matching <code>SPDK_PCI_REGISTER_DEVICE_PROVIDER</code> functions for registering PCI device providers. That allow the VMD driver to be notified when users want to attach a device under a given BDF and when a device is detached.</p>
+<h2>init</h2>
+<p><code>spdk_subsystem_init_from_json_config</code> now fails if the JSON configuration file is not an object with an array named "subsystems".</p>
+<h2>iscsi</h2>
+<p>Added <code>bdev_iscsi_set_options</code> RPC to modify options of the iSCSI bdev module.</p>
+<h2>json</h2>
+<p>Added <code>spdk_json_find</code> API return errcode: EPROTOTYPE - json not enclosed in {}. <code>spdk_json_find</code> now returns -EPROTOTYPE instead of -ENOENT if the object parameter does not point to a JSON object (i.e. is not enclosed with {}).</p>
 <h2>lvol</h2>
-<p>Add num_md_pages_per_cluster_ratio parameter to the bdev_lvol_create_lvstore RPC. Calculate num_md_pages from num_md_pages_per_cluster_ratio, and pass it to <a class="el" href="structspdk__bs__opts.html">spdk_bs_opts</a>.</p>
+<p>Add <code>num_md_pages_per_cluster_ratio</code> parameter to the <code>bdev_lvol_create_lvstore</code> RPC. Calculate <code>num_md_pages</code> from <code>num_md_pages_per_cluster_ratio</code>, and pass it to <code><a class="el" href="structspdk__bs__opts.html">spdk_bs_opts</a></code>.</p>
+<h2>nvme</h2>
+<p>Added SPDK_NVME_TRANSPORT_CUSTOM_FABRICS to enum <code>spdk_nvme_transport_type</code> to support custom fabric transport. SPDK_NVME_TRANSPORT_CUSTOM was intended to be non-fabric custom transport.</p>
+<p>Added a new function <code>spdk_nvme_ns_cmd_verify</code> to submit a Verify Command to a Namespace.</p>
+<p>Added <code>spdk_nvme_ctrlr_disable_read_changed_ns_list_log_page</code> to allow an application to tell the driver to not read the CHANGED_NS_LIST log page in response to a NS_ATTR_CHANGED AEN. When called the application is required to read this log page instead to clear the AEN.</p>
+<p>Added <code>psk</code> field to <code><a class="el" href="structspdk__nvme__ctrlr__opts.html" title="NVMe controller initialization options.">spdk_nvme_ctrlr_opts</a></code> struct in order to enable SSL socket implementation of TCP connection and set the PSK. Applicable for TCP transport only.</p>
+<h2>raid</h2>
+<p>Renamed the <code>raid5</code> module to <code>raid5f</code> to reflect that it is not a traditional RAID5 implementation - only full stripe writes are supported, partial stripe writes (read-modify-write) are not.</p>
 <h2>rpc</h2>
 <p>Added <code>psk</code> parameter to <code>bdev_nvme_attach_controller</code> RPC in order to enable SSL socket implementation of TCP connection and set the PSK. Applicable for TCP transport only.</p>
 <p>New options <code>enable_ktls</code> and <code>tls_version</code> were added to the <code>sock_impl_set_options</code> structure. New options <code>psk_key</code> and <code>psk_identity</code> were added to the <code>sock_impl_set_options</code> structure.</p>
 <p>Added warning message for <code>bdev_rbd_create</code>, if it is used without -c. <code>bdev_rbd_create()</code> API without specifying -c is deprecated and will be removed in future release.</p>
 <p>Renamed <code>enable_vmd</code> RPC to <code>vmd_enable</code> to make it consistent with our naming scheme of <code>&lt;subsystem&gt;_&lt;action&gt;</code>. For now, the old name is still available, but is marked as deprecated.</p>
 <p>New function <code>spdk_rpc_get_method_state_mask</code> was added to RPC library.</p>
-<h2>raid</h2>
-<p>Renamed the <code>raid5</code> module to <code>raid5f</code> to reflect that it is not a traditional RAID5 implementation - only full stripe writes are supported, partial stripe writes (read-modify-write) are not.</p>
-<h2>accel</h2>
-<p>Many names were changed in the accel framework to make them consistent both with themselves and the rest of SPDK. The primary public header file is now named <code><a class="el" href="accel_8h.html" title="Acceleration Framework.">include/spdk/accel.h</a></code>.</p>
-<p>Added a new runtime RPC <code>accel_get_opc_assignments</code> to get a list of current opcode to engine assignements.</p>
-<p>Added a new startup RPC <code>accel_assign_opc</code> to assign/override a specific opcode to an engine.</p>
-<h2>nvme</h2>
-<p>Added SPDK_NVME_TRANSPORT_CUSTOM_FABRICS to enum spdk_nvme_transport_type to support custom fabric transport. SPDK_NVME_TRANSPORT_CUSTOM was intended to be non-fabric custom transport.</p>
-<p>Added a new function <code>spdk_nvme_ns_cmd_verify</code> to submit a Verify Command to a Namespace.</p>
-<p>Added <code>spdk_nvme_ctrlr_disable_read_changed_ns_list_log_page</code> to allow an application to tell the driver to not read the CHANGED_NS_LIST log page in response to a NS_ATTR_CHANGED AEN. When called the application is required to read this log page instead to clear the AEN.</p>
-<p>Added <code>psk</code> field to <code><a class="el" href="structspdk__nvme__ctrlr__opts.html" title="NVMe controller initialization options.">spdk_nvme_ctrlr_opts</a></code> struct in order to enable SSL socket implementation of TCP connection and set the PSK. Applicable for TCP transport only.</p>
+<h2>sma</h2>
+<p>Extended <code>VolumeParameters</code> with crypto parameters allowing the user to configure crypto when attaching a volume to a device. This interface is now supported by all upstream device types (nvmf-tcp, virtio-blk, vfio-user) using <code>bdev_crypto</code>. Users must specify the crypto engine to use under <code>crypto</code> section in config. It is also possible to register out-of-tree crypto engines by inheriting from the <code>CryptoEngine</code> class.</p>
+<p>Added two new methods: <code>SetQos</code> and <code>GetQosCapabilities</code> allowing the user to configure QoS on a per-device or per-volume level. Not all QoS settings have to be supported by each device, so users can use <code>GetQosCapabilities</code> to query them for that. All upstream device types support QoS on a per-volume level using bdev layer's QoS mechanism.</p>
+<h2>sock</h2>
+<p>Added new <code>ssl</code> based socket implementation, the code is located in <code>module/sock/posix</code>. For now we are using hard-coded PSK and only support TLS 1.3.</p>
 <h2>util</h2>
 <p>Added new functions: <code>spdk_hexlify</code> and <code>spdk_unhexlify</code>.</p>
+<p>A new API <code>spdk_xor_gen</code> was added to generate XOR from multiple source buffers. It is going to be used by <code>raid5f</code> for calculating parity.</p>
+<h2>vfu_tgt</h2>
+<p>Added vfu_tgt library abstraction based on libvfio-user for PCI device emulation. Besides the NVMe device emulation, its now possible to emulate virtio-blk and virtio-scsi devices.</p>
 <h2>virtio</h2>
 <p>virtio-vhost-user no longer tries to support dynamic memory allocation. The vhost target does not support the high rate of SET_MEM_TABLE vhost messages that result from dynamic memory allocation, so a virtio-vhost-user device will now present an ERRLOG, assert, and skip the SET_MEM_TABLE vhost message if a memory notification is received outside of the normal device start/stop. Applications using the virtio library in vhost-user mode should now pre-allocate the application's memory using the -s/&ndash;mem-size option and use single shared memory file segments using the -g/&ndash;single-file-segments option.</p>
+<p>Added <code>vfio-user</code> transport type for virtio-blk and virtio-scsi devices.</p>
+<h2>vmd</h2>
+<p>Fixed hotplug when a device is inserted in a slot in which a disk was already enumerated previously. Added two new RPCs: <code>vmd_remove_device</code> simulating a hotremove, and <code>vmd_rescan</code>, which rescans all buses managed by the VMD driver and hotplugs all newfound devices.</p>
 <h1>v22.05</h1>
 <h2>sock</h2>
 <p>A new option <code>ack_timeout</code> was added to the <code><a class="el" href="structspdk__sock__opts.html" title="Spdk socket initialization options.">spdk_sock_opts</a></code> structure.</p>

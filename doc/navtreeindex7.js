@@ -51,6 +51,12 @@ var NAVTREEINDEX7 =
 "jsonrpc.html#rpc_trace_enable_tpoint_group":[3,9,3,12],
 "jsonrpc.html#rpc_trace_get_tpoint_group_mask":[3,9,3,16],
 "jsonrpc.html#rpc_trace_set_tpoint_mask":[3,9,3,14],
+"jsonrpc.html#rpc_vfu_tgt_set_base_path":[3,9,7,20],
+"jsonrpc.html#rpc_vfu_virtio_create_blk_endpoint":[3,9,7,22],
+"jsonrpc.html#rpc_vfu_virtio_create_scsi_endpoint":[3,9,7,25],
+"jsonrpc.html#rpc_vfu_virtio_delete_endpoint":[3,9,7,21],
+"jsonrpc.html#rpc_vfu_virtio_scsi_add_target":[3,9,7,23],
+"jsonrpc.html#rpc_vfu_virtio_scsi_remove_target":[3,9,7,24],
 "jsonrpc.html#rpc_vhost_controller_set_coalescing":[3,9,8,0],
 "jsonrpc.html#rpc_vhost_create_blk_controller":[3,9,8,5],
 "jsonrpc.html#rpc_vhost_create_scsi_controller":[3,9,8,1],
@@ -243,11 +249,5 @@ var NAVTREEINDEX7 =
 "nvme.html#nvme_multi_process":[7,0,6],
 "nvme.html#nvme_multi_process_configuration":[7,0,6,0],
 "nvme.html#nvme_multi_process_limitations":[7,0,6,1],
-"nvme.html#nvme_perf":[7,0,2,2],
-"nvme.html#nvme_scaling":[7,0,4,0,1],
-"nvme.html#nvme_toc":[7,0,0],
-"nvme_8h.html":[16,0,40],
-"nvme_8h.html#a006a6050d45feefadbf0ce978ca009de":[16,0,40,69],
-"nvme_8h.html#a018f3b986b4345ee0c6931be9718c163":[16,0,40,37],
-"nvme_8h.html#a018f3b986b4345ee0c6931be9718c163a4e691401f3709b7cd66bd32c28ae109b":[16,0,40,37,3]
+"nvme.html#nvme_perf":[7,0,2,2]
 };
