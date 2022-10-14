@@ -91,9 +91,8 @@ $(document).ready(function(){initNavTree('nvmf_multipath_howto.html',''); initRe
 <div class="contents">
 <div class="textblock"><p><a class="anchor" id="md_nvmf_multipath_howto"></a> This HOWTO provides step-by-step instructions for setting-up a simple SPDK deployment and testing multipath. It demonstrates configuring path preferences with Asymmetric Namespace Access (ANA), as well as round-robin path load balancing.</p>
 <h1>Build SPDK on both the initiator and target servers</h1>
-<p>Clone the repo: </p><div class="fragment"><div class="line">git clone https://github.com/spdk/spdk</div>
+<p>Clone the repo: </p><div class="fragment"><div class="line">git clone https://github.com/spdk/spdk --recursive</div>
 </div><!-- fragment --><p>Configure and build SPDK: </p><div class="fragment"><div class="line">cd spdk/</div>
-<div class="line">git submodule update --init</div>
 <div class="line">./configure</div>
 <div class="line">make -j16</div>
 </div><!-- fragment --><h1>Setup hugepages</h1>
