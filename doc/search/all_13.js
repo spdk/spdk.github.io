@@ -31,7 +31,7 @@ var searchData=
   ['spdk_20porting_20guide_705',['SPDK Porting Guide',['../porting.html',1,'concepts']]],
   ['spdk_20structural_20overview_706',['SPDK Structural Overview',['../overview.html',1,'concepts']]],
   ['spdk_5faccel_5fassign_5fopc_707',['spdk_accel_assign_opc',['../accel_8h.html#a4d8b25b197af0a838d38e2f12151dcc8',1,'accel.h']]],
-  ['spdk_5faccel_5fcompletion_5fcb_708',['spdk_accel_completion_cb',['../accel_8h.html#a48593db52501b3dec9233f7112d37872',1,'accel.h']]],
+  ['spdk_5faccel_5fcompletion_5fcb_708',['spdk_accel_completion_cb',['../accel_8h.html#a6ba836b7b128829ba185eadb2c60476a',1,'accel.h']]],
   ['spdk_5faccel_5ffini_5fcb_709',['spdk_accel_fini_cb',['../accel_8h.html#a545ea1cc4167924acee2803aed824877',1,'accel.h']]],
   ['spdk_5faccel_5ffinish_710',['spdk_accel_finish',['../accel_8h.html#a7a75cbac98c1ed584e82d0172aa0bb81',1,'accel.h']]],
   ['spdk_5faccel_5fget_5fio_5fchannel_711',['spdk_accel_get_io_channel',['../accel_8h.html#a947dd411da094c21407afebfa6a38cdb',1,'accel.h']]],

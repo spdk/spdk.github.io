@@ -1,7 +1,7 @@
 var accel_8h =
 [
     [ "ACCEL_FLAG_PERSISTENT", "accel_8h.html#a30934de571302d9de3dd14d657172896", null ],
-    [ "spdk_accel_completion_cb", "accel_8h.html#a48593db52501b3dec9233f7112d37872", null ],
+    [ "spdk_accel_completion_cb", "accel_8h.html#a6ba836b7b128829ba185eadb2c60476a", null ],
     [ "spdk_accel_fini_cb", "accel_8h.html#a545ea1cc4167924acee2803aed824877", null ],
     [ "accel_opcode", "accel_8h.html#a009c73029ad0ef1eed6de0ca4406bf5b", [
       [ "ACCEL_OPC_COPY", "accel_8h.html#a009c73029ad0ef1eed6de0ca4406bf5ba4cf097e8c8047d09af7e6536ab786375", null ],
