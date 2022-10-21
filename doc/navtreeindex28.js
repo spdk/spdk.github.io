@@ -1,5 +1,6 @@
 var NAVTREEINDEX28 =
 {
+"structspdk__trace__history.html":[15,0,357],
 "structspdk__trace__history.html#a09f645e9d5c19fb4e4fe71b4faaa3951":[15,0,357,0],
 "structspdk__trace__history.html#a57438d2b62e8bef76601a2b881345463":[15,0,357,3],
 "structspdk__trace__history.html#a5d36fc5a17dddc7e14b32aa1598a7ee8":[15,0,357,4],
@@ -248,6 +249,5 @@ var NAVTREEINDEX28 =
 "trace_8h.html#a27e155bb110177b48dd7e3b20b754021":[16,0,58,18],
 "trace_8h.html#a2f65bc76d39a775d401996a01bcba195":[16,0,58,59],
 "trace_8h.html#a31bfd9fba3352fdc899b3b5033481b27":[16,0,58,35],
-"trace_8h.html#a346327ec1addd7eeb87963b40cec1821":[16,0,58,48],
-"trace_8h.html#a3c9eb705c608a7ffb0724dd7520d61ad":[16,0,58,43]
+"trace_8h.html#a346327ec1addd7eeb87963b40cec1821":[16,0,58,48]
 };

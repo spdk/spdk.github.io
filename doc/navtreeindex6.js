@@ -100,6 +100,7 @@ var NAVTREEINDEX6 =
 "jsonrpc.html#rpc_bdev_crypto_delete":[3,9,5,14],
 "jsonrpc.html#rpc_bdev_daos_create":[3,9,12,10],
 "jsonrpc.html#rpc_bdev_daos_delete":[3,9,12,11],
+"jsonrpc.html#rpc_bdev_daos_resize":[3,9,12,12],
 "jsonrpc.html#rpc_bdev_delay_create":[3,9,5,54],
 "jsonrpc.html#rpc_bdev_delay_delete":[3,9,5,55],
 "jsonrpc.html#rpc_bdev_delay_update_latency":[3,9,5,56],
@@ -248,6 +249,5 @@ var NAVTREEINDEX6 =
 "jsonrpc.html#rpc_iscsi_target_node_add_pg_ig_maps":[3,9,6,17],
 "jsonrpc.html#rpc_iscsi_target_node_remove_pg_ig_maps":[3,9,6,18],
 "jsonrpc.html#rpc_iscsi_target_node_request_logout":[3,9,6,28],
-"jsonrpc.html#rpc_iscsi_target_node_set_auth":[3,9,6,16],
-"jsonrpc.html#rpc_iscsi_target_node_set_redirect":[3,9,6,27]
+"jsonrpc.html#rpc_iscsi_target_node_set_auth":[3,9,6,16]
 };

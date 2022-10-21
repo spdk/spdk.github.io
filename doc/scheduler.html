@@ -104,7 +104,8 @@ $(document).ready(function(){initNavTree('scheduler.html',''); initResizable(); 
 <p>The scheduler in use may be controlled by JSON-RPC. Please use the <a href="jsonrpc.html#rpc_framework_set_scheduler">framework_set_scheduler</a> RPC to switch between schedulers or change their options. Currently only dynamic scheduler supports changing its parameters.</p>
 <p><a href="spdk_top.html#spdk_top">spdk_top</a> is a useful tool to observe the behavior of schedulers in different scenarios and workloads.</p>
 <h2>static [default]</h2>
-<p>The <code>static</code> scheduler is the default scheduler and does no dynamic scheduling. Lightweight threads are distributed round-robin among reactors, respecting their requested cpu_mask, and then they are never moved. This is equivalent to the previous behavior of the SPDK event/application framework.</p>
+<p>The <code>static</code> scheduler is the default scheduler and does no dynamic scheduling. Lightweight threads are distributed round-robin among reactors, respecting their requested cpu_mask, only at application startup, and then they are never moved. This is equivalent to the previous behavior of the SPDK event/application framework.</p>
+<p>The <code>static</code> scheduler cannot be re-enabled after a different scheduler has been selected, because currently there is no way to save original SPDK thread distribution configuration.</p>
 <h2>dynamic</h2>
 <p>The <code>dynamic</code> scheduler is designed for power saving and reduction of CPU utilization, especially in cases where workloads show large variations over time. In SPDK thread and core workloads are measured in CPU ticks. Those values are then compared with all the ticks since the last check, which allows to calculate <code>busy time</code>.</p>
 <p><code>busy time = busy ticks / (busy tick + idle tick) * 100 %</code></p>

@@ -394,7 +394,10 @@ DAOS bdev</h1>
 <p>Example command for creating daos bdev:</p>
 <p><code>rpc.py bdev_daos_create daosdev0 test-pool test-cont 64 4096</code></p>
 <p>Example command for removing daos bdev:</p>
-<p><code>rpc.py bdev_daos_delete daosdev0</code> </p>
+<p><code>rpc.py bdev_daos_delete daosdev0</code></p>
+<p>To resize a bdev use the bdev_daos_resize command.</p>
+<p><code>rpc.py bdev_daos_resize daosdev0 8192</code></p>
+<p>This command will resize the daosdev0 bdev to 8192 MiB. </p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->

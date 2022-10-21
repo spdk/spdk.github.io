@@ -1,5 +1,6 @@
 var NAVTREEINDEX7 =
 {
+"jsonrpc.html#rpc_iscsi_target_node_set_redirect":[3,9,6,27],
 "jsonrpc.html#rpc_log_clear_flag":[3,9,3,22],
 "jsonrpc.html#rpc_log_enable_timestamps":[3,9,3,24],
 "jsonrpc.html#rpc_log_get_flags":[3,9,3,23],
@@ -248,6 +249,5 @@ var NAVTREEINDEX7 =
 "nvme.html#nvme_memory_usage":[7,0,4,1],
 "nvme.html#nvme_multi_process":[7,0,6],
 "nvme.html#nvme_multi_process_configuration":[7,0,6,0],
-"nvme.html#nvme_multi_process_limitations":[7,0,6,1],
-"nvme.html#nvme_perf":[7,0,2,2]
+"nvme.html#nvme_multi_process_limitations":[7,0,6,1]
 };

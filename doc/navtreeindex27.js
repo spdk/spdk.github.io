@@ -1,5 +1,6 @@
 var NAVTREEINDEX27 =
 {
+"structspdk__scheduler__core__info.html#a7e24f79a7b523a4d0f84c712adf7176d":[15,0,327,1],
 "structspdk__scheduler__core__info.html#aa69cd749852dda353a5aac6892f0dba9":[15,0,327,4],
 "structspdk__scheduler__core__info.html#ab3fb288d33ba421b58cd29dfcae12cd9":[15,0,327,7],
 "structspdk__scheduler__core__info.html#ad883a8c239297c5cb948b7785c4043b9":[15,0,327,5],
@@ -248,6 +249,5 @@ var NAVTREEINDEX27 =
 "structspdk__trace__flags.html#afefc53c12cc20565e7d7e8c49775178f":[15,0,355,2],
 "structspdk__trace__histories.html":[15,0,356],
 "structspdk__trace__histories.html#a66eb3d8f3f7fdcc8ee0eb3764db0d7e7":[15,0,356,1],
-"structspdk__trace__histories.html#a7aefcda50154e7d20f2c0bfdb66285d2":[15,0,356,0],
-"structspdk__trace__history.html":[15,0,357]
+"structspdk__trace__histories.html#a7aefcda50154e7d20f2c0bfdb66285d2":[15,0,356,0]
 };

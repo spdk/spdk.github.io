@@ -398,7 +398,8 @@ var user_guides =
         [ "bdev_nvme_add_error_injection", "jsonrpc.html#rpc_bdev_nvme_add_error_injection", null ],
         [ "bdev_nvme_remove_error_injection", "jsonrpc.html#rpc_bdev_nvme_remove_error_injection", null ],
         [ "bdev_daos_create", "jsonrpc.html#rpc_bdev_daos_create", null ],
-        [ "bdev_daos_delete", "jsonrpc.html#rpc_bdev_daos_delete", null ]
+        [ "bdev_daos_delete", "jsonrpc.html#rpc_bdev_daos_delete", null ],
+        [ "bdev_daos_resize", "jsonrpc.html#rpc_bdev_daos_resize", null ]
       ] ]
     ] ],
     [ "JSON-RPC Remote access", "jsonrpc_proxy.html", null ],
