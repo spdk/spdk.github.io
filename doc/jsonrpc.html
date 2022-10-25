@@ -8646,8 +8646,11 @@ bdev_daos_create</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">num_blocks   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">Number of blocks    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">uuid   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">UUID of new bdev   </td></tr>
+<td class="markdownTableBodyNone">uuid   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">UUID of new bdev    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">oclass   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">DAOS object class (default SX)   </td></tr>
 </table>
+<p>To find more about various object classes please visit <a href="https://github.com/daos-stack/daos/blob/master/src/object/README.md">DAOS documentation</a>. Please note, that DAOS bdev module uses the same CLI flag notation as <code>dmg</code> and <code>daos</code> commmands, for instance, <code>SX</code> or <code>EC_4P2G2</code> rather than in DAOS header file <code>OC_SX</code> or <code>OC_EC_4P2G2</code>.</p>
 <h3>Result</h3>
 <p>Name of newly created bdev.</p>
 <h3>Example</h3>
@@ -8659,6 +8662,7 @@ bdev_daos_create</h2>
 <div class="line">    &quot;name&quot;: &quot;daosdev0&quot;,</div>
 <div class="line">    &quot;pool&quot;: &quot;test-pool&quot;,</div>
 <div class="line">    &quot;cont&quot;: &quot;test-cont&quot;,</div>
+<div class="line">    &quot;oclass&quot;: &quot;EC_4P2G2&quot;</div>
 <div class="line">  },</div>
 <div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
 <div class="line">  &quot;method&quot;: &quot;bdev_daos_create&quot;,</div>
