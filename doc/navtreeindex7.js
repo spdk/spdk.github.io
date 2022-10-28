@@ -1,5 +1,9 @@
 var NAVTREEINDEX7 =
 {
+"jsonrpc.html#rpc_iscsi_target_node_add_pg_ig_maps":[3,9,6,17],
+"jsonrpc.html#rpc_iscsi_target_node_remove_pg_ig_maps":[3,9,6,18],
+"jsonrpc.html#rpc_iscsi_target_node_request_logout":[3,9,6,28],
+"jsonrpc.html#rpc_iscsi_target_node_set_auth":[3,9,6,16],
 "jsonrpc.html#rpc_iscsi_target_node_set_redirect":[3,9,6,27],
 "jsonrpc.html#rpc_log_clear_flag":[3,9,3,22],
 "jsonrpc.html#rpc_log_enable_timestamps":[3,9,3,24],
@@ -245,9 +249,5 @@ var NAVTREEINDEX7 =
 "nvme.html#nvme_hotplug":[7,0,7],
 "nvme.html#nvme_interface":[7,0,3],
 "nvme.html#nvme_intro":[7,0,1],
-"nvme.html#nvme_io_submission":[7,0,4,0],
-"nvme.html#nvme_memory_usage":[7,0,4,1],
-"nvme.html#nvme_multi_process":[7,0,6],
-"nvme.html#nvme_multi_process_configuration":[7,0,6,0],
-"nvme.html#nvme_multi_process_limitations":[7,0,6,1]
+"nvme.html#nvme_io_submission":[7,0,4,0]
 };

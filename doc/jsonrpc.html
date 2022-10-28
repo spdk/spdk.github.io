@@ -1498,7 +1498,9 @@ bdev_get_iostat</h2>
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Block device name   </td></tr>
+<td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Block device name    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">per_channel   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">bool   </td><td class="markdownTableBodyNone">Display per channel data for specified block device.   </td></tr>
 </table>
 <h3>Response</h3>
 <p>The response is an array of objects containing I/O statistics of the requested block devices.</p>
@@ -1509,7 +1511,8 @@ bdev_get_iostat</h2>
 <div class="line">  &quot;id&quot;: 1,</div>
 <div class="line">  &quot;method&quot;: &quot;bdev_get_iostat&quot;,</div>
 <div class="line">  &quot;params&quot;: {</div>
-<div class="line">    &quot;name&quot;: &quot;Nvme0n1&quot;</div>
+<div class="line">    &quot;name&quot;: &quot;Nvme0n1&quot;,</div>
+<div class="line">    &quot;per_channel&quot;: false</div>
 <div class="line">  }</div>
 <div class="line">}</div>
 </div><!-- fragment --><p>Example response:</p>
@@ -2217,6 +2220,7 @@ bdev_ocf_set_seqcutoff</h2>
 </div><!-- fragment --><h2><a class="anchor" id="rpc_bdev_malloc_create"></a>
 bdev_malloc_create</h2>
 <p>Construct <a class="el" href="bdev.html#bdev_config_malloc">Malloc bdev</a></p>
+<p>The <code>dif_type</code> parameter can have 0, 1, 2, or 3, and controls the check of the guard tag and the reference tag. If the <code>dif_type</code> is 1, 2, or 3, the malloc bdev compares the guard tag to the CRC-16 computed over the block data. If the <code>dif_type</code> is 1 or 2, the malloc bdev compares the reference tag to the computed reference tag. The computed reference tag for the first block of the I/O is the <code>init_ref_tag</code> of the DIF context, and the computed reference tag is incremented for each subsequent block. If the <code>dif_type</code> is 3, the malloc bdev does not check the reference tag. The application tag is not checked by the malloc bdev because the current block device API does not expose it to the upper layer yet.</p>
 <h3>Parameters</h3>
 <table class="markdownTable">
 <tr class="markdownTableHead">
@@ -2224,13 +2228,21 @@ bdev_malloc_create</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Bdev name to use    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">block_size   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">Block size in bytes -must be multiple of 512    </td></tr>
+<td class="markdownTableBodyNone">block_size   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">Data block size in bytes -must be multiple of 512    </td></tr>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">num_blocks   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">Number of blocks    </td></tr>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">uuid   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">UUID of new bdev    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">optimal_io_boundary   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">Split on optimal IO boundary, in number of blocks, default 0   </td></tr>
+<td class="markdownTableBodyNone">optimal_io_boundary   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">Split on optimal IO boundary, in number of blocks, default 0    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">md_size   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">Metadata size for this bdev (0, 8, 16, 32, 64, or 128). Default is 0.    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">md_interleave   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Metadata location, interleaved if true, and separated if false. Default is false.    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">dif_type   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">Protection information type. Parameter &ndash;md-size needs to be set along &ndash;dif-type. Default=0 - no protection.    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">dif_is_head_of_md   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Protection information is in the first 8 bytes of metadata. Default=false.   </td></tr>
 </table>
 <h3>Result</h3>
 <p>Name of newly created bdev.</p>

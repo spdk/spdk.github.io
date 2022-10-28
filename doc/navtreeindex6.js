@@ -1,5 +1,9 @@
 var NAVTREEINDEX6 =
 {
+"json_8h.html#a2946cc64851a646bf63f5ddd9c65f9ca":[16,0,33,45],
+"json_8h.html#a29b41db16a7efa38cfafb86241059c9b":[16,0,33,65],
+"json_8h.html#a2e907bd02a906de97d064dcac72a4cb5":[16,0,33,10],
+"json_8h.html#a308fa2793e4472ca8740f23cd66ce64a":[16,0,33,42],
 "json_8h.html#a31989bffad10e0f7e0f8534ce4a1b574":[16,0,33,76],
 "json_8h.html#a3555f5e2934c911ffd4d46f7b8671203":[16,0,33,75],
 "json_8h.html#a3b02f60a06a505520f6088b1f9ef6a40":[16,0,33,46],
@@ -245,9 +249,5 @@ var NAVTREEINDEX6 =
 "jsonrpc.html#rpc_iscsi_set_discovery_auth":[3,9,6,3],
 "jsonrpc.html#rpc_iscsi_set_options":[3,9,6,0],
 "jsonrpc.html#rpc_iscsi_start_portal_group":[3,9,6,22],
-"jsonrpc.html#rpc_iscsi_target_node_add_lun":[3,9,6,26],
-"jsonrpc.html#rpc_iscsi_target_node_add_pg_ig_maps":[3,9,6,17],
-"jsonrpc.html#rpc_iscsi_target_node_remove_pg_ig_maps":[3,9,6,18],
-"jsonrpc.html#rpc_iscsi_target_node_request_logout":[3,9,6,28],
-"jsonrpc.html#rpc_iscsi_target_node_set_auth":[3,9,6,16]
+"jsonrpc.html#rpc_iscsi_target_node_add_lun":[3,9,6,26]
 };

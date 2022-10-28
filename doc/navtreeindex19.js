@@ -1,5 +1,9 @@
 var NAVTREEINDEX19 =
 {
+"structspdk__gpt__header.html#af82bb3a9b39e405b7f786cd50d56a608":[15,0,84,4],
+"structspdk__gpt__partition__entry.html":[15,0,85],
+"structspdk__gpt__partition__entry.html#a14e1a76354dc7b7e79405a73357151d0":[15,0,85,6],
+"structspdk__gpt__partition__entry.html#a21abaa88f93737d1139db1f75b18e4ca":[15,0,85,2],
 "structspdk__gpt__partition__entry.html#a3320b98cb8581796faaee58ccc26c4ab":[15,0,85,1],
 "structspdk__gpt__partition__entry.html#a43d1cdb9d84c50277025c9bc92e822e7":[15,0,85,9],
 "structspdk__gpt__partition__entry.html#a599b20cdd7340e7e6eb078fd03a49119":[15,0,85,7],
@@ -245,9 +249,5 @@ var NAVTREEINDEX19 =
 "structspdk__mbr__partition__entry.html#ab96ad021e0366090b99b89ef32784fe3":[15,0,106,1],
 "structspdk__mbr__partition__entry.html#ad49a544b0562f2c42fbe097bed2a3209":[15,0,106,6],
 "structspdk__mbr__partition__entry.html#ae82f31d2ed8398960fee591567137c73":[15,0,106,5],
-"structspdk__mbr__partition__entry.html#af28d34fafdf0c27e70cefdf1a6e5fbeb":[15,0,106,3],
-"structspdk__mem__map__ops.html":[15,0,107],
-"structspdk__mem__map__ops.html#a08ac3d51bc6941f140d262e02e233f55":[15,0,107,1],
-"structspdk__mem__map__ops.html#a31f979613595b1d324ffd58ff60cd69d":[15,0,107,0],
-"structspdk__memory__domain__ctx.html":[15,0,108]
+"structspdk__mbr__partition__entry.html#af28d34fafdf0c27e70cefdf1a6e5fbeb":[15,0,106,3]
 };
