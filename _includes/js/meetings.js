@@ -1,7 +1,8 @@
 var euroDate = new Date(Date.UTC(2018, 3, 3, 15, 0, 0, 0));
-var asiaDate = new Date(Date.UTC(2018, 3, 12, 4, 0, 0, 0));
 var euroBugDate = new Date(Date.UTC(2018, 3, 10, 15, 0, 0, 0));
 var asiaBugDate = new Date(Date.UTC(2018, 3, 19, 4, 0, 0, 0));
+var asiaDate = new Date(Date.UTC(2022, 10, 3, 4, 0, 0, 0));
+var asiaPRCDate = new Date(Date.UTC(2022, 10, 17, 4, 0, 0, 0));
 
 // Holiday list. Should be of form [date, recurring=true/false]
 var USHolidays = [[ new Date(2018, 11, 24), true ], //Christmas Eve
@@ -73,7 +74,11 @@ while (euroDate < currentDate || compareHoliday(euroDate, USHolidays, USTimeZone
 }
 
 while (asiaDate < currentDate || compareHoliday(asiaDate, USHolidays, USTimeZone) || compareHoliday(asiaDate, AsiaHolidays, AsiaTimeZone)) {
-        asiaDate.setDate(asiaDate.getDate() + 14);
+        asiaDate.setDate(asiaDate.getDate() + 28);
+}
+
+while (asiaPRCDate < currentDate || compareHoliday(asiaPRCDate, USHolidays, USTimeZone) || compareHoliday(asiaPRCDate, AsiaHolidays, AsiaTimeZone)) {
+        asiaPRCDate.setDate(asiaPRCDate.getDate() + 28);
 }
 
 while (asiaBugDate < currentDate || compareHoliday(asiaBugDate, USHolidays, USTimeZone) || compareHoliday(asiaBugDate, AsiaHolidays, AsiaTimeZone)) {
@@ -88,10 +93,12 @@ while (euroBugDate < currentDate || compareHoliday(euroBugDate, USHolidays, USTi
 // date at the beginning of this file and the calculated address based on the current date/time.
 euroDate = new Date(Date.UTC(euroDate.getUTCFullYear(), euroDate.getUTCMonth(), euroDate.getUTCDate(), 15, 0, 0, 0));
 asiaDate = new Date(Date.UTC(asiaDate.getUTCFullYear(), asiaDate.getUTCMonth(), asiaDate.getUTCDate(), 4, 0, 0, 0));
+asiaPRCDate = new Date(Date.UTC(asiaPRCDate.getUTCFullYear(), asiaPRCDate.getUTCMonth(), asiaPRCDate.getUTCDate(), 4, 0, 0, 0));
 asiaBugDate = new Date(Date.UTC(asiaBugDate.getUTCFullYear(), asiaBugDate.getUTCMonth(), asiaBugDate.getUTCDate(), 4, 0, 0, 0));
 euroBugDate = new Date(Date.UTC(euroBugDate.getUTCFullYear(), euroBugDate.getUTCMonth(), euroBugDate.getUTCDate(), 15, 0, 0, 0));
 
 document.getElementById("euro-mtg").textContent = formatDate(euroDate);
 document.getElementById("asia-mtg").textContent = formatDate(asiaDate);
+document.getElementById("asia-prc-mtg").textContent = formatDate(asiaPRCDate);
 document.getElementById("asia-bug-mtg").textContent = formatDate(asiaBugDate);
 document.getElementById("euro-bug-mtg").textContent = formatDate(euroBugDate);

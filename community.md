@@ -44,8 +44,10 @@ is more efficient than email or Slack. The meetings are hosted using Teams.
 
 There is a community meeting each week at alternating time slots selected so
 that one week is a Euro-friendly time and the following week is an
-Asia-friendly time. Please see the bottom of this [page](#holidays) for holidays
-when regularly scheduled community meetings will be cancelled.
+Asia-friendly time. For Asia-friendly time slots Community meetings, one Community
+meeting is held in English, and the following is held in Mandarin for PRC only.
+Please see the bottom of this [page](#holidays) for holidays when regularly
+scheduled community meetings will be cancelled.
 
 Please post proposed topics for community meetings on [Trello](https://trello.com/b/DvM7XayJ)
 prior to the meeting. If you don't have a Trello login, sign up and then ask in Slack
@@ -68,17 +70,20 @@ Or audio only: +1 916 245 6934 (ID: 809 414 511#)
 
 Or audio only: +1 916 245 6934 (ID: 664 940 190#)
 
+## Next Asia-Friendly Community Meeting (In English)
+<div id="asia-mtg"></div>
+
 ## Next Euro-Friendly Community Meeting
 <div id="euro-mtg"></div>
 
-## Next Asia-Friendly Community Meeting
-<div id="asia-mtg"></div>
+## Next Asia-Friendly Github Issue Review Meeting
+<div id="asia-bug-mtg"></div>
 
 ## Next Euro-Friendly Github Issue Review Meeting
 <div id="euro-bug-mtg"></div>
 
-## Next Asia-Friendly Github Issue Review Meeting
-<div id="asia-bug-mtg"></div>
+## Next PRC Community Meeting (In Mandarin)
+<div id="asia-prc-mtg"></div>
 
 <a id="contributing"></a>
 # Contributing
