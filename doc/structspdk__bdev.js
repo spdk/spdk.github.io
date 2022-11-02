@@ -12,6 +12,7 @@ var structspdk__bdev =
     [ "fn_table", "structspdk__bdev.html#a1c3d6e810863f31e2301949bfd1c5d37", null ],
     [ "internal", "structspdk__bdev.html#a027888b234afc8af8282da025bec83fb", null ],
     [ "max_active_zones", "structspdk__bdev.html#accb598558c9e263c57cde4cf3c919bbb", null ],
+    [ "max_copy", "structspdk__bdev.html#a69c77ed32b1b714060141d1f3cddb6a3", null ],
     [ "max_num_segments", "structspdk__bdev.html#ad498826a1d9197050bd0ed110df96fb0", null ],
     [ "max_open_zones", "structspdk__bdev.html#a9766b9a39169827156c768f78b940977", null ],
     [ "max_segment_size", "structspdk__bdev.html#af33e3553f5bb1f626d137859c6933c64", null ],

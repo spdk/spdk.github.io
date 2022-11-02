@@ -1,5 +1,9 @@
 var NAVTREEINDEX8 =
 {
+"nvme.html#nvme_hotplug":[7,0,7],
+"nvme.html#nvme_interface":[7,0,3],
+"nvme.html#nvme_intro":[7,0,1],
+"nvme.html#nvme_io_submission":[7,0,4,0],
 "nvme.html#nvme_memory_usage":[7,0,4,1],
 "nvme.html#nvme_multi_process":[7,0,6],
 "nvme.html#nvme_multi_process_configuration":[7,0,6,0],
@@ -245,9 +249,5 @@ var NAVTREEINDEX8 =
 "nvme_8h.html#afff8aaa490f2db1119b20e36253196b7":[16,0,40,21],
 "nvme__intel_8h.html":[16,0,41],
 "nvme__intel_8h.html#a166b786328e36682c37d1ca49ee4ce27":[16,0,41,16],
-"nvme__intel_8h.html#a1999e1ef8f77462371e478f174682944":[16,0,41,22],
-"nvme__intel_8h.html#a2349b0999c0a30bbb19c39c52405b4b5":[16,0,41,12],
-"nvme__intel_8h.html#a2349b0999c0a30bbb19c39c52405b4b5a0049d4b2057b560220b9eeceeb0045ba":[16,0,41,12,4],
-"nvme__intel_8h.html#a2349b0999c0a30bbb19c39c52405b4b5a30fe108325f9094af20bf18b8539c210":[16,0,41,12,1],
-"nvme__intel_8h.html#a2349b0999c0a30bbb19c39c52405b4b5a89aa79d2d9c9ab552f1a97cc9c56c9df":[16,0,41,12,3]
+"nvme__intel_8h.html#a1999e1ef8f77462371e478f174682944":[16,0,41,22]
 };

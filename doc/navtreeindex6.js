@@ -1,5 +1,9 @@
 var NAVTREEINDEX6 =
 {
+"json_8h.html#a1ed6b4728ebf6c75087864dd3e2256a6":[16,0,33,13],
+"json_8h.html#a1eef0cdf2426dc5fc8f860b94e26453f":[16,0,33,36],
+"json_8h.html#a223071134f0ca94d171d9810e2bdb378":[16,0,33,44],
+"json_8h.html#a282fefd919b6a7df96d06d182621b7ae":[16,0,33,3],
 "json_8h.html#a2946cc64851a646bf63f5ddd9c65f9ca":[16,0,33,45],
 "json_8h.html#a29b41db16a7efa38cfafb86241059c9b":[16,0,33,65],
 "json_8h.html#a2e907bd02a906de97d064dcac72a4cb5":[16,0,33,10],
@@ -245,9 +249,5 @@ var NAVTREEINDEX6 =
 "jsonrpc.html#rpc_iscsi_get_target_nodes":[3,9,6,14],
 "jsonrpc.html#rpc_iscsi_initiator_group_add_initiators":[3,9,6,12],
 "jsonrpc.html#rpc_iscsi_initiator_group_remove_initiators":[3,9,6,13],
-"jsonrpc.html#rpc_iscsi_portal_group_set_auth":[3,9,6,24],
-"jsonrpc.html#rpc_iscsi_set_discovery_auth":[3,9,6,3],
-"jsonrpc.html#rpc_iscsi_set_options":[3,9,6,0],
-"jsonrpc.html#rpc_iscsi_start_portal_group":[3,9,6,22],
-"jsonrpc.html#rpc_iscsi_target_node_add_lun":[3,9,6,26]
+"jsonrpc.html#rpc_iscsi_portal_group_set_auth":[3,9,6,24]
 };

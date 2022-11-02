@@ -5,6 +5,7 @@ var group__bdev__io__submit__functions =
     [ "spdk_bdev_comparev_and_writev_blocks", "group__bdev__io__submit__functions.html#gafaa766d5c5ca4bc2979e1f5f9015ef11", null ],
     [ "spdk_bdev_comparev_blocks", "group__bdev__io__submit__functions.html#gaf27fa5b35ac2a8d7d78cb31fa8500c8c", null ],
     [ "spdk_bdev_comparev_blocks_with_md", "group__bdev__io__submit__functions.html#ga323ccdb094b61f56840f29745339ceb3", null ],
+    [ "spdk_bdev_copy_blocks", "group__bdev__io__submit__functions.html#gaea6141ec0cb4090741c6be7ae6927dae", null ],
     [ "spdk_bdev_flush", "group__bdev__io__submit__functions.html#ga7105b63cc84037543d9472ab33c8be93", null ],
     [ "spdk_bdev_flush_blocks", "group__bdev__io__submit__functions.html#ga9d84cd937e760cf32756654dc9720ed4", null ],
     [ "spdk_bdev_get_zone_info", "group__bdev__io__submit__functions.html#ga01f2a4fd5da187f568381fa3c55f603c", null ],

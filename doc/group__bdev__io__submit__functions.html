@@ -190,6 +190,9 @@ Functions</h2></td></tr>
 <tr class="memitem:gac6b5933e4c0b2ad68bad591655b4f9e6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__bdev__io__submit__functions.html#gac6b5933e4c0b2ad68bad591655b4f9e6">spdk_bdev_nvme_io_passthru_md</a> (struct spdk_bdev_desc *bdev_desc, struct spdk_io_channel *ch, const struct <a class="el" href="structspdk__nvme__cmd.html">spdk_nvme_cmd</a> *cmd, void *buf, size_t nbytes, void *md_buf, size_t md_len, <a class="el" href="bdev_8h.html#a0c5602dfd313f90032dd91683b9663e3">spdk_bdev_io_completion_cb</a> cb, void *cb_arg)</td></tr>
 <tr class="memdesc:gac6b5933e4c0b2ad68bad591655b4f9e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submit an NVMe I/O command to the bdev.  <a href="group__bdev__io__submit__functions.html#gac6b5933e4c0b2ad68bad591655b4f9e6">More...</a><br /></td></tr>
 <tr class="separator:gac6b5933e4c0b2ad68bad591655b4f9e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaea6141ec0cb4090741c6be7ae6927dae"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__bdev__io__submit__functions.html#gaea6141ec0cb4090741c6be7ae6927dae">spdk_bdev_copy_blocks</a> (struct spdk_bdev_desc *desc, struct spdk_io_channel *ch, uint64_t dst_offset_blocks, uint64_t src_offset_blocks, uint64_t num_blocks, <a class="el" href="bdev_8h.html#a0c5602dfd313f90032dd91683b9663e3">spdk_bdev_io_completion_cb</a> cb, void *cb_arg)</td></tr>
+<tr class="memdesc:gaea6141ec0cb4090741c6be7ae6927dae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submit a copy request to the block device.  <a href="group__bdev__io__submit__functions.html#gaea6141ec0cb4090741c6be7ae6927dae">More...</a><br /></td></tr>
+<tr class="separator:gaea6141ec0cb4090741c6be7ae6927dae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga01f2a4fd5da187f568381fa3c55f603c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__bdev__io__submit__functions.html#ga01f2a4fd5da187f568381fa3c55f603c">spdk_bdev_get_zone_info</a> (struct spdk_bdev_desc *desc, struct spdk_io_channel *ch, uint64_t zone_id, size_t num_zones, struct <a class="el" href="structspdk__bdev__zone__info.html">spdk_bdev_zone_info</a> *info, <a class="el" href="bdev_8h.html#a0c5602dfd313f90032dd91683b9663e3">spdk_bdev_io_completion_cb</a> cb, void *cb_arg)</td></tr>
 <tr class="memdesc:ga01f2a4fd5da187f568381fa3c55f603c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submit a get_zone_info request to the bdev.  <a href="group__bdev__io__submit__functions.html#ga01f2a4fd5da187f568381fa3c55f603c">More...</a><br /></td></tr>
 <tr class="separator:ga01f2a4fd5da187f568381fa3c55f603c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -650,6 +653,85 @@ Functions</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>0 on success. On success, the callback will always be called (even if the request ultimately failed). Return negated errno on failure, in which case the callback will not be called.<ul>
 <li>-EINVAL - offset_blocks and/or num_blocks are out of range or separate metadata is not supported</li>
 <li>-ENOMEM - <a class="el" href="structspdk__bdev__io.html">spdk_bdev_io</a> buffer cannot be allocated </li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
+<a id="gaea6141ec0cb4090741c6be7ae6927dae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaea6141ec0cb4090741c6be7ae6927dae">&#9670;&nbsp;</a></span>spdk_bdev_copy_blocks()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_bdev_copy_blocks </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_bdev_desc *&#160;</td>
+          <td class="paramname"><em>desc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct spdk_io_channel *&#160;</td>
+          <td class="paramname"><em>ch</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>dst_offset_blocks</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>src_offset_blocks</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>num_blocks</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="bdev_8h.html#a0c5602dfd313f90032dd91683b9663e3">spdk_bdev_io_completion_cb</a>&#160;</td>
+          <td class="paramname"><em>cb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>cb_arg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Submit a copy request to the block device. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">desc</td><td>Block device descriptor. </td></tr>
+    <tr><td class="paramname">ch</td><td>I/O channel. Obtained by calling <a class="el" href="bdev_8h.html#ab5bb9e746b030d7c4c89cbcf60076c7e" title="Obtain an I/O channel for the block device opened by the specified descriptor.">spdk_bdev_get_io_channel()</a>. </td></tr>
+    <tr><td class="paramname">dst_offset_blocks</td><td>The destination offset, in blocks, from the start of the block device. </td></tr>
+    <tr><td class="paramname">src_offset_blocks</td><td>The source offset, in blocks, from the start of the block device. </td></tr>
+    <tr><td class="paramname">num_blocks</td><td>The number of blocks to copy. </td></tr>
+    <tr><td class="paramname">cb</td><td>Called when the request is complete. </td></tr>
+    <tr><td class="paramname">cb_arg</td><td>Argument passed to cb.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success. On success, the callback will always be called (even if the request ultimately failed). Return negated errno on failure, in which case the callback will not be called.<ul>
+<li>-EINVAL - dst_offset_blocks, src_offset_blocks and/or num_blocks are out of range</li>
+<li>-ENOMEM - <a class="el" href="structspdk__bdev__io.html">spdk_bdev_io</a> buffer cannot be allocated</li>
+<li>-EBADF - desc not open for writing</li>
+<li>-ENOTSUP - copy operation is not supported </li>
 </ul>
 </dd></dl>
 

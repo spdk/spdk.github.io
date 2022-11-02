@@ -48,6 +48,7 @@ var bdev_8h =
       [ "SPDK_BDEV_IO_TYPE_ABORT", "bdev_8h.html#a633029e24ab5ae4a689bffa2565a519fa57d0b0477d9c04c9df1119d223c14ca4", null ],
       [ "SPDK_BDEV_IO_TYPE_SEEK_HOLE", "bdev_8h.html#a633029e24ab5ae4a689bffa2565a519fa8c86acecb32726a5430ab1b33865638b", null ],
       [ "SPDK_BDEV_IO_TYPE_SEEK_DATA", "bdev_8h.html#a633029e24ab5ae4a689bffa2565a519fa1305efd089b10195eab818df329985e6", null ],
+      [ "SPDK_BDEV_IO_TYPE_COPY", "bdev_8h.html#a633029e24ab5ae4a689bffa2565a519fae3e0fb4f93d6a7b5539f856a96f19c39", null ],
       [ "SPDK_BDEV_NUM_IO_TYPES", "bdev_8h.html#a633029e24ab5ae4a689bffa2565a519fab8b20053cecdcd7973f1c2d0dce2b457", null ]
     ] ],
     [ "spdk_bdev_qos_rate_limit_type", "bdev_8h.html#aedfbfc44fa2113d7ee219d09a0994d93", [
@@ -70,6 +71,7 @@ var bdev_8h =
     [ "spdk_bdev_comparev_and_writev_blocks", "group__bdev__io__submit__functions.html#gafaa766d5c5ca4bc2979e1f5f9015ef11", null ],
     [ "spdk_bdev_comparev_blocks", "group__bdev__io__submit__functions.html#gaf27fa5b35ac2a8d7d78cb31fa8500c8c", null ],
     [ "spdk_bdev_comparev_blocks_with_md", "group__bdev__io__submit__functions.html#ga323ccdb094b61f56840f29745339ceb3", null ],
+    [ "spdk_bdev_copy_blocks", "group__bdev__io__submit__functions.html#gaea6141ec0cb4090741c6be7ae6927dae", null ],
     [ "spdk_bdev_desc_get_bdev", "bdev_8h.html#ac6418cfa0e9076ef7dafa7753c4c2028", null ],
     [ "spdk_bdev_dump_info_json", "bdev_8h.html#a3ef2e861ccd2d6135bfe13257f047fb9", null ],
     [ "spdk_bdev_examine", "bdev_8h.html#ae720ef13c98f9ba40e6562d4a8582427", null ],
@@ -91,6 +93,7 @@ var bdev_8h =
     [ "spdk_bdev_get_io_channel", "bdev_8h.html#ab5bb9e746b030d7c4c89cbcf60076c7e", null ],
     [ "spdk_bdev_get_io_stat", "bdev_8h.html#ab1ba28ba382edd1d792d51a054eb3aa2", null ],
     [ "spdk_bdev_get_io_time", "bdev_8h.html#a8a082eb89d57860b2e57ebf7f5b3caa2", null ],
+    [ "spdk_bdev_get_max_copy", "bdev_8h.html#a8b542430078d502325f37b92fc3d15ca", null ],
     [ "spdk_bdev_get_md_size", "bdev_8h.html#abc3537d0315100b24da6acc95929e849", null ],
     [ "spdk_bdev_get_media_events", "bdev_8h.html#af359a282820d73a253ffbbe127a30b96", null ],
     [ "spdk_bdev_get_memory_domains", "bdev_8h.html#a2643db603c5c9762d839036c1658bf1b", null ],

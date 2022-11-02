@@ -1,5 +1,15 @@
 var NAVTREEINDEX27 =
 {
+"structspdk__reduce__vol__params.html#ae4c8834d1e1c76455842b97c4489ce47":[15,0,325,4],
+"structspdk__reduce__vol__params.html#ae7112c3b0cf5e3bc25a0178fb9846abb":[15,0,325,3],
+"structspdk__scheduler.html":[15,0,326],
+"structspdk__scheduler.html#a11923634a7c3453ad8ecbfcb2683998f":[15,0,326,5],
+"structspdk__scheduler.html#a340122fe39726713265f8ca8e8cd3952":[15,0,326,0],
+"structspdk__scheduler.html#a47ad7f5c1e7105022f2696ba7e1c6846":[15,0,326,3],
+"structspdk__scheduler.html#a6cbfa8fdd78ad15bfc12a8b9e9734085":[15,0,326,4],
+"structspdk__scheduler.html#a96b47ed5d54cdd98d89538175aa9e96a":[15,0,326,1],
+"structspdk__scheduler.html#aaf38184e6082cd0840571a8e38665911":[15,0,326,6],
+"structspdk__scheduler.html#acbac668eb963ca9df3a6295d6f639388":[15,0,326,2],
 "structspdk__scheduler__core__info.html":[15,0,327],
 "structspdk__scheduler__core__info.html#a23349ec5f80b1fe486ced12e05d71583":[15,0,327,3],
 "structspdk__scheduler__core__info.html#a2c66ca84ff9c29ac12c7bfc29855043e":[15,0,327,6],
@@ -239,15 +249,5 @@ var NAVTREEINDEX27 =
 "structspdk__trace__entry.html#a53d1df54f12eb3a41e75dfcf33544c6e":[15,0,353,2],
 "structspdk__trace__entry.html#a713d879c3f525d9f12b95178b9110d3f":[15,0,353,3],
 "structspdk__trace__entry.html#a8352d515ed92a1c37fc62c8a0473ef3d":[15,0,353,4],
-"structspdk__trace__entry.html#a9703554659f406f3d74ea78405def59e":[15,0,353,1],
-"structspdk__trace__entry__buffer.html":[15,0,354],
-"structspdk__trace__entry__buffer.html#a2739eb0b727a4663714f2252e58a750a":[15,0,354,0],
-"structspdk__trace__entry__buffer.html#a716a51f1690f8fa7d7a15fe2424f10b3":[15,0,354,1],
-"structspdk__trace__entry__buffer.html#a879518fb26c9383526bb89c624a30c5c":[15,0,354,2],
-"structspdk__trace__flags.html":[15,0,355],
-"structspdk__trace__flags.html#a19f99697c48da079e6dd9802c58a6d90":[15,0,355,1],
-"structspdk__trace__flags.html#a3b9abc4c75c2d8f28609892e668f393c":[15,0,355,4],
-"structspdk__trace__flags.html#ab799d235068c9b11669b0daeabb08d55":[15,0,355,3],
-"structspdk__trace__flags.html#ad7aae2959ed72743507c2bb5c36a70b5":[15,0,355,0],
-"structspdk__trace__flags.html#ae2aaf775673a5e9a1efe443aa8ca7e4f":[15,0,355,5]
+"structspdk__trace__entry.html#a9703554659f406f3d74ea78405def59e":[15,0,353,1]
 };
