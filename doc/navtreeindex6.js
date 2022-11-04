@@ -1,5 +1,7 @@
 var NAVTREEINDEX6 =
 {
+"json_8h.html#a1615973fcc18e1d274a95fb8b0a3eb47":[16,0,33,16],
+"json_8h.html#a1d5f6be0455ec859148b046d9d13ad03":[16,0,33,71],
 "json_8h.html#a1ed6b4728ebf6c75087864dd3e2256a6":[16,0,33,13],
 "json_8h.html#a1eef0cdf2426dc5fc8f860b94e26453f":[16,0,33,36],
 "json_8h.html#a223071134f0ca94d171d9810e2bdb378":[16,0,33,44],
@@ -247,7 +249,5 @@ var NAVTREEINDEX6 =
 "jsonrpc.html#rpc_iscsi_get_options":[3,9,6,1],
 "jsonrpc.html#rpc_iscsi_get_portal_groups":[3,9,6,20],
 "jsonrpc.html#rpc_iscsi_get_target_nodes":[3,9,6,14],
-"jsonrpc.html#rpc_iscsi_initiator_group_add_initiators":[3,9,6,12],
-"jsonrpc.html#rpc_iscsi_initiator_group_remove_initiators":[3,9,6,13],
-"jsonrpc.html#rpc_iscsi_portal_group_set_auth":[3,9,6,24]
+"jsonrpc.html#rpc_iscsi_initiator_group_add_initiators":[3,9,6,12]
 };

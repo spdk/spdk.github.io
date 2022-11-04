@@ -273,6 +273,9 @@ typedef&#160;</td><td class="memItemRight" valign="bottom"><b>TAILQ_HEAD</b> (, 
 <tr class="memitem:a65de686e7ddcf8caa6d7fa032e7023c6"><td class="memItemLeft" align="right" valign="top">struct spdk_io_channel *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev__module_8h.html#a65de686e7ddcf8caa6d7fa032e7023c6">spdk_bdev_io_get_io_channel</a> (struct <a class="el" href="structspdk__bdev__io.html">spdk_bdev_io</a> *bdev_io)</td></tr>
 <tr class="memdesc:a65de686e7ddcf8caa6d7fa032e7023c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the bdev module's I/O channel that the given bdev_io was submitted on.  <a href="bdev__module_8h.html#a65de686e7ddcf8caa6d7fa032e7023c6">More...</a><br /></td></tr>
 <tr class="separator:a65de686e7ddcf8caa6d7fa032e7023c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1338f8303e09792634142f63be39b93"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev__module_8h.html#aa1338f8303e09792634142f63be39b93">spdk_bdev_io_get_submit_tsc</a> (struct <a class="el" href="structspdk__bdev__io.html">spdk_bdev_io</a> *bdev_io)</td></tr>
+<tr class="memdesc:aa1338f8303e09792634142f63be39b93"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the submit_tsc of a bdev I/O.  <a href="bdev__module_8h.html#aa1338f8303e09792634142f63be39b93">More...</a><br /></td></tr>
+<tr class="separator:aa1338f8303e09792634142f63be39b93"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7f2edd5a040a818752112d2cc709efca"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev__module_8h.html#a7f2edd5a040a818752112d2cc709efca">spdk_bdev_notify_blockcnt_change</a> (struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *bdev, uint64_t size)</td></tr>
 <tr class="memdesc:a7f2edd5a040a818752112d2cc709efca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resize for a bdev.  <a href="bdev__module_8h.html#a7f2edd5a040a818752112d2cc709efca">More...</a><br /></td></tr>
 <tr class="separator:a7f2edd5a040a818752112d2cc709efca"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -324,6 +327,9 @@ typedef&#160;</td><td class="memItemRight" valign="bottom"><b>TAILQ_HEAD</b> (bd
 <tr class="memitem:a099c43cf183a48d23ec7ddad683da1ae"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev__module_8h.html#a099c43cf183a48d23ec7ddad683da1ae">spdk_bdev_part_submit_request</a> (struct <a class="el" href="structspdk__bdev__part__channel.html">spdk_bdev_part_channel</a> *ch, struct <a class="el" href="structspdk__bdev__io.html">spdk_bdev_io</a> *bdev_io)</td></tr>
 <tr class="memdesc:a099c43cf183a48d23ec7ddad683da1ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forwards I/O from an <a class="el" href="structspdk__bdev__part.html">spdk_bdev_part</a> to the underlying base bdev.  <a href="bdev__module_8h.html#a099c43cf183a48d23ec7ddad683da1ae">More...</a><br /></td></tr>
 <tr class="separator:a099c43cf183a48d23ec7ddad683da1ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99132dbf758377bdfcc47140d35c065c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev__module_8h.html#a99132dbf758377bdfcc47140d35c065c">spdk_bdev_part_submit_request_ext</a> (struct <a class="el" href="structspdk__bdev__part__channel.html">spdk_bdev_part_channel</a> *ch, struct <a class="el" href="structspdk__bdev__io.html">spdk_bdev_io</a> *bdev_io, <a class="el" href="bdev_8h.html#a0c5602dfd313f90032dd91683b9663e3">spdk_bdev_io_completion_cb</a> cb)</td></tr>
+<tr class="memdesc:a99132dbf758377bdfcc47140d35c065c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forwards I/O from an <a class="el" href="structspdk__bdev__part.html">spdk_bdev_part</a> to the underlying base bdev.  <a href="bdev__module_8h.html#a99132dbf758377bdfcc47140d35c065c">More...</a><br /></td></tr>
+<tr class="separator:a99132dbf758377bdfcc47140d35c065c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aecf8338710d95715ab7c40f31e378e7f"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev__module_8h.html#aecf8338710d95715ab7c40f31e378e7f">spdk_bdev_part_get_bdev</a> (struct <a class="el" href="structspdk__bdev__part.html">spdk_bdev_part</a> *part)</td></tr>
 <tr class="memdesc:aecf8338710d95715ab7c40f31e378e7f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a pointer to this part's <a class="el" href="structspdk__bdev.html">spdk_bdev</a>.  <a href="bdev__module_8h.html#aecf8338710d95715ab7c40f31e378e7f">More...</a><br /></td></tr>
 <tr class="separator:aecf8338710d95715ab7c40f31e378e7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -998,6 +1004,33 @@ typedef&#160;</td><td class="memItemRight" valign="bottom"><b>TAILQ_HEAD</b> (bd
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the bdev module's I/O channel that the given bdev_io was submitted on. </dd></dl>
+
+</div>
+</div>
+<a id="aa1338f8303e09792634142f63be39b93"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa1338f8303e09792634142f63be39b93">&#9670;&nbsp;</a></span>spdk_bdev_io_get_submit_tsc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint64_t spdk_bdev_io_get_submit_tsc </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structspdk__bdev__io.html">spdk_bdev_io</a> *&#160;</td>
+          <td class="paramname"><em>bdev_io</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the submit_tsc of a bdev I/O. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bdev_io</td><td>The bdev I/O to get the submit_tsc.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The submit_tsc of the specified bdev I/O. </dd></dl>
 
 </div>
 </div>
@@ -1979,6 +2012,53 @@ typedef&#160;</td><td class="memItemRight" valign="bottom"><b>TAILQ_HEAD</b> (bd
   <table class="params">
     <tr><td class="paramname">ch</td><td>The I/O channel associated with the <a class="el" href="structspdk__bdev__part.html">spdk_bdev_part</a>. </td></tr>
     <tr><td class="paramname">bdev_io</td><td>The I/O to be submitted to the underlying bdev. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success or non-zero if submit request failed. </dd></dl>
+
+</div>
+</div>
+<a id="a99132dbf758377bdfcc47140d35c065c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a99132dbf758377bdfcc47140d35c065c">&#9670;&nbsp;</a></span>spdk_bdev_part_submit_request_ext()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_bdev_part_submit_request_ext </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structspdk__bdev__part__channel.html">spdk_bdev_part_channel</a> *&#160;</td>
+          <td class="paramname"><em>ch</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structspdk__bdev__io.html">spdk_bdev_io</a> *&#160;</td>
+          <td class="paramname"><em>bdev_io</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="bdev_8h.html#a0c5602dfd313f90032dd91683b9663e3">spdk_bdev_io_completion_cb</a>&#160;</td>
+          <td class="paramname"><em>cb</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Forwards I/O from an <a class="el" href="structspdk__bdev__part.html">spdk_bdev_part</a> to the underlying base bdev. </p>
+<p>This function will apply the offset_blocks the user provided to spdk_bdev_part_construct to the I/O. The user should not manually apply this offset before submitting any I/O through this function.</p>
+<p>This function enables user to specify a completion callback. It is required that the completion callback calls <a class="el" href="bdev__module_8h.html#a3247574caabc2b31796861a10b2c9cab" title="Complete a bdev_io.">spdk_bdev_io_complete()</a> for the forwarded I/O.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ch</td><td>The I/O channel associated with the <a class="el" href="structspdk__bdev__part.html">spdk_bdev_part</a>. </td></tr>
+    <tr><td class="paramname">bdev_io</td><td>The I/O to be submitted to the underlying bdev. </td></tr>
+    <tr><td class="paramname">cb</td><td>Called when the forwarded I/O completes. </td></tr>
   </table>
   </dd>
 </dl>

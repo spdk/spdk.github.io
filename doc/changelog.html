@@ -95,12 +95,14 @@ v23.01: (Upcoming Release)</h1>
 <h2>bdev</h2>
 <p>Both of interleaved and separated metadata are now supported by the malloc bdev module.</p>
 <p>Protection information is now supported by the malloc bdev module.</p>
+<p>A new API <code>spkd_bdev_part_submit_request_ext</code> was added to specify a custom completion callback.</p>
 <h2>scheduler</h2>
 <p>Changing scheduler from dynamic back to static is no longer possible, as there is no way of saving original SPDK thread distribution on reactors.</p>
 <h2>bdev</h2>
 <p>New APIs <code>spdk_bdev_for_each_channel</code> and <code>spdk_bdev_for_each_channel_continue</code> and associated function pointers were added to iterate each channel of the required bdev.</p>
 <p>The RPC <code>bdev_get_iostat</code> now allows a user to query the per channel IO statistics for required bdev.</p>
 <p>New <code>spdk_bdev_copy_blocks</code> and <code>spdk_bdev_get_max_copy</code> APIs to support copy commands.</p>
+<p>A new API <code>spdk_bdev_io_get_submit_tsc</code> was added to get the submit_tsc of the bdev I/O.</p>
 <h1>v22.09</h1>
 <h2>accel</h2>
 <p>Many names were changed in the accel framework to make them consistent both with themselves and the rest of SPDK. The primary public header file is now named <code><a class="el" href="accel_8h.html" title="Acceleration Framework.">include/spdk/accel.h</a></code>.</p>

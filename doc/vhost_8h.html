@@ -99,11 +99,11 @@ $(document).ready(function(){initNavTree('vhost_8h.html',''); initResizable(); }
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
 <tr class="memitem:aed34ffbfc5835716ba35a9ee050e1e74"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vhost_8h.html#aed34ffbfc5835716ba35a9ee050e1e74">spdk_vhost_init_cb</a>) (int rc)</td></tr>
-<tr class="memdesc:aed34ffbfc5835716ba35a9ee050e1e74"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback for spdk_vhost_init().  <a href="vhost_8h.html#aed34ffbfc5835716ba35a9ee050e1e74">More...</a><br /></td></tr>
+<tr class="memdesc:aed34ffbfc5835716ba35a9ee050e1e74"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback for spdk_vhost_blk|scsi_init().  <a href="vhost_8h.html#aed34ffbfc5835716ba35a9ee050e1e74">More...</a><br /></td></tr>
 <tr class="separator:aed34ffbfc5835716ba35a9ee050e1e74"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8b37106ad173f20d05da87f89714700b"><td class="memItemLeft" align="right" valign="top"><a id="a8b37106ad173f20d05da87f89714700b"></a>
 typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vhost_8h.html#a8b37106ad173f20d05da87f89714700b">spdk_vhost_fini_cb</a>) (void)</td></tr>
-<tr class="memdesc:a8b37106ad173f20d05da87f89714700b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback for spdk_vhost_fini(). <br /></td></tr>
+<tr class="memdesc:a8b37106ad173f20d05da87f89714700b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback for spdk_vhost_blk|scsi_fini(). <br /></td></tr>
 <tr class="separator:a8b37106ad173f20d05da87f89714700b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac2c4b62eaf6503e5f5e520394f9f9fe1"><td class="memItemLeft" align="right" valign="top">typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vhost_8h.html#ac2c4b62eaf6503e5f5e520394f9f9fe1">spdk_vhost_event_fn</a>) (struct spdk_vhost_dev *vdev, void *arg)</td></tr>
 <tr class="memdesc:ac2c4b62eaf6503e5f5e520394f9f9fe1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Synchronized vhost event used for user callbacks.  <a href="vhost_8h.html#ac2c4b62eaf6503e5f5e520394f9f9fe1">More...</a><br /></td></tr>
@@ -222,7 +222,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vhos
       </table>
 </div><div class="memdoc">
 
-<p>Callback for spdk_vhost_init(). </p>
+<p>Callback for spdk_vhost_blk|scsi_init(). </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">rc</td><td>0 on success, negative errno on failure </td></tr>
