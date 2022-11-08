@@ -3615,9 +3615,13 @@ bdev_error_inject_error</h2>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">io_type   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">io type 'clear' 'read' 'write' 'unmap' 'flush' 'all'    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">error_type   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">error type 'failure' 'pending'    </td></tr>
+<td class="markdownTableBodyNone">error_type   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">error type 'failure' 'pending' 'corrupt_data'    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">num   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">int   </td><td class="markdownTableBodyNone">the number of commands you want to fail.(default:1)   </td></tr>
+<td class="markdownTableBodyNone">num   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">int   </td><td class="markdownTableBodyNone">the number of commands you want to fail.(default:1)    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">corrupt_offset   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">int   </td><td class="markdownTableBodyNone">the offset in bytes to xor with corrupt_value    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">corrupt_value   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">int   </td><td class="markdownTableBodyNone">the value for xor (1-255, 0 is invalid)   </td></tr>
 </table>
 <h3>Example</h3>
 <p>Example request:</p>
