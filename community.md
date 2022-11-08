@@ -32,7 +32,7 @@ Find something to work on the backlog in your area of interest, or start/partici
 # Mailing List
 
 The
-[SPDK Mailing List](https://lists.01.org/hyperkitty/list/spdk@lists.01.org/) is
+[SPDK Mailing List](https://lists.linuxfoundation.org/mailman/listinfo/spdk/) is
 available for usage and development questions as well as design discussions.
 
 <a id="meetings"></a>
