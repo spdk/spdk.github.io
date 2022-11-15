@@ -1,5 +1,9 @@
 var NAVTREEINDEX18 =
 {
+"structspdk__bdev__io.html#acb8e8c688f321a1655a7db6caffa060e":[15,0,54,32],
+"structspdk__bdev__io.html#ace66bdb63c00a8549d466de17f553064":[15,0,54,12],
+"structspdk__bdev__io.html#ad54769b6194caf65b0dd626c399bd41d":[15,0,54,8],
+"structspdk__bdev__io.html#ae513a78b2095fbd1d0674fa11d26ef2b":[15,0,54,9],
 "structspdk__bdev__io.html#aea98eb4a235dc71bc9bf4040c53a5977":[15,0,54,11],
 "structspdk__bdev__io.html#aeaabc4aee05b2ae4337fe9cb5acda3d1":[15,0,54,26],
 "structspdk__bdev__io.html#aec576e7766af0ee744ced101de905ff5":[15,0,54,16],
@@ -245,9 +249,5 @@ var NAVTREEINDEX18 =
 "structspdk__governor.html#aae00baa13e1cafec438b3078c899de12":[15,0,81,2],
 "structspdk__governor.html#ab4c453d913aa0e33a6e1744ffe256c5d":[15,0,81,6],
 "structspdk__governor.html#ad6d1a227c03026fd11a1f124b18010a3":[15,0,81,5],
-"structspdk__governor__capabilities.html":[15,0,82],
-"structspdk__governor__capabilities.html#a07f18949a4026deb4784accf4e5827e0":[15,0,82,0],
-"structspdk__gpt__guid.html":[15,0,83],
-"structspdk__gpt__guid.html#a3858a37519f6fa4adc3548f0e55da77d":[15,0,83,0],
-"structspdk__gpt__header.html":[15,0,84]
+"structspdk__governor__capabilities.html":[15,0,82]
 };

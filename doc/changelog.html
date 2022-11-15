@@ -107,6 +107,9 @@ v23.01: (Upcoming Release)</h1>
 <p>Added core lock file mechanism to prevent the same CPU cores from being used by multiple SPDK application instances.</p>
 <p>Added a command line switch to disable CPU locks on SPDK startup.</p>
 <p>Added RPCs framework_enable_cpumask_locks and framework_disable_cpumask_locks to enable and disable CPU core locks in runtime.</p>
+<p>Added &ndash;rpcs-allowed command line option. Users can specify a comma-separated list of RPC names with this option to restrict allowed RPCs to only that list.</p>
+<h2>rpc</h2>
+<p>Added spdk_rpc_set_allowlist to restrict allowed RPCs to the specified list.</p>
 <h1>v22.09</h1>
 <h2>accel</h2>
 <p>Many names were changed in the accel framework to make them consistent both with themselves and the rest of SPDK. The primary public header file is now named <code><a class="el" href="accel_8h.html" title="Acceleration Framework.">include/spdk/accel.h</a></code>.</p>

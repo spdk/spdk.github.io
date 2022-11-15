@@ -1,5 +1,9 @@
 var NAVTREEINDEX32 =
 {
+"vhost_processing.html#vhost_processing_intro":[2,5,1],
+"vhost_processing.html#vhost_processing_io_path":[2,5,4],
+"vhost_processing.html#vhost_processing_qemu":[2,5,2],
+"vhost_processing.html#vhost_processing_toc":[2,5,0],
 "vhost_processing.html#vhost_spdk_optimizations":[2,5,4,0],
 "virtio.html":[7,3],
 "virtio.html#virtio_2mb":[7,3,1],

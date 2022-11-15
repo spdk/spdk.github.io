@@ -148,6 +148,15 @@ Functions</h2></td></tr>
 <tr class="memitem:a317132c2abb23a53dc3d53846689e2b6"><td class="memItemLeft" align="right" valign="top">long long int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="string_8h.html#a317132c2abb23a53dc3d53846689e2b6">spdk_strtoll</a> (const char *nptr, int base)</td></tr>
 <tr class="memdesc:a317132c2abb23a53dc3d53846689e2b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert the string in nptr to a long long integer value according to the given base.  <a href="string_8h.html#a317132c2abb23a53dc3d53846689e2b6">More...</a><br /></td></tr>
 <tr class="separator:a317132c2abb23a53dc3d53846689e2b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13d372255f0c2738bb5279704455c131"><td class="memItemLeft" align="right" valign="top">char **&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="string_8h.html#a13d372255f0c2738bb5279704455c131">spdk_strarray_from_string</a> (const char *str, const char *delim)</td></tr>
+<tr class="memdesc:a13d372255f0c2738bb5279704455c131"><td class="mdescLeft">&#160;</td><td class="mdescRight">Build a NULL-terminated array of strings from the given string separated by the given chars in delim, as if split by strpbrk().  <a href="string_8h.html#a13d372255f0c2738bb5279704455c131">More...</a><br /></td></tr>
+<tr class="separator:a13d372255f0c2738bb5279704455c131"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d2c0c2ba20e00339a281cfa5c249680"><td class="memItemLeft" align="right" valign="top">char **&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="string_8h.html#a7d2c0c2ba20e00339a281cfa5c249680">spdk_strarray_dup</a> (const char **strarray)</td></tr>
+<tr class="memdesc:a7d2c0c2ba20e00339a281cfa5c249680"><td class="mdescLeft">&#160;</td><td class="mdescRight">Duplicate a NULL-terminated array of strings.  <a href="string_8h.html#a7d2c0c2ba20e00339a281cfa5c249680">More...</a><br /></td></tr>
+<tr class="separator:a7d2c0c2ba20e00339a281cfa5c249680"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a204f9062adca879642296b993293fd04"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="string_8h.html#a204f9062adca879642296b993293fd04">spdk_strarray_free</a> (char **strarray)</td></tr>
+<tr class="memdesc:a204f9062adca879642296b993293fd04"><td class="mdescLeft">&#160;</td><td class="mdescRight">Free a NULL-terminated array of strings.  <a href="string_8h.html#a204f9062adca879642296b993293fd04">More...</a><br /></td></tr>
+<tr class="separator:a204f9062adca879642296b993293fd04"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>String utility functions. </p>
@@ -419,6 +428,99 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the trimmed string. </dd></dl>
+
+</div>
+</div>
+<a id="a7d2c0c2ba20e00339a281cfa5c249680"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d2c0c2ba20e00339a281cfa5c249680">&#9670;&nbsp;</a></span>spdk_strarray_dup()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char** spdk_strarray_dup </td>
+          <td>(</td>
+          <td class="paramtype">const char **&#160;</td>
+          <td class="paramname"><em>strarray</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Duplicate a NULL-terminated array of strings. </p>
+<p>Returns NULL on failure. The array, and the strings, are allocated with the standard allocator (e.g. calloc()).</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">strarray</td><td>input array of strings. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a204f9062adca879642296b993293fd04"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a204f9062adca879642296b993293fd04">&#9670;&nbsp;</a></span>spdk_strarray_free()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_strarray_free </td>
+          <td>(</td>
+          <td class="paramtype">char **&#160;</td>
+          <td class="paramname"><em>strarray</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Free a NULL-terminated array of strings. </p>
+<p>The array and its strings must have been allocated with the standard allocator (calloc() etc.).</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">strarray</td><td>array of strings. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a13d372255f0c2738bb5279704455c131"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a13d372255f0c2738bb5279704455c131">&#9670;&nbsp;</a></span>spdk_strarray_from_string()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char** spdk_strarray_from_string </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>str</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>delim</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Build a NULL-terminated array of strings from the given string separated by the given chars in delim, as if split by strpbrk(). </p>
+<p>Empty items are pointers to an empty string.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">str</td><td>Input string </td></tr>
+    <tr><td class="paramname">delim</td><td>Separating delimiter set.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the string array, or NULL on failure. </dd></dl>
 
 </div>
 </div>
