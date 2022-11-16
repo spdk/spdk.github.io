@@ -109,12 +109,12 @@ $(document).ready(function(){initNavTree('nvmf_multipath_howto.html',''); initRe
 <div class="line">./scripts/rpc.py nvmf_subsystem_add_listener -t tcp -a 172.18.1.13 -s 5520 nqn.2022-02.io.spdk:cnode0</div>
 </div><!-- fragment --><h1>On initiator: start and configure bdevperf</h1>
 <p>Launch the bdevperf process in the background: </p><div class="fragment"><div class="line">cd spdk/</div>
-<div class="line">./test/bdev/bdevperf/bdevperf -m 0x4 -z -r /tmp/bdevperf.sock -q 128 -o 4096 -w verify -t 90 &amp;&gt; bdevperf.log &amp;</div>
+<div class="line">./build/examples/bdevperf -m 0x4 -z -r /tmp/bdevperf.sock -q 128 -o 4096 -w verify -t 90 &amp;&gt; bdevperf.log &amp;</div>
 </div><!-- fragment --><p>Configure bdevperf and add two paths: </p><div class="fragment"><div class="line">./scripts/rpc.py -s /tmp/bdevperf.sock bdev_nvme_set_options -r -1</div>
 <div class="line">./scripts/rpc.py -s /tmp/bdevperf.sock bdev_nvme_attach_controller -b Nvme0 -t tcp -a 172.17.1.13 -s 4420 -f ipv4 -n nqn.2022-02.io.spdk:cnode0 -l -1 -o 10</div>
 <div class="line">./scripts/rpc.py -s /tmp/bdevperf.sock bdev_nvme_attach_controller -b Nvme0 -t tcp -a 172.18.1.13 -s 5520 -f ipv4 -n nqn.2022-02.io.spdk:cnode0 -x multipath -l -1 -o 10</div>
 </div><!-- fragment --><h1>Launch a bdevperf test</h1>
-<p>Connect to the RPC socket of the bdevperf process and start the test: </p><div class="fragment"><div class="line">PYTHONPATH=$PYTHONPATH:/root/src/spdk/python ./test/bdev/bdevperf/bdevperf.py -t 1 -s /tmp/bdevperf.sock perform_tests</div>
+<p>Connect to the RPC socket of the bdevperf process and start the test: </p><div class="fragment"><div class="line">PYTHONPATH=$PYTHONPATH:/root/src/spdk/python ./examples/bdev/bdevperf/bdevperf.py -t 1 -s /tmp/bdevperf.sock perform_tests</div>
 </div><!-- fragment --><p>The RPC command will return, leaving the test to run for 90 seconds in the background. On the target server, observe that only the first path (port) is receiving packets by checking the queues with <code>ss -t</code>.</p>
 <p>You can view the paths available to the initiator with: </p><div class="fragment"><div class="line">./scripts/rpc.py -s /tmp/bdevperf.sock bdev_nvme_get_io_paths -n Nvme0n1</div>
 </div><!-- fragment --><h1>Switching paths</h1>
