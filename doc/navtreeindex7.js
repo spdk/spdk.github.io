@@ -1,5 +1,8 @@
 var NAVTREEINDEX7 =
 {
+"jsonrpc.html#rpc_iscsi_get_portal_groups":[3,9,6,20],
+"jsonrpc.html#rpc_iscsi_get_target_nodes":[3,9,6,14],
+"jsonrpc.html#rpc_iscsi_initiator_group_add_initiators":[3,9,6,12],
 "jsonrpc.html#rpc_iscsi_initiator_group_remove_initiators":[3,9,6,13],
 "jsonrpc.html#rpc_iscsi_portal_group_set_auth":[3,9,6,24],
 "jsonrpc.html#rpc_iscsi_set_discovery_auth":[3,9,6,3],
@@ -246,8 +249,5 @@ var NAVTREEINDEX7 =
 "nvme.html":[7,0],
 "nvme.html#nvme_cuse":[7,0,8],
 "nvme.html#nvme_design":[7,0,4],
-"nvme.html#nvme_examples":[7,0,2],
-"nvme.html#nvme_fabrics_host":[7,0,5],
-"nvme.html#nvme_fabrics_trid":[7,0,5,0],
-"nvme.html#nvme_fioplugin":[7,0,2,1]
+"nvme.html#nvme_examples":[7,0,2]
 };

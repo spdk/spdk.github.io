@@ -110,6 +110,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a3f6c4607f877cca80d12fa1d45be5b63"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blobfs__bdev_8h.html#a3f6c4607f877cca80d12fa1d45be5b63">spdk_blobfs_bdev_create</a> (const char *bdev_name, uint32_t cluster_sz, <a class="el" href="blobfs__bdev_8h.html#aeba9eac67ee1c9c401df29609c8b917b">spdk_blobfs_bdev_op_complete</a> cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:a3f6c4607f877cca80d12fa1d45be5b63"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a blobfs on the given device.  <a href="blobfs__bdev_8h.html#a3f6c4607f877cca80d12fa1d45be5b63">More...</a><br /></td></tr>
 <tr class="separator:a3f6c4607f877cca80d12fa1d45be5b63"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a700647b9057a0e3352d3a6bcdb363a44"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blobfs__bdev_8h.html#a700647b9057a0e3352d3a6bcdb363a44">spdk_blobfs_bdev_mount</a> (const char *bdev_name, const char *mountpoint, <a class="el" href="blobfs__bdev_8h.html#aeba9eac67ee1c9c401df29609c8b917b">spdk_blobfs_bdev_op_complete</a> cb_fn, void *cb_arg)</td></tr>
+<tr class="memdesc:a700647b9057a0e3352d3a6bcdb363a44"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mount a blobfs on given device to a host path by FUSE.  <a href="blobfs__bdev_8h.html#a700647b9057a0e3352d3a6bcdb363a44">More...</a><br /></td></tr>
+<tr class="separator:a700647b9057a0e3352d3a6bcdb363a44"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Operations on blobfs whose backing device is <a class="el" href="structspdk__bdev.html">spdk_bdev</a>. </p>
@@ -226,6 +229,58 @@ Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">bdev_name</td><td>Name of block device. </td></tr>
     <tr><td class="paramname">cb_fn</td><td>Called when the detecting is complete. fserrno is -EILSEQ if no blobfs exists. </td></tr>
+    <tr><td class="paramname">cb_arg</td><td>Argument passed to function cb_fn. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a700647b9057a0e3352d3a6bcdb363a44"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a700647b9057a0e3352d3a6bcdb363a44">&#9670;&nbsp;</a></span>spdk_blobfs_bdev_mount()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_blobfs_bdev_mount </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>bdev_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>mountpoint</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="blobfs__bdev_8h.html#aeba9eac67ee1c9c401df29609c8b917b">spdk_blobfs_bdev_op_complete</a>&#160;</td>
+          <td class="paramname"><em>cb_fn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>cb_arg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Mount a blobfs on given device to a host path by FUSE. </p>
+<p>A new thread is created dedicatedly for one mountpoint to handle FUSE request by blobfs API.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bdev_name</td><td>Name of block device. </td></tr>
+    <tr><td class="paramname">mountpoint</td><td>Host path to mount blobfs. </td></tr>
+    <tr><td class="paramname">cb_fn</td><td>Called when mount operation is complete. fserrno is -EILSEQ if no blobfs exists. </td></tr>
     <tr><td class="paramname">cb_arg</td><td>Argument passed to function cb_fn. </td></tr>
   </table>
   </dd>

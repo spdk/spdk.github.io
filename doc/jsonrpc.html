@@ -2257,6 +2257,65 @@ bdev_ocf_set_seqcutoff</h2>
 <div class="line">  &quot;id&quot;: 1,</div>
 <div class="line">  &quot;result&quot;: true</div>
 <div class="line">}</div>
+</div><!-- fragment --><h2><a class="anchor" id="rpc_bdev_ocf_flush_start"></a>
+bdev_ocf_flush_start</h2>
+<p>Start flushing OCF cache device.</p>
+<p>Automatic flushes of dirty data are managed by OCF cleaning policy settings. In addition to that, all dirty data is flushed to core device when there is an attempt to stop caching. On the other hand, this RPC call gives a possibility to flush dirty data manually when there is a need for it, e.g. to speed up the shutdown process when data hasn't been flushed for a long time. This RPC returns immediately, and flush is then being performed in the background. To see the status of flushing operation use bdev_ocf_flush_status.</p>
+<h3>Parameters</h3>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Bdev name   </td></tr>
+</table>
+<h3>Example</h3>
+<p>Example request:</p>
+<div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;params&quot;: {</div>
+<div class="line">    &quot;name&quot;: &quot;ocf0&quot;</div>
+<div class="line">  },</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
+<div class="line">  &quot;method&quot;: &quot;bdev_ocf_flush_start&quot;,</div>
+<div class="line">  &quot;id&quot;: 1</div>
+<div class="line">}</div>
+</div><!-- fragment --><p>Example response:</p>
+<div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
+<div class="line">  &quot;id&quot;: 1,</div>
+<div class="line">  &quot;result&quot;: true</div>
+<div class="line">}</div>
+</div><!-- fragment --><h2><a class="anchor" id="rpc_bdev_ocf_flush_status"></a>
+bdev_ocf_flush_status</h2>
+<p>Get flush status of OCF cache device.</p>
+<p>Automatic flushes of dirty data are managed by OCF cleaning policy settings. In addition to that, all dirty data is flushed to core device when there is an attempt to stop caching. On the other hand, there is a possibility to flush dirty data manually when there is a need for it, e.g. to speed up the shutdown process when data hasn't been flushed for a long time. This RPC reports if such manual flush is still in progress and if the operation was successful. To start manual flush use bdev_ocf_flush_start.</p>
+<h3>Parameters</h3>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Bdev name   </td></tr>
+</table>
+<h3>Response</h3>
+<p>Status of OCF cache device flush.</p>
+<h3>Example</h3>
+<p>Example request:</p>
+<div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;params&quot;: {</div>
+<div class="line">    &quot;name&quot;: &quot;ocf0&quot;</div>
+<div class="line">  },</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
+<div class="line">  &quot;method&quot;: &quot;bdev_ocf_flush_status&quot;,</div>
+<div class="line">  &quot;id&quot;: 1</div>
+<div class="line">}</div>
+</div><!-- fragment --><p>Example response:</p>
+<div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
+<div class="line">  &quot;id&quot;: 1,</div>
+<div class="line">  &quot;result&quot;: {</div>
+<div class="line">    &quot;in_progress&quot;: false,</div>
+<div class="line">    &quot;status&quot;: 0</div>
+<div class="line">  }</div>
+<div class="line">}</div>
 </div><!-- fragment --><h2><a class="anchor" id="rpc_bdev_malloc_create"></a>
 bdev_malloc_create</h2>
 <p>Construct <a class="el" href="bdev.html#bdev_config_malloc">Malloc bdev</a></p>
@@ -2566,7 +2625,9 @@ bdev_nvme_set_options</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">fast_io_fail_timeout_sec   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">Time to wait until ctrlr is reconnected before failing I/O to ctrlr. 0 means no such timeout.    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">disable_auto_failback   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Disable automatic failback. The RPC bdev_nvme_set_preferred_path can be used to do manual failback.   </td></tr>
+<td class="markdownTableBodyNone">disable_auto_failback   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Disable automatic failback. The RPC bdev_nvme_set_preferred_path can be used to do manual failback.    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">generate_uuids   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Enable generation of UUIDs for NVMe bdevs that do not provide this value themselves.   </td></tr>
 </table>
 <h3>Example</h3>
 <p>Example request:</p>

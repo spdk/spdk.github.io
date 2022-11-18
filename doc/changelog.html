@@ -103,6 +103,7 @@ v23.01: (Upcoming Release)</h1>
 <p>The RPC <code>bdev_get_iostat</code> now allows a user to query the per channel IO statistics for required bdev.</p>
 <p>New <code>spdk_bdev_copy_blocks</code> and <code>spdk_bdev_get_max_copy</code> APIs to support copy commands.</p>
 <p>A new API <code>spdk_bdev_io_get_submit_tsc</code> was added to get the submit_tsc of the bdev I/O.</p>
+<p>Bdevs will no longer have UUIDs generated based on timestamp and are responsible for setting this field themselves. Generation of UUIDs for NVMe bdevs may be enabled by running <code>bdev_nvme_set_options</code> RPC with <code>--generate-uuids</code> option. These identifiers are based on serial number and namespace ID and will always be the same for a given device.</p>
 <h2>event</h2>
 <p>Added core lock file mechanism to prevent the same CPU cores from being used by multiple SPDK application instances.</p>
 <p>Added a command line switch to disable CPU locks on SPDK startup.</p>
