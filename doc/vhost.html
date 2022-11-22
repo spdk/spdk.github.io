@@ -193,7 +193,7 @@ Example output</h2>
 <div class="line">EAL: PCI device 0000:01:00.0 on NUMA socket 0</div>
 <div class="line">EAL:   probe driver: 8086:953 spdk_nvme</div>
 <div class="line">EAL:   using IOMMU type 1 (Type 1)</div>
-</div><!-- fragment --><div class="fragment"><div class="line">host:~# ./scripts/rpc.py bdev_malloc_create 128 4096 Malloc0</div>
+</div><!-- fragment --><div class="fragment"><div class="line">host:~# ./scripts/rpc.py bdev_malloc_create 128 4096 -b Malloc0</div>
 <div class="line">Malloc0</div>
 </div><!-- fragment --><div class="fragment"><div class="line">host:~# ./scripts/rpc.py vhost_create_scsi_controller --cpumask 0x1 vhost.0</div>
 <div class="line">VHOST_CONFIG: vhost-user server: socket created, fd: 21</div>

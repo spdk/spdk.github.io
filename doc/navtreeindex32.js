@@ -1,5 +1,8 @@
 var NAVTREEINDEX32 =
 {
+"vhost_8h.html#afa85eecef82ce3ee26fd16a210be9466":[16,0,63,6],
+"vhost_8h.html#afd4fd557673a9bc3518add4f5c0d611b":[16,0,63,13],
+"vhost_8h.html#afd7159f8eb1e0d65dad5bedaa6cc5e43":[16,0,63,23],
 "vhost_8h.html#afe5b0a12a12a26d2ddfe6a64f2a8a5e2":[16,0,63,15],
 "vhost_processing.html":[2,5],
 "vhost_processing.html#vhost_processing_init":[2,5,3],

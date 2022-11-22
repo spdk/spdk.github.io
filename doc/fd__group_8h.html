@@ -132,6 +132,9 @@ Functions</h2></td></tr>
 <tr class="memitem:aa9202f833c0b499860baf4d1ae6318ab"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fd__group_8h.html#aa9202f833c0b499860baf4d1ae6318ab">spdk_fd_group_event_modify</a> (struct spdk_fd_group *fgrp, int efd, int event_types)</td></tr>
 <tr class="memdesc:aa9202f833c0b499860baf4d1ae6318ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Change the event notification types associated with the event source.  <a href="fd__group_8h.html#aa9202f833c0b499860baf4d1ae6318ab">More...</a><br /></td></tr>
 <tr class="separator:aa9202f833c0b499860baf4d1ae6318ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd63f6ecc32f0ddef82a188d19824f56"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fd__group_8h.html#acd63f6ecc32f0ddef82a188d19824f56">spdk_fd_group_get_epoll_event</a> (struct epoll_event *event)</td></tr>
+<tr class="memdesc:acd63f6ecc32f0ddef82a188d19824f56"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copies the epoll(7) event that caused a callback function to execute.  <a href="fd__group_8h.html#acd63f6ecc32f0ddef82a188d19824f56">More...</a><br /></td></tr>
+<tr class="separator:acd63f6ecc32f0ddef82a188d19824f56"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>File descriptor group utility functions. </p>
@@ -316,6 +319,34 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 if success or -errno if failed </dd></dl>
+
+</div>
+</div>
+<a id="acd63f6ecc32f0ddef82a188d19824f56"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acd63f6ecc32f0ddef82a188d19824f56">&#9670;&nbsp;</a></span>spdk_fd_group_get_epoll_event()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_fd_group_get_epoll_event </td>
+          <td>(</td>
+          <td class="paramtype">struct epoll_event *&#160;</td>
+          <td class="paramname"><em>event</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Copies the epoll(7) event that caused a callback function to execute. </p>
+<p>This function can only be called by the callback function, doing otherwise results in undefined behavior.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">event</td><td>pointer to an epoll(7) event to copy to </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, -errno on error </dd></dl>
 
 </div>
 </div>
