@@ -117,6 +117,9 @@ v23.01: (Upcoming Release)</h1>
 <p>New API <code>spdk_fd_group_get_epoll_event</code> that returns the epoll(7) event that caused a function callback in file descriptor group to execute.</p>
 <h2>json</h2>
 <p>Added API <code>spdk_json_write_double</code> and <code>spdk_json_write_named_double</code> to allow for writing and decoding of the the double data type.</p>
+<h2>thread</h2>
+<p>Added <code>spdk_thread_get_app_thread</code> which returns the first thread that was created using <code>spdk_thread_create</code>.</p>
+<p>Added <code>spdk_thread_is_running</code>. This returns <code>true</code> for a running thread, or <code>false</code> if its exit process has started using <code>spdk_thread_exit</code>.</p>
 <h1>v22.09</h1>
 <h2>accel</h2>
 <p>Many names were changed in the accel framework to make them consistent both with themselves and the rest of SPDK. The primary public header file is now named <code><a class="el" href="accel_8h.html" title="Acceleration Framework.">include/spdk/accel.h</a></code>.</p>
