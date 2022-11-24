@@ -133,10 +133,10 @@ struct spdk_bdev_qos *&#160;</td><td class="memItemRight" valign="bottom"><a cla
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev_1_1____bdev__internal__fields.html#add102c5c15292b5d497ed7442a0b30b4">qos_mod_in_progress</a></td></tr>
 <tr class="memdesc:add102c5c15292b5d497ed7442a0b30b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">True if the state of the QoS is being modified. <br /></td></tr>
 <tr class="separator:add102c5c15292b5d497ed7442a0b30b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afbc0b1652cb9968462a77765a081ef32"><td class="memItemLeft" align="right" valign="top"><a id="afbc0b1652cb9968462a77765a081ef32"></a>
-pthread_mutex_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev_1_1____bdev__internal__fields.html#afbc0b1652cb9968462a77765a081ef32">mutex</a></td></tr>
-<tr class="memdesc:afbc0b1652cb9968462a77765a081ef32"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mutex protecting claimed. <br /></td></tr>
-<tr class="separator:afbc0b1652cb9968462a77765a081ef32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acce313a933ea3af0bf0c1f702d1bfee4"><td class="memItemLeft" align="right" valign="top"><a id="acce313a933ea3af0bf0c1f702d1bfee4"></a>
+pthread_spinlock_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev_1_1____bdev__internal__fields.html#acce313a933ea3af0bf0c1f702d1bfee4">spinlock</a></td></tr>
+<tr class="memdesc:acce313a933ea3af0bf0c1f702d1bfee4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Spin lock protecting claimed. <br /></td></tr>
+<tr class="separator:acce313a933ea3af0bf0c1f702d1bfee4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a75eb824f166523af1bb44edc6b209e89"><td class="memItemLeft" align="right" valign="top"><a id="a75eb824f166523af1bb44edc6b209e89"></a>
 enum <a class="el" href="bdev_8h.html#ad6c166f5d928c2995df57c96a2977862">spdk_bdev_status</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev_1_1____bdev__internal__fields.html#a75eb824f166523af1bb44edc6b209e89">status</a></td></tr>
 <tr class="memdesc:a75eb824f166523af1bb44edc6b209e89"><td class="mdescLeft">&#160;</td><td class="mdescRight">The bdev status. <br /></td></tr>

@@ -25,9 +25,9 @@ var searchData=
   ['media_5fevents_448',['media_events',['../structspdk__bdev.html#acec83a7ec7f21c7a88d644dad2f0a8fe',1,'spdk_bdev']]],
   ['medium_5fpriority_5fweight_449',['medium_priority_weight',['../structspdk__nvme__ctrlr__opts.html#a27a08a6255c8bd76a4476e08e1ed1816',1,'spdk_nvme_ctrlr_opts']]],
   ['memory_5fdomain_450',['memory_domain',['../structspdk__bdev__ext__io__opts.html#a8b736dcfb98e944e61f82cf7718eefa0',1,'spdk_bdev_ext_io_opts::memory_domain()'],['../structspdk__blob__ext__io__opts.html#ad769b76ce28078619fd8cbeb538678c4',1,'spdk_blob_ext_io_opts::memory_domain()'],['../structspdk__nvme__ns__cmd__ext__io__opts.html#a5aab95af972156394ee4079209e333a3',1,'spdk_nvme_ns_cmd_ext_io_opts::memory_domain()']]],
-  ['memory_5fdomain_5fctx_451',['memory_domain_ctx',['../structspdk__nvme__ns__cmd__ext__io__opts.html#a010b39b5953bce0081a478d18663adff',1,'spdk_nvme_ns_cmd_ext_io_opts::memory_domain_ctx()'],['../structspdk__blob__ext__io__opts.html#a3efaa4a0137d035385ec697fbf62ef18',1,'spdk_blob_ext_io_opts::memory_domain_ctx()'],['../structspdk__bdev__ext__io__opts.html#aa4271dfcb5fb8f49bbfeada4218dc406',1,'spdk_bdev_ext_io_opts::memory_domain_ctx()']]],
+  ['memory_5fdomain_5fctx_451',['memory_domain_ctx',['../structspdk__blob__ext__io__opts.html#a3efaa4a0137d035385ec697fbf62ef18',1,'spdk_blob_ext_io_opts::memory_domain_ctx()'],['../structspdk__nvme__ns__cmd__ext__io__opts.html#a010b39b5953bce0081a478d18663adff',1,'spdk_nvme_ns_cmd_ext_io_opts::memory_domain_ctx()'],['../structspdk__bdev__ext__io__opts.html#aa4271dfcb5fb8f49bbfeada4218dc406',1,'spdk_bdev_ext_io_opts::memory_domain_ctx()']]],
   ['message_20passing_20and_20concurrency_452',['Message Passing and Concurrency',['../concurrency.html',1,'concepts']]],
-  ['metadata_453',['metadata',['../structspdk__bdev__ext__io__opts.html#a5ae64c46e4b23b497d89858691a70c63',1,'spdk_bdev_ext_io_opts::metadata()'],['../structspdk__nvme__ns__cmd__ext__io__opts.html#a91ecb6c1952638d59510c2b36340b1d7',1,'spdk_nvme_ns_cmd_ext_io_opts::metadata()']]],
+  ['metadata_453',['metadata',['../structspdk__nvme__ns__cmd__ext__io__opts.html#a91ecb6c1952638d59510c2b36340b1d7',1,'spdk_nvme_ns_cmd_ext_io_opts::metadata()'],['../structspdk__bdev__ext__io__opts.html#a5ae64c46e4b23b497d89858691a70c63',1,'spdk_bdev_ext_io_opts::metadata()']]],
   ['miscellaneous_454',['Miscellaneous',['../misc.html',1,'']]],
   ['mjr_455',['mjr',['../structspdk__ocssd__geometry__data.html#a1e42dcab27a59b02df913acc08e129b4',1,'spdk_ocssd_geometry_data::mjr()'],['../unionspdk__nvme__vs__register.html#a605cba0b2c6abdee150cb3a6babc4bb8',1,'spdk_nvme_vs_register::mjr()']]],
   ['mmio_2eh_456',['mmio.h',['../mmio_8h.html',1,'']]],
@@ -51,7 +51,6 @@ var searchData=
   ['msrc_474',['msrc',['../structspdk__nvme__ns__data.html#af2e557174f2bc0a5b8c5c95e15237d8d',1,'spdk_nvme_ns_data']]],
   ['mssrl_475',['mssrl',['../structspdk__nvme__ns__data.html#a55dc985c0da5776763fb5a0c9e682e11',1,'spdk_nvme_ns_data']]],
   ['mtfa_476',['mtfa',['../structspdk__nvme__ctrlr__data.html#a33d743e0631e477035fdaec206d2964b',1,'spdk_nvme_ctrlr_data']]],
-  ['mutex_477',['mutex',['../structspdk__bdev_1_1____bdev__internal__fields.html#afbc0b1652cb9968462a77765a081ef32',1,'spdk_bdev::__bdev_internal_fields']]],
-  ['mw_5fcunits_478',['mw_cunits',['../structspdk__ocssd__geometry__data.html#af02812ac810e3da324a4ff8029f6d045',1,'spdk_ocssd_geometry_data']]],
-  ['mxtmt_479',['mxtmt',['../structspdk__nvme__ctrlr__data.html#a25cabf290433b1b9b13a1a604ca12f58',1,'spdk_nvme_ctrlr_data']]]
+  ['mw_5fcunits_477',['mw_cunits',['../structspdk__ocssd__geometry__data.html#af02812ac810e3da324a4ff8029f6d045',1,'spdk_ocssd_geometry_data']]],
+  ['mxtmt_478',['mxtmt',['../structspdk__nvme__ctrlr__data.html#a25cabf290433b1b9b13a1a604ca12f58',1,'spdk_nvme_ctrlr_data']]]
 ];
