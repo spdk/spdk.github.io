@@ -1,5 +1,6 @@
 var NAVTREEINDEX8 =
 {
+"nvme.html":[7,0],
 "nvme.html#nvme_cuse":[7,0,8],
 "nvme.html#nvme_design":[7,0,4],
 "nvme.html#nvme_examples":[7,0,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX8 =
 "nvme_8h.html#af654a7a016511f265b29294fd06ce26e":[16,0,40,80],
 "nvme_8h.html#af755eb3e5a5f767a5bdc544d85667898":[16,0,40,179],
 "nvme_8h.html#af7868a6f646a6d1bd70d5c1b8ce5757f":[16,0,40,212],
-"nvme_8h.html#af80940dd87891e9632f6a309ec75f822":[16,0,40,16],
-"nvme_8h.html#af8a3c1f4f6b5595426fb9bd8974a85fe":[16,0,40,65]
+"nvme_8h.html#af80940dd87891e9632f6a309ec75f822":[16,0,40,16]
 };

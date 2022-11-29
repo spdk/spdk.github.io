@@ -541,6 +541,9 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_set_opts</b>
 <tr class="memitem:aacf15571883da5a441297b5090e6aaf5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev_8h.html#aacf15571883da5a441297b5090e6aaf5">spdk_bdev_histogram_get</a> (struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *bdev, struct <a class="el" href="structspdk__histogram__data.html">spdk_histogram_data</a> *histogram, spdk_bdev_histogram_data_cb cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:aacf15571883da5a441297b5090e6aaf5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get aggregated histogram data from a bdev.  <a href="bdev_8h.html#aacf15571883da5a441297b5090e6aaf5">More...</a><br /></td></tr>
 <tr class="separator:aacf15571883da5a441297b5090e6aaf5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6bfef2d4c66eb1fb44c0fdb69bb788d3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev_8h.html#a6bfef2d4c66eb1fb44c0fdb69bb788d3">spdk_bdev_channel_get_histogram</a> (struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *bdev, struct spdk_io_channel *ch, spdk_bdev_histogram_data_cb cb_fn, void *cb_arg)</td></tr>
+<tr class="memdesc:a6bfef2d4c66eb1fb44c0fdb69bb788d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get histogram data of the specified channel for a bdev.  <a href="bdev_8h.html#a6bfef2d4c66eb1fb44c0fdb69bb788d3">More...</a><br /></td></tr>
+<tr class="separator:a6bfef2d4c66eb1fb44c0fdb69bb788d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af359a282820d73a253ffbbe127a30b96"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev_8h.html#af359a282820d73a253ffbbe127a30b96">spdk_bdev_get_media_events</a> (struct spdk_bdev_desc *bdev_desc, struct <a class="el" href="structspdk__bdev__media__event.html">spdk_bdev_media_event</a> *events, size_t max_events)</td></tr>
 <tr class="memdesc:af359a282820d73a253ffbbe127a30b96"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves media events.  <a href="bdev_8h.html#af359a282820d73a253ffbbe127a30b96">More...</a><br /></td></tr>
 <tr class="separator:af359a282820d73a253ffbbe127a30b96"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -876,6 +879,58 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_set_opts</b>
 <li>-ENOTSUP - the bdev does not support abort. </li>
 </ul>
 </dd></dl>
+
+</div>
+</div>
+<a id="a6bfef2d4c66eb1fb44c0fdb69bb788d3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6bfef2d4c66eb1fb44c0fdb69bb788d3">&#9670;&nbsp;</a></span>spdk_bdev_channel_get_histogram()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_bdev_channel_get_histogram </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *&#160;</td>
+          <td class="paramname"><em>bdev</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct spdk_io_channel *&#160;</td>
+          <td class="paramname"><em>ch</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">spdk_bdev_histogram_data_cb&#160;</td>
+          <td class="paramname"><em>cb_fn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>cb_arg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get histogram data of the specified channel for a bdev. </p>
+<p>The histogram passed to cb_fn is only valid during the execution of cb_fn. Referencing the histogram after cb_fn returns is not supported and yields undetermined behavior.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bdev</td><td>Block device. </td></tr>
+    <tr><td class="paramname">ch</td><td>IO channel of bdev. </td></tr>
+    <tr><td class="paramname">cb_fn</td><td>Callback function to process the histogram of the channel. </td></tr>
+    <tr><td class="paramname">cb_arg</td><td>Argument to pass to cb_fn. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
