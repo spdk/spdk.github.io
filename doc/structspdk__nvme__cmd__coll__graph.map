@@ -1,5 +1,5 @@
 <map id="spdk_nvme_cmd" name="spdk_nvme_cmd">
-<area shape="rect" id="node1" title=" " alt="" coords="773,468,905,495"/>
+<area shape="rect" id="node1" title=" " alt="" coords="773,493,905,520"/>
 <area shape="rect" id="node2" href="$unionspdk__nvme__cmd__cdw10.html" title=" " alt="" coords="460,417,641,444"/>
 <area shape="rect" id="node3" href="$unionspdk__nvme__cmd__cdw11.html" title=" " alt="" coords="460,468,641,495"/>
 <area shape="rect" id="node4" href="$unionspdk__nvme__feat__error__recovery.html" title="Data used by Set Features/Get Features SPDK_NVME_FEAT_ERROR_RECOVERY." alt="" coords="31,17,199,58"/>
@@ -17,5 +17,6 @@
 <area shape="rect" id="node16" href="$unionspdk__nvme__feat__reservation__notification__mask.html" title="Data used by Set Features/Get Features SPDK_NVME_FEAT_HOST_RESERVE_MASK." alt="" coords="9,787,220,829"/>
 <area shape="rect" id="node17" href="$unionspdk__nvme__feat__write__atomicity.html" title="Data used by Set Features/Get Features SPDK_NVME_FEAT_WRITE_ATOMICITY." alt="" coords="29,853,200,894"/>
 <area shape="rect" id="node18" href="$unionspdk__nvme__feat__async__event__configuration.html" title="Data used by Set Features / Get Features SPDK_NVME_FEAT_ASYNC_EVENT_CONFIGURATION." alt="" coords="27,918,202,959"/>
-<area shape="rect" id="node19" href="$structspdk__nvme__sgl__descriptor.html" title=" " alt="" coords="453,519,648,545"/>
+<area shape="rect" id="node19" href="$unionspdk__nvme__cmd__cdw12.html" title=" " alt="" coords="460,519,641,545"/>
+<area shape="rect" id="node20" href="$structspdk__nvme__sgl__descriptor.html" title=" " alt="" coords="453,569,648,596"/>
 </map>

@@ -136,6 +136,7 @@ var annotated_dup =
     [ "spdk_nvme_cmd", "structspdk__nvme__cmd.html", "structspdk__nvme__cmd" ],
     [ "spdk_nvme_cmd_cdw10", "unionspdk__nvme__cmd__cdw10.html", "unionspdk__nvme__cmd__cdw10" ],
     [ "spdk_nvme_cmd_cdw11", "unionspdk__nvme__cmd__cdw11.html", "unionspdk__nvme__cmd__cdw11" ],
+    [ "spdk_nvme_cmd_cdw12", "unionspdk__nvme__cmd__cdw12.html", "unionspdk__nvme__cmd__cdw12" ],
     [ "spdk_nvme_cmds_and_effect_entry", "structspdk__nvme__cmds__and__effect__entry.html", "structspdk__nvme__cmds__and__effect__entry" ],
     [ "spdk_nvme_cmds_and_effect_log_page", "structspdk__nvme__cmds__and__effect__log__page.html", "structspdk__nvme__cmds__and__effect__log__page" ],
     [ "spdk_nvme_cpl", "structspdk__nvme__cpl.html", "structspdk__nvme__cpl" ],

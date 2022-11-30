@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="generator" content="Doxygen 1.9.1" />
-  <title>SPDK: spdk_nvme_async_event_completion Union Reference</title>
+  <title>SPDK: spdk_nvme_cmd_cdw12 Union Reference</title>
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
@@ -66,7 +66,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-$(document).ready(function(){initNavTree('unionspdk__nvme__async__event__completion.html',''); initResizable(); });
+$(document).ready(function(){initNavTree('unionspdk__nvme__cmd__cdw12.html',''); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -88,41 +88,51 @@ $(document).ready(function(){initNavTree('unionspdk__nvme__async__event__complet
   <div class="summary">
 <a href="#pub-attribs">Data Fields</a>  </div>
   <div class="headertitle">
-<div class="title">spdk_nvme_async_event_completion Union Reference</div>  </div>
+<div class="title">spdk_nvme_cmd_cdw12 Union Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-
-<p>Asynchronous Event Request Completion.  
- <a href="unionspdk__nvme__async__event__completion.html#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:a20c8319fea9c5a80c719b063324c5bac"><td class="memItemLeft" align="right" valign="top"><a id="a20c8319fea9c5a80c719b063324c5bac"></a>
+<tr class="memitem:a20f9def09c785f5c107325b8d0765df1"><td class="memItemLeft" align="right" valign="top"><a id="a20f9def09c785f5c107325b8d0765df1"></a>
 uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>raw</b></td></tr>
-<tr class="separator:a20c8319fea9c5a80c719b063324c5bac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adc5af7a7a9b273f0da7a7a8ff7b964ee"><td class="memItemLeft" ><a id="adc5af7a7a9b273f0da7a7a8ff7b964ee"></a>
+<tr class="separator:a20f9def09c785f5c107325b8d0765df1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8da65c21601feb84d8416c21858a0ca4"><td class="memItemLeft" ><a id="a8da65c21601feb84d8416c21858a0ca4"></a>
 struct {</td></tr>
-<tr class="memitem:a13ff017612679be22d625b8da2f95345"><td class="memItemLeft" >
-&#160;&#160;&#160;uint32_t&#160;&#160;&#160;<b>async_event_type</b>: 3</td></tr>
-<tr class="separator:a13ff017612679be22d625b8da2f95345"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2f8dc01b1020f5a2cf568f388f43d739"><td class="memItemLeft" >
-&#160;&#160;&#160;uint32_t&#160;&#160;&#160;<b>reserved1</b>: 5</td></tr>
-<tr class="separator:a2f8dc01b1020f5a2cf568f388f43d739"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab0fbf3d71c660b4d8e68b12114fadd10"><td class="memItemLeft" >
-&#160;&#160;&#160;uint32_t&#160;&#160;&#160;<b>async_event_info</b>: 8</td></tr>
-<tr class="separator:ab0fbf3d71c660b4d8e68b12114fadd10"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab85d999b9da41ded48ad4d67fb7a1272"><td class="memItemLeft" >
-&#160;&#160;&#160;uint32_t&#160;&#160;&#160;<b>log_page_identifier</b>: 8</td></tr>
-<tr class="separator:ab85d999b9da41ded48ad4d67fb7a1272"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a560a7b70966bbcce27c735ebb89f95f6"><td class="memItemLeft" >
-&#160;&#160;&#160;uint32_t&#160;&#160;&#160;<b>reserved2</b>: 8</td></tr>
-<tr class="separator:a560a7b70966bbcce27c735ebb89f95f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adc5af7a7a9b273f0da7a7a8ff7b964ee"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><b>bits</b></td></tr>
-<tr class="separator:adc5af7a7a9b273f0da7a7a8ff7b964ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c87a83d2663839349bf255e4318e004"><td class="memItemLeft" >
+&#160;&#160;&#160;uint32_t&#160;&#160;&#160;<b>nr</b>: 8</td></tr>
+<tr class="separator:a1c87a83d2663839349bf255e4318e004"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a1d0afad3dc0fdb2bee10cab0fcf781"><td class="memItemLeft" >
+&#160;&#160;&#160;uint32_t&#160;&#160;&#160;<b>df</b>: 4</td></tr>
+<tr class="separator:a5a1d0afad3dc0fdb2bee10cab0fcf781"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ece467424af7432451820ac3ef16a8a"><td class="memItemLeft" >
+&#160;&#160;&#160;uint32_t&#160;&#160;&#160;<b>prinfor</b>: 4</td></tr>
+<tr class="separator:a4ece467424af7432451820ac3ef16a8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61fb956ecc261ec4d2b6a7da19661086"><td class="memItemLeft" >
+&#160;&#160;&#160;uint32_t&#160;&#160;&#160;<b>reserved</b>: 4</td></tr>
+<tr class="separator:a61fb956ecc261ec4d2b6a7da19661086"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80ed32016a7666b889ef06ad80363439"><td class="memItemLeft" >
+&#160;&#160;&#160;uint32_t&#160;&#160;&#160;<b>dtype</b>: 4</td></tr>
+<tr class="separator:a80ed32016a7666b889ef06ad80363439"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23f1e8668d8c25180f27a86359220eb2"><td class="memItemLeft" >
+&#160;&#160;&#160;uint32_t&#160;&#160;&#160;<b>stcw</b>: 1</td></tr>
+<tr class="separator:a23f1e8668d8c25180f27a86359220eb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66eab25b8cb37dd722332a878e7b8d7e"><td class="memItemLeft" >
+&#160;&#160;&#160;uint32_t&#160;&#160;&#160;<b>reserved2</b>: 1</td></tr>
+<tr class="separator:a66eab25b8cb37dd722332a878e7b8d7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a543456c2dd9436366389cecc180f44d8"><td class="memItemLeft" >
+&#160;&#160;&#160;uint32_t&#160;&#160;&#160;<b>prinfow</b>: 4</td></tr>
+<tr class="separator:a543456c2dd9436366389cecc180f44d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff4ea354b9e056339398a67338bb057f"><td class="memItemLeft" >
+&#160;&#160;&#160;uint32_t&#160;&#160;&#160;<b>fua</b>: 1</td></tr>
+<tr class="separator:aff4ea354b9e056339398a67338bb057f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b3e8520db10e470a8c60519c9d533c4"><td class="memItemLeft" >
+&#160;&#160;&#160;uint32_t&#160;&#160;&#160;<b>lr</b>: 1</td></tr>
+<tr class="separator:a2b3e8520db10e470a8c60519c9d533c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8da65c21601feb84d8416c21858a0ca4"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><b>copy</b></td></tr>
+<tr class="separator:a8da65c21601feb84d8416c21858a0ca4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Asynchronous Event Request Completion. </p>
-</div><hr/>The documentation for this union was generated from the following file:<ul>
+<hr/>The documentation for this union was generated from the following file:<ul>
 <li><a class="el" href="nvme__spec_8h.html">nvme_spec.h</a></li>
 </ul>
 </div><!-- contents -->

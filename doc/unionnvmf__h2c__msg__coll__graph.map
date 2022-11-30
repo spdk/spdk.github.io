@@ -1,11 +1,12 @@
 <map id="nvmf_h2c_msg" name="nvmf_h2c_msg">
-<area shape="rect" id="node1" title=" " alt="" coords="701,195,823,221"/>
-<area shape="rect" id="node2" href="$structspdk__nvme__cmd.html" title=" " alt="" coords="375,65,507,92"/>
+<area shape="rect" id="node1" title=" " alt="" coords="701,233,823,260"/>
+<area shape="rect" id="node2" href="$structspdk__nvme__cmd.html" title=" " alt="" coords="375,104,507,131"/>
 <area shape="rect" id="node3" href="$unionspdk__nvme__cmd__cdw10.html" title=" " alt="" coords="12,5,193,32"/>
 <area shape="rect" id="node4" href="$unionspdk__nvme__cmd__cdw11.html" title=" " alt="" coords="12,56,193,83"/>
-<area shape="rect" id="node5" href="$structspdk__nvme__sgl__descriptor.html" title=" " alt="" coords="5,127,200,153"/>
-<area shape="rect" id="node8" href="$structspdk__nvmf__fabric__connect__cmd.html" title=" " alt="" coords="325,136,556,163"/>
-<area shape="rect" id="node6" href="$structspdk__nvmf__fabric__prop__get__cmd.html" title=" " alt="" coords="353,187,528,229"/>
-<area shape="rect" id="node7" href="$structspdk__nvmf__fabric__prop__set__cmd.html" title=" " alt="" coords="353,253,528,294"/>
-<area shape="rect" id="node9" href="$structspdk__nvmf__capsule__cmd.html" title=" " alt="" coords="347,319,534,345"/>
+<area shape="rect" id="node5" href="$unionspdk__nvme__cmd__cdw12.html" title=" " alt="" coords="12,107,193,133"/>
+<area shape="rect" id="node6" href="$structspdk__nvme__sgl__descriptor.html" title=" " alt="" coords="5,175,200,201"/>
+<area shape="rect" id="node9" href="$structspdk__nvmf__fabric__connect__cmd.html" title=" " alt="" coords="325,175,556,201"/>
+<area shape="rect" id="node7" href="$structspdk__nvmf__fabric__prop__get__cmd.html" title=" " alt="" coords="353,226,528,267"/>
+<area shape="rect" id="node8" href="$structspdk__nvmf__fabric__prop__set__cmd.html" title=" " alt="" coords="353,291,528,333"/>
+<area shape="rect" id="node10" href="$structspdk__nvmf__capsule__cmd.html" title=" " alt="" coords="347,357,534,384"/>
 </map>
