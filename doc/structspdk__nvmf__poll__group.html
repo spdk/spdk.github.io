@@ -128,6 +128,9 @@ struct spdk_nvmf_subsystem_poll_group *&#160;</td><td class="memItemRight" valig
 <tr class="memitem:ad1682c942edc972b61450cdb7e775445"><td class="memItemLeft" align="right" valign="top"><a id="ad1682c942edc972b61450cdb7e775445"></a>
 uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>num_sgroups</b></td></tr>
 <tr class="separator:ad1682c942edc972b61450cdb7e775445"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49ae0a3dede90b1faacb7541d31d7f62"><td class="memItemLeft" align="right" valign="top"><a id="a49ae0a3dede90b1faacb7541d31d7f62"></a>
+uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>current_unassociated_qpairs</b></td></tr>
+<tr class="separator:a49ae0a3dede90b1faacb7541d31d7f62"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac59498d3fc905b4fd575454cda8707ff"><td class="memItemLeft" align="right" valign="top"><a id="ac59498d3fc905b4fd575454cda8707ff"></a>
 struct <a class="el" href="structspdk__nvmf__poll__group__stat.html">spdk_nvmf_poll_group_stat</a>&#160;</td><td class="memItemRight" valign="bottom"><b>stat</b></td></tr>
 <tr class="separator:ac59498d3fc905b4fd575454cda8707ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -137,6 +140,9 @@ spdk_nvmf_poll_group_destroy_done_fn&#160;</td><td class="memItemRight" valign="
 <tr class="memitem:a44051fa722dc9c61b9fed4d4a1ae8850"><td class="memItemLeft" align="right" valign="top"><a id="a44051fa722dc9c61b9fed4d4a1ae8850"></a>
 void *&#160;</td><td class="memItemRight" valign="bottom"><b>destroy_cb_arg</b></td></tr>
 <tr class="separator:a44051fa722dc9c61b9fed4d4a1ae8850"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8252a37d2277d0af535801aaa64adf91"><td class="memItemLeft" align="right" valign="top"><a id="a8252a37d2277d0af535801aaa64adf91"></a>
+pthread_mutex_t&#160;</td><td class="memItemRight" valign="bottom"><b>mutex</b></td></tr>
+<tr class="separator:a8252a37d2277d0af535801aaa64adf91"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li><a class="el" href="nvmf__transport_8h.html">nvmf_transport.h</a></li>
