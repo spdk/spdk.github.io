@@ -95,37 +95,48 @@ $(document).ready(function(){initNavTree('structspdk__vfu__endpoint__ops.html','
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
 <tr class="memitem:a72fd2cc7fbb787f9dc785083900de668"><td class="memItemLeft" align="right" valign="top"><a id="a72fd2cc7fbb787f9dc785083900de668"></a>
-char&#160;</td><td class="memItemRight" valign="bottom"><b>name</b> [SPDK_VFU_MAX_NAME_LEN]</td></tr>
+char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__vfu__endpoint__ops.html#a72fd2cc7fbb787f9dc785083900de668">name</a> [SPDK_VFU_MAX_NAME_LEN]</td></tr>
+<tr class="memdesc:a72fd2cc7fbb787f9dc785083900de668"><td class="mdescLeft">&#160;</td><td class="mdescRight">Backend emulated PCI device type name. <br /></td></tr>
 <tr class="separator:a72fd2cc7fbb787f9dc785083900de668"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afe8776dc6275b83229f963591c2f3871"><td class="memItemLeft" align="right" valign="top"><a id="afe8776dc6275b83229f963591c2f3871"></a>
-void *(*&#160;</td><td class="memItemRight" valign="bottom"><b>init</b> )(struct spdk_vfu_endpoint *endpoint, char *basename, const char *endpoint_name)</td></tr>
+void *(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__vfu__endpoint__ops.html#afe8776dc6275b83229f963591c2f3871">init</a> )(struct spdk_vfu_endpoint *endpoint, char *basename, const char *endpoint_name)</td></tr>
+<tr class="memdesc:afe8776dc6275b83229f963591c2f3871"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize endpoint to PCI device with base path. <br /></td></tr>
 <tr class="separator:afe8776dc6275b83229f963591c2f3871"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3d0a126f68ccaaaff332d355013450f7"><td class="memItemLeft" align="right" valign="top"><a id="a3d0a126f68ccaaaff332d355013450f7"></a>
-int(*&#160;</td><td class="memItemRight" valign="bottom"><b>get_device_info</b> )(struct spdk_vfu_endpoint *endpoint, struct <a class="el" href="structspdk__vfu__pci__device.html">spdk_vfu_pci_device</a> *device_info)</td></tr>
+int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__vfu__endpoint__ops.html#a3d0a126f68ccaaaff332d355013450f7">get_device_info</a> )(struct spdk_vfu_endpoint *endpoint, struct <a class="el" href="structspdk__vfu__pci__device.html">spdk_vfu_pci_device</a> *device_info)</td></tr>
+<tr class="memdesc:a3d0a126f68ccaaaff332d355013450f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get PCI device information from backend device module. <br /></td></tr>
 <tr class="separator:a3d0a126f68ccaaaff332d355013450f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7867ffd354b1e31889cd8e865ba588d7"><td class="memItemLeft" align="right" valign="top"><a id="a7867ffd354b1e31889cd8e865ba588d7"></a>
-uint16_t(*&#160;</td><td class="memItemRight" valign="bottom"><b>get_vendor_capability</b> )(struct spdk_vfu_endpoint *endpoint, char *buf, uint16_t buf_len, uint16_t idx)</td></tr>
+uint16_t(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__vfu__endpoint__ops.html#a7867ffd354b1e31889cd8e865ba588d7">get_vendor_capability</a> )(struct spdk_vfu_endpoint *endpoint, char *buf, uint16_t buf_len, uint16_t idx)</td></tr>
+<tr class="memdesc:a7867ffd354b1e31889cd8e865ba588d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get vendor capabilitiy based on ID in PCI configuration space. <br /></td></tr>
 <tr class="separator:a7867ffd354b1e31889cd8e865ba588d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a797b54b7685b855adfd9dd72dfeaaecb"><td class="memItemLeft" align="right" valign="top"><a id="a797b54b7685b855adfd9dd72dfeaaecb"></a>
-int(*&#160;</td><td class="memItemRight" valign="bottom"><b>attach_device</b> )(struct spdk_vfu_endpoint *endpoint)</td></tr>
+int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__vfu__endpoint__ops.html#a797b54b7685b855adfd9dd72dfeaaecb">attach_device</a> )(struct spdk_vfu_endpoint *endpoint)</td></tr>
+<tr class="memdesc:a797b54b7685b855adfd9dd72dfeaaecb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Attach active connection to the PCI endpoint. <br /></td></tr>
 <tr class="separator:a797b54b7685b855adfd9dd72dfeaaecb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a69ef95e6406e57fac1fe4ca32a95aa20"><td class="memItemLeft" align="right" valign="top"><a id="a69ef95e6406e57fac1fe4ca32a95aa20"></a>
-int(*&#160;</td><td class="memItemRight" valign="bottom"><b>detach_device</b> )(struct spdk_vfu_endpoint *endpoint)</td></tr>
+int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__vfu__endpoint__ops.html#a69ef95e6406e57fac1fe4ca32a95aa20">detach_device</a> )(struct spdk_vfu_endpoint *endpoint)</td></tr>
+<tr class="memdesc:a69ef95e6406e57fac1fe4ca32a95aa20"><td class="mdescLeft">&#160;</td><td class="mdescRight">Detach the active connection of the PCI endpoint. <br /></td></tr>
 <tr class="separator:a69ef95e6406e57fac1fe4ca32a95aa20"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab3b853dbe1e51763b880e73f43ba560f"><td class="memItemLeft" align="right" valign="top"><a id="ab3b853dbe1e51763b880e73f43ba560f"></a>
-int(*&#160;</td><td class="memItemRight" valign="bottom"><b>destruct</b> )(struct spdk_vfu_endpoint *endpoint)</td></tr>
+int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__vfu__endpoint__ops.html#ab3b853dbe1e51763b880e73f43ba560f">destruct</a> )(struct spdk_vfu_endpoint *endpoint)</td></tr>
+<tr class="memdesc:ab3b853dbe1e51763b880e73f43ba560f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destruct the PCI endpoint. <br /></td></tr>
 <tr class="separator:ab3b853dbe1e51763b880e73f43ba560f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac6739696eb232d4a07fcabce312cb888"><td class="memItemLeft" align="right" valign="top"><a id="ac6739696eb232d4a07fcabce312cb888"></a>
-int(*&#160;</td><td class="memItemRight" valign="bottom"><b>post_memory_add</b> )(struct spdk_vfu_endpoint *endpoint, void *map_start, void *map_end)</td></tr>
+int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__vfu__endpoint__ops.html#ac6739696eb232d4a07fcabce312cb888">post_memory_add</a> )(struct spdk_vfu_endpoint *endpoint, void *map_start, void *map_end)</td></tr>
+<tr class="memdesc:ac6739696eb232d4a07fcabce312cb888"><td class="mdescLeft">&#160;</td><td class="mdescRight">Post-notification to backend module after a new memory region is added. <br /></td></tr>
 <tr class="separator:ac6739696eb232d4a07fcabce312cb888"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a00f7d1fb286931725b14f5f410bbcd33"><td class="memItemLeft" align="right" valign="top"><a id="a00f7d1fb286931725b14f5f410bbcd33"></a>
-int(*&#160;</td><td class="memItemRight" valign="bottom"><b>pre_memory_remove</b> )(struct spdk_vfu_endpoint *endpoint, void *map_start, void *map_end)</td></tr>
+int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__vfu__endpoint__ops.html#a00f7d1fb286931725b14f5f410bbcd33">pre_memory_remove</a> )(struct spdk_vfu_endpoint *endpoint, void *map_start, void *map_end)</td></tr>
+<tr class="memdesc:a00f7d1fb286931725b14f5f410bbcd33"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pre-notification to backend module before removing the memory region. <br /></td></tr>
 <tr class="separator:a00f7d1fb286931725b14f5f410bbcd33"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa03b83e4619fc137e847e3e327428a87"><td class="memItemLeft" align="right" valign="top"><a id="aa03b83e4619fc137e847e3e327428a87"></a>
-int(*&#160;</td><td class="memItemRight" valign="bottom"><b>reset_device</b> )(struct spdk_vfu_endpoint *endpoint)</td></tr>
+int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__vfu__endpoint__ops.html#aa03b83e4619fc137e847e3e327428a87">reset_device</a> )(struct spdk_vfu_endpoint *endpoint)</td></tr>
+<tr class="memdesc:aa03b83e4619fc137e847e3e327428a87"><td class="mdescLeft">&#160;</td><td class="mdescRight">PCI device reset callback. <br /></td></tr>
 <tr class="separator:aa03b83e4619fc137e847e3e327428a87"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:affb0058441fbe6b1782cf71400006c6c"><td class="memItemLeft" align="right" valign="top"><a id="affb0058441fbe6b1782cf71400006c6c"></a>
-int(*&#160;</td><td class="memItemRight" valign="bottom"><b>quiesce_device</b> )(struct spdk_vfu_endpoint *endpoint)</td></tr>
+int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__vfu__endpoint__ops.html#affb0058441fbe6b1782cf71400006c6c">quiesce_device</a> )(struct spdk_vfu_endpoint *endpoint)</td></tr>
+<tr class="memdesc:affb0058441fbe6b1782cf71400006c6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">PCI device quiesce callback, after this callback, the backend device module should stopping processing any IOs. <br /></td></tr>
 <tr class="separator:affb0058441fbe6b1782cf71400006c6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this struct was generated from the following file:<ul>
