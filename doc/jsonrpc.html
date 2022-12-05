@@ -959,6 +959,63 @@ trace_get_tpoint_group_mask</h2>
 <div class="line">    }</div>
 <div class="line">  }</div>
 <div class="line">}</div>
+</div><!-- fragment --><h2><a class="anchor" id="rpc_trace_get_info"></a>
+trace_get_info</h2>
+<p>Get name of shared memory file, list of the available trace point groups and mask of the available trace points for each group</p>
+<h3>Parameters</h3>
+<p>No parameters required</p>
+<h3>Example</h3>
+<p>Example request:</p>
+<div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
+<div class="line">  &quot;method&quot;: &quot;trace_get_info&quot;,</div>
+<div class="line">  &quot;id&quot;: 1</div>
+<div class="line">}</div>
+</div><!-- fragment --><p>Example response:</p>
+<div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
+<div class="line">  &quot;id&quot;: 1,</div>
+<div class="line">  &quot;result&quot;: {</div>
+<div class="line">    &quot;tpoint_shm_path&quot;: &quot;/dev/shm/spdk_tgt_trace.pid3071944&quot;,</div>
+<div class="line">    &quot;tpoint_group_mask&quot;: &quot;0x8&quot;,</div>
+<div class="line">    &quot;iscsi_conn&quot;: {</div>
+<div class="line">      &quot;mask&quot;: &quot;0x2&quot;,</div>
+<div class="line">      &quot;tpoint_mask&quot;: &quot;0x0&quot;</div>
+<div class="line">    },</div>
+<div class="line">    &quot;scsi&quot;: {</div>
+<div class="line">      &quot;mask&quot;: &quot;0x4&quot;,</div>
+<div class="line">      &quot;tpoint_mask&quot;: &quot;0x0&quot;</div>
+<div class="line">    },</div>
+<div class="line">    &quot;bdev&quot;: {</div>
+<div class="line">      &quot;mask&quot;: &quot;0x8&quot;,</div>
+<div class="line">      &quot;tpoint_mask&quot;: &quot;0xffffffffffffffff&quot;</div>
+<div class="line">    },</div>
+<div class="line">    &quot;nvmf_tcp&quot;: {</div>
+<div class="line">      &quot;mask&quot;: &quot;0x20&quot;,</div>
+<div class="line">      &quot;tpoint_mask&quot;: &quot;0x0&quot;</div>
+<div class="line">    },</div>
+<div class="line">    &quot;blobfs&quot;: {</div>
+<div class="line">      &quot;mask&quot;: &quot;0x80&quot;,</div>
+<div class="line">      &quot;tpoint_mask&quot;: &quot;0x0&quot;</div>
+<div class="line">    },</div>
+<div class="line">    &quot;thread&quot;: {</div>
+<div class="line">      &quot;mask&quot;: &quot;0x400&quot;,</div>
+<div class="line">      &quot;tpoint_mask&quot;: &quot;0x0&quot;</div>
+<div class="line">    },</div>
+<div class="line">    &quot;nvme_pcie&quot;: {</div>
+<div class="line">      &quot;mask&quot;: &quot;0x800&quot;,</div>
+<div class="line">      &quot;tpoint_mask&quot;: &quot;0x0&quot;</div>
+<div class="line">    },</div>
+<div class="line">    &quot;nvme_tcp&quot;: {</div>
+<div class="line">      &quot;mask&quot;: &quot;0x2000&quot;,</div>
+<div class="line">      &quot;tpoint_mask&quot;: &quot;0x0&quot;</div>
+<div class="line">    },</div>
+<div class="line">    &quot;bdev_nvme&quot;: {</div>
+<div class="line">      &quot;mask&quot;: &quot;0x4000&quot;,</div>
+<div class="line">      &quot;tpoint_mask&quot;: &quot;0x0&quot;</div>
+<div class="line">    }</div>
+<div class="line">  }</div>
+<div class="line">}</div>
 </div><!-- fragment --><h2><a class="anchor" id="rpc_log_set_print_level"></a>
 log_set_print_level</h2>
 <p>Set the current level at which output will additionally be sent to the current console.</p>

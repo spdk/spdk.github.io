@@ -968,7 +968,7 @@ typedef&#160;</td><td class="memItemRight" valign="bottom"><b>TAILQ_HEAD</b> (bd
 </div><div class="memdoc">
 
 <p>Allocate a buffer for given bdev_io. </p>
-<p>Allocation will happen only if the bdev_io has no assigned SGL yet or SGL is not aligned to <code>bdev-&gt;required_alignment</code>. If SGL is not aligned, this call will cause copy from SGL to bounce buffer on write path or copy from bounce buffer to SGL before completion callback on read path. The buffer will be freed automatically on <code><a class="el" href="bdev_8h.html#a9ac23d38eb3b56b58197e0111ef68c6b" title="Free an I/O request.">spdk_bdev_free_io()</a></code> call. This call will never fail. In case of lack of memory given callback <code>cb</code> will be deferred until enough memory is freed.</p>
+<p>Allocation will happen only if the bdev_io has no assigned SGL yet or SGL is not aligned to <code>bdev-&gt;required_alignment</code>. If SGL is not aligned, this call will cause copy from SGL to bounce buffer on write path or copy from bounce buffer to SGL before completion callback on read path. The buffer will be freed automatically on <code><a class="el" href="bdev_8h.html#a9ac23d38eb3b56b58197e0111ef68c6b" title="Free an I/O request.">spdk_bdev_free_io()</a></code> call. This call will never fail. In case of lack of memory given callback <code>cb</code> will be deferred until enough memory is freed. This function <em>must</em> be called from the thread issuing <code>bdev_io</code>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">bdev_io</td><td>I/O to allocate buffer for. </td></tr>

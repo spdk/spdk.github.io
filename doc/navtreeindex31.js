@@ -1,5 +1,6 @@
 var NAVTREEINDEX31 =
 {
+"unionspdk__nvme__feat__host__controlled__thermal__management.html#a196363adf5f14463140d5c3d7d7a0564":[15,0,151,2],
 "unionspdk__nvme__feat__host__controlled__thermal__management.html#a683af96774029ba95fcbb43ef78d487e":[15,0,151,3],
 "unionspdk__nvme__feat__host__controlled__thermal__management.html#aeb76a8fc5dccff33b7265de416a25696":[15,0,151,0],
 "unionspdk__nvme__feat__host__controlled__thermal__management.html#aed69c683b8bf4f7c1698fcfc62d66c7c":[15,0,151,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX31 =
 "vhost.html#vhost_start":[3,6,3],
 "vhost.html#vhost_toc":[3,6,0],
 "vhost.html#vhost_vdev_create":[3,6,4,1],
-"vhost_8h.html":[16,0,63],
-"vhost_8h.html#a01b54a11439216fb05196474e3ee20d1":[16,0,63,16]
+"vhost_8h.html":[16,0,63]
 };

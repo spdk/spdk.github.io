@@ -228,7 +228,7 @@ var NAVTREEINDEX6 =
 "jsonrpc.html#rpc_blobfs_set_cache_size":[3,9,11,3],
 "jsonrpc.html#rpc_dsa_scan_accel_module":[3,9,4,3],
 "jsonrpc.html#rpc_enable_vmd":[3,9,12,4],
-"jsonrpc.html#rpc_env_dpdk_get_mem_stats":[3,9,3,27],
+"jsonrpc.html#rpc_env_dpdk_get_mem_stats":[3,9,3,28],
 "jsonrpc.html#rpc_framework_get_config":[3,9,3,6],
 "jsonrpc.html#rpc_framework_get_reactors":[3,9,3,7],
 "jsonrpc.html#rpc_framework_get_scheduler":[3,9,3,9],
