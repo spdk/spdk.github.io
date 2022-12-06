@@ -120,7 +120,7 @@ How to use kernel idxd driver</h2>
 <p>There are several dependencies to leverage the Linux idxd driver for driving DSA devices.</p>
 <p>1 Linux kernel support: You need to have a Linux kernel with the <code>idxd</code> driver loaded. Futher, add the following command line options to the kernel boot commands:</p>
 <div class="fragment"><div class="line">intel_iommu=on,sm_on</div>
-</div><!-- fragment --><p>2 User library dependency: Users need to install the <code>accel-config</code> library. This is often packaged, but the source is available on <a href="https://github.com/intel/idxd-config">GitHub</a>. After the library is installed, users can use the <code>accel-config</code> command to configure the work queues(WQs) of the idxd devices managed by the kernel with the following steps:</p>
+</div><!-- fragment --><p>2 User library dependency: Users need to install the developer version of the <code>accel-config</code> library. This is often packaged, but the source is available on <a href="https://github.com/intel/idxd-config">GitHub</a>. After the library is installed, users can use the <code>accel-config</code> command to configure the work queues(WQs) of the idxd devices managed by the kernel with the following steps:</p>
 <p>Note: this library must be installed before you run <code>configure</code></p>
 <div class="fragment"><div class="line">accel-config disable-wq dsa0/wq0.1</div>
 <div class="line">accel-config disable-device dsa0</div>
