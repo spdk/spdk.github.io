@@ -1,5 +1,13 @@
 var NAVTREEINDEX31 =
 {
+"unionspdk__nvme__feat__autonomous__power__state__transition.html#a9311f1d84bfe298c3ea675dc2cfbdcdc":[15,0,149,3],
+"unionspdk__nvme__feat__error__recovery.html":[15,0,150],
+"unionspdk__nvme__feat__error__recovery.html#a470249122d177e128016ebe292f83085":[15,0,150,2],
+"unionspdk__nvme__feat__error__recovery.html#a4e5003a27852824968c6932918ddb24a":[15,0,150,0],
+"unionspdk__nvme__feat__error__recovery.html#a85c441ab749eca8500b09add45336e0d":[15,0,150,1],
+"unionspdk__nvme__feat__error__recovery.html#ab5a2e6ab3de7f3011338acb2289817bd":[15,0,150,4],
+"unionspdk__nvme__feat__error__recovery.html#ae572c4a161ba9dcd9f26129dcb926fc3":[15,0,150,3],
+"unionspdk__nvme__feat__host__controlled__thermal__management.html":[15,0,151],
 "unionspdk__nvme__feat__host__controlled__thermal__management.html#a196363adf5f14463140d5c3d7d7a0564":[15,0,151,2],
 "unionspdk__nvme__feat__host__controlled__thermal__management.html#a683af96774029ba95fcbb43ef78d487e":[15,0,151,3],
 "unionspdk__nvme__feat__host__controlled__thermal__management.html#aeb76a8fc5dccff33b7265de416a25696":[15,0,151,0],
@@ -241,13 +249,5 @@ var NAVTREEINDEX31 =
 "vhost.html#vhost_cmd_line_args":[3,6,2,0],
 "vhost.html#vhost_config":[3,6,4],
 "vhost.html#vhost_example":[3,6,4,3],
-"vhost.html#vhost_hotattach":[3,6,5,1],
-"vhost.html#vhost_intro":[3,6,1],
-"vhost.html#vhost_multiqueue":[3,6,5,0],
-"vhost.html#vhost_prereqs":[3,6,2],
-"vhost.html#vhost_qemu_config":[3,6,4,2],
-"vhost.html#vhost_start":[3,6,3],
-"vhost.html#vhost_toc":[3,6,0],
-"vhost.html#vhost_vdev_create":[3,6,4,1],
-"vhost_8h.html":[16,0,63]
+"vhost.html#vhost_hotattach":[3,6,5,1]
 };

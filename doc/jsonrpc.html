@@ -7655,7 +7655,7 @@ bdev_lvol_decouple_parent</h2>
 </div><!-- fragment --><h1>RAID</h1>
 <h2><a class="anchor" id="rpc_bdev_raid_get_bdevs"></a>
 bdev_raid_get_bdevs</h2>
-<p>This is used to list all the raid bdev names based on the input category requested. Category should be one of 'all', 'online', 'configuring' or 'offline'. 'all' means all the raid bdevs whether they are online or configuring or offline. 'online' is the raid bdev which is registered with bdev layer. 'configuring' is the raid bdev which does not have full configuration discovered yet. 'offline' is the raid bdev which is not registered with bdev as of now and it has encountered any error or user has requested to offline the raid bdev.</p>
+<p>This is used to list all the raid bdev details based on the input category requested. Category should be one of 'all', 'online', 'configuring' or 'offline'. 'all' means all the raid bdevs whether they are online or configuring or offline. 'online' is the raid bdev which is registered with bdev layer. 'configuring' is the raid bdev which does not have full configuration discovered yet. 'offline' is the raid bdev which is not registered with bdev as of now and it has encountered any error or user has requested to offline the raid bdev.</p>
 <h3>Parameters</h3>
 <table class="markdownTable">
 <tr class="markdownTableHead">
@@ -7678,7 +7678,30 @@ bdev_raid_get_bdevs</h2>
 <div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
 <div class="line">  &quot;id&quot;: 1,</div>
 <div class="line">  &quot;result&quot;: [</div>
-<div class="line">    &quot;Raid0&quot;</div>
+<div class="line">    {</div>
+<div class="line">      &quot;name&quot;: &quot;RaidBdev0&quot;,</div>
+<div class="line">      &quot;strip_size_kb&quot;: 128,</div>
+<div class="line">      &quot;state&quot;: &quot;online&quot;,</div>
+<div class="line">      &quot;raid_level&quot;: &quot;raid0&quot;,</div>
+<div class="line">      &quot;num_base_bdevs&quot;: 2,</div>
+<div class="line">      &quot;num_base_bdevs_discovered&quot;: 2,</div>
+<div class="line">      &quot;base_bdevs_list&quot;: [</div>
+<div class="line">        &quot;malloc0&quot;,</div>
+<div class="line">        &quot;malloc1&quot;</div>
+<div class="line">      ]</div>
+<div class="line">    },</div>
+<div class="line">    {</div>
+<div class="line">      &quot;name&quot;: &quot;RaidBdev1&quot;,</div>
+<div class="line">      &quot;strip_size_kb&quot;: 128,</div>
+<div class="line">      &quot;state&quot;: &quot;configuring&quot;,</div>
+<div class="line">      &quot;raid_level&quot;: &quot;raid0&quot;,</div>
+<div class="line">      &quot;num_base_bdevs&quot;: 2,</div>
+<div class="line">      &quot;num_base_bdevs_discovered&quot;: 1,</div>
+<div class="line">      &quot;base_bdevs_list&quot;: [</div>
+<div class="line">        &quot;malloc2&quot;,</div>
+<div class="line">        null</div>
+<div class="line">      ]</div>
+<div class="line">    }</div>
 <div class="line">  ]</div>
 <div class="line">}</div>
 </div><!-- fragment --><h2><a class="anchor" id="rpc_bdev_raid_create"></a>

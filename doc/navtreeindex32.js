@@ -1,5 +1,13 @@
 var NAVTREEINDEX32 =
 {
+"vhost.html#vhost_intro":[3,6,1],
+"vhost.html#vhost_multiqueue":[3,6,5,0],
+"vhost.html#vhost_prereqs":[3,6,2],
+"vhost.html#vhost_qemu_config":[3,6,4,2],
+"vhost.html#vhost_start":[3,6,3],
+"vhost.html#vhost_toc":[3,6,0],
+"vhost.html#vhost_vdev_create":[3,6,4,1],
+"vhost_8h.html":[16,0,63],
 "vhost_8h.html#a01b54a11439216fb05196474e3ee20d1":[16,0,63,16],
 "vhost_8h.html#a04d81053d41a72f5df978f7c05dfebd7":[16,0,63,24],
 "vhost_8h.html#a0631424062751f68ec295722786370a8":[16,0,63,14],

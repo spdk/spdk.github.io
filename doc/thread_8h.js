@@ -1,6 +1,7 @@
 var thread_8h =
 [
     [ "spdk_thread_stats", "structspdk__thread__stats.html", "structspdk__thread__stats" ],
+    [ "spdk_spinlock", "structspdk__spinlock.html", "structspdk__spinlock" ],
     [ "SPDK_DEFAULT_MSG_MEMPOOL_SIZE", "thread_8h.html#ab9eaeaa63a29f075a51d38c3a653f744", null ],
     [ "SPDK_INTERRUPT_REGISTER", "thread_8h.html#ac15064b1cd3d036753e04c5c207ad71d", null ],
     [ "SPDK_IO_CHANNEL_STRUCT_SIZE", "thread_8h.html#a22af34e45fef3fcea2ed3612d9bde2e8", null ],
@@ -60,6 +61,11 @@ var thread_8h =
     [ "spdk_poller_unregister", "thread_8h.html#a9c26cbd781063f5ee627d6aba2c73fe3", null ],
     [ "spdk_put_io_channel", "thread_8h.html#a717571a5011db0cdd730498146f25f9a", null ],
     [ "spdk_set_thread", "thread_8h.html#a60dac2a0fc19b23be6fecb1e5b6f8a7a", null ],
+    [ "spdk_spin_destroy", "thread_8h.html#a082f55ea269d3f171f00917099debb67", null ],
+    [ "spdk_spin_held", "thread_8h.html#a14cf080d22a52b5ae3025221411096f5", null ],
+    [ "spdk_spin_init", "thread_8h.html#ad9618326108ac7d4a47fefb33e21879f", null ],
+    [ "spdk_spin_lock", "thread_8h.html#ac03bb794fec774061fc77367bc6bdfa2", null ],
+    [ "spdk_spin_unlock", "thread_8h.html#adcaee781de4118a2f789dd76ef4b3b83", null ],
     [ "spdk_thread_create", "thread_8h.html#a49abb69cad49e5f35363d9b8ee990ae2", null ],
     [ "spdk_thread_destroy", "thread_8h.html#a10aa5a8ec5228fa87db97f7655f8c0d6", null ],
     [ "spdk_thread_exec_msg", "thread_8h.html#a6695466847e7a751b768ab4b8bcd53d0", null ],

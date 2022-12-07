@@ -105,6 +105,7 @@ v23.01: (Upcoming Release)</h1>
 <p>A new API <code>spdk_bdev_io_get_submit_tsc</code> was added to get the submit_tsc of the bdev I/O.</p>
 <p>Bdevs will no longer have UUIDs generated based on timestamp and are responsible for setting this field themselves. Generation of UUIDs for NVMe bdevs may be enabled by running <code>bdev_nvme_set_options</code> RPC with <code>--generate-uuids</code> option. These identifiers are based on serial number and namespace ID and will always be the same for a given device.</p>
 <p>A new API <code>spdk_bdev_channel_get_histogram</code> was added to get the histogram of a specified channel for a bdev.</p>
+<p>Converted internal use of <code>pthread_mutex_t</code> to <code>struct <a class="el" href="structspdk__spinlock.html" title="A spinlock augmented with safety checks for use with SPDK.">spdk_spinlock</a></code>. Consumers of bdev API functions must be on an SPDK thread or the program will abort. It is now enforced that no internal bdev locks can be held when a poller or message goes off CPU.</p>
 <h2>event</h2>
 <p>Added core lock file mechanism to prevent the same CPU cores from being used by multiple SPDK application instances.</p>
 <p>Added a command line switch to disable CPU locks on SPDK startup.</p>
@@ -112,6 +113,7 @@ v23.01: (Upcoming Release)</h1>
 <p>Added &ndash;rpcs-allowed command line option. Users can specify a comma-separated list of RPC names with this option to restrict allowed RPCs to only that list.</p>
 <h2>rpc</h2>
 <p>Added spdk_rpc_set_allowlist to restrict allowed RPCs to the specified list.</p>
+<p>Changed <code>bdev_raid_get_bdevs</code> RPC output format to include raid_bdev details.</p>
 <h2>bdevperf</h2>
 <p>Promoted the application to example to match similar programs: fio_plugin and perf. It can now be found inside <code>examples/bdev/bdevperf</code>.</p>
 <h2>trace</h2>
@@ -123,6 +125,7 @@ v23.01: (Upcoming Release)</h1>
 <h2>thread</h2>
 <p>Added <code>spdk_thread_get_app_thread</code> which returns the first thread that was created using <code>spdk_thread_create</code>.</p>
 <p>Added <code>spdk_thread_is_running</code>. This returns <code>true</code> for a running thread, or <code>false</code> if its exit process has started using <code>spdk_thread_exit</code>.</p>
+<p>Added API <code>spdk_spin_init</code>, <code>spdk_spin_destroy</code>, <code>spdk_spin_lock</code>, <code>spdk_spin_unlock</code>, and <code>spdk_spin_held</code> to support spinlocks that are aware of the SPDK concurrency model.</p>
 <h1>v22.09</h1>
 <h2>accel</h2>
 <p>Many names were changed in the accel framework to make them consistent both with themselves and the rest of SPDK. The primary public header file is now named <code><a class="el" href="accel_8h.html" title="Acceleration Framework.">include/spdk/accel.h</a></code>.</p>

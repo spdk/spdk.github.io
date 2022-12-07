@@ -103,6 +103,9 @@ $(document).ready(function(){initNavTree('thread_8h.html',''); initResizable(); 
 Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__thread__stats.html">spdk_thread_stats</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__spinlock.html">spdk_spinlock</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A spinlock augmented with safety checks for use with SPDK.  <a href="structspdk__spinlock.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
@@ -359,6 +362,21 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 <tr class="memitem:a1f8be492b86ceface921634b9a627b7c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="thread_8h.html#a1f8be492b86ceface921634b9a627b7c">spdk_interrupt_mode_is_enabled</a> (void)</td></tr>
 <tr class="memdesc:a1f8be492b86ceface921634b9a627b7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reports whether interrupt mode is set.  <a href="thread_8h.html#a1f8be492b86ceface921634b9a627b7c">More...</a><br /></td></tr>
 <tr class="separator:a1f8be492b86ceface921634b9a627b7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9618326108ac7d4a47fefb33e21879f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="thread_8h.html#ad9618326108ac7d4a47fefb33e21879f">spdk_spin_init</a> (struct <a class="el" href="structspdk__spinlock.html">spdk_spinlock</a> *sspin)</td></tr>
+<tr class="memdesc:ad9618326108ac7d4a47fefb33e21879f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize an <a class="el" href="structspdk__spinlock.html" title="A spinlock augmented with safety checks for use with SPDK.">spdk_spinlock</a>.  <a href="thread_8h.html#ad9618326108ac7d4a47fefb33e21879f">More...</a><br /></td></tr>
+<tr class="separator:ad9618326108ac7d4a47fefb33e21879f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a082f55ea269d3f171f00917099debb67"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="thread_8h.html#a082f55ea269d3f171f00917099debb67">spdk_spin_destroy</a> (struct <a class="el" href="structspdk__spinlock.html">spdk_spinlock</a> *sspin)</td></tr>
+<tr class="memdesc:a082f55ea269d3f171f00917099debb67"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy an <a class="el" href="structspdk__spinlock.html" title="A spinlock augmented with safety checks for use with SPDK.">spdk_spinlock</a>.  <a href="thread_8h.html#a082f55ea269d3f171f00917099debb67">More...</a><br /></td></tr>
+<tr class="separator:a082f55ea269d3f171f00917099debb67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac03bb794fec774061fc77367bc6bdfa2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="thread_8h.html#ac03bb794fec774061fc77367bc6bdfa2">spdk_spin_lock</a> (struct <a class="el" href="structspdk__spinlock.html">spdk_spinlock</a> *sspin)</td></tr>
+<tr class="memdesc:ac03bb794fec774061fc77367bc6bdfa2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lock an SPDK spin lock.  <a href="thread_8h.html#ac03bb794fec774061fc77367bc6bdfa2">More...</a><br /></td></tr>
+<tr class="separator:ac03bb794fec774061fc77367bc6bdfa2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adcaee781de4118a2f789dd76ef4b3b83"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="thread_8h.html#adcaee781de4118a2f789dd76ef4b3b83">spdk_spin_unlock</a> (struct <a class="el" href="structspdk__spinlock.html">spdk_spinlock</a> *sspin)</td></tr>
+<tr class="memdesc:adcaee781de4118a2f789dd76ef4b3b83"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unlock an SPDK spinlock.  <a href="thread_8h.html#adcaee781de4118a2f789dd76ef4b3b83">More...</a><br /></td></tr>
+<tr class="separator:adcaee781de4118a2f789dd76ef4b3b83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14cf080d22a52b5ae3025221411096f5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="thread_8h.html#a14cf080d22a52b5ae3025221411096f5">spdk_spin_held</a> (struct <a class="el" href="structspdk__spinlock.html">spdk_spinlock</a> *sspin)</td></tr>
+<tr class="memdesc:a14cf080d22a52b5ae3025221411096f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine if the caller holds this SPDK spinlock.  <a href="thread_8h.html#a14cf080d22a52b5ae3025221411096f5">More...</a><br /></td></tr>
+<tr class="separator:a14cf080d22a52b5ae3025221411096f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Thread. </p>
@@ -1576,6 +1594,137 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">thread</td><td>The thread to set. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a082f55ea269d3f171f00917099debb67"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a082f55ea269d3f171f00917099debb67">&#9670;&nbsp;</a></span>spdk_spin_destroy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_spin_destroy </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structspdk__spinlock.html">spdk_spinlock</a> *&#160;</td>
+          <td class="paramname"><em>sspin</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Destroy an <a class="el" href="structspdk__spinlock.html" title="A spinlock augmented with safety checks for use with SPDK.">spdk_spinlock</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sspin</td><td>The SPDK spinlock to initialize. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a14cf080d22a52b5ae3025221411096f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a14cf080d22a52b5ae3025221411096f5">&#9670;&nbsp;</a></span>spdk_spin_held()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool spdk_spin_held </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structspdk__spinlock.html">spdk_spinlock</a> *&#160;</td>
+          <td class="paramname"><em>sspin</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Determine if the caller holds this SPDK spinlock. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sspin</td><td>An SPDK spinlock. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if spinlock is held by this thread, else false </dd></dl>
+
+</div>
+</div>
+<a id="ad9618326108ac7d4a47fefb33e21879f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad9618326108ac7d4a47fefb33e21879f">&#9670;&nbsp;</a></span>spdk_spin_init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_spin_init </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structspdk__spinlock.html">spdk_spinlock</a> *&#160;</td>
+          <td class="paramname"><em>sspin</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Initialize an <a class="el" href="structspdk__spinlock.html" title="A spinlock augmented with safety checks for use with SPDK.">spdk_spinlock</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sspin</td><td>The SPDK spinlock to initialize. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ac03bb794fec774061fc77367bc6bdfa2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac03bb794fec774061fc77367bc6bdfa2">&#9670;&nbsp;</a></span>spdk_spin_lock()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_spin_lock </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structspdk__spinlock.html">spdk_spinlock</a> *&#160;</td>
+          <td class="paramname"><em>sspin</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Lock an SPDK spin lock. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sspin</td><td>An SPDK spinlock. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="adcaee781de4118a2f789dd76ef4b3b83"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adcaee781de4118a2f789dd76ef4b3b83">&#9670;&nbsp;</a></span>spdk_spin_unlock()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_spin_unlock </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structspdk__spinlock.html">spdk_spinlock</a> *&#160;</td>
+          <td class="paramname"><em>sspin</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Unlock an SPDK spinlock. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sspin</td><td>An SPDK spinlock. </td></tr>
   </table>
   </dd>
 </dl>

@@ -100,16 +100,17 @@ Collaboration diagram for spdk_bdev::__bdev_internal_fields:</div>
 <div class="dyncontent">
 <div class="center"><img src="structspdk__bdev_1_1____bdev__internal__fields__coll__graph.png" border="0" usemap="#aspdk__bdev_1_1____bdev__internal__fields_coll__map" alt="Collaboration graph"/></div>
 <map name="aspdk__bdev_1_1____bdev__internal__fields_coll__map" id="aspdk__bdev_1_1____bdev__internal__fields_coll__map">
-<area shape="rect" title="Fields that are used internally by the bdev subsystem." alt="" coords="583,33,785,74"/>
-<area shape="rect" href="structspdk__bdev.html" title=" " alt="" coords="929,108,1021,135"/>
-<area shape="rect" href="structspdk__bdev__module.html" title="Block device module." alt="" coords="289,99,437,125"/>
-<area shape="rect" href="structspdk__bdev__module_1_1____bdev__module__internal__fields.html" title="Fields that are used by the internal bdev subsystem." alt="" coords="5,84,187,140"/>
+<area shape="rect" title="Fields that are used internally by the bdev subsystem." alt="" coords="583,58,785,99"/>
+<area shape="rect" href="structspdk__bdev.html" title=" " alt="" coords="929,128,1021,155"/>
+<area shape="rect" href="structspdk__bdev__module.html" title="Block device module." alt="" coords="289,133,437,160"/>
+<area shape="rect" href="structspdk__bdev__module_1_1____bdev__module__internal__fields.html" title="Fields that are used by the internal bdev subsystem." alt="" coords="5,119,187,175"/>
 <area shape="rect" href="structspdk__bdev__name.html" title=" " alt="" coords="1172,5,1308,32"/>
-<area shape="rect" href="structspdk__bdev__io.html" title=" " alt="" coords="1185,151,1295,177"/>
-<area shape="rect" href="structspdk__bdev__io__stat.html" title=" " alt="" coords="292,29,435,56"/>
-<area shape="rect" href="structspdk__bdev__io_1_1____bdev__io__internal__fields.html" title="Fields that are used internally by the bdev subsystem." alt="" coords="1459,203,1624,245"/>
-<area shape="rect" href="structspdk__nvme__cmd.html" title=" " alt="" coords="909,165,1041,192"/>
-<area shape="rect" href="structspdk__bdev__ext__io__opts.html" title="Structure with optional IO request parameters The content of this structure must be valid until the I..." alt="" coords="888,235,1063,261"/>
+<area shape="rect" href="structspdk__bdev__io.html" title=" " alt="" coords="1185,163,1295,189"/>
+<area shape="rect" href="structspdk__spinlock.html" title="A spinlock augmented with safety checks for use with SPDK." alt="" coords="306,64,421,91"/>
+<area shape="rect" href="structspdk__bdev__io__stat.html" title=" " alt="" coords="292,13,435,40"/>
+<area shape="rect" href="structspdk__bdev__io_1_1____bdev__io__internal__fields.html" title="Fields that are used internally by the bdev subsystem." alt="" coords="1459,215,1624,257"/>
+<area shape="rect" href="structspdk__nvme__cmd.html" title=" " alt="" coords="909,179,1041,205"/>
+<area shape="rect" href="structspdk__bdev__ext__io__opts.html" title="Structure with optional IO request parameters The content of this structure must be valid until the I..." alt="" coords="888,245,1063,272"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -133,10 +134,10 @@ struct spdk_bdev_qos *&#160;</td><td class="memItemRight" valign="bottom"><a cla
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev_1_1____bdev__internal__fields.html#add102c5c15292b5d497ed7442a0b30b4">qos_mod_in_progress</a></td></tr>
 <tr class="memdesc:add102c5c15292b5d497ed7442a0b30b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">True if the state of the QoS is being modified. <br /></td></tr>
 <tr class="separator:add102c5c15292b5d497ed7442a0b30b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acce313a933ea3af0bf0c1f702d1bfee4"><td class="memItemLeft" align="right" valign="top"><a id="acce313a933ea3af0bf0c1f702d1bfee4"></a>
-pthread_spinlock_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev_1_1____bdev__internal__fields.html#acce313a933ea3af0bf0c1f702d1bfee4">spinlock</a></td></tr>
-<tr class="memdesc:acce313a933ea3af0bf0c1f702d1bfee4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Spin lock protecting claimed. <br /></td></tr>
-<tr class="separator:acce313a933ea3af0bf0c1f702d1bfee4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf206491fff12a3f57474bab98d07ef2"><td class="memItemLeft" align="right" valign="top"><a id="adf206491fff12a3f57474bab98d07ef2"></a>
+struct <a class="el" href="structspdk__spinlock.html">spdk_spinlock</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev_1_1____bdev__internal__fields.html#adf206491fff12a3f57474bab98d07ef2">spinlock</a></td></tr>
+<tr class="memdesc:adf206491fff12a3f57474bab98d07ef2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Spin lock protecting claimed. <br /></td></tr>
+<tr class="separator:adf206491fff12a3f57474bab98d07ef2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a75eb824f166523af1bb44edc6b209e89"><td class="memItemLeft" align="right" valign="top"><a id="a75eb824f166523af1bb44edc6b209e89"></a>
 enum <a class="el" href="bdev_8h.html#ad6c166f5d928c2995df57c96a2977862">spdk_bdev_status</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev_1_1____bdev__internal__fields.html#a75eb824f166523af1bb44edc6b209e89">status</a></td></tr>
 <tr class="memdesc:a75eb824f166523af1bb44edc6b209e89"><td class="mdescLeft">&#160;</td><td class="mdescRight">The bdev status. <br /></td></tr>
