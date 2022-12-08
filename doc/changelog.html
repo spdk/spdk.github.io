@@ -126,6 +126,8 @@ v23.01: (Upcoming Release)</h1>
 <p>Added <code>spdk_thread_get_app_thread</code> which returns the first thread that was created using <code>spdk_thread_create</code>.</p>
 <p>Added <code>spdk_thread_is_running</code>. This returns <code>true</code> for a running thread, or <code>false</code> if its exit process has started using <code>spdk_thread_exit</code>.</p>
 <p>Added API <code>spdk_spin_init</code>, <code>spdk_spin_destroy</code>, <code>spdk_spin_lock</code>, <code>spdk_spin_unlock</code>, and <code>spdk_spin_held</code> to support spinlocks that are aware of the SPDK concurrency model.</p>
+<h2>log</h2>
+<p>Added consistent tracking of use of deprecated behavior. Deprecations continue to be listed in deprecation.md and now are in subsections with headers matching a tag used in <code>SPDK_LOG_DEPRECATED()</code> calls. When deprecated behavior is used, these tags will appear in SPDK's log at the warn level. As the SPDK application exits, it will log a summary of how many times <code>SPDK_LOG_DEPRECATED()</code> was called for each tag that was logged at least once.</p>
 <h1>v22.09</h1>
 <h2>accel</h2>
 <p>Many names were changed in the accel framework to make them consistent both with themselves and the rest of SPDK. The primary public header file is now named <code><a class="el" href="accel_8h.html" title="Acceleration Framework.">include/spdk/accel.h</a></code>.</p>

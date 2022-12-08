@@ -1,5 +1,15 @@
 var NAVTREEINDEX27 =
 {
+"structspdk__pci__device__provider.html#a1e6db45ddbdcb5a05d188c9f5642fb46":[15,0,321,2],
+"structspdk__pci__device__provider.html#a7b4305d8d5f9bb98eb09f41d48a0bbf7":[15,0,321,1],
+"structspdk__pci__device__provider.html#ab3e91beaa509739dc7b196dbd115a831":[15,0,321,0],
+"structspdk__pci__device__provider.html#ae156e92ea89d05e7ff723caff8873755":[15,0,321,3],
+"structspdk__pci__event.html":[15,0,322],
+"structspdk__pci__event.html#a571b8ba35fc4fd91a7fa02c9f6accf72":[15,0,322,1],
+"structspdk__pci__event.html#a65164f4d9d486362632257bbee72a42a":[15,0,322,0],
+"structspdk__pci__id.html":[15,0,323],
+"structspdk__pci__id.html#a01466eb56a4844fd8b42b6c35fe2c91f":[15,0,323,3],
+"structspdk__pci__id.html#a39d3b6cf5257c8a8b344bf5e8687eadc":[15,0,323,1],
 "structspdk__pci__id.html#ae1c6aff160ab9ee99e18e84c1f321680":[15,0,323,0],
 "structspdk__pci__id.html#ae1f6dd7e42b4203d397b154fe1af2ed8":[15,0,323,4],
 "structspdk__pci__id.html#aedf53a294bbe914233d7ba3f00b20874":[15,0,323,2],
@@ -239,15 +249,5 @@ var NAVTREEINDEX27 =
 "structspdk__sock__impl__opts.html#af97f15adfec2e08249ad80b97d2a3e41":[15,0,349,0],
 "structspdk__sock__impl__opts.html#afdb21e60863bdb7c5d7e15ed1c2e9828":[15,0,349,2],
 "structspdk__sock__opts.html":[15,0,350],
-"structspdk__sock__opts.html#a0e826e7a46eadaeb53f38c4926cd3bbf":[15,0,350,4],
-"structspdk__sock__opts.html#a2594f3e53452b59d1f699c7a546c32ff":[15,0,350,0],
-"structspdk__sock__opts.html#a328c0cf2f7ffeeaab0a77567597507bd":[15,0,350,1],
-"structspdk__sock__opts.html#a3cdb293f2ccf10506e7926317e463d91":[15,0,350,7],
-"structspdk__sock__opts.html#a6914c87a34cd9d2124b24b6e3e877d1a":[15,0,350,6],
-"structspdk__sock__opts.html#ac8dbf1e759082939e4fc6318122931e7":[15,0,350,3],
-"structspdk__sock__opts.html#adf3b4093c0f16f4d671d2f1552fd82a4":[15,0,350,5],
-"structspdk__sock__opts.html#afce30ae74efc5b3b5aaa998e8fc4090d":[15,0,350,2],
-"structspdk__sock__request.html":[15,0,351],
-"structspdk__sock__request.html#a11711d340944496cdd8d25d34c7679c2":[15,0,351,3],
-"structspdk__sock__request.html#a1cc6c6eda156b113696fdc486c767b8f":[15,0,351,2]
+"structspdk__sock__opts.html#a0e826e7a46eadaeb53f38c4926cd3bbf":[15,0,350,4]
 };

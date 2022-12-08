@@ -1,5 +1,15 @@
 var NAVTREEINDEX31 =
 {
+"unionspdk__nvme__feat__async__event__configuration.html#a7e91f0feb90898c53fbf1bcd5e277b93":[15,0,148,6],
+"unionspdk__nvme__feat__async__event__configuration.html#a892b517fc90032b5589813061b709312":[15,0,148,1],
+"unionspdk__nvme__feat__async__event__configuration.html#a8a5c5f81b38c1fd7699f867b087d3f99":[15,0,148,8],
+"unionspdk__nvme__feat__async__event__configuration.html#aae12a39d1e92c4fd1ac1722bbfb4bbe8":[15,0,148,0],
+"unionspdk__nvme__feat__async__event__configuration.html#ae078e151b7223a936566b44cdf4797a8":[15,0,148,4],
+"unionspdk__nvme__feat__async__event__configuration.html#af290b2c34033a9a65d5117eb52999a2f":[15,0,148,9],
+"unionspdk__nvme__feat__autonomous__power__state__transition.html":[15,0,149],
+"unionspdk__nvme__feat__autonomous__power__state__transition.html#a022cc1ba5b7ff365a6b69989c663333a":[15,0,149,0],
+"unionspdk__nvme__feat__autonomous__power__state__transition.html#a15a1a6482590ab28ffff78132f123c46":[15,0,149,1],
+"unionspdk__nvme__feat__autonomous__power__state__transition.html#a36867fe7bf800adeacf48b7940f74857":[15,0,149,2],
 "unionspdk__nvme__feat__autonomous__power__state__transition.html#a9311f1d84bfe298c3ea675dc2cfbdcdc":[15,0,149,3],
 "unionspdk__nvme__feat__error__recovery.html":[15,0,150],
 "unionspdk__nvme__feat__error__recovery.html#a470249122d177e128016ebe292f83085":[15,0,150,2],
@@ -239,15 +249,5 @@ var NAVTREEINDEX31 =
 "version_8h.html#a89ca2b430a03f2a8b8a5f2a31c1ae647":[16,0,62,8],
 "version_8h.html#aa71174a8a66c5481b6f934330a4ad2c0":[16,0,62,0],
 "version_8h.html#ad1707a483ea3993502983d994be408e9":[16,0,62,9],
-"version_8h.html#ae9ff8f284ac56fc34809837cce88567f":[16,0,62,11],
-"version_8h.html#af45ea3cba76c12cc449b6556c1982038":[16,0,62,2],
-"version_8h.html#af9f7a9ba083abf5bbd40128bb4c16f4d":[16,0,62,1],
-"vhost.html":[3,6],
-"vhost.html#vhost_advanced_topics":[3,6,5],
-"vhost.html#vhost_bdev_create":[3,6,4,0],
-"vhost.html#vhost_bugs":[3,6,6],
-"vhost.html#vhost_cmd_line_args":[3,6,2,0],
-"vhost.html#vhost_config":[3,6,4],
-"vhost.html#vhost_example":[3,6,4,3],
-"vhost.html#vhost_hotattach":[3,6,5,1]
+"version_8h.html#ae9ff8f284ac56fc34809837cce88567f":[16,0,62,11]
 };

@@ -131,12 +131,20 @@ Macros</h2></td></tr>
 <tr class="separator:aec36027084c167aa798f9f4cb33e639a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a78b00284a14bd0963fcad2585fd090b2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_LOG_REGISTER_COMPONENT</b>(FLAG)</td></tr>
 <tr class="separator:a78b00284a14bd0963fcad2585fd090b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d88ec475315724fb95eebdbcf9af8be"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_LOG_DEPRECATION_REGISTER</b>(tag,  desc,  release,  rate)</td></tr>
+<tr class="separator:a4d88ec475315724fb95eebdbcf9af8be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade4d41a3d3b3603f0f1a097272ac800c"><td class="memItemLeft" align="right" valign="top"><a id="ade4d41a3d3b3603f0f1a097272ac800c"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_LOG_DEPRECATED</b>(tag)&#160;&#160;&#160;	<a class="el" href="log_8h.html#a7dabb4fb99a730367b2b3a49ca6bc2e3">spdk_log_deprecated</a>(_deprecated_##tag, __FILE__, __LINE__, __func__)</td></tr>
+<tr class="separator:ade4d41a3d3b3603f0f1a097272ac800c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
 <tr class="memitem:a759e79a44bb8dd5733e81c7d213fd730"><td class="memItemLeft" align="right" valign="top">typedef void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log_8h.html#a759e79a44bb8dd5733e81c7d213fd730">logfunc</a>(int level, const char *file, const int line, const char *func, const char *format, va_list args)</td></tr>
 <tr class="memdesc:a759e79a44bb8dd5733e81c7d213fd730"><td class="mdescLeft">&#160;</td><td class="mdescRight">for passing user-provided log call  <a href="log_8h.html#a759e79a44bb8dd5733e81c7d213fd730">More...</a><br /></td></tr>
 <tr class="separator:a759e79a44bb8dd5733e81c7d213fd730"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1578d0b093538b785898654350f8f63"><td class="memItemLeft" align="right" valign="top">typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log_8h.html#ac1578d0b093538b785898654350f8f63">spdk_log_for_each_deprecation_fn</a>) (void *ctx, struct spdk_deprecation *deprecation)</td></tr>
+<tr class="memdesc:ac1578d0b093538b785898654350f8f63"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback function for <a class="el" href="log_8h.html#a00b13eb13638a39aa9e67e51c0b25e0e" title="Iterate over all deprecations, calling a callback on each of them.">spdk_log_for_each_deprecation()</a>.  <a href="log_8h.html#ac1578d0b093538b785898654350f8f63">More...</a><br /></td></tr>
+<tr class="separator:ac1578d0b093538b785898654350f8f63"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
@@ -209,6 +217,27 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log_
 <tr class="memitem:a99820ac7f38f6ad187be62b3bbdb7d64"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log_8h.html#a99820ac7f38f6ad187be62b3bbdb7d64">spdk_log_usage</a> (FILE *f, const char *log_arg)</td></tr>
 <tr class="memdesc:a99820ac7f38f6ad187be62b3bbdb7d64"><td class="mdescLeft">&#160;</td><td class="mdescRight">Show all the log flags and their usage.  <a href="log_8h.html#a99820ac7f38f6ad187be62b3bbdb7d64">More...</a><br /></td></tr>
 <tr class="separator:a99820ac7f38f6ad187be62b3bbdb7d64"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c4c05a5d3c40478ff8cfc06a3acd035"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log_8h.html#a1c4c05a5d3c40478ff8cfc06a3acd035">spdk_log_deprecation_register</a> (const char *tag, const char *description, const char *remove_release, uint32_t rate_limit_seconds, struct spdk_deprecation **reg)</td></tr>
+<tr class="memdesc:a1c4c05a5d3c40478ff8cfc06a3acd035"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register a deprecation.  <a href="log_8h.html#a1c4c05a5d3c40478ff8cfc06a3acd035">More...</a><br /></td></tr>
+<tr class="separator:a1c4c05a5d3c40478ff8cfc06a3acd035"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7dabb4fb99a730367b2b3a49ca6bc2e3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log_8h.html#a7dabb4fb99a730367b2b3a49ca6bc2e3">spdk_log_deprecated</a> (struct spdk_deprecation *deprecation, const char *file, uint32_t line, const char *func)</td></tr>
+<tr class="memdesc:a7dabb4fb99a730367b2b3a49ca6bc2e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicate that a deprecated feature was used.  <a href="log_8h.html#a7dabb4fb99a730367b2b3a49ca6bc2e3">More...</a><br /></td></tr>
+<tr class="separator:a7dabb4fb99a730367b2b3a49ca6bc2e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00b13eb13638a39aa9e67e51c0b25e0e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log_8h.html#a00b13eb13638a39aa9e67e51c0b25e0e">spdk_log_for_each_deprecation</a> (void *ctx, <a class="el" href="log_8h.html#ac1578d0b093538b785898654350f8f63">spdk_log_for_each_deprecation_fn</a> fn)</td></tr>
+<tr class="memdesc:a00b13eb13638a39aa9e67e51c0b25e0e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Iterate over all deprecations, calling a callback on each of them.  <a href="log_8h.html#a00b13eb13638a39aa9e67e51c0b25e0e">More...</a><br /></td></tr>
+<tr class="separator:a00b13eb13638a39aa9e67e51c0b25e0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aebde768fd834a3c9364b7b5a8bd479f4"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log_8h.html#aebde768fd834a3c9364b7b5a8bd479f4">spdk_deprecation_get_tag</a> (const struct spdk_deprecation *deprecation)</td></tr>
+<tr class="memdesc:aebde768fd834a3c9364b7b5a8bd479f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a deprecation's tag.  <a href="log_8h.html#aebde768fd834a3c9364b7b5a8bd479f4">More...</a><br /></td></tr>
+<tr class="separator:aebde768fd834a3c9364b7b5a8bd479f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a203431f8adfbb3dbda3c5da21bfc9c6a"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log_8h.html#a203431f8adfbb3dbda3c5da21bfc9c6a">spdk_deprecation_get_description</a> (const struct spdk_deprecation *deprecation)</td></tr>
+<tr class="memdesc:a203431f8adfbb3dbda3c5da21bfc9c6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a deprecation's description.  <a href="log_8h.html#a203431f8adfbb3dbda3c5da21bfc9c6a">More...</a><br /></td></tr>
+<tr class="separator:a203431f8adfbb3dbda3c5da21bfc9c6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63883d260f21cb745432a61bfc2f5c77"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log_8h.html#a63883d260f21cb745432a61bfc2f5c77">spdk_deprecation_get_remove_release</a> (const struct spdk_deprecation *deprecation)</td></tr>
+<tr class="memdesc:a63883d260f21cb745432a61bfc2f5c77"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a deprecation's planned removal release.  <a href="log_8h.html#a63883d260f21cb745432a61bfc2f5c77">More...</a><br /></td></tr>
+<tr class="separator:a63883d260f21cb745432a61bfc2f5c77"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc930c0e1a4696a4c489c781b1a55b02"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log_8h.html#afc930c0e1a4696a4c489c781b1a55b02">spdk_deprecation_get_hits</a> (const struct spdk_deprecation *deprecation)</td></tr>
+<tr class="memdesc:afc930c0e1a4696a4c489c781b1a55b02"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the number of times that a deprecation's code has been executed.  <a href="log_8h.html#afc930c0e1a4696a4c489c781b1a55b02">More...</a><br /></td></tr>
+<tr class="separator:afc930c0e1a4696a4c489c781b1a55b02"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Logging interfaces. </p>
@@ -244,7 +273,56 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log_
 <div class="line">                        spdk_log(SPDK_LOG_INFO, __FILE__, __LINE__, __func__, __VA_ARGS__);     \</div>
 <div class="line">                }                                                                               \</div>
 <div class="line">        } <span class="keywordflow">while</span> (0)</div>
-<div class="ttc" id="astructspdk__log__flag_html"><div class="ttname"><a href="structspdk__log__flag.html">spdk_log_flag</a></div><div class="ttdef"><b>Definition:</b> log.h:182</div></div>
+<div class="ttc" id="astructspdk__log__flag_html"><div class="ttname"><a href="structspdk__log__flag.html">spdk_log_flag</a></div><div class="ttdef"><b>Definition:</b> log.h:183</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a4d88ec475315724fb95eebdbcf9af8be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d88ec475315724fb95eebdbcf9af8be">&#9670;&nbsp;</a></span>SPDK_LOG_DEPRECATION_REGISTER</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SPDK_LOG_DEPRECATION_REGISTER</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">tag, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">desc, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">release, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">rate&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">        <span class="keyword">static</span> <span class="keyword">struct </span>spdk_deprecation *_deprecated_##tag; \</div>
+<div class="line">        static <span class="keywordtype">void</span> __attribute__((constructor)) _spdk_deprecation_register_##tag(<span class="keywordtype">void</span>) \</div>
+<div class="line">        { \</div>
+<div class="line">                int rc; \</div>
+<div class="line">                rc = <a class="code" href="log_8h.html#a1c4c05a5d3c40478ff8cfc06a3acd035">spdk_log_deprecation_register</a>(#tag, desc, release, rate, &amp;_deprecated_##tag); \</div>
+<div class="line">                (void)rc; \</div>
+<div class="line">                assert(rc == 0); \</div>
+<div class="line">        }</div>
+<div class="ttc" id="alog_8h_html_a1c4c05a5d3c40478ff8cfc06a3acd035"><div class="ttname"><a href="log_8h.html#a1c4c05a5d3c40478ff8cfc06a3acd035">spdk_log_deprecation_register</a></div><div class="ttdeci">int spdk_log_deprecation_register(const char *tag, const char *description, const char *remove_release, uint32_t rate_limit_seconds, struct spdk_deprecation **reg)</div><div class="ttdoc">Register a deprecation.</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -302,6 +380,30 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log_
 
 </div>
 </div>
+<a id="ac1578d0b093538b785898654350f8f63"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac1578d0b093538b785898654350f8f63">&#9670;&nbsp;</a></span>spdk_log_for_each_deprecation_fn</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef int(* spdk_log_for_each_deprecation_fn) (void *ctx, struct spdk_deprecation *deprecation)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Callback function for <a class="el" href="log_8h.html#a00b13eb13638a39aa9e67e51c0b25e0e" title="Iterate over all deprecations, calling a callback on each of them.">spdk_log_for_each_deprecation()</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ctx</td><td>Context passed via <a class="el" href="log_8h.html#a00b13eb13638a39aa9e67e51c0b25e0e" title="Iterate over all deprecations, calling a callback on each of them.">spdk_log_for_each_deprecation()</a>. </td></tr>
+    <tr><td class="paramname">deprecation</td><td>Pointer to a deprecation structure. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 to continue iteration or non-zero to stop iteration. </dd></dl>
+
+</div>
+</div>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
 <a id="a188d351bd05093cba1d8594ee9988efd"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a188d351bd05093cba1d8594ee9988efd">&#9670;&nbsp;</a></span>spdk_log_level</h2>
@@ -322,6 +424,114 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log_
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="a203431f8adfbb3dbda3c5da21bfc9c6a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a203431f8adfbb3dbda3c5da21bfc9c6a">&#9670;&nbsp;</a></span>spdk_deprecation_get_description()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* spdk_deprecation_get_description </td>
+          <td>(</td>
+          <td class="paramtype">const struct spdk_deprecation *&#160;</td>
+          <td class="paramname"><em>deprecation</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get a deprecation's description. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">deprecation</td><td>A pointer to an spdk_deprecation. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The deprecation's description. </dd></dl>
+
+</div>
+</div>
+<a id="afc930c0e1a4696a4c489c781b1a55b02"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc930c0e1a4696a4c489c781b1a55b02">&#9670;&nbsp;</a></span>spdk_deprecation_get_hits()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint64_t spdk_deprecation_get_hits </td>
+          <td>(</td>
+          <td class="paramtype">const struct spdk_deprecation *&#160;</td>
+          <td class="paramname"><em>deprecation</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the number of times that a deprecation's code has been executed. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">deprecation</td><td>A pointer to an spdk_deprecation. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The deprecation's planned removal release. </dd></dl>
+
+</div>
+</div>
+<a id="a63883d260f21cb745432a61bfc2f5c77"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a63883d260f21cb745432a61bfc2f5c77">&#9670;&nbsp;</a></span>spdk_deprecation_get_remove_release()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* spdk_deprecation_get_remove_release </td>
+          <td>(</td>
+          <td class="paramtype">const struct spdk_deprecation *&#160;</td>
+          <td class="paramname"><em>deprecation</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get a deprecation's planned removal release. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">deprecation</td><td>A pointer to an spdk_deprecation. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The deprecation's planned removal release. </dd></dl>
+
+</div>
+</div>
+<a id="aebde768fd834a3c9364b7b5a8bd479f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aebde768fd834a3c9364b7b5a8bd479f4">&#9670;&nbsp;</a></span>spdk_deprecation_get_tag()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* spdk_deprecation_get_tag </td>
+          <td>(</td>
+          <td class="paramtype">const struct spdk_deprecation *&#160;</td>
+          <td class="paramname"><em>deprecation</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get a deprecation's tag. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">deprecation</td><td>A pointer to an spdk_deprecation. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The deprecation's tag. </dd></dl>
+
+</div>
+</div>
 <a id="aaa20a1f56503b0d9f16c82b451fb338b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aaa20a1f56503b0d9f16c82b451fb338b">&#9670;&nbsp;</a></span>spdk_log()</h2>
 
@@ -435,6 +645,118 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log_
 
 </div>
 </div>
+<a id="a7dabb4fb99a730367b2b3a49ca6bc2e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7dabb4fb99a730367b2b3a49ca6bc2e3">&#9670;&nbsp;</a></span>spdk_log_deprecated()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_log_deprecated </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_deprecation *&#160;</td>
+          <td class="paramname"><em>deprecation</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>file</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>line</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>func</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Indicate that a deprecated feature was used. </p>
+<p>Most consumers will use SPDK_LOG_DEPRECATED() instead.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">deprecation</td><td>The deprecated feature that was used. </td></tr>
+    <tr><td class="paramname">file</td><td>The name of the source file where the deprecated feature was used. </td></tr>
+    <tr><td class="paramname">line</td><td>The line in file where where the deprecated feature was used. </td></tr>
+    <tr><td class="paramname">func</td><td>The name of the function where where the deprecated feature was used. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a1c4c05a5d3c40478ff8cfc06a3acd035"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1c4c05a5d3c40478ff8cfc06a3acd035">&#9670;&nbsp;</a></span>spdk_log_deprecation_register()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_log_deprecation_register </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>tag</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>description</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>remove_release</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>rate_limit_seconds</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct spdk_deprecation **&#160;</td>
+          <td class="paramname"><em>reg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Register a deprecation. </p>
+<p>Most consumers will use SPDK_LOG_DEPRECATION_REGISTER() instead.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tag</td><td>A unique string that will appear in each log message and should appear in documentation. </td></tr>
+    <tr><td class="paramname">description</td><td>A descriptive string that will also be logged. </td></tr>
+    <tr><td class="paramname">rate_limit_seconds</td><td>If non-zero, log messages related to this deprecation will appear no more frequently than this interval. </td></tr>
+    <tr><td class="paramname">remove_release</td><td>The release when the deprecated support will be removed. </td></tr>
+    <tr><td class="paramname">reg</td><td>Pointer to storage for newly allocated deprecation handle. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success or negative errno on failure. </dd></dl>
+
+</div>
+</div>
 <a id="ad360332e6a9699cdfecdac00f768c0b1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad360332e6a9699cdfecdac00f768c0b1">&#9670;&nbsp;</a></span>spdk_log_dump()</h2>
 
@@ -483,6 +805,45 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log_
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="a00b13eb13638a39aa9e67e51c0b25e0e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a00b13eb13638a39aa9e67e51c0b25e0e">&#9670;&nbsp;</a></span>spdk_log_for_each_deprecation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_log_for_each_deprecation </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>ctx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="log_8h.html#ac1578d0b093538b785898654350f8f63">spdk_log_for_each_deprecation_fn</a>&#160;</td>
+          <td class="paramname"><em>fn</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Iterate over all deprecations, calling a callback on each of them. </p>
+<p>Iteration will stop early if the callback function returns non-zero.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ctx</td><td>Context to pass to the callback. </td></tr>
+    <tr><td class="paramname">fn</td><td>Callback function </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The value from the last callback called or 0 if there are no deprecations. </dd></dl>
 
 </div>
 </div>
