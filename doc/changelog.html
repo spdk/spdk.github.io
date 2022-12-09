@@ -106,6 +106,7 @@ v23.01: (Upcoming Release)</h1>
 <p>Bdevs will no longer have UUIDs generated based on timestamp and are responsible for setting this field themselves. Generation of UUIDs for NVMe bdevs may be enabled by running <code>bdev_nvme_set_options</code> RPC with <code>--generate-uuids</code> option. These identifiers are based on serial number and namespace ID and will always be the same for a given device.</p>
 <p>A new API <code>spdk_bdev_channel_get_histogram</code> was added to get the histogram of a specified channel for a bdev.</p>
 <p>Converted internal use of <code>pthread_mutex_t</code> to <code>struct <a class="el" href="structspdk__spinlock.html" title="A spinlock augmented with safety checks for use with SPDK.">spdk_spinlock</a></code>. Consumers of bdev API functions must be on an SPDK thread or the program will abort. It is now enforced that no internal bdev locks can be held when a poller or message goes off CPU.</p>
+<p>A new RPC <code>bdev_reset_iostat</code> was added to reset I/O statistics of bdevs. Note that if one consumer reset I/O statistics, it affects all other consumers.</p>
 <h2>event</h2>
 <p>Added core lock file mechanism to prevent the same CPU cores from being used by multiple SPDK application instances.</p>
 <p>Added a command line switch to disable CPU locks on SPDK startup.</p>
@@ -855,7 +856,7 @@ v19.10: Zoned bdev API, Opal bdev, NVMe character devices</h1>
 <li><code>optimal_open_zones</code>: optimal number of open zones</li>
 </ul>
 <p>The <code>zoned</code> field is a boolean and is always present, while the rest is only available for zoned bdevs.</p>
-<p>A new <code>spdk_bdev_open_ext</code> function has been added and <code>spdk_bdev_open</code> function has been deprecated. The new open function introduces requirement to provide callback function that will be called by asynchronous event such as bdev removal. <code>spdk_bdev_open_ext</code> function takes bdev name as an argument instead of bdev structure to avoid a race condition that can happen when the bdev is being removed between a call to get its structure based on a name and actually openning it.</p>
+<p>A new <code>spdk_bdev_open_ext</code> function has been added and <code>spdk_bdev_open</code> function has been deprecated. The new open function introduces requirement to provide callback function that will be called by asynchronous event such as bdev removal. <code>spdk_bdev_open_ext</code> function takes bdev name as an argument instead of bdev structure to avoid a race condition that can happen when the bdev is being removed between a call to get its structure based on a name and actually opening it.</p>
 <p>New 'resize' event has been added to notify about change of block count property of block device. Event is delivered only if block device was opened with <code>spdk_bdev_open_ext</code> function.</p>
 <h2>bdev zone</h2>
 <p>Added new public header for zoned bdev. Zoned bdev is an extension of the bdev interface.</p>
@@ -1160,7 +1161,7 @@ v19.01: NVMe-oF TCP/IP Transport, Open Channel SSD Flash Translation Layer, Cach
 <h2>net framework</h2>
 <p>Net framework initialization and finish is now done asynchronously.</p>
 <h2>rpc</h2>
-<p>Added <code>spdk_rpc_is_method_allowed</code> function for checking whether method is permitted in a given state. Added <code>spdk_rpc_get_state</code> to check current state of RPC server. RPC <code>wait_subsystem_init</code> has been added to allow clients to block untill all subsystems are initialized.</p>
+<p>Added <code>spdk_rpc_is_method_allowed</code> function for checking whether method is permitted in a given state. Added <code>spdk_rpc_get_state</code> to check current state of RPC server. RPC <code>wait_subsystem_init</code> has been added to allow clients to block until all subsystems are initialized.</p>
 <h2>json rpc</h2>
 <p>JSON RPC client is now running in non-blocking mode. Requests are sent and received during spdk_jsonrpc_client_poll. JSON RPC server can now receive a callback on connection termination or server shutdown using <code>spdk_jsonrpc_conn_add_close_cb</code> and <code>spdk_jsonrpc_conn_del_close_cb</code>.</p>
 <h1><a class="anchor" id="changelog-v18-10"></a>
@@ -1260,7 +1261,7 @@ v18.07: Raid, Infrastructure Improvements, Bug Fixes</h1>
 <h2>Build System</h2>
 <p>The build system now generates a combined shared library (libspdk.so) that may be used in place of the individual static libraries (libspdk_*.a). The combined library includes all components of SPDK and is intended to make linking against SPDK easier. The static libraries are also still provided for users that prefer to link only the minimal set of components required.</p>
 <h2>git pre-commit and pre-push hooks</h2>
-<p>The pre-commit hook will run <code>scripts/check_format.sh</code> and verify there are no formating errors before allowing <code>git commit</code> to run. The pre-push hook runs <code>make CONFIG_WERROR=y</code> with and without <code>CONFIG_DEBUG=y</code> using both the gcc and clang compiler before allowing <code>git push</code> to run. Following each DEBUG build <code>test/unit/unittest.sh</code> is run and verified. Results are recorded in the <code>make.log</code> file.</p>
+<p>The pre-commit hook will run <code>scripts/check_format.sh</code> and verify there are no formatting errors before allowing <code>git commit</code> to run. The pre-push hook runs <code>make CONFIG_WERROR=y</code> with and without <code>CONFIG_DEBUG=y</code> using both the gcc and clang compiler before allowing <code>git push</code> to run. Following each DEBUG build <code>test/unit/unittest.sh</code> is run and verified. Results are recorded in the <code>make.log</code> file.</p>
 <p>To enable type: 'git config core.hooksPath .githooks'. To override after configuration use the <code>git --no-verify</code> flag.</p>
 <h2>RPC</h2>
 <p>The <code>start_nbd_disk</code> RPC method now returns the path to the kernel NBD device node rather than always returning <code>true</code>.</p>

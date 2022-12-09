@@ -149,6 +149,12 @@ struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *(*&#160;</td><t
 <tr class="memitem:a3b626710afb0f6b51f03b6ce9310bdf8"><td class="memItemLeft" align="right" valign="top"><a id="a3b626710afb0f6b51f03b6ce9310bdf8"></a>
 bool(*&#160;</td><td class="memItemRight" valign="bottom"><b>is_zeroes</b> )(struct <a class="el" href="structspdk__bs__dev.html">spdk_bs_dev</a> *dev, uint64_t lba, uint64_t lba_count)</td></tr>
 <tr class="separator:a3b626710afb0f6b51f03b6ce9310bdf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a880362f4bf2aedc8a567243206770307"><td class="memItemLeft" align="right" valign="top"><a id="a880362f4bf2aedc8a567243206770307"></a>
+bool(*&#160;</td><td class="memItemRight" valign="bottom"><b>translate_lba</b> )(struct <a class="el" href="structspdk__bs__dev.html">spdk_bs_dev</a> *dev, uint64_t lba, uint64_t *base_lba)</td></tr>
+<tr class="separator:a880362f4bf2aedc8a567243206770307"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee2b0f93e3e1eb8fcab3dd735c0cc62e"><td class="memItemLeft" align="right" valign="top"><a id="aee2b0f93e3e1eb8fcab3dd735c0cc62e"></a>
+void(*&#160;</td><td class="memItemRight" valign="bottom"><b>copy</b> )(struct <a class="el" href="structspdk__bs__dev.html">spdk_bs_dev</a> *dev, struct spdk_io_channel *channel, uint64_t dst_lba, uint64_t src_lba, uint64_t lba_count, struct <a class="el" href="structspdk__bs__dev__cb__args.html">spdk_bs_dev_cb_args</a> *cb_args)</td></tr>
+<tr class="separator:aee2b0f93e3e1eb8fcab3dd735c0cc62e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6c67b881f2f954ef2eb879796a4dee5a"><td class="memItemLeft" align="right" valign="top"><a id="a6c67b881f2f954ef2eb879796a4dee5a"></a>
 uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>blockcnt</b></td></tr>
 <tr class="separator:a6c67b881f2f954ef2eb879796a4dee5a"><td class="memSeparator" colspan="2">&#160;</td></tr>

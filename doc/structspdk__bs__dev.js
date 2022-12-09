@@ -2,6 +2,7 @@ var structspdk__bs__dev =
 [
     [ "blockcnt", "structspdk__bs__dev.html#a6c67b881f2f954ef2eb879796a4dee5a", null ],
     [ "blocklen", "structspdk__bs__dev.html#aa4d0643a03966df7b0538ea3240fe696", null ],
+    [ "copy", "structspdk__bs__dev.html#aee2b0f93e3e1eb8fcab3dd735c0cc62e", null ],
     [ "create_channel", "structspdk__bs__dev.html#a6beeab94f487334af1a8c3a0ec330b52", null ],
     [ "destroy", "structspdk__bs__dev.html#a7ae3bb18bf006e0f40f1ad36166a8369", null ],
     [ "destroy_channel", "structspdk__bs__dev.html#a0ba5e6b593abc0fa5c9be89e51b8d79d", null ],
@@ -11,6 +12,7 @@ var structspdk__bs__dev =
     [ "read", "structspdk__bs__dev.html#a4e782b655106c1d25b543960b7ba2c0f", null ],
     [ "readv", "structspdk__bs__dev.html#a75564a4d0f1815b99c1fe1e1965b3770", null ],
     [ "readv_ext", "structspdk__bs__dev.html#a69795838dfaaa45c3d58a5b91f179565", null ],
+    [ "translate_lba", "structspdk__bs__dev.html#a880362f4bf2aedc8a567243206770307", null ],
     [ "unmap", "structspdk__bs__dev.html#a737528549b8f240d5b82df1544ec5dcb", null ],
     [ "write", "structspdk__bs__dev.html#a20356550a4ade5c4f8954c57e5d679e2", null ],
     [ "write_zeroes", "structspdk__bs__dev.html#a2990026fbfdb710cce327beeae33aef9", null ],

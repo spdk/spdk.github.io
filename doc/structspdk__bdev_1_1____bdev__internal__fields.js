@@ -19,7 +19,7 @@ var structspdk__bdev_1_1____bdev__internal__fields =
     [ "qos_mod_in_progress", "structspdk__bdev_1_1____bdev__internal__fields.html#add102c5c15292b5d497ed7442a0b30b4", null ],
     [ "reset_in_progress", "structspdk__bdev_1_1____bdev__internal__fields.html#ae3603bee677af4d8eaafffce32e0deea", null ],
     [ "spinlock", "structspdk__bdev_1_1____bdev__internal__fields.html#adf206491fff12a3f57474bab98d07ef2", null ],
-    [ "stat", "structspdk__bdev_1_1____bdev__internal__fields.html#a65f5698e232c6756471cc8a87c1cc0c6", null ],
+    [ "stat", "structspdk__bdev_1_1____bdev__internal__fields.html#ab00d3fac1952f8bfec95406f4bb27429", null ],
     [ "status", "structspdk__bdev_1_1____bdev__internal__fields.html#a75eb824f166523af1bb44edc6b209e89", null ],
     [ "temporary_queue_depth", "structspdk__bdev_1_1____bdev__internal__fields.html#afad02fdc83417a632d9ecc7f3c437c47", null ],
     [ "unregister_cb", "structspdk__bdev_1_1____bdev__internal__fields.html#a19c909b97a282da2b6681fd46a0d9a69", null ],

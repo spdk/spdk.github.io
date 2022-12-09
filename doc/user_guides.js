@@ -183,6 +183,7 @@ var user_guides =
         [ "bdev_examine", "jsonrpc.html#rpc_bdev_examine", null ],
         [ "bdev_wait_for_examine", "jsonrpc.html#rpc_bdev_wait_for_examine", null ],
         [ "bdev_get_iostat", "jsonrpc.html#rpc_bdev_get_iostat", null ],
+        [ "bdev_reset_iostat", "jsonrpc.html#rpc_bdev_reset_iostat", null ],
         [ "bdev_enable_histogram", "jsonrpc.html#rpc_bdev_enable_histogram", null ],
         [ "bdev_get_histogram", "jsonrpc.html#rpc_bdev_get_histogram", null ],
         [ "bdev_set_qos_limit", "jsonrpc.html#rpc_bdev_set_qos_limit", null ],

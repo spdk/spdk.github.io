@@ -161,7 +161,7 @@ Crypto Virtual Bdev Module</h1>
 <p>This command will create a crypto vbdev called 'CryNvmeA' on top of the NVMe bdev 'NVMe1n1' and will use the DPDK software driver 'crypto_aesni_mb' and the key '01234567891234560123456789123456'.</p>
 <p>Please make sure the keys are provided in hexlified format. This means string passed to rpc.py must be twice as long than the key length in binary form.</p>
 <p>Example command</p>
-<p>rpc.py bdev_crypto_create -c AES_XTS -k2 7859243a027411e581e0c40a35c8228f NVMe1n1 CryNvmeA \ mlx5_pci d16a2f3a9e9f5b32daefacd7f5984f4578add84425be4a0baa489b9de8884b09</p>
+<p><code>rpc.py bdev_crypto_create -c AES_XTS -k2 7859243a027411e581e0c40a35c8228f NVMe1n1 CryNvmeA mlx5_pci d16a2f3a9e9f5b32daefacd7f5984f4578add84425be4a0baa489b9de8884b09</code></p>
 <p>This command will create a crypto vbdev called 'CryNvmeA' on top of the NVMe bdev 'NVMe1n1' and will use the DPDK software driver 'mlx5_pci', the AES key 'd16a2f3a9e9f5b32daefacd7f5984f4578add84425be4a0baa489b9de8884b09' and the XTS key '7859243a027411e581e0c40a35c8228f'. In other words, the compound AES_XTS key to be used is 'd16a2f3a9e9f5b32daefacd7f5984f4578add84425be4a0baa489b9de8884b097859243a027411e581e0c40a35c8228f'</p>
 <p>To remove the vbdev use the bdev_crypto_delete command.</p>
 <p><code>rpc.py bdev_crypto_delete CryNvmeA</code></p>
@@ -270,7 +270,7 @@ NVMe bdev</h1>
 NVMe bdev character device</h2>
 <p>This feature is considered as experimental. You must configure with &ndash;with-nvme-cuse option to enable this RPC.</p>
 <p>Example commands</p>
-<p>`rpc.py bdev_nvme_cuse_register -n Nvme3</p>
+<p><code>rpc.py bdev_nvme_cuse_register -n Nvme3</code></p>
 <p>This command will register a character device under /dev/spdk associated with Nvme3 controller. If there are namespaces created on Nvme3 controller, a namespace character device is also created for each namespace.</p>
 <p>For example, the first controller registered will have a character device path of /dev/spdk/nvmeX, where X is replaced with a unique integer to differentiate it from other controllers. Note that this 'nvmeX' name here has no correlation to the name associated with the controller in SPDK. Namespace character devices will have a path of /dev/spdk/nvmeXnY, where Y is the namespace ID.</p>
 <p>Cuse devices are removed from system, when NVMe controller is detached or unregistered with command:</p>

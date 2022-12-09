@@ -1,5 +1,16 @@
 var NAVTREEINDEX27 =
 {
+"structspdk__pci__device.html#ae8f0f4ca43fa4eaec8a60d1e57848a74":[15,0,320,10],
+"structspdk__pci__device.html#af7d6a15271c10ae097804f1a0a8007b4":[15,0,320,5],
+"structspdk__pci__device.html#af862ae8f5abaf025ca2d94210ad1a073":[15,0,320,4],
+"structspdk__pci__device_1_1__spdk__pci__device__internal.html":[15,0,320,0],
+"structspdk__pci__device_1_1__spdk__pci__device__internal.html#a2b514abfed62001b229bfeb65985ade4":[15,0,320,0,1],
+"structspdk__pci__device_1_1__spdk__pci__device__internal.html#a2e0aa2853572332cd67c037e6a90c4a3":[15,0,320,0,5],
+"structspdk__pci__device_1_1__spdk__pci__device__internal.html#a7593c55137b63f8f8aada2d974acdc34":[15,0,320,0,2],
+"structspdk__pci__device_1_1__spdk__pci__device__internal.html#a9283b58bdd73e40901b788728a81f19d":[15,0,320,0,0],
+"structspdk__pci__device_1_1__spdk__pci__device__internal.html#aaee18ce18587afdd407c6668ef9220ce":[15,0,320,0,4],
+"structspdk__pci__device_1_1__spdk__pci__device__internal.html#acf21c093c29e7b709e5d76037eac801f":[15,0,320,0,3],
+"structspdk__pci__device__provider.html":[15,0,321],
 "structspdk__pci__device__provider.html#a1e6db45ddbdcb5a05d188c9f5642fb46":[15,0,321,2],
 "structspdk__pci__device__provider.html#a7b4305d8d5f9bb98eb09f41d48a0bbf7":[15,0,321,1],
 "structspdk__pci__device__provider.html#ab3e91beaa509739dc7b196dbd115a831":[15,0,321,0],
@@ -238,16 +249,5 @@ var NAVTREEINDEX27 =
 "structspdk__sock__impl__opts.html#a012ab72a1bfe745ce5239819c58e5cfc":[15,0,349,12],
 "structspdk__sock__impl__opts.html#a0e1eab74b0d7c71ff588ccf888c647ee":[15,0,349,6],
 "structspdk__sock__impl__opts.html#a2bbb2ddb2593061fed80a7b50b110855":[15,0,349,5],
-"structspdk__sock__impl__opts.html#a35575361b08cbdbd502ee741fadfa46b":[15,0,349,3],
-"structspdk__sock__impl__opts.html#a730f68745e01fa9a86e5d6497b69b81a":[15,0,349,8],
-"structspdk__sock__impl__opts.html#a7bf2c41ae7b77f4d76cf66ed692a955f":[15,0,349,1],
-"structspdk__sock__impl__opts.html#a9c59538d807ae11b134893068b0f6b21":[15,0,349,7],
-"structspdk__sock__impl__opts.html#ad81ccecfc115648e6616e92ad695e609":[15,0,349,11],
-"structspdk__sock__impl__opts.html#ae34d38383f98affcc7c880ab16bd9b72":[15,0,349,9],
-"structspdk__sock__impl__opts.html#ae57696011bed6b45751719d836b81886":[15,0,349,10],
-"structspdk__sock__impl__opts.html#af38850a321bda94d83c8830537825240":[15,0,349,4],
-"structspdk__sock__impl__opts.html#af97f15adfec2e08249ad80b97d2a3e41":[15,0,349,0],
-"structspdk__sock__impl__opts.html#afdb21e60863bdb7c5d7e15ed1c2e9828":[15,0,349,2],
-"structspdk__sock__opts.html":[15,0,350],
-"structspdk__sock__opts.html#a0e826e7a46eadaeb53f38c4926cd3bbf":[15,0,350,4]
+"structspdk__sock__impl__opts.html#a35575361b08cbdbd502ee741fadfa46b":[15,0,349,3]
 };

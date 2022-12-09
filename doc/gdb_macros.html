@@ -203,7 +203,7 @@ $(document).ready(function(){initNavTree('gdb_macros.html',''); initResizable();
 </div><!-- fragment --><p>When starting gdb you still have to call spdk_load_macros.</p>
 <h1>Why Do We Need to Explicitly Call spdk_load_macros</h1>
 <p>The reason is that the macros need to use globals provided by spdk in order to iterate the spdk lists and build iterable representations of the list objects. This will result in errors if these are not available which is very possible if gdb is used for reasons other than debugging spdk core dumps.</p>
-<p>In the example bellow, I attempted to load the macros when the globals are not available causing gdb to fail loading the gdb_macros:</p>
+<p>In the example below, I attempted to load the macros when the globals are not available causing gdb to fail loading the gdb_macros:</p>
 <div class="fragment"><div class="line">(gdb) spdk_load_macros</div>
 <div class="line">Traceback (most recent call last):</div>
 <div class="line">  File &quot;/opt/km/install/tools/gdb_macros/gdb_macros.py&quot;, line 257, in invoke</div>

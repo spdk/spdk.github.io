@@ -1639,6 +1639,35 @@ bdev_get_iostat</h2>
 <div class="line">    ]</div>
 <div class="line">  }</div>
 <div class="line">}</div>
+</div><!-- fragment --><h2><a class="anchor" id="rpc_bdev_reset_iostat"></a>
+bdev_reset_iostat</h2>
+<p>Reset I/O statistics of block devices (bdevs). Note that if one consumer resets I/O statistics, it affects all other consumers.</p>
+<h3>Parameters</h3>
+<p>The user may specify no parameters in order to reset I/O statistics for all block devices, or a block device may be specified by name.</p>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Block device name    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">mode   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Mode to reset I/O statistics: all, maxmin (default: all)   </td></tr>
+</table>
+<h3>Example</h3>
+<p>Example request:</p>
+<div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
+<div class="line">  &quot;id&quot;: 1,</div>
+<div class="line">  &quot;method&quot;: &quot;bdev_reset_iostat&quot;,</div>
+<div class="line">  &quot;params&quot;: {</div>
+<div class="line">    &quot;name&quot;: &quot;Nvme0n1&quot;</div>
+<div class="line">  }</div>
+<div class="line">}</div>
+</div><!-- fragment --><p>Example response:</p>
+<div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
+<div class="line">  &quot;id&quot;: 1,</div>
+<div class="line">  &quot;result&quot;: true</div>
+<div class="line">}</div>
 </div><!-- fragment --><h2><a class="anchor" id="rpc_bdev_enable_histogram"></a>
 bdev_enable_histogram</h2>
 <p>Control whether collecting data for histogram is enabled for specified bdev.</p>
@@ -3434,7 +3463,7 @@ bdev_rbd_register_cluster</h2>
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Registerd Rados cluster object name    </td></tr>
+<td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Registered Rados cluster object name    </td></tr>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">user_id   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Ceph ID (i.e. admin, not client.admin)    </td></tr>
 <tr class="markdownTableRowOdd">
@@ -5862,7 +5891,7 @@ nvmf_create_transport method</h2>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">buf_cache_size   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">The number of shared buffers to reserve for each poll group    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">num_cqe   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">The number of CQ entires. Only used when no_srq=true (RDMA only)    </td></tr>
+<td class="markdownTableBodyNone">num_cqe   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">The number of CQ entries. Only used when no_srq=true (RDMA only)    </td></tr>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">max_srq_depth   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">The number of elements in a per-thread shared receive queue (RDMA only)    </td></tr>
 <tr class="markdownTableRowOdd">
@@ -7058,7 +7087,7 @@ Response</h3>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">iops_threshold   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">Coalescing activation level    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">backend_specific   </td><td class="markdownTableBodyNone">object   </td><td class="markdownTableBodyNone">Backend specific informations   </td></tr>
+<td class="markdownTableBodyNone">backend_specific   </td><td class="markdownTableBodyNone">object   </td><td class="markdownTableBodyNone">Backend specific information   </td></tr>
 </table>
 <h2><a class="anchor" id="rpc_vhost_get_controllers_blk"></a>
 Vhost block</h2>
@@ -8158,7 +8187,7 @@ notify_get_types</h2>
 <div class="line">}</div>
 </div><!-- fragment --><h2><a class="anchor" id="notify_get_notifications"></a>
 notify_get_notifications</h2>
-<p>Request notifications. Returns array of notifications that happend since the specified id (or first that is available).</p>
+<p>Request notifications. Returns array of notifications that happened since the specified id (or first that is available).</p>
 <p>Notice: Notifications are kept in circular buffer with limited size. Older notifications might be inaccessible due to being overwritten by new ones.</p>
 <h3>Parameters</h3>
 <table class="markdownTable">
@@ -8562,7 +8591,7 @@ sock_set_default_impl</h2>
 <h2><a class="anchor" id="rpc_bdev_nvme_send_cmd"></a>
 bdev_nvme_send_cmd</h2>
 <p>Send NVMe command directly to NVMe controller or namespace. Parameters and responses encoded by base64 urlsafe need further processing.</p>
-<p>Notice: bdev_nvme_send_cmd requires user to guarentee the correctness of NVMe command itself, and also optional parameters. Illegal command contents or mismatching buffer size may result in unpredictable behavior.</p>
+<p>Notice: bdev_nvme_send_cmd requires user to guarantee the correctness of NVMe command itself, and also optional parameters. Illegal command contents or mismatching buffer size may result in unpredictable behavior.</p>
 <h3>Parameters</h3>
 <table class="markdownTable">
 <tr class="markdownTableHead">
@@ -8848,7 +8877,7 @@ bdev_daos_create</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">oclass   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">DAOS object class (default SX)   </td></tr>
 </table>
-<p>To find more about various object classes please visit <a href="https://github.com/daos-stack/daos/blob/master/src/object/README.md">DAOS documentation</a>. Please note, that DAOS bdev module uses the same CLI flag notation as <code>dmg</code> and <code>daos</code> commmands, for instance, <code>SX</code> or <code>EC_4P2G2</code> rather than in DAOS header file <code>OC_SX</code> or <code>OC_EC_4P2G2</code>.</p>
+<p>To find more about various object classes please visit <a href="https://github.com/daos-stack/daos/blob/master/src/object/README.md">DAOS documentation</a>. Please note, that DAOS bdev module uses the same CLI flag notation as <code>dmg</code> and <code>daos</code> commands, for instance, <code>SX</code> or <code>EC_4P2G2</code> rather than in DAOS header file <code>OC_SX</code> or <code>OC_EC_4P2G2</code>.</p>
 <h3>Result</h3>
 <p>Name of newly created bdev.</p>
 <h3>Example</h3>

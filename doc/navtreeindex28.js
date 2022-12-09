@@ -1,5 +1,16 @@
 var NAVTREEINDEX28 =
 {
+"structspdk__sock__impl__opts.html#a730f68745e01fa9a86e5d6497b69b81a":[15,0,349,8],
+"structspdk__sock__impl__opts.html#a7bf2c41ae7b77f4d76cf66ed692a955f":[15,0,349,1],
+"structspdk__sock__impl__opts.html#a9c59538d807ae11b134893068b0f6b21":[15,0,349,7],
+"structspdk__sock__impl__opts.html#ad81ccecfc115648e6616e92ad695e609":[15,0,349,11],
+"structspdk__sock__impl__opts.html#ae34d38383f98affcc7c880ab16bd9b72":[15,0,349,9],
+"structspdk__sock__impl__opts.html#ae57696011bed6b45751719d836b81886":[15,0,349,10],
+"structspdk__sock__impl__opts.html#af38850a321bda94d83c8830537825240":[15,0,349,4],
+"structspdk__sock__impl__opts.html#af97f15adfec2e08249ad80b97d2a3e41":[15,0,349,0],
+"structspdk__sock__impl__opts.html#afdb21e60863bdb7c5d7e15ed1c2e9828":[15,0,349,2],
+"structspdk__sock__opts.html":[15,0,350],
+"structspdk__sock__opts.html#a0e826e7a46eadaeb53f38c4926cd3bbf":[15,0,350,4],
 "structspdk__sock__opts.html#a2594f3e53452b59d1f699c7a546c32ff":[15,0,350,0],
 "structspdk__sock__opts.html#a328c0cf2f7ffeeaab0a77567597507bd":[15,0,350,1],
 "structspdk__sock__opts.html#a3cdb293f2ccf10506e7926317e463d91":[15,0,350,7],
@@ -238,16 +249,5 @@ var NAVTREEINDEX28 =
 "thread_8h.html#a717571a5011db0cdd730498146f25f9a":[16,0,57,49],
 "thread_8h.html#a7219c832e5483b4318d2533cb45ff22e":[16,0,57,78],
 "thread_8h.html#a75aa6a61877f23f79bb75c8fc5e68202":[16,0,57,10],
-"thread_8h.html#a75f5c71056d8c39ff05a6610d55edcf5":[16,0,57,41],
-"thread_8h.html#a83adef6c3df9568bdea346b8e7dcbaa5":[16,0,57,38],
-"thread_8h.html#a8537c42a7aa203b50578efed509d9ba8":[16,0,57,27],
-"thread_8h.html#a8ff9537d26ac923a7a93cd55ba315b5b":[16,0,57,37],
-"thread_8h.html#a91a7e9d44c2a332dfcea5e23df471c8d":[16,0,57,81],
-"thread_8h.html#a939935cee4dac6636f2b7c6db0b2fec1":[16,0,57,40],
-"thread_8h.html#a9608b7b0fd448edec6ea5dd38ad04a57":[16,0,57,34],
-"thread_8h.html#a96c6e1cadb3b5a83c5723487e3f02c23":[16,0,57,77],
-"thread_8h.html#a96f03fe115196f1de03292ed6d86fd46":[16,0,57,6],
-"thread_8h.html#a9c26cbd781063f5ee627d6aba2c73fe3":[16,0,57,48],
-"thread_8h.html#a9df2d253885de944794d6810ff98fc4e":[16,0,57,23],
-"thread_8h.html#a9df2d253885de944794d6810ff98fc4ea0008a2defd401c21f63973cacdddd73f":[16,0,57,23,1]
+"thread_8h.html#a75f5c71056d8c39ff05a6610d55edcf5":[16,0,57,41]
 };
