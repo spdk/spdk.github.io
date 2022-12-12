@@ -1,5 +1,7 @@
 var NAVTREEINDEX31 =
 {
+"unionspdk__nvme__feat__arbitration.html":[15,0,147],
+"unionspdk__nvme__feat__arbitration.html#a0eb3434752c3b8ea38f37556fa9fd116":[15,0,147,3],
 "unionspdk__nvme__feat__arbitration.html#a17914eaaf47a25d7edd809aa2f74331b":[15,0,147,5],
 "unionspdk__nvme__feat__arbitration.html#a1c72624e805ff324a05c6e9e592cd11a":[15,0,147,2],
 "unionspdk__nvme__feat__arbitration.html#a28d37ecf81e25a86b65539d93fb39e90":[15,0,147,4],
@@ -247,7 +249,5 @@ var NAVTREEINDEX31 =
 "vagrant.html":[1,2],
 "vagrant.html#vagrant_config":[1,2,1],
 "vagrant.html#vagrant_example":[1,2,2],
-"vagrant.html#vagrant_intro":[1,2,0],
-"version_8h.html":[16,0,62],
-"version_8h.html#a044fb88313d084d910632cea5a06c620":[16,0,62,10]
+"vagrant.html#vagrant_intro":[1,2,0]
 };

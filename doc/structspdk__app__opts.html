@@ -219,6 +219,9 @@ uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>reserved185</b> [7
 <tr class="memitem:aeccbc0421a219e9c2c29195ad9e6be9c"><td class="memItemLeft" align="right" valign="top"><a id="aeccbc0421a219e9c2c29195ad9e6be9c"></a>
 const char **&#160;</td><td class="memItemRight" valign="bottom"><b>rpc_allowlist</b></td></tr>
 <tr class="separator:aeccbc0421a219e9c2c29195ad9e6be9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3cd7fa095f1d9970a004dab4d78286a"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__app__opts.html#ab3cd7fa095f1d9970a004dab4d78286a">vf_token</a></td></tr>
+<tr class="memdesc:ab3cd7fa095f1d9970a004dab4d78286a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used to pass vf_token to vfio_pci driver through DPDK.  <a href="structspdk__app__opts.html#ab3cd7fa095f1d9970a004dab4d78286a">More...</a><br /></td></tr>
+<tr class="separator:ab3cd7fa095f1d9970a004dab4d78286a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Event framework initialization options. </p>
@@ -272,6 +275,23 @@ const char **&#160;</td><td class="memItemRight" valign="bottom"><b>rpc_allowlis
 
 <p>The size of <a class="el" href="structspdk__app__opts.html" title="Event framework initialization options.">spdk_app_opts</a> according to the caller of this library is used for ABI compatibility. </p>
 <p>The library uses this field to know how many fields in this structure are valid. And the library will populate any remaining fields with default values. After that, new added fields should be put after opts_size. </p>
+
+</div>
+</div>
+<a id="ab3cd7fa095f1d9970a004dab4d78286a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab3cd7fa095f1d9970a004dab4d78286a">&#9670;&nbsp;</a></span>vf_token</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* spdk_app_opts::vf_token</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Used to pass vf_token to vfio_pci driver through DPDK. </p>
+<p>The vf_token is an UUID that shared between SR-IOV PF and VF. </p>
 
 </div>
 </div>
