@@ -20,6 +20,8 @@ toc:
 
 * [再探SPDK----使用方法及基础机制概览](https://mp.weixin.qq.com/s?__biz=MzI3NDA4ODY4MA==&mid=2653338740&idx=1&sn=8b501b666653f320525a43d5fe61bc67&chksm=f0cb4bf3c7bcc2e543dc987fb0609aaaa59cab404fc2aa92790314bef742cb9b82baf877b6b8&exportkey=A8zXqscxyyw65AVZQruRWQ0%3D&acctmode=0&pass_ticket=Mcd65zr9t1aqxnAnyC72VMWp8BxN1gvM8479hm7DTtV9slEtDJj4T5aOR1Dl1LU4&wx_header=0#rd)
 
+* [剖析SPDK读写NVMe盘过程--从hello_world开始](https://mp.weixin.qq.com/s?__biz=MzI3NDA4ODY4MA==&mid=2653339124&idx=1&sn=d1ee7ed961872d69f4535718bf394611&chksm=f0cb4a73c7bcc3656152e3f2ac8a60f2525bd992203faf9c4ee25f54419eddb57e3fc3ffc475&mpshare=1&scene=1&srcid=1213KI08iZotwk81xrYjjCB7&sharer_sharetime=1670896926823&sharer_shareid=16362cd686fb4155d775401692935830&exportkey=n_ChQIAhIQ3eKae%2FDanqrmuEtkpK0cOxKOAgIE97dBBAEAAAAAANECAiHFZF0AAAAOpnltbLcz9gKNyK89dVj0%2BSa7s%2B%2FkTnCO0A7PKOk4oZievKJGirOi4aIVxCMGktgRBGsrDXnH93Vsr8kJWVlm1E0FORviPL0idN6ry33%2Bbwfzs8AMOH6DqP5uiSd6RnEoKboWzUsokGrZveq%2FUAtcJV9PD98CcZvkWjeVOItPhYJXOb7AX1fN7kaaFZ73VtMgNrdFM4T5Uu1EzppopSmNRammXc8iDhuGfiWriLm%2FVlsFBo14bMVBpuY28v2PpaA2k0EEsy5QcVTm83rbNFZ4Mo6CKeRK%2BJZ5f3Lzy0TL%2FhE%2FwRclRgIdfvopzE9mAFmTNJlFrmp92Q%3D%3D&acctmode=0&pass_ticket=X3rIA7DhA0Qn%2FAJfhiHkt%2FatLl8TSGQitORh34QjySKgSo0mbwNbB9%2F%2FIrPOvIosgw65JqqjjvWcOBXDS1%2BlPw%3D%3D&wx_header=0#rd)
+
 * [SPDK block device 及其编程的简单介绍](https://mp.weixin.qq.com/s?__biz=MzI3NDA4ODY4MA==&mid=2653336658&idx=1&sn=6c81de4b2897fd78bfdabab9c1c316dd&chksm=f0cb43d5c7bccac3a531867010e43e32abe13c5f8607e61e458f19594402ae5974fd326f7960&token=1050568646&lang=zh_CN#rd)
 
 * [SPDK Block Device 及其编程的简单介绍(二):初始化](https://mp.weixin.qq.com/s?__biz=MzI3NDA4ODY4MA==&mid=2653337067&idx=1&sn=9629dff3ee8ec3e6f70bd4a7dbe763cb&chksm=f0cb426cc7bccb7a3816b9888c547038113a173d4f3f4519fe9cf0f4bf18844074538bfa9781&token=468503366&lang=zh_CN#rd)
@@ -59,6 +61,8 @@ toc:
 * [SPDK NVMe Reservation使用简介](https://mp.weixin.qq.com/s?__biz=MzI3NDA4ODY4MA==&mid=2653335852&idx=1&sn=5e08566473a1e2f14b9d1f697c4995cc&chksm=f0cb46abc7bccfbdc9aa982f87dc851a59c6bddb321f4d02f682549426226eca2ee1d973a32b&token=2145434935&lang=zh_CN#rd)
 
 * [深入理解 SPDK NVMe/TCP transport的设计](https://mp.weixin.qq.com/s?__biz=MzI3NDA4ODY4MA==&mid=2653335525&idx=1&sn=d4dc96bd800161e8a222279ca8396570&chksm=f0cb5862c7bcd1741bfbe1ee4c96dd200491f9c0c4d6a41a8299e0adf289f9a102b6780cd86f&token=1477511457&lang=zh_CN#rd)
+
+* [使用DSA加速NVMe/TCP PDU Digest的CRC32C计算](https://mp.weixin.qq.com/s?__biz=MzI3NDA4ODY4MA==&mid=2653338982&idx=1&sn=1099775c59222bdba62a7a4b1b73b4cb&chksm=f0cb4ae1c7bcc3f746648fbb94382d5cc295422ab027a29357ebe71c4ce109080a1241ad0fee&mpshare=1&scene=1&srcid=12131Lt8FkpTFoACPpRIHrVY&sharer_sharetime=1670896951340&sharer_shareid=16362cd686fb4155d775401692935830&exportkey=n_ChQIAhIQ3dXgDInc52mY5fH3ujTVwhKZAgIE97dBBAEAAAAAAHU3MiYy2UEAAAAOpnltbLcz9gKNyK89dVj01MyEkeLGQCDW7RU0wcXWxq%2Fwwbx%2B1REWT2bQGtxaoHGIP5V%2B6j2jGLQXieaSIsFE2CFEOVFp6MFg7r7X85Cq8ueaalrA3PTtEIKaCalLmJSK%2B%2Bt2xbmXPL9IrSLhiiW2nlhIN5gAj0D%2FeBeldocxEJx%2FiAN30c%2F6AeHVZLpkMytiNb3FqrHmqx9cL%2FnGth1h0pAIvHX451FV1luyDCKbLMQF6c8WbWhJ4dXxx6oFzWtf4ktO%2FenY%2BM9klXamHFhZp5ULL19CgXyuLiMhWnsTPoCza0mL9R%2BOFy%2FBDREOOzrK9VnF5duCffy9p5jYDGYORd0o&acctmode=0&pass_ticket=X3rIA7DhA0Qn%2FAJfhiHkt%2FatLl8TSGQitORh34QjySK1ySy%2BvVvEI1Km%2FufwCUXJMOLA%2BDcVVm6xNTevR4b82g%3D%3D&wx_header=0#rd)
 
 * [搭建远端存储，深度解读SPDK NVMe-oF target](https://mp.weixin.qq.com/s/ohPaxAwmhGtuQQWz--J6WA)
 
@@ -110,6 +114,8 @@ toc:
 
 * [SPDK vhost-user结合SPDK NVMe-oF RDMA性能调优参考](https://mp.weixin.qq.com/s?__biz=MzI3NDA4ODY4MA==&mid=2653338860&idx=1&sn=327e4ebb3ddb993b36159f7606e188f1&chksm=f0cb4b6bc7bcc27d70b7759467061e4b02d8927787e3ed929c798fc4958718ae482c2526afc9&exportkey=AxDHfl1rM%2FVs7ntolagttzg%3D&acctmode=0&pass_ticket=Mcd65zr9t1aqxnAnyC72VMWp8BxN1gvM8479hm7DTtV9slEtDJj4T5aOR1Dl1LU4&wx_header=0#rd)
 
+* [SPDK VFIO-USER虚拟化方案实现介绍](https://mp.weixin.qq.com/s?__biz=MzI3NDA4ODY4MA==&mid=2653338902&idx=1&sn=158bbe3d6f8d95d80863c8fafc6dca5a&chksm=f0cb4a91c7bcc38751a31fe1f3214d644ae3a81e9513eabdab33c1ade605f7b04eacd08c90ef&mpshare=1&scene=1&srcid=1213vc7pAy2MZ2cQE8FGdjse&sharer_sharetime=1670897001260&sharer_shareid=16362cd686fb4155d775401692935830&exportkey=n_ChQIAhIQr3m2reKrGl%2FivEG96Nyx%2BRKZAgIE97dBBAEAAAAAAN9DM8o42tEAAAAOpnltbLcz9gKNyK89dVj0JLDLSVHcfQuTlDlwjDSdXQXFOg604HChEfG6uWCMbK%2Ff5dx%2Bu13DFcNLvlEp0PxeSkVLpJYSGjkt3PrUW1Bs%2FDOJsaE5enXukd4Y9hLUBeJ8f9SWt7tKxxbiOxYr09RvVyrD%2BdiFo49ni0GC7%2BLyH2P1P5s%2FIQCLMT0LFE9RRMCNQj1GOsj%2FrfZxO%2Bzzj%2FGs1B19pmn7uL2zzjwiopk8ILSLdl8xMrSw47aGfXE%2BGhdyFfoGJeKU2Ak552U%2Fjar3OUGTl72OGgCr0FVrz4fbqEHFoHKwcqd%2Fa84%2BQ6DbIts%2F4W89KHt77UMUoYPaSaIuY1gL&acctmode=0&pass_ticket=X3rIA7DhA0Qn%2FAJfhiHkt%2FatLl8TSGQitORh34QjySKVfRHU86fvpwasiJR%2FZFyl9vEqLJJDoqEUCzkZurdAJA%3D%3D&wx_header=0#rd)
+
 ******
 
 **SPDK的性能测试、调试以及生态工具**
@@ -155,6 +161,8 @@ toc:
 * [SPDK与io_uring新异步IO机制](https://mp.weixin.qq.com/s?__biz=MzI3NDA4ODY4MA==&mid=2653337255&idx=1&sn=ac3c6a2e5da26c740897cdd5b5853613&chksm=f0cb4120c7bcc836236a5e5ed5c527e77402f530214a271bde779b1e13bc962b4b55959f84ea&scene=0&xtrack=1&exportkey=A6M3uH7ELEkd9xZgxwA%2FqrA%3D&pass_ticket=w%2BZq2BsgB7kRtHy74eCg%2Bg3OzQ1%2BagIyRNE8HTReHBBzgY%2BPoBJ2KHsJWJVus9X2&wx_header=0#rd)
 
 * [管中窥豹SPDK RBD bdev模块](https://mp.weixin.qq.com/s?__biz=MzI3NDA4ODY4MA==&mid=2653337737&idx=1&sn=4cae3aaf866e55da3b9a986c2147ae76&chksm=f0cb4f0ec7bcc6187c6594ee3cd79c001fe9e1697b80bacb7ba78d0620b9c2296cd68b530a0f&scene=0&xtrack=1&exportkey=A1lokdMubQCTFwj4YPJjRGg%3D&pass_ticket=H6C1Cnqh76Sgtai%2FizQ89JxysFnMQG%2BxrCYau3eJvg83IpHMJBMwostZX%2BsJuDXp&wx_header=0#rd)
+
+* [SPDK RBD bdev性能调优](https://mp.weixin.qq.com/s?__biz=MzI3NDA4ODY4MA==&mid=2653338955&idx=1&sn=bd04f1721cb227215be359cbe878473a&chksm=f0cb4accc7bcc3daf34d73ef96f46719c12bf40398a8b899debc6d2810ccd97edd55c8afd99b&mpshare=1&scene=1&srcid=1213hAmllv3Mc3LVwomBX1LW&sharer_sharetime=1670896967457&sharer_shareid=16362cd686fb4155d775401692935830&exportkey=n_ChQIAhIQquyAU%2BWMkMEje5S7QFkH9xKZAgIE97dBBAEAAAAAAMG8CJalWx0AAAAOpnltbLcz9gKNyK89dVj0SpkeznD775ZJG6lKLSYxE%2BRs%2BFnuxTvncEhU2Se3H1w%2BqNqaeSPyJbyRKcfZ5QpQpphX%2B53fuVgJsIgP5l0hA9Sjn58Jd6mrGDCr5cMNzpa3%2B%2B%2FB7Z00p1JOKhExXN3v3idLEZPxOeL9Sb0fRrsSsaMI9pExMN0EWPh8VoWeJgGR6Z8vHdehmjLU7Dv7AkhijWVCGhfpGkTfiVrASy3DBQYj5jL1fTWyLX2OaqUTAPmYovAvSejEkiMqxPFQBhIR%2FIvmHhJtEkgGF8Z3UmSjdcR7T2csnjiToWCJNYkiRsOrEK%2FDXmZ3FtmVe2xpMs%2BvD7kQ&acctmode=0&pass_ticket=X3rIA7DhA0Qn%2FAJfhiHkt%2FatLl8TSGQitORh34QjySKBYDUDAfZzXyzAH%2B3%2FPAnGK%2Ftz9RA%2BbHFTFLbrNiLsHQ%3D%3D&wx_header=0#rd)
 
 ******
 
