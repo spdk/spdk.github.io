@@ -23,6 +23,7 @@ var structspdk__bdev__io_1_1____bdev__io__internal__fields =
     [ "get_buf_cb", "structspdk__bdev__io_1_1____bdev__io__internal__fields.html#a320a717c3bfbfae0a88e37806a4b11cb", null ],
     [ "in_submit_request", "structspdk__bdev__io_1_1____bdev__io__internal__fields.html#a79f4b610c4db721dbe99f5698d1886f6", null ],
     [ "io_submit_ch", "structspdk__bdev__io_1_1____bdev__io__internal__fields.html#a538e1a5baf1242b0b41489e4f0f411f9", null ],
+    [ "iobuf", "structspdk__bdev__io_1_1____bdev__io__internal__fields.html#a15f97894fc94fe64b3f1970aab43068b", null ],
     [ "nvme", "structspdk__bdev__io_1_1____bdev__io__internal__fields.html#aceed28ec0ec849853150ec68916a8c63", null ],
     [ "orig_iovcnt", "structspdk__bdev__io_1_1____bdev__io__internal__fields.html#a3b896f397d5407bfa31d21c70fbd70c5", null ],
     [ "orig_iovs", "structspdk__bdev__io_1_1____bdev__io__internal__fields.html#a4b3b523a20129486f3e0b35a53bc97e7", null ],

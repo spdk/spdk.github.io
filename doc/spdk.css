@@ -65,7 +65,7 @@ h6 {
 }
 
 .content > p {
-  text-indent: 2em;
+  text-indent: 0;
   text-align: justify;
 }
 
@@ -202,6 +202,7 @@ dl.el {
 }
 
 ul {
+  padding-left: 70px;
   overflow: hidden; /*Fixed: list item bullets overlap floating elements*/
 }
 
@@ -1706,7 +1707,12 @@ tt, code, kbd, samp
 }
 
 code {
+  padding-left: 55px;
   text-indent: 0;
+}
+
+code.highlighter-rouge {
+  padding-left: 0px;
 }
 
 /* @end */

@@ -17,6 +17,7 @@ var prog_guides =
     [ "NVMe over Fabrics Target Programming Guide", "nvmf_tgt_pg.html", null ],
     [ "Flash Translation Layer", "ftl.html", [
       [ "Terminology", "ftl.html#ftl_terminology", [
+        [ "Logical to physical address map", "ftl.html#ftl_l2p", null ],
         [ "Band", "ftl.html#ftl_band", null ],
         [ "Non volatile cache", "ftl.html#ftl_nvcache", null ],
         [ "Garbage collection and relocation", "ftl.html#ftl_reloc", null ]

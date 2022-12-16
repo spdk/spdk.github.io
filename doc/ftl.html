@@ -8,10 +8,10 @@
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-  <script type="text/javascript" src="/js/doxyboot.js"></script>
-  <script type="text/javascript" src="navtree.js"></script>
-  <link href="/css/bootstrap.min.css" rel="stylesheet" type="text/css">
-  <link href="/css/spdk.css" rel="stylesheet" type="text/css">
+  <script type="text/javascript" src="../js/doxyboot.js"></script>
+  <script type="text/javascript" src="./navtree.js"></script>
+  <link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link href="../css/spdk.css" rel="stylesheet" type="text/css">
 </head>
 <body>
   <nav class="navbar navbar-expand-md navbar-dark bg-dark px-2">
@@ -92,7 +92,8 @@ $(document).ready(function(){initNavTree('ftl.html',''); initResizable(); });
 <div class="textblock"><p><a class="anchor" id="md_ftl"></a> The Flash Translation Layer library provides efficient 4K block device access on top of devices with &gt;4K write unit size (eg. raid5f bdev) or devices with large indirection units (some capacity-focused NAND drives), which don't handle 4K writes well. It handles the logical to physical address mapping and manages the garbage collection process.</p>
 <h1><a class="anchor" id="ftl_terminology"></a>
 Terminology</h1>
-<h2>Logical to physical address map</h2>
+<h2><a class="anchor" id="ftl_l2p"></a>
+Logical to physical address map</h2>
 <ul>
 <li>Shorthand: <code>L2P</code></li>
 </ul>

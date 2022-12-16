@@ -8,10 +8,10 @@
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-  <script type="text/javascript" src="/js/doxyboot.js"></script>
-  <script type="text/javascript" src="navtree.js"></script>
-  <link href="/css/bootstrap.min.css" rel="stylesheet" type="text/css">
-  <link href="/css/spdk.css" rel="stylesheet" type="text/css">
+  <script type="text/javascript" src="../js/doxyboot.js"></script>
+  <script type="text/javascript" src="./navtree.js"></script>
+  <link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link href="../css/spdk.css" rel="stylesheet" type="text/css">
 </head>
 <body>
   <nav class="navbar navbar-expand-md navbar-dark bg-dark px-2">
@@ -100,11 +100,12 @@ Collaboration diagram for spdk_bdev_io::__bdev_io_internal_fields:</div>
 <div class="dyncontent">
 <div class="center"><img src="structspdk__bdev__io_1_1____bdev__io__internal__fields__coll__graph.png" border="0" usemap="#aspdk__bdev__io_1_1____bdev__io__internal__fields_coll__map" alt="Collaboration graph"/></div>
 <map name="aspdk__bdev__io_1_1____bdev__io__internal__fields_coll__map" id="aspdk__bdev__io_1_1____bdev__io__internal__fields_coll__map">
-<area shape="rect" title="Fields that are used internally by the bdev subsystem." alt="" coords="94,199,259,240"/>
-<area shape="rect" href="structspdk__bdev__io.html" title=" " alt="" coords="104,333,215,360"/>
-<area shape="rect" href="structspdk__bdev__io__wait__entry.html" title="Structure to register a callback when an spdk_bdev_io becomes available." alt="" coords="67,95,254,121"/>
+<area shape="rect" title="Fields that are used internally by the bdev subsystem." alt="" coords="241,199,406,240"/>
+<area shape="rect" href="structspdk__bdev__io.html" title=" " alt="" coords="131,333,241,360"/>
+<area shape="rect" href="structspdk__iobuf__entry.html" title="iobuf queue entry" alt="" coords="267,95,401,121"/>
+<area shape="rect" href="structspdk__bdev__io__wait__entry.html" title="Structure to register a callback when an spdk_bdev_io becomes available." alt="" coords="490,95,677,121"/>
 <area shape="rect" href="structspdk__bdev.html" title=" " alt="" coords="5,5,97,32"/>
-<area shape="rect" href="structspdk__bdev__ext__io__opts.html" title="Structure with optional IO request parameters The content of this structure must be valid until the I..." alt="" coords="288,95,463,121"/>
+<area shape="rect" href="structspdk__bdev__ext__io__opts.html" title="Structure with optional IO request parameters The content of this structure must be valid until the I..." alt="" coords="68,95,243,121"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -233,6 +234,10 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>orig_iovcnt</b></td></
 <a class="el" href="bdev__module_8h.html#a2562fbcad733a35efaca67e9fb53a382">spdk_bdev_io_get_buf_cb</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev__io_1_1____bdev__io__internal__fields.html#a320a717c3bfbfae0a88e37806a4b11cb">get_buf_cb</a></td></tr>
 <tr class="memdesc:a320a717c3bfbfae0a88e37806a4b11cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback for when buf is allocated. <br /></td></tr>
 <tr class="separator:a320a717c3bfbfae0a88e37806a4b11cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15f97894fc94fe64b3f1970aab43068b"><td class="memItemLeft" align="right" valign="top"><a id="a15f97894fc94fe64b3f1970aab43068b"></a>
+struct <a class="el" href="structspdk__iobuf__entry.html">spdk_iobuf_entry</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev__io_1_1____bdev__io__internal__fields.html#a15f97894fc94fe64b3f1970aab43068b">iobuf</a></td></tr>
+<tr class="memdesc:a15f97894fc94fe64b3f1970aab43068b"><td class="mdescLeft">&#160;</td><td class="mdescRight">iobuf queue entry <br /></td></tr>
+<tr class="separator:a15f97894fc94fe64b3f1970aab43068b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab4db59743b548a313586a12a3a72efeb"><td class="memItemLeft" align="right" valign="top"><a id="ab4db59743b548a313586a12a3a72efeb"></a>
 struct <a class="el" href="structspdk__bdev__io__wait__entry.html">spdk_bdev_io_wait_entry</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev__io_1_1____bdev__io__internal__fields.html#ab4db59743b548a313586a12a3a72efeb">waitq_entry</a></td></tr>
 <tr class="memdesc:ab4db59743b548a313586a12a3a72efeb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enables queuing parent I/O when no bdev_ios available for split children. <br /></td></tr>

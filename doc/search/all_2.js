@@ -40,5 +40,6 @@ var searchData=
   ['brs_90',['brs',['../unionspdk__nvme__bpinfo__register.html#a0a0f2d47ec4131b202ce50e301a22a43',1,'spdk_nvme_bpinfo_register']]],
   ['bstype_91',['bstype',['../structspdk__bs__opts.html#ae4108b46bcac7c0fc9aecb949ea6c417',1,'spdk_bs_opts']]],
   ['buf_92',['buf',['../structspdk__bdev__io_1_1____bdev__io__internal__fields.html#a9c5ed625dd93a86c2430042cd565e186',1,'spdk_bdev_io::__bdev_io_internal_fields']]],
-  ['buf_5flen_93',['buf_len',['../structspdk__bdev__io_1_1____bdev__io__internal__fields.html#a8e969e9419d6f05b335eebc2f2b246a6',1,'spdk_bdev_io::__bdev_io_internal_fields']]]
+  ['buf_5flen_93',['buf_len',['../structspdk__bdev__io_1_1____bdev__io__internal__fields.html#a8e969e9419d6f05b335eebc2f2b246a6',1,'spdk_bdev_io::__bdev_io_internal_fields']]],
+  ['bufsize_94',['bufsize',['../structspdk__iobuf__pool.html#a741669b0f7f9266cd762714a974b2163',1,'spdk_iobuf_pool']]]
 ];
