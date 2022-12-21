@@ -19,7 +19,7 @@ var histogram__data_8h =
     [ "spdk_histogram_data_alloc_sized", "histogram__data_8h.html#a920c98c8fc17b085509662cf9c81e357", null ],
     [ "spdk_histogram_data_free", "histogram__data_8h.html#a7c5c54cda6180b629e3fd58338a4cc05", null ],
     [ "spdk_histogram_data_iterate", "histogram__data_8h.html#acf41b2ac89977c8045fa780c16a9f009", null ],
-    [ "spdk_histogram_data_merge", "histogram__data_8h.html#a78927969cf0d1905ed790e7caa8e8303", null ],
+    [ "spdk_histogram_data_merge", "histogram__data_8h.html#a59df7c39b727f782f06c8d42dfb4aeda", null ],
     [ "spdk_histogram_data_reset", "histogram__data_8h.html#a17e367b9265c96d1da940ca3bbc07bba", null ],
     [ "spdk_histogram_data_tally", "histogram__data_8h.html#a371bc190f31acaef9ed64a74a3e933e2", null ]
 ];

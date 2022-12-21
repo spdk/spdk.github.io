@@ -4506,7 +4506,9 @@ bdev_xnvme_create</h2>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">filename   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">path to device or file (ex: /dev/nvme0n1)    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">io_mechanism   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">IO mechanism to use (ex: libaio, io_uring, io_uring_cmd, etc.)   </td></tr>
+<td class="markdownTableBodyNone">io_mechanism   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">IO mechanism to use (ex: libaio, io_uring, io_uring_cmd, etc.)    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">conserve_cpu   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Whether or not to conserve CPU when polling (default: false)   </td></tr>
 </table>
 <h3>Result</h3>
 <p>Name of newly created bdev.</p>
@@ -4519,7 +4521,8 @@ bdev_xnvme_create</h2>
 <div class="line">  &quot;params&quot;: {</div>
 <div class="line">    &quot;name&quot;: &quot;bdev_ng0n1&quot;,</div>
 <div class="line">    &quot;filename&quot;: &quot;/dev/ng0n1&quot;,</div>
-<div class="line">    &quot;io_mechanism&quot;: &quot;io_uring_cmd&quot;</div>
+<div class="line">    &quot;io_mechanism&quot;: &quot;io_uring_cmd&quot;,</div>
+<div class="line">    &quot;conserve_cpu&quot;: false,</div>
 <div class="line">  }</div>
 <div class="line">}</div>
 </div><!-- fragment --><p>Example response:</p>
