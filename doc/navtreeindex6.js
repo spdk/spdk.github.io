@@ -1,5 +1,6 @@
 var NAVTREEINDEX6 =
 {
+"json_8h.html#a0512cd8ee58901ec15f5ef372d6cafc6":[16,0,33,24],
 "json_8h.html#a09e94f77e23c6a3d4211a91a7fdec6e4":[16,0,33,30],
 "json_8h.html#a0ba1891841d0504b55ca62ef2005bb2f":[16,0,33,62],
 "json_8h.html#a0c52aaf8c280708f391202507ac80a4b":[16,0,33,31],
@@ -248,6 +249,5 @@ var NAVTREEINDEX6 =
 "jsonrpc.html#rpc_iscsi_create_auth_group_secret":[3,9,6,4,0],
 "jsonrpc.html#rpc_iscsi_create_initiator_group":[3,9,6,10],
 "jsonrpc.html#rpc_iscsi_create_portal_group":[3,9,6,21],
-"jsonrpc.html#rpc_iscsi_create_target_node":[3,9,6,15],
-"jsonrpc.html#rpc_iscsi_delete_auth_group":[3,9,6,5]
+"jsonrpc.html#rpc_iscsi_create_target_node":[3,9,6,15]
 };

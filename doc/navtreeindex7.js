@@ -1,5 +1,6 @@
 var NAVTREEINDEX7 =
 {
+"jsonrpc.html#rpc_iscsi_delete_auth_group":[3,9,6,5],
 "jsonrpc.html#rpc_iscsi_delete_initiator_group":[3,9,6,11],
 "jsonrpc.html#rpc_iscsi_delete_portal_group":[3,9,6,23],
 "jsonrpc.html#rpc_iscsi_delete_target_node":[3,9,6,19],
@@ -248,6 +249,5 @@ var NAVTREEINDEX7 =
 "mmio_8h.html#ab8d78bfd9224a6a5081735b98ccc4211":[16,0,38,7],
 "mmio_8h.html#ab9cf69aea2ce3b3447fd9cae8ad6141c":[16,0,38,6],
 "mmio_8h.html#ac1ed5f26656a99025bf5dd8da28c14b9":[16,0,38,3],
-"modules.html":[14],
-"nbd_8h.html":[16,0,39]
+"modules.html":[14]
 };

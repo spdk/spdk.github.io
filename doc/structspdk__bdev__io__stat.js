@@ -5,6 +5,7 @@ var structspdk__bdev__io__stat =
     [ "bytes_unmapped", "structspdk__bdev__io__stat.html#a894b220e4afa92847951a830b69a975c", null ],
     [ "bytes_written", "structspdk__bdev__io__stat.html#a0553590ed412cebed64a4b8442df41e9", null ],
     [ "copy_latency_ticks", "structspdk__bdev__io__stat.html#a63b265f79bef5e32467ddec8abbd5214", null ],
+    [ "io_error", "structspdk__bdev__io__stat.html#abcf70df537acbcc9d18ba1bd36739cf8", null ],
     [ "max_copy_latency_ticks", "structspdk__bdev__io__stat.html#a14e1b3fce8e37f628c6ef40c6e8fdb23", null ],
     [ "max_read_latency_ticks", "structspdk__bdev__io__stat.html#a190f4055cfcd1dbae71649bd4a748190", null ],
     [ "max_unmap_latency_ticks", "structspdk__bdev__io__stat.html#ae604641cf2ad94846a9f56aa5156334f", null ],

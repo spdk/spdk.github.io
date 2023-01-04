@@ -32,7 +32,8 @@ var bdev__module_8h =
       [ "SPDK_BDEV_IO_STATUS_NVME_ERROR", "bdev__module_8h.html#aa35cc1485b6ba4351c2fb4fbd7125c93ae9fd36cc0fcdcb3e37d0e5f1f43f06cc", null ],
       [ "SPDK_BDEV_IO_STATUS_FAILED", "bdev__module_8h.html#aa35cc1485b6ba4351c2fb4fbd7125c93ab8a07dab1a0f0495f2111b2248c493a0", null ],
       [ "SPDK_BDEV_IO_STATUS_PENDING", "bdev__module_8h.html#aa35cc1485b6ba4351c2fb4fbd7125c93aab9d44175a13bf0c0e952c8e92a801dd", null ],
-      [ "SPDK_BDEV_IO_STATUS_SUCCESS", "bdev__module_8h.html#aa35cc1485b6ba4351c2fb4fbd7125c93a233937591f5356b7a8bf7836f434f129", null ]
+      [ "SPDK_BDEV_IO_STATUS_SUCCESS", "bdev__module_8h.html#aa35cc1485b6ba4351c2fb4fbd7125c93a233937591f5356b7a8bf7836f434f129", null ],
+      [ "SPDK_MIN_BDEV_IO_STATUS", "bdev__module_8h.html#aa35cc1485b6ba4351c2fb4fbd7125c93a488e2d6a5be7ee1111bc37ffddf8bf22", null ]
     ] ],
     [ "spdk_bdev_alias_add", "bdev__module_8h.html#af1079eae68fac856b56863f26bc5310f", null ],
     [ "spdk_bdev_alias_del", "bdev__module_8h.html#a96486c7be7952a1665ce6ae977f092ef", null ],

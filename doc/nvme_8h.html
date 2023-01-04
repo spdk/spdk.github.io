@@ -768,6 +768,9 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_trty
 <tr class="memitem:a5f179ad680512c168148e13aa74b3f4b"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a5f179ad680512c168148e13aa74b3f4b">spdk_nvme_cpl_get_status_string</a> (const struct <a class="el" href="structspdk__nvme__status.html">spdk_nvme_status</a> *status)</td></tr>
 <tr class="memdesc:a5f179ad680512c168148e13aa74b3f4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given NVMe status, return ASCII string for that error.  <a href="nvme_8h.html#a5f179ad680512c168148e13aa74b3f4b">More...</a><br /></td></tr>
 <tr class="separator:a5f179ad680512c168148e13aa74b3f4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14f2ca4a3d3d7ae892943410ca1a07e0"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a14f2ca4a3d3d7ae892943410ca1a07e0">spdk_nvme_cpl_get_status_type_string</a> (const struct <a class="el" href="structspdk__nvme__status.html">spdk_nvme_status</a> *status)</td></tr>
+<tr class="memdesc:a14f2ca4a3d3d7ae892943410ca1a07e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given NVMe status, return ASCII string for the type of that error.  <a href="nvme_8h.html#a14f2ca4a3d3d7ae892943410ca1a07e0">More...</a><br /></td></tr>
+<tr class="separator:a14f2ca4a3d3d7ae892943410ca1a07e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac06275147a2cbb800440686b8ba9a73b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#ac06275147a2cbb800440686b8ba9a73b">spdk_nvme_qpair_print_command</a> (struct spdk_nvme_qpair *qpair, struct <a class="el" href="structspdk__nvme__cmd.html">spdk_nvme_cmd</a> *cmd)</td></tr>
 <tr class="memdesc:ac06275147a2cbb800440686b8ba9a73b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prints (SPDK_NOTICELOG) the contents of an NVMe submission queue entry (command).  <a href="nvme_8h.html#ac06275147a2cbb800440686b8ba9a73b">More...</a><br /></td></tr>
 <tr class="separator:ac06275147a2cbb800440686b8ba9a73b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1347,6 +1350,33 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_trty
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Returns status as an ASCII string. </dd></dl>
+
+</div>
+</div>
+<a id="a14f2ca4a3d3d7ae892943410ca1a07e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a14f2ca4a3d3d7ae892943410ca1a07e0">&#9670;&nbsp;</a></span>spdk_nvme_cpl_get_status_type_string()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* spdk_nvme_cpl_get_status_type_string </td>
+          <td>(</td>
+          <td class="paramtype">const struct <a class="el" href="structspdk__nvme__status.html">spdk_nvme_status</a> *&#160;</td>
+          <td class="paramname"><em>status</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Given NVMe status, return ASCII string for the type of that error. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">status</td><td>Status from NVMe completion queue element. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Returns status type as an ASCII string. </dd></dl>
 
 </div>
 </div>
