@@ -7,6 +7,8 @@ var bdev__module_8h =
     [ "spdk_bdev_alias", "structspdk__bdev__alias.html", "structspdk__bdev__alias" ],
     [ "spdk_bdev", "structspdk__bdev.html", "structspdk__bdev" ],
     [ "__bdev_internal_fields", "structspdk__bdev_1_1____bdev__internal__fields.html", "structspdk__bdev_1_1____bdev__internal__fields" ],
+    [ "__bdev_internal_claim", "unionspdk__bdev_1_1____bdev__internal__fields_1_1____bdev__internal__claim.html", "unionspdk__bdev_1_1____bdev__internal__fields_1_1____bdev__internal__claim" ],
+    [ "__bdev_internal_claim_v1", "structspdk__bdev_1_1____bdev__internal__fields_1_1____bdev__internal__claim_1_1____bdev__internal__claim__v1.html", "structspdk__bdev_1_1____bdev__internal__fields_1_1____bdev__internal__claim_1_1____bdev__internal__claim__v1" ],
     [ "spdk_bdev_io", "structspdk__bdev__io.html", "structspdk__bdev__io" ],
     [ "__bdev_io_internal_fields", "structspdk__bdev__io_1_1____bdev__io__internal__fields.html", "structspdk__bdev__io_1_1____bdev__io__internal__fields" ],
     [ "spdk_bdev_part", "structspdk__bdev__part.html", "structspdk__bdev__part" ],
@@ -22,6 +24,10 @@ var bdev__module_8h =
     [ "spdk_bdev_io_get_buf_cb", "bdev__module_8h.html#a2562fbcad733a35efaca67e9fb53a382", null ],
     [ "spdk_bdev_part_base_free_fn", "bdev__module_8h.html#ad226e52efa62c0b31340be538000d1a8", null ],
     [ "spdk_bdev_unregister_cb", "bdev__module_8h.html#aaf30cdcd20a84d898099dd35bbfa3590", null ],
+    [ "spdk_bdev_claim_type", "bdev__module_8h.html#a925d6b2ad6ebe5de21a0ef80271c5919", [
+      [ "SPDK_BDEV_CLAIM_NONE", "bdev__module_8h.html#a925d6b2ad6ebe5de21a0ef80271c5919a03bb225d6b1117f2e51935a0460994e3", null ],
+      [ "SPDK_BDEV_CLAIM_EXCL_WRITE", "bdev__module_8h.html#a925d6b2ad6ebe5de21a0ef80271c5919a57e1235cb4553faad33f9b8389881f4b", null ]
+    ] ],
     [ "spdk_bdev_io_status", "bdev__module_8h.html#aa35cc1485b6ba4351c2fb4fbd7125c93", [
       [ "SPDK_BDEV_IO_STATUS_AIO_ERROR", "bdev__module_8h.html#aa35cc1485b6ba4351c2fb4fbd7125c93ae6ecaeb0839ed289f85ec9a92ff53d35", null ],
       [ "SPDK_BDEV_IO_STATUS_ABORTED", "bdev__module_8h.html#aa35cc1485b6ba4351c2fb4fbd7125c93aa7e7c5c151a858b09de01627b63cf2ca", null ],

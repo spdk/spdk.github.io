@@ -119,6 +119,11 @@ Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev_1_1____bdev__internal__fields.html">spdk_bdev::__bdev_internal_fields</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fields that are used internally by the bdev subsystem.  <a href="structspdk__bdev_1_1____bdev__internal__fields.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">union &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unionspdk__bdev_1_1____bdev__internal__fields_1_1____bdev__internal__claim.html">spdk_bdev::__bdev_internal_fields::__bdev_internal_claim</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Which module has claimed this bdev.  <a href="unionspdk__bdev_1_1____bdev__internal__fields_1_1____bdev__internal__claim.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev_1_1____bdev__internal__fields_1_1____bdev__internal__claim_1_1____bdev__internal__claim__v1.html">spdk_bdev::__bdev_internal_fields::__bdev_internal_claim::__bdev_internal_claim_v1</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev__io.html">spdk_bdev_io</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev__io_1_1____bdev__io__internal__fields.html">spdk_bdev_io::__bdev_io_internal_fields</a></td></tr>
@@ -169,6 +174,11 @@ typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_g
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
+<tr class="memitem:a925d6b2ad6ebe5de21a0ef80271c5919"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev__module_8h.html#a925d6b2ad6ebe5de21a0ef80271c5919">spdk_bdev_claim_type</a> { <b>SPDK_BDEV_CLAIM_NONE</b> = 0
+, <a class="el" href="bdev__module_8h.html#a925d6b2ad6ebe5de21a0ef80271c5919a57e1235cb4553faad33f9b8389881f4b">SPDK_BDEV_CLAIM_EXCL_WRITE</a>
+ }</td></tr>
+<tr class="memdesc:a925d6b2ad6ebe5de21a0ef80271c5919"><td class="mdescLeft">&#160;</td><td class="mdescRight">Claim types.  <a href="bdev__module_8h.html#a925d6b2ad6ebe5de21a0ef80271c5919">More...</a><br /></td></tr>
+<tr class="separator:a925d6b2ad6ebe5de21a0ef80271c5919"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa35cc1485b6ba4351c2fb4fbd7125c93"><td class="memItemLeft" align="right" valign="top"><a id="aa35cc1485b6ba4351c2fb4fbd7125c93"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev__module_8h.html#aa35cc1485b6ba4351c2fb4fbd7125c93">spdk_bdev_io_status</a> { <br />
 &#160;&#160;<b>SPDK_BDEV_IO_STATUS_AIO_ERROR</b> = -8
 , <b>SPDK_BDEV_IO_STATUS_ABORTED</b> = -7
@@ -438,6 +448,27 @@ typedef&#160;</td><td class="memItemRight" valign="bottom"><b>TAILQ_HEAD</b> (bd
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<h2 class="groupheader">Enumeration Type Documentation</h2>
+<a id="a925d6b2ad6ebe5de21a0ef80271c5919"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a925d6b2ad6ebe5de21a0ef80271c5919">&#9670;&nbsp;</a></span>spdk_bdev_claim_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="bdev__module_8h.html#a925d6b2ad6ebe5de21a0ef80271c5919">spdk_bdev_claim_type</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Claim types. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a925d6b2ad6ebe5de21a0ef80271c5919a57e1235cb4553faad33f9b8389881f4b"></a>SPDK_BDEV_CLAIM_EXCL_WRITE&#160;</td><td class="fielddoc"><p>Exclusive writer. </p>
+</td></tr>
+</table>
 
 </div>
 </div>
@@ -2130,6 +2161,7 @@ typedef&#160;</td><td class="memItemRight" valign="bottom"><b>TAILQ_HEAD</b> (bd
 </div><div class="memdoc">
 
 <p>Register a new bdev. </p>
+<p>This function must be called from the SPDK app thread.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">bdev</td><td>Block device to register.</td></tr>

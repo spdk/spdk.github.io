@@ -1,0 +1,4 @@
+<map id="spdk_bdev_module::__bdev_module_internal_fields" name="spdk_bdev_module::__bdev_module_internal_fields">
+<area shape="rect" id="node1" title="Fields that are used by the internal bdev subsystem." alt="" coords="5,95,187,151"/>
+<area shape="rect" id="node2" href="$structspdk__spinlock.html" title="A spinlock augmented with safety checks for use with SPDK." alt="" coords="39,5,153,32"/>
+</map>

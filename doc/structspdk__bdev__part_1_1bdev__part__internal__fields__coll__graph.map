@@ -1,8 +1,8 @@
 <map id="spdk_bdev_part::bdev_part_internal_fields" name="spdk_bdev_part::bdev_part_internal_fields">
-<area shape="rect" id="node1" title="Fields that are used internally by part.c These fields should only be accessed from a module using an..." alt="" coords="279,288,445,329"/>
-<area shape="rect" id="node2" href="$structspdk__bdev.html" title=" " alt="" coords="316,199,408,225"/>
-<area shape="rect" id="node3" href="$structspdk__bdev__module.html" title="Block device module." alt="" coords="5,5,153,32"/>
-<area shape="rect" id="node5" href="$structspdk__bdev_1_1____bdev__internal__fields.html" title="Fields that are used internally by the bdev subsystem." alt="" coords="135,95,338,136"/>
-<area shape="rect" id="node4" href="$structspdk__uuid.html" title=" " alt="" coords="362,102,450,129"/>
-<area shape="rect" id="node6" href="$structspdk__bdev__fn__table.html" title="Function table for a block device backend." alt="" coords="474,102,626,129"/>
+<area shape="rect" id="node1" title="Fields that are used internally by part.c These fields should only be accessed from a module using an..." alt="" coords="223,199,389,240"/>
+<area shape="rect" id="node2" href="$structspdk__bdev.html" title=" " alt="" coords="260,109,352,136"/>
+<area shape="rect" id="node3" href="$structspdk__bdev__module.html" title="Block device module." alt="" coords="5,13,153,39"/>
+<area shape="rect" id="node4" href="$structspdk__uuid.html" title=" " alt="" coords="178,13,266,39"/>
+<area shape="rect" id="node5" href="$structspdk__bdev_1_1____bdev__internal__fields.html" title="Fields that are used internally by the bdev subsystem." alt="" coords="290,5,493,47"/>
+<area shape="rect" id="node6" href="$structspdk__bdev__fn__table.html" title="Function table for a block device backend." alt="" coords="517,13,669,39"/>
 </map>

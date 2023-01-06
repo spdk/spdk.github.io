@@ -1,5 +1,13 @@
 var NAVTREEINDEX23 =
 {
+"structspdk__nvme__power__state.html#aab718108ed3ecfc7a186b76e2a7c350d":[15,0,205,23],
+"structspdk__nvme__power__state.html#aac7f8d210a7d9d7ff3bebe86e080fd1b":[15,0,205,3],
+"structspdk__nvme__power__state.html#ab6bc2c7bb5fea9e7bf663c8808085da1":[15,0,205,10],
+"structspdk__nvme__power__state.html#abbf83442c61dd8095fe0b5446a7a6671":[15,0,205,5],
+"structspdk__nvme__power__state.html#ad33bbfd39bc94569c031ec6ebca02af2":[15,0,205,12],
+"structspdk__nvme__power__state.html#ae6ae4f0ca864bf75fc842a29198d8e56":[15,0,205,1],
+"structspdk__nvme__power__state.html#afc4b1e6d5ea6bac9c592e55fa94cfd7e":[15,0,205,18],
+"structspdk__nvme__primary__ctrl__capabilities.html":[15,0,206],
 "structspdk__nvme__primary__ctrl__capabilities.html#a0932f0fb2038aff45b5e25788e62eadc":[15,0,206,9],
 "structspdk__nvme__primary__ctrl__capabilities.html#a188fc422eddd794a1af2d164a29942a7":[15,0,206,7],
 "structspdk__nvme__primary__ctrl__capabilities.html#a4f54107ade9a50eba4d82e18aca5b39b":[15,0,206,12],
@@ -241,13 +249,5 @@ var NAVTREEINDEX23 =
 "structspdk__nvme__tcp__term__req__hdr.html":[15,0,236],
 "structspdk__nvme__tcp__term__req__hdr.html#a48561a81c6df6f94b9420c8550a2c88f":[15,0,236,0],
 "structspdk__nvme__tcp__term__req__hdr.html#a579e7e6921b36edce9309bd90c4f59b6":[15,0,236,2],
-"structspdk__nvme__tcp__term__req__hdr.html#ac4a9186c72cafa21bae6a64c5900f59f":[15,0,236,1],
-"structspdk__nvme__tcp__term__req__hdr.html#ae08c10e9d71244b51eedad3e3f11d98b":[15,0,236,3],
-"structspdk__nvme__tcp__transport__specific__address__subtype.html":[15,0,237],
-"structspdk__nvme__tcp__transport__specific__address__subtype.html#aadd698f60438b09c6a29de7c72b3e400":[15,0,237,1],
-"structspdk__nvme__tcp__transport__specific__address__subtype.html#ad01f99d21c4695bf3695018429355319":[15,0,237,0],
-"structspdk__nvme__telemetry__log__page__hdr.html":[15,0,238],
-"structspdk__nvme__telemetry__log__page__hdr.html#a0355cc15d7b4c13c5a49e7af2bd6fe0c":[15,0,238,7],
-"structspdk__nvme__telemetry__log__page__hdr.html#a3d2ee1238857dccf9ab9e4933713c6c9":[15,0,238,6],
-"structspdk__nvme__telemetry__log__page__hdr.html#a67c1ed52aaf111bfa0da878b7067b194":[15,0,238,3]
+"structspdk__nvme__tcp__term__req__hdr.html#ac4a9186c72cafa21bae6a64c5900f59f":[15,0,236,1]
 };

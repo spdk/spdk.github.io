@@ -95,6 +95,15 @@ $(document).ready(function(){initNavTree('structspdk__bdev__module_1_1____bdev__
 
 <p>Fields that are used by the internal bdev subsystem.  
  <a href="structspdk__bdev__module_1_1____bdev__module__internal__fields.html#details">More...</a></p>
+<div class="dynheader">
+Collaboration diagram for spdk_bdev_module::__bdev_module_internal_fields:</div>
+<div class="dyncontent">
+<div class="center"><img src="structspdk__bdev__module_1_1____bdev__module__internal__fields__coll__graph.png" border="0" usemap="#aspdk__bdev__module_1_1____bdev__module__internal__fields_coll__map" alt="Collaboration graph"/></div>
+<map name="aspdk__bdev__module_1_1____bdev__module__internal__fields_coll__map" id="aspdk__bdev__module_1_1____bdev__module__internal__fields_coll__map">
+<area shape="rect" title="Fields that are used by the internal bdev subsystem." alt="" coords="5,95,187,151"/>
+<area shape="rect" href="structspdk__spinlock.html" title="A spinlock augmented with safety checks for use with SPDK." alt="" coords="39,5,153,32"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -104,6 +113,9 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
+<tr class="memitem:ac55ea3750bd0f70772762afef9e0b508"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structspdk__spinlock.html">spdk_spinlock</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev__module_1_1____bdev__module__internal__fields.html#ac55ea3750bd0f70772762afef9e0b508">spinlock</a></td></tr>
+<tr class="memdesc:ac55ea3750bd0f70772762afef9e0b508"><td class="mdescLeft">&#160;</td><td class="mdescRight">Protects action_in_progress.  <a href="structspdk__bdev__module_1_1____bdev__module__internal__fields.html#ac55ea3750bd0f70772762afef9e0b508">More...</a><br /></td></tr>
+<tr class="separator:ac55ea3750bd0f70772762afef9e0b508"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac487dd3b111bdf81b2b5532ff5fc2f51"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev__module_1_1____bdev__module__internal__fields.html#ac487dd3b111bdf81b2b5532ff5fc2f51">action_in_progress</a></td></tr>
 <tr class="memdesc:ac487dd3b111bdf81b2b5532ff5fc2f51"><td class="mdescLeft">&#160;</td><td class="mdescRight">Count of bdev inits/examinations in progress.  <a href="structspdk__bdev__module_1_1____bdev__module__internal__fields.html#ac487dd3b111bdf81b2b5532ff5fc2f51">More...</a><br /></td></tr>
 <tr class="separator:ac487dd3b111bdf81b2b5532ff5fc2f51"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -127,6 +139,23 @@ Data Fields</h2></td></tr>
 <p>Count of bdev inits/examinations in progress. </p>
 <p>Used by generic bdev layer and must not be modified by bdev modules.</p>
 <dl class="section note"><dt>Note</dt><dd>Used internally by bdev subsystem, don't change this value in bdev module. </dd></dl>
+
+</div>
+</div>
+<a id="ac55ea3750bd0f70772762afef9e0b508"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac55ea3750bd0f70772762afef9e0b508">&#9670;&nbsp;</a></span>spinlock</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="structspdk__spinlock.html">spdk_spinlock</a> spdk_bdev_module::__bdev_module_internal_fields::spinlock</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Protects action_in_progress. </p>
+<p>Take no locks while holding this one. </p>
 
 </div>
 </div>

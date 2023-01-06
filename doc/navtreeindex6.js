@@ -1,5 +1,8 @@
 var NAVTREEINDEX6 =
 {
+"json_8h.html#a0243b25b04a8f06ea1656c86d7621cf9":[16,0,33,51],
+"json_8h.html#a034afae7d0bbb43e6b75f91402cdbcdb":[16,0,33,39],
+"json_8h.html#a04601f5c6dc82ac1ddedc387a510249d":[16,0,33,25],
 "json_8h.html#a0512cd8ee58901ec15f5ef372d6cafc6":[16,0,33,24],
 "json_8h.html#a09e94f77e23c6a3d4211a91a7fdec6e4":[16,0,33,30],
 "json_8h.html#a0ba1891841d0504b55ca62ef2005bb2f":[16,0,33,62],
@@ -246,8 +249,5 @@ var NAVTREEINDEX6 =
 "jsonrpc.html#rpc_iscsi_auth_group_add_secret":[3,9,6,7],
 "jsonrpc.html#rpc_iscsi_auth_group_remove_secret":[3,9,6,8],
 "jsonrpc.html#rpc_iscsi_create_auth_group":[3,9,6,4],
-"jsonrpc.html#rpc_iscsi_create_auth_group_secret":[3,9,6,4,0],
-"jsonrpc.html#rpc_iscsi_create_initiator_group":[3,9,6,10],
-"jsonrpc.html#rpc_iscsi_create_portal_group":[3,9,6,21],
-"jsonrpc.html#rpc_iscsi_create_target_node":[3,9,6,15]
+"jsonrpc.html#rpc_iscsi_create_auth_group_secret":[3,9,6,4,0]
 };

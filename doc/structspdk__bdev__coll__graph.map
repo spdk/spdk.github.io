@@ -1,12 +1,13 @@
 <map id="spdk_bdev" name="spdk_bdev">
-<area shape="rect" id="node1" title=" " alt="" coords="547,121,639,148"/>
-<area shape="rect" id="node6" href="$structspdk__bdev__name.html" title=" " alt="" coords="787,45,923,72"/>
-<area shape="rect" id="node9" href="$structspdk__bdev__io.html" title=" " alt="" coords="800,149,911,176"/>
-<area shape="rect" id="node2" href="$structspdk__bdev__module.html" title="Block device module." alt="" coords="291,31,439,57"/>
-<area shape="rect" id="node5" href="$structspdk__bdev_1_1____bdev__internal__fields.html" title="Fields that are used internally by the bdev subsystem." alt="" coords="1095,170,1297,211"/>
-<area shape="rect" id="node3" href="$structspdk__bdev__module_1_1____bdev__module__internal__fields.html" title="Fields that are used by the internal bdev subsystem." alt="" coords="5,16,187,72"/>
-<area shape="rect" id="node4" href="$structspdk__uuid.html" title=" " alt="" coords="321,96,409,123"/>
-<area shape="rect" id="node7" href="$structspdk__spinlock.html" title="A spinlock augmented with safety checks for use with SPDK." alt="" coords="798,263,913,289"/>
-<area shape="rect" id="node8" href="$structspdk__bdev__io__stat.html" title=" " alt="" coords="784,313,927,340"/>
-<area shape="rect" id="node10" href="$structspdk__bdev__fn__table.html" title="Function table for a block device backend." alt="" coords="289,147,441,173"/>
+<area shape="rect" id="node1" title=" " alt="" coords="769,143,861,169"/>
+<area shape="rect" id="node7" href="$structspdk__bdev__name.html" title=" " alt="" coords="988,57,1124,84"/>
+<area shape="rect" id="node10" href="$structspdk__bdev__io.html" title=" " alt="" coords="1001,161,1111,188"/>
+<area shape="rect" id="node2" href="$structspdk__bdev__module.html" title="Block device module." alt="" coords="513,81,661,108"/>
+<area shape="rect" id="node3" href="$structspdk__bdev__module_1_1____bdev__module__internal__fields.html" title="Fields that are used by the internal bdev subsystem." alt="" coords="227,59,408,115"/>
+<area shape="rect" id="node4" href="$structspdk__spinlock.html" title="A spinlock augmented with safety checks for use with SPDK." alt="" coords="5,39,120,65"/>
+<area shape="rect" id="node6" href="$structspdk__bdev_1_1____bdev__internal__fields.html" title="Fields that are used internally by the bdev subsystem." alt="" coords="1333,181,1536,222"/>
+<area shape="rect" id="node5" href="$structspdk__uuid.html" title=" " alt="" coords="543,192,631,219"/>
+<area shape="rect" id="node8" href="$structspdk__bdev__io__stat.html" title=" " alt="" coords="985,275,1127,301"/>
+<area shape="rect" id="node9" href="$unionspdk__bdev_1_1____bdev__internal__fields_1_1____bdev__internal__claim.html" title="Which module has claimed this bdev." alt="" coords="947,326,1165,367"/>
+<area shape="rect" id="node11" href="$structspdk__bdev__fn__table.html" title="Function table for a block device backend." alt="" coords="511,141,663,168"/>
 </map>

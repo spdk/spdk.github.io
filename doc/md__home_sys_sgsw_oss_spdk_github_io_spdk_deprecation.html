@@ -98,8 +98,12 @@ ABI and API Deprecation</h1>
 <h1><a class="anchor" id="deprecation-notices"></a>
 Deprecation Notices</h1>
 <h2>nvme</h2>
-<h3><code>nvme_ctrlr_prepare_for_reset</code>`</h3>
-<p>Deprecated <code>spdk_nvme_ctrlr_prepare_for_reset</code> API, which will be removed in SPDK 22.01. For PCIe transport, <code>spdk_nvme_ctrlr_disconnect</code> should be used before freeing I/O qpairs. </p>
+<h3><code>nvme_ctrlr_prepare_for_reset</code></h3>
+<p>Deprecated <code>spdk_nvme_ctrlr_prepare_for_reset</code> API, which will be removed in SPDK 22.01. For PCIe transport, <code>spdk_nvme_ctrlr_disconnect</code> should be used before freeing I/O qpairs.</p>
+<h2>bdev</h2>
+<h3><code>bdev_register_examine_thread</code></h3>
+<p>Deprecated calling <code><a class="el" href="bdev__module_8h.html#a5fef71f7761986298bb4aaf345736bb3" title="Register a new bdev.">spdk_bdev_register()</a></code> and <code><a class="el" href="bdev_8h.html#ae720ef13c98f9ba40e6562d4a8582427" title="Examine a block device explicitly.">spdk_bdev_examine()</a></code> from a thread other than the app thread. See <code><a class="el" href="thread_8h.html#a5e4e0f6527f81dc3277989d05b4c7111" title="Return the app thread.">spdk_thread_get_app_thread()</a></code>. Starting in SPDK 23.05, calling <code><a class="el" href="bdev__module_8h.html#a5fef71f7761986298bb4aaf345736bb3" title="Register a new bdev.">spdk_bdev_register()</a></code> or <code><a class="el" href="bdev_8h.html#ae720ef13c98f9ba40e6562d4a8582427" title="Examine a block device explicitly.">spdk_bdev_examine()</a></code> from a thread other than the app thread will return an error.</p>
+<p>With the removal of this deprecation, calls to vbdev modules' <code>examine_disk()</code> and <code>examine_config()</code> callbacks will happen only on the app thread. This means that vbdev module maintainers will not need to make any changes to examine callbacks that call <code><a class="el" href="bdev__module_8h.html#a5fef71f7761986298bb4aaf345736bb3" title="Register a new bdev.">spdk_bdev_register()</a></code> on the same thread as the examine callback uses. </p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->

@@ -207,6 +207,9 @@ uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>reserved610</b> [7
 <tr class="memitem:a30f3fa93d23c91e76afa426fb74a8ece"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__ctrlr__opts.html#a30f3fa93d23c91e76afa426fb74a8ece">psk</a> [200]</td></tr>
 <tr class="memdesc:a30f3fa93d23c91e76afa426fb74a8ece"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set PSK and enable SSL socket implementation for NVMe/TCP only.  <a href="structspdk__nvme__ctrlr__opts.html#a30f3fa93d23c91e76afa426fb74a8ece">More...</a><br /></td></tr>
 <tr class="separator:a30f3fa93d23c91e76afa426fb74a8ece"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52f59742178dd13a98b2db3fdbd5c482"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__ctrlr__opts.html#a52f59742178dd13a98b2db3fdbd5c482">transport_tos</a></td></tr>
+<tr class="memdesc:a52f59742178dd13a98b2db3fdbd5c482"><td class="mdescLeft">&#160;</td><td class="mdescRight">It is used for RDMA transport.  <a href="structspdk__nvme__ctrlr__opts.html#a52f59742178dd13a98b2db3fdbd5c482">More...</a><br /></td></tr>
+<tr class="separator:a52f59742178dd13a98b2db3fdbd5c482"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>NVMe controller initialization options. </p>
@@ -568,6 +571,23 @@ uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>reserved610</b> [7
 
 <p>It is used for both RDMA &amp; TCP transport Specify the transport ACK timeout. </p>
 <p>The value should be in range 0-31 where 0 means use driver-specific default value. RDMA: The value is applied to each qpair and affects the time that qpair waits for transport layer acknowledgement until it retransmits a packet. The value should be chosen empirically to meet the needs of a particular application. A low value means less time the qpair waits for ACK which can increase the number of retransmissions. A large value can increase the time the connection is closed. The value of ACK timeout is calculated according to the formula 4.096 * 2^(transport_ack_timeout) usec. TCP: The value is applied to each qpair and affects the time that qpair waits for transport layer acknowledgement until connection is closed forcefully. The value of ACK timeout is calculated according to the formula 2^(transport_ack_timeout) msec. </p>
+
+</div>
+</div>
+<a id="a52f59742178dd13a98b2db3fdbd5c482"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a52f59742178dd13a98b2db3fdbd5c482">&#9670;&nbsp;</a></span>transport_tos</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t spdk_nvme_ctrlr_opts::transport_tos</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>It is used for RDMA transport. </p>
+<p>Set the IP protocol type of service value for RDMA transport. Default is 0, which means that the TOS will not be set. </p>
 
 </div>
 </div>

@@ -33,5 +33,6 @@ var structspdk__nvme__ctrlr__opts =
     [ "src_svcid", "structspdk__nvme__ctrlr__opts.html#ab348a8dc36baba0c3b3ab9a50b299752", null ],
     [ "transport_ack_timeout", "structspdk__nvme__ctrlr__opts.html#a070ee4322069e538ed3d3565c0f6c467", null ],
     [ "transport_retry_count", "structspdk__nvme__ctrlr__opts.html#aff1b2c63ae9c862d3d372c49b5fd8b8c", null ],
+    [ "transport_tos", "structspdk__nvme__ctrlr__opts.html#a52f59742178dd13a98b2db3fdbd5c482", null ],
     [ "use_cmb_sqs", "structspdk__nvme__ctrlr__opts.html#a69f7c6f3a946ed379a7b8b63faa70a48", null ]
 ];

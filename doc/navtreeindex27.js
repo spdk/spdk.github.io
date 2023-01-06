@@ -1,5 +1,13 @@
 var NAVTREEINDEX27 =
 {
+"structspdk__opal__d0__tper__feat.html#a9424ed1b3750199b07b7f51558441048":[15,0,318,10],
+"structspdk__opal__d0__tper__feat.html#a985cf418b6ba9d155934435e17d86c9d":[15,0,318,9],
+"structspdk__opal__d0__tper__feat.html#ab5b2a906c2f3faffc341d2dadb64ed96":[15,0,318,2],
+"structspdk__opal__d0__tper__feat.html#ae4f64da2b2343461db4f1d2cb6e6dc95":[15,0,318,8],
+"structspdk__opal__d0__tper__feat.html#af2788e85d153b7d0599c692891a8d4e6":[15,0,318,11],
+"structspdk__opal__d0__tper__feat.html#afa498bfca05eef05a3552f3dc5aec6f3":[15,0,318,7],
+"structspdk__opal__d0__v100__feat.html":[15,0,319],
+"structspdk__opal__d0__v100__feat.html#a0367c8b7048f211d80b02c236b388117":[15,0,319,0],
 "structspdk__opal__d0__v100__feat.html#a07284d137dc9923d09f1ae4dedbebce4":[15,0,319,4],
 "structspdk__opal__d0__v100__feat.html#a1e3a1079c6612dfcf4304b89040a6162":[15,0,319,2],
 "structspdk__opal__d0__v100__feat.html#a2790232f279266ff1379498edb38ef2e":[15,0,319,3],
@@ -241,13 +249,5 @@ var NAVTREEINDEX27 =
 "structspdk__scsi__pr__out__reg__and__move__param__list.html#a128194af49bc4a4a966314e242802ed4":[15,0,348,0],
 "structspdk__scsi__pr__out__reg__and__move__param__list.html#a1d74b121e844229939c9806578904b6e":[15,0,348,7],
 "structspdk__scsi__pr__out__reg__and__move__param__list.html#a2b215884ccf6967b212327d951f6c837":[15,0,348,8],
-"structspdk__scsi__pr__out__reg__and__move__param__list.html#a7ee0567e1e147016a56c2062633774b0":[15,0,348,2],
-"structspdk__scsi__pr__out__reg__and__move__param__list.html#a97686cfc87d87f7a7ac19d715bf8c924":[15,0,348,1],
-"structspdk__scsi__pr__out__reg__and__move__param__list.html#ac69975ab96c6718c6d0932fa70c2e15a":[15,0,348,5],
-"structspdk__scsi__pr__out__reg__and__move__param__list.html#ad7fef8524a5cd292b3da0ca0945ffd12":[15,0,348,6],
-"structspdk__scsi__pr__out__reg__and__move__param__list.html#ae227db92110f48deb5db601fa607b688":[15,0,348,3],
-"structspdk__scsi__pr__out__reg__and__move__param__list.html#af9697b217d0fd037008beb34653b87f4":[15,0,348,4],
-"structspdk__scsi__task.html":[15,0,349],
-"structspdk__scsi__task.html#a101adf17cdbb1f5e08b2e161533e1b03":[15,0,349,4],
-"structspdk__scsi__task.html#a22482d12d534a2eab078068d586b9258":[15,0,349,3]
+"structspdk__scsi__pr__out__reg__and__move__param__list.html#a7ee0567e1e147016a56c2062633774b0":[15,0,348,2]
 };
