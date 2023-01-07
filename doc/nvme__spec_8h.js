@@ -119,6 +119,7 @@ var nvme__spec_8h =
     [ "SPDK_NVME_DATASET_MANAGEMENT_RANGE_MAX_BLOCKS", "nvme__spec_8h.html#a26ca66ff5a40e3916763aabbfb22ce14", null ],
     [ "SPDK_NVME_DOORBELL_REGISTER_SIZE", "nvme__spec_8h.html#ab9e1e3dd0e7fe14855e22cb4c14e573c", null ],
     [ "SPDK_NVME_GLOBAL_NS_TAG", "nvme__spec_8h.html#a49914175a8977c209595d436f71136bc", null ],
+    [ "SPDK_NVME_IDENTIFY_BUFLEN", "nvme__spec_8h.html#a97a995aea41807a41ee7a2670dc33114", null ],
     [ "SPDK_NVME_IO_FLAGS_CDW12_MASK", "nvme__spec_8h.html#acae4271834fedbb07dfa2e1a5c7a2a2d", null ],
     [ "SPDK_NVME_IO_FLAGS_FORCE_UNIT_ACCESS", "nvme__spec_8h.html#abd0db806408dd6b8ed6e032cde431d9d", null ],
     [ "SPDK_NVME_IO_FLAGS_FUSE_FIRST", "nvme__spec_8h.html#aa12837c61bff3188e1f92d001506e5a0", null ],
