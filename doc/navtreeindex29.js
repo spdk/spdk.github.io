@@ -1,5 +1,15 @@
 var NAVTREEINDEX29 =
 {
+"structvfio__user__dma__unmap.html":[15,0,382],
+"structvfio__user__dma__unmap.html#a4cd8cbba2b3d70e47224627b06deca81":[15,0,382,3],
+"structvfio__user__dma__unmap.html#a5e7d8b2aa49b8287437d91fbd52c6b6c":[15,0,382,1],
+"structvfio__user__dma__unmap.html#aade59e9449ea41b47c9400ba1fb48ba1":[15,0,382,2],
+"structvfio__user__dma__unmap.html#ad8d4589bb1b5e1da62b612b5bc90cd29":[15,0,382,4],
+"structvfio__user__dma__unmap.html#ae2f30c18041d320245a684c271b6ab71":[15,0,382,0],
+"structvfio__user__header.html":[15,0,383],
+"structvfio__user__header.html#a03b79c2757a48fe1cdeb3dabbc44a9ff":[15,0,383,6],
+"structvfio__user__header.html#a058ab14577aa8d041d2fd480088342b5":[15,0,383,4],
+"structvfio__user__header.html#a1072eea3401a2d0bbda4fc0d8bcdcb2d":[15,0,383,7],
 "structvfio__user__header.html#a192a548b281b126819c771b7a5c85766":[15,0,383,0],
 "structvfio__user__header.html#a4069787d02f5851e7c7652198505a102":[15,0,383,5],
 "structvfio__user__header.html#a929c2ba18ce9462b9bf960939332a2df":[15,0,383,1],
@@ -239,15 +249,5 @@ var NAVTREEINDEX29 =
 "unionidxd__gencap__register.html#ac36eca6fe8552148c572c8e0d0035b34":[15,0,11,3],
 "unionidxd__gencap__register.html#ac8503441d52a4c6674e83fa8604fe36f":[15,0,11,8],
 "unionidxd__gencap__register.html#ae02003de39fbc6ee93485140603551fb":[15,0,11,7],
-"unionidxd__gencap__register.html#ae237032e3d8099a22ccaaa0ca056d94e":[15,0,11,14],
-"unionidxd__gencap__register.html#af6f77e05ce9e00cc2bcfd33014e48553":[15,0,11,12],
-"unionidxd__gencap__register.html#af71dd0fc8d5f79348a9afb4a94b6aeb7":[15,0,11,11],
-"unionidxd__gencfg__register.html":[15,0,12],
-"unionidxd__gencfg__register.html#a178cb32c5ada79254fb7a9c55f8d1d3d":[15,0,12,3],
-"unionidxd__gencfg__register.html#a2dc98aacdf6cfe65cefb5d87b91d69b9":[15,0,12,4],
-"unionidxd__gencfg__register.html#a3d8014754a953df166915bbdedd40a48":[15,0,12,5],
-"unionidxd__gencfg__register.html#a785d35161fde6509859704dade8e6701":[15,0,12,2],
-"unionidxd__gencfg__register.html#ac8f42899f32d806aaa6d59677bb14106":[15,0,12,1],
-"unionidxd__gencfg__register.html#ae5bda56d845ac6bd5ea8c5f97ab9ba8d":[15,0,12,0],
-"unionidxd__genctrl__register.html":[15,0,13]
+"unionidxd__gencap__register.html#ae237032e3d8099a22ccaaa0ca056d94e":[15,0,11,14]
 };

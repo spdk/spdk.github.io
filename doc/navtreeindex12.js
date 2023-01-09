@@ -1,5 +1,15 @@
 var NAVTREEINDEX12 =
 {
+"nvme__zns_8h.html#a78c8da36da7f1e66ec0aceee68e326d5":[16,0,45,4],
+"nvme__zns_8h.html#a7b031890e8233b4a788a799be333a18f":[16,0,45,6],
+"nvme__zns_8h.html#a7e44f2e8ad190636f5b7e18bbfe3d301":[16,0,45,1],
+"nvme__zns_8h.html#a873628c3e2395e9bc8b45e050527c0cd":[16,0,45,0],
+"nvme__zns_8h.html#ac6808ae83b9fa6535d699ad9c2104e09":[16,0,45,15],
+"nvme__zns_8h.html#ad136263aca9103d001cdd2d7308999b0":[16,0,45,18],
+"nvme__zns_8h.html#ad88778a20396b5b10621c39e44a5fdd0":[16,0,45,3],
+"nvme__zns_8h.html#af976a7e45715b3a6db365f9baf8d3225":[16,0,45,14],
+"nvme__zns_8h.html#afe28a5a089886cadf0008c7b2b03d5c9":[16,0,45,16],
+"nvme_multipath.html":[3,12],
 "nvme_spec.html":[2,4],
 "nvmf.html":[3,5],
 "nvmf.html#nvmf_config":[3,5,4],
@@ -239,15 +249,5 @@ var NAVTREEINDEX12 =
 "nvmf__spec_8h.html#ac62d17c0157d3cc331a12b2881433b06a6139c2f0065a950bda55b58886e02666":[16,0,47,59,2],
 "nvmf__spec_8h.html#ac62d17c0157d3cc331a12b2881433b06a677673f9025ab4569105a7a8a9de1bc0":[16,0,47,59,5],
 "nvmf__spec_8h.html#ac62d17c0157d3cc331a12b2881433b06a6e47b2eb43b2d535cb88347702b17f6f":[16,0,47,59,1],
-"nvmf__spec_8h.html#ac62d17c0157d3cc331a12b2881433b06adcadb0614036e404a9b855b6382677d1":[16,0,47,59,4],
-"nvmf__spec_8h.html#ac62d17c0157d3cc331a12b2881433b06af0491864b4e0d715f35cc39f040f9b38":[16,0,47,59,6],
-"nvmf__spec_8h.html#ad199a352cba97886b448a596ce71a388":[16,0,47,110],
-"nvmf__spec_8h.html#ae260601dcef8a2a8aa4f25352924c726":[16,0,47,111],
-"nvmf__spec_8h.html#ae3b51e18dd25ae4dacef6741ca20d124":[16,0,47,53],
-"nvmf__spec_8h.html#ae6b4697fca7cd87ea5ec7c636689ee2e":[16,0,47,75],
-"nvmf__spec_8h.html#ae7837a7c820a2ff32c866401743b1a44":[16,0,47,82],
-"nvmf__spec_8h.html#ae7f76294d6aefedd28e4656b263324b8":[16,0,47,64],
-"nvmf__spec_8h.html#ae7f76294d6aefedd28e4656b263324b8a233f4113c80ccc4592ea178d4828a8cd":[16,0,47,64,1],
-"nvmf__spec_8h.html#ae7f76294d6aefedd28e4656b263324b8a4438cc664cb0cb88ad7f6988d5b48068":[16,0,47,64,5],
-"nvmf__spec_8h.html#ae7f76294d6aefedd28e4656b263324b8a8c9e6b6a89fe12dea55d6b0d4631c925":[16,0,47,64,4]
+"nvmf__spec_8h.html#ac62d17c0157d3cc331a12b2881433b06adcadb0614036e404a9b855b6382677d1":[16,0,47,59,4]
 };

@@ -1,5 +1,15 @@
 var NAVTREEINDEX6 =
 {
+"iscsi__spec_8h.html#af552fafd6804f9189aa98263f8bb5cd4":[16,0,32,30],
+"iscsi__spec_8h.html#af6b4af2bfcecc7351955c4cd89e1e775":[16,0,32,44],
+"iscsi__spec_8h.html#afa03843ca64676b995bf1abe55713228":[16,0,32,96],
+"iscsi__spec_8h.html#afc1399a96e2809ab9bc4f0bb040a1c67":[16,0,32,71],
+"iscsi__spec_8h.html#afc8398dd60d41f2be91516402ff50704":[16,0,32,40],
+"iscsi__spec_8h.html#afe99d10120365a28ddbdee6f0d09abd7":[16,0,32,65],
+"iscsi__spec_8h.html#aff110ee78d96f5b484fa7ce91a71f96c":[16,0,32,52],
+"json_8h.html":[16,0,33],
+"json_8h.html#a004f1240d5091218020dd1fc4bf557c1":[16,0,33,22],
+"json_8h.html#a01e5f7c9397f496f580d63c2735d280c":[16,0,33,14],
 "json_8h.html#a0243b25b04a8f06ea1656c86d7621cf9":[16,0,33,51],
 "json_8h.html#a034afae7d0bbb43e6b75f91402cdbcdb":[16,0,33,39],
 "json_8h.html#a04601f5c6dc82ac1ddedc387a510249d":[16,0,33,25],
@@ -239,15 +249,5 @@ var NAVTREEINDEX6 =
 "jsonrpc.html#rpc_framework_get_reactors":[3,9,3,7],
 "jsonrpc.html#rpc_framework_get_scheduler":[3,9,3,9],
 "jsonrpc.html#rpc_framework_get_subsystems":[3,9,3,5],
-"jsonrpc.html#rpc_framework_monitor_context_switch":[3,9,3,1],
-"jsonrpc.html#rpc_framework_set_scheduler":[3,9,3,8],
-"jsonrpc.html#rpc_framework_start_init":[3,9,3,2],
-"jsonrpc.html#rpc_framework_wait_init":[3,9,3,3],
-"jsonrpc.html#rpc_iaa_scan_accel_module":[3,9,4,4],
-"jsonrpc.html#rpc_ioat_scan_accel_module":[3,9,4,5],
-"jsonrpc.html#rpc_iobuf_set_options":[3,9,12,13],
-"jsonrpc.html#rpc_iscsi_auth_group_add_secret":[3,9,6,7],
-"jsonrpc.html#rpc_iscsi_auth_group_remove_secret":[3,9,6,8],
-"jsonrpc.html#rpc_iscsi_create_auth_group":[3,9,6,4],
-"jsonrpc.html#rpc_iscsi_create_auth_group_secret":[3,9,6,4,0]
+"jsonrpc.html#rpc_framework_monitor_context_switch":[3,9,3,1]
 };

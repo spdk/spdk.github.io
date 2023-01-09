@@ -138,10 +138,14 @@ Typedefs</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:a85588b3a6ec5c188ab2dc318c3903586"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dma_8h.html#a85588b3a6ec5c188ab2dc318c3903586">spdk_dma_device_type</a> { <a class="el" href="dma_8h.html#a85588b3a6ec5c188ab2dc318c3903586a00353a6b099210ed1c52cb9582f1ae01">SPDK_DMA_DEVICE_TYPE_RDMA</a>
+<tr class="memitem:a85588b3a6ec5c188ab2dc318c3903586"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dma_8h.html#a85588b3a6ec5c188ab2dc318c3903586">spdk_dma_device_type</a> { <br />
+&#160;&#160;<a class="el" href="dma_8h.html#a85588b3a6ec5c188ab2dc318c3903586a00353a6b099210ed1c52cb9582f1ae01">SPDK_DMA_DEVICE_TYPE_RDMA</a>
 , <a class="el" href="dma_8h.html#a85588b3a6ec5c188ab2dc318c3903586ae488329b2d5cebe0bc130e0803c4fefc">SPDK_DMA_DEVICE_TYPE_DMA</a>
+, <a class="el" href="dma_8h.html#a85588b3a6ec5c188ab2dc318c3903586a065a87ed31fe120b25d6811ce9b37ba8">SPDK_DMA_DEVICE_TYPE_ACCEL</a>
 , <a class="el" href="dma_8h.html#a85588b3a6ec5c188ab2dc318c3903586a1201e15e1a81553cb3ac297e7f5648be">SPDK_DMA_DEVICE_VENDOR_SPECIFIC_TYPE_START</a> = 1000
-, <a class="el" href="dma_8h.html#a85588b3a6ec5c188ab2dc318c3903586a51d3c59fcd56fc712b1943b5a08dead2">SPDK_DMA_DEVICE_VENDOR_SPECIFIC_TYPE_END</a> = SPDK_DMA_DEVICE_VENDOR_SPECIFIC_TYPE_START + 999
+, <br />
+&#160;&#160;<a class="el" href="dma_8h.html#a85588b3a6ec5c188ab2dc318c3903586a51d3c59fcd56fc712b1943b5a08dead2">SPDK_DMA_DEVICE_VENDOR_SPECIFIC_TYPE_END</a> = SPDK_DMA_DEVICE_VENDOR_SPECIFIC_TYPE_START + 999
+<br />
  }</td></tr>
 <tr class="separator:a85588b3a6ec5c188ab2dc318c3903586"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -354,6 +358,8 @@ Functions</h2></td></tr>
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a85588b3a6ec5c188ab2dc318c3903586a00353a6b099210ed1c52cb9582f1ae01"></a>SPDK_DMA_DEVICE_TYPE_RDMA&#160;</td><td class="fielddoc"><p>RDMA devices are capable of performing DMA operations on memory domains using the standard RDMA model (protection domain, remote key, address). </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a85588b3a6ec5c188ab2dc318c3903586ae488329b2d5cebe0bc130e0803c4fefc"></a>SPDK_DMA_DEVICE_TYPE_DMA&#160;</td><td class="fielddoc"><p>DMA devices are capable of performing DMA operations on memory domains using physical or I/O virtual addresses. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a85588b3a6ec5c188ab2dc318c3903586a065a87ed31fe120b25d6811ce9b37ba8"></a>SPDK_DMA_DEVICE_TYPE_ACCEL&#160;</td><td class="fielddoc"><p>Virtual memory domain representing memory being transformed by accel framework. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a85588b3a6ec5c188ab2dc318c3903586a1201e15e1a81553cb3ac297e7f5648be"></a>SPDK_DMA_DEVICE_VENDOR_SPECIFIC_TYPE_START&#160;</td><td class="fielddoc"><p>Start of the range of vendor-specific DMA device types. </p>
 </td></tr>

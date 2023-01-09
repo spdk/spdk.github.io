@@ -112,6 +112,9 @@ Typedefs</h2></td></tr>
 <tr class="memitem:a545ea1cc4167924acee2803aed824877"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="accel_8h.html#a545ea1cc4167924acee2803aed824877">spdk_accel_fini_cb</a>) (void *cb_arg)</td></tr>
 <tr class="memdesc:a545ea1cc4167924acee2803aed824877"><td class="mdescLeft">&#160;</td><td class="mdescRight">Acceleration framework finish callback.  <a href="accel_8h.html#a545ea1cc4167924acee2803aed824877">More...</a><br /></td></tr>
 <tr class="separator:a545ea1cc4167924acee2803aed824877"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abaf556b5e1b63b5237faff3952a3bb46"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="accel_8h.html#abaf556b5e1b63b5237faff3952a3bb46">spdk_accel_step_cb</a>) (void *cb_arg)</td></tr>
+<tr class="memdesc:abaf556b5e1b63b5237faff3952a3bb46"><td class="mdescLeft">&#160;</td><td class="mdescRight">Completion callback of a single operation within a sequence.  <a href="accel_8h.html#abaf556b5e1b63b5237faff3952a3bb46">More...</a><br /></td></tr>
+<tr class="separator:abaf556b5e1b63b5237faff3952a3bb46"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
@@ -172,6 +175,30 @@ Functions</h2></td></tr>
 <tr class="memitem:aaa6e70c2f88354096414a1568ed35c40"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="accel_8h.html#aaa6e70c2f88354096414a1568ed35c40">spdk_accel_submit_decompress</a> (struct spdk_io_channel *ch, struct iovec *dst_iovs, size_t dst_iovcnt, struct iovec *src_iovs, size_t src_iovcnt, int flags, <a class="el" href="accel_8h.html#a6ba836b7b128829ba185eadb2c60476a">spdk_accel_completion_cb</a> cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:aaa6e70c2f88354096414a1568ed35c40"><td class="mdescLeft">&#160;</td><td class="mdescRight">Build and submit a memory decompress request.  <a href="accel_8h.html#aaa6e70c2f88354096414a1568ed35c40">More...</a><br /></td></tr>
 <tr class="separator:aaa6e70c2f88354096414a1568ed35c40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51ed9c807379914cef1c5eaf05a3b9f7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="accel_8h.html#a51ed9c807379914cef1c5eaf05a3b9f7">spdk_accel_append_copy</a> (struct spdk_accel_sequence **seq, struct spdk_io_channel *ch, struct iovec *dst_iovs, uint32_t dst_iovcnt, struct spdk_memory_domain *dst_domain, void *dst_domain_ctx, struct iovec *src_iovs, uint32_t src_iovcnt, struct spdk_memory_domain *src_domain, void *src_domain_ctx, int flags, <a class="el" href="accel_8h.html#abaf556b5e1b63b5237faff3952a3bb46">spdk_accel_step_cb</a> cb_fn, void *cb_arg)</td></tr>
+<tr class="memdesc:a51ed9c807379914cef1c5eaf05a3b9f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Append a copy operation to a sequence.  <a href="accel_8h.html#a51ed9c807379914cef1c5eaf05a3b9f7">More...</a><br /></td></tr>
+<tr class="separator:a51ed9c807379914cef1c5eaf05a3b9f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c286561aa9cbb54d60993fad7b5d98d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="accel_8h.html#a3c286561aa9cbb54d60993fad7b5d98d">spdk_accel_append_fill</a> (struct spdk_accel_sequence **seq, struct spdk_io_channel *ch, void *buf, uint64_t len, struct spdk_memory_domain *domain, void *domain_ctx, uint8_t pattern, int flags, <a class="el" href="accel_8h.html#abaf556b5e1b63b5237faff3952a3bb46">spdk_accel_step_cb</a> cb_fn, void *cb_arg)</td></tr>
+<tr class="memdesc:a3c286561aa9cbb54d60993fad7b5d98d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Append a fill operation to a sequence.  <a href="accel_8h.html#a3c286561aa9cbb54d60993fad7b5d98d">More...</a><br /></td></tr>
+<tr class="separator:a3c286561aa9cbb54d60993fad7b5d98d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af28cbbf84a76a09ad52af0f679f923c4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="accel_8h.html#af28cbbf84a76a09ad52af0f679f923c4">spdk_accel_append_decompress</a> (struct spdk_accel_sequence **seq, struct spdk_io_channel *ch, struct iovec *dst_iovs, size_t dst_iovcnt, struct spdk_memory_domain *dst_domain, void *dst_domain_ctx, struct iovec *src_iovs, size_t src_iovcnt, struct spdk_memory_domain *src_domain, void *src_domain_ctx, int flags, <a class="el" href="accel_8h.html#abaf556b5e1b63b5237faff3952a3bb46">spdk_accel_step_cb</a> cb_fn, void *cb_arg)</td></tr>
+<tr class="memdesc:af28cbbf84a76a09ad52af0f679f923c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Append a decompress operation to a sequence.  <a href="accel_8h.html#af28cbbf84a76a09ad52af0f679f923c4">More...</a><br /></td></tr>
+<tr class="separator:af28cbbf84a76a09ad52af0f679f923c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03c51473e9f0b4882f279c89131a2b14"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="accel_8h.html#a03c51473e9f0b4882f279c89131a2b14">spdk_accel_sequence_finish</a> (struct spdk_accel_sequence *seq, <a class="el" href="accel_8h.html#a6ba836b7b128829ba185eadb2c60476a">spdk_accel_completion_cb</a> cb_fn, void *cb_arg)</td></tr>
+<tr class="memdesc:a03c51473e9f0b4882f279c89131a2b14"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finish a sequence and execute all its operations.  <a href="accel_8h.html#a03c51473e9f0b4882f279c89131a2b14">More...</a><br /></td></tr>
+<tr class="separator:a03c51473e9f0b4882f279c89131a2b14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a543390f0413ec678c76ea7f39fc5f27d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="accel_8h.html#a543390f0413ec678c76ea7f39fc5f27d">spdk_accel_sequence_reverse</a> (struct spdk_accel_sequence *seq)</td></tr>
+<tr class="memdesc:a543390f0413ec678c76ea7f39fc5f27d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reverse a sequence, so that the last operation becomes the first and vice versa.  <a href="accel_8h.html#a543390f0413ec678c76ea7f39fc5f27d">More...</a><br /></td></tr>
+<tr class="separator:a543390f0413ec678c76ea7f39fc5f27d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4bead81df6ccd705747dcdbfe9ffa6d9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="accel_8h.html#a4bead81df6ccd705747dcdbfe9ffa6d9">spdk_accel_sequence_abort</a> (struct spdk_accel_sequence *seq)</td></tr>
+<tr class="memdesc:a4bead81df6ccd705747dcdbfe9ffa6d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Abort a sequence.  <a href="accel_8h.html#a4bead81df6ccd705747dcdbfe9ffa6d9">More...</a><br /></td></tr>
+<tr class="separator:a4bead81df6ccd705747dcdbfe9ffa6d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acde5803c2c3fd5f4404ab171d6820b03"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="accel_8h.html#acde5803c2c3fd5f4404ab171d6820b03">spdk_accel_get_buf</a> (struct spdk_io_channel *ch, uint64_t len, void **buf, struct spdk_memory_domain **domain, void **domain_ctx)</td></tr>
+<tr class="memdesc:acde5803c2c3fd5f4404ab171d6820b03"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate a buffer from accel domain.  <a href="accel_8h.html#acde5803c2c3fd5f4404ab171d6820b03">More...</a><br /></td></tr>
+<tr class="separator:acde5803c2c3fd5f4404ab171d6820b03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84d7b247e6eb234e84aa4d856da098fa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="accel_8h.html#a84d7b247e6eb234e84aa4d856da098fa">spdk_accel_put_buf</a> (struct spdk_io_channel *ch, void *buf, struct spdk_memory_domain *domain, void *domain_ctx)</td></tr>
+<tr class="memdesc:a84d7b247e6eb234e84aa4d856da098fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Release a buffer allocated via <code><a class="el" href="accel_8h.html#acde5803c2c3fd5f4404ab171d6820b03" title="Allocate a buffer from accel domain.">spdk_accel_get_buf()</a></code>.  <a href="accel_8h.html#a84d7b247e6eb234e84aa4d856da098fa">More...</a><br /></td></tr>
+<tr class="separator:a84d7b247e6eb234e84aa4d856da098fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab843fd7c6bfd2db2f2997fad376f687f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="accel_8h.html#ab843fd7c6bfd2db2f2997fad376f687f">spdk_accel_get_opc_module_name</a> (enum accel_opcode opcode, const char **module_name)</td></tr>
 <tr class="memdesc:ab843fd7c6bfd2db2f2997fad376f687f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the name of the module assigned to a specific opcode.  <a href="accel_8h.html#ab843fd7c6bfd2db2f2997fad376f687f">More...</a><br /></td></tr>
 <tr class="separator:ab843fd7c6bfd2db2f2997fad376f687f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -230,7 +257,349 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="abaf556b5e1b63b5237faff3952a3bb46"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abaf556b5e1b63b5237faff3952a3bb46">&#9670;&nbsp;</a></span>spdk_accel_step_cb</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void(* spdk_accel_step_cb) (void *cb_arg)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Completion callback of a single operation within a sequence. </p>
+<p>After it's executed, the sequence object might be freed, so users should not touch it. </p>
+
+</div>
+</div>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="a51ed9c807379914cef1c5eaf05a3b9f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a51ed9c807379914cef1c5eaf05a3b9f7">&#9670;&nbsp;</a></span>spdk_accel_append_copy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_accel_append_copy </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_accel_sequence **&#160;</td>
+          <td class="paramname"><em>seq</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct spdk_io_channel *&#160;</td>
+          <td class="paramname"><em>ch</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct iovec *&#160;</td>
+          <td class="paramname"><em>dst_iovs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>dst_iovcnt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct spdk_memory_domain *&#160;</td>
+          <td class="paramname"><em>dst_domain</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>dst_domain_ctx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct iovec *&#160;</td>
+          <td class="paramname"><em>src_iovs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>src_iovcnt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct spdk_memory_domain *&#160;</td>
+          <td class="paramname"><em>src_domain</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>src_domain_ctx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>flags</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="accel_8h.html#abaf556b5e1b63b5237faff3952a3bb46">spdk_accel_step_cb</a>&#160;</td>
+          <td class="paramname"><em>cb_fn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>cb_arg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Append a copy operation to a sequence. </p>
+<p>Copy operation in a sequence is special, as it is not guaranteed that the data will be actually copied. If it's possible, it will only change source / destination buffers of some of the operations in a sequence.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">seq</td><td>Sequence object. If NULL, a new sequence object will be created. </td></tr>
+    <tr><td class="paramname">ch</td><td>I/O channel. </td></tr>
+    <tr><td class="paramname">dst_iovs</td><td>Destination I/O vector array. </td></tr>
+    <tr><td class="paramname">dst_iovcnt</td><td>Size of the <code>dst_iovs</code> array. </td></tr>
+    <tr><td class="paramname">dst_domain</td><td>Memory domain to which the destination buffers belong. </td></tr>
+    <tr><td class="paramname">dst_domain_ctx</td><td>Destination buffer domain context. </td></tr>
+    <tr><td class="paramname">src_iovs</td><td>Source I/O vector array. </td></tr>
+    <tr><td class="paramname">src_iovcnt</td><td>Size of the <code>src_iovs</code> array. </td></tr>
+    <tr><td class="paramname">src_domain</td><td>Memory domain to which the source buffers belong. </td></tr>
+    <tr><td class="paramname">src_domain_ctx</td><td>Source buffer domain context. </td></tr>
+    <tr><td class="paramname">flags</td><td>Accel operation flags. </td></tr>
+    <tr><td class="paramname">cb_fn</td><td>Callback to be executed once this operation is completed. </td></tr>
+    <tr><td class="paramname">cb_arg</td><td>Argument to be passed to <code>cb_fn</code>.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 if operation was successfully added to the sequence, negative errno otherwise. </dd></dl>
+
+</div>
+</div>
+<a id="af28cbbf84a76a09ad52af0f679f923c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af28cbbf84a76a09ad52af0f679f923c4">&#9670;&nbsp;</a></span>spdk_accel_append_decompress()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_accel_append_decompress </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_accel_sequence **&#160;</td>
+          <td class="paramname"><em>seq</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct spdk_io_channel *&#160;</td>
+          <td class="paramname"><em>ch</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct iovec *&#160;</td>
+          <td class="paramname"><em>dst_iovs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>dst_iovcnt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct spdk_memory_domain *&#160;</td>
+          <td class="paramname"><em>dst_domain</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>dst_domain_ctx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct iovec *&#160;</td>
+          <td class="paramname"><em>src_iovs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>src_iovcnt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct spdk_memory_domain *&#160;</td>
+          <td class="paramname"><em>src_domain</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>src_domain_ctx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>flags</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="accel_8h.html#abaf556b5e1b63b5237faff3952a3bb46">spdk_accel_step_cb</a>&#160;</td>
+          <td class="paramname"><em>cb_fn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>cb_arg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Append a decompress operation to a sequence. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">seq</td><td>Sequence object. If NULL, a new sequence object will be created. </td></tr>
+    <tr><td class="paramname">ch</td><td>I/O channel. </td></tr>
+    <tr><td class="paramname">dst_iovs</td><td>Destination I/O vector array. </td></tr>
+    <tr><td class="paramname">dst_iovcnt</td><td>Size of the <code>dst_iovs</code> array. </td></tr>
+    <tr><td class="paramname">dst_domain</td><td>Memory domain to which the destination buffers belong. </td></tr>
+    <tr><td class="paramname">dst_domain_ctx</td><td>Destination buffer domain context. </td></tr>
+    <tr><td class="paramname">src_iovs</td><td>Source I/O vector array. </td></tr>
+    <tr><td class="paramname">src_iovcnt</td><td>Size of the <code>src_iovs</code> array. </td></tr>
+    <tr><td class="paramname">src_domain</td><td>Memory domain to which the source buffers belong. </td></tr>
+    <tr><td class="paramname">src_domain_ctx</td><td>Source buffer domain context. </td></tr>
+    <tr><td class="paramname">flags</td><td>Accel operation flags. </td></tr>
+    <tr><td class="paramname">cb_fn</td><td>Callback to be executed once this operation is completed. </td></tr>
+    <tr><td class="paramname">cb_arg</td><td>Argument to be passed to <code>cb_fn</code>.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 if operation was successfully added to the sequence, negative errno otherwise. </dd></dl>
+
+</div>
+</div>
+<a id="a3c286561aa9cbb54d60993fad7b5d98d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c286561aa9cbb54d60993fad7b5d98d">&#9670;&nbsp;</a></span>spdk_accel_append_fill()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_accel_append_fill </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_accel_sequence **&#160;</td>
+          <td class="paramname"><em>seq</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct spdk_io_channel *&#160;</td>
+          <td class="paramname"><em>ch</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>buf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct spdk_memory_domain *&#160;</td>
+          <td class="paramname"><em>domain</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>domain_ctx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>pattern</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>flags</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="accel_8h.html#abaf556b5e1b63b5237faff3952a3bb46">spdk_accel_step_cb</a>&#160;</td>
+          <td class="paramname"><em>cb_fn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>cb_arg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Append a fill operation to a sequence. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">seq</td><td>Sequence object. If NULL, a new sequence object will be created. </td></tr>
+    <tr><td class="paramname">ch</td><td>I/O channel. </td></tr>
+    <tr><td class="paramname">buf</td><td>Data buffer. </td></tr>
+    <tr><td class="paramname">len</td><td>Length of the data buffer. </td></tr>
+    <tr><td class="paramname">domain</td><td>Memory domain to which the data buffer belongs. </td></tr>
+    <tr><td class="paramname">domain_ctx</td><td>Buffer domain context. </td></tr>
+    <tr><td class="paramname">pattern</td><td>Pattern to fill the buffer with. </td></tr>
+    <tr><td class="paramname">flags</td><td>Accel operation flags. </td></tr>
+    <tr><td class="paramname">cb_fn</td><td>Callback to be executed once this operation is completed. </td></tr>
+    <tr><td class="paramname">cb_arg</td><td>Argument to be passed to <code>cb_fn</code>.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 if operation was successfully added to the sequence, negative errno otherwise. </dd></dl>
+
+</div>
+</div>
 <a id="a4d8b25b197af0a838d38e2f12151dcc8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4d8b25b197af0a838d38e2f12151dcc8">&#9670;&nbsp;</a></span>spdk_accel_assign_opc()</h2>
 
@@ -303,6 +672,67 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="acde5803c2c3fd5f4404ab171d6820b03"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acde5803c2c3fd5f4404ab171d6820b03">&#9670;&nbsp;</a></span>spdk_accel_get_buf()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_accel_get_buf </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_io_channel *&#160;</td>
+          <td class="paramname"><em>ch</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void **&#160;</td>
+          <td class="paramname"><em>buf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct spdk_memory_domain **&#160;</td>
+          <td class="paramname"><em>domain</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void **&#160;</td>
+          <td class="paramname"><em>domain_ctx</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Allocate a buffer from accel domain. </p>
+<p>These buffers can be only used with operations appended to a sequence. The actual data buffer won't be allocated immediately, but only when it's necessary to execute a given operation. In some cases, this might even mean that a data buffer won't be allocated at all, if a sequence can be executed without it.</p>
+<p>A buffer can only be a part of one sequence, but it can be used by multiple operations within that sequence.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ch</td><td>I/O channel. </td></tr>
+    <tr><td class="paramname">len</td><td>Length of the buffer to allocate. </td></tr>
+    <tr><td class="paramname">buf</td><td>Pointer to the allocated buffer. </td></tr>
+    <tr><td class="paramname">domain</td><td>Memory domain in which the buffer is allocated. </td></tr>
+    <tr><td class="paramname">domain_ctx</td><td>Memory domain context related to the allocated buffer.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 if a buffer was successfully allocated, negative errno otherwise. </dd></dl>
 
 </div>
 </div>
@@ -384,6 +814,156 @@ Functions</h2></td></tr>
 
 <p>Initialize the acceleration framework. </p>
 <dl class="section return"><dt>Returns</dt><dd>0 on success. </dd></dl>
+
+</div>
+</div>
+<a id="a84d7b247e6eb234e84aa4d856da098fa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a84d7b247e6eb234e84aa4d856da098fa">&#9670;&nbsp;</a></span>spdk_accel_put_buf()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_accel_put_buf </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_io_channel *&#160;</td>
+          <td class="paramname"><em>ch</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>buf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct spdk_memory_domain *&#160;</td>
+          <td class="paramname"><em>domain</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>domain_ctx</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Release a buffer allocated via <code><a class="el" href="accel_8h.html#acde5803c2c3fd5f4404ab171d6820b03" title="Allocate a buffer from accel domain.">spdk_accel_get_buf()</a></code>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ch</td><td>I/O channel. </td></tr>
+    <tr><td class="paramname">buf</td><td>Buffer allocated via <code><a class="el" href="accel_8h.html#acde5803c2c3fd5f4404ab171d6820b03" title="Allocate a buffer from accel domain.">spdk_accel_get_buf()</a></code>. </td></tr>
+    <tr><td class="paramname">domain</td><td>Memory domain in which the buffer is allocated. </td></tr>
+    <tr><td class="paramname">domain_ctx</td><td>Memory domain context related to the allocated buffer. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a4bead81df6ccd705747dcdbfe9ffa6d9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4bead81df6ccd705747dcdbfe9ffa6d9">&#9670;&nbsp;</a></span>spdk_accel_sequence_abort()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_accel_sequence_abort </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_accel_sequence *&#160;</td>
+          <td class="paramname"><em>seq</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Abort a sequence. </p>
+<p>This will execute the completion callbacks of all operations that were added to the sequence and will then free the sequence object.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">seq</td><td>Sequence to abort. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a03c51473e9f0b4882f279c89131a2b14"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a03c51473e9f0b4882f279c89131a2b14">&#9670;&nbsp;</a></span>spdk_accel_sequence_finish()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_accel_sequence_finish </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_accel_sequence *&#160;</td>
+          <td class="paramname"><em>seq</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="accel_8h.html#a6ba836b7b128829ba185eadb2c60476a">spdk_accel_completion_cb</a>&#160;</td>
+          <td class="paramname"><em>cb_fn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>cb_arg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Finish a sequence and execute all its operations. </p>
+<p>After the completion callback is executed, the sequence object is automatically freed.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">seq</td><td>Sequence to finish. </td></tr>
+    <tr><td class="paramname">cb_fn</td><td>Completion callback to be executed once all operations are executed. </td></tr>
+    <tr><td class="paramname">cb_arg</td><td>Argument to be passed to <code>cb_fn</code>.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, negative errno otherwise. </dd></dl>
+
+</div>
+</div>
+<a id="a543390f0413ec678c76ea7f39fc5f27d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a543390f0413ec678c76ea7f39fc5f27d">&#9670;&nbsp;</a></span>spdk_accel_sequence_reverse()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_accel_sequence_reverse </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_accel_sequence *&#160;</td>
+          <td class="paramname"><em>seq</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Reverse a sequence, so that the last operation becomes the first and vice versa. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">seq</td><td>Sequence to reverse. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

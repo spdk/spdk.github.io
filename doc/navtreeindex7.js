@@ -1,5 +1,15 @@
 var NAVTREEINDEX7 =
 {
+"jsonrpc.html#rpc_framework_set_scheduler":[3,9,3,8],
+"jsonrpc.html#rpc_framework_start_init":[3,9,3,2],
+"jsonrpc.html#rpc_framework_wait_init":[3,9,3,3],
+"jsonrpc.html#rpc_iaa_scan_accel_module":[3,9,4,4],
+"jsonrpc.html#rpc_ioat_scan_accel_module":[3,9,4,5],
+"jsonrpc.html#rpc_iobuf_set_options":[3,9,12,13],
+"jsonrpc.html#rpc_iscsi_auth_group_add_secret":[3,9,6,7],
+"jsonrpc.html#rpc_iscsi_auth_group_remove_secret":[3,9,6,8],
+"jsonrpc.html#rpc_iscsi_create_auth_group":[3,9,6,4],
+"jsonrpc.html#rpc_iscsi_create_auth_group_secret":[3,9,6,4,0],
 "jsonrpc.html#rpc_iscsi_create_initiator_group":[3,9,6,10],
 "jsonrpc.html#rpc_iscsi_create_portal_group":[3,9,6,21],
 "jsonrpc.html#rpc_iscsi_create_target_node":[3,9,6,15],
@@ -239,15 +249,5 @@ var NAVTREEINDEX7 =
 "lvol_8h.html#af406c5e7b0e7826b270c802b1431b76f":[16,0,37,25],
 "md__home_sys_sgsw_oss_spdk_github_io_spdk_deprecation.html":[11],
 "md__home_sys_sgsw_oss_spdk_github_io_spdk_deprecation.html#deprecation":[11,0],
-"md__home_sys_sgsw_oss_spdk_github_io_spdk_deprecation.html#deprecation-notices":[11,1],
-"memory.html":[2,1],
-"misc.html":[6],
-"mmio_8h.html":[16,0,38],
-"mmio_8h.html#a586e012f96a1399c6a7be3439212c677":[16,0,38,2],
-"mmio_8h.html#a5e5c67230fa7efb398ffb43454ee2d4f":[16,0,38,4],
-"mmio_8h.html#a682a558fe4a5f13cbc54a85282e087a4":[16,0,38,8],
-"mmio_8h.html#a68d558db289ded2f229719ac38ef3c22":[16,0,38,1],
-"mmio_8h.html#a9c75dfb246b1546b2a487e6eb09cf92c":[16,0,38,0],
-"mmio_8h.html#ab3ee6faaf60225d6c219bf9656a6777e":[16,0,38,5],
-"mmio_8h.html#ab8d78bfd9224a6a5081735b98ccc4211":[16,0,38,7]
+"md__home_sys_sgsw_oss_spdk_github_io_spdk_deprecation.html#deprecation-notices":[11,1]
 };

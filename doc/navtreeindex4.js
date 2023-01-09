@@ -1,5 +1,15 @@
 var NAVTREEINDEX4 =
 {
+"group__bdev__io__submit__functions.html#ga7105b63cc84037543d9472ab33c8be93":[16,0,4,42],
+"group__bdev__io__submit__functions.html#ga7555fdd41019e29b40e535b72457d30b":[16,0,4,117],
+"group__bdev__io__submit__functions.html#ga7555fdd41019e29b40e535b72457d30b":[14,0,23],
+"group__bdev__io__submit__functions.html#ga80f72a0b5b1e02a667ce15cc17ceefeb":[16,0,4,107],
+"group__bdev__io__submit__functions.html#ga80f72a0b5b1e02a667ce15cc17ceefeb":[14,0,18],
+"group__bdev__io__submit__functions.html#ga8125396dbfee45c78c73534c6e7f22f3":[14,0,17],
+"group__bdev__io__submit__functions.html#ga8125396dbfee45c78c73534c6e7f22f3":[16,0,4,106],
+"group__bdev__io__submit__functions.html#ga8a69444aaff6f046f7de8524e8c886d8":[14,0,1],
+"group__bdev__io__submit__functions.html#ga8a69444aaff6f046f7de8524e8c886d8":[16,0,4,31],
+"group__bdev__io__submit__functions.html#ga9220b3c7c3f9591cfdfd73977ee69f91":[16,0,6,17],
 "group__bdev__io__submit__functions.html#ga9220b3c7c3f9591cfdfd73977ee69f91":[14,0,37],
 "group__bdev__io__submit__functions.html#ga9a508a1c301a1321faf0680a8f31f59a":[16,0,4,124],
 "group__bdev__io__submit__functions.html#ga9a508a1c301a1321faf0680a8f31f59a":[14,0,29],
@@ -239,15 +249,5 @@ var NAVTREEINDEX4 =
 "idxd__spec_8h.html#abbccfbd26c9743d2bed8cf4a8c0aab5e":[16,0,28,41],
 "idxd__spec_8h.html#abdfb6b0b68a8b7927494bfbc20bd6e10":[16,0,28,105],
 "idxd__spec_8h.html#ac1b583cc188cd5338b603f0667c52644":[16,0,28,93],
-"idxd__spec_8h.html#ac4d50114b697301d74584a6564ffc2ca":[16,0,28,121],
-"idxd__spec_8h.html#ac8f1123eef918ed390073207739028ad":[16,0,28,92],
-"idxd__spec_8h.html#ac9cecb28b2c8737773d2e6bb2d5b2cdd":[16,0,28,85],
-"idxd__spec_8h.html#aca75b17b70907e384b4654962e6c01c2":[16,0,28,60],
-"idxd__spec_8h.html#acbc52c2901522798c139a30085a654fe":[16,0,28,129],
-"idxd__spec_8h.html#acbdb7d226605fae4663bb25c6540130a":[16,0,28,32],
-"idxd__spec_8h.html#acc4ec9f8ea0dd44fdf25c731fd82d3ef":[16,0,28,23],
-"idxd__spec_8h.html#ace051f6288fca2d3512159ca77576e1b":[16,0,28,130],
-"idxd__spec_8h.html#ad070b9f411837d7223022b3b2c8cd440":[16,0,28,68],
-"idxd__spec_8h.html#ad1a3919ed29fc84416ddcdebf5c37556":[16,0,28,73],
-"idxd__spec_8h.html#ad4d12ac450de685db695cb2fda18c446":[16,0,28,109]
+"idxd__spec_8h.html#ac4d50114b697301d74584a6564ffc2ca":[16,0,28,121]
 };

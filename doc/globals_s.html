@@ -88,6 +88,15 @@ $(document).ready(function(){initNavTree('globals_s.html',''); initResizable(); 
 <div class="textblock">Here is a list of all documented functions, variables, defines, enums, and typedefs with links to the documentation:</div>
 
 <h3><a id="index_s"></a>- s -</h3><ul>
+<li>spdk_accel_append_copy()
+: <a class="el" href="accel_8h.html#a51ed9c807379914cef1c5eaf05a3b9f7">accel.h</a>
+</li>
+<li>spdk_accel_append_decompress()
+: <a class="el" href="accel_8h.html#af28cbbf84a76a09ad52af0f679f923c4">accel.h</a>
+</li>
+<li>spdk_accel_append_fill()
+: <a class="el" href="accel_8h.html#a3c286561aa9cbb54d60993fad7b5d98d">accel.h</a>
+</li>
 <li>spdk_accel_assign_opc()
 : <a class="el" href="accel_8h.html#a4d8b25b197af0a838d38e2f12151dcc8">accel.h</a>
 </li>
@@ -100,6 +109,9 @@ $(document).ready(function(){initNavTree('globals_s.html',''); initResizable(); 
 <li>spdk_accel_finish()
 : <a class="el" href="accel_8h.html#a7a75cbac98c1ed584e82d0172aa0bb81">accel.h</a>
 </li>
+<li>spdk_accel_get_buf()
+: <a class="el" href="accel_8h.html#acde5803c2c3fd5f4404ab171d6820b03">accel.h</a>
+</li>
 <li>spdk_accel_get_io_channel()
 : <a class="el" href="accel_8h.html#a947dd411da094c21407afebfa6a38cdb">accel.h</a>
 </li>
@@ -108,6 +120,21 @@ $(document).ready(function(){initNavTree('globals_s.html',''); initResizable(); 
 </li>
 <li>spdk_accel_initialize()
 : <a class="el" href="accel_8h.html#acbc9decf84ab594e9e04edac14e1b91b">accel.h</a>
+</li>
+<li>spdk_accel_put_buf()
+: <a class="el" href="accel_8h.html#a84d7b247e6eb234e84aa4d856da098fa">accel.h</a>
+</li>
+<li>spdk_accel_sequence_abort()
+: <a class="el" href="accel_8h.html#a4bead81df6ccd705747dcdbfe9ffa6d9">accel.h</a>
+</li>
+<li>spdk_accel_sequence_finish()
+: <a class="el" href="accel_8h.html#a03c51473e9f0b4882f279c89131a2b14">accel.h</a>
+</li>
+<li>spdk_accel_sequence_reverse()
+: <a class="el" href="accel_8h.html#a543390f0413ec678c76ea7f39fc5f27d">accel.h</a>
+</li>
+<li>spdk_accel_step_cb
+: <a class="el" href="accel_8h.html#abaf556b5e1b63b5237faff3952a3bb46">accel.h</a>
 </li>
 <li>spdk_accel_submit_compare()
 : <a class="el" href="accel_8h.html#a7ba82c135282c35831243dd787fbe907">accel.h</a>
@@ -1201,6 +1228,9 @@ $(document).ready(function(){initNavTree('globals_s.html',''); initResizable(); 
 <li>spdk_dma_device_type
 : <a class="el" href="dma_8h.html#a85588b3a6ec5c188ab2dc318c3903586">dma.h</a>
 </li>
+<li>SPDK_DMA_DEVICE_TYPE_ACCEL
+: <a class="el" href="dma_8h.html#a85588b3a6ec5c188ab2dc318c3903586a065a87ed31fe120b25d6811ce9b37ba8">dma.h</a>
+</li>
 <li>SPDK_DMA_DEVICE_TYPE_DMA
 : <a class="el" href="dma_8h.html#a85588b3a6ec5c188ab2dc318c3903586ae488329b2d5cebe0bc130e0803c4fefc">dma.h</a>
 </li>
@@ -1684,6 +1714,9 @@ $(document).ready(function(){initNavTree('globals_s.html',''); initResizable(); 
 <li>spdk_ioviter_next()
 : <a class="el" href="util_8h.html#a0bbb80ad35ccd2da128fa69acedd2d90">util.h</a>
 </li>
+<li>spdk_iovmove()
+: <a class="el" href="util_8h.html#af4c8af78fb85f76425e5472e742921e6">util.h</a>
+</li>
 <li>spdk_ivdt_dcache
 : <a class="el" href="barrier_8h.html#ad08229e302bb629c373321c8277c7f36">barrier.h</a>
 </li>
@@ -2073,6 +2106,9 @@ $(document).ready(function(){initNavTree('globals_s.html',''); initResizable(); 
 </li>
 <li>spdk_mempool_put_bulk()
 : <a class="el" href="env_8h.html#a02f2b221ab82ba09c51013291313fe2e">env.h</a>
+</li>
+<li>spdk_memset_s()
+: <a class="el" href="util_8h.html#ad7ddd177340554080af356c7d1e57d00">util.h</a>
 </li>
 <li>spdk_memzone_dump()
 : <a class="el" href="env_8h.html#a8b47302a948b71f493ae775b53f162e2">env.h</a>
@@ -3142,11 +3178,11 @@ $(document).ready(function(){initNavTree('globals_s.html',''); initResizable(); 
 <li>SPDK_NVME_SGLS_NOT_SUPPORTED
 : <a class="el" href="nvme__spec_8h.html#af3e4102cda177c51a05a6bb02fa62b87a5978d5c7ce04a60c9d86b157037cb2f0">nvme_spec.h</a>
 </li>
-<li>SPDK_NVME_SGLS_SUPPORTED
-: <a class="el" href="nvme__spec_8h.html#af3e4102cda177c51a05a6bb02fa62b87ade9828594ce1d9d11427a38182149d9d">nvme_spec.h</a>
-</li>
 <li>spdk_nvme_sgls_supported
 : <a class="el" href="nvme__spec_8h.html#af3e4102cda177c51a05a6bb02fa62b87">nvme_spec.h</a>
+</li>
+<li>SPDK_NVME_SGLS_SUPPORTED
+: <a class="el" href="nvme__spec_8h.html#af3e4102cda177c51a05a6bb02fa62b87ade9828594ce1d9d11427a38182149d9d">nvme_spec.h</a>
 </li>
 <li>SPDK_NVME_SGLS_SUPPORTED_DWORD_ALIGNED
 : <a class="el" href="nvme__spec_8h.html#af3e4102cda177c51a05a6bb02fa62b87a702868f6b85dd329c4baf00642e99fca">nvme_spec.h</a>

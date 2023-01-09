@@ -13,6 +13,7 @@ var dma_8h =
     [ "spdk_dma_device_type", "dma_8h.html#a85588b3a6ec5c188ab2dc318c3903586", [
       [ "SPDK_DMA_DEVICE_TYPE_RDMA", "dma_8h.html#a85588b3a6ec5c188ab2dc318c3903586a00353a6b099210ed1c52cb9582f1ae01", null ],
       [ "SPDK_DMA_DEVICE_TYPE_DMA", "dma_8h.html#a85588b3a6ec5c188ab2dc318c3903586ae488329b2d5cebe0bc130e0803c4fefc", null ],
+      [ "SPDK_DMA_DEVICE_TYPE_ACCEL", "dma_8h.html#a85588b3a6ec5c188ab2dc318c3903586a065a87ed31fe120b25d6811ce9b37ba8", null ],
       [ "SPDK_DMA_DEVICE_VENDOR_SPECIFIC_TYPE_START", "dma_8h.html#a85588b3a6ec5c188ab2dc318c3903586a1201e15e1a81553cb3ac297e7f5648be", null ],
       [ "SPDK_DMA_DEVICE_VENDOR_SPECIFIC_TYPE_END", "dma_8h.html#a85588b3a6ec5c188ab2dc318c3903586a51d3c59fcd56fc712b1943b5a08dead2", null ]
     ] ],

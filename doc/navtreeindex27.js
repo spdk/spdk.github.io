@@ -1,5 +1,15 @@
 var NAVTREEINDEX27 =
 {
+"structspdk__opal__d0__single__user__mode__feat.html#ad8f12e11b94fab6f214275bc43c57cb7":[15,0,317,4],
+"structspdk__opal__d0__single__user__mode__feat.html#ae004cbb71de001bc96fc6b5e6eb326b0":[15,0,317,0],
+"structspdk__opal__d0__single__user__mode__feat.html#ae91b710d8c4c01a984ee97788a8cf0b7":[15,0,317,8],
+"structspdk__opal__d0__single__user__mode__feat.html#af55f412611aa8f2b5b3448931542d39a":[15,0,317,1],
+"structspdk__opal__d0__tper__feat.html":[15,0,318],
+"structspdk__opal__d0__tper__feat.html#a2047a09b5516d0e93fc494f24d07c4ba":[15,0,318,4],
+"structspdk__opal__d0__tper__feat.html#a4a48f712886542e09b6091671f1c55e2":[15,0,318,0],
+"structspdk__opal__d0__tper__feat.html#a605ad2c5da423b6f16e9d8d281500269":[15,0,318,6],
+"structspdk__opal__d0__tper__feat.html#a68b0d45bb03e54d3c20b1529359ca3ef":[15,0,318,3],
+"structspdk__opal__d0__tper__feat.html#a71d8c503d95d4fafbf63e9a8220e1a59":[15,0,318,5],
 "structspdk__opal__d0__tper__feat.html#a847e51fcbf8dad1f50cd4d741d3ae432":[15,0,318,1],
 "structspdk__opal__d0__tper__feat.html#a9424ed1b3750199b07b7f51558441048":[15,0,318,10],
 "structspdk__opal__d0__tper__feat.html#a985cf418b6ba9d155934435e17d86c9d":[15,0,318,9],
@@ -239,15 +249,5 @@ var NAVTREEINDEX27 =
 "structspdk__scsi__pr__out__param__list.html#a2bb6b3a9ff870605deb8a9ae0e7129a1":[15,0,347,7],
 "structspdk__scsi__pr__out__param__list.html#a61ab361364890f3d772bf58b3da982b4":[15,0,347,0],
 "structspdk__scsi__pr__out__param__list.html#a6297b01d65b23d0bcdde3201f655feba":[15,0,347,2],
-"structspdk__scsi__pr__out__param__list.html#a7b830792f8b5708de34edda22ab623ac":[15,0,347,4],
-"structspdk__scsi__pr__out__param__list.html#ab9825184bbdac97386c597fa8c259227":[15,0,347,9],
-"structspdk__scsi__pr__out__param__list.html#abb9d357a2508b658a1da18b6226ab499":[15,0,347,6],
-"structspdk__scsi__pr__out__param__list.html#ac0b4102c74fb95be8b31e4645d487ab3":[15,0,347,5],
-"structspdk__scsi__pr__out__param__list.html#adf717cce996b7136aea6b75b2e46b994":[15,0,347,1],
-"structspdk__scsi__pr__out__param__list.html#ae81580fac858295baa51c58d9a71a750":[15,0,347,8],
-"structspdk__scsi__pr__out__param__list.html#afd2b9b1342b53a9bd033df702b2803e3":[15,0,347,3],
-"structspdk__scsi__pr__out__reg__and__move__param__list.html":[15,0,348],
-"structspdk__scsi__pr__out__reg__and__move__param__list.html#a128194af49bc4a4a966314e242802ed4":[15,0,348,0],
-"structspdk__scsi__pr__out__reg__and__move__param__list.html#a1d74b121e844229939c9806578904b6e":[15,0,348,7],
-"structspdk__scsi__pr__out__reg__and__move__param__list.html#a2b215884ccf6967b212327d951f6c837":[15,0,348,8]
+"structspdk__scsi__pr__out__param__list.html#a7b830792f8b5708de34edda22ab623ac":[15,0,347,4]
 };

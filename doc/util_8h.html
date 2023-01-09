@@ -105,6 +105,9 @@ Data Structures</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
+<tr class="memitem:a7a104b2e349617222c6419b36bfd3260"><td class="memItemLeft" align="right" valign="top"><a id="a7a104b2e349617222c6419b36bfd3260"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>__STDC_WANT_LIB_EXT1__</b>&#160;&#160;&#160;1</td></tr>
+<tr class="separator:a7a104b2e349617222c6419b36bfd3260"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afb0c0f2282517becd79ba3f60768b6c4"><td class="memItemLeft" align="right" valign="top"><a id="afb0c0f2282517becd79ba3f60768b6c4"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_CACHE_LINE_SIZE</b>&#160;&#160;&#160;64</td></tr>
 <tr class="separator:afb0c0f2282517becd79ba3f60768b6c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -174,6 +177,9 @@ static uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_divid
 <tr class="memitem:a4bf38bbd457a764604d5ba26ed3c8565"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8h.html#a4bf38bbd457a764604d5ba26ed3c8565">spdk_iovcpy</a> (struct iovec *siov, size_t siovcnt, struct iovec *diov, size_t diovcnt)</td></tr>
 <tr class="memdesc:a4bf38bbd457a764604d5ba26ed3c8565"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy the data described by the source iovec to the destination iovec.  <a href="util_8h.html#a4bf38bbd457a764604d5ba26ed3c8565">More...</a><br /></td></tr>
 <tr class="separator:a4bf38bbd457a764604d5ba26ed3c8565"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4c8af78fb85f76425e5472e742921e6"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8h.html#af4c8af78fb85f76425e5472e742921e6">spdk_iovmove</a> (struct iovec *siov, size_t siovcnt, struct iovec *diov, size_t diovcnt)</td></tr>
+<tr class="memdesc:af4c8af78fb85f76425e5472e742921e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Same as <a class="el" href="util_8h.html#a4bf38bbd457a764604d5ba26ed3c8565" title="Copy the data described by the source iovec to the destination iovec.">spdk_iovcpy()</a>, but the src/dst buffers might overlap.  <a href="util_8h.html#af4c8af78fb85f76425e5472e742921e6">More...</a><br /></td></tr>
+<tr class="separator:af4c8af78fb85f76425e5472e742921e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac49e02ee794f8dc5048934504023d6d5"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8h.html#ac49e02ee794f8dc5048934504023d6d5">spdk_ioviter_first</a> (struct <a class="el" href="structspdk__ioviter.html">spdk_ioviter</a> *iter, struct iovec *siov, size_t siovcnt, struct iovec *diov, size_t diovcnt, void **src, void **dst)</td></tr>
 <tr class="memdesc:ac49e02ee794f8dc5048934504023d6d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize and move to the first common segment of the two given iovecs.  <a href="util_8h.html#ac49e02ee794f8dc5048934504023d6d5">More...</a><br /></td></tr>
 <tr class="separator:ac49e02ee794f8dc5048934504023d6d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -197,6 +203,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util
 <tr class="memitem:a3d7841db36c180f3fcac21e2314e2ef2"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8h.html#a3d7841db36c180f3fcac21e2314e2ef2">spdk_sn32_gt</a> (uint32_t s1, uint32_t s2)</td></tr>
 <tr class="memdesc:a3d7841db36c180f3fcac21e2314e2ef2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compare if sequence number s1 is greater than s2.  <a href="util_8h.html#a3d7841db36c180f3fcac21e2314e2ef2">More...</a><br /></td></tr>
 <tr class="separator:a3d7841db36c180f3fcac21e2314e2ef2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7ddd177340554080af356c7d1e57d00"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8h.html#ad7ddd177340554080af356c7d1e57d00">spdk_memset_s</a> (void *data, size_t data_size, int ch, size_t count)</td></tr>
+<tr class="memdesc:ad7ddd177340554080af356c7d1e57d00"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copies the value (unsigned char)ch into each of the first <b>count</b> characters of the object pointed to by <b>data</b> <b>data_size</b> is used to check that filling <b>count</b> bytes won't lead to buffer overflow.  <a href="util_8h.html#ad7ddd177340554080af356c7d1e57d00">More...</a><br /></td></tr>
+<tr class="separator:ad7ddd177340554080af356c7d1e57d00"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>General utility functions. </p>
@@ -446,6 +455,108 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util
 
 <p>Move to the next segment in the iterator. </p>
 <p>This will iterate through the segments of the source and destination and return the individual segments, one by one. For example, if the source consists of one element of length 4k and the destination consists of 4 elements each of length 1k, this function will return 4 1k src+dst pairs of buffers, and then return 0 bytes to indicate the iteration is complete on the fifth call. </p>
+
+</div>
+</div>
+<a id="af4c8af78fb85f76425e5472e742921e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af4c8af78fb85f76425e5472e742921e6">&#9670;&nbsp;</a></span>spdk_iovmove()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t spdk_iovmove </td>
+          <td>(</td>
+          <td class="paramtype">struct iovec *&#160;</td>
+          <td class="paramname"><em>siov</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>siovcnt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct iovec *&#160;</td>
+          <td class="paramname"><em>diov</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>diovcnt</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Same as <a class="el" href="util_8h.html#a4bf38bbd457a764604d5ba26ed3c8565" title="Copy the data described by the source iovec to the destination iovec.">spdk_iovcpy()</a>, but the src/dst buffers might overlap. </p>
+<dl class="section return"><dt>Returns</dt><dd>The number of bytes copied. </dd></dl>
+
+</div>
+</div>
+<a id="ad7ddd177340554080af356c7d1e57d00"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad7ddd177340554080af356c7d1e57d00">&#9670;&nbsp;</a></span>spdk_memset_s()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void spdk_memset_s </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>data_size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>ch</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>count</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Copies the value (unsigned char)ch into each of the first <b>count</b> characters of the object pointed to by <b>data</b> <b>data_size</b> is used to check that filling <b>count</b> bytes won't lead to buffer overflow. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">data</td><td>Buffer to fill </td></tr>
+    <tr><td class="paramname">data_size</td><td>Size of the buffer </td></tr>
+    <tr><td class="paramname">ch</td><td>Fill byte </td></tr>
+    <tr><td class="paramname">count</td><td>Number of bytes to fill </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
