@@ -2714,7 +2714,11 @@ bdev_nvme_set_options</h2>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">disable_auto_failback   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Disable automatic failback. The RPC bdev_nvme_set_preferred_path can be used to do manual failback.    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">generate_uuids   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Enable generation of UUIDs for NVMe bdevs that do not provide this value themselves.   </td></tr>
+<td class="markdownTableBodyNone">generate_uuids   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Enable generation of UUIDs for NVMe bdevs that do not provide this value themselves.    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">transport_tos   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">IPv4 Type of Service value. Only applicable for RDMA transport. Default: 0 (no TOS is applied).    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">nvme_error_stat   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Enable collecting NVMe error counts.   </td></tr>
 </table>
 <h3>Example</h3>
 <p>Example request:</p>

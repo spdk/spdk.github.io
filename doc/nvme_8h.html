@@ -780,6 +780,9 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_trty
 <tr class="memitem:add6ae73013499c8fc3c197f47231b8d2"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#add6ae73013499c8fc3c197f47231b8d2">spdk_nvme_qpair_get_id</a> (struct spdk_nvme_qpair *qpair)</td></tr>
 <tr class="memdesc:add6ae73013499c8fc3c197f47231b8d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the NVMe qpair ID for the specified qpair.  <a href="nvme_8h.html#add6ae73013499c8fc3c197f47231b8d2">More...</a><br /></td></tr>
 <tr class="separator:add6ae73013499c8fc3c197f47231b8d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54fff8d7ba08d00a5e4f322dd1b6af2d"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a54fff8d7ba08d00a5e4f322dd1b6af2d">spdk_nvme_qpair_get_num_outstanding_reqs</a> (struct spdk_nvme_qpair *qpair)</td></tr>
+<tr class="memdesc:a54fff8d7ba08d00a5e4f322dd1b6af2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the number of outstanding requests for the specified qpair.  <a href="nvme_8h.html#a54fff8d7ba08d00a5e4f322dd1b6af2d">More...</a><br /></td></tr>
+<tr class="separator:a54fff8d7ba08d00a5e4f322dd1b6af2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8145be511777b2c8dc218b1c1e1e2c89"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a8145be511777b2c8dc218b1c1e1e2c89">spdk_nvme_print_command</a> (uint16_t qid, struct <a class="el" href="structspdk__nvme__cmd.html">spdk_nvme_cmd</a> *cmd)</td></tr>
 <tr class="memdesc:a8145be511777b2c8dc218b1c1e1e2c89"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prints (SPDK_NOTICELOG) the contents of an NVMe submission queue entry (command).  <a href="nvme_8h.html#a8145be511777b2c8dc218b1c1e1e2c89">More...</a><br /></td></tr>
 <tr class="separator:a8145be511777b2c8dc218b1c1e1e2c89"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -8792,6 +8795,35 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_trty
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>ID for the specified qpair. </dd></dl>
+
+</div>
+</div>
+<a id="a54fff8d7ba08d00a5e4f322dd1b6af2d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a54fff8d7ba08d00a5e4f322dd1b6af2d">&#9670;&nbsp;</a></span>spdk_nvme_qpair_get_num_outstanding_reqs()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t spdk_nvme_qpair_get_num_outstanding_reqs </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_nvme_qpair *&#160;</td>
+          <td class="paramname"><em>qpair</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets the number of outstanding requests for the specified qpair. </p>
+<p>This number is not decremented until after a request's callback function is completed.</p>
+<p>This number is not matched necessarily to the number of NVMe commands submitted by the user. For example, nvme driver may split a request due to MDTS limitations, that will also allocate a request for the parent, etc.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">qpair</td><td>Pointer to the NVMe queue pair. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>number of outstanding requests for the specified qpair. </dd></dl>
 
 </div>
 </div>

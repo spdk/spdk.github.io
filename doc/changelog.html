@@ -110,6 +110,7 @@ v23.01: (Upcoming Release)</h1>
 <p>Converted internal use of <code>pthread_mutex_t</code> to <code>struct <a class="el" href="structspdk__spinlock.html" title="A spinlock augmented with safety checks for use with SPDK.">spdk_spinlock</a></code>. Consumers of bdev API functions must be on an SPDK thread or the program will abort. It is now enforced that no internal bdev locks can be held when a poller or message goes off CPU.</p>
 <p>A new RPC <code>bdev_reset_iostat</code> was added to reset I/O statistics of bdevs. Note that if one consumer reset I/O statistics, it affects all other consumers.</p>
 <p>Add function pointers, <code>dump_device_stat_json</code> and <code>reset_device_stat</code> to the bdev module function table to display and reset I/O statistics specific for the module specific bdev context.</p>
+<p>A new option <code>nvme_error_stat</code> was added to the <code>bdev_nvme_set_options</code> RPC to enable collecting NVMe error counts.</p>
 <h2>event</h2>
 <p>Added core lock file mechanism to prevent the same CPU cores from being used by multiple SPDK application instances.</p>
 <p>Added a command line switch to disable CPU locks on SPDK startup.</p>
@@ -124,6 +125,7 @@ v23.01: (Upcoming Release)</h1>
 <p>New <code>trace_get_info</code> RPC was added to get name of shared memory file, list of the available trace point groups and mask of the available trace points for each group.</p>
 <h2>util</h2>
 <p>New API <code>spdk_fd_group_get_epoll_event</code> that returns the epoll(7) event that caused a function callback in file descriptor group to execute.</p>
+<p>A new API <code>spdk_strcpy_replace</code> was added to replace all occurrences of the search string with the replacement string.</p>
 <h2>json</h2>
 <p>Added API <code>spdk_json_write_double</code> and <code>spdk_json_write_named_double</code> to allow for writing and decoding of the the double data type.</p>
 <h2>thread</h2>
@@ -134,6 +136,7 @@ v23.01: (Upcoming Release)</h1>
 <p>Added consistent tracking of use of deprecated behavior. Deprecations continue to be listed in deprecation.md and now are in subsections with headers matching a tag used in <code>SPDK_LOG_DEPRECATED()</code> calls. When deprecated behavior is used, these tags will appear in SPDK's log at the warn level. As the SPDK application exits, it will log a summary of how many times <code>SPDK_LOG_DEPRECATED()</code> was called for each tag that was logged at least once.</p>
 <h2>nvme</h2>
 <p>Added <code>transport_tos</code> to <code><a class="el" href="structspdk__nvme__ctrlr__opts.html" title="NVMe controller initialization options.">spdk_nvme_ctrlr_opts</a></code> to support setting of the "type of service" value in the IPv4 header. Only RDMA is supported at this time.</p>
+<p>Added API spdk_nvme_qpair_get_num_outstanding_reqs to get the number of outstanding reqs of a specified qpair.</p>
 <h2>bdev_nvme</h2>
 <p>Updated <code>bdev_nvme_set_options</code> RPC (and rpc.py) to support the new <code>transport_tos</code> parameter.</p>
 <h1>v22.09</h1>

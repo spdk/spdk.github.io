@@ -11,6 +11,7 @@ var string_8h =
     [ "spdk_strarray_free", "string_8h.html#a204f9062adca879642296b993293fd04", null ],
     [ "spdk_strarray_from_string", "string_8h.html#a13d372255f0c2738bb5279704455c131", null ],
     [ "spdk_strcpy_pad", "string_8h.html#aa333ebed7fc3529d446f819b647e2d88", null ],
+    [ "spdk_strcpy_replace", "string_8h.html#a2409f826e23aea462d0362d0bf45b7f5", null ],
     [ "spdk_strerror", "string_8h.html#a166b61997b364910553051f1bc002e2c", null ],
     [ "spdk_strerror_r", "string_8h.html#a306d9e4d639bd6b6424eddc02324f0a2", null ],
     [ "spdk_strlen_pad", "string_8h.html#a3c8f770428a60f0d2836d479c4b1b4e7", null ],

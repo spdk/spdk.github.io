@@ -1353,7 +1353,7 @@ typedef&#160;</td><td class="memItemRight" valign="bottom"><b>TAILQ_HEAD</b> (bd
 </div><div class="memdoc">
 
 <p>Indicate to the bdev layer that the module is done initializing. </p>
-<p>To be called once during module_init or asynchronously after an asynchronous operation required for module initialization is completed.</p>
+<p>To be called once after an asynchronous operation required for module initialization is completed. If module-&gt;async_init is false, the module must not call this function.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">module</td><td>Pointer to the module completing the initialization. </td></tr>
