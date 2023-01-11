@@ -115,8 +115,8 @@ DSA Module</h2>
 <p>The DSA module supports the DSA hardware and relies on the low level IDXD library.</p>
 <p>To use the DSA module, use the RPC <a href="https://spdk.io/doc/jsonrpc.html"><code>dsa_scan_accel_module</code></a>. By default, this will attempt to load the SPDK user-space idxd driver. To use the built-in kernel driver on Linux, add the <code>-k</code> parameter. See the next section for details on using the kernel driver.</p>
 <p>The DSA hardware supports a limited queue depth and channels. This means that only a limited number of <code>spdk_thread</code>s will be able to acquire a channel. Design software to deal with the inability to get a channel.</p>
-<h2><a class="anchor" id="accel_idxd_kernel"></a>
-How to use kernel idxd driver</h2>
+<h3><a class="anchor" id="accel_idxd_kernel"></a>
+How to use kernel idxd driver</h3>
 <p>There are several dependencies to leverage the Linux idxd driver for driving DSA devices.</p>
 <p>1 Linux kernel support: You need to have a Linux kernel with the <code>idxd</code> driver loaded. Further, add the following command line options to the kernel boot commands:</p>
 <div class="fragment"><div class="line">intel_iommu=on,sm_on</div>
@@ -138,6 +138,15 @@ How to use kernel idxd driver</h2>
 <h2><a class="anchor" id="accel_sw"></a>
 Software Module</h2>
 <p>The software module is enabled by default. If no hardware module is explicitly enabled via startup RPC as discussed earlier, the software module will use ISA-L if available for functions such as CRC32C. Otherwise, standard glibc calls are used to back the framework API.</p>
+<h2><a class="anchor" id="accel_dpdk_cryptodev"></a>
+dpdk_cryptodev</h2>
+<p>The dpdk_cryptodev module uses DPDK CryptoDev API to implement crypto operations. The following ciphers and PMDs are supported:</p>
+<ul>
+<li>AESN-NI Multi Buffer Crypto Poll Mode Driver: RTE_CRYPTO_CIPHER_AES128_CBC</li>
+<li>Intel(R) QuickAssist (QAT) Crypto Poll Mode Driver: RTE_CRYPTO_CIPHER_AES128_CBC, RTE_CRYPTO_CIPHER_AES128_XTS (Note: QAT is functional however is marked as experimental until the hardware has been fully integrated with the SPDK CI system.)</li>
+<li>MLX5 Crypto Poll Mode Driver: RTE_CRYPTO_CIPHER_AES256_XTS, RTE_CRYPTO_CIPHER_AES512_XTS</li>
+</ul>
+<p>To enable this module, use <a href="https://spdk.io/doc/jsonrpc.html"><code>dpdk_cryptodev_scan_accel_module</code></a>, this RPC is available in STARTUP state and the SPDK application needs to be run with <code>--wait-for-rpc</code> CLI parameter. To select a specific PMD, use <a href="https://spdk.io/doc/jsonrpc.html"><code>dpdk_cryptodev_set_driver</code></a></p>
 <h2><a class="anchor" id="accel_assignments"></a>
 Module to Operation Code Assignment</h2>
 <p>When multiple modules are initialized, the accel framework will assign op codes to modules by first assigning all op codes to the Software Module and then overriding op code assignments to Hardware Modules in the order in which they were initialized. The RPC <code>accel_get_opc_assignments</code> can be used at any time to see the current assignment map including the names of valid operations. The RPC <code>accel_assign_opc</code> can be used after initializing the desired Hardware Modules but before starting the framework in the event that a specific override is desired. Note that to start an application and send startup RPC's use the <code>--wait-for-rpc</code> parameter and then use the <code>framework_start_init</code> RPC to continue. For example, assume the DSA Module is initialized but for some reason the desire is to have the Software Module handle copies instead. The following RPCs would accomplish the copy override:</p>

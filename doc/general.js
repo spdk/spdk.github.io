@@ -29,9 +29,11 @@ var general =
       [ "Acceleration Low Level Libraries", "accel_fw.html#accel_libs", null ],
       [ "Acceleration Plug-In Modules", "accel_fw.html#accel_modules", [
         [ "IOAT Module", "accel_fw.html#accel_ioat", null ],
-        [ "DSA Module", "accel_fw.html#accel_dsa", null ],
-        [ "How to use kernel idxd driver", "accel_fw.html#accel_idxd_kernel", null ],
+        [ "DSA Module", "accel_fw.html#accel_dsa", [
+          [ "How to use kernel idxd driver", "accel_fw.html#accel_idxd_kernel", null ]
+        ] ],
         [ "Software Module", "accel_fw.html#accel_sw", null ],
+        [ "dpdk_cryptodev", "accel_fw.html#accel_dpdk_cryptodev", null ],
         [ "Module to Operation Code Assignment", "accel_fw.html#accel_assignments", null ]
       ] ]
     ] ]

@@ -86,6 +86,7 @@ $(document).ready(function(){initNavTree('accel_8h.html',''); initResizable(); }
 
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Data Structures</a> &#124;
 <a href="#define-members">Macros</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
 <a href="#enum-members">Enumerations</a> &#124;
@@ -98,6 +99,11 @@ $(document).ready(function(){initNavTree('accel_8h.html',''); initResizable(); }
 <p>Acceleration Framework.  
 <a href="#details">More...</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Data Structures</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__accel__crypto__key__create__param.html">spdk_accel_crypto_key_create_param</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
 <tr class="memitem:a30934de571302d9de3dd14d657172896"><td class="memItemLeft" align="right" valign="top"><a id="a30934de571302d9de3dd14d657172896"></a>
@@ -129,7 +135,9 @@ Enumerations</h2></td></tr>
 , <b>ACCEL_OPC_COMPRESS</b> = 6
 , <b>ACCEL_OPC_DECOMPRESS</b> = 7
 , <br />
-&#160;&#160;<b>ACCEL_OPC_LAST</b> = 8
+&#160;&#160;<b>ACCEL_OPC_ENCRYPT</b> = 8
+, <b>ACCEL_OPC_DECRYPT</b> = 9
+, <b>ACCEL_OPC_LAST</b> = 10
 <br />
  }</td></tr>
 <tr class="separator:a009c73029ad0ef1eed6de0ca4406bf5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -145,6 +153,15 @@ Functions</h2></td></tr>
 <tr class="memitem:a947dd411da094c21407afebfa6a38cdb"><td class="memItemLeft" align="right" valign="top">struct spdk_io_channel *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="accel_8h.html#a947dd411da094c21407afebfa6a38cdb">spdk_accel_get_io_channel</a> (void)</td></tr>
 <tr class="memdesc:a947dd411da094c21407afebfa6a38cdb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get an I/O channel for the acceleration framework.  <a href="accel_8h.html#a947dd411da094c21407afebfa6a38cdb">More...</a><br /></td></tr>
 <tr class="separator:a947dd411da094c21407afebfa6a38cdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32a6e52025120ee79e195d39d83e9147"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="accel_8h.html#a32a6e52025120ee79e195d39d83e9147">spdk_accel_crypto_key_create</a> (const struct <a class="el" href="structspdk__accel__crypto__key__create__param.html">spdk_accel_crypto_key_create_param</a> *param)</td></tr>
+<tr class="memdesc:a32a6e52025120ee79e195d39d83e9147"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a crypto key with given parameters.  <a href="accel_8h.html#a32a6e52025120ee79e195d39d83e9147">More...</a><br /></td></tr>
+<tr class="separator:a32a6e52025120ee79e195d39d83e9147"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74073c4f0af656c37f348aa3f7ee61d4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="accel_8h.html#a74073c4f0af656c37f348aa3f7ee61d4">spdk_accel_crypto_key_destroy</a> (struct spdk_accel_crypto_key *key)</td></tr>
+<tr class="memdesc:a74073c4f0af656c37f348aa3f7ee61d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy a crypto key.  <a href="accel_8h.html#a74073c4f0af656c37f348aa3f7ee61d4">More...</a><br /></td></tr>
+<tr class="separator:a74073c4f0af656c37f348aa3f7ee61d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9fc519ee5307d8ed70bf909f592b1c9d"><td class="memItemLeft" align="right" valign="top">struct spdk_accel_crypto_key *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="accel_8h.html#a9fc519ee5307d8ed70bf909f592b1c9d">spdk_accel_crypto_key_get</a> (const char *name)</td></tr>
+<tr class="memdesc:a9fc519ee5307d8ed70bf909f592b1c9d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find a crypto key structure by name.  <a href="accel_8h.html#a9fc519ee5307d8ed70bf909f592b1c9d">More...</a><br /></td></tr>
+<tr class="separator:a9fc519ee5307d8ed70bf909f592b1c9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8414580180688f9334f9a8e3103a6e28"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="accel_8h.html#a8414580180688f9334f9a8e3103a6e28">spdk_accel_submit_copy</a> (struct spdk_io_channel *ch, void *dst, void *src, uint64_t nbytes, int flags, <a class="el" href="accel_8h.html#a6ba836b7b128829ba185eadb2c60476a">spdk_accel_completion_cb</a> cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:a8414580180688f9334f9a8e3103a6e28"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submit a copy request.  <a href="accel_8h.html#a8414580180688f9334f9a8e3103a6e28">More...</a><br /></td></tr>
 <tr class="separator:a8414580180688f9334f9a8e3103a6e28"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -199,6 +216,12 @@ Functions</h2></td></tr>
 <tr class="memitem:a84d7b247e6eb234e84aa4d856da098fa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="accel_8h.html#a84d7b247e6eb234e84aa4d856da098fa">spdk_accel_put_buf</a> (struct spdk_io_channel *ch, void *buf, struct spdk_memory_domain *domain, void *domain_ctx)</td></tr>
 <tr class="memdesc:a84d7b247e6eb234e84aa4d856da098fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Release a buffer allocated via <code><a class="el" href="accel_8h.html#acde5803c2c3fd5f4404ab171d6820b03" title="Allocate a buffer from accel domain.">spdk_accel_get_buf()</a></code>.  <a href="accel_8h.html#a84d7b247e6eb234e84aa4d856da098fa">More...</a><br /></td></tr>
 <tr class="separator:a84d7b247e6eb234e84aa4d856da098fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa481210cd4541e79ae4d304f119709e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="accel_8h.html#afa481210cd4541e79ae4d304f119709e">spdk_accel_submit_encrypt</a> (struct spdk_io_channel *ch, struct spdk_accel_crypto_key *key, struct iovec *dst_iovs, uint32_t dst_iovcnt, struct iovec *src_iovs, uint32_t src_iovcnt, uint64_t iv, uint32_t block_size, int flags, <a class="el" href="accel_8h.html#a6ba836b7b128829ba185eadb2c60476a">spdk_accel_completion_cb</a> cb_fn, void *cb_arg)</td></tr>
+<tr class="memdesc:afa481210cd4541e79ae4d304f119709e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Build and submit a data encryption request.  <a href="accel_8h.html#afa481210cd4541e79ae4d304f119709e">More...</a><br /></td></tr>
+<tr class="separator:afa481210cd4541e79ae4d304f119709e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adad68f6857a598ec184c58ace776b05e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="accel_8h.html#adad68f6857a598ec184c58ace776b05e">spdk_accel_submit_decrypt</a> (struct spdk_io_channel *ch, struct spdk_accel_crypto_key *key, struct iovec *dst_iovs, uint32_t dst_iovcnt, struct iovec *src_iovs, uint32_t src_iovcnt, uint64_t iv, uint32_t block_size, int flags, <a class="el" href="accel_8h.html#a6ba836b7b128829ba185eadb2c60476a">spdk_accel_completion_cb</a> cb_fn, void *cb_arg)</td></tr>
+<tr class="memdesc:adad68f6857a598ec184c58ace776b05e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Build and submit a data decryption request.  <a href="accel_8h.html#adad68f6857a598ec184c58ace776b05e">More...</a><br /></td></tr>
+<tr class="separator:adad68f6857a598ec184c58ace776b05e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab843fd7c6bfd2db2f2997fad376f687f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="accel_8h.html#ab843fd7c6bfd2db2f2997fad376f687f">spdk_accel_get_opc_module_name</a> (enum accel_opcode opcode, const char **module_name)</td></tr>
 <tr class="memdesc:ab843fd7c6bfd2db2f2997fad376f687f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the name of the module assigned to a specific opcode.  <a href="accel_8h.html#ab843fd7c6bfd2db2f2997fad376f687f">More...</a><br /></td></tr>
 <tr class="separator:ab843fd7c6bfd2db2f2997fad376f687f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -635,6 +658,88 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 if a valid opcode name was provided. -EINVAL for invalid opcode or if the framework has started (cannot change modules after startup) </dd></dl>
+
+</div>
+</div>
+<a id="a32a6e52025120ee79e195d39d83e9147"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a32a6e52025120ee79e195d39d83e9147">&#9670;&nbsp;</a></span>spdk_accel_crypto_key_create()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_accel_crypto_key_create </td>
+          <td>(</td>
+          <td class="paramtype">const struct <a class="el" href="structspdk__accel__crypto__key__create__param.html">spdk_accel_crypto_key_create_param</a> *&#160;</td>
+          <td class="paramname"><em>param</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Create a crypto key with given parameters. </p>
+<p>Accel module copies content of <b>param</b> structure</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">param</td><td>Key parameters </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, negated errno on error </dd></dl>
+
+</div>
+</div>
+<a id="a74073c4f0af656c37f348aa3f7ee61d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a74073c4f0af656c37f348aa3f7ee61d4">&#9670;&nbsp;</a></span>spdk_accel_crypto_key_destroy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_accel_crypto_key_destroy </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_accel_crypto_key *&#160;</td>
+          <td class="paramname"><em>key</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Destroy a crypto key. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">key</td><td>Key to destroy </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, negated errno on error </dd></dl>
+
+</div>
+</div>
+<a id="a9fc519ee5307d8ed70bf909f592b1c9d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9fc519ee5307d8ed70bf909f592b1c9d">&#9670;&nbsp;</a></span>spdk_accel_crypto_key_get()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct spdk_accel_crypto_key* spdk_accel_crypto_key_get </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Find a crypto key structure by name. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>Key name </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Crypto key structure or NULL </dd></dl>
 
 </div>
 </div>
@@ -1599,6 +1704,108 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="adad68f6857a598ec184c58ace776b05e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adad68f6857a598ec184c58ace776b05e">&#9670;&nbsp;</a></span>spdk_accel_submit_decrypt()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_accel_submit_decrypt </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_io_channel *&#160;</td>
+          <td class="paramname"><em>ch</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct spdk_accel_crypto_key *&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct iovec *&#160;</td>
+          <td class="paramname"><em>dst_iovs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>dst_iovcnt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct iovec *&#160;</td>
+          <td class="paramname"><em>src_iovs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>src_iovcnt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>iv</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>block_size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>flags</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="accel_8h.html#a6ba836b7b128829ba185eadb2c60476a">spdk_accel_completion_cb</a>&#160;</td>
+          <td class="paramname"><em>cb_fn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>cb_arg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Build and submit a data decryption request. </p>
+<p>This function will build the decryption request and submit it. <b>nbytes</b> must be multiple of <b>block_size</b>. <b>iv</b> is used to decrypt the first logical block of size <b>block_size</b>. If <b>src_iovs</b> describes more than one logical block then <b>iv</b> will be incremented for each next logical block. Data Encryption Key identifier should be created before calling this function using methods specific to the accel module being used.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ch</td><td>I/O channel associated with this call </td></tr>
+    <tr><td class="paramname">key</td><td>Data Encryption Key identifier </td></tr>
+    <tr><td class="paramname">dst_iovs</td><td>The io vector array which stores the dst data and len. </td></tr>
+    <tr><td class="paramname">dst_iovcnt</td><td>The size of the destination io vectors. </td></tr>
+    <tr><td class="paramname">src_iovs</td><td>The io vector array which stores the src data and len. </td></tr>
+    <tr><td class="paramname">src_iovcnt</td><td>The size of the source io vectors. </td></tr>
+    <tr><td class="paramname">iv</td><td>Initialization vector (tweak) used for decryption. Should be the same as <b>iv</b> used for encryption of a data block </td></tr>
+    <tr><td class="paramname">block_size</td><td>Logical block size, if src contains more than 1 logical block, subsequent logical blocks will be decrypted with incremented <b>iv</b> </td></tr>
+    <tr><td class="paramname">flags</td><td>Accel framework flags for operations. </td></tr>
+    <tr><td class="paramname">cb_fn</td><td>Callback function which will be called when the request is complete. </td></tr>
+    <tr><td class="paramname">cb_arg</td><td>Opaque value which will be passed back as the arg parameter in the completion callback.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, negative errno on failure. </dd></dl>
+
+</div>
+</div>
 <a id="aad9824886c1379235c90674e3a932483"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aad9824886c1379235c90674e3a932483">&#9670;&nbsp;</a></span>spdk_accel_submit_dualcast()</h2>
 
@@ -1672,6 +1879,108 @@ Functions</h2></td></tr>
     <tr><td class="paramname">flags</td><td>Accel framework flags for operations. </td></tr>
     <tr><td class="paramname">cb_fn</td><td>Called when this copy operation completes. </td></tr>
     <tr><td class="paramname">cb_arg</td><td>Callback argument.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, negative errno on failure. </dd></dl>
+
+</div>
+</div>
+<a id="afa481210cd4541e79ae4d304f119709e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa481210cd4541e79ae4d304f119709e">&#9670;&nbsp;</a></span>spdk_accel_submit_encrypt()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_accel_submit_encrypt </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_io_channel *&#160;</td>
+          <td class="paramname"><em>ch</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct spdk_accel_crypto_key *&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct iovec *&#160;</td>
+          <td class="paramname"><em>dst_iovs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>dst_iovcnt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct iovec *&#160;</td>
+          <td class="paramname"><em>src_iovs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>src_iovcnt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>iv</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>block_size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>flags</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="accel_8h.html#a6ba836b7b128829ba185eadb2c60476a">spdk_accel_completion_cb</a>&#160;</td>
+          <td class="paramname"><em>cb_fn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>cb_arg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Build and submit a data encryption request. </p>
+<p>This function will build the encryption request and submit it. <b>nbytes</b> must be multiple of <b>block_size</b>. <b>iv</b> is used to encrypt the first logical block of size <b>block_size</b>. If <b>src_iovs</b> describes more than one logical block then <b>iv</b> will be incremented for each next logical block. Data Encryption Key identifier should be created before calling this function using methods specific to the accel module being used.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ch</td><td>I/O channel associated with this call </td></tr>
+    <tr><td class="paramname">key</td><td>Data Encryption Key identifier </td></tr>
+    <tr><td class="paramname">dst_iovs</td><td>The io vector array which stores the dst data and len. </td></tr>
+    <tr><td class="paramname">dst_iovcnt</td><td>The size of the destination io vectors. </td></tr>
+    <tr><td class="paramname">src_iovs</td><td>The io vector array which stores the src data and len. </td></tr>
+    <tr><td class="paramname">src_iovcnt</td><td>The size of the source io vectors. </td></tr>
+    <tr><td class="paramname">iv</td><td>Initialization vector (tweak) used for encryption </td></tr>
+    <tr><td class="paramname">block_size</td><td>Logical block size, if src contains more than 1 logical block, subsequent logical blocks will be encrypted with incremented <b>iv</b> </td></tr>
+    <tr><td class="paramname">flags</td><td>Accel framework flags for operations. </td></tr>
+    <tr><td class="paramname">cb_fn</td><td>Callback function which will be called when the request is complete. </td></tr>
+    <tr><td class="paramname">cb_arg</td><td>Opaque value which will be passed back as the arg parameter in the completion callback.</td></tr>
   </table>
   </dd>
 </dl>

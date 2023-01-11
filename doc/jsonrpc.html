@@ -403,8 +403,13 @@ rpc_get_methods</h2>
 <div class="line">    &quot;framework_monitor_context_switch&quot;,</div>
 <div class="line">    &quot;spdk_kill_instance&quot;,</div>
 <div class="line">    &quot;accel_get_opc_assignments&quot;,</div>
+<div class="line">    &quot;accel_crypto_key_create&quot;,</div>
+<div class="line">    &quot;accel_crypto_keys_get&quot;,</div>
 <div class="line">    &quot;ioat_scan_accel_module&quot;,</div>
 <div class="line">    &quot;dsa_scan_accel_module&quot;,</div>
+<div class="line">    &quot;dpdk_cryptodev_scan_accel_module&quot;,</div>
+<div class="line">    &quot;dpdk_cryptodev_set_driver&quot;,</div>
+<div class="line">    &quot;dpdk_cryptodev_get_driver&quot;,</div>
 <div class="line">    &quot;bdev_virtio_attach_controller&quot;,</div>
 <div class="line">    &quot;bdev_virtio_scsi_get_devices&quot;,</div>
 <div class="line">    &quot;bdev_virtio_detach_controller&quot;,</div>
@@ -1393,6 +1398,77 @@ accel_assign_opc</h2>
 <div class="line">  &quot;id&quot;: 1,</div>
 <div class="line">  &quot;result&quot;: true</div>
 <div class="line">}</div>
+</div><!-- fragment --><h2><a class="anchor" id="rpc_accel_crypto_key_create"></a>
+accel_crypto_key_create</h2>
+<p>Create a crypt key which will be used in accel framework</p>
+<h3>Parameters</h3>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">cipher   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">crypto cipher to use    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">key   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Key in <b>hex</b> form    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">key2   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Optional 2nd part of the key or a tweak in <b>hex</b> form    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">The key name   </td></tr>
+</table>
+<h3>Example</h3>
+<p>Example request:</p>
+<div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
+<div class="line">  &quot;method&quot;: &quot;accel_crypto_key_create&quot;,</div>
+<div class="line">  &quot;id&quot;: 1,</div>
+<div class="line">  &quot;params&quot;: {</div>
+<div class="line">    &quot;cipher&quot;: &quot;AES_XTS&quot;,</div>
+<div class="line">    &quot;key&quot;: &quot;00112233445566778899001122334455&quot;,</div>
+<div class="line">    &quot;key2&quot;: &quot;00112233445566778899001122334455&quot;,</div>
+<div class="line">    &quot;name&quot;: &quot;super_key&quot;</div>
+<div class="line">  }</div>
+<div class="line">}</div>
+</div><!-- fragment --><p>Example response:</p>
+<div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
+<div class="line">  &quot;id&quot;: 1,</div>
+<div class="line">  &quot;result&quot;: true</div>
+<div class="line">}</div>
+</div><!-- fragment --><h2><a class="anchor" id="rpc_accel_crypto_keys_get"></a>
+accel_crypto_keys_get</h2>
+<p>Get information about existing crypto keys</p>
+<h3>Parameters</h3>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">key_name   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">If specified, return info about a specific key   </td></tr>
+</table>
+<h3>Example</h3>
+<p>Example request:</p>
+<div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
+<div class="line">  &quot;method&quot;: &quot;accel_crypto_keys_get&quot;,</div>
+<div class="line">  &quot;id&quot;: 1</div>
+<div class="line">}</div>
+</div><!-- fragment --><p>Example response:</p>
+<div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
+<div class="line">  &quot;id&quot;: 1,</div>
+<div class="line">  &quot;result&quot;: [</div>
+<div class="line">    {</div>
+<div class="line">      &quot;name&quot;: &quot;test_dek&quot;,</div>
+<div class="line">      &quot;cipher&quot;: &quot;AES_XTS&quot;,</div>
+<div class="line">      &quot;key&quot;: &quot;00112233445566778899001122334455&quot;,</div>
+<div class="line">      &quot;key2&quot;: &quot;11223344556677889900112233445500&quot;</div>
+<div class="line">    },</div>
+<div class="line">    {</div>
+<div class="line">      &quot;name&quot;: &quot;test_dek2&quot;,</div>
+<div class="line">      &quot;cipher&quot;: &quot;AES_XTS&quot;,</div>
+<div class="line">      &quot;key&quot;: &quot;11223344556677889900112233445500&quot;,</div>
+<div class="line">      &quot;key2&quot;: &quot;22334455667788990011223344550011&quot;</div>
+<div class="line">    }</div>
+<div class="line">  ]</div>
+<div class="line">}</div>
 </div><!-- fragment --><h2><a class="anchor" id="rpc_dsa_scan_accel_module"></a>
 dsa_scan_accel_module</h2>
 <p>Set config and enable dsa accel module offload. This feature is considered as experimental.</p>
@@ -1454,6 +1530,68 @@ ioat_scan_accel_module</h2>
 <div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
 <div class="line">  &quot;id&quot;: 1,</div>
 <div class="line">  &quot;result&quot;: true</div>
+<div class="line">}</div>
+</div><!-- fragment --><h2><a class="anchor" id="rpc_dpdk_cryptodev_scan_accel_module"></a>
+dpdk_cryptodev_scan_accel_module</h2>
+<p>Enable dpdk_cryptodev accel offload</p>
+<h3>Parameters</h3>
+<p>None</p>
+<h3>Example</h3>
+<p>Example request:</p>
+<div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
+<div class="line">  &quot;method&quot;: &quot;dpdk_cryptodev_scan_accel_module&quot;,</div>
+<div class="line">  &quot;id&quot;: 1</div>
+<div class="line">}</div>
+</div><!-- fragment --><p>Example response:</p>
+<div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
+<div class="line">  &quot;id&quot;: 1,</div>
+<div class="line">  &quot;result&quot;: true</div>
+<div class="line">}</div>
+</div><!-- fragment --><h2><a class="anchor" id="rpc_dpdk_cryptodev_set_driver"></a>
+dpdk_cryptodev_set_driver</h2>
+<p>Set the DPDK cryptodev driver</p>
+<h3>Parameters</h3>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">driver_name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">The driver, can be one of crypto_aesni_mb, crypto_qat or mlx5_pci   </td></tr>
+</table>
+<h3>Example</h3>
+<p>Example request:</p>
+<div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
+<div class="line">  &quot;method&quot;: &quot;dpdk_cryptodev_set_driver&quot;,</div>
+<div class="line">  &quot;id&quot;: 1,</div>
+<div class="line">  &quot;params&quot;: {</div>
+<div class="line">    &quot;driver_name&quot;: &quot;crypto_aesni_mb&quot;</div>
+<div class="line">  }</div>
+<div class="line">}</div>
+</div><!-- fragment --><p>Example response:</p>
+<div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
+<div class="line">  &quot;id&quot;: 1,</div>
+<div class="line">  &quot;result&quot;: true</div>
+<div class="line">}</div>
+</div><!-- fragment --><h2><a class="anchor" id="rpc_dpdk_cryptodev_get_driver"></a>
+dpdk_cryptodev_get_driver</h2>
+<p>Get the DPDK cryptodev driver</p>
+<h3>Parameters</h3>
+<p>None</p>
+<h3>Example</h3>
+<p>Example request:</p>
+<div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
+<div class="line">  &quot;method&quot;: &quot;dpdk_cryptodev_get_driver&quot;,</div>
+<div class="line">  &quot;id&quot;: 1</div>
+<div class="line">}</div>
+</div><!-- fragment --><p>Example response:</p>
+<div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
+<div class="line">  &quot;id&quot;: 1,</div>
+<div class="line">  &quot;result&quot;: &quot;crypto_aesni_mb&quot;</div>
 <div class="line">}</div>
 </div><!-- fragment --><h1><a class="anchor" id="jsonrpc_components_bdev"></a>
 Block Device Abstraction Layer</h1>

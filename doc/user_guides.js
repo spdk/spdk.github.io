@@ -173,9 +173,14 @@ var user_guides =
         [ "accel_get_module_info", "jsonrpc.html#accel_get_module_info", null ],
         [ "accel_get_opc_assignments", "jsonrpc.html#rpc_accel_get_opc_assignments", null ],
         [ "accel_assign_opc", "jsonrpc.html#rpc_accel_assign_opc", null ],
+        [ "accel_crypto_key_create", "jsonrpc.html#rpc_accel_crypto_key_create", null ],
+        [ "accel_crypto_keys_get", "jsonrpc.html#rpc_accel_crypto_keys_get", null ],
         [ "dsa_scan_accel_module", "jsonrpc.html#rpc_dsa_scan_accel_module", null ],
         [ "iaa_scan_accel_module", "jsonrpc.html#rpc_iaa_scan_accel_module", null ],
-        [ "ioat_scan_accel_module", "jsonrpc.html#rpc_ioat_scan_accel_module", null ]
+        [ "ioat_scan_accel_module", "jsonrpc.html#rpc_ioat_scan_accel_module", null ],
+        [ "dpdk_cryptodev_scan_accel_module", "jsonrpc.html#rpc_dpdk_cryptodev_scan_accel_module", null ],
+        [ "dpdk_cryptodev_set_driver", "jsonrpc.html#rpc_dpdk_cryptodev_set_driver", null ],
+        [ "dpdk_cryptodev_get_driver", "jsonrpc.html#rpc_dpdk_cryptodev_get_driver", null ]
       ] ],
       [ "Block Device Abstraction Layer", "jsonrpc.html#jsonrpc_components_bdev", [
         [ "bdev_set_options", "jsonrpc.html#rpc_bdev_set_options", null ],

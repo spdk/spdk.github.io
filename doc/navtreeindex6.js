@@ -1,5 +1,13 @@
 var NAVTREEINDEX6 =
 {
+"iscsi__spec_8h.html#ad2c30ed17419423b79a47fae8323408aafe979808875659d11a6ec4adecf5b896":[16,0,32,93,20],
+"iscsi__spec_8h.html#ad41a73596d194d0f14b96c1aacabeb48":[16,0,32,82],
+"iscsi__spec_8h.html#adb40c0a30ecc3598a564d9d78e1c6248":[16,0,32,45],
+"iscsi__spec_8h.html#ade4610ab833eda63d48da4b28733d2f0":[16,0,32,43],
+"iscsi__spec_8h.html#ae43e862b283be36eec780dc1d74c6ec7":[16,0,32,72],
+"iscsi__spec_8h.html#ae6ac9b2c22c5547b05cdd34986ea96f2":[16,0,32,36],
+"iscsi__spec_8h.html#aee96887365309ea13419e61bb5ec7f0d":[16,0,32,55],
+"iscsi__spec_8h.html#af1c5d3ec63397dd13925fdbfc0b73e4b":[16,0,32,78],
 "iscsi__spec_8h.html#af552fafd6804f9189aa98263f8bb5cd4":[16,0,32,30],
 "iscsi__spec_8h.html#af6b4af2bfcecc7351955c4cd89e1e775":[16,0,32,44],
 "iscsi__spec_8h.html#afa03843ca64676b995bf1abe55713228":[16,0,32,96],
@@ -118,6 +126,8 @@ var NAVTREEINDEX6 =
 "jsonrpc.html#jsonrpc_parser_error":[3,9,1,0],
 "jsonrpc.html#notify_get_notifications":[3,9,9,29],
 "jsonrpc.html#rpc_accel_assign_opc":[3,9,4,2],
+"jsonrpc.html#rpc_accel_crypto_key_create":[3,9,4,3],
+"jsonrpc.html#rpc_accel_crypto_keys_get":[3,9,4,4],
 "jsonrpc.html#rpc_accel_get_opc_assignments":[3,9,4,1],
 "jsonrpc.html#rpc_bdev_aio_create":[3,9,5,29],
 "jsonrpc.html#rpc_bdev_aio_delete":[3,9,5,31],
@@ -239,15 +249,5 @@ var NAVTREEINDEX6 =
 "jsonrpc.html#rpc_bdev_zone_block_create":[3,9,5,46],
 "jsonrpc.html#rpc_bdev_zone_block_delete":[3,9,5,47],
 "jsonrpc.html#rpc_blobfs_create":[3,9,11,1],
-"jsonrpc.html#rpc_blobfs_detect":[3,9,11,0],
-"jsonrpc.html#rpc_blobfs_mount":[3,9,11,2],
-"jsonrpc.html#rpc_blobfs_set_cache_size":[3,9,11,3],
-"jsonrpc.html#rpc_dsa_scan_accel_module":[3,9,4,3],
-"jsonrpc.html#rpc_enable_vmd":[3,9,12,4],
-"jsonrpc.html#rpc_env_dpdk_get_mem_stats":[3,9,3,28],
-"jsonrpc.html#rpc_framework_get_config":[3,9,3,6],
-"jsonrpc.html#rpc_framework_get_reactors":[3,9,3,7],
-"jsonrpc.html#rpc_framework_get_scheduler":[3,9,3,9],
-"jsonrpc.html#rpc_framework_get_subsystems":[3,9,3,5],
-"jsonrpc.html#rpc_framework_monitor_context_switch":[3,9,3,1]
+"jsonrpc.html#rpc_blobfs_detect":[3,9,11,0]
 };
