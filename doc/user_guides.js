@@ -409,7 +409,10 @@ var user_guides =
         [ "bdev_daos_create", "jsonrpc.html#rpc_bdev_daos_create", null ],
         [ "bdev_daos_delete", "jsonrpc.html#rpc_bdev_daos_delete", null ],
         [ "bdev_daos_resize", "jsonrpc.html#rpc_bdev_daos_resize", null ],
-        [ "iobuf_set_options", "jsonrpc.html#rpc_iobuf_set_options", null ]
+        [ "iobuf_set_options", "jsonrpc.html#rpc_iobuf_set_options", null ],
+        [ "bdev_nvme_start_mdns_discovery", "jsonrpc.html#rpc_bdev_nvme_start_mdns_discovery", null ],
+        [ "bdev_nvme_stop_mdns_discovery", "jsonrpc.html#rpc_bdev_nvme_stop_mdns_discovery", null ],
+        [ "bdev_nvme_get_mdns_discovery_info", "jsonrpc.html#rpc_bdev_nvme_get_mdns_discovery_info", null ]
       ] ]
     ] ],
     [ "JSON-RPC Remote access", "jsonrpc_proxy.html", null ],

@@ -97,6 +97,7 @@ v23.01: (Upcoming Release)</h1>
 <p>New functions <code>spdk_accel_submit_encrypt</code> and <code>spdk_accel_submit_decrypt</code> were added.</p>
 <p>New accel module <code>dpdk_cryptodev</code> has been added. It uses DPDK crypto PMD and support encrypt and decrypt operations. New RPC <code>dpdk_cryptodev_scan_accel_module</code> has been added to enable this accel module.</p>
 <h2>bdev</h2>
+<p>Added RPCs bdev_nvme_start_mdns_discovery, bdev_nvme_get_mdns_discovery_info and bdev_nvme_stop_mdns_discovery to perform Avahi based mDNS discovery service, as per NVMe TP 8009 - Automated Discovery of Ethernet Discovery Controllers.</p>
 <p>Both of interleaved and separated metadata are now supported by the malloc bdev module.</p>
 <p>Protection information is now supported by the malloc bdev module.</p>
 <p>A new API <code>spkd_bdev_part_submit_request_ext</code> was added to specify a custom completion callback.</p>

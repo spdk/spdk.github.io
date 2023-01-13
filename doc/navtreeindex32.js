@@ -1,5 +1,8 @@
 var NAVTREEINDEX32 =
 {
+"unionspdk__nvme__intel__feat__reset__timed__workload__counters.html#abb7fd2e47365abcba82b98f12b8b95b3":[15,0,182,2],
+"unionspdk__nvme__intel__feat__reset__timed__workload__counters.html#acedb90ac739fbbd7e1c7b403af87359a":[15,0,182,0],
+"unionspdk__nvme__intel__feat__smbus__address.html":[15,0,183],
 "unionspdk__nvme__intel__feat__smbus__address.html#a1e1bc8d96e7c60ff634b4b5dc28151b0":[15,0,183,1],
 "unionspdk__nvme__intel__feat__smbus__address.html#a49084bbf1cf7d967ed21e6c1dce76e9f":[15,0,183,2],
 "unionspdk__nvme__intel__feat__smbus__address.html#aa288a1583fa4dca5709f116fe05211b1":[15,0,183,0],

@@ -1,5 +1,8 @@
 var NAVTREEINDEX7 =
 {
+"jsonrpc.html#rpc_bdev_zone_block_delete":[3,9,5,47],
+"jsonrpc.html#rpc_blobfs_create":[3,9,11,1],
+"jsonrpc.html#rpc_blobfs_detect":[3,9,11,0],
 "jsonrpc.html#rpc_blobfs_mount":[3,9,11,2],
 "jsonrpc.html#rpc_blobfs_set_cache_size":[3,9,11,3],
 "jsonrpc.html#rpc_dpdk_cryptodev_get_driver":[3,9,4,10],
@@ -246,8 +249,5 @@ var NAVTREEINDEX7 =
 "lvol_8h.html#a4fe537bc10bf854d592e6bbda42b26dcad0be79dcdb4f4810886bf46567f35850":[16,0,37,7,2],
 "lvol_8h.html#a4fe537bc10bf854d592e6bbda42b26dcafe822de13a3be56a947a1246d61dd0ad":[16,0,37,7,3],
 "lvol_8h.html#a526682c9b96877490b9611cc96a907b1":[16,0,37,14],
-"lvol_8h.html#a757eefd4ce0d68328e7dec58eb2e8a50":[16,0,37,6],
-"lvol_8h.html#a76f85d046acb7b35ae36dc83cf337075":[16,0,37,5],
-"lvol_8h.html#a795f3fe355907d744d019d2b01f0aee9":[16,0,37,17],
-"lvol_8h.html#a87c4dadc88c211fb4e8ba0cddc474032":[16,0,37,15]
+"lvol_8h.html#a757eefd4ce0d68328e7dec58eb2e8a50":[16,0,37,6]
 };

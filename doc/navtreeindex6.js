@@ -190,6 +190,7 @@ var NAVTREEINDEX6 =
 "jsonrpc.html#rpc_bdev_nvme_get_controllers":[3,9,5,35],
 "jsonrpc.html#rpc_bdev_nvme_get_discovery_info":[3,9,5,40],
 "jsonrpc.html#rpc_bdev_nvme_get_io_paths":[3,9,5,41],
+"jsonrpc.html#rpc_bdev_nvme_get_mdns_discovery_info":[3,9,12,16],
 "jsonrpc.html#rpc_bdev_nvme_get_transport_statistics":[3,9,5,49],
 "jsonrpc.html#rpc_bdev_nvme_opal_init":[3,9,9,21],
 "jsonrpc.html#rpc_bdev_nvme_opal_revert":[3,9,9,22],
@@ -201,7 +202,9 @@ var NAVTREEINDEX6 =
 "jsonrpc.html#rpc_bdev_nvme_set_options":[3,9,5,32],
 "jsonrpc.html#rpc_bdev_nvme_set_preferred_path":[3,9,5,42],
 "jsonrpc.html#rpc_bdev_nvme_start_discovery":[3,9,5,38],
+"jsonrpc.html#rpc_bdev_nvme_start_mdns_discovery":[3,9,12,14],
 "jsonrpc.html#rpc_bdev_nvme_stop_discovery":[3,9,5,39],
+"jsonrpc.html#rpc_bdev_nvme_stop_mdns_discovery":[3,9,12,15],
 "jsonrpc.html#rpc_bdev_ocf_create":[3,9,5,16],
 "jsonrpc.html#rpc_bdev_ocf_delete":[3,9,5,17],
 "jsonrpc.html#rpc_bdev_ocf_flush_start":[3,9,5,22],
@@ -246,8 +249,5 @@ var NAVTREEINDEX6 =
 "jsonrpc.html#rpc_bdev_wait_for_examine":[3,9,5,3],
 "jsonrpc.html#rpc_bdev_xnvme_create":[3,9,5,79],
 "jsonrpc.html#rpc_bdev_xnvme_delete":[3,9,5,80],
-"jsonrpc.html#rpc_bdev_zone_block_create":[3,9,5,46],
-"jsonrpc.html#rpc_bdev_zone_block_delete":[3,9,5,47],
-"jsonrpc.html#rpc_blobfs_create":[3,9,11,1],
-"jsonrpc.html#rpc_blobfs_detect":[3,9,11,0]
+"jsonrpc.html#rpc_bdev_zone_block_create":[3,9,5,46]
 };
