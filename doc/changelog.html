@@ -129,6 +129,8 @@ v23.01: (Upcoming Release)</h1>
 <h2>util</h2>
 <p>New API <code>spdk_fd_group_get_epoll_event</code> that returns the epoll(7) event that caused a function callback in file descriptor group to execute.</p>
 <p>A new API <code>spdk_strcpy_replace</code> was added to replace all occurrences of the search string with the replacement string.</p>
+<p>New API <code><a class="el" href="util_8h.html#a87d0db9f66fa3fc6763dbbe238c3c179" title="Operate like memset across an iovec.">spdk_iov_memset()</a></code> was added to memset an iovec.</p>
+<p>New API <code><a class="el" href="util_8h.html#ae5b9fcc21fe47320520c6d43983ad55f" title="Initialize an iovec with just the single given buffer.">spdk_iov_one()</a></code> was added to initialize an iovec for a single buffer.</p>
 <h2>json</h2>
 <p>Added API <code>spdk_json_write_double</code> and <code>spdk_json_write_named_double</code> to allow for writing and decoding of the the double data type.</p>
 <h2>thread</h2>

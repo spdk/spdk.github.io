@@ -133,9 +133,6 @@ Macros</h2></td></tr>
 <tr class="memitem:ac15064b1cd3d036753e04c5c207ad71d"><td class="memItemLeft" align="right" valign="top"><a id="ac15064b1cd3d036753e04c5c207ad71d"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_INTERRUPT_REGISTER</b>(efd,  fn,  arg)&#160;&#160;&#160;	<a class="el" href="thread_8h.html#aae58fe1101803d60c523891e7540a23c">spdk_interrupt_register</a>(efd, fn, arg, #fn)</td></tr>
 <tr class="separator:ac15064b1cd3d036753e04c5c207ad71d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aead0e1b55005bcb89c097bfda7ca716d"><td class="memItemLeft" align="right" valign="top"><a id="aead0e1b55005bcb89c097bfda7ca716d"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_IOBUF_DATA_OFFSET</b>&#160;&#160;&#160;SPDK_CACHE_LINE_SIZE</td></tr>
-<tr class="separator:aead0e1b55005bcb89c097bfda7ca716d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
@@ -398,9 +395,6 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 <tr class="memitem:a14cf080d22a52b5ae3025221411096f5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="thread_8h.html#a14cf080d22a52b5ae3025221411096f5">spdk_spin_held</a> (struct <a class="el" href="structspdk__spinlock.html">spdk_spinlock</a> *sspin)</td></tr>
 <tr class="memdesc:a14cf080d22a52b5ae3025221411096f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine if the caller holds this SPDK spinlock.  <a href="thread_8h.html#a14cf080d22a52b5ae3025221411096f5">More...</a><br /></td></tr>
 <tr class="separator:a14cf080d22a52b5ae3025221411096f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4f69a15b18c9a265ef4516018fbee600"><td class="memItemLeft" align="right" valign="top"><a id="a4f69a15b18c9a265ef4516018fbee600"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_STATIC_ASSERT</b> (sizeof(struct <a class="el" href="structspdk__iobuf__buffer.html">spdk_iobuf_buffer</a>)&lt;=SPDK_IOBUF_DATA_OFFSET, &quot;Invalid data offset&quot;)</td></tr>
-<tr class="separator:a4f69a15b18c9a265ef4516018fbee600"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a212059a30d7b5c5e87b0f56f740dd328"><td class="memItemLeft" align="right" valign="top"><a id="a212059a30d7b5c5e87b0f56f740dd328"></a>
 typedef&#160;</td><td class="memItemRight" valign="bottom"><b>STAILQ_HEAD</b> (, <a class="el" href="structspdk__iobuf__entry.html">spdk_iobuf_entry</a>) spdk_iobuf_entry_stailq_t</td></tr>
 <tr class="separator:a212059a30d7b5c5e87b0f56f740dd328"><td class="memSeparator" colspan="2">&#160;</td></tr>
