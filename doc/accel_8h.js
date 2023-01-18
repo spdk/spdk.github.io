@@ -20,6 +20,8 @@ var accel_8h =
     ] ],
     [ "spdk_accel_append_copy", "accel_8h.html#a51ed9c807379914cef1c5eaf05a3b9f7", null ],
     [ "spdk_accel_append_decompress", "accel_8h.html#af28cbbf84a76a09ad52af0f679f923c4", null ],
+    [ "spdk_accel_append_decrypt", "accel_8h.html#a12a6e4ce53656017f3b01f8cf98fd931", null ],
+    [ "spdk_accel_append_encrypt", "accel_8h.html#a009120c1e212f13b51b808e07d391bc8", null ],
     [ "spdk_accel_append_fill", "accel_8h.html#a3c286561aa9cbb54d60993fad7b5d98d", null ],
     [ "spdk_accel_assign_opc", "accel_8h.html#a4d8b25b197af0a838d38e2f12151dcc8", null ],
     [ "spdk_accel_crypto_key_create", "accel_8h.html#a32a6e52025120ee79e195d39d83e9147", null ],

@@ -1,5 +1,13 @@
 var NAVTREEINDEX31 =
 {
+"unionspdk__nvme__cmbsz__register.html#a7206eb9f940d6f011c71f2b08c604a3f":[15,0,138,0],
+"unionspdk__nvme__cmbsz__register.html#a79fbfeb57825c60398ad99aff7dea6c4":[15,0,138,3],
+"unionspdk__nvme__cmbsz__register.html#aa017da4c8e3418285501ca07822bdbf2":[15,0,138,4],
+"unionspdk__nvme__cmbsz__register.html#ad0aa06b3cce740ca6fdb26bf8c515167":[15,0,138,5],
+"unionspdk__nvme__cmbsz__register.html#ad934781cb8247d65136131504d5cd05d":[15,0,138,9],
+"unionspdk__nvme__cmbsz__register.html#af1ceb7a8fd105d746f14edf48a672d08":[15,0,138,1],
+"unionspdk__nvme__cmd__cdw10.html":[15,0,140],
+"unionspdk__nvme__cmd__cdw10.html#a022f6e3fd6990df3c72e3b34cfe9a9c4":[15,0,140,3],
 "unionspdk__nvme__cmd__cdw10.html#a14be8fab8efa9f5423687b3413749a94":[15,0,140,10],
 "unionspdk__nvme__cmd__cdw10.html#a1f5201591d6707ca98c1416041bdc72c":[15,0,140,7],
 "unionspdk__nvme__cmd__cdw10.html#a204741537038e2ee8e798477586fae72":[15,0,140,27],
@@ -241,13 +249,5 @@ var NAVTREEINDEX31 =
 "unionspdk__nvme__intel__feat__led__pattern.html#aa672b651e209e0a30329e42ac87354dc":[15,0,180,1],
 "unionspdk__nvme__intel__feat__led__pattern.html#ae641e66b1428b97bee10d5322bf8061b":[15,0,180,0],
 "unionspdk__nvme__intel__feat__power__governor.html":[15,0,181],
-"unionspdk__nvme__intel__feat__power__governor.html#a21a30353391b6569ff38a3aa0d3ae36d":[15,0,181,3],
-"unionspdk__nvme__intel__feat__power__governor.html#a87b59d2553682b8fa44b294f2a96ece1":[15,0,181,2],
-"unionspdk__nvme__intel__feat__power__governor.html#a881f01f18813d1a59306352a84316061":[15,0,181,0],
-"unionspdk__nvme__intel__feat__power__governor.html#aa25780c209e8e7d18133e16396cb235e":[15,0,181,1],
-"unionspdk__nvme__intel__feat__reset__timed__workload__counters.html":[15,0,182],
-"unionspdk__nvme__intel__feat__reset__timed__workload__counters.html#a6d4eb13eae3c57005a76fa79e808525c":[15,0,182,1],
-"unionspdk__nvme__intel__feat__reset__timed__workload__counters.html#a74b5ac6a6ea150d582cc269f6987757b":[15,0,182,3],
-"unionspdk__nvme__intel__feat__reset__timed__workload__counters.html#abb7fd2e47365abcba82b98f12b8b95b3":[15,0,182,2],
-"unionspdk__nvme__intel__feat__reset__timed__workload__counters.html#acedb90ac739fbbd7e1c7b403af87359a":[15,0,182,0]
+"unionspdk__nvme__intel__feat__power__governor.html#a21a30353391b6569ff38a3aa0d3ae36d":[15,0,181,3]
 };

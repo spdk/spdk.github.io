@@ -1,5 +1,7 @@
 var NAVTREEINDEX6 =
 {
+"iscsi__spec_8h.html#ad2c30ed17419423b79a47fae8323408aae864992fd225ecfe3409d7432ca90d00":[16,0,32,93,8],
+"iscsi__spec_8h.html#ad2c30ed17419423b79a47fae8323408aaee3fe566a4328473900e8427fe46fb88":[16,0,32,93,6],
 "iscsi__spec_8h.html#ad2c30ed17419423b79a47fae8323408aafe979808875659d11a6ec4adecf5b896":[16,0,32,93,20],
 "iscsi__spec_8h.html#ad41a73596d194d0f14b96c1aacabeb48":[16,0,32,82],
 "iscsi__spec_8h.html#adb40c0a30ecc3598a564d9d78e1c6248":[16,0,32,45],
@@ -247,7 +249,5 @@ var NAVTREEINDEX6 =
 "jsonrpc.html#rpc_bdev_virtio_detach_controller":[3,9,5,83],
 "jsonrpc.html#rpc_bdev_virtio_scsi_get_devices":[3,9,5,82],
 "jsonrpc.html#rpc_bdev_wait_for_examine":[3,9,5,3],
-"jsonrpc.html#rpc_bdev_xnvme_create":[3,9,5,79],
-"jsonrpc.html#rpc_bdev_xnvme_delete":[3,9,5,80],
-"jsonrpc.html#rpc_bdev_zone_block_create":[3,9,5,46]
+"jsonrpc.html#rpc_bdev_xnvme_create":[3,9,5,79]
 };

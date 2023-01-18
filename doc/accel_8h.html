@@ -201,6 +201,12 @@ Functions</h2></td></tr>
 <tr class="memitem:af28cbbf84a76a09ad52af0f679f923c4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="accel_8h.html#af28cbbf84a76a09ad52af0f679f923c4">spdk_accel_append_decompress</a> (struct spdk_accel_sequence **seq, struct spdk_io_channel *ch, struct iovec *dst_iovs, size_t dst_iovcnt, struct spdk_memory_domain *dst_domain, void *dst_domain_ctx, struct iovec *src_iovs, size_t src_iovcnt, struct spdk_memory_domain *src_domain, void *src_domain_ctx, int flags, <a class="el" href="accel_8h.html#abaf556b5e1b63b5237faff3952a3bb46">spdk_accel_step_cb</a> cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:af28cbbf84a76a09ad52af0f679f923c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Append a decompress operation to a sequence.  <a href="accel_8h.html#af28cbbf84a76a09ad52af0f679f923c4">More...</a><br /></td></tr>
 <tr class="separator:af28cbbf84a76a09ad52af0f679f923c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a009120c1e212f13b51b808e07d391bc8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="accel_8h.html#a009120c1e212f13b51b808e07d391bc8">spdk_accel_append_encrypt</a> (struct spdk_accel_sequence **seq, struct spdk_io_channel *ch, struct spdk_accel_crypto_key *key, struct iovec *dst_iovs, uint32_t dst_iovcnt, struct spdk_memory_domain *dst_domain, void *dst_domain_ctx, struct iovec *src_iovs, uint32_t src_iovcnt, struct spdk_memory_domain *src_domain, void *src_domain_ctx, uint64_t iv, uint32_t block_size, int flags, <a class="el" href="accel_8h.html#abaf556b5e1b63b5237faff3952a3bb46">spdk_accel_step_cb</a> cb_fn, void *cb_arg)</td></tr>
+<tr class="memdesc:a009120c1e212f13b51b808e07d391bc8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Append an encrypt operation to a sequence.  <a href="accel_8h.html#a009120c1e212f13b51b808e07d391bc8">More...</a><br /></td></tr>
+<tr class="separator:a009120c1e212f13b51b808e07d391bc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12a6e4ce53656017f3b01f8cf98fd931"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="accel_8h.html#a12a6e4ce53656017f3b01f8cf98fd931">spdk_accel_append_decrypt</a> (struct spdk_accel_sequence **seq, struct spdk_io_channel *ch, struct spdk_accel_crypto_key *key, struct iovec *dst_iovs, uint32_t dst_iovcnt, struct spdk_memory_domain *dst_domain, void *dst_domain_ctx, struct iovec *src_iovs, uint32_t src_iovcnt, struct spdk_memory_domain *src_domain, void *src_domain_ctx, uint64_t iv, uint32_t block_size, int flags, <a class="el" href="accel_8h.html#abaf556b5e1b63b5237faff3952a3bb46">spdk_accel_step_cb</a> cb_fn, void *cb_arg)</td></tr>
+<tr class="memdesc:a12a6e4ce53656017f3b01f8cf98fd931"><td class="mdescLeft">&#160;</td><td class="mdescRight">Append a decrypt operation to a sequence.  <a href="accel_8h.html#a12a6e4ce53656017f3b01f8cf98fd931">More...</a><br /></td></tr>
+<tr class="separator:a12a6e4ce53656017f3b01f8cf98fd931"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a03c51473e9f0b4882f279c89131a2b14"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="accel_8h.html#a03c51473e9f0b4882f279c89131a2b14">spdk_accel_sequence_finish</a> (struct spdk_accel_sequence *seq, <a class="el" href="accel_8h.html#a6ba836b7b128829ba185eadb2c60476a">spdk_accel_completion_cb</a> cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:a03c51473e9f0b4882f279c89131a2b14"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finish a sequence and execute all its operations.  <a href="accel_8h.html#a03c51473e9f0b4882f279c89131a2b14">More...</a><br /></td></tr>
 <tr class="separator:a03c51473e9f0b4882f279c89131a2b14"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -519,6 +525,280 @@ Functions</h2></td></tr>
     <tr><td class="paramname">src_iovcnt</td><td>Size of the <code>src_iovs</code> array. </td></tr>
     <tr><td class="paramname">src_domain</td><td>Memory domain to which the source buffers belong. </td></tr>
     <tr><td class="paramname">src_domain_ctx</td><td>Source buffer domain context. </td></tr>
+    <tr><td class="paramname">flags</td><td>Accel operation flags. </td></tr>
+    <tr><td class="paramname">cb_fn</td><td>Callback to be executed once this operation is completed. </td></tr>
+    <tr><td class="paramname">cb_arg</td><td>Argument to be passed to <code>cb_fn</code>.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 if operation was successfully added to the sequence, negative errno otherwise. </dd></dl>
+
+</div>
+</div>
+<a id="a12a6e4ce53656017f3b01f8cf98fd931"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a12a6e4ce53656017f3b01f8cf98fd931">&#9670;&nbsp;</a></span>spdk_accel_append_decrypt()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_accel_append_decrypt </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_accel_sequence **&#160;</td>
+          <td class="paramname"><em>seq</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct spdk_io_channel *&#160;</td>
+          <td class="paramname"><em>ch</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct spdk_accel_crypto_key *&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct iovec *&#160;</td>
+          <td class="paramname"><em>dst_iovs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>dst_iovcnt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct spdk_memory_domain *&#160;</td>
+          <td class="paramname"><em>dst_domain</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>dst_domain_ctx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct iovec *&#160;</td>
+          <td class="paramname"><em>src_iovs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>src_iovcnt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct spdk_memory_domain *&#160;</td>
+          <td class="paramname"><em>src_domain</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>src_domain_ctx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>iv</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>block_size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>flags</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="accel_8h.html#abaf556b5e1b63b5237faff3952a3bb46">spdk_accel_step_cb</a>&#160;</td>
+          <td class="paramname"><em>cb_fn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>cb_arg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Append a decrypt operation to a sequence. </p>
+<p><code>nbytes</code> must be multiple of <code>block_size</code>. <code>iv</code> is used to decrypt the first logical block of size <code>block_size</code>. If <code>src_iovs</code> describes more than one logical block then <code>iv</code> will be incremented for each next logical block. Data Encryption Key identifier should be created before calling this function using methods specific to the accel module being used.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">seq</td><td>Sequence object. If NULL, a new sequence object will be created. </td></tr>
+    <tr><td class="paramname">ch</td><td>I/O channel. </td></tr>
+    <tr><td class="paramname">key</td><td>Data Encryption Key identifier </td></tr>
+    <tr><td class="paramname">dst_iovs</td><td>Destination I/O vector array. </td></tr>
+    <tr><td class="paramname">dst_iovcnt</td><td>Size of the <code>dst_iovs</code> array. </td></tr>
+    <tr><td class="paramname">dst_domain</td><td>Memory domain to which the destination buffers belong. </td></tr>
+    <tr><td class="paramname">dst_domain_ctx</td><td>Destination buffer domain context. </td></tr>
+    <tr><td class="paramname">src_iovs</td><td>Source I/O vector array. </td></tr>
+    <tr><td class="paramname">src_iovcnt</td><td>Size of the <code>src_iovs</code> array. </td></tr>
+    <tr><td class="paramname">src_domain</td><td>Memory domain to which the source buffers belong. </td></tr>
+    <tr><td class="paramname">src_domain_ctx</td><td>Source buffer domain context. </td></tr>
+    <tr><td class="paramname">iv</td><td>Initialization vector (tweak) used for decryption. Should be the same as <code>iv</code> used for encryption of a data block. </td></tr>
+    <tr><td class="paramname">block_size</td><td>Logical block size, if src contains more than 1 logical block, subsequent logical blocks will be decrypted with incremented <code>iv</code>. </td></tr>
+    <tr><td class="paramname">flags</td><td>Accel operation flags. </td></tr>
+    <tr><td class="paramname">cb_fn</td><td>Callback to be executed once this operation is completed. </td></tr>
+    <tr><td class="paramname">cb_arg</td><td>Argument to be passed to <code>cb_fn</code>.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 if operation was successfully added to the sequence, negative errno otherwise. </dd></dl>
+
+</div>
+</div>
+<a id="a009120c1e212f13b51b808e07d391bc8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a009120c1e212f13b51b808e07d391bc8">&#9670;&nbsp;</a></span>spdk_accel_append_encrypt()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_accel_append_encrypt </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_accel_sequence **&#160;</td>
+          <td class="paramname"><em>seq</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct spdk_io_channel *&#160;</td>
+          <td class="paramname"><em>ch</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct spdk_accel_crypto_key *&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct iovec *&#160;</td>
+          <td class="paramname"><em>dst_iovs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>dst_iovcnt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct spdk_memory_domain *&#160;</td>
+          <td class="paramname"><em>dst_domain</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>dst_domain_ctx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct iovec *&#160;</td>
+          <td class="paramname"><em>src_iovs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>src_iovcnt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct spdk_memory_domain *&#160;</td>
+          <td class="paramname"><em>src_domain</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>src_domain_ctx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>iv</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>block_size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>flags</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="accel_8h.html#abaf556b5e1b63b5237faff3952a3bb46">spdk_accel_step_cb</a>&#160;</td>
+          <td class="paramname"><em>cb_fn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>cb_arg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Append an encrypt operation to a sequence. </p>
+<p><code>nbytes</code> must be multiple of <code>block_size</code>. <code>iv</code> is used to encrypt the first logical block of size <code>block_size</code>. If <code>src_iovs</code> describes more than one logical block then <code>iv</code> will be incremented for each next logical block. Data Encryption Key identifier should be created before calling this function using methods specific to the accel module being used.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">seq</td><td>Sequence object. If NULL, a new sequence object will be created. </td></tr>
+    <tr><td class="paramname">ch</td><td>I/O channel. </td></tr>
+    <tr><td class="paramname">key</td><td>Data Encryption Key identifier </td></tr>
+    <tr><td class="paramname">dst_iovs</td><td>Destination I/O vector array. </td></tr>
+    <tr><td class="paramname">dst_iovcnt</td><td>Size of the <code>dst_iovs</code> array. </td></tr>
+    <tr><td class="paramname">dst_domain</td><td>Memory domain to which the destination buffers belong. </td></tr>
+    <tr><td class="paramname">dst_domain_ctx</td><td>Destination buffer domain context. </td></tr>
+    <tr><td class="paramname">src_iovs</td><td>Source I/O vector array. </td></tr>
+    <tr><td class="paramname">src_iovcnt</td><td>Size of the <code>src_iovs</code> array. </td></tr>
+    <tr><td class="paramname">src_domain</td><td>Memory domain to which the source buffers belong. </td></tr>
+    <tr><td class="paramname">src_domain_ctx</td><td>Source buffer domain context. </td></tr>
+    <tr><td class="paramname">iv</td><td>Initialization vector (tweak) used for encryption </td></tr>
+    <tr><td class="paramname">block_size</td><td>Logical block size, if src contains more than 1 logical block, subsequent logical blocks will be encrypted with incremented <code>iv</code>. </td></tr>
     <tr><td class="paramname">flags</td><td>Accel operation flags. </td></tr>
     <tr><td class="paramname">cb_fn</td><td>Callback to be executed once this operation is completed. </td></tr>
     <tr><td class="paramname">cb_arg</td><td>Argument to be passed to <code>cb_fn</code>.</td></tr>

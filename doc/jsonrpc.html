@@ -2856,7 +2856,9 @@ bdev_nvme_set_options</h2>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">transport_tos   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">IPv4 Type of Service value. Only applicable for RDMA transport. Default: 0 (no TOS is applied).    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">nvme_error_stat   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Enable collecting NVMe error counts.   </td></tr>
+<td class="markdownTableBodyNone">nvme_error_stat   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Enable collecting NVMe error counts.    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">rdma_srq_size   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">Set the size of a shared rdma receive queue. Default: 0 (disabled).   </td></tr>
 </table>
 <h3>Example</h3>
 <p>Example request:</p>

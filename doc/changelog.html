@@ -119,6 +119,9 @@ v23.01: (Upcoming Release)</h1>
 <p>Added a command line switch to disable CPU locks on SPDK startup.</p>
 <p>Added RPCs framework_enable_cpumask_locks and framework_disable_cpumask_locks to enable and disable CPU core locks in runtime.</p>
 <p>Added &ndash;rpcs-allowed command line option. Users can specify a comma-separated list of RPC names with this option to restrict allowed RPCs to only that list.</p>
+<h2>nvme</h2>
+<p>NVMe transport options were newly introduced. The NVMe transport options are defined via the <code><a class="el" href="structspdk__nvme__transport__opts.html" title="NVMe transport options.">spdk_nvme_transport_opts</a></code> structure and configured via <code>spdk_nvme_transport_get_opts</code> and <code>spdk_nvme_transport_get_opts</code> functions.</p>
+<p>Shared receive queue was supported by the RDMA transport. It can be configured by a new NVMe transport option <code>rdma_srq_size</code>.</p>
 <h2>rpc</h2>
 <p>Added spdk_rpc_set_allowlist to restrict allowed RPCs to the specified list.</p>
 <p>Changed <code>bdev_raid_get_bdevs</code> RPC output format to include raid_bdev details.</p>
