@@ -1,5 +1,13 @@
 var NAVTREEINDEX26 =
 {
+"structspdk__nvmf__poll__group.html#ad8dd6675b21c245a6790338b7d4b796e":[15,0,289,9],
+"structspdk__nvmf__poll__group.html#aeef7e086f1560a61c196d74660665c10":[15,0,289,1],
+"structspdk__nvmf__poll__group__stat.html":[15,0,290],
+"structspdk__nvmf__poll__group__stat.html#a3c5e22c26f3daabb2bc56488bb5d3664":[15,0,290,0],
+"structspdk__nvmf__poll__group__stat.html#a4218e92f08ce1316fc6200b2620c52f3":[15,0,290,5],
+"structspdk__nvmf__poll__group__stat.html#a648d3ea2ddb32d4e4cc762571704d256":[15,0,290,3],
+"structspdk__nvmf__poll__group__stat.html#a7d8923be3e0a1c0e15527a2f7caa2766":[15,0,290,1],
+"structspdk__nvmf__poll__group__stat.html#a891519e83575a36f0d410b44ee834c68":[15,0,290,2],
 "structspdk__nvmf__poll__group__stat.html#af35cb7b40dc36493333df1698ca17eda":[15,0,290,4],
 "structspdk__nvmf__qpair.html":[15,0,291],
 "structspdk__nvmf__qpair.html#a088e32a2258aaba2781f42bdb63d74f3":[15,0,291,0],
@@ -241,13 +249,5 @@ var NAVTREEINDEX26 =
 "structspdk__opal__d0__feat__hdr.html#a6397c530e0e2f4a35c264dbd5ffc26e7":[15,0,314,3],
 "structspdk__opal__d0__feat__hdr.html#af9082616911d7b60bdee0b70757a830f":[15,0,314,0],
 "structspdk__opal__d0__features__info.html":[15,0,315],
-"structspdk__opal__d0__features__info.html#a0965faee0b5d3f18b9a0b53064a7f1b7":[15,0,315,4],
-"structspdk__opal__d0__features__info.html#a84a55e9ffae588e6fd0d5de808dbc273":[15,0,315,0],
-"structspdk__opal__d0__features__info.html#a9c92a936c153aa4552d1311c3610a40a":[15,0,315,1],
-"structspdk__opal__d0__features__info.html#aa0550ed501b732c3428311b315a8244d":[15,0,315,2],
-"structspdk__opal__d0__features__info.html#aa53c3f9d18f31aab1b6dafdc79ad5324":[15,0,315,3],
-"structspdk__opal__d0__features__info.html#ac3bdc0eaa1dea42656aca886841e8454":[15,0,315,6],
-"structspdk__opal__d0__features__info.html#af2183ba2437bca102cdeca06d9f2b293":[15,0,315,5],
-"structspdk__opal__d0__geo__feat.html":[15,0,316],
-"structspdk__opal__d0__geo__feat.html#a3f416f4e4799a85328d5823c868521f7":[15,0,316,1]
+"structspdk__opal__d0__features__info.html#a0965faee0b5d3f18b9a0b53064a7f1b7":[15,0,315,4]
 };

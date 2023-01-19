@@ -41,10 +41,16 @@ var bdev__module_8h =
       [ "SPDK_BDEV_IO_STATUS_SUCCESS", "bdev__module_8h.html#aa35cc1485b6ba4351c2fb4fbd7125c93a233937591f5356b7a8bf7836f434f129", null ],
       [ "SPDK_MIN_BDEV_IO_STATUS", "bdev__module_8h.html#aa35cc1485b6ba4351c2fb4fbd7125c93a488e2d6a5be7ee1111bc37ffddf8bf22", null ]
     ] ],
+    [ "spdk_bdev_reset_stat_mode", "bdev__module_8h.html#af485be7d8a00412bbfbfc1d2d15d3812", [
+      [ "BDEV_RESET_STAT_ALL", "bdev__module_8h.html#af485be7d8a00412bbfbfc1d2d15d3812a58a9acc64bd280252ae4a7b071e536e9", null ],
+      [ "BDEV_RESET_STAT_MAXMIN", "bdev__module_8h.html#af485be7d8a00412bbfbfc1d2d15d3812adae1afd564247838e6b92fa533fd2cb3", null ]
+    ] ],
+    [ "spdk_bdev_add_io_stat", "bdev__module_8h.html#ac58f4c0adedcb11e532740b5ed339dac", null ],
     [ "spdk_bdev_alias_add", "bdev__module_8h.html#af1079eae68fac856b56863f26bc5310f", null ],
     [ "spdk_bdev_alias_del", "bdev__module_8h.html#a96486c7be7952a1665ce6ae977f092ef", null ],
     [ "spdk_bdev_alias_del_all", "bdev__module_8h.html#ae62dae3c4a41154aca74f37864ae82f9", null ],
     [ "spdk_bdev_destruct_done", "bdev__module_8h.html#a8d51d8e113f0dffb1bbe535ea01c495f", null ],
+    [ "spdk_bdev_dump_io_stat_json", "bdev__module_8h.html#a7a5cd65df968e2f5be1b2311af3c69ea", null ],
     [ "spdk_bdev_for_each_bdev_io", "bdev__module_8h.html#a5326cf21d1612a39bb3ba660790a8ec6", null ],
     [ "spdk_bdev_get_aliases", "bdev__module_8h.html#a1d08fdcf7c3e636d41028fa7ea55aeb7", null ],
     [ "spdk_bdev_get_current_qd", "bdev__module_8h.html#a35d1bb3f7b96e2e0d90e42f11f8f402d", null ],
@@ -89,6 +95,7 @@ var bdev__module_8h =
     [ "spdk_bdev_part_submit_request_ext", "bdev__module_8h.html#a99132dbf758377bdfcc47140d35c065c", null ],
     [ "spdk_bdev_push_media_events", "bdev__module_8h.html#ae45503dc9070d0d9939eed65447deef3", null ],
     [ "spdk_bdev_register", "bdev__module_8h.html#a5fef71f7761986298bb4aaf345736bb3", null ],
+    [ "spdk_bdev_reset_io_stat", "bdev__module_8h.html#af7e0a5a50a01fee8785af7d00b4780aa", null ],
     [ "spdk_bdev_unregister", "bdev__module_8h.html#a3d1fd8c9ecf144593313ea08cdeb8ca2", null ],
     [ "spdk_bdev_unregister_by_name", "bdev__module_8h.html#a1135837fca4f720aa12e09daf04a90eb", null ],
     [ "spdk_scsi_nvme_translate", "bdev__module_8h.html#ace2ce9b49ed9c51ff3c85075321164cc", null ],

@@ -1,5 +1,13 @@
 var NAVTREEINDEX27 =
 {
+"structspdk__opal__d0__features__info.html#a84a55e9ffae588e6fd0d5de808dbc273":[15,0,315,0],
+"structspdk__opal__d0__features__info.html#a9c92a936c153aa4552d1311c3610a40a":[15,0,315,1],
+"structspdk__opal__d0__features__info.html#aa0550ed501b732c3428311b315a8244d":[15,0,315,2],
+"structspdk__opal__d0__features__info.html#aa53c3f9d18f31aab1b6dafdc79ad5324":[15,0,315,3],
+"structspdk__opal__d0__features__info.html#ac3bdc0eaa1dea42656aca886841e8454":[15,0,315,6],
+"structspdk__opal__d0__features__info.html#af2183ba2437bca102cdeca06d9f2b293":[15,0,315,5],
+"structspdk__opal__d0__geo__feat.html":[15,0,316],
+"structspdk__opal__d0__geo__feat.html#a3f416f4e4799a85328d5823c868521f7":[15,0,316,1],
 "structspdk__opal__d0__geo__feat.html#a4c1928ebc2517c5e221408da2a488081":[15,0,316,6],
 "structspdk__opal__d0__geo__feat.html#a629d86f59a92c1185606fd7cb67e10cb":[15,0,316,0],
 "structspdk__opal__d0__geo__feat.html#abba515f8b72f3f961fa8c7d631d08b9b":[15,0,316,3],
@@ -241,13 +249,5 @@ var NAVTREEINDEX27 =
 "structspdk__scsi__pr__in__full__status__desc.html#aeb5ae5395abfc2f89e2e43021fbbccfa":[15,0,344,9],
 "structspdk__scsi__pr__in__read__header.html":[15,0,345],
 "structspdk__scsi__pr__in__read__header.html#a6af3ac3f08b1af386eb124efc1e8c1ec":[15,0,345,0],
-"structspdk__scsi__pr__in__read__header.html#a91d8b07366a32aec322ee7f554a18ad2":[15,0,345,1],
-"structspdk__scsi__pr__in__read__keys__data.html":[15,0,346],
-"structspdk__scsi__pr__in__read__keys__data.html#a1c9633583beaee62f4e13c70b35d6e1b":[15,0,346,1],
-"structspdk__scsi__pr__in__read__keys__data.html#a6e25a31a72bb39b34d31984e157bed6e":[15,0,346,0],
-"structspdk__scsi__pr__in__read__reservations__data.html":[15,0,347],
-"structspdk__scsi__pr__in__read__reservations__data.html#a161cd1aaa9468de3b8f88745455c9f4c":[15,0,347,4],
-"structspdk__scsi__pr__in__read__reservations__data.html#a1d2f6e4d0bbc3b08afe0e5cc5a01a0d8":[15,0,347,3],
-"structspdk__scsi__pr__in__read__reservations__data.html#a699fa37a6c279d775f79ce2b9d6d5183":[15,0,347,0],
-"structspdk__scsi__pr__in__read__reservations__data.html#a88555dc64820e0f7296eab1d6f54903c":[15,0,347,1]
+"structspdk__scsi__pr__in__read__header.html#a91d8b07366a32aec322ee7f554a18ad2":[15,0,345,1]
 };

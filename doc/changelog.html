@@ -114,6 +114,8 @@ v23.01: (Upcoming Release)</h1>
 <p>A new RPC <code>bdev_reset_iostat</code> was added to reset I/O statistics of bdevs. Note that if one consumer reset I/O statistics, it affects all other consumers.</p>
 <p>Add function pointers, <code>dump_device_stat_json</code> and <code>reset_device_stat</code> to the bdev module function table to display and reset I/O statistics specific for the module specific bdev context.</p>
 <p>A new option <code>nvme_error_stat</code> was added to the <code>bdev_nvme_set_options</code> RPC to enable collecting NVMe error counts.</p>
+<p>New APIs <code>spdk_bdev_reset_io_stat</code>, <code>spdk_bdev_add_io_stat</code> and <code>spdk_bdev_dump_io_stat_json</code> were added to process I/O statistics outside the generic bdev layer, especially in bdev modules.</p>
+<p>Added I/O statistics per I/O path to the NVMe bdev module for NVMe bdev multipath. It can be enabled by a new option io_path_stat of RPC bdev_nvme_set_options.</p>
 <h2>event</h2>
 <p>Added core lock file mechanism to prevent the same CPU cores from being used by multiple SPDK application instances.</p>
 <p>Added a command line switch to disable CPU locks on SPDK startup.</p>
@@ -125,6 +127,9 @@ v23.01: (Upcoming Release)</h1>
 <h2>rpc</h2>
 <p>Added spdk_rpc_set_allowlist to restrict allowed RPCs to the specified list.</p>
 <p>Changed <code>bdev_raid_get_bdevs</code> RPC output format to include raid_bdev details.</p>
+<p>Added <code>selector</code> parameter to bdev_nvme_set_multipath_policy RPC to set path selector for multipath. Option <code>round_robin</code> and <code>queue_depth</code> are available.</p>
+<p>Added <code>rr_min_io</code> option to RPC bdev_nvme_set_multipath_policy. It switches I/O to another path after rr_min_io I/Os are routed to current io path for the round-robin path selector.</p>
+<p>Added option <code>--io-path-stat</code> for RPC bdev_nvme_set_option to enable collecting io path stat.</p>
 <h2>bdevperf</h2>
 <p>Promoted the application to example to match similar programs: fio_plugin and perf. It can now be found inside <code>examples/bdev/bdevperf</code>.</p>
 <h2>trace</h2>
@@ -147,6 +152,7 @@ v23.01: (Upcoming Release)</h1>
 <p>Added API spdk_nvme_qpair_get_num_outstanding_reqs to get the number of outstanding reqs of a specified qpair.</p>
 <h2>bdev_nvme</h2>
 <p>Updated <code>bdev_nvme_set_options</code> RPC (and rpc.py) to support the new <code>transport_tos</code> parameter.</p>
+<p>For the active-active policy of the multipath mode, in addition to the default round-robin path selector, the minimum queue depth path selector was added. The minimum queue depth path selector selects an I/O path according to the number of outstanding requests of each nvme qpair.</p>
 <h1>v22.09</h1>
 <h2>accel</h2>
 <p>Many names were changed in the accel framework to make them consistent both with themselves and the rest of SPDK. The primary public header file is now named <code><a class="el" href="accel_8h.html" title="Acceleration Framework.">include/spdk/accel.h</a></code>.</p>

@@ -43,7 +43,7 @@ var accel_8h =
     [ "spdk_accel_submit_copy_crc32cv", "accel_8h.html#ad07e15079ef496a54d88a90ef65ab3c6", null ],
     [ "spdk_accel_submit_crc32c", "accel_8h.html#ac4d750dd429c533295e9e73a864eae68", null ],
     [ "spdk_accel_submit_crc32cv", "accel_8h.html#a6273dec7ea700cd19ab055ac08a5a97c", null ],
-    [ "spdk_accel_submit_decompress", "accel_8h.html#aaa6e70c2f88354096414a1568ed35c40", null ],
+    [ "spdk_accel_submit_decompress", "accel_8h.html#ad6de8b2f54bfd1a60203cc845eb01f93", null ],
     [ "spdk_accel_submit_decrypt", "accel_8h.html#adad68f6857a598ec184c58ace776b05e", null ],
     [ "spdk_accel_submit_dualcast", "accel_8h.html#aad9824886c1379235c90674e3a932483", null ],
     [ "spdk_accel_submit_encrypt", "accel_8h.html#afa481210cd4541e79ae4d304f119709e", null ],

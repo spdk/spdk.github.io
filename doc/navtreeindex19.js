@@ -1,5 +1,13 @@
 var NAVTREEINDEX19 =
 {
+"structspdk__bs__dev.html#a2990026fbfdb710cce327beeae33aef9":[15,0,70,15],
+"structspdk__bs__dev.html#a3b626710afb0f6b51f03b6ce9310bdf8":[15,0,70,8],
+"structspdk__bs__dev.html#a4e782b655106c1d25b543960b7ba2c0f":[15,0,70,9],
+"structspdk__bs__dev.html#a528b038c2389cf71b6739ac37ed6e7f6":[15,0,70,16],
+"structspdk__bs__dev.html#a69795838dfaaa45c3d58a5b91f179565":[15,0,70,11],
+"structspdk__bs__dev.html#a6beeab94f487334af1a8c3a0ec330b52":[15,0,70,3],
+"structspdk__bs__dev.html#a6c67b881f2f954ef2eb879796a4dee5a":[15,0,70,0],
+"structspdk__bs__dev.html#a737528549b8f240d5b82df1544ec5dcb":[15,0,70,13],
 "structspdk__bs__dev.html#a75564a4d0f1815b99c1fe1e1965b3770":[15,0,70,10],
 "structspdk__bs__dev.html#a7ae3bb18bf006e0f40f1ad36166a8369":[15,0,70,4],
 "structspdk__bs__dev.html#a880362f4bf2aedc8a567243206770307":[15,0,70,12],
@@ -241,13 +249,5 @@ var NAVTREEINDEX19 =
 "structspdk__ioat__pq__hw__desc.html#ae1b86c16069c07b15d753fda4cbcb5b3":[15,0,93,8],
 "structspdk__ioat__pq__hw__desc.html#ae70773c81adf241eb56d9b8028c4ddbe":[15,0,93,7],
 "structspdk__ioat__pq__hw__desc.html#aed93e4f7a8e400643a3703cf97bf3920":[15,0,93,16],
-"structspdk__ioat__pq__hw__desc.html#affb45e4b90d28e2f07f67d037c0de5ed":[15,0,93,13],
-"structspdk__ioat__pq__update__hw__desc.html":[15,0,94],
-"structspdk__ioat__pq__update__hw__desc.html#a044eabedafd944cad04239096a632e3b":[15,0,94,21],
-"structspdk__ioat__pq__update__hw__desc.html#a07bce1a0ed96e6e3e194a6caf02e23ff":[15,0,94,16],
-"structspdk__ioat__pq__update__hw__desc.html#a082ac4b566911fa160b529c02142c762":[15,0,94,4],
-"structspdk__ioat__pq__update__hw__desc.html#a0883d961e608f23a39fc319c2088d6f4":[15,0,94,6],
-"structspdk__ioat__pq__update__hw__desc.html#a22bd4a3478cdf4211bfa01b2371b2155":[15,0,94,9],
-"structspdk__ioat__pq__update__hw__desc.html#a2b86f788bdfdd47ed993ace97ed6e588":[15,0,94,8],
-"structspdk__ioat__pq__update__hw__desc.html#a65a70fe0fdbc70e300446d25659e6710":[15,0,94,7]
+"structspdk__ioat__pq__hw__desc.html#affb45e4b90d28e2f07f67d037c0de5ed":[15,0,93,13]
 };

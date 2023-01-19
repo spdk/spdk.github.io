@@ -189,9 +189,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a7c7ed1bfb32c852ce8a8ebf67f0ac0ed"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="accel_8h.html#a7c7ed1bfb32c852ce8a8ebf67f0ac0ed">spdk_accel_submit_compress</a> (struct spdk_io_channel *ch, void *dst, uint64_t nbytes, struct iovec *src_iovs, size_t src_iovcnt, uint32_t *output_size, int flags, <a class="el" href="accel_8h.html#a6ba836b7b128829ba185eadb2c60476a">spdk_accel_completion_cb</a> cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:a7c7ed1bfb32c852ce8a8ebf67f0ac0ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Build and submit a memory compress request.  <a href="accel_8h.html#a7c7ed1bfb32c852ce8a8ebf67f0ac0ed">More...</a><br /></td></tr>
 <tr class="separator:a7c7ed1bfb32c852ce8a8ebf67f0ac0ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaa6e70c2f88354096414a1568ed35c40"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="accel_8h.html#aaa6e70c2f88354096414a1568ed35c40">spdk_accel_submit_decompress</a> (struct spdk_io_channel *ch, struct iovec *dst_iovs, size_t dst_iovcnt, struct iovec *src_iovs, size_t src_iovcnt, int flags, <a class="el" href="accel_8h.html#a6ba836b7b128829ba185eadb2c60476a">spdk_accel_completion_cb</a> cb_fn, void *cb_arg)</td></tr>
-<tr class="memdesc:aaa6e70c2f88354096414a1568ed35c40"><td class="mdescLeft">&#160;</td><td class="mdescRight">Build and submit a memory decompress request.  <a href="accel_8h.html#aaa6e70c2f88354096414a1568ed35c40">More...</a><br /></td></tr>
-<tr class="separator:aaa6e70c2f88354096414a1568ed35c40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6de8b2f54bfd1a60203cc845eb01f93"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="accel_8h.html#ad6de8b2f54bfd1a60203cc845eb01f93">spdk_accel_submit_decompress</a> (struct spdk_io_channel *ch, struct iovec *dst_iovs, size_t dst_iovcnt, struct iovec *src_iovs, size_t src_iovcnt, uint32_t *output_size, int flags, <a class="el" href="accel_8h.html#a6ba836b7b128829ba185eadb2c60476a">spdk_accel_completion_cb</a> cb_fn, void *cb_arg)</td></tr>
+<tr class="memdesc:ad6de8b2f54bfd1a60203cc845eb01f93"><td class="mdescLeft">&#160;</td><td class="mdescRight">Build and submit a memory decompress request.  <a href="accel_8h.html#ad6de8b2f54bfd1a60203cc845eb01f93">More...</a><br /></td></tr>
+<tr class="separator:ad6de8b2f54bfd1a60203cc845eb01f93"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a51ed9c807379914cef1c5eaf05a3b9f7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="accel_8h.html#a51ed9c807379914cef1c5eaf05a3b9f7">spdk_accel_append_copy</a> (struct spdk_accel_sequence **seq, struct spdk_io_channel *ch, struct iovec *dst_iovs, uint32_t dst_iovcnt, struct spdk_memory_domain *dst_domain, void *dst_domain_ctx, struct iovec *src_iovs, uint32_t src_iovcnt, struct spdk_memory_domain *src_domain, void *src_domain_ctx, int flags, <a class="el" href="accel_8h.html#abaf556b5e1b63b5237faff3952a3bb46">spdk_accel_step_cb</a> cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:a51ed9c807379914cef1c5eaf05a3b9f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Append a copy operation to a sequence.  <a href="accel_8h.html#a51ed9c807379914cef1c5eaf05a3b9f7">More...</a><br /></td></tr>
 <tr class="separator:a51ed9c807379914cef1c5eaf05a3b9f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1495,7 +1495,7 @@ Functions</h2></td></tr>
     <tr><td class="paramname">nbytes</td><td>Length in bytes. </td></tr>
     <tr><td class="paramname">src_iovs</td><td>The io vector array which stores the src data and len. </td></tr>
     <tr><td class="paramname">src_iovcnt</td><td>The size of the src io vectors. </td></tr>
-    <tr><td class="paramname">output_size</td><td>The size of the compressed data </td></tr>
+    <tr><td class="paramname">output_size</td><td>The size of the compressed data (may be NULL if not desired) </td></tr>
     <tr><td class="paramname">flags</td><td>Flags, optional flags that can vary per operation. </td></tr>
     <tr><td class="paramname">cb_fn</td><td>Callback function which will be called when the request is complete. </td></tr>
     <tr><td class="paramname">cb_arg</td><td>Opaque value which will be passed back as the arg parameter in the completion callback.</td></tr>
@@ -1903,8 +1903,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="aaa6e70c2f88354096414a1568ed35c40"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaa6e70c2f88354096414a1568ed35c40">&#9670;&nbsp;</a></span>spdk_accel_submit_decompress()</h2>
+<a id="ad6de8b2f54bfd1a60203cc845eb01f93"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad6de8b2f54bfd1a60203cc845eb01f93">&#9670;&nbsp;</a></span>spdk_accel_submit_decompress()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1942,6 +1942,12 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">uint32_t *&#160;</td>
+          <td class="paramname"><em>output_size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>flags</em>, </td>
         </tr>
@@ -1974,6 +1980,7 @@ Functions</h2></td></tr>
     <tr><td class="paramname">dst_iovcnt</td><td>The size of the dst io vectors. </td></tr>
     <tr><td class="paramname">src_iovs</td><td>The io vector array which stores the src data and len. </td></tr>
     <tr><td class="paramname">src_iovcnt</td><td>The size of the src io vectors. </td></tr>
+    <tr><td class="paramname">output_size</td><td>The size of the compressed data (may be NULL if not desired) </td></tr>
     <tr><td class="paramname">flags</td><td>Flags, optional flags that can vary per operation. </td></tr>
     <tr><td class="paramname">cb_fn</td><td>Callback function which will be called when the request is complete. </td></tr>
     <tr><td class="paramname">cb_arg</td><td>Opaque value which will be passed back as the arg parameter in the completion callback.</td></tr>

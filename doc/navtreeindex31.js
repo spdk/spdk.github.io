@@ -1,5 +1,13 @@
 var NAVTREEINDEX31 =
 {
+"unionspdk__nvme__cmbsts__register.html#a54604b4b4110e749c3a843f3620ed74e":[15,0,137,3],
+"unionspdk__nvme__cmbsts__register.html#a5998dda138a19e69602822179d4547be":[15,0,137,1],
+"unionspdk__nvme__cmbsts__register.html#a7efbfddb99e395fdf73302c0a246a95f":[15,0,137,0],
+"unionspdk__nvme__cmbsz__register.html":[15,0,138],
+"unionspdk__nvme__cmbsz__register.html#a03af53ff83c581ce0f02f72195f1c6f2":[15,0,138,7],
+"unionspdk__nvme__cmbsz__register.html#a3481600cf80fa69860ba5dbb445afc5f":[15,0,138,6],
+"unionspdk__nvme__cmbsz__register.html#a5259febaf27ced21d1358b97bd1cb831":[15,0,138,8],
+"unionspdk__nvme__cmbsz__register.html#a605db26c2b5a41b7b0cc40750e43527d":[15,0,138,2],
 "unionspdk__nvme__cmbsz__register.html#a7206eb9f940d6f011c71f2b08c604a3f":[15,0,138,0],
 "unionspdk__nvme__cmbsz__register.html#a79fbfeb57825c60398ad99aff7dea6c4":[15,0,138,3],
 "unionspdk__nvme__cmbsz__register.html#aa017da4c8e3418285501ca07822bdbf2":[15,0,138,4],
@@ -241,13 +249,5 @@ var NAVTREEINDEX31 =
 "unionspdk__nvme__feat__write__atomicity.html#ada4a9129ffb571abc00b73298e8bf957":[15,0,172,3],
 "unionspdk__nvme__intel__feat__latency__tracking.html":[15,0,179],
 "unionspdk__nvme__intel__feat__latency__tracking.html#a3f7d5e23bb986ab742716254101bfe30":[15,0,179,1],
-"unionspdk__nvme__intel__feat__latency__tracking.html#a853aff120e2d0063588ffaac6473b7c9":[15,0,179,2],
-"unionspdk__nvme__intel__feat__latency__tracking.html#af71cddc9f380ab6e2ba5e50d190c92f1":[15,0,179,0],
-"unionspdk__nvme__intel__feat__led__pattern.html":[15,0,180],
-"unionspdk__nvme__intel__feat__led__pattern.html#a370d233a0e62c98f73ce402e3baaeec3":[15,0,180,3],
-"unionspdk__nvme__intel__feat__led__pattern.html#a623263a713c8d34a35b6721d64ea04f4":[15,0,180,2],
-"unionspdk__nvme__intel__feat__led__pattern.html#aa672b651e209e0a30329e42ac87354dc":[15,0,180,1],
-"unionspdk__nvme__intel__feat__led__pattern.html#ae641e66b1428b97bee10d5322bf8061b":[15,0,180,0],
-"unionspdk__nvme__intel__feat__power__governor.html":[15,0,181],
-"unionspdk__nvme__intel__feat__power__governor.html#a21a30353391b6569ff38a3aa0d3ae36d":[15,0,181,3]
+"unionspdk__nvme__intel__feat__latency__tracking.html#a853aff120e2d0063588ffaac6473b7c9":[15,0,179,2]
 };

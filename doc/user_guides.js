@@ -175,6 +175,7 @@ var user_guides =
         [ "accel_assign_opc", "jsonrpc.html#rpc_accel_assign_opc", null ],
         [ "accel_crypto_key_create", "jsonrpc.html#rpc_accel_crypto_key_create", null ],
         [ "accel_crypto_keys_get", "jsonrpc.html#rpc_accel_crypto_keys_get", null ],
+        [ "compressdev_scan_accel_module", "jsonrpc.html#rpc_compressdev_scan_accel_module", null ],
         [ "dsa_scan_accel_module", "jsonrpc.html#rpc_dsa_scan_accel_module", null ],
         [ "iaa_scan_accel_module", "jsonrpc.html#rpc_iaa_scan_accel_module", null ],
         [ "ioat_scan_accel_module", "jsonrpc.html#rpc_ioat_scan_accel_module", null ],
@@ -342,6 +343,7 @@ var user_guides =
         [ "vhost_scsi_controller_add_target", "jsonrpc.html#rpc_vhost_scsi_controller_add_target", null ],
         [ "vhost_scsi_controller_remove_target", "jsonrpc.html#rpc_vhost_scsi_controller_remove_target", null ],
         [ "virtio_blk_create_transport", "jsonrpc.html#rpc_virtio_blk_create_transport", null ],
+        [ "virtio_blk_get_transports", "jsonrpc.html#rpc_virtio_blk_get_transports", null ],
         [ "vhost_create_blk_controller", "jsonrpc.html#rpc_vhost_create_blk_controller", null ],
         [ "vhost_get_controllers", "jsonrpc.html#rpc_vhost_get_controllers", [
           [ "Response", "jsonrpc.html#rpc_vhost_get_controllers_response", null ]

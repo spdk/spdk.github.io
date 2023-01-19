@@ -1469,6 +1469,32 @@ accel_crypto_keys_get</h2>
 <div class="line">    }</div>
 <div class="line">  ]</div>
 <div class="line">}</div>
+</div><!-- fragment --><h2><a class="anchor" id="rpc_compressdev_scan_accel_module"></a>
+compressdev_scan_accel_module</h2>
+<p>Set config and enable compressdev accel module offload. Select the DPDK polled mode driver (pmd) for the accel compress module, 0 = auto-select, 1= QAT only, 2 = mlx5_pci only.</p>
+<h3>Parameters</h3>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">pmd   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">int   </td><td class="markdownTableBodyNone">pmd selection   </td></tr>
+</table>
+<h3>Example</h3>
+<p>Example request:</p>
+<div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;params&quot;: {</div>
+<div class="line">    &quot;pmd&quot;: 1</div>
+<div class="line">  },</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
+<div class="line">  &quot;method&quot;: &quot;compressdev_scan_accel_module&quot;,</div>
+<div class="line">  &quot;id&quot;: 1</div>
+<div class="line">}</div>
+</div><!-- fragment --><p>Example response:</p>
+<div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
+<div class="line">  &quot;id&quot;: 1,</div>
+<div class="line">  &quot;result&quot;: true</div>
+<div class="line">}</div>
 </div><!-- fragment --><h2><a class="anchor" id="rpc_dsa_scan_accel_module"></a>
 dsa_scan_accel_module</h2>
 <p>Set config and enable dsa accel module offload. This feature is considered as experimental.</p>
@@ -2858,7 +2884,9 @@ bdev_nvme_set_options</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">nvme_error_stat   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Enable collecting NVMe error counts.    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">rdma_srq_size   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">Set the size of a shared rdma receive queue. Default: 0 (disabled).   </td></tr>
+<td class="markdownTableBodyNone">rdma_srq_size   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">Set the size of a shared rdma receive queue. Default: 0 (disabled).    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">io_path_stat   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Enable collecting I/O stat of each nvme bdev io path. Default: <code>false</code>.   </td></tr>
 </table>
 <h3>Example</h3>
 <p>Example request:</p>
@@ -3281,7 +3309,7 @@ bdev_nvme_set_preferred_path</h2>
 <div class="line">}</div>
 </div><!-- fragment --><h2><a class="anchor" id="rpc_bdev_nvme_set_multipath_policy"></a>
 bdev_nvme_set_multipath_policy</h2>
-<p>Set multipath policy of the NVMe bdev in multipath mode.</p>
+<p>Set multipath policy of the NVMe bdev in multipath mode or set multipath selector for active-active multipath policy.</p>
 <h3>Parameters</h3>
 <table class="markdownTable">
 <tr class="markdownTableHead">
@@ -3289,7 +3317,11 @@ bdev_nvme_set_multipath_policy</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Name of the NVMe bdev    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">policy   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Multipath policy: active_active or active_passive   </td></tr>
+<td class="markdownTableBodyNone">policy   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Multipath policy: active_active or active_passive    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">selector   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Multipath selector: round_robin or queue_depth, used in active-active mode. Default is round_robin    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">rr_min_io   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">Number of I/Os routed to current io path before switching to another for round-robin selector. The min value is 1.   </td></tr>
 </table>
 <h3>Example</h3>
 <p>Example request:</p>
@@ -7171,6 +7203,33 @@ virtio_blk_create_transport</h2>
 <div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
 <div class="line">  &quot;id&quot;: 1,</div>
 <div class="line">  &quot;result&quot;: true</div>
+<div class="line">}</div>
+</div><!-- fragment --><h2><a class="anchor" id="rpc_virtio_blk_get_transports"></a>
+virtio_blk_get_transports</h2>
+<h3>Parameters</h3>
+<p>The user may specify no parameters in order to list all transports, or a transport name may be specified.</p>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Transport name.   </td></tr>
+</table>
+<h3>Example</h3>
+<p>Example request:</p>
+<div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
+<div class="line">  &quot;method&quot;: &quot;virtio_blk_get_transports&quot;,</div>
+<div class="line">  &quot;id&quot;: 1</div>
+<div class="line">}</div>
+</div><!-- fragment --><p>Example response:</p>
+<div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
+<div class="line">  &quot;id&quot;: 1,</div>
+<div class="line">  &quot;result&quot;: [</div>
+<div class="line">    {</div>
+<div class="line">      &quot;name&quot;: &quot;vhost_user_blk&quot;</div>
+<div class="line">    }</div>
+<div class="line">  ]</div>
 <div class="line">}</div>
 </div><!-- fragment --><h2><a class="anchor" id="rpc_vhost_create_blk_controller"></a>
 vhost_create_blk_controller</h2>

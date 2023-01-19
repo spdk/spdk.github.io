@@ -1,5 +1,13 @@
 var NAVTREEINDEX20 =
 {
+"structspdk__ioat__pq__update__hw__desc.html":[15,0,94],
+"structspdk__ioat__pq__update__hw__desc.html#a044eabedafd944cad04239096a632e3b":[15,0,94,21],
+"structspdk__ioat__pq__update__hw__desc.html#a07bce1a0ed96e6e3e194a6caf02e23ff":[15,0,94,16],
+"structspdk__ioat__pq__update__hw__desc.html#a082ac4b566911fa160b529c02142c762":[15,0,94,4],
+"structspdk__ioat__pq__update__hw__desc.html#a0883d961e608f23a39fc319c2088d6f4":[15,0,94,6],
+"structspdk__ioat__pq__update__hw__desc.html#a22bd4a3478cdf4211bfa01b2371b2155":[15,0,94,9],
+"structspdk__ioat__pq__update__hw__desc.html#a2b86f788bdfdd47ed993ace97ed6e588":[15,0,94,8],
+"structspdk__ioat__pq__update__hw__desc.html#a65a70fe0fdbc70e300446d25659e6710":[15,0,94,7],
 "structspdk__ioat__pq__update__hw__desc.html#a744c42df9c8769be044857e4834ff949":[15,0,94,15],
 "structspdk__ioat__pq__update__hw__desc.html#a7f2e02e2f07c71d693397966e72e5efd":[15,0,94,19],
 "structspdk__ioat__pq__update__hw__desc.html#a8001f8948752038774a155b30580623a":[15,0,94,12],
@@ -241,13 +249,5 @@ var NAVTREEINDEX20 =
 "structspdk__nvme__cdata__oaes.html#a8de4a484a0e56a0bbb22327c71b47891":[15,0,132,9],
 "structspdk__nvme__cdata__oaes.html#aa3e291b6b0ce3113d9085ab4e2480a1f":[15,0,132,2],
 "structspdk__nvme__cdata__oaes.html#aa7c3719f8a975896891a0b4b3ca2a183":[15,0,132,8],
-"structspdk__nvme__cdata__oaes.html#ab0a0c8252b76581526a8a8da443e1b34":[15,0,132,12],
-"structspdk__nvme__cdata__oaes.html#acf2259dc56cc600664cf15805357e3db":[15,0,132,11],
-"structspdk__nvme__cdata__oaes.html#adf84f45f51a1d4acf32ccbcbb46fd003":[15,0,132,7],
-"structspdk__nvme__cdata__oaes.html#ae29d15e6aeb3e24dffabdfd0229582b4":[15,0,132,3],
-"structspdk__nvme__cdata__oaes.html#ae82e8dce0b5dadcffb2dfcee12b7bf38":[15,0,132,1],
-"structspdk__nvme__cdata__oncs.html":[15,0,133],
-"structspdk__nvme__cdata__oncs.html#a06763377abb033011dee0855566db94a":[15,0,133,2],
-"structspdk__nvme__cdata__oncs.html#a2cf9c1d0b7a9b89f31b17ce5cc9a25a5":[15,0,133,9],
-"structspdk__nvme__cdata__oncs.html#a3576c811f3bde5b703d27bdae01978af":[15,0,133,8]
+"structspdk__nvme__cdata__oaes.html#ab0a0c8252b76581526a8a8da443e1b34":[15,0,132,12]
 };

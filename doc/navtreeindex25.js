@@ -1,5 +1,13 @@
 var NAVTREEINDEX25 =
 {
+"structspdk__nvmf__fabric__auth__recv__cmd.html#aa742c919c09c21aca594cb06cfaa9336":[15,0,256,2],
+"structspdk__nvmf__fabric__auth__recv__cmd.html#aa75683d60b1d1dc2f6d1978e6aa9071d":[15,0,256,5],
+"structspdk__nvmf__fabric__auth__recv__cmd.html#aada34625f8015ab1c39a485505217fce":[15,0,256,1],
+"structspdk__nvmf__fabric__auth__recv__cmd.html#ab5e2ee440fedf6d3b9399657b247ba52":[15,0,256,10],
+"structspdk__nvmf__fabric__auth__recv__cmd.html#afa697fc94d6fa3e21862dcddb0a7019a":[15,0,256,11],
+"structspdk__nvmf__fabric__auth__send__cmd.html":[15,0,257],
+"structspdk__nvmf__fabric__auth__send__cmd.html#a13c9be5565ed41c59e52a4569f1cc361":[15,0,257,5],
+"structspdk__nvmf__fabric__auth__send__cmd.html#a17fd23cebc66295fb549e7e06fec752b":[15,0,257,8],
 "structspdk__nvmf__fabric__auth__send__cmd.html#a191e6d3dbe582ee7fdbba4e5321ccbc8":[15,0,257,9],
 "structspdk__nvmf__fabric__auth__send__cmd.html#a341316a7dcc5ca6f96a6b1a9a6c4c467":[15,0,257,10],
 "structspdk__nvmf__fabric__auth__send__cmd.html#a358d1fe45d1b8be4546a00ebd6d40c43":[15,0,257,7],
@@ -241,13 +249,5 @@ var NAVTREEINDEX25 =
 "structspdk__nvmf__poll__group.html#a8252a37d2277d0af535801aaa64adf91":[15,0,289,6],
 "structspdk__nvmf__poll__group.html#a83ac8e14a54372aa17c2c9ac4d12eceb":[15,0,289,5],
 "structspdk__nvmf__poll__group.html#ac59498d3fc905b4fd575454cda8707ff":[15,0,289,10],
-"structspdk__nvmf__poll__group.html#ad1682c942edc972b61450cdb7e775445":[15,0,289,7],
-"structspdk__nvmf__poll__group.html#ad8dd6675b21c245a6790338b7d4b796e":[15,0,289,9],
-"structspdk__nvmf__poll__group.html#aeef7e086f1560a61c196d74660665c10":[15,0,289,1],
-"structspdk__nvmf__poll__group__stat.html":[15,0,290],
-"structspdk__nvmf__poll__group__stat.html#a3c5e22c26f3daabb2bc56488bb5d3664":[15,0,290,0],
-"structspdk__nvmf__poll__group__stat.html#a4218e92f08ce1316fc6200b2620c52f3":[15,0,290,5],
-"structspdk__nvmf__poll__group__stat.html#a648d3ea2ddb32d4e4cc762571704d256":[15,0,290,3],
-"structspdk__nvmf__poll__group__stat.html#a7d8923be3e0a1c0e15527a2f7caa2766":[15,0,290,1],
-"structspdk__nvmf__poll__group__stat.html#a891519e83575a36f0d410b44ee834c68":[15,0,290,2]
+"structspdk__nvmf__poll__group.html#ad1682c942edc972b61450cdb7e775445":[15,0,289,7]
 };
