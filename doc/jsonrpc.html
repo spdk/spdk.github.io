@@ -404,12 +404,14 @@ rpc_get_methods</h2>
 <div class="line">    &quot;spdk_kill_instance&quot;,</div>
 <div class="line">    &quot;accel_get_opc_assignments&quot;,</div>
 <div class="line">    &quot;accel_crypto_key_create&quot;,</div>
+<div class="line">    &quot;accel_crypto_key_destroy&quot;,</div>
 <div class="line">    &quot;accel_crypto_keys_get&quot;,</div>
 <div class="line">    &quot;ioat_scan_accel_module&quot;,</div>
 <div class="line">    &quot;dsa_scan_accel_module&quot;,</div>
 <div class="line">    &quot;dpdk_cryptodev_scan_accel_module&quot;,</div>
 <div class="line">    &quot;dpdk_cryptodev_set_driver&quot;,</div>
 <div class="line">    &quot;dpdk_cryptodev_get_driver&quot;,</div>
+<div class="line">    &quot;mlx5_scan_accel_module&quot;,</div>
 <div class="line">    &quot;bdev_virtio_attach_controller&quot;,</div>
 <div class="line">    &quot;bdev_virtio_scsi_get_devices&quot;,</div>
 <div class="line">    &quot;bdev_virtio_detach_controller&quot;,</div>
@@ -1400,7 +1402,7 @@ accel_assign_opc</h2>
 <div class="line">}</div>
 </div><!-- fragment --><h2><a class="anchor" id="rpc_accel_crypto_key_create"></a>
 accel_crypto_key_create</h2>
-<p>Create a crypt key which will be used in accel framework</p>
+<p>Create a crypto key which will be used in accel framework</p>
 <h3>Parameters</h3>
 <table class="markdownTable">
 <tr class="markdownTableHead">
@@ -1424,6 +1426,32 @@ accel_crypto_key_create</h2>
 <div class="line">    &quot;cipher&quot;: &quot;AES_XTS&quot;,</div>
 <div class="line">    &quot;key&quot;: &quot;00112233445566778899001122334455&quot;,</div>
 <div class="line">    &quot;key2&quot;: &quot;00112233445566778899001122334455&quot;,</div>
+<div class="line">    &quot;name&quot;: &quot;super_key&quot;</div>
+<div class="line">  }</div>
+<div class="line">}</div>
+</div><!-- fragment --><p>Example response:</p>
+<div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
+<div class="line">  &quot;id&quot;: 1,</div>
+<div class="line">  &quot;result&quot;: true</div>
+<div class="line">}</div>
+</div><!-- fragment --><h2><a class="anchor" id="rpc_accel_crypto_key_destroy"></a>
+accel_crypto_key_destroy</h2>
+<p>Destroy a crypto key. The user is responsible for ensuring that the deleted key is not used by acceleration modules.</p>
+<h3>Parameters</h3>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">The key name   </td></tr>
+</table>
+<h3>Example</h3>
+<p>Example request:</p>
+<div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
+<div class="line">  &quot;method&quot;: &quot;accel_crypto_key_destroy&quot;,</div>
+<div class="line">  &quot;id&quot;: 1,</div>
+<div class="line">  &quot;params&quot;: {</div>
 <div class="line">    &quot;name&quot;: &quot;super_key&quot;</div>
 <div class="line">  }</div>
 <div class="line">}</div>
@@ -1583,7 +1611,7 @@ dpdk_cryptodev_set_driver</h2>
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">driver_name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">The driver, can be one of crypto_aesni_mb, crypto_qat or mlx5_pci   </td></tr>
+<td class="markdownTableBodyNone">crypto_pmd   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">The driver, can be one of crypto_aesni_mb, crypto_qat or mlx5_pci   </td></tr>
 </table>
 <h3>Example</h3>
 <p>Example request:</p>
@@ -1592,7 +1620,7 @@ dpdk_cryptodev_set_driver</h2>
 <div class="line">  &quot;method&quot;: &quot;dpdk_cryptodev_set_driver&quot;,</div>
 <div class="line">  &quot;id&quot;: 1,</div>
 <div class="line">  &quot;params&quot;: {</div>
-<div class="line">    &quot;driver_name&quot;: &quot;crypto_aesni_mb&quot;</div>
+<div class="line">    &quot;crypto_pmd&quot;: &quot;crypto_aesni_mb&quot;</div>
 <div class="line">  }</div>
 <div class="line">}</div>
 </div><!-- fragment --><p>Example response:</p>
@@ -1618,6 +1646,35 @@ dpdk_cryptodev_get_driver</h2>
 <div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
 <div class="line">  &quot;id&quot;: 1,</div>
 <div class="line">  &quot;result&quot;: &quot;crypto_aesni_mb&quot;</div>
+<div class="line">}</div>
+</div><!-- fragment --><h2><a class="anchor" id="rpc_mlx5_scan_accel_module"></a>
+mlx5_scan_accel_module</h2>
+<p>Enable mlx5 accel offload</p>
+<h3>Parameters</h3>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">qp_size   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">qpair size    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">num_requests   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">Size of the shared requests pool   </td></tr>
+</table>
+<h3>Example</h3>
+<p>Example request:</p>
+<div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
+<div class="line">  &quot;method&quot;: &quot;mlx5_scan_accel_module&quot;,</div>
+<div class="line">  &quot;id&quot;: 1,</div>
+<div class="line">  &quot;params&quot;: {</div>
+<div class="line">    &quot;qp_size&quot;: 256,</div>
+<div class="line">    &quot;num_requests&quot;: 2047</div>
+<div class="line">  }</div>
+<div class="line">}</div>
+</div><!-- fragment --><p>Example response:</p>
+<div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
+<div class="line">  &quot;id&quot;: 1,</div>
+<div class="line">  &quot;result&quot;: true</div>
 <div class="line">}</div>
 </div><!-- fragment --><h1><a class="anchor" id="jsonrpc_components_bdev"></a>
 Block Device Abstraction Layer</h1>
@@ -2049,32 +2106,6 @@ bdev_compress_get_orphans</h2>
 <div class="line">  &quot;id&quot;: 1,</div>
 <div class="line">  &quot;name&quot;: &quot;COMP_Nvme0n1&quot;</div>
 <div class="line">}</div>
-</div><!-- fragment --><h2><a class="anchor" id="rpc_bdev_compress_set_pmd"></a>
-bdev_compress_set_pmd</h2>
-<p>Select the DPDK polled mode driver (pmd) for a compressed bdev, 0 = auto-select, 1= QAT only, 2 = ISAL only, 3 = mlx5_pci only.</p>
-<h3>Parameters</h3>
-<table class="markdownTable">
-<tr class="markdownTableHead">
-<th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">pmd   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">int   </td><td class="markdownTableBodyNone">pmd selection   </td></tr>
-</table>
-<h3>Example</h3>
-<p>Example request:</p>
-<div class="fragment"><div class="line">{</div>
-<div class="line">  &quot;params&quot;: {</div>
-<div class="line">    &quot;pmd&quot;: 1</div>
-<div class="line">  },</div>
-<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
-<div class="line">  &quot;method&quot;: &quot;bdev_compress_set_pmd&quot;,</div>
-<div class="line">  &quot;id&quot;: 1</div>
-<div class="line">}</div>
-</div><!-- fragment --><p>Example response:</p>
-<div class="fragment"><div class="line">{</div>
-<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
-<div class="line">  &quot;id&quot;: 1,</div>
-<div class="line">  &quot;result&quot;: true</div>
-<div class="line">}</div>
 </div><!-- fragment --><h2><a class="anchor" id="rpc_bdev_crypto_create"></a>
 bdev_crypto_create</h2>
 <p>Create a new crypto bdev on a given base bdev.</p>
@@ -2087,13 +2118,17 @@ bdev_crypto_create</h2>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Name of the crypto vbdev to create    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">crypto_pmd   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Name of the crypto device driver    </td></tr>
+<td class="markdownTableBodyNone">crypto_pmd   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Name of the crypto device driver. Obsolete, see accel_crypto_key_create    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">key   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Key in hex form    </td></tr>
+<td class="markdownTableBodyNone">key   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Key in hex form. Obsolete, see accel_crypto_key_create    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">cipher   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Cipher to use, AES_CBC or AES_XTS (QAT and MLX5)    </td></tr>
+<td class="markdownTableBodyNone">cipher   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Cipher to use, AES_CBC or AES_XTS (QAT and MLX5). Obsolete, see accel_crypto_key_create    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">key2   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">2nd key in hex form only required for cipher AES_XTS   </td></tr>
+<td class="markdownTableBodyNone">key2   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">2nd key in hex form only required for cipher AET_XTS. Obsolete, see accel_crypto_key_create    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">key_name   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Name of the key created with accel_crypto_key_create    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">module   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Name of the accel module which is used to create a key (if no key_name specified)   </td></tr>
 </table>
 <p>Both key and key2 must be passed in the hexlified form. For example, 256bit AES key may look like this: afd9477abf50254219ccb75965fbe39f23ebead5676e292582a0a67f66b88215</p>
 <h3>Result</h3>
@@ -3339,6 +3374,92 @@ bdev_nvme_set_multipath_policy</h2>
 <div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
 <div class="line">  &quot;id&quot;: 1,</div>
 <div class="line">  &quot;result&quot;: true</div>
+<div class="line">}</div>
+</div><!-- fragment --><h2><a class="anchor" id="rpc_bdev_nvme_get_path_iostat"></a>
+bdev_nvme_get_path_iostat</h2>
+<p>Get I/O statistics for IO paths of the block device. Call RPC bdev_nvme_set_options to set enable_io_path_stat true before using this RPC.</p>
+<h3>Parameters</h3>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Name of the NVMe bdev   </td></tr>
+</table>
+<h3>Example</h3>
+<p>Example request:</p>
+<div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
+<div class="line">  &quot;method&quot;: &quot;bdev_nvme_get_path_iostat&quot;,</div>
+<div class="line">  &quot;id&quot;: 1,</div>
+<div class="line">  &quot;params&quot;: {</div>
+<div class="line">    &quot;name&quot;: &quot;NVMe0n1&quot;</div>
+<div class="line">  }</div>
+<div class="line">}</div>
+</div><!-- fragment --><p>Example response:</p>
+<div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
+<div class="line">  &quot;id&quot;: 1,</div>
+<div class="line">  &quot;result&quot;: {</div>
+<div class="line">    &quot;name&quot;: &quot;NVMe0n1&quot;,</div>
+<div class="line">    &quot;stats&quot;: [</div>
+<div class="line">      {</div>
+<div class="line">        &quot;trid&quot;: {</div>
+<div class="line">          &quot;trtype&quot;: &quot;TCP&quot;,</div>
+<div class="line">          &quot;adrfam&quot;: &quot;IPv4&quot;,</div>
+<div class="line">          &quot;traddr&quot;: &quot;10.169.204.201&quot;,</div>
+<div class="line">          &quot;trsvcid&quot;: &quot;4420&quot;,</div>
+<div class="line">          &quot;subnqn&quot;: &quot;nqn.2016-06.io.spdk:cnode1&quot;</div>
+<div class="line">        },</div>
+<div class="line">        &quot;stat&quot;: {</div>
+<div class="line">          &quot;bytes_read&quot;: 676691968,</div>
+<div class="line">          &quot;num_read_ops&quot;: 165201,</div>
+<div class="line">          &quot;bytes_written&quot;: 0,</div>
+<div class="line">          &quot;num_write_ops&quot;: 0,</div>
+<div class="line">          &quot;bytes_unmapped&quot;: 0,</div>
+<div class="line">          &quot;num_unmap_ops&quot;: 0,</div>
+<div class="line">          &quot;max_read_latency_ticks&quot;: 521487,</div>
+<div class="line">          &quot;min_read_latency_ticks&quot;: 0,</div>
+<div class="line">          &quot;write_latency_ticks&quot;: 0,</div>
+<div class="line">          &quot;max_write_latency_ticks&quot;: 0,</div>
+<div class="line">          &quot;min_write_latency_ticks&quot;: 0,</div>
+<div class="line">          &quot;unmap_latency_ticks&quot;: 0,</div>
+<div class="line">          &quot;max_unmap_latency_ticks&quot;: 0,</div>
+<div class="line">          &quot;min_unmap_latency_ticks&quot;: 0,</div>
+<div class="line">          &quot;copy_latency_ticks&quot;: 0,</div>
+<div class="line">          &quot;max_copy_latency_ticks&quot;: 0,</div>
+<div class="line">          &quot;min_copy_latency_ticks&quot;: 0</div>
+<div class="line">        }</div>
+<div class="line">      },</div>
+<div class="line">      {</div>
+<div class="line">        &quot;trid&quot;: {</div>
+<div class="line">          &quot;trtype&quot;: &quot;TCP&quot;,</div>
+<div class="line">          &quot;adrfam&quot;: &quot;IPv4&quot;,</div>
+<div class="line">          &quot;traddr&quot;: &quot;8.8.8.6&quot;,</div>
+<div class="line">          &quot;trsvcid&quot;: &quot;4420&quot;,</div>
+<div class="line">          &quot;subnqn&quot;: &quot;nqn.2016-06.io.spdk:cnode1&quot;</div>
+<div class="line">        },</div>
+<div class="line">        &quot;stat&quot;: {</div>
+<div class="line">          &quot;bytes_read&quot;: 677138432,</div>
+<div class="line">          &quot;num_read_ops&quot;: 165317,</div>
+<div class="line">          &quot;bytes_written&quot;: 0,</div>
+<div class="line">          &quot;num_write_ops&quot;: 0,</div>
+<div class="line">          &quot;bytes_unmapped&quot;: 0,</div>
+<div class="line">          &quot;num_unmap_ops&quot;: 0,</div>
+<div class="line">          &quot;max_read_latency_ticks&quot;: 108525,</div>
+<div class="line">          &quot;min_read_latency_ticks&quot;: 0,</div>
+<div class="line">          &quot;write_latency_ticks&quot;: 0,</div>
+<div class="line">          &quot;max_write_latency_ticks&quot;: 0,</div>
+<div class="line">          &quot;min_write_latency_ticks&quot;: 0,</div>
+<div class="line">          &quot;unmap_latency_ticks&quot;: 0,</div>
+<div class="line">          &quot;max_unmap_latency_ticks&quot;: 0,</div>
+<div class="line">          &quot;min_unmap_latency_ticks&quot;: 0,</div>
+<div class="line">          &quot;copy_latency_ticks&quot;: 0,</div>
+<div class="line">          &quot;max_copy_latency_ticks&quot;: 0,</div>
+<div class="line">          &quot;min_copy_latency_ticks&quot;: 0</div>
+<div class="line">        }</div>
+<div class="line">      }</div>
+<div class="line">    ]</div>
+<div class="line">  }</div>
 <div class="line">}</div>
 </div><!-- fragment --><h2><a class="anchor" id="rpc_bdev_nvme_cuse_register"></a>
 bdev_nvme_cuse_register</h2>
@@ -8441,6 +8562,152 @@ notify_get_notifications</h2>
 <div class="line">      &quot;ctx&quot;: &quot;Malloc2&quot;,</div>
 <div class="line">      &quot;type&quot;: &quot;bdev_register&quot;,</div>
 <div class="line">      &quot;id&quot;: 2</div>
+<div class="line">    }</div>
+<div class="line">  ]</div>
+<div class="line">}</div>
+</div><!-- fragment --><h1><a class="anchor" id="jsonrpc_components_ublk"></a>
+Linux Userspace Block Device (UBLK)</h1>
+<p>SPDK supports exporting bdevs though Linux ublk. The motivation behind it is to back a Linux kernel block device with an SPDK user space bdev.</p>
+<p>To export a device over ublk, first make sure the Linux kernel ublk driver is loaded by running 'modprobe ublk_drv'.</p>
+<h2><a class="anchor" id="rpc_ublk_create_target"></a>
+ublk_create_target</h2>
+<p>Start to create ublk threads and initialize ublk target. It will return an error if user calls this RPC twice without ublk_destroy_target in between. It will use current cpumask in SPDK when user does not specify cpumask option.</p>
+<h3>Parameters</h3>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">cpumask   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Cpumask for ublk target   </td></tr>
+</table>
+<h3>Response</h3>
+<p>True if ublk target initialization is successful; False if failed.</p>
+<h3>Example</h3>
+<p>Example request:</p>
+<div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;params&quot;: {</div>
+<div class="line">    &quot;cpumask&quot;: &quot;0x2&quot;</div>
+<div class="line">  },</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
+<div class="line">  &quot;method&quot;: &quot;ublk_create_target&quot;,</div>
+<div class="line">  &quot;id&quot;: 1</div>
+<div class="line">}</div>
+</div><!-- fragment --><p>Example response:</p>
+<div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
+<div class="line">  &quot;id&quot;: 1,</div>
+<div class="line">  &quot;result&quot;: true</div>
+<div class="line">}</div>
+</div><!-- fragment --><h2><a class="anchor" id="rpc_ublk_destroy_target"></a>
+ublk_destroy_target</h2>
+<p>Release all UBLK devices and destroy ublk target.</p>
+<h3>Response</h3>
+<p>True if ublk target destruction is successful; False if failed.</p>
+<h3>Example</h3>
+<p>Example request:</p>
+<div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
+<div class="line">  &quot;method&quot;: &quot;ublk_destroy_target&quot;,</div>
+<div class="line">  &quot;id&quot;: 1</div>
+<div class="line">}</div>
+</div><!-- fragment --><p>Example response:</p>
+<div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
+<div class="line">  &quot;id&quot;: 1,</div>
+<div class="line">  &quot;result&quot;: true</div>
+<div class="line">}</div>
+</div><!-- fragment --><h2><a class="anchor" id="rpc_ublk_start_disk"></a>
+ublk_start_disk</h2>
+<p>Start to export one SPDK bdev as a UBLK device</p>
+<h3>Parameters</h3>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">bdev_name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Bdev name to export    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">ublk_id   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">int   </td><td class="markdownTableBodyNone">Device id    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">queue_depth   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">int   </td><td class="markdownTableBodyNone">Device queue depth    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">num_queues   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">int   </td><td class="markdownTableBodyNone">Total number of device queues   </td></tr>
+</table>
+<h3>Response</h3>
+<p>UBLK device ID</p>
+<h3>Example</h3>
+<p>Example request:</p>
+<div class="fragment"><div class="line">{</div>
+<div class="line"> &quot;params&quot;: {</div>
+<div class="line">    &quot;ublk_id&quot;: &quot;1&quot;,</div>
+<div class="line">    &quot;bdev_name&quot;: &quot;Malloc1&quot;</div>
+<div class="line">  },</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
+<div class="line">  &quot;method&quot;: &quot;ublk_start_disk&quot;,</div>
+<div class="line">  &quot;id&quot;: 1</div>
+<div class="line">}</div>
+</div><!-- fragment --><p>Example response:</p>
+<div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
+<div class="line">  &quot;id&quot;: 1,</div>
+<div class="line">  &quot;result&quot;: 1</div>
+<div class="line">}</div>
+</div><!-- fragment --><h2><a class="anchor" id="rpc_ublk_stop_disk"></a>
+ublk_stop_disk</h2>
+<p>Delete a UBLK device</p>
+<h3>Parameters</h3>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">ublk_id   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">int   </td><td class="markdownTableBodyNone">Device id to delete   </td></tr>
+</table>
+<h3>Response</h3>
+<p>True if UBLK device is deleted successfully; False if failed.</p>
+<h3>Example</h3>
+<p>Example request:</p>
+<div class="fragment"><div class="line">{</div>
+<div class="line"> &quot;params&quot;: {</div>
+<div class="line">    &quot;ublk_id&quot;: &quot;1&quot;,</div>
+<div class="line">  },</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
+<div class="line">  &quot;method&quot;: &quot;ublk_stop_disk&quot;,</div>
+<div class="line">  &quot;id&quot;: 1</div>
+<div class="line">}</div>
+</div><!-- fragment --><p>Example response:</p>
+<div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
+<div class="line">  &quot;id&quot;: 1,</div>
+<div class="line">  &quot;result&quot;: true</div>
+<div class="line">}</div>
+</div><!-- fragment --><h2><a class="anchor" id="rpc_ublk_get_disks"></a>
+ublk_get_disks</h2>
+<p>Display full or specified ublk device list</p>
+<h3>Parameters</h3>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">ublk_id   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">int   </td><td class="markdownTableBodyNone">ublk device id to display   </td></tr>
+</table>
+<h3>Response</h3>
+<p>Display ublk device list</p>
+<h3>Example</h3>
+<p>Example request:</p>
+<div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
+<div class="line">  &quot;method&quot;: &quot;ublk_get_disks&quot;,</div>
+<div class="line">  &quot;id&quot;: 1</div>
+<div class="line">}</div>
+</div><!-- fragment --><p>Example response:</p>
+<div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
+<div class="line">  &quot;id&quot;: 1,</div>
+<div class="line">  &quot;result&quot;:  [</div>
+<div class="line">    {</div>
+<div class="line">      &quot;ublk_device&quot;: &quot;/dev/ublkb1&quot;,</div>
+<div class="line">      &quot;id&quot;: 1,</div>
+<div class="line">      &quot;queue_depth&quot;: 512,</div>
+<div class="line">      &quot;num_queues&quot;: 1,</div>
+<div class="line">      &quot;bdev_name&quot;: &quot;Malloc1&quot;</div>
 <div class="line">    }</div>
 <div class="line">  ]</div>
 <div class="line">}</div>

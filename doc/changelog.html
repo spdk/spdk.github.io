@@ -96,11 +96,13 @@ v23.01: (Upcoming Release)</h1>
 <p>New library isa-l-crypto has been added, it is used by accel library in crypto operations.</p>
 <p>New functions <code>spdk_accel_submit_encrypt</code> and <code>spdk_accel_submit_decrypt</code> were added.</p>
 <p>New accel module <code>dpdk_cryptodev</code> has been added. It uses DPDK crypto PMD and support encrypt and decrypt operations. New RPC <code>dpdk_cryptodev_scan_accel_module</code> has been added to enable this accel module.</p>
+<p>New accel module <code>mlx5</code> was added. It implements crypto operations, enabled when SPDK is configured with RDMA provider is mlx5_dv and crypto support.</p>
 <h2>bdev</h2>
 <p>Added RPCs bdev_nvme_start_mdns_discovery, bdev_nvme_get_mdns_discovery_info and bdev_nvme_stop_mdns_discovery to perform Avahi based mDNS discovery service, as per NVMe TP 8009 - Automated Discovery of Ethernet Discovery Controllers.</p>
 <p>Both of interleaved and separated metadata are now supported by the malloc bdev module.</p>
 <p>Protection information is now supported by the malloc bdev module.</p>
 <p>A new API <code>spkd_bdev_part_submit_request_ext</code> was added to specify a custom completion callback.</p>
+<p>vbdev_crypto is updated to use accel framework instead of DPDK PMDs.</p>
 <h2>scheduler</h2>
 <p>Changing scheduler from dynamic back to static is no longer possible, as there is no way of saving original SPDK thread distribution on reactors.</p>
 <h2>bdev</h2>
@@ -116,6 +118,7 @@ v23.01: (Upcoming Release)</h1>
 <p>A new option <code>nvme_error_stat</code> was added to the <code>bdev_nvme_set_options</code> RPC to enable collecting NVMe error counts.</p>
 <p>New APIs <code>spdk_bdev_reset_io_stat</code>, <code>spdk_bdev_add_io_stat</code> and <code>spdk_bdev_dump_io_stat_json</code> were added to process I/O statistics outside the generic bdev layer, especially in bdev modules.</p>
 <p>Added I/O statistics per I/O path to the NVMe bdev module for NVMe bdev multipath. It can be enabled by a new option io_path_stat of RPC bdev_nvme_set_options.</p>
+<p>Added RPC bdev_nvme_get_path_iostat to get I/O statistics for IO paths of the NVMe bdev.</p>
 <h2>event</h2>
 <p>Added core lock file mechanism to prevent the same CPU cores from being used by multiple SPDK application instances.</p>
 <p>Added a command line switch to disable CPU locks on SPDK startup.</p>
@@ -153,6 +156,9 @@ v23.01: (Upcoming Release)</h1>
 <h2>bdev_nvme</h2>
 <p>Updated <code>bdev_nvme_set_options</code> RPC (and rpc.py) to support the new <code>transport_tos</code> parameter.</p>
 <p>For the active-active policy of the multipath mode, in addition to the default round-robin path selector, the minimum queue depth path selector was added. The minimum queue depth path selector selects an I/O path according to the number of outstanding requests of each nvme qpair.</p>
+<h2>ublk device</h2>
+<p>The ublk application supports the ublk kernel driver. It's implemented as a ublk backend in spdk_tgt and could be started with specifying configuration. See the <a href="https://www.kernel.org/doc/html/latest/block/ublk.html">ublk</a> documentation for more details.</p>
+<p>ublk bdev could export a block device via Linux ublk. It will move this backend device into userspace as <code>/dev/ublkb*</code>. Before to adding ublk device, need to create ublk target by rpc methond.</p>
 <h1>v22.09</h1>
 <h2>accel</h2>
 <p>Many names were changed in the accel framework to make them consistent both with themselves and the rest of SPDK. The primary public header file is now named <code><a class="el" href="accel_8h.html" title="Acceleration Framework.">include/spdk/accel.h</a></code>.</p>

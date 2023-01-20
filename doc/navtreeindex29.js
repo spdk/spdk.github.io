@@ -1,5 +1,14 @@
 var NAVTREEINDEX29 =
 {
+"structspdk__vfu__pci__device.html#a1f0a54eba7648d8c6145c45689430f5c":[15,0,376,9],
+"structspdk__vfu__pci__device.html#a20ebb56d42efba8f13739ff8976aa8a3":[15,0,376,15],
+"structspdk__vfu__pci__device.html#a29b0a87d2156236093e1315b062f4806":[15,0,376,8],
+"structspdk__vfu__pci__device.html#a302e9ae2097cbedae3bd7f3295a84298":[15,0,376,5],
+"structspdk__vfu__pci__device.html#a31fe2d044a4cfafabe6327c7d10298fa":[15,0,376,3],
+"structspdk__vfu__pci__device.html#a445f19834c299af971f8b3ad72592994":[15,0,376,4],
+"structspdk__vfu__pci__device.html#a5585f94a97ad11b413ac17e986a49c17":[15,0,376,2],
+"structspdk__vfu__pci__device.html#a5b4589d4cc362b904aeffe3c586b300a":[15,0,376,14],
+"structspdk__vfu__pci__device.html#aa7f9711fba2103c4090550a8eea0a034":[15,0,376,0],
 "structspdk__vfu__pci__device.html#aade39aac3963942cd7ca96012a6afae4":[15,0,376,6],
 "structspdk__vfu__pci__device.html#aae5a307266663de4c4c040747e74a1c9":[15,0,376,11],
 "structspdk__vfu__pci__device.html#ab9607f167444380a9a2062417dc88a60":[15,0,376,12],
@@ -240,14 +249,5 @@ var NAVTREEINDEX29 =
 "trace__parser_8h.html#a90b8b1b08e6d9aec3b55d59d0a2a9a16":[16,0,59,7],
 "trace__parser_8h.html#aae729da36784f7e2da4107c77c11926b":[16,0,59,6],
 "unionidxd__cmd__register.html":[15,0,7],
-"unionidxd__cmd__register.html#a45ef422dbe29efc5c67bb72e8b55db3e":[15,0,7,3],
-"unionidxd__cmd__register.html#a6a4ce6be051fc04cfb25e7016bca5f60":[15,0,7,0],
-"unionidxd__cmd__register.html#a7ec261e6cd5e61e4eb3592b9b3db3725":[15,0,7,4],
-"unionidxd__cmd__register.html#aae16d6f65f2c1322d9a9027a6597acdd":[15,0,7,1],
-"unionidxd__cmd__register.html#ab39a7097d2d074cb1e28f8ff58539ada":[15,0,7,2],
-"unionidxd__cmdcap__register.html":[15,0,8],
-"unionidxd__cmdcap__register.html#a15801d4aa453b52b4ad9dd2c4d5b7512":[15,0,8,15],
-"unionidxd__cmdcap__register.html#a2cb7b55ade5469291c1a46148775733e":[15,0,8,12],
-"unionidxd__cmdcap__register.html#a3b54db2499651ae1cbfa236b6cb17af2":[15,0,8,14],
-"unionidxd__cmdcap__register.html#a579073b09fcc8c45ca03e592aa67de30":[15,0,8,10]
+"unionidxd__cmd__register.html#a45ef422dbe29efc5c67bb72e8b55db3e":[15,0,7,3]
 };

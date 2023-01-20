@@ -1,5 +1,14 @@
 var NAVTREEINDEX32 =
 {
+"unionspdk__nvme__feat__volatile__write__cache.html#a9c739134c216fc84bde9622d6d01eb58":[15,0,171,2],
+"unionspdk__nvme__feat__write__atomicity.html":[15,0,172],
+"unionspdk__nvme__feat__write__atomicity.html#a4a67a4f708c90c0316820b707bb398fd":[15,0,172,1],
+"unionspdk__nvme__feat__write__atomicity.html#a8b7c15a0833cebba97fb6e889ac0295b":[15,0,172,0],
+"unionspdk__nvme__feat__write__atomicity.html#a8fd192e661b226064e4890a49c16ea6e":[15,0,172,2],
+"unionspdk__nvme__feat__write__atomicity.html#ada4a9129ffb571abc00b73298e8bf957":[15,0,172,3],
+"unionspdk__nvme__intel__feat__latency__tracking.html":[15,0,179],
+"unionspdk__nvme__intel__feat__latency__tracking.html#a3f7d5e23bb986ab742716254101bfe30":[15,0,179,1],
+"unionspdk__nvme__intel__feat__latency__tracking.html#a853aff120e2d0063588ffaac6473b7c9":[15,0,179,2],
 "unionspdk__nvme__intel__feat__latency__tracking.html#af71cddc9f380ab6e2ba5e50d190c92f1":[15,0,179,0],
 "unionspdk__nvme__intel__feat__led__pattern.html":[15,0,180],
 "unionspdk__nvme__intel__feat__led__pattern.html#a370d233a0e62c98f73ce402e3baaeec3":[15,0,180,3],

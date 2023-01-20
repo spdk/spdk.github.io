@@ -1,5 +1,14 @@
 var NAVTREEINDEX31 =
 {
+"unionspdk__nvme__cmbmsc__register.html":[15,0,136],
+"unionspdk__nvme__cmbmsc__register.html#a0d4b702117909083913930c6a97061b0":[15,0,136,1],
+"unionspdk__nvme__cmbmsc__register.html#a20979a149aa874591735832c1c8bc7ee":[15,0,136,3],
+"unionspdk__nvme__cmbmsc__register.html#a24bd223d88e079a215a07ea9025154cc":[15,0,136,5],
+"unionspdk__nvme__cmbmsc__register.html#a35d113e3fbcfff431074dea3765cbe7e":[15,0,136,2],
+"unionspdk__nvme__cmbmsc__register.html#a4b057d9bcef1afbfe13da30bee5fb032":[15,0,136,4],
+"unionspdk__nvme__cmbmsc__register.html#a5c9ab4dd6c1db1dcca674add063604af":[15,0,136,0],
+"unionspdk__nvme__cmbsts__register.html":[15,0,137],
+"unionspdk__nvme__cmbsts__register.html#a181df083eb80bca9450ef02ac21b700f":[15,0,137,2],
 "unionspdk__nvme__cmbsts__register.html#a54604b4b4110e749c3a843f3620ed74e":[15,0,137,3],
 "unionspdk__nvme__cmbsts__register.html#a5998dda138a19e69602822179d4547be":[15,0,137,1],
 "unionspdk__nvme__cmbsts__register.html#a7efbfddb99e395fdf73302c0a246a95f":[15,0,137,0],
@@ -240,14 +249,5 @@ var NAVTREEINDEX31 =
 "unionspdk__nvme__feat__volatile__write__cache.html":[15,0,171],
 "unionspdk__nvme__feat__volatile__write__cache.html#a52ac4ef749c41c0a31f7661b1d7ae13b":[15,0,171,0],
 "unionspdk__nvme__feat__volatile__write__cache.html#a64ab3e6857bc95927e20aefd46d90b85":[15,0,171,1],
-"unionspdk__nvme__feat__volatile__write__cache.html#a910973ce5eb628dd9b06ab0c72a1cd33":[15,0,171,3],
-"unionspdk__nvme__feat__volatile__write__cache.html#a9c739134c216fc84bde9622d6d01eb58":[15,0,171,2],
-"unionspdk__nvme__feat__write__atomicity.html":[15,0,172],
-"unionspdk__nvme__feat__write__atomicity.html#a4a67a4f708c90c0316820b707bb398fd":[15,0,172,1],
-"unionspdk__nvme__feat__write__atomicity.html#a8b7c15a0833cebba97fb6e889ac0295b":[15,0,172,0],
-"unionspdk__nvme__feat__write__atomicity.html#a8fd192e661b226064e4890a49c16ea6e":[15,0,172,2],
-"unionspdk__nvme__feat__write__atomicity.html#ada4a9129ffb571abc00b73298e8bf957":[15,0,172,3],
-"unionspdk__nvme__intel__feat__latency__tracking.html":[15,0,179],
-"unionspdk__nvme__intel__feat__latency__tracking.html#a3f7d5e23bb986ab742716254101bfe30":[15,0,179,1],
-"unionspdk__nvme__intel__feat__latency__tracking.html#a853aff120e2d0063588ffaac6473b7c9":[15,0,179,2]
+"unionspdk__nvme__feat__volatile__write__cache.html#a910973ce5eb628dd9b06ab0c72a1cd33":[15,0,171,3]
 };

@@ -1,5 +1,13 @@
 var NAVTREEINDEX20 =
 {
+"structspdk__ioat__pq__hw__desc.html#ac1e202f5773160ceb1019de93256680d":[15,0,93,18],
+"structspdk__ioat__pq__hw__desc.html#acbe34219a1d4657f65cdc7d7726f485c":[15,0,93,17],
+"structspdk__ioat__pq__hw__desc.html#ad2fdbcfa181eaf054cd0a8233d68aaa9":[15,0,93,10],
+"structspdk__ioat__pq__hw__desc.html#ad7aa93ee607ac2f8b952859333f6dad0":[15,0,93,1],
+"structspdk__ioat__pq__hw__desc.html#ae1b86c16069c07b15d753fda4cbcb5b3":[15,0,93,8],
+"structspdk__ioat__pq__hw__desc.html#ae70773c81adf241eb56d9b8028c4ddbe":[15,0,93,7],
+"structspdk__ioat__pq__hw__desc.html#aed93e4f7a8e400643a3703cf97bf3920":[15,0,93,16],
+"structspdk__ioat__pq__hw__desc.html#affb45e4b90d28e2f07f67d037c0de5ed":[15,0,93,13],
 "structspdk__ioat__pq__update__hw__desc.html":[15,0,94],
 "structspdk__ioat__pq__update__hw__desc.html#a044eabedafd944cad04239096a632e3b":[15,0,94,21],
 "structspdk__ioat__pq__update__hw__desc.html#a07bce1a0ed96e6e3e194a6caf02e23ff":[15,0,94,16],
@@ -241,13 +249,5 @@ var NAVTREEINDEX20 =
 "structspdk__nvme__cdata__oacs.html#aebe67ff44f6ef341119d8c4f67575b38":[15,0,131,0],
 "structspdk__nvme__cdata__oacs.html#af90fd659a1d6fe3d2ca755b00ee590af":[15,0,131,8],
 "structspdk__nvme__cdata__oaes.html":[15,0,132],
-"structspdk__nvme__cdata__oaes.html#a2bed1ff9f50bd7049f03a86639c3019d":[15,0,132,5],
-"structspdk__nvme__cdata__oaes.html#a2eeb9c5faad53846363b731ec433e6c4":[15,0,132,10],
-"structspdk__nvme__cdata__oaes.html#a341c3e7b1c4505cbd685633a8b90758b":[15,0,132,4],
-"structspdk__nvme__cdata__oaes.html#a6d0dfd3edf1d91d4f66e8c011775779d":[15,0,132,6],
-"structspdk__nvme__cdata__oaes.html#a8677650a3b5b75dbc6ed56719eb07d47":[15,0,132,0],
-"structspdk__nvme__cdata__oaes.html#a8de4a484a0e56a0bbb22327c71b47891":[15,0,132,9],
-"structspdk__nvme__cdata__oaes.html#aa3e291b6b0ce3113d9085ab4e2480a1f":[15,0,132,2],
-"structspdk__nvme__cdata__oaes.html#aa7c3719f8a975896891a0b4b3ca2a183":[15,0,132,8],
-"structspdk__nvme__cdata__oaes.html#ab0a0c8252b76581526a8a8da443e1b34":[15,0,132,12]
+"structspdk__nvme__cdata__oaes.html#a2bed1ff9f50bd7049f03a86639c3019d":[15,0,132,5]
 };

@@ -174,6 +174,7 @@ var user_guides =
         [ "accel_get_opc_assignments", "jsonrpc.html#rpc_accel_get_opc_assignments", null ],
         [ "accel_assign_opc", "jsonrpc.html#rpc_accel_assign_opc", null ],
         [ "accel_crypto_key_create", "jsonrpc.html#rpc_accel_crypto_key_create", null ],
+        [ "accel_crypto_key_destroy", "jsonrpc.html#rpc_accel_crypto_key_destroy", null ],
         [ "accel_crypto_keys_get", "jsonrpc.html#rpc_accel_crypto_keys_get", null ],
         [ "compressdev_scan_accel_module", "jsonrpc.html#rpc_compressdev_scan_accel_module", null ],
         [ "dsa_scan_accel_module", "jsonrpc.html#rpc_dsa_scan_accel_module", null ],
@@ -181,7 +182,8 @@ var user_guides =
         [ "ioat_scan_accel_module", "jsonrpc.html#rpc_ioat_scan_accel_module", null ],
         [ "dpdk_cryptodev_scan_accel_module", "jsonrpc.html#rpc_dpdk_cryptodev_scan_accel_module", null ],
         [ "dpdk_cryptodev_set_driver", "jsonrpc.html#rpc_dpdk_cryptodev_set_driver", null ],
-        [ "dpdk_cryptodev_get_driver", "jsonrpc.html#rpc_dpdk_cryptodev_get_driver", null ]
+        [ "dpdk_cryptodev_get_driver", "jsonrpc.html#rpc_dpdk_cryptodev_get_driver", null ],
+        [ "mlx5_scan_accel_module", "jsonrpc.html#rpc_mlx5_scan_accel_module", null ]
       ] ],
       [ "Block Device Abstraction Layer", "jsonrpc.html#jsonrpc_components_bdev", [
         [ "bdev_set_options", "jsonrpc.html#rpc_bdev_set_options", null ],
@@ -197,7 +199,6 @@ var user_guides =
         [ "bdev_compress_create", "jsonrpc.html#rpc_bdev_compress_create", null ],
         [ "bdev_compress_delete", "jsonrpc.html#rpc_bdev_compress_delete", null ],
         [ "bdev_compress_get_orphans", "jsonrpc.html#rpc_bdev_compress_get_orphans", null ],
-        [ "bdev_compress_set_pmd", "jsonrpc.html#rpc_bdev_compress_set_pmd", null ],
         [ "bdev_crypto_create", "jsonrpc.html#rpc_bdev_crypto_create", null ],
         [ "bdev_crypto_delete", "jsonrpc.html#rpc_bdev_crypto_delete", null ],
         [ "bdev_ocf_create", "jsonrpc.html#rpc_bdev_ocf_create", null ],
@@ -228,6 +229,7 @@ var user_guides =
         [ "bdev_nvme_get_io_paths", "jsonrpc.html#rpc_bdev_nvme_get_io_paths", null ],
         [ "bdev_nvme_set_preferred_path", "jsonrpc.html#rpc_bdev_nvme_set_preferred_path", null ],
         [ "bdev_nvme_set_multipath_policy", "jsonrpc.html#rpc_bdev_nvme_set_multipath_policy", null ],
+        [ "bdev_nvme_get_path_iostat", "jsonrpc.html#rpc_bdev_nvme_get_path_iostat", null ],
         [ "bdev_nvme_cuse_register", "jsonrpc.html#rpc_bdev_nvme_cuse_register", null ],
         [ "bdev_nvme_cuse_unregister", "jsonrpc.html#rpc_bdev_nvme_cuse_unregister", null ],
         [ "bdev_zone_block_create", "jsonrpc.html#rpc_bdev_zone_block_create", null ],
@@ -385,6 +387,13 @@ var user_guides =
         [ "bdev_opal_set_lock_state", "jsonrpc.html#rpc_bdev_opal_set_lock_state", null ],
         [ "notify_get_types", "jsonrpc.html#rpc_notify_get_types", null ],
         [ "notify_get_notifications", "jsonrpc.html#notify_get_notifications", null ]
+      ] ],
+      [ "Linux Userspace Block Device (UBLK)", "jsonrpc.html#jsonrpc_components_ublk", [
+        [ "ublk_create_target", "jsonrpc.html#rpc_ublk_create_target", null ],
+        [ "ublk_destroy_target", "jsonrpc.html#rpc_ublk_destroy_target", null ],
+        [ "ublk_start_disk", "jsonrpc.html#rpc_ublk_start_disk", null ],
+        [ "ublk_stop_disk", "jsonrpc.html#rpc_ublk_stop_disk", null ],
+        [ "ublk_get_disks", "jsonrpc.html#rpc_ublk_get_disks", null ]
       ] ],
       [ "Linux Network Block Device (NBD)", "jsonrpc.html#jsonrpc_components_nbd", [
         [ "nbd_start_disk", "jsonrpc.html#rpc_nbd_start_disk", null ],

@@ -42,8 +42,8 @@ var bdev__module_8h =
       [ "SPDK_MIN_BDEV_IO_STATUS", "bdev__module_8h.html#aa35cc1485b6ba4351c2fb4fbd7125c93a488e2d6a5be7ee1111bc37ffddf8bf22", null ]
     ] ],
     [ "spdk_bdev_reset_stat_mode", "bdev__module_8h.html#af485be7d8a00412bbfbfc1d2d15d3812", [
-      [ "BDEV_RESET_STAT_ALL", "bdev__module_8h.html#af485be7d8a00412bbfbfc1d2d15d3812a58a9acc64bd280252ae4a7b071e536e9", null ],
-      [ "BDEV_RESET_STAT_MAXMIN", "bdev__module_8h.html#af485be7d8a00412bbfbfc1d2d15d3812adae1afd564247838e6b92fa533fd2cb3", null ]
+      [ "SPDK_BDEV_RESET_STAT_ALL", "bdev__module_8h.html#af485be7d8a00412bbfbfc1d2d15d3812aa8f5f5e965312f35bc4971e4e21d7d93", null ],
+      [ "SPDK_BDEV_RESET_STAT_MAXMIN", "bdev__module_8h.html#af485be7d8a00412bbfbfc1d2d15d3812a83b1d834ca132cd2229533f159b470d6", null ]
     ] ],
     [ "spdk_bdev_add_io_stat", "bdev__module_8h.html#ac58f4c0adedcb11e532740b5ed339dac", null ],
     [ "spdk_bdev_alias_add", "bdev__module_8h.html#af1079eae68fac856b56863f26bc5310f", null ],

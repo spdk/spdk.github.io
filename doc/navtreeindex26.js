@@ -1,5 +1,13 @@
 var NAVTREEINDEX26 =
 {
+"structspdk__nvmf__poll__group.html#a35b33fc4bc8d044b83531c417bc43546":[15,0,289,11],
+"structspdk__nvmf__poll__group.html#a44051fa722dc9c61b9fed4d4a1ae8850":[15,0,289,4],
+"structspdk__nvmf__poll__group.html#a49ae0a3dede90b1faacb7541d31d7f62":[15,0,289,3],
+"structspdk__nvmf__poll__group.html#a61e420c31fe45f08dd4efb43237f4884":[15,0,289,2],
+"structspdk__nvmf__poll__group.html#a8252a37d2277d0af535801aaa64adf91":[15,0,289,6],
+"structspdk__nvmf__poll__group.html#a83ac8e14a54372aa17c2c9ac4d12eceb":[15,0,289,5],
+"structspdk__nvmf__poll__group.html#ac59498d3fc905b4fd575454cda8707ff":[15,0,289,10],
+"structspdk__nvmf__poll__group.html#ad1682c942edc972b61450cdb7e775445":[15,0,289,7],
 "structspdk__nvmf__poll__group.html#ad8dd6675b21c245a6790338b7d4b796e":[15,0,289,9],
 "structspdk__nvmf__poll__group.html#aeef7e086f1560a61c196d74660665c10":[15,0,289,1],
 "structspdk__nvmf__poll__group__stat.html":[15,0,290],
@@ -241,13 +249,5 @@ var NAVTREEINDEX26 =
 "structspdk__opal__d0__datastore__feat.html#a008649c44b46aba55d2c7ba8838e0620":[15,0,313,2],
 "structspdk__opal__d0__datastore__feat.html#a295989789470dddfbc929ac553d6055c":[15,0,313,0],
 "structspdk__opal__d0__datastore__feat.html#ad328de8b9ec25dc195379425e6f3023d":[15,0,313,1],
-"structspdk__opal__d0__datastore__feat.html#ad3f683eddd119478844453f109ed73af":[15,0,313,3],
-"structspdk__opal__d0__datastore__feat.html#afb80efa53c7b4499bfd97ce5caeed9ae":[15,0,313,4],
-"structspdk__opal__d0__feat__hdr.html":[15,0,314],
-"structspdk__opal__d0__feat__hdr.html#a069867c45c70edbc250156a7ade8ade7":[15,0,314,1],
-"structspdk__opal__d0__feat__hdr.html#a23ecef12200a5d4acf5f9d0498b2efcd":[15,0,314,2],
-"structspdk__opal__d0__feat__hdr.html#a6397c530e0e2f4a35c264dbd5ffc26e7":[15,0,314,3],
-"structspdk__opal__d0__feat__hdr.html#af9082616911d7b60bdee0b70757a830f":[15,0,314,0],
-"structspdk__opal__d0__features__info.html":[15,0,315],
-"structspdk__opal__d0__features__info.html#a0965faee0b5d3f18b9a0b53064a7f1b7":[15,0,315,4]
+"structspdk__opal__d0__datastore__feat.html#ad3f683eddd119478844453f109ed73af":[15,0,313,3]
 };
