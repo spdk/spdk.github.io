@@ -1,5 +1,7 @@
 var NAVTREEINDEX6 =
 {
+"iscsi__spec_8h.html#ad2c30ed17419423b79a47fae8323408aaa83ae84a485fd5d432afea2a82e79400":[16,0,32,93,19],
+"iscsi__spec_8h.html#ad2c30ed17419423b79a47fae8323408aaab4b714fcb61a3340155f9965dd72fff":[16,0,32,93,17],
 "iscsi__spec_8h.html#ad2c30ed17419423b79a47fae8323408aaaee5600a75ae650f611d1820caf8f202":[16,0,32,93,9],
 "iscsi__spec_8h.html#ad2c30ed17419423b79a47fae8323408aac88669cc577d85b32c16ef7f9dcf0dc2":[16,0,32,93,7],
 "iscsi__spec_8h.html#ad2c30ed17419423b79a47fae8323408aac9e74a154af5aafeec28dd392404ece9":[16,0,32,93,10],
@@ -247,7 +249,5 @@ var NAVTREEINDEX6 =
 "jsonrpc.html#rpc_bdev_reset_iostat":[3,9,5,5],
 "jsonrpc.html#rpc_bdev_set_options":[3,9,5,0],
 "jsonrpc.html#rpc_bdev_set_qd_sampling_period":[3,9,5,9],
-"jsonrpc.html#rpc_bdev_set_qos_limit":[3,9,5,8],
-"jsonrpc.html#rpc_bdev_split_create":[3,9,9,17],
-"jsonrpc.html#rpc_bdev_split_delete":[3,9,9,18]
+"jsonrpc.html#rpc_bdev_set_qos_limit":[3,9,5,8]
 };

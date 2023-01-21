@@ -173,6 +173,9 @@ Typedefs</h2></td></tr>
 <tr class="memitem:a039d3ef1514e326b6c2d8a527f6a6aaa"><td class="memItemLeft" align="right" valign="top">typedef void()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_8h.html#a039d3ef1514e326b6c2d8a527f6a6aaa">spdk_mempool_obj_cb_t</a>(struct spdk_mempool *mp, void *opaque, void *obj, unsigned obj_idx)</td></tr>
 <tr class="memdesc:a039d3ef1514e326b6c2d8a527f6a6aaa"><td class="mdescLeft">&#160;</td><td class="mdescRight">An object callback function for memory pool.  <a href="env_8h.html#a039d3ef1514e326b6c2d8a527f6a6aaa">More...</a><br /></td></tr>
 <tr class="separator:a039d3ef1514e326b6c2d8a527f6a6aaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae529cf9f5041c8014839d9ecfe5750a4"><td class="memItemLeft" align="right" valign="top">typedef void()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_8h.html#ae529cf9f5041c8014839d9ecfe5750a4">spdk_mempool_mem_cb_t</a>(struct spdk_mempool *mp, void *opaque, void *addr, uint64_t iova, size_t len, unsigned mem_idx)</td></tr>
+<tr class="memdesc:ae529cf9f5041c8014839d9ecfe5750a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">A memory chunk callback function for memory pool.  <a href="env_8h.html#ae529cf9f5041c8014839d9ecfe5750a4">More...</a><br /></td></tr>
+<tr class="separator:ae529cf9f5041c8014839d9ecfe5750a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0083ace78471c3d3d247e21e4968d526"><td class="memItemLeft" align="right" valign="top"><a id="a0083ace78471c3d3d247e21e4968d526"></a>
 typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><b>thread_start_fn</b>) (void *)</td></tr>
 <tr class="separator:a0083ace78471c3d3d247e21e4968d526"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -292,6 +295,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_
 <tr class="memitem:ad3b9b2980b2bf4be6e1b75024d676cd1"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_8h.html#ad3b9b2980b2bf4be6e1b75024d676cd1">spdk_mempool_obj_iter</a> (struct spdk_mempool *mp, <a class="el" href="env_8h.html#a039d3ef1514e326b6c2d8a527f6a6aaa">spdk_mempool_obj_cb_t</a> obj_cb, void *obj_cb_arg)</td></tr>
 <tr class="memdesc:ad3b9b2980b2bf4be6e1b75024d676cd1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Iterate through all elements of the pool and call a function on each one.  <a href="env_8h.html#ad3b9b2980b2bf4be6e1b75024d676cd1">More...</a><br /></td></tr>
 <tr class="separator:ad3b9b2980b2bf4be6e1b75024d676cd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa63d48e98e2dc3b0fdc9ad75905fc379"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_8h.html#aa63d48e98e2dc3b0fdc9ad75905fc379">spdk_mempool_mem_iter</a> (struct spdk_mempool *mp, <a class="el" href="env_8h.html#ae529cf9f5041c8014839d9ecfe5750a4">spdk_mempool_mem_cb_t</a> mem_cb, void *mem_cb_arg)</td></tr>
+<tr class="memdesc:aa63d48e98e2dc3b0fdc9ad75905fc379"><td class="mdescLeft">&#160;</td><td class="mdescRight">Iterate through all memory chunks of the pool and call a function on each one.  <a href="env_8h.html#aa63d48e98e2dc3b0fdc9ad75905fc379">More...</a><br /></td></tr>
+<tr class="separator:aa63d48e98e2dc3b0fdc9ad75905fc379"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a397f334df8126cae08a8499688e1601f"><td class="memItemLeft" align="right" valign="top">struct spdk_mempool *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_8h.html#a397f334df8126cae08a8499688e1601f">spdk_mempool_lookup</a> (const char *name)</td></tr>
 <tr class="memdesc:a397f334df8126cae08a8499688e1601f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lookup the memory pool identified by the given name.  <a href="env_8h.html#a397f334df8126cae08a8499688e1601f">More...</a><br /></td></tr>
 <tr class="separator:a397f334df8126cae08a8499688e1601f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -692,6 +698,23 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_
 </div>
 </div>
 <h2 class="groupheader">Typedef Documentation</h2>
+<a id="ae529cf9f5041c8014839d9ecfe5750a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae529cf9f5041c8014839d9ecfe5750a4">&#9670;&nbsp;</a></span>spdk_mempool_mem_cb_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void() spdk_mempool_mem_cb_t(struct spdk_mempool *mp, void *opaque, void *addr, uint64_t iova, size_t len, unsigned mem_idx)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A memory chunk callback function for memory pool. </p>
+<p>Used by <a class="el" href="env_8h.html#aa63d48e98e2dc3b0fdc9ad75905fc379" title="Iterate through all memory chunks of the pool and call a function on each one.">spdk_mempool_mem_iter()</a>. </p>
+
+</div>
+</div>
 <a id="a039d3ef1514e326b6c2d8a527f6a6aaa"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a039d3ef1514e326b6c2d8a527f6a6aaa">&#9670;&nbsp;</a></span>spdk_mempool_obj_cb_t</h2>
 
@@ -2138,6 +2161,51 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>a pointer to the memory pool on success, or NULL on failure. </dd></dl>
+
+</div>
+</div>
+<a id="aa63d48e98e2dc3b0fdc9ad75905fc379"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa63d48e98e2dc3b0fdc9ad75905fc379">&#9670;&nbsp;</a></span>spdk_mempool_mem_iter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t spdk_mempool_mem_iter </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_mempool *&#160;</td>
+          <td class="paramname"><em>mp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="env_8h.html#ae529cf9f5041c8014839d9ecfe5750a4">spdk_mempool_mem_cb_t</a>&#160;</td>
+          <td class="paramname"><em>mem_cb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>mem_cb_arg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Iterate through all memory chunks of the pool and call a function on each one. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mp</td><td>Memory pool to iterate on. </td></tr>
+    <tr><td class="paramname">mem_cb</td><td>Function to call on each memory chunk. </td></tr>
+    <tr><td class="paramname">mem_cb_arg</td><td>Opaque pointer passed to the callback function.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Number of memory chunks iterated. </dd></dl>
 
 </div>
 </div>

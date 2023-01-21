@@ -97,6 +97,8 @@ ABI and API Deprecation</h1>
 <p>Deprecated code paths must be registered with <code>SPDK_DEPRECATION_REGISTER()</code> and logged with <code>SPDK_LOG_DEPRECATED()</code>. The tag used with these macros will appear in the SPDK log at the warn level when <code>SPDK_LOG_DEPRECATED()</code> is called, subject to rate limits. The tags can be matched with the level 4 headers below.</p>
 <h1><a class="anchor" id="deprecation-notices"></a>
 Deprecation Notices</h1>
+<h2>VTune</h2>
+<p>VTune integration is in now deprecated and will be removed in SPDK 23.05.</p>
 <h2>nvme</h2>
 <h3><code>nvme_ctrlr_prepare_for_reset</code></h3>
 <p>Deprecated <code>spdk_nvme_ctrlr_prepare_for_reset</code> API, which will be removed in SPDK 22.01. For PCIe transport, <code>spdk_nvme_ctrlr_disconnect</code> should be used before freeing I/O qpairs.</p>

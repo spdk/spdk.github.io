@@ -1,5 +1,7 @@
 var NAVTREEINDEX28 =
 {
+"structspdk__scsi__pr__in__full__status__desc.html#a516c7f0bca402c4f1aa5586f30311b5b":[15,0,344,4],
+"structspdk__scsi__pr__in__full__status__desc.html#a5dec3bb2565b6b4e4bd5417a616bf266":[15,0,344,10],
 "structspdk__scsi__pr__in__full__status__desc.html#a789d7ac489335df814320f8e7c2e5147":[15,0,344,7],
 "structspdk__scsi__pr__in__full__status__desc.html#a82e21e2823a46e5d72956d6ddce836ac":[15,0,344,0],
 "structspdk__scsi__pr__in__full__status__desc.html#a8b36db3a8ffa27c906f55e064961a6a6":[15,0,344,5],
@@ -247,7 +249,5 @@ var NAVTREEINDEX28 =
 "structspdk__vfu__endpoint__ops.html#afe8776dc6275b83229f963591c2f3871":[15,0,375,5],
 "structspdk__vfu__endpoint__ops.html#affb0058441fbe6b1782cf71400006c6c":[15,0,375,9],
 "structspdk__vfu__pci__device.html":[15,0,376],
-"structspdk__vfu__pci__device.html#a031a278fa336d7a8545dd6f9a65c0fe9":[15,0,376,1],
-"structspdk__vfu__pci__device.html#a17a27b028191166a11827c680e760ec3":[15,0,376,7],
-"structspdk__vfu__pci__device.html#a18b1ef2cc6cc91ef46e4671a01be8418":[15,0,376,10]
+"structspdk__vfu__pci__device.html#a031a278fa336d7a8545dd6f9a65c0fe9":[15,0,376,1]
 };

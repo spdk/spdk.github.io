@@ -1,13 +1,13 @@
 var searchData=
 [
-  ['vfio_5fuser_5fbitmap_3216',['vfio_user_bitmap',['../structvfio__user__bitmap.html',1,'']]],
-  ['vfio_5fuser_5fbitmap_5frange_3217',['vfio_user_bitmap_range',['../structvfio__user__bitmap__range.html',1,'']]],
-  ['vfio_5fuser_5fdevice_5finfo_3218',['vfio_user_device_info',['../structvfio__user__device__info.html',1,'']]],
-  ['vfio_5fuser_5fdma_5fmap_3219',['vfio_user_dma_map',['../structvfio__user__dma__map.html',1,'']]],
-  ['vfio_5fuser_5fdma_5fregion_5faccess_3220',['vfio_user_dma_region_access',['../structvfio__user__dma__region__access.html',1,'']]],
-  ['vfio_5fuser_5fdma_5funmap_3221',['vfio_user_dma_unmap',['../structvfio__user__dma__unmap.html',1,'']]],
-  ['vfio_5fuser_5fheader_3222',['vfio_user_header',['../structvfio__user__header.html',1,'']]],
-  ['vfio_5fuser_5firq_5finfo_3223',['vfio_user_irq_info',['../structvfio__user__irq__info.html',1,'']]],
-  ['vfio_5fuser_5fregion_5faccess_3224',['vfio_user_region_access',['../structvfio__user__region__access.html',1,'']]],
-  ['vfio_5fuser_5fversion_3225',['vfio_user_version',['../structvfio__user__version.html',1,'']]]
+  ['vfio_5fuser_5fbitmap_3218',['vfio_user_bitmap',['../structvfio__user__bitmap.html',1,'']]],
+  ['vfio_5fuser_5fbitmap_5frange_3219',['vfio_user_bitmap_range',['../structvfio__user__bitmap__range.html',1,'']]],
+  ['vfio_5fuser_5fdevice_5finfo_3220',['vfio_user_device_info',['../structvfio__user__device__info.html',1,'']]],
+  ['vfio_5fuser_5fdma_5fmap_3221',['vfio_user_dma_map',['../structvfio__user__dma__map.html',1,'']]],
+  ['vfio_5fuser_5fdma_5fregion_5faccess_3222',['vfio_user_dma_region_access',['../structvfio__user__dma__region__access.html',1,'']]],
+  ['vfio_5fuser_5fdma_5funmap_3223',['vfio_user_dma_unmap',['../structvfio__user__dma__unmap.html',1,'']]],
+  ['vfio_5fuser_5fheader_3224',['vfio_user_header',['../structvfio__user__header.html',1,'']]],
+  ['vfio_5fuser_5firq_5finfo_3225',['vfio_user_irq_info',['../structvfio__user__irq__info.html',1,'']]],
+  ['vfio_5fuser_5fregion_5faccess_3226',['vfio_user_region_access',['../structvfio__user__region__access.html',1,'']]],
+  ['vfio_5fuser_5fversion_3227',['vfio_user_version',['../structvfio__user__version.html',1,'']]]
 ];

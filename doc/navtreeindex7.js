@@ -1,5 +1,7 @@
 var NAVTREEINDEX7 =
 {
+"jsonrpc.html#rpc_bdev_split_create":[3,9,9,17],
+"jsonrpc.html#rpc_bdev_split_delete":[3,9,9,18],
 "jsonrpc.html#rpc_bdev_uring_create":[3,9,9,19],
 "jsonrpc.html#rpc_bdev_uring_delete":[3,9,9,20],
 "jsonrpc.html#rpc_bdev_virtio_attach_controller":[3,9,5,81],
@@ -247,7 +249,5 @@ var NAVTREEINDEX7 =
 "logical_volumes.html#lvol_terminology":[5,2,0],
 "logical_volumes.html#lvol_thin_provisioning":[5,2,0,3],
 "logical_volumes.html#lvs":[5,2,0,0],
-"lvol_8h.html":[16,0,37],
-"lvol_8h.html#a003e23eb57e1318f2f60c5727cab54e2":[16,0,37,23],
-"lvol_8h.html#a15199efb9ca8b7309ec257c1a87360c5":[16,0,37,13]
+"lvol_8h.html":[16,0,37]
 };
