@@ -1,5 +1,9 @@
 var NAVTREEINDEX17 =
 {
+"structiscsi__bhs__logout__req.html#a70ee05ff5bef2d722466eb4e7ac343eb":[15,0,34,2],
+"structiscsi__bhs__logout__req.html#a7fa5c50f49dc42aeaa82908688bf8f9e":[15,0,34,9],
+"structiscsi__bhs__logout__req.html#a95da57f1ab779d1c1b22f739c95734ad":[15,0,34,8],
+"structiscsi__bhs__logout__req.html#aad8294d1ff9814a18b35e4b211c84578":[15,0,34,1],
 "structiscsi__bhs__logout__req.html#ac768b12aa51ca3c20ac6de40754dd9d6":[15,0,34,11],
 "structiscsi__bhs__logout__req.html#ad7f0baa1a9f5c253a21ec4effd628a97":[15,0,34,3],
 "structiscsi__bhs__logout__req.html#af8c11ae3effaa20222f672fc4cf54760":[15,0,34,7],
@@ -245,9 +249,5 @@ var NAVTREEINDEX17 =
 "structspdk__bdev.html#a1872fa3d723b5bef069c0681ec3bcfd6":[15,0,51,6],
 "structspdk__bdev.html#a19101e574d1a54c9f57f02a5077170b5":[15,0,51,32],
 "structspdk__bdev.html#a1a6b7f9bd595b3b800f35cc63efa3aab":[15,0,51,7],
-"structspdk__bdev.html#a1a9e1b01c90310e4698569e425849064":[15,0,51,16],
-"structspdk__bdev.html#a1c3d6e810863f31e2301949bfd1c5d37":[15,0,51,9],
-"structspdk__bdev.html#a1d7dcd12f4c3600eac4dbb202bdb4397":[15,0,51,35],
-"structspdk__bdev.html#a43b26bd1826992f8b35374ebc84e645a":[15,0,51,18],
-"structspdk__bdev.html#a4e68d5fa768ba5d3c8af32e68e1a992c":[15,0,51,20]
+"structspdk__bdev.html#a1a9e1b01c90310e4698569e425849064":[15,0,51,16]
 };

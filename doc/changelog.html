@@ -98,6 +98,7 @@ v23.05: (Upcoming Release)</h1>
 <p>New functions <code>spdk_accel_submit_encrypt</code> and <code>spdk_accel_submit_decrypt</code> were added.</p>
 <p>New accel module <code>dpdk_cryptodev</code> has been added. It uses DPDK crypto PMD and support encrypt and decrypt operations. New RPC <code>dpdk_cryptodev_scan_accel_module</code> has been added to enable this accel module.</p>
 <p>New accel module <code>mlx5</code> was added. It implements crypto operations, enabled when SPDK is configured with RDMA provider is mlx5_dv and crypto support.</p>
+<p>Introduced the concept of chaining multiple accel operations together and executing them all in a single call. The operation can be chained via one of the <code>spdk_accel_append_*</code> functions and then executed using <code>spdk_accel_sequence_finish</code>. Currently, copy, decompress, decrypt, encrypt, and fill operations support this mode. This feature is considered experimental.</p>
 <h2>bdev</h2>
 <p>Added RPCs bdev_nvme_start_mdns_discovery, bdev_nvme_get_mdns_discovery_info and bdev_nvme_stop_mdns_discovery to perform Avahi based mDNS discovery service, as per NVMe TP 8009 - Automated Discovery of Ethernet Discovery Controllers.</p>
 <p>Both of interleaved and separated metadata are now supported by the malloc bdev module.</p>

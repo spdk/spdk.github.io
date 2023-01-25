@@ -203,7 +203,7 @@ GPT (GUID Partition Table)</h1>
 <p>The GPT virtual bdev driver is enabled by default and does not require any configuration. It will automatically detect <a class="el" href="bdev.html#bdev_ug_gpt">SPDK GPT partition table</a> on any attached bdev and will create possibly multiple virtual bdevs.</p>
 <h2><a class="anchor" id="bdev_ug_gpt"></a>
 SPDK GPT partition table</h2>
-<p>The SPDK partition type GUID is <code>7c5222bd-8f5d-4087-9c00-bf9843c7b58c</code>. Existing SPDK bdevs can be exposed as Linux block devices via NBD and then can be partitioned with standard partitioning tools. After partitioning, the bdevs will need to be deleted and attached again for the GPT bdev module to see any changes. NBD kernel module must be loaded first. To create NBD bdev user should use <code>nbd_start_disk</code> RPC command.</p>
+<p>The SPDK partition type GUID is <code>6527994e-2c5a-4eec-9613-8f5944074e8b</code>. Existing SPDK bdevs can be exposed as Linux block devices via NBD and then can be partitioned with standard partitioning tools. After partitioning, the bdevs will need to be deleted and attached again for the GPT bdev module to see any changes. NBD kernel module must be loaded first. To create NBD bdev user should use <code>nbd_start_disk</code> RPC command.</p>
 <p>Example command</p>
 <p><code>rpc.py nbd_start_disk Malloc0 /dev/nbd0</code></p>
 <p>This will expose an SPDK bdev <code>Malloc0</code> under the <code>/dev/nbd0</code> block device.</p>
@@ -226,7 +226,7 @@ Creating a GPT partition table using NBD</h2>
 <div class="line"> </div>
 <div class="line"># Change the partition type to the SPDK GUID.</div>
 <div class="line"># sgdisk is part of the gdisk package.</div>
-<div class="line">sgdisk -t 1:7c5222bd-8f5d-4087-9c00-bf9843c7b58c /dev/nbd0</div>
+<div class="line">sgdisk -t 1:6527994e-2c5a-4eec-9613-8f5944074e8b /dev/nbd0</div>
 <div class="line"> </div>
 <div class="line"># Stop the NBD device (stop exporting /dev/nbd0).</div>
 <div class="line">rpc.py nbd_stop_disk /dev/nbd0</div>
