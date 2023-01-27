@@ -202,7 +202,7 @@ dl.el {
 }
 
 ul {
-  padding-left: 70px;
+  padding-left: 30px;
   overflow: hidden; /*Fixed: list item bullets overlap floating elements*/
 }
 
@@ -1707,16 +1707,12 @@ tt, code, kbd, samp
 }
 
 pre {
-  padding-left: 55px;
+  padding-left: 20px;
 }
 
 code {
   padding-left: 0px;
   text-indent: 0;
-}
-
-code.highlighter-rouge {
-  padding-left: 0px;
 }
 
 /* @end */
