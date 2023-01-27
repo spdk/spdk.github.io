@@ -1706,8 +1706,12 @@ tt, code, kbd, samp
   direction:ltr;
 }
 
-code {
+pre {
   padding-left: 55px;
+}
+
+code {
+  padding-left: 0px;
   text-indent: 0;
 }
 
