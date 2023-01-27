@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['deprecation_5615',['Deprecation',['../md__home_sys_sgsw_oss_spdk_github_io_spdk_deprecation.html',1,'']]],
-  ['direct_20memory_20access_20_28dma_29_20from_20user_20space_5616',['Direct Memory Access (DMA) From User Space',['../memory.html',1,'concepts']]],
-  ['distributions_5617',['distributions',['../distributions.html',1,'ci_tools']]],
-  ['driver_20modules_5618',['Driver Modules',['../driver_modules.html',1,'']]]
+  ['deprecation_5618',['Deprecation',['../md__home_sys_sgsw_oss_spdk_github_io_spdk_deprecation.html',1,'']]],
+  ['direct_20memory_20access_20_28dma_29_20from_20user_20space_5619',['Direct Memory Access (DMA) From User Space',['../memory.html',1,'concepts']]],
+  ['distributions_5620',['distributions',['../distributions.html',1,'ci_tools']]],
+  ['driver_20modules_5621',['Driver Modules',['../driver_modules.html',1,'']]]
 ];

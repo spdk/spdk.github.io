@@ -1,5 +1,12 @@
 var NAVTREEINDEX31 =
 {
+"unionspdk__nvme__cc__register.html#a882def8c3b82974ed18964df8b6b55bf":[15,0,127,7],
+"unionspdk__nvme__cc__register.html#a897917db042a1c27dfcd9a1d29753602":[15,0,127,10],
+"unionspdk__nvme__cc__register.html#aa04fbe301ce8a3d66ad4290e896549e1":[15,0,127,8],
+"unionspdk__nvme__cc__register.html#aa209d6cab6dc0a1f9e9b37f4f0a2d8b9":[15,0,127,5],
+"unionspdk__nvme__cc__register.html#ac2481b3896677b48183c0dd344760ddb":[15,0,127,9],
+"unionspdk__nvme__cc__register.html#adafe2d01d8a07098b6cb21fc9835dba6":[15,0,127,3],
+"unionspdk__nvme__cc__register.html#af8bb5fa3b86ff9cb654ec4da5fa5a31c":[15,0,127,6],
 "unionspdk__nvme__cmbloc__register.html":[15,0,135],
 "unionspdk__nvme__cmbloc__register.html#a12f58ebd196434ac7768545fde9c3340":[15,0,135,2],
 "unionspdk__nvme__cmbloc__register.html#a3c1a22c487cd5a1aad6154f404f48263":[15,0,135,3],
@@ -242,12 +249,5 @@ var NAVTREEINDEX31 =
 "unionspdk__nvme__feat__reservation__persistence.html#a83ca08a4e357b0e8bd0885fb17f468aa":[15,0,168,3],
 "unionspdk__nvme__feat__software__progress__marker.html":[15,0,169],
 "unionspdk__nvme__feat__software__progress__marker.html#a068b7aa9ea34b8e38dfcf7b8f7d25f70":[15,0,169,1],
-"unionspdk__nvme__feat__software__progress__marker.html#a22cdd614671f8b7a383463bebd28a384":[15,0,169,2],
-"unionspdk__nvme__feat__software__progress__marker.html#a7daee58fa1e18cf11a6e6989f98f6ff1":[15,0,169,3],
-"unionspdk__nvme__feat__software__progress__marker.html#a81508f0b98542e700f045c39bdea42e6":[15,0,169,0],
-"unionspdk__nvme__feat__temperature__threshold.html":[15,0,170],
-"unionspdk__nvme__feat__temperature__threshold.html#a384b25c620ca81031b6260f6b0e16142":[15,0,170,3],
-"unionspdk__nvme__feat__temperature__threshold.html#a611a74458d69f25c9151ec7ae81a6b73":[15,0,170,4],
-"unionspdk__nvme__feat__temperature__threshold.html#a6e4f94cd47b15cc2e3dab12b7f222044":[15,0,170,2],
-"unionspdk__nvme__feat__temperature__threshold.html#a713de8e3f6dd55662e4115544c2c0110":[15,0,170,0]
+"unionspdk__nvme__feat__software__progress__marker.html#a22cdd614671f8b7a383463bebd28a384":[15,0,169,2]
 };

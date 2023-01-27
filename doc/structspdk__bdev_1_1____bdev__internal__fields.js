@@ -26,5 +26,6 @@ var structspdk__bdev_1_1____bdev__internal__fields =
     [ "temporary_queue_depth", "structspdk__bdev_1_1____bdev__internal__fields.html#afad02fdc83417a632d9ecc7f3c437c47", null ],
     [ "unregister_cb", "structspdk__bdev_1_1____bdev__internal__fields.html#a19c909b97a282da2b6681fd46a0d9a69", null ],
     [ "unregister_ctx", "structspdk__bdev_1_1____bdev__internal__fields.html#aac5fe7bcf1bbbf3f984874e1c75a580a", null ],
+    [ "unregister_td", "structspdk__bdev_1_1____bdev__internal__fields.html#a9ac9b4eff872b0fe8c1558e3f4747884", null ],
     [ "weighted_io_time", "structspdk__bdev_1_1____bdev__internal__fields.html#a1ca4aa351052992223be9801674d8da8", null ]
 ];

@@ -30,7 +30,7 @@ var NAVTREEINDEX18 =
 "structspdk__bdev_1_1____bdev__internal__fields.html":[15,0,51,0],
 "structspdk__bdev_1_1____bdev__internal__fields.html#a04441c7b5f5cd2422a01df4cacf97a7b":[15,0,51,0,3],
 "structspdk__bdev_1_1____bdev__internal__fields.html#a19c909b97a282da2b6681fd46a0d9a69":[15,0,51,0,24],
-"structspdk__bdev_1_1____bdev__internal__fields.html#a1ca4aa351052992223be9801674d8da8":[15,0,51,0,26],
+"structspdk__bdev_1_1____bdev__internal__fields.html#a1ca4aa351052992223be9801674d8da8":[15,0,51,0,27],
 "structspdk__bdev_1_1____bdev__internal__fields.html#a22f12101e334a58b395b16ead5bf3b6b":[15,0,51,0,4],
 "structspdk__bdev_1_1____bdev__internal__fields.html#a25fef0bfc3862aa71dac47057dedb778":[15,0,51,0,14],
 "structspdk__bdev_1_1____bdev__internal__fields.html#a293999636600108bc77ef672b62bf4f1":[15,0,51,0,12],
@@ -45,6 +45,7 @@ var NAVTREEINDEX18 =
 "structspdk__bdev_1_1____bdev__internal__fields.html#a7bada4fbc5c2a5de7f7fdf7aef9d876f":[15,0,51,0,9],
 "structspdk__bdev_1_1____bdev__internal__fields.html#a8155b9ed671033cf7e33d348c49bf980":[15,0,51,0,13],
 "structspdk__bdev_1_1____bdev__internal__fields.html#a920a1e86dea170c9234bb24f61b16226":[15,0,51,0,2],
+"structspdk__bdev_1_1____bdev__internal__fields.html#a9ac9b4eff872b0fe8c1558e3f4747884":[15,0,51,0,26],
 "structspdk__bdev_1_1____bdev__internal__fields.html#aac5fe7bcf1bbbf3f984874e1c75a580a":[15,0,51,0,25],
 "structspdk__bdev_1_1____bdev__internal__fields.html#ab00d3fac1952f8bfec95406f4bb27429":[15,0,51,0,21],
 "structspdk__bdev_1_1____bdev__internal__fields.html#ad010a75a238dd2290faf44545c43109e":[15,0,51,0,6],
@@ -248,6 +249,5 @@ var NAVTREEINDEX18 =
 "structspdk__blob__open__opts.html#a55a4b2bda0b54371bc7312501ef832d6":[15,0,66,1],
 "structspdk__blob__opts.html":[15,0,67],
 "structspdk__blob__opts.html#a001c87031f306784a06fcf623457d8c9":[15,0,67,5],
-"structspdk__blob__opts.html#a33c151fb11b4808154a1d93f4bbec5fc":[15,0,67,4],
-"structspdk__blob__opts.html#a4cc3d1a37fb69323f972fda4134adb54":[15,0,67,2]
+"structspdk__blob__opts.html#a33c151fb11b4808154a1d93f4bbec5fc":[15,0,67,4]
 };

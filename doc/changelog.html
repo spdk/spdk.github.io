@@ -100,14 +100,7 @@ v23.05: (Upcoming Release)</h1>
 <p>New accel module <code>mlx5</code> was added. It implements crypto operations, enabled when SPDK is configured with RDMA provider is mlx5_dv and crypto support.</p>
 <p>Introduced the concept of chaining multiple accel operations together and executing them all in a single call. The operation can be chained via one of the <code>spdk_accel_append_*</code> functions and then executed using <code>spdk_accel_sequence_finish</code>. Currently, copy, decompress, decrypt, encrypt, and fill operations support this mode. This feature is considered experimental.</p>
 <h2>bdev</h2>
-<p>Added RPCs bdev_nvme_start_mdns_discovery, bdev_nvme_get_mdns_discovery_info and bdev_nvme_stop_mdns_discovery to perform Avahi based mDNS discovery service, as per NVMe TP 8009 - Automated Discovery of Ethernet Discovery Controllers.</p>
-<p>Both of interleaved and separated metadata are now supported by the malloc bdev module.</p>
-<p>Protection information is now supported by the malloc bdev module.</p>
 <p>A new API <code>spkd_bdev_part_submit_request_ext</code> was added to specify a custom completion callback.</p>
-<p>vbdev_crypto is updated to use accel framework instead of DPDK PMDs.</p>
-<h2>scheduler</h2>
-<p>Changing scheduler from dynamic back to static is no longer possible, as there is no way of saving original SPDK thread distribution on reactors.</p>
-<h2>bdev</h2>
 <p>New APIs <code>spdk_bdev_for_each_channel</code> and <code>spdk_bdev_for_each_channel_continue</code> and associated function pointers were added to iterate each channel of the required bdev.</p>
 <p>The RPC <code>bdev_get_iostat</code> now allows a user to query the per channel IO statistics for required bdev, and displays maximum and minimum latencies and I/O error counts.</p>
 <p>New <code>spdk_bdev_copy_blocks</code> and <code>spdk_bdev_get_max_copy</code> APIs to support copy commands.</p>
@@ -117,50 +110,67 @@ v23.05: (Upcoming Release)</h1>
 <p>Converted internal use of <code>pthread_mutex_t</code> to <code>struct <a class="el" href="structspdk__spinlock.html" title="A spinlock augmented with safety checks for use with SPDK.">spdk_spinlock</a></code>. Consumers of bdev API functions must be on an SPDK thread or the program will abort. It is now enforced that no internal bdev locks can be held when a poller or message goes off CPU.</p>
 <p>A new RPC <code>bdev_reset_iostat</code> was added to reset I/O statistics of bdevs. Note that if one consumer reset I/O statistics, it affects all other consumers.</p>
 <p>Add function pointers, <code>dump_device_stat_json</code> and <code>reset_device_stat</code> to the bdev module function table to display and reset I/O statistics specific for the module specific bdev context.</p>
-<p>A new option <code>nvme_error_stat</code> was added to the <code>bdev_nvme_set_options</code> RPC to enable collecting NVMe error counts.</p>
 <p>New APIs <code>spdk_bdev_reset_io_stat</code>, <code>spdk_bdev_add_io_stat</code> and <code>spdk_bdev_dump_io_stat_json</code> were added to process I/O statistics outside the generic bdev layer, especially in bdev modules.</p>
-<p>Added I/O statistics per I/O path to the NVMe bdev module for NVMe bdev multipath. It can be enabled by a new option io_path_stat of RPC bdev_nvme_set_options.</p>
-<p>Added RPC bdev_nvme_get_path_iostat to get I/O statistics for IO paths of the NVMe bdev.</p>
+<h2>bdev_crypto</h2>
+<p>vbdev_crypto is updated to use accel framework instead of DPDK PMDs.</p>
+<h2>bdev_daos</h2>
+<p>New RPC <code>bdev_daos_resize</code> was added to allow resizing the daos bdev.</p>
+<h2>bdev_malloc</h2>
+<p>Both of interleaved and separated metadata are now supported by the malloc bdev module.</p>
+<p>Protection information is now supported by the malloc bdev module.</p>
+<h2>bdev_nvme</h2>
+<p>Updated <code>bdev_nvme_set_options</code> RPC (and rpc.py) to support the new <code>transport_tos</code> parameter.</p>
+<p>For the active-active policy of the multipath mode, in addition to the default round-robin path selector, the minimum queue depth path selector was added. The minimum queue depth path selector selects an I/O path according to the number of outstanding requests of each nvme qpair.</p>
+<p>Added RPCs <code>bdev_nvme_start_mdns_discovery</code>, <code>bdev_nvme_get_mdns_discovery_info</code> and <code>bdev_nvme_stop_mdns_discovery</code> to perform Avahi based mDNS discovery service, as per NVMe TP 8009 - Automated Discovery of Ethernet Discovery Controllers.</p>
+<p>A new option <code>nvme_error_stat</code> was added to the <code>bdev_nvme_set_options</code> RPC to enable collecting NVMe error counts.</p>
+<p>Added I/O statistics per I/O path to the NVMe bdev module for NVMe bdev multipath. It can be enabled by a new option <code>io_path_stat</code> of RPC <code>bdev_nvme_set_options</code>.</p>
+<p>Added RPC <code>bdev_nvme_get_path_iostat</code> to get I/O statistics for IO paths of the NVMe bdev.</p>
+<p>Added <code>selector</code> parameter to <code>bdev_nvme_set_multipath_policy</code> RPC to set path selector for multipath. Option <code>round_robin</code> and <code>queue_depth</code> are available.</p>
+<p>Added <code>rr_min_io</code> option to RPC <code>bdev_nvme_set_multipath_policy</code>. It switches I/O to another path after rr_min_io I/Os are routed to current io path for the round-robin path selector.</p>
+<p>Added option <code>--io-path-stat</code> for RPC <code>bdev_nvme_set_option</code> to enable collecting io path stat.</p>
+<h2>bdev_raid</h2>
+<p>Changed <code>bdev_raid_get_bdevs</code> RPC output format to include raid_bdev details.</p>
+<h2>bdevperf</h2>
+<p>Promoted the application to example to match similar programs: fio_plugin and perf. It can now be found inside <code>examples/bdev/bdevperf</code>.</p>
+<h2>env</h2>
+<p>Added <code>spdk_mempool_mem_iter</code> that allows to get start address and length of each memory chunk in order to create app-specific resources.</p>
 <h2>event</h2>
 <p>Added core lock file mechanism to prevent the same CPU cores from being used by multiple SPDK application instances.</p>
-<p>Added a command line switch to disable CPU locks on SPDK startup.</p>
-<p>Added RPCs framework_enable_cpumask_locks and framework_disable_cpumask_locks to enable and disable CPU core locks in runtime.</p>
-<p>Added &ndash;rpcs-allowed command line option. Users can specify a comma-separated list of RPC names with this option to restrict allowed RPCs to only that list.</p>
+<p>Added <code>--disable-cpumask-locks</code> command line switch to disable CPU locks on SPDK startup.</p>
+<p>Added RPCs <code>framework_enable_cpumask_locks</code> and <code>framework_disable_cpumask_locks</code> to enable and disable CPU core locks in runtime.</p>
+<p>Added <code>--rpcs-allowed</code> command line option. Users can specify a comma-separated list of RPC names with this option to restrict allowed RPCs to only that list.</p>
+<p>Added <code>--vfio-vf-token</code> command line option to specify a VF token (UUID) shared between SR-IOV PF and VFs for vfio_pci driver.</p>
+<h2>json</h2>
+<p>Added API <code>spdk_json_write_double</code> and <code>spdk_json_write_named_double</code> to allow for writing and decoding of the the double data type.</p>
+<h2>log</h2>
+<p>Added consistent tracking of use of deprecated behavior. Deprecations continue to be listed in deprecation.md and now are in subsections with headers matching a tag used in <code>SPDK_LOG_DEPRECATED()</code> calls. When deprecated behavior is used, these tags will appear in SPDK's log at the warn level. As the SPDK application exits, it will log a summary of how many times <code>SPDK_LOG_DEPRECATED()</code> was called for each tag that was logged at least once.</p>
 <h2>nvme</h2>
 <p>NVMe transport options were newly introduced. The NVMe transport options are defined via the <code><a class="el" href="structspdk__nvme__transport__opts.html" title="NVMe transport options.">spdk_nvme_transport_opts</a></code> structure and configured via <code>spdk_nvme_transport_get_opts</code> and <code>spdk_nvme_transport_get_opts</code> functions.</p>
 <p>Shared receive queue was supported by the RDMA transport. It can be configured by a new NVMe transport option <code>rdma_srq_size</code>.</p>
+<p>Added <code>transport_tos</code> to <code><a class="el" href="structspdk__nvme__ctrlr__opts.html" title="NVMe controller initialization options.">spdk_nvme_ctrlr_opts</a></code> to support setting of the "type of service" value in the IPv4 header. Only RDMA is supported at this time.</p>
+<p>Added API <code>spdk_nvme_qpair_get_num_outstanding_reqs</code> to get the number of outstanding reqs of a specified qpair.</p>
+<h2>nvmf</h2>
+<p>Added API <code>spdk_nvmf_tgt_pause_polling</code> and <code>spdk_nvmf_tgt_resume_polling</code> to allow pausing polling on poll group of a given target.</p>
 <h2>rpc</h2>
-<p>Added spdk_rpc_set_allowlist to restrict allowed RPCs to the specified list.</p>
-<p>Changed <code>bdev_raid_get_bdevs</code> RPC output format to include raid_bdev details.</p>
-<p>Added <code>selector</code> parameter to bdev_nvme_set_multipath_policy RPC to set path selector for multipath. Option <code>round_robin</code> and <code>queue_depth</code> are available.</p>
-<p>Added <code>rr_min_io</code> option to RPC bdev_nvme_set_multipath_policy. It switches I/O to another path after rr_min_io I/Os are routed to current io path for the round-robin path selector.</p>
-<p>Added option <code>--io-path-stat</code> for RPC bdev_nvme_set_option to enable collecting io path stat.</p>
-<h2>bdevperf</h2>
-<p>Promoted the application to example to match similar programs: fio_plugin and perf. It can now be found inside <code>examples/bdev/bdevperf</code>.</p>
-<h2>trace</h2>
-<p>New <code>trace_get_info</code> RPC was added to get name of shared memory file, list of the available trace point groups and mask of the available trace points for each group.</p>
-<h2>util</h2>
-<p>New API <code>spdk_fd_group_get_epoll_event</code> that returns the epoll(7) event that caused a function callback in file descriptor group to execute.</p>
-<p>A new API <code>spdk_strcpy_replace</code> was added to replace all occurrences of the search string with the replacement string.</p>
-<p>New API <code><a class="el" href="util_8h.html#a87d0db9f66fa3fc6763dbbe238c3c179" title="Operate like memset across an iovec.">spdk_iov_memset()</a></code> was added to memset an iovec.</p>
-<p>New API <code><a class="el" href="util_8h.html#ae5b9fcc21fe47320520c6d43983ad55f" title="Initialize an iovec with just the single given buffer.">spdk_iov_one()</a></code> was added to initialize an iovec for a single buffer.</p>
-<h2>json</h2>
-<p>Added API <code>spdk_json_write_double</code> and <code>spdk_json_write_named_double</code> to allow for writing and decoding of the the double data type.</p>
+<p>Added <code>spdk_rpc_set_allowlist</code> to restrict allowed RPCs to the specified list.</p>
+<h2>scheduler</h2>
+<p>Changing scheduler from dynamic back to static is no longer possible, as there is no way of saving original SPDK thread distribution on reactors.</p>
 <h2>thread</h2>
 <p>Added <code>spdk_thread_get_app_thread</code> which returns the first thread that was created using <code>spdk_thread_create</code>.</p>
 <p>Added <code>spdk_thread_is_running</code>. This returns <code>true</code> for a running thread, or <code>false</code> if its exit process has started using <code>spdk_thread_exit</code>.</p>
 <p>Added API <code>spdk_spin_init</code>, <code>spdk_spin_destroy</code>, <code>spdk_spin_lock</code>, <code>spdk_spin_unlock</code>, and <code>spdk_spin_held</code> to support spinlocks that are aware of the SPDK concurrency model.</p>
-<h2>log</h2>
-<p>Added consistent tracking of use of deprecated behavior. Deprecations continue to be listed in deprecation.md and now are in subsections with headers matching a tag used in <code>SPDK_LOG_DEPRECATED()</code> calls. When deprecated behavior is used, these tags will appear in SPDK's log at the warn level. As the SPDK application exits, it will log a summary of how many times <code>SPDK_LOG_DEPRECATED()</code> was called for each tag that was logged at least once.</p>
-<h2>nvme</h2>
-<p>Added <code>transport_tos</code> to <code><a class="el" href="structspdk__nvme__ctrlr__opts.html" title="NVMe controller initialization options.">spdk_nvme_ctrlr_opts</a></code> to support setting of the "type of service" value in the IPv4 header. Only RDMA is supported at this time.</p>
-<p>Added API spdk_nvme_qpair_get_num_outstanding_reqs to get the number of outstanding reqs of a specified qpair.</p>
-<h2>bdev_nvme</h2>
-<p>Updated <code>bdev_nvme_set_options</code> RPC (and rpc.py) to support the new <code>transport_tos</code> parameter.</p>
-<p>For the active-active policy of the multipath mode, in addition to the default round-robin path selector, the minimum queue depth path selector was added. The minimum queue depth path selector selects an I/O path according to the number of outstanding requests of each nvme qpair.</p>
+<p>Added iobuf buffer pool, set of API calls for allocating data buffers across libraries. Please see new API <code>spdk_iobuf_*</code>.</p>
+<h2>trace</h2>
+<p>New <code>trace_get_info</code> RPC was added to get name of shared memory file, list of the available trace point groups and mask of the available trace points for each group.</p>
 <h2>ublk device</h2>
 <p>The ublk application supports the ublk kernel driver. It's implemented as a ublk backend in spdk_tgt and could be started with specifying configuration. See the <a href="https://www.kernel.org/doc/html/latest/block/ublk.html">ublk</a> documentation for more details.</p>
-<p>ublk bdev could export a block device via Linux ublk. It will move this backend device into userspace as <code>/dev/ublkb*</code>. Before to adding ublk device, need to create ublk target by rpc methond.</p>
+<p>ublk bdev could export a block device via Linux ublk. It will move this backend device into userspace as <code>/dev/ublkb*</code>. Before to adding ublk device, need to create ublk target by RPC method.</p>
+<h2>util</h2>
+<p>New API <code>spdk_fd_group_get_epoll_event</code> that returns the epoll(7) event that caused a function callback in file descriptor group to execute.</p>
+<p>Added API <code>spdk_strarray_from_string</code>, <code>spdk_strarray_dup</code> and <code>spdk_strarray_free</code> for handling arrays of strings.</p>
+<p>A new API <code>spdk_strcpy_replace</code> was added to replace all occurrences of the search string with the replacement string.</p>
+<p>New API <code><a class="el" href="util_8h.html#a87d0db9f66fa3fc6763dbbe238c3c179" title="Operate like memset across an iovec.">spdk_iov_memset()</a></code> was added to memset an iovec.</p>
+<p>New API <code><a class="el" href="util_8h.html#ae5b9fcc21fe47320520c6d43983ad55f" title="Initialize an iovec with just the single given buffer.">spdk_iov_one()</a></code> was added to initialize an iovec for a single buffer.</p>
 <h1>v22.09</h1>
 <h2>accel</h2>
 <p>Many names were changed in the accel framework to make them consistent both with themselves and the rest of SPDK. The primary public header file is now named <code><a class="el" href="accel_8h.html" title="Acceleration Framework.">include/spdk/accel.h</a></code>.</p>

@@ -429,5 +429,12 @@ var user_guides =
     [ "JSON-RPC Remote access", "jsonrpc_proxy.html", null ],
     [ "Userspace DTrace (USDT)", "usdt.html", null ],
     [ "NVMe Multipath", "nvme_multipath.html", null ],
-    [ "Storage Management Agent", "sma.html", null ]
+    [ "Storage Management Agent", "sma.html", null ],
+    [ "ublk Target", "ublk.html", [
+      [ "Table of Contents", "ublk.html#ublk_toc", null ],
+      [ "Introduction", "ublk.html#ublk_intro", null ],
+      [ "ublk Internal", "ublk.html#ublk_internal", null ],
+      [ "SPDK Implementation", "ublk.html#ublk_impl", null ],
+      [ "Operation", "ublk.html#ublk_op", null ]
+    ] ]
 ];

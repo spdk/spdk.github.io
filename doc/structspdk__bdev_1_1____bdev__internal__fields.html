@@ -162,6 +162,9 @@ spdk_bdev_unregister_cb&#160;</td><td class="memItemRight" valign="bottom"><a cl
 void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev_1_1____bdev__internal__fields.html#aac5fe7bcf1bbbf3f984874e1c75a580a">unregister_ctx</a></td></tr>
 <tr class="memdesc:aac5fe7bcf1bbbf3f984874e1c75a580a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unregister call context. <br /></td></tr>
 <tr class="separator:aac5fe7bcf1bbbf3f984874e1c75a580a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ac9b4eff872b0fe8c1558e3f4747884"><td class="memItemLeft" align="right" valign="top">struct spdk_thread *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev_1_1____bdev__internal__fields.html#a9ac9b4eff872b0fe8c1558e3f4747884">unregister_td</a></td></tr>
+<tr class="memdesc:a9ac9b4eff872b0fe8c1558e3f4747884"><td class="mdescLeft">&#160;</td><td class="mdescRight">Thread that issued the unregister.  <a href="structspdk__bdev_1_1____bdev__internal__fields.html#a9ac9b4eff872b0fe8c1558e3f4747884">More...</a><br /></td></tr>
+<tr class="separator:a9ac9b4eff872b0fe8c1558e3f4747884"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae3603bee677af4d8eaafffce32e0deea"><td class="memItemLeft" align="right" valign="top"><a id="ae3603bee677af4d8eaafffce32e0deea"></a>
 struct <a class="el" href="structspdk__bdev__io.html">spdk_bdev_io</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev_1_1____bdev__internal__fields.html#ae3603bee677af4d8eaafffce32e0deea">reset_in_progress</a></td></tr>
 <tr class="memdesc:ae3603bee677af4d8eaafffce32e0deea"><td class="mdescLeft">&#160;</td><td class="mdescRight">points to a reset bdev_io if one is in progress. <br /></td></tr>
@@ -308,6 +311,23 @@ struct <a class="el" href="structspdk__bdev__name.html">spdk_bdev_name</a>&#160;
 
 <p>SPDK spinlock protecting many of the internal fields of this structure. </p>
 <p>If multiple locks need to be held, the following order must be used: g_bdev_mgr.spinlock bdev-&gt;internal.spinlock bdev_desc-&gt;spinlock bdev_module-&gt;internal.spinlock </p>
+
+</div>
+</div>
+<a id="a9ac9b4eff872b0fe8c1558e3f4747884"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ac9b4eff872b0fe8c1558e3f4747884">&#9670;&nbsp;</a></span>unregister_td</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct spdk_thread* spdk_bdev::__bdev_internal_fields::unregister_td</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Thread that issued the unregister. </p>
+<p>The cb must be called on this thread. </p>
 
 </div>
 </div>
