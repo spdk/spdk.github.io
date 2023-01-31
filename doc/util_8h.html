@@ -102,6 +102,9 @@ Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__ioviter.html">spdk_ioviter</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">An iovec iterator.  <a href="structspdk__ioviter.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__iov__xfer.html">spdk_iov_xfer</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transfer state for iterative copying in or out of an iovec.  <a href="structspdk__iov__xfer.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
@@ -194,6 +197,16 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util
 <tr class="memitem:af4c8af78fb85f76425e5472e742921e6"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8h.html#af4c8af78fb85f76425e5472e742921e6">spdk_iovmove</a> (struct iovec *siov, size_t siovcnt, struct iovec *diov, size_t diovcnt)</td></tr>
 <tr class="memdesc:af4c8af78fb85f76425e5472e742921e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Same as <a class="el" href="util_8h.html#a4bf38bbd457a764604d5ba26ed3c8565" title="Copy the data described by the source iovec to the destination iovec.">spdk_iovcpy()</a>, but the src/dst buffers might overlap.  <a href="util_8h.html#af4c8af78fb85f76425e5472e742921e6">More...</a><br /></td></tr>
 <tr class="separator:af4c8af78fb85f76425e5472e742921e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5761baf18d549561bfeb58990531bbcd"><td class="memItemLeft" align="right" valign="top"><a id="a5761baf18d549561bfeb58990531bbcd"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8h.html#a5761baf18d549561bfeb58990531bbcd">spdk_iov_xfer_init</a> (struct <a class="el" href="structspdk__iov__xfer.html">spdk_iov_xfer</a> *ix, struct iovec *iovs, int iovcnt)</td></tr>
+<tr class="memdesc:a5761baf18d549561bfeb58990531bbcd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize a transfer context to point to the given iovec. <br /></td></tr>
+<tr class="separator:a5761baf18d549561bfeb58990531bbcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6ce82e1521dc2592d35403edc48a35c"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8h.html#aa6ce82e1521dc2592d35403edc48a35c">spdk_iov_xfer_from_buf</a> (struct <a class="el" href="structspdk__iov__xfer.html">spdk_iov_xfer</a> *ix, const void *buf, size_t buf_len)</td></tr>
+<tr class="memdesc:aa6ce82e1521dc2592d35403edc48a35c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy from the given buf up to buf_len bytes, into the given ix iovec iterator, advancing the iterator as needed.  <a href="util_8h.html#aa6ce82e1521dc2592d35403edc48a35c">More...</a><br /></td></tr>
+<tr class="separator:aa6ce82e1521dc2592d35403edc48a35c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1082d39cc6e9b1fb657f3b31ba430454"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8h.html#a1082d39cc6e9b1fb657f3b31ba430454">spdk_iov_xfer_to_buf</a> (struct <a class="el" href="structspdk__iov__xfer.html">spdk_iov_xfer</a> *ix, const void *buf, size_t buf_len)</td></tr>
+<tr class="memdesc:a1082d39cc6e9b1fb657f3b31ba430454"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy from the given ix iovec iterator into the given buf up to buf_len bytes, advancing the iterator as needed.  <a href="util_8h.html#a1082d39cc6e9b1fb657f3b31ba430454">More...</a><br /></td></tr>
+<tr class="separator:a1082d39cc6e9b1fb657f3b31ba430454"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a260b1024edd3144707a2286ebf50839e"><td class="memItemLeft" align="right" valign="top"><a id="a260b1024edd3144707a2286ebf50839e"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8h.html#a260b1024edd3144707a2286ebf50839e">spdk_copy_iovs_to_buf</a> (void *buf, size_t buf_len, struct iovec *iovs, int iovcnt)</td></tr>
 <tr class="memdesc:a260b1024edd3144707a2286ebf50839e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy iovs contents to buf through memcpy. <br /></td></tr>
@@ -325,6 +338,80 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="aa6ce82e1521dc2592d35403edc48a35c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa6ce82e1521dc2592d35403edc48a35c">&#9670;&nbsp;</a></span>spdk_iov_xfer_from_buf()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t spdk_iov_xfer_from_buf </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structspdk__iov__xfer.html">spdk_iov_xfer</a> *&#160;</td>
+          <td class="paramname"><em>ix</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>buf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>buf_len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Copy from the given buf up to buf_len bytes, into the given ix iovec iterator, advancing the iterator as needed. </p>
+<p>. Returns the number of bytes copied. </p>
+
+</div>
+</div>
+<a id="a1082d39cc6e9b1fb657f3b31ba430454"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1082d39cc6e9b1fb657f3b31ba430454">&#9670;&nbsp;</a></span>spdk_iov_xfer_to_buf()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t spdk_iov_xfer_to_buf </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structspdk__iov__xfer.html">spdk_iov_xfer</a> *&#160;</td>
+          <td class="paramname"><em>ix</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>buf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>buf_len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Copy from the given ix iovec iterator into the given buf up to buf_len bytes, advancing the iterator as needed. </p>
+<p>Returns the number of bytes copied. </p>
+
+</div>
+</div>
 <a id="a4bf38bbd457a764604d5ba26ed3c8565"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4bf38bbd457a764604d5ba26ed3c8565">&#9670;&nbsp;</a></span>spdk_iovcpy()</h2>
 

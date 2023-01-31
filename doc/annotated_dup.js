@@ -104,6 +104,7 @@ var annotated_dup =
     [ "spdk_iobuf_entry", "structspdk__iobuf__entry.html", "structspdk__iobuf__entry" ],
     [ "spdk_iobuf_opts", "structspdk__iobuf__opts.html", "structspdk__iobuf__opts" ],
     [ "spdk_iobuf_pool", "structspdk__iobuf__pool.html", "structspdk__iobuf__pool" ],
+    [ "spdk_iov_xfer", "structspdk__iov__xfer.html", "structspdk__iov__xfer" ],
     [ "spdk_ioviter", "structspdk__ioviter.html", "structspdk__ioviter" ],
     [ "spdk_json_object_decoder", "structspdk__json__object__decoder.html", "structspdk__json__object__decoder" ],
     [ "spdk_json_val", "structspdk__json__val.html", "structspdk__json__val" ],

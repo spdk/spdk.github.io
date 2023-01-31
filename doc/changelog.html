@@ -92,6 +92,8 @@ $(document).ready(function(){initNavTree('changelog.html',''); initResizable(); 
 <div class="textblock"><p><a class="anchor" id="md_changelog"></a> </p>
 <h1><a class="anchor" id="changelog-v23-05"></a>
 v23.05: (Upcoming Release)</h1>
+<h2>env</h2>
+<p>New function <code>spdk_env_get_main_core</code> was added.</p>
 <h1>v23.01</h1>
 <h2>accel</h2>
 <p>New library isa-l-crypto has been added, it is used by accel library in crypto operations.</p>
@@ -140,6 +142,7 @@ v23.05: (Upcoming Release)</h1>
 <p>Added RPCs <code>framework_enable_cpumask_locks</code> and <code>framework_disable_cpumask_locks</code> to enable and disable CPU core locks in runtime.</p>
 <p>Added <code>--rpcs-allowed</code> command line option. Users can specify a comma-separated list of RPC names with this option to restrict allowed RPCs to only that list.</p>
 <p>Added <code>--vfio-vf-token</code> command line option to specify a VF token (UUID) shared between SR-IOV PF and VFs for vfio_pci driver.</p>
+<p>The <code>spdk_iov_xfer_*()</code> APIs were added for handling incremental copying between an iovec and a buffer.</p>
 <h2>json</h2>
 <p>Added API <code>spdk_json_write_double</code> and <code>spdk_json_write_named_double</code> to allow for writing and decoding of the the double data type.</p>
 <h2>log</h2>

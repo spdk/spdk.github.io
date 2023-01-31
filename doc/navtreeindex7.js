@@ -1,5 +1,6 @@
 var NAVTREEINDEX7 =
 {
+"jsonrpc.html#rpc_bdev_set_qos_limit":[3,9,5,8],
 "jsonrpc.html#rpc_bdev_split_create":[3,9,9,17],
 "jsonrpc.html#rpc_bdev_split_delete":[3,9,9,18],
 "jsonrpc.html#rpc_bdev_uring_create":[3,9,9,19],
@@ -248,6 +249,5 @@ var NAVTREEINDEX7 =
 "logical_volumes.html#lvol_snapshots":[5,2,0,4],
 "logical_volumes.html#lvol_terminology":[5,2,0],
 "logical_volumes.html#lvol_thin_provisioning":[5,2,0,3],
-"logical_volumes.html#lvs":[5,2,0,0],
-"lvol_8h.html":[16,0,37]
+"logical_volumes.html#lvs":[5,2,0,0]
 };

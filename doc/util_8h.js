@@ -1,6 +1,7 @@
 var util_8h =
 [
     [ "spdk_ioviter", "structspdk__ioviter.html", "structspdk__ioviter" ],
+    [ "spdk_iov_xfer", "structspdk__iov__xfer.html", "structspdk__iov__xfer" ],
     [ "__STDC_WANT_LIB_EXT1__", "util_8h.html#a7a104b2e349617222c6419b36bfd3260", null ],
     [ "SPDK_ALIGN_CEIL", "util_8h.html#a61bd4178f177cf2265279944b0184fcd", null ],
     [ "SPDK_ALIGN_FLOOR", "util_8h.html#a4fe89df2bed54dcdc8b0d33c53a694b6", null ],
@@ -22,6 +23,9 @@ var util_8h =
     [ "spdk_divide_round_up", "util_8h.html#a3a1ed8f80bbc8e22d1f778a6615512e7", null ],
     [ "spdk_iov_memset", "util_8h.html#a87d0db9f66fa3fc6763dbbe238c3c179", null ],
     [ "spdk_iov_one", "util_8h.html#ae5b9fcc21fe47320520c6d43983ad55f", null ],
+    [ "spdk_iov_xfer_from_buf", "util_8h.html#aa6ce82e1521dc2592d35403edc48a35c", null ],
+    [ "spdk_iov_xfer_init", "util_8h.html#a5761baf18d549561bfeb58990531bbcd", null ],
+    [ "spdk_iov_xfer_to_buf", "util_8h.html#a1082d39cc6e9b1fb657f3b31ba430454", null ],
     [ "spdk_iovcpy", "util_8h.html#a4bf38bbd457a764604d5ba26ed3c8565", null ],
     [ "spdk_ioviter_first", "util_8h.html#ac49e02ee794f8dc5048934504023d6d5", null ],
     [ "spdk_ioviter_next", "util_8h.html#a0bbb80ad35ccd2da128fa69acedd2d90", null ],
