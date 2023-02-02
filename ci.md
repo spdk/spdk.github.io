@@ -9,7 +9,13 @@ toc:
     url: "https://trello.com/b/P5xBO7UR/things-to-do"
 ---
 
-The SPDK continuous integration (CI) test pool is an ever expanding group of machines, both virtual and physical, dedicated to verifying the functionality of each patch submitted to the SPDK code base. The test pool currently consists of 12 machines running multiple flavors of Linux (CentOS, Ubuntu,Fedora) and FreeBSD. Some of the machines have hardware NVMe controllers (Intel P3700) and RDMA NICs (Mellanox ConnectX-4) while others use emulated NVMe drives and Soft-RoCE NICs.
+The SPDK continuous integration (CI) test pool is an ever expanding group of machines dedicated to verifying the functionality of each patch submitted to the SPDK code base. The test pool currently consists of over 30 machines running Fedora Server. All of the systems have hardware NVMe controllers (Intel P4510, P4600 or P4610) installed, and most of them have additional hardware installed, like:
+
+* Mellanox RDMA NICs (Mellanox ConnectX-4 & ConnectX-5) used for NVMe-oF RDMA tests
+* Intel E810 NICs (CQDA2 and XXVDA2) used for NVMe-oF TCP & RDMA tests
+* Quick Assist (QAT) Cards used for crypto and compression tests
+
+On top of that SPDK test pool has a number of servers used as "VM Hosts" which are used for spinning up virtual machines using Qemu, Libvirt and Vagrant tools. These virtual machines, utilizing emulated NVMe drives and veth interfaces allow testing SPDK in virtualized environment using various Linux distributions (Fedora, Ubuntu, CentOS, Rocky Linux and FreeBSD).
 
 Anyone is allowed to contribute patches to the SPDK code base. All patches, after review, will be tested against the SPDK CI test pool. For more information on this process, please see the [development](http://www.spdk.io/development/) page. If you are interested in contributing to the spdk code base, but do not know where to begin, feel free to check out the [Trello board](http://www.spdk.io/development/).
 
