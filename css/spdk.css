@@ -240,9 +240,9 @@ pre.fragment {
 
 div.fragment {
   padding: 0 0 1px 0; /*Fixed: last line underline overlap border*/
+  padding-left: 20px;
   margin: 4px 8px 4px 2px;
     background-color: #FBFCFD;
-    border: 1px solid #C4CFE5;
 }
 
 div.line {
