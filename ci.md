@@ -26,6 +26,6 @@ In case you would like to suggest a change in SPDK's continuous integration envi
   * what is the expected outcome?
   * what are the completion criteria?
 
-Anyone is allowed to contribute patches to the SPDK code base. All patches, after review, will be tested against the SPDK CI test pool. For more information on this process, please see the [development](http://www.spdk.io/development/) page. If you are interested in contributing to the SPDK code base, but do not know where to begin, feel free to check out the [Trello board](http://www.spdk.io/development/).
+Anyone is allowed to contribute patches to the SPDK code base. All patches, after review, will be tested against the SPDK CI test pool. For more information on this process, please see the [development](http://www.spdk.io/development/) page. If you are interested in contributing to the SPDK code base, but do not know where to begin, feel free to check out the [Trello "Things to do" board](https://trello.com/b/P5xBO7UR/things-to-do).
 
 The SPDK [homepage](http://www.spdk.io/) is also version controlled and has an associated continuous integration test pool. Links to both the SPDK test pool and webpage test pool are included at right.
