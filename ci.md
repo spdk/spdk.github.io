@@ -17,6 +17,8 @@ The SPDK continuous integration (CI) test pool is an ever expanding group of mac
 
 On top of that SPDK test pool has a number of servers used as "VM Hosts" which are used for spinning up virtual machines using Qemu, Libvirt and Vagrant tools. These virtual machines, utilizing emulated NVMe drives and veth interfaces allow testing SPDK in virtualized environment using various Linux distributions (Fedora, Ubuntu, CentOS, Rocky Linux and FreeBSD).
 
+In addition to usual tests run for each submitted patch, the SPDK CI also involves performance regression tests. These are run regularly every few hours and test SPDK Vhost, SPDK NVMe-oF TCP and SPDK NVMe-oF RDMA following scenarios described in [per-release performance report documents](https://spdk.io/doc/performance_reports.html) and using current SPDK master branch for the build process. Performance regression test results are uploaded to dashboards at [performance.spdk.io](https://performance.spdk.io/), which also contain hardware specification of systems used in testing.
+
 In case you would like to suggest a change in SPDK's continuous integration environment please use [SPDK's Github issue section](https://github.com/spdk/spdk/issues) and create a new issue with `Infrastructure` and `Enhancement` labels selected. When creating the issue please provide us with as many details possible:
 
 * name of the task
