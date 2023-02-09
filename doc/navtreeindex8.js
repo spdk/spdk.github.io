@@ -1,5 +1,13 @@
 var NAVTREEINDEX8 =
 {
+"logical_volumes.html#lvol_bdev":[5,2,0,2],
+"logical_volumes.html#lvol_decoupling":[5,2,0,6],
+"logical_volumes.html#lvol_inflation":[5,2,0,5],
+"logical_volumes.html#lvol_rpc":[5,2,1],
+"logical_volumes.html#lvol_snapshots":[5,2,0,4],
+"logical_volumes.html#lvol_terminology":[5,2,0],
+"logical_volumes.html#lvol_thin_provisioning":[5,2,0,3],
+"logical_volumes.html#lvs":[5,2,0,0],
 "lvol_8h.html":[16,0,37],
 "lvol_8h.html#a003e23eb57e1318f2f60c5727cab54e2":[16,0,37,23],
 "lvol_8h.html#a15199efb9ca8b7309ec257c1a87360c5":[16,0,37,13],
@@ -241,13 +249,5 @@ var NAVTREEINDEX8 =
 "nvme_8h.html#ab50510ef1ca103e1324417f2b2c80c95":[16,0,40,15],
 "nvme_8h.html#ab562f58b5903071929d6a559fe984d0a":[16,0,40,66],
 "nvme_8h.html#ab5735e7600f79c45871b3dc3adb292f2":[16,0,40,210],
-"nvme_8h.html#ab5ab0982e7e0191fd16f041a268966b5":[16,0,40,222],
-"nvme_8h.html#ab7094727eb390b36b56817b83d39d998":[16,0,40,51],
-"nvme_8h.html#aba334622a95701d8fefad9cb2705df74":[16,0,40,88],
-"nvme_8h.html#aba57917b55ff781230c632b6a19897be":[16,0,40,225],
-"nvme_8h.html#abb7ae9abf97b7c6b57777d06eaa1258a":[16,0,40,99],
-"nvme_8h.html#abb8028f294d09711401d098e89d87f38":[16,0,40,151],
-"nvme_8h.html#abbcdb6e7c22b0ef87ed927bf97952c19":[16,0,40,101],
-"nvme_8h.html#abc0f038c06c49df0e75148faf6cc4b51":[16,0,40,54],
-"nvme_8h.html#abcd528b0df0a564c218dc2745c3af159":[16,0,40,85]
+"nvme_8h.html#ab5ab0982e7e0191fd16f041a268966b5":[16,0,40,222]
 };

@@ -1,5 +1,13 @@
 var NAVTREEINDEX14 =
 {
+"prog_guides.html":[4],
+"reduce.html":[4,6],
+"reduce_8h.html":[16,0,51],
+"reduce_8h.html#a137aea842a5ebd65781d7bcfc735018b":[16,0,51,4],
+"reduce_8h.html#a240fd573432ccd45433ba70c8bfc2d42":[16,0,51,12],
+"reduce_8h.html#a34d13995c0ae908bbe5bf798fdb52a4f":[16,0,51,5],
+"reduce_8h.html#a593901ae3d44b3315fad40da95108bee":[16,0,51,14],
+"reduce_8h.html#a62753f16686f807748719567d57f15b8":[16,0,51,10],
 "reduce_8h.html#a69e5762ed7dd884f441af718a9db33ac":[16,0,51,8],
 "reduce_8h.html#a6cc14a111d894cbb99573beb8a72c74b":[16,0,51,3],
 "reduce_8h.html#a910dd92b2a78d08fdb1cd6fa9e4c7a9e":[16,0,51,11],
@@ -241,13 +249,5 @@ var NAVTREEINDEX14 =
 "scsi__spec_8h.html#a9e2b2add18fac5a9110df411076170dca677e80ebd44f3d154d5acdefbcdba4fd":[16,0,53,44,4],
 "scsi__spec_8h.html#a9e2b2add18fac5a9110df411076170dca72800343a5359df39b6ac3a2ae8d6589":[16,0,53,44,18],
 "scsi__spec_8h.html#a9e2b2add18fac5a9110df411076170dca77fc5acfb7516efed14c990cbf15d73b":[16,0,53,44,7],
-"scsi__spec_8h.html#a9e2b2add18fac5a9110df411076170dca7cd9c58d1466d771147bcd4adcc456d2":[16,0,53,44,0],
-"scsi__spec_8h.html#a9e2b2add18fac5a9110df411076170dca7f528fa2175be6f9f1eececed153cee1":[16,0,53,44,8],
-"scsi__spec_8h.html#a9e2b2add18fac5a9110df411076170dca8369eab390bfd438f318f9564c529030":[16,0,53,44,40],
-"scsi__spec_8h.html#a9e2b2add18fac5a9110df411076170dca882cf1d01df4fac7bbb6abc45806c66d":[16,0,53,44,35],
-"scsi__spec_8h.html#a9e2b2add18fac5a9110df411076170dca8b707dc60236cb9f6d3e69799c0580dc":[16,0,53,44,19],
-"scsi__spec_8h.html#a9e2b2add18fac5a9110df411076170dca8f2b938a4a2c3849eb129a736fa68fe7":[16,0,53,44,48],
-"scsi__spec_8h.html#a9e2b2add18fac5a9110df411076170dca974443bd32056cbc53e07717cd69276f":[16,0,53,44,1],
-"scsi__spec_8h.html#a9e2b2add18fac5a9110df411076170dca9bbd8f7d640aceea90b67623df26e775":[16,0,53,44,32],
-"scsi__spec_8h.html#a9e2b2add18fac5a9110df411076170dca9cde5e38a56a7541ce7e31e6c99ccd19":[16,0,53,44,38]
+"scsi__spec_8h.html#a9e2b2add18fac5a9110df411076170dca7cd9c58d1466d771147bcd4adcc456d2":[16,0,53,44,0]
 };

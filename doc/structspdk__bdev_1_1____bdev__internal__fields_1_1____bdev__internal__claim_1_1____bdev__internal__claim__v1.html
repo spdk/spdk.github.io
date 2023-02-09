@@ -91,12 +91,15 @@ $(document).ready(function(){initNavTree('structspdk__bdev_1_1____bdev__internal
 <div class="title">spdk_bdev::__bdev_internal_fields::__bdev_internal_claim::__bdev_internal_claim_v1 Struct Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Claims acquired with <a class="el" href="bdev__module_8h.html#a43188aae62750556bba04f4ddc81fa94" title="Called by a bdev module to lay exclusive claim to a bdev.">spdk_bdev_module_claim_bdev()</a>  
+ <a href="structspdk__bdev_1_1____bdev__internal__fields_1_1____bdev__internal__claim_1_1____bdev__internal__claim__v1.html#details">More...</a></p>
 <div class="dynheader">
 Collaboration diagram for spdk_bdev::__bdev_internal_fields::__bdev_internal_claim::__bdev_internal_claim_v1:</div>
 <div class="dyncontent">
 <div class="center"><img src="structspdk__bdev_1_1____bdev__internal__fields_1_1____bdev__internal__claim_1_1____bdev__internal__claim__v1__coll__graph.png" border="0" usemap="#aspdk__bdev_1_1____bdev__internal__fields_1_1____bdev__internal__claim_1_1____bdev__internal__claim__v1_coll__map" alt="Collaboration graph"/></div>
 <map name="aspdk__bdev_1_1____bdev__internal__fields_1_1____bdev__internal__claim_1_1____bdev__internal__claim__v1_coll__map" id="aspdk__bdev_1_1____bdev__internal__fields_1_1____bdev__internal__claim_1_1____bdev__internal__claim__v1_coll__map">
-<area shape="rect" title=" " alt="" coords="5,213,248,269"/>
+<area shape="rect" title="Claims acquired with spdk_bdev_module_claim_bdev()" alt="" coords="5,213,248,269"/>
 <area shape="rect" href="structspdk__bdev__module.html" title="Block device module." alt="" coords="53,124,201,151"/>
 <area shape="rect" href="structspdk__bdev__module_1_1____bdev__module__internal__fields.html" title="Fields that are used by the internal bdev subsystem." alt="" coords="36,5,217,61"/>
 </map>
@@ -108,7 +111,9 @@ Data Fields</h2></td></tr>
 <tr class="memdesc:a3db9113976cb41e7b3aca0026aa25a65"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to the module that has claimed this bdev for purposes of creating virtual bdevs on top of it.  <a href="structspdk__bdev_1_1____bdev__internal__fields_1_1____bdev__internal__claim_1_1____bdev__internal__claim__v1.html#a3db9113976cb41e7b3aca0026aa25a65">More...</a><br /></td></tr>
 <tr class="separator:a3db9113976cb41e7b3aca0026aa25a65"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Field Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Claims acquired with <a class="el" href="bdev__module_8h.html#a43188aae62750556bba04f4ddc81fa94" title="Called by a bdev module to lay exclusive claim to a bdev.">spdk_bdev_module_claim_bdev()</a> </p>
+</div><h2 class="groupheader">Field Documentation</h2>
 <a id="a3db9113976cb41e7b3aca0026aa25a65"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3db9113976cb41e7b3aca0026aa25a65">&#9670;&nbsp;</a></span>module</h2>
 
@@ -122,7 +127,7 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Pointer to the module that has claimed this bdev for purposes of creating virtual bdevs on top of it. </p>
-<p>Set to NULL if the bdev has not been claimed. </p>
+<p>Set to NULL and set claim_type to SPDK_BDEV_CLAIM_NONE if the bdev has not been claimed. </p>
 
 </div>
 </div>

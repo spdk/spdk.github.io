@@ -1,5 +1,13 @@
 var NAVTREEINDEX13 =
 {
+"nvmf__spec_8h.html#a808272f050cc373f3a90871c1528afd4":[16,0,47,65],
+"nvmf__spec_8h.html#a808272f050cc373f3a90871c1528afd4a3077cae3ec6525a14d3c3c5005a6326f":[16,0,47,65,1],
+"nvmf__spec_8h.html#a808272f050cc373f3a90871c1528afd4a8daee5a10ca6d8e4116a52c4e4428948":[16,0,47,65,0],
+"nvmf__spec_8h.html#a8160e0de076c720c857a931ce41ef907":[16,0,47,92],
+"nvmf__spec_8h.html#a827bad69378511b248d401f04c12233c":[16,0,47,99],
+"nvmf__spec_8h.html#a829b6e12e0587256e13ac06375b7eaab":[16,0,47,83],
+"nvmf__spec_8h.html#a8309a378afeb07bfa3b6025157109ef5":[16,0,47,78],
+"nvmf__spec_8h.html#a87400e526c97625897236a9da16067d8":[16,0,47,29],
 "nvmf__spec_8h.html#a87bd863f9d02822c078fb4446141ce25":[16,0,47,109],
 "nvmf__spec_8h.html#a90e0edaad0f457a5141423717f84f12f":[16,0,47,42],
 "nvmf__spec_8h.html#a92be3e3b482cfb85521cea178af1f3ef":[16,0,47,97],
@@ -241,13 +249,5 @@ var NAVTREEINDEX13 =
 "pipe_8h.html#aa87f504699fa72a5ae0a740779510054":[16,0,50,0],
 "pipe_8h.html#ab0e6c8083ac773f72290929e0f430eb6":[16,0,50,3],
 "pkgconfig.html":[3,2],
-"porting.html":[2,7],
-"prog_guides.html":[4],
-"reduce.html":[4,6],
-"reduce_8h.html":[16,0,51],
-"reduce_8h.html#a137aea842a5ebd65781d7bcfc735018b":[16,0,51,4],
-"reduce_8h.html#a240fd573432ccd45433ba70c8bfc2d42":[16,0,51,12],
-"reduce_8h.html#a34d13995c0ae908bbe5bf798fdb52a4f":[16,0,51,5],
-"reduce_8h.html#a593901ae3d44b3315fad40da95108bee":[16,0,51,14],
-"reduce_8h.html#a62753f16686f807748719567d57f15b8":[16,0,51,10]
+"porting.html":[2,7]
 };

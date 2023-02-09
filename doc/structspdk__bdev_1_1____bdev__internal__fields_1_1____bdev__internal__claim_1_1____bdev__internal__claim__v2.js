@@ -1,0 +1,5 @@
+var structspdk__bdev_1_1____bdev__internal__fields_1_1____bdev__internal__claim_1_1____bdev__internal__claim__v2 =
+[
+    [ "TAILQ_HEAD", "structspdk__bdev_1_1____bdev__internal__fields_1_1____bdev__internal__claim_1_1____bdev__internal__claim__v2.html#a1ee6b0f5bf199c39131689615b0b421e", null ],
+    [ "key", "structspdk__bdev_1_1____bdev__internal__fields_1_1____bdev__internal__claim_1_1____bdev__internal__claim__v2.html#a2b0875171cbaa591c529a072e8e31865", null ]
+];

@@ -1,5 +1,13 @@
 var NAVTREEINDEX7 =
 {
+"jsonrpc.html#rpc_bdev_rbd_delete":[3,9,5,55],
+"jsonrpc.html#rpc_bdev_rbd_get_clusters_info":[3,9,5,53],
+"jsonrpc.html#rpc_bdev_rbd_register_cluster":[3,9,5,51],
+"jsonrpc.html#rpc_bdev_rbd_resize":[3,9,5,56],
+"jsonrpc.html#rpc_bdev_rbd_unregister_cluster":[3,9,5,52],
+"jsonrpc.html#rpc_bdev_reset_iostat":[3,9,5,5],
+"jsonrpc.html#rpc_bdev_set_options":[3,9,5,0],
+"jsonrpc.html#rpc_bdev_set_qd_sampling_period":[3,9,5,9],
 "jsonrpc.html#rpc_bdev_set_qos_limit":[3,9,5,8],
 "jsonrpc.html#rpc_bdev_split_create":[3,9,9,17],
 "jsonrpc.html#rpc_bdev_split_delete":[3,9,9,18],
@@ -241,13 +249,5 @@ var NAVTREEINDEX7 =
 "log_8h.html#af600090b2a4aa95b4e9e4dae27bf6c7e":[16,0,36,29],
 "log_8h.html#afc930c0e1a4696a4c489c781b1a55b02":[16,0,36,16],
 "logical_volumes.html":[5,2],
-"logical_volumes.html#lvol":[5,2,0,1],
-"logical_volumes.html#lvol_bdev":[5,2,0,2],
-"logical_volumes.html#lvol_decoupling":[5,2,0,6],
-"logical_volumes.html#lvol_inflation":[5,2,0,5],
-"logical_volumes.html#lvol_rpc":[5,2,1],
-"logical_volumes.html#lvol_snapshots":[5,2,0,4],
-"logical_volumes.html#lvol_terminology":[5,2,0],
-"logical_volumes.html#lvol_thin_provisioning":[5,2,0,3],
-"logical_volumes.html#lvs":[5,2,0,0]
+"logical_volumes.html#lvol":[5,2,0,1]
 };

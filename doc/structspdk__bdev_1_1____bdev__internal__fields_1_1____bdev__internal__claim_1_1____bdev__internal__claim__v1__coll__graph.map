@@ -1,5 +1,5 @@
 <map id="spdk_bdev::__bdev_internal_fields::__bdev_internal_claim::__bdev_internal_claim_v1" name="spdk_bdev::__bdev_internal_fields::__bdev_internal_claim::__bdev_internal_claim_v1">
-<area shape="rect" id="node1" title=" " alt="" coords="5,213,248,269"/>
+<area shape="rect" id="node1" title="Claims acquired with spdk_bdev_module_claim_bdev()" alt="" coords="5,213,248,269"/>
 <area shape="rect" id="node2" href="$structspdk__bdev__module.html" title="Block device module." alt="" coords="53,124,201,151"/>
 <area shape="rect" id="node3" href="$structspdk__bdev__module_1_1____bdev__module__internal__fields.html" title="Fields that are used by the internal bdev subsystem." alt="" coords="36,5,217,61"/>
 </map>

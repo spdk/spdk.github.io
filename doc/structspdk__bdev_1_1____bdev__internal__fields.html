@@ -108,7 +108,8 @@ Collaboration diagram for spdk_bdev::__bdev_internal_fields:</div>
 <area shape="rect" href="structspdk__spinlock.html" title="A spinlock augmented with safety checks for use with SPDK." alt="" coords="369,155,484,181"/>
 <area shape="rect" href="structspdk__bdev__io__stat.html" title=" " alt="" coords="355,205,498,232"/>
 <area shape="rect" href="unionspdk__bdev_1_1____bdev__internal__fields_1_1____bdev__internal__claim.html" title="Which module has claimed this bdev." alt="" coords="317,257,536,298"/>
-<area shape="rect" href="structspdk__bdev_1_1____bdev__internal__fields_1_1____bdev__internal__claim_1_1____bdev__internal__claim__v1.html" title=" " alt="" coords="5,249,248,305"/>
+<area shape="rect" href="structspdk__bdev_1_1____bdev__internal__fields_1_1____bdev__internal__claim_1_1____bdev__internal__claim__v1.html" title="Claims acquired with spdk_bdev_module_claim_bdev()" alt="" coords="5,209,248,265"/>
+<area shape="rect" href="structspdk__bdev_1_1____bdev__internal__fields_1_1____bdev__internal__claim_1_1____bdev__internal__claim__v2.html" title="Claims acquired with spdk_bdev_module_claim_bdev_desc()" alt="" coords="5,289,248,345"/>
 <area shape="rect" href="structspdk__bdev__io_1_1____bdev__io__internal__fields.html" title="Fields that are used internally by the bdev subsystem." alt="" coords="1519,73,1684,114"/>
 <area shape="rect" href="structspdk__nvme__cmd.html" title=" " alt="" coords="969,87,1101,113"/>
 <area shape="rect" href="structspdk__bdev__ext__io__opts.html" title="Structure with optional IO request parameters The content of this structure must be valid until the I..." alt="" coords="948,21,1123,48"/>
@@ -148,6 +149,9 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stru
 enum <a class="el" href="bdev_8h.html#ad6c166f5d928c2995df57c96a2977862">spdk_bdev_status</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev_1_1____bdev__internal__fields.html#a75eb824f166523af1bb44edc6b209e89">status</a></td></tr>
 <tr class="memdesc:a75eb824f166523af1bb44edc6b209e89"><td class="mdescLeft">&#160;</td><td class="mdescRight">The bdev status. <br /></td></tr>
 <tr class="separator:a75eb824f166523af1bb44edc6b209e89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af31c1f546b2115b5887bc0c3db3418b5"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev_1_1____bdev__internal__fields.html#af31c1f546b2115b5887bc0c3db3418b5">examine_in_progress</a></td></tr>
+<tr class="memdesc:af31c1f546b2115b5887bc0c3db3418b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">How many bdev_examine() calls are iterating claim.v2.claims.  <a href="structspdk__bdev_1_1____bdev__internal__fields.html#af31c1f546b2115b5887bc0c3db3418b5">More...</a><br /></td></tr>
+<tr class="separator:af31c1f546b2115b5887bc0c3db3418b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a44a2ea1eb398ba877d738c2ef2d020c6"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="bdev__module_8h.html#a925d6b2ad6ebe5de21a0ef80271c5919">spdk_bdev_claim_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev_1_1____bdev__internal__fields.html#a44a2ea1eb398ba877d738c2ef2d020c6">claim_type</a></td></tr>
 <tr class="memdesc:a44a2ea1eb398ba877d738c2ef2d020c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">The claim type: used in conjunction with claim.  <a href="structspdk__bdev_1_1____bdev__internal__fields.html#a44a2ea1eb398ba877d738c2ef2d020c6">More...</a><br /></td></tr>
 <tr class="separator:a44a2ea1eb398ba877d738c2ef2d020c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -243,6 +247,23 @@ struct <a class="el" href="structspdk__bdev__name.html">spdk_bdev_name</a>&#160;
 
 <p>The claim type: used in conjunction with claim. </p>
 <p>Must hold spinlock on all updates. </p>
+
+</div>
+</div>
+<a id="af31c1f546b2115b5887bc0c3db3418b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af31c1f546b2115b5887bc0c3db3418b5">&#9670;&nbsp;</a></span>examine_in_progress</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t spdk_bdev::__bdev_internal_fields::examine_in_progress</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>How many bdev_examine() calls are iterating claim.v2.claims. </p>
+<p>When non-zero claims that are released will be cleared but remain on the claims list until bdev_examine() finishes. Must hold spinlock on all updates. </p>
 
 </div>
 </div>

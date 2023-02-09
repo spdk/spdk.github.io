@@ -107,12 +107,17 @@ Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev__module_1_1____bdev__module__internal__fields.html">spdk_bdev_module::__bdev_module_internal_fields</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fields that are used by the internal bdev subsystem.  <a href="structspdk__bdev__module_1_1____bdev__module__internal__fields.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev__claim__opts.html">spdk_bdev_claim_opts</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Options used when requesting a claim.  <a href="structspdk__bdev__claim__opts.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev__fn__table.html">spdk_bdev_fn_table</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function table for a block device backend.  <a href="structspdk__bdev__fn__table.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev__name.html">spdk_bdev_name</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev__alias.html">spdk_bdev_alias</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev__module__claim.html">spdk_bdev_module_claim</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev.html">spdk_bdev</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -123,6 +128,10 @@ Data Structures</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Which module has claimed this bdev.  <a href="unionspdk__bdev_1_1____bdev__internal__fields_1_1____bdev__internal__claim.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev_1_1____bdev__internal__fields_1_1____bdev__internal__claim_1_1____bdev__internal__claim__v1.html">spdk_bdev::__bdev_internal_fields::__bdev_internal_claim::__bdev_internal_claim_v1</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Claims acquired with <a class="el" href="bdev__module_8h.html#a43188aae62750556bba04f4ddc81fa94" title="Called by a bdev module to lay exclusive claim to a bdev.">spdk_bdev_module_claim_bdev()</a>  <a href="structspdk__bdev_1_1____bdev__internal__fields_1_1____bdev__internal__claim_1_1____bdev__internal__claim__v1.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev_1_1____bdev__internal__fields_1_1____bdev__internal__claim_1_1____bdev__internal__claim__v2.html">spdk_bdev::__bdev_internal_fields::__bdev_internal_claim::__bdev_internal_claim_v2</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Claims acquired with <a class="el" href="bdev__module_8h.html#a8936a9564edfe44f16ba39e4b859ff36" title="Claim the bdev referenced by the open descriptor.">spdk_bdev_module_claim_bdev_desc()</a>  <a href="structspdk__bdev_1_1____bdev__internal__fields_1_1____bdev__internal__claim_1_1____bdev__internal__claim__v2.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev__io.html">spdk_bdev_io</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -139,6 +148,9 @@ Data Structures</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
+<tr class="memitem:acebcda8f5be4d75e9980eb8588228a5b"><td class="memItemLeft" align="right" valign="top"><a id="acebcda8f5be4d75e9980eb8588228a5b"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_BDEV_CLAIM_NAME_LEN</b>&#160;&#160;&#160;32</td></tr>
+<tr class="separator:acebcda8f5be4d75e9980eb8588228a5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5201c4fcaef3b8f7c850a2d6eaaf84a5"><td class="memItemLeft" align="right" valign="top"><a id="a5201c4fcaef3b8f7c850a2d6eaaf84a5"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_BDEV_RESET_IO_DRAIN_RECOMMENDED_VALUE</b>&#160;&#160;&#160;5</td></tr>
 <tr class="separator:a5201c4fcaef3b8f7c850a2d6eaaf84a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -174,8 +186,14 @@ typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_g
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:a925d6b2ad6ebe5de21a0ef80271c5919"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev__module_8h.html#a925d6b2ad6ebe5de21a0ef80271c5919">spdk_bdev_claim_type</a> { <b>SPDK_BDEV_CLAIM_NONE</b> = 0
+<tr class="memitem:a925d6b2ad6ebe5de21a0ef80271c5919"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev__module_8h.html#a925d6b2ad6ebe5de21a0ef80271c5919">spdk_bdev_claim_type</a> { <br />
+&#160;&#160;<b>SPDK_BDEV_CLAIM_NONE</b> = 0
 , <a class="el" href="bdev__module_8h.html#a925d6b2ad6ebe5de21a0ef80271c5919a57e1235cb4553faad33f9b8389881f4b">SPDK_BDEV_CLAIM_EXCL_WRITE</a>
+, <a class="el" href="bdev__module_8h.html#a925d6b2ad6ebe5de21a0ef80271c5919ac66d93661ccaf703ef942ab82caa7af8">SPDK_BDEV_CLAIM_READ_MANY_WRITE_ONE</a>
+, <a class="el" href="bdev__module_8h.html#a925d6b2ad6ebe5de21a0ef80271c5919a9abbfbe6d44e3310f0108b3b85c64178">SPDK_BDEV_CLAIM_READ_MANY_WRITE_NONE</a>
+, <br />
+&#160;&#160;<a class="el" href="bdev__module_8h.html#a925d6b2ad6ebe5de21a0ef80271c5919a476c43608edcb992be80419d92f3f52e">SPDK_BDEV_CLAIM_READ_MANY_WRITE_SHARED</a>
+<br />
  }</td></tr>
 <tr class="memdesc:a925d6b2ad6ebe5de21a0ef80271c5919"><td class="mdescLeft">&#160;</td><td class="mdescRight">Claim types.  <a href="bdev__module_8h.html#a925d6b2ad6ebe5de21a0ef80271c5919">More...</a><br /></td></tr>
 <tr class="separator:a925d6b2ad6ebe5de21a0ef80271c5919"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -204,6 +222,18 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:a9d4d3e756471a4a4935fdf01f7d73b43"><td class="memItemLeft" align="right" valign="top"><a id="a9d4d3e756471a4a4935fdf01f7d73b43"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_STATIC_ASSERT</b> (sizeof(struct <a class="el" href="structspdk__bdev__claim__opts.html">spdk_bdev_claim_opts</a>)==48, &quot;Incorrect size&quot;)</td></tr>
+<tr class="separator:a9d4d3e756471a4a4935fdf01f7d73b43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b7003c4aab0f84e7309df6c8eb04ed5"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev__module_8h.html#a7b7003c4aab0f84e7309df6c8eb04ed5">spdk_bdev_claim_get_name</a> (enum <a class="el" href="bdev__module_8h.html#a925d6b2ad6ebe5de21a0ef80271c5919">spdk_bdev_claim_type</a> claim_type)</td></tr>
+<tr class="memdesc:a7b7003c4aab0f84e7309df6c8eb04ed5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve the name of the bdev module claim type.  <a href="bdev__module_8h.html#a7b7003c4aab0f84e7309df6c8eb04ed5">More...</a><br /></td></tr>
+<tr class="separator:a7b7003c4aab0f84e7309df6c8eb04ed5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7d6da3b0c04b90de63ddd55fd668327"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev__module_8h.html#af7d6da3b0c04b90de63ddd55fd668327">spdk_bdev_claim_opts_init</a> (struct <a class="el" href="structspdk__bdev__claim__opts.html">spdk_bdev_claim_opts</a> *opts, size_t size)</td></tr>
+<tr class="memdesc:af7d6da3b0c04b90de63ddd55fd668327"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize bdev module claim options structure.  <a href="bdev__module_8h.html#af7d6da3b0c04b90de63ddd55fd668327">More...</a><br /></td></tr>
+<tr class="separator:af7d6da3b0c04b90de63ddd55fd668327"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8936a9564edfe44f16ba39e4b859ff36"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev__module_8h.html#a8936a9564edfe44f16ba39e4b859ff36">spdk_bdev_module_claim_bdev_desc</a> (struct spdk_bdev_desc *desc, enum <a class="el" href="bdev__module_8h.html#a925d6b2ad6ebe5de21a0ef80271c5919">spdk_bdev_claim_type</a> type, struct <a class="el" href="structspdk__bdev__claim__opts.html">spdk_bdev_claim_opts</a> *opts, struct <a class="el" href="structspdk__bdev__module.html">spdk_bdev_module</a> *module)</td></tr>
+<tr class="memdesc:a8936a9564edfe44f16ba39e4b859ff36"><td class="mdescLeft">&#160;</td><td class="mdescRight">Claim the bdev referenced by the open descriptor.  <a href="bdev__module_8h.html#a8936a9564edfe44f16ba39e4b859ff36">More...</a><br /></td></tr>
+<tr class="separator:a8936a9564edfe44f16ba39e4b859ff36"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a43188aae62750556bba04f4ddc81fa94"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev__module_8h.html#a43188aae62750556bba04f4ddc81fa94">spdk_bdev_module_claim_bdev</a> (struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *bdev, struct spdk_bdev_desc *desc, struct <a class="el" href="structspdk__bdev__module.html">spdk_bdev_module</a> *module)</td></tr>
 <tr class="memdesc:a43188aae62750556bba04f4ddc81fa94"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called by a bdev module to lay exclusive claim to a bdev.  <a href="bdev__module_8h.html#a43188aae62750556bba04f4ddc81fa94">More...</a><br /></td></tr>
 <tr class="separator:a43188aae62750556bba04f4ddc81fa94"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -479,7 +509,17 @@ typedef&#160;</td><td class="memItemRight" valign="bottom"><b>TAILQ_HEAD</b> (bd
 
 <p>Claim types. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a925d6b2ad6ebe5de21a0ef80271c5919a57e1235cb4553faad33f9b8389881f4b"></a>SPDK_BDEV_CLAIM_EXCL_WRITE&#160;</td><td class="fielddoc"><p>Exclusive writer. </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a925d6b2ad6ebe5de21a0ef80271c5919a57e1235cb4553faad33f9b8389881f4b"></a>SPDK_BDEV_CLAIM_EXCL_WRITE&#160;</td><td class="fielddoc"><p>Exclusive writer, with allowances for legacy behavior. </p>
+<p>This matches the behavior of <code><a class="el" href="bdev__module_8h.html#a43188aae62750556bba04f4ddc81fa94" title="Called by a bdev module to lay exclusive claim to a bdev.">spdk_bdev_module_claim_bdev()</a></code> as of SPDK 22.09. New consumer should use SPDK_BDEV_CLAIM_READ_MANY_WRITE_ONE instead. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a925d6b2ad6ebe5de21a0ef80271c5919ac66d93661ccaf703ef942ab82caa7af8"></a>SPDK_BDEV_CLAIM_READ_MANY_WRITE_ONE&#160;</td><td class="fielddoc"><p>The descriptor passed with this claim request is the only writer. </p>
+<p>Other claimless readers are allowed. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a925d6b2ad6ebe5de21a0ef80271c5919a9abbfbe6d44e3310f0108b3b85c64178"></a>SPDK_BDEV_CLAIM_READ_MANY_WRITE_NONE&#160;</td><td class="fielddoc"><p>Any number of readers, no writers. </p>
+<p>Readers without a claim are allowed. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a925d6b2ad6ebe5de21a0ef80271c5919a476c43608edcb992be80419d92f3f52e"></a>SPDK_BDEV_CLAIM_READ_MANY_WRITE_SHARED&#160;</td><td class="fielddoc"><p>Any number of writers with matching shared_claim_key. </p>
+<p>After the first writer establishes a claim, future aspiring writers should open read-only and pass the read-only descriptor. If the shared claim is granted to the aspiring writer, the descriptor will be upgraded to read-write. </p>
 </td></tr>
 </table>
 
@@ -628,6 +668,73 @@ typedef&#160;</td><td class="memItemRight" valign="bottom"><b>TAILQ_HEAD</b> (bd
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">bdev</td><td>Block device to operate. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a7b7003c4aab0f84e7309df6c8eb04ed5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b7003c4aab0f84e7309df6c8eb04ed5">&#9670;&nbsp;</a></span>spdk_bdev_claim_get_name()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* spdk_bdev_claim_get_name </td>
+          <td>(</td>
+          <td class="paramtype">enum <a class="el" href="bdev__module_8h.html#a925d6b2ad6ebe5de21a0ef80271c5919">spdk_bdev_claim_type</a>&#160;</td>
+          <td class="paramname"><em>claim_type</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Retrieve the name of the bdev module claim type. </p>
+<p>The mapping between claim types and their names is:</p>
+<p>SPDK_BDEV_CLAIM_NONE "not_claimed" SPDK_BDEV_CLAIM_EXCL_WRITE "exclusive_write" SPDK_BDEV_CLAIM_READ_MANY_WRITE_ONE "read_many_write_one" SPDK_BDEV_CLAIM_READ_MANY_WRITE_NONE "read_many_write_none" SPDK_BDEV_CLAIM_READ_MANY_WRITE_SHARED "read_many_write_shared"</p>
+<p>Any other value will return "invalid_claim".</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">claim_type</td><td>The claim type. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A string that describes the claim type. </dd></dl>
+
+</div>
+</div>
+<a id="af7d6da3b0c04b90de63ddd55fd668327"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af7d6da3b0c04b90de63ddd55fd668327">&#9670;&nbsp;</a></span>spdk_bdev_claim_opts_init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_bdev_claim_opts_init </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structspdk__bdev__claim__opts.html">spdk_bdev_claim_opts</a> *&#160;</td>
+          <td class="paramname"><em>opts</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Initialize bdev module claim options structure. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">opts</td><td>The structure to initialize. </td></tr>
+    <tr><td class="paramname">size</td><td>The size of *opts. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1351,6 +1458,65 @@ typedef&#160;</td><td class="memItemRight" valign="bottom"><b>TAILQ_HEAD</b> (bd
 <dl class="section return"><dt>Returns</dt><dd>0 on success </dd>
 <dd>
 -EPERM if the bdev is already claimed by another module. </dd></dl>
+
+</div>
+</div>
+<a id="a8936a9564edfe44f16ba39e4b859ff36"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8936a9564edfe44f16ba39e4b859ff36">&#9670;&nbsp;</a></span>spdk_bdev_module_claim_bdev_desc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_bdev_module_claim_bdev_desc </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_bdev_desc *&#160;</td>
+          <td class="paramname"><em>desc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">enum <a class="el" href="bdev__module_8h.html#a925d6b2ad6ebe5de21a0ef80271c5919">spdk_bdev_claim_type</a>&#160;</td>
+          <td class="paramname"><em>type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structspdk__bdev__claim__opts.html">spdk_bdev_claim_opts</a> *&#160;</td>
+          <td class="paramname"><em>opts</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structspdk__bdev__module.html">spdk_bdev_module</a> *&#160;</td>
+          <td class="paramname"><em>module</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Claim the bdev referenced by the open descriptor. </p>
+<p>The claim is released as the descriptor is closed.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">desc</td><td>An open bdev descriptor. Some claim types may upgrade this from read-only to read-write. </td></tr>
+    <tr><td class="paramname">type</td><td>The type of claim to establish. </td></tr>
+    <tr><td class="paramname">opts</td><td>NULL or options required by the particular claim type. </td></tr>
+    <tr><td class="paramname">module</td><td>The bdev module making this claim. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success </dd>
+<dd>
+-ENOMEM if insufficient memory to track the claim </dd>
+<dd>
+-EBUSY if the claim cannot be granted due to a conflict </dd>
+<dd>
+-EINVAL if the claim type required options that were not passed or required parameters were NULL. </dd></dl>
 
 </div>
 </div>
