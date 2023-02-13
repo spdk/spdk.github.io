@@ -1497,6 +1497,32 @@ accel_crypto_keys_get</h2>
 <div class="line">    }</div>
 <div class="line">  ]</div>
 <div class="line">}</div>
+</div><!-- fragment --><h2><a class="anchor" id="rpc_accel_set_driver"></a>
+accel_set_driver</h2>
+<p>Select platform driver to execute operation chains. Until a driver is selected, all operations are executed through accel modules.</p>
+<h3>Parameters</h3>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Name of the platform driver   </td></tr>
+</table>
+<h3>Example</h3>
+<p>Example request:</p>
+<div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
+<div class="line">  &quot;method&quot;: &quot;accel_set_driver&quot;,</div>
+<div class="line">  &quot;id&quot;: 1</div>
+<div class="line">  &quot;params&quot;: {</div>
+<div class="line">    &quot;name&quot;: &quot;xeon&quot;</div>
+<div class="line">  }</div>
+<div class="line">}</div>
+</div><!-- fragment --><p>Example response:</p>
+<div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
+<div class="line">  &quot;id&quot;: 1,</div>
+<div class="line">  &quot;result&quot;: true</div>
+<div class="line">}</div>
 </div><!-- fragment --><h2><a class="anchor" id="rpc_compressdev_scan_accel_module"></a>
 compressdev_scan_accel_module</h2>
 <p>Set config and enable compressdev accel module offload. Select the DPDK polled mode driver (pmd) for the accel compress module, 0 = auto-select, 1= QAT only, 2 = mlx5_pci only.</p>

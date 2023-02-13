@@ -1,5 +1,7 @@
 var NAVTREEINDEX7 =
 {
+"jsonrpc.html#rpc_bdev_raid_get_bdevs":[3,9,9,14],
+"jsonrpc.html#rpc_bdev_rbd_create":[3,9,5,54],
 "jsonrpc.html#rpc_bdev_rbd_delete":[3,9,5,55],
 "jsonrpc.html#rpc_bdev_rbd_get_clusters_info":[3,9,5,53],
 "jsonrpc.html#rpc_bdev_rbd_register_cluster":[3,9,5,51],
@@ -26,11 +28,11 @@ var NAVTREEINDEX7 =
 "jsonrpc.html#rpc_blobfs_detect":[3,9,12,0],
 "jsonrpc.html#rpc_blobfs_mount":[3,9,12,2],
 "jsonrpc.html#rpc_blobfs_set_cache_size":[3,9,12,3],
-"jsonrpc.html#rpc_compressdev_scan_accel_module":[3,9,4,6],
-"jsonrpc.html#rpc_dpdk_cryptodev_get_driver":[3,9,4,12],
-"jsonrpc.html#rpc_dpdk_cryptodev_scan_accel_module":[3,9,4,10],
-"jsonrpc.html#rpc_dpdk_cryptodev_set_driver":[3,9,4,11],
-"jsonrpc.html#rpc_dsa_scan_accel_module":[3,9,4,7],
+"jsonrpc.html#rpc_compressdev_scan_accel_module":[3,9,4,7],
+"jsonrpc.html#rpc_dpdk_cryptodev_get_driver":[3,9,4,13],
+"jsonrpc.html#rpc_dpdk_cryptodev_scan_accel_module":[3,9,4,11],
+"jsonrpc.html#rpc_dpdk_cryptodev_set_driver":[3,9,4,12],
+"jsonrpc.html#rpc_dsa_scan_accel_module":[3,9,4,8],
 "jsonrpc.html#rpc_enable_vmd":[3,9,13,4],
 "jsonrpc.html#rpc_env_dpdk_get_mem_stats":[3,9,3,28],
 "jsonrpc.html#rpc_framework_get_config":[3,9,3,6],
@@ -41,8 +43,8 @@ var NAVTREEINDEX7 =
 "jsonrpc.html#rpc_framework_set_scheduler":[3,9,3,8],
 "jsonrpc.html#rpc_framework_start_init":[3,9,3,2],
 "jsonrpc.html#rpc_framework_wait_init":[3,9,3,3],
-"jsonrpc.html#rpc_iaa_scan_accel_module":[3,9,4,8],
-"jsonrpc.html#rpc_ioat_scan_accel_module":[3,9,4,9],
+"jsonrpc.html#rpc_iaa_scan_accel_module":[3,9,4,9],
+"jsonrpc.html#rpc_ioat_scan_accel_module":[3,9,4,10],
 "jsonrpc.html#rpc_iobuf_set_options":[3,9,13,13],
 "jsonrpc.html#rpc_iscsi_auth_group_add_secret":[3,9,6,7],
 "jsonrpc.html#rpc_iscsi_auth_group_remove_secret":[3,9,6,8],
@@ -81,7 +83,7 @@ var NAVTREEINDEX7 =
 "jsonrpc.html#rpc_log_set_flag":[3,9,3,22],
 "jsonrpc.html#rpc_log_set_level":[3,9,3,20],
 "jsonrpc.html#rpc_log_set_print_level":[3,9,3,18],
-"jsonrpc.html#rpc_mlx5_scan_accel_module":[3,9,4,13],
+"jsonrpc.html#rpc_mlx5_scan_accel_module":[3,9,4,14],
 "jsonrpc.html#rpc_nbd_get_disks":[3,9,11,2],
 "jsonrpc.html#rpc_nbd_start_disk":[3,9,11,0],
 "jsonrpc.html#rpc_nbd_stop_disk":[3,9,11,1],
@@ -247,7 +249,5 @@ var NAVTREEINDEX7 =
 "log_8h.html#aebde768fd834a3c9364b7b5a8bd479f4":[16,0,36,18],
 "log_8h.html#aec36027084c167aa798f9f4cb33e639a":[16,0,36,8],
 "log_8h.html#af600090b2a4aa95b4e9e4dae27bf6c7e":[16,0,36,29],
-"log_8h.html#afc930c0e1a4696a4c489c781b1a55b02":[16,0,36,16],
-"logical_volumes.html":[5,2],
-"logical_volumes.html#lvol":[5,2,0,1]
+"log_8h.html#afc930c0e1a4696a4c489c781b1a55b02":[16,0,36,16]
 };

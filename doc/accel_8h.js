@@ -36,6 +36,7 @@ var accel_8h =
     [ "spdk_accel_sequence_abort", "accel_8h.html#a4bead81df6ccd705747dcdbfe9ffa6d9", null ],
     [ "spdk_accel_sequence_finish", "accel_8h.html#a03c51473e9f0b4882f279c89131a2b14", null ],
     [ "spdk_accel_sequence_reverse", "accel_8h.html#a543390f0413ec678c76ea7f39fc5f27d", null ],
+    [ "spdk_accel_set_driver", "accel_8h.html#a142328e0ffe6cf8299dcee984012b660", null ],
     [ "spdk_accel_submit_compare", "accel_8h.html#a7ba82c135282c35831243dd787fbe907", null ],
     [ "spdk_accel_submit_compress", "accel_8h.html#a7c7ed1bfb32c852ce8a8ebf67f0ac0ed", null ],
     [ "spdk_accel_submit_copy", "accel_8h.html#a8414580180688f9334f9a8e3103a6e28", null ],

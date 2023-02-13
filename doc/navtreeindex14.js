@@ -1,5 +1,7 @@
 var NAVTREEINDEX14 =
 {
+"pkgconfig.html":[3,2],
+"porting.html":[2,7],
 "prog_guides.html":[4],
 "reduce.html":[4,6],
 "reduce_8h.html":[16,0,51],
@@ -247,7 +249,5 @@ var NAVTREEINDEX14 =
 "scsi__spec_8h.html#a9e2b2add18fac5a9110df411076170dca61a8e8fc29f1ba317619654e3d79a234":[16,0,53,44,22],
 "scsi__spec_8h.html#a9e2b2add18fac5a9110df411076170dca66f4ec1a93891a5c9afc9641d4800706":[16,0,53,44,14],
 "scsi__spec_8h.html#a9e2b2add18fac5a9110df411076170dca677e80ebd44f3d154d5acdefbcdba4fd":[16,0,53,44,4],
-"scsi__spec_8h.html#a9e2b2add18fac5a9110df411076170dca72800343a5359df39b6ac3a2ae8d6589":[16,0,53,44,18],
-"scsi__spec_8h.html#a9e2b2add18fac5a9110df411076170dca77fc5acfb7516efed14c990cbf15d73b":[16,0,53,44,7],
-"scsi__spec_8h.html#a9e2b2add18fac5a9110df411076170dca7cd9c58d1466d771147bcd4adcc456d2":[16,0,53,44,0]
+"scsi__spec_8h.html#a9e2b2add18fac5a9110df411076170dca72800343a5359df39b6ac3a2ae8d6589":[16,0,53,44,18]
 };

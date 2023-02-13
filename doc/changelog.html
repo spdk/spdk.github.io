@@ -96,6 +96,8 @@ v23.05: (Upcoming Release)</h1>
 <p>A new API <code>spdk_bdev_module_claim_bdev_desc</code> was added. Unlike <code>spdk_bdev_module_claim_bdev</code>, this function requires a bdev descriptor to be passed and the claim is automatically released when the descriptor is closed. It allows bdev modules to claim bdevs as a single writer, multiple writers, or multiple readers.</p>
 <h2>env</h2>
 <p>New function <code>spdk_env_get_main_core</code> was added.</p>
+<h2>nvmf</h2>
+<p>New <code>spdk_nvmf_request_copy_to/from_buf()</code> APIs have been added, which support iovecs, unlike the deprecated <code>spdk_nvmf_request_get_data()</code>.</p>
 <h1>v23.01</h1>
 <h2>accel</h2>
 <p>New library isa-l-crypto has been added, it is used by accel library in crypto operations.</p>

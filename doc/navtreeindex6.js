@@ -1,5 +1,6 @@
 var NAVTREEINDEX6 =
 {
+"iscsi__spec_8h.html#ad2c30ed17419423b79a47fae8323408aa33d5242a2c09544e4cdd825e6726bbc7":[16,0,32,93,21],
 "iscsi__spec_8h.html#ad2c30ed17419423b79a47fae8323408aa3fdf11feeb7785a73e8b0cffecc70861":[16,0,32,93,18],
 "iscsi__spec_8h.html#ad2c30ed17419423b79a47fae8323408aa58deeacb23e9bf63ecdc8b857754ce2d":[16,0,32,93,11],
 "iscsi__spec_8h.html#ad2c30ed17419423b79a47fae8323408aa5de75df64b7154eefacce1f9e4e8734f":[16,0,32,93,12],
@@ -150,6 +151,7 @@ var NAVTREEINDEX6 =
 "jsonrpc.html#rpc_accel_crypto_key_destroy":[3,9,4,4],
 "jsonrpc.html#rpc_accel_crypto_keys_get":[3,9,4,5],
 "jsonrpc.html#rpc_accel_get_opc_assignments":[3,9,4,1],
+"jsonrpc.html#rpc_accel_set_driver":[3,9,4,6],
 "jsonrpc.html#rpc_bdev_aio_create":[3,9,5,28],
 "jsonrpc.html#rpc_bdev_aio_delete":[3,9,5,30],
 "jsonrpc.html#rpc_bdev_aio_rescan":[3,9,5,29],
@@ -247,7 +249,5 @@ var NAVTREEINDEX6 =
 "jsonrpc.html#rpc_bdev_pmem_delete_pool":[3,9,5,74],
 "jsonrpc.html#rpc_bdev_pmem_get_pool_info":[3,9,5,73],
 "jsonrpc.html#rpc_bdev_raid_create":[3,9,9,15],
-"jsonrpc.html#rpc_bdev_raid_delete":[3,9,9,16],
-"jsonrpc.html#rpc_bdev_raid_get_bdevs":[3,9,9,14],
-"jsonrpc.html#rpc_bdev_rbd_create":[3,9,5,54]
+"jsonrpc.html#rpc_bdev_raid_delete":[3,9,9,16]
 };

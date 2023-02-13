@@ -1,5 +1,7 @@
 var NAVTREEINDEX32 =
 {
+"unionspdk__nvme__feat__non__operational__power__state__config.html#a29ca4fdf53d5699ee3008af19e639042":[15,0,167,2],
+"unionspdk__nvme__feat__non__operational__power__state__config.html#a8f512d6ffa8611e38141e169898efb4b":[15,0,167,1],
 "unionspdk__nvme__feat__non__operational__power__state__config.html#ad852de0033484bd5b461aa6a168db6ab":[15,0,167,0],
 "unionspdk__nvme__feat__number__of__queues.html":[15,0,168],
 "unionspdk__nvme__feat__number__of__queues.html#a333d356ec56d5cbbc18d680c17f8eb44":[15,0,168,2],
@@ -247,7 +249,5 @@ var NAVTREEINDEX32 =
 "vhost_processing.html":[2,5],
 "vhost_processing.html#vhost_processing_init":[2,5,3],
 "vhost_processing.html#vhost_processing_intro":[2,5,1],
-"vhost_processing.html#vhost_processing_io_path":[2,5,4],
-"vhost_processing.html#vhost_processing_qemu":[2,5,2],
-"vhost_processing.html#vhost_processing_toc":[2,5,0]
+"vhost_processing.html#vhost_processing_io_path":[2,5,4]
 };

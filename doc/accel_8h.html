@@ -237,6 +237,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a308671b4f55c2adc9469e59b941a6dcc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="accel_8h.html#a308671b4f55c2adc9469e59b941a6dcc">spdk_accel_write_config_json</a> (struct spdk_json_write_ctx *w)</td></tr>
 <tr class="memdesc:a308671b4f55c2adc9469e59b941a6dcc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write Acceleration subsystem configuration into provided JSON context.  <a href="accel_8h.html#a308671b4f55c2adc9469e59b941a6dcc">More...</a><br /></td></tr>
 <tr class="separator:a308671b4f55c2adc9469e59b941a6dcc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a142328e0ffe6cf8299dcee984012b660"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="accel_8h.html#a142328e0ffe6cf8299dcee984012b660">spdk_accel_set_driver</a> (const char *name)</td></tr>
+<tr class="memdesc:a142328e0ffe6cf8299dcee984012b660"><td class="mdescLeft">&#160;</td><td class="mdescRight">Select platform driver to execute operation chains.  <a href="accel_8h.html#a142328e0ffe6cf8299dcee984012b660">More...</a><br /></td></tr>
+<tr class="separator:a142328e0ffe6cf8299dcee984012b660"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Acceleration Framework. </p>
@@ -1349,6 +1352,33 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="a142328e0ffe6cf8299dcee984012b660"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a142328e0ffe6cf8299dcee984012b660">&#9670;&nbsp;</a></span>spdk_accel_set_driver()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_accel_set_driver </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Select platform driver to execute operation chains. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>Name of the driver.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, negetive errno otherwise. </dd></dl>
 
 </div>
 </div>
