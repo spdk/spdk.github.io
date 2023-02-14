@@ -849,10 +849,18 @@ Enumerations</h2></td></tr>
 , <b>SPDK_NVME_FEAT_SANITIZE_CONFIG</b> = 0x17
 , <b>SPDK_NVME_FEAT_ENDURANCE_GROUP_EVENT</b> = 0x18
 , <br />
-&#160;&#160;<a class="el" href="nvme__spec_8h.html#aeae5c5fb9df2c7a39215c71f9d9b4c25a8adf212ed4f7f1d01769a9be68683908">SPDK_NVME_FEAT_SOFTWARE_PROGRESS_MARKER</a> = 0x80
+&#160;&#160;<b>SPDK_NVME_FEAT_IO_COMMAND_SET_PROFILE</b> = 0x19
+, <b>SPDK_NVME_FEAT_SPINUP_CONTROL</b> = 0x1A
+, <b>SPDK_NVME_FEAT_ENHANCED_CONTROLLER_METADATA</b> = 0x7D
+, <b>SPDK_NVME_FEAT_CONTROLLER_METADATA</b> = 0x7E
+, <br />
+&#160;&#160;<b>SPDK_NVME_FEAT_NAMESPACE_METADATA</b> = 0x7F
+, <a class="el" href="nvme__spec_8h.html#aeae5c5fb9df2c7a39215c71f9d9b4c25a8adf212ed4f7f1d01769a9be68683908">SPDK_NVME_FEAT_SOFTWARE_PROGRESS_MARKER</a> = 0x80
 , <a class="el" href="nvme__spec_8h.html#aeae5c5fb9df2c7a39215c71f9d9b4c25a3f79db4fe2b0055f0250f22078fd1f08">SPDK_NVME_FEAT_HOST_IDENTIFIER</a> = 0x81
 , <a class="el" href="nvme__spec_8h.html#aeae5c5fb9df2c7a39215c71f9d9b4c25a2005df35e84b53a303fc7e420facb6a7">SPDK_NVME_FEAT_HOST_RESERVE_MASK</a> = 0x82
-, <a class="el" href="nvme__spec_8h.html#aeae5c5fb9df2c7a39215c71f9d9b4c25a591bf270723032d940b8ffdf38aac99e">SPDK_NVME_FEAT_HOST_RESERVE_PERSIST</a> = 0x83
+, <br />
+&#160;&#160;<a class="el" href="nvme__spec_8h.html#aeae5c5fb9df2c7a39215c71f9d9b4c25a591bf270723032d940b8ffdf38aac99e">SPDK_NVME_FEAT_HOST_RESERVE_PERSIST</a> = 0x83
+, <b>SPDK_NVME_FEAT_NAMESPACE_WRITE_PROTECTION_CONFIG</b> = 0x84
 <br />
  }</td></tr>
 <tr class="separator:aeae5c5fb9df2c7a39215c71f9d9b4c25"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -952,22 +960,39 @@ Enumerations</h2></td></tr>
 <tr class="memdesc:a48858ce224a290ff927e8954b31fdf67"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reservation notification log page type. <br /></td></tr>
 <tr class="separator:a48858ce224a290ff927e8954b31fdf67"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3d5e453e4d95b0f5b9bb4de04ace78c4"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme__spec_8h.html#a3d5e453e4d95b0f5b9bb4de04ace78c4">spdk_nvme_log_page</a> { <br />
-&#160;&#160;<a class="el" href="nvme__spec_8h.html#a3d5e453e4d95b0f5b9bb4de04ace78c4ad05013a36512c9cd6ad0249263a3f583">SPDK_NVME_LOG_ERROR</a> = 0x01
+&#160;&#160;<a class="el" href="nvme__spec_8h.html#a3d5e453e4d95b0f5b9bb4de04ace78c4a6d21eaf5a38ce3511b0ce1a4ce21947e">SPDK_NVME_LOG_SUPPORTED_LOG_PAGES</a> = 0x00
+, <a class="el" href="nvme__spec_8h.html#a3d5e453e4d95b0f5b9bb4de04ace78c4ad05013a36512c9cd6ad0249263a3f583">SPDK_NVME_LOG_ERROR</a> = 0x01
 , <a class="el" href="nvme__spec_8h.html#a3d5e453e4d95b0f5b9bb4de04ace78c4a8c4e97d27e08924e29d76ea66780a886">SPDK_NVME_LOG_HEALTH_INFORMATION</a> = 0x02
 , <a class="el" href="nvme__spec_8h.html#a3d5e453e4d95b0f5b9bb4de04ace78c4a898706714ccdcd0c5b2fee0170beecbb">SPDK_NVME_LOG_FIRMWARE_SLOT</a> = 0x03
-, <a class="el" href="nvme__spec_8h.html#a3d5e453e4d95b0f5b9bb4de04ace78c4aaa4a483997b6fa41a9e73755441d2186">SPDK_NVME_LOG_CHANGED_NS_LIST</a> = 0x04
 , <br />
-&#160;&#160;<a class="el" href="nvme__spec_8h.html#a3d5e453e4d95b0f5b9bb4de04ace78c4aab219389150398bc1b23da1df91e634c">SPDK_NVME_LOG_COMMAND_EFFECTS_LOG</a> = 0x05
+&#160;&#160;<a class="el" href="nvme__spec_8h.html#a3d5e453e4d95b0f5b9bb4de04ace78c4aaa4a483997b6fa41a9e73755441d2186">SPDK_NVME_LOG_CHANGED_NS_LIST</a> = 0x04
+, <a class="el" href="nvme__spec_8h.html#a3d5e453e4d95b0f5b9bb4de04ace78c4aab219389150398bc1b23da1df91e634c">SPDK_NVME_LOG_COMMAND_EFFECTS_LOG</a> = 0x05
 , <a class="el" href="nvme__spec_8h.html#a3d5e453e4d95b0f5b9bb4de04ace78c4aa41fe741a7a29377a4cfa29717aa94c0">SPDK_NVME_LOG_DEVICE_SELF_TEST</a> = 0x06
 , <a class="el" href="nvme__spec_8h.html#a3d5e453e4d95b0f5b9bb4de04ace78c4a6b0a3950980fadba16d971811a31afa0">SPDK_NVME_LOG_TELEMETRY_HOST_INITIATED</a> = 0x07
-, <a class="el" href="nvme__spec_8h.html#a3d5e453e4d95b0f5b9bb4de04ace78c4aa21d97922f4ef61731fd20986d30b2c8">SPDK_NVME_LOG_TELEMETRY_CTRLR_INITIATED</a> = 0x08
+, <br />
+&#160;&#160;<a class="el" href="nvme__spec_8h.html#a3d5e453e4d95b0f5b9bb4de04ace78c4aa21d97922f4ef61731fd20986d30b2c8">SPDK_NVME_LOG_TELEMETRY_CTRLR_INITIATED</a> = 0x08
+, <a class="el" href="nvme__spec_8h.html#a3d5e453e4d95b0f5b9bb4de04ace78c4ac3009a19fce8ef1ccf125ebca249d9b3">SPDK_NVME_LOG_ENDURANCE_GROUP_INFORMATION</a> = 0x09
+, <a class="el" href="nvme__spec_8h.html#a3d5e453e4d95b0f5b9bb4de04ace78c4adfadc15124f7118df41c99199da112fe">SPDK_NVME_LOG_PREDICATBLE_LATENCY</a> = 0x0A
+, <a class="el" href="nvme__spec_8h.html#a3d5e453e4d95b0f5b9bb4de04ace78c4a992e7edc18ba7496dd1daeed4e1cc85d">SPDK_NVME_LOG_PREDICTABLE_LATENCY_EVENT</a> = 0x0B
 , <br />
 &#160;&#160;<a class="el" href="nvme__spec_8h.html#a3d5e453e4d95b0f5b9bb4de04ace78c4a61628a94b6b41cd37e2b631ef551fc15">SPDK_NVME_LOG_ASYMMETRIC_NAMESPACE_ACCESS</a> = 0x0C
+, <a class="el" href="nvme__spec_8h.html#a3d5e453e4d95b0f5b9bb4de04ace78c4ab9c629e4685fc12333c98d8a9df28cc8">SPDK_NVME_LOG_PERSISTENT_EVENT_LOG</a> = 0x0D
+, <a class="el" href="nvme__spec_8h.html#a3d5e453e4d95b0f5b9bb4de04ace78c4ab64184e161e0d4e277993248aa7c750c">SPDK_NVME_LOG_ENDURANCE_GROUP_EVENT</a> = 0x0F
+, <a class="el" href="nvme__spec_8h.html#a3d5e453e4d95b0f5b9bb4de04ace78c4aaee8b290cff1d9a976c0ebebed994aa8">SPDK_NVME_LOG_MEDIA_UNIT_STATUS</a> = 0x10
+, <br />
+&#160;&#160;<a class="el" href="nvme__spec_8h.html#a3d5e453e4d95b0f5b9bb4de04ace78c4a631a622ee6e4324646f4d0b13bd738d8">SPDK_NVME_LOG_CAPACITY_CONFIGURATION_LIST</a> = 0x11
+, <a class="el" href="nvme__spec_8h.html#a3d5e453e4d95b0f5b9bb4de04ace78c4ac9c14fba2a682e9b7998d40607215529">SPDK_NVME_LOG_FEATURE_IDS_EFFECTS</a> = 0x12
+, <a class="el" href="nvme__spec_8h.html#a3d5e453e4d95b0f5b9bb4de04ace78c4a2dd8a9225fca82648e22ec65f82f6c65">SPDK_NVME_LOG_NVME_MI_COMMANDS_EFFECTS</a> = 0x13
+, <a class="el" href="nvme__spec_8h.html#a3d5e453e4d95b0f5b9bb4de04ace78c4ac73c0d2babb8069cd86e31baf7ba1a24">SPDK_NVME_LOG_COMMAND_FEATURE_LOCKDOWN</a> = 0x14
+, <br />
+&#160;&#160;<a class="el" href="nvme__spec_8h.html#a3d5e453e4d95b0f5b9bb4de04ace78c4a2bbffe1e18289e3eff1e8ceea26d8489">SPDK_NVME_LOG_BOOT_PARTITION</a> = 0x15
+, <a class="el" href="nvme__spec_8h.html#a3d5e453e4d95b0f5b9bb4de04ace78c4ae06fdca2b229e20571c25d9d01db540e">SPDK_NVME_LOG_ROTATIONAL_MEDIA_INFORMATION</a> = 0x16
 , <a class="el" href="nvme__spec_8h.html#a3d5e453e4d95b0f5b9bb4de04ace78c4a373acc5fc6392f4af3cfd5c6123bb600">SPDK_NVME_LOG_DISCOVERY</a> = 0x70
 , <a class="el" href="nvme__spec_8h.html#a3d5e453e4d95b0f5b9bb4de04ace78c4a37f2ea0a63737907265ff3ed35088a09">SPDK_NVME_LOG_RESERVATION_NOTIFICATION</a> = 0x80
-, <a class="el" href="nvme__spec_8h.html#a3d5e453e4d95b0f5b9bb4de04ace78c4a96d86f9eff782b5207b78ea26c6e3b2b">SPDK_NVME_LOG_SANITIZE_STATUS</a> = 0x81
 , <br />
-&#160;&#160;<b>SPDK_NVME_LOG_VENDOR_SPECIFIC_START</b> = 0xc0
+&#160;&#160;<a class="el" href="nvme__spec_8h.html#a3d5e453e4d95b0f5b9bb4de04ace78c4a96d86f9eff782b5207b78ea26c6e3b2b">SPDK_NVME_LOG_SANITIZE_STATUS</a> = 0x81
+, <a class="el" href="nvme__spec_8h.html#a3d5e453e4d95b0f5b9bb4de04ace78c4a76dc06b40721e7750a3e65d4386e197f">SPDK_NVME_LOG_CHANGED_ZONE_LIST</a> = 0xBF
+, <b>SPDK_NVME_LOG_VENDOR_SPECIFIC_START</b> = 0xc0
 , <b>SPDK_NVME_LOG_VENDOR_SPECIFIC_END</b> = 0xff
 <br />
  }</td></tr>
@@ -1996,7 +2021,9 @@ static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_
 
 <p>Log page identifiers for SPDK_NVME_OPC_GET_LOG_PAGE. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a3d5e453e4d95b0f5b9bb4de04ace78c4ad05013a36512c9cd6ad0249263a3f583"></a>SPDK_NVME_LOG_ERROR&#160;</td><td class="fielddoc"><p>Error information (mandatory) - <a class="el" href="structspdk__nvme__error__information__entry.html">spdk_nvme_error_information_entry</a>. </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a3d5e453e4d95b0f5b9bb4de04ace78c4a6d21eaf5a38ce3511b0ce1a4ce21947e"></a>SPDK_NVME_LOG_SUPPORTED_LOG_PAGES&#160;</td><td class="fielddoc"><p>Supported log pages (optional) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a3d5e453e4d95b0f5b9bb4de04ace78c4ad05013a36512c9cd6ad0249263a3f583"></a>SPDK_NVME_LOG_ERROR&#160;</td><td class="fielddoc"><p>Error information (mandatory) - <a class="el" href="structspdk__nvme__error__information__entry.html">spdk_nvme_error_information_entry</a>. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a3d5e453e4d95b0f5b9bb4de04ace78c4a8c4e97d27e08924e29d76ea66780a886"></a>SPDK_NVME_LOG_HEALTH_INFORMATION&#160;</td><td class="fielddoc"><p>SMART / health information (mandatory) - <a class="el" href="structspdk__nvme__health__information__page.html">spdk_nvme_health_information_page</a>. </p>
 </td></tr>
@@ -2012,13 +2039,39 @@ static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_
 </td></tr>
 <tr><td class="fieldname"><a id="a3d5e453e4d95b0f5b9bb4de04ace78c4aa21d97922f4ef61731fd20986d30b2c8"></a>SPDK_NVME_LOG_TELEMETRY_CTRLR_INITIATED&#160;</td><td class="fielddoc"><p>Controller initiated telemetry log (optional) </p>
 </td></tr>
+<tr><td class="fieldname"><a id="a3d5e453e4d95b0f5b9bb4de04ace78c4ac3009a19fce8ef1ccf125ebca249d9b3"></a>SPDK_NVME_LOG_ENDURANCE_GROUP_INFORMATION&#160;</td><td class="fielddoc"><p>Endurance group Information (optional) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a3d5e453e4d95b0f5b9bb4de04ace78c4adfadc15124f7118df41c99199da112fe"></a>SPDK_NVME_LOG_PREDICATBLE_LATENCY&#160;</td><td class="fielddoc"><p>Predictable latency per NVM set (optional) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a3d5e453e4d95b0f5b9bb4de04ace78c4a992e7edc18ba7496dd1daeed4e1cc85d"></a>SPDK_NVME_LOG_PREDICTABLE_LATENCY_EVENT&#160;</td><td class="fielddoc"><p>Predictable latency event aggregrate (optional) </p>
+</td></tr>
 <tr><td class="fieldname"><a id="a3d5e453e4d95b0f5b9bb4de04ace78c4a61628a94b6b41cd37e2b631ef551fc15"></a>SPDK_NVME_LOG_ASYMMETRIC_NAMESPACE_ACCESS&#160;</td><td class="fielddoc"><p>Asymmetric namespace access log (optional) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a3d5e453e4d95b0f5b9bb4de04ace78c4ab9c629e4685fc12333c98d8a9df28cc8"></a>SPDK_NVME_LOG_PERSISTENT_EVENT_LOG&#160;</td><td class="fielddoc"><p>Persistent event log (optional) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a3d5e453e4d95b0f5b9bb4de04ace78c4ab64184e161e0d4e277993248aa7c750c"></a>SPDK_NVME_LOG_ENDURANCE_GROUP_EVENT&#160;</td><td class="fielddoc"><p>Endurance group event aggregate (optional) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a3d5e453e4d95b0f5b9bb4de04ace78c4aaee8b290cff1d9a976c0ebebed994aa8"></a>SPDK_NVME_LOG_MEDIA_UNIT_STATUS&#160;</td><td class="fielddoc"><p>Media unit status (optional) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a3d5e453e4d95b0f5b9bb4de04ace78c4a631a622ee6e4324646f4d0b13bd738d8"></a>SPDK_NVME_LOG_CAPACITY_CONFIGURATION_LIST&#160;</td><td class="fielddoc"><p>Supported capacity configuration list (optional) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a3d5e453e4d95b0f5b9bb4de04ace78c4ac9c14fba2a682e9b7998d40607215529"></a>SPDK_NVME_LOG_FEATURE_IDS_EFFECTS&#160;</td><td class="fielddoc"><p>Feature identifiers supported and effects (optional) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a3d5e453e4d95b0f5b9bb4de04ace78c4a2dd8a9225fca82648e22ec65f82f6c65"></a>SPDK_NVME_LOG_NVME_MI_COMMANDS_EFFECTS&#160;</td><td class="fielddoc"><p>NVMe-MI commands supported and effects (optional) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a3d5e453e4d95b0f5b9bb4de04ace78c4ac73c0d2babb8069cd86e31baf7ba1a24"></a>SPDK_NVME_LOG_COMMAND_FEATURE_LOCKDOWN&#160;</td><td class="fielddoc"><p>Command and feature lockdown (optional) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a3d5e453e4d95b0f5b9bb4de04ace78c4a2bbffe1e18289e3eff1e8ceea26d8489"></a>SPDK_NVME_LOG_BOOT_PARTITION&#160;</td><td class="fielddoc"><p>Boot partition (optional) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a3d5e453e4d95b0f5b9bb4de04ace78c4ae06fdca2b229e20571c25d9d01db540e"></a>SPDK_NVME_LOG_ROTATIONAL_MEDIA_INFORMATION&#160;</td><td class="fielddoc"><p>Rotational media information (optional) </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a3d5e453e4d95b0f5b9bb4de04ace78c4a373acc5fc6392f4af3cfd5c6123bb600"></a>SPDK_NVME_LOG_DISCOVERY&#160;</td><td class="fielddoc"><p>Discovery(refer to the NVMe over Fabrics specification) </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a3d5e453e4d95b0f5b9bb4de04ace78c4a37f2ea0a63737907265ff3ed35088a09"></a>SPDK_NVME_LOG_RESERVATION_NOTIFICATION&#160;</td><td class="fielddoc"><p>Reservation notification (optional) </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a3d5e453e4d95b0f5b9bb4de04ace78c4a96d86f9eff782b5207b78ea26c6e3b2b"></a>SPDK_NVME_LOG_SANITIZE_STATUS&#160;</td><td class="fielddoc"><p>Sanitize status (optional) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a3d5e453e4d95b0f5b9bb4de04ace78c4a76dc06b40721e7750a3e65d4386e197f"></a>SPDK_NVME_LOG_CHANGED_ZONE_LIST&#160;</td><td class="fielddoc"><p>Changed zone list (refer to Zoned Namespace command set) </p>
 </td></tr>
 </table>
 
