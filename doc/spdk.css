@@ -202,7 +202,7 @@ dl.el {
 }
 
 ul {
-  padding-left: 70px;
+  padding-left: 30px;
   overflow: hidden; /*Fixed: list item bullets overlap floating elements*/
 }
 
@@ -240,9 +240,9 @@ pre.fragment {
 
 div.fragment {
   padding: 0 0 1px 0; /*Fixed: last line underline overlap border*/
+  padding-left: 20px;
   margin: 4px 8px 4px 2px;
     background-color: #FBFCFD;
-    border: 1px solid #C4CFE5;
 }
 
 div.line {
@@ -1706,13 +1706,13 @@ tt, code, kbd, samp
   direction:ltr;
 }
 
-code {
-  padding-left: 55px;
-  text-indent: 0;
+pre {
+  padding-left: 20px;
 }
 
-code.highlighter-rouge {
+code {
   padding-left: 0px;
+  text-indent: 0;
 }
 
 /* @end */

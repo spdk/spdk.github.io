@@ -1,9 +1,9 @@
 var structspdk__vfu__pci__device =
 [
     [ "bcc", "structspdk__vfu__pci__device.html#aa7f9711fba2103c4090550a8eea0a034", null ],
-    [ "class", "structspdk__vfu__pci__device.html#a4b0a4f5539ca1ad4bdd378581ff9827b", null ],
+    [ "class", "structspdk__vfu__pci__device.html#abe4cc3dd1f9836181fbb91e82e3c2cae", null ],
     [ "did", "structspdk__vfu__pci__device.html#a5585f94a97ad11b413ac17e986a49c17", null ],
-    [ "id", "structspdk__vfu__pci__device.html#af7d63fa3ee714a0298b8c6ac0a85ff72", null ],
+    [ "id", "structspdk__vfu__pci__device.html#ab7ec4219ba5a864f58cfbbe0a1616713", null ],
     [ "intr_ipin", "structspdk__vfu__pci__device.html#a445f19834c299af971f8b3ad72592994", null ],
     [ "msixcap", "structspdk__vfu__pci__device.html#a302e9ae2097cbedae3bd7f3295a84298", null ],
     [ "nr_int_irqs", "structspdk__vfu__pci__device.html#aade39aac3963942cd7ca96012a6afae4", null ],
