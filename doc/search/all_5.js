@@ -18,7 +18,7 @@ var searchData=
   ['entries_225',['entries',['../structspdk__trace__history.html#a09f645e9d5c19fb4e4fe71b4faaa3951',1,'spdk_trace_history']]],
   ['entry_226',['entry',['../structspdk__trace__parser__entry.html#a53973ef677f05f6d067c046dc790da78',1,'spdk_trace_parser_entry']]],
   ['env_2eh_227',['env.h',['../env_8h.html',1,'']]],
-  ['env_5fcontext_228',['env_context',['../structspdk__env__opts.html#a54e6333e5067530db7e69b95ef8808ca',1,'spdk_env_opts::env_context()'],['../structspdk__app__opts.html#a7e520897d6a9e39c3e62cc4259bd2ea3',1,'spdk_app_opts::env_context()']]],
+  ['env_5fcontext_228',['env_context',['../structspdk__app__opts.html#a7e520897d6a9e39c3e62cc4259bd2ea3',1,'spdk_app_opts::env_context()'],['../structspdk__env__opts.html#a54e6333e5067530db7e69b95ef8808ca',1,'spdk_env_opts::env_context()']]],
   ['env_5fdpdk_2eh_229',['env_dpdk.h',['../env__dpdk_8h.html',1,'']]],
   ['err_230',['err',['../unionspdk__nvme__pmrsts__register.html#a163fb77d9c83b77dbd31494484faeeeb',1,'spdk_nvme_pmrsts_register']]],
   ['err_5foffset_231',['err_offset',['../structspdk__dif__error.html#a596249f0c0d8883a9228788314ab0c39',1,'spdk_dif_error']]],
@@ -38,8 +38,6 @@ var searchData=
   ['exclusive_5faccess_5freg_5fonly_245',['exclusive_access_reg_only',['../structspdk__nvme__ns__data.html#a3f73ed0c59226dc092e95cf6b82832f2',1,'spdk_nvme_ns_data']]],
   ['exhid_246',['exhid',['../unionspdk__nvme__feat__host__identifier.html#abe582ebd57c5130773da6ec66e49007c',1,'spdk_nvme_feat_host_identifier']]],
   ['expected_247',['expected',['../structspdk__dif__error.html#a9b85800d2326eb0506821b9efce20215',1,'spdk_dif_error']]],
-  ['ext_5fopts_248',['ext_opts',['../structspdk__bdev__io.html#a811f2702c53ffe02c25d04e2538cd866',1,'spdk_bdev_io::ext_opts()'],['../structspdk__bdev__io_1_1____bdev__io__internal__fields.html#a28d152419a79d2e4934f26cf4d811684',1,'spdk_bdev_io::__bdev_io_internal_fields::ext_opts()']]],
-  ['ext_5fopts_5fcopy_249',['ext_opts_copy',['../structspdk__bdev__io_1_1____bdev__io__internal__fields.html#a44b5a0c0dd5503b6bbf36b58e260a316',1,'spdk_bdev_io::__bdev_io_internal_fields']]],
-  ['extended_250',['extended',['../structspdk__nvme__ns__data.html#a2758ffbbd3aa7376da3f35f3f1cd1a7f',1,'spdk_nvme_ns_data']]],
-  ['extended_5fhost_5fid_251',['extended_host_id',['../structspdk__nvme__ctrlr__opts.html#afa9c5708ea859200abb5406b59faaede',1,'spdk_nvme_ctrlr_opts']]]
+  ['extended_248',['extended',['../structspdk__nvme__ns__data.html#a2758ffbbd3aa7376da3f35f3f1cd1a7f',1,'spdk_nvme_ns_data']]],
+  ['extended_5fhost_5fid_249',['extended_host_id',['../structspdk__nvme__ctrlr__opts.html#afa9c5708ea859200abb5406b59faaede',1,'spdk_nvme_ctrlr_opts']]]
 ];

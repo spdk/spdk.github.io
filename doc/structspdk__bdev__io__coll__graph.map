@@ -1,13 +1,12 @@
 <map id="spdk_bdev_io" name="spdk_bdev_io">
-<area shape="rect" id="node1" title=" " alt="" coords="647,199,758,225"/>
-<area shape="rect" id="node7" href="$structspdk__bdev__io_1_1____bdev__io__internal__fields.html" title="Fields that are used internally by the bdev subsystem." alt="" coords="947,133,1112,174"/>
-<area shape="rect" id="node2" href="$structspdk__nvme__cmd.html" title=" " alt="" coords="347,176,479,203"/>
-<area shape="rect" id="node3" href="$unionspdk__nvme__cmd__cdw10.html" title=" " alt="" coords="12,100,193,127"/>
-<area shape="rect" id="node4" href="$unionspdk__nvme__cmd__cdw11.html" title=" " alt="" coords="12,151,193,177"/>
-<area shape="rect" id="node5" href="$unionspdk__nvme__cmd__cdw12.html" title=" " alt="" coords="12,201,193,228"/>
-<area shape="rect" id="node6" href="$structspdk__nvme__sgl__descriptor.html" title=" " alt="" coords="5,252,200,279"/>
-<area shape="rect" id="node8" href="$structspdk__iobuf__entry.html" title="iobuf queue entry" alt="" coords="635,95,770,121"/>
-<area shape="rect" id="node9" href="$structspdk__bdev__io__wait__entry.html" title="Structure to register a callback when an spdk_bdev_io becomes available." alt="" coords="609,5,796,32"/>
-<area shape="rect" id="node10" href="$structspdk__bdev.html" title=" " alt="" coords="367,107,459,133"/>
-<area shape="rect" id="node11" href="$structspdk__bdev__ext__io__opts.html" title="Structure with optional IO request parameters The content of this structure must be valid until the I..." alt="" coords="325,247,500,273"/>
+<area shape="rect" id="node1" title=" " alt="" coords="581,199,691,225"/>
+<area shape="rect" id="node7" href="$structspdk__bdev__io_1_1____bdev__io__internal__fields.html" title="Fields that are used internally by the bdev subsystem." alt="" coords="880,109,1045,150"/>
+<area shape="rect" id="node2" href="$structspdk__nvme__cmd.html" title=" " alt="" coords="325,199,457,225"/>
+<area shape="rect" id="node3" href="$unionspdk__nvme__cmd__cdw10.html" title=" " alt="" coords="12,123,193,149"/>
+<area shape="rect" id="node4" href="$unionspdk__nvme__cmd__cdw11.html" title=" " alt="" coords="12,173,193,200"/>
+<area shape="rect" id="node5" href="$unionspdk__nvme__cmd__cdw12.html" title=" " alt="" coords="12,224,193,251"/>
+<area shape="rect" id="node6" href="$structspdk__nvme__sgl__descriptor.html" title=" " alt="" coords="5,275,200,301"/>
+<area shape="rect" id="node8" href="$structspdk__iobuf__entry.html" title="iobuf queue entry" alt="" coords="569,44,703,71"/>
+<area shape="rect" id="node9" href="$structspdk__bdev__io__wait__entry.html" title="Structure to register a callback when an spdk_bdev_io becomes available." alt="" coords="543,95,729,121"/>
+<area shape="rect" id="node10" href="$structspdk__bdev.html" title=" " alt="" coords="345,124,437,151"/>
 </map>

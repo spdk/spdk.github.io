@@ -100,12 +100,11 @@ Collaboration diagram for spdk_bdev_io::__bdev_io_internal_fields:</div>
 <div class="dyncontent">
 <div class="center"><img src="structspdk__bdev__io_1_1____bdev__io__internal__fields__coll__graph.png" border="0" usemap="#aspdk__bdev__io_1_1____bdev__io__internal__fields_coll__map" alt="Collaboration graph"/></div>
 <map name="aspdk__bdev__io_1_1____bdev__io__internal__fields_coll__map" id="aspdk__bdev__io_1_1____bdev__io__internal__fields_coll__map">
-<area shape="rect" title="Fields that are used internally by the bdev subsystem." alt="" coords="241,199,406,240"/>
-<area shape="rect" href="structspdk__bdev__io.html" title=" " alt="" coords="131,333,241,360"/>
-<area shape="rect" href="structspdk__iobuf__entry.html" title="iobuf queue entry" alt="" coords="267,95,401,121"/>
-<area shape="rect" href="structspdk__bdev__io__wait__entry.html" title="Structure to register a callback when an spdk_bdev_io becomes available." alt="" coords="490,95,677,121"/>
-<area shape="rect" href="structspdk__bdev.html" title=" " alt="" coords="5,5,97,32"/>
-<area shape="rect" href="structspdk__bdev__ext__io__opts.html" title="Structure with optional IO request parameters The content of this structure must be valid until the I..." alt="" coords="68,95,243,121"/>
+<area shape="rect" title="Fields that are used internally by the bdev subsystem." alt="" coords="181,184,347,225"/>
+<area shape="rect" href="structspdk__bdev__io.html" title=" " alt="" coords="323,319,434,345"/>
+<area shape="rect" href="structspdk__iobuf__entry.html" title="iobuf queue entry" alt="" coords="217,95,351,121"/>
+<area shape="rect" href="structspdk__bdev__io__wait__entry.html" title="Structure to register a callback when an spdk_bdev_io becomes available." alt="" coords="5,95,192,121"/>
+<area shape="rect" href="structspdk__bdev.html" title=" " alt="" coords="230,5,322,32"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -242,14 +241,13 @@ struct <a class="el" href="structspdk__iobuf__entry.html">spdk_iobuf_entry</a>&#
 struct <a class="el" href="structspdk__bdev__io__wait__entry.html">spdk_bdev_io_wait_entry</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev__io_1_1____bdev__io__internal__fields.html#ab4db59743b548a313586a12a3a72efeb">waitq_entry</a></td></tr>
 <tr class="memdesc:ab4db59743b548a313586a12a3a72efeb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enables queuing parent I/O when no bdev_ios available for split children. <br /></td></tr>
 <tr class="separator:ab4db59743b548a313586a12a3a72efeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a28d152419a79d2e4934f26cf4d811684"><td class="memItemLeft" align="right" valign="top"><a id="a28d152419a79d2e4934f26cf4d811684"></a>
-struct <a class="el" href="structspdk__bdev__ext__io__opts.html">spdk_bdev_ext_io_opts</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev__io_1_1____bdev__io__internal__fields.html#a28d152419a79d2e4934f26cf4d811684">ext_opts</a></td></tr>
-<tr class="memdesc:a28d152419a79d2e4934f26cf4d811684"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to a structure passed by the user in ext API. <br /></td></tr>
-<tr class="separator:a28d152419a79d2e4934f26cf4d811684"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a44b5a0c0dd5503b6bbf36b58e260a316"><td class="memItemLeft" align="right" valign="top"><a id="a44b5a0c0dd5503b6bbf36b58e260a316"></a>
-struct <a class="el" href="structspdk__bdev__ext__io__opts.html">spdk_bdev_ext_io_opts</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev__io_1_1____bdev__io__internal__fields.html#a44b5a0c0dd5503b6bbf36b58e260a316">ext_opts_copy</a></td></tr>
-<tr class="memdesc:a44b5a0c0dd5503b6bbf36b58e260a316"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy of user's opts, used when I/O is split. <br /></td></tr>
-<tr class="separator:a44b5a0c0dd5503b6bbf36b58e260a316"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9bd019f8b2501ee4c1a5ecadfd5b136"><td class="memItemLeft" align="right" valign="top"><a id="ac9bd019f8b2501ee4c1a5ecadfd5b136"></a>
+struct spdk_memory_domain *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev__io_1_1____bdev__io__internal__fields.html#ac9bd019f8b2501ee4c1a5ecadfd5b136">memory_domain</a></td></tr>
+<tr class="memdesc:ac9bd019f8b2501ee4c1a5ecadfd5b136"><td class="mdescLeft">&#160;</td><td class="mdescRight">Memory domain and its context passed by the user in ext API. <br /></td></tr>
+<tr class="separator:ac9bd019f8b2501ee4c1a5ecadfd5b136"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74696afd2aeca8b089f28f8240bd434f"><td class="memItemLeft" align="right" valign="top"><a id="a74696afd2aeca8b089f28f8240bd434f"></a>
+void *&#160;</td><td class="memItemRight" valign="bottom"><b>memory_domain_ctx</b></td></tr>
+<tr class="separator:a74696afd2aeca8b089f28f8240bd434f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a132678b705d6d51d2fdfaf1d44b6428b"><td class="memItemLeft" align="right" valign="top"><a id="a132678b705d6d51d2fdfaf1d44b6428b"></a>
 void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev__io_1_1____bdev__io__internal__fields.html#a132678b705d6d51d2fdfaf1d44b6428b">data_transfer_cpl</a> )(void *ctx, int rc)</td></tr>
 <tr class="memdesc:a132678b705d6d51d2fdfaf1d44b6428b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Data transfer completion callback. <br /></td></tr>

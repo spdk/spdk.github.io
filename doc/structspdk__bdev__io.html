@@ -98,17 +98,16 @@ Collaboration diagram for spdk_bdev_io:</div>
 <div class="dyncontent">
 <div class="center"><img src="structspdk__bdev__io__coll__graph.png" border="0" usemap="#aspdk__bdev__io_coll__map" alt="Collaboration graph"/></div>
 <map name="aspdk__bdev__io_coll__map" id="aspdk__bdev__io_coll__map">
-<area shape="rect" title=" " alt="" coords="647,199,758,225"/>
-<area shape="rect" href="structspdk__bdev__io_1_1____bdev__io__internal__fields.html" title="Fields that are used internally by the bdev subsystem." alt="" coords="947,133,1112,174"/>
-<area shape="rect" href="structspdk__nvme__cmd.html" title=" " alt="" coords="347,176,479,203"/>
-<area shape="rect" href="unionspdk__nvme__cmd__cdw10.html" title=" " alt="" coords="12,100,193,127"/>
-<area shape="rect" href="unionspdk__nvme__cmd__cdw11.html" title=" " alt="" coords="12,151,193,177"/>
-<area shape="rect" href="unionspdk__nvme__cmd__cdw12.html" title=" " alt="" coords="12,201,193,228"/>
-<area shape="rect" href="structspdk__nvme__sgl__descriptor.html" title=" " alt="" coords="5,252,200,279"/>
-<area shape="rect" href="structspdk__iobuf__entry.html" title="iobuf queue entry" alt="" coords="635,95,770,121"/>
-<area shape="rect" href="structspdk__bdev__io__wait__entry.html" title="Structure to register a callback when an spdk_bdev_io becomes available." alt="" coords="609,5,796,32"/>
-<area shape="rect" href="structspdk__bdev.html" title=" " alt="" coords="367,107,459,133"/>
-<area shape="rect" href="structspdk__bdev__ext__io__opts.html" title="Structure with optional IO request parameters The content of this structure must be valid until the I..." alt="" coords="325,247,500,273"/>
+<area shape="rect" title=" " alt="" coords="581,199,691,225"/>
+<area shape="rect" href="structspdk__bdev__io_1_1____bdev__io__internal__fields.html" title="Fields that are used internally by the bdev subsystem." alt="" coords="880,109,1045,150"/>
+<area shape="rect" href="structspdk__nvme__cmd.html" title=" " alt="" coords="325,199,457,225"/>
+<area shape="rect" href="unionspdk__nvme__cmd__cdw10.html" title=" " alt="" coords="12,123,193,149"/>
+<area shape="rect" href="unionspdk__nvme__cmd__cdw11.html" title=" " alt="" coords="12,173,193,200"/>
+<area shape="rect" href="unionspdk__nvme__cmd__cdw12.html" title=" " alt="" coords="12,224,193,251"/>
+<area shape="rect" href="structspdk__nvme__sgl__descriptor.html" title=" " alt="" coords="5,275,200,301"/>
+<area shape="rect" href="structspdk__iobuf__entry.html" title="iobuf queue entry" alt="" coords="569,44,703,71"/>
+<area shape="rect" href="structspdk__bdev__io__wait__entry.html" title="Structure to register a callback when an spdk_bdev_io becomes available." alt="" coords="543,95,729,121"/>
+<area shape="rect" href="structspdk__bdev.html" title=" " alt="" coords="345,124,437,151"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -178,10 +177,13 @@ union {</td></tr>
 &#160;&#160;&#160;&#160;&#160;&#160;uint64_t&#160;&#160;&#160;<a class="el" href="structspdk__bdev__io.html#ab7ce7385dd41efaffdc0ca4dea2df6a8">offset_blocks</a></td></tr>
 <tr class="memdesc:ac731cbbd770fe21ec22a62664051aae9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starting offset (in blocks) of the bdev for this I/O. <br /></td></tr>
 <tr class="separator:ac731cbbd770fe21ec22a62664051aae9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae8fa8ea89bb5a0e9d2228872d9b3689b"><td class="memItemLeft" >
-&#160;&#160;&#160;&#160;&#160;&#160;struct <a class="el" href="structspdk__bdev__ext__io__opts.html">spdk_bdev_ext_io_opts</a> *&#160;&#160;&#160;<a class="el" href="structspdk__bdev__io.html#a811f2702c53ffe02c25d04e2538cd866">ext_opts</a></td></tr>
-<tr class="memdesc:ae8fa8ea89bb5a0e9d2228872d9b3689b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to user's ext opts to be used by bdev modules. <br /></td></tr>
-<tr class="separator:ae8fa8ea89bb5a0e9d2228872d9b3689b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61a00965b77f2c9bf1281f7f0b0b29db"><td class="memItemLeft" >
+&#160;&#160;&#160;&#160;&#160;&#160;struct spdk_memory_domain *&#160;&#160;&#160;<a class="el" href="structspdk__bdev__io.html#a7bf490b3056972c523ee672ee82b208e">memory_domain</a></td></tr>
+<tr class="memdesc:a61a00965b77f2c9bf1281f7f0b0b29db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Memory domain and its context to be used by bdev modules. <br /></td></tr>
+<tr class="separator:a61a00965b77f2c9bf1281f7f0b0b29db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f0b48c02df773e60ae525cb527ffcde"><td class="memItemLeft" >
+&#160;&#160;&#160;&#160;&#160;&#160;void *&#160;&#160;&#160;<b>memory_domain_ctx</b></td></tr>
+<tr class="separator:a1f0b48c02df773e60ae525cb527ffcde"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a312816b884344f015e509fef18d6b7d0"><td class="memItemLeft" >
 &#160;&#160;&#160;&#160;&#160;&#160;<a class="el" href="bdev_8h.html#a0c5602dfd313f90032dd91683b9663e3">spdk_bdev_io_completion_cb</a>&#160;&#160;&#160;<a class="el" href="structspdk__bdev__io.html#a35905e31d0aa54cd00dbb34e7d56656a">stored_user_cb</a></td></tr>
 <tr class="memdesc:a312816b884344f015e509fef18d6b7d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">stored user callback in case we split the I/O and use a temporary callback <br /></td></tr>
