@@ -1,5 +1,7 @@
 var NAVTREEINDEX23 =
 {
+"structspdk__nvme__fdp__stats__log__page.html#a8ad31c2d7f6749fc5eaa1c7662f97a4a":[15,0,167,1],
+"structspdk__nvme__fdp__stats__log__page.html#aad3e6f6bab56d96359427d192ce5ee36":[15,0,167,3],
 "structspdk__nvme__fdp__stats__log__page.html#ace8ff095201938c872347b261338bbec":[15,0,167,2],
 "structspdk__nvme__firmware__page.html":[15,0,192],
 "structspdk__nvme__firmware__page.html#a2c3c696000491150c059006729f39606":[15,0,192,5],
@@ -247,7 +249,5 @@ var NAVTREEINDEX23 =
 "structspdk__nvme__poll__group__stat.html":[15,0,224],
 "structspdk__nvme__poll__group__stat.html#a112675cc945fbc13910f1435ee934afa":[15,0,224,0],
 "structspdk__nvme__poll__group__stat.html#a6f3d71b9de646e340fbb14b488bbeb8c":[15,0,224,1],
-"structspdk__nvme__power__state.html":[15,0,225],
-"structspdk__nvme__power__state.html#a08563dffd28f709727c252a0b125f132":[15,0,225,9],
-"structspdk__nvme__power__state.html#a0fda31def17bcc644e29c75eed41e095":[15,0,225,0]
+"structspdk__nvme__power__state.html":[15,0,225]
 };

@@ -117,10 +117,12 @@ enum <a class="el" href="nvme_8h.html#ae87a03c28984a2c0499d50ef5e9d0ece">spdk_nv
 void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvmf__transport__ops.html#afa8e71018c357d6f6ea2293e178fe295">opts_init</a> )(struct <a class="el" href="structspdk__nvmf__transport__opts.html">spdk_nvmf_transport_opts</a> *opts)</td></tr>
 <tr class="memdesc:afa8e71018c357d6f6ea2293e178fe295"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize transport options to default value. <br /></td></tr>
 <tr class="separator:afa8e71018c357d6f6ea2293e178fe295"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1c70d537837f405619d127ea6a926694"><td class="memItemLeft" align="right" valign="top"><a id="a1c70d537837f405619d127ea6a926694"></a>
-struct <a class="el" href="structspdk__nvmf__transport.html">spdk_nvmf_transport</a> *(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvmf__transport__ops.html#a1c70d537837f405619d127ea6a926694">create</a> )(struct <a class="el" href="structspdk__nvmf__transport__opts.html">spdk_nvmf_transport_opts</a> *opts)</td></tr>
-<tr class="memdesc:a1c70d537837f405619d127ea6a926694"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a transport for the given transport opts. <br /></td></tr>
+<tr class="memitem:a1c70d537837f405619d127ea6a926694"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structspdk__nvmf__transport.html">spdk_nvmf_transport</a> *(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvmf__transport__ops.html#a1c70d537837f405619d127ea6a926694">create</a> )(struct <a class="el" href="structspdk__nvmf__transport__opts.html">spdk_nvmf_transport_opts</a> *opts)</td></tr>
+<tr class="memdesc:a1c70d537837f405619d127ea6a926694"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a transport for the given transport opts.  <a href="structspdk__nvmf__transport__ops.html#a1c70d537837f405619d127ea6a926694">More...</a><br /></td></tr>
 <tr class="separator:a1c70d537837f405619d127ea6a926694"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed5e033370fe6ce1a68ebeffd3184eb5"><td class="memItemLeft" align="right" valign="top"><a id="aed5e033370fe6ce1a68ebeffd3184eb5"></a>
+int(*&#160;</td><td class="memItemRight" valign="bottom"><b>create_async</b> )(struct <a class="el" href="structspdk__nvmf__transport__opts.html">spdk_nvmf_transport_opts</a> *opts, spdk_nvmf_transport_create_done_cb cb_fn, void *cb_arg)</td></tr>
+<tr class="separator:aed5e033370fe6ce1a68ebeffd3184eb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1d7d193990382233f3c4296d4456ef09"><td class="memItemLeft" align="right" valign="top"><a id="a1d7d193990382233f3c4296d4456ef09"></a>
 void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvmf__transport__ops.html#a1d7d193990382233f3c4296d4456ef09">dump_opts</a> )(struct <a class="el" href="structspdk__nvmf__transport.html">spdk_nvmf_transport</a> *transport, struct spdk_json_write_ctx *w)</td></tr>
 <tr class="memdesc:a1d7d193990382233f3c4296d4456ef09"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dump transport-specific opts into JSON. <br /></td></tr>
@@ -207,6 +209,23 @@ void(*&#160;</td><td class="memItemRight" valign="bottom"><b>poll_group_dump_sta
 <tr class="separator:a6bf60055493718fe8aa4e07d16002c2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Field Documentation</h2>
+<a id="a1c70d537837f405619d127ea6a926694"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1c70d537837f405619d127ea6a926694">&#9670;&nbsp;</a></span>create</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="structspdk__nvmf__transport.html">spdk_nvmf_transport</a>*(* spdk_nvmf_transport_ops::create) (struct <a class="el" href="structspdk__nvmf__transport__opts.html">spdk_nvmf_transport_opts</a> *opts)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Create a transport for the given transport opts. </p>
+<p>Either synchronous or asynchronous version shall be implemented. </p>
+
+</div>
+</div>
 <a id="a4f1a858ec5f255a3479941b0d511bb48"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4f1a858ec5f255a3479941b0d511bb48">&#9670;&nbsp;</a></span>listen</h2>
 

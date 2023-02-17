@@ -1,5 +1,8 @@
 var NAVTREEINDEX30 =
 {
+"structvfio__user__bitmap__range.html#ad6d1655e6d1f43f2a2c82c1c495694f0":[15,0,399,1],
+"structvfio__user__device__info.html":[15,0,400],
+"structvfio__user__device__info.html#a39c3337fce8265725bc5eae157a41eef":[15,0,400,3],
 "structvfio__user__device__info.html#a4fa6a2f7bff9e009aabf98a38ff2e558":[15,0,400,1],
 "structvfio__user__device__info.html#a8b2f45d49e267eab96bb28ba3fd704e2":[15,0,400,0],
 "structvfio__user__device__info.html#ab56196a4c6b2a5706783fb621332ced7":[15,0,400,2],
@@ -246,8 +249,5 @@ var NAVTREEINDEX30 =
 "unionidxd__cmdsts__register.html":[15,0,9],
 "unionidxd__cmdsts__register.html#a06fa4a6f3b81f74fe62ea749dcec8cec":[15,0,9,0],
 "unionidxd__cmdsts__register.html#a4ff22dda78aac82aed97826cb9bc2948":[15,0,9,1],
-"unionidxd__cmdsts__register.html#a9c75776a6cba7456488d8c2e13094d60":[15,0,9,3],
-"unionidxd__cmdsts__register.html#ae8b9410e25051b08f052f2566c6daf16":[15,0,9,4],
-"unionidxd__cmdsts__register.html#aeae17818f14edaa6896f7c80a3f28c06":[15,0,9,2],
-"unionidxd__enginecap__register.html":[15,0,10]
+"unionidxd__cmdsts__register.html#a9c75776a6cba7456488d8c2e13094d60":[15,0,9,3]
 };
