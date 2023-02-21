@@ -92,6 +92,8 @@ $(document).ready(function(){initNavTree('changelog.html',''); initResizable(); 
 <div class="textblock"><p><a class="anchor" id="md_changelog"></a> </p>
 <h1><a class="anchor" id="changelog-v23-05"></a>
 v23.05: (Upcoming Release)</h1>
+<h2>accel</h2>
+<p>Added API <code>spdk_accel_submit_xor</code> to perform XOR.</p>
 <h2>bdev</h2>
 <p>A new API <code>spdk_bdev_module_claim_bdev_desc</code> was added. Unlike <code>spdk_bdev_module_claim_bdev</code>, this function requires a bdev descriptor to be passed and the claim is automatically released when the descriptor is closed. It allows bdev modules to claim bdevs as a single writer, multiple writers, or multiple readers.</p>
 <h2>env</h2>

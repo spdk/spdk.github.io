@@ -1,5 +1,7 @@
 var NAVTREEINDEX20 =
 {
+"structspdk__gpt__header.html#ab9e76375ba12998aebd8ce3184a38937":[15,0,87,1],
+"structspdk__gpt__header.html#ae7c11865ae0b0003cec280abc7e4bcd4":[15,0,87,11],
 "structspdk__gpt__header.html#ae94d375dff9d140708b7d8d4ed36e021":[15,0,87,13],
 "structspdk__gpt__header.html#af82bb3a9b39e405b7f786cd50d56a608":[15,0,87,4],
 "structspdk__gpt__partition__entry.html":[15,0,88],
@@ -247,7 +249,5 @@ var NAVTREEINDEX20 =
 "structspdk__json__val.html#a709cbbd71ebb3cdc9bb8daf5f2a19364":[15,0,109,2],
 "structspdk__json__val.html#aa9e7738fac4cf0d68ed86f263bb7bf1f":[15,0,109,0],
 "structspdk__json__val.html#acd221be089fb848898b736d31add7053":[15,0,109,1],
-"structspdk__jsonrpc__client__response.html":[15,0,110],
-"structspdk__jsonrpc__client__response.html#a71d4292cdf6b694099f8c0bfeb439036":[15,0,110,2],
-"structspdk__jsonrpc__client__response.html#ab108299ea8f96c9c984a2d3cf70d3379":[15,0,110,0]
+"structspdk__jsonrpc__client__response.html":[15,0,110]
 };

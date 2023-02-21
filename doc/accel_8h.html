@@ -137,7 +137,8 @@ Enumerations</h2></td></tr>
 , <br />
 &#160;&#160;<b>ACCEL_OPC_ENCRYPT</b> = 8
 , <b>ACCEL_OPC_DECRYPT</b> = 9
-, <b>ACCEL_OPC_LAST</b> = 10
+, <b>ACCEL_OPC_XOR</b> = 10
+, <b>ACCEL_OPC_LAST</b> = 11
 <br />
  }</td></tr>
 <tr class="separator:a009c73029ad0ef1eed6de0ca4406bf5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -192,6 +193,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ad6de8b2f54bfd1a60203cc845eb01f93"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="accel_8h.html#ad6de8b2f54bfd1a60203cc845eb01f93">spdk_accel_submit_decompress</a> (struct spdk_io_channel *ch, struct iovec *dst_iovs, size_t dst_iovcnt, struct iovec *src_iovs, size_t src_iovcnt, uint32_t *output_size, int flags, <a class="el" href="accel_8h.html#a6ba836b7b128829ba185eadb2c60476a">spdk_accel_completion_cb</a> cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:ad6de8b2f54bfd1a60203cc845eb01f93"><td class="mdescLeft">&#160;</td><td class="mdescRight">Build and submit a memory decompress request.  <a href="accel_8h.html#ad6de8b2f54bfd1a60203cc845eb01f93">More...</a><br /></td></tr>
 <tr class="separator:ad6de8b2f54bfd1a60203cc845eb01f93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed96871d0496c7f6e3549999bbb6ea84"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="accel_8h.html#aed96871d0496c7f6e3549999bbb6ea84">spdk_accel_submit_xor</a> (struct spdk_io_channel *ch, void *dst, void **sources, uint32_t nsrcs, uint64_t nbytes, <a class="el" href="accel_8h.html#a6ba836b7b128829ba185eadb2c60476a">spdk_accel_completion_cb</a> cb_fn, void *cb_arg)</td></tr>
+<tr class="memdesc:aed96871d0496c7f6e3549999bbb6ea84"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submit an xor request.  <a href="accel_8h.html#aed96871d0496c7f6e3549999bbb6ea84">More...</a><br /></td></tr>
+<tr class="separator:aed96871d0496c7f6e3549999bbb6ea84"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a51ed9c807379914cef1c5eaf05a3b9f7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="accel_8h.html#a51ed9c807379914cef1c5eaf05a3b9f7">spdk_accel_append_copy</a> (struct spdk_accel_sequence **seq, struct spdk_io_channel *ch, struct iovec *dst_iovs, uint32_t dst_iovcnt, struct spdk_memory_domain *dst_domain, void *dst_domain_ctx, struct iovec *src_iovs, uint32_t src_iovcnt, struct spdk_memory_domain *src_domain, void *src_domain_ctx, int flags, <a class="el" href="accel_8h.html#abaf556b5e1b63b5237faff3952a3bb46">spdk_accel_step_cb</a> cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:a51ed9c807379914cef1c5eaf05a3b9f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Append a copy operation to a sequence.  <a href="accel_8h.html#a51ed9c807379914cef1c5eaf05a3b9f7">More...</a><br /></td></tr>
 <tr class="separator:a51ed9c807379914cef1c5eaf05a3b9f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -2371,6 +2375,79 @@ Functions</h2></td></tr>
     <tr><td class="paramname">nbytes</td><td>Length in bytes to fill. </td></tr>
     <tr><td class="paramname">flags</td><td>Accel framework flags for operations. </td></tr>
     <tr><td class="paramname">cb_fn</td><td>Called when this fill operation completes. </td></tr>
+    <tr><td class="paramname">cb_arg</td><td>Callback argument.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, negative errno on failure. </dd></dl>
+
+</div>
+</div>
+<a id="aed96871d0496c7f6e3549999bbb6ea84"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed96871d0496c7f6e3549999bbb6ea84">&#9670;&nbsp;</a></span>spdk_accel_submit_xor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_accel_submit_xor </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_io_channel *&#160;</td>
+          <td class="paramname"><em>ch</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>dst</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void **&#160;</td>
+          <td class="paramname"><em>sources</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>nsrcs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>nbytes</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="accel_8h.html#a6ba836b7b128829ba185eadb2c60476a">spdk_accel_completion_cb</a>&#160;</td>
+          <td class="paramname"><em>cb_fn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>cb_arg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Submit an xor request. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ch</td><td>I/O channel associated with this call. </td></tr>
+    <tr><td class="paramname">dst</td><td>Destination to write the data to. </td></tr>
+    <tr><td class="paramname">sources</td><td>Array of source buffers. </td></tr>
+    <tr><td class="paramname">nsrcs</td><td>Number of source buffers in the array. </td></tr>
+    <tr><td class="paramname">nbytes</td><td>Length in bytes. </td></tr>
+    <tr><td class="paramname">cb_fn</td><td>Called when this copy operation completes. </td></tr>
     <tr><td class="paramname">cb_arg</td><td>Callback argument.</td></tr>
   </table>
   </dd>

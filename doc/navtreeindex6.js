@@ -1,5 +1,7 @@
 var NAVTREEINDEX6 =
 {
+"iscsi__spec_8h.html#ad2c30ed17419423b79a47fae8323408aa0aa55c85896d21acfc801b374defb7e0":[16,0,32,93,15],
+"iscsi__spec_8h.html#ad2c30ed17419423b79a47fae8323408aa1f53ae65a0bf8049939d0e6952d46ad3":[16,0,32,93,3],
 "iscsi__spec_8h.html#ad2c30ed17419423b79a47fae8323408aa33d5242a2c09544e4cdd825e6726bbc7":[16,0,32,93,21],
 "iscsi__spec_8h.html#ad2c30ed17419423b79a47fae8323408aa3fdf11feeb7785a73e8b0cffecc70861":[16,0,32,93,18],
 "iscsi__spec_8h.html#ad2c30ed17419423b79a47fae8323408aa58deeacb23e9bf63ecdc8b857754ce2d":[16,0,32,93,11],
@@ -247,7 +249,5 @@ var NAVTREEINDEX6 =
 "jsonrpc.html#rpc_bdev_pmem_create_pool":[3,9,5,72],
 "jsonrpc.html#rpc_bdev_pmem_delete":[3,9,5,76],
 "jsonrpc.html#rpc_bdev_pmem_delete_pool":[3,9,5,74],
-"jsonrpc.html#rpc_bdev_pmem_get_pool_info":[3,9,5,73],
-"jsonrpc.html#rpc_bdev_raid_create":[3,9,9,15],
-"jsonrpc.html#rpc_bdev_raid_delete":[3,9,9,16]
+"jsonrpc.html#rpc_bdev_pmem_get_pool_info":[3,9,5,73]
 };

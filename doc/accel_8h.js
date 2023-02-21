@@ -16,6 +16,7 @@ var accel_8h =
       [ "ACCEL_OPC_DECOMPRESS", "accel_8h.html#a009c73029ad0ef1eed6de0ca4406bf5ba82d2bf520759937a031f5fd7bef44022", null ],
       [ "ACCEL_OPC_ENCRYPT", "accel_8h.html#a009c73029ad0ef1eed6de0ca4406bf5ba6c36c0512dcba843bbcb5cc33c160348", null ],
       [ "ACCEL_OPC_DECRYPT", "accel_8h.html#a009c73029ad0ef1eed6de0ca4406bf5ba5d604d29efaf4efcd14f11811640dd96", null ],
+      [ "ACCEL_OPC_XOR", "accel_8h.html#a009c73029ad0ef1eed6de0ca4406bf5baa2bbbad90905d6e7b83ca880d9e5b2db", null ],
       [ "ACCEL_OPC_LAST", "accel_8h.html#a009c73029ad0ef1eed6de0ca4406bf5bac7aee028e81d8fa135ae717148af57ed", null ]
     ] ],
     [ "spdk_accel_append_copy", "accel_8h.html#a51ed9c807379914cef1c5eaf05a3b9f7", null ],
@@ -49,5 +50,6 @@ var accel_8h =
     [ "spdk_accel_submit_dualcast", "accel_8h.html#aad9824886c1379235c90674e3a932483", null ],
     [ "spdk_accel_submit_encrypt", "accel_8h.html#afa481210cd4541e79ae4d304f119709e", null ],
     [ "spdk_accel_submit_fill", "accel_8h.html#ad5529e871a11d307e5aba2e21abeaa29", null ],
+    [ "spdk_accel_submit_xor", "accel_8h.html#aed96871d0496c7f6e3549999bbb6ea84", null ],
     [ "spdk_accel_write_config_json", "accel_8h.html#a308671b4f55c2adc9469e59b941a6dcc", null ]
 ];

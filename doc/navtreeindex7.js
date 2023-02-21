@@ -1,5 +1,7 @@
 var NAVTREEINDEX7 =
 {
+"jsonrpc.html#rpc_bdev_raid_create":[3,9,9,15],
+"jsonrpc.html#rpc_bdev_raid_delete":[3,9,9,16],
 "jsonrpc.html#rpc_bdev_raid_get_bdevs":[3,9,9,14],
 "jsonrpc.html#rpc_bdev_rbd_create":[3,9,5,54],
 "jsonrpc.html#rpc_bdev_rbd_delete":[3,9,5,55],
@@ -247,7 +249,5 @@ var NAVTREEINDEX7 =
 "log_8h.html#ae38b49633346c10edf505c9ec5a11af6":[16,0,36,1],
 "log_8h.html#ae7a0943ae8fc36d9749bebd96a97fc21":[16,0,36,39],
 "log_8h.html#aebde768fd834a3c9364b7b5a8bd479f4":[16,0,36,18],
-"log_8h.html#aec36027084c167aa798f9f4cb33e639a":[16,0,36,8],
-"log_8h.html#af600090b2a4aa95b4e9e4dae27bf6c7e":[16,0,36,29],
-"log_8h.html#afc930c0e1a4696a4c489c781b1a55b02":[16,0,36,16]
+"log_8h.html#aec36027084c167aa798f9f4cb33e639a":[16,0,36,8]
 };
