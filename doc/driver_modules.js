@@ -24,7 +24,8 @@ var driver_modules =
         [ "Limitations", "nvme.html#nvme_multi_process_limitations", null ]
       ] ],
       [ "NVMe Hotplug", "nvme.html#nvme_hotplug", null ],
-      [ "NVMe Character Devices", "nvme.html#nvme_cuse", null ]
+      [ "NVMe Character Devices", "nvme.html#nvme_cuse", null ],
+      [ "NVMe LED management", "nvme.html#nvme_led", null ]
     ] ],
     [ "I/OAT Driver", "ioat.html", [
       [ "Public Interface", "ioat.html#ioat_interface", null ],
