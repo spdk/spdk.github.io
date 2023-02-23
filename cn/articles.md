@@ -58,6 +58,8 @@ toc:
 
 * [SPDK NVMe-oF TCP transport 目前优化的一些工作和方向](https://mp.weixin.qq.com/s?__biz=MzI3NDA4ODY4MA==&mid=2653336799&idx=1&sn=cfcfd3a2688e147bb3ea0e6ab4d31226&chksm=f0cb4358c7bcca4e67d4cbebfa6ad3eb5419c5c1daf21d1d122b7615be6c8c5a1347bea1a0a2&token=1050568646&lang=zh_CN#rd)
 
+* [NVMe over TCP性能测试和调优方法](https://mp.weixin.qq.com/s?__biz=MzI3NDA4ODY4MA==&mid=2653339261&idx=1&sn=f3f7d320e925658c72e5eaa269ddb6f2&chksm=f0cb49fac7bcc0ec74e32b28d66af172f1d1105e697884b1df4d5218f49a217459c3c31c59cd&mpshare=1&scene=1&srcid=0223XYyG3Uvnx3Oh16QBsbjb&sharer_sharetime=1677121559156&sharer_shareid=16362cd686fb4155d775401692935830&exportkey=n_ChQIAhIQTEDI%2BBYb58QFh69rlkDIeBKZAgIE97dBBAEAAAAAAA8nGO9jxj0AAAAOpnltbLcz9gKNyK89dVj0suqbf1xuT3uB72bxydOIFdFdL%2ByFa1JibU1DWDlvNZnjCDGGne3dherC%2BVvxb1YRfKFPcOBcBVePvV7q6rdzGnl9sRCqXnqn7BxXhDgK7Sv2%2FblDFopK1V%2B%2BavzIjgUbmU1wp9dw0gAUPYlems4R3y3LmDwrb7QHj0JjwEUhUa0ES3OgpGVWckImAA21NtEVBrgQDd6vQj3DlmgGbXAxiyHlxquxGiIAHUVY%2FVLjcblxQUFwsgw9Ymqwv2YNnhg6NhrsxVyZW3rKUFd9%2FhQrcn0SwpLu5ousNMta92OWDT0qNQrPW1k7WzSKAnipP2FrPLJD&acctmode=0&pass_ticket=bCZMVYPY9%2Fpqnc%2B2MUg65FPu0fab%2F%2F3KlYKdLaJsgHi4bI%2FpMXkJosed48HShRhAVPDuZ%2BrrfOAV%2BnK1Z2soAA%3D%3D&wx_header=0#rd)
+
 * [SPDK NVMe Reservation使用简介](https://mp.weixin.qq.com/s?__biz=MzI3NDA4ODY4MA==&mid=2653335852&idx=1&sn=5e08566473a1e2f14b9d1f697c4995cc&chksm=f0cb46abc7bccfbdc9aa982f87dc851a59c6bddb321f4d02f682549426226eca2ee1d973a32b&token=2145434935&lang=zh_CN#rd)
 
 * [深入理解 SPDK NVMe/TCP transport的设计](https://mp.weixin.qq.com/s?__biz=MzI3NDA4ODY4MA==&mid=2653335525&idx=1&sn=d4dc96bd800161e8a222279ca8396570&chksm=f0cb5862c7bcd1741bfbe1ee4c96dd200491f9c0c4d6a41a8299e0adf289f9a102b6780cd86f&token=1477511457&lang=zh_CN#rd)
@@ -89,6 +91,8 @@ toc:
 * [CVL网卡的ADQ特性在SPDK的NVMF测试中的应用实例 - 上篇](https://mp.weixin.qq.com/s?__biz=MzI3NDA4ODY4MA==&mid=2653337411&idx=1&sn=2c20d7e6be1e491e88453b35d664948c&chksm=f0cb40c4c7bcc9d2ebbe09f7f8762bc9194dae52a142d906e5d2382300d271ccca7b34dbc1d6&scene=0&xtrack=1&exportkey=A%2FEW6XpPuT0yaN4hynZT2fo%3D&pass_ticket=w%2BZq2BsgB7kRtHy74eCg%2Bg3OzQ1%2BagIyRNE8HTReHBBzgY%2BPoBJ2KHsJWJVus9X2&wx_header=0#rd)
 
 * [CVL网卡的ADQ特性在SPDK的NVMF测试中的应用实例 - 下篇](https://mp.weixin.qq.com/s?__biz=MzI3NDA4ODY4MA==&mid=2653337412&idx=1&sn=43d8e1579060c01a6ae885024a5d8b57&chksm=f0cb40c3c7bcc9d51385952f678a05a073af44fef3c2d80b31840f8fb5c367dd03e6a21be569&scene=0&xtrack=1&exportkey=A3ZNSgaNVrFI2XJD7u7AS04%3D&pass_ticket=vkau%2B%2F%2BpF2ANWH%2F%2B7AW%2B%2FZTZ49cBSWbTMZ7QKXhjW7wagOPKKr5iX9iRZYrUd8Ld&wx_header=0#rd)
+
+* [在SPDK中体验一下E810网卡ADQ直通车](https://mp.weixin.qq.com/s?__biz=MzI3NDA4ODY4MA==&mid=2653339203&idx=1&sn=ebfae1043762512ea67a90744283aa53&chksm=f0cb49c4c7bcc0d231a2e89c4ea2cd19ef29572b62cbd895471b2aa662e57fb4646b27d7742e&mpshare=1&scene=1&srcid=0223afEFD0jWSuN1g09SIBWK&sharer_sharetime=1677121576203&sharer_shareid=16362cd686fb4155d775401692935830&exportkey=n_ChQIAhIQgl5m%2BhHX9IbxeYlAbOQ%2BvxKZAgIE97dBBAEAAAAAAE1MEbTzFdsAAAAOpnltbLcz9gKNyK89dVj0j7a99oCw63zahjzstKYHJLs5Xtt7hskKu2fWbdlo0V9ICTKQX4TBygndM2Hkh8Y1C6pPdApK1GlvZ8KdX8UkDm58URpUDQISpSsUae75hLsIN6tBPOjKs6tsx6RB1gocTH76tHTRdg2yOyqWutAiBiM3EQ%2F4pAt79K0pP0HcDTw6LVppkfr%2BUluFl3OJORj7ivLDNb9cOCChY1%2ByYxSGelq0wPVgq8UfkXM4tiI5%2BYtuqfwFywkUgrwMSiZaGmBGC4n0RaqfGvOYnKL2SqHgG%2BQuZAqiUVS%2B%2BdGO4QqyJrifi1Ibh0Bu8Aem8LWPhm5uGSs0&acctmode=0&pass_ticket=bCZMVYPY9%2Fpqnc%2B2MUg65FPu0fab%2F%2F3KlYKdLaJsgHh%2F0L8WiwPTwwzWsc18q%2FSDNCxO1BY4GMFnL5jHrksJaA%3D%3D&wx_header=0#rd)
 
 ******
 
