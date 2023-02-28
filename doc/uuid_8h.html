@@ -125,6 +125,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a397f151075d3a0a5651221bd74c13c66"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uuid_8h.html#a397f151075d3a0a5651221bd74c13c66">spdk_uuid_generate</a> (struct <a class="el" href="structspdk__uuid.html">spdk_uuid</a> *uuid)</td></tr>
 <tr class="memdesc:a397f151075d3a0a5651221bd74c13c66"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate a new UUID.  <a href="uuid_8h.html#a397f151075d3a0a5651221bd74c13c66">More...</a><br /></td></tr>
 <tr class="separator:a397f151075d3a0a5651221bd74c13c66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c3dce52beab5ae68f5bbd011d646693"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uuid_8h.html#a5c3dce52beab5ae68f5bbd011d646693">spdk_uuid_generate_sha1</a> (struct <a class="el" href="structspdk__uuid.html">spdk_uuid</a> *uuid, struct <a class="el" href="structspdk__uuid.html">spdk_uuid</a> *ns_uuid, const char *name, size_t len)</td></tr>
+<tr class="memdesc:a5c3dce52beab5ae68f5bbd011d646693"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate a new UUID using SHA1 hash.  <a href="uuid_8h.html#a5c3dce52beab5ae68f5bbd011d646693">More...</a><br /></td></tr>
+<tr class="separator:a5c3dce52beab5ae68f5bbd011d646693"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9080d454ffefb2b8e425ca127b72a546"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uuid_8h.html#a9080d454ffefb2b8e425ca127b72a546">spdk_uuid_copy</a> (struct <a class="el" href="structspdk__uuid.html">spdk_uuid</a> *dst, const struct <a class="el" href="structspdk__uuid.html">spdk_uuid</a> *src)</td></tr>
 <tr class="memdesc:a9080d454ffefb2b8e425ca127b72a546"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy a UUID.  <a href="uuid_8h.html#a9080d454ffefb2b8e425ca127b72a546">More...</a><br /></td></tr>
 <tr class="separator:a9080d454ffefb2b8e425ca127b72a546"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -275,6 +278,58 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="a5c3dce52beab5ae68f5bbd011d646693"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5c3dce52beab5ae68f5bbd011d646693">&#9670;&nbsp;</a></span>spdk_uuid_generate_sha1()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_uuid_generate_sha1 </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structspdk__uuid.html">spdk_uuid</a> *&#160;</td>
+          <td class="paramname"><em>uuid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structspdk__uuid.html">spdk_uuid</a> *&#160;</td>
+          <td class="paramname"><em>ns_uuid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Generate a new UUID using SHA1 hash. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">uuid</td><td>User-provided UUID buffer to fill. </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">ns_uuid</td><td>Well-known namespace UUID for generated UUID. </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">name</td><td>Arbitrary, binary string. </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">len</td><td>Length of binary string.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, non-zero on failure. </dd></dl>
 
 </div>
 </div>

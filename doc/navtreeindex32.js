@@ -1,5 +1,6 @@
 var NAVTREEINDEX32 =
 {
+"unionspdk__nvme__cmbsz__register.html#ad934781cb8247d65136131504d5cd05d":[15,0,141,9],
 "unionspdk__nvme__cmbsz__register.html#af1ceb7a8fd105d746f14edf48a672d08":[15,0,141,1],
 "unionspdk__nvme__cmd__cdw10.html":[15,0,143],
 "unionspdk__nvme__cmd__cdw10.html#a022f6e3fd6990df3c72e3b34cfe9a9c4":[15,0,143,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX32 =
 "unionspdk__nvme__feat__software__progress__marker.html#a7daee58fa1e18cf11a6e6989f98f6ff1":[15,0,188,3],
 "unionspdk__nvme__feat__software__progress__marker.html#a81508f0b98542e700f045c39bdea42e6":[15,0,188,0],
 "unionspdk__nvme__feat__temperature__threshold.html":[15,0,189],
-"unionspdk__nvme__feat__temperature__threshold.html#a384b25c620ca81031b6260f6b0e16142":[15,0,189,3],
-"unionspdk__nvme__feat__temperature__threshold.html#a611a74458d69f25c9151ec7ae81a6b73":[15,0,189,4]
+"unionspdk__nvme__feat__temperature__threshold.html#a384b25c620ca81031b6260f6b0e16142":[15,0,189,3]
 };
