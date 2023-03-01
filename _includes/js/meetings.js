@@ -81,10 +81,6 @@ while (asiaPRCDate < currentDate || compareHoliday(asiaPRCDate, USHolidays, USTi
         asiaPRCDate.setDate(asiaPRCDate.getDate() + 28);
 }
 
-while (asiaBugDate < currentDate || compareHoliday(asiaBugDate, USHolidays, USTimeZone) || compareHoliday(asiaBugDate, AsiaHolidays, AsiaTimeZone)) {
-        asiaBugDate.setDate(asiaBugDate.getDate() + 14);
-}
-
 while (euroBugDate < currentDate || compareHoliday(euroBugDate, USHolidays, USTimeZone) || compareHoliday(euroBugDate, EuroHolidays, EuroTimeZone)) {
         euroBugDate.setDate(euroBugDate.getDate() + 14);
 }
@@ -94,11 +90,9 @@ while (euroBugDate < currentDate || compareHoliday(euroBugDate, USHolidays, USTi
 euroDate = new Date(Date.UTC(euroDate.getUTCFullYear(), euroDate.getUTCMonth(), euroDate.getUTCDate(), 15, 0, 0, 0));
 asiaDate = new Date(Date.UTC(asiaDate.getUTCFullYear(), asiaDate.getUTCMonth(), asiaDate.getUTCDate(), 4, 0, 0, 0));
 asiaPRCDate = new Date(Date.UTC(asiaPRCDate.getUTCFullYear(), asiaPRCDate.getUTCMonth(), asiaPRCDate.getUTCDate(), 4, 0, 0, 0));
-asiaBugDate = new Date(Date.UTC(asiaBugDate.getUTCFullYear(), asiaBugDate.getUTCMonth(), asiaBugDate.getUTCDate(), 4, 0, 0, 0));
 euroBugDate = new Date(Date.UTC(euroBugDate.getUTCFullYear(), euroBugDate.getUTCMonth(), euroBugDate.getUTCDate(), 15, 0, 0, 0));
 
 document.getElementById("euro-mtg").textContent = formatDate(euroDate);
 document.getElementById("asia-mtg").textContent = formatDate(asiaDate);
 document.getElementById("asia-prc-mtg").textContent = formatDate(asiaPRCDate);
-document.getElementById("asia-bug-mtg").textContent = formatDate(asiaBugDate);
 document.getElementById("euro-bug-mtg").textContent = formatDate(euroBugDate);

@@ -35,9 +35,6 @@ SPDK社区会议对所有人开放，并鼓励所有人参与。社区会议的�
 ## 下一次亚太会议时间
 <div id="asia-mtg"></div>
 
-## Bug讨论
-<div id="asia-bug-mtg"></div>
-
 # 贡献代码
 
 有关如何为SPDK做出贡献的更多信息，请参见[开发页面](/cn/development/)。

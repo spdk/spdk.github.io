@@ -76,9 +76,6 @@ Or audio only: +1 916 245 6934 (ID: 664 940 190#)
 ## Next Euro-Friendly Community Meeting
 <div id="euro-mtg"></div>
 
-## Next Asia-Friendly Github Issue Review Meeting
-<div id="asia-bug-mtg"></div>
-
 ## Next Euro-Friendly Github Issue Review Meeting
 <div id="euro-bug-mtg"></div>
 
