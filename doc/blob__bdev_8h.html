@@ -86,6 +86,7 @@ $(document).ready(function(){initNavTree('blob__bdev_8h.html',''); initResizable
 
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Data Structures</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">blob_bdev.h File Reference</div>  </div>
@@ -95,11 +96,22 @@ $(document).ready(function(){initNavTree('blob__bdev_8h.html',''); initResizable
 <p>Helper library to use <a class="el" href="structspdk__bdev.html">spdk_bdev</a> as the backing device for a blobstore.  
 <a href="#details">More...</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Data Structures</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev__bs__dev__opts.html">spdk_bdev_bs_dev_opts</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:adf37d6868bd4c73742b8b4db3ebf85f4"><td class="memItemLeft" align="right" valign="top"><a id="adf37d6868bd4c73742b8b4db3ebf85f4"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_STATIC_ASSERT</b> (sizeof(struct <a class="el" href="structspdk__bdev__bs__dev__opts.html">spdk_bdev_bs_dev_opts</a>)==8, &quot;Incorrect size&quot;)</td></tr>
+<tr class="separator:adf37d6868bd4c73742b8b4db3ebf85f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af2318a373aae926c6ce9300e06e8bb81"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blob__bdev_8h.html#af2318a373aae926c6ce9300e06e8bb81">spdk_bdev_create_bs_dev_ext</a> (const char *bdev_name, <a class="el" href="bdev_8h.html#ab4755b1b0a2a204732c3be266b6e1b08">spdk_bdev_event_cb_t</a> event_cb, void *event_ctx, struct <a class="el" href="structspdk__bs__dev.html">spdk_bs_dev</a> **bs_dev)</td></tr>
 <tr class="memdesc:af2318a373aae926c6ce9300e06e8bb81"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a blobstore block device from a bdev.  <a href="blob__bdev_8h.html#af2318a373aae926c6ce9300e06e8bb81">More...</a><br /></td></tr>
 <tr class="separator:af2318a373aae926c6ce9300e06e8bb81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a6d877fd0b0eaea06c55c972fa54497"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blob__bdev_8h.html#a2a6d877fd0b0eaea06c55c972fa54497">spdk_bdev_create_bs_dev</a> (const char *bdev_name, bool write, struct <a class="el" href="structspdk__bdev__bs__dev__opts.html">spdk_bdev_bs_dev_opts</a> *opts, size_t opts_size, <a class="el" href="bdev_8h.html#ab4755b1b0a2a204732c3be266b6e1b08">spdk_bdev_event_cb_t</a> event_cb, void *event_ctx, struct <a class="el" href="structspdk__bs__dev.html">spdk_bs_dev</a> **bs_dev)</td></tr>
+<tr class="memdesc:a2a6d877fd0b0eaea06c55c972fa54497"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a blobstore block device from a bdev.  <a href="blob__bdev_8h.html#a2a6d877fd0b0eaea06c55c972fa54497">More...</a><br /></td></tr>
+<tr class="separator:a2a6d877fd0b0eaea06c55c972fa54497"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0499e5f00e93f3406989f281bd7122a6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blob__bdev_8h.html#a0499e5f00e93f3406989f281bd7122a6">spdk_bs_bdev_claim</a> (struct <a class="el" href="structspdk__bs__dev.html">spdk_bs_dev</a> *bs_dev, struct <a class="el" href="structspdk__bdev__module.html">spdk_bdev_module</a> *module)</td></tr>
 <tr class="memdesc:a0499e5f00e93f3406989f281bd7122a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Claim the bdev module for the given blobstore.  <a href="blob__bdev_8h.html#a0499e5f00e93f3406989f281bd7122a6">More...</a><br /></td></tr>
 <tr class="separator:a0499e5f00e93f3406989f281bd7122a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -107,6 +119,79 @@ Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Helper library to use <a class="el" href="structspdk__bdev.html">spdk_bdev</a> as the backing device for a blobstore. </p>
 </div><h2 class="groupheader">Function Documentation</h2>
+<a id="a2a6d877fd0b0eaea06c55c972fa54497"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2a6d877fd0b0eaea06c55c972fa54497">&#9670;&nbsp;</a></span>spdk_bdev_create_bs_dev()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_bdev_create_bs_dev </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>bdev_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>write</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structspdk__bdev__bs__dev__opts.html">spdk_bdev_bs_dev_opts</a> *&#160;</td>
+          <td class="paramname"><em>opts</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>opts_size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="bdev_8h.html#ab4755b1b0a2a204732c3be266b6e1b08">spdk_bdev_event_cb_t</a>&#160;</td>
+          <td class="paramname"><em>event_cb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>event_ctx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structspdk__bs__dev.html">spdk_bs_dev</a> **&#160;</td>
+          <td class="paramname"><em>bs_dev</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Create a blobstore block device from a bdev. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bdev_name</td><td>The bdev to use. </td></tr>
+    <tr><td class="paramname">write</td><td>If true, open device read-write, else open read-only. </td></tr>
+    <tr><td class="paramname">opts</td><td>Additonal options; none currently supported. </td></tr>
+    <tr><td class="paramname">opts_size</td><td>Size of structure referenced by opts. </td></tr>
+    <tr><td class="paramname">event_cb</td><td>Called when the bdev triggers asynchronous event. </td></tr>
+    <tr><td class="paramname">event_ctx</td><td>Argument passed to function event_cb. </td></tr>
+    <tr><td class="paramname">bs_dev</td><td>Output parameter for a pointer to the blobstore block device. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 if operation is successful, or suitable errno value otherwise. </dd></dl>
+
+</div>
+</div>
 <a id="af2318a373aae926c6ce9300e06e8bb81"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af2318a373aae926c6ce9300e06e8bb81">&#9670;&nbsp;</a></span>spdk_bdev_create_bs_dev_ext()</h2>
 
@@ -186,6 +271,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Claim the bdev module for the given blobstore. </p>
+<p>If bs_dev was opened read-write using <a class="el" href="blob__bdev_8h.html#af2318a373aae926c6ce9300e06e8bb81" title="Create a blobstore block device from a bdev.">spdk_bdev_create_bs_dev_ext()</a>, a read-write-once claim is taken. If bs_dev was opened read-only using spdk_bdev_create_bs_dev_ro(), a read-only-many claim is taken.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">bs_dev</td><td>Blobstore block device. </td></tr>

@@ -9,7 +9,12 @@ var prog_guides =
       [ "Examples", "blob.html#blob_pg_examples", null ],
       [ "Configuration", "blob.html#blob_pg_config", null ],
       [ "Component Detail", "blob.html#blob_pg_component", [
-        [ "Blob cluster layout", "blob.html#blob_pg_cluster_layout", null ]
+        [ "Blob cluster layout", "blob.html#blob_pg_cluster_layout", [
+          [ "Thin Provisioning", "blob.html#blob_pg_thin_provisioning", null ],
+          [ "Snapshots and Clones", "blob.html#blob_pg_snapshots", null ],
+          [ "External Snapshots and Esnap Clones", "blob.html#blob_pg_esnap_and_esnap_clone", null ],
+          [ "Copy-on-write", "blob.html#blob_pg_copy_on_write", null ]
+        ] ]
       ] ]
     ] ],
     [ "Block Device Layer Programming Guide", "bdev_pg.html", null ],

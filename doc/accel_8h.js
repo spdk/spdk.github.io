@@ -1,7 +1,6 @@
 var accel_8h =
 [
     [ "spdk_accel_crypto_key_create_param", "structspdk__accel__crypto__key__create__param.html", "structspdk__accel__crypto__key__create__param" ],
-    [ "ACCEL_FLAG_PERSISTENT", "accel_8h.html#a30934de571302d9de3dd14d657172896", null ],
     [ "spdk_accel_completion_cb", "accel_8h.html#a6ba836b7b128829ba185eadb2c60476a", null ],
     [ "spdk_accel_fini_cb", "accel_8h.html#a545ea1cc4167924acee2803aed824877", null ],
     [ "spdk_accel_step_cb", "accel_8h.html#abaf556b5e1b63b5237faff3952a3bb46", null ],

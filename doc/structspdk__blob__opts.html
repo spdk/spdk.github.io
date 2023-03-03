@@ -122,8 +122,33 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stru
 <tr class="memitem:a4cc3d1a37fb69323f972fda4134adb54"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__blob__opts.html#a4cc3d1a37fb69323f972fda4134adb54">opts_size</a></td></tr>
 <tr class="memdesc:a4cc3d1a37fb69323f972fda4134adb54"><td class="mdescLeft">&#160;</td><td class="mdescRight">The size of <a class="el" href="structspdk__blob__opts.html">spdk_blob_opts</a> according to the caller of this library is used for ABI compatibility.  <a href="structspdk__blob__opts.html#a4cc3d1a37fb69323f972fda4134adb54">More...</a><br /></td></tr>
 <tr class="separator:a4cc3d1a37fb69323f972fda4134adb54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26b126d8114a40f822777256cfeef57b"><td class="memItemLeft" align="right" valign="top">const void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__blob__opts.html#a26b126d8114a40f822777256cfeef57b">esnap_id</a></td></tr>
+<tr class="memdesc:a26b126d8114a40f822777256cfeef57b"><td class="mdescLeft">&#160;</td><td class="mdescRight">If set, create an esnap clone.  <a href="structspdk__blob__opts.html#a26b126d8114a40f822777256cfeef57b">More...</a><br /></td></tr>
+<tr class="separator:a26b126d8114a40f822777256cfeef57b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d9ec650c522bfcf63261e9c3e60a104"><td class="memItemLeft" align="right" valign="top"><a id="a8d9ec650c522bfcf63261e9c3e60a104"></a>
+uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__blob__opts.html#a8d9ec650c522bfcf63261e9c3e60a104">esnap_id_len</a></td></tr>
+<tr class="memdesc:a8d9ec650c522bfcf63261e9c3e60a104"><td class="mdescLeft">&#160;</td><td class="mdescRight">The size of data referenced by esnap_id, in bytes. <br /></td></tr>
+<tr class="separator:a8d9ec650c522bfcf63261e9c3e60a104"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Field Documentation</h2>
+<a id="a26b126d8114a40f822777256cfeef57b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a26b126d8114a40f822777256cfeef57b">&#9670;&nbsp;</a></span>esnap_id</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const void* spdk_blob_opts::esnap_id</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>If set, create an esnap clone. </p>
+<p>The memory referenced by esnap_id will be copied into the blob's metadata and can be retrieved with <a class="el" href="blob_8h.html#aa1133bfe5ef2517860e51e1a58220848" title="Get the id used to access the esnap clone&#39;s parent.">spdk_blob_get_esnap_id()</a>, typically from an esnap_bs_dev_create() callback. See struct_bs_opts.</p>
+<p>When esnap_id is specified, num_clusters should be specified. If it is not, the blob will have no capacity until <a class="el" href="blob_8h.html#a70993dda1206b4c0aaa76deb2b6fd13c" title="Resize a blob to &#39;sz&#39; clusters.">spdk_blob_resize()</a> is called. </p>
+
+</div>
+</div>
 <a id="a4cc3d1a37fb69323f972fda4134adb54"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4cc3d1a37fb69323f972fda4134adb54">&#9670;&nbsp;</a></span>opts_size</h2>
 

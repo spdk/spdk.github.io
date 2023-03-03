@@ -1,7 +1,6 @@
 var idxd_8h =
 [
     [ "SPDK_IDXD_FLAG_NONTEMPORAL", "idxd_8h.html#a6604e6eda4d2763dd023b897c2c58968", null ],
-    [ "SPDK_IDXD_FLAG_PERSISTENT", "idxd_8h.html#a252ac46d349fcaff8f6ed25793a7454b", null ],
     [ "spdk_idxd_attach_cb", "idxd_8h.html#a4d941aea0b11a77815cfdd10b1c3c22b", null ],
     [ "spdk_idxd_probe_cb", "idxd_8h.html#a9e646b0325aa65b2a5b9519c204a724a", null ],
     [ "spdk_idxd_req_cb", "idxd_8h.html#a75c066c5425700c49f077e20484b50c1", null ],

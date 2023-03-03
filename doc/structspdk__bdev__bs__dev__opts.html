@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="generator" content="Doxygen 1.9.1" />
-  <title>SPDK: Deprecation</title>
+  <title>SPDK: spdk_bdev_bs_dev_opts Struct Reference</title>
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
@@ -66,7 +66,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-$(document).ready(function(){initNavTree('md__home_sys_sgsw_oss_spdk_github_io_spdk_deprecation.html',''); initResizable(); });
+$(document).ready(function(){initNavTree('structspdk__bdev__bs__dev__opts.html',''); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -84,45 +84,42 @@ $(document).ready(function(){initNavTree('md__home_sys_sgsw_oss_spdk_github_io_s
 </iframe>
 </div>
 
-<div class="PageDoc"><div class="header">
+<div class="header">
+  <div class="summary">
+<a href="#pub-attribs">Data Fields</a>  </div>
   <div class="headertitle">
-<div class="title">Deprecation </div>  </div>
+<div class="title">spdk_bdev_bs_dev_opts Struct Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h1><a class="anchor" id="deprecation"></a>
-ABI and API Deprecation</h1>
-<p>This document details the policy for maintaining stability of SPDK ABI and API.</p>
-<p>Major ABI version can change at most once for each quarterly SPDK release. ABI versions are managed separately for each library and follow <a href="https://semver.org/">Semantic Versioning</a>.</p>
-<p>API and ABI deprecation notices shall be posted in the next section. Each entry must describe what will be removed and can suggest the future use or alternative. Specific future SPDK release for the removal must be provided. ABI cannot be removed without providing deprecation notice for at least single SPDK release.</p>
-<p>Deprecated code paths must be registered with <code>SPDK_DEPRECATION_REGISTER()</code> and logged with <code>SPDK_LOG_DEPRECATED()</code>. The tag used with these macros will appear in the SPDK log at the warn level when <code>SPDK_LOG_DEPRECATED()</code> is called, subject to rate limits. The tags can be matched with the level 4 headers below.</p>
-<h1><a class="anchor" id="deprecation-notices"></a>
-Deprecation Notices</h1>
-<h2>PMDK</h2>
-<p>PMDK is no longer supported and integrations with it in SPDK are now deprecated, and will be removed in SPDK 23.05. Please see: <a href="https://pmem.io/blog/2022/11/update-on-pmdk-and-our-long-term-support-strategy/">UPDATE ON PMDK AND OUR LONG TERM SUPPORT STRATEGY</a>.</p>
-<h3><code>bdev_pmem</code></h3>
-<p>Deprecated <code>bdev_pmem</code> based on libpmemblk, it will be removed in SPDK 23.05.</p>
-<h3><code>libreduce_pm_file</code></h3>
-<p>Reduce library will no longer depend on libpmem. <code>pm_file_dir</code> parameter in <code><a class="el" href="reduce_8h.html#a62753f16686f807748719567d57f15b8" title="Initialize a new libreduce compressed volume.">spdk_reduce_vol_init()</a></code> will no longer point to pmem device or pmem file. Instead it will be possible to operate on a file, without the benefits of persistency.</p>
-<h2>VTune</h2>
-<h3><code>vtune_support</code></h3>
-<p>VTune integration is in now deprecated and will be removed in SPDK 23.05.</p>
-<h2>OCF</h2>
-<h3><code>bdev_ocf</code></h3>
-<p>The Open CAS Framework (OCF) integration via bdev module and env_ocf is now deprecated and will be removed in SPDK 23.05.</p>
-<h2>nvme</h2>
-<h3><code>nvme_ctrlr_prepare_for_reset</code></h3>
-<p>Deprecated <code>spdk_nvme_ctrlr_prepare_for_reset</code> API, which will be removed in SPDK 22.01. For PCIe transport, <code>spdk_nvme_ctrlr_disconnect</code> should be used before freeing I/O qpairs.</p>
-<h2>gpt</h2>
-<h3><code>old_gpt_guid</code></h3>
-<p>Deprecated the SPDK partition type GUID <code>7c5222bd-8f5d-4087-9c00-bf9843c7b58c</code>. Partitions of this type have bdevs created that are one block less than the actual size of the partition. Existing partitions using the deprecated GUID can continue to use that GUID; support for the deprecated GUID will remain in SPDK indefinitely, and will continue to exhibit the off-by-one bug so that on-disk metadata layouts based on the incorrect size are not affected.</p>
-<p>See GitHub issue <a href="https://github.com/spdk/spdk/issues/2801">2801</a> for additional details on the bug.</p>
-<p>New SPDK partition types should use GUID <code>6527994e-2c5a-4eec-9613-8f5944074e8b</code> which will create a bdev of the correct size.</p>
-<h2>lvol</h2>
-<h3><code>vbdev_lvol_rpc_req_size</code></h3>
-<p>Param <code>size</code> in rpc commands <code>rpc_bdev_lvol_create</code> and <code>rpc_bdev_lvol_resize</code> is deprecated and replace by <code>size_in_mib</code>.</p>
-<p>See GitHub issue <a href="https://github.com/spdk/spdk/issues/2346">2346</a> for additional details. </p>
-</div></div><!-- contents -->
-</div><!-- PageDoc -->
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Data Fields</h2></td></tr>
+<tr class="memitem:a53636696779f8d6550b4aa9854264971"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev__bs__dev__opts.html#a53636696779f8d6550b4aa9854264971">opts_size</a></td></tr>
+<tr class="memdesc:a53636696779f8d6550b4aa9854264971"><td class="mdescLeft">&#160;</td><td class="mdescRight">The size of this structure according to the caller of this library is used for ABI compatibility.  <a href="structspdk__bdev__bs__dev__opts.html#a53636696779f8d6550b4aa9854264971">More...</a><br /></td></tr>
+<tr class="separator:a53636696779f8d6550b4aa9854264971"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Field Documentation</h2>
+<a id="a53636696779f8d6550b4aa9854264971"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a53636696779f8d6550b4aa9854264971">&#9670;&nbsp;</a></span>opts_size</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t spdk_bdev_bs_dev_opts::opts_size</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The size of this structure according to the caller of this library is used for ABI compatibility. </p>
+<p>The library uses this field to know how many fields in this structure are valid. And the library will populate any remaining fields with default values. New added fields should be put at the end of the struct. </p>
+
+</div>
+</div>
+<hr/>The documentation for this struct was generated from the following file:<ul>
+<li><a class="el" href="blob__bdev_8h.html">blob_bdev.h</a></li>
+</ul>
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->

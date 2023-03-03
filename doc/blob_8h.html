@@ -124,6 +124,9 @@ Macros</h2></td></tr>
 <tr class="memitem:a3caeda168fe1a5b8b809b546d92eede2"><td class="memItemLeft" align="right" valign="top"><a id="a3caeda168fe1a5b8b809b546d92eede2"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_BLOBID_INVALID</b>&#160;&#160;&#160;(uint64_t)-1</td></tr>
 <tr class="separator:a3caeda168fe1a5b8b809b546d92eede2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3892d19dd95f38adcc2d2443cf04a31"><td class="memItemLeft" align="right" valign="top"><a id="ab3892d19dd95f38adcc2d2443cf04a31"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_BLOBID_EXTERNAL_SNAPSHOT</b>&#160;&#160;&#160;(uint64_t)-2</td></tr>
+<tr class="separator:ab3892d19dd95f38adcc2d2443cf04a31"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a18bbf0471f09e63cd362ed279b71deb5"><td class="memItemLeft" align="right" valign="top"><a id="a18bbf0471f09e63cd362ed279b71deb5"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_BLOBSTORE_TYPE_LENGTH</b>&#160;&#160;&#160;16</td></tr>
 <tr class="separator:a18bbf0471f09e63cd362ed279b71deb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -151,6 +154,12 @@ typedef uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_blob
 <tr class="memitem:afb1f64973b22548813723a645f9b8995"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blob_8h.html#afb1f64973b22548813723a645f9b8995">spdk_bs_dev_cpl</a>) (struct spdk_io_channel *channel, void *cb_arg, int bserrno)</td></tr>
 <tr class="memdesc:afb1f64973b22548813723a645f9b8995"><td class="mdescLeft">&#160;</td><td class="mdescRight">Blobstore device completion callback.  <a href="blob_8h.html#afb1f64973b22548813723a645f9b8995">More...</a><br /></td></tr>
 <tr class="separator:afb1f64973b22548813723a645f9b8995"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a674db2e2ce68c181b11ffd676b8cc51b"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blob_8h.html#a674db2e2ce68c181b11ffd676b8cc51b">spdk_blob_op_with_bs_dev</a>) (void *cb_arg, struct <a class="el" href="structspdk__bs__dev.html">spdk_bs_dev</a> *bs_dev, int bserrno)</td></tr>
+<tr class="memdesc:a674db2e2ce68c181b11ffd676b8cc51b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Blob device open completion callback with blobstore device.  <a href="blob_8h.html#a674db2e2ce68c181b11ffd676b8cc51b">More...</a><br /></td></tr>
+<tr class="separator:a674db2e2ce68c181b11ffd676b8cc51b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9178032dc568f6575d1b48be082064b7"><td class="memItemLeft" align="right" valign="top">typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blob_8h.html#a9178032dc568f6575d1b48be082064b7">spdk_bs_esnap_dev_create</a>) (struct spdk_blob *blob, const void *esnap_id, uint32_t id_size, struct <a class="el" href="structspdk__bs__dev.html">spdk_bs_dev</a> **bs_dev)</td></tr>
+<tr class="memdesc:a9178032dc568f6575d1b48be082064b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">External snapshot device open callback.  <a href="blob_8h.html#a9178032dc568f6575d1b48be082064b7">More...</a><br /></td></tr>
+<tr class="separator:a9178032dc568f6575d1b48be082064b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae099ff1947cd0f1e8422289222bc1666"><td class="memItemLeft" align="right" valign="top"><a id="ae099ff1947cd0f1e8422289222bc1666"></a>
 typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bs_dump_print_xattr</b>) (FILE *fp, const char *bstype, const char *name, const void *value, size_t value_length)</td></tr>
 <tr class="separator:ae099ff1947cd0f1e8422289222bc1666"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -174,9 +183,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a9adaf62358930fae9a67fe5523d254a2"><td class="memItemLeft" align="right" valign="top"><a id="a9adaf62358930fae9a67fe5523d254a2"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_STATIC_ASSERT</b> (sizeof(struct <a class="el" href="structspdk__blob__ext__io__opts.html">spdk_blob_ext_io_opts</a>)==32, &quot;Incorrect size&quot;)</td></tr>
 <tr class="separator:a9adaf62358930fae9a67fe5523d254a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af79aa9b01b17644755777cf955c7b917"><td class="memItemLeft" align="right" valign="top"><a id="af79aa9b01b17644755777cf955c7b917"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_STATIC_ASSERT</b> (sizeof(struct <a class="el" href="structspdk__bs__opts.html">spdk_bs_opts</a>)==72, &quot;Incorrect size&quot;)</td></tr>
-<tr class="separator:af79aa9b01b17644755777cf955c7b917"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1662b0724698e2e4e0829d232a4db0f7"><td class="memItemLeft" align="right" valign="top"><a id="a1662b0724698e2e4e0829d232a4db0f7"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_STATIC_ASSERT</b> (sizeof(struct <a class="el" href="structspdk__bs__opts.html">spdk_bs_opts</a>)==80, &quot;Incorrect size&quot;)</td></tr>
+<tr class="separator:a1662b0724698e2e4e0829d232a4db0f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2d76e2deeb5cc5354d23370914b28e2a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blob_8h.html#a2d76e2deeb5cc5354d23370914b28e2a">spdk_bs_opts_init</a> (struct <a class="el" href="structspdk__bs__opts.html">spdk_bs_opts</a> *opts, size_t opts_size)</td></tr>
 <tr class="memdesc:a2d76e2deeb5cc5354d23370914b28e2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize a <a class="el" href="structspdk__bs__opts.html">spdk_bs_opts</a> structure to the default blobstore option values.  <a href="blob_8h.html#a2d76e2deeb5cc5354d23370914b28e2a">More...</a><br /></td></tr>
 <tr class="separator:a2d76e2deeb5cc5354d23370914b28e2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -237,9 +246,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a17bd599919d75e0f32bbd79edb2c062c"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blob_8h.html#a17bd599919d75e0f32bbd79edb2c062c">spdk_blob_get_next_unallocated_io_unit</a> (struct spdk_blob *blob, uint64_t offset)</td></tr>
 <tr class="memdesc:a17bd599919d75e0f32bbd79edb2c062c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get next unallocated io_unit.  <a href="blob_8h.html#a17bd599919d75e0f32bbd79edb2c062c">More...</a><br /></td></tr>
 <tr class="separator:a17bd599919d75e0f32bbd79edb2c062c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab0104dabd988a24e7be4cc19498f595b"><td class="memItemLeft" align="right" valign="top"><a id="ab0104dabd988a24e7be4cc19498f595b"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_STATIC_ASSERT</b> (sizeof(struct <a class="el" href="structspdk__blob__opts.html">spdk_blob_opts</a>)==64, &quot;Incorrect size&quot;)</td></tr>
-<tr class="separator:ab0104dabd988a24e7be4cc19498f595b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa11cb067ebf87f3a2114357d867e1c95"><td class="memItemLeft" align="right" valign="top"><a id="aa11cb067ebf87f3a2114357d867e1c95"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_STATIC_ASSERT</b> (sizeof(struct <a class="el" href="structspdk__blob__opts.html">spdk_blob_opts</a>)==80, &quot;Incorrect size&quot;)</td></tr>
+<tr class="separator:aa11cb067ebf87f3a2114357d867e1c95"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8bda964f26821899cfbc24c6caa3b748"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blob_8h.html#a8bda964f26821899cfbc24c6caa3b748">spdk_blob_opts_init</a> (struct <a class="el" href="structspdk__blob__opts.html">spdk_blob_opts</a> *opts, size_t opts_size)</td></tr>
 <tr class="memdesc:a8bda964f26821899cfbc24c6caa3b748"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize a <a class="el" href="structspdk__blob__opts.html">spdk_blob_opts</a> structure to the default blob option values.  <a href="blob_8h.html#a8bda964f26821899cfbc24c6caa3b748">More...</a><br /></td></tr>
 <tr class="separator:a8bda964f26821899cfbc24c6caa3b748"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -261,6 +270,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a13a4adbf4025d355432c11c72498054a"><td class="memItemLeft" align="right" valign="top">spdk_blob_id&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blob_8h.html#a13a4adbf4025d355432c11c72498054a">spdk_blob_get_parent_snapshot</a> (struct spdk_blob_store *bs, spdk_blob_id blobid)</td></tr>
 <tr class="memdesc:a13a4adbf4025d355432c11c72498054a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the blob id for the parent snapshot of this blob.  <a href="blob_8h.html#a13a4adbf4025d355432c11c72498054a">More...</a><br /></td></tr>
 <tr class="separator:a13a4adbf4025d355432c11c72498054a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1133bfe5ef2517860e51e1a58220848"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blob_8h.html#aa1133bfe5ef2517860e51e1a58220848">spdk_blob_get_esnap_id</a> (struct spdk_blob *blob, const void **id, size_t *len)</td></tr>
+<tr class="memdesc:aa1133bfe5ef2517860e51e1a58220848"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the id used to access the esnap clone's parent.  <a href="blob_8h.html#aa1133bfe5ef2517860e51e1a58220848">More...</a><br /></td></tr>
+<tr class="separator:aa1133bfe5ef2517860e51e1a58220848"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aee905d8842cf578dabd897ae68acc142"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blob_8h.html#aee905d8842cf578dabd897ae68acc142">spdk_blob_is_read_only</a> (struct spdk_blob *blob)</td></tr>
 <tr class="memdesc:aee905d8842cf578dabd897ae68acc142"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if blob is read only.  <a href="blob_8h.html#aee905d8842cf578dabd897ae68acc142">More...</a><br /></td></tr>
 <tr class="separator:aee905d8842cf578dabd897ae68acc142"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -400,6 +412,30 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a674db2e2ce68c181b11ffd676b8cc51b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a674db2e2ce68c181b11ffd676b8cc51b">&#9670;&nbsp;</a></span>spdk_blob_op_with_bs_dev</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void(* spdk_blob_op_with_bs_dev) (void *cb_arg, struct <a class="el" href="structspdk__bs__dev.html">spdk_bs_dev</a> *bs_dev, int bserrno)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Blob device open completion callback with blobstore device. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cb_arg</td><td>Callback argument. </td></tr>
+    <tr><td class="paramname">bs_dev</td><td>Blobstore device. </td></tr>
+    <tr><td class="paramname">bserrno</td><td>0 if it completed successfully, or negative errno if it failed. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="aab6d19ccc3c952877c355030e2a286c1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aab6d19ccc3c952877c355030e2a286c1">&#9670;&nbsp;</a></span>spdk_blob_op_with_handle_complete</h2>
 
@@ -469,6 +505,33 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="a9178032dc568f6575d1b48be082064b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9178032dc568f6575d1b48be082064b7">&#9670;&nbsp;</a></span>spdk_bs_esnap_dev_create</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef int(* spdk_bs_esnap_dev_create) (struct spdk_blob *blob, const void *esnap_id, uint32_t id_size, struct <a class="el" href="structspdk__bs__dev.html">spdk_bs_dev</a> **bs_dev)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>External snapshot device open callback. </p>
+<p>As an esnap clone blob is loading, it uses this callback registered with the blobstore to create the external snapshot device. The blobstore consumer must set this while loading the blobstore if it intends to support external snapshots.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">blob</td><td>The blob that needs its external snapshot device. </td></tr>
+    <tr><td class="paramname">esnap_id</td><td>A copy of the esnap_id passed via blob_opts when creating the esnap clone. </td></tr>
+    <tr><td class="paramname">id_size</td><td>The size in bytes of the data referenced by esnap_id. </td></tr>
+    <tr><td class="paramname">bs_dev</td><td>When 0 is returned, the newly created blobstore device is returned by reference.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, else a negative errno. </dd></dl>
 
 </div>
 </div>
@@ -616,6 +679,53 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>-ENOMEM if count is not sufficient to store all clones. </dd></dl>
+
+</div>
+</div>
+<a id="aa1133bfe5ef2517860e51e1a58220848"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa1133bfe5ef2517860e51e1a58220848">&#9670;&nbsp;</a></span>spdk_blob_get_esnap_id()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_blob_get_esnap_id </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_blob *&#160;</td>
+          <td class="paramname"><em>blob</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const void **&#160;</td>
+          <td class="paramname"><em>id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t *&#160;</td>
+          <td class="paramname"><em>len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the id used to access the esnap clone's parent. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">blob</td><td>The clone's blob. </td></tr>
+    <tr><td class="paramname">id</td><td>On successful return, *id will reference memory that has the same life as blob. </td></tr>
+    <tr><td class="paramname">len</td><td>On successful return *len will be the size of id in bytes.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success </dd>
+<dd>
+-EINVAL if blob is not an esnap clone. </dd></dl>
 
 </div>
 </div>
