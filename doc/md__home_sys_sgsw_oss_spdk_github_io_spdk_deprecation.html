@@ -108,7 +108,7 @@ Deprecation Notices</h1>
 <p>VTune integration is in now deprecated and will be removed in SPDK 23.05.</p>
 <h2>OCF</h2>
 <h3><code>bdev_ocf</code></h3>
-<p>The Open CAS Framework (OCF) integration via bdev module and env_ocf is now deprecated and will be removed in SPDK 23.05.</p>
+<p>The Open CAS Framework (OCF) integration via bdev module and env_ocf is currently marked deprecated due to discontinued support from Intel. However, Huawei is working to pick up support for these components, and the OCF project in general. This code will definitely remain in SPDK 23.05 release, in fact it is likely deprecation notice will be removed by then.</p>
 <h2>nvme</h2>
 <h3><code>nvme_ctrlr_prepare_for_reset</code></h3>
 <p>Deprecated <code>spdk_nvme_ctrlr_prepare_for_reset</code> API, which will be removed in SPDK 22.01. For PCIe transport, <code>spdk_nvme_ctrlr_disconnect</code> should be used before freeing I/O qpairs.</p>
