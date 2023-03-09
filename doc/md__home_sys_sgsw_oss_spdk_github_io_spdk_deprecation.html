@@ -99,8 +99,6 @@ ABI and API Deprecation</h1>
 Deprecation Notices</h1>
 <h2>PMDK</h2>
 <p>PMDK is no longer supported and integrations with it in SPDK are now deprecated, and will be removed in SPDK 23.05. Please see: <a href="https://pmem.io/blog/2022/11/update-on-pmdk-and-our-long-term-support-strategy/">UPDATE ON PMDK AND OUR LONG TERM SUPPORT STRATEGY</a>.</p>
-<h3><code>bdev_pmem</code></h3>
-<p>Deprecated <code>bdev_pmem</code> based on libpmemblk, it will be removed in SPDK 23.05.</p>
 <h3><code>libreduce_pm_file</code></h3>
 <p>Reduce library will no longer depend on libpmem. <code>pm_file_dir</code> parameter in <code><a class="el" href="reduce_8h.html#a62753f16686f807748719567d57f15b8" title="Initialize a new libreduce compressed volume.">spdk_reduce_vol_init()</a></code> will no longer point to pmem device or pmem file. Instead it will be possible to operate on a file, without the benefits of persistency.</p>
 <h2>VTune</h2>

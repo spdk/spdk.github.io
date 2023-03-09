@@ -1,11 +1,5 @@
 var NAVTREEINDEX29 =
 {
-"structspdk__scsi__pr__in__read__reservations__data.html#a88555dc64820e0f7296eab1d6f54903c":[15,0,367,1],
-"structspdk__scsi__pr__in__read__reservations__data.html#a8977e1d54d89556ae2bcf3234c4ec091":[15,0,367,2],
-"structspdk__scsi__pr__in__read__reservations__data.html#ac63d214d1ddc8bdc4bccae2f5ea1cb07":[15,0,367,5],
-"structspdk__scsi__pr__in__read__reservations__data.html#ae6fb0ae2a7eb76e126b66f4f13a0140a":[15,0,367,6],
-"structspdk__scsi__pr__in__report__capabilities__data.html":[15,0,368],
-"structspdk__scsi__pr__in__report__capabilities__data.html#a11a0eb525a585f29b67af0e60eae9cd5":[15,0,368,2],
 "structspdk__scsi__pr__in__report__capabilities__data.html#a14a4175d4165c5c025cdf064c339fd30":[15,0,368,4],
 "structspdk__scsi__pr__in__report__capabilities__data.html#a18d71dea2bcf560015a453b6382d3c29":[15,0,368,11],
 "structspdk__scsi__pr__in__report__capabilities__data.html#a29a7afa553dcc572ec63b6331679f43d":[15,0,368,12],
@@ -249,5 +243,11 @@ var NAVTREEINDEX29 =
 "structspdk__vfu__pci__device.html#ad01c800b0af1c5a94ab9408a4c2d80ad":[15,0,396,16],
 "structspdk__vfu__pci__device.html#af45c0a41086c86f64be36d093b40e678":[15,0,396,13],
 "structspdk__vfu__pci__region.html":[15,0,397],
-"structspdk__vfu__pci__region.html#a07001584256cfe729af064978e793262":[15,0,397,4]
+"structspdk__vfu__pci__region.html#a07001584256cfe729af064978e793262":[15,0,397,4],
+"structspdk__vfu__pci__region.html#a1e0b37ff7c6be0b1ff7e9513c7e17b36":[15,0,397,3],
+"structspdk__vfu__pci__region.html#a400872926032b1f7eb3178fe3f3a5e85":[15,0,397,2],
+"structspdk__vfu__pci__region.html#a7e410323f459faf6a4174bc5e9f14917":[15,0,397,5],
+"structspdk__vfu__pci__region.html#a8814cf37d9161e27ed0635407fc369ed":[15,0,397,1],
+"structspdk__vfu__pci__region.html#ac0a4668b63d854a8ec9d21bc9f773223":[15,0,397,6],
+"structspdk__vfu__pci__region.html#aff0cdbe5e697f88db633c5a611b6dc4b":[15,0,397,0]
 };

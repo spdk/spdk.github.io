@@ -1,11 +1,5 @@
 var NAVTREEINDEX28 =
 {
-"structspdk__opal__d0__geo__feat.html#a4c1928ebc2517c5e221408da2a488081":[15,0,336,6],
-"structspdk__opal__d0__geo__feat.html#a629d86f59a92c1185606fd7cb67e10cb":[15,0,336,0],
-"structspdk__opal__d0__geo__feat.html#abba515f8b72f3f961fa8c7d631d08b9b":[15,0,336,3],
-"structspdk__opal__d0__geo__feat.html#ad133cb1b569ddd818e28ea0a5b55f7b9":[15,0,336,4],
-"structspdk__opal__d0__geo__feat.html#ae0054ccec4f931e2e5579a478369de32":[15,0,336,5],
-"structspdk__opal__d0__geo__feat.html#afbe1656e43f505725524d5104832fc37":[15,0,336,2],
 "structspdk__opal__d0__hdr.html":[15,0,337],
 "structspdk__opal__d0__hdr.html#a2c9e8aa79824852998eb935c3d9f32cf":[15,0,337,1],
 "structspdk__opal__d0__hdr.html#a5e204faaf2de5be3d77e6ba952199a9d":[15,0,337,3],
@@ -249,5 +243,11 @@ var NAVTREEINDEX28 =
 "structspdk__scsi__pr__in__read__reservations__data.html":[15,0,367],
 "structspdk__scsi__pr__in__read__reservations__data.html#a161cd1aaa9468de3b8f88745455c9f4c":[15,0,367,4],
 "structspdk__scsi__pr__in__read__reservations__data.html#a1d2f6e4d0bbc3b08afe0e5cc5a01a0d8":[15,0,367,3],
-"structspdk__scsi__pr__in__read__reservations__data.html#a699fa37a6c279d775f79ce2b9d6d5183":[15,0,367,0]
+"structspdk__scsi__pr__in__read__reservations__data.html#a699fa37a6c279d775f79ce2b9d6d5183":[15,0,367,0],
+"structspdk__scsi__pr__in__read__reservations__data.html#a88555dc64820e0f7296eab1d6f54903c":[15,0,367,1],
+"structspdk__scsi__pr__in__read__reservations__data.html#a8977e1d54d89556ae2bcf3234c4ec091":[15,0,367,2],
+"structspdk__scsi__pr__in__read__reservations__data.html#ac63d214d1ddc8bdc4bccae2f5ea1cb07":[15,0,367,5],
+"structspdk__scsi__pr__in__read__reservations__data.html#ae6fb0ae2a7eb76e126b66f4f13a0140a":[15,0,367,6],
+"structspdk__scsi__pr__in__report__capabilities__data.html":[15,0,368],
+"structspdk__scsi__pr__in__report__capabilities__data.html#a11a0eb525a585f29b67af0e60eae9cd5":[15,0,368,2]
 };
