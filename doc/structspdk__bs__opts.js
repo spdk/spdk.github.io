@@ -4,6 +4,7 @@ var structspdk__bs__opts =
     [ "clear_method", "structspdk__bs__opts.html#a51903fecf7741006c5d14a6dc0cc9c67", null ],
     [ "cluster_sz", "structspdk__bs__opts.html#aa9f80152a5720e25bc52ab4a89113cdf", null ],
     [ "esnap_bs_dev_create", "structspdk__bs__opts.html#a0d6ca4c23af422afba67f5c40e120425", null ],
+    [ "esnap_ctx", "structspdk__bs__opts.html#af76efe0633613142bbecc02cb93b1d57", null ],
     [ "force_recover", "structspdk__bs__opts.html#a1851835c41a4b162a050c82d22a88a7f", null ],
     [ "iter_cb_arg", "structspdk__bs__opts.html#a7e0a18c6e415b9242c63eed9141736e3", null ],
     [ "iter_cb_fn", "structspdk__bs__opts.html#a3d51d3733be73f4a76776d0523232230", null ],

@@ -1,5 +1,6 @@
 var NAVTREEINDEX30 =
 {
+"structspdk__vfu__pci__region.html#ac0a4668b63d854a8ec9d21bc9f773223":[15,0,397,6],
 "structspdk__vfu__pci__region.html#aff0cdbe5e697f88db633c5a611b6dc4b":[15,0,397,0],
 "structspdk__vfu__sparse__mmap.html":[15,0,398],
 "structspdk__vfu__sparse__mmap.html#a2f51edca2abef39eed92274031fb04ce":[15,0,398,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX30 =
 "unionidxd__cmdcap__register.html#a5ae1c1fd3a3c661af50759428f7bfef3":[15,0,8,4],
 "unionidxd__cmdcap__register.html#a70149a7106430398d2db393364d375aa":[15,0,8,2],
 "unionidxd__cmdcap__register.html#a7446d769f1e0fba3aaf4576e1d0d10ff":[15,0,8,0],
-"unionidxd__cmdcap__register.html#a7ab2e8845ee38ad908c9c36e26a37914":[15,0,8,16],
-"unionidxd__cmdcap__register.html#ab077aa1ffb8c82314b8df3a1e9411ccf":[15,0,8,13]
+"unionidxd__cmdcap__register.html#a7ab2e8845ee38ad908c9c36e26a37914":[15,0,8,16]
 };

@@ -18,7 +18,7 @@ var blob_8h =
     [ "spdk_blob_op_with_id_complete", "blob_8h.html#a4955592d73cb1a262d699d10c8e2856f", null ],
     [ "spdk_bs_dev_cpl", "blob_8h.html#afb1f64973b22548813723a645f9b8995", null ],
     [ "spdk_bs_dump_print_xattr", "blob_8h.html#ae099ff1947cd0f1e8422289222bc1666", null ],
-    [ "spdk_bs_esnap_dev_create", "blob_8h.html#a9178032dc568f6575d1b48be082064b7", null ],
+    [ "spdk_bs_esnap_dev_create", "blob_8h.html#af96eb1e38c748e33e3d379089fe6ec6a", null ],
     [ "spdk_bs_op_complete", "blob_8h.html#a9c265d4eead39c3419cee4b620bf5052", null ],
     [ "spdk_bs_op_with_handle_complete", "blob_8h.html#a40a976910f2112a4164ae6a12b946855", null ],
     [ "blob_clear_method", "blob_8h.html#a59a8d82e28e326595d68b63e0412aa5f", [
@@ -95,7 +95,7 @@ var blob_8h =
     [ "SPDK_STATIC_ASSERT", "blob_8h.html#a9adaf62358930fae9a67fe5523d254a2", null ],
     [ "SPDK_STATIC_ASSERT", "blob_8h.html#aa55ad224031a1b5cd0913debf18372fc", null ],
     [ "SPDK_STATIC_ASSERT", "blob_8h.html#aa11cb067ebf87f3a2114357d867e1c95", null ],
-    [ "SPDK_STATIC_ASSERT", "blob_8h.html#a1662b0724698e2e4e0829d232a4db0f7", null ],
+    [ "SPDK_STATIC_ASSERT", "blob_8h.html#ac3db422648ad9a58354d4973a7af60f6", null ],
     [ "spdk_xattr_names_free", "blob_8h.html#ae17f3a52d52d9c3e9382cbcfae042c0a", null ],
     [ "spdk_xattr_names_get_count", "blob_8h.html#a113d71117843062da8a24906296b37a6", null ],
     [ "spdk_xattr_names_get_name", "blob_8h.html#ad0d58654483ac10df65d4b55356eff84", null ]
