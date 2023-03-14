@@ -30,6 +30,7 @@ var accel_8h =
     [ "spdk_accel_finish", "accel_8h.html#a7a75cbac98c1ed584e82d0172aa0bb81", null ],
     [ "spdk_accel_get_buf", "accel_8h.html#acde5803c2c3fd5f4404ab171d6820b03", null ],
     [ "spdk_accel_get_io_channel", "accel_8h.html#a947dd411da094c21407afebfa6a38cdb", null ],
+    [ "spdk_accel_get_memory_domain", "accel_8h.html#a8c710a5549f185939caac04cb8d33bc2", null ],
     [ "spdk_accel_get_opc_module_name", "accel_8h.html#ab843fd7c6bfd2db2f2997fad376f687f", null ],
     [ "spdk_accel_initialize", "accel_8h.html#acbc9decf84ab594e9e04edac14e1b91b", null ],
     [ "spdk_accel_put_buf", "accel_8h.html#a84d7b247e6eb234e84aa4d856da098fa", null ],

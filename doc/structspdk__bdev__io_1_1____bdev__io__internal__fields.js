@@ -3,6 +3,7 @@ var structspdk__bdev__io_1_1____bdev__io__internal__fields =
     [ "STAILQ_ENTRY", "structspdk__bdev__io_1_1____bdev__io__internal__fields.html#aa01c2efabe47df9c745086736f6f64ef", null ],
     [ "TAILQ_ENTRY", "structspdk__bdev__io_1_1____bdev__io__internal__fields.html#a01b27d58ba91739aae4f38292d44e4fc", null ],
     [ "TAILQ_ENTRY", "structspdk__bdev__io_1_1____bdev__io__internal__fields.html#aca9aa23b8536ee8674cbcf3c906bcc2e", null ],
+    [ "accel_sequence", "structspdk__bdev__io_1_1____bdev__io__internal__fields.html#aa787859e72f5b8729fe15ec9cad9c12d", null ],
     [ "aio_result", "structspdk__bdev__io_1_1____bdev__io__internal__fields.html#ad27065f85b6585aa7399f7c7b87cb5cd", null ],
     [ "asc", "structspdk__bdev__io_1_1____bdev__io__internal__fields.html#aa0f7b85e127d44d99957041f59dfc7dc", null ],
     [ "ascq", "structspdk__bdev__io_1_1____bdev__io__internal__fields.html#a0f0d6222023fca31e0e4a8e9d56a2f91", null ],
@@ -32,6 +33,7 @@ var structspdk__bdev__io_1_1____bdev__io__internal__fields =
     [ "scsi", "structspdk__bdev__io_1_1____bdev__io__internal__fields.html#a75d051809fa17a4526d6a9db560adfce", null ],
     [ "sct", "structspdk__bdev__io_1_1____bdev__io__internal__fields.html#af1b7041012f256d8bb1f00bb760a1075", null ],
     [ "sk", "structspdk__bdev__io_1_1____bdev__io__internal__fields.html#a0e9a61cf97047f797df0cb996513b418", null ],
+    [ "split", "structspdk__bdev__io_1_1____bdev__io__internal__fields.html#a1f57f27e6516834429d2ace459564ab4", null ],
     [ "status", "structspdk__bdev__io_1_1____bdev__io__internal__fields.html#ad9bec0eeba2c9ca9cb7cf62e8c516e5a", null ],
     [ "submit_tsc", "structspdk__bdev__io_1_1____bdev__io__internal__fields.html#a3e0b8fe4a5a6b8636d6aeb61348f9c4a", null ],
     [ "waitq_entry", "structspdk__bdev__io_1_1____bdev__io__internal__fields.html#ab4db59743b548a313586a12a3a72efeb", null ]

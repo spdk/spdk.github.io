@@ -137,6 +137,10 @@ void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="st
 void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev__fn__table.html#af9c6d1b0e881b2715a9dba41a9776bb4">dump_device_stat_json</a> )(void *ctx, struct spdk_json_write_ctx *w)</td></tr>
 <tr class="memdesc:af9c6d1b0e881b2715a9dba41a9776bb4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dump I/O statistics specific for this bdev context. <br /></td></tr>
 <tr class="separator:af9c6d1b0e881b2715a9dba41a9776bb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5bf6b6bd1f4c91a1b462182a23a79f2a"><td class="memItemLeft" align="right" valign="top"><a id="a5bf6b6bd1f4c91a1b462182a23a79f2a"></a>
+bool(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev__fn__table.html#a5bf6b6bd1f4c91a1b462182a23a79f2a">accel_sequence_supported</a> )(void *ctx, enum <a class="el" href="bdev_8h.html#a633029e24ab5ae4a689bffa2565a519f">spdk_bdev_io_type</a> type)</td></tr>
+<tr class="memdesc:a5bf6b6bd1f4c91a1b462182a23a79f2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if bdev can handle spdk_accel_sequence to handle I/O of specific type. <br /></td></tr>
+<tr class="separator:a5bf6b6bd1f4c91a1b462182a23a79f2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Function table for a block device backend. </p>

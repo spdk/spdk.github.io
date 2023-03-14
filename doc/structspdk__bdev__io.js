@@ -4,6 +4,7 @@ var structspdk__bdev__io =
     [ "TAILQ_ENTRY", "structspdk__bdev__io.html#a4c93fa89b3cc9789d2e6d7d7e2246e35", null ],
     [ "abort", "structspdk__bdev__io.html#a23e66af072b6ad1243e26336b8feea84", null ],
     [ "abort", "structspdk__bdev__io.html#a48b28c06927bfd7be88a91dcf846c448", null ],
+    [ "accel_sequence", "structspdk__bdev__io.html#a30272a3b8365a3e6a88045a543465a57", null ],
     [ "bdev", "structspdk__bdev__io.html#a096518d708e224b91e03897b79431afd", null ],
     [ "bdev", "structspdk__bdev__io.html#a442217d4a598d6146a883dc3cb0c0031", null ],
     [ "bio_cb_arg", "structspdk__bdev__io.html#ac70f00f4fb59c7d646dcfd6d97134a75", null ],

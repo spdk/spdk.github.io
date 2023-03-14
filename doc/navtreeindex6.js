@@ -1,5 +1,6 @@
 var NAVTREEINDEX6 =
 {
+"iscsi__spec_8h.html#ac0d62ee26187ded38ce90884321ba988":[16,0,32,37],
 "iscsi__spec_8h.html#ac58aab09b28936beaa924bbe49acfb03":[16,0,32,70],
 "iscsi__spec_8h.html#ac975d253c4743d7cb89b6f3b0328a460":[16,0,32,33],
 "iscsi__spec_8h.html#acad962b6a473cfcd30e1c0b7de567a95":[16,0,32,60],
@@ -248,6 +249,5 @@ var NAVTREEINDEX6 =
 "jsonrpc.html#rpc_bdev_opal_create":[3,9,9,23],
 "jsonrpc.html#rpc_bdev_opal_delete":[3,9,9,25],
 "jsonrpc.html#rpc_bdev_opal_get_info":[3,9,9,24],
-"jsonrpc.html#rpc_bdev_opal_new_user":[3,9,9,26],
-"jsonrpc.html#rpc_bdev_opal_set_lock_state":[3,9,9,27]
+"jsonrpc.html#rpc_bdev_opal_new_user":[3,9,9,26]
 };

@@ -1,5 +1,6 @@
 var structspdk__bdev__fn__table =
 [
+    [ "accel_sequence_supported", "structspdk__bdev__fn__table.html#a5bf6b6bd1f4c91a1b462182a23a79f2a", null ],
     [ "destruct", "structspdk__bdev__fn__table.html#a8a76c50a2b20205ec9fffe4afb9e3a15", null ],
     [ "dump_device_stat_json", "structspdk__bdev__fn__table.html#af9c6d1b0e881b2715a9dba41a9776bb4", null ],
     [ "dump_info_json", "structspdk__bdev__fn__table.html#a417860f5598560a20b7bd4b5e8b4c3b0", null ],

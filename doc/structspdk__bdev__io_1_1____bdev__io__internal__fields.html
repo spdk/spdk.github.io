@@ -110,9 +110,8 @@ Collaboration diagram for spdk_bdev_io::__bdev_io_internal_fields:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aca9aa23b8536ee8674cbcf3c906bcc2e"><td class="memItemLeft" align="right" valign="top"><a id="aca9aa23b8536ee8674cbcf3c906bcc2e"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev__io_1_1____bdev__io__internal__fields.html#aca9aa23b8536ee8674cbcf3c906bcc2e">TAILQ_ENTRY</a> (<a class="el" href="structspdk__bdev__io.html">spdk_bdev_io</a>) link</td></tr>
-<tr class="memdesc:aca9aa23b8536ee8674cbcf3c906bcc2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Member used for linking child I/Os together. <br /></td></tr>
+<tr class="memitem:aca9aa23b8536ee8674cbcf3c906bcc2e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev__io_1_1____bdev__io__internal__fields.html#aca9aa23b8536ee8674cbcf3c906bcc2e">TAILQ_ENTRY</a> (<a class="el" href="structspdk__bdev__io.html">spdk_bdev_io</a>) link</td></tr>
+<tr class="memdesc:aca9aa23b8536ee8674cbcf3c906bcc2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Queue entry used in several cases:  <a href="structspdk__bdev__io_1_1____bdev__io__internal__fields.html#aca9aa23b8536ee8674cbcf3c906bcc2e">More...</a><br /></td></tr>
 <tr class="separator:aca9aa23b8536ee8674cbcf3c906bcc2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa01c2efabe47df9c745086736f6f64ef"><td class="memItemLeft" align="right" valign="top"><a id="aa01c2efabe47df9c745086736f6f64ef"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev__io_1_1____bdev__io__internal__fields.html#aa01c2efabe47df9c745086736f6f64ef">STAILQ_ENTRY</a> (<a class="el" href="structspdk__bdev__io.html">spdk_bdev_io</a>) buf_link</td></tr>
@@ -201,6 +200,10 @@ union {</td></tr>
 int8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev__io_1_1____bdev__io__internal__fields.html#ad9bec0eeba2c9ca9cb7cf62e8c516e5a">status</a></td></tr>
 <tr class="memdesc:ad9bec0eeba2c9ca9cb7cf62e8c516e5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Status for the IO. <br /></td></tr>
 <tr class="separator:ad9bec0eeba2c9ca9cb7cf62e8c516e5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f57f27e6516834429d2ace459564ab4"><td class="memItemLeft" align="right" valign="top"><a id="a1f57f27e6516834429d2ace459564ab4"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev__io_1_1____bdev__io__internal__fields.html#a1f57f27e6516834429d2ace459564ab4">split</a></td></tr>
+<tr class="memdesc:a1f57f27e6516834429d2ace459564ab4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates whether the IO is split. <br /></td></tr>
+<tr class="separator:a1f57f27e6516834429d2ace459564ab4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9c5ed625dd93a86c2430042cd565e186"><td class="memItemLeft" align="right" valign="top"><a id="a9c5ed625dd93a86c2430042cd565e186"></a>
 void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev__io_1_1____bdev__io__internal__fields.html#a9c5ed625dd93a86c2430042cd565e186">buf</a></td></tr>
 <tr class="memdesc:a9c5ed625dd93a86c2430042cd565e186"><td class="mdescLeft">&#160;</td><td class="mdescRight">bdev allocated memory associated with this request <br /></td></tr>
@@ -248,6 +251,9 @@ struct spdk_memory_domain *&#160;</td><td class="memItemRight" valign="bottom"><
 <tr class="memitem:a74696afd2aeca8b089f28f8240bd434f"><td class="memItemLeft" align="right" valign="top"><a id="a74696afd2aeca8b089f28f8240bd434f"></a>
 void *&#160;</td><td class="memItemRight" valign="bottom"><b>memory_domain_ctx</b></td></tr>
 <tr class="separator:a74696afd2aeca8b089f28f8240bd434f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa787859e72f5b8729fe15ec9cad9c12d"><td class="memItemLeft" align="right" valign="top"><a id="aa787859e72f5b8729fe15ec9cad9c12d"></a>
+struct spdk_accel_sequence *&#160;</td><td class="memItemRight" valign="bottom"><b>accel_sequence</b></td></tr>
+<tr class="separator:aa787859e72f5b8729fe15ec9cad9c12d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a132678b705d6d51d2fdfaf1d44b6428b"><td class="memItemLeft" align="right" valign="top"><a id="a132678b705d6d51d2fdfaf1d44b6428b"></a>
 void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev__io_1_1____bdev__io__internal__fields.html#a132678b705d6d51d2fdfaf1d44b6428b">data_transfer_cpl</a> )(void *ctx, int rc)</td></tr>
 <tr class="memdesc:a132678b705d6d51d2fdfaf1d44b6428b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Data transfer completion callback. <br /></td></tr>
@@ -256,7 +262,35 @@ void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="st
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Fields that are used internally by the bdev subsystem. </p>
 <p>Bdev modules must not read or write to these fields. </p>
-</div><h2 class="groupheader">Field Documentation</h2>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="aca9aa23b8536ee8674cbcf3c906bcc2e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca9aa23b8536ee8674cbcf3c906bcc2e">&#9670;&nbsp;</a></span>TAILQ_ENTRY()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">spdk_bdev_io::__bdev_io_internal_fields::TAILQ_ENTRY </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structspdk__bdev__io.html">spdk_bdev_io</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Queue entry used in several cases: </p>
+<ol type="1">
+<li>IOs awaiting retry due to NOMEM status,</li>
+<li>IOs awaiting submission due to QoS,</li>
+<li>IOs with an accel sequence being executed,</li>
+<li>IOs awaiting memory domain pull/push,</li>
+<li>queued reset requests. </li>
+</ol>
+
+</div>
+</div>
+<h2 class="groupheader">Field Documentation</h2>
 <a id="a79f4b610c4db721dbe99f5698d1886f6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a79f4b610c4db721dbe99f5698d1886f6">&#9670;&nbsp;</a></span>in_submit_request</h2>
 
