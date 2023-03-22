@@ -157,9 +157,9 @@ typedef uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_blob
 <tr class="memitem:a674db2e2ce68c181b11ffd676b8cc51b"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blob_8h.html#a674db2e2ce68c181b11ffd676b8cc51b">spdk_blob_op_with_bs_dev</a>) (void *cb_arg, struct <a class="el" href="structspdk__bs__dev.html">spdk_bs_dev</a> *bs_dev, int bserrno)</td></tr>
 <tr class="memdesc:a674db2e2ce68c181b11ffd676b8cc51b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Blob device open completion callback with blobstore device.  <a href="blob_8h.html#a674db2e2ce68c181b11ffd676b8cc51b">More...</a><br /></td></tr>
 <tr class="separator:a674db2e2ce68c181b11ffd676b8cc51b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af96eb1e38c748e33e3d379089fe6ec6a"><td class="memItemLeft" align="right" valign="top">typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blob_8h.html#af96eb1e38c748e33e3d379089fe6ec6a">spdk_bs_esnap_dev_create</a>) (void *bs_ctx, struct spdk_blob *blob, const void *esnap_id, uint32_t id_size, struct <a class="el" href="structspdk__bs__dev.html">spdk_bs_dev</a> **bs_dev)</td></tr>
-<tr class="memdesc:af96eb1e38c748e33e3d379089fe6ec6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">External snapshot device open callback.  <a href="blob_8h.html#af96eb1e38c748e33e3d379089fe6ec6a">More...</a><br /></td></tr>
-<tr class="separator:af96eb1e38c748e33e3d379089fe6ec6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9de71c711c86a2fb7b9a7d967ebede4"><td class="memItemLeft" align="right" valign="top">typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blob_8h.html#aa9de71c711c86a2fb7b9a7d967ebede4">spdk_bs_esnap_dev_create</a>) (void *bs_ctx, void *blob_ctx, struct spdk_blob *blob, const void *esnap_id, uint32_t id_size, struct <a class="el" href="structspdk__bs__dev.html">spdk_bs_dev</a> **bs_dev)</td></tr>
+<tr class="memdesc:aa9de71c711c86a2fb7b9a7d967ebede4"><td class="mdescLeft">&#160;</td><td class="mdescRight">External snapshot device open callback.  <a href="blob_8h.html#aa9de71c711c86a2fb7b9a7d967ebede4">More...</a><br /></td></tr>
+<tr class="separator:aa9de71c711c86a2fb7b9a7d967ebede4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae099ff1947cd0f1e8422289222bc1666"><td class="memItemLeft" align="right" valign="top"><a id="ae099ff1947cd0f1e8422289222bc1666"></a>
 typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bs_dump_print_xattr</b>) (FILE *fp, const char *bstype, const char *name, const void *value, size_t value_length)</td></tr>
 <tr class="separator:ae099ff1947cd0f1e8422289222bc1666"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -285,6 +285,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ae6487dda0466021c6058beae2e855d8e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blob_8h.html#ae6487dda0466021c6058beae2e855d8e">spdk_blob_is_thin_provisioned</a> (struct spdk_blob *blob)</td></tr>
 <tr class="memdesc:ae6487dda0466021c6058beae2e855d8e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if blob is thin-provisioned.  <a href="blob_8h.html#ae6487dda0466021c6058beae2e855d8e">More...</a><br /></td></tr>
 <tr class="separator:ae6487dda0466021c6058beae2e855d8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d7abdf15a8f538dea1f91a532301081"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blob_8h.html#a0d7abdf15a8f538dea1f91a532301081">spdk_blob_is_esnap_clone</a> (const struct spdk_blob *blob)</td></tr>
+<tr class="memdesc:a0d7abdf15a8f538dea1f91a532301081"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if blob is a clone of an external bdev.  <a href="blob_8h.html#a0d7abdf15a8f538dea1f91a532301081">More...</a><br /></td></tr>
+<tr class="separator:a0d7abdf15a8f538dea1f91a532301081"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aed4fb5871f9ca58ff60c0dd8810eb223"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blob_8h.html#aed4fb5871f9ca58ff60c0dd8810eb223">spdk_bs_delete_blob</a> (struct spdk_blob_store *bs, spdk_blob_id blobid, <a class="el" href="blob_8h.html#aca5253109581a768e06dd197429ef9e1">spdk_blob_op_complete</a> cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:aed4fb5871f9ca58ff60c0dd8810eb223"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delete an existing blob from the given blobstore.  <a href="blob_8h.html#aed4fb5871f9ca58ff60c0dd8810eb223">More...</a><br /></td></tr>
 <tr class="separator:aed4fb5871f9ca58ff60c0dd8810eb223"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -294,9 +297,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a7dee33b6b9df9b9a3d6b9957c71a779c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blob_8h.html#a7dee33b6b9df9b9a3d6b9957c71a779c">spdk_bs_blob_decouple_parent</a> (struct spdk_blob_store *bs, struct spdk_io_channel *channel, spdk_blob_id blobid, <a class="el" href="blob_8h.html#aca5253109581a768e06dd197429ef9e1">spdk_blob_op_complete</a> cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:a7dee33b6b9df9b9a3d6b9957c71a779c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove dependency on parent blob.  <a href="blob_8h.html#a7dee33b6b9df9b9a3d6b9957c71a779c">More...</a><br /></td></tr>
 <tr class="separator:a7dee33b6b9df9b9a3d6b9957c71a779c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa55ad224031a1b5cd0913debf18372fc"><td class="memItemLeft" align="right" valign="top"><a id="aa55ad224031a1b5cd0913debf18372fc"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_STATIC_ASSERT</b> (sizeof(struct <a class="el" href="structspdk__blob__open__opts.html">spdk_blob_open_opts</a>)==16, &quot;Incorrect size&quot;)</td></tr>
-<tr class="separator:aa55ad224031a1b5cd0913debf18372fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24a236d14fc5eea7f6f113b8a94b3af0"><td class="memItemLeft" align="right" valign="top"><a id="a24a236d14fc5eea7f6f113b8a94b3af0"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_STATIC_ASSERT</b> (sizeof(struct <a class="el" href="structspdk__blob__open__opts.html">spdk_blob_open_opts</a>)==24, &quot;Incorrect size&quot;)</td></tr>
+<tr class="separator:a24a236d14fc5eea7f6f113b8a94b3af0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afa002adffb9648ae66b94223de70dc4f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blob_8h.html#afa002adffb9648ae66b94223de70dc4f">spdk_blob_open_opts_init</a> (struct <a class="el" href="structspdk__blob__open__opts.html">spdk_blob_open_opts</a> *opts, size_t opts_size)</td></tr>
 <tr class="memdesc:afa002adffb9648ae66b94223de70dc4f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize a <a class="el" href="structspdk__blob__open__opts.html">spdk_blob_open_opts</a> structure to the default blob option values.  <a href="blob_8h.html#afa002adffb9648ae66b94223de70dc4f">More...</a><br /></td></tr>
 <tr class="separator:afa002adffb9648ae66b94223de70dc4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -508,14 +511,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="af96eb1e38c748e33e3d379089fe6ec6a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af96eb1e38c748e33e3d379089fe6ec6a">&#9670;&nbsp;</a></span>spdk_bs_esnap_dev_create</h2>
+<a id="aa9de71c711c86a2fb7b9a7d967ebede4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa9de71c711c86a2fb7b9a7d967ebede4">&#9670;&nbsp;</a></span>spdk_bs_esnap_dev_create</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef int(* spdk_bs_esnap_dev_create) (void *bs_ctx, struct spdk_blob *blob, const void *esnap_id, uint32_t id_size, struct <a class="el" href="structspdk__bs__dev.html">spdk_bs_dev</a> **bs_dev)</td>
+          <td class="memname">typedef int(* spdk_bs_esnap_dev_create) (void *bs_ctx, void *blob_ctx, struct spdk_blob *blob, const void *esnap_id, uint32_t id_size, struct <a class="el" href="structspdk__bs__dev.html">spdk_bs_dev</a> **bs_dev)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -525,6 +528,7 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">bs_ctx</td><td>Context provided by the blobstore consumer via esnap_ctx member of struct <a class="el" href="structspdk__bs__opts.html">spdk_bs_opts</a>. </td></tr>
+    <tr><td class="paramname">blob_ctx</td><td>Context provided to spdk_bs_open_ext() via esnap_ctx member of struct spdk_bs_open_opts. </td></tr>
     <tr><td class="paramname">blob</td><td>The blob that needs its external snapshot device. </td></tr>
     <tr><td class="paramname">esnap_id</td><td>A copy of the esnap_id passed via blob_opts when creating the esnap clone. </td></tr>
     <tr><td class="paramname">id_size</td><td>The size in bytes of the data referenced by esnap_id. </td></tr>
@@ -1677,6 +1681,33 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if blob is a clone. </dd></dl>
+
+</div>
+</div>
+<a id="a0d7abdf15a8f538dea1f91a532301081"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d7abdf15a8f538dea1f91a532301081">&#9670;&nbsp;</a></span>spdk_blob_is_esnap_clone()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool spdk_blob_is_esnap_clone </td>
+          <td>(</td>
+          <td class="paramtype">const struct spdk_blob *&#160;</td>
+          <td class="paramname"><em>blob</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Check if blob is a clone of an external bdev. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">blob</td><td>Blob.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if blob is a clone of an external bdev. </dd></dl>
 
 </div>
 </div>
