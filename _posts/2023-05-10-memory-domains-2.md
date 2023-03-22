@@ -92,4 +92,4 @@ That's all we'll cover in this post. The next post in the series will handle
 performing "chained" operations - crypto + DIF insert specifically - without
 extra data copies and describe the final form the framework has taken.
 
-Check back in a few days for the next post in the series!
+Part three [is now available](https://spdk.io/dev/2023/05/31/memory-domains-3/)!
