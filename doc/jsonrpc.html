@@ -402,10 +402,13 @@ rpc_get_methods</h2>
 <div class="line">    &quot;framework_get_subsystems&quot;,</div>
 <div class="line">    &quot;framework_monitor_context_switch&quot;,</div>
 <div class="line">    &quot;spdk_kill_instance&quot;,</div>
-<div class="line">    &quot;accel_get_opc_assignments&quot;,</div>
+<div class="line">    &quot;accel_set_driver&quot;,</div>
 <div class="line">    &quot;accel_crypto_key_create&quot;,</div>
 <div class="line">    &quot;accel_crypto_key_destroy&quot;,</div>
 <div class="line">    &quot;accel_crypto_keys_get&quot;,</div>
+<div class="line">    &quot;accel_assign_opc&quot;,</div>
+<div class="line">    &quot;accel_get_module_info&quot;,</div>
+<div class="line">    &quot;accel_get_opc_assignments&quot;,</div>
 <div class="line">    &quot;ioat_scan_accel_module&quot;,</div>
 <div class="line">    &quot;dsa_scan_accel_module&quot;,</div>
 <div class="line">    &quot;dpdk_cryptodev_scan_accel_module&quot;,</div>
@@ -2785,7 +2788,7 @@ bdev_null_resize</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Bdev name    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">new_size   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">Bdev new capacity in MB   </td></tr>
+<td class="markdownTableBodyNone">new_size   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">Bdev new capacity in MiB   </td></tr>
 </table>
 <h3>Example</h3>
 <p>Example request:</p>
@@ -9275,7 +9278,7 @@ bdev_daos_resize</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Bdev name    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">new_size   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">Bdev new capacity in MB   </td></tr>
+<td class="markdownTableBodyNone">new_size   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">Bdev new capacity in MiB   </td></tr>
 </table>
 <h3>Example</h3>
 <p>Example request:</p>
