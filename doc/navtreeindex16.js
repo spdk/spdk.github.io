@@ -1,5 +1,6 @@
 var NAVTREEINDEX16 =
 {
+"shfmt.html#shfmt_installation":[9,0,3],
 "shfmt.html#shfmt_overview":[9,0,1],
 "shfmt.html#shfmt_toc":[9,0,0],
 "shfmt.html#shfmt_usage":[9,0,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX16 =
 "structiscsi__bhs.html#abc3e6c2518fe2443425b68fd1ef89c29":[15,0,28,0],
 "structiscsi__bhs.html#ac01a1ae1199080ae88718307724da98a":[15,0,28,3],
 "structiscsi__bhs.html#ac0add3f4475f40b8ce34df8f2d7c8022":[15,0,28,10],
-"structiscsi__bhs.html#ac71a83e89467d22b6b78c9937964e3dc":[15,0,28,11],
-"structiscsi__bhs.html#adb2606e26472e3fcff38b3e0bb717324":[15,0,28,12]
+"structiscsi__bhs.html#ac71a83e89467d22b6b78c9937964e3dc":[15,0,28,11]
 };

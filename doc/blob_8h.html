@@ -384,6 +384,9 @@ Functions</h2></td></tr>
 <tr class="memitem:aa9b434a45e67bcebb2fcb79965bd56e5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blob_8h.html#aa9b434a45e67bcebb2fcb79965bd56e5">spdk_bs_set_bstype</a> (struct spdk_blob_store *bs, struct <a class="el" href="structspdk__bs__type.html">spdk_bs_type</a> bstype)</td></tr>
 <tr class="memdesc:aa9b434a45e67bcebb2fcb79965bd56e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set blobstore type to the given device.  <a href="blob_8h.html#aa9b434a45e67bcebb2fcb79965bd56e5">More...</a><br /></td></tr>
 <tr class="separator:aa9b434a45e67bcebb2fcb79965bd56e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66b5b8159c242a0006b858ee8e4ddc69"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blob_8h.html#a66b5b8159c242a0006b858ee8e4ddc69">spdk_blob_set_esnap_bs_dev</a> (struct spdk_blob *blob, struct <a class="el" href="structspdk__bs__dev.html">spdk_bs_dev</a> *back_bs_dev, <a class="el" href="blob_8h.html#aca5253109581a768e06dd197429ef9e1">spdk_blob_op_complete</a> cb_fn, void *cb_arg)</td></tr>
+<tr class="memdesc:a66b5b8159c242a0006b858ee8e4ddc69"><td class="mdescLeft">&#160;</td><td class="mdescRight">Replace the existing external snapshot device.  <a href="blob_8h.html#a66b5b8159c242a0006b858ee8e4ddc69">More...</a><br /></td></tr>
+<tr class="separator:a66b5b8159c242a0006b858ee8e4ddc69"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Blob Storage System. </p>
@@ -1950,6 +1953,57 @@ Functions</h2></td></tr>
     <tr><td class="paramname">sz</td><td>The new number of clusters. </td></tr>
     <tr><td class="paramname">cb_fn</td><td>Called when the operation is complete. </td></tr>
     <tr><td class="paramname">cb_arg</td><td>Argument passed to function cb_fn. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a66b5b8159c242a0006b858ee8e4ddc69"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a66b5b8159c242a0006b858ee8e4ddc69">&#9670;&nbsp;</a></span>spdk_blob_set_esnap_bs_dev()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_blob_set_esnap_bs_dev </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_blob *&#160;</td>
+          <td class="paramname"><em>blob</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structspdk__bs__dev.html">spdk_bs_dev</a> *&#160;</td>
+          <td class="paramname"><em>back_bs_dev</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="blob_8h.html#aca5253109581a768e06dd197429ef9e1">spdk_blob_op_complete</a>&#160;</td>
+          <td class="paramname"><em>cb_fn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>cb_arg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Replace the existing external snapshot device. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">blob</td><td>The blob that is getting a new external snapshot device. </td></tr>
+    <tr><td class="paramname">back_bs_dev</td><td>The new blobstore device to use as an external snapshot. </td></tr>
+    <tr><td class="paramname">cb_fn</td><td>Callback to be called when complete. </td></tr>
+    <tr><td class="paramname">cb_arg</td><td>Callback argument used with cb_fn. </td></tr>
   </table>
   </dd>
 </dl>
