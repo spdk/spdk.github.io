@@ -11,5 +11,6 @@ var structspdk__nvmf__poll__group =
     [ "poller", "structspdk__nvmf__poll__group.html#a2032257806ec55661cd19c88eaac9ae8", null ],
     [ "sgroups", "structspdk__nvmf__poll__group.html#ad8dd6675b21c245a6790338b7d4b796e", null ],
     [ "stat", "structspdk__nvmf__poll__group.html#ac59498d3fc905b4fd575454cda8707ff", null ],
+    [ "tgt", "structspdk__nvmf__poll__group.html#a416005042c79553210cfaf3caac67175", null ],
     [ "thread", "structspdk__nvmf__poll__group.html#a35b33fc4bc8d044b83531c417bc43546", null ]
 ];

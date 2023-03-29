@@ -24,8 +24,6 @@ var thread_8h =
     [ "spdk_new_thread_fn", "thread_8h.html#afab3d4339c5bca4dfde209816a9e560f", null ],
     [ "spdk_poller_fn", "thread_8h.html#a35c421accdc2a0a61bb7be916106293b", null ],
     [ "spdk_poller_set_interrupt_mode_cb", "thread_8h.html#aaa00024ffe78012bf1b7ade9aee0ab1a", null ],
-    [ "spdk_start_poller", "thread_8h.html#a6f70f5e9b4d498e843f81f1a6ada6370", null ],
-    [ "spdk_stop_poller", "thread_8h.html#adfddbbbb13145f26741106cb8296a05a", null ],
     [ "spdk_thread_op_fn", "thread_8h.html#a9f0ad3a2bcbb6d304401b579ab63aeba", null ],
     [ "spdk_thread_op_supported_fn", "thread_8h.html#af791c24e496b96c886fe8bad088eb0cb", null ],
     [ "spdk_thread_pass_msg", "thread_8h.html#a4a0e155fc3fa0150aa4a505dd1801e91", null ],

@@ -156,12 +156,6 @@ typedef bool(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" 
 <tr class="memitem:a35c421accdc2a0a61bb7be916106293b"><td class="memItemLeft" align="right" valign="top">typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="thread_8h.html#a35c421accdc2a0a61bb7be916106293b">spdk_poller_fn</a>) (void *ctx)</td></tr>
 <tr class="memdesc:a35c421accdc2a0a61bb7be916106293b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback function for a poller.  <a href="thread_8h.html#a35c421accdc2a0a61bb7be916106293b">More...</a><br /></td></tr>
 <tr class="separator:a35c421accdc2a0a61bb7be916106293b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6f70f5e9b4d498e843f81f1a6ada6370"><td class="memItemLeft" align="right" valign="top">typedef struct spdk_poller *(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="thread_8h.html#a6f70f5e9b4d498e843f81f1a6ada6370">spdk_start_poller</a>) (void *thread_ctx, <a class="el" href="thread_8h.html#a35c421accdc2a0a61bb7be916106293b">spdk_poller_fn</a> fn, void *arg, uint64_t period_microseconds)</td></tr>
-<tr class="memdesc:a6f70f5e9b4d498e843f81f1a6ada6370"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to be called to start a poller for the thread.  <a href="thread_8h.html#a6f70f5e9b4d498e843f81f1a6ada6370">More...</a><br /></td></tr>
-<tr class="separator:a6f70f5e9b4d498e843f81f1a6ada6370"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adfddbbbb13145f26741106cb8296a05a"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="thread_8h.html#adfddbbbb13145f26741106cb8296a05a">spdk_stop_poller</a>) (struct spdk_poller *poller, void *thread_ctx)</td></tr>
-<tr class="memdesc:adfddbbbb13145f26741106cb8296a05a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to be called to stop a poller.  <a href="thread_8h.html#adfddbbbb13145f26741106cb8296a05a">More...</a><br /></td></tr>
-<tr class="separator:adfddbbbb13145f26741106cb8296a05a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaa00024ffe78012bf1b7ade9aee0ab1a"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="thread_8h.html#aaa00024ffe78012bf1b7ade9aee0ab1a">spdk_poller_set_interrupt_mode_cb</a>) (struct spdk_poller *poller, void *cb_arg, bool interrupt_mode)</td></tr>
 <tr class="memdesc:aaa00024ffe78012bf1b7ade9aee0ab1a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback function to set poller into interrupt mode or back to poll mode.  <a href="thread_8h.html#aaa00024ffe78012bf1b7ade9aee0ab1a">More...</a><br /></td></tr>
 <tr class="separator:aaa00024ffe78012bf1b7ade9aee0ab1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -672,55 +666,6 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_iobuf_register_mo
     <tr><td class="paramname">poller</td><td>Poller to set interrupt or poll mode. </td></tr>
     <tr><td class="paramname">cb_arg</td><td>Argument passed to the callback function. </td></tr>
     <tr><td class="paramname">interrupt_mode</td><td>Set interrupt mode for true, or poll mode for false </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a6f70f5e9b4d498e843f81f1a6ada6370"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6f70f5e9b4d498e843f81f1a6ada6370">&#9670;&nbsp;</a></span>spdk_start_poller</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef struct spdk_poller*(* spdk_start_poller) (void *thread_ctx, <a class="el" href="thread_8h.html#a35c421accdc2a0a61bb7be916106293b">spdk_poller_fn</a> fn, void *arg, uint64_t period_microseconds)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Function to be called to start a poller for the thread. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">thread_ctx</td><td>Context for the thread. </td></tr>
-    <tr><td class="paramname">fn</td><td>Callback function for a poller. </td></tr>
-    <tr><td class="paramname">arg</td><td>Argument passed to callback. </td></tr>
-    <tr><td class="paramname">period_microseconds</td><td>Polling period in microseconds.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>a pointer to the poller on success, or NULL on failure. </dd></dl>
-
-</div>
-</div>
-<a id="adfddbbbb13145f26741106cb8296a05a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adfddbbbb13145f26741106cb8296a05a">&#9670;&nbsp;</a></span>spdk_stop_poller</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef void(* spdk_stop_poller) (struct spdk_poller *poller, void *thread_ctx)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Function to be called to stop a poller. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">poller</td><td>Poller to stop. </td></tr>
-    <tr><td class="paramname">thread_ctx</td><td>Context for the thread. </td></tr>
   </table>
   </dd>
 </dl>
