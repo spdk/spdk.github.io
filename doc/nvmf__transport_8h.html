@@ -277,6 +277,12 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvmf_requ
 <tr class="memitem:a78965f1c8f05b2fb9b6d7f6ce016448a"><td class="memItemLeft" align="right" valign="top"><a id="a78965f1c8f05b2fb9b6d7f6ce016448a"></a>
 static enum <a class="el" href="nvme__spec_8h.html#adbe38e042bb939183ed8fd5c1685b2fc">spdk_nvme_data_transfer</a>&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvmf_req_get_xfer</b> (struct <a class="el" href="structspdk__nvmf__request.html">spdk_nvmf_request</a> *req)</td></tr>
 <tr class="separator:a78965f1c8f05b2fb9b6d7f6ce016448a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d79bc92dddeeef50e0b26cbdbbf9b07"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf__transport_8h.html#a7d79bc92dddeeef50e0b26cbdbbf9b07">spdk_nvmf_ctrlr_async_event_error_event</a> (struct spdk_nvmf_ctrlr *ctrlr, enum <a class="el" href="nvme__spec_8h.html#a87a370c671a1dcad0106afc888af8d04">spdk_nvme_async_event_info_error</a> info)</td></tr>
+<tr class="memdesc:a7d79bc92dddeeef50e0b26cbdbbf9b07"><td class="mdescLeft">&#160;</td><td class="mdescRight">Complete Asynchronous Event as Error.  <a href="nvmf__transport_8h.html#a7d79bc92dddeeef50e0b26cbdbbf9b07">More...</a><br /></td></tr>
+<tr class="separator:a7d79bc92dddeeef50e0b26cbdbbf9b07"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa94fd5f0f0b96442400d1b00dfe84bf6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf__transport_8h.html#aa94fd5f0f0b96442400d1b00dfe84bf6">spdk_nvmf_ctrlr_abort_aer</a> (struct spdk_nvmf_ctrlr *ctrlr)</td></tr>
+<tr class="memdesc:aa94fd5f0f0b96442400d1b00dfe84bf6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Abort outstanding Asynchronous Event Requests (AERs).  <a href="nvmf__transport_8h.html#aa94fd5f0f0b96442400d1b00dfe84bf6">More...</a><br /></td></tr>
+<tr class="separator:aa94fd5f0f0b96442400d1b00dfe84bf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>NVMe-oF Target transport plugin API. </p>
@@ -314,6 +320,71 @@ static enum <a class="el" href="nvme__spec_8h.html#adbe38e042bb939183ed8fd5c1685
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="aa94fd5f0f0b96442400d1b00dfe84bf6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa94fd5f0f0b96442400d1b00dfe84bf6">&#9670;&nbsp;</a></span>spdk_nvmf_ctrlr_abort_aer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_nvmf_ctrlr_abort_aer </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_nvmf_ctrlr *&#160;</td>
+          <td class="paramname"><em>ctrlr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Abort outstanding Asynchronous Event Requests (AERs). </p>
+<p>Completes AERs with ABORTED_BY_REQUEST status code.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ctrlr</td><td>Controller whose AERs are going to be aborted. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a7d79bc92dddeeef50e0b26cbdbbf9b07"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d79bc92dddeeef50e0b26cbdbbf9b07">&#9670;&nbsp;</a></span>spdk_nvmf_ctrlr_async_event_error_event()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_nvmf_ctrlr_async_event_error_event </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_nvmf_ctrlr *&#160;</td>
+          <td class="paramname"><em>ctrlr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">enum <a class="el" href="nvme__spec_8h.html#a87a370c671a1dcad0106afc888af8d04">spdk_nvme_async_event_info_error</a>&#160;</td>
+          <td class="paramname"><em>info</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Complete Asynchronous Event as Error. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ctrlr</td><td>Controller whose AER is going to be completed. </td></tr>
+    <tr><td class="paramname">info</td><td>Asynchronous Event Error Information to be reported.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>int. 0 if it completed successfully, or negative errno if it failed. </dd></dl>
+
+</div>
+</div>
 <a id="a4be21e1e7c78a65458f3cb7d8ed08997"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4be21e1e7c78a65458f3cb7d8ed08997">&#9670;&nbsp;</a></span>spdk_nvmf_ctrlr_get_id()</h2>
 

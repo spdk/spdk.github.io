@@ -1,0 +1,21 @@
+<map id="spdk_nvme_transport_ops" name="spdk_nvme_transport_ops">
+<area shape="rect" id="node1" title=" " alt="" coords="665,411,859,437"/>
+<area shape="rect" id="node2" href="$structspdk__nvme__registers.html" title=" " alt="" coords="333,411,495,437"/>
+<area shape="rect" id="node3" href="$unionspdk__nvme__pmrswtp__register.html" title=" " alt="" coords="5,5,224,32"/>
+<area shape="rect" id="node4" href="$unionspdk__nvme__cap__register.html" title=" " alt="" coords="23,56,207,83"/>
+<area shape="rect" id="node5" href="$unionspdk__nvme__vs__register.html" title=" " alt="" coords="27,107,203,133"/>
+<area shape="rect" id="node6" href="$unionspdk__nvme__bprsel__register.html" title="Boot partition read select." alt="" coords="14,157,215,184"/>
+<area shape="rect" id="node7" href="$unionspdk__nvme__cmbsz__register.html" title=" " alt="" coords="13,208,216,235"/>
+<area shape="rect" id="node8" href="$unionspdk__nvme__csts__register.html" title=" " alt="" coords="21,259,208,285"/>
+<area shape="rect" id="node9" href="$unionspdk__nvme__cc__register.html" title=" " alt="" coords="27,309,202,336"/>
+<area shape="rect" id="node10" href="$unionspdk__nvme__pmrctl__register.html" title=" " alt="" coords="13,360,216,387"/>
+<area shape="rect" id="node11" href="$unionspdk__nvme__cmbmsc__register.html" title=" " alt="" coords="7,411,223,437"/>
+<area shape="rect" id="node12" href="$unionspdk__nvme__aqa__register.html" title=" " alt="" coords="22,461,207,488"/>
+<area shape="rect" id="node13" href="$unionspdk__nvme__pmrebs__register.html" title=" " alt="" coords="9,512,220,539"/>
+<area shape="rect" id="node14" href="$unionspdk__nvme__pmrsts__register.html" title=" " alt="" coords="11,563,218,589"/>
+<area shape="rect" id="node15" href="$unionspdk__nvme__bpinfo__register.html" title="Boot partition information." alt="" coords="13,613,216,640"/>
+<area shape="rect" id="node16" href="$unionspdk__nvme__pmrmscl__register.html" title=" " alt="" coords="5,664,224,691"/>
+<area shape="rect" id="node17" href="$unionspdk__nvme__pmrcap__register.html" title=" " alt="" coords="9,715,220,741"/>
+<area shape="rect" id="node18" href="$unionspdk__nvme__cmbsts__register.html" title=" " alt="" coords="11,765,219,792"/>
+<area shape="rect" id="node19" href="$unionspdk__nvme__cmbloc__register.html" title=" " alt="" coords="11,816,219,843"/>
+</map>

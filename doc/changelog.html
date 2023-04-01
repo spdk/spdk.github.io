@@ -100,6 +100,11 @@ v23.05: (Upcoming Release)</h1>
 <p>New function <code>spdk_env_get_main_core</code> was added.</p>
 <h2>nvmf</h2>
 <p>New <code>spdk_nvmf_request_copy_to/from_buf()</code> APIs have been added, which support iovecs, unlike the deprecated <code>spdk_nvmf_request_get_data()</code>.</p>
+<p>Two functions related to Asynchronous Event and error handling have been made public:</p>
+<ul>
+<li><code>spdk_nvmf_ctrlr_async_event_error_event</code>,</li>
+<li><code>spdk_nvmf_ctrlr_abort_aer</code>.</li>
+</ul>
 <h2>nvme</h2>
 <p>New API <code>spdk_nvme_ns_get_format_index</code> was added to calculate the exact format index, that was used to format the namespace.</p>
 <p>Added two new APIs <code>spdk_nvme_ns_cmd_io_mgmt_recv</code> and <code>spdk_nvme_ns_cmd_io_mgmt_send</code> to receive and send the I/O management commands.</p>

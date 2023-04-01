@@ -40,6 +40,8 @@ var nvmf__transport_8h =
       [ "NVMF_ZCOPY_PHASE_COMPLETE", "nvmf__transport_8h.html#ae58d26ffb4eacadd941c08e8e2615b13af2a4b5b0c3e3d9a73550d12073f1dd9d", null ],
       [ "NVMF_ZCOPY_PHASE_INIT_FAILED", "nvmf__transport_8h.html#ae58d26ffb4eacadd941c08e8e2615b13a9a7f9ac4204c44569bc9f3bbbdd3ae8e", null ]
     ] ],
+    [ "spdk_nvmf_ctrlr_abort_aer", "nvmf__transport_8h.html#aa94fd5f0f0b96442400d1b00dfe84bf6", null ],
+    [ "spdk_nvmf_ctrlr_async_event_error_event", "nvmf__transport_8h.html#a7d79bc92dddeeef50e0b26cbdbbf9b07", null ],
     [ "spdk_nvmf_ctrlr_connect", "nvmf__transport_8h.html#a246103af98d69ad6a1d74d2a4f9e6f7e", null ],
     [ "spdk_nvmf_ctrlr_get_id", "nvmf__transport_8h.html#a4be21e1e7c78a65458f3cb7d8ed08997", null ],
     [ "spdk_nvmf_ctrlr_get_regs", "nvmf__transport_8h.html#a87cc10db83a3c4e44ed38ce031646e58", null ],
