@@ -1,5 +1,7 @@
 var NAVTREEINDEX6 =
 {
+"iscsi__spec_8h.html#aad99955677fa3a626e46ae0652d5d6e7":[16,0,32,80],
+"iscsi__spec_8h.html#aaf0efdb1c7553e000d37efe043ef0b9f":[16,0,32,62],
 "iscsi__spec_8h.html#ab3dd961367e041a9b049546cfeccaa78":[16,0,32,89],
 "iscsi__spec_8h.html#abd5b963858ccc52de9f15f5e8d51a6c1":[16,0,32,29],
 "iscsi__spec_8h.html#ac0d62ee26187ded38ce90884321ba988":[16,0,32,37],
@@ -247,7 +249,5 @@ var NAVTREEINDEX6 =
 "jsonrpc.html#rpc_bdev_ocf_get_bdevs":[3,9,5,18],
 "jsonrpc.html#rpc_bdev_ocf_get_stats":[3,9,5,17],
 "jsonrpc.html#rpc_bdev_ocf_set_cache_mode":[3,9,5,19],
-"jsonrpc.html#rpc_bdev_ocf_set_seqcutoff":[3,9,5,20],
-"jsonrpc.html#rpc_bdev_opal_create":[3,9,9,23],
-"jsonrpc.html#rpc_bdev_opal_delete":[3,9,9,25]
+"jsonrpc.html#rpc_bdev_ocf_set_seqcutoff":[3,9,5,20]
 };

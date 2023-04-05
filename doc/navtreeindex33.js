@@ -1,5 +1,7 @@
 var NAVTREEINDEX33 =
 {
+"unionspdk__nvme__feat__power__management.html#ad425c8a49e910e0413a6a45a67044fbe":[15,0,186,3],
+"unionspdk__nvme__feat__power__management.html#af68e833134cda1b00b750992bdd91342":[15,0,186,1],
 "unionspdk__nvme__feat__reservation__notification__mask.html":[15,0,187],
 "unionspdk__nvme__feat__reservation__notification__mask.html#a00fe19c4570ec5917ae172b47d3fd7df":[15,0,187,2],
 "unionspdk__nvme__feat__reservation__notification__mask.html#a0283e6c0aafff186754b2159483971b7":[15,0,187,6],
@@ -247,7 +249,5 @@ var NAVTREEINDEX33 =
 "vmd.html#vmd_app":[7,4,6],
 "vmd.html#vmd_app_frame":[7,4,5],
 "vmd.html#vmd_config":[7,4,4],
-"vmd.html#vmd_interface":[7,4,2],
-"vmd.html#vmd_intro":[7,4,1],
-"vmd.html#vmd_key_functions":[7,4,3]
+"vmd.html#vmd_interface":[7,4,2]
 };

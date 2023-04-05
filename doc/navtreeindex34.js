@@ -1,5 +1,7 @@
 var NAVTREEINDEX34 =
 {
+"vmd.html#vmd_intro":[7,4,1],
+"vmd.html#vmd_key_functions":[7,4,3],
 "vmd.html#vmd_led":[7,4,7],
 "vmd.html#vmd_toc":[7,4,0],
 "vmd_8h.html":[16,0,64],
