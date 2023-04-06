@@ -145,6 +145,9 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:ab7c94fcc03c8691c451c57d7b23dccc3"><td class="memItemLeft" align="right" valign="top"><a id="ab7c94fcc03c8691c451c57d7b23dccc3"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_STATIC_ASSERT</b> (sizeof(struct <a class="el" href="structspdk__lvs__opts.html">spdk_lvs_opts</a>)==88, &quot;Incorrect size&quot;)</td></tr>
+<tr class="separator:ab7c94fcc03c8691c451c57d7b23dccc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9ecc81d4bcd4fd9090deb20c1a9e0db8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lvol_8h.html#a9ecc81d4bcd4fd9090deb20c1a9e0db8">spdk_lvs_opts_init</a> (struct <a class="el" href="structspdk__lvs__opts.html">spdk_lvs_opts</a> *opts)</td></tr>
 <tr class="memdesc:a9ecc81d4bcd4fd9090deb20c1a9e0db8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize an <a class="el" href="structspdk__lvs__opts.html" title="Parameters for lvolstore initialization.">spdk_lvs_opts</a> structure to the defaults.  <a href="lvol_8h.html#a9ecc81d4bcd4fd9090deb20c1a9e0db8">More...</a><br /></td></tr>
 <tr class="separator:a9ecc81d4bcd4fd9090deb20c1a9e0db8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -169,6 +172,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a2dfba2354de69f535ab0c39693c9ae73"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lvol_8h.html#a2dfba2354de69f535ab0c39693c9ae73">spdk_lvol_create_clone</a> (struct spdk_lvol *lvol, const char *clone_name, <a class="el" href="lvol_8h.html#a453c8a7896aafb644e21e1e960ab3759">spdk_lvol_op_with_handle_complete</a> cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:a2dfba2354de69f535ab0c39693c9ae73"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create clone of given snapshot.  <a href="lvol_8h.html#a2dfba2354de69f535ab0c39693c9ae73">More...</a><br /></td></tr>
 <tr class="separator:a2dfba2354de69f535ab0c39693c9ae73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a560057dc8e66212f08f79c8017ab9b60"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lvol_8h.html#a560057dc8e66212f08f79c8017ab9b60">spdk_lvol_create_esnap_clone</a> (const void *esnap_id, uint32_t id_len, uint64_t size_bytes, struct spdk_lvol_store *lvs, const char *clone_name, <a class="el" href="lvol_8h.html#a453c8a7896aafb644e21e1e960ab3759">spdk_lvol_op_with_handle_complete</a> cb_fn, void *cb_arg)</td></tr>
+<tr class="memdesc:a560057dc8e66212f08f79c8017ab9b60"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create clone of given non-lvol device.  <a href="lvol_8h.html#a560057dc8e66212f08f79c8017ab9b60">More...</a><br /></td></tr>
+<tr class="separator:a560057dc8e66212f08f79c8017ab9b60"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3d5d8be84217db4879d5bf79fa5c23f6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lvol_8h.html#a3d5d8be84217db4879d5bf79fa5c23f6">spdk_lvol_rename</a> (struct spdk_lvol *lvol, const char *new_name, <a class="el" href="lvol_8h.html#a4d5c96c4fe4512f99dcb3f1e5d5e86be">spdk_lvol_op_complete</a> cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:a3d5d8be84217db4879d5bf79fa5c23f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rename lvol with new_name.  <a href="lvol_8h.html#a3d5d8be84217db4879d5bf79fa5c23f6">More...</a><br /></td></tr>
 <tr class="separator:a3d5d8be84217db4879d5bf79fa5c23f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -187,6 +193,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a003e23eb57e1318f2f60c5727cab54e2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lvol_8h.html#a003e23eb57e1318f2f60c5727cab54e2">spdk_lvs_load</a> (struct <a class="el" href="structspdk__bs__dev.html">spdk_bs_dev</a> *bs_dev, <a class="el" href="lvol_8h.html#a757eefd4ce0d68328e7dec58eb2e8a50">spdk_lvs_op_with_handle_complete</a> cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:a003e23eb57e1318f2f60c5727cab54e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load lvolstore from the given blobstore device.  <a href="lvol_8h.html#a003e23eb57e1318f2f60c5727cab54e2">More...</a><br /></td></tr>
 <tr class="separator:a003e23eb57e1318f2f60c5727cab54e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22e4f8c723692f69664fd91760cd30d3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lvol_8h.html#a22e4f8c723692f69664fd91760cd30d3">spdk_lvs_load_ext</a> (struct <a class="el" href="structspdk__bs__dev.html">spdk_bs_dev</a> *bs_dev, const struct <a class="el" href="structspdk__lvs__opts.html">spdk_lvs_opts</a> *lvs_opts, <a class="el" href="lvol_8h.html#a757eefd4ce0d68328e7dec58eb2e8a50">spdk_lvs_op_with_handle_complete</a> cb_fn, void *cb_arg)</td></tr>
+<tr class="memdesc:a22e4f8c723692f69664fd91760cd30d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load lvolstore from the given blobstore device with options.  <a href="lvol_8h.html#a22e4f8c723692f69664fd91760cd30d3">More...</a><br /></td></tr>
+<tr class="separator:a22e4f8c723692f69664fd91760cd30d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a46ad389863de4d9fdf4284a0cd3d5f6c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lvol_8h.html#a46ad389863de4d9fdf4284a0cd3d5f6c">spdk_lvs_grow</a> (struct <a class="el" href="structspdk__bs__dev.html">spdk_bs_dev</a> *bs_dev, <a class="el" href="lvol_8h.html#a757eefd4ce0d68328e7dec58eb2e8a50">spdk_lvs_op_with_handle_complete</a> cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:a46ad389863de4d9fdf4284a0cd3d5f6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Grow a lvstore to fill the underlying device.  <a href="lvol_8h.html#a46ad389863de4d9fdf4284a0cd3d5f6c">More...</a><br /></td></tr>
 <tr class="separator:a46ad389863de4d9fdf4284a0cd3d5f6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -457,6 +466,79 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">lvol</td><td>Handle to lvol snapshot. </td></tr>
+    <tr><td class="paramname">clone_name</td><td>Name of created clone. </td></tr>
+    <tr><td class="paramname">cb_fn</td><td>Completion callback. </td></tr>
+    <tr><td class="paramname">cb_arg</td><td>Completion callback custom arguments. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a560057dc8e66212f08f79c8017ab9b60"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a560057dc8e66212f08f79c8017ab9b60">&#9670;&nbsp;</a></span>spdk_lvol_create_esnap_clone()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_lvol_create_esnap_clone </td>
+          <td>(</td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>esnap_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>id_len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>size_bytes</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct spdk_lvol_store *&#160;</td>
+          <td class="paramname"><em>lvs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>clone_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="lvol_8h.html#a453c8a7896aafb644e21e1e960ab3759">spdk_lvol_op_with_handle_complete</a>&#160;</td>
+          <td class="paramname"><em>cb_fn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>cb_arg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Create clone of given non-lvol device. </p>
+<p>The bdev that is being cloned is commonly called an external snapshot or esnap. The clone is commonly called an esnap clone.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">esnap_id</td><td>The identifier that will be passed to the spdk_bs_esnap_dev_create callback. </td></tr>
+    <tr><td class="paramname">id_len</td><td>The length of esnap_id, in bytes. </td></tr>
+    <tr><td class="paramname">size_bytes</td><td>The size of the external snapshot device, in bytes. </td></tr>
+    <tr><td class="paramname">lvs</td><td>Handle to lvolstore. </td></tr>
     <tr><td class="paramname">clone_name</td><td>Name of created clone. </td></tr>
     <tr><td class="paramname">cb_fn</td><td>Completion callback. </td></tr>
     <tr><td class="paramname">cb_arg</td><td>Completion callback custom arguments. </td></tr>
@@ -977,6 +1059,58 @@ Functions</h2></td></tr>
     <tr><td class="paramname">bs_dev</td><td>Pointer to the blobstore device. </td></tr>
     <tr><td class="paramname">cb_fn</td><td>Completion callback. </td></tr>
     <tr><td class="paramname">cb_arg</td><td>Completion callback custom arguments. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a22e4f8c723692f69664fd91760cd30d3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a22e4f8c723692f69664fd91760cd30d3">&#9670;&nbsp;</a></span>spdk_lvs_load_ext()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_lvs_load_ext </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structspdk__bs__dev.html">spdk_bs_dev</a> *&#160;</td>
+          <td class="paramname"><em>bs_dev</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const struct <a class="el" href="structspdk__lvs__opts.html">spdk_lvs_opts</a> *&#160;</td>
+          <td class="paramname"><em>lvs_opts</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="lvol_8h.html#a757eefd4ce0d68328e7dec58eb2e8a50">spdk_lvs_op_with_handle_complete</a>&#160;</td>
+          <td class="paramname"><em>cb_fn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>cb_arg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Load lvolstore from the given blobstore device with options. </p>
+<p>If lvs_opts is not NULL, it should be initalized with <a class="el" href="lvol_8h.html#a9ecc81d4bcd4fd9090deb20c1a9e0db8" title="Initialize an spdk_lvs_opts structure to the defaults.">spdk_lvs_opts_init()</a>.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bs_dev</td><td>Pointer to the blobstore device. </td></tr>
+    <tr><td class="paramname">lvs_opts</td><td>lvolstore options. </td></tr>
+    <tr><td class="paramname">cb_fn</td><td>Completion callback. </td></tr>
+    <tr><td class="paramname">cb_arg</td><td>Completion callback custom arguments. blobstore. </td></tr>
   </table>
   </dd>
 </dl>

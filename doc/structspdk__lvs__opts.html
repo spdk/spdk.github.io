@@ -94,26 +94,96 @@ $(document).ready(function(){initNavTree('structspdk__lvs__opts.html',''); initR
 
 <p>Parameters for lvolstore initialization.  
  <a href="structspdk__lvs__opts.html#details">More...</a></p>
+<div class="dynheader">
+Collaboration diagram for spdk_lvs_opts:</div>
+<div class="dyncontent">
+<div class="center"><img src="structspdk__lvs__opts__coll__graph.png" border="0" usemap="#aspdk__lvs__opts_coll__map" alt="Collaboration graph"/></div>
+<map name="aspdk__lvs__opts_coll__map" id="aspdk__lvs__opts_coll__map">
+<area shape="rect" title="Parameters for lvolstore initialization." alt="" coords="5,184,120,211"/>
+<area shape="rect" href="structspdk__bs__dev.html" title=" " alt="" coords="9,95,116,121"/>
+<area shape="rect" href="structspdk__bdev.html" title=" " alt="" coords="17,5,109,32"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:a7de65fde2acf310c0d7ba4479d368f46"><td class="memItemLeft" align="right" valign="top"><a id="a7de65fde2acf310c0d7ba4479d368f46"></a>
-uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>cluster_sz</b></td></tr>
+<tr class="memitem:a7de65fde2acf310c0d7ba4479d368f46"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__lvs__opts.html#a7de65fde2acf310c0d7ba4479d368f46">cluster_sz</a></td></tr>
+<tr class="memdesc:a7de65fde2acf310c0d7ba4479d368f46"><td class="mdescLeft">&#160;</td><td class="mdescRight">Size of cluster in bytes.  <a href="structspdk__lvs__opts.html#a7de65fde2acf310c0d7ba4479d368f46">More...</a><br /></td></tr>
 <tr class="separator:a7de65fde2acf310c0d7ba4479d368f46"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad72430d6eb4550837aca4946a3990f8e"><td class="memItemLeft" align="right" valign="top"><a id="ad72430d6eb4550837aca4946a3990f8e"></a>
-enum lvs_clear_method&#160;</td><td class="memItemRight" valign="bottom"><b>clear_method</b></td></tr>
+enum lvs_clear_method&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__lvs__opts.html#ad72430d6eb4550837aca4946a3990f8e">clear_method</a></td></tr>
+<tr class="memdesc:ad72430d6eb4550837aca4946a3990f8e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear method. <br /></td></tr>
 <tr class="separator:ad72430d6eb4550837aca4946a3990f8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa8ddc17ea3ac0cf9ef7f866cf1fac3e0"><td class="memItemLeft" align="right" valign="top"><a id="aa8ddc17ea3ac0cf9ef7f866cf1fac3e0"></a>
-char&#160;</td><td class="memItemRight" valign="bottom"><b>name</b> [SPDK_LVS_NAME_MAX]</td></tr>
+char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__lvs__opts.html#aa8ddc17ea3ac0cf9ef7f866cf1fac3e0">name</a> [SPDK_LVS_NAME_MAX]</td></tr>
+<tr class="memdesc:aa8ddc17ea3ac0cf9ef7f866cf1fac3e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Name of the lvolstore. <br /></td></tr>
 <tr class="separator:aa8ddc17ea3ac0cf9ef7f866cf1fac3e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a441dae8d3badece5ef1c52eca5b55cea"><td class="memItemLeft" align="right" valign="top"><a id="a441dae8d3badece5ef1c52eca5b55cea"></a>
 uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__lvs__opts.html#a441dae8d3badece5ef1c52eca5b55cea">num_md_pages_per_cluster_ratio</a></td></tr>
 <tr class="memdesc:a441dae8d3badece5ef1c52eca5b55cea"><td class="mdescLeft">&#160;</td><td class="mdescRight">num_md_pages_per_cluster_ratio = 100 means 1 page per cluster <br /></td></tr>
 <tr class="separator:a441dae8d3badece5ef1c52eca5b55cea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb87d4e7eddafa21f26296a4c714db58"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__lvs__opts.html#acb87d4e7eddafa21f26296a4c714db58">opts_size</a></td></tr>
+<tr class="memdesc:acb87d4e7eddafa21f26296a4c714db58"><td class="mdescLeft">&#160;</td><td class="mdescRight">The size of spdk_lvol_opts according to the caller of this library is used for ABI compatibility.  <a href="structspdk__lvs__opts.html#acb87d4e7eddafa21f26296a4c714db58">More...</a><br /></td></tr>
+<tr class="separator:acb87d4e7eddafa21f26296a4c714db58"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd478088cf88a9731e689ae48ea461e0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="blob_8h.html#aa9de71c711c86a2fb7b9a7d967ebede4">spdk_bs_esnap_dev_create</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__lvs__opts.html#acd478088cf88a9731e689ae48ea461e0">esnap_bs_dev_create</a></td></tr>
+<tr class="memdesc:acd478088cf88a9731e689ae48ea461e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">A function to be called to load external snapshots.  <a href="structspdk__lvs__opts.html#acd478088cf88a9731e689ae48ea461e0">More...</a><br /></td></tr>
+<tr class="separator:acd478088cf88a9731e689ae48ea461e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Parameters for lvolstore initialization. </p>
-</div><hr/>The documentation for this struct was generated from the following file:<ul>
+</div><h2 class="groupheader">Field Documentation</h2>
+<a id="a7de65fde2acf310c0d7ba4479d368f46"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7de65fde2acf310c0d7ba4479d368f46">&#9670;&nbsp;</a></span>cluster_sz</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t spdk_lvs_opts::cluster_sz</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Size of cluster in bytes. </p>
+<p>Must be multiple of 4KiB page size. </p>
+
+</div>
+</div>
+<a id="acd478088cf88a9731e689ae48ea461e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acd478088cf88a9731e689ae48ea461e0">&#9670;&nbsp;</a></span>esnap_bs_dev_create</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="blob_8h.html#aa9de71c711c86a2fb7b9a7d967ebede4">spdk_bs_esnap_dev_create</a> spdk_lvs_opts::esnap_bs_dev_create</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A function to be called to load external snapshots. </p>
+<p>If this is NULL while the lvolstore is being loaded, the lvolstore will not support external snapshots. </p>
+
+</div>
+</div>
+<a id="acb87d4e7eddafa21f26296a4c714db58"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb87d4e7eddafa21f26296a4c714db58">&#9670;&nbsp;</a></span>opts_size</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t spdk_lvs_opts::opts_size</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The size of spdk_lvol_opts according to the caller of this library is used for ABI compatibility. </p>
+<p>The library uses this field to know how many fields in this structure are valid. And the library will populate any remaining fields with default values. After that, new added fields should be put in the end of the struct. </p>
+
+</div>
+</div>
+<hr/>The documentation for this struct was generated from the following file:<ul>
 <li><a class="el" href="lvol_8h.html">lvol.h</a></li>
 </ul>
 </div><!-- contents -->

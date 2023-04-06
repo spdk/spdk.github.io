@@ -528,6 +528,7 @@ Functions</h2></td></tr>
 
 <p>External snapshot device open callback. </p>
 <p>As an esnap clone blob is loading, it uses this callback registered with the blobstore to create the external snapshot device. The blobstore consumer must set this while loading the blobstore if it intends to support external snapshots.</p>
+<p>If the blobstore consumer does not wish to load an external snapshot, it should set *bs_dev to NULL and return 0.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">bs_ctx</td><td>Context provided by the blobstore consumer via esnap_ctx member of struct <a class="el" href="structspdk__bs__opts.html">spdk_bs_opts</a>. </td></tr>

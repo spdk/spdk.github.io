@@ -1,5 +1,10 @@
 var NAVTREEINDEX30 =
 {
+"structspdk__vfu__pci__device.html#a20ebb56d42efba8f13739ff8976aa8a3":[15,0,396,15],
+"structspdk__vfu__pci__device.html#a29b0a87d2156236093e1315b062f4806":[15,0,396,8],
+"structspdk__vfu__pci__device.html#a302e9ae2097cbedae3bd7f3295a84298":[15,0,396,5],
+"structspdk__vfu__pci__device.html#a445f19834c299af971f8b3ad72592994":[15,0,396,4],
+"structspdk__vfu__pci__device.html#a5585f94a97ad11b413ac17e986a49c17":[15,0,396,2],
 "structspdk__vfu__pci__device.html#a5b4589d4cc362b904aeffe3c586b300a":[15,0,396,14],
 "structspdk__vfu__pci__device.html#aa7f9711fba2103c4090550a8eea0a034":[15,0,396,0],
 "structspdk__vfu__pci__device.html#aade39aac3963942cd7ca96012a6afae4":[15,0,396,6],
@@ -244,10 +249,5 @@ var NAVTREEINDEX30 =
 "trace__parser_8h.html#aae729da36784f7e2da4107c77c11926b":[16,0,59,6],
 "ublk.html":[3,14],
 "ublk.html#ublk_impl":[3,14,3],
-"ublk.html#ublk_internal":[3,14,2],
-"ublk.html#ublk_intro":[3,14,1],
-"ublk.html#ublk_op":[3,14,4],
-"ublk.html#ublk_toc":[3,14,0],
-"unionidxd__cmd__register.html":[15,0,7],
-"unionidxd__cmd__register.html#a45ef422dbe29efc5c67bb72e8b55db3e":[15,0,7,3]
+"ublk.html#ublk_internal":[3,14,2]
 };

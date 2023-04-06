@@ -1,5 +1,10 @@
 var NAVTREEINDEX33 =
 {
+"unionspdk__nvme__feat__number__of__queues.html#ad7726e81ee8be9a644d899c4f97bba81":[15,0,185,0],
+"unionspdk__nvme__feat__power__management.html":[15,0,186],
+"unionspdk__nvme__feat__power__management.html#a0614478c08480813d285d5819998e3ee":[15,0,186,2],
+"unionspdk__nvme__feat__power__management.html#a52933fc9535c408800e44821ab5b3b6e":[15,0,186,0],
+"unionspdk__nvme__feat__power__management.html#a77632a40e3f55b8de36ca61c7d0a8b74":[15,0,186,4],
 "unionspdk__nvme__feat__power__management.html#ad425c8a49e910e0413a6a45a67044fbe":[15,0,186,3],
 "unionspdk__nvme__feat__power__management.html#af68e833134cda1b00b750992bdd91342":[15,0,186,1],
 "unionspdk__nvme__feat__reservation__notification__mask.html":[15,0,187],
@@ -244,10 +249,5 @@ var NAVTREEINDEX33 =
 "vhost_processing.html#vhost_spdk_optimizations":[2,5,4,0],
 "virtio.html":[7,3],
 "virtio.html#virtio_2mb":[7,3,1],
-"virtio.html#virtio_intro":[7,3,0],
-"vmd.html":[7,4],
-"vmd.html#vmd_app":[7,4,6],
-"vmd.html#vmd_app_frame":[7,4,5],
-"vmd.html#vmd_config":[7,4,4],
-"vmd.html#vmd_interface":[7,4,2]
+"virtio.html#virtio_intro":[7,3,0]
 };

@@ -21,6 +21,7 @@ var lvol_8h =
     [ "spdk_lvol_close", "lvol_8h.html#a89835586bb7e2e6e78bd0e4cd4c4d45b", null ],
     [ "spdk_lvol_create", "lvol_8h.html#ab3586b04e9b91ac588f3f1ff2603876c", null ],
     [ "spdk_lvol_create_clone", "lvol_8h.html#a2dfba2354de69f535ab0c39693c9ae73", null ],
+    [ "spdk_lvol_create_esnap_clone", "lvol_8h.html#a560057dc8e66212f08f79c8017ab9b60", null ],
     [ "spdk_lvol_create_snapshot", "lvol_8h.html#ab7a0818546003c24d2236c1f201fdf28", null ],
     [ "spdk_lvol_decouple_parent", "lvol_8h.html#a15199efb9ca8b7309ec257c1a87360c5", null ],
     [ "spdk_lvol_deletable", "lvol_8h.html#a526682c9b96877490b9611cc96a907b1", null ],
@@ -33,7 +34,9 @@ var lvol_8h =
     [ "spdk_lvs_grow", "lvol_8h.html#a46ad389863de4d9fdf4284a0cd3d5f6c", null ],
     [ "spdk_lvs_init", "lvol_8h.html#ae12b16b8565ab63a3c9b919ab9664c0f", null ],
     [ "spdk_lvs_load", "lvol_8h.html#a003e23eb57e1318f2f60c5727cab54e2", null ],
+    [ "spdk_lvs_load_ext", "lvol_8h.html#a22e4f8c723692f69664fd91760cd30d3", null ],
     [ "spdk_lvs_opts_init", "lvol_8h.html#a9ecc81d4bcd4fd9090deb20c1a9e0db8", null ],
     [ "spdk_lvs_rename", "lvol_8h.html#af406c5e7b0e7826b270c802b1431b76f", null ],
-    [ "spdk_lvs_unload", "lvol_8h.html#a9f7032fa38dc1af638910018e07b0dd4", null ]
+    [ "spdk_lvs_unload", "lvol_8h.html#a9f7032fa38dc1af638910018e07b0dd4", null ],
+    [ "SPDK_STATIC_ASSERT", "lvol_8h.html#ab7c94fcc03c8691c451c57d7b23dccc3", null ]
 ];
