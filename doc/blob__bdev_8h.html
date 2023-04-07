@@ -271,7 +271,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Claim the bdev module for the given blobstore. </p>
-<p>If bs_dev was opened read-write using <a class="el" href="blob__bdev_8h.html#af2318a373aae926c6ce9300e06e8bb81" title="Create a blobstore block device from a bdev.">spdk_bdev_create_bs_dev_ext()</a>, a read-write-once claim is taken. If bs_dev was opened read-only using spdk_bdev_create_bs_dev_ro(), a read-only-many claim is taken.</p>
+<p>If bs_dev was opened read-write using <a class="el" href="blob__bdev_8h.html#af2318a373aae926c6ce9300e06e8bb81" title="Create a blobstore block device from a bdev.">spdk_bdev_create_bs_dev_ext()</a>, a read-write-once claim is taken. If bs_dev was opened read-only using <a class="el" href="blob__bdev_8h.html#a2a6d877fd0b0eaea06c55c972fa54497" title="Create a blobstore block device from a bdev.">spdk_bdev_create_bs_dev()</a>, a read-only-many claim is taken.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">bs_dev</td><td>Blobstore block device. </td></tr>

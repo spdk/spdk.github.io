@@ -434,12 +434,12 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_iobuf_register_mo
 <tr class="memitem:ad192ca271f84d76cca2a2ff6403b534a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="thread_8h.html#ad192ca271f84d76cca2a2ff6403b534a">spdk_iobuf_entry_abort</a> (struct <a class="el" href="structspdk__iobuf__channel.html">spdk_iobuf_channel</a> *ch, struct <a class="el" href="structspdk__iobuf__entry.html">spdk_iobuf_entry</a> *entry, uint64_t len)</td></tr>
 <tr class="memdesc:ad192ca271f84d76cca2a2ff6403b534a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Abort an outstanding request waiting for a buffer.  <a href="thread_8h.html#ad192ca271f84d76cca2a2ff6403b534a">More...</a><br /></td></tr>
 <tr class="separator:ad192ca271f84d76cca2a2ff6403b534a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a14de90dcf3546ce71f61ec38b4e12a83"><td class="memItemLeft" align="right" valign="top">static void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="thread_8h.html#a14de90dcf3546ce71f61ec38b4e12a83">spdk_iobuf_get</a> (struct <a class="el" href="structspdk__iobuf__channel.html">spdk_iobuf_channel</a> *ch, uint64_t len, struct <a class="el" href="structspdk__iobuf__entry.html">spdk_iobuf_entry</a> *entry, spdk_iobuf_get_cb cb_fn)</td></tr>
-<tr class="memdesc:a14de90dcf3546ce71f61ec38b4e12a83"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a buffer from the iobuf pool.  <a href="thread_8h.html#a14de90dcf3546ce71f61ec38b4e12a83">More...</a><br /></td></tr>
-<tr class="separator:a14de90dcf3546ce71f61ec38b4e12a83"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa64ecb0b95f9f9feeadedba1ad2e2cfe"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="thread_8h.html#aa64ecb0b95f9f9feeadedba1ad2e2cfe">spdk_iobuf_put</a> (struct <a class="el" href="structspdk__iobuf__channel.html">spdk_iobuf_channel</a> *ch, void *buf, uint64_t len)</td></tr>
-<tr class="memdesc:aa64ecb0b95f9f9feeadedba1ad2e2cfe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Release a buffer back to the iobuf pool.  <a href="thread_8h.html#aa64ecb0b95f9f9feeadedba1ad2e2cfe">More...</a><br /></td></tr>
-<tr class="separator:aa64ecb0b95f9f9feeadedba1ad2e2cfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a861f8067dad2dad16aa5a7f11e2221fc"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="thread_8h.html#a861f8067dad2dad16aa5a7f11e2221fc">spdk_iobuf_get</a> (struct <a class="el" href="structspdk__iobuf__channel.html">spdk_iobuf_channel</a> *ch, uint64_t len, struct <a class="el" href="structspdk__iobuf__entry.html">spdk_iobuf_entry</a> *entry, spdk_iobuf_get_cb cb_fn)</td></tr>
+<tr class="memdesc:a861f8067dad2dad16aa5a7f11e2221fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a buffer from the iobuf pool.  <a href="thread_8h.html#a861f8067dad2dad16aa5a7f11e2221fc">More...</a><br /></td></tr>
+<tr class="separator:a861f8067dad2dad16aa5a7f11e2221fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca828f485050a8d77d0a0b4182c632cc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="thread_8h.html#aca828f485050a8d77d0a0b4182c632cc">spdk_iobuf_put</a> (struct <a class="el" href="structspdk__iobuf__channel.html">spdk_iobuf_channel</a> *ch, void *buf, uint64_t len)</td></tr>
+<tr class="memdesc:aca828f485050a8d77d0a0b4182c632cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Release a buffer back to the iobuf pool.  <a href="thread_8h.html#aca828f485050a8d77d0a0b4182c632cc">More...</a><br /></td></tr>
+<tr class="separator:aca828f485050a8d77d0a0b4182c632cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Thread. </p>
@@ -1451,7 +1451,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_iobuf_register_mo
   <table class="params">
     <tr><td class="paramname">ch</td><td>iobuf channel on which the entry is waiting. </td></tr>
     <tr><td class="paramname">entry</td><td>Entry to remove from the wait queue. </td></tr>
-    <tr><td class="paramname">len</td><td>Length of the requested buffer (must be the exact same value as specified in <code><a class="el" href="thread_8h.html#a14de90dcf3546ce71f61ec38b4e12a83" title="Get a buffer from the iobuf pool.">spdk_iobuf_get()</a></code>. </td></tr>
+    <tr><td class="paramname">len</td><td>Length of the requested buffer (must be the exact same value as specified in <code><a class="el" href="thread_8h.html#a861f8067dad2dad16aa5a7f11e2221fc" title="Get a buffer from the iobuf pool.">spdk_iobuf_get()</a></code>. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1548,17 +1548,14 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_iobuf_register_mo
 
 </div>
 </div>
-<a id="a14de90dcf3546ce71f61ec38b4e12a83"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a14de90dcf3546ce71f61ec38b4e12a83">&#9670;&nbsp;</a></span>spdk_iobuf_get()</h2>
+<a id="a861f8067dad2dad16aa5a7f11e2221fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a861f8067dad2dad16aa5a7f11e2221fc">&#9670;&nbsp;</a></span>spdk_iobuf_get()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static void* spdk_iobuf_get </td>
+          <td class="memname">void* spdk_iobuf_get </td>
           <td>(</td>
           <td class="paramtype">struct <a class="el" href="structspdk__iobuf__channel.html">spdk_iobuf_channel</a> *&#160;</td>
           <td class="paramname"><em>ch</em>, </td>
@@ -1587,11 +1584,6 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_iobuf_register_mo
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Get a buffer from the iobuf pool. </p>
@@ -1656,17 +1648,14 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_iobuf_register_mo
 
 </div>
 </div>
-<a id="aa64ecb0b95f9f9feeadedba1ad2e2cfe"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa64ecb0b95f9f9feeadedba1ad2e2cfe">&#9670;&nbsp;</a></span>spdk_iobuf_put()</h2>
+<a id="aca828f485050a8d77d0a0b4182c632cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca828f485050a8d77d0a0b4182c632cc">&#9670;&nbsp;</a></span>spdk_iobuf_put()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static void spdk_iobuf_put </td>
+          <td class="memname">void spdk_iobuf_put </td>
           <td>(</td>
           <td class="paramtype">struct <a class="el" href="structspdk__iobuf__channel.html">spdk_iobuf_channel</a> *&#160;</td>
           <td class="paramname"><em>ch</em>, </td>
@@ -1689,11 +1678,6 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_iobuf_register_mo
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Release a buffer back to the iobuf pool. </p>
@@ -1702,7 +1686,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_iobuf_register_mo
   <table class="params">
     <tr><td class="paramname">ch</td><td>iobuf channel. </td></tr>
     <tr><td class="paramname">buf</td><td>Buffer to release </td></tr>
-    <tr><td class="paramname">len</td><td>Length of the buffer (must be the exact same value as specified in <code><a class="el" href="thread_8h.html#a14de90dcf3546ce71f61ec38b4e12a83" title="Get a buffer from the iobuf pool.">spdk_iobuf_get()</a></code>). </td></tr>
+    <tr><td class="paramname">len</td><td>Length of the buffer (must be the exact same value as specified in <code><a class="el" href="thread_8h.html#a861f8067dad2dad16aa5a7f11e2221fc" title="Get a buffer from the iobuf pool.">spdk_iobuf_get()</a></code>). </td></tr>
   </table>
   </dd>
 </dl>

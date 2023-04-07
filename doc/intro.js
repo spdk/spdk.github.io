@@ -32,5 +32,6 @@ var intro =
       [ "v16.12: NVMe over Fabrics host, hotplug, and multi-process", "changelog.html#changelog-v16-12", null ],
       [ "v16.08: iSCSI target, NVMe over Fabrics maturity", "changelog.html#changelog-v16-08", null ],
       [ "v16.06: NVMf userspace target", "changelog.html#changelog-v16-06", null ]
-    ] ]
+    ] ],
+    [ "Deprecation", "deprecation.html", null ]
 ];

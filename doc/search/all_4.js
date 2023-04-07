@@ -6,7 +6,7 @@ var searchData=
   ['data_5ftransferred_175',['data_transferred',['../structspdk__scsi__task.html#aed0de3999a81a9aeb079f0d9e4c4f098',1,'spdk_scsi_task']]],
   ['dealloc_5for_5funwritten_5ferror_176',['dealloc_or_unwritten_error',['../structspdk__nvme__ns__data.html#a9db6d23a3a10ec735fb97ae62fba8432',1,'spdk_nvme_ns_data']]],
   ['deinit_177',['deinit',['../structspdk__governor.html#a68f4d3cf970e99e055f042e5e65745bc',1,'spdk_governor::deinit()'],['../structspdk__scheduler.html#acbac668eb963ca9df3a6295d6f639388',1,'spdk_scheduler::deinit()']]],
-  ['deprecation_178',['Deprecation',['../md__home_sys_sgsw_oss_spdk_github_io_spdk_deprecation.html',1,'']]],
+  ['deprecation_178',['Deprecation',['../deprecation.html',1,'intro']]],
   ['desc_179',['desc',['../structspdk__bdev__io_1_1____bdev__io__internal__fields.html#a9ec31d2c37d402f888525346bb2ad907',1,'spdk_bdev_io::__bdev_io_internal_fields']]],
   ['destroy_180',['destroy',['../structspdk__nvmf__transport__ops.html#add528f11c2846f57ced92a3da9457bd5',1,'spdk_nvmf_transport_ops']]],
   ['destruct_181',['destruct',['../structspdk__bdev__fn__table.html#a8a76c50a2b20205ec9fffe4afb9e3a15',1,'spdk_bdev_fn_table::destruct()'],['../structspdk__vfu__endpoint__ops.html#ab3b853dbe1e51763b880e73f43ba560f',1,'spdk_vfu_endpoint_ops::destruct()']]],
