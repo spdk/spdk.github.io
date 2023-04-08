@@ -1,16 +1,17 @@
 var NAVTREEINDEX30 =
 {
+"structspdk__vfu__pci__device.html#a29b0a87d2156236093e1315b062f4806":[14,0,396,8],
 "structspdk__vfu__pci__device.html#a302e9ae2097cbedae3bd7f3295a84298":[14,0,396,5],
 "structspdk__vfu__pci__device.html#a445f19834c299af971f8b3ad72592994":[14,0,396,4],
 "structspdk__vfu__pci__device.html#a5585f94a97ad11b413ac17e986a49c17":[14,0,396,2],
 "structspdk__vfu__pci__device.html#a5b4589d4cc362b904aeffe3c586b300a":[14,0,396,14],
+"structspdk__vfu__pci__device.html#a7dc90a89607dfda94163f45481f6d22d":[14,0,396,1],
 "structspdk__vfu__pci__device.html#aa7f9711fba2103c4090550a8eea0a034":[14,0,396,0],
 "structspdk__vfu__pci__device.html#aade39aac3963942cd7ca96012a6afae4":[14,0,396,6],
 "structspdk__vfu__pci__device.html#aae5a307266663de4c4c040747e74a1c9":[14,0,396,11],
-"structspdk__vfu__pci__device.html#ab7ec4219ba5a864f58cfbbe0a1616713":[14,0,396,3],
 "structspdk__vfu__pci__device.html#ab9607f167444380a9a2062417dc88a60":[14,0,396,12],
-"structspdk__vfu__pci__device.html#abe4cc3dd1f9836181fbb91e82e3c2cae":[14,0,396,1],
 "structspdk__vfu__pci__device.html#ad01c800b0af1c5a94ab9408a4c2d80ad":[14,0,396,16],
+"structspdk__vfu__pci__device.html#aec8547128d15d1e96dbed6ba46d443b8":[14,0,396,3],
 "structspdk__vfu__pci__device.html#af45c0a41086c86f64be36d093b40e678":[14,0,396,13],
 "structspdk__vfu__pci__region.html":[14,0,397],
 "structspdk__vfu__pci__region.html#a07001584256cfe729af064978e793262":[14,0,397,4],
@@ -58,10 +59,10 @@ var NAVTREEINDEX30 =
 "structvfio__user__header.html#a1072eea3401a2d0bbda4fc0d8bcdcb2d":[14,0,405,7],
 "structvfio__user__header.html#a192a548b281b126819c771b7a5c85766":[14,0,405,0],
 "structvfio__user__header.html#a4069787d02f5851e7c7652198505a102":[14,0,405,5],
+"structvfio__user__header.html#a9172193571584f47fa6ed9a46b764ce7":[14,0,405,3],
 "structvfio__user__header.html#a929c2ba18ce9462b9bf960939332a2df":[14,0,405,1],
 "structvfio__user__header.html#ac26f57c2a4710128eb10398b4ab71405":[14,0,405,2],
 "structvfio__user__header.html#acaaa5241337cb834839b75e01e27f294":[14,0,405,8],
-"structvfio__user__header.html#ad21b827dc55ba6ff42ca41b665a0e5bc":[14,0,405,3],
 "structvfio__user__irq__info.html":[14,0,406],
 "structvfio__user__irq__info.html#ade42fc56773d521b17dcc9ecdd2638a7":[14,0,406,0],
 "structvfio__user__region__access.html":[14,0,407],
@@ -248,6 +249,5 @@ var NAVTREEINDEX30 =
 "ublk.html":[3,14],
 "ublk.html#ublk_impl":[3,14,3],
 "ublk.html#ublk_internal":[3,14,2],
-"ublk.html#ublk_intro":[3,14,1],
-"ublk.html#ublk_op":[3,14,4]
+"ublk.html#ublk_intro":[3,14,1]
 };

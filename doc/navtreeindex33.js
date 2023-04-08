@@ -1,5 +1,6 @@
 var NAVTREEINDEX33 =
 {
+"unionspdk__nvme__feat__power__management.html":[14,0,186],
 "unionspdk__nvme__feat__power__management.html#a0614478c08480813d285d5819998e3ee":[14,0,186,2],
 "unionspdk__nvme__feat__power__management.html#a52933fc9535c408800e44821ab5b3b6e":[14,0,186,0],
 "unionspdk__nvme__feat__power__management.html#a77632a40e3f55b8de36ca61c7d0a8b74":[14,0,186,4],
@@ -248,6 +249,5 @@ var NAVTREEINDEX33 =
 "virtio.html":[7,3],
 "virtio.html#virtio_2mb":[7,3,1],
 "virtio.html#virtio_intro":[7,3,0],
-"vmd.html":[7,4],
-"vmd.html#vmd_app":[7,4,6]
+"vmd.html":[7,4]
 };
