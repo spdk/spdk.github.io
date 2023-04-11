@@ -10,6 +10,7 @@ var structspdk__app__opts =
     [ "iova_mode", "structspdk__app__opts.html#a637cccc4c5bfefe84643fcb14943cd72", null ],
     [ "json_config_file", "structspdk__app__opts.html#aa167c7261b91f10450ac6f1bc0700c1e", null ],
     [ "json_config_ignore_errors", "structspdk__app__opts.html#a22921866228db3a1c2831638650a26f6", null ],
+    [ "lcore_map", "structspdk__app__opts.html#a00f6cab501f7ec508a28b73577571f33", null ],
     [ "log", "structspdk__app__opts.html#a4de9f5097a5cdc69c3b45b64db56eea0", null ],
     [ "main_core", "structspdk__app__opts.html#aac6e234b1dec93b58c29239539d6c9f2", null ],
     [ "mem_channel", "structspdk__app__opts.html#abd571128caea84190b31231105219b38", null ],
