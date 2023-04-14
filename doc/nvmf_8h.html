@@ -1138,14 +1138,16 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">qpair</td><td>The NVMe-oF qpair to disconnect. </td></tr>
-    <tr><td class="paramname">cb_fn</td><td>The function to call upon completion of the disconnect. </td></tr>
-    <tr><td class="paramname">ctx</td><td>The context to pass to the callback function.</td></tr>
+    <tr><td class="paramname">cb_fn</td><td>Deprecated, will be removed in v23.09. The function to call upon completion of the disconnect. </td></tr>
+    <tr><td class="paramname">ctx</td><td>Deprecated, will be removed in v23.09. The context to pass to the callback function.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 upon success. </dd>
 <dd>
--ENOMEM if the function specific context could not be allocated. </dd></dl>
+-ENOMEM if the function specific context could not be allocated. </dd>
+<dd>
+-EINPROGRESS if the qpair is already in the process of disconnect. </dd></dl>
 
 </div>
 </div>

@@ -108,6 +108,9 @@ $(document).ready(function(){initNavTree('deprecation.html',''); initResizable()
 <h2>nvme</h2>
 <h3><code>nvme_ctrlr_prepare_for_reset</code></h3>
 <p>Deprecated <code>spdk_nvme_ctrlr_prepare_for_reset</code> API, which will be removed in SPDK 22.01. For PCIe transport, <code>spdk_nvme_ctrlr_disconnect</code> should be used before freeing I/O qpairs.</p>
+<h2>nvmf</h2>
+<h3><code>spdk_nvmf_qpair_disconnect</code></h3>
+<p>Parameters <code>cb_fn</code> and <code>ctx</code> of <code>spdk_nvmf_qpair_disconnect</code> API are deprecated. These parameters will be removed in 23.09 release.</p>
 <h2>gpt</h2>
 <h3><code>old_gpt_guid</code></h3>
 <p>Deprecated the SPDK partition type GUID <code>7c5222bd-8f5d-4087-9c00-bf9843c7b58c</code>. Partitions of this type have bdevs created that are one block less than the actual size of the partition. Existing partitions using the deprecated GUID can continue to use that GUID; support for the deprecated GUID will remain in SPDK indefinitely, and will continue to exhibit the off-by-one bug so that on-disk metadata layouts based on the incorrect size are not affected.</p>
