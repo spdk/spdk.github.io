@@ -1,5 +1,7 @@
 var NAVTREEINDEX6 =
 {
+"iscsi__spec_8h.html#aa5530d01dd3009d2ca4d9fdbbc322341":[15,0,32,64],
+"iscsi__spec_8h.html#aaa615f19751a42dcd9cf01fa3140ea8e":[15,0,32,50],
 "iscsi__spec_8h.html#aac9cdbcfc17b258f8fd912c9b1cea7b7":[15,0,32,31],
 "iscsi__spec_8h.html#aad99955677fa3a626e46ae0652d5d6e7":[15,0,32,80],
 "iscsi__spec_8h.html#aaf0efdb1c7553e000d37efe043ef0b9f":[15,0,32,62],
@@ -166,7 +168,9 @@ var NAVTREEINDEX6 =
 "jsonrpc.html#rpc_accel_crypto_key_destroy":[3,9,4,4],
 "jsonrpc.html#rpc_accel_crypto_keys_get":[3,9,4,5],
 "jsonrpc.html#rpc_accel_get_opc_assignments":[3,9,4,1],
+"jsonrpc.html#rpc_accel_get_stats":[3,9,4,8],
 "jsonrpc.html#rpc_accel_set_driver":[3,9,4,6],
+"jsonrpc.html#rpc_accel_set_options":[3,9,4,7],
 "jsonrpc.html#rpc_bdev_aio_create":[3,9,5,28],
 "jsonrpc.html#rpc_bdev_aio_delete":[3,9,5,30],
 "jsonrpc.html#rpc_bdev_aio_rescan":[3,9,5,29],
@@ -245,9 +249,5 @@ var NAVTREEINDEX6 =
 "jsonrpc.html#rpc_bdev_nvme_stop_mdns_discovery":[3,9,13,15],
 "jsonrpc.html#rpc_bdev_ocf_create":[3,9,5,15],
 "jsonrpc.html#rpc_bdev_ocf_delete":[3,9,5,16],
-"jsonrpc.html#rpc_bdev_ocf_flush_start":[3,9,5,21],
-"jsonrpc.html#rpc_bdev_ocf_flush_status":[3,9,5,22],
-"jsonrpc.html#rpc_bdev_ocf_get_bdevs":[3,9,5,18],
-"jsonrpc.html#rpc_bdev_ocf_get_stats":[3,9,5,17],
-"jsonrpc.html#rpc_bdev_ocf_set_cache_mode":[3,9,5,19]
+"jsonrpc.html#rpc_bdev_ocf_flush_start":[3,9,5,21]
 };

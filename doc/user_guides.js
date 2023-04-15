@@ -176,6 +176,8 @@ var user_guides =
         [ "accel_crypto_key_destroy", "jsonrpc.html#rpc_accel_crypto_key_destroy", null ],
         [ "accel_crypto_keys_get", "jsonrpc.html#rpc_accel_crypto_keys_get", null ],
         [ "accel_set_driver", "jsonrpc.html#rpc_accel_set_driver", null ],
+        [ "accel_set_options", "jsonrpc.html#rpc_accel_set_options", null ],
+        [ "accel_get_stats", "jsonrpc.html#rpc_accel_get_stats", null ],
         [ "compressdev_scan_accel_module", "jsonrpc.html#rpc_compressdev_scan_accel_module", null ],
         [ "dsa_scan_accel_module", "jsonrpc.html#rpc_dsa_scan_accel_module", null ],
         [ "iaa_scan_accel_module", "jsonrpc.html#rpc_iaa_scan_accel_module", null ],

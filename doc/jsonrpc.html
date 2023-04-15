@@ -402,6 +402,7 @@ rpc_get_methods</h2>
 <div class="line">    &quot;framework_get_subsystems&quot;,</div>
 <div class="line">    &quot;framework_monitor_context_switch&quot;,</div>
 <div class="line">    &quot;spdk_kill_instance&quot;,</div>
+<div class="line">    &quot;accel_set_options&quot;,</div>
 <div class="line">    &quot;accel_set_driver&quot;,</div>
 <div class="line">    &quot;accel_crypto_key_create&quot;,</div>
 <div class="line">    &quot;accel_crypto_key_destroy&quot;,</div>
@@ -1525,6 +1526,73 @@ accel_set_driver</h2>
 <div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
 <div class="line">  &quot;id&quot;: 1,</div>
 <div class="line">  &quot;result&quot;: true</div>
+<div class="line">}</div>
+</div><!-- fragment --><h2><a class="anchor" id="rpc_accel_set_options"></a>
+accel_set_options</h2>
+<p>Set accel framework's options.</p>
+<h3>Parameters</h3>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">small_cache_size   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">Size of the small iobuf cache    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">large_cache_size   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">Size of the large iobuf cache   </td></tr>
+</table>
+<h3>Example</h3>
+<p>Example request:</p>
+<div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
+<div class="line">  &quot;method&quot;: &quot;accel_set_options&quot;,</div>
+<div class="line">  &quot;id&quot;: 1,</div>
+<div class="line">  &quot;params&quot;: {</div>
+<div class="line">    &quot;small_cache_size&quot;: 128,</div>
+<div class="line">    &quot;large_cache_size&quot;: 32</div>
+<div class="line">  }</div>
+<div class="line">}</div>
+</div><!-- fragment --><p>Example response:</p>
+<div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
+<div class="line">  &quot;id&quot;: 1,</div>
+<div class="line">  &quot;result&quot;: true</div>
+<div class="line">}</div>
+</div><!-- fragment --><h2><a class="anchor" id="rpc_accel_get_stats"></a>
+accel_get_stats</h2>
+<p>Retrieve accel framework's statistics. Statistics for opcodes that have never been executed (i.e. all their stats are at 0) aren't included in the <code>operations</code> array.</p>
+<h3>Parameters</h3>
+<p>None.</p>
+<h3>Example</h3>
+<p>Example request:</p>
+<div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
+<div class="line">  &quot;method&quot;: &quot;accel_get_stats&quot;,</div>
+<div class="line">  &quot;id&quot;: 1</div>
+<div class="line">}</div>
+</div><!-- fragment --><p>Example response:</p>
+<div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
+<div class="line">  &quot;id&quot;: 1,</div>
+<div class="line">  &quot;result&quot;: {</div>
+<div class="line">    &quot;sequence_executed&quot;: 256,</div>
+<div class="line">    &quot;sequence_failed&quot;: 0,</div>
+<div class="line">    &quot;operations&quot;: [</div>
+<div class="line">      {</div>
+<div class="line">        &quot;opcode&quot;: &quot;copy&quot;,</div>
+<div class="line">        &quot;executed&quot;: 256,</div>
+<div class="line">        &quot;failed&quot;: 0</div>
+<div class="line">      },</div>
+<div class="line">      {</div>
+<div class="line">        &quot;opcode&quot;: &quot;encrypt&quot;,</div>
+<div class="line">        &quot;executed&quot;: 128,</div>
+<div class="line">        &quot;failed&quot;: 0</div>
+<div class="line">      },</div>
+<div class="line">      {</div>
+<div class="line">        &quot;opcode&quot;: &quot;decrypt&quot;,</div>
+<div class="line">        &quot;executed&quot;: 128,</div>
+<div class="line">        &quot;failed&quot;: 0</div>
+<div class="line">      }</div>
+<div class="line">    ]</div>
+<div class="line">  }</div>
 <div class="line">}</div>
 </div><!-- fragment --><h2><a class="anchor" id="rpc_compressdev_scan_accel_module"></a>
 compressdev_scan_accel_module</h2>

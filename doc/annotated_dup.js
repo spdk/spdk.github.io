@@ -50,6 +50,7 @@ var annotated_dup =
     [ "nvmf_c2h_msg", "unionnvmf__c2h__msg.html", "unionnvmf__c2h__msg" ],
     [ "nvmf_h2c_msg", "unionnvmf__h2c__msg.html", "unionnvmf__h2c__msg" ],
     [ "spdk_accel_crypto_key_create_param", "structspdk__accel__crypto__key__create__param.html", "structspdk__accel__crypto__key__create__param" ],
+    [ "spdk_accel_opts", "structspdk__accel__opts.html", "structspdk__accel__opts" ],
     [ "spdk_app_opts", "structspdk__app__opts.html", "structspdk__app__opts" ],
     [ "spdk_bdev", "structspdk__bdev.html", "structspdk__bdev" ],
     [ "spdk_bdev_alias", "structspdk__bdev__alias.html", "structspdk__bdev__alias" ],
