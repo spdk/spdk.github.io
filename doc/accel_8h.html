@@ -152,10 +152,10 @@ Functions</h2></td></tr>
 <tr class="memitem:a32a6e52025120ee79e195d39d83e9147"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="accel_8h.html#a32a6e52025120ee79e195d39d83e9147">spdk_accel_crypto_key_create</a> (const struct <a class="el" href="structspdk__accel__crypto__key__create__param.html">spdk_accel_crypto_key_create_param</a> *param)</td></tr>
 <tr class="memdesc:a32a6e52025120ee79e195d39d83e9147"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a crypto key with given parameters.  <a href="accel_8h.html#a32a6e52025120ee79e195d39d83e9147">More...</a><br /></td></tr>
 <tr class="separator:a32a6e52025120ee79e195d39d83e9147"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a74073c4f0af656c37f348aa3f7ee61d4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="accel_8h.html#a74073c4f0af656c37f348aa3f7ee61d4">spdk_accel_crypto_key_destroy</a> (struct spdk_accel_crypto_key *key)</td></tr>
+<tr class="memitem:a74073c4f0af656c37f348aa3f7ee61d4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="accel_8h.html#a74073c4f0af656c37f348aa3f7ee61d4">spdk_accel_crypto_key_destroy</a> (struct <a class="el" href="structspdk__accel__crypto__key.html">spdk_accel_crypto_key</a> *key)</td></tr>
 <tr class="memdesc:a74073c4f0af656c37f348aa3f7ee61d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy a crypto key.  <a href="accel_8h.html#a74073c4f0af656c37f348aa3f7ee61d4">More...</a><br /></td></tr>
 <tr class="separator:a74073c4f0af656c37f348aa3f7ee61d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9fc519ee5307d8ed70bf909f592b1c9d"><td class="memItemLeft" align="right" valign="top">struct spdk_accel_crypto_key *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="accel_8h.html#a9fc519ee5307d8ed70bf909f592b1c9d">spdk_accel_crypto_key_get</a> (const char *name)</td></tr>
+<tr class="memitem:a9fc519ee5307d8ed70bf909f592b1c9d"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structspdk__accel__crypto__key.html">spdk_accel_crypto_key</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="accel_8h.html#a9fc519ee5307d8ed70bf909f592b1c9d">spdk_accel_crypto_key_get</a> (const char *name)</td></tr>
 <tr class="memdesc:a9fc519ee5307d8ed70bf909f592b1c9d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find a crypto key structure by name.  <a href="accel_8h.html#a9fc519ee5307d8ed70bf909f592b1c9d">More...</a><br /></td></tr>
 <tr class="separator:a9fc519ee5307d8ed70bf909f592b1c9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8414580180688f9334f9a8e3103a6e28"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="accel_8h.html#a8414580180688f9334f9a8e3103a6e28">spdk_accel_submit_copy</a> (struct spdk_io_channel *ch, void *dst, void *src, uint64_t nbytes, int flags, <a class="el" href="accel_8h.html#a6ba836b7b128829ba185eadb2c60476a">spdk_accel_completion_cb</a> cb_fn, void *cb_arg)</td></tr>
@@ -200,15 +200,15 @@ Functions</h2></td></tr>
 <tr class="memitem:af28cbbf84a76a09ad52af0f679f923c4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="accel_8h.html#af28cbbf84a76a09ad52af0f679f923c4">spdk_accel_append_decompress</a> (struct spdk_accel_sequence **seq, struct spdk_io_channel *ch, struct iovec *dst_iovs, size_t dst_iovcnt, struct spdk_memory_domain *dst_domain, void *dst_domain_ctx, struct iovec *src_iovs, size_t src_iovcnt, struct spdk_memory_domain *src_domain, void *src_domain_ctx, int flags, <a class="el" href="accel_8h.html#abaf556b5e1b63b5237faff3952a3bb46">spdk_accel_step_cb</a> cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:af28cbbf84a76a09ad52af0f679f923c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Append a decompress operation to a sequence.  <a href="accel_8h.html#af28cbbf84a76a09ad52af0f679f923c4">More...</a><br /></td></tr>
 <tr class="separator:af28cbbf84a76a09ad52af0f679f923c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a009120c1e212f13b51b808e07d391bc8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="accel_8h.html#a009120c1e212f13b51b808e07d391bc8">spdk_accel_append_encrypt</a> (struct spdk_accel_sequence **seq, struct spdk_io_channel *ch, struct spdk_accel_crypto_key *key, struct iovec *dst_iovs, uint32_t dst_iovcnt, struct spdk_memory_domain *dst_domain, void *dst_domain_ctx, struct iovec *src_iovs, uint32_t src_iovcnt, struct spdk_memory_domain *src_domain, void *src_domain_ctx, uint64_t iv, uint32_t block_size, int flags, <a class="el" href="accel_8h.html#abaf556b5e1b63b5237faff3952a3bb46">spdk_accel_step_cb</a> cb_fn, void *cb_arg)</td></tr>
+<tr class="memitem:a009120c1e212f13b51b808e07d391bc8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="accel_8h.html#a009120c1e212f13b51b808e07d391bc8">spdk_accel_append_encrypt</a> (struct spdk_accel_sequence **seq, struct spdk_io_channel *ch, struct <a class="el" href="structspdk__accel__crypto__key.html">spdk_accel_crypto_key</a> *key, struct iovec *dst_iovs, uint32_t dst_iovcnt, struct spdk_memory_domain *dst_domain, void *dst_domain_ctx, struct iovec *src_iovs, uint32_t src_iovcnt, struct spdk_memory_domain *src_domain, void *src_domain_ctx, uint64_t iv, uint32_t block_size, int flags, <a class="el" href="accel_8h.html#abaf556b5e1b63b5237faff3952a3bb46">spdk_accel_step_cb</a> cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:a009120c1e212f13b51b808e07d391bc8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Append an encrypt operation to a sequence.  <a href="accel_8h.html#a009120c1e212f13b51b808e07d391bc8">More...</a><br /></td></tr>
 <tr class="separator:a009120c1e212f13b51b808e07d391bc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a12a6e4ce53656017f3b01f8cf98fd931"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="accel_8h.html#a12a6e4ce53656017f3b01f8cf98fd931">spdk_accel_append_decrypt</a> (struct spdk_accel_sequence **seq, struct spdk_io_channel *ch, struct spdk_accel_crypto_key *key, struct iovec *dst_iovs, uint32_t dst_iovcnt, struct spdk_memory_domain *dst_domain, void *dst_domain_ctx, struct iovec *src_iovs, uint32_t src_iovcnt, struct spdk_memory_domain *src_domain, void *src_domain_ctx, uint64_t iv, uint32_t block_size, int flags, <a class="el" href="accel_8h.html#abaf556b5e1b63b5237faff3952a3bb46">spdk_accel_step_cb</a> cb_fn, void *cb_arg)</td></tr>
+<tr class="memitem:a12a6e4ce53656017f3b01f8cf98fd931"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="accel_8h.html#a12a6e4ce53656017f3b01f8cf98fd931">spdk_accel_append_decrypt</a> (struct spdk_accel_sequence **seq, struct spdk_io_channel *ch, struct <a class="el" href="structspdk__accel__crypto__key.html">spdk_accel_crypto_key</a> *key, struct iovec *dst_iovs, uint32_t dst_iovcnt, struct spdk_memory_domain *dst_domain, void *dst_domain_ctx, struct iovec *src_iovs, uint32_t src_iovcnt, struct spdk_memory_domain *src_domain, void *src_domain_ctx, uint64_t iv, uint32_t block_size, int flags, <a class="el" href="accel_8h.html#abaf556b5e1b63b5237faff3952a3bb46">spdk_accel_step_cb</a> cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:a12a6e4ce53656017f3b01f8cf98fd931"><td class="mdescLeft">&#160;</td><td class="mdescRight">Append a decrypt operation to a sequence.  <a href="accel_8h.html#a12a6e4ce53656017f3b01f8cf98fd931">More...</a><br /></td></tr>
 <tr class="separator:a12a6e4ce53656017f3b01f8cf98fd931"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a03c51473e9f0b4882f279c89131a2b14"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="accel_8h.html#a03c51473e9f0b4882f279c89131a2b14">spdk_accel_sequence_finish</a> (struct spdk_accel_sequence *seq, <a class="el" href="accel_8h.html#a6ba836b7b128829ba185eadb2c60476a">spdk_accel_completion_cb</a> cb_fn, void *cb_arg)</td></tr>
-<tr class="memdesc:a03c51473e9f0b4882f279c89131a2b14"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finish a sequence and execute all its operations.  <a href="accel_8h.html#a03c51473e9f0b4882f279c89131a2b14">More...</a><br /></td></tr>
-<tr class="separator:a03c51473e9f0b4882f279c89131a2b14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1f3cacbac00f08f92f094243c17ad04"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="accel_8h.html#ad1f3cacbac00f08f92f094243c17ad04">spdk_accel_sequence_finish</a> (struct spdk_accel_sequence *seq, <a class="el" href="accel_8h.html#a6ba836b7b128829ba185eadb2c60476a">spdk_accel_completion_cb</a> cb_fn, void *cb_arg)</td></tr>
+<tr class="memdesc:ad1f3cacbac00f08f92f094243c17ad04"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finish a sequence and execute all its operations.  <a href="accel_8h.html#ad1f3cacbac00f08f92f094243c17ad04">More...</a><br /></td></tr>
+<tr class="separator:ad1f3cacbac00f08f92f094243c17ad04"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a543390f0413ec678c76ea7f39fc5f27d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="accel_8h.html#a543390f0413ec678c76ea7f39fc5f27d">spdk_accel_sequence_reverse</a> (struct spdk_accel_sequence *seq)</td></tr>
 <tr class="memdesc:a543390f0413ec678c76ea7f39fc5f27d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reverse a sequence, so that the last operation becomes the first and vice versa.  <a href="accel_8h.html#a543390f0413ec678c76ea7f39fc5f27d">More...</a><br /></td></tr>
 <tr class="separator:a543390f0413ec678c76ea7f39fc5f27d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -221,10 +221,10 @@ Functions</h2></td></tr>
 <tr class="memitem:a84d7b247e6eb234e84aa4d856da098fa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="accel_8h.html#a84d7b247e6eb234e84aa4d856da098fa">spdk_accel_put_buf</a> (struct spdk_io_channel *ch, void *buf, struct spdk_memory_domain *domain, void *domain_ctx)</td></tr>
 <tr class="memdesc:a84d7b247e6eb234e84aa4d856da098fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Release a buffer allocated via <code><a class="el" href="accel_8h.html#acde5803c2c3fd5f4404ab171d6820b03" title="Allocate a buffer from accel domain.">spdk_accel_get_buf()</a></code>.  <a href="accel_8h.html#a84d7b247e6eb234e84aa4d856da098fa">More...</a><br /></td></tr>
 <tr class="separator:a84d7b247e6eb234e84aa4d856da098fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afa481210cd4541e79ae4d304f119709e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="accel_8h.html#afa481210cd4541e79ae4d304f119709e">spdk_accel_submit_encrypt</a> (struct spdk_io_channel *ch, struct spdk_accel_crypto_key *key, struct iovec *dst_iovs, uint32_t dst_iovcnt, struct iovec *src_iovs, uint32_t src_iovcnt, uint64_t iv, uint32_t block_size, int flags, <a class="el" href="accel_8h.html#a6ba836b7b128829ba185eadb2c60476a">spdk_accel_completion_cb</a> cb_fn, void *cb_arg)</td></tr>
+<tr class="memitem:afa481210cd4541e79ae4d304f119709e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="accel_8h.html#afa481210cd4541e79ae4d304f119709e">spdk_accel_submit_encrypt</a> (struct spdk_io_channel *ch, struct <a class="el" href="structspdk__accel__crypto__key.html">spdk_accel_crypto_key</a> *key, struct iovec *dst_iovs, uint32_t dst_iovcnt, struct iovec *src_iovs, uint32_t src_iovcnt, uint64_t iv, uint32_t block_size, int flags, <a class="el" href="accel_8h.html#a6ba836b7b128829ba185eadb2c60476a">spdk_accel_completion_cb</a> cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:afa481210cd4541e79ae4d304f119709e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Build and submit a data encryption request.  <a href="accel_8h.html#afa481210cd4541e79ae4d304f119709e">More...</a><br /></td></tr>
 <tr class="separator:afa481210cd4541e79ae4d304f119709e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adad68f6857a598ec184c58ace776b05e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="accel_8h.html#adad68f6857a598ec184c58ace776b05e">spdk_accel_submit_decrypt</a> (struct spdk_io_channel *ch, struct spdk_accel_crypto_key *key, struct iovec *dst_iovs, uint32_t dst_iovcnt, struct iovec *src_iovs, uint32_t src_iovcnt, uint64_t iv, uint32_t block_size, int flags, <a class="el" href="accel_8h.html#a6ba836b7b128829ba185eadb2c60476a">spdk_accel_completion_cb</a> cb_fn, void *cb_arg)</td></tr>
+<tr class="memitem:adad68f6857a598ec184c58ace776b05e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="accel_8h.html#adad68f6857a598ec184c58ace776b05e">spdk_accel_submit_decrypt</a> (struct spdk_io_channel *ch, struct <a class="el" href="structspdk__accel__crypto__key.html">spdk_accel_crypto_key</a> *key, struct iovec *dst_iovs, uint32_t dst_iovcnt, struct iovec *src_iovs, uint32_t src_iovcnt, uint64_t iv, uint32_t block_size, int flags, <a class="el" href="accel_8h.html#a6ba836b7b128829ba185eadb2c60476a">spdk_accel_completion_cb</a> cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:adad68f6857a598ec184c58ace776b05e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Build and submit a data decryption request.  <a href="accel_8h.html#adad68f6857a598ec184c58ace776b05e">More...</a><br /></td></tr>
 <tr class="separator:adad68f6857a598ec184c58ace776b05e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab843fd7c6bfd2db2f2997fad376f687f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="accel_8h.html#ab843fd7c6bfd2db2f2997fad376f687f">spdk_accel_get_opc_module_name</a> (enum accel_opcode opcode, const char **module_name)</td></tr>
@@ -567,7 +567,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">struct spdk_accel_crypto_key *&#160;</td>
+          <td class="paramtype">struct <a class="el" href="structspdk__accel__crypto__key.html">spdk_accel_crypto_key</a> *&#160;</td>
           <td class="paramname"><em>key</em>, </td>
         </tr>
         <tr>
@@ -704,7 +704,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">struct spdk_accel_crypto_key *&#160;</td>
+          <td class="paramtype">struct <a class="el" href="structspdk__accel__crypto__key.html">spdk_accel_crypto_key</a> *&#160;</td>
           <td class="paramname"><em>key</em>, </td>
         </tr>
         <tr>
@@ -989,7 +989,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">int spdk_accel_crypto_key_destroy </td>
           <td>(</td>
-          <td class="paramtype">struct spdk_accel_crypto_key *&#160;</td>
+          <td class="paramtype">struct <a class="el" href="structspdk__accel__crypto__key.html">spdk_accel_crypto_key</a> *&#160;</td>
           <td class="paramname"><em>key</em></td><td>)</td>
           <td></td>
         </tr>
@@ -1014,7 +1014,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">struct spdk_accel_crypto_key* spdk_accel_crypto_key_get </td>
+          <td class="memname">struct <a class="el" href="structspdk__accel__crypto__key.html">spdk_accel_crypto_key</a>* spdk_accel_crypto_key_get </td>
           <td>(</td>
           <td class="paramtype">const char *&#160;</td>
           <td class="paramname"><em>name</em></td><td>)</td>
@@ -1338,14 +1338,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a03c51473e9f0b4882f279c89131a2b14"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a03c51473e9f0b4882f279c89131a2b14">&#9670;&nbsp;</a></span>spdk_accel_sequence_finish()</h2>
+<a id="ad1f3cacbac00f08f92f094243c17ad04"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad1f3cacbac00f08f92f094243c17ad04">&#9670;&nbsp;</a></span>spdk_accel_sequence_finish()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int spdk_accel_sequence_finish </td>
+          <td class="memname">void spdk_accel_sequence_finish </td>
           <td>(</td>
           <td class="paramtype">struct spdk_accel_sequence *&#160;</td>
           <td class="paramname"><em>seq</em>, </td>
@@ -1376,11 +1376,10 @@ Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">seq</td><td>Sequence to finish. </td></tr>
     <tr><td class="paramname">cb_fn</td><td>Completion callback to be executed once all operations are executed. </td></tr>
-    <tr><td class="paramname">cb_arg</td><td>Argument to be passed to <code>cb_fn</code>.</td></tr>
+    <tr><td class="paramname">cb_arg</td><td>Argument to be passed to <code>cb_fn</code>. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>0 on success, negative errno otherwise. </dd></dl>
 
 </div>
 </div>
@@ -2118,7 +2117,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">struct spdk_accel_crypto_key *&#160;</td>
+          <td class="paramtype">struct <a class="el" href="structspdk__accel__crypto__key.html">spdk_accel_crypto_key</a> *&#160;</td>
           <td class="paramname"><em>key</em>, </td>
         </tr>
         <tr>
@@ -2300,7 +2299,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">struct spdk_accel_crypto_key *&#160;</td>
+          <td class="paramtype">struct <a class="el" href="structspdk__accel__crypto__key.html">spdk_accel_crypto_key</a> *&#160;</td>
           <td class="paramname"><em>key</em>, </td>
         </tr>
         <tr>

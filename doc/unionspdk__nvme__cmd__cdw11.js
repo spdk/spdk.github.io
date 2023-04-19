@@ -2,12 +2,12 @@ var unionspdk__nvme__cmd__cdw11 =
 [
     [ "ad", "unionspdk__nvme__cmd__cdw11.html#ada983746f27d872191fdcaf6f6e5a2a4", null ],
     [ "cqid", "unionspdk__nvme__cmd__cdw11.html#a6b7a70c204fcb275456f9fe71afe36e7", null ],
-    [ "create_io_cq", "unionspdk__nvme__cmd__cdw11.html#aaddf4115f086495588f19f8ddc3d7648", null ],
-    [ "create_io_sq", "unionspdk__nvme__cmd__cdw11.html#aa45896c6548b5e711d3d9464752353e1", null ],
+    [ "create_io_cq", "unionspdk__nvme__cmd__cdw11.html#adeddb65a3eb9a522c19a3d922c5ff2d9", null ],
+    [ "create_io_sq", "unionspdk__nvme__cmd__cdw11.html#ab43d5ffa231e532dbf8faaf80c22f1d7", null ],
     [ "csi", "unionspdk__nvme__cmd__cdw11.html#ab9e0b50402cd5461bd71c2acd5efb4cb", null ],
-    [ "directive", "unionspdk__nvme__cmd__cdw11.html#ab6339128dbbf3cd3776a3a9a19e3737f", null ],
+    [ "directive", "unionspdk__nvme__cmd__cdw11.html#a800e93b892f6fd749157bcf319421d8d", null ],
     [ "doper", "unionspdk__nvme__cmd__cdw11.html#af7d10e1ec7293bee64b5cef45680c148", null ],
-    [ "dsm", "unionspdk__nvme__cmd__cdw11.html#af6d33b3f84ae0db6c5836f035cf38348", null ],
+    [ "dsm", "unionspdk__nvme__cmd__cdw11.html#a48f7c53e7acc40a3e0300d60693092ac", null ],
     [ "dspec", "unionspdk__nvme__cmd__cdw11.html#a5ce7aeab309bc3df5c80d3deaffdfe62", null ],
     [ "dtype", "unionspdk__nvme__cmd__cdw11.html#a6317406f697e202fcca99cb053993e4e", null ],
     [ "eds", "unionspdk__nvme__cmd__cdw11.html#a5937710845259eec7bb11ae1f47b2d1d", null ],
@@ -28,8 +28,8 @@ var unionspdk__nvme__cmd__cdw11 =
     [ "feat_temp_threshold", "unionspdk__nvme__cmd__cdw11.html#a852b62f23c3feaabe7e947e448987025", null ],
     [ "feat_volatile_write_cache", "unionspdk__nvme__cmd__cdw11.html#ac0876e633e55f35d3149cfc444954d62", null ],
     [ "feat_write_atomicity", "unionspdk__nvme__cmd__cdw11.html#a3471cd37cd73a3df1902fa5f8ccfccde", null ],
-    [ "get_log_page", "unionspdk__nvme__cmd__cdw11.html#a62b4994c2d9121be46851e29c784b86e", null ],
-    [ "identify", "unionspdk__nvme__cmd__cdw11.html#a679dc2b5523f0b33e26c2dae72d65ebf", null ],
+    [ "get_log_page", "unionspdk__nvme__cmd__cdw11.html#ad593a326e7fd1ef528cd1c54ac0b4d6d", null ],
+    [ "identify", "unionspdk__nvme__cmd__cdw11.html#a8ab7c683c0f8dcac9d2518468b89e53d", null ],
     [ "idr", "unionspdk__nvme__cmd__cdw11.html#ad9c6e51adda86abdba24be8a0a3b24ae", null ],
     [ "idw", "unionspdk__nvme__cmd__cdw11.html#a7c274ea6e39ce61b9e38d901198f9f7f", null ],
     [ "ien", "unionspdk__nvme__cmd__cdw11.html#a78a81a5b9cba51c3cb59ad7680930bea", null ],
@@ -41,5 +41,5 @@ var unionspdk__nvme__cmd__cdw11 =
     [ "qprio", "unionspdk__nvme__cmd__cdw11.html#a7f7dd213e501a467bfd5157e9b805fed", null ],
     [ "raw", "unionspdk__nvme__cmd__cdw11.html#a5f9e7f1f709ead09c97559757fc6112e", null ],
     [ "reserved", "unionspdk__nvme__cmd__cdw11.html#a3a614e1c374c333d8a8fb4683684250b", null ],
-    [ "resv_report", "unionspdk__nvme__cmd__cdw11.html#abb99a6b1550daffff7a91e24524d9580", null ]
+    [ "resv_report", "unionspdk__nvme__cmd__cdw11.html#a2e6fa7e87408505a7f00c8cf9e204092", null ]
 ];

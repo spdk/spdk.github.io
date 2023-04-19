@@ -1,0 +1,7 @@
+<map id="spdk_accel_task" name="spdk_accel_task">
+<area shape="rect" id="node1" title=" " alt="" coords="100,213,229,240"/>
+<area shape="rect" id="node2" href="$structspdk__accel__bounce__buffer.html" title="Describes user&#39;s buffers in remote memory domains in case a module doesn&#39;t support memory domains and..." alt="" coords="5,109,199,136"/>
+<area shape="rect" id="node3" href="$structspdk__accel__crypto__key.html" title=" " alt="" coords="223,109,395,136"/>
+<area shape="rect" id="node4" href="$structspdk__accel__crypto__key__create__param.html" title=" " alt="" coords="125,5,297,47"/>
+<area shape="rect" id="node5" href="$structspdk__accel__module__if.html" title=" " alt="" coords="321,13,488,39"/>
+</map>

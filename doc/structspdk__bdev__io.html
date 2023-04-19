@@ -146,166 +146,166 @@ struct iovec&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 struct iovec&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev__io.html#acca8d1ce5a7a5e7a5544af069bab7dc9">child_iov</a> [SPDK_BDEV_IO_NUM_CHILD_IOV]</td></tr>
 <tr class="memdesc:acca8d1ce5a7a5e7a5544af069bab7dc9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Array of iovecs used for I/O splitting. <br /></td></tr>
 <tr class="separator:acca8d1ce5a7a5e7a5544af069bab7dc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa02a46d03306a27a61a946c665a70b75"><td class="memItemLeft" ><a id="aa02a46d03306a27a61a946c665a70b75"></a>
+<tr class="memitem:a46d8da5d79a86d6f397d9f70150e1ccc"><td class="memItemLeft" ><a id="a46d8da5d79a86d6f397d9f70150e1ccc"></a>
 union {</td></tr>
-<tr class="memitem:a1880cf225cbf787cc33674124ea92c4b"><td class="memItemLeft" >
+<tr class="memitem:a14a2fcd732e2eb6bbad8cd8a82fdaa34"><td class="memItemLeft" >
 &#160;&#160;&#160;struct {</td></tr>
-<tr class="memitem:ae26b164b2d88fc332af2b27fbd5becdf"><td class="memItemLeft" >
+<tr class="memitem:ac553d47783c78a7d1d7cc51441cd6d8c"><td class="memItemLeft" >
 &#160;&#160;&#160;&#160;&#160;&#160;struct iovec *&#160;&#160;&#160;<a class="el" href="structspdk__bdev__io.html#ab2d3a6a004554c66434a31243030b2da">iovs</a></td></tr>
-<tr class="memdesc:ae26b164b2d88fc332af2b27fbd5becdf"><td class="mdescLeft">&#160;</td><td class="mdescRight">For SG buffer cases, array of iovecs to transfer. <br /></td></tr>
-<tr class="separator:ae26b164b2d88fc332af2b27fbd5becdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a425495e59ceb8d8d41358359c4f2f8d1"><td class="memItemLeft" >
+<tr class="memdesc:ac553d47783c78a7d1d7cc51441cd6d8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">For SG buffer cases, array of iovecs to transfer. <br /></td></tr>
+<tr class="separator:ac553d47783c78a7d1d7cc51441cd6d8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7054621e311fe09f630867077f0b51af"><td class="memItemLeft" >
 &#160;&#160;&#160;&#160;&#160;&#160;int&#160;&#160;&#160;<a class="el" href="structspdk__bdev__io.html#aa9024a5714c4c242271cdcbb34b45a91">iovcnt</a></td></tr>
-<tr class="memdesc:a425495e59ceb8d8d41358359c4f2f8d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">For SG buffer cases, number of iovecs in iovec array. <br /></td></tr>
-<tr class="separator:a425495e59ceb8d8d41358359c4f2f8d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8863b3c092a5fce107609cc436829274"><td class="memItemLeft" >
+<tr class="memdesc:a7054621e311fe09f630867077f0b51af"><td class="mdescLeft">&#160;</td><td class="mdescRight">For SG buffer cases, number of iovecs in iovec array. <br /></td></tr>
+<tr class="separator:a7054621e311fe09f630867077f0b51af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab508511073d92fe2e6aa49e20dc5c527"><td class="memItemLeft" >
 &#160;&#160;&#160;&#160;&#160;&#160;struct iovec *&#160;&#160;&#160;<a class="el" href="structspdk__bdev__io.html#a2a3448e66dcba2deaccc91d37ad89db1">fused_iovs</a></td></tr>
-<tr class="memdesc:a8863b3c092a5fce107609cc436829274"><td class="mdescLeft">&#160;</td><td class="mdescRight">For fused operations such as COMPARE_AND_WRITE, array of iovecs for the second operation. <br /></td></tr>
-<tr class="separator:a8863b3c092a5fce107609cc436829274"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1c903d34857f3071c630c635fee921c6"><td class="memItemLeft" >
+<tr class="memdesc:ab508511073d92fe2e6aa49e20dc5c527"><td class="mdescLeft">&#160;</td><td class="mdescRight">For fused operations such as COMPARE_AND_WRITE, array of iovecs for the second operation. <br /></td></tr>
+<tr class="separator:ab508511073d92fe2e6aa49e20dc5c527"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa623f07b17db61e42d62790fba3091e1"><td class="memItemLeft" >
 &#160;&#160;&#160;&#160;&#160;&#160;int&#160;&#160;&#160;<a class="el" href="structspdk__bdev__io.html#aec576e7766af0ee744ced101de905ff5">fused_iovcnt</a></td></tr>
-<tr class="memdesc:a1c903d34857f3071c630c635fee921c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of iovecs in fused_iovs. <br /></td></tr>
-<tr class="separator:a1c903d34857f3071c630c635fee921c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5846d0ce75390dcd6163676a0f09ea4a"><td class="memItemLeft" >
+<tr class="memdesc:aa623f07b17db61e42d62790fba3091e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of iovecs in fused_iovs. <br /></td></tr>
+<tr class="separator:aa623f07b17db61e42d62790fba3091e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f804a7cd550a5bf6a283a7afb959691"><td class="memItemLeft" >
 &#160;&#160;&#160;&#160;&#160;&#160;void *&#160;&#160;&#160;<b>md_buf</b></td></tr>
-<tr class="separator:a5846d0ce75390dcd6163676a0f09ea4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6d8e36e1d2fa0b710b4ce7274efece6b"><td class="memItemLeft" >
+<tr class="separator:a1f804a7cd550a5bf6a283a7afb959691"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad376f7d421539052633341bb1c49db5b"><td class="memItemLeft" >
 &#160;&#160;&#160;&#160;&#160;&#160;uint64_t&#160;&#160;&#160;<a class="el" href="structspdk__bdev__io.html#afafe443c58056c9c246fd3c32eaa4ece">num_blocks</a></td></tr>
-<tr class="memdesc:a6d8e36e1d2fa0b710b4ce7274efece6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Total size of data to be transferred. <br /></td></tr>
-<tr class="separator:a6d8e36e1d2fa0b710b4ce7274efece6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac731cbbd770fe21ec22a62664051aae9"><td class="memItemLeft" >
+<tr class="memdesc:ad376f7d421539052633341bb1c49db5b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Total size of data to be transferred. <br /></td></tr>
+<tr class="separator:ad376f7d421539052633341bb1c49db5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc629e176f383c96a3ed88d57876e545"><td class="memItemLeft" >
 &#160;&#160;&#160;&#160;&#160;&#160;uint64_t&#160;&#160;&#160;<a class="el" href="structspdk__bdev__io.html#ab7ce7385dd41efaffdc0ca4dea2df6a8">offset_blocks</a></td></tr>
-<tr class="memdesc:ac731cbbd770fe21ec22a62664051aae9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starting offset (in blocks) of the bdev for this I/O. <br /></td></tr>
-<tr class="separator:ac731cbbd770fe21ec22a62664051aae9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a61a00965b77f2c9bf1281f7f0b0b29db"><td class="memItemLeft" >
+<tr class="memdesc:adc629e176f383c96a3ed88d57876e545"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starting offset (in blocks) of the bdev for this I/O. <br /></td></tr>
+<tr class="separator:adc629e176f383c96a3ed88d57876e545"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa84ea19bf92275e368ca4dc6777e01eb"><td class="memItemLeft" >
 &#160;&#160;&#160;&#160;&#160;&#160;struct spdk_memory_domain *&#160;&#160;&#160;<a class="el" href="structspdk__bdev__io.html#a7bf490b3056972c523ee672ee82b208e">memory_domain</a></td></tr>
-<tr class="memdesc:a61a00965b77f2c9bf1281f7f0b0b29db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Memory domain and its context to be used by bdev modules. <br /></td></tr>
-<tr class="separator:a61a00965b77f2c9bf1281f7f0b0b29db"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1f0b48c02df773e60ae525cb527ffcde"><td class="memItemLeft" >
+<tr class="memdesc:aa84ea19bf92275e368ca4dc6777e01eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Memory domain and its context to be used by bdev modules. <br /></td></tr>
+<tr class="separator:aa84ea19bf92275e368ca4dc6777e01eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4579ec2b6ee18ee3c0d896c403dd865a"><td class="memItemLeft" >
 &#160;&#160;&#160;&#160;&#160;&#160;void *&#160;&#160;&#160;<b>memory_domain_ctx</b></td></tr>
-<tr class="separator:a1f0b48c02df773e60ae525cb527ffcde"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad77db6fd60d98027aee2c0bcff4f623b"><td class="memItemLeft" >
+<tr class="separator:a4579ec2b6ee18ee3c0d896c403dd865a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92bc5ce0b09cf8838a3b8ce21995271c"><td class="memItemLeft" >
 &#160;&#160;&#160;&#160;&#160;&#160;struct spdk_accel_sequence *&#160;&#160;&#160;<b>accel_sequence</b></td></tr>
-<tr class="separator:ad77db6fd60d98027aee2c0bcff4f623b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a312816b884344f015e509fef18d6b7d0"><td class="memItemLeft" >
+<tr class="separator:a92bc5ce0b09cf8838a3b8ce21995271c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c0a7a4fbf87d739a5b839395ae4aca8"><td class="memItemLeft" >
 &#160;&#160;&#160;&#160;&#160;&#160;<a class="el" href="bdev_8h.html#a0c5602dfd313f90032dd91683b9663e3">spdk_bdev_io_completion_cb</a>&#160;&#160;&#160;<a class="el" href="structspdk__bdev__io.html#a35905e31d0aa54cd00dbb34e7d56656a">stored_user_cb</a></td></tr>
-<tr class="memdesc:a312816b884344f015e509fef18d6b7d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">stored user callback in case we split the I/O and use a temporary callback <br /></td></tr>
-<tr class="separator:a312816b884344f015e509fef18d6b7d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a71d325a973dcde2d4e73f275b9736c23"><td class="memItemLeft" >
+<tr class="memdesc:a0c0a7a4fbf87d739a5b839395ae4aca8"><td class="mdescLeft">&#160;</td><td class="mdescRight">stored user callback in case we split the I/O and use a temporary callback <br /></td></tr>
+<tr class="separator:a0c0a7a4fbf87d739a5b839395ae4aca8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87a2fdf21f25bb9384bed6a427fdf792"><td class="memItemLeft" >
 &#160;&#160;&#160;&#160;&#160;&#160;uint64_t&#160;&#160;&#160;<a class="el" href="structspdk__bdev__io.html#a0726c74c711cb6551f6f8c9a33100af3">split_remaining_num_blocks</a></td></tr>
-<tr class="memdesc:a71d325a973dcde2d4e73f275b9736c23"><td class="mdescLeft">&#160;</td><td class="mdescRight">number of blocks remaining in a split i/o <br /></td></tr>
-<tr class="separator:a71d325a973dcde2d4e73f275b9736c23"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a37bc5ca6c4ffd564ec353ae5a158bf58"><td class="memItemLeft" >
+<tr class="memdesc:a87a2fdf21f25bb9384bed6a427fdf792"><td class="mdescLeft">&#160;</td><td class="mdescRight">number of blocks remaining in a split i/o <br /></td></tr>
+<tr class="separator:a87a2fdf21f25bb9384bed6a427fdf792"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd73047a32b481a21a7515b849de1f90"><td class="memItemLeft" >
 &#160;&#160;&#160;&#160;&#160;&#160;uint64_t&#160;&#160;&#160;<a class="el" href="structspdk__bdev__io.html#ac721975c3205db6df200604c5a2b5243">split_current_offset_blocks</a></td></tr>
-<tr class="memdesc:a37bc5ca6c4ffd564ec353ae5a158bf58"><td class="mdescLeft">&#160;</td><td class="mdescRight">current offset of the split I/O in the bdev <br /></td></tr>
-<tr class="separator:a37bc5ca6c4ffd564ec353ae5a158bf58"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a305c1aa768ae10e5c960f3e0caf80fe2"><td class="memItemLeft" >
+<tr class="memdesc:acd73047a32b481a21a7515b849de1f90"><td class="mdescLeft">&#160;</td><td class="mdescRight">current offset of the split I/O in the bdev <br /></td></tr>
+<tr class="separator:acd73047a32b481a21a7515b849de1f90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87a7150f915fc9d89a256282710bb660"><td class="memItemLeft" >
 &#160;&#160;&#160;&#160;&#160;&#160;uint32_t&#160;&#160;&#160;<a class="el" href="structspdk__bdev__io.html#ab5bef16ff6747eecb5d8d40f2a4c295c">split_outstanding</a></td></tr>
-<tr class="memdesc:a305c1aa768ae10e5c960f3e0caf80fe2"><td class="mdescLeft">&#160;</td><td class="mdescRight">count of outstanding batched split I/Os <br /></td></tr>
-<tr class="separator:a305c1aa768ae10e5c960f3e0caf80fe2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac7f7cce05fc6aa25a69856b8a2d9a4e0"><td class="memItemLeft" >
+<tr class="memdesc:a87a7150f915fc9d89a256282710bb660"><td class="mdescLeft">&#160;</td><td class="mdescRight">count of outstanding batched split I/Os <br /></td></tr>
+<tr class="separator:a87a7150f915fc9d89a256282710bb660"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe9d96d1d6653098b00dbf300ae564ed"><td class="memItemLeft" >
 &#160;&#160;&#160;&#160;&#160;&#160;struct {</td></tr>
-<tr class="memitem:ad3d8151082934620404084bb07bb568f"><td class="memItemLeft" >
+<tr class="memitem:a305f19bf9291ec240badec168c53b978"><td class="memItemLeft" >
 &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;uint8_t&#160;&#160;&#160;<a class="el" href="structspdk__bdev__io.html#acb8e8c688f321a1655a7db6caffa060e">populate</a>: 1</td></tr>
-<tr class="memdesc:ad3d8151082934620404084bb07bb568f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether the buffer should be populated with the real data. <br /></td></tr>
-<tr class="separator:ad3d8151082934620404084bb07bb568f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a708752a4244e7c31d47fc2d3593163b2"><td class="memItemLeft" >
+<tr class="memdesc:a305f19bf9291ec240badec168c53b978"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether the buffer should be populated with the real data. <br /></td></tr>
+<tr class="separator:a305f19bf9291ec240badec168c53b978"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1d1089128976202f7a3542259770b63"><td class="memItemLeft" >
 &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;uint8_t&#160;&#160;&#160;<a class="el" href="structspdk__bdev__io.html#ace66bdb63c00a8549d466de17f553064">commit</a>: 1</td></tr>
-<tr class="memdesc:a708752a4244e7c31d47fc2d3593163b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether the buffer should be committed back to disk. <br /></td></tr>
-<tr class="separator:a708752a4244e7c31d47fc2d3593163b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a509d949d176206f805034f02b2165875"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;uint8_t&#160;&#160;&#160;<a class="el" href="structspdk__bdev__io.html#a6b0eb1f7b0c97ffd7a8c7a11955f7eef">start</a>: 1</td></tr>
-<tr class="memdesc:a509d949d176206f805034f02b2165875"><td class="mdescLeft">&#160;</td><td class="mdescRight">True if this request is in the 'start' phase of zcopy.  <a href="structspdk__bdev__io_1_1_0d0_1_1_0d1_1_1_0d6.html#a509d949d176206f805034f02b2165875">More...</a><br /></td></tr>
-<tr class="separator:a509d949d176206f805034f02b2165875"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac7f7cce05fc6aa25a69856b8a2d9a4e0"><td class="memItemLeft" valign="top">&#160;&#160;&#160;&#160;&#160;&#160;}&#160;&#160;&#160;<b>zcopy</b></td></tr>
-<tr class="separator:ac7f7cce05fc6aa25a69856b8a2d9a4e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a63bd1c57c229a80c11b4b0f3f8e4021b"><td class="memItemLeft" >
+<tr class="memdesc:aa1d1089128976202f7a3542259770b63"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether the buffer should be committed back to disk. <br /></td></tr>
+<tr class="separator:aa1d1089128976202f7a3542259770b63"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a061a0b619f617eec94fa75194251ed29"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;uint8_t&#160;&#160;&#160;<a class="el" href="structspdk__bdev__io.html#a6b0eb1f7b0c97ffd7a8c7a11955f7eef">start</a>: 1</td></tr>
+<tr class="memdesc:a061a0b619f617eec94fa75194251ed29"><td class="mdescLeft">&#160;</td><td class="mdescRight">True if this request is in the 'start' phase of zcopy.  <a href="structspdk__bdev__io_1_1_0d14_1_1_0d15_1_1_0d20.html#a061a0b619f617eec94fa75194251ed29">More...</a><br /></td></tr>
+<tr class="separator:a061a0b619f617eec94fa75194251ed29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe9d96d1d6653098b00dbf300ae564ed"><td class="memItemLeft" valign="top">&#160;&#160;&#160;&#160;&#160;&#160;}&#160;&#160;&#160;<b>zcopy</b></td></tr>
+<tr class="separator:afe9d96d1d6653098b00dbf300ae564ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8cd0368577b61c2f7692ea887e6f7e8"><td class="memItemLeft" >
 &#160;&#160;&#160;&#160;&#160;&#160;struct {</td></tr>
-<tr class="memitem:a175dfcc4731c4244acdc259c06d02f4b"><td class="memItemLeft" >
+<tr class="memitem:aa20a003545ce8ae2946bc25905a145fa"><td class="memItemLeft" >
 &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;void *&#160;&#160;&#160;<a class="el" href="structspdk__bdev__io.html#ac70f00f4fb59c7d646dcfd6d97134a75">bio_cb_arg</a></td></tr>
-<tr class="memdesc:a175dfcc4731c4244acdc259c06d02f4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">The callback argument for the outstanding request which this abort attempts to cancel. <br /></td></tr>
-<tr class="separator:a175dfcc4731c4244acdc259c06d02f4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a63bd1c57c229a80c11b4b0f3f8e4021b"><td class="memItemLeft" valign="top">&#160;&#160;&#160;&#160;&#160;&#160;}&#160;&#160;&#160;<b>abort</b></td></tr>
-<tr class="separator:a63bd1c57c229a80c11b4b0f3f8e4021b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a221ff78202e9ca5bfe36523f5767183f"><td class="memItemLeft" >
+<tr class="memdesc:aa20a003545ce8ae2946bc25905a145fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">The callback argument for the outstanding request which this abort attempts to cancel. <br /></td></tr>
+<tr class="separator:aa20a003545ce8ae2946bc25905a145fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8cd0368577b61c2f7692ea887e6f7e8"><td class="memItemLeft" valign="top">&#160;&#160;&#160;&#160;&#160;&#160;}&#160;&#160;&#160;<b>abort</b></td></tr>
+<tr class="separator:ae8cd0368577b61c2f7692ea887e6f7e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aedbda645886362bdb7bcda1e4b5b6a3c"><td class="memItemLeft" >
 &#160;&#160;&#160;&#160;&#160;&#160;struct {</td></tr>
-<tr class="memitem:ace1fc5b66e3af6eb61927429d1dede34"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;uint64_t&#160;&#160;&#160;<a class="el" href="structspdk__bdev__io.html#ac36ecea8bcf4d82a2cd8ced099c6d41b">offset</a></td></tr>
-<tr class="memdesc:ace1fc5b66e3af6eb61927429d1dede34"><td class="mdescLeft">&#160;</td><td class="mdescRight">The offset of next data/hole.  <a href="structspdk__bdev__io_1_1_0d0_1_1_0d1_1_1_0d8.html#ace1fc5b66e3af6eb61927429d1dede34">More...</a><br /></td></tr>
-<tr class="separator:ace1fc5b66e3af6eb61927429d1dede34"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a221ff78202e9ca5bfe36523f5767183f"><td class="memItemLeft" valign="top">&#160;&#160;&#160;&#160;&#160;&#160;}&#160;&#160;&#160;<b>seek</b></td></tr>
-<tr class="separator:a221ff78202e9ca5bfe36523f5767183f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5b4d9449721426c11c9807f8c33711a2"><td class="memItemLeft" >
+<tr class="memitem:a1e3bc33ee280c27ce0026682e1fb8e02"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;uint64_t&#160;&#160;&#160;<a class="el" href="structspdk__bdev__io.html#ac36ecea8bcf4d82a2cd8ced099c6d41b">offset</a></td></tr>
+<tr class="memdesc:a1e3bc33ee280c27ce0026682e1fb8e02"><td class="mdescLeft">&#160;</td><td class="mdescRight">The offset of next data/hole.  <a href="structspdk__bdev__io_1_1_0d14_1_1_0d15_1_1_0d22.html#a1e3bc33ee280c27ce0026682e1fb8e02">More...</a><br /></td></tr>
+<tr class="separator:a1e3bc33ee280c27ce0026682e1fb8e02"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aedbda645886362bdb7bcda1e4b5b6a3c"><td class="memItemLeft" valign="top">&#160;&#160;&#160;&#160;&#160;&#160;}&#160;&#160;&#160;<b>seek</b></td></tr>
+<tr class="separator:aedbda645886362bdb7bcda1e4b5b6a3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad13ea888fd868d89471e44d814e45a13"><td class="memItemLeft" >
 &#160;&#160;&#160;&#160;&#160;&#160;struct {</td></tr>
-<tr class="memitem:a56175e5159e3e3f96fa8eeeb5aac630d"><td class="memItemLeft" >
+<tr class="memitem:abaa77aaf1ac225f6be3c233727b95945"><td class="memItemLeft" >
 &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;uint64_t&#160;&#160;&#160;<a class="el" href="structspdk__bdev__io.html#af1e959f612aebd2cc18a9e93f14ff717">src_offset_blocks</a></td></tr>
-<tr class="memdesc:a56175e5159e3e3f96fa8eeeb5aac630d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starting source offset (in blocks) of the bdev for copy I/O. <br /></td></tr>
-<tr class="separator:a56175e5159e3e3f96fa8eeeb5aac630d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5b4d9449721426c11c9807f8c33711a2"><td class="memItemLeft" valign="top">&#160;&#160;&#160;&#160;&#160;&#160;}&#160;&#160;&#160;<b>copy</b></td></tr>
-<tr class="separator:a5b4d9449721426c11c9807f8c33711a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1880cf225cbf787cc33674124ea92c4b"><td class="memItemLeft" valign="top">&#160;&#160;&#160;}&#160;&#160;&#160;<b>bdev</b></td></tr>
-<tr class="separator:a1880cf225cbf787cc33674124ea92c4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa1866a5bfe8b5260ccfbd51814add86f"><td class="memItemLeft" >
+<tr class="memdesc:abaa77aaf1ac225f6be3c233727b95945"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starting source offset (in blocks) of the bdev for copy I/O. <br /></td></tr>
+<tr class="separator:abaa77aaf1ac225f6be3c233727b95945"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad13ea888fd868d89471e44d814e45a13"><td class="memItemLeft" valign="top">&#160;&#160;&#160;&#160;&#160;&#160;}&#160;&#160;&#160;<b>copy</b></td></tr>
+<tr class="separator:ad13ea888fd868d89471e44d814e45a13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14a2fcd732e2eb6bbad8cd8a82fdaa34"><td class="memItemLeft" valign="top">&#160;&#160;&#160;}&#160;&#160;&#160;<b>bdev</b></td></tr>
+<tr class="separator:a14a2fcd732e2eb6bbad8cd8a82fdaa34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af99663da3bf6f7c0910e84be51f52e62"><td class="memItemLeft" >
 &#160;&#160;&#160;struct {</td></tr>
-<tr class="memitem:ae3d16ed976208504f5c029a4d705edde"><td class="memItemLeft" >
+<tr class="memitem:a501537775a84aa0abea38bbd14f1c1cb"><td class="memItemLeft" >
 &#160;&#160;&#160;&#160;&#160;&#160;struct spdk_io_channel *&#160;&#160;&#160;<a class="el" href="structspdk__bdev__io.html#ae513a78b2095fbd1d0674fa11d26ef2b">ch_ref</a></td></tr>
-<tr class="memdesc:ae3d16ed976208504f5c029a4d705edde"><td class="mdescLeft">&#160;</td><td class="mdescRight">Channel reference held while messages for this reset are in progress. <br /></td></tr>
-<tr class="separator:ae3d16ed976208504f5c029a4d705edde"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a522b9c5a122978beb3757b7b702b0d87"><td class="memItemLeft" >
+<tr class="memdesc:a501537775a84aa0abea38bbd14f1c1cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Channel reference held while messages for this reset are in progress. <br /></td></tr>
+<tr class="separator:a501537775a84aa0abea38bbd14f1c1cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e16a61022fbdd85f7e2554c2f97cb6c"><td class="memItemLeft" >
 &#160;&#160;&#160;&#160;&#160;&#160;struct {</td></tr>
-<tr class="memitem:a70057ca929c8cd295c5e094d77328264"><td class="memItemLeft" >
+<tr class="memitem:a91fdc4e2170db0175110cbaf9d9cf338"><td class="memItemLeft" >
 &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;struct spdk_poller *&#160;&#160;&#160;<b>poller</b></td></tr>
-<tr class="separator:a70057ca929c8cd295c5e094d77328264"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9355a72026fa889fac74f7f9fd61fdbe"><td class="memItemLeft" >
+<tr class="separator:a91fdc4e2170db0175110cbaf9d9cf338"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64cf825b7fe7aeb83b74b1af4fb70ff8"><td class="memItemLeft" >
 &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;uint64_t&#160;&#160;&#160;<b>stop_time_tsc</b></td></tr>
-<tr class="separator:a9355a72026fa889fac74f7f9fd61fdbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a522b9c5a122978beb3757b7b702b0d87"><td class="memItemLeft" valign="top">&#160;&#160;&#160;&#160;&#160;&#160;}&#160;&#160;&#160;<b>wait_poller</b></td></tr>
-<tr class="separator:a522b9c5a122978beb3757b7b702b0d87"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa1866a5bfe8b5260ccfbd51814add86f"><td class="memItemLeft" valign="top">&#160;&#160;&#160;}&#160;&#160;&#160;<b>reset</b></td></tr>
-<tr class="separator:aa1866a5bfe8b5260ccfbd51814add86f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad873ba82661a4ad0df3088b964baa568"><td class="memItemLeft" >
+<tr class="separator:a64cf825b7fe7aeb83b74b1af4fb70ff8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e16a61022fbdd85f7e2554c2f97cb6c"><td class="memItemLeft" valign="top">&#160;&#160;&#160;&#160;&#160;&#160;}&#160;&#160;&#160;<b>wait_poller</b></td></tr>
+<tr class="separator:a6e16a61022fbdd85f7e2554c2f97cb6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af99663da3bf6f7c0910e84be51f52e62"><td class="memItemLeft" valign="top">&#160;&#160;&#160;}&#160;&#160;&#160;<b>reset</b></td></tr>
+<tr class="separator:af99663da3bf6f7c0910e84be51f52e62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad80938136c8a930470f7246bfa83c0e2"><td class="memItemLeft" >
 &#160;&#160;&#160;struct {</td></tr>
-<tr class="memitem:a80569e8d908adc01128ddb68f6940073"><td class="memItemLeft" >
+<tr class="memitem:a33761bcde8c2970bd2a841ee0d6376b2"><td class="memItemLeft" >
 &#160;&#160;&#160;&#160;&#160;&#160;struct <a class="el" href="structspdk__bdev__io.html">spdk_bdev_io</a> *&#160;&#160;&#160;<a class="el" href="structspdk__bdev__io.html#a56b77cacd3d1ac83d081fec94b74e03a">bio_to_abort</a></td></tr>
-<tr class="memdesc:a80569e8d908adc01128ddb68f6940073"><td class="mdescLeft">&#160;</td><td class="mdescRight">The outstanding request matching bio_cb_arg which this abort attempts to cancel. <br /></td></tr>
-<tr class="separator:a80569e8d908adc01128ddb68f6940073"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad873ba82661a4ad0df3088b964baa568"><td class="memItemLeft" valign="top">&#160;&#160;&#160;}&#160;&#160;&#160;<b>abort</b></td></tr>
-<tr class="separator:ad873ba82661a4ad0df3088b964baa568"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:add8d99756c687ccb482374495d64c7c2"><td class="memItemLeft" >
+<tr class="memdesc:a33761bcde8c2970bd2a841ee0d6376b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">The outstanding request matching bio_cb_arg which this abort attempts to cancel. <br /></td></tr>
+<tr class="separator:a33761bcde8c2970bd2a841ee0d6376b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad80938136c8a930470f7246bfa83c0e2"><td class="memItemLeft" valign="top">&#160;&#160;&#160;}&#160;&#160;&#160;<b>abort</b></td></tr>
+<tr class="separator:ad80938136c8a930470f7246bfa83c0e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59f08f5f44ebef9f71a2a3a6a0ac61e0"><td class="memItemLeft" >
 &#160;&#160;&#160;struct {</td></tr>
-<tr class="memitem:a924f5a8bcf1a9854025fed6255cf4270"><td class="memItemLeft" >
+<tr class="memitem:a39cad04e6a2d07ae9f0557969270aba4"><td class="memItemLeft" >
 &#160;&#160;&#160;&#160;&#160;&#160;struct <a class="el" href="structspdk__nvme__cmd.html">spdk_nvme_cmd</a>&#160;&#160;&#160;<b>cmd</b></td></tr>
-<tr class="separator:a924f5a8bcf1a9854025fed6255cf4270"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a842d9f76e031502f91966784842034d6"><td class="memItemLeft" >
+<tr class="separator:a39cad04e6a2d07ae9f0557969270aba4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac36e76856c967f968fc89ed5ceac0250"><td class="memItemLeft" >
 &#160;&#160;&#160;&#160;&#160;&#160;void *&#160;&#160;&#160;<b>buf</b></td></tr>
-<tr class="separator:a842d9f76e031502f91966784842034d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a58ab39af9ba0bc5a4b94a8ef3d38bcf9"><td class="memItemLeft" >
+<tr class="separator:ac36e76856c967f968fc89ed5ceac0250"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0100638ed9125edcc4bbcdefef3a899f"><td class="memItemLeft" >
 &#160;&#160;&#160;&#160;&#160;&#160;size_t&#160;&#160;&#160;<b>nbytes</b></td></tr>
-<tr class="separator:a58ab39af9ba0bc5a4b94a8ef3d38bcf9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9156cf105c209457b682bd14fa24a32a"><td class="memItemLeft" >
+<tr class="separator:a0100638ed9125edcc4bbcdefef3a899f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3f5634d2d37ffe6254bc7cae83e1e03"><td class="memItemLeft" >
 &#160;&#160;&#160;&#160;&#160;&#160;void *&#160;&#160;&#160;<b>md_buf</b></td></tr>
-<tr class="separator:a9156cf105c209457b682bd14fa24a32a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9e6091db845914773adb3fcb26b94fbf"><td class="memItemLeft" >
+<tr class="separator:af3f5634d2d37ffe6254bc7cae83e1e03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18f928f5b1379cd49eae8b4d770533a3"><td class="memItemLeft" >
 &#160;&#160;&#160;&#160;&#160;&#160;size_t&#160;&#160;&#160;<b>md_len</b></td></tr>
-<tr class="separator:a9e6091db845914773adb3fcb26b94fbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:add8d99756c687ccb482374495d64c7c2"><td class="memItemLeft" valign="top">&#160;&#160;&#160;}&#160;&#160;&#160;<b>nvme_passthru</b></td></tr>
-<tr class="separator:add8d99756c687ccb482374495d64c7c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a104db662bcd108cb0528b795ca623da8"><td class="memItemLeft" >
+<tr class="separator:a18f928f5b1379cd49eae8b4d770533a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59f08f5f44ebef9f71a2a3a6a0ac61e0"><td class="memItemLeft" valign="top">&#160;&#160;&#160;}&#160;&#160;&#160;<b>nvme_passthru</b></td></tr>
+<tr class="separator:a59f08f5f44ebef9f71a2a3a6a0ac61e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2a1c654592b126bd8d278cb7dcb9b67"><td class="memItemLeft" >
 &#160;&#160;&#160;struct {</td></tr>
-<tr class="memitem:ac00f92876e334d191057b0a0462164d9"><td class="memItemLeft" >
+<tr class="memitem:a5cae36464673ac0b69490fe5a3a29915"><td class="memItemLeft" >
 &#160;&#160;&#160;&#160;&#160;&#160;uint64_t&#160;&#160;&#160;<b>zone_id</b></td></tr>
-<tr class="separator:ac00f92876e334d191057b0a0462164d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a41656ac67c43ba2da27b0b35832be474"><td class="memItemLeft" >
+<tr class="separator:a5cae36464673ac0b69490fe5a3a29915"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25a94b49733ddb0dcbc6a7b682f3c612"><td class="memItemLeft" >
 &#160;&#160;&#160;&#160;&#160;&#160;uint32_t&#160;&#160;&#160;<b>num_zones</b></td></tr>
-<tr class="separator:a41656ac67c43ba2da27b0b35832be474"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae3e93e3fbe4aa098d7d558593fa1a652"><td class="memItemLeft" >
+<tr class="separator:a25a94b49733ddb0dcbc6a7b682f3c612"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6869366762c5754ff3685a3e50325b97"><td class="memItemLeft" >
 &#160;&#160;&#160;&#160;&#160;&#160;enum spdk_bdev_zone_action&#160;&#160;&#160;<b>zone_action</b></td></tr>
-<tr class="separator:ae3e93e3fbe4aa098d7d558593fa1a652"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac8e3f00f00946e61845b77d60520de2b"><td class="memItemLeft" >
+<tr class="separator:a6869366762c5754ff3685a3e50325b97"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af18bc0f639f92e5555598b49101aec3b"><td class="memItemLeft" >
 &#160;&#160;&#160;&#160;&#160;&#160;void *&#160;&#160;&#160;<b>buf</b></td></tr>
-<tr class="separator:ac8e3f00f00946e61845b77d60520de2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a104db662bcd108cb0528b795ca623da8"><td class="memItemLeft" valign="top">&#160;&#160;&#160;}&#160;&#160;&#160;<b>zone_mgmt</b></td></tr>
-<tr class="separator:a104db662bcd108cb0528b795ca623da8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa02a46d03306a27a61a946c665a70b75"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><b>u</b></td></tr>
-<tr class="separator:aa02a46d03306a27a61a946c665a70b75"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:af18bc0f639f92e5555598b49101aec3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2a1c654592b126bd8d278cb7dcb9b67"><td class="memItemLeft" valign="top">&#160;&#160;&#160;}&#160;&#160;&#160;<b>zone_mgmt</b></td></tr>
+<tr class="separator:aa2a1c654592b126bd8d278cb7dcb9b67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46d8da5d79a86d6f397d9f70150e1ccc"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><b>u</b></td></tr>
+<tr class="separator:a46d8da5d79a86d6f397d9f70150e1ccc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a93d55c24ee315fb1c81078d8283ca381"><td class="memItemLeft" align="right" valign="top"><a id="a93d55c24ee315fb1c81078d8283ca381"></a>
 struct <a class="el" href="structspdk__bdev__io_1_1____bdev__io__internal__fields.html">spdk_bdev_io::__bdev_io_internal_fields</a>&#160;</td><td class="memItemRight" valign="bottom"><b>internal</b></td></tr>
 <tr class="separator:a93d55c24ee315fb1c81078d8283ca381"><td class="memSeparator" colspan="2">&#160;</td></tr>
