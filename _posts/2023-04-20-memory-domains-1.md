@@ -160,4 +160,4 @@ next post, we'll discuss some efficiency improvements around enabling crypto. Th
 we'll discuss more advanced offloads including multiple chained offloads and the
 final design of the framework in the third post in this series.
 
-Check back in a few days for the next post!
+Part two [is now available](https://spdk.io/dev/2023/05/10/memory-domains-2/)!
