@@ -3125,7 +3125,7 @@ bdev_nvme_attach_controller</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">multipath   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Multipathing behavior: disable, failover, multipath. Default is failover.    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">num_io_queues   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint32_t   </td><td class="markdownTableBodyNone">The number of IO queues to request during initialization. Range: (0, UINT16_MAX + 1], Default is 1024.    </td></tr>
+<td class="markdownTableBodyNone">num_io_queues   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">The number of IO queues to request during initialization. Range: (0, UINT16_MAX + 1], Default is 1024.    </td></tr>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">ctrlr_loss_timeout_sec   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">Time to wait until ctrlr is reconnected before deleting ctrlr. -1 means infinite reconnects. 0 means no reconnect.    </td></tr>
 <tr class="markdownTableRowEven">
@@ -3133,7 +3133,9 @@ bdev_nvme_attach_controller</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">fast_io_fail_timeout_sec   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">Time to wait until ctrlr is reconnected before failing I/O to ctrlr. 0 means no such timeout.    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">psk   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">PSK in hexadecimal digits, e.g. 1234567890ABCDEF (Enables SSL socket implementation for TCP)   </td></tr>
+<td class="markdownTableBodyNone">psk   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">PSK in hexadecimal digits, e.g. 1234567890ABCDEF (Enables SSL socket implementation for TCP)    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">max_bdevs   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">The size of the name array for newly created bdevs. Default is 128.   </td></tr>
 </table>
 <h3>Example</h3>
 <p>Example request:</p>
