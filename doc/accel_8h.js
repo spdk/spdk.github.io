@@ -2,6 +2,7 @@ var accel_8h =
 [
     [ "spdk_accel_crypto_key_create_param", "structspdk__accel__crypto__key__create__param.html", "structspdk__accel__crypto__key__create__param" ],
     [ "spdk_accel_opts", "structspdk__accel__opts.html", "structspdk__accel__opts" ],
+    [ "spdk_accel_opcode_stats", "structspdk__accel__opcode__stats.html", "structspdk__accel__opcode__stats" ],
     [ "spdk_accel_completion_cb", "accel_8h.html#a6ba836b7b128829ba185eadb2c60476a", null ],
     [ "spdk_accel_fini_cb", "accel_8h.html#a545ea1cc4167924acee2803aed824877", null ],
     [ "spdk_accel_step_cb", "accel_8h.html#abaf556b5e1b63b5237faff3952a3bb46", null ],
@@ -20,6 +21,7 @@ var accel_8h =
       [ "ACCEL_OPC_LAST", "accel_8h.html#a009c73029ad0ef1eed6de0ca4406bf5bac7aee028e81d8fa135ae717148af57ed", null ]
     ] ],
     [ "spdk_accel_append_copy", "accel_8h.html#a51ed9c807379914cef1c5eaf05a3b9f7", null ],
+    [ "spdk_accel_append_crc32c", "accel_8h.html#a378b527c7ee062af40c4aef4ea2f4cbc", null ],
     [ "spdk_accel_append_decompress", "accel_8h.html#af28cbbf84a76a09ad52af0f679f923c4", null ],
     [ "spdk_accel_append_decrypt", "accel_8h.html#a12a6e4ce53656017f3b01f8cf98fd931", null ],
     [ "spdk_accel_append_encrypt", "accel_8h.html#a009120c1e212f13b51b808e07d391bc8", null ],
@@ -33,6 +35,7 @@ var accel_8h =
     [ "spdk_accel_get_io_channel", "accel_8h.html#a947dd411da094c21407afebfa6a38cdb", null ],
     [ "spdk_accel_get_memory_domain", "accel_8h.html#a8c710a5549f185939caac04cb8d33bc2", null ],
     [ "spdk_accel_get_opc_module_name", "accel_8h.html#ab843fd7c6bfd2db2f2997fad376f687f", null ],
+    [ "spdk_accel_get_opcode_stats", "accel_8h.html#ac3888c0625f9abaffa8c4f08a74dfc87", null ],
     [ "spdk_accel_get_opts", "accel_8h.html#a2c90f127e644795f2d7bcf5ac8b3911a", null ],
     [ "spdk_accel_initialize", "accel_8h.html#acbc9decf84ab594e9e04edac14e1b91b", null ],
     [ "spdk_accel_put_buf", "accel_8h.html#a84d7b247e6eb234e84aa4d856da098fa", null ],

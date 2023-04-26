@@ -1,5 +1,7 @@
 var NAVTREEINDEX7 =
 {
+"jsonrpc.html#rpc_bdev_ocf_delete":[3,9,5,16],
+"jsonrpc.html#rpc_bdev_ocf_flush_start":[3,9,5,21],
 "jsonrpc.html#rpc_bdev_ocf_flush_status":[3,9,5,22],
 "jsonrpc.html#rpc_bdev_ocf_get_bdevs":[3,9,5,18],
 "jsonrpc.html#rpc_bdev_ocf_get_stats":[3,9,5,17],
@@ -247,7 +249,5 @@ var NAVTREEINDEX7 =
 "log_8h.html#a7dabb4fb99a730367b2b3a49ca6bc2e3":[15,0,36,22],
 "log_8h.html#a80d1557908e5d42aa110a9db432b35a0":[15,0,36,30],
 "log_8h.html#a880b1e27d71328429dbf4f65e02ff145":[15,0,36,31],
-"log_8h.html#a99820ac7f38f6ad187be62b3bbdb7d64":[15,0,36,38],
-"log_8h.html#aa9419a88ede016c62feaa52fb0fed019":[15,0,36,34],
-"log_8h.html#aaa20a1f56503b0d9f16c82b451fb338b":[15,0,36,19]
+"log_8h.html#a99820ac7f38f6ad187be62b3bbdb7d64":[15,0,36,38]
 };

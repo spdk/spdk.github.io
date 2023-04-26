@@ -54,6 +54,7 @@ var annotated_dup =
     [ "spdk_accel_crypto_key_create_param", "structspdk__accel__crypto__key__create__param.html", "structspdk__accel__crypto__key__create__param" ],
     [ "spdk_accel_driver", "structspdk__accel__driver.html", "structspdk__accel__driver" ],
     [ "spdk_accel_module_if", "structspdk__accel__module__if.html", "structspdk__accel__module__if" ],
+    [ "spdk_accel_opcode_stats", "structspdk__accel__opcode__stats.html", "structspdk__accel__opcode__stats" ],
     [ "spdk_accel_opts", "structspdk__accel__opts.html", "structspdk__accel__opts" ],
     [ "spdk_accel_task", "structspdk__accel__task.html", "structspdk__accel__task" ],
     [ "spdk_app_opts", "structspdk__app__opts.html", "structspdk__app__opts" ],

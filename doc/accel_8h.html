@@ -104,6 +104,8 @@ Data Structures</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__accel__opts.html">spdk_accel_opts</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__accel__opcode__stats.html">spdk_accel_opcode_stats</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
@@ -206,6 +208,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a12a6e4ce53656017f3b01f8cf98fd931"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="accel_8h.html#a12a6e4ce53656017f3b01f8cf98fd931">spdk_accel_append_decrypt</a> (struct spdk_accel_sequence **seq, struct spdk_io_channel *ch, struct <a class="el" href="structspdk__accel__crypto__key.html">spdk_accel_crypto_key</a> *key, struct iovec *dst_iovs, uint32_t dst_iovcnt, struct spdk_memory_domain *dst_domain, void *dst_domain_ctx, struct iovec *src_iovs, uint32_t src_iovcnt, struct spdk_memory_domain *src_domain, void *src_domain_ctx, uint64_t iv, uint32_t block_size, int flags, <a class="el" href="accel_8h.html#abaf556b5e1b63b5237faff3952a3bb46">spdk_accel_step_cb</a> cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:a12a6e4ce53656017f3b01f8cf98fd931"><td class="mdescLeft">&#160;</td><td class="mdescRight">Append a decrypt operation to a sequence.  <a href="accel_8h.html#a12a6e4ce53656017f3b01f8cf98fd931">More...</a><br /></td></tr>
 <tr class="separator:a12a6e4ce53656017f3b01f8cf98fd931"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a378b527c7ee062af40c4aef4ea2f4cbc"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="accel_8h.html#a378b527c7ee062af40c4aef4ea2f4cbc">spdk_accel_append_crc32c</a> (struct spdk_accel_sequence **seq, struct spdk_io_channel *ch, uint32_t *dst, struct iovec *iovs, uint32_t iovcnt, struct spdk_memory_domain *domain, void *domain_ctx, uint32_t seed, <a class="el" href="accel_8h.html#abaf556b5e1b63b5237faff3952a3bb46">spdk_accel_step_cb</a> cb_fn, void *cb_arg)</td></tr>
+<tr class="memdesc:a378b527c7ee062af40c4aef4ea2f4cbc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Append a crc32c operation to a sequence.  <a href="accel_8h.html#a378b527c7ee062af40c4aef4ea2f4cbc">More...</a><br /></td></tr>
+<tr class="separator:a378b527c7ee062af40c4aef4ea2f4cbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad1f3cacbac00f08f92f094243c17ad04"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="accel_8h.html#ad1f3cacbac00f08f92f094243c17ad04">spdk_accel_sequence_finish</a> (struct spdk_accel_sequence *seq, <a class="el" href="accel_8h.html#a6ba836b7b128829ba185eadb2c60476a">spdk_accel_completion_cb</a> cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:ad1f3cacbac00f08f92f094243c17ad04"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finish a sequence and execute all its operations.  <a href="accel_8h.html#ad1f3cacbac00f08f92f094243c17ad04">More...</a><br /></td></tr>
 <tr class="separator:ad1f3cacbac00f08f92f094243c17ad04"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -248,6 +253,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a2c90f127e644795f2d7bcf5ac8b3911a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="accel_8h.html#a2c90f127e644795f2d7bcf5ac8b3911a">spdk_accel_get_opts</a> (struct <a class="el" href="structspdk__accel__opts.html">spdk_accel_opts</a> *opts)</td></tr>
 <tr class="memdesc:a2c90f127e644795f2d7bcf5ac8b3911a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the options for the accel framework.  <a href="accel_8h.html#a2c90f127e644795f2d7bcf5ac8b3911a">More...</a><br /></td></tr>
 <tr class="separator:a2c90f127e644795f2d7bcf5ac8b3911a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3888c0625f9abaffa8c4f08a74dfc87"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="accel_8h.html#ac3888c0625f9abaffa8c4f08a74dfc87">spdk_accel_get_opcode_stats</a> (struct spdk_io_channel *ch, enum accel_opcode opcode, struct <a class="el" href="structspdk__accel__opcode__stats.html">spdk_accel_opcode_stats</a> *stats, size_t size)</td></tr>
+<tr class="memdesc:ac3888c0625f9abaffa8c4f08a74dfc87"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve opcode statistics for a given IO channel.  <a href="accel_8h.html#ac3888c0625f9abaffa8c4f08a74dfc87">More...</a><br /></td></tr>
+<tr class="separator:ac3888c0625f9abaffa8c4f08a74dfc87"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Acceleration Framework. </p>
@@ -422,6 +430,100 @@ Functions</h2></td></tr>
     <tr><td class="paramname">src_domain</td><td>Memory domain to which the source buffers belong. </td></tr>
     <tr><td class="paramname">src_domain_ctx</td><td>Source buffer domain context. </td></tr>
     <tr><td class="paramname">flags</td><td>Accel operation flags. </td></tr>
+    <tr><td class="paramname">cb_fn</td><td>Callback to be executed once this operation is completed. </td></tr>
+    <tr><td class="paramname">cb_arg</td><td>Argument to be passed to <code>cb_fn</code>.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 if operation was successfully added to the sequence, negative errno otherwise. </dd></dl>
+
+</div>
+</div>
+<a id="a378b527c7ee062af40c4aef4ea2f4cbc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a378b527c7ee062af40c4aef4ea2f4cbc">&#9670;&nbsp;</a></span>spdk_accel_append_crc32c()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_accel_append_crc32c </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_accel_sequence **&#160;</td>
+          <td class="paramname"><em>seq</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct spdk_io_channel *&#160;</td>
+          <td class="paramname"><em>ch</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t *&#160;</td>
+          <td class="paramname"><em>dst</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct iovec *&#160;</td>
+          <td class="paramname"><em>iovs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>iovcnt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct spdk_memory_domain *&#160;</td>
+          <td class="paramname"><em>domain</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>domain_ctx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>seed</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="accel_8h.html#abaf556b5e1b63b5237faff3952a3bb46">spdk_accel_step_cb</a>&#160;</td>
+          <td class="paramname"><em>cb_fn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>cb_arg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Append a crc32c operation to a sequence. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">seq</td><td>Sequence object. If NULL, a new sequence object will be created. </td></tr>
+    <tr><td class="paramname">ch</td><td>I/O channel. </td></tr>
+    <tr><td class="paramname">dst</td><td>Destination to write the calculated value. </td></tr>
+    <tr><td class="paramname">iovs</td><td>Source I/O vector array. </td></tr>
+    <tr><td class="paramname">iovcnt</td><td>Size of the <code>iovs</code> array. </td></tr>
+    <tr><td class="paramname">domain</td><td>Memory domain to which the source buffers belong. </td></tr>
+    <tr><td class="paramname">domain_ctx</td><td>Source buffer domain context. </td></tr>
+    <tr><td class="paramname">seed</td><td>Initial value. </td></tr>
     <tr><td class="paramname">cb_fn</td><td>Callback to be executed once this operation is completed. </td></tr>
     <tr><td class="paramname">cb_arg</td><td>Argument to be passed to <code>cb_fn</code>.</td></tr>
   </table>
@@ -1210,6 +1312,57 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 if a valid module name was provided. -EINVAL for invalid opcode or -ENOENT no module was found at this time for the provided opcode. </dd></dl>
+
+</div>
+</div>
+<a id="ac3888c0625f9abaffa8c4f08a74dfc87"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac3888c0625f9abaffa8c4f08a74dfc87">&#9670;&nbsp;</a></span>spdk_accel_get_opcode_stats()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_accel_get_opcode_stats </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_io_channel *&#160;</td>
+          <td class="paramname"><em>ch</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">enum accel_opcode&#160;</td>
+          <td class="paramname"><em>opcode</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structspdk__accel__opcode__stats.html">spdk_accel_opcode_stats</a> *&#160;</td>
+          <td class="paramname"><em>stats</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Retrieve opcode statistics for a given IO channel. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ch</td><td>I/O channel. </td></tr>
+    <tr><td class="paramname">opcode</td><td>Operation to retrieve statistics. </td></tr>
+    <tr><td class="paramname">stats</td><td>Per-channel statistics. </td></tr>
+    <tr><td class="paramname">size</td><td>Size of the <code>stats</code> structure. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

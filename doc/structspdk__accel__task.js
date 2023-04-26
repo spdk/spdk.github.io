@@ -21,6 +21,7 @@ var structspdk__accel__task =
     [ "iovcnt", "structspdk__accel__task.html#aa2391383cefef8b2eb778e867789db84", null ],
     [ "iovs", "structspdk__accel__task.html#ab85098380a0240b12f2617b01f1c4d7c", null ],
     [ "iv", "structspdk__accel__task.html#a8f4418a860c9bbe1ff2976681c1ed47b", null ],
+    [ "nbytes", "structspdk__accel__task.html#a70697ed3412474269e45da0d1d23c770", null ],
     [ "nsrcs", "structspdk__accel__task.html#a115d907607201732af050c220bc1f083", null ],
     [ "op_code", "structspdk__accel__task.html#aa7c42c22fdb87dc83ba997b93d318528", null ],
     [ "output_size", "structspdk__accel__task.html#a819147fc9c5a735923a7029852794ae5", null ],

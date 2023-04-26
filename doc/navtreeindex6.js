@@ -1,5 +1,7 @@
 var NAVTREEINDEX6 =
 {
+"iscsi__spec_8h.html#a9e4e2cb58d69959248e24d78cdcc0147":[15,0,32,84],
+"iscsi__spec_8h.html#aa25140ab3d6383910dafff011448c719":[15,0,32,88],
 "iscsi__spec_8h.html#aa5530d01dd3009d2ca4d9fdbbc322341":[15,0,32,64],
 "iscsi__spec_8h.html#aaa615f19751a42dcd9cf01fa3140ea8e":[15,0,32,50],
 "iscsi__spec_8h.html#aac9cdbcfc17b258f8fd912c9b1cea7b7":[15,0,32,31],
@@ -247,7 +249,5 @@ var NAVTREEINDEX6 =
 "jsonrpc.html#rpc_bdev_nvme_start_mdns_discovery":[3,9,13,14],
 "jsonrpc.html#rpc_bdev_nvme_stop_discovery":[3,9,5,38],
 "jsonrpc.html#rpc_bdev_nvme_stop_mdns_discovery":[3,9,13,15],
-"jsonrpc.html#rpc_bdev_ocf_create":[3,9,5,15],
-"jsonrpc.html#rpc_bdev_ocf_delete":[3,9,5,16],
-"jsonrpc.html#rpc_bdev_ocf_flush_start":[3,9,5,21]
+"jsonrpc.html#rpc_bdev_ocf_create":[3,9,5,15]
 };
