@@ -7790,6 +7790,41 @@ bdev_lvol_clone</h2>
 <div class="line">  &quot;id&quot;: 1,</div>
 <div class="line">  &quot;result&quot;: &quot;8d87fccc-c278-49f0-9d4c-6237951aca09&quot;</div>
 <div class="line">}</div>
+</div><!-- fragment --><h2><a class="anchor" id="rpc_bdev_lvol_clone_bdev"></a>
+bdev_lvol_clone_bdev</h2>
+<p>Create a logical volume based on an external snapshot bdev. The external snapshot bdev is a bdev that will not be written to by any consumer and must not be an lvol in the lvstore as the clone.</p>
+<p>Regardless of whether the bdev is specified by name or UUID, the bdev UUID will be stored in the logical volume's metadata for use while the lvolstore is loading. For this reason, it is important that the bdev chosen has a static UUID.</p>
+<h3>Parameters</h3>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">bdev   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Name or UUID for bdev that acts as the external snapshot    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">lvs_name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">logical volume store name    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">clone_name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Name for the logical volume to create   </td></tr>
+</table>
+<h3>Response</h3>
+<p>UUID of the created logical volume clone is returned.</p>
+<h3>Example</h3>
+<p>Example request:</p>
+<div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
+<div class="line">  &quot;method&quot;: &quot;bdev_lvol_clone_bdev&quot;,</div>
+<div class="line">  &quot;id&quot;: 1,</div>
+<div class="line">  &quot;params&quot;: {</div>
+<div class="line">    &quot;bdev_uuid&quot;: &quot;e4b40d8b-f623-416d-8234-baf5a4c83cbd&quot;,</div>
+<div class="line">    &quot;lvs_name&quot;: &quot;lvs1&quot;,</div>
+<div class="line">    &quot;clone_name&quot;: &quot;clone2&quot;</div>
+<div class="line">  }</div>
+<div class="line">}</div>
+</div><!-- fragment --><p>Example response:</p>
+<div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
+<div class="line">  &quot;id&quot;: 1,</div>
+<div class="line">  &quot;result&quot;: &quot;336f662b-08e5-4006-8e06-e2023f7f9886&quot;</div>
+<div class="line">}</div>
 </div><!-- fragment --><h2><a class="anchor" id="rpc_bdev_lvol_rename"></a>
 bdev_lvol_rename</h2>
 <p>Rename a logical volume. New name will rename only the alias of the logical volume.</p>
@@ -7954,6 +7989,46 @@ bdev_lvol_decouple_parent</h2>
 <div class="line">  &quot;id&quot;: 1,</div>
 <div class="line">  &quot;result&quot;: true</div>
 <div class="line">}</div>
+</div><!-- fragment --><h2><a class="anchor" id="rpc_bdev_lvol_get_lvols"></a>
+bdev_lvol_get_lvols</h2>
+<p>Get a list of logical volumes. This list can be limited by lvol store and will display volumes even if they are degraded. Degraded lvols do not have an associated bdev, thus this RPC call may return lvols not returned by <code>bdev_get_bdevs</code>.</p>
+<h3>Parameters</h3>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">lvs_uuid   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Only show volumes in the logical volume store with this UUID    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">lvs_name   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Only show volumes in the logical volume store with this name   </td></tr>
+</table>
+<p>Either lvs_uuid or lvs_name may be specified, but not both. If both lvs_uuid and lvs_name are omitted, information about lvols in all logical volume stores is returned.</p>
+<h3>Example</h3>
+<p>Example request:</p>
+<div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
+<div class="line">  &quot;method&quot;: &quot;bdev_lvol_get_lvols&quot;,</div>
+<div class="line">  &quot;id&quot;: 1,</div>
+<div class="line">  &quot;params&quot;: {</div>
+<div class="line">    &quot;lvs_name&quot;: &quot;lvs_test&quot;</div>
+<div class="line">  }</div>
+<div class="line">}</div>
+</div><!-- fragment --><p>Example response:</p>
+<div class="fragment"><div class="line">[</div>
+<div class="line">  {</div>
+<div class="line">    &quot;alias&quot;: &quot;lvs_test/lvol1&quot;,</div>
+<div class="line">    &quot;uuid&quot;: &quot;b335c368-851d-4099-81e0-018cc494fdf6&quot;,</div>
+<div class="line">    &quot;name&quot;: &quot;lvol1&quot;,</div>
+<div class="line">    &quot;is_thin_provisioned&quot;: false,</div>
+<div class="line">    &quot;is_snapshot&quot;: false,</div>
+<div class="line">    &quot;is_clone&quot;: false,</div>
+<div class="line">    &quot;is_esnap_clone&quot;: false,</div>
+<div class="line">    &quot;is_degraded&quot;: false,</div>
+<div class="line">    &quot;lvs&quot;: {</div>
+<div class="line">      &quot;name&quot;: &quot;lvs_test&quot;,</div>
+<div class="line">      &quot;uuid&quot;: &quot;a1c8d950-5715-4558-936d-ab9e6eca0794&quot;</div>
+<div class="line">    }</div>
+<div class="line">  }</div>
+<div class="line">]</div>
 </div><!-- fragment --><h1>RAID</h1>
 <h2><a class="anchor" id="rpc_bdev_raid_get_bdevs"></a>
 bdev_raid_get_bdevs</h2>

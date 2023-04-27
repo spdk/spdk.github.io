@@ -1,5 +1,14 @@
 var NAVTREEINDEX28 =
 {
+"structspdk__nvmf__transport__poll__group.html#a7b589c06293a7149f0c8d1c0f27b7268":[14,0,332,0],
+"structspdk__nvmf__transport__poll__group.html#ad1e5c9a3614ab86dd19d0f7d1f0907a8":[14,0,332,5],
+"structspdk__nvmf__transport__poll__group.html#ad9db9a152878a23baede7296d4cda3a2":[14,0,332,3],
+"structspdk__nvmf__transport__poll__group.html#ae39252025ac90dcdc04bb253926c5245":[14,0,332,2],
+"structspdk__ocssd__chunk__information__entry.html":[14,0,334],
+"structspdk__ocssd__chunk__information__entry.html#a0a502a1c81f58d37630d8380e6794ffe":[14,0,334,13],
+"structspdk__ocssd__chunk__information__entry.html#a1fc2a46fc77b068996c02c36e1b740a3":[14,0,334,0],
+"structspdk__ocssd__chunk__information__entry.html#a2df5f77549b5dd37fd7b2a1f65be5b45":[14,0,334,5],
+"structspdk__ocssd__chunk__information__entry.html#a423d06c2f9276a7ae37e9efe25a7d9bd":[14,0,334,8],
 "structspdk__ocssd__chunk__information__entry.html#a63a9df88fa5e6bd58efacfec74ba6437":[14,0,334,9],
 "structspdk__ocssd__chunk__information__entry.html#a6adb4073d5f4ec5334a66e9fff8a453a":[14,0,334,7],
 "structspdk__ocssd__chunk__information__entry.html#a7343730f4dc45a9041b3c866134766d5":[14,0,334,6],
@@ -240,14 +249,5 @@ var NAVTREEINDEX28 =
 "structspdk__reduce__backing__dev.html#ac5a48d92ad0a0c27f5b443a641e0f264":[14,0,358,2],
 "structspdk__reduce__backing__dev.html#ad23a4e33b6b615acc350eb64aa429465":[14,0,358,7],
 "structspdk__reduce__backing__dev.html#af33de4b96028f7377b857038ff1b19a6":[14,0,358,8],
-"structspdk__reduce__backing__dev.html#afdc912ec69d16c46e53a7bef10949535":[14,0,358,5],
-"structspdk__reduce__vol__cb__args.html":[14,0,359],
-"structspdk__reduce__vol__cb__args.html#a66f86300cc6cbfd6247517c2e20cce68":[14,0,359,0],
-"structspdk__reduce__vol__cb__args.html#a7d3a2758d6a11382c60df2ce4aa61693":[14,0,359,2],
-"structspdk__reduce__vol__cb__args.html#ae6ca2ffa896fb538f00efdbcba388080":[14,0,359,1],
-"structspdk__reduce__vol__params.html":[14,0,360],
-"structspdk__reduce__vol__params.html#a33c2c765f8aef22dbd55f80aa71c6ba5":[14,0,360,2],
-"structspdk__reduce__vol__params.html#a8702d36eea6d40a62076a434e91aa3ca":[14,0,360,0],
-"structspdk__reduce__vol__params.html#ab0345c39a844c449cbdb78550939f0fb":[14,0,360,1],
-"structspdk__reduce__vol__params.html#ae4c8834d1e1c76455842b97c4489ce47":[14,0,360,4]
+"structspdk__reduce__backing__dev.html#afdc912ec69d16c46e53a7bef10949535":[14,0,358,5]
 };

@@ -1,5 +1,14 @@
 var NAVTREEINDEX29 =
 {
+"structspdk__reduce__vol__cb__args.html":[14,0,359],
+"structspdk__reduce__vol__cb__args.html#a66f86300cc6cbfd6247517c2e20cce68":[14,0,359,0],
+"structspdk__reduce__vol__cb__args.html#a7d3a2758d6a11382c60df2ce4aa61693":[14,0,359,2],
+"structspdk__reduce__vol__cb__args.html#ae6ca2ffa896fb538f00efdbcba388080":[14,0,359,1],
+"structspdk__reduce__vol__params.html":[14,0,360],
+"structspdk__reduce__vol__params.html#a33c2c765f8aef22dbd55f80aa71c6ba5":[14,0,360,2],
+"structspdk__reduce__vol__params.html#a8702d36eea6d40a62076a434e91aa3ca":[14,0,360,0],
+"structspdk__reduce__vol__params.html#ab0345c39a844c449cbdb78550939f0fb":[14,0,360,1],
+"structspdk__reduce__vol__params.html#ae4c8834d1e1c76455842b97c4489ce47":[14,0,360,4],
 "structspdk__reduce__vol__params.html#ae7112c3b0cf5e3bc25a0178fb9846abb":[14,0,360,3],
 "structspdk__scheduler.html":[14,0,361],
 "structspdk__scheduler.html#a11923634a7c3453ad8ecbfcb2683998f":[14,0,361,5],
@@ -240,14 +249,5 @@ var NAVTREEINDEX29 =
 "structspdk__spinlock.html#a8341e5c9f9182542b58344429c216dd7":[14,0,386,0],
 "structspdk__thread__stats.html":[14,0,387],
 "structspdk__thread__stats.html#a44439fc6eaac867fb8073114cbf7d922":[14,0,387,1],
-"structspdk__thread__stats.html#a78d02e3ab20fa99a5e84132920233472":[14,0,387,0],
-"structspdk__trace__argument.html":[14,0,388],
-"structspdk__trace__argument.html#a0d64c129d9c3943eefc79af082c8c126":[14,0,388,2],
-"structspdk__trace__argument.html#abdb826193bf8fe0afc1a314568632bb3":[14,0,388,0],
-"structspdk__trace__argument.html#abde59df73100fea290182e284a1ee34f":[14,0,388,1],
-"structspdk__trace__entry.html":[14,0,389],
-"structspdk__trace__entry.html#a026f98b6f6267dc25c424fad750e1a2c":[14,0,389,0],
-"structspdk__trace__entry.html#a0e513114ecc56fd39f92437ef7935389":[14,0,389,5],
-"structspdk__trace__entry.html#a53d1df54f12eb3a41e75dfcf33544c6e":[14,0,389,2],
-"structspdk__trace__entry.html#a713d879c3f525d9f12b95178b9110d3f":[14,0,389,3]
+"structspdk__thread__stats.html#a78d02e3ab20fa99a5e84132920233472":[14,0,387,0]
 };

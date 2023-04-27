@@ -1178,6 +1178,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Get the associated listener transport ID for this queue pair. </p>
+<p>This function will first zero the trid structure, and then fill in the relevant trid fields to identify the listener. The relevant fields will depend on the transport, but the subnqn will never be a relevant field for purposes of this function.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">qpair</td><td>The NVMe-oF qpair </td></tr>
@@ -1218,6 +1219,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Get the local transport ID for this queue pair. </p>
+<p>This function will first zero the trid structure, and then fill in the relevant trid fields to identify the listener. The relevant fields will depend on the transport, but the subnqn will never be a relevant field for purposes of this function.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">qpair</td><td>The NVMe-oF qpair </td></tr>
@@ -1258,6 +1260,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Get the peer's transport ID for this queue pair. </p>
+<p>This function will first zero the trid structure, and then fill in the relevant trid fields to identify the listener. The relevant fields will depend on the transport, but the subnqn will never be a relevant field for purposes of this function.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">qpair</td><td>The NVMe-oF qpair </td></tr>
@@ -3571,10 +3574,11 @@ Functions</h2></td></tr>
 
 <p>Stop accepting new connections at the provided address. </p>
 <p>This is a counterpart to <a class="el" href="nvmf_8h.html#a82f711797bfc4bc5abf9264daf53b1ef" title="Begin accepting new connections at the address provided.">spdk_nvmf_tgt_listen_ext()</a>. It differs from <a class="el" href="nvmf_8h.html#ae261eff09a7b8e6d14d2710c169b17df" title="Remove listener from transport and stop accepting new connections.">spdk_nvmf_transport_stop_listen()</a> in that it also destroys qpairs that are connected to the specified listener. Because this function disconnects the qpairs, it has to be asynchronous.</p>
+<p>The subsystem is matched using the subsystem parameter, not the subnqn field in the trid.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">transport</td><td>The transport associated with the listen address. </td></tr>
-    <tr><td class="paramname">trid</td><td>The address to stop listening at. </td></tr>
+    <tr><td class="paramname">trid</td><td>The address to stop listening at. subnqn must be an empty string. </td></tr>
     <tr><td class="paramname">subsystem</td><td>The subsystem to match for qpairs with the specified trid. If NULL, it will disconnect all qpairs with the specified trid. </td></tr>
     <tr><td class="paramname">cb_fn</td><td>The function to call on completion. </td></tr>
     <tr><td class="paramname">cb_arg</td><td>The argument to pass to the cb_fn.</td></tr>

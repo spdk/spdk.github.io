@@ -1,5 +1,14 @@
 var NAVTREEINDEX25 =
 {
+"structspdk__nvme__reservation__status__data.html":[14,0,245],
+"structspdk__nvme__reservation__status__data.html#a0def9acff9ca8af6b789224d83821086":[14,0,245,1],
+"structspdk__nvme__reservation__status__data.html#a348be070c5ee99541496188e9913bc8b":[14,0,245,2],
+"structspdk__nvme__reservation__status__data.html#a4b2514f1bb0b9464372a884156bde65b":[14,0,245,4],
+"structspdk__nvme__reservation__status__data.html#a4f1ef838ca94e2c6db3ff4aa393e88b4":[14,0,245,3],
+"structspdk__nvme__reservation__status__data.html#a7a6eb178600646d375c2b8401eab63ad":[14,0,245,5],
+"structspdk__nvme__reservation__status__data.html#afba0189f3d11b8e6ae22405d07613c92":[14,0,245,0],
+"structspdk__nvme__reservation__status__extended__data.html":[14,0,246],
+"structspdk__nvme__reservation__status__extended__data.html#ac52185c0c14436770814ecd7ed093873":[14,0,246,0],
 "structspdk__nvme__reservation__status__extended__data.html#ade57e13484ebd1c57d944cbb9a3337a4":[14,0,246,1],
 "structspdk__nvme__sanitize.html":[14,0,247],
 "structspdk__nvme__sanitize.html#a0be5b5338a1aa9fc192113b9393c5764":[14,0,247,2],
@@ -240,14 +249,5 @@ var NAVTREEINDEX25 =
 "structspdk__nvme__zns__ns__data.html#ae02852137c4e8cb833c20c8c9a0d5bef":[14,0,273,4],
 "structspdk__nvme__zns__ns__data.html#afb5a0a3551ecb7a92dbd5db2d4fdab31":[14,0,273,17],
 "structspdk__nvme__zns__zone__desc.html":[14,0,274],
-"structspdk__nvme__zns__zone__desc.html#a0608624b87b7ad6b4406d18be7add66a":[14,0,274,10],
-"structspdk__nvme__zns__zone__desc.html#a073bd35744902ae0a7e4507de790a47e":[14,0,274,16],
-"structspdk__nvme__zns__zone__desc.html#a196589d63a528768e37d93350929d652":[14,0,274,0],
-"structspdk__nvme__zns__zone__desc.html#a1bd360e8c54b4cf58538e88cedf3c0f7":[14,0,274,11],
-"structspdk__nvme__zns__zone__desc.html#a1c3005e11734a7b2808adc8887f180fc":[14,0,274,14],
-"structspdk__nvme__zns__zone__desc.html#a1f7ee3f826226731b4e7187a2815a699":[14,0,274,9],
-"structspdk__nvme__zns__zone__desc.html#a2e109ed5efdad9303bd515619f353120":[14,0,274,15],
-"structspdk__nvme__zns__zone__desc.html#a4dcb54aaf80f7f8a14853c209e858e46":[14,0,274,12],
-"structspdk__nvme__zns__zone__desc.html#a672fa0f469cdf75a2f3bb86dfec8ac3c":[14,0,274,13],
-"structspdk__nvme__zns__zone__desc.html#a6cac5b7a3197554cafb4e695906cb66c":[14,0,274,3]
+"structspdk__nvme__zns__zone__desc.html#a0608624b87b7ad6b4406d18be7add66a":[14,0,274,10]
 };

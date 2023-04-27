@@ -280,13 +280,13 @@ Functions</h2></td></tr>
 <tr class="memdesc:afc0d1f620d9e5d1e740ee4c4e456c34e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if blob is a snapshot.  <a href="blob_8h.html#afc0d1f620d9e5d1e740ee4c4e456c34e">More...</a><br /></td></tr>
 <tr class="separator:afc0d1f620d9e5d1e740ee4c4e456c34e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4f057419129eae779eca2774f135718e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blob_8h.html#a4f057419129eae779eca2774f135718e">spdk_blob_is_clone</a> (struct spdk_blob *blob)</td></tr>
-<tr class="memdesc:a4f057419129eae779eca2774f135718e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if blob is a clone.  <a href="blob_8h.html#a4f057419129eae779eca2774f135718e">More...</a><br /></td></tr>
+<tr class="memdesc:a4f057419129eae779eca2774f135718e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if blob is a clone of a blob.  <a href="blob_8h.html#a4f057419129eae779eca2774f135718e">More...</a><br /></td></tr>
 <tr class="separator:a4f057419129eae779eca2774f135718e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae6487dda0466021c6058beae2e855d8e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blob_8h.html#ae6487dda0466021c6058beae2e855d8e">spdk_blob_is_thin_provisioned</a> (struct spdk_blob *blob)</td></tr>
 <tr class="memdesc:ae6487dda0466021c6058beae2e855d8e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if blob is thin-provisioned.  <a href="blob_8h.html#ae6487dda0466021c6058beae2e855d8e">More...</a><br /></td></tr>
 <tr class="separator:ae6487dda0466021c6058beae2e855d8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0d7abdf15a8f538dea1f91a532301081"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blob_8h.html#a0d7abdf15a8f538dea1f91a532301081">spdk_blob_is_esnap_clone</a> (const struct spdk_blob *blob)</td></tr>
-<tr class="memdesc:a0d7abdf15a8f538dea1f91a532301081"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if blob is a clone of an external bdev.  <a href="blob_8h.html#a0d7abdf15a8f538dea1f91a532301081">More...</a><br /></td></tr>
+<tr class="memdesc:a0d7abdf15a8f538dea1f91a532301081"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if blob is a clone of an external snapshot.  <a href="blob_8h.html#a0d7abdf15a8f538dea1f91a532301081">More...</a><br /></td></tr>
 <tr class="separator:a0d7abdf15a8f538dea1f91a532301081"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aed4fb5871f9ca58ff60c0dd8810eb223"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blob_8h.html#aed4fb5871f9ca58ff60c0dd8810eb223">spdk_bs_delete_blob</a> (struct spdk_blob_store *bs, spdk_blob_id blobid, <a class="el" href="blob_8h.html#aca5253109581a768e06dd197429ef9e1">spdk_blob_op_complete</a> cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:aed4fb5871f9ca58ff60c0dd8810eb223"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delete an existing blob from the given blobstore.  <a href="blob_8h.html#aed4fb5871f9ca58ff60c0dd8810eb223">More...</a><br /></td></tr>
@@ -387,6 +387,12 @@ Functions</h2></td></tr>
 <tr class="memitem:a66b5b8159c242a0006b858ee8e4ddc69"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blob_8h.html#a66b5b8159c242a0006b858ee8e4ddc69">spdk_blob_set_esnap_bs_dev</a> (struct spdk_blob *blob, struct <a class="el" href="structspdk__bs__dev.html">spdk_bs_dev</a> *back_bs_dev, <a class="el" href="blob_8h.html#aca5253109581a768e06dd197429ef9e1">spdk_blob_op_complete</a> cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:a66b5b8159c242a0006b858ee8e4ddc69"><td class="mdescLeft">&#160;</td><td class="mdescRight">Replace the existing external snapshot device.  <a href="blob_8h.html#a66b5b8159c242a0006b858ee8e4ddc69">More...</a><br /></td></tr>
 <tr class="separator:a66b5b8159c242a0006b858ee8e4ddc69"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5d4220c9c92b1aa5573e1340fbaac24"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structspdk__bs__dev.html">spdk_bs_dev</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blob_8h.html#ad5d4220c9c92b1aa5573e1340fbaac24">spdk_blob_get_esnap_bs_dev</a> (const struct spdk_blob *blob)</td></tr>
+<tr class="memdesc:ad5d4220c9c92b1aa5573e1340fbaac24"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the existing external snapshot device.  <a href="blob_8h.html#ad5d4220c9c92b1aa5573e1340fbaac24">More...</a><br /></td></tr>
+<tr class="separator:ad5d4220c9c92b1aa5573e1340fbaac24"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74cc668dae1192d41904d79709da0374"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blob_8h.html#a74cc668dae1192d41904d79709da0374">spdk_blob_is_degraded</a> (const struct spdk_blob *blob)</td></tr>
+<tr class="memdesc:a74cc668dae1192d41904d79709da0374"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine if the blob is degraded.  <a href="blob_8h.html#a74cc668dae1192d41904d79709da0374">More...</a><br /></td></tr>
+<tr class="separator:a74cc668dae1192d41904d79709da0374"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Blob Storage System. </p>
@@ -688,6 +694,33 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>-ENOMEM if count is not sufficient to store all clones. </dd></dl>
+
+</div>
+</div>
+<a id="ad5d4220c9c92b1aa5573e1340fbaac24"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad5d4220c9c92b1aa5573e1340fbaac24">&#9670;&nbsp;</a></span>spdk_blob_get_esnap_bs_dev()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="structspdk__bs__dev.html">spdk_bs_dev</a>* spdk_blob_get_esnap_bs_dev </td>
+          <td>(</td>
+          <td class="paramtype">const struct spdk_blob *&#160;</td>
+          <td class="paramname"><em>blob</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the existing external snapshot device. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">blob</td><td>A blob that is an esnap clone</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>NULL if the blob is not an esnap clone, else the current external snapshot device. </dd></dl>
 
 </div>
 </div>
@@ -1677,14 +1710,43 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Check if blob is a clone. </p>
+<p>Check if blob is a clone of a blob. </p>
+<p>Clones of external snapshots will return false. See spdk_blob_is_esnap_clone.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">blob</td><td>Blob.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>true if blob is a clone. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>true if blob is a clone of a blob. </dd></dl>
+
+</div>
+</div>
+<a id="a74cc668dae1192d41904d79709da0374"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a74cc668dae1192d41904d79709da0374">&#9670;&nbsp;</a></span>spdk_blob_is_degraded()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool spdk_blob_is_degraded </td>
+          <td>(</td>
+          <td class="paramtype">const struct spdk_blob *&#160;</td>
+          <td class="paramname"><em>blob</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Determine if the blob is degraded. </p>
+<p>A degraded blob cannot perform IO.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">blob</td><td>A blob</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the blob or any snapshots upon which it depends are degraded, else false. </dd></dl>
 
 </div>
 </div>
@@ -1704,7 +1766,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Check if blob is a clone of an external bdev. </p>
+<p>Check if blob is a clone of an external snapshot. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">blob</td><td>Blob.</td></tr>

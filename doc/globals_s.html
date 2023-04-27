@@ -952,6 +952,9 @@ $(document).ready(function(){initNavTree('globals_s.html',''); initResizable(); 
 <li>spdk_blob_get_clones()
 : <a class="el" href="blob_8h.html#a1482c72fb9cb040999a376096d3e7caf">blob.h</a>
 </li>
+<li>spdk_blob_get_esnap_bs_dev()
+: <a class="el" href="blob_8h.html#ad5d4220c9c92b1aa5573e1340fbaac24">blob.h</a>
+</li>
 <li>spdk_blob_get_esnap_id()
 : <a class="el" href="blob_8h.html#aa1133bfe5ef2517860e51e1a58220848">blob.h</a>
 </li>
@@ -1008,6 +1011,9 @@ $(document).ready(function(){initNavTree('globals_s.html',''); initResizable(); 
 </li>
 <li>spdk_blob_is_clone()
 : <a class="el" href="blob_8h.html#a4f057419129eae779eca2774f135718e">blob.h</a>
+</li>
+<li>spdk_blob_is_degraded()
+: <a class="el" href="blob_8h.html#a74cc668dae1192d41904d79709da0374">blob.h</a>
 </li>
 <li>spdk_blob_is_esnap_clone()
 : <a class="el" href="blob_8h.html#a0d7abdf15a8f538dea1f91a532301081">blob.h</a>
@@ -2038,11 +2044,23 @@ $(document).ready(function(){initNavTree('globals_s.html',''); initResizable(); 
 <li>spdk_lvol_destroy()
 : <a class="el" href="lvol_8h.html#a87c4dadc88c211fb4e8ba0cddc474032">lvol.h</a>
 </li>
+<li>spdk_lvol_get_by_names()
+: <a class="el" href="lvol_8h.html#acdde6d39076c361d17f4bd45b3201f70">lvol.h</a>
+</li>
+<li>spdk_lvol_get_by_uuid()
+: <a class="el" href="lvol_8h.html#a1009dc7a2afd6915a5e434d11e0ef41b">lvol.h</a>
+</li>
 <li>spdk_lvol_get_io_channel()
 : <a class="el" href="lvol_8h.html#a3e1700585830ce465b5a1479774c1f44">lvol.h</a>
 </li>
 <li>spdk_lvol_inflate()
 : <a class="el" href="lvol_8h.html#a795f3fe355907d744d019d2b01f0aee9">lvol.h</a>
+</li>
+<li>spdk_lvol_iter_cb
+: <a class="el" href="lvol_8h.html#a48870c84403ddd07c81a78f8771eca44">lvol.h</a>
+</li>
+<li>spdk_lvol_iter_immediate_clones()
+: <a class="el" href="lvol_8h.html#a6d43e92544d79d7e048be0e9ac794271">lvol.h</a>
 </li>
 <li>spdk_lvol_op_complete
 : <a class="el" href="lvol_8h.html#a4d5c96c4fe4512f99dcb3f1e5d5e86be">lvol.h</a>
@@ -3382,11 +3400,11 @@ $(document).ready(function(){initNavTree('globals_s.html',''); initResizable(); 
 <li>SPDK_NVME_SGLS_NOT_SUPPORTED
 : <a class="el" href="nvme__spec_8h.html#af3e4102cda177c51a05a6bb02fa62b87a5978d5c7ce04a60c9d86b157037cb2f0">nvme_spec.h</a>
 </li>
-<li>SPDK_NVME_SGLS_SUPPORTED
-: <a class="el" href="nvme__spec_8h.html#af3e4102cda177c51a05a6bb02fa62b87ade9828594ce1d9d11427a38182149d9d">nvme_spec.h</a>
-</li>
 <li>spdk_nvme_sgls_supported
 : <a class="el" href="nvme__spec_8h.html#af3e4102cda177c51a05a6bb02fa62b87">nvme_spec.h</a>
+</li>
+<li>SPDK_NVME_SGLS_SUPPORTED
+: <a class="el" href="nvme__spec_8h.html#af3e4102cda177c51a05a6bb02fa62b87ade9828594ce1d9d11427a38182149d9d">nvme_spec.h</a>
 </li>
 <li>SPDK_NVME_SGLS_SUPPORTED_DWORD_ALIGNED
 : <a class="el" href="nvme__spec_8h.html#af3e4102cda177c51a05a6bb02fa62b87a702868f6b85dd329c4baf00642e99fca">nvme_spec.h</a>

@@ -1,5 +1,14 @@
 var NAVTREEINDEX32 =
 {
+"unionidxd__wqcfg.html#a7a09b121f55493cbc438d183c06ba921":[14,0,26,12],
+"unionidxd__wqcfg.html#a8473ccc2893df5999f1a157dbc86dc80":[14,0,26,7],
+"unionidxd__wqcfg.html#a8c8b1259418397afdefbc7d719cde80a":[14,0,26,15],
+"unionidxd__wqcfg.html#a8d2c491c04cbebb1a2b7000f23cf14a0":[14,0,26,10],
+"unionidxd__wqcfg.html#aa49fd14c4102c3b0e261cb0e38da9c8e":[14,0,26,0],
+"unionidxd__wqcfg.html#aad770818ec8bab3320f024d5e639953d":[14,0,26,27],
+"unionidxd__wqcfg.html#ab8945964975baec1e67be2bfcbd75f41":[14,0,26,23],
+"unionidxd__wqcfg.html#acf3561ee3ce3d80a25b4473abba6c1d4":[14,0,26,24],
+"unionidxd__wqcfg.html#adb524373bb4d4f4ea2fbceda7155952f":[14,0,26,13],
 "unionidxd__wqcfg.html#adf778ecfb9d5ac143ac48a9e9c801265":[14,0,26,19],
 "unionidxd__wqcfg.html#ae45f89f391567863d4eafb7f0ee25bf1":[14,0,26,5],
 "unionidxd__wqcfg.html#aec5c253b339da604caaaff2caaeb6b73":[14,0,26,28],
@@ -240,14 +249,5 @@ var NAVTREEINDEX32 =
 "unionspdk__nvme__feat__arbitration.html":[14,0,176],
 "unionspdk__nvme__feat__arbitration.html#a0eb3434752c3b8ea38f37556fa9fd116":[14,0,176,3],
 "unionspdk__nvme__feat__arbitration.html#a17914eaaf47a25d7edd809aa2f74331b":[14,0,176,5],
-"unionspdk__nvme__feat__arbitration.html#a1c72624e805ff324a05c6e9e592cd11a":[14,0,176,2],
-"unionspdk__nvme__feat__arbitration.html#a28d37ecf81e25a86b65539d93fb39e90":[14,0,176,4],
-"unionspdk__nvme__feat__arbitration.html#a47fb9a1efe9cd17abfa3a8b198919e34":[14,0,176,0],
-"unionspdk__nvme__feat__arbitration.html#a64c141f4dcedd3866f49ec94da7c27aa":[14,0,176,1],
-"unionspdk__nvme__feat__arbitration.html#af12378890a3a12fc4a54e10b6103859e":[14,0,176,6],
-"unionspdk__nvme__feat__async__event__configuration.html":[14,0,177],
-"unionspdk__nvme__feat__async__event__configuration.html#a0dfbb96aa4dfaf069e6f20dafd6b4127":[14,0,177,1],
-"unionspdk__nvme__feat__async__event__configuration.html#a14f3e2e2568f26a16527fb3e754114d2":[14,0,177,3],
-"unionspdk__nvme__feat__async__event__configuration.html#a15d0a48ab297bbfd984ccc1edff55c86":[14,0,177,5],
-"unionspdk__nvme__feat__async__event__configuration.html#a3800c58d3b8568092404cb0741b96af6":[14,0,177,7]
+"unionspdk__nvme__feat__arbitration.html#a1c72624e805ff324a05c6e9e592cd11a":[14,0,176,2]
 };

@@ -128,6 +128,9 @@ Typedefs</h2></td></tr>
 <tr class="memitem:a4d5c96c4fe4512f99dcb3f1e5d5e86be"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lvol_8h.html#a4d5c96c4fe4512f99dcb3f1e5d5e86be">spdk_lvol_op_complete</a>) (void *cb_arg, int lvolerrno)</td></tr>
 <tr class="memdesc:a4d5c96c4fe4512f99dcb3f1e5d5e86be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback definition for lvol operations without handle to lvol.  <a href="lvol_8h.html#a4d5c96c4fe4512f99dcb3f1e5d5e86be">More...</a><br /></td></tr>
 <tr class="separator:a4d5c96c4fe4512f99dcb3f1e5d5e86be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48870c84403ddd07c81a78f8771eca44"><td class="memItemLeft" align="right" valign="top">typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lvol_8h.html#a48870c84403ddd07c81a78f8771eca44">spdk_lvol_iter_cb</a>) (void *cb_arg, struct spdk_lvol *lvol)</td></tr>
+<tr class="memdesc:a48870c84403ddd07c81a78f8771eca44"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback definition for spdk_lvol_iter_clones.  <a href="lvol_8h.html#a48870c84403ddd07c81a78f8771eca44">More...</a><br /></td></tr>
+<tr class="separator:a48870c84403ddd07c81a78f8771eca44"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
@@ -187,6 +190,15 @@ Functions</h2></td></tr>
 <tr class="memitem:a89835586bb7e2e6e78bd0e4cd4c4d45b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lvol_8h.html#a89835586bb7e2e6e78bd0e4cd4c4d45b">spdk_lvol_close</a> (struct spdk_lvol *lvol, <a class="el" href="lvol_8h.html#a4d5c96c4fe4512f99dcb3f1e5d5e86be">spdk_lvol_op_complete</a> cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:a89835586bb7e2e6e78bd0e4cd4c4d45b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Close lvol, but information is kept on lvolstore.  <a href="lvol_8h.html#a89835586bb7e2e6e78bd0e4cd4c4d45b">More...</a><br /></td></tr>
 <tr class="separator:a89835586bb7e2e6e78bd0e4cd4c4d45b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d43e92544d79d7e048be0e9ac794271"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lvol_8h.html#a6d43e92544d79d7e048be0e9ac794271">spdk_lvol_iter_immediate_clones</a> (struct spdk_lvol *lvol, <a class="el" href="lvol_8h.html#a48870c84403ddd07c81a78f8771eca44">spdk_lvol_iter_cb</a> cb_fn, void *cb_arg)</td></tr>
+<tr class="memdesc:a6d43e92544d79d7e048be0e9ac794271"><td class="mdescLeft">&#160;</td><td class="mdescRight">Iterate clones of an lvol.  <a href="lvol_8h.html#a6d43e92544d79d7e048be0e9ac794271">More...</a><br /></td></tr>
+<tr class="separator:a6d43e92544d79d7e048be0e9ac794271"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1009dc7a2afd6915a5e434d11e0ef41b"><td class="memItemLeft" align="right" valign="top">struct spdk_lvol *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lvol_8h.html#a1009dc7a2afd6915a5e434d11e0ef41b">spdk_lvol_get_by_uuid</a> (const struct <a class="el" href="structspdk__uuid.html">spdk_uuid</a> *uuid)</td></tr>
+<tr class="memdesc:a1009dc7a2afd6915a5e434d11e0ef41b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the lvol that has a particular UUID.  <a href="lvol_8h.html#a1009dc7a2afd6915a5e434d11e0ef41b">More...</a><br /></td></tr>
+<tr class="separator:a1009dc7a2afd6915a5e434d11e0ef41b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acdde6d39076c361d17f4bd45b3201f70"><td class="memItemLeft" align="right" valign="top">struct spdk_lvol *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lvol_8h.html#acdde6d39076c361d17f4bd45b3201f70">spdk_lvol_get_by_names</a> (const char *lvs_name, const char *lvol_name)</td></tr>
+<tr class="memdesc:acdde6d39076c361d17f4bd45b3201f70"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the lvol that has the specified name in the specified lvolstore.  <a href="lvol_8h.html#acdde6d39076c361d17f4bd45b3201f70">More...</a><br /></td></tr>
+<tr class="separator:acdde6d39076c361d17f4bd45b3201f70"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3e1700585830ce465b5a1479774c1f44"><td class="memItemLeft" align="right" valign="top">struct spdk_io_channel *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lvol_8h.html#a3e1700585830ce465b5a1479774c1f44">spdk_lvol_get_io_channel</a> (struct spdk_lvol *lvol)</td></tr>
 <tr class="memdesc:a3e1700585830ce465b5a1479774c1f44"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get I/O channel of bdev associated with specified lvol.  <a href="lvol_8h.html#a3e1700585830ce465b5a1479774c1f44">More...</a><br /></td></tr>
 <tr class="separator:a3e1700585830ce465b5a1479774c1f44"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -212,6 +224,30 @@ Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Logical Volume Interface. </p>
 </div><h2 class="groupheader">Typedef Documentation</h2>
+<a id="a48870c84403ddd07c81a78f8771eca44"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a48870c84403ddd07c81a78f8771eca44">&#9670;&nbsp;</a></span>spdk_lvol_iter_cb</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef int(* spdk_lvol_iter_cb) (void *cb_arg, struct spdk_lvol *lvol)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Callback definition for spdk_lvol_iter_clones. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">lvol</td><td>An iterated lvol. </td></tr>
+    <tr><td class="paramname">cb_arg</td><td>Opaque context passed to spdk_lvol_iter_clone(). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 to continue iterating, any other value to stop iterating. </dd></dl>
+
+</div>
+</div>
 <a id="a4d5c96c4fe4512f99dcb3f1e5d5e86be"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4d5c96c4fe4512f99dcb3f1e5d5e86be">&#9670;&nbsp;</a></span>spdk_lvol_op_complete</h2>
 
@@ -713,6 +749,71 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="acdde6d39076c361d17f4bd45b3201f70"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acdde6d39076c361d17f4bd45b3201f70">&#9670;&nbsp;</a></span>spdk_lvol_get_by_names()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct spdk_lvol* spdk_lvol_get_by_names </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>lvs_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>lvol_name</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the lvol that has the specified name in the specified lvolstore. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">lvs_name</td><td>Name of the lvolstore. </td></tr>
+    <tr><td class="paramname">lvol_name</td><td>Name ofthe lvol. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A pointer to the requested lvol on success, else NULL. </dd></dl>
+
+</div>
+</div>
+<a id="a1009dc7a2afd6915a5e434d11e0ef41b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1009dc7a2afd6915a5e434d11e0ef41b">&#9670;&nbsp;</a></span>spdk_lvol_get_by_uuid()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct spdk_lvol* spdk_lvol_get_by_uuid </td>
+          <td>(</td>
+          <td class="paramtype">const struct <a class="el" href="structspdk__uuid.html">spdk_uuid</a> *&#160;</td>
+          <td class="paramname"><em>uuid</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the lvol that has a particular UUID. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">uuid</td><td>The lvol's UUID. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A pointer to the requested lvol on success, else NULL. </dd></dl>
+
+</div>
+</div>
 <a id="a3e1700585830ce465b5a1479774c1f44"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3e1700585830ce465b5a1479774c1f44">&#9670;&nbsp;</a></span>spdk_lvol_get_io_channel()</h2>
 
@@ -781,6 +882,52 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="a6d43e92544d79d7e048be0e9ac794271"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d43e92544d79d7e048be0e9ac794271">&#9670;&nbsp;</a></span>spdk_lvol_iter_immediate_clones()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_lvol_iter_immediate_clones </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_lvol *&#160;</td>
+          <td class="paramname"><em>lvol</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="lvol_8h.html#a48870c84403ddd07c81a78f8771eca44">spdk_lvol_iter_cb</a>&#160;</td>
+          <td class="paramname"><em>cb_fn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>cb_arg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Iterate clones of an lvol. </p>
+<p>Iteration stops if cb_fn(cb_arg, clone_lvol) returns non-zero.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">lvol</td><td>Handle to lvol. </td></tr>
+    <tr><td class="paramname">cb_fn</td><td>Function to call for each lvol that clones this lvol. </td></tr>
+    <tr><td class="paramname">cb_arg</td><td>Context to pass wtih cb_fn. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>-ENOMEM if memory allocation failed, non-zero return from cb_fn(), or 0. </dd></dl>
 
 </div>
 </div>

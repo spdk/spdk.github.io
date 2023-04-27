@@ -98,6 +98,10 @@ v23.05: (Upcoming Release)</h1>
 <p>A new API <code>spdk_bdev_module_claim_bdev_desc</code> was added. Unlike <code>spdk_bdev_module_claim_bdev</code>, this function requires a bdev descriptor to be passed and the claim is automatically released when the descriptor is closed. It allows bdev modules to claim bdevs as a single writer, multiple writers, or multiple readers.</p>
 <h2>env</h2>
 <p>New function <code>spdk_env_get_main_core</code> was added.</p>
+<h2>lvol</h2>
+<p>New API <code>spdk_lvol_iter_immediate_clones</code> was added to iterate the clones of an lvol.</p>
+<p>New APIs <code>spdk_lvol_get_by_uuid</code> and <code>spdk_lvol_get_by_names</code> to get lvols by the lvol's UUID or lvstore and lvol names.</p>
+<p>New <code>bdev_lvol_get_lvols</code> RPC to list logical volumes. This provides information about logical volumes without providing information about the bdevs. It is useful for listing the lvols associated with specific lvol stores and for listing lvols that are degraded and have no associated bdev.</p>
 <h2>nvmf</h2>
 <p>New <code>spdk_nvmf_request_copy_to/from_buf()</code> APIs have been added, which support iovecs, unlike the deprecated <code>spdk_nvmf_request_get_data()</code>.</p>
 <p>Two functions related to Asynchronous Event and error handling have been made public:</p>

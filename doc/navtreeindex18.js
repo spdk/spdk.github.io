@@ -1,5 +1,13 @@
 var NAVTREEINDEX18 =
 {
+"structiscsi__bhs__snack__req.html#a9ce914a4903b861c105e5fdfccf36457":[14,0,42,11],
+"structiscsi__bhs__snack__req.html#ab04c43f1dfccad67444b27e586a46f4d":[14,0,42,12],
+"structiscsi__bhs__snack__req.html#ab4cc5b20352b6400188870deee451393":[14,0,42,9],
+"structiscsi__bhs__snack__req.html#af9e1d2ecbfa2cf1c1e0cf18fcf0edbf2":[14,0,42,2],
+"structiscsi__bhs__task__req.html":[14,0,43],
+"structiscsi__bhs__task__req.html#a1daf771865c6b462c321e5a36bccc307":[14,0,43,11],
+"structiscsi__bhs__task__req.html#a28b5164e098857935674972a3d24c5a1":[14,0,43,7],
+"structiscsi__bhs__task__req.html#a299ec04475dac2c49af0b844e9755244":[14,0,43,3],
 "structiscsi__bhs__task__req.html#a54eace5a732b6b4c652fa787505c30f1":[14,0,43,2],
 "structiscsi__bhs__task__req.html#a556770536a3409af5e46abb2d3fd19bd":[14,0,43,13],
 "structiscsi__bhs__task__req.html#a65fe4a3b3dffe33caa186a433afe428f":[14,0,43,12],
@@ -241,13 +249,5 @@ var NAVTREEINDEX18 =
 "structspdk__bdev_1_1____bdev__internal__fields.html#ad010a75a238dd2290faf44545c43109e":[14,0,58,0,7],
 "structspdk__bdev_1_1____bdev__internal__fields.html#ad49ebdb41b6e0dc5954ff7a6039e40c5":[14,0,58,0,8],
 "structspdk__bdev_1_1____bdev__internal__fields.html#ad8ffb00efc69dca7d686f17220027742":[14,0,58,0,18],
-"structspdk__bdev_1_1____bdev__internal__fields.html#add102c5c15292b5d497ed7442a0b30b4":[14,0,58,0,19],
-"structspdk__bdev_1_1____bdev__internal__fields.html#adf206491fff12a3f57474bab98d07ef2":[14,0,58,0,21],
-"structspdk__bdev_1_1____bdev__internal__fields.html#ae3603bee677af4d8eaafffce32e0deea":[14,0,58,0,20],
-"structspdk__bdev_1_1____bdev__internal__fields.html#af31c1f546b2115b5887bc0c3db3418b5":[14,0,58,0,6],
-"structspdk__bdev_1_1____bdev__internal__fields.html#afad02fdc83417a632d9ecc7f3c437c47":[14,0,58,0,24],
-"structspdk__bdev_1_1____bdev__internal__fields_1_1____bdev__internal__claim_1_1____bdev__internal__claim__v1.html":[14,0,58,0,0,0],
-"structspdk__bdev_1_1____bdev__internal__fields_1_1____bdev__internal__claim_1_1____bdev__internal__claim__v1.html#a3db9113976cb41e7b3aca0026aa25a65":[14,0,58,0,0,0,0],
-"structspdk__bdev_1_1____bdev__internal__fields_1_1____bdev__internal__claim_1_1____bdev__internal__claim__v2.html":[14,0,58,0,0,1],
-"structspdk__bdev_1_1____bdev__internal__fields_1_1____bdev__internal__claim_1_1____bdev__internal__claim__v2.html#a1ee6b0f5bf199c39131689615b0b421e":[14,0,58,0,0,1,0]
+"structspdk__bdev_1_1____bdev__internal__fields.html#add102c5c15292b5d497ed7442a0b30b4":[14,0,58,0,19]
 };
