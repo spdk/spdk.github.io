@@ -1,5 +1,8 @@
 var NAVTREEINDEX7 =
 {
+"jsonrpc.html#rpc_bdev_nvme_set_options":[3,9,5,31],
+"jsonrpc.html#rpc_bdev_nvme_set_preferred_path":[3,9,5,41],
+"jsonrpc.html#rpc_bdev_nvme_start_discovery":[3,9,5,37],
 "jsonrpc.html#rpc_bdev_nvme_start_mdns_discovery":[3,9,13,14],
 "jsonrpc.html#rpc_bdev_nvme_stop_discovery":[3,9,5,38],
 "jsonrpc.html#rpc_bdev_nvme_stop_mdns_discovery":[3,9,13,15],
@@ -246,8 +249,5 @@ var NAVTREEINDEX7 =
 "log_8h.html#a4dcd04f102bfd52627f41e43123bc916":[15,0,36,9],
 "log_8h.html#a50fb7357e436ac28171ba7b2f32920a3":[15,0,36,33],
 "log_8h.html#a63883d260f21cb745432a61bfc2f5c77":[15,0,36,17],
-"log_8h.html#a66ec4ca21d549ea445c7c662b3f1c637":[15,0,36,28],
-"log_8h.html#a6b7bfeecff42b840ca5ebd25ffa84439":[15,0,36,3],
-"log_8h.html#a708ac484a189572de867c299fcbbe5be":[15,0,36,2],
-"log_8h.html#a759e79a44bb8dd5733e81c7d213fd730":[15,0,36,12]
+"log_8h.html#a66ec4ca21d549ea445c7c662b3f1c637":[15,0,36,28]
 };

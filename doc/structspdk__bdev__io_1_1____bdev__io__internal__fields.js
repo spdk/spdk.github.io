@@ -29,6 +29,7 @@ var structspdk__bdev__io_1_1____bdev__io__internal__fields =
     [ "orig_iovcnt", "structspdk__bdev__io_1_1____bdev__io__internal__fields.html#a3b896f397d5407bfa31d21c70fbd70c5", null ],
     [ "orig_iovs", "structspdk__bdev__io_1_1____bdev__io__internal__fields.html#a4b3b523a20129486f3e0b35a53bc97e7", null ],
     [ "orig_md_iov", "structspdk__bdev__io_1_1____bdev__io__internal__fields.html#a462c4d10967f1ab5c5442e55098cbecd", null ],
+    [ "retry_state", "structspdk__bdev__io_1_1____bdev__io__internal__fields.html#a9229c61451e5ce6d6ca2560275f052b7", null ],
     [ "sc", "structspdk__bdev__io_1_1____bdev__io__internal__fields.html#a10bc16b954cc71142b31de4627444c99", null ],
     [ "scsi", "structspdk__bdev__io_1_1____bdev__io__internal__fields.html#a5fa199518e63c70da25891fe33f26f57", null ],
     [ "sct", "structspdk__bdev__io_1_1____bdev__io__internal__fields.html#af1b7041012f256d8bb1f00bb760a1075", null ],

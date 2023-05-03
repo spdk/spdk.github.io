@@ -183,6 +183,43 @@ $(document).ready(function(){initNavTree('gdb_macros.html',''); initResizable();
 <div class="line">name &quot;nqn.2016-06.io.spdk.umgmt:cnode1&quot;, &#39;\000&#39; &lt;repeats 191 times&gt;</div>
 <div class="line">nqn &quot;nqn.2016-06.io.spdk.umgmt:cnode1&quot;, &#39;\000&#39; &lt;repeats 191 times&gt;</div>
 <div class="line">ID 1</div>
+</div><!-- fragment --><p>Printing SPDK spinlocks:</p>
+<p>In this example, the spinlock has been initialized and locked but has never been unlocked. After it is unlocked the first time the last unlocked stack will be present and the <code>Locked by spdk_thread</code> line will say <code>not locked</code>.</p>
+<div class="fragment"><div class="line">Breakpoint 2, spdk_spin_unlock (sspin=0x655110 &lt;g_bdev_mgr+80&gt;) at thread.c:2915</div>
+<div class="line">2915            struct spdk_thread *thread = spdk_get_thread();</div>
+<div class="line">(gdb) print *sspin</div>
+<div class="line">$2 = struct spdk_spinlock:</div>
+<div class="line">  Locked by spdk_thread: 0x658080</div>
+<div class="line">  Initialized at:</div>
+<div class="line">     0x43e677 &lt;spdk_spin_init+213&gt; thread.c:2878</div>
+<div class="line">     0x404feb &lt;_bdev_init+16&gt; /build/spdk/spdk-review-public/lib/bdev/bdev.c:116</div>
+<div class="line">     0x44483d &lt;__libc_csu_init+77&gt;</div>
+<div class="line">     0x7ffff62c9d18 &lt;__libc_start_main+120&gt;</div>
+<div class="line">     0x40268e &lt;_start+46&gt;</div>
+<div class="line">  Last locked at:</div>
+<div class="line">     0x43e936 &lt;spdk_spin_lock+436&gt; thread.c:2909</div>
+<div class="line">     0x40ca9c &lt;bdev_name_add+129&gt; /build/spdk/spdk-review-public/lib/bdev/bdev.c:3855</div>
+<div class="line">     0x411a3c &lt;bdev_register+641&gt; /build/spdk/spdk-review-public/lib/bdev/bdev.c:6660</div>
+<div class="line">     0x412e1e &lt;spdk_bdev_register+24&gt; /build/spdk/spdk-review-public/lib/bdev/bdev.c:7171</div>
+<div class="line">     0x417895 &lt;num_blocks_test+119&gt; bdev_ut.c:878</div>
+<div class="line">     0x7ffff7bc38cb &lt;run_single_test.constprop+379&gt;</div>
+<div class="line">     0x7ffff7bc3b61 &lt;run_single_suite.constprop+433&gt;</div>
+<div class="line">     0x7ffff7bc3f76 &lt;CU_run_all_tests+118&gt;</div>
+<div class="line">     0x43351f &lt;main+1439&gt; bdev_ut.c:6295</div>
+<div class="line">     0x7ffff62c9d85 &lt;__libc_start_main+229&gt;</div>
+<div class="line">     0x40268e &lt;_start+46&gt;</div>
+<div class="line">  Last unlocked at:</div>
+</div><!-- fragment --><p>Print a single spinlock stack:</p>
+<div class="fragment"><div class="line">(gdb) print sspin-&gt;internal.lock_stack</div>
+<div class="line">$1 = struct sspin_stack:</div>
+<div class="line"> 0x40c6a1 &lt;spdk_spin_lock+436&gt; /build/spdk/spdk-review-public/lib/thread/thread.c:2909</div>
+<div class="line"> 0x413f48 &lt;spdk_spin+552&gt; thread_ut.c:1831</div>
+<div class="line"> 0x7ffff7bc38cb &lt;run_single_test.constprop+379&gt;</div>
+<div class="line"> 0x7ffff7bc3b61 &lt;run_single_suite.constprop+433&gt;</div>
+<div class="line"> 0x7ffff7bc3f76 &lt;CU_run_all_tests+118&gt;</div>
+<div class="line"> 0x4148fa &lt;main+547&gt; thread_ut.c:1948</div>
+<div class="line"> 0x7ffff62c9d85 &lt;__libc_start_main+229&gt;</div>
+<div class="line"> 0x40248e &lt;_start+46&gt;</div>
 </div><!-- fragment --><h1>Loading The gdb Macros</h1>
 <p>Copy the gdb macros to the host where you are about to debug. It is best to copy the file either to somewhere within the PYTHONPATH, or to add the destination directory to the PYTHONPATH. This is not mandatory, and can be worked around, but can save a few steps when loading the module to gdb.</p>
 <p>From gdb, with the application core open, invoke python and load the modules.</p>

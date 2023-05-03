@@ -131,6 +131,21 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Parameters for lvolstore initialization. </p>
+<p>Create clone of given non-lvol device.</p>
+<p>The bdev that is being cloned is commonly called an external snapshot or esnap. The clone is commonly called an esnap clone.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">esnap_id</td><td>The identifier that will be passed to the spdk_bs_esnap_dev_create callback. </td></tr>
+    <tr><td class="paramname">id_len</td><td>The length of esnap_id, in bytes. </td></tr>
+    <tr><td class="paramname">size_bytes</td><td>The size of the external snapshot device, in bytes. This must be an integer multiple of the lvolstore's cluster size. See <code>cluster_sz</code> in </td></tr>
+    <tr><td class="paramname">lvs</td><td>Handle to lvolstore. </td></tr>
+    <tr><td class="paramname">clone_name</td><td>Name of created clone. </td></tr>
+    <tr><td class="paramname">cb_fn</td><td>Completion callback. </td></tr>
+    <tr><td class="paramname">cb_arg</td><td>Completion callback custom arguments. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 if parameters pass verification checks and the esnap creation is started, in which case the <code>cb_fn</code> will be used to report the completion status. If an error is encountered, a negative errno will be returned and <code>cb_fn</code> will not be called. </dd></dl>
 </div><h2 class="groupheader">Field Documentation</h2>
 <a id="a7de65fde2acf310c0d7ba4479d368f46"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7de65fde2acf310c0d7ba4479d368f46">&#9670;&nbsp;</a></span>cluster_sz</h2>

@@ -175,8 +175,8 @@ Functions</h2></td></tr>
 <tr class="memitem:a2dfba2354de69f535ab0c39693c9ae73"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lvol_8h.html#a2dfba2354de69f535ab0c39693c9ae73">spdk_lvol_create_clone</a> (struct spdk_lvol *lvol, const char *clone_name, <a class="el" href="lvol_8h.html#a453c8a7896aafb644e21e1e960ab3759">spdk_lvol_op_with_handle_complete</a> cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:a2dfba2354de69f535ab0c39693c9ae73"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create clone of given snapshot.  <a href="lvol_8h.html#a2dfba2354de69f535ab0c39693c9ae73">More...</a><br /></td></tr>
 <tr class="separator:a2dfba2354de69f535ab0c39693c9ae73"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a560057dc8e66212f08f79c8017ab9b60"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lvol_8h.html#a560057dc8e66212f08f79c8017ab9b60">spdk_lvol_create_esnap_clone</a> (const void *esnap_id, uint32_t id_len, uint64_t size_bytes, struct spdk_lvol_store *lvs, const char *clone_name, <a class="el" href="lvol_8h.html#a453c8a7896aafb644e21e1e960ab3759">spdk_lvol_op_with_handle_complete</a> cb_fn, void *cb_arg)</td></tr>
-<tr class="memdesc:a560057dc8e66212f08f79c8017ab9b60"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create clone of given non-lvol device.  <a href="lvol_8h.html#a560057dc8e66212f08f79c8017ab9b60">More...</a><br /></td></tr>
+<tr class="memitem:a560057dc8e66212f08f79c8017ab9b60"><td class="memItemLeft" align="right" valign="top"><a id="a560057dc8e66212f08f79c8017ab9b60"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_lvol_create_esnap_clone</b> (const void *esnap_id, uint32_t id_len, uint64_t size_bytes, struct spdk_lvol_store *lvs, const char *clone_name, <a class="el" href="lvol_8h.html#a453c8a7896aafb644e21e1e960ab3759">spdk_lvol_op_with_handle_complete</a> cb_fn, void *cb_arg)</td></tr>
 <tr class="separator:a560057dc8e66212f08f79c8017ab9b60"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3d5d8be84217db4879d5bf79fa5c23f6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lvol_8h.html#a3d5d8be84217db4879d5bf79fa5c23f6">spdk_lvol_rename</a> (struct spdk_lvol *lvol, const char *new_name, <a class="el" href="lvol_8h.html#a4d5c96c4fe4512f99dcb3f1e5d5e86be">spdk_lvol_op_complete</a> cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:a3d5d8be84217db4879d5bf79fa5c23f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rename lvol with new_name.  <a href="lvol_8h.html#a3d5d8be84217db4879d5bf79fa5c23f6">More...</a><br /></td></tr>
@@ -502,79 +502,6 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">lvol</td><td>Handle to lvol snapshot. </td></tr>
-    <tr><td class="paramname">clone_name</td><td>Name of created clone. </td></tr>
-    <tr><td class="paramname">cb_fn</td><td>Completion callback. </td></tr>
-    <tr><td class="paramname">cb_arg</td><td>Completion callback custom arguments. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a560057dc8e66212f08f79c8017ab9b60"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a560057dc8e66212f08f79c8017ab9b60">&#9670;&nbsp;</a></span>spdk_lvol_create_esnap_clone()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int spdk_lvol_create_esnap_clone </td>
-          <td>(</td>
-          <td class="paramtype">const void *&#160;</td>
-          <td class="paramname"><em>esnap_id</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>id_len</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint64_t&#160;</td>
-          <td class="paramname"><em>size_bytes</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">struct spdk_lvol_store *&#160;</td>
-          <td class="paramname"><em>lvs</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>clone_name</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="lvol_8h.html#a453c8a7896aafb644e21e1e960ab3759">spdk_lvol_op_with_handle_complete</a>&#160;</td>
-          <td class="paramname"><em>cb_fn</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>cb_arg</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Create clone of given non-lvol device. </p>
-<p>The bdev that is being cloned is commonly called an external snapshot or esnap. The clone is commonly called an esnap clone.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">esnap_id</td><td>The identifier that will be passed to the spdk_bs_esnap_dev_create callback. </td></tr>
-    <tr><td class="paramname">id_len</td><td>The length of esnap_id, in bytes. </td></tr>
-    <tr><td class="paramname">size_bytes</td><td>The size of the external snapshot device, in bytes. </td></tr>
-    <tr><td class="paramname">lvs</td><td>Handle to lvolstore. </td></tr>
     <tr><td class="paramname">clone_name</td><td>Name of created clone. </td></tr>
     <tr><td class="paramname">cb_fn</td><td>Completion callback. </td></tr>
     <tr><td class="paramname">cb_arg</td><td>Completion callback custom arguments. </td></tr>

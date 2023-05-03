@@ -145,6 +145,9 @@ Data Structures</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev__part__channel.html">spdk_bdev_part_channel</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev__part__construct__opts.html">spdk_bdev_part_construct_opts</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Options used when constructing a part bdev.  <a href="structspdk__bdev__part__construct__opts.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
@@ -366,9 +369,18 @@ typedef&#160;</td><td class="memItemRight" valign="bottom"><b>TAILQ_HEAD</b> (bd
 <tr class="memitem:a2a279a58afa5c5ed8a68820fcea0efaa"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev__module_8h.html#a2a279a58afa5c5ed8a68820fcea0efaa">spdk_bdev_part_base_construct_ext</a> (const char *bdev_name, <a class="el" href="bdev_8h.html#a51a55c97586c2d524fffcabc4d7910d6">spdk_bdev_remove_cb_t</a> remove_cb, struct <a class="el" href="structspdk__bdev__module.html">spdk_bdev_module</a> *module, struct <a class="el" href="structspdk__bdev__fn__table.html">spdk_bdev_fn_table</a> *fn_table, struct bdev_part_tailq *tailq, spdk_bdev_part_base_free_fn free_fn, void *ctx, uint32_t channel_size, <a class="el" href="thread_8h.html#aed1d14292cfee8553d4a1ebb519b210a">spdk_io_channel_create_cb</a> ch_create_cb, <a class="el" href="thread_8h.html#a75aa6a61877f23f79bb75c8fc5e68202">spdk_io_channel_destroy_cb</a> ch_destroy_cb, struct spdk_bdev_part_base **base)</td></tr>
 <tr class="memdesc:a2a279a58afa5c5ed8a68820fcea0efaa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new spdk_bdev_part_base on top of the provided bdev.  <a href="bdev__module_8h.html#a2a279a58afa5c5ed8a68820fcea0efaa">More...</a><br /></td></tr>
 <tr class="separator:a2a279a58afa5c5ed8a68820fcea0efaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab32a8d72e267682fc10ec49fe38e40fe"><td class="memItemLeft" align="right" valign="top"><a id="ab32a8d72e267682fc10ec49fe38e40fe"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_STATIC_ASSERT</b> (sizeof(struct <a class="el" href="structspdk__bdev__part__construct__opts.html">spdk_bdev_part_construct_opts</a>)==24, &quot;Incorrect size&quot;)</td></tr>
+<tr class="separator:ab32a8d72e267682fc10ec49fe38e40fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e8c713772d483c3e690f97480d51d12"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev__module_8h.html#a1e8c713772d483c3e690f97480d51d12">spdk_bdev_part_construct_opts_init</a> (struct <a class="el" href="structspdk__bdev__part__construct__opts.html">spdk_bdev_part_construct_opts</a> *opts, uint64_t size)</td></tr>
+<tr class="memdesc:a1e8c713772d483c3e690f97480d51d12"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize options that will be passed to <a class="el" href="bdev__module_8h.html#a8f554e96f504664d10b98b6991bf7e83" title="Create a logical spdk_bdev_part on top of a base with a non-NULL bdev UUID.">spdk_bdev_part_construct_ext()</a>.  <a href="bdev__module_8h.html#a1e8c713772d483c3e690f97480d51d12">More...</a><br /></td></tr>
+<tr class="separator:a1e8c713772d483c3e690f97480d51d12"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a24c1e59da114916f39354813c0e761ee"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev__module_8h.html#a24c1e59da114916f39354813c0e761ee">spdk_bdev_part_construct</a> (struct <a class="el" href="structspdk__bdev__part.html">spdk_bdev_part</a> *part, struct spdk_bdev_part_base *base, char *name, uint64_t offset_blocks, uint64_t num_blocks, char *product_name)</td></tr>
 <tr class="memdesc:a24c1e59da114916f39354813c0e761ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a logical <a class="el" href="structspdk__bdev__part.html">spdk_bdev_part</a> on top of a base.  <a href="bdev__module_8h.html#a24c1e59da114916f39354813c0e761ee">More...</a><br /></td></tr>
 <tr class="separator:a24c1e59da114916f39354813c0e761ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f554e96f504664d10b98b6991bf7e83"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev__module_8h.html#a8f554e96f504664d10b98b6991bf7e83">spdk_bdev_part_construct_ext</a> (struct <a class="el" href="structspdk__bdev__part.html">spdk_bdev_part</a> *part, struct spdk_bdev_part_base *base, char *name, uint64_t offset_blocks, uint64_t num_blocks, char *product_name, const struct <a class="el" href="structspdk__bdev__part__construct__opts.html">spdk_bdev_part_construct_opts</a> *opts)</td></tr>
+<tr class="memdesc:a8f554e96f504664d10b98b6991bf7e83"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a logical <a class="el" href="structspdk__bdev__part.html">spdk_bdev_part</a> on top of a base with a non-NULL bdev UUID.  <a href="bdev__module_8h.html#a8f554e96f504664d10b98b6991bf7e83">More...</a><br /></td></tr>
+<tr class="separator:a8f554e96f504664d10b98b6991bf7e83"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a099c43cf183a48d23ec7ddad683da1ae"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev__module_8h.html#a099c43cf183a48d23ec7ddad683da1ae">spdk_bdev_part_submit_request</a> (struct <a class="el" href="structspdk__bdev__part__channel.html">spdk_bdev_part_channel</a> *ch, struct <a class="el" href="structspdk__bdev__io.html">spdk_bdev_io</a> *bdev_io)</td></tr>
 <tr class="memdesc:a099c43cf183a48d23ec7ddad683da1ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forwards I/O from an <a class="el" href="structspdk__bdev__part.html">spdk_bdev_part</a> to the underlying base bdev.  <a href="bdev__module_8h.html#a099c43cf183a48d23ec7ddad683da1ae">More...</a><br /></td></tr>
 <tr class="separator:a099c43cf183a48d23ec7ddad683da1ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -2125,6 +2137,118 @@ typedef&#160;</td><td class="memItemRight" valign="bottom"><b>TAILQ_HEAD</b> (bd
 <dl class="section return"><dt>Returns</dt><dd>0 on success. </dd>
 <dd>
 -1 if the bases underlying bdev cannot be claimed by the current module. </dd></dl>
+
+</div>
+</div>
+<a id="a8f554e96f504664d10b98b6991bf7e83"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f554e96f504664d10b98b6991bf7e83">&#9670;&nbsp;</a></span>spdk_bdev_part_construct_ext()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_bdev_part_construct_ext </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structspdk__bdev__part.html">spdk_bdev_part</a> *&#160;</td>
+          <td class="paramname"><em>part</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct spdk_bdev_part_base *&#160;</td>
+          <td class="paramname"><em>base</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>offset_blocks</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>num_blocks</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>product_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const struct <a class="el" href="structspdk__bdev__part__construct__opts.html">spdk_bdev_part_construct_opts</a> *&#160;</td>
+          <td class="paramname"><em>opts</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Create a logical <a class="el" href="structspdk__bdev__part.html">spdk_bdev_part</a> on top of a base with a non-NULL bdev UUID. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">part</td><td>The part object allocated by the user. </td></tr>
+    <tr><td class="paramname">base</td><td>The base from which to create the part. </td></tr>
+    <tr><td class="paramname">name</td><td>The name of the new <a class="el" href="structspdk__bdev__part.html">spdk_bdev_part</a>. </td></tr>
+    <tr><td class="paramname">offset_blocks</td><td>The offset into the base bdev at which this part begins. </td></tr>
+    <tr><td class="paramname">num_blocks</td><td>The number of blocks that this part will span. </td></tr>
+    <tr><td class="paramname">product_name</td><td>Unique name for this type of block device. </td></tr>
+    <tr><td class="paramname">opts</td><td>Additional options.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success. </dd>
+<dd>
+-1 if the bases underlying bdev cannot be claimed by the current module. </dd></dl>
+
+</div>
+</div>
+<a id="a1e8c713772d483c3e690f97480d51d12"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e8c713772d483c3e690f97480d51d12">&#9670;&nbsp;</a></span>spdk_bdev_part_construct_opts_init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_bdev_part_construct_opts_init </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structspdk__bdev__part__construct__opts.html">spdk_bdev_part_construct_opts</a> *&#160;</td>
+          <td class="paramname"><em>opts</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Initialize options that will be passed to <a class="el" href="bdev__module_8h.html#a8f554e96f504664d10b98b6991bf7e83" title="Create a logical spdk_bdev_part on top of a base with a non-NULL bdev UUID.">spdk_bdev_part_construct_ext()</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">opts</td><td>Options structure to initialize </td></tr>
+    <tr><td class="paramname">size</td><td>Size of opts structure. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

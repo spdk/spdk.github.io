@@ -103,6 +103,15 @@ pthread_spinlock_t&#160;</td><td class="memItemRight" valign="bottom"><b>spinloc
 <tr class="memitem:a0acb59dc868eba185fcccfa4b9e27997"><td class="memItemLeft" align="right" valign="top"><a id="a0acb59dc868eba185fcccfa4b9e27997"></a>
 struct spdk_thread *&#160;</td><td class="memItemRight" valign="bottom"><b>thread</b></td></tr>
 <tr class="separator:a0acb59dc868eba185fcccfa4b9e27997"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6080d61295d3ec874929606a7add1a65"><td class="memItemLeft" align="right" valign="top"><a id="a6080d61295d3ec874929606a7add1a65"></a>
+struct spdk_spinlock_internal *&#160;</td><td class="memItemRight" valign="bottom"><b>internal</b></td></tr>
+<tr class="separator:a6080d61295d3ec874929606a7add1a65"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa29470f9663502cade3261f66a21ad1e"><td class="memItemLeft" align="right" valign="top"><a id="aa29470f9663502cade3261f66a21ad1e"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>initialized</b></td></tr>
+<tr class="separator:aa29470f9663502cade3261f66a21ad1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36f6f1fb9f6148c3c1075b983c2fb155"><td class="memItemLeft" align="right" valign="top"><a id="a36f6f1fb9f6148c3c1075b983c2fb155"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>destroyed</b></td></tr>
+<tr class="separator:a36f6f1fb9f6148c3c1075b983c2fb155"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A spinlock augmented with safety checks for use with SPDK. </p>
