@@ -1,5 +1,6 @@
 var NAVTREEINDEX13 =
 {
+"nvmf_8h.html#aba3584185c147f5b10cf8c2e2b3fa181":[15,0,46,34],
 "nvmf_8h.html#abb053c9573460d29898b184957ce05fd":[15,0,46,76],
 "nvmf_8h.html#abc793839e2268a097f97962e79e4a1ef":[15,0,46,47],
 "nvmf_8h.html#abd02f30e6fcb57338c723ffd5c307f0d":[15,0,46,6],
@@ -248,6 +249,5 @@ var NAVTREEINDEX13 =
 "nvmf_tgt_pg.html":[4,3],
 "nvmf_tgt_tracepoints.html":[11],
 "nvmf_tgt_tracepoints.html#add_tracepoints":[11,4],
-"nvmf_tgt_tracepoints.html#capture_trace_events":[11,3],
-"nvmf_tgt_tracepoints.html#capture_tracepoints":[11,2]
+"nvmf_tgt_tracepoints.html#capture_trace_events":[11,3]
 };

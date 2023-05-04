@@ -220,6 +220,9 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_lvol_create_esnap
 <tr class="memitem:a15199efb9ca8b7309ec257c1a87360c5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lvol_8h.html#a15199efb9ca8b7309ec257c1a87360c5">spdk_lvol_decouple_parent</a> (struct spdk_lvol *lvol, <a class="el" href="lvol_8h.html#a4d5c96c4fe4512f99dcb3f1e5d5e86be">spdk_lvol_op_complete</a> cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:a15199efb9ca8b7309ec257c1a87360c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decouple parent of lvol.  <a href="lvol_8h.html#a15199efb9ca8b7309ec257c1a87360c5">More...</a><br /></td></tr>
 <tr class="separator:a15199efb9ca8b7309ec257c1a87360c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1093dae877481711227c7b2f3aa9d879"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lvol_8h.html#a1093dae877481711227c7b2f3aa9d879">spdk_lvol_is_degraded</a> (const struct spdk_lvol *lvol)</td></tr>
+<tr class="memdesc:a1093dae877481711227c7b2f3aa9d879"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine if an lvol is degraded.  <a href="lvol_8h.html#a1093dae877481711227c7b2f3aa9d879">More...</a><br /></td></tr>
+<tr class="separator:a1093dae877481711227c7b2f3aa9d879"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Logical Volume Interface. </p>
@@ -809,6 +812,34 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_lvol_create_esnap
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="a1093dae877481711227c7b2f3aa9d879"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1093dae877481711227c7b2f3aa9d879">&#9670;&nbsp;</a></span>spdk_lvol_is_degraded()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool spdk_lvol_is_degraded </td>
+          <td>(</td>
+          <td class="paramtype">const struct spdk_lvol *&#160;</td>
+          <td class="paramname"><em>lvol</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Determine if an lvol is degraded. </p>
+<p>A degraded lvol cannot perform IO.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">lvol</td><td>Handle to lvol </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the lvol has no open blob or the lvol's blob is degraded, else false. </dd></dl>
 
 </div>
 </div>
