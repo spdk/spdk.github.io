@@ -206,6 +206,7 @@ var user_guides =
         [ "bdev_ocf_create", "jsonrpc.html#rpc_bdev_ocf_create", null ],
         [ "bdev_ocf_delete", "jsonrpc.html#rpc_bdev_ocf_delete", null ],
         [ "bdev_ocf_get_stats", "jsonrpc.html#rpc_bdev_ocf_get_stats", null ],
+        [ "bdev_ocf_reset_stats", "jsonrpc.html#rpc_bdev_ocf_reset_stats", null ],
         [ "bdev_ocf_get_bdevs", "jsonrpc.html#rpc_bdev_ocf_get_bdevs", null ],
         [ "bdev_ocf_set_cache_mode", "jsonrpc.html#rpc_bdev_ocf_set_cache_mode", null ],
         [ "bdev_ocf_set_seqcutoff", "jsonrpc.html#rpc_bdev_ocf_set_seqcutoff", null ],

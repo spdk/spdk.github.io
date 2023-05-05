@@ -486,6 +486,9 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_trty
 <tr class="memitem:ae2015f3c7dd76113e89a732eabe400ff"><td class="memItemLeft" align="right" valign="top"><a class="el" href="nvme_8h.html#ab41e2d311eb6663957cd2f18bc8fb890">spdk_nvme_qp_failure_reason</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#ae2015f3c7dd76113e89a732eabe400ff">spdk_nvme_qpair_get_failure_reason</a> (struct spdk_nvme_qpair *qpair)</td></tr>
 <tr class="memdesc:ae2015f3c7dd76113e89a732eabe400ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the reason the qpair is disconnected.  <a href="nvme_8h.html#ae2015f3c7dd76113e89a732eabe400ff">More...</a><br /></td></tr>
 <tr class="separator:ae2015f3c7dd76113e89a732eabe400ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0538f261b89d0cdb455638dba52ea4b8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a0538f261b89d0cdb455638dba52ea4b8">spdk_nvme_qpair_set_abort_dnr</a> (struct spdk_nvme_qpair *qpair, bool dnr)</td></tr>
+<tr class="memdesc:a0538f261b89d0cdb455638dba52ea4b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Control if DNR is set or not for aborted commands.  <a href="nvme_8h.html#a0538f261b89d0cdb455638dba52ea4b8">More...</a><br /></td></tr>
+<tr class="separator:a0538f261b89d0cdb455638dba52ea4b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afe2a9d3b715649b4d0a0e89196a13e6d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#afe2a9d3b715649b4d0a0e89196a13e6d">spdk_nvme_ctrlr_cmd_admin_raw</a> (struct spdk_nvme_ctrlr *ctrlr, struct <a class="el" href="structspdk__nvme__cmd.html">spdk_nvme_cmd</a> *cmd, void *buf, uint32_t len, <a class="el" href="nvme_8h.html#a1786f9616afc773b20f752dc98ecd465">spdk_nvme_cmd_cb</a> cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:afe2a9d3b715649b4d0a0e89196a13e6d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send the given admin command to the NVMe controller.  <a href="nvme_8h.html#afe2a9d3b715649b4d0a0e89196a13e6d">More...</a><br /></td></tr>
 <tr class="separator:afe2a9d3b715649b4d0a0e89196a13e6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -9224,6 +9227,44 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_trty
   </dd>
 </dl>
 <p>The function will remove specified command in the error list. </p>
+
+</div>
+</div>
+<a id="a0538f261b89d0cdb455638dba52ea4b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0538f261b89d0cdb455638dba52ea4b8">&#9670;&nbsp;</a></span>spdk_nvme_qpair_set_abort_dnr()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_nvme_qpair_set_abort_dnr </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_nvme_qpair *&#160;</td>
+          <td class="paramname"><em>qpair</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>dnr</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Control if DNR is set or not for aborted commands. </p>
+<p>The default value is false.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">qpair</td><td>The qpair to set. </td></tr>
+    <tr><td class="paramname">dnr</td><td>Set the DNR bit to 1 if true or 0 if false for aborted commands. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
