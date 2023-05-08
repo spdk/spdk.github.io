@@ -621,6 +621,9 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_trty
 <tr class="memitem:ac89c07198e8be3384ee6a0adc8439621"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#ac89c07198e8be3384ee6a0adc8439621">spdk_nvme_poll_group_process_completions</a> (struct spdk_nvme_poll_group *group, uint32_t completions_per_qpair, <a class="el" href="nvme_8h.html#add892b5eaa7208ca3b08382431713390">spdk_nvme_disconnected_qpair_cb</a> disconnected_qpair_cb)</td></tr>
 <tr class="memdesc:ac89c07198e8be3384ee6a0adc8439621"><td class="mdescLeft">&#160;</td><td class="mdescRight">Poll for completions on all qpairs in this poll group.  <a href="nvme_8h.html#ac89c07198e8be3384ee6a0adc8439621">More...</a><br /></td></tr>
 <tr class="separator:ac89c07198e8be3384ee6a0adc8439621"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba8083fac113bd027ff1f8c93fe704d6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#aba8083fac113bd027ff1f8c93fe704d6">spdk_nvme_poll_group_all_connected</a> (struct spdk_nvme_poll_group *group)</td></tr>
+<tr class="memdesc:aba8083fac113bd027ff1f8c93fe704d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if all qpairs in the poll group are connected.  <a href="nvme_8h.html#aba8083fac113bd027ff1f8c93fe704d6">More...</a><br /></td></tr>
+<tr class="separator:aba8083fac113bd027ff1f8c93fe704d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2a353011316a46ee6e6857f7286488d1"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a2a353011316a46ee6e6857f7286488d1">spdk_nvme_poll_group_get_ctx</a> (struct spdk_nvme_poll_group *group)</td></tr>
 <tr class="memdesc:a2a353011316a46ee6e6857f7286488d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve the user context for this specific poll group.  <a href="nvme_8h.html#a2a353011316a46ee6e6857f7286488d1">More...</a><br /></td></tr>
 <tr class="separator:a2a353011316a46ee6e6857f7286488d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -8329,6 +8332,35 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_trty
   </dd>
 </dl>
 <p>return 0 on success, -EINVAL if the qpair is not in the disabled state, -ENODEV if the transport doesn't exist, -ENOMEM on memory allocation failures, or -EPROTO on a protocol (transport) specific failure. </p>
+
+</div>
+</div>
+<a id="aba8083fac113bd027ff1f8c93fe704d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aba8083fac113bd027ff1f8c93fe704d6">&#9670;&nbsp;</a></span>spdk_nvme_poll_group_all_connected()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_nvme_poll_group_all_connected </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_nvme_poll_group *&#160;</td>
+          <td class="paramname"><em>group</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Check if all qpairs in the poll group are connected. </p>
+<p>This function allows the caller to check if all qpairs in a poll group are connected. This API is generally only suitable during application startup, to check when a large number of async connections have completed.</p>
+<p>It is useful for applications like benchmarking tools to create a large number of qpairs, but then ensuring they are all fully connected before proceeding with I/O.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">group</td><td>The group on which to poll connecting qpairs.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>return 0 if all qpairs are in CONNECTED state, -EIO if any connections failed to connect, -EAGAIN if any qpairs are still trying to connected. </p>
 
 </div>
 </div>
