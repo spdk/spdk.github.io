@@ -363,9 +363,6 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_trty
 <tr class="memitem:ae13ccd2ea831842a5008eb95a32545c3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#ae13ccd2ea831842a5008eb95a32545c3">spdk_nvme_ctrlr_reset</a> (struct spdk_nvme_ctrlr *ctrlr)</td></tr>
 <tr class="memdesc:ae13ccd2ea831842a5008eb95a32545c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform a full hardware reset of the NVMe controller.  <a href="nvme_8h.html#ae13ccd2ea831842a5008eb95a32545c3">More...</a><br /></td></tr>
 <tr class="separator:ae13ccd2ea831842a5008eb95a32545c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a849b2e9763c00d8195605c62cf511ea5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a849b2e9763c00d8195605c62cf511ea5">spdk_nvme_ctrlr_prepare_for_reset</a> (struct spdk_nvme_ctrlr *ctrlr)</td></tr>
-<tr class="memdesc:a849b2e9763c00d8195605c62cf511ea5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inform the driver that the application is preparing to reset the specified NVMe controller.  <a href="nvme_8h.html#a849b2e9763c00d8195605c62cf511ea5">More...</a><br /></td></tr>
-<tr class="separator:a849b2e9763c00d8195605c62cf511ea5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a458a65224a0f20c73d0acb44715d86dc"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a458a65224a0f20c73d0acb44715d86dc">spdk_nvme_ctrlr_disconnect</a> (struct spdk_nvme_ctrlr *ctrlr)</td></tr>
 <tr class="memdesc:a458a65224a0f20c73d0acb44715d86dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disconnect the given NVMe controller.  <a href="nvme_8h.html#a458a65224a0f20c73d0acb44715d86dc">More...</a><br /></td></tr>
 <tr class="separator:a458a65224a0f20c73d0acb44715d86dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -4267,34 +4264,6 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_trty
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Pointer to Persistent Memory Region, or NULL on failure. </dd></dl>
-
-</div>
-</div>
-<a id="a849b2e9763c00d8195605c62cf511ea5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a849b2e9763c00d8195605c62cf511ea5">&#9670;&nbsp;</a></span>spdk_nvme_ctrlr_prepare_for_reset()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void spdk_nvme_ctrlr_prepare_for_reset </td>
-          <td>(</td>
-          <td class="paramtype">struct spdk_nvme_ctrlr *&#160;</td>
-          <td class="paramname"><em>ctrlr</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Inform the driver that the application is preparing to reset the specified NVMe controller. </p>
-<p>(Deprecated, please use <a class="el" href="nvme_8h.html#a458a65224a0f20c73d0acb44715d86dc" title="Disconnect the given NVMe controller.">spdk_nvme_ctrlr_disconnect()</a> before freeing I/O qpairs instead.)</p>
-<p>This function allows the driver to make decisions knowing that a reset is about to happen. For example, the pcie transport in this case could skip sending DELETE_CQ and DELETE_SQ commands to the controller if an io qpair is freed after this function is called.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">ctrlr</td><td>Opaque handle to NVMe controller. </td></tr>
-  </table>
-  </dd>
-</dl>
 
 </div>
 </div>
