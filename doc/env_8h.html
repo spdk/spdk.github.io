@@ -322,6 +322,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_
 <tr class="memitem:ab18052aa1bc0ff634ffc0ce11c577d65"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_8h.html#ab18052aa1bc0ff634ffc0ce11c577d65">spdk_env_get_socket_id</a> (uint32_t core)</td></tr>
 <tr class="memdesc:ab18052aa1bc0ff634ffc0ce11c577d65"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the socket ID for the given core.  <a href="env_8h.html#ab18052aa1bc0ff634ffc0ce11c577d65">More...</a><br /></td></tr>
 <tr class="separator:ab18052aa1bc0ff634ffc0ce11c577d65"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a54ecf72f47decc6e8abc0bafcb578f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_8h.html#a8a54ecf72f47decc6e8abc0bafcb578f">spdk_env_get_cpuset</a> (struct <a class="el" href="structspdk__cpuset.html">spdk_cpuset</a> *cpuset)</td></tr>
+<tr class="memdesc:a8a54ecf72f47decc6e8abc0bafcb578f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a cpuset with each dedicated core's bit set to true.  <a href="env_8h.html#a8a54ecf72f47decc6e8abc0bafcb578f">More...</a><br /></td></tr>
+<tr class="separator:a8a54ecf72f47decc6e8abc0bafcb578f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4282feec502eca721136e88c824d59cf"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_8h.html#a4282feec502eca721136e88c824d59cf">spdk_env_thread_launch_pinned</a> (uint32_t core, thread_start_fn fn, void *arg)</td></tr>
 <tr class="memdesc:a4282feec502eca721136e88c824d59cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Launch a thread pinned to the given core.  <a href="env_8h.html#a4282feec502eca721136e88c824d59cf">More...</a><br /></td></tr>
 <tr class="separator:a4282feec502eca721136e88c824d59cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1140,6 +1143,33 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="env_
 
 <p>Get the number of dedicated CPU cores utilized by this env abstraction. </p>
 <dl class="section return"><dt>Returns</dt><dd>the number of dedicated CPU cores. </dd></dl>
+
+</div>
+</div>
+<a id="a8a54ecf72f47decc6e8abc0bafcb578f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8a54ecf72f47decc6e8abc0bafcb578f">&#9670;&nbsp;</a></span>spdk_env_get_cpuset()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_env_get_cpuset </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structspdk__cpuset.html">spdk_cpuset</a> *&#160;</td>
+          <td class="paramname"><em>cpuset</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Create a cpuset with each dedicated core's bit set to true. </p>
+<p>This function will first zero the cpuset and then set the bit for each core dedicated to this application to true.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cpuset</td><td><a class="el" href="structspdk__cpuset.html" title="List of CPUs.">spdk_cpuset</a> to initialize </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

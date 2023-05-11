@@ -1,5 +1,6 @@
 var NAVTREEINDEX6 =
 {
+"iscsi__spec_8h.html#a9cd87a034cf8d8aa42b5203460f03a12a4ed52bb989f41e81d45593676788356f":[15,0,32,95,2],
 "iscsi__spec_8h.html#a9cd87a034cf8d8aa42b5203460f03a12a5adc911bde4637c0962ce9b02bc637a9":[15,0,32,95,4],
 "iscsi__spec_8h.html#a9cd87a034cf8d8aa42b5203460f03a12ad85c9bd876d4037c15a41d06f9bbff7e":[15,0,32,95,0],
 "iscsi__spec_8h.html#a9cd87a034cf8d8aa42b5203460f03a12ae00658aa47422f87ce47fb038b0e80b3":[15,0,32,95,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX6 =
 "jsonrpc.html#rpc_bdev_nvme_remove_error_injection":[3,9,13,9],
 "jsonrpc.html#rpc_bdev_nvme_reset_controller":[3,9,5,37],
 "jsonrpc.html#rpc_bdev_nvme_send_cmd":[3,9,13,3],
-"jsonrpc.html#rpc_bdev_nvme_set_hotplug":[3,9,5,33],
-"jsonrpc.html#rpc_bdev_nvme_set_multipath_policy":[3,9,5,43]
+"jsonrpc.html#rpc_bdev_nvme_set_hotplug":[3,9,5,33]
 };

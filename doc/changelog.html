@@ -97,7 +97,7 @@ v23.05: (Upcoming Release)</h1>
 <h2>bdev</h2>
 <p>A new API <code>spdk_bdev_module_claim_bdev_desc</code> was added. Unlike <code>spdk_bdev_module_claim_bdev</code>, this function requires a bdev descriptor to be passed and the claim is automatically released when the descriptor is closed. It allows bdev modules to claim bdevs as a single writer, multiple writers, or multiple readers.</p>
 <h2>env</h2>
-<p>New function <code>spdk_env_get_main_core</code> was added.</p>
+<p>New functions <code>spdk_env_get_main_core</code> and <code>spdk_env_get_cpuset</code> were added.</p>
 <h2>gpt</h2>
 <p>GPT bdevs now use the GPT Unique Partition ID as the bdev's UUID.</p>
 <h2>lvol</h2>

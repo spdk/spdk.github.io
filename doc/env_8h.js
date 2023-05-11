@@ -53,6 +53,7 @@ var env_8h =
     [ "spdk_dma_zmalloc_socket", "env_8h.html#a7f4e9f571d0b77a46ef0192e4cfb13f0", null ],
     [ "spdk_env_fini", "env_8h.html#a719b5099cc3aa62190a1f44642ba6f91", null ],
     [ "spdk_env_get_core_count", "env_8h.html#a4461ccdde430461ad2756b3799099330", null ],
+    [ "spdk_env_get_cpuset", "env_8h.html#a8a54ecf72f47decc6e8abc0bafcb578f", null ],
     [ "spdk_env_get_current_core", "env_8h.html#a2483610a36d7daa9e6b067d9270d0087", null ],
     [ "spdk_env_get_first_core", "env_8h.html#a2127ecc88ceb8e4b1242c316634de50e", null ],
     [ "spdk_env_get_last_core", "env_8h.html#ad66fc19d0c23cb21ff456581f0385a2b", null ],
