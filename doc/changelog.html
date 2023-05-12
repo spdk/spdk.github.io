@@ -96,6 +96,7 @@ v23.05: (Upcoming Release)</h1>
 <p>Added API <code>spdk_accel_submit_xor</code> to perform XOR.</p>
 <h2>bdev</h2>
 <p>A new API <code>spdk_bdev_module_claim_bdev_desc</code> was added. Unlike <code>spdk_bdev_module_claim_bdev</code>, this function requires a bdev descriptor to be passed and the claim is automatically released when the descriptor is closed. It allows bdev modules to claim bdevs as a single writer, multiple writers, or multiple readers.</p>
+<p>New APIs <code>spdk_bdev_quiesce</code>, <code>spdk_bdev_unquiesce</code>, <code>spdk_bdev_quiesce_range</code> and <code>spdk_bdev_unquiesce_range</code> were added. These allow I/O to be quiesced on an entire bdev or a specified LBA range.</p>
 <h2>env</h2>
 <p>New functions <code>spdk_env_get_main_core</code> and <code>spdk_env_get_cpuset</code> were added.</p>
 <h2>gpt</h2>

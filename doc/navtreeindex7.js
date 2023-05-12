@@ -1,5 +1,10 @@
 var NAVTREEINDEX7 =
 {
+"jsonrpc.html#rpc_bdev_nvme_opal_revert":[3,9,9,24],
+"jsonrpc.html#rpc_bdev_nvme_remove_error_injection":[3,9,13,9],
+"jsonrpc.html#rpc_bdev_nvme_reset_controller":[3,9,5,37],
+"jsonrpc.html#rpc_bdev_nvme_send_cmd":[3,9,13,3],
+"jsonrpc.html#rpc_bdev_nvme_set_hotplug":[3,9,5,33],
 "jsonrpc.html#rpc_bdev_nvme_set_multipath_policy":[3,9,5,43],
 "jsonrpc.html#rpc_bdev_nvme_set_options":[3,9,5,32],
 "jsonrpc.html#rpc_bdev_nvme_set_preferred_path":[3,9,5,42],
@@ -244,10 +249,5 @@ var NAVTREEINDEX7 =
 "log_8h.html#a1a136fe1debefd25c3d6bb7187574246":[15,0,36,4],
 "log_8h.html#a1c4c05a5d3c40478ff8cfc06a3acd035":[15,0,36,23],
 "log_8h.html#a203431f8adfbb3dbda3c5da21bfc9c6a":[15,0,36,15],
-"log_8h.html#a253e880aa9fd469afd825d77fe9a3211":[15,0,36,20],
-"log_8h.html#a41cdc17423a58c475fa785fd491f00e9":[15,0,36,21],
-"log_8h.html#a422b7a65819b43157a4771be78f544ee":[15,0,36,35],
-"log_8h.html#a4d88ec475315724fb95eebdbcf9af8be":[15,0,36,6],
-"log_8h.html#a4dcd04f102bfd52627f41e43123bc916":[15,0,36,9],
-"log_8h.html#a50fb7357e436ac28171ba7b2f32920a3":[15,0,36,33]
+"log_8h.html#a253e880aa9fd469afd825d77fe9a3211":[15,0,36,20]
 };

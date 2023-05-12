@@ -1,5 +1,11 @@
 var NAVTREEINDEX33 =
 {
+"unionspdk__nvme__critical__warning__state.html#a093845218b1e1dd96ecb69eeac9c241d":[14,0,158,0],
+"unionspdk__nvme__critical__warning__state.html#a113097459596a0a0d1d3dbc8b18accc3":[14,0,158,2],
+"unionspdk__nvme__critical__warning__state.html#a1a90ec5cd6dee81f3e9346808b9b7826":[14,0,158,5],
+"unionspdk__nvme__critical__warning__state.html#a1bb0f60144600b84ed47ff380d5fb7a6":[14,0,158,1],
+"unionspdk__nvme__critical__warning__state.html#a220ca1988fe2546b3b61b00af7a74a05":[14,0,158,4],
+"unionspdk__nvme__critical__warning__state.html#a6ebadf678c6d64a9586b58eb6ad11365":[14,0,158,3],
 "unionspdk__nvme__critical__warning__state.html#a7c86c972fef3bacac5025d2328c6fd07":[14,0,158,6],
 "unionspdk__nvme__critical__warning__state.html#ae11d71217981c768d4d9370ad24283cd":[14,0,158,7],
 "unionspdk__nvme__csts__register.html":[14,0,159],
@@ -243,11 +249,5 @@ var NAVTREEINDEX33 =
 "userspace.html#userspace_control":[2,0,0],
 "userspace.html#userspace_interrupts":[2,0,1],
 "userspace.html#userspace_threading":[2,0,2],
-"util_8h.html":[15,0,60],
-"util_8h.html#a0bbb80ad35ccd2da128fa69acedd2d90":[15,0,60,28],
-"util_8h.html#a1082d39cc6e9b1fb657f3b31ba430454":[15,0,60,25],
-"util_8h.html#a21e1907187f8bf2c4b0c0de12c113ed6":[15,0,60,9],
-"util_8h.html#a22383e04171a98834c5f21f0c460e322":[15,0,60,16],
-"util_8h.html#a23a7b8dc5a8b680176bac1c7bd384406":[15,0,60,17],
-"util_8h.html#a260b1024edd3144707a2286ebf50839e":[15,0,60,19]
+"util_8h.html":[15,0,60]
 };

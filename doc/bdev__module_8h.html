@@ -186,6 +186,9 @@ typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_f
 <tr class="memitem:ade4b64b36884d88964fc53a4bf65b993"><td class="memItemLeft" align="right" valign="top"><a id="ade4b64b36884d88964fc53a4bf65b993"></a>
 typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_get_current_qd_cb</b>) (struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *bdev, uint64_t current_qd, void *cb_arg, int rc)</td></tr>
 <tr class="separator:ade4b64b36884d88964fc53a4bf65b993"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac765c2f26ccc6f3d4142f536e01cc1e6"><td class="memItemLeft" align="right" valign="top"><a id="ac765c2f26ccc6f3d4142f536e01cc1e6"></a>
+typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_quiesce_cb</b>) (void *ctx, int status)</td></tr>
+<tr class="separator:ac765c2f26ccc6f3d4142f536e01cc1e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
@@ -420,6 +423,18 @@ typedef&#160;</td><td class="memItemRight" valign="bottom"><b>TAILQ_HEAD</b> (bd
 <tr class="memitem:af7e0a5a50a01fee8785af7d00b4780aa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev__module_8h.html#af7e0a5a50a01fee8785af7d00b4780aa">spdk_bdev_reset_io_stat</a> (struct <a class="el" href="structspdk__bdev__io__stat.html">spdk_bdev_io_stat</a> *stat, enum spdk_bdev_reset_stat_mode mode)</td></tr>
 <tr class="memdesc:af7e0a5a50a01fee8785af7d00b4780aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset I/O statictics structure.  <a href="bdev__module_8h.html#af7e0a5a50a01fee8785af7d00b4780aa">More...</a><br /></td></tr>
 <tr class="separator:af7e0a5a50a01fee8785af7d00b4780aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64dd06da79d839bc84c0bc15ed7d0ca2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev__module_8h.html#a64dd06da79d839bc84c0bc15ed7d0ca2">spdk_bdev_quiesce</a> (struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *bdev, struct <a class="el" href="structspdk__bdev__module.html">spdk_bdev_module</a> *module, spdk_bdev_quiesce_cb cb_fn, void *cb_arg)</td></tr>
+<tr class="memdesc:a64dd06da79d839bc84c0bc15ed7d0ca2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Quiesce a bdev.  <a href="bdev__module_8h.html#a64dd06da79d839bc84c0bc15ed7d0ca2">More...</a><br /></td></tr>
+<tr class="separator:a64dd06da79d839bc84c0bc15ed7d0ca2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac55784f76a72c32509f22d30570d4769"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev__module_8h.html#ac55784f76a72c32509f22d30570d4769">spdk_bdev_unquiesce</a> (struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *bdev, struct <a class="el" href="structspdk__bdev__module.html">spdk_bdev_module</a> *module, spdk_bdev_quiesce_cb cb_fn, void *cb_arg)</td></tr>
+<tr class="memdesc:ac55784f76a72c32509f22d30570d4769"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unquiesce a previously quiesced bdev.  <a href="bdev__module_8h.html#ac55784f76a72c32509f22d30570d4769">More...</a><br /></td></tr>
+<tr class="separator:ac55784f76a72c32509f22d30570d4769"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae896d5f903eed9802fef55649d242a90"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev__module_8h.html#ae896d5f903eed9802fef55649d242a90">spdk_bdev_quiesce_range</a> (struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *bdev, struct <a class="el" href="structspdk__bdev__module.html">spdk_bdev_module</a> *module, uint64_t offset, uint64_t length, spdk_bdev_quiesce_cb cb_fn, void *cb_arg)</td></tr>
+<tr class="memdesc:ae896d5f903eed9802fef55649d242a90"><td class="mdescLeft">&#160;</td><td class="mdescRight">Quiesce a bdev LBA range.  <a href="bdev__module_8h.html#ae896d5f903eed9802fef55649d242a90">More...</a><br /></td></tr>
+<tr class="separator:ae896d5f903eed9802fef55649d242a90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5767280c44b9d587917d9b3724361d56"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev__module_8h.html#a5767280c44b9d587917d9b3724361d56">spdk_bdev_unquiesce_range</a> (struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *bdev, struct <a class="el" href="structspdk__bdev__module.html">spdk_bdev_module</a> *module, uint64_t offset, uint64_t length, spdk_bdev_quiesce_cb cb_fn, void *cb_arg)</td></tr>
+<tr class="memdesc:a5767280c44b9d587917d9b3724361d56"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unquiesce a previously quiesced bdev LBA range.  <a href="bdev__module_8h.html#a5767280c44b9d587917d9b3724361d56">More...</a><br /></td></tr>
+<tr class="separator:a5767280c44b9d587917d9b3724361d56"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Block Device Module Interface. </p>
@@ -2521,6 +2536,127 @@ typedef&#160;</td><td class="memItemRight" valign="bottom"><b>TAILQ_HEAD</b> (bd
 
 </div>
 </div>
+<a id="a64dd06da79d839bc84c0bc15ed7d0ca2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a64dd06da79d839bc84c0bc15ed7d0ca2">&#9670;&nbsp;</a></span>spdk_bdev_quiesce()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_bdev_quiesce </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *&#160;</td>
+          <td class="paramname"><em>bdev</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structspdk__bdev__module.html">spdk_bdev_module</a> *&#160;</td>
+          <td class="paramname"><em>module</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">spdk_bdev_quiesce_cb&#160;</td>
+          <td class="paramname"><em>cb_fn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>cb_arg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Quiesce a bdev. </p>
+<p>All I/O submitted after this function is called will be queued until the bdev is unquiesced. A callback will be called when all outstanding I/O on this bdev submitted before calling this function have completed.</p>
+<p>Only the module that registered the bdev may call this function.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bdev</td><td>Block device. </td></tr>
+    <tr><td class="paramname">module</td><td>The module that registered the bdev. </td></tr>
+    <tr><td class="paramname">cb_fn</td><td>Callback function to be called when the bdev is quiesced. Optional. </td></tr>
+    <tr><td class="paramname">cb_arg</td><td>Argument to be supplied to cb_fn.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, or suitable errno value otherwise. </dd></dl>
+
+</div>
+</div>
+<a id="ae896d5f903eed9802fef55649d242a90"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae896d5f903eed9802fef55649d242a90">&#9670;&nbsp;</a></span>spdk_bdev_quiesce_range()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_bdev_quiesce_range </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *&#160;</td>
+          <td class="paramname"><em>bdev</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structspdk__bdev__module.html">spdk_bdev_module</a> *&#160;</td>
+          <td class="paramname"><em>module</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>offset</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>length</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">spdk_bdev_quiesce_cb&#160;</td>
+          <td class="paramname"><em>cb_fn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>cb_arg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Quiesce a bdev LBA range. </p>
+<p>Same as <a class="el" href="bdev__module_8h.html#a64dd06da79d839bc84c0bc15ed7d0ca2" title="Quiesce a bdev.">spdk_bdev_quiesce()</a> but limited to the specified LBA range.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bdev</td><td>Block device. </td></tr>
+    <tr><td class="paramname">module</td><td>The module that registered the bdev. </td></tr>
+    <tr><td class="paramname">offset</td><td>The offset of the start of the range, in blocks, from the start of the block device. </td></tr>
+    <tr><td class="paramname">length</td><td>The length of the range, in blocks. </td></tr>
+    <tr><td class="paramname">cb_fn</td><td>Callback function to be called when the range is quiesced. Optional. </td></tr>
+    <tr><td class="paramname">cb_arg</td><td>Argument to be supplied to cb_fn.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, or suitable errno value otherwise. </dd></dl>
+
+</div>
+</div>
 <a id="a5fef71f7761986298bb4aaf345736bb3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5fef71f7761986298bb4aaf345736bb3">&#9670;&nbsp;</a></span>spdk_bdev_register()</h2>
 
@@ -2587,6 +2723,127 @@ typedef&#160;</td><td class="memItemRight" valign="bottom"><b>TAILQ_HEAD</b> (bd
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="ac55784f76a72c32509f22d30570d4769"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac55784f76a72c32509f22d30570d4769">&#9670;&nbsp;</a></span>spdk_bdev_unquiesce()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_bdev_unquiesce </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *&#160;</td>
+          <td class="paramname"><em>bdev</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structspdk__bdev__module.html">spdk_bdev_module</a> *&#160;</td>
+          <td class="paramname"><em>module</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">spdk_bdev_quiesce_cb&#160;</td>
+          <td class="paramname"><em>cb_fn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>cb_arg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Unquiesce a previously quiesced bdev. </p>
+<p>All I/O queued after the bdev was quiesced will be submitted.</p>
+<p>Only the module that registered the bdev may call this function.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bdev</td><td>Block device. </td></tr>
+    <tr><td class="paramname">module</td><td>The module that registered the bdev. </td></tr>
+    <tr><td class="paramname">cb_fn</td><td>Callback function to be called when the bdev is unquiesced. Optional. </td></tr>
+    <tr><td class="paramname">cb_arg</td><td>Argument to be supplied to cb_fn.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, or suitable errno value otherwise. </dd></dl>
+
+</div>
+</div>
+<a id="a5767280c44b9d587917d9b3724361d56"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5767280c44b9d587917d9b3724361d56">&#9670;&nbsp;</a></span>spdk_bdev_unquiesce_range()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_bdev_unquiesce_range </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *&#160;</td>
+          <td class="paramname"><em>bdev</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structspdk__bdev__module.html">spdk_bdev_module</a> *&#160;</td>
+          <td class="paramname"><em>module</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>offset</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>length</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">spdk_bdev_quiesce_cb&#160;</td>
+          <td class="paramname"><em>cb_fn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>cb_arg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Unquiesce a previously quiesced bdev LBA range. </p>
+<p>Same as <a class="el" href="bdev__module_8h.html#ac55784f76a72c32509f22d30570d4769" title="Unquiesce a previously quiesced bdev.">spdk_bdev_unquiesce()</a> but limited to the specified LBA range. The specified range must match exactly a previously quiesced LBA range.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bdev</td><td>Block device. </td></tr>
+    <tr><td class="paramname">module</td><td>The module that registered the bdev. </td></tr>
+    <tr><td class="paramname">offset</td><td>The offset of the start of the range, in blocks, from the start of the block device. </td></tr>
+    <tr><td class="paramname">length</td><td>The length of the range, in blocks. </td></tr>
+    <tr><td class="paramname">cb_fn</td><td>Callback function to be called when the range is unquiesced. Optional. </td></tr>
+    <tr><td class="paramname">cb_arg</td><td>Argument to be supplied to cb_fn.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, or suitable errno value otherwise. </dd></dl>
 
 </div>
 </div>

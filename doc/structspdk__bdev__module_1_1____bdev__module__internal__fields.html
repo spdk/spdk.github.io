@@ -107,6 +107,10 @@ Collaboration diagram for spdk_bdev_module::__bdev_module_internal_fields:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:ad7efe4a4fb8626e91f53b77920630a92"><td class="memItemLeft" align="right" valign="top"><a id="ad7efe4a4fb8626e91f53b77920630a92"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev__module_1_1____bdev__module__internal__fields.html#ad7efe4a4fb8626e91f53b77920630a92">TAILQ_HEAD</a> (, lba_range) quiesced_ranges</td></tr>
+<tr class="memdesc:ad7efe4a4fb8626e91f53b77920630a92"><td class="mdescLeft">&#160;</td><td class="mdescRight">List of quiesced lba ranges in all bdevs of this module. <br /></td></tr>
+<tr class="separator:ad7efe4a4fb8626e91f53b77920630a92"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a74966890b6b4142e778da08f450dd42d"><td class="memItemLeft" align="right" valign="top"><a id="a74966890b6b4142e778da08f450dd42d"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>TAILQ_ENTRY</b> (<a class="el" href="structspdk__bdev__module.html">spdk_bdev_module</a>) tailq</td></tr>
 <tr class="separator:a74966890b6b4142e778da08f450dd42d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -114,7 +118,7 @@ Public Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
 <tr class="memitem:ac55ea3750bd0f70772762afef9e0b508"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structspdk__spinlock.html">spdk_spinlock</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev__module_1_1____bdev__module__internal__fields.html#ac55ea3750bd0f70772762afef9e0b508">spinlock</a></td></tr>
-<tr class="memdesc:ac55ea3750bd0f70772762afef9e0b508"><td class="mdescLeft">&#160;</td><td class="mdescRight">Protects action_in_progress.  <a href="structspdk__bdev__module_1_1____bdev__module__internal__fields.html#ac55ea3750bd0f70772762afef9e0b508">More...</a><br /></td></tr>
+<tr class="memdesc:ac55ea3750bd0f70772762afef9e0b508"><td class="mdescLeft">&#160;</td><td class="mdescRight">Protects action_in_progress and quiesced_ranges.  <a href="structspdk__bdev__module_1_1____bdev__module__internal__fields.html#ac55ea3750bd0f70772762afef9e0b508">More...</a><br /></td></tr>
 <tr class="separator:ac55ea3750bd0f70772762afef9e0b508"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac487dd3b111bdf81b2b5532ff5fc2f51"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev__module_1_1____bdev__module__internal__fields.html#ac487dd3b111bdf81b2b5532ff5fc2f51">action_in_progress</a></td></tr>
 <tr class="memdesc:ac487dd3b111bdf81b2b5532ff5fc2f51"><td class="mdescLeft">&#160;</td><td class="mdescRight">Count of bdev inits/examinations in progress.  <a href="structspdk__bdev__module_1_1____bdev__module__internal__fields.html#ac487dd3b111bdf81b2b5532ff5fc2f51">More...</a><br /></td></tr>
@@ -154,7 +158,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Protects action_in_progress. </p>
+<p>Protects action_in_progress and quiesced_ranges. </p>
 <p>Take no locks while holding this one. </p>
 
 </div>
