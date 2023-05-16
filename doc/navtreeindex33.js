@@ -1,5 +1,8 @@
 var NAVTREEINDEX33 =
 {
+"unionspdk__nvme__cmd__cdw12.html#af00e2575d78e6879ca714c2ab41cbf4b":[14,0,154,2],
+"unionspdk__nvme__cmd__cdw12.html#afd8bebbedbc90fbc2cb063cb170e45b3":[14,0,154,8],
+"unionspdk__nvme__critical__warning__state.html":[14,0,158],
 "unionspdk__nvme__critical__warning__state.html#a093845218b1e1dd96ecb69eeac9c241d":[14,0,158,0],
 "unionspdk__nvme__critical__warning__state.html#a113097459596a0a0d1d3dbc8b18accc3":[14,0,158,2],
 "unionspdk__nvme__critical__warning__state.html#a1a90ec5cd6dee81f3e9346808b9b7826":[14,0,158,5],
@@ -246,8 +249,5 @@ var NAVTREEINDEX33 =
 "usdt.html":[3,11],
 "user_guides.html":[3],
 "userspace.html":[2,0],
-"userspace.html#userspace_control":[2,0,0],
-"userspace.html#userspace_interrupts":[2,0,1],
-"userspace.html#userspace_threading":[2,0,2],
-"util_8h.html":[15,0,60]
+"userspace.html#userspace_control":[2,0,0]
 };

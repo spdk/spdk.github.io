@@ -1,5 +1,8 @@
 var NAVTREEINDEX34 =
 {
+"userspace.html#userspace_interrupts":[2,0,1],
+"userspace.html#userspace_threading":[2,0,2],
+"util_8h.html":[15,0,60],
 "util_8h.html#a0bbb80ad35ccd2da128fa69acedd2d90":[15,0,60,28],
 "util_8h.html#a1082d39cc6e9b1fb657f3b31ba430454":[15,0,60,25],
 "util_8h.html#a21e1907187f8bf2c4b0c0de12c113ed6":[15,0,60,9],

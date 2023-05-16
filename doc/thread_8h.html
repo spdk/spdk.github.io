@@ -230,6 +230,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="thre
 <tr class="memitem:a60dac2a0fc19b23be6fecb1e5b6f8a7a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="thread_8h.html#a60dac2a0fc19b23be6fecb1e5b6f8a7a">spdk_set_thread</a> (struct spdk_thread *thread)</td></tr>
 <tr class="memdesc:a60dac2a0fc19b23be6fecb1e5b6f8a7a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Force the current system thread to act as if executing the given SPDK thread.  <a href="thread_8h.html#a60dac2a0fc19b23be6fecb1e5b6f8a7a">More...</a><br /></td></tr>
 <tr class="separator:a60dac2a0fc19b23be6fecb1e5b6f8a7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45e87333be98b696d587641356155a42"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="thread_8h.html#a45e87333be98b696d587641356155a42">spdk_thread_bind</a> (struct spdk_thread *thread, bool bind)</td></tr>
+<tr class="memdesc:a45e87333be98b696d587641356155a42"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bind or unbind spdk_thread to its current CPU core.  <a href="thread_8h.html#a45e87333be98b696d587641356155a42">More...</a><br /></td></tr>
+<tr class="separator:a45e87333be98b696d587641356155a42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a580245149fcd428b1370386f2260532f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="thread_8h.html#a580245149fcd428b1370386f2260532f">spdk_thread_is_bound</a> (struct spdk_thread *thread)</td></tr>
+<tr class="memdesc:a580245149fcd428b1370386f2260532f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether the thread is bound to its current CPU core.  <a href="thread_8h.html#a580245149fcd428b1370386f2260532f">More...</a><br /></td></tr>
+<tr class="separator:a580245149fcd428b1370386f2260532f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5132d2abe39a40a0e14e19bb2bd15489"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="thread_8h.html#a5132d2abe39a40a0e14e19bb2bd15489">spdk_thread_exit</a> (struct spdk_thread *thread)</td></tr>
 <tr class="memdesc:a5132d2abe39a40a0e14e19bb2bd15489"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mark the thread as exited, failing all future <a class="el" href="thread_8h.html#a07b662b152c21dad824ad2738d0733ec" title="Send a message to the given thread.">spdk_thread_send_msg()</a>, <a class="el" href="thread_8h.html#a6b3e883ddce01ae8d93541304d1e9126" title="Register a poller on the current thread.">spdk_poller_register()</a>, and <a class="el" href="thread_8h.html#a8537c42a7aa203b50578efed509d9ba8" title="Get an I/O channel for the specified io_device to be used by the calling thread.">spdk_get_io_channel()</a> calls.  <a href="thread_8h.html#a5132d2abe39a40a0e14e19bb2bd15489">More...</a><br /></td></tr>
 <tr class="separator:a5132d2abe39a40a0e14e19bb2bd15489"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -416,8 +422,7 @@ typedef&#160;</td><td class="memItemRight" valign="bottom"><b>STAILQ_HEAD</b> (,
 <tr class="separator:a1e97f3caeb779908350fd5176c98ba4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader">Name of the module.</h2></td></tr>
-<tr><td class="ititle" colspan="2"><p><a class="anchor" id="amgrp3417a198fca2cd43bb94ea6d9922ff0a"></a>Register a module as an iobuf pool user.</p>
-<p>Only registered users can request buffers from the iobuf pool.</p>
+<tr><td class="ititle" colspan="2"><p><a class="anchor" id="amgrp3417a198fca2cd43bb94ea6d9922ff0a"></a>Unregister an iobuf pool user from a module.</p>
 <dl class="section return"><dt>Returns</dt><dd>0 on success, negative errno otherwise. </dd></dl>
 </td></tr>
 <tr class="memitem:ad17c5e2e4eadfe701fd0f8ddb482deb4"><td class="memItemLeft" align="right" valign="top"><a id="ad17c5e2e4eadfe701fd0f8ddb482deb4"></a>
@@ -426,6 +431,9 @@ typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_iobuf_f
 <tr class="memitem:a18be1edc45d00e45964e5d34ee7f776b"><td class="memItemLeft" align="right" valign="top"><a id="a18be1edc45d00e45964e5d34ee7f776b"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_iobuf_register_module</b> (const char *name)</td></tr>
 <tr class="separator:a18be1edc45d00e45964e5d34ee7f776b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95f4e6ce0c1a6159c8c8fd485088ae1e"><td class="memItemLeft" align="right" valign="top"><a id="a95f4e6ce0c1a6159c8c8fd485088ae1e"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_iobuf_unregister_module</b> (const char *name)</td></tr>
+<tr class="separator:a95f4e6ce0c1a6159c8c8fd485088ae1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad4e3d5418d2219ba6bd603304c3473de"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="thread_8h.html#ad4e3d5418d2219ba6bd603304c3473de">spdk_iobuf_channel_init</a> (struct <a class="el" href="structspdk__iobuf__channel.html">spdk_iobuf_channel</a> *ch, const char *name, uint32_t small_cache_size, uint32_t large_cache_size)</td></tr>
 <tr class="memdesc:ad4e3d5418d2219ba6bd603304c3473de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize an iobuf channel.  <a href="thread_8h.html#ad4e3d5418d2219ba6bd603304c3473de">More...</a><br /></td></tr>
 <tr class="separator:ad4e3d5418d2219ba6bd603304c3473de"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -2134,6 +2142,44 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_iobuf_register_mo
 
 </div>
 </div>
+<a id="a45e87333be98b696d587641356155a42"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a45e87333be98b696d587641356155a42">&#9670;&nbsp;</a></span>spdk_thread_bind()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_thread_bind </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_thread *&#160;</td>
+          <td class="paramname"><em>thread</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>bind</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Bind or unbind spdk_thread to its current CPU core. </p>
+<p>If spdk_thread is bound, it couldn't be rescheduled to other CPU cores until it is unbound.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">thread</td><td>The thread to bind or not. </td></tr>
+    <tr><td class="paramname">bind</td><td>true for bind, false for unbind. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a49abb69cad49e5f35363d9b8ee990ae2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a49abb69cad49e5f35363d9b8ee990ae2">&#9670;&nbsp;</a></span>spdk_thread_create()</h2>
 
@@ -2631,6 +2677,33 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_iobuf_register_mo
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if there is any active poller, false otherwise. </dd></dl>
+
+</div>
+</div>
+<a id="a580245149fcd428b1370386f2260532f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a580245149fcd428b1370386f2260532f">&#9670;&nbsp;</a></span>spdk_thread_is_bound()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool spdk_thread_is_bound </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_thread *&#160;</td>
+          <td class="paramname"><em>thread</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns whether the thread is bound to its current CPU core. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">thread</td><td>The thread to query.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if bound, false otherwise </dd></dl>
 
 </div>
 </div>

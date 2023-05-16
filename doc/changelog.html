@@ -97,6 +97,7 @@ v23.05: (Upcoming Release)</h1>
 <h2>bdev</h2>
 <p>A new API <code>spdk_bdev_module_claim_bdev_desc</code> was added. Unlike <code>spdk_bdev_module_claim_bdev</code>, this function requires a bdev descriptor to be passed and the claim is automatically released when the descriptor is closed. It allows bdev modules to claim bdevs as a single writer, multiple writers, or multiple readers.</p>
 <p>New APIs <code>spdk_bdev_quiesce</code>, <code>spdk_bdev_unquiesce</code>, <code>spdk_bdev_quiesce_range</code> and <code>spdk_bdev_unquiesce_range</code> were added. These allow I/O to be quiesced on an entire bdev or a specified LBA range.</p>
+<p>Removed <code><a class="el" href="structspdk__bdev__ext__io__opts.html" title="Structure with optional IO request parameters.">spdk_bdev_ext_io_opts</a></code> from <code><a class="el" href="structspdk__bdev__io.html">spdk_bdev_io</a></code> and replaced it with fields that were missing in <code><a class="el" href="structspdk__bdev__io.html">spdk_bdev_io</a></code>.</p>
 <h2>env</h2>
 <p>New functions <code>spdk_env_get_main_core</code> and <code>spdk_env_get_cpuset</code> were added.</p>
 <h2>gpt</h2>
@@ -117,6 +118,8 @@ v23.05: (Upcoming Release)</h1>
 <p>New API <code>spdk_nvme_ns_get_format_index</code> was added to calculate the exact format index, that was used to format the namespace.</p>
 <p>Added two new APIs <code>spdk_nvme_ns_cmd_io_mgmt_recv</code> and <code>spdk_nvme_ns_cmd_io_mgmt_send</code> to receive and send the I/O management commands.</p>
 <p>New <code>spdk_nvmf_transport_create_async</code> was added, it accepts a callback and callback argument. <code>spdk_nvmf_transport_create</code> is marked deprecated.</p>
+<h2>thread</h2>
+<p>Added two new APIs <code>spdk_thread_bind</code> and <code>spdk_thread_is_bound</code> to bind or unbind spdk_thread to its current CPU core, and check bound status.</p>
 <h2>part</h2>
 <p>New API <code>spdk_bdev_part_construct_ext</code> is added and allows the bdev's UUID to be specified.</p>
 <h2>examples</h2>
