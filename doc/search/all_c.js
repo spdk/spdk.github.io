@@ -1,7 +1,6 @@
 var searchData=
 [
-  ['large_438',['large',['../structspdk__iobuf__channel.html#aa42277d0bd373da7535d01880ada3e3d',1,'spdk_iobuf_channel']]],
-  ['large_5fbuf_5fpool_5fsize_439',['large_buf_pool_size',['../structspdk__bdev__opts.html#ab037abe16fea309467c13e036f3e7032',1,'spdk_bdev_opts']]],
+  ['large_439',['large',['../structspdk__iobuf__channel.html#aa42277d0bd373da7535d01880ada3e3d',1,'spdk_iobuf_channel']]],
   ['large_5fbufsize_440',['large_bufsize',['../structspdk__iobuf__opts.html#af9531f2bb491d72e9accf40e8fd287c7',1,'spdk_iobuf_opts']]],
   ['large_5fcache_5fsize_441',['large_cache_size',['../structspdk__accel__opts.html#a6a244938577b1367e9c6541100432633',1,'spdk_accel_opts']]],
   ['large_5fpool_5fcount_442',['large_pool_count',['../structspdk__iobuf__opts.html#ac44e81b77a7886422bc4c4821456cc7b',1,'spdk_iobuf_opts']]],

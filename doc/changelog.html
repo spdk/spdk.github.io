@@ -94,6 +94,7 @@ $(document).ready(function(){initNavTree('changelog.html',''); initResizable(); 
 v23.05: (Upcoming Release)</h1>
 <h2>accel</h2>
 <p>Added API <code>spdk_accel_submit_xor</code> to perform XOR.</p>
+<p>Configuration of <code>mlx5_pci</code> driver of accel_dpdk_cryptodev module was changed. Now key and key2 should have equal length and key size in hexlified form can be either 32 bytes for 128b XTS key or 64 bytes for 256b XTS key. Support of the wrapped crypto credentials mode for this driver is dropped, only plain text mode is supported.</p>
 <h2>bdev</h2>
 <p>A new API <code>spdk_bdev_module_claim_bdev_desc</code> was added. Unlike <code>spdk_bdev_module_claim_bdev</code>, this function requires a bdev descriptor to be passed and the claim is automatically released when the descriptor is closed. It allows bdev modules to claim bdevs as a single writer, multiple writers, or multiple readers.</p>
 <p>New APIs <code>spdk_bdev_quiesce</code>, <code>spdk_bdev_unquiesce</code>, <code>spdk_bdev_quiesce_range</code> and <code>spdk_bdev_unquiesce_range</code> were added. These allow I/O to be quiesced on an entire bdev or a specified LBA range.</p>
@@ -184,6 +185,7 @@ v23.05: (Upcoming Release)</h1>
 <p>Added API <code>spdk_nvme_qpair_get_num_outstanding_reqs</code> to get the number of outstanding reqs of a specified qpair.</p>
 <h2>nvmf</h2>
 <p>Added API <code>spdk_nvmf_tgt_pause_polling</code> and <code>spdk_nvmf_tgt_resume_polling</code> to allow pausing polling on poll group of a given target.</p>
+<p>The <code>num_shared_buffers</code> option now controls the maximum number of buffers a transport will pull from the central <code>iobuf</code> pool. It will not allocate additional memory. If the requested amount cannot be satisfied, a warning will be displayed to increase the size of the <code>iobuf</code> pool.</p>
 <h2>rpc</h2>
 <p>Added <code>spdk_rpc_set_allowlist</code> to restrict allowed RPCs to the specified list.</p>
 <h2>scheduler</h2>

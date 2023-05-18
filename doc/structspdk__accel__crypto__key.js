@@ -7,5 +7,6 @@ var structspdk__accel__crypto__key =
     [ "key_size", "structspdk__accel__crypto__key.html#acc60f9372db9f122c9639b41717b61da", null ],
     [ "module_if", "structspdk__accel__crypto__key.html#a887e1b0bf2e7c89f33c75293e3d839a4", null ],
     [ "param", "structspdk__accel__crypto__key.html#a671a54dba981be3dcec021b0ef49b03b", null ],
-    [ "priv", "structspdk__accel__crypto__key.html#acc9c5ea5eedb9d6b1b9e53da0d446373", null ]
+    [ "priv", "structspdk__accel__crypto__key.html#acc9c5ea5eedb9d6b1b9e53da0d446373", null ],
+    [ "tweak_mode", "structspdk__accel__crypto__key.html#acb216b597d17a3e24f600180181c31bf", null ]
 ];

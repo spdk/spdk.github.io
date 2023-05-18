@@ -332,7 +332,6 @@ var annotated_dup =
     [ "spdk_nvmf_transport", "structspdk__nvmf__transport.html", "structspdk__nvmf__transport" ],
     [ "spdk_nvmf_transport_ops", "structspdk__nvmf__transport__ops.html", "structspdk__nvmf__transport__ops" ],
     [ "spdk_nvmf_transport_opts", "structspdk__nvmf__transport__opts.html", "structspdk__nvmf__transport__opts" ],
-    [ "spdk_nvmf_transport_pg_cache_buf", "structspdk__nvmf__transport__pg__cache__buf.html", "structspdk__nvmf__transport__pg__cache__buf" ],
     [ "spdk_nvmf_transport_poll_group", "structspdk__nvmf__transport__poll__group.html", "structspdk__nvmf__transport__poll__group" ],
     [ "spdk_nvmf_transport_specific_address_subtype", "unionspdk__nvmf__transport__specific__address__subtype.html", "unionspdk__nvmf__transport__specific__address__subtype" ],
     [ "spdk_ocssd_chunk_information_entry", "structspdk__ocssd__chunk__information__entry.html", "structspdk__ocssd__chunk__information__entry" ],
