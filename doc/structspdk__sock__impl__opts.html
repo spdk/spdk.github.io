@@ -130,12 +130,23 @@ Data Fields</h2></td></tr>
 <tr class="memitem:af97f15adfec2e08249ad80b97d2a3e41"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__sock__impl__opts.html#af97f15adfec2e08249ad80b97d2a3e41">enable_ktls</a></td></tr>
 <tr class="memdesc:af97f15adfec2e08249ad80b97d2a3e41"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable or disable kernel TLS.  <a href="structspdk__sock__impl__opts.html#af97f15adfec2e08249ad80b97d2a3e41">More...</a><br /></td></tr>
 <tr class="separator:af97f15adfec2e08249ad80b97d2a3e41"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a730f68745e01fa9a86e5d6497b69b81a"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__sock__impl__opts.html#a730f68745e01fa9a86e5d6497b69b81a">psk_key</a></td></tr>
-<tr class="memdesc:a730f68745e01fa9a86e5d6497b69b81a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set default PSK key.  <a href="structspdk__sock__impl__opts.html#a730f68745e01fa9a86e5d6497b69b81a">More...</a><br /></td></tr>
-<tr class="separator:a730f68745e01fa9a86e5d6497b69b81a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a484d0f8cdbc1e9766fe1742c16afe4c3"><td class="memItemLeft" align="right" valign="top">uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__sock__impl__opts.html#a484d0f8cdbc1e9766fe1742c16afe4c3">psk_key</a></td></tr>
+<tr class="memdesc:a484d0f8cdbc1e9766fe1742c16afe4c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set default PSK key.  <a href="structspdk__sock__impl__opts.html#a484d0f8cdbc1e9766fe1742c16afe4c3">More...</a><br /></td></tr>
+<tr class="separator:a484d0f8cdbc1e9766fe1742c16afe4c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7353b895d0d7df172bf31b5104bbe378"><td class="memItemLeft" align="right" valign="top"><a id="a7353b895d0d7df172bf31b5104bbe378"></a>
+uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__sock__impl__opts.html#a7353b895d0d7df172bf31b5104bbe378">psk_key_size</a></td></tr>
+<tr class="memdesc:a7353b895d0d7df172bf31b5104bbe378"><td class="mdescLeft">&#160;</td><td class="mdescRight">Size of psk_key. <br /></td></tr>
+<tr class="separator:a7353b895d0d7df172bf31b5104bbe378"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9c59538d807ae11b134893068b0f6b21"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__sock__impl__opts.html#a9c59538d807ae11b134893068b0f6b21">psk_identity</a></td></tr>
 <tr class="memdesc:a9c59538d807ae11b134893068b0f6b21"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set default PSK identity.  <a href="structspdk__sock__impl__opts.html#a9c59538d807ae11b134893068b0f6b21">More...</a><br /></td></tr>
 <tr class="separator:a9c59538d807ae11b134893068b0f6b21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a865fb919db826af840cd8fd5e3e8c8f1"><td class="memItemLeft" align="right" valign="top">int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__sock__impl__opts.html#a865fb919db826af840cd8fd5e3e8c8f1">get_key</a> )(uint8_t *out, int out_len, const char **cipher, const char *<a class="el" href="structspdk__sock__impl__opts.html#a9c59538d807ae11b134893068b0f6b21">psk_identity</a>, void *<a class="el" href="structspdk__sock__impl__opts.html#ab751be3465366d7c94ff241f1a29f359">get_key_ctx</a>)</td></tr>
+<tr class="memdesc:a865fb919db826af840cd8fd5e3e8c8f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Optional callback to retrieve PSK based on client's identity.  <a href="structspdk__sock__impl__opts.html#a865fb919db826af840cd8fd5e3e8c8f1">More...</a><br /></td></tr>
+<tr class="separator:a865fb919db826af840cd8fd5e3e8c8f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab751be3465366d7c94ff241f1a29f359"><td class="memItemLeft" align="right" valign="top"><a id="ab751be3465366d7c94ff241f1a29f359"></a>
+void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__sock__impl__opts.html#ab751be3465366d7c94ff241f1a29f359">get_key_ctx</a></td></tr>
+<tr class="memdesc:ab751be3465366d7c94ff241f1a29f359"><td class="mdescLeft">&#160;</td><td class="mdescRight">Context to be passed to <a class="el" href="structspdk__sock__impl__opts.html#a865fb919db826af840cd8fd5e3e8c8f1" title="Optional callback to retrieve PSK based on client&#39;s identity.">get_key()</a> callback. <br /></td></tr>
+<tr class="separator:ab751be3465366d7c94ff241f1a29f359"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>SPDK socket implementation options. </p>
@@ -260,6 +271,33 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
+<a id="a865fb919db826af840cd8fd5e3e8c8f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a865fb919db826af840cd8fd5e3e8c8f1">&#9670;&nbsp;</a></span>get_key</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int(* spdk_sock_impl_opts::get_key) (uint8_t *out, int out_len, const char **cipher, const char *<a class="el" href="structspdk__sock__impl__opts.html#a9c59538d807ae11b134893068b0f6b21">psk_identity</a>, void *<a class="el" href="structspdk__sock__impl__opts.html#ab751be3465366d7c94ff241f1a29f359">get_key_ctx</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Optional callback to retrieve PSK based on client's identity. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">out</td><td>Buffer for PSK in binary format to be filled with found key. </td></tr>
+    <tr><td class="paramname">out_len</td><td>Length of "out" buffer. </td></tr>
+    <tr><td class="paramname">cipher</td><td>Cipher suite to be set by this callback. </td></tr>
+    <tr><td class="paramname">psk_identity</td><td>PSK identity for which the key needs to be found. </td></tr>
+    <tr><td class="paramname">get_key_ctx</td><td>Context for this callback.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>key length on success, -1 on failure. </dd></dl>
+
+</div>
+</div>
 <a id="a9c59538d807ae11b134893068b0f6b21"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9c59538d807ae11b134893068b0f6b21">&#9670;&nbsp;</a></span>psk_identity</h2>
 
@@ -277,14 +315,14 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
-<a id="a730f68745e01fa9a86e5d6497b69b81a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a730f68745e01fa9a86e5d6497b69b81a">&#9670;&nbsp;</a></span>psk_key</h2>
+<a id="a484d0f8cdbc1e9766fe1742c16afe4c3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a484d0f8cdbc1e9766fe1742c16afe4c3">&#9670;&nbsp;</a></span>psk_key</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">char* spdk_sock_impl_opts::psk_key</td>
+          <td class="memname">uint8_t* spdk_sock_impl_opts::psk_key</td>
         </tr>
       </table>
 </div><div class="memdoc">

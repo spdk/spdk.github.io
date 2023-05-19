@@ -6346,7 +6346,9 @@ nvmf_subsystem_add_listener  method</h2>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">tgt_name   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Parent NVMe-oF target name.    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">listen_address   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">object   </td><td class="markdownTableBodyNone"><a class="el" href="jsonrpc.html#rpc_nvmf_listen_address">listen_address</a> object   </td></tr>
+<td class="markdownTableBodyNone">listen_address   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">object   </td><td class="markdownTableBodyNone"><a class="el" href="jsonrpc.html#rpc_nvmf_listen_address">listen_address</a> object    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">secure_channel   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">bool   </td><td class="markdownTableBodyNone">Whether all connections immediately attempt to establish a secure channel   </td></tr>
 </table>
 <h3><a class="anchor" id="rpc_nvmf_listen_address"></a>
 listen_address</h3>
@@ -9013,9 +9015,7 @@ sock_impl_get_options</h2>
 <div class="line">    &quot;enable_zerocopy_send_client&quot;: false,</div>
 <div class="line">    &quot;zerocopy_threshold&quot;: 0,</div>
 <div class="line">    &quot;tls_version&quot;: 13,</div>
-<div class="line">    &quot;enable_ktls&quot;: false,</div>
-<div class="line">    &quot;psk_key&quot;: &quot;1234567890ABCDEF&quot;,</div>
-<div class="line">    &quot;psk_identity&quot;: &quot;psk.spdk.io&quot;</div>
+<div class="line">    &quot;enable_ktls&quot;: false</div>
 <div class="line">  }</div>
 <div class="line">}</div>
 </div><!-- fragment --><h2><a class="anchor" id="rpc_sock_impl_set_options"></a>
@@ -9048,11 +9048,7 @@ sock_impl_set_options</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">tls_version   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">TLS protocol version, e.g. 13 for v1.3 (only applies when impl_name == ssl)    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">enable_ktls   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Enable or disable Kernel TLS (only applies when impl_name == ssl)    </td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">psk_key   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Default PSK KEY in hexadecimal digits, e.g. 1234567890ABCDEF (only applies when impl_name == ssl)    </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">psk_identity   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Default PSK ID, e.g. psk.spdk.io (only applies when impl_name == ssl)   </td></tr>
+<td class="markdownTableBodyNone">enable_ktls   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Enable or disable Kernel TLS (only applies when impl_name == ssl)   </td></tr>
 </table>
 <h3>Response</h3>
 <p>True if socket layer options were set successfully.</p>
@@ -9073,9 +9069,7 @@ sock_impl_set_options</h2>
 <div class="line">    &quot;enable_zerocopy_send_client&quot;: false,</div>
 <div class="line">    &quot;zerocopy_threshold&quot;: 10240,</div>
 <div class="line">    &quot;tls_version&quot;: 13,</div>
-<div class="line">    &quot;enable_ktls&quot;: false,</div>
-<div class="line">    &quot;psk_key&quot;: &quot;1234567890ABCDEF&quot;,</div>
-<div class="line">    &quot;psk_identity&quot;: &quot;psk.spdk.io&quot;</div>
+<div class="line">    &quot;enable_ktls&quot;: false</div>
 <div class="line">  }</div>
 <div class="line">}</div>
 </div><!-- fragment --><p>Example response:</p>

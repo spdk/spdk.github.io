@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="generator" content="Doxygen 1.9.1" />
-  <title>SPDK: spdk_ioviter Struct Reference</title>
+  <title>SPDK: spdk_ioviter::spdk_single_ioviter Struct Reference</title>
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
@@ -66,7 +66,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-$(document).ready(function(){initNavTree('structspdk__ioviter.html',''); initResizable(); });
+$(document).ready(function(){initNavTree('structspdk__ioviter_1_1spdk__single__ioviter.html',''); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -86,43 +86,31 @@ $(document).ready(function(){initNavTree('structspdk__ioviter.html',''); initRes
 
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Data Structures</a> &#124;
 <a href="#pub-attribs">Data Fields</a>  </div>
   <div class="headertitle">
-<div class="title">spdk_ioviter Struct Reference</div>  </div>
+<div class="title">spdk_ioviter::spdk_single_ioviter Struct Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-
-<p>An N-way iovec iterator.  
- <a href="structspdk__ioviter.html#details">More...</a></p>
-<div class="dynheader">
-Collaboration diagram for spdk_ioviter:</div>
-<div class="dyncontent">
-<div class="center"><img src="structspdk__ioviter__coll__graph.png" border="0" usemap="#aspdk__ioviter_coll__map" alt="Collaboration graph"/></div>
-<map name="aspdk__ioviter_coll__map" id="aspdk__ioviter_coll__map">
-<area shape="rect" title="An N&#45;way iovec iterator." alt="" coords="25,109,127,136"/>
-<area shape="rect" href="structspdk__ioviter_1_1spdk__single__ioviter.html" title=" " alt="" coords="5,5,147,47"/>
-</map>
-<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Data Structures</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__ioviter_1_1spdk__single__ioviter.html">spdk_single_ioviter</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:a12cf6dc3cca9f79a8c7ea875187eb38f"><td class="memItemLeft" align="right" valign="top"><a id="a12cf6dc3cca9f79a8c7ea875187eb38f"></a>
-uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>count</b></td></tr>
-<tr class="separator:a12cf6dc3cca9f79a8c7ea875187eb38f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1007454be50a068316be82ade37b18ae"><td class="memItemLeft" align="right" valign="top"><a id="a1007454be50a068316be82ade37b18ae"></a>
-struct <a class="el" href="structspdk__ioviter_1_1spdk__single__ioviter.html">spdk_ioviter::spdk_single_ioviter</a>&#160;</td><td class="memItemRight" valign="bottom"><b>iters</b> [2]</td></tr>
-<tr class="separator:a1007454be50a068316be82ade37b18ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ab5f727d7a48c19c50e5d5f3268710c"><td class="memItemLeft" align="right" valign="top"><a id="a5ab5f727d7a48c19c50e5d5f3268710c"></a>
+struct iovec *&#160;</td><td class="memItemRight" valign="bottom"><b>iov</b></td></tr>
+<tr class="separator:a5ab5f727d7a48c19c50e5d5f3268710c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab91e783726e29b1ced2aee99d1a2a2d4"><td class="memItemLeft" align="right" valign="top"><a id="ab91e783726e29b1ced2aee99d1a2a2d4"></a>
+size_t&#160;</td><td class="memItemRight" valign="bottom"><b>iovcnt</b></td></tr>
+<tr class="separator:ab91e783726e29b1ced2aee99d1a2a2d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c42e8dd004cc3b554f46fffefac4ac5"><td class="memItemLeft" align="right" valign="top"><a id="a8c42e8dd004cc3b554f46fffefac4ac5"></a>
+size_t&#160;</td><td class="memItemRight" valign="bottom"><b>idx</b></td></tr>
+<tr class="separator:a8c42e8dd004cc3b554f46fffefac4ac5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14849c2b5cd192fdb60380479e5cc72a"><td class="memItemLeft" align="right" valign="top"><a id="a14849c2b5cd192fdb60380479e5cc72a"></a>
+size_t&#160;</td><td class="memItemRight" valign="bottom"><b>iov_len</b></td></tr>
+<tr class="separator:a14849c2b5cd192fdb60380479e5cc72a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af05c9bb519e1c6d6e373283e06a70bda"><td class="memItemLeft" align="right" valign="top"><a id="af05c9bb519e1c6d6e373283e06a70bda"></a>
+uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><b>iov_base</b></td></tr>
+<tr class="separator:af05c9bb519e1c6d6e373283e06a70bda"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>An N-way iovec iterator. </p>
-<p>Calculate the size, given N, using SPDK_IOVITER_SIZE. For backward compatibility, the structure has a default size of 2 iovecs. </p>
-</div><hr/>The documentation for this struct was generated from the following file:<ul>
+<hr/>The documentation for this struct was generated from the following file:<ul>
 <li><a class="el" href="util_8h.html">util.h</a></li>
 </ul>
 </div><!-- contents -->

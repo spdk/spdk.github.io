@@ -115,6 +115,11 @@ v23.05: (Upcoming Release)</h1>
 <li><code>spdk_nvmf_ctrlr_abort_aer</code>.</li>
 </ul>
 <p>Parameters <code>cb_fn</code> and <code>ctx</code> of <code>spdk_nvmf_qpair_disconnect</code> API are deprecated. These parameters will be removed in 23.09 release.</p>
+<p>Added a secure_channel parameter to the nvmf_subsystem_add_listener RPC. When true, all connections established via this listener will immediately attempt to establish a secure channel, prior to any authentication. Only valid for the TCP transport.</p>
+<p>Added two optional transport module callbacks: <code>subsystem_add_host()</code> and <code>subsystem_remove_host()</code>. These functions will notify a transport about adding/removing hosts' access.</p>
+<p>TLS PSK identity is now generated from subsystem NQN and host NQN.</p>
+<h2>sock</h2>
+<p>Added a callback <code>get_key()</code> to <code><a class="el" href="structspdk__sock__impl__opts.html" title="SPDK socket implementation options.">spdk_sock_impl_opts</a></code> structure.</p>
 <h2>nvme</h2>
 <p>New API <code>spdk_nvme_ns_get_format_index</code> was added to calculate the exact format index, that was used to format the namespace.</p>
 <p>Added two new APIs <code>spdk_nvme_ns_cmd_io_mgmt_recv</code> and <code>spdk_nvme_ns_cmd_io_mgmt_send</code> to receive and send the I/O management commands.</p>
@@ -125,6 +130,8 @@ v23.05: (Upcoming Release)</h1>
 <p>New API <code>spdk_bdev_part_construct_ext</code> is added and allows the bdev's UUID to be specified.</p>
 <h2>examples</h2>
 <p><code>examples/nvme/perf</code> application now accepts <code>--use-every-core</code> parameter that changes the existing worker and namespace association logic to access every namespace from each worker. This replicates behavior of bdevperf application when <code>-C</code> option is provided.</p>
+<h2>util</h2>
+<p>New APIs <code>spdk_uuid_is_null</code> and <code>spdk_uuid_set_null</code> were added to compare and set UUID to NULL value.</p>
 <h1>v23.01</h1>
 <h2>accel</h2>
 <p>New library isa-l-crypto has been added, it is used by accel library in crypto operations.</p>

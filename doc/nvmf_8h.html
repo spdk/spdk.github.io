@@ -118,6 +118,9 @@ Macros</h2></td></tr>
 <tr class="memitem:aa14fa429c146d151fd9ef3d53df80da8"><td class="memItemLeft" align="right" valign="top"><a id="aa14fa429c146d151fd9ef3d53df80da8"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>NVMF_TGT_NAME_MAX_LENGTH</b>&#160;&#160;&#160;256</td></tr>
 <tr class="separator:aa14fa429c146d151fd9ef3d53df80da8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f78e79bc3f8adf4f29bee917f9a4490"><td class="memItemLeft" align="right" valign="top"><a id="a3f78e79bc3f8adf4f29bee917f9a4490"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_TLS_PSK_MAX_LEN</b>&#160;&#160;&#160;200</td></tr>
+<tr class="separator:a3f78e79bc3f8adf4f29bee917f9a4490"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
@@ -170,9 +173,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ac2d393ea960adf8490e742258feafaf1"><td class="memItemLeft" align="right" valign="top"><a id="ac2d393ea960adf8490e742258feafaf1"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_STATIC_ASSERT</b> (sizeof(struct <a class="el" href="structspdk__nvmf__transport__opts.html">spdk_nvmf_transport_opts</a>)==64, &quot;Incorrect size&quot;)</td></tr>
 <tr class="separator:ac2d393ea960adf8490e742258feafaf1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab4e56638394d2eca067434044f61cb96"><td class="memItemLeft" align="right" valign="top"><a id="ab4e56638394d2eca067434044f61cb96"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_STATIC_ASSERT</b> (sizeof(struct <a class="el" href="structspdk__nvmf__listen__opts.html">spdk_nvmf_listen_opts</a>)==16, &quot;Incorrect size&quot;)</td></tr>
-<tr class="separator:ab4e56638394d2eca067434044f61cb96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a919b26ada32bf50f1894ac0e00893b74"><td class="memItemLeft" align="right" valign="top"><a id="a919b26ada32bf50f1894ac0e00893b74"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_STATIC_ASSERT</b> (sizeof(struct <a class="el" href="structspdk__nvmf__listen__opts.html">spdk_nvmf_listen_opts</a>)==17, &quot;Incorrect size&quot;)</td></tr>
+<tr class="separator:a919b26ada32bf50f1894ac0e00893b74"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1b2405fb75a31157942621df179c7426"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#a1b2405fb75a31157942621df179c7426">spdk_nvmf_listen_opts_init</a> (struct <a class="el" href="structspdk__nvmf__listen__opts.html">spdk_nvmf_listen_opts</a> *opts, size_t opts_size)</td></tr>
 <tr class="memdesc:a1b2405fb75a31157942621df179c7426"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize listen options.  <a href="nvmf_8h.html#a1b2405fb75a31157942621df179c7426">More...</a><br /></td></tr>
 <tr class="separator:a1b2405fb75a31157942621df179c7426"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -254,9 +257,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a8f4f438960707410f3a85258137cf9d3"><td class="memItemLeft" align="right" valign="top">struct spdk_nvmf_subsystem *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#a8f4f438960707410f3a85258137cf9d3">spdk_nvmf_subsystem_get_next</a> (struct spdk_nvmf_subsystem *subsystem)</td></tr>
 <tr class="memdesc:a8f4f438960707410f3a85258137cf9d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Continue iterating over all known subsystems.  <a href="nvmf_8h.html#a8f4f438960707410f3a85258137cf9d3">More...</a><br /></td></tr>
 <tr class="separator:a8f4f438960707410f3a85258137cf9d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a19b3442b7eb75c234c3e3090d2b5add3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#a19b3442b7eb75c234c3e3090d2b5add3">spdk_nvmf_subsystem_add_host</a> (struct spdk_nvmf_subsystem *subsystem, const char *hostnqn)</td></tr>
-<tr class="memdesc:a19b3442b7eb75c234c3e3090d2b5add3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allow the given host NQN to connect to the given subsystem.  <a href="nvmf_8h.html#a19b3442b7eb75c234c3e3090d2b5add3">More...</a><br /></td></tr>
-<tr class="separator:a19b3442b7eb75c234c3e3090d2b5add3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4082cbddea58f9fc309504a6e8254113"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#a4082cbddea58f9fc309504a6e8254113">spdk_nvmf_subsystem_add_host</a> (struct spdk_nvmf_subsystem *subsystem, const char *hostnqn, const struct <a class="el" href="structspdk__json__val.html">spdk_json_val</a> *params)</td></tr>
+<tr class="memdesc:a4082cbddea58f9fc309504a6e8254113"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allow the given host NQN to connect to the given subsystem.  <a href="nvmf_8h.html#a4082cbddea58f9fc309504a6e8254113">More...</a><br /></td></tr>
+<tr class="separator:a4082cbddea58f9fc309504a6e8254113"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a028b2b8739dfdd896414b5c2fb84faf6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#a028b2b8739dfdd896414b5c2fb84faf6">spdk_nvmf_subsystem_remove_host</a> (struct spdk_nvmf_subsystem *subsystem, const char *hostnqn)</td></tr>
 <tr class="memdesc:a028b2b8739dfdd896414b5c2fb84faf6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove the given host NQN from the list of allowed hosts.  <a href="nvmf_8h.html#a028b2b8739dfdd896414b5c2fb84faf6">More...</a><br /></td></tr>
 <tr class="separator:a028b2b8739dfdd896414b5c2fb84faf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1302,8 +1305,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a19b3442b7eb75c234c3e3090d2b5add3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a19b3442b7eb75c234c3e3090d2b5add3">&#9670;&nbsp;</a></span>spdk_nvmf_subsystem_add_host()</h2>
+<a id="a4082cbddea58f9fc309504a6e8254113"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4082cbddea58f9fc309504a6e8254113">&#9670;&nbsp;</a></span>spdk_nvmf_subsystem_add_host()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1318,7 +1321,13 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>hostnqn</em>&#160;</td>
+          <td class="paramname"><em>hostnqn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const struct <a class="el" href="structspdk__json__val.html">spdk_json_val</a> *&#160;</td>
+          <td class="paramname"><em>params</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1332,7 +1341,8 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">subsystem</td><td>Subsystem to add host to. </td></tr>
-    <tr><td class="paramname">hostnqn</td><td>The NQN for the host.</td></tr>
+    <tr><td class="paramname">hostnqn</td><td>The NQN for the host. </td></tr>
+    <tr><td class="paramname">params</td><td>Transport specific parameters.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1674,7 +1684,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>true if any host is allowed to connect to this subsystem, or false if connecting hosts must be in the list configured with <a class="el" href="nvmf_8h.html#a19b3442b7eb75c234c3e3090d2b5add3" title="Allow the given host NQN to connect to the given subsystem.">spdk_nvmf_subsystem_add_host()</a>. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>true if any host is allowed to connect to this subsystem, or false if connecting hosts must be in the list configured with <a class="el" href="nvmf_8h.html#a4082cbddea58f9fc309504a6e8254113" title="Allow the given host NQN to connect to the given subsystem.">spdk_nvmf_subsystem_add_host()</a>. </dd></dl>
 
 </div>
 </div>
@@ -2533,7 +2543,7 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">subsystem</td><td>Subsystem to modify. </td></tr>
-    <tr><td class="paramname">allow_any_host</td><td>true to allow any host to connect to this subsystem, or false to enforce the list configured with <a class="el" href="nvmf_8h.html#a19b3442b7eb75c234c3e3090d2b5add3" title="Allow the given host NQN to connect to the given subsystem.">spdk_nvmf_subsystem_add_host()</a>.</td></tr>
+    <tr><td class="paramname">allow_any_host</td><td>true to allow any host to connect to this subsystem, or false to enforce the list configured with <a class="el" href="nvmf_8h.html#a4082cbddea58f9fc309504a6e8254113" title="Allow the given host NQN to connect to the given subsystem.">spdk_nvmf_subsystem_add_host()</a>.</td></tr>
   </table>
   </dd>
 </dl>
@@ -3031,7 +3041,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Begin accepting new connections at the address provided. </p>
-<p>The connections will be matched with a subsystem, which may or may not allow the connection based on a subsystem-specific list of allowed hosts. See <a class="el" href="nvmf_8h.html#a19b3442b7eb75c234c3e3090d2b5add3" title="Allow the given host NQN to connect to the given subsystem.">spdk_nvmf_subsystem_add_host()</a> and <a class="el" href="nvmf_8h.html#a96ece790c05df3a1f410ef617b2e5cb4" title="Accept new connections on the address provided.">spdk_nvmf_subsystem_add_listener()</a></p>
+<p>The connections will be matched with a subsystem, which may or may not allow the connection based on a subsystem-specific list of allowed hosts. See <a class="el" href="nvmf_8h.html#a4082cbddea58f9fc309504a6e8254113" title="Allow the given host NQN to connect to the given subsystem.">spdk_nvmf_subsystem_add_host()</a> and <a class="el" href="nvmf_8h.html#a96ece790c05df3a1f410ef617b2e5cb4" title="Accept new connections on the address provided.">spdk_nvmf_subsystem_add_listener()</a></p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">tgt</td><td>The target associated with this listen address. </td></tr>

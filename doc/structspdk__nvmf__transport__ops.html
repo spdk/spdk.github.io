@@ -208,6 +208,12 @@ void(*&#160;</td><td class="memItemRight" valign="bottom"><b>qpair_abort_request
 <tr class="memitem:a6bf60055493718fe8aa4e07d16002c2f"><td class="memItemLeft" align="right" valign="top"><a id="a6bf60055493718fe8aa4e07d16002c2f"></a>
 void(*&#160;</td><td class="memItemRight" valign="bottom"><b>poll_group_dump_stat</b> )(struct <a class="el" href="structspdk__nvmf__transport__poll__group.html">spdk_nvmf_transport_poll_group</a> *group, struct spdk_json_write_ctx *w)</td></tr>
 <tr class="separator:a6bf60055493718fe8aa4e07d16002c2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45b3a96ae37a0cedff76737fff1d2860"><td class="memItemLeft" align="right" valign="top"><a id="a45b3a96ae37a0cedff76737fff1d2860"></a>
+int(*&#160;</td><td class="memItemRight" valign="bottom"><b>subsystem_add_host</b> )(struct <a class="el" href="structspdk__nvmf__transport.html">spdk_nvmf_transport</a> *transport, const struct spdk_nvmf_subsystem *subsystem, const char *hostnqn, const struct <a class="el" href="structspdk__json__val.html">spdk_json_val</a> *transport_specific)</td></tr>
+<tr class="separator:a45b3a96ae37a0cedff76737fff1d2860"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d2aca6f2f50c4466061f29171878609"><td class="memItemLeft" align="right" valign="top"><a id="a9d2aca6f2f50c4466061f29171878609"></a>
+void(*&#160;</td><td class="memItemRight" valign="bottom"><b>subsystem_remove_host</b> )(struct <a class="el" href="structspdk__nvmf__transport.html">spdk_nvmf_transport</a> *transport, const struct spdk_nvmf_subsystem *subsystem, const char *hostnqn)</td></tr>
+<tr class="separator:a9d2aca6f2f50c4466061f29171878609"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Field Documentation</h2>
 <a id="a1c70d537837f405619d127ea6a926694"></a>

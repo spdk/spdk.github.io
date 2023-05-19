@@ -1,5 +1,12 @@
 var NAVTREEINDEX33 =
 {
+"unionspdk__nvme__cmd__cdw12.html#a347dc01f193db5c057f8550e2b0f056a":[14,0,154,5],
+"unionspdk__nvme__cmd__cdw12.html#a457787b51c287c86cd90adfb91cfbbcf":[14,0,154,6],
+"unionspdk__nvme__cmd__cdw12.html#a4aa5d516f5a33b90e251c504ce100d46":[14,0,154,9],
+"unionspdk__nvme__cmd__cdw12.html#a66a69d5a4658493fc40183ee9b8d4b17":[14,0,154,3],
+"unionspdk__nvme__cmd__cdw12.html#ab913ab58ba06742207a1e66ebe8dd3eb":[14,0,154,13],
+"unionspdk__nvme__cmd__cdw12.html#af00e2575d78e6879ca714c2ab41cbf4b":[14,0,154,2],
+"unionspdk__nvme__cmd__cdw12.html#afd8bebbedbc90fbc2cb063cb170e45b3":[14,0,154,8],
 "unionspdk__nvme__critical__warning__state.html":[14,0,158],
 "unionspdk__nvme__critical__warning__state.html#a093845218b1e1dd96ecb69eeac9c241d":[14,0,158,0],
 "unionspdk__nvme__critical__warning__state.html#a113097459596a0a0d1d3dbc8b18accc3":[14,0,158,2],
@@ -242,12 +249,5 @@ var NAVTREEINDEX33 =
 "unionspdk__nvmf__rdma__private__data.html#aedcc391f20afe529847ddcab58d40970":[14,0,321,1],
 "unionspdk__nvmf__transport__specific__address__subtype.html":[14,0,333],
 "unionspdk__nvmf__transport__specific__address__subtype.html#a8098cbc03f727ae8ae707dfbf69d3469":[14,0,333,0],
-"unionspdk__nvmf__transport__specific__address__subtype.html#aabae1c961d6f86f0d6b1e61cdaa7a9ce":[14,0,333,1],
-"unionspdk__nvmf__transport__specific__address__subtype.html#aabbc28a7fc2edeca1244ff249a51edb7":[14,0,333,2],
-"usdt.html":[3,11],
-"user_guides.html":[3],
-"userspace.html":[2,0],
-"userspace.html#userspace_control":[2,0,0],
-"userspace.html#userspace_interrupts":[2,0,1],
-"userspace.html#userspace_threading":[2,0,2]
+"unionspdk__nvmf__transport__specific__address__subtype.html#aabae1c961d6f86f0d6b1e61cdaa7a9ce":[14,0,333,1]
 };

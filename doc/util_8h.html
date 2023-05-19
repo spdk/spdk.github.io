@@ -100,7 +100,9 @@ $(document).ready(function(){initNavTree('util_8h.html',''); initResizable(); })
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__ioviter.html">spdk_ioviter</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">An iovec iterator.  <a href="structspdk__ioviter.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">An N-way iovec iterator.  <a href="structspdk__ioviter.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__ioviter_1_1spdk__single__ioviter.html">spdk_ioviter::spdk_single_ioviter</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__iov__xfer.html">spdk_iov_xfer</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transfer state for iterative copying in or out of an iovec.  <a href="structspdk__iov__xfer.html#details">More...</a><br /></td></tr>
@@ -145,6 +147,9 @@ Macros</h2></td></tr>
 <tr class="memitem:a61bd4178f177cf2265279944b0184fcd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8h.html#a61bd4178f177cf2265279944b0184fcd">SPDK_ALIGN_CEIL</a>(val,  align)&#160;&#160;&#160;	<a class="el" href="util_8h.html#a4fe89df2bed54dcdc8b0d33c53a694b6">SPDK_ALIGN_FLOOR</a>(((val) + ((__typeof__(val)) (align) - 1)), align)</td></tr>
 <tr class="memdesc:a61bd4178f177cf2265279944b0184fcd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Macro to align a value to a given power-of-two.  <a href="util_8h.html#a61bd4178f177cf2265279944b0184fcd">More...</a><br /></td></tr>
 <tr class="separator:a61bd4178f177cf2265279944b0184fcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab68c3f1a4bdedea57f4deb58a011f251"><td class="memItemLeft" align="right" valign="top"><a id="ab68c3f1a4bdedea57f4deb58a011f251"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_IOVITER_SIZE</b>(count)&#160;&#160;&#160;(sizeof(struct spdk_single_ioviter) * (count - 2) + sizeof(struct <a class="el" href="structspdk__ioviter.html">spdk_ioviter</a>))</td></tr>
+<tr class="separator:ab68c3f1a4bdedea57f4deb58a011f251"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac14f2b75522d72317def37370adffca1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8h.html#ac14f2b75522d72317def37370adffca1">SPDK_CLANG_ANALYZER_PREINIT_PTR_ARRAY</a>(arr,  arr_size,  buf_size)</td></tr>
 <tr class="memdesc:ac14f2b75522d72317def37370adffca1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Scan build is really pessimistic and assumes that mempool functions can dequeue NULL buffers even if they return success.  <a href="util_8h.html#ac14f2b75522d72317def37370adffca1">More...</a><br /></td></tr>
 <tr class="separator:ac14f2b75522d72317def37370adffca1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -180,9 +185,15 @@ static uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_divid
 <tr class="memitem:ac49e02ee794f8dc5048934504023d6d5"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8h.html#ac49e02ee794f8dc5048934504023d6d5">spdk_ioviter_first</a> (struct <a class="el" href="structspdk__ioviter.html">spdk_ioviter</a> *iter, struct iovec *siov, size_t siovcnt, struct iovec *diov, size_t diovcnt, void **src, void **dst)</td></tr>
 <tr class="memdesc:ac49e02ee794f8dc5048934504023d6d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize and move to the first common segment of the two given iovecs.  <a href="util_8h.html#ac49e02ee794f8dc5048934504023d6d5">More...</a><br /></td></tr>
 <tr class="separator:ac49e02ee794f8dc5048934504023d6d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3597f82a6203011c6d1e5f21c55e3bf9"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8h.html#a3597f82a6203011c6d1e5f21c55e3bf9">spdk_ioviter_firstv</a> (struct <a class="el" href="structspdk__ioviter.html">spdk_ioviter</a> *iter, uint32_t count, struct iovec **iov, size_t *iovcnt, void **out)</td></tr>
+<tr class="memdesc:a3597f82a6203011c6d1e5f21c55e3bf9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize and move to the first common segment of the N given iovecs.  <a href="util_8h.html#a3597f82a6203011c6d1e5f21c55e3bf9">More...</a><br /></td></tr>
+<tr class="separator:a3597f82a6203011c6d1e5f21c55e3bf9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0bbb80ad35ccd2da128fa69acedd2d90"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8h.html#a0bbb80ad35ccd2da128fa69acedd2d90">spdk_ioviter_next</a> (struct <a class="el" href="structspdk__ioviter.html">spdk_ioviter</a> *iter, void **src, void **dst)</td></tr>
 <tr class="memdesc:a0bbb80ad35ccd2da128fa69acedd2d90"><td class="mdescLeft">&#160;</td><td class="mdescRight">Move to the next segment in the iterator.  <a href="util_8h.html#a0bbb80ad35ccd2da128fa69acedd2d90">More...</a><br /></td></tr>
 <tr class="separator:a0bbb80ad35ccd2da128fa69acedd2d90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c02b473289bbf65b2f8f2cba9f65fcc"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8h.html#a1c02b473289bbf65b2f8f2cba9f65fcc">spdk_ioviter_nextv</a> (struct <a class="el" href="structspdk__ioviter.html">spdk_ioviter</a> *iter, void **out)</td></tr>
+<tr class="memdesc:a1c02b473289bbf65b2f8f2cba9f65fcc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Move to the next segment in the iterator.  <a href="util_8h.html#a1c02b473289bbf65b2f8f2cba9f65fcc">More...</a><br /></td></tr>
+<tr class="separator:a1c02b473289bbf65b2f8f2cba9f65fcc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a87d0db9f66fa3fc6763dbbe238c3c179"><td class="memItemLeft" align="right" valign="top"><a id="a87d0db9f66fa3fc6763dbbe238c3c179"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8h.html#a87d0db9f66fa3fc6763dbbe238c3c179">spdk_iov_memset</a> (struct iovec *iovs, int iovcnt, int c)</td></tr>
 <tr class="memdesc:a87d0db9f66fa3fc6763dbbe238c3c179"><td class="mdescLeft">&#160;</td><td class="mdescRight">Operate like memset across an iovec. <br /></td></tr>
@@ -516,6 +527,55 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util
 
 </div>
 </div>
+<a id="a3597f82a6203011c6d1e5f21c55e3bf9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3597f82a6203011c6d1e5f21c55e3bf9">&#9670;&nbsp;</a></span>spdk_ioviter_firstv()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t spdk_ioviter_firstv </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structspdk__ioviter.html">spdk_ioviter</a> *&#160;</td>
+          <td class="paramname"><em>iter</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>count</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct iovec **&#160;</td>
+          <td class="paramname"><em>iov</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t *&#160;</td>
+          <td class="paramname"><em>iovcnt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void **&#160;</td>
+          <td class="paramname"><em>out</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Initialize and move to the first common segment of the N given iovecs. </p>
+<p>See <a class="el" href="util_8h.html#a1c02b473289bbf65b2f8f2cba9f65fcc" title="Move to the next segment in the iterator.">spdk_ioviter_nextv()</a>. </p>
+
+</div>
+</div>
 <a id="a0bbb80ad35ccd2da128fa69acedd2d90"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0bbb80ad35ccd2da128fa69acedd2d90">&#9670;&nbsp;</a></span>spdk_ioviter_next()</h2>
 
@@ -550,6 +610,37 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util
 
 <p>Move to the next segment in the iterator. </p>
 <p>This will iterate through the segments of the source and destination and return the individual segments, one by one. For example, if the source consists of one element of length 4k and the destination consists of 4 elements each of length 1k, this function will return 4 1k src+dst pairs of buffers, and then return 0 bytes to indicate the iteration is complete on the fifth call. </p>
+
+</div>
+</div>
+<a id="a1c02b473289bbf65b2f8f2cba9f65fcc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1c02b473289bbf65b2f8f2cba9f65fcc">&#9670;&nbsp;</a></span>spdk_ioviter_nextv()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t spdk_ioviter_nextv </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structspdk__ioviter.html">spdk_ioviter</a> *&#160;</td>
+          <td class="paramname"><em>iter</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void **&#160;</td>
+          <td class="paramname"><em>out</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Move to the next segment in the iterator. </p>
+<p>This will iterate through the segments of the iovecs in the iterator and return the individual segments, one by one. For example, if the set consists one iovec of one element of length 4k and another iovec of 4 elements each of length 1k, this function will return 4 1k pairs of buffers, and then return 0 bytes to indicate the iteration is complete on the fifth call. </p>
 
 </div>
 </div>

@@ -6,6 +6,7 @@ var nvmf_8h =
     [ "spdk_nvmf_poll_group_stat", "structspdk__nvmf__poll__group__stat.html", "structspdk__nvmf__poll__group__stat" ],
     [ "spdk_nvmf_ns_opts", "structspdk__nvmf__ns__opts.html", "structspdk__nvmf__ns__opts" ],
     [ "NVMF_TGT_NAME_MAX_LENGTH", "nvmf_8h.html#aa14fa429c146d151fd9ef3d53df80da8", null ],
+    [ "SPDK_TLS_PSK_MAX_LEN", "nvmf_8h.html#a3f78e79bc3f8adf4f29bee917f9a4490", null ],
     [ "nvmf_qpair_disconnect_cb", "nvmf_8h.html#abd02f30e6fcb57338c723ffd5c307f0d", null ],
     [ "nvmf_subsystem_destroy_cb", "nvmf_8h.html#acc166b0c39cb5deafea627e5bd16789a", null ],
     [ "spdk_nvmf_poll_group_destroy_done_fn", "nvmf_8h.html#a9a00f59bb3a8fc493a6cf4c3e8744dab", null ],
@@ -45,7 +46,7 @@ var nvmf_8h =
     [ "spdk_nvmf_qpair_get_local_trid", "nvmf_8h.html#ad269e6b66abf6b758569453f4b6fd41a", null ],
     [ "spdk_nvmf_qpair_get_peer_trid", "nvmf_8h.html#a145a3a2e51799674837dcb1ebf9a13c3", null ],
     [ "spdk_nvmf_rdma_init_hooks", "nvmf_8h.html#a9ae1cb4c373e0dd8146b81b5ba57ff0b", null ],
-    [ "spdk_nvmf_subsystem_add_host", "nvmf_8h.html#a19b3442b7eb75c234c3e3090d2b5add3", null ],
+    [ "spdk_nvmf_subsystem_add_host", "nvmf_8h.html#a4082cbddea58f9fc309504a6e8254113", null ],
     [ "spdk_nvmf_subsystem_add_listener", "nvmf_8h.html#a96ece790c05df3a1f410ef617b2e5cb4", null ],
     [ "spdk_nvmf_subsystem_add_ns_ext", "nvmf_8h.html#a9778ef2894d69144defb4f1547bfec15", null ],
     [ "spdk_nvmf_subsystem_allow_any_listener", "nvmf_8h.html#ad5747c07b3d4ce75b4825597ecf32fde", null ],
@@ -105,7 +106,7 @@ var nvmf_8h =
     [ "spdk_nvmf_transport_opts_init", "nvmf_8h.html#a8e8e8b2a3f7a8d4b8ab52e1beef87ab0", null ],
     [ "spdk_nvmf_transport_stop_listen", "nvmf_8h.html#ae261eff09a7b8e6d14d2710c169b17df", null ],
     [ "spdk_nvmf_transport_stop_listen_async", "nvmf_8h.html#a51c3554ddcd16dc80f8d016c9d5d7c9f", null ],
-    [ "SPDK_STATIC_ASSERT", "nvmf_8h.html#ab4e56638394d2eca067434044f61cb96", null ],
+    [ "SPDK_STATIC_ASSERT", "nvmf_8h.html#a919b26ada32bf50f1894ac0e00893b74", null ],
     [ "SPDK_STATIC_ASSERT", "nvmf_8h.html#a3542dbbd3ec77c3bb4b2a3d82c2d118d", null ],
     [ "SPDK_STATIC_ASSERT", "nvmf_8h.html#ac2d393ea960adf8490e742258feafaf1", null ]
 ];

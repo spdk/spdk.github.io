@@ -131,6 +131,12 @@ Functions</h2></td></tr>
 <tr class="memitem:a9080d454ffefb2b8e425ca127b72a546"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uuid_8h.html#a9080d454ffefb2b8e425ca127b72a546">spdk_uuid_copy</a> (struct <a class="el" href="structspdk__uuid.html">spdk_uuid</a> *dst, const struct <a class="el" href="structspdk__uuid.html">spdk_uuid</a> *src)</td></tr>
 <tr class="memdesc:a9080d454ffefb2b8e425ca127b72a546"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy a UUID.  <a href="uuid_8h.html#a9080d454ffefb2b8e425ca127b72a546">More...</a><br /></td></tr>
 <tr class="separator:a9080d454ffefb2b8e425ca127b72a546"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7c287749c1d732f76c052a0d965a806"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uuid_8h.html#ac7c287749c1d732f76c052a0d965a806">spdk_uuid_is_null</a> (const struct <a class="el" href="structspdk__uuid.html">spdk_uuid</a> *uuid)</td></tr>
+<tr class="memdesc:ac7c287749c1d732f76c052a0d965a806"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compare the UUID to the NULL value (all bits equal to zero).  <a href="uuid_8h.html#ac7c287749c1d732f76c052a0d965a806">More...</a><br /></td></tr>
+<tr class="separator:ac7c287749c1d732f76c052a0d965a806"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53ae59f244ea3b5ff76640f56d666f08"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uuid_8h.html#a53ae59f244ea3b5ff76640f56d666f08">spdk_uuid_set_null</a> (struct <a class="el" href="structspdk__uuid.html">spdk_uuid</a> *uuid)</td></tr>
+<tr class="memdesc:a53ae59f244ea3b5ff76640f56d666f08"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the value of UUID to the NULL value.  <a href="uuid_8h.html#a53ae59f244ea3b5ff76640f56d666f08">More...</a><br /></td></tr>
+<tr class="separator:a53ae59f244ea3b5ff76640f56d666f08"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>UUID types and functions. </p>
@@ -333,6 +339,33 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="ac7c287749c1d732f76c052a0d965a806"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac7c287749c1d732f76c052a0d965a806">&#9670;&nbsp;</a></span>spdk_uuid_is_null()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool spdk_uuid_is_null </td>
+          <td>(</td>
+          <td class="paramtype">const struct <a class="el" href="structspdk__uuid.html">spdk_uuid</a> *&#160;</td>
+          <td class="paramname"><em>uuid</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Compare the UUID to the NULL value (all bits equal to zero). </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">uuid</td><td>The UUID to test.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if uuid is equal to the NULL value, false if not. </dd></dl>
+
+</div>
+</div>
 <a id="a8cd6b61828b9ff4d0abbae64c81d1262"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8cd6b61828b9ff4d0abbae64c81d1262">&#9670;&nbsp;</a></span>spdk_uuid_parse()</h2>
 
@@ -368,6 +401,32 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 on success, or negative errno on failure. </dd></dl>
+
+</div>
+</div>
+<a id="a53ae59f244ea3b5ff76640f56d666f08"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a53ae59f244ea3b5ff76640f56d666f08">&#9670;&nbsp;</a></span>spdk_uuid_set_null()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_uuid_set_null </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structspdk__uuid.html">spdk_uuid</a> *&#160;</td>
+          <td class="paramname"><em>uuid</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the value of UUID to the NULL value. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">uuid</td><td>The UUID to set. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
