@@ -14,6 +14,7 @@ var structspdk__sock__impl__opts =
     [ "psk_key_size", "structspdk__sock__impl__opts.html#a7353b895d0d7df172bf31b5104bbe378", null ],
     [ "recv_buf_size", "structspdk__sock__impl__opts.html#ae34d38383f98affcc7c880ab16bd9b72", null ],
     [ "send_buf_size", "structspdk__sock__impl__opts.html#ae57696011bed6b45751719d836b81886", null ],
+    [ "tls_cipher_suites", "structspdk__sock__impl__opts.html#a40b1cf6ca081b93c8e4779e0f289f3c7", null ],
     [ "tls_version", "structspdk__sock__impl__opts.html#ad81ccecfc115648e6616e92ad695e609", null ],
     [ "zerocopy_threshold", "structspdk__sock__impl__opts.html#a012ab72a1bfe745ce5239819c58e5cfc", null ]
 ];

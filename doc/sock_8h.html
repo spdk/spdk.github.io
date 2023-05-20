@@ -155,6 +155,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ab596707e3e18b6f3e4ceb365369a3b8f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sock_8h.html#ab596707e3e18b6f3e4ceb365369a3b8f">spdk_sock_getaddr</a> (struct spdk_sock *sock, char *saddr, int slen, uint16_t *sport, char *caddr, int clen, uint16_t *cport)</td></tr>
 <tr class="memdesc:ab596707e3e18b6f3e4ceb365369a3b8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get client and server addresses of the given socket.  <a href="sock_8h.html#ab596707e3e18b6f3e4ceb365369a3b8f">More...</a><br /></td></tr>
 <tr class="separator:ab596707e3e18b6f3e4ceb365369a3b8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe68595096e108a2fa3e419071963e63"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sock_8h.html#abe68595096e108a2fa3e419071963e63">spdk_sock_get_impl_name</a> (struct spdk_sock *sock)</td></tr>
+<tr class="memdesc:abe68595096e108a2fa3e419071963e63"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get socket implementation name.  <a href="sock_8h.html#abe68595096e108a2fa3e419071963e63">More...</a><br /></td></tr>
+<tr class="separator:abe68595096e108a2fa3e419071963e63"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2403fc0793791d53756e8c12feaceeff"><td class="memItemLeft" align="right" valign="top">struct spdk_sock *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sock_8h.html#a2403fc0793791d53756e8c12feaceeff">spdk_sock_connect</a> (const char *ip, int port, const char *impl_name)</td></tr>
 <tr class="memdesc:a2403fc0793791d53756e8c12feaceeff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a socket using the specific sock implementation, connect the socket to the specified address and port (of the server), and then return the socket.  <a href="sock_8h.html#a2403fc0793791d53756e8c12feaceeff">More...</a><br /></td></tr>
 <tr class="separator:a2403fc0793791d53756e8c12feaceeff"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -504,6 +507,33 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="abe68595096e108a2fa3e419071963e63"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abe68595096e108a2fa3e419071963e63">&#9670;&nbsp;</a></span>spdk_sock_get_impl_name()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* spdk_sock_get_impl_name </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_sock *&#160;</td>
+          <td class="paramname"><em>sock</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get socket implementation name. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sock</td><td>Pointer to SPDK socket.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Implementation name of given socket. </dd></dl>
 
 </div>
 </div>

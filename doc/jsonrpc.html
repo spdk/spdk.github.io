@@ -3164,7 +3164,7 @@ bdev_nvme_attach_controller</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">fast_io_fail_timeout_sec   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">Time to wait until ctrlr is reconnected before failing I/O to ctrlr. 0 means no such timeout.    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">psk   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">PSK in hexadecimal digits, e.g. 1234567890ABCDEF (Enables SSL socket implementation for TCP)    </td></tr>
+<td class="markdownTableBodyNone">psk   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Path to a file contatining PSK for TLS (Enables SSL socket implementation for TCP)    </td></tr>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">max_bdevs   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">The size of the name array for newly created bdevs. Default is 128.   </td></tr>
 </table>
@@ -6561,7 +6561,9 @@ nvmf_subsystem_add_host method</h2>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">host   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Host NQN to add to the list of allowed host NQNs    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">tgt_name   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Parent NVMe-oF target name.   </td></tr>
+<td class="markdownTableBodyNone">tgt_name   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Parent NVMe-oF target name.    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">psk   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Path to a file containing PSK for TLS connection   </td></tr>
 </table>
 <h3>Example</h3>
 <p>Example request:</p>

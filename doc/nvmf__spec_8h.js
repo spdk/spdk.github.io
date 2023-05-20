@@ -68,7 +68,8 @@ var nvmf__spec_8h =
     ] ],
     [ "spdk_nvme_tcp_secure_socket_type", "nvmf__spec_8h.html#ab472926a11e06a7b78af736228718c02", [
       [ "SPDK_NVME_TCP_SECURITY_NONE", "nvmf__spec_8h.html#ab472926a11e06a7b78af736228718c02a8292c624e3a318ed48c1886bbdbeebe7", null ],
-      [ "SPDK_NVME_TCP_SECURITY_TLS", "nvmf__spec_8h.html#ab472926a11e06a7b78af736228718c02ab3e5d80926ec85648aa0a050e79a7d00", null ]
+      [ "SPDK_NVME_TCP_SECURITY_TLS_1_2", "nvmf__spec_8h.html#ab472926a11e06a7b78af736228718c02aca0ccf84f0fbcffbb7123bf80ae6f480", null ],
+      [ "SPDK_NVME_TCP_SECURITY_TLS_1_3", "nvmf__spec_8h.html#ab472926a11e06a7b78af736228718c02a9851d865e271bed5ea7bbeaf20719c59", null ]
     ] ],
     [ "spdk_nvme_tcp_term_req_fes", "nvmf__spec_8h.html#a01b259a43f16326334580c457120be73", [
       [ "SPDK_NVME_TCP_TERM_REQ_FES_INVALID_HEADER_FIELD", "nvmf__spec_8h.html#a01b259a43f16326334580c457120be73abf583a45f9f5bd330e9c56f7ff634172", null ],

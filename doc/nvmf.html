@@ -213,7 +213,41 @@ Configuring the Linux NVMe over Fabrics Host</h1>
 Enabling NVMe-oF target tracepoints for offline analysis and debug</h1>
 <p>SPDK has a tracing framework for capturing low-level event information at runtime. <a class="el" href="nvmf_tgt_tracepoints.html">NVMe-oF Target Tracepoints</a> enable analysis of both performance and application crashes.</p>
 <h1>Enabling NVMe-oF Multipath</h1>
-<p>The SPDK NVMe-oF target and initiator support multiple independent paths to the same NVMe-oF subsystem. For step-by-step instructions for configuring and switching between paths, see <a class="el" href="nvmf_multipath_howto.html">NVMe-oF Multipath HOWTO</a> . </p>
+<p>The SPDK NVMe-oF target and initiator support multiple independent paths to the same NVMe-oF subsystem. For step-by-step instructions for configuring and switching between paths, see <a class="el" href="nvmf_multipath_howto.html">NVMe-oF Multipath HOWTO</a> .</p>
+<h1>Enabling NVMe-oF TLS</h1>
+<p>The SPDK NVMe-oF target and initiator support establishing a secure TCP connection using Transport Layer Security (TLS) protocol in compliance with NVMe TCP transport specification. Only version 1.3 of the TLS protocol is supported. This feature is considered experimental.</p>
+<p>Currently, it is only possible to establish a fabric secure channel using TLS and NVMe-oF in-band authentication is not supported. The channel is protected by a symmetric pre-shared key (PSK) using either <code>TLS_AES_256_GCM_SHA384</code> (recommended) or <code>TLS_AES_128_GCM_SHA256</code> cipher suite. The cipher suite is selected based on the hash function associated with a key. During configuration, the keys are expected to be in the PSK interchange format (see NVMe TCP transport specification 1.0c, section 3.6.1.5).</p>
+<p>The target supports assigning different keys for each host connecting to a given subsystem. It is also possible for a single host to use different keys for different subsystems. The keys are expected to be placed in separate files (with permissions configured only to allow read/write access to the owner) and can be configured using the <code>--psk</code> option in the <code>nvmf_subsystem_add_host</code> RPC. Additionally, to allow establishing TLS connections on a given listener, it must be created with <code>--secure-channel</code> option enabled. It's also worth noting that this option is mutually exclusive with <code>--allow-any-host</code> subsystem option and trying to add a listener to such a subsystem will result in an error.</p>
+<p>On the initiator side, the key can be specified using <code>--psk</code> option in the <code>bdev_nvme_attach_controller</code> RPC.</p>
+<p>Recommendations on the pre-shared keys:</p>
+<ul>
+<li>It is strongly recommended to change the keys at least once a year.</li>
+<li>Use a strong cryptographic random number generator that provides sufficient entropy to generate the keys (e.g. HSM).</li>
+<li>Use a single key to secure transmission between two systems only.</li>
+<li>Delete files containing PSKs as soon as they are not needed.</li>
+</ul>
+<p>Additionally, it is recommended to follow: <a href="https://www.rfc-editor.org/rfc/rfc9257.html">RFC 9257 'Guidance for External Pre-Shared Key (PSK) Usage in TLS'</a></p>
+<h2>Target setup</h2>
+<div class="fragment"><div class="line">cat key.txt</div>
+<div class="line">NVMeTLSkey-1:01:MDAxMTIyMzM0NDU1NjY3Nzg4OTlhYWJiY2NkZGVlZmZwJEiQ:</div>
+<div class="line"> </div>
+<div class="line">build/bin/nvmf_tgt &amp;</div>
+<div class="line">scripts/rpc.py nvmf_create_transport -t TCP</div>
+<div class="line">scripts/rpc.py nvmf_create_subsystem nqn.2016-06.io.spdk:cnode1 -s SPDK00000000000001 -m 10</div>
+<div class="line">scripts/rpc.py nvmf_subsystem_add_listener nqn.2016-06.io.spdk:cnode1 -t tcp -a 127.0.0.1 -s 4420 \</div>
+<div class="line">               --secure-channel</div>
+<div class="line">scripts/rpc.py nvmf_subsystem_add_host nqn.2016-06.io.spdk:cnode1 nqn.2016-06.io.spdk:host1 \</div>
+<div class="line">               --psk key.txt</div>
+</div><!-- fragment --><h2>Initiator setup</h2>
+<p>For SPDK initiator example, bdevperf application may be used, because it depends on SPDK's NVMe TCP driver.</p>
+<div class="fragment"><div class="line">cat key.txt</div>
+<div class="line">NVMeTLSkey-1:01:MDAxMTIyMzM0NDU1NjY3Nzg4OTlhYWJiY2NkZGVlZmZwJEiQ:</div>
+<div class="line"> </div>
+<div class="line">build/examples/bdevperf -m 0x2 -z -r /var/tmp/bdevperf.sock -q 128 -o 4096 -w verify -t 10 &amp;</div>
+<div class="line">scripts/rpc.py -s /var/tmp/bdevperf.sock bdev_nvme_attach_controller -b TLSTEST -t tcp -a 127.0.0.1 \</div>
+<div class="line">               -s 4420 -f ipv4 -n nqn.2016-06.io.spdk:cnode1 -q nqn.2016-06.io.spdk:host1 \</div>
+<div class="line">               --psk key.txt</div>
+</div><!-- fragment --><p>First of the two commands will launch bdevperf, the second one will attempt to construct NVMe bdev and establish TLS connection. Of course, the same PSK must be used on both the target and the initiator side. </p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->

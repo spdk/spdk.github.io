@@ -1,5 +1,6 @@
 var NAVTREEINDEX6 =
 {
+"iscsi__spec_8h.html#a938baf1d0707ec9289e350cfbbed7a0a":[15,0,32,69],
 "iscsi__spec_8h.html#a94fc93b1eef14a2ea3b07eeed4afec20":[15,0,32,79],
 "iscsi__spec_8h.html#a986978914c003f3149c8b418ad7cab55":[15,0,32,90],
 "iscsi__spec_8h.html#a9cd87a034cf8d8aa42b5203460f03a12":[15,0,32,95],
@@ -248,6 +249,5 @@ var NAVTREEINDEX6 =
 "jsonrpc.html#rpc_bdev_nvme_get_io_paths":[3,9,5,41],
 "jsonrpc.html#rpc_bdev_nvme_get_mdns_discovery_info":[3,9,13,16],
 "jsonrpc.html#rpc_bdev_nvme_get_path_iostat":[3,9,5,44],
-"jsonrpc.html#rpc_bdev_nvme_get_transport_statistics":[3,9,5,50],
-"jsonrpc.html#rpc_bdev_nvme_opal_init":[3,9,9,23]
+"jsonrpc.html#rpc_bdev_nvme_get_transport_statistics":[3,9,5,50]
 };
