@@ -1,5 +1,6 @@
 var NAVTREEINDEX4 =
 {
+"globals.html":[15,1,0],
 "globals.html":[15,1,0,0],
 "globals_defs.html":[15,1,5],
 "globals_enum.html":[15,1,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX4 =
 "idxd__spec_8h.html#a73719ebe622e0736dc510af4746c29cd":[15,0,28,99],
 "idxd__spec_8h.html#a74e0da80e9db5422b6002d3f1d7c8447":[15,0,28,103],
 "idxd__spec_8h.html#a779d8ce10ad90611e808db6366fd1a7e":[15,0,28,48],
-"idxd__spec_8h.html#a779d8ce10ad90611e808db6366fd1a7ea0443b50274fee9b9b0783bb7a48d7134":[15,0,28,48,16],
-"idxd__spec_8h.html#a779d8ce10ad90611e808db6366fd1a7ea077dc38d07db8c0eb9828aad7715c7d3":[15,0,28,48,27]
+"idxd__spec_8h.html#a779d8ce10ad90611e808db6366fd1a7ea0443b50274fee9b9b0783bb7a48d7134":[15,0,28,48,16]
 };

@@ -487,6 +487,9 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_trty
 <tr class="memitem:a0538f261b89d0cdb455638dba52ea4b8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a0538f261b89d0cdb455638dba52ea4b8">spdk_nvme_qpair_set_abort_dnr</a> (struct spdk_nvme_qpair *qpair, bool dnr)</td></tr>
 <tr class="memdesc:a0538f261b89d0cdb455638dba52ea4b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Control if DNR is set or not for aborted commands.  <a href="nvme_8h.html#a0538f261b89d0cdb455638dba52ea4b8">More...</a><br /></td></tr>
 <tr class="separator:a0538f261b89d0cdb455638dba52ea4b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a935eb1d9b76305022e0d88e3594c38c1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a935eb1d9b76305022e0d88e3594c38c1">spdk_nvme_qpair_is_connected</a> (struct spdk_nvme_qpair *qpair)</td></tr>
+<tr class="memdesc:a935eb1d9b76305022e0d88e3594c38c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the connection status of a given qpair.  <a href="nvme_8h.html#a935eb1d9b76305022e0d88e3594c38c1">More...</a><br /></td></tr>
+<tr class="separator:a935eb1d9b76305022e0d88e3594c38c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afe2a9d3b715649b4d0a0e89196a13e6d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#afe2a9d3b715649b4d0a0e89196a13e6d">spdk_nvme_ctrlr_cmd_admin_raw</a> (struct spdk_nvme_ctrlr *ctrlr, struct <a class="el" href="structspdk__nvme__cmd.html">spdk_nvme_cmd</a> *cmd, void *buf, uint32_t len, <a class="el" href="nvme_8h.html#a1786f9616afc773b20f752dc98ecd465">spdk_nvme_cmd_cb</a> cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:afe2a9d3b715649b4d0a0e89196a13e6d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send the given admin command to the NVMe controller.  <a href="nvme_8h.html#afe2a9d3b715649b4d0a0e89196a13e6d">More...</a><br /></td></tr>
 <tr class="separator:afe2a9d3b715649b4d0a0e89196a13e6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -9069,6 +9072,33 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_trty
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Pointer to the optimal poll group, or NULL if not found. </dd></dl>
+
+</div>
+</div>
+<a id="a935eb1d9b76305022e0d88e3594c38c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a935eb1d9b76305022e0d88e3594c38c1">&#9670;&nbsp;</a></span>spdk_nvme_qpair_is_connected()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool spdk_nvme_qpair_is_connected </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_nvme_qpair *&#160;</td>
+          <td class="paramname"><em>qpair</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Return the connection status of a given qpair. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">qpair</td><td>The qpair to check.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the qpair is connected, or false otherwise. </dd></dl>
 
 </div>
 </div>

@@ -5,6 +5,7 @@ var structspdk__dif__ctx =
     [ "block_size", "structspdk__dif__ctx.html#a2853eeaf8a9c7bb372d4632748c5105a", null ],
     [ "data_offset", "structspdk__dif__ctx.html#a3ec98963b1c1a4c69e45e7b0b5841151", null ],
     [ "dif_flags", "structspdk__dif__ctx.html#a49e9befa6a66be7c01205a42f3746bb5", null ],
+    [ "dif_pi_format", "structspdk__dif__ctx.html#a2342657f5bbd67bfdd4c7e460af5ff8c", null ],
     [ "dif_type", "structspdk__dif__ctx.html#a87509f51370bf129ab20993e1695c66a", null ],
     [ "guard_interval", "structspdk__dif__ctx.html#a593aef5de5694c4abd05554ed4ac92a7", null ],
     [ "guard_seed", "structspdk__dif__ctx.html#a4a88c9f2f65216b9d5b61e49665f389b", null ],
