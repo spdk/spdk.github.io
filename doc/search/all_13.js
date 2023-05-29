@@ -1841,7 +1841,7 @@ var searchData=
   ['spdk_5fscsi_5fvpd_5fpage_2588',['spdk_scsi_vpd_page',['../structspdk__scsi__vpd__page.html',1,'']]],
   ['spdk_5fset_5fthread_2589',['spdk_set_thread',['../thread_8h.html#a60dac2a0fc19b23be6fecb1e5b6f8a7a',1,'thread.h']]],
   ['spdk_5fsighandler_5ft_2590',['spdk_sighandler_t',['../event_8h.html#a6371e3e4903529f9c94e25d224580a44',1,'event.h']]],
-  ['spdk_5fsingle_5fioviter_2591',['spdk_single_ioviter',['../structspdk__ioviter_1_1spdk__single__ioviter.html',1,'spdk_ioviter']]],
+  ['spdk_5fsingle_5fioviter_2591',['spdk_single_ioviter',['../structspdk__single__ioviter.html',1,'']]],
   ['spdk_5fsizeof_5fmember_2592',['SPDK_SIZEOF_MEMBER',['../util_8h.html#a84582307b17e6428bfdd287c9b8b5e3d',1,'util.h']]],
   ['spdk_5fsmp_5fmb_2593',['spdk_smp_mb',['../barrier_8h.html#a07ef3ca027c4f24491ec4114c0e0a727',1,'barrier.h']]],
   ['spdk_5fsmp_5frmb_2594',['spdk_smp_rmb',['../barrier_8h.html#a9b87848d3379310e4ade28a63fc038d5',1,'barrier.h']]],

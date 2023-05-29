@@ -99,10 +99,10 @@ $(document).ready(function(){initNavTree('util_8h.html',''); initResizable(); })
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__single__ioviter.html">spdk_single_ioviter</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__ioviter.html">spdk_ioviter</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">An N-way iovec iterator.  <a href="structspdk__ioviter.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__ioviter_1_1spdk__single__ioviter.html">spdk_ioviter::spdk_single_ioviter</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__iov__xfer.html">spdk_iov_xfer</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transfer state for iterative copying in or out of an iovec.  <a href="structspdk__iov__xfer.html#details">More...</a><br /></td></tr>
@@ -148,7 +148,7 @@ Macros</h2></td></tr>
 <tr class="memdesc:a61bd4178f177cf2265279944b0184fcd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Macro to align a value to a given power-of-two.  <a href="util_8h.html#a61bd4178f177cf2265279944b0184fcd">More...</a><br /></td></tr>
 <tr class="separator:a61bd4178f177cf2265279944b0184fcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab68c3f1a4bdedea57f4deb58a011f251"><td class="memItemLeft" align="right" valign="top"><a id="ab68c3f1a4bdedea57f4deb58a011f251"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_IOVITER_SIZE</b>(count)&#160;&#160;&#160;(sizeof(struct spdk_single_ioviter) * (count - 2) + sizeof(struct <a class="el" href="structspdk__ioviter.html">spdk_ioviter</a>))</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_IOVITER_SIZE</b>(count)&#160;&#160;&#160;(sizeof(struct <a class="el" href="structspdk__single__ioviter.html">spdk_single_ioviter</a>) * (count - 2) + sizeof(struct <a class="el" href="structspdk__ioviter.html">spdk_ioviter</a>))</td></tr>
 <tr class="separator:ab68c3f1a4bdedea57f4deb58a011f251"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac14f2b75522d72317def37370adffca1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8h.html#ac14f2b75522d72317def37370adffca1">SPDK_CLANG_ANALYZER_PREINIT_PTR_ARRAY</a>(arr,  arr_size,  buf_size)</td></tr>
 <tr class="memdesc:ac14f2b75522d72317def37370adffca1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Scan build is really pessimistic and assumes that mempool functions can dequeue NULL buffers even if they return success.  <a href="util_8h.html#ac14f2b75522d72317def37370adffca1">More...</a><br /></td></tr>

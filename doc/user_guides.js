@@ -374,6 +374,7 @@ var user_guides =
         [ "bdev_raid_get_bdevs", "jsonrpc.html#rpc_bdev_raid_get_bdevs", null ],
         [ "bdev_raid_create", "jsonrpc.html#rpc_bdev_raid_create", null ],
         [ "bdev_raid_delete", "jsonrpc.html#rpc_bdev_raid_delete", null ],
+        [ "bdev_raid_remove_base_bdev", "jsonrpc.html#rpc_bdev_raid_remove_base_bdev", null ],
         [ "bdev_split_create", "jsonrpc.html#rpc_bdev_split_create", null ],
         [ "bdev_split_delete", "jsonrpc.html#rpc_bdev_split_delete", null ],
         [ "bdev_uring_create", "jsonrpc.html#rpc_bdev_uring_create", null ],

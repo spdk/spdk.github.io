@@ -1,5 +1,7 @@
 var NAVTREEINDEX34 =
 {
+"unionspdk__nvme__vs__register.html#a606617023ad17e6cd547b7ba0c17af06":[14,0,272,4],
+"unionspdk__nvme__vs__register.html#a607eecc53661c6bb736ace86c1ca38bf":[14,0,272,3],
 "unionspdk__nvme__vs__register.html#af3cf51c1c70771d507686f9a5979ab39":[14,0,272,2],
 "unionspdk__nvmf__rdma__private__data.html":[14,0,321],
 "unionspdk__nvmf__rdma__private__data.html#a12eb26a169c9c79b890f3c9ae77fa5da":[14,0,321,2],

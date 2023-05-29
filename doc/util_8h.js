@@ -1,7 +1,7 @@
 var util_8h =
 [
+    [ "spdk_single_ioviter", "structspdk__single__ioviter.html", "structspdk__single__ioviter" ],
     [ "spdk_ioviter", "structspdk__ioviter.html", "structspdk__ioviter" ],
-    [ "spdk_single_ioviter", "structspdk__ioviter_1_1spdk__single__ioviter.html", "structspdk__ioviter_1_1spdk__single__ioviter" ],
     [ "spdk_iov_xfer", "structspdk__iov__xfer.html", "structspdk__iov__xfer" ],
     [ "__STDC_WANT_LIB_EXT1__", "util_8h.html#a7a104b2e349617222c6419b36bfd3260", null ],
     [ "SPDK_ALIGN_CEIL", "util_8h.html#a61bd4178f177cf2265279944b0184fcd", null ],

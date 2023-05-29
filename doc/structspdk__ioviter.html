@@ -86,7 +86,6 @@ $(document).ready(function(){initNavTree('structspdk__ioviter.html',''); initRes
 
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Data Structures</a> &#124;
 <a href="#pub-attribs">Data Fields</a>  </div>
   <div class="headertitle">
 <div class="title">spdk_ioviter Struct Reference</div>  </div>
@@ -100,24 +99,26 @@ Collaboration diagram for spdk_ioviter:</div>
 <div class="dyncontent">
 <div class="center"><img src="structspdk__ioviter__coll__graph.png" border="0" usemap="#aspdk__ioviter_coll__map" alt="Collaboration graph"/></div>
 <map name="aspdk__ioviter_coll__map" id="aspdk__ioviter_coll__map">
-<area shape="rect" title="An N&#45;way iovec iterator." alt="" coords="25,109,127,136"/>
-<area shape="rect" href="structspdk__ioviter_1_1spdk__single__ioviter.html" title=" " alt="" coords="5,5,147,47"/>
+<area shape="rect" title="An N&#45;way iovec iterator." alt="" coords="28,109,131,136"/>
+<area shape="rect" href="structspdk__single__ioviter.html" title=" " alt="" coords="5,5,153,32"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Data Structures</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__ioviter_1_1spdk__single__ioviter.html">spdk_single_ioviter</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
 <tr class="memitem:a12cf6dc3cca9f79a8c7ea875187eb38f"><td class="memItemLeft" align="right" valign="top"><a id="a12cf6dc3cca9f79a8c7ea875187eb38f"></a>
 uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>count</b></td></tr>
 <tr class="separator:a12cf6dc3cca9f79a8c7ea875187eb38f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1007454be50a068316be82ade37b18ae"><td class="memItemLeft" align="right" valign="top"><a id="a1007454be50a068316be82ade37b18ae"></a>
-struct <a class="el" href="structspdk__ioviter_1_1spdk__single__ioviter.html">spdk_ioviter::spdk_single_ioviter</a>&#160;</td><td class="memItemRight" valign="bottom"><b>iters</b> [2]</td></tr>
-<tr class="separator:a1007454be50a068316be82ade37b18ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a386014247a45575560e5a43c768a7932"><td class="memItemLeft" ><a id="a386014247a45575560e5a43c768a7932"></a>
+union {</td></tr>
+<tr class="memitem:a6841966a35489ebd496b77c7f0449084"><td class="memItemLeft" >
+&#160;&#160;&#160;struct <a class="el" href="structspdk__single__ioviter.html">spdk_single_ioviter</a>&#160;&#160;&#160;<b>iters_compat</b> [2]</td></tr>
+<tr class="separator:a6841966a35489ebd496b77c7f0449084"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad265eb8d0f6de0907fb1f01ff38092b7"><td class="memItemLeft" >
+&#160;&#160;&#160;struct <a class="el" href="structspdk__single__ioviter.html">spdk_single_ioviter</a>&#160;&#160;&#160;<b>iters</b> [0]</td></tr>
+<tr class="separator:ad265eb8d0f6de0907fb1f01ff38092b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a386014247a45575560e5a43c768a7932"><td class="memItemLeft" valign="top">};&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:a386014247a45575560e5a43c768a7932"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>An N-way iovec iterator. </p>

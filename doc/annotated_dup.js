@@ -383,6 +383,7 @@ var annotated_dup =
     [ "spdk_scsi_unmap_bdesc", "structspdk__scsi__unmap__bdesc.html", "structspdk__scsi__unmap__bdesc" ],
     [ "spdk_scsi_vpd_ext_inquiry", "structspdk__scsi__vpd__ext__inquiry.html", "structspdk__scsi__vpd__ext__inquiry" ],
     [ "spdk_scsi_vpd_page", "structspdk__scsi__vpd__page.html", "structspdk__scsi__vpd__page" ],
+    [ "spdk_single_ioviter", "structspdk__single__ioviter.html", "structspdk__single__ioviter" ],
     [ "spdk_sock_impl_opts", "structspdk__sock__impl__opts.html", "structspdk__sock__impl__opts" ],
     [ "spdk_sock_opts", "structspdk__sock__opts.html", "structspdk__sock__opts" ],
     [ "spdk_sock_request", "structspdk__sock__request.html", "structspdk__sock__request" ],

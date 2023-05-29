@@ -177,7 +177,7 @@ var NAVTREEINDEX6 =
 "jsonrpc.html#jsonrpc_invalid_params":[3,9,1,1],
 "jsonrpc.html#jsonrpc_overview":[3,9,0],
 "jsonrpc.html#jsonrpc_parser_error":[3,9,1,0],
-"jsonrpc.html#notify_get_notifications":[3,9,9,31],
+"jsonrpc.html#notify_get_notifications":[3,9,9,32],
 "jsonrpc.html#rpc_accel_assign_opc":[3,9,4,2],
 "jsonrpc.html#rpc_accel_crypto_key_create":[3,9,4,3],
 "jsonrpc.html#rpc_accel_crypto_key_destroy":[3,9,4,4],

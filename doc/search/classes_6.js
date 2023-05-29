@@ -334,7 +334,7 @@ var searchData=
   ['spdk_5fscsi_5funmap_5fbdesc_3387',['spdk_scsi_unmap_bdesc',['../structspdk__scsi__unmap__bdesc.html',1,'']]],
   ['spdk_5fscsi_5fvpd_5fext_5finquiry_3388',['spdk_scsi_vpd_ext_inquiry',['../structspdk__scsi__vpd__ext__inquiry.html',1,'']]],
   ['spdk_5fscsi_5fvpd_5fpage_3389',['spdk_scsi_vpd_page',['../structspdk__scsi__vpd__page.html',1,'']]],
-  ['spdk_5fsingle_5fioviter_3390',['spdk_single_ioviter',['../structspdk__ioviter_1_1spdk__single__ioviter.html',1,'spdk_ioviter']]],
+  ['spdk_5fsingle_5fioviter_3390',['spdk_single_ioviter',['../structspdk__single__ioviter.html',1,'']]],
   ['spdk_5fsock_5fimpl_5fopts_3391',['spdk_sock_impl_opts',['../structspdk__sock__impl__opts.html',1,'']]],
   ['spdk_5fsock_5fopts_3392',['spdk_sock_opts',['../structspdk__sock__opts.html',1,'']]],
   ['spdk_5fsock_5frequest_3393',['spdk_sock_request',['../structspdk__sock__request.html',1,'']]],
