@@ -226,6 +226,8 @@ var user_guides =
         [ "bdev_nvme_get_controllers", "jsonrpc.html#rpc_bdev_nvme_get_controllers", null ],
         [ "bdev_nvme_detach_controller", "jsonrpc.html#rpc_bdev_nvme_detach_controller", null ],
         [ "bdev_nvme_reset_controller", "jsonrpc.html#rpc_bdev_nvme_reset_controller", null ],
+        [ "bdev_nvme_enable_controller", "jsonrpc.html#rpc_bdev_nvme_enable_controller", null ],
+        [ "bdev_nvme_disable_controller", "jsonrpc.html#rpc_bdev_nvme_disable_controller", null ],
         [ "bdev_nvme_start_discovery", "jsonrpc.html#rpc_bdev_nvme_start_discovery", null ],
         [ "bdev_nvme_stop_discovery", "jsonrpc.html#rpc_bdev_nvme_stop_discovery", null ],
         [ "bdev_nvme_get_discovery_info", "jsonrpc.html#rpc_bdev_nvme_get_discovery_info", null ],

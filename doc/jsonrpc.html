@@ -3270,7 +3270,7 @@ bdev_nvme_detach_controller</h2>
 </div><!-- fragment --><h2><a class="anchor" id="rpc_bdev_nvme_reset_controller"></a>
 bdev_nvme_reset_controller</h2>
 <p>For non NVMe multipath, reset an NVMe controller whose name is given by the <code>name</code> parameter.</p>
-<p>For NVMe multipath, an NVMe bdev controller is created and it aggregates multiple NVMe controllers. The <code>name</code> parameter is an NVMe bdev controller name and the <code>cntlid</code> parameter is used to identify an NVMe controller in the NVMe bdev controller. Reset only one NVMe-oF controlelr if the <code>cntlid</code> parameter is specified, or all NVMe-oF controllers in an NVMe bdev controller if it is omitted.</p>
+<p>For NVMe multipath, an NVMe bdev controller is created and it aggregates multiple NVMe controllers. The <code>name</code> parameter is an NVMe bdev controller name and the <code>cntlid</code> parameter is used to identify an NVMe controller in the NVMe bdev controller. Reset only one NVMe-oF controller if the <code>cntlid</code> parameter is specified, or all NVMe-oF controllers in an NVMe bdev controller if it is omitted.</p>
 <p>Returns true if the controller reset was successful, false otherwise.</p>
 <h3>Parameters</h3>
 <table class="markdownTable">
@@ -3287,6 +3287,66 @@ bdev_nvme_reset_controller</h2>
 <div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
 <div class="line">  &quot;id&quot;: 1,</div>
 <div class="line">  &quot;method&quot;: &quot;bdev_nvme_reset_controller&quot;,</div>
+<div class="line">  &quot;params&quot;: {</div>
+<div class="line">    &quot;name&quot;: &quot;Nvme0&quot;</div>
+<div class="line">  }</div>
+<div class="line">}</div>
+</div><!-- fragment --><p>Example response:</p>
+<div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
+<div class="line">  &quot;id&quot;: 1,</div>
+<div class="line">  &quot;result&quot;: true</div>
+<div class="line">}</div>
+</div><!-- fragment --><h2><a class="anchor" id="rpc_bdev_nvme_enable_controller"></a>
+bdev_nvme_enable_controller</h2>
+<p>For non NVMe multipath, enable an NVMe controller whose name is given by the <code>name</code> parameter.</p>
+<p>For NVMe multipath, an NVMe bdev controller is created and it aggregates multiple NVMe controllers. The <code>name</code> parameter is an NVMe bdev controller name and the <code>cntlid</code> parameter is used to identify an NVMe controller in the NVMe bdev controller. Enable only one NVMe-oF controller if the <code>cntlid</code> parameter is specified, or all NVMe-oF controllers in an NVMe bdev controller if it is omitted.</p>
+<p>Returns true if the controller enablement was successful or a controller was already enabled, false otherwise.</p>
+<h3>Parameters</h3>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">NVMe controller name (or NVMe bdev controller name for multipath)    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">cntlid   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">NVMe controller ID (used as NVMe controller name for multipath)   </td></tr>
+</table>
+<h3>Example</h3>
+<p>Example request:</p>
+<div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
+<div class="line">  &quot;id&quot;: 1,</div>
+<div class="line">  &quot;method&quot;: &quot;bdev_nvme_enable_controller&quot;,</div>
+<div class="line">  &quot;params&quot;: {</div>
+<div class="line">    &quot;name&quot;: &quot;Nvme0&quot;</div>
+<div class="line">  }</div>
+<div class="line">}</div>
+</div><!-- fragment --><p>Example response:</p>
+<div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
+<div class="line">  &quot;id&quot;: 1,</div>
+<div class="line">  &quot;result&quot;: true</div>
+<div class="line">}</div>
+</div><!-- fragment --><h2><a class="anchor" id="rpc_bdev_nvme_disable_controller"></a>
+bdev_nvme_disable_controller</h2>
+<p>For non NVMe multipath, disable an NVMe controller whose name is given by the <code>name</code> parameter.</p>
+<p>For NVMe multipath, an NVMe bdev controller is created and it aggregates multiple NVMe controllers. The <code>name</code> parameter is an NVMe bdev controller name and the <code>cntlid</code> parameter is used to identify an NVMe controller in the NVMe bdev controller. Disable only one NVMe-oF controller if the <code>cntlid</code> parameter is specified, or all NVMe-oF controllers in an NVMe bdev controller if it is omitted.</p>
+<p>Returns true if the controller disablement was successful or a controller was already disabled, false otherwise.</p>
+<h3>Parameters</h3>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">NVMe controller name (or NVMe bdev controller name for multipath)    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">cntlid   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">NVMe controller ID (used as NVMe controller name for multipath)   </td></tr>
+</table>
+<h3>Example</h3>
+<p>Example request:</p>
+<div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
+<div class="line">  &quot;id&quot;: 1,</div>
+<div class="line">  &quot;method&quot;: &quot;bdev_nvme_disable_controller&quot;,</div>
 <div class="line">  &quot;params&quot;: {</div>
 <div class="line">    &quot;name&quot;: &quot;Nvme0&quot;</div>
 <div class="line">  }</div>

@@ -1,5 +1,7 @@
 var NAVTREEINDEX28 =
 {
+"structspdk__nvmf__transport__ops.html#ae291f6b1041d0b4a65d3f82fc2184f81":[14,0,330,8],
+"structspdk__nvmf__transport__ops.html#aed5e033370fe6ce1a68ebeffd3184eb5":[14,0,330,2],
 "structspdk__nvmf__transport__ops.html#af0c5a0e08b9fad80e893300411062d61":[14,0,330,29],
 "structspdk__nvmf__transport__ops.html#afa8e71018c357d6f6ea2293e178fe295":[14,0,330,11],
 "structspdk__nvmf__transport__opts.html":[14,0,331],
@@ -247,7 +249,5 @@ var NAVTREEINDEX28 =
 "structspdk__pci__device_1_1__spdk__pci__device__internal.html#a7593c55137b63f8f8aada2d974acdc34":[14,0,354,0,2],
 "structspdk__pci__device_1_1__spdk__pci__device__internal.html#a9283b58bdd73e40901b788728a81f19d":[14,0,354,0,0],
 "structspdk__pci__device_1_1__spdk__pci__device__internal.html#aaee18ce18587afdd407c6668ef9220ce":[14,0,354,0,4],
-"structspdk__pci__device_1_1__spdk__pci__device__internal.html#acf21c093c29e7b709e5d76037eac801f":[14,0,354,0,3],
-"structspdk__pci__device__provider.html":[14,0,355],
-"structspdk__pci__device__provider.html#a1e6db45ddbdcb5a05d188c9f5642fb46":[14,0,355,2]
+"structspdk__pci__device_1_1__spdk__pci__device__internal.html#acf21c093c29e7b709e5d76037eac801f":[14,0,354,0,3]
 };

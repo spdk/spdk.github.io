@@ -1,5 +1,7 @@
 var NAVTREEINDEX16 =
 {
+"scsi__spec_8h.html#ac9b82b35110c44cfa49ad3b5ce89c384aeb6d22b91c5a6c81d2bb496aba3e3de5":[15,0,53,55,4],
+"scsi__spec_8h.html#ac9b82b35110c44cfa49ad3b5ce89c384aef0b76d653c219ed78fe2502328467e6":[15,0,53,55,43],
 "scsi__spec_8h.html#ac9b82b35110c44cfa49ad3b5ce89c384af5e74221ab59ad041ae31d09bc700d73":[15,0,53,55,28],
 "scsi__spec_8h.html#ac9b82b35110c44cfa49ad3b5ce89c384af84c199b8c885110f894b64c04a1a391":[15,0,53,55,18],
 "scsi__spec_8h.html#ac9b82b35110c44cfa49ad3b5ce89c384af95798cb2fa08a65ca2c27990b502753":[15,0,53,55,41],
@@ -247,7 +249,5 @@ var NAVTREEINDEX16 =
 "structidxd__hw__desc.html#aef3b5d4878718393e29a5459f40ebf45":[14,0,19,3],
 "structidxd__hw__desc.html#aef4dc777c6b3fe243c773658faa6640c":[14,0,19,8],
 "structidxd__hw__desc.html#af5371b40d046e970c44ad520c71bb834":[14,0,19,29],
-"structidxd__opcap__register.html":[14,0,22],
-"structidxd__opcap__register.html#a7f5a2df019c5a2c3e51e5296be4c19fb":[14,0,22,0],
-"structidxd__registers.html":[14,0,23]
+"structidxd__opcap__register.html":[14,0,22]
 };
