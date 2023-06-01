@@ -13,7 +13,7 @@ var searchData=
   ['acqs_18',['acqs',['../unionspdk__nvme__aqa__register.html#a3f5ae033d3569600cfe59e2fc4add132',1,'spdk_nvme_aqa_register']]],
   ['action_5fin_5fprogress_19',['action_in_progress',['../structspdk__bdev__module_1_1____bdev__module__internal__fields.html#ac487dd3b111bdf81b2b5532ff5fc2f51',1,'spdk_bdev_module::__bdev_module_internal_fields']]],
   ['active_5fslot_20',['active_slot',['../structspdk__nvme__firmware__page.html#a4b0118df5ff338d05e9710374aae8c92',1,'spdk_nvme_firmware_page']]],
-  ['actual_21',['actual',['../structspdk__dif__error.html#a99e10c98889d74c9dedd9a5b4c2be836',1,'spdk_dif_error']]],
+  ['actual_21',['actual',['../structspdk__dif__error.html#a136940e1925824b10ba12d9007bba5e9',1,'spdk_dif_error']]],
   ['acwu_22',['acwu',['../structspdk__bdev.html#ab10f57ea24409424fd71a3b53d6fe31e',1,'spdk_bdev::acwu()'],['../structspdk__nvme__ctrlr__data.html#aa4a9189b9c5616ab345b02540277782c',1,'spdk_nvme_ctrlr_data::acwu()']]],
   ['admin_5fcmds_5fsupported_23',['admin_cmds_supported',['../structspdk__nvme__cmds__and__effect__log__page.html#a8e4e4d1032629199462b5affa2d7c440',1,'spdk_nvme_cmds_and_effect_log_page']]],
   ['admin_5fqueue_5fsize_24',['admin_queue_size',['../structspdk__nvme__ctrlr__opts.html#ad508875fdb8f634aa15fbdcb5e60d391',1,'spdk_nvme_ctrlr_opts']]],

@@ -365,7 +365,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_set_opts</b>
 <tr class="memdesc:ac94b5900766ec42da5fc3658a5749858"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get DIF type of the block device.  <a href="bdev_8h.html#ac94b5900766ec42da5fc3658a5749858">More...</a><br /></td></tr>
 <tr class="separator:ac94b5900766ec42da5fc3658a5749858"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4e43a19692e14e5e46b3315e4cf0bc1d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev_8h.html#a4e43a19692e14e5e46b3315e4cf0bc1d">spdk_bdev_is_dif_head_of_md</a> (const struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *bdev)</td></tr>
-<tr class="memdesc:a4e43a19692e14e5e46b3315e4cf0bc1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check whether DIF is set in the first 8 bytes or the last 8 bytes of metadata.  <a href="bdev_8h.html#a4e43a19692e14e5e46b3315e4cf0bc1d">More...</a><br /></td></tr>
+<tr class="memdesc:a4e43a19692e14e5e46b3315e4cf0bc1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check whether DIF is set in the first 8/16 bytes or the last 8/16 bytes of metadata.  <a href="bdev_8h.html#a4e43a19692e14e5e46b3315e4cf0bc1d">More...</a><br /></td></tr>
 <tr class="separator:a4e43a19692e14e5e46b3315e4cf0bc1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a147389751cd351d30703e28f522e9610"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev_8h.html#a147389751cd351d30703e28f522e9610">spdk_bdev_is_dif_check_enabled</a> (const struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *bdev, enum spdk_dif_check_type check_type)</td></tr>
 <tr class="memdesc:a147389751cd351d30703e28f522e9610"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check whether the DIF check type is enabled.  <a href="bdev_8h.html#a147389751cd351d30703e28f522e9610">More...</a><br /></td></tr>
@@ -2739,14 +2739,14 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_set_opts</b>
       </table>
 </div><div class="memdoc">
 
-<p>Check whether DIF is set in the first 8 bytes or the last 8 bytes of metadata. </p>
+<p>Check whether DIF is set in the first 8/16 bytes or the last 8/16 bytes of metadata. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">bdev</td><td>Block device to query. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>true if DIF is set in the first 8 bytes of metadata, or false if DIF is set in the last 8 bytes of metadata.</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>true if DIF is set in the first 8/16 bytes of metadata, or false if DIF is set in the last 8/16 bytes of metadata.</dd></dl>
 <p>Note that this function is valid only if DIF type is not SPDK_DIF_DISABLE. </p>
 
 </div>

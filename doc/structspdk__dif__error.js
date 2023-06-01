@@ -1,7 +1,7 @@
 var structspdk__dif__error =
 [
-    [ "actual", "structspdk__dif__error.html#a99e10c98889d74c9dedd9a5b4c2be836", null ],
+    [ "actual", "structspdk__dif__error.html#a136940e1925824b10ba12d9007bba5e9", null ],
     [ "err_offset", "structspdk__dif__error.html#a596249f0c0d8883a9228788314ab0c39", null ],
     [ "err_type", "structspdk__dif__error.html#a77e96c6a1eb3364f9491ad128b05cb86", null ],
-    [ "expected", "structspdk__dif__error.html#a9b85800d2326eb0506821b9efce20215", null ]
+    [ "expected", "structspdk__dif__error.html#a9edcaaf246845c6e789e4e1bbf69918a", null ]
 ];

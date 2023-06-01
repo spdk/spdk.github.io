@@ -124,9 +124,9 @@ enum spdk_dif_pi_format&#160;</td><td class="memItemRight" valign="bottom"><a cl
 <tr class="memitem:a49e9befa6a66be7c01205a42f3746bb5"><td class="memItemLeft" align="right" valign="top"><a id="a49e9befa6a66be7c01205a42f3746bb5"></a>
 uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>dif_flags</b></td></tr>
 <tr class="separator:a49e9befa6a66be7c01205a42f3746bb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac5d6870db5b4eb661b7a37f94ff81dc8"><td class="memItemLeft" align="right" valign="top"><a id="ac5d6870db5b4eb661b7a37f94ff81dc8"></a>
-uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>init_ref_tag</b></td></tr>
-<tr class="separator:ac5d6870db5b4eb661b7a37f94ff81dc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a417ad87cea53a4eb434b5e050ee31b6f"><td class="memItemLeft" align="right" valign="top"><a id="a417ad87cea53a4eb434b5e050ee31b6f"></a>
+uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>init_ref_tag</b></td></tr>
+<tr class="separator:a417ad87cea53a4eb434b5e050ee31b6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1a7fa6ed12d7ca935e24e20f1a4fac88"><td class="memItemLeft" align="right" valign="top"><a id="a1a7fa6ed12d7ca935e24e20f1a4fac88"></a>
 uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__dif__ctx.html#a1a7fa6ed12d7ca935e24e20f1a4fac88">app_tag</a></td></tr>
 <tr class="memdesc:a1a7fa6ed12d7ca935e24e20f1a4fac88"><td class="mdescLeft">&#160;</td><td class="mdescRight">Application tag. <br /></td></tr>
@@ -140,12 +140,12 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>data_offset</b></
 <tr class="memitem:aef0637cad47cfd8bc20bb0f085c59479"><td class="memItemLeft" align="right" valign="top"><a id="aef0637cad47cfd8bc20bb0f085c59479"></a>
 uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>ref_tag_offset</b></td></tr>
 <tr class="separator:aef0637cad47cfd8bc20bb0f085c59479"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aafb02a3a698fd60230e4a5fc3da883f4"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__dif__ctx.html#aafb02a3a698fd60230e4a5fc3da883f4">last_guard</a></td></tr>
-<tr class="memdesc:aafb02a3a698fd60230e4a5fc3da883f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Guard value of the last data block.  <a href="structspdk__dif__ctx.html#aafb02a3a698fd60230e4a5fc3da883f4">More...</a><br /></td></tr>
-<tr class="separator:aafb02a3a698fd60230e4a5fc3da883f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4a88c9f2f65216b9d5b61e49665f389b"><td class="memItemLeft" align="right" valign="top"><a id="a4a88c9f2f65216b9d5b61e49665f389b"></a>
-uint16_t&#160;</td><td class="memItemRight" valign="bottom"><b>guard_seed</b></td></tr>
-<tr class="separator:a4a88c9f2f65216b9d5b61e49665f389b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a838b6ccc7dab810e5188f626580a754f"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__dif__ctx.html#a838b6ccc7dab810e5188f626580a754f">last_guard</a></td></tr>
+<tr class="memdesc:a838b6ccc7dab810e5188f626580a754f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Guard value of the last data block.  <a href="structspdk__dif__ctx.html#a838b6ccc7dab810e5188f626580a754f">More...</a><br /></td></tr>
+<tr class="separator:a838b6ccc7dab810e5188f626580a754f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aecb99976528ee90b381a7850c0898e20"><td class="memItemLeft" align="right" valign="top"><a id="aecb99976528ee90b381a7850c0898e20"></a>
+uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>guard_seed</b></td></tr>
+<tr class="separator:aecb99976528ee90b381a7850c0898e20"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adac7e6a0e70395682a50e1b3d678d792"><td class="memItemLeft" align="right" valign="top"><a id="adac7e6a0e70395682a50e1b3d678d792"></a>
 uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>remapped_init_ref_tag</b></td></tr>
 <tr class="separator:adac7e6a0e70395682a50e1b3d678d792"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -153,14 +153,14 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>remapped_init_ref
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>DIF context information. </p>
 </div><h2 class="groupheader">Field Documentation</h2>
-<a id="aafb02a3a698fd60230e4a5fc3da883f4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aafb02a3a698fd60230e4a5fc3da883f4">&#9670;&nbsp;</a></span>last_guard</h2>
+<a id="a838b6ccc7dab810e5188f626580a754f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a838b6ccc7dab810e5188f626580a754f">&#9670;&nbsp;</a></span>last_guard</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint16_t spdk_dif_ctx::last_guard</td>
+          <td class="memname">uint32_t spdk_dif_ctx::last_guard</td>
         </tr>
       </table>
 </div><div class="memdoc">
