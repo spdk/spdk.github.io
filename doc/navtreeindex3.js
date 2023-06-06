@@ -1,5 +1,8 @@
 var NAVTREEINDEX3 =
 {
+"env_8h.html#a2be5bc3f8fc570f45f2ad087fcb91f9e":[15,0,19,82],
+"env_8h.html#a2fb4967ae71277512334ad27ef481326":[15,0,19,61],
+"env_8h.html#a3314f2917141bf11f5b125c306d4397d":[15,0,19,63],
 "env_8h.html#a35497ea1837fa72486971df83005c0a4":[15,0,19,126],
 "env_8h.html#a35a1b0ba34d824e4bd0a63af0a331916":[15,0,19,19],
 "env_8h.html#a397f334df8126cae08a8499688e1601f":[15,0,19,75],
@@ -246,8 +249,5 @@ var NAVTREEINDEX3 =
 "general.html":[5],
 "getting_started.html":[1,1],
 "getting_started.html#getting_started_building":[1,1,2],
-"getting_started.html#getting_started_examples":[1,1,4],
-"getting_started.html#getting_started_prerequisites":[1,1,1],
-"getting_started.html#getting_started_source":[1,1,0],
-"getting_started.html#getting_started_unittests":[1,1,3]
+"getting_started.html#getting_started_examples":[1,1,4]
 };

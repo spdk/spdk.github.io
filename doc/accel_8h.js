@@ -20,6 +20,10 @@ var accel_8h =
       [ "ACCEL_OPC_XOR", "accel_8h.html#a009c73029ad0ef1eed6de0ca4406bf5baa2bbbad90905d6e7b83ca880d9e5b2db", null ],
       [ "ACCEL_OPC_LAST", "accel_8h.html#a009c73029ad0ef1eed6de0ca4406bf5bac7aee028e81d8fa135ae717148af57ed", null ]
     ] ],
+    [ "spdk_accel_cipher", "accel_8h.html#a3b9cb25874b4f36fc5e34e4cf0820aad", [
+      [ "SPDK_ACCEL_CIPHER_AES_CBC", "accel_8h.html#a3b9cb25874b4f36fc5e34e4cf0820aada5c06def3db43ced7501c65e1929b5d7c", null ],
+      [ "SPDK_ACCEL_CIPHER_AES_XTS", "accel_8h.html#a3b9cb25874b4f36fc5e34e4cf0820aadaa85c3e9b5492580f08fa48ec938f751a", null ]
+    ] ],
     [ "spdk_accel_append_copy", "accel_8h.html#a51ed9c807379914cef1c5eaf05a3b9f7", null ],
     [ "spdk_accel_append_crc32c", "accel_8h.html#a378b527c7ee062af40c4aef4ea2f4cbc", null ],
     [ "spdk_accel_append_decompress", "accel_8h.html#af28cbbf84a76a09ad52af0f679f923c4", null ],

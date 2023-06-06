@@ -1,5 +1,8 @@
 var NAVTREEINDEX6 =
 {
+"iscsi__spec_8h.html#a870efa242b7f01cb57548c6b0d39724a":[15,0,32,39],
+"iscsi__spec_8h.html#a8f8f3c53f1dc4fe8ceefe4254271b2cc":[15,0,32,35],
+"iscsi__spec_8h.html#a907e699159718ef097359bb12bfc0ad8":[15,0,32,87],
 "iscsi__spec_8h.html#a92b6769e1c1ad8a82378352eddbb9491":[15,0,32,74],
 "iscsi__spec_8h.html#a938baf1d0707ec9289e350cfbbed7a0a":[15,0,32,69],
 "iscsi__spec_8h.html#a94fc93b1eef14a2ea3b07eeed4afec20":[15,0,32,79],
@@ -246,8 +249,5 @@ var NAVTREEINDEX6 =
 "jsonrpc.html#rpc_bdev_nvme_detach_controller":[3,9,5,36],
 "jsonrpc.html#rpc_bdev_nvme_disable_controller":[3,9,5,39],
 "jsonrpc.html#rpc_bdev_nvme_enable_controller":[3,9,5,38],
-"jsonrpc.html#rpc_bdev_nvme_get_controller_health_info":[3,9,5,53],
-"jsonrpc.html#rpc_bdev_nvme_get_controllers":[3,9,5,35],
-"jsonrpc.html#rpc_bdev_nvme_get_discovery_info":[3,9,5,42],
-"jsonrpc.html#rpc_bdev_nvme_get_io_paths":[3,9,5,43]
+"jsonrpc.html#rpc_bdev_nvme_get_controller_health_info":[3,9,5,53]
 };
