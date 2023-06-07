@@ -128,6 +128,10 @@ Macros</h2></td></tr>
 <tr class="memitem:ace0946954cf4fed6e4f3b7f87180f984"><td class="memItemLeft" align="right" valign="top"><a id="ace0946954cf4fed6e4f3b7f87180f984"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_CONTAINEROF</b>(ptr,  type,  member)&#160;&#160;&#160;((type *)((uintptr_t)ptr - offsetof(type, member)))</td></tr>
 <tr class="separator:ace0946954cf4fed6e4f3b7f87180f984"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42fd1c29c4cbe74363973322468bbd33"><td class="memItemLeft" align="right" valign="top"><a id="a42fd1c29c4cbe74363973322468bbd33"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8h.html#a42fd1c29c4cbe74363973322468bbd33">SPDK_SIZEOF</a>(ptr,  member)&#160;&#160;&#160;(offsetof(__typeof__(*(ptr)), member) + sizeof((ptr)-&gt;member))</td></tr>
+<tr class="memdesc:a42fd1c29c4cbe74363973322468bbd33"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns size of an object pointer by ptr up to and including member. <br /></td></tr>
+<tr class="separator:a42fd1c29c4cbe74363973322468bbd33"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a84582307b17e6428bfdd287c9b8b5e3d"><td class="memItemLeft" align="right" valign="top"><a id="a84582307b17e6428bfdd287c9b8b5e3d"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8h.html#a84582307b17e6428bfdd287c9b8b5e3d">SPDK_SIZEOF_MEMBER</a>(type,  member)&#160;&#160;&#160;(sizeof(((type *)0)-&gt;member))</td></tr>
 <tr class="memdesc:a84582307b17e6428bfdd287c9b8b5e3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the size of a member of a struct. <br /></td></tr>

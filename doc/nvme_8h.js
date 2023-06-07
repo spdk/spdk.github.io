@@ -260,8 +260,8 @@ var nvme_8h =
     [ "spdk_nvme_transport_set_opts", "nvme_8h.html#a327cc2f4818d3111bdc8485a9b844d4f", null ],
     [ "spdk_nvme_trid_populate_transport", "nvme_8h.html#ab5ab0982e7e0191fd16f041a268966b5", null ],
     [ "spdk_nvme_trtype_is_fabrics", "nvme_8h.html#a9d50c30580eef93831a6e473dfc00051", null ],
-    [ "SPDK_STATIC_ASSERT", "nvme_8h.html#aed8e34da22ea23b3c1e012f52c198132", null ],
+    [ "SPDK_STATIC_ASSERT", "nvme_8h.html#a43a0b4aaebb1567c481b034b7dc2d5d9", null ],
     [ "SPDK_STATIC_ASSERT", "nvme_8h.html#aba57917b55ff781230c632b6a19897be", null ],
     [ "SPDK_STATIC_ASSERT", "nvme_8h.html#a1c7d8b5592cb9674eb0e270e33a8902d", null ],
-    [ "SPDK_STATIC_ASSERT", "nvme_8h.html#a826ab00cf15a96e4962de4a7afa46ab3", null ]
+    [ "SPDK_STATIC_ASSERT", "nvme_8h.html#afd4d5269b489196bf1d930eb2c478281", null ]
 ];
