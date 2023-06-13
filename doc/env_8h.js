@@ -46,11 +46,11 @@ var env_8h =
     [ "spdk_call_unaffinitized", "env_8h.html#abafaea6fc34059237e54e0ab254d0f28", null ],
     [ "spdk_delay_us", "env_8h.html#ab2e338ce2d6510489ae83bfff226b8b1", null ],
     [ "spdk_dma_free", "env_8h.html#acd01324e661a5d6deb59bd2bc6230de3", null ],
-    [ "spdk_dma_malloc", "env_8h.html#a0874731c44ac31e4b14d91c6844a87d1", null ],
-    [ "spdk_dma_malloc_socket", "env_8h.html#a4c470325a493f204e1b1535d4b7bb1e9", null ],
-    [ "spdk_dma_realloc", "env_8h.html#a205172871786d57fca65f76a96874cdb", null ],
-    [ "spdk_dma_zmalloc", "env_8h.html#ab5b4bd563b918e721fd5006bfe960bc6", null ],
-    [ "spdk_dma_zmalloc_socket", "env_8h.html#a7f4e9f571d0b77a46ef0192e4cfb13f0", null ],
+    [ "spdk_dma_malloc", "env_8h.html#ac9b56bdbcfeeebe6ad61eb574c823268", null ],
+    [ "spdk_dma_malloc_socket", "env_8h.html#adc1051e8f2c56403c55435c079b4f77b", null ],
+    [ "spdk_dma_realloc", "env_8h.html#a7327bf788d5f76dc793ed2d9ee1b14e3", null ],
+    [ "spdk_dma_zmalloc", "env_8h.html#ae33af43d2e6f8037a58149c1defeb16c", null ],
+    [ "spdk_dma_zmalloc_socket", "env_8h.html#a8a6c3cc4df9f71125dec5c4c703ee1b0", null ],
     [ "spdk_env_fini", "env_8h.html#a719b5099cc3aa62190a1f44642ba6f91", null ],
     [ "spdk_env_get_core_count", "env_8h.html#a4461ccdde430461ad2756b3799099330", null ],
     [ "spdk_env_get_cpuset", "env_8h.html#a8a54ecf72f47decc6e8abc0bafcb578f", null ],
@@ -68,7 +68,7 @@ var env_8h =
     [ "spdk_get_ticks", "env_8h.html#a7d868d272aa0c000f6135966dfadc596", null ],
     [ "spdk_get_ticks_hz", "env_8h.html#a0e7d0eb3000d71b588486cf9903cd434", null ],
     [ "spdk_iommu_is_enabled", "env_8h.html#ab7e36d9cc7a1aa8ae701bec368502273", null ],
-    [ "spdk_malloc", "env_8h.html#a668370523a786a75a7d08a8e8f4b28b9", null ],
+    [ "spdk_malloc", "env_8h.html#a54dee7b759c26ff2a7e1789ddb59f214", null ],
     [ "spdk_mem_get_fd_and_offset", "env_8h.html#ab44e2bc97e1b87f737d664c047f6c3f2", null ],
     [ "spdk_mem_map_alloc", "env_8h.html#aa1baea2604a87f2544317cf0c7309a44", null ],
     [ "spdk_mem_map_clear_translation", "env_8h.html#a2fb4967ae71277512334ad27ef481326", null ],
@@ -156,5 +156,5 @@ var env_8h =
     [ "spdk_ring_free", "env_8h.html#a3f1ec5c3714962d4b01ceb5a50571dca", null ],
     [ "spdk_unaffinitize_thread", "env_8h.html#a925f8e1d1ed12fc1b7eb057a5c5b7bfd", null ],
     [ "spdk_vtophys", "env_8h.html#ae73d54bd295c1d46aa9a45df17e6aa40", null ],
-    [ "spdk_zmalloc", "env_8h.html#a49ad245dae3554cf96d62e9b2b0b1596", null ]
+    [ "spdk_zmalloc", "env_8h.html#a3ccd5c242af65c41dbe49ae2d903b5e4", null ]
 ];
