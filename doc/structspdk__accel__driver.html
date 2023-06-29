@@ -108,22 +108,26 @@ Data Fields</h2></td></tr>
 const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__accel__driver.html#a6bb6f2903745ca4cd6a16f8f17463f80">name</a></td></tr>
 <tr class="memdesc:a6bb6f2903745ca4cd6a16f8f17463f80"><td class="mdescLeft">&#160;</td><td class="mdescRight">Name of the driver. <br /></td></tr>
 <tr class="separator:a6bb6f2903745ca4cd6a16f8f17463f80"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8b880e91c0a7e2ba59a8c20cb0f6cb01"><td class="memItemLeft" align="right" valign="top">int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__accel__driver.html#a8b880e91c0a7e2ba59a8c20cb0f6cb01">execute_sequence</a> )(struct spdk_accel_sequence *seq)</td></tr>
-<tr class="memdesc:a8b880e91c0a7e2ba59a8c20cb0f6cb01"><td class="mdescLeft">&#160;</td><td class="mdescRight">Executes a sequence of accel operations.  <a href="structspdk__accel__driver.html#a8b880e91c0a7e2ba59a8c20cb0f6cb01">More...</a><br /></td></tr>
-<tr class="separator:a8b880e91c0a7e2ba59a8c20cb0f6cb01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28a4ffcf8a04cc9629936f342d15e6bd"><td class="memItemLeft" align="right" valign="top">int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__accel__driver.html#a28a4ffcf8a04cc9629936f342d15e6bd">execute_sequence</a> )(struct spdk_io_channel *ch, struct spdk_accel_sequence *seq)</td></tr>
+<tr class="memdesc:a28a4ffcf8a04cc9629936f342d15e6bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Executes a sequence of accel operations.  <a href="structspdk__accel__driver.html#a28a4ffcf8a04cc9629936f342d15e6bd">More...</a><br /></td></tr>
+<tr class="separator:a28a4ffcf8a04cc9629936f342d15e6bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2cc90720578b4cebe6baa9af1987979"><td class="memItemLeft" align="right" valign="top"><a id="ab2cc90720578b4cebe6baa9af1987979"></a>
+struct spdk_io_channel *(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__accel__driver.html#ab2cc90720578b4cebe6baa9af1987979">get_io_channel</a> )(void)</td></tr>
+<tr class="memdesc:ab2cc90720578b4cebe6baa9af1987979"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns IO channel that will be passed to <code><a class="el" href="structspdk__accel__driver.html#a28a4ffcf8a04cc9629936f342d15e6bd" title="Executes a sequence of accel operations.">execute_sequence()</a></code>. <br /></td></tr>
+<tr class="separator:ab2cc90720578b4cebe6baa9af1987979"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Platform driver responsible for executing tasks in a sequence. </p>
 <p>If no driver is selected, tasks are submitted to accel modules. All drivers are required to be aware of memory domains. </p>
 </div><h2 class="groupheader">Field Documentation</h2>
-<a id="a8b880e91c0a7e2ba59a8c20cb0f6cb01"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8b880e91c0a7e2ba59a8c20cb0f6cb01">&#9670;&nbsp;</a></span>execute_sequence</h2>
+<a id="a28a4ffcf8a04cc9629936f342d15e6bd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a28a4ffcf8a04cc9629936f342d15e6bd">&#9670;&nbsp;</a></span>execute_sequence</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int(* spdk_accel_driver::execute_sequence) (struct spdk_accel_sequence *seq)</td>
+          <td class="memname">int(* spdk_accel_driver::execute_sequence) (struct spdk_io_channel *ch, struct spdk_accel_sequence *seq)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -132,7 +136,8 @@ const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <p>The driver should notify accel about each completed task using <code>spdk_accel_task_complete()</code>. Once all tasks are completed or the driver cannot proceed with a given task (e.g. because it doesn't handle specific opcode), accel should be notified via <code>spdk_accel_sequence_continue()</code>. If there are tasks left in a sequence, the first will be submitted to a module, while the rest will be sent back to the driver. <code>spdk_accel_sequence_continue()</code> should only be called if this function succeeds (i.e. returns 0).</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">Sequence</td><td>of tasks to execute.</td></tr>
+    <tr><td class="paramname">ch</td><td>IO channel obtained by <code><a class="el" href="structspdk__accel__driver.html#ab2cc90720578b4cebe6baa9af1987979" title="Returns IO channel that will be passed to execute_sequence().">get_io_channel()</a></code>. </td></tr>
+    <tr><td class="paramname">seq</td><td>Sequence of tasks to execute.</td></tr>
   </table>
   </dd>
 </dl>

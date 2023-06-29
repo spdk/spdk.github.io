@@ -117,9 +117,10 @@ var NAVTREEINDEX18 =
 "structspdk__accel__crypto__key__create__param.html#a4ec2c1c9e819228dd98c05102b6ca115":[14,0,51,2],
 "structspdk__accel__crypto__key__create__param.html#acea5f6a7daf1f0484e1ce2d77bf8dc81":[14,0,51,0],
 "structspdk__accel__driver.html":[14,0,52],
-"structspdk__accel__driver.html#a6bb6f2903745ca4cd6a16f8f17463f80":[14,0,52,2],
-"structspdk__accel__driver.html#a8b880e91c0a7e2ba59a8c20cb0f6cb01":[14,0,52,1],
+"structspdk__accel__driver.html#a28a4ffcf8a04cc9629936f342d15e6bd":[14,0,52,1],
+"structspdk__accel__driver.html#a6bb6f2903745ca4cd6a16f8f17463f80":[14,0,52,3],
 "structspdk__accel__driver.html#a9d9536018f2aef815c17ae44bd51a4c5":[14,0,52,0],
+"structspdk__accel__driver.html#ab2cc90720578b4cebe6baa9af1987979":[14,0,52,2],
 "structspdk__accel__module__if.html":[14,0,53],
 "structspdk__accel__module__if.html#a05ac29ef44c9ad2dd81840d8e1a031f7":[14,0,53,2],
 "structspdk__accel__module__if.html#a1de9db47e92a6c6321f02182cf75a21f":[14,0,53,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX18 =
 "structspdk__bdev.html#ab53361e758d7ebe3edec7598f86fa576":[14,0,58,21],
 "structspdk__bdev.html#aba3b4d21418e7f36047040c43d3e5976":[14,0,58,37],
 "structspdk__bdev.html#abcf4e6c5be82c271a681db4b9b2fd427":[14,0,58,8],
-"structspdk__bdev.html#ac2ccb256340bc2e8b2d6f7793d977c0d":[14,0,58,34],
-"structspdk__bdev.html#ac737d9458e1184f313aed88b8af9b862":[14,0,58,4]
+"structspdk__bdev.html#ac2ccb256340bc2e8b2d6f7793d977c0d":[14,0,58,34]
 };

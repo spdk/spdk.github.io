@@ -35,7 +35,7 @@ var searchData=
   ['exclusive_5faccess_4965',['exclusive_access',['../structspdk__nvme__ns__data.html#adc10938c25cd751dcf93a2a725040ec1',1,'spdk_nvme_ns_data']]],
   ['exclusive_5faccess_5fall_5freg_4966',['exclusive_access_all_reg',['../structspdk__nvme__ns__data.html#af4041c21ba5656fc9d649a698e868862',1,'spdk_nvme_ns_data']]],
   ['exclusive_5faccess_5freg_5fonly_4967',['exclusive_access_reg_only',['../structspdk__nvme__ns__data.html#a3f73ed0c59226dc092e95cf6b82832f2',1,'spdk_nvme_ns_data']]],
-  ['execute_5fsequence_4968',['execute_sequence',['../structspdk__accel__driver.html#a8b880e91c0a7e2ba59a8c20cb0f6cb01',1,'spdk_accel_driver']]],
+  ['execute_5fsequence_4968',['execute_sequence',['../structspdk__accel__driver.html#a28a4ffcf8a04cc9629936f342d15e6bd',1,'spdk_accel_driver']]],
   ['executed_4969',['executed',['../structspdk__accel__opcode__stats.html#a80178555117743997ee244b84eeca483',1,'spdk_accel_opcode_stats']]],
   ['exhid_4970',['exhid',['../unionspdk__nvme__feat__host__identifier.html#abe582ebd57c5130773da6ec66e49007c',1,'spdk_nvme_feat_host_identifier']]],
   ['expected_4971',['expected',['../structspdk__dif__error.html#a9edcaaf246845c6e789e4e1bbf69918a',1,'spdk_dif_error']]],
