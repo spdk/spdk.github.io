@@ -29,6 +29,7 @@ var structspdk__accel__task =
     [ "s", "structspdk__accel__task.html#acdb9827efb29d139e2251c9282f86760", null ],
     [ "s2", "structspdk__accel__task.html#ad2bfd6e861a67b8c125644d0608ecd26", null ],
     [ "seed", "structspdk__accel__task.html#aa088bd23a1b4617e7cf287412f9c499c", null ],
+    [ "seq", "structspdk__accel__task.html#a75a22d5896649a83100014d7eb0f36ff", null ],
     [ "src_domain", "structspdk__accel__task.html#ade9e2419698b94c865650609c2075793", null ],
     [ "src_domain_ctx", "structspdk__accel__task.html#aed059405be01561a2c0f3c72de2a505f", null ],
     [ "srcs", "structspdk__accel__task.html#ab6de5096eb075896e750dfa0ba087a6e", null ],
