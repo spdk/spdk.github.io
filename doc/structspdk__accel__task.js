@@ -23,7 +23,7 @@ var structspdk__accel__task =
     [ "iv", "structspdk__accel__task.html#a8f4418a860c9bbe1ff2976681c1ed47b", null ],
     [ "nbytes", "structspdk__accel__task.html#a70697ed3412474269e45da0d1d23c770", null ],
     [ "nsrcs", "structspdk__accel__task.html#a115d907607201732af050c220bc1f083", null ],
-    [ "op_code", "structspdk__accel__task.html#aa7c42c22fdb87dc83ba997b93d318528", null ],
+    [ "op_code", "structspdk__accel__task.html#a556f84523b752542528bacebc40a19e0", null ],
     [ "output_size", "structspdk__accel__task.html#a819147fc9c5a735923a7029852794ae5", null ],
     [ "s", "structspdk__accel__task.html#a486d214681e31271be41582355c1d06b", null ],
     [ "s", "structspdk__accel__task.html#acdb9827efb29d139e2251c9282f86760", null ],
@@ -33,7 +33,7 @@ var structspdk__accel__task =
     [ "src_domain", "structspdk__accel__task.html#ade9e2419698b94c865650609c2075793", null ],
     [ "src_domain_ctx", "structspdk__accel__task.html#aed059405be01561a2c0f3c72de2a505f", null ],
     [ "srcs", "structspdk__accel__task.html#ab6de5096eb075896e750dfa0ba087a6e", null ],
-    [ "status", "structspdk__accel__task.html#a84834191ec4c2df3c5f1b01172af36da", null ],
+    [ "status", "structspdk__accel__task.html#a42e1459b7ca584326df4740459c0ced6", null ],
     [ "step_cb_arg", "structspdk__accel__task.html#a37171004bbdeaa2b955f681010d9edee", null ],
     [ "step_cb_fn", "structspdk__accel__task.html#ab7ba53c53da8f16f8a16c5ad0c459095", null ]
 ];

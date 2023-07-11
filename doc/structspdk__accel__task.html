@@ -233,6 +233,21 @@ union {</td></tr>
 <tr class="separator:adea229a0b4fa61b91fa47e2545313155"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2769609ad0a4061379490d66b5320a2b"><td class="memItemLeft" valign="top">};&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
 <tr class="separator:a2769609ad0a4061379490d66b5320a2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f4418a860c9bbe1ff2976681c1ed47b"><td class="memItemLeft" align="right" valign="top"><a id="a8f4418a860c9bbe1ff2976681c1ed47b"></a>
+uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>iv</b></td></tr>
+<tr class="separator:a8f4418a860c9bbe1ff2976681c1ed47b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a556f84523b752542528bacebc40a19e0"><td class="memItemLeft" align="right" valign="top"><a id="a556f84523b752542528bacebc40a19e0"></a>
+uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>op_code</b></td></tr>
+<tr class="separator:a556f84523b752542528bacebc40a19e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42e1459b7ca584326df4740459c0ced6"><td class="memItemLeft" align="right" valign="top"><a id="a42e1459b7ca584326df4740459c0ced6"></a>
+int16_t&#160;</td><td class="memItemRight" valign="bottom"><b>status</b></td></tr>
+<tr class="separator:a42e1459b7ca584326df4740459c0ced6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e4f2e1b71b9a9231865118630e48821"><td class="memItemLeft" align="right" valign="top"><a id="a9e4f2e1b71b9a9231865118630e48821"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>flags</b></td></tr>
+<tr class="separator:a9e4f2e1b71b9a9231865118630e48821"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1db23814d7a5f7deeaf88cfbc75712b"><td class="memItemLeft" align="right" valign="top"><a id="ad1db23814d7a5f7deeaf88cfbc75712b"></a>
+struct iovec&#160;</td><td class="memItemRight" valign="bottom"><b>aux_iovs</b> [SPDK_ACCEL_AUX_IOV_MAX]</td></tr>
+<tr class="separator:ad1db23814d7a5f7deeaf88cfbc75712b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abdcb9c71765b967b7db87722bb166064"><td class="memItemLeft" ><a id="abdcb9c71765b967b7db87722bb166064"></a>
 struct {</td></tr>
 <tr class="memitem:a5823e1c1090f055fbab2f40e96f0e8ce"><td class="memItemLeft" >
@@ -243,21 +258,6 @@ struct {</td></tr>
 <tr class="separator:abd3ca34a0ce75b5de9cb130c068d25f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abdcb9c71765b967b7db87722bb166064"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><b>bounce</b></td></tr>
 <tr class="separator:abdcb9c71765b967b7db87722bb166064"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa7c42c22fdb87dc83ba997b93d318528"><td class="memItemLeft" align="right" valign="top"><a id="aa7c42c22fdb87dc83ba997b93d318528"></a>
-enum accel_opcode&#160;</td><td class="memItemRight" valign="bottom"><b>op_code</b></td></tr>
-<tr class="separator:aa7c42c22fdb87dc83ba997b93d318528"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8f4418a860c9bbe1ff2976681c1ed47b"><td class="memItemLeft" align="right" valign="top"><a id="a8f4418a860c9bbe1ff2976681c1ed47b"></a>
-uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>iv</b></td></tr>
-<tr class="separator:a8f4418a860c9bbe1ff2976681c1ed47b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9e4f2e1b71b9a9231865118630e48821"><td class="memItemLeft" align="right" valign="top"><a id="a9e4f2e1b71b9a9231865118630e48821"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>flags</b></td></tr>
-<tr class="separator:a9e4f2e1b71b9a9231865118630e48821"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a84834191ec4c2df3c5f1b01172af36da"><td class="memItemLeft" align="right" valign="top"><a id="a84834191ec4c2df3c5f1b01172af36da"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>status</b></td></tr>
-<tr class="separator:a84834191ec4c2df3c5f1b01172af36da"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad1db23814d7a5f7deeaf88cfbc75712b"><td class="memItemLeft" align="right" valign="top"><a id="ad1db23814d7a5f7deeaf88cfbc75712b"></a>
-struct iovec&#160;</td><td class="memItemRight" valign="bottom"><b>aux_iovs</b> [SPDK_ACCEL_AUX_IOV_MAX]</td></tr>
-<tr class="separator:ad1db23814d7a5f7deeaf88cfbc75712b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li>accel_module.h</li>
