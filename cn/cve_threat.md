@@ -33,11 +33,10 @@ CVE小组成员联系方式：
 * Jim Harris, james.r.harris@intel.com
 * John Levon, john.levon@nutanix.com
 * Changpeng Liu, changpeng.liu@intel.com
-* Paul Luse, paul.e.luse@intel.com
 * Alexey Marchuk, alexeymar@nvidia.com
 * Shuhei Matsumoto, smatsumoto@nvidia.com
+* Konrad Sztyber, konrad.sztyber@intel.com
 * Ben Walker, benjamin.walker@intel.com
-* Anna Wan, qun.wan@intel.com
 * Tomek Zawadzki, tomasz.zawadzki@intel.com
 
 <a id="threat"></a>
