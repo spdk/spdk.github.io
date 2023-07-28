@@ -17,6 +17,7 @@ var files_dup =
     [ "cpuset.h", "cpuset_8h.html", "cpuset_8h" ],
     [ "crc16.h", "crc16_8h.html", "crc16_8h" ],
     [ "crc32.h", "crc32_8h.html", "crc32_8h" ],
+    [ "crc64.h", "crc64_8h.html", "crc64_8h" ],
     [ "dma.h", "dma_8h.html", "dma_8h" ],
     [ "endian.h", "endian_8h.html", "endian_8h" ],
     [ "env.h", "env_8h.html", "env_8h" ],
