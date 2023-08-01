@@ -98,7 +98,6 @@ $(document).ready(function(){initNavTree('bdevperf.html',''); initResizable(); }
 <div class="fragment"><div class="line">[global]</div>
 <div class="line">filename=Malloc0:Malloc1</div>
 <div class="line">bs=1024</div>
-<div class="line">iosize=256</div>
 <div class="line">rw=randrw</div>
 <div class="line">rwmixread=90</div>
 <div class="line"> </div>
@@ -115,7 +114,6 @@ $(document).ready(function(){initNavTree('bdevperf.html',''); initResizable(); }
 <div class="line"> </div>
 <div class="line">[C]</div>
 <div class="line">bs=4096</div>
-<div class="line">iosize=128</div>
 <div class="line">offset=1000000</div>
 <div class="line">length=1000000</div>
 </div><!-- fragment --><p>Jobs <code>[A]</code> <code>[B]</code> or <code>[C]</code>, inherit default values from <code>[global]</code> section residing above them. So in the example, job <code>[A]</code> inherits <code>filename</code> value and uses both <code>Malloc0</code> and <code>Malloc1</code> bdevs as targets, job <code>[B]</code> overrides its <code>filename</code> value and uses <code>Malloc1</code> and job <code>[C]</code> inherits value <code>Malloc0</code> for its <code>filename</code>.</p>
