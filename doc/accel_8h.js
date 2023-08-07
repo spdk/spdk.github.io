@@ -3,6 +3,8 @@ var accel_8h =
     [ "spdk_accel_crypto_key_create_param", "structspdk__accel__crypto__key__create__param.html", "structspdk__accel__crypto__key__create__param" ],
     [ "spdk_accel_opts", "structspdk__accel__opts.html", "structspdk__accel__opts" ],
     [ "spdk_accel_opcode_stats", "structspdk__accel__opcode__stats.html", "structspdk__accel__opcode__stats" ],
+    [ "SPDK_ACCEL_AES_XTS_128_KEY_SIZE", "accel_8h.html#a340992a199c9a21188a2a65017433009", null ],
+    [ "SPDK_ACCEL_AES_XTS_256_KEY_SIZE", "accel_8h.html#a3ead9a1e5184d3a195cb2903344a26c2", null ],
     [ "spdk_accel_completion_cb", "accel_8h.html#a6ba836b7b128829ba185eadb2c60476a", null ],
     [ "spdk_accel_fini_cb", "accel_8h.html#a545ea1cc4167924acee2803aed824877", null ],
     [ "spdk_accel_step_cb", "accel_8h.html#abaf556b5e1b63b5237faff3952a3bb46", null ],

@@ -1,5 +1,7 @@
 var NAVTREEINDEX6 =
 {
+"iscsi__spec_8h.html#a79654e097bd71566642534ce17494a1a":[15,0,33,47],
+"iscsi__spec_8h.html#a7cd9adfe7bc5f8938c200f29c04c4567":[15,0,33,21],
 "iscsi__spec_8h.html#a8428826a133066d5a6d4f46624281343":[15,0,33,38],
 "iscsi__spec_8h.html#a86ab3cf1d7e7bd53fcebcb338fdc23aa":[15,0,33,59],
 "iscsi__spec_8h.html#a870efa242b7f01cb57548c6b0d39724a":[15,0,33,39],
@@ -247,7 +249,5 @@ var NAVTREEINDEX6 =
 "jsonrpc.html#rpc_bdev_nvme_apply_firmware":[3,9,5,51],
 "jsonrpc.html#rpc_bdev_nvme_attach_controller":[3,9,5,34],
 "jsonrpc.html#rpc_bdev_nvme_cuse_register":[3,9,5,47],
-"jsonrpc.html#rpc_bdev_nvme_cuse_unregister":[3,9,5,48],
-"jsonrpc.html#rpc_bdev_nvme_detach_controller":[3,9,5,36],
-"jsonrpc.html#rpc_bdev_nvme_disable_controller":[3,9,5,39]
+"jsonrpc.html#rpc_bdev_nvme_cuse_unregister":[3,9,5,48]
 };

@@ -136,10 +136,10 @@ void(*&#160;</td><td class="memItemRight" valign="bottom"><b>crypto_key_deinit</
 <tr class="memitem:aa773f55e3f32077e98932f6f67fca1f3"><td class="memItemLeft" align="right" valign="top">bool(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__accel__module__if.html#aa773f55e3f32077e98932f6f67fca1f3">crypto_supports_tweak_mode</a> )(enum spdk_accel_crypto_tweak_mode tweak_mode)</td></tr>
 <tr class="memdesc:aa773f55e3f32077e98932f6f67fca1f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if given tweak mode is supported.  <a href="structspdk__accel__module__if.html#aa773f55e3f32077e98932f6f67fca1f3">More...</a><br /></td></tr>
 <tr class="separator:aa773f55e3f32077e98932f6f67fca1f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a82ccfbd8aabca5f06565082aba7f7177"><td class="memItemLeft" align="right" valign="top"><a id="a82ccfbd8aabca5f06565082aba7f7177"></a>
-bool(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__accel__module__if.html#a82ccfbd8aabca5f06565082aba7f7177">crypto_supports_cipher</a> )(enum spdk_accel_cipher cipher)</td></tr>
-<tr class="memdesc:a82ccfbd8aabca5f06565082aba7f7177"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if given cipher is supported. <br /></td></tr>
-<tr class="separator:a82ccfbd8aabca5f06565082aba7f7177"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6dfa91acb521f8605575ba431e5adb0"><td class="memItemLeft" align="right" valign="top"><a id="ae6dfa91acb521f8605575ba431e5adb0"></a>
+bool(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__accel__module__if.html#ae6dfa91acb521f8605575ba431e5adb0">crypto_supports_cipher</a> )(enum spdk_accel_cipher cipher, size_t key_size)</td></tr>
+<tr class="memdesc:ae6dfa91acb521f8605575ba431e5adb0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if given pair (cipher, key size) is supported. <br /></td></tr>
+<tr class="separator:ae6dfa91acb521f8605575ba431e5adb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:add80c515e6283f7dfbc89e203b1cf45c"><td class="memItemLeft" align="right" valign="top">int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__accel__module__if.html#add80c515e6283f7dfbc89e203b1cf45c">get_memory_domains</a> )(struct spdk_memory_domain **domains, int num_domains)</td></tr>
 <tr class="memdesc:add80c515e6283f7dfbc89e203b1cf45c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns memory domains supported by the module.  <a href="structspdk__accel__module__if.html#add80c515e6283f7dfbc89e203b1cf45c">More...</a><br /></td></tr>
 <tr class="separator:add80c515e6283f7dfbc89e203b1cf45c"><td class="memSeparator" colspan="2">&#160;</td></tr>
