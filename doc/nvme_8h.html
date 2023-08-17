@@ -169,6 +169,9 @@ Typedefs</h2></td></tr>
 <tr class="memitem:afff8aaa490f2db1119b20e36253196b7"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#afff8aaa490f2db1119b20e36253196b7">spdk_nvme_accel_completion_cb</a>) (void *cb_arg, int status)</td></tr>
 <tr class="memdesc:afff8aaa490f2db1119b20e36253196b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">NVMe acceleration operation callback.  <a href="nvme_8h.html#afff8aaa490f2db1119b20e36253196b7">More...</a><br /></td></tr>
 <tr class="separator:afff8aaa490f2db1119b20e36253196b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23b4ebb6bfd9f12c07b1ae91a2c98ad8"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a23b4ebb6bfd9f12c07b1ae91a2c98ad8">spdk_nvme_accel_step_cb</a>) (void *cb_arg)</td></tr>
+<tr class="memdesc:a23b4ebb6bfd9f12c07b1ae91a2c98ad8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Completion callback for a single operation in a sequence.  <a href="nvme_8h.html#a23b4ebb6bfd9f12c07b1ae91a2c98ad8">More...</a><br /></td></tr>
+<tr class="separator:a23b4ebb6bfd9f12c07b1ae91a2c98ad8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3b2d01bfe80469fd5841cddaf8e1537f"><td class="memItemLeft" align="right" valign="top"><a id="a3b2d01bfe80469fd5841cddaf8e1537f"></a>
 typedef enum <a class="el" href="nvme_8h.html#ab41e2d311eb6663957cd2f18bc8fb890">spdk_nvme_qp_failure_reason</a>&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_qp_failure_reason</b></td></tr>
 <tr class="separator:a3b2d01bfe80469fd5841cddaf8e1537f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -245,6 +248,8 @@ Enumerations</h2></td></tr>
 , <a class="el" href="nvme_8h.html#add21ceb016f09949ac6cef50e0566818a47e0066f0e7c2c8f3d0fba8ce612dc73">SPDK_NVME_CTRLR_ZONE_APPEND_SUPPORTED</a> = 1 &lt;&lt; 5
 , <a class="el" href="nvme_8h.html#add21ceb016f09949ac6cef50e0566818a2ecf8c85bee974f9e7f35a684dff76ac">SPDK_NVME_CTRLR_DIRECTIVES_SUPPORTED</a> = 1 &lt;&lt; 6
 , <a class="el" href="nvme_8h.html#add21ceb016f09949ac6cef50e0566818a1ec6624b47b99ba3e6de62be73fd7602">SPDK_NVME_CTRLR_MPTR_SGL_SUPPORTED</a> = 1 &lt;&lt; 7
+, <br />
+&#160;&#160;<a class="el" href="nvme_8h.html#add21ceb016f09949ac6cef50e0566818a2058810d4167fbdbe29315867584dd84">SPDK_NVME_CTRLR_ACCEL_SEQUENCE_SUPPORTED</a> = 1 &lt;&lt; 8
 <br />
  }</td></tr>
 <tr class="separator:add21ceb016f09949ac6cef50e0566818"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -283,9 +288,9 @@ const struct <a class="el" href="structspdk__nvme__ctrlr__opts.html">spdk_nvme_c
 <tr class="memitem:a9d50c30580eef93831a6e473dfc00051"><td class="memItemLeft" align="right" valign="top"><a id="a9d50c30580eef93831a6e473dfc00051"></a>
 static bool&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_trtype_is_fabrics</b> (enum <a class="el" href="nvme_8h.html#ae87a03c28984a2c0499d50ef5e9d0ece">spdk_nvme_transport_type</a> trtype)</td></tr>
 <tr class="separator:a9d50c30580eef93831a6e473dfc00051"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1c7d8b5592cb9674eb0e270e33a8902d"><td class="memItemLeft" align="right" valign="top"><a id="a1c7d8b5592cb9674eb0e270e33a8902d"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_STATIC_ASSERT</b> (sizeof(struct <a class="el" href="structspdk__nvme__ns__cmd__ext__io__opts.html">spdk_nvme_ns_cmd_ext_io_opts</a>)==48, &quot;Incorrect size&quot;)</td></tr>
-<tr class="separator:a1c7d8b5592cb9674eb0e270e33a8902d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5262df8eaf5344f47fdf6ab6d1d78626"><td class="memItemLeft" align="right" valign="top"><a id="a5262df8eaf5344f47fdf6ab6d1d78626"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_STATIC_ASSERT</b> (sizeof(struct <a class="el" href="structspdk__nvme__ns__cmd__ext__io__opts.html">spdk_nvme_ns_cmd_ext_io_opts</a>)==56, &quot;Incorrect size&quot;)</td></tr>
+<tr class="separator:a5262df8eaf5344f47fdf6ab6d1d78626"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac37484cc5d14777e4ae1fde031d0edf2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#ac37484cc5d14777e4ae1fde031d0edf2">spdk_nvme_transport_id_parse</a> (struct <a class="el" href="structspdk__nvme__transport__id.html">spdk_nvme_transport_id</a> *trid, const char *str)</td></tr>
 <tr class="memdesc:ac37484cc5d14777e4ae1fde031d0edf2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parse the string representation of a transport ID.  <a href="nvme_8h.html#ac37484cc5d14777e4ae1fde031d0edf2">More...</a><br /></td></tr>
 <tr class="separator:ac37484cc5d14777e4ae1fde031d0edf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -901,6 +906,28 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_trty
 
 </div>
 </div>
+<a id="a23b4ebb6bfd9f12c07b1ae91a2c98ad8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a23b4ebb6bfd9f12c07b1ae91a2c98ad8">&#9670;&nbsp;</a></span>spdk_nvme_accel_step_cb</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void(* spdk_nvme_accel_step_cb) (void *cb_arg)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Completion callback for a single operation in a sequence. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cb_arg</td><td>Argument provided by the user when appending an operation to a sequence. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a1d066bb761dc3481f081d0d6924766ee"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1d066bb761dc3481f081d0d6924766ee">&#9670;&nbsp;</a></span>spdk_nvme_aer_cb</h2>
 
@@ -1173,6 +1200,8 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_trty
 <tr><td class="fieldname"><a id="add21ceb016f09949ac6cef50e0566818a2ecf8c85bee974f9e7f35a684dff76ac"></a>SPDK_NVME_CTRLR_DIRECTIVES_SUPPORTED&#160;</td><td class="fielddoc"><p>The Directives is supported. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="add21ceb016f09949ac6cef50e0566818a1ec6624b47b99ba3e6de62be73fd7602"></a>SPDK_NVME_CTRLR_MPTR_SGL_SUPPORTED&#160;</td><td class="fielddoc"><p>MPTR containing SGL descriptor is supported. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="add21ceb016f09949ac6cef50e0566818a2058810d4167fbdbe29315867584dd84"></a>SPDK_NVME_CTRLR_ACCEL_SEQUENCE_SUPPORTED&#160;</td><td class="fielddoc"><p>Support for sending I/O requests with accel sequnece. </p>
 </td></tr>
 </table>
 

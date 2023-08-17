@@ -26,6 +26,7 @@ var log_8h =
     [ "spdk_deprecation_get_hits", "log_8h.html#afc930c0e1a4696a4c489c781b1a55b02", null ],
     [ "spdk_deprecation_get_remove_release", "log_8h.html#a63883d260f21cb745432a61bfc2f5c77", null ],
     [ "spdk_deprecation_get_tag", "log_8h.html#aebde768fd834a3c9364b7b5a8bd479f4", null ],
+    [ "spdk_flog", "log_8h.html#a0fb86fc2dd93e56ce9423e2559472192", null ],
     [ "spdk_log", "log_8h.html#aaa20a1f56503b0d9f16c82b451fb338b", null ],
     [ "spdk_log_clear_flag", "log_8h.html#a253e880aa9fd469afd825d77fe9a3211", null ],
     [ "spdk_log_close", "log_8h.html#a41cdc17423a58c475fa785fd491f00e9", null ],
@@ -46,5 +47,6 @@ var log_8h =
     [ "spdk_log_set_print_level", "log_8h.html#ab34f1c87d98113395ab04415dbee96d8", null ],
     [ "spdk_log_to_syslog_level", "log_8h.html#adcae2250cdee22db5149c55a7c9f1e89", null ],
     [ "spdk_log_usage", "log_8h.html#a99820ac7f38f6ad187be62b3bbdb7d64", null ],
+    [ "spdk_vflog", "log_8h.html#ac6d6d0434b3ac24cbcc8b125addb41c1", null ],
     [ "spdk_vlog", "log_8h.html#ae7a0943ae8fc36d9749bebd96a97fc21", null ]
 ];

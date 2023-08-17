@@ -20,6 +20,7 @@ var structspdk__bdev__io_1_1____bdev__io__internal__fields =
     [ "error", "structspdk__bdev__io_1_1____bdev__io__internal__fields.html#a359a26d4e98ba1cd9091f9bdc8b669fb", null ],
     [ "get_aux_buf_cb", "structspdk__bdev__io_1_1____bdev__io__internal__fields.html#a08e05615305a536b1c1b893a4fe8c693", null ],
     [ "get_buf_cb", "structspdk__bdev__io_1_1____bdev__io__internal__fields.html#a320a717c3bfbfae0a88e37806a4b11cb", null ],
+    [ "has_accel_sequence", "structspdk__bdev__io_1_1____bdev__io__internal__fields.html#a6f9175bff97d00c79da7315c3b243d41", null ],
     [ "in_submit_request", "structspdk__bdev__io_1_1____bdev__io__internal__fields.html#a79f4b610c4db721dbe99f5698d1886f6", null ],
     [ "io_submit_ch", "structspdk__bdev__io_1_1____bdev__io__internal__fields.html#a538e1a5baf1242b0b41489e4f0f411f9", null ],
     [ "iobuf", "structspdk__bdev__io_1_1____bdev__io__internal__fields.html#a15f97894fc94fe64b3f1970aab43068b", null ],

@@ -1,5 +1,6 @@
 var structspdk__nvme__ns__cmd__ext__io__opts =
 [
+    [ "accel_sequence", "structspdk__nvme__ns__cmd__ext__io__opts.html#a8d31e6b9a5698572d7f4ba42b3df14de", null ],
     [ "apptag", "structspdk__nvme__ns__cmd__ext__io__opts.html#a5ffea1f3e030584312d1e97ede4e2115", null ],
     [ "apptag_mask", "structspdk__nvme__ns__cmd__ext__io__opts.html#a8737a902d42444e5d4b9117d23230ad3", null ],
     [ "cdw13", "structspdk__nvme__ns__cmd__ext__io__opts.html#ae31ae2c30569dc7fb9c8e308ed20c761", null ],

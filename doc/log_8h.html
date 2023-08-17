@@ -193,6 +193,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log_
 <tr class="memitem:ae7a0943ae8fc36d9749bebd96a97fc21"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log_8h.html#ae7a0943ae8fc36d9749bebd96a97fc21">spdk_vlog</a> (enum <a class="el" href="log_8h.html#a188d351bd05093cba1d8594ee9988efd">spdk_log_level</a> level, const char *file, const int line, const char *func, const char *format, va_list ap)</td></tr>
 <tr class="memdesc:ae7a0943ae8fc36d9749bebd96a97fc21"><td class="mdescLeft">&#160;</td><td class="mdescRight">Same as spdk_log except that instead of being called with variable number of arguments it is called with an argument list as defined in stdarg.h.  <a href="log_8h.html#ae7a0943ae8fc36d9749bebd96a97fc21">More...</a><br /></td></tr>
 <tr class="separator:ae7a0943ae8fc36d9749bebd96a97fc21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0fb86fc2dd93e56ce9423e2559472192"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log_8h.html#a0fb86fc2dd93e56ce9423e2559472192">spdk_flog</a> (FILE *fp, const char *file, const int line, const char *func, const char *format,...)</td></tr>
+<tr class="memdesc:a0fb86fc2dd93e56ce9423e2559472192"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write messages to the log file.  <a href="log_8h.html#a0fb86fc2dd93e56ce9423e2559472192">More...</a><br /></td></tr>
+<tr class="separator:a0fb86fc2dd93e56ce9423e2559472192"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6d6d0434b3ac24cbcc8b125addb41c1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log_8h.html#ac6d6d0434b3ac24cbcc8b125addb41c1">spdk_vflog</a> (FILE *fp, const char *file, const int line, const char *func, const char *format, va_list ap)</td></tr>
+<tr class="memdesc:ac6d6d0434b3ac24cbcc8b125addb41c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Same as spdk_flog except that instead of being called with variable number of arguments it is called with an argument list as defined in stdarg.h.  <a href="log_8h.html#ac6d6d0434b3ac24cbcc8b125addb41c1">More...</a><br /></td></tr>
+<tr class="separator:ac6d6d0434b3ac24cbcc8b125addb41c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad360332e6a9699cdfecdac00f768c0b1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log_8h.html#ad360332e6a9699cdfecdac00f768c0b1">spdk_log_dump</a> (FILE *fp, const char *label, const void *buf, size_t len)</td></tr>
 <tr class="memdesc:ad360332e6a9699cdfecdac00f768c0b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Log the contents of a raw buffer to a file.  <a href="log_8h.html#ad360332e6a9699cdfecdac00f768c0b1">More...</a><br /></td></tr>
 <tr class="separator:ad360332e6a9699cdfecdac00f768c0b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -273,7 +279,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log_
 <div class="line">                        spdk_log(SPDK_LOG_INFO, __FILE__, __LINE__, __func__, __VA_ARGS__);     \</div>
 <div class="line">                }                                                                               \</div>
 <div class="line">        } <span class="keywordflow">while</span> (0)</div>
-<div class="ttc" id="astructspdk__log__flag_html"><div class="ttname"><a href="structspdk__log__flag.html">spdk_log_flag</a></div><div class="ttdef"><b>Definition:</b> log.h:183</div></div>
+<div class="ttc" id="astructspdk__log__flag_html"><div class="ttname"><a href="structspdk__log__flag.html">spdk_log_flag</a></div><div class="ttdef"><b>Definition:</b> log.h:210</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -529,6 +535,71 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log_
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The deprecation's tag. </dd></dl>
+
+</div>
+</div>
+<a id="a0fb86fc2dd93e56ce9423e2559472192"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0fb86fc2dd93e56ce9423e2559472192">&#9670;&nbsp;</a></span>spdk_flog()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_flog </td>
+          <td>(</td>
+          <td class="paramtype">FILE *&#160;</td>
+          <td class="paramname"><em>fp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>file</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>line</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>func</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>format</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>...</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Write messages to the log file. </p>
+<p>If <code>level</code> is set to <code>SPDK_LOG_DISABLED</code>, this log message won't be written.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fp</td><td>File to hold the log. </td></tr>
+    <tr><td class="paramname">file</td><td>Name of the current source file. </td></tr>
+    <tr><td class="paramname">line</td><td>Current source line number. </td></tr>
+    <tr><td class="paramname">func</td><td>Current source function name. </td></tr>
+    <tr><td class="paramname">format</td><td>Format string to the message. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -1155,6 +1226,71 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log_
   <table class="params">
     <tr><td class="paramname">f</td><td>File to hold all the flags' information. </td></tr>
     <tr><td class="paramname">log_arg</td><td>Command line option to set/enable the log flag. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ac6d6d0434b3ac24cbcc8b125addb41c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac6d6d0434b3ac24cbcc8b125addb41c1">&#9670;&nbsp;</a></span>spdk_vflog()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_vflog </td>
+          <td>(</td>
+          <td class="paramtype">FILE *&#160;</td>
+          <td class="paramname"><em>fp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>file</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>line</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>func</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>format</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">va_list&#160;</td>
+          <td class="paramname"><em>ap</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Same as spdk_flog except that instead of being called with variable number of arguments it is called with an argument list as defined in stdarg.h. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fp</td><td>File to hold the log. </td></tr>
+    <tr><td class="paramname">file</td><td>Name of the current source file. </td></tr>
+    <tr><td class="paramname">line</td><td>Current source line number. </td></tr>
+    <tr><td class="paramname">func</td><td>Current source function name. </td></tr>
+    <tr><td class="paramname">format</td><td>Format string to the message. </td></tr>
+    <tr><td class="paramname">ap</td><td>printf arguments </td></tr>
   </table>
   </dd>
 </dl>
