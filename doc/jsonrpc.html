@@ -3093,7 +3093,7 @@ bdev_nvme_set_hotplug</h2>
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">enabled   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">True to enable, false to disable    </td></tr>
+<td class="markdownTableBodyNone">enable   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">True to enable, false to disable    </td></tr>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">period_us   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">How often to poll for hot-insert and hot-remove events. Values: 0 - reset/use default or 1 to 10000000.   </td></tr>
 </table>
@@ -3102,7 +3102,7 @@ bdev_nvme_set_hotplug</h2>
 <div class="fragment"><div class="line">request:</div>
 <div class="line">{</div>
 <div class="line">  &quot;params&quot;: {</div>
-<div class="line">    &quot;enabled&quot;: true,</div>
+<div class="line">    &quot;enable&quot;: true,</div>
 <div class="line">    &quot;period_us&quot;: 2000</div>
 <div class="line">  },</div>
 <div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
