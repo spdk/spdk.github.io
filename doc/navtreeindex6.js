@@ -1,5 +1,8 @@
 var NAVTREEINDEX6 =
 {
+"iscsi__spec_8h.html#a6c35b20c29232c43efbd5c1b53c3704f":[15,0,33,42],
+"iscsi__spec_8h.html#a732305aac4f297690e3b654076212d20":[15,0,33,22],
+"iscsi__spec_8h.html#a739f77e71d48166882478360eb7abb33":[15,0,33,81],
 "iscsi__spec_8h.html#a79654e097bd71566642534ce17494a1a":[15,0,33,47],
 "iscsi__spec_8h.html#a7cd9adfe7bc5f8938c200f29c04c4567":[15,0,33,21],
 "iscsi__spec_8h.html#a8428826a133066d5a6d4f46624281343":[15,0,33,38],
@@ -246,8 +249,5 @@ var NAVTREEINDEX6 =
 "jsonrpc.html#rpc_bdev_null_delete":[3,9,5,27],
 "jsonrpc.html#rpc_bdev_null_resize":[3,9,5,28],
 "jsonrpc.html#rpc_bdev_nvme_add_error_injection":[3,9,13,8],
-"jsonrpc.html#rpc_bdev_nvme_apply_firmware":[3,9,5,51],
-"jsonrpc.html#rpc_bdev_nvme_attach_controller":[3,9,5,34],
-"jsonrpc.html#rpc_bdev_nvme_cuse_register":[3,9,5,47],
-"jsonrpc.html#rpc_bdev_nvme_cuse_unregister":[3,9,5,48]
+"jsonrpc.html#rpc_bdev_nvme_apply_firmware":[3,9,5,51]
 };

@@ -4,6 +4,7 @@ var bdev_8h =
     [ "spdk_bdev_io_stat", "structspdk__bdev__io__stat.html", "structspdk__bdev__io__stat" ],
     [ "spdk_bdev_opts", "structspdk__bdev__opts.html", "structspdk__bdev__opts" ],
     [ "spdk_bdev_ext_io_opts", "structspdk__bdev__ext__io__opts.html", "structspdk__bdev__ext__io__opts" ],
+    [ "spdk_bdev_open_async_opts", "structspdk__bdev__open__async__opts.html", "structspdk__bdev__open__async__opts" ],
     [ "spdk_bdev_io_wait_entry", "structspdk__bdev__io__wait__entry.html", "structspdk__bdev__io__wait__entry" ],
     [ "SPDK_BDEV_BUF_SIZE_WITH_MD", "bdev_8h.html#a60c60455b0ae9e1c8139bb24df036d6d", null ],
     [ "SPDK_BDEV_LARGE_BUF_MAX_SIZE", "bdev_8h.html#a9496c34e0fc135e1f309fd586e8e65d0", null ],
@@ -20,6 +21,7 @@ var bdev_8h =
     [ "spdk_bdev_io_completion_cb", "bdev_8h.html#a0c5602dfd313f90032dd91683b9663e3", null ],
     [ "spdk_bdev_io_timeout_cb", "bdev_8h.html#a83db84993554e784cbddf2d217f6ea4f", null ],
     [ "spdk_bdev_io_wait_cb", "bdev_8h.html#a9c7e19e090b8cdb22e8fc6b1984e5278", null ],
+    [ "spdk_bdev_open_async_cb_t", "bdev_8h.html#a0253fe337c6697d014adffde6f8cd000", null ],
     [ "spdk_bdev_remove_cb_t", "bdev_8h.html#a51a55c97586c2d524fffcabc4d7910d6", null ],
     [ "spdk_bdev_wait_for_examine_cb", "bdev_8h.html#af8ee74dcabcf41f4332c7e75b4afa11a", null ],
     [ "spdk_for_each_bdev_fn", "bdev_8h.html#a4163854db79e0e3b211dd72ca031fbb0", null ],
@@ -136,6 +138,7 @@ var bdev_8h =
     [ "spdk_bdev_nvme_admin_passthru", "group__bdev__io__submit__functions.html#gae2249ef71e7125338b6cebf935a881ab", null ],
     [ "spdk_bdev_nvme_io_passthru", "group__bdev__io__submit__functions.html#gab172cf6afc9ef154bd823b91b09dee87", null ],
     [ "spdk_bdev_nvme_io_passthru_md", "group__bdev__io__submit__functions.html#gac6b5933e4c0b2ad68bad591655b4f9e6", null ],
+    [ "spdk_bdev_open_async", "bdev_8h.html#af29e58cf7325dbc4f4ca8e0abb2d9506", null ],
     [ "spdk_bdev_open_ext", "bdev_8h.html#aca93f44b46f0b877df9b6936ef9e0a9e", null ],
     [ "spdk_bdev_queue_io_wait", "bdev_8h.html#acc4beee18ded7837fa92bd7c34e7ef2e", null ],
     [ "spdk_bdev_read", "group__bdev__io__submit__functions.html#ga4b500ce84df1d2551f76e635c9dafbd5", null ],
@@ -170,5 +173,6 @@ var bdev_8h =
     [ "spdk_for_each_bdev", "bdev_8h.html#ac93dda3868b191be70ac7e1517422c1f", null ],
     [ "spdk_for_each_bdev_leaf", "bdev_8h.html#aeb680eb5205197872738e482204ab441", null ],
     [ "SPDK_STATIC_ASSERT", "bdev_8h.html#aa7e0fc235ee69af660155e154b77833e", null ],
+    [ "SPDK_STATIC_ASSERT", "bdev_8h.html#a1a0f34e14b9849b25c5b24c2b4941ad0", null ],
     [ "SPDK_STATIC_ASSERT", "bdev_8h.html#a2a07b56033890913587438d1c77942db", null ]
 ];

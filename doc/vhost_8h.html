@@ -312,7 +312,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vhos
     <tr><td class="paramname">cpumask</td><td>string containing cpumask in hex. The leading <em>0x</em> is allowed but not required. The mask itself can be constructed as: ((1 &lt;&lt; cpu0) | (1 &lt;&lt; cpu1) | ... | (1 &lt;&lt; cpuN)). </td></tr>
     <tr><td class="paramname">dev_name</td><td>bdev name to associate with this vhost device </td></tr>
     <tr><td class="paramname">transport</td><td>virtio blk transport name (default: vhost_user_blk) </td></tr>
-    <tr><td class="paramname">params</td><td>JSON value object containing variables: readonly if set, all writes to the device will fail with <code>VIRTIO_BLK_S_IOERR</code> error code. packed_ring this controller supports packed ring if set. packed_ring_recovery</td></tr>
+    <tr><td class="paramname">params</td><td>JSON value object containing variables: readonly if set, all writes to the device will fail with <code>VIRTIO_BLK_S_IOERR</code> error code. packed_ring this controller supports packed ring if set.</td></tr>
   </table>
   </dd>
 </dl>

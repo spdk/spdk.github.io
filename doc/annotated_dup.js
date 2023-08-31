@@ -71,6 +71,7 @@ var annotated_dup =
     [ "spdk_bdev_module", "structspdk__bdev__module.html", "structspdk__bdev__module" ],
     [ "spdk_bdev_module_claim", "structspdk__bdev__module__claim.html", "structspdk__bdev__module__claim" ],
     [ "spdk_bdev_name", "structspdk__bdev__name.html", "structspdk__bdev__name" ],
+    [ "spdk_bdev_open_async_opts", "structspdk__bdev__open__async__opts.html", "structspdk__bdev__open__async__opts" ],
     [ "spdk_bdev_opts", "structspdk__bdev__opts.html", "structspdk__bdev__opts" ],
     [ "spdk_bdev_part", "structspdk__bdev__part.html", "structspdk__bdev__part" ],
     [ "spdk_bdev_part_channel", "structspdk__bdev__part__channel.html", "structspdk__bdev__part__channel" ],

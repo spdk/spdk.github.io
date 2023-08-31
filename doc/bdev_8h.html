@@ -111,6 +111,9 @@ Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev__ext__io__opts.html">spdk_bdev_ext_io_opts</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Structure with optional IO request parameters.  <a href="structspdk__bdev__ext__io__opts.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev__open__async__opts.html">spdk_bdev_open_async_opts</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Structure with optional asynchronous bdev open parameters.  <a href="structspdk__bdev__open__async__opts.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev__io__wait__entry.html">spdk_bdev_io_wait_entry</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Structure to register a callback when an <a class="el" href="structspdk__bdev__io.html">spdk_bdev_io</a> becomes available.  <a href="structspdk__bdev__io__wait__entry.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -156,6 +159,9 @@ typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_g
 <tr class="memitem:a83db84993554e784cbddf2d217f6ea4f"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev_8h.html#a83db84993554e784cbddf2d217f6ea4f">spdk_bdev_io_timeout_cb</a>) (void *cb_arg, struct <a class="el" href="structspdk__bdev__io.html">spdk_bdev_io</a> *bdev_io)</td></tr>
 <tr class="memdesc:a83db84993554e784cbddf2d217f6ea4f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Block device channel IO timeout callback.  <a href="bdev_8h.html#a83db84993554e784cbddf2d217f6ea4f">More...</a><br /></td></tr>
 <tr class="separator:a83db84993554e784cbddf2d217f6ea4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0253fe337c6697d014adffde6f8cd000"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev_8h.html#a0253fe337c6697d014adffde6f8cd000">spdk_bdev_open_async_cb_t</a>) (struct spdk_bdev_desc *desc, int rc, void *cb_arg)</td></tr>
+<tr class="memdesc:a0253fe337c6697d014adffde6f8cd000"><td class="mdescLeft">&#160;</td><td class="mdescRight">Block device asynchronous open callback.  <a href="bdev_8h.html#a0253fe337c6697d014adffde6f8cd000">More...</a><br /></td></tr>
+<tr class="separator:a0253fe337c6697d014adffde6f8cd000"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4163854db79e0e3b211dd72ca031fbb0"><td class="memItemLeft" align="right" valign="top">typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev_8h.html#a4163854db79e0e3b211dd72ca031fbb0">spdk_for_each_bdev_fn</a>) (void *ctx, struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *bdev)</td></tr>
 <tr class="memdesc:a4163854db79e0e3b211dd72ca031fbb0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback function for <a class="el" href="bdev_8h.html#ac93dda3868b191be70ac7e1517422c1f" title="Call the provided callback function for every registered block device.">spdk_for_each_bdev()</a> and <a class="el" href="bdev_8h.html#aeb680eb5205197872738e482204ab441" title="Call the provided callback function for every block device without virtual block devices on top.">spdk_for_each_bdev_leaf()</a>.  <a href="bdev_8h.html#a4163854db79e0e3b211dd72ca031fbb0">More...</a><br /></td></tr>
 <tr class="separator:a4163854db79e0e3b211dd72ca031fbb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -283,6 +289,12 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_set_opts</b>
 <tr class="memitem:aca93f44b46f0b877df9b6936ef9e0a9e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev_8h.html#aca93f44b46f0b877df9b6936ef9e0a9e">spdk_bdev_open_ext</a> (const char *bdev_name, bool write, <a class="el" href="bdev_8h.html#ab4755b1b0a2a204732c3be266b6e1b08">spdk_bdev_event_cb_t</a> event_cb, void *event_ctx, struct spdk_bdev_desc **desc)</td></tr>
 <tr class="memdesc:aca93f44b46f0b877df9b6936ef9e0a9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Open a block device for I/O operations.  <a href="bdev_8h.html#aca93f44b46f0b877df9b6936ef9e0a9e">More...</a><br /></td></tr>
 <tr class="separator:aca93f44b46f0b877df9b6936ef9e0a9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a0f34e14b9849b25c5b24c2b4941ad0"><td class="memItemLeft" align="right" valign="top"><a id="a1a0f34e14b9849b25c5b24c2b4941ad0"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_STATIC_ASSERT</b> (sizeof(struct <a class="el" href="structspdk__bdev__open__async__opts.html">spdk_bdev_open_async_opts</a>)==16, &quot;Incorrect size&quot;)</td></tr>
+<tr class="separator:a1a0f34e14b9849b25c5b24c2b4941ad0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af29e58cf7325dbc4f4ca8e0abb2d9506"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev_8h.html#af29e58cf7325dbc4f4ca8e0abb2d9506">spdk_bdev_open_async</a> (const char *bdev_name, bool write, <a class="el" href="bdev_8h.html#ab4755b1b0a2a204732c3be266b6e1b08">spdk_bdev_event_cb_t</a> event_cb, void *event_ctx, struct <a class="el" href="structspdk__bdev__open__async__opts.html">spdk_bdev_open_async_opts</a> *opts, <a class="el" href="bdev_8h.html#a0253fe337c6697d014adffde6f8cd000">spdk_bdev_open_async_cb_t</a> open_cb, void *open_cb_arg)</td></tr>
+<tr class="memdesc:af29e58cf7325dbc4f4ca8e0abb2d9506"><td class="mdescLeft">&#160;</td><td class="mdescRight">Open a block device for I/O operations asynchronously with options.  <a href="bdev_8h.html#af29e58cf7325dbc4f4ca8e0abb2d9506">More...</a><br /></td></tr>
+<tr class="separator:af29e58cf7325dbc4f4ca8e0abb2d9506"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaf5fc830851a2eb0aa34bbb40cf5eac6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev_8h.html#aaf5fc830851a2eb0aa34bbb40cf5eac6">spdk_bdev_close</a> (struct spdk_bdev_desc *desc)</td></tr>
 <tr class="memdesc:aaf5fc830851a2eb0aa34bbb40cf5eac6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Close a previously opened block device.  <a href="bdev_8h.html#aaf5fc830851a2eb0aa34bbb40cf5eac6">More...</a><br /></td></tr>
 <tr class="separator:aaf5fc830851a2eb0aa34bbb40cf5eac6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -739,6 +751,30 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_set_opts</b>
 
 <p>Block device I/O wait callback. </p>
 <p>Callback function to notify when an <a class="el" href="structspdk__bdev__io.html">spdk_bdev_io</a> structure is available to satisfy a call to one of the <a class="el" href="group__bdev__io__submit__functions.html">bdev I/O Submit Functions</a>. </p>
+
+</div>
+</div>
+<a id="a0253fe337c6697d014adffde6f8cd000"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0253fe337c6697d014adffde6f8cd000">&#9670;&nbsp;</a></span>spdk_bdev_open_async_cb_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void(* spdk_bdev_open_async_cb_t) (struct spdk_bdev_desc *desc, int rc, void *cb_arg)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Block device asynchronous open callback. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">desc</td><td>Output parameter for the descriptor when operation is successful. </td></tr>
+    <tr><td class="paramname">rc</td><td>0 if block device is opened successfully or negated errno if failed. </td></tr>
+    <tr><td class="paramname">cb_arg</td><td>Callback argument. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -2886,6 +2922,79 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_set_opts</b>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The next block device without virtual block devices on top. </dd></dl>
+
+</div>
+</div>
+<a id="af29e58cf7325dbc4f4ca8e0abb2d9506"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af29e58cf7325dbc4f4ca8e0abb2d9506">&#9670;&nbsp;</a></span>spdk_bdev_open_async()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_bdev_open_async </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>bdev_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>write</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="bdev_8h.html#ab4755b1b0a2a204732c3be266b6e1b08">spdk_bdev_event_cb_t</a>&#160;</td>
+          <td class="paramname"><em>event_cb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>event_ctx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structspdk__bdev__open__async__opts.html">spdk_bdev_open_async_opts</a> *&#160;</td>
+          <td class="paramname"><em>opts</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="bdev_8h.html#a0253fe337c6697d014adffde6f8cd000">spdk_bdev_open_async_cb_t</a>&#160;</td>
+          <td class="paramname"><em>open_cb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>open_cb_arg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Open a block device for I/O operations asynchronously with options. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bdev_name</td><td>Block device name to open. </td></tr>
+    <tr><td class="paramname">write</td><td>true is read/write access requested, false if read-only </td></tr>
+    <tr><td class="paramname">event_cb</td><td>Notification callback to be called when the bdev triggers asynchronous event such as bdev removal. This will always be called on the same thread that <a class="el" href="bdev_8h.html#af29e58cf7325dbc4f4ca8e0abb2d9506" title="Open a block device for I/O operations asynchronously with options.">spdk_bdev_open_async()</a> was called on. In case of removal event the descriptor will have to be manually closed to make the bdev unregister proceed. </td></tr>
+    <tr><td class="paramname">event_ctx</td><td>param for event_cb. </td></tr>
+    <tr><td class="paramname">opts</td><td>Options for asynchronous block device open. If NULL, default values are used. </td></tr>
+    <tr><td class="paramname">open_cb</td><td>Open callback. </td></tr>
+    <tr><td class="paramname">open_cb_arg</td><td>Parameter for open_cb. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 if operation started successfully, suitable errno value otherwise </dd></dl>
 
 </div>
 </div>
