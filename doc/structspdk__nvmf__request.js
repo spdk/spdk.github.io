@@ -5,7 +5,6 @@ var structspdk__nvmf__request =
     [ "bdev_io_wait", "structspdk__nvmf__request.html#a84e4ee7737756949d0d93a970bddc4ea", null ],
     [ "cmd", "structspdk__nvmf__request.html#ad35a0f72cdc9adfc452e5a07076a44d6", null ],
     [ "cmd_cb_fn", "structspdk__nvmf__request.html#a79045574915e8733d0ca739231601a0b", null ],
-    [ "data", "structspdk__nvmf__request.html#ad4050a61b10350d8839441d913ee6d60", null ],
     [ "data_from_pool", "structspdk__nvmf__request.html#a8435a0e6965e3ed10a84c8e000226dc8", null ],
     [ "dif", "structspdk__nvmf__request.html#ae30b6b5bc1ef629f68f6bc5596895f02", null ],
     [ "dif_enabled", "structspdk__nvmf__request.html#a95ae1e6f9092297556824f85b4242965", null ],
