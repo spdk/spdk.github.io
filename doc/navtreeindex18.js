@@ -146,7 +146,7 @@ var NAVTREEINDEX18 =
 "structspdk__accel__module__if.html#add80c515e6283f7dfbc89e203b1cf45c":[14,0,53,7],
 "structspdk__accel__module__if.html#ae6dfa91acb521f8605575ba431e5adb0":[14,0,53,3],
 "structspdk__accel__module__if.html#ae918a45a62d5578f40ff7f90c88de1c6":[14,0,53,10],
-"structspdk__accel__module__if.html#af85252872b20ad761b2fb7ace30d7992":[14,0,53,12],
+"structspdk__accel__module__if.html#af8472800fed11f279f6c1e96ac48a122":[14,0,53,12],
 "structspdk__accel__opcode__stats.html":[14,0,54],
 "structspdk__accel__opcode__stats.html#a5f327817cd2cade359432b4b0b00e5f2":[14,0,54,2],
 "structspdk__accel__opcode__stats.html#a80178555117743997ee244b84eeca483":[14,0,54,0],
