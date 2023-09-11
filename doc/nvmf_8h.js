@@ -4,6 +4,7 @@ var nvmf_8h =
     [ "spdk_nvmf_transport_opts", "structspdk__nvmf__transport__opts.html", "structspdk__nvmf__transport__opts" ],
     [ "spdk_nvmf_listen_opts", "structspdk__nvmf__listen__opts.html", "structspdk__nvmf__listen__opts" ],
     [ "spdk_nvmf_poll_group_stat", "structspdk__nvmf__poll__group__stat.html", "structspdk__nvmf__poll__group__stat" ],
+    [ "spdk_nvmf_listener_opts", "structspdk__nvmf__listener__opts.html", "structspdk__nvmf__listener__opts" ],
     [ "spdk_nvmf_ns_opts", "structspdk__nvmf__ns__opts.html", "structspdk__nvmf__ns__opts" ],
     [ "NVMF_TGT_NAME_MAX_LENGTH", "nvmf_8h.html#aa14fa429c146d151fd9ef3d53df80da8", null ],
     [ "SPDK_TLS_PSK_MAX_LEN", "nvmf_8h.html#a3f78e79bc3f8adf4f29bee917f9a4490", null ],
@@ -48,6 +49,7 @@ var nvmf_8h =
     [ "spdk_nvmf_rdma_init_hooks", "nvmf_8h.html#a9ae1cb4c373e0dd8146b81b5ba57ff0b", null ],
     [ "spdk_nvmf_subsystem_add_host", "nvmf_8h.html#a4082cbddea58f9fc309504a6e8254113", null ],
     [ "spdk_nvmf_subsystem_add_listener", "nvmf_8h.html#a96ece790c05df3a1f410ef617b2e5cb4", null ],
+    [ "spdk_nvmf_subsystem_add_listener_ext", "nvmf_8h.html#a264077cd7633ac2103bd4e293e8a94f5", null ],
     [ "spdk_nvmf_subsystem_add_ns_ext", "nvmf_8h.html#a9778ef2894d69144defb4f1547bfec15", null ],
     [ "spdk_nvmf_subsystem_allow_any_listener", "nvmf_8h.html#ad5747c07b3d4ce75b4825597ecf32fde", null ],
     [ "spdk_nvmf_subsystem_create", "nvmf_8h.html#ad1b7f34d31e34d784fb54b70b02bdb15", null ],
@@ -74,6 +76,7 @@ var nvmf_8h =
     [ "spdk_nvmf_subsystem_host_allowed", "nvmf_8h.html#a5f8ded88254cb17d8ee5c378f0e35a25", null ],
     [ "spdk_nvmf_subsystem_listener_allowed", "nvmf_8h.html#add30a7c425fdb3e986f7bfdcfd1c9a5d", null ],
     [ "spdk_nvmf_subsystem_listener_get_trid", "nvmf_8h.html#ae6b9a07e77716d3e5f68c846d82b7ad7", null ],
+    [ "spdk_nvmf_subsystem_listener_opts_init", "nvmf_8h.html#a59957bc6819accf6a7df37f6352b9a61", null ],
     [ "spdk_nvmf_subsystem_pause", "nvmf_8h.html#a7be3b7421b631e48f9a0178ed8db8842", null ],
     [ "spdk_nvmf_subsystem_remove_host", "nvmf_8h.html#a028b2b8739dfdd896414b5c2fb84faf6", null ],
     [ "spdk_nvmf_subsystem_remove_listener", "nvmf_8h.html#af77830eafd0e5bdf209be8d9c196fc11", null ],
@@ -107,6 +110,7 @@ var nvmf_8h =
     [ "spdk_nvmf_transport_stop_listen", "nvmf_8h.html#ae261eff09a7b8e6d14d2710c169b17df", null ],
     [ "spdk_nvmf_transport_stop_listen_async", "nvmf_8h.html#a51c3554ddcd16dc80f8d016c9d5d7c9f", null ],
     [ "SPDK_STATIC_ASSERT", "nvmf_8h.html#a919b26ada32bf50f1894ac0e00893b74", null ],
+    [ "SPDK_STATIC_ASSERT", "nvmf_8h.html#a5914a76ce777def9acab5a7b6efd9a51", null ],
     [ "SPDK_STATIC_ASSERT", "nvmf_8h.html#a3542dbbd3ec77c3bb4b2a3d82c2d118d", null ],
     [ "SPDK_STATIC_ASSERT", "nvmf_8h.html#ac2d393ea960adf8490e742258feafaf1", null ]
 ];

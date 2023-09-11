@@ -109,6 +109,8 @@ Data Structures</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvmf__poll__group__stat.html">spdk_nvmf_poll_group_stat</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvmf__listener__opts.html">spdk_nvmf_listener_opts</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvmf__ns__opts.html">spdk_nvmf_ns_opts</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">NVMe-oF target namespace creation options.  <a href="structspdk__nvmf__ns__opts.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -287,6 +289,15 @@ Functions</h2></td></tr>
 <tr class="memitem:a96ece790c05df3a1f410ef617b2e5cb4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#a96ece790c05df3a1f410ef617b2e5cb4">spdk_nvmf_subsystem_add_listener</a> (struct spdk_nvmf_subsystem *subsystem, struct <a class="el" href="structspdk__nvme__transport__id.html">spdk_nvme_transport_id</a> *trid, <a class="el" href="nvmf_8h.html#aad52ac090dcb26b03da0e689ea71df89">spdk_nvmf_tgt_subsystem_listen_done_fn</a> cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:a96ece790c05df3a1f410ef617b2e5cb4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Accept new connections on the address provided.  <a href="nvmf_8h.html#a96ece790c05df3a1f410ef617b2e5cb4">More...</a><br /></td></tr>
 <tr class="separator:a96ece790c05df3a1f410ef617b2e5cb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5914a76ce777def9acab5a7b6efd9a51"><td class="memItemLeft" align="right" valign="top"><a id="a5914a76ce777def9acab5a7b6efd9a51"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_STATIC_ASSERT</b> (sizeof(struct <a class="el" href="structspdk__nvmf__listener__opts.html">spdk_nvmf_listener_opts</a>)==9, &quot;Incorrect size&quot;)</td></tr>
+<tr class="separator:a5914a76ce777def9acab5a7b6efd9a51"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59957bc6819accf6a7df37f6352b9a61"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#a59957bc6819accf6a7df37f6352b9a61">spdk_nvmf_subsystem_listener_opts_init</a> (struct <a class="el" href="structspdk__nvmf__listener__opts.html">spdk_nvmf_listener_opts</a> *opts, size_t size)</td></tr>
+<tr class="memdesc:a59957bc6819accf6a7df37f6352b9a61"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize options structure for listener creation.  <a href="nvmf_8h.html#a59957bc6819accf6a7df37f6352b9a61">More...</a><br /></td></tr>
+<tr class="separator:a59957bc6819accf6a7df37f6352b9a61"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a264077cd7633ac2103bd4e293e8a94f5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#a264077cd7633ac2103bd4e293e8a94f5">spdk_nvmf_subsystem_add_listener_ext</a> (struct spdk_nvmf_subsystem *subsystem, struct <a class="el" href="structspdk__nvme__transport__id.html">spdk_nvme_transport_id</a> *trid, <a class="el" href="nvmf_8h.html#aad52ac090dcb26b03da0e689ea71df89">spdk_nvmf_tgt_subsystem_listen_done_fn</a> cb_fn, void *cb_arg, struct <a class="el" href="structspdk__nvmf__listener__opts.html">spdk_nvmf_listener_opts</a> *opts)</td></tr>
+<tr class="memdesc:a264077cd7633ac2103bd4e293e8a94f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Accept new connections on the address provided.  <a href="nvmf_8h.html#a264077cd7633ac2103bd4e293e8a94f5">More...</a><br /></td></tr>
+<tr class="separator:a264077cd7633ac2103bd4e293e8a94f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af77830eafd0e5bdf209be8d9c196fc11"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#af77830eafd0e5bdf209be8d9c196fc11">spdk_nvmf_subsystem_remove_listener</a> (struct spdk_nvmf_subsystem *subsystem, const struct <a class="el" href="structspdk__nvme__transport__id.html">spdk_nvme_transport_id</a> *trid)</td></tr>
 <tr class="memdesc:af77830eafd0e5bdf209be8d9c196fc11"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove the listener from subsystem.  <a href="nvmf_8h.html#af77830eafd0e5bdf209be8d9c196fc11">More...</a><br /></td></tr>
 <tr class="separator:af77830eafd0e5bdf209be8d9c196fc11"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1403,6 +1414,66 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a264077cd7633ac2103bd4e293e8a94f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a264077cd7633ac2103bd4e293e8a94f5">&#9670;&nbsp;</a></span>spdk_nvmf_subsystem_add_listener_ext()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_nvmf_subsystem_add_listener_ext </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_nvmf_subsystem *&#160;</td>
+          <td class="paramname"><em>subsystem</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structspdk__nvme__transport__id.html">spdk_nvme_transport_id</a> *&#160;</td>
+          <td class="paramname"><em>trid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="nvmf_8h.html#aad52ac090dcb26b03da0e689ea71df89">spdk_nvmf_tgt_subsystem_listen_done_fn</a>&#160;</td>
+          <td class="paramname"><em>cb_fn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>cb_arg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structspdk__nvmf__listener__opts.html">spdk_nvmf_listener_opts</a> *&#160;</td>
+          <td class="paramname"><em>opts</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Accept new connections on the address provided. </p>
+<p>This does not start the listener. Use <a class="el" href="nvmf_8h.html#a82f711797bfc4bc5abf9264daf53b1ef" title="Begin accepting new connections at the address provided.">spdk_nvmf_tgt_listen_ext()</a> for that.</p>
+<p>May only be performed on subsystems in the PAUSED or INACTIVE states. No namespaces are required to be paused.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">subsystem</td><td>Subsystem to add listener to. </td></tr>
+    <tr><td class="paramname">trid</td><td>The address to accept connections from. </td></tr>
+    <tr><td class="paramname">cb_fn</td><td>A callback that will be called once the association is complete. </td></tr>
+    <tr><td class="paramname">cb_arg</td><td>Argument passed to cb_fn. </td></tr>
+    <tr><td class="paramname">opts</td><td>NULL or options requested for listener creation. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a9778ef2894d69144defb4f1547bfec15"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9778ef2894d69144defb4f1547bfec15">&#9670;&nbsp;</a></span>spdk_nvmf_subsystem_add_ns_ext()</h2>
 
@@ -2293,6 +2364,43 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the transport ID for this listener. </dd></dl>
+
+</div>
+</div>
+<a id="a59957bc6819accf6a7df37f6352b9a61"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a59957bc6819accf6a7df37f6352b9a61">&#9670;&nbsp;</a></span>spdk_nvmf_subsystem_listener_opts_init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_nvmf_subsystem_listener_opts_init </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structspdk__nvmf__listener__opts.html">spdk_nvmf_listener_opts</a> *&#160;</td>
+          <td class="paramname"><em>opts</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Initialize options structure for listener creation. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">opts</td><td>Options structure to initialize. </td></tr>
+    <tr><td class="paramname">size</td><td>Size of the structure. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
