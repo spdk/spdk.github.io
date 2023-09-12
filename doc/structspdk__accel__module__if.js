@@ -8,6 +8,7 @@ var structspdk__accel__module__if =
     [ "get_ctx_size", "structspdk__accel__module__if.html#acdfb086fb9aeb6e678d0e59dd4757935", null ],
     [ "get_io_channel", "structspdk__accel__module__if.html#a261c190c37ce3955a24e66ca6dd2a2f1", null ],
     [ "get_memory_domains", "structspdk__accel__module__if.html#add80c515e6283f7dfbc89e203b1cf45c", null ],
+    [ "get_operation_info", "structspdk__accel__module__if.html#ae5fb6643626d8ab347d4d4e4fb0cee62", null ],
     [ "module_fini", "structspdk__accel__module__if.html#a3cba48f71887d03cb0b350a06e56ecf4", null ],
     [ "module_init", "structspdk__accel__module__if.html#a67ea670c5044c1201533a7e23b81c8b3", null ],
     [ "name", "structspdk__accel__module__if.html#ae918a45a62d5578f40ff7f90c88de1c6", null ],

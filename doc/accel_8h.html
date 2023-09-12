@@ -107,6 +107,9 @@ Data Structures</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__accel__opcode__stats.html">spdk_accel_opcode_stats</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__accel__operation__exec__ctx.html">spdk_accel_operation_exec_ctx</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Context for the <code><a class="el" href="accel_8h.html#aaebd6fe37b7af8036e42184adc407ce4" title="Get minimum buffer alignment to execute a given operation.">spdk_accel_get_buf_align()</a></code> function.  <a href="structspdk__accel__operation__exec__ctx.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
@@ -270,6 +273,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ab26522d2be912c77bf0700a8fafc41e0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="accel_8h.html#ab26522d2be912c77bf0700a8fafc41e0">spdk_accel_get_opcode_stats</a> (struct spdk_io_channel *ch, enum spdk_accel_opcode opcode, struct <a class="el" href="structspdk__accel__opcode__stats.html">spdk_accel_opcode_stats</a> *stats, size_t size)</td></tr>
 <tr class="memdesc:ab26522d2be912c77bf0700a8fafc41e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve opcode statistics for a given IO channel.  <a href="accel_8h.html#ab26522d2be912c77bf0700a8fafc41e0">More...</a><br /></td></tr>
 <tr class="separator:ab26522d2be912c77bf0700a8fafc41e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaebd6fe37b7af8036e42184adc407ce4"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="accel_8h.html#aaebd6fe37b7af8036e42184adc407ce4">spdk_accel_get_buf_align</a> (enum spdk_accel_opcode opcode, const struct <a class="el" href="structspdk__accel__operation__exec__ctx.html">spdk_accel_operation_exec_ctx</a> *ctx)</td></tr>
+<tr class="memdesc:aaebd6fe37b7af8036e42184adc407ce4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get minimum buffer alignment to execute a given operation.  <a href="accel_8h.html#aaebd6fe37b7af8036e42184adc407ce4">More...</a><br /></td></tr>
+<tr class="separator:aaebd6fe37b7af8036e42184adc407ce4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Acceleration Framework. </p>
@@ -1245,6 +1251,45 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 if a buffer was successfully allocated, negative errno otherwise. </dd></dl>
+
+</div>
+</div>
+<a id="aaebd6fe37b7af8036e42184adc407ce4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaebd6fe37b7af8036e42184adc407ce4">&#9670;&nbsp;</a></span>spdk_accel_get_buf_align()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t spdk_accel_get_buf_align </td>
+          <td>(</td>
+          <td class="paramtype">enum spdk_accel_opcode&#160;</td>
+          <td class="paramname"><em>opcode</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const struct <a class="el" href="structspdk__accel__operation__exec__ctx.html">spdk_accel_operation_exec_ctx</a> *&#160;</td>
+          <td class="paramname"><em>ctx</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get minimum buffer alignment to execute a given operation. </p>
+<p>It accounts for constraints of a module assigned to execute a given operation and the driver (if set). The alignment is returned as a power of 2. The value of 0 means that the buffers don't need to be aligned.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">opcode</td><td>Opcode. </td></tr>
+    <tr><td class="paramname">ctx</td><td>Context in which the operation will be executed.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Minimum alignment. </dd></dl>
 
 </div>
 </div>

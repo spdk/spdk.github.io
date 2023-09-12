@@ -201,6 +201,12 @@ Functions</h2></td></tr>
 <tr class="memitem:acdbb193a4b8ca1c57c2b43223165dfa6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jsonrpc_8h.html#acdbb193a4b8ca1c57c2b43223165dfa6">spdk_jsonrpc_client_free_response</a> (struct <a class="el" href="structspdk__jsonrpc__client__response.html">spdk_jsonrpc_client_response</a> *resp)</td></tr>
 <tr class="memdesc:acdbb193a4b8ca1c57c2b43223165dfa6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Free response object obtained from <code>spdk_jsonrpc_client_get_response</code>.  <a href="jsonrpc_8h.html#acdbb193a4b8ca1c57c2b43223165dfa6">More...</a><br /></td></tr>
 <tr class="separator:acdbb193a4b8ca1c57c2b43223165dfa6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3bbeff8c3dd1d8f4e48aa33036eb215"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jsonrpc_8h.html#ab3bbeff8c3dd1d8f4e48aa33036eb215">spdk_jsonrpc_set_log_level</a> (enum <a class="el" href="log_8h.html#a188d351bd05093cba1d8594ee9988efd">spdk_log_level</a> level)</td></tr>
+<tr class="memdesc:ab3bbeff8c3dd1d8f4e48aa33036eb215"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the log level used by the JSON-RPC server to log RPC request and response objects.  <a href="jsonrpc_8h.html#ab3bbeff8c3dd1d8f4e48aa33036eb215">More...</a><br /></td></tr>
+<tr class="separator:ab3bbeff8c3dd1d8f4e48aa33036eb215"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4839d55c5da4ce5929a08a5d2f35e4bf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jsonrpc_8h.html#a4839d55c5da4ce5929a08a5d2f35e4bf">spdk_jsonrpc_set_log_file</a> (FILE *file)</td></tr>
+<tr class="memdesc:a4839d55c5da4ce5929a08a5d2f35e4bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the log file used by the JSON-RPC server to log RPC request and response objects.  <a href="jsonrpc_8h.html#a4839d55c5da4ce5929a08a5d2f35e4bf">More...</a><br /></td></tr>
+<tr class="separator:a4839d55c5da4ce5929a08a5d2f35e4bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>JSON-RPC 2.0 server implementation. </p>
@@ -1010,6 +1016,60 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">server</td><td>JSON-RPC server. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a4839d55c5da4ce5929a08a5d2f35e4bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4839d55c5da4ce5929a08a5d2f35e4bf">&#9670;&nbsp;</a></span>spdk_jsonrpc_set_log_file()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_jsonrpc_set_log_file </td>
+          <td>(</td>
+          <td class="paramtype">FILE *&#160;</td>
+          <td class="paramname"><em>file</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the log file used by the JSON-RPC server to log RPC request and response objects. </p>
+<p>NOTE: This function should be called only before starting the JSON-RPC server.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">file</td><td>Log file pointer used to log RPC objects. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ab3bbeff8c3dd1d8f4e48aa33036eb215"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab3bbeff8c3dd1d8f4e48aa33036eb215">&#9670;&nbsp;</a></span>spdk_jsonrpc_set_log_level()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_jsonrpc_set_log_level </td>
+          <td>(</td>
+          <td class="paramtype">enum <a class="el" href="log_8h.html#a188d351bd05093cba1d8594ee9988efd">spdk_log_level</a>&#160;</td>
+          <td class="paramname"><em>level</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the log level used by the JSON-RPC server to log RPC request and response objects. </p>
+<p>NOTE: This function should be called only before starting the JSON-RPC server. Users should set the level set by this function higher than the level set by <a class="el" href="log_8h.html#ab34f1c87d98113395ab04415dbee96d8" title="Set the current log level threshold for printing to stderr.">spdk_log_set_print_level()</a> or <a class="el" href="log_8h.html#a422b7a65819b43157a4771be78f544ee" title="Set the log level threshold to log messages.">spdk_log_set_level()</a>.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">level</td><td>Log level used to log RPC objects. </td></tr>
   </table>
   </dd>
 </dl>

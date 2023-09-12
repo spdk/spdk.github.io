@@ -115,6 +115,9 @@ const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 struct spdk_io_channel *(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__accel__driver.html#ab2cc90720578b4cebe6baa9af1987979">get_io_channel</a> )(void)</td></tr>
 <tr class="memdesc:ab2cc90720578b4cebe6baa9af1987979"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns IO channel that will be passed to <code><a class="el" href="structspdk__accel__driver.html#a28a4ffcf8a04cc9629936f342d15e6bd" title="Executes a sequence of accel operations.">execute_sequence()</a></code>. <br /></td></tr>
 <tr class="separator:ab2cc90720578b4cebe6baa9af1987979"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b6a86ed7bd102bcfdd5275ebe056f5a"><td class="memItemLeft" align="right" valign="top">int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__accel__driver.html#a4b6a86ed7bd102bcfdd5275ebe056f5a">get_operation_info</a> )(enum spdk_accel_opcode opcode, const struct <a class="el" href="structspdk__accel__operation__exec__ctx.html">spdk_accel_operation_exec_ctx</a> *ctx, struct <a class="el" href="structspdk__accel__opcode__info.html">spdk_accel_opcode_info</a> *info)</td></tr>
+<tr class="memdesc:a4b6a86ed7bd102bcfdd5275ebe056f5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns information/constraints for a given operation.  <a href="structspdk__accel__driver.html#a4b6a86ed7bd102bcfdd5275ebe056f5a">More...</a><br /></td></tr>
+<tr class="separator:a4b6a86ed7bd102bcfdd5275ebe056f5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Platform driver responsible for executing tasks in a sequence. </p>
@@ -142,6 +145,23 @@ struct spdk_io_channel *(*&#160;</td><td class="memItemRight" valign="bottom"><a
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 on success, negative errno on failure. </dd></dl>
+
+</div>
+</div>
+<a id="a4b6a86ed7bd102bcfdd5275ebe056f5a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b6a86ed7bd102bcfdd5275ebe056f5a">&#9670;&nbsp;</a></span>get_operation_info</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int(* spdk_accel_driver::get_operation_info) (enum spdk_accel_opcode opcode, const struct <a class="el" href="structspdk__accel__operation__exec__ctx.html">spdk_accel_operation_exec_ctx</a> *ctx, struct <a class="el" href="structspdk__accel__opcode__info.html">spdk_accel_opcode_info</a> *info)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns information/constraints for a given operation. </p>
+<p>If unimplemented, it is assumed that the driver doesn't have any constraints to execute any operation. </p>
 
 </div>
 </div>

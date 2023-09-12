@@ -1,5 +1,6 @@
 var NAVTREEINDEX7 =
 {
+"jsonrpc.html#rpc_bdev_nvme_apply_firmware":[3,9,5,51],
 "jsonrpc.html#rpc_bdev_nvme_attach_controller":[3,9,5,34],
 "jsonrpc.html#rpc_bdev_nvme_cuse_register":[3,9,5,47],
 "jsonrpc.html#rpc_bdev_nvme_cuse_unregister":[3,9,5,48],
@@ -211,6 +212,7 @@ var NAVTREEINDEX7 =
 "jsonrpc_8h.html#a36e8741a465238436ca46464dfbd277b":[15,0,35,14],
 "jsonrpc_8h.html#a42438592f780e35892904af6be663617":[15,0,35,15],
 "jsonrpc_8h.html#a42f6b43bea611799dccb7ac98bb11930":[15,0,35,21],
+"jsonrpc_8h.html#a4839d55c5da4ce5929a08a5d2f35e4bf":[15,0,35,31],
 "jsonrpc_8h.html#a506661cfdfda6f549c69a6f4a988a026":[15,0,35,26],
 "jsonrpc_8h.html#a5160e9c0a3230584ca653ffd2ea64487":[15,0,35,7],
 "jsonrpc_8h.html#a7246f2742a3bebe9494defa7d305de84":[15,0,35,20],
@@ -222,6 +224,7 @@ var NAVTREEINDEX7 =
 "jsonrpc_8h.html#a9ae1b767ebb4ad59a9c4739beea1c6f4":[15,0,35,22],
 "jsonrpc_8h.html#aa7d4f7ed2234b0cd20e3c87685030b2f":[15,0,35,30],
 "jsonrpc_8h.html#aaadb8c7ec1b7472b41e74c27f08494b7":[15,0,35,19],
+"jsonrpc_8h.html#ab3bbeff8c3dd1d8f4e48aa33036eb215":[15,0,35,32],
 "jsonrpc_8h.html#ab8b438aa5b6e78cb5d433ca0015fd126":[15,0,35,17],
 "jsonrpc_8h.html#ab91b6125cbea0661bdfa87400b6c3020":[15,0,35,29],
 "jsonrpc_8h.html#abc26b54313be26e70aadad6e11b1d548":[15,0,35,5],
@@ -246,8 +249,5 @@ var NAVTREEINDEX7 =
 "libraries.html#static_objects":[3,1,3],
 "libraries.html#structure":[3,1,0],
 "libraries.html#versioning":[3,1,2,0],
-"likely_8h.html":[15,0,36],
-"likely_8h.html#a568e75eb7097ecf9ea2c735abc9f5844":[15,0,36,0],
-"likely_8h.html#adbc72e18822cb8015657c3e8baba7bb5":[15,0,36,1],
-"log_8h.html":[15,0,37]
+"likely_8h.html":[15,0,36]
 };

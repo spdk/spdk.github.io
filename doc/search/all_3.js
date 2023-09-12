@@ -76,5 +76,6 @@ var searchData=
   ['ctratt_176',['ctratt',['../structspdk__nvme__ctrlr__data.html#a4d8b29aa3168b91b11e1717d32a9df16',1,'spdk_nvme_ctrlr_data']]],
   ['ctrattr_177',['ctrattr',['../structspdk__nvme__cdata__nvmf__specific.html#a5ef1fbf1162dbeba3636b56d5c327604',1,'spdk_nvme_cdata_nvmf_specific']]],
   ['ctrlr_5fmodel_178',['ctrlr_model',['../structspdk__nvme__cdata__nvmf__specific.html#a80557e12aafab3a50037fc7e2feb1326',1,'spdk_nvme_cdata_nvmf_specific']]],
-  ['ctxt_179',['ctxt',['../structspdk__bdev.html#a0329aa7395f9784d4dc8c596efc4ac8c',1,'spdk_bdev']]]
+  ['ctxt_179',['ctxt',['../structspdk__bdev.html#a0329aa7395f9784d4dc8c596efc4ac8c',1,'spdk_bdev']]],
+  ['curr_5flist_180',['curr_list',['../structspdk__sock__request_1_1____sock__request__internal.html#ad56c3598d999da0c179cc50d8689aa7a',1,'spdk_sock_request::__sock_request_internal']]]
 ];

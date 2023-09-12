@@ -100,6 +100,8 @@ v23.09: (Upcoming Release)</h1>
 <p>New APIs, <code>spdk_flog</code> and <code>spdk_vflog</code>, were added to write messages to the specified log file.</p>
 <h2>nvmf</h2>
 <p>The <code>spdk_nvmf_request::data</code> field has been removed: instead, clients should set <code>-&gt;iov</code> and <code>-&gt;iovcnt</code> appropriately, as nvmf request APIs now expect any data buffers to be described there. spdk_nvmf_request_get_data() has been removed.</p>
+<h2>jsonrpc</h2>
+<p>New APIs, <code>spdk_jsonrpc_set_log_level</code> and <code>spdk_jsonrpc_set_log_file</code>, were added to enable logging JSON RPC calls history.</p>
 <h1>v23.05</h1>
 <h2>accel</h2>
 <p>Added API <code>spdk_accel_submit_xor</code> to perform XOR.</p>
