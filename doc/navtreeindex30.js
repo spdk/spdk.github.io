@@ -1,5 +1,6 @@
 var NAVTREEINDEX30 =
 {
+"structspdk__scsi__task.html#af64768a06fe99dea3b1c90791d5970b0":[14,0,382,23],
 "structspdk__scsi__task.html#afa26345de5d75d6850560cc6c1bbc5fe":[14,0,382,6],
 "structspdk__scsi__task.html#afc9a5efc76a958e8d228fb6316e4eccb":[14,0,382,22],
 "structspdk__scsi__tgt__port__desc.html":[14,0,383],
@@ -248,6 +249,5 @@ var NAVTREEINDEX30 =
 "structvfio__user__region__access.html#a4f0edcde076bdae35264919af0240cdb":[14,0,419,2],
 "structvfio__user__region__access.html#ac5a629b3d9e366349ae7a7f37215bf46":[14,0,419,1],
 "structvfio__user__version.html":[14,0,420],
-"structvfio__user__version.html#a3e28cccc95d172ce1e64ee6a3e04f04a":[14,0,420,2],
-"structvfio__user__version.html#ab4a19712c45fb4ecf80f370129225671":[14,0,420,1]
+"structvfio__user__version.html#a3e28cccc95d172ce1e64ee6a3e04f04a":[14,0,420,2]
 };

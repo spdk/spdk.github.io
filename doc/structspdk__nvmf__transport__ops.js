@@ -28,6 +28,7 @@ var structspdk__nvmf__transport__ops =
     [ "stop_listen", "structspdk__nvmf__transport__ops.html#a79190a46c19b7d92d8929a7470afeb94", null ],
     [ "subsystem_add_host", "structspdk__nvmf__transport__ops.html#a45b3a96ae37a0cedff76737fff1d2860", null ],
     [ "subsystem_add_ns", "structspdk__nvmf__transport__ops.html#a3cfc9284b5467a989daed1e59692eb5a", null ],
+    [ "subsystem_dump_host", "structspdk__nvmf__transport__ops.html#a3bbf040ebe23c771b0ee6f7af66c4a76", null ],
     [ "subsystem_remove_host", "structspdk__nvmf__transport__ops.html#a9d2aca6f2f50c4466061f29171878609", null ],
     [ "subsystem_remove_ns", "structspdk__nvmf__transport__ops.html#af0c5a0e08b9fad80e893300411062d61", null ],
     [ "type", "structspdk__nvmf__transport__ops.html#a22ddd0d23a055a17e6bd10fe4927a4db", null ]
