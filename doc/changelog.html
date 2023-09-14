@@ -100,8 +100,11 @@ v23.09: (Upcoming Release)</h1>
 <p>New APIs, <code>spdk_flog</code> and <code>spdk_vflog</code>, were added to write messages to the specified log file.</p>
 <h2>nvmf</h2>
 <p>The <code>spdk_nvmf_request::data</code> field has been removed: instead, clients should set <code>-&gt;iov</code> and <code>-&gt;iovcnt</code> appropriately, as nvmf request APIs now expect any data buffers to be described there. spdk_nvmf_request_get_data() has been removed.</p>
+<p><code>transport</code> field in <code>listen_addresses</code> of <code>nvmf_get_subsystems</code> RPC is deprecated. <code>trtype</code> field should be used instead. <code>transport</code> field will be removed in 24.01 release.</p>
 <h2>jsonrpc</h2>
 <p>New APIs, <code>spdk_jsonrpc_set_log_level</code> and <code>spdk_jsonrpc_set_log_file</code>, were added to enable logging JSON RPC calls history.</p>
+<h2>init</h2>
+<p>Options for the JSON-RPC server initialization were added. The options are defined via the <code><a class="el" href="structspdk__rpc__opts.html" title="Structure with optional parameters for the JSON-RPC server initialization.">spdk_rpc_opts</a></code> structure and is passed to the existing API <code><a class="el" href="init_8h.html#adbfa73a5f5120e5a80d7b33beb7df862" title="Create the SPDK JSON-RPC server and listen at the provided address.">spdk_rpc_initialize()</a></code> as a new argument. The options include <code>log_file</code> and <code>log_level</code>.</p>
 <h1>v23.05</h1>
 <h2>accel</h2>
 <p>Added API <code>spdk_accel_submit_xor</code> to perform XOR.</p>

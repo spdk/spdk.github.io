@@ -173,6 +173,12 @@ Macros</h2></td></tr>
 <tr class="memitem:a9fbe3f432578c164ee42772192409828"><td class="memItemLeft" align="right" valign="top"><a id="a9fbe3f432578c164ee42772192409828"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_NVME_OPC_FABRIC</b>&#160;&#160;&#160;0x7f</td></tr>
 <tr class="separator:a9fbe3f432578c164ee42772192409828"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef83fcee20802e2fbb7e54d9e8ae2dbb"><td class="memItemLeft" align="right" valign="top"><a id="aef83fcee20802e2fbb7e54d9e8ae2dbb"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_NVMF_DISCOVERY_LOG_EFLAGS_DUPRETINFO</b>&#160;&#160;&#160;(1u &lt;&lt; 0u)</td></tr>
+<tr class="separator:aef83fcee20802e2fbb7e54d9e8ae2dbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40c9a9a5927957f589d960c22d3f362e"><td class="memItemLeft" align="right" valign="top"><a id="a40c9a9a5927957f589d960c22d3f362e"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_NVMF_DISCOVERY_LOG_EFLAGS_EPCSD</b>&#160;&#160;&#160;(1u &lt;&lt; 1u)</td></tr>
+<tr class="separator:a40c9a9a5927957f589d960c22d3f362e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0578627f30113b62cb183438a4437b3f"><td class="memItemLeft" align="right" valign="top"><a id="a0578627f30113b62cb183438a4437b3f"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_NVMF_PROP_SIZE_4</b>&#160;&#160;&#160;0</td></tr>
 <tr class="separator:a0578627f30113b62cb183438a4437b3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -320,6 +326,7 @@ Enumerations</h2></td></tr>
 <tr class="separator:a08f0090d242e2607ab11f148dcd797c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a808272f050cc373f3a90871c1528afd4"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf__spec_8h.html#a808272f050cc373f3a90871c1528afd4">spdk_nvmf_subtype</a> { <a class="el" href="nvmf__spec_8h.html#a808272f050cc373f3a90871c1528afd4a8daee5a10ca6d8e4116a52c4e4428948">SPDK_NVMF_SUBTYPE_DISCOVERY</a> = 0x1
 , <a class="el" href="nvmf__spec_8h.html#a808272f050cc373f3a90871c1528afd4a3077cae3ec6525a14d3c3c5005a6326f">SPDK_NVMF_SUBTYPE_NVME</a> = 0x2
+, <a class="el" href="nvmf__spec_8h.html#a808272f050cc373f3a90871c1528afd4a07eddfae0f3656453a5008b6870c35c7">SPDK_NVMF_SUBTYPE_DISCOVERY_CURRENT</a> = 0x3
  }</td></tr>
 <tr class="memdesc:a808272f050cc373f3a90871c1528afd4"><td class="mdescLeft">&#160;</td><td class="mdescRight">NVM subsystem types.  <a href="nvmf__spec_8h.html#a808272f050cc373f3a90871c1528afd4">More...</a><br /></td></tr>
 <tr class="separator:a808272f050cc373f3a90871c1528afd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -714,9 +721,11 @@ Functions</h2></td></tr>
 
 <p>NVM subsystem types. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a808272f050cc373f3a90871c1528afd4a8daee5a10ca6d8e4116a52c4e4428948"></a>SPDK_NVMF_SUBTYPE_DISCOVERY&#160;</td><td class="fielddoc"><p>Discovery type for NVM subsystem. </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a808272f050cc373f3a90871c1528afd4a8daee5a10ca6d8e4116a52c4e4428948"></a>SPDK_NVMF_SUBTYPE_DISCOVERY&#160;</td><td class="fielddoc"><p>Referral to a Discovery Service. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a808272f050cc373f3a90871c1528afd4a3077cae3ec6525a14d3c3c5005a6326f"></a>SPDK_NVMF_SUBTYPE_NVME&#160;</td><td class="fielddoc"><p>NVMe type for NVM subsystem. </p>
+<tr><td class="fieldname"><a id="a808272f050cc373f3a90871c1528afd4a3077cae3ec6525a14d3c3c5005a6326f"></a>SPDK_NVMF_SUBTYPE_NVME&#160;</td><td class="fielddoc"><p>NVM Subsystem. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a808272f050cc373f3a90871c1528afd4a07eddfae0f3656453a5008b6870c35c7"></a>SPDK_NVMF_SUBTYPE_DISCOVERY_CURRENT&#160;</td><td class="fielddoc"><p>Current Discovery Subsystem. </p>
 </td></tr>
 </table>
 

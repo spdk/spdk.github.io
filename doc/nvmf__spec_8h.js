@@ -43,6 +43,8 @@ var nvmf__spec_8h =
     [ "SPDK_NVME_TCP_PDU_PDO_MAX_OFFSET", "nvmf__spec_8h.html#ab8d4456503173c69a460d24b3293b897", null ],
     [ "SPDK_NVME_TCP_TERM_REQ_ERROR_DATA_MAX_SIZE", "nvmf__spec_8h.html#ab94f61f0b21a683850d852df21fcff8b", null ],
     [ "SPDK_NVME_TCP_TERM_REQ_PDU_MAX_SIZE", "nvmf__spec_8h.html#a90e0edaad0f457a5141423717f84f12f", null ],
+    [ "SPDK_NVMF_DISCOVERY_LOG_EFLAGS_DUPRETINFO", "nvmf__spec_8h.html#aef83fcee20802e2fbb7e54d9e8ae2dbb", null ],
+    [ "SPDK_NVMF_DISCOVERY_LOG_EFLAGS_EPCSD", "nvmf__spec_8h.html#a40c9a9a5927957f589d960c22d3f362e", null ],
     [ "SPDK_NVMF_DISCOVERY_NQN", "nvmf__spec_8h.html#abba72302251df54e24d5cafd8035bb85", null ],
     [ "SPDK_NVMF_MIN_ADMIN_MAX_SQ_SIZE", "nvmf__spec_8h.html#a9f439cc334dabdd6fb8b3839be05b9e1", null ],
     [ "SPDK_NVMF_NQN_MAX_LEN", "nvmf__spec_8h.html#a51c042f0d8b87a6b767fd5d745bb0ac4", null ],
@@ -130,7 +132,8 @@ var nvmf__spec_8h =
     ] ],
     [ "spdk_nvmf_subtype", "nvmf__spec_8h.html#a808272f050cc373f3a90871c1528afd4", [
       [ "SPDK_NVMF_SUBTYPE_DISCOVERY", "nvmf__spec_8h.html#a808272f050cc373f3a90871c1528afd4a8daee5a10ca6d8e4116a52c4e4428948", null ],
-      [ "SPDK_NVMF_SUBTYPE_NVME", "nvmf__spec_8h.html#a808272f050cc373f3a90871c1528afd4a3077cae3ec6525a14d3c3c5005a6326f", null ]
+      [ "SPDK_NVMF_SUBTYPE_NVME", "nvmf__spec_8h.html#a808272f050cc373f3a90871c1528afd4a3077cae3ec6525a14d3c3c5005a6326f", null ],
+      [ "SPDK_NVMF_SUBTYPE_DISCOVERY_CURRENT", "nvmf__spec_8h.html#a808272f050cc373f3a90871c1528afd4a07eddfae0f3656453a5008b6870c35c7", null ]
     ] ],
     [ "spdk_nvmf_treq_secure_channel", "nvmf__spec_8h.html#a0a92190b8c6824182974e20f84ee0a3c", [
       [ "SPDK_NVMF_TREQ_SECURE_CHANNEL_NOT_SPECIFIED", "nvmf__spec_8h.html#a0a92190b8c6824182974e20f84ee0a3caf4fd6f0b6aed9a7b43c0b1ba04b8e03f", null ],

@@ -34,6 +34,8 @@ var structspdk__app__opts =
     [ "reserved83", "structspdk__app__opts.html#a65ed7264e68c78d8a057ff7da92dd7da", null ],
     [ "rpc_addr", "structspdk__app__opts.html#a132140a9733933e19bde81ffb3421b6e", null ],
     [ "rpc_allowlist", "structspdk__app__opts.html#aeccbc0421a219e9c2c29195ad9e6be9c", null ],
+    [ "rpc_log_file", "structspdk__app__opts.html#ac6b0027c42b52343335f5a1e6fb600e4", null ],
+    [ "rpc_log_level", "structspdk__app__opts.html#a96dfb09016fe26b46324537210cb248c", null ],
     [ "shm_id", "structspdk__app__opts.html#a362c97242a5610d65e51e92183abc8d0", null ],
     [ "shutdown_cb", "structspdk__app__opts.html#a93ac293aa665a3628d0286745799c5a5", null ],
     [ "tpoint_group_mask", "structspdk__app__opts.html#a41fa1b1b7c5f2872c5fce6074960bfc5", null ],

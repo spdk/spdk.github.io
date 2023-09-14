@@ -1,5 +1,6 @@
 var NAVTREEINDEX6 =
 {
+"iscsi__spec_8h.html#a6ae501611baca9225cc96bf6cf087450ad688038015b5a7eeb2238e9ba16ad054":[15,0,33,94,2],
 "iscsi__spec_8h.html#a6ae501611baca9225cc96bf6cf087450aff67fa8d32279c6891428fa894584fd5":[15,0,33,94,6],
 "iscsi__spec_8h.html#a6c35b20c29232c43efbd5c1b53c3704f":[15,0,33,42],
 "iscsi__spec_8h.html#a732305aac4f297690e3b654076212d20":[15,0,33,22],
@@ -248,6 +249,5 @@ var NAVTREEINDEX6 =
 "jsonrpc.html#rpc_bdev_malloc_delete":[3,9,5,25],
 "jsonrpc.html#rpc_bdev_null_create":[3,9,5,26],
 "jsonrpc.html#rpc_bdev_null_delete":[3,9,5,27],
-"jsonrpc.html#rpc_bdev_null_resize":[3,9,5,28],
-"jsonrpc.html#rpc_bdev_nvme_add_error_injection":[3,9,13,8]
+"jsonrpc.html#rpc_bdev_null_resize":[3,9,5,28]
 };

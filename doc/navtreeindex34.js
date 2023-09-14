@@ -1,5 +1,16 @@
 var NAVTREEINDEX34 =
 {
+"unionspdk__nvme__intel__feat__reset__timed__workload__counters.html#a17bd188220c927bae616f269f6140845":[14,0,213,0],
+"unionspdk__nvme__intel__feat__reset__timed__workload__counters.html#a6d4eb13eae3c57005a76fa79e808525c":[14,0,213,1],
+"unionspdk__nvme__intel__feat__reset__timed__workload__counters.html#a74b5ac6a6ea150d582cc269f6987757b":[14,0,213,3],
+"unionspdk__nvme__intel__feat__reset__timed__workload__counters.html#abb7fd2e47365abcba82b98f12b8b95b3":[14,0,213,2],
+"unionspdk__nvme__intel__feat__smbus__address.html":[14,0,214],
+"unionspdk__nvme__intel__feat__smbus__address.html#a0a7cb6045d02ce84c1a1db2d8ffad226":[14,0,214,0],
+"unionspdk__nvme__intel__feat__smbus__address.html#a1e1bc8d96e7c60ff634b4b5dc28151b0":[14,0,214,1],
+"unionspdk__nvme__intel__feat__smbus__address.html#a49084bbf1cf7d967ed21e6c1dce76e9f":[14,0,214,2],
+"unionspdk__nvme__intel__feat__smbus__address.html#ab9d22f2b03c70684d832df3a349c0f31":[14,0,214,4],
+"unionspdk__nvme__intel__feat__smbus__address.html#ae122cd0e8dc3d8b57632fea33ec8efa2":[14,0,214,3],
+"unionspdk__nvme__pmrcap__register.html":[14,0,230],
 "unionspdk__nvme__pmrcap__register.html#a3421780de67cc18841423fd384e9a3c8":[14,0,230,4],
 "unionspdk__nvme__pmrcap__register.html#a4a39e0a760b85de01ffbb754755af19c":[14,0,230,11],
 "unionspdk__nvme__pmrcap__register.html#a5448a57d5748172881ec13bb34e78cdc":[14,0,230,3],

@@ -1,5 +1,6 @@
 var NAVTREEINDEX7 =
 {
+"jsonrpc.html#rpc_bdev_nvme_add_error_injection":[3,9,13,8],
 "jsonrpc.html#rpc_bdev_nvme_apply_firmware":[3,9,5,51],
 "jsonrpc.html#rpc_bdev_nvme_attach_controller":[3,9,5,34],
 "jsonrpc.html#rpc_bdev_nvme_cuse_register":[3,9,5,47],
@@ -248,6 +249,5 @@ var NAVTREEINDEX7 =
 "libraries.html#so_linking":[3,1,2,1],
 "libraries.html#static_objects":[3,1,3],
 "libraries.html#structure":[3,1,0],
-"libraries.html#versioning":[3,1,2,0],
-"likely_8h.html":[15,0,36]
+"libraries.html#versioning":[3,1,2,0]
 };

@@ -86,6 +86,7 @@ $(document).ready(function(){initNavTree('init_8h.html',''); initResizable(); })
 
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Data Structures</a> &#124;
 <a href="#define-members">Macros</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
 <a href="#func-members">Functions</a>  </div>
@@ -97,6 +98,12 @@ $(document).ready(function(){initNavTree('init_8h.html',''); initResizable(); })
 <p>SPDK Initialization Helper.  
 <a href="#details">More...</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Data Structures</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__rpc__opts.html">spdk_rpc_opts</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Structure with optional parameters for the JSON-RPC server initialization.  <a href="structspdk__rpc__opts.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
 <tr class="memitem:ad6d27c63164846e87e44de2f39792024"><td class="memItemLeft" align="right" valign="top"><a id="ad6d27c63164846e87e44de2f39792024"></a>
@@ -114,9 +121,12 @@ typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_subsys
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a5fe0edfe5ce6192fa78c63b089974f2c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="init_8h.html#a5fe0edfe5ce6192fa78c63b089974f2c">spdk_rpc_initialize</a> (const char *listen_addr)</td></tr>
-<tr class="memdesc:a5fe0edfe5ce6192fa78c63b089974f2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create the SPDK JSON-RPC server and listen at the provided address.  <a href="init_8h.html#a5fe0edfe5ce6192fa78c63b089974f2c">More...</a><br /></td></tr>
-<tr class="separator:a5fe0edfe5ce6192fa78c63b089974f2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1b5e218b85909016c3fcdce196e199f"><td class="memItemLeft" align="right" valign="top"><a id="ab1b5e218b85909016c3fcdce196e199f"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_STATIC_ASSERT</b> (sizeof(struct <a class="el" href="structspdk__rpc__opts.html">spdk_rpc_opts</a>)==24, &quot;Incorrect size&quot;)</td></tr>
+<tr class="separator:ab1b5e218b85909016c3fcdce196e199f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adbfa73a5f5120e5a80d7b33beb7df862"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="init_8h.html#adbfa73a5f5120e5a80d7b33beb7df862">spdk_rpc_initialize</a> (const char *listen_addr, const struct <a class="el" href="structspdk__rpc__opts.html">spdk_rpc_opts</a> *opts)</td></tr>
+<tr class="memdesc:adbfa73a5f5120e5a80d7b33beb7df862"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create the SPDK JSON-RPC server and listen at the provided address.  <a href="init_8h.html#adbfa73a5f5120e5a80d7b33beb7df862">More...</a><br /></td></tr>
+<tr class="separator:adbfa73a5f5120e5a80d7b33beb7df862"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ada2202d341585d983143604ff93fa411"><td class="memItemLeft" align="right" valign="top"><a id="ada2202d341585d983143604ff93fa411"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="init_8h.html#ada2202d341585d983143604ff93fa411">spdk_rpc_finish</a> (void)</td></tr>
 <tr class="memdesc:ada2202d341585d983143604ff93fa411"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shut down the SPDK JSON-RPC target. <br /></td></tr>
@@ -134,8 +144,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="init
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>SPDK Initialization Helper. </p>
 </div><h2 class="groupheader">Function Documentation</h2>
-<a id="a5fe0edfe5ce6192fa78c63b089974f2c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5fe0edfe5ce6192fa78c63b089974f2c">&#9670;&nbsp;</a></span>spdk_rpc_initialize()</h2>
+<a id="adbfa73a5f5120e5a80d7b33beb7df862"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adbfa73a5f5120e5a80d7b33beb7df862">&#9670;&nbsp;</a></span>spdk_rpc_initialize()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -144,8 +154,18 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="init
           <td class="memname">int spdk_rpc_initialize </td>
           <td>(</td>
           <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>listen_addr</em></td><td>)</td>
+          <td class="paramname"><em>listen_addr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">const struct <a class="el" href="structspdk__rpc__opts.html">spdk_rpc_opts</a> *&#160;</td>
+          <td class="paramname"><em>opts</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -154,7 +174,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="init
 <p>The RPC server is optional and is independent of subsystem initialization. The RPC server can be started and stopped at any time.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">listen_addr</td><td>Path to a unix domain socket to listen on</td></tr>
+    <tr><td class="paramname">listen_addr</td><td>Path to a unix domain socket to listen on </td></tr>
+    <tr><td class="paramname">opts</td><td>Options for JSON-RPC server initialization. If NULL, default values are used.</td></tr>
   </table>
   </dd>
 </dl>

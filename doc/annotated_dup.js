@@ -365,6 +365,7 @@ var annotated_dup =
     [ "spdk_reduce_backing_dev", "structspdk__reduce__backing__dev.html", "structspdk__reduce__backing__dev" ],
     [ "spdk_reduce_vol_cb_args", "structspdk__reduce__vol__cb__args.html", "structspdk__reduce__vol__cb__args" ],
     [ "spdk_reduce_vol_params", "structspdk__reduce__vol__params.html", "structspdk__reduce__vol__params" ],
+    [ "spdk_rpc_opts", "structspdk__rpc__opts.html", "structspdk__rpc__opts" ],
     [ "spdk_scheduler", "structspdk__scheduler.html", "structspdk__scheduler" ],
     [ "spdk_scheduler_core_info", "structspdk__scheduler__core__info.html", "structspdk__scheduler__core__info" ],
     [ "spdk_scheduler_thread_info", "structspdk__scheduler__thread__info.html", "structspdk__scheduler__thread__info" ],

@@ -1,5 +1,11 @@
 var NAVTREEINDEX24 =
 {
+"structspdk__nvme__intel__log__page__directory.html#a1aec93b3775098bef658301e8d1c637b":[14,0,215,5],
+"structspdk__nvme__intel__log__page__directory.html#a1e88cc51ee3a0d3088effa759cf58e31":[14,0,215,8],
+"structspdk__nvme__intel__log__page__directory.html#a23af39b1b23c701539a7f14b8ee491f0":[14,0,215,10],
+"structspdk__nvme__intel__log__page__directory.html#a2dc09774d62294888f8aa650d0d070b9":[14,0,215,11],
+"structspdk__nvme__intel__log__page__directory.html#a420db2530e502446027972bc8c7df495":[14,0,215,0],
+"structspdk__nvme__intel__log__page__directory.html#a4246e1fa60a0a0ecb02f8b50910ef3bd":[14,0,215,2],
 "structspdk__nvme__intel__log__page__directory.html#a4fc2063b0e359914f350172c4beb46a9":[14,0,215,6],
 "structspdk__nvme__intel__log__page__directory.html#a63930fb42b9c7fb0dd26cb07db0a91ff":[14,0,215,3],
 "structspdk__nvme__intel__log__page__directory.html#a80df3eb1775704a4a62761973398dc74":[14,0,215,4],
@@ -243,11 +249,5 @@ var NAVTREEINDEX24 =
 "structspdk__nvme__rdma__device__stat.html":[14,0,240],
 "structspdk__nvme__rdma__device__stat.html#a1af1a57839b0072dd90196e4a1e75c88":[14,0,240,5],
 "structspdk__nvme__rdma__device__stat.html#a512ce9c33628fca58bb116d1df7fa2d2":[14,0,240,8],
-"structspdk__nvme__rdma__device__stat.html#a791a169150e3602c831c020b3bb77b0b":[14,0,240,6],
-"structspdk__nvme__rdma__device__stat.html#a8975c660e6adecd1514119ec249572a4":[14,0,240,7],
-"structspdk__nvme__rdma__device__stat.html#a92a173cba8f0e17e2e81b8c939203cf0":[14,0,240,0],
-"structspdk__nvme__rdma__device__stat.html#aa8309159641859ab2ae276d697122c9c":[14,0,240,2],
-"structspdk__nvme__rdma__device__stat.html#ab089b040819983d5c4141b279fd2da90":[14,0,240,1],
-"structspdk__nvme__rdma__device__stat.html#adf2b5e3bc34f07148b19efb67e228f00":[14,0,240,3],
-"structspdk__nvme__rdma__device__stat.html#af303b2fff70fe17ad4ae6598ead5c944":[14,0,240,4]
+"structspdk__nvme__rdma__device__stat.html#a791a169150e3602c831c020b3bb77b0b":[14,0,240,6]
 };
