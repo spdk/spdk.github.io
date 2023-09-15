@@ -319,6 +319,9 @@ Functions</h2></td></tr>
 <tr class="memitem:afcb0340cf28f2f072bb3fa26c43870ab"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#afcb0340cf28f2f072bb3fa26c43870ab">spdk_nvmf_subsytem_any_listener_allowed</a> (struct spdk_nvmf_subsystem *subsystem)</td></tr>
 <tr class="memdesc:afcb0340cf28f2f072bb3fa26c43870ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check whether a subsystem allows any listen address or only addresses in the allowed list.  <a href="nvmf_8h.html#afcb0340cf28f2f072bb3fa26c43870ab">More...</a><br /></td></tr>
 <tr class="separator:afcb0340cf28f2f072bb3fa26c43870ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f4f76f43797274eaf8b08a0894526f6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#a8f4f76f43797274eaf8b08a0894526f6">spdk_nvmf_subsystem_any_listener_allowed</a> (struct spdk_nvmf_subsystem *subsystem)</td></tr>
+<tr class="memdesc:a8f4f76f43797274eaf8b08a0894526f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check whether a subsystem allows any listen address or only addresses in the allowed list.  <a href="nvmf_8h.html#a8f4f76f43797274eaf8b08a0894526f6">More...</a><br /></td></tr>
+<tr class="separator:a8f4f76f43797274eaf8b08a0894526f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a488442d5a27c5e3c4a88184bd8a5301b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#a488442d5a27c5e3c4a88184bd8a5301b">spdk_nvmf_subsystem_set_ana_reporting</a> (struct spdk_nvmf_subsystem *subsystem, bool ana_reporting)</td></tr>
 <tr class="memdesc:a488442d5a27c5e3c4a88184bd8a5301b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set whether a subsystem supports Asymmetric Namespace Access (ANA) reporting.  <a href="nvmf_8h.html#a488442d5a27c5e3c4a88184bd8a5301b">More...</a><br /></td></tr>
 <tr class="separator:a488442d5a27c5e3c4a88184bd8a5301b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1568,6 +1571,33 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="a8f4f76f43797274eaf8b08a0894526f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f4f76f43797274eaf8b08a0894526f6">&#9670;&nbsp;</a></span>spdk_nvmf_subsystem_any_listener_allowed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool spdk_nvmf_subsystem_any_listener_allowed </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_nvmf_subsystem *&#160;</td>
+          <td class="paramname"><em>subsystem</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Check whether a subsystem allows any listen address or only addresses in the allowed list. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">subsystem</td><td>Subsystem to query.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if this subsystem allows dynamic management of listen address list, or false if only allows addresses in the list configured during subsystem setup. </dd></dl>
 
 </div>
 </div>
@@ -2881,6 +2911,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Check whether a subsystem allows any listen address or only addresses in the allowed list. </p>
+<p>Deprecated - will be removed in 24.01. Please use <a class="el" href="nvmf_8h.html#a8f4f76f43797274eaf8b08a0894526f6">spdk_nvmf_subsystem_any_listener_allowed</a>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">subsystem</td><td>Subsystem to query.</td></tr>

@@ -1,5 +1,6 @@
 var NAVTREEINDEX31 =
 {
+"structvfio__user__header.html#a929c2ba18ce9462b9bf960939332a2df":[14,0,418,1],
 "structvfio__user__header.html#ac26f57c2a4710128eb10398b4ab71405":[14,0,418,2],
 "structvfio__user__header.html#acaaa5241337cb834839b75e01e27f294":[14,0,418,8],
 "structvfio__user__irq__info.html":[14,0,419],
@@ -248,6 +249,5 @@ var NAVTREEINDEX31 =
 "unionidxd__gencap__register.html#af71dd0fc8d5f79348a9afb4a94b6aeb7":[14,0,11,11],
 "unionidxd__gencfg__register.html":[14,0,12],
 "unionidxd__gencfg__register.html#a178cb32c5ada79254fb7a9c55f8d1d3d":[14,0,12,3],
-"unionidxd__gencfg__register.html#a2dc98aacdf6cfe65cefb5d87b91d69b9":[14,0,12,4],
-"unionidxd__gencfg__register.html#a3d8014754a953df166915bbdedd40a48":[14,0,12,5]
+"unionidxd__gencfg__register.html#a2dc98aacdf6cfe65cefb5d87b91d69b9":[14,0,12,4]
 };
