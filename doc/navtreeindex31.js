@@ -1,5 +1,7 @@
 var NAVTREEINDEX31 =
 {
+"structvfio__user__header.html#a4069787d02f5851e7c7652198505a102":[14,0,418,5],
+"structvfio__user__header.html#a58b9c234f639844e5b78b52e5e957747":[14,0,418,3],
 "structvfio__user__header.html#a929c2ba18ce9462b9bf960939332a2df":[14,0,418,1],
 "structvfio__user__header.html#ac26f57c2a4710128eb10398b4ab71405":[14,0,418,2],
 "structvfio__user__header.html#acaaa5241337cb834839b75e01e27f294":[14,0,418,8],
@@ -247,7 +249,5 @@ var NAVTREEINDEX31 =
 "unionidxd__gencap__register.html#ae237032e3d8099a22ccaaa0ca056d94e":[14,0,11,14],
 "unionidxd__gencap__register.html#af6f77e05ce9e00cc2bcfd33014e48553":[14,0,11,12],
 "unionidxd__gencap__register.html#af71dd0fc8d5f79348a9afb4a94b6aeb7":[14,0,11,11],
-"unionidxd__gencfg__register.html":[14,0,12],
-"unionidxd__gencfg__register.html#a178cb32c5ada79254fb7a9c55f8d1d3d":[14,0,12,3],
-"unionidxd__gencfg__register.html#a2dc98aacdf6cfe65cefb5d87b91d69b9":[14,0,12,4]
+"unionidxd__gencfg__register.html":[14,0,12]
 };

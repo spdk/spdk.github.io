@@ -1,5 +1,7 @@
 var NAVTREEINDEX30 =
 {
+"structspdk__scsi__task.html#a6f75af1e2bc0373d9c8eb23d1cc89bec":[14,0,383,9],
+"structspdk__scsi__task.html#a7a550df40ece454c8efea04ef9c56cc2":[14,0,383,10],
 "structspdk__scsi__task.html#a7aaabb12bc0db367abb0533bc2b740ad":[14,0,383,20],
 "structspdk__scsi__task.html#a7ea23efe570b37963348ab191cedcd97":[14,0,383,24],
 "structspdk__scsi__task.html#a8c253a9ec980449f385640f86bd0a709":[14,0,383,2],
@@ -247,7 +249,5 @@ var NAVTREEINDEX30 =
 "structvfio__user__header.html#a03b79c2757a48fe1cdeb3dabbc44a9ff":[14,0,418,6],
 "structvfio__user__header.html#a058ab14577aa8d041d2fd480088342b5":[14,0,418,4],
 "structvfio__user__header.html#a1072eea3401a2d0bbda4fc0d8bcdcb2d":[14,0,418,7],
-"structvfio__user__header.html#a192a548b281b126819c771b7a5c85766":[14,0,418,0],
-"structvfio__user__header.html#a4069787d02f5851e7c7652198505a102":[14,0,418,5],
-"structvfio__user__header.html#a58b9c234f639844e5b78b52e5e957747":[14,0,418,3]
+"structvfio__user__header.html#a192a548b281b126819c771b7a5c85766":[14,0,418,0]
 };

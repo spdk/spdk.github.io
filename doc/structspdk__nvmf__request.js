@@ -12,6 +12,8 @@ var structspdk__nvmf__request =
     [ "iov", "structspdk__nvmf__request.html#abd8a5aa92bdc3a3b98f2eb21f21e03b3", null ],
     [ "iovcnt", "structspdk__nvmf__request.html#a0ddf1cbaf2632b4621befe77f0fd4497", null ],
     [ "length", "structspdk__nvmf__request.html#ad45b579554eaa2a8ab6bad16dd077457", null ],
+    [ "memory_domain", "structspdk__nvmf__request.html#aa5b020f7d0d07d180c6bc2c491daf57f", null ],
+    [ "memory_domain_ctx", "structspdk__nvmf__request.html#a997f6cf2fca4741b6791a208001ee29d", null ],
     [ "poller", "structspdk__nvmf__request.html#ac6ddb04138ba386b68d2355fa9b55430", null ],
     [ "qpair", "structspdk__nvmf__request.html#a304463ec4c44227e688f772ed09df989", null ],
     [ "req_to_abort", "structspdk__nvmf__request.html#a049e86d7c375f5f5c08dc07c208d0419", null ],
