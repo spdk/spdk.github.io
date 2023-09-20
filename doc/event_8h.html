@@ -375,10 +375,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="even
     <tr><td class="paramname">argc</td><td>Count of arguments in argv parameter array. </td></tr>
     <tr><td class="paramname">argv</td><td>Array of command line arguments. </td></tr>
     <tr><td class="paramname">opts</td><td>Default options for the application. </td></tr>
-    <tr><td class="paramname">getopt_str</td><td>String representing the app-specific command line parameters. Characters in this string must not conflict with characters in SPDK_APP_GETOPT_STRING. </td></tr>
-    <tr><td class="paramname">app_long_opts</td><td>Array of full-name parameters. Can be NULL. </td></tr>
-    <tr><td class="paramname">parse</td><td>Function pointer to call if an argument in getopt_str is found. </td></tr>
-    <tr><td class="paramname">usage</td><td>Function pointer to print usage messages for app-specific command line parameters. </td></tr>
+    <tr><td class="paramname">getopt_str</td><td>String representing the app-specific command line parameters. Characters in this string must not conflict with characters in SPDK_APP_GETOPT_STRING. This argument is optional. </td></tr>
+    <tr><td class="paramname">app_long_opts</td><td>Array of full-name parameters. This argument is optional. </td></tr>
+    <tr><td class="paramname">parse</td><td>Function pointer to call if an argument in getopt_str is found. This argument is optional but only if getopt_str is not provided. </td></tr>
+    <tr><td class="paramname">usage</td><td>Function pointer to print usage messages for app-specific command line parameters. This argument is optional. </td></tr>
   </table>
   </dd>
 </dl>
