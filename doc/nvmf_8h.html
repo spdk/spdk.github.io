@@ -385,6 +385,9 @@ Functions</h2></td></tr>
 <tr class="memitem:acfae99734ec18b90dbb6ef39d1b73860"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#acfae99734ec18b90dbb6ef39d1b73860">spdk_nvmf_subsystem_get_max_nsid</a> (struct spdk_nvmf_subsystem *subsystem)</td></tr>
 <tr class="memdesc:acfae99734ec18b90dbb6ef39d1b73860"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get maximum namespace id of the specified subsystem.  <a href="nvmf_8h.html#acfae99734ec18b90dbb6ef39d1b73860">More...</a><br /></td></tr>
 <tr class="separator:acfae99734ec18b90dbb6ef39d1b73860"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0241868432ed4cd5687f5add03e52860"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#a0241868432ed4cd5687f5add03e52860">spdk_nvmf_subsystem_is_discovery</a> (struct spdk_nvmf_subsystem *subsystem)</td></tr>
+<tr class="memdesc:a0241868432ed4cd5687f5add03e52860"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether a given subsystem is a discovery subsystem.  <a href="nvmf_8h.html#a0241868432ed4cd5687f5add03e52860">More...</a><br /></td></tr>
+<tr class="separator:a0241868432ed4cd5687f5add03e52860"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8e8e8b2a3f7a8d4b8ab52e1beef87ab0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#a8e8e8b2a3f7a8d4b8ab52e1beef87ab0">spdk_nvmf_transport_opts_init</a> (const char *transport_name, struct <a class="el" href="structspdk__nvmf__transport__opts.html">spdk_nvmf_transport_opts</a> *opts, size_t opts_size)</td></tr>
 <tr class="memdesc:a8e8e8b2a3f7a8d4b8ab52e1beef87ab0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize transport options.  <a href="nvmf_8h.html#a8e8e8b2a3f7a8d4b8ab52e1beef87ab0">More...</a><br /></td></tr>
 <tr class="separator:a8e8e8b2a3f7a8d4b8ab52e1beef87ab0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -2329,6 +2332,33 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if allowed, false if not. </dd></dl>
+
+</div>
+</div>
+<a id="a0241868432ed4cd5687f5add03e52860"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0241868432ed4cd5687f5add03e52860">&#9670;&nbsp;</a></span>spdk_nvmf_subsystem_is_discovery()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool spdk_nvmf_subsystem_is_discovery </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_nvmf_subsystem *&#160;</td>
+          <td class="paramname"><em>subsystem</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Checks whether a given subsystem is a discovery subsystem. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">subsystem</td><td>Subsystem to check.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if a given subsystem is a discovery subsystem, false if the subsystem is an nvm subsystem </dd></dl>
 
 </div>
 </div>
