@@ -90,14 +90,19 @@ $(document).ready(function(){initNavTree('changelog.html',''); initResizable(); 
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><p><a class="anchor" id="md_changelog"></a> </p>
-<h1><a class="anchor" id="changelog-v23-09"></a>
-v23.09: (Upcoming Release)</h1>
+<h1><a class="anchor" id="changelog-v24-01"></a>
+v24.01: (Upcoming Release)</h1>
+<h1>v23.09</h1>
 <h2>dpdk</h2>
 <p>Updated DPDK submodule to DPDK 23.03.</p>
 <h2>env</h2>
 <p>The <code>phys_addr</code> parameter in spdk_*_malloc() functions is now invalid. Passing non-NULL value will return NULL from the functions. The parameter was deprecated in SPDK 19.04. For retrieving physical addresses, <a class="el" href="env_8h.html#ae73d54bd295c1d46aa9a45df17e6aa40" title="Get the physical address of a buffer.">spdk_vtophys()</a> should be used instead.</p>
 <h2>log</h2>
 <p>New APIs, <code>spdk_flog</code> and <code>spdk_vflog</code>, were added to write messages to the specified log file.</p>
+<h2>nvme</h2>
+<p>The <code><a class="el" href="structspdk__nvme__accel__fn__table.html" title="Function table for the NVMe accelerator device.">spdk_nvme_accel_fn_table</a></code> interface has been extended with callbacks allowing users to chain multiple accel operations. Users can now send requests with an existing accel sequence by setting the <code>accel_sequence</code> field in <code><a class="el" href="structspdk__nvme__ns__cmd__ext__io__opts.html" title="Structure with optional IO request parameters.">spdk_nvme_ns_cmd_ext_io_opts</a></code> if the controller supports it (i.e. sets the <code>SPDK_NVME_CTRLR_ACCEL_SEQUENCE_SUPPORTED</code> flag) and the user implements the necessary <code><a class="el" href="structspdk__nvme__accel__fn__table.html" title="Function table for the NVMe accelerator device.">spdk_nvme_accel_fn_table</a></code> callbacks.</p>
+<p>The NVMe bdev will now advertise support for accel sequences if the <code>allow_accel_sequence</code> flag is set in <code>bdev_nvme_set_options</code> and the underlying controller also supports them.</p>
+<p>The TCP transport will now calculate data digest using the accel sequence APIs if they're available.</p>
 <h2>nvmf</h2>
 <p>The <code>spdk_nvmf_request::data</code> field has been removed: instead, clients should set <code>-&gt;iov</code> and <code>-&gt;iovcnt</code> appropriately, as nvmf request APIs now expect any data buffers to be described there. spdk_nvmf_request_get_data() has been removed.</p>
 <p><code>transport</code> field in <code>listen_addresses</code> of <code>nvmf_get_subsystems</code> RPC is deprecated. <code>trtype</code> field should be used instead. <code>transport</code> field will be removed in 24.01 release.</p>

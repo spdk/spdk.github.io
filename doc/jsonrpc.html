@@ -3055,7 +3055,9 @@ bdev_nvme_set_options</h2>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">rdma_srq_size   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">Set the size of a shared rdma receive queue. Default: 0 (disabled).    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">io_path_stat   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Enable collecting I/O stat of each nvme bdev io path. Default: <code>false</code>.   </td></tr>
+<td class="markdownTableBodyNone">io_path_stat   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Enable collecting I/O stat of each nvme bdev io path. Default: <code>false</code>.    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">allow_accel_sequence   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Allow NVMe bdevs to advertise support for accel sequences if the controller also supports them. Default: <code>false</code>.   </td></tr>
 </table>
 <h3>Example</h3>
 <p>Example request:</p>
