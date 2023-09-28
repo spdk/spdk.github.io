@@ -1,5 +1,9 @@
 var NAVTREEINDEX6 =
 {
+"iscsi__spec_8h.html#a6ae501611baca9225cc96bf6cf087450a65ca8ffe7f4c93b39503ec01d9fc5b5d":[15,0,33,94,3],
+"iscsi__spec_8h.html#a6ae501611baca9225cc96bf6cf087450a72ad77a739bc2ecbde32ec9f2ca4cc99":[15,0,33,94,0],
+"iscsi__spec_8h.html#a6ae501611baca9225cc96bf6cf087450a9c7c921c75d1d65075116c2a7bc1269d":[15,0,33,94,1],
+"iscsi__spec_8h.html#a6ae501611baca9225cc96bf6cf087450a9eab7e15c4fbc8491fa677f77406fb88":[15,0,33,94,4],
 "iscsi__spec_8h.html#a6ae501611baca9225cc96bf6cf087450ad688038015b5a7eeb2238e9ba16ad054":[15,0,33,94,2],
 "iscsi__spec_8h.html#a6ae501611baca9225cc96bf6cf087450aff67fa8d32279c6891428fa894584fd5":[15,0,33,94,6],
 "iscsi__spec_8h.html#a6c35b20c29232c43efbd5c1b53c3704f":[15,0,33,42],
@@ -245,9 +249,5 @@ var NAVTREEINDEX6 =
 "jsonrpc.html#rpc_bdev_lvol_resize":[3,9,9,10],
 "jsonrpc.html#rpc_bdev_lvol_set_read_only":[3,9,9,11],
 "jsonrpc.html#rpc_bdev_lvol_snapshot":[3,9,9,6],
-"jsonrpc.html#rpc_bdev_malloc_create":[3,9,5,24],
-"jsonrpc.html#rpc_bdev_malloc_delete":[3,9,5,25],
-"jsonrpc.html#rpc_bdev_null_create":[3,9,5,26],
-"jsonrpc.html#rpc_bdev_null_delete":[3,9,5,27],
-"jsonrpc.html#rpc_bdev_null_resize":[3,9,5,28]
+"jsonrpc.html#rpc_bdev_malloc_create":[3,9,5,24]
 };

@@ -18,5 +18,11 @@ var misc =
       [ "In this document", "rpms.html#rpms_toc", null ],
       [ "Building SPDK RPMs", "rpms.html#building_rpms", null ],
       [ "Special case for dpdk-devel", "rpms.html#dpdk_devel", null ]
+    ] ],
+    [ "Backporting", "backporting.html", [
+      [ "How to backport to other SPDK maintained branches", "backporting.html#backporting_other_branches", [
+        [ "Backporting script", "backporting.html#backporting_script", null ]
+      ] ],
+      [ "Updating submodules", "backporting.html#updating_submodules", null ]
     ] ]
 ];

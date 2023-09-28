@@ -1,5 +1,9 @@
 var NAVTREEINDEX8 =
 {
+"libraries.html#so_linking":[3,1,2,1],
+"libraries.html#static_objects":[3,1,3],
+"libraries.html#structure":[3,1,0],
+"libraries.html#versioning":[3,1,2,0],
 "likely_8h.html":[15,0,36],
 "likely_8h.html#a568e75eb7097ecf9ea2c735abc9f5844":[15,0,36,0],
 "likely_8h.html#adbc72e18822cb8015657c3e8baba7bb5":[15,0,36,1],
@@ -245,9 +249,5 @@ var NAVTREEINDEX8 =
 "nvme_8h.html#a6e4165e918b05158286f5984a136acbf":[15,0,41,226],
 "nvme_8h.html#a6eacd62ee8fbab40e1066bc0a53485f3":[15,0,41,124],
 "nvme_8h.html#a6f01fb8a5f404e41e6fa224a7942be08":[15,0,41,87],
-"nvme_8h.html#a724ed20a1a5adaf30c48db8c28d29677":[15,0,41,49],
-"nvme_8h.html#a7312bd0bc396b6c714b6cca7073d3f6d":[15,0,41,95],
-"nvme_8h.html#a7642f1fc6eec21b93b5f60e386e3e36c":[15,0,41,91],
-"nvme_8h.html#a7708f291658bf471e399354d1247fabf":[15,0,41,69],
-"nvme_8h.html#a7938b258a7614073065be4f6a35bd0e2":[15,0,41,127]
+"nvme_8h.html#a724ed20a1a5adaf30c48db8c28d29677":[15,0,41,49]
 };

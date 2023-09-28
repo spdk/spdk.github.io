@@ -1,5 +1,9 @@
 var NAVTREEINDEX7 =
 {
+"jsonrpc.html#rpc_bdev_malloc_delete":[3,9,5,25],
+"jsonrpc.html#rpc_bdev_null_create":[3,9,5,26],
+"jsonrpc.html#rpc_bdev_null_delete":[3,9,5,27],
+"jsonrpc.html#rpc_bdev_null_resize":[3,9,5,28],
 "jsonrpc.html#rpc_bdev_nvme_add_error_injection":[3,9,13,8],
 "jsonrpc.html#rpc_bdev_nvme_apply_firmware":[3,9,5,51],
 "jsonrpc.html#rpc_bdev_nvme_attach_controller":[3,9,5,34],
@@ -245,9 +249,5 @@ var NAVTREEINDEX7 =
 "libraries.html#map":[3,1,1,2],
 "libraries.html#module":[3,1,0,1],
 "libraries.html#naming":[3,1,1,1],
-"libraries.html#shared_objects":[3,1,2],
-"libraries.html#so_linking":[3,1,2,1],
-"libraries.html#static_objects":[3,1,3],
-"libraries.html#structure":[3,1,0],
-"libraries.html#versioning":[3,1,2,0]
+"libraries.html#shared_objects":[3,1,2]
 };
