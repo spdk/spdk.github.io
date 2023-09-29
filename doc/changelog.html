@@ -93,23 +93,49 @@ $(document).ready(function(){initNavTree('changelog.html',''); initResizable(); 
 <h1><a class="anchor" id="changelog-v24-01"></a>
 v24.01: (Upcoming Release)</h1>
 <h1>v23.09</h1>
+<h2>accel</h2>
+<p>Added <code><a class="el" href="accel_8h.html#aaebd6fe37b7af8036e42184adc407ce4" title="Get minimum buffer alignment to execute a given operation.">spdk_accel_get_buf_align()</a></code> API to get minimum buffer alignment to execute a given operation.</p>
+<p>Added <code>get_operation_info()</code> callback for accel_modules to return constraints for a given operation.</p>
+<h2>bdev</h2>
+<p>Added <code><a class="el" href="bdev_8h.html#af29e58cf7325dbc4f4ca8e0abb2d9506" title="Open a block device for I/O operations asynchronously with options.">spdk_bdev_open_async()</a></code> API to allow asynchronous bdev open that waits for specified time until the block device appears.</p>
+<h2>bdev_nvme</h2>
+<p>Added <code>bdev_nvme_enable_controller</code> and <code>bdev_nvme_disable_controller</code> RPC to enable and disable NVMe controller. For NVMe multipath <code>cntlid</code> is used to select only one NVMe-oF controller.</p>
+<p>Added <code>cntlid</code> field to <code>bdev_nvme_reset_controller</code> RPC to support resetting only one NVMe-oF controller in multipath configuration.</p>
+<h2>bdev_raid</h2>
+<p>Added <code>bdev_raid_remove_base_bdev</code> RPC to remove a base bdev from existing raid bdev.</p>
 <h2>dpdk</h2>
-<p>Updated DPDK submodule to DPDK 23.03.</p>
+<p>Updated DPDK submodule to DPDK 23.07.</p>
 <h2>env</h2>
-<p>The <code>phys_addr</code> parameter in spdk_*_malloc() functions is now invalid. Passing non-NULL value will return NULL from the functions. The parameter was deprecated in SPDK 19.04. For retrieving physical addresses, <a class="el" href="env_8h.html#ae73d54bd295c1d46aa9a45df17e6aa40" title="Get the physical address of a buffer.">spdk_vtophys()</a> should be used instead.</p>
+<p>The <code>phys_addr</code> parameter in <code>spdk_*_malloc()</code> functions is now invalid. Passing non-NULL value will return NULL from the functions. The parameter was deprecated in SPDK 19.04. For retrieving physical addresses, <code><a class="el" href="env_8h.html#ae73d54bd295c1d46aa9a45df17e6aa40" title="Get the physical address of a buffer.">spdk_vtophys()</a></code> should be used instead.</p>
+<h2>go</h2>
+<p>Added JSON-RPC 2.0 client written in Go to ease communication with SPDK. Please see the documentation at <code>go/rpc/</code> and example at <code>examples/go/</code>.</p>
+<h2>init</h2>
+<p>Options for the JSON-RPC server initialization were added. The options are defined via the <code><a class="el" href="structspdk__rpc__opts.html" title="Structure with optional parameters for the JSON-RPC server initialization.">spdk_rpc_opts</a></code> structure and is passed to the existing API <code><a class="el" href="init_8h.html#adbfa73a5f5120e5a80d7b33beb7df862" title="Create the SPDK JSON-RPC server and listen at the provided address.">spdk_rpc_initialize()</a></code> as a new argument. The options include <code>log_file</code> and <code>log_level</code>.</p>
+<h2>intel-ipsec-mb</h2>
+<p>Updated intel-ipsec-mb submodule to v1.4.</p>
+<h2>jsonrpc</h2>
+<p>New APIs, <code>spdk_jsonrpc_set_log_level</code> and <code>spdk_jsonrpc_set_log_file</code>, were added to enable logging JSON RPC calls history.</p>
 <h2>log</h2>
 <p>New APIs, <code>spdk_flog</code> and <code>spdk_vflog</code>, were added to write messages to the specified log file.</p>
 <h2>nvme</h2>
 <p>The <code><a class="el" href="structspdk__nvme__accel__fn__table.html" title="Function table for the NVMe accelerator device.">spdk_nvme_accel_fn_table</a></code> interface has been extended with callbacks allowing users to chain multiple accel operations. Users can now send requests with an existing accel sequence by setting the <code>accel_sequence</code> field in <code><a class="el" href="structspdk__nvme__ns__cmd__ext__io__opts.html" title="Structure with optional IO request parameters.">spdk_nvme_ns_cmd_ext_io_opts</a></code> if the controller supports it (i.e. sets the <code>SPDK_NVME_CTRLR_ACCEL_SEQUENCE_SUPPORTED</code> flag) and the user implements the necessary <code><a class="el" href="structspdk__nvme__accel__fn__table.html" title="Function table for the NVMe accelerator device.">spdk_nvme_accel_fn_table</a></code> callbacks.</p>
 <p>The NVMe bdev will now advertise support for accel sequences if the <code>allow_accel_sequence</code> flag is set in <code>bdev_nvme_set_options</code> and the underlying controller also supports them.</p>
 <p>The TCP transport will now calculate data digest using the accel sequence APIs if they're available.</p>
+<p>Added <code><a class="el" href="nvme_8h.html#a935eb1d9b76305022e0d88e3594c38c1" title="Return the connection status of a given qpair.">spdk_nvme_qpair_is_connected()</a></code> API to check the connection status.</p>
 <h2>nvmf</h2>
-<p>The <code>spdk_nvmf_request::data</code> field has been removed: instead, clients should set <code>-&gt;iov</code> and <code>-&gt;iovcnt</code> appropriately, as nvmf request APIs now expect any data buffers to be described there. spdk_nvmf_request_get_data() has been removed.</p>
+<p>The <code>spdk_nvmf_request::data</code> field has been removed: instead, clients should set <code>-&gt;iov</code> and <code>-&gt;iovcnt</code> appropriately, as nvmf request APIs now expect any data buffers to be described there. <code>spdk_nvmf_request_get_data()</code> has been removed.</p>
 <p><code>transport</code> field in <code>listen_addresses</code> of <code>nvmf_get_subsystems</code> RPC is deprecated. <code>trtype</code> field should be used instead. <code>transport</code> field will be removed in 24.01 release.</p>
-<h2>jsonrpc</h2>
-<p>New APIs, <code>spdk_jsonrpc_set_log_level</code> and <code>spdk_jsonrpc_set_log_file</code>, were added to enable logging JSON RPC calls history.</p>
-<h2>init</h2>
-<p>Options for the JSON-RPC server initialization were added. The options are defined via the <code><a class="el" href="structspdk__rpc__opts.html" title="Structure with optional parameters for the JSON-RPC server initialization.">spdk_rpc_opts</a></code> structure and is passed to the existing API <code><a class="el" href="init_8h.html#adbfa73a5f5120e5a80d7b33beb7df862" title="Create the SPDK JSON-RPC server and listen at the provided address.">spdk_rpc_initialize()</a></code> as a new argument. The options include <code>log_file</code> and <code>log_level</code>.</p>
+<p>Added <code><a class="el" href="nvmf_8h.html#a264077cd7633ac2103bd4e293e8a94f5" title="Accept new connections on the address provided.">spdk_nvmf_subsystem_add_listener_ext()</a></code> API for accepting new connections on the provided address, now allowing to specify additional options for the listener.</p>
+<p>Deprecated <code><a class="el" href="nvmf_8h.html#afcb0340cf28f2f072bb3fa26c43870ab" title="Check whether a subsystem allows any listen address or only addresses in the allowed list.">spdk_nvmf_subsytem_any_listener_allowed()</a></code> API (to be removed in 24.01) and replaced with <a class="el" href="nvmf_8h.html#a8f4f76f43797274eaf8b08a0894526f6" title="Check whether a subsystem allows any listen address or only addresses in the allowed list.">spdk_nvmf_subsystem_any_listener_allowed()</a>` API fixing the typo.</p>
+<p>Added <code><a class="el" href="nvmf_8h.html#a0241868432ed4cd5687f5add03e52860" title="Checks whether a given subsystem is a discovery subsystem.">spdk_nvmf_subsystem_is_discovery()</a></code> API to check whether a given susbystem is discovery subsystem.</p>
+<h2>scripts</h2>
+<p><code>setup.sh</code> now supports interactive mode for device selection and hugepage reservation.</p>
+<p>Added <code>backport.sh</code> script that formalizes process of backporting commits from latest SPDK, to specific release branches. Please see <a href="https://spdk.io/doc/backporting.html">documentation</a>.</p>
+<h2>thread</h2>
+<p>Added <code><a class="el" href="thread_8h.html#a9968fb813a07f35898a96f6042a30f12" title="Check if the specified spdk_thread is the app thread.">spdk_thread_is_app_thread()</a></code> API to check if specified spdk_thread is the app thread.</p>
+<h2>util</h2>
+<p>Extended DIF support to CRC-32 and CRC-64 format of the Protection Information.</p>
+<p>Added <code><a class="el" href="crc64_8h.html#a9c5a5138b7fb9ded7acb97ed6f9095ea" title="Calculate a CRC-64 checksum (Rocksoft), for NVMe Protection Information.">spdk_crc64_nvme()</a></code> and <code><a class="el" href="crc32_8h.html#af5b03c08701498723dea77be3b10b2c5" title="Calculate a CRC-32C checksum, for NVMe Protection Information.">spdk_crc32c_nvme()</a></code>, CRC-64 and CRC-32C checksums compatible with NVMe Protection Information.</p>
 <h1>v23.05</h1>
 <h2>accel</h2>
 <p>Added API <code>spdk_accel_submit_xor</code> to perform XOR.</p>

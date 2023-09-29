@@ -95,14 +95,9 @@ $(document).ready(function(){initNavTree('deprecation.html',''); initResizable()
 <p>API and ABI deprecation notices shall be posted in the next section. Each entry must describe what will be removed and can suggest the future use or alternative. Specific future SPDK release for the removal must be provided. ABI cannot be removed without providing deprecation notice for at least single SPDK release.</p>
 <p>Deprecated code paths must be registered with <code>SPDK_DEPRECATION_REGISTER()</code> and logged with <code>SPDK_LOG_DEPRECATED()</code>. The tag used with these macros will appear in the SPDK log at the warn level when <code>SPDK_LOG_DEPRECATED()</code> is called, subject to rate limits. The tags can be matched with the level 4 headers below.</p>
 <h1>Deprecation Notices</h1>
-<h2>PMDK</h2>
-<p>PMDK is no longer supported and integrations with it in SPDK are now deprecated, and will be removed in SPDK 23.05. Please see: <a href="https://pmem.io/blog/2022/11/update-on-pmdk-and-our-long-term-support-strategy/">UPDATE ON PMDK AND OUR LONG TERM SUPPORT STRATEGY</a>.</p>
-<h2>VTune</h2>
-<h3><code>vtune_support</code></h3>
-<p>VTune integration is in now deprecated and will be removed in the 23.09 release.</p>
 <h2>nvmf</h2>
 <h3><code>spdk_nvmf_qpair_disconnect</code></h3>
-<p>Parameters <code>cb_fn</code> and <code>ctx</code> of <code>spdk_nvmf_qpair_disconnect</code> API are deprecated. These parameters will be removed in 23.09 release.</p>
+<p>Parameters <code>cb_fn</code> and <code>ctx</code> of <code>spdk_nvmf_qpair_disconnect</code> API are deprecated. These parameters will be removed in 24.01 release.</p>
 <h3><code>nvmf_get_subsystems</code></h3>
 <p><code>transport</code> field in <code>listen_addresses</code> of <code>nvmf_get_subsystems</code> RPC is deprecated. <code>trtype</code> field should be used instead. <code>transport</code> field will be removed in 24.01 release.</p>
 <h3>'spdk_nvmf_subsytem_any_listener_allowed'</h3>
