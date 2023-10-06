@@ -108,6 +108,10 @@ Data Structures</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__iobuf__opts.html">spdk_iobuf_opts</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__iobuf__pool__stats.html">spdk_iobuf_pool_stats</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__iobuf__module__stats.html">spdk_iobuf_module_stats</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__iobuf__entry.html">spdk_iobuf_entry</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">iobuf queue entry  <a href="structspdk__iobuf__entry.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -431,6 +435,9 @@ typedef&#160;</td><td class="memItemRight" valign="bottom"><b>STAILQ_HEAD</b> (,
 <tr class="memitem:ad17c5e2e4eadfe701fd0f8ddb482deb4"><td class="memItemLeft" align="right" valign="top"><a id="ad17c5e2e4eadfe701fd0f8ddb482deb4"></a>
 typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_iobuf_for_each_entry_fn</b>) (struct <a class="el" href="structspdk__iobuf__channel.html">spdk_iobuf_channel</a> *ch, struct <a class="el" href="structspdk__iobuf__entry.html">spdk_iobuf_entry</a> *entry, void *ctx)</td></tr>
 <tr class="separator:ad17c5e2e4eadfe701fd0f8ddb482deb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a995886b544503417d914052e56a75b4b"><td class="memItemLeft" align="right" valign="top"><a id="a995886b544503417d914052e56a75b4b"></a>
+typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_iobuf_get_stats_cb</b>) (struct <a class="el" href="structspdk__iobuf__module__stats.html">spdk_iobuf_module_stats</a> *modules, uint32_t num_modules, void *cb_arg)</td></tr>
+<tr class="separator:a995886b544503417d914052e56a75b4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a18be1edc45d00e45964e5d34ee7f776b"><td class="memItemLeft" align="right" valign="top"><a id="a18be1edc45d00e45964e5d34ee7f776b"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_iobuf_register_module</b> (const char *name)</td></tr>
 <tr class="separator:a18be1edc45d00e45964e5d34ee7f776b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -455,6 +462,9 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_iobuf_unregister_
 <tr class="memitem:aca828f485050a8d77d0a0b4182c632cc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="thread_8h.html#aca828f485050a8d77d0a0b4182c632cc">spdk_iobuf_put</a> (struct <a class="el" href="structspdk__iobuf__channel.html">spdk_iobuf_channel</a> *ch, void *buf, uint64_t len)</td></tr>
 <tr class="memdesc:aca828f485050a8d77d0a0b4182c632cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Release a buffer back to the iobuf pool.  <a href="thread_8h.html#aca828f485050a8d77d0a0b4182c632cc">More...</a><br /></td></tr>
 <tr class="separator:aca828f485050a8d77d0a0b4182c632cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22cb35e6bb7625b1338c4db9de32bc0f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="thread_8h.html#a22cb35e6bb7625b1338c4db9de32bc0f">spdk_iobuf_get_stats</a> (spdk_iobuf_get_stats_cb cb_fn, void *cb_arg)</td></tr>
+<tr class="memdesc:a22cb35e6bb7625b1338c4db9de32bc0f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get iobuf statistics.  <a href="thread_8h.html#a22cb35e6bb7625b1338c4db9de32bc0f">More...</a><br /></td></tr>
+<tr class="separator:a22cb35e6bb7625b1338c4db9de32bc0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Thread. </p>
@@ -1639,6 +1649,44 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_iobuf_unregister_
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="a22cb35e6bb7625b1338c4db9de32bc0f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a22cb35e6bb7625b1338c4db9de32bc0f">&#9670;&nbsp;</a></span>spdk_iobuf_get_stats()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_iobuf_get_stats </td>
+          <td>(</td>
+          <td class="paramtype">spdk_iobuf_get_stats_cb&#160;</td>
+          <td class="paramname"><em>cb_fn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>cb_arg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get iobuf statistics. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cb_fn</td><td>Callback to be executed once stats are gathered. </td></tr>
+    <tr><td class="paramname">cb_arg</td><td>Argument passed to the callback function.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, negative errno otherwise. </dd></dl>
 
 </div>
 </div>

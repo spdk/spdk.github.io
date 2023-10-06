@@ -16,7 +16,7 @@ var NAVTREEINDEX7 =
 "jsonrpc.html#rpc_bdev_nvme_get_controllers":[3,9,5,35],
 "jsonrpc.html#rpc_bdev_nvme_get_discovery_info":[3,9,5,42],
 "jsonrpc.html#rpc_bdev_nvme_get_io_paths":[3,9,5,43],
-"jsonrpc.html#rpc_bdev_nvme_get_mdns_discovery_info":[3,9,13,16],
+"jsonrpc.html#rpc_bdev_nvme_get_mdns_discovery_info":[3,9,13,17],
 "jsonrpc.html#rpc_bdev_nvme_get_path_iostat":[3,9,5,46],
 "jsonrpc.html#rpc_bdev_nvme_get_transport_statistics":[3,9,5,52],
 "jsonrpc.html#rpc_bdev_nvme_opal_init":[3,9,9,24],
@@ -29,9 +29,9 @@ var NAVTREEINDEX7 =
 "jsonrpc.html#rpc_bdev_nvme_set_options":[3,9,5,32],
 "jsonrpc.html#rpc_bdev_nvme_set_preferred_path":[3,9,5,44],
 "jsonrpc.html#rpc_bdev_nvme_start_discovery":[3,9,5,40],
-"jsonrpc.html#rpc_bdev_nvme_start_mdns_discovery":[3,9,13,14],
+"jsonrpc.html#rpc_bdev_nvme_start_mdns_discovery":[3,9,13,15],
 "jsonrpc.html#rpc_bdev_nvme_stop_discovery":[3,9,5,41],
-"jsonrpc.html#rpc_bdev_nvme_stop_mdns_discovery":[3,9,13,15],
+"jsonrpc.html#rpc_bdev_nvme_stop_mdns_discovery":[3,9,13,16],
 "jsonrpc.html#rpc_bdev_ocf_create":[3,9,5,15],
 "jsonrpc.html#rpc_bdev_ocf_delete":[3,9,5,16],
 "jsonrpc.html#rpc_bdev_ocf_flush_start":[3,9,5,22],
@@ -96,6 +96,7 @@ var NAVTREEINDEX7 =
 "jsonrpc.html#rpc_framework_wait_init":[3,9,3,3],
 "jsonrpc.html#rpc_iaa_scan_accel_module":[3,9,4,11],
 "jsonrpc.html#rpc_ioat_scan_accel_module":[3,9,4,12],
+"jsonrpc.html#rpc_iobuf_get_stats":[3,9,13,14],
 "jsonrpc.html#rpc_iobuf_set_options":[3,9,13,13],
 "jsonrpc.html#rpc_iscsi_auth_group_add_secret":[3,9,6,7],
 "jsonrpc.html#rpc_iscsi_auth_group_remove_secret":[3,9,6,8],
@@ -248,6 +249,5 @@ var NAVTREEINDEX7 =
 "libraries.html#lib":[3,1,0,0],
 "libraries.html#map":[3,1,1,2],
 "libraries.html#module":[3,1,0,1],
-"libraries.html#naming":[3,1,1,1],
-"libraries.html#shared_objects":[3,1,2]
+"libraries.html#naming":[3,1,1,1]
 };

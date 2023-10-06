@@ -1,7 +1,7 @@
 var searchData=
 [
   ['ca_104',['ca',['../structspdk__nvme__fw__commit.html#a5533adaa1a3efdd7c6f5c02c4f86f6d7',1,'spdk_nvme_fw_commit']]],
-  ['cache_105',['cache',['../structspdk__iobuf__pool.html#aa313b402fa18a5af9199fc5cff5e8097',1,'spdk_iobuf_pool']]],
+  ['cache_105',['cache',['../structspdk__iobuf__pool__stats.html#a6b33d5059ae0531db615616ac609a6eb',1,'spdk_iobuf_pool_stats::cache()'],['../structspdk__iobuf__pool.html#aa313b402fa18a5af9199fc5cff5e8097',1,'spdk_iobuf_pool::cache()']]],
   ['cache_5fcount_106',['cache_count',['../structspdk__iobuf__pool.html#afaadffa67230817fb5af842c35d0b7aa',1,'spdk_iobuf_pool']]],
   ['cache_5fsize_107',['cache_size',['../structspdk__iobuf__pool.html#a42867cbf13a856f3f46db21324fb8374',1,'spdk_iobuf_pool']]],
   ['caller_5fctx_108',['caller_ctx',['../structspdk__bdev__io_1_1____bdev__io__internal__fields.html#a51d274b6003ff0f95466eca21bdd7dd1',1,'spdk_bdev_io::__bdev_io_internal_fields']]],

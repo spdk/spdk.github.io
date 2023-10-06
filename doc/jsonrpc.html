@@ -9605,6 +9605,64 @@ iobuf_set_options</h2>
 <div class="line">  &quot;id&quot;: 1,</div>
 <div class="line">  &quot;result&quot;: true</div>
 <div class="line">}</div>
+</div><!-- fragment --><h2><a class="anchor" id="rpc_iobuf_get_stats"></a>
+iobuf_get_stats</h2>
+<p>Retrieve iobuf's statistics.</p>
+<h3>Parameters</h3>
+<p>None.</p>
+<h3>Example</h3>
+<p>Example request:</p>
+<div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
+<div class="line">  &quot;method&quot;: &quot;iobuf_get_stats&quot;,</div>
+<div class="line">  &quot;id&quot;: 1</div>
+<div class="line">}</div>
+</div><!-- fragment --><p>Example response:</p>
+<div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
+<div class="line">  &quot;id&quot;: 1,</div>
+<div class="line">  &quot;result&quot;: [</div>
+<div class="line">    {</div>
+<div class="line">      &quot;module&quot;: &quot;accel&quot;,</div>
+<div class="line">      &quot;small_pool&quot;: {</div>
+<div class="line">        &quot;cache&quot;: 0,</div>
+<div class="line">        &quot;main&quot;: 0,</div>
+<div class="line">        &quot;retry&quot;: 0</div>
+<div class="line">      },</div>
+<div class="line">      &quot;large_pool&quot;: {</div>
+<div class="line">        &quot;cache&quot;: 0,</div>
+<div class="line">        &quot;main&quot;: 0,</div>
+<div class="line">        &quot;retry&quot;: 0</div>
+<div class="line">      }</div>
+<div class="line">    },</div>
+<div class="line">    {</div>
+<div class="line">      &quot;module&quot;: &quot;bdev&quot;,</div>
+<div class="line">      &quot;small_pool&quot;: {</div>
+<div class="line">        &quot;cache&quot;: 421965,</div>
+<div class="line">        &quot;main&quot;: 1218,</div>
+<div class="line">        &quot;retry&quot;: 0</div>
+<div class="line">      },</div>
+<div class="line">      &quot;large_pool&quot;: {</div>
+<div class="line">        &quot;cache&quot;: 0,</div>
+<div class="line">        &quot;main&quot;: 0,</div>
+<div class="line">        &quot;retry&quot;: 0</div>
+<div class="line">      }</div>
+<div class="line">    },</div>
+<div class="line">    {</div>
+<div class="line">      &quot;module&quot;: &quot;nvmf_TCP&quot;,</div>
+<div class="line">      &quot;small_pool&quot;: {</div>
+<div class="line">        &quot;cache&quot;: 7,</div>
+<div class="line">        &quot;main&quot;: 0,</div>
+<div class="line">        &quot;retry&quot;: 0</div>
+<div class="line">      },</div>
+<div class="line">      &quot;large_pool&quot;: {</div>
+<div class="line">        &quot;cache&quot;: 0,</div>
+<div class="line">        &quot;main&quot;: 0,</div>
+<div class="line">        &quot;retry&quot;: 0</div>
+<div class="line">      }</div>
+<div class="line">    }</div>
+<div class="line">  ]</div>
+<div class="line">}</div>
 </div><!-- fragment --><h2><a class="anchor" id="rpc_bdev_nvme_start_mdns_discovery"></a>
 bdev_nvme_start_mdns_discovery</h2>
 <p>Starts an mDNS based discovery service for the specified service type for the auto-discovery of discovery controllers (NVMe TP-8009).</p>

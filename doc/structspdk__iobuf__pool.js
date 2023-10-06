@@ -5,5 +5,6 @@ var structspdk__iobuf__pool =
     [ "cache_count", "structspdk__iobuf__pool.html#afaadffa67230817fb5af842c35d0b7aa", null ],
     [ "cache_size", "structspdk__iobuf__pool.html#a42867cbf13a856f3f46db21324fb8374", null ],
     [ "pool", "structspdk__iobuf__pool.html#a966a2383b03fecd6d523b68f8b3e5b1e", null ],
-    [ "queue", "structspdk__iobuf__pool.html#ae67f45d6d72f5edf074a9579678e52f8", null ]
+    [ "queue", "structspdk__iobuf__pool.html#ae67f45d6d72f5edf074a9579678e52f8", null ],
+    [ "stats", "structspdk__iobuf__pool.html#aed7e8465368940afc0060de6a18e2cd8", null ]
 ];
