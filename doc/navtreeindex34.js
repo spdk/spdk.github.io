@@ -1,5 +1,6 @@
 var NAVTREEINDEX34 =
 {
+"unionspdk__nvme__feat__volatile__write__cache.html#acf7a11103048077b5489509aa7d44887":[14,0,204,0],
 "unionspdk__nvme__feat__write__atomicity.html":[14,0,205],
 "unionspdk__nvme__feat__write__atomicity.html#a4a67a4f708c90c0316820b707bb398fd":[14,0,205,1],
 "unionspdk__nvme__feat__write__atomicity.html#a8fd192e661b226064e4890a49c16ea6e":[14,0,205,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX34 =
 "xor_8h.html#a714307c955fae9782a0cf6f7bf2632c5":[15,0,66,1],
 "xor_8h.html#aa889762f3d7ce0f9bb8b91c5c3add079":[15,0,66,0],
 "zipf_8h.html":[15,0,67],
-"zipf_8h.html#a1d0c4163406557239aefa1ab446c2422":[15,0,67,2],
-"zipf_8h.html#a3a154549b87e9aef0cdbb0363c94c491":[15,0,67,0]
+"zipf_8h.html#a1d0c4163406557239aefa1ab446c2422":[15,0,67,2]
 };

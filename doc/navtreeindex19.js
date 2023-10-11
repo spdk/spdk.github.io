@@ -1,16 +1,17 @@
 var NAVTREEINDEX19 =
 {
-"structspdk__app__opts.html#aac6e234b1dec93b58c29239539d6c9f2":[14,0,59,12],
-"structspdk__app__opts.html#ab3ad6ade4ff0ec041851e763bc29d6e7":[14,0,59,14],
-"structspdk__app__opts.html#ab3cd7fa095f1d9970a004dab4d78286a":[14,0,59,40],
-"structspdk__app__opts.html#ab59d2679e69029fdd5ea37407b47cf0f":[14,0,59,28],
-"structspdk__app__opts.html#abd571128caea84190b31231105219b38":[14,0,59,13],
+"structspdk__app__opts.html#aa351d504364930c0e14bde70d3be60d7":[14,0,59,40],
+"structspdk__app__opts.html#aac6e234b1dec93b58c29239539d6c9f2":[14,0,59,13],
+"structspdk__app__opts.html#ab3ad6ade4ff0ec041851e763bc29d6e7":[14,0,59,15],
+"structspdk__app__opts.html#ab3cd7fa095f1d9970a004dab4d78286a":[14,0,59,41],
+"structspdk__app__opts.html#abd571128caea84190b31231105219b38":[14,0,59,14],
 "structspdk__app__opts.html#ac21faa67a906aa0e70194b96e7700142":[14,0,59,3],
-"structspdk__app__opts.html#ac401e18cb6277ace32a2d24feca14255":[14,0,59,22],
-"structspdk__app__opts.html#ac6b0027c42b52343335f5a1e6fb600e4":[14,0,59,34],
+"structspdk__app__opts.html#ac401e18cb6277ace32a2d24feca14255":[14,0,59,23],
+"structspdk__app__opts.html#ac6b0027c42b52343335f5a1e6fb600e4":[14,0,59,35],
 "structspdk__app__opts.html#ad584493cb8e3ca1744f29fbf4302d73f":[14,0,59,6],
-"structspdk__app__opts.html#add6ef3b3736f423c7d83e5033c174016":[14,0,59,26],
-"structspdk__app__opts.html#aeccbc0421a219e9c2c29195ad9e6be9c":[14,0,59,33],
+"structspdk__app__opts.html#add6ef3b3736f423c7d83e5033c174016":[14,0,59,27],
+"structspdk__app__opts.html#add81fbe0985d19b880f4590ad1ff35b4":[14,0,59,29],
+"structspdk__app__opts.html#aeccbc0421a219e9c2c29195ad9e6be9c":[14,0,59,34],
 "structspdk__bdev.html":[14,0,60],
 "structspdk__bdev.html#a00db663b395d596c633624ed7554a440":[14,0,60,30],
 "structspdk__bdev.html#a027888b234afc8af8282da025bec83fb":[14,0,60,10],
@@ -248,6 +249,5 @@ var NAVTREEINDEX19 =
 "structspdk__bdev__module.html#af0eb0fbec1bdc7813911e981357e89a8":[14,0,70,9],
 "structspdk__bdev__module.html#af3a57fb52458d82248fac0570c80cc52":[14,0,70,3],
 "structspdk__bdev__module_1_1____bdev__module__internal__fields.html":[14,0,70,0],
-"structspdk__bdev__module_1_1____bdev__module__internal__fields.html#a74966890b6b4142e778da08f450dd42d":[14,0,70,0,0],
-"structspdk__bdev__module_1_1____bdev__module__internal__fields.html#ac487dd3b111bdf81b2b5532ff5fc2f51":[14,0,70,0,2]
+"structspdk__bdev__module_1_1____bdev__module__internal__fields.html#a74966890b6b4142e778da08f450dd42d":[14,0,70,0,0]
 };
