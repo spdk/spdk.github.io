@@ -224,6 +224,7 @@ var annotated_dup =
     [ "spdk_nvme_intel_smart_information_page", "structspdk__nvme__intel__smart__information__page.html", "structspdk__nvme__intel__smart__information__page" ],
     [ "spdk_nvme_intel_temperature_page", "structspdk__nvme__intel__temperature__page.html", "structspdk__nvme__intel__temperature__page" ],
     [ "spdk_nvme_io_qpair_opts", "structspdk__nvme__io__qpair__opts.html", "structspdk__nvme__io__qpair__opts" ],
+    [ "spdk_nvme_iocs_vector", "structspdk__nvme__iocs__vector.html", "structspdk__nvme__iocs__vector" ],
     [ "spdk_nvme_ns_cmd_ext_io_opts", "structspdk__nvme__ns__cmd__ext__io__opts.html", "structspdk__nvme__ns__cmd__ext__io__opts" ],
     [ "spdk_nvme_ns_data", "structspdk__nvme__ns__data.html", "structspdk__nvme__ns__data" ],
     [ "spdk_nvme_ns_id_desc", "structspdk__nvme__ns__id__desc.html", "structspdk__nvme__ns__id__desc" ],
