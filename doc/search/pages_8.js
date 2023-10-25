@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['json_2drpc_6043',['JSON-RPC',['../jsonrpc.html',1,'user_guides']]],
-  ['json_2drpc_20remote_20access_6044',['JSON-RPC Remote access',['../jsonrpc_proxy.html',1,'user_guides']]]
+  ['json_2drpc_6047',['JSON-RPC',['../jsonrpc.html',1,'user_guides']]],
+  ['json_2drpc_20remote_20access_6048',['JSON-RPC Remote access',['../jsonrpc_proxy.html',1,'user_guides']]]
 ];

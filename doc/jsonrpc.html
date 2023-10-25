@@ -6421,6 +6421,7 @@ nvmf_subsystem_add_listener  method</h2>
 </table>
 <h3><a class="anchor" id="rpc_nvmf_listen_address"></a>
 listen_address</h3>
+<p>The listen_address is used for adding the listeners to the NVMe-oF target and for referring to discovery services on other targets.</p>
 <table class="markdownTable">
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
@@ -6859,6 +6860,105 @@ nvmf_set_max_subsystems</h2>
 <div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
 <div class="line">  &quot;id&quot;: 1,</div>
 <div class="line">  &quot;result&quot;: true</div>
+<div class="line">}</div>
+</div><!-- fragment --><h2><a class="anchor" id="rpc_nvmf_discovery_add_referral"></a>
+nvmf_discovery_add_referral  method</h2>
+<p>Add a discovery service referral to an NVMe-oF target. If a referral with the given parameters already exists, no action will be taken.</p>
+<h3>Parameters</h3>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">tgt_name   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Parent NVMe-oF target name.    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">address   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">object   </td><td class="markdownTableBodyNone"><a class="el" href="jsonrpc.html#rpc_nvmf_listen_address">listen_address</a> object    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">secure_channel   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">bool   </td><td class="markdownTableBodyNone">The connection to that discovery subsystem requires a secure channel   </td></tr>
+</table>
+<h3>Example</h3>
+<p>Example request:</p>
+<div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
+<div class="line">  &quot;id&quot;: 1,</div>
+<div class="line">  &quot;method&quot;: &quot;nvmf_discovery_add_referral&quot;,</div>
+<div class="line">  &quot;params&quot;: {</div>
+<div class="line">    &quot;address&quot;: {</div>
+<div class="line">      &quot;trtype&quot;: &quot;RDMA&quot;,</div>
+<div class="line">      &quot;adrfam&quot;: &quot;IPv4&quot;,</div>
+<div class="line">      &quot;traddr&quot;: &quot;192.168.0.123&quot;,</div>
+<div class="line">      &quot;trsvcid&quot;: &quot;4420&quot;</div>
+<div class="line">    }</div>
+<div class="line">  }</div>
+<div class="line">}</div>
+</div><!-- fragment --><p>Example response:</p>
+<div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
+<div class="line">  &quot;id&quot;: 1,</div>
+<div class="line">  &quot;result&quot;: true</div>
+<div class="line">}</div>
+</div><!-- fragment --><h2><a class="anchor" id="rpc_nvmf_discovery_remove_referral"></a>
+nvmf_discovery_remove_referral  method</h2>
+<p>Remove a discovery service referral from an NVMe-oF target.</p>
+<h3>Parameters</h3>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">tgt_name   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Parent NVMe-oF target name.    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">address   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">object   </td><td class="markdownTableBodyNone"><a class="el" href="jsonrpc.html#rpc_nvmf_listen_address">listen_address</a> object   </td></tr>
+</table>
+<h3>Example</h3>
+<p>Example request:</p>
+<div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
+<div class="line">  &quot;id&quot;: 1,</div>
+<div class="line">  &quot;method&quot;: &quot;nvmf_discovery_remove_referral&quot;,</div>
+<div class="line">  &quot;params&quot;: {</div>
+<div class="line">    &quot;address&quot;: {</div>
+<div class="line">      &quot;trtype&quot;: &quot;RDMA&quot;,</div>
+<div class="line">      &quot;adrfam&quot;: &quot;IPv4&quot;,</div>
+<div class="line">      &quot;traddr&quot;: &quot;192.168.0.123&quot;,</div>
+<div class="line">      &quot;trsvcid&quot;: &quot;4420&quot;</div>
+<div class="line">    }</div>
+<div class="line">  }</div>
+<div class="line">}</div>
+</div><!-- fragment --><p>Example response:</p>
+<div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
+<div class="line">  &quot;id&quot;: 1,</div>
+<div class="line">  &quot;result&quot;: true</div>
+<div class="line">}</div>
+</div><!-- fragment --><h2><a class="anchor" id="rpc_nvmf_discovery_get_referrals"></a>
+nvmf_discovery_get_referrals</h2>
+<h3>Parameters</h3>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">tgt_name   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Parent NVMe-oF target name.   </td></tr>
+</table>
+<h3>Example</h3>
+<p>Example request:</p>
+<div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
+<div class="line">  &quot;id&quot;: 1,</div>
+<div class="line">  &quot;method&quot;: &quot;nvmf_discovery_get_referrals&quot;</div>
+<div class="line">}</div>
+</div><!-- fragment --><p>Example response:</p>
+<div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
+<div class="line">  &quot;id&quot;: 1,</div>
+<div class="line">  &quot;result&quot;: [</div>
+<div class="line">    {</div>
+<div class="line">      &quot;address&quot;: {</div>
+<div class="line">        &quot;trtype&quot;: &quot;RDMA&quot;,</div>
+<div class="line">        &quot;adrfam&quot;: &quot;IPv4&quot;,</div>
+<div class="line">        &quot;traddr&quot;: &quot;192.168.0.123&quot;,</div>
+<div class="line">        &quot;trsvcid&quot;: &quot;4420&quot;</div>
+<div class="line">      }</div>
+<div class="line">    }</div>
+<div class="line">  ]</div>
 <div class="line">}</div>
 </div><!-- fragment --><h2><a class="anchor" id="rpc_nvmf_set_config"></a>
 nvmf_set_config</h2>
