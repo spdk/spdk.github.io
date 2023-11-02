@@ -43,7 +43,7 @@ var searchData=
   ['power_5fgovernor_5fsetting_5363',['power_governor_setting',['../unionspdk__nvme__intel__feat__power__governor.html#aa25780c209e8e7d18133e16396cb235e',1,'spdk_nvme_intel_feat_power_governor']]],
   ['pp_5364',['pp',['../unionspdk__nvme__csts__register.html#a36a07e6c600537241f579d52604b1de8',1,'spdk_nvme_csts_register']]],
   ['pre_5fmemory_5fremove_5365',['pre_memory_remove',['../structspdk__vfu__endpoint__ops.html#a00f7d1fb286931725b14f5f410bbcd33',1,'spdk_vfu_endpoint_ops']]],
-  ['priority_5366',['priority',['../structspdk__nvme__transport__id.html#a9f42a63dd75253a00f7bff861f4057a4',1,'spdk_nvme_transport_id::priority()'],['../structspdk__sock__opts.html#a0e826e7a46eadaeb53f38c4926cd3bbf',1,'spdk_sock_opts::priority()']]],
+  ['priority_5366',['priority',['../structspdk__accel__module__if.html#abcfd6469c7d697bfe2bc6352a2f1bac1',1,'spdk_accel_module_if::priority()'],['../structspdk__sock__opts.html#a0e826e7a46eadaeb53f38c4926cd3bbf',1,'spdk_sock_opts::priority()'],['../structspdk__nvme__transport__id.html#a9f42a63dd75253a00f7bff861f4057a4',1,'spdk_nvme_transport_id::priority()']]],
   ['priv_5367',['priv',['../structspdk__accel__crypto__key.html#acc9c5ea5eedb9d6b1b9e53da0d446373',1,'spdk_accel_crypto_key']]],
   ['prkey_5368',['prkey',['../structspdk__nvme__reservation__acquire__data.html#a7777dded0893794c13c35fd71173514f',1,'spdk_nvme_reservation_acquire_data']]],
   ['product_5fname_5369',['product_name',['../structspdk__bdev.html#ad3abe8a06500954332614d8657eaf1d9',1,'spdk_bdev']]],

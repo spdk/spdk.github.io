@@ -105,6 +105,9 @@ Data Fields</h2></td></tr>
 const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__accel__module__if.html#ae918a45a62d5578f40ff7f90c88de1c6">name</a></td></tr>
 <tr class="memdesc:ae918a45a62d5578f40ff7f90c88de1c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Name of the module. <br /></td></tr>
 <tr class="separator:ae918a45a62d5578f40ff7f90c88de1c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abcfd6469c7d697bfe2bc6352a2f1bac1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__accel__module__if.html#abcfd6469c7d697bfe2bc6352a2f1bac1">priority</a></td></tr>
+<tr class="memdesc:abcfd6469c7d697bfe2bc6352a2f1bac1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Priority of the module.  <a href="structspdk__accel__module__if.html#abcfd6469c7d697bfe2bc6352a2f1bac1">More...</a><br /></td></tr>
+<tr class="separator:abcfd6469c7d697bfe2bc6352a2f1bac1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a67ea670c5044c1201533a7e23b81c8b3"><td class="memItemLeft" align="right" valign="top">int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__accel__module__if.html#a67ea670c5044c1201533a7e23b81c8b3">module_init</a> )(void)</td></tr>
 <tr class="memdesc:a67ea670c5044c1201533a7e23b81c8b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialization function for the module.  <a href="structspdk__accel__module__if.html#a67ea670c5044c1201533a7e23b81c8b3">More...</a><br /></td></tr>
 <tr class="separator:a67ea670c5044c1201533a7e23b81c8b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -261,6 +264,23 @@ bool(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="st
 <p>Initialization function for the module. </p>
 <p>Called by the application during startup.</p>
 <p>Modules are required to define this function. </p>
+
+</div>
+</div>
+<a id="abcfd6469c7d697bfe2bc6352a2f1bac1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abcfd6469c7d697bfe2bc6352a2f1bac1">&#9670;&nbsp;</a></span>priority</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_accel_module_if::priority</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Priority of the module. </p>
+<p>It's used to select a module to execute an operation when multiple modules support it. Higher value means higher priority. Software module has a priority of <code>SPDK_ACCEL_SW_PRIORITY</code>. Of course, this value is only relevant when none of the modules have been explicitly assigned to execute a given operation via <code><a class="el" href="accel_8h.html#a040958d2cd363147d686e718edc8a305" title="Override the assignment of an opcode to an module.">spdk_accel_assign_opc()</a></code>. </p>
 
 </div>
 </div>

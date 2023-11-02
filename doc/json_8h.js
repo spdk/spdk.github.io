@@ -35,6 +35,7 @@ var json_8h =
     [ "spdk_json_decode_uint32", "json_8h.html#a5ba97519fb4d8431f8b5241379a06b2e", null ],
     [ "spdk_json_decode_uint64", "json_8h.html#a96d2603083c8aa2b43a9f26d5d040262", null ],
     [ "spdk_json_decode_uint8", "json_8h.html#a004f1240d5091218020dd1fc4bf557c1", null ],
+    [ "spdk_json_decode_uuid", "json_8h.html#a55415cf972c1637acfc0c932f6ff88fc", null ],
     [ "spdk_json_find", "json_8h.html#a5fc65c7d1961c23a747b3e2aa2169f4a", null ],
     [ "spdk_json_find_array", "json_8h.html#a0512cd8ee58901ec15f5ef372d6cafc6", null ],
     [ "spdk_json_find_string", "json_8h.html#a04601f5c6dc82ac1ddedc387a510249d", null ],
@@ -77,6 +78,7 @@ var json_8h =
     [ "spdk_json_write_named_uint32", "json_8h.html#a0ba1891841d0504b55ca62ef2005bb2f", null ],
     [ "spdk_json_write_named_uint64", "json_8h.html#af58205394bbbfb6d05219e1c8b88023d", null ],
     [ "spdk_json_write_named_uint8", "json_8h.html#ac0b98b65d7319ef1148d4b87b4bb80f5", null ],
+    [ "spdk_json_write_named_uuid", "json_8h.html#a374693dfbf6ed15ee870350e1c11b44e", null ],
     [ "spdk_json_write_null", "json_8h.html#afb39ef20750d537d2ceb7deb88a2d860", null ],
     [ "spdk_json_write_object_begin", "json_8h.html#a43134cf7b4e2eb1ed0ec9003f1aaaad0", null ],
     [ "spdk_json_write_object_end", "json_8h.html#a29b41db16a7efa38cfafb86241059c9b", null ],
@@ -91,6 +93,7 @@ var json_8h =
     [ "spdk_json_write_uint32", "json_8h.html#a78ee727532882d4cab19bad70343eb7f", null ],
     [ "spdk_json_write_uint64", "json_8h.html#a3555f5e2934c911ffd4d46f7b8671203", null ],
     [ "spdk_json_write_uint8", "json_8h.html#a31989bffad10e0f7e0f8534ce4a1b574", null ],
+    [ "spdk_json_write_uuid", "json_8h.html#a6a38a13aef491aa3d5eb43b45ed93356", null ],
     [ "spdk_json_write_val", "json_8h.html#aaf471af9adc269e6b3f9753acffbc173", null ],
     [ "spdk_json_write_val_raw", "json_8h.html#ab93e46b460a6a5f2f9ee3fa54edcc8de", null ]
 ];

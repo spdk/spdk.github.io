@@ -1,5 +1,8 @@
 var NAVTREEINDEX7 =
 {
+"jsonrpc.html#rpc_bdev_lvol_set_read_only":[3,9,9,11],
+"jsonrpc.html#rpc_bdev_lvol_snapshot":[3,9,9,6],
+"jsonrpc.html#rpc_bdev_malloc_create":[3,9,5,24],
 "jsonrpc.html#rpc_bdev_malloc_delete":[3,9,5,25],
 "jsonrpc.html#rpc_bdev_null_create":[3,9,5,26],
 "jsonrpc.html#rpc_bdev_null_delete":[3,9,5,27],
@@ -246,8 +249,5 @@ var NAVTREEINDEX7 =
 "jsonrpc_8h.html#af3d607f5a980bf9eb793ef2b553f679a":[15,0,35,23],
 "jsonrpc_proxy.html":[3,10],
 "libraries.html":[3,1],
-"libraries.html#conventions":[3,1,1],
-"libraries.html#env_replacement":[3,1,2,2],
-"libraries.html#headers":[3,1,1,0],
-"libraries.html#lib":[3,1,0,0]
+"libraries.html#conventions":[3,1,1]
 };

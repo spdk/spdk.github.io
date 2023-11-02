@@ -1,5 +1,10 @@
 var NAVTREEINDEX31 =
 {
+"structvfio__user__bitmap.html#a3621f06973f6d02b39b3ac4c1b3f67d7":[14,0,415,2],
+"structvfio__user__bitmap.html#a8a560b210f885bcc35011195a5241767":[14,0,415,0],
+"structvfio__user__bitmap.html#ab222e8262a2c79054e691d4b33e55d80":[14,0,415,1],
+"structvfio__user__bitmap__range.html":[14,0,416],
+"structvfio__user__bitmap__range.html#a149572d37f8d2c7fc6cd44603df3d089":[14,0,416,2],
 "structvfio__user__bitmap__range.html#a9cd9fbe33946b6743203a42dd0170f86":[14,0,416,0],
 "structvfio__user__bitmap__range.html#ad6d1655e6d1f43f2a2c82c1c495694f0":[14,0,416,1],
 "structvfio__user__device__info.html":[14,0,417],
@@ -244,10 +249,5 @@ var NAVTREEINDEX31 =
 "unionidxd__cmdcap__register.html#a70149a7106430398d2db393364d375aa":[14,0,8,2],
 "unionidxd__cmdcap__register.html#a7446d769f1e0fba3aaf4576e1d0d10ff":[14,0,8,0],
 "unionidxd__cmdcap__register.html#a7ab2e8845ee38ad908c9c36e26a37914":[14,0,8,16],
-"unionidxd__cmdcap__register.html#ab077aa1ffb8c82314b8df3a1e9411ccf":[14,0,8,13],
-"unionidxd__cmdcap__register.html#ab63b5b4b55cd034a73ae7592de3f3e56":[14,0,8,9],
-"unionidxd__cmdcap__register.html#abefee72a05af32063dcea5c5165ee35c":[14,0,8,6],
-"unionidxd__cmdcap__register.html#adb1c3e31a13f01c41268150348dcb05b":[14,0,8,11],
-"unionidxd__cmdcap__register.html#aeb02183779fc62b93ff38604862b2d05":[14,0,8,7],
-"unionidxd__cmdcap__register.html#af07cc19d9e5b492f7204a9beac218041":[14,0,8,5]
+"unionidxd__cmdcap__register.html#ab077aa1ffb8c82314b8df3a1e9411ccf":[14,0,8,13]
 };

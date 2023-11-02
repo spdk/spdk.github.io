@@ -1,5 +1,9 @@
 var NAVTREEINDEX19 =
 {
+"structspdk__app__opts.html#a703388c6f0075cf0396e05925364ebc5":[14,0,59,1],
+"structspdk__app__opts.html#a74c03a91caa15961c35374bf2465a279":[14,0,59,0],
+"structspdk__app__opts.html#a75afb9e54db3ac65635060b9841edd08":[14,0,59,30],
+"structspdk__app__opts.html#a7d3b920c3b813bcbf6e95d5551a242ed":[14,0,59,22],
 "structspdk__app__opts.html#a7e520897d6a9e39c3e62cc4259bd2ea3":[14,0,59,4],
 "structspdk__app__opts.html#a891ac585c9045176496ef28d435ea18d":[14,0,59,7],
 "structspdk__app__opts.html#a8fcfa061da5b1b5bfd9900c3074bf95f":[14,0,59,5],
@@ -245,9 +249,5 @@ var NAVTREEINDEX19 =
 "structspdk__bdev__module.html#a0e9535f64f9807afa310c63dd4675a8c":[14,0,70,4],
 "structspdk__bdev__module.html#a18e49a0bccf1b515e51afbde09f8ac35":[14,0,70,6],
 "structspdk__bdev__module.html#a1f13de8e5d02c74738c6119cedde3c53":[14,0,70,12],
-"structspdk__bdev__module.html#a490337d850141809c1cc930fb7b2e552":[14,0,70,8],
-"structspdk__bdev__module.html#a61730b751caac0b4fb3f343460789a0b":[14,0,70,13],
-"structspdk__bdev__module.html#a6ce26cd4bef3b1f59982d983129d3b38":[14,0,70,10],
-"structspdk__bdev__module.html#a7c84f34d46332788d9725c8f46856119":[14,0,70,2],
-"structspdk__bdev__module.html#ac23941435e8ed54a66a16d4fe8b7fe52":[14,0,70,7]
+"structspdk__bdev__module.html#a490337d850141809c1cc930fb7b2e552":[14,0,70,8]
 };

@@ -1,5 +1,10 @@
 var NAVTREEINDEX32 =
 {
+"unionidxd__cmdcap__register.html#ab63b5b4b55cd034a73ae7592de3f3e56":[14,0,8,9],
+"unionidxd__cmdcap__register.html#abefee72a05af32063dcea5c5165ee35c":[14,0,8,6],
+"unionidxd__cmdcap__register.html#adb1c3e31a13f01c41268150348dcb05b":[14,0,8,11],
+"unionidxd__cmdcap__register.html#aeb02183779fc62b93ff38604862b2d05":[14,0,8,7],
+"unionidxd__cmdcap__register.html#af07cc19d9e5b492f7204a9beac218041":[14,0,8,5],
 "unionidxd__cmdcap__register.html#af19cc2d845fff7d2296d2b7dbb0179d6":[14,0,8,8],
 "unionidxd__cmdcap__register.html#afc2f5cb2eca2cac77e4dccc7661d7022":[14,0,8,1],
 "unionidxd__cmdcap__register.html#afdbc0154fe0c4c0eb61d1f0f9123d806":[14,0,8,3],
@@ -244,10 +249,5 @@ var NAVTREEINDEX32 =
 "unionspdk__nvme__cmbsts__register.html#a54604b4b4110e749c3a843f3620ed74e":[14,0,154,3],
 "unionspdk__nvme__cmbsts__register.html#a54aeabcf0ebe783224acba7c6895372a":[14,0,154,0],
 "unionspdk__nvme__cmbsts__register.html#a5998dda138a19e69602822179d4547be":[14,0,154,1],
-"unionspdk__nvme__cmbsz__register.html":[14,0,155],
-"unionspdk__nvme__cmbsz__register.html#a03af53ff83c581ce0f02f72195f1c6f2":[14,0,155,7],
-"unionspdk__nvme__cmbsz__register.html#a3481600cf80fa69860ba5dbb445afc5f":[14,0,155,6],
-"unionspdk__nvme__cmbsz__register.html#a5259febaf27ced21d1358b97bd1cb831":[14,0,155,8],
-"unionspdk__nvme__cmbsz__register.html#a605db26c2b5a41b7b0cc40750e43527d":[14,0,155,2],
-"unionspdk__nvme__cmbsz__register.html#a79fbfeb57825c60398ad99aff7dea6c4":[14,0,155,3]
+"unionspdk__nvme__cmbsz__register.html":[14,0,155]
 };

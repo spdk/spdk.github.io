@@ -1,5 +1,9 @@
 var NAVTREEINDEX25 =
 {
+"structspdk__nvme__power__state.html#abbf83442c61dd8095fe0b5446a7a6671":[14,0,240,5],
+"structspdk__nvme__power__state.html#ad33bbfd39bc94569c031ec6ebca02af2":[14,0,240,12],
+"structspdk__nvme__power__state.html#ae6ae4f0ca864bf75fc842a29198d8e56":[14,0,240,1],
+"structspdk__nvme__power__state.html#afc4b1e6d5ea6bac9c592e55fa94cfd7e":[14,0,240,18],
 "structspdk__nvme__primary__ctrl__capabilities.html":[14,0,241],
 "structspdk__nvme__primary__ctrl__capabilities.html#a0932f0fb2038aff45b5e25788e62eadc":[14,0,241,9],
 "structspdk__nvme__primary__ctrl__capabilities.html#a188fc422eddd794a1af2d164a29942a7":[14,0,241,7],
@@ -245,9 +249,5 @@ var NAVTREEINDEX25 =
 "structspdk__nvme__tcp__term__req__hdr.html#ac4a9186c72cafa21bae6a64c5900f59f":[14,0,271,1],
 "structspdk__nvme__tcp__term__req__hdr.html#ae08c10e9d71244b51eedad3e3f11d98b":[14,0,271,3],
 "structspdk__nvme__tcp__transport__specific__address__subtype.html":[14,0,272],
-"structspdk__nvme__tcp__transport__specific__address__subtype.html#aadd698f60438b09c6a29de7c72b3e400":[14,0,272,1],
-"structspdk__nvme__tcp__transport__specific__address__subtype.html#ad01f99d21c4695bf3695018429355319":[14,0,272,0],
-"structspdk__nvme__telemetry__log__page__hdr.html":[14,0,273],
-"structspdk__nvme__telemetry__log__page__hdr.html#a0355cc15d7b4c13c5a49e7af2bd6fe0c":[14,0,273,7],
-"structspdk__nvme__telemetry__log__page__hdr.html#a3d2ee1238857dccf9ab9e4933713c6c9":[14,0,273,6]
+"structspdk__nvme__tcp__transport__specific__address__subtype.html#aadd698f60438b09c6a29de7c72b3e400":[14,0,272,1]
 };

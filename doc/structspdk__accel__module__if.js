@@ -12,6 +12,7 @@ var structspdk__accel__module__if =
     [ "module_fini", "structspdk__accel__module__if.html#a3cba48f71887d03cb0b350a06e56ecf4", null ],
     [ "module_init", "structspdk__accel__module__if.html#a67ea670c5044c1201533a7e23b81c8b3", null ],
     [ "name", "structspdk__accel__module__if.html#ae918a45a62d5578f40ff7f90c88de1c6", null ],
+    [ "priority", "structspdk__accel__module__if.html#abcfd6469c7d697bfe2bc6352a2f1bac1", null ],
     [ "submit_tasks", "structspdk__accel__module__if.html#a5ec7cb8d7de6948a45df39e3a486f976", null ],
     [ "supports_opcode", "structspdk__accel__module__if.html#af8472800fed11f279f6c1e96ac48a122", null ],
     [ "write_config_json", "structspdk__accel__module__if.html#aa935af52f46cb0aee6f15b6bb8c68726", null ]

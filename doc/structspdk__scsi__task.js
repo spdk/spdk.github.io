@@ -5,6 +5,7 @@ var structspdk__scsi__task =
     [ "alloc_len", "structspdk__scsi__task.html#a8c253a9ec980449f385640f86bd0a709", null ],
     [ "bdev_io", "structspdk__scsi__task.html#a22482d12d534a2eab078068d586b9258", null ],
     [ "bdev_io_wait", "structspdk__scsi__task.html#a101adf17cdbb1f5e08b2e161533e1b03", null ],
+    [ "caw_iov", "structspdk__scsi__task.html#a6fa360cc8500086552f787c6c22ee30e", null ],
     [ "cdb", "structspdk__scsi__task.html#a961329926b7efacff65989b4fed4b617", null ],
     [ "cpl_fn", "structspdk__scsi__task.html#afa26345de5d75d6850560cc6c1bbc5fe", null ],
     [ "data_transferred", "structspdk__scsi__task.html#aed0de3999a81a9aeb079f0d9e4c4f098", null ],
