@@ -685,13 +685,14 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log_
 </div><div class="memdoc">
 
 <p>Clear a log flag. </p>
+<p>The name of the flag can be a glob pattern (as expanded by fnmatch(3)), in which case all matching flags will be cleared.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">flag</td><td>Log flag to clear.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>0 on success, -1 on failure. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, negative errno on failure. </dd></dl>
 
 </div>
 </div>
@@ -1104,13 +1105,14 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log_
 </div><div class="memdoc">
 
 <p>Enable the log flag. </p>
+<p>The name of the flag can be a glob pattern (as expanded by fnmatch(3)), in which case all matching flags will be set.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">flag</td><td>Log flag to be enabled.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>0 on success, -1 on failure. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, negative errno on failure. </dd></dl>
 
 </div>
 </div>
