@@ -1,5 +1,6 @@
 var NAVTREEINDEX21 =
 {
+"structspdk__ioat__dma__hw__desc.html#a9b258fc2ad0302401e3e17511e8cbd02":[14,0,102,0],
 "structspdk__ioat__dma__hw__desc.html#aa26bd416424bb37fbdad16af48f188e9":[14,0,102,22],
 "structspdk__ioat__dma__hw__desc.html#aa73128202a4e5cf31adc57f65a9be1f5":[14,0,102,19],
 "structspdk__ioat__dma__hw__desc.html#ab23e97403ada8eb4cd0b226a9ec1a9e4":[14,0,102,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX21 =
 "structspdk__mbr__partition__entry.html#ad49a544b0562f2c42fbe097bed2a3209":[14,0,129,6],
 "structspdk__mbr__partition__entry.html#ae82f31d2ed8398960fee591567137c73":[14,0,129,5],
 "structspdk__mbr__partition__entry.html#af28d34fafdf0c27e70cefdf1a6e5fbeb":[14,0,129,3],
-"structspdk__mem__map__ops.html":[14,0,130],
-"structspdk__mem__map__ops.html#a08ac3d51bc6941f140d262e02e233f55":[14,0,130,1]
+"structspdk__mem__map__ops.html":[14,0,130]
 };

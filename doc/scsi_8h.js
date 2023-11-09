@@ -65,6 +65,7 @@ var scsi_8h =
     [ "spdk_scsi_port_free", "scsi_8h.html#a4879e8ff64fa53ade495996347a10723", null ],
     [ "spdk_scsi_port_get_name", "scsi_8h.html#ae44f357c4cfc7d60c8fce30c39c637b6", null ],
     [ "spdk_scsi_port_set_iscsi_transport_id", "scsi_8h.html#a5c5f9ec2f448328e55e2e46e932d2e21", null ],
+    [ "spdk_scsi_sbc_opcode_string", "scsi_8h.html#ac20ee430be35793668999a3040b12e7e", null ],
     [ "spdk_scsi_task_build_sense_data", "scsi_8h.html#a4b9abfb76360c093b270174c0a9943b2", null ],
     [ "spdk_scsi_task_construct", "scsi_8h.html#a549a49a4aa5a6ffc92884d8f847446bc", null ],
     [ "spdk_scsi_task_copy_status", "scsi_8h.html#a74fcb5083afd6e49cbc738f8eec56511", null ],

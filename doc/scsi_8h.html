@@ -304,6 +304,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="scsi
 <tr class="memitem:a9cce391128bce2d403d87766248fb3c8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="scsi_8h.html#a9cce391128bce2d403d87766248fb3c8">spdk_scsi_lun_id_fmt_to_int</a> (uint64_t fmt_lun)</td></tr>
 <tr class="memdesc:a9cce391128bce2d403d87766248fb3c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert LUN ID from LUN format to integer.  <a href="scsi_8h.html#a9cce391128bce2d403d87766248fb3c8">More...</a><br /></td></tr>
 <tr class="separator:a9cce391128bce2d403d87766248fb3c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac20ee430be35793668999a3040b12e7e"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="scsi_8h.html#ac20ee430be35793668999a3040b12e7e">spdk_scsi_sbc_opcode_string</a> (uint8_t opcode, uint16_t sa)</td></tr>
+<tr class="memdesc:ac20ee430be35793668999a3040b12e7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Translate SCSI operation code and service action into string.  <a href="scsi_8h.html#ac20ee430be35793668999a3040b12e7e">More...</a><br /></td></tr>
+<tr class="separator:ac20ee430be35793668999a3040b12e7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>SCSI to bdev translation layer. </p>
@@ -1586,6 +1589,44 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="scsi
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="ac20ee430be35793668999a3040b12e7e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac20ee430be35793668999a3040b12e7e">&#9670;&nbsp;</a></span>spdk_scsi_sbc_opcode_string()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* spdk_scsi_sbc_opcode_string </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>opcode</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>sa</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Translate SCSI operation code and service action into string. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">opcode</td><td>SCSI operation code</td></tr>
+    <tr><td class="paramname">sa</td><td>SCSI service action code</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>SCSI operation string </dd></dl>
 
 </div>
 </div>

@@ -1,5 +1,7 @@
 var NAVTREEINDEX33 =
 {
+"unionspdk__nvme__cmbsts__register.html#a5998dda138a19e69602822179d4547be":[14,0,154,1],
+"unionspdk__nvme__cmbsz__register.html":[14,0,155],
 "unionspdk__nvme__cmbsz__register.html#a03af53ff83c581ce0f02f72195f1c6f2":[14,0,155,7],
 "unionspdk__nvme__cmbsz__register.html#a3481600cf80fa69860ba5dbb445afc5f":[14,0,155,6],
 "unionspdk__nvme__cmbsz__register.html#a5259febaf27ced21d1358b97bd1cb831":[14,0,155,8],
@@ -247,7 +249,5 @@ var NAVTREEINDEX33 =
 "unionspdk__nvme__feat__reservation__notification__mask.html#aa4036e986efb17c708a9c0d0b7b2feee":[14,0,200,1],
 "unionspdk__nvme__feat__reservation__notification__mask.html#aba1da6db44e1bf1a1102bb329baaaea5":[14,0,200,3],
 "unionspdk__nvme__feat__reservation__persistence.html":[14,0,201],
-"unionspdk__nvme__feat__reservation__persistence.html#a0728bce16796323608b9ed1c2a43d2e3":[14,0,201,1],
-"unionspdk__nvme__feat__reservation__persistence.html#a5f0c591cb1cb11e99fa7213eec360442":[14,0,201,2],
-"unionspdk__nvme__feat__reservation__persistence.html#a83ca08a4e357b0e8bd0885fb17f468aa":[14,0,201,3]
+"unionspdk__nvme__feat__reservation__persistence.html#a0728bce16796323608b9ed1c2a43d2e3":[14,0,201,1]
 };
