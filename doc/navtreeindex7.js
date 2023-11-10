@@ -1,5 +1,6 @@
 var NAVTREEINDEX7 =
 {
+"jsonrpc.html#rpc_bdev_lvol_resize":[3,9,9,10],
 "jsonrpc.html#rpc_bdev_lvol_set_read_only":[3,9,9,11],
 "jsonrpc.html#rpc_bdev_lvol_snapshot":[3,9,9,6],
 "jsonrpc.html#rpc_bdev_malloc_create":[3,9,5,24],
@@ -49,8 +50,8 @@ var NAVTREEINDEX7 =
 "jsonrpc.html#rpc_bdev_opal_get_info":[3,9,9,27],
 "jsonrpc.html#rpc_bdev_opal_new_user":[3,9,9,29],
 "jsonrpc.html#rpc_bdev_opal_set_lock_state":[3,9,9,30],
-"jsonrpc.html#rpc_bdev_passthru_create":[3,9,5,75],
-"jsonrpc.html#rpc_bdev_passthru_delete":[3,9,5,76],
+"jsonrpc.html#rpc_bdev_passthru_create":[3,9,5,76],
+"jsonrpc.html#rpc_bdev_passthru_delete":[3,9,5,77],
 "jsonrpc.html#rpc_bdev_raid_create":[3,9,9,17],
 "jsonrpc.html#rpc_bdev_raid_delete":[3,9,9,18],
 "jsonrpc.html#rpc_bdev_raid_get_bdevs":[3,9,9,16],
@@ -69,13 +70,13 @@ var NAVTREEINDEX7 =
 "jsonrpc.html#rpc_bdev_split_delete":[3,9,9,21],
 "jsonrpc.html#rpc_bdev_uring_create":[3,9,9,22],
 "jsonrpc.html#rpc_bdev_uring_delete":[3,9,9,23],
-"jsonrpc.html#rpc_bdev_virtio_attach_controller":[3,9,5,79],
-"jsonrpc.html#rpc_bdev_virtio_blk_set_hotplug":[3,9,5,82],
-"jsonrpc.html#rpc_bdev_virtio_detach_controller":[3,9,5,81],
-"jsonrpc.html#rpc_bdev_virtio_scsi_get_devices":[3,9,5,80],
+"jsonrpc.html#rpc_bdev_virtio_attach_controller":[3,9,5,80],
+"jsonrpc.html#rpc_bdev_virtio_blk_set_hotplug":[3,9,5,83],
+"jsonrpc.html#rpc_bdev_virtio_detach_controller":[3,9,5,82],
+"jsonrpc.html#rpc_bdev_virtio_scsi_get_devices":[3,9,5,81],
 "jsonrpc.html#rpc_bdev_wait_for_examine":[3,9,5,3],
-"jsonrpc.html#rpc_bdev_xnvme_create":[3,9,5,77],
-"jsonrpc.html#rpc_bdev_xnvme_delete":[3,9,5,78],
+"jsonrpc.html#rpc_bdev_xnvme_create":[3,9,5,78],
+"jsonrpc.html#rpc_bdev_xnvme_delete":[3,9,5,79],
 "jsonrpc.html#rpc_bdev_zone_block_create":[3,9,5,49],
 "jsonrpc.html#rpc_bdev_zone_block_delete":[3,9,5,50],
 "jsonrpc.html#rpc_blobfs_create":[3,9,12,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX7 =
 "jsonrpc_8h.html#ae7d1dc3ef99ed408859d9a5f6802ad65":[15,0,35,27],
 "jsonrpc_8h.html#af3d607f5a980bf9eb793ef2b553f679a":[15,0,35,23],
 "jsonrpc_proxy.html":[3,10],
-"libraries.html":[3,1],
-"libraries.html#conventions":[3,1,1]
+"libraries.html":[3,1]
 };

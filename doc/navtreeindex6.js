@@ -226,6 +226,7 @@ var NAVTREEINDEX6 =
 "jsonrpc.html#rpc_bdev_examine":[3,9,5,2],
 "jsonrpc.html#rpc_bdev_ftl_create":[3,9,5,69],
 "jsonrpc.html#rpc_bdev_ftl_delete":[3,9,5,71],
+"jsonrpc.html#rpc_bdev_ftl_get_properties":[3,9,5,75],
 "jsonrpc.html#rpc_bdev_ftl_get_stats":[3,9,5,74],
 "jsonrpc.html#rpc_bdev_ftl_load":[3,9,5,70],
 "jsonrpc.html#rpc_bdev_ftl_unload":[3,9,5,72],
@@ -248,6 +249,5 @@ var NAVTREEINDEX6 =
 "jsonrpc.html#rpc_bdev_lvol_grow_lvstore":[3,9,9,4],
 "jsonrpc.html#rpc_bdev_lvol_inflate":[3,9,9,13],
 "jsonrpc.html#rpc_bdev_lvol_rename":[3,9,9,9],
-"jsonrpc.html#rpc_bdev_lvol_rename_lvstore":[3,9,9,3],
-"jsonrpc.html#rpc_bdev_lvol_resize":[3,9,9,10]
+"jsonrpc.html#rpc_bdev_lvol_rename_lvstore":[3,9,9,3]
 };
