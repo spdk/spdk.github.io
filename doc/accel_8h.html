@@ -276,6 +276,9 @@ Functions</h2></td></tr>
 <tr class="memitem:aaebd6fe37b7af8036e42184adc407ce4"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="accel_8h.html#aaebd6fe37b7af8036e42184adc407ce4">spdk_accel_get_buf_align</a> (enum spdk_accel_opcode opcode, const struct <a class="el" href="structspdk__accel__operation__exec__ctx.html">spdk_accel_operation_exec_ctx</a> *ctx)</td></tr>
 <tr class="memdesc:aaebd6fe37b7af8036e42184adc407ce4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get minimum buffer alignment to execute a given operation.  <a href="accel_8h.html#aaebd6fe37b7af8036e42184adc407ce4">More...</a><br /></td></tr>
 <tr class="separator:aaebd6fe37b7af8036e42184adc407ce4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72b6ffa90024fbdef55aae9a37cc71b0"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="accel_8h.html#a72b6ffa90024fbdef55aae9a37cc71b0">spdk_accel_get_opcode_name</a> (enum spdk_accel_opcode opcode)</td></tr>
+<tr class="memdesc:a72b6ffa90024fbdef55aae9a37cc71b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the name of an operation based on the opcode.  <a href="accel_8h.html#a72b6ffa90024fbdef55aae9a37cc71b0">More...</a><br /></td></tr>
+<tr class="separator:a72b6ffa90024fbdef55aae9a37cc71b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Acceleration Framework. </p>
@@ -1065,7 +1068,7 @@ Functions</h2></td></tr>
 <p>Override the assignment of an opcode to an module. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">opcode</td><td>Accel Framework Opcode enum value. Valid codes can be retrieved using <code>accel_get_opc_assignments</code> or <code>spdk_accel_get_opc_name</code>. </td></tr>
+    <tr><td class="paramname">opcode</td><td>Accel Framework Opcode enum value. Valid codes can be retrieved using <code>accel_get_opc_assignments</code> or <code>spdk_accel_get_opcode_name</code>. </td></tr>
     <tr><td class="paramname">name</td><td>Name of the module to assign. Valid module names may be retrieved with <code>spdk_accel_get_opc_module_name</code></td></tr>
   </table>
   </dd>
@@ -1365,12 +1368,39 @@ Functions</h2></td></tr>
 <p>Return the name of the module assigned to a specific opcode. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">opcode</td><td>Accel Framework Opcode enum value. Valid codes can be retrieved using <code>accel_get_opc_assignments</code> or <code>spdk_accel_get_opc_name</code>. </td></tr>
+    <tr><td class="paramname">opcode</td><td>Accel Framework Opcode enum value. Valid codes can be retrieved using <code>accel_get_opc_assignments</code> or <code>spdk_accel_get_opcode_name</code>. </td></tr>
     <tr><td class="paramname">module_name</td><td>Pointer to update with module name.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 if a valid module name was provided. -EINVAL for invalid opcode or -ENOENT no module was found at this time for the provided opcode. </dd></dl>
+
+</div>
+</div>
+<a id="a72b6ffa90024fbdef55aae9a37cc71b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a72b6ffa90024fbdef55aae9a37cc71b0">&#9670;&nbsp;</a></span>spdk_accel_get_opcode_name()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* spdk_accel_get_opcode_name </td>
+          <td>(</td>
+          <td class="paramtype">enum spdk_accel_opcode&#160;</td>
+          <td class="paramname"><em>opcode</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Return the name of an operation based on the opcode. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">opcode</td><td>Opcode.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Name of the operation. </dd></dl>
 
 </div>
 </div>

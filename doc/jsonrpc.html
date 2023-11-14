@@ -410,6 +410,7 @@ rpc_get_methods</h2>
 <div class="line">    &quot;accel_assign_opc&quot;,</div>
 <div class="line">    &quot;accel_get_module_info&quot;,</div>
 <div class="line">    &quot;accel_get_opc_assignments&quot;,</div>
+<div class="line">    &quot;accel_error_inject_error&quot;,</div>
 <div class="line">    &quot;ioat_scan_accel_module&quot;,</div>
 <div class="line">    &quot;dsa_scan_accel_module&quot;,</div>
 <div class="line">    &quot;dpdk_cryptodev_scan_accel_module&quot;,</div>
@@ -1600,6 +1601,41 @@ accel_get_stats</h2>
 <div class="line">      }</div>
 <div class="line">    ]</div>
 <div class="line">  }</div>
+<div class="line">}</div>
+</div><!-- fragment --><h2><a class="anchor" id="rpc_accel_error_inject_error"></a>
+accel_error_inject_error</h2>
+<p>Inject an error to execution of a given operation. Note, that in order for the errors to be actually injected, the error module must be assigned to that operation via <code>accel_assign_opc</code>.</p>
+<h3>Parameters</h3>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">opcode   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Operation to inject errors.    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">type   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Type of errors to inject ("corrupt": corrupt the data, "failure": fail the operation, "disable": disable error injection).    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">count   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">Numbers of errors to inject on each IO channel (<code>UINT64_MAX</code> by default).    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">interval   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">Interval between injections.    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">errcode   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">Error code to inject (only relevant for type=failure).   </td></tr>
+</table>
+<h3>Example</h3>
+<p>Example request:</p>
+<div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;method&quot;: &quot;accel_error_inject_error&quot;,</div>
+<div class="line">  &quot;params&quot;: {</div>
+<div class="line">    &quot;opcode&quot;: &quot;crc32c&quot;,</div>
+<div class="line">    &quot;type&quot;: &quot;corrupt&quot;,</div>
+<div class="line">    &quot;count&quot;: 10000,</div>
+<div class="line">    &quot;interval&quot;: 8</div>
+<div class="line">  }</div>
+<div class="line">}</div>
+</div><!-- fragment --><p>Example response:</p>
+<div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
+<div class="line">  &quot;id&quot;: 1,</div>
+<div class="line">  &quot;result&quot;: true</div>
 <div class="line">}</div>
 </div><!-- fragment --><h2><a class="anchor" id="rpc_compressdev_scan_accel_module"></a>
 compressdev_scan_accel_module</h2>
@@ -8300,6 +8336,7 @@ bdev_raid_get_bdevs</h2>
 <div class="line">  &quot;result&quot;: [</div>
 <div class="line">    {</div>
 <div class="line">      &quot;name&quot;: &quot;RaidBdev0&quot;,</div>
+<div class="line">      &quot;uuid&quot;: &quot;7d352e83-fe27-40f2-8fef-64563355e076&quot;,</div>
 <div class="line">      &quot;strip_size_kb&quot;: 128,</div>
 <div class="line">      &quot;state&quot;: &quot;online&quot;,</div>
 <div class="line">      &quot;raid_level&quot;: &quot;raid0&quot;,</div>
@@ -8312,6 +8349,7 @@ bdev_raid_get_bdevs</h2>
 <div class="line">    },</div>
 <div class="line">    {</div>
 <div class="line">      &quot;name&quot;: &quot;RaidBdev1&quot;,</div>
+<div class="line">      &quot;uuid&quot;: &quot;f7cb71ed-2d0e-4240-979e-27b0b7735f36&quot;,</div>
 <div class="line">      &quot;strip_size_kb&quot;: 128,</div>
 <div class="line">      &quot;state&quot;: &quot;configuring&quot;,</div>
 <div class="line">      &quot;raid_level&quot;: &quot;raid0&quot;,</div>
@@ -8338,7 +8376,11 @@ bdev_raid_create</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">raid_level   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">RAID level    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">base_bdevs   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Base bdevs name, whitespace separated list in quotes   </td></tr>
+<td class="markdownTableBodyNone">base_bdevs   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Base bdevs name, whitespace separated list in quotes    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">uuid   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">UUID for this RAID bdev    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">superblock   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">If set, information about raid bdev will be stored in superblock on each base bdev (default: <code>false</code>)   </td></tr>
 </table>
 <h3>Example</h3>
 <p>Example request:</p>

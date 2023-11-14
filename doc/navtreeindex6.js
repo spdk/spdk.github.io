@@ -1,5 +1,6 @@
 var NAVTREEINDEX6 =
 {
+"iscsi__spec_8h.html#a6ae501611baca9225cc96bf6cf087450a64a4553f7faad7d50488d38beb3ac726":[15,0,33,94,7],
 "iscsi__spec_8h.html#a6ae501611baca9225cc96bf6cf087450a65ca8ffe7f4c93b39503ec01d9fc5b5d":[15,0,33,94,3],
 "iscsi__spec_8h.html#a6ae501611baca9225cc96bf6cf087450a72ad77a739bc2ecbde32ec9f2ca4cc99":[15,0,33,94,0],
 "iscsi__spec_8h.html#a6ae501611baca9225cc96bf6cf087450a9c7c921c75d1d65075116c2a7bc1269d":[15,0,33,94,1],
@@ -201,6 +202,7 @@ var NAVTREEINDEX6 =
 "jsonrpc.html#rpc_accel_crypto_key_create":[3,9,4,3],
 "jsonrpc.html#rpc_accel_crypto_key_destroy":[3,9,4,4],
 "jsonrpc.html#rpc_accel_crypto_keys_get":[3,9,4,5],
+"jsonrpc.html#rpc_accel_error_inject_error":[3,9,4,9],
 "jsonrpc.html#rpc_accel_get_opc_assignments":[3,9,4,1],
 "jsonrpc.html#rpc_accel_get_stats":[3,9,4,8],
 "jsonrpc.html#rpc_accel_set_driver":[3,9,4,6],
@@ -247,7 +249,5 @@ var NAVTREEINDEX6 =
 "jsonrpc.html#rpc_bdev_lvol_get_lvols":[3,9,9,15],
 "jsonrpc.html#rpc_bdev_lvol_get_lvstores":[3,9,9,2],
 "jsonrpc.html#rpc_bdev_lvol_grow_lvstore":[3,9,9,4],
-"jsonrpc.html#rpc_bdev_lvol_inflate":[3,9,9,13],
-"jsonrpc.html#rpc_bdev_lvol_rename":[3,9,9,9],
-"jsonrpc.html#rpc_bdev_lvol_rename_lvstore":[3,9,9,3]
+"jsonrpc.html#rpc_bdev_lvol_inflate":[3,9,9,13]
 };

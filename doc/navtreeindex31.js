@@ -1,5 +1,7 @@
 var NAVTREEINDEX31 =
 {
+"structspdk__vfu__pci__region.html#aff0cdbe5e697f88db633c5a611b6dc4b":[14,0,413,0],
+"structspdk__vfu__sparse__mmap.html":[14,0,414],
 "structspdk__vfu__sparse__mmap.html#a2f51edca2abef39eed92274031fb04ce":[14,0,414,1],
 "structspdk__vfu__sparse__mmap.html#abdf95ae9998d50464d1575f1d4962db9":[14,0,414,0],
 "structvfio__user__bitmap.html":[14,0,415],
@@ -247,7 +249,5 @@ var NAVTREEINDEX31 =
 "unionidxd__cmdcap__register.html#a15801d4aa453b52b4ad9dd2c4d5b7512":[14,0,8,15],
 "unionidxd__cmdcap__register.html#a2cb7b55ade5469291c1a46148775733e":[14,0,8,12],
 "unionidxd__cmdcap__register.html#a3b54db2499651ae1cbfa236b6cb17af2":[14,0,8,14],
-"unionidxd__cmdcap__register.html#a579073b09fcc8c45ca03e592aa67de30":[14,0,8,10],
-"unionidxd__cmdcap__register.html#a5ae1c1fd3a3c661af50759428f7bfef3":[14,0,8,4],
-"unionidxd__cmdcap__register.html#a70149a7106430398d2db393364d375aa":[14,0,8,2]
+"unionidxd__cmdcap__register.html#a579073b09fcc8c45ca03e592aa67de30":[14,0,8,10]
 };
