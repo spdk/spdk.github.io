@@ -15,6 +15,7 @@ var structspdk__bdev =
     [ "max_copy", "structspdk__bdev.html#a69c77ed32b1b714060141d1f3cddb6a3", null ],
     [ "max_num_segments", "structspdk__bdev.html#ad498826a1d9197050bd0ed110df96fb0", null ],
     [ "max_open_zones", "structspdk__bdev.html#a9766b9a39169827156c768f78b940977", null ],
+    [ "max_rw_size", "structspdk__bdev.html#a1460c2101971e41eede56118a99f695c", null ],
     [ "max_segment_size", "structspdk__bdev.html#af33e3553f5bb1f626d137859c6933c64", null ],
     [ "max_unmap", "structspdk__bdev.html#a1a9e1b01c90310e4698569e425849064", null ],
     [ "max_unmap_segments", "structspdk__bdev.html#a91b6959eae8243fd62e92791644ac71a", null ],

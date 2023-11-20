@@ -195,6 +195,9 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>max_write_zeroes<
 uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev.html#a69c77ed32b1b714060141d1f3cddb6a3">max_copy</a></td></tr>
 <tr class="memdesc:a69c77ed32b1b714060141d1f3cddb6a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum copy size in unit of logical block Should be set explicitly when backing device support copy command. <br /></td></tr>
 <tr class="separator:a69c77ed32b1b714060141d1f3cddb6a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1460c2101971e41eede56118a99f695c"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev.html#a1460c2101971e41eede56118a99f695c">max_rw_size</a></td></tr>
+<tr class="memdesc:a1460c2101971e41eede56118a99f695c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum number of blocks in a single read/write I/O.  <a href="structspdk__bdev.html#a1460c2101971e41eede56118a99f695c">More...</a><br /></td></tr>
+<tr class="separator:a1460c2101971e41eede56118a99f695c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5cc1248944325a12c4cadaa3856f573a"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structspdk__uuid.html">spdk_uuid</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev.html#a5cc1248944325a12c4cadaa3856f573a">uuid</a></td></tr>
 <tr class="memdesc:a5cc1248944325a12c4cadaa3856f573a"><td class="mdescLeft">&#160;</td><td class="mdescRight">UUID for this bdev.  <a href="structspdk__bdev.html#a5cc1248944325a12c4cadaa3856f573a">More...</a><br /></td></tr>
 <tr class="separator:a5cc1248944325a12c4cadaa3856f573a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -273,6 +276,23 @@ struct <a class="el" href="structspdk__bdev_1_1____bdev__internal__fields.html">
 
 <p>DIF type for this bdev. </p>
 <p>Note that this field is valid only if there is metadata. </p>
+
+</div>
+</div>
+<a id="a1460c2101971e41eede56118a99f695c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1460c2101971e41eede56118a99f695c">&#9670;&nbsp;</a></span>max_rw_size</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t spdk_bdev::max_rw_size</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Maximum number of blocks in a single read/write I/O. </p>
+<p>Requests exceeding this value will be split by the bdev layer. </p>
 
 </div>
 </div>
