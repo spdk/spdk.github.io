@@ -1,5 +1,6 @@
 var NAVTREEINDEX30 =
 {
+"structspdk__scsi__pr__in__report__capabilities__data.html#a907ad1eae1c316a7297e1dd59839496d":[14,0,383,15],
 "structspdk__scsi__pr__in__report__capabilities__data.html#aa40132ffde0282963b8aa3f8bea0c098":[14,0,383,3],
 "structspdk__scsi__pr__in__report__capabilities__data.html#aacf22f5b8c9a7e087793963439550fce":[14,0,383,19],
 "structspdk__scsi__pr__in__report__capabilities__data.html#abc273af803b296ab109467daa86eb861":[14,0,383,14],
@@ -248,6 +249,5 @@ var NAVTREEINDEX30 =
 "structspdk__vfu__pci__region.html#a07001584256cfe729af064978e793262":[14,0,413,4],
 "structspdk__vfu__pci__region.html#a1e0b37ff7c6be0b1ff7e9513c7e17b36":[14,0,413,3],
 "structspdk__vfu__pci__region.html#a400872926032b1f7eb3178fe3f3a5e85":[14,0,413,2],
-"structspdk__vfu__pci__region.html#a7e410323f459faf6a4174bc5e9f14917":[14,0,413,5],
-"structspdk__vfu__pci__region.html#a8814cf37d9161e27ed0635407fc369ed":[14,0,413,1]
+"structspdk__vfu__pci__region.html#a7e410323f459faf6a4174bc5e9f14917":[14,0,413,5]
 };

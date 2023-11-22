@@ -17,6 +17,7 @@ var vhost_8h =
     [ "spdk_vhost_scsi_config_json", "vhost_8h.html#a0631424062751f68ec295722786370a8", null ],
     [ "spdk_vhost_scsi_dev_add_tgt", "vhost_8h.html#afe5b0a12a12a26d2ddfe6a64f2a8a5e2", null ],
     [ "spdk_vhost_scsi_dev_construct", "vhost_8h.html#a01b54a11439216fb05196474e3ee20d1", null ],
+    [ "spdk_vhost_scsi_dev_construct_no_start", "vhost_8h.html#a1da14c13712918bceab2d7d9c788209b", null ],
     [ "spdk_vhost_scsi_dev_get_tgt", "vhost_8h.html#a540442ab4b6ec0ba4157e514a09f2379", null ],
     [ "spdk_vhost_scsi_dev_remove_tgt", "vhost_8h.html#ae1ea27c8ae7616e92d916e5c6fc34231", null ],
     [ "spdk_vhost_scsi_fini", "vhost_8h.html#a92afea7023f0f61a2038047e2328dd85", null ],
