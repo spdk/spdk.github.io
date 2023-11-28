@@ -289,7 +289,8 @@ FILE *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="st
 </div><div class="memdoc">
 
 <p>The size of <a class="el" href="structspdk__app__opts.html" title="Event framework initialization options.">spdk_app_opts</a> according to the caller of this library is used for ABI compatibility. </p>
-<p>The library uses this field to know how many fields in this structure are valid. And the library will populate any remaining fields with default values. After that, new added fields should be put after opts_size. </p>
+<p>The library uses this field to know how many fields in this structure are valid. And the library will populate any remaining fields with default values.</p>
+<p>New fields should usually be added at the end of this structure. The only exception is if using bytes from a reserved byte array after opts_size. In that case it is OK to use some of those bytes, as long as the default value is specified as 0. </p>
 
 </div>
 </div>

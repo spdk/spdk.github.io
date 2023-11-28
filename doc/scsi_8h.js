@@ -19,7 +19,8 @@ var scsi_8h =
       [ "SPDK_SCSI_TASK_FUNC_ABORT_TASK", "scsi_8h.html#aec3a195e1d7cb115da1d09833983db5ca06a1b00249e250317ef51eb22dc64208", null ],
       [ "SPDK_SCSI_TASK_FUNC_ABORT_TASK_SET", "scsi_8h.html#aec3a195e1d7cb115da1d09833983db5cac8ffdbb9b7b65f5d800161f0c51c6b44", null ],
       [ "SPDK_SCSI_TASK_FUNC_CLEAR_TASK_SET", "scsi_8h.html#aec3a195e1d7cb115da1d09833983db5ca68764b18673fd7a225fc6df390ab2306", null ],
-      [ "SPDK_SCSI_TASK_FUNC_LUN_RESET", "scsi_8h.html#aec3a195e1d7cb115da1d09833983db5ca09dbe1f587e7af8650475342df657904", null ]
+      [ "SPDK_SCSI_TASK_FUNC_LUN_RESET", "scsi_8h.html#aec3a195e1d7cb115da1d09833983db5ca09dbe1f587e7af8650475342df657904", null ],
+      [ "SPDK_SCSI_TASK_FUNC_TARGET_RESET", "scsi_8h.html#aec3a195e1d7cb115da1d09833983db5ca0c6dc10816b51e58b9b09f364ccc7881", null ]
     ] ],
     [ "spdk_scsi_task_mgmt_resp", "scsi_8h.html#a5c7f47e943239407061a2b5bc7f804b3", [
       [ "SPDK_SCSI_TASK_MGMT_RESP_COMPLETE", "scsi_8h.html#a5c7f47e943239407061a2b5bc7f804b3a719cc7b0ce1083ee97e9ef5274d514e9", null ],
