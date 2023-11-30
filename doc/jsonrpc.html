@@ -1420,6 +1420,8 @@ accel_crypto_key_create</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">key2   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Optional 2nd part of the key or a tweak in <b>hex</b> form    </td></tr>
 <tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">tweak_mode   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Tweak mode to use: SIMPLE_LBA, JOIN_NEG_LBA_WITH_LBA, INCR_512_FULL_LBA, INCR_512_UPPER_LBA. Default is SIMPLE_LBA    </td></tr>
+<tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">The key name   </td></tr>
 </table>
 <h3>Example</h3>
@@ -1432,6 +1434,7 @@ accel_crypto_key_create</h2>
 <div class="line">    &quot;cipher&quot;: &quot;AES_XTS&quot;,</div>
 <div class="line">    &quot;key&quot;: &quot;00112233445566778899001122334455&quot;,</div>
 <div class="line">    &quot;key2&quot;: &quot;00112233445566778899001122334455&quot;,</div>
+<div class="line">    &quot;tweak_mode&quot;: &quot;SIMPLE_LBA&quot;,</div>
 <div class="line">    &quot;name&quot;: &quot;super_key&quot;</div>
 <div class="line">  }</div>
 <div class="line">}</div>
@@ -1493,13 +1496,15 @@ accel_crypto_keys_get</h2>
 <div class="line">      &quot;name&quot;: &quot;test_dek&quot;,</div>
 <div class="line">      &quot;cipher&quot;: &quot;AES_XTS&quot;,</div>
 <div class="line">      &quot;key&quot;: &quot;00112233445566778899001122334455&quot;,</div>
-<div class="line">      &quot;key2&quot;: &quot;11223344556677889900112233445500&quot;</div>
+<div class="line">      &quot;key2&quot;: &quot;11223344556677889900112233445500&quot;,</div>
+<div class="line">      &quot;tweak_mode&quot;: &quot;SIMPLE_LBA&quot;</div>
 <div class="line">    },</div>
 <div class="line">    {</div>
 <div class="line">      &quot;name&quot;: &quot;test_dek2&quot;,</div>
 <div class="line">      &quot;cipher&quot;: &quot;AES_XTS&quot;,</div>
 <div class="line">      &quot;key&quot;: &quot;11223344556677889900112233445500&quot;,</div>
-<div class="line">      &quot;key2&quot;: &quot;22334455667788990011223344550011&quot;</div>
+<div class="line">      &quot;key2&quot;: &quot;22334455667788990011223344550011&quot;,</div>
+<div class="line">      &quot;tweak_mode&quot;: &quot;SIMPLE_LBA&quot;</div>
 <div class="line">    }</div>
 <div class="line">  ]</div>
 <div class="line">}</div>
