@@ -1,5 +1,8 @@
 var NAVTREEINDEX7 =
 {
+"jsonrpc.html#rpc_bdev_lvol_get_lvstores":[3,9,9,2],
+"jsonrpc.html#rpc_bdev_lvol_grow_lvstore":[3,9,9,4],
+"jsonrpc.html#rpc_bdev_lvol_inflate":[3,9,9,13],
 "jsonrpc.html#rpc_bdev_lvol_rename":[3,9,9,9],
 "jsonrpc.html#rpc_bdev_lvol_rename_lvstore":[3,9,9,3],
 "jsonrpc.html#rpc_bdev_lvol_resize":[3,9,9,10],
@@ -192,8 +195,8 @@ var NAVTREEINDEX7 =
 "jsonrpc.html#rpc_ublk_create_target":[3,9,10,0],
 "jsonrpc.html#rpc_ublk_destroy_target":[3,9,10,1],
 "jsonrpc.html#rpc_ublk_get_disks":[3,9,10,4],
+"jsonrpc.html#rpc_ublk_recover_disk":[3,9,10,3],
 "jsonrpc.html#rpc_ublk_start_disk":[3,9,10,2],
-"jsonrpc.html#rpc_ublk_stop_disk":[3,9,10,3],
 "jsonrpc.html#rpc_vfu_tgt_set_base_path":[3,9,7,23],
 "jsonrpc.html#rpc_vfu_virtio_create_blk_endpoint":[3,9,7,25],
 "jsonrpc.html#rpc_vfu_virtio_create_scsi_endpoint":[3,9,7,28],
@@ -246,8 +249,5 @@ var NAVTREEINDEX7 =
 "jsonrpc_8h.html#abc26b54313be26e70aadad6e11b1d548":[15,0,35,5],
 "jsonrpc_8h.html#ac5daba7e52db2743cc95dba00534ecd1":[15,0,35,6],
 "jsonrpc_8h.html#acdbb193a4b8ca1c57c2b43223165dfa6":[15,0,35,16],
-"jsonrpc_8h.html#ad5f5cca3e578e6eb3c0069e9662a1b79":[15,0,35,12],
-"jsonrpc_8h.html#adf8426aab51d139cff1597b5c4cf37e3":[15,0,35,8],
-"jsonrpc_8h.html#ae48bc3b476636afa0c58f7fd36cdc7d1":[15,0,35,3],
-"jsonrpc_8h.html#ae7d1dc3ef99ed408859d9a5f6802ad65":[15,0,35,27]
+"jsonrpc_8h.html#ad5f5cca3e578e6eb3c0069e9662a1b79":[15,0,35,12]
 };

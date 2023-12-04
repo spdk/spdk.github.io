@@ -51,6 +51,7 @@ var bdev_8h =
       [ "SPDK_BDEV_IO_TYPE_SEEK_HOLE", "bdev_8h.html#a633029e24ab5ae4a689bffa2565a519fa8c86acecb32726a5430ab1b33865638b", null ],
       [ "SPDK_BDEV_IO_TYPE_SEEK_DATA", "bdev_8h.html#a633029e24ab5ae4a689bffa2565a519fa1305efd089b10195eab818df329985e6", null ],
       [ "SPDK_BDEV_IO_TYPE_COPY", "bdev_8h.html#a633029e24ab5ae4a689bffa2565a519fae3e0fb4f93d6a7b5539f856a96f19c39", null ],
+      [ "SPDK_BDEV_IO_TYPE_NVME_IOV_MD", "bdev_8h.html#a633029e24ab5ae4a689bffa2565a519fabd34ae35fca365445629997b2085f652", null ],
       [ "SPDK_BDEV_NUM_IO_TYPES", "bdev_8h.html#a633029e24ab5ae4a689bffa2565a519fab8b20053cecdcd7973f1c2d0dce2b457", null ]
     ] ],
     [ "spdk_bdev_qos_rate_limit_type", "bdev_8h.html#aedfbfc44fa2113d7ee219d09a0994d93", [
@@ -138,6 +139,7 @@ var bdev_8h =
     [ "spdk_bdev_nvme_admin_passthru", "group__bdev__io__submit__functions.html#gae2249ef71e7125338b6cebf935a881ab", null ],
     [ "spdk_bdev_nvme_io_passthru", "group__bdev__io__submit__functions.html#gab172cf6afc9ef154bd823b91b09dee87", null ],
     [ "spdk_bdev_nvme_io_passthru_md", "group__bdev__io__submit__functions.html#gac6b5933e4c0b2ad68bad591655b4f9e6", null ],
+    [ "spdk_bdev_nvme_iov_passthru_md", "group__bdev__io__submit__functions.html#ga42545d4c7c98398a8750a30b26167a3d", null ],
     [ "spdk_bdev_open_async", "bdev_8h.html#af29e58cf7325dbc4f4ca8e0abb2d9506", null ],
     [ "spdk_bdev_open_ext", "bdev_8h.html#aca93f44b46f0b877df9b6936ef9e0a9e", null ],
     [ "spdk_bdev_queue_io_wait", "bdev_8h.html#acc4beee18ded7837fa92bd7c34e7ef2e", null ],

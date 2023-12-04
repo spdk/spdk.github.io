@@ -9017,21 +9017,58 @@ ublk_start_disk</h2>
 <div class="line">  &quot;id&quot;: 1,</div>
 <div class="line">  &quot;result&quot;: 1</div>
 <div class="line">}</div>
-</div><!-- fragment --><h2><a class="anchor" id="rpc_ublk_stop_disk"></a>
-ublk_stop_disk</h2>
-<p>Delete a UBLK device</p>
+</div><!-- fragment --><h2><a class="anchor" id="rpc_ublk_recover_disk"></a>
+ublk_recover_disk</h2>
+<p>Recover original UBLK device with ID and block device</p>
 <h3>Parameters</h3>
 <table class="markdownTable">
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">ublk_id   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">int   </td><td class="markdownTableBodyNone">Device id to delete   </td></tr>
+<td class="markdownTableBodyNone">bdev_name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Bdev name to export    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">ublk_id   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">int   </td><td class="markdownTableBodyNone">Device id   </td></tr>
 </table>
 <h3>Response</h3>
-<p>True if UBLK device is deleted successfully; False if failed.</p>
+<p>UBLK device ID</p>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
+<div class="line"> &quot;params&quot;: {</div>
+<div class="line">    &quot;ublk_id&quot;: &quot;1&quot;,</div>
+<div class="line">    &quot;bdev_name&quot;: &quot;Malloc1&quot;</div>
+<div class="line">  },</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
+<div class="line">  &quot;method&quot;: &quot;ublk_recover_disk&quot;,</div>
+<div class="line">  &quot;id&quot;: 1</div>
+<div class="line">}</div>
+</div><!-- fragment --><p>Example response:</p>
+<div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
+<div class="line">  &quot;id&quot;: 1,</div>
+<div class="line">  &quot;result&quot;: 1</div>
+<div class="line">}</div>
+<div class="line"> </div>
+<div class="line">### ublk_stop_disk {#rpc_ublk_stop_disk}</div>
+<div class="line"> </div>
+<div class="line">Delete a UBLK device</div>
+<div class="line"> </div>
+<div class="line">#### Parameters</div>
+<div class="line"> </div>
+<div class="line">Name                    | Optional | Type        | Description</div>
+<div class="line">----------------------- | -------- | ----------- | -----------</div>
+<div class="line">ublk_id                 | Required | int         | Device id to delete</div>
+<div class="line"> </div>
+<div class="line">#### Response</div>
+<div class="line"> </div>
+<div class="line">True if UBLK device is deleted successfully; False if failed.</div>
+<div class="line"> </div>
+<div class="line">#### Example</div>
+<div class="line"> </div>
+<div class="line">Example request:</div>
+<div class="line"> </div>
+<div class="line">~~~json</div>
+<div class="line">{</div>
 <div class="line"> &quot;params&quot;: {</div>
 <div class="line">    &quot;ublk_id&quot;: &quot;1&quot;,</div>
 <div class="line">  },</div>

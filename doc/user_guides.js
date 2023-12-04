@@ -401,7 +401,7 @@ var user_guides =
         [ "ublk_create_target", "jsonrpc.html#rpc_ublk_create_target", null ],
         [ "ublk_destroy_target", "jsonrpc.html#rpc_ublk_destroy_target", null ],
         [ "ublk_start_disk", "jsonrpc.html#rpc_ublk_start_disk", null ],
-        [ "ublk_stop_disk", "jsonrpc.html#rpc_ublk_stop_disk", null ],
+        [ "ublk_recover_disk", "jsonrpc.html#rpc_ublk_recover_disk", null ],
         [ "ublk_get_disks", "jsonrpc.html#rpc_ublk_get_disks", null ]
       ] ],
       [ "Linux Network Block Device (NBD)", "jsonrpc.html#jsonrpc_components_nbd", [

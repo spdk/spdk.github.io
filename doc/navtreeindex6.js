@@ -1,5 +1,8 @@
 var NAVTREEINDEX6 =
 {
+"iscsi__spec_8h.html#a681ced3781459c23be348ac9c1b9c678":[15,0,33,23],
+"iscsi__spec_8h.html#a6ae501611baca9225cc96bf6cf087450":[15,0,33,94],
+"iscsi__spec_8h.html#a6ae501611baca9225cc96bf6cf087450a3546acfc24f211b3b8cd2a90444a8f40":[15,0,33,94,5],
 "iscsi__spec_8h.html#a6ae501611baca9225cc96bf6cf087450a64a4553f7faad7d50488d38beb3ac726":[15,0,33,94,7],
 "iscsi__spec_8h.html#a6ae501611baca9225cc96bf6cf087450a65ca8ffe7f4c93b39503ec01d9fc5b5d":[15,0,33,94,3],
 "iscsi__spec_8h.html#a6ae501611baca9225cc96bf6cf087450a72ad77a739bc2ecbde32ec9f2ca4cc99":[15,0,33,94,0],
@@ -246,8 +249,5 @@ var NAVTREEINDEX6 =
 "jsonrpc.html#rpc_bdev_lvol_decouple_parent":[3,9,9,14],
 "jsonrpc.html#rpc_bdev_lvol_delete":[3,9,9,12],
 "jsonrpc.html#rpc_bdev_lvol_delete_lvstore":[3,9,9,1],
-"jsonrpc.html#rpc_bdev_lvol_get_lvols":[3,9,9,15],
-"jsonrpc.html#rpc_bdev_lvol_get_lvstores":[3,9,9,2],
-"jsonrpc.html#rpc_bdev_lvol_grow_lvstore":[3,9,9,4],
-"jsonrpc.html#rpc_bdev_lvol_inflate":[3,9,9,13]
+"jsonrpc.html#rpc_bdev_lvol_get_lvols":[3,9,9,15]
 };

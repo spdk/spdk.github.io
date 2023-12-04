@@ -1,5 +1,9 @@
 var NAVTREEINDEX33 =
 {
+"unionspdk__nvme__cmbmsc__register.html#a0d4b702117909083913930c6a97061b0":[14,0,153,1],
+"unionspdk__nvme__cmbmsc__register.html#a20979a149aa874591735832c1c8bc7ee":[14,0,153,3],
+"unionspdk__nvme__cmbmsc__register.html#a24bd223d88e079a215a07ea9025154cc":[14,0,153,5],
+"unionspdk__nvme__cmbmsc__register.html#a35d113e3fbcfff431074dea3765cbe7e":[14,0,153,2],
 "unionspdk__nvme__cmbmsc__register.html#a4b057d9bcef1afbfe13da30bee5fb032":[14,0,153,4],
 "unionspdk__nvme__cmbmsc__register.html#aa1644e651414eebd6c8ba57eafa3b8a8":[14,0,153,0],
 "unionspdk__nvme__cmbsts__register.html":[14,0,154],
@@ -245,9 +249,5 @@ var NAVTREEINDEX33 =
 "unionspdk__nvme__feat__power__management.html#a1f0bff95d45e80effbf5fe6bfd385795":[14,0,199,0],
 "unionspdk__nvme__feat__power__management.html#a77632a40e3f55b8de36ca61c7d0a8b74":[14,0,199,4],
 "unionspdk__nvme__feat__power__management.html#ad425c8a49e910e0413a6a45a67044fbe":[14,0,199,3],
-"unionspdk__nvme__feat__power__management.html#af68e833134cda1b00b750992bdd91342":[14,0,199,1],
-"unionspdk__nvme__feat__reservation__notification__mask.html":[14,0,200],
-"unionspdk__nvme__feat__reservation__notification__mask.html#a00fe19c4570ec5917ae172b47d3fd7df":[14,0,200,2],
-"unionspdk__nvme__feat__reservation__notification__mask.html#a0283e6c0aafff186754b2159483971b7":[14,0,200,6],
-"unionspdk__nvme__feat__reservation__notification__mask.html#a2271fda2490f0f17e9e87cf8b50aab1c":[14,0,200,5]
+"unionspdk__nvme__feat__power__management.html#af68e833134cda1b00b750992bdd91342":[14,0,199,1]
 };
