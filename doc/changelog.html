@@ -96,6 +96,8 @@ v24.01: (Upcoming Release)</h1>
 <p>Added <code>caw_iov</code> field to struct <code><a class="el" href="structspdk__scsi__task.html">spdk_scsi_task</a></code> to support SBC-3 compare_and_write IO.</p>
 <p>Added parameter <code>delay</code> to <code>vhost_create_scsi_controller</code> RPC which allows user to defer starting the vhost-scsi controller until adding the scsi target is completed.</p>
 <p>Added <code>vhost_start_scsi_controller</code> RPC to start vhost-scsi controller, it could be used to support live recovery feature of vhost-scsi target.</p>
+<h2>scsi</h2>
+<p>Added support for <code>SBC WRITE SAME 10</code> and <code>SBC WRITE SAME 16</code>.</p>
 <h1>v23.09</h1>
 <h2>accel</h2>
 <p>Added <code><a class="el" href="accel_8h.html#aaebd6fe37b7af8036e42184adc407ce4" title="Get minimum buffer alignment to execute a given operation.">spdk_accel_get_buf_align()</a></code> API to get minimum buffer alignment to execute a given operation.</p>
