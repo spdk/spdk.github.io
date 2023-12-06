@@ -1,5 +1,13 @@
 var NAVTREEINDEX34 =
 {
+"unionspdk__nvme__feat__number__of__queues.html#a54b266ba020ccd0e8bd06d5443c91c9d":[14,0,198,0],
+"unionspdk__nvme__feat__number__of__queues.html#a80c8bbe6b6b28766af70bb9333fb303e":[14,0,198,3],
+"unionspdk__nvme__feat__power__management.html":[14,0,199],
+"unionspdk__nvme__feat__power__management.html#a0614478c08480813d285d5819998e3ee":[14,0,199,2],
+"unionspdk__nvme__feat__power__management.html#a1f0bff95d45e80effbf5fe6bfd385795":[14,0,199,0],
+"unionspdk__nvme__feat__power__management.html#a77632a40e3f55b8de36ca61c7d0a8b74":[14,0,199,4],
+"unionspdk__nvme__feat__power__management.html#ad425c8a49e910e0413a6a45a67044fbe":[14,0,199,3],
+"unionspdk__nvme__feat__power__management.html#af68e833134cda1b00b750992bdd91342":[14,0,199,1],
 "unionspdk__nvme__feat__reservation__notification__mask.html":[14,0,200],
 "unionspdk__nvme__feat__reservation__notification__mask.html#a00fe19c4570ec5917ae172b47d3fd7df":[14,0,200,2],
 "unionspdk__nvme__feat__reservation__notification__mask.html#a0283e6c0aafff186754b2159483971b7":[14,0,200,6],
@@ -116,10 +124,10 @@ var NAVTREEINDEX34 =
 "unionspdk__nvmf__rdma__private__data.html#a12eb26a169c9c79b890f3c9ae77fa5da":[14,0,328,2],
 "unionspdk__nvmf__rdma__private__data.html#a45b093b37ee0fa095571310d812c00b0":[14,0,328,0],
 "unionspdk__nvmf__rdma__private__data.html#aedcc391f20afe529847ddcab58d40970":[14,0,328,1],
-"unionspdk__nvmf__transport__specific__address__subtype.html":[14,0,340],
-"unionspdk__nvmf__transport__specific__address__subtype.html#a8098cbc03f727ae8ae707dfbf69d3469":[14,0,340,0],
-"unionspdk__nvmf__transport__specific__address__subtype.html#aabae1c961d6f86f0d6b1e61cdaa7a9ce":[14,0,340,1],
-"unionspdk__nvmf__transport__specific__address__subtype.html#aabbc28a7fc2edeca1244ff249a51edb7":[14,0,340,2],
+"unionspdk__nvmf__transport__specific__address__subtype.html":[14,0,341],
+"unionspdk__nvmf__transport__specific__address__subtype.html#a8098cbc03f727ae8ae707dfbf69d3469":[14,0,341,0],
+"unionspdk__nvmf__transport__specific__address__subtype.html#aabae1c961d6f86f0d6b1e61cdaa7a9ce":[14,0,341,1],
+"unionspdk__nvmf__transport__specific__address__subtype.html#aabbc28a7fc2edeca1244ff249a51edb7":[14,0,341,2],
 "usdt.html":[3,11],
 "user_guides.html":[3],
 "userspace.html":[2,0],
@@ -241,13 +249,5 @@ var NAVTREEINDEX34 =
 "vhost_8h.html#afd7159f8eb1e0d65dad5bedaa6cc5e43":[15,0,64,24],
 "vhost_8h.html#afe5b0a12a12a26d2ddfe6a64f2a8a5e2":[15,0,64,15],
 "vhost_processing.html":[2,5],
-"vhost_processing.html#vhost_processing_init":[2,5,3],
-"vhost_processing.html#vhost_processing_intro":[2,5,1],
-"vhost_processing.html#vhost_processing_io_path":[2,5,4],
-"vhost_processing.html#vhost_processing_qemu":[2,5,2],
-"vhost_processing.html#vhost_processing_toc":[2,5,0],
-"vhost_processing.html#vhost_spdk_optimizations":[2,5,4,0],
-"virtio.html":[7,3],
-"virtio.html#virtio_2mb":[7,3,1],
-"virtio.html#virtio_intro":[7,3,0]
+"vhost_processing.html#vhost_processing_init":[2,5,3]
 };

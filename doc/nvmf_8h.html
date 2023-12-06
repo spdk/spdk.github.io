@@ -109,6 +109,8 @@ Data Structures</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvmf__poll__group__stat.html">spdk_nvmf_poll_group_stat</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvmf__referral__opts.html">spdk_nvmf_referral_opts</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvmf__listener__opts.html">spdk_nvmf_listener_opts</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvmf__ns__opts.html">spdk_nvmf_ns_opts</a></td></tr>
@@ -175,18 +177,18 @@ Functions</h2></td></tr>
 <tr class="memitem:ac2d393ea960adf8490e742258feafaf1"><td class="memItemLeft" align="right" valign="top"><a id="ac2d393ea960adf8490e742258feafaf1"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_STATIC_ASSERT</b> (sizeof(struct <a class="el" href="structspdk__nvmf__transport__opts.html">spdk_nvmf_transport_opts</a>)==64, &quot;Incorrect size&quot;)</td></tr>
 <tr class="separator:ac2d393ea960adf8490e742258feafaf1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a919b26ada32bf50f1894ac0e00893b74"><td class="memItemLeft" align="right" valign="top"><a id="a919b26ada32bf50f1894ac0e00893b74"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_STATIC_ASSERT</b> (sizeof(struct <a class="el" href="structspdk__nvmf__listen__opts.html">spdk_nvmf_listen_opts</a>)==17, &quot;Incorrect size&quot;)</td></tr>
-<tr class="separator:a919b26ada32bf50f1894ac0e00893b74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48e42d2d999b21974e10b38a737732f7"><td class="memItemLeft" align="right" valign="top"><a id="a48e42d2d999b21974e10b38a737732f7"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_STATIC_ASSERT</b> (sizeof(struct <a class="el" href="structspdk__nvmf__listen__opts.html">spdk_nvmf_listen_opts</a>)==24, &quot;Incorrect size&quot;)</td></tr>
+<tr class="separator:a48e42d2d999b21974e10b38a737732f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1b2405fb75a31157942621df179c7426"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#a1b2405fb75a31157942621df179c7426">spdk_nvmf_listen_opts_init</a> (struct <a class="el" href="structspdk__nvmf__listen__opts.html">spdk_nvmf_listen_opts</a> *opts, size_t opts_size)</td></tr>
 <tr class="memdesc:a1b2405fb75a31157942621df179c7426"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize listen options.  <a href="nvmf_8h.html#a1b2405fb75a31157942621df179c7426">More...</a><br /></td></tr>
 <tr class="separator:a1b2405fb75a31157942621df179c7426"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0adc0fb7fbddeca90694efbfcd6be188"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#a0adc0fb7fbddeca90694efbfcd6be188">spdk_nvmf_tgt_add_referral</a> (struct spdk_nvmf_tgt *tgt, struct <a class="el" href="structspdk__nvme__transport__id.html">spdk_nvme_transport_id</a> *trid, bool secure_channel)</td></tr>
-<tr class="memdesc:a0adc0fb7fbddeca90694efbfcd6be188"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a discovery service referral to an NVMe-oF target.  <a href="nvmf_8h.html#a0adc0fb7fbddeca90694efbfcd6be188">More...</a><br /></td></tr>
-<tr class="separator:a0adc0fb7fbddeca90694efbfcd6be188"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af931b999947f5fbc849177b57925606b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#af931b999947f5fbc849177b57925606b">spdk_nvmf_tgt_remove_referral</a> (struct spdk_nvmf_tgt *tgt, struct <a class="el" href="structspdk__nvme__transport__id.html">spdk_nvme_transport_id</a> *trid)</td></tr>
-<tr class="memdesc:af931b999947f5fbc849177b57925606b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove a discovery service referral from an NVMeoF target.  <a href="nvmf_8h.html#af931b999947f5fbc849177b57925606b">More...</a><br /></td></tr>
-<tr class="separator:af931b999947f5fbc849177b57925606b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9a1143157acef6330d8c8c71362793c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#aa9a1143157acef6330d8c8c71362793c">spdk_nvmf_tgt_add_referral</a> (struct spdk_nvmf_tgt *tgt, const struct <a class="el" href="structspdk__nvmf__referral__opts.html">spdk_nvmf_referral_opts</a> *opts)</td></tr>
+<tr class="memdesc:aa9a1143157acef6330d8c8c71362793c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a discovery service referral to an NVMe-oF target.  <a href="nvmf_8h.html#aa9a1143157acef6330d8c8c71362793c">More...</a><br /></td></tr>
+<tr class="separator:aa9a1143157acef6330d8c8c71362793c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28824d5f18a5ddf04007906f012199be"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#a28824d5f18a5ddf04007906f012199be">spdk_nvmf_tgt_remove_referral</a> (struct spdk_nvmf_tgt *tgt, const struct <a class="el" href="structspdk__nvmf__referral__opts.html">spdk_nvmf_referral_opts</a> *opts)</td></tr>
+<tr class="memdesc:a28824d5f18a5ddf04007906f012199be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove a discovery service referral from an NVMeoF target.  <a href="nvmf_8h.html#a28824d5f18a5ddf04007906f012199be">More...</a><br /></td></tr>
+<tr class="separator:a28824d5f18a5ddf04007906f012199be"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a16bd65e94dea554b50bd7169850c567d"><td class="memItemLeft" align="right" valign="top">struct spdk_nvmf_tgt *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#a16bd65e94dea554b50bd7169850c567d">spdk_nvmf_tgt_create</a> (struct <a class="el" href="structspdk__nvmf__target__opts.html">spdk_nvmf_target_opts</a> *opts)</td></tr>
 <tr class="memdesc:a16bd65e94dea554b50bd7169850c567d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct an NVMe-oF target.  <a href="nvmf_8h.html#a16bd65e94dea554b50bd7169850c567d">More...</a><br /></td></tr>
 <tr class="separator:a16bd65e94dea554b50bd7169850c567d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -295,9 +297,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a96ece790c05df3a1f410ef617b2e5cb4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#a96ece790c05df3a1f410ef617b2e5cb4">spdk_nvmf_subsystem_add_listener</a> (struct spdk_nvmf_subsystem *subsystem, struct <a class="el" href="structspdk__nvme__transport__id.html">spdk_nvme_transport_id</a> *trid, <a class="el" href="nvmf_8h.html#aad52ac090dcb26b03da0e689ea71df89">spdk_nvmf_tgt_subsystem_listen_done_fn</a> cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:a96ece790c05df3a1f410ef617b2e5cb4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Accept new connections on the address provided.  <a href="nvmf_8h.html#a96ece790c05df3a1f410ef617b2e5cb4">More...</a><br /></td></tr>
 <tr class="separator:a96ece790c05df3a1f410ef617b2e5cb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5914a76ce777def9acab5a7b6efd9a51"><td class="memItemLeft" align="right" valign="top"><a id="a5914a76ce777def9acab5a7b6efd9a51"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_STATIC_ASSERT</b> (sizeof(struct <a class="el" href="structspdk__nvmf__listener__opts.html">spdk_nvmf_listener_opts</a>)==9, &quot;Incorrect size&quot;)</td></tr>
-<tr class="separator:a5914a76ce777def9acab5a7b6efd9a51"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a419cc949620cb8afe5336d449fe1a54d"><td class="memItemLeft" align="right" valign="top"><a id="a419cc949620cb8afe5336d449fe1a54d"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_STATIC_ASSERT</b> (sizeof(struct <a class="el" href="structspdk__nvmf__listener__opts.html">spdk_nvmf_listener_opts</a>)==16, &quot;Incorrect size&quot;)</td></tr>
+<tr class="separator:a419cc949620cb8afe5336d449fe1a54d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a59957bc6819accf6a7df37f6352b9a61"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#a59957bc6819accf6a7df37f6352b9a61">spdk_nvmf_subsystem_listener_opts_init</a> (struct <a class="el" href="structspdk__nvmf__listener__opts.html">spdk_nvmf_listener_opts</a> *opts, size_t size)</td></tr>
 <tr class="memdesc:a59957bc6819accf6a7df37f6352b9a61"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize options structure for listener creation.  <a href="nvmf_8h.html#a59957bc6819accf6a7df37f6352b9a61">More...</a><br /></td></tr>
 <tr class="separator:a59957bc6819accf6a7df37f6352b9a61"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -2958,8 +2960,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a0adc0fb7fbddeca90694efbfcd6be188"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0adc0fb7fbddeca90694efbfcd6be188">&#9670;&nbsp;</a></span>spdk_nvmf_tgt_add_referral()</h2>
+<a id="aa9a1143157acef6330d8c8c71362793c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa9a1143157acef6330d8c8c71362793c">&#9670;&nbsp;</a></span>spdk_nvmf_tgt_add_referral()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2973,14 +2975,8 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">struct <a class="el" href="structspdk__nvme__transport__id.html">spdk_nvme_transport_id</a> *&#160;</td>
-          <td class="paramname"><em>trid</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>secure_channel</em>&#160;</td>
+          <td class="paramtype">const struct <a class="el" href="structspdk__nvmf__referral__opts.html">spdk_nvmf_referral_opts</a> *&#160;</td>
+          <td class="paramname"><em>opts</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -2994,8 +2990,7 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">tgt</td><td>The target to which the referral will be added </td></tr>
-    <tr><td class="paramname">trid</td><td>Transport ID of the referral </td></tr>
-    <tr><td class="paramname">secure_channel</td><td>The referral describes a discovery service which requires a secure channel</td></tr>
+    <tr><td class="paramname">opts</td><td>Options describing the referral referral.</td></tr>
   </table>
   </dd>
 </dl>
@@ -3319,8 +3314,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="af931b999947f5fbc849177b57925606b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af931b999947f5fbc849177b57925606b">&#9670;&nbsp;</a></span>spdk_nvmf_tgt_remove_referral()</h2>
+<a id="a28824d5f18a5ddf04007906f012199be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a28824d5f18a5ddf04007906f012199be">&#9670;&nbsp;</a></span>spdk_nvmf_tgt_remove_referral()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3334,8 +3329,8 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">struct <a class="el" href="structspdk__nvme__transport__id.html">spdk_nvme_transport_id</a> *&#160;</td>
-          <td class="paramname"><em>trid</em>&#160;</td>
+          <td class="paramtype">const struct <a class="el" href="structspdk__nvmf__referral__opts.html">spdk_nvmf_referral_opts</a> *&#160;</td>
+          <td class="paramname"><em>opts</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -3349,7 +3344,7 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">tgt</td><td>The target from which the referral will be removed </td></tr>
-    <tr><td class="paramname">trid</td><td>Transport ID of the referral to remove</td></tr>
+    <tr><td class="paramname">opts</td><td>Options describing the referral referral.</td></tr>
   </table>
   </dd>
 </dl>
