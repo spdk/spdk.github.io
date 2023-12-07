@@ -445,6 +445,7 @@ rpc_get_methods</h2>
 <div class="line">    &quot;bdev_ftl_unmap&quot;,</div>
 <div class="line">    &quot;bdev_ftl_get_stats&quot;,</div>
 <div class="line">    &quot;bdev_ftl_get_properties&quot;,</div>
+<div class="line">    &quot;bdev_ftl_set_property&quot;,</div>
 <div class="line">    &quot;bdev_lvol_get_lvstores&quot;,</div>
 <div class="line">    &quot;bdev_lvol_delete&quot;,</div>
 <div class="line">    &quot;bdev_lvol_resize&quot;,</div>
@@ -4848,11 +4849,55 @@ bdev_ftl_get_properties</h2>
 <div class="line">  &quot;id&quot;: 1,</div>
 <div class="line">  &quot;result&quot;: {</div>
 <div class="line">    &quot;name&quot;: &quot;ftl0&quot;,</div>
-<div class="line">    &quot;properties&quot;: {</div>
-<div class="line">      &quot;flush_cache&quot;: &quot;true&quot;,</div>
-<div class="line">      &quot;fast_shutdown&quot;: &quot;true&quot;</div>
-<div class="line">    }</div>
+<div class="line">    &quot;properties&quot;: [</div>
+<div class="line">      {</div>
+<div class="line">        &quot;name&quot;: &quot;property1&quot;,</div>
+<div class="line">        &quot;value&quot;: &quot;Property Value 1&quot;,</div>
+<div class="line">        &quot;unit&quot;: &quot;MiB/s&quot;,</div>
+<div class="line">        &quot;desc&quot;: &quot;This is an example of read-only property&quot;,</div>
+<div class="line">        &quot;read-only&quot;: true</div>
+<div class="line">      },</div>
+<div class="line">      {</div>
+<div class="line">        &quot;name&quot;: &quot;property2&quot;,</div>
+<div class="line">        &quot;value&quot;: 17,</div>
+<div class="line">        &quot;unit&quot;: &quot;s&quot;,</div>
+<div class="line">        &quot;desc&quot;: &quot;This is an example of FTL modifiable property&quot;,</div>
+<div class="line">        &quot;read-only&quot;: false</div>
+<div class="line">      }</div>
+<div class="line">    ]</div>
 <div class="line">  }</div>
+<div class="line">}</div>
+</div><!-- fragment --><h2><a class="anchor" id="rpc_bdev_ftl_set_property"></a>
+bdev_ftl_set_property</h2>
+<p>Set FTL property. Trying to set a read-only property will result in an error.</p>
+<h3>Parameters</h3>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Bdev name    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">property   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Name of the property to modify    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">value   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">New value of the property to be set   </td></tr>
+</table>
+<h3>Example</h3>
+<p>Example request:</p>
+<div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;params&quot;: {</div>
+<div class="line">    &quot;name&quot;: &quot;ftl0&quot;</div>
+<div class="line">    &quot;property&quot;: &quot;nv_cache.flush&quot;</div>
+<div class="line">    &quot;value&quot;: &quot;true&quot;</div>
+<div class="line">  },</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
+<div class="line">  &quot;method&quot;: &quot;bdev_ftl_set_property&quot;,</div>
+<div class="line">  &quot;id&quot;: 1</div>
+<div class="line">}</div>
+</div><!-- fragment --><p>Example response:</p>
+<div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
+<div class="line">  &quot;id&quot;: 1,</div>
+<div class="line">  &quot;result&quot;: true</div>
 <div class="line">}</div>
 </div><!-- fragment --><h2><a class="anchor" id="rpc_bdev_passthru_create"></a>
 bdev_passthru_create</h2>

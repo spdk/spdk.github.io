@@ -1,5 +1,6 @@
 var NAVTREEINDEX7 =
 {
+"jsonrpc.html#rpc_bdev_lvol_get_lvols":[3,9,9,15],
 "jsonrpc.html#rpc_bdev_lvol_get_lvstores":[3,9,9,2],
 "jsonrpc.html#rpc_bdev_lvol_grow_lvstore":[3,9,9,4],
 "jsonrpc.html#rpc_bdev_lvol_inflate":[3,9,9,13],
@@ -55,8 +56,8 @@ var NAVTREEINDEX7 =
 "jsonrpc.html#rpc_bdev_opal_get_info":[3,9,9,27],
 "jsonrpc.html#rpc_bdev_opal_new_user":[3,9,9,29],
 "jsonrpc.html#rpc_bdev_opal_set_lock_state":[3,9,9,30],
-"jsonrpc.html#rpc_bdev_passthru_create":[3,9,5,76],
-"jsonrpc.html#rpc_bdev_passthru_delete":[3,9,5,77],
+"jsonrpc.html#rpc_bdev_passthru_create":[3,9,5,77],
+"jsonrpc.html#rpc_bdev_passthru_delete":[3,9,5,78],
 "jsonrpc.html#rpc_bdev_raid_create":[3,9,9,17],
 "jsonrpc.html#rpc_bdev_raid_delete":[3,9,9,18],
 "jsonrpc.html#rpc_bdev_raid_get_bdevs":[3,9,9,16],
@@ -75,13 +76,13 @@ var NAVTREEINDEX7 =
 "jsonrpc.html#rpc_bdev_split_delete":[3,9,9,21],
 "jsonrpc.html#rpc_bdev_uring_create":[3,9,9,22],
 "jsonrpc.html#rpc_bdev_uring_delete":[3,9,9,23],
-"jsonrpc.html#rpc_bdev_virtio_attach_controller":[3,9,5,80],
-"jsonrpc.html#rpc_bdev_virtio_blk_set_hotplug":[3,9,5,83],
-"jsonrpc.html#rpc_bdev_virtio_detach_controller":[3,9,5,82],
-"jsonrpc.html#rpc_bdev_virtio_scsi_get_devices":[3,9,5,81],
+"jsonrpc.html#rpc_bdev_virtio_attach_controller":[3,9,5,81],
+"jsonrpc.html#rpc_bdev_virtio_blk_set_hotplug":[3,9,5,84],
+"jsonrpc.html#rpc_bdev_virtio_detach_controller":[3,9,5,83],
+"jsonrpc.html#rpc_bdev_virtio_scsi_get_devices":[3,9,5,82],
 "jsonrpc.html#rpc_bdev_wait_for_examine":[3,9,5,3],
-"jsonrpc.html#rpc_bdev_xnvme_create":[3,9,5,78],
-"jsonrpc.html#rpc_bdev_xnvme_delete":[3,9,5,79],
+"jsonrpc.html#rpc_bdev_xnvme_create":[3,9,5,79],
+"jsonrpc.html#rpc_bdev_xnvme_delete":[3,9,5,80],
 "jsonrpc.html#rpc_bdev_zone_block_create":[3,9,5,49],
 "jsonrpc.html#rpc_bdev_zone_block_delete":[3,9,5,50],
 "jsonrpc.html#rpc_blobfs_create":[3,9,12,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX7 =
 "jsonrpc_8h.html#ab91b6125cbea0661bdfa87400b6c3020":[15,0,35,29],
 "jsonrpc_8h.html#abc26b54313be26e70aadad6e11b1d548":[15,0,35,5],
 "jsonrpc_8h.html#ac5daba7e52db2743cc95dba00534ecd1":[15,0,35,6],
-"jsonrpc_8h.html#acdbb193a4b8ca1c57c2b43223165dfa6":[15,0,35,16],
-"jsonrpc_8h.html#ad5f5cca3e578e6eb3c0069e9662a1b79":[15,0,35,12]
+"jsonrpc_8h.html#acdbb193a4b8ca1c57c2b43223165dfa6":[15,0,35,16]
 };

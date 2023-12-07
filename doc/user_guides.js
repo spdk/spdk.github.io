@@ -265,6 +265,7 @@ var user_guides =
         [ "bdev_ftl_unmap", "jsonrpc.html#rpc_bdev_ftl_unmap", null ],
         [ "bdev_ftl_get_stats", "jsonrpc.html#rpc_bdev_ftl_get_stats", null ],
         [ "bdev_ftl_get_properties", "jsonrpc.html#rpc_bdev_ftl_get_properties", null ],
+        [ "bdev_ftl_set_property", "jsonrpc.html#rpc_bdev_ftl_set_property", null ],
         [ "bdev_passthru_create", "jsonrpc.html#rpc_bdev_passthru_create", null ],
         [ "bdev_passthru_delete", "jsonrpc.html#rpc_bdev_passthru_delete", null ],
         [ "bdev_xnvme_create", "jsonrpc.html#rpc_bdev_xnvme_create", null ],

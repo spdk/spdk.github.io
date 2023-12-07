@@ -1,5 +1,8 @@
 var NAVTREEINDEX35 =
 {
+"vhost_8h.html#afe5b0a12a12a26d2ddfe6a64f2a8a5e2":[15,0,64,15],
+"vhost_processing.html":[2,5],
+"vhost_processing.html#vhost_processing_init":[2,5,3],
 "vhost_processing.html#vhost_processing_intro":[2,5,1],
 "vhost_processing.html#vhost_processing_io_path":[2,5,4],
 "vhost_processing.html#vhost_processing_qemu":[2,5,2],
