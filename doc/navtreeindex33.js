@@ -1,5 +1,6 @@
 var NAVTREEINDEX33 =
 {
+"unionspdk__nvme__cc__register.html#aa209d6cab6dc0a1f9e9b37f4f0a2d8b9":[14,0,144,5],
 "unionspdk__nvme__cc__register.html#ac2481b3896677b48183c0dd344760ddb":[14,0,144,9],
 "unionspdk__nvme__cc__register.html#ac9cb6b151646f458c9938c933fdf4908":[14,0,144,1],
 "unionspdk__nvme__cc__register.html#adafe2d01d8a07098b6cb21fc9835dba6":[14,0,144,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX33 =
 "unionspdk__nvme__feat__non__operational__power__state__config.html":[14,0,197],
 "unionspdk__nvme__feat__non__operational__power__state__config.html#a1b89eeb1f322ef357d18aaad35517170":[14,0,197,3],
 "unionspdk__nvme__feat__non__operational__power__state__config.html#a29ca4fdf53d5699ee3008af19e639042":[14,0,197,2],
-"unionspdk__nvme__feat__non__operational__power__state__config.html#a4a9a569af23af555de5a3ec4996e9f81":[14,0,197,0],
-"unionspdk__nvme__feat__non__operational__power__state__config.html#a8f512d6ffa8611e38141e169898efb4b":[14,0,197,1]
+"unionspdk__nvme__feat__non__operational__power__state__config.html#a4a9a569af23af555de5a3ec4996e9f81":[14,0,197,0]
 };

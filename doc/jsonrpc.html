@@ -3104,7 +3104,9 @@ bdev_nvme_set_options</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">io_path_stat   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Enable collecting I/O stat of each nvme bdev io path. Default: <code>false</code>.    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">allow_accel_sequence   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Allow NVMe bdevs to advertise support for accel sequences if the controller also supports them. Default: <code>false</code>.   </td></tr>
+<td class="markdownTableBodyNone">allow_accel_sequence   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Allow NVMe bdevs to advertise support for accel sequences if the controller also supports them. Default: <code>false</code>.    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">rdma_max_cq_size   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">Set the maximum size of a rdma completion queue. Default: 0 (unlimited)   </td></tr>
 </table>
 <h3>Example</h3>
 <p>Example request:</p>
