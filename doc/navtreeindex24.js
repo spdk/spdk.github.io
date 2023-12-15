@@ -1,5 +1,7 @@
 var NAVTREEINDEX24 =
 {
+"structspdk__nvme__firmware__page.html#acc627dc50a9f88fa3c4697ff8ac99c81":[14,0,206,2],
+"structspdk__nvme__format.html":[14,0,207],
 "structspdk__nvme__format.html#a4822028eeb6476064e9026826faf3029":[14,0,207,3],
 "structspdk__nvme__format.html#a92cccd5cec843fb0912d11eccb5a444b":[14,0,207,6],
 "structspdk__nvme__format.html#a965ff853d03c36d0565fbfdee7a4cdd7":[14,0,207,4],
@@ -247,7 +249,5 @@ var NAVTREEINDEX24 =
 "structspdk__nvme__power__state.html#a08563dffd28f709727c252a0b125f132":[14,0,240,9],
 "structspdk__nvme__power__state.html#a0fda31def17bcc644e29c75eed41e095":[14,0,240,0],
 "structspdk__nvme__power__state.html#a182bcd1e5e35fef4ac952ca5b3ed655f":[14,0,240,15],
-"structspdk__nvme__power__state.html#a2df4913c8372a99adb7b700ba788aa5b":[14,0,240,6],
-"structspdk__nvme__power__state.html#a30424821aa55344985c48f3e70d948fc":[14,0,240,20],
-"structspdk__nvme__power__state.html#a319d7e8756645debe02b0cc3ec953a18":[14,0,240,2]
+"structspdk__nvme__power__state.html#a2df4913c8372a99adb7b700ba788aa5b":[14,0,240,6]
 };

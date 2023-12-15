@@ -166,10 +166,12 @@ var NAVTREEINDEX18 =
 "structspdk__accel__crypto__key__create__param.html#acea5f6a7daf1f0484e1ce2d77bf8dc81":[14,0,51,0],
 "structspdk__accel__driver.html":[14,0,52],
 "structspdk__accel__driver.html#a28a4ffcf8a04cc9629936f342d15e6bd":[14,0,52,1],
-"structspdk__accel__driver.html#a4b6a86ed7bd102bcfdd5275ebe056f5a":[14,0,52,3],
-"structspdk__accel__driver.html#a6bb6f2903745ca4cd6a16f8f17463f80":[14,0,52,4],
+"structspdk__accel__driver.html#a3e56a6fd4644f2002ce03500e3f2138d":[14,0,52,2],
+"structspdk__accel__driver.html#a4a84401e09a5d16cd6a36c411b613091":[14,0,52,5],
+"structspdk__accel__driver.html#a4b6a86ed7bd102bcfdd5275ebe056f5a":[14,0,52,4],
+"structspdk__accel__driver.html#a6bb6f2903745ca4cd6a16f8f17463f80":[14,0,52,6],
 "structspdk__accel__driver.html#a9d9536018f2aef815c17ae44bd51a4c5":[14,0,52,0],
-"structspdk__accel__driver.html#ab2cc90720578b4cebe6baa9af1987979":[14,0,52,2],
+"structspdk__accel__driver.html#ab2cc90720578b4cebe6baa9af1987979":[14,0,52,3],
 "structspdk__accel__module__if.html":[14,0,53],
 "structspdk__accel__module__if.html#a05ac29ef44c9ad2dd81840d8e1a031f7":[14,0,53,2],
 "structspdk__accel__module__if.html#a1de9db47e92a6c6321f02182cf75a21f":[14,0,53,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX18 =
 "structspdk__app__opts.html#a1f0f298f908a566b2262ba14385972c2":[14,0,59,26],
 "structspdk__app__opts.html#a22921866228db3a1c2831638650a26f6":[14,0,59,10],
 "structspdk__app__opts.html#a28e88b7a131a59a9358a132af2590017":[14,0,59,28],
-"structspdk__app__opts.html#a2a264093fd74433b83da1a4edc757b59":[14,0,59,25],
-"structspdk__app__opts.html#a2a7cefefd12eac2f22efdc24962da925":[14,0,59,21],
-"structspdk__app__opts.html#a342776991c2e68df0daae8c1639d2411":[14,0,59,31]
+"structspdk__app__opts.html#a2a264093fd74433b83da1a4edc757b59":[14,0,59,25]
 };
