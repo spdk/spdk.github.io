@@ -11,6 +11,7 @@ var structspdk__env__opts =
     [ "mem_channel", "structspdk__env__opts.html#aa2f18340dae1a40ec69fec08f5ce3b0b", null ],
     [ "mem_size", "structspdk__env__opts.html#ae57b5f0c41ed9f5f450a39839a1ec452", null ],
     [ "name", "structspdk__env__opts.html#ada14eeed7d023f5ddc4b468ca00a4fc8", null ],
+    [ "no_huge", "structspdk__env__opts.html#a33f3a38c448b9270ccfe7e8dae99384b", null ],
     [ "no_pci", "structspdk__env__opts.html#a219395a9251a17820f7ee21572021d04", null ],
     [ "num_pci_addr", "structspdk__env__opts.html#adfe7415c1f8e3e47e7c7b06233da0a80", null ],
     [ "pci_allowed", "structspdk__env__opts.html#a1ea14cd4473f4d86b773ec163be4b87a", null ],

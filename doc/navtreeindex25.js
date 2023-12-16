@@ -1,5 +1,7 @@
 var NAVTREEINDEX25 =
 {
+"structspdk__nvme__power__state.html#a182bcd1e5e35fef4ac952ca5b3ed655f":[14,0,240,15],
+"structspdk__nvme__power__state.html#a2df4913c8372a99adb7b700ba788aa5b":[14,0,240,6],
 "structspdk__nvme__power__state.html#a30424821aa55344985c48f3e70d948fc":[14,0,240,20],
 "structspdk__nvme__power__state.html#a319d7e8756645debe02b0cc3ec953a18":[14,0,240,2],
 "structspdk__nvme__power__state.html#a3d7b128791bcacc6b0681ddb31211f60":[14,0,240,7],
@@ -247,7 +249,5 @@ var NAVTREEINDEX25 =
 "structspdk__nvme__tcp__r2t__hdr.html#a648104d92c4232ca9631dc8050d35531":[14,0,268,1],
 "structspdk__nvme__tcp__r2t__hdr.html#a90ee47bf3ad4cf9524235b36264305df":[14,0,268,0],
 "structspdk__nvme__tcp__r2t__hdr.html#aa0e93f5963820fbeb27826df1a623479":[14,0,268,4],
-"structspdk__nvme__tcp__r2t__hdr.html#aae5558586356628da6e878e16af73805":[14,0,268,2],
-"structspdk__nvme__tcp__r2t__hdr.html#ad384018e03ba86c670eeefef8e782933":[14,0,268,3],
-"structspdk__nvme__tcp__rsp.html":[14,0,269]
+"structspdk__nvme__tcp__r2t__hdr.html#aae5558586356628da6e878e16af73805":[14,0,268,2]
 };
