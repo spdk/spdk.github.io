@@ -102,10 +102,10 @@ var NAVTREEINDEX =
 "structspdk__opal__d0__geo__feat.html#abba515f8b72f3f961fa8c7d631d08b9b",
 "structspdk__scsi__pr__in__read__reservations__data.html#a1d2f6e4d0bbc3b08afe0e5cc5a01a0d8",
 "structspdk__vfu__pci__device.html#a1f0a54eba7648d8c6145c45689430f5c",
-"trace__parser_8h.html#a4253a898fb3f2ff1a047a1f6e4a1e3abad09ef51b1f3f5fcbcb004a95dd01a4be",
-"unionspdk__nvme__cc__register.html#a777a7cb16e88d976eca2f8073fde6c4b",
-"unionspdk__nvme__feat__non__operational__power__state__config.html",
-"vhost_8h.html#aed851ed4cfcdf69b6221c8cad4688353"
+"trace__parser_8h.html#a4253a898fb3f2ff1a047a1f6e4a1e3aba2bbc1491612eafb6472caba04b3c0e2d",
+"unionspdk__nvme__cc__register.html#a6be5f13e66cd6fd34c1463147cdfb106",
+"unionspdk__nvme__feat__lba__range__type.html#afd6c62577e98b12c7c497e003228621c",
+"vhost_8h.html#aed34ffbfc5835716ba35a9ee050e1e74"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

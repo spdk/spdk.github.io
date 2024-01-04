@@ -1,5 +1,6 @@
 var NAVTREEINDEX33 =
 {
+"unionspdk__nvme__cc__register.html#a6be5f13e66cd6fd34c1463147cdfb106":[14,0,144,4],
 "unionspdk__nvme__cc__register.html#a777a7cb16e88d976eca2f8073fde6c4b":[14,0,144,0],
 "unionspdk__nvme__cc__register.html#a882def8c3b82974ed18964df8b6b55bf":[14,0,144,7],
 "unionspdk__nvme__cc__register.html#a897917db042a1c27dfcd9a1d29753602":[14,0,144,10],
@@ -248,6 +249,5 @@ var NAVTREEINDEX33 =
 "unionspdk__nvme__feat__lba__range__type.html":[14,0,196],
 "unionspdk__nvme__feat__lba__range__type.html#a2b3aa7768ecfe897e9871f6e8bcc404f":[14,0,196,0],
 "unionspdk__nvme__feat__lba__range__type.html#a8b36726d65af55a7c237962ea9065911":[14,0,196,2],
-"unionspdk__nvme__feat__lba__range__type.html#a9fcf5c790767d292adf15b5f05ab40cf":[14,0,196,1],
-"unionspdk__nvme__feat__lba__range__type.html#afd6c62577e98b12c7c497e003228621c":[14,0,196,3]
+"unionspdk__nvme__feat__lba__range__type.html#a9fcf5c790767d292adf15b5f05ab40cf":[14,0,196,1]
 };
