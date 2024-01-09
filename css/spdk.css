@@ -14,6 +14,18 @@ h6 {
     font-family: 'Roboto', sans-serif;
 }
 
+.bg-dark {
+    background-color: #2b497d!important;
+}
+
+.btn-dark, .btn-outline-dark:hover {
+    background-color: #2b497d;
+}
+
+.btn-dark:hover {
+    background-color: #213861;
+}
+
 .header-link {
     text-transform: uppercase;
     padding-top: 25px;
