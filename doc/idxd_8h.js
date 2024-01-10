@@ -10,7 +10,7 @@ var idxd_8h =
     [ "spdk_idxd_probe", "idxd_8h.html#a9d1c79e79e6238cbfe5e3202850cce51", null ],
     [ "spdk_idxd_process_events", "idxd_8h.html#ac92c2ac49b4b576f2538aa58846d93c3", null ],
     [ "spdk_idxd_put_channel", "idxd_8h.html#a0de9abe0697950149cd1fe830717be90", null ],
-    [ "spdk_idxd_set_config", "idxd_8h.html#adc21f8258d04ffa6a365a54ff8173159", null ],
+    [ "spdk_idxd_set_config", "idxd_8h.html#a8549d7fa181e2e2f46bf83a98a979840", null ],
     [ "spdk_idxd_submit_compare", "idxd_8h.html#a163ea97cda6e3eaf879860ef45f85e5e", null ],
     [ "spdk_idxd_submit_compress", "idxd_8h.html#aa81b1c1358f0ace80c6552e41963cdcd", null ],
     [ "spdk_idxd_submit_copy", "idxd_8h.html#ae52d7631d29803ad79831a18f731df6f", null ],

@@ -126,9 +126,9 @@ Functions</h2></td></tr>
 <tr class="memitem:aa6e6f3dcce485f4b3b8ba36fe4c03f93"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="idxd_8h.html#aa6e6f3dcce485f4b3b8ba36fe4c03f93">spdk_idxd_detach</a> (struct spdk_idxd_device *idxd)</td></tr>
 <tr class="memdesc:aa6e6f3dcce485f4b3b8ba36fe4c03f93"><td class="mdescLeft">&#160;</td><td class="mdescRight">Detach specified device returned by <a class="el" href="idxd_8h.html#a9d1c79e79e6238cbfe5e3202850cce51" title="Enumerate the IDXD devices attached to the system and attach the userspace IDXD driver to them if des...">spdk_idxd_probe()</a> from the IDXD driver.  <a href="idxd_8h.html#aa6e6f3dcce485f4b3b8ba36fe4c03f93">More...</a><br /></td></tr>
 <tr class="separator:aa6e6f3dcce485f4b3b8ba36fe4c03f93"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adc21f8258d04ffa6a365a54ff8173159"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="idxd_8h.html#adc21f8258d04ffa6a365a54ff8173159">spdk_idxd_set_config</a> (bool kernel_mode)</td></tr>
-<tr class="memdesc:adc21f8258d04ffa6a365a54ff8173159"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the IDXD configuration.  <a href="idxd_8h.html#adc21f8258d04ffa6a365a54ff8173159">More...</a><br /></td></tr>
-<tr class="separator:adc21f8258d04ffa6a365a54ff8173159"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8549d7fa181e2e2f46bf83a98a979840"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="idxd_8h.html#a8549d7fa181e2e2f46bf83a98a979840">spdk_idxd_set_config</a> (bool kernel_mode)</td></tr>
+<tr class="memdesc:a8549d7fa181e2e2f46bf83a98a979840"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the IDXD configuration.  <a href="idxd_8h.html#a8549d7fa181e2e2f46bf83a98a979840">More...</a><br /></td></tr>
+<tr class="separator:a8549d7fa181e2e2f46bf83a98a979840"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae52d7631d29803ad79831a18f731df6f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="idxd_8h.html#ae52d7631d29803ad79831a18f731df6f">spdk_idxd_submit_copy</a> (struct spdk_idxd_io_channel *chan, struct iovec *diov, uint32_t diovcnt, struct iovec *siov, uint32_t siovcnt, int flags, <a class="el" href="idxd_8h.html#a75c066c5425700c49f077e20484b50c1">spdk_idxd_req_cb</a> cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:ae52d7631d29803ad79831a18f731df6f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Build and submit an idxd memory copy request.  <a href="idxd_8h.html#ae52d7631d29803ad79831a18f731df6f">More...</a><br /></td></tr>
 <tr class="separator:ae52d7631d29803ad79831a18f731df6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -420,14 +420,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="adc21f8258d04ffa6a365a54ff8173159"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adc21f8258d04ffa6a365a54ff8173159">&#9670;&nbsp;</a></span>spdk_idxd_set_config()</h2>
+<a id="a8549d7fa181e2e2f46bf83a98a979840"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8549d7fa181e2e2f46bf83a98a979840">&#9670;&nbsp;</a></span>spdk_idxd_set_config()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void spdk_idxd_set_config </td>
+          <td class="memname">int spdk_idxd_set_config </td>
           <td>(</td>
           <td class="paramtype">bool&#160;</td>
           <td class="paramname"><em>kernel_mode</em></td><td>)</td>
@@ -439,10 +439,11 @@ Functions</h2></td></tr>
 <p>Sets the IDXD configuration. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">kernel_mode</td><td>true if using kernel driver. </td></tr>
+    <tr><td class="paramname">kernel_mode</td><td>true if using kernel driver.</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, negative errno on failure. </dd></dl>
 
 </div>
 </div>

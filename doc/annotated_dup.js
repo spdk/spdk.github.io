@@ -232,6 +232,7 @@ var annotated_dup =
     [ "spdk_nvme_ns_list", "structspdk__nvme__ns__list.html", "structspdk__nvme__ns__list" ],
     [ "spdk_nvme_ns_streams_data", "structspdk__nvme__ns__streams__data.html", "structspdk__nvme__ns__streams__data" ],
     [ "spdk_nvme_ns_streams_status", "structspdk__nvme__ns__streams__status.html", "structspdk__nvme__ns__streams__status" ],
+    [ "spdk_nvme_nvm_ctrlr_data", "structspdk__nvme__nvm__ctrlr__data.html", "structspdk__nvme__nvm__ctrlr__data" ],
     [ "spdk_nvme_pcie_stat", "structspdk__nvme__pcie__stat.html", "structspdk__nvme__pcie__stat" ],
     [ "spdk_nvme_pmrcap_register", "unionspdk__nvme__pmrcap__register.html", "unionspdk__nvme__pmrcap__register" ],
     [ "spdk_nvme_pmrctl_register", "unionspdk__nvme__pmrctl__register.html", "unionspdk__nvme__pmrctl__register" ],

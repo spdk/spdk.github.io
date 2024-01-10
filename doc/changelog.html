@@ -105,6 +105,8 @@ v24.01: (Upcoming Release)</h1>
 <p>A new transport option <code>rdma_max_cq_size</code> was added to limit indefinite growth of CQ size.</p>
 <h2>env</h2>
 <p>Added SPDK commandline parameter &ndash;no-huge, which enables SPDK to run without hugepages.</p>
+<h2>nvmf</h2>
+<p>Added <code>max_discard_size_kib</code> and <code>max_write_zeroes_size_kib</code> to <code>nvmf_create_subsystem</code> to set the maximum discard size and maximum write_zeroes size.</p>
 <h1>v23.09</h1>
 <h2>accel</h2>
 <p>Added <code><a class="el" href="accel_8h.html#aaebd6fe37b7af8036e42184adc407ce4" title="Get minimum buffer alignment to execute a given operation.">spdk_accel_get_buf_align()</a></code> API to get minimum buffer alignment to execute a given operation.</p>
