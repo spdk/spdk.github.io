@@ -9,7 +9,7 @@ toc:
     url: "https://trello.com/b/P5xBO7UR/things-to-do"
 ---
 
-The SPDK continuous integration (CI) test pool is an ever expanding group of machines dedicated to verifying the functionality of each patch submitted to the SPDK code base. The test pool currently consists of over 30 machines running Fedora Server. All of the systems have hardware NVMe controllers (Intel P4510, P4600 or P4610) installed, and most of them have additional hardware installed, like:
+The SPDK continuous integration (CI) test pool is an ever expanding group of machines dedicated to verifying the functionality of each patch submitted to the SPDK code base. The test pool currently consists of over 90 machines running Fedora Server. All of the systems have hardware NVMe controllers (Intel P4510, P4600 or P4610) installed, and most of them have additional hardware installed, like:
 
 * Mellanox RDMA NICs (Mellanox ConnectX-4 & ConnectX-5) used for NVMe-oF RDMA tests
 * Intel E810 NICs (CQDA2 and XXVDA2) used for NVMe-oF TCP & RDMA tests
