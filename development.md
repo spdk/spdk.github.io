@@ -317,6 +317,28 @@ where subjob is a job from the list:
 * vhost-initiator-vg-autotest
 * zns-vg-autotest
 
+#### Triggering on-demand performance regression tests
+
+In order to request performance tests of your change post comment with `tests:` content as described
+in previous subchapter. Available identifiers for performance tests:
+
+* nvme-perf/regression-nvme
+* vhost-perf/regression-vhost
+* nvmf-perf/regression-tcp
+* nvmf-perf/regression-rdma
+
+After posting the comment you should get a "Additional tests accepted." comment from CI bot as
+confirmation that the build was scheduled. Another comment will be posted from CI bot after test
+completion.
+
+You can check the results of requested performance test run on https://performance.spdk.io. Make sure
+to select appropriate dashboard and enabling `manual_builds` and `Build Annotations` options at the top
+of the dashboard pages to quickly locate results related to your test request.
+
+Please be patient waiting for the test results. Regression tests take considerable amount of
+time to complete. Each of listed performance tests takes about 2-3 hours. This time might be
+longer depending on the current build queue in the CI.
+
 #### Mellanox Build Bot
 
 If Mellanox Build Bot gives your patch a -1 and you believe that this failure is not related to your patch, you can re-trigger a new
