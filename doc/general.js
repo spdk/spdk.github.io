@@ -36,5 +36,6 @@ var general =
         [ "dpdk_cryptodev", "accel_fw.html#accel_dpdk_cryptodev", null ],
         [ "Module to Operation Code Assignment", "accel_fw.html#accel_assignments", null ]
       ] ]
-    ] ]
+    ] ],
+    [ "FIPS Compliance", "fips.html", null ]
 ];

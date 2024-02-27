@@ -56,7 +56,7 @@ var files_dup =
     [ "scsi.h", "scsi_8h.html", "scsi_8h" ],
     [ "scsi_spec.h", "scsi__spec_8h.html", "scsi__spec_8h" ],
     [ "sock.h", "sock_8h.html", "sock_8h" ],
-    [ "stdinc.h", "stdinc_8h.html", null ],
+    [ "stdinc.h", "stdinc_8h.html", "stdinc_8h" ],
     [ "string.h", "string_8h.html", "string_8h" ],
     [ "thread.h", "thread_8h.html", "thread_8h" ],
     [ "trace.h", "trace_8h.html", "trace_8h" ],

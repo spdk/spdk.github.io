@@ -63,7 +63,8 @@ var nvme_8h =
       [ "SPDK_NVME_QPAIR_FAILURE_NONE", "nvme_8h.html#ab41e2d311eb6663957cd2f18bc8fb890aa17ee94f67f231985fd58e045e3a5e81", null ],
       [ "SPDK_NVME_QPAIR_FAILURE_LOCAL", "nvme_8h.html#ab41e2d311eb6663957cd2f18bc8fb890ac51b77bfe0adc8526baa9287660b8010", null ],
       [ "SPDK_NVME_QPAIR_FAILURE_REMOTE", "nvme_8h.html#ab41e2d311eb6663957cd2f18bc8fb890af0266f9f1425c6816d05ce01fd99ce38", null ],
-      [ "SPDK_NVME_QPAIR_FAILURE_UNKNOWN", "nvme_8h.html#ab41e2d311eb6663957cd2f18bc8fb890ae2f20f3907a7d0b164f5e5a1d9474625", null ]
+      [ "SPDK_NVME_QPAIR_FAILURE_UNKNOWN", "nvme_8h.html#ab41e2d311eb6663957cd2f18bc8fb890ae2f20f3907a7d0b164f5e5a1d9474625", null ],
+      [ "SPDK_NVME_QPAIR_FAILURE_RESET", "nvme_8h.html#ab41e2d311eb6663957cd2f18bc8fb890a69d0f2215642e6452ba313dde1e736f9", null ]
     ] ],
     [ "spdk_nvme_transport_type", "nvme_8h.html#ae87a03c28984a2c0499d50ef5e9d0ece", [
       [ "SPDK_NVME_TRANSPORT_PCIE", "nvme_8h.html#ae87a03c28984a2c0499d50ef5e9d0ecea162afc05d1ae756b8a7969be140035ea", null ],
@@ -117,6 +118,7 @@ var nvme_8h =
     [ "spdk_nvme_ctrlr_get_discovery_log_page", "nvme_8h.html#a87a228bf5b96e89305e52721d81920d7", null ],
     [ "spdk_nvme_ctrlr_get_first_active_ns", "nvme_8h.html#a59e69f39c7cb8a9e1c3e00af7804c8bd", null ],
     [ "spdk_nvme_ctrlr_get_flags", "nvme_8h.html#af654a7a016511f265b29294fd06ce26e", null ],
+    [ "spdk_nvme_ctrlr_get_max_sges", "nvme_8h.html#ab71a63c183172e6b6a3efae41cda00e9", null ],
     [ "spdk_nvme_ctrlr_get_max_xfer_size", "nvme_8h.html#ac750410c9b53a0435d0111ae1e98913e", null ],
     [ "spdk_nvme_ctrlr_get_memory_domains", "nvme_8h.html#a6647280570446fbde28b92332be1108d", null ],
     [ "spdk_nvme_ctrlr_get_next_active_ns", "nvme_8h.html#abcd528b0df0a564c218dc2745c3af159", null ],

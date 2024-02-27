@@ -100,9 +100,9 @@ Functions</h2></td></tr>
 <tr class="memitem:aa87f504699fa72a5ae0a740779510054"><td class="memItemLeft" align="right" valign="top">struct spdk_pipe *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pipe_8h.html#aa87f504699fa72a5ae0a740779510054">spdk_pipe_create</a> (void *buf, uint32_t sz)</td></tr>
 <tr class="memdesc:aa87f504699fa72a5ae0a740779510054"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a pipe around the given memory buffer.  <a href="pipe_8h.html#aa87f504699fa72a5ae0a740779510054">More...</a><br /></td></tr>
 <tr class="separator:aa87f504699fa72a5ae0a740779510054"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4ec00c67f5cb0d5cdb9e2a7c3b924230"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pipe_8h.html#a4ec00c67f5cb0d5cdb9e2a7c3b924230">spdk_pipe_destroy</a> (struct spdk_pipe *pipe)</td></tr>
-<tr class="memdesc:a4ec00c67f5cb0d5cdb9e2a7c3b924230"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroys the pipe.  <a href="pipe_8h.html#a4ec00c67f5cb0d5cdb9e2a7c3b924230">More...</a><br /></td></tr>
-<tr class="separator:a4ec00c67f5cb0d5cdb9e2a7c3b924230"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01eda9c043cd413bd5d06c39765c4616"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pipe_8h.html#a01eda9c043cd413bd5d06c39765c4616">spdk_pipe_destroy</a> (struct spdk_pipe *pipe)</td></tr>
+<tr class="memdesc:a01eda9c043cd413bd5d06c39765c4616"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroys the pipe.  <a href="pipe_8h.html#a01eda9c043cd413bd5d06c39765c4616">More...</a><br /></td></tr>
+<tr class="separator:a01eda9c043cd413bd5d06c39765c4616"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a34858f01fe285ba81743b9a3a4a6ee9f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pipe_8h.html#a34858f01fe285ba81743b9a3a4a6ee9f">spdk_pipe_writer_get_buffer</a> (struct spdk_pipe *pipe, uint32_t sz, struct iovec *iovs)</td></tr>
 <tr class="memdesc:a34858f01fe285ba81743b9a3a4a6ee9f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Acquire memory from the pipe for writing.  <a href="pipe_8h.html#a34858f01fe285ba81743b9a3a4a6ee9f">More...</a><br /></td></tr>
 <tr class="separator:a34858f01fe285ba81743b9a3a4a6ee9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -118,6 +118,18 @@ Functions</h2></td></tr>
 <tr class="memitem:a3403f0eee73f273926b244759daac466"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pipe_8h.html#a3403f0eee73f273926b244759daac466">spdk_pipe_reader_advance</a> (struct spdk_pipe *pipe, uint32_t count)</td></tr>
 <tr class="memdesc:a3403f0eee73f273926b244759daac466"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mark memory as read, making it available for writing.  <a href="pipe_8h.html#a3403f0eee73f273926b244759daac466">More...</a><br /></td></tr>
 <tr class="separator:a3403f0eee73f273926b244759daac466"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac77aa7fc0992949d52a72f8e7995e974"><td class="memItemLeft" align="right" valign="top">struct spdk_pipe_group *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pipe_8h.html#ac77aa7fc0992949d52a72f8e7995e974">spdk_pipe_group_create</a> (void)</td></tr>
+<tr class="memdesc:ac77aa7fc0992949d52a72f8e7995e974"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a pipe group.  <a href="pipe_8h.html#ac77aa7fc0992949d52a72f8e7995e974">More...</a><br /></td></tr>
+<tr class="separator:ac77aa7fc0992949d52a72f8e7995e974"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af209719101661d2f0a61c561e2aac19c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pipe_8h.html#af209719101661d2f0a61c561e2aac19c">spdk_pipe_group_destroy</a> (struct spdk_pipe_group *group)</td></tr>
+<tr class="memdesc:af209719101661d2f0a61c561e2aac19c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroys the pipe group.  <a href="pipe_8h.html#af209719101661d2f0a61c561e2aac19c">More...</a><br /></td></tr>
+<tr class="separator:af209719101661d2f0a61c561e2aac19c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f8f4fe77adfb891dba453949d39a891"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pipe_8h.html#a8f8f4fe77adfb891dba453949d39a891">spdk_pipe_group_add</a> (struct spdk_pipe_group *group, struct spdk_pipe *pipe)</td></tr>
+<tr class="memdesc:a8f8f4fe77adfb891dba453949d39a891"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds the pipe to the group.  <a href="pipe_8h.html#a8f8f4fe77adfb891dba453949d39a891">More...</a><br /></td></tr>
+<tr class="separator:a8f8f4fe77adfb891dba453949d39a891"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a320dd34adb49dc390e90fe5a5e2bf57a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pipe_8h.html#a320dd34adb49dc390e90fe5a5e2bf57a">spdk_pipe_group_remove</a> (struct spdk_pipe_group *group, struct spdk_pipe *pipe)</td></tr>
+<tr class="memdesc:a320dd34adb49dc390e90fe5a5e2bf57a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes the pipe to the group.  <a href="pipe_8h.html#a320dd34adb49dc390e90fe5a5e2bf57a">More...</a><br /></td></tr>
+<tr class="separator:a320dd34adb49dc390e90fe5a5e2bf57a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A pipe that is intended for buffering data between a source, such as a socket, and a sink, such as a parser, or vice versa. </p>
@@ -163,14 +175,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a4ec00c67f5cb0d5cdb9e2a7c3b924230"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4ec00c67f5cb0d5cdb9e2a7c3b924230">&#9670;&nbsp;</a></span>spdk_pipe_destroy()</h2>
+<a id="a01eda9c043cd413bd5d06c39765c4616"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a01eda9c043cd413bd5d06c39765c4616">&#9670;&nbsp;</a></span>spdk_pipe_destroy()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void spdk_pipe_destroy </td>
+          <td class="memname">void* spdk_pipe_destroy </td>
           <td>(</td>
           <td class="paramtype">struct spdk_pipe *&#160;</td>
           <td class="paramname"><em>pipe</em></td><td>)</td>
@@ -187,6 +199,131 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>Pipe buffer associated with the pipe when destroyed. The caller should free this buffer. It may not be the same buffer that was passed to spdk_pipe_create. </dd></dl>
+
+</div>
+</div>
+<a id="a8f8f4fe77adfb891dba453949d39a891"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f8f4fe77adfb891dba453949d39a891">&#9670;&nbsp;</a></span>spdk_pipe_group_add()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_pipe_group_add </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_pipe_group *&#160;</td>
+          <td class="paramname"><em>group</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct spdk_pipe *&#160;</td>
+          <td class="paramname"><em>pipe</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Adds the pipe to the group. </p>
+<p>When a pipe reaches empty state, it puts the data buffer into the group's pool. If a pipe needs a data buffer, it takes one from the pool. Since the pool is a stack, a small number of data buffers tend to be re-used very frequently.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">group</td><td>The pipe group to operate on. </td></tr>
+    <tr><td class="paramname">pipe</td><td>The pipe to be added.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>On error, a negated errno. On success, 0. </dd></dl>
+
+</div>
+</div>
+<a id="ac77aa7fc0992949d52a72f8e7995e974"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac77aa7fc0992949d52a72f8e7995e974">&#9670;&nbsp;</a></span>spdk_pipe_group_create()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct spdk_pipe_group* spdk_pipe_group_create </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Constructs a pipe group. </p>
+<dl class="section return"><dt>Returns</dt><dd>spdk_pipe_group. The new pipe group. </dd></dl>
+
+</div>
+</div>
+<a id="af209719101661d2f0a61c561e2aac19c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af209719101661d2f0a61c561e2aac19c">&#9670;&nbsp;</a></span>spdk_pipe_group_destroy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_pipe_group_destroy </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_pipe_group *&#160;</td>
+          <td class="paramname"><em>group</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Destroys the pipe group. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">group</td><td>The pipe group to operate on. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a320dd34adb49dc390e90fe5a5e2bf57a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a320dd34adb49dc390e90fe5a5e2bf57a">&#9670;&nbsp;</a></span>spdk_pipe_group_remove()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_pipe_group_remove </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_pipe_group *&#160;</td>
+          <td class="paramname"><em>group</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct spdk_pipe *&#160;</td>
+          <td class="paramname"><em>pipe</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Removes the pipe to the group. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">group</td><td>The pipe group to operate on. </td></tr>
+    <tr><td class="paramname">pipe</td><td>The pipe to be removed.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>On error, a negated errno. On success, 0. </dd></dl>
 
 </div>
 </div>

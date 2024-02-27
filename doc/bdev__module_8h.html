@@ -265,7 +265,7 @@ typedef&#160;</td><td class="memItemRight" valign="bottom"><b>TAILQ_HEAD</b> (, 
 <tr class="memdesc:a1135837fca4f720aa12e09daf04a90eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start unregistering a bdev.  <a href="bdev__module_8h.html#a1135837fca4f720aa12e09daf04a90eb">More...</a><br /></td></tr>
 <tr class="separator:a1135837fca4f720aa12e09daf04a90eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8d51d8e113f0dffb1bbe535ea01c495f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev__module_8h.html#a8d51d8e113f0dffb1bbe535ea01c495f">spdk_bdev_destruct_done</a> (struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *bdev, int bdeverrno)</td></tr>
-<tr class="memdesc:a8d51d8e113f0dffb1bbe535ea01c495f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Invokes the unregister callback of a bdev backing a virtual bdev.  <a href="bdev__module_8h.html#a8d51d8e113f0dffb1bbe535ea01c495f">More...</a><br /></td></tr>
+<tr class="memdesc:a8d51d8e113f0dffb1bbe535ea01c495f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Notify the bdev layer that an asynchronous destruct operation is complete.  <a href="bdev__module_8h.html#a8d51d8e113f0dffb1bbe535ea01c495f">More...</a><br /></td></tr>
 <tr class="separator:a8d51d8e113f0dffb1bbe535ea01c495f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad6ae712eb81a37a739cb82ca474e793b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev__module_8h.html#ad6ae712eb81a37a739cb82ca474e793b">spdk_bdev_module_examine_done</a> (struct <a class="el" href="structspdk__bdev__module.html">spdk_bdev_module</a> *module)</td></tr>
 <tr class="memdesc:ad6ae712eb81a37a739cb82ca474e793b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicate to the bdev layer that the module is done examining a bdev.  <a href="bdev__module_8h.html#ad6ae712eb81a37a739cb82ca474e793b">More...</a><br /></td></tr>
@@ -318,6 +318,9 @@ typedef&#160;</td><td class="memItemRight" valign="bottom"><b>TAILQ_HEAD</b> (, 
 <tr class="memitem:afa76c6d38a121270bbe464117d1044ac"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev__module_8h.html#afa76c6d38a121270bbe464117d1044ac">spdk_bdev_io_complete_aio_status</a> (struct <a class="el" href="structspdk__bdev__io.html">spdk_bdev_io</a> *bdev_io, int aio_result)</td></tr>
 <tr class="memdesc:afa76c6d38a121270bbe464117d1044ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Complete a bdev_io with AIO errno.  <a href="bdev__module_8h.html#afa76c6d38a121270bbe464117d1044ac">More...</a><br /></td></tr>
 <tr class="separator:afa76c6d38a121270bbe464117d1044ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20a04f6676f1275ac30e68b514fdd588"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev__module_8h.html#a20a04f6676f1275ac30e68b514fdd588">spdk_bdev_io_complete_base_io_status</a> (struct <a class="el" href="structspdk__bdev__io.html">spdk_bdev_io</a> *bdev_io, const struct <a class="el" href="structspdk__bdev__io.html">spdk_bdev_io</a> *base_io)</td></tr>
+<tr class="memdesc:a20a04f6676f1275ac30e68b514fdd588"><td class="mdescLeft">&#160;</td><td class="mdescRight">Complete a bdev_io copying a status from another bdev_io.  <a href="bdev__module_8h.html#a20a04f6676f1275ac30e68b514fdd588">More...</a><br /></td></tr>
+<tr class="separator:a20a04f6676f1275ac30e68b514fdd588"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac5d86d9c4c086b2909207e6b7192caae"><td class="memItemLeft" align="right" valign="top">struct spdk_thread *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev__module_8h.html#ac5d86d9c4c086b2909207e6b7192caae">spdk_bdev_io_get_thread</a> (struct <a class="el" href="structspdk__bdev__io.html">spdk_bdev_io</a> *bdev_io)</td></tr>
 <tr class="memdesc:ac5d86d9c4c086b2909207e6b7192caae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a thread that given bdev_io was submitted on.  <a href="bdev__module_8h.html#ac5d86d9c4c086b2909207e6b7192caae">More...</a><br /></td></tr>
 <tr class="separator:ac5d86d9c4c086b2909207e6b7192caae"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -794,7 +797,7 @@ typedef&#160;</td><td class="memItemRight" valign="bottom"><b>TAILQ_HEAD</b> (bd
       </table>
 </div><div class="memdoc">
 
-<p>Invokes the unregister callback of a bdev backing a virtual bdev. </p>
+<p>Notify the bdev layer that an asynchronous destruct operation is complete. </p>
 <p>A Bdev with an asynchronous destruct path should return 1 from its destruct function and call this function at the conclusion of that path. Bdevs with synchronous destruct paths should return 0 from their destruct path.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -1035,6 +1038,43 @@ typedef&#160;</td><td class="memItemRight" valign="bottom"><b>TAILQ_HEAD</b> (bd
   <table class="params">
     <tr><td class="paramname">bdev_io</td><td>I/O to complete. </td></tr>
     <tr><td class="paramname">aio_result</td><td>Negative errno returned from AIO. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a20a04f6676f1275ac30e68b514fdd588"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a20a04f6676f1275ac30e68b514fdd588">&#9670;&nbsp;</a></span>spdk_bdev_io_complete_base_io_status()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_bdev_io_complete_base_io_status </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structspdk__bdev__io.html">spdk_bdev_io</a> *&#160;</td>
+          <td class="paramname"><em>bdev_io</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const struct <a class="el" href="structspdk__bdev__io.html">spdk_bdev_io</a> *&#160;</td>
+          <td class="paramname"><em>base_io</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Complete a bdev_io copying a status from another bdev_io. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bdev_io</td><td>I/O to complete. </td></tr>
+    <tr><td class="paramname">base_io</td><td>I/O from which to copy the status. </td></tr>
   </table>
   </dd>
 </dl>

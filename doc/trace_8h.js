@@ -32,6 +32,7 @@ var trace_8h =
     [ "spdk_trace_record", "trace_8h.html#a583c35dff93e5c996bd7115c4593a457", null ],
     [ "spdk_trace_record_tsc", "trace_8h.html#a9200d8670cb27a4569440782888087e0", null ],
     [ "SPDK_TRACE_REGISTER_FN", "trace_8h.html#a4cdbdade1f743930b4b2ff0fd75d22d4", null ],
+    [ "SPDK_TRACE_THREAD_NAME_LEN", "trace_8h.html#a0428c85707807ebfd031c064eba4a94e", null ],
     [ "_spdk_trace_record", "trace_8h.html#a4e97d3723f6605c49b5cf56c83294dee", null ],
     [ "spdk_get_per_lcore_history", "trace_8h.html#a9e8521a36138b4e120faa1e0d5ef83da", null ],
     [ "spdk_get_trace_histories_size", "trace_8h.html#a21ab2742df91d14f1bdd761f222180f2", null ],
@@ -59,6 +60,7 @@ var trace_8h =
     [ "spdk_trace_set_tpoint_group_mask", "trace_8h.html#aa0ade5c1286d121c2eafeae8918169db", null ],
     [ "spdk_trace_set_tpoints", "trace_8h.html#a6f2131f1fc35d495f51552eb2838630b", null ],
     [ "spdk_trace_tpoint_register_relation", "trace_8h.html#a0ec4843a02b23b8e0a8f4fe8c91fca3b", null ],
+    [ "spdk_trace_unregister_user_thread", "trace_8h.html#a2f3c2c36cb52730ac3a98e9d33fd9093", null ],
     [ "g_trace_flags", "trace_8h.html#a92b06e647e386cf0896e0a38499cf494", null ],
     [ "g_trace_histories", "trace_8h.html#a2f65bc76d39a775d401996a01bcba195", null ]
 ];

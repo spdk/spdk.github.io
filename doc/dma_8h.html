@@ -135,6 +135,9 @@ Typedefs</h2></td></tr>
 <tr class="memitem:a80080465d2736a76d0ddf95d67c701bb"><td class="memItemLeft" align="right" valign="top">typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dma_8h.html#a80080465d2736a76d0ddf95d67c701bb">spdk_memory_domain_translate_memory_cb</a>) (struct spdk_memory_domain *src_domain, void *src_domain_ctx, struct spdk_memory_domain *dst_domain, struct <a class="el" href="structspdk__memory__domain__translation__ctx.html">spdk_memory_domain_translation_ctx</a> *dst_domain_ctx, void *addr, size_t len, struct <a class="el" href="structspdk__memory__domain__translation__result.html">spdk_memory_domain_translation_result</a> *result)</td></tr>
 <tr class="memdesc:a80080465d2736a76d0ddf95d67c701bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Definition of function which translates data from src_domain to a form accessible by dst_domain.  <a href="dma_8h.html#a80080465d2736a76d0ddf95d67c701bb">More...</a><br /></td></tr>
 <tr class="separator:a80080465d2736a76d0ddf95d67c701bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9437c10aecf1f03c8137b870a83dac17"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dma_8h.html#a9437c10aecf1f03c8137b870a83dac17">spdk_memory_domain_invalidate_data_cb</a>) (struct spdk_memory_domain *domain, void *domain_ctx, struct iovec *iov, uint32_t iovcnt)</td></tr>
+<tr class="memdesc:a9437c10aecf1f03c8137b870a83dac17"><td class="mdescLeft">&#160;</td><td class="mdescRight">Definition of function which invalidates the data range in the given domain.  <a href="dma_8h.html#a9437c10aecf1f03c8137b870a83dac17">More...</a><br /></td></tr>
+<tr class="separator:a9437c10aecf1f03c8137b870a83dac17"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
@@ -157,6 +160,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ab4777ac664899af134eaa6c93de05d6d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dma_8h.html#ab4777ac664899af134eaa6c93de05d6d">spdk_memory_domain_set_translation</a> (struct spdk_memory_domain *domain, <a class="el" href="dma_8h.html#a80080465d2736a76d0ddf95d67c701bb">spdk_memory_domain_translate_memory_cb</a> translate_cb)</td></tr>
 <tr class="memdesc:ab4777ac664899af134eaa6c93de05d6d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set translation function for memory domain.  <a href="dma_8h.html#ab4777ac664899af134eaa6c93de05d6d">More...</a><br /></td></tr>
 <tr class="separator:ab4777ac664899af134eaa6c93de05d6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a73817c22cc0ffd8000480576795cbf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dma_8h.html#a1a73817c22cc0ffd8000480576795cbf">spdk_memory_domain_set_invalidate</a> (struct spdk_memory_domain *domain, <a class="el" href="dma_8h.html#a9437c10aecf1f03c8137b870a83dac17">spdk_memory_domain_invalidate_data_cb</a> invalidate_cb)</td></tr>
+<tr class="memdesc:a1a73817c22cc0ffd8000480576795cbf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set invalidate function for memory domain.  <a href="dma_8h.html#a1a73817c22cc0ffd8000480576795cbf">More...</a><br /></td></tr>
+<tr class="separator:a1a73817c22cc0ffd8000480576795cbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6c443f5b67500578f056e9fe9039bf76"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dma_8h.html#a6c443f5b67500578f056e9fe9039bf76">spdk_memory_domain_set_pull</a> (struct spdk_memory_domain *domain, <a class="el" href="dma_8h.html#abf5cd879a09a8f23a30b45e94574e893">spdk_memory_domain_pull_data_cb</a> pull_cb)</td></tr>
 <tr class="memdesc:a6c443f5b67500578f056e9fe9039bf76"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set pull function for memory domain.  <a href="dma_8h.html#a6c443f5b67500578f056e9fe9039bf76">More...</a><br /></td></tr>
 <tr class="separator:a6c443f5b67500578f056e9fe9039bf76"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -187,6 +193,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a05ad1c0fc1a4fa74ede9b48181e044b1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dma_8h.html#a05ad1c0fc1a4fa74ede9b48181e044b1">spdk_memory_domain_translate_data</a> (struct spdk_memory_domain *src_domain, void *src_domain_ctx, struct spdk_memory_domain *dst_domain, struct <a class="el" href="structspdk__memory__domain__translation__ctx.html">spdk_memory_domain_translation_ctx</a> *dst_domain_ctx, void *addr, size_t len, struct <a class="el" href="structspdk__memory__domain__translation__result.html">spdk_memory_domain_translation_result</a> *result)</td></tr>
 <tr class="memdesc:a05ad1c0fc1a4fa74ede9b48181e044b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Translate data located in <b>src_domain</b> space at address <b>addr</b> with size <b>len</b> into an equivalent description of memory in dst_domain.  <a href="dma_8h.html#a05ad1c0fc1a4fa74ede9b48181e044b1">More...</a><br /></td></tr>
 <tr class="separator:a05ad1c0fc1a4fa74ede9b48181e044b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98d423f61ff7a187effcb7564f8eb18e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dma_8h.html#a98d423f61ff7a187effcb7564f8eb18e">spdk_memory_domain_invalidate_data</a> (struct spdk_memory_domain *domain, void *domain_ctx, struct iovec *iov, uint32_t iovcnt)</td></tr>
+<tr class="memdesc:a98d423f61ff7a187effcb7564f8eb18e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Invalidate memory in the given domain.  <a href="dma_8h.html#a98d423f61ff7a187effcb7564f8eb18e">More...</a><br /></td></tr>
+<tr class="separator:a98d423f61ff7a187effcb7564f8eb18e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae4e0567f3920f46cb3644ced997573c7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dma_8h.html#ae4e0567f3920f46cb3644ced997573c7">spdk_memory_domain_memzero</a> (struct spdk_memory_domain *domain, void *domain_ctx, struct iovec *iov, uint32_t iovcnt, <a class="el" href="dma_8h.html#a8d7a0eee8d944cf100d3006b3f3f1774">spdk_memory_domain_data_cpl_cb</a> cpl_cb, void *cpl_cb_arg)</td></tr>
 <tr class="memdesc:ae4e0567f3920f46cb3644ced997573c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fills memory in <b>domain</b> with zeroes.  <a href="dma_8h.html#ae4e0567f3920f46cb3644ced997573c7">More...</a><br /></td></tr>
 <tr class="separator:ae4e0567f3920f46cb3644ced997573c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -196,6 +205,9 @@ Functions</h2></td></tr>
 <tr class="memitem:aa7fd20c6b213156ac21f95bb19bc83d1"><td class="memItemLeft" align="right" valign="top">struct spdk_memory_domain *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dma_8h.html#aa7fd20c6b213156ac21f95bb19bc83d1">spdk_memory_domain_get_next</a> (struct spdk_memory_domain *prev, const char *id)</td></tr>
 <tr class="memdesc:aa7fd20c6b213156ac21f95bb19bc83d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the next memory domain.  <a href="dma_8h.html#aa7fd20c6b213156ac21f95bb19bc83d1">More...</a><br /></td></tr>
 <tr class="separator:aa7fd20c6b213156ac21f95bb19bc83d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaeeebe3659930f159594ede421fae3ec"><td class="memItemLeft" align="right" valign="top">struct spdk_memory_domain *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dma_8h.html#aaeeebe3659930f159594ede421fae3ec">spdk_memory_domain_get_system_domain</a> (void)</td></tr>
+<tr class="memdesc:aaeeebe3659930f159594ede421fae3ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the System memory domain.  <a href="dma_8h.html#aaeeebe3659930f159594ede421fae3ec">More...</a><br /></td></tr>
+<tr class="separator:aaeeebe3659930f159594ede421fae3ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>SPDK DMA device framework. </p>
@@ -217,6 +229,31 @@ Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">ctx</td><td>User context passed to pull of push functions </td></tr>
     <tr><td class="paramname">rc</td><td>Result of asynchronous data pull or push function </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a9437c10aecf1f03c8137b870a83dac17"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9437c10aecf1f03c8137b870a83dac17">&#9670;&nbsp;</a></span>spdk_memory_domain_invalidate_data_cb</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void(* spdk_memory_domain_invalidate_data_cb) (struct spdk_memory_domain *domain, void *domain_ctx, struct iovec *iov, uint32_t iovcnt)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition of function which invalidates the data range in the given domain. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">domain</td><td>Memory domain to which the data buffer belongs </td></tr>
+    <tr><td class="paramname">domain_ctx</td><td>Optional context passed by upper layer </td></tr>
+    <tr><td class="paramname">iov</td><td>Iov array in <b>domain</b> memory space to be invalidated </td></tr>
+    <tr><td class="paramname">iovcnt</td><td>Iov array size </td></tr>
   </table>
   </dd>
 </dl>
@@ -596,6 +633,79 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="aaeeebe3659930f159594ede421fae3ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaeeebe3659930f159594ede421fae3ec">&#9670;&nbsp;</a></span>spdk_memory_domain_get_system_domain()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct spdk_memory_domain* spdk_memory_domain_get_system_domain </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the System memory domain. </p>
+<dl class="section return"><dt>Returns</dt><dd>Pointer to the System memory domain. </dd></dl>
+
+</div>
+</div>
+<a id="a98d423f61ff7a187effcb7564f8eb18e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a98d423f61ff7a187effcb7564f8eb18e">&#9670;&nbsp;</a></span>spdk_memory_domain_invalidate_data()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_memory_domain_invalidate_data </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_memory_domain *&#160;</td>
+          <td class="paramname"><em>domain</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>domain_ctx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct iovec *&#160;</td>
+          <td class="paramname"><em>iov</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>iovcnt</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Invalidate memory in the given domain. </p>
+<p>This function calls <b>domain</b> invalidate callback, the callback needs to be set using <a class="el" href="dma_8h.html#a1a73817c22cc0ffd8000480576795cbf">spdk_memory_domain_set_invalidate</a> function. This operation is optional and is meant to be executed on the translation result <a class="el" href="dma_8h.html#a05ad1c0fc1a4fa74ede9b48181e044b1">spdk_memory_domain_translate_data</a>.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">domain</td><td>Memory domain in which address space of the buffer is located </td></tr>
+    <tr><td class="paramname">domain_ctx</td><td>User defined context </td></tr>
+    <tr><td class="paramname">iov</td><td>Iov vector in <b>domain</b> memory space to be invalidated </td></tr>
+    <tr><td class="paramname">iovcnt</td><td>iov array size </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="ae4e0567f3920f46cb3644ced997573c7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae4e0567f3920f46cb3644ced997573c7">&#9670;&nbsp;</a></span>spdk_memory_domain_memzero()</h2>
 
@@ -819,6 +929,44 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 on success, negated errno on failure. push_cb implementation must only call the callback when 0 is returned </dd></dl>
+
+</div>
+</div>
+<a id="a1a73817c22cc0ffd8000480576795cbf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1a73817c22cc0ffd8000480576795cbf">&#9670;&nbsp;</a></span>spdk_memory_domain_set_invalidate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_memory_domain_set_invalidate </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_memory_domain *&#160;</td>
+          <td class="paramname"><em>domain</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="dma_8h.html#a9437c10aecf1f03c8137b870a83dac17">spdk_memory_domain_invalidate_data_cb</a>&#160;</td>
+          <td class="paramname"><em>invalidate_cb</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set invalidate function for memory domain. </p>
+<p>Overwrites existing invalidate function.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">domain</td><td>Memory domain </td></tr>
+    <tr><td class="paramname">invalidate_cb</td><td>Invalidate function </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

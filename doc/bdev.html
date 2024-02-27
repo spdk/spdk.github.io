@@ -289,7 +289,6 @@ NVMe bdev</h1>
 <p>The SPDK NVMe bdev driver provides the multipath feature. Please refer to <a class="el" href="nvme_multipath.html">NVMe Multipath</a> for details.</p>
 <h2><a class="anchor" id="bdev_config_nvme_cuse"></a>
 NVMe bdev character device</h2>
-<p>This feature is considered as experimental. You must configure with &ndash;with-nvme-cuse option to enable this RPC.</p>
 <p>Example commands</p>
 <p><code>rpc.py bdev_nvme_cuse_register -n Nvme3</code></p>
 <p>This command will register a character device under /dev/spdk associated with Nvme3 controller. If there are namespaces created on Nvme3 controller, a namespace character device is also created for each namespace.</p>
@@ -333,7 +332,7 @@ Passthru</h1>
 <p><code>rpc.py bdev_passthru_delete pt</code></p>
 <h1><a class="anchor" id="bdev_ug_raid"></a>
 RAID</h1>
-<p>RAID virtual bdev module provides functionality to combine any SPDK bdevs into one RAID bdev. Currently SPDK supports only RAID 0. RAID metadata may be stored on member disks if enabled when creating the RAID bdev, so user does not have to recreate the RAID volume when restarting application. It is not enabled by default for backward compatibility. User may specify member disks to create RAID volume even if they do not exist yet - as the member disks are registered at a later time, the RAID module will claim them and will surface the RAID volume after all of the member disks are available. It is allowed to use disks of different sizes - the smallest disk size will be the amount of space used on each member disk.</p>
+<p>RAID virtual bdev module provides functionality to combine any SPDK bdevs into one RAID bdev. Currently SPDK supports RAID0, Concat, RAID1 and RAID5F levels. To enable RAID5F, configure SPDK using the <code>--with-raid5f</code> option. For RAID levels with redundancy (1 and 5F) degraded operation and rebuild are supported. RAID metadata may be stored on member disks if enabled when creating the RAID bdev, so user does not have to recreate the RAID volume when restarting application. It is not enabled by default for backward compatibility. User may specify member disks to create RAID volume even if they do not exist yet - as the member disks are registered at a later time, the RAID module will claim them and will surface the RAID volume after all of the member disks are available. It is allowed to use disks of different sizes - the smallest disk size will be the amount of space used on each member disk.</p>
 <p>Example commands</p>
 <p><code>rpc.py bdev_raid_create -n Raid0 -z 64 -r 0 -b "lvol0 lvol1 lvol2 lvol3"</code></p>
 <p><code>rpc.py bdev_raid_get_bdevs</code></p>

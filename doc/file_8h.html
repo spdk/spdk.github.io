@@ -100,6 +100,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a9d88b741d9149009e0d437e1bfaa6cda"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="file_8h.html#a9d88b741d9149009e0d437e1bfaa6cda">spdk_posix_file_load</a> (FILE *file, size_t *size)</td></tr>
 <tr class="memdesc:a9d88b741d9149009e0d437e1bfaa6cda"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load the input file content into a data buffer.  <a href="file_8h.html#a9d88b741d9149009e0d437e1bfaa6cda">More...</a><br /></td></tr>
 <tr class="separator:a9d88b741d9149009e0d437e1bfaa6cda"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a840cfdaff8ba258fb462166c265f0d86"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="file_8h.html#a840cfdaff8ba258fb462166c265f0d86">spdk_posix_file_load_from_name</a> (const char *file_name, size_t *size)</td></tr>
+<tr class="memdesc:a840cfdaff8ba258fb462166c265f0d86"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load content of a given file name into a data buffer.  <a href="file_8h.html#a840cfdaff8ba258fb462166c265f0d86">More...</a><br /></td></tr>
+<tr class="separator:a840cfdaff8ba258fb462166c265f0d86"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>file operation functions </p>
@@ -139,6 +142,44 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>data contains the content on success, NULL on failure. </dd></dl>
+
+</div>
+</div>
+<a id="a840cfdaff8ba258fb462166c265f0d86"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a840cfdaff8ba258fb462166c265f0d86">&#9670;&nbsp;</a></span>spdk_posix_file_load_from_name()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* spdk_posix_file_load_from_name </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>file_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t *&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Load content of a given file name into a data buffer. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">file_name</td><td>File name. </td></tr>
+    <tr><td class="paramname">size</td><td>Size of bytes read from the file.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>data containing the content on success, NULL on failure. </dd></dl>
 
 </div>
 </div>

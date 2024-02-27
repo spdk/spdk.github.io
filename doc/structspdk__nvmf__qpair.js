@@ -9,9 +9,10 @@ var structspdk__nvmf__qpair =
     [ "first_fused_req", "structspdk__nvmf__qpair.html#a2fd38a526e3d5d07cde1b52cf5fda6d8", null ],
     [ "group", "structspdk__nvmf__qpair.html#a993b86bef0d64d282753f924cdb6de02", null ],
     [ "qid", "structspdk__nvmf__qpair.html#aecc6801664b3940edae8ee58e8438c33", null ],
+    [ "rsvd", "structspdk__nvmf__qpair.html#ab4543bec85b894782b50d363b9733588", null ],
     [ "sq_head", "structspdk__nvmf__qpair.html#a598e955b75f6ca4576fdad98c43e6487", null ],
     [ "sq_head_max", "structspdk__nvmf__qpair.html#a0e2e7f8b9bb90bf1d0b0ed9e197cd290", null ],
-    [ "state", "structspdk__nvmf__qpair.html#a44e9be1f9f7b8607613f1caee777d9f9", null ],
+    [ "state", "structspdk__nvmf__qpair.html#a04abd14ea45e52e6b1fef636c034e228", null ],
     [ "state_cb", "structspdk__nvmf__qpair.html#a68b1d54cc3ea7e337043f4dabfa9b859", null ],
     [ "state_cb_arg", "structspdk__nvmf__qpair.html#ad96a9ac0798e15ef97e0890d3aabd591", null ],
     [ "transport", "structspdk__nvmf__qpair.html#add3a2107b9b45be02b7319571960e5d4", null ]

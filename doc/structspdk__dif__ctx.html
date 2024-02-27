@@ -101,6 +101,10 @@ Data Fields</h2></td></tr>
 uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__dif__ctx.html#a2853eeaf8a9c7bb372d4632748c5105a">block_size</a></td></tr>
 <tr class="memdesc:a2853eeaf8a9c7bb372d4632748c5105a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Block size. <br /></td></tr>
 <tr class="separator:a2853eeaf8a9c7bb372d4632748c5105a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a593aef5de5694c4abd05554ed4ac92a7"><td class="memItemLeft" align="right" valign="top"><a id="a593aef5de5694c4abd05554ed4ac92a7"></a>
+uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__dif__ctx.html#a593aef5de5694c4abd05554ed4ac92a7">guard_interval</a></td></tr>
+<tr class="memdesc:a593aef5de5694c4abd05554ed4ac92a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interval for guard computation for DIF. <br /></td></tr>
+<tr class="separator:a593aef5de5694c4abd05554ed4ac92a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a70bae2b0c71c14a91163f89d4e215802"><td class="memItemLeft" align="right" valign="top"><a id="a70bae2b0c71c14a91163f89d4e215802"></a>
 uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__dif__ctx.html#a70bae2b0c71c14a91163f89d4e215802">md_size</a></td></tr>
 <tr class="memdesc:a70bae2b0c71c14a91163f89d4e215802"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metadata size. <br /></td></tr>
@@ -109,21 +113,23 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__dif__ctx.html#a341adc2959c3449ba630601ebfb14cb9">md_interleave</a></td></tr>
 <tr class="memdesc:a341adc2959c3449ba630601ebfb14cb9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metadata location. <br /></td></tr>
 <tr class="separator:a341adc2959c3449ba630601ebfb14cb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a593aef5de5694c4abd05554ed4ac92a7"><td class="memItemLeft" align="right" valign="top"><a id="a593aef5de5694c4abd05554ed4ac92a7"></a>
-uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__dif__ctx.html#a593aef5de5694c4abd05554ed4ac92a7">guard_interval</a></td></tr>
-<tr class="memdesc:a593aef5de5694c4abd05554ed4ac92a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interval for guard computation for DIF. <br /></td></tr>
-<tr class="separator:a593aef5de5694c4abd05554ed4ac92a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a87509f51370bf129ab20993e1695c66a"><td class="memItemLeft" align="right" valign="top"><a id="a87509f51370bf129ab20993e1695c66a"></a>
-enum spdk_dif_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__dif__ctx.html#a87509f51370bf129ab20993e1695c66a">dif_type</a></td></tr>
-<tr class="memdesc:a87509f51370bf129ab20993e1695c66a"><td class="mdescLeft">&#160;</td><td class="mdescRight">DIF type. <br /></td></tr>
-<tr class="separator:a87509f51370bf129ab20993e1695c66a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2342657f5bbd67bfdd4c7e460af5ff8c"><td class="memItemLeft" align="right" valign="top"><a id="a2342657f5bbd67bfdd4c7e460af5ff8c"></a>
-enum spdk_dif_pi_format&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__dif__ctx.html#a2342657f5bbd67bfdd4c7e460af5ff8c">dif_pi_format</a></td></tr>
-<tr class="memdesc:a2342657f5bbd67bfdd4c7e460af5ff8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">DIF Protection Information format. <br /></td></tr>
-<tr class="separator:a2342657f5bbd67bfdd4c7e460af5ff8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74a53ae88b8d68eeaaf3dd3f8890aa79"><td class="memItemLeft" align="right" valign="top"><a id="a74a53ae88b8d68eeaaf3dd3f8890aa79"></a>
+uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__dif__ctx.html#a74a53ae88b8d68eeaaf3dd3f8890aa79">dif_type</a></td></tr>
+<tr class="memdesc:a74a53ae88b8d68eeaaf3dd3f8890aa79"><td class="mdescLeft">&#160;</td><td class="mdescRight">DIF type. <br /></td></tr>
+<tr class="separator:a74a53ae88b8d68eeaaf3dd3f8890aa79"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1a89eaf588c33974026520788e5b026"><td class="memItemLeft" align="right" valign="top"><a id="ad1a89eaf588c33974026520788e5b026"></a>
+uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__dif__ctx.html#ad1a89eaf588c33974026520788e5b026">dif_pi_format</a></td></tr>
+<tr class="memdesc:ad1a89eaf588c33974026520788e5b026"><td class="mdescLeft">&#160;</td><td class="mdescRight">DIF Protection Information format. <br /></td></tr>
+<tr class="separator:ad1a89eaf588c33974026520788e5b026"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb99f9ece7a58847701ea78810bae7f0"><td class="memItemLeft" align="right" valign="top"><a id="adb99f9ece7a58847701ea78810bae7f0"></a>
+uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>rsvd</b> [1]</td></tr>
+<tr class="separator:adb99f9ece7a58847701ea78810bae7f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a49e9befa6a66be7c01205a42f3746bb5"><td class="memItemLeft" align="right" valign="top"><a id="a49e9befa6a66be7c01205a42f3746bb5"></a>
 uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>dif_flags</b></td></tr>
 <tr class="separator:a49e9befa6a66be7c01205a42f3746bb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0f6908c0f539696823d08ce36166437"><td class="memItemLeft" align="right" valign="top"><a id="ac0f6908c0f539696823d08ce36166437"></a>
+uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>rsvd2</b> [4]</td></tr>
+<tr class="separator:ac0f6908c0f539696823d08ce36166437"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a417ad87cea53a4eb434b5e050ee31b6f"><td class="memItemLeft" align="right" valign="top"><a id="a417ad87cea53a4eb434b5e050ee31b6f"></a>
 uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>init_ref_tag</b></td></tr>
 <tr class="separator:a417ad87cea53a4eb434b5e050ee31b6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -140,15 +146,15 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>data_offset</b></
 <tr class="memitem:aef0637cad47cfd8bc20bb0f085c59479"><td class="memItemLeft" align="right" valign="top"><a id="aef0637cad47cfd8bc20bb0f085c59479"></a>
 uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>ref_tag_offset</b></td></tr>
 <tr class="separator:aef0637cad47cfd8bc20bb0f085c59479"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adac7e6a0e70395682a50e1b3d678d792"><td class="memItemLeft" align="right" valign="top"><a id="adac7e6a0e70395682a50e1b3d678d792"></a>
+uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>remapped_init_ref_tag</b></td></tr>
+<tr class="separator:adac7e6a0e70395682a50e1b3d678d792"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa016934bdac704aa8f170a2e2a891a30"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__dif__ctx.html#aa016934bdac704aa8f170a2e2a891a30">last_guard</a></td></tr>
 <tr class="memdesc:aa016934bdac704aa8f170a2e2a891a30"><td class="mdescLeft">&#160;</td><td class="mdescRight">Guard value of the last data block.  <a href="structspdk__dif__ctx.html#aa016934bdac704aa8f170a2e2a891a30">More...</a><br /></td></tr>
 <tr class="separator:aa016934bdac704aa8f170a2e2a891a30"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0e60ef9f51ed777000ad09925489d498"><td class="memItemLeft" align="right" valign="top"><a id="a0e60ef9f51ed777000ad09925489d498"></a>
 uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>guard_seed</b></td></tr>
 <tr class="separator:a0e60ef9f51ed777000ad09925489d498"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adac7e6a0e70395682a50e1b3d678d792"><td class="memItemLeft" align="right" valign="top"><a id="adac7e6a0e70395682a50e1b3d678d792"></a>
-uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>remapped_init_ref_tag</b></td></tr>
-<tr class="separator:adac7e6a0e70395682a50e1b3d678d792"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>DIF context information. </p>

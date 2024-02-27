@@ -125,21 +125,33 @@ Functions</h2></td></tr>
 &#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_STATIC_ASSERT</b> (sizeof(struct <a class="el" href="structspdk__rpc__opts.html">spdk_rpc_opts</a>)==24, &quot;Incorrect size&quot;)</td></tr>
 <tr class="separator:ab1b5e218b85909016c3fcdce196e199f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adbfa73a5f5120e5a80d7b33beb7df862"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="init_8h.html#adbfa73a5f5120e5a80d7b33beb7df862">spdk_rpc_initialize</a> (const char *listen_addr, const struct <a class="el" href="structspdk__rpc__opts.html">spdk_rpc_opts</a> *opts)</td></tr>
-<tr class="memdesc:adbfa73a5f5120e5a80d7b33beb7df862"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create the SPDK JSON-RPC server and listen at the provided address.  <a href="init_8h.html#adbfa73a5f5120e5a80d7b33beb7df862">More...</a><br /></td></tr>
+<tr class="memdesc:adbfa73a5f5120e5a80d7b33beb7df862"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create SPDK JSON-RPC server listening at provided address and start polling it for connections.  <a href="init_8h.html#adbfa73a5f5120e5a80d7b33beb7df862">More...</a><br /></td></tr>
 <tr class="separator:adbfa73a5f5120e5a80d7b33beb7df862"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ada2202d341585d983143604ff93fa411"><td class="memItemLeft" align="right" valign="top"><a id="ada2202d341585d983143604ff93fa411"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="init_8h.html#ada2202d341585d983143604ff93fa411">spdk_rpc_finish</a> (void)</td></tr>
-<tr class="memdesc:ada2202d341585d983143604ff93fa411"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shut down the SPDK JSON-RPC target. <br /></td></tr>
+<tr class="memdesc:ada2202d341585d983143604ff93fa411"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stop SPDK JSON-RPC servers and stop polling for new connections on all addresses. <br /></td></tr>
 <tr class="separator:ada2202d341585d983143604ff93fa411"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f4013cbc668e68ff1698c3f5aecb716"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="init_8h.html#a9f4013cbc668e68ff1698c3f5aecb716">spdk_rpc_server_finish</a> (const char *listen_addr)</td></tr>
+<tr class="memdesc:a9f4013cbc668e68ff1698c3f5aecb716"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stop SPDK JSON-RPC server and stop polling for new connections on provided address.  <a href="init_8h.html#a9f4013cbc668e68ff1698c3f5aecb716">More...</a><br /></td></tr>
+<tr class="separator:a9f4013cbc668e68ff1698c3f5aecb716"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa0d0a3b14e1b3dbbfdc5868167099ef1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="init_8h.html#aa0d0a3b14e1b3dbbfdc5868167099ef1">spdk_subsystem_init</a> (spdk_subsystem_init_fn cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:aa0d0a3b14e1b3dbbfdc5868167099ef1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Begin the initialization process for all SPDK subsystems.  <a href="init_8h.html#aa0d0a3b14e1b3dbbfdc5868167099ef1">More...</a><br /></td></tr>
 <tr class="separator:aa0d0a3b14e1b3dbbfdc5868167099ef1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab7168c69aeb807fe235c2d1d6900ca72"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="init_8h.html#ab7168c69aeb807fe235c2d1d6900ca72">spdk_subsystem_init_from_json_config</a> (const char *json_config_file, const char *rpc_addr, spdk_subsystem_init_fn cb_fn, void *cb_arg, bool stop_on_error)</td></tr>
 <tr class="memdesc:ab7168c69aeb807fe235c2d1d6900ca72"><td class="mdescLeft">&#160;</td><td class="mdescRight">Like spdk_subsystem_init, but additionally configure each subsystem using the provided JSON config file.  <a href="init_8h.html#ab7168c69aeb807fe235c2d1d6900ca72">More...</a><br /></td></tr>
 <tr class="separator:ab7168c69aeb807fe235c2d1d6900ca72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad851acebf6332da09dd01d52d5146d15"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="init_8h.html#ad851acebf6332da09dd01d52d5146d15">spdk_subsystem_load_config</a> (void *json, ssize_t json_size, spdk_subsystem_init_fn cb_fn, void *cb_arg, bool stop_on_error)</td></tr>
+<tr class="memdesc:ad851acebf6332da09dd01d52d5146d15"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads RPC configuration from provided JSON for current RPC state.  <a href="init_8h.html#ad851acebf6332da09dd01d52d5146d15">More...</a><br /></td></tr>
+<tr class="separator:ad851acebf6332da09dd01d52d5146d15"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4beb9b1736d0ae82c2a5e764e1c5687b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="init_8h.html#a4beb9b1736d0ae82c2a5e764e1c5687b">spdk_subsystem_fini</a> (spdk_subsystem_fini_fn cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:a4beb9b1736d0ae82c2a5e764e1c5687b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tear down all of the subsystems in the correct order.  <a href="init_8h.html#a4beb9b1736d0ae82c2a5e764e1c5687b">More...</a><br /></td></tr>
 <tr class="separator:a4beb9b1736d0ae82c2a5e764e1c5687b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5bd2a5ffa3a9904a6f175afc4ad5fc8f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="init_8h.html#a5bd2a5ffa3a9904a6f175afc4ad5fc8f">spdk_rpc_server_pause</a> (const char *listen_addr)</td></tr>
+<tr class="memdesc:a5bd2a5ffa3a9904a6f175afc4ad5fc8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pause polling RPC server with given address.  <a href="init_8h.html#a5bd2a5ffa3a9904a6f175afc4ad5fc8f">More...</a><br /></td></tr>
+<tr class="separator:a5bd2a5ffa3a9904a6f175afc4ad5fc8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a069c527c0dc5ddb12c8bf2adc5aa2f92"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="init_8h.html#a069c527c0dc5ddb12c8bf2adc5aa2f92">spdk_rpc_server_resume</a> (const char *listen_addr)</td></tr>
+<tr class="memdesc:a069c527c0dc5ddb12c8bf2adc5aa2f92"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resume polling RPC server with given address.  <a href="init_8h.html#a069c527c0dc5ddb12c8bf2adc5aa2f92">More...</a><br /></td></tr>
+<tr class="separator:a069c527c0dc5ddb12c8bf2adc5aa2f92"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>SPDK Initialization Helper. </p>
@@ -170,7 +182,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="init
       </table>
 </div><div class="memdoc">
 
-<p>Create the SPDK JSON-RPC server and listen at the provided address. </p>
+<p>Create SPDK JSON-RPC server listening at provided address and start polling it for connections. </p>
 <p>The RPC server is optional and is independent of subsystem initialization. The RPC server can be started and stopped at any time.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -180,6 +192,84 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="init
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Negated errno on failure. 0 on success. </dd></dl>
+
+</div>
+</div>
+<a id="a9f4013cbc668e68ff1698c3f5aecb716"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9f4013cbc668e68ff1698c3f5aecb716">&#9670;&nbsp;</a></span>spdk_rpc_server_finish()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_rpc_server_finish </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>listen_addr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Stop SPDK JSON-RPC server and stop polling for new connections on provided address. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">listen_addr</td><td>Path to a unix domain socket. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a5bd2a5ffa3a9904a6f175afc4ad5fc8f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5bd2a5ffa3a9904a6f175afc4ad5fc8f">&#9670;&nbsp;</a></span>spdk_rpc_server_pause()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_rpc_server_pause </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>listen_addr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Pause polling RPC server with given address. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">listen_addr</td><td>Address, on which RPC server listens for connections. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a069c527c0dc5ddb12c8bf2adc5aa2f92"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a069c527c0dc5ddb12c8bf2adc5aa2f92">&#9670;&nbsp;</a></span>spdk_rpc_server_resume()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_rpc_server_resume </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>listen_addr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Resume polling RPC server with given address. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">listen_addr</td><td>Address, on which RPC server listens for connections. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -304,10 +394,70 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="init
 
 <p>Like spdk_subsystem_init, but additionally configure each subsystem using the provided JSON config file. </p>
 <p>This will automatically start a JSON RPC server and then stop it.</p>
+<p>Deprecated - will be removed in 24.09 SPDK release. Please use <a class="el" href="init_8h.html#ad851acebf6332da09dd01d52d5146d15">spdk_subsystem_load_config</a>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">json_config_file</td><td>Path to a JSON config file. </td></tr>
     <tr><td class="paramname">rpc_addr</td><td>Path to a unix domain socket to send configuration RPCs to. </td></tr>
+    <tr><td class="paramname">cb_fn</td><td>Function called when the process is complete. </td></tr>
+    <tr><td class="paramname">cb_arg</td><td>User context passed to cb_fn. </td></tr>
+    <tr><td class="paramname">stop_on_error</td><td>Whether to stop initialization if one of the JSON RPCs fails. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ad851acebf6332da09dd01d52d5146d15"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad851acebf6332da09dd01d52d5146d15">&#9670;&nbsp;</a></span>spdk_subsystem_load_config()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_subsystem_load_config </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>json</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ssize_t&#160;</td>
+          <td class="paramname"><em>json_size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">spdk_subsystem_init_fn&#160;</td>
+          <td class="paramname"><em>cb_fn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>cb_arg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>stop_on_error</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Loads RPC configuration from provided JSON for current RPC state. </p>
+<p>The function will automatically start a JSON RPC server for configuration purposes and then stop it. JSON data will be copied, so parsing will not disturb the original memory.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">json</td><td>Raw JSON data. </td></tr>
+    <tr><td class="paramname">json_size</td><td>Size of JSON data. </td></tr>
     <tr><td class="paramname">cb_fn</td><td>Function called when the process is complete. </td></tr>
     <tr><td class="paramname">cb_arg</td><td>User context passed to cb_fn. </td></tr>
     <tr><td class="paramname">stop_on_error</td><td>Whether to stop initialization if one of the JSON RPCs fails. </td></tr>

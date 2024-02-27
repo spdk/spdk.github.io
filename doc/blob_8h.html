@@ -193,8 +193,11 @@ Functions</h2></td></tr>
 <tr class="memdesc:a400da20b69e4f914730fbd15d51eb748"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load a blobstore from the given device.  <a href="blob_8h.html#a400da20b69e4f914730fbd15d51eb748">More...</a><br /></td></tr>
 <tr class="separator:a400da20b69e4f914730fbd15d51eb748"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0fc717fee381a5dd5c6e1e6f979f1202"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blob_8h.html#a0fc717fee381a5dd5c6e1e6f979f1202">spdk_bs_grow</a> (struct <a class="el" href="structspdk__bs__dev.html">spdk_bs_dev</a> *dev, struct <a class="el" href="structspdk__bs__opts.html">spdk_bs_opts</a> *opts, <a class="el" href="blob_8h.html#a40a976910f2112a4164ae6a12b946855">spdk_bs_op_with_handle_complete</a> cb_fn, void *cb_arg)</td></tr>
-<tr class="memdesc:a0fc717fee381a5dd5c6e1e6f979f1202"><td class="mdescLeft">&#160;</td><td class="mdescRight">Grow a blobstore to fill the underlying device.  <a href="blob_8h.html#a0fc717fee381a5dd5c6e1e6f979f1202">More...</a><br /></td></tr>
+<tr class="memdesc:a0fc717fee381a5dd5c6e1e6f979f1202"><td class="mdescLeft">&#160;</td><td class="mdescRight">Grow a blobstore to fill the underlying device Cannot be used on loaded blobstore.  <a href="blob_8h.html#a0fc717fee381a5dd5c6e1e6f979f1202">More...</a><br /></td></tr>
 <tr class="separator:a0fc717fee381a5dd5c6e1e6f979f1202"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1bd61903827b230cf2f6d25fb321e8d0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blob_8h.html#a1bd61903827b230cf2f6d25fb321e8d0">spdk_bs_grow_live</a> (struct spdk_blob_store *bs, <a class="el" href="blob_8h.html#a9c265d4eead39c3419cee4b620bf5052">spdk_bs_op_complete</a> cb_fn, void *cb_arg)</td></tr>
+<tr class="memdesc:a1bd61903827b230cf2f6d25fb321e8d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Grow a blobstore to fill the underlying device.  <a href="blob_8h.html#a1bd61903827b230cf2f6d25fb321e8d0">More...</a><br /></td></tr>
+<tr class="separator:a1bd61903827b230cf2f6d25fb321e8d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad59f1d147b612a7d4ce1eb8439a69cee"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blob_8h.html#ad59f1d147b612a7d4ce1eb8439a69cee">spdk_bs_init</a> (struct <a class="el" href="structspdk__bs__dev.html">spdk_bs_dev</a> *dev, struct <a class="el" href="structspdk__bs__opts.html">spdk_bs_opts</a> *opts, <a class="el" href="blob_8h.html#a40a976910f2112a4164ae6a12b946855">spdk_bs_op_with_handle_complete</a> cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:ad59f1d147b612a7d4ce1eb8439a69cee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize a blobstore on the given device.  <a href="blob_8h.html#ad59f1d147b612a7d4ce1eb8439a69cee">More...</a><br /></td></tr>
 <tr class="separator:ad59f1d147b612a7d4ce1eb8439a69cee"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -2899,12 +2902,57 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Grow a blobstore to fill the underlying device. </p>
+<p>Grow a blobstore to fill the underlying device Cannot be used on loaded blobstore. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">dev</td><td>Blobstore block device. </td></tr>
     <tr><td class="paramname">opts</td><td>The structure which contains the option values for the blobstore. </td></tr>
     <tr><td class="paramname">cb_fn</td><td>Called when the loading is complete. </td></tr>
+    <tr><td class="paramname">cb_arg</td><td>Argument passed to function cb_fn. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a1bd61903827b230cf2f6d25fb321e8d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1bd61903827b230cf2f6d25fb321e8d0">&#9670;&nbsp;</a></span>spdk_bs_grow_live()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_bs_grow_live </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_blob_store *&#160;</td>
+          <td class="paramname"><em>bs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="blob_8h.html#a9c265d4eead39c3419cee4b620bf5052">spdk_bs_op_complete</a>&#160;</td>
+          <td class="paramname"><em>cb_fn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>cb_arg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Grow a blobstore to fill the underlying device. </p>
+<p>Can be used on loaded blobstore, even with opened blobs.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bs</td><td>blobstore to grow. </td></tr>
+    <tr><td class="paramname">cb_fn</td><td>Called when the growing is complete. </td></tr>
     <tr><td class="paramname">cb_arg</td><td>Argument passed to function cb_fn. </td></tr>
   </table>
   </dd>

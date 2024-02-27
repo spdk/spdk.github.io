@@ -123,8 +123,8 @@ Enabling Tracepoints</h1>
 </div><!-- fragment --><p>Note that when tracepoints are enabled, the shared memory files are not deleted when the application exits. This ensures the file can be used for analysis after the application exits. On Linux, the shared memory files are in /dev/shm, and can be deleted manually to free shm space if needed. A system reboot will also free all of the /dev/shm files.</p>
 <h1><a class="anchor" id="capture_tracepoints"></a>
 Capturing a snapshot of events</h1>
-<p>Send I/Os to the SPDK target application to generate events. The following is an example usage of perf to send I/Os to the NVMe-oF target over an RDMA network interface for 10 minutes.</p>
-<div class="fragment"><div class="line">./perf -q 128 -o 4096 -w randread -t 600 -r &#39;trtype:RDMA adrfam:IPv4 traddr:192.168.100.2 trsvcid:4420&#39;</div>
+<p>Send I/Os to the SPDK target application to generate events. The following is an example usage of spdk_nvme_perf to send I/Os to the NVMe-oF target over an RDMA network interface for 10 minutes.</p>
+<div class="fragment"><div class="line">spdk_nvme_perf -q 128 -o 4096 -w randread -t 600 -r &#39;trtype:RDMA adrfam:IPv4 traddr:192.168.100.2 trsvcid:4420&#39;</div>
 </div><!-- fragment --><p>The spdk_trace program can be found in the app/trace directory. To analyze the tracepoints on the same system running the NVMe-oF target, simply execute the command line shown in the log:</p>
 <div class="fragment"><div class="line">build/bin/spdk_trace -s nvmf -p 24147</div>
 </div><!-- fragment --><p>To analyze the tracepoints on a different system, first prepare the tracepoint file for transfer. The tracepoint file can be large, but usually compresses very well. This step can also be used to prepare a tracepoint file to attach to a GitHub issue for debugging NVMe-oF application crashes.</p>
@@ -182,7 +182,7 @@ Capturing sufficient trace events</h1>
 <p>Since the tracepoint file generated directly by SPDK application is a circular buffer in shared memory, the trace events captured by it may be insufficient for further analysis. The spdk_trace_record program can be found in the app/trace_record directory. spdk_trace_record is used to poll the spdk tracepoint shared memory, record new entries from it, and store all entries into specified output file at its shutdown on SIGINT or SIGTERM. After SPDK nvmf target is launched, simply execute the command line shown in the log:</p>
 <div class="fragment"><div class="line">build/bin/spdk_trace_record -q -s nvmf -p 24147 -f /tmp/spdk_nvmf_record.trace</div>
 </div><!-- fragment --><p>Also send I/Os to the SPDK target application to generate events by previous perf example for 10 minutes.</p>
-<div class="fragment"><div class="line">./perf -q 128 -o 4096 -w randread -t 600 -r &#39;trtype:RDMA adrfam:IPv4 traddr:192.168.100.2 trsvcid:4420&#39;</div>
+<div class="fragment"><div class="line">spdk_nvme_perf -q 128 -o 4096 -w randread -t 600 -r &#39;trtype:RDMA adrfam:IPv4 traddr:192.168.100.2 trsvcid:4420&#39;</div>
 </div><!-- fragment --><p>After the completion of perf example, shut down spdk_trace_record by signal SIGINT (Ctrl + C). To analyze the tracepoints output file from spdk_trace_record, simply run spdk_trace program by:</p>
 <div class="fragment"><div class="line">build/bin/spdk_trace -f /tmp/spdk_nvmf_record.trace</div>
 </div><!-- fragment --><h1><a class="anchor" id="add_tracepoints"></a>
@@ -220,7 +220,7 @@ Adding New Tracepoints</h1>
 <div class="line">        <a class="code" href="trace_8h.html#a583c35dff93e5c996bd7115c4593a457">spdk_trace_record</a>(RDMA_REQUEST_STATE_DATA_TRANSFER_TO_CONTROLLER_PENDING, 0, 0,</div>
 <div class="line">                (uintptr_t)rdma_req, (uintptr_t)rqpair);</div>
 <div class="line">        ...</div>
-<div class="ttc" id="atrace_8h_html_a583c35dff93e5c996bd7115c4593a457"><div class="ttname"><a href="trace_8h.html#a583c35dff93e5c996bd7115c4593a457">spdk_trace_record</a></div><div class="ttdeci">#define spdk_trace_record(tpoint_id, poller_id, size, object_id,...)</div><div class="ttdoc">Record the current trace state for tracing tpoints.</div><div class="ttdef"><b>Definition:</b> trace.h:224</div></div>
+<div class="ttc" id="atrace_8h_html_a583c35dff93e5c996bd7115c4593a457"><div class="ttname"><a href="trace_8h.html#a583c35dff93e5c996bd7115c4593a457">spdk_trace_record</a></div><div class="ttdeci">#define spdk_trace_record(tpoint_id, poller_id, size, object_id,...)</div><div class="ttdoc">Record the current trace state for tracing tpoints.</div><div class="ttdef"><b>Definition:</b> trace.h:226</div></div>
 </div><!-- fragment --><p>All the tracing functions are documented in the <a href="https://spdk.io/doc/trace_8h.html">Tracepoint library documentation</a> </p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->

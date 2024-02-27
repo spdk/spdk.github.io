@@ -90,23 +90,71 @@ $(document).ready(function(){initNavTree('changelog.html',''); initResizable(); 
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><p><a class="anchor" id="md_changelog"></a> </p>
-<h1><a class="anchor" id="changelog-v24-01"></a>
-v24.01: (Upcoming Release)</h1>
+<h1><a class="anchor" id="changelog-v24-05"></a>
+v24.05: (Upcoming Release)</h1>
+<h2>event</h2>
+<p>SPDK applications can now start with <code>--wait-for-rpc</code> and JSON configuration provided at the same time.</p>
+<h2>init</h2>
+<p>Function <code>spdk_subsystem_init_from_json_config</code> is deprecated and will be removed in 24.09 release. Please use <code>spdk_subsystem_load_config</code> instead.</p>
+<h2>nvme</h2>
+<p>Added <code>spdk_nvme_ctrlr_get_max_sges</code>.</p>
+<h2>bdev_uring</h2>
+<p>Added <code>bdev_uring_rescan</code> RPC to allow rescaning the size of uring bdev.</p>
+<h2>iscsi</h2>
+<p>Added <code>iscsi_get_stats</code> RPC method to get stat information about all active connections.</p>
+<h1>v24.01</h1>
+<h2>accel</h2>
+<p>Added support for new operations for computing Data Integrity Field (DIF), <code><a class="el" href="accel_8h.html#a9c58d3dae8d2ffb15a7cb582ac503bac" title="Submit a Data Integrity Field (DIF) verify request.">spdk_accel_submit_dif_verify()</a></code>, <code><a class="el" href="accel_8h.html#a2d32c08aceebbe4ccb842a33fc3f0e5e" title="Submit a Data Integrity Field (DIF) generate request.">spdk_accel_submit_dif_generate()</a></code> and <code><a class="el" href="accel_8h.html#a2289636004169b418ed4e2a86217e4ff" title="Submit a Data Integrity Field (DIF) copy and generate request.">spdk_accel_submit_dif_generate_copy()</a></code>.</p>
+<p>Added <code><a class="el" href="accel_8h.html#a72b6ffa90024fbdef55aae9a37cc71b0" title="Return the name of an operation based on the opcode.">spdk_accel_get_opcode_name()</a></code> API that returns name of an operation.</p>
+<p>Added <code>spdk_accel_get_module()</code> API that returns pointer to a module.</p>
+<p>Added optional <code>init()</code> and <code>fini()</code> callbacks to <code><a class="el" href="structspdk__accel__driver.html" title="Platform driver responsible for executing tasks in a sequence.">spdk_accel_driver</a></code> in order to allow drivers to initialize and clean up resources by the driver.</p>
+<h2>accel_error</h2>
+<p>Added new <code>error</code> accel module that allows user to inject error to selected accel operations.</p>
+<h2>bdev</h2>
+<p>Added <code><a class="el" href="group__bdev__io__submit__functions.html#ga42545d4c7c98398a8750a30b26167a3d" title="Submit an NVMe I/O command to the bdev.">spdk_bdev_nvme_iov_passthru_md()</a></code> API to allow sending larger passthru commands.</p>
+<p>Added <code>max_rw_size</code> field to <code><a class="el" href="structspdk__bdev.html">spdk_bdev</a></code> structure allowing bdev modules to specify maximum size of an I/O.</p>
+<p>Added <code>iobuf_small_cache_size</code> and <code>iobuf_large_cache_size</code> parameters to <code>bdev_set_options</code> RPC making iobuf use in bdev configurable.</p>
+<h2>bdev_raid</h2>
+<p>Added support for rebuild in raid1 and raid5f levels.</p>
+<p>Added <code>superblock</code> argument to <code>bdev_raid_create</code> RPC to allow writing out raid metadata to a superblock. It can be then re-created from examined base bdevs, without the need to issue <code>bdev_raid_create</code>.</p>
+<p>Added <code>bdev_raid_add_base_bdev</code> RPC to add a base bdevs to an existing raid bdev.</p>
+<p>Added <code>bdev_raid_set_options</code> RPC that changes options for raid bdev module, currently allows setting <code>process_window_size_kb</code> affecting background operations like rebuild.</p>
+<h2>blobstore</h2>
+<p>Added <code><a class="el" href="blob_8h.html#a1bd61903827b230cf2f6d25fb321e8d0" title="Grow a blobstore to fill the underlying device.">spdk_bs_grow_live()</a></code> and <code><a class="el" href="blob__bdev_8h.html#a7a00c54abc3873ba2bdd6541ab01dc0e" title="Updates number of blocks of a blobstore block device.">spdk_bdev_update_bs_blockcnt()</a></code> API that can be used to increase size of blobstore filling the underlying device without first closing the blobstore.</p>
+<h2>env</h2>
+<p>Added SPDK command line parameter <code>--no-huge</code>, which enables SPDK to run without hugepages.</p>
+<h2>event</h2>
+<p>Added SPDK command line parameter <code>--interrupt-mode</code>, which enables to run SPDK in interrupt mode. Effective only if all components used in the application, support interrupt mode.</p>
+<h2>ftl</h2>
+<p>Added <code>rpc_bdev_ftl_get_properties</code> and <code>bdev_ftl_set_property</code> RPC with matching API calls, to allow modification of FTL device properties.</p>
+<h2>idxd</h2>
+<p>Added <code><a class="el" href="idxd_8h.html#a100dd0931609fd0604282bd0ba0d88cd" title="Build and submit a DIF check request.">spdk_idxd_submit_dif_check()</a></code> and <code><a class="el" href="idxd_8h.html#a5bf4736bd1b3e0ecfc19e51894c52bf0" title="Build and submit a DIF insert request.">spdk_idxd_submit_dif_insert()</a></code> API to support new operations for computing Data Integrity Field (DIF).</p>
+<h2>json</h2>
+<p>Added <code>spdk_json_write_uuid()</code>, <code>spdk_json_write_named_uuid()</code> and <code>spdk_json_decode_uuid()</code> to help with writing and decoding UUID.</p>
+<h2>nvme</h2>
+<p>A new transport option <code>rdma_max_cq_size</code> was added to limit indefinite growth of CQ size.</p>
+<p>Added <code><a class="el" href="nvme_8h.html#a1ea63282a56675a3922c8abebdc8d0e9" title="Send the given NVM I/O command with metadata to the NVMe controller.">spdk_nvme_ctrlr_cmd_iov_raw_with_md()</a></code> API to allow sending larger passthru commands.</p>
+<h2>nvmf</h2>
+<p>Added <code>max_discard_size_kib</code> and <code>max_write_zeroes_size_kib</code> to <code>nvmf_create_subsystem</code> RPC to set the maximum discard size and maximum write zeroes size.</p>
+<p>Added new optional <code>--ana-state</code> (or shortly <code>-n</code>) parameter to <code>nvmf_subsystem_add_listener</code> RPC.</p>
+<p>Added public APIs <code><a class="el" href="nvmf_8h.html#af2865d5c13e5c7ca972e1577796d8dcf" title="Get whether a subsystem supports Asymmetric Namespace Access (ANA) reporting.">spdk_nvmf_subsystem_get_ana_reporting()</a></code> and <code><a class="el" href="nvmf_8h.html#a9124f6370456043e55419fdf64879c3e" title="Set Asymmetric Namespace Access (ANA) state for the specified ANA group id.">spdk_nvmf_subsystem_set_ana_state()</a></code>, replacing the internal functions <code>nvmf_subsystem_get_ana_reporting()</code> and <code>nvmf_subsystem_set_ana_state()</code> respectively.</p>
+<p>Added support for NVMe-oF referrals in NVMe-oF target with addition of <code><a class="el" href="nvmf_8h.html#aa9a1143157acef6330d8c8c71362793c" title="Add a discovery service referral to an NVMe-oF target.">spdk_nvmf_tgt_add_referral()</a></code> and <code><a class="el" href="nvmf_8h.html#a28824d5f18a5ddf04007906f012199be" title="Remove a discovery service referral from an NVMeoF target.">spdk_nvmf_tgt_remove_referral()</a></code> API and <code>nvmf_discovery_add_referral</code>, <code>nvmf_discovery_remove_referral</code> and <code>nvmf_discovery_get_referrals</code> RPC.</p>
+<p>Added <code><a class="el" href="nvmf_8h.html#ae365f2d881a64ca5adcfe9a179a84597" title="Set custom handlers for namespace reservation operations.">spdk_nvmf_set_custom_ns_reservation_ops()</a></code> API allowing to register custom handlers for reservation operations.</p>
+<h2>scsi</h2>
+<p>Added support for <code>SPDK_SBC_WRITE_SAME_10</code> and <code>SPDK_SBC_WRITE_SAME_16</code>.</p>
+<h2>thread</h2>
+<p>Added <code>iobuf_get_stats</code> RPC and <code><a class="el" href="thread_8h.html#a22cb35e6bb7625b1338c4db9de32bc0f" title="Get iobuf statistics.">spdk_iobuf_get_stats()</a></code> API to track iobuf use across components.</p>
 <h2>trace</h2>
-<p>Added <code>spdk_trace_register_user_thread</code> to initialize trace environment for an user created thread.</p>
-<p>Modified <code>spdk_trace_init</code> to take number of user created threads as a parameter.</p>
+<p>Added <code><a class="el" href="trace_8h.html#a47b2f35adf0e5d3db035c759d6d01c8d" title="Initialize trace environment for an user created thread.">spdk_trace_register_user_thread()</a></code> to initialize trace environment and <code><a class="el" href="trace_8h.html#a2f3c2c36cb52730ac3a98e9d33fd9093" title="De-initialize trace environment for an user created thread.">spdk_trace_unregister_user_thread()</a></code> to de-initialize trace environment for a user created thread.</p>
+<p>Modified <code><a class="el" href="trace_8h.html#a3014ded1a40e39f65b01efe27ec2893c" title="Initialize the trace environment.">spdk_trace_init()</a></code> to take number of user created threads as a parameter.</p>
+<h2>ublk</h2>
+<p>Added <code>ublk_recover_disk</code> RPC to support recovering after restarting ublk target.</p>
 <h2>vhost</h2>
 <p>Added <code>caw_iov</code> field to struct <code><a class="el" href="structspdk__scsi__task.html">spdk_scsi_task</a></code> to support SBC-3 compare_and_write IO.</p>
 <p>Added parameter <code>delay</code> to <code>vhost_create_scsi_controller</code> RPC which allows user to defer starting the vhost-scsi controller until adding the scsi target is completed.</p>
 <p>Added <code>vhost_start_scsi_controller</code> RPC to start vhost-scsi controller, it could be used to support live recovery feature of vhost-scsi target.</p>
-<h2>scsi</h2>
-<p>Added support for <code>SBC WRITE SAME 10</code> and <code>SBC WRITE SAME 16</code>.</p>
-<h2>nvme</h2>
-<p>A new transport option <code>rdma_max_cq_size</code> was added to limit indefinite growth of CQ size.</p>
-<h2>env</h2>
-<p>Added SPDK commandline parameter &ndash;no-huge, which enables SPDK to run without hugepages.</p>
-<h2>nvmf</h2>
-<p>Added <code>max_discard_size_kib</code> and <code>max_write_zeroes_size_kib</code> to <code>nvmf_create_subsystem</code> to set the maximum discard size and maximum write_zeroes size.</p>
+<h2>rpc</h2>
+<p>Functions <code>spdk_rpc_listen</code>, <code>spdk_rpc_accept</code> and <code>spdk_rpc_close</code> are deprecated and will be removed in 24.09 release. Please use <code>spdk_rpc_server_listen</code>, <code>spdk_rpc_server_accept</code> and <code>spdk_rpc_server_close</code> instead.</p>
 <h1>v23.09</h1>
 <h2>accel</h2>
 <p>Added <code><a class="el" href="accel_8h.html#aaebd6fe37b7af8036e42184adc407ce4" title="Get minimum buffer alignment to execute a given operation.">spdk_accel_get_buf_align()</a></code> API to get minimum buffer alignment to execute a given operation.</p>
@@ -125,7 +173,7 @@ v24.01: (Upcoming Release)</h1>
 <h2>go</h2>
 <p>Added JSON-RPC 2.0 client written in Go to ease communication with SPDK. Please see the documentation at <code>go/rpc/</code> and example at <code>examples/go/</code>.</p>
 <h2>init</h2>
-<p>Options for the JSON-RPC server initialization were added. The options are defined via the <code><a class="el" href="structspdk__rpc__opts.html" title="Structure with optional parameters for the JSON-RPC server initialization.">spdk_rpc_opts</a></code> structure and is passed to the existing API <code><a class="el" href="init_8h.html#adbfa73a5f5120e5a80d7b33beb7df862" title="Create the SPDK JSON-RPC server and listen at the provided address.">spdk_rpc_initialize()</a></code> as a new argument. The options include <code>log_file</code> and <code>log_level</code>.</p>
+<p>Options for the JSON-RPC server initialization were added. The options are defined via the <code><a class="el" href="structspdk__rpc__opts.html" title="Structure with optional parameters for the JSON-RPC server initialization.">spdk_rpc_opts</a></code> structure and is passed to the existing API <code><a class="el" href="init_8h.html#adbfa73a5f5120e5a80d7b33beb7df862" title="Create SPDK JSON-RPC server listening at provided address and start polling it for connections.">spdk_rpc_initialize()</a></code> as a new argument. The options include <code>log_file</code> and <code>log_level</code>.</p>
 <h2>intel-ipsec-mb</h2>
 <p>Updated intel-ipsec-mb submodule to v1.4.</p>
 <h2>jsonrpc</h2>
@@ -143,7 +191,6 @@ v24.01: (Upcoming Release)</h1>
 <p>Added <code><a class="el" href="nvmf_8h.html#a264077cd7633ac2103bd4e293e8a94f5" title="Accept new connections on the address provided.">spdk_nvmf_subsystem_add_listener_ext()</a></code> API for accepting new connections on the provided address, now allowing to specify additional options for the listener.</p>
 <p>Deprecated <code><a class="el" href="nvmf_8h.html#afcb0340cf28f2f072bb3fa26c43870ab" title="Check whether a subsystem allows any listen address or only addresses in the allowed list.">spdk_nvmf_subsytem_any_listener_allowed()</a></code> API (to be removed in 24.01) and replaced with <a class="el" href="nvmf_8h.html#a8f4f76f43797274eaf8b08a0894526f6" title="Check whether a subsystem allows any listen address or only addresses in the allowed list.">spdk_nvmf_subsystem_any_listener_allowed()</a>` API fixing the typo.</p>
 <p>Added <code><a class="el" href="nvmf_8h.html#a0241868432ed4cd5687f5add03e52860" title="Checks whether a given subsystem is a discovery subsystem.">spdk_nvmf_subsystem_is_discovery()</a></code> API to check whether a given susbystem is discovery subsystem.</p>
-<p>Added new optional <code>--ana-state</code> (or shortly <code>-n</code>) parameter to nvmf_subsystem_add_listener RPC call.</p>
 <h2>scripts</h2>
 <p><code>setup.sh</code> now supports interactive mode for device selection and hugepage reservation.</p>
 <p>Added <code>backport.sh</code> script that formalizes process of backporting commits from latest SPDK, to specific release branches. Please see <a href="https://spdk.io/doc/backporting.html">documentation</a>.</p>

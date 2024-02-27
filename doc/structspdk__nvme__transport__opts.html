@@ -109,6 +109,9 @@ uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>reserved4</b> [4]<
 <tr class="memitem:af73ccbadbe03ac922c679d8f6f3a959c"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__transport__opts.html#af73ccbadbe03ac922c679d8f6f3a959c">rdma_max_cq_size</a></td></tr>
 <tr class="memdesc:af73ccbadbe03ac922c679d8f6f3a959c"><td class="mdescLeft">&#160;</td><td class="mdescRight">It is used for RDMA transport.  <a href="structspdk__nvme__transport__opts.html#af73ccbadbe03ac922c679d8f6f3a959c">More...</a><br /></td></tr>
 <tr class="separator:af73ccbadbe03ac922c679d8f6f3a959c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf09e7849d03cd976d446b1f2769407f"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__transport__opts.html#acf09e7849d03cd976d446b1f2769407f">rdma_cm_event_timeout_ms</a></td></tr>
+<tr class="memdesc:acf09e7849d03cd976d446b1f2769407f"><td class="mdescLeft">&#160;</td><td class="mdescRight">It is used for RDMA transport.  <a href="structspdk__nvme__transport__opts.html#acf09e7849d03cd976d446b1f2769407f">More...</a><br /></td></tr>
+<tr class="separator:acf09e7849d03cd976d446b1f2769407f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>NVMe transport options. </p>
@@ -127,6 +130,23 @@ uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>reserved4</b> [4]<
 
 <p>The size of <a class="el" href="structspdk__nvme__transport__opts.html" title="NVMe transport options.">spdk_nvme_transport_opts</a> according to the caller of this library is used for ABI compatibility. </p>
 <p>The library uses this field to know how many fields in this structure are valid. And the library will populate any remaining fields with default values. </p>
+
+</div>
+</div>
+<a id="acf09e7849d03cd976d446b1f2769407f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acf09e7849d03cd976d446b1f2769407f">&#9670;&nbsp;</a></span>rdma_cm_event_timeout_ms</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t spdk_nvme_transport_opts::rdma_cm_event_timeout_ms</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>It is used for RDMA transport. </p>
+<p>RDMA CM event timeout in milliseconds. </p>
 
 </div>
 </div>

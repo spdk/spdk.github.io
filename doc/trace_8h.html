@@ -134,6 +134,9 @@ Macros</h2></td></tr>
 <tr class="memitem:a97958aabb667d95c141acf18f42a5000"><td class="memItemLeft" align="right" valign="top"><a id="a97958aabb667d95c141acf18f42a5000"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_TRACE_MAX_OBJECT</b>&#160;&#160;&#160;(UCHAR_MAX + 1)</td></tr>
 <tr class="separator:a97958aabb667d95c141acf18f42a5000"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0428c85707807ebfd031c064eba4a94e"><td class="memItemLeft" align="right" valign="top"><a id="a0428c85707807ebfd031c064eba4a94e"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_TRACE_THREAD_NAME_LEN</b>&#160;&#160;&#160;16</td></tr>
+<tr class="separator:a0428c85707807ebfd031c064eba4a94e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a64816b112e2a33bbcd1ea81cf1d611e8"><td class="memItemLeft" align="right" valign="top"><a id="a64816b112e2a33bbcd1ea81cf1d611e8"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_TRACE_MAX_GROUP_ID</b>&#160;&#160;&#160;16</td></tr>
 <tr class="separator:a64816b112e2a33bbcd1ea81cf1d611e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -228,6 +231,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>_spdk_trace_record</b
 <tr class="memitem:a47b2f35adf0e5d3db035c759d6d01c8d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="trace_8h.html#a47b2f35adf0e5d3db035c759d6d01c8d">spdk_trace_register_user_thread</a> (void)</td></tr>
 <tr class="memdesc:a47b2f35adf0e5d3db035c759d6d01c8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize trace environment for an user created thread.  <a href="trace_8h.html#a47b2f35adf0e5d3db035c759d6d01c8d">More...</a><br /></td></tr>
 <tr class="separator:a47b2f35adf0e5d3db035c759d6d01c8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f3c2c36cb52730ac3a98e9d33fd9093"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="trace_8h.html#a2f3c2c36cb52730ac3a98e9d33fd9093">spdk_trace_unregister_user_thread</a> (void)</td></tr>
+<tr class="memdesc:a2f3c2c36cb52730ac3a98e9d33fd9093"><td class="mdescLeft">&#160;</td><td class="mdescRight">De-initialize trace environment for an user created thread.  <a href="trace_8h.html#a2f3c2c36cb52730ac3a98e9d33fd9093">More...</a><br /></td></tr>
+<tr class="separator:a2f3c2c36cb52730ac3a98e9d33fd9093"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7cdec16a6ee14c87b0bf5d0666d9a0cb"><td class="memItemLeft" align="right" valign="top"><a id="a7cdec16a6ee14c87b0bf5d0666d9a0cb"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="trace_8h.html#a7cdec16a6ee14c87b0bf5d0666d9a0cb">spdk_trace_cleanup</a> (void)</td></tr>
 <tr class="memdesc:a7cdec16a6ee14c87b0bf5d0666d9a0cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unmap global trace memory structs. <br /></td></tr>
@@ -523,7 +529,7 @@ struct <a class="el" href="structspdk__trace__histories.html">spdk_trace_histori
 <div class="line">                spdk_trace_add_register_fn(&amp;reg_ ## fn);        \</div>
 <div class="line">        }                                                       \</div>
 <div class="line">        static <span class="keywordtype">void</span> fn(<span class="keywordtype">void</span>)</div>
-<div class="ttc" id="astructspdk__trace__register__fn_html"><div class="ttname"><a href="structspdk__trace__register__fn.html">spdk_trace_register_fn</a></div><div class="ttdef"><b>Definition:</b> trace.h:409</div></div>
+<div class="ttc" id="astructspdk__trace__register__fn_html"><div class="ttname"><a href="structspdk__trace__register__fn.html">spdk_trace_register_fn</a></div><div class="ttdef"><b>Definition:</b> trace.h:418</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1139,6 +1145,27 @@ struct <a class="el" href="structspdk__trace__histories.html">spdk_trace_histori
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="a2f3c2c36cb52730ac3a98e9d33fd9093"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f3c2c36cb52730ac3a98e9d33fd9093">&#9670;&nbsp;</a></span>spdk_trace_unregister_user_thread()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_trace_unregister_user_thread </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>De-initialize trace environment for an user created thread. </p>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, else non-zero indicates a failure. </dd></dl>
 
 </div>
 </div>

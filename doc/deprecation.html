@@ -95,13 +95,22 @@ $(document).ready(function(){initNavTree('deprecation.html',''); initResizable()
 <p>API and ABI deprecation notices shall be posted in the next section. Each entry must describe what will be removed and can suggest the future use or alternative. Specific future SPDK release for the removal must be provided. ABI cannot be removed without providing deprecation notice for at least single SPDK release.</p>
 <p>Deprecated code paths must be registered with <code>SPDK_DEPRECATION_REGISTER()</code> and logged with <code>SPDK_LOG_DEPRECATED()</code>. The tag used with these macros will appear in the SPDK log at the warn level when <code>SPDK_LOG_DEPRECATED()</code> is called, subject to rate limits. The tags can be matched with the level 4 headers below.</p>
 <h1>Deprecation Notices</h1>
+<h2>accel</h2>
+<h3><code>accel_flags</code></h3>
+<p>The <code>int flags</code> parameter in various <em>submit</em> and <em>append</em> accel FW API is not used and deprecated. It will be removed in 24.05 release.</p>
+<h2>util</h2>
+<h3><code>spdk_iov_one</code></h3>
+<p>The function is deprecated and will be removed in 24.05 release. Please use <code>SPDK_IOV_ONE</code> macro instead.</p>
+<h2>init</h2>
+<h3><code>spdk_subsystem_init_from_json_config</code></h3>
+<p>The function is deprecated and will be removed in 24.09 release. Please use <code>spdk_subsystem_load_config</code> instead.</p>
 <h2>nvmf</h2>
 <h3><code>spdk_nvmf_qpair_disconnect</code></h3>
-<p>Parameters <code>cb_fn</code> and <code>ctx</code> of <code>spdk_nvmf_qpair_disconnect</code> API are deprecated. These parameters will be removed in 24.01 release.</p>
+<p>Parameters <code>cb_fn</code> and <code>ctx</code> of <code>spdk_nvmf_qpair_disconnect</code> API are deprecated. These parameters will be removed in 24.05 release.</p>
 <h3><code>nvmf_get_subsystems</code></h3>
-<p><code>transport</code> field in <code>listen_addresses</code> of <code>nvmf_get_subsystems</code> RPC is deprecated. <code>trtype</code> field should be used instead. <code>transport</code> field will be removed in 24.01 release.</p>
-<h3>'spdk_nvmf_subsytem_any_listener_allowed'</h3>
-<p>The function is deprecated and will be removed in 24.01 release. Please use 'spdk_nvmf_subsystem_any_listener_allowed' instead.</p>
+<p><code>transport</code> field in <code>listen_addresses</code> of <code>nvmf_get_subsystems</code> RPC is deprecated. <code>trtype</code> field should be used instead. <code>transport</code> field will be removed in 24.05 release.</p>
+<h3><code>spdk_nvmf_subsytem_any_listener_allowed</code></h3>
+<p>The function is deprecated and will be removed in 24.05 release. Please use <code>spdk_nvmf_subsystem_any_listener_allowed</code> instead.</p>
 <h2>gpt</h2>
 <h3><code>old_gpt_guid</code></h3>
 <p>Deprecated the SPDK partition type GUID <code>7c5222bd-8f5d-4087-9c00-bf9843c7b58c</code>. Partitions of this type have bdevs created that are one block less than the actual size of the partition. Existing partitions using the deprecated GUID can continue to use that GUID; support for the deprecated GUID will remain in SPDK indefinitely, and will continue to exhibit the off-by-one bug so that on-disk metadata layouts based on the incorrect size are not affected.</p>
@@ -110,7 +119,10 @@ $(document).ready(function(){initNavTree('deprecation.html',''); initResizable()
 <h2>lvol</h2>
 <h3><code>vbdev_lvol_rpc_req_size</code></h3>
 <p>Param <code>size</code> in rpc commands <code>rpc_bdev_lvol_create</code> and <code>rpc_bdev_lvol_resize</code> is deprecated and replace by <code>size_in_mib</code>.</p>
-<p>See GitHub issue <a href="https://github.com/spdk/spdk/issues/2346">2346</a> for additional details. </p>
+<p>See GitHub issue <a href="https://github.com/spdk/spdk/issues/2346">2346</a> for additional details.</p>
+<h2>rpc</h2>
+<h3><code>spdk_rpc_listen</code> <code>spdk_rpc_accept</code> <code>spdk_rpc_close</code></h3>
+<p>These functions are deprecated and will be removed in 24.09 release. Please use <code>spdk_rpc_server_listen</code>, <code>spdk_rpc_server_accept</code> and <code>spdk_rpc_server_close</code> instead. </p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->

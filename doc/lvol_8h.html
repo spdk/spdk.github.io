@@ -211,6 +211,9 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_lvol_create_esnap
 <tr class="memitem:a46ad389863de4d9fdf4284a0cd3d5f6c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lvol_8h.html#a46ad389863de4d9fdf4284a0cd3d5f6c">spdk_lvs_grow</a> (struct <a class="el" href="structspdk__bs__dev.html">spdk_bs_dev</a> *bs_dev, <a class="el" href="lvol_8h.html#a757eefd4ce0d68328e7dec58eb2e8a50">spdk_lvs_op_with_handle_complete</a> cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:a46ad389863de4d9fdf4284a0cd3d5f6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Grow a lvstore to fill the underlying device.  <a href="lvol_8h.html#a46ad389863de4d9fdf4284a0cd3d5f6c">More...</a><br /></td></tr>
 <tr class="separator:a46ad389863de4d9fdf4284a0cd3d5f6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae74ba28ec4717accd5a4362e3a2af9d9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lvol_8h.html#ae74ba28ec4717accd5a4362e3a2af9d9">spdk_lvs_grow_live</a> (struct spdk_lvol_store *lvs, <a class="el" href="lvol_8h.html#a76f85d046acb7b35ae36dc83cf337075">spdk_lvs_op_complete</a> cb_fn, void *cb_arg)</td></tr>
+<tr class="memdesc:ae74ba28ec4717accd5a4362e3a2af9d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Grow a loaded lvstore to fill the underlying device.  <a href="lvol_8h.html#ae74ba28ec4717accd5a4362e3a2af9d9">More...</a><br /></td></tr>
+<tr class="separator:ae74ba28ec4717accd5a4362e3a2af9d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a25631f8da88352a540abc55f52c0ef2e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lvol_8h.html#a25631f8da88352a540abc55f52c0ef2e">spdk_lvol_open</a> (struct spdk_lvol *lvol, <a class="el" href="lvol_8h.html#a453c8a7896aafb644e21e1e960ab3759">spdk_lvol_op_with_handle_complete</a> cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:a25631f8da88352a540abc55f52c0ef2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Open a lvol.  <a href="lvol_8h.html#a25631f8da88352a540abc55f52c0ef2e">More...</a><br /></td></tr>
 <tr class="separator:a25631f8da88352a540abc55f52c0ef2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1063,9 +1066,54 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_lvol_create_esnap
 </div><div class="memdoc">
 
 <p>Grow a lvstore to fill the underlying device. </p>
+<p>Cannot be used on loaded lvstore.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">bs_dev</td><td>Pointer to the blobstore device. </td></tr>
+    <tr><td class="paramname">cb_fn</td><td>Completion callback. </td></tr>
+    <tr><td class="paramname">cb_arg</td><td>Completion callback custom arguments. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ae74ba28ec4717accd5a4362e3a2af9d9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae74ba28ec4717accd5a4362e3a2af9d9">&#9670;&nbsp;</a></span>spdk_lvs_grow_live()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_lvs_grow_live </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_lvol_store *&#160;</td>
+          <td class="paramname"><em>lvs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="lvol_8h.html#a76f85d046acb7b35ae36dc83cf337075">spdk_lvs_op_complete</a>&#160;</td>
+          <td class="paramname"><em>cb_fn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>cb_arg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Grow a loaded lvstore to fill the underlying device. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">lvs</td><td>Pointer to lvolstore. </td></tr>
     <tr><td class="paramname">cb_fn</td><td>Completion callback. </td></tr>
     <tr><td class="paramname">cb_arg</td><td>Completion callback custom arguments. </td></tr>
   </table>

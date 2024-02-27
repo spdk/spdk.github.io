@@ -112,6 +112,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a2a6d877fd0b0eaea06c55c972fa54497"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blob__bdev_8h.html#a2a6d877fd0b0eaea06c55c972fa54497">spdk_bdev_create_bs_dev</a> (const char *bdev_name, bool write, struct <a class="el" href="structspdk__bdev__bs__dev__opts.html">spdk_bdev_bs_dev_opts</a> *opts, size_t opts_size, <a class="el" href="bdev_8h.html#ab4755b1b0a2a204732c3be266b6e1b08">spdk_bdev_event_cb_t</a> event_cb, void *event_ctx, struct <a class="el" href="structspdk__bs__dev.html">spdk_bs_dev</a> **bs_dev)</td></tr>
 <tr class="memdesc:a2a6d877fd0b0eaea06c55c972fa54497"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a blobstore block device from a bdev.  <a href="blob__bdev_8h.html#a2a6d877fd0b0eaea06c55c972fa54497">More...</a><br /></td></tr>
 <tr class="separator:a2a6d877fd0b0eaea06c55c972fa54497"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a00c54abc3873ba2bdd6541ab01dc0e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blob__bdev_8h.html#a7a00c54abc3873ba2bdd6541ab01dc0e">spdk_bdev_update_bs_blockcnt</a> (struct <a class="el" href="structspdk__bs__dev.html">spdk_bs_dev</a> *bs_dev)</td></tr>
+<tr class="memdesc:a7a00c54abc3873ba2bdd6541ab01dc0e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates number of blocks of a blobstore block device.  <a href="blob__bdev_8h.html#a7a00c54abc3873ba2bdd6541ab01dc0e">More...</a><br /></td></tr>
+<tr class="separator:a7a00c54abc3873ba2bdd6541ab01dc0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0499e5f00e93f3406989f281bd7122a6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blob__bdev_8h.html#a0499e5f00e93f3406989f281bd7122a6">spdk_bs_bdev_claim</a> (struct <a class="el" href="structspdk__bs__dev.html">spdk_bs_dev</a> *bs_dev, struct <a class="el" href="structspdk__bdev__module.html">spdk_bdev_module</a> *module)</td></tr>
 <tr class="memdesc:a0499e5f00e93f3406989f281bd7122a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Claim the bdev module for the given blobstore.  <a href="blob__bdev_8h.html#a0499e5f00e93f3406989f281bd7122a6">More...</a><br /></td></tr>
 <tr class="separator:a0499e5f00e93f3406989f281bd7122a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -241,6 +244,32 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 if operation is successful, or suitable errno value otherwise. </dd></dl>
+
+</div>
+</div>
+<a id="a7a00c54abc3873ba2bdd6541ab01dc0e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7a00c54abc3873ba2bdd6541ab01dc0e">&#9670;&nbsp;</a></span>spdk_bdev_update_bs_blockcnt()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_bdev_update_bs_blockcnt </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structspdk__bs__dev.html">spdk_bs_dev</a> *&#160;</td>
+          <td class="paramname"><em>bs_dev</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Updates number of blocks of a blobstore block device. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bs_dev</td><td>Blobstore block device. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

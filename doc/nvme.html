@@ -114,10 +114,10 @@ Getting Start with Hello World</h2>
 <p>There are a number of examples provided that demonstrate how to use the NVMe library. They are all in the <a href="https://github.com/spdk/spdk/tree/master/examples/nvme">examples/nvme</a> directory in the repository. The best place to start is <a href="https://github.com/spdk/spdk/blob/master/examples/nvme/hello_world/hello_world.c">hello_world</a>.</p>
 <h2><a class="anchor" id="nvme_fioplugin"></a>
 Running Benchmarks with Fio Plugin</h2>
-<p>SPDK provides a plugin to the very popular <a href="https://github.com/axboe/fio">fio</a> tool for running some basic benchmarks. See the fio start up <a href="https://github.com/spdk/spdk/blob/master/examples/nvme/fio_plugin/">guide</a> for more details.</p>
+<p>SPDK provides a plugin to the very popular <a href="https://github.com/axboe/fio">fio</a> tool for running some basic benchmarks. See the fio start up <a href="https://github.com/spdk/spdk/blob/master/app/fio/nvme/">guide</a> for more details.</p>
 <h2><a class="anchor" id="nvme_perf"></a>
 Running Benchmarks with Perf Tool</h2>
-<p>NVMe perf utility in the <a href="https://github.com/spdk/spdk/tree/master/examples/nvme/perf">examples/nvme/perf</a> is one of the examples which also can be used for performance tests. The fio tool is widely used because it is very flexible. However, that flexibility adds overhead and reduces the efficiency of SPDK. Therefore, SPDK provides a perf benchmarking tool which has minimal overhead during benchmarking. We have measured up to 2.6 times more IOPS/core when using perf vs. fio with the 4K 100% Random Read workload. The perf benchmarking tool provides several run time options to support the most common workload. The following examples demonstrate how to use perf.</p>
+<p>NVMe perf utility in the <a href="https://github.com/spdk/spdk/tree/master/app/spdk_nvme_perf">app/spdk_nvme_perf</a> is one of the examples which also can be used for performance tests. The fio tool is widely used because it is very flexible. However, that flexibility adds overhead and reduces the efficiency of SPDK. Therefore, SPDK provides a perf benchmarking tool which has minimal overhead during benchmarking. We have measured up to 2.6 times more IOPS/core when using perf vs. fio with the 4K 100% Random Read workload. The perf benchmarking tool provides several run time options to support the most common workload. The following examples demonstrate how to use perf.</p>
 <p>Example: Using perf for 4K 100% Random Read workload to a local NVMe SSD for 300 seconds </p><div class="fragment"><div class="line">perf -q 128 -o 4096 -w randread -r &#39;trtype:PCIe traddr:0000:04:00.0&#39; -t 300</div>
 </div><!-- fragment --><p>Example: Using perf for 4K 100% Random Read workload to a remote NVMe SSD exported over the network via NVMe-oF </p><div class="fragment"><div class="line">perf -q 128 -o 4096 -w randread -r &#39;trtype:RDMA adrfam:IPv4 traddr:192.168.100.8 trsvcid:4420&#39; -t 300</div>
 </div><!-- fragment --><p>Example: Using perf for 4K 70/30 Random Read/Write mix workload to all local NVMe SSDs for 300 seconds </p><div class="fragment"><div class="line">perf -q 128 -o 4096 -w randrw -M 70 -t 300</div>
@@ -231,12 +231,12 @@ Configuration</h2>
 <li>a secondary process which can attach to the primary process by mapping its shared memory regions and perform NVMe operations including creating queue pairs.</li>
 </ol>
 <p>This feature is enabled by default and is controlled by selecting a value for the shared memory group ID. This ID is a positive integer and two applications with the same shared memory group ID will share memory. The first application with a given shared memory group ID will be considered the primary and all others secondary.</p>
-<p>Example: identical shm_id and non-overlapping core masks </p><div class="fragment"><div class="line">./perf options [AIO device(s)]...</div>
+<p>Example: identical shm_id and non-overlapping core masks </p><div class="fragment"><div class="line">spdk_nvme_perf options [AIO device(s)]...</div>
 <div class="line">        [-c core mask for I/O submission/completion]</div>
 <div class="line">        [-i shared memory group ID]</div>
 <div class="line"> </div>
-<div class="line">./perf -q 1 -o 4096 -w randread -c 0x1 -t 60 -i 1</div>
-<div class="line">./perf -q 8 -o 131072 -w write -c 0x10 -t 60 -i 1</div>
+<div class="line">spdk_nvme_perf -q 1 -o 4096 -w randread -c 0x1 -t 60 -i 1</div>
+<div class="line">spdk_nvme_perf -q 8 -o 131072 -w write -c 0x10 -t 60 -i 1</div>
 </div><!-- fragment --><h2><a class="anchor" id="nvme_multi_process_limitations"></a>
 Limitations</h2>
 <ol type="1">
@@ -267,9 +267,8 @@ NVMe Character Devices</h1>
 <p>This interface reserves one additional qpair for sending down the I/O for each controller.</p>
 <h2>Usage</h2>
 <h3>Enabling cuse support for NVMe</h3>
-<p>Cuse support is disabled by default. To enable support for NVMe-CUSE devices first install required dependencies </p><div class="fragment"><div class="line">sudo scripts/pkgdep.sh --fuse</div>
-</div><!-- fragment --><p> Then compile SPDK with "./configure --with-nvme-cuse".</p>
-<h3>Creating NVMe-CUSE device</h3>
+<p>Cuse support is enabled by default on Linux. Make sure to install required dependencies: </p><div class="fragment"><div class="line">sudo scripts/pkgdep.sh</div>
+</div><!-- fragment --><h3>Creating NVMe-CUSE device</h3>
 <p>First make sure to prepare the environment (see <a class="el" href="getting_started.html">Getting Started</a>). This includes loading CUSE kernel module. Any NVMe controller attached to a running SPDK application can be exposed via NVMe-CUSE interface. When closing SPDK application, the NVMe-CUSE devices are unregistered.</p>
 <div class="fragment"><div class="line">$ sudo scripts/setup.sh</div>
 <div class="line">$ sudo modprobe cuse</div>

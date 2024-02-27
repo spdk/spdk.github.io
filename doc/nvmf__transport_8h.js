@@ -68,6 +68,7 @@ var nvmf__transport_8h =
     [ "SPDK_STATIC_ASSERT", "nvmf__transport_8h.html#ad01c6ec7f3d51648cc083cea7a9f5a71", null ],
     [ "SPDK_STATIC_ASSERT", "nvmf__transport_8h.html#a4883ef047f9c0bf21dc194da3550c940", null ],
     [ "SPDK_STATIC_ASSERT", "nvmf__transport_8h.html#aa14eb17f1cbf2656ab5c1e1ee51c8833", null ],
+    [ "SPDK_STATIC_ASSERT", "nvmf__transport_8h.html#a6b8ea9f0bb333e3adbf87a9185d95bc0", null ],
     [ "SPDK_STATIC_ASSERT", "nvmf__transport_8h.html#a7018b7c460c9e8d4bc99b14075291390", null ],
     [ "SPDK_STATIC_ASSERT", "nvmf__transport_8h.html#ab3968fc29615a6601f71cd98b55505b9", null ]
 ];

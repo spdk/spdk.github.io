@@ -3713,26 +3713,23 @@ bdev_nvme_get_path_iostat</h2>
 <div class="line">}</div>
 </div><!-- fragment --><h2><a class="anchor" id="rpc_bdev_nvme_cuse_register"></a>
 bdev_nvme_cuse_register</h2>
-<p>Register CUSE device on NVMe controller. This feature is considered as experimental.</p>
+<p>Register CUSE device on NVMe controller.</p>
 <h3>Parameters</h3>
 <table class="markdownTable">
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Name of the NVMe controller    </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">dev_path   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Path to the CUSE controller device, e.g. spdk/nvme0   </td></tr>
+<td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Name of the NVMe controller   </td></tr>
 </table>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
-<div class="line">  &quot;params&quot;: {</div>
-<div class="line">    &quot;dev_path&quot;: &quot;spdk/nvme0&quot;,</div>
-<div class="line">    &quot;name&quot;: &quot;Nvme0&quot;</div>
-<div class="line">  },</div>
 <div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
 <div class="line">  &quot;method&quot;: &quot;bdev_nvme_cuse_register&quot;,</div>
-<div class="line">  &quot;id&quot;: 1</div>
+<div class="line">  &quot;id&quot;: 1,</div>
+<div class="line">  &quot;params&quot;: {</div>
+<div class="line">    &quot;name&quot;: &quot;Nvme0&quot;</div>
+<div class="line">  }</div>
 <div class="line">}</div>
 </div><!-- fragment --><p>Example response:</p>
 <div class="fragment"><div class="line">{</div>
@@ -3742,7 +3739,7 @@ bdev_nvme_cuse_register</h2>
 <div class="line">}</div>
 </div><!-- fragment --><h2><a class="anchor" id="rpc_bdev_nvme_cuse_unregister"></a>
 bdev_nvme_cuse_unregister</h2>
-<p>Unregister CUSE device on NVMe controller. This feature is considered as experimental.</p>
+<p>Unregister CUSE device on NVMe controller.</p>
 <h3>Parameters</h3>
 <table class="markdownTable">
 <tr class="markdownTableHead">
@@ -6233,6 +6230,45 @@ iscsi_get_connections method</h2>
 <div class="line">    }</div>
 <div class="line">  ]</div>
 <div class="line">}</div>
+</div><!-- fragment --><h2><a class="anchor" id="iscsi_get_stats"></a>
+iscsi_get_stats method</h2>
+<p>Show stat information of iSCSI connections.</p>
+<h3>Parameters</h3>
+<p>This method has no parameters.</p>
+<h3>Results</h3>
+<p>Stat information of iSCSI connections.</p>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">invalid   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">The number of invalid connections    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">running   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">The number of running connections    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">exiting   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">The number of exiting connections    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">exited   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">The number of exited connections   </td></tr>
+</table>
+<h3>Example</h3>
+<p>Example request:</p>
+<div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
+<div class="line">  &quot;method&quot;: &quot;iscsi_get_stats&quot;,</div>
+<div class="line">  &quot;id&quot;: 1</div>
+<div class="line">}</div>
+</div><!-- fragment --><p>Example response:</p>
+<div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
+<div class="line">  &quot;id&quot;: 1,</div>
+<div class="line">  &quot;result&quot;:</div>
+<div class="line">    {</div>
+<div class="line">      &quot;invalid&quot;: 0,</div>
+<div class="line">      &quot;running&quot;: 5,</div>
+<div class="line">      &quot;exiting&quot;: 0,</div>
+<div class="line">      &quot;exited&quot;: 0</div>
+<div class="line">    }</div>
+<div class="line"> </div>
+<div class="line">}</div>
 </div><!-- fragment --><h2><a class="anchor" id="rpc_iscsi_target_node_add_lun"></a>
 iscsi_target_node_add_lun method</h2>
 <p>Add an LUN to an existing iSCSI target node.</p>
@@ -6473,7 +6509,7 @@ nvmf_create_subsystem method</h2>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">model_number   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Model number of virtual controller    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">max_namespaces   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">Maximum number of namespaces that can be attached to the subsystem. Default: 0 (Unlimited)    </td></tr>
+<td class="markdownTableBodyNone">max_namespaces   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">Maximum number of namespaces that can be attached to the subsystem. Default: 32 (also used if user specifies 0)    </td></tr>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">allow_any_host   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Allow any host (<code>true</code>) or enforce allowed host list (<code>false</code>). Default: <code>false</code>.    </td></tr>
 <tr class="markdownTableRowOdd">
@@ -8395,7 +8431,36 @@ bdev_lvol_get_lvols</h2>
 <div class="line">  }</div>
 <div class="line">]</div>
 </div><!-- fragment --><h1>RAID</h1>
-<h2><a class="anchor" id="rpc_bdev_raid_get_bdevs"></a>
+<h2><a class="anchor" id="rpc_bdev_raid_set_options"></a>
+bdev_raid_set_options</h2>
+<p>Set options for bdev raid.</p>
+<p>This RPC can be called at any time, but the new value will only take effect for new raid bdevs.</p>
+<p>The <code>process_window_size_kb</code> parameter defines the size of the "window" (LBA range of the raid bdev) in which a background process like rebuild performs its work. Any positive value is valid, but the value actually used by a raid bdev can be adjusted to the size of the raid bdev or the write unit size.</p>
+<h3>Parameters</h3>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">process_window_size_kb   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">Background process (e.g. rebuild) window size in KiB   </td></tr>
+</table>
+<h3>Example</h3>
+<p>Example request:</p>
+<div class="fragment"><div class="line">request:</div>
+<div class="line">{</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
+<div class="line">  &quot;method&quot;: &quot;bdev_raid_set_options&quot;,</div>
+<div class="line">  &quot;id&quot;: 1,</div>
+<div class="line">  &quot;params&quot;: {</div>
+<div class="line">    &quot;process_window_size_kb&quot;: 512</div>
+<div class="line">  }</div>
+<div class="line">}</div>
+</div><!-- fragment --><p>Example response:</p>
+<div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
+<div class="line">  &quot;id&quot;: 1,</div>
+<div class="line">  &quot;result&quot;: true</div>
+<div class="line">}</div>
+</div><!-- fragment --><h2><a class="anchor" id="rpc_bdev_raid_get_bdevs"></a>
 bdev_raid_get_bdevs</h2>
 <p>This is used to list all the raid bdev details based on the input category requested. Category should be one of 'all', 'online', 'configuring' or 'offline'. 'all' means all the raid bdevs whether they are online or configuring or offline. 'online' is the raid bdev which is registered with bdev layer. 'configuring' is the raid bdev which does not have full configuration discovered yet. 'offline' is the raid bdev which is not registered with bdev as of now and it has encountered any error or user has requested to offline the raid bdev.</p>
 <h3>Parameters</h3>
@@ -8544,7 +8609,36 @@ bdev_raid_delete</h2>
 <div class="line">  &quot;id&quot;: 1,</div>
 <div class="line">  &quot;result&quot;: true</div>
 <div class="line">}</div>
-</div><!-- fragment --><h2><a class="anchor" id="rpc_bdev_raid_remove_base_bdev"></a>
+</div><!-- fragment --><h2><a class="anchor" id="rpc_bdev_raid_add_base_bdev"></a>
+bdev_raid_add_base_bdev</h2>
+<p>Add base bdev to existing raid bdev. The raid bdev must have an empty base bdev slot. The bdev must be large enough and have the same block size and metadata format as the other base bdevs.</p>
+<h3>Parameters</h3>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">raid_bdev   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Raid bdev name    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">base_bdev   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Base bdev name   </td></tr>
+</table>
+<h3>Example</h3>
+<p>Example request:</p>
+<div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
+<div class="line">  &quot;method&quot;: &quot;bdev_raid_add_base_bdev&quot;,</div>
+<div class="line">  &quot;id&quot;: 1,</div>
+<div class="line">  &quot;params&quot;: {</div>
+<div class="line">    &quot;raid_bdev&quot;: &quot;RaidBdev0&quot;,</div>
+<div class="line">    &quot;base_bdev&quot;: &quot;Nvme0n1&quot;</div>
+<div class="line">  }</div>
+<div class="line">}</div>
+</div><!-- fragment --><p>Example response:</p>
+<div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
+<div class="line">  &quot;id&quot;: 1,</div>
+<div class="line">  &quot;result&quot;: true</div>
+<div class="line">}</div>
+</div><!-- fragment --> <h2><a class="anchor" id="rpc_bdev_raid_remove_base_bdev"></a>
 bdev_raid_remove_base_bdev</h2>
 <p>Remove base bdev from existing raid bdev.</p>
 <h3>Parameters</h3>
@@ -8646,7 +8740,9 @@ bdev_uring_create</h2>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">name of bdev    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">block_size   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">block size of device (If omitted, get the block size from the file)   </td></tr>
+<td class="markdownTableBodyNone">block_size   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">block size of device (If omitted, get the block size from the file)    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">uuid   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">UUID of new bdev   </td></tr>
 </table>
 <h3>Example</h3>
 <p>Example request:</p>
@@ -8665,6 +8761,32 @@ bdev_uring_create</h2>
 <div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
 <div class="line">  &quot;id&quot;: 1,</div>
 <div class="line">  &quot;result&quot;: &quot;bdev_u0&quot;</div>
+<div class="line">}</div>
+</div><!-- fragment --><h2><a class="anchor" id="rpc_bdev_uring_rescan"></a>
+bdev_uring_rescan</h2>
+<p>Rescan the size of a uring bdev.</p>
+<h3>Parameters</h3>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">name of uring bdev to rescan   </td></tr>
+</table>
+<h3>Example</h3>
+<p>Example request:</p>
+<div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
+<div class="line">  &quot;method&quot;: &quot;bdev_uring_rescan&quot;,</div>
+<div class="line">  &quot;id&quot;: 1,</div>
+<div class="line">  &quot;params&quot;: {</div>
+<div class="line">    &quot;name&quot;: &quot;bdev_u0&quot;</div>
+<div class="line">  }</div>
+<div class="line">}</div>
+</div><!-- fragment --><p>Example response:</p>
+<div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
+<div class="line">  &quot;id&quot;: 1,</div>
+<div class="line">  &quot;result&quot;: true</div>
 <div class="line">}</div>
 </div><!-- fragment --><h2><a class="anchor" id="rpc_bdev_uring_delete"></a>
 bdev_uring_delete</h2>

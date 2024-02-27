@@ -218,10 +218,14 @@ typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" 
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:ab41e2d311eb6663957cd2f18bc8fb890"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#ab41e2d311eb6663957cd2f18bc8fb890">spdk_nvme_qp_failure_reason</a> { <b>SPDK_NVME_QPAIR_FAILURE_NONE</b> = 0
+<tr class="memitem:ab41e2d311eb6663957cd2f18bc8fb890"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#ab41e2d311eb6663957cd2f18bc8fb890">spdk_nvme_qp_failure_reason</a> { <br />
+&#160;&#160;<b>SPDK_NVME_QPAIR_FAILURE_NONE</b> = 0
 , <b>SPDK_NVME_QPAIR_FAILURE_LOCAL</b>
 , <b>SPDK_NVME_QPAIR_FAILURE_REMOTE</b>
 , <b>SPDK_NVME_QPAIR_FAILURE_UNKNOWN</b>
+, <br />
+&#160;&#160;<b>SPDK_NVME_QPAIR_FAILURE_RESET</b>
+<br />
  }</td></tr>
 <tr class="memdesc:ab41e2d311eb6663957cd2f18bc8fb890"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reason for qpair disconnect at the transport layer.  <a href="nvme_8h.html#ab41e2d311eb6663957cd2f18bc8fb890">More...</a><br /></td></tr>
 <tr class="separator:ab41e2d311eb6663957cd2f18bc8fb890"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -423,6 +427,9 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_trty
 <tr class="memitem:ac750410c9b53a0435d0111ae1e98913e"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#ac750410c9b53a0435d0111ae1e98913e">spdk_nvme_ctrlr_get_max_xfer_size</a> (const struct spdk_nvme_ctrlr *ctrlr)</td></tr>
 <tr class="memdesc:ac750410c9b53a0435d0111ae1e98913e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the maximum data transfer size of a given NVMe controller.  <a href="nvme_8h.html#ac750410c9b53a0435d0111ae1e98913e">More...</a><br /></td></tr>
 <tr class="separator:ac750410c9b53a0435d0111ae1e98913e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab71a63c183172e6b6a3efae41cda00e9"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#ab71a63c183172e6b6a3efae41cda00e9">spdk_nvme_ctrlr_get_max_sges</a> (const struct spdk_nvme_ctrlr *ctrlr)</td></tr>
+<tr class="memdesc:ab71a63c183172e6b6a3efae41cda00e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the maximum number of SGEs per request for the given NVMe controller.  <a href="nvme_8h.html#ab71a63c183172e6b6a3efae41cda00e9">More...</a><br /></td></tr>
+<tr class="separator:ab71a63c183172e6b6a3efae41cda00e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abbcdb6e7c22b0ef87ed927bf97952c19"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#abbcdb6e7c22b0ef87ed927bf97952c19">spdk_nvme_ctrlr_is_active_ns</a> (struct spdk_nvme_ctrlr *ctrlr, uint32_t nsid)</td></tr>
 <tr class="memdesc:abbcdb6e7c22b0ef87ed927bf97952c19"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check whether the nsid is an active nv for the given NVMe controller.  <a href="nvme_8h.html#abbcdb6e7c22b0ef87ed927bf97952c19">More...</a><br /></td></tr>
 <tr class="separator:abbcdb6e7c22b0ef87ed927bf97952c19"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -826,10 +833,10 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_trty
 <tr class="memdesc:a8cf38d8b0e0625dc192a83926952283a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get name of cuse device associated with NVMe namespace.  <a href="nvme_8h.html#a8cf38d8b0e0625dc192a83926952283a">More...</a><br /></td></tr>
 <tr class="separator:a8cf38d8b0e0625dc192a83926952283a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5ba8ee34c024d648a81d903b155cff97"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a5ba8ee34c024d648a81d903b155cff97">spdk_nvme_cuse_register</a> (struct spdk_nvme_ctrlr *ctrlr)</td></tr>
-<tr class="memdesc:a5ba8ee34c024d648a81d903b155cff97"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a character device at the path specified (Experimental)  <a href="nvme_8h.html#a5ba8ee34c024d648a81d903b155cff97">More...</a><br /></td></tr>
+<tr class="memdesc:a5ba8ee34c024d648a81d903b155cff97"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a character device at the path specified.  <a href="nvme_8h.html#a5ba8ee34c024d648a81d903b155cff97">More...</a><br /></td></tr>
 <tr class="separator:a5ba8ee34c024d648a81d903b155cff97"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2cd4f33cc8dc7741290b9cdf02fc691c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a2cd4f33cc8dc7741290b9cdf02fc691c">spdk_nvme_cuse_unregister</a> (struct spdk_nvme_ctrlr *ctrlr)</td></tr>
-<tr class="memdesc:a2cd4f33cc8dc7741290b9cdf02fc691c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove a previously created character device (Experimental)  <a href="nvme_8h.html#a2cd4f33cc8dc7741290b9cdf02fc691c">More...</a><br /></td></tr>
+<tr class="memdesc:a2cd4f33cc8dc7741290b9cdf02fc691c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove a previously created character device.  <a href="nvme_8h.html#a2cd4f33cc8dc7741290b9cdf02fc691c">More...</a><br /></td></tr>
 <tr class="separator:a2cd4f33cc8dc7741290b9cdf02fc691c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6647280570446fbde28b92332be1108d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a6647280570446fbde28b92332be1108d">spdk_nvme_ctrlr_get_memory_domains</a> (const struct spdk_nvme_ctrlr *ctrlr, struct spdk_memory_domain **domains, int array_size)</td></tr>
 <tr class="memdesc:a6647280570446fbde28b92332be1108d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get SPDK memory domains used by the given nvme controller.  <a href="nvme_8h.html#a6647280570446fbde28b92332be1108d">More...</a><br /></td></tr>
@@ -3571,6 +3578,34 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_trty
 
 </div>
 </div>
+<a id="ab71a63c183172e6b6a3efae41cda00e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab71a63c183172e6b6a3efae41cda00e9">&#9670;&nbsp;</a></span>spdk_nvme_ctrlr_get_max_sges()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t spdk_nvme_ctrlr_get_max_sges </td>
+          <td>(</td>
+          <td class="paramtype">const struct spdk_nvme_ctrlr *&#160;</td>
+          <td class="paramname"><em>ctrlr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the maximum number of SGEs per request for the given NVMe controller. </p>
+<p>Controllers that do not support SGL will return UINT16_MAX.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ctrlr</td><td>Opaque handle to NVMe controller.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Maximum number of SGEs per request </dd></dl>
+
+</div>
+</div>
 <a id="ac750410c9b53a0435d0111ae1e98913e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac750410c9b53a0435d0111ae1e98913e">&#9670;&nbsp;</a></span>spdk_nvme_ctrlr_get_max_xfer_size()</h2>
 
@@ -5299,7 +5334,7 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_trty
       </table>
 </div><div class="memdoc">
 
-<p>Create a character device at the path specified (Experimental) </p>
+<p>Create a character device at the path specified. </p>
 <p>The character device can handle ioctls and is compatible with a standard Linux kernel NVMe device. Tools such as nvme-cli can be used to configure SPDK devices through this interface.</p>
 <p>The user is expected to be polling the admin qpair for this controller periodically for the CUSE device to function.</p>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -5328,7 +5363,7 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_trty
       </table>
 </div><div class="memdoc">
 
-<p>Remove a previously created character device (Experimental) </p>
+<p>Remove a previously created character device. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">ctrlr</td><td>Opaque handle to the NVMe controller.</td></tr>

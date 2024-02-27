@@ -97,9 +97,8 @@ $(document).ready(function(){initNavTree('structspdk__bdev__fn__table.html','');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:a8a76c50a2b20205ec9fffe4afb9e3a15"><td class="memItemLeft" align="right" valign="top"><a id="a8a76c50a2b20205ec9fffe4afb9e3a15"></a>
-int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev__fn__table.html#a8a76c50a2b20205ec9fffe4afb9e3a15">destruct</a> )(void *ctx)</td></tr>
-<tr class="memdesc:a8a76c50a2b20205ec9fffe4afb9e3a15"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy the backend block device object. <br /></td></tr>
+<tr class="memitem:a8a76c50a2b20205ec9fffe4afb9e3a15"><td class="memItemLeft" align="right" valign="top">int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev__fn__table.html#a8a76c50a2b20205ec9fffe4afb9e3a15">destruct</a> )(void *ctx)</td></tr>
+<tr class="memdesc:a8a76c50a2b20205ec9fffe4afb9e3a15"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy the backend block device object.  <a href="structspdk__bdev__fn__table.html#a8a76c50a2b20205ec9fffe4afb9e3a15">More...</a><br /></td></tr>
 <tr class="separator:a8a76c50a2b20205ec9fffe4afb9e3a15"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae80a9002371becdc6fb1c13f8f5173bf"><td class="memItemLeft" align="right" valign="top"><a id="ae80a9002371becdc6fb1c13f8f5173bf"></a>
 void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev__fn__table.html#ae80a9002371becdc6fb1c13f8f5173bf">submit_request</a> )(struct spdk_io_channel *ch, struct <a class="el" href="structspdk__bdev__io.html">spdk_bdev_io</a> *)</td></tr>
@@ -146,6 +145,23 @@ bool(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="st
 <div class="textblock"><p>Function table for a block device backend. </p>
 <p>The backend block device function table provides a set of APIs to allow communication with a backend. The main commands are read/write API calls for I/O via submit_request. </p>
 </div><h2 class="groupheader">Field Documentation</h2>
+<a id="a8a76c50a2b20205ec9fffe4afb9e3a15"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8a76c50a2b20205ec9fffe4afb9e3a15">&#9670;&nbsp;</a></span>destruct</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int(* spdk_bdev_fn_table::destruct) (void *ctx)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Destroy the backend block device object. </p>
+<p>If the destruct process for the bdev is asynchronous, return 1 from this function, and then call <a class="el" href="bdev__module_8h.html#a8d51d8e113f0dffb1bbe535ea01c495f" title="Notify the bdev layer that an asynchronous destruct operation is complete.">spdk_bdev_destruct_done()</a> once the async work is complete. If the destruct process is synchronous, return 0 if successful, or &lt;0 if unsuccessful. </p>
+
+</div>
+</div>
 <a id="a417860f5598560a20b7bd4b5e8b4c3b0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a417860f5598560a20b7bd4b5e8b4c3b0">&#9670;&nbsp;</a></span>dump_info_json</h2>
 

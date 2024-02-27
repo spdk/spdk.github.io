@@ -11,7 +11,7 @@ var structspdk__ftl__conf =
     [ "limits", "structspdk__ftl__conf.html#ad86cff38f1050e28f64ef88ac639b37e", null ],
     [ "mode", "structspdk__ftl__conf.html#a087635eb4ee8d8182adb89e114b09aae", null ],
     [ "name", "structspdk__ftl__conf.html#adf73e114ccf2dfff8f6791669d951f1b", null ],
-    [ "nv_cache", "structspdk__ftl__conf.html#a0dbc7d36479c71cf7157d0c69d221007", null ],
+    [ "nv_cache", "structspdk__ftl__conf.html#a524ad58b9fab96666f2b6f71cc6c7bda", null ],
     [ "overprovisioning", "structspdk__ftl__conf.html#a691d6d744e9f87fe44cf3cbfaa63f16f", null ],
     [ "prep_upgrade_on_shutdown", "structspdk__ftl__conf.html#ad202905f18bf5ab19460aba654058503", null ],
     [ "reserved", "structspdk__ftl__conf.html#a462cbb2db39a7ec57691d5da4b8d374f", null ],

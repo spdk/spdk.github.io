@@ -116,6 +116,12 @@ Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvmf__ns__opts.html">spdk_nvmf_ns_opts</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">NVMe-oF target namespace creation options.  <a href="structspdk__nvmf__ns__opts.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvmf__registrant__info.html">spdk_nvmf_registrant_info</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvmf__reservation__info.html">spdk_nvmf_reservation_info</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvmf__ns__reservation__ops.html">spdk_nvmf_ns_reservation_ops</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
@@ -125,6 +131,9 @@ Macros</h2></td></tr>
 <tr class="memitem:a3f78e79bc3f8adf4f29bee917f9a4490"><td class="memItemLeft" align="right" valign="top"><a id="a3f78e79bc3f8adf4f29bee917f9a4490"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_TLS_PSK_MAX_LEN</b>&#160;&#160;&#160;200</td></tr>
 <tr class="separator:a3f78e79bc3f8adf4f29bee917f9a4490"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad363e22da22e132efbce02f253f37b5"><td class="memItemLeft" align="right" valign="top"><a id="aad363e22da22e132efbce02f253f37b5"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_NVMF_MAX_NUM_REGISTRANTS</b>&#160;&#160;&#160;16</td></tr>
+<tr class="separator:aad363e22da22e132efbce02f253f37b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
@@ -333,6 +342,12 @@ Functions</h2></td></tr>
 <tr class="memitem:a488442d5a27c5e3c4a88184bd8a5301b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#a488442d5a27c5e3c4a88184bd8a5301b">spdk_nvmf_subsystem_set_ana_reporting</a> (struct spdk_nvmf_subsystem *subsystem, bool ana_reporting)</td></tr>
 <tr class="memdesc:a488442d5a27c5e3c4a88184bd8a5301b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set whether a subsystem supports Asymmetric Namespace Access (ANA) reporting.  <a href="nvmf_8h.html#a488442d5a27c5e3c4a88184bd8a5301b">More...</a><br /></td></tr>
 <tr class="separator:a488442d5a27c5e3c4a88184bd8a5301b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2865d5c13e5c7ca972e1577796d8dcf"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#af2865d5c13e5c7ca972e1577796d8dcf">spdk_nvmf_subsystem_get_ana_reporting</a> (struct spdk_nvmf_subsystem *subsystem)</td></tr>
+<tr class="memdesc:af2865d5c13e5c7ca972e1577796d8dcf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get whether a subsystem supports Asymmetric Namespace Access (ANA) reporting.  <a href="nvmf_8h.html#af2865d5c13e5c7ca972e1577796d8dcf">More...</a><br /></td></tr>
+<tr class="separator:af2865d5c13e5c7ca972e1577796d8dcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9124f6370456043e55419fdf64879c3e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#a9124f6370456043e55419fdf64879c3e">spdk_nvmf_subsystem_set_ana_state</a> (struct spdk_nvmf_subsystem *subsystem, const struct <a class="el" href="structspdk__nvme__transport__id.html">spdk_nvme_transport_id</a> *trid, enum spdk_nvme_ana_state ana_state, uint32_t anagrpid, <a class="el" href="nvmf_8h.html#aad52ac090dcb26b03da0e689ea71df89">spdk_nvmf_tgt_subsystem_listen_done_fn</a> cb_fn, void *cb_arg)</td></tr>
+<tr class="memdesc:a9124f6370456043e55419fdf64879c3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set Asymmetric Namespace Access (ANA) state for the specified ANA group id.  <a href="nvmf_8h.html#a9124f6370456043e55419fdf64879c3e">More...</a><br /></td></tr>
+<tr class="separator:a9124f6370456043e55419fdf64879c3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3542dbbd3ec77c3bb4b2a3d82c2d118d"><td class="memItemLeft" align="right" valign="top"><a id="a3542dbbd3ec77c3bb4b2a3d82c2d118d"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_STATIC_ASSERT</b> (sizeof(struct <a class="el" href="structspdk__nvmf__ns__opts.html">spdk_nvmf_ns_opts</a>)==64, &quot;Incorrect size&quot;)</td></tr>
 <tr class="separator:a3542dbbd3ec77c3bb4b2a3d82c2d118d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -450,6 +465,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a9ae1cb4c373e0dd8146b81b5ba57ff0b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#a9ae1cb4c373e0dd8146b81b5ba57ff0b">spdk_nvmf_rdma_init_hooks</a> (struct <a class="el" href="structspdk__nvme__rdma__hooks.html">spdk_nvme_rdma_hooks</a> *hooks)</td></tr>
 <tr class="memdesc:a9ae1cb4c373e0dd8146b81b5ba57ff0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the global hooks for the RDMA transport, if necessary.  <a href="nvmf_8h.html#a9ae1cb4c373e0dd8146b81b5ba57ff0b">More...</a><br /></td></tr>
 <tr class="separator:a9ae1cb4c373e0dd8146b81b5ba57ff0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae365f2d881a64ca5adcfe9a179a84597"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#ae365f2d881a64ca5adcfe9a179a84597">spdk_nvmf_set_custom_ns_reservation_ops</a> (const struct <a class="el" href="structspdk__nvmf__ns__reservation__ops.html">spdk_nvmf_ns_reservation_ops</a> *ops)</td></tr>
+<tr class="memdesc:ae365f2d881a64ca5adcfe9a179a84597"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set custom handlers for namespace reservation operations.  <a href="nvmf_8h.html#ae365f2d881a64ca5adcfe9a179a84597">More...</a><br /></td></tr>
+<tr class="separator:ae365f2d881a64ca5adcfe9a179a84597"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>NVMe over Fabrics target public API. </p>
@@ -1166,8 +1184,8 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">qpair</td><td>The NVMe-oF qpair to disconnect. </td></tr>
-    <tr><td class="paramname">cb_fn</td><td>Deprecated, will be removed in v24.01. The function to call upon completion of the disconnect. </td></tr>
-    <tr><td class="paramname">ctx</td><td>Deprecated, will be removed in v24.01. The context to pass to the callback function.</td></tr>
+    <tr><td class="paramname">cb_fn</td><td>Deprecated, will be removed in v24.05. The function to call upon completion of the disconnect. </td></tr>
+    <tr><td class="paramname">ctx</td><td>Deprecated, will be removed in v24.05. The context to pass to the callback function.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1324,6 +1342,33 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">hooks</td><td>for initializing global hooks </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ae365f2d881a64ca5adcfe9a179a84597"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae365f2d881a64ca5adcfe9a179a84597">&#9670;&nbsp;</a></span>spdk_nvmf_set_custom_ns_reservation_ops()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_nvmf_set_custom_ns_reservation_ops </td>
+          <td>(</td>
+          <td class="paramtype">const struct <a class="el" href="structspdk__nvmf__ns__reservation__ops.html">spdk_nvmf_ns_reservation_ops</a> *&#160;</td>
+          <td class="paramname"><em>ops</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set custom handlers for namespace reservation operations. </p>
+<p>This call allows to override the default namespace reservation operations with custom handlers. This function may only be called before any namespace has been added.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ops</td><td>The reservation ops handers </td></tr>
   </table>
   </dd>
 </dl>
@@ -1797,6 +1842,33 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if any host is allowed to connect to this subsystem, or false if connecting hosts must be in the list configured with <a class="el" href="nvmf_8h.html#a4082cbddea58f9fc309504a6e8254113" title="Allow the given host NQN to connect to the given subsystem.">spdk_nvmf_subsystem_add_host()</a>. </dd></dl>
+
+</div>
+</div>
+<a id="af2865d5c13e5c7ca972e1577796d8dcf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af2865d5c13e5c7ca972e1577796d8dcf">&#9670;&nbsp;</a></span>spdk_nvmf_subsystem_get_ana_reporting()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool spdk_nvmf_subsystem_get_ana_reporting </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_nvmf_subsystem *&#160;</td>
+          <td class="paramname"><em>subsystem</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get whether a subsystem supports Asymmetric Namespace Access (ANA) reporting. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">subsystem</td><td>Subsystem to check</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if subsystem supports ANA reporting, false otherwise. </dd></dl>
 
 </div>
 </div>
@@ -2766,6 +2838,72 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a9124f6370456043e55419fdf64879c3e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9124f6370456043e55419fdf64879c3e">&#9670;&nbsp;</a></span>spdk_nvmf_subsystem_set_ana_state()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_nvmf_subsystem_set_ana_state </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_nvmf_subsystem *&#160;</td>
+          <td class="paramname"><em>subsystem</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const struct <a class="el" href="structspdk__nvme__transport__id.html">spdk_nvme_transport_id</a> *&#160;</td>
+          <td class="paramname"><em>trid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">enum spdk_nvme_ana_state&#160;</td>
+          <td class="paramname"><em>ana_state</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>anagrpid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="nvmf_8h.html#aad52ac090dcb26b03da0e689ea71df89">spdk_nvmf_tgt_subsystem_listen_done_fn</a>&#160;</td>
+          <td class="paramname"><em>cb_fn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>cb_arg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set Asymmetric Namespace Access (ANA) state for the specified ANA group id. </p>
+<p>May only be performed on subsystems in the INACTIVE or PAUSED state.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">subsystem</td><td>Subsystem to operate on </td></tr>
+    <tr><td class="paramname">trid</td><td>Address for which the new state will apply </td></tr>
+    <tr><td class="paramname">ana_state</td><td>The ANA state which is to be set </td></tr>
+    <tr><td class="paramname">anagrpid</td><td>The ANA group ID to operate on </td></tr>
+    <tr><td class="paramname">cb_fn</td><td>The function to call on completion </td></tr>
+    <tr><td class="paramname">cb_arg</td><td>The argument to pass to the cb_fn </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a270a2bbd77c6b97116c7e61b4f1a56ce"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a270a2bbd77c6b97116c7e61b4f1a56ce">&#9670;&nbsp;</a></span>spdk_nvmf_subsystem_set_mn()</h2>
 
@@ -2949,7 +3087,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Check whether a subsystem allows any listen address or only addresses in the allowed list. </p>
-<p>Deprecated - will be removed in 24.01. Please use <a class="el" href="nvmf_8h.html#a8f4f76f43797274eaf8b08a0894526f6">spdk_nvmf_subsystem_any_listener_allowed</a>.</p>
+<p>Deprecated - will be removed in v24.05. Please use <a class="el" href="nvmf_8h.html#a8f4f76f43797274eaf8b08a0894526f6">spdk_nvmf_subsystem_any_listener_allowed</a>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">subsystem</td><td>Subsystem to query.</td></tr>

@@ -116,10 +116,30 @@ void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="st
 struct spdk_accel_sequence *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev__ext__io__opts.html#aa8f54343920dd881ed5f8ce23f86e680">accel_sequence</a></td></tr>
 <tr class="memdesc:aa8f54343920dd881ed5f8ce23f86e680"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sequence of accel operations to be executed before/after (depending on the IO type) the request is submitted. <br /></td></tr>
 <tr class="separator:aa8f54343920dd881ed5f8ce23f86e680"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9738b87b65cb41ab417f58a3ac1c5004"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev__ext__io__opts.html#a9738b87b65cb41ab417f58a3ac1c5004">dif_check_flags_exclude_mask</a></td></tr>
+<tr class="memdesc:a9738b87b65cb41ab417f58a3ac1c5004"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specify which DIF check flags to exclude on a per-IO basis.  <a href="structspdk__bdev__ext__io__opts.html#a9738b87b65cb41ab417f58a3ac1c5004">More...</a><br /></td></tr>
+<tr class="separator:a9738b87b65cb41ab417f58a3ac1c5004"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Structure with optional IO request parameters. </p>
 </div><h2 class="groupheader">Field Documentation</h2>
+<a id="a9738b87b65cb41ab417f58a3ac1c5004"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9738b87b65cb41ab417f58a3ac1c5004">&#9670;&nbsp;</a></span>dif_check_flags_exclude_mask</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t spdk_bdev_ext_io_opts::dif_check_flags_exclude_mask</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Specify which DIF check flags to exclude on a per-IO basis. </p>
+<p>The default value is all zeroes, which includes all of the flags set for this bdev. If any of the flags is set, that flag will be excluded from any DIF operations for this IO. </p>
+
+</div>
+</div>
 <a id="a8b736dcfb98e944e61f82cf7718eefa0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8b736dcfb98e944e61f82cf7718eefa0">&#9670;&nbsp;</a></span>memory_domain</h2>
 

@@ -153,6 +153,12 @@ Functions</h2></td></tr>
 <tr class="memitem:a152627581b35ac9cec6ef4eb8e36a4e3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="idxd_8h.html#a152627581b35ac9cec6ef4eb8e36a4e3">spdk_idxd_submit_decompress</a> (struct spdk_idxd_io_channel *chan, struct iovec *diov, uint32_t diovcnt, struct iovec *siov, uint32_t siovcnt, int flags, <a class="el" href="idxd_8h.html#a75c066c5425700c49f077e20484b50c1">spdk_idxd_req_cb</a> cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:a152627581b35ac9cec6ef4eb8e36a4e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Build and submit an IAA memory decompress request.  <a href="idxd_8h.html#a152627581b35ac9cec6ef4eb8e36a4e3">More...</a><br /></td></tr>
 <tr class="separator:a152627581b35ac9cec6ef4eb8e36a4e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a100dd0931609fd0604282bd0ba0d88cd"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="idxd_8h.html#a100dd0931609fd0604282bd0ba0d88cd">spdk_idxd_submit_dif_check</a> (struct spdk_idxd_io_channel *chan, struct iovec *siov, size_t siovcnt, uint32_t num_blocks, const struct <a class="el" href="structspdk__dif__ctx.html">spdk_dif_ctx</a> *ctx, int flags, <a class="el" href="idxd_8h.html#a75c066c5425700c49f077e20484b50c1">spdk_idxd_req_cb</a> cb_fn, void *cb_arg)</td></tr>
+<tr class="memdesc:a100dd0931609fd0604282bd0ba0d88cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Build and submit a DIF check request.  <a href="idxd_8h.html#a100dd0931609fd0604282bd0ba0d88cd">More...</a><br /></td></tr>
+<tr class="separator:a100dd0931609fd0604282bd0ba0d88cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5bf4736bd1b3e0ecfc19e51894c52bf0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="idxd_8h.html#a5bf4736bd1b3e0ecfc19e51894c52bf0">spdk_idxd_submit_dif_insert</a> (struct spdk_idxd_io_channel *chan, struct iovec *diov, size_t diovcnt, struct iovec *siov, size_t siovcnt, uint32_t num_blocks, const struct <a class="el" href="structspdk__dif__ctx.html">spdk_dif_ctx</a> *ctx, int flags, <a class="el" href="idxd_8h.html#a75c066c5425700c49f077e20484b50c1">spdk_idxd_req_cb</a> cb_fn, void *cb_arg)</td></tr>
+<tr class="memdesc:a5bf4736bd1b3e0ecfc19e51894c52bf0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Build and submit a DIF insert request.  <a href="idxd_8h.html#a5bf4736bd1b3e0ecfc19e51894c52bf0">More...</a><br /></td></tr>
+<tr class="separator:a5bf4736bd1b3e0ecfc19e51894c52bf0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9d3c2666201ade973ac2fe89a6346139"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="idxd_8h.html#a9d3c2666201ade973ac2fe89a6346139">spdk_idxd_submit_raw_desc</a> (struct spdk_idxd_io_channel *chan, struct <a class="el" href="structidxd__hw__desc.html">idxd_hw_desc</a> *desc, <a class="el" href="idxd_8h.html#a75c066c5425700c49f077e20484b50c1">spdk_idxd_req_cb</a> cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:a9d3c2666201ade973ac2fe89a6346139"><td class="mdescLeft">&#160;</td><td class="mdescRight">Build and submit an IDXD raw request.  <a href="idxd_8h.html#a9d3c2666201ade973ac2fe89a6346139">More...</a><br /></td></tr>
 <tr class="separator:a9d3c2666201ade973ac2fe89a6346139"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -947,6 +953,182 @@ Functions</h2></td></tr>
     <tr><td class="paramname">flags</td><td>Flags, optional flags that can vary per operation. </td></tr>
     <tr><td class="paramname">cb_fn</td><td>Callback function which will be called when the request is complete. </td></tr>
     <tr><td class="paramname">cb_arg</td><td>Opaque value which will be passed back as the arg parameter in the completion callback.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, negative errno on failure. </dd></dl>
+
+</div>
+</div>
+<a id="a100dd0931609fd0604282bd0ba0d88cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a100dd0931609fd0604282bd0ba0d88cd">&#9670;&nbsp;</a></span>spdk_idxd_submit_dif_check()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_idxd_submit_dif_check </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_idxd_io_channel *&#160;</td>
+          <td class="paramname"><em>chan</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct iovec *&#160;</td>
+          <td class="paramname"><em>siov</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>siovcnt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>num_blocks</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const struct <a class="el" href="structspdk__dif__ctx.html">spdk_dif_ctx</a> *&#160;</td>
+          <td class="paramname"><em>ctx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>flags</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="idxd_8h.html#a75c066c5425700c49f077e20484b50c1">spdk_idxd_req_cb</a>&#160;</td>
+          <td class="paramname"><em>cb_fn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>cb_arg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Build and submit a DIF check request. </p>
+<p>This function will build the DIF check descriptor and then immediately submit by writing to the proper device portal.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">chan</td><td>IDXD channel to submit request. </td></tr>
+    <tr><td class="paramname">siov</td><td>Source iovec </td></tr>
+    <tr><td class="paramname">siovcnt</td><td>Number of elements in siov </td></tr>
+    <tr><td class="paramname">num_blocks</td><td>Total number of blocks to process </td></tr>
+    <tr><td class="paramname">ctx</td><td>DIF context. Contains the DIF configuration values, including the reference Application Tag value and initial value of the Reference Tag to check </td></tr>
+    <tr><td class="paramname">flags</td><td>Flags, optional flags that can vary per operation. </td></tr>
+    <tr><td class="paramname">cb_fn</td><td>Callback function which will be called when the request is complete. </td></tr>
+    <tr><td class="paramname">cb_arg</td><td>Opaque value which will be passed back as the cb_arg parameter in the completion callback.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, negative errno on failure. </dd></dl>
+
+</div>
+</div>
+<a id="a5bf4736bd1b3e0ecfc19e51894c52bf0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5bf4736bd1b3e0ecfc19e51894c52bf0">&#9670;&nbsp;</a></span>spdk_idxd_submit_dif_insert()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_idxd_submit_dif_insert </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_idxd_io_channel *&#160;</td>
+          <td class="paramname"><em>chan</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct iovec *&#160;</td>
+          <td class="paramname"><em>diov</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>diovcnt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct iovec *&#160;</td>
+          <td class="paramname"><em>siov</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>siovcnt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>num_blocks</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const struct <a class="el" href="structspdk__dif__ctx.html">spdk_dif_ctx</a> *&#160;</td>
+          <td class="paramname"><em>ctx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>flags</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="idxd_8h.html#a75c066c5425700c49f077e20484b50c1">spdk_idxd_req_cb</a>&#160;</td>
+          <td class="paramname"><em>cb_fn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>cb_arg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Build and submit a DIF insert request. </p>
+<p>This function will build the DIF insert descriptor and then immediately submit by writing to the proper device portal.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">chan</td><td>IDXD channel to submit request. </td></tr>
+    <tr><td class="paramname">diov</td><td>Destination iovec </td></tr>
+    <tr><td class="paramname">diovcnt</td><td>Number of elements in diov </td></tr>
+    <tr><td class="paramname">siov</td><td>Source iovec </td></tr>
+    <tr><td class="paramname">siovcnt</td><td>Number of elements in siov </td></tr>
+    <tr><td class="paramname">num_blocks</td><td>Total number of blocks to process </td></tr>
+    <tr><td class="paramname">ctx</td><td>DIF context. Contains the DIF configuration values, including the reference Application Tag value and initial value of the Reference Tag to insert </td></tr>
+    <tr><td class="paramname">flags</td><td>Flags, optional flags that can vary per operation. </td></tr>
+    <tr><td class="paramname">cb_fn</td><td>Callback function which will be called when the request is complete. </td></tr>
+    <tr><td class="paramname">cb_arg</td><td>Opaque value which will be passed back as the cb_arg parameter in the completion callback.</td></tr>
   </table>
   </dd>
 </dl>
