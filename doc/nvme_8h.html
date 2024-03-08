@@ -274,9 +274,9 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a43a0b4aaebb1567c481b034b7dc2d5d9"><td class="memItemLeft" align="right" valign="top"><a id="a43a0b4aaebb1567c481b034b7dc2d5d9"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_STATIC_ASSERT</b> (sizeof(struct <a class="el" href="structspdk__nvme__ctrlr__opts.html">spdk_nvme_ctrlr_opts</a>)==824, &quot;Incorrect size&quot;)</td></tr>
-<tr class="separator:a43a0b4aaebb1567c481b034b7dc2d5d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7055da0cf40672b41d3bf930c6ccfbf4"><td class="memItemLeft" align="right" valign="top"><a id="a7055da0cf40672b41d3bf930c6ccfbf4"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_STATIC_ASSERT</b> (sizeof(struct <a class="el" href="structspdk__nvme__ctrlr__opts.html">spdk_nvme_ctrlr_opts</a>)==832, &quot;Incorrect size&quot;)</td></tr>
+<tr class="separator:a7055da0cf40672b41d3bf930c6ccfbf4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a39c91e2e6ae899f37b5a89c28a2207cf"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a39c91e2e6ae899f37b5a89c28a2207cf">spdk_nvme_ctrlr_is_discovery</a> (struct spdk_nvme_ctrlr *ctrlr)</td></tr>
 <tr class="memdesc:a39c91e2e6ae899f37b5a89c28a2207cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicate whether a ctrlr handle is associated with a Discovery controller.  <a href="nvme_8h.html#a39c91e2e6ae899f37b5a89c28a2207cf">More...</a><br /></td></tr>
 <tr class="separator:a39c91e2e6ae899f37b5a89c28a2207cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -727,6 +727,9 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_trty
 <tr class="memitem:a7c98eff7f5474a7044112202fbbf77bb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a7c98eff7f5474a7044112202fbbf77bb">spdk_nvme_ns_cmd_writev_ext</a> (struct spdk_nvme_ns *ns, struct spdk_nvme_qpair *qpair, uint64_t lba, uint32_t lba_count, <a class="el" href="nvme_8h.html#a1786f9616afc773b20f752dc98ecd465">spdk_nvme_cmd_cb</a> cb_fn, void *cb_arg, <a class="el" href="nvme_8h.html#a0e1fcb43970ea531567ee00d4ee0675b">spdk_nvme_req_reset_sgl_cb</a> reset_sgl_fn, <a class="el" href="nvme_8h.html#a4ab95bea86f498c08510f6f0bcd2eb09">spdk_nvme_req_next_sge_cb</a> next_sge_fn, struct <a class="el" href="structspdk__nvme__ns__cmd__ext__io__opts.html">spdk_nvme_ns_cmd_ext_io_opts</a> *opts)</td></tr>
 <tr class="memdesc:a7c98eff7f5474a7044112202fbbf77bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submit a write I/O to the specified NVMe namespace.  <a href="nvme_8h.html#a7c98eff7f5474a7044112202fbbf77bb">More...</a><br /></td></tr>
 <tr class="separator:a7c98eff7f5474a7044112202fbbf77bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53873faead02284e3b26158e479bf554"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a53873faead02284e3b26158e479bf554">spdk_nvme_ns_cmd_write_ext</a> (struct spdk_nvme_ns *ns, struct spdk_nvme_qpair *qpair, void *payload, uint64_t lba, uint32_t lba_count, <a class="el" href="nvme_8h.html#a1786f9616afc773b20f752dc98ecd465">spdk_nvme_cmd_cb</a> cb_fn, void *cb_arg, struct <a class="el" href="structspdk__nvme__ns__cmd__ext__io__opts.html">spdk_nvme_ns_cmd_ext_io_opts</a> *opts)</td></tr>
+<tr class="memdesc:a53873faead02284e3b26158e479bf554"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submit a write I/O to the specified NVMe namespace.  <a href="nvme_8h.html#a53873faead02284e3b26158e479bf554">More...</a><br /></td></tr>
+<tr class="separator:a53873faead02284e3b26158e479bf554"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adc2aa2be0d657be0c63d5abc02b274ec"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#adc2aa2be0d657be0c63d5abc02b274ec">spdk_nvme_ns_cmd_write_with_md</a> (struct spdk_nvme_ns *ns, struct spdk_nvme_qpair *qpair, void *payload, void *metadata, uint64_t lba, uint32_t lba_count, <a class="el" href="nvme_8h.html#a1786f9616afc773b20f752dc98ecd465">spdk_nvme_cmd_cb</a> cb_fn, void *cb_arg, uint32_t io_flags, uint16_t apptag_mask, uint16_t apptag)</td></tr>
 <tr class="memdesc:adc2aa2be0d657be0c63d5abc02b274ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submit a write I/O to the specified NVMe namespace.  <a href="nvme_8h.html#adc2aa2be0d657be0c63d5abc02b274ec">More...</a><br /></td></tr>
 <tr class="separator:adc2aa2be0d657be0c63d5abc02b274ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -751,6 +754,9 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_trty
 <tr class="memitem:af4a40bbc5ff993609f20d6b4f2a35f93"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#af4a40bbc5ff993609f20d6b4f2a35f93">spdk_nvme_ns_cmd_readv_ext</a> (struct spdk_nvme_ns *ns, struct spdk_nvme_qpair *qpair, uint64_t lba, uint32_t lba_count, <a class="el" href="nvme_8h.html#a1786f9616afc773b20f752dc98ecd465">spdk_nvme_cmd_cb</a> cb_fn, void *cb_arg, <a class="el" href="nvme_8h.html#a0e1fcb43970ea531567ee00d4ee0675b">spdk_nvme_req_reset_sgl_cb</a> reset_sgl_fn, <a class="el" href="nvme_8h.html#a4ab95bea86f498c08510f6f0bcd2eb09">spdk_nvme_req_next_sge_cb</a> next_sge_fn, struct <a class="el" href="structspdk__nvme__ns__cmd__ext__io__opts.html">spdk_nvme_ns_cmd_ext_io_opts</a> *opts)</td></tr>
 <tr class="memdesc:af4a40bbc5ff993609f20d6b4f2a35f93"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submit a read I/O to the specified NVMe namespace.  <a href="nvme_8h.html#af4a40bbc5ff993609f20d6b4f2a35f93">More...</a><br /></td></tr>
 <tr class="separator:af4a40bbc5ff993609f20d6b4f2a35f93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37a441813d75615e676919a1f4c0c78a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a37a441813d75615e676919a1f4c0c78a">spdk_nvme_ns_cmd_read_ext</a> (struct spdk_nvme_ns *ns, struct spdk_nvme_qpair *qpair, void *payload, uint64_t lba, uint32_t lba_count, <a class="el" href="nvme_8h.html#a1786f9616afc773b20f752dc98ecd465">spdk_nvme_cmd_cb</a> cb_fn, void *cb_arg, struct <a class="el" href="structspdk__nvme__ns__cmd__ext__io__opts.html">spdk_nvme_ns_cmd_ext_io_opts</a> *opts)</td></tr>
+<tr class="memdesc:a37a441813d75615e676919a1f4c0c78a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submit a read I/O to the specified NVMe namespace.  <a href="nvme_8h.html#a37a441813d75615e676919a1f4c0c78a">More...</a><br /></td></tr>
+<tr class="separator:a37a441813d75615e676919a1f4c0c78a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa2913b93326e636eca6dfe7b42e349fe"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#aa2913b93326e636eca6dfe7b42e349fe">spdk_nvme_ns_cmd_read_with_md</a> (struct spdk_nvme_ns *ns, struct spdk_nvme_qpair *qpair, void *payload, void *metadata, uint64_t lba, uint32_t lba_count, <a class="el" href="nvme_8h.html#a1786f9616afc773b20f752dc98ecd465">spdk_nvme_cmd_cb</a> cb_fn, void *cb_arg, uint32_t io_flags, uint16_t apptag_mask, uint16_t apptag)</td></tr>
 <tr class="memdesc:aa2913b93326e636eca6dfe7b42e349fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submits a read I/O to the specified NVMe namespace.  <a href="nvme_8h.html#aa2913b93326e636eca6dfe7b42e349fe">More...</a><br /></td></tr>
 <tr class="separator:aa2913b93326e636eca6dfe7b42e349fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -6401,6 +6407,87 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_trty
 
 </div>
 </div>
+<a id="a37a441813d75615e676919a1f4c0c78a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a37a441813d75615e676919a1f4c0c78a">&#9670;&nbsp;</a></span>spdk_nvme_ns_cmd_read_ext()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_nvme_ns_cmd_read_ext </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_nvme_ns *&#160;</td>
+          <td class="paramname"><em>ns</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct spdk_nvme_qpair *&#160;</td>
+          <td class="paramname"><em>qpair</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>payload</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>lba</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>lba_count</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="nvme_8h.html#a1786f9616afc773b20f752dc98ecd465">spdk_nvme_cmd_cb</a>&#160;</td>
+          <td class="paramname"><em>cb_fn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>cb_arg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structspdk__nvme__ns__cmd__ext__io__opts.html">spdk_nvme_ns_cmd_ext_io_opts</a> *&#160;</td>
+          <td class="paramname"><em>opts</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Submit a read I/O to the specified NVMe namespace. </p>
+<p>The command is submitted to a qpair allocated by <a class="el" href="nvme_8h.html#a13f745d239dab9b8f934fae2ad4984a2" title="Allocate an I/O queue pair (submission and completion queue).">spdk_nvme_ctrlr_alloc_io_qpair()</a>. The user must ensure that only one thread submits I/O on a given qpair at any given time.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ns</td><td>NVMe namespace to submit the read I/O </td></tr>
+    <tr><td class="paramname">qpair</td><td>I/O queue pair to submit the request </td></tr>
+    <tr><td class="paramname">payload</td><td>virtual address pointer to the data payload </td></tr>
+    <tr><td class="paramname">lba</td><td>starting LBA to read the data </td></tr>
+    <tr><td class="paramname">lba_count</td><td>length (in sectors) for the read operation </td></tr>
+    <tr><td class="paramname">cb_fn</td><td>callback function to invoke when the I/O is completed </td></tr>
+    <tr><td class="paramname">cb_arg</td><td>argument to pass to the callback function </td></tr>
+    <tr><td class="paramname">opts</td><td>Optional structure with extended IO request options. If provided, the caller must guarantee that this structure is accessible until IO completes</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 if successfully submitted, negated errnos on the following error conditions: -EINVAL: The request is malformed. -ENOMEM: The request cannot be allocated. -ENXIO: The qpair is failed at the transport level. -EFAULT: Invalid address was specified as part of payload. cb_fn is also called with error status including dnr=1 in this case. </dd></dl>
+
+</div>
+</div>
 <a id="aa2913b93326e636eca6dfe7b42e349fe"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa2913b93326e636eca6dfe7b42e349fe">&#9670;&nbsp;</a></span>spdk_nvme_ns_cmd_read_with_md()</h2>
 
@@ -7250,6 +7337,87 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_trty
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 if successfully submitted, negated errnos on the following error conditions: -EINVAL: The request is malformed. -ENOMEM: The request cannot be allocated. -ENXIO: The qpair is failed at the transport level. </dd></dl>
+
+</div>
+</div>
+<a id="a53873faead02284e3b26158e479bf554"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a53873faead02284e3b26158e479bf554">&#9670;&nbsp;</a></span>spdk_nvme_ns_cmd_write_ext()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_nvme_ns_cmd_write_ext </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_nvme_ns *&#160;</td>
+          <td class="paramname"><em>ns</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct spdk_nvme_qpair *&#160;</td>
+          <td class="paramname"><em>qpair</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>payload</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>lba</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>lba_count</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="nvme_8h.html#a1786f9616afc773b20f752dc98ecd465">spdk_nvme_cmd_cb</a>&#160;</td>
+          <td class="paramname"><em>cb_fn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>cb_arg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structspdk__nvme__ns__cmd__ext__io__opts.html">spdk_nvme_ns_cmd_ext_io_opts</a> *&#160;</td>
+          <td class="paramname"><em>opts</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Submit a write I/O to the specified NVMe namespace. </p>
+<p>The command is submitted to a qpair allocated by <a class="el" href="nvme_8h.html#a13f745d239dab9b8f934fae2ad4984a2" title="Allocate an I/O queue pair (submission and completion queue).">spdk_nvme_ctrlr_alloc_io_qpair()</a>. The user must ensure that only one thread submits I/O on a given qpair at any given time.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ns</td><td>NVMe namespace to submit the write I/O </td></tr>
+    <tr><td class="paramname">qpair</td><td>I/O queue pair to submit the request </td></tr>
+    <tr><td class="paramname">payload</td><td>Virtual address pointer to the data payload. </td></tr>
+    <tr><td class="paramname">lba</td><td>starting LBA to write the data </td></tr>
+    <tr><td class="paramname">lba_count</td><td>length (in sectors) for the write operation </td></tr>
+    <tr><td class="paramname">cb_fn</td><td>callback function to invoke when the I/O is completed </td></tr>
+    <tr><td class="paramname">cb_arg</td><td>argument to pass to the callback function </td></tr>
+    <tr><td class="paramname">opts</td><td>Optional structure with extended IO request options. If provided, the caller must guarantee that this structure is accessible until IO completes</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 if successfully submitted, negated errnos on the following error conditions: -EINVAL: The request is malformed. -ENOMEM: The request cannot be allocated. -ENXIO: The qpair is failed at the transport level. -EFAULT: Invalid address was specified as part of payload. cb_fn is also called with error status including dnr=1 in this case. </dd></dl>
 
 </div>
 </div>

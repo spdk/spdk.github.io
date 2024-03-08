@@ -177,6 +177,9 @@ var NAVTREEINDEX7 =
 "jsonrpc.html#rpc_iscsi_target_node_request_logout":[3,9,6,29],
 "jsonrpc.html#rpc_iscsi_target_node_set_auth":[3,9,6,16],
 "jsonrpc.html#rpc_iscsi_target_node_set_redirect":[3,9,6,28],
+"jsonrpc.html#rpc_keyring_file_add_key":[3,9,13,18],
+"jsonrpc.html#rpc_keyring_file_remove_key":[3,9,13,19],
+"jsonrpc.html#rpc_keyring_get_keys":[3,9,13,20],
 "jsonrpc.html#rpc_log_clear_flag":[3,9,3,23],
 "jsonrpc.html#rpc_log_enable_timestamps":[3,9,3,25],
 "jsonrpc.html#rpc_log_get_flags":[3,9,3,24],
@@ -246,8 +249,5 @@ var NAVTREEINDEX7 =
 "jsonrpc.html#rpc_vfu_virtio_scsi_remove_target":[3,9,7,27],
 "jsonrpc.html#rpc_vhost_controller_set_coalescing":[3,9,8,0],
 "jsonrpc.html#rpc_vhost_create_blk_controller":[3,9,8,7],
-"jsonrpc.html#rpc_vhost_create_scsi_controller":[3,9,8,1],
-"jsonrpc.html#rpc_vhost_delete_controller":[3,9,8,13],
-"jsonrpc.html#rpc_vhost_get_controllers":[3,9,8,8],
-"jsonrpc.html#rpc_vhost_get_controllers_blk":[3,9,8,9]
+"jsonrpc.html#rpc_vhost_create_scsi_controller":[3,9,8,1]
 };

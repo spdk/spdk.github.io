@@ -438,7 +438,10 @@ var user_guides =
         [ "iobuf_get_stats", "jsonrpc.html#rpc_iobuf_get_stats", null ],
         [ "bdev_nvme_start_mdns_discovery", "jsonrpc.html#rpc_bdev_nvme_start_mdns_discovery", null ],
         [ "bdev_nvme_stop_mdns_discovery", "jsonrpc.html#rpc_bdev_nvme_stop_mdns_discovery", null ],
-        [ "bdev_nvme_get_mdns_discovery_info", "jsonrpc.html#rpc_bdev_nvme_get_mdns_discovery_info", null ]
+        [ "bdev_nvme_get_mdns_discovery_info", "jsonrpc.html#rpc_bdev_nvme_get_mdns_discovery_info", null ],
+        [ "keyring_file_add_key", "jsonrpc.html#rpc_keyring_file_add_key", null ],
+        [ "keyring_file_remove_key", "jsonrpc.html#rpc_keyring_file_remove_key", null ],
+        [ "keyring_get_keys", "jsonrpc.html#rpc_keyring_get_keys", null ]
       ] ]
     ] ],
     [ "JSON-RPC Remote access", "jsonrpc_proxy.html", null ],

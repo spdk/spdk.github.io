@@ -98,6 +98,9 @@ $(document).ready(function(){initNavTree('deprecation.html',''); initResizable()
 <h2>accel</h2>
 <h3><code>accel_flags</code></h3>
 <p>The <code>int flags</code> parameter in various <em>submit</em> and <em>append</em> accel FW API is not used and deprecated. It will be removed in 24.05 release.</p>
+<h2>nvme</h2>
+<h3><code><a class="el" href="structspdk__nvme__ctrlr__opts.html#a30f3fa93d23c91e76afa426fb74a8ece" title="Set PSK and enable SSL socket implementation for NVMe/TCP only.">spdk_nvme_ctrlr_opts.psk</a></code></h3>
+<p>Passing NVMe/TLS pre-shared keys via <code><a class="el" href="structspdk__nvme__ctrlr__opts.html#a30f3fa93d23c91e76afa426fb74a8ece" title="Set PSK and enable SSL socket implementation for NVMe/TCP only.">spdk_nvme_ctrlr_opts.psk</a></code> is deprecated and this field will be removed in the v24.09 release. Instead, a key obtained from the keyring library should be passed in <code><a class="el" href="structspdk__nvme__ctrlr__opts.html#a3dbb37bcaf3ffa55d8e53efb054d1995" title="Pre-shared key for NVMe/TCP&#39;s TLS connection.">spdk_nvme_ctrlr_opts.tls_psk</a></code>.</p>
 <h2>util</h2>
 <h3><code>spdk_iov_one</code></h3>
 <p>The function is deprecated and will be removed in 24.05 release. Please use <code>SPDK_IOV_ONE</code> macro instead.</p>

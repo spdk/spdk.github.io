@@ -7,8 +7,7 @@ var trace_8h =
     [ "spdk_trace_argument", "structspdk__trace__argument.html", "structspdk__trace__argument" ],
     [ "spdk_trace_tpoint", "structspdk__trace__tpoint.html", "structspdk__trace__tpoint" ],
     [ "spdk_trace_history", "structspdk__trace__history.html", "structspdk__trace__history" ],
-    [ "spdk_trace_flags", "structspdk__trace__flags.html", "structspdk__trace__flags" ],
-    [ "spdk_trace_histories", "structspdk__trace__histories.html", "structspdk__trace__histories" ],
+    [ "spdk_trace_file", "structspdk__trace__file.html", "structspdk__trace__file" ],
     [ "spdk_trace_tpoint_opts", "structspdk__trace__tpoint__opts.html", "structspdk__trace__tpoint__opts" ],
     [ "spdk_trace_register_fn", "structspdk__trace__register__fn.html", "structspdk__trace__register__fn" ],
     [ "__spdk_trace_num_args", "trace_8h.html#a1ed9661f598087b82073e6b72aad752a", null ],
@@ -34,8 +33,8 @@ var trace_8h =
     [ "SPDK_TRACE_REGISTER_FN", "trace_8h.html#a4cdbdade1f743930b4b2ff0fd75d22d4", null ],
     [ "SPDK_TRACE_THREAD_NAME_LEN", "trace_8h.html#a0428c85707807ebfd031c064eba4a94e", null ],
     [ "_spdk_trace_record", "trace_8h.html#a4e97d3723f6605c49b5cf56c83294dee", null ],
-    [ "spdk_get_per_lcore_history", "trace_8h.html#a9e8521a36138b4e120faa1e0d5ef83da", null ],
-    [ "spdk_get_trace_histories_size", "trace_8h.html#a21ab2742df91d14f1bdd761f222180f2", null ],
+    [ "spdk_get_per_lcore_history", "trace_8h.html#a984c1d784848d2a3376d67c99828219b", null ],
+    [ "spdk_get_trace_file_size", "trace_8h.html#af83a677d364238be86c05dcaf2648754", null ],
     [ "spdk_get_trace_history_size", "trace_8h.html#a31bfd9fba3352fdc899b3b5033481b27", null ],
     [ "SPDK_STATIC_ASSERT", "trace_8h.html#a6117e9c017b65f62029a58f4dadf8cad", null ],
     [ "spdk_trace_add_register_fn", "trace_8h.html#aa87447ad261172809a5394ee37f601df", null ],
@@ -61,6 +60,5 @@ var trace_8h =
     [ "spdk_trace_set_tpoints", "trace_8h.html#a6f2131f1fc35d495f51552eb2838630b", null ],
     [ "spdk_trace_tpoint_register_relation", "trace_8h.html#a0ec4843a02b23b8e0a8f4fe8c91fca3b", null ],
     [ "spdk_trace_unregister_user_thread", "trace_8h.html#a2f3c2c36cb52730ac3a98e9d33fd9093", null ],
-    [ "g_trace_flags", "trace_8h.html#a92b06e647e386cf0896e0a38499cf494", null ],
-    [ "g_trace_histories", "trace_8h.html#a2f65bc76d39a775d401996a01bcba195", null ]
+    [ "g_trace_file", "trace_8h.html#a6d7e5597835063e24b77672c4b666c20", null ]
 ];

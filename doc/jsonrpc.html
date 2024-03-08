@@ -3106,7 +3106,9 @@ bdev_nvme_set_options</h2>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">allow_accel_sequence   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Allow NVMe bdevs to advertise support for accel sequences if the controller also supports them. Default: <code>false</code>.    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">rdma_max_cq_size   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">Set the maximum size of a rdma completion queue. Default: 0 (unlimited)   </td></tr>
+<td class="markdownTableBodyNone">rdma_max_cq_size   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">Set the maximum size of a rdma completion queue. Default: 0 (unlimited)    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">rdma_cm_event_timeout_ms   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">Time to wait for RDMA CM events. Default: 0 (0 means using default value of driver).   </td></tr>
 </table>
 <h3>Example</h3>
 <p>Example request:</p>
@@ -3215,7 +3217,7 @@ bdev_nvme_attach_controller</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">fast_io_fail_timeout_sec   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">Time to wait until ctrlr is reconnected before failing I/O to ctrlr. 0 means no such timeout.    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">psk   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Path to a file contatining PSK for TLS (Enables SSL socket implementation for TCP)    </td></tr>
+<td class="markdownTableBodyNone">psk   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Name of the pre-shared key to be used for TLS (Enables SSL socket implementation for TCP)    </td></tr>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">max_bdevs   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">The size of the name array for newly created bdevs. Default is 128.   </td></tr>
 </table>
@@ -10214,6 +10216,91 @@ bdev_nvme_get_mdns_discovery_info</h2>
 <div class="line">    ]</div>
 <div class="line">  }</div>
 <div class="line">]</div>
+</div><!-- fragment --><h2><a class="anchor" id="rpc_keyring_file_add_key"></a>
+keyring_file_add_key</h2>
+<p>Add a file-based key to a keyring.</p>
+<h3>Parameters</h3>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Name of the key to add.    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">path   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Path to a file containing the key.   </td></tr>
+</table>
+<h3>Example</h3>
+<p>Example request:</p>
+<div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
+<div class="line">  &quot;method&quot;: &quot;keyring_file_add_key&quot;,</div>
+<div class="line">  &quot;id&quot;: 1</div>
+<div class="line">  &quot;params&quot;: {</div>
+<div class="line">    &quot;name&quot;: &quot;key0&quot;,</div>
+<div class="line">    &quot;path&quot;: &quot;/path/to/key0&quot;</div>
+<div class="line">  }</div>
+<div class="line">}</div>
+</div><!-- fragment --><p>Example response:</p>
+<div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
+<div class="line">  &quot;id&quot;: 1,</div>
+<div class="line">  &quot;result&quot;: true</div>
+<div class="line">}</div>
+</div><!-- fragment --><h2><a class="anchor" id="rpc_keyring_file_remove_key"></a>
+keyring_file_remove_key</h2>
+<p>Remove a file-based key from a keyring.</p>
+<h3>Parameters</h3>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Name of the key to remove.   </td></tr>
+</table>
+<h3>Example</h3>
+<p>Example request:</p>
+<div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
+<div class="line">  &quot;method&quot;: &quot;keyring_file_remove_key&quot;,</div>
+<div class="line">  &quot;id&quot;: 1</div>
+<div class="line">  &quot;params&quot;: {</div>
+<div class="line">    &quot;name&quot;: &quot;key0&quot;</div>
+<div class="line">  }</div>
+<div class="line">}</div>
+</div><!-- fragment --><p>Example response:</p>
+<div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
+<div class="line">  &quot;id&quot;: 1,</div>
+<div class="line">  &quot;result&quot;: true</div>
+<div class="line">}</div>
+</div><!-- fragment --><h2><a class="anchor" id="rpc_keyring_get_keys"></a>
+keyring_get_keys</h2>
+<p>Get a list of available keys.</p>
+<h3>Example</h3>
+<p>Example request: </p><div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
+<div class="line">  &quot;method&quot;: &quot;keyring_get_keys&quot;,</div>
+<div class="line">  &quot;id&quot;: 1</div>
+<div class="line">}</div>
+</div><!-- fragment --><p>Example response:</p>
+<div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
+<div class="line">  &quot;id&quot;: 1,</div>
+<div class="line">  &quot;result&quot;: [</div>
+<div class="line">    {</div>
+<div class="line">      &quot;name&quot;: &quot;key0&quot;,</div>
+<div class="line">      &quot;module&quot;: &quot;keyring_file&quot;,</div>
+<div class="line">      &quot;removed&quot;: false,</div>
+<div class="line">      &quot;refcnt&quot;: 1,</div>
+<div class="line">      &quot;path&quot;: &quot;/path/to/key0&quot;</div>
+<div class="line">    },</div>
+<div class="line">    {</div>
+<div class="line">      &quot;name&quot;: &quot;key1&quot;,</div>
+<div class="line">      &quot;module&quot;: &quot;keyring_file&quot;,</div>
+<div class="line">      &quot;removed&quot;: false,</div>
+<div class="line">      &quot;refcnt&quot;: 1,</div>
+<div class="line">      &quot;path&quot;: &quot;/path/to/key1&quot;</div>
+<div class="line">    }</div>
+<div class="line">  ]</div>
+<div class="line">}</div>
 </div><!-- fragment --> </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->

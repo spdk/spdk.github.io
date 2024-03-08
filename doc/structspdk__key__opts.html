@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="generator" content="Doxygen 1.9.1" />
-  <title>SPDK: spdk_trace_flags Struct Reference</title>
+  <title>SPDK: spdk_key_opts Struct Reference</title>
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
@@ -66,7 +66,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-$(document).ready(function(){initNavTree('structspdk__trace__flags.html',''); initResizable(); });
+$(document).ready(function(){initNavTree('structspdk__key__opts.html',''); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -88,66 +88,40 @@ $(document).ready(function(){initNavTree('structspdk__trace__flags.html',''); in
   <div class="summary">
 <a href="#pub-attribs">Data Fields</a>  </div>
   <div class="headertitle">
-<div class="title">spdk_trace_flags Struct Reference</div>  </div>
+<div class="title">spdk_key_opts Struct Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="dynheader">
-Collaboration diagram for spdk_trace_flags:</div>
+Collaboration diagram for spdk_key_opts:</div>
 <div class="dyncontent">
-<div class="center"><img src="structspdk__trace__flags__coll__graph.png" border="0" usemap="#aspdk__trace__flags_coll__map" alt="Collaboration graph"/></div>
-<map name="aspdk__trace__flags_coll__map" id="aspdk__trace__flags_coll__map">
-<area shape="rect" title=" " alt="" coords="185,184,316,211"/>
-<area shape="rect" href="structspdk__trace__tpoint.html" title=" " alt="" coords="17,95,156,121"/>
-<area shape="rect" href="structspdk__trace__argument.html" title=" " alt="" coords="5,5,168,32"/>
-<area shape="rect" href="structspdk__trace__object.html" title=" " alt="" coords="181,95,321,121"/>
-<area shape="rect" href="structspdk__trace__owner.html" title=" " alt="" coords="345,95,485,121"/>
+<div class="center"><img src="structspdk__key__opts__coll__graph.png" border="0" usemap="#aspdk__key__opts_coll__map" alt="Collaboration graph"/></div>
+<map name="aspdk__key__opts_coll__map" id="aspdk__key__opts_coll__map">
+<area shape="rect" title=" " alt="" coords="28,95,147,121"/>
+<area shape="rect" href="structspdk__keyring__module.html" title=" " alt="" coords="5,5,169,32"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:ae2aaf775673a5e9a1efe443aa8ca7e4f"><td class="memItemLeft" align="right" valign="top"><a id="ae2aaf775673a5e9a1efe443aa8ca7e4f"></a>
-uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>tsc_rate</b></td></tr>
-<tr class="separator:ae2aaf775673a5e9a1efe443aa8ca7e4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3b9abc4c75c2d8f28609892e668f393c"><td class="memItemLeft" align="right" valign="top"><a id="a3b9abc4c75c2d8f28609892e668f393c"></a>
-uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>tpoint_mask</b> [SPDK_TRACE_MAX_GROUP_ID]</td></tr>
-<tr class="separator:a3b9abc4c75c2d8f28609892e668f393c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7f98e821ed18722c19ca18fc63bb2a1e"><td class="memItemLeft" align="right" valign="top"><a id="a7f98e821ed18722c19ca18fc63bb2a1e"></a>
-char&#160;</td><td class="memItemRight" valign="bottom"><b>tname</b> [SPDK_TRACE_MAX_LCORE][SPDK_TRACE_THREAD_NAME_LEN]</td></tr>
-<tr class="separator:a7f98e821ed18722c19ca18fc63bb2a1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afefc53c12cc20565e7d7e8c49775178f"><td class="memItemLeft" align="right" valign="top"><a id="afefc53c12cc20565e7d7e8c49775178f"></a>
-struct <a class="el" href="structspdk__trace__owner.html">spdk_trace_owner</a>&#160;</td><td class="memItemRight" valign="bottom"><b>owner</b> [UCHAR_MAX+1]</td></tr>
-<tr class="separator:afefc53c12cc20565e7d7e8c49775178f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a19f99697c48da079e6dd9802c58a6d90"><td class="memItemLeft" align="right" valign="top"><a id="a19f99697c48da079e6dd9802c58a6d90"></a>
-struct <a class="el" href="structspdk__trace__object.html">spdk_trace_object</a>&#160;</td><td class="memItemRight" valign="bottom"><b>object</b> [UCHAR_MAX+1]</td></tr>
-<tr class="separator:a19f99697c48da079e6dd9802c58a6d90"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab799d235068c9b11669b0daeabb08d55"><td class="memItemLeft" align="right" valign="top"><a id="ab799d235068c9b11669b0daeabb08d55"></a>
-struct <a class="el" href="structspdk__trace__tpoint.html">spdk_trace_tpoint</a>&#160;</td><td class="memItemRight" valign="bottom"><b>tpoint</b> [SPDK_TRACE_MAX_TPOINT_ID]</td></tr>
-<tr class="separator:ab799d235068c9b11669b0daeabb08d55"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad7aae2959ed72743507c2bb5c36a70b5"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__trace__flags.html#ad7aae2959ed72743507c2bb5c36a70b5">lcore_history_offsets</a> [SPDK_TRACE_MAX_LCORE+1]</td></tr>
-<tr class="memdesc:ad7aae2959ed72743507c2bb5c36a70b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Offset of each trace_history from the beginning of this data structure.  <a href="structspdk__trace__flags.html#ad7aae2959ed72743507c2bb5c36a70b5">More...</a><br /></td></tr>
-<tr class="separator:ad7aae2959ed72743507c2bb5c36a70b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc8eaa4415be52630ec5ca4e495e82aa"><td class="memItemLeft" align="right" valign="top"><a id="acc8eaa4415be52630ec5ca4e495e82aa"></a>
+size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__key__opts.html#acc8eaa4415be52630ec5ca4e495e82aa">size</a></td></tr>
+<tr class="memdesc:acc8eaa4415be52630ec5ca4e495e82aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Size of this structure. <br /></td></tr>
+<tr class="separator:acc8eaa4415be52630ec5ca4e495e82aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad25c18e120e9849ac1ad117ca63b03d8"><td class="memItemLeft" align="right" valign="top"><a id="ad25c18e120e9849ac1ad117ca63b03d8"></a>
+const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__key__opts.html#ad25c18e120e9849ac1ad117ca63b03d8">name</a></td></tr>
+<tr class="memdesc:ad25c18e120e9849ac1ad117ca63b03d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Name of the key. <br /></td></tr>
+<tr class="separator:ad25c18e120e9849ac1ad117ca63b03d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8ee9cb8ebed6077e0b3a78439fddb4a"><td class="memItemLeft" align="right" valign="top"><a id="aa8ee9cb8ebed6077e0b3a78439fddb4a"></a>
+struct <a class="el" href="structspdk__keyring__module.html">spdk_keyring_module</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__key__opts.html#aa8ee9cb8ebed6077e0b3a78439fddb4a">module</a></td></tr>
+<tr class="memdesc:aa8ee9cb8ebed6077e0b3a78439fddb4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Keyring module. <br /></td></tr>
+<tr class="separator:aa8ee9cb8ebed6077e0b3a78439fddb4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec8b16d17213cfb16d6efcc91de5feae"><td class="memItemLeft" align="right" valign="top"><a id="aec8b16d17213cfb16d6efcc91de5feae"></a>
+void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__key__opts.html#aec8b16d17213cfb16d6efcc91de5feae">ctx</a></td></tr>
+<tr class="memdesc:aec8b16d17213cfb16d6efcc91de5feae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Context passed to the add_key() callback. <br /></td></tr>
+<tr class="separator:aec8b16d17213cfb16d6efcc91de5feae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Field Documentation</h2>
-<a id="ad7aae2959ed72743507c2bb5c36a70b5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad7aae2959ed72743507c2bb5c36a70b5">&#9670;&nbsp;</a></span>lcore_history_offsets</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint64_t spdk_trace_flags::lcore_history_offsets[SPDK_TRACE_MAX_LCORE+1]</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Offset of each trace_history from the beginning of this data structure. </p>
-<p>The last one is the offset of the file end. </p>
-
-</div>
-</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
-<li><a class="el" href="trace_8h.html">trace.h</a></li>
+<li>keyring_module.h</li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

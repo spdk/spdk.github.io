@@ -1,7 +1,6 @@
 var structspdk__bdev__io =
 [
     [ "__bdev_io_internal_fields", "structspdk__bdev__io_1_1____bdev__io__internal__fields.html", "structspdk__bdev__io_1_1____bdev__io__internal__fields" ],
-    [ "TAILQ_ENTRY", "structspdk__bdev__io.html#a4c93fa89b3cc9789d2e6d7d7e2246e35", null ],
     [ "abort", "structspdk__bdev__io.html#abe066e23176d1a9124105408c27a8caf", null ],
     [ "abort", "structspdk__bdev__io.html#a07a66e3733f859615b71db2520550383", null ],
     [ "accel_sequence", "structspdk__bdev__io.html#a30272a3b8365a3e6a88045a543465a57", null ],

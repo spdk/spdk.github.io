@@ -1612,13 +1612,13 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_iobuf_unregister_
 </div><div class="memdoc">
 
 <p>Get a buffer from the iobuf pool. </p>
-<p>If no buffers are available, the request is queued until a buffer is released.</p>
+<p>If no buffers are available and entry with cb_fn provided then the request is queued until a buffer becomes available.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">ch</td><td>iobuf channel. </td></tr>
     <tr><td class="paramname">len</td><td>Length of the buffer to retrieve. The user is responsible for making sure the length doesn't exceed large_bufsize. </td></tr>
-    <tr><td class="paramname">entry</td><td>Wait queue entry. </td></tr>
-    <tr><td class="paramname">cb_fn</td><td>Callback to be executed once a buffer becomes available. If a buffer is available immediately, it is NOT be executed.</td></tr>
+    <tr><td class="paramname">entry</td><td>Wait queue entry (optional). </td></tr>
+    <tr><td class="paramname">cb_fn</td><td>Callback to be executed once a buffer becomes available. If a buffer is available immediately, it is NOT executed. Mandatory only if entry provided.</td></tr>
   </table>
   </dd>
 </dl>
