@@ -237,6 +237,7 @@ var NAVTREEINDEX6 =
 "jsonrpc.html#jsonrpc_invalid_params":[3,9,1,1],
 "jsonrpc.html#jsonrpc_overview":[3,9,0],
 "jsonrpc.html#jsonrpc_parser_error":[3,9,1,0],
+"jsonrpc.html#keyring_linux_set_options":[3,9,13,21],
 "jsonrpc.html#notify_get_notifications":[3,9,9,35],
 "jsonrpc.html#rpc_accel_assign_opc":[3,9,4,2],
 "jsonrpc.html#rpc_accel_crypto_key_create":[3,9,4,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX6 =
 "jsonrpc.html#rpc_accel_set_driver":[3,9,4,6],
 "jsonrpc.html#rpc_accel_set_options":[3,9,4,7],
 "jsonrpc.html#rpc_bdev_aio_create":[3,9,5,29],
-"jsonrpc.html#rpc_bdev_aio_delete":[3,9,5,31],
-"jsonrpc.html#rpc_bdev_aio_rescan":[3,9,5,30]
+"jsonrpc.html#rpc_bdev_aio_delete":[3,9,5,31]
 };

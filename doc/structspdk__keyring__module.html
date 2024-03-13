@@ -116,6 +116,9 @@ int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="str
 void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__keyring__module.html#a55a99a29c7f57d0222425d7dae0d32e7">write_config</a> )(struct spdk_json_write_ctx *w)</td></tr>
 <tr class="memdesc:a55a99a29c7f57d0222425d7dae0d32e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write module configuration to JSON. <br /></td></tr>
 <tr class="separator:a55a99a29c7f57d0222425d7dae0d32e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5560395cb56be077fda6519d8ede1a40"><td class="memItemLeft" align="right" valign="top">int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__keyring__module.html#a5560395cb56be077fda6519d8ede1a40">probe_key</a> )(const char *<a class="el" href="structspdk__keyring__module.html#a67a9a11add699bda05bf18afda3a0ebd">name</a>)</td></tr>
+<tr class="memdesc:a5560395cb56be077fda6519d8ede1a40"><td class="mdescLeft">&#160;</td><td class="mdescRight">Probe if a key with a specified name is available.  <a href="structspdk__keyring__module.html#a5560395cb56be077fda6519d8ede1a40">More...</a><br /></td></tr>
+<tr class="separator:a5560395cb56be077fda6519d8ede1a40"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7754b23aa44359369fb720794ce0b54b"><td class="memItemLeft" align="right" valign="top"><a id="a7754b23aa44359369fb720794ce0b54b"></a>
 int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__keyring__module.html#a7754b23aa44359369fb720794ce0b54b">add_key</a> )(struct spdk_key *key, void *ctx)</td></tr>
 <tr class="memdesc:a7754b23aa44359369fb720794ce0b54b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a key to the keyring. <br /></td></tr>
@@ -169,6 +172,23 @@ size_t(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 
 <p>Dump information about a key to JSON. </p>
 <p>This callback should never dump keying material itself, only non-sensitive properties of a key must be dumped. </p>
+
+</div>
+</div>
+<a id="a5560395cb56be077fda6519d8ede1a40"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5560395cb56be077fda6519d8ede1a40">&#9670;&nbsp;</a></span>probe_key</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int(* spdk_keyring_module::probe_key) (const char *<a class="el" href="structspdk__keyring__module.html#a67a9a11add699bda05bf18afda3a0ebd">name</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Probe if a key with a specified name is available. </p>
+<p>If it is, the module should add it to the keyring and return zero. Otherwise, -ENOKEY should be returned. </p>
 
 </div>
 </div>

@@ -1,5 +1,6 @@
 var NAVTREEINDEX8 =
 {
+"jsonrpc.html#rpc_vhost_create_scsi_controller":[3,9,8,1],
 "jsonrpc.html#rpc_vhost_delete_controller":[3,9,8,13],
 "jsonrpc.html#rpc_vhost_get_controllers":[3,9,8,8],
 "jsonrpc.html#rpc_vhost_get_controllers_blk":[3,9,8,9],
@@ -248,6 +249,5 @@ var NAVTREEINDEX8 =
 "nvme_8h.html#a1505fc1ef6e8ccb00134c1fa15e0368b":[15,0,41,118],
 "nvme_8h.html#a1786f9616afc773b20f752dc98ecd465":[15,0,41,26],
 "nvme_8h.html#a18820817137a7fca589be8c08feedcc0":[15,0,41,198],
-"nvme_8h.html#a19178860f90bdd522eaa329d0ff837fe":[15,0,41,139],
-"nvme_8h.html#a1cdd28db5de54dfee308ea0a3c4f1442":[15,0,41,107]
+"nvme_8h.html#a19178860f90bdd522eaa329d0ff837fe":[15,0,41,139]
 };

@@ -263,6 +263,7 @@ bool(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="st
 
 <p>Initialization function for the module. </p>
 <p>Called by the application during startup.</p>
+<p>Return 0 on success or negative error code. If -ENODEV is returned - the module will not be used to handle any operation, but the error will not stop framework initialization.</p>
 <p>Modules are required to define this function. </p>
 
 </div>

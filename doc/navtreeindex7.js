@@ -1,5 +1,6 @@
 var NAVTREEINDEX7 =
 {
+"jsonrpc.html#rpc_bdev_aio_rescan":[3,9,5,30],
 "jsonrpc.html#rpc_bdev_compress_create":[3,9,5,10],
 "jsonrpc.html#rpc_bdev_compress_delete":[3,9,5,11],
 "jsonrpc.html#rpc_bdev_compress_get_orphans":[3,9,5,12],
@@ -248,6 +249,5 @@ var NAVTREEINDEX7 =
 "jsonrpc.html#rpc_vfu_virtio_scsi_add_target":[3,9,7,26],
 "jsonrpc.html#rpc_vfu_virtio_scsi_remove_target":[3,9,7,27],
 "jsonrpc.html#rpc_vhost_controller_set_coalescing":[3,9,8,0],
-"jsonrpc.html#rpc_vhost_create_blk_controller":[3,9,8,7],
-"jsonrpc.html#rpc_vhost_create_scsi_controller":[3,9,8,1]
+"jsonrpc.html#rpc_vhost_create_blk_controller":[3,9,8,7]
 };
