@@ -14,6 +14,8 @@ markdown: kramdown
 highlighter: rouge
 permalink: pretty
 include: [.well-known]
+plugins:
+  - jekyll-feed
 
 boxes:
   - title: download
