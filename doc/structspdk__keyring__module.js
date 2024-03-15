@@ -8,6 +8,7 @@ var structspdk__keyring__module =
     [ "get_key", "structspdk__keyring__module.html#ae476d0df58d273938eb11882f904d734", null ],
     [ "init", "structspdk__keyring__module.html#ae2b546d306aba1ffb46a14215115c234", null ],
     [ "name", "structspdk__keyring__module.html#a67a9a11add699bda05bf18afda3a0ebd", null ],
+    [ "probe_key", "structspdk__keyring__module.html#a5560395cb56be077fda6519d8ede1a40", null ],
     [ "remove_key", "structspdk__keyring__module.html#a8acf9605ef5eb8530344773811372b7f", null ],
     [ "write_config", "structspdk__keyring__module.html#a55a99a29c7f57d0222425d7dae0d32e7", null ]
 ];

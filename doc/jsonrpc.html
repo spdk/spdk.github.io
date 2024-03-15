@@ -10273,7 +10273,7 @@ keyring_file_remove_key</h2>
 <div class="line">}</div>
 </div><!-- fragment --><h2><a class="anchor" id="rpc_keyring_get_keys"></a>
 keyring_get_keys</h2>
-<p>Get a list of available keys.</p>
+<p>Get a list of available keys. This RPC will only list keys that are currently attached to a keyring. Dynamically loaded keys (via the <code>probe_key()</code> callback) will only be included if they're currently in-use (i.e. with active references obtained via <code>spdk_keyring_get_key()</code>).</p>
 <h3>Example</h3>
 <p>Example request: </p><div class="fragment"><div class="line">{</div>
 <div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
@@ -10289,6 +10289,7 @@ keyring_get_keys</h2>
 <div class="line">      &quot;name&quot;: &quot;key0&quot;,</div>
 <div class="line">      &quot;module&quot;: &quot;keyring_file&quot;,</div>
 <div class="line">      &quot;removed&quot;: false,</div>
+<div class="line">      &quot;probed&quot;: false,</div>
 <div class="line">      &quot;refcnt&quot;: 1,</div>
 <div class="line">      &quot;path&quot;: &quot;/path/to/key0&quot;</div>
 <div class="line">    },</div>
@@ -10296,10 +10297,36 @@ keyring_get_keys</h2>
 <div class="line">      &quot;name&quot;: &quot;key1&quot;,</div>
 <div class="line">      &quot;module&quot;: &quot;keyring_file&quot;,</div>
 <div class="line">      &quot;removed&quot;: false,</div>
+<div class="line">      &quot;probed&quot;: false,</div>
 <div class="line">      &quot;refcnt&quot;: 1,</div>
 <div class="line">      &quot;path&quot;: &quot;/path/to/key1&quot;</div>
 <div class="line">    }</div>
 <div class="line">  ]</div>
+<div class="line">}</div>
+</div><!-- fragment --><h2><a class="anchor" id="keyring_linux_set_options"></a>
+keyring_linux_set_options</h2>
+<p>Set options of the keyring_linux module.</p>
+<h3>Parameters</h3>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">enable   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Enable the module.   </td></tr>
+</table>
+<h3>Example</h3>
+<p>Example request: </p><div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
+<div class="line">  &quot;method&quot;: &quot;keyring_linux_set_options&quot;,</div>
+<div class="line">  &quot;id&quot;: 1</div>
+<div class="line">  &quot;params&quot;: {</div>
+<div class="line">    &quot;enable&quot;: true</div>
+<div class="line">  }</div>
+<div class="line">}</div>
+</div><!-- fragment --><p>Example response:</p>
+<div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
+<div class="line">  &quot;id&quot;: 1,</div>
+<div class="line">  &quot;result&quot;: true</div>
 <div class="line">}</div>
 </div><!-- fragment --> </div></div><!-- contents -->
 </div><!-- PageDoc -->

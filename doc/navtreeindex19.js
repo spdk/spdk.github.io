@@ -1,5 +1,6 @@
 var NAVTREEINDEX19 =
 {
+"structspdk__accel__opcode__info.html#ae3efcb48e9ddc6ec7aa01ff061cf7f77":[14,0,54,0],
 "structspdk__accel__opcode__stats.html":[14,0,55],
 "structspdk__accel__opcode__stats.html#a5f327817cd2cade359432b4b0b00e5f2":[14,0,55,2],
 "structspdk__accel__opcode__stats.html#a80178555117743997ee244b84eeca483":[14,0,55,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX19 =
 "structspdk__bdev__io.html#ad1b588e06ce1e76f6c370c507271b4f3":[14,0,67,35],
 "structspdk__bdev__io.html#ad54769b6194caf65b0dd626c399bd41d":[14,0,67,8],
 "structspdk__bdev__io.html#adb839a91096939427b238b94fadd11be":[14,0,67,13],
-"structspdk__bdev__io.html#ae513a78b2095fbd1d0674fa11d26ef2b":[14,0,67,9],
-"structspdk__bdev__io.html#aea98eb4a235dc71bc9bf4040c53a5977":[14,0,67,11]
+"structspdk__bdev__io.html#ae513a78b2095fbd1d0674fa11d26ef2b":[14,0,67,9]
 };

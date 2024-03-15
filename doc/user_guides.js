@@ -441,7 +441,8 @@ var user_guides =
         [ "bdev_nvme_get_mdns_discovery_info", "jsonrpc.html#rpc_bdev_nvme_get_mdns_discovery_info", null ],
         [ "keyring_file_add_key", "jsonrpc.html#rpc_keyring_file_add_key", null ],
         [ "keyring_file_remove_key", "jsonrpc.html#rpc_keyring_file_remove_key", null ],
-        [ "keyring_get_keys", "jsonrpc.html#rpc_keyring_get_keys", null ]
+        [ "keyring_get_keys", "jsonrpc.html#rpc_keyring_get_keys", null ],
+        [ "keyring_linux_set_options", "jsonrpc.html#keyring_linux_set_options", null ]
       ] ]
     ] ],
     [ "JSON-RPC Remote access", "jsonrpc_proxy.html", null ],

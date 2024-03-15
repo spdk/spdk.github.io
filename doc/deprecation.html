@@ -110,10 +110,14 @@ $(document).ready(function(){initNavTree('deprecation.html',''); initResizable()
 <h2>nvmf</h2>
 <h3><code>spdk_nvmf_qpair_disconnect</code></h3>
 <p>Parameters <code>cb_fn</code> and <code>ctx</code> of <code>spdk_nvmf_qpair_disconnect</code> API are deprecated. These parameters will be removed in 24.05 release.</p>
+<h3><code>spdk_nvmf_request_exec_fabrics</code></h3>
+<p>This function is deprecated and will be removed in the 24.09 release. Instead, users should use <code>spdk_nvmf_request_exec()</code>, which now allows all transports (both fabrics and non-fabrics) to execute fabrics commands.</p>
 <h3><code>nvmf_get_subsystems</code></h3>
 <p><code>transport</code> field in <code>listen_addresses</code> of <code>nvmf_get_subsystems</code> RPC is deprecated. <code>trtype</code> field should be used instead. <code>transport</code> field will be removed in 24.05 release.</p>
 <h3><code>spdk_nvmf_subsytem_any_listener_allowed</code></h3>
 <p>The function is deprecated and will be removed in 24.05 release. Please use <code>spdk_nvmf_subsystem_any_listener_allowed</code> instead.</p>
+<h3><code>nvmf_subsystem_add_host</code></h3>
+<p>The ability to specifying path to a PSK file via the <code>psk</code> parameter in <code>nvmf_subsystem_add_host</code> is deprecated and will be removed in the v24.09 release. Instead, the name of a key attached to the keyring should be used.</p>
 <h2>gpt</h2>
 <h3><code>old_gpt_guid</code></h3>
 <p>Deprecated the SPDK partition type GUID <code>7c5222bd-8f5d-4087-9c00-bf9843c7b58c</code>. Partitions of this type have bdevs created that are one block less than the actual size of the partition. Existing partitions using the deprecated GUID can continue to use that GUID; support for the deprecated GUID will remain in SPDK indefinitely, and will continue to exhibit the off-by-one bug so that on-disk metadata layouts based on the incorrect size are not affected.</p>
