@@ -123,6 +123,6 @@ var nvmf_8h =
     [ "spdk_nvmf_transport_stop_listen_async", "nvmf_8h.html#a51c3554ddcd16dc80f8d016c9d5d7c9f", null ],
     [ "SPDK_STATIC_ASSERT", "nvmf_8h.html#a48e42d2d999b21974e10b38a737732f7", null ],
     [ "SPDK_STATIC_ASSERT", "nvmf_8h.html#a419cc949620cb8afe5336d449fe1a54d", null ],
-    [ "SPDK_STATIC_ASSERT", "nvmf_8h.html#a3542dbbd3ec77c3bb4b2a3d82c2d118d", null ],
-    [ "SPDK_STATIC_ASSERT", "nvmf_8h.html#ac2d393ea960adf8490e742258feafaf1", null ]
+    [ "SPDK_STATIC_ASSERT", "nvmf_8h.html#a7ade1fce95316c88732cf605311df1a0", null ],
+    [ "SPDK_STATIC_ASSERT", "nvmf_8h.html#a296dd0dfea3cfdc3363f91fa7388d9f6", null ]
 ];
